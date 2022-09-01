@@ -61,7 +61,7 @@
     move-result-object p1
 
     .line 6
-    iget-object p1, p1, Lz3/o;->l:Lz3/q;
+    iget-object p1, p1, Lz3/o;->r:Lz3/q;
 
     const-string v0, "Install Referrer Reporter is not available"
 
@@ -79,7 +79,7 @@
     move-result-object v0
 
     .line 9
-    iget-object v0, v0, Lz3/o;->l:Lz3/q;
+    iget-object v0, v0, Lz3/o;->r:Lz3/q;
 
     const-string v1, "Install Referrer Reporter is initializing"
 
@@ -123,7 +123,7 @@
     iget-object v1, p0, Lz3/d0;->a:Lz3/p0;
 
     .line 17
-    iget-object v1, v1, Lz3/p0;->a:Landroid/content/Context;
+    iget-object v1, v1, Lz3/p0;->g:Landroid/content/Context;
 
     .line 18
     invoke-virtual {v1}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
@@ -141,7 +141,7 @@
     move-result-object p1
 
     .line 21
-    iget-object p1, p1, Lz3/o;->i:Lz3/q;
+    iget-object p1, p1, Lz3/o;->o:Lz3/q;
 
     const-string v0, "Failed to obtain Package Manager to verify binding conditions"
 
@@ -215,7 +215,7 @@
     iget-object v2, p0, Lz3/d0;->a:Lz3/p0;
 
     .line 33
-    iget-object v2, v2, Lz3/p0;->a:Landroid/content/Context;
+    iget-object v2, v2, Lz3/p0;->g:Landroid/content/Context;
 
     const/4 v3, 0x1
 
@@ -233,7 +233,7 @@
     move-result-object v0
 
     .line 37
-    iget-object v0, v0, Lz3/o;->l:Lz3/q;
+    iget-object v0, v0, Lz3/o;->r:Lz3/q;
 
     const-string v1, "Install Referrer Service is"
 
@@ -266,7 +266,7 @@
     move-result-object v0
 
     .line 41
-    iget-object v0, v0, Lz3/o;->f:Lz3/q;
+    iget-object v0, v0, Lz3/o;->l:Lz3/q;
 
     .line 42
     invoke-virtual {p1}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
@@ -290,7 +290,7 @@
     move-result-object p1
 
     .line 46
-    iget-object p1, p1, Lz3/o;->l:Lz3/q;
+    iget-object p1, p1, Lz3/o;->r:Lz3/q;
 
     const-string v0, "Play Store missing or incompatible. Version 8.3.73 or later required"
 
@@ -310,7 +310,7 @@
     move-result-object p1
 
     .line 50
-    iget-object p1, p1, Lz3/o;->l:Lz3/q;
+    iget-object p1, p1, Lz3/o;->r:Lz3/q;
 
     const-string v0, "Play Service for fetching Install Referrer is unavailable on device"
 
@@ -330,7 +330,7 @@
     move-result-object p1
 
     .line 54
-    iget-object p1, p1, Lz3/o;->l:Lz3/q;
+    iget-object p1, p1, Lz3/o;->r:Lz3/q;
 
     const-string v0, "Install Referrer Reporter was called with invalid app package name"
 
@@ -350,7 +350,7 @@
     iget-object v1, p0, Lz3/d0;->a:Lz3/p0;
 
     .line 2
-    iget-object v1, v1, Lz3/p0;->a:Landroid/content/Context;
+    iget-object v1, v1, Lz3/p0;->g:Landroid/content/Context;
 
     .line 3
     invoke-static {v1}, Ln2/c;->a(Landroid/content/Context;)Ln2/b;
@@ -368,7 +368,7 @@
     move-result-object v1
 
     .line 6
-    iget-object v1, v1, Lz3/o;->l:Lz3/q;
+    iget-object v1, v1, Lz3/o;->r:Lz3/q;
 
     const-string v2, "Failed to retrieve Package Manager to check Play Store compatibility"
 
@@ -412,7 +412,7 @@
     move-result-object v2
 
     .line 11
-    iget-object v2, v2, Lz3/o;->l:Lz3/q;
+    iget-object v2, v2, Lz3/o;->r:Lz3/q;
 
     const-string v3, "Failed to retrieve Play Store version"
 

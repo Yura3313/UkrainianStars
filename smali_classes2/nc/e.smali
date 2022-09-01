@@ -466,7 +466,7 @@
     .line 23
     check-cast p0, [B
 
-    sget v0, Lnc/a;->f:I
+    sget v0, Lnc/a;->g:I
 
     .line 24
     array-length v0, p0
@@ -529,7 +529,7 @@
     .line 33
     check-cast p0, [S
 
-    sget v0, Lnc/a;->f:I
+    sget v0, Lnc/a;->g:I
 
     .line 34
     array-length v0, p0
@@ -592,7 +592,7 @@
     .line 43
     check-cast p0, [I
 
-    sget v0, Lnc/a;->f:I
+    sget v0, Lnc/a;->g:I
 
     .line 44
     array-length v0, p0
@@ -655,7 +655,7 @@
     .line 53
     check-cast p0, [J
 
-    sget v0, Lnc/a;->f:I
+    sget v0, Lnc/a;->g:I
 
     .line 54
     array-length v0, p0
@@ -718,7 +718,7 @@
     .line 63
     check-cast p0, [F
 
-    sget v0, Lnc/a;->f:I
+    sget v0, Lnc/a;->g:I
 
     .line 64
     array-length v0, p0
@@ -781,7 +781,7 @@
     .line 73
     check-cast p0, [D
 
-    sget v0, Lnc/a;->f:I
+    sget v0, Lnc/a;->g:I
 
     .line 74
     array-length v0, p0
@@ -844,7 +844,7 @@
     .line 83
     check-cast p0, [Z
 
-    sget v0, Lnc/a;->f:I
+    sget v0, Lnc/a;->g:I
 
     .line 84
     array-length v0, p0
@@ -907,7 +907,7 @@
     .line 93
     check-cast p0, [C
 
-    sget v0, Lnc/a;->f:I
+    sget v0, Lnc/a;->g:I
 
     .line 94
     array-length v0, p0
@@ -976,7 +976,7 @@
     .line 103
     check-cast p0, [Ljava/lang/Object;
 
-    sget v0, Lnc/a;->f:I
+    sget v0, Lnc/a;->g:I
 
     .line 104
     array-length v0, p0

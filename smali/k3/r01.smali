@@ -3,63 +3,48 @@
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 
+# static fields
+.field public static final d:Lk3/r01;
+
+
 # instance fields
-.field public final a:Z
+.field public final a:I
 
-.field public final b:I
+.field public final b:[Lk3/s01;
 
-.field public final c:I
-
-.field public final d:I
-
-.field public final e:Z
-
-.field public final f:Z
-
-.field public final g:I
-
-.field public final h:I
-
-.field public final i:Z
+.field public c:I
 
 
 # direct methods
-.method public constructor <init>()V
+.method public static constructor <clinit>()V
     .locals 2
+
+    new-instance v0, Lk3/r01;
+
+    const/4 v1, 0x0
+
+    new-array v1, v1, [Lk3/s01;
+
+    invoke-direct {v0, v1}, Lk3/r01;-><init>([Lk3/s01;)V
+
+    sput-object v0, Lk3/r01;->d:Lk3/r01;
+
+    return-void
+.end method
+
+.method public varargs constructor <init>([Lk3/s01;)V
+    .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    const/4 v0, 0x1
-
     .line 2
-    iput-boolean v0, p0, Lk3/r01;->a:Z
-
-    const v1, 0x7fffffff
+    iput-object p1, p0, Lk3/r01;->b:[Lk3/s01;
 
     .line 3
-    iput v1, p0, Lk3/r01;->b:I
+    array-length p1, p1
 
-    .line 4
-    iput v1, p0, Lk3/r01;->c:I
-
-    .line 5
-    iput v1, p0, Lk3/r01;->d:I
-
-    .line 6
-    iput-boolean v0, p0, Lk3/r01;->e:Z
-
-    .line 7
-    iput-boolean v0, p0, Lk3/r01;->f:Z
-
-    .line 8
-    iput v1, p0, Lk3/r01;->g:I
-
-    .line 9
-    iput v1, p0, Lk3/r01;->h:I
-
-    .line 10
-    iput-boolean v0, p0, Lk3/r01;->i:Z
+    iput p1, p0, Lk3/r01;->a:I
 
     return-void
 .end method
@@ -96,71 +81,17 @@
     check-cast p1, Lk3/r01;
 
     .line 3
-    iget-boolean v2, p0, Lk3/r01;->a:Z
+    iget v2, p0, Lk3/r01;->a:I
 
-    iget-boolean v3, p1, Lk3/r01;->a:Z
-
-    if-ne v2, v3, :cond_2
-
-    iget v2, p0, Lk3/r01;->b:I
-
-    iget v3, p1, Lk3/r01;->b:I
+    iget v3, p1, Lk3/r01;->a:I
 
     if-ne v2, v3, :cond_2
 
-    iget v2, p0, Lk3/r01;->c:I
+    iget-object v2, p0, Lk3/r01;->b:[Lk3/s01;
 
-    iget v3, p1, Lk3/r01;->c:I
+    iget-object p1, p1, Lk3/r01;->b:[Lk3/s01;
 
-    if-ne v2, v3, :cond_2
-
-    iget-boolean v2, p0, Lk3/r01;->e:Z
-
-    iget-boolean v3, p1, Lk3/r01;->e:Z
-
-    if-ne v2, v3, :cond_2
-
-    iget-boolean v2, p0, Lk3/r01;->f:Z
-
-    iget-boolean v3, p1, Lk3/r01;->f:Z
-
-    if-ne v2, v3, :cond_2
-
-    iget-boolean v2, p0, Lk3/r01;->i:Z
-
-    iget-boolean v3, p1, Lk3/r01;->i:Z
-
-    if-ne v2, v3, :cond_2
-
-    iget v2, p0, Lk3/r01;->g:I
-
-    iget v3, p1, Lk3/r01;->g:I
-
-    if-ne v2, v3, :cond_2
-
-    iget v2, p0, Lk3/r01;->h:I
-
-    iget v3, p1, Lk3/r01;->h:I
-
-    if-ne v2, v3, :cond_2
-
-    iget v2, p0, Lk3/r01;->d:I
-
-    iget p1, p1, Lk3/r01;->d:I
-
-    if-ne v2, p1, :cond_2
-
-    const/4 p1, 0x0
-
-    .line 4
-    invoke-static {p1, p1}, Landroid/text/TextUtils;->equals(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Z
-
-    move-result v2
-
-    if-eqz v2, :cond_2
-
-    .line 5
-    invoke-static {p1, p1}, Landroid/text/TextUtils;->equals(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Z
+    invoke-static {v2, p1}, Ljava/util/Arrays;->equals([Ljava/lang/Object;[Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -176,7 +107,23 @@
 .method public final hashCode()I
     .locals 1
 
-    const/4 v0, 0x0
+    .line 1
+    iget v0, p0, Lk3/r01;->c:I
 
-    throw v0
+    if-nez v0, :cond_0
+
+    .line 2
+    iget-object v0, p0, Lk3/r01;->b:[Lk3/s01;
+
+    invoke-static {v0}, Ljava/util/Arrays;->hashCode([Ljava/lang/Object;)I
+
+    move-result v0
+
+    iput v0, p0, Lk3/r01;->c:I
+
+    .line 3
+    :cond_0
+    iget v0, p0, Lk3/r01;->c:I
+
+    return v0
 .end method

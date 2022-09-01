@@ -2,42 +2,33 @@
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-games@@20.0.1"
 
+# interfaces
+.implements La5/u0;
+
 
 # direct methods
-.method public static a(Lb2/n;)Lb2/p;
+.method public synthetic constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final e()Ljava/lang/Object;
     .locals 2
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "<ResultT:",
-            "Ljava/lang/Object;",
-            ">(",
-            "Lb2/n<",
-            "Lz2/g;",
-            "Lc4/g<",
-            "TResultT;>;>;)",
-            "Lb2/p<",
-            "Lz2/g;",
-            "TResultT;>;"
-        }
-    .end annotation
 
-    .line 1
-    new-instance v0, Lb2/p$a;
+    sget-object v0, Lcom/google/android/play/core/assetpacks/k2;->a:Lcom/google/android/play/core/assetpacks/k2;
 
-    invoke-direct {v0}, Lb2/p$a;-><init>()V
+    invoke-static {v0}, Ljava/util/concurrent/Executors;->newSingleThreadExecutor(Ljava/util/concurrent/ThreadFactory;)Ljava/util/concurrent/ExecutorService;
 
-    .line 2
-    new-instance v1, Lt3/c;
+    move-result-object v0
 
-    invoke-direct {v1, p0}, Lt3/c;-><init>(Lb2/n;)V
+    const-string v1, "Cannot return null from a non-@Nullable @Provides method"
 
-    .line 3
-    iput-object v1, v0, Lb2/p$a;->a:Lb2/n;
+    invoke-static {v0, v1}, La5/g0;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 4
-    invoke-virtual {v0}, Lb2/p$a;->a()Lb2/p;
-
-    move-result-object p0
-
-    return-object p0
+    return-object v0
 .end method

@@ -32,7 +32,7 @@
     .line 2
     iget-object v0, p0, Lqa/n;->a:Lqa/t;
 
-    iget-object v0, v0, Lqa/t;->j0:Lqa/e0;
+    iget-object v0, v0, Lqa/t;->k0:Lqa/e0;
 
     .line 3
     iget-object p1, p1, Lqb/p;->c:Ljava/lang/String;

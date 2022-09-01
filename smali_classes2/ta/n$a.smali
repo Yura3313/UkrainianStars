@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field public z:Landroid/widget/ImageView;
+.field public A:Landroid/widget/ImageView;
 
 
 # direct methods
@@ -34,7 +34,7 @@
 
     check-cast p1, Landroid/widget/ImageView;
 
-    iput-object p1, p0, Lta/n$a;->z:Landroid/widget/ImageView;
+    iput-object p1, p0, Lta/n$a;->A:Landroid/widget/ImageView;
 
     return-void
 .end method
@@ -48,13 +48,13 @@
     invoke-super {p0, p1, p2}, Lta/n$d;->x(Lb9/a;Lta/n$c;)V
 
     .line 2
-    iget-object p2, p0, Lta/n$a;->z:Landroid/widget/ImageView;
+    iget-object p2, p0, Lta/n$a;->A:Landroid/widget/ImageView;
 
     invoke-virtual {p2}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object p2
 
-    iget-object v0, p0, Lta/n$a;->z:Landroid/widget/ImageView;
+    iget-object v0, p0, Lta/n$a;->A:Landroid/widget/ImageView;
 
     invoke-virtual {v0}, Landroid/widget/ImageView;->getDrawable()Landroid/graphics/drawable/Drawable;
 
@@ -62,19 +62,19 @@
 
     const v1, 0x1010036
 
-    invoke-static {p2, v0, v1}, Lcom/helpshift/util/g0;->e(Landroid/content/Context;Landroid/graphics/drawable/Drawable;I)V
+    invoke-static {p2, v0, v1}, Lcom/helpshift/util/e0;->e(Landroid/content/Context;Landroid/graphics/drawable/Drawable;I)V
 
     .line 3
-    iget-object p2, p0, Landroidx/recyclerview/widget/RecyclerView$z;->f:Landroid/view/View;
+    iget-object p2, p0, Landroidx/recyclerview/widget/RecyclerView$z;->g:Landroid/view/View;
 
-    invoke-static {p2}, Lcom/helpshift/util/t;->b(Landroid/view/View;)Z
+    invoke-static {p2}, Lcom/helpshift/util/s;->b(Landroid/view/View;)Z
 
     move-result p2
 
     if-eqz p2, :cond_0
 
     .line 4
-    iget-object p2, p0, Lta/n$a;->z:Landroid/widget/ImageView;
+    iget-object p2, p0, Lta/n$a;->A:Landroid/widget/ImageView;
 
     const/high16 v0, 0x43340000    # 180.0f
 
@@ -82,7 +82,7 @@
 
     .line 5
     :cond_0
-    iget-object p2, p0, Landroidx/recyclerview/widget/RecyclerView$z;->f:Landroid/view/View;
+    iget-object p2, p0, Landroidx/recyclerview/widget/RecyclerView$z;->g:Landroid/view/View;
 
     .line 6
     invoke-virtual {p2}, Landroid/view/View;->getContext()Landroid/content/Context;
@@ -106,7 +106,7 @@
     move-result-object p1
 
     .line 7
-    iget-object p2, p0, Landroidx/recyclerview/widget/RecyclerView$z;->f:Landroid/view/View;
+    iget-object p2, p0, Landroidx/recyclerview/widget/RecyclerView$z;->g:Landroid/view/View;
 
     invoke-virtual {p2, p1}, Landroid/view/View;->setContentDescription(Ljava/lang/CharSequence;)V
 

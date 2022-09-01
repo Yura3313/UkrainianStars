@@ -3,89 +3,99 @@
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lk3/yu;
+.implements Lk3/pl0;
 
 
 # instance fields
-.field public final a:Lk3/g40;
+.field public final a:Lk3/m60;
+
+.field public final b:Lk3/tg0;
+
+.field public final c:Lk3/kg0;
+
+.field public final d:Lk3/h40;
 
 
 # direct methods
-.method public constructor <init>(Lk3/g40;)V
+.method public constructor <init>(Lk3/m60;Lk3/tg0;Lk3/kg0;Lk3/h40;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lk3/l60;->a:Lk3/g40;
+    iput-object p1, p0, Lk3/l60;->a:Lk3/m60;
+
+    iput-object p2, p0, Lk3/l60;->b:Lk3/tg0;
+
+    iput-object p3, p0, Lk3/l60;->c:Lk3/kg0;
+
+    iput-object p4, p0, Lk3/l60;->d:Lk3/h40;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(ZLandroid/content/Context;)V
-    .locals 2
+.method public final a(Ljava/lang/Object;)Lk3/hm0;
+    .locals 9
+
+    iget-object v0, p0, Lk3/l60;->a:Lk3/m60;
+
+    iget-object v1, p0, Lk3/l60;->b:Lk3/tg0;
+
+    iget-object v7, p0, Lk3/l60;->c:Lk3/kg0;
+
+    iget-object v2, p0, Lk3/l60;->d:Lk3/h40;
+
+    check-cast p1, Ljava/lang/Throwable;
 
     .line 1
-    iget-object v0, p0, Lk3/l60;->a:Lk3/g40;
+    iget-object v3, v0, Lk3/m60;->g:Lk3/h60;
+
+    iget-object p1, v1, Lk3/tg0;->b:Lk3/rg0;
+
+    iget-object v8, p1, Lk3/rg0;->b:Lk3/lg0;
 
     .line 2
-    :try_start_0
-    iget-object v1, v0, Lk3/g40;->b:Ljava/lang/Object;
-
-    check-cast v1, Lk3/yg0;
-
-    invoke-virtual {v1, p1}, Lk3/yg0;->a(Z)V
-
-    .line 3
-    iget-object p1, v0, Lk3/g40;->b:Ljava/lang/Object;
-
-    check-cast p1, Lk3/yg0;
-
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-    :try_end_0
-    .catch Lcom/google/android/gms/internal/ads/zzdlr; {:try_start_0 .. :try_end_0} :catch_0
-
-    .line 4
-    :try_start_1
-    iget-object p1, p1, Lk3/yg0;->a:Lcom/google/android/gms/internal/ads/zzamv;
-
-    .line 5
-    new-instance v0, Lcom/google/android/gms/dynamic/ObjectWrapper;
-
-    invoke-direct {v0, p2}, Lcom/google/android/gms/dynamic/ObjectWrapper;-><init>(Ljava/lang/Object;)V
-
-    .line 6
-    invoke-interface {p1, v0}, Lcom/google/android/gms/internal/ads/zzamv;->L6(Lcom/google/android/gms/dynamic/IObjectWrapper;)V
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
-    return-void
-
-    :catchall_0
-    move-exception p1
-
-    .line 7
-    :try_start_2
-    new-instance p2, Lcom/google/android/gms/internal/ads/zzdlr;
-
-    invoke-direct {p2, p1}, Lcom/google/android/gms/internal/ads/zzdlr;-><init>(Ljava/lang/Throwable;)V
-
-    throw p2
-    :try_end_2
-    .catch Lcom/google/android/gms/internal/ads/zzdlr; {:try_start_2 .. :try_end_2} :catch_0
-
-    :catch_0
-    move-exception p1
-
-    .line 8
-    new-instance p2, Lcom/google/android/gms/internal/ads/zzcbc;
-
-    invoke-virtual {p1}, Ljava/lang/Throwable;->getCause()Ljava/lang/Throwable;
+    invoke-interface {v2, v1, v7}, Lk3/h40;->a(Lk3/tg0;Lk3/kg0;)Lk3/hm0;
 
     move-result-object p1
 
-    invoke-direct {p2, p1}, Lcom/google/android/gms/internal/ads/zzcbc;-><init>(Ljava/lang/Throwable;)V
+    iget v1, v7, Lk3/kg0;->L:I
 
-    throw p2
+    int-to-long v1, v1
+
+    sget-object v4, Ljava/util/concurrent/TimeUnit;->MILLISECONDS:Ljava/util/concurrent/TimeUnit;
+
+    iget-object v0, v0, Lk3/m60;->e:Ljava/util/concurrent/ScheduledExecutorService;
+
+    .line 3
+    invoke-static {p1, v1, v2, v4, v0}, Lk3/dm0;->e(Lk3/hm0;JLjava/util/concurrent/TimeUnit;Ljava/util/concurrent/ScheduledExecutorService;)Lk3/hm0;
+
+    move-result-object p1
+
+    .line 4
+    iget-object v0, v3, Lk3/h60;->a:Ll2/c;
+
+    invoke-interface {v0}, Ll2/c;->b()J
+
+    move-result-wide v5
+
+    .line 5
+    iget-object v4, v7, Lk3/kg0;->v:Ljava/lang/String;
+
+    if-eqz v4, :cond_0
+
+    .line 6
+    new-instance v0, Lk3/j60;
+
+    move-object v2, v0
+
+    invoke-direct/range {v2 .. v8}, Lk3/j60;-><init>(Lk3/h60;Ljava/lang/String;JLk3/kg0;Lk3/lg0;)V
+
+    sget-object v1, Lk3/jd;->f:Lk3/od;
+
+    invoke-static {p1, v0, v1}, Lk3/dm0;->f(Lk3/hm0;Lk3/am0;Ljava/util/concurrent/Executor;)V
+
+    :cond_0
+    return-object p1
 .end method

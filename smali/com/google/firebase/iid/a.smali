@@ -59,14 +59,14 @@
     .line 5
     new-instance p1, Landroid/os/Messenger;
 
-    new-instance p2, Ly5/n;
+    new-instance p2, Ly5/o;
 
     .line 6
     invoke-static {}, Landroid/os/Looper;->getMainLooper()Landroid/os/Looper;
 
     move-result-object v0
 
-    invoke-direct {p2, p0, v0}, Ly5/n;-><init>(Lcom/google/firebase/iid/a;Landroid/os/Looper;)V
+    invoke-direct {p2, p0, v0}, Ly5/o;-><init>(Lcom/google/firebase/iid/a;Landroid/os/Looper;)V
 
     invoke-direct {p1, p2}, Landroid/os/Messenger;-><init>(Landroid/os/Handler;)V
 
@@ -255,7 +255,7 @@
     check-cast v0, Lcom/google/firebase/iid/zzal;
 
     .line 13
-    iget v0, v0, Lcom/google/firebase/iid/zzal;->f:I
+    iget v0, v0, Lcom/google/firebase/iid/zzal;->g:I
 
     const/4 v1, 0x4
 
@@ -480,7 +480,7 @@
     const/4 v0, 0x5
 
     .line 22
-    invoke-static {v1, v0}, La1/e;->a(Ljava/lang/String;I)I
+    invoke-static {v1, v0}, La1/e;->b(Ljava/lang/String;I)I
 
     move-result v0
 
@@ -489,7 +489,7 @@
     const-string v6, "|"
 
     .line 23
-    invoke-static {v0, v4, v1, v6}, Landroid/support/v4/media/b;->a(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, v4, v1, v6}, Li1/j;->a(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 

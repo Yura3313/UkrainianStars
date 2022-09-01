@@ -3,112 +3,102 @@
 .source "com.google.android.gms:play-services-basement@@17.5.0"
 
 
+# annotations
+.annotation runtime Ljava/lang/Deprecated;
+.end annotation
+
+
 # direct methods
-.method public static a(Ljava/lang/StringBuilder;Ljava/util/HashMap;)V
-    .locals 5
-    .param p0    # Ljava/lang/StringBuilder;
-        .annotation build Landroidx/annotation/RecentlyNonNull;
+.method public static a(Ljava/io/Closeable;)V
+    .locals 0
+    .param p0    # Ljava/io/Closeable;
+        .annotation runtime Ljavax/annotation/Nullable;
         .end annotation
     .end param
-    .param p1    # Ljava/util/HashMap;
-        .annotation build Landroidx/annotation/RecentlyNonNull;
-        .end annotation
-    .end param
-    .annotation system Ldalvik/annotation/Signature;
+
+    if-eqz p0, :cond_0
+
+    :try_start_0
+    invoke-interface {p0}, Ljava/io/Closeable;->close()V
+    :try_end_0
+    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
+
+    :catch_0
+    :cond_0
+    return-void
+.end method
+
+.method public static b(Ljava/io/InputStream;Ljava/io/OutputStream;Z)J
+    .locals 8
+    .annotation system Ldalvik/annotation/Throws;
         value = {
-            "(",
-            "Ljava/lang/StringBuilder;",
-            "Ljava/util/HashMap<",
-            "Ljava/lang/String;",
-            "Ljava/lang/String;",
-            ">;)V"
+            Ljava/io/IOException;
         }
     .end annotation
 
-    const-string v0, "{"
+    .annotation runtime Ljava/lang/Deprecated;
+    .end annotation
 
-    .line 1
-    invoke-virtual {p0, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    const/16 v0, 0x400
 
-    .line 2
-    invoke-virtual {p1}, Ljava/util/HashMap;->keySet()Ljava/util/Set;
+    new-array v1, v0, [B
 
-    move-result-object v0
-
-    invoke-interface {v0}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
-
-    move-result-object v0
-
-    const/4 v1, 0x1
+    const-wide/16 v2, 0x0
 
     :goto_0
-    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+    const/4 v4, 0x0
 
-    move-result v2
+    .line 1
+    :try_start_0
+    invoke-virtual {p0, v1, v4, v0}, Ljava/io/InputStream;->read([BII)I
 
-    if-eqz v2, :cond_2
+    move-result v5
 
-    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    const/4 v6, -0x1
 
-    move-result-object v2
+    if-eq v5, v6, :cond_0
 
-    check-cast v2, Ljava/lang/String;
+    int-to-long v6, v5
 
-    if-nez v1, :cond_0
+    add-long/2addr v2, v6
 
-    const-string v3, ","
+    .line 2
+    invoke-virtual {p1, v1, v4, v5}, Ljava/io/OutputStream;->write([BII)V
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    .line 3
-    invoke-virtual {p0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    goto :goto_1
+    goto :goto_0
 
     :cond_0
-    const/4 v1, 0x0
+    if-eqz p2, :cond_1
+
+    .line 3
+    invoke-static {p0}, Ll2/i;->a(Ljava/io/Closeable;)V
 
     .line 4
-    :goto_1
-    invoke-virtual {p1, v2}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p1}, Ll2/i;->a(Ljava/io/Closeable;)V
 
-    move-result-object v3
+    :cond_1
+    return-wide v2
 
-    check-cast v3, Ljava/lang/String;
+    :catchall_0
+    move-exception v0
 
-    const-string v4, "\""
+    if-eqz p2, :cond_2
 
     .line 5
-    invoke-virtual {p0, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string v2, "\":"
-
-    invoke-virtual {p0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    if-nez v3, :cond_1
-
-    const-string v2, "null"
+    invoke-static {p0}, Ll2/i;->a(Ljava/io/Closeable;)V
 
     .line 6
-    invoke-virtual {p0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    goto :goto_0
+    invoke-static {p1}, Ll2/i;->a(Ljava/io/Closeable;)V
 
     .line 7
-    :cond_1
-    invoke-virtual {p0, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p0, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    goto :goto_0
-
     :cond_2
-    const-string p1, "}"
+    goto :goto_2
 
-    .line 8
-    invoke-virtual {p0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    :goto_1
+    throw v0
 
-    return-void
+    :goto_2
+    goto :goto_1
 .end method

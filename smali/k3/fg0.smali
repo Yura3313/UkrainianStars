@@ -1,58 +1,22 @@
 .class public final Lk3/fg0;
-.super Lp1/a;
+.super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
+
+# interfaces
+.implements Lk3/vf0;
 
 
 # instance fields
-.field public final synthetic a:Lcom/google/android/gms/internal/ads/zzxz;
+.field public a:Lk3/vg0;
 
-.field public final synthetic b:Lcom/google/android/gms/internal/ads/zzdkl;
+.field public b:Ljava/lang/String;
 
 
 # direct methods
-.method public constructor <init>(Lcom/google/android/gms/internal/ads/zzdkl;Lcom/google/android/gms/internal/ads/zzxz;)V
+.method public constructor <init>()V
     .locals 0
 
-    iput-object p1, p0, Lk3/fg0;->b:Lcom/google/android/gms/internal/ads/zzdkl;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p2, p0, Lk3/fg0;->a:Lcom/google/android/gms/internal/ads/zzxz;
-
-    invoke-direct {p0}, Lp1/a;-><init>()V
-
-    return-void
-.end method
-
-
-# virtual methods
-.method public final c()V
-    .locals 2
-
-    .line 1
-    iget-object v0, p0, Lk3/fg0;->b:Lcom/google/android/gms/internal/ads/zzdkl;
-
-    .line 2
-    iget-object v0, v0, Lcom/google/android/gms/internal/ads/zzdkl;->k:Lk3/bz;
-
-    if-eqz v0, :cond_0
-
-    .line 3
-    :try_start_0
-    iget-object v0, p0, Lk3/fg0;->a:Lcom/google/android/gms/internal/ads/zzxz;
-
-    invoke-interface {v0}, Lcom/google/android/gms/internal/ads/zzxz;->H0()V
-    :try_end_0
-    .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
-
-    return-void
-
-    :catch_0
-    move-exception v0
-
-    const-string v1, "#007 Could not call remote method."
-
-    .line 4
-    invoke-static {v1, v0}, Lk3/j6;->k(Ljava/lang/String;Ljava/lang/Throwable;)V
-
-    :cond_0
     return-void
 .end method

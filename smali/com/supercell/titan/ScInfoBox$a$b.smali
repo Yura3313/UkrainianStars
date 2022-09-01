@@ -39,7 +39,7 @@
 
     iget-object p1, p0, Lcom/supercell/titan/ScInfoBox$a$b;->a:Lcom/supercell/titan/ScInfoBox$a;
 
-    iget-object p1, p1, Lcom/supercell/titan/ScInfoBox$a;->g:Lcom/supercell/titan/ScInfoBox;
+    iget-object p1, p1, Lcom/supercell/titan/ScInfoBox$a;->h:Lcom/supercell/titan/ScInfoBox;
 
     invoke-virtual {p1}, Lcom/supercell/titan/ScInfoBox;->dismiss()V
 

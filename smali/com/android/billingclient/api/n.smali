@@ -61,7 +61,7 @@
     iget-object v2, p0, Lcom/android/billingclient/api/n;->b:Ljava/util/List;
 
     .line 1
-    invoke-virtual {v0, v1, v2}, Lcom/android/billingclient/api/b;->e(Ljava/lang/String;Ljava/util/List;)Lcom/android/billingclient/api/v;
+    invoke-virtual {v0, v1, v2}, Lcom/android/billingclient/api/b;->e(Ljava/lang/String;Ljava/util/List;)Lcom/android/billingclient/api/u;
 
     move-result-object v0
 
@@ -70,7 +70,7 @@
     new-instance v2, Lcom/android/billingclient/api/m;
 
     .line 2
-    invoke-direct {v2, p0, v0}, Lcom/android/billingclient/api/m;-><init>(Lcom/android/billingclient/api/n;Lcom/android/billingclient/api/v;)V
+    invoke-direct {v2, p0, v0}, Lcom/android/billingclient/api/m;-><init>(Lcom/android/billingclient/api/n;Lcom/android/billingclient/api/u;)V
 
     .line 3
     invoke-virtual {v1, v2}, Lcom/android/billingclient/api/b;->c(Ljava/lang/Runnable;)V

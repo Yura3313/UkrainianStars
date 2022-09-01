@@ -20,14 +20,14 @@
 
 
 # instance fields
-.field public final synthetic f:Ljava/util/Comparator;
+.field public final synthetic g:Ljava/util/Comparator;
 
 
 # direct methods
 .method public constructor <init>(Ljava/util/Comparator;)V
     .locals 0
 
-    iput-object p1, p0, Lpd/l;->f:Ljava/util/Comparator;
+    iput-object p1, p0, Lpd/l;->g:Ljava/util/Comparator;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -45,15 +45,15 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lpd/l;->f:Ljava/util/Comparator;
+    iget-object v0, p0, Lpd/l;->g:Ljava/util/Comparator;
 
     check-cast p1, Lpd/h;
 
     .line 2
-    iget-object p1, p1, Lpd/h;->b:Lvc/i;
+    iget-object p1, p1, Lpd/h;->b:Lvc/h;
 
     .line 3
-    iget-object p1, p1, Lvc/i;->b:Ljava/lang/String;
+    iget-object p1, p1, Lvc/h;->b:Ljava/lang/String;
 
     const-string v1, ""
 
@@ -69,10 +69,10 @@
     check-cast p2, Lpd/h;
 
     .line 5
-    iget-object p2, p2, Lpd/h;->b:Lvc/i;
+    iget-object p2, p2, Lpd/h;->b:Lvc/h;
 
     .line 6
-    iget-object p2, p2, Lvc/i;->b:Ljava/lang/String;
+    iget-object p2, p2, Lvc/h;->b:Ljava/lang/String;
 
     if-eqz p2, :cond_1
 

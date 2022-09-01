@@ -49,7 +49,7 @@
     .line 3
     iget-object p1, p0, Landroidx/viewpager/widget/ViewPager$f;->d:Landroidx/viewpager/widget/ViewPager;
 
-    iget-object p1, p1, Landroidx/viewpager/widget/ViewPager;->j:Ly0/b;
+    iget-object p1, p1, Landroidx/viewpager/widget/ViewPager;->k:Ly0/b;
 
     const/4 v0, 0x1
 
@@ -81,7 +81,7 @@
 
     iget-object p1, p0, Landroidx/viewpager/widget/ViewPager$f;->d:Landroidx/viewpager/widget/ViewPager;
 
-    iget-object p1, p1, Landroidx/viewpager/widget/ViewPager;->j:Ly0/b;
+    iget-object p1, p1, Landroidx/viewpager/widget/ViewPager;->k:Ly0/b;
 
     if-eqz p1, :cond_1
 
@@ -95,14 +95,14 @@
     .line 7
     iget-object p1, p0, Landroidx/viewpager/widget/ViewPager$f;->d:Landroidx/viewpager/widget/ViewPager;
 
-    iget p1, p1, Landroidx/viewpager/widget/ViewPager;->k:I
+    iget p1, p1, Landroidx/viewpager/widget/ViewPager;->l:I
 
     invoke-virtual {p2, p1}, Landroid/view/accessibility/AccessibilityRecord;->setFromIndex(I)V
 
     .line 8
     iget-object p1, p0, Landroidx/viewpager/widget/ViewPager$f;->d:Landroidx/viewpager/widget/ViewPager;
 
-    iget p1, p1, Landroidx/viewpager/widget/ViewPager;->k:I
+    iget p1, p1, Landroidx/viewpager/widget/ViewPager;->l:I
 
     invoke-virtual {p2, p1}, Landroid/view/accessibility/AccessibilityRecord;->setToIndex(I)V
 
@@ -134,7 +134,7 @@
     .line 5
     iget-object p1, p0, Landroidx/viewpager/widget/ViewPager$f;->d:Landroidx/viewpager/widget/ViewPager;
 
-    iget-object p1, p1, Landroidx/viewpager/widget/ViewPager;->j:Ly0/b;
+    iget-object p1, p1, Landroidx/viewpager/widget/ViewPager;->k:Ly0/b;
 
     const/4 v0, 0x1
 
@@ -234,7 +234,7 @@
     .line 3
     iget-object p1, p0, Landroidx/viewpager/widget/ViewPager$f;->d:Landroidx/viewpager/widget/ViewPager;
 
-    iget p2, p1, Landroidx/viewpager/widget/ViewPager;->k:I
+    iget p2, p1, Landroidx/viewpager/widget/ViewPager;->l:I
 
     sub-int/2addr p2, p3
 
@@ -258,7 +258,7 @@
     .line 5
     iget-object p1, p0, Landroidx/viewpager/widget/ViewPager$f;->d:Landroidx/viewpager/widget/ViewPager;
 
-    iget p2, p1, Landroidx/viewpager/widget/ViewPager;->k:I
+    iget p2, p1, Landroidx/viewpager/widget/ViewPager;->l:I
 
     add-int/2addr p2, p3
 

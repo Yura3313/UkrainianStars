@@ -1,5 +1,5 @@
 .class public final Lyc/b;
-.super Lse/h;
+.super Lse/i;
 .source "CustomProfileImageManager.kt"
 
 # interfaces
@@ -9,33 +9,33 @@
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/p<",
         "Lyc/d;",
         "Lbe/x;",
-        "Lie/h;",
+        "Lie/i;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic f:Lyc/d$a;
+.field public final synthetic g:Lyc/d$a;
 
-.field public final synthetic g:Lwc/r;
+.field public final synthetic h:Lwc/r;
 
 
 # direct methods
 .method public constructor <init>(Lyc/d$a;Lwc/r;)V
     .locals 0
 
-    iput-object p1, p0, Lyc/b;->f:Lyc/d$a;
+    iput-object p1, p0, Lyc/b;->g:Lyc/d$a;
 
-    iput-object p2, p0, Lyc/b;->g:Lwc/r;
+    iput-object p2, p0, Lyc/b;->h:Lwc/r;
 
     const/4 p1, 0x2
 
-    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -53,19 +53,19 @@
     const-string v0, "$receiver"
 
     .line 2
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "it"
 
-    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/4 v0, 0x0
 
     .line 3
-    iput-object v0, p1, Lyc/d;->f:Lze/e0;
+    iput-object v0, p1, Lyc/d;->f:Lze/f0;
 
     .line 4
-    iget-object v1, p0, Lyc/b;->g:Lwc/r;
+    iget-object v1, p0, Lyc/b;->h:Lwc/r;
 
     const/4 v2, 0x0
 
@@ -83,9 +83,9 @@
     .line 8
     new-instance v1, Lyc/a$a;
 
-    iget-object v2, p0, Lyc/b;->f:Lyc/d$a;
+    iget-object v2, p0, Lyc/b;->g:Lyc/d$a;
 
-    iget-object v2, v2, Lyc/d$a;->g:Landroid/graphics/Bitmap;
+    iget-object v2, v2, Lyc/d$a;->h:Landroid/graphics/Bitmap;
 
     move-object v3, p2
 
@@ -111,7 +111,7 @@
     iget-object p1, p1, Lyc/d;->g:Landroidx/fragment/app/Fragment;
 
     .line 10
-    invoke-static {p1}, Lcom/android/billingclient/api/c0;->e(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
+    invoke-static {p1}, Lcom/android/billingclient/api/b0;->f(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
 
     move-result-object v0
 
@@ -142,13 +142,13 @@
     iget-object p1, p1, Lyc/d;->g:Landroidx/fragment/app/Fragment;
 
     .line 14
-    invoke-static {p1}, Lcom/android/billingclient/api/c0;->e(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
+    invoke-static {p1}, Lcom/android/billingclient/api/b0;->f(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
 
     move-result-object p1
 
     if-eqz p1, :cond_1
 
-    sget-object p2, Lcom/supercell/id/ui/MainActivity;->s:Ljava/lang/ref/WeakReference;
+    sget-object p2, Lcom/supercell/id/ui/MainActivity;->t:Ljava/lang/ref/WeakReference;
 
     const-string p2, "profile_image_rejected"
 
@@ -158,7 +158,7 @@
     .line 16
     :cond_1
     :goto_0
-    sget-object p1, Lie/h;->a:Lie/h;
+    sget-object p1, Lie/i;->a:Lie/i;
 
     return-object p1
 .end method

@@ -14,7 +14,7 @@
 
 
 # instance fields
-.field public final synthetic h:Lcom/google/android/play/core/assetpacks/o;
+.field public final synthetic i:Lcom/google/android/play/core/assetpacks/o;
 
 
 # direct methods
@@ -30,7 +30,7 @@
         }
     .end annotation
 
-    iput-object p1, p0, Lcom/google/android/play/core/assetpacks/l;->h:Lcom/google/android/play/core/assetpacks/o;
+    iput-object p1, p0, Lcom/google/android/play/core/assetpacks/l;->i:Lcom/google/android/play/core/assetpacks/o;
 
     invoke-direct {p0, p1, p2}, Lcom/google/android/play/core/assetpacks/j;-><init>(Lcom/google/android/play/core/assetpacks/o;Lcom/google/android/play/core/tasks/i;)V
 
@@ -51,7 +51,7 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/play/core/assetpacks/j;->g:Lcom/google/android/play/core/assetpacks/o;
+    iget-object v0, p0, Lcom/google/android/play/core/assetpacks/j;->h:Lcom/google/android/play/core/assetpacks/o;
 
     .line 2
     iget-object v0, v0, Lcom/google/android/play/core/assetpacks/o;->c:La5/l;
@@ -74,7 +74,7 @@
     invoke-virtual {v0, v3, v4, v2}, La5/b;->a(ILjava/lang/String;[Ljava/lang/Object;)I
 
     .line 6
-    iget-object v0, p0, Lcom/google/android/play/core/assetpacks/l;->h:Lcom/google/android/play/core/assetpacks/o;
+    iget-object v0, p0, Lcom/google/android/play/core/assetpacks/l;->i:Lcom/google/android/play/core/assetpacks/o;
 
     .line 7
     new-instance v2, Ljava/util/ArrayList;
@@ -96,9 +96,9 @@
 
     check-cast v5, Landroid/os/Bundle;
 
-    iget-object v6, v0, Lcom/google/android/play/core/assetpacks/o;->b:Lcom/google/android/play/core/assetpacks/s0;
+    iget-object v6, v0, Lcom/google/android/play/core/assetpacks/o;->b:Lcom/google/android/play/core/assetpacks/r0;
 
-    invoke-static {v5, v6}, Lcom/google/android/play/core/assetpacks/a;->a(Landroid/os/Bundle;Lcom/google/android/play/core/assetpacks/s0;)Lcom/google/android/play/core/assetpacks/a;
+    invoke-static {v5, v6}, Lcom/google/android/play/core/assetpacks/a;->a(Landroid/os/Bundle;Lcom/google/android/play/core/assetpacks/r0;)Lcom/google/android/play/core/assetpacks/a;
 
     move-result-object v5
 
@@ -176,7 +176,7 @@
 
     .line 10
     :cond_3
-    iget-object p1, p0, Lcom/google/android/play/core/assetpacks/j;->f:Lcom/google/android/play/core/tasks/i;
+    iget-object p1, p0, Lcom/google/android/play/core/assetpacks/j;->g:Lcom/google/android/play/core/tasks/i;
 
     invoke-virtual {p1, v2}, Lcom/google/android/play/core/tasks/i;->b(Ljava/lang/Object;)V
 

@@ -1,5 +1,5 @@
 .class final Lcom/kakao/sdk/auth/UriUtility$authorize$1$4$1;
-.super Lse/h;
+.super Lse/i;
 .source "UriUtility.kt"
 
 # interfaces
@@ -18,7 +18,7 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/l<",
         "Lcom/kakao/sdk/auth/model/Prompt;",
         "Ljava/lang/String;",
@@ -49,7 +49,7 @@
 
     const/4 v0, 0x1
 
-    invoke-direct {p0, v0}, Lse/h;-><init>(I)V
+    invoke-direct {p0, v0}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -74,7 +74,7 @@
 
     const-string v0, "prompt"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 2
     const-class v0, Lcom/kakao/sdk/auth/model/Prompt;

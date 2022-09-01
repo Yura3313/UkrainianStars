@@ -1,155 +1,159 @@
-.class public final synthetic Lk3/id0;
+.class public final Lk3/id0;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Ljava/util/concurrent/Callable;
+.implements Lk3/ad0;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Lk3/ad0<",
+        "Landroid/os/Bundle;",
+        ">;"
+    }
+.end annotation
 
 
 # instance fields
-.field public final a:Lk3/jd0;
+.field public final a:Ljava/lang/String;
+
+.field public final b:I
+
+.field public final c:I
+
+.field public final d:I
+
+.field public final e:Z
+
+.field public final f:I
 
 
 # direct methods
-.method public constructor <init>(Lk3/jd0;)V
+.method public constructor <init>(Ljava/lang/String;IIIZI)V
     .locals 0
 
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lk3/id0;->a:Lk3/jd0;
+    .line 2
+    iput-object p1, p0, Lk3/id0;->a:Ljava/lang/String;
+
+    .line 3
+    iput p2, p0, Lk3/id0;->b:I
+
+    .line 4
+    iput p3, p0, Lk3/id0;->c:I
+
+    .line 5
+    iput p4, p0, Lk3/id0;->d:I
+
+    .line 6
+    iput-boolean p5, p0, Lk3/id0;->e:Z
+
+    .line 7
+    iput p6, p0, Lk3/id0;->f:I
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final call()Ljava/lang/Object;
-    .locals 10
-
-    iget-object v0, p0, Lk3/id0;->a:Lk3/jd0;
+.method public final synthetic b(Ljava/lang/Object;)V
+    .locals 4
 
     .line 1
-    iget-object v1, v0, Lk3/jd0;->b:Landroid/content/Context;
-
-    const-string v2, "phone"
+    check-cast p1, Landroid/os/Bundle;
 
     .line 2
-    invoke-virtual {v1, v2}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    iget-object v0, p0, Lk3/id0;->a:Ljava/lang/String;
 
-    move-result-object v1
-
-    check-cast v1, Landroid/telephony/TelephonyManager;
-
-    .line 3
-    invoke-virtual {v1}, Landroid/telephony/TelephonyManager;->getNetworkOperator()Ljava/lang/String;
-
-    move-result-object v3
-
-    .line 4
-    invoke-virtual {v1}, Landroid/telephony/TelephonyManager;->getNetworkType()I
-
-    move-result v5
-
-    .line 5
-    invoke-virtual {v1}, Landroid/telephony/TelephonyManager;->getPhoneType()I
-
-    move-result v6
-
-    .line 6
-    sget-object v1, Li1/o;->B:Li1/o;
-
-    iget-object v1, v1, Li1/o;->c:Lk3/bb;
-
-    .line 7
-    iget-object v1, v0, Lk3/jd0;->b:Landroid/content/Context;
-
-    const-string v2, "android.permission.ACCESS_NETWORK_STATE"
-
-    .line 8
-    invoke-static {v1, v2}, Lk3/bb;->G(Landroid/content/Context;Ljava/lang/String;)Z
+    invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v1
 
-    const/4 v2, -0x1
+    const/4 v2, 0x1
 
-    if-eqz v1, :cond_1
+    xor-int/2addr v1, v2
 
-    .line 9
-    iget-object v0, v0, Lk3/jd0;->b:Landroid/content/Context;
+    const-string v3, "carrier"
 
-    const-string v1, "connectivity"
+    invoke-static {p1, v3, v0, v1}, Lk3/f4;->k(Landroid/os/Bundle;Ljava/lang/String;Ljava/lang/String;Z)V
 
-    .line 10
-    invoke-virtual {v0, v1}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    .line 3
+    iget v0, p0, Lk3/id0;->b:I
+
+    .line 4
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v0
 
-    check-cast v0, Landroid/net/ConnectivityManager;
+    iget v1, p0, Lk3/id0;->b:I
 
-    .line 11
-    invoke-virtual {v0}, Landroid/net/ConnectivityManager;->getActiveNetworkInfo()Landroid/net/NetworkInfo;
+    const/4 v3, -0x2
 
-    move-result-object v1
-
-    if-eqz v1, :cond_0
-
-    .line 12
-    invoke-virtual {v1}, Landroid/net/NetworkInfo;->getType()I
-
-    move-result v2
-
-    .line 13
-    invoke-virtual {v1}, Landroid/net/NetworkInfo;->getDetailedState()Landroid/net/NetworkInfo$DetailedState;
-
-    move-result-object v1
-
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
-
-    move-result v1
-
-    move v9, v2
-
-    move v2, v1
-
-    move v1, v9
+    if-eq v1, v3, :cond_0
 
     goto :goto_0
 
     :cond_0
-    const/4 v1, -0x1
+    const/4 v2, 0x0
 
-    .line 14
     :goto_0
-    invoke-virtual {v0}, Landroid/net/ConnectivityManager;->isActiveNetworkMetered()Z
+    const-string v1, "cnt"
 
-    move-result v0
+    .line 5
+    invoke-static {p1, v1, v0, v2}, Lk3/f4;->i(Landroid/os/Bundle;Ljava/lang/String;Ljava/lang/Integer;Z)V
 
-    move v7, v0
+    .line 6
+    iget v0, p0, Lk3/id0;->c:I
 
-    move v4, v1
+    const-string v1, "gnt"
 
-    move v8, v2
+    invoke-virtual {p1, v1, v0}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
 
-    goto :goto_1
+    .line 7
+    iget v0, p0, Lk3/id0;->d:I
 
-    :cond_1
-    const/4 v0, -0x2
+    const-string v1, "pt"
 
-    const/4 v1, 0x0
+    invoke-virtual {p1, v1, v0}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
 
-    const/4 v4, -0x2
+    const-string v0, "device"
 
-    const/4 v7, 0x0
+    .line 8
+    invoke-static {p1, v0}, Lk3/f4;->f(Landroid/os/Bundle;Ljava/lang/String;)Landroid/os/Bundle;
 
-    const/4 v8, -0x1
+    move-result-object v1
 
-    .line 15
-    :goto_1
-    new-instance v0, Lk3/hd0;
+    .line 9
+    invoke-virtual {p1, v0, v1}, Landroid/os/Bundle;->putBundle(Ljava/lang/String;Landroid/os/Bundle;)V
 
-    move-object v2, v0
+    const-string p1, "network"
 
-    invoke-direct/range {v2 .. v8}, Lk3/hd0;-><init>(Ljava/lang/String;IIIZI)V
+    .line 10
+    invoke-static {v1, p1}, Lk3/f4;->f(Landroid/os/Bundle;Ljava/lang/String;)Landroid/os/Bundle;
 
-    return-object v0
+    move-result-object v0
+
+    .line 11
+    invoke-virtual {v1, p1, v0}, Landroid/os/Bundle;->putBundle(Ljava/lang/String;Landroid/os/Bundle;)V
+
+    .line 12
+    iget p1, p0, Lk3/id0;->f:I
+
+    const-string v1, "active_network_state"
+
+    invoke-virtual {v0, v1, p1}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
+
+    .line 13
+    iget-boolean p1, p0, Lk3/id0;->e:Z
+
+    const-string v1, "active_network_metered"
+
+    invoke-virtual {v0, v1, p1}, Landroid/os/Bundle;->putBoolean(Ljava/lang/String;Z)V
+
+    return-void
 .end method

@@ -32,7 +32,7 @@
         value = {
             "()",
             "Lef/b<",
-            "Lie/h;",
+            "Lie/i;",
             ">;"
         }
     .end annotation
@@ -135,7 +135,7 @@
             "Ljava/lang/String;",
             ">;)",
             "Lef/b<",
-            "Lie/h;",
+            "Lie/i;",
             ">;"
         }
     .end annotation
@@ -153,7 +153,7 @@
         value = {
             "()",
             "Lef/b<",
-            "Lie/h;",
+            "Lie/i;",
             ">;"
         }
     .end annotation
@@ -177,7 +177,7 @@
             "Ljava/lang/String;",
             ">;)",
             "Lef/b<",
-            "Lie/h;",
+            "Lie/i;",
             ">;"
         }
     .end annotation

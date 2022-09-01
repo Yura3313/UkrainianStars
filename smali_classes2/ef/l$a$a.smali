@@ -60,7 +60,7 @@
 
     iget-object p1, p0, Lef/l$a$a;->b:Lef/l$a;
 
-    iget-object p1, p1, Lef/l$a;->f:Ljava/util/concurrent/Executor;
+    iget-object p1, p1, Lef/l$a;->g:Ljava/util/concurrent/Executor;
 
     new-instance v0, Lef/l$a$a$b;
 
@@ -71,25 +71,25 @@
     return-void
 .end method
 
-.method public final onResponse(Lef/b;Lef/c0;)V
+.method public final onResponse(Lef/b;Lef/b0;)V
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Lef/b<",
             "TT;>;",
-            "Lef/c0<",
+            "Lef/b0<",
             "TT;>;)V"
         }
     .end annotation
 
     iget-object p1, p0, Lef/l$a$a;->b:Lef/l$a;
 
-    iget-object p1, p1, Lef/l$a;->f:Ljava/util/concurrent/Executor;
+    iget-object p1, p1, Lef/l$a;->g:Ljava/util/concurrent/Executor;
 
     new-instance v0, Lef/l$a$a$a;
 
-    invoke-direct {v0, p0, p2}, Lef/l$a$a$a;-><init>(Lef/l$a$a;Lef/c0;)V
+    invoke-direct {v0, p0, p2}, Lef/l$a$a$a;-><init>(Lef/l$a$a;Lef/b0;)V
 
     invoke-interface {p1, v0}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
 

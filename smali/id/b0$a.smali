@@ -15,14 +15,14 @@
 
 
 # instance fields
-.field public final synthetic f:Lid/b0;
+.field public final synthetic g:Lid/b0;
 
 
 # direct methods
 .method public constructor <init>(Lid/b0;)V
     .locals 0
 
-    iput-object p1, p0, Lid/b0$a;->f:Lid/b0;
+    iput-object p1, p0, Lid/b0$a;->g:Lid/b0;
 
     invoke-direct {p0}, Landroid/animation/AnimatorListenerAdapter;-><init>()V
 
@@ -34,7 +34,7 @@
 .method public final onAnimationEnd(Landroid/animation/Animator;)V
     .locals 0
 
-    iget-object p1, p0, Lid/b0$a;->f:Lid/b0;
+    iget-object p1, p0, Lid/b0$a;->g:Lid/b0;
 
     invoke-virtual {p1}, Landroid/app/Dialog;->dismiss()V
 

@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field public f:I
+.field public g:Z
 
 
 # direct methods
@@ -24,9 +24,9 @@
 .method public final toString()Ljava/lang/String;
     .locals 1
 
-    iget v0, p0, Lse/p;->f:I
+    iget-boolean v0, p0, Lse/p;->g:Z
 
-    invoke-static {v0}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
+    invoke-static {v0}, Ljava/lang/String;->valueOf(Z)Ljava/lang/String;
 
     move-result-object v0
 

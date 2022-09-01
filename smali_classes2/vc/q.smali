@@ -10,16 +10,14 @@
 
 .field public final c:Ljava/lang/String;
 
-.field public final d:Ljava/lang/String;
-
 
 # direct methods
 .method public constructor <init>(Lorg/json/JSONObject;)V
-    .locals 5
+    .locals 3
 
     const-string v0, "data"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "imageId"
 
@@ -30,7 +28,7 @@
 
     const-string v1, "data.getString(\"imageId\")"
 
-    invoke-static {v0, v1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v1, "processingStatus"
 
@@ -40,64 +38,26 @@
 
     const-string v2, "data.getString(\"processingStatus\")"
 
-    invoke-static {v1, v2}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v2, "actionStatus"
 
     invoke-virtual {p1, v2}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
 
-    move-result-object v2
-
-    const-string v3, "data.getString(\"actionStatus\")"
-
-    invoke-static {v2, v3}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v3, "url"
-
-    .line 2
-    invoke-virtual {p1, v3}, Lorg/json/JSONObject;->opt(Ljava/lang/String;)Ljava/lang/Object;
-
     move-result-object p1
 
-    const/4 v3, 0x0
+    const-string v2, "data.getString(\"actionStatus\")"
 
-    if-eqz p1, :cond_0
+    invoke-static {p1, v2}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 3
-    sget-object v4, Lorg/json/JSONObject;->NULL:Ljava/lang/Object;
-
-    invoke-static {p1, v4}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result v4
-
-    if-eqz v4, :cond_1
-
-    :cond_0
-    move-object p1, v3
-
-    :cond_1
-    if-eqz p1, :cond_2
-
-    .line 4
-    instance-of v4, p1, Ljava/lang/String;
-
-    if-eqz v4, :cond_2
-
-    check-cast p1, Ljava/lang/String;
-
-    move-object v3, p1
-
-    .line 5
-    :cond_2
+    .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-object v0, p0, Lvc/q;->a:Ljava/lang/String;
 
     iput-object v1, p0, Lvc/q;->b:Ljava/lang/String;
 
-    iput-object v2, p0, Lvc/q;->c:Ljava/lang/String;
-
-    iput-object v3, p0, Lvc/q;->d:Ljava/lang/String;
+    iput-object p1, p0, Lvc/q;->c:Ljava/lang/String;
 
     return-void
 .end method
@@ -119,7 +79,7 @@
 
     iget-object v1, p1, Lvc/q;->a:Ljava/lang/String;
 
-    invoke-static {v0, v1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
@@ -129,7 +89,7 @@
 
     iget-object v1, p1, Lvc/q;->b:Ljava/lang/String;
 
-    invoke-static {v0, v1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
@@ -137,19 +97,9 @@
 
     iget-object v0, p0, Lvc/q;->c:Ljava/lang/String;
 
-    iget-object v1, p1, Lvc/q;->c:Ljava/lang/String;
+    iget-object p1, p1, Lvc/q;->c:Ljava/lang/String;
 
-    invoke-static {v0, v1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    iget-object v0, p0, Lvc/q;->d:Ljava/lang/String;
-
-    iget-object p1, p1, Lvc/q;->d:Ljava/lang/String;
-
-    invoke-static {v0, p1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, p1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -214,27 +164,9 @@
 
     invoke-virtual {v2}, Ljava/lang/Object;->hashCode()I
 
-    move-result v2
-
-    goto :goto_2
-
-    :cond_2
-    const/4 v2, 0x0
-
-    :goto_2
-    add-int/2addr v0, v2
-
-    mul-int/lit8 v0, v0, 0x1f
-
-    iget-object v2, p0, Lvc/q;->d:Ljava/lang/String;
-
-    if-eqz v2, :cond_3
-
-    invoke-virtual {v2}, Ljava/lang/Object;->hashCode()I
-
     move-result v1
 
-    :cond_3
+    :cond_2
     add-int/2addr v0, v1
 
     return v0
@@ -243,7 +175,7 @@
 .method public final toString()Ljava/lang/String;
     .locals 3
 
-    const-string v0, "IdProfileImageStatus(imageId="
+    const-string v0, "IdProfileImageUpload(imageId="
 
     .line 1
     invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -269,18 +201,10 @@
 
     iget-object v1, p0, Lvc/q;->c:Ljava/lang/String;
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string v1, ", url="
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget-object v1, p0, Lvc/q;->d:Ljava/lang/String;
-
     const-string v2, ")"
 
     .line 3
-    invoke-static {v0, v1, v2}, Landroid/support/v4/media/b;->b(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, v1, v2}, Landroid/support/v4/media/b;->a(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 

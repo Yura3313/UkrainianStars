@@ -18,5 +18,5 @@
 .method public abstract e(Lcom/supercell/id/model/IdSocialAccount;Lcom/supercell/id/model/IdRelationshipStatus;)V
 .end method
 
-.method public abstract f(Lvc/t;)V
+.method public abstract f(Lvc/s;)V
 .end method

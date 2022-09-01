@@ -1,25 +1,31 @@
-.class public final Lk3/sj0;
-.super Landroid/widget/RelativeLayout;
-.source "com.google.android.gms:play-services-ads@@19.3.0"
-
-
-# static fields
-.field public static final synthetic f:I
+.class public Lk3/sj0;
+.super Landroid/os/Handler;
+.source "com.google.android.gms:play-services-ads-lite@@19.3.0"
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;)V
+.method public constructor <init>(Landroid/os/Looper;)V
     .locals 0
 
-    invoke-direct {p0, p1}, Landroid/widget/RelativeLayout;-><init>(Landroid/content/Context;)V
+    invoke-direct {p0, p1}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
 
     return-void
 .end method
 
-.method public static getWebView()Landroid/webkit/WebView;
-    .locals 1
 
-    const/4 v0, 0x0
+# virtual methods
+.method public a(Landroid/os/Message;)V
+    .locals 0
 
-    return-object v0
+    invoke-super {p0, p1}, Landroid/os/Handler;->dispatchMessage(Landroid/os/Message;)V
+
+    return-void
+.end method
+
+.method public final dispatchMessage(Landroid/os/Message;)V
+    .locals 0
+
+    invoke-virtual {p0, p1}, Lk3/sj0;->a(Landroid/os/Message;)V
+
+    return-void
 .end method

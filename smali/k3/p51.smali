@@ -1,179 +1,408 @@
-.class public final Lk3/p51;
+.class public abstract Lk3/p51;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads-lite@@19.3.0"
 
 
-# instance fields
-.field public final a:Ljava/util/Date;
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<T:",
+        "Ljava/lang/Object;",
+        ">",
+        "Ljava/lang/Object;"
+    }
+.end annotation
 
-.field public final b:Ljava/util/ArrayList;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/List<",
-            "Ljava/lang/String;",
-            ">;"
-        }
-    .end annotation
-.end field
 
-.field public final c:I
-
-.field public final d:Ljava/util/Set;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/Set<",
-            "Ljava/lang/String;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field public final e:Landroid/location/Location;
-
-.field public final f:Landroid/os/Bundle;
-
-.field public final g:Ljava/util/Map;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/Map<",
-            "Ljava/lang/Class<",
-            "Ljava/lang/Object;",
-            ">;",
-            "Ljava/lang/Object;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field public final h:I
-
-.field public final i:Ljava/util/Set;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/Set<",
-            "Ljava/lang/String;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field public final j:Landroid/os/Bundle;
-
-.field public final k:Ljava/util/Set;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/Set<",
-            "Ljava/lang/String;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field public final l:Z
-
-.field public final m:I
+# static fields
+.field public static final a:Lcom/google/android/gms/internal/ads/zzxh;
 
 
 # direct methods
-.method public constructor <init>(Lk3/s51;)V
-    .locals 1
+.method public static constructor <clinit>()V
+    .locals 4
+
+    const/4 v0, 0x0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    :try_start_0
+    const-class v1, Lk3/h51;
 
     .line 2
-    iget-object v0, p1, Lk3/s51;->g:Ljava/util/Date;
+    invoke-virtual {v1}, Ljava/lang/Class;->getClassLoader()Ljava/lang/ClassLoader;
+
+    move-result-object v1
+
+    const-string v2, "com.google.android.gms.ads.internal.ClientApi"
 
     .line 3
-    iput-object v0, p0, Lk3/p51;->a:Ljava/util/Date;
+    invoke-virtual {v1, v2}, Ljava/lang/ClassLoader;->loadClass(Ljava/lang/String;)Ljava/lang/Class;
+
+    move-result-object v1
+
+    const/4 v2, 0x0
+
+    new-array v3, v2, [Ljava/lang/Class;
 
     .line 4
-    iget-object v0, p1, Lk3/s51;->h:Ljava/util/ArrayList;
+    invoke-virtual {v1, v3}, Ljava/lang/Class;->getDeclaredConstructor([Ljava/lang/Class;)Ljava/lang/reflect/Constructor;
+
+    move-result-object v1
+
+    new-array v2, v2, [Ljava/lang/Object;
 
     .line 5
-    iput-object v0, p0, Lk3/p51;->b:Ljava/util/ArrayList;
+    invoke-virtual {v1, v2}, Ljava/lang/reflect/Constructor;->newInstance([Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v1
 
     .line 6
-    iget v0, p1, Lk3/s51;->i:I
+    instance-of v2, v1, Landroid/os/IBinder;
+
+    if-nez v2, :cond_0
+
+    goto :goto_1
 
     .line 7
-    iput v0, p0, Lk3/p51;->c:I
+    :cond_0
+    check-cast v1, Landroid/os/IBinder;
+
+    if-nez v1, :cond_1
+
+    goto :goto_1
+
+    :cond_1
+    const-string v2, "com.google.android.gms.ads.internal.client.IClientApi"
 
     .line 8
-    iget-object v0, p1, Lk3/s51;->a:Ljava/util/HashSet;
+    invoke-interface {v1, v2}, Landroid/os/IBinder;->queryLocalInterface(Ljava/lang/String;)Landroid/os/IInterface;
+
+    move-result-object v2
 
     .line 9
-    invoke-static {v0}, Ljava/util/Collections;->unmodifiableSet(Ljava/util/Set;)Ljava/util/Set;
+    instance-of v3, v2, Lcom/google/android/gms/internal/ads/zzxh;
 
-    move-result-object v0
-
-    iput-object v0, p0, Lk3/p51;->d:Ljava/util/Set;
+    if-eqz v3, :cond_2
 
     .line 10
-    iget-object v0, p1, Lk3/s51;->j:Landroid/location/Location;
+    check-cast v2, Lcom/google/android/gms/internal/ads/zzxh;
+
+    :goto_0
+    move-object v0, v2
+
+    goto :goto_1
 
     .line 11
-    iput-object v0, p0, Lk3/p51;->e:Landroid/location/Location;
+    :cond_2
+    new-instance v2, Lcom/google/android/gms/internal/ads/zzxj;
+
+    invoke-direct {v2, v1}, Lcom/google/android/gms/internal/ads/zzxj;-><init>(Landroid/os/IBinder;)V
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    goto :goto_0
 
     .line 12
-    iget-object v0, p1, Lk3/s51;->b:Landroid/os/Bundle;
-
-    .line 13
-    iput-object v0, p0, Lk3/p51;->f:Landroid/os/Bundle;
-
-    .line 14
-    iget-object v0, p1, Lk3/s51;->c:Ljava/util/HashMap;
-
-    .line 15
-    invoke-static {v0}, Ljava/util/Collections;->unmodifiableMap(Ljava/util/Map;)Ljava/util/Map;
-
-    move-result-object v0
-
-    iput-object v0, p0, Lk3/p51;->g:Ljava/util/Map;
-
-    .line 16
-    iget v0, p1, Lk3/s51;->k:I
-
-    .line 17
-    iput v0, p0, Lk3/p51;->h:I
-
-    .line 18
-    iget-object v0, p1, Lk3/s51;->d:Ljava/util/HashSet;
-
-    .line 19
-    invoke-static {v0}, Ljava/util/Collections;->unmodifiableSet(Ljava/util/Set;)Ljava/util/Set;
-
-    move-result-object v0
-
-    iput-object v0, p0, Lk3/p51;->i:Ljava/util/Set;
-
-    .line 20
-    iget-object v0, p1, Lk3/s51;->e:Landroid/os/Bundle;
-
-    .line 21
-    iput-object v0, p0, Lk3/p51;->j:Landroid/os/Bundle;
-
-    .line 22
-    iget-object v0, p1, Lk3/s51;->f:Ljava/util/HashSet;
-
-    .line 23
-    invoke-static {v0}, Ljava/util/Collections;->unmodifiableSet(Ljava/util/Set;)Ljava/util/Set;
-
-    move-result-object v0
-
-    iput-object v0, p0, Lk3/p51;->k:Ljava/util/Set;
-
-    .line 24
-    iget-boolean v0, p1, Lk3/s51;->l:Z
-
-    .line 25
-    iput-boolean v0, p0, Lk3/p51;->l:Z
-
-    .line 26
-    iget p1, p1, Lk3/s51;->m:I
-
-    .line 27
-    iput p1, p0, Lk3/p51;->m:I
+    :catch_0
+    :goto_1
+    sput-object v0, Lk3/p51;->a:Lcom/google/android/gms/internal/ads/zzxh;
 
     return-void
+.end method
+
+.method public constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public abstract a(Lcom/google/android/gms/internal/ads/zzxh;)Ljava/lang/Object;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lcom/google/android/gms/internal/ads/zzxh;",
+            ")TT;"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Landroid/os/RemoteException;
+        }
+    .end annotation
+.end method
+
+.method public final b(Landroid/content/Context;Z)Ljava/lang/Object;
+    .locals 6
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Landroid/content/Context;",
+            "Z)TT;"
+        }
+    .end annotation
+
+    const/4 v0, 0x1
+
+    if-nez p2, :cond_0
+
+    .line 1
+    sget-object v1, Lk3/o51;->j:Lk3/o51;
+
+    iget-object v1, v1, Lk3/o51;->a:Lk3/ad;
+
+    const v1, 0xbdfcb8
+
+    .line 2
+    invoke-static {p1, v1}, Lk3/ad;->h(Landroid/content/Context;I)Z
+
+    move-result v1
+
+    if-nez v1, :cond_0
+
+    const/4 p2, 0x1
+
+    :cond_0
+    const-string v1, "com.google.android.gms.ads.dynamite"
+
+    .line 3
+    invoke-static {p1, v1}, Lcom/google/android/gms/dynamite/DynamiteModule;->a(Landroid/content/Context;Ljava/lang/String;)I
+
+    move-result v2
+
+    const/4 v3, 0x0
+
+    .line 4
+    invoke-static {p1, v1, v3}, Lcom/google/android/gms/dynamite/DynamiteModule;->d(Landroid/content/Context;Ljava/lang/String;Z)I
+
+    move-result v1
+
+    if-le v2, v1, :cond_1
+
+    const/4 p2, 0x1
+
+    .line 5
+    :cond_1
+    invoke-static {p1}, Lk3/o;->a(Landroid/content/Context;)V
+
+    .line 6
+    sget-object v1, Lk3/q0;->a:Lk3/j0;
+
+    invoke-virtual {v1}, Lk3/j0;->a()Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Ljava/lang/Boolean;
+
+    invoke-virtual {v1}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_2
+
+    const/4 p2, 0x0
+
+    :cond_2
+    const/4 v1, 0x0
+
+    if-eqz p2, :cond_4
+
+    .line 7
+    sget-object p1, Lk3/p51;->a:Lcom/google/android/gms/internal/ads/zzxh;
+
+    if-nez p1, :cond_3
+
+    goto :goto_0
+
+    .line 8
+    :cond_3
+    :try_start_0
+    invoke-virtual {p0, p1}, Lk3/p51;->a(Lcom/google/android/gms/internal/ads/zzxh;)Ljava/lang/Object;
+
+    move-result-object p1
+    :try_end_0
+    .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
+
+    goto :goto_1
+
+    :catch_0
+    :goto_0
+    move-object p1, v1
+
+    :goto_1
+    if-nez p1, :cond_a
+
+    .line 9
+    :try_start_1
+    invoke-virtual {p0}, Lk3/p51;->d()Ljava/lang/Object;
+
+    move-result-object v1
+    :try_end_1
+    .catch Landroid/os/RemoteException; {:try_start_1 .. :try_end_1} :catch_2
+
+    goto :goto_5
+
+    .line 10
+    :cond_4
+    :try_start_2
+    invoke-virtual {p0}, Lk3/p51;->d()Ljava/lang/Object;
+
+    move-result-object p2
+    :try_end_2
+    .catch Landroid/os/RemoteException; {:try_start_2 .. :try_end_2} :catch_1
+
+    goto :goto_2
+
+    :catch_1
+    move-object p2, v1
+
+    :goto_2
+    if-nez p2, :cond_5
+
+    const/4 v2, 0x1
+
+    goto :goto_3
+
+    :cond_5
+    const/4 v2, 0x0
+
+    :goto_3
+    if-eqz v2, :cond_7
+
+    .line 11
+    sget-object v4, Lk3/z0;->a:Lk3/j0;
+
+    invoke-virtual {v4}, Lk3/j0;->a()Ljava/lang/Object;
+
+    move-result-object v4
+
+    check-cast v4, Ljava/lang/Long;
+
+    invoke-virtual {v4}, Ljava/lang/Long;->intValue()I
+
+    move-result v4
+
+    .line 12
+    sget-object v5, Lk3/o51;->j:Lk3/o51;
+
+    iget-object v5, v5, Lk3/o51;->h:Ljava/util/Random;
+
+    .line 13
+    invoke-virtual {v5, v4}, Ljava/util/Random;->nextInt(I)I
+
+    move-result v4
+
+    if-nez v4, :cond_6
+
+    goto :goto_4
+
+    :cond_6
+    const/4 v0, 0x0
+
+    :goto_4
+    if-eqz v0, :cond_7
+
+    .line 14
+    new-instance v0, Landroid/os/Bundle;
+
+    invoke-direct {v0}, Landroid/os/Bundle;-><init>()V
+
+    const-string v3, "action"
+
+    const-string v4, "dynamite_load"
+
+    .line 15
+    invoke-virtual {v0, v3, v4}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
+
+    const-string v3, "is_missing"
+
+    .line 16
+    invoke-virtual {v0, v3, v2}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
+
+    .line 17
+    sget-object v2, Lk3/o51;->j:Lk3/o51;
+
+    iget-object v3, v2, Lk3/o51;->a:Lk3/ad;
+
+    .line 18
+    iget-object v2, v2, Lk3/o51;->g:Lcom/google/android/gms/internal/ads/zzbbg;
+
+    .line 19
+    iget-object v2, v2, Lcom/google/android/gms/internal/ads/zzbbg;->g:Ljava/lang/String;
+
+    .line 20
+    invoke-virtual {v3}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 21
+    new-instance v3, Lk3/q5;
+
+    invoke-direct {v3}, Lk3/q5;-><init>()V
+
+    invoke-static {p1, v2, v0, v3}, Lk3/ad;->b(Landroid/content/Context;Ljava/lang/String;Landroid/os/Bundle;Lk3/bd;)V
+
+    :cond_7
+    if-nez p2, :cond_9
+
+    .line 22
+    sget-object p1, Lk3/p51;->a:Lcom/google/android/gms/internal/ads/zzxh;
+
+    if-nez p1, :cond_8
+
+    goto :goto_5
+
+    .line 23
+    :cond_8
+    :try_start_3
+    invoke-virtual {p0, p1}, Lk3/p51;->a(Lcom/google/android/gms/internal/ads/zzxh;)Ljava/lang/Object;
+
+    move-result-object v1
+    :try_end_3
+    .catch Landroid/os/RemoteException; {:try_start_3 .. :try_end_3} :catch_2
+
+    :catch_2
+    :goto_5
+    move-object p1, v1
+
+    goto :goto_6
+
+    :cond_9
+    move-object p1, p2
+
+    :cond_a
+    :goto_6
+    if-nez p1, :cond_b
+
+    .line 24
+    invoke-virtual {p0}, Lk3/p51;->c()Ljava/lang/Object;
+
+    move-result-object p1
+
+    :cond_b
+    return-object p1
+.end method
+
+.method public abstract c()Ljava/lang/Object;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()TT;"
+        }
+    .end annotation
+.end method
+
+.method public abstract d()Ljava/lang/Object;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()TT;"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Landroid/os/RemoteException;
+        }
+    .end annotation
 .end method

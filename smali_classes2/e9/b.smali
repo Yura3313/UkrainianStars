@@ -3,15 +3,15 @@
 .source "MessagePredicates.java"
 
 # interfaces
-.implements Lcom/helpshift/util/d0;
+.implements Lcom/helpshift/util/c0;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "Lcom/helpshift/util/d0<",
-        "Lo8/y;",
+        "Lcom/helpshift/util/c0<",
+        "Lo8/z;",
         ">;"
     }
 .end annotation
@@ -38,10 +38,10 @@
     .locals 4
 
     .line 1
-    check-cast p1, Lo8/y;
+    check-cast p1, Lo8/z;
 
     .line 2
-    iget-wide v0, p1, Lo8/y;->w:J
+    iget-wide v0, p1, Lo8/z;->x:J
 
     .line 3
     iget-wide v2, p0, Le9/b;->a:J

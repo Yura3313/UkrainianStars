@@ -798,7 +798,7 @@ TID_INPUT_NAME,יש להזין את שמך כאן
 TID_LEADERBOARD_YOUR_SCORE,התוצאה שלך
 TID_LEADERBOARD_YOUR_RANK,הדירוג שלך
 TID_LEADERBOARD_HIGHEST_SCORE,התוצאה הגבוהה ביותר שלך
-TID_LEADERBOARD_LOCAL,מקומי (<COUNTRY>)
+TID_LEADERBOARD_LOCAL,מקומי - <COUNTRY>
 TID_REGION_0,גלובלי
 TID_REGION_1,אסיה
 TID_SET_REGION_RESULT_0,האזור הוחלף בהצלחה ל <REGION>
@@ -998,7 +998,7 @@ TID_SELECT_PLAYER_THUMBNAIL_FAIL_2,ניתן לפתוח סמל זה ברמת ני
 TID_SELECT_PLAYER_THUMBNAIL_FAIL_3,ניתן לפתוח סמל זה כשמספר הגביעים הכולל הוא <TROPHIES>
 TID_PLAYER_INFO_WINS_AMOUNT,<AMOUNT> ניצחונות
 TID_PLAYER_INFO_TAB_1,סטטיסטיקה
-TID_PLAYER_INFO_TAB_2,בראולרים (<FOUND>/<TOTAL>)
+TID_PLAYER_INFO_TAB_2,בראולרים - <FOUND>/<TOTAL>
 TID_PLAYER_STAT_1,ניצחונות ב-3 נגד 3
 TID_PLAYER_STAT_4,מספר הגביעים הכי גבוה
 TID_PLAYER_STAT_8,ניצחונות סולו
@@ -1728,7 +1728,7 @@ TID_BOW_DUDE_SHORT_DESC,גורם נזק
 TID_SNIPER_SHORT_DESC,גורמת נזק
 TID_MINIGUN_DUDE_SHORT_DESC,תמיכה
 TID_BLACK_HOLE_SHORT_DESC,גורמת נזק
-TID_BARREL_BOT_SHORT_DESC,HYBRID
+TID_BARREL_BOT_SHORT_DESC,היברידי
 TID_CLAN_INTRO_SUGGESTED_CLANS,המועדונים הטובים ביותר עבורך
 TID_CLAN_INTRO_CREATE_TITLE,למה לא לפתוח אחד משלך?
 TID_CLAN_INTRO_HEADER,מועדונים
@@ -1808,7 +1808,7 @@ TID_HINT_17,כדאי לכוון את היריות שלך בעת ירי אל הש
 TID_HINT_18,ירי מהיר יעיל במיוחד נגד אויבים שעומדים במקום.
 TID_HINT_19,ירי מהיר יעיל במיוחד נגד אויבים שנעים ישירות לכיוונך או הרחק ממך.
 TID_HINT_20,אויבים יכולים לראות אותך בשיחים אם תקפת או ספגת נזק.
-TID_HINT_21,אפשר להשתמש בשיחים כדי להסתתר מאויבים.
+TID_HINT_21,אפשר להשתמש בשיחים כדי להסתתר מאויבים ולהחלים.
 TID_HINT_22,בשימוש בירי מהיר הנשק שלך יירה גם אם אין אויבים בטווח.
 TID_VS_TUTORIAL,צריך לאסוף את כל <c50d050>קוביות הכוח</c>!
 TID_USE_MANUAL_FIRE_TUTORIAL,יש לגרור את <ccc0033>הסמן האדום</c> לכיוון!
@@ -2049,7 +2049,7 @@ TID_EVENT_MODIFIER_DESC_13,תכונת הסופר נטענת הרבה יותר מ
 TID_EVENT_MODIFIER_DESC_14,כל הבראולרים זזים מהר יותר!
 TID_EVENT_MODIFIER_15,קרב מכריע+
 TID_EVENT_MODIFIER_DESC_15,"ניתן לך גביעים נוספים על כל יריב שהבסת, אבל יאבדו לך גביעים על כל תבוסה שלך!"
-TID_EVENT_MODIFIER_16,PEEK-A-BOO
+TID_EVENT_MODIFIER_16,מחבואים
 TID_EVENT_MODIFIER_DESC_16,מדי פעם כל הבראולרים הופכים לבלתי נראים!
 TID_EVENT_MODIFIER_17,כדור אש
 TID_EVENT_MODIFIER_DESC_17,"אמבר לא הייתה זהירה עם נוזל האש שלה והציתה את הכדור! לא רק שהוא גורם נזק לכל מי שנוגע בו, הוא גם שובר קירות עכשיו! הוא פולט כל כך הרבה חום!"
@@ -2077,13 +2077,13 @@ TID_PLAYER_MAP_PROPS,מפת שחקן של:\n<cff8000><CREDIT></c>
 TID_PLAYER_MAP_WINNER_SLOT_PROPS,הזוכה היום!\n\nקונספט מאת:\n<cff8000><CREDIT></c>
 TID_BATTLE_ROYALE_12,מבוך לוהט
 TID_TEAM_INVITE_ALREADY_IN_TEAM,השחקן כבר בקבוצה!
-TID_HINT_38,"כשעיגול כחול מסתובב מתחת לבראולר, סימן שתכונת הסופר שלו מוכנה!"
+TID_HINT_38,"כשעיגול מסתובב מתחת לבראולר, סימן שתכונת הסופר שלו מוכנה!"
 TID_HINT_39,עיגול צהוב שמסתובב מתחת לבראולר פירושו שהוא מכוון כרגע את תכונת הסופר שלו!
 TID_EVENT_NOT_AVAILABLE,אין אירוע
 TID_SHOP_OFFER_PURCHASE_AD_NOT_AVAILABLE,אין סרטון זמין. יש לבדוק שוב מאוחר יותר!
 TID_SHOP_NOT_AVAILABLE,לא זמין
 TID_UNDERTAKER_GREASER_SKIN_SHOP,מורטיס\nרוקבילי
-TID_HINT_40,יש להתחבר ל-Supercell ID ממסך ההגדרות כדי שהחשבון שלך יישאר מאובטח וכדי לשחק ממספר מכשירים. זה גם יתן לך סקין בחינם!
+TID_HINT_40,יש להתחבר ל-Supercell ID ממסך ההגדרות כדי שהחשבון שלך יישאר מאובטח וכדי לשחק ממספר מכשירים. זה גם ייתן לך סקין בחינם!
 TID_GACHA_VIDEO_REWARD_RECEIVED,פרסים נוספים נוספו!
 TID_BUTTON_NAVI_SHOP,חנות
 TID_BUTTON_NAVI_SOCIAL,חברויות
@@ -2099,7 +2099,7 @@ TID_EVENT_MODIFIER_DESC_5,פטריות ריפוי מופיעות באקראי! �
 TID_EVENT_MODIFIER_DESC_5_SD,"פטריות ריפוי מופיעות באקראי! אם תישארו צמודים, הפטריות לא יצמחו."
 TID_NINJA,לאון
 TID_ROSA,רוזה
-TID_HINT_42,"אם לא תתקפו או תספגו נזק במשך זמן מה, הבראולר שלכם יקבל חיים בחזרה."
+TID_HINT_42,"אם לא תתקפו או תספגו נזק, הבראולר שלכם יקבל חיים בחזרה לאחר זמן מה."
 TID_HOOK_SHORT_DESC,תמיכה
 TID_HOOK_DESC,ג‘ין יורה טיל ממנורת הקסמים שלו. תכונת הסופר שלו היא יד קסומה שתופסת אויבים ומקרבת אותם אליו!
 TID_SPEC_ABI_HOOK,ענני קסם
@@ -2762,7 +2762,7 @@ TID_SPEC_SHIELD_ULTI_DESC,"כשתכונת הסופר של ברוק טעונה ב
 TID_SPEC_ABI_PET,לשחרר את הציפור
 TID_SPEC_ABI_PET_DESC,הציפור של דינ-מייק מצטרפת לקרב!
 TID_SPEC_ABI_DAMAGE_ULTI,סטירת רוח
-TID_SPEC_ABI_DAMAGE_ULTI_DESC,"כשתכונת הסופר של ג‘ין טעונה במלואה, הוא מסב <c00cc00><VALUE1></c> נזק עם המתקפה שלו."
+TID_SPEC_ABI_DAMAGE_ULTI_DESC,"כשתכונת הסופר של ג‘ין טעונה במלואה, הוא מסב <c00cc00>+<VALUE1></c> נזק עם המתקפה שלו."
 TID_ARCADE,8 ביט
 TID_ARCADE_DESC,8 ביט מסתובב באיטיות כמו מכונת משחקים עם רגליים. הוא יורה קרניים מפציצות ותכונת הסופר שלו מחזקת את הנזק של החברים!
 TID_ARCADE_SHORT_DESC,גורם נזק
@@ -3388,7 +3388,7 @@ TID_ACCESSORY_TARA_VISION_DESC,"טארה וחברי הקבוצה שלה יכול
 TID_ACCESSORY_POCO_REGEN_DESC,פוקו וכל חברי הקבוצה שסביבו מקבלים <c00cc00><VALUE1></c> חיים בכל שנייה למשך <c00cc00><VALUE2></c> שניות.
 TID_ACCESSORY_SNIPER_HANDGUN_DESC,פייפר יורה יריית הגנה אל האויב הקרוב ביותר ומסבה נזק של <c00cc00><VALUE2></c>. היא גם הודפת אותו לאחור וגורמת לו להאט.
 TID_ACCESSORY_SPAWNER_DUDE_PROMOTE_DESC,מר P מחזק את הסבל הנוכחי ומעלה את הנזק שלו ב-<c00cc00><VALUE1></c> ואת החיים ב-<c00cc00><VALUE2></c>.
-TID_ACCESSORY_SANDY_SLEEP_DESC,סנדי נרדם למשך <c00cc00><VALUE1></c> שניות ומקבל בחזרה את כל החיים שלו.
+TID_ACCESSORY_SANDY_SLEEP_DESC,סנדי נרדם למשך <c00cc00><VALUE1></c> שניות ומקבל בחזרה את כל הבריאות שלו.
 TID_ACCESSORY_BEE_SNIPER_SLOW_DESC,בי זורקת כוורת עם קצת דבש דביק מסביב. הדבש מאט את האויבים שדורכים עליו.
 TID_ACCESSORY_BULL_HEAL_DESC,בול מחיה את עצמו באופן מיידי ומוסיף <c00cc00><VALUE1></c> חיים.
 TID_ACCESSORY_GUNSLINGER_RELOAD_DESC,קולט טוען <c00cc00><VALUE1></c> קליעים באופן אוטומטי.
@@ -4484,9 +4484,9 @@ TID_EMOTE_BUNDLE_BRALWMAS_PACK,סיכות לחגים
 TID_MAP_EDITOR_LEGAL_WARNING_TITLE,הודעה חשובה
 TID_MAP_EDITOR_LEGAL_WARNING_DESC,"תודה על השימוש ביוצר המפות. חשוב להקפיד לפעול לפי רישיון המשחק והסכם המשתמש של Tencent Games ולפי תקנות קשורות אחרות בעת השימוש ביוצר המפות. אין ליצור או להפיץ תכנים בלתי הולמים, ארוטיים, מגונים, או המסכנים אחדות לאומית, ריבונות ושלמות טריטוריאלית, או המפרים חוקים ותקנות אחרות."
 TID_MAP_EDITOR_LEGAL_WARNING_DESC_YOOZOO,"תודה על השימוש ביוצר המפות. חשוב להקפיד לפעול לפי הסכם המשתמש ולפי תקנות קשורות אחרות בעת השימוש ביוצר המפות. אין ליצור או להפיץ תכנים בלתי הולמים, ארוטיים, מגונים, או המסכנים אחדות לאומית, ריבונות ושלמות טריטוריאלית, או המפרים חוקים ותקנות אחרות."
-TID_RUFFS,קולונל\nראפס
+TID_RUFFS,ראפס
 TID_RUFFS_SHORT_DESC,תמיכה
-TID_RUFFS_DESC,ראפס יורה קרני לייזר כפולות שקופצות מהקירות. תכונת הסופר שלו היא זימון מטען אספקה שיכול לפגוע ביריבים באזור הנחיתה ומשאיר חיזוק המיועד לשימוש בראולרים ידידותיים.
+TID_RUFFS_DESC,"נכון, לפעמים הוא נובח פקודות על הכפופים לו, אבל קולונל ראפס הוא בסך הכול ילד טוב!\n\nראפס מתנהג ברצינות וברוגע, ומסתיר את תכונות הכלב שלו, אלא אם כן מתקיים בסביבה משחק לך-תביא!"
 TID_RUFFS_WEAPON,אקדח לייזר כפול
 TID_RUFFS_WEAPON_DESC,קרני הלייזר הכפולות של ראפס קופצות מהקירות כמה פעמים. הן מסוגלות לפגוע ביריבים שתופסים מחסה.
 TID_RUFFS_ULTI,מטען אספקה
@@ -4527,7 +4527,7 @@ TID_ACCESSORY_ENRAGER_PROTECTION_DESC,אדגר משיג מגן המספק לו �
 TID_ACCESSORY_MINIGUN_DUDE_AMMO_SINK,שואב גרוטאות
 TID_ACCESSORY_MINIGUN_DUDE_AMMO_SINK_DESC,כל פגיעה מההתקפה הבאה של פאם מסירה <c00cc00>%<VALUE1></c> מהתחמושת המקסימלית של הבראולר היריב. פאם מנכסת <c00cc00>%<VALUE2></c> מהתחמושת לעצמה.
 TID_ACCESSORY_SANDSTORM_STUN_SLEEP,חלומות מתוקים
-TID_ACCESSORY_SANDSTORM_STUN_SLEEP_DESC,"ההתקפה הבאה של סנדי מרדימה יריבים למשך <c00cc00><VALUE1></c> שניות. עם זאת, הם יתעוררו ללא כל נזק."
+TID_ACCESSORY_SANDSTORM_STUN_SLEEP_DESC,"ההתקפה הבאה של סנדי מרדימה את היריבים למשך <c00cc00><VALUE1></c> שניות. עם זאת, הם יתעוררו מכל נזק."
 TID_ACCESSORY_CACTUS_COVER,צמח החיים
 TID_ACCESSORY_CACTUS_COVER_DESC,"ספייק מגדל קקטוס גדול עם <c00cc00><VALUE1></c> בריאות כדי לרפא חברים. אם הקקטוס נהרס, הוא מתפוצץ וכל החברים הסמוכים זוכים ב-<c00cc00><VALUE2></c> נקודות בריאות."
 TID_ACCESSORY_BLOWER_STOPPER,טורנדו
@@ -4940,7 +4940,7 @@ TID_ASSAULT_SHOTGUN_SHORT_DESC,גורם נזק
 TID_ASSAULT_SHOTGUN_DESC,"גריף הוא הבעלים של חנות המתנות בפארק סטארר. העסקים לא במצב טוב, ולמרות זאת הוא זורק מטבעות מתוך צנצנת הטיפים של העובדים שלו!"
 TID_ASSAULT_SHOTGUN_WEAPON,זריקת מטבעות
 TID_ASSAULT_SHOTGUN_WEAPON_DESC,גריף הכועס זורק על יריביו מטבעות. הוא זורק שלושה מטחים שמתפזרים בצורת קונוס.
-TID_ASSAULT_SHOTGUN_ULTI,CASHBACK
+TID_ASSAULT_SHOTGUN_ULTI,זורק טיפים
 TID_ASSAULT_SHOTGUN_ULTI_DESC,"Griff זורק חבילה של שטרות בעלי שוליים חדים על שטח רחב בצורת קונוס. הם יקרים מכדי לוותר עליהם, לכן הם חוזרים אליו וגורמים חתכי-נייר פעמיים לאותה מטרה. יריבים רחוקים יותר חוטפים נזק רב יותר."
 TID_SPEC_ABI_ASSAULT_SHOTGUN_1,שמרו על העודף
 TID_SPEC_ABI_ASSAULT_SHOTGUN_1_DESC,"גריף הרותח מזעם זורק מטבעות מהר יותר, ומפחית את הזמן עד לסיום המטח ב-<c00cc00>%<VALUE1></c>."
@@ -4975,7 +4975,7 @@ TID_MECHA_DUDE_BIG_ULTI_DESC,לחליפה המכנית יש זרוע עצומה 
 TID_SPEC_ABI_MECHA_DUDE_1,שדה כוח
 TID_SPEC_ABI_MECHA_DUDE_1_DESC,מג מוגנת על ידי <c00cc00><VALUE1>%</c> מגן למשך <c00cc00><VALUE2></c> שניות כשהחליפה המכנית שלה מושמדת.
 TID_SPEC_ABI_MECHA_DUDE_2,הבי מטאל
-TID_SPEC_ABI_MECHA_DUDE_2_DESC,"לאחר תפוגת הבריאות, החליפה המכנית מתפוצצת וגרומת לנזק של <c00cc00><VALUE1></c> לאויבים קרובים ודוחפת אותם אחורה."
+TID_SPEC_ABI_MECHA_DUDE_2_DESC,"לאחר תפוגת הבריאות, החליפה המכנית מתפוצצת, גורמת נזק של <c00cc00><VALUE1></c> לאויבים קרובים ודוחפת אותם אחורה."
 TID_ACCESSORY_MECHA_DUDE_HEAL,וולט מחשמל
 TID_ACCESSORY_MECHA_DUDE_HEAL_DESC,ניתן לרפא את החליפה המכנית ב-<c00cc00><VALUE1></c> נק' בריאות לשנייה למשך <c00cc00><VALUE2></c> שניות.
 TID_FLAMENGO_MIKE_SKIN,מייק פלמנגו
@@ -5276,7 +5276,7 @@ TID_GEAR_TOKEN,טוקן ציוד
 TID_GEAR_SCRAP_DROP_TITLE,גרוטאות
 TID_GEAR_SCRAP,גרוטאות
 TID_GEAR_UNLOCK_SLOT,שחרור למשבצת ציוד <NUM>
-TID_GEAR_CRAFT_TITLE,רמת <NAME> עיצוב<NUM>?
+TID_GEAR_CRAFT_TITLE,רמת <NAME> עיצוב <NUM>?
 TID_GEAR_UPGRADE_TITLE,שדרוג <NAME> לרמה <NUM>?
 TID_GEAR_CRAFT_BUTTON,עיצוב
 TID_GEAR_UPGRADE_BUTTON,שדרוג
@@ -6168,7 +6168,7 @@ TID_CANNON_GIRL_DESC,בוני והתותח הדומם שלה \qקלייד\qבד�
 TID_CANNON_GIRL_WEAPON,שן רופפת
 TID_CANNON_GIRL_WEAPON_DESC,בוני יורה שן ענקית מהתותח קלייד לעבר האויבים שלה.
 TID_CANNON_GIRL_ULTI,משגר כוכבים
-TID_CANNON_GIRL_ULTI_DESC,קלייד משגר את בוני לאוויר. היא יכולה לחצות מכשולים ולגרום נזק לאויבים סמוכים עם נחיתתה.
+TID_CANNON_GIRL_ULTI_DESC,קלייד משגר את בוני לאוויר. היא יכולה לעוף מעל מכשולים ולגרום נזק לאויבים סמוכים עם נחיתתה.
 TID_CANNON_GIRL_SMALL_WEAPON,פצצה של מעיל
 TID_CANNON_GIRL_SMALL_WEAPON_DESC,בוני מעיפה משרוולה מקבץ רימונים קטנים.
 TID_CANNON_GIRL_SMALL_ULTI,קלייד
@@ -6345,7 +6345,7 @@ TID_ACCESSORY_FIRE_DUDE_FLAME_SHIELD_DESC,"אמבר יוצרת <c00cc00><VALUE3>
 TID_ACCESSORY_MECHA_DUDE_TOWER_RELOAD,ארגז כלים
 TID_ACCESSORY_MECHA_DUDE_TOWER_RELOAD_DESC,"מג מפילה את ארגז הכלים שלה, מה שמגביר את מהירות הטעינה מחדש עבור בעלי ברית קרובים ב-<c00cc00>%<VALUE1></c> עד שהוא נהרס."
 TID_ACCESSORY_ROPE_DUDE_VISION,צללי רנטגן
-TID_ACCESSORY_ROPE_DUDE_VISION_DESC,באז מסוגל לראות מה קורה בתוך כל השיחים למשך <c00cc00><VALUE1></c> שניות.
+TID_ACCESSORY_ROPE_DUDE_VISION_DESC,באז יכול לראות מה קורה בתוך כל שיח באזור הטעינה של תכונת הסופר שלו למשך <c00cc00><VALUE1></c> שניות.
 TID_LOGIN_CALENDAR_ALREADY_HAVE_BRAWLER,כבר יש לך את הבראולר הזה
 TID_LOGIN_CALENDAR_ALREADY_HAVE_GADGET,כבר יש לך את הגאדג‘ט הזה
 TID_LOGIN_CALENDAR_ALREADY_HAVE_STAR_POWER,כבר יש לך את כוח הכוכב הזה
@@ -6460,6 +6460,7 @@ TID_ACCESSORY_SILENCER_GADGET_1_DESC,"כוכב הים הבא יישאר על ה�
 TID_ACCESSORY_SILENCER_GADGET_2,שלוליות או לא להיות
 TID_ACCESSORY_SILENCER_GADGET_2_DESC,"בהתקפה הבאה אוטיס יורה כדור דיו ענק שמשאיר שלולית, וגורם <c00cc00><VALUE1></c> נזק לאורך זמן למשך <c00cc00><VALUE2></c> שניות."
 TID_RANDOM_GAME_MODE,תעלומה
+TID_ADVENTURE_GAME_MODE,הרפתקה
 TID_NOTIFICATION_RANDOM,מפת תעלומה חדשה זמינה! זה הזמן לזכות בפרסים חדשים!
 TID_SKIN_INFO_DEEPSEA,סקין בראולר ים עמוק
 TID_EMOTE_BUNDLE_DEEPSEA_PACK,סיכות סקין בראולר ים עמוק
@@ -6515,8 +6516,8 @@ TID_BT21_RUFFS_SKIN,ראפס CHIMMY
 TID_BT21_RUFFS_SKIN_SHOP,ראפס\nCHIMMY
 TID_BT21_BULL_SKIN,בול MANG
 TID_BT21_BULL_SKIN_SHOP,בול\nMANG
-TID_BT21_BIBI_SKIN,BIBI RJ
-TID_BT21_BIBI_SKIN_SHOP,BIBI\nRJ
+TID_BT21_BIBI_SKIN,באבל RJ
+TID_BT21_BIBI_SKIN_SHOP,באבל\nRJ
 TID_BT21_JACKY_SKIN,ג‘קי COOKY
 TID_BT21_JACKY_SKIN_SHOP,ג‘קי\nCOOKY
 TID_BT21_TICK_SKIN,טיק SHOOKY
@@ -6553,9 +6554,9 @@ TID_CLUB_EVENTS_CHANGED_CLUB,"אפשר לתרום רק למועדון שאיתו
 TID_CLUB_QUESTS_CURRENT_CLUB_POINTS,סך הנקודות שצבר המועדון שלך השבוע
 TID_CLUB_QUESTS_THIS_WEEKS_QUESTS,הקווסטים של המועדונים השבוע
 TID_SPEC_ABI_ARTILLERY_DUDE_1,תיבות כבדות
-TID_SPEC_ABI_ARTILLERY_DUDE_1_DESC,ארנקי הזהב של פני מתפוצצים על פני שטח קונוס רחב ב-<c00cc00>%<VALUE1></c>לאחר כל פגיעה.
+TID_SPEC_ABI_ARTILLERY_DUDE_1_DESC,ארנקי הזהב של פני מתפוצצים על פני שטח קונוס רחב ב-<c00cc00>%<VALUE1></c> לאחר כל פגיעה.
 TID_SPEC_ABI_ARTILLERY_DUDE_2,מאסטר בשיגור
-TID_SPEC_ABI_ARTILLERY_DUDE_2_DESC,התותח של פני גורם <c00cc00><VALUE1></c> נזק ומפיל ארצה אויבים קרובים עם הנחיתה.
+TID_SPEC_ABI_ARTILLERY_DUDE_2_DESC,התותח של פני גורם <c00cc00><VALUE1></c> נזק ומרחיק לאחור אויבים הסמוכים למקום נחיתתו.
 TID_ACCESSORY_ARTILLERY_DUDE_GADGET_1,חבית מלח
 TID_ACCESSORY_ARTILLERY_DUDE_GADGET_1_DESC,פני מפילה חבית מלח שחוסמת את קליעי האויב. היא יכולה להשתמש בה גם כדי לפוצץ איתה את ארנקי הזהב שלה.
 TID_ACCESSORY_ARTILLERY_DUDE_GADGET_2,משקפת אמינה
@@ -6602,6 +6603,146 @@ TID_TRUE_GOLD_EVE_SKIN_SHOP,יציקת איב\nמזהב
 TID_TRUE_SILVER_EVE_SKIN,יציקת איב מכסף
 TID_TRUE_SILVER_EVE_SKIN_SHOP,יציקת איב\nמכסף
 TID_BRAWL_PASS_SEASON_12,סקין בראולר ים עמוק
+TID_TRIPLE_TAKEDOWN,ניצחון מוחץ כפול שלוש!
+TID_QUAD_TAKEDOWN,ניצחון מוחץ כפול ארבע!
+TID_WEAPON_THROWER,סאם
+TID_WEAPON_THROWER_SHORT_DESC,גורם נזק
+TID_WEAPON_THROWER_DESC,"סאם ברונסון, עובד מפעל לשעבר, רוצה לנקום בכל הרובוטים.\n\nהוא הכוח מאחורי המוח של חבורת זרוע הזהב, ותמיד שמח לקחת את השלל ולהכניס מכות לרובוטים!"
+TID_WEAPON_THROWER_WEAPON,מטר אגרופים
+TID_WEAPON_THROWER_WEAPON_DESC,"סאם משחרר מנה כפולה של אגרופים קשוחים. הודות לכפפות שלו, הוא גורם הרבה יותר נזק."
+TID_WEAPON_THROWER_ULTI,אגרופנים
+TID_WEAPON_THROWER_ULTI_DESC,סאם משליך את האגרופנים שלו וגורם נזק לכל האויבים שנפגעים מהם לפני שהם נוחתים על הקרקע. תכונת הסופר הבאה שלו מחזירה אותם אליו וגם גורמת נזק.
+TID_SPEC_ABI_WEAPON_THROWER_1,התאוששות מהירה
+TID_SPEC_ABI_WEAPON_THROWER_1_DESC,"לאחר שהחזיר את האגרופנים לידיו, סאם משחזר באופן מיידי <c00cc00><VALUE1>%</c> בריאות."
+TID_SPEC_ABI_WEAPON_THROWER_2,הטענה מרחוק
+TID_SPEC_ABI_WEAPON_THROWER_2_DESC,"כל עוד האגרופנים על הקרקע ובקרבת אויבים, הם מטעינים את תכונת הסופר של סאם."
+TID_ACCESSORY_WEAPON_THROWER_GADGET_1,שדה מגנטי
+TID_ACCESSORY_WEAPON_THROWER_GADGET_1_DESC,"כל עוד האגרופנים על הקרקע ובקרבת אויבים, סאם יכול להפעיל אותם כדי למשוך אויבים סמוכים."
+TID_ACCESSORY_WEAPON_THROWER_GADGET_2,גל הלם
+TID_ACCESSORY_WEAPON_THROWER_GADGET_2_DESC,"עם נחיתתם על הקרקע, האגרופנים הבאים שסאם פורס משגרים גל הלם חשמלי שמפיל אויבים."
+TID_ACCESSORY_BLOCKED_MISSING_GAUNTLETS,האגרופנים לא על הקרקע!
+TID_ACCESSORY_BLOCKED_GAUNTLETS_TOO_FAR,האגרופנים רחוקים מדי!
+TID_ACCESSORY_BLOCKED_GAUNTLETS_REQUIRED,נדרשים אגרופנים!
+TID_SOUL_COLLECTOR,גאס
+TID_SOUL_COLLECTOR_SHORT_DESC,תמיכה
+TID_SOUL_COLLECTOR_DESC,"גאס מבלה בנסיעה ברכבת שנשכחה וננטשה מזמן. הוא אוהב בלונים ומפליא ליצור מהם חיות, שבהן הוא משתמש כדי להעביר את הזמן ולארח לעצמו חברה."
+TID_SOUL_COLLECTOR_WEAPON,בלוני לוני
+TID_SOUL_COLLECTOR_WEAPON_DESC,"גאס יורה בלונים לעבר אויבים. אחרי כמה פגיעות ברצף, צונחת רוח. רוחות שיצטברו ישחזרו חלק מהבריאות שלך או של הצוות שלך."
+TID_SOUL_COLLECTOR_ULTI,ספוקי
+TID_SOUL_COLLECTOR_ULTI_DESC,"גאס משתמש בספוקי (דמות עשויה מבלון וחברו הטוב ביותר), כדי ליצור מגן סביב עצמו או סביב אחד מחבריו לקבוצה."
+TID_SPEC_ABI_SOUL_COLLECTOR_1,שפע בריאות
+TID_SPEC_ABI_SOUL_COLLECTOR_1_DESC,הריפוי שמתקבל מבלוני לוני גדל ב-<c00cc00><VALUE1>%</c>.
+TID_SPEC_ABI_SOUL_COLLECTOR_2,חיית רוח
+TID_SPEC_ABI_SOUL_COLLECTOR_2_DESC,ספוקי מגדיל את תפוקת הנזק לחבר צוות ב-<c00cc00><VALUE1>%</c> ל-<c00cc00><VALUE2></c> שניות.
+TID_ACCESSORY_SOUL_COLLECTOR_GADGET_1,קוקי פופר
+TID_ACCESSORY_SOUL_COLLECTOR_GADGET_1_DESC,"מפוצץ את כל הרוחות שלא נאספו, ומסב <c00cc00><VALUE1></c> נזק לאויבים סמוכים."
+TID_ACCESSORY_SOUL_COLLECTOR_GADGET_2,מחליף נשמות
+TID_ACCESSORY_SOUL_COLLECTOR_GADGET_2_DESC,גאס מאבד <ccc0000><VALUE1>%</c> בריאות ומרוויח מיידית <c00cc00><VALUE2>%</c> רוח.
+TID_ACCESSORY_BLOCKED_MISSING_SOULS,רוחות חסרות!
+TID_ACCESSORY_BLOCKED_SPIRIT_ALREADY_FULL,רמת הרוח כבר מלאה!
+TID_SKIN_INFO_OUTLAW,סקין חבורת האסון
+TID_EMOJI_SURGE_TEAM,NAVI
+TID_EMOJI_MORTIS_TEAM,SK
+TID_EMOJI_SPIKE_TEAM,INTZ
+TID_EMOJI_PRIMO_TEAM,TQ
+TID_EMOJI_COLT_TEAM,STMN
+TID_EMOJI_NITA_TEAM,OBEY
+TID_EMOJI_LEON_TEAM,QLASH
+TID_EMOJI_JESSIE_TEAM,ZETA
+TID_EMOJI_EMZ_TEAM,TRIBE
+TID_EMOJI_SHELLY_TEAM,TOTEM
+TID_SKIN_INFO_MECHA,סקין מכני
+TID_SCID_REQUIRED_DESC,"בשל גילך, עליך לחבר את המשחק שלך ל-Supercell ID"
+TID_SCID_REQUIRED_CONNECT,התחברות
+TID_LOGIN_CALENDAR_POPULAR,פופולרי
+TID_TRAIT_SUPER_START,בראולר זה מתחיל עם תכונת סופר טעונה במלואה
+TID_GAME_MODE_29,ביצור אחרון
+TID_GAME_MODE_29_DESC,"רובוטים מושחתים פנו נגדנו! 8 ביט הוא התקווה האחרונה והיחידה שלנו. הוא נושא את הקוד הסודי וחשוב מאוד שהוא ישרוד! צריך להגן על 8 ביט מפני גלים של רובוטים מרושעים, עד שלא יישאר זמן לנצח במשחק.\n\nמומלץ לאסוף את מטבעות הבראולרים כדי להשאיר את 8 ביט בקרב!"
+TID_GAME_MODE_29_INTRO_TEXT,מגינים על 8 ביט!
+TID_LAST_STAND_1,המשמיד
+TID_LAST_STAND_2,יום הדין
+TID_LAST_STAND_3,עליית הרובוטים
+TID_LAST_STAND_4,גאולה
+TID_LAST_STAND_5,מעגלים שרופים
+TID_LAST_STAND_6,גורל אפל
+TID_INBOX_CAPTION_55,פרס על השלמת קווסט:
+TID_ESPORTS_OFFER_TITLE,אליפות
+TID_ESPORTS_OFFER_SUBTITLE_PINS,ערכת סיכות
+TID_ESPORTS_OFFER_SUBTITLE_THUMBNAILS,סמל שחקן
+TID_ESPORTS_OFFER_SUBTITLE_EACH,כל אחד
+TID_ESPORTS_OFFER_SUBTITLE_ALREADY_OWNED,כבר ברשותך!
+TID_ESPORTS_OFFER_ITEM_PINS,סיכה
+TID_ESPORTS_OFFER_ITEM_THUMBNAILS,סמל שחקן
+TID_EMOTE_BUNDLE_MORTIS_MECHA_PACK,חבילת סיכות של מורטיס המכני
+TID_BRAWL_PASS_SEASON_13,מפעל רובוטים
+TID_TRUE_GOLD_OTIS_SKIN,יציקת אוטיס מזהב
+TID_TRUE_GOLD_OTIS_SKIN_SHOP,יציקת אוטיס\nמזהב
+TID_TRUE_SILVER_OTIS_SKIN,יציקת אוטיס מכסף
+TID_TRUE_SILVER_OTIS_SKIN_SHOP,יציקת אוטיס\nמכסף
+TID_TRUE_GOLD_SQUEAK_SKIN,יציקת סקוויק מזהב
+TID_TRUE_GOLD_SQUEAK_SKIN_SHOP,יציקת סקוויק\nמזהב
+TID_TRUE_SILVER_SQUEAK_SKIN,יציקת סקוויק מכסף
+TID_TRUE_SILVER_SQUEAK_SKIN_SHOP,יציקת סקוויק\nמכסף
+TID_TRUE_GOLD_BYRON_SKIN,יציקת ביירון מזהב
+TID_TRUE_GOLD_BYRON_SKIN_SHOP,יציקת ביירון\nמזהב
+TID_TRUE_SILVER_BRYON_SKIN,יציקת ביירון מכסף
+TID_TRUE_SILVER_BYRON_SKIN_SHOP,יציקת ביירון\nמכסף
+TID_TRUE_GOLD_GRIFF_SKIN,יציקת גריף מזהב
+TID_TRUE_GOLD_GRIFF_SKIN_SHOP,יציקת גריף\nמזהב
+TID_TRUE_SILVER_GRIFF_SKIN,יציקת גריף מכסף
+TID_TRUE_SILVER_GRIFF_SKIN_SHOP,יציקת גריף\nמכסף
+TID_TRUE_GOLD_EDGAR_SKIN,יציקת אדגר מזהב
+TID_TRUE_GOLD_EDGAR_SKIN_SHOP,יציקת אדגר\nמזהב
+TID_TRUE_SILVER_EDGAR_SKIN,יציקת אדגר מכסף
+TID_TRUE_SILVER_EDGAR_SKIN_SHOP,יציקת אדגר\nמכסף
+TID_CAESAR_BRONSON_SKIN,הקיסר סאם
+TID_CAESAR_BRONSON_SKIN_SHOP,הקיסר\nסאם
+TID_MECHA_MORIS_SKIN,מורטיס המכני
+TID_MECHA_MORTIS_SKIN_SHOP,מורטיס\nהמכני
+TID_DARK_MECHA_MORTIS_SKIN,מורטיס המכני כהה
+TID_DARK_MECHA_MORTIS_SKIN_SHOP,מורטיס\nהמכני הכהה
+TID_LIGHT_MECHA_MORTIS_SKIN,מורטיס המכני הבהיר
+TID_LIGHT_MECHA_MORTIS_SKIN_SHOP,מורטיס\nהמכני בהיר
+TID_OUTLAW_LOLA_SKIN,לולה הפרועה
+TID_OUTLAW_LOLA_SKIN_SHOP,לולה\nהפרועה
+TID_OUTLAW_CROW,עצם קרואו
+TID_OUTLAW_CROW_SKIN_SHOP,עצם קרואו
+TID_OUTLAW_POCO_SKIN,דספראדו פוקו
+TID_OUTLAW_POCO_SKIN_SHOP,דספראדו\nפוקו
+TID_BROKER_PAM_SKIN,פאם המפגיזה
+TID_BROKER_PAM_SKIN_SHOP,פאם\nהמפגיזה
+TID_MOON_FESTIVAL_SQUEAK_SKIN,סקוויק ארנב הירח
+TID_MOON_FESTIVAL_SQUEAK_SKIN_SHOP,סקוויק ארנב\nהירח
+TID_BRAWLOWEEN_LEON_SKIN,לאון ממתק או ברדק
+TID_BRAWLOWEEN_LEON_SKIN_SHOP,לאון\nממתק או ברדק
+TID_HINT_45,יש להקפיד להשתמש בקוד היוצר בחנות.
+TID_HINT_46,מומלץ להיכנס למשחק כל יום כדי לקבל פרסים יומיים בחינם!
+TID_HINT_47,העברת הכדור לאויבים בכדור-בראולר עשויה להיות דרך מצוינת לגרום להם לבזבז תחמושת!
+TID_HINT_48,מומלץ להשתמש בסיכות ובתרסיסים במהלך המשחק כדי להביע רגשות.
+TID_HINT_49,"גדרות הן כמן קירות, אלא שאפשר לירות דרכן!"
+TID_HINT_50,עבודת צוות מגשימה חלומות!
+TID_HINT_51,לא אהבת את פריסת השליטה שלך? אפשר לשנות אותה באמצעות הפונקציה TRY.
+TID_HINT_52,בכדור-בראולר אפשר להשתמש בתכונת הסופר כדי לבצע סופר בעיטה!
+TID_HINT_53,"כשמרוויחים הכי הרבה יהלומים בתופסים-יהלומים, צריך לתעדף הגנה על פני התקפה."
+TID_HINT_54,"אם החברים שלך לקבוצה מובסים, צריך לחכות עד שהם ייווצרו מחדש לפני שמסתערים שוב יחד!"
+TID_HINT_55,כדאי להיעזר בקרבות ידידותיים כדי לתרגל את הכישורים ולשפר אותם
+TID_HINT_56,לחלק מהבראולרים יש תכונות מיוחדות! מומלץ לעיין בהן במסך נתוני הבראולרים.
+TID_HINT_57,בקרב מכריע בזוג צריך לוודא שהחבר שלך לצוות חי לפני שאוספים קוביות כוח.
+TID_HINT_58,"אם משתתפים באתגרים, מומלץ להשתמש בתכונה חיפוש-קבוצה!"
+TID_HINT_59,תמיד צריך להיזהר מהמוקשים של בו. הם עלולים לצוץ בכל מקום!
+TID_HINT_60,תכונת הסופר של לו מעולה לשליטה אזורית. כדאי להשתמש בה בחוכמה בנקודות מפתח במפה!
+TID_HINT_61,הנזק של ג'סי פוחת בכל פעם שההתקפה שלה מקפיצה אויב.
+TID_HINT_62,סופיה יכולה להסב נזק עצום כשהיא תוקפת בראולרים מזיקים!
+TID_HINT_63,אדגר מחלים בכל פעם שהוא מכניס אגרוף!
+TID_HINT_64,"ג'נט יורה רחוק יותר, ככל שמכוונים אותה אל מטרה רחוקה יותר."
+TID_HINT_65,ג'ין מסוגל להציק לאויב ולהאשים את תכונת הסופר שלו במתקפה המפוצלת שלו!
+TID_LAST_STAND_WAVE_1,רובוטים מתקרבים!
+TID_LAST_STAND_WAVE_2,עוד אויבים באים!
+TID_LAST_STAND_SHUTDOWN,<ccc0000>8 ביט נכבה!</c>
+TID_EMOTE_BUNDLE_OUTLAW_PACK,חבילת סיכות של חבורת האסון
+TID_SHOP_OUTLAW_SKINS,סקין חבורת האסון
+TID_SHOP_OUTLAW_TITLE,חבורת האסון
+TID_ACCESSORY_BLOCKED_SOULS_TOO_FAR,הרוחות רחוקות מדי!
 TID_REGION_CUSTOM1,
 TID_REGION_CUSTOM2,
 TID_REGION_CUSTOM3,

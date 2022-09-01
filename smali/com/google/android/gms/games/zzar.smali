@@ -19,13 +19,13 @@
 
 
 # instance fields
-.field public f:I
-
-.field public g:Ljava/lang/String;
+.field public g:I
 
 .field public h:Ljava/lang/String;
 
 .field public i:Ljava/lang/String;
+
+.field public j:Ljava/lang/String;
 
 
 # direct methods
@@ -48,16 +48,16 @@
     invoke-direct {p0}, Lcom/google/android/gms/games/internal/zze;-><init>()V
 
     .line 7
-    iput p1, p0, Lcom/google/android/gms/games/zzar;->f:I
+    iput p1, p0, Lcom/google/android/gms/games/zzar;->g:I
 
     .line 8
-    iput-object p2, p0, Lcom/google/android/gms/games/zzar;->g:Ljava/lang/String;
+    iput-object p2, p0, Lcom/google/android/gms/games/zzar;->h:Ljava/lang/String;
 
     .line 9
-    iput-object p3, p0, Lcom/google/android/gms/games/zzar;->h:Ljava/lang/String;
+    iput-object p3, p0, Lcom/google/android/gms/games/zzar;->i:Ljava/lang/String;
 
     .line 10
-    iput-object p4, p0, Lcom/google/android/gms/games/zzar;->i:Ljava/lang/String;
+    iput-object p4, p0, Lcom/google/android/gms/games/zzar;->j:Ljava/lang/String;
 
     return-void
 .end method
@@ -73,28 +73,28 @@
 
     move-result v0
 
-    iput v0, p0, Lcom/google/android/gms/games/zzar;->f:I
+    iput v0, p0, Lcom/google/android/gms/games/zzar;->g:I
 
     .line 3
     invoke-interface {p1}, Lcom/google/android/gms/games/PlayerRelationshipInfo;->I()Ljava/lang/String;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/google/android/gms/games/zzar;->g:Ljava/lang/String;
+    iput-object v0, p0, Lcom/google/android/gms/games/zzar;->h:Ljava/lang/String;
 
     .line 4
     invoke-interface {p1}, Lcom/google/android/gms/games/PlayerRelationshipInfo;->d0()Ljava/lang/String;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/google/android/gms/games/zzar;->h:Ljava/lang/String;
+    iput-object v0, p0, Lcom/google/android/gms/games/zzar;->i:Ljava/lang/String;
 
     .line 5
     invoke-interface {p1}, Lcom/google/android/gms/games/PlayerRelationshipInfo;->l0()Ljava/lang/String;
 
     move-result-object p1
 
-    iput-object p1, p0, Lcom/google/android/gms/games/zzar;->i:Ljava/lang/String;
+    iput-object p1, p0, Lcom/google/android/gms/games/zzar;->j:Ljava/lang/String;
 
     return-void
 .end method
@@ -324,7 +324,7 @@
 .method public final I()Ljava/lang/String;
     .locals 1
 
-    iget-object v0, p0, Lcom/google/android/gms/games/zzar;->g:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/android/gms/games/zzar;->h:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -332,7 +332,7 @@
 .method public final d0()Ljava/lang/String;
     .locals 1
 
-    iget-object v0, p0, Lcom/google/android/gms/games/zzar;->h:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/android/gms/games/zzar;->i:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -366,7 +366,7 @@
 .method public final l0()Ljava/lang/String;
     .locals 1
 
-    iget-object v0, p0, Lcom/google/android/gms/games/zzar;->i:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/android/gms/games/zzar;->j:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -374,7 +374,7 @@
 .method public final s0()I
     .locals 1
 
-    iget v0, p0, Lcom/google/android/gms/games/zzar;->f:I
+    iget v0, p0, Lcom/google/android/gms/games/zzar;->g:I
 
     return v0
 .end method
@@ -400,7 +400,7 @@
     move-result p2
 
     .line 2
-    iget v0, p0, Lcom/google/android/gms/games/zzar;->f:I
+    iget v0, p0, Lcom/google/android/gms/games/zzar;->g:I
 
     const/4 v1, 0x1
 
@@ -413,7 +413,7 @@
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 5
-    iget-object v0, p0, Lcom/google/android/gms/games/zzar;->g:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/android/gms/games/zzar;->h:Ljava/lang/String;
 
     const/4 v1, 0x2
 
@@ -423,7 +423,7 @@
     invoke-static {p1, v1, v0, v3}, Le2/b;->m(Landroid/os/Parcel;ILjava/lang/String;Z)V
 
     .line 7
-    iget-object v0, p0, Lcom/google/android/gms/games/zzar;->h:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/android/gms/games/zzar;->i:Ljava/lang/String;
 
     const/4 v1, 0x3
 
@@ -431,7 +431,7 @@
     invoke-static {p1, v1, v0, v3}, Le2/b;->m(Landroid/os/Parcel;ILjava/lang/String;Z)V
 
     .line 9
-    iget-object v0, p0, Lcom/google/android/gms/games/zzar;->i:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/android/gms/games/zzar;->j:Ljava/lang/String;
 
     .line 10
     invoke-static {p1, v2, v0, v3}, Le2/b;->m(Landroid/os/Parcel;ILjava/lang/String;Z)V

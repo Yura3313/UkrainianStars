@@ -1,5 +1,5 @@
 .class public final Ln/g;
-.super Lo/r;
+.super Lo/q;
 .source "StopLogic.java"
 
 
@@ -36,7 +36,7 @@
     .locals 1
 
     .line 1
-    invoke-direct {p0}, Lo/r;-><init>()V
+    invoke-direct {p0}, Lo/q;-><init>()V
 
     const/4 v0, 0x0
 

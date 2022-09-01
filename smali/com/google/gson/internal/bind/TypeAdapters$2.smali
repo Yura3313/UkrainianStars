@@ -123,7 +123,7 @@
     const-string v0, "Error: Expecting: bitset number value (1, 0), Found: "
 
     .line 10
-    invoke-static {v0, v1}, Lcom/google/android/gms/ads/e;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, v1}, Lf/g;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 

@@ -1,5 +1,5 @@
 .class public final Lcom/supercell/id/ui/game/donate/DonateFragment$a$b;
-.super Lse/h;
+.super Lse/i;
 .source "DonateFragment.kt"
 
 # interfaces
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/supercell/id/ui/game/donate/DonateFragment$a;->n(Lae/c2$a;ILae/b2;)V
+    value = Lcom/supercell/id/ui/game/donate/DonateFragment$a;->n(Lae/b2$a;ILae/a2;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,37 +18,37 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/p<",
         "Ljava/util/Observable;",
         "Ljava/lang/Object;",
-        "Lie/h;",
+        "Lie/i;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic f:Lcom/supercell/id/ui/game/donate/DonateFragment$a;
+.field public final synthetic g:Lcom/supercell/id/ui/game/donate/DonateFragment$a;
 
-.field public final synthetic g:Ljava/lang/String;
+.field public final synthetic h:Ljava/lang/String;
 
-.field public final synthetic h:Landroid/view/View;
+.field public final synthetic i:Landroid/view/View;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/id/ui/game/donate/DonateFragment$a;Ljava/lang/String;Landroid/view/View;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/ui/game/donate/DonateFragment$a$b;->f:Lcom/supercell/id/ui/game/donate/DonateFragment$a;
+    iput-object p1, p0, Lcom/supercell/id/ui/game/donate/DonateFragment$a$b;->g:Lcom/supercell/id/ui/game/donate/DonateFragment$a;
 
-    iput-object p2, p0, Lcom/supercell/id/ui/game/donate/DonateFragment$a$b;->g:Ljava/lang/String;
+    iput-object p2, p0, Lcom/supercell/id/ui/game/donate/DonateFragment$a$b;->h:Ljava/lang/String;
 
-    iput-object p3, p0, Lcom/supercell/id/ui/game/donate/DonateFragment$a$b;->h:Landroid/view/View;
+    iput-object p3, p0, Lcom/supercell/id/ui/game/donate/DonateFragment$a$b;->i:Landroid/view/View;
 
     const/4 p1, 0x2
 
-    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -62,7 +62,7 @@
     check-cast p1, Ljava/util/Observable;
 
     .line 2
-    iget-object p1, p0, Lcom/supercell/id/ui/game/donate/DonateFragment$a$b;->f:Lcom/supercell/id/ui/game/donate/DonateFragment$a;
+    iget-object p1, p0, Lcom/supercell/id/ui/game/donate/DonateFragment$a$b;->g:Lcom/supercell/id/ui/game/donate/DonateFragment$a;
 
     .line 3
     iget-object p1, p1, Lae/s;->f:Landroidx/fragment/app/Fragment;
@@ -71,16 +71,16 @@
     check-cast p1, Lcom/supercell/id/ui/game/donate/DonateFragment;
 
     .line 5
-    iget-object p1, p1, Lcom/supercell/id/ui/game/donate/DonateFragment;->j0:Lbe/l0;
+    iget-object p1, p1, Lcom/supercell/id/ui/game/donate/DonateFragment;->k0:Lbe/n0;
 
     const/4 p2, 0x0
 
     if-eqz p1, :cond_0
 
     .line 6
-    iget-object v0, p0, Lcom/supercell/id/ui/game/donate/DonateFragment$a$b;->g:Ljava/lang/String;
+    iget-object v0, p0, Lcom/supercell/id/ui/game/donate/DonateFragment$a$b;->h:Ljava/lang/String;
 
-    invoke-static {p1, v0}, Lbd/d;->b(Lbe/l0;Ljava/lang/String;)I
+    invoke-static {p1, v0}, Lbd/d;->b(Lbe/n0;Ljava/lang/String;)I
 
     move-result p1
 
@@ -112,7 +112,7 @@
     move-result-object v5
 
     .line 8
-    iget-object v6, p0, Lcom/supercell/id/ui/game/donate/DonateFragment$a$b;->g:Ljava/lang/String;
+    iget-object v6, p0, Lcom/supercell/id/ui/game/donate/DonateFragment$a$b;->h:Ljava/lang/String;
 
     invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -121,14 +121,14 @@
     .line 9
     sget-object v4, Ljava/util/Locale;->ENGLISH:Ljava/util/Locale;
 
-    invoke-static {v4, v2}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v4, v2}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 10
     invoke-virtual {v3, v4}, Ljava/lang/String;->toLowerCase(Ljava/util/Locale;)Ljava/lang/String;
 
     move-result-object v2
 
-    invoke-static {v2, v1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v2, v1}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v5, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -147,7 +147,7 @@
     move-result-object v5
 
     .line 12
-    iget-object v6, p0, Lcom/supercell/id/ui/game/donate/DonateFragment$a$b;->g:Ljava/lang/String;
+    iget-object v6, p0, Lcom/supercell/id/ui/game/donate/DonateFragment$a$b;->h:Ljava/lang/String;
 
     invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -156,14 +156,14 @@
     .line 13
     sget-object v4, Ljava/util/Locale;->ENGLISH:Ljava/util/Locale;
 
-    invoke-static {v4, v2}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v4, v2}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 14
     invoke-virtual {v3, v4}, Ljava/lang/String;->toLowerCase(Ljava/util/Locale;)Ljava/lang/String;
 
     move-result-object v2
 
-    invoke-static {v2, v1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v2, v1}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v5, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -182,7 +182,7 @@
     move-result-object v5
 
     .line 16
-    iget-object v6, p0, Lcom/supercell/id/ui/game/donate/DonateFragment$a$b;->g:Ljava/lang/String;
+    iget-object v6, p0, Lcom/supercell/id/ui/game/donate/DonateFragment$a$b;->h:Ljava/lang/String;
 
     invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -191,14 +191,14 @@
     .line 17
     sget-object v4, Ljava/util/Locale;->ENGLISH:Ljava/util/Locale;
 
-    invoke-static {v4, v2}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v4, v2}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 18
     invoke-virtual {v3, v4}, Ljava/lang/String;->toLowerCase(Ljava/util/Locale;)Ljava/lang/String;
 
     move-result-object v2
 
-    invoke-static {v2, v1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v2, v1}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v5, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -208,7 +208,7 @@
 
     .line 19
     :goto_1
-    iget-object v2, p0, Lcom/supercell/id/ui/game/donate/DonateFragment$a$b;->h:Landroid/view/View;
+    iget-object v2, p0, Lcom/supercell/id/ui/game/donate/DonateFragment$a$b;->i:Landroid/view/View;
 
     sget v3, Lcom/supercell/id/R$id;->donateLabel:I
 
@@ -220,7 +220,7 @@
 
     const-string v3, "containerView.donateLabel"
 
-    invoke-static {v2, v3}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v2, v3}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     new-array v0, v0, [Lie/d;
 
@@ -240,10 +240,10 @@
     const/4 p1, 0x0
 
     .line 21
-    invoke-static {v2, v1, v0, p1}, Lud/f0;->k(Landroid/widget/TextView;Ljava/lang/String;[Lie/d;Lre/l;)V
+    invoke-static {v2, v1, v0, p1}, Lud/d0;->k(Landroid/widget/TextView;Ljava/lang/String;[Lie/d;Lre/l;)V
 
     .line 22
-    sget-object p1, Lie/h;->a:Lie/h;
+    sget-object p1, Lie/i;->a:Lie/i;
 
     return-object p1
 .end method

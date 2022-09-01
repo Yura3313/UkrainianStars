@@ -33,10 +33,10 @@
     .end annotation
 .end field
 
-.field public f:Lze/e0;
+.field public f:Lze/f0;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lze/e0<",
+            "Lze/f0<",
             "+",
             "Lbe/x;",
             ">;"
@@ -55,11 +55,11 @@
 
     const-string v0, "fragment"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "listener"
 
-    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -96,7 +96,7 @@
     .line 1
     iget-object v0, p0, Lyc/d;->g:Landroidx/fragment/app/Fragment;
 
-    invoke-static {v0}, Lcom/android/billingclient/api/c0;->e(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
+    invoke-static {v0}, Lcom/android/billingclient/api/b0;->f(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
 
     move-result-object v1
 
@@ -163,7 +163,7 @@
     .line 5
     iget-object p1, p0, Lyc/d;->g:Landroidx/fragment/app/Fragment;
 
-    invoke-static {p1}, Lcom/android/billingclient/api/c0;->e(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
+    invoke-static {p1}, Lcom/android/billingclient/api/b0;->f(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
 
     move-result-object p1
 
@@ -203,7 +203,7 @@
     .line 11
     iget-object p1, p0, Lyc/d;->g:Landroidx/fragment/app/Fragment;
 
-    invoke-static {p1}, Lcom/android/billingclient/api/c0;->e(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
+    invoke-static {p1}, Lcom/android/billingclient/api/b0;->f(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
 
     move-result-object p1
 
@@ -217,7 +217,7 @@
     :cond_2
     iget-object p1, p0, Lyc/d;->g:Landroidx/fragment/app/Fragment;
 
-    invoke-static {p1}, Lcom/android/billingclient/api/c0;->e(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
+    invoke-static {p1}, Lcom/android/billingclient/api/b0;->f(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
 
     move-result-object p1
 
@@ -271,7 +271,7 @@
     const-string v0, "startForResult"
 
     .line 5
-    invoke-static {v0}, Lt3/e;->g(Ljava/lang/String;)V
+    invoke-static {v0}, Lt3/h;->k(Ljava/lang/String;)V
 
     const/4 v0, 0x0
 
@@ -284,14 +284,14 @@
     .line 1
     iget-object v0, p0, Lyc/d;->g:Landroidx/fragment/app/Fragment;
 
-    invoke-static {v0}, Lcom/android/billingclient/api/c0;->e(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
+    invoke-static {v0}, Lcom/android/billingclient/api/b0;->f(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
     .line 2
-    iget-object v0, v0, Lcom/supercell/id/ui/MainActivity;->k:Ljava/util/WeakHashMap;
+    iget-object v0, v0, Lcom/supercell/id/ui/MainActivity;->l:Ljava/util/WeakHashMap;
 
     const/4 v1, 0x0
 
@@ -354,7 +354,7 @@
     invoke-direct {v1, p1}, Lyc/d$e;-><init>(Lcom/supercell/id/ui/MainActivity;)V
 
     .line 5
-    iput-object v1, v0, Lwc/q;->w0:Lre/l;
+    iput-object v1, v0, Lwc/q;->x0:Lre/l;
 
     .line 6
     new-instance v1, Lyc/d$f;
@@ -362,10 +362,10 @@
     invoke-direct {v1, p1}, Lyc/d$f;-><init>(Lcom/supercell/id/ui/MainActivity;)V
 
     .line 7
-    iput-object v1, v0, Lwc/c;->u0:Lre/l;
+    iput-object v1, v0, Lwc/c;->v0:Lre/l;
 
     .line 8
-    sget-object v1, Lcom/supercell/id/ui/MainActivity;->s:Ljava/lang/ref/WeakReference;
+    sget-object v1, Lcom/supercell/id/ui/MainActivity;->t:Ljava/lang/ref/WeakReference;
 
     const-string v1, "popupDialog"
 
@@ -432,7 +432,7 @@
     invoke-direct {v1, p0}, Lyc/d$g;-><init>(Lyc/d;)V
 
     .line 8
-    iput-object v1, v0, Lwc/q;->w0:Lre/l;
+    iput-object v1, v0, Lwc/q;->x0:Lre/l;
 
     .line 9
     new-instance v1, Lyc/d$h;
@@ -440,7 +440,7 @@
     invoke-direct {v1, p1}, Lyc/d$h;-><init>(Lcom/supercell/id/ui/MainActivity;)V
 
     .line 10
-    iput-object v1, v0, Lwc/c;->u0:Lre/l;
+    iput-object v1, v0, Lwc/c;->v0:Lre/l;
 
     const-string v1, "popupDialog"
 
@@ -580,7 +580,7 @@
 
     const-string v5, "componentName.packageName"
 
-    invoke-static {v1, v5}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, v5}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/4 v5, 0x3
 
@@ -608,7 +608,7 @@
     const-string p1, "startForResult"
 
     .line 15
-    invoke-static {p1}, Lt3/e;->g(Ljava/lang/String;)V
+    invoke-static {p1}, Lt3/h;->k(Ljava/lang/String;)V
 
     throw v4
 
@@ -627,14 +627,14 @@
     .line 1
     iget-object v0, p0, Lyc/d;->g:Landroidx/fragment/app/Fragment;
 
-    invoke-static {v0}, Lcom/android/billingclient/api/c0;->e(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
+    invoke-static {v0}, Lcom/android/billingclient/api/b0;->f(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
     .line 2
-    iget-object v1, v0, Lcom/supercell/id/ui/MainActivity;->k:Ljava/util/WeakHashMap;
+    iget-object v1, v0, Lcom/supercell/id/ui/MainActivity;->l:Ljava/util/WeakHashMap;
 
     invoke-virtual {v1, p0}, Ljava/util/WeakHashMap;->containsKey(Ljava/lang/Object;)Z
 
@@ -643,7 +643,7 @@
     if-eqz v1, :cond_0
 
     .line 3
-    iget-object v0, v0, Lcom/supercell/id/ui/MainActivity;->k:Ljava/util/WeakHashMap;
+    iget-object v0, v0, Lcom/supercell/id/ui/MainActivity;->l:Ljava/util/WeakHashMap;
 
     invoke-virtual {v0, p0}, Ljava/util/WeakHashMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 

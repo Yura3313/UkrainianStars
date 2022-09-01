@@ -36,7 +36,7 @@
     iget-object v0, p0, Lqa/z0;->a:Lqa/e1;
 
     .line 4
-    iget-object v0, v0, Lqa/e1;->j0:Lqa/g1;
+    iget-object v0, v0, Lqa/e1;->k0:Lqa/g1;
 
     .line 5
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -46,7 +46,7 @@
     .line 6
     iget-object v1, p1, Lu8/a;->d:Ljava/lang/String;
 
-    invoke-static {v1}, Lcom/google/android/play/core/appupdate/g;->b(Ljava/lang/String;)Z
+    invoke-static {v1}, La5/b0;->d(Ljava/lang/String;)Z
 
     move-result v1
 
@@ -115,7 +115,7 @@
     iget-object p1, p0, Lqa/z0;->a:Lqa/e1;
 
     .line 15
-    iget-object p1, p1, Lqa/e1;->j0:Lqa/g1;
+    iget-object p1, p1, Lqa/e1;->k0:Lqa/g1;
 
     .line 16
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;

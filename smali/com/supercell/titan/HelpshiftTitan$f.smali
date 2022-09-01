@@ -18,18 +18,18 @@
 
 
 # instance fields
-.field public final synthetic f:Lcom/supercell/titan/GameApp;
+.field public final synthetic g:Lcom/supercell/titan/GameApp;
 
-.field public final synthetic g:Ljava/lang/String;
+.field public final synthetic h:Ljava/lang/String;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/titan/GameApp;Ljava/lang/String;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/titan/HelpshiftTitan$f;->f:Lcom/supercell/titan/GameApp;
+    iput-object p1, p0, Lcom/supercell/titan/HelpshiftTitan$f;->g:Lcom/supercell/titan/GameApp;
 
-    iput-object p2, p0, Lcom/supercell/titan/HelpshiftTitan$f;->g:Ljava/lang/String;
+    iput-object p2, p0, Lcom/supercell/titan/HelpshiftTitan$f;->h:Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -43,12 +43,12 @@
 
     .line 1
     :try_start_0
-    iget-object v0, p0, Lcom/supercell/titan/HelpshiftTitan$f;->f:Lcom/supercell/titan/GameApp;
+    iget-object v0, p0, Lcom/supercell/titan/HelpshiftTitan$f;->g:Lcom/supercell/titan/GameApp;
 
-    iget-object v1, p0, Lcom/supercell/titan/HelpshiftTitan$f;->g:Ljava/lang/String;
+    iget-object v1, p0, Lcom/supercell/titan/HelpshiftTitan$f;->h:Ljava/lang/String;
 
     .line 2
-    invoke-static {}, Lcom/helpshift/util/u;->b()Z
+    invoke-static {}, Lcom/helpshift/util/t;->b()Z
 
     move-result v2
 

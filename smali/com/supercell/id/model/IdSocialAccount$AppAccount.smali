@@ -15,18 +15,18 @@
 
 
 # instance fields
-.field public final g:Lvc/e;
+.field public final h:Lvc/d;
 
 
 # direct methods
-.method public constructor <init>(Lvc/e;)V
+.method public constructor <init>(Lvc/d;)V
     .locals 0
 
     .line 1
     invoke-direct {p0}, Lcom/supercell/id/model/IdSocialAccount;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lcom/supercell/id/model/IdSocialAccount$AppAccount;->g:Lvc/e;
+    iput-object p1, p0, Lcom/supercell/id/model/IdSocialAccount$AppAccount;->h:Lvc/d;
 
     return-void
 .end method
@@ -44,11 +44,11 @@
 
     check-cast p1, Lcom/supercell/id/model/IdSocialAccount$AppAccount;
 
-    iget-object v0, p0, Lcom/supercell/id/model/IdSocialAccount$AppAccount;->g:Lvc/e;
+    iget-object v0, p0, Lcom/supercell/id/model/IdSocialAccount$AppAccount;->h:Lvc/d;
 
-    iget-object p1, p1, Lcom/supercell/id/model/IdSocialAccount$AppAccount;->g:Lvc/e;
+    iget-object p1, p1, Lcom/supercell/id/model/IdSocialAccount$AppAccount;->h:Lvc/d;
 
-    invoke-static {v0, p1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, p1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -71,11 +71,11 @@
 .method public final hashCode()I
     .locals 1
 
-    iget-object v0, p0, Lcom/supercell/id/model/IdSocialAccount$AppAccount;->g:Lvc/e;
+    iget-object v0, p0, Lcom/supercell/id/model/IdSocialAccount$AppAccount;->h:Lvc/d;
 
     if-eqz v0, :cond_0
 
-    invoke-virtual {v0}, Lvc/e;->hashCode()I
+    invoke-virtual {v0}, Lvc/d;->hashCode()I
 
     move-result v0
 
@@ -99,7 +99,7 @@
     move-result-object v0
 
     .line 2
-    iget-object v1, p0, Lcom/supercell/id/model/IdSocialAccount$AppAccount;->g:Lvc/e;
+    iget-object v1, p0, Lcom/supercell/id/model/IdSocialAccount$AppAccount;->h:Lvc/d;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 

@@ -4,187 +4,182 @@
 
 
 # static fields
-.field public static final a:Ljava/util/regex/Pattern;
+.field public static final a:[C
 
 
 # direct methods
 .method public static constructor <clinit>()V
     .locals 1
 
-    const-string v0, "\\\\."
+    const/16 v0, 0x10
 
-    .line 1
-    invoke-static {v0}, Ljava/util/regex/Pattern;->compile(Ljava/lang/String;)Ljava/util/regex/Pattern;
+    new-array v0, v0, [C
 
-    const-string v0, "[\\\\\"/\u0008\u000c\n\r\t]"
+    fill-array-data v0, :array_0
 
-    .line 2
-    invoke-static {v0}, Ljava/util/regex/Pattern;->compile(Ljava/lang/String;)Ljava/util/regex/Pattern;
-
-    move-result-object v0
-
-    sput-object v0, Ll2/h;->a:Ljava/util/regex/Pattern;
+    sput-object v0, Ll2/h;->a:[C
 
     return-void
+
+    :array_0
+    .array-data 2
+        0x30s
+        0x31s
+        0x32s
+        0x33s
+        0x34s
+        0x35s
+        0x36s
+        0x37s
+        0x38s
+        0x39s
+        0x61s
+        0x62s
+        0x63s
+        0x64s
+        0x65s
+        0x66s
+    .end array-data
 .end method
 
-.method public static a(Ljava/lang/String;)Ljava/lang/String;
-    .locals 4
-    .annotation build Landroidx/annotation/RecentlyNullable;
+.method public static a([B)Ljava/lang/String;
+    .locals 7
+    .param p0    # [B
+        .annotation build Landroidx/annotation/RecentlyNonNull;
+        .end annotation
+    .end param
+    .annotation build Landroidx/annotation/RecentlyNonNull;
     .end annotation
 
     .line 1
-    invoke-static {p0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+    array-length v0, p0
 
-    move-result v0
+    shl-int/lit8 v0, v0, 0x1
 
-    if-nez v0, :cond_8
-
-    .line 2
-    sget-object v0, Ll2/h;->a:Ljava/util/regex/Pattern;
-
-    invoke-virtual {v0, p0}, Ljava/util/regex/Pattern;->matcher(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
-
-    move-result-object v0
+    new-array v0, v0, [C
 
     const/4 v1, 0x0
 
-    .line 3
+    const/4 v2, 0x0
+
+    .line 2
     :goto_0
-    invoke-virtual {v0}, Ljava/util/regex/Matcher;->find()Z
+    array-length v3, p0
 
-    move-result v2
+    if-ge v1, v3, :cond_0
 
-    if-eqz v2, :cond_6
+    .line 3
+    aget-byte v3, p0, v1
 
-    if-nez v1, :cond_0
+    and-int/lit16 v3, v3, 0xff
+
+    add-int/lit8 v4, v2, 0x1
 
     .line 4
-    new-instance v1, Ljava/lang/StringBuffer;
+    sget-object v5, Ll2/h;->a:[C
 
-    invoke-direct {v1}, Ljava/lang/StringBuffer;-><init>()V
+    ushr-int/lit8 v6, v3, 0x4
+
+    aget-char v6, v5, v6
+
+    aput-char v6, v0, v2
+
+    add-int/lit8 v2, v4, 0x1
+
+    and-int/lit8 v3, v3, 0xf
 
     .line 5
+    aget-char v3, v5, v3
+
+    aput-char v3, v0, v4
+
+    add-int/lit8 v1, v1, 0x1
+
+    goto :goto_0
+
+    .line 6
     :cond_0
-    invoke-virtual {v0}, Ljava/util/regex/Matcher;->group()Ljava/lang/String;
+    new-instance p0, Ljava/lang/String;
+
+    invoke-direct {p0, v0}, Ljava/lang/String;-><init>([C)V
+
+    return-object p0
+.end method
+
+.method public static b(Ljava/lang/String;)[B
+    .locals 6
+    .param p0    # Ljava/lang/String;
+        .annotation build Landroidx/annotation/RecentlyNonNull;
+        .end annotation
+    .end param
+    .annotation build Landroidx/annotation/RecentlyNonNull;
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/IllegalArgumentException;
+        }
+    .end annotation
+
+    .line 1
+    invoke-virtual {p0}, Ljava/lang/String;->length()I
+
+    move-result v0
+
+    .line 2
+    rem-int/lit8 v1, v0, 0x2
+
+    if-nez v1, :cond_1
+
+    .line 3
+    div-int/lit8 v1, v0, 0x2
+
+    new-array v1, v1, [B
+
+    const/4 v2, 0x0
+
+    :goto_0
+    if-ge v2, v0, :cond_0
+
+    .line 4
+    div-int/lit8 v3, v2, 0x2
+
+    add-int/lit8 v4, v2, 0x2
+
+    invoke-virtual {p0, v2, v4}, Ljava/lang/String;->substring(II)Ljava/lang/String;
 
     move-result-object v2
 
-    const/4 v3, 0x0
+    const/16 v5, 0x10
 
-    invoke-virtual {v2, v3}, Ljava/lang/String;->charAt(I)C
+    invoke-static {v2, v5}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;I)I
 
     move-result v2
 
-    const/16 v3, 0xc
+    int-to-byte v2, v2
 
-    if-eq v2, v3, :cond_5
+    aput-byte v2, v1, v3
 
-    const/16 v3, 0xd
-
-    if-eq v2, v3, :cond_4
-
-    const/16 v3, 0x22
-
-    if-eq v2, v3, :cond_3
-
-    const/16 v3, 0x2f
-
-    if-eq v2, v3, :cond_2
-
-    const/16 v3, 0x5c
-
-    if-eq v2, v3, :cond_1
-
-    packed-switch v2, :pswitch_data_0
+    move v2, v4
 
     goto :goto_0
 
-    :pswitch_0
-    const-string v2, "\\\\n"
+    :cond_0
+    return-object v1
 
-    .line 6
-    invoke-virtual {v0, v1, v2}, Ljava/util/regex/Matcher;->appendReplacement(Ljava/lang/StringBuffer;Ljava/lang/String;)Ljava/util/regex/Matcher;
-
-    goto :goto_0
-
-    :pswitch_1
-    const-string v2, "\\\\t"
-
-    .line 7
-    invoke-virtual {v0, v1, v2}, Ljava/util/regex/Matcher;->appendReplacement(Ljava/lang/StringBuffer;Ljava/lang/String;)Ljava/util/regex/Matcher;
-
-    goto :goto_0
-
-    :pswitch_2
-    const-string v2, "\\\\b"
-
-    .line 8
-    invoke-virtual {v0, v1, v2}, Ljava/util/regex/Matcher;->appendReplacement(Ljava/lang/StringBuffer;Ljava/lang/String;)Ljava/util/regex/Matcher;
-
-    goto :goto_0
-
+    .line 5
     :cond_1
-    const-string v2, "\\\\\\\\"
+    new-instance p0, Ljava/lang/IllegalArgumentException;
 
-    .line 9
-    invoke-virtual {v0, v1, v2}, Ljava/util/regex/Matcher;->appendReplacement(Ljava/lang/StringBuffer;Ljava/lang/String;)Ljava/util/regex/Matcher;
+    const-string v0, "Hex string has odd number of characters"
 
-    goto :goto_0
+    invoke-direct {p0, v0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
-    :cond_2
-    const-string v2, "\\\\/"
+    goto :goto_2
 
-    .line 10
-    invoke-virtual {v0, v1, v2}, Ljava/util/regex/Matcher;->appendReplacement(Ljava/lang/StringBuffer;Ljava/lang/String;)Ljava/util/regex/Matcher;
+    :goto_1
+    throw p0
 
-    goto :goto_0
-
-    :cond_3
-    const-string v2, "\\\\\\\""
-
-    .line 11
-    invoke-virtual {v0, v1, v2}, Ljava/util/regex/Matcher;->appendReplacement(Ljava/lang/StringBuffer;Ljava/lang/String;)Ljava/util/regex/Matcher;
-
-    goto :goto_0
-
-    :cond_4
-    const-string v2, "\\\\r"
-
-    .line 12
-    invoke-virtual {v0, v1, v2}, Ljava/util/regex/Matcher;->appendReplacement(Ljava/lang/StringBuffer;Ljava/lang/String;)Ljava/util/regex/Matcher;
-
-    goto :goto_0
-
-    :cond_5
-    const-string v2, "\\\\f"
-
-    .line 13
-    invoke-virtual {v0, v1, v2}, Ljava/util/regex/Matcher;->appendReplacement(Ljava/lang/StringBuffer;Ljava/lang/String;)Ljava/util/regex/Matcher;
-
-    goto :goto_0
-
-    :cond_6
-    if-nez v1, :cond_7
-
-    return-object p0
-
-    .line 14
-    :cond_7
-    invoke-virtual {v0, v1}, Ljava/util/regex/Matcher;->appendTail(Ljava/lang/StringBuffer;)Ljava/lang/StringBuffer;
-
-    .line 15
-    invoke-virtual {v1}, Ljava/lang/StringBuffer;->toString()Ljava/lang/String;
-
-    move-result-object p0
-
-    :cond_8
-    return-object p0
-
-    :pswitch_data_0
-    .packed-switch 0x8
-        :pswitch_2
-        :pswitch_1
-        :pswitch_0
-    .end packed-switch
+    :goto_2
+    goto :goto_1
 .end method

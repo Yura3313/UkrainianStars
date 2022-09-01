@@ -258,7 +258,7 @@
 
     move-result-object v1
 
-    iget v1, v1, Lcom/supercell/titan/GameApp;->A:I
+    iget v1, v1, Lcom/supercell/titan/GameApp;->B:I
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->setRequestedOrientation(I)V
 

@@ -28,7 +28,7 @@
     const/4 v1, 0x0
 
     .line 2
-    iput-boolean v1, v0, Lcom/google/protobuf/k0;->f:Z
+    iput-boolean v1, v0, Lcom/google/protobuf/k0;->g:Z
 
     return-object p1
 .end method
@@ -71,7 +71,7 @@
     if-nez v0, :cond_1
 
     .line 4
-    iget-boolean v0, p1, Lcom/google/protobuf/k0;->f:Z
+    iget-boolean v0, p1, Lcom/google/protobuf/k0;->g:Z
 
     if-nez v0, :cond_0
 
@@ -102,7 +102,7 @@
     .locals 1
 
     .line 1
-    sget-object v0, Lcom/google/protobuf/k0;->g:Lcom/google/protobuf/k0;
+    sget-object v0, Lcom/google/protobuf/k0;->h:Lcom/google/protobuf/k0;
 
     .line 2
     invoke-virtual {v0}, Lcom/google/protobuf/k0;->c()Lcom/google/protobuf/k0;
@@ -220,7 +220,7 @@
     check-cast p1, Lcom/google/protobuf/k0;
 
     .line 2
-    iget-boolean p1, p1, Lcom/google/protobuf/k0;->f:Z
+    iget-boolean p1, p1, Lcom/google/protobuf/k0;->g:Z
 
     xor-int/lit8 p1, p1, 0x1
 

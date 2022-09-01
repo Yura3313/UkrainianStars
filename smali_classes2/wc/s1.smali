@@ -1,203 +1,295 @@
-.class public abstract Lwc/s1;
-.super Landroidx/fragment/app/Fragment;
-.source "ViewPagerPageFragment.kt"
+.class public final Lwc/s1;
+.super Landroidx/recyclerview/widget/RecyclerView$q;
+.source "RegionListDialogFragment.kt"
 
 
 # instance fields
-.field public a0:Ljava/lang/Boolean;
+.field public final synthetic a:Landroid/widget/TextView;
+
+.field public final synthetic b:Lwc/o1$b;
+
+.field public final synthetic c:Lse/q;
 
 
 # direct methods
-.method public constructor <init>()V
+.method public constructor <init>(Landroid/widget/TextView;Lwc/o1$b;Lse/q;)V
     .locals 0
 
-    invoke-direct {p0}, Landroidx/fragment/app/Fragment;-><init>()V
+    iput-object p1, p0, Lwc/s1;->a:Landroid/widget/TextView;
+
+    iput-object p2, p0, Lwc/s1;->b:Lwc/o1$b;
+
+    iput-object p3, p0, Lwc/s1;->c:Lse/q;
+
+    invoke-direct {p0}, Landroidx/recyclerview/widget/RecyclerView$q;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final K0(Z)V
-    .locals 0
+.method public final b(Landroidx/recyclerview/widget/RecyclerView;II)V
+    .locals 11
+
+    const-string p2, "recyclerView"
+
+    invoke-static {p1, p2}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const/4 p2, 0x0
 
     .line 1
-    invoke-super {p0, p1}, Landroidx/fragment/app/Fragment;->K0(Z)V
+    invoke-virtual {p1, p2}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
+
+    move-result-object p3
+
+    const/4 v0, 0x4
+
+    if-nez p3, :cond_0
 
     .line 2
-    invoke-virtual {p0}, Lwc/s1;->R0()V
+    iget-object p1, p0, Lwc/s1;->a:Landroid/widget/TextView;
+
+    invoke-virtual {p1, v0}, Landroid/view/View;->setVisibility(I)V
 
     return-void
-.end method
-
-.method public N0()V
-    .locals 0
-
-    return-void
-.end method
-
-.method public O0()Z
-    .locals 1
-
-    .line 1
-    invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->Q()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    .line 2
-    iget-boolean v0, p0, Landroidx/fragment/app/Fragment;->O:Z
-
-    if-eqz v0, :cond_0
-
-    const/4 v0, 0x1
-
-    goto :goto_0
-
-    :cond_0
-    const/4 v0, 0x0
-
-    :goto_0
-    return v0
-.end method
-
-.method public P0()V
-    .locals 0
-
-    return-void
-.end method
-
-.method public final Q0(Ljava/lang/Boolean;)V
-    .locals 2
-
-    .line 1
-    iget-object v0, p0, Lwc/s1;->a0:Ljava/lang/Boolean;
-
-    const/4 v1, 0x1
-
-    if-eqz v0, :cond_0
-
-    if-eqz p1, :cond_0
-
-    invoke-static {v0, p1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result v0
-
-    xor-int/2addr v0, v1
-
-    if-eqz v0, :cond_0
-
-    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    goto :goto_0
-
-    :cond_0
-    const/4 v1, 0x0
-
-    .line 2
-    :goto_0
-    iput-object p1, p0, Lwc/s1;->a0:Ljava/lang/Boolean;
-
-    if-eqz v1, :cond_1
 
     .line 3
-    invoke-virtual {p0}, Lwc/s1;->P0()V
+    :cond_0
+    invoke-virtual {p1, p3}, Landroidx/recyclerview/widget/RecyclerView;->K(Landroid/view/View;)I
 
+    move-result p3
+
+    const/4 v1, -0x1
+
+    if-ne p3, v1, :cond_1
+
+    .line 4
+    iget-object p1, p0, Lwc/s1;->a:Landroid/widget/TextView;
+
+    invoke-virtual {p1, v0}, Landroid/view/View;->setVisibility(I)V
+
+    return-void
+
+    .line 5
     :cond_1
-    return-void
-.end method
+    iget-object v2, p0, Lwc/s1;->b:Lwc/o1$b;
 
-.method public final R0()V
-    .locals 1
+    .line 6
+    :cond_2
+    invoke-virtual {v2, p3}, Lwc/o1$b;->d(I)I
 
-    invoke-virtual {p0}, Lwc/s1;->O0()Z
+    move-result v3
 
-    move-result v0
+    const/4 v4, 0x1
 
-    invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+    if-nez v3, :cond_3
 
-    move-result-object v0
+    const/4 v3, 0x1
 
-    invoke-virtual {p0, v0}, Lwc/s1;->Q0(Ljava/lang/Boolean;)V
+    goto :goto_0
 
-    return-void
-.end method
+    :cond_3
+    const/4 v3, 0x0
 
-.method public V(Landroid/os/Bundle;)V
-    .locals 2
+    :goto_0
+    if-eqz v3, :cond_4
 
-    .line 1
-    invoke-super {p0, p1}, Landroidx/fragment/app/Fragment;->V(Landroid/os/Bundle;)V
+    move v1, p3
 
-    const/4 v0, 0x0
+    goto :goto_1
 
-    if-eqz p1, :cond_0
+    :cond_4
+    add-int/lit8 p3, p3, -0x1
 
-    const-string v1, "tabSelected"
+    if-gez p3, :cond_2
 
-    .line 2
-    invoke-virtual {p1, v1, v0}, Landroid/os/Bundle;->getBoolean(Ljava/lang/String;Z)Z
+    :goto_1
+    if-gez v1, :cond_5
 
-    move-result v0
+    .line 7
+    iget-object p1, p0, Lwc/s1;->a:Landroid/widget/TextView;
 
-    :cond_0
-    invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
-
-    move-result-object p1
-
-    invoke-virtual {p0, p1}, Lwc/s1;->Q0(Ljava/lang/Boolean;)V
+    invoke-virtual {p1, v0}, Landroid/view/View;->setVisibility(I)V
 
     return-void
-.end method
 
-.method public a0()V
-    .locals 1
+    .line 8
+    :cond_5
+    iget-object p3, p0, Lwc/s1;->c:Lse/q;
 
-    const/4 v0, 0x1
+    iget v2, p3, Lse/q;->g:I
 
-    .line 1
-    iput-boolean v0, p0, Landroidx/fragment/app/Fragment;->K:Z
+    if-eq v1, v2, :cond_8
 
-    .line 2
-    invoke-virtual {p0}, Lwc/s1;->N0()V
+    .line 9
+    iput v1, p3, Lse/q;->g:I
+
+    .line 10
+    iget-object p3, p0, Lwc/s1;->b:Lwc/o1$b;
+
+    invoke-virtual {p3, v1}, Lwc/o1$b;->n(I)Lwc/o1$e;
+
+    move-result-object p3
+
+    instance-of v2, p3, Lwc/o1$e$c;
+
+    const/4 v3, 0x0
+
+    if-nez v2, :cond_6
+
+    move-object p3, v3
+
+    :cond_6
+    check-cast p3, Lwc/o1$e$c;
+
+    .line 11
+    iget-object v2, p0, Lwc/s1;->a:Landroid/widget/TextView;
+
+    if-eqz p3, :cond_7
+
+    .line 12
+    iget-object v3, p3, Lwc/o1$e$c;->a:Ljava/lang/String;
+
+    .line 13
+    :cond_7
+    invoke-virtual {v2, v3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    .line 14
+    :cond_8
+    iget-object p3, p0, Lwc/s1;->a:Landroid/widget/TextView;
+
+    invoke-virtual {p3}, Landroid/view/View;->getBottom()I
+
+    move-result p3
+
+    .line 15
+    iget-object v2, p0, Lwc/s1;->a:Landroid/widget/TextView;
+
+    invoke-virtual {v2}, Landroid/view/View;->getHeight()I
+
+    move-result v2
+
+    const/4 v3, 0x0
+
+    .line 16
+    invoke-virtual {p1}, Landroid/view/ViewGroup;->getChildCount()I
+
+    move-result v5
+
+    const/4 v6, 0x0
+
+    :goto_2
+    if-ge v6, v5, :cond_d
+
+    .line 17
+    invoke-virtual {p1, v6}, Landroid/view/ViewGroup;->getChildAt(I)Landroid/view/View;
+
+    move-result-object v7
+
+    .line 18
+    invoke-virtual {p1, v7}, Landroidx/recyclerview/widget/RecyclerView;->K(Landroid/view/View;)I
+
+    move-result v8
+
+    .line 19
+    iget-object v9, p0, Lwc/s1;->b:Lwc/o1$b;
+
+    .line 20
+    invoke-virtual {v9, v8}, Lwc/o1$b;->d(I)I
+
+    move-result v9
+
+    if-nez v9, :cond_9
+
+    const/4 v9, 0x1
+
+    goto :goto_3
+
+    :cond_9
+    const/4 v9, 0x0
+
+    :goto_3
+    if-eqz v9, :cond_c
+
+    const-string v9, "child"
+
+    .line 21
+    invoke-static {v7, v9}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-virtual {v7}, Landroid/view/View;->getTop()I
+
+    move-result v9
+
+    if-lez v9, :cond_a
+
+    .line 22
+    invoke-virtual {v7}, Landroid/view/View;->getBottom()I
+
+    move-result v9
+
+    add-int/2addr v9, v2
+
+    invoke-virtual {v7}, Landroid/view/View;->getHeight()I
+
+    move-result v10
+
+    sub-int/2addr v9, v10
+
+    goto :goto_4
+
+    .line 23
+    :cond_a
+    invoke-virtual {v7}, Landroid/view/View;->getBottom()I
+
+    move-result v9
+
+    :goto_4
+    if-le v9, p3, :cond_c
+
+    .line 24
+    invoke-virtual {v7}, Landroid/view/View;->getTop()I
+
+    move-result v9
+
+    if-gt v9, p3, :cond_c
+
+    if-ne v8, v1, :cond_b
+
+    .line 25
+    iget-object p1, p0, Lwc/s1;->a:Landroid/widget/TextView;
+
+    invoke-virtual {p1, v0}, Landroid/view/View;->setVisibility(I)V
 
     return-void
-.end method
 
-.method public g0()V
-    .locals 1
+    .line 26
+    :cond_b
+    invoke-virtual {v7}, Landroid/view/View;->getTop()I
 
-    const/4 v0, 0x1
+    move-result p1
 
-    .line 1
-    iput-boolean v0, p0, Landroidx/fragment/app/Fragment;->K:Z
+    sub-int/2addr p1, v2
 
-    .line 2
-    invoke-virtual {p0}, Lwc/s1;->R0()V
+    int-to-float v3, p1
 
-    return-void
-.end method
+    goto :goto_5
 
-.method public final h0(Landroid/os/Bundle;)V
-    .locals 2
+    :cond_c
+    add-int/lit8 v6, v6, 0x1
 
-    iget-object v0, p0, Lwc/s1;->a0:Ljava/lang/Boolean;
+    goto :goto_2
 
-    if-eqz v0, :cond_0
+    .line 27
+    :cond_d
+    :goto_5
+    iget-object p1, p0, Lwc/s1;->a:Landroid/widget/TextView;
 
-    invoke-virtual {v0}, Ljava/lang/Boolean;->booleanValue()Z
+    invoke-virtual {p1, p2}, Landroid/view/View;->setVisibility(I)V
 
-    move-result v0
+    .line 28
+    iget-object p1, p0, Lwc/s1;->a:Landroid/widget/TextView;
 
-    const-string v1, "tabSelected"
+    invoke-virtual {p1, v3}, Landroid/view/View;->setTranslationY(F)V
 
-    invoke-virtual {p1, v1, v0}, Landroid/os/Bundle;->putBoolean(Ljava/lang/String;Z)V
-
-    :cond_0
     return-void
 .end method

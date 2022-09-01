@@ -114,7 +114,7 @@
 
     move-result v0
 
-    invoke-static {v6, v8, v0, v8}, Lo/p;->a(FFFF)F
+    invoke-static {v6, v8, v0, v8}, Lo/o;->a(FFFF)F
 
     move-result v0
 

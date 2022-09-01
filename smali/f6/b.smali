@@ -200,7 +200,7 @@
     if-eqz p2, :cond_3
 
     .line 11
-    sget-object v0, Le6/d;->o:Le6/d;
+    sget-object v0, Le6/d;->p:Le6/d;
 
     invoke-interface {p2, v0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -246,7 +246,7 @@
     if-eqz p2, :cond_4
 
     .line 19
-    sget-object v0, Le6/k;->g:Le6/k;
+    sget-object v0, Le6/k;->h:Le6/k;
 
     invoke-virtual {p1, v0, p2}, Le6/j;->b(Le6/k;Ljava/lang/Object;)V
 
@@ -257,7 +257,7 @@
     if-eqz p2, :cond_5
 
     .line 21
-    sget-object v0, Le6/k;->h:Le6/k;
+    sget-object v0, Le6/k;->i:Le6/k;
 
     invoke-virtual {p1, v0, p2}, Le6/j;->b(Le6/k;Ljava/lang/Object;)V
 

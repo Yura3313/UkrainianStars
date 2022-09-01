@@ -190,7 +190,7 @@
     goto :goto_2
 
     :cond_2
-    iget-object v2, v0, Lcom/google/android/material/tabs/TabLayout;->f:Ljava/util/ArrayList;
+    iget-object v2, v0, Lcom/google/android/material/tabs/TabLayout;->g:Ljava/util/ArrayList;
 
     invoke-virtual {v2, p1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 

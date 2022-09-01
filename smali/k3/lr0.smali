@@ -1,427 +1,514 @@
-.class public final synthetic Lk3/lr0;
+.class public final Lk3/lr0;
 .super Ljava/lang/Object;
-.source "com.google.android.gms:play-services-ads-lite@@19.3.0"
+.source "com.google.android.gms:play-services-ads@@19.3.0"
 
 
 # static fields
-.field public static final synthetic a:[I
+.field public static final c:[Ljava/lang/String;
 
-.field public static final synthetic b:[I
+
+# instance fields
+.field public a:[Ljava/lang/String;
+
+.field public b:Lk3/mm0;
 
 
 # direct methods
 .method public static constructor <clinit>()V
-    .locals 12
+    .locals 3
 
-    .line 1
-    invoke-static {}, Lk3/mu0;->values()[Lk3/mu0;
+    const/4 v0, 0x3
 
-    move-result-object v0
+    new-array v0, v0, [Ljava/lang/String;
 
-    array-length v0, v0
+    const/4 v1, 0x0
 
-    new-array v0, v0, [I
+    const-string v2, "/aclk"
 
-    sput-object v0, Lk3/lr0;->b:[I
+    aput-object v2, v0, v1
 
     const/4 v1, 0x1
 
+    const-string v2, "/pcs/click"
+
+    aput-object v2, v0, v1
+
+    const/4 v1, 0x2
+
+    const-string v2, "/dbm/clk"
+
+    aput-object v2, v0, v1
+
+    sput-object v0, Lk3/lr0;->c:[Ljava/lang/String;
+
+    return-void
+.end method
+
+.method public constructor <init>(Lk3/mm0;)V
+    .locals 3
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    const/4 v0, 0x3
+
+    new-array v0, v0, [Ljava/lang/String;
+
+    const/4 v1, 0x0
+
+    const-string v2, ".doubleclick.net"
+
+    aput-object v2, v0, v1
+
+    const/4 v1, 0x1
+
+    const-string v2, ".googleadservices.com"
+
+    aput-object v2, v0, v1
+
+    const/4 v1, 0x2
+
+    const-string v2, ".googlesyndication.com"
+
+    aput-object v2, v0, v1
+
+    .line 2
+    iput-object v0, p0, Lk3/lr0;->a:[Ljava/lang/String;
+
+    .line 3
+    iput-object p1, p0, Lk3/lr0;->b:Lk3/mm0;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a(Landroid/net/Uri;Landroid/content/Context;Landroid/view/View;Landroid/app/Activity;)Landroid/net/Uri;
+    .locals 2
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lcom/google/android/gms/internal/ads/zzef;
+        }
+    .end annotation
+
+    .line 1
     :try_start_0
-    sget-object v2, Lk3/mu0;->h:Lk3/mu0;
+    iget-object v0, p0, Lk3/lr0;->b:Lk3/mm0;
 
-    invoke-virtual {v2}, Ljava/lang/Enum;->ordinal()I
+    const-string v1, "ai"
 
-    move-result v2
+    .line 2
+    invoke-virtual {p1, v1}, Landroid/net/Uri;->getQueryParameter(Ljava/lang/String;)Ljava/lang/String;
 
-    aput v1, v0, v2
+    move-result-object v1
+
+    .line 3
+    invoke-interface {v0, p2, v1, p3, p4}, Lk3/mm0;->g(Landroid/content/Context;Ljava/lang/String;Landroid/view/View;Landroid/app/Activity;)Ljava/lang/String;
+
+    move-result-object p2
+
+    .line 4
+    invoke-virtual {p0, p1, p2}, Lk3/lr0;->b(Landroid/net/Uri;Ljava/lang/String;)Landroid/net/Uri;
+
+    move-result-object p1
     :try_end_0
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
+    .catch Ljava/lang/UnsupportedOperationException; {:try_start_0 .. :try_end_0} :catch_0
+
+    return-object p1
+
+    .line 5
+    :catch_0
+    new-instance p1, Lcom/google/android/gms/internal/ads/zzef;
+
+    const-string p2, "Provided Uri is not in a valid state"
+
+    invoke-direct {p1, p2}, Lcom/google/android/gms/internal/ads/zzef;-><init>(Ljava/lang/String;)V
+
+    throw p1
+.end method
+
+.method public final b(Landroid/net/Uri;Ljava/lang/String;)Landroid/net/Uri;
+    .locals 8
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lcom/google/android/gms/internal/ads/zzef;
+        }
+    .end annotation
+
+    .line 1
+    :try_start_0
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    :try_end_0
+    .catch Ljava/lang/UnsupportedOperationException; {:try_start_0 .. :try_end_0} :catch_1
+
+    const/4 v0, 0x0
+
+    .line 2
+    :try_start_1
+    invoke-virtual {p1}, Landroid/net/Uri;->getHost()Ljava/lang/String;
+
+    move-result-object v1
+
+    const-string v2, "ad.doubleclick.net"
+
+    invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+    :try_end_1
+    .catch Ljava/lang/NullPointerException; {:try_start_1 .. :try_end_1} :catch_0
+    .catch Ljava/lang/UnsupportedOperationException; {:try_start_1 .. :try_end_1} :catch_1
+
+    goto :goto_0
 
     :catch_0
-    const/4 v0, 0x2
+    const/4 v1, 0x0
 
-    :try_start_1
-    sget-object v2, Lk3/lr0;->b:[I
+    :goto_0
+    const-string v2, "ms"
 
-    sget-object v3, Lk3/mu0;->i:Lk3/mu0;
+    if-eqz v1, :cond_1
 
-    invoke-virtual {v3}, Ljava/lang/Enum;->ordinal()I
+    .line 3
+    :try_start_2
+    invoke-virtual {p1}, Landroid/net/Uri;->toString()Ljava/lang/String;
+
+    move-result-object v3
+
+    const-string v4, "dc_ms="
+
+    invoke-virtual {v3, v4}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
 
     move-result v3
 
-    aput v0, v2, v3
-    :try_end_1
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_1
+    if-nez v3, :cond_0
 
-    :catch_1
-    const/4 v2, 0x3
+    goto :goto_1
 
-    :try_start_2
-    sget-object v3, Lk3/lr0;->b:[I
+    .line 4
+    :cond_0
+    new-instance p1, Lcom/google/android/gms/internal/ads/zzef;
 
-    sget-object v4, Lk3/mu0;->j:Lk3/mu0;
+    const-string p2, "Parameter already exists: dc_ms"
 
-    invoke-virtual {v4}, Ljava/lang/Enum;->ordinal()I
+    invoke-direct {p1, p2}, Lcom/google/android/gms/internal/ads/zzef;-><init>(Ljava/lang/String;)V
+
+    throw p1
+
+    .line 5
+    :cond_1
+    invoke-virtual {p1, v2}, Landroid/net/Uri;->getQueryParameter(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v3
+    :try_end_2
+    .catch Ljava/lang/UnsupportedOperationException; {:try_start_2 .. :try_end_2} :catch_1
+
+    if-nez v3, :cond_6
+
+    :goto_1
+    const-string v3, "="
+
+    const/4 v4, -0x1
+
+    if-eqz v1, :cond_3
+
+    :try_start_3
+    const-string v1, "dc_ms"
+
+    .line 6
+    invoke-virtual {p1}, Landroid/net/Uri;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    const-string v5, ";adurl"
+
+    .line 7
+    invoke-virtual {v2, v5}, Ljava/lang/String;->indexOf(Ljava/lang/String;)I
+
+    move-result v5
+    :try_end_3
+    .catch Ljava/lang/UnsupportedOperationException; {:try_start_3 .. :try_end_3} :catch_1
+
+    const-string v6, ";"
+
+    if-eq v5, v4, :cond_2
+
+    .line 8
+    :try_start_4
+    new-instance p1, Ljava/lang/StringBuilder;
+
+    add-int/lit8 v5, v5, 0x1
+
+    .line 9
+    invoke-virtual {v2, v0, v5}, Ljava/lang/String;->substring(II)Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-direct {p1, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    .line 10
+    invoke-virtual {p1, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 11
+    invoke-virtual {p1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 12
+    invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 13
+    invoke-virtual {p1, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 14
+    invoke-virtual {v2, v5}, Ljava/lang/String;->substring(I)Ljava/lang/String;
+
+    move-result-object p2
+
+    invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 15
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    .line 16
+    invoke-static {p1}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
+
+    move-result-object p1
+
+    return-object p1
+
+    .line 17
+    :cond_2
+    invoke-virtual {p1}, Landroid/net/Uri;->getEncodedPath()Ljava/lang/String;
+
+    move-result-object p1
+
+    .line 18
+    invoke-virtual {v2, p1}, Ljava/lang/String;->indexOf(Ljava/lang/String;)I
 
     move-result v4
 
-    aput v2, v3, v4
-    :try_end_2
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_2 .. :try_end_2} :catch_2
+    .line 19
+    new-instance v5, Ljava/lang/StringBuilder;
 
-    :catch_2
-    const/4 v3, 0x4
-
-    :try_start_3
-    sget-object v4, Lk3/lr0;->b:[I
-
-    sget-object v5, Lk3/mu0;->k:Lk3/mu0;
-
-    invoke-virtual {v5}, Ljava/lang/Enum;->ordinal()I
-
-    move-result v5
-
-    aput v3, v4, v5
-    :try_end_3
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_3 .. :try_end_3} :catch_3
-
-    :catch_3
-    const/4 v4, 0x5
-
-    :try_start_4
-    sget-object v5, Lk3/lr0;->b:[I
-
-    sget-object v6, Lk3/mu0;->l:Lk3/mu0;
-
-    invoke-virtual {v6}, Ljava/lang/Enum;->ordinal()I
-
-    move-result v6
-
-    aput v4, v5, v6
-    :try_end_4
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_4 .. :try_end_4} :catch_4
-
-    :catch_4
-    const/4 v5, 0x6
-
-    :try_start_5
-    sget-object v6, Lk3/lr0;->b:[I
-
-    sget-object v7, Lk3/mu0;->m:Lk3/mu0;
-
-    invoke-virtual {v7}, Ljava/lang/Enum;->ordinal()I
+    .line 20
+    invoke-virtual {p1}, Ljava/lang/String;->length()I
 
     move-result v7
 
-    aput v5, v6, v7
-    :try_end_5
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_5 .. :try_end_5} :catch_5
+    add-int/2addr v7, v4
 
-    :catch_5
-    const/4 v6, 0x7
+    invoke-virtual {v2, v0, v7}, Ljava/lang/String;->substring(II)Ljava/lang/String;
 
-    :try_start_6
-    sget-object v7, Lk3/lr0;->b:[I
+    move-result-object v0
 
-    sget-object v8, Lk3/mu0;->n:Lk3/mu0;
+    invoke-direct {v5, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    invoke-virtual {v8}, Ljava/lang/Enum;->ordinal()I
+    .line 21
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result v8
+    .line 22
+    invoke-virtual {v5, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    aput v6, v7, v8
-    :try_end_6
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_6 .. :try_end_6} :catch_6
+    .line 23
+    invoke-virtual {v5, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    :catch_6
-    const/16 v7, 0x8
+    .line 24
+    invoke-virtual {v5, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    :try_start_7
-    sget-object v8, Lk3/lr0;->b:[I
+    .line 25
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sget-object v9, Lk3/mu0;->o:Lk3/mu0;
+    .line 26
+    invoke-virtual {p1}, Ljava/lang/String;->length()I
 
-    invoke-virtual {v9}, Ljava/lang/Enum;->ordinal()I
+    move-result p1
 
-    move-result v9
+    add-int/2addr v4, p1
 
-    aput v7, v8, v9
-    :try_end_7
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_7 .. :try_end_7} :catch_7
+    invoke-virtual {v2, v4}, Ljava/lang/String;->substring(I)Ljava/lang/String;
 
-    :catch_7
-    const/16 v8, 0x9
+    move-result-object p1
 
-    :try_start_8
-    sget-object v9, Lk3/lr0;->b:[I
+    invoke-virtual {v5, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sget-object v10, Lk3/mu0;->q:Lk3/ou0;
+    .line 27
+    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    invoke-virtual {v10}, Ljava/lang/Enum;->ordinal()I
+    move-result-object p1
 
-    move-result v10
+    .line 28
+    invoke-static {p1}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
 
-    aput v8, v9, v10
-    :try_end_8
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_8 .. :try_end_8} :catch_8
+    move-result-object p1
 
-    :catch_8
-    :try_start_9
-    sget-object v9, Lk3/lr0;->b:[I
+    return-object p1
 
-    sget-object v10, Lk3/mu0;->r:Lk3/nu0;
+    .line 29
+    :cond_3
+    invoke-virtual {p1}, Landroid/net/Uri;->toString()Ljava/lang/String;
 
-    invoke-virtual {v10}, Ljava/lang/Enum;->ordinal()I
+    move-result-object v1
 
-    move-result v10
+    const-string v5, "&adurl"
 
-    const/16 v11, 0xa
+    .line 30
+    invoke-virtual {v1, v5}, Ljava/lang/String;->indexOf(Ljava/lang/String;)I
 
-    aput v11, v9, v10
-    :try_end_9
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_9 .. :try_end_9} :catch_9
+    move-result v5
 
-    :catch_9
-    :try_start_a
-    sget-object v9, Lk3/lr0;->b:[I
+    if-ne v5, v4, :cond_4
 
-    sget-object v10, Lk3/mu0;->p:Lk3/lu0;
+    const-string v5, "?adurl"
 
-    invoke-virtual {v10}, Ljava/lang/Enum;->ordinal()I
+    .line 31
+    invoke-virtual {v1, v5}, Ljava/lang/String;->indexOf(Ljava/lang/String;)I
 
-    move-result v10
+    move-result v5
 
-    const/16 v11, 0xb
+    :cond_4
+    if-eq v5, v4, :cond_5
 
-    aput v11, v9, v10
-    :try_end_a
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_a .. :try_end_a} :catch_a
+    .line 32
+    new-instance p1, Ljava/lang/StringBuilder;
 
-    :catch_a
-    :try_start_b
-    sget-object v9, Lk3/lr0;->b:[I
+    add-int/lit8 v5, v5, 0x1
 
-    sget-object v10, Lk3/mu0;->s:Lk3/qu0;
+    .line 33
+    invoke-virtual {v1, v0, v5}, Ljava/lang/String;->substring(II)Ljava/lang/String;
 
-    invoke-virtual {v10}, Ljava/lang/Enum;->ordinal()I
+    move-result-object v0
 
-    move-result v10
+    invoke-direct {p1, v0}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
-    const/16 v11, 0xc
+    .line 34
+    invoke-virtual {p1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    aput v11, v9, v10
-    :try_end_b
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_b .. :try_end_b} :catch_b
+    .line 35
+    invoke-virtual {p1, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    :catch_b
-    :try_start_c
-    sget-object v9, Lk3/lr0;->b:[I
+    .line 36
+    invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    sget-object v10, Lk3/mu0;->t:Lk3/mu0;
+    const-string p2, "&"
 
-    invoke-virtual {v10}, Ljava/lang/Enum;->ordinal()I
+    .line 37
+    invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result v10
+    .line 38
+    invoke-virtual {v1, v5}, Ljava/lang/String;->substring(I)Ljava/lang/String;
 
-    const/16 v11, 0xd
+    move-result-object p2
 
-    aput v11, v9, v10
-    :try_end_c
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_c .. :try_end_c} :catch_c
+    invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    :catch_c
-    :try_start_d
-    sget-object v9, Lk3/lr0;->b:[I
+    .line 39
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
-    sget-object v10, Lk3/mu0;->v:Lk3/mu0;
+    move-result-object p1
 
-    invoke-virtual {v10}, Ljava/lang/Enum;->ordinal()I
+    .line 40
+    invoke-static {p1}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
 
-    move-result v10
+    move-result-object p1
 
-    const/16 v11, 0xe
+    return-object p1
 
-    aput v11, v9, v10
-    :try_end_d
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_d .. :try_end_d} :catch_d
+    .line 41
+    :cond_5
+    invoke-virtual {p1}, Landroid/net/Uri;->buildUpon()Landroid/net/Uri$Builder;
 
-    :catch_d
-    :try_start_e
-    sget-object v9, Lk3/lr0;->b:[I
+    move-result-object p1
 
-    sget-object v10, Lk3/mu0;->w:Lk3/mu0;
+    .line 42
+    invoke-virtual {p1, v2, p2}, Landroid/net/Uri$Builder;->appendQueryParameter(Ljava/lang/String;Ljava/lang/String;)Landroid/net/Uri$Builder;
 
-    invoke-virtual {v10}, Ljava/lang/Enum;->ordinal()I
+    move-result-object p1
 
-    move-result v10
+    .line 43
+    invoke-virtual {p1}, Landroid/net/Uri$Builder;->build()Landroid/net/Uri;
 
-    const/16 v11, 0xf
+    move-result-object p1
 
-    aput v11, v9, v10
-    :try_end_e
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_e .. :try_end_e} :catch_e
+    return-object p1
 
-    :catch_e
-    :try_start_f
-    sget-object v9, Lk3/lr0;->b:[I
+    .line 44
+    :cond_6
+    new-instance p1, Lcom/google/android/gms/internal/ads/zzef;
 
-    sget-object v10, Lk3/mu0;->x:Lk3/mu0;
+    const-string p2, "Query parameter already exists: ms"
 
-    invoke-virtual {v10}, Ljava/lang/Enum;->ordinal()I
+    invoke-direct {p1, p2}, Lcom/google/android/gms/internal/ads/zzef;-><init>(Ljava/lang/String;)V
 
-    move-result v10
+    throw p1
+    :try_end_4
+    .catch Ljava/lang/UnsupportedOperationException; {:try_start_4 .. :try_end_4} :catch_1
 
-    const/16 v11, 0x10
+    .line 45
+    :catch_1
+    new-instance p1, Lcom/google/android/gms/internal/ads/zzef;
 
-    aput v11, v9, v10
-    :try_end_f
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_f .. :try_end_f} :catch_f
+    const-string p2, "Provided Uri is not in a valid state"
 
-    :catch_f
-    :try_start_10
-    sget-object v9, Lk3/lr0;->b:[I
+    invoke-direct {p1, p2}, Lcom/google/android/gms/internal/ads/zzef;-><init>(Ljava/lang/String;)V
 
-    sget-object v10, Lk3/mu0;->y:Lk3/mu0;
+    throw p1
+.end method
 
-    invoke-virtual {v10}, Ljava/lang/Enum;->ordinal()I
+.method public final c(Landroid/view/MotionEvent;)V
+    .locals 1
 
-    move-result v10
+    iget-object v0, p0, Lk3/lr0;->b:Lk3/mm0;
 
-    const/16 v11, 0x11
+    invoke-interface {v0, p1}, Lk3/mm0;->f(Landroid/view/MotionEvent;)V
 
-    aput v11, v9, v10
-    :try_end_10
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_10 .. :try_end_10} :catch_10
+    return-void
+.end method
 
-    :catch_10
-    :try_start_11
-    sget-object v9, Lk3/lr0;->b:[I
+.method public final d(Landroid/net/Uri;)Z
+    .locals 5
 
-    sget-object v10, Lk3/mu0;->u:Lk3/mu0;
+    .line 1
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    invoke-virtual {v10}, Ljava/lang/Enum;->ordinal()I
-
-    move-result v10
-
-    const/16 v11, 0x12
-
-    aput v11, v9, v10
-    :try_end_11
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_11 .. :try_end_11} :catch_11
+    const/4 v0, 0x0
 
     .line 2
-    :catch_11
-    invoke-static {}, Lk3/pu0;->values()[Lk3/pu0;
+    :try_start_0
+    invoke-virtual {p1}, Landroid/net/Uri;->getHost()Ljava/lang/String;
 
-    move-result-object v9
+    move-result-object p1
 
-    array-length v9, v9
+    .line 3
+    iget-object v1, p0, Lk3/lr0;->a:[Ljava/lang/String;
 
-    new-array v9, v9, [I
+    array-length v2, v1
 
-    sput-object v9, Lk3/lr0;->a:[I
+    const/4 v3, 0x0
 
-    :try_start_12
-    sget-object v10, Lk3/pu0;->g:Lk3/pu0;
+    :goto_0
+    if-ge v3, v2, :cond_1
 
-    const/4 v10, 0x0
+    aget-object v4, v1, v3
 
-    aput v1, v9, v10
-    :try_end_12
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_12 .. :try_end_12} :catch_12
+    .line 4
+    invoke-virtual {p1, v4}, Ljava/lang/String;->endsWith(Ljava/lang/String;)Z
 
-    :catch_12
-    :try_start_13
-    sget-object v9, Lk3/lr0;->a:[I
+    move-result v4
+    :try_end_0
+    .catch Ljava/lang/NullPointerException; {:try_start_0 .. :try_end_0} :catch_0
 
-    sget-object v10, Lk3/pu0;->h:Lk3/pu0;
+    if-eqz v4, :cond_0
 
-    aput v0, v9, v1
-    :try_end_13
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_13 .. :try_end_13} :catch_13
+    const/4 p1, 0x1
 
-    :catch_13
-    :try_start_14
-    sget-object v1, Lk3/lr0;->a:[I
+    return p1
 
-    sget-object v9, Lk3/pu0;->i:Lk3/pu0;
+    :cond_0
+    add-int/lit8 v3, v3, 0x1
 
-    aput v2, v1, v0
-    :try_end_14
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_14 .. :try_end_14} :catch_14
+    goto :goto_0
 
-    :catch_14
-    :try_start_15
-    sget-object v0, Lk3/lr0;->a:[I
-
-    sget-object v1, Lk3/pu0;->j:Lk3/pu0;
-
-    aput v3, v0, v2
-    :try_end_15
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_15 .. :try_end_15} :catch_15
-
-    :catch_15
-    :try_start_16
-    sget-object v0, Lk3/lr0;->a:[I
-
-    sget-object v1, Lk3/pu0;->k:Lk3/pu0;
-
-    aput v4, v0, v3
-    :try_end_16
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_16 .. :try_end_16} :catch_16
-
-    :catch_16
-    :try_start_17
-    sget-object v0, Lk3/lr0;->a:[I
-
-    sget-object v1, Lk3/pu0;->l:Lk3/pu0;
-
-    aput v5, v0, v4
-    :try_end_17
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_17 .. :try_end_17} :catch_17
-
-    :catch_17
-    :try_start_18
-    sget-object v0, Lk3/lr0;->a:[I
-
-    sget-object v1, Lk3/pu0;->m:Lk3/pu0;
-
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
-
-    move-result v1
-
-    aput v6, v0, v1
-    :try_end_18
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_18 .. :try_end_18} :catch_18
-
-    :catch_18
-    :try_start_19
-    sget-object v0, Lk3/lr0;->a:[I
-
-    sget-object v1, Lk3/pu0;->n:Lk3/pu0;
-
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
-
-    move-result v1
-
-    aput v7, v0, v1
-    :try_end_19
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_19 .. :try_end_19} :catch_19
-
-    :catch_19
-    :try_start_1a
-    sget-object v0, Lk3/lr0;->a:[I
-
-    sget-object v1, Lk3/pu0;->o:Lk3/pu0;
-
-    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
-
-    move-result v1
-
-    aput v8, v0, v1
-    :try_end_1a
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_1a .. :try_end_1a} :catch_1a
-
-    :catch_1a
-    return-void
+    :catch_0
+    :cond_1
+    return v0
 .end method

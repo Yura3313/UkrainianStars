@@ -26,7 +26,7 @@
 .method public static getParameterUpperBound(ILjava/lang/reflect/ParameterizedType;)Ljava/lang/reflect/Type;
     .locals 0
 
-    invoke-static {p0, p1}, Lef/h0;->f(ILjava/lang/reflect/ParameterizedType;)Ljava/lang/reflect/Type;
+    invoke-static {p0, p1}, Lef/g0;->f(ILjava/lang/reflect/ParameterizedType;)Ljava/lang/reflect/Type;
 
     move-result-object p0
 
@@ -45,7 +45,7 @@
         }
     .end annotation
 
-    invoke-static {p0}, Lef/h0;->g(Ljava/lang/reflect/Type;)Ljava/lang/Class;
+    invoke-static {p0}, Lef/g0;->g(Ljava/lang/reflect/Type;)Ljava/lang/Class;
 
     move-result-object p0
 
@@ -54,7 +54,7 @@
 
 
 # virtual methods
-.method public requestBodyConverter(Ljava/lang/reflect/Type;[Ljava/lang/annotation/Annotation;[Ljava/lang/annotation/Annotation;Lef/d0;)Lef/j;
+.method public requestBodyConverter(Ljava/lang/reflect/Type;[Ljava/lang/annotation/Annotation;[Ljava/lang/annotation/Annotation;Lef/c0;)Lef/j;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -64,7 +64,7 @@
             "Ljava/lang/annotation/Annotation;",
             "[",
             "Ljava/lang/annotation/Annotation;",
-            "Lef/d0;",
+            "Lef/c0;",
             ")",
             "Lef/j<",
             "*",
@@ -81,7 +81,7 @@
     return-object p1
 .end method
 
-.method public responseBodyConverter(Ljava/lang/reflect/Type;[Ljava/lang/annotation/Annotation;Lef/d0;)Lef/j;
+.method public responseBodyConverter(Ljava/lang/reflect/Type;[Ljava/lang/annotation/Annotation;Lef/c0;)Lef/j;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -89,7 +89,7 @@
             "Ljava/lang/reflect/Type;",
             "[",
             "Ljava/lang/annotation/Annotation;",
-            "Lef/d0;",
+            "Lef/c0;",
             ")",
             "Lef/j<",
             "Lokhttp3/ResponseBody;",
@@ -105,7 +105,7 @@
     return-object p1
 .end method
 
-.method public stringConverter(Ljava/lang/reflect/Type;[Ljava/lang/annotation/Annotation;Lef/d0;)Lef/j;
+.method public stringConverter(Ljava/lang/reflect/Type;[Ljava/lang/annotation/Annotation;Lef/c0;)Lef/j;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -113,7 +113,7 @@
             "Ljava/lang/reflect/Type;",
             "[",
             "Ljava/lang/annotation/Annotation;",
-            "Lef/d0;",
+            "Lef/c0;",
             ")",
             "Lef/j<",
             "*",

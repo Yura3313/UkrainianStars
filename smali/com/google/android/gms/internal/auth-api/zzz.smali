@@ -16,7 +16,7 @@
 
 
 # instance fields
-.field public final f:Lcom/google/android/gms/auth/api/credentials/Credential;
+.field public final g:Lcom/google/android/gms/auth/api/credentials/Credential;
 
 
 # direct methods
@@ -39,7 +39,7 @@
     invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lcom/google/android/gms/internal/auth-api/zzz;->f:Lcom/google/android/gms/auth/api/credentials/Credential;
+    iput-object p1, p0, Lcom/google/android/gms/internal/auth-api/zzz;->g:Lcom/google/android/gms/auth/api/credentials/Credential;
 
     return-void
 .end method
@@ -59,7 +59,7 @@
     const/4 v1, 0x1
 
     .line 2
-    iget-object v2, p0, Lcom/google/android/gms/internal/auth-api/zzz;->f:Lcom/google/android/gms/auth/api/credentials/Credential;
+    iget-object v2, p0, Lcom/google/android/gms/internal/auth-api/zzz;->g:Lcom/google/android/gms/auth/api/credentials/Credential;
 
     const/4 v3, 0x0
 

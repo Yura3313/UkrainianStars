@@ -41,7 +41,7 @@
     iget-object v0, p0, Lcom/journeyapps/barcodescanner/CameraPreview$d;->a:Lcom/journeyapps/barcodescanner/CameraPreview;
 
     .line 2
-    iget-object v0, v0, Lcom/journeyapps/barcodescanner/CameraPreview;->o:Ljava/util/ArrayList;
+    iget-object v0, v0, Lcom/journeyapps/barcodescanner/CameraPreview;->p:Ljava/util/ArrayList;
 
     .line 3
     invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
@@ -77,7 +77,7 @@
     iget-object v0, p0, Lcom/journeyapps/barcodescanner/CameraPreview$d;->a:Lcom/journeyapps/barcodescanner/CameraPreview;
 
     .line 2
-    iget-object v0, v0, Lcom/journeyapps/barcodescanner/CameraPreview;->o:Ljava/util/ArrayList;
+    iget-object v0, v0, Lcom/journeyapps/barcodescanner/CameraPreview;->p:Ljava/util/ArrayList;
 
     .line 3
     invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
@@ -113,7 +113,7 @@
     iget-object v0, p0, Lcom/journeyapps/barcodescanner/CameraPreview$d;->a:Lcom/journeyapps/barcodescanner/CameraPreview;
 
     .line 2
-    iget-object v0, v0, Lcom/journeyapps/barcodescanner/CameraPreview;->o:Ljava/util/ArrayList;
+    iget-object v0, v0, Lcom/journeyapps/barcodescanner/CameraPreview;->p:Ljava/util/ArrayList;
 
     .line 3
     invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
@@ -149,7 +149,7 @@
     iget-object v0, p0, Lcom/journeyapps/barcodescanner/CameraPreview$d;->a:Lcom/journeyapps/barcodescanner/CameraPreview;
 
     .line 2
-    iget-object v0, v0, Lcom/journeyapps/barcodescanner/CameraPreview;->o:Ljava/util/ArrayList;
+    iget-object v0, v0, Lcom/journeyapps/barcodescanner/CameraPreview;->p:Ljava/util/ArrayList;
 
     .line 3
     invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
@@ -185,7 +185,7 @@
     iget-object v0, p0, Lcom/journeyapps/barcodescanner/CameraPreview$d;->a:Lcom/journeyapps/barcodescanner/CameraPreview;
 
     .line 2
-    iget-object v0, v0, Lcom/journeyapps/barcodescanner/CameraPreview;->o:Ljava/util/ArrayList;
+    iget-object v0, v0, Lcom/journeyapps/barcodescanner/CameraPreview;->p:Ljava/util/ArrayList;
 
     .line 3
     invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;

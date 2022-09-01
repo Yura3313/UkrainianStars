@@ -106,7 +106,7 @@
     const/4 v2, 0x0
 
     .line 3
-    invoke-static {v1, v0, v2, v2}, Landroidx/savedstate/d;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v1, v0, v2, v2}, Le5/i;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
 
     .line 4
     new-instance v0, Ljava/util/ArrayList;
@@ -129,7 +129,7 @@
     iget-object v6, p0, La9/a;->c:Li7/c;
 
     .line 8
-    iget-object v6, v6, Li7/c;->f:Ljava/lang/Long;
+    iget-object v6, v6, Li7/c;->g:Ljava/lang/Long;
 
     .line 9
     invoke-virtual {v6}, Ljava/lang/Long;->longValue()J
@@ -185,7 +185,7 @@
     check-cast v9, Lq8/d;
 
     .line 17
-    invoke-virtual {v7, v9}, Lz8/a;->a(Lq8/d;)Lcom/helpshift/util/h0;
+    invoke-virtual {v7, v9}, Lz8/a;->a(Lq8/d;)Lcom/helpshift/util/f0;
 
     move-result-object v11
 
@@ -194,7 +194,7 @@
     const-string v11, "Matching conversation not found from DB, processing as new conversation"
 
     .line 18
-    invoke-static {v1, v11, v2, v2}, Landroidx/savedstate/d;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v1, v11, v2, v2}, Le5/i;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
 
     .line 19
     invoke-interface {p1}, Ljava/util/List;->size()I
@@ -217,14 +217,14 @@
     iget-object v12, p0, La9/a;->c:Li7/c;
 
     .line 21
-    iget-object v12, v12, Li7/c;->f:Ljava/lang/Long;
+    iget-object v12, v12, Li7/c;->g:Ljava/lang/Long;
 
     .line 22
     invoke-virtual {v12}, Ljava/lang/Long;->longValue()J
 
     move-result-wide v12
 
-    iput-wide v12, v9, Lq8/d;->x:J
+    iput-wide v12, v9, Lq8/d;->y:J
 
     .line 23
     invoke-virtual {v9}, Lq8/d;->b()Z
@@ -238,18 +238,18 @@
 
     move-result-wide v12
 
-    iput-wide v12, v9, Lq8/d;->y:J
+    iput-wide v12, v9, Lq8/d;->z:J
 
     .line 25
     :cond_1
-    iget-boolean v12, v9, Lq8/d;->P:Z
+    iget-boolean v12, v9, Lq8/d;->Q:Z
 
     if-eqz v12, :cond_2
 
     .line 26
-    sget-object v12, Lu8/e;->t:Lu8/e;
+    sget-object v12, Lu8/e;->u:Lu8/e;
 
-    iput-object v12, v9, Lq8/d;->l:Lu8/e;
+    iput-object v12, v9, Lq8/d;->m:Lu8/e;
 
     .line 27
     :cond_2
@@ -262,15 +262,15 @@
     if-eqz v12, :cond_3
 
     .line 28
-    sget-object v12, Lu8/e;->s:Lu8/e;
+    sget-object v12, Lu8/e;->t:Lu8/e;
 
-    iput-object v12, v9, Lq8/d;->l:Lu8/e;
+    iput-object v12, v9, Lq8/d;->m:Lu8/e;
 
     .line 29
     :cond_3
-    iget-object v12, v9, Lq8/d;->l:Lu8/e;
+    iget-object v12, v9, Lq8/d;->m:Lu8/e;
 
-    sget-object v13, Lu8/e;->k:Lu8/e;
+    sget-object v13, Lu8/e;->l:Lu8/e;
 
     if-ne v12, v13, :cond_5
 
@@ -281,19 +281,19 @@
 
     if-nez v12, :cond_4
 
-    iget-boolean v12, v9, Lq8/d;->B:Z
+    iget-boolean v12, v9, Lq8/d;->C:Z
 
     if-eqz v12, :cond_5
 
     .line 31
     :cond_4
-    sget-object v12, Lu8/e;->o:Lu8/e;
+    sget-object v12, Lu8/e;->p:Lu8/e;
 
-    iput-object v12, v9, Lq8/d;->l:Lu8/e;
+    iput-object v12, v9, Lq8/d;->m:Lu8/e;
 
     .line 32
     :cond_5
-    iget-object v12, v9, Lq8/d;->l:Lu8/e;
+    iget-object v12, v9, Lq8/d;->m:Lu8/e;
 
     invoke-virtual {v12}, Ljava/lang/Enum;->ordinal()I
 
@@ -308,7 +308,7 @@
     if-eqz v11, :cond_7
 
     .line 33
-    iget-boolean v11, v9, Lq8/d;->B:Z
+    iget-boolean v11, v9, Lq8/d;->C:Z
 
     if-eqz v11, :cond_6
 
@@ -321,7 +321,7 @@
     .line 34
     :cond_7
     :goto_3
-    iput-boolean v10, v9, Lq8/d;->w:Z
+    iput-boolean v10, v9, Lq8/d;->x:Z
 
     .line 35
     iget-object v10, p0, La9/a;->a:Le8/s;
@@ -335,7 +335,7 @@
     const/4 v10, 0x4
 
     .line 36
-    iput v10, v9, Lq8/d;->t:I
+    iput v10, v9, Lq8/d;->u:I
 
     .line 37
     :cond_8
@@ -347,27 +347,27 @@
     const-string v10, "Matching conversation found from DB, processing as updated conversation"
 
     .line 38
-    invoke-static {v1, v10, v2, v2}, Landroidx/savedstate/d;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v1, v10, v2, v2}, Le5/i;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
 
     .line 39
-    iget-object v10, v11, Lcom/helpshift/util/h0;->a:Ljava/lang/Object;
+    iget-object v10, v11, Lcom/helpshift/util/f0;->a:Ljava/lang/Object;
 
     check-cast v10, Lz8/a$a;
 
     .line 40
-    iget-object v11, v11, Lcom/helpshift/util/h0;->b:Ljava/lang/Object;
+    iget-object v11, v11, Lcom/helpshift/util/f0;->b:Ljava/lang/Object;
 
     check-cast v11, Lq8/d;
 
     .line 41
-    sget-object v12, Lz8/a$a;->h:Lz8/a$a;
+    sget-object v12, Lz8/a$a;->i:Lz8/a$a;
 
     if-ne v10, v12, :cond_a
 
     .line 42
     iget-object v10, p0, La9/a;->b:Le8/b;
 
-    iget-object v12, v11, Lq8/d;->g:Ljava/lang/Long;
+    iget-object v12, v11, Lq8/d;->h:Ljava/lang/Long;
 
     invoke-virtual {v12}, Ljava/lang/Long;->longValue()J
 
@@ -382,9 +382,9 @@
     invoke-virtual {v10, v11, v9}, Lk3/lu;->c(Lq8/d;Lq8/d;)V
 
     .line 44
-    iget-object v10, v9, Lq8/d;->o:Lcom/helpshift/util/q;
+    iget-object v10, v9, Lq8/d;->p:Lcom/helpshift/util/q;
 
-    invoke-static {v10}, Lbc/a;->d(Ljava/util/List;)Z
+    invoke-static {v10}, Lt5/a;->g(Ljava/util/List;)Z
 
     move-result v10
 
@@ -393,7 +393,7 @@
     .line 45
     iget-object v10, p0, La9/a;->b:Le8/b;
 
-    iget-object v12, v11, Lq8/d;->g:Ljava/lang/Long;
+    iget-object v12, v11, Lq8/d;->h:Ljava/lang/Long;
 
     invoke-virtual {v12}, Ljava/lang/Long;->longValue()J
 
@@ -417,7 +417,7 @@
     .line 49
     iget-object v12, p0, La9/a;->e:Lo/e;
 
-    iget-object v9, v9, Lq8/d;->o:Lcom/helpshift/util/q;
+    iget-object v9, v9, Lq8/d;->p:Lcom/helpshift/util/q;
 
     .line 50
     invoke-virtual {v12, v11, v10, v9}, Lo/e;->f(Lq8/d;Ljava/util/List;Ljava/util/List;)Lz8/b;
@@ -502,17 +502,17 @@
     check-cast v10, Lq8/d;
 
     .line 60
-    iget-object v11, v8, Lq8/d;->i:Ljava/lang/String;
+    iget-object v11, v8, Lq8/d;->j:Ljava/lang/String;
 
-    invoke-static {v11}, Lcom/google/android/play/core/appupdate/g;->b(Ljava/lang/String;)Z
+    invoke-static {v11}, La5/b0;->d(Ljava/lang/String;)Z
 
     move-result v11
 
     if-nez v11, :cond_f
 
-    iget-object v11, v8, Lq8/d;->i:Ljava/lang/String;
+    iget-object v11, v8, Lq8/d;->j:Ljava/lang/String;
 
-    iget-object v12, v10, Lq8/d;->i:Ljava/lang/String;
+    iget-object v12, v10, Lq8/d;->j:Ljava/lang/String;
 
     .line 61
     invoke-virtual {v11, v12}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -521,9 +521,9 @@
 
     if-eqz v11, :cond_f
 
-    iget-object v11, v8, Lq8/d;->h:Ljava/lang/String;
+    iget-object v11, v8, Lq8/d;->i:Ljava/lang/String;
 
-    iget-object v12, v10, Lq8/d;->h:Ljava/lang/String;
+    iget-object v12, v10, Lq8/d;->i:Ljava/lang/String;
 
     .line 62
     invoke-virtual {v11, v12}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -533,9 +533,9 @@
     if-eqz v11, :cond_f
 
     .line 63
-    iget-object v8, v8, Lq8/d;->o:Lcom/helpshift/util/q;
+    iget-object v8, v8, Lq8/d;->p:Lcom/helpshift/util/q;
 
-    iget-object v9, v10, Lq8/d;->o:Lcom/helpshift/util/q;
+    iget-object v9, v10, Lq8/d;->p:Lcom/helpshift/util/q;
 
     invoke-virtual {v8, v9}, Lcom/helpshift/util/q;->addAll(Ljava/util/Collection;)Z
 
@@ -581,7 +581,7 @@
     move-result-object v0
 
     .line 68
-    invoke-static {v1, v0, v2, v2}, Landroidx/savedstate/d;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v1, v0, v2, v2}, Le5/i;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
 
     .line 69
     iget-object v0, p0, La9/a;->b:Le8/b;
@@ -723,13 +723,13 @@
 
     move-result-object v4
 
-    check-cast v4, Lo8/y;
+    check-cast v4, Lo8/z;
 
     invoke-static {v8, v9}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     move-result-object v8
 
-    iput-object v8, v4, Lo8/y;->m:Ljava/lang/Long;
+    iput-object v8, v4, Lo8/z;->n:Ljava/lang/Long;
 
     :goto_c
     add-int/lit8 v5, v5, 0x1
@@ -770,7 +770,7 @@
     move-result-object v0
 
     .line 88
-    invoke-static {v1, v0, v2, v2}, Landroidx/savedstate/d;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v1, v0, v2, v2}, Le5/i;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
 
     .line 89
     iget-object v0, p0, La9/a;->b:Le8/b;

@@ -1,89 +1,331 @@
-.class public final synthetic Lk3/xc0;
+.class public final Lk3/xc0;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lk3/zc0;
+.implements Lk3/cd0;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Lk3/cd0<",
+        "Lk3/ad0<",
+        "Landroid/os/Bundle;",
+        ">;>;"
+    }
+.end annotation
 
 
 # instance fields
-.field public final synthetic a:I
+.field public final a:Lk3/jm0;
 
-.field public b:Ljava/lang/Object;
+.field public final b:Landroid/content/Context;
 
 
 # direct methods
-.method public synthetic constructor <init>(Ljava/lang/Object;I)V
+.method public constructor <init>(Lk3/jm0;Landroid/content/Context;)V
     .locals 0
 
-    iput p2, p0, Lk3/xc0;->a:I
-
-    iput-object p1, p0, Lk3/xc0;->b:Ljava/lang/Object;
-
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    iput-object p1, p0, Lk3/xc0;->a:Lk3/jm0;
+
+    .line 3
+    iput-object p2, p0, Lk3/xc0;->b:Landroid/content/Context;
 
     return-void
 .end method
 
-
-# virtual methods
-.method public final b(Ljava/lang/Object;)V
-    .locals 3
-
-    iget v0, p0, Lk3/xc0;->a:I
-
-    packed-switch v0, :pswitch_data_0
-
-    goto :goto_0
+.method public static b(Landroid/content/Context;Lorg/json/JSONArray;)Landroid/os/Bundle;
+    .locals 10
 
     .line 1
-    :pswitch_0
-    iget-object v0, p0, Lk3/xc0;->b:Ljava/lang/Object;
+    new-instance v0, Landroid/os/Bundle;
 
-    check-cast v0, Landroid/os/Bundle;
+    invoke-direct {v0}, Landroid/os/Bundle;-><init>()V
 
-    check-cast p1, Landroid/os/Bundle;
+    const/4 v1, 0x0
 
-    const-string v1, "shared_pref"
+    const/4 v2, 0x0
 
     .line 2
-    invoke-virtual {p1, v1, v0}, Landroid/os/Bundle;->putBundle(Ljava/lang/String;Landroid/os/Bundle;)V
+    :goto_0
+    invoke-virtual {p1}, Lorg/json/JSONArray;->length()I
 
-    return-void
+    move-result v3
+
+    if-ge v2, v3, :cond_c
 
     .line 3
-    :goto_0
-    check-cast p1, Lorg/json/JSONObject;
+    invoke-virtual {p1, v2}, Lorg/json/JSONArray;->optJSONObject(I)Lorg/json/JSONObject;
 
-    :try_start_0
-    const-string v0, "eid"
+    move-result-object v3
 
-    const-string v1, ","
+    const-string v4, "bk"
 
     .line 4
-    iget-object v2, p0, Lk3/xc0;->b:Ljava/lang/Object;
+    invoke-virtual {v3, v4}, Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;
 
-    check-cast v2, Ljava/util/List;
+    move-result-object v4
 
-    invoke-static {v1, v2}, Landroid/text/TextUtils;->join(Ljava/lang/CharSequence;Ljava/lang/Iterable;)Ljava/lang/String;
+    const-string v5, "sk"
 
-    move-result-object v1
+    .line 5
+    invoke-virtual {v3, v5}, Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;
 
-    invoke-virtual {p1, v0, v1}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
-    :try_end_0
-    .catch Lorg/json/JSONException; {:try_start_0 .. :try_end_0} :catch_0
+    move-result-object v5
+
+    const-string v6, "type"
+
+    const/4 v7, -0x1
+
+    .line 6
+    invoke-virtual {v3, v6, v7}, Lorg/json/JSONObject;->optInt(Ljava/lang/String;I)I
+
+    move-result v3
+
+    const/4 v6, 0x2
+
+    const/4 v7, 0x3
+
+    const/4 v8, 0x1
+
+    if-eqz v3, :cond_2
+
+    if-eq v3, v8, :cond_1
+
+    if-eq v3, v6, :cond_0
+
+    const/4 v3, 0x0
 
     goto :goto_1
 
-    .line 5
-    :catch_0
-    invoke-static {}, Lk3/j6;->m()Z
+    :cond_0
+    const/4 v3, 0x3
 
+    goto :goto_1
+
+    :cond_1
+    const/4 v3, 0x2
+
+    goto :goto_1
+
+    :cond_2
+    const/4 v3, 0x1
+
+    .line 7
     :goto_1
-    return-void
+    invoke-static {v4}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+    move-result v9
+
+    if-nez v9, :cond_b
+
+    invoke-static {v5}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+
+    move-result v9
+
+    if-nez v9, :cond_b
+
+    if-eqz v3, :cond_b
+
+    const-string v9, "/"
+
+    .line 8
+    invoke-virtual {v5, v9}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
+
+    move-result-object v5
+
+    .line 9
+    array-length v9, v5
+
+    if-gt v9, v6, :cond_5
+
+    array-length v9, v5
+
+    if-nez v9, :cond_3
+
+    goto :goto_3
+
+    .line 10
+    :cond_3
+    array-length v9, v5
+
+    if-ne v9, v8, :cond_4
+
+    .line 11
+    invoke-static {p0}, Landroid/preference/PreferenceManager;->getDefaultSharedPreferences(Landroid/content/Context;)Landroid/content/SharedPreferences;
+
+    move-result-object v9
+
+    .line 12
+    aget-object v5, v5, v1
+
+    goto :goto_2
+
+    .line 13
+    :cond_4
+    aget-object v9, v5, v1
+
+    invoke-virtual {p0, v9, v1}, Landroid/content/Context;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
+
+    move-result-object v9
+
+    .line 14
+    aget-object v5, v5, v8
+
+    .line 15
+    :goto_2
+    invoke-interface {v9}, Landroid/content/SharedPreferences;->getAll()Ljava/util/Map;
+
+    move-result-object v9
+
+    invoke-interface {v9, v5}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v5
+
+    goto :goto_4
+
+    :cond_5
+    :goto_3
+    const/4 v5, 0x0
+
+    :goto_4
+    if-eqz v5, :cond_b
+
+    .line 16
+    sget-object v9, Lk3/zc0;->a:[I
+
+    add-int/lit8 v3, v3, -0x1
+
+    aget v3, v9, v3
+
+    if-eq v3, v8, :cond_a
+
+    if-eq v3, v6, :cond_7
+
+    if-eq v3, v7, :cond_6
+
+    goto :goto_5
+
+    .line 17
+    :cond_6
+    instance-of v3, v5, Ljava/lang/Boolean;
+
+    if-eqz v3, :cond_b
+
+    .line 18
+    check-cast v5, Ljava/lang/Boolean;
+
+    invoke-virtual {v5}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result v3
+
+    invoke-virtual {v0, v4, v3}, Landroid/os/Bundle;->putBoolean(Ljava/lang/String;Z)V
+
+    goto :goto_5
+
+    .line 19
+    :cond_7
+    instance-of v3, v5, Ljava/lang/Integer;
+
+    if-eqz v3, :cond_8
+
+    .line 20
+    check-cast v5, Ljava/lang/Integer;
+
+    invoke-virtual {v5}, Ljava/lang/Integer;->intValue()I
+
+    move-result v3
+
+    invoke-virtual {v0, v4, v3}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
+
+    goto :goto_5
+
+    .line 21
+    :cond_8
+    instance-of v3, v5, Ljava/lang/Long;
+
+    if-eqz v3, :cond_9
+
+    .line 22
+    check-cast v5, Ljava/lang/Long;
+
+    invoke-virtual {v5}, Ljava/lang/Long;->longValue()J
+
+    move-result-wide v5
+
+    invoke-virtual {v0, v4, v5, v6}, Landroid/os/Bundle;->putLong(Ljava/lang/String;J)V
+
+    goto :goto_5
+
+    .line 23
+    :cond_9
+    instance-of v3, v5, Ljava/lang/Float;
+
+    if-eqz v3, :cond_b
+
+    .line 24
+    check-cast v5, Ljava/lang/Float;
+
+    invoke-virtual {v5}, Ljava/lang/Float;->floatValue()F
+
+    move-result v3
+
+    invoke-virtual {v0, v4, v3}, Landroid/os/Bundle;->putFloat(Ljava/lang/String;F)V
+
+    goto :goto_5
+
+    .line 25
+    :cond_a
+    instance-of v3, v5, Ljava/lang/String;
+
+    if-eqz v3, :cond_b
+
+    .line 26
+    check-cast v5, Ljava/lang/String;
+
+    invoke-virtual {v0, v4, v5}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
+
+    :cond_b
+    :goto_5
+    add-int/lit8 v2, v2, 0x1
+
+    goto/16 :goto_0
+
+    :cond_c
+    return-object v0
+.end method
+
+
+# virtual methods
+.method public final a()Lk3/hm0;
+    .locals 3
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lk3/hm0<",
+            "Lk3/ad0<",
+            "Landroid/os/Bundle;",
+            ">;>;"
+        }
+    .end annotation
+
+    iget-object v0, p0, Lk3/xc0;->a:Lk3/jm0;
+
+    new-instance v1, Lk3/la;
+
+    const/4 v2, 0x1
+
+    invoke-direct {v1, p0, v2}, Lk3/la;-><init>(Ljava/lang/Object;I)V
+
+    invoke-interface {v0, v1}, Lk3/jm0;->c(Ljava/util/concurrent/Callable;)Lk3/hm0;
+
+    move-result-object v0
+
+    return-object v0
 .end method

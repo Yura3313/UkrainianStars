@@ -1,367 +1,185 @@
 .class public abstract Lv3/w1;
 .super Ljava/lang/Object;
 
+# interfaces
+.implements Ljava/io/Serializable;
+.implements Ljava/lang/Iterable;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Ljava/io/Serializable;",
+        "Ljava/lang/Iterable<",
+        "Ljava/lang/Byte;",
+        ">;"
+    }
+.end annotation
+
+
+# static fields
+.field public static final h:Lv3/z1;
+
+.field public static final i:Lv3/y1;
+
+
+# instance fields
+.field public g:I
+
 
 # direct methods
-.method public synthetic constructor <init>()V
-    .locals 0
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    return-void
-.end method
-
-.method public static e(Ljava/lang/CharSequence;Ljava/nio/ByteBuffer;)V
-    .locals 7
+.method public static constructor <clinit>()V
+    .locals 2
 
     .line 1
-    invoke-interface {p0}, Ljava/lang/CharSequence;->length()I
+    new-instance v0, Lv3/z1;
+
+    sget-object v1, Lv3/u2;->b:[B
+
+    invoke-direct {v0, v1}, Lv3/z1;-><init>([B)V
+
+    sput-object v0, Lv3/w1;->h:Lv3/z1;
+
+    .line 2
+    invoke-static {}, Lv3/t1;->a()Z
 
     move-result v0
 
-    .line 2
-    invoke-virtual {p1}, Ljava/nio/Buffer;->position()I
+    const/4 v1, 0x0
 
-    move-result v1
+    if-eqz v0, :cond_0
 
-    const/4 v2, 0x0
+    new-instance v0, La7/a;
 
-    :goto_0
-    const/16 v3, 0x80
-
-    if-ge v2, v0, :cond_0
-
-    .line 3
-    :try_start_0
-    invoke-interface {p0, v2}, Ljava/lang/CharSequence;->charAt(I)C
-
-    move-result v4
-
-    if-ge v4, v3, :cond_0
-
-    add-int v3, v1, v2
-
-    int-to-byte v4, v4
-
-    .line 4
-    invoke-virtual {p1, v3, v4}, Ljava/nio/ByteBuffer;->put(IB)Ljava/nio/ByteBuffer;
-
-    add-int/lit8 v2, v2, 0x1
+    invoke-direct {v0}, La7/a;-><init>()V
 
     goto :goto_0
 
     :cond_0
-    if-ne v2, v0, :cond_1
+    new-instance v0, Ls4/e;
 
-    add-int v0, v1, v2
+    invoke-direct {v0, v1}, Ls4/e;-><init>(Lv3/x1;)V
 
-    .line 5
-    invoke-virtual {p1, v0}, Ljava/nio/ByteBuffer;->position(I)Ljava/nio/Buffer;
+    :goto_0
+    sput-object v0, Lv3/w1;->i:Lv3/y1;
 
     return-void
+.end method
 
-    :cond_1
-    add-int/2addr v1, v2
+.method public constructor <init>()V
+    .locals 1
 
-    :goto_1
-    if-ge v2, v0, :cond_8
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 6
-    invoke-interface {p0, v2}, Ljava/lang/CharSequence;->charAt(I)C
+    const/4 v0, 0x0
 
-    move-result v4
-
-    if-ge v4, v3, :cond_2
-
-    int-to-byte v4, v4
-
-    .line 7
-    invoke-virtual {p1, v1, v4}, Ljava/nio/ByteBuffer;->put(IB)Ljava/nio/ByteBuffer;
-    :try_end_0
-    .catch Ljava/lang/IndexOutOfBoundsException; {:try_start_0 .. :try_end_0} :catch_3
-
-    goto/16 :goto_5
-
-    :cond_2
-    const/16 v5, 0x800
-
-    if-ge v4, v5, :cond_3
-
-    add-int/lit8 v5, v1, 0x1
-
-    ushr-int/lit8 v6, v4, 0x6
-
-    or-int/lit16 v6, v6, 0xc0
-
-    int-to-byte v6, v6
-
-    .line 8
-    :try_start_1
-    invoke-virtual {p1, v1, v6}, Ljava/nio/ByteBuffer;->put(IB)Ljava/nio/ByteBuffer;
-
-    and-int/lit8 v1, v4, 0x3f
-
-    or-int/2addr v1, v3
-
-    int-to-byte v1, v1
-
-    .line 9
-    invoke-virtual {p1, v5, v1}, Ljava/nio/ByteBuffer;->put(IB)Ljava/nio/ByteBuffer;
-    :try_end_1
-    .catch Ljava/lang/IndexOutOfBoundsException; {:try_start_1 .. :try_end_1} :catch_0
-
-    move v1, v5
-
-    goto/16 :goto_5
-
-    :catch_0
-    move v1, v5
-
-    goto/16 :goto_6
-
-    :cond_3
-    const v5, 0xd800
-
-    if-lt v4, v5, :cond_7
-
-    const v5, 0xdfff
-
-    if-ge v5, v4, :cond_4
-
-    goto :goto_4
-
-    :cond_4
-    add-int/lit8 v5, v2, 0x1
-
-    if-eq v5, v0, :cond_6
-
-    .line 10
-    :try_start_2
-    invoke-interface {p0, v5}, Ljava/lang/CharSequence;->charAt(I)C
-
-    move-result v2
-
-    invoke-static {v4, v2}, Ljava/lang/Character;->isSurrogatePair(CC)Z
-
-    move-result v6
-
-    if-eqz v6, :cond_5
-
-    .line 11
-    invoke-static {v4, v2}, Ljava/lang/Character;->toCodePoint(CC)I
-
-    move-result v2
-    :try_end_2
-    .catch Ljava/lang/IndexOutOfBoundsException; {:try_start_2 .. :try_end_2} :catch_2
-
-    add-int/lit8 v4, v1, 0x1
-
-    ushr-int/lit8 v6, v2, 0x12
-
-    or-int/lit16 v6, v6, 0xf0
-
-    int-to-byte v6, v6
-
-    .line 12
-    :try_start_3
-    invoke-virtual {p1, v1, v6}, Ljava/nio/ByteBuffer;->put(IB)Ljava/nio/ByteBuffer;
-    :try_end_3
-    .catch Ljava/lang/IndexOutOfBoundsException; {:try_start_3 .. :try_end_3} :catch_1
-
-    add-int/lit8 v1, v4, 0x1
-
-    ushr-int/lit8 v6, v2, 0xc
-
-    and-int/lit8 v6, v6, 0x3f
-
-    or-int/2addr v6, v3
-
-    int-to-byte v6, v6
-
-    .line 13
-    :try_start_4
-    invoke-virtual {p1, v4, v6}, Ljava/nio/ByteBuffer;->put(IB)Ljava/nio/ByteBuffer;
-    :try_end_4
-    .catch Ljava/lang/IndexOutOfBoundsException; {:try_start_4 .. :try_end_4} :catch_2
-
-    add-int/lit8 v4, v1, 0x1
-
-    ushr-int/lit8 v6, v2, 0x6
-
-    and-int/lit8 v6, v6, 0x3f
-
-    or-int/2addr v6, v3
-
-    int-to-byte v6, v6
-
-    .line 14
-    :try_start_5
-    invoke-virtual {p1, v1, v6}, Ljava/nio/ByteBuffer;->put(IB)Ljava/nio/ByteBuffer;
-
-    and-int/lit8 v1, v2, 0x3f
-
-    or-int/2addr v1, v3
-
-    int-to-byte v1, v1
-
-    .line 15
-    invoke-virtual {p1, v4, v1}, Ljava/nio/ByteBuffer;->put(IB)Ljava/nio/ByteBuffer;
-    :try_end_5
-    .catch Ljava/lang/IndexOutOfBoundsException; {:try_start_5 .. :try_end_5} :catch_1
-
-    move v1, v4
-
-    move v2, v5
-
-    goto :goto_5
-
-    :catch_1
-    move v1, v4
-
-    goto :goto_2
-
-    :cond_5
-    move v2, v5
-
-    goto :goto_3
-
-    :catch_2
-    :goto_2
-    move v2, v5
-
-    goto :goto_6
-
-    .line 16
-    :cond_6
-    :goto_3
-    :try_start_6
-    new-instance v3, Lv3/e5;
-
-    invoke-direct {v3, v2, v0}, Lv3/e5;-><init>(II)V
-
-    throw v3
-    :try_end_6
-    .catch Ljava/lang/IndexOutOfBoundsException; {:try_start_6 .. :try_end_6} :catch_3
-
-    :cond_7
-    :goto_4
-    add-int/lit8 v5, v1, 0x1
-
-    ushr-int/lit8 v6, v4, 0xc
-
-    or-int/lit16 v6, v6, 0xe0
-
-    int-to-byte v6, v6
-
-    .line 17
-    :try_start_7
-    invoke-virtual {p1, v1, v6}, Ljava/nio/ByteBuffer;->put(IB)Ljava/nio/ByteBuffer;
-    :try_end_7
-    .catch Ljava/lang/IndexOutOfBoundsException; {:try_start_7 .. :try_end_7} :catch_0
-
-    add-int/lit8 v1, v5, 0x1
-
-    ushr-int/lit8 v6, v4, 0x6
-
-    and-int/lit8 v6, v6, 0x3f
-
-    or-int/2addr v6, v3
-
-    int-to-byte v6, v6
-
-    .line 18
-    :try_start_8
-    invoke-virtual {p1, v5, v6}, Ljava/nio/ByteBuffer;->put(IB)Ljava/nio/ByteBuffer;
-
-    and-int/lit8 v4, v4, 0x3f
-
-    or-int/2addr v4, v3
-
-    int-to-byte v4, v4
-
-    .line 19
-    invoke-virtual {p1, v1, v4}, Ljava/nio/ByteBuffer;->put(IB)Ljava/nio/ByteBuffer;
-
-    :goto_5
-    add-int/lit8 v2, v2, 0x1
-
-    add-int/lit8 v1, v1, 0x1
-
-    goto/16 :goto_1
-
-    .line 20
-    :cond_8
-    invoke-virtual {p1, v1}, Ljava/nio/ByteBuffer;->position(I)Ljava/nio/Buffer;
-    :try_end_8
-    .catch Ljava/lang/IndexOutOfBoundsException; {:try_start_8 .. :try_end_8} :catch_3
+    .line 2
+    iput v0, p0, Lv3/w1;->g:I
 
     return-void
+.end method
 
-    .line 21
-    :catch_3
-    :goto_6
-    invoke-virtual {p1}, Ljava/nio/Buffer;->position()I
+.method public static h(III)I
+    .locals 3
 
-    move-result v0
+    sub-int v0, p1, p0
 
-    invoke-virtual {p1}, Ljava/nio/Buffer;->position()I
+    or-int v1, p0, p1
 
-    move-result p1
+    or-int/2addr v1, v0
 
-    sub-int/2addr v1, p1
+    sub-int v2, p2, p1
 
-    add-int/lit8 v1, v1, 0x1
+    or-int/2addr v1, v2
 
-    invoke-static {v2, v1}, Ljava/lang/Math;->max(II)I
+    if-gez v1, :cond_2
 
-    move-result p1
+    if-ltz p0, :cond_1
 
-    add-int/2addr p1, v0
+    if-ge p1, p0, :cond_0
 
-    .line 22
-    new-instance v0, Ljava/lang/ArrayIndexOutOfBoundsException;
+    .line 1
+    new-instance p2, Ljava/lang/IndexOutOfBoundsException;
 
-    .line 23
-    invoke-interface {p0, v2}, Ljava/lang/CharSequence;->charAt(I)C
+    const/16 v0, 0x42
 
-    move-result p0
+    const-string v1, "Beginning index larger than ending index: "
 
-    const/16 v1, 0x25
+    const-string v2, ", "
 
-    new-instance v2, Ljava/lang/StringBuilder;
-
-    invoke-direct {v2, v1}, Ljava/lang/StringBuilder;-><init>(I)V
-
-    const-string v1, "Failed writing "
-
-    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2, p0}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
-
-    const-string p0, " at index "
-
-    invoke-virtual {v2, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    .line 2
+    invoke-static {v0, v1, p0, v2, p1}, Le2/a;->a(ILjava/lang/String;ILjava/lang/String;I)Ljava/lang/String;
 
     move-result-object p0
 
-    invoke-direct {v0, p0}, Ljava/lang/ArrayIndexOutOfBoundsException;-><init>(Ljava/lang/String;)V
+    .line 3
+    invoke-direct {p2, p0}, Ljava/lang/IndexOutOfBoundsException;-><init>(Ljava/lang/String;)V
 
-    goto :goto_8
+    throw p2
 
-    :goto_7
-    throw v0
+    .line 4
+    :cond_0
+    new-instance p0, Ljava/lang/IndexOutOfBoundsException;
 
-    :goto_8
-    goto :goto_7
+    const/16 v0, 0x25
+
+    const-string v1, "End index: "
+
+    const-string v2, " >= "
+
+    .line 5
+    invoke-static {v0, v1, p1, v2, p2}, Le2/a;->a(ILjava/lang/String;ILjava/lang/String;I)Ljava/lang/String;
+
+    move-result-object p1
+
+    .line 6
+    invoke-direct {p0, p1}, Ljava/lang/IndexOutOfBoundsException;-><init>(Ljava/lang/String;)V
+
+    throw p0
+
+    .line 7
+    :cond_1
+    new-instance p1, Ljava/lang/IndexOutOfBoundsException;
+
+    const/16 p2, 0x20
+
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0, p2}, Ljava/lang/StringBuilder;-><init>(I)V
+
+    const-string p2, "Beginning index: "
+
+    invoke-virtual {v0, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    const-string p0, " < 0"
+
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p0
+
+    invoke-direct {p1, p0}, Ljava/lang/IndexOutOfBoundsException;-><init>(Ljava/lang/String;)V
+
+    throw p1
+
+    :cond_2
+    return v0
 .end method
 
 
 # virtual methods
-.method public abstract a([BII)V
+.method public abstract b(II)I
+.end method
+
+.method public abstract c(Ljava/nio/charset/Charset;)Ljava/lang/String;
+.end method
+
+.method public abstract e(Lv3/v1;)V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -369,19 +187,99 @@
     .end annotation
 .end method
 
-.method public abstract b(Ljava/lang/CharSequence;[BII)I
+.method public abstract equals(Ljava/lang/Object;)Z
 .end method
 
-.method public abstract c([BII)I
+.method public abstract f(I)B
 .end method
 
-.method public abstract d(Ljava/lang/CharSequence;Ljava/nio/ByteBuffer;)V
+.method public abstract g(I)B
 .end method
 
-.method public abstract f([BII)Ljava/lang/String;
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Lcom/google/android/gms/internal/measurement/zzuv;
-        }
-    .end annotation
+.method public final hashCode()I
+    .locals 1
+
+    .line 1
+    iget v0, p0, Lv3/w1;->g:I
+
+    if-nez v0, :cond_1
+
+    .line 2
+    invoke-virtual {p0}, Lv3/w1;->size()I
+
+    move-result v0
+
+    .line 3
+    invoke-virtual {p0, v0, v0}, Lv3/w1;->b(II)I
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    const/4 v0, 0x1
+
+    .line 4
+    :cond_0
+    iput v0, p0, Lv3/w1;->g:I
+
+    :cond_1
+    return v0
+.end method
+
+.method public abstract i()Z
+.end method
+
+.method public final synthetic iterator()Ljava/util/Iterator;
+    .locals 1
+
+    new-instance v0, Lv3/x1;
+
+    invoke-direct {v0, p0}, Lv3/x1;-><init>(Lv3/w1;)V
+
+    return-object v0
+.end method
+
+.method public abstract size()I
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 3
+
+    const/4 v0, 0x2
+
+    new-array v0, v0, [Ljava/lang/Object;
+
+    .line 1
+    invoke-static {p0}, Ljava/lang/System;->identityHashCode(Ljava/lang/Object;)I
+
+    move-result v1
+
+    invoke-static {v1}, Ljava/lang/Integer;->toHexString(I)Ljava/lang/String;
+
+    move-result-object v1
+
+    const/4 v2, 0x0
+
+    aput-object v1, v0, v2
+
+    invoke-virtual {p0}, Lv3/w1;->size()I
+
+    move-result v1
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    const/4 v2, 0x1
+
+    aput-object v1, v0, v2
+
+    const-string v1, "<ByteString@%s size=%d>"
+
+    .line 2
+    invoke-static {v1, v0}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
 .end method

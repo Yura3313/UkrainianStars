@@ -16,9 +16,9 @@
 
 
 # instance fields
-.field public final f:Ljava/lang/String;
+.field public final g:Ljava/lang/String;
 
-.field public final g:I
+.field public final h:I
 
 
 # direct methods
@@ -46,10 +46,10 @@
 
     .line 2
     :cond_0
-    iput-object p1, p0, Lcom/google/android/gms/internal/ads/zzazl;->f:Ljava/lang/String;
+    iput-object p1, p0, Lcom/google/android/gms/internal/ads/zzazl;->g:Ljava/lang/String;
 
     .line 3
-    iput p2, p0, Lcom/google/android/gms/internal/ads/zzazl;->g:I
+    iput p2, p0, Lcom/google/android/gms/internal/ads/zzazl;->h:I
 
     return-void
 .end method
@@ -67,7 +67,7 @@
     move-result v5
 
     .line 2
-    iget-object p2, p0, Lcom/google/android/gms/internal/ads/zzazl;->f:Ljava/lang/String;
+    iget-object p2, p0, Lcom/google/android/gms/internal/ads/zzazl;->g:Ljava/lang/String;
 
     const/4 v0, 0x1
 
@@ -76,7 +76,7 @@
     invoke-static {p1, v0, p2, v1}, Le2/b;->m(Landroid/os/Parcel;ILjava/lang/String;Z)V
 
     .line 3
-    iget v3, p0, Lcom/google/android/gms/internal/ads/zzazl;->g:I
+    iget v3, p0, Lcom/google/android/gms/internal/ads/zzazl;->h:I
 
     const/4 v1, 0x2
 

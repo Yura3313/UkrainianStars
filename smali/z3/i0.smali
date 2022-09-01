@@ -6,34 +6,34 @@
 
 
 # instance fields
-.field public final synthetic f:Lz3/p0;
+.field public final synthetic g:Lz3/p0;
 
-.field public final synthetic g:J
+.field public final synthetic h:J
 
-.field public final synthetic h:Landroid/os/Bundle;
+.field public final synthetic i:Landroid/os/Bundle;
 
-.field public final synthetic i:Landroid/content/Context;
+.field public final synthetic j:Landroid/content/Context;
 
-.field public final synthetic j:Lz3/o;
+.field public final synthetic k:Lz3/o;
 
-.field public final synthetic k:Landroid/content/BroadcastReceiver$PendingResult;
+.field public final synthetic l:Landroid/content/BroadcastReceiver$PendingResult;
 
 
 # direct methods
 .method public constructor <init>(Lz3/p0;JLandroid/os/Bundle;Landroid/content/Context;Lz3/o;Landroid/content/BroadcastReceiver$PendingResult;)V
     .locals 0
 
-    iput-object p1, p0, Lz3/i0;->f:Lz3/p0;
+    iput-object p1, p0, Lz3/i0;->g:Lz3/p0;
 
-    iput-wide p2, p0, Lz3/i0;->g:J
+    iput-wide p2, p0, Lz3/i0;->h:J
 
-    iput-object p4, p0, Lz3/i0;->h:Landroid/os/Bundle;
+    iput-object p4, p0, Lz3/i0;->i:Landroid/os/Bundle;
 
-    iput-object p5, p0, Lz3/i0;->i:Landroid/content/Context;
+    iput-object p5, p0, Lz3/i0;->j:Landroid/content/Context;
 
-    iput-object p6, p0, Lz3/i0;->j:Lz3/o;
+    iput-object p6, p0, Lz3/i0;->k:Lz3/o;
 
-    iput-object p7, p0, Lz3/i0;->k:Landroid/content/BroadcastReceiver$PendingResult;
+    iput-object p7, p0, Lz3/i0;->l:Landroid/content/BroadcastReceiver$PendingResult;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -46,20 +46,20 @@
     .locals 7
 
     .line 1
-    iget-object v0, p0, Lz3/i0;->f:Lz3/p0;
+    iget-object v0, p0, Lz3/i0;->g:Lz3/p0;
 
     invoke-virtual {v0}, Lz3/p0;->s()Lz3/y;
 
     move-result-object v0
 
-    iget-object v0, v0, Lz3/y;->j:Lz3/a0;
+    iget-object v0, v0, Lz3/y;->p:Lz3/a0;
 
     invoke-virtual {v0}, Lz3/a0;->a()J
 
     move-result-wide v0
 
     .line 2
-    iget-wide v2, p0, Lz3/i0;->g:J
+    iget-wide v2, p0, Lz3/i0;->h:J
 
     const-wide/16 v4, 0x0
 
@@ -86,7 +86,7 @@
     if-lez v0, :cond_2
 
     .line 3
-    iget-object v0, p0, Lz3/i0;->h:Landroid/os/Bundle;
+    iget-object v0, p0, Lz3/i0;->i:Landroid/os/Bundle;
 
     const-string v1, "click_timestamp"
 
@@ -94,7 +94,7 @@
 
     .line 4
     :cond_2
-    iget-object v0, p0, Lz3/i0;->h:Landroid/os/Bundle;
+    iget-object v0, p0, Lz3/i0;->i:Landroid/os/Bundle;
 
     const-string v1, "_cis"
 
@@ -103,7 +103,7 @@
     invoke-virtual {v0, v1, v2}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 5
-    iget-object v0, p0, Lz3/i0;->i:Landroid/content/Context;
+    iget-object v0, p0, Lz3/i0;->j:Landroid/content/Context;
 
     const/4 v1, 0x0
 
@@ -113,24 +113,24 @@
     move-result-object v0
 
     .line 7
-    invoke-virtual {v0}, Lz3/p0;->l()Lz3/k1;
+    invoke-virtual {v0}, Lz3/p0;->l()Lz3/l1;
 
     move-result-object v0
 
-    iget-object v1, p0, Lz3/i0;->h:Landroid/os/Bundle;
+    iget-object v1, p0, Lz3/i0;->i:Landroid/os/Bundle;
 
     const-string v2, "auto"
 
     const-string v3, "_cmp"
 
     .line 8
-    invoke-virtual {v0, v2, v3, v1}, Lz3/k1;->l(Ljava/lang/String;Ljava/lang/String;Landroid/os/Bundle;)V
+    invoke-virtual {v0, v2, v3, v1}, Lz3/l1;->l(Ljava/lang/String;Ljava/lang/String;Landroid/os/Bundle;)V
 
     .line 9
-    iget-object v0, p0, Lz3/i0;->j:Lz3/o;
+    iget-object v0, p0, Lz3/i0;->k:Lz3/o;
 
     .line 10
-    iget-object v0, v0, Lz3/o;->n:Lz3/q;
+    iget-object v0, v0, Lz3/o;->t:Lz3/q;
 
     const-string v1, "Install campaign recorded"
 
@@ -138,7 +138,7 @@
     invoke-virtual {v0, v1}, Lz3/q;->a(Ljava/lang/String;)V
 
     .line 12
-    iget-object v0, p0, Lz3/i0;->k:Landroid/content/BroadcastReceiver$PendingResult;
+    iget-object v0, p0, Lz3/i0;->l:Landroid/content/BroadcastReceiver$PendingResult;
 
     if-eqz v0, :cond_3
 

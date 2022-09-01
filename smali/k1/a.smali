@@ -60,7 +60,7 @@
 
     move-result-object p1
 
-    invoke-interface {p2, p1}, Lk1/d;->b(Ljava/lang/String;)V
+    invoke-interface {p2, p1}, Lk1/d;->a(Ljava/lang/String;)V
 
     return-void
 .end method
@@ -92,7 +92,7 @@
 
     move-result-object p1
 
-    invoke-interface {p2, p1}, Lk1/d;->b(Ljava/lang/String;)V
+    invoke-interface {p2, p1}, Lk1/d;->a(Ljava/lang/String;)V
 
     return-void
 .end method
@@ -124,7 +124,7 @@
 
     move-result-object p1
 
-    invoke-interface {p2, p1}, Lk1/d;->b(Ljava/lang/String;)V
+    invoke-interface {p2, p1}, Lk1/d;->a(Ljava/lang/String;)V
 
     return-void
 .end method
@@ -156,7 +156,7 @@
 
     move-result-object p1
 
-    invoke-interface {p2, p1}, Lk1/d;->b(Ljava/lang/String;)V
+    invoke-interface {p2, p1}, Lk1/d;->a(Ljava/lang/String;)V
 
     return-void
 .end method
@@ -190,7 +190,7 @@
     move-result-object p1
 
     .line 2
-    invoke-interface {p2, p1}, Lk1/d;->b(Ljava/lang/String;)V
+    invoke-interface {p2, p1}, Lk1/d;->a(Ljava/lang/String;)V
 
     return-void
 .end method

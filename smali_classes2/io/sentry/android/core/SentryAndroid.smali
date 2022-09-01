@@ -216,7 +216,7 @@
     .locals 1
 
     .line 2
-    sget-object v0, Lio/sentry/android/core/m;->a:Lio/sentry/android/core/m;
+    sget-object v0, Lc6/e;->a:Lc6/e;
 
     invoke-static {p0, p1, v0}, Lio/sentry/android/core/SentryAndroid;->init(Landroid/content/Context;Lio/sentry/ILogger;Lio/sentry/Sentry$OptionsConfiguration;)V
 

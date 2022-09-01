@@ -1,5 +1,5 @@
 .class public final Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$a$g;
-.super Lse/h;
+.super Lse/i;
 .source "IngameFriendsFragment.kt"
 
 # interfaces
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$a;->o(Landroid/view/ViewGroup;I)Lae/c2$a;
+    value = Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$a;->o(Landroid/view/ViewGroup;I)Lae/b2$a;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,28 +18,28 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/l<",
         "Landroid/view/View;",
-        "Lie/h;",
+        "Lie/i;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic f:Lae/c2$a;
+.field public final synthetic g:Lae/b2$a;
 
 
 # direct methods
-.method public constructor <init>(Lae/c2$a;)V
+.method public constructor <init>(Lae/b2$a;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$a$g;->f:Lae/c2$a;
+    iput-object p1, p0, Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$a$g;->g:Lae/b2$a;
 
     const/4 p1, 0x1
 
-    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -55,13 +55,13 @@
     const-string v0, "it"
 
     .line 2
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 3
-    iget-object p1, p0, Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$a$g;->f:Lae/c2$a;
+    iget-object p1, p0, Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$a$g;->g:Lae/b2$a;
 
     .line 4
-    iget-object p1, p1, Lae/c2$a;->A:Landroid/view/View;
+    iget-object p1, p1, Lae/b2$a;->B:Landroid/view/View;
 
     .line 5
     sget v0, Lcom/supercell/id/R$id;->fbExclamationMark:I
@@ -74,12 +74,12 @@
 
     const-string v0, "containerView.fbExclamationMark"
 
-    invoke-static {p1, v0}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    iget-object v0, p0, Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$a$g;->f:Lae/c2$a;
+    iget-object v0, p0, Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$a$g;->g:Lae/b2$a;
 
     .line 6
-    iget-object v0, v0, Lae/c2$a;->A:Landroid/view/View;
+    iget-object v0, v0, Lae/b2$a;->B:Landroid/view/View;
 
     .line 7
     sget v1, Lcom/supercell/id/R$id;->fbIcon:I
@@ -92,7 +92,7 @@
 
     const-string v1, "containerView.fbIcon"
 
-    invoke-static {v0, v1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 8
     invoke-virtual {v0}, Landroid/view/View;->getWidth()I
@@ -147,7 +147,7 @@
 
     .line 14
     :goto_0
-    sget-object p1, Lie/h;->a:Lie/h;
+    sget-object p1, Lie/i;->a:Lie/i;
 
     return-object p1
 .end method

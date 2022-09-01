@@ -103,7 +103,7 @@
     move-result-object v4
 
     .line 15
-    invoke-static {v3}, Lcom/google/android/play/core/appupdate/g;->b(Ljava/lang/String;)Z
+    invoke-static {v3}, La5/b0;->d(Ljava/lang/String;)Z
 
     move-result v5
 
@@ -144,9 +144,9 @@
     invoke-virtual {v1, v2, v3}, Lv9/e;->d(Lf8/h;Ljava/lang/String;)V
 
     .line 19
-    check-cast v0, Lk3/fw;
+    check-cast v0, Lk3/dw;
 
-    invoke-virtual {v0, v2}, Lk3/fw;->b(Lf8/h;)Lf8/i;
+    invoke-virtual {v0, v2}, Lk3/dw;->b(Lf8/h;)Lf8/i;
 
     move-result-object v0
 
@@ -186,7 +186,7 @@
 
     .line 25
     :try_start_2
-    sget-object v1, Ld8/c;->f:Ld8/c;
+    sget-object v1, Ld8/c;->g:Ld8/c;
 
     const-string v2, "Exception while jsonifying string to array"
 
@@ -220,7 +220,7 @@
     .line 28
     iget-object v1, p0, Lv9/d;->b:Lcom/helpshift/util/h;
 
-    iget-object v0, v0, Lcom/helpshift/common/exception/RootAPIException;->h:Ld8/a;
+    iget-object v0, v0, Lcom/helpshift/common/exception/RootAPIException;->i:Ld8/a;
 
     invoke-interface {v1, v0}, Lcom/helpshift/util/h;->a(Ljava/lang/Object;)V
 

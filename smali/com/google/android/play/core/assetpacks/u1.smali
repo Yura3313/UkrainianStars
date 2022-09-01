@@ -1,164 +1,118 @@
 .class public final Lcom/google/android/play/core/assetpacks/u1;
 .super Ljava/lang/Object;
 
-# interfaces
-.implements La5/u0;
 
-
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ljava/lang/Object;",
-        "La5/u0<",
-        "Lcom/google/android/play/core/assetpacks/t1;",
-        ">;"
-    }
-.end annotation
+# static fields
+.field public static final c:La5/b;
 
 
 # instance fields
-.field public final f:La5/u0;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "La5/u0<",
-            "Lcom/google/android/play/core/assetpacks/z;",
-            ">;"
-        }
-    .end annotation
-.end field
+.field public final a:Landroid/content/Context;
 
-.field public final g:La5/u0;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "La5/u0<",
-            "Lcom/google/android/play/core/assetpacks/u2;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field public final h:La5/u0;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "La5/u0<",
-            "Lcom/google/android/play/core/assetpacks/d1;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field public final i:La5/u0;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "La5/u0<",
-            "Ljava/util/concurrent/Executor;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field public final j:La5/u0;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "La5/u0<",
-            "Lcom/google/android/play/core/assetpacks/s0;",
-            ">;"
-        }
-    .end annotation
-.end field
+.field public b:I
 
 
 # direct methods
-.method public constructor <init>(La5/u0;La5/u0;La5/u0;La5/u0;La5/u0;)V
-    .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "La5/u0<",
-            "Lcom/google/android/play/core/assetpacks/z;",
-            ">;",
-            "La5/u0<",
-            "Lcom/google/android/play/core/assetpacks/u2;",
-            ">;",
-            "La5/u0<",
-            "Lcom/google/android/play/core/assetpacks/d1;",
-            ">;",
-            "La5/u0<",
-            "Ljava/util/concurrent/Executor;",
-            ">;",
-            "La5/u0<",
-            "Lcom/google/android/play/core/assetpacks/s0;",
-            ">;)V"
-        }
-    .end annotation
+.method public static constructor <clinit>()V
+    .locals 2
+
+    new-instance v0, La5/b;
+
+    const-string v1, "PackageStateCache"
+
+    invoke-direct {v0, v1}, La5/b;-><init>(Ljava/lang/String;)V
+
+    sput-object v0, Lcom/google/android/play/core/assetpacks/u1;->c:La5/b;
+
+    return-void
+.end method
+
+.method public constructor <init>(Landroid/content/Context;)V
+    .locals 1
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lcom/google/android/play/core/assetpacks/u1;->f:La5/u0;
+    const/4 v0, -0x1
 
-    iput-object p2, p0, Lcom/google/android/play/core/assetpacks/u1;->g:La5/u0;
+    iput v0, p0, Lcom/google/android/play/core/assetpacks/u1;->b:I
 
-    iput-object p3, p0, Lcom/google/android/play/core/assetpacks/u1;->h:La5/u0;
-
-    iput-object p4, p0, Lcom/google/android/play/core/assetpacks/u1;->i:La5/u0;
-
-    iput-object p5, p0, Lcom/google/android/play/core/assetpacks/u1;->j:La5/u0;
+    iput-object p1, p0, Lcom/google/android/play/core/assetpacks/u1;->a:Landroid/content/Context;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final bridge synthetic e()Ljava/lang/Object;
-    .locals 9
+.method public final declared-synchronized a()I
+    .locals 4
 
-    iget-object v0, p0, Lcom/google/android/play/core/assetpacks/u1;->f:La5/u0;
+    monitor-enter p0
 
-    invoke-interface {v0}, La5/u0;->e()Ljava/lang/Object;
+    :try_start_0
+    iget v0, p0, Lcom/google/android/play/core/assetpacks/u1;->b:I
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    move-result-object v0
+    const/4 v1, -0x1
 
-    iget-object v1, p0, Lcom/google/android/play/core/assetpacks/u1;->g:La5/u0;
+    if-ne v0, v1, :cond_0
 
-    invoke-static {v1}, La5/t0;->b(La5/u0;)La5/r0;
+    const/4 v0, 0x0
 
-    move-result-object v4
+    :try_start_1
+    iget-object v1, p0, Lcom/google/android/play/core/assetpacks/u1;->a:Landroid/content/Context;
 
-    iget-object v1, p0, Lcom/google/android/play/core/assetpacks/u1;->h:La5/u0;
-
-    invoke-interface {v1}, La5/u0;->e()Ljava/lang/Object;
+    invoke-virtual {v1}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/google/android/play/core/assetpacks/u1;->i:La5/u0;
+    iget-object v2, p0, Lcom/google/android/play/core/assetpacks/u1;->a:Landroid/content/Context;
 
-    invoke-static {v2}, La5/t0;->b(La5/u0;)La5/r0;
-
-    move-result-object v6
-
-    iget-object v2, p0, Lcom/google/android/play/core/assetpacks/u1;->j:La5/u0;
-
-    invoke-interface {v2}, La5/u0;->e()Ljava/lang/Object;
+    invoke-virtual {v2}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object v2
 
-    new-instance v8, Lcom/google/android/play/core/assetpacks/t1;
+    invoke-virtual {v2, v1, v0}, Landroid/content/pm/PackageManager;->getPackageInfo(Ljava/lang/String;I)Landroid/content/pm/PackageInfo;
 
-    move-object v3, v0
+    move-result-object v1
 
-    check-cast v3, Lcom/google/android/play/core/assetpacks/z;
+    iget v1, v1, Landroid/content/pm/PackageInfo;->versionCode:I
 
-    move-object v5, v1
+    iput v1, p0, Lcom/google/android/play/core/assetpacks/u1;->b:I
+    :try_end_1
+    .catch Landroid/content/pm/PackageManager$NameNotFoundException; {:try_start_1 .. :try_end_1} :catch_0
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    check-cast v5, Lcom/google/android/play/core/assetpacks/d1;
+    goto :goto_0
 
-    move-object v7, v2
+    :catch_0
+    :try_start_2
+    sget-object v1, Lcom/google/android/play/core/assetpacks/u1;->c:La5/b;
 
-    check-cast v7, Lcom/google/android/play/core/assetpacks/s0;
+    const-string v2, "The current version of the app could not be retrieved"
 
-    move-object v2, v8
+    new-array v0, v0, [Ljava/lang/Object;
 
-    invoke-direct/range {v2 .. v7}, Lcom/google/android/play/core/assetpacks/t1;-><init>(Lcom/google/android/play/core/assetpacks/z;La5/r0;Lcom/google/android/play/core/assetpacks/d1;La5/r0;Lcom/google/android/play/core/assetpacks/s0;)V
+    const/4 v3, 0x6
 
-    return-object v8
+    .line 1
+    invoke-virtual {v1, v3, v2, v0}, La5/b;->a(ILjava/lang/String;[Ljava/lang/Object;)I
+
+    .line 2
+    :cond_0
+    :goto_0
+    iget v0, p0, Lcom/google/android/play/core/assetpacks/u1;->b:I
+    :try_end_2
+    .catchall {:try_start_2 .. :try_end_2} :catchall_0
+
+    monitor-exit p0
+
+    return v0
+
+    :catchall_0
+    move-exception v0
+
+    monitor-exit p0
+
+    throw v0
 .end method

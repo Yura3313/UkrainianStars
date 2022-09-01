@@ -54,14 +54,14 @@
             "Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment;",
             "Ljava/util/List<",
             "+",
-            "Lae/b2;",
+            "Lae/a2;",
             ">;)V"
         }
     .end annotation
 
     const-string v0, "fragment"
 
-    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     invoke-direct {p0, p2, p3}, Lae/s;-><init>(Landroidx/fragment/app/Fragment;Ljava/util/List;)V
@@ -80,9 +80,9 @@
 
     const-string p2, "context.resources"
 
-    invoke-static {p1, p2}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p2}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-static {p1}, Lcom/android/billingclient/api/c0;->k(Landroid/content/res/Resources;)Z
+    invoke-static {p1}, Lcom/android/billingclient/api/b0;->l(Landroid/content/res/Resources;)Z
 
     .line 4
     new-instance p1, Lae/x2;
@@ -103,18 +103,18 @@
 .method public final bridge synthetic i(Landroid/view/ViewGroup;I)Landroidx/recyclerview/widget/RecyclerView$z;
     .locals 0
 
-    invoke-virtual {p0, p1, p2}, Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$a;->o(Landroid/view/ViewGroup;I)Lae/c2$a;
+    invoke-virtual {p0, p1, p2}, Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$a;->o(Landroid/view/ViewGroup;I)Lae/b2$a;
 
     move-result-object p1
 
     return-object p1
 .end method
 
-.method public final n(Lae/c2$a;ILae/b2;)V
+.method public final n(Lae/b2$a;ILae/a2;)V
     .locals 11
 
     .line 1
-    iget-object v0, p1, Lae/c2$a;->A:Landroid/view/View;
+    iget-object v0, p1, Lae/b2$a;->B:Landroid/view/View;
 
     .line 2
     instance-of v1, p3, Lld/c;
@@ -141,7 +141,7 @@
     check-cast v7, Landroid/widget/LinearLayout;
 
     .line 4
-    iget-object v8, p0, Lae/c2;->d:Ljava/util/List;
+    iget-object v8, p0, Lae/b2;->d:Ljava/util/List;
 
     .line 5
     invoke-static {v8, p2}, Lae/y1;->d(Ljava/util/List;I)Z
@@ -149,14 +149,14 @@
     move-result v8
 
     .line 6
-    iget-object v9, p0, Lae/c2;->d:Ljava/util/List;
+    iget-object v9, p0, Lae/b2;->d:Ljava/util/List;
 
     .line 7
     invoke-static {v9, p2}, Lae/y1;->c(Ljava/util/List;I)Z
 
     move-result p2
 
-    invoke-static {v7, v8, p2, v3, v3}, Lt2/f;->b(Landroid/view/View;ZZII)V
+    invoke-static {v7, v8, p2, v3, v3}, Lr3/r4;->d(Landroid/view/View;ZZII)V
 
     .line 8
     move-object p2, p3
@@ -164,10 +164,10 @@
     check-cast p2, Lld/c;
 
     .line 9
-    iget-object v7, p2, Lld/c;->j:Lvc/u;
+    iget-object v7, p2, Lld/c;->j:Lvc/t;
 
     .line 10
-    iget-object v8, v7, Lvc/u;->a:Lcom/supercell/id/model/IdSocialAccount;
+    iget-object v8, v7, Lvc/t;->a:Lcom/supercell/id/model/IdSocialAccount;
 
     .line 11
     invoke-virtual {v8}, Lcom/supercell/id/model/IdSocialAccount;->d()Ljava/lang/String;
@@ -187,13 +187,13 @@
 
     check-cast v8, Lcom/google/android/material/imageview/ShapeableImageView;
 
-    invoke-static {v8, v9}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v8, v9}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 13
-    iget-object v9, v7, Lvc/u;->c:Lcom/supercell/id/model/ProfileImage;
+    iget-object v9, v7, Lvc/t;->c:Lcom/supercell/id/model/ProfileImage;
 
     .line 14
-    invoke-static {v8, v9}, Lud/f0;->g(Landroid/widget/ImageView;Lcom/supercell/id/model/ProfileImage;)V
+    invoke-static {v8, v9}, Lud/d0;->g(Landroid/widget/ImageView;Lcom/supercell/id/model/ProfileImage;)V
 
     goto :goto_0
 
@@ -207,13 +207,13 @@
 
     check-cast v8, Lcom/google/android/material/imageview/ShapeableImageView;
 
-    invoke-static {v8, v9}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v8, v9}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 16
     iget-object v9, p2, Lld/c;->h:Ljava/lang/String;
 
     .line 17
-    invoke-static {v8, v9}, Lud/f0;->p(Lcom/google/android/material/imageview/ShapeableImageView;Ljava/lang/String;)V
+    invoke-static {v8, v9}, Lud/d0;->p(Lcom/google/android/material/imageview/ShapeableImageView;Ljava/lang/String;)V
 
     .line 18
     :goto_0
@@ -227,7 +227,7 @@
 
     const-string v10, "containerView.friendNameLabel"
 
-    invoke-static {v9, v10}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v9, v10}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 19
     iget-object v10, p2, Lld/c;->b:Ljava/lang/String;
@@ -238,10 +238,10 @@
 
     .line 20
     :cond_1
-    iget-object v10, p2, Lld/c;->j:Lvc/u;
+    iget-object v10, p2, Lld/c;->j:Lvc/t;
 
     .line 21
-    iget-object v10, v10, Lvc/u;->a:Lcom/supercell/id/model/IdSocialAccount;
+    iget-object v10, v10, Lvc/t;->a:Lcom/supercell/id/model/IdSocialAccount;
 
     .line 22
     invoke-virtual {v10}, Lcom/supercell/id/model/IdSocialAccount;->d()Ljava/lang/String;
@@ -250,7 +250,7 @@
 
     if-eqz v10, :cond_2
 
-    invoke-static {v10}, Lae/t;->a(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v10}, Lae/t;->g(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v6
 
@@ -350,7 +350,7 @@
 
     new-instance v10, Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$a$b;
 
-    invoke-direct {v10, v6, p3, v0}, Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$a$b;-><init>(Ljava/lang/ref/WeakReference;Lae/b2;Landroid/view/View;)V
+    invoke-direct {v10, v6, p3, v0}, Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$a$b;-><init>(Ljava/lang/ref/WeakReference;Lae/a2;Landroid/view/View;)V
 
     invoke-virtual {p1, v9, v10}, Lae/x2;->a(Ljava/lang/String;Lre/l;)V
 
@@ -363,7 +363,7 @@
 
     check-cast v6, Landroid/widget/TextView;
 
-    invoke-static {v6, v8}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v6, v8}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 36
     iget-object v9, p2, Lld/c;->c:Ljava/lang/String;
@@ -378,7 +378,7 @@
 
     check-cast p1, Landroid/widget/TextView;
 
-    invoke-static {p1, v8}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v8}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {p1, v3}, Landroid/view/View;->setVisibility(I)V
 
@@ -394,7 +394,7 @@
 
     check-cast p1, Landroid/widget/TextView;
 
-    invoke-static {p1, v8}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v8}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {p1, v2}, Landroid/view/View;->setVisibility(I)V
 
@@ -410,7 +410,7 @@
 
     const-string v6, "containerView.addButton"
 
-    invoke-static {v3, v6}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v3, v6}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v3, v4}, Landroid/view/View;->setEnabled(Z)V
 
@@ -421,10 +421,10 @@
 
     check-cast v3, Landroid/widget/Button;
 
-    invoke-static {v3, v6}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v3, v6}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 42
-    iget-object v4, v7, Lvc/u;->d:Lcom/supercell/id/model/IdRelationshipStatus;
+    iget-object v4, v7, Lvc/t;->d:Lcom/supercell/id/model/IdRelationshipStatus;
 
     .line 43
     instance-of v4, v4, Lcom/supercell/id/model/IdRelationshipStatus$Acquaintance$RequestReceived;
@@ -432,7 +432,7 @@
     if-nez v4, :cond_7
 
     .line 44
-    iget-boolean v4, v7, Lvc/u;->e:Z
+    iget-boolean v4, v7, Lvc/t;->e:Z
 
     if-nez v4, :cond_6
 
@@ -460,7 +460,7 @@
 
     new-instance v3, Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$a$c;
 
-    invoke-direct {v3, p0, p3}, Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$a$c;-><init>(Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$a;Lae/b2;)V
+    invoke-direct {v3, p0, p3}, Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$a$c;-><init>(Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$a;Lae/a2;)V
 
     invoke-virtual {p1, v3}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -473,7 +473,7 @@
 
     new-instance v1, Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$a$d;
 
-    invoke-direct {v1, p0, p3, v7}, Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$a$d;-><init>(Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$a;Lae/b2;Lvc/u;)V
+    invoke-direct {v1, p0, p3, v7}, Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$a$d;-><init>(Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$a;Lae/a2;Lvc/t;)V
 
     invoke-virtual {p1, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -486,15 +486,15 @@
 
     check-cast p1, Landroid/widget/ImageView;
 
-    sget-object p3, Luc/p;->k:Luc/p$c;
+    sget-object p3, Luc/o;->k:Luc/o$c;
 
     invoke-virtual {v0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object v1
 
-    invoke-static {v1, v5}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, v5}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-virtual {p3, v1}, Luc/p$c;->n(Landroid/content/Context;)Luc/p;
+    invoke-virtual {p3, v1}, Luc/o$c;->n(Landroid/content/Context;)Luc/o;
 
     move-result-object p3
 
@@ -511,7 +511,7 @@
 
     const-string p3, "containerView.friendFbIconContainer"
 
-    invoke-static {p1, p3}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p3}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 50
     iget-boolean p3, p2, Lld/c;->i:Z
@@ -554,7 +554,7 @@
 
     const-string p3, "containerView.newFriendIndicator"
 
-    invoke-static {p1, p3}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p3}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 53
     iget-boolean p2, p2, Lld/c;->k:Z
@@ -653,7 +653,7 @@
     const-string p1, "account_ingame_friend_add_all_title"
 
     .line 64
-    invoke-static {p2, p1, p3, v6}, Lud/f0;->k(Landroid/widget/TextView;Ljava/lang/String;[Lie/d;Lre/l;)V
+    invoke-static {p2, p1, p3, v6}, Lud/d0;->k(Landroid/widget/TextView;Ljava/lang/String;[Lie/d;Lre/l;)V
 
     goto/16 :goto_a
 
@@ -711,7 +711,7 @@
 
     .line 69
     :goto_9
-    invoke-static {p1, p2, v6}, Lud/f0;->j(Landroid/widget/TextView;Ljava/lang/String;Lre/p;)V
+    invoke-static {p1, p2, v6}, Lud/d0;->j(Landroid/widget/TextView;Ljava/lang/String;Lre/p;)V
 
     goto :goto_a
 
@@ -719,7 +719,7 @@
     :cond_11
     sget-object p1, Lld/b;->b:Lld/b;
 
-    invoke-static {p3, p1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {p3, p1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -734,15 +734,15 @@
 
     check-cast p1, Landroid/widget/ImageView;
 
-    sget-object p2, Luc/p;->k:Luc/p$c;
+    sget-object p2, Luc/o;->k:Luc/o$c;
 
     invoke-virtual {v0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object p3
 
-    invoke-static {p3, v5}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p3, v5}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-virtual {p2, p3}, Luc/p$c;->n(Landroid/content/Context;)Luc/p;
+    invoke-virtual {p2, p3}, Luc/o$c;->n(Landroid/content/Context;)Luc/o;
 
     move-result-object p2
 
@@ -759,7 +759,7 @@
 
     const-string p2, "containerView.messageTextView"
 
-    invoke-static {p1, p2}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p2}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     new-instance p2, Ljava/lang/StringBuilder;
 
@@ -789,7 +789,7 @@
 
     move-result-object p2
 
-    invoke-static {p1, p2}, Lud/f0;->l(Landroid/widget/TextView;Ljava/lang/String;)V
+    invoke-static {p1, p2}, Lud/d0;->l(Landroid/widget/TextView;Ljava/lang/String;)V
 
     goto :goto_a
 
@@ -841,20 +841,20 @@
     return-void
 .end method
 
-.method public final o(Landroid/view/ViewGroup;I)Lae/c2$a;
+.method public final o(Landroid/view/ViewGroup;I)Lae/b2$a;
     .locals 2
 
     const-string v0, "parent"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
-    invoke-super {p0, p1, p2}, Lae/c2;->o(Landroid/view/ViewGroup;I)Lae/c2$a;
+    invoke-super {p0, p1, p2}, Lae/b2;->o(Landroid/view/ViewGroup;I)Lae/b2$a;
 
     move-result-object p1
 
     .line 2
-    iget-object p2, p1, Lae/c2$a;->A:Landroid/view/View;
+    iget-object p2, p1, Lae/b2$a;->B:Landroid/view/View;
 
     .line 3
     sget v0, Lcom/supercell/id/R$id;->newFriendIndicator:I
@@ -868,7 +868,7 @@
     if-eqz p2, :cond_0
 
     .line 4
-    iget-object p2, p1, Lae/c2$a;->A:Landroid/view/View;
+    iget-object p2, p1, Lae/b2$a;->B:Landroid/view/View;
 
     .line 5
     sget v0, Lcom/supercell/id/R$id;->friendImageView:I
@@ -882,18 +882,18 @@
     if-eqz p2, :cond_0
 
     .line 6
-    iget-object p2, p1, Lae/c2$a;->A:Landroid/view/View;
+    iget-object p2, p1, Lae/b2$a;->B:Landroid/view/View;
 
     .line 7
     new-instance v0, Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$a$f;
 
-    invoke-direct {v0, p1}, Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$a$f;-><init>(Lae/c2$a;)V
+    invoke-direct {v0, p1}, Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$a$f;-><init>(Lae/b2$a;)V
 
     invoke-static {p2, v0}, Lae/z2;->a(Landroid/view/View;Lre/l;)V
 
     .line 8
     :cond_0
-    iget-object p2, p1, Lae/c2$a;->A:Landroid/view/View;
+    iget-object p2, p1, Lae/b2$a;->B:Landroid/view/View;
 
     .line 9
     sget v0, Lcom/supercell/id/R$id;->fbExclamationMark:I
@@ -907,7 +907,7 @@
     if-eqz p2, :cond_1
 
     .line 10
-    iget-object p2, p1, Lae/c2$a;->A:Landroid/view/View;
+    iget-object p2, p1, Lae/b2$a;->B:Landroid/view/View;
 
     .line 11
     sget v0, Lcom/supercell/id/R$id;->fbIcon:I
@@ -921,18 +921,18 @@
     if-eqz p2, :cond_1
 
     .line 12
-    iget-object p2, p1, Lae/c2$a;->A:Landroid/view/View;
+    iget-object p2, p1, Lae/b2$a;->B:Landroid/view/View;
 
     .line 13
     new-instance v0, Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$a$g;
 
-    invoke-direct {v0, p1}, Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$a$g;-><init>(Lae/c2$a;)V
+    invoke-direct {v0, p1}, Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$a$g;-><init>(Lae/b2$a;)V
 
     invoke-static {p2, v0}, Lae/z2;->a(Landroid/view/View;Lre/l;)V
 
     .line 14
     :cond_1
-    iget-object p2, p1, Lae/c2$a;->A:Landroid/view/View;
+    iget-object p2, p1, Lae/b2$a;->B:Landroid/view/View;
 
     .line 15
     sget v0, Lcom/supercell/id/R$id;->friendFbIconContainer:I
@@ -946,7 +946,7 @@
     if-eqz p2, :cond_2
 
     .line 16
-    iget-object p2, p1, Lae/c2$a;->A:Landroid/view/View;
+    iget-object p2, p1, Lae/b2$a;->B:Landroid/view/View;
 
     .line 17
     sget v1, Lcom/supercell/id/R$id;->friendFbExclamationMark:I
@@ -960,7 +960,7 @@
     if-eqz p2, :cond_2
 
     .line 18
-    iget-object p2, p1, Lae/c2$a;->A:Landroid/view/View;
+    iget-object p2, p1, Lae/b2$a;->B:Landroid/view/View;
 
     .line 19
     sget v1, Lcom/supercell/id/R$id;->friendFbIcon:I
@@ -974,7 +974,7 @@
     if-eqz p2, :cond_2
 
     .line 20
-    iget-object p2, p1, Lae/c2$a;->A:Landroid/view/View;
+    iget-object p2, p1, Lae/b2$a;->B:Landroid/view/View;
 
     .line 21
     invoke-virtual {p2, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -985,7 +985,7 @@
 
     new-instance v0, Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$a$h;
 
-    invoke-direct {v0, p1}, Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$a$h;-><init>(Lae/c2$a;)V
+    invoke-direct {v0, p1}, Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$a$h;-><init>(Lae/b2$a;)V
 
     invoke-virtual {p2, v0}, Landroid/view/View;->addOnLayoutChangeListener(Landroid/view/View$OnLayoutChangeListener;)V
 

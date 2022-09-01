@@ -61,7 +61,7 @@
 
     .line 4
     :goto_0
-    iget-object v1, p1, Lcom/google/android/material/appbar/AppBarLayout;->l:Lf0/a0;
+    iget-object v1, p1, Lcom/google/android/material/appbar/AppBarLayout;->m:Lf0/a0;
 
     invoke-static {v1, v0}, Le0/b;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
@@ -70,10 +70,10 @@
     if-nez v1, :cond_2
 
     .line 5
-    iput-object v0, p1, Lcom/google/android/material/appbar/AppBarLayout;->l:Lf0/a0;
+    iput-object v0, p1, Lcom/google/android/material/appbar/AppBarLayout;->m:Lf0/a0;
 
     .line 6
-    iget-object v0, p1, Lcom/google/android/material/appbar/AppBarLayout;->u:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p1, Lcom/google/android/material/appbar/AppBarLayout;->v:Landroid/graphics/drawable/Drawable;
 
     const/4 v1, 0x1
 

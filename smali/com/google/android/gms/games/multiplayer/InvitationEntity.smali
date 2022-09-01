@@ -31,17 +31,17 @@
 
 
 # instance fields
-.field public final h:Lcom/google/android/gms/games/GameEntity;
+.field public final i:Lcom/google/android/gms/games/GameEntity;
 
-.field public final i:Ljava/lang/String;
+.field public final j:Ljava/lang/String;
 
-.field public final j:J
+.field public final k:J
 
-.field public final k:I
+.field public final l:I
 
-.field public final l:Lcom/google/android/gms/games/multiplayer/ParticipantEntity;
+.field public final m:Lcom/google/android/gms/games/multiplayer/ParticipantEntity;
 
-.field public final m:Ljava/util/ArrayList;
+.field public final n:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/ArrayList<",
@@ -51,9 +51,9 @@
     .end annotation
 .end field
 
-.field public final n:I
-
 .field public final o:I
+
+.field public final p:I
 
 
 # direct methods
@@ -88,28 +88,28 @@
     invoke-direct {p0}, Lcom/google/android/gms/games/internal/GamesDowngradeableSafeParcel;-><init>()V
 
     .line 17
-    iput-object p1, p0, Lcom/google/android/gms/games/multiplayer/InvitationEntity;->h:Lcom/google/android/gms/games/GameEntity;
+    iput-object p1, p0, Lcom/google/android/gms/games/multiplayer/InvitationEntity;->i:Lcom/google/android/gms/games/GameEntity;
 
     .line 18
-    iput-object p2, p0, Lcom/google/android/gms/games/multiplayer/InvitationEntity;->i:Ljava/lang/String;
+    iput-object p2, p0, Lcom/google/android/gms/games/multiplayer/InvitationEntity;->j:Ljava/lang/String;
 
     .line 19
-    iput-wide p3, p0, Lcom/google/android/gms/games/multiplayer/InvitationEntity;->j:J
+    iput-wide p3, p0, Lcom/google/android/gms/games/multiplayer/InvitationEntity;->k:J
 
     .line 20
-    iput p5, p0, Lcom/google/android/gms/games/multiplayer/InvitationEntity;->k:I
+    iput p5, p0, Lcom/google/android/gms/games/multiplayer/InvitationEntity;->l:I
 
     .line 21
-    iput-object p6, p0, Lcom/google/android/gms/games/multiplayer/InvitationEntity;->l:Lcom/google/android/gms/games/multiplayer/ParticipantEntity;
+    iput-object p6, p0, Lcom/google/android/gms/games/multiplayer/InvitationEntity;->m:Lcom/google/android/gms/games/multiplayer/ParticipantEntity;
 
     .line 22
-    iput-object p7, p0, Lcom/google/android/gms/games/multiplayer/InvitationEntity;->m:Ljava/util/ArrayList;
+    iput-object p7, p0, Lcom/google/android/gms/games/multiplayer/InvitationEntity;->n:Ljava/util/ArrayList;
 
     .line 23
-    iput p8, p0, Lcom/google/android/gms/games/multiplayer/InvitationEntity;->n:I
+    iput p8, p0, Lcom/google/android/gms/games/multiplayer/InvitationEntity;->o:I
 
     .line 24
-    iput p9, p0, Lcom/google/android/gms/games/multiplayer/InvitationEntity;->o:I
+    iput p9, p0, Lcom/google/android/gms/games/multiplayer/InvitationEntity;->p:I
 
     return-void
 .end method
@@ -118,7 +118,7 @@
     .locals 5
 
     .line 1
-    invoke-interface {p1}, Ld3/a;->S1()Ljava/util/ArrayList;
+    invoke-interface {p1}, Ld3/a;->R1()Ljava/util/ArrayList;
 
     move-result-object v0
 
@@ -138,42 +138,42 @@
 
     invoke-direct {v1, v2}, Lcom/google/android/gms/games/GameEntity;-><init>(Lcom/google/android/gms/games/Game;)V
 
-    iput-object v1, p0, Lcom/google/android/gms/games/multiplayer/InvitationEntity;->h:Lcom/google/android/gms/games/GameEntity;
+    iput-object v1, p0, Lcom/google/android/gms/games/multiplayer/InvitationEntity;->i:Lcom/google/android/gms/games/GameEntity;
 
     .line 4
     invoke-interface {p1}, Lcom/google/android/gms/games/multiplayer/Invitation;->m2()Ljava/lang/String;
 
     move-result-object v1
 
-    iput-object v1, p0, Lcom/google/android/gms/games/multiplayer/InvitationEntity;->i:Ljava/lang/String;
+    iput-object v1, p0, Lcom/google/android/gms/games/multiplayer/InvitationEntity;->j:Ljava/lang/String;
 
     .line 5
     invoke-interface {p1}, Lcom/google/android/gms/games/multiplayer/Invitation;->f()J
 
     move-result-wide v1
 
-    iput-wide v1, p0, Lcom/google/android/gms/games/multiplayer/InvitationEntity;->j:J
+    iput-wide v1, p0, Lcom/google/android/gms/games/multiplayer/InvitationEntity;->k:J
 
     .line 6
     invoke-interface {p1}, Lcom/google/android/gms/games/multiplayer/Invitation;->q0()I
 
     move-result v1
 
-    iput v1, p0, Lcom/google/android/gms/games/multiplayer/InvitationEntity;->k:I
+    iput v1, p0, Lcom/google/android/gms/games/multiplayer/InvitationEntity;->l:I
 
     .line 7
     invoke-interface {p1}, Lcom/google/android/gms/games/multiplayer/Invitation;->g()I
 
     move-result v1
 
-    iput v1, p0, Lcom/google/android/gms/games/multiplayer/InvitationEntity;->n:I
+    iput v1, p0, Lcom/google/android/gms/games/multiplayer/InvitationEntity;->o:I
 
     .line 8
     invoke-interface {p1}, Lcom/google/android/gms/games/multiplayer/Invitation;->z()I
 
     move-result v1
 
-    iput v1, p0, Lcom/google/android/gms/games/multiplayer/InvitationEntity;->o:I
+    iput v1, p0, Lcom/google/android/gms/games/multiplayer/InvitationEntity;->p:I
 
     .line 9
     invoke-interface {p1}, Lcom/google/android/gms/games/multiplayer/Invitation;->C0()Lcom/google/android/gms/games/multiplayer/Participant;
@@ -185,7 +185,7 @@
     move-result-object p1
 
     .line 10
-    iput-object v0, p0, Lcom/google/android/gms/games/multiplayer/InvitationEntity;->m:Ljava/util/ArrayList;
+    iput-object v0, p0, Lcom/google/android/gms/games/multiplayer/InvitationEntity;->n:Ljava/util/ArrayList;
 
     .line 11
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
@@ -206,7 +206,7 @@
     check-cast v3, Lcom/google/android/gms/games/multiplayer/ParticipantEntity;
 
     .line 12
-    iget-object v4, v3, Lcom/google/android/gms/games/multiplayer/ParticipantEntity;->h:Ljava/lang/String;
+    iget-object v4, v3, Lcom/google/android/gms/games/multiplayer/ParticipantEntity;->i:Ljava/lang/String;
 
     .line 13
     invoke-virtual {v4, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -227,7 +227,7 @@
     invoke-static {v3, p1}, Ld2/h;->i(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 15
-    iput-object v3, p0, Lcom/google/android/gms/games/multiplayer/InvitationEntity;->l:Lcom/google/android/gms/games/multiplayer/ParticipantEntity;
+    iput-object v3, p0, Lcom/google/android/gms/games/multiplayer/InvitationEntity;->m:Lcom/google/android/gms/games/multiplayer/ParticipantEntity;
 
     return-void
 .end method
@@ -293,7 +293,7 @@
     aput-object v1, v0, v2
 
     .line 6
-    invoke-interface {p0}, Ld3/a;->S1()Ljava/util/ArrayList;
+    invoke-interface {p0}, Ld3/a;->R1()Ljava/util/ArrayList;
 
     move-result-object v1
 
@@ -450,11 +450,11 @@
     if-eqz v2, :cond_2
 
     .line 8
-    invoke-interface {p1}, Ld3/a;->S1()Ljava/util/ArrayList;
+    invoke-interface {p1}, Ld3/a;->R1()Ljava/util/ArrayList;
 
     move-result-object v2
 
-    invoke-interface {p0}, Ld3/a;->S1()Ljava/util/ArrayList;
+    invoke-interface {p0}, Ld3/a;->R1()Ljava/util/ArrayList;
 
     move-result-object v3
 
@@ -579,7 +579,7 @@
     invoke-virtual {v0, v2, v1}, Ld2/f$a;->a(Ljava/lang/String;Ljava/lang/Object;)Ld2/f$a;
 
     .line 7
-    invoke-interface {p0}, Ld3/a;->S1()Ljava/util/ArrayList;
+    invoke-interface {p0}, Ld3/a;->R1()Ljava/util/ArrayList;
 
     move-result-object v1
 
@@ -626,12 +626,12 @@
 .method public final C0()Lcom/google/android/gms/games/multiplayer/Participant;
     .locals 1
 
-    iget-object v0, p0, Lcom/google/android/gms/games/multiplayer/InvitationEntity;->l:Lcom/google/android/gms/games/multiplayer/ParticipantEntity;
+    iget-object v0, p0, Lcom/google/android/gms/games/multiplayer/InvitationEntity;->m:Lcom/google/android/gms/games/multiplayer/ParticipantEntity;
 
     return-object v0
 .end method
 
-.method public final S1()Ljava/util/ArrayList;
+.method public final R1()Ljava/util/ArrayList;
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -644,7 +644,7 @@
 
     new-instance v0, Ljava/util/ArrayList;
 
-    iget-object v1, p0, Lcom/google/android/gms/games/multiplayer/InvitationEntity;->m:Ljava/util/ArrayList;
+    iget-object v1, p0, Lcom/google/android/gms/games/multiplayer/InvitationEntity;->n:Ljava/util/ArrayList;
 
     invoke-direct {v0, v1}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
 
@@ -654,7 +654,7 @@
 .method public final e()Lcom/google/android/gms/games/Game;
     .locals 1
 
-    iget-object v0, p0, Lcom/google/android/gms/games/multiplayer/InvitationEntity;->h:Lcom/google/android/gms/games/GameEntity;
+    iget-object v0, p0, Lcom/google/android/gms/games/multiplayer/InvitationEntity;->i:Lcom/google/android/gms/games/GameEntity;
 
     return-object v0
 .end method
@@ -672,7 +672,7 @@
 .method public final f()J
     .locals 2
 
-    iget-wide v0, p0, Lcom/google/android/gms/games/multiplayer/InvitationEntity;->j:J
+    iget-wide v0, p0, Lcom/google/android/gms/games/multiplayer/InvitationEntity;->k:J
 
     return-wide v0
 .end method
@@ -680,7 +680,7 @@
 .method public final g()I
     .locals 1
 
-    iget v0, p0, Lcom/google/android/gms/games/multiplayer/InvitationEntity;->n:I
+    iget v0, p0, Lcom/google/android/gms/games/multiplayer/InvitationEntity;->o:I
 
     return v0
 .end method
@@ -698,7 +698,7 @@
 .method public final m2()Ljava/lang/String;
     .locals 1
 
-    iget-object v0, p0, Lcom/google/android/gms/games/multiplayer/InvitationEntity;->i:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/android/gms/games/multiplayer/InvitationEntity;->j:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -706,7 +706,7 @@
 .method public final q0()I
     .locals 1
 
-    iget v0, p0, Lcom/google/android/gms/games/multiplayer/InvitationEntity;->k:I
+    iget v0, p0, Lcom/google/android/gms/games/multiplayer/InvitationEntity;->l:I
 
     return v0
 .end method
@@ -734,7 +734,7 @@
     const/4 v0, 0x1
 
     .line 2
-    iget-object v1, p0, Lcom/google/android/gms/games/multiplayer/InvitationEntity;->h:Lcom/google/android/gms/games/GameEntity;
+    iget-object v1, p0, Lcom/google/android/gms/games/multiplayer/InvitationEntity;->i:Lcom/google/android/gms/games/GameEntity;
 
     const/4 v2, 0x0
 
@@ -744,7 +744,7 @@
     const/4 v0, 0x2
 
     .line 4
-    iget-object v1, p0, Lcom/google/android/gms/games/multiplayer/InvitationEntity;->i:Ljava/lang/String;
+    iget-object v1, p0, Lcom/google/android/gms/games/multiplayer/InvitationEntity;->j:Ljava/lang/String;
 
     .line 5
     invoke-static {p1, v0, v1, v2}, Le2/b;->m(Landroid/os/Parcel;ILjava/lang/String;Z)V
@@ -752,7 +752,7 @@
     const/4 v0, 0x3
 
     .line 6
-    iget-wide v3, p0, Lcom/google/android/gms/games/multiplayer/InvitationEntity;->j:J
+    iget-wide v3, p0, Lcom/google/android/gms/games/multiplayer/InvitationEntity;->k:J
 
     const/16 v5, 0x8
 
@@ -763,7 +763,7 @@
     invoke-virtual {p1, v3, v4}, Landroid/os/Parcel;->writeLong(J)V
 
     .line 9
-    iget v0, p0, Lcom/google/android/gms/games/multiplayer/InvitationEntity;->k:I
+    iget v0, p0, Lcom/google/android/gms/games/multiplayer/InvitationEntity;->l:I
 
     const/4 v3, 0x4
 
@@ -776,7 +776,7 @@
     const/4 v0, 0x5
 
     .line 12
-    iget-object v1, p0, Lcom/google/android/gms/games/multiplayer/InvitationEntity;->l:Lcom/google/android/gms/games/multiplayer/ParticipantEntity;
+    iget-object v1, p0, Lcom/google/android/gms/games/multiplayer/InvitationEntity;->m:Lcom/google/android/gms/games/multiplayer/ParticipantEntity;
 
     .line 13
     invoke-static {p1, v0, v1, p2, v2}, Le2/b;->l(Landroid/os/Parcel;ILandroid/os/Parcelable;IZ)V
@@ -784,7 +784,7 @@
     const/4 p2, 0x6
 
     .line 14
-    invoke-virtual {p0}, Lcom/google/android/gms/games/multiplayer/InvitationEntity;->S1()Ljava/util/ArrayList;
+    invoke-virtual {p0}, Lcom/google/android/gms/games/multiplayer/InvitationEntity;->R1()Ljava/util/ArrayList;
 
     move-result-object v0
 
@@ -794,7 +794,7 @@
     const/4 p2, 0x7
 
     .line 16
-    iget v0, p0, Lcom/google/android/gms/games/multiplayer/InvitationEntity;->n:I
+    iget v0, p0, Lcom/google/android/gms/games/multiplayer/InvitationEntity;->o:I
 
     .line 17
     invoke-static {p1, p2, v3}, Le2/b;->s(Landroid/os/Parcel;II)V
@@ -803,7 +803,7 @@
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 19
-    iget v4, p0, Lcom/google/android/gms/games/multiplayer/InvitationEntity;->o:I
+    iget v4, p0, Lcom/google/android/gms/games/multiplayer/InvitationEntity;->p:I
 
     move-object v1, p1
 
@@ -820,7 +820,7 @@
 .method public final z()I
     .locals 1
 
-    iget v0, p0, Lcom/google/android/gms/games/multiplayer/InvitationEntity;->o:I
+    iget v0, p0, Lcom/google/android/gms/games/multiplayer/InvitationEntity;->p:I
 
     return v0
 .end method

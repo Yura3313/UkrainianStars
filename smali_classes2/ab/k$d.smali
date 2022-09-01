@@ -18,15 +18,15 @@
 
 
 # instance fields
-.field public f:Ljava/lang/String;
+.field public g:Ljava/lang/String;
 
-.field public g:Z
+.field public h:Z
 
-.field public h:Ljava/lang/String;
+.field public i:Ljava/lang/String;
 
-.field public i:Landroid/os/Handler;
+.field public j:Landroid/os/Handler;
 
-.field public final synthetic j:Lab/k;
+.field public final synthetic k:Lab/k;
 
 
 # direct methods
@@ -34,21 +34,21 @@
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lab/k$d;->j:Lab/k;
+    iput-object p1, p0, Lab/k$d;->k:Lab/k;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object p2, p0, Lab/k$d;->f:Ljava/lang/String;
+    iput-object p2, p0, Lab/k$d;->g:Ljava/lang/String;
 
     .line 3
-    iput-boolean p3, p0, Lab/k$d;->g:Z
+    iput-boolean p3, p0, Lab/k$d;->h:Z
 
     .line 4
-    iput-object p4, p0, Lab/k$d;->h:Ljava/lang/String;
+    iput-object p4, p0, Lab/k$d;->i:Ljava/lang/String;
 
     .line 5
-    iput-object p5, p0, Lab/k$d;->i:Landroid/os/Handler;
+    iput-object p5, p0, Lab/k$d;->j:Landroid/os/Handler;
 
     return-void
 .end method
@@ -59,7 +59,7 @@
     .locals 5
 
     .line 1
-    iget-object v0, p0, Lab/k$d;->f:Ljava/lang/String;
+    iget-object v0, p0, Lab/k$d;->g:Ljava/lang/String;
 
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -67,7 +67,7 @@
 
     if-nez v0, :cond_1
 
-    iget-object v0, p0, Lab/k$d;->f:Ljava/lang/String;
+    iget-object v0, p0, Lab/k$d;->g:Ljava/lang/String;
 
     .line 2
     invoke-virtual {v0}, Ljava/lang/String;->length()I
@@ -78,7 +78,7 @@
 
     if-ge v0, v1, :cond_0
 
-    iget-boolean v0, p0, Lab/k$d;->g:Z
+    iget-boolean v0, p0, Lab/k$d;->h:Z
 
     if-nez v0, :cond_0
 
@@ -86,15 +86,15 @@
 
     .line 3
     :cond_0
-    iget-object v0, p0, Lab/k$d;->j:Lab/k;
+    iget-object v0, p0, Lab/k$d;->k:Lab/k;
 
-    iget-object v1, v0, Lab/k;->g0:Lla/e;
+    iget-object v1, v0, Lab/k;->h0:Lla/e;
 
-    iget-object v2, p0, Lab/k$d;->f:Ljava/lang/String;
+    iget-object v2, p0, Lab/k$d;->g:Ljava/lang/String;
 
     const/4 v3, 0x1
 
-    iget-object v0, v0, Lab/k;->h0:Lla/d;
+    iget-object v0, v0, Lab/k;->i0:Lla/d;
 
     invoke-virtual {v1, v2, v3, v0}, Lla/e;->f(Ljava/lang/String;ILla/d;)Ljava/util/ArrayList;
 
@@ -105,11 +105,11 @@
     .line 4
     :cond_1
     :goto_0
-    iget-object v0, p0, Lab/k$d;->j:Lab/k;
+    iget-object v0, p0, Lab/k$d;->k:Lab/k;
 
-    iget-object v1, v0, Lab/k;->g0:Lla/e;
+    iget-object v1, v0, Lab/k;->h0:Lla/e;
 
-    iget-object v0, v0, Lab/k;->h0:Lla/d;
+    iget-object v0, v0, Lab/k;->i0:Lla/d;
 
     .line 5
     iget-object v2, v1, Lla/e;->d:Ljava/util/ArrayList;
@@ -143,7 +143,7 @@
     const/4 v4, 0x0
 
     .line 8
-    iput-object v4, v3, Lcom/helpshift/support/Faq;->m:Ljava/util/ArrayList;
+    iput-object v4, v3, Lcom/helpshift/support/Faq;->n:Ljava/util/ArrayList;
 
     goto :goto_1
 
@@ -178,7 +178,7 @@
 
     .line 11
     :goto_3
-    iget-object v1, p0, Lab/k$d;->h:Ljava/lang/String;
+    iget-object v1, p0, Lab/k$d;->i:Ljava/lang/String;
 
     invoke-static {v1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -211,9 +211,9 @@
     check-cast v2, Lcom/helpshift/support/Faq;
 
     .line 14
-    iget-object v3, v2, Lcom/helpshift/support/Faq;->i:Ljava/lang/String;
+    iget-object v3, v2, Lcom/helpshift/support/Faq;->j:Ljava/lang/String;
 
-    iget-object v4, p0, Lab/k$d;->h:Ljava/lang/String;
+    iget-object v4, p0, Lab/k$d;->i:Ljava/lang/String;
 
     invoke-virtual {v3, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -244,7 +244,7 @@
     invoke-direct {v0}, Landroid/os/Bundle;-><init>()V
 
     .line 19
-    iget-object v2, p0, Lab/k$d;->f:Ljava/lang/String;
+    iget-object v2, p0, Lab/k$d;->g:Ljava/lang/String;
 
     const-string v3, "key_search_query"
 
@@ -254,7 +254,7 @@
     invoke-virtual {v1, v0}, Landroid/os/Message;->setData(Landroid/os/Bundle;)V
 
     .line 21
-    iget-object v0, p0, Lab/k$d;->i:Landroid/os/Handler;
+    iget-object v0, p0, Lab/k$d;->j:Landroid/os/Handler;
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->sendMessage(Landroid/os/Message;)Z
 

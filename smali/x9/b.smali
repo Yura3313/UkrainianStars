@@ -97,7 +97,7 @@
     iget-object v3, v3, Le8/j;->t:Le8/i;
 
     .line 9
-    invoke-static {}, Lmd/g;->f()Ljava/util/Map;
+    invoke-static {}, Lae/v;->f()Ljava/util/Map;
 
     move-result-object v4
 
@@ -124,7 +124,7 @@
     iget-object v3, v3, Le8/j;->t:Le8/i;
 
     .line 12
-    invoke-static {}, Lmd/g;->f()Ljava/util/Map;
+    invoke-static {}, Lae/v;->f()Ljava/util/Map;
 
     move-result-object v4
 
@@ -149,7 +149,7 @@
 
     move-result-object v3
 
-    invoke-static {v1}, Lcom/google/android/play/core/appupdate/g;->g(Ljava/lang/Iterable;)Ljava/lang/String;
+    invoke-static {v1}, La5/b0;->i(Ljava/lang/Iterable;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -158,7 +158,7 @@
     const/4 v5, 0x0
 
     .line 14
-    invoke-virtual {v3, v1, v4, v5}, Lg9/a;->a(Ljava/lang/String;Ljava/lang/String;I)Ljava/lang/String;
+    invoke-virtual {v3, v1, v4, v5}, Lg9/a;->b(Ljava/lang/String;Ljava/lang/String;I)Ljava/lang/String;
 
     move-result-object v1
 

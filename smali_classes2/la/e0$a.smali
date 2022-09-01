@@ -20,7 +20,7 @@
     value = {
         "Ljava/lang/Object;",
         "Lcom/helpshift/util/h<",
-        "Lcom/helpshift/util/h0<",
+        "Lcom/helpshift/util/f0<",
         "Ljava/lang/Integer;",
         "Ljava/lang/Boolean;",
         ">;",
@@ -31,18 +31,18 @@
 
 
 # instance fields
-.field public final synthetic f:Landroid/os/Handler;
-
 .field public final synthetic g:Landroid/os/Handler;
+
+.field public final synthetic h:Landroid/os/Handler;
 
 
 # direct methods
 .method public constructor <init>(Landroid/os/Handler;Landroid/os/Handler;)V
     .locals 0
 
-    iput-object p1, p0, Lla/e0$a;->f:Landroid/os/Handler;
+    iput-object p1, p0, Lla/e0$a;->g:Landroid/os/Handler;
 
-    iput-object p2, p0, Lla/e0$a;->g:Landroid/os/Handler;
+    iput-object p2, p0, Lla/e0$a;->h:Landroid/os/Handler;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -55,7 +55,7 @@
     .locals 3
 
     .line 1
-    iget-object p1, p0, Lla/e0$a;->g:Landroid/os/Handler;
+    iget-object p1, p0, Lla/e0$a;->h:Landroid/os/Handler;
 
     if-eqz p1, :cond_0
 
@@ -80,7 +80,7 @@
     iput-object v0, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
 
     .line 6
-    iget-object v0, p0, Lla/e0$a;->g:Landroid/os/Handler;
+    iget-object v0, p0, Lla/e0$a;->h:Landroid/os/Handler;
 
     invoke-virtual {v0, p1}, Landroid/os/Handler;->sendMessage(Landroid/os/Message;)Z
 
@@ -92,7 +92,7 @@
     .locals 4
 
     .line 1
-    check-cast p1, Lcom/helpshift/util/h0;
+    check-cast p1, Lcom/helpshift/util/f0;
 
     if-nez p1, :cond_0
 
@@ -100,7 +100,7 @@
 
     .line 2
     :cond_0
-    iget-object v0, p0, Lla/e0$a;->f:Landroid/os/Handler;
+    iget-object v0, p0, Lla/e0$a;->g:Landroid/os/Handler;
 
     invoke-virtual {v0}, Landroid/os/Handler;->obtainMessage()Landroid/os/Message;
 
@@ -112,7 +112,7 @@
     invoke-direct {v1}, Landroid/os/Bundle;-><init>()V
 
     .line 4
-    iget-object v2, p1, Lcom/helpshift/util/h0;->a:Ljava/lang/Object;
+    iget-object v2, p1, Lcom/helpshift/util/f0;->a:Ljava/lang/Object;
 
     check-cast v2, Ljava/lang/Integer;
 
@@ -125,7 +125,7 @@
     invoke-virtual {v1, v3, v2}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
 
     .line 5
-    iget-object p1, p1, Lcom/helpshift/util/h0;->b:Ljava/lang/Object;
+    iget-object p1, p1, Lcom/helpshift/util/f0;->b:Ljava/lang/Object;
 
     check-cast p1, Ljava/lang/Boolean;
 
@@ -141,7 +141,7 @@
     iput-object v1, v0, Landroid/os/Message;->obj:Ljava/lang/Object;
 
     .line 7
-    iget-object p1, p0, Lla/e0$a;->f:Landroid/os/Handler;
+    iget-object p1, p0, Lla/e0$a;->g:Landroid/os/Handler;
 
     invoke-virtual {p1, v0}, Landroid/os/Handler;->sendMessage(Landroid/os/Message;)Z
 

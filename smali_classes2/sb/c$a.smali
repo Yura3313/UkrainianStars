@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field public final synthetic f:Lsb/c;
+.field public final synthetic g:Lsb/c;
 
 
 # direct methods
 .method public constructor <init>(Lsb/c;)V
     .locals 0
 
-    iput-object p1, p0, Lsb/c$a;->f:Lsb/c;
+    iput-object p1, p0, Lsb/c$a;->g:Lsb/c;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -38,15 +38,15 @@
     .locals 4
 
     .line 1
-    iget-object v0, p0, Lsb/c$a;->f:Lsb/c;
+    iget-object v0, p0, Lsb/c$a;->g:Lsb/c;
 
-    iget-object v1, v0, Lsb/c;->g:Lsb/d;
+    iget-object v1, v0, Lsb/c;->h:Lsb/d;
 
     .line 2
     iget-object v1, v1, Lsb/d;->c:Lsb/e;
 
     .line 3
-    iget-object v0, v0, Lsb/c;->f:Lsb/m;
+    iget-object v0, v0, Lsb/c;->g:Lsb/m;
 
     .line 4
     iget-object v2, v1, Lsb/e;->a:Landroid/hardware/Camera;

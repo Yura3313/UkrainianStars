@@ -3,159 +3,210 @@
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lk3/vf0;
-
-
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "<R::",
-        "Lk3/sq<",
-        "TAdT;>;AdT:",
-        "Lk3/io;",
-        ">",
-        "Ljava/lang/Object;",
-        "Lk3/vf0<",
-        "TR;",
-        "Lk3/mh0<",
-        "TAdT;>;>;"
-    }
-.end annotation
+.implements Lk3/yq;
+.implements Lk3/vr;
+.implements Lk3/tf0;
 
 
 # instance fields
-.field public a:Lk3/sq;
+.field public final g:Lk3/fh0;
+
+.field public final h:Ljava/util/concurrent/atomic/AtomicReference;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "TR;"
+            "Ljava/util/concurrent/atomic/AtomicReference<",
+            "Lcom/google/android/gms/internal/ads/zzsi;",
+            ">;"
         }
     .end annotation
 .end field
 
+.field public final i:Ljava/util/concurrent/atomic/AtomicReference;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/concurrent/atomic/AtomicReference<",
+            "Lcom/google/android/gms/internal/ads/zzsj;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public final j:Ljava/util/concurrent/atomic/AtomicReference;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/concurrent/atomic/AtomicReference<",
+            "Lk3/vr;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public k:Lk3/af0;
+
 
 # direct methods
-.method public constructor <init>()V
-    .locals 0
+.method public constructor <init>(Lk3/fh0;)V
+    .locals 1
 
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    new-instance v0, Ljava/util/concurrent/atomic/AtomicReference;
+
+    invoke-direct {v0}, Ljava/util/concurrent/atomic/AtomicReference;-><init>()V
+
+    iput-object v0, p0, Lk3/af0;->h:Ljava/util/concurrent/atomic/AtomicReference;
+
+    .line 3
+    new-instance v0, Ljava/util/concurrent/atomic/AtomicReference;
+
+    invoke-direct {v0}, Ljava/util/concurrent/atomic/AtomicReference;-><init>()V
+
+    iput-object v0, p0, Lk3/af0;->i:Ljava/util/concurrent/atomic/AtomicReference;
+
+    .line 4
+    new-instance v0, Ljava/util/concurrent/atomic/AtomicReference;
+
+    invoke-direct {v0}, Ljava/util/concurrent/atomic/AtomicReference;-><init>()V
+
+    iput-object v0, p0, Lk3/af0;->j:Ljava/util/concurrent/atomic/AtomicReference;
+
+    const/4 v0, 0x0
+
+    .line 5
+    iput-object v0, p0, Lk3/af0;->k:Lk3/af0;
+
+    .line 6
+    iput-object p1, p0, Lk3/af0;->g:Lk3/fh0;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Lk3/wf0;Lk3/xf0;)Lk3/em0;
+.method public final b(Lk3/tf0;)V
+    .locals 0
+
+    check-cast p1, Lk3/af0;
+
+    iput-object p1, p0, Lk3/af0;->k:Lk3/af0;
+
+    return-void
+.end method
+
+.method public final c2()V
     .locals 2
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lk3/wf0;",
-            "Lk3/xf0<",
-            "TR;>;)",
-            "Lk3/em0<",
-            "Lk3/mh0<",
-            "TAdT;>;>;"
-        }
-    .end annotation
+
+    move-object v0, p0
 
     .line 1
-    iget-object v0, p1, Lk3/wf0;->b:Lk3/uf0;
+    :goto_0
+    iget-object v1, v0, Lk3/af0;->k:Lk3/af0;
 
-    .line 2
-    invoke-interface {p2, v0}, Lk3/xf0;->g(Lk3/uf0;)Lk3/rq;
+    if-eqz v1, :cond_0
 
-    move-result-object p2
-
-    .line 3
-    new-instance v0, Lk3/ag0;
-
-    invoke-direct {v0}, Lk3/ag0;-><init>()V
-
-    invoke-interface {p2, v0}, Lk3/rq;->a(Lk3/ag0;)Lk3/rq;
-
-    .line 4
-    invoke-interface {p2}, Lk3/rq;->b()Ljava/lang/Object;
-
-    move-result-object p2
-
-    check-cast p2, Lk3/sq;
-
-    iput-object p2, p0, Lk3/af0;->a:Lk3/sq;
-
-    .line 5
-    invoke-interface {p2}, Lk3/sq;->b()Lk3/zo;
-
-    move-result-object p2
-
-    .line 6
-    new-instance v0, Lk3/mh0;
-
-    invoke-direct {v0}, Lk3/mh0;-><init>()V
-
-    .line 7
-    iget-object p1, p1, Lk3/wf0;->a:Lcom/google/android/gms/internal/ads/zzasp;
-
-    if-eqz p1, :cond_0
-
-    .line 8
-    invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 9
-    invoke-static {p1}, Lk3/am0;->f(Ljava/lang/Object;)Lk3/em0;
-
-    move-result-object p1
-
-    invoke-virtual {p2, p1}, Lk3/zo;->a(Lk3/em0;)Lk3/em0;
-
-    move-result-object p1
+    move-object v0, v1
 
     goto :goto_0
 
-    .line 10
+    .line 2
     :cond_0
-    iget-object p1, p2, Lk3/zo;->j:Lk3/nq;
+    iget-object v0, v0, Lk3/af0;->j:Ljava/util/concurrent/atomic/AtomicReference;
 
-    invoke-virtual {p1}, Lk3/nq;->b()Lk3/em0;
+    .line 3
+    invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
 
-    move-result-object p1
+    move-result-object v0
 
-    invoke-virtual {p2, p1}, Lk3/zo;->a(Lk3/em0;)Lk3/em0;
+    if-nez v0, :cond_1
 
-    move-result-object p1
+    goto :goto_1
 
-    .line 11
-    :goto_0
-    invoke-static {p1}, Lk3/tl0;->w(Lk3/em0;)Lk3/tl0;
+    .line 4
+    :cond_1
+    :try_start_0
+    check-cast v0, Lk3/vr;
 
-    move-result-object p1
+    invoke-interface {v0}, Lk3/vr;->c2()V
+    :try_end_0
+    .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
-    new-instance v1, Lk3/cf0;
+    goto :goto_1
 
-    invoke-direct {v1, p0, v0, p2}, Lk3/cf0;-><init>(Lk3/af0;Lk3/mh0;Lk3/zo;)V
+    :catch_0
+    move-exception v0
 
-    sget-object p2, Lk3/sl0;->f:Lk3/sl0;
+    const-string v1, "#007 Could not call remote method."
 
-    .line 12
-    invoke-virtual {p1, v1, p2}, Lk3/tl0;->v(Lk3/nl0;Ljava/util/concurrent/Executor;)Lk3/tl0;
+    .line 5
+    invoke-static {v1, v0}, Lcom/google/android/gms/ads/a;->i(Ljava/lang/String;Ljava/lang/Throwable;)V
 
-    move-result-object p1
-
-    new-instance v1, Lk3/bf0;
-
-    invoke-direct {v1, v0}, Lk3/bf0;-><init>(Lk3/mh0;)V
-
-    .line 13
-    invoke-virtual {p1, v1, p2}, Lk3/tl0;->u(Lk3/tj0;Ljava/util/concurrent/Executor;)Lk3/tl0;
-
-    move-result-object p1
-
-    return-object p1
+    :goto_1
+    return-void
 .end method
 
-.method public final synthetic b()Ljava/lang/Object;
-    .locals 1
+.method public final y0(Lcom/google/android/gms/internal/ads/zzuw;)V
+    .locals 3
 
-    iget-object v0, p0, Lk3/af0;->a:Lk3/sq;
+    move-object v0, p0
 
-    return-object v0
+    .line 1
+    :goto_0
+    iget-object v1, v0, Lk3/af0;->k:Lk3/af0;
+
+    if-eqz v1, :cond_0
+
+    move-object v0, v1
+
+    goto :goto_0
+
+    .line 2
+    :cond_0
+    iget-object v1, v0, Lk3/af0;->h:Ljava/util/concurrent/atomic/AtomicReference;
+
+    .line 3
+    invoke-virtual {v1}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
+
+    move-result-object v1
+
+    if-nez v1, :cond_1
+
+    goto :goto_1
+
+    .line 4
+    :cond_1
+    :try_start_0
+    check-cast v1, Lcom/google/android/gms/internal/ads/zzsi;
+
+    .line 5
+    iget v2, p1, Lcom/google/android/gms/internal/ads/zzuw;->g:I
+
+    invoke-interface {v1, v2}, Lcom/google/android/gms/internal/ads/zzsi;->d5(I)V
+    :try_end_0
+    .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
+
+    goto :goto_1
+
+    :catch_0
+    move-exception v1
+
+    const-string v2, "#007 Could not call remote method."
+
+    .line 6
+    invoke-static {v2, v1}, Lcom/google/android/gms/ads/a;->i(Ljava/lang/String;Ljava/lang/Throwable;)V
+
+    .line 7
+    :goto_1
+    iget-object v0, v0, Lk3/af0;->h:Ljava/util/concurrent/atomic/AtomicReference;
+
+    new-instance v1, Lk3/m6;
+
+    const/4 v2, 0x3
+
+    invoke-direct {v1, p1, v2}, Lk3/m6;-><init>(Ljava/lang/Object;I)V
+
+    invoke-static {v0, v1}, Lk3/q;->c(Ljava/util/concurrent/atomic/AtomicReference;Lk3/mf0;)V
+
+    return-void
 .end method

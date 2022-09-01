@@ -124,7 +124,7 @@
     const-string v0, "StartingPromotionFragment"
 
     .line 1
-    invoke-static {p2, p1, v0}, Lcom/kakaogame/b;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {p2, p1, v0}, Landroid/support/v4/media/e;->b(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     .line 2
     iget-object p1, p0, Lcom/kakaogame/promotion/view/StartingPromotionFragment$6;->this$0:Lcom/kakaogame/promotion/view/StartingPromotionFragment;

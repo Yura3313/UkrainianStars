@@ -117,7 +117,7 @@
 
     iget-object v2, p1, Lr5/r$b;->b:[J
 
-    invoke-static {v0, v1, v2}, Le5/i;->l([J[J[J)V
+    invoke-static {v0, v1, v2}, Lr5/a0;->c([J[J[J)V
 
     .line 2
     iget-object v0, p0, Lr5/r$c;->b:[J
@@ -128,7 +128,7 @@
 
     iget-object v1, v1, Lr5/r$c;->c:[J
 
-    invoke-static {v0, v2, v1}, Le5/i;->l([J[J[J)V
+    invoke-static {v0, v2, v1}, Lr5/a0;->c([J[J[J)V
 
     .line 3
     iget-object v0, p0, Lr5/r$c;->c:[J
@@ -139,7 +139,7 @@
 
     iget-object p1, p1, Lr5/r$b;->b:[J
 
-    invoke-static {v0, v1, p1}, Le5/i;->l([J[J[J)V
+    invoke-static {v0, v1, p1}, Lr5/a0;->c([J[J[J)V
 
     return-object p0
 .end method

@@ -1,5 +1,5 @@
 .class public final Lcom/supercell/id/ui/authentication/b;
-.super Lse/h;
+.super Lse/i;
 .source "AuthenticationFragment.kt"
 
 # interfaces
@@ -9,32 +9,32 @@
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/l<",
         "Ljava/lang/String;",
-        "Lie/h;",
+        "Lie/i;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic f:Lcom/supercell/id/ui/authentication/AuthenticationFragment$d;
+.field public final synthetic g:Lcom/supercell/id/ui/authentication/AuthenticationFragment$d;
 
-.field public final synthetic g:Ljava/lang/String;
+.field public final synthetic h:Ljava/lang/String;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/id/ui/authentication/AuthenticationFragment$d;Ljava/lang/String;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/ui/authentication/b;->f:Lcom/supercell/id/ui/authentication/AuthenticationFragment$d;
+    iput-object p1, p0, Lcom/supercell/id/ui/authentication/b;->g:Lcom/supercell/id/ui/authentication/AuthenticationFragment$d;
 
-    iput-object p2, p0, Lcom/supercell/id/ui/authentication/b;->g:Ljava/lang/String;
+    iput-object p2, p0, Lcom/supercell/id/ui/authentication/b;->h:Ljava/lang/String;
 
     const/4 p1, 0x1
 
-    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -50,12 +50,12 @@
     const-string v0, "buttonText"
 
     .line 2
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 3
-    iget-object v0, p0, Lcom/supercell/id/ui/authentication/b;->f:Lcom/supercell/id/ui/authentication/AuthenticationFragment$d;
+    iget-object v0, p0, Lcom/supercell/id/ui/authentication/b;->g:Lcom/supercell/id/ui/authentication/AuthenticationFragment$d;
 
-    iget-object v0, v0, Lcom/supercell/id/ui/authentication/AuthenticationFragment$d;->g:Ljava/lang/ref/WeakReference;
+    iget-object v0, v0, Lcom/supercell/id/ui/authentication/AuthenticationFragment$d;->h:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v0}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
 
@@ -78,7 +78,7 @@
     invoke-direct {v2}, Landroid/text/SpannableStringBuilder;-><init>()V
 
     .line 6
-    iget-object v3, p0, Lcom/supercell/id/ui/authentication/b;->g:Ljava/lang/String;
+    iget-object v3, p0, Lcom/supercell/id/ui/authentication/b;->h:Ljava/lang/String;
 
     invoke-virtual {v2, v3}, Landroid/text/SpannableStringBuilder;->append(Ljava/lang/CharSequence;)Landroid/text/SpannableStringBuilder;
 
@@ -102,7 +102,7 @@
 
     const-string v5, "(this as java.lang.Strin\u2026replace(oldChar, newChar)"
 
-    invoke-static {v4, v5}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v4, v5}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 9
     invoke-virtual {v2, v4}, Landroid/text/SpannableStringBuilder;->append(Ljava/lang/CharSequence;)Landroid/text/SpannableStringBuilder;
@@ -210,7 +210,7 @@
 
     .line 25
     :cond_0
-    sget-object p1, Lie/h;->a:Lie/h;
+    sget-object p1, Lie/i;->a:Lie/i;
 
     return-object p1
 .end method

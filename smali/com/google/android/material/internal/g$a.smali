@@ -15,14 +15,14 @@
 
 
 # instance fields
-.field public final synthetic f:Lcom/google/android/material/internal/g;
+.field public final synthetic g:Lcom/google/android/material/internal/g;
 
 
 # direct methods
 .method public constructor <init>(Lcom/google/android/material/internal/g;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/google/android/material/internal/g$a;->f:Lcom/google/android/material/internal/g;
+    iput-object p1, p0, Lcom/google/android/material/internal/g$a;->g:Lcom/google/android/material/internal/g;
 
     invoke-direct {p0}, Landroid/animation/AnimatorListenerAdapter;-><init>()V
 
@@ -35,7 +35,7 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/internal/g$a;->f:Lcom/google/android/material/internal/g;
+    iget-object v0, p0, Lcom/google/android/material/internal/g$a;->g:Lcom/google/android/material/internal/g;
 
     iget-object v1, v0, Lcom/google/android/material/internal/g;->c:Landroid/animation/ValueAnimator;
 

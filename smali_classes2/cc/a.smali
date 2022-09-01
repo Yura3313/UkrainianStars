@@ -7,13 +7,13 @@
 
 
 # instance fields
-.field public final f:Ljava/util/Map;
+.field public final g:Ljava/util/Map;
 
-.field public final g:I
+.field public final h:I
 
-.field public final h:Ljava/util/concurrent/atomic/AtomicInteger;
+.field public final i:Ljava/util/concurrent/atomic/AtomicInteger;
 
-.field public final i:Ljava/util/List;
+.field public final j:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
@@ -40,7 +40,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcc/a;->f:Ljava/util/Map;
+    iput-object v0, p0, Lcc/a;->g:Ljava/util/Map;
 
     .line 3
     new-instance v0, Ljava/util/LinkedList;
@@ -51,30 +51,30 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcc/a;->i:Ljava/util/List;
+    iput-object v0, p0, Lcc/a;->j:Ljava/util/List;
 
     const/high16 v0, 0x100000
 
     .line 4
-    iput v0, p0, Lcc/a;->g:I
+    iput v0, p0, Lcc/a;->h:I
 
     .line 5
     new-instance v0, Ljava/util/concurrent/atomic/AtomicInteger;
 
     invoke-direct {v0}, Ljava/util/concurrent/atomic/AtomicInteger;-><init>()V
 
-    iput-object v0, p0, Lcc/a;->h:Ljava/util/concurrent/atomic/AtomicInteger;
+    iput-object v0, p0, Lcc/a;->i:Ljava/util/concurrent/atomic/AtomicInteger;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final d()Ljava/util/Collection;
+.method public final c()Ljava/util/Collection;
     .locals 3
 
     .line 1
-    iget-object v0, p0, Lcc/a;->f:Ljava/util/Map;
+    iget-object v0, p0, Lcc/a;->g:Ljava/util/Map;
 
     monitor-enter v0
 
@@ -82,7 +82,7 @@
     :try_start_0
     new-instance v1, Ljava/util/HashSet;
 
-    iget-object v2, p0, Lcc/a;->f:Ljava/util/Map;
+    iget-object v2, p0, Lcc/a;->g:Ljava/util/Map;
 
     invoke-interface {v2}, Ljava/util/Map;->keySet()Ljava/util/Set;
 

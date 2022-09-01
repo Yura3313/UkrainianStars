@@ -4,9 +4,9 @@
 
 
 # static fields
-.field public static final a:Lcom/helpshift/util/s;
+.field public static final a:Lcom/helpshift/util/r;
 
-.field public static final b:Lcom/helpshift/util/s;
+.field public static final b:Lcom/helpshift/util/r;
 
 
 # direct methods
@@ -45,7 +45,7 @@
     invoke-virtual {v1, v2}, Ljava/text/DateFormat;->setTimeZone(Ljava/util/TimeZone;)V
 
     .line 6
-    new-instance v1, Lcom/helpshift/util/s;
+    new-instance v1, Lcom/helpshift/util/r;
 
     .line 7
     invoke-static {}, Ljava/util/Locale;->getDefault()Ljava/util/Locale;
@@ -54,9 +54,9 @@
 
     const-string v3, "yyyyMMddHHmmssSSS"
 
-    invoke-direct {v1, v3, v2}, Lcom/helpshift/util/s;-><init>(Ljava/lang/String;Ljava/util/Locale;)V
+    invoke-direct {v1, v3, v2}, Lcom/helpshift/util/r;-><init>(Ljava/lang/String;Ljava/util/Locale;)V
 
-    sput-object v1, Lcom/helpshift/util/m;->a:Lcom/helpshift/util/s;
+    sput-object v1, Lcom/helpshift/util/m;->a:Lcom/helpshift/util/r;
 
     .line 8
     new-instance v1, Ljava/text/DecimalFormat;
@@ -72,13 +72,13 @@
     invoke-direct {v1, v3, v2}, Ljava/text/DecimalFormat;-><init>(Ljava/lang/String;Ljava/text/DecimalFormatSymbols;)V
 
     .line 9
-    new-instance v1, Lcom/helpshift/util/s;
+    new-instance v1, Lcom/helpshift/util/r;
 
     const-string v2, "dd/MM/yyyy HH:mm:ss"
 
-    invoke-direct {v1, v2, v0}, Lcom/helpshift/util/s;-><init>(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {v1, v2, v0}, Lcom/helpshift/util/r;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
-    sput-object v1, Lcom/helpshift/util/m;->b:Lcom/helpshift/util/s;
+    sput-object v1, Lcom/helpshift/util/m;->b:Lcom/helpshift/util/r;
 
     return-void
 .end method

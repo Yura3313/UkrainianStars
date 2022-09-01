@@ -2,48 +2,107 @@
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
+# interfaces
+.implements Lk3/vp0;
+.implements Lk3/vs;
+.implements Lk3/hi0;
+
 
 # static fields
-.field public static final a:Lk3/zp0;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/lang/ThreadLocal<",
-            "Ljava/security/SecureRandom;",
-            ">;"
-        }
-    .end annotation
-.end field
+.field public static final g:Lk3/aq0;
+
+.field public static final h:Lk3/aq0;
 
 
 # direct methods
-.method public static constructor <clinit>()V
+.method static synthetic constructor <clinit>()V
     .locals 1
 
-    new-instance v0, Lk3/zp0;
+    .line 1
+    new-instance v0, Lk3/aq0;
 
-    invoke-direct {v0}, Lk3/zp0;-><init>()V
+    invoke-direct {v0}, Lk3/aq0;-><init>()V
 
-    sput-object v0, Lk3/aq0;->a:Lk3/zp0;
+    sput-object v0, Lk3/aq0;->g:Lk3/aq0;
+
+    .line 2
+    new-instance v0, Lk3/aq0;
+
+    invoke-direct {v0}, Lk3/aq0;-><init>()V
+
+    sput-object v0, Lk3/aq0;->h:Lk3/aq0;
 
     return-void
 .end method
 
-.method public static a(I)[B
+.method public synthetic constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method public static b()V
     .locals 1
 
-    .line 1
-    new-array p0, p0, [B
+    sget-object v0, Lk3/a1;->a:Lk3/j0;
 
-    .line 2
-    sget-object v0, Lk3/aq0;->a:Lk3/zp0;
-
-    invoke-virtual {v0}, Ljava/lang/ThreadLocal;->get()Ljava/lang/Object;
+    invoke-virtual {v0}, Lk3/j0;->a()Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Ljava/security/SecureRandom;
+    check-cast v0, Ljava/lang/Boolean;
 
-    invoke-virtual {v0, p0}, Ljava/security/SecureRandom;->nextBytes([B)V
+    invoke-virtual {v0}, Ljava/lang/Boolean;->booleanValue()Z
 
-    return-object p0
+    return-void
+.end method
+
+
+# virtual methods
+.method public a(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
+
+    check-cast p1, Ljava/lang/Exception;
+
+    const-string p1, ""
+
+    return-object p1
+.end method
+
+.method public synthetic c(Ljava/lang/String;Ljava/security/Provider;)Ljava/lang/Object;
+    .locals 0
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/security/GeneralSecurityException;
+        }
+    .end annotation
+
+    if-nez p2, :cond_0
+
+    .line 1
+    invoke-static {p1}, Ljava/security/KeyPairGenerator;->getInstance(Ljava/lang/String;)Ljava/security/KeyPairGenerator;
+
+    move-result-object p1
+
+    return-object p1
+
+    .line 2
+    :cond_0
+    invoke-static {p1, p2}, Ljava/security/KeyPairGenerator;->getInstance(Ljava/lang/String;Ljava/security/Provider;)Ljava/security/KeyPairGenerator;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public d(Ljava/lang/Object;)V
+    .locals 0
+
+    check-cast p1, Lk3/xq;
+
+    invoke-interface {p1}, Lk3/xq;->i()V
+
+    return-void
 .end method

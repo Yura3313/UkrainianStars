@@ -285,7 +285,7 @@
     iget-object v2, v1, Landroidx/lifecycle/k;->b:Landroidx/lifecycle/f$c;
 
     .line 4
-    sget-object v3, Landroidx/lifecycle/f$c;->i:Landroidx/lifecycle/f$c;
+    sget-object v3, Landroidx/lifecycle/f$c;->j:Landroidx/lifecycle/f$c;
 
     invoke-virtual {v2, v3}, Landroidx/lifecycle/f$c;->c(Landroidx/lifecycle/f$c;)Z
 
@@ -454,10 +454,10 @@
     invoke-virtual {v2, p1}, Landroid/os/Bundle;->remove(Ljava/lang/String;)V
 
     .line 9
-    iget v2, v1, Landroidx/activity/result/ActivityResult;->f:I
+    iget v2, v1, Landroidx/activity/result/ActivityResult;->g:I
 
     .line 10
-    iget-object v1, v1, Landroidx/activity/result/ActivityResult;->g:Landroid/content/Intent;
+    iget-object v1, v1, Landroidx/activity/result/ActivityResult;->h:Landroid/content/Intent;
 
     .line 11
     invoke-virtual {p2, v2, v1}, Lb/a;->c(ILandroid/content/Intent;)Ljava/lang/Object;

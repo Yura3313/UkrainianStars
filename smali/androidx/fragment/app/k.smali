@@ -8,27 +8,27 @@
 
 
 # instance fields
-.field public a0:Landroid/os/Handler;
+.field public b0:Landroid/os/Handler;
 
-.field public b0:Landroidx/fragment/app/k$a;
+.field public c0:Landroidx/fragment/app/k$a;
 
-.field public c0:Landroidx/fragment/app/k$b;
+.field public d0:Landroidx/fragment/app/k$b;
 
-.field public d0:Landroidx/fragment/app/k$c;
-
-.field public e0:I
+.field public e0:Landroidx/fragment/app/k$c;
 
 .field public f0:I
 
-.field public g0:Z
+.field public g0:I
 
 .field public h0:Z
 
-.field public i0:I
+.field public i0:Z
 
-.field public j0:Z
+.field public j0:I
 
-.field public k0:Landroidx/fragment/app/k$d;
+.field public k0:Z
+
+.field public l0:Landroidx/fragment/app/k$d;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Landroidx/lifecycle/o<",
@@ -38,15 +38,15 @@
     .end annotation
 .end field
 
-.field public l0:Landroid/app/Dialog;
-
-.field public m0:Z
+.field public m0:Landroid/app/Dialog;
 
 .field public n0:Z
 
 .field public o0:Z
 
 .field public p0:Z
+
+.field public q0:Z
 
 
 # direct methods
@@ -61,52 +61,52 @@
 
     invoke-direct {v0, p0}, Landroidx/fragment/app/k$a;-><init>(Landroidx/fragment/app/k;)V
 
-    iput-object v0, p0, Landroidx/fragment/app/k;->b0:Landroidx/fragment/app/k$a;
+    iput-object v0, p0, Landroidx/fragment/app/k;->c0:Landroidx/fragment/app/k$a;
 
     .line 3
     new-instance v0, Landroidx/fragment/app/k$b;
 
     invoke-direct {v0, p0}, Landroidx/fragment/app/k$b;-><init>(Landroidx/fragment/app/k;)V
 
-    iput-object v0, p0, Landroidx/fragment/app/k;->c0:Landroidx/fragment/app/k$b;
+    iput-object v0, p0, Landroidx/fragment/app/k;->d0:Landroidx/fragment/app/k$b;
 
     .line 4
     new-instance v0, Landroidx/fragment/app/k$c;
 
     invoke-direct {v0, p0}, Landroidx/fragment/app/k$c;-><init>(Landroidx/fragment/app/k;)V
 
-    iput-object v0, p0, Landroidx/fragment/app/k;->d0:Landroidx/fragment/app/k$c;
+    iput-object v0, p0, Landroidx/fragment/app/k;->e0:Landroidx/fragment/app/k$c;
 
     const/4 v0, 0x0
 
     .line 5
-    iput v0, p0, Landroidx/fragment/app/k;->e0:I
+    iput v0, p0, Landroidx/fragment/app/k;->f0:I
 
     .line 6
-    iput v0, p0, Landroidx/fragment/app/k;->f0:I
+    iput v0, p0, Landroidx/fragment/app/k;->g0:I
 
     const/4 v1, 0x1
 
     .line 7
-    iput-boolean v1, p0, Landroidx/fragment/app/k;->g0:Z
+    iput-boolean v1, p0, Landroidx/fragment/app/k;->h0:Z
 
     .line 8
-    iput-boolean v1, p0, Landroidx/fragment/app/k;->h0:Z
+    iput-boolean v1, p0, Landroidx/fragment/app/k;->i0:Z
 
     const/4 v1, -0x1
 
     .line 9
-    iput v1, p0, Landroidx/fragment/app/k;->i0:I
+    iput v1, p0, Landroidx/fragment/app/k;->j0:I
 
     .line 10
     new-instance v1, Landroidx/fragment/app/k$d;
 
     invoke-direct {v1, p0}, Landroidx/fragment/app/k$d;-><init>(Landroidx/fragment/app/k;)V
 
-    iput-object v1, p0, Landroidx/fragment/app/k;->k0:Landroidx/fragment/app/k$d;
+    iput-object v1, p0, Landroidx/fragment/app/k;->l0:Landroidx/fragment/app/k$d;
 
     .line 11
-    iput-boolean v0, p0, Landroidx/fragment/app/k;->p0:Z
+    iput-boolean v0, p0, Landroidx/fragment/app/k;->q0:Z
 
     return-void
 .end method
@@ -117,7 +117,7 @@
     .locals 4
 
     .line 1
-    iget-boolean v0, p0, Landroidx/fragment/app/k;->n0:Z
+    iget-boolean v0, p0, Landroidx/fragment/app/k;->o0:Z
 
     if-eqz v0, :cond_0
 
@@ -127,15 +127,15 @@
     const/4 v0, 0x1
 
     .line 2
-    iput-boolean v0, p0, Landroidx/fragment/app/k;->n0:Z
+    iput-boolean v0, p0, Landroidx/fragment/app/k;->o0:Z
 
     const/4 v1, 0x0
 
     .line 3
-    iput-boolean v1, p0, Landroidx/fragment/app/k;->o0:Z
+    iput-boolean v1, p0, Landroidx/fragment/app/k;->p0:Z
 
     .line 4
-    iget-object v2, p0, Landroidx/fragment/app/k;->l0:Landroid/app/Dialog;
+    iget-object v2, p0, Landroidx/fragment/app/k;->m0:Landroid/app/Dialog;
 
     const/4 v3, 0x0
 
@@ -145,7 +145,7 @@
     invoke-virtual {v2, v3}, Landroid/app/Dialog;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
 
     .line 6
-    iget-object v2, p0, Landroidx/fragment/app/k;->l0:Landroid/app/Dialog;
+    iget-object v2, p0, Landroidx/fragment/app/k;->m0:Landroid/app/Dialog;
 
     invoke-virtual {v2}, Landroid/app/Dialog;->dismiss()V
 
@@ -156,7 +156,7 @@
 
     move-result-object p2
 
-    iget-object v2, p0, Landroidx/fragment/app/k;->a0:Landroid/os/Handler;
+    iget-object v2, p0, Landroidx/fragment/app/k;->b0:Landroid/os/Handler;
 
     invoke-virtual {v2}, Landroid/os/Handler;->getLooper()Landroid/os/Looper;
 
@@ -165,7 +165,7 @@
     if-ne p2, v2, :cond_1
 
     .line 8
-    iget-object p2, p0, Landroidx/fragment/app/k;->l0:Landroid/app/Dialog;
+    iget-object p2, p0, Landroidx/fragment/app/k;->m0:Landroid/app/Dialog;
 
     invoke-virtual {p0, p2}, Landroidx/fragment/app/k;->onDismiss(Landroid/content/DialogInterface;)V
 
@@ -173,19 +173,19 @@
 
     .line 9
     :cond_1
-    iget-object p2, p0, Landroidx/fragment/app/k;->a0:Landroid/os/Handler;
+    iget-object p2, p0, Landroidx/fragment/app/k;->b0:Landroid/os/Handler;
 
-    iget-object v2, p0, Landroidx/fragment/app/k;->b0:Landroidx/fragment/app/k$a;
+    iget-object v2, p0, Landroidx/fragment/app/k;->c0:Landroidx/fragment/app/k$a;
 
     invoke-virtual {p2, v2}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 
     .line 10
     :cond_2
     :goto_0
-    iput-boolean v0, p0, Landroidx/fragment/app/k;->m0:Z
+    iput-boolean v0, p0, Landroidx/fragment/app/k;->n0:Z
 
     .line 11
-    iget p2, p0, Landroidx/fragment/app/k;->i0:I
+    iget p2, p0, Landroidx/fragment/app/k;->j0:I
 
     if-ltz p2, :cond_4
 
@@ -194,7 +194,7 @@
 
     move-result-object p1
 
-    iget p2, p0, Landroidx/fragment/app/k;->i0:I
+    iget p2, p0, Landroidx/fragment/app/k;->j0:I
 
     if-ltz p2, :cond_3
 
@@ -208,7 +208,7 @@
     const/4 p1, -0x1
 
     .line 14
-    iput p1, p0, Landroidx/fragment/app/k;->i0:I
+    iput p1, p0, Landroidx/fragment/app/k;->j0:I
 
     goto :goto_1
 
@@ -281,7 +281,7 @@
     move-result-object v1
 
     .line 4
-    iget v2, p0, Landroidx/fragment/app/k;->f0:I
+    iget v2, p0, Landroidx/fragment/app/k;->g0:I
 
     .line 5
     invoke-direct {v0, v1, v2}, Landroid/app/Dialog;-><init>(Landroid/content/Context;I)V
@@ -293,7 +293,7 @@
     .locals 3
 
     .line 1
-    iget-object v0, p0, Landroidx/fragment/app/k;->l0:Landroid/app/Dialog;
+    iget-object v0, p0, Landroidx/fragment/app/k;->m0:Landroid/app/Dialog;
 
     if-eqz v0, :cond_0
 
@@ -345,12 +345,12 @@
     const/4 v0, 0x1
 
     .line 3
-    iput v0, p0, Landroidx/fragment/app/k;->e0:I
+    iput v0, p0, Landroidx/fragment/app/k;->f0:I
 
     if-eqz p1, :cond_1
 
     .line 4
-    iput p1, p0, Landroidx/fragment/app/k;->f0:I
+    iput p1, p0, Landroidx/fragment/app/k;->g0:I
 
     :cond_1
     return-void
@@ -400,18 +400,18 @@
     const/4 v0, 0x0
 
     .line 1
-    iput-boolean v0, p0, Landroidx/fragment/app/k;->n0:Z
+    iput-boolean v0, p0, Landroidx/fragment/app/k;->o0:Z
 
     const/4 v1, 0x1
 
     .line 2
-    iput-boolean v1, p0, Landroidx/fragment/app/k;->o0:Z
+    iput-boolean v1, p0, Landroidx/fragment/app/k;->p0:Z
 
     .line 3
     invoke-virtual {p1, v0, p0, p2, v1}, Landroidx/fragment/app/c0;->e(ILandroidx/fragment/app/Fragment;Ljava/lang/String;I)V
 
     .line 4
-    iput-boolean v0, p0, Landroidx/fragment/app/k;->m0:Z
+    iput-boolean v0, p0, Landroidx/fragment/app/k;->n0:Z
 
     .line 5
     check-cast p1, Landroidx/fragment/app/a;
@@ -422,7 +422,7 @@
     move-result p1
 
     .line 7
-    iput p1, p0, Landroidx/fragment/app/k;->i0:I
+    iput p1, p0, Landroidx/fragment/app/k;->j0:I
 
     return p1
 .end method
@@ -434,22 +434,22 @@
     invoke-super {p0, p1}, Landroidx/fragment/app/Fragment;->U(Landroid/content/Context;)V
 
     .line 2
-    iget-object p1, p0, Landroidx/fragment/app/Fragment;->V:Landroidx/lifecycle/n;
+    iget-object p1, p0, Landroidx/fragment/app/Fragment;->W:Landroidx/lifecycle/n;
 
     .line 3
-    iget-object v0, p0, Landroidx/fragment/app/k;->k0:Landroidx/fragment/app/k$d;
+    iget-object v0, p0, Landroidx/fragment/app/k;->l0:Landroidx/fragment/app/k$d;
 
     invoke-virtual {p1, v0}, Landroidx/lifecycle/LiveData;->e(Landroidx/lifecycle/o;)V
 
     .line 4
-    iget-boolean p1, p0, Landroidx/fragment/app/k;->o0:Z
+    iget-boolean p1, p0, Landroidx/fragment/app/k;->p0:Z
 
     if-nez p1, :cond_0
 
     const/4 p1, 0x0
 
     .line 5
-    iput-boolean p1, p0, Landroidx/fragment/app/k;->n0:Z
+    iput-boolean p1, p0, Landroidx/fragment/app/k;->o0:Z
 
     :cond_0
     return-void
@@ -466,10 +466,10 @@
 
     invoke-direct {v0}, Landroid/os/Handler;-><init>()V
 
-    iput-object v0, p0, Landroidx/fragment/app/k;->a0:Landroid/os/Handler;
+    iput-object v0, p0, Landroidx/fragment/app/k;->b0:Landroid/os/Handler;
 
     .line 3
-    iget v0, p0, Landroidx/fragment/app/Fragment;->C:I
+    iget v0, p0, Landroidx/fragment/app/Fragment;->D:I
 
     const/4 v1, 0x1
 
@@ -485,7 +485,7 @@
     const/4 v0, 0x0
 
     :goto_0
-    iput-boolean v0, p0, Landroidx/fragment/app/k;->h0:Z
+    iput-boolean v0, p0, Landroidx/fragment/app/k;->i0:Z
 
     if-eqz p1, :cond_1
 
@@ -496,7 +496,7 @@
 
     move-result v0
 
-    iput v0, p0, Landroidx/fragment/app/k;->e0:I
+    iput v0, p0, Landroidx/fragment/app/k;->f0:I
 
     const-string v0, "android:theme"
 
@@ -505,7 +505,7 @@
 
     move-result v0
 
-    iput v0, p0, Landroidx/fragment/app/k;->f0:I
+    iput v0, p0, Landroidx/fragment/app/k;->g0:I
 
     const-string v0, "android:cancelable"
 
@@ -514,10 +514,10 @@
 
     move-result v0
 
-    iput-boolean v0, p0, Landroidx/fragment/app/k;->g0:Z
+    iput-boolean v0, p0, Landroidx/fragment/app/k;->h0:Z
 
     .line 7
-    iget-boolean v0, p0, Landroidx/fragment/app/k;->h0:Z
+    iget-boolean v0, p0, Landroidx/fragment/app/k;->i0:Z
 
     const-string v1, "android:showsDialog"
 
@@ -525,7 +525,7 @@
 
     move-result v0
 
-    iput-boolean v0, p0, Landroidx/fragment/app/k;->h0:Z
+    iput-boolean v0, p0, Landroidx/fragment/app/k;->i0:Z
 
     const/4 v0, -0x1
 
@@ -536,7 +536,7 @@
 
     move-result p1
 
-    iput p1, p0, Landroidx/fragment/app/k;->i0:I
+    iput p1, p0, Landroidx/fragment/app/k;->j0:I
 
     :cond_1
     return-void
@@ -548,15 +548,15 @@
     const/4 v0, 0x1
 
     .line 1
-    iput-boolean v0, p0, Landroidx/fragment/app/Fragment;->K:Z
+    iput-boolean v0, p0, Landroidx/fragment/app/Fragment;->L:Z
 
     .line 2
-    iget-object v1, p0, Landroidx/fragment/app/k;->l0:Landroid/app/Dialog;
+    iget-object v1, p0, Landroidx/fragment/app/k;->m0:Landroid/app/Dialog;
 
     if-eqz v1, :cond_1
 
     .line 3
-    iput-boolean v0, p0, Landroidx/fragment/app/k;->m0:Z
+    iput-boolean v0, p0, Landroidx/fragment/app/k;->n0:Z
 
     const/4 v0, 0x0
 
@@ -564,28 +564,28 @@
     invoke-virtual {v1, v0}, Landroid/app/Dialog;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
 
     .line 5
-    iget-object v1, p0, Landroidx/fragment/app/k;->l0:Landroid/app/Dialog;
+    iget-object v1, p0, Landroidx/fragment/app/k;->m0:Landroid/app/Dialog;
 
     invoke-virtual {v1}, Landroid/app/Dialog;->dismiss()V
 
     .line 6
-    iget-boolean v1, p0, Landroidx/fragment/app/k;->n0:Z
+    iget-boolean v1, p0, Landroidx/fragment/app/k;->o0:Z
 
     if-nez v1, :cond_0
 
     .line 7
-    iget-object v1, p0, Landroidx/fragment/app/k;->l0:Landroid/app/Dialog;
+    iget-object v1, p0, Landroidx/fragment/app/k;->m0:Landroid/app/Dialog;
 
     invoke-virtual {p0, v1}, Landroidx/fragment/app/k;->onDismiss(Landroid/content/DialogInterface;)V
 
     .line 8
     :cond_0
-    iput-object v0, p0, Landroidx/fragment/app/k;->l0:Landroid/app/Dialog;
+    iput-object v0, p0, Landroidx/fragment/app/k;->m0:Landroid/app/Dialog;
 
     const/4 v0, 0x0
 
     .line 9
-    iput-boolean v0, p0, Landroidx/fragment/app/k;->p0:Z
+    iput-boolean v0, p0, Landroidx/fragment/app/k;->q0:Z
 
     :cond_1
     return-void
@@ -597,26 +597,26 @@
     const/4 v0, 0x1
 
     .line 1
-    iput-boolean v0, p0, Landroidx/fragment/app/Fragment;->K:Z
+    iput-boolean v0, p0, Landroidx/fragment/app/Fragment;->L:Z
 
     .line 2
+    iget-boolean v1, p0, Landroidx/fragment/app/k;->p0:Z
+
+    if-nez v1, :cond_0
+
     iget-boolean v1, p0, Landroidx/fragment/app/k;->o0:Z
 
     if-nez v1, :cond_0
 
-    iget-boolean v1, p0, Landroidx/fragment/app/k;->n0:Z
-
-    if-nez v1, :cond_0
-
     .line 3
-    iput-boolean v0, p0, Landroidx/fragment/app/k;->n0:Z
+    iput-boolean v0, p0, Landroidx/fragment/app/k;->o0:Z
 
     .line 4
     :cond_0
-    iget-object v0, p0, Landroidx/fragment/app/Fragment;->V:Landroidx/lifecycle/n;
+    iget-object v0, p0, Landroidx/fragment/app/Fragment;->W:Landroidx/lifecycle/n;
 
     .line 5
-    iget-object v1, p0, Landroidx/fragment/app/k;->k0:Landroidx/fragment/app/k$d;
+    iget-object v1, p0, Landroidx/fragment/app/k;->l0:Landroidx/fragment/app/k$d;
 
     invoke-virtual {v0, v1}, Landroidx/lifecycle/LiveData;->h(Landroidx/lifecycle/o;)V
 
@@ -632,13 +632,13 @@
     move-result-object p1
 
     .line 2
-    iget-boolean v0, p0, Landroidx/fragment/app/k;->h0:Z
+    iget-boolean v0, p0, Landroidx/fragment/app/k;->i0:Z
 
     const/4 v1, 0x2
 
     if-eqz v0, :cond_7
 
-    iget-boolean v2, p0, Landroidx/fragment/app/k;->j0:Z
+    iget-boolean v2, p0, Landroidx/fragment/app/k;->k0:Z
 
     if-eqz v2, :cond_0
 
@@ -651,7 +651,7 @@
 
     .line 3
     :cond_1
-    iget-boolean v0, p0, Landroidx/fragment/app/k;->p0:Z
+    iget-boolean v0, p0, Landroidx/fragment/app/k;->q0:Z
 
     if-nez v0, :cond_4
 
@@ -661,22 +661,22 @@
 
     .line 4
     :try_start_0
-    iput-boolean v2, p0, Landroidx/fragment/app/k;->j0:Z
+    iput-boolean v2, p0, Landroidx/fragment/app/k;->k0:Z
 
     .line 5
     invoke-virtual {p0}, Landroidx/fragment/app/k;->O0()Landroid/app/Dialog;
 
     move-result-object v3
 
-    iput-object v3, p0, Landroidx/fragment/app/k;->l0:Landroid/app/Dialog;
+    iput-object v3, p0, Landroidx/fragment/app/k;->m0:Landroid/app/Dialog;
 
     .line 6
-    iget-boolean v4, p0, Landroidx/fragment/app/k;->h0:Z
+    iget-boolean v4, p0, Landroidx/fragment/app/k;->i0:Z
 
     if-eqz v4, :cond_3
 
     .line 7
-    iget v4, p0, Landroidx/fragment/app/k;->e0:I
+    iget v4, p0, Landroidx/fragment/app/k;->f0:I
 
     invoke-virtual {p0, v3, v4}, Landroidx/fragment/app/k;->R0(Landroid/app/Dialog;I)V
 
@@ -691,7 +691,7 @@
     if-eqz v4, :cond_2
 
     .line 10
-    iget-object v4, p0, Landroidx/fragment/app/k;->l0:Landroid/app/Dialog;
+    iget-object v4, p0, Landroidx/fragment/app/k;->m0:Landroid/app/Dialog;
 
     check-cast v3, Landroid/app/Activity;
 
@@ -699,28 +699,28 @@
 
     .line 11
     :cond_2
-    iget-object v3, p0, Landroidx/fragment/app/k;->l0:Landroid/app/Dialog;
+    iget-object v3, p0, Landroidx/fragment/app/k;->m0:Landroid/app/Dialog;
 
-    iget-boolean v4, p0, Landroidx/fragment/app/k;->g0:Z
+    iget-boolean v4, p0, Landroidx/fragment/app/k;->h0:Z
 
     invoke-virtual {v3, v4}, Landroid/app/Dialog;->setCancelable(Z)V
 
     .line 12
-    iget-object v3, p0, Landroidx/fragment/app/k;->l0:Landroid/app/Dialog;
+    iget-object v3, p0, Landroidx/fragment/app/k;->m0:Landroid/app/Dialog;
 
-    iget-object v4, p0, Landroidx/fragment/app/k;->c0:Landroidx/fragment/app/k$b;
+    iget-object v4, p0, Landroidx/fragment/app/k;->d0:Landroidx/fragment/app/k$b;
 
     invoke-virtual {v3, v4}, Landroid/app/Dialog;->setOnCancelListener(Landroid/content/DialogInterface$OnCancelListener;)V
 
     .line 13
-    iget-object v3, p0, Landroidx/fragment/app/k;->l0:Landroid/app/Dialog;
+    iget-object v3, p0, Landroidx/fragment/app/k;->m0:Landroid/app/Dialog;
 
-    iget-object v4, p0, Landroidx/fragment/app/k;->d0:Landroidx/fragment/app/k$c;
+    iget-object v4, p0, Landroidx/fragment/app/k;->e0:Landroidx/fragment/app/k$c;
 
     invoke-virtual {v3, v4}, Landroid/app/Dialog;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
 
     .line 14
-    iput-boolean v2, p0, Landroidx/fragment/app/k;->p0:Z
+    iput-boolean v2, p0, Landroidx/fragment/app/k;->q0:Z
 
     goto :goto_0
 
@@ -728,20 +728,20 @@
     const/4 v2, 0x0
 
     .line 15
-    iput-object v2, p0, Landroidx/fragment/app/k;->l0:Landroid/app/Dialog;
+    iput-object v2, p0, Landroidx/fragment/app/k;->m0:Landroid/app/Dialog;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 16
     :goto_0
-    iput-boolean v0, p0, Landroidx/fragment/app/k;->j0:Z
+    iput-boolean v0, p0, Landroidx/fragment/app/k;->k0:Z
 
     goto :goto_1
 
     :catchall_0
     move-exception p1
 
-    iput-boolean v0, p0, Landroidx/fragment/app/k;->j0:Z
+    iput-boolean v0, p0, Landroidx/fragment/app/k;->k0:Z
 
     .line 17
     throw p1
@@ -760,7 +760,7 @@
 
     .line 20
     :cond_5
-    iget-object v0, p0, Landroidx/fragment/app/k;->l0:Landroid/app/Dialog;
+    iget-object v0, p0, Landroidx/fragment/app/k;->m0:Landroid/app/Dialog;
 
     if-eqz v0, :cond_6
 
@@ -796,7 +796,7 @@
     .locals 3
 
     .line 1
-    iget-object v0, p0, Landroidx/fragment/app/k;->l0:Landroid/app/Dialog;
+    iget-object v0, p0, Landroidx/fragment/app/k;->m0:Landroid/app/Dialog;
 
     if-eqz v0, :cond_0
 
@@ -819,7 +819,7 @@
 
     .line 5
     :cond_0
-    iget v0, p0, Landroidx/fragment/app/k;->e0:I
+    iget v0, p0, Landroidx/fragment/app/k;->f0:I
 
     if-eqz v0, :cond_1
 
@@ -830,7 +830,7 @@
 
     .line 7
     :cond_1
-    iget v0, p0, Landroidx/fragment/app/k;->f0:I
+    iget v0, p0, Landroidx/fragment/app/k;->g0:I
 
     if-eqz v0, :cond_2
 
@@ -841,7 +841,7 @@
 
     .line 9
     :cond_2
-    iget-boolean v0, p0, Landroidx/fragment/app/k;->g0:Z
+    iget-boolean v0, p0, Landroidx/fragment/app/k;->h0:Z
 
     if-nez v0, :cond_3
 
@@ -852,7 +852,7 @@
 
     .line 11
     :cond_3
-    iget-boolean v0, p0, Landroidx/fragment/app/k;->h0:Z
+    iget-boolean v0, p0, Landroidx/fragment/app/k;->i0:Z
 
     if-nez v0, :cond_4
 
@@ -863,7 +863,7 @@
 
     .line 13
     :cond_4
-    iget v0, p0, Landroidx/fragment/app/k;->i0:I
+    iget v0, p0, Landroidx/fragment/app/k;->j0:I
 
     const/4 v1, -0x1
 
@@ -884,23 +884,23 @@
     const/4 v0, 0x1
 
     .line 1
-    iput-boolean v0, p0, Landroidx/fragment/app/Fragment;->K:Z
+    iput-boolean v0, p0, Landroidx/fragment/app/Fragment;->L:Z
 
     .line 2
-    iget-object v0, p0, Landroidx/fragment/app/k;->l0:Landroid/app/Dialog;
+    iget-object v0, p0, Landroidx/fragment/app/k;->m0:Landroid/app/Dialog;
 
     if-eqz v0, :cond_0
 
     const/4 v1, 0x0
 
     .line 3
-    iput-boolean v1, p0, Landroidx/fragment/app/k;->m0:Z
+    iput-boolean v1, p0, Landroidx/fragment/app/k;->n0:Z
 
     .line 4
     invoke-virtual {v0}, Landroid/app/Dialog;->show()V
 
     .line 5
-    iget-object v0, p0, Landroidx/fragment/app/k;->l0:Landroid/app/Dialog;
+    iget-object v0, p0, Landroidx/fragment/app/k;->m0:Landroid/app/Dialog;
 
     invoke-virtual {v0}, Landroid/app/Dialog;->getWindow()Landroid/view/Window;
 
@@ -911,7 +911,7 @@
     move-result-object v0
 
     .line 6
-    invoke-static {v0, p0}, Landroidx/lifecycle/a0;->d(Landroid/view/View;Landroidx/lifecycle/j;)V
+    invoke-static {v0, p0}, Landroidx/lifecycle/a0;->a(Landroid/view/View;Landroidx/lifecycle/j;)V
 
     .line 7
     sget v1, Landroidx/lifecycle/viewmodel/R$id;->view_tree_view_model_store_owner:I
@@ -933,10 +933,10 @@
     const/4 v0, 0x1
 
     .line 1
-    iput-boolean v0, p0, Landroidx/fragment/app/Fragment;->K:Z
+    iput-boolean v0, p0, Landroidx/fragment/app/Fragment;->L:Z
 
     .line 2
-    iget-object v0, p0, Landroidx/fragment/app/k;->l0:Landroid/app/Dialog;
+    iget-object v0, p0, Landroidx/fragment/app/k;->m0:Landroid/app/Dialog;
 
     if-eqz v0, :cond_0
 
@@ -953,10 +953,10 @@
     const/4 v0, 0x1
 
     .line 1
-    iput-boolean v0, p0, Landroidx/fragment/app/Fragment;->K:Z
+    iput-boolean v0, p0, Landroidx/fragment/app/Fragment;->L:Z
 
     .line 2
-    iget-object v0, p0, Landroidx/fragment/app/k;->l0:Landroid/app/Dialog;
+    iget-object v0, p0, Landroidx/fragment/app/k;->m0:Landroid/app/Dialog;
 
     if-eqz v0, :cond_0
 
@@ -972,7 +972,7 @@
     if-eqz p1, :cond_0
 
     .line 4
-    iget-object v0, p0, Landroidx/fragment/app/k;->l0:Landroid/app/Dialog;
+    iget-object v0, p0, Landroidx/fragment/app/k;->m0:Landroid/app/Dialog;
 
     invoke-virtual {v0, p1}, Landroid/app/Dialog;->onRestoreInstanceState(Landroid/os/Bundle;)V
 
@@ -987,12 +987,12 @@
     invoke-super {p0, p1, p2, p3}, Landroidx/fragment/app/Fragment;->o0(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)V
 
     .line 2
-    iget-object p1, p0, Landroidx/fragment/app/Fragment;->M:Landroid/view/View;
+    iget-object p1, p0, Landroidx/fragment/app/Fragment;->N:Landroid/view/View;
 
     if-nez p1, :cond_0
 
     .line 3
-    iget-object p1, p0, Landroidx/fragment/app/k;->l0:Landroid/app/Dialog;
+    iget-object p1, p0, Landroidx/fragment/app/k;->m0:Landroid/app/Dialog;
 
     if-eqz p1, :cond_0
 
@@ -1008,7 +1008,7 @@
     if-eqz p1, :cond_0
 
     .line 5
-    iget-object p2, p0, Landroidx/fragment/app/k;->l0:Landroid/app/Dialog;
+    iget-object p2, p0, Landroidx/fragment/app/k;->m0:Landroid/app/Dialog;
 
     invoke-virtual {p2, p1}, Landroid/app/Dialog;->onRestoreInstanceState(Landroid/os/Bundle;)V
 
@@ -1026,7 +1026,7 @@
     .locals 0
 
     .line 1
-    iget-boolean p1, p0, Landroidx/fragment/app/k;->m0:Z
+    iget-boolean p1, p0, Landroidx/fragment/app/k;->n0:Z
 
     if-nez p1, :cond_1
 

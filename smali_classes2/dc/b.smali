@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field public final f:Ljava/util/LinkedHashMap;
+.field public final g:Ljava/util/LinkedHashMap;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/LinkedHashMap<",
@@ -18,9 +18,9 @@
     .end annotation
 .end field
 
-.field public final g:I
+.field public final h:I
 
-.field public h:I
+.field public i:I
 
 
 # direct methods
@@ -33,7 +33,7 @@
     if-lez p1, :cond_0
 
     .line 2
-    iput p1, p0, Ldc/b;->g:I
+    iput p1, p0, Ldc/b;->h:I
 
     .line 3
     new-instance p1, Ljava/util/LinkedHashMap;
@@ -46,7 +46,7 @@
 
     invoke-direct {p1, v0, v1, v2}, Ljava/util/LinkedHashMap;-><init>(IFZ)V
 
-    iput-object p1, p0, Ldc/b;->f:Ljava/util/LinkedHashMap;
+    iput-object p1, p0, Ldc/b;->g:Ljava/util/LinkedHashMap;
 
     return-void
 
@@ -73,7 +73,7 @@
 
     .line 2
     :try_start_0
-    iget-object v0, p0, Ldc/b;->f:Ljava/util/LinkedHashMap;
+    iget-object v0, p0, Ldc/b;->g:Ljava/util/LinkedHashMap;
 
     invoke-virtual {v0, p1}, Ljava/util/LinkedHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -122,7 +122,7 @@
     return p1
 .end method
 
-.method public final d()Ljava/util/Collection;
+.method public final c()Ljava/util/Collection;
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -140,7 +140,7 @@
     :try_start_0
     new-instance v0, Ljava/util/HashSet;
 
-    iget-object v1, p0, Ldc/b;->f:Ljava/util/LinkedHashMap;
+    iget-object v1, p0, Ldc/b;->g:Ljava/util/LinkedHashMap;
 
     invoke-virtual {v1}, Ljava/util/LinkedHashMap;->keySet()Ljava/util/Set;
 
@@ -163,7 +163,7 @@
     throw v0
 .end method
 
-.method public final e(Ljava/lang/String;Landroid/graphics/Bitmap;)Z
+.method public final d(Ljava/lang/String;Landroid/graphics/Bitmap;)Z
     .locals 2
 
     if-eqz p1, :cond_6
@@ -173,7 +173,7 @@
 
     .line 2
     :try_start_0
-    iget v0, p0, Ldc/b;->h:I
+    iget v0, p0, Ldc/b;->i:I
 
     invoke-virtual {p0, p2}, Ldc/b;->b(Landroid/graphics/Bitmap;)I
 
@@ -181,10 +181,10 @@
 
     add-int/2addr v0, v1
 
-    iput v0, p0, Ldc/b;->h:I
+    iput v0, p0, Ldc/b;->i:I
 
     .line 3
-    iget-object v0, p0, Ldc/b;->f:Ljava/util/LinkedHashMap;
+    iget-object v0, p0, Ldc/b;->g:Ljava/util/LinkedHashMap;
 
     invoke-virtual {v0, p1, p2}, Ljava/util/AbstractMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -195,7 +195,7 @@
     if-eqz p1, :cond_0
 
     .line 4
-    iget p2, p0, Ldc/b;->h:I
+    iget p2, p0, Ldc/b;->i:I
 
     invoke-virtual {p0, p1}, Ldc/b;->b(Landroid/graphics/Bitmap;)I
 
@@ -203,7 +203,7 @@
 
     sub-int/2addr p2, p1
 
-    iput p2, p0, Ldc/b;->h:I
+    iput p2, p0, Ldc/b;->i:I
 
     .line 5
     :cond_0
@@ -212,7 +212,7 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
     .line 6
-    iget p1, p0, Ldc/b;->g:I
+    iget p1, p0, Ldc/b;->h:I
 
     .line 7
     :goto_0
@@ -220,11 +220,11 @@
 
     .line 8
     :try_start_1
-    iget p2, p0, Ldc/b;->h:I
+    iget p2, p0, Ldc/b;->i:I
 
     if-ltz p2, :cond_5
 
-    iget-object p2, p0, Ldc/b;->f:Ljava/util/LinkedHashMap;
+    iget-object p2, p0, Ldc/b;->g:Ljava/util/LinkedHashMap;
 
     invoke-virtual {p2}, Ljava/util/AbstractMap;->isEmpty()Z
 
@@ -232,17 +232,17 @@
 
     if-eqz p2, :cond_1
 
-    iget p2, p0, Ldc/b;->h:I
+    iget p2, p0, Ldc/b;->i:I
 
     if-nez p2, :cond_5
 
     .line 9
     :cond_1
-    iget p2, p0, Ldc/b;->h:I
+    iget p2, p0, Ldc/b;->i:I
 
     if-le p2, p1, :cond_4
 
-    iget-object p2, p0, Ldc/b;->f:Ljava/util/LinkedHashMap;
+    iget-object p2, p0, Ldc/b;->g:Ljava/util/LinkedHashMap;
 
     invoke-virtual {p2}, Ljava/util/AbstractMap;->isEmpty()Z
 
@@ -254,7 +254,7 @@
 
     .line 10
     :cond_2
-    iget-object p2, p0, Ldc/b;->f:Ljava/util/LinkedHashMap;
+    iget-object p2, p0, Ldc/b;->g:Ljava/util/LinkedHashMap;
 
     invoke-virtual {p2}, Ljava/util/LinkedHashMap;->entrySet()Ljava/util/Set;
 
@@ -293,12 +293,12 @@
     check-cast p2, Landroid/graphics/Bitmap;
 
     .line 14
-    iget-object v1, p0, Ldc/b;->f:Ljava/util/LinkedHashMap;
+    iget-object v1, p0, Ldc/b;->g:Ljava/util/LinkedHashMap;
 
     invoke-virtual {v1, v0}, Ljava/util/AbstractMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 15
-    iget v0, p0, Ldc/b;->h:I
+    iget v0, p0, Ldc/b;->i:I
 
     invoke-virtual {p0, p2}, Ldc/b;->b(Landroid/graphics/Bitmap;)I
 
@@ -306,7 +306,7 @@
 
     sub-int/2addr v0, p2
 
-    iput v0, p0, Ldc/b;->h:I
+    iput v0, p0, Ldc/b;->i:I
 
     .line 16
     monitor-exit p0
@@ -397,7 +397,7 @@
 
     .line 2
     :try_start_0
-    iget-object v0, p0, Ldc/b;->f:Ljava/util/LinkedHashMap;
+    iget-object v0, p0, Ldc/b;->g:Ljava/util/LinkedHashMap;
 
     invoke-virtual {v0, p1}, Ljava/util/AbstractMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -408,7 +408,7 @@
     if-eqz p1, :cond_0
 
     .line 3
-    iget v0, p0, Ldc/b;->h:I
+    iget v0, p0, Ldc/b;->i:I
 
     invoke-virtual {p0, p1}, Ldc/b;->b(Landroid/graphics/Bitmap;)I
 
@@ -416,7 +416,7 @@
 
     sub-int/2addr v0, v1
 
-    iput v0, p0, Ldc/b;->h:I
+    iput v0, p0, Ldc/b;->i:I
 
     .line 4
     :cond_0
@@ -449,7 +449,7 @@
 
     const/4 v2, 0x0
 
-    iget v3, p0, Ldc/b;->g:I
+    iget v3, p0, Ldc/b;->h:I
 
     invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 

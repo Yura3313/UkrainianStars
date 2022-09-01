@@ -50,7 +50,7 @@
 
     const-string v0, "source"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     new-instance v0, Lcom/supercell/id/PresentationInfo$PublicProfile;
@@ -61,7 +61,7 @@
     move-result-object v2
 
     .line 3
-    invoke-static {p1}, Lvc/b0;->a(Landroid/os/Parcel;)Lcom/supercell/id/model/IdSocialAccount;
+    invoke-static {p1}, Landroidx/appcompat/widget/g;->d(Landroid/os/Parcel;)Lcom/supercell/id/model/IdSocialAccount;
 
     move-result-object v3
 
@@ -88,7 +88,7 @@
     goto :goto_0
 
     :cond_0
-    sget-object v1, Lcom/supercell/id/model/ProfileImage$Empty;->g:Lcom/supercell/id/model/ProfileImage$Empty;
+    sget-object v1, Lcom/supercell/id/model/ProfileImage$Empty;->h:Lcom/supercell/id/model/ProfileImage$Empty;
 
     :goto_0
     move-object v5, v1

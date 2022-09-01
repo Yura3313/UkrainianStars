@@ -77,7 +77,7 @@
 
     const-string v0, "msg"
 
-    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -95,7 +95,7 @@
     return-void
 .end method
 
-.method public synthetic constructor <init>(ILjava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/util/List;ILse/e;)V
+.method public synthetic constructor <init>(ILjava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/util/List;ILse/f;)V
     .locals 7
 
     and-int/lit8 p7, p6, 0x4
@@ -280,7 +280,7 @@
 
     const-string v0, "msg"
 
-    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     new-instance v0, Lcom/kakao/sdk/common/model/ApiErrorResponse;
 
@@ -344,7 +344,7 @@
 
     iget-object v3, p1, Lcom/kakao/sdk/common/model/ApiErrorResponse;->msg:Ljava/lang/String;
 
-    invoke-static {v1, v3}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -354,7 +354,7 @@
 
     iget-object v3, p1, Lcom/kakao/sdk/common/model/ApiErrorResponse;->apiType:Ljava/lang/String;
 
-    invoke-static {v1, v3}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -364,7 +364,7 @@
 
     iget-object v3, p1, Lcom/kakao/sdk/common/model/ApiErrorResponse;->requiredScopes:Ljava/util/List;
 
-    invoke-static {v1, v3}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -374,7 +374,7 @@
 
     iget-object p1, p1, Lcom/kakao/sdk/common/model/ApiErrorResponse;->allowedScopes:Ljava/util/List;
 
-    invoke-static {v1, p1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, p1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -583,7 +583,7 @@
 
     const-string p2, "parcel"
 
-    invoke-static {p1, p2}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p2}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     iget p2, p0, Lcom/kakao/sdk/common/model/ApiErrorResponse;->code:I
 

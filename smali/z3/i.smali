@@ -1,30 +1,30 @@
 .class public final Lz3/i;
-.super Lz3/m2;
+.super Lz3/n2;
 
 
 # instance fields
-.field public c:Ljava/lang/String;
-
-.field public d:Ljava/lang/String;
-
-.field public e:I
-
-.field public f:Ljava/lang/String;
-
-.field public g:J
-
-.field public h:I
-
 .field public i:Ljava/lang/String;
 
 .field public j:Ljava/lang/String;
+
+.field public k:I
+
+.field public l:Ljava/lang/String;
+
+.field public m:J
+
+.field public n:I
+
+.field public o:Ljava/lang/String;
+
+.field public p:Ljava/lang/String;
 
 
 # direct methods
 .method public constructor <init>(Lz3/p0;)V
     .locals 0
 
-    invoke-direct {p0, p1}, Lz3/m2;-><init>(Lz3/p0;)V
+    invoke-direct {p0, p1}, Lz3/n2;-><init>(Lz3/p0;)V
 
     return-void
 .end method
@@ -78,7 +78,7 @@
     move-result-object v1
 
     .line 4
-    iget-object v1, v1, Lz3/o;->f:Lz3/q;
+    iget-object v1, v1, Lz3/o;->l:Lz3/q;
 
     .line 5
     invoke-static {v0}, Lz3/o;->G(Ljava/lang/String;)Ljava/lang/Object;
@@ -110,7 +110,7 @@
     move-result-object v7
 
     .line 9
-    iget-object v7, v7, Lz3/o;->f:Lz3/q;
+    iget-object v7, v7, Lz3/o;->l:Lz3/q;
 
     .line 10
     invoke-static {v0}, Lz3/o;->G(Ljava/lang/String;)Ljava/lang/Object;
@@ -216,7 +216,7 @@
     move-result-object v7
 
     .line 20
-    iget-object v7, v7, Lz3/o;->f:Lz3/q;
+    iget-object v7, v7, Lz3/o;->l:Lz3/q;
 
     .line 21
     invoke-static {v0}, Lz3/o;->G(Ljava/lang/String;)Ljava/lang/Object;
@@ -233,31 +233,31 @@
     .line 23
     :cond_4
     :goto_4
-    iput-object v0, p0, Lz3/i;->c:Ljava/lang/String;
+    iput-object v0, p0, Lz3/i;->i:Ljava/lang/String;
 
     .line 24
-    iput-object v5, p0, Lz3/i;->f:Ljava/lang/String;
+    iput-object v5, p0, Lz3/i;->l:Ljava/lang/String;
 
     .line 25
-    iput-object v3, p0, Lz3/i;->d:Ljava/lang/String;
+    iput-object v3, p0, Lz3/i;->j:Ljava/lang/String;
 
     .line 26
-    iput v6, p0, Lz3/i;->e:I
+    iput v6, p0, Lz3/i;->k:I
 
     const-wide/16 v5, 0x0
 
     .line 27
-    iput-wide v5, p0, Lz3/i;->g:J
+    iput-wide v5, p0, Lz3/i;->m:J
 
     .line 28
-    invoke-virtual {p0}, Ly3/a;->a()Lk3/c9;
+    invoke-virtual {p0}, Ly3/a;->a()Lcom/helpshift/util/a0;
 
     .line 29
     invoke-virtual {p0}, Ly3/a;->getContext()Landroid/content/Context;
 
     move-result-object v1
 
-    invoke-static {v1}, Lb2/g;->c(Landroid/content/Context;)Lcom/google/android/gms/common/api/Status;
+    invoke-static {v1}, Lb2/f;->c(Landroid/content/Context;)Lcom/google/android/gms/common/api/Status;
 
     move-result-object v1
 
@@ -281,12 +281,12 @@
 
     .line 31
     :goto_5
-    iget-object v6, p0, Ly3/a;->a:Ljava/lang/Object;
+    iget-object v6, p0, Ly3/a;->g:Ljava/lang/Object;
 
     check-cast v6, Lz3/p0;
 
     .line 32
-    iget-object v6, v6, Lz3/p0;->b:Ljava/lang/String;
+    iget-object v6, v6, Lz3/p0;->h:Ljava/lang/String;
 
     .line 33
     invoke-static {v6}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
@@ -297,12 +297,12 @@
 
     if-nez v6, :cond_6
 
-    iget-object v6, p0, Ly3/a;->a:Ljava/lang/Object;
+    iget-object v6, p0, Ly3/a;->g:Ljava/lang/Object;
 
     check-cast v6, Lz3/p0;
 
     .line 34
-    iget-object v6, v6, Lz3/p0;->c:Ljava/lang/String;
+    iget-object v6, v6, Lz3/p0;->i:Ljava/lang/String;
 
     .line 35
     invoke-virtual {v7, v6}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -331,7 +331,7 @@
     move-result-object v1
 
     .line 37
-    iget-object v1, v1, Lz3/o;->f:Lz3/q;
+    iget-object v1, v1, Lz3/o;->l:Lz3/q;
 
     const-string v6, "GoogleService failed to initialize (no status)"
 
@@ -347,10 +347,10 @@
     move-result-object v6
 
     .line 40
-    iget-object v6, v6, Lz3/o;->f:Lz3/q;
+    iget-object v6, v6, Lz3/o;->l:Lz3/q;
 
     .line 41
-    iget v8, v1, Lcom/google/android/gms/common/api/Status;->g:I
+    iget v8, v1, Lcom/google/android/gms/common/api/Status;->h:I
 
     .line 42
     invoke-static {v8}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -358,7 +358,7 @@
     move-result-object v8
 
     .line 43
-    iget-object v1, v1, Lcom/google/android/gms/common/api/Status;->h:Ljava/lang/String;
+    iget-object v1, v1, Lcom/google/android/gms/common/api/Status;->i:Ljava/lang/String;
 
     const-string v9, "GoogleService failed to initialize, status"
 
@@ -370,27 +370,27 @@
     if-eqz v5, :cond_c
 
     .line 45
-    invoke-virtual {p0}, Ly3/a;->u()Lz3/m3;
+    invoke-virtual {p0}, Ly3/a;->u()Lz3/n3;
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lz3/m3;->J()Ljava/lang/Boolean;
+    invoke-virtual {v1}, Lz3/n3;->J()Ljava/lang/Boolean;
 
     move-result-object v1
 
     .line 46
-    invoke-virtual {p0}, Ly3/a;->u()Lz3/m3;
+    invoke-virtual {p0}, Ly3/a;->u()Lz3/n3;
 
     move-result-object v5
 
-    invoke-virtual {v5}, Lz3/m3;->I()Z
+    invoke-virtual {v5}, Lz3/n3;->I()Z
 
     move-result v5
 
     if-eqz v5, :cond_9
 
     .line 47
-    iget-object v1, p0, Ly3/a;->a:Ljava/lang/Object;
+    iget-object v1, p0, Ly3/a;->g:Ljava/lang/Object;
 
     check-cast v1, Lz3/p0;
 
@@ -406,7 +406,7 @@
     move-result-object v1
 
     .line 49
-    iget-object v1, v1, Lz3/o;->l:Lz3/q;
+    iget-object v1, v1, Lz3/o;->r:Lz3/q;
 
     const-string v3, "Collection disabled with firebase_analytics_collection_deactivated=1"
 
@@ -426,7 +426,7 @@
     if-nez v5, :cond_a
 
     .line 52
-    iget-object v1, p0, Ly3/a;->a:Ljava/lang/Object;
+    iget-object v1, p0, Ly3/a;->g:Ljava/lang/Object;
 
     check-cast v1, Lz3/p0;
 
@@ -442,7 +442,7 @@
     move-result-object v1
 
     .line 54
-    iget-object v1, v1, Lz3/o;->l:Lz3/q;
+    iget-object v1, v1, Lz3/o;->r:Lz3/q;
 
     const-string v3, "Collection disabled with firebase_analytics_collection_enabled=0"
 
@@ -455,7 +455,7 @@
     if-nez v1, :cond_b
 
     .line 56
-    invoke-static {}, Lb2/g;->d()Z
+    invoke-static {}, Lb2/f;->d()Z
 
     move-result v1
 
@@ -467,7 +467,7 @@
     move-result-object v1
 
     .line 58
-    iget-object v1, v1, Lz3/o;->l:Lz3/q;
+    iget-object v1, v1, Lz3/o;->r:Lz3/q;
 
     const-string v3, "Collection disabled with google_app_measurement_enable=0"
 
@@ -483,7 +483,7 @@
     move-result-object v1
 
     .line 61
-    iget-object v1, v1, Lz3/o;->n:Lz3/q;
+    iget-object v1, v1, Lz3/o;->t:Lz3/q;
 
     const-string v2, "Collection enabled"
 
@@ -495,21 +495,21 @@
     .line 63
     :cond_c
     :goto_8
-    iput-object v4, p0, Lz3/i;->i:Ljava/lang/String;
+    iput-object v4, p0, Lz3/i;->o:Ljava/lang/String;
 
     .line 64
-    iput-object v4, p0, Lz3/i;->j:Ljava/lang/String;
+    iput-object v4, p0, Lz3/i;->p:Ljava/lang/String;
 
     .line 65
-    invoke-virtual {p0}, Ly3/a;->a()Lk3/c9;
+    invoke-virtual {p0}, Ly3/a;->a()Lcom/helpshift/util/a0;
 
     .line 66
-    iget-object v1, p0, Ly3/a;->a:Ljava/lang/Object;
+    iget-object v1, p0, Ly3/a;->g:Ljava/lang/Object;
 
     check-cast v1, Lz3/p0;
 
     .line 67
-    iget-object v1, v1, Lz3/p0;->b:Ljava/lang/String;
+    iget-object v1, v1, Lz3/p0;->h:Ljava/lang/String;
 
     .line 68
     invoke-static {v1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
@@ -518,12 +518,12 @@
 
     if-nez v1, :cond_d
 
-    iget-object v1, p0, Ly3/a;->a:Ljava/lang/Object;
+    iget-object v1, p0, Ly3/a;->g:Ljava/lang/Object;
 
     check-cast v1, Lz3/p0;
 
     .line 69
-    iget-object v1, v1, Lz3/p0;->c:Ljava/lang/String;
+    iget-object v1, v1, Lz3/p0;->i:Ljava/lang/String;
 
     .line 70
     invoke-virtual {v7, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -533,20 +533,20 @@
     if-eqz v1, :cond_d
 
     .line 71
-    iget-object v1, p0, Ly3/a;->a:Ljava/lang/Object;
+    iget-object v1, p0, Ly3/a;->g:Ljava/lang/Object;
 
     check-cast v1, Lz3/p0;
 
     .line 72
-    iget-object v1, v1, Lz3/p0;->b:Ljava/lang/String;
+    iget-object v1, v1, Lz3/p0;->h:Ljava/lang/String;
 
     .line 73
-    iput-object v1, p0, Lz3/i;->j:Ljava/lang/String;
+    iput-object v1, p0, Lz3/i;->p:Ljava/lang/String;
 
     .line 74
     :cond_d
     :try_start_3
-    invoke-static {}, Lb2/g;->b()Ljava/lang/String;
+    invoke-static {}, Lb2/f;->b()Ljava/lang/String;
 
     move-result-object v1
 
@@ -563,7 +563,7 @@
     move-object v4, v1
 
     :goto_9
-    iput-object v4, p0, Lz3/i;->i:Ljava/lang/String;
+    iput-object v4, p0, Lz3/i;->o:Ljava/lang/String;
 
     .line 76
     invoke-static {v1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
@@ -616,7 +616,7 @@
 
     .line 84
     :goto_a
-    iput-object v1, p0, Lz3/i;->j:Ljava/lang/String;
+    iput-object v1, p0, Lz3/i;->p:Ljava/lang/String;
 
     :cond_10
     if-eqz v2, :cond_11
@@ -627,14 +627,14 @@
     move-result-object v1
 
     .line 86
-    iget-object v1, v1, Lz3/o;->n:Lz3/q;
+    iget-object v1, v1, Lz3/o;->t:Lz3/q;
 
     const-string v2, "App package, google app id"
 
     .line 87
-    iget-object v3, p0, Lz3/i;->c:Ljava/lang/String;
+    iget-object v3, p0, Lz3/i;->i:Ljava/lang/String;
 
-    iget-object v4, p0, Lz3/i;->i:Ljava/lang/String;
+    iget-object v4, p0, Lz3/i;->o:Ljava/lang/String;
 
     invoke-virtual {v1, v2, v3, v4}, Lz3/q;->c(Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V
     :try_end_3
@@ -651,7 +651,7 @@
     move-result-object v2
 
     .line 89
-    iget-object v2, v2, Lz3/o;->f:Lz3/q;
+    iget-object v2, v2, Lz3/o;->l:Lz3/q;
 
     .line 90
     invoke-static {v0}, Lz3/o;->G(Ljava/lang/String;)Ljava/lang/Object;
@@ -674,7 +674,7 @@
 
     move-result v0
 
-    iput v0, p0, Lz3/i;->h:I
+    iput v0, p0, Lz3/i;->n:I
 
     return-void
 .end method
@@ -683,10 +683,10 @@
     .locals 1
 
     .line 1
-    invoke-virtual {p0}, Lz3/m2;->D()V
+    invoke-virtual {p0}, Lz3/n2;->D()V
 
     .line 2
-    iget-object v0, p0, Lz3/i;->i:Ljava/lang/String;
+    iget-object v0, p0, Lz3/i;->o:Ljava/lang/String;
 
     return-object v0
 .end method

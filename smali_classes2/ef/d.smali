@@ -27,13 +27,13 @@
     .end annotation
 .end method
 
-.method public abstract onResponse(Lef/b;Lef/c0;)V
+.method public abstract onResponse(Lef/b;Lef/b0;)V
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Lef/b<",
             "TT;>;",
-            "Lef/c0<",
+            "Lef/b0<",
             "TT;>;)V"
         }
     .end annotation

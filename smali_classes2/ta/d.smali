@@ -4,14 +4,14 @@
 
 
 # instance fields
-.field public final synthetic f:Lta/a;
+.field public final synthetic g:Lta/a;
 
 
 # direct methods
 .method public constructor <init>(Lta/a;)V
     .locals 0
 
-    iput-object p1, p0, Lta/d;->f:Lta/a;
+    iput-object p1, p0, Lta/d;->g:Lta/a;
 
     invoke-direct {p0}, Lqa/i1;-><init>()V
 
@@ -26,7 +26,7 @@
     if-eqz p1, :cond_0
 
     .line 1
-    iget-object p2, p0, Lta/d;->f:Lta/a;
+    iget-object p2, p0, Lta/d;->g:Lta/a;
 
     .line 2
     iget-object p2, p2, Lta/a;->b:Lta/m;

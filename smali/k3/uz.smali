@@ -2,471 +2,227 @@
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
-# interfaces
-.implements Lk3/iv0;
-
 
 # annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ljava/lang/Object;",
-        "Lk3/iv0<",
-        "Lk3/lz;",
-        ">;"
-    }
+.annotation build Landroid/annotation/TargetApi;
+    value = 0x13
 .end annotation
 
 
 # instance fields
-.field public final a:Lk3/mv0;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lk3/mv0<",
-            "Lk3/vq;",
-            ">;"
-        }
-    .end annotation
-.end field
+.field public a:Landroid/content/Context;
 
-.field public final b:Lk3/mv0;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lk3/mv0<",
-            "Lk3/nr;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field public final c:Lk3/mv0;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lk3/mv0<",
-            "Lk3/tr;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field public final d:Lk3/mv0;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lk3/mv0<",
-            "Lk3/zr;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field public final e:Lk3/mv0;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lk3/mv0<",
-            "Lk3/os;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field public final f:Lk3/mv0;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lk3/mv0<",
-            "Ljava/util/concurrent/Executor;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field public final g:Lk3/mv0;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lk3/mv0<",
-            "Lk3/qt;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field public final h:Lk3/mv0;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lk3/mv0<",
-            "Lk3/em;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field public final i:Lk3/mv0;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lk3/mv0<",
-            "Li1/a;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field public final j:Lk3/mv0;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lk3/mv0<",
-            "Lk3/jr;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field public final k:Lk3/mv0;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lk3/mv0<",
-            "Lk3/k9;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field public final l:Lk3/mv0;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lk3/mv0<",
-            "Lk3/gr0;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field public final m:Lk3/mv0;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lk3/mv0<",
-            "Lk3/ks;",
-            ">;"
-        }
-    .end annotation
-.end field
+.field public b:Landroid/widget/PopupWindow;
 
 
 # direct methods
-.method public constructor <init>(Lk3/mv0;Lk3/mv0;Lk3/mv0;Lk3/mv0;Lk3/mv0;Lk3/mv0;Lk3/mv0;Lk3/mv0;Lk3/mv0;Lk3/mv0;Lk3/mv0;Lk3/mv0;Lk3/mv0;)V
+.method public constructor <init>()V
     .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lk3/mv0<",
-            "Lk3/vq;",
-            ">;",
-            "Lk3/mv0<",
-            "Lk3/nr;",
-            ">;",
-            "Lk3/mv0<",
-            "Lk3/tr;",
-            ">;",
-            "Lk3/mv0<",
-            "Lk3/zr;",
-            ">;",
-            "Lk3/mv0<",
-            "Lk3/os;",
-            ">;",
-            "Lk3/mv0<",
-            "Ljava/util/concurrent/Executor;",
-            ">;",
-            "Lk3/mv0<",
-            "Lk3/qt;",
-            ">;",
-            "Lk3/mv0<",
-            "Lk3/em;",
-            ">;",
-            "Lk3/mv0<",
-            "Li1/a;",
-            ">;",
-            "Lk3/mv0<",
-            "Lk3/jr;",
-            ">;",
-            "Lk3/mv0<",
-            "Lk3/k9;",
-            ">;",
-            "Lk3/mv0<",
-            "Lk3/gr0;",
-            ">;",
-            "Lk3/mv0<",
-            "Lk3/ks;",
-            ">;)V"
-        }
-    .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 2
-    iput-object p1, p0, Lk3/uz;->a:Lk3/mv0;
-
-    .line 3
-    iput-object p2, p0, Lk3/uz;->b:Lk3/mv0;
-
-    .line 4
-    iput-object p3, p0, Lk3/uz;->c:Lk3/mv0;
-
-    .line 5
-    iput-object p4, p0, Lk3/uz;->d:Lk3/mv0;
-
-    .line 6
-    iput-object p5, p0, Lk3/uz;->e:Lk3/mv0;
-
-    .line 7
-    iput-object p6, p0, Lk3/uz;->f:Lk3/mv0;
-
-    .line 8
-    iput-object p7, p0, Lk3/uz;->g:Lk3/mv0;
-
-    .line 9
-    iput-object p8, p0, Lk3/uz;->h:Lk3/mv0;
-
-    .line 10
-    iput-object p9, p0, Lk3/uz;->i:Lk3/mv0;
-
-    .line 11
-    iput-object p10, p0, Lk3/uz;->j:Lk3/mv0;
-
-    .line 12
-    iput-object p11, p0, Lk3/uz;->k:Lk3/mv0;
-
-    .line 13
-    iput-object p12, p0, Lk3/uz;->l:Lk3/mv0;
-
-    .line 14
-    iput-object p13, p0, Lk3/uz;->m:Lk3/mv0;
 
     return-void
 .end method
 
-.method public static a(Lk3/mv0;Lk3/mv0;Lk3/mv0;Lk3/mv0;Lk3/mv0;Lk3/mv0;Lk3/mv0;Lk3/mv0;Lk3/mv0;Lk3/mv0;Lk3/mv0;Lk3/mv0;Lk3/mv0;)Lk3/uz;
-    .locals 15
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lk3/mv0<",
-            "Lk3/vq;",
-            ">;",
-            "Lk3/mv0<",
-            "Lk3/nr;",
-            ">;",
-            "Lk3/mv0<",
-            "Lk3/tr;",
-            ">;",
-            "Lk3/mv0<",
-            "Lk3/zr;",
-            ">;",
-            "Lk3/mv0<",
-            "Lk3/os;",
-            ">;",
-            "Lk3/mv0<",
-            "Ljava/util/concurrent/Executor;",
-            ">;",
-            "Lk3/mv0<",
-            "Lk3/qt;",
-            ">;",
-            "Lk3/mv0<",
-            "Lk3/em;",
-            ">;",
-            "Lk3/mv0<",
-            "Li1/a;",
-            ">;",
-            "Lk3/mv0<",
-            "Lk3/jr;",
-            ">;",
-            "Lk3/mv0<",
-            "Lk3/k9;",
-            ">;",
-            "Lk3/mv0<",
-            "Lk3/gr0;",
-            ">;",
-            "Lk3/mv0<",
-            "Lk3/ks;",
-            ">;)",
-            "Lk3/uz;"
-        }
-    .end annotation
-
-    new-instance v14, Lk3/uz;
-
-    move-object v0, v14
-
-    move-object v1, p0
-
-    move-object/from16 v2, p1
-
-    move-object/from16 v3, p2
-
-    move-object/from16 v4, p3
-
-    move-object/from16 v5, p4
-
-    move-object/from16 v6, p5
-
-    move-object/from16 v7, p6
-
-    move-object/from16 v8, p7
-
-    move-object/from16 v9, p8
-
-    move-object/from16 v10, p9
-
-    move-object/from16 v11, p10
-
-    move-object/from16 v12, p11
-
-    move-object/from16 v13, p12
-
-    invoke-direct/range {v0 .. v13}, Lk3/uz;-><init>(Lk3/mv0;Lk3/mv0;Lk3/mv0;Lk3/mv0;Lk3/mv0;Lk3/mv0;Lk3/mv0;Lk3/mv0;Lk3/mv0;Lk3/mv0;Lk3/mv0;Lk3/mv0;Lk3/mv0;)V
-
-    return-object v14
-.end method
-
 
 # virtual methods
-.method public final synthetic get()Ljava/lang/Object;
-    .locals 15
+.method public final a()V
+    .locals 3
 
     .line 1
-    iget-object v0, p0, Lk3/uz;->a:Lk3/mv0;
+    iget-object v0, p0, Lk3/uz;->a:Landroid/content/Context;
 
-    invoke-interface {v0}, Lk3/mv0;->get()Ljava/lang/Object;
+    if-eqz v0, :cond_3
 
-    move-result-object v0
+    iget-object v1, p0, Lk3/uz;->b:Landroid/widget/PopupWindow;
 
-    move-object v2, v0
+    if-nez v1, :cond_0
 
-    check-cast v2, Lk3/vq;
-
-    iget-object v0, p0, Lk3/uz;->b:Lk3/mv0;
-
-    invoke-interface {v0}, Lk3/mv0;->get()Ljava/lang/Object;
-
-    move-result-object v0
-
-    move-object v3, v0
-
-    check-cast v3, Lk3/nr;
-
-    iget-object v0, p0, Lk3/uz;->c:Lk3/mv0;
-
-    invoke-interface {v0}, Lk3/mv0;->get()Ljava/lang/Object;
-
-    move-result-object v0
-
-    move-object v4, v0
-
-    check-cast v4, Lk3/tr;
-
-    iget-object v0, p0, Lk3/uz;->d:Lk3/mv0;
-
-    invoke-interface {v0}, Lk3/mv0;->get()Ljava/lang/Object;
-
-    move-result-object v0
-
-    move-object v5, v0
-
-    check-cast v5, Lk3/zr;
-
-    iget-object v0, p0, Lk3/uz;->e:Lk3/mv0;
-
-    invoke-interface {v0}, Lk3/mv0;->get()Ljava/lang/Object;
-
-    move-result-object v0
-
-    move-object v6, v0
-
-    check-cast v6, Lk3/os;
-
-    iget-object v0, p0, Lk3/uz;->f:Lk3/mv0;
-
-    invoke-interface {v0}, Lk3/mv0;->get()Ljava/lang/Object;
-
-    move-result-object v0
-
-    move-object v7, v0
-
-    check-cast v7, Ljava/util/concurrent/Executor;
-
-    iget-object v0, p0, Lk3/uz;->g:Lk3/mv0;
-
-    invoke-interface {v0}, Lk3/mv0;->get()Ljava/lang/Object;
-
-    move-result-object v0
-
-    move-object v8, v0
-
-    check-cast v8, Lk3/qt;
-
-    iget-object v0, p0, Lk3/uz;->h:Lk3/mv0;
-
-    invoke-interface {v0}, Lk3/mv0;->get()Ljava/lang/Object;
-
-    move-result-object v0
-
-    move-object v9, v0
-
-    check-cast v9, Lk3/em;
-
-    iget-object v0, p0, Lk3/uz;->i:Lk3/mv0;
-
-    invoke-interface {v0}, Lk3/mv0;->get()Ljava/lang/Object;
-
-    move-result-object v0
-
-    move-object v10, v0
-
-    check-cast v10, Li1/a;
-
-    iget-object v0, p0, Lk3/uz;->j:Lk3/mv0;
-
-    invoke-interface {v0}, Lk3/mv0;->get()Ljava/lang/Object;
-
-    move-result-object v0
-
-    move-object v11, v0
-
-    check-cast v11, Lk3/jr;
-
-    iget-object v0, p0, Lk3/uz;->k:Lk3/mv0;
-
-    invoke-interface {v0}, Lk3/mv0;->get()Ljava/lang/Object;
-
-    move-result-object v0
-
-    move-object v12, v0
-
-    check-cast v12, Lk3/k9;
-
-    iget-object v0, p0, Lk3/uz;->l:Lk3/mv0;
-
-    invoke-interface {v0}, Lk3/mv0;->get()Ljava/lang/Object;
-
-    move-result-object v0
-
-    move-object v13, v0
-
-    check-cast v13, Lk3/gr0;
-
-    iget-object v0, p0, Lk3/uz;->m:Lk3/mv0;
-
-    invoke-interface {v0}, Lk3/mv0;->get()Ljava/lang/Object;
-
-    move-result-object v0
-
-    move-object v14, v0
-
-    check-cast v14, Lk3/ks;
+    goto :goto_0
 
     .line 2
-    new-instance v0, Lk3/lz;
+    :cond_0
+    instance-of v1, v0, Landroid/app/Activity;
 
-    move-object v1, v0
+    const/4 v2, 0x0
 
-    invoke-direct/range {v1 .. v14}, Lk3/lz;-><init>(Lk3/vq;Lk3/nr;Lk3/tr;Lk3/zr;Lk3/os;Ljava/util/concurrent/Executor;Lk3/qt;Lk3/em;Li1/a;Lk3/jr;Lk3/k9;Lk3/gr0;Lk3/ks;)V
+    if-eqz v1, :cond_1
 
-    return-object v0
+    check-cast v0, Landroid/app/Activity;
+
+    invoke-virtual {v0}, Landroid/app/Activity;->isDestroyed()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    .line 3
+    iput-object v2, p0, Lk3/uz;->a:Landroid/content/Context;
+
+    .line 4
+    iput-object v2, p0, Lk3/uz;->b:Landroid/widget/PopupWindow;
+
+    return-void
+
+    .line 5
+    :cond_1
+    iget-object v0, p0, Lk3/uz;->b:Landroid/widget/PopupWindow;
+
+    invoke-virtual {v0}, Landroid/widget/PopupWindow;->isShowing()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_2
+
+    .line 6
+    iget-object v0, p0, Lk3/uz;->b:Landroid/widget/PopupWindow;
+
+    invoke-virtual {v0}, Landroid/widget/PopupWindow;->dismiss()V
+
+    .line 7
+    :cond_2
+    iput-object v2, p0, Lk3/uz;->a:Landroid/content/Context;
+
+    .line 8
+    iput-object v2, p0, Lk3/uz;->b:Landroid/widget/PopupWindow;
+
+    :cond_3
+    :goto_0
+    return-void
+.end method
+
+.method public final b(Landroid/content/Context;Landroid/view/View;)V
+    .locals 6
+
+    .line 1
+    invoke-static {}, Ll2/l;->a()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_6
+
+    invoke-static {}, Ll2/l;->b()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    goto :goto_4
+
+    .line 2
+    :cond_0
+    instance-of v0, p1, Landroid/app/Activity;
+
+    const/4 v1, 0x0
+
+    if-eqz v0, :cond_1
+
+    .line 3
+    move-object v0, p1
+
+    check-cast v0, Landroid/app/Activity;
+
+    invoke-virtual {v0}, Landroid/app/Activity;->getWindow()Landroid/view/Window;
+
+    move-result-object v0
+
+    goto :goto_0
+
+    :cond_1
+    move-object v0, v1
+
+    :goto_0
+    if-eqz v0, :cond_4
+
+    .line 4
+    invoke-virtual {v0}, Landroid/view/Window;->getDecorView()Landroid/view/View;
+
+    move-result-object v2
+
+    if-nez v2, :cond_2
+
+    goto :goto_1
+
+    .line 5
+    :cond_2
+    move-object v2, p1
+
+    check-cast v2, Landroid/app/Activity;
+
+    invoke-virtual {v2}, Landroid/app/Activity;->isDestroyed()Z
+
+    move-result v2
+
+    if-eqz v2, :cond_3
+
+    goto :goto_1
+
+    .line 6
+    :cond_3
+    new-instance v2, Landroid/widget/FrameLayout;
+
+    invoke-direct {v2, p1}, Landroid/widget/FrameLayout;-><init>(Landroid/content/Context;)V
+
+    .line 7
+    new-instance v3, Landroid/view/ViewGroup$LayoutParams;
+
+    const/4 v4, -0x1
+
+    invoke-direct {v3, v4, v4}, Landroid/view/ViewGroup$LayoutParams;-><init>(II)V
+
+    invoke-virtual {v2, v3}, Landroid/view/View;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
+
+    .line 8
+    invoke-virtual {v2, p2, v4, v4}, Landroid/view/ViewGroup;->addView(Landroid/view/View;II)V
+
+    .line 9
+    new-instance p2, Landroid/widget/PopupWindow;
+
+    const/4 v3, 0x1
+
+    const/4 v5, 0x0
+
+    invoke-direct {p2, v2, v3, v3, v5}, Landroid/widget/PopupWindow;-><init>(Landroid/view/View;IIZ)V
+
+    .line 10
+    invoke-virtual {p2, v3}, Landroid/widget/PopupWindow;->setOutsideTouchable(Z)V
+
+    .line 11
+    invoke-virtual {p2, v5}, Landroid/widget/PopupWindow;->setClippingEnabled(Z)V
+
+    .line 12
+    :try_start_0
+    invoke-virtual {v0}, Landroid/view/Window;->getDecorView()Landroid/view/View;
+
+    move-result-object v0
+
+    invoke-virtual {p2, v0, v5, v4, v4}, Landroid/widget/PopupWindow;->showAtLocation(Landroid/view/View;III)V
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    goto :goto_2
+
+    :catch_0
+    :cond_4
+    :goto_1
+    move-object p2, v1
+
+    .line 13
+    :goto_2
+    iput-object p2, p0, Lk3/uz;->b:Landroid/widget/PopupWindow;
+
+    if-eqz p2, :cond_5
+
+    goto :goto_3
+
+    :cond_5
+    move-object p1, v1
+
+    .line 14
+    :goto_3
+    iput-object p1, p0, Lk3/uz;->a:Landroid/content/Context;
+
+    :cond_6
+    :goto_4
+    return-void
 .end method

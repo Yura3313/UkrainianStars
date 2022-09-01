@@ -3,7 +3,7 @@
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lk3/iv0;
+.implements Lk3/mv0;
 
 
 # instance fields
@@ -46,7 +46,9 @@
 
     packed-switch v0, :pswitch_data_0
 
-    goto :goto_0
+    const/4 v0, 0x0
+
+    return-object v0
 
     .line 1
     :pswitch_0
@@ -55,23 +57,12 @@
     check-cast v0, Lcom/google/android/gms/internal/ads/n;
 
     .line 2
-    iget-object v0, v0, Lcom/google/android/gms/internal/ads/n;->a:Ljava/util/HashSet;
+    iget-object v0, v0, Lcom/google/android/gms/internal/ads/n;->g:Ljava/util/HashSet;
 
     const-string v1, "Cannot return null from a non-@Nullable @Provides method"
 
     .line 3
-    invoke-static {v0, v1}, Ltd/c;->k(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
-
-    return-object v0
-
-    .line 4
-    :goto_0
-    iget-object v0, p0, Lk3/at;->b:Ljava/lang/Object;
-
-    check-cast v0, Lk3/zw;
-
-    .line 5
-    iget-object v0, v0, Lk3/zw;->b:Lcom/google/android/gms/internal/ads/zzand;
+    invoke-static {v0, v1}, Lk3/gj;->f(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     return-object v0
 

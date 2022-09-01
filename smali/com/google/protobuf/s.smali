@@ -42,7 +42,7 @@
     check-cast p1, Lcom/google/protobuf/GeneratedMessageLite$c;
 
     .line 2
-    iget p1, p1, Lcom/google/protobuf/GeneratedMessageLite$c;->g:I
+    iget p1, p1, Lcom/google/protobuf/GeneratedMessageLite$c;->h:I
 
     return p1
 .end method
@@ -154,20 +154,20 @@
     iget-object v0, p2, Lcom/google/protobuf/GeneratedMessageLite$d;->d:Lcom/google/protobuf/GeneratedMessageLite$c;
 
     .line 3
-    iget v1, v0, Lcom/google/protobuf/GeneratedMessageLite$c;->g:I
+    iget v1, v0, Lcom/google/protobuf/GeneratedMessageLite$c;->h:I
 
     .line 4
-    iget-boolean v2, v0, Lcom/google/protobuf/GeneratedMessageLite$c;->i:Z
-
-    if-eqz v2, :cond_0
-
-    .line 5
     iget-boolean v2, v0, Lcom/google/protobuf/GeneratedMessageLite$c;->j:Z
 
     if-eqz v2, :cond_0
 
+    .line 5
+    iget-boolean v2, v0, Lcom/google/protobuf/GeneratedMessageLite$c;->k:Z
+
+    if-eqz v2, :cond_0
+
     .line 6
-    iget-object p3, v0, Lcom/google/protobuf/GeneratedMessageLite$c;->h:Lcom/google/protobuf/w1$b;
+    iget-object p3, v0, Lcom/google/protobuf/GeneratedMessageLite$c;->i:Lcom/google/protobuf/w1$b;
 
     .line 7
     invoke-virtual {p3}, Ljava/lang/Enum;->ordinal()I
@@ -249,7 +249,7 @@
     iget-object p1, p2, Lcom/google/protobuf/GeneratedMessageLite$d;->d:Lcom/google/protobuf/GeneratedMessageLite$c;
 
     .line 22
-    iget-object p1, p1, Lcom/google/protobuf/GeneratedMessageLite$c;->f:Lcom/google/protobuf/a0$d;
+    iget-object p1, p1, Lcom/google/protobuf/GeneratedMessageLite$c;->g:Lcom/google/protobuf/a0$d;
 
     .line 23
     invoke-static {v1, p3, p1, p5, p6}, Lcom/google/protobuf/j1;->y(ILjava/util/List;Lcom/google/protobuf/a0$d;Ljava/lang/Object;Lcom/google/protobuf/p1;)Ljava/lang/Object;
@@ -365,7 +365,7 @@
 
     .line 43
     :goto_1
-    iget-object p2, p2, Lcom/google/protobuf/GeneratedMessageLite$c;->h:Lcom/google/protobuf/w1$b;
+    iget-object p2, p2, Lcom/google/protobuf/GeneratedMessageLite$c;->i:Lcom/google/protobuf/w1$b;
 
     .line 44
     invoke-virtual {p3, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
@@ -382,10 +382,10 @@
     const/4 v2, 0x0
 
     .line 45
-    iget-object v0, v0, Lcom/google/protobuf/GeneratedMessageLite$c;->h:Lcom/google/protobuf/w1$b;
+    iget-object v0, v0, Lcom/google/protobuf/GeneratedMessageLite$c;->i:Lcom/google/protobuf/w1$b;
 
     .line 46
-    sget-object v3, Lcom/google/protobuf/w1$b;->u:Lcom/google/protobuf/w1$b;
+    sget-object v3, Lcom/google/protobuf/w1$b;->v:Lcom/google/protobuf/w1$b;
 
     if-ne v0, v3, :cond_2
 
@@ -398,7 +398,7 @@
     iget-object p3, p2, Lcom/google/protobuf/GeneratedMessageLite$d;->d:Lcom/google/protobuf/GeneratedMessageLite$c;
 
     .line 49
-    iget-object p3, p3, Lcom/google/protobuf/GeneratedMessageLite$c;->f:Lcom/google/protobuf/a0$d;
+    iget-object p3, p3, Lcom/google/protobuf/GeneratedMessageLite$c;->g:Lcom/google/protobuf/a0$d;
 
     .line 50
     invoke-interface {p3, p1}, Lcom/google/protobuf/a0$d;->a(I)Lcom/google/protobuf/a0$c;
@@ -648,7 +648,7 @@
     :goto_2
     iget-object p1, p2, Lcom/google/protobuf/GeneratedMessageLite$d;->d:Lcom/google/protobuf/GeneratedMessageLite$c;
 
-    iget-boolean p3, p1, Lcom/google/protobuf/GeneratedMessageLite$c;->i:Z
+    iget-boolean p3, p1, Lcom/google/protobuf/GeneratedMessageLite$c;->j:Z
 
     if-eqz p3, :cond_3
 
@@ -659,7 +659,7 @@
 
     .line 78
     :cond_3
-    iget-object p1, p1, Lcom/google/protobuf/GeneratedMessageLite$c;->h:Lcom/google/protobuf/w1$b;
+    iget-object p1, p1, Lcom/google/protobuf/GeneratedMessageLite$c;->i:Lcom/google/protobuf/w1$b;
 
     .line 79
     invoke-virtual {p1}, Ljava/lang/Enum;->ordinal()I
@@ -926,12 +926,12 @@
     check-cast v0, Lcom/google/protobuf/GeneratedMessageLite$c;
 
     .line 2
-    iget-boolean v1, v0, Lcom/google/protobuf/GeneratedMessageLite$c;->i:Z
+    iget-boolean v1, v0, Lcom/google/protobuf/GeneratedMessageLite$c;->j:Z
 
     if-eqz v1, :cond_0
 
     .line 3
-    iget-object v1, v0, Lcom/google/protobuf/GeneratedMessageLite$c;->h:Lcom/google/protobuf/w1$b;
+    iget-object v1, v0, Lcom/google/protobuf/GeneratedMessageLite$c;->i:Lcom/google/protobuf/w1$b;
 
     .line 4
     invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
@@ -946,7 +946,7 @@
 
     .line 5
     :pswitch_0
-    iget v1, v0, Lcom/google/protobuf/GeneratedMessageLite$c;->g:I
+    iget v1, v0, Lcom/google/protobuf/GeneratedMessageLite$c;->h:I
 
     .line 6
     invoke-interface {p2}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
@@ -956,7 +956,7 @@
     check-cast p2, Ljava/util/List;
 
     .line 7
-    iget-boolean v0, v0, Lcom/google/protobuf/GeneratedMessageLite$c;->j:Z
+    iget-boolean v0, v0, Lcom/google/protobuf/GeneratedMessageLite$c;->k:Z
 
     .line 8
     invoke-static {v1, p2, p1, v0}, Lcom/google/protobuf/j1;->R(ILjava/util/List;Lcom/google/protobuf/x1;Z)V
@@ -965,7 +965,7 @@
 
     .line 9
     :pswitch_1
-    iget v1, v0, Lcom/google/protobuf/GeneratedMessageLite$c;->g:I
+    iget v1, v0, Lcom/google/protobuf/GeneratedMessageLite$c;->h:I
 
     .line 10
     invoke-interface {p2}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
@@ -975,7 +975,7 @@
     check-cast p2, Ljava/util/List;
 
     .line 11
-    iget-boolean v0, v0, Lcom/google/protobuf/GeneratedMessageLite$c;->j:Z
+    iget-boolean v0, v0, Lcom/google/protobuf/GeneratedMessageLite$c;->k:Z
 
     .line 12
     invoke-static {v1, p2, p1, v0}, Lcom/google/protobuf/j1;->Q(ILjava/util/List;Lcom/google/protobuf/x1;Z)V
@@ -984,7 +984,7 @@
 
     .line 13
     :pswitch_2
-    iget v1, v0, Lcom/google/protobuf/GeneratedMessageLite$c;->g:I
+    iget v1, v0, Lcom/google/protobuf/GeneratedMessageLite$c;->h:I
 
     .line 14
     invoke-interface {p2}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
@@ -994,7 +994,7 @@
     check-cast p2, Ljava/util/List;
 
     .line 15
-    iget-boolean v0, v0, Lcom/google/protobuf/GeneratedMessageLite$c;->j:Z
+    iget-boolean v0, v0, Lcom/google/protobuf/GeneratedMessageLite$c;->k:Z
 
     .line 16
     invoke-static {v1, p2, p1, v0}, Lcom/google/protobuf/j1;->P(ILjava/util/List;Lcom/google/protobuf/x1;Z)V
@@ -1003,7 +1003,7 @@
 
     .line 17
     :pswitch_3
-    iget v1, v0, Lcom/google/protobuf/GeneratedMessageLite$c;->g:I
+    iget v1, v0, Lcom/google/protobuf/GeneratedMessageLite$c;->h:I
 
     .line 18
     invoke-interface {p2}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
@@ -1013,7 +1013,7 @@
     check-cast p2, Ljava/util/List;
 
     .line 19
-    iget-boolean v0, v0, Lcom/google/protobuf/GeneratedMessageLite$c;->j:Z
+    iget-boolean v0, v0, Lcom/google/protobuf/GeneratedMessageLite$c;->k:Z
 
     .line 20
     invoke-static {v1, p2, p1, v0}, Lcom/google/protobuf/j1;->O(ILjava/util/List;Lcom/google/protobuf/x1;Z)V
@@ -1022,7 +1022,7 @@
 
     .line 21
     :pswitch_4
-    iget v1, v0, Lcom/google/protobuf/GeneratedMessageLite$c;->g:I
+    iget v1, v0, Lcom/google/protobuf/GeneratedMessageLite$c;->h:I
 
     .line 22
     invoke-interface {p2}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
@@ -1032,7 +1032,7 @@
     check-cast p2, Ljava/util/List;
 
     .line 23
-    iget-boolean v0, v0, Lcom/google/protobuf/GeneratedMessageLite$c;->j:Z
+    iget-boolean v0, v0, Lcom/google/protobuf/GeneratedMessageLite$c;->k:Z
 
     .line 24
     invoke-static {v1, p2, p1, v0}, Lcom/google/protobuf/j1;->L(ILjava/util/List;Lcom/google/protobuf/x1;Z)V
@@ -1041,7 +1041,7 @@
 
     .line 25
     :pswitch_5
-    iget v1, v0, Lcom/google/protobuf/GeneratedMessageLite$c;->g:I
+    iget v1, v0, Lcom/google/protobuf/GeneratedMessageLite$c;->h:I
 
     .line 26
     invoke-interface {p2}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
@@ -1051,7 +1051,7 @@
     check-cast p2, Ljava/util/List;
 
     .line 27
-    iget-boolean v0, v0, Lcom/google/protobuf/GeneratedMessageLite$c;->j:Z
+    iget-boolean v0, v0, Lcom/google/protobuf/GeneratedMessageLite$c;->k:Z
 
     .line 28
     invoke-static {v1, p2, p1, v0}, Lcom/google/protobuf/j1;->T(ILjava/util/List;Lcom/google/protobuf/x1;Z)V
@@ -1060,7 +1060,7 @@
 
     .line 29
     :pswitch_6
-    iget v0, v0, Lcom/google/protobuf/GeneratedMessageLite$c;->g:I
+    iget v0, v0, Lcom/google/protobuf/GeneratedMessageLite$c;->h:I
 
     .line 30
     invoke-interface {p2}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
@@ -1092,7 +1092,7 @@
     if-nez v3, :cond_1
 
     .line 34
-    iget v0, v0, Lcom/google/protobuf/GeneratedMessageLite$c;->g:I
+    iget v0, v0, Lcom/google/protobuf/GeneratedMessageLite$c;->h:I
 
     .line 35
     invoke-interface {p2}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
@@ -1140,7 +1140,7 @@
     if-nez v3, :cond_1
 
     .line 41
-    iget v0, v0, Lcom/google/protobuf/GeneratedMessageLite$c;->g:I
+    iget v0, v0, Lcom/google/protobuf/GeneratedMessageLite$c;->h:I
 
     .line 42
     invoke-interface {p2}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
@@ -1172,7 +1172,7 @@
 
     .line 46
     :pswitch_9
-    iget v0, v0, Lcom/google/protobuf/GeneratedMessageLite$c;->g:I
+    iget v0, v0, Lcom/google/protobuf/GeneratedMessageLite$c;->h:I
 
     .line 47
     invoke-interface {p2}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
@@ -1188,7 +1188,7 @@
 
     .line 49
     :pswitch_a
-    iget v1, v0, Lcom/google/protobuf/GeneratedMessageLite$c;->g:I
+    iget v1, v0, Lcom/google/protobuf/GeneratedMessageLite$c;->h:I
 
     .line 50
     invoke-interface {p2}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
@@ -1198,7 +1198,7 @@
     check-cast p2, Ljava/util/List;
 
     .line 51
-    iget-boolean v0, v0, Lcom/google/protobuf/GeneratedMessageLite$c;->j:Z
+    iget-boolean v0, v0, Lcom/google/protobuf/GeneratedMessageLite$c;->k:Z
 
     .line 52
     invoke-static {v1, p2, p1, v0}, Lcom/google/protobuf/j1;->D(ILjava/util/List;Lcom/google/protobuf/x1;Z)V
@@ -1207,7 +1207,7 @@
 
     .line 53
     :pswitch_b
-    iget v1, v0, Lcom/google/protobuf/GeneratedMessageLite$c;->g:I
+    iget v1, v0, Lcom/google/protobuf/GeneratedMessageLite$c;->h:I
 
     .line 54
     invoke-interface {p2}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
@@ -1217,7 +1217,7 @@
     check-cast p2, Ljava/util/List;
 
     .line 55
-    iget-boolean v0, v0, Lcom/google/protobuf/GeneratedMessageLite$c;->j:Z
+    iget-boolean v0, v0, Lcom/google/protobuf/GeneratedMessageLite$c;->k:Z
 
     .line 56
     invoke-static {v1, p2, p1, v0}, Lcom/google/protobuf/j1;->H(ILjava/util/List;Lcom/google/protobuf/x1;Z)V
@@ -1226,7 +1226,7 @@
 
     .line 57
     :pswitch_c
-    iget v1, v0, Lcom/google/protobuf/GeneratedMessageLite$c;->g:I
+    iget v1, v0, Lcom/google/protobuf/GeneratedMessageLite$c;->h:I
 
     .line 58
     invoke-interface {p2}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
@@ -1236,7 +1236,7 @@
     check-cast p2, Ljava/util/List;
 
     .line 59
-    iget-boolean v0, v0, Lcom/google/protobuf/GeneratedMessageLite$c;->j:Z
+    iget-boolean v0, v0, Lcom/google/protobuf/GeneratedMessageLite$c;->k:Z
 
     .line 60
     invoke-static {v1, p2, p1, v0}, Lcom/google/protobuf/j1;->I(ILjava/util/List;Lcom/google/protobuf/x1;Z)V
@@ -1245,7 +1245,7 @@
 
     .line 61
     :pswitch_d
-    iget v1, v0, Lcom/google/protobuf/GeneratedMessageLite$c;->g:I
+    iget v1, v0, Lcom/google/protobuf/GeneratedMessageLite$c;->h:I
 
     .line 62
     invoke-interface {p2}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
@@ -1255,7 +1255,7 @@
     check-cast p2, Ljava/util/List;
 
     .line 63
-    iget-boolean v0, v0, Lcom/google/protobuf/GeneratedMessageLite$c;->j:Z
+    iget-boolean v0, v0, Lcom/google/protobuf/GeneratedMessageLite$c;->k:Z
 
     .line 64
     invoke-static {v1, p2, p1, v0}, Lcom/google/protobuf/j1;->L(ILjava/util/List;Lcom/google/protobuf/x1;Z)V
@@ -1264,7 +1264,7 @@
 
     .line 65
     :pswitch_e
-    iget v1, v0, Lcom/google/protobuf/GeneratedMessageLite$c;->g:I
+    iget v1, v0, Lcom/google/protobuf/GeneratedMessageLite$c;->h:I
 
     .line 66
     invoke-interface {p2}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
@@ -1274,7 +1274,7 @@
     check-cast p2, Ljava/util/List;
 
     .line 67
-    iget-boolean v0, v0, Lcom/google/protobuf/GeneratedMessageLite$c;->j:Z
+    iget-boolean v0, v0, Lcom/google/protobuf/GeneratedMessageLite$c;->k:Z
 
     .line 68
     invoke-static {v1, p2, p1, v0}, Lcom/google/protobuf/j1;->U(ILjava/util/List;Lcom/google/protobuf/x1;Z)V
@@ -1283,7 +1283,7 @@
 
     .line 69
     :pswitch_f
-    iget v1, v0, Lcom/google/protobuf/GeneratedMessageLite$c;->g:I
+    iget v1, v0, Lcom/google/protobuf/GeneratedMessageLite$c;->h:I
 
     .line 70
     invoke-interface {p2}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
@@ -1293,7 +1293,7 @@
     check-cast p2, Ljava/util/List;
 
     .line 71
-    iget-boolean v0, v0, Lcom/google/protobuf/GeneratedMessageLite$c;->j:Z
+    iget-boolean v0, v0, Lcom/google/protobuf/GeneratedMessageLite$c;->k:Z
 
     .line 72
     invoke-static {v1, p2, p1, v0}, Lcom/google/protobuf/j1;->M(ILjava/util/List;Lcom/google/protobuf/x1;Z)V
@@ -1302,7 +1302,7 @@
 
     .line 73
     :pswitch_10
-    iget v1, v0, Lcom/google/protobuf/GeneratedMessageLite$c;->g:I
+    iget v1, v0, Lcom/google/protobuf/GeneratedMessageLite$c;->h:I
 
     .line 74
     invoke-interface {p2}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
@@ -1312,7 +1312,7 @@
     check-cast p2, Ljava/util/List;
 
     .line 75
-    iget-boolean v0, v0, Lcom/google/protobuf/GeneratedMessageLite$c;->j:Z
+    iget-boolean v0, v0, Lcom/google/protobuf/GeneratedMessageLite$c;->k:Z
 
     .line 76
     invoke-static {v1, p2, p1, v0}, Lcom/google/protobuf/j1;->J(ILjava/util/List;Lcom/google/protobuf/x1;Z)V
@@ -1321,7 +1321,7 @@
 
     .line 77
     :pswitch_11
-    iget v1, v0, Lcom/google/protobuf/GeneratedMessageLite$c;->g:I
+    iget v1, v0, Lcom/google/protobuf/GeneratedMessageLite$c;->h:I
 
     .line 78
     invoke-interface {p2}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
@@ -1331,7 +1331,7 @@
     check-cast p2, Ljava/util/List;
 
     .line 79
-    iget-boolean v0, v0, Lcom/google/protobuf/GeneratedMessageLite$c;->j:Z
+    iget-boolean v0, v0, Lcom/google/protobuf/GeneratedMessageLite$c;->k:Z
 
     .line 80
     invoke-static {v1, p2, p1, v0}, Lcom/google/protobuf/j1;->F(ILjava/util/List;Lcom/google/protobuf/x1;Z)V
@@ -1340,7 +1340,7 @@
 
     .line 81
     :cond_0
-    iget-object v1, v0, Lcom/google/protobuf/GeneratedMessageLite$c;->h:Lcom/google/protobuf/w1$b;
+    iget-object v1, v0, Lcom/google/protobuf/GeneratedMessageLite$c;->i:Lcom/google/protobuf/w1$b;
 
     .line 82
     invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
@@ -1353,7 +1353,7 @@
 
     .line 83
     :pswitch_12
-    iget v0, v0, Lcom/google/protobuf/GeneratedMessageLite$c;->g:I
+    iget v0, v0, Lcom/google/protobuf/GeneratedMessageLite$c;->h:I
 
     .line 84
     invoke-interface {p2}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
@@ -1374,7 +1374,7 @@
 
     .line 85
     :pswitch_13
-    iget v0, v0, Lcom/google/protobuf/GeneratedMessageLite$c;->g:I
+    iget v0, v0, Lcom/google/protobuf/GeneratedMessageLite$c;->h:I
 
     .line 86
     invoke-interface {p2}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
@@ -1395,7 +1395,7 @@
 
     .line 87
     :pswitch_14
-    iget v0, v0, Lcom/google/protobuf/GeneratedMessageLite$c;->g:I
+    iget v0, v0, Lcom/google/protobuf/GeneratedMessageLite$c;->h:I
 
     .line 88
     invoke-interface {p2}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
@@ -1416,7 +1416,7 @@
 
     .line 89
     :pswitch_15
-    iget v0, v0, Lcom/google/protobuf/GeneratedMessageLite$c;->g:I
+    iget v0, v0, Lcom/google/protobuf/GeneratedMessageLite$c;->h:I
 
     .line 90
     invoke-interface {p2}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
@@ -1437,7 +1437,7 @@
 
     .line 91
     :pswitch_16
-    iget v0, v0, Lcom/google/protobuf/GeneratedMessageLite$c;->g:I
+    iget v0, v0, Lcom/google/protobuf/GeneratedMessageLite$c;->h:I
 
     .line 92
     invoke-interface {p2}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
@@ -1458,7 +1458,7 @@
 
     .line 93
     :pswitch_17
-    iget v0, v0, Lcom/google/protobuf/GeneratedMessageLite$c;->g:I
+    iget v0, v0, Lcom/google/protobuf/GeneratedMessageLite$c;->h:I
 
     .line 94
     invoke-interface {p2}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
@@ -1479,7 +1479,7 @@
 
     .line 95
     :pswitch_18
-    iget v0, v0, Lcom/google/protobuf/GeneratedMessageLite$c;->g:I
+    iget v0, v0, Lcom/google/protobuf/GeneratedMessageLite$c;->h:I
 
     .line 96
     invoke-interface {p2}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
@@ -1496,7 +1496,7 @@
 
     .line 97
     :pswitch_19
-    iget v0, v0, Lcom/google/protobuf/GeneratedMessageLite$c;->g:I
+    iget v0, v0, Lcom/google/protobuf/GeneratedMessageLite$c;->h:I
 
     .line 98
     invoke-interface {p2}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
@@ -1528,7 +1528,7 @@
 
     .line 102
     :pswitch_1a
-    iget v0, v0, Lcom/google/protobuf/GeneratedMessageLite$c;->g:I
+    iget v0, v0, Lcom/google/protobuf/GeneratedMessageLite$c;->h:I
 
     .line 103
     invoke-interface {p2}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
@@ -1560,7 +1560,7 @@
 
     .line 107
     :pswitch_1b
-    iget v0, v0, Lcom/google/protobuf/GeneratedMessageLite$c;->g:I
+    iget v0, v0, Lcom/google/protobuf/GeneratedMessageLite$c;->h:I
 
     .line 108
     invoke-interface {p2}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
@@ -1580,7 +1580,7 @@
 
     .line 110
     :pswitch_1c
-    iget v0, v0, Lcom/google/protobuf/GeneratedMessageLite$c;->g:I
+    iget v0, v0, Lcom/google/protobuf/GeneratedMessageLite$c;->h:I
 
     .line 111
     invoke-interface {p2}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
@@ -1601,7 +1601,7 @@
 
     .line 112
     :pswitch_1d
-    iget v0, v0, Lcom/google/protobuf/GeneratedMessageLite$c;->g:I
+    iget v0, v0, Lcom/google/protobuf/GeneratedMessageLite$c;->h:I
 
     .line 113
     invoke-interface {p2}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
@@ -1622,7 +1622,7 @@
 
     .line 114
     :pswitch_1e
-    iget v0, v0, Lcom/google/protobuf/GeneratedMessageLite$c;->g:I
+    iget v0, v0, Lcom/google/protobuf/GeneratedMessageLite$c;->h:I
 
     .line 115
     invoke-interface {p2}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
@@ -1643,7 +1643,7 @@
 
     .line 116
     :pswitch_1f
-    iget v0, v0, Lcom/google/protobuf/GeneratedMessageLite$c;->g:I
+    iget v0, v0, Lcom/google/protobuf/GeneratedMessageLite$c;->h:I
 
     .line 117
     invoke-interface {p2}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
@@ -1664,7 +1664,7 @@
 
     .line 118
     :pswitch_20
-    iget v0, v0, Lcom/google/protobuf/GeneratedMessageLite$c;->g:I
+    iget v0, v0, Lcom/google/protobuf/GeneratedMessageLite$c;->h:I
 
     .line 119
     invoke-interface {p2}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
@@ -1685,7 +1685,7 @@
 
     .line 120
     :pswitch_21
-    iget v0, v0, Lcom/google/protobuf/GeneratedMessageLite$c;->g:I
+    iget v0, v0, Lcom/google/protobuf/GeneratedMessageLite$c;->h:I
 
     .line 121
     invoke-interface {p2}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
@@ -1706,7 +1706,7 @@
 
     .line 122
     :pswitch_22
-    iget v0, v0, Lcom/google/protobuf/GeneratedMessageLite$c;->g:I
+    iget v0, v0, Lcom/google/protobuf/GeneratedMessageLite$c;->h:I
 
     .line 123
     invoke-interface {p2}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
@@ -1727,7 +1727,7 @@
 
     .line 124
     :pswitch_23
-    iget v0, v0, Lcom/google/protobuf/GeneratedMessageLite$c;->g:I
+    iget v0, v0, Lcom/google/protobuf/GeneratedMessageLite$c;->h:I
 
     .line 125
     invoke-interface {p2}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;

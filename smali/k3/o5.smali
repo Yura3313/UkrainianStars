@@ -16,7 +16,7 @@
     .end annotation
 .end field
 
-.field public static final c:Ls4/e;
+.field public static final c:Lk3/q5;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lk3/n5<",
@@ -41,16 +41,16 @@
     sput-object v0, Lk3/o5;->a:Ljava/nio/charset/Charset;
 
     .line 2
-    new-instance v0, Lk3/q5;
+    new-instance v0, Lk3/ay0;
 
-    invoke-direct {v0}, Lk3/q5;-><init>()V
+    invoke-direct {v0}, Lk3/ay0;-><init>()V
 
     sput-object v0, Lk3/o5;->b:Lk3/p5;
 
     .line 3
-    sget-object v0, Ls4/e;->f:Ls4/e;
+    sget-object v0, Lk3/q5;->g:Lk3/q5;
 
-    sput-object v0, Lk3/o5;->c:Ls4/e;
+    sput-object v0, Lk3/o5;->c:Lk3/q5;
 
     return-void
 .end method

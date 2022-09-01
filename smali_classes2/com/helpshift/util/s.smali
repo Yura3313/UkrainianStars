@@ -1,134 +1,74 @@
 .class public final Lcom/helpshift/util/s;
 .super Ljava/lang/Object;
-.source "HSSimpleDateFormat.java"
-
-
-# instance fields
-.field public a:Ljava/text/SimpleDateFormat;
+.source "HSViewUtil.java"
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;)V
-    .locals 1
-
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 2
-    new-instance v0, Ljava/text/SimpleDateFormat;
-
-    invoke-direct {v0, p1}, Ljava/text/SimpleDateFormat;-><init>(Ljava/lang/String;)V
-
-    iput-object v0, p0, Lcom/helpshift/util/s;->a:Ljava/text/SimpleDateFormat;
-
-    .line 3
-    invoke-static {p2}, Ljava/util/TimeZone;->getTimeZone(Ljava/lang/String;)Ljava/util/TimeZone;
-
-    move-result-object p1
-
-    invoke-virtual {v0, p1}, Ljava/text/DateFormat;->setTimeZone(Ljava/util/TimeZone;)V
-
-    return-void
-.end method
-
-.method public constructor <init>(Ljava/lang/String;Ljava/util/Locale;)V
-    .locals 1
-
-    .line 4
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 5
-    new-instance v0, Ljava/text/SimpleDateFormat;
-
-    invoke-direct {v0, p1, p2}, Ljava/text/SimpleDateFormat;-><init>(Ljava/lang/String;Ljava/util/Locale;)V
-
-    iput-object v0, p0, Lcom/helpshift/util/s;->a:Ljava/text/SimpleDateFormat;
-
-    return-void
-.end method
-
-.method public constructor <init>(Ljava/util/Locale;)V
+.method public static a(Landroid/view/View;)Z
     .locals 2
 
-    .line 6
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    const/4 v0, 0x0
 
-    .line 7
-    new-instance v0, Ljava/text/SimpleDateFormat;
+    if-nez p0, :cond_0
 
-    const-string v1, "yyyy-MM-dd\'T\'HH:mm:ss.SSS\'Z\'"
+    goto :goto_0
 
-    invoke-direct {v0, v1, p1}, Ljava/text/SimpleDateFormat;-><init>(Ljava/lang/String;Ljava/util/Locale;)V
+    :cond_0
+    invoke-virtual {p0}, Landroid/view/View;->getVisibility()I
 
-    iput-object v0, p0, Lcom/helpshift/util/s;->a:Ljava/text/SimpleDateFormat;
+    move-result p0
 
-    const-string p1, "GMT"
+    const/16 v1, 0x8
 
-    .line 8
-    invoke-static {p1}, Ljava/util/TimeZone;->getTimeZone(Ljava/lang/String;)Ljava/util/TimeZone;
+    if-ne p0, v1, :cond_1
 
-    move-result-object p1
+    const/4 v0, 0x1
 
-    invoke-virtual {v0, p1}, Ljava/text/DateFormat;->setTimeZone(Ljava/util/TimeZone;)V
-
-    return-void
+    :cond_1
+    :goto_0
+    return v0
 .end method
 
+.method public static b(Landroid/view/View;)Z
+    .locals 2
 
-# virtual methods
-.method public final declared-synchronized a(Ljava/util/Date;)Ljava/lang/String;
-    .locals 1
+    const/4 v0, 0x0
 
-    monitor-enter p0
+    if-eqz p0, :cond_0
 
-    :try_start_0
-    iget-object v0, p0, Lcom/helpshift/util/s;->a:Ljava/text/SimpleDateFormat;
+    invoke-virtual {p0}, Landroid/view/View;->getLayoutDirection()I
 
-    invoke-virtual {v0, p1}, Ljava/text/DateFormat;->format(Ljava/util/Date;)Ljava/lang/String;
+    move-result p0
 
-    move-result-object p1
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+    const/4 v1, 0x1
 
-    monitor-exit p0
+    if-ne p0, v1, :cond_0
 
-    return-object p1
+    const/4 v0, 0x1
 
-    :catchall_0
-    move-exception p1
-
-    monitor-exit p0
-
-    throw p1
+    :cond_0
+    return v0
 .end method
 
-.method public final declared-synchronized b(Ljava/lang/String;)Ljava/util/Date;
+.method public static c(Landroid/view/View;)Z
     .locals 1
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/text/ParseException;
-        }
-    .end annotation
 
-    monitor-enter p0
+    const/4 v0, 0x0
 
-    :try_start_0
-    iget-object v0, p0, Lcom/helpshift/util/s;->a:Ljava/text/SimpleDateFormat;
+    if-nez p0, :cond_0
 
-    invoke-virtual {v0, p1}, Ljava/text/DateFormat;->parse(Ljava/lang/String;)Ljava/util/Date;
+    goto :goto_0
 
-    move-result-object p1
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+    :cond_0
+    invoke-virtual {p0}, Landroid/view/View;->getVisibility()I
 
-    monitor-exit p0
+    move-result p0
 
-    return-object p1
+    if-nez p0, :cond_1
 
-    :catchall_0
-    move-exception p1
+    const/4 v0, 0x1
 
-    monitor-exit p0
-
-    throw p1
+    :cond_1
+    :goto_0
+    return v0
 .end method

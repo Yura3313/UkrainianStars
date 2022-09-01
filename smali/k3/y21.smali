@@ -2,294 +2,319 @@
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
-# interfaces
-.implements Landroid/webkit/ValueCallback;
-
 
 # annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ljava/lang/Object;",
-        "Landroid/webkit/ValueCallback<",
-        "Ljava/lang/String;",
-        ">;"
-    }
+.annotation runtime Ljavax/annotation/ParametersAreNonnullByDefault;
 .end annotation
 
 
 # instance fields
-.field public final synthetic a:Lk3/z21;
+.field public final a:Ljava/lang/Object;
+
+.field public b:I
+
+.field public c:Ljava/util/LinkedList;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/List<",
+            "Lk3/z21;",
+            ">;"
+        }
+    .end annotation
+.end field
 
 
 # direct methods
-.method public constructor <init>(Lk3/z21;)V
-    .locals 0
+.method public constructor <init>()V
+    .locals 1
 
-    iput-object p1, p0, Lk3/y21;->a:Lk3/z21;
-
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    new-instance v0, Ljava/lang/Object;
+
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+
+    iput-object v0, p0, Lk3/y21;->a:Ljava/lang/Object;
+
+    .line 3
+    new-instance v0, Ljava/util/LinkedList;
+
+    invoke-direct {v0}, Ljava/util/LinkedList;-><init>()V
+
+    iput-object v0, p0, Lk3/y21;->c:Ljava/util/LinkedList;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final onReceiveValue(Ljava/lang/Object;)V
-    .locals 11
+.method public final a(Lk3/z21;)Z
+    .locals 5
 
     .line 1
-    check-cast p1, Ljava/lang/String;
-
-    .line 2
-    iget-object v0, p0, Lk3/y21;->a:Lk3/z21;
-
-    iget-object v1, v0, Lk3/z21;->j:Lk3/x21;
-
-    iget-object v9, v0, Lk3/z21;->g:Lk3/t21;
-
-    iget-object v2, v0, Lk3/z21;->h:Landroid/webkit/WebView;
-
-    iget-boolean v4, v0, Lk3/z21;->i:Z
-
-    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 3
-    iget-object v0, v9, Lk3/t21;->g:Ljava/lang/Object;
+    iget-object v0, p0, Lk3/y21;->a:Ljava/lang/Object;
 
     monitor-enter v0
 
-    .line 4
+    .line 2
     :try_start_0
-    iget v3, v9, Lk3/t21;->m:I
+    iget-object v1, p0, Lk3/y21;->c:Ljava/util/LinkedList;
 
-    add-int/lit8 v3, v3, -0x1
+    invoke-interface {v1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
-    iput v3, v9, Lk3/t21;->m:I
+    move-result-object v1
+
+    .line 3
+    :cond_0
+    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v2
+
+    if-eqz v2, :cond_2
+
+    .line 4
+    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Lk3/z21;
 
     .line 5
-    monitor-exit v0
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_2
+    sget-object v3, Li1/p;->B:Li1/p;
+
+    iget-object v3, v3, Li1/p;->g:Lk3/ia;
 
     .line 6
-    :try_start_1
-    invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+    invoke-virtual {v3}, Lk3/ia;->f()Lk3/ua;
 
-    move-result v0
+    move-result-object v3
 
-    const/4 v10, 0x1
+    check-cast v3, Lk3/xa;
 
-    if-nez v0, :cond_1
+    invoke-virtual {v3}, Lk3/xa;->z()Z
+
+    move-result v3
+
+    const/4 v4, 0x1
+
+    if-nez v3, :cond_1
+
+    if-eq p1, v2, :cond_0
 
     .line 7
-    new-instance v0, Lorg/json/JSONObject;
+    iget-object v2, v2, Lk3/z21;->o:Ljava/lang/String;
 
-    invoke-direct {v0, p1}, Lorg/json/JSONObject;-><init>(Ljava/lang/String;)V
-
-    const-string p1, "text"
+    iget-object v3, p1, Lk3/z21;->o:Ljava/lang/String;
 
     .line 8
-    invoke-virtual {v0, p1}, Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v2, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    move-result-object v3
+    move-result v2
+
+    if-eqz v2, :cond_0
 
     .line 9
-    iget-boolean p1, v1, Lk3/x21;->s:Z
-
-    if-nez p1, :cond_0
-
-    invoke-virtual {v2}, Landroid/webkit/WebView;->getTitle()Ljava/lang/String;
-
-    move-result-object p1
-
-    invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
-
-    move-result p1
-
-    if-nez p1, :cond_0
+    invoke-interface {v1}, Ljava/util/Iterator;->remove()V
 
     .line 10
-    invoke-virtual {v2}, Landroid/webkit/WebView;->getTitle()Ljava/lang/String;
+    monitor-exit v0
 
-    move-result-object p1
+    return v4
 
-    invoke-static {p1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+    .line 11
+    :cond_1
+    sget-object v3, Li1/p;->B:Li1/p;
 
-    move-result-object v0
+    iget-object v3, v3, Li1/p;->g:Lk3/ia;
 
-    invoke-virtual {v0}, Ljava/lang/String;->length()I
-
-    move-result v0
-
-    add-int/2addr v0, v10
-
-    invoke-static {v3}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object v5
-
-    invoke-virtual {v5}, Ljava/lang/String;->length()I
-
-    move-result v5
-
-    add-int/2addr v0, v5
-
-    new-instance v5, Ljava/lang/StringBuilder;
-
-    invoke-direct {v5, v0}, Ljava/lang/StringBuilder;-><init>(I)V
-
-    invoke-virtual {v5, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string p1, "\n"
-
-    invoke-virtual {v5, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v5, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    .line 12
+    invoke-virtual {v3}, Lk3/ia;->f()Lk3/ua;
 
     move-result-object v3
 
-    .line 11
-    invoke-virtual {v2}, Landroid/view/View;->getX()F
+    check-cast v3, Lk3/xa;
 
-    move-result v5
+    invoke-virtual {v3}, Lk3/xa;->A()Z
 
-    .line 12
-    invoke-virtual {v2}, Landroid/view/View;->getY()F
+    move-result v3
 
-    move-result v6
+    if-nez v3, :cond_0
+
+    if-eq p1, v2, :cond_0
 
     .line 13
-    invoke-virtual {v2}, Landroid/view/View;->getWidth()I
-
-    move-result p1
-
-    int-to-float v7, p1
+    iget-object v2, v2, Lk3/z21;->q:Ljava/lang/String;
 
     .line 14
-    invoke-virtual {v2}, Landroid/view/View;->getHeight()I
-
-    move-result p1
-
-    int-to-float v8, p1
-
-    move-object v2, v9
+    iget-object v3, p1, Lk3/z21;->q:Ljava/lang/String;
 
     .line 15
-    invoke-virtual/range {v2 .. v8}, Lk3/t21;->b(Ljava/lang/String;ZFFFF)V
+    invoke-virtual {v2, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    goto :goto_0
+    move-result v2
+
+    if-eqz v2, :cond_0
 
     .line 16
-    :cond_0
-    invoke-virtual {v2}, Landroid/view/View;->getX()F
-
-    move-result v5
+    invoke-interface {v1}, Ljava/util/Iterator;->remove()V
 
     .line 17
-    invoke-virtual {v2}, Landroid/view/View;->getY()F
+    monitor-exit v0
 
-    move-result v6
+    return v4
+
+    :cond_2
+    const/4 p1, 0x0
 
     .line 18
-    invoke-virtual {v2}, Landroid/view/View;->getWidth()I
+    monitor-exit v0
 
-    move-result p1
+    return p1
 
-    int-to-float v7, p1
+    :catchall_0
+    move-exception p1
 
     .line 19
-    invoke-virtual {v2}, Landroid/view/View;->getHeight()I
-
-    move-result p1
-
-    int-to-float v8, p1
-
-    move-object v2, v9
-
-    .line 20
-    invoke-virtual/range {v2 .. v8}, Lk3/t21;->b(Ljava/lang/String;ZFFFF)V
-
-    .line 21
-    :cond_1
-    :goto_0
-    iget-object p1, v9, Lk3/t21;->g:Ljava/lang/Object;
-
-    monitor-enter p1
-    :try_end_1
-    .catch Lorg/json/JSONException; {:try_start_1 .. :try_end_1} :catch_0
-    .catchall {:try_start_1 .. :try_end_1} :catchall_1
-
-    .line 22
-    :try_start_2
-    iget v0, v9, Lk3/t21;->m:I
-
-    if-nez v0, :cond_2
+    monitor-exit v0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     goto :goto_1
 
-    :cond_2
-    const/4 v10, 0x0
+    :goto_0
+    throw p1
 
     :goto_1
-    monitor-exit p1
+    goto :goto_0
+.end method
+
+.method public final b(Lk3/z21;)V
+    .locals 5
+
+    .line 1
+    iget-object v0, p0, Lk3/y21;->a:Ljava/lang/Object;
+
+    monitor-enter v0
+
+    .line 2
+    :try_start_0
+    iget-object v1, p0, Lk3/y21;->c:Ljava/util/LinkedList;
+
+    invoke-virtual {v1}, Ljava/util/LinkedList;->size()I
+
+    move-result v1
+
+    const/16 v2, 0xa
+
+    if-lt v1, v2, :cond_0
+
+    .line 3
+    iget-object v1, p0, Lk3/y21;->c:Ljava/util/LinkedList;
+
+    invoke-virtual {v1}, Ljava/util/LinkedList;->size()I
+
+    .line 4
+    iget-object v1, p0, Lk3/y21;->c:Ljava/util/LinkedList;
+
+    const/4 v2, 0x0
+
+    invoke-virtual {v1, v2}, Ljava/util/LinkedList;->remove(I)Ljava/lang/Object;
+
+    .line 5
+    :cond_0
+    iget v1, p0, Lk3/y21;->b:I
+
+    add-int/lit8 v2, v1, 0x1
+
+    iput v2, p0, Lk3/y21;->b:I
+
+    .line 6
+    iput v1, p1, Lk3/z21;->l:I
+
+    .line 7
+    iget-object v1, p1, Lk3/z21;->g:Ljava/lang/Object;
+
+    monitor-enter v1
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_1
+
+    .line 8
+    :try_start_1
+    iget v2, p1, Lk3/z21;->k:I
+
+    iget v3, p1, Lk3/z21;->l:I
+
+    .line 9
+    iget-boolean v4, p1, Lk3/z21;->d:Z
+
+    if-eqz v4, :cond_1
+
+    .line 10
+    iget v2, p1, Lk3/z21;->b:I
+
+    goto :goto_0
+
+    .line 11
+    :cond_1
+    iget v4, p1, Lk3/z21;->a:I
+
+    mul-int v2, v2, v4
+
+    iget v4, p1, Lk3/z21;->b:I
+
+    mul-int v3, v3, v4
+
+    add-int/2addr v2, v3
+
+    .line 12
+    :goto_0
+    iget v3, p1, Lk3/z21;->n:I
+
+    if-le v2, v3, :cond_2
+
+    .line 13
+    iput v2, p1, Lk3/z21;->n:I
+
+    .line 14
+    :cond_2
+    monitor-exit v1
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    .line 15
+    :try_start_2
+    iget-object v1, p0, Lk3/y21;->c:Ljava/util/LinkedList;
+
+    invoke-virtual {v1, p1}, Ljava/util/LinkedList;->add(Ljava/lang/Object;)Z
+
+    .line 16
+    monitor-exit v0
     :try_end_2
-    .catchall {:try_start_2 .. :try_end_2} :catchall_0
+    .catchall {:try_start_2 .. :try_end_2} :catchall_1
 
-    if-eqz v10, :cond_3
-
-    .line 23
-    :try_start_3
-    iget-object p1, v1, Lk3/x21;->i:Lk3/s21;
-
-    invoke-virtual {p1, v9}, Lk3/s21;->a(Lk3/t21;)Z
-    :try_end_3
-    .catch Lorg/json/JSONException; {:try_start_3 .. :try_end_3} :catch_0
-    .catchall {:try_start_3 .. :try_end_3} :catchall_1
-
-    goto :goto_2
+    return-void
 
     :catchall_0
-    move-exception v0
+    move-exception p1
 
-    .line 24
+    .line 17
+    :try_start_3
+    monitor-exit v1
+    :try_end_3
+    .catchall {:try_start_3 .. :try_end_3} :catchall_0
+
     :try_start_4
-    monitor-exit p1
-    :try_end_4
-    .catchall {:try_start_4 .. :try_end_4} :catchall_0
-
-    :try_start_5
-    throw v0
-    :try_end_5
-    .catch Lorg/json/JSONException; {:try_start_5 .. :try_end_5} :catch_0
-    .catchall {:try_start_5 .. :try_end_5} :catchall_1
+    throw p1
 
     :catchall_1
     move-exception p1
 
-    .line 25
-    sget-object v0, Li1/o;->B:Li1/o;
-
-    iget-object v0, v0, Li1/o;->g:Lk3/ia;
-
-    const-string v1, "ContentFetchTask.processWebViewContent"
-
-    .line 26
-    invoke-virtual {v0, p1, v1}, Lk3/ia;->b(Ljava/lang/Throwable;Ljava/lang/String;)V
-
-    :catch_0
-    :cond_3
-    :goto_2
-    return-void
-
-    :catchall_2
-    move-exception p1
-
-    .line 27
-    :try_start_6
+    .line 18
     monitor-exit v0
-    :try_end_6
-    .catchall {:try_start_6 .. :try_end_6} :catchall_2
+    :try_end_4
+    .catchall {:try_start_4 .. :try_end_4} :catchall_1
 
     throw p1
 .end method

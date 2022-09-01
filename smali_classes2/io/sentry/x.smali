@@ -28,7 +28,7 @@
 
     iget-object v0, p0, Lio/sentry/x;->a:Lio/sentry/SentryEnvelopeItem$CachedItem;
 
-    invoke-static {v0}, Lio/sentry/SentryEnvelopeItem;->h(Lio/sentry/SentryEnvelopeItem$CachedItem;)[B
+    invoke-static {v0}, Lio/sentry/SentryEnvelopeItem;->g(Lio/sentry/SentryEnvelopeItem$CachedItem;)[B
 
     move-result-object v0
 

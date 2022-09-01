@@ -163,7 +163,7 @@
     sget-object v0, Lnb/a;->d:Ljava/lang/String;
 
     .line 2
-    invoke-static {v0}, Lcom/google/android/play/core/appupdate/g;->e(Ljava/lang/String;)Z
+    invoke-static {v0}, La5/b0;->g(Ljava/lang/String;)Z
 
     move-result v1
 
@@ -233,7 +233,7 @@
     const/4 v2, 0x0
 
     .line 6
-    invoke-static {v0, p0, v2, v2}, Landroidx/savedstate/d;->h(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v0, p0, v2, v2}, Le5/i;->j(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Throwable;[Lz9/a;)V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 

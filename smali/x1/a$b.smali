@@ -45,7 +45,7 @@
     check-cast p1, Lx1/b;
 
     .line 2
-    iget-object p1, p1, Lx1/b;->g:Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;
+    iget-object p1, p1, Lx1/b;->h:Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;
 
     return-object p1
 .end method

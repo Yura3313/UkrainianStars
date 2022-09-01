@@ -15,17 +15,17 @@
 
 
 # instance fields
-.field public final f:Ljava/lang/String;
+.field public final g:Ljava/lang/String;
 
-.field public final g:I
-
-.field public final h:Ljava/lang/String;
+.field public final h:I
 
 .field public final i:Ljava/lang/String;
 
-.field public final j:J
+.field public final j:Ljava/lang/String;
 
-.field public final k:[B
+.field public final k:J
+
+.field public final l:[B
 
 
 # direct methods
@@ -48,22 +48,22 @@
     invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lcom/google/android/gms/internal/instantapps/zzat;->f:Ljava/lang/String;
+    iput-object p1, p0, Lcom/google/android/gms/internal/instantapps/zzat;->g:Ljava/lang/String;
 
     .line 3
-    iput p2, p0, Lcom/google/android/gms/internal/instantapps/zzat;->g:I
+    iput p2, p0, Lcom/google/android/gms/internal/instantapps/zzat;->h:I
 
     .line 4
-    iput-object p3, p0, Lcom/google/android/gms/internal/instantapps/zzat;->h:Ljava/lang/String;
+    iput-object p3, p0, Lcom/google/android/gms/internal/instantapps/zzat;->i:Ljava/lang/String;
 
     .line 5
-    iput-object p4, p0, Lcom/google/android/gms/internal/instantapps/zzat;->i:Ljava/lang/String;
+    iput-object p4, p0, Lcom/google/android/gms/internal/instantapps/zzat;->j:Ljava/lang/String;
 
     .line 6
-    iput-wide p5, p0, Lcom/google/android/gms/internal/instantapps/zzat;->j:J
+    iput-wide p5, p0, Lcom/google/android/gms/internal/instantapps/zzat;->k:J
 
     .line 7
-    iput-object p7, p0, Lcom/google/android/gms/internal/instantapps/zzat;->k:[B
+    iput-object p7, p0, Lcom/google/android/gms/internal/instantapps/zzat;->l:[B
 
     return-void
 .end method
@@ -81,7 +81,7 @@
     move-result p2
 
     .line 2
-    iget-object v0, p0, Lcom/google/android/gms/internal/instantapps/zzat;->f:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/android/gms/internal/instantapps/zzat;->g:Ljava/lang/String;
 
     const/4 v1, 0x1
 
@@ -91,7 +91,7 @@
     invoke-static {p1, v1, v0, v2}, Le2/b;->m(Landroid/os/Parcel;ILjava/lang/String;Z)V
 
     .line 4
-    iget v0, p0, Lcom/google/android/gms/internal/instantapps/zzat;->g:I
+    iget v0, p0, Lcom/google/android/gms/internal/instantapps/zzat;->h:I
 
     const/4 v1, 0x2
 
@@ -104,7 +104,7 @@
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 7
-    iget-object v0, p0, Lcom/google/android/gms/internal/instantapps/zzat;->h:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/android/gms/internal/instantapps/zzat;->i:Ljava/lang/String;
 
     const/4 v1, 0x3
 
@@ -112,13 +112,13 @@
     invoke-static {p1, v1, v0, v2}, Le2/b;->m(Landroid/os/Parcel;ILjava/lang/String;Z)V
 
     .line 9
-    iget-object v0, p0, Lcom/google/android/gms/internal/instantapps/zzat;->i:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/android/gms/internal/instantapps/zzat;->j:Ljava/lang/String;
 
     .line 10
     invoke-static {p1, v3, v0, v2}, Le2/b;->m(Landroid/os/Parcel;ILjava/lang/String;Z)V
 
     .line 11
-    iget-wide v0, p0, Lcom/google/android/gms/internal/instantapps/zzat;->j:J
+    iget-wide v0, p0, Lcom/google/android/gms/internal/instantapps/zzat;->k:J
 
     const/4 v3, 0x5
 
@@ -131,7 +131,7 @@
     invoke-virtual {p1, v0, v1}, Landroid/os/Parcel;->writeLong(J)V
 
     .line 14
-    iget-object v0, p0, Lcom/google/android/gms/internal/instantapps/zzat;->k:[B
+    iget-object v0, p0, Lcom/google/android/gms/internal/instantapps/zzat;->l:[B
 
     const/4 v1, 0x6
 

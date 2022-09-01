@@ -18,13 +18,13 @@
 
 
 # instance fields
-.field public final f:J
-
 .field public final g:J
 
-.field public final h:Z
+.field public final h:J
 
-.field public final synthetic i:Lv3/s4;
+.field public final i:Z
+
+.field public final synthetic j:Lv3/s4;
 
 
 # direct methods
@@ -32,7 +32,7 @@
     .locals 2
 
     .line 1
-    iput-object p1, p0, Lv3/s4$a;->i:Lv3/s4;
+    iput-object p1, p0, Lv3/s4$a;->j:Lv3/s4;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -45,7 +45,7 @@
     move-result-wide v0
 
     .line 4
-    iput-wide v0, p0, Lv3/s4$a;->f:J
+    iput-wide v0, p0, Lv3/s4$a;->g:J
 
     .line 5
     invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
@@ -53,10 +53,10 @@
     move-result-wide v0
 
     .line 6
-    iput-wide v0, p0, Lv3/s4$a;->g:J
+    iput-wide v0, p0, Lv3/s4$a;->h:J
 
     .line 7
-    iput-boolean p2, p0, Lv3/s4$a;->h:Z
+    iput-boolean p2, p0, Lv3/s4$a;->i:Z
 
     return-void
 .end method
@@ -81,7 +81,7 @@
     .locals 4
 
     .line 1
-    iget-object v0, p0, Lv3/s4$a;->i:Lv3/s4;
+    iget-object v0, p0, Lv3/s4$a;->j:Lv3/s4;
 
     .line 2
     iget-boolean v0, v0, Lv3/s4;->d:Z
@@ -106,11 +106,11 @@
     move-exception v0
 
     .line 5
-    iget-object v1, p0, Lv3/s4$a;->i:Lv3/s4;
+    iget-object v1, p0, Lv3/s4$a;->j:Lv3/s4;
 
     const/4 v2, 0x0
 
-    iget-boolean v3, p0, Lv3/s4$a;->h:Z
+    iget-boolean v3, p0, Lv3/s4$a;->i:Z
 
     .line 6
     invoke-virtual {v1, v0, v2, v3}, Lv3/s4;->e(Ljava/lang/Exception;ZZ)V

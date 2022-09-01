@@ -15,9 +15,9 @@
 
 
 # instance fields
-.field public final g:Lcom/google/android/gms/common/data/DataHolder;
+.field public final h:Lcom/google/android/gms/common/data/DataHolder;
 
-.field public final h:Ljava/util/List;
+.field public final i:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
@@ -27,9 +27,9 @@
     .end annotation
 .end field
 
-.field public final i:Lcom/google/android/gms/drive/zza;
+.field public final j:Lcom/google/android/gms/drive/zza;
 
-.field public final j:Z
+.field public final k:Z
 
 
 # direct methods
@@ -63,16 +63,16 @@
     invoke-direct {p0}, Lcom/google/android/gms/drive/zzu;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lcom/google/android/gms/internal/drive/zzff;->g:Lcom/google/android/gms/common/data/DataHolder;
+    iput-object p1, p0, Lcom/google/android/gms/internal/drive/zzff;->h:Lcom/google/android/gms/common/data/DataHolder;
 
     .line 3
-    iput-object p2, p0, Lcom/google/android/gms/internal/drive/zzff;->h:Ljava/util/List;
+    iput-object p2, p0, Lcom/google/android/gms/internal/drive/zzff;->i:Ljava/util/List;
 
     .line 4
-    iput-object p3, p0, Lcom/google/android/gms/internal/drive/zzff;->i:Lcom/google/android/gms/drive/zza;
+    iput-object p3, p0, Lcom/google/android/gms/internal/drive/zzff;->j:Lcom/google/android/gms/drive/zza;
 
     .line 5
-    iput-boolean p4, p0, Lcom/google/android/gms/internal/drive/zzff;->j:Z
+    iput-boolean p4, p0, Lcom/google/android/gms/internal/drive/zzff;->k:Z
 
     return-void
 .end method
@@ -94,7 +94,7 @@
     const/4 v0, 0x2
 
     .line 2
-    iget-object v1, p0, Lcom/google/android/gms/internal/drive/zzff;->g:Lcom/google/android/gms/common/data/DataHolder;
+    iget-object v1, p0, Lcom/google/android/gms/internal/drive/zzff;->h:Lcom/google/android/gms/common/data/DataHolder;
 
     const/4 v2, 0x0
 
@@ -103,12 +103,12 @@
     const/4 v0, 0x3
 
     .line 3
-    iget-object v1, p0, Lcom/google/android/gms/internal/drive/zzff;->h:Ljava/util/List;
+    iget-object v1, p0, Lcom/google/android/gms/internal/drive/zzff;->i:Ljava/util/List;
 
     invoke-static {p1, v0, v1, v2}, Le2/b;->q(Landroid/os/Parcel;ILjava/util/List;Z)V
 
     .line 4
-    iget-object v0, p0, Lcom/google/android/gms/internal/drive/zzff;->i:Lcom/google/android/gms/drive/zza;
+    iget-object v0, p0, Lcom/google/android/gms/internal/drive/zzff;->j:Lcom/google/android/gms/drive/zza;
 
     const/4 v3, 0x4
 
@@ -117,7 +117,7 @@
     const/4 v2, 0x5
 
     .line 5
-    iget-boolean v4, p0, Lcom/google/android/gms/internal/drive/zzff;->j:Z
+    iget-boolean v4, p0, Lcom/google/android/gms/internal/drive/zzff;->k:Z
 
     move-object v1, p1
 

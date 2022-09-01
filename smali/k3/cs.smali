@@ -1,167 +1,260 @@
 .class public final Lk3/cs;
-.super Lk3/vs;
+.super Lk3/ts;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
-
-# interfaces
-.implements Lk3/ir;
-.implements Lk3/xr;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lk3/vs<",
-        "Lk3/ds;",
-        ">;",
-        "Lk3/ir;",
-        "Lk3/xr;"
+        "Lk3/ts<",
+        "Lk3/es;",
+        ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final g:Lk3/jg0;
+.field public final h:Ljava/util/concurrent/ScheduledExecutorService;
 
-.field public h:Ljava/util/concurrent/atomic/AtomicBoolean;
+.field public final i:Ll2/c;
 
+.field public j:J
+    .annotation build Ljavax/annotation/concurrent/GuardedBy;
+        value = "this"
+    .end annotation
+.end field
 
-# direct methods
-.method public constructor <init>(Ljava/util/Set;Lk3/jg0;)V
-    .locals 0
+.field public k:J
+    .annotation build Ljavax/annotation/concurrent/GuardedBy;
+        value = "this"
+    .end annotation
+.end field
+
+.field public l:Z
+    .annotation build Ljavax/annotation/concurrent/GuardedBy;
+        value = "this"
+    .end annotation
+.end field
+
+.field public m:Ljava/util/concurrent/ScheduledFuture;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "(",
-            "Ljava/util/Set<",
-            "Lk3/rt<",
-            "Lk3/ds;",
-            ">;>;",
-            "Lk3/jg0;",
-            ")V"
+            "Ljava/util/concurrent/ScheduledFuture<",
+            "*>;"
         }
     .end annotation
 
+    .annotation build Ljavax/annotation/concurrent/GuardedBy;
+        value = "this"
+    .end annotation
+.end field
+
+
+# direct methods
+.method public constructor <init>(Ljava/util/concurrent/ScheduledExecutorService;Ll2/c;)V
+    .locals 2
+
     .line 1
-    invoke-direct {p0, p1}, Lk3/vs;-><init>(Ljava/util/Set;)V
+    invoke-static {}, Ljava/util/Collections;->emptySet()Ljava/util/Set;
+
+    move-result-object v0
+
+    invoke-direct {p0, v0}, Lk3/ts;-><init>(Ljava/util/Set;)V
+
+    const-wide/16 v0, -0x1
 
     .line 2
-    new-instance p1, Ljava/util/concurrent/atomic/AtomicBoolean;
-
-    invoke-direct {p1}, Ljava/util/concurrent/atomic/AtomicBoolean;-><init>()V
-
-    iput-object p1, p0, Lk3/cs;->h:Ljava/util/concurrent/atomic/AtomicBoolean;
+    iput-wide v0, p0, Lk3/cs;->j:J
 
     .line 3
-    iput-object p2, p0, Lk3/cs;->g:Lk3/jg0;
+    iput-wide v0, p0, Lk3/cs;->k:J
+
+    const/4 v0, 0x0
+
+    .line 4
+    iput-boolean v0, p0, Lk3/cs;->l:Z
+
+    .line 5
+    iput-object p1, p0, Lk3/cs;->h:Ljava/util/concurrent/ScheduledExecutorService;
+
+    .line 6
+    iput-object p2, p0, Lk3/cs;->i:Ll2/c;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final G0()V
-    .locals 3
+.method public final declared-synchronized G0(I)V
+    .locals 6
+
+    monitor-enter p0
+
+    if-gtz p1, :cond_0
 
     .line 1
-    sget-object v0, Lk3/q;->N3:Lk3/g;
+    monitor-exit p0
+
+    return-void
 
     .line 2
-    sget-object v1, Lk3/l51;->j:Lk3/l51;
+    :cond_0
+    :try_start_0
+    sget-object v0, Ljava/util/concurrent/TimeUnit;->SECONDS:Ljava/util/concurrent/TimeUnit;
 
-    iget-object v1, v1, Lk3/l51;->f:Lk3/n;
+    int-to-long v1, p1
+
+    invoke-virtual {v0, v1, v2}, Ljava/util/concurrent/TimeUnit;->toMillis(J)J
+
+    move-result-wide v0
 
     .line 3
-    invoke-virtual {v1, v0}, Lk3/n;->a(Lk3/h;)Ljava/lang/Object;
+    iget-boolean p1, p0, Lk3/cs;->l:Z
 
-    move-result-object v0
+    if-eqz p1, :cond_2
 
     .line 4
-    check-cast v0, Ljava/lang/Boolean;
+    iget-wide v2, p0, Lk3/cs;->k:J
 
-    invoke-virtual {v0}, Ljava/lang/Boolean;->booleanValue()Z
+    const-wide/16 v4, 0x0
 
-    move-result v0
+    cmp-long p1, v2, v4
 
-    if-eqz v0, :cond_0
+    if-lez p1, :cond_1
 
-    iget-object v0, p0, Lk3/cs;->h:Ljava/util/concurrent/atomic/AtomicBoolean;
+    cmp-long p1, v0, v2
 
-    const/4 v1, 0x0
+    if-gez p1, :cond_1
 
-    const/4 v2, 0x1
-
-    .line 5
-    invoke-virtual {v0, v1, v2}, Ljava/util/concurrent/atomic/AtomicBoolean;->compareAndSet(ZZ)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    iget-object v0, p0, Lk3/cs;->g:Lk3/jg0;
-
-    iget-object v0, v0, Lk3/jg0;->Z:Lcom/google/android/gms/internal/ads/zzvl;
-
-    if-eqz v0, :cond_0
-
-    iget v0, v0, Lcom/google/android/gms/internal/ads/zzvl;->f:I
-
-    const/4 v1, 0x3
-
-    if-ne v0, v1, :cond_0
-
-    .line 6
-    new-instance v0, Lf1/j;
-
-    invoke-direct {v0, p0}, Lf1/j;-><init>(Ljava/lang/Object;)V
-
-    invoke-virtual {p0, v0}, Lk3/vs;->F0(Lk3/xs;)V
-
-    :cond_0
-    return-void
-.end method
-
-.method public final O()V
-    .locals 2
-
-    .line 1
-    iget-object v0, p0, Lk3/cs;->g:Lk3/jg0;
-
-    iget v0, v0, Lk3/jg0;->b:I
-
-    const/4 v1, 0x2
-
-    if-eq v0, v1, :cond_0
-
-    const/4 v1, 0x5
-
-    if-eq v0, v1, :cond_0
-
-    const/4 v1, 0x4
-
-    if-ne v0, v1, :cond_1
-
-    .line 2
-    :cond_0
-    invoke-virtual {p0}, Lk3/cs;->G0()V
+    goto :goto_0
 
     :cond_1
+    move-wide v0, v2
+
+    .line 5
+    :goto_0
+    iput-wide v0, p0, Lk3/cs;->k:J
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 6
+    monitor-exit p0
+
     return-void
+
+    .line 7
+    :cond_2
+    :try_start_1
+    iget-object p1, p0, Lk3/cs;->i:Ll2/c;
+
+    invoke-interface {p1}, Ll2/c;->b()J
+
+    move-result-wide v2
+
+    iget-wide v4, p0, Lk3/cs;->j:J
+
+    cmp-long p1, v2, v4
+
+    if-gtz p1, :cond_3
+
+    iget-object p1, p0, Lk3/cs;->i:Ll2/c;
+
+    .line 8
+    invoke-interface {p1}, Ll2/c;->b()J
+
+    move-result-wide v2
+
+    sub-long/2addr v4, v2
+
+    cmp-long p1, v4, v0
+
+    if-lez p1, :cond_4
+
+    .line 9
+    :cond_3
+    invoke-virtual {p0, v0, v1}, Lk3/cs;->H0(J)V
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    .line 10
+    :cond_4
+    monitor-exit p0
+
+    return-void
+
+    :catchall_0
+    move-exception p1
+
+    monitor-exit p0
+
+    throw p1
 .end method
 
-.method public final c2()V
-    .locals 2
+.method public final declared-synchronized H0(J)V
+    .locals 3
+
+    monitor-enter p0
 
     .line 1
-    iget-object v0, p0, Lk3/cs;->g:Lk3/jg0;
+    :try_start_0
+    iget-object v0, p0, Lk3/cs;->m:Ljava/util/concurrent/ScheduledFuture;
 
-    iget v0, v0, Lk3/jg0;->b:I
+    if-eqz v0, :cond_0
+
+    invoke-interface {v0}, Ljava/util/concurrent/Future;->isDone()Z
+
+    move-result v0
+
+    if-nez v0, :cond_0
+
+    .line 2
+    iget-object v0, p0, Lk3/cs;->m:Ljava/util/concurrent/ScheduledFuture;
 
     const/4 v1, 0x1
 
-    if-ne v0, v1, :cond_0
+    invoke-interface {v0, v1}, Ljava/util/concurrent/Future;->cancel(Z)Z
 
-    .line 2
-    invoke-virtual {p0}, Lk3/cs;->G0()V
-
+    .line 3
     :cond_0
+    iget-object v0, p0, Lk3/cs;->i:Ll2/c;
+
+    invoke-interface {v0}, Ll2/c;->b()J
+
+    move-result-wide v0
+
+    add-long/2addr v0, p1
+
+    iput-wide v0, p0, Lk3/cs;->j:J
+
+    .line 4
+    iget-object v0, p0, Lk3/cs;->h:Ljava/util/concurrent/ScheduledExecutorService;
+
+    new-instance v1, Lk3/ri;
+
+    const/4 v2, 0x0
+
+    invoke-direct {v1, p0, v2}, Lk3/ri;-><init>(Lk3/cs;Lk3/q5;)V
+
+    sget-object v2, Ljava/util/concurrent/TimeUnit;->MILLISECONDS:Ljava/util/concurrent/TimeUnit;
+
+    .line 5
+    invoke-interface {v0, v1, p1, p2, v2}, Ljava/util/concurrent/ScheduledExecutorService;->schedule(Ljava/lang/Runnable;JLjava/util/concurrent/TimeUnit;)Ljava/util/concurrent/ScheduledFuture;
+
+    move-result-object p1
+
+    iput-object p1, p0, Lk3/cs;->m:Ljava/util/concurrent/ScheduledFuture;
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 6
+    monitor-exit p0
+
     return-void
+
+    :catchall_0
+    move-exception p1
+
+    monitor-exit p0
+
+    throw p1
 .end method

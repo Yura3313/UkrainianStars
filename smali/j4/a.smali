@@ -7,13 +7,13 @@
 
 
 # instance fields
-.field public final f:Landroid/app/Dialog;
-
-.field public final g:I
+.field public final g:Landroid/app/Dialog;
 
 .field public final h:I
 
 .field public final i:I
+
+.field public final j:I
 
 
 # direct methods
@@ -24,17 +24,17 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lj4/a;->f:Landroid/app/Dialog;
+    iput-object p1, p0, Lj4/a;->g:Landroid/app/Dialog;
 
     .line 3
     iget v0, p2, Landroid/graphics/Rect;->left:I
 
-    iput v0, p0, Lj4/a;->g:I
+    iput v0, p0, Lj4/a;->h:I
 
     .line 4
     iget p2, p2, Landroid/graphics/Rect;->top:I
 
-    iput p2, p0, Lj4/a;->h:I
+    iput p2, p0, Lj4/a;->i:I
 
     .line 5
     invoke-virtual {p1}, Landroid/app/Dialog;->getContext()Landroid/content/Context;
@@ -49,7 +49,7 @@
 
     move-result p1
 
-    iput p1, p0, Lj4/a;->i:I
+    iput p1, p0, Lj4/a;->j:I
 
     return-void
 .end method
@@ -67,7 +67,7 @@
     move-result-object v0
 
     .line 2
-    iget v1, p0, Lj4/a;->g:I
+    iget v1, p0, Lj4/a;->h:I
 
     invoke-virtual {v0}, Landroid/view/View;->getLeft()I
 
@@ -83,7 +83,7 @@
     add-int/2addr v1, v2
 
     .line 4
-    iget v3, p0, Lj4/a;->h:I
+    iget v3, p0, Lj4/a;->i:I
 
     invoke-virtual {v0}, Landroid/view/View;->getTop()I
 
@@ -162,7 +162,7 @@
     invoke-virtual {v0, v1}, Landroid/view/MotionEvent;->setAction(I)V
 
     .line 13
-    iget p2, p0, Lj4/a;->i:I
+    iget p2, p0, Lj4/a;->j:I
 
     neg-int v1, p2
 
@@ -183,7 +183,7 @@
     invoke-virtual {p1}, Landroid/view/View;->performClick()Z
 
     .line 15
-    iget-object p1, p0, Lj4/a;->f:Landroid/app/Dialog;
+    iget-object p1, p0, Lj4/a;->g:Landroid/app/Dialog;
 
     invoke-virtual {p1, v0}, Landroid/app/Dialog;->onTouchEvent(Landroid/view/MotionEvent;)Z
 

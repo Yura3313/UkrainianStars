@@ -37,13 +37,13 @@
     new-instance v0, Lm6/a;
 
     .line 4
-    iget v1, p1, Ll6/b;->f:I
+    iget v1, p1, Ll6/b;->g:I
 
     .line 5
     div-int/lit8 v1, v1, 0x2
 
     .line 6
-    iget v2, p1, Ll6/b;->g:I
+    iget v2, p1, Ll6/b;->h:I
 
     .line 7
     div-int/lit8 v2, v2, 0x2
@@ -220,7 +220,7 @@
     iget-object v2, p0, Lq6/a;->a:Ll6/b;
 
     .line 3
-    iget v3, v2, Ll6/b;->f:I
+    iget v3, v2, Ll6/b;->g:I
 
     int-to-float v3, v3
 
@@ -236,7 +236,7 @@
     if-lez v0, :cond_0
 
     .line 5
-    iget v0, v2, Ll6/b;->g:I
+    iget v0, v2, Ll6/b;->h:I
 
     int-to-float v0, v0
 

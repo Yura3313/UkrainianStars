@@ -15,9 +15,9 @@
 
 
 # instance fields
-.field public y:Landroid/widget/LinearLayout;
+.field public A:Landroid/widget/Button;
 
-.field public z:Landroid/widget/Button;
+.field public z:Landroid/widget/LinearLayout;
 
 
 # direct methods
@@ -28,7 +28,7 @@
     invoke-direct {p0, p1}, Landroidx/recyclerview/widget/RecyclerView$z;-><init>(Landroid/view/View;)V
 
     .line 2
-    iput-object p1, p0, Lma/d$a;->y:Landroid/widget/LinearLayout;
+    iput-object p1, p0, Lma/d$a;->z:Landroid/widget/LinearLayout;
 
     .line 3
     sget v0, Lcom/helpshift/R$id;->send_anyway_button:I
@@ -39,7 +39,7 @@
 
     check-cast p1, Landroid/widget/Button;
 
-    iput-object p1, p0, Lma/d$a;->z:Landroid/widget/Button;
+    iput-object p1, p0, Lma/d$a;->A:Landroid/widget/Button;
 
     return-void
 .end method

@@ -1,43 +1,42 @@
-.class public final Lk3/k70;
-.super Lk3/bn;
+.class public final synthetic Lk3/k70;
+.super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
+
+# interfaces
+.implements Lk3/jo;
+
+
+# static fields
+.field public static final a:Lk3/k70;
 
 
 # direct methods
-.method public constructor <init>(Landroid/view/View;Lk3/ig0;)V
-    .locals 2
+.method public static constructor <clinit>()V
+    .locals 1
 
-    sget-object v0, Lk3/i70;->a:Lk3/i70;
+    new-instance v0, Lk3/k70;
 
-    const/4 v1, 0x0
+    invoke-direct {v0}, Lk3/k70;-><init>()V
 
-    invoke-direct {p0, p1, v1, v0, p2}, Lk3/bn;-><init>(Landroid/view/View;Lk3/gh;Lk3/jo;Lk3/ig0;)V
+    sput-object v0, Lk3/k70;->a:Lk3/k70;
+
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Ljava/util/Set;)Lk3/sr;
+.method public final getVideoController()Lcom/google/android/gms/internal/ads/zzyg;
     .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/util/Set<",
-            "Lk3/rt<",
-            "Lk3/ur;",
-            ">;>;)",
-            "Lk3/sr;"
-        }
-    .end annotation
 
-    new-instance p1, Lk3/sr;
+    const/4 v0, 0x0
 
-    invoke-static {}, Ljava/util/Collections;->emptySet()Ljava/util/Set;
-
-    move-result-object v0
-
-    invoke-direct {p1, v0}, Lk3/sr;-><init>(Ljava/util/Set;)V
-
-    return-object p1
+    return-object v0
 .end method

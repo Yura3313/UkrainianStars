@@ -7,14 +7,18 @@
 
 
 # instance fields
-.field public final synthetic f:Lb2/w;
+.field public final synthetic g:Lcom/google/android/gms/common/ConnectionResult;
+
+.field public final synthetic h:Lb2/e$c;
 
 
 # direct methods
-.method public constructor <init>(Lb2/w;)V
+.method public constructor <init>(Lb2/e$c;Lcom/google/android/gms/common/ConnectionResult;)V
     .locals 0
 
-    iput-object p1, p0, Lb2/x;->f:Lb2/w;
+    iput-object p1, p0, Lb2/x;->h:Lb2/e$c;
+
+    iput-object p2, p0, Lb2/x;->g:Lcom/google/android/gms/common/ConnectionResult;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -24,33 +28,133 @@
 
 # virtual methods
 .method public final run()V
-    .locals 3
+    .locals 4
 
     .line 1
-    iget-object v0, p0, Lb2/x;->f:Lb2/w;
+    iget-object v0, p0, Lb2/x;->h:Lb2/e$c;
 
-    iget-object v0, v0, Lb2/w;->a:Lb2/f$a;
+    iget-object v1, v0, Lb2/e$c;->f:Lb2/e;
 
     .line 2
-    iget-object v0, v0, Lb2/f$a;->g:Lcom/google/android/gms/common/api/a$f;
+    iget-object v1, v1, Lb2/e;->p:Ljava/util/concurrent/ConcurrentHashMap;
 
     .line 3
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    move-result-object v1
-
-    invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
-
-    move-result-object v1
-
-    const-string v2, " disconnecting because it was signed out."
-
-    invoke-virtual {v1, v2}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v1
+    iget-object v0, v0, Lb2/e$c;->b:Lb2/a;
 
     .line 4
-    invoke-interface {v0, v1}, Lcom/google/android/gms/common/api/a$f;->c(Ljava/lang/String;)V
+    invoke-virtual {v1, v0}, Ljava/util/concurrent/ConcurrentHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lb2/e$a;
+
+    if-nez v0, :cond_0
+
+    return-void
+
+    .line 5
+    :cond_0
+    iget-object v1, p0, Lb2/x;->g:Lcom/google/android/gms/common/ConnectionResult;
+
+    invoke-virtual {v1}, Lcom/google/android/gms/common/ConnectionResult;->E2()Z
+
+    move-result v1
+
+    const/4 v2, 0x0
+
+    if-eqz v1, :cond_3
+
+    .line 6
+    iget-object v1, p0, Lb2/x;->h:Lb2/e$c;
+
+    const/4 v3, 0x1
+
+    .line 7
+    iput-boolean v3, v1, Lb2/e$c;->e:Z
+
+    .line 8
+    iget-object v1, v1, Lb2/e$c;->a:Lcom/google/android/gms/common/api/a$f;
+
+    .line 9
+    invoke-interface {v1}, Lcom/google/android/gms/common/api/a$f;->m()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_2
+
+    .line 10
+    iget-object v0, p0, Lb2/x;->h:Lb2/e$c;
+
+    .line 11
+    iget-boolean v1, v0, Lb2/e$c;->e:Z
+
+    if-eqz v1, :cond_1
+
+    iget-object v1, v0, Lb2/e$c;->c:Lcom/google/android/gms/common/internal/IAccountAccessor;
+
+    if-eqz v1, :cond_1
+
+    .line 12
+    iget-object v2, v0, Lb2/e$c;->a:Lcom/google/android/gms/common/api/a$f;
+
+    iget-object v0, v0, Lb2/e$c;->d:Ljava/util/Set;
+
+    invoke-interface {v2, v1, v0}, Lcom/google/android/gms/common/api/a$f;->b(Lcom/google/android/gms/common/internal/IAccountAccessor;Ljava/util/Set;)V
+
+    :cond_1
+    return-void
+
+    .line 13
+    :cond_2
+    :try_start_0
+    iget-object v1, p0, Lb2/x;->h:Lb2/e$c;
+
+    .line 14
+    iget-object v1, v1, Lb2/e$c;->a:Lcom/google/android/gms/common/api/a$f;
+
+    .line 15
+    invoke-interface {v1}, Lcom/google/android/gms/common/api/a$f;->a()Ljava/util/Set;
+
+    move-result-object v3
+
+    .line 16
+    invoke-interface {v1, v2, v3}, Lcom/google/android/gms/common/api/a$f;->b(Lcom/google/android/gms/common/internal/IAccountAccessor;Ljava/util/Set;)V
+    :try_end_0
+    .catch Ljava/lang/SecurityException; {:try_start_0 .. :try_end_0} :catch_0
+
+    return-void
+
+    .line 17
+    :catch_0
+    iget-object v1, p0, Lb2/x;->h:Lb2/e$c;
+
+    .line 18
+    iget-object v1, v1, Lb2/e$c;->a:Lcom/google/android/gms/common/api/a$f;
+
+    const-string v3, "Failed to get service from broker."
+
+    .line 19
+    invoke-interface {v1, v3}, Lcom/google/android/gms/common/api/a$f;->c(Ljava/lang/String;)V
+
+    .line 20
+    new-instance v1, Lcom/google/android/gms/common/ConnectionResult;
+
+    const/16 v3, 0xa
+
+    .line 21
+    invoke-direct {v1, v3, v2, v2}, Lcom/google/android/gms/common/ConnectionResult;-><init>(ILandroid/app/PendingIntent;Ljava/lang/String;)V
+
+    .line 22
+    invoke-virtual {v0, v1, v2}, Lb2/e$a;->e(Lcom/google/android/gms/common/ConnectionResult;Ljava/lang/Exception;)V
+
+    return-void
+
+    .line 23
+    :cond_3
+    iget-object v1, p0, Lb2/x;->g:Lcom/google/android/gms/common/ConnectionResult;
+
+    .line 24
+    invoke-virtual {v0, v1, v2}, Lb2/e$a;->e(Lcom/google/android/gms/common/ConnectionResult;Ljava/lang/Exception;)V
 
     return-void
 .end method

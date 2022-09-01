@@ -248,7 +248,7 @@
     if-eqz p2, :cond_0
 
     .line 2
-    iget-boolean v1, p2, Landroidx/swiperefreshlayout/widget/SwipeRefreshLayout;->h:Z
+    iget-boolean v1, p2, Landroidx/swiperefreshlayout/widget/SwipeRefreshLayout;->i:Z
 
     if-eqz v1, :cond_0
 

@@ -1002,7 +1002,7 @@ TID_PLAYER_INFO_TAB_2,CHIẾN BINH BRAWL (<FOUND>/<TOTAL>)
 TID_PLAYER_STAT_1,CHIẾN THẮNG 3 VS 3
 TID_PLAYER_STAT_4,SỐ CÚP CAO NHẤT
 TID_PLAYER_STAT_8,CHIẾN THẮNG ĐƠN
-TID_PLAYER_STAT_9,ĐÃ VƯỢT CẤP ĐẠI CHIẾN RÔ BỐT CAO NHẤT
+TID_PLAYER_STAT_9,ĐÃ VƯỢT CẤP ĐẠI CHIẾN ROBOT CAO NHẤT
 TID_PLAYER_STAT_11,CHIẾN THẮNG ĐÔI
 TID_PLAYER_STAT_12,ĐÃ ĐÁNH BẠI TRÙM CẤP CAO NHẤT
 TID_PLAYER_STAT_13,ĐIỂM SO TÀI SỨC MẠNH CAO NHẤT
@@ -1479,7 +1479,7 @@ TID_EVENT_POPUP_HIGHSTAKES_INFO,Bạn có thể sử dụng nhiều vé cho mỗ
 TID_EVENT_POPUP_GMV_LABEL_TEAM,3 vs 3
 TID_EVENT_POPUP_GMV_LABEL_BATTLE_ROYALE,Người sống sót duy nhất
 TID_EVENT_POPUP_GMV_LABEL_BOSS_FIGHT,5 vs 1
-TID_EVENT_POPUP_GMV_LABEL_COOP_SURVIVAL,Ba người chơi đối đầu Kẻ cướp Rô bốt
+TID_EVENT_POPUP_GMV_LABEL_COOP_SURVIVAL,Ba người chơi đối đầu với những Tên cướp robot
 TID_HIGHSTAKES_REWARDS,Phần thưởng x<COUNT>
 TID_HIGHSTAKES_COST,Vé: <COUNT>
 TID_POPUP_ANDROID_EXIT_TITLE,Thoát Brawl Stars?
@@ -1614,8 +1614,8 @@ TID_BLACKHOLE_DEFAULT_SKIN,Mặc định
 TID_GOLD_CAP_HIT,Đã đạt giới hạn thẻ.
 TID_GATCHA_BUTTON_BOX_STACK_FULL,Chồng hộp đã đầy
 TID_COOP_1,Công viên Pachinko
-TID_GAME_MODE_8,ĐẠI CHIẾN RÔ BỐT
-TID_GAME_MODE_8_DESC,"Bảo vệ két sắt khỏi lũ Kẻ cướp Ro bốt tham lam!\n\nLũ rô bốt sẽ xông đến để chiếm két sắt từ mọi phía với số lượng ngày càng tăng. Hãy gắng sức bảo vệ két sắt đến khi hết giờ!\n\nĐộ khó của chế độ Kẻ cướp Rô Bốt tăng dần theo từng vòng, bắt đầu từ BÌNH THƯỜNG và tăng dần đến ĐIÊN CUỒNG sau mỗi lần bạn bảo vệ két sắt thành công."
+TID_GAME_MODE_8,ĐẠI CHIẾN ROBOT
+TID_GAME_MODE_8_DESC,"Bảo vệ két sắt khỏi những Tên cướp robot tham lam!\n\nLũ robot sẽ xông đến để chiếm két sắt từ mọi phía với số lượng ngày càng tăng. Hãy gắng sức bảo vệ két sắt đến khi hết giờ!\n\nĐộ khó của chế độ Đại chiến Robot tăng dần theo từng vòng, bắt đầu từ BÌNH THƯỜNG và tăng dần đến ĐIÊN CUỒNG sau mỗi lần bạn bảo vệ két sắt thành công."
 TID_COOP_INTRO_TEXT,Bảo vệ két sắt!
 TID_SELECT_EVENT_POPUP_TITLE,Chọn sự kiện
 TID_BARREL_BOT,DARRYL
@@ -1792,7 +1792,7 @@ TID_HINT_1,Bạn có thể NHẤN vào <cff9900>nút điều khiển màu vàng<
 TID_HINT_2,Bạn có thể KÉO <ccc0033>nút điều khiển màu đỏ</c> để NHẮM MỤC TIÊU.
 TID_HINT_3,Bạn có thể KÉO <cff9900>nút điều khiển màu vàng</c> để NHẮM MỤC TIÊU bằng Tuyệt chiêu.
 TID_HINT_4,Bạn có thể hủy nhắm mục tiêu bằng cách kéo nút điều khiển về phía chính giữa.
-TID_HINT_5,"Tính năng Ghép trận căn cứ theo số Cúp của Chiến binh Brawl bạn đang chơi, giúp dễ dàng kiếm Cúp bằng Chiến binh Brawl mới mở khóa hơn."
+TID_HINT_5,Tính năng ghép trận hoạt động dựa trên số Cúp của Chiến binh Brawl mà bạn đang chơi. Điều này sẽ giúp bạn kiếm Cúp bằng Chiến binh Brawl mới mở khóa dễ dàng hơn.
 TID_HINT_6,Càng có nhiều Chiến binh Brawl thì càng dễ dàng hơn để nâng tổng số Cúp và nhận được thêm Phần thưởng.
 TID_HINT_7,Phát bắn của Piper bay càng xa thì càng gây ra nhiều sát thương hơn.
 TID_HINT_8,Tuyệt chiêu của Barley đặc biệt rất mạnh trong phạm vi gần bởi vì các chai lọ có phạm vi rơi khá nhỏ.
@@ -1808,7 +1808,7 @@ TID_HINT_17,Việc nhắm mục tiêu sẽ rất hữu ích khi bắn vào bụi
 TID_HINT_18,Tính năng BẮN NHANH rất hữu hiệu đối với kẻ địch bất động.
 TID_HINT_19,Tính năng BẮN NHANH hoạt động rất hiệu quả đối với kẻ địch di chuyển thẳng về phía bạn hoặc tránh xa bạn.
 TID_HINT_20,"Khi bạn đang núp trong bụi cây, kẻ địch có thể thấy bạn nếu bạn tấn công hoặc chịu sát thương."
-TID_HINT_21,Bạn có thể trốn kẻ địch trong các bụi cây.
+TID_HINT_21,Bạn có thể trốn kẻ địch và hồi máu trong các bụi cây.
 TID_HINT_22,"Khi sử dụng BẮN NHANH, vũ khí của bạn sẽ bắn tự động kể cả khi không có kẻ địch nào ở trong phạm vi."
 TID_VS_TUTORIAL,Thu thập tất cả các <c50d050>KHỐI SỨC MẠNH</c>!
 TID_USE_MANUAL_FIRE_TUTORIAL,KÉO <ccc0033>nút điều khiển màu đỏ</c> để nhắm mục tiêu!
@@ -1966,7 +1966,7 @@ TID_ADD_FRIEND_ERROR_TOO_MANY_FRIENDS_YOU,Bạn có quá nhiều bạn. Hãy xó
 TID_HINT_26,Penny có thể gây ra rất nhiều sát thương với đòn tấn công diện rộng của mình nếu mục tiêu cùng ở trong một hàng.
 TID_HINT_27,Tập hợp một đội trước trận đấu giúp bạn lên kế hoạch trước trận đấu và chọn kết hợp chiến binh Brawl hữu hiệu nhất.
 TID_HINT_28,"Hãy thử chơi các trận chiến giao hữu để luyện tập cho các sự kiện, tạo cuộc thi giao hữu và nhiều tính năng khác!"
-TID_HINT_29,"Sau một trận đấu thú vị với đồng đội mới, bạn có thể nhấn Chơi Lại để tham gia một trận đấu khác với họ!"
+TID_HINT_29,"Sau một trận đấu thú vị với đồng đội mới, bạn có thể nhấn \qChơi lại\q để cùng họ tham gia một trận đấu khác!"
 TID_HINT_30,Bạn có thể chọn bất kỳ sự kiện và bản đồ nào trong chế độ trận chiến giao hữu. Chiến binh Brawl cũng sẽ được nâng lên cấp tối đa!
 TID_HINT_31,"Frank dừng di chuyển khi thực hiện tấn công hoặc Tuyệt chiêu của mình, điều này tạo cơ hội cho đối phương thoát khỏi tầm của anh ta."
 TID_EXPERIENCE,ĐIỂM KINH NGHIỆM
@@ -2077,13 +2077,13 @@ TID_PLAYER_MAP_PROPS,Bản đồ của người chơi được tạo bởi:\n<cf
 TID_PLAYER_MAP_WINNER_SLOT_PROPS,BẢN ĐỒ CHIẾN THẮNG HÔM NAY!\n\nÝ tưởng của:\n<cff8000><CREDIT></c>
 TID_BATTLE_ROYALE_12,Mê cung rực cháy
 TID_TEAM_INVITE_ALREADY_IN_TEAM,Người chơi đã ở trong một đội khác!
-TID_HINT_38,Vòng tròn quay màu xanh dương xuất hiện bên dưới Chiến binh Brawl đồng nghĩa với việc Tuyệt chiêu của họ đã sẵn sàng!
+TID_HINT_38,Vòng tròn xoay xuất hiện dưới chân Chiến binh Brawl đồng nghĩa với việc Tuyệt chiêu của chiến binh đó đã sẵn sàng!
 TID_HINT_39,Vòng tròn quay màu vàng xuất hiện bên dưới Chiến binh Brawl đồng nghĩa với việc họ hiện đang ngắm Tuyệt chiêu!
 TID_EVENT_NOT_AVAILABLE,Không có Sự kiện
 TID_SHOP_OFFER_PURCHASE_AD_NOT_AVAILABLE,Không có video. Hãy quay lại sau!
 TID_SHOP_NOT_AVAILABLE,không khả dụng
 TID_UNDERTAKER_GREASER_SKIN_SHOP,MORTIS\nROCKABILLY
-TID_HINT_40,Kết nối với Supercell ID từ màn hình cài đặt để giữ an toàn cho tài khoản và chơi trên nhiều thiết bị. Bạn cũng sẽ được nhận một trang phục miễn phí!
+TID_HINT_40,Kết nối với Supercell ID từ màn hình cài đặt để chơi trên nhiều thiết bị và giữ cho tài khoản của bạn luôn an toàn. Bạn cũng sẽ được nhận một trang phục miễn phí sau khi kết nối!
 TID_GACHA_VIDEO_REWARD_RECEIVED,Đã bổ sung phần thưởng thêm!
 TID_BUTTON_NAVI_SHOP,CỬA HÀNG
 TID_BUTTON_NAVI_SOCIAL,XÃ HỘI
@@ -2099,14 +2099,14 @@ TID_EVENT_MODIFIER_DESC_5,Nấm hồi máu sẽ xuất hiện ngẫu nhiên! Ch�
 TID_EVENT_MODIFIER_DESC_5_SD,Nấm hồi máu sẽ xuất hiện ngẫu nhiên! Tập hợp nhiều bạn bè gần nấm sẽ làm chúng không lớn lên được.
 TID_NINJA,LEON
 TID_ROSA,ROSA
-TID_HINT_42,"Khi không tấn công hoặc nhận sát thương trong một khoảng thời gian, Chiến binh Brawl của bạn sẽ bắt đầu tự hồi máu."
+TID_HINT_42,"Sau một thời gian không tấn công hoặc nhận sát thương, Chiến binh Brawl của bạn sẽ bắt đầu tự hồi máu."
 TID_HOOK_SHORT_DESC,CHIẾN BINH HỖ TRỢ
-TID_HOOK_DESC,Thần đèn dùng đèn thần để bắn đạn tỉa. Anh ta có tuyệt chiêu dùng bàn tay thần kỳ để kéo đối phương lại gần!
+TID_HOOK_DESC,Thần đèn dùng đèn thần bắn những loạt đạn có khả năng phân chia. Tuyệt chiêu của ông ta là dùng bàn tay thần kỳ để kéo đối phương lại gần!
 TID_SPEC_ABI_HOOK,KHÓI NHIỆM MÀU
 TID_SPEC_ABI_HOOK_DESC,Thần đèn hồi máu cho đồng đội <c00cc00><VALUE1></c> máu mỗi giây.
 TID_HOOK_WEAPON,BẮN KHÓI
 TID_HOOK_ULTI,BÀN TAY THẦN KỲ
-TID_HOOK_WEAPON_DESC,"Thần đèn dùng đèn thần bắn ra một quả cầu khói phép thuật. Nếu không trúng mục tiêu, cầu khói sẽ tách thành chóp khói, gây ít sát thương hơn."
+TID_HOOK_WEAPON_DESC,"Thần đèn dùng đèn thần bắn ra một quả cầu khói phép thuật. Nếu không trúng mục tiêu, quả cầu khói sẽ tách ra và bay về phía kẻ địch theo hình rẻ quạt."
 TID_HOOK_ULTI_DESC,"Thần đèn dùng đèn thần bắn ra một bàn tay phép thuật. Nếu trúng đối phương, bàn tay sẽ kéo chúng về chỗ của Thần đèn!"
 TID_NINJA_SHORT_DESC,SÁT THỦ
 TID_NINJA_DESC,Leon bắn liên tục những lưỡi dao về phía mục tiêu. Tuyệt chiêu của anh ta là một quả bom khói khiến anh tàng hình một lúc!
@@ -2237,11 +2237,11 @@ TID_GAME_MODE_20_DESC_PRC,Hạ gục đội đối thủ trong chế độ tranh
 TID_INVITE_PENDING,MỜI
 TID_JOIN_REQUEST_PENDING,GIA NHẬP
 TID_GOAL_MATCH_OVER,<name> đã ghi điểm!\nTrận đấu kết thúc
-TID_GOLDRUSH_XMAS_1,Pháo đài Tuyết
+TID_GOLDRUSH_XMAS_1,Pháo đài tuyết
 TID_GOLDRUSH_XMAS_2,Cái lạnh Dịp lễ
-TID_GOLDRUSH_XMAS_3,Đấu Cầu tuyết
+TID_GOLDRUSH_XMAS_3,Đấu cầu tuyết
 TID_GOLDRUSH_XMAS_4,Động đá Khối Băng
-TID_GOLDRUSH_XMAS_5,Vây hãm Tuyết phủ
+TID_GOLDRUSH_XMAS_5,Vây hãm tuyết phủ
 TID_GOLDRUSH_XMAS_6,Bọc Quà
 TID_GOLDRUSH_XMAS_7,Diện Đồ
 TID_GOLDRUSH_XMAS_8,Hồ Băng
@@ -2340,7 +2340,7 @@ TID_SKIN_LUNAR_COLT,CẤM VỆ QUÂN COLT
 TID_SKIN_LUNAR_COLT_SHOP,CẤM VỆ QUÂN\nCOLT
 TID_SKIN_VALENTINE_POCO,POCO DẠ KHÚC
 TID_SKIN_VALENTINE_POCO_SHOP,POCO\nDẠ KHÚC
-TID_BANKHEIST_9,Nhanh như Chớp
+TID_BANKHEIST_9,Nhanh như chớp
 TID_BANKHEIST_10,Đấu trường Lăn
 TID_BANKHEIST_11,Xoay và Bắn
 TID_BANKHEIST_12,Cây Cầu Rất Xa
@@ -2354,7 +2354,7 @@ TID_NOT_ENOUGH_LEGENDARY_TROPHIES,Không đủ Điểm Sao!
 TID_NOT_ENOUGH_CLUB_COINS,Không có đủ Xu Câu lạc bộ!
 TID_NOT_ENOUGH_GOLD_TITLE,Không đủ Xu!
 TID_NOT_ENOUGH_GOLD_TEXT,Mua <NUM> Xu còn thiếu?
-TID_NOT_ENOUGH_GOLD_TEXT_ONE,Mua Xu còn thiếu?
+TID_NOT_ENOUGH_GOLD_TEXT_ONE,Mua số Xu còn thiếu?
 TID_TEAM_INVITATION_POPUP_MUTE_ALL,CHẶN MỌI LỜI MỜI TRONG 1 GIỜ TỚI
 TID_TEAM_INVITATION_SETTING_MUTE,Chặn mọi lời mời gia nhập nhóm
 TID_BUTTON_TEAM_DND,MIỄN LÀM PHIỀN
@@ -2621,7 +2621,7 @@ TID_IAP_RETROPOLIS_PACK,Gói Ngọc Retropolis
 TID_IAP_RETROCOIN_PACK_1,Gói Xu (1/3)
 TID_IAP_RETROCOIN_PACK_2,Gói Xu (2/3)
 TID_IAP_RETROCOIN_PACK_3,Gói Xu (3/3)
-TID_GOLDRUSH_21C,Khủng hoảng Tài chính
+TID_GOLDRUSH_21C,Khủng hoảng tài chính
 TID_SPEC_SPOT_FROM_AIR,Tinh mắt
 TID_SPEC_SUPER_RANGE,LOẠT SIÊU CẤP ĐẠN
 TID_SPEC_SUPER_RANGE_DESC,"Đạn từ Tuyệt chiêu của Shelly sẽ bay nhanh và xa hơn <c00cc00><VALUE1>%</c>, nhưng tầm bắn hẹp hơn."
@@ -2681,7 +2681,7 @@ TID_SPEC_ABI_SUPER_RELOAD_DESC,"Khi Darryl dùng Tuyệt chiêu, tốc độ n�
 TID_SPEC_ABI_DAMAGE_MAIN_ATTACK,NỒNG ĐỘ CAO
 TID_SPEC_ABI_DAMAGE_MAIN_ATTACK_DESC,Tăng <c00cc00>+<VALUE1></c> sát thương mỗi giây cho đòn tấn công của Barley.
 TID_SPEC_ABI_SUPER_HEALS,BÀN TAY TƯƠNG TRỢ
-TID_SPEC_ABI_SUPER_HEALS_DESC,Tuyệt chiêu của Thần Đèn khi đánh trúng đồng đội sẽ hồi <c00cc00><VALUE1></c> máu cho họ.
+TID_SPEC_ABI_SUPER_HEALS_DESC,Tuyệt chiêu của Thần đèn khi đánh trúng đồng đội sẽ hồi <c00cc00><VALUE1></c> máu cho họ.
 TID_SPEC_ABI_BLACK_HOLE_HEALER,BÓNG RÂM THIỆN LÀNH
 TID_SPEC_ABI_BLACK_HOLE_HEALER_DESC,Tuyệt chiêu của Tara sẽ mở ra một cánh cổng không gian! Phiên bản bóng mờ của Tara sẽ xuất hiện và hồi máu cho Tara cùng đồng đội.
 TID_SPEC_ABI_RECHARGE,NẠP TỰ ĐỘNG
@@ -2762,7 +2762,7 @@ TID_SPEC_SHIELD_ULTI_DESC,"Khi tích đầy Tuyệt chiêu (mà không sử dụ
 TID_SPEC_ABI_PET,THẢ CHIM
 TID_SPEC_ABI_PET_DESC,Chú chim của Dynamike tham chiến!
 TID_SPEC_ABI_DAMAGE_ULTI,TÁN HỒN CHƯỞNG
-TID_SPEC_ABI_DAMAGE_ULTI_DESC,Khi đã tích đầy Tuyệt chiêu thì sát thương tấn công của Thần Đèn sẽ tăng <c00cc00>+<VALUE1></c>.
+TID_SPEC_ABI_DAMAGE_ULTI_DESC,"Khi đã tích đầy Tuyệt chiêu, Thần đèn sẽ gây thêm <c00cc00><VALUE1></c> sát thương khi tấn công."
 TID_ARCADE,8-BIT
 TID_ARCADE_DESC,8-BIT là thùng máy điện tử thẻ biết đi nhưng rất chậm chạp. 8-BIT bắn Tia laze và sở hữu Tuyệt chiêu cường hóa sát thương cho phe mình!
 TID_ARCADE_SHORT_DESC,KẺ GÂY SÁT THƯƠNG
@@ -3154,7 +3154,7 @@ TID_CTF_7,Yêu tinh nghịch ngợm
 TID_CTF_8,Món quà tuyệt hảo
 TID_CTF_GOAL_MATCH_OVER,<name>\nđã đoạt được cúp!\n\nTrận đấu kết thúc
 TID_STAT_DAMAGE_PER_DRONE,Sát thương mỗi chú ong
-TID_GOLDRUSH_46,Vùng đất Hai nghìn Hồ
+TID_GOLDRUSH_46,Vùng đất hai nghìn hồ
 TID_EVENT_MODIFIER_11,NGHIÊNG
 TID_EVENT_MODIFIER_DESC_11,Sàn đấu trường bị nghiêng. Bạn sẽ di chuyển nhanh hơn hoặc chậm hơn tùy vào hướng đi của mình!
 TID_QUICK_MESSAGE_ASK_BRAWLER_SPLIT,Tôi nên chọn Chiến binh Brawl nào?
@@ -3273,7 +3273,7 @@ TID_NOTIFICATION_BOUNTY_HUNTER,SĂN SAO đã sẵn sàng! Đoạt lấy phần t
 TID_NOTIFICATION_LASER_BALL,Đã có bản đồ BÓNG BRAWL mới! Đoạt lấy phần thưởng mới nào!
 TID_NOTIFICATION_BATTLE_ROYAL,Đã có bản đồ SINH TỒN mới! Đừng để mình bị hạ gục nhé!
 TID_NOTIFICATION_BOSS,TRÒ CHƠI LỚN đã sẵn sàng! Phần thưởng lớn đang chờ bạn đến nhận đấy!
-TID_NOTIFICATION_COOP,ĐẠI CHIẾN RÔ BỐT đã bắt đầu! Tiêu diệt rô bốt để giành lấy phần thưởng!
+TID_NOTIFICATION_COOP,ĐẠI CHIẾN ROBOT đã bắt đầu! Tiêu diệt robot để giành lấy phần thưởng!
 TID_NOTIFICATION_RAID_BOSS,CUỘC CHIẾN VỚI TRÙM đã trở lại! Bạn sẽ trụ được đến đâu?
 TID_NOTIFICATION_ROBO_WARS,VÂY HÃM đã sẵn sàng! Đoạt lấy phần thưởng mới nào!
 TID_NOTIFICATION_BOSS_RACE,Đã có bản đồ HẠ GỤC mới! Đoạt lấy phần thưởng mới nào!
@@ -3361,7 +3361,7 @@ TID_SPEC_ABI_DRILLER_1_DESC,"Khi nhận sát thương, Jacky sẽ đáp lễ b�
 TID_SPEC_ABI_DRILLER_2,MŨ BẢO HIỂM
 TID_SPEC_ABI_DRILLER_2_DESC,Mũ bảo hiểm của Jacky giúp cô giảm <c00cc00><VALUE1>%</c> lượng sát thương nhận vào.
 TID_ACCESSORY_GROW_BUSH_DESC,Rosa chăm bón cho vùng đất xung quanh mình và các bụi rậm sẽ mọc lên để che chắn cho cô.
-TID_ACCESSORY_CROW_SHIELD_DESC,Quạ sẽ có khiên chắn để giảm <c00cc00><VALUE1></c>% sát thương nhận vào trong <c00cc00><VALUE2></c> giây.
+TID_ACCESSORY_CROW_SHIELD_DESC,Quạ sẽ có khiên chắn để giảm <c00cc00><VALUE1>%</c> sát thương nhận vào trong <c00cc00><VALUE2></c> giây.
 TID_ACCESSORY_WALLY_HEAL_DESC,Rô bốt Rau mầm tiêu thụ một bụi rậm để hồi phục <c00cc00><VALUE1></c> máu.
 TID_ACCESSORY_ROCKET_JUMP_DESC,Brock khai hỏa xuống mặt đất và bật người lên không trung. Vụ nổ sẽ gây <c00cc00><VALUE1></c> sát thương cho đối thủ ở gần.
 TID_ACCESSORY_RICO_SHOOT_AROUND_DESC,Rico bắn một loạt đạn bật nẩy ra bốn phương tám hướng!
@@ -3370,7 +3370,7 @@ TID_ACCESSORY_ARTILLERY_DESTROY_PET_DESC,Penny cho nổ tung khẩu đại bác 
 TID_ACCESSORY_PET_SLAM_DESC,"Nita ra lệnh cho chú gấu tung chưởng xuống mặt đất, gây choáng cho tất cả đối thủ trong phạm vi."
 TID_ACCESSORY_BARKEEP_SLOW_DESC,Barley tạo ra một vũng dung dịch nhớp nháp để kìm chân mọi đối thủ dám bước vào đó.
 TID_ACCESSORY_JESSIE_SLOW_DESC,Jessie kích hoạt sóng xung kích từ trụ súng của mình để làm chậm chân mọi đối thủ trong phạm vi ảnh hưởng.
-TID_ACCESSORY_GENE_PUSH_DESC,"Mọi đối thủ tiến đến gần Thần Đèn đều bị đẩy lùi ngay lập tức. Nếu có ít nhất 1 Chiến binh Brawl địch đứng trong phạm vi, Thần Đèn sẽ hồi <c00cc00><VALUE1></c> máu."
+TID_ACCESSORY_GENE_PUSH_DESC,"Mọi đối thủ tiến đến gần Thần đèn đều bị đẩy lùi ngay lập tức. Nếu có ít nhất 1 Chiến binh Brawl địch đứng trong phạm vi, Thần đèn sẽ hồi <c00cc00><VALUE1></c> máu."
 TID_ACCESSORY_TICK_EXTRA_MINES_DESC,"Trong lần tấn công tiếp theo, Tick sẽ bắn ra <c00cc00><VALUE1></c> quả mìn."
 TID_ACCESSORY_MAX_DASH_DESC,Max nhanh chóng lướt về phía trước. Cô sẽ miễn nhiễm với mọi sát thương trong khi lướt.
 TID_ACCESSORY_SHELLY_DASH_DESC,Shelly nhanh chân lướt về phía trước để tiếp cận kẻ thù!
@@ -4116,10 +4116,10 @@ TID_EMOTE_BUNDLE_WF,HUY HIỆU CHUNG KẾT THẾ GIỚI
 TID_EMOTE_PLAYERS,CỦA NGƯỜI CHƠI
 TID_SPRAY_PLAYERS,SƠN XỊT
 TID_KING_OF_HILL_30,Cẩn thận
-TID_KING_OF_HILL_31,Điều bất ngờ Thú vị
+TID_KING_OF_HILL_31,Điều bất ngờ thú vị
 TID_PLAYER_MAP_SLOT_CREATE_NEW_TITLE,TẠO MỚI!
 TID_PLAYER_MAP_SLOT_CREATE_NEW_DESC,Trình Tạo Bản đồ
-TID_KING_OF_HILL_20F,Bọ cánh cứng Song đấu
+TID_KING_OF_HILL_20F,Bọ cánh cứng song đấu
 TID_CONTEXT_MENU_EDIT,CHỈNH SỬA
 TID_CONTEXT_MENU_RENAME,ĐỔI TÊN
 TID_CONTEXT_MENU_DELETE,XÓA
@@ -4484,9 +4484,9 @@ TID_EMOTE_BUNDLE_BRALWMAS_PACK,HUY HIỆU GIÁNG SINH BRAWL
 TID_MAP_EDITOR_LEGAL_WARNING_TITLE,Lưu ý quan trọng
 TID_MAP_EDITOR_LEGAL_WARNING_DESC,"Cảm ơn bạn đã sử dụng Trình Tạo Bản đồ. Vui lòng tuân theo Thỏa thuận Dịch vụ và Giấy phép của Tencent Games cùng các quy định có liên quan khi sử dụng Trình Tạo Bản đồ. Xin đừng tạo ra và chia sẻ những nội dung không phù hợp, mang tính chất khiêu dâm, đồi trụy, hoặc gây ảnh hưởng xấu đến sự đoàn kết, tính chủ quyền và toàn vẹn lãnh thổ của quốc gia, cũng như vi phạm các điều luật và quy định khác."
 TID_MAP_EDITOR_LEGAL_WARNING_DESC_YOOZOO,"Cảm ơn bạn đã sử dụng Trình Tạo Bản đồ. Vui lòng tuân theo Thỏa thuận Người dùng cùng các quy định có liên quan khi sử dụng Trình Tạo Bản đồ. Xin đừng tạo ra và chia sẻ những nội dung không phù hợp, mang tính chất khiêu dâm, đồi trụy, hoặc gây ảnh hưởng xấu đến sự đoàn kết, tính chủ quyền và toàn vẹn lãnh thổ của quốc gia, cũng như vi phạm các điều luật và quy định khác."
-TID_RUFFS,ĐẠI TÁ\nRUFFS
+TID_RUFFS,RUFFS
 TID_RUFFS_SHORT_DESC,CHIẾN BINH HỖ TRỢ
-TID_RUFFS_DESC,Chùm tia laze kép Ruffs bắn ra sẽ bật lại khi trúng tường. Tuyệt chiêu của ông ta là quăng ra một chiếc thùng tiếp tế có khả năng gây sát thương cho những đối thủ nào đang ở trong khu vực mà chiếc thùng rơi trúng và để lại một vật phẩm tăng sức mạnh cho đồng đội sử dụng.
+TID_RUFFS_DESC,"Tuy rất lớn tiếng khi sủa ra lệnh cho cấp dưới, nhưng Đại tá Ruffs lại là một chú chó tốt bụng!\n\nDo có phong thái nghiêm túc và điềm tĩnh nên Ruffs có thể dễ dàng che giấu các đặc tính về chó của mình, trừ khi có ai đó đang chơi trò ném bắt!"
 TID_RUFFS_WEAPON,CHÙM TIA LAZE KÉP
 TID_RUFFS_WEAPON_DESC,Chùm tia laze kép của Ruffs có thể bật tường nhiều lần và bắn trúng đối thủ đang ẩn nấp.
 TID_RUFFS_ULTI,THÙNG TIẾP TẾ
@@ -4509,7 +4509,7 @@ TID_ACCESSORY_POCO_CLEANSE_DESC,"Xóa bỏ hiệu ứng bất lợi cho các chi
 TID_ACCESSORY_FRANK_PULL,SỨC HÚT KHÓ CHỐI TỪ
 TID_ACCESSORY_FRANK_PULL_DESC,Đòn tấn công tiếp theo của Frank sẽ gây thêm <c00cc00><VALUE1>%</c> sát thương và kéo đối thủ về phía anh ta.
 TID_ACCESSORY_GENE_HOMING,THẦN LINH BÁO THÙ
-TID_ACCESSORY_GENE_HOMING_DESC,"Thần Đèn bắn ra một tên lửa tự hành vào mọi đối thủ mà ông ta có thể nhìn thấy trong phạm vị rộng, gây tối đa <c00cc00><VALUE2></c> sát thương, tùy vào khoảng cách."
+TID_ACCESSORY_GENE_HOMING_DESC,"Thần đèn bắn ra một tên lửa tự hành vào mọi đối thủ mà ông ta có thể nhìn thấy trong phạm vị rộng, gây tối đa <c00cc00><VALUE2></c> sát thương, tùy vào khoảng cách."
 TID_ACCESSORY_CONTROLLER_BOUNCE_BACK,TRẢ VỀ NGƯỜI GỬI
 TID_ACCESSORY_CONTROLLER_BOUNCE_BACK_DESC,"Trong <c00cc00><VALUE2></c> giây tiếp theo, lần đầu tiên Nani nhận sát thương từ đối thủ, <c00cc00><VALUE1>% </c> sát thương đó sẽ được trả về đối thủ."
 TID_ACCESSORY_TICK_EXPLOSION,CẢM TỬ QUÂN
@@ -4527,7 +4527,7 @@ TID_ACCESSORY_ENRAGER_PROTECTION_DESC,Edgar nhận một khiên chắn có khả
 TID_ACCESSORY_MINIGUN_DUDE_AMMO_SINK,THU HỒI SẮT VỤN
 TID_ACCESSORY_MINIGUN_DUDE_AMMO_SINK_DESC,"Với đòn tấn công tiếp theo của Pam, mỗi viên đạn bắn trúng Chiến binh Brawl đối thủ sẽ làm giảm đi <c00cc00><VALUE1>%</c> lượng đạn tối đa của họ. Pam sẽ thu hồi <c00cc00><VALUE2>%</c> lượng đạn đó về cho mình."
 TID_ACCESSORY_SANDSTORM_STUN_SLEEP,GIẤC MƠ NGỌT NGÀO
-TID_ACCESSORY_SANDSTORM_STUN_SLEEP_DESC,Đòn tấn công tiếp theo của Sandy sẽ khiến đối thủ rơi vào giấc ngủ trong vòng <c00cc00><VALUE1></c> giây. Nhưng đối thủ sẽ tỉnh dậy ngay khi bị trúng đòn.
+TID_ACCESSORY_SANDSTORM_STUN_SLEEP_DESC,"Đòn tấn công tiếp theo của Sandy sẽ khiến đối thủ rơi vào giấc ngủ trong <c00cc00><VALUE1></c> giây. Tuy nhiên, đối thủ sẽ tỉnh dậy ngay khi bị trúng đòn."
 TID_ACCESSORY_CACTUS_COVER,CÂY SỰ SỐNG
 TID_ACCESSORY_CACTUS_COVER_DESC,"Spike trồng xuống một cây xương rồng to lớn có <c00cc00><VALUE1></c> máu để tạo nơi trú ẩn cho đồng đội. Khi bị tiêu diệt, cây xương rồng sẽ nổ tung và hồi <c00cc00><VALUE2></c> máu cho tất cả đồng đội ở gần."
 TID_ACCESSORY_BLOWER_STOPPER,LỐC XOÁY
@@ -4947,7 +4947,7 @@ TID_SPEC_ABI_ASSAULT_SHOTGUN_1_DESC,"Khi nổi cơn thịnh nộ, Griff bắn ra
 TID_SPEC_ABI_ASSAULT_SHOTGUN_2,DOANH NHÂN TÀI BA
 TID_SPEC_ABI_ASSAULT_SHOTGUN_2_DESC,"Mỗi <c00cc00><VALUE2></c> giây, Griff sẽ hồi lại tối đa <c00cc00><VALUE1>%</c> lượng máu đã mất của mình."
 TID_ACCESSORY_ASSAULT_SHOTGUN_BOMB,ỐNG HEO
-TID_ACCESSORY_ASSAULT_SHOTGUN_BOMB_DESC,"Griff nhét một quả pháo vào ống heo rồi ném về phía đối thủ. Ống heo này sẽ nổ tung sau một thời gian ngắn, phá tan các chướng ngại vật và gây ra <c00cc00><VALUE1></c> sát thương cho đối thủ nào ở trong phạm vi."
+TID_ACCESSORY_ASSAULT_SHOTGUN_BOMB_DESC,"Griff nhét một quả pháo vào ống heo rồi ném về phía đối thủ. Ống heo này sẽ nổ tung sau một thời gian ngắn, phá tan các chướng ngại vật và gây ra <c00cc00><VALUE1></c> sát thương cho những đối thủ đang ở trong phạm vi."
 TID_KNIGHT,ASH
 TID_KNIGHT_SHORT_DESC,CHIẾN BINH ĐỠ ĐÒN
 TID_KNIGHT_DESC,"Ash rất dễ nổi nóng vì phải dọn dẹp quá nhiều rác. Cậu ta phát hỏa cả khi tấn công hoặc bị trúng đòn. Khi nổi cơn thịnh nộ, Ash di chuyển nhanh hơn và trở nên nguy hiểm hơn, nhưng dần dần cậu ta sẽ nguôi giận."
@@ -4975,7 +4975,7 @@ TID_MECHA_DUDE_BIG_ULTI_DESC,Robot vung cánh tay khổng lồ của mình khi�
 TID_SPEC_ABI_MECHA_DUDE_1,RÀO CHẮN NĂNG LƯỢNG
 TID_SPEC_ABI_MECHA_DUDE_1_DESC,Meg sẽ được bảo vệ bởi một khiên chắn <c00cc00><VALUE1>%</c> trong <c00cc00><VALUE2></c> giây khi Robot bị hạ gục.
 TID_SPEC_ABI_MECHA_DUDE_2,ROBOT HỦY DIỆT
-TID_SPEC_ABI_MECHA_DUDE_2_DESC,"Khi hết năng lượng, Robot sẽ tự nổ tung và gây ra <c00cc00><VALUE1></c> sát thương cho đối thủ gần đó, đồng thời đẩy họ lùi ra xa!"
+TID_SPEC_ABI_MECHA_DUDE_2_DESC,"Khi hết năng lượng, Robot sẽ tự nổ tung và gây ra <c00cc00><VALUE1></c> sát thương cho đối thủ gần đó, đồng thời đẩy họ lùi ra xa."
 TID_ACCESSORY_MECHA_DUDE_HEAL,PIN SẠC DỰ PHÒNG
 TID_ACCESSORY_MECHA_DUDE_HEAL_DESC,Robot hồi phục <c00cc00><VALUE1></c> máu mỗi giây trong vòng <c00cc00><VALUE2></c> giây.
 TID_FLAMENGO_MIKE_SKIN,MIKE FLAMENGO
@@ -5797,7 +5797,7 @@ TID_KICKER_DUDE_WEAPON_DESC,"Fang tung ra cú đá cực nhanh với một tiể
 TID_KICKER_DUDE_ULTI,LIÊN HOÀN CƯỚC
 TID_KICKER_DUDE_ULTI_DESC,"Fang phóng đến và tung ra một cú đá dữ dội, nếu trúng mục tiêu, Fang có thể sẽ tiếp tục tung ra liên tục thêm 3 cú đá nữa lên các đối thủ ở gần."
 TID_SPEC_ABI_KICKER_DUDE_1,THƯỢNG CẲNG CHÂN
-TID_SPEC_ABI_KICKER_DUDE_1_DESC,"Khi Fang hạ gục một chiến binh brawl đối thủ bằng Tuyệt chiêu, thanh Tuyệt chiêu của cậu sẽ ngay lập tức được tích đầy, và cậu ta có thể tiếp tục dùng Tuyệt chiêu!"
+TID_SPEC_ABI_KICKER_DUDE_1_DESC,"Khi Fang hạ gục một chiến binh brawl đối thủ bằng Tuyệt chiêu, thanh Tuyệt chiêu của cậu sẽ ngay lập tức được tích đầy, và cậu ta sẽ lại có thể tiếp tục dùng Tuyệt chiêu!"
 TID_SPEC_ABI_KICKER_DUDE_2,ĐẾ GIÀY THẦN THÁNH
 TID_SPEC_ABI_KICKER_DUDE_2_DESC,Giảm <c00cc00><VALUE2></c> sát thương từ các đòn tấn công của đối thủ sau mỗi <c00cc00><VALUE1></c> giây. Giảm tối đa <c00cc00><VALUE3>%</c> sát thương phải chịu.
 TID_ACCESSORY_KICKER_DUDE_GADGET,CƠN MƯA BỎNG NGÔ
@@ -6345,7 +6345,7 @@ TID_ACCESSORY_FIRE_DUDE_FLAME_SHIELD_DESC,Amber tạo ra <c00cc00><VALUE3></c> n
 TID_ACCESSORY_MECHA_DUDE_TOWER_RELOAD,HỘP DỤNG CỤ
 TID_ACCESSORY_MECHA_DUDE_TOWER_RELOAD_DESC,"Meg đặt hộp dụng cụ của mình trên mặt đất, chiếc hộp này sẽ giúp tăng <c00cc00><VALUE1>%</c> tốc độ nạp đạn cho đồng đội ở gần cho đến khi nó bị phá hủy."
 TID_ACCESSORY_ROPE_DUDE_VISION,MẮT KÍNH X QUANG
-TID_ACCESSORY_ROPE_DUDE_VISION_DESC,Buzz có thể nhìn xuyên thấu tất cả bụi rậm trong <c00cc00><VALUE1></c> giây.
+TID_ACCESSORY_ROPE_DUDE_VISION_DESC,Buzz có thể nhìn xuyên thấu tất cả bụi cây nằm trong phạm vi Tuyệt chiêu của cậu ta trong <c00cc00><VALUE1></c> giây.
 TID_LOGIN_CALENDAR_ALREADY_HAVE_BRAWLER,Bạn đã có Chiến binh Brawl này rồi
 TID_LOGIN_CALENDAR_ALREADY_HAVE_GADGET,Bạn đã có Phụ kiện này rồi
 TID_LOGIN_CALENDAR_ALREADY_HAVE_STAR_POWER,Bạn đã có Sức mạnh Sao này rồi
@@ -6460,6 +6460,7 @@ TID_ACCESSORY_SILENCER_GADGET_1_DESC,"Nếu không văng trúng mục tiêu, ch�
 TID_ACCESSORY_SILENCER_GADGET_2,MỰC VĂNG TUNG TÓE
 TID_ACCESSORY_SILENCER_GADGET_2_DESC,"Đòn tấn công tiếp theo của Otis sẽ bắn ra một quả cầu mực khổng lồ, để lại một vũng mực trên mặt đất và gây <c00cc00><VALUE1></c> sát thương theo thời gian trong <c00cc00><VALUE2></c> giây."
 TID_RANDOM_GAME_MODE,BÍ ẨN
+TID_ADVENTURE_GAME_MODE,PHIÊU LƯU
 TID_NOTIFICATION_RANDOM,Đã có bản đồ BÍ ẨN mới! Giành lấy phần thưởng mới nào!
 TID_SKIN_INFO_DEEPSEA,Trang phục Chiến binh Biển sâu
 TID_EMOTE_BUNDLE_DEEPSEA_PACK,Huy hiệu Trang phục Chiến binh Biển sâu
@@ -6557,7 +6558,7 @@ TID_SPEC_ABI_ARTILLERY_DUDE_1_DESC,Những đồng tiền văng ra từ túi và
 TID_SPEC_ABI_ARTILLERY_DUDE_2,SIÊU ĐẠI BÁC
 TID_SPEC_ABI_ARTILLERY_DUDE_2_DESC,Đại bác của Penny gây <c00cc00><VALUE1></c> sát thương và đẩy lùi đối thủ ở gần khi tiếp đất.
 TID_ACCESSORY_ARTILLERY_DUDE_GADGET_1,THÙNG MUỐI
-TID_ACCESSORY_ARTILLERY_DUDE_GADGET_1_DESC,Penny đặt xuống đất một thùng muối để ngăn cản loạt đạn của đối thủ. Cô ta cũng có thể bắn túi vàng vào thùng muối này để gây sát thương lan rộng.
+TID_ACCESSORY_ARTILLERY_DUDE_GADGET_1_DESC,Penny đặt xuống đất một thùng muối để ngăn cản loạt đạn của đối thủ. Cô ta cũng có thể bắn túi vàng vào thùng muối này để các đồng tiền vàng văng ra theo phạm vi rộng hơn.
 TID_ACCESSORY_ARTILLERY_DUDE_GADGET_2,NHẮM MỤC TIÊU CHÍNH XÁC
 TID_ACCESSORY_ARTILLERY_DUDE_GADGET_2_DESC,Đại bác của Penny sẽ bắn trúng mọi đối thủ có thể nhìn thấy trong phạm vi.
 TID_RANDOM_GAME_MODE_DESC,"Lựa chọn ngẫu nhiên chế độ chơi, bản đồ và yếu tố điều chỉnh. Bạn không biết mình sẽ chọn được gì đâu!"
@@ -6602,6 +6603,146 @@ TID_TRUE_GOLD_EVE_SKIN_SHOP,EVE\nBẰNG VÀNG
 TID_TRUE_SILVER_EVE_SKIN,EVE BẰNG BẠC
 TID_TRUE_SILVER_EVE_SKIN_SHOP,EVE\nBẰNG BẠC
 TID_BRAWL_PASS_SEASON_12,CHIẾN BINH BIỂN SÂU
+TID_TRIPLE_TAKEDOWN,HẠ GỤC 3 ĐỐI THỦ LIÊN TIẾP!
+TID_QUAD_TAKEDOWN,HẠ GỤC 4 ĐỐI THỦ LIÊN TIẾP!
+TID_WEAPON_THROWER,SAM
+TID_WEAPON_THROWER_SHORT_DESC,KẺ GÂY SÁT THƯƠNG
+TID_WEAPON_THROWER_DESC,"Một công nhân nhà máy đã về hưu, Sam Bronson không có thiện cảm với TẤT CẢ các thể loại robot.\n\nÔng ấy đảm nhiệm vai trò võ chiến trong Băng Cánh tay Vàng, luôn sẵn sàng xông pha và xử lý bọn robot!"
+TID_WEAPON_THROWER_WEAPON,CÚ ĐẤM TRỜI GIÁNG
+TID_WEAPON_THROWER_WEAPON_DESC,"Sam vung đôi tay tung ra các cú đấm mạnh mẽ. Với đôi găng tay của mình, ông ta có thể gây ra sát thương rất cao."
+TID_WEAPON_THROWER_ULTI,GĂNG TAY THÉP
+TID_WEAPON_THROWER_ULTI_DESC,"Sam ném đôi Găng tay thép của mình về phía trước và gây sát thương cho mọi đối thủ mà nó văng trúng trước khi rơi xuống đất. Khi Sam sử dụng Tuyệt chiêu lần nữa, đôi găng tay sẽ quay về với ông ta và gây sát thương cho mọi đối thủ mà nó đụng trúng."
+TID_SPEC_ABI_WEAPON_THROWER_1,PHỤC HỒI HIỆU QUẢ
+TID_SPEC_ABI_WEAPON_THROWER_1_DESC,"Khi triệu hồi Găng tay thép, Sam sẽ hồi <c00cc00><VALUE1>%</c> máu ngay lập tức."
+TID_SPEC_ABI_WEAPON_THROWER_2,SẠC TỪ XA
+TID_SPEC_ABI_WEAPON_THROWER_2_DESC,"Khi Găng tay thép đang ở trên mặt đất và gần đối thủ, nó sẽ giúp sạc Tuyệt chiêu cho Sam."
+TID_ACCESSORY_WEAPON_THROWER_GADGET_1,VÙNG TỪ TRƯỜNG
+TID_ACCESSORY_WEAPON_THROWER_GADGET_1_DESC,"Khi Găng tay thép đang ở trên mặt đất, Sam có thể kích hoạt chúng để kéo những đối thủ quanh đó lại gần."
+TID_ACCESSORY_WEAPON_THROWER_GADGET_2,LỰC ĐẨY CỦA XUNG ĐIỆN
+TID_ACCESSORY_WEAPON_THROWER_GADGET_2_DESC,"Lần tiếp theo Sam ném Găng tay thép, phụ kiện này sẽ tạo ra xung điện khi chạm đất và hất văng kẻ thù về phía sau."
+TID_ACCESSORY_BLOCKED_MISSING_GAUNTLETS,Không có Găng tay thép trên mặt đất!
+TID_ACCESSORY_BLOCKED_GAUNTLETS_TOO_FAR,Găng tay thép đang ở quá xa!
+TID_ACCESSORY_BLOCKED_GAUNTLETS_REQUIRED,Cần có Găng tay thép!
+TID_SOUL_COLLECTOR,GUS
+TID_SOUL_COLLECTOR_SHORT_DESC,CHIẾN BINH HỖ TRỢ
+TID_SOUL_COLLECTOR_DESC,"Gus rất thích bong bóng và hay lảng vảng trên một đoàn tàu lửa bị bỏ hoang từ lâu! Cậu ấy là chuyên gia nắn bong bóng thành hình động vật, và điều này giúp cậu ấy cảm thấy bớt cô đơn hơn."
+TID_SOUL_COLLECTOR_WEAPON,BONG BÓNG MA QUÁI
+TID_SOUL_COLLECTOR_WEAPON_DESC,"Gus phóng các quả bong bóng về phía kẻ địch. Sau vài lần phóng trúng đối thủ, một linh hồn sẽ xuất hiện. Bạn hoặc đồng đội có thể thu thập các linh hồn này để hồi máu."
+TID_SOUL_COLLECTOR_ULTI,SỰ BẢO HỘ CỦA SPOOKY
+TID_SOUL_COLLECTOR_ULTI_DESC,Gus sẽ dùng Spooky (quả bong bóng hình thú và cũng là bạn thân nhất của cậu ta) để tạo ra một khiên chắn quanh mình hoặc quanh một người đồng đội.
+TID_SPEC_ABI_SOUL_COLLECTOR_1,TĂNG CƯỜNG HỒI MÁU
+TID_SPEC_ABI_SOUL_COLLECTOR_1_DESC,Hiệu quả hồi máu từ các quả Bong bóng ma quái của Gus sẽ tăng thêm <c00cc00><VALUE1>%</c>.
+TID_SPEC_ABI_SOUL_COLLECTOR_2,BẠN BÈ TƯƠNG TRỢ
+TID_SPEC_ABI_SOUL_COLLECTOR_2_DESC,Spooky sẽ giúp một đồng đội gây ra thêm <c00cc00><VALUE1>%</c> sát thương trong <c00cc00><VALUE2></c> giây.
+TID_ACCESSORY_SOUL_COLLECTOR_GADGET_1,BONG BÓNG NỔ TUNG
+TID_ACCESSORY_SOUL_COLLECTOR_GADGET_1_DESC,Tất cả những linh hồn chưa được thu thập sẽ nổ tung và gây <c00cc00><VALUE1></c> sát thương cho kẻ địch ở gần đó.
+TID_ACCESSORY_SOUL_COLLECTOR_GADGET_2,HOÁN ĐỔI LINH HỒN
+TID_ACCESSORY_SOUL_COLLECTOR_GADGET_2_DESC,Gus sẽ đánh đổi <ccc0000><VALUE1>%</c> máu để nhận <c00cc00><VALUE2>%</c> linh hồn ngay lập tức.
+TID_ACCESSORY_BLOCKED_MISSING_SOULS,Không có linh hồn nào!
+TID_ACCESSORY_BLOCKED_SPIRIT_ALREADY_FULL,Thanh linh hồn đã đầy!
+TID_SKIN_INFO_OUTLAW,Trang phục Băng Bất hảo
+TID_EMOJI_SURGE_TEAM,NAVI
+TID_EMOJI_MORTIS_TEAM,SK
+TID_EMOJI_SPIKE_TEAM,INTZ
+TID_EMOJI_PRIMO_TEAM,TQ
+TID_EMOJI_COLT_TEAM,STMN
+TID_EMOJI_NITA_TEAM,OBEY
+TID_EMOJI_LEON_TEAM,QLASH
+TID_EMOJI_JESSIE_TEAM,ZETA
+TID_EMOJI_EMZ_TEAM,TRIBE
+TID_EMOJI_SHELLY_TEAM,TOTEM
+TID_SKIN_INFO_MECHA,Trang phục Robot
+TID_SCID_REQUIRED_DESC,"Vì lý do độ tuổi, bạn cần phải kết nối trò chơi với Supercell ID"
+TID_SCID_REQUIRED_CONNECT,KẾT NỐI
+TID_LOGIN_CALENDAR_POPULAR,NỔI TIẾNG
+TID_TRAIT_SUPER_START,Chiến binh Brawl này luôn bắt đầu ra trận với thanh Tuyệt chiêu đã tích đầy
+TID_GAME_MODE_29,SỐNG CÒN
+TID_GAME_MODE_29_DESC,Bọn robot tà ác này đã phản bội chúng ta! 8-BIT là hy vọng cuối cùng và duy nhất của chúng ta. Cậu ấy là người nắm giữ đoạn mã bí mật và bằng mọi giá cậu ấy phải được an toàn! Hãy bảo vệ 8-BIT trước các đợt tấn công của bọn robot tà ác đến khi hết thời gian để giành chiến thắng.\n\nThu thập các đồng Xu Brawl để 8-BIT có thể tiếp tục chiến đấu!
+TID_GAME_MODE_29_INTRO_TEXT,Bảo vệ 8-BIT!
+TID_LAST_STAND_1,Kẻ xóa sổ
+TID_LAST_STAND_2,Ngày trừng phạt
+TID_LAST_STAND_3,Robot nổi loạn
+TID_LAST_STAND_4,Sự cứu rỗi
+TID_LAST_STAND_5,Chập mạch điện
+TID_LAST_STAND_6,Sứ mệnh hắc ám
+TID_INBOX_CAPTION_55,Phần thưởng hoàn thành nhiệm vụ:
+TID_ESPORTS_OFFER_TITLE,QUÁN QUÂN
+TID_ESPORTS_OFFER_SUBTITLE_PINS,Bộ sưu tập Huy hiệu
+TID_ESPORTS_OFFER_SUBTITLE_THUMBNAILS,Biểu tượng Người chơi
+TID_ESPORTS_OFFER_SUBTITLE_EACH,MỖI CÁI
+TID_ESPORTS_OFFER_SUBTITLE_ALREADY_OWNED,Đã sở hữu!
+TID_ESPORTS_OFFER_ITEM_PINS,Huy hiệu
+TID_ESPORTS_OFFER_ITEM_THUMBNAILS,Biểu tượng Người chơi
+TID_EMOTE_BUNDLE_MORTIS_MECHA_PACK,Gói Huy hiệu Mortis Robot
+TID_BRAWL_PASS_SEASON_13,NHÀ MÁY ROBOT
+TID_TRUE_GOLD_OTIS_SKIN,OTIS BẰNG VÀNG
+TID_TRUE_GOLD_OTIS_SKIN_SHOP,OTIS\nBẰNG VÀNG
+TID_TRUE_SILVER_OTIS_SKIN,OTIS BẰNG BẠC
+TID_TRUE_SILVER_OTIS_SKIN_SHOP,OTIS\nBẰNG BẠC
+TID_TRUE_GOLD_SQUEAK_SKIN,SQUEAK BẰNG VÀNG
+TID_TRUE_GOLD_SQUEAK_SKIN_SHOP,SQUEAK\nBẰNG VÀNG
+TID_TRUE_SILVER_SQUEAK_SKIN,SQUEAK BẰNG BẠC
+TID_TRUE_SILVER_SQUEAK_SKIN_SHOP,SQUEAK\nBẰNG BẠC
+TID_TRUE_GOLD_BYRON_SKIN,BYRON BẰNG VÀNG
+TID_TRUE_GOLD_BYRON_SKIN_SHOP,BYRON\nBẰNG VÀNG
+TID_TRUE_SILVER_BRYON_SKIN,BYRON BẰNG BẠC
+TID_TRUE_SILVER_BYRON_SKIN_SHOP,BYRON\nBẰNG BẠC
+TID_TRUE_GOLD_GRIFF_SKIN,GRIFF BẰNG VÀNG
+TID_TRUE_GOLD_GRIFF_SKIN_SHOP,GRIFF\nBẰNG VÀNG
+TID_TRUE_SILVER_GRIFF_SKIN,GRIFF BẰNG BẠC
+TID_TRUE_SILVER_GRIFF_SKIN_SHOP,GRIFF\nBẰNG BẠC
+TID_TRUE_GOLD_EDGAR_SKIN,EDGAR BẰNG VÀNG
+TID_TRUE_GOLD_EDGAR_SKIN_SHOP,EDGAR\nBẰNG VÀNG
+TID_TRUE_SILVER_EDGAR_SKIN,EDGAR BẰNG BẠC
+TID_TRUE_SILVER_EDGAR_SKIN_SHOP,EDGAR\nBẰNG BẠC
+TID_CAESAR_BRONSON_SKIN,SAM CAESAR
+TID_CAESAR_BRONSON_SKIN_SHOP,SAM\nCAESAR
+TID_MECHA_MORIS_SKIN,MORTIS ROBOT
+TID_MECHA_MORTIS_SKIN_SHOP,MORTIS\nROBOT
+TID_DARK_MECHA_MORTIS_SKIN,MORTIS ROBOT HẮC ÁM
+TID_DARK_MECHA_MORTIS_SKIN_SHOP,MORTIS\nROBOT HẮC ÁM
+TID_LIGHT_MECHA_MORTIS_SKIN,MORTIS ROBOT ÁNH SÁNG
+TID_LIGHT_MECHA_MORTIS_SKIN_SHOP,MORTIS\nROBOT ÁNH SÁNG
+TID_OUTLAW_LOLA_SKIN,LOLA BẤT TRỊ
+TID_OUTLAW_LOLA_SKIN_SHOP,LOLA\nBẤT TRỊ
+TID_OUTLAW_CROW,QUẠ XƯƠNG XẨU
+TID_OUTLAW_CROW_SKIN_SHOP,QUẠ\nXƯƠNG XẨU
+TID_OUTLAW_POCO_SKIN,POCO BẤT HẢO
+TID_OUTLAW_POCO_SKIN_SHOP,POCO\nBẤT HẢO
+TID_BROKER_PAM_SKIN,PAM TÀI CHÍNH
+TID_BROKER_PAM_SKIN_SHOP,PAM\nTÀI CHÍNH
+TID_MOON_FESTIVAL_SQUEAK_SKIN,SQUEAK THỎ NGỌC
+TID_MOON_FESTIVAL_SQUEAK_SKIN_SHOP,SQUEAK\nTHỎ NGỌC
+TID_BRAWLOWEEN_LEON_SKIN,LEON HALLOWEEN
+TID_BRAWLOWEEN_LEON_SKIN_SHOP,LEON\nHALLOWEEN
+TID_HINT_45,Đừng quên dùng Mã nhà sáng tạo nội dung trong Cửa hàng nhé!
+TID_HINT_46,Đăng nhập vào game mỗi ngày để nhận phần thưởng hằng ngày miễn phí!
+TID_HINT_47,"Khi chơi Bóng Brawl, chuyền bóng cho đối phương đôi khi cũng là một cách hay để khiến họ lãng phí đạn dược!"
+TID_HINT_48,Dùng Huy hiệu và Sơn xịt trong trò chơi để thể hiện cảm xúc.
+TID_HINT_49,"Hàng rào cũng tương tự như tường chắn, nhưng bạn có thể bắn xuyên qua hàng rào!"
+TID_HINT_50,Ba cây chụm lại nên hòn núi cao!
+TID_HINT_51,Không thích bố cục hiện tại của các nút điều khiển? Bạn có thể thay đổi bằng cách dùng tính năng THỬ.
+TID_HINT_52,"Khi chơi Bóng Brawl, bạn có thể dùng Tuyệt chiêu để tung ra cú sút siêu cấp!"
+TID_HINT_53,"Khi chơi Vơ vét Ngọc, bạn nên ưu tiên phòng thủ nếu đang là người sở hữu nhiều ngọc nhất."
+TID_HINT_54,"Nếu đồng đội bị hạ gục, hãy chờ đến khi họ hồi sinh để cùng nhau chiến đấu!"
+TID_HINT_55,Luyện tập và cải thiện kỹ năng trong các Trận chiến Giao hữu.
+TID_HINT_56,Một số Chiến binh Brawl có các đặc tính riêng! Hãy kiểm tra tại màn hình thông số Chiến binh Brawl.
+TID_HINT_57,"Khi chơi Sinh tồn Đôi, hãy đảm bảo đồng đội vẫn còn sống sót trước khi bạn nhặt Khối sức mạnh."
+TID_HINT_58,Hãy dùng tính năng \qTìm đội\q khi bạn tham gia các Thử thách!
+TID_HINT_59,"Luôn cảnh giác với mìn của Bo, chúng có thể ở bất cứ đâu đấy!"
+TID_HINT_60,"Tuyệt chiêu của Lou rất có ích khi bạn muốn kiểm soát phạm vi rộng, hãy cân nhắc kỹ trước khi sử dụng ở các vị trí trọng yếu trên bản đồ!"
+TID_HINT_61,Đòn tấn công của Jessie sẽ gây ra sát thương ít hơn sau mỗi lần bật nảy khỏi đối thủ.
+TID_HINT_62,Colette có thể gây ra sát thương rất lớn khi tấn công các Chiến binh Brawl có nhiều máu!
+TID_HINT_63,Edgar có thể hồi máu sau mỗi lần đánh trúng đối thủ!
+TID_HINT_64,Janet có thể bắn xa hơn nếu bạn nhắm mục tiêu lâu hơn.
+TID_HINT_65,"Với chiêu thức tấn công có khả năng phân chia, Thần đèn có thể bắn trúng kẻ địch và sạc đầy tuyệt chiêu!"
+TID_LAST_STAND_WAVE_1,Bọn robot sắp đến rồi!
+TID_LAST_STAND_WAVE_2,Có thêm kẻ địch sắp đến!
+TID_LAST_STAND_SHUTDOWN,<ccc0000> 8-BIT sắp sập nguồn!</c>
+TID_EMOTE_BUNDLE_OUTLAW_PACK,Gói Huy hiệu Băng Bất hảo
+TID_SHOP_OUTLAW_SKINS,Trang phục Băng Bất hảo
+TID_SHOP_OUTLAW_TITLE,BĂNG BẤT HẢO
+TID_ACCESSORY_BLOCKED_SOULS_TOO_FAR,Các linh hồn ở quá xa!
 TID_REGION_CUSTOM1,
 TID_REGION_CUSTOM2,
 TID_REGION_CUSTOM3,

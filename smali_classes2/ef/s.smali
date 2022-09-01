@@ -16,11 +16,11 @@
 
 
 # instance fields
-.field public synthetic i:Ljava/lang/Object;
+.field public synthetic j:Ljava/lang/Object;
 
-.field public j:I
+.field public k:I
 
-.field public k:Ljava/lang/Exception;
+.field public l:Ljava/lang/Exception;
 
 
 # direct methods
@@ -37,21 +37,21 @@
 .method public final d(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
 
-    iput-object p1, p0, Lef/s;->i:Ljava/lang/Object;
+    iput-object p1, p0, Lef/s;->j:Ljava/lang/Object;
 
-    iget p1, p0, Lef/s;->j:I
+    iget p1, p0, Lef/s;->k:I
 
     const/high16 v0, -0x80000000
 
     or-int/2addr p1, v0
 
-    iput p1, p0, Lef/s;->j:I
+    iput p1, p0, Lef/s;->k:I
 
     const/4 p1, 0x0
 
-    invoke-static {p1, p0}, Lef/t;->b(Ljava/lang/Exception;Lke/d;)V
+    invoke-static {p1, p0}, Ls4/e;->s(Ljava/lang/Exception;Lke/d;)V
 
-    sget-object p1, Lle/a;->f:Lle/a;
+    sget-object p1, Lle/a;->g:Lle/a;
 
     return-object p1
 .end method

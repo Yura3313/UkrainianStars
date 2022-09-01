@@ -76,7 +76,7 @@
     :cond_0
     iget-object v5, v0, Le8/j;->a:Landroid/content/Context;
 
-    invoke-static {v5}, Lcom/helpshift/util/a0;->a(Landroid/content/Context;)Landroid/content/Context;
+    invoke-static {v5}, Lcom/helpshift/util/z;->a(Landroid/content/Context;)Landroid/content/Context;
 
     move-result-object v5
 
@@ -88,7 +88,7 @@
     const-string v8, "\n Message count : "
 
     .line 4
-    invoke-static {v6, v2, v7, v4, v8}, Lcom/kakaogame/c;->b(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v6, v2, v7, v4, v8}, Lcom/supercell/titan/a;->b(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v6
 
@@ -104,10 +104,10 @@
     const-string v8, "Helpshift_SupportNotif"
 
     .line 6
-    invoke-static {v8, v6, v7, v7}, Landroidx/savedstate/d;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v8, v6, v7, v7}, Le5/i;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
 
     .line 7
-    sget-object v6, Lcom/helpshift/util/u;->c:Le7/g;
+    sget-object v6, Lcom/helpshift/util/t;->c:Le7/g;
 
     .line 8
     iget-object v6, v6, Le7/g;->f:La8/f;
@@ -173,7 +173,7 @@
 
     .line 17
     :cond_2
-    sget-object v8, Lcom/helpshift/util/u;->c:Le7/g;
+    sget-object v8, Lcom/helpshift/util/t;->c:Le7/g;
 
     .line 18
     iget-object v8, v8, Le7/g;->a:Lj8/b;
@@ -199,7 +199,7 @@
 
     .line 22
     :cond_3
-    sget-object v8, Lcom/helpshift/util/u;->c:Le7/g;
+    sget-object v8, Lcom/helpshift/util/t;->c:Le7/g;
 
     .line 23
     iget-object v8, v8, Le7/g;->a:Lj8/b;
@@ -316,10 +316,10 @@
 
     .line 42
     :cond_6
-    sget-object v1, Lcom/helpshift/util/u;->b:Landroid/content/Context;
+    sget-object v1, Lcom/helpshift/util/t;->b:Landroid/content/Context;
 
     .line 43
-    sget-object v3, Lcom/helpshift/util/u;->c:Le7/g;
+    sget-object v3, Lcom/helpshift/util/t;->c:Le7/g;
 
     .line 44
     iget-object v3, v3, Le7/g;->a:Lj8/b;
@@ -341,7 +341,7 @@
     if-nez v1, :cond_8
 
     .line 47
-    invoke-static {v5, v3}, Lcom/android/billingclient/api/c0;->l(Landroid/content/Context;Ljava/lang/String;)Z
+    invoke-static {v5, v3}, Lcom/android/billingclient/api/b0;->m(Landroid/content/Context;Ljava/lang/String;)Z
 
     move-result v1
 
@@ -367,7 +367,7 @@
     invoke-virtual {v10, v1}, Lu/f$c;->h(Landroid/net/Uri;)Lu/f$c;
 
     .line 51
-    invoke-static {v5, v3}, Lcom/android/billingclient/api/c0;->l(Landroid/content/Context;Ljava/lang/String;)Z
+    invoke-static {v5, v3}, Lcom/android/billingclient/api/b0;->m(Landroid/content/Context;Ljava/lang/String;)Z
 
     move-result v1
 
@@ -430,10 +430,10 @@
     const-string v4, "Helpshift_AppUtil"
 
     .line 59
-    invoke-static {v4, v3, v7, v7}, Landroidx/savedstate/d;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v4, v3, v7, v7}, Le5/i;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
 
     .line 60
-    invoke-static {v0}, Lcom/android/billingclient/api/c0;->f(Landroid/content/Context;)Landroid/app/NotificationManager;
+    invoke-static {v0}, Lcom/android/billingclient/api/b0;->g(Landroid/content/Context;)Landroid/app/NotificationManager;
 
     move-result-object v0
 

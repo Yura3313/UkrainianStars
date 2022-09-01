@@ -2597,7 +2597,7 @@
     .line 5
     iget-object v0, v6, Landroidx/recyclerview/widget/LinearLayoutManager;->B:Landroidx/recyclerview/widget/LinearLayoutManager$SavedState;
 
-    iget v0, v0, Landroidx/recyclerview/widget/LinearLayoutManager$SavedState;->f:I
+    iget v0, v0, Landroidx/recyclerview/widget/LinearLayoutManager$SavedState;->g:I
 
     iput v0, v6, Landroidx/recyclerview/widget/LinearLayoutManager;->z:I
 
@@ -2748,7 +2748,7 @@
     .line 23
     iget-object v0, v6, Landroidx/recyclerview/widget/LinearLayoutManager;->B:Landroidx/recyclerview/widget/LinearLayoutManager$SavedState;
 
-    iget-boolean v0, v0, Landroidx/recyclerview/widget/LinearLayoutManager$SavedState;->h:Z
+    iget-boolean v0, v0, Landroidx/recyclerview/widget/LinearLayoutManager$SavedState;->i:Z
 
     iput-boolean v0, v13, Landroidx/recyclerview/widget/LinearLayoutManager$a;->d:Z
 
@@ -2763,7 +2763,7 @@
 
     iget-object v1, v6, Landroidx/recyclerview/widget/LinearLayoutManager;->B:Landroidx/recyclerview/widget/LinearLayoutManager$SavedState;
 
-    iget v1, v1, Landroidx/recyclerview/widget/LinearLayoutManager$SavedState;->g:I
+    iget v1, v1, Landroidx/recyclerview/widget/LinearLayoutManager$SavedState;->h:I
 
     sub-int/2addr v0, v1
 
@@ -2781,7 +2781,7 @@
 
     iget-object v1, v6, Landroidx/recyclerview/widget/LinearLayoutManager;->B:Landroidx/recyclerview/widget/LinearLayoutManager$SavedState;
 
-    iget v1, v1, Landroidx/recyclerview/widget/LinearLayoutManager$SavedState;->g:I
+    iget v1, v1, Landroidx/recyclerview/widget/LinearLayoutManager$SavedState;->h:I
 
     add-int/2addr v0, v1
 
@@ -3927,7 +3927,7 @@
     .line 161
     iget-object v12, v6, Landroidx/recyclerview/widget/LinearLayoutManager;->t:Landroidx/recyclerview/widget/v;
 
-    iget-object v14, v14, Landroidx/recyclerview/widget/RecyclerView$z;->f:Landroid/view/View;
+    iget-object v14, v14, Landroidx/recyclerview/widget/RecyclerView$z;->g:Landroid/view/View;
 
     invoke-virtual {v12, v14}, Landroidx/recyclerview/widget/v;->c(Landroid/view/View;)I
 
@@ -3941,7 +3941,7 @@
     :cond_38
     iget-object v12, v6, Landroidx/recyclerview/widget/LinearLayoutManager;->t:Landroidx/recyclerview/widget/v;
 
-    iget-object v14, v14, Landroidx/recyclerview/widget/RecyclerView$z;->f:Landroid/view/View;
+    iget-object v14, v14, Landroidx/recyclerview/widget/RecyclerView$z;->g:Landroid/view/View;
 
     invoke-virtual {v12, v14}, Landroidx/recyclerview/widget/v;->c(Landroid/view/View;)I
 
@@ -4123,10 +4123,10 @@
     .line 2
     iget-object v0, p0, Landroidx/recyclerview/widget/LinearLayoutManager;->B:Landroidx/recyclerview/widget/LinearLayoutManager$SavedState;
 
-    iget-boolean v3, v0, Landroidx/recyclerview/widget/LinearLayoutManager$SavedState;->h:Z
+    iget-boolean v3, v0, Landroidx/recyclerview/widget/LinearLayoutManager$SavedState;->i:Z
 
     .line 3
-    iget v0, v0, Landroidx/recyclerview/widget/LinearLayoutManager$SavedState;->f:I
+    iget v0, v0, Landroidx/recyclerview/widget/LinearLayoutManager$SavedState;->g:I
 
     goto :goto_0
 
@@ -4496,7 +4496,7 @@
     xor-int/2addr v1, v2
 
     .line 7
-    iput-boolean v1, v0, Landroidx/recyclerview/widget/LinearLayoutManager$SavedState;->h:Z
+    iput-boolean v1, v0, Landroidx/recyclerview/widget/LinearLayoutManager$SavedState;->i:Z
 
     if-eqz v1, :cond_1
 
@@ -4521,14 +4521,14 @@
 
     sub-int/2addr v2, v3
 
-    iput v2, v0, Landroidx/recyclerview/widget/LinearLayoutManager$SavedState;->g:I
+    iput v2, v0, Landroidx/recyclerview/widget/LinearLayoutManager$SavedState;->h:I
 
     .line 11
     invoke-virtual {p0, v1}, Landroidx/recyclerview/widget/RecyclerView$m;->O(Landroid/view/View;)I
 
     move-result v1
 
-    iput v1, v0, Landroidx/recyclerview/widget/LinearLayoutManager$SavedState;->f:I
+    iput v1, v0, Landroidx/recyclerview/widget/LinearLayoutManager$SavedState;->g:I
 
     goto :goto_0
 
@@ -4543,7 +4543,7 @@
 
     move-result v2
 
-    iput v2, v0, Landroidx/recyclerview/widget/LinearLayoutManager$SavedState;->f:I
+    iput v2, v0, Landroidx/recyclerview/widget/LinearLayoutManager$SavedState;->g:I
 
     .line 14
     iget-object v2, p0, Landroidx/recyclerview/widget/LinearLayoutManager;->t:Landroidx/recyclerview/widget/v;
@@ -4561,7 +4561,7 @@
 
     sub-int/2addr v1, v2
 
-    iput v1, v0, Landroidx/recyclerview/widget/LinearLayoutManager$SavedState;->g:I
+    iput v1, v0, Landroidx/recyclerview/widget/LinearLayoutManager$SavedState;->h:I
 
     goto :goto_0
 
@@ -4569,7 +4569,7 @@
     const/4 v1, -0x1
 
     .line 16
-    iput v1, v0, Landroidx/recyclerview/widget/LinearLayoutManager$SavedState;->f:I
+    iput v1, v0, Landroidx/recyclerview/widget/LinearLayoutManager$SavedState;->g:I
 
     :goto_0
     return-object v0
@@ -5115,7 +5115,7 @@
     const/4 v0, -0x1
 
     .line 4
-    iput v0, p1, Landroidx/recyclerview/widget/LinearLayoutManager$SavedState;->f:I
+    iput v0, p1, Landroidx/recyclerview/widget/LinearLayoutManager$SavedState;->g:I
 
     .line 5
     :cond_0

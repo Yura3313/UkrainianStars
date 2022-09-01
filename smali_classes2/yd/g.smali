@@ -1,5 +1,5 @@
 .class public final Lyd/g;
-.super Lse/h;
+.super Lse/i;
 .source "YoungPlayerLoginConfirmPageFragment.kt"
 
 # interfaces
@@ -9,18 +9,18 @@
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/p<",
         "Ljava/lang/String;",
         "Landroid/text/SpannableStringBuilder;",
-        "Lie/h;",
+        "Lie/i;",
         ">;"
     }
 .end annotation
 
 
 # static fields
-.field public static final f:Lyd/g;
+.field public static final g:Lyd/g;
 
 
 # direct methods
@@ -31,7 +31,7 @@
 
     invoke-direct {v0}, Lyd/g;-><init>()V
 
-    sput-object v0, Lyd/g;->f:Lyd/g;
+    sput-object v0, Lyd/g;->g:Lyd/g;
 
     return-void
 .end method
@@ -41,7 +41,7 @@
 
     const/4 v0, 0x2
 
-    invoke-direct {p0, v0}, Lse/h;-><init>(I)V
+    invoke-direct {p0, v0}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -59,11 +59,11 @@
     const-string v0, "text"
 
     .line 2
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "result"
 
-    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 3
     invoke-virtual {p1}, Ljava/lang/String;->hashCode()I
@@ -116,12 +116,12 @@
     move-result-object v1
 
     .line 8
-    iget-object v1, v1, Lae/u;->s:Lud/j;
+    iget-object v1, v1, Lae/u;->s:Lud/i;
 
     const-string v2, "young_player_log_in_connect_privacy_url"
 
     .line 9
-    invoke-virtual {v1, v2}, Lud/j;->g(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v1, v2}, Lud/i;->g(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -129,11 +129,11 @@
 
     const/16 v1, 0x21
 
-    invoke-static {p2, p1, v0, v1}, La5/w;->c(Landroid/text/SpannableStringBuilder;Ljava/lang/CharSequence;Ljava/lang/Object;I)Landroid/text/SpannableStringBuilder;
+    invoke-static {p2, p1, v0, v1}, Lae/t;->e(Landroid/text/SpannableStringBuilder;Ljava/lang/CharSequence;Ljava/lang/Object;I)Landroid/text/SpannableStringBuilder;
 
     .line 10
     :goto_1
-    sget-object p1, Lie/h;->a:Lie/h;
+    sget-object p1, Lie/i;->a:Lie/i;
 
     return-object p1
 .end method

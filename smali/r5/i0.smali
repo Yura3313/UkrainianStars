@@ -1,116 +1,26 @@
 .class public final Lr5/i0;
 .super Ljava/lang/Object;
-.source "SubtleUtil.java"
+.source "RsaSsaPssSignJce.java"
+
+# interfaces
+.implements Lf5/s;
+
+
+# instance fields
+.field public final a:Ljava/security/interfaces/RSAPrivateCrtKey;
+
+.field public final b:Ljava/security/interfaces/RSAPublicKey;
+
+.field public final c:I
+
+.field public final d:I
+
+.field public final e:I
 
 
 # direct methods
-.method public static a(Ljava/math/BigInteger;I)[B
-    .locals 4
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/security/GeneralSecurityException;
-        }
-    .end annotation
-
-    .line 1
-    invoke-virtual {p0}, Ljava/math/BigInteger;->toByteArray()[B
-
-    move-result-object p0
-
-    .line 2
-    array-length v0, p0
-
-    if-ne v0, p1, :cond_0
-
-    return-object p0
-
-    .line 3
-    :cond_0
-    array-length v0, p0
-
-    add-int/lit8 v1, p1, 0x1
-
-    const-string v2, "integer too large"
-
-    if-gt v0, v1, :cond_3
-
-    .line 4
-    array-length v0, p0
-
-    const/4 v3, 0x0
-
-    if-ne v0, v1, :cond_2
-
-    .line 5
-    aget-byte p1, p0, v3
-
-    if-nez p1, :cond_1
-
-    .line 6
-    array-length p1, p0
-
-    const/4 v0, 0x1
-
-    invoke-static {p0, v0, p1}, Ljava/util/Arrays;->copyOfRange([BII)[B
-
-    move-result-object p0
-
-    return-object p0
-
-    .line 7
-    :cond_1
-    new-instance p0, Ljava/security/GeneralSecurityException;
-
-    invoke-direct {p0, v2}, Ljava/security/GeneralSecurityException;-><init>(Ljava/lang/String;)V
-
-    throw p0
-
-    .line 8
-    :cond_2
-    new-array v0, p1, [B
-
-    .line 9
-    array-length v1, p0
-
-    sub-int/2addr p1, v1
-
-    array-length v1, p0
-
-    invoke-static {p0, v3, v0, p1, v1}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
-
-    return-object v0
-
-    .line 10
-    :cond_3
-    new-instance p0, Ljava/security/GeneralSecurityException;
-
-    invoke-direct {p0, v2}, Ljava/security/GeneralSecurityException;-><init>(Ljava/lang/String;)V
-
-    throw p0
-.end method
-
-.method public static b()Z
+.method public constructor <init>(Ljava/security/interfaces/RSAPrivateCrtKey;III)V
     .locals 3
-
-    const/4 v0, 0x0
-
-    :try_start_0
-    const-string v1, "android.app.Application"
-
-    const/4 v2, 0x0
-
-    invoke-static {v1, v0, v2}, Ljava/lang/Class;->forName(Ljava/lang/String;ZLjava/lang/ClassLoader;)Ljava/lang/Class;
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
-
-    const/4 v0, 0x1
-
-    :catch_0
-    return v0
-.end method
-
-.method public static c([BII)[B
-    .locals 8
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/security/GeneralSecurityException;
@@ -118,198 +28,394 @@
     .end annotation
 
     .line 1
-    sget-object v0, Lr5/x;->h:Lr5/x;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    invoke-static {p2}, Lr5/i0;->d(I)Ljava/lang/String;
-
-    move-result-object p2
-
-    invoke-virtual {v0, p2}, Lr5/x;->a(Ljava/lang/String;)Ljava/lang/Object;
-
-    move-result-object p2
-
-    check-cast p2, Ljava/security/MessageDigest;
+    invoke-static {p2}, Lr5/l0;->d(I)V
 
     .line 3
-    invoke-virtual {p2}, Ljava/security/MessageDigest;->getDigestLength()I
+    invoke-interface {p1}, Ljava/security/interfaces/RSAKey;->getModulus()Ljava/math/BigInteger;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/math/BigInteger;->bitLength()I
 
     move-result v0
 
+    invoke-static {v0}, Lr5/l0;->c(I)V
+
     .line 4
-    new-array v1, p1, [B
-
-    const/4 v2, 0x0
-
-    const/4 v3, 0x0
-
-    const/4 v4, 0x0
-
-    :goto_0
-    add-int/lit8 v5, p1, -0x1
+    iput-object p1, p0, Lr5/i0;->a:Ljava/security/interfaces/RSAPrivateCrtKey;
 
     .line 5
-    div-int/2addr v5, v0
+    sget-object v0, Lr5/x;->j:Lr5/x;
 
-    if-gt v3, v5, :cond_0
+    const-string v1, "RSA"
+
+    invoke-virtual {v0, v1}, Lr5/x;->a(Ljava/lang/String;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Ljava/security/KeyFactory;
 
     .line 6
-    invoke-virtual {p2}, Ljava/security/MessageDigest;->reset()V
+    new-instance v1, Ljava/security/spec/RSAPublicKeySpec;
 
     .line 7
-    invoke-virtual {p2, p0}, Ljava/security/MessageDigest;->update([B)V
+    invoke-interface {p1}, Ljava/security/interfaces/RSAKey;->getModulus()Ljava/math/BigInteger;
 
-    int-to-long v5, v3
+    move-result-object v2
+
+    invoke-interface {p1}, Ljava/security/interfaces/RSAPrivateCrtKey;->getPublicExponent()Ljava/math/BigInteger;
+
+    move-result-object p1
+
+    invoke-direct {v1, v2, p1}, Ljava/security/spec/RSAPublicKeySpec;-><init>(Ljava/math/BigInteger;Ljava/math/BigInteger;)V
+
+    invoke-virtual {v0, v1}, Ljava/security/KeyFactory;->generatePublic(Ljava/security/spec/KeySpec;)Ljava/security/PublicKey;
+
+    move-result-object p1
+
+    check-cast p1, Ljava/security/interfaces/RSAPublicKey;
+
+    iput-object p1, p0, Lr5/i0;->b:Ljava/security/interfaces/RSAPublicKey;
 
     .line 8
-    invoke-static {v5, v6}, Ljava/math/BigInteger;->valueOf(J)Ljava/math/BigInteger;
-
-    move-result-object v5
-
-    const/4 v6, 0x4
-
-    invoke-static {v5, v6}, Lr5/i0;->a(Ljava/math/BigInteger;I)[B
-
-    move-result-object v5
-
-    invoke-virtual {p2, v5}, Ljava/security/MessageDigest;->update([B)V
+    iput p2, p0, Lr5/i0;->c:I
 
     .line 9
-    invoke-virtual {p2}, Ljava/security/MessageDigest;->digest()[B
-
-    move-result-object v5
+    iput p3, p0, Lr5/i0;->d:I
 
     .line 10
-    array-length v6, v5
+    iput p4, p0, Lr5/i0;->e:I
 
-    sub-int v7, p1, v4
+    return-void
+.end method
 
-    invoke-static {v6, v7}, Ljava/lang/Math;->min(II)I
 
-    move-result v6
+# virtual methods
+.method public final a([B)[B
+    .locals 17
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/security/GeneralSecurityException;
+        }
+    .end annotation
 
-    invoke-static {v5, v2, v1, v4, v6}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+    move-object/from16 v0, p0
+
+    .line 1
+    iget-object v1, v0, Lr5/i0;->b:Ljava/security/interfaces/RSAPublicKey;
+
+    invoke-interface {v1}, Ljava/security/interfaces/RSAKey;->getModulus()Ljava/math/BigInteger;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/math/BigInteger;->bitLength()I
+
+    move-result v1
+
+    const/4 v2, 0x1
+
+    sub-int/2addr v1, v2
+
+    .line 2
+    iget v3, v0, Lr5/i0;->c:I
+
+    invoke-static {v3}, Lr5/l0;->d(I)V
+
+    .line 3
+    sget-object v3, Lr5/x;->h:Lr5/x;
+
+    iget v4, v0, Lr5/i0;->c:I
+
+    .line 4
+    invoke-static {v4}, Lr5/k0;->d(I)Ljava/lang/String;
+
+    move-result-object v4
+
+    invoke-virtual {v3, v4}, Lr5/x;->a(Ljava/lang/String;)Ljava/lang/Object;
+
+    move-result-object v3
+
+    check-cast v3, Ljava/security/MessageDigest;
+
+    move-object/from16 v4, p1
+
+    .line 5
+    invoke-virtual {v3, v4}, Ljava/security/MessageDigest;->digest([B)[B
+
+    move-result-object v4
+
+    .line 6
+    invoke-virtual {v3}, Ljava/security/MessageDigest;->getDigestLength()I
+
+    move-result v5
+
+    add-int/lit8 v6, v1, -0x1
+
+    const/16 v7, 0x8
+
+    .line 7
+    div-int/2addr v6, v7
+
+    add-int/2addr v6, v2
+
+    .line 8
+    iget v8, v0, Lr5/i0;->e:I
+
+    add-int v9, v5, v8
+
+    const/4 v10, 0x2
+
+    add-int/2addr v9, v10
+
+    if-lt v6, v9, :cond_3
+
+    .line 9
+    invoke-static {v8}, Lr5/f0;->a(I)[B
+
+    move-result-object v8
+
+    add-int/lit8 v9, v5, 0x8
+
+    .line 10
+    iget v11, v0, Lr5/i0;->e:I
+
+    add-int/2addr v11, v9
+
+    new-array v11, v11, [B
+
+    const/4 v12, 0x0
 
     .line 11
-    array-length v5, v5
+    invoke-static {v4, v12, v11, v7, v5}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    add-int/2addr v4, v5
+    .line 12
+    array-length v4, v8
 
-    add-int/lit8 v3, v3, 0x1
+    invoke-static {v8, v12, v11, v9, v4}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+
+    .line 13
+    invoke-virtual {v3, v11}, Ljava/security/MessageDigest;->digest([B)[B
+
+    move-result-object v3
+
+    sub-int v4, v6, v5
+
+    sub-int/2addr v4, v2
+
+    .line 14
+    new-array v7, v4, [B
+
+    .line 15
+    iget v9, v0, Lr5/i0;->e:I
+
+    sub-int v9, v6, v9
+
+    sub-int/2addr v9, v5
+
+    add-int/lit8 v11, v9, -0x2
+
+    aput-byte v2, v7, v11
+
+    sub-int/2addr v9, v2
+
+    .line 16
+    array-length v11, v8
+
+    invoke-static {v8, v12, v7, v9, v11}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+
+    .line 17
+    iget v8, v0, Lr5/i0;->d:I
+
+    invoke-static {v3, v4, v8}, Lr5/k0;->c([BII)[B
+
+    move-result-object v8
+
+    .line 18
+    new-array v9, v4, [B
+
+    const/4 v11, 0x0
+
+    :goto_0
+    if-ge v11, v4, :cond_0
+
+    .line 19
+    aget-byte v13, v7, v11
+
+    aget-byte v14, v8, v11
+
+    xor-int/2addr v13, v14
+
+    int-to-byte v13, v13
+
+    aput-byte v13, v9, v11
+
+    add-int/lit8 v11, v11, 0x1
 
     goto :goto_0
 
     :cond_0
-    return-object v1
-.end method
+    const/4 v7, 0x0
 
-.method public static d(I)Ljava/lang/String;
-    .locals 2
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/security/GeneralSecurityException;
-        }
-    .end annotation
+    :goto_1
+    int-to-long v13, v7
 
-    if-eqz p0, :cond_4
+    int-to-long v10, v6
 
-    add-int/lit8 v0, p0, -0x1
+    const-wide/16 v15, 0x8
 
-    if-eqz v0, :cond_3
+    mul-long v10, v10, v15
 
-    const/4 v1, 0x1
+    move-object v15, v3
 
-    if-eq v0, v1, :cond_2
+    int-to-long v2, v1
 
-    const/4 v1, 0x2
+    sub-long/2addr v10, v2
 
-    if-eq v0, v1, :cond_1
+    cmp-long v2, v13, v10
 
-    const/4 v1, 0x3
+    if-gez v2, :cond_1
 
-    if-ne v0, v1, :cond_0
+    .line 20
+    div-int/lit8 v2, v7, 0x8
 
-    const-string p0, "SHA-512"
+    .line 21
+    rem-int/lit8 v3, v7, 0x8
 
-    return-object p0
+    rsub-int/lit8 v3, v3, 0x7
 
-    .line 1
-    :cond_0
-    new-instance v0, Ljava/security/GeneralSecurityException;
+    .line 22
+    aget-byte v10, v9, v2
 
-    const-string v1, "Unsupported hash "
+    const/4 v8, 0x1
 
-    .line 2
-    invoke-static {v1}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    shl-int v3, v8, v3
 
-    move-result-object v1
+    xor-int/lit8 v3, v3, -0x1
 
-    .line 3
-    invoke-static {p0}, Lr5/z;->b(I)Ljava/lang/String;
+    and-int/2addr v3, v10
 
-    move-result-object p0
+    int-to-byte v3, v3
 
-    invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    aput-byte v3, v9, v2
 
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    add-int/lit8 v7, v7, 0x1
 
-    move-result-object p0
+    move-object v3, v15
 
-    invoke-direct {v0, p0}, Ljava/security/GeneralSecurityException;-><init>(Ljava/lang/String;)V
+    const/4 v2, 0x1
 
-    throw v0
+    const/4 v10, 0x2
+
+    goto :goto_1
 
     :cond_1
-    const-string p0, "SHA-384"
+    add-int/2addr v5, v4
 
-    return-object p0
+    add-int/lit8 v1, v5, 0x1
 
+    .line 23
+    new-array v1, v1, [B
+
+    .line 24
+    invoke-static {v9, v12, v1, v12, v4}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+
+    move-object v2, v15
+
+    .line 25
+    array-length v3, v2
+
+    invoke-static {v2, v12, v1, v4, v3}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+
+    const/16 v2, -0x44
+
+    .line 26
+    aput-byte v2, v1, v5
+
+    .line 27
+    sget-object v2, Lr5/x;->e:Lr5/x;
+
+    const-string v3, "RSA/ECB/NOPADDING"
+
+    invoke-virtual {v2, v3}, Lr5/x;->a(Ljava/lang/String;)Ljava/lang/Object;
+
+    move-result-object v4
+
+    check-cast v4, Ljavax/crypto/Cipher;
+
+    .line 28
+    iget-object v5, v0, Lr5/i0;->a:Ljava/security/interfaces/RSAPrivateCrtKey;
+
+    const/4 v6, 0x2
+
+    invoke-virtual {v4, v6, v5}, Ljavax/crypto/Cipher;->init(ILjava/security/Key;)V
+
+    .line 29
+    invoke-virtual {v4, v1}, Ljavax/crypto/Cipher;->doFinal([B)[B
+
+    move-result-object v4
+
+    .line 30
+    invoke-virtual {v2, v3}, Lr5/x;->a(Ljava/lang/String;)Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Ljavax/crypto/Cipher;
+
+    .line 31
+    iget-object v3, v0, Lr5/i0;->b:Ljava/security/interfaces/RSAPublicKey;
+
+    const/4 v5, 0x1
+
+    invoke-virtual {v2, v5, v3}, Ljavax/crypto/Cipher;->init(ILjava/security/Key;)V
+
+    .line 32
+    invoke-virtual {v2, v4}, Ljavax/crypto/Cipher;->doFinal([B)[B
+
+    move-result-object v2
+
+    .line 33
+    new-instance v3, Ljava/math/BigInteger;
+
+    invoke-direct {v3, v5, v1}, Ljava/math/BigInteger;-><init>(I[B)V
+
+    new-instance v1, Ljava/math/BigInteger;
+
+    invoke-direct {v1, v5, v2}, Ljava/math/BigInteger;-><init>(I[B)V
+
+    invoke-virtual {v3, v1}, Ljava/math/BigInteger;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_2
+
+    return-object v4
+
+    .line 34
     :cond_2
-    const-string p0, "SHA-256"
+    new-instance v1, Ljava/lang/RuntimeException;
 
-    return-object p0
+    const-string v2, "Security bug: RSA signature computation error"
 
+    invoke-direct {v1, v2}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;)V
+
+    throw v1
+
+    .line 35
     :cond_3
-    const-string p0, "SHA-1"
+    new-instance v1, Ljava/security/GeneralSecurityException;
 
-    return-object p0
+    const-string v2, "encoding error"
 
-    :cond_4
-    const/4 p0, 0x0
+    invoke-direct {v1, v2}, Ljava/security/GeneralSecurityException;-><init>(Ljava/lang/String;)V
 
-    .line 4
-    throw p0
-.end method
+    goto :goto_3
 
-.method public static e(I)Ljava/lang/String;
-    .locals 1
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/security/GeneralSecurityException;
-        }
-    .end annotation
+    :goto_2
+    throw v1
 
-    .line 1
-    invoke-static {p0}, Lr5/j0;->d(I)V
-
-    .line 2
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    invoke-static {p0}, Lr5/z;->b(I)Ljava/lang/String;
-
-    move-result-object p0
-
-    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string p0, "withECDSA"
-
-    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p0
-
-    return-object p0
+    :goto_3
+    goto :goto_2
 .end method

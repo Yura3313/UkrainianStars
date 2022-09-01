@@ -75,7 +75,7 @@
     check-cast v5, Ljava/lang/String;
 
     .line 5
-    invoke-static {v5}, Lcom/google/android/play/core/appupdate/g;->b(Ljava/lang/String;)Z
+    invoke-static {v5}, La5/b0;->d(Ljava/lang/String;)Z
 
     move-result v6
 
@@ -107,7 +107,7 @@
     aget-object v7, v6, v7
 
     .line 9
-    invoke-static {v7}, Lcom/google/android/play/core/appupdate/g;->b(Ljava/lang/String;)Z
+    invoke-static {v7}, La5/b0;->d(Ljava/lang/String;)Z
 
     move-result v8
 

@@ -1,5 +1,5 @@
 .class public final Lbe/m;
-.super Lse/h;
+.super Lse/i;
 .source "FriendsStorage.kt"
 
 # interfaces
@@ -9,31 +9,31 @@
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/a<",
-        "Lie/h;",
+        "Lie/i;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic f:Lbe/h;
+.field public final synthetic g:Lbe/h;
 
-.field public final synthetic g:Ljava/util/List;
+.field public final synthetic h:Ljava/util/List;
 
 
 # direct methods
 .method public constructor <init>(Lbe/h;Ljava/util/List;)V
     .locals 0
 
-    iput-object p1, p0, Lbe/m;->f:Lbe/h;
+    iput-object p1, p0, Lbe/m;->g:Lbe/h;
 
-    iput-object p2, p0, Lbe/m;->g:Ljava/util/List;
+    iput-object p2, p0, Lbe/m;->h:Ljava/util/List;
 
     const/4 p1, 0x0
 
-    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -44,7 +44,7 @@
     .locals 4
 
     .line 1
-    iget-object v0, p0, Lbe/m;->f:Lbe/h;
+    iget-object v0, p0, Lbe/m;->g:Lbe/h;
 
     .line 2
     iget-object v0, v0, Lbe/h;->e:Ljava/util/WeakHashMap;
@@ -54,7 +54,7 @@
 
     .line 4
     :try_start_0
-    iget-object v1, p0, Lbe/m;->f:Lbe/h;
+    iget-object v1, p0, Lbe/m;->g:Lbe/h;
 
     .line 5
     iget-object v1, v1, Lbe/h;->e:Ljava/util/WeakHashMap;
@@ -66,9 +66,9 @@
 
     const-string v2, "publicProfileChangedListeners.keys"
 
-    invoke-static {v1, v2}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-static {v1}, Lje/j;->Q(Ljava/lang/Iterable;)Ljava/util/List;
+    invoke-static {v1}, Lje/j;->L(Ljava/lang/Iterable;)Ljava/util/List;
 
     move-result-object v1
     :try_end_0
@@ -96,7 +96,7 @@
     check-cast v1, Lbe/h$c;
 
     .line 9
-    iget-object v2, p0, Lbe/m;->g:Ljava/util/List;
+    iget-object v2, p0, Lbe/m;->h:Ljava/util/List;
 
     invoke-interface {v2}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -113,16 +113,16 @@
 
     move-result-object v3
 
-    check-cast v3, Lvc/t;
+    check-cast v3, Lvc/s;
 
     .line 10
-    invoke-interface {v1, v3}, Lbe/h$c;->f(Lvc/t;)V
+    invoke-interface {v1, v3}, Lbe/h$c;->f(Lvc/s;)V
 
     goto :goto_0
 
     .line 11
     :cond_1
-    sget-object v0, Lie/h;->a:Lie/h;
+    sget-object v0, Lie/i;->a:Lie/i;
 
     return-object v0
 

@@ -40,7 +40,7 @@
     if-nez v0, :cond_0
 
     .line 4
-    sget-object p0, Lo5/d;->g:Lo5/d$f;
+    sget-object p0, Lo5/d;->h:Lo5/d$f;
 
     iput-object p0, p2, Lcom/google/crypto/tink/shaded/protobuf/d$a;->c:Ljava/lang/Object;
 
@@ -1276,7 +1276,7 @@
     if-nez p3, :cond_6
 
     .line 12
-    sget-object p1, Lo5/d;->g:Lo5/d$f;
+    sget-object p1, Lo5/d;->h:Lo5/d$f;
 
     invoke-virtual {p4, p0, p1}, Lcom/google/crypto/tink/shaded/protobuf/i0;->b(ILjava/lang/Object;)V
 

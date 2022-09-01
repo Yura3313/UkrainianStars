@@ -4,29 +4,29 @@
 
 
 # static fields
-.field public static l:Ljava/lang/String;
+.field public static m:Ljava/lang/String;
 
-.field public static m:[Landroid/text/InputFilter;
+.field public static n:[Landroid/text/InputFilter;
 
-.field public static n:I
+.field public static o:I
 
-.field public static o:Lcom/supercell/titan/KeyboardDialog;
+.field public static p:Lcom/supercell/titan/KeyboardDialog;
 
-.field public static final p:Landroid/graphics/Rect;
+.field public static final q:Landroid/graphics/Rect;
 
 
 # instance fields
-.field public final f:Lcom/supercell/titan/GameApp;
+.field public final g:Lcom/supercell/titan/GameApp;
 
-.field public final g:Landroid/widget/Button;
+.field public final h:Landroid/widget/Button;
 
-.field public final h:Lcom/supercell/titan/i;
+.field public final i:Lcom/supercell/titan/i;
 
-.field public final i:Lcom/supercell/titan/n;
+.field public final j:Lcom/supercell/titan/n;
 
-.field public j:Landroid/graphics/Typeface;
+.field public k:Landroid/graphics/Typeface;
 
-.field public final k:I
+.field public final l:I
 
 
 # direct methods
@@ -38,7 +38,7 @@
 
     invoke-direct {v0}, Landroid/graphics/Rect;-><init>()V
 
-    sput-object v0, Lcom/supercell/titan/KeyboardDialog;->p:Landroid/graphics/Rect;
+    sput-object v0, Lcom/supercell/titan/KeyboardDialog;->q:Landroid/graphics/Rect;
 
     .line 2
     new-instance v0, Ljava/util/concurrent/atomic/AtomicInteger;
@@ -59,7 +59,7 @@
     invoke-direct {p0, p1, v0}, Landroid/app/Dialog;-><init>(Landroid/content/Context;I)V
 
     .line 2
-    iput-object p1, p0, Lcom/supercell/titan/KeyboardDialog;->f:Lcom/supercell/titan/GameApp;
+    iput-object p1, p0, Lcom/supercell/titan/KeyboardDialog;->g:Lcom/supercell/titan/GameApp;
 
     const/4 v0, 0x1
 
@@ -71,21 +71,21 @@
 
     invoke-direct {v0, p1}, Lcom/supercell/titan/n;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/supercell/titan/KeyboardDialog;->i:Lcom/supercell/titan/n;
+    iput-object v0, p0, Lcom/supercell/titan/KeyboardDialog;->j:Lcom/supercell/titan/n;
 
     .line 5
     new-instance v0, Landroid/widget/Button;
 
     invoke-direct {v0, p1}, Landroid/widget/Button;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/supercell/titan/KeyboardDialog;->g:Landroid/widget/Button;
+    iput-object v0, p0, Lcom/supercell/titan/KeyboardDialog;->h:Landroid/widget/Button;
 
     .line 6
     new-instance v0, Lcom/supercell/titan/i;
 
     invoke-direct {v0, p1}, Lcom/supercell/titan/i;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/supercell/titan/KeyboardDialog;->h:Lcom/supercell/titan/i;
+    iput-object v0, p0, Lcom/supercell/titan/KeyboardDialog;->i:Lcom/supercell/titan/i;
 
     .line 7
     new-instance v0, Landroid/graphics/Point;
@@ -107,10 +107,10 @@
     .line 10
     iget p1, v0, Landroid/graphics/Point;->x:I
 
-    iput p1, p0, Lcom/supercell/titan/KeyboardDialog;->k:I
+    iput p1, p0, Lcom/supercell/titan/KeyboardDialog;->l:I
 
     .line 11
-    sput-object p0, Lcom/supercell/titan/KeyboardDialog;->o:Lcom/supercell/titan/KeyboardDialog;
+    sput-object p0, Lcom/supercell/titan/KeyboardDialog;->p:Lcom/supercell/titan/KeyboardDialog;
 
     return-void
 .end method
@@ -157,11 +157,11 @@
 
     if-eqz v0, :cond_2
 
-    sget-object v0, Lcom/supercell/titan/KeyboardDialog;->o:Lcom/supercell/titan/KeyboardDialog;
+    sget-object v0, Lcom/supercell/titan/KeyboardDialog;->p:Lcom/supercell/titan/KeyboardDialog;
 
     if-eqz v0, :cond_2
 
-    iget-object v0, v0, Lcom/supercell/titan/KeyboardDialog;->i:Lcom/supercell/titan/n;
+    iget-object v0, v0, Lcom/supercell/titan/KeyboardDialog;->j:Lcom/supercell/titan/n;
 
     if-nez v0, :cond_0
 
@@ -169,14 +169,14 @@
 
     .line 2
     :cond_0
-    sget-object v2, Lcom/supercell/titan/KeyboardDialog;->p:Landroid/graphics/Rect;
+    sget-object v2, Lcom/supercell/titan/KeyboardDialog;->q:Landroid/graphics/Rect;
 
     invoke-virtual {v0, v2}, Landroid/view/View;->getWindowVisibleDisplayFrame(Landroid/graphics/Rect;)V
 
     .line 3
-    sget-object v0, Lcom/supercell/titan/KeyboardDialog;->o:Lcom/supercell/titan/KeyboardDialog;
+    sget-object v0, Lcom/supercell/titan/KeyboardDialog;->p:Lcom/supercell/titan/KeyboardDialog;
 
-    iget-object v0, v0, Lcom/supercell/titan/KeyboardDialog;->i:Lcom/supercell/titan/n;
+    iget-object v0, v0, Lcom/supercell/titan/KeyboardDialog;->j:Lcom/supercell/titan/n;
 
     invoke-virtual {v0}, Landroid/view/View;->getHeight()I
 
@@ -213,14 +213,14 @@
     .locals 1
 
     .line 1
-    sput p0, Lcom/supercell/titan/KeyboardDialog;->n:I
+    sput p0, Lcom/supercell/titan/KeyboardDialog;->o:I
 
     .line 2
-    sget-object v0, Lcom/supercell/titan/KeyboardDialog;->o:Lcom/supercell/titan/KeyboardDialog;
+    sget-object v0, Lcom/supercell/titan/KeyboardDialog;->p:Lcom/supercell/titan/KeyboardDialog;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, v0, Lcom/supercell/titan/KeyboardDialog;->i:Lcom/supercell/titan/n;
+    iget-object v0, v0, Lcom/supercell/titan/KeyboardDialog;->j:Lcom/supercell/titan/n;
 
     if-eqz v0, :cond_0
 
@@ -240,35 +240,35 @@
     invoke-super {p0, p1}, Landroid/app/Dialog;->onCreate(Landroid/os/Bundle;)V
 
     .line 2
-    iget-object p1, p0, Lcom/supercell/titan/KeyboardDialog;->i:Lcom/supercell/titan/n;
+    iget-object p1, p0, Lcom/supercell/titan/KeyboardDialog;->j:Lcom/supercell/titan/n;
 
     invoke-virtual {p1}, Landroid/widget/TextView;->getTypeface()Landroid/graphics/Typeface;
 
     move-result-object p1
 
-    iput-object p1, p0, Lcom/supercell/titan/KeyboardDialog;->j:Landroid/graphics/Typeface;
+    iput-object p1, p0, Lcom/supercell/titan/KeyboardDialog;->k:Landroid/graphics/Typeface;
 
     .line 3
-    iget-object p1, p0, Lcom/supercell/titan/KeyboardDialog;->i:Lcom/supercell/titan/n;
+    iget-object p1, p0, Lcom/supercell/titan/KeyboardDialog;->j:Lcom/supercell/titan/n;
 
     const/4 v0, 0x1
 
     invoke-virtual {p1, v0}, Landroid/view/View;->setFocusable(Z)V
 
     .line 4
-    iget-object p1, p0, Lcom/supercell/titan/KeyboardDialog;->i:Lcom/supercell/titan/n;
+    iget-object p1, p0, Lcom/supercell/titan/KeyboardDialog;->j:Lcom/supercell/titan/n;
 
     const v1, 0x10001
 
     invoke-virtual {p1, v1}, Landroid/widget/TextView;->setInputType(I)V
 
     .line 5
-    iget-object p1, p0, Lcom/supercell/titan/KeyboardDialog;->i:Lcom/supercell/titan/n;
+    iget-object p1, p0, Lcom/supercell/titan/KeyboardDialog;->j:Lcom/supercell/titan/n;
 
     invoke-virtual {p1}, Landroid/widget/TextView;->setSingleLine()V
 
     .line 6
-    iget-object p1, p0, Lcom/supercell/titan/KeyboardDialog;->h:Lcom/supercell/titan/i;
+    iget-object p1, p0, Lcom/supercell/titan/KeyboardDialog;->i:Lcom/supercell/titan/i;
 
     new-instance v1, Lcom/supercell/titan/KeyboardDialog$a;
 
@@ -277,7 +277,7 @@
     invoke-virtual {p1, v1}, Landroid/view/View;->setOnTouchListener(Landroid/view/View$OnTouchListener;)V
 
     .line 7
-    iget-object p1, p0, Lcom/supercell/titan/KeyboardDialog;->g:Landroid/widget/Button;
+    iget-object p1, p0, Lcom/supercell/titan/KeyboardDialog;->h:Landroid/widget/Button;
 
     invoke-static {}, Landroid/view/View;->generateViewId()I
 
@@ -286,7 +286,7 @@
     invoke-virtual {p1, v1}, Landroid/view/View;->setId(I)V
 
     .line 8
-    iget-object p1, p0, Lcom/supercell/titan/KeyboardDialog;->g:Landroid/widget/Button;
+    iget-object p1, p0, Lcom/supercell/titan/KeyboardDialog;->h:Landroid/widget/Button;
 
     new-instance v1, Lcom/supercell/titan/KeyboardDialog$b;
 
@@ -302,63 +302,63 @@
     invoke-direct {p1, v1, v1}, Landroid/widget/RelativeLayout$LayoutParams;-><init>(II)V
 
     .line 10
-    iget-object v1, p0, Lcom/supercell/titan/KeyboardDialog;->h:Lcom/supercell/titan/i;
+    iget-object v1, p0, Lcom/supercell/titan/KeyboardDialog;->i:Lcom/supercell/titan/i;
 
-    iget-object v2, p0, Lcom/supercell/titan/KeyboardDialog;->g:Landroid/widget/Button;
+    iget-object v2, p0, Lcom/supercell/titan/KeyboardDialog;->h:Landroid/widget/Button;
 
     invoke-virtual {v1, v2}, Landroid/view/ViewGroup;->addView(Landroid/view/View;)V
 
     .line 11
-    iget-object v1, p0, Lcom/supercell/titan/KeyboardDialog;->h:Lcom/supercell/titan/i;
+    iget-object v1, p0, Lcom/supercell/titan/KeyboardDialog;->i:Lcom/supercell/titan/i;
 
-    iget-object v2, p0, Lcom/supercell/titan/KeyboardDialog;->i:Lcom/supercell/titan/n;
+    iget-object v2, p0, Lcom/supercell/titan/KeyboardDialog;->j:Lcom/supercell/titan/n;
 
     invoke-virtual {v1, v2}, Landroid/view/ViewGroup;->addView(Landroid/view/View;)V
 
     .line 12
-    iget-object v1, p0, Lcom/supercell/titan/KeyboardDialog;->h:Lcom/supercell/titan/i;
+    iget-object v1, p0, Lcom/supercell/titan/KeyboardDialog;->i:Lcom/supercell/titan/i;
 
     invoke-virtual {v1, v0}, Landroid/view/View;->setFitsSystemWindows(Z)V
 
     .line 13
-    iget-object v0, p0, Lcom/supercell/titan/KeyboardDialog;->h:Lcom/supercell/titan/i;
+    iget-object v0, p0, Lcom/supercell/titan/KeyboardDialog;->i:Lcom/supercell/titan/i;
 
     invoke-virtual {p0, v0, p1}, Landroid/app/Dialog;->setContentView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
 
     .line 14
-    sget-object p1, Lcom/supercell/titan/KeyboardDialog;->l:Ljava/lang/String;
+    sget-object p1, Lcom/supercell/titan/KeyboardDialog;->m:Ljava/lang/String;
 
     const/4 v0, 0x0
 
     if-eqz p1, :cond_0
 
     .line 15
-    iget-object v1, p0, Lcom/supercell/titan/KeyboardDialog;->i:Lcom/supercell/titan/n;
+    iget-object v1, p0, Lcom/supercell/titan/KeyboardDialog;->j:Lcom/supercell/titan/n;
 
     invoke-virtual {v1, p1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 16
-    sput-object v0, Lcom/supercell/titan/KeyboardDialog;->l:Ljava/lang/String;
+    sput-object v0, Lcom/supercell/titan/KeyboardDialog;->m:Ljava/lang/String;
 
     .line 17
     :cond_0
-    sget-object p1, Lcom/supercell/titan/KeyboardDialog;->m:[Landroid/text/InputFilter;
+    sget-object p1, Lcom/supercell/titan/KeyboardDialog;->n:[Landroid/text/InputFilter;
 
     if-eqz p1, :cond_1
 
     .line 18
-    iget-object v1, p0, Lcom/supercell/titan/KeyboardDialog;->i:Lcom/supercell/titan/n;
+    iget-object v1, p0, Lcom/supercell/titan/KeyboardDialog;->j:Lcom/supercell/titan/n;
 
     invoke-virtual {v1, p1}, Landroid/widget/TextView;->setFilters([Landroid/text/InputFilter;)V
 
     .line 19
-    sput-object v0, Lcom/supercell/titan/KeyboardDialog;->m:[Landroid/text/InputFilter;
+    sput-object v0, Lcom/supercell/titan/KeyboardDialog;->n:[Landroid/text/InputFilter;
 
     .line 20
     :cond_1
-    iget-object p1, p0, Lcom/supercell/titan/KeyboardDialog;->i:Lcom/supercell/titan/n;
+    iget-object p1, p0, Lcom/supercell/titan/KeyboardDialog;->j:Lcom/supercell/titan/n;
 
-    sget v0, Lcom/supercell/titan/KeyboardDialog;->n:I
+    sget v0, Lcom/supercell/titan/KeyboardDialog;->o:I
 
     invoke-virtual {p1, v0}, Landroid/widget/TextView;->setImeOptions(I)V
 
@@ -377,10 +377,10 @@
     const/4 v0, 0x0
 
     .line 2
-    sput-object v0, Lcom/supercell/titan/KeyboardDialog;->l:Ljava/lang/String;
+    sput-object v0, Lcom/supercell/titan/KeyboardDialog;->m:Ljava/lang/String;
 
     .line 3
-    sput-object v0, Lcom/supercell/titan/KeyboardDialog;->o:Lcom/supercell/titan/KeyboardDialog;
+    sput-object v0, Lcom/supercell/titan/KeyboardDialog;->p:Lcom/supercell/titan/KeyboardDialog;
 
     return-void
 .end method

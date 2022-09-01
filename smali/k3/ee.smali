@@ -1,4 +1,4 @@
-.class public final synthetic Lk3/ee;
+.class public final Lk3/ee;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
@@ -7,22 +7,18 @@
 
 
 # instance fields
-.field public final synthetic f:I
-
-.field public final g:I
+.field public final synthetic g:I
 
 .field public final h:Ljava/lang/Object;
 
 
 # direct methods
-.method public synthetic constructor <init>(Ljava/lang/Object;II)V
+.method public synthetic constructor <init>(Ljava/lang/Object;I)V
     .locals 0
 
-    iput p3, p0, Lk3/ee;->f:I
+    iput p2, p0, Lk3/ee;->g:I
 
     iput-object p1, p0, Lk3/ee;->h:Ljava/lang/Object;
-
-    iput p2, p0, Lk3/ee;->g:I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -32,9 +28,9 @@
 
 # virtual methods
 .method public final run()V
-    .locals 2
+    .locals 1
 
-    iget v0, p0, Lk3/ee;->f:I
+    iget v0, p0, Lk3/ee;->g:I
 
     packed-switch v0, :pswitch_data_0
 
@@ -44,19 +40,17 @@
     :pswitch_0
     iget-object v0, p0, Lk3/ee;->h:Ljava/lang/Object;
 
-    check-cast v0, Lk3/be;
-
-    iget v1, p0, Lk3/ee;->g:I
+    check-cast v0, Lk3/ce;
 
     .line 2
-    iget-object v0, v0, Lk3/be;->s:Lk3/le;
+    iget-object v0, v0, Lk3/ce;->t:Lk3/me;
 
     if-eqz v0, :cond_0
 
     .line 3
-    check-cast v0, Lk3/pe;
+    check-cast v0, Lk3/qe;
 
-    invoke-virtual {v0, v1}, Lk3/pe;->onWindowVisibilityChanged(I)V
+    invoke-virtual {v0}, Lk3/qe;->d()V
 
     :cond_0
     return-void
@@ -65,15 +59,10 @@
     :goto_0
     iget-object v0, p0, Lk3/ee;->h:Ljava/lang/Object;
 
-    check-cast v0, Lk3/xf;
+    check-cast v0, Lcom/google/android/gms/internal/ads/zzdhl;
 
     .line 5
-    iget-object v0, v0, Lk3/xf;->g:Ljava/lang/Object;
-
-    check-cast v0, Lk3/zw0;
-
-    .line 6
-    invoke-interface {v0}, Lk3/zw0;->x()V
+    invoke-virtual {v0}, Lcom/google/android/gms/internal/ads/zzdhl;->v7()V
 
     return-void
 

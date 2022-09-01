@@ -1,5 +1,5 @@
 .class public final Lae/z2$b;
-.super Lse/h;
+.super Lse/i;
 .source "ViewUtil.kt"
 
 # interfaces
@@ -18,7 +18,7 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/a<",
         "Ljava/lang/Integer;",
         ">;"
@@ -27,7 +27,7 @@
 
 
 # static fields
-.field public static final f:Lae/z2$b;
+.field public static final g:Lae/z2$b;
 
 
 # direct methods
@@ -38,7 +38,7 @@
 
     invoke-direct {v0}, Lae/z2$b;-><init>()V
 
-    sput-object v0, Lae/z2$b;->f:Lae/z2$b;
+    sput-object v0, Lae/z2$b;->g:Lae/z2$b;
 
     return-void
 .end method
@@ -48,7 +48,7 @@
 
     const/4 v0, 0x0
 
-    invoke-direct {p0, v0}, Lse/h;-><init>(I)V
+    invoke-direct {p0, v0}, Lse/i;-><init>(I)V
 
     return-void
 .end method

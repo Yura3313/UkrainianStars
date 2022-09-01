@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field public final synthetic f:Lid/e;
+.field public final synthetic g:Lid/e;
 
 
 # direct methods
 .method public constructor <init>(Lid/e;)V
     .locals 0
 
-    iput-object p1, p0, Lid/e$d;->f:Lid/e;
+    iput-object p1, p0, Lid/e$d;->g:Lid/e;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -38,7 +38,7 @@
     .locals 8
 
     .line 1
-    iget-object p1, p0, Lid/e$d;->f:Lid/e;
+    iget-object p1, p0, Lid/e$d;->g:Lid/e;
 
     sget v0, Lcom/supercell/id/R$id;->rejectButton:I
 
@@ -50,14 +50,14 @@
 
     const-string v0, "this@DonationReceivedDialog.rejectButton"
 
-    invoke-static {p1, v0}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/4 v0, 0x0
 
     invoke-virtual {p1, v0}, Landroid/view/View;->setEnabled(Z)V
 
     .line 2
-    iget-object p1, p0, Lid/e$d;->f:Lid/e;
+    iget-object p1, p0, Lid/e$d;->g:Lid/e;
 
     sget v1, Lcom/supercell/id/R$id;->acceptButton:I
 
@@ -69,12 +69,12 @@
 
     const-string v1, "this@DonationReceivedDialog.acceptButton"
 
-    invoke-static {p1, v1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v1}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {p1, v0}, Landroid/view/View;->setEnabled(Z)V
 
     .line 3
-    iget-object p1, p0, Lid/e$d;->f:Lid/e;
+    iget-object p1, p0, Lid/e$d;->g:Lid/e;
 
     sget v1, Lcom/supercell/id/R$id;->closeButton:I
 
@@ -86,7 +86,7 @@
 
     const-string v1, "this@DonationReceivedDialog.closeButton"
 
-    invoke-static {p1, v1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v1}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {p1, v0}, Landroid/view/View;->setEnabled(Z)V
 
@@ -98,7 +98,7 @@
     move-result-object v0
 
     .line 5
-    iget-object v0, v0, Lae/u;->m:La5/d0;
+    iget-object v0, v0, Lae/u;->m:Lpe/a;
 
     const-string v1, "Donation Received Notification"
 
@@ -109,10 +109,10 @@
     const/16 v4, 0x18
 
     .line 6
-    invoke-static {v0, v1, v2, v3, v4}, La5/d0;->a(La5/d0;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;I)V
+    invoke-static {v0, v1, v2, v3, v4}, Lpe/a;->e(Lpe/a;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;I)V
 
     .line 7
-    iget-object v0, p0, Lid/e$d;->f:Lid/e;
+    iget-object v0, p0, Lid/e$d;->g:Lid/e;
 
     .line 8
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -122,45 +122,45 @@
 
     move-result-object p1
 
-    invoke-virtual {p1}, Lae/u;->k()Lbe/o0;
+    invoke-virtual {p1}, Lae/u;->k()Lbe/q0;
 
     move-result-object p1
 
-    iget-object v1, v0, Lid/e;->i:Lvc/n$j$c;
+    iget-object v1, v0, Lid/e;->j:Lvc/m$j$c;
 
     .line 10
-    iget-object v1, v1, Lvc/n$j$c;->h:Lvc/x;
+    iget-object v1, v1, Lvc/m$j$c;->h:Lvc/v;
 
     .line 11
-    invoke-virtual {p1, v1}, Lbe/o0;->f(Lvc/x;)Lze/e0;
+    invoke-virtual {p1, v1}, Lbe/q0;->f(Lvc/v;)Lze/f0;
 
     move-result-object v2
 
     .line 12
-    iget-object p1, v0, Lid/e;->i:Lvc/n$j$c;
+    iget-object p1, v0, Lid/e;->j:Lvc/m$j$c;
 
     .line 13
-    iget-object v1, v0, Lid/e;->h:Lid/w;
+    iget-object v1, v0, Lid/e;->i:Lid/w;
 
     .line 14
-    iget-object v3, v1, Lid/w;->j:Landroid/app/Activity;
+    iget-object v3, v1, Lid/w;->k:Landroid/app/Activity;
 
     .line 15
     new-instance v4, Lid/c;
 
-    invoke-direct {v4, p1}, Lid/c;-><init>(Lvc/n$j$c;)V
+    invoke-direct {v4, p1}, Lid/c;-><init>(Lvc/m$j$c;)V
 
     .line 16
     new-instance v5, Lid/d;
 
-    invoke-direct {v5, p1}, Lid/d;-><init>(Lvc/n$j$c;)V
+    invoke-direct {v5, p1}, Lid/d;-><init>(Lvc/m$j$c;)V
 
     const/4 v6, 0x0
 
     const/16 v7, 0x8
 
     .line 17
-    invoke-static/range {v2 .. v7}, Lae/u1;->k(Lze/e0;Ljava/lang/Object;Lre/p;Lre/p;Lre/l;I)Lze/e0;
+    invoke-static/range {v2 .. v7}, Lae/t1;->j(Lze/f0;Ljava/lang/Object;Lre/p;Lre/p;Lre/l;I)Lze/f0;
 
     .line 18
     invoke-virtual {v0}, Lid/e;->a()V

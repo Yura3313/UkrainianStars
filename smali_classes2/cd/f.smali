@@ -45,7 +45,7 @@
     iget-object p2, p2, Lcd/a;->c:Lcom/supercell/id/model/IdRelationshipStatus$Acquaintance;
 
     .line 3
-    iget-object p2, p2, Lcom/supercell/id/model/IdRelationshipStatus$Acquaintance;->g:Ljava/util/Date;
+    iget-object p2, p2, Lcom/supercell/id/model/IdRelationshipStatus$Acquaintance;->h:Ljava/util/Date;
 
     .line 4
     check-cast p1, Lcd/a;
@@ -54,10 +54,10 @@
     iget-object p1, p1, Lcd/a;->c:Lcom/supercell/id/model/IdRelationshipStatus$Acquaintance;
 
     .line 6
-    iget-object p1, p1, Lcom/supercell/id/model/IdRelationshipStatus$Acquaintance;->g:Ljava/util/Date;
+    iget-object p1, p1, Lcom/supercell/id/model/IdRelationshipStatus$Acquaintance;->h:Ljava/util/Date;
 
     .line 7
-    invoke-static {p2, p1}, Lid/h;->b(Ljava/lang/Comparable;Ljava/lang/Comparable;)I
+    invoke-static {p2, p1}, Lae/a1;->a(Ljava/lang/Comparable;Ljava/lang/Comparable;)I
 
     move-result p1
 

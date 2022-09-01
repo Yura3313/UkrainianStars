@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field public final synthetic f:Landroidx/appcompat/app/p;
+.field public final synthetic g:Landroidx/appcompat/app/p;
 
 
 # direct methods
 .method public constructor <init>(Landroidx/appcompat/app/p;)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/appcompat/app/p$a;->f:Landroidx/appcompat/app/p;
+    iput-object p1, p0, Landroidx/appcompat/app/p$a;->g:Landroidx/appcompat/app/p;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -37,7 +37,7 @@
 .method public final superDispatchKeyEvent(Landroid/view/KeyEvent;)Z
     .locals 1
 
-    iget-object v0, p0, Landroidx/appcompat/app/p$a;->f:Landroidx/appcompat/app/p;
+    iget-object v0, p0, Landroidx/appcompat/app/p$a;->g:Landroidx/appcompat/app/p;
 
     invoke-virtual {v0, p1}, Landroidx/appcompat/app/p;->b(Landroid/view/KeyEvent;)Z
 

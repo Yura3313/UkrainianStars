@@ -17,7 +17,7 @@
 
 
 # instance fields
-.field public f:Ljava/util/Iterator;
+.field public g:Ljava/util/Iterator;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Iterator<",
@@ -36,7 +36,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iget-object p1, p1, Lcom/google/android/gms/measurement/internal/zzad;->f:Landroid/os/Bundle;
+    iget-object p1, p1, Lcom/google/android/gms/measurement/internal/zzad;->g:Landroid/os/Bundle;
 
     .line 3
     invoke-virtual {p1}, Landroid/os/Bundle;->keySet()Ljava/util/Set;
@@ -47,7 +47,7 @@
 
     move-result-object p1
 
-    iput-object p1, p0, Lz3/e;->f:Ljava/util/Iterator;
+    iput-object p1, p0, Lz3/e;->g:Ljava/util/Iterator;
 
     return-void
 .end method
@@ -57,7 +57,7 @@
 .method public final hasNext()Z
     .locals 1
 
-    iget-object v0, p0, Lz3/e;->f:Ljava/util/Iterator;
+    iget-object v0, p0, Lz3/e;->g:Ljava/util/Iterator;
 
     invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
 
@@ -69,7 +69,7 @@
 .method public final synthetic next()Ljava/lang/Object;
     .locals 1
 
-    iget-object v0, p0, Lz3/e;->f:Ljava/util/Iterator;
+    iget-object v0, p0, Lz3/e;->g:Ljava/util/Iterator;
 
     invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 

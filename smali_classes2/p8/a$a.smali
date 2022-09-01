@@ -18,11 +18,11 @@
 
 
 # instance fields
-.field public final f:Ljava/lang/String;
+.field public final g:Ljava/lang/String;
 
-.field public final g:I
+.field public final h:I
 
-.field public final h:Ljava/lang/String;
+.field public final i:Ljava/lang/String;
 
 
 # direct methods
@@ -33,13 +33,13 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lp8/a$a;->f:Ljava/lang/String;
+    iput-object p1, p0, Lp8/a$a;->g:Ljava/lang/String;
 
     .line 3
-    iput p2, p0, Lp8/a$a;->g:I
+    iput p2, p0, Lp8/a$a;->h:I
 
     .line 4
-    iput-object p3, p0, Lp8/a$a;->h:Ljava/lang/String;
+    iput-object p3, p0, Lp8/a$a;->i:Ljava/lang/String;
 
     return-void
 .end method
@@ -51,19 +51,19 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 6
-    iget-object v0, p1, Lp8/a$a;->f:Ljava/lang/String;
+    iget-object v0, p1, Lp8/a$a;->g:Ljava/lang/String;
 
-    iput-object v0, p0, Lp8/a$a;->f:Ljava/lang/String;
+    iput-object v0, p0, Lp8/a$a;->g:Ljava/lang/String;
 
     .line 7
-    iget v0, p1, Lp8/a$a;->g:I
+    iget v0, p1, Lp8/a$a;->h:I
 
-    iput v0, p0, Lp8/a$a;->g:I
+    iput v0, p0, Lp8/a$a;->h:I
 
     .line 8
-    iget-object p1, p1, Lp8/a$a;->h:Ljava/lang/String;
+    iget-object p1, p1, Lp8/a$a;->i:Ljava/lang/String;
 
-    iput-object p1, p0, Lp8/a$a;->h:Ljava/lang/String;
+    iput-object p1, p0, Lp8/a$a;->i:Ljava/lang/String;
 
     return-void
 .end method
@@ -97,9 +97,9 @@
     check-cast p1, Lp8/a$a;
 
     .line 3
-    iget-object v0, p1, Lp8/a$a;->f:Ljava/lang/String;
+    iget-object v0, p1, Lp8/a$a;->g:Ljava/lang/String;
 
-    iget-object v2, p0, Lp8/a$a;->f:Ljava/lang/String;
+    iget-object v2, p0, Lp8/a$a;->g:Ljava/lang/String;
 
     invoke-virtual {v0, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -107,9 +107,9 @@
 
     if-eqz v0, :cond_1
 
-    iget-object p1, p1, Lp8/a$a;->h:Ljava/lang/String;
+    iget-object p1, p1, Lp8/a$a;->i:Ljava/lang/String;
 
-    iget-object v0, p0, Lp8/a$a;->h:Ljava/lang/String;
+    iget-object v0, p0, Lp8/a$a;->i:Ljava/lang/String;
 
     invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 

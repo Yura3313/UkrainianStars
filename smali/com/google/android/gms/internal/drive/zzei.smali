@@ -20,11 +20,11 @@
 
 
 # instance fields
-.field public f:I
-
 .field public g:I
 
-.field public h:Z
+.field public h:I
+
+.field public i:Z
 
 
 # direct methods
@@ -47,13 +47,13 @@
     invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
 
     .line 2
-    iput p1, p0, Lcom/google/android/gms/internal/drive/zzei;->f:I
+    iput p1, p0, Lcom/google/android/gms/internal/drive/zzei;->g:I
 
     .line 3
-    iput p2, p0, Lcom/google/android/gms/internal/drive/zzei;->g:I
+    iput p2, p0, Lcom/google/android/gms/internal/drive/zzei;->h:I
 
     .line 4
-    iput-boolean p3, p0, Lcom/google/android/gms/internal/drive/zzei;->h:Z
+    iput-boolean p3, p0, Lcom/google/android/gms/internal/drive/zzei;->i:Z
 
     return-void
 .end method
@@ -71,7 +71,7 @@
     move-result v5
 
     .line 2
-    iget p2, p0, Lcom/google/android/gms/internal/drive/zzei;->f:I
+    iget p2, p0, Lcom/google/android/gms/internal/drive/zzei;->g:I
 
     const/4 v0, 0x2
 
@@ -84,7 +84,7 @@
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 5
-    iget p2, p0, Lcom/google/android/gms/internal/drive/zzei;->g:I
+    iget p2, p0, Lcom/google/android/gms/internal/drive/zzei;->h:I
 
     const/4 v0, 0x3
 
@@ -95,7 +95,7 @@
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 8
-    iget-boolean v3, p0, Lcom/google/android/gms/internal/drive/zzei;->h:Z
+    iget-boolean v3, p0, Lcom/google/android/gms/internal/drive/zzei;->i:Z
 
     move-object v0, p1
 

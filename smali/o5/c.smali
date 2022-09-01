@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field public f:I
+.field public g:I
 
-.field public final g:I
+.field public final h:I
 
-.field public final synthetic h:Lo5/d;
+.field public final synthetic i:Lo5/d;
 
 
 # direct methods
@@ -16,21 +16,21 @@
     .locals 1
 
     .line 1
-    iput-object p1, p0, Lo5/c;->h:Lo5/d;
+    iput-object p1, p0, Lo5/c;->i:Lo5/d;
 
     invoke-direct {p0}, Lo5/d$a;-><init>()V
 
     const/4 v0, 0x0
 
     .line 2
-    iput v0, p0, Lo5/c;->f:I
+    iput v0, p0, Lo5/c;->g:I
 
     .line 3
     invoke-virtual {p1}, Lo5/d;->size()I
 
     move-result p1
 
-    iput p1, p0, Lo5/c;->g:I
+    iput p1, p0, Lo5/c;->h:I
 
     return-void
 .end method
@@ -41,20 +41,20 @@
     .locals 2
 
     .line 1
-    iget v0, p0, Lo5/c;->f:I
+    iget v0, p0, Lo5/c;->g:I
 
     .line 2
-    iget v1, p0, Lo5/c;->g:I
+    iget v1, p0, Lo5/c;->h:I
 
     if-ge v0, v1, :cond_0
 
     add-int/lit8 v1, v0, 0x1
 
     .line 3
-    iput v1, p0, Lo5/c;->f:I
+    iput v1, p0, Lo5/c;->g:I
 
     .line 4
-    iget-object v1, p0, Lo5/c;->h:Lo5/d;
+    iget-object v1, p0, Lo5/c;->i:Lo5/d;
 
     invoke-virtual {v1, v0}, Lo5/d;->h(I)B
 
@@ -74,9 +74,9 @@
 .method public final hasNext()Z
     .locals 2
 
-    iget v0, p0, Lo5/c;->f:I
+    iget v0, p0, Lo5/c;->g:I
 
-    iget v1, p0, Lo5/c;->g:I
+    iget v1, p0, Lo5/c;->h:I
 
     if-ge v0, v1, :cond_0
 

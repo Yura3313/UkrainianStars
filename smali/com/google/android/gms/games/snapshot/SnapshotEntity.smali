@@ -25,9 +25,9 @@
 
 
 # instance fields
-.field public final f:Lcom/google/android/gms/games/snapshot/SnapshotMetadataEntity;
+.field public final g:Lcom/google/android/gms/games/snapshot/SnapshotMetadataEntity;
 
-.field public final g:Lcom/google/android/gms/games/snapshot/SnapshotContentsEntity;
+.field public final h:Lcom/google/android/gms/games/snapshot/SnapshotContentsEntity;
 
 
 # direct methods
@@ -54,10 +54,10 @@
 
     invoke-direct {v0, p1}, Lcom/google/android/gms/games/snapshot/SnapshotMetadataEntity;-><init>(Lcom/google/android/gms/games/snapshot/SnapshotMetadata;)V
 
-    iput-object v0, p0, Lcom/google/android/gms/games/snapshot/SnapshotEntity;->f:Lcom/google/android/gms/games/snapshot/SnapshotMetadataEntity;
+    iput-object v0, p0, Lcom/google/android/gms/games/snapshot/SnapshotEntity;->g:Lcom/google/android/gms/games/snapshot/SnapshotMetadataEntity;
 
     .line 3
-    iput-object p2, p0, Lcom/google/android/gms/games/snapshot/SnapshotEntity;->g:Lcom/google/android/gms/games/snapshot/SnapshotContentsEntity;
+    iput-object p2, p0, Lcom/google/android/gms/games/snapshot/SnapshotEntity;->h:Lcom/google/android/gms/games/snapshot/SnapshotContentsEntity;
 
     return-void
 .end method
@@ -88,7 +88,7 @@
     move-result-object v1
 
     .line 4
-    iget-object v2, p0, Lcom/google/android/gms/games/snapshot/SnapshotEntity;->f:Lcom/google/android/gms/games/snapshot/SnapshotMetadataEntity;
+    iget-object v2, p0, Lcom/google/android/gms/games/snapshot/SnapshotEntity;->g:Lcom/google/android/gms/games/snapshot/SnapshotMetadataEntity;
 
     .line 5
     invoke-static {v1, v2}, Ld2/f;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
@@ -123,7 +123,7 @@
 .method public final getMetadata()Lcom/google/android/gms/games/snapshot/SnapshotMetadata;
     .locals 1
 
-    iget-object v0, p0, Lcom/google/android/gms/games/snapshot/SnapshotEntity;->f:Lcom/google/android/gms/games/snapshot/SnapshotMetadataEntity;
+    iget-object v0, p0, Lcom/google/android/gms/games/snapshot/SnapshotEntity;->g:Lcom/google/android/gms/games/snapshot/SnapshotMetadataEntity;
 
     return-object v0
 .end method
@@ -136,7 +136,7 @@
     new-array v0, v0, [Ljava/lang/Object;
 
     .line 1
-    iget-object v1, p0, Lcom/google/android/gms/games/snapshot/SnapshotEntity;->f:Lcom/google/android/gms/games/snapshot/SnapshotMetadataEntity;
+    iget-object v1, p0, Lcom/google/android/gms/games/snapshot/SnapshotEntity;->g:Lcom/google/android/gms/games/snapshot/SnapshotMetadataEntity;
 
     const/4 v2, 0x0
 
@@ -168,7 +168,7 @@
     invoke-direct {v0, p0}, Ld2/f$a;-><init>(Ljava/lang/Object;)V
 
     .line 2
-    iget-object v1, p0, Lcom/google/android/gms/games/snapshot/SnapshotEntity;->f:Lcom/google/android/gms/games/snapshot/SnapshotMetadataEntity;
+    iget-object v1, p0, Lcom/google/android/gms/games/snapshot/SnapshotEntity;->g:Lcom/google/android/gms/games/snapshot/SnapshotMetadataEntity;
 
     const-string v2, "Metadata"
 
@@ -219,7 +219,7 @@
     const/4 v1, 0x1
 
     .line 2
-    iget-object v2, p0, Lcom/google/android/gms/games/snapshot/SnapshotEntity;->f:Lcom/google/android/gms/games/snapshot/SnapshotMetadataEntity;
+    iget-object v2, p0, Lcom/google/android/gms/games/snapshot/SnapshotEntity;->g:Lcom/google/android/gms/games/snapshot/SnapshotMetadataEntity;
 
     const/4 v3, 0x0
 
@@ -246,10 +246,10 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/gms/games/snapshot/SnapshotEntity;->g:Lcom/google/android/gms/games/snapshot/SnapshotContentsEntity;
+    iget-object v0, p0, Lcom/google/android/gms/games/snapshot/SnapshotEntity;->h:Lcom/google/android/gms/games/snapshot/SnapshotContentsEntity;
 
     .line 2
-    iget-object v1, v0, Lcom/google/android/gms/games/snapshot/SnapshotContentsEntity;->f:Lcom/google/android/gms/drive/Contents;
+    iget-object v1, v0, Lcom/google/android/gms/games/snapshot/SnapshotContentsEntity;->g:Lcom/google/android/gms/drive/Contents;
 
     if-nez v1, :cond_0
 

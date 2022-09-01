@@ -16,18 +16,18 @@
 
 
 # instance fields
-.field public final f:I
+.field public final g:I
 
-.field public final g:[B
+.field public final h:[B
 
 
 # direct methods
 .method public static constructor <clinit>()V
     .locals 1
 
-    new-instance v0, Lk3/jj0;
+    new-instance v0, Lk3/lj0;
 
-    invoke-direct {v0}, Lk3/jj0;-><init>()V
+    invoke-direct {v0}, Lk3/lj0;-><init>()V
 
     sput-object v0, Lcom/google/android/gms/internal/ads/zzdrd;->CREATOR:Landroid/os/Parcelable$Creator;
 
@@ -41,10 +41,10 @@
     invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
 
     .line 2
-    iput p1, p0, Lcom/google/android/gms/internal/ads/zzdrd;->f:I
+    iput p1, p0, Lcom/google/android/gms/internal/ads/zzdrd;->g:I
 
     .line 3
-    iput-object p2, p0, Lcom/google/android/gms/internal/ads/zzdrd;->g:[B
+    iput-object p2, p0, Lcom/google/android/gms/internal/ads/zzdrd;->h:[B
 
     return-void
 .end method
@@ -58,10 +58,10 @@
     const/4 v0, 0x1
 
     .line 5
-    iput v0, p0, Lcom/google/android/gms/internal/ads/zzdrd;->f:I
+    iput v0, p0, Lcom/google/android/gms/internal/ads/zzdrd;->g:I
 
     .line 6
-    iput-object p1, p0, Lcom/google/android/gms/internal/ads/zzdrd;->g:[B
+    iput-object p1, p0, Lcom/google/android/gms/internal/ads/zzdrd;->h:[B
 
     return-void
 .end method
@@ -79,7 +79,7 @@
     move-result p2
 
     .line 2
-    iget v0, p0, Lcom/google/android/gms/internal/ads/zzdrd;->f:I
+    iget v0, p0, Lcom/google/android/gms/internal/ads/zzdrd;->g:I
 
     const/4 v1, 0x1
 
@@ -92,7 +92,7 @@
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 5
-    iget-object v0, p0, Lcom/google/android/gms/internal/ads/zzdrd;->g:[B
+    iget-object v0, p0, Lcom/google/android/gms/internal/ads/zzdrd;->h:[B
 
     const/4 v1, 0x2
 

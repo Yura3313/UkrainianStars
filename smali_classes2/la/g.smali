@@ -7,14 +7,14 @@
 
 
 # instance fields
-.field public final synthetic f:Lla/e;
+.field public final synthetic g:Lla/e;
 
 
 # direct methods
 .method public constructor <init>(Lla/e;)V
     .locals 0
 
-    iput-object p1, p0, Lla/g;->f:Lla/e;
+    iput-object p1, p0, Lla/g;->g:Lla/e;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -28,7 +28,7 @@
 
     .line 1
     :try_start_0
-    iget-object v0, p0, Lla/g;->f:Lla/e;
+    iget-object v0, p0, Lla/g;->g:Lla/e;
 
     iget-object v0, v0, Lla/e;->a:Lla/p;
 
@@ -59,16 +59,16 @@
     const-string v2, "Exception while loading index: trying to re-create the index"
 
     .line 2
-    invoke-static {v1, v2, v0}, Landroidx/savedstate/d;->g(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v1, v2, v0}, Le5/i;->i(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
     .line 3
-    iget-object v0, p0, Lla/g;->f:Lla/e;
+    iget-object v0, p0, Lla/g;->g:Lla/e;
 
     invoke-virtual {v0}, Lla/e;->j()V
 
     .line 4
     :try_start_1
-    iget-object v0, p0, Lla/g;->f:Lla/e;
+    iget-object v0, p0, Lla/g;->g:Lla/e;
 
     iget-object v0, v0, Lla/e;->a:Lla/p;
 
@@ -84,7 +84,7 @@
     const-string v2, "Exception caught again, while loading index: "
 
     .line 5
-    invoke-static {v1, v2, v0}, Landroidx/savedstate/d;->g(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v1, v2, v0}, Le5/i;->i(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
     :goto_1
     return-void

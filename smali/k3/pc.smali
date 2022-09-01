@@ -6,7 +6,7 @@
 # instance fields
 .field public a:Landroid/os/HandlerThread;
 
-.field public b:Lk3/qj0;
+.field public b:Lk3/sj0;
 
 .field public c:I
 
@@ -26,7 +26,7 @@
     iput-object v0, p0, Lk3/pc;->a:Landroid/os/HandlerThread;
 
     .line 3
-    iput-object v0, p0, Lk3/pc;->b:Lk3/qj0;
+    iput-object v0, p0, Lk3/pc;->b:Lk3/sj0;
 
     const/4 v0, 0x0
 
@@ -65,7 +65,7 @@
     if-nez v1, :cond_0
 
     .line 4
-    invoke-static {}, Lk3/j6;->m()Z
+    invoke-static {}, Lcom/google/android/gms/ads/a;->k()Z
 
     .line 5
     new-instance v1, Landroid/os/HandlerThread;
@@ -80,7 +80,7 @@
     invoke-virtual {v1}, Ljava/lang/Thread;->start()V
 
     .line 7
-    new-instance v1, Lk3/qj0;
+    new-instance v1, Lk3/sj0;
 
     iget-object v2, p0, Lk3/pc;->a:Landroid/os/HandlerThread;
 
@@ -88,18 +88,18 @@
 
     move-result-object v2
 
-    invoke-direct {v1, v2}, Lk3/qj0;-><init>(Landroid/os/Looper;)V
+    invoke-direct {v1, v2}, Lk3/sj0;-><init>(Landroid/os/Looper;)V
 
-    iput-object v1, p0, Lk3/pc;->b:Lk3/qj0;
+    iput-object v1, p0, Lk3/pc;->b:Lk3/sj0;
 
     .line 8
-    invoke-static {}, Lk3/j6;->m()Z
+    invoke-static {}, Lcom/google/android/gms/ads/a;->k()Z
 
     goto :goto_0
 
     .line 9
     :cond_0
-    invoke-static {}, Lk3/j6;->m()Z
+    invoke-static {}, Lcom/google/android/gms/ads/a;->k()Z
 
     .line 10
     iget-object v1, p0, Lk3/pc;->d:Ljava/lang/Object;

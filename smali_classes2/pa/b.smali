@@ -67,7 +67,7 @@
     .line 2
     const-class v1, Lab/o;
 
-    invoke-static {v0, v1}, Lj1/q;->d(Landroidx/fragment/app/FragmentManager;Ljava/lang/Class;)Landroidx/fragment/app/Fragment;
+    invoke-static {v0, v1}, Ls4/e;->g(Landroidx/fragment/app/FragmentManager;Ljava/lang/Class;)Landroidx/fragment/app/Fragment;
 
     move-result-object v0
 
@@ -76,12 +76,12 @@
     if-eqz v0, :cond_2
 
     .line 3
-    iget-object v0, v0, Lab/o;->p0:Lcom/helpshift/support/Faq;
+    iget-object v0, v0, Lab/o;->q0:Lcom/helpshift/support/Faq;
 
     if-eqz v0, :cond_0
 
     .line 4
-    iget-object v0, v0, Lcom/helpshift/support/Faq;->n:Ljava/lang/String;
+    iget-object v0, v0, Lcom/helpshift/support/Faq;->o:Ljava/lang/String;
 
     goto :goto_0
 
@@ -107,7 +107,7 @@
     invoke-virtual {v1, v2, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 8
-    sget-object v0, Lcom/helpshift/util/u;->c:Le7/g;
+    sget-object v0, Lcom/helpshift/util/t;->c:Le7/g;
 
     .line 9
     iget-object v0, v0, Le7/g;->g:Li7/e;
@@ -118,10 +118,10 @@
     move-result-object v0
 
     .line 11
-    iget-object v0, v0, Li7/c;->f:Ljava/lang/Long;
+    iget-object v0, v0, Li7/c;->g:Ljava/lang/Long;
 
     .line 12
-    sget-object v2, Lcom/helpshift/util/u;->d:Le8/j;
+    sget-object v2, Lcom/helpshift/util/t;->d:Le8/j;
 
     .line 13
     invoke-virtual {v2}, Le8/j;->d()Ls8/a;
@@ -149,7 +149,7 @@
 
     .line 15
     :cond_1
-    sget-object v0, Lcom/helpshift/util/u;->c:Le7/g;
+    sget-object v0, Lcom/helpshift/util/t;->c:Le7/g;
 
     .line 16
     iget-object v0, v0, Le7/g;->b:Lk7/a;
@@ -161,7 +161,7 @@
 
     .line 18
     :cond_2
-    sget-object v0, Lcom/helpshift/util/u;->c:Le7/g;
+    sget-object v0, Lcom/helpshift/util/t;->c:Le7/g;
 
     .line 19
     iget-object v0, v0, Le7/g;->g:Li7/e;
@@ -172,7 +172,7 @@
     move-result-object v0
 
     .line 21
-    iget-object v0, v0, Li7/c;->f:Ljava/lang/Long;
+    iget-object v0, v0, Li7/c;->g:Ljava/lang/Long;
 
     const-string v1, ""
 
@@ -184,7 +184,7 @@
     const/4 v4, 0x0
 
     .line 23
-    sget-object v5, Lcom/helpshift/util/u;->d:Le8/j;
+    sget-object v5, Lcom/helpshift/util/t;->d:Le8/j;
 
     .line 24
     invoke-virtual {v5}, Le8/j;->d()Ls8/a;
@@ -230,7 +230,7 @@
     monitor-exit v5
 
     .line 32
-    sget-object v1, Lcom/helpshift/util/u;->d:Le8/j;
+    sget-object v1, Lcom/helpshift/util/t;->d:Le8/j;
 
     .line 33
     invoke-virtual {v1}, Le8/j;->d()Ls8/a;
@@ -379,7 +379,7 @@
 
     move-result-object v3
 
-    invoke-static {v4, v3}, Lj1/q;->h(Landroidx/fragment/app/FragmentManager;Ljava/lang/String;)V
+    invoke-static {v4, v3}, Ls4/e;->l(Landroidx/fragment/app/FragmentManager;Ljava/lang/String;)V
 
     goto :goto_1
 
@@ -395,7 +395,7 @@
 
     move-result-object v3
 
-    invoke-static {v4, v3}, Lj1/q;->h(Landroidx/fragment/app/FragmentManager;Ljava/lang/String;)V
+    invoke-static {v4, v3}, Ls4/e;->l(Landroidx/fragment/app/FragmentManager;Ljava/lang/String;)V
 
     :cond_2
     :goto_1
@@ -426,7 +426,7 @@
 
     move-result-object v0
 
-    invoke-static {v1, v0}, Lj1/q;->i(Landroidx/fragment/app/FragmentManager;Ljava/lang/String;)V
+    invoke-static {v1, v0}, Ls4/e;->m(Landroidx/fragment/app/FragmentManager;Ljava/lang/String;)V
 
     const/4 v0, 0x1
 
@@ -455,7 +455,7 @@
     const-string v2, "Starting authentication failure fragment"
 
     .line 1
-    invoke-static {v1, v2, v0, v0}, Landroidx/savedstate/d;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v1, v2, v0, v0}, Le5/i;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
 
     .line 2
     new-instance v5, Lqa/a;
@@ -492,7 +492,7 @@
     const-string v6, "HSAuthenticationFailureFragment"
 
     .line 7
-    invoke-static/range {v3 .. v9}, Lj1/q;->g(Landroidx/fragment/app/FragmentManager;ILandroidx/fragment/app/Fragment;Ljava/lang/String;Ljava/lang/String;ZZ)V
+    invoke-static/range {v3 .. v9}, Ls4/e;->k(Landroidx/fragment/app/FragmentManager;ILandroidx/fragment/app/Fragment;Ljava/lang/String;Ljava/lang/String;ZZ)V
 
     return-void
 .end method
@@ -501,7 +501,7 @@
     .locals 3
 
     .line 1
-    sget-object v0, Lcom/helpshift/util/u;->c:Le7/g;
+    sget-object v0, Lcom/helpshift/util/t;->c:Le7/g;
 
     .line 2
     invoke-virtual {v0}, Le7/g;->c()Lq8/d;
@@ -515,14 +515,14 @@
     .line 3
     iget-object v0, p0, Lpa/b;->d:Landroidx/fragment/app/FragmentManager;
 
-    invoke-static {v0}, Lj1/q;->c(Landroidx/fragment/app/FragmentManager;)Lab/e;
+    invoke-static {v0}, Ls4/e;->f(Landroidx/fragment/app/FragmentManager;)Lab/e;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
     .line 4
-    iget-object v0, v0, Lab/e;->j0:Ljava/util/List;
+    iget-object v0, v0, Lab/e;->k0:Ljava/util/List;
 
     if-eqz v0, :cond_0
 
@@ -589,7 +589,7 @@
     if-eq v0, v3, :cond_0
 
     .line 2
-    sget-object v0, Lk/c;->a:Ljava/util/List;
+    sget-object v0, Lr3/r4;->b:Ljava/util/List;
 
     .line 3
     invoke-virtual {p0, p1, v2, v0}, Lpa/b;->m(Landroid/os/Bundle;ZLjava/util/List;)V
@@ -721,7 +721,7 @@
     .locals 4
 
     .line 1
-    sget-object v0, Lcom/helpshift/util/u;->c:Le7/g;
+    sget-object v0, Lcom/helpshift/util/t;->c:Le7/g;
 
     .line 2
     iget-object v0, v0, Le7/g;->b:Lk7/a;
@@ -761,7 +761,7 @@
     if-eqz v0, :cond_0
 
     .line 9
-    iget-object v0, v0, Lqa/e1;->i0:Lf9/t0;
+    iget-object v0, v0, Lqa/e1;->j0:Lf9/t0;
 
     .line 10
     iget-object v1, v0, Lf9/t0;->a:La8/f;
@@ -811,7 +811,7 @@
     const/4 v2, 0x0
 
     .line 2
-    invoke-static {v1, v0, v2, v2}, Landroidx/savedstate/d;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v1, v0, v2, v2}, Le5/i;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
 
     if-nez p1, :cond_1
 
@@ -920,7 +920,7 @@
     const-string v6, "HSConversationFragment"
 
     .line 14
-    invoke-static/range {v3 .. v9}, Lj1/q;->g(Landroidx/fragment/app/FragmentManager;ILandroidx/fragment/app/Fragment;Ljava/lang/String;Ljava/lang/String;ZZ)V
+    invoke-static/range {v3 .. v9}, Ls4/e;->k(Landroidx/fragment/app/FragmentManager;ILandroidx/fragment/app/Fragment;Ljava/lang/String;Ljava/lang/String;ZZ)V
 
     return-void
 .end method
@@ -965,10 +965,10 @@
     .end annotation
 
     .line 1
-    sget-object v0, Lcom/helpshift/util/u;->c:Le7/g;
+    sget-object v0, Lcom/helpshift/util/t;->c:Le7/g;
 
     .line 2
-    sget-object v1, Lcom/helpshift/util/u;->d:Le8/j;
+    sget-object v1, Lcom/helpshift/util/t;->d:Le8/j;
 
     .line 3
     iget-object v2, v0, Le7/g;->f:La8/f;
@@ -1025,7 +1025,7 @@
 
     .line 9
     :goto_0
-    sget-object v7, Li7/g;->h:Li7/g;
+    sget-object v7, Li7/g;->i:Li7/g;
 
     if-eq v0, v7, :cond_3
 
@@ -1037,15 +1037,15 @@
 
     move-result-object v0
 
-    check-cast v0, Lk3/v8;
+    check-cast v0, Lk3/w8;
 
     const-string v1, "/config/"
 
-    invoke-virtual {v0, v1}, Lk3/v8;->d(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v0, v1}, Lk3/w8;->d(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
-    invoke-static {v0}, Lcom/google/android/play/core/appupdate/g;->b(Ljava/lang/String;)Z
+    invoke-static {v0}, La5/b0;->d(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -1093,7 +1093,7 @@
     const/4 v1, 0x0
 
     .line 14
-    invoke-static {p1, v0, v1, v1}, Landroidx/savedstate/d;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {p1, v0, v1, v1}, Le5/i;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
 
     .line 15
     new-instance v4, Lua/d;
@@ -1130,7 +1130,7 @@
     const-string v5, "Helpshift_CnvStpFrgmnt"
 
     .line 20
-    invoke-static/range {v2 .. v8}, Lj1/q;->g(Landroidx/fragment/app/FragmentManager;ILandroidx/fragment/app/Fragment;Ljava/lang/String;Ljava/lang/String;ZZ)V
+    invoke-static/range {v2 .. v8}, Ls4/e;->k(Landroidx/fragment/app/FragmentManager;ILandroidx/fragment/app/Fragment;Ljava/lang/String;Ljava/lang/String;ZZ)V
 
     :goto_2
     return-void
@@ -1160,7 +1160,7 @@
 
     .line 3
     :cond_0
-    sget-object v0, Lcom/helpshift/util/u;->c:Le7/g;
+    sget-object v0, Lcom/helpshift/util/t;->c:Le7/g;
 
     .line 4
     iget-object v0, v0, Le7/g;->a:Lj8/b;
@@ -1173,7 +1173,7 @@
     move-result v0
 
     .line 6
-    sget-object v1, Lcom/helpshift/util/u;->c:Le7/g;
+    sget-object v1, Lcom/helpshift/util/t;->c:Le7/g;
 
     .line 7
     iget-object v1, v1, Le7/g;->a:Lj8/b;
@@ -1220,7 +1220,7 @@
     invoke-virtual {v5, v4}, Landroid/os/Bundle;->remove(Ljava/lang/String;)V
 
     .line 12
-    sget-object v4, Lcom/helpshift/util/u;->c:Le7/g;
+    sget-object v4, Lcom/helpshift/util/t;->c:Le7/g;
 
     .line 13
     invoke-virtual {v4}, Le7/g;->e()Lt8/b;
@@ -1263,14 +1263,14 @@
     iget-object v5, v4, Lt8/b;->c:Li7/c;
 
     .line 18
-    iget-object v5, v5, Li7/c;->f:Ljava/lang/Long;
+    iget-object v5, v5, Li7/c;->g:Ljava/lang/Long;
 
     .line 19
     invoke-virtual {v5}, Ljava/lang/Long;->longValue()J
 
     move-result-wide v9
 
-    iput-wide v9, v6, Lq8/d;->x:J
+    iput-wide v9, v6, Lq8/d;->y:J
 
     .line 20
     iget-object v4, v4, Lt8/b;->a:Ln8/c;
@@ -1314,7 +1314,7 @@
     if-nez v0, :cond_7
 
     .line 23
-    sget-object v0, Lcom/helpshift/util/u;->c:Le7/g;
+    sget-object v0, Lcom/helpshift/util/t;->c:Le7/g;
 
     .line 24
     invoke-virtual {v0}, Le7/g;->e()Lt8/b;
@@ -1348,7 +1348,7 @@
     if-eqz v4, :cond_7
 
     .line 28
-    iget-object v0, v4, Lq8/d;->g:Ljava/lang/Long;
+    iget-object v0, v4, Lq8/d;->h:Ljava/lang/Long;
 
     goto :goto_1
 
@@ -1359,7 +1359,7 @@
     if-nez v0, :cond_c
 
     .line 29
-    sget-object p1, Lk/c;->a:Ljava/util/List;
+    sget-object p1, Lr3/r4;->b:Ljava/util/List;
 
     if-eqz p1, :cond_a
 
@@ -1435,7 +1435,7 @@
     const-string v0, "Starting new conversation fragment"
 
     .line 39
-    invoke-static {p1, v0, v2, v2}, Landroidx/savedstate/d;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {p1, v0, v2, v2}, Le5/i;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
 
     .line 40
     iget-object p1, p0, Lpa/b;->e:Landroid/os/Bundle;
@@ -1496,7 +1496,7 @@
     const-string v6, "HSNewConversationFragment"
 
     .line 49
-    invoke-static/range {v3 .. v9}, Lj1/q;->g(Landroidx/fragment/app/FragmentManager;ILandroidx/fragment/app/Fragment;Ljava/lang/String;Ljava/lang/String;ZZ)V
+    invoke-static/range {v3 .. v9}, Ls4/e;->k(Landroidx/fragment/app/FragmentManager;ILandroidx/fragment/app/Fragment;Ljava/lang/String;Ljava/lang/String;ZZ)V
 
     goto :goto_3
 
@@ -1531,10 +1531,10 @@
     invoke-virtual {v3, v0}, Landroidx/fragment/app/Fragment;->D0(Landroid/os/Bundle;)V
 
     .line 4
-    iput-object p1, v3, Lab/d;->i0:Ljava/util/List;
+    iput-object p1, v3, Lab/d;->j0:Ljava/util/List;
 
     .line 5
-    iput-object p0, v3, Lab/d;->g0:Lpa/b;
+    iput-object p0, v3, Lab/d;->h0:Lpa/b;
 
     const/4 p1, 0x0
 
@@ -1562,7 +1562,7 @@
     const-string v4, "HSDynamicFormFragment"
 
     .line 8
-    invoke-static/range {v1 .. v7}, Lj1/q;->g(Landroidx/fragment/app/FragmentManager;ILandroidx/fragment/app/Fragment;Ljava/lang/String;Ljava/lang/String;ZZ)V
+    invoke-static/range {v1 .. v7}, Ls4/e;->k(Landroidx/fragment/app/FragmentManager;ILandroidx/fragment/app/Fragment;Ljava/lang/String;Ljava/lang/String;ZZ)V
 
     return-void
 .end method
@@ -1583,7 +1583,7 @@
     .line 1
     iget-object v0, p0, Lpa/b;->d:Landroidx/fragment/app/FragmentManager;
 
-    invoke-static {v0}, Lj1/q;->f(Landroidx/fragment/app/FragmentManager;)Landroidx/fragment/app/Fragment;
+    invoke-static {v0}, Ls4/e;->i(Landroidx/fragment/app/FragmentManager;)Landroidx/fragment/app/Fragment;
 
     move-result-object v0
 
@@ -1600,14 +1600,14 @@
     check-cast v0, Lab/e;
 
     .line 4
-    iget-object v0, v0, Lab/e;->g0:Lpa/a;
+    iget-object v0, v0, Lab/e;->h0:Lpa/a;
 
     if-eqz v0, :cond_1
 
     .line 5
     iget-object v0, v0, Lpa/a;->d:Landroidx/fragment/app/FragmentManager;
 
-    invoke-static {v0}, Lj1/q;->f(Landroidx/fragment/app/FragmentManager;)Landroidx/fragment/app/Fragment;
+    invoke-static {v0}, Ls4/e;->i(Landroidx/fragment/app/FragmentManager;)Landroidx/fragment/app/Fragment;
 
     move-result-object v0
 
@@ -1627,7 +1627,7 @@
     move-result-object v1
 
     .line 9
-    iget-object v0, v0, Lab/o;->z0:Ljava/lang/String;
+    iget-object v0, v0, Lab/o;->A0:Ljava/lang/String;
 
     if-eqz v1, :cond_1
 
@@ -1656,7 +1656,7 @@
     invoke-virtual {v5, p1}, Landroidx/fragment/app/Fragment;->D0(Landroid/os/Bundle;)V
 
     .line 13
-    iput-object p3, v5, Lab/e;->j0:Ljava/util/List;
+    iput-object p3, v5, Lab/e;->k0:Ljava/util/List;
 
     const/4 p1, 0x0
 
@@ -1684,7 +1684,7 @@
     const-string v6, "Helpshift_FaqFlowFrag"
 
     .line 16
-    invoke-static/range {v3 .. v9}, Lj1/q;->g(Landroidx/fragment/app/FragmentManager;ILandroidx/fragment/app/Fragment;Ljava/lang/String;Ljava/lang/String;ZZ)V
+    invoke-static/range {v3 .. v9}, Ls4/e;->k(Landroidx/fragment/app/FragmentManager;ILandroidx/fragment/app/Fragment;Ljava/lang/String;Ljava/lang/String;ZZ)V
 
     return-void
 .end method
@@ -1698,7 +1698,7 @@
     .line 2
     const-class v1, Lab/c;
 
-    invoke-static {v0, v1}, Lj1/q;->d(Landroidx/fragment/app/FragmentManager;Ljava/lang/Class;)Landroidx/fragment/app/Fragment;
+    invoke-static {v0, v1}, Ls4/e;->g(Landroidx/fragment/app/FragmentManager;Ljava/lang/Class;)Landroidx/fragment/app/Fragment;
 
     move-result-object v0
 
@@ -1712,7 +1712,7 @@
     invoke-direct {v0}, Lab/c;-><init>()V
 
     .line 4
-    iput-object p0, v0, Lab/c;->j0:Loa/a;
+    iput-object p0, v0, Lab/c;->k0:Loa/a;
 
     .line 5
     iget-object v1, p0, Lpa/b;->d:Landroidx/fragment/app/FragmentManager;
@@ -1722,7 +1722,7 @@
 
     const-string v3, "AttachmentPreviewFragment"
 
-    invoke-static {v1, v2, v0, v3}, Lj1/q;->m(Landroidx/fragment/app/FragmentManager;ILandroidx/fragment/app/Fragment;Ljava/lang/String;)V
+    invoke-static {v1, v2, v0, v3}, Ls4/e;->q(Landroidx/fragment/app/FragmentManager;ILandroidx/fragment/app/Fragment;Ljava/lang/String;)V
 
     :cond_0
     const-string v1, "key_attachment_mode"
@@ -1732,7 +1732,7 @@
 
     move-result v1
 
-    iput v1, v0, Lab/c;->k0:I
+    iput v1, v0, Lab/c;->l0:I
 
     const-string v1, "key_refers_id"
 
@@ -1741,7 +1741,7 @@
 
     move-result-object v1
 
-    iput-object v1, v0, Lab/c;->t0:Ljava/lang/String;
+    iput-object v1, v0, Lab/c;->u0:Ljava/lang/String;
 
     const-string v1, "key_attachment_type"
 
@@ -1750,13 +1750,13 @@
 
     move-result p2
 
-    iput p2, v0, Lab/c;->l0:I
+    iput p2, v0, Lab/c;->m0:I
 
     .line 10
-    iput-object p1, v0, Lab/c;->g0:Lu8/a;
+    iput-object p1, v0, Lab/c;->h0:Lu8/a;
 
     .line 11
-    iput p3, v0, Lab/c;->i0:I
+    iput p3, v0, Lab/c;->j0:I
 
     .line 12
     invoke-virtual {v0}, Lab/c;->T0()V

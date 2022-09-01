@@ -1,5 +1,5 @@
 .class public final Lvd/b$p;
-.super Lse/h;
+.super Lse/i;
 .source "SettingsGeneralTabFragment.kt"
 
 # interfaces
@@ -18,28 +18,28 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/l<",
         "Ljava/lang/Exception;",
-        "Lie/h;",
+        "Lie/i;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic f:Lvd/b;
+.field public final synthetic g:Lvd/b;
 
 
 # direct methods
 .method public constructor <init>(Lvd/b;)V
     .locals 0
 
-    iput-object p1, p0, Lvd/b$p;->f:Lvd/b;
+    iput-object p1, p0, Lvd/b$p;->g:Lvd/b;
 
     const/4 p1, 0x1
 
-    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -55,18 +55,18 @@
     const-string v0, "it"
 
     .line 2
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 3
-    iget-object v0, p0, Lvd/b$p;->f:Lvd/b;
+    iget-object v0, p0, Lvd/b$p;->g:Lvd/b;
 
-    invoke-static {v0}, Lcom/android/billingclient/api/c0;->e(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
+    invoke-static {v0}, Lcom/android/billingclient/api/b0;->f(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    sget-object v1, Lcom/supercell/id/ui/MainActivity;->s:Ljava/lang/ref/WeakReference;
+    sget-object v1, Lcom/supercell/id/ui/MainActivity;->t:Ljava/lang/ref/WeakReference;
 
     const/4 v1, 0x0
 
@@ -86,7 +86,7 @@
     move-result-object p1
 
     .line 6
-    iget-object p1, p1, Lbe/v0;->a:Ljava/lang/Object;
+    iget-object p1, p1, Lbe/x0;->a:Ljava/lang/Object;
 
     .line 7
     check-cast p1, Lbe/w;
@@ -100,7 +100,7 @@
     if-eqz p1, :cond_1
 
     .line 8
-    iget-boolean p1, p1, Lcom/supercell/id/model/IdProfile;->s:Z
+    iget-boolean p1, p1, Lcom/supercell/id/model/IdProfile;->t:Z
 
     if-nez p1, :cond_1
 
@@ -113,7 +113,7 @@
 
     .line 9
     :goto_0
-    iget-object v0, p0, Lvd/b$p;->f:Lvd/b;
+    iget-object v0, p0, Lvd/b$p;->g:Lvd/b;
 
     sget v1, Lcom/supercell/id/R$id;->onlineStatusSwitch:I
 
@@ -125,12 +125,12 @@
 
     const-string v1, "onlineStatusSwitch"
 
-    invoke-static {v0, v1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v0, p1}, Landroidx/appcompat/widget/SwitchCompat;->setChecked(Z)V
 
     .line 10
-    sget-object p1, Lie/h;->a:Lie/h;
+    sget-object p1, Lie/i;->a:Lie/i;
 
     return-object p1
 .end method

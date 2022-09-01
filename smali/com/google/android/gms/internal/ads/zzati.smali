@@ -46,7 +46,7 @@
     check-cast p1, Lcom/google/android/gms/internal/ads/zzath;
 
     .line 2
-    iget p1, p1, Lcom/google/android/gms/internal/ads/zzath;->g:I
+    iget p1, p1, Lcom/google/android/gms/internal/ads/zzath;->h:I
 
     .line 3
     invoke-virtual {p3}, Landroid/os/Parcel;->writeNoException()V
@@ -63,7 +63,7 @@
     check-cast p1, Lcom/google/android/gms/internal/ads/zzath;
 
     .line 6
-    iget-object p1, p1, Lcom/google/android/gms/internal/ads/zzath;->f:Ljava/lang/String;
+    iget-object p1, p1, Lcom/google/android/gms/internal/ads/zzath;->g:Ljava/lang/String;
 
     .line 7
     invoke-virtual {p3}, Landroid/os/Parcel;->writeNoException()V

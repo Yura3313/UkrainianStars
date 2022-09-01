@@ -3,64 +3,65 @@
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lk3/s41;
+.implements Lk3/as;
+
+
+# annotations
+.annotation runtime Ljavax/annotation/ParametersAreNonnullByDefault;
+.end annotation
 
 
 # instance fields
-.field public f:Lcom/google/android/gms/internal/ads/zzwg;
-    .annotation build Ljavax/annotation/concurrent/GuardedBy;
-        value = "this"
+.field public final g:Ljava/util/concurrent/atomic/AtomicReference;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/concurrent/atomic/AtomicReference<",
+            "Lcom/google/android/gms/internal/ads/zzya;",
+            ">;"
+        }
     .end annotation
 .end field
 
 
 # direct methods
 .method public constructor <init>()V
-    .locals 0
+    .locals 1
 
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    new-instance v0, Ljava/util/concurrent/atomic/AtomicReference;
+
+    invoke-direct {v0}, Ljava/util/concurrent/atomic/AtomicReference;-><init>()V
+
+    iput-object v0, p0, Lk3/a80;->g:Ljava/util/concurrent/atomic/AtomicReference;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final declared-synchronized q()V
+.method public final a(Lcom/google/android/gms/internal/ads/zzvl;)V
+    .locals 2
+
+    iget-object v0, p0, Lk3/a80;->g:Ljava/util/concurrent/atomic/AtomicReference;
+
+    new-instance v1, Lk3/ny0;
+
+    invoke-direct {v1, p1}, Lk3/ny0;-><init>(Ljava/lang/Object;)V
+
+    invoke-static {v0, v1}, Lk3/q;->c(Ljava/util/concurrent/atomic/AtomicReference;Lk3/mf0;)V
+
+    return-void
+.end method
+
+.method public final b(Lcom/google/android/gms/internal/ads/zzya;)V
     .locals 1
 
-    monitor-enter p0
+    iget-object v0, p0, Lk3/a80;->g:Ljava/util/concurrent/atomic/AtomicReference;
 
-    .line 1
-    :try_start_0
-    iget-object v0, p0, Lk3/a80;->f:Lcom/google/android/gms/internal/ads/zzwg;
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    if-eqz v0, :cond_0
-
-    .line 2
-    :try_start_1
-    invoke-interface {v0}, Lcom/google/android/gms/internal/ads/zzwg;->q()V
-    :try_end_1
-    .catch Landroid/os/RemoteException; {:try_start_1 .. :try_end_1} :catch_0
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
-    .line 3
-    monitor-exit p0
+    invoke-virtual {v0, p1}, Ljava/util/concurrent/atomic/AtomicReference;->set(Ljava/lang/Object;)V
 
     return-void
-
-    .line 4
-    :catch_0
-    :cond_0
-    monitor-exit p0
-
-    return-void
-
-    :catchall_0
-    move-exception v0
-
-    monitor-exit p0
-
-    throw v0
 .end method

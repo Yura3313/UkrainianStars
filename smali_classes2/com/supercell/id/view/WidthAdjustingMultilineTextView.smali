@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field public j:Ljava/lang/Float;
+.field public k:Ljava/lang/Float;
 
 
 # direct methods
@@ -24,7 +24,7 @@
 
     const-string v0, "context"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 2
     invoke-direct {p0, p1, p2, p3}, Landroidx/appcompat/widget/AppCompatTextView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
@@ -68,7 +68,7 @@
     int-to-float v4, v4
 
     .line 5
-    sget v5, La5/g0;->a:F
+    sget v5, La5/e0;->g:F
 
     mul-float v4, v4, v5
 
@@ -96,7 +96,7 @@
 
     if-eqz v5, :cond_2
 
-    invoke-static {v5}, Lcom/supercell/id/view/p;->a(Landroid/text/Layout;)Z
+    invoke-static {v5}, Lcom/google/protobuf/o1;->a(Landroid/text/Layout;)Z
 
     move-result v5
 
@@ -117,7 +117,7 @@
 
     .line 11
     :cond_1
-    iget-object v3, p0, Lcom/supercell/id/view/WidthAdjustingMultilineTextView;->j:Ljava/lang/Float;
+    iget-object v3, p0, Lcom/supercell/id/view/WidthAdjustingMultilineTextView;->k:Ljava/lang/Float;
 
     if-eqz v3, :cond_2
 
@@ -160,7 +160,7 @@
     if-eqz v0, :cond_3
 
     .line 17
-    invoke-static {v0}, Lcom/supercell/id/view/p;->b(Landroid/text/Layout;)F
+    invoke-static {v0}, Lcom/google/protobuf/o1;->b(Landroid/text/Layout;)F
 
     move-result v0
 
@@ -202,7 +202,7 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/supercell/id/view/WidthAdjustingMultilineTextView;->j:Ljava/lang/Float;
+    iget-object v0, p0, Lcom/supercell/id/view/WidthAdjustingMultilineTextView;->k:Ljava/lang/Float;
 
     if-nez v0, :cond_0
 
@@ -215,11 +215,11 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/supercell/id/view/WidthAdjustingMultilineTextView;->j:Ljava/lang/Float;
+    iput-object v0, p0, Lcom/supercell/id/view/WidthAdjustingMultilineTextView;->k:Ljava/lang/Float;
 
     .line 3
     :cond_0
-    iget-object v0, p0, Lcom/supercell/id/view/WidthAdjustingMultilineTextView;->j:Ljava/lang/Float;
+    iget-object v0, p0, Lcom/supercell/id/view/WidthAdjustingMultilineTextView;->k:Ljava/lang/Float;
 
     if-eqz v0, :cond_1
 

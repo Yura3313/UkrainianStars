@@ -111,7 +111,7 @@
 
     .line 9
     :pswitch_2
-    sget-object v2, Lcom/google/android/gms/drive/query/internal/zzn;->CREATOR:Lt2/h;
+    sget-object v2, Lcom/google/android/gms/drive/query/internal/zzn;->CREATOR:Lt2/g;
 
     .line 10
     invoke-static {p1, v1, v2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->h(Landroid/os/Parcel;ILandroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
@@ -141,7 +141,7 @@
 
     .line 13
     :pswitch_4
-    sget-object v2, Lcom/google/android/gms/drive/query/internal/zzp;->CREATOR:Lt2/i;
+    sget-object v2, Lcom/google/android/gms/drive/query/internal/zzp;->CREATOR:Lt2/h;
 
     .line 14
     invoke-static {p1, v1, v2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->h(Landroid/os/Parcel;ILandroid/os/Parcelable$Creator;)Landroid/os/Parcelable;

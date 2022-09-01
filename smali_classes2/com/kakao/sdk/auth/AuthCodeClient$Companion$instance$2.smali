@@ -1,5 +1,5 @@
 .class final Lcom/kakao/sdk/auth/AuthCodeClient$Companion$instance$2;
-.super Lse/h;
+.super Lse/i;
 .source "AuthCodeClient.kt"
 
 # interfaces
@@ -18,7 +18,7 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/a<",
         "Lcom/kakao/sdk/auth/AuthCodeClient;",
         ">;"
@@ -48,7 +48,7 @@
 
     const/4 v0, 0x0
 
-    invoke-direct {p0, v0}, Lse/h;-><init>(I)V
+    invoke-direct {p0, v0}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -75,7 +75,7 @@
 
     move-object v0, v7
 
-    invoke-direct/range {v0 .. v6}, Lcom/kakao/sdk/auth/AuthCodeClient;-><init>(Lcom/kakao/sdk/common/util/IntentResolveClient;Lcom/kakao/sdk/common/model/ApplicationInfo;Lcom/kakao/sdk/common/model/ContextInfo;Lcom/kakao/sdk/common/model/ApprovalType;ILse/e;)V
+    invoke-direct/range {v0 .. v6}, Lcom/kakao/sdk/auth/AuthCodeClient;-><init>(Lcom/kakao/sdk/common/util/IntentResolveClient;Lcom/kakao/sdk/common/model/ApplicationInfo;Lcom/kakao/sdk/common/model/ContextInfo;Lcom/kakao/sdk/common/model/ApprovalType;ILse/f;)V
 
     return-object v7
 .end method

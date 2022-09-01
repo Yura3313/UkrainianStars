@@ -13,7 +13,7 @@
 .method public constructor <init>(Lx7/d;)V
     .locals 1
 
-    sget-object v0, Lx7/d$b;->j:Lx7/d$b;
+    sget-object v0, Lx7/d$b;->k:Lx7/d$b;
 
     iput-object p1, p0, Lx7/c;->c:Lx7/d;
 

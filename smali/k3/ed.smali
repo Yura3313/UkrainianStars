@@ -434,7 +434,7 @@
     invoke-virtual {v1}, Landroid/util/JsonWriter;->endArray()Landroid/util/JsonWriter;
 
     .line 12
-    invoke-interface {p2, v1}, Lk3/hd;->b(Landroid/util/JsonWriter;)V
+    invoke-interface {p2, v1}, Lk3/hd;->c(Landroid/util/JsonWriter;)V
 
     .line 13
     invoke-virtual {v1}, Landroid/util/JsonWriter;->endObject()Landroid/util/JsonWriter;
@@ -615,9 +615,9 @@
     .line 6
     :cond_3
     :goto_1
-    new-instance p1, Lk3/m8;
+    new-instance p1, Lk3/n8;
 
-    invoke-direct {p1, v1}, Lk3/m8;-><init>(Ljava/lang/Object;)V
+    invoke-direct {p1, v1}, Lk3/n8;-><init>(Ljava/lang/Object;)V
 
     const-string p2, "onNetworkRequestError"
 

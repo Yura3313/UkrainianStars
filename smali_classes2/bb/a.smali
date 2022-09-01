@@ -18,10 +18,10 @@
     .locals 0
 
     .line 1
-    sget-object p2, Lcom/helpshift/util/x;->a:Ljava/util/HashSet;
+    sget-object p2, Lcom/helpshift/util/w;->a:Ljava/util/HashSet;
 
     .line 2
-    invoke-static {p1}, Lk3/sp;->f(Ljava/lang/String;)Z
+    invoke-static {p1}, Lt5/a;->f(Ljava/lang/String;)Z
 
     move-result p2
 

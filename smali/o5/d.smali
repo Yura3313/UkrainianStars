@@ -32,13 +32,13 @@
 
 
 # static fields
-.field public static final g:Lo5/d$f;
+.field public static final h:Lo5/d$f;
 
-.field public static final h:Lo5/d$d;
+.field public static final i:Lo5/d$d;
 
 
 # instance fields
-.field public f:I
+.field public g:I
 
 
 # direct methods
@@ -52,7 +52,7 @@
 
     invoke-direct {v0, v1}, Lo5/d$f;-><init>([B)V
 
-    sput-object v0, Lo5/d;->g:Lo5/d$f;
+    sput-object v0, Lo5/d;->h:Lo5/d$f;
 
     .line 2
     invoke-static {}, Lo5/a;->a()Z
@@ -73,7 +73,7 @@
     invoke-direct {v0}, Lo5/d$b;-><init>()V
 
     :goto_0
-    sput-object v0, Lo5/d;->h:Lo5/d$d;
+    sput-object v0, Lo5/d;->i:Lo5/d$d;
 
     return-void
 .end method
@@ -87,7 +87,7 @@
     const/4 v0, 0x0
 
     .line 2
-    iput v0, p0, Lo5/d;->f:I
+    iput v0, p0, Lo5/d;->g:I
 
     return-void
 .end method
@@ -223,7 +223,7 @@
     .line 2
     new-instance v0, Lo5/d$f;
 
-    sget-object v1, Lo5/d;->h:Lo5/d$d;
+    sget-object v1, Lo5/d;->i:Lo5/d$d;
 
     invoke-interface {v1, p0, p1, p2}, Lo5/d$d;->a([BII)[B
 
@@ -252,7 +252,7 @@
     .locals 1
 
     .line 1
-    iget v0, p0, Lo5/d;->f:I
+    iget v0, p0, Lo5/d;->g:I
 
     if-nez v0, :cond_1
 
@@ -272,7 +272,7 @@
 
     .line 4
     :cond_0
-    iput v0, p0, Lo5/d;->f:I
+    iput v0, p0, Lo5/d;->g:I
 
     :cond_1
     return v0

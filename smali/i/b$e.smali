@@ -35,7 +35,7 @@
 
 
 # instance fields
-.field public f:Li/b$c;
+.field public g:Li/b$c;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Li/b$c<",
@@ -44,7 +44,7 @@
     .end annotation
 .end field
 
-.field public g:Li/b$c;
+.field public h:Li/b$c;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Li/b$c<",
@@ -71,10 +71,10 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object p2, p0, Li/b$e;->f:Li/b$c;
+    iput-object p2, p0, Li/b$e;->g:Li/b$c;
 
     .line 3
-    iput-object p1, p0, Li/b$e;->g:Li/b$c;
+    iput-object p1, p0, Li/b$e;->h:Li/b$c;
 
     return-void
 .end method
@@ -92,25 +92,25 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Li/b$e;->f:Li/b$c;
+    iget-object v0, p0, Li/b$e;->g:Li/b$c;
 
     const/4 v1, 0x0
 
     if-ne v0, p1, :cond_0
 
-    iget-object v0, p0, Li/b$e;->g:Li/b$c;
+    iget-object v0, p0, Li/b$e;->h:Li/b$c;
 
     if-ne p1, v0, :cond_0
 
     .line 2
-    iput-object v1, p0, Li/b$e;->g:Li/b$c;
+    iput-object v1, p0, Li/b$e;->h:Li/b$c;
 
     .line 3
-    iput-object v1, p0, Li/b$e;->f:Li/b$c;
+    iput-object v1, p0, Li/b$e;->g:Li/b$c;
 
     .line 4
     :cond_0
-    iget-object v0, p0, Li/b$e;->f:Li/b$c;
+    iget-object v0, p0, Li/b$e;->g:Li/b$c;
 
     if-ne v0, p1, :cond_1
 
@@ -119,16 +119,16 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Li/b$e;->f:Li/b$c;
+    iput-object v0, p0, Li/b$e;->g:Li/b$c;
 
     .line 6
     :cond_1
-    iget-object v0, p0, Li/b$e;->g:Li/b$c;
+    iget-object v0, p0, Li/b$e;->h:Li/b$c;
 
     if-ne v0, p1, :cond_4
 
     .line 7
-    iget-object p1, p0, Li/b$e;->f:Li/b$c;
+    iget-object p1, p0, Li/b$e;->g:Li/b$c;
 
     if-eq v0, p1, :cond_3
 
@@ -145,7 +145,7 @@
     .line 9
     :cond_3
     :goto_0
-    iput-object v1, p0, Li/b$e;->g:Li/b$c;
+    iput-object v1, p0, Li/b$e;->h:Li/b$c;
 
     :cond_4
     return-void
@@ -178,7 +178,7 @@
 .method public final hasNext()Z
     .locals 1
 
-    iget-object v0, p0, Li/b$e;->g:Li/b$c;
+    iget-object v0, p0, Li/b$e;->h:Li/b$c;
 
     if-eqz v0, :cond_0
 
@@ -197,10 +197,10 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Li/b$e;->g:Li/b$c;
+    iget-object v0, p0, Li/b$e;->h:Li/b$c;
 
     .line 2
-    iget-object v1, p0, Li/b$e;->f:Li/b$c;
+    iget-object v1, p0, Li/b$e;->g:Li/b$c;
 
     if-eq v0, v1, :cond_1
 
@@ -222,7 +222,7 @@
 
     .line 4
     :goto_1
-    iput-object v1, p0, Li/b$e;->g:Li/b$c;
+    iput-object v1, p0, Li/b$e;->h:Li/b$c;
 
     return-object v0
 .end method

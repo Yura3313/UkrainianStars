@@ -178,7 +178,7 @@
     .end annotation
 
     .line 1
-    invoke-static {}, Ll2/j;->b()Z
+    invoke-static {}, Ll2/l;->b()Z
 
     move-result v0
 

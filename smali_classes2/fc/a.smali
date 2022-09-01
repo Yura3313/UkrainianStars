@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field public final f:Ljava/io/InputStream;
+.field public final g:Ljava/io/InputStream;
 
-.field public final g:I
+.field public final h:I
 
 
 # direct methods
@@ -17,10 +17,10 @@
     invoke-direct {p0}, Ljava/io/InputStream;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lfc/a;->f:Ljava/io/InputStream;
+    iput-object p1, p0, Lfc/a;->g:Ljava/io/InputStream;
 
     .line 3
-    iput p2, p0, Lfc/a;->g:I
+    iput p2, p0, Lfc/a;->h:I
 
     return-void
 .end method
@@ -30,7 +30,7 @@
 .method public final available()I
     .locals 1
 
-    iget v0, p0, Lfc/a;->g:I
+    iget v0, p0, Lfc/a;->h:I
 
     return v0
 .end method
@@ -43,7 +43,7 @@
         }
     .end annotation
 
-    iget-object v0, p0, Lfc/a;->f:Ljava/io/InputStream;
+    iget-object v0, p0, Lfc/a;->g:Ljava/io/InputStream;
 
     invoke-virtual {v0}, Ljava/io/InputStream;->close()V
 
@@ -53,7 +53,7 @@
 .method public final mark(I)V
     .locals 1
 
-    iget-object v0, p0, Lfc/a;->f:Ljava/io/InputStream;
+    iget-object v0, p0, Lfc/a;->g:Ljava/io/InputStream;
 
     invoke-virtual {v0, p1}, Ljava/io/InputStream;->mark(I)V
 
@@ -63,7 +63,7 @@
 .method public final markSupported()Z
     .locals 1
 
-    iget-object v0, p0, Lfc/a;->f:Ljava/io/InputStream;
+    iget-object v0, p0, Lfc/a;->g:Ljava/io/InputStream;
 
     invoke-virtual {v0}, Ljava/io/InputStream;->markSupported()Z
 
@@ -81,7 +81,7 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lfc/a;->f:Ljava/io/InputStream;
+    iget-object v0, p0, Lfc/a;->g:Ljava/io/InputStream;
 
     invoke-virtual {v0}, Ljava/io/InputStream;->read()I
 
@@ -99,7 +99,7 @@
     .end annotation
 
     .line 2
-    iget-object v0, p0, Lfc/a;->f:Ljava/io/InputStream;
+    iget-object v0, p0, Lfc/a;->g:Ljava/io/InputStream;
 
     invoke-virtual {v0, p1}, Ljava/io/InputStream;->read([B)I
 
@@ -117,7 +117,7 @@
     .end annotation
 
     .line 3
-    iget-object v0, p0, Lfc/a;->f:Ljava/io/InputStream;
+    iget-object v0, p0, Lfc/a;->g:Ljava/io/InputStream;
 
     invoke-virtual {v0, p1, p2, p3}, Ljava/io/InputStream;->read([BII)I
 
@@ -134,7 +134,7 @@
         }
     .end annotation
 
-    iget-object v0, p0, Lfc/a;->f:Ljava/io/InputStream;
+    iget-object v0, p0, Lfc/a;->g:Ljava/io/InputStream;
 
     invoke-virtual {v0}, Ljava/io/InputStream;->reset()V
 
@@ -149,7 +149,7 @@
         }
     .end annotation
 
-    iget-object v0, p0, Lfc/a;->f:Ljava/io/InputStream;
+    iget-object v0, p0, Lfc/a;->g:Ljava/io/InputStream;
 
     invoke-virtual {v0, p1, p2}, Ljava/io/InputStream;->skip(J)J
 

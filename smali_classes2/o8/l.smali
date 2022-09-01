@@ -4,13 +4,13 @@
 
 
 # instance fields
-.field public A:Lp8/e;
+.field public final A:Z
 
-.field public final z:Z
+.field public B:Lp8/f;
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;JLo8/o;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;Ljava/lang/String;IZ)V
+.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;JLo8/p;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;Ljava/lang/String;IZ)V
     .locals 9
 
     move-object v8, p0
@@ -30,10 +30,10 @@
     move-object v6, p6
 
     .line 1
-    invoke-direct/range {v0 .. v7}, Lo8/j;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;JLo8/o;I)V
+    invoke-direct/range {v0 .. v7}, Lo8/j;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;JLo8/p;I)V
 
     .line 2
-    new-instance v7, Lp8/e;
+    new-instance v7, Lp8/f;
 
     move-object v0, v7
 
@@ -49,14 +49,14 @@
 
     move/from16 v6, p12
 
-    invoke-direct/range {v0 .. v6}, Lp8/e;-><init>(Ljava/lang/String;ZLjava/lang/String;Ljava/lang/String;Ljava/lang/String;I)V
+    invoke-direct/range {v0 .. v6}, Lp8/f;-><init>(Ljava/lang/String;ZLjava/lang/String;Ljava/lang/String;Ljava/lang/String;I)V
 
-    iput-object v7, v8, Lo8/l;->A:Lp8/e;
+    iput-object v7, v8, Lo8/l;->B:Lp8/f;
 
     move/from16 v0, p13
 
     .line 3
-    iput-boolean v0, v8, Lo8/l;->z:Z
+    iput-boolean v0, v8, Lo8/l;->A:Z
 
     return-void
 .end method
@@ -68,20 +68,20 @@
     invoke-direct {p0, p1}, Lo8/j;-><init>(Lo8/j;)V
 
     .line 5
-    iget-boolean v0, p1, Lo8/l;->z:Z
+    iget-boolean v0, p1, Lo8/l;->A:Z
 
-    iput-boolean v0, p0, Lo8/l;->z:Z
+    iput-boolean v0, p0, Lo8/l;->A:Z
 
     .line 6
-    iget-object p1, p1, Lo8/l;->A:Lp8/e;
+    iget-object p1, p1, Lo8/l;->B:Lp8/f;
 
     .line 7
-    new-instance v0, Lp8/e;
+    new-instance v0, Lp8/f;
 
-    invoke-direct {v0, p1}, Lp8/e;-><init>(Lp8/e;)V
+    invoke-direct {v0, p1}, Lp8/f;-><init>(Lp8/f;)V
 
     .line 8
-    iput-object v0, p0, Lo8/l;->A:Lp8/e;
+    iput-object v0, p0, Lo8/l;->B:Lp8/f;
 
     return-void
 .end method
@@ -98,7 +98,7 @@
     return-object v0
 .end method
 
-.method public final b()Lo8/y;
+.method public final b()Lo8/z;
     .locals 1
 
     new-instance v0, Lo8/l;
@@ -108,11 +108,11 @@
     return-object v0
 .end method
 
-.method public final k(Lo8/y;)V
+.method public final k(Lo8/z;)V
     .locals 1
 
     .line 1
-    invoke-super {p0, p1}, Lo8/y;->k(Lo8/y;)V
+    invoke-super {p0, p1}, Lo8/z;->k(Lo8/z;)V
 
     .line 2
     instance-of v0, p1, Lo8/l;
@@ -123,9 +123,9 @@
     check-cast p1, Lo8/l;
 
     .line 4
-    iget-object p1, p1, Lo8/l;->A:Lp8/e;
+    iget-object p1, p1, Lo8/l;->B:Lp8/f;
 
-    iput-object p1, p0, Lo8/l;->A:Lp8/e;
+    iput-object p1, p0, Lo8/l;->B:Lp8/f;
 
     :cond_0
     return-void
@@ -135,16 +135,16 @@
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lo8/y;->t:La8/f;
+    iput-object p1, p0, Lo8/z;->u:La8/f;
 
     .line 2
-    iput-object p2, p0, Lo8/y;->u:Le8/s;
+    iput-object p2, p0, Lo8/z;->v:Le8/s;
 
     .line 3
-    iget-object p2, p0, Lo8/l;->A:Lp8/e;
+    iget-object p2, p0, Lo8/l;->B:Lp8/f;
 
     .line 4
-    iput-object p1, p2, Lp8/e;->l:La8/f;
+    iput-object p1, p2, Lp8/f;->m:La8/f;
 
     return-void
 .end method

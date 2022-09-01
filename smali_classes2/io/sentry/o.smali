@@ -7,16 +7,20 @@
 
 
 # instance fields
-.field public final synthetic a:Lio/sentry/SentryEnvelopeItem$CachedItem;
+.field public final synthetic a:Lio/sentry/Attachment;
+
+.field public final synthetic b:J
 
 
 # direct methods
-.method public synthetic constructor <init>(Lio/sentry/SentryEnvelopeItem$CachedItem;)V
+.method public synthetic constructor <init>(Lio/sentry/Attachment;J)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lio/sentry/o;->a:Lio/sentry/SentryEnvelopeItem$CachedItem;
+    iput-object p1, p0, Lio/sentry/o;->a:Lio/sentry/Attachment;
+
+    iput-wide p2, p0, Lio/sentry/o;->b:J
 
     return-void
 .end method
@@ -24,11 +28,13 @@
 
 # virtual methods
 .method public final call()Ljava/lang/Object;
-    .locals 1
+    .locals 3
 
-    iget-object v0, p0, Lio/sentry/o;->a:Lio/sentry/SentryEnvelopeItem$CachedItem;
+    iget-object v0, p0, Lio/sentry/o;->a:Lio/sentry/Attachment;
 
-    invoke-static {v0}, Lio/sentry/SentryEnvelopeItem;->j(Lio/sentry/SentryEnvelopeItem$CachedItem;)Ljava/lang/Integer;
+    iget-wide v1, p0, Lio/sentry/o;->b:J
+
+    invoke-static {v0, v1, v2}, Lio/sentry/SentryEnvelopeItem;->c(Lio/sentry/Attachment;J)[B
 
     move-result-object v0
 

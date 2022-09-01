@@ -18,18 +18,18 @@
 
 
 # instance fields
-.field public final synthetic f:Lcom/supercell/titan/GameApp;
+.field public final synthetic g:Lcom/supercell/titan/GameApp;
 
-.field public final synthetic g:Lcom/supercell/titan/SupercellId;
+.field public final synthetic h:Lcom/supercell/titan/SupercellId;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/titan/GameApp;Lcom/supercell/titan/SupercellId;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/titan/SupercellId$k;->f:Lcom/supercell/titan/GameApp;
+    iput-object p1, p0, Lcom/supercell/titan/SupercellId$k;->g:Lcom/supercell/titan/GameApp;
 
-    iput-object p2, p0, Lcom/supercell/titan/SupercellId$k;->g:Lcom/supercell/titan/SupercellId;
+    iput-object p2, p0, Lcom/supercell/titan/SupercellId$k;->h:Lcom/supercell/titan/SupercellId;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -43,9 +43,9 @@
 
     sget-object v0, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
 
-    iget-object v1, p0, Lcom/supercell/titan/SupercellId$k;->f:Lcom/supercell/titan/GameApp;
+    iget-object v1, p0, Lcom/supercell/titan/SupercellId$k;->g:Lcom/supercell/titan/GameApp;
 
-    iget-object v2, p0, Lcom/supercell/titan/SupercellId$k;->g:Lcom/supercell/titan/SupercellId;
+    iget-object v2, p0, Lcom/supercell/titan/SupercellId$k;->h:Lcom/supercell/titan/SupercellId;
 
     new-instance v3, Lcom/supercell/titan/SupercellId$w;
 

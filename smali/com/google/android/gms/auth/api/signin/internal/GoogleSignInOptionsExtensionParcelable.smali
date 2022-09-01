@@ -19,11 +19,11 @@
 
 
 # instance fields
-.field public final f:I
+.field public final g:I
 
-.field public g:I
+.field public h:I
 
-.field public h:Landroid/os/Bundle;
+.field public i:Landroid/os/Bundle;
 
 
 # direct methods
@@ -46,13 +46,13 @@
     invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
 
     .line 2
-    iput p1, p0, Lcom/google/android/gms/auth/api/signin/internal/GoogleSignInOptionsExtensionParcelable;->f:I
+    iput p1, p0, Lcom/google/android/gms/auth/api/signin/internal/GoogleSignInOptionsExtensionParcelable;->g:I
 
     .line 3
-    iput p2, p0, Lcom/google/android/gms/auth/api/signin/internal/GoogleSignInOptionsExtensionParcelable;->g:I
+    iput p2, p0, Lcom/google/android/gms/auth/api/signin/internal/GoogleSignInOptionsExtensionParcelable;->h:I
 
     .line 4
-    iput-object p3, p0, Lcom/google/android/gms/auth/api/signin/internal/GoogleSignInOptionsExtensionParcelable;->h:Landroid/os/Bundle;
+    iput-object p3, p0, Lcom/google/android/gms/auth/api/signin/internal/GoogleSignInOptionsExtensionParcelable;->i:Landroid/os/Bundle;
 
     return-void
 .end method
@@ -72,14 +72,14 @@
     move-result p2
 
     .line 2
-    iget v0, p0, Lcom/google/android/gms/auth/api/signin/internal/GoogleSignInOptionsExtensionParcelable;->f:I
+    iget v0, p0, Lcom/google/android/gms/auth/api/signin/internal/GoogleSignInOptionsExtensionParcelable;->g:I
 
     const/4 v1, 0x1
 
     invoke-static {p1, v1, v0}, Le2/b;->g(Landroid/os/Parcel;II)V
 
     .line 3
-    iget v0, p0, Lcom/google/android/gms/auth/api/signin/internal/GoogleSignInOptionsExtensionParcelable;->g:I
+    iget v0, p0, Lcom/google/android/gms/auth/api/signin/internal/GoogleSignInOptionsExtensionParcelable;->h:I
 
     const/4 v1, 0x2
 
@@ -87,7 +87,7 @@
     invoke-static {p1, v1, v0}, Le2/b;->g(Landroid/os/Parcel;II)V
 
     .line 5
-    iget-object v0, p0, Lcom/google/android/gms/auth/api/signin/internal/GoogleSignInOptionsExtensionParcelable;->h:Landroid/os/Bundle;
+    iget-object v0, p0, Lcom/google/android/gms/auth/api/signin/internal/GoogleSignInOptionsExtensionParcelable;->i:Landroid/os/Bundle;
 
     const/4 v1, 0x3
 

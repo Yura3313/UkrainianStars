@@ -1,91 +1,56 @@
-.class public final Lk3/he0;
+.class public final synthetic Lk3/he0;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lk3/bd0;
-
-
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ljava/lang/Object;",
-        "Lk3/bd0<",
-        "Lk3/xc0;",
-        ">;"
-    }
-.end annotation
+.implements Ljava/util/concurrent/Callable;
 
 
 # instance fields
-.field public a:Lk3/f;
+.field public final a:Lk3/hm0;
 
-.field public b:Lk3/gm0;
-
-.field public c:Ljava/util/List;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/List<",
-            "Ljava/lang/String;",
-            ">;"
-        }
-    .end annotation
-.end field
+.field public final b:Lk3/hm0;
 
 
 # direct methods
-.method public constructor <init>(Lk3/f;Lk3/gm0;Ljava/util/List;)V
+.method public constructor <init>(Lk3/hm0;Lk3/hm0;)V
     .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lk3/f;",
-            "Lk3/gm0;",
-            "Ljava/util/List<",
-            "Ljava/lang/String;",
-            ">;)V"
-        }
-    .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
-    iput-object p1, p0, Lk3/he0;->a:Lk3/f;
+    iput-object p1, p0, Lk3/he0;->a:Lk3/hm0;
 
-    .line 3
-    iput-object p2, p0, Lk3/he0;->b:Lk3/gm0;
-
-    .line 4
-    iput-object p3, p0, Lk3/he0;->c:Ljava/util/List;
+    iput-object p2, p0, Lk3/he0;->b:Lk3/hm0;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a()Lk3/em0;
+.method public final call()Ljava/lang/Object;
     .locals 3
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Lk3/em0<",
-            "Lk3/xc0;",
-            ">;"
-        }
-    .end annotation
 
-    iget-object v0, p0, Lk3/he0;->b:Lk3/gm0;
+    .line 1
+    iget-object v0, p0, Lk3/he0;->a:Lk3/hm0;
 
-    new-instance v1, Lk3/je0;
+    iget-object v1, p0, Lk3/he0;->b:Lk3/hm0;
 
-    const/4 v2, 0x0
+    .line 2
+    new-instance v2, Lk3/ge0;
 
-    invoke-direct {v1, p0, v2}, Lk3/je0;-><init>(Ljava/lang/Object;I)V
-
-    invoke-interface {v0, v1}, Lk3/gm0;->c(Ljava/util/concurrent/Callable;)Lk3/em0;
+    invoke-interface {v0}, Ljava/util/concurrent/Future;->get()Ljava/lang/Object;
 
     move-result-object v0
 
-    return-object v0
+    check-cast v0, Ljava/lang/String;
+
+    invoke-interface {v1}, Ljava/util/concurrent/Future;->get()Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Ljava/lang/String;
+
+    invoke-direct {v2, v0, v1}, Lk3/ge0;-><init>(Ljava/lang/String;Ljava/lang/String;)V
+
+    return-object v2
 .end method

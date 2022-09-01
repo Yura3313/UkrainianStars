@@ -1,5 +1,5 @@
 .class public final Lvd/l$c;
-.super Lse/h;
+.super Lse/i;
 .source "SettingsSubscriptionsTabFragment.kt"
 
 # interfaces
@@ -18,28 +18,28 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/l<",
         "Ljava/lang/Exception;",
-        "Lie/h;",
+        "Lie/i;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic f:Lvd/l;
+.field public final synthetic g:Lvd/l;
 
 
 # direct methods
 .method public constructor <init>(Lvd/l;)V
     .locals 0
 
-    iput-object p1, p0, Lvd/l$c;->f:Lvd/l;
+    iput-object p1, p0, Lvd/l$c;->g:Lvd/l;
 
     const/4 p1, 0x1
 
-    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -55,20 +55,20 @@
     const-string v0, "it"
 
     .line 2
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 3
-    iget-object v0, p0, Lvd/l$c;->f:Lvd/l;
+    iget-object v0, p0, Lvd/l$c;->g:Lvd/l;
 
-    sget v1, Lvd/l;->g0:I
+    sget v1, Lvd/l;->h0:I
 
     .line 4
-    iget-object v1, v0, Landroidx/fragment/app/Fragment;->M:Landroid/view/View;
+    iget-object v1, v0, Landroidx/fragment/app/Fragment;->N:Landroid/view/View;
 
     if-eqz v1, :cond_0
 
     .line 5
-    iget-object v1, v0, Lvd/l;->b0:Lvc/c0;
+    iget-object v1, v0, Lvd/l;->c0:Lvc/z;
 
     if-eqz v1, :cond_0
 
@@ -83,10 +83,10 @@
 
     const-string v3, "generalSubscribeSwitch"
 
-    invoke-static {v2, v3}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v2, v3}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 7
-    iget-boolean v3, v1, Lvc/c0;->a:Z
+    iget-boolean v3, v1, Lvc/z;->a:Z
 
     .line 8
     invoke-virtual {v2, v3}, Landroidx/appcompat/widget/SwitchCompat;->setChecked(Z)V
@@ -127,10 +127,10 @@
 
     const-string v4, "it.titleTextView"
 
-    invoke-static {v3, v4}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v3, v4}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 12
-    iget-boolean v4, v1, Lvc/c0;->a:Z
+    iget-boolean v4, v1, Lvc/z;->a:Z
 
     .line 13
     invoke-virtual {v3, v4}, Landroid/widget/TextView;->setEnabled(Z)V
@@ -146,10 +146,10 @@
 
     const-string v3, "it.consentCheckBox"
 
-    invoke-static {v2, v3}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v2, v3}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 15
-    iget-boolean v3, v1, Lvc/c0;->a:Z
+    iget-boolean v3, v1, Lvc/z;->a:Z
 
     .line 16
     invoke-virtual {v2, v3}, Landroid/view/View;->setEnabled(Z)V
@@ -158,15 +158,15 @@
 
     .line 17
     :cond_0
-    iget-object v0, p0, Lvd/l$c;->f:Lvd/l;
+    iget-object v0, p0, Lvd/l$c;->g:Lvd/l;
 
-    invoke-static {v0}, Lcom/android/billingclient/api/c0;->e(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
+    invoke-static {v0}, Lcom/android/billingclient/api/b0;->f(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
 
     move-result-object v0
 
     if-eqz v0, :cond_1
 
-    sget-object v1, Lcom/supercell/id/ui/MainActivity;->s:Ljava/lang/ref/WeakReference;
+    sget-object v1, Lcom/supercell/id/ui/MainActivity;->t:Ljava/lang/ref/WeakReference;
 
     const/4 v1, 0x0
 
@@ -175,7 +175,7 @@
 
     .line 19
     :cond_1
-    sget-object p1, Lie/h;->a:Lie/h;
+    sget-object p1, Lie/i;->a:Lie/i;
 
     return-object p1
 .end method

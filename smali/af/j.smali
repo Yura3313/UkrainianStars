@@ -1,5 +1,5 @@
 .class public final Laf/j;
-.super Lse/h;
+.super Lse/i;
 .source "ExceptionsConstuctor.kt"
 
 # interfaces
@@ -7,7 +7,7 @@
 
 
 # static fields
-.field public static final f:Laf/j;
+.field public static final g:Laf/j;
 
 
 # direct methods
@@ -18,7 +18,7 @@
 
     invoke-direct {v0}, Laf/j;-><init>()V
 
-    sput-object v0, Laf/j;->f:Laf/j;
+    sput-object v0, Laf/j;->g:Laf/j;
 
     return-void
 .end method
@@ -28,7 +28,7 @@
 
     const/4 v0, 0x1
 
-    invoke-direct {p0, v0}, Lse/h;-><init>(I)V
+    invoke-direct {p0, v0}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -42,7 +42,7 @@
 
     const-string v0, "it"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/4 p1, 0x0
 

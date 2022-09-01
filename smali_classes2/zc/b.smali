@@ -1,5 +1,5 @@
 .class public final Lzc/b;
-.super Lse/h;
+.super Lse/i;
 .source "FaqFragment.kt"
 
 # interfaces
@@ -9,33 +9,33 @@
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/p<",
         "Ljava/lang/Float;",
         "Lcom/supercell/id/view/ExpandableFrameLayout$b;",
-        "Lie/h;",
+        "Lie/i;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic f:Lcom/supercell/id/ui/faq/FaqFragment;
+.field public final synthetic g:Lcom/supercell/id/ui/faq/FaqFragment;
 
-.field public final synthetic g:Landroid/view/View;
+.field public final synthetic h:Landroid/view/View;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/id/ui/faq/FaqFragment;Landroid/view/View;)V
     .locals 0
 
-    iput-object p1, p0, Lzc/b;->f:Lcom/supercell/id/ui/faq/FaqFragment;
+    iput-object p1, p0, Lzc/b;->g:Lcom/supercell/id/ui/faq/FaqFragment;
 
-    iput-object p2, p0, Lzc/b;->g:Landroid/view/View;
+    iput-object p2, p0, Lzc/b;->h:Landroid/view/View;
 
     const/4 p1, 0x2
 
-    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -57,10 +57,10 @@
     const-string v0, "state"
 
     .line 2
-    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 3
-    iget-object v0, p0, Lzc/b;->g:Landroid/view/View;
+    iget-object v0, p0, Lzc/b;->h:Landroid/view/View;
 
     .line 4
     sget-object v1, Lf0/r;->a:Ljava/util/WeakHashMap;
@@ -91,11 +91,11 @@
 
     .line 6
     :goto_1
-    iget-object v1, p0, Lzc/b;->g:Landroid/view/View;
+    iget-object v1, p0, Lzc/b;->h:Landroid/view/View;
 
     const-string v2, "itemRow"
 
-    invoke-static {v1, v2}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     sget v3, Lcom/supercell/id/R$id;->titleArrow:I
 
@@ -107,7 +107,7 @@
 
     const-string v3, "itemRow.titleArrow"
 
-    invoke-static {v1, v3}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, v3}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/high16 v3, 0x42b40000    # 90.0f
 
@@ -122,12 +122,12 @@
     invoke-virtual {v1, v3}, Landroid/view/View;->setRotation(F)V
 
     .line 7
-    sget-object v0, Lcom/supercell/id/view/ExpandableFrameLayout$b;->h:Lcom/supercell/id/view/ExpandableFrameLayout$b;
+    sget-object v0, Lcom/supercell/id/view/ExpandableFrameLayout$b;->i:Lcom/supercell/id/view/ExpandableFrameLayout$b;
 
     if-ne p2, v0, :cond_2
 
     .line 8
-    iget-object p2, p0, Lzc/b;->f:Lcom/supercell/id/ui/faq/FaqFragment;
+    iget-object p2, p0, Lzc/b;->g:Lcom/supercell/id/ui/faq/FaqFragment;
 
     sget v0, Lcom/supercell/id/R$id;->faqScrollView:I
 
@@ -139,13 +139,13 @@
 
     const-string v0, "faqScrollView"
 
-    invoke-static {p2, v0}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    iget-object v0, p0, Lzc/b;->g:Landroid/view/View;
+    iget-object v0, p0, Lzc/b;->h:Landroid/view/View;
 
-    invoke-static {v0, v2}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v2}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    iget-object v1, p0, Lzc/b;->f:Lcom/supercell/id/ui/faq/FaqFragment;
+    iget-object v1, p0, Lzc/b;->g:Lcom/supercell/id/ui/faq/FaqFragment;
 
     sget v2, Lcom/supercell/id/R$id;->faqContainer:I
 
@@ -157,7 +157,7 @@
 
     const-string v2, "faqContainer"
 
-    invoke-static {v1, v2}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v1}, Landroid/view/View;->getPaddingBottom()I
 
@@ -172,7 +172,7 @@
 
     .line 10
     :cond_2
-    sget-object p1, Lie/h;->a:Lie/h;
+    sget-object p1, Lie/i;->a:Lie/i;
 
     return-object p1
 .end method

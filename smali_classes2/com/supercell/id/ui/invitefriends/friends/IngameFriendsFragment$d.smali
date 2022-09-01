@@ -1,5 +1,5 @@
 .class public final Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$d;
-.super Lse/h;
+.super Lse/i;
 .source "IngameFriendsFragment.kt"
 
 # interfaces
@@ -18,31 +18,31 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/l<",
         "Ljava/util/List<",
         "+",
-        "Lvc/l;",
+        "Lvc/k;",
         ">;",
-        "Lie/h;",
+        "Lie/i;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic f:Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment;
+.field public final synthetic g:Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$d;->f:Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment;
+    iput-object p1, p0, Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$d;->g:Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment;
 
     const/4 p1, 0x1
 
-    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -58,17 +58,17 @@
     const-string v0, "list"
 
     .line 2
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 3
-    iget-object v0, p0, Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$d;->f:Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment;
+    iget-object v0, p0, Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment$d;->g:Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment;
 
     .line 4
     new-instance v1, Ljava/util/ArrayList;
 
     const/16 v2, 0xa
 
-    invoke-static {p1, v2}, Lje/f;->q(Ljava/lang/Iterable;I)I
+    invoke-static {p1, v2}, Lje/f;->l(Ljava/lang/Iterable;I)I
 
     move-result v2
 
@@ -91,35 +91,35 @@
     move-result-object v2
 
     .line 6
-    check-cast v2, Lvc/l;
+    check-cast v2, Lvc/k;
 
     .line 7
     new-instance v11, Lld/c;
 
     .line 8
-    iget-object v4, v2, Lvc/l;->a:Ljava/lang/String;
+    iget-object v4, v2, Lvc/k;->a:Ljava/lang/String;
 
     .line 9
-    iget-object v5, v2, Lvc/l;->b:Ljava/lang/String;
+    iget-object v5, v2, Lvc/k;->b:Ljava/lang/String;
 
     .line 10
-    iget-object v6, v2, Lvc/l;->c:Ljava/lang/String;
+    iget-object v6, v2, Lvc/k;->c:Ljava/lang/String;
 
     .line 11
-    iget-object v7, v2, Lvc/l;->d:Ljava/lang/String;
+    iget-object v7, v2, Lvc/k;->d:Ljava/lang/String;
 
     .line 12
-    iget-boolean v8, v2, Lvc/l;->e:Z
+    iget-boolean v8, v2, Lvc/k;->e:Z
 
     .line 13
-    iget-object v9, v2, Lvc/l;->f:Lvc/u;
+    iget-object v9, v2, Lvc/k;->f:Lvc/t;
 
     const/4 v10, 0x0
 
     move-object v3, v11
 
     .line 14
-    invoke-direct/range {v3 .. v10}, Lld/c;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLvc/u;Z)V
+    invoke-direct/range {v3 .. v10}, Lld/c;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLvc/t;Z)V
 
     .line 15
     invoke-virtual {v1, v11}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
@@ -128,13 +128,13 @@
 
     .line 16
     :cond_0
-    sget p1, Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment;->m0:I
+    sget p1, Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment;->n0:I
 
     .line 17
     invoke-virtual {v0, v1}, Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment;->i1(Ljava/util/List;)V
 
     .line 18
-    sget-object p1, Lie/h;->a:Lie/h;
+    sget-object p1, Lie/i;->a:Lie/i;
 
     return-object p1
 .end method

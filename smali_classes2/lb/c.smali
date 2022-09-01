@@ -10,19 +10,19 @@
 
 
 # instance fields
-.field public f:Landroid/content/Context;
+.field public g:Landroid/content/Context;
 
-.field public g:Lcom/helpshift/support/widget/CSATView;
+.field public h:Lcom/helpshift/support/widget/CSATView;
 
-.field public h:Landroid/widget/RatingBar;
+.field public i:Landroid/widget/RatingBar;
 
-.field public i:Landroid/widget/TextView;
+.field public j:Landroid/widget/TextView;
 
-.field public j:Landroid/widget/EditText;
+.field public k:Landroid/widget/EditText;
 
-.field public k:F
+.field public l:F
 
-.field public l:Z
+.field public m:Z
 
 
 # direct methods
@@ -35,10 +35,10 @@
     const/4 v0, 0x0
 
     .line 2
-    iput-boolean v0, p0, Llb/c;->l:Z
+    iput-boolean v0, p0, Llb/c;->m:Z
 
     .line 3
-    iput-object p1, p0, Llb/c;->f:Landroid/content/Context;
+    iput-object p1, p0, Llb/c;->g:Landroid/content/Context;
 
     return-void
 .end method
@@ -49,7 +49,7 @@
     .locals 5
 
     .line 1
-    iget-object v0, p0, Llb/c;->h:Landroid/widget/RatingBar;
+    iget-object v0, p0, Llb/c;->i:Landroid/widget/RatingBar;
 
     invoke-virtual {v0, p1}, Landroid/widget/RatingBar;->setRating(F)V
 
@@ -62,7 +62,7 @@
     if-lez v4, :cond_0
 
     .line 2
-    iget-object v0, p0, Llb/c;->i:Landroid/widget/TextView;
+    iget-object v0, p0, Llb/c;->j:Landroid/widget/TextView;
 
     sget v1, Lcom/helpshift/R$string;->hs__csat_like_message:I
 
@@ -78,7 +78,7 @@
     if-lez v4, :cond_1
 
     .line 3
-    iget-object v0, p0, Llb/c;->i:Landroid/widget/TextView;
+    iget-object v0, p0, Llb/c;->j:Landroid/widget/TextView;
 
     sget v1, Lcom/helpshift/R$string;->hs__csat_liked_rating_message:I
 
@@ -94,7 +94,7 @@
     if-lez v4, :cond_2
 
     .line 4
-    iget-object v0, p0, Llb/c;->i:Landroid/widget/TextView;
+    iget-object v0, p0, Llb/c;->j:Landroid/widget/TextView;
 
     sget v1, Lcom/helpshift/R$string;->hs__csat_ok_rating_message:I
 
@@ -110,7 +110,7 @@
     if-lez v4, :cond_3
 
     .line 5
-    iget-object v0, p0, Llb/c;->i:Landroid/widget/TextView;
+    iget-object v0, p0, Llb/c;->j:Landroid/widget/TextView;
 
     sget v1, Lcom/helpshift/R$string;->hs__csat_disliked_rating_message:I
 
@@ -120,7 +120,7 @@
 
     .line 6
     :cond_3
-    iget-object v0, p0, Llb/c;->i:Landroid/widget/TextView;
+    iget-object v0, p0, Llb/c;->j:Landroid/widget/TextView;
 
     sget v1, Lcom/helpshift/R$string;->hs__csat_dislike_message:I
 
@@ -128,7 +128,7 @@
 
     .line 7
     :goto_0
-    iget-object v0, p0, Llb/c;->f:Landroid/content/Context;
+    iget-object v0, p0, Llb/c;->g:Landroid/content/Context;
 
     .line 8
     invoke-virtual {v0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
@@ -156,7 +156,7 @@
     move-result-object p1
 
     .line 9
-    iget-object v0, p0, Llb/c;->h:Landroid/widget/RatingBar;
+    iget-object v0, p0, Llb/c;->i:Landroid/widget/RatingBar;
 
     invoke-virtual {v0, p1}, Landroid/view/View;->setContentDescription(Ljava/lang/CharSequence;)V
 
@@ -177,15 +177,15 @@
     if-ne p1, v0, :cond_7
 
     .line 3
-    iget-object p1, p0, Llb/c;->g:Lcom/helpshift/support/widget/CSATView;
+    iget-object p1, p0, Llb/c;->h:Lcom/helpshift/support/widget/CSATView;
 
-    iget-object v0, p0, Llb/c;->h:Landroid/widget/RatingBar;
+    iget-object v0, p0, Llb/c;->i:Landroid/widget/RatingBar;
 
     invoke-virtual {v0}, Landroid/widget/RatingBar;->getRating()F
 
     move-result v0
 
-    iget-object v1, p0, Llb/c;->j:Landroid/widget/EditText;
+    iget-object v1, p0, Llb/c;->k:Landroid/widget/EditText;
 
     invoke-virtual {v1}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
 
@@ -196,7 +196,7 @@
     move-result-object v1
 
     .line 4
-    iget-object p1, p1, Lcom/helpshift/support/widget/CSATView;->h:Lcom/helpshift/support/widget/CSATView$a;
+    iget-object p1, p1, Lcom/helpshift/support/widget/CSATView;->i:Lcom/helpshift/support/widget/CSATView$a;
 
     if-eqz p1, :cond_6
 
@@ -208,7 +208,7 @@
     check-cast p1, Lra/s$b;
 
     .line 6
-    iget-object p1, p1, Lra/s$b;->E:Lra/s;
+    iget-object p1, p1, Lra/s$b;->F:Lra/s;
 
     iget-object p1, p1, Lra/s;->a:Lra/s$a;
 
@@ -218,7 +218,7 @@
     check-cast p1, Lqa/p0;
 
     .line 8
-    iget-object p1, p1, Lqa/p0;->e:Lra/x;
+    iget-object p1, p1, Lqa/p0;->e:Lra/w;
 
     if-eqz p1, :cond_6
 
@@ -226,7 +226,7 @@
     check-cast p1, Lqa/t;
 
     .line 10
-    iget-object p1, p1, Lqa/t;->m0:Lf9/i;
+    iget-object p1, p1, Lqa/t;->n0:Lf9/i;
 
     .line 11
     iget-object v2, p1, Lf9/i;->n:Ln8/l;
@@ -304,7 +304,7 @@
     const-string v6, "Helpshift_ConvsatnlVM"
 
     .line 20
-    invoke-static {v6, v4, v5, v5}, Landroidx/savedstate/d;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v6, v4, v5, v5}, Le5/i;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
 
     .line 21
     iget-object v4, p1, Lf9/i;->s:Ln8/c;
@@ -327,7 +327,7 @@
     .line 22
     :cond_3
     :goto_0
-    iput v0, v2, Lq8/d;->u:I
+    iput v0, v2, Lq8/d;->v:I
 
     if-eqz v1, :cond_4
 
@@ -338,7 +338,7 @@
 
     .line 24
     :cond_4
-    iput-object v1, v2, Lq8/d;->v:Ljava/lang/String;
+    iput-object v1, v2, Lq8/d;->w:Ljava/lang/String;
 
     const/4 v0, 0x2
 
@@ -359,9 +359,9 @@
     iget-object v0, v0, La8/f;->j:Ls9/h;
 
     .line 29
-    iget v1, v2, Lq8/d;->u:I
+    iget v1, v2, Lq8/d;->v:I
 
-    iget-object v2, v2, Lq8/d;->v:Ljava/lang/String;
+    iget-object v2, v2, Lq8/d;->w:Ljava/lang/String;
 
     .line 30
     iget-object v3, v0, Ls9/h;->b:Ls9/b;
@@ -387,7 +387,7 @@
     const/4 p1, 0x1
 
     .line 33
-    iput-boolean p1, p0, Llb/c;->l:Z
+    iput-boolean p1, p0, Llb/c;->m:Z
 
     .line 34
     invoke-virtual {p0}, Landroid/app/Dialog;->dismiss()V
@@ -427,14 +427,14 @@
 
     check-cast p1, Landroid/widget/RatingBar;
 
-    iput-object p1, p0, Llb/c;->h:Landroid/widget/RatingBar;
+    iput-object p1, p0, Llb/c;->i:Landroid/widget/RatingBar;
 
     .line 7
     invoke-virtual {p0}, Landroid/app/Dialog;->getContext()Landroid/content/Context;
 
     move-result-object p1
 
-    iget-object v0, p0, Llb/c;->h:Landroid/widget/RatingBar;
+    iget-object v0, p0, Llb/c;->i:Landroid/widget/RatingBar;
 
     invoke-virtual {v0}, Landroid/widget/ProgressBar;->getProgressDrawable()Landroid/graphics/drawable/Drawable;
 
@@ -443,7 +443,7 @@
     invoke-static {p1, v0}, Lib/g;->e(Landroid/content/Context;Landroid/graphics/drawable/Drawable;)V
 
     .line 8
-    iget-object p1, p0, Llb/c;->h:Landroid/widget/RatingBar;
+    iget-object p1, p0, Llb/c;->i:Landroid/widget/RatingBar;
 
     invoke-virtual {p1, p0}, Landroid/widget/RatingBar;->setOnRatingBarChangeListener(Landroid/widget/RatingBar$OnRatingBarChangeListener;)V
 
@@ -456,7 +456,7 @@
 
     check-cast p1, Landroid/widget/TextView;
 
-    iput-object p1, p0, Llb/c;->i:Landroid/widget/TextView;
+    iput-object p1, p0, Llb/c;->j:Landroid/widget/TextView;
 
     .line 10
     sget p1, Lcom/helpshift/R$id;->additional_feedback:I
@@ -467,7 +467,7 @@
 
     check-cast p1, Landroid/widget/EditText;
 
-    iput-object p1, p0, Llb/c;->j:Landroid/widget/EditText;
+    iput-object p1, p0, Llb/c;->k:Landroid/widget/EditText;
 
     .line 11
     sget p1, Lcom/helpshift/R$id;->submit:I
@@ -488,12 +488,12 @@
     .locals 1
 
     .line 1
-    iget-boolean p1, p0, Llb/c;->l:Z
+    iget-boolean p1, p0, Llb/c;->m:Z
 
     if-eqz p1, :cond_0
 
     .line 2
-    iget-object p1, p0, Llb/c;->g:Lcom/helpshift/support/widget/CSATView;
+    iget-object p1, p0, Llb/c;->h:Lcom/helpshift/support/widget/CSATView;
 
     const/16 v0, 0x8
 
@@ -503,13 +503,13 @@
     const/4 v0, 0x0
 
     .line 4
-    iput-object v0, p1, Lcom/helpshift/support/widget/CSATView;->f:Llb/c;
+    iput-object v0, p1, Lcom/helpshift/support/widget/CSATView;->g:Llb/c;
 
     goto :goto_0
 
     .line 5
     :cond_0
-    iget-object p1, p0, Llb/c;->g:Lcom/helpshift/support/widget/CSATView;
+    iget-object p1, p0, Llb/c;->h:Lcom/helpshift/support/widget/CSATView;
 
     invoke-virtual {p1}, Lcom/helpshift/support/widget/CSATView;->getRatingBar()Landroid/widget/RatingBar;
 
@@ -520,10 +520,10 @@
     invoke-virtual {p1, v0}, Landroid/widget/RatingBar;->setRating(F)V
 
     .line 6
-    iget-object p1, p0, Llb/c;->g:Lcom/helpshift/support/widget/CSATView;
+    iget-object p1, p0, Llb/c;->h:Lcom/helpshift/support/widget/CSATView;
 
     .line 7
-    iget-object p1, p1, Lcom/helpshift/support/widget/CSATView;->h:Lcom/helpshift/support/widget/CSATView$a;
+    iget-object p1, p1, Lcom/helpshift/support/widget/CSATView;->i:Lcom/helpshift/support/widget/CSATView$a;
 
     if-eqz p1, :cond_1
 
@@ -531,7 +531,7 @@
     check-cast p1, Lra/s$b;
 
     .line 9
-    iget-object p1, p1, Lra/s$b;->E:Lra/s;
+    iget-object p1, p1, Lra/s$b;->F:Lra/s;
 
     iget-object p1, p1, Lra/s;->a:Lra/s$a;
 
@@ -541,7 +541,7 @@
     check-cast p1, Lqa/p0;
 
     .line 11
-    iget-object p1, p1, Lqa/p0;->e:Lra/x;
+    iget-object p1, p1, Lqa/p0;->e:Lra/w;
 
     if-eqz p1, :cond_1
 
@@ -549,7 +549,7 @@
     check-cast p1, Lqa/t;
 
     .line 13
-    iget-object p1, p1, Lqa/t;->m0:Lf9/i;
+    iget-object p1, p1, Lqa/t;->n0:Lf9/i;
 
     const/16 v0, 0x14
 
@@ -585,15 +585,15 @@
     .locals 1
 
     .line 1
-    iget p1, p0, Llb/c;->k:F
+    iget p1, p0, Llb/c;->l:F
 
     invoke-virtual {p0, p1}, Llb/c;->a(F)V
 
     .line 2
-    iget-object p1, p0, Llb/c;->g:Lcom/helpshift/support/widget/CSATView;
+    iget-object p1, p0, Llb/c;->h:Lcom/helpshift/support/widget/CSATView;
 
     .line 3
-    iget-object p1, p1, Lcom/helpshift/support/widget/CSATView;->h:Lcom/helpshift/support/widget/CSATView$a;
+    iget-object p1, p1, Lcom/helpshift/support/widget/CSATView;->i:Lcom/helpshift/support/widget/CSATView$a;
 
     if-eqz p1, :cond_0
 
@@ -601,7 +601,7 @@
     check-cast p1, Lra/s$b;
 
     .line 5
-    iget-object p1, p1, Lra/s$b;->E:Lra/s;
+    iget-object p1, p1, Lra/s$b;->F:Lra/s;
 
     iget-object p1, p1, Lra/s;->a:Lra/s$a;
 
@@ -611,7 +611,7 @@
     check-cast p1, Lqa/p0;
 
     .line 7
-    iget-object p1, p1, Lqa/p0;->e:Lra/x;
+    iget-object p1, p1, Lqa/p0;->e:Lra/w;
 
     if-eqz p1, :cond_0
 
@@ -619,7 +619,7 @@
     check-cast p1, Lqa/t;
 
     .line 9
-    iget-object p1, p1, Lqa/t;->m0:Lf9/i;
+    iget-object p1, p1, Lqa/t;->n0:Lf9/i;
 
     const/16 v0, 0x13
 

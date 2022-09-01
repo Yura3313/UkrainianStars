@@ -40,15 +40,15 @@
     .locals 4
 
     .line 1
-    sget-object v0, Lk3/q;->G:Lk3/k;
+    sget-object v0, Lk3/o;->G:Lk3/i;
 
     .line 2
-    sget-object v1, Lk3/l51;->j:Lk3/l51;
+    sget-object v1, Lk3/o51;->j:Lk3/o51;
 
-    iget-object v1, v1, Lk3/l51;->f:Lk3/n;
+    iget-object v1, v1, Lk3/o51;->f:Lk3/l;
 
     .line 3
-    invoke-virtual {v1, v0}, Lk3/n;->a(Lk3/h;)Ljava/lang/Object;
+    invoke-virtual {v1, v0}, Lk3/l;->a(Lk3/f;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -87,7 +87,7 @@
     const-string v1, "Object.defineProperty(window,\'MRAID_ENV\',{get:function(){return "
 
     .line 9
-    invoke-static {v0, v1}, Lo/g;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v0, v1}, Lcom/supercell/titan/a;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 

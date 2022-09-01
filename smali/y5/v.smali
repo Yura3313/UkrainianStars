@@ -1,103 +1,52 @@
 .class public final Ly5/v;
 .super Ljava/lang/Object;
 
+# interfaces
+.implements Ljava/lang/Runnable;
+
 
 # instance fields
-.field public final a:Landroid/content/Intent;
+.field public final synthetic g:Landroid/content/Intent;
 
-.field public final b:Landroid/content/BroadcastReceiver$PendingResult;
+.field public final synthetic h:Landroid/content/Intent;
 
-.field public c:Z
-
-.field public final d:Ljava/util/concurrent/ScheduledFuture;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/concurrent/ScheduledFuture<",
-            "*>;"
-        }
-    .end annotation
-.end field
+.field public final synthetic i:Lcom/google/firebase/iid/zzb;
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Intent;Landroid/content/BroadcastReceiver$PendingResult;Ljava/util/concurrent/ScheduledExecutorService;)V
-    .locals 2
+.method public constructor <init>(Lcom/google/firebase/iid/zzb;Landroid/content/Intent;Landroid/content/Intent;)V
+    .locals 0
 
-    .line 1
+    iput-object p1, p0, Ly5/v;->i:Lcom/google/firebase/iid/zzb;
+
+    iput-object p2, p0, Ly5/v;->g:Landroid/content/Intent;
+
+    iput-object p3, p0, Ly5/v;->h:Landroid/content/Intent;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    const/4 v0, 0x0
-
-    .line 2
-    iput-boolean v0, p0, Ly5/v;->c:Z
-
-    .line 3
-    iput-object p1, p0, Ly5/v;->a:Landroid/content/Intent;
-
-    .line 4
-    iput-object p2, p0, Ly5/v;->b:Landroid/content/BroadcastReceiver$PendingResult;
-
-    .line 5
-    new-instance p2, Lz3/t0;
-
-    invoke-direct {p2, p0, p1}, Lz3/t0;-><init>(Ly5/v;Landroid/content/Intent;)V
-
-    sget-object p1, Ljava/util/concurrent/TimeUnit;->MILLISECONDS:Ljava/util/concurrent/TimeUnit;
-
-    const-wide/16 v0, 0x2328
-
-    .line 6
-    invoke-interface {p3, p2, v0, v1, p1}, Ljava/util/concurrent/ScheduledExecutorService;->schedule(Ljava/lang/Runnable;JLjava/util/concurrent/TimeUnit;)Ljava/util/concurrent/ScheduledFuture;
-
-    move-result-object p1
-
-    iput-object p1, p0, Ly5/v;->d:Ljava/util/concurrent/ScheduledFuture;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final declared-synchronized a()V
+.method public final run()V
     .locals 2
 
-    monitor-enter p0
-
     .line 1
-    :try_start_0
-    iget-boolean v0, p0, Ly5/v;->c:Z
+    iget-object v0, p0, Ly5/v;->i:Lcom/google/firebase/iid/zzb;
 
-    if-nez v0, :cond_0
+    iget-object v1, p0, Ly5/v;->g:Landroid/content/Intent;
+
+    invoke-virtual {v0, v1}, Lcom/google/firebase/iid/zzb;->zzd(Landroid/content/Intent;)V
 
     .line 2
-    iget-object v0, p0, Ly5/v;->b:Landroid/content/BroadcastReceiver$PendingResult;
+    iget-object v0, p0, Ly5/v;->i:Lcom/google/firebase/iid/zzb;
 
-    invoke-virtual {v0}, Landroid/content/BroadcastReceiver$PendingResult;->finish()V
+    iget-object v1, p0, Ly5/v;->h:Landroid/content/Intent;
 
     .line 3
-    iget-object v0, p0, Ly5/v;->d:Ljava/util/concurrent/ScheduledFuture;
-
-    const/4 v1, 0x0
-
-    invoke-interface {v0, v1}, Ljava/util/concurrent/Future;->cancel(Z)Z
-
-    const/4 v0, 0x1
-
-    .line 4
-    iput-boolean v0, p0, Ly5/v;->c:Z
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    .line 5
-    :cond_0
-    monitor-exit p0
+    invoke-virtual {v0, v1}, Lcom/google/firebase/iid/zzb;->a(Landroid/content/Intent;)V
 
     return-void
-
-    :catchall_0
-    move-exception v0
-
-    monitor-exit p0
-
-    throw v0
 .end method

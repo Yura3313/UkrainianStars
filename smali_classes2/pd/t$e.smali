@@ -52,7 +52,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lre/a<",
-            "Lie/h;",
+            "Lie/i;",
             ">;"
         }
     .end annotation
@@ -64,7 +64,7 @@
             "Lre/l<",
             "-",
             "Ljava/lang/Exception;",
-            "Lie/h;",
+            "Lie/i;",
             ">;"
         }
     .end annotation
@@ -91,7 +91,7 @@
 
     const-string v0, "image"
 
-    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -166,7 +166,7 @@
 
     const-string p2, "ByteBuffer.allocateDirec\u2026eOrder()).asFloatBuffer()"
 
-    invoke-static {p1, p2}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p2}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     iput-object p1, p0, Lpd/t$e;->a:Ljava/nio/FloatBuffer;
 
@@ -325,7 +325,7 @@
     div-float/2addr v7, v8
 
     .line 10
-    iput v7, v6, Lpd/t$e$c;->y:F
+    iput v7, v6, Lpd/t$e$c;->z:F
 
     .line 11
     iget-object v6, p0, Lpd/t$e;->c:Lpd/t$e$c;
@@ -341,7 +341,7 @@
     div-float/2addr v7, v8
 
     .line 12
-    iput v7, v6, Lpd/t$e$c;->z:F
+    iput v7, v6, Lpd/t$e$c;->A:F
 
     .line 13
     iget-object v6, p0, Lpd/t$e;->c:Lpd/t$e$c;
@@ -359,7 +359,7 @@
     sub-float/2addr v7, v2
 
     .line 14
-    iput v7, v6, Lpd/t$e$c;->A:F
+    iput v7, v6, Lpd/t$e$c;->B:F
 
     .line 15
     iget-object v6, p0, Lpd/t$e;->c:Lpd/t$e$c;
@@ -383,19 +383,19 @@
     add-float/2addr v9, v7
 
     .line 16
-    iput v9, v6, Lpd/t$e$c;->B:F
+    iput v9, v6, Lpd/t$e$c;->C:F
 
     .line 17
     iget-object v6, p0, Lpd/t$e;->c:Lpd/t$e$c;
 
     .line 18
-    iput v1, v6, Lpd/t$e$c;->C:F
+    iput v1, v6, Lpd/t$e$c;->D:F
 
     .line 19
     iget-object v1, p0, Lpd/t$e;->c:Lpd/t$e$c;
 
     .line 20
-    iput v0, v1, Lpd/t$e$c;->D:F
+    iput v0, v1, Lpd/t$e$c;->E:F
 
     .line 21
     iget-object v0, p0, Lpd/t$e;->b:Lpd/t$e$b;
@@ -408,7 +408,7 @@
     :try_start_0
     const-string v6, "gameLogoRect"
 
-    invoke-static {v1, v6}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, v6}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 23
     invoke-virtual {v1}, Landroid/graphics/RectF;->width()F
@@ -564,7 +564,7 @@
 
     const-string v0, "glUnused"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     :try_start_0
@@ -654,7 +654,7 @@
 
     move-result-object p1
 
-    check-cast p1, Lie/h;
+    check-cast p1, Lie/i;
 
     :cond_3
     return-void
@@ -724,7 +724,7 @@
 
     move-result-object p1
 
-    check-cast p1, Lie/h;
+    check-cast p1, Lie/i;
 
     :cond_7
     :goto_3
@@ -736,7 +736,7 @@
 
     const-string v0, "glUnused"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     if-lez p2, :cond_0
 
@@ -776,11 +776,11 @@
 
     const-string v0, "glUnused"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string p1, "config"
 
-    invoke-static {p2, p1}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, p1}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/4 p1, 0x2
 
@@ -824,7 +824,7 @@
 
     move-result-object p1
 
-    check-cast p1, Lie/h;
+    check-cast p1, Lie/i;
 
     :cond_0
     :goto_0

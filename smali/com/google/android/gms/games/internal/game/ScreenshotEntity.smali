@@ -26,11 +26,11 @@
 
 
 # instance fields
-.field public final f:Landroid/net/Uri;
-
-.field public final g:I
+.field public final g:Landroid/net/Uri;
 
 .field public final h:I
+
+.field public final i:I
 
 
 # direct methods
@@ -53,13 +53,13 @@
     invoke-direct {p0}, Lcom/google/android/gms/games/internal/zze;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lcom/google/android/gms/games/internal/game/ScreenshotEntity;->f:Landroid/net/Uri;
+    iput-object p1, p0, Lcom/google/android/gms/games/internal/game/ScreenshotEntity;->g:Landroid/net/Uri;
 
     .line 3
-    iput p2, p0, Lcom/google/android/gms/games/internal/game/ScreenshotEntity;->g:I
+    iput p2, p0, Lcom/google/android/gms/games/internal/game/ScreenshotEntity;->h:I
 
     .line 4
-    iput p3, p0, Lcom/google/android/gms/games/internal/game/ScreenshotEntity;->h:I
+    iput p3, p0, Lcom/google/android/gms/games/internal/game/ScreenshotEntity;->i:I
 
     return-void
 .end method
@@ -85,10 +85,10 @@
     check-cast p1, Lcom/google/android/gms/games/internal/game/ScreenshotEntity;
 
     .line 3
-    iget-object v1, p1, Lcom/google/android/gms/games/internal/game/ScreenshotEntity;->f:Landroid/net/Uri;
+    iget-object v1, p1, Lcom/google/android/gms/games/internal/game/ScreenshotEntity;->g:Landroid/net/Uri;
 
     .line 4
-    iget-object v2, p0, Lcom/google/android/gms/games/internal/game/ScreenshotEntity;->f:Landroid/net/Uri;
+    iget-object v2, p0, Lcom/google/android/gms/games/internal/game/ScreenshotEntity;->g:Landroid/net/Uri;
 
     .line 5
     invoke-static {v1, v2}, Ld2/f;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
@@ -98,7 +98,7 @@
     if-eqz v1, :cond_1
 
     .line 6
-    iget v1, p1, Lcom/google/android/gms/games/internal/game/ScreenshotEntity;->g:I
+    iget v1, p1, Lcom/google/android/gms/games/internal/game/ScreenshotEntity;->h:I
 
     .line 7
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -106,7 +106,7 @@
     move-result-object v1
 
     .line 8
-    iget v2, p0, Lcom/google/android/gms/games/internal/game/ScreenshotEntity;->g:I
+    iget v2, p0, Lcom/google/android/gms/games/internal/game/ScreenshotEntity;->h:I
 
     .line 9
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -120,7 +120,7 @@
     if-eqz v1, :cond_1
 
     .line 10
-    iget p1, p1, Lcom/google/android/gms/games/internal/game/ScreenshotEntity;->h:I
+    iget p1, p1, Lcom/google/android/gms/games/internal/game/ScreenshotEntity;->i:I
 
     .line 11
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -128,7 +128,7 @@
     move-result-object p1
 
     .line 12
-    iget v1, p0, Lcom/google/android/gms/games/internal/game/ScreenshotEntity;->h:I
+    iget v1, p0, Lcom/google/android/gms/games/internal/game/ScreenshotEntity;->i:I
 
     .line 13
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -157,14 +157,14 @@
     new-array v0, v0, [Ljava/lang/Object;
 
     .line 1
-    iget-object v1, p0, Lcom/google/android/gms/games/internal/game/ScreenshotEntity;->f:Landroid/net/Uri;
+    iget-object v1, p0, Lcom/google/android/gms/games/internal/game/ScreenshotEntity;->g:Landroid/net/Uri;
 
     const/4 v2, 0x0
 
     aput-object v1, v0, v2
 
     .line 2
-    iget v1, p0, Lcom/google/android/gms/games/internal/game/ScreenshotEntity;->g:I
+    iget v1, p0, Lcom/google/android/gms/games/internal/game/ScreenshotEntity;->h:I
 
     .line 3
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -176,7 +176,7 @@
     aput-object v1, v0, v2
 
     .line 4
-    iget v1, p0, Lcom/google/android/gms/games/internal/game/ScreenshotEntity;->h:I
+    iget v1, p0, Lcom/google/android/gms/games/internal/game/ScreenshotEntity;->i:I
 
     .line 5
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -204,7 +204,7 @@
     invoke-direct {v0, p0}, Ld2/f$a;-><init>(Ljava/lang/Object;)V
 
     .line 2
-    iget-object v1, p0, Lcom/google/android/gms/games/internal/game/ScreenshotEntity;->f:Landroid/net/Uri;
+    iget-object v1, p0, Lcom/google/android/gms/games/internal/game/ScreenshotEntity;->g:Landroid/net/Uri;
 
     const-string v2, "Uri"
 
@@ -212,7 +212,7 @@
     invoke-virtual {v0, v2, v1}, Ld2/f$a;->a(Ljava/lang/String;Ljava/lang/Object;)Ld2/f$a;
 
     .line 4
-    iget v1, p0, Lcom/google/android/gms/games/internal/game/ScreenshotEntity;->g:I
+    iget v1, p0, Lcom/google/android/gms/games/internal/game/ScreenshotEntity;->h:I
 
     .line 5
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -224,7 +224,7 @@
     invoke-virtual {v0, v2, v1}, Ld2/f$a;->a(Ljava/lang/String;Ljava/lang/Object;)Ld2/f$a;
 
     .line 6
-    iget v1, p0, Lcom/google/android/gms/games/internal/game/ScreenshotEntity;->h:I
+    iget v1, p0, Lcom/google/android/gms/games/internal/game/ScreenshotEntity;->i:I
 
     .line 7
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -256,7 +256,7 @@
     const/4 v0, 0x1
 
     .line 2
-    iget-object v1, p0, Lcom/google/android/gms/games/internal/game/ScreenshotEntity;->f:Landroid/net/Uri;
+    iget-object v1, p0, Lcom/google/android/gms/games/internal/game/ScreenshotEntity;->g:Landroid/net/Uri;
 
     const/4 v2, 0x0
 
@@ -266,7 +266,7 @@
     const/4 p2, 0x2
 
     .line 4
-    iget v0, p0, Lcom/google/android/gms/games/internal/game/ScreenshotEntity;->g:I
+    iget v0, p0, Lcom/google/android/gms/games/internal/game/ScreenshotEntity;->h:I
 
     const/4 v3, 0x4
 
@@ -279,7 +279,7 @@
     const/4 v2, 0x3
 
     .line 7
-    iget v4, p0, Lcom/google/android/gms/games/internal/game/ScreenshotEntity;->h:I
+    iget v4, p0, Lcom/google/android/gms/games/internal/game/ScreenshotEntity;->i:I
 
     move-object v1, p1
 

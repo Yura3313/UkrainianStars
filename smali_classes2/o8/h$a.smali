@@ -56,7 +56,7 @@
     .line 1
     iget-object p1, p0, Lo8/h$a;->b:Lo8/h;
 
-    iput-object p2, p1, Lo8/x;->I:Ljava/lang/String;
+    iput-object p2, p1, Lo8/y;->J:Ljava/lang/String;
 
     .line 2
     iget-object p1, p0, Lo8/h$a;->a:Le8/s;
@@ -70,7 +70,7 @@
     iget-object p2, p0, Lo8/h$a;->b:Lo8/h;
 
     .line 3
-    invoke-virtual {p1, p2}, Le8/b;->e(Lo8/y;)V
+    invoke-virtual {p1, p2}, Le8/b;->e(Lo8/z;)V
 
     .line 4
     iget-object p1, p0, Lo8/h$a;->b:Lo8/h;

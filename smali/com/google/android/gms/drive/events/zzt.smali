@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field public final f:I
+.field public final g:I
 
 
 # direct methods
@@ -38,7 +38,7 @@
     invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
 
     .line 2
-    iput p1, p0, Lcom/google/android/gms/drive/events/zzt;->f:I
+    iput p1, p0, Lcom/google/android/gms/drive/events/zzt;->g:I
 
     return-void
 .end method
@@ -56,7 +56,7 @@
     move-result v5
 
     .line 2
-    iget v3, p0, Lcom/google/android/gms/drive/events/zzt;->f:I
+    iget v3, p0, Lcom/google/android/gms/drive/events/zzt;->g:I
 
     const/4 v1, 0x2
 

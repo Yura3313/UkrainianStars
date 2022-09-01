@@ -3,14 +3,14 @@
 
 
 # instance fields
-.field public final synthetic g:La5/l;
+.field public final synthetic h:La5/l;
 
 
 # direct methods
 .method public constructor <init>(La5/l;)V
     .locals 0
 
-    iput-object p1, p0, La5/f;->g:La5/l;
+    iput-object p1, p0, La5/f;->h:La5/l;
 
     invoke-direct {p0}, La5/c;-><init>()V
 
@@ -22,7 +22,7 @@
 .method public final a()V
     .locals 5
 
-    iget-object v0, p0, La5/f;->g:La5/l;
+    iget-object v0, p0, La5/f;->h:La5/l;
 
     .line 1
     iget-object v1, v0, La5/l;->k:Landroid/os/IInterface;
@@ -44,7 +44,7 @@
     invoke-virtual {v0, v3, v4, v2}, La5/b;->a(ILjava/lang/String;[Ljava/lang/Object;)I
 
     .line 4
-    iget-object v0, p0, La5/f;->g:La5/l;
+    iget-object v0, p0, La5/f;->h:La5/l;
 
     .line 5
     iget-object v2, v0, La5/l;->a:Landroid/content/Context;
@@ -55,7 +55,7 @@
     .line 7
     invoke-virtual {v2, v0}, Landroid/content/Context;->unbindService(Landroid/content/ServiceConnection;)V
 
-    iget-object v0, p0, La5/f;->g:La5/l;
+    iget-object v0, p0, La5/f;->h:La5/l;
 
     .line 8
     iput-boolean v1, v0, La5/l;->e:Z

@@ -81,7 +81,7 @@
     invoke-direct {p0}, Lcom/google/protobuf/GeneratedMessageLite;-><init>()V
 
     .line 2
-    sget-object v0, Lcom/google/protobuf/k0;->g:Lcom/google/protobuf/k0;
+    sget-object v0, Lcom/google/protobuf/k0;->h:Lcom/google/protobuf/k0;
 
     .line 3
     iput-object v0, p0, Lcom/google/protobuf/Struct;->fields_:Lcom/google/protobuf/k0;
@@ -167,7 +167,7 @@
     iget-object v0, p0, Lcom/google/protobuf/Struct;->fields_:Lcom/google/protobuf/k0;
 
     .line 2
-    iget-boolean v1, v0, Lcom/google/protobuf/k0;->f:Z
+    iget-boolean v1, v0, Lcom/google/protobuf/k0;->g:Z
 
     if-nez v1, :cond_0
 

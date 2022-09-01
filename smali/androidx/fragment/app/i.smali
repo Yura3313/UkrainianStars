@@ -7,14 +7,14 @@
 
 
 # instance fields
-.field public final synthetic f:Ljava/util/ArrayList;
+.field public final synthetic g:Ljava/util/ArrayList;
 
 
 # direct methods
 .method public constructor <init>(Ljava/util/ArrayList;)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/fragment/app/i;->f:Ljava/util/ArrayList;
+    iput-object p1, p0, Landroidx/fragment/app/i;->g:Ljava/util/ArrayList;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -26,7 +26,7 @@
 .method public final run()V
     .locals 2
 
-    iget-object v0, p0, Landroidx/fragment/app/i;->f:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroidx/fragment/app/i;->g:Ljava/util/ArrayList;
 
     const/4 v1, 0x4
 

@@ -23,8 +23,6 @@
 
 
 # static fields
-.field public static final enum h:Lic/b$a;
-
 .field public static final enum i:Lic/b$a;
 
 .field public static final enum j:Lic/b$a;
@@ -37,13 +35,15 @@
 
 .field public static final enum n:Lic/b$a;
 
-.field public static final synthetic o:[Lic/b$a;
+.field public static final enum o:Lic/b$a;
+
+.field public static final synthetic p:[Lic/b$a;
 
 
 # instance fields
-.field public f:Ljava/lang/String;
-
 .field public g:Ljava/lang/String;
+
+.field public h:Ljava/lang/String;
 
 
 # direct methods
@@ -61,7 +61,7 @@
 
     invoke-direct {v0, v1, v2, v3}, Lic/b$a;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lic/b$a;->h:Lic/b$a;
+    sput-object v0, Lic/b$a;->i:Lic/b$a;
 
     new-instance v1, Lic/b$a;
 
@@ -73,7 +73,7 @@
 
     invoke-direct {v1, v3, v4, v5}, Lic/b$a;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v1, Lic/b$a;->i:Lic/b$a;
+    sput-object v1, Lic/b$a;->j:Lic/b$a;
 
     new-instance v3, Lic/b$a;
 
@@ -85,7 +85,7 @@
 
     invoke-direct {v3, v5, v6, v7}, Lic/b$a;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v3, Lic/b$a;->j:Lic/b$a;
+    sput-object v3, Lic/b$a;->k:Lic/b$a;
 
     new-instance v5, Lic/b$a;
 
@@ -97,7 +97,7 @@
 
     invoke-direct {v5, v7, v8, v9}, Lic/b$a;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v5, Lic/b$a;->k:Lic/b$a;
+    sput-object v5, Lic/b$a;->l:Lic/b$a;
 
     new-instance v7, Lic/b$a;
 
@@ -109,7 +109,7 @@
 
     invoke-direct {v7, v9, v10, v11}, Lic/b$a;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v7, Lic/b$a;->l:Lic/b$a;
+    sput-object v7, Lic/b$a;->m:Lic/b$a;
 
     new-instance v9, Lic/b$a;
 
@@ -121,7 +121,7 @@
 
     invoke-direct {v9, v11, v12, v13}, Lic/b$a;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v9, Lic/b$a;->m:Lic/b$a;
+    sput-object v9, Lic/b$a;->n:Lic/b$a;
 
     new-instance v11, Lic/b$a;
 
@@ -133,7 +133,7 @@
 
     invoke-direct {v11, v13, v14, v15}, Lic/b$a;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v11, Lic/b$a;->n:Lic/b$a;
+    sput-object v11, Lic/b$a;->o:Lic/b$a;
 
     const/4 v13, 0x7
 
@@ -154,7 +154,7 @@
     aput-object v11, v13, v14
 
     .line 2
-    sput-object v13, Lic/b$a;->o:[Lic/b$a;
+    sput-object v13, Lic/b$a;->p:[Lic/b$a;
 
     return-void
 .end method
@@ -173,17 +173,17 @@
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 2
-    iput-object p3, p0, Lic/b$a;->f:Ljava/lang/String;
+    iput-object p3, p0, Lic/b$a;->g:Ljava/lang/String;
 
     const-string p1, "://"
 
     .line 3
-    invoke-static {p3, p1}, Lcom/google/android/gms/ads/e;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p3, p1}, Lf/g;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 
     .line 4
-    iput-object p1, p0, Lic/b$a;->g:Ljava/lang/String;
+    iput-object p1, p0, Lic/b$a;->h:Ljava/lang/String;
 
     return-void
 .end method
@@ -217,7 +217,7 @@
 
     move-result-object v4
 
-    iget-object v5, v3, Lic/b$a;->g:Ljava/lang/String;
+    iget-object v5, v3, Lic/b$a;->h:Ljava/lang/String;
 
     invoke-virtual {v4, v5}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 
@@ -234,7 +234,7 @@
 
     .line 4
     :cond_1
-    sget-object p0, Lic/b$a;->n:Lic/b$a;
+    sget-object p0, Lic/b$a;->o:Lic/b$a;
 
     return-object p0
 .end method
@@ -256,7 +256,7 @@
 .method public static values()[Lic/b$a;
     .locals 1
 
-    sget-object v0, Lic/b$a;->o:[Lic/b$a;
+    sget-object v0, Lic/b$a;->p:[Lic/b$a;
 
     invoke-virtual {v0}, [Lic/b$a;->clone()Ljava/lang/Object;
 
@@ -279,7 +279,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lic/b$a;->g:Ljava/lang/String;
+    iget-object v1, p0, Lic/b$a;->h:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
 
@@ -288,7 +288,7 @@
     if-eqz v0, :cond_0
 
     .line 2
-    iget-object v0, p0, Lic/b$a;->g:Ljava/lang/String;
+    iget-object v0, p0, Lic/b$a;->h:Ljava/lang/String;
 
     invoke-virtual {v0}, Ljava/lang/String;->length()I
 
@@ -314,7 +314,7 @@
 
     const/4 p1, 0x1
 
-    iget-object v2, p0, Lic/b$a;->f:Ljava/lang/String;
+    iget-object v2, p0, Lic/b$a;->g:Ljava/lang/String;
 
     aput-object v2, v1, p1
 
@@ -337,10 +337,10 @@
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    iget-object v1, p0, Lic/b$a;->g:Ljava/lang/String;
+    iget-object v1, p0, Lic/b$a;->h:Ljava/lang/String;
 
     .line 2
-    invoke-static {v0, v1, p1}, Landroid/support/v4/media/b;->b(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, v1, p1}, Landroid/support/v4/media/b;->a(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 

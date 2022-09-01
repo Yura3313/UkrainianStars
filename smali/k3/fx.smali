@@ -7,48 +7,24 @@
 
 
 # instance fields
-.field public final a:Lk3/em0;
+.field public final a:Lk3/tg0;
 
-.field public final b:Lk3/em0;
+.field public final b:Lk3/kg0;
 
-.field public final c:Lk3/em0;
-
-.field public final d:Lk3/em0;
-
-.field public final e:Lk3/em0;
-
-.field public final f:Lorg/json/JSONObject;
-
-.field public final g:Lk3/em0;
-
-.field public final h:Lk3/em0;
-
-.field public final i:Lk3/em0;
+.field public final c:Lorg/json/JSONObject;
 
 
 # direct methods
-.method public constructor <init>(Lk3/ex;Lk3/em0;Lk3/em0;Lk3/em0;Lk3/em0;Lk3/em0;Lorg/json/JSONObject;Lk3/em0;Lk3/em0;Lk3/em0;)V
+.method public constructor <init>(Lk3/dx;Lk3/tg0;Lk3/kg0;Lorg/json/JSONObject;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p2, p0, Lk3/fx;->a:Lk3/em0;
+    iput-object p2, p0, Lk3/fx;->a:Lk3/tg0;
 
-    iput-object p3, p0, Lk3/fx;->b:Lk3/em0;
+    iput-object p3, p0, Lk3/fx;->b:Lk3/kg0;
 
-    iput-object p4, p0, Lk3/fx;->c:Lk3/em0;
-
-    iput-object p5, p0, Lk3/fx;->d:Lk3/em0;
-
-    iput-object p6, p0, Lk3/fx;->e:Lk3/em0;
-
-    iput-object p7, p0, Lk3/fx;->f:Lorg/json/JSONObject;
-
-    iput-object p8, p0, Lk3/fx;->g:Lk3/em0;
-
-    iput-object p9, p0, Lk3/fx;->h:Lk3/em0;
-
-    iput-object p10, p0, Lk3/fx;->i:Lk3/em0;
+    iput-object p4, p0, Lk3/fx;->c:Lorg/json/JSONObject;
 
     return-void
 .end method
@@ -56,508 +32,366 @@
 
 # virtual methods
 .method public final call()Ljava/lang/Object;
-    .locals 9
+    .locals 10
 
     .line 1
-    iget-object v0, p0, Lk3/fx;->a:Lk3/em0;
+    iget-object v0, p0, Lk3/fx;->a:Lk3/tg0;
 
-    iget-object v1, p0, Lk3/fx;->b:Lk3/em0;
+    iget-object v1, p0, Lk3/fx;->b:Lk3/kg0;
 
-    iget-object v2, p0, Lk3/fx;->c:Lk3/em0;
-
-    iget-object v3, p0, Lk3/fx;->d:Lk3/em0;
-
-    iget-object v4, p0, Lk3/fx;->e:Lk3/em0;
-
-    iget-object v5, p0, Lk3/fx;->f:Lorg/json/JSONObject;
-
-    iget-object v6, p0, Lk3/fx;->g:Lk3/em0;
-
-    iget-object v7, p0, Lk3/fx;->h:Lk3/em0;
-
-    iget-object v8, p0, Lk3/fx;->i:Lk3/em0;
+    iget-object v2, p0, Lk3/fx;->c:Lorg/json/JSONObject;
 
     .line 2
-    invoke-interface {v0}, Ljava/util/concurrent/Future;->get()Ljava/lang/Object;
+    new-instance v3, Lk3/rv;
 
-    move-result-object v0
+    invoke-direct {v3}, Lk3/rv;-><init>()V
 
-    check-cast v0, Lk3/sv;
+    const-string v4, "template_id"
+
+    const/4 v5, -0x1
 
     .line 3
-    invoke-interface {v1}, Ljava/util/concurrent/Future;->get()Ljava/lang/Object;
-
-    move-result-object v1
-
-    check-cast v1, Ljava/util/List;
-
-    .line 4
-    monitor-enter v0
-
-    .line 5
-    :try_start_0
-    iput-object v1, v0, Lk3/sv;->e:Ljava/util/List;
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_a
-
-    .line 6
-    monitor-exit v0
-
-    .line 7
-    invoke-interface {v2}, Ljava/util/concurrent/Future;->get()Ljava/lang/Object;
-
-    move-result-object v1
-
-    check-cast v1, Lcom/google/android/gms/internal/ads/zzadw;
-
-    .line 8
-    monitor-enter v0
-
-    .line 9
-    :try_start_1
-    iput-object v1, v0, Lk3/sv;->o:Lcom/google/android/gms/internal/ads/zzadw;
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_9
-
-    .line 10
-    monitor-exit v0
-
-    .line 11
-    invoke-interface {v3}, Ljava/util/concurrent/Future;->get()Ljava/lang/Object;
-
-    move-result-object v1
-
-    check-cast v1, Lcom/google/android/gms/internal/ads/zzadw;
-
-    .line 12
-    monitor-enter v0
-
-    .line 13
-    :try_start_2
-    iput-object v1, v0, Lk3/sv;->p:Lcom/google/android/gms/internal/ads/zzadw;
-    :try_end_2
-    .catchall {:try_start_2 .. :try_end_2} :catchall_8
-
-    .line 14
-    monitor-exit v0
-
-    .line 15
-    invoke-interface {v4}, Ljava/util/concurrent/Future;->get()Ljava/lang/Object;
-
-    move-result-object v1
-
-    check-cast v1, Lcom/google/android/gms/internal/ads/zzado;
-
-    .line 16
-    monitor-enter v0
-
-    .line 17
-    :try_start_3
-    iput-object v1, v0, Lk3/sv;->c:Lcom/google/android/gms/internal/ads/zzado;
-    :try_end_3
-    .catchall {:try_start_3 .. :try_end_3} :catchall_7
-
-    .line 18
-    monitor-exit v0
-
-    const-string v1, "mute"
-
-    .line 19
-    invoke-virtual {v5, v1}, Lorg/json/JSONObject;->optJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
-
-    move-result-object v1
-
-    if-nez v1, :cond_0
-
-    .line 20
-    invoke-static {}, Ljava/util/Collections;->emptyList()Ljava/util/List;
-
-    move-result-object v1
-
-    goto :goto_2
-
-    :cond_0
-    const-string v2, "reasons"
-
-    .line 21
-    invoke-virtual {v1, v2}, Lorg/json/JSONObject;->optJSONArray(Ljava/lang/String;)Lorg/json/JSONArray;
-
-    move-result-object v1
-
-    if-eqz v1, :cond_4
-
-    .line 22
-    invoke-virtual {v1}, Lorg/json/JSONArray;->length()I
-
-    move-result v2
-
-    if-gtz v2, :cond_1
-
-    goto :goto_1
-
-    .line 23
-    :cond_1
-    new-instance v2, Ljava/util/ArrayList;
-
-    invoke-direct {v2}, Ljava/util/ArrayList;-><init>()V
-
-    const/4 v3, 0x0
-
-    .line 24
-    :goto_0
-    invoke-virtual {v1}, Lorg/json/JSONArray;->length()I
+    invoke-virtual {v2, v4, v5}, Lorg/json/JSONObject;->optInt(Ljava/lang/String;I)I
 
     move-result v4
 
-    if-ge v3, v4, :cond_3
+    .line 4
+    monitor-enter v3
 
-    .line 25
-    invoke-virtual {v1, v3}, Lorg/json/JSONArray;->optJSONObject(I)Lorg/json/JSONObject;
+    .line 5
+    :try_start_0
+    iput v4, v3, Lk3/rv;->a:I
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_3
+
+    .line 6
+    monitor-exit v3
+
+    const-string v4, "custom_template_id"
+
+    .line 7
+    invoke-virtual {v2, v4}, Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v4
 
-    invoke-static {v4}, Lk3/hx;->f(Lorg/json/JSONObject;)Lcom/google/android/gms/internal/ads/zzzc;
+    .line 8
+    monitor-enter v3
+
+    .line 9
+    :try_start_1
+    iput-object v4, v3, Lk3/rv;->q:Ljava/lang/String;
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_2
+
+    .line 10
+    monitor-exit v3
+
+    const-string v4, "omid_settings"
+
+    .line 11
+    invoke-virtual {v2, v4}, Lorg/json/JSONObject;->optJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
+
+    move-result-object v4
+
+    const/4 v5, 0x0
+
+    if-eqz v4, :cond_0
+
+    const-string v6, "omid_partner_name"
+
+    .line 12
+    invoke-virtual {v4, v6}, Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v4
+
+    goto :goto_0
+
+    :cond_0
+    move-object v4, v5
+
+    .line 13
+    :goto_0
+    monitor-enter v3
+
+    .line 14
+    :try_start_2
+    iput-object v4, v3, Lk3/rv;->u:Ljava/lang/String;
+    :try_end_2
+    .catchall {:try_start_2 .. :try_end_2} :catchall_1
+
+    .line 15
+    monitor-exit v3
+
+    .line 16
+    iget-object v0, v0, Lk3/tg0;->a:Lk3/ny0;
+
+    iget-object v0, v0, Lk3/ny0;->g:Ljava/lang/Object;
+
+    check-cast v0, Lk3/vg0;
+
+    .line 17
+    iget-object v4, v0, Lk3/vg0;->g:Ljava/util/ArrayList;
+
+    invoke-virtual {v3}, Lk3/rv;->k()I
+
+    move-result v6
+
+    invoke-static {v6}, Ljava/lang/Integer;->toString(I)Ljava/lang/String;
+
+    move-result-object v6
+
+    invoke-virtual {v4, v6}, Ljava/util/ArrayList;->contains(Ljava/lang/Object;)Z
+
+    move-result v4
+
+    const/4 v6, 0x1
+
+    if-eqz v4, :cond_6
+
+    .line 18
+    invoke-virtual {v3}, Lk3/rv;->k()I
+
+    move-result v4
+
+    const/4 v7, 0x3
+
+    if-ne v4, v7, :cond_3
+
+    .line 19
+    invoke-virtual {v3}, Lk3/rv;->c()Ljava/lang/String;
 
     move-result-object v4
 
     if-eqz v4, :cond_2
 
-    .line 26
-    invoke-virtual {v2, v4}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    .line 20
+    iget-object v0, v0, Lk3/vg0;->h:Ljava/util/ArrayList;
 
+    invoke-virtual {v3}, Lk3/rv;->c()Ljava/lang/String;
+
+    move-result-object v4
+
+    invoke-virtual {v0, v4}, Ljava/util/ArrayList;->contains(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    goto :goto_1
+
+    .line 21
+    :cond_1
+    new-instance v0, Lcom/google/android/gms/internal/ads/zzcuh;
+
+    const-string v1, "Unexpected custom template id in the response."
+
+    invoke-direct {v0, v6, v1}, Lcom/google/android/gms/internal/ads/zzcuh;-><init>(ILjava/lang/String;)V
+
+    throw v0
+
+    .line 22
     :cond_2
-    add-int/lit8 v3, v3, 0x1
+    new-instance v0, Lcom/google/android/gms/internal/ads/zzcuh;
 
-    goto :goto_0
+    const-string v1, "No custom template id for custom template ad response."
+
+    invoke-direct {v0, v6, v1}, Lcom/google/android/gms/internal/ads/zzcuh;-><init>(ILjava/lang/String;)V
+
+    throw v0
 
     :cond_3
-    move-object v1, v2
+    :goto_1
+    const-string v0, "rating"
+
+    const-wide/high16 v8, -0x4010000000000000L    # -1.0
+
+    .line 23
+    invoke-virtual {v2, v0, v8, v9}, Lorg/json/JSONObject;->optDouble(Ljava/lang/String;D)D
+
+    move-result-wide v8
+
+    .line 24
+    monitor-enter v3
+
+    .line 25
+    :try_start_3
+    iput-wide v8, v3, Lk3/rv;->n:D
+    :try_end_3
+    .catchall {:try_start_3 .. :try_end_3} :catchall_0
+
+    .line 26
+    monitor-exit v3
+
+    const-string v0, "headline"
+
+    const-string v4, "headline"
+
+    .line 27
+    invoke-virtual {v2, v4, v5}, Lorg/json/JSONObject;->optString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v4
+
+    iget-boolean v1, v1, Lk3/kg0;->G:Z
+
+    if-eqz v1, :cond_5
+
+    .line 28
+    sget-object v1, Li1/p;->B:Li1/p;
+
+    iget-object v6, v1, Li1/p;->c:Lk3/bb;
+
+    .line 29
+    iget-object v1, v1, Li1/p;->g:Lk3/ia;
+
+    .line 30
+    invoke-virtual {v1}, Lk3/ia;->a()Landroid/content/res/Resources;
+
+    move-result-object v1
+
+    if-eqz v1, :cond_4
+
+    .line 31
+    sget v6, Lcom/google/android/gms/ads/impl/R$string;->s7:I
+
+    invoke-virtual {v1, v6}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+
+    move-result-object v1
 
     goto :goto_2
 
-    .line 27
     :cond_4
-    :goto_1
-    invoke-static {}, Ljava/util/Collections;->emptyList()Ljava/util/List;
-
-    move-result-object v1
-
-    .line 28
-    :goto_2
-    monitor-enter v0
-
-    .line 29
-    :try_start_4
-    iput-object v1, v0, Lk3/sv;->f:Ljava/util/List;
-    :try_end_4
-    .catchall {:try_start_4 .. :try_end_4} :catchall_6
-
-    .line 30
-    monitor-exit v0
-
-    const-string v1, "mute"
-
-    .line 31
-    invoke-virtual {v5, v1}, Lorg/json/JSONObject;->optJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
-
-    move-result-object v1
-
-    const/4 v2, 0x0
-
-    if-nez v1, :cond_5
-
-    goto :goto_3
-
-    :cond_5
-    const-string v3, "default_reason"
+    const-string v1, "Test Ad"
 
     .line 32
-    invoke-virtual {v1, v3}, Lorg/json/JSONObject;->optJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
+    :goto_2
+    invoke-static {v1, v7}, La1/e;->b(Ljava/lang/String;I)I
 
-    move-result-object v1
+    move-result v6
 
-    if-nez v1, :cond_6
+    invoke-static {v4, v6}, La1/e;->b(Ljava/lang/String;I)I
 
-    goto :goto_3
+    move-result v6
+
+    const-string v7, " : "
 
     .line 33
-    :cond_6
-    invoke-static {v1}, Lk3/hx;->f(Lorg/json/JSONObject;)Lcom/google/android/gms/internal/ads/zzzc;
+    invoke-static {v6, v1, v7, v4}, Li1/j;->a(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
-    move-result-object v2
+    move-result-object v4
 
     .line 34
-    :goto_3
-    monitor-enter v0
+    :cond_5
+    invoke-virtual {v3, v0, v4}, Lk3/rv;->u(Ljava/lang/String;Ljava/lang/String;)V
+
+    const-string v0, "body"
+
+    const-string v1, "body"
 
     .line 35
-    :try_start_5
-    iput-object v2, v0, Lk3/sv;->g:Lcom/google/android/gms/internal/ads/zzzc;
-    :try_end_5
-    .catchall {:try_start_5 .. :try_end_5} :catchall_5
+    invoke-virtual {v2, v1, v5}, Lorg/json/JSONObject;->optString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v3, v0, v1}, Lk3/rv;->u(Ljava/lang/String;Ljava/lang/String;)V
+
+    const-string v0, "call_to_action"
+
+    const-string v1, "call_to_action"
 
     .line 36
-    monitor-exit v0
+    invoke-virtual {v2, v1, v5}, Lorg/json/JSONObject;->optString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v3, v0, v1}, Lk3/rv;->u(Ljava/lang/String;Ljava/lang/String;)V
+
+    const-string v0, "store"
+
+    const-string v1, "store"
 
     .line 37
-    invoke-interface {v6}, Ljava/util/concurrent/Future;->get()Ljava/lang/Object;
+    invoke-virtual {v2, v1, v5}, Lorg/json/JSONObject;->optString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
-    check-cast v1, Lk3/gh;
+    invoke-virtual {v3, v0, v1}, Lk3/rv;->u(Ljava/lang/String;Ljava/lang/String;)V
 
-    if-eqz v1, :cond_7
+    const-string v0, "price"
+
+    const-string v1, "price"
 
     .line 38
-    monitor-enter v0
+    invoke-virtual {v2, v1, v5}, Lorg/json/JSONObject;->optString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v3, v0, v1}, Lk3/rv;->u(Ljava/lang/String;Ljava/lang/String;)V
+
+    const-string v0, "advertiser"
+
+    const-string v1, "advertiser"
 
     .line 39
-    :try_start_6
-    iput-object v1, v0, Lk3/sv;->i:Lk3/gh;
-    :try_end_6
-    .catchall {:try_start_6 .. :try_end_6} :catchall_2
-
-    .line 40
-    monitor-exit v0
-
-    .line 41
-    invoke-interface {v1}, Lk3/gh;->getView()Landroid/view/View;
-
-    move-result-object v2
-
-    .line 42
-    monitor-enter v0
-
-    .line 43
-    :try_start_7
-    iput-object v2, v0, Lk3/sv;->l:Landroid/view/View;
-    :try_end_7
-    .catchall {:try_start_7 .. :try_end_7} :catchall_1
-
-    .line 44
-    monitor-exit v0
-
-    .line 45
-    invoke-interface {v1}, Lk3/gh;->h()Lcom/google/android/gms/internal/ads/zzbgk;
+    invoke-virtual {v2, v1, v5}, Lorg/json/JSONObject;->optString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
-    .line 46
-    monitor-enter v0
+    invoke-virtual {v3, v0, v1}, Lk3/rv;->u(Ljava/lang/String;Ljava/lang/String;)V
 
-    .line 47
-    :try_start_8
-    iput-object v1, v0, Lk3/sv;->b:Lcom/google/android/gms/internal/ads/zzyg;
-    :try_end_8
-    .catchall {:try_start_8 .. :try_end_8} :catchall_0
-
-    .line 48
-    monitor-exit v0
-
-    goto :goto_4
+    return-object v3
 
     :catchall_0
-    move-exception v1
+    move-exception v0
 
-    monitor-exit v0
+    .line 40
+    monitor-exit v3
 
-    throw v1
+    throw v0
+
+    .line 41
+    :cond_6
+    new-instance v0, Lcom/google/android/gms/internal/ads/zzcuh;
+
+    .line 42
+    invoke-virtual {v3}, Lk3/rv;->k()I
+
+    move-result v1
+
+    const/16 v2, 0x20
+
+    const-string v3, "Invalid template ID: "
+
+    .line 43
+    invoke-static {v2, v3, v1}, Lcom/google/android/gms/ads/f;->a(ILjava/lang/String;I)Ljava/lang/String;
+
+    move-result-object v1
+
+    .line 44
+    invoke-direct {v0, v6, v1}, Lcom/google/android/gms/internal/ads/zzcuh;-><init>(ILjava/lang/String;)V
+
+    throw v0
 
     :catchall_1
-    move-exception v1
+    move-exception v0
 
-    .line 49
-    monitor-exit v0
+    .line 45
+    monitor-exit v3
 
-    throw v1
+    throw v0
 
     :catchall_2
-    move-exception v1
+    move-exception v0
 
-    .line 50
-    monitor-exit v0
+    .line 46
+    monitor-exit v3
 
-    throw v1
-
-    .line 51
-    :cond_7
-    :goto_4
-    invoke-interface {v7}, Ljava/util/concurrent/Future;->get()Ljava/lang/Object;
-
-    move-result-object v1
-
-    check-cast v1, Lk3/gh;
-
-    if-eqz v1, :cond_8
-
-    .line 52
-    monitor-enter v0
-
-    .line 53
-    :try_start_9
-    iput-object v1, v0, Lk3/sv;->j:Lk3/gh;
-    :try_end_9
-    .catchall {:try_start_9 .. :try_end_9} :catchall_3
-
-    .line 54
-    monitor-exit v0
-
-    goto :goto_5
+    throw v0
 
     :catchall_3
-    move-exception v1
+    move-exception v0
 
-    monitor-exit v0
+    .line 47
+    monitor-exit v3
 
-    throw v1
-
-    .line 55
-    :cond_8
-    :goto_5
-    invoke-interface {v8}, Ljava/util/concurrent/Future;->get()Ljava/lang/Object;
-
-    move-result-object v1
-
-    check-cast v1, Ljava/util/List;
-
-    invoke-interface {v1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
-
-    move-result-object v1
-
-    :goto_6
-    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v2
-
-    if-eqz v2, :cond_c
-
-    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v2
-
-    check-cast v2, Lk3/ux;
-
-    .line 56
-    iget v3, v2, Lk3/ux;->a:I
-
-    const/4 v4, 0x1
-
-    if-eq v3, v4, :cond_b
-
-    const/4 v4, 0x2
-
-    if-eq v3, v4, :cond_9
-
-    goto :goto_6
-
-    .line 57
-    :cond_9
-    iget-object v3, v2, Lk3/ux;->b:Ljava/lang/String;
-
-    iget-object v2, v2, Lk3/ux;->d:Lcom/google/android/gms/internal/ads/zzadi;
-
-    .line 58
-    monitor-enter v0
-
-    if-nez v2, :cond_a
-
-    .line 59
-    :try_start_a
-    iget-object v2, v0, Lk3/sv;->r:Lm/g;
-
-    invoke-virtual {v2, v3}, Lm/g;->remove(Ljava/lang/Object;)Ljava/lang/Object;
-    :try_end_a
-    .catchall {:try_start_a .. :try_end_a} :catchall_4
-
-    monitor-exit v0
-
-    goto :goto_6
-
-    .line 60
-    :cond_a
-    :try_start_b
-    iget-object v4, v0, Lk3/sv;->r:Lm/g;
-
-    invoke-virtual {v4, v3, v2}, Lm/g;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-    :try_end_b
-    .catchall {:try_start_b .. :try_end_b} :catchall_4
-
-    .line 61
-    monitor-exit v0
-
-    goto :goto_6
-
-    :catchall_4
-    move-exception v1
-
-    monitor-exit v0
-
-    throw v1
-
-    .line 62
-    :cond_b
-    iget-object v3, v2, Lk3/ux;->b:Ljava/lang/String;
-
-    iget-object v2, v2, Lk3/ux;->c:Ljava/lang/String;
-
-    invoke-virtual {v0, v3, v2}, Lk3/sv;->u(Ljava/lang/String;Ljava/lang/String;)V
-
-    goto :goto_6
-
-    :cond_c
-    return-object v0
-
-    :catchall_5
-    move-exception v1
-
-    .line 63
-    monitor-exit v0
-
-    throw v1
-
-    :catchall_6
-    move-exception v1
-
-    .line 64
-    monitor-exit v0
-
-    throw v1
-
-    :catchall_7
-    move-exception v1
-
-    .line 65
-    monitor-exit v0
-
-    throw v1
-
-    :catchall_8
-    move-exception v1
-
-    .line 66
-    monitor-exit v0
-
-    throw v1
-
-    :catchall_9
-    move-exception v1
-
-    .line 67
-    monitor-exit v0
-
-    throw v1
-
-    :catchall_a
-    move-exception v1
-
-    .line 68
-    monitor-exit v0
-
-    goto :goto_8
-
-    :goto_7
-    throw v1
-
-    :goto_8
-    goto :goto_7
+    throw v0
 .end method

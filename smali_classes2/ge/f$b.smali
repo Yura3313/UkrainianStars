@@ -1,5 +1,5 @@
 .class public final Lge/f$b;
-.super Lse/h;
+.super Lse/i;
 .source "ViewPumpContextWrapper.kt"
 
 # interfaces
@@ -18,7 +18,7 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/a<",
         "Lhe/d;",
         ">;"
@@ -27,18 +27,18 @@
 
 
 # instance fields
-.field public final synthetic f:Lge/f;
+.field public final synthetic g:Lge/f;
 
 
 # direct methods
 .method public constructor <init>(Lge/f;)V
     .locals 0
 
-    iput-object p1, p0, Lge/f$b;->f:Lge/f;
+    iput-object p1, p0, Lge/f$b;->g:Lge/f;
 
     const/4 p1, 0x0
 
-    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -52,7 +52,7 @@
     new-instance v0, Lhe/d;
 
     .line 2
-    iget-object v1, p0, Lge/f$b;->f:Lge/f;
+    iget-object v1, p0, Lge/f$b;->g:Lge/f;
 
     invoke-virtual {v1}, Landroid/content/ContextWrapper;->getBaseContext()Landroid/content/Context;
 
@@ -64,9 +64,9 @@
 
     const-string v2, "LayoutInflater.from(baseContext)"
 
-    invoke-static {v1, v2}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    iget-object v2, p0, Lge/f$b;->f:Lge/f;
+    iget-object v2, p0, Lge/f$b;->g:Lge/f;
 
     const/4 v3, 0x0
 

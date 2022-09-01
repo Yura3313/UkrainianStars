@@ -627,7 +627,7 @@
     const-string v1, "Got pong! "
 
     .line 30
-    invoke-static {v1, v0, v6}, Lcom/kakaogame/b;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v0, v6}, Landroid/support/v4/media/e;->b(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     :cond_c
     :goto_2

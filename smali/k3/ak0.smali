@@ -3,197 +3,384 @@
 .source "com.google.android.gms:play-services-ads-lite@@19.3.0"
 
 
-# static fields
-.field public static final a:Ljava/lang/Object;
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
-    .end annotation
-.end field
-
-
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 7
+.method public static a(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
+    .param p0    # Ljava/lang/Object;
+        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NonNullDecl;
+        .end annotation
+    .end param
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Ljava/lang/Object;",
+            ">(TT;",
+            "Ljava/lang/Object;",
+            ")TT;"
+        }
+    .end annotation
 
-    const-string v0, "sun.misc.JavaLangAccess"
+    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NonNullDecl;
+    .end annotation
+
+    if-eqz p0, :cond_0
+
+    return-object p0
+
+    :cond_0
+    new-instance p0, Ljava/lang/NullPointerException;
+
+    invoke-static {p1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-direct {p0, p1}, Ljava/lang/NullPointerException;-><init>(Ljava/lang/String;)V
+
+    throw p0
+.end method
+
+.method public static b(Ljava/lang/Object;Ljava/lang/String;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 2
+    .param p0    # Ljava/lang/Object;
+        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NonNullDecl;
+        .end annotation
+    .end param
+    .param p1    # Ljava/lang/String;
+        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .end annotation
+    .end param
+    .param p2    # Ljava/lang/Object;
+        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Ljava/lang/Object;",
+            ">(TT;",
+            "Ljava/lang/String;",
+            "Ljava/lang/Object;",
+            ")TT;"
+        }
+    .end annotation
+
+    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NonNullDecl;
+    .end annotation
+
+    if-eqz p0, :cond_0
+
+    return-object p0
+
+    :cond_0
+    new-instance p0, Ljava/lang/NullPointerException;
+
+    const/4 v0, 0x1
+
+    new-array v0, v0, [Ljava/lang/Object;
+
+    const/4 v1, 0x0
+
+    aput-object p2, v0, v1
+
+    invoke-static {p1, v0}, Lk3/bk0;->a(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-direct {p0, p1}, Ljava/lang/NullPointerException;-><init>(Ljava/lang/String;)V
+
+    throw p0
+.end method
+
+.method public static c(IILjava/lang/String;)Ljava/lang/String;
+    .locals 4
+    .param p2    # Ljava/lang/String;
+        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .end annotation
+    .end param
+
+    const/4 v0, 0x1
+
+    const/4 v1, 0x0
+
+    const/4 v2, 0x2
+
+    if-gez p0, :cond_0
+
+    new-array p1, v2, [Ljava/lang/Object;
+
+    aput-object p2, p1, v1
 
     .line 1
-    invoke-static {}, Lk3/ak0;->a()Ljava/lang/Object;
+    invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    move-result-object v1
+    move-result-object p0
+
+    aput-object p0, p1, v0
+
+    const-string p0, "%s (%s) must not be negative"
+
+    invoke-static {p0, p1}, Lk3/bk0;->a(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object p0
+
+    return-object p0
+
+    :cond_0
+    if-ltz p1, :cond_1
+
+    const/4 v3, 0x3
+
+    new-array v3, v3, [Ljava/lang/Object;
+
+    aput-object p2, v3, v1
 
     .line 2
-    sput-object v1, Lk3/ak0;->a:Ljava/lang/Object;
+    invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    const/4 v2, 0x0
+    move-result-object p0
 
-    const/4 v3, 0x1
+    aput-object p0, v3, v0
 
-    const/4 v4, 0x0
+    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    if-nez v1, :cond_0
+    move-result-object p0
+
+    aput-object p0, v3, v2
+
+    const-string p0, "%s (%s) must not be greater than size (%s)"
+
+    invoke-static {p0, v3}, Lk3/bk0;->a(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object p0
+
+    return-object p0
+
+    .line 3
+    :cond_1
+    new-instance p0, Ljava/lang/IllegalArgumentException;
+
+    const/16 p2, 0x1a
+
+    const-string v0, "negative size: "
+
+    .line 4
+    invoke-static {p2, v0, p1}, Lcom/google/android/gms/ads/f;->a(ILjava/lang/String;I)Ljava/lang/String;
+
+    move-result-object p1
+
+    .line 5
+    invoke-direct {p0, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
+    throw p0
+.end method
+
+.method public static d(III)V
+    .locals 2
+
+    if-ltz p0, :cond_1
+
+    if-lt p1, p0, :cond_1
+
+    if-le p1, p2, :cond_0
 
     goto :goto_0
 
     :cond_0
-    const-string v1, "getStackTraceElement"
+    return-void
 
-    const/4 v5, 0x2
-
-    new-array v5, v5, [Ljava/lang/Class;
-
-    .line 3
-    const-class v6, Ljava/lang/Throwable;
-
-    aput-object v6, v5, v4
-
-    sget-object v6, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
-
-    aput-object v6, v5, v3
-
-    .line 4
-    :try_start_0
-    invoke-static {v0, v4, v2}, Ljava/lang/Class;->forName(Ljava/lang/String;ZLjava/lang/ClassLoader;)Ljava/lang/Class;
-
-    move-result-object v6
-
-    invoke-virtual {v6, v1, v5}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
-    :try_end_0
-    .catch Ljava/lang/ThreadDeath; {:try_start_0 .. :try_end_0} :catch_2
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    goto :goto_0
-
-    :catchall_0
-    nop
-
-    .line 5
-    :goto_0
-    sget-object v1, Lk3/ak0;->a:Ljava/lang/Object;
-
-    if-nez v1, :cond_1
-
-    goto :goto_2
-
+    .line 1
     :cond_1
-    :try_start_1
-    const-string v1, "getStackTraceDepth"
+    :goto_0
+    new-instance v0, Ljava/lang/IndexOutOfBoundsException;
 
-    new-array v5, v3, [Ljava/lang/Class;
+    if-ltz p0, :cond_4
 
-    .line 6
-    const-class v6, Ljava/lang/Throwable;
+    if-gt p0, p2, :cond_4
 
-    aput-object v6, v5, v4
-    :try_end_1
-    .catch Ljava/lang/UnsupportedOperationException; {:try_start_1 .. :try_end_1} :catch_1
-    .catch Ljava/lang/IllegalAccessException; {:try_start_1 .. :try_end_1} :catch_1
-    .catch Ljava/lang/reflect/InvocationTargetException; {:try_start_1 .. :try_end_1} :catch_1
+    if-ltz p1, :cond_3
 
-    .line 7
-    :try_start_2
-    invoke-static {v0, v4, v2}, Ljava/lang/Class;->forName(Ljava/lang/String;ZLjava/lang/ClassLoader;)Ljava/lang/Class;
-
-    move-result-object v0
-
-    invoke-virtual {v0, v1, v5}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
-
-    move-result-object v2
-    :try_end_2
-    .catch Ljava/lang/ThreadDeath; {:try_start_2 .. :try_end_2} :catch_0
-    .catchall {:try_start_2 .. :try_end_2} :catchall_1
+    if-le p1, p2, :cond_2
 
     goto :goto_1
 
-    :catchall_1
-    nop
-
-    :goto_1
-    if-nez v2, :cond_2
-
-    goto :goto_2
-
-    .line 8
     :cond_2
-    :try_start_3
-    invoke-static {}, Lk3/ak0;->a()Ljava/lang/Object;
+    const/4 p2, 0x2
 
-    move-result-object v0
+    new-array p2, p2, [Ljava/lang/Object;
 
-    new-array v1, v3, [Ljava/lang/Object;
+    const/4 v1, 0x0
 
-    new-instance v3, Ljava/lang/Throwable;
+    .line 2
+    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    invoke-direct {v3}, Ljava/lang/Throwable;-><init>()V
+    move-result-object p1
 
-    aput-object v3, v1, v4
+    aput-object p1, p2, v1
 
-    invoke-virtual {v2, v0, v1}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+    const/4 p1, 0x1
+
+    invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object p0
+
+    aput-object p0, p2, p1
+
+    const-string p0, "end index (%s) must not be less than start index (%s)"
+
+    invoke-static {p0, p2}, Lk3/bk0;->a(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object p0
 
     goto :goto_2
 
-    :catch_0
-    move-exception v0
+    :cond_3
+    :goto_1
+    const-string p0, "end index"
 
-    .line 9
-    throw v0
-    :try_end_3
-    .catch Ljava/lang/UnsupportedOperationException; {:try_start_3 .. :try_end_3} :catch_1
-    .catch Ljava/lang/IllegalAccessException; {:try_start_3 .. :try_end_3} :catch_1
-    .catch Ljava/lang/reflect/InvocationTargetException; {:try_start_3 .. :try_end_3} :catch_1
+    .line 3
+    invoke-static {p1, p2, p0}, Lk3/ak0;->c(IILjava/lang/String;)Ljava/lang/String;
 
-    :catch_1
+    move-result-object p0
+
+    goto :goto_2
+
+    :cond_4
+    const-string p1, "start index"
+
+    .line 4
+    invoke-static {p0, p2, p1}, Lk3/ak0;->c(IILjava/lang/String;)Ljava/lang/String;
+
+    move-result-object p0
+
+    .line 5
     :goto_2
-    return-void
+    invoke-direct {v0, p0}, Ljava/lang/IndexOutOfBoundsException;-><init>(Ljava/lang/String;)V
 
-    :catch_2
-    move-exception v0
-
-    .line 10
     throw v0
 .end method
 
-.method public static a()Ljava/lang/Object;
-    .locals 5
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
-    .end annotation
+.method public static e(II)I
+    .locals 6
 
-    const/4 v0, 0x0
+    if-ltz p0, :cond_1
 
-    :try_start_0
-    const-string v1, "sun.misc.SharedSecrets"
+    if-lt p0, p1, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    return p0
+
+    .line 1
+    :cond_1
+    :goto_0
+    new-instance v0, Ljava/lang/IndexOutOfBoundsException;
+
+    const/4 v1, 0x1
 
     const/4 v2, 0x0
 
-    .line 1
-    invoke-static {v1, v2, v0}, Ljava/lang/Class;->forName(Ljava/lang/String;ZLjava/lang/ClassLoader;)Ljava/lang/Class;
+    const/4 v3, 0x2
 
-    move-result-object v1
+    const-string v4, "index"
 
-    const-string v3, "getJavaLangAccess"
+    if-ltz p0, :cond_3
 
-    new-array v4, v2, [Ljava/lang/Class;
+    if-gez p1, :cond_2
 
     .line 2
-    invoke-virtual {v1, v3, v4}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+    new-instance p0, Ljava/lang/IllegalArgumentException;
 
-    move-result-object v1
+    const/16 v0, 0x1a
 
-    new-array v2, v2, [Ljava/lang/Object;
+    const-string v1, "negative size: "
 
     .line 3
-    invoke-virtual {v1, v0, v2}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {v0, v1, p1}, Lcom/google/android/gms/ads/f;->a(ILjava/lang/String;I)Ljava/lang/String;
 
-    move-result-object v0
-    :try_end_0
-    .catch Ljava/lang/ThreadDeath; {:try_start_0 .. :try_end_0} :catch_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    :catchall_0
-    return-object v0
-
-    :catch_0
-    move-exception v0
+    move-result-object p1
 
     .line 4
+    invoke-direct {p0, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
+    throw p0
+
+    :cond_2
+    const/4 v5, 0x3
+
+    new-array v5, v5, [Ljava/lang/Object;
+
+    aput-object v4, v5, v2
+
+    .line 5
+    invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object p0
+
+    aput-object p0, v5, v1
+
+    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object p0
+
+    aput-object p0, v5, v3
+
+    const-string p0, "%s (%s) must be less than size (%s)"
+
+    invoke-static {p0, v5}, Lk3/bk0;->a(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object p0
+
+    goto :goto_1
+
+    :cond_3
+    new-array p1, v3, [Ljava/lang/Object;
+
+    aput-object v4, p1, v2
+
+    .line 6
+    invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object p0
+
+    aput-object p0, p1, v1
+
+    const-string p0, "%s (%s) must not be negative"
+
+    invoke-static {p0, p1}, Lk3/bk0;->a(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object p0
+
+    .line 7
+    :goto_1
+    invoke-direct {v0, p0}, Ljava/lang/IndexOutOfBoundsException;-><init>(Ljava/lang/String;)V
+
+    throw v0
+.end method
+
+.method public static f(II)I
+    .locals 2
+
+    if-ltz p0, :cond_0
+
+    if-gt p0, p1, :cond_0
+
+    return p0
+
+    :cond_0
+    new-instance v0, Ljava/lang/IndexOutOfBoundsException;
+
+    const-string v1, "index"
+
+    invoke-static {p0, p1, v1}, Lk3/ak0;->c(IILjava/lang/String;)Ljava/lang/String;
+
+    move-result-object p0
+
+    invoke-direct {v0, p0}, Ljava/lang/IndexOutOfBoundsException;-><init>(Ljava/lang/String;)V
+
     throw v0
 .end method

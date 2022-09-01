@@ -83,7 +83,7 @@
     if-eqz v2, :cond_0
 
     .line 2
-    invoke-static {v2}, La5/r;->a(Ljava/lang/String;)[B
+    invoke-static {v2}, Ld2/u;->a(Ljava/lang/String;)[B
 
     move-result-object v0
 

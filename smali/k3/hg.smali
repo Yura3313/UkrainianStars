@@ -43,9 +43,9 @@
     if-eqz v0, :cond_0
 
     .line 2
-    new-instance p1, Lk3/tp;
+    new-instance p1, Lk3/sp;
 
-    invoke-direct {p1}, Lk3/tp;-><init>()V
+    invoke-direct {p1}, Lk3/sp;-><init>()V
 
     return-object p1
 
@@ -60,17 +60,17 @@
     if-eqz v0, :cond_1
 
     .line 4
-    new-instance p1, Lk3/pr;
+    new-instance p1, Lk3/nr;
 
-    invoke-direct {p1}, Lk3/pr;-><init>()V
+    invoke-direct {p1}, Lk3/nr;-><init>()V
 
     return-object p1
 
     .line 5
     :cond_1
-    new-instance v0, Lk3/ar;
+    new-instance v0, Lk3/zq;
 
-    invoke-direct {v0, p1}, Lk3/ar;-><init>(Ljava/lang/String;)V
+    invoke-direct {v0, p1}, Lk3/zq;-><init>(Ljava/lang/String;)V
 
     return-object v0
 .end method

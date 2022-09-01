@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field public final synthetic f:Lla/a;
+.field public final synthetic g:Lla/a;
 
 
 # direct methods
 .method public constructor <init>(Lla/a;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/titan/HelpshiftTitan$g;->f:Lla/a;
+    iput-object p1, p0, Lcom/supercell/titan/HelpshiftTitan$g;->g:Lla/a;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -48,7 +48,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/supercell/titan/HelpshiftTitan$g;->f:Lla/a;
+    iget-object v1, p0, Lcom/supercell/titan/HelpshiftTitan$g;->g:Lla/a;
 
     .line 3
     invoke-static {v1}, Lib/c;->b(Lla/a;)Ljava/util/Map;
@@ -56,7 +56,7 @@
     move-result-object v1
 
     .line 4
-    invoke-static {}, Lcom/helpshift/util/u;->b()Z
+    invoke-static {}, Lcom/helpshift/util/t;->b()Z
 
     move-result v2
 

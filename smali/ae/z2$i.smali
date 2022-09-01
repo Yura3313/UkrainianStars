@@ -1,5 +1,5 @@
 .class public final Lae/z2$i;
-.super Lse/h;
+.super Lse/i;
 .source "ViewUtil.kt"
 
 # interfaces
@@ -18,32 +18,32 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/l<",
         "Landroid/view/View;",
-        "Lie/h;",
+        "Lie/i;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic f:Landroid/view/View;
+.field public final synthetic g:Landroid/view/View;
 
-.field public final synthetic g:J
+.field public final synthetic h:J
 
 
 # direct methods
 .method public constructor <init>(Landroid/view/View;J)V
     .locals 0
 
-    iput-object p1, p0, Lae/z2$i;->f:Landroid/view/View;
+    iput-object p1, p0, Lae/z2$i;->g:Landroid/view/View;
 
-    iput-wide p2, p0, Lae/z2$i;->g:J
+    iput-wide p2, p0, Lae/z2$i;->h:J
 
     const/4 p1, 0x1
 
-    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -58,23 +58,23 @@
     const-string v0, "it"
 
     .line 1
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 2
-    iget-object p1, p0, Lae/z2$i;->f:Landroid/view/View;
+    iget-object p1, p0, Lae/z2$i;->g:Landroid/view/View;
 
     new-instance v0, Lae/a3;
 
     invoke-direct {v0, p0}, Lae/a3;-><init>(Lae/z2$i;)V
 
     .line 3
-    iget-wide v1, p0, Lae/z2$i;->g:J
+    iget-wide v1, p0, Lae/z2$i;->h:J
 
     .line 4
     invoke-virtual {p1, v0, v1, v2}, Landroid/view/View;->postDelayed(Ljava/lang/Runnable;J)Z
 
     .line 5
-    sget-object p1, Lie/h;->a:Lie/h;
+    sget-object p1, Lie/i;->a:Lie/i;
 
     return-object p1
 .end method

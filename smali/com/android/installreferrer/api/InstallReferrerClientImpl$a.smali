@@ -67,7 +67,7 @@
     iget-object p1, p0, Lcom/android/installreferrer/api/InstallReferrerClientImpl$a;->b:Lcom/android/installreferrer/api/InstallReferrerClientImpl;
 
     .line 2
-    sget v0, Lcom/google/android/finsky/externalreferrer/IGetInstallReferrerService$Stub;->f:I
+    sget v0, Lcom/google/android/finsky/externalreferrer/IGetInstallReferrerService$Stub;->g:I
 
     if-eqz p2, :cond_1
 

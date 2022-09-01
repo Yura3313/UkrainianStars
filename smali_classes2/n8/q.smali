@@ -102,7 +102,7 @@
     throw v0
 .end method
 
-.method public final declared-synchronized e()Lk3/w80;
+.method public final declared-synchronized e()Lk3/y80;
     .locals 2
 
     monitor-enter p0
@@ -111,7 +111,7 @@
     :try_start_0
     iget-object v0, p0, Ln8/q;->j:Ljava/util/List;
 
-    invoke-static {v0}, Lbc/a;->d(Ljava/util/List;)Z
+    invoke-static {v0}, Lt5/a;->g(Ljava/util/List;)Z
 
     move-result v0
 
@@ -129,7 +129,7 @@
     check-cast v0, Lq8/d;
 
     .line 3
-    invoke-virtual {p0, v0}, Ln8/p;->a(Lq8/d;)Lk3/w80;
+    invoke-virtual {p0, v0}, Ln8/p;->a(Lq8/d;)Lk3/y80;
 
     move-result-object v0
     :try_end_0
@@ -212,14 +212,14 @@
     iget-object v2, p0, Ln8/p;->d:Li7/c;
 
     .line 8
-    iget-object v2, v2, Li7/c;->f:Ljava/lang/Long;
+    iget-object v2, v2, Li7/c;->g:Ljava/lang/Long;
 
     .line 9
     invoke-virtual {v2}, Ljava/lang/Long;->longValue()J
 
     move-result-wide v2
 
-    iput-wide v2, v1, Lq8/d;->x:J
+    iput-wide v2, v1, Lq8/d;->y:J
 
     .line 10
     iget-object v2, p0, Ln8/p;->f:Ln8/c;
@@ -227,7 +227,7 @@
     invoke-virtual {v2, v1}, Ln8/c;->Z(Lq8/d;)V
 
     .line 11
-    iget-object v1, v1, Lq8/d;->o:Lcom/helpshift/util/q;
+    iget-object v1, v1, Lq8/d;->p:Lcom/helpshift/util/q;
 
     invoke-virtual {v1}, Ljava/util/AbstractCollection;->iterator()Ljava/util/Iterator;
 
@@ -244,14 +244,14 @@
 
     move-result-object v2
 
-    check-cast v2, Lo8/y;
+    check-cast v2, Lo8/z;
 
     .line 12
     iget-object v3, p0, Ln8/p;->c:La8/f;
 
     iget-object v4, p0, Ln8/p;->b:Le8/s;
 
-    invoke-virtual {v2, v3, v4}, Lo8/y;->n(La8/f;Le8/s;)V
+    invoke-virtual {v2, v3, v4}, Lo8/z;->n(La8/f;Le8/s;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -288,7 +288,7 @@
 
     move-result-object v0
 
-    iget-object v0, v0, Lq8/d;->g:Ljava/lang/Long;
+    iget-object v0, v0, Lq8/d;->h:Ljava/lang/Long;
 
     invoke-virtual {v0}, Ljava/lang/Long;->longValue()J
 
@@ -315,7 +315,7 @@
     check-cast v3, Lq8/d;
 
     .line 3
-    iget-object v4, v3, Lq8/d;->g:Ljava/lang/Long;
+    iget-object v4, v3, Lq8/d;->h:Ljava/lang/Long;
 
     invoke-static {v0, v1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
@@ -361,7 +361,7 @@
 
     .line 1
     :try_start_0
-    iput-object p0, p1, Lq8/d;->G:Ln8/b;
+    iput-object p0, p1, Lq8/d;->H:Ln8/b;
 
     .line 2
     iget-object v0, p0, Ln8/q;->j:Ljava/util/List;
@@ -423,7 +423,7 @@
     check-cast v2, Lq8/d;
 
     .line 3
-    iget-object v3, v2, Lq8/d;->g:Ljava/lang/Long;
+    iget-object v3, v2, Lq8/d;->h:Ljava/lang/Long;
 
     invoke-virtual {v0, v3, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -457,7 +457,7 @@
     check-cast v5, Lq8/d;
 
     .line 7
-    iget-object v6, v5, Lq8/d;->g:Ljava/lang/Long;
+    iget-object v6, v5, Lq8/d;->h:Ljava/lang/Long;
 
     invoke-virtual {v0, v6}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -468,9 +468,9 @@
     if-eqz v6, :cond_1
 
     .line 8
-    iget-object v6, v6, Lq8/d;->o:Lcom/helpshift/util/q;
+    iget-object v6, v6, Lq8/d;->p:Lcom/helpshift/util/q;
 
-    iget-object v5, v5, Lq8/d;->o:Lcom/helpshift/util/q;
+    iget-object v5, v5, Lq8/d;->p:Lcom/helpshift/util/q;
 
     .line 9
     invoke-virtual {v6, v3, v5}, Ljava/util/ArrayList;->addAll(ILjava/util/Collection;)Z
@@ -488,7 +488,7 @@
 
     .line 11
     :cond_2
-    invoke-static {v2}, Lbc/a;->d(Ljava/util/List;)Z
+    invoke-static {v2}, Lt5/a;->g(Ljava/util/List;)Z
 
     move-result p1
 
@@ -555,10 +555,10 @@
     check-cast v1, Lq8/d;
 
     .line 2
-    iget-object v2, v1, Lq8/d;->o:Lcom/helpshift/util/q;
+    iget-object v2, v1, Lq8/d;->p:Lcom/helpshift/util/q;
 
     .line 3
-    iput-object p1, v2, Lcom/helpshift/util/q;->f:Lf9/g;
+    iput-object p1, v2, Lcom/helpshift/util/q;->g:Lf9/g;
 
     .line 4
     invoke-virtual {v1}, Lq8/d;->d()V

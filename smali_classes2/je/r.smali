@@ -23,9 +23,9 @@
 
 
 # instance fields
-.field public f:I
+.field public g:I
 
-.field public final g:Ljava/util/Iterator;
+.field public final h:Ljava/util/Iterator;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Iterator<",
@@ -48,11 +48,11 @@
 
     const-string v0, "iterator"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lje/r;->g:Ljava/util/Iterator;
+    iput-object p1, p0, Lje/r;->h:Ljava/util/Iterator;
 
     return-void
 .end method
@@ -62,7 +62,7 @@
 .method public final hasNext()Z
     .locals 1
 
-    iget-object v0, p0, Lje/r;->g:Ljava/util/Iterator;
+    iget-object v0, p0, Lje/r;->h:Ljava/util/Iterator;
 
     invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
 
@@ -74,15 +74,15 @@
 .method public final next()Ljava/lang/Object;
     .locals 3
 
-    iget v0, p0, Lje/r;->f:I
+    iget v0, p0, Lje/r;->g:I
 
     add-int/lit8 v1, v0, 0x1
 
-    iput v1, p0, Lje/r;->f:I
+    iput v1, p0, Lje/r;->g:I
 
     if-ltz v0, :cond_0
 
-    iget-object v1, p0, Lje/r;->g:Ljava/util/Iterator;
+    iget-object v1, p0, Lje/r;->h:Ljava/util/Iterator;
 
     invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
@@ -95,7 +95,7 @@
     return-object v2
 
     :cond_0
-    invoke-static {}, Lcom/android/billingclient/api/z;->p()V
+    invoke-static {}, Lcom/android/billingclient/api/y;->k()V
 
     const/4 v0, 0x0
 

@@ -79,7 +79,7 @@
     invoke-direct {p0}, Lcom/google/crypto/tink/shaded/protobuf/n;-><init>()V
 
     .line 2
-    sget-object v0, Lo5/d;->g:Lo5/d$f;
+    sget-object v0, Lo5/d;->h:Lo5/d$f;
 
     iput-object v0, p0, Ln5/h1;->publicExponent_:Lo5/d;
 

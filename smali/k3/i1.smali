@@ -4,30 +4,36 @@
 
 
 # static fields
-.field public static a:Lk3/k0;
+.field public static final a:Ljava/util/concurrent/atomic/AtomicReference;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lk3/k0<",
-            "Ljava/lang/Boolean;",
+            "Ljava/util/concurrent/atomic/AtomicReference<",
+            "Lk3/j1;",
             ">;"
         }
     .end annotation
 .end field
 
+.field public static final b:Ljava/util/concurrent/atomic/AtomicBoolean;
+
 
 # direct methods
 .method public static constructor <clinit>()V
-    .locals 2
+    .locals 1
 
-    const-string v0, "gads:video:metric_reporting_enabled"
+    .line 1
+    new-instance v0, Ljava/util/concurrent/atomic/AtomicReference;
 
-    const/4 v1, 0x0
+    invoke-direct {v0}, Ljava/util/concurrent/atomic/AtomicReference;-><init>()V
 
-    invoke-static {v0, v1}, Lk3/k0;->c(Ljava/lang/String;Z)Lk3/k0;
+    sput-object v0, Lk3/i1;->a:Ljava/util/concurrent/atomic/AtomicReference;
 
-    move-result-object v0
+    .line 2
+    new-instance v0, Ljava/util/concurrent/atomic/AtomicBoolean;
 
-    sput-object v0, Lk3/i1;->a:Lk3/k0;
+    invoke-direct {v0}, Ljava/util/concurrent/atomic/AtomicBoolean;-><init>()V
+
+    sput-object v0, Lk3/i1;->b:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     return-void
 .end method

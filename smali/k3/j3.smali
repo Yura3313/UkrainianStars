@@ -1,93 +1,121 @@
 .class public final Lk3/j3;
-.super Li1/c;
+.super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
+
+# interfaces
+.implements Landroid/os/Parcelable$Creator;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Li1/c<",
-        "Lcom/google/android/gms/internal/ads/zzahx;",
+        "Ljava/lang/Object;",
+        "Landroid/os/Parcelable$Creator<",
+        "Lcom/google/android/gms/internal/ads/zzahr;",
         ">;"
     }
 .end annotation
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;Landroid/os/Looper;Lcom/google/android/gms/common/internal/BaseGmsClient$a;Lcom/google/android/gms/common/internal/BaseGmsClient$b;)V
-    .locals 6
+.method public constructor <init>()V
+    .locals 0
 
-    .line 1
-    invoke-static {p1}, Lk3/x8;->a(Landroid/content/Context;)Landroid/content/Context;
-
-    move-result-object v1
-
-    const/16 v3, 0xa6
-
-    move-object v0, p0
-
-    move-object v2, p2
-
-    move-object v4, p3
-
-    move-object v5, p4
-
-    .line 2
-    invoke-direct/range {v0 .. v5}, Li1/c;-><init>(Landroid/content/Context;Landroid/os/Looper;ILcom/google/android/gms/common/internal/BaseGmsClient$a;Lcom/google/android/gms/common/internal/BaseGmsClient$b;)V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final synthetic p(Landroid/os/IBinder;)Landroid/os/IInterface;
-    .locals 2
-
-    if-nez p1, :cond_0
-
-    const/4 p1, 0x0
-
-    return-object p1
-
-    :cond_0
-    const-string v0, "com.google.android.gms.ads.internal.httpcache.IHttpAssetsCacheService"
+.method public final createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
+    .locals 7
 
     .line 1
-    invoke-interface {p1, v0}, Landroid/os/IBinder;->queryLocalInterface(Ljava/lang/String;)Landroid/os/IInterface;
+    invoke-static {p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->x(Landroid/os/Parcel;)I
 
-    move-result-object v0
+    move-result v0
+
+    const/4 v1, 0x0
+
+    move-object v2, v1
+
+    move-object v3, v2
 
     .line 2
-    instance-of v1, v0, Lcom/google/android/gms/internal/ads/zzahx;
+    :goto_0
+    invoke-virtual {p1}, Landroid/os/Parcel;->dataPosition()I
 
-    if-eqz v1, :cond_1
+    move-result v4
+
+    if-ge v4, v0, :cond_3
 
     .line 3
-    check-cast v0, Lcom/google/android/gms/internal/ads/zzahx;
+    invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
-    return-object v0
+    move-result v4
+
+    const v5, 0xffff
+
+    and-int/2addr v5, v4
+
+    const/4 v6, 0x1
+
+    if-eq v5, v6, :cond_2
+
+    const/4 v6, 0x2
+
+    if-eq v5, v6, :cond_1
+
+    const/4 v6, 0x3
+
+    if-eq v5, v6, :cond_0
 
     .line 4
+    invoke-static {p1, v4}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->w(Landroid/os/Parcel;I)V
+
+    goto :goto_0
+
+    .line 5
+    :cond_0
+    invoke-static {p1, v4}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->j(Landroid/os/Parcel;I)[Ljava/lang/String;
+
+    move-result-object v3
+
+    goto :goto_0
+
+    .line 6
     :cond_1
-    new-instance v0, Lcom/google/android/gms/internal/ads/zzaia;
+    invoke-static {p1, v4}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->j(Landroid/os/Parcel;I)[Ljava/lang/String;
 
-    invoke-direct {v0, p1}, Lcom/google/android/gms/internal/ads/zzaia;-><init>(Landroid/os/IBinder;)V
+    move-result-object v2
 
-    return-object v0
+    goto :goto_0
+
+    .line 7
+    :cond_2
+    invoke-static {p1, v4}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->i(Landroid/os/Parcel;I)Ljava/lang/String;
+
+    move-result-object v1
+
+    goto :goto_0
+
+    .line 8
+    :cond_3
+    invoke-static {p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->n(Landroid/os/Parcel;I)V
+
+    .line 9
+    new-instance p1, Lcom/google/android/gms/internal/ads/zzahr;
+
+    invoke-direct {p1, v1, v2, v3}, Lcom/google/android/gms/internal/ads/zzahr;-><init>(Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;)V
+
+    return-object p1
 .end method
 
-.method public final w()Ljava/lang/String;
-    .locals 1
+.method public final synthetic newArray(I)[Ljava/lang/Object;
+    .locals 0
 
-    const-string v0, "com.google.android.gms.ads.internal.httpcache.IHttpAssetsCacheService"
+    new-array p1, p1, [Lcom/google/android/gms/internal/ads/zzahr;
 
-    return-object v0
-.end method
-
-.method public final x()Ljava/lang/String;
-    .locals 1
-
-    const-string v0, "com.google.android.gms.ads.service.HTTP"
-
-    return-object v0
+    return-object p1
 .end method

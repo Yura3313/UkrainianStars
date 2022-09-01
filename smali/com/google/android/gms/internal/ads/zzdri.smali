@@ -16,20 +16,20 @@
 
 
 # instance fields
-.field public final f:I
-
-.field public final g:Ljava/lang/String;
+.field public final g:I
 
 .field public final h:Ljava/lang/String;
+
+.field public final i:Ljava/lang/String;
 
 
 # direct methods
 .method public static constructor <clinit>()V
     .locals 1
 
-    new-instance v0, Lk3/kj0;
+    new-instance v0, Lk3/mj0;
 
-    invoke-direct {v0}, Lk3/kj0;-><init>()V
+    invoke-direct {v0}, Lk3/mj0;-><init>()V
 
     sput-object v0, Lcom/google/android/gms/internal/ads/zzdri;->CREATOR:Landroid/os/Parcelable$Creator;
 
@@ -43,13 +43,13 @@
     invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
 
     .line 2
-    iput p1, p0, Lcom/google/android/gms/internal/ads/zzdri;->f:I
+    iput p1, p0, Lcom/google/android/gms/internal/ads/zzdri;->g:I
 
     .line 3
-    iput-object p2, p0, Lcom/google/android/gms/internal/ads/zzdri;->g:Ljava/lang/String;
+    iput-object p2, p0, Lcom/google/android/gms/internal/ads/zzdri;->h:Ljava/lang/String;
 
     .line 4
-    iput-object p3, p0, Lcom/google/android/gms/internal/ads/zzdri;->h:Ljava/lang/String;
+    iput-object p3, p0, Lcom/google/android/gms/internal/ads/zzdri;->i:Ljava/lang/String;
 
     return-void
 .end method
@@ -63,13 +63,13 @@
     const/4 v0, 0x1
 
     .line 6
-    iput v0, p0, Lcom/google/android/gms/internal/ads/zzdri;->f:I
+    iput v0, p0, Lcom/google/android/gms/internal/ads/zzdri;->g:I
 
     .line 7
-    iput-object p1, p0, Lcom/google/android/gms/internal/ads/zzdri;->g:Ljava/lang/String;
+    iput-object p1, p0, Lcom/google/android/gms/internal/ads/zzdri;->h:Ljava/lang/String;
 
     .line 8
-    iput-object p2, p0, Lcom/google/android/gms/internal/ads/zzdri;->h:Ljava/lang/String;
+    iput-object p2, p0, Lcom/google/android/gms/internal/ads/zzdri;->i:Ljava/lang/String;
 
     return-void
 .end method
@@ -87,7 +87,7 @@
     move-result p2
 
     .line 2
-    iget v0, p0, Lcom/google/android/gms/internal/ads/zzdri;->f:I
+    iget v0, p0, Lcom/google/android/gms/internal/ads/zzdri;->g:I
 
     const/4 v1, 0x1
 
@@ -100,7 +100,7 @@
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 5
-    iget-object v0, p0, Lcom/google/android/gms/internal/ads/zzdri;->g:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/android/gms/internal/ads/zzdri;->h:Ljava/lang/String;
 
     const/4 v1, 0x2
 
@@ -109,7 +109,7 @@
     invoke-static {p1, v1, v0, v2}, Le2/b;->m(Landroid/os/Parcel;ILjava/lang/String;Z)V
 
     .line 6
-    iget-object v0, p0, Lcom/google/android/gms/internal/ads/zzdri;->h:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/android/gms/internal/ads/zzdri;->i:Ljava/lang/String;
 
     const/4 v1, 0x3
 

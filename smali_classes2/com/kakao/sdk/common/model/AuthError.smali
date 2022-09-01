@@ -44,11 +44,11 @@
 
     const-string v0, "reason"
 
-    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "response"
 
-    invoke-static {p3, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p3, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {p3}, Lcom/kakao/sdk/common/model/AuthErrorResponse;->getErrorDescription()Ljava/lang/String;
 
@@ -66,7 +66,7 @@
     :goto_0
     const/4 v1, 0x0
 
-    invoke-direct {p0, v0, v1}, Lcom/kakao/sdk/common/model/KakaoSdkError;-><init>(Ljava/lang/String;Lse/e;)V
+    invoke-direct {p0, v0, v1}, Lcom/kakao/sdk/common/model/KakaoSdkError;-><init>(Ljava/lang/String;Lse/f;)V
 
     iput p1, p0, Lcom/kakao/sdk/common/model/AuthError;->statusCode:I
 
@@ -139,11 +139,11 @@
 
     const-string v0, "reason"
 
-    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "response"
 
-    invoke-static {p3, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p3, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     new-instance v0, Lcom/kakao/sdk/common/model/AuthError;
 
@@ -195,7 +195,7 @@
 
     iget-object v3, p1, Lcom/kakao/sdk/common/model/AuthError;->reason:Lcom/kakao/sdk/common/model/AuthErrorCause;
 
-    invoke-static {v1, v3}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -205,7 +205,7 @@
 
     iget-object p1, p1, Lcom/kakao/sdk/common/model/AuthError;->response:Lcom/kakao/sdk/common/model/AuthErrorResponse;
 
-    invoke-static {v1, p1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, p1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -333,7 +333,7 @@
 
     const-string p2, "parcel"
 
-    invoke-static {p1, p2}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p2}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     iget p2, p0, Lcom/kakao/sdk/common/model/AuthError;->statusCode:I
 

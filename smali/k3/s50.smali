@@ -3,15 +3,16 @@
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lk3/f40;
+.implements Lk3/k40;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "Lk3/f40<",
-        "Lk3/yg0;",
+        "Lk3/k40<",
+        "Lk3/iu;",
+        "Lcom/google/android/gms/internal/ads/zzapa;",
         "Lcom/google/android/gms/internal/ads/zzcso;",
         ">;"
     }
@@ -19,36 +20,40 @@
 
 
 # instance fields
-.field public final a:Lk3/b00;
+.field public final a:Landroid/content/Context;
+
+.field public final b:Lk3/uu;
 
 
 # direct methods
-.method public constructor <init>(Lk3/b00;)V
+.method public constructor <init>(Landroid/content/Context;Lk3/uu;)V
     .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lk3/s50;->a:Lk3/b00;
+    iput-object p1, p0, Lk3/s50;->a:Landroid/content/Context;
+
+    .line 3
+    iput-object p2, p0, Lk3/s50;->b:Lk3/uu;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Ljava/lang/String;Lorg/json/JSONObject;)Lk3/g40;
-    .locals 2
+.method public final a(Lk3/tg0;Lk3/kg0;Lk3/j40;)V
+    .locals 8
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Ljava/lang/String;",
-            "Lorg/json/JSONObject;",
-            ")",
-            "Lk3/g40<",
-            "Lk3/yg0;",
+            "Lk3/tg0;",
+            "Lk3/kg0;",
+            "Lk3/j40<",
+            "Lcom/google/android/gms/internal/ads/zzapa;",
             "Lcom/google/android/gms/internal/ads/zzcso;",
-            ">;"
+            ">;)V"
         }
     .end annotation
 
@@ -59,21 +64,139 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lk3/s50;->a:Lk3/b00;
+    :try_start_0
+    iget-object v0, p3, Lk3/j40;->b:Ljava/lang/Object;
 
-    invoke-virtual {v0, p1, p2}, Lk3/b00;->a(Ljava/lang/String;Lorg/json/JSONObject;)Lk3/yg0;
+    check-cast v0, Lcom/google/android/gms/internal/ads/zzapa;
+
+    iget-object v1, p2, Lk3/kg0;->T:Ljava/lang/String;
+
+    invoke-interface {v0, v1}, Lcom/google/android/gms/internal/ads/zzapa;->w5(Ljava/lang/String;)V
+
+    .line 2
+    iget-object v0, p3, Lk3/j40;->b:Ljava/lang/Object;
+
+    move-object v1, v0
+
+    check-cast v1, Lcom/google/android/gms/internal/ads/zzapa;
+
+    iget-object v2, p2, Lk3/kg0;->N:Ljava/lang/String;
+
+    iget-object p2, p2, Lk3/kg0;->u:Lorg/json/JSONObject;
+
+    .line 3
+    invoke-virtual {p2}, Lorg/json/JSONObject;->toString()Ljava/lang/String;
+
+    move-result-object v3
+
+    iget-object p1, p1, Lk3/tg0;->a:Lk3/ny0;
+
+    iget-object p1, p1, Lk3/ny0;->g:Ljava/lang/Object;
+
+    check-cast p1, Lk3/vg0;
+
+    iget-object v4, p1, Lk3/vg0;->d:Lcom/google/android/gms/internal/ads/zzvc;
+
+    iget-object p1, p0, Lk3/s50;->a:Landroid/content/Context;
+
+    .line 4
+    new-instance v5, Lcom/google/android/gms/dynamic/ObjectWrapper;
+
+    invoke-direct {v5, p1}, Lcom/google/android/gms/dynamic/ObjectWrapper;-><init>(Ljava/lang/Object;)V
+
+    .line 5
+    new-instance v6, Lk3/t50;
+
+    invoke-direct {v6, p3}, Lk3/t50;-><init>(Lk3/j40;)V
+
+    iget-object p1, p3, Lk3/j40;->c:Lk3/or;
+
+    move-object v7, p1
+
+    check-cast v7, Lcom/google/android/gms/internal/ads/zzana;
+
+    .line 6
+    invoke-interface/range {v1 .. v7}, Lcom/google/android/gms/internal/ads/zzapa;->X6(Ljava/lang/String;Ljava/lang/String;Lcom/google/android/gms/internal/ads/zzvc;Lcom/google/android/gms/dynamic/IObjectWrapper;Lcom/google/android/gms/internal/ads/zzaop;Lcom/google/android/gms/internal/ads/zzana;)V
+    :try_end_0
+    .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
+
+    return-void
+
+    :catch_0
+    move-exception p1
+
+    .line 7
+    new-instance p2, Lcom/google/android/gms/internal/ads/zzdlr;
+
+    invoke-direct {p2, p1}, Lcom/google/android/gms/internal/ads/zzdlr;-><init>(Ljava/lang/Throwable;)V
+
+    throw p2
+.end method
+
+.method public final b(Lk3/tg0;Lk3/kg0;Lk3/j40;)Ljava/lang/Object;
+    .locals 4
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lcom/google/android/gms/internal/ads/zzdlr;,
+            Lcom/google/android/gms/internal/ads/zzcuh;
+        }
+    .end annotation
+
+    .line 1
+    new-instance v0, Lk3/p50;
+
+    iget-object v1, p3, Lk3/j40;->b:Ljava/lang/Object;
+
+    check-cast v1, Lcom/google/android/gms/internal/ads/zzapa;
+
+    const/4 v2, 0x0
+
+    invoke-direct {v0, p2, v1, v2}, Lk3/p50;-><init>(Lk3/kg0;Lcom/google/android/gms/internal/ads/zzapa;Z)V
+
+    .line 2
+    iget-object v1, p0, Lk3/s50;->b:Lk3/uu;
+
+    new-instance v2, Lk3/uo;
+
+    iget-object v3, p3, Lk3/j40;->a:Ljava/lang/String;
+
+    invoke-direct {v2, p1, p2, v3}, Lk3/uo;-><init>(Lk3/tg0;Lk3/kg0;Ljava/lang/String;)V
+
+    new-instance p1, Lk3/lu;
+
+    const/4 p2, 0x0
+
+    .line 3
+    invoke-direct {p1, v0, p2}, Lk3/lu;-><init>(Lk3/xu;Lk3/gh;)V
+
+    .line 4
+    invoke-virtual {v1, v2, p1}, Lk3/uu;->a(Lk3/uo;Lk3/lu;)Lk3/ju;
+
+    move-result-object p1
+
+    .line 5
+    invoke-virtual {p1}, Lk3/v7;->h()Lk3/fr;
 
     move-result-object p2
 
-    .line 2
-    new-instance v0, Lcom/google/android/gms/internal/ads/zzcso;
+    .line 6
+    iput-object p2, v0, Lk3/p50;->j:Lk3/fr;
 
-    invoke-direct {v0}, Lcom/google/android/gms/internal/ads/zzcso;-><init>()V
+    .line 7
+    iget-object p2, p3, Lk3/j40;->c:Lk3/or;
 
-    .line 3
-    new-instance v1, Lk3/g40;
+    check-cast p2, Lcom/google/android/gms/internal/ads/zzcso;
 
-    invoke-direct {v1, p2, v0, p1}, Lk3/g40;-><init>(Ljava/lang/Object;Lk3/qr;Ljava/lang/String;)V
+    invoke-virtual {p1}, Lk3/v7;->k()Lcom/google/android/gms/internal/ads/zzcvq;
 
-    return-object v1
+    move-result-object p3
+
+    invoke-virtual {p2, p3}, Lcom/google/android/gms/internal/ads/zzcso;->v7(Lcom/google/android/gms/internal/ads/zzana;)V
+
+    .line 8
+    invoke-virtual {p1}, Lk3/ju;->t()Lk3/iu;
+
+    move-result-object p1
+
+    return-object p1
 .end method

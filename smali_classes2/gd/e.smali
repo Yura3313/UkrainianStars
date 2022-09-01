@@ -1,5 +1,5 @@
 .class public final Lgd/e;
-.super Lse/h;
+.super Lse/i;
 .source "IngameInviteToPlayFragment.kt"
 
 # interfaces
@@ -9,7 +9,7 @@
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/p<",
         "Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment;",
         "Ljava/util/Map<",
@@ -21,14 +21,14 @@
         "+",
         "Ljava/lang/Exception;",
         ">;>;",
-        "Lie/h;",
+        "Lie/i;",
         ">;"
     }
 .end annotation
 
 
 # static fields
-.field public static final f:Lgd/e;
+.field public static final g:Lgd/e;
 
 
 # direct methods
@@ -39,7 +39,7 @@
 
     invoke-direct {v0}, Lgd/e;-><init>()V
 
-    sput-object v0, Lgd/e;->f:Lgd/e;
+    sput-object v0, Lgd/e;->g:Lgd/e;
 
     return-void
 .end method
@@ -49,7 +49,7 @@
 
     const/4 v0, 0x2
 
-    invoke-direct {p0, v0}, Lse/h;-><init>(I)V
+    invoke-direct {p0, v0}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -67,11 +67,11 @@
     const-string v0, "$receiver"
 
     .line 2
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string p1, "it"
 
-    invoke-static {p2, p1}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, p1}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 3
     new-instance p1, Ljava/util/LinkedHashMap;
@@ -159,7 +159,7 @@
 
     .line 10
     :cond_3
-    sget-object p1, Lie/h;->a:Lie/h;
+    sget-object p1, Lie/i;->a:Lie/i;
 
     return-object p1
 .end method

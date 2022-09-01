@@ -32,13 +32,13 @@
     .line 2
     iget-object v0, p0, Lqa/r;->a:Lqa/t;
 
-    iget-object v0, v0, Lqa/t;->j0:Lqa/e0;
+    iget-object v0, v0, Lqa/t;->k0:Lqa/e0;
 
     .line 3
     iget-boolean v1, p1, Lqb/a;->d:Z
 
     .line 4
-    iget-object p1, p1, Lqb/o;->e:Lp8/b;
+    iget-object p1, p1, Lqb/o;->e:Lp8/c;
 
     .line 5
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -97,12 +97,12 @@
 
     .line 14
     :cond_0
-    instance-of v4, p1, Lp8/e;
+    instance-of v4, p1, Lp8/f;
 
     if-eqz v4, :cond_8
 
     .line 15
-    check-cast p1, Lp8/e;
+    check-cast p1, Lp8/f;
 
     .line 16
     iget-object v4, v0, Lqa/e0;->a:Landroid/widget/EditText;
@@ -115,7 +115,7 @@
     invoke-virtual {v4, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 18
-    iget-object v1, p1, Lp8/b;->h:Ljava/lang/String;
+    iget-object v1, p1, Lp8/c;->i:Ljava/lang/String;
 
     invoke-static {v1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -149,13 +149,13 @@
     check-cast v1, Landroid/widget/TextView;
 
     .line 22
-    iget-object v4, p1, Lp8/b;->h:Ljava/lang/String;
+    iget-object v4, p1, Lp8/c;->i:Ljava/lang/String;
 
     invoke-virtual {v1, v4}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 23
     :cond_1
-    iget-object v1, p1, Lp8/e;->j:Ljava/lang/String;
+    iget-object v1, p1, Lp8/f;->k:Ljava/lang/String;
 
     invoke-static {v1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -168,7 +168,7 @@
     goto :goto_0
 
     :cond_2
-    iget-object v1, p1, Lp8/e;->j:Ljava/lang/String;
+    iget-object v1, p1, Lp8/f;->k:Ljava/lang/String;
 
     .line 24
     :goto_0
@@ -179,7 +179,7 @@
     const/high16 v1, 0x20000
 
     .line 25
-    iget v4, p1, Lp8/e;->k:I
+    iget v4, p1, Lp8/f;->l:I
 
     if-eq v4, v2, :cond_6
 
@@ -242,11 +242,11 @@
     invoke-virtual {v2, v1}, Landroid/widget/TextView;->setInputType(I)V
 
     .line 31
-    iget-boolean v1, p1, Lp8/b;->g:Z
+    iget-boolean v1, p1, Lp8/c;->h:Z
 
     if-nez v1, :cond_7
 
-    iget-object v1, p1, Lp8/b;->i:Ljava/lang/String;
+    iget-object v1, p1, Lp8/c;->j:Ljava/lang/String;
 
     invoke-static {v1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -266,7 +266,7 @@
     .line 33
     iget-object v1, v0, Lqa/e0;->p:Landroid/widget/TextView;
 
-    iget-object p1, p1, Lp8/b;->i:Ljava/lang/String;
+    iget-object p1, p1, Lp8/c;->j:Ljava/lang/String;
 
     invoke-virtual {v1, p1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 

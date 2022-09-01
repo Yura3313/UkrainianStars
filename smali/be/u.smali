@@ -1,5 +1,5 @@
 .class public final Lbe/u;
-.super Lbe/v0;
+.super Lbe/x0;
 .source "NotificationBadgeStorage.kt"
 
 
@@ -12,7 +12,7 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lbe/v0<",
+        "Lbe/x0<",
         "Lbe/t;",
         ">;"
     }
@@ -23,7 +23,7 @@
 .method public constructor <init>()V
     .locals 0
 
-    invoke-direct {p0}, Lbe/v0;-><init>()V
+    invoke-direct {p0}, Lbe/x0;-><init>()V
 
     return-void
 .end method
@@ -37,7 +37,7 @@
 
     invoke-direct {v0, p1}, Lbe/u$a$a;-><init>(I)V
 
-    invoke-virtual {p0, v0}, Lbe/v0;->a(Lbe/a;)V
+    invoke-virtual {p0, v0}, Lbe/x0;->a(Lbe/a;)V
 
     return-void
 .end method
@@ -49,7 +49,7 @@
 
     invoke-direct {v0, p1}, Lbe/u$a$b;-><init>(Z)V
 
-    invoke-virtual {p0, v0}, Lbe/v0;->a(Lbe/a;)V
+    invoke-virtual {p0, v0}, Lbe/x0;->a(Lbe/a;)V
 
     return-void
 .end method

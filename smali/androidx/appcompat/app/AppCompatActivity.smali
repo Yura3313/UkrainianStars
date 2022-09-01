@@ -250,7 +250,7 @@
     if-nez v0, :cond_0
 
     .line 2
-    sget-object v0, Landroidx/appcompat/app/i;->f:Lm/c;
+    sget-object v0, Landroidx/appcompat/app/i;->g:Lm/c;
 
     .line 3
     new-instance v0, Landroidx/appcompat/app/AppCompatDelegateImpl;

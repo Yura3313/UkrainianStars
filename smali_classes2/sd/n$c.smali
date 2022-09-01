@@ -18,26 +18,26 @@
 
 
 # instance fields
-.field public final synthetic f:Lsd/n;
+.field public final synthetic g:Lsd/n;
 
-.field public final synthetic g:Ljava/lang/String;
+.field public final synthetic h:Ljava/lang/String;
 
-.field public final synthetic h:Lcom/supercell/id/model/IdSocialAccount;
+.field public final synthetic i:Lcom/supercell/id/model/IdSocialAccount;
 
-.field public final synthetic i:Ljava/lang/String;
+.field public final synthetic j:Ljava/lang/String;
 
 
 # direct methods
 .method public constructor <init>(Lsd/n;Ljava/lang/String;Lcom/supercell/id/model/IdSocialAccount;Ljava/lang/String;)V
     .locals 0
 
-    iput-object p1, p0, Lsd/n$c;->f:Lsd/n;
+    iput-object p1, p0, Lsd/n$c;->g:Lsd/n;
 
-    iput-object p2, p0, Lsd/n$c;->g:Ljava/lang/String;
+    iput-object p2, p0, Lsd/n$c;->h:Ljava/lang/String;
 
-    iput-object p3, p0, Lsd/n$c;->h:Lcom/supercell/id/model/IdSocialAccount;
+    iput-object p3, p0, Lsd/n$c;->i:Lcom/supercell/id/model/IdSocialAccount;
 
-    iput-object p4, p0, Lsd/n$c;->i:Ljava/lang/String;
+    iput-object p4, p0, Lsd/n$c;->j:Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -57,7 +57,7 @@
     move-result-object p1
 
     .line 2
-    iget-object p1, p1, Lae/u;->m:La5/d0;
+    iget-object p1, p1, Lae/u;->m:Lpe/a;
 
     const-string v0, "Public Profile - Profile Actions Drop Down"
 
@@ -68,42 +68,42 @@
     const/16 v3, 0x18
 
     .line 3
-    invoke-static {p1, v0, v1, v2, v3}, La5/d0;->a(La5/d0;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;I)V
+    invoke-static {p1, v0, v1, v2, v3}, Lpe/a;->e(Lpe/a;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;I)V
 
     .line 4
-    iget-object p1, p0, Lsd/n$c;->g:Ljava/lang/String;
+    iget-object p1, p0, Lsd/n$c;->h:Ljava/lang/String;
 
     if-eqz p1, :cond_1
 
     .line 5
-    iget-object p1, p0, Lsd/n$c;->f:Lsd/n;
+    iget-object p1, p0, Lsd/n$c;->g:Lsd/n;
 
-    invoke-static {p1}, Lcom/android/billingclient/api/c0;->e(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
+    invoke-static {p1}, Lcom/android/billingclient/api/b0;->f(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
 
     move-result-object p1
 
     if-eqz p1, :cond_1
 
-    sget-object v0, Lwc/m1;->x0:Lwc/m1$a;
+    sget-object v0, Lwc/n1;->y0:Lwc/n1$a;
 
-    iget-object v0, p0, Lsd/n$c;->h:Lcom/supercell/id/model/IdSocialAccount;
+    iget-object v0, p0, Lsd/n$c;->i:Lcom/supercell/id/model/IdSocialAccount;
 
-    iget-object v1, p0, Lsd/n$c;->i:Ljava/lang/String;
+    iget-object v1, p0, Lsd/n$c;->j:Ljava/lang/String;
 
-    iget-object v2, p0, Lsd/n$c;->g:Ljava/lang/String;
+    iget-object v2, p0, Lsd/n$c;->h:Ljava/lang/String;
 
     const-string v3, "qrCodeUrl"
 
     .line 6
-    invoke-static {v2, v3}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v2, v3}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 7
-    new-instance v4, Lwc/m1;
+    new-instance v4, Lwc/n1;
 
-    invoke-direct {v4}, Lwc/m1;-><init>()V
+    invoke-direct {v4}, Lwc/n1;-><init>()V
 
     .line 8
-    iget-object v5, v4, Landroidx/fragment/app/Fragment;->l:Landroid/os/Bundle;
+    iget-object v5, v4, Landroidx/fragment/app/Fragment;->m:Landroid/os/Bundle;
 
     if-eqz v5, :cond_0
 
@@ -133,7 +133,7 @@
     invoke-virtual {v4, v5}, Landroidx/fragment/app/Fragment;->D0(Landroid/os/Bundle;)V
 
     .line 14
-    sget-object v0, Lcom/supercell/id/ui/MainActivity;->s:Ljava/lang/ref/WeakReference;
+    sget-object v0, Lcom/supercell/id/ui/MainActivity;->t:Ljava/lang/ref/WeakReference;
 
     const-string v0, "popupDialog"
 

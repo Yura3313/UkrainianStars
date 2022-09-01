@@ -6,7 +6,7 @@
 
 
 # instance fields
-.field public final f:Ly5/e;
+.field public final g:Ly5/e;
 
 
 # direct methods
@@ -15,7 +15,7 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Ly5/f;->f:Ly5/e;
+    iput-object p1, p0, Ly5/f;->g:Ly5/e;
 
     return-void
 .end method
@@ -25,7 +25,7 @@
 .method public final handleMessage(Landroid/os/Message;)Z
     .locals 4
 
-    iget-object v0, p0, Ly5/f;->f:Ly5/e;
+    iget-object v0, p0, Ly5/f;->g:Ly5/e;
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 

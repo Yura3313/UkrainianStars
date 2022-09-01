@@ -1,25 +1,25 @@
 .class public final Lk3/uj0;
-.super Ljava/lang/Object;
-.source "com.google.android.gms:play-services-ads-lite@@19.3.0"
+.super Landroid/widget/RelativeLayout;
+.source "com.google.android.gms:play-services-ads@@19.3.0"
 
 
-# instance fields
-.field public a:Ljava/lang/Object;
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
-    .end annotation
-.end field
-
-.field public b:Lk3/uj0;
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
-    .end annotation
-.end field
+# static fields
+.field public static final synthetic g:I
 
 
 # direct methods
-.method public constructor <init>()V
+.method public constructor <init>(Landroid/content/Context;)V
     .locals 0
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0, p1}, Landroid/widget/RelativeLayout;-><init>(Landroid/content/Context;)V
 
     return-void
+.end method
+
+.method public static getWebView()Landroid/webkit/WebView;
+    .locals 1
+
+    const/4 v0, 0x0
+
+    return-object v0
 .end method

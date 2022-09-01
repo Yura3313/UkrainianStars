@@ -15,20 +15,20 @@
 
 
 # instance fields
-.field public final a:Lvc/s;
+.field public final a:Lvc/r;
 
 
 # direct methods
-.method public constructor <init>(Lvc/s;)V
+.method public constructor <init>(Lvc/r;)V
     .locals 1
 
     const-string v0, "profileInfo"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-direct {p0}, Lbe/y$a;-><init>()V
 
-    iput-object p1, p0, Lbe/y$a$e;->a:Lvc/s;
+    iput-object p1, p0, Lbe/y$a$e;->a:Lvc/r;
 
     return-void
 .end method
@@ -46,11 +46,11 @@
 
     check-cast p1, Lbe/y$a$e;
 
-    iget-object v0, p0, Lbe/y$a$e;->a:Lvc/s;
+    iget-object v0, p0, Lbe/y$a$e;->a:Lvc/r;
 
-    iget-object p1, p1, Lbe/y$a$e;->a:Lvc/s;
+    iget-object p1, p1, Lbe/y$a$e;->a:Lvc/r;
 
-    invoke-static {v0, p1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, p1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -73,11 +73,11 @@
 .method public final hashCode()I
     .locals 1
 
-    iget-object v0, p0, Lbe/y$a$e;->a:Lvc/s;
+    iget-object v0, p0, Lbe/y$a$e;->a:Lvc/r;
 
     if-eqz v0, :cond_0
 
-    invoke-virtual {v0}, Lvc/s;->hashCode()I
+    invoke-virtual {v0}, Lvc/r;->hashCode()I
 
     move-result v0
 
@@ -106,48 +106,48 @@
     new-instance v15, Lcom/supercell/id/model/IdProfile;
 
     .line 3
-    iget-object v3, v0, Lbe/y$a$e;->a:Lvc/s;
+    iget-object v3, v0, Lbe/y$a$e;->a:Lvc/r;
 
     .line 4
-    iget-object v4, v3, Lvc/s;->a:Lcom/supercell/id/model/IdSocialAccount;
+    iget-object v4, v3, Lvc/r;->a:Lcom/supercell/id/model/IdSocialAccount;
 
     .line 5
-    iget-object v5, v3, Lvc/s;->b:Ljava/lang/String;
+    iget-object v5, v3, Lvc/r;->b:Ljava/lang/String;
 
     .line 6
-    iget-object v6, v3, Lvc/s;->c:Ljava/util/Date;
+    iget-object v6, v3, Lvc/r;->c:Ljava/util/Date;
 
     .line 7
-    iget-object v7, v3, Lvc/s;->d:Ljava/lang/String;
+    iget-object v7, v3, Lvc/r;->d:Ljava/lang/String;
 
     .line 8
-    iget-object v8, v3, Lvc/s;->e:Ljava/lang/String;
+    iget-object v8, v3, Lvc/r;->e:Ljava/lang/String;
 
     .line 9
-    iget-object v9, v3, Lvc/s;->f:Ljava/lang/String;
+    iget-object v9, v3, Lvc/r;->f:Ljava/lang/String;
 
     .line 10
-    iget-object v10, v3, Lvc/s;->g:Ljava/util/Date;
+    iget-object v10, v3, Lvc/r;->g:Ljava/util/Date;
 
     .line 11
-    iget-object v11, v3, Lvc/s;->h:Ljava/lang/String;
+    iget-object v11, v3, Lvc/r;->h:Ljava/lang/String;
 
     .line 12
-    iget-object v12, v3, Lvc/s;->i:Ljava/lang/String;
+    iget-object v12, v3, Lvc/r;->i:Ljava/lang/String;
 
     .line 13
-    iget-object v13, v3, Lvc/s;->j:Ljava/lang/String;
+    iget-object v13, v3, Lvc/r;->j:Ljava/lang/String;
 
     .line 14
-    iget-object v14, v3, Lvc/s;->k:Ljava/lang/String;
+    iget-object v14, v3, Lvc/r;->k:Ljava/lang/String;
 
     move-object/from16 p1, v2
 
     .line 15
-    iget-boolean v2, v3, Lvc/s;->l:Z
+    iget-boolean v2, v3, Lvc/r;->l:Z
 
     .line 16
-    iget-boolean v3, v3, Lvc/s;->m:Z
+    iget-boolean v3, v3, Lvc/r;->m:Z
 
     move/from16 v16, v3
 
@@ -161,7 +161,7 @@
     if-eqz v3, :cond_0
 
     .line 18
-    iget-object v3, v3, Lcom/supercell/id/model/IdProfile;->u:Ljava/util/List;
+    iget-object v3, v3, Lcom/supercell/id/model/IdProfile;->v:Ljava/util/List;
 
     if-eqz v3, :cond_0
 
@@ -169,7 +169,7 @@
 
     .line 19
     :cond_0
-    sget-object v3, Lje/l;->f:Lje/l;
+    sget-object v3, Lje/l;->g:Lje/l;
 
     :goto_0
     move-object/from16 v17, v3
@@ -184,7 +184,7 @@
     if-eqz v3, :cond_1
 
     .line 21
-    iget-object v3, v3, Lcom/supercell/id/model/IdProfile;->v:Ljava/util/List;
+    iget-object v3, v3, Lcom/supercell/id/model/IdProfile;->w:Ljava/util/List;
 
     if-eqz v3, :cond_1
 
@@ -192,16 +192,16 @@
 
     .line 22
     :cond_1
-    sget-object v3, Lje/l;->f:Lje/l;
+    sget-object v3, Lje/l;->g:Lje/l;
 
     :goto_1
     move-object/from16 v18, v3
 
     .line 23
-    iget-object v3, v0, Lbe/y$a$e;->a:Lvc/s;
+    iget-object v3, v0, Lbe/y$a$e;->a:Lvc/r;
 
     .line 24
-    iget v3, v3, Lvc/s;->q:I
+    iget v3, v3, Lvc/r;->q:I
 
     if-eqz v1, :cond_2
 
@@ -213,7 +213,7 @@
     if-eqz v1, :cond_2
 
     .line 26
-    iget-boolean v1, v1, Lcom/supercell/id/model/IdProfile;->x:Z
+    iget-boolean v1, v1, Lcom/supercell/id/model/IdProfile;->y:Z
 
     move/from16 v20, v1
 
@@ -262,7 +262,7 @@
     move-result-object v0
 
     .line 2
-    iget-object v1, p0, Lbe/y$a$e;->a:Lvc/s;
+    iget-object v1, p0, Lbe/y$a$e;->a:Lvc/r;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 

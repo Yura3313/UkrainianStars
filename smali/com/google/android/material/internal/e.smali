@@ -25,39 +25,39 @@
 
 
 # instance fields
-.field public f:Lcom/google/android/material/internal/NavigationMenuView;
+.field public final A:Lcom/google/android/material/internal/e$a;
 
-.field public g:Landroid/widget/LinearLayout;
+.field public g:Lcom/google/android/material/internal/NavigationMenuView;
 
-.field public h:Landroidx/appcompat/view/menu/e;
+.field public h:Landroid/widget/LinearLayout;
 
-.field public i:I
+.field public i:Landroidx/appcompat/view/menu/e;
 
-.field public j:Lcom/google/android/material/internal/e$c;
+.field public j:I
 
-.field public k:Landroid/view/LayoutInflater;
+.field public k:Lcom/google/android/material/internal/e$c;
 
-.field public l:I
+.field public l:Landroid/view/LayoutInflater;
 
-.field public m:Z
+.field public m:I
 
-.field public n:Landroid/content/res/ColorStateList;
+.field public n:Z
 
 .field public o:Landroid/content/res/ColorStateList;
 
-.field public p:Landroid/graphics/drawable/Drawable;
+.field public p:Landroid/content/res/ColorStateList;
 
-.field public q:I
+.field public q:Landroid/graphics/drawable/Drawable;
 
 .field public r:I
 
 .field public s:I
 
-.field public t:Z
+.field public t:I
 
 .field public u:Z
 
-.field public v:I
+.field public v:Z
 
 .field public w:I
 
@@ -65,7 +65,7 @@
 
 .field public y:I
 
-.field public final z:Lcom/google/android/material/internal/e$a;
+.field public z:I
 
 
 # direct methods
@@ -78,19 +78,19 @@
     const/4 v0, 0x1
 
     .line 2
-    iput-boolean v0, p0, Lcom/google/android/material/internal/e;->u:Z
+    iput-boolean v0, p0, Lcom/google/android/material/internal/e;->v:Z
 
     const/4 v0, -0x1
 
     .line 3
-    iput v0, p0, Lcom/google/android/material/internal/e;->y:I
+    iput v0, p0, Lcom/google/android/material/internal/e;->z:I
 
     .line 4
     new-instance v0, Lcom/google/android/material/internal/e$a;
 
     invoke-direct {v0, p0}, Lcom/google/android/material/internal/e$a;-><init>(Lcom/google/android/material/internal/e;)V
 
-    iput-object v0, p0, Lcom/google/android/material/internal/e;->z:Lcom/google/android/material/internal/e$a;
+    iput-object v0, p0, Lcom/google/android/material/internal/e;->A:Lcom/google/android/material/internal/e$a;
 
     return-void
 .end method
@@ -101,7 +101,7 @@
     .locals 0
 
     .line 1
-    iput p1, p0, Lcom/google/android/material/internal/e;->q:I
+    iput p1, p0, Lcom/google/android/material/internal/e;->r:I
 
     const/4 p1, 0x0
 
@@ -121,7 +121,7 @@
     .locals 0
 
     .line 1
-    iget-object p1, p0, Lcom/google/android/material/internal/e;->j:Lcom/google/android/material/internal/e$c;
+    iget-object p1, p0, Lcom/google/android/material/internal/e;->k:Lcom/google/android/material/internal/e$c;
 
     if-eqz p1, :cond_0
 
@@ -159,10 +159,10 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/google/android/material/internal/e;->k:Landroid/view/LayoutInflater;
+    iput-object v0, p0, Lcom/google/android/material/internal/e;->l:Landroid/view/LayoutInflater;
 
     .line 2
-    iput-object p2, p0, Lcom/google/android/material/internal/e;->h:Landroidx/appcompat/view/menu/e;
+    iput-object p2, p0, Lcom/google/android/material/internal/e;->i:Landroidx/appcompat/view/menu/e;
 
     .line 3
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
@@ -177,7 +177,7 @@
 
     move-result p1
 
-    iput p1, p0, Lcom/google/android/material/internal/e;->x:I
+    iput p1, p0, Lcom/google/android/material/internal/e;->y:I
 
     return-void
 .end method
@@ -185,7 +185,7 @@
 .method public final getId()I
     .locals 1
 
-    iget v0, p0, Lcom/google/android/material/internal/e;->i:I
+    iget v0, p0, Lcom/google/android/material/internal/e;->j:I
 
     return v0
 .end method
@@ -211,7 +211,7 @@
     if-eqz v0, :cond_0
 
     .line 4
-    iget-object v1, p0, Lcom/google/android/material/internal/e;->f:Lcom/google/android/material/internal/NavigationMenuView;
+    iget-object v1, p0, Lcom/google/android/material/internal/e;->g:Lcom/google/android/material/internal/NavigationMenuView;
 
     invoke-virtual {v1, v0}, Landroid/view/View;->restoreHierarchyState(Landroid/util/SparseArray;)V
 
@@ -226,7 +226,7 @@
     if-eqz v0, :cond_8
 
     .line 6
-    iget-object v1, p0, Lcom/google/android/material/internal/e;->j:Lcom/google/android/material/internal/e$c;
+    iget-object v1, p0, Lcom/google/android/material/internal/e;->k:Lcom/google/android/material/internal/e$c;
 
     invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -395,7 +395,7 @@
     if-eqz p1, :cond_9
 
     .line 29
-    iget-object v0, p0, Lcom/google/android/material/internal/e;->g:Landroid/widget/LinearLayout;
+    iget-object v0, p0, Lcom/google/android/material/internal/e;->h:Landroid/widget/LinearLayout;
 
     invoke-virtual {v0, p1}, Landroid/view/View;->restoreHierarchyState(Landroid/util/SparseArray;)V
 
@@ -407,7 +407,7 @@
     .locals 0
 
     .line 1
-    iput p1, p0, Lcom/google/android/material/internal/e;->r:I
+    iput p1, p0, Lcom/google/android/material/internal/e;->s:I
 
     const/4 p1, 0x0
 
@@ -434,7 +434,7 @@
     invoke-direct {v0}, Landroid/os/Bundle;-><init>()V
 
     .line 2
-    iget-object v1, p0, Lcom/google/android/material/internal/e;->f:Lcom/google/android/material/internal/NavigationMenuView;
+    iget-object v1, p0, Lcom/google/android/material/internal/e;->g:Lcom/google/android/material/internal/NavigationMenuView;
 
     if-eqz v1, :cond_0
 
@@ -444,7 +444,7 @@
     invoke-direct {v1}, Landroid/util/SparseArray;-><init>()V
 
     .line 4
-    iget-object v2, p0, Lcom/google/android/material/internal/e;->f:Lcom/google/android/material/internal/NavigationMenuView;
+    iget-object v2, p0, Lcom/google/android/material/internal/e;->g:Lcom/google/android/material/internal/NavigationMenuView;
 
     invoke-virtual {v2, v1}, Landroid/view/View;->saveHierarchyState(Landroid/util/SparseArray;)V
 
@@ -455,7 +455,7 @@
 
     .line 6
     :cond_0
-    iget-object v1, p0, Lcom/google/android/material/internal/e;->j:Lcom/google/android/material/internal/e$c;
+    iget-object v1, p0, Lcom/google/android/material/internal/e;->k:Lcom/google/android/material/internal/e$c;
 
     if-eqz v1, :cond_5
 
@@ -565,7 +565,7 @@
 
     .line 25
     :cond_5
-    iget-object v1, p0, Lcom/google/android/material/internal/e;->g:Landroid/widget/LinearLayout;
+    iget-object v1, p0, Lcom/google/android/material/internal/e;->h:Landroid/widget/LinearLayout;
 
     if-eqz v1, :cond_6
 
@@ -575,7 +575,7 @@
     invoke-direct {v1}, Landroid/util/SparseArray;-><init>()V
 
     .line 27
-    iget-object v2, p0, Lcom/google/android/material/internal/e;->g:Landroid/widget/LinearLayout;
+    iget-object v2, p0, Lcom/google/android/material/internal/e;->h:Landroid/widget/LinearLayout;
 
     invoke-virtual {v2, v1}, Landroid/view/View;->saveHierarchyState(Landroid/util/SparseArray;)V
 
@@ -600,7 +600,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/internal/e;->j:Lcom/google/android/material/internal/e$c;
+    iget-object v0, p0, Lcom/google/android/material/internal/e;->k:Lcom/google/android/material/internal/e$c;
 
     if-eqz v0, :cond_0
 
@@ -615,7 +615,7 @@
     .locals 4
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/internal/e;->g:Landroid/widget/LinearLayout;
+    iget-object v0, p0, Lcom/google/android/material/internal/e;->h:Landroid/widget/LinearLayout;
 
     invoke-virtual {v0}, Landroid/view/ViewGroup;->getChildCount()I
 
@@ -625,12 +625,12 @@
 
     if-nez v0, :cond_0
 
-    iget-boolean v0, p0, Lcom/google/android/material/internal/e;->u:Z
+    iget-boolean v0, p0, Lcom/google/android/material/internal/e;->v:Z
 
     if-eqz v0, :cond_0
 
     .line 2
-    iget v0, p0, Lcom/google/android/material/internal/e;->w:I
+    iget v0, p0, Lcom/google/android/material/internal/e;->x:I
 
     goto :goto_0
 
@@ -639,7 +639,7 @@
 
     .line 3
     :goto_0
-    iget-object v2, p0, Lcom/google/android/material/internal/e;->f:Lcom/google/android/material/internal/NavigationMenuView;
+    iget-object v2, p0, Lcom/google/android/material/internal/e;->g:Lcom/google/android/material/internal/NavigationMenuView;
 
     invoke-virtual {v2}, Landroid/view/View;->getPaddingBottom()I
 

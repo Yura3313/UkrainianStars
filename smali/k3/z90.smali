@@ -3,62 +3,146 @@
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lk3/bd0;
+.implements Lk3/cd0;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "Lk3/bd0<",
-        "Lk3/aa0;",
+        "Lk3/cd0<",
+        "Lk3/y90;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final a:Lk3/gm0;
+.field public final a:Ljava/lang/String;
 
-.field public final b:Lk3/ug0;
+.field public final b:Lk3/jm0;
+
+.field public final c:Lk3/c00;
 
 
 # direct methods
-.method public constructor <init>(Lk3/gm0;Lk3/ug0;)V
+.method public constructor <init>(Ljava/lang/String;Lk3/jm0;Lk3/c00;)V
     .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lk3/z90;->a:Lk3/gm0;
+    iput-object p1, p0, Lk3/z90;->a:Ljava/lang/String;
 
     .line 3
-    iput-object p2, p0, Lk3/z90;->b:Lk3/ug0;
+    iput-object p2, p0, Lk3/z90;->b:Lk3/jm0;
+
+    .line 4
+    iput-object p3, p0, Lk3/z90;->c:Lk3/c00;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a()Lk3/em0;
+.method public final a()Lk3/hm0;
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lk3/em0<",
-            "Lk3/aa0;",
+            "Lk3/hm0<",
+            "Lk3/y90;",
             ">;"
         }
     .end annotation
 
-    iget-object v0, p0, Lk3/z90;->a:Lk3/gm0;
+    .line 1
+    iget-object v0, p0, Lk3/z90;->a:Ljava/lang/String;
 
-    new-instance v1, Lk3/ba0;
+    .line 2
+    new-instance v1, Ljava/math/BigInteger;
 
-    invoke-direct {v1, p0}, Lk3/ba0;-><init>(Lk3/z90;)V
+    invoke-direct {v1, v0}, Ljava/math/BigInteger;-><init>(Ljava/lang/String;)V
 
-    invoke-interface {v0, v1}, Lk3/gm0;->c(Ljava/util/concurrent/Callable;)Lk3/em0;
+    sget-object v0, Ljava/math/BigInteger;->ONE:Ljava/math/BigInteger;
+
+    invoke-virtual {v1, v0}, Ljava/math/BigInteger;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_3
+
+    .line 3
+    sget-object v0, Lk3/o;->J0:Lk3/i;
+
+    .line 4
+    sget-object v1, Lk3/o51;->j:Lk3/o51;
+
+    iget-object v1, v1, Lk3/o51;->f:Lk3/l;
+
+    .line 5
+    invoke-virtual {v1, v0}, Lk3/l;->a(Lk3/f;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    .line 6
+    check-cast v0, Ljava/lang/String;
+
+    .line 7
+    sget v1, Lk3/zj0;->a:I
+
+    if-eqz v0, :cond_1
+
+    .line 8
+    invoke-virtual {v0}, Ljava/lang/String;->isEmpty()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    goto :goto_1
+
+    :cond_1
+    :goto_0
+    const/4 v0, 0x1
+
+    :goto_1
+    if-eqz v0, :cond_2
+
+    goto :goto_2
+
+    .line 9
+    :cond_2
+    iget-object v0, p0, Lk3/z90;->b:Lk3/jm0;
+
+    new-instance v1, Lk3/aa0;
+
+    invoke-direct {v1, p0}, Lk3/aa0;-><init>(Lk3/z90;)V
+
+    invoke-interface {v0, v1}, Lk3/jm0;->c(Ljava/util/concurrent/Callable;)Lk3/hm0;
+
+    move-result-object v0
+
+    return-object v0
+
+    .line 10
+    :cond_3
+    :goto_2
+    new-instance v0, Lk3/y90;
+
+    new-instance v1, Landroid/os/Bundle;
+
+    invoke-direct {v1}, Landroid/os/Bundle;-><init>()V
+
+    invoke-direct {v0, v1}, Lk3/y90;-><init>(Landroid/os/Bundle;)V
+
+    invoke-static {v0}, Lk3/dm0;->g(Ljava/lang/Object;)Lk3/hm0;
 
     move-result-object v0
 

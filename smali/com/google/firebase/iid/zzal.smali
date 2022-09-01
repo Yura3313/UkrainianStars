@@ -3,7 +3,7 @@
 
 
 # instance fields
-.field public final f:I
+.field public final g:I
 
 
 # direct methods
@@ -14,7 +14,7 @@
     invoke-direct {p0, p2}, Ljava/lang/Exception;-><init>(Ljava/lang/String;)V
 
     .line 2
-    iput p1, p0, Lcom/google/firebase/iid/zzal;->f:I
+    iput p1, p0, Lcom/google/firebase/iid/zzal;->g:I
 
     return-void
 .end method

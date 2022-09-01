@@ -22,7 +22,7 @@
 
 
 # virtual methods
-.method public final requestBodyConverter(Ljava/lang/reflect/Type;[Ljava/lang/annotation/Annotation;[Ljava/lang/annotation/Annotation;Lef/d0;)Lef/j;
+.method public final requestBodyConverter(Ljava/lang/reflect/Type;[Ljava/lang/annotation/Annotation;[Ljava/lang/annotation/Annotation;Lef/c0;)Lef/j;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -32,7 +32,7 @@
             "Ljava/lang/annotation/Annotation;",
             "[",
             "Ljava/lang/annotation/Annotation;",
-            "Lef/d0;",
+            "Lef/c0;",
             ")",
             "Lef/j<",
             "*",
@@ -62,7 +62,7 @@
     return-object p2
 .end method
 
-.method public final responseBodyConverter(Ljava/lang/reflect/Type;[Ljava/lang/annotation/Annotation;Lef/d0;)Lef/j;
+.method public final responseBodyConverter(Ljava/lang/reflect/Type;[Ljava/lang/annotation/Annotation;Lef/c0;)Lef/j;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -70,7 +70,7 @@
             "Ljava/lang/reflect/Type;",
             "[",
             "Ljava/lang/annotation/Annotation;",
-            "Lef/d0;",
+            "Lef/c0;",
             ")",
             "Lef/j<",
             "Lokhttp3/ResponseBody;",

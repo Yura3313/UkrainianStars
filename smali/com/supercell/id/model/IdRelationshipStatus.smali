@@ -27,7 +27,7 @@
     .end annotation
 .end field
 
-.field public static final f:Lcom/supercell/id/model/IdRelationshipStatus$b;
+.field public static final g:Lcom/supercell/id/model/IdRelationshipStatus$b;
 
 
 # direct methods
@@ -38,7 +38,7 @@
 
     invoke-direct {v0}, Lcom/supercell/id/model/IdRelationshipStatus$b;-><init>()V
 
-    sput-object v0, Lcom/supercell/id/model/IdRelationshipStatus;->f:Lcom/supercell/id/model/IdRelationshipStatus$b;
+    sput-object v0, Lcom/supercell/id/model/IdRelationshipStatus;->g:Lcom/supercell/id/model/IdRelationshipStatus$b;
 
     new-instance v0, Lcom/supercell/id/model/IdRelationshipStatus$a;
 
@@ -72,10 +72,10 @@
 
     const-string p2, "dest"
 
-    invoke-static {p1, p2}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p2}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
-    invoke-static {}, Lvc/f0;->values()[Lvc/f0;
+    invoke-static {}, Lvc/c0;->values()[Lvc/c0;
 
     move-result-object p2
 
@@ -90,14 +90,14 @@
     aget-object v2, p2, v1
 
     .line 3
-    iget-object v3, v2, Lvc/f0;->f:Ljava/lang/Class;
+    iget-object v3, v2, Lvc/c0;->g:Ljava/lang/Class;
 
     .line 4
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     move-result-object v4
 
-    invoke-static {v3, v4}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v3, v4}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v3
 
@@ -122,7 +122,7 @@
     check-cast p2, Lcom/supercell/id/model/IdRelationshipStatus$Acquaintance;
 
     .line 9
-    iget-object p2, p2, Lcom/supercell/id/model/IdRelationshipStatus$Acquaintance;->g:Ljava/util/Date;
+    iget-object p2, p2, Lcom/supercell/id/model/IdRelationshipStatus$Acquaintance;->h:Ljava/util/Date;
 
     .line 10
     invoke-virtual {p2}, Ljava/util/Date;->getTime()J

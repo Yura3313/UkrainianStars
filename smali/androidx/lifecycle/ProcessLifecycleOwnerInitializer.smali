@@ -81,7 +81,7 @@
     move-result-object v0
 
     .line 6
-    sget-object v1, Landroidx/lifecycle/q;->n:Landroidx/lifecycle/q;
+    sget-object v1, Landroidx/lifecycle/q;->o:Landroidx/lifecycle/q;
 
     invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -90,10 +90,10 @@
 
     invoke-direct {v3}, Landroid/os/Handler;-><init>()V
 
-    iput-object v3, v1, Landroidx/lifecycle/q;->j:Landroid/os/Handler;
+    iput-object v3, v1, Landroidx/lifecycle/q;->k:Landroid/os/Handler;
 
     .line 8
-    iget-object v3, v1, Landroidx/lifecycle/q;->k:Landroidx/lifecycle/k;
+    iget-object v3, v1, Landroidx/lifecycle/q;->l:Landroidx/lifecycle/k;
 
     sget-object v4, Landroidx/lifecycle/f$b;->ON_CREATE:Landroidx/lifecycle/f$b;
 

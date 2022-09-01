@@ -61,7 +61,7 @@
     const-string v1, "E"
 
     .line 2
-    iget-boolean v2, v0, Lcom/google/android/gms/internal/ads/v5$b;->h:Z
+    iget-boolean v2, v0, Lcom/google/android/gms/internal/ads/v5$b;->i:Z
 
     const/4 v3, 0x0
 
@@ -71,11 +71,11 @@
     invoke-virtual {v0}, Lcom/google/android/gms/internal/ads/v5$b;->n()V
 
     .line 4
-    iput-boolean v3, v0, Lcom/google/android/gms/internal/ads/v5$b;->h:Z
+    iput-boolean v3, v0, Lcom/google/android/gms/internal/ads/v5$b;->i:Z
 
     .line 5
     :cond_0
-    iget-object v0, v0, Lcom/google/android/gms/internal/ads/v5$b;->g:Lcom/google/android/gms/internal/ads/v5;
+    iget-object v0, v0, Lcom/google/android/gms/internal/ads/v5$b;->h:Lcom/google/android/gms/internal/ads/v5;
 
     check-cast v0, Lcom/google/android/gms/internal/ads/a0;
 
@@ -141,7 +141,7 @@
     sget-object v2, Lcom/google/android/gms/internal/ads/r6;->h:Ljava/lang/String;
 
     .line 13
-    iget-boolean v4, v1, Lcom/google/android/gms/internal/ads/v5$b;->h:Z
+    iget-boolean v4, v1, Lcom/google/android/gms/internal/ads/v5$b;->i:Z
 
     if-eqz v4, :cond_3
 
@@ -149,11 +149,11 @@
     invoke-virtual {v1}, Lcom/google/android/gms/internal/ads/v5$b;->n()V
 
     .line 15
-    iput-boolean v3, v1, Lcom/google/android/gms/internal/ads/v5$b;->h:Z
+    iput-boolean v3, v1, Lcom/google/android/gms/internal/ads/v5$b;->i:Z
 
     .line 16
     :cond_3
-    iget-object v1, v1, Lcom/google/android/gms/internal/ads/v5$b;->g:Lcom/google/android/gms/internal/ads/v5;
+    iget-object v1, v1, Lcom/google/android/gms/internal/ads/v5$b;->h:Lcom/google/android/gms/internal/ads/v5;
 
     check-cast v1, Lcom/google/android/gms/internal/ads/a0;
 

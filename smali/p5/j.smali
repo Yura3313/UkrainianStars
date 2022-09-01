@@ -49,7 +49,7 @@
 .method public final d()Ln5/v0$b;
     .locals 1
 
-    sget-object v0, Ln5/v0$b;->j:Ln5/v0$b;
+    sget-object v0, Ln5/v0$b;->k:Ln5/v0$b;
 
     return-object v0
 .end method
@@ -89,7 +89,7 @@
 
     move-result v0
 
-    invoke-static {v0}, Lr5/j0;->e(I)V
+    invoke-static {v0}, Lr5/l0;->e(I)V
 
     .line 3
     new-instance v0, Ljava/math/BigInteger;
@@ -110,7 +110,7 @@
 
     move-result v0
 
-    invoke-static {v0}, Lr5/j0;->c(I)V
+    invoke-static {v0}, Lr5/l0;->c(I)V
 
     .line 4
     invoke-virtual {p1}, Ln5/o1;->y()Ln5/m1;

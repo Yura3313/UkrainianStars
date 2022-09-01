@@ -19,18 +19,18 @@
 
 .field public final synthetic b:Ljd/c;
 
-.field public final synthetic c:Lse/o;
+.field public final synthetic c:Lse/p;
 
 
 # direct methods
-.method public constructor <init>(Ljd/c$a;Ljd/c;Lse/o;)V
+.method public constructor <init>(Ljd/c$a;Ljd/c;Lse/p;)V
     .locals 0
 
     iput-object p1, p0, Ljd/c$e;->a:Ljd/c$a;
 
     iput-object p2, p0, Ljd/c$e;->b:Ljd/c;
 
-    iput-object p3, p0, Ljd/c$e;->c:Lse/o;
+    iput-object p3, p0, Ljd/c$e;->c:Lse/p;
 
     invoke-direct {p0}, Landroidx/recyclerview/widget/RecyclerView$g;-><init>()V
 
@@ -43,9 +43,9 @@
     .locals 0
 
     .line 1
-    iget-object p1, p0, Ljd/c$e;->c:Lse/o;
+    iget-object p1, p0, Ljd/c$e;->c:Lse/p;
 
-    iget-boolean p1, p1, Lse/o;->f:Z
+    iget-boolean p1, p1, Lse/p;->g:Z
 
     if-eqz p1, :cond_0
 
@@ -62,7 +62,7 @@
 
     iget-object p2, p0, Ljd/c$e;->a:Ljd/c$a;
 
-    invoke-virtual {p2}, Lae/c2;->b()I
+    invoke-virtual {p2}, Lae/b2;->b()I
 
     move-result p2
 

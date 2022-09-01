@@ -69,7 +69,7 @@
     aget-object v0, v0, v1
 
     .line 5
-    iget-object v1, p1, Lo0/c;->i:Ljava/util/concurrent/atomic/AtomicBoolean;
+    iget-object v1, p1, Lo0/c;->j:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     invoke-virtual {v1}, Ljava/util/concurrent/atomic/AtomicBoolean;->get()Z
 
@@ -90,7 +90,7 @@
     const/4 v0, 0x3
 
     .line 8
-    iput v0, p1, Lo0/c;->h:I
+    iput v0, p1, Lo0/c;->i:I
 
     :goto_1
     return-void

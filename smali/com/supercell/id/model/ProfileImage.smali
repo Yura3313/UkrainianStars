@@ -28,7 +28,7 @@
     .end annotation
 .end field
 
-.field public static final f:Lcom/supercell/id/model/ProfileImage$b;
+.field public static final g:Lcom/supercell/id/model/ProfileImage$b;
 
 
 # direct methods
@@ -41,7 +41,7 @@
     invoke-direct {v0}, Lcom/supercell/id/model/ProfileImage$b;-><init>()V
 
     .line 2
-    sput-object v0, Lcom/supercell/id/model/ProfileImage;->f:Lcom/supercell/id/model/ProfileImage$b;
+    sput-object v0, Lcom/supercell/id/model/ProfileImage;->g:Lcom/supercell/id/model/ProfileImage$b;
 
     .line 3
     new-instance v0, Lcom/supercell/id/model/ProfileImage$a;
@@ -67,9 +67,9 @@
     .locals 1
 
     .line 1
-    sget-object v0, Lcom/supercell/id/model/ProfileImage$Empty;->g:Lcom/supercell/id/model/ProfileImage$Empty;
+    sget-object v0, Lcom/supercell/id/model/ProfileImage$Empty;->h:Lcom/supercell/id/model/ProfileImage$Empty;
 
-    invoke-static {p0, v0}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {p0, v0}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
@@ -90,7 +90,7 @@
     check-cast v0, Lcom/supercell/id/model/ProfileImage$Avatar;
 
     .line 3
-    iget-object v0, v0, Lcom/supercell/id/model/ProfileImage$Avatar;->g:Ljava/lang/String;
+    iget-object v0, v0, Lcom/supercell/id/model/ProfileImage$Avatar;->h:Ljava/lang/String;
 
     goto :goto_0
 
@@ -105,7 +105,7 @@
     check-cast v0, Lcom/supercell/id/model/ProfileImage$Image;
 
     .line 5
-    iget-object v0, v0, Lcom/supercell/id/model/ProfileImage$Image;->g:Ljava/lang/String;
+    iget-object v0, v0, Lcom/supercell/id/model/ProfileImage$Image;->h:Ljava/lang/String;
 
     :goto_0
     return-object v0
@@ -132,7 +132,7 @@
 
     const-string p2, "dest"
 
-    invoke-static {p1, p2}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p2}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -146,9 +146,9 @@
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
     .line 2
-    sget-object p2, Lcom/supercell/id/model/ProfileImage$Empty;->g:Lcom/supercell/id/model/ProfileImage$Empty;
+    sget-object p2, Lcom/supercell/id/model/ProfileImage$Empty;->h:Lcom/supercell/id/model/ProfileImage$Empty;
 
-    invoke-static {p0, p2}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {p0, p2}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p2
 
@@ -168,7 +168,7 @@
     check-cast p2, Lcom/supercell/id/model/ProfileImage$Avatar;
 
     .line 5
-    iget-object p2, p2, Lcom/supercell/id/model/ProfileImage$Avatar;->g:Ljava/lang/String;
+    iget-object p2, p2, Lcom/supercell/id/model/ProfileImage$Avatar;->h:Ljava/lang/String;
 
     .line 6
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
@@ -187,7 +187,7 @@
     check-cast p2, Lcom/supercell/id/model/ProfileImage$Image;
 
     .line 9
-    iget-object p2, p2, Lcom/supercell/id/model/ProfileImage$Image;->g:Ljava/lang/String;
+    iget-object p2, p2, Lcom/supercell/id/model/ProfileImage$Image;->h:Ljava/lang/String;
 
     .line 10
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V

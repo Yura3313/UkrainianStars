@@ -40,7 +40,7 @@
     iget-object v0, v0, Lab/n;->c:Lab/o;
 
     .line 2
-    iget-object v1, v0, Lab/o;->A0:Lcom/helpshift/support/Faq;
+    iget-object v1, v0, Lab/o;->B0:Lcom/helpshift/support/Faq;
 
     if-eqz v1, :cond_0
 

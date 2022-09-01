@@ -1,66 +1,76 @@
-.class public final synthetic Lk3/tb0;
+.class public final Lk3/tb0;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Ljava/util/concurrent/Callable;
+.implements Lk3/cd0;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Lk3/cd0<",
+        "Ljava/lang/Object;",
+        ">;"
+    }
+.end annotation
 
 
 # instance fields
-.field public final a:Lk3/rb0;
+.field public final a:Lk3/jm0;
+
+.field public final b:Lk3/vg0;
+
+.field public final c:Landroid/content/pm/PackageInfo;
+
+.field public final d:Lk3/ua;
 
 
 # direct methods
-.method public constructor <init>(Lk3/rb0;)V
+.method public constructor <init>(Lk3/jm0;Lk3/vg0;Landroid/content/pm/PackageInfo;Lk3/ua;)V
     .locals 0
 
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lk3/tb0;->a:Lk3/rb0;
+    .line 2
+    iput-object p1, p0, Lk3/tb0;->a:Lk3/jm0;
+
+    .line 3
+    iput-object p2, p0, Lk3/tb0;->b:Lk3/vg0;
+
+    .line 4
+    iput-object p3, p0, Lk3/tb0;->c:Landroid/content/pm/PackageInfo;
+
+    .line 5
+    iput-object p4, p0, Lk3/tb0;->d:Lk3/ua;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final call()Ljava/lang/Object;
-    .locals 3
+.method public final a()Lk3/hm0;
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lk3/hm0<",
+            "Ljava/lang/Object;",
+            ">;"
+        }
+    .end annotation
 
-    iget-object v0, p0, Lk3/tb0;->a:Lk3/rb0;
+    iget-object v0, p0, Lk3/tb0;->a:Lk3/jm0;
 
-    .line 1
-    iget-object v1, v0, Lk3/rb0;->b:Lk3/ug0;
+    new-instance v1, Lk3/vb0;
 
-    iget-object v1, v1, Lk3/ug0;->g:Ljava/util/ArrayList;
+    invoke-direct {v1, p0}, Lk3/vb0;-><init>(Lk3/tb0;)V
 
-    if-nez v1, :cond_0
+    invoke-interface {v0, v1}, Lk3/jm0;->c(Ljava/util/concurrent/Callable;)Lk3/hm0;
 
-    .line 2
-    sget-object v0, Lk3/sb0;->a:Lk3/sb0;
+    move-result-object v0
 
-    goto :goto_0
-
-    .line 3
-    :cond_0
-    invoke-virtual {v1}, Ljava/util/ArrayList;->isEmpty()Z
-
-    move-result v2
-
-    if-eqz v2, :cond_1
-
-    .line 4
-    sget-object v0, Lk3/vb0;->a:Lk3/vb0;
-
-    goto :goto_0
-
-    .line 5
-    :cond_1
-    new-instance v2, Lk3/ub0;
-
-    invoke-direct {v2, v0, v1}, Lk3/ub0;-><init>(Lk3/rb0;Ljava/util/ArrayList;)V
-
-    move-object v0, v2
-
-    :goto_0
     return-object v0
 .end method

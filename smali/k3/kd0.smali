@@ -3,126 +3,64 @@
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lk3/zc0;
+.implements Lk3/cd0;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "Lk3/zc0<",
-        "Lorg/json/JSONObject;",
+        "Lk3/cd0<",
+        "Lk3/id0;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final a:Lcom/google/android/gms/ads/identifier/AdvertisingIdClient$Info;
+.field public final a:Lk3/jm0;
 
-.field public final b:Ljava/lang/String;
+.field public final b:Landroid/content/Context;
 
 
 # direct methods
-.method public constructor <init>(Lcom/google/android/gms/ads/identifier/AdvertisingIdClient$Info;Ljava/lang/String;)V
+.method public constructor <init>(Lk3/jm0;Landroid/content/Context;)V
     .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lk3/kd0;->a:Lcom/google/android/gms/ads/identifier/AdvertisingIdClient$Info;
+    iput-object p1, p0, Lk3/kd0;->a:Lk3/jm0;
 
     .line 3
-    iput-object p2, p0, Lk3/kd0;->b:Ljava/lang/String;
+    iput-object p2, p0, Lk3/kd0;->b:Landroid/content/Context;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final b(Ljava/lang/Object;)V
+.method public final a()Lk3/hm0;
     .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lk3/hm0<",
+            "Lk3/id0;",
+            ">;"
+        }
+    .end annotation
 
-    .line 1
-    check-cast p1, Lorg/json/JSONObject;
+    iget-object v0, p0, Lk3/kd0;->a:Lk3/jm0;
 
-    :try_start_0
-    const-string v0, "pii"
+    new-instance v1, Lk3/jd0;
 
-    .line 2
-    invoke-static {p1, v0}, Lk3/mc;->j(Lorg/json/JSONObject;Ljava/lang/String;)Lorg/json/JSONObject;
+    invoke-direct {v1, p0}, Lk3/jd0;-><init>(Lk3/kd0;)V
 
-    move-result-object p1
-
-    .line 3
-    iget-object v0, p0, Lk3/kd0;->a:Lcom/google/android/gms/ads/identifier/AdvertisingIdClient$Info;
-
-    if-eqz v0, :cond_0
-
-    invoke-virtual {v0}, Lcom/google/android/gms/ads/identifier/AdvertisingIdClient$Info;->getId()Ljava/lang/String;
+    invoke-interface {v0, v1}, Lk3/jm0;->c(Ljava/util/concurrent/Callable;)Lk3/hm0;
 
     move-result-object v0
 
-    invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
-
-    move-result v0
-
-    if-nez v0, :cond_0
-
-    const-string v0, "rdid"
-
-    .line 4
-    iget-object v1, p0, Lk3/kd0;->a:Lcom/google/android/gms/ads/identifier/AdvertisingIdClient$Info;
-
-    invoke-virtual {v1}, Lcom/google/android/gms/ads/identifier/AdvertisingIdClient$Info;->getId()Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-virtual {p1, v0, v1}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
-
-    const-string v0, "is_lat"
-
-    .line 5
-    iget-object v1, p0, Lk3/kd0;->a:Lcom/google/android/gms/ads/identifier/AdvertisingIdClient$Info;
-
-    invoke-virtual {v1}, Lcom/google/android/gms/ads/identifier/AdvertisingIdClient$Info;->isLimitAdTrackingEnabled()Z
-
-    move-result v1
-
-    invoke-virtual {p1, v0, v1}, Lorg/json/JSONObject;->put(Ljava/lang/String;Z)Lorg/json/JSONObject;
-
-    const-string v0, "idtype"
-
-    const-string v1, "adid"
-
-    .line 6
-    invoke-virtual {p1, v0, v1}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
-
-    return-void
-
-    :cond_0
-    const-string v0, "pdid"
-
-    .line 7
-    iget-object v1, p0, Lk3/kd0;->b:Ljava/lang/String;
-
-    invoke-virtual {p1, v0, v1}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
-
-    const-string v0, "pdidtype"
-
-    const-string v1, "ssaid"
-
-    .line 8
-    invoke-virtual {p1, v0, v1}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
-    :try_end_0
-    .catch Lorg/json/JSONException; {:try_start_0 .. :try_end_0} :catch_0
-
-    return-void
-
-    .line 9
-    :catch_0
-    invoke-static {}, Lk3/j6;->m()Z
-
-    return-void
+    return-object v0
 .end method

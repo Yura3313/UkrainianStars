@@ -25,7 +25,7 @@
 
 
 # instance fields
-.field public final g:Ljava/lang/Class;
+.field public final h:Ljava/lang/Class;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/lang/Class<",
@@ -59,7 +59,7 @@
     .line 2
     const-class v0, Lcom/supercell/id/ui/ingame/addfriends/IngameAddFriendsFragment;
 
-    iput-object v0, p0, Lcom/supercell/id/ui/ingame/addfriends/IngameAddFriendsFragment$BackStackEntry;->g:Ljava/lang/Class;
+    iput-object v0, p0, Lcom/supercell/id/ui/ingame/addfriends/IngameAddFriendsFragment$BackStackEntry;->h:Ljava/lang/Class;
 
     return-void
 .end method
@@ -71,19 +71,19 @@
 
     const-string p2, "mainActivity"
 
-    invoke-static {p1, p2}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p2}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/16 p1, 0x44
 
     int-to-float p1, p1
 
     .line 1
-    sget p2, La5/g0;->a:F
+    sget p2, La5/e0;->g:F
 
     mul-float p1, p1, p2
 
     .line 2
-    invoke-static {p1}, Lcom/android/billingclient/api/z;->n(F)I
+    invoke-static {p1}, Lcom/android/billingclient/api/y;->i(F)I
 
     move-result p1
 
@@ -97,11 +97,11 @@
 
     const-string v0, "mainActivity"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    sget-object p1, Lwc/g1;->p0:Lwc/g1$a;
+    sget-object p1, Lwc/h1;->q0:Lwc/h1$a;
 
-    invoke-virtual {p1, p2, p3, p4}, Lwc/g1$a;->a(III)I
+    invoke-virtual {p1, p2, p3, p4}, Lwc/h1$a;->a(III)I
 
     move-result p1
 
@@ -117,27 +117,27 @@
             ")",
             "Ljava/lang/Class<",
             "+",
-            "Lwc/a1;",
+            "Lwc/b1;",
             ">;"
         }
     .end annotation
 
     const-string v0, "mainActivity"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     invoke-virtual {p1}, Lcom/supercell/id/ui/MainActivity;->i()Ljava/util/List;
 
     move-result-object v0
 
-    invoke-static {v0}, Lje/j;->A(Ljava/util/List;)Ljava/lang/Object;
+    invoke-static {v0}, Lje/j;->v(Ljava/util/List;)Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Lcom/supercell/id/ui/BackStack$Entry;
 
-    invoke-static {v0, p0}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, p0}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
@@ -152,9 +152,9 @@
 
     move-result-object v2
 
-    invoke-static {v2, v1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v2, v1}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-static {v2}, Lcom/android/billingclient/api/c0;->k(Landroid/content/res/Resources;)Z
+    invoke-static {v2}, Lcom/android/billingclient/api/b0;->l(Landroid/content/res/Resources;)Z
 
     move-result v2
 
@@ -170,9 +170,9 @@
 
     move-result-object p1
 
-    invoke-static {p1, v1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v1}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-static {p1}, Lcom/android/billingclient/api/c0;->k(Landroid/content/res/Resources;)Z
+    invoke-static {p1}, Lcom/android/billingclient/api/b0;->l(Landroid/content/res/Resources;)Z
 
     move-result p1
 
@@ -210,7 +210,7 @@
         }
     .end annotation
 
-    iget-object v0, p0, Lcom/supercell/id/ui/ingame/addfriends/IngameAddFriendsFragment$BackStackEntry;->g:Ljava/lang/Class;
+    iget-object v0, p0, Lcom/supercell/id/ui/ingame/addfriends/IngameAddFriendsFragment$BackStackEntry;->h:Ljava/lang/Class;
 
     return-object v0
 .end method
@@ -228,11 +228,11 @@
 
     const-string v0, "mainActivity"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    sget-object p1, Lwc/g1;->p0:Lwc/g1$a;
+    sget-object p1, Lwc/h1;->q0:Lwc/h1$a;
 
-    invoke-virtual {p1, p2, p3, p4}, Lwc/g1$a;->b(III)I
+    invoke-virtual {p1, p2, p3, p4}, Lwc/h1$a;->b(III)I
 
     move-result p1
 
@@ -252,19 +252,19 @@
 
     const-string p3, "mainActivity"
 
-    invoke-static {p1, p3}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p3}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/16 p1, 0x258
 
     int-to-float p1, p1
 
     .line 1
-    sget p3, La5/g0;->a:F
+    sget p3, La5/e0;->g:F
 
     mul-float p1, p1, p3
 
     .line 2
-    invoke-static {p1}, Lcom/android/billingclient/api/z;->n(F)I
+    invoke-static {p1}, Lcom/android/billingclient/api/y;->i(F)I
 
     move-result p1
 
@@ -276,7 +276,7 @@
 
     mul-float p1, p1, p2
 
-    invoke-static {p1}, Lcom/android/billingclient/api/z;->n(F)I
+    invoke-static {p1}, Lcom/android/billingclient/api/y;->i(F)I
 
     move-result p1
 
@@ -294,7 +294,7 @@
 
     const-string v0, "mainActivity"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/4 p1, 0x0
 
@@ -326,14 +326,14 @@
     const-string v1, "mainActivity.resources"
 
     .line 1
-    invoke-static {p1, v0, v1}, Lk3/ax;->e(Lcom/supercell/id/ui/MainActivity;Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {p1, v0, v1}, Lwc/v0;->a(Lcom/supercell/id/ui/MainActivity;Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result p1
 
     if-eqz p1, :cond_0
 
     .line 2
-    const-class p1, Lwc/g1;
+    const-class p1, Lwc/h1;
 
     goto :goto_0
 

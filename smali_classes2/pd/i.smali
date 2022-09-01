@@ -1,5 +1,5 @@
 .class public final Lpd/i;
-.super Lwc/s1;
+.super Lwc/t1;
 .source "FriendsFragment.kt"
 
 
@@ -12,38 +12,38 @@
 
 
 # static fields
-.field public static final synthetic f0:I
+.field public static final synthetic g0:I
 
 
 # instance fields
-.field public b0:Ljava/util/List;
+.field public c0:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
             "+",
-            "Lae/b2;",
+            "Lae/a2;",
             ">;"
         }
     .end annotation
 .end field
 
-.field public final c0:Lpd/i$b;
+.field public final d0:Lpd/i$b;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lre/l<",
             "Lae/m<",
-            "Lvc/j;",
+            "Lvc/i;",
             "Lcom/supercell/id/util/NormalizedError;",
             ">;",
-            "Lie/h;",
+            "Lie/i;",
             ">;"
         }
     .end annotation
 .end field
 
-.field public d0:Ljava/util/Timer;
+.field public e0:Ljava/util/Timer;
 
-.field public e0:Ljava/util/HashMap;
+.field public f0:Ljava/util/HashMap;
 
 
 # direct methods
@@ -51,14 +51,14 @@
     .locals 1
 
     .line 1
-    invoke-direct {p0}, Lwc/s1;-><init>()V
+    invoke-direct {p0}, Lwc/t1;-><init>()V
 
     .line 2
     new-instance v0, Lpd/i$b;
 
     invoke-direct {v0, p0}, Lpd/i$b;-><init>(Lpd/i;)V
 
-    iput-object v0, p0, Lpd/i;->c0:Lpd/i$b;
+    iput-object v0, p0, Lpd/i;->d0:Lpd/i$b;
 
     return-void
 .end method
@@ -68,7 +68,7 @@
 .method public final N0()V
     .locals 1
 
-    iget-object v0, p0, Lpd/i;->e0:Ljava/util/HashMap;
+    iget-object v0, p0, Lpd/i;->f0:Ljava/util/HashMap;
 
     if-eqz v0, :cond_0
 
@@ -89,7 +89,7 @@
     move-result-object v0
 
     .line 2
-    iget-object v0, v0, Lae/u;->m:La5/d0;
+    iget-object v0, v0, Lae/u;->m:Lpe/a;
 
     .line 3
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -100,7 +100,7 @@
 .method public final T0(I)Landroid/view/View;
     .locals 2
 
-    iget-object v0, p0, Lpd/i;->e0:Ljava/util/HashMap;
+    iget-object v0, p0, Lpd/i;->f0:Ljava/util/HashMap;
 
     if-nez v0, :cond_0
 
@@ -108,10 +108,10 @@
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    iput-object v0, p0, Lpd/i;->e0:Ljava/util/HashMap;
+    iput-object v0, p0, Lpd/i;->f0:Ljava/util/HashMap;
 
     :cond_0
-    iget-object v0, p0, Lpd/i;->e0:Ljava/util/HashMap;
+    iget-object v0, p0, Lpd/i;->f0:Ljava/util/HashMap;
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -126,7 +126,7 @@
     if-nez v0, :cond_2
 
     .line 1
-    iget-object v0, p0, Landroidx/fragment/app/Fragment;->M:Landroid/view/View;
+    iget-object v0, p0, Landroidx/fragment/app/Fragment;->N:Landroid/view/View;
 
     if-nez v0, :cond_1
 
@@ -140,7 +140,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lpd/i;->e0:Ljava/util/HashMap;
+    iget-object v1, p0, Lpd/i;->f0:Ljava/util/HashMap;
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -159,13 +159,13 @@
             "(",
             "Ljava/util/List<",
             "+",
-            "Lae/b2;",
+            "Lae/a2;",
             ">;)V"
         }
     .end annotation
 
     .line 1
-    iput-object p1, p0, Lpd/i;->b0:Ljava/util/List;
+    iput-object p1, p0, Lpd/i;->c0:Ljava/util/List;
 
     const/4 v0, 0x4
 
@@ -276,7 +276,7 @@
 
     const-string p3, "inflater"
 
-    invoke-static {p1, p3}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p3}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     sget p3, Lcom/supercell/id/R$layout;->fragment_profile_friends:I
@@ -290,7 +290,7 @@
     const-string p2, "view"
 
     .line 2
-    invoke-static {p1, p2}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p2}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     sget p2, Lcom/supercell/id/R$id;->friendsList:I
 
@@ -302,7 +302,7 @@
 
     const-string p3, "view.friendsList"
 
-    invoke-static {p2, p3}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, p3}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-static {p2}, Lae/z2;->f(Landroid/view/View;)I
 
@@ -339,15 +339,15 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lpd/i;->c0:Lpd/i$b;
+    iget-object v1, p0, Lpd/i;->d0:Lpd/i$b;
 
-    invoke-virtual {v0, v1}, Lbe/v0;->e(Lre/l;)V
+    invoke-virtual {v0, v1}, Lbe/x0;->e(Lre/l;)V
 
     .line 2
-    invoke-super {p0}, Lwc/s1;->a0()V
+    invoke-super {p0}, Lwc/t1;->a0()V
 
     .line 3
-    iget-object v0, p0, Lpd/i;->e0:Ljava/util/HashMap;
+    iget-object v0, p0, Lpd/i;->f0:Ljava/util/HashMap;
 
     if-eqz v0, :cond_0
 
@@ -363,10 +363,10 @@
     const/4 v0, 0x1
 
     .line 1
-    iput-boolean v0, p0, Landroidx/fragment/app/Fragment;->K:Z
+    iput-boolean v0, p0, Landroidx/fragment/app/Fragment;->L:Z
 
     .line 2
-    iget-object v0, p0, Lpd/i;->d0:Ljava/util/Timer;
+    iget-object v0, p0, Lpd/i;->e0:Ljava/util/Timer;
 
     if-eqz v0, :cond_0
 
@@ -376,7 +376,7 @@
     const/4 v0, 0x0
 
     .line 3
-    iput-object v0, p0, Lpd/i;->d0:Ljava/util/Timer;
+    iput-object v0, p0, Lpd/i;->e0:Ljava/util/Timer;
 
     return-void
 .end method
@@ -385,7 +385,7 @@
     .locals 10
 
     .line 1
-    invoke-super {p0}, Lwc/s1;->g0()V
+    invoke-super {p0}, Lwc/t1;->g0()V
 
     .line 2
     sget-object v0, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
@@ -436,7 +436,7 @@
 
     invoke-virtual/range {v4 .. v9}, Ljava/util/Timer;->scheduleAtFixedRate(Ljava/util/TimerTask;JJ)V
 
-    iput-object v1, p0, Lpd/i;->d0:Ljava/util/Timer;
+    iput-object v1, p0, Lpd/i;->e0:Ljava/util/Timer;
 
     return-void
 .end method
@@ -446,10 +446,10 @@
 
     const-string p2, "view"
 
-    invoke-static {p1, p2}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p2}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
-    iget-object p2, p0, Lpd/i;->b0:Ljava/util/List;
+    iget-object p2, p0, Lpd/i;->c0:Ljava/util/List;
 
     invoke-virtual {p0, p2}, Lpd/i;->U0(Ljava/util/List;)V
 
@@ -475,7 +475,7 @@
 
     const-string v1, "friendsList"
 
-    invoke-static {v0, v1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     new-instance v2, Lcom/supercell/id/ui/profile/LinearLayoutManagerWrapper;
 
@@ -494,7 +494,7 @@
 
     check-cast p2, Landroidx/recyclerview/widget/RecyclerView;
 
-    invoke-static {p2, v1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v1}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     new-instance v0, Lpd/i$a;
 
@@ -504,16 +504,16 @@
 
     const-string v1, "view.context"
 
-    invoke-static {p1, v1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v1}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    iget-object v1, p0, Lpd/i;->b0:Ljava/util/List;
+    iget-object v1, p0, Lpd/i;->c0:Ljava/util/List;
 
     if-eqz v1, :cond_0
 
     goto :goto_0
 
     :cond_0
-    sget-object v1, Lje/l;->f:Lje/l;
+    sget-object v1, Lje/l;->g:Lje/l;
 
     :goto_0
     invoke-direct {v0, p1, p0, v1}, Lpd/i$a;-><init>(Landroid/content/Context;Lpd/i;Ljava/util/List;)V
@@ -531,9 +531,9 @@
 
     move-result-object p2
 
-    iget-object v0, p0, Lpd/i;->c0:Lpd/i$b;
+    iget-object v0, p0, Lpd/i;->d0:Lpd/i$b;
 
-    invoke-virtual {p2, v0}, Lbe/v0;->b(Lre/l;)V
+    invoke-virtual {p2, v0}, Lbe/x0;->b(Lre/l;)V
 
     .line 6
     invoke-virtual {p1}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lae/u;
@@ -544,7 +544,7 @@
 
     move-result-object p1
 
-    invoke-virtual {p1}, Lbe/h;->l()Lze/e0;
+    invoke-virtual {p1}, Lbe/h;->l()Lze/f0;
 
     return-void
 .end method

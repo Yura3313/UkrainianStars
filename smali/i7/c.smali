@@ -7,9 +7,7 @@
 
 
 # instance fields
-.field public f:Ljava/lang/Long;
-
-.field public g:Ljava/lang/String;
+.field public g:Ljava/lang/Long;
 
 .field public h:Ljava/lang/String;
 
@@ -17,17 +15,19 @@
 
 .field public j:Ljava/lang/String;
 
-.field public k:Z
+.field public k:Ljava/lang/String;
 
 .field public l:Z
 
 .field public m:Z
 
-.field public n:Ljava/lang/String;
+.field public n:Z
 
-.field public o:Z
+.field public o:Ljava/lang/String;
 
-.field public p:Li7/i;
+.field public p:Z
+
+.field public q:Li7/i;
 
 
 # direct methods
@@ -38,37 +38,37 @@
     invoke-direct {p0}, Ljava/util/Observable;-><init>()V
 
     .line 2
-    iput-object p1, p0, Li7/c;->f:Ljava/lang/Long;
+    iput-object p1, p0, Li7/c;->g:Ljava/lang/Long;
 
     .line 3
-    iput-object p2, p0, Li7/c;->g:Ljava/lang/String;
+    iput-object p2, p0, Li7/c;->h:Ljava/lang/String;
 
     .line 4
-    iput-object p3, p0, Li7/c;->h:Ljava/lang/String;
+    iput-object p3, p0, Li7/c;->i:Ljava/lang/String;
 
     .line 5
-    iput-object p4, p0, Li7/c;->i:Ljava/lang/String;
+    iput-object p4, p0, Li7/c;->j:Ljava/lang/String;
 
     .line 6
-    iput-object p5, p0, Li7/c;->j:Ljava/lang/String;
+    iput-object p5, p0, Li7/c;->k:Ljava/lang/String;
 
     .line 7
-    iput-boolean p6, p0, Li7/c;->k:Z
+    iput-boolean p6, p0, Li7/c;->l:Z
 
     .line 8
-    iput-boolean p7, p0, Li7/c;->l:Z
+    iput-boolean p7, p0, Li7/c;->m:Z
 
     .line 9
-    iput-boolean p8, p0, Li7/c;->m:Z
+    iput-boolean p8, p0, Li7/c;->n:Z
 
     .line 10
-    iput-object p9, p0, Li7/c;->n:Ljava/lang/String;
+    iput-object p9, p0, Li7/c;->o:Ljava/lang/String;
 
     .line 11
-    iput-boolean p10, p0, Li7/c;->o:Z
+    iput-boolean p10, p0, Li7/c;->p:Z
 
     .line 12
-    iput-object p11, p0, Li7/c;->p:Li7/i;
+    iput-object p11, p0, Li7/c;->q:Li7/i;
 
     return-void
 .end method
@@ -86,45 +86,45 @@
     if-eqz p1, :cond_0
 
     .line 2
-    iget-boolean p1, p2, Li7/c;->o:Z
+    iget-boolean p1, p2, Li7/c;->p:Z
 
     .line 3
-    iput-boolean p1, p0, Li7/c;->o:Z
+    iput-boolean p1, p0, Li7/c;->p:Z
 
     .line 4
-    iget-object p1, p2, Li7/c;->n:Ljava/lang/String;
+    iget-object p1, p2, Li7/c;->o:Ljava/lang/String;
 
     .line 5
-    iput-object p1, p0, Li7/c;->n:Ljava/lang/String;
+    iput-object p1, p0, Li7/c;->o:Ljava/lang/String;
 
     .line 6
-    iget-object p1, p2, Li7/c;->i:Ljava/lang/String;
+    iget-object p1, p2, Li7/c;->j:Ljava/lang/String;
 
     .line 7
-    iput-object p1, p0, Li7/c;->i:Ljava/lang/String;
+    iput-object p1, p0, Li7/c;->j:Ljava/lang/String;
 
     .line 8
-    iget-object p1, p2, Li7/c;->h:Ljava/lang/String;
+    iget-object p1, p2, Li7/c;->i:Ljava/lang/String;
 
     .line 9
-    iput-object p1, p0, Li7/c;->h:Ljava/lang/String;
+    iput-object p1, p0, Li7/c;->i:Ljava/lang/String;
 
     .line 10
-    iget-object p1, p2, Li7/c;->p:Li7/i;
+    iget-object p1, p2, Li7/c;->q:Li7/i;
 
     .line 11
-    iput-object p1, p0, Li7/c;->p:Li7/i;
+    iput-object p1, p0, Li7/c;->q:Li7/i;
 
     .line 12
-    iget-boolean p1, p2, Li7/c;->k:Z
+    iget-boolean p1, p2, Li7/c;->l:Z
 
     .line 13
-    iput-boolean p1, p0, Li7/c;->k:Z
+    iput-boolean p1, p0, Li7/c;->l:Z
 
     .line 14
-    iget-boolean p1, p2, Li7/c;->m:Z
+    iget-boolean p1, p2, Li7/c;->n:Z
 
-    iput-boolean p1, p0, Li7/c;->m:Z
+    iput-boolean p1, p0, Li7/c;->n:Z
 
     .line 15
     invoke-virtual {p0}, Ljava/util/Observable;->setChanged()V

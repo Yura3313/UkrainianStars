@@ -39,7 +39,7 @@
 
     const-string v0, "displayMetrics"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     iget p1, p1, Landroid/util/DisplayMetrics;->densityDpi:I
 

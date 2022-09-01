@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field public final u:Ljava/util/LinkedHashMap;
+.field public final v:Ljava/util/LinkedHashMap;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Map<",
@@ -17,7 +17,7 @@
     .end annotation
 .end field
 
-.field public final v:Ljava/util/LinkedHashMap;
+.field public final w:Ljava/util/LinkedHashMap;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Map<",
@@ -28,11 +28,11 @@
     .end annotation
 .end field
 
-.field public w:Z
-
 .field public x:Z
 
-.field public y:Landroid/animation/AnimatorSet;
+.field public y:Z
+
+.field public z:Landroid/animation/AnimatorSet;
 
 
 # direct methods
@@ -52,7 +52,7 @@
 
     const-string v0, "context"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 2
     invoke-direct {p0, p1, p2, p3}, Landroidx/appcompat/widget/LinearLayoutCompat;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
@@ -62,7 +62,7 @@
 
     invoke-direct {v0}, Ljava/util/LinkedHashMap;-><init>()V
 
-    iput-object v0, p0, Lcom/supercell/id/view/ProgressBar;->v:Ljava/util/LinkedHashMap;
+    iput-object v0, p0, Lcom/supercell/id/view/ProgressBar;->w:Ljava/util/LinkedHashMap;
 
     const/4 v0, 0x0
 
@@ -86,7 +86,7 @@
 
     const-string v4, "resources"
 
-    invoke-static {v3, v4}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v3, v4}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v3}, Landroid/content/res/Resources;->getDisplayMetrics()Landroid/util/DisplayMetrics;
 
@@ -121,7 +121,7 @@
 
     move-result-object v2
 
-    invoke-static {v2, v4}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v2, v4}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v2}, Landroid/content/res/Resources;->getDisplayMetrics()Landroid/util/DisplayMetrics;
 
@@ -140,7 +140,7 @@
 
     move-result-object v3
 
-    invoke-static {v3, v4}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v3, v4}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v3}, Landroid/content/res/Resources;->getDisplayMetrics()Landroid/util/DisplayMetrics;
 
@@ -188,7 +188,7 @@
 
     move-result p1
 
-    invoke-static {v0, p1}, Lcom/google/android/play/core/appupdate/c;->c(II)Lve/c;
+    invoke-static {v0, p1}, La5/b0;->l(II)Lve/c;
 
     move-result-object p1
 
@@ -209,7 +209,7 @@
     check-cast p3, Lve/b;
 
     .line 20
-    iget-boolean p3, p3, Lve/b;->g:Z
+    iget-boolean p3, p3, Lve/b;->h:Z
 
     if-eqz p3, :cond_7
 
@@ -252,33 +252,33 @@
 
     .line 23
     :cond_3
-    new-instance p3, Lie/g;
+    new-instance p3, Lie/h;
 
     const-string v2, "loader_icon_3.png"
 
     const-string v3, "loader_icon_3_alt.png"
 
-    invoke-direct {p3, v0, v2, v3}, Lie/g;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-direct {p3, v0, v2, v3}, Lie/h;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
 
     goto :goto_2
 
     .line 24
     :cond_4
-    new-instance p3, Lie/g;
+    new-instance p3, Lie/h;
 
     const-string v2, "loader_icon_2.png"
 
-    invoke-direct {p3, v0, v2, v3}, Lie/g;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-direct {p3, v0, v2, v3}, Lie/h;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
 
     goto :goto_2
 
     .line 25
     :cond_5
-    new-instance p3, Lie/g;
+    new-instance p3, Lie/h;
 
     const-string v2, "loader_icon_1.png"
 
-    invoke-direct {p3, v0, v2, v3}, Lie/g;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-direct {p3, v0, v2, v3}, Lie/h;-><init>(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
 
     :goto_2
     move-object v3, p3
@@ -296,11 +296,11 @@
     const/16 p1, 0xa
 
     .line 27
-    invoke-static {p2, p1}, Lje/f;->q(Ljava/lang/Iterable;I)I
+    invoke-static {p2, p1}, Lje/f;->l(Ljava/lang/Iterable;I)I
 
     move-result p1
 
-    invoke-static {p1}, Lcom/google/android/play/core/assetpacks/o2;->i(I)I
+    invoke-static {p1}, Lt3/h;->g(I)I
 
     move-result p1
 
@@ -334,19 +334,19 @@
     move-result-object p3
 
     .line 30
-    check-cast p3, Lie/g;
+    check-cast p3, Lie/h;
 
     .line 31
-    iget-object v0, p3, Lie/g;->f:Ljava/lang/Object;
+    iget-object v0, p3, Lie/h;->g:Ljava/lang/Object;
 
     .line 32
     new-instance v1, Lie/d;
 
     .line 33
-    iget-object v2, p3, Lie/g;->g:Ljava/lang/Object;
+    iget-object v2, p3, Lie/h;->h:Ljava/lang/Object;
 
     .line 34
-    iget-object p3, p3, Lie/g;->h:Ljava/lang/Object;
+    iget-object p3, p3, Lie/h;->i:Ljava/lang/Object;
 
     .line 35
     invoke-direct {v1, v2, p3}, Lie/d;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
@@ -357,7 +357,7 @@
 
     .line 36
     :cond_9
-    iput-object p1, p0, Lcom/supercell/id/view/ProgressBar;->u:Ljava/util/LinkedHashMap;
+    iput-object p1, p0, Lcom/supercell/id/view/ProgressBar;->v:Ljava/util/LinkedHashMap;
 
     return-void
 .end method
@@ -380,7 +380,7 @@
 
     const/4 v1, 0x0
 
-    invoke-static {v1, v0}, Lcom/google/android/play/core/appupdate/c;->c(II)Lve/c;
+    invoke-static {v1, v0}, La5/b0;->l(II)Lve/c;
 
     move-result-object v0
 
@@ -400,7 +400,7 @@
     check-cast v3, Lve/b;
 
     .line 4
-    iget-boolean v3, v3, Lve/b;->g:Z
+    iget-boolean v3, v3, Lve/b;->h:Z
 
     const/4 v4, 0x1
 
@@ -438,7 +438,7 @@
     new-array v5, v5, [Ljava/lang/String;
 
     .line 7
-    iget-object v7, p0, Lcom/supercell/id/view/ProgressBar;->u:Ljava/util/LinkedHashMap;
+    iget-object v7, p0, Lcom/supercell/id/view/ProgressBar;->v:Ljava/util/LinkedHashMap;
 
     invoke-virtual {v7, v3}, Ljava/util/LinkedHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -449,7 +449,7 @@
     if-eqz v7, :cond_1
 
     .line 8
-    iget-object v7, v7, Lie/d;->f:Ljava/lang/Object;
+    iget-object v7, v7, Lie/d;->g:Ljava/lang/Object;
 
     .line 9
     check-cast v7, Ljava/lang/String;
@@ -462,7 +462,7 @@
     :goto_1
     aput-object v7, v5, v1
 
-    iget-object v7, p0, Lcom/supercell/id/view/ProgressBar;->u:Ljava/util/LinkedHashMap;
+    iget-object v7, p0, Lcom/supercell/id/view/ProgressBar;->v:Ljava/util/LinkedHashMap;
 
     invoke-virtual {v7, v3}, Ljava/util/LinkedHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -473,7 +473,7 @@
     if-eqz v3, :cond_2
 
     .line 10
-    iget-object v3, v3, Lie/d;->g:Ljava/lang/Object;
+    iget-object v3, v3, Lie/d;->h:Ljava/lang/Object;
 
     .line 11
     move-object v6, v3
@@ -488,17 +488,17 @@
 
     invoke-direct {v3}, Ljava/util/ArrayList;-><init>()V
 
-    invoke-static {v5, v3}, Lje/e;->g([Ljava/lang/Object;Ljava/util/Collection;)Ljava/util/Collection;
+    invoke-static {v5, v3}, Lje/e;->j([Ljava/lang/Object;Ljava/util/Collection;)Ljava/util/Collection;
 
     goto :goto_2
 
     .line 13
     :cond_3
-    sget-object v3, Lje/l;->f:Lje/l;
+    sget-object v3, Lje/l;->g:Lje/l;
 
     .line 14
     :goto_2
-    invoke-static {v2, v3}, Lje/h;->u(Ljava/util/Collection;Ljava/lang/Iterable;)Z
+    invoke-static {v2, v3}, Lje/h;->p(Ljava/util/Collection;Ljava/lang/Iterable;)Z
 
     goto :goto_0
 
@@ -530,7 +530,7 @@
     check-cast v3, Ljava/lang/String;
 
     .line 17
-    iget-object v5, p0, Lcom/supercell/id/view/ProgressBar;->v:Ljava/util/LinkedHashMap;
+    iget-object v5, p0, Lcom/supercell/id/view/ProgressBar;->w:Ljava/util/LinkedHashMap;
 
     invoke-interface {v5, v3}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
 
@@ -556,7 +556,7 @@
 
     .line 2
     :try_start_0
-    iget-object v0, p0, Lcom/supercell/id/view/ProgressBar;->v:Ljava/util/LinkedHashMap;
+    iget-object v0, p0, Lcom/supercell/id/view/ProgressBar;->w:Ljava/util/LinkedHashMap;
 
     invoke-interface {v0, p2, p1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -577,7 +577,7 @@
     if-eqz p2, :cond_5
 
     .line 5
-    iget-boolean p1, p0, Lcom/supercell/id/view/ProgressBar;->w:Z
+    iget-boolean p1, p0, Lcom/supercell/id/view/ProgressBar;->x:Z
 
     if-eqz p1, :cond_5
 
@@ -588,7 +588,7 @@
 
     const/4 p2, 0x0
 
-    invoke-static {p2, p1}, Lcom/google/android/play/core/appupdate/c;->c(II)Lve/c;
+    invoke-static {p2, p1}, La5/b0;->l(II)Lve/c;
 
     move-result-object p1
 
@@ -609,7 +609,7 @@
     check-cast v0, Lve/b;
 
     .line 9
-    iget-boolean v0, v0, Lve/b;->g:Z
+    iget-boolean v0, v0, Lve/b;->h:Z
 
     if-eqz v0, :cond_2
 
@@ -664,7 +664,7 @@
     check-cast p2, Lcom/supercell/id/view/ProgressBarIcon;
 
     .line 14
-    iget-object v0, p0, Lcom/supercell/id/view/ProgressBar;->u:Ljava/util/LinkedHashMap;
+    iget-object v0, p0, Lcom/supercell/id/view/ProgressBar;->v:Ljava/util/LinkedHashMap;
 
     invoke-virtual {v0, p2}, Ljava/util/LinkedHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -675,10 +675,10 @@
     if-eqz v0, :cond_3
 
     .line 15
-    iget-object v1, p0, Lcom/supercell/id/view/ProgressBar;->v:Ljava/util/LinkedHashMap;
+    iget-object v1, p0, Lcom/supercell/id/view/ProgressBar;->w:Ljava/util/LinkedHashMap;
 
     .line 16
-    iget-object v2, v0, Lie/d;->f:Ljava/lang/Object;
+    iget-object v2, v0, Lie/d;->g:Ljava/lang/Object;
 
     .line 17
     invoke-virtual {v1, v2}, Ljava/util/LinkedHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -688,19 +688,19 @@
     check-cast v1, Landroid/graphics/drawable/Drawable;
 
     .line 18
-    iget-object v2, p2, Lcom/supercell/id/view/ProgressBarIcon;->g:Lcom/supercell/id/view/ProgressBarIconShadow;
+    iget-object v2, p2, Lcom/supercell/id/view/ProgressBarIcon;->h:Lcom/supercell/id/view/ProgressBarIconShadow;
 
     const/high16 v3, 0x3f800000    # 1.0f
 
     invoke-virtual {v2, v3}, Landroid/view/View;->setAlpha(F)V
 
     .line 19
-    iget-object v2, p2, Lcom/supercell/id/view/ProgressBarIcon;->f:Landroid/widget/ImageView;
+    iget-object v2, p2, Lcom/supercell/id/view/ProgressBarIcon;->g:Landroid/widget/ImageView;
 
     invoke-virtual {v2, v1}, Landroid/widget/ImageView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
 
     .line 20
-    iget-object v0, v0, Lie/d;->g:Ljava/lang/Object;
+    iget-object v0, v0, Lie/d;->h:Ljava/lang/Object;
 
     .line 21
     check-cast v0, Ljava/lang/String;
@@ -708,7 +708,7 @@
     if-eqz v0, :cond_3
 
     .line 22
-    iget-object v1, p0, Lcom/supercell/id/view/ProgressBar;->v:Ljava/util/LinkedHashMap;
+    iget-object v1, p0, Lcom/supercell/id/view/ProgressBar;->w:Ljava/util/LinkedHashMap;
 
     invoke-virtual {v1, v0}, Ljava/util/LinkedHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -717,7 +717,7 @@
     check-cast v0, Landroid/graphics/drawable/Drawable;
 
     .line 23
-    iput-object v0, p2, Lcom/supercell/id/view/ProgressBarIcon;->r:Landroid/graphics/drawable/Drawable;
+    iput-object v0, p2, Lcom/supercell/id/view/ProgressBarIcon;->s:Landroid/graphics/drawable/Drawable;
 
     goto :goto_1
 
@@ -725,7 +725,7 @@
     const/4 p1, 0x1
 
     .line 24
-    iput-boolean p1, p0, Lcom/supercell/id/view/ProgressBar;->x:Z
+    iput-boolean p1, p0, Lcom/supercell/id/view/ProgressBar;->y:Z
 
     .line 25
     invoke-virtual {p0}, Landroid/view/View;->isShown()Z
@@ -761,7 +761,7 @@
     .locals 11
 
     .line 1
-    iget-boolean v0, p0, Lcom/supercell/id/view/ProgressBar;->x:Z
+    iget-boolean v0, p0, Lcom/supercell/id/view/ProgressBar;->y:Z
 
     if-nez v0, :cond_0
 
@@ -775,7 +775,7 @@
 
     const/4 v1, 0x0
 
-    invoke-static {v1, v0}, Lcom/google/android/play/core/appupdate/c;->c(II)Lve/c;
+    invoke-static {v1, v0}, La5/b0;->l(II)Lve/c;
 
     move-result-object v0
 
@@ -824,7 +824,7 @@
     if-eqz v4, :cond_4
 
     .line 6
-    iget-object v5, v4, Lcom/supercell/id/view/ProgressBarIcon;->r:Landroid/graphics/drawable/Drawable;
+    iget-object v5, v4, Lcom/supercell/id/view/ProgressBarIcon;->s:Landroid/graphics/drawable/Drawable;
 
     const/4 v7, 0x1
 
@@ -833,7 +833,7 @@
     if-eqz v5, :cond_3
 
     .line 7
-    iget-object v6, v4, Lcom/supercell/id/view/ProgressBarIcon;->f:Landroid/widget/ImageView;
+    iget-object v6, v4, Lcom/supercell/id/view/ProgressBarIcon;->g:Landroid/widget/ImageView;
 
     invoke-virtual {v6}, Landroid/widget/ImageView;->getDrawable()Landroid/graphics/drawable/Drawable;
 
@@ -886,15 +886,15 @@
     new-array v9, v9, [Landroid/animation/Animator;
 
     .line 13
-    iget-object v10, v4, Lcom/supercell/id/view/ProgressBarIcon;->o:Landroid/animation/AnimatorSet;
+    iget-object v10, v4, Lcom/supercell/id/view/ProgressBarIcon;->p:Landroid/animation/AnimatorSet;
 
     aput-object v10, v9, v1
 
-    iget-object v10, v4, Lcom/supercell/id/view/ProgressBarIcon;->p:Landroid/animation/AnimatorSet;
+    iget-object v10, v4, Lcom/supercell/id/view/ProgressBarIcon;->q:Landroid/animation/AnimatorSet;
 
     aput-object v10, v9, v7
 
-    iget-object v4, v4, Lcom/supercell/id/view/ProgressBarIcon;->q:Landroid/animation/AnimatorSet;
+    iget-object v4, v4, Lcom/supercell/id/view/ProgressBarIcon;->r:Landroid/animation/AnimatorSet;
 
     aput-object v4, v9, v8
 
@@ -902,7 +902,7 @@
 
     aput-object v6, v9, v4
 
-    invoke-static {v9}, Lcom/android/billingclient/api/z;->k([Ljava/lang/Object;)Ljava/util/List;
+    invoke-static {v9}, Lcom/android/billingclient/api/y;->f([Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object v4
 
@@ -968,7 +968,7 @@
     invoke-virtual {v0}, Landroid/animation/AnimatorSet;->start()V
 
     .line 21
-    iput-object v0, p0, Lcom/supercell/id/view/ProgressBar;->y:Landroid/animation/AnimatorSet;
+    iput-object v0, p0, Lcom/supercell/id/view/ProgressBar;->z:Landroid/animation/AnimatorSet;
 
     return-void
 .end method
@@ -979,7 +979,7 @@
     const/4 v0, 0x1
 
     .line 1
-    iput-boolean v0, p0, Lcom/supercell/id/view/ProgressBar;->w:Z
+    iput-boolean v0, p0, Lcom/supercell/id/view/ProgressBar;->x:Z
 
     .line 2
     invoke-super {p0}, Landroid/view/ViewGroup;->onAttachedToWindow()V
@@ -1030,14 +1030,14 @@
     move-result-object v3
 
     .line 8
-    iget-object v3, v3, Lae/u;->s:Lud/j;
+    iget-object v3, v3, Lae/u;->s:Lud/i;
 
     .line 9
     new-instance v4, Lcom/supercell/id/view/h;
 
     invoke-direct {v4, v2, v0}, Lcom/supercell/id/view/h;-><init>(Ljava/lang/String;Ljava/lang/ref/WeakReference;)V
 
-    invoke-virtual {v3, v2, v4}, Lud/j;->b(Ljava/lang/String;Lre/p;)V
+    invoke-virtual {v3, v2, v4}, Lud/i;->b(Ljava/lang/String;Lre/p;)V
 
     goto :goto_0
 
@@ -1054,10 +1054,10 @@
     const/4 v0, 0x0
 
     .line 2
-    iput-boolean v0, p0, Lcom/supercell/id/view/ProgressBar;->w:Z
+    iput-boolean v0, p0, Lcom/supercell/id/view/ProgressBar;->x:Z
 
     .line 3
-    iget-object v0, p0, Lcom/supercell/id/view/ProgressBar;->y:Landroid/animation/AnimatorSet;
+    iget-object v0, p0, Lcom/supercell/id/view/ProgressBar;->z:Landroid/animation/AnimatorSet;
 
     if-eqz v0, :cond_0
 
@@ -1067,7 +1067,7 @@
     const/4 v0, 0x0
 
     .line 4
-    iput-object v0, p0, Lcom/supercell/id/view/ProgressBar;->y:Landroid/animation/AnimatorSet;
+    iput-object v0, p0, Lcom/supercell/id/view/ProgressBar;->z:Landroid/animation/AnimatorSet;
 
     return-void
 .end method
@@ -1142,7 +1142,7 @@
 
     move-result v0
 
-    invoke-static {p2, v0}, Lcom/google/android/play/core/appupdate/c;->c(II)Lve/c;
+    invoke-static {p2, v0}, La5/b0;->l(II)Lve/c;
 
     move-result-object p2
 
@@ -1151,7 +1151,7 @@
 
     const/16 v1, 0xa
 
-    invoke-static {p2, v1}, Lje/f;->q(Ljava/lang/Iterable;I)I
+    invoke-static {p2, v1}, Lje/f;->l(Ljava/lang/Iterable;I)I
 
     move-result v1
 
@@ -1209,7 +1209,7 @@
     const-string v1, "it"
 
     .line 13
-    invoke-static {v0, v1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v0}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
@@ -1237,7 +1237,7 @@
 
     const-string v0, "changedView"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     invoke-super {p0, p1, p2}, Landroid/view/View;->onVisibilityChanged(Landroid/view/View;I)V
@@ -1248,7 +1248,7 @@
     move-result p1
 
     .line 3
-    iget-object p2, p0, Lcom/supercell/id/view/ProgressBar;->y:Landroid/animation/AnimatorSet;
+    iget-object p2, p0, Lcom/supercell/id/view/ProgressBar;->z:Landroid/animation/AnimatorSet;
 
     if-eqz p2, :cond_0
 
@@ -1279,7 +1279,7 @@
     const/4 p1, 0x0
 
     .line 6
-    iput-object p1, p0, Lcom/supercell/id/view/ProgressBar;->y:Landroid/animation/AnimatorSet;
+    iput-object p1, p0, Lcom/supercell/id/view/ProgressBar;->z:Landroid/animation/AnimatorSet;
 
     :cond_3
     :goto_1

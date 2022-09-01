@@ -40,7 +40,7 @@
 
     .line 1
     :cond_0
-    sget p1, Lm3/f;->a:I
+    sget p1, Lm3/e;->a:I
 
     .line 2
     invoke-virtual {p2}, Landroid/os/Parcel;->readInt()I
@@ -54,7 +54,7 @@
     :cond_1
     sget-object p1, Landroid/accounts/Account;->CREATOR:Landroid/os/Parcelable$Creator;
 
-    invoke-static {p2, p1}, Lm3/f;->a(Landroid/os/Parcel;Landroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
+    invoke-static {p2, p1}, Lm3/e;->a(Landroid/os/Parcel;Landroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
 
     move-result-object p1
 

@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field public final synthetic f:Lcom/supercell/titan/GoogleServiceClient;
+.field public final synthetic g:Lcom/supercell/titan/GoogleServiceClient;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/titan/GoogleServiceClient;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/titan/GoogleServiceClient$e;->f:Lcom/supercell/titan/GoogleServiceClient;
+    iput-object p1, p0, Lcom/supercell/titan/GoogleServiceClient$e;->g:Lcom/supercell/titan/GoogleServiceClient;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -37,7 +37,7 @@
 .method public final run()V
     .locals 1
 
-    iget-object v0, p0, Lcom/supercell/titan/GoogleServiceClient$e;->f:Lcom/supercell/titan/GoogleServiceClient;
+    iget-object v0, p0, Lcom/supercell/titan/GoogleServiceClient$e;->g:Lcom/supercell/titan/GoogleServiceClient;
 
     invoke-virtual {v0}, Lcom/supercell/titan/GoogleServiceClient;->signOut()V
 

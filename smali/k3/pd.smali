@@ -1,227 +1,128 @@
-.class public Lk3/pd;
+.class public final Lk3/pd;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lk3/em0;
-
-
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "<T:",
-        "Ljava/lang/Object;",
-        ">",
-        "Ljava/lang/Object;",
-        "Lk3/em0<",
-        "TT;>;"
-    }
-.end annotation
-
-.annotation runtime Ljavax/annotation/ParametersAreNonnullByDefault;
-.end annotation
+.implements Lk3/am0;
+.implements Lh9/b;
 
 
 # instance fields
-.field public final f:Lk3/om0;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lk3/om0<",
-            "TT;>;"
-        }
-    .end annotation
-.end field
+.field public final g:Ljava/lang/String;
 
 
 # direct methods
-.method public constructor <init>()V
+.method public synthetic constructor <init>()V
     .locals 1
 
-    .line 1
+    .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
-    new-instance v0, Lk3/om0;
-
-    invoke-direct {v0}, Lk3/om0;-><init>()V
+    const-string v0, "CREATE TABLE key_value_store(key text primary key,value blob not null);"
 
     .line 3
-    iput-object v0, p0, Lk3/pd;->f:Lk3/om0;
+    iput-object v0, p0, Lk3/pd;->g:Ljava/lang/String;
+
+    return-void
+.end method
+
+.method public synthetic constructor <init>(Ljava/lang/String;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lk3/pd;->g:Ljava/lang/String;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Ljava/lang/Object;)Z
-    .locals 3
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TT;)Z"
-        }
-    .end annotation
+.method public final a(Ljava/lang/Throwable;)V
+    .locals 2
 
     .line 1
-    iget-object v0, p0, Lk3/pd;->f:Lk3/om0;
+    sget-object v0, Li1/p;->B:Li1/p;
 
-    invoke-virtual {v0, p1}, Lk3/om0;->i(Ljava/lang/Object;)Z
-
-    move-result p1
-
-    if-nez p1, :cond_0
+    iget-object v0, v0, Li1/p;->g:Lk3/ia;
 
     .line 2
-    sget-object v0, Li1/o;->B:Li1/o;
+    iget-object v1, p0, Lk3/pd;->g:Ljava/lang/String;
 
-    iget-object v0, v0, Li1/o;->g:Lk3/ia;
-
-    .line 3
-    new-instance v1, Ljava/lang/IllegalStateException;
-
-    const-string v2, "Provided SettableFuture with multiple values."
-
-    invoke-direct {v1, v2}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
-    const-string v2, "SettableFuture"
-
-    .line 4
-    invoke-virtual {v0, v1, v2}, Lk3/ia;->c(Ljava/lang/Throwable;Ljava/lang/String;)V
-
-    :cond_0
-    return p1
-.end method
-
-.method public final b(Ljava/lang/Throwable;)Z
-    .locals 3
-
-    .line 1
-    iget-object v0, p0, Lk3/pd;->f:Lk3/om0;
-
-    invoke-virtual {v0, p1}, Lk3/om0;->j(Ljava/lang/Throwable;)Z
-
-    move-result p1
-
-    if-nez p1, :cond_0
-
-    .line 2
-    sget-object v0, Li1/o;->B:Li1/o;
-
-    iget-object v0, v0, Li1/o;->g:Lk3/ia;
-
-    .line 3
-    new-instance v1, Ljava/lang/IllegalStateException;
-
-    const-string v2, "Provided SettableFuture with multiple values."
-
-    invoke-direct {v1, v2}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
-    const-string v2, "SettableFuture"
-
-    .line 4
-    invoke-virtual {v0, v1, v2}, Lk3/ia;->c(Ljava/lang/Throwable;Ljava/lang/String;)V
-
-    :cond_0
-    return p1
-.end method
-
-.method public final c(Ljava/lang/Runnable;Ljava/util/concurrent/Executor;)V
-    .locals 1
-
-    iget-object v0, p0, Lk3/pd;->f:Lk3/om0;
-
-    invoke-virtual {v0, p1, p2}, Lk3/bl0;->c(Ljava/lang/Runnable;Ljava/util/concurrent/Executor;)V
+    invoke-virtual {v0, p1, v1}, Lk3/ia;->b(Ljava/lang/Throwable;Ljava/lang/String;)V
 
     return-void
 .end method
 
-.method public cancel(Z)Z
+.method public final c()Ljava/util/List;
     .locals 1
 
-    iget-object v0, p0, Lk3/pd;->f:Lk3/om0;
+    const-string v0, "CREATE TABLE key_value_store(key text primary key,value blob not null);"
 
-    invoke-virtual {v0, p1}, Lk3/bl0;->cancel(Z)Z
-
-    move-result p1
-
-    return p1
-.end method
-
-.method public final get()Ljava/lang/Object;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()TT;"
-        }
-    .end annotation
-
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/util/concurrent/ExecutionException;,
-            Ljava/lang/InterruptedException;
-        }
-    .end annotation
-
-    .line 1
-    iget-object v0, p0, Lk3/pd;->f:Lk3/om0;
-
-    invoke-virtual {v0}, Lk3/bl0;->get()Ljava/lang/Object;
+    invoke-static {v0}, Ljava/util/Collections;->singletonList(Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public final get(JLjava/util/concurrent/TimeUnit;)Ljava/lang/Object;
+.method public final getTag()Ljava/lang/String;
     .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(J",
-            "Ljava/util/concurrent/TimeUnit;",
-            ")TT;"
-        }
-    .end annotation
 
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/util/concurrent/ExecutionException;,
-            Ljava/lang/InterruptedException;,
-            Ljava/util/concurrent/TimeoutException;
-        }
-    .end annotation
+    const-string v0, "Helpshift_KeyValueDB"
 
-    .line 2
-    iget-object v0, p0, Lk3/pd;->f:Lk3/om0;
+    return-object v0
+.end method
 
-    invoke-virtual {v0, p1, p2, p3}, Lk3/bl0$j;->get(JLjava/util/concurrent/TimeUnit;)Ljava/lang/Object;
+.method public final i()Ljava/lang/String;
+    .locals 2
+
+    sget-object v0, Lva/a;->a:Ljava/util/Map;
+
+    const-string v1, "keyvalue_db"
+
+    invoke-interface {v0, v1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Ljava/lang/String;
+
+    return-object v0
+.end method
+
+.method public final n()Ljava/util/List;
+    .locals 1
+
+    const-string v0, "key_value_store"
+
+    invoke-static {v0}, Ljava/util/Collections;->singletonList(Ljava/lang/Object;)Ljava/util/List;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public final o(I)Ljava/util/List;
+    .locals 0
+
+    invoke-static {}, Ljava/util/Collections;->emptyList()Ljava/util/List;
 
     move-result-object p1
 
     return-object p1
 .end method
 
-.method public final isCancelled()Z
-    .locals 1
+.method public final onSuccess(Ljava/lang/Object;)V
+    .locals 0
 
-    .line 1
-    iget-object v0, p0, Lk3/pd;->f:Lk3/om0;
-
-    .line 2
-    iget-object v0, v0, Lk3/bl0;->f:Ljava/lang/Object;
-
-    .line 3
-    instance-of v0, v0, Lk3/bl0$c;
-
-    return v0
+    return-void
 .end method
 
-.method public final isDone()Z
+.method public final p()I
     .locals 1
 
-    iget-object v0, p0, Lk3/pd;->f:Lk3/om0;
-
-    invoke-virtual {v0}, Lk3/bl0;->isDone()Z
-
-    move-result v0
+    const/4 v0, 0x1
 
     return v0
 .end method

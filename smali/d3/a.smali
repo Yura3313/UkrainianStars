@@ -4,7 +4,7 @@
 
 
 # virtual methods
-.method public abstract S1()Ljava/util/ArrayList;
+.method public abstract R1()Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",

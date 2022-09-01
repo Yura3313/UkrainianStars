@@ -63,11 +63,11 @@
     iget-object v8, p1, Le6/j;->a:Ljava/lang/String;
 
     .line 3
-    sget-object p1, Lcom/supercell/id/ui/scancode/ScanCodeFragment;->n0:Lcom/supercell/id/ui/scancode/ScanCodeFragment$a;
+    sget-object p1, Lcom/supercell/id/ui/scancode/ScanCodeFragment;->o0:Lcom/supercell/id/ui/scancode/ScanCodeFragment$a;
 
     const-string p1, "url"
 
-    invoke-static {v8, p1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v8, p1}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 4
     new-instance p1, Landroid/net/UrlQuerySanitizer;
@@ -86,7 +86,7 @@
     .line 6
     iget-object p1, p0, Lcom/supercell/id/ui/scancode/ScanCodeFragment$c;->a:Lcom/supercell/id/ui/scancode/ScanCodeFragment;
 
-    invoke-static {p1}, Lcom/android/billingclient/api/c0;->e(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
+    invoke-static {p1}, Lcom/android/billingclient/api/b0;->f(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
 
     move-result-object p1
 
@@ -98,7 +98,7 @@
 
     const/4 v3, 0x0
 
-    sget-object v4, Lcom/supercell/id/model/ProfileImage$Empty;->g:Lcom/supercell/id/model/ProfileImage$Empty;
+    sget-object v4, Lcom/supercell/id/model/ProfileImage$Empty;->h:Lcom/supercell/id/model/ProfileImage$Empty;
 
     const/4 v5, 0x0
 
@@ -120,7 +120,7 @@
     :cond_0
     iget-object p1, p0, Lcom/supercell/id/ui/scancode/ScanCodeFragment$c;->a:Lcom/supercell/id/ui/scancode/ScanCodeFragment;
 
-    invoke-static {p1}, Lcom/android/billingclient/api/c0;->e(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
+    invoke-static {p1}, Lcom/android/billingclient/api/b0;->f(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
 
     move-result-object p1
 

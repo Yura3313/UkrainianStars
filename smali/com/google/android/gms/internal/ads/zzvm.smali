@@ -16,16 +16,16 @@
 
 
 # instance fields
-.field public final f:I
+.field public final g:I
 
 
 # direct methods
 .method public static constructor <clinit>()V
     .locals 1
 
-    new-instance v0, Lk3/c51;
+    new-instance v0, Lk3/f51;
 
-    invoke-direct {v0}, Lk3/c51;-><init>()V
+    invoke-direct {v0}, Lk3/f51;-><init>()V
 
     sput-object v0, Lcom/google/android/gms/internal/ads/zzvm;->CREATOR:Landroid/os/Parcelable$Creator;
 
@@ -39,7 +39,7 @@
     invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
 
     .line 2
-    iput p1, p0, Lcom/google/android/gms/internal/ads/zzvm;->f:I
+    iput p1, p0, Lcom/google/android/gms/internal/ads/zzvm;->g:I
 
     return-void
 .end method
@@ -57,7 +57,7 @@
     move-result v5
 
     .line 2
-    iget v3, p0, Lcom/google/android/gms/internal/ads/zzvm;->f:I
+    iget v3, p0, Lcom/google/android/gms/internal/ads/zzvm;->g:I
 
     const/4 v1, 0x2
 

@@ -102,7 +102,7 @@
     :cond_0
     iget-object v2, p0, Le8/d;->a:Landroid/content/Context;
 
-    invoke-static {v2, p1}, Lcom/android/billingclient/api/c0;->l(Landroid/content/Context;Ljava/lang/String;)Z
+    invoke-static {v2, p1}, Lcom/android/billingclient/api/b0;->m(Landroid/content/Context;Ljava/lang/String;)Z
 
     move-result v2
 
@@ -180,7 +180,7 @@
     const-string v3, "Error checking permission in Manifest : "
 
     .line 8
-    invoke-static {v1, v3, p1, v0}, Landroidx/savedstate/d;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v1, v3, p1, v0}, Le5/i;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
 
     :cond_4
     const/4 v1, 0x0
@@ -240,7 +240,7 @@
     const-string v3, "Error getting application name"
 
     .line 5
-    invoke-static {v2, v3, v0, v1}, Landroidx/savedstate/d;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v2, v3, v0, v1}, Le5/i;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
 
     :goto_0
     if-nez v1, :cond_0
@@ -256,7 +256,7 @@
 
     iget-object v0, p0, Le8/d;->a:Landroid/content/Context;
 
-    invoke-static {v0}, Lcom/android/billingclient/api/c0;->a(Landroid/content/Context;)Ljava/lang/String;
+    invoke-static {v0}, Lcom/android/billingclient/api/b0;->a(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -286,7 +286,7 @@
     iput-object v0, p0, Le8/d;->d:Ljava/lang/String;
 
     .line 3
-    invoke-static {v0}, Lcom/google/android/play/core/appupdate/g;->b(Ljava/lang/String;)Z
+    invoke-static {v0}, La5/b0;->d(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -304,7 +304,7 @@
     iput-object v0, p0, Le8/d;->d:Ljava/lang/String;
 
     .line 5
-    invoke-static {v0}, Lcom/google/android/play/core/appupdate/g;->b(Ljava/lang/String;)Z
+    invoke-static {v0}, La5/b0;->d(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -333,7 +333,7 @@
     :goto_0
     iget-object v0, p0, Le8/d;->d:Ljava/lang/String;
 
-    invoke-static {v0}, Lcom/google/android/play/core/appupdate/g;->b(Ljava/lang/String;)Z
+    invoke-static {v0}, La5/b0;->d(Ljava/lang/String;)Z
 
     move-result v0
 

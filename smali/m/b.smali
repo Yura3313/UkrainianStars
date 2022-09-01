@@ -46,7 +46,7 @@
 
     iget-object p2, p0, Lm/b;->d:Lm/c;
 
-    iget-object p2, p2, Lm/c;->g:[Ljava/lang/Object;
+    iget-object p2, p2, Lm/c;->h:[Ljava/lang/Object;
 
     aget-object p1, p2, p1
 
@@ -79,7 +79,7 @@
 
     iget-object v0, p0, Lm/b;->d:Lm/c;
 
-    iget v0, v0, Lm/c;->h:I
+    iget v0, v0, Lm/c;->i:I
 
     return v0
 .end method

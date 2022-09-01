@@ -3,7 +3,7 @@
 .source "GamesFragment.kt"
 
 # interfaces
-.implements Lae/b2;
+.implements Lae/a2;
 
 
 # instance fields
@@ -35,12 +35,12 @@
 
 
 # virtual methods
-.method public final a(Lae/b2;)Z
+.method public final a(Lae/a2;)Z
     .locals 3
 
     const-string v0, "other"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     instance-of v0, p1, Lsd/i;
@@ -59,7 +59,7 @@
 
     iget-object v2, p0, Lsd/i;->b:Lcom/supercell/id/model/IdConnectedSystem;
 
-    invoke-static {v0, v2}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v2}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
@@ -85,12 +85,12 @@
     return v0
 .end method
 
-.method public final d(Lae/b2;)Z
+.method public final d(Lae/a2;)Z
     .locals 1
 
     const-string v0, "other"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     instance-of v0, p1, Lsd/i;
@@ -102,16 +102,16 @@
     iget-object p1, p1, Lsd/i;->b:Lcom/supercell/id/model/IdConnectedSystem;
 
     .line 2
-    iget-object p1, p1, Lcom/supercell/id/model/IdConnectedSystem;->f:Ljava/lang/String;
+    iget-object p1, p1, Lcom/supercell/id/model/IdConnectedSystem;->g:Ljava/lang/String;
 
     .line 3
     iget-object v0, p0, Lsd/i;->b:Lcom/supercell/id/model/IdConnectedSystem;
 
     .line 4
-    iget-object v0, v0, Lcom/supercell/id/model/IdConnectedSystem;->f:Ljava/lang/String;
+    iget-object v0, v0, Lcom/supercell/id/model/IdConnectedSystem;->g:Ljava/lang/String;
 
     .line 5
-    invoke-static {p1, v0}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {p1, v0}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -143,7 +143,7 @@
 
     iget-object v1, p1, Lsd/i;->b:Lcom/supercell/id/model/IdConnectedSystem;
 
-    invoke-static {v0, v1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
@@ -224,7 +224,7 @@
     const-string v2, ")"
 
     .line 3
-    invoke-static {v0, v1, v2}, Landroidx/appcompat/app/j;->b(Ljava/lang/StringBuilder;ZLjava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, v1, v2}, Landroidx/appcompat/app/j;->a(Ljava/lang/StringBuilder;ZLjava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 

@@ -1,111 +1,106 @@
 .class public final Lod/m;
-.super Lse/h;
+.super Lse/i;
 .source "OnboardingNicknamePageFragment.kt"
 
 # interfaces
-.implements Lre/p;
+.implements Lre/l;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
-        "Lre/p<",
-        "Lod/k;",
-        "Lvc/v;",
-        "Lie/h;",
+        "Lse/i;",
+        "Lre/l<",
+        "Ljava/lang/String;",
+        "Lie/i;",
         ">;"
     }
 .end annotation
 
 
-# static fields
-.field public static final f:Lod/m;
+# instance fields
+.field public final synthetic g:Lod/l$f;
+
+.field public final synthetic h:Ljava/lang/String;
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 1
+.method public constructor <init>(Lod/l$f;Ljava/lang/String;)V
+    .locals 0
 
-    new-instance v0, Lod/m;
+    iput-object p1, p0, Lod/m;->g:Lod/l$f;
 
-    invoke-direct {v0}, Lod/m;-><init>()V
+    iput-object p2, p0, Lod/m;->h:Ljava/lang/String;
 
-    sput-object v0, Lod/m;->f:Lod/m;
+    const/4 p1, 0x1
 
-    return-void
-.end method
-
-.method public constructor <init>()V
-    .locals 1
-
-    const/4 v0, 0x2
-
-    invoke-direct {p0, v0}, Lse/h;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 1
+.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 5
 
     .line 1
-    check-cast p1, Lod/k;
+    check-cast p1, Ljava/lang/String;
 
-    check-cast p2, Lvc/v;
-
-    const-string v0, "$receiver"
+    const-string v0, "text"
 
     .line 2
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "it"
-
-    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 3
-    invoke-virtual {p1}, Lod/a;->U0()Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment;
+    iget-object v0, p0, Lod/m;->g:Lod/l$f;
+
+    iget-object v0, v0, Lod/l$f;->g:Ljava/lang/ref/WeakReference;
+
+    invoke-virtual {v0}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
 
     move-result-object v0
 
+    check-cast v0, Lod/l;
+
     if-eqz v0, :cond_0
 
-    invoke-virtual {v0}, Lcom/supercell/id/ui/onboarding/OnboardingFlowFragment;->j1()V
-
     .line 4
-    :cond_0
-    iget-object p2, p2, Lvc/v;->b:Ljava/util/List;
+    sget v1, Lcom/supercell/id/R$id;->fair_play_text_view:I
 
-    const/4 v0, 0x0
+    invoke-virtual {v0, v1}, Lod/l;->V0(I)Landroid/view/View;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/widget/TextView;
+
+    if-eqz v0, :cond_0
+
+    new-instance v1, Landroid/text/SpannableString;
+
+    invoke-direct {v1, p1}, Landroid/text/SpannableString;-><init>(Ljava/lang/CharSequence;)V
+
+    new-instance v2, Landroid/text/style/URLSpan;
+
+    iget-object v3, p0, Lod/m;->h:Ljava/lang/String;
+
+    invoke-direct {v2, v3}, Landroid/text/style/URLSpan;-><init>(Ljava/lang/String;)V
+
+    const/4 v3, 0x0
+
+    invoke-virtual {p1}, Ljava/lang/String;->length()I
+
+    move-result p1
+
+    const/16 v4, 0x21
+
+    invoke-virtual {v1, v2, v3, p1, v4}, Landroid/text/SpannableString;->setSpan(Ljava/lang/Object;III)V
+
+    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 5
-    invoke-static {p2, v0}, Lje/j;->B(Ljava/util/List;I)Ljava/lang/Object;
-
-    move-result-object p2
-
-    check-cast p2, Ljava/lang/String;
-
-    if-eqz p2, :cond_1
-
-    .line 6
-    invoke-static {p1}, Lcom/android/billingclient/api/c0;->e(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
-
-    move-result-object p1
-
-    if-eqz p1, :cond_1
-
-    sget-object v0, Lcom/supercell/id/ui/MainActivity;->s:Ljava/lang/ref/WeakReference;
-
-    const/4 v0, 0x0
-
-    .line 7
-    invoke-virtual {p1, p2, v0}, Lcom/supercell/id/ui/MainActivity;->H(Ljava/lang/String;Lre/l;)V
-
-    .line 8
-    :cond_1
-    sget-object p1, Lie/h;->a:Lie/h;
+    :cond_0
+    sget-object p1, Lie/i;->a:Lie/i;
 
     return-object p1
 .end method

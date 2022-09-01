@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field public final synthetic f:Ljd/c;
+.field public final synthetic g:Ljd/c;
 
 
 # direct methods
 .method public constructor <init>(Ljd/c;)V
     .locals 0
 
-    iput-object p1, p0, Ljd/c$g;->f:Ljd/c;
+    iput-object p1, p0, Ljd/c$g;->g:Ljd/c;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -38,7 +38,7 @@
     .locals 4
 
     .line 1
-    iget-object p1, p0, Ljd/c$g;->f:Ljd/c;
+    iget-object p1, p0, Ljd/c$g;->g:Ljd/c;
 
     sget v0, Lcom/supercell/id/R$id;->editMessageView:I
 
@@ -50,7 +50,7 @@
 
     const-string v1, "editMessageView"
 
-    invoke-static {p1, v1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v1}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {p1}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
 
@@ -62,7 +62,7 @@
 
     if-eqz p1, :cond_2
 
-    invoke-static {p1}, Lye/r;->E(Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
+    invoke-static {p1}, Lye/r;->F(Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
 
     move-result-object p1
 
@@ -98,16 +98,16 @@
     iget-object v2, v2, Lae/u;->o:Lrc/d0;
 
     .line 5
-    iget-object v3, p0, Ljd/c$g;->f:Ljd/c;
+    iget-object v3, p0, Ljd/c$g;->g:Ljd/c;
 
     .line 6
-    iget-object v3, v3, Ljd/c;->j:Ljava/lang/String;
+    iget-object v3, v3, Ljd/c;->k:Ljava/lang/String;
 
     .line 7
-    invoke-virtual {v2, p1, v3}, Lrc/d0;->r(Ljava/lang/String;Ljava/lang/String;)Lze/e0;
+    invoke-virtual {v2, p1, v3}, Lrc/d0;->r(Ljava/lang/String;Ljava/lang/String;)Lze/f0;
 
     .line 8
-    iget-object p1, p0, Ljd/c$g;->f:Ljd/c;
+    iget-object p1, p0, Ljd/c$g;->g:Ljd/c;
 
     invoke-virtual {p1, v0}, Landroid/app/Dialog;->findViewById(I)Landroid/view/View;
 
@@ -115,7 +115,7 @@
 
     check-cast p1, Landroid/widget/EditText;
 
-    invoke-static {p1, v1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v1}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {p1}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
 

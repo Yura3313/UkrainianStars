@@ -89,11 +89,11 @@
     :cond_2
     iget-object v1, p0, Li1/a;->d:Lcom/google/android/gms/internal/ads/zzasa;
 
-    iget-boolean v2, v1, Lcom/google/android/gms/internal/ads/zzasa;->f:Z
+    iget-boolean v2, v1, Lcom/google/android/gms/internal/ads/zzasa;->g:Z
 
     if-eqz v2, :cond_4
 
-    iget-object v1, v1, Lcom/google/android/gms/internal/ads/zzasa;->g:Ljava/util/List;
+    iget-object v1, v1, Lcom/google/android/gms/internal/ads/zzasa;->h:Ljava/util/List;
 
     if-eqz v1, :cond_4
 
@@ -135,9 +135,9 @@
     move-result-object v2
 
     .line 8
-    sget-object v3, Li1/o;->B:Li1/o;
+    sget-object v3, Li1/p;->B:Li1/p;
 
-    iget-object v3, v3, Li1/o;->c:Lk3/bb;
+    iget-object v3, v3, Li1/p;->c:Lk3/bb;
 
     .line 9
     iget-object v3, p0, Li1/a;->a:Landroid/content/Context;
@@ -163,14 +163,14 @@
 
     move-result-object v0
 
-    iget-boolean v0, v0, Lcom/google/android/gms/internal/ads/zzavt;->k:Z
+    iget-boolean v0, v0, Lcom/google/android/gms/internal/ads/zzavt;->l:Z
 
     if-nez v0, :cond_1
 
     :cond_0
     iget-object v0, p0, Li1/a;->d:Lcom/google/android/gms/internal/ads/zzasa;
 
-    iget-boolean v0, v0, Lcom/google/android/gms/internal/ads/zzasa;->f:Z
+    iget-boolean v0, v0, Lcom/google/android/gms/internal/ads/zzasa;->g:Z
 
     if-eqz v0, :cond_2
 

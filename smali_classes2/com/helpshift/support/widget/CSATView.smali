@@ -15,11 +15,11 @@
 
 
 # instance fields
-.field public f:Llb/c;
+.field public g:Llb/c;
 
-.field public g:Landroid/widget/RatingBar;
+.field public h:Landroid/widget/RatingBar;
 
-.field public h:Lcom/helpshift/support/widget/CSATView$a;
+.field public i:Lcom/helpshift/support/widget/CSATView$a;
 
 
 # direct methods
@@ -32,7 +32,7 @@
     const/4 p2, 0x0
 
     .line 2
-    iput-object p2, p0, Lcom/helpshift/support/widget/CSATView;->h:Lcom/helpshift/support/widget/CSATView$a;
+    iput-object p2, p0, Lcom/helpshift/support/widget/CSATView;->i:Lcom/helpshift/support/widget/CSATView$a;
 
     .line 3
     sget p2, Lcom/helpshift/R$layout;->hs__csat_view:I
@@ -44,7 +44,7 @@
 
     invoke-direct {p2, p1}, Llb/c;-><init>(Landroid/content/Context;)V
 
-    iput-object p2, p0, Lcom/helpshift/support/widget/CSATView;->f:Llb/c;
+    iput-object p2, p0, Lcom/helpshift/support/widget/CSATView;->g:Llb/c;
 
     return-void
 .end method
@@ -58,7 +58,7 @@
     const/4 p2, 0x0
 
     .line 6
-    iput-object p2, p0, Lcom/helpshift/support/widget/CSATView;->h:Lcom/helpshift/support/widget/CSATView$a;
+    iput-object p2, p0, Lcom/helpshift/support/widget/CSATView;->i:Lcom/helpshift/support/widget/CSATView$a;
 
     .line 7
     sget p2, Lcom/helpshift/R$layout;->hs__csat_view:I
@@ -70,7 +70,7 @@
 
     invoke-direct {p2, p1}, Llb/c;-><init>(Landroid/content/Context;)V
 
-    iput-object p2, p0, Lcom/helpshift/support/widget/CSATView;->f:Llb/c;
+    iput-object p2, p0, Lcom/helpshift/support/widget/CSATView;->g:Llb/c;
 
     return-void
 .end method
@@ -80,7 +80,7 @@
 .method public getRatingBar()Landroid/widget/RatingBar;
     .locals 1
 
-    iget-object v0, p0, Lcom/helpshift/support/widget/CSATView;->g:Landroid/widget/RatingBar;
+    iget-object v0, p0, Lcom/helpshift/support/widget/CSATView;->h:Landroid/widget/RatingBar;
 
     return-object v0
 .end method
@@ -100,14 +100,14 @@
 
     check-cast v0, Landroid/widget/RatingBar;
 
-    iput-object v0, p0, Lcom/helpshift/support/widget/CSATView;->g:Landroid/widget/RatingBar;
+    iput-object v0, p0, Lcom/helpshift/support/widget/CSATView;->h:Landroid/widget/RatingBar;
 
     .line 3
     invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/helpshift/support/widget/CSATView;->g:Landroid/widget/RatingBar;
+    iget-object v1, p0, Lcom/helpshift/support/widget/CSATView;->h:Landroid/widget/RatingBar;
 
     invoke-virtual {v1}, Landroid/widget/ProgressBar;->getProgressDrawable()Landroid/graphics/drawable/Drawable;
 
@@ -116,7 +116,7 @@
     invoke-static {v0, v1}, Lib/g;->e(Landroid/content/Context;Landroid/graphics/drawable/Drawable;)V
 
     .line 4
-    iget-object v0, p0, Lcom/helpshift/support/widget/CSATView;->g:Landroid/widget/RatingBar;
+    iget-object v0, p0, Lcom/helpshift/support/widget/CSATView;->h:Landroid/widget/RatingBar;
 
     invoke-virtual {v0, p0}, Landroid/widget/RatingBar;->setOnRatingBarChangeListener(Landroid/widget/RatingBar$OnRatingBarChangeListener;)V
 
@@ -129,10 +129,10 @@
     if-eqz p3, :cond_0
 
     .line 1
-    iget-object p1, p0, Lcom/helpshift/support/widget/CSATView;->f:Llb/c;
+    iget-object p1, p0, Lcom/helpshift/support/widget/CSATView;->g:Llb/c;
 
     .line 2
-    iput-object p0, p1, Llb/c;->g:Lcom/helpshift/support/widget/CSATView;
+    iput-object p0, p1, Llb/c;->h:Lcom/helpshift/support/widget/CSATView;
 
     .line 3
     invoke-virtual {p0}, Lcom/helpshift/support/widget/CSATView;->getRatingBar()Landroid/widget/RatingBar;
@@ -143,7 +143,7 @@
 
     move-result p2
 
-    iput p2, p1, Llb/c;->k:F
+    iput p2, p1, Llb/c;->l:F
 
     .line 4
     invoke-virtual {p1}, Landroid/app/Dialog;->show()V
@@ -155,7 +155,7 @@
 .method public setCSATListener(Lcom/helpshift/support/widget/CSATView$a;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/helpshift/support/widget/CSATView;->h:Lcom/helpshift/support/widget/CSATView$a;
+    iput-object p1, p0, Lcom/helpshift/support/widget/CSATView;->i:Lcom/helpshift/support/widget/CSATView$a;
 
     return-void
 .end method

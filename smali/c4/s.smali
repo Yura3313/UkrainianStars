@@ -20,11 +20,11 @@
 
 
 # instance fields
-.field public final f:Ljava/util/concurrent/Executor;
+.field public final g:Ljava/util/concurrent/Executor;
 
-.field public final g:Ljava/lang/Object;
+.field public final h:Ljava/lang/Object;
 
-.field public h:Lc4/e;
+.field public i:Lc4/e;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lc4/e<",
@@ -61,13 +61,13 @@
 
     invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
-    iput-object v0, p0, Lc4/s;->g:Ljava/lang/Object;
+    iput-object v0, p0, Lc4/s;->h:Ljava/lang/Object;
 
     .line 3
-    iput-object p1, p0, Lc4/s;->f:Ljava/util/concurrent/Executor;
+    iput-object p1, p0, Lc4/s;->g:Ljava/util/concurrent/Executor;
 
     .line 4
-    iput-object p2, p0, Lc4/s;->h:Lc4/e;
+    iput-object p2, p0, Lc4/s;->i:Lc4/e;
 
     return-void
 .end method
@@ -92,13 +92,13 @@
     if-eqz v0, :cond_1
 
     .line 2
-    iget-object v0, p0, Lc4/s;->g:Ljava/lang/Object;
+    iget-object v0, p0, Lc4/s;->h:Ljava/lang/Object;
 
     monitor-enter v0
 
     .line 3
     :try_start_0
-    iget-object v1, p0, Lc4/s;->h:Lc4/e;
+    iget-object v1, p0, Lc4/s;->i:Lc4/e;
 
     if-nez v1, :cond_0
 
@@ -114,7 +114,7 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 6
-    iget-object v0, p0, Lc4/s;->f:Ljava/util/concurrent/Executor;
+    iget-object v0, p0, Lc4/s;->g:Ljava/util/concurrent/Executor;
 
     new-instance v1, Lc4/t;
 
@@ -144,7 +144,7 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lc4/s;->g:Ljava/lang/Object;
+    iget-object v0, p0, Lc4/s;->h:Ljava/lang/Object;
 
     monitor-enter v0
 
@@ -152,7 +152,7 @@
 
     .line 2
     :try_start_0
-    iput-object v1, p0, Lc4/s;->h:Lc4/e;
+    iput-object v1, p0, Lc4/s;->i:Lc4/e;
 
     .line 3
     monitor-exit v0

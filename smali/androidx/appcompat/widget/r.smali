@@ -13,9 +13,7 @@
 
 
 # instance fields
-.field public final f:Landroid/graphics/Rect;
-
-.field public g:I
+.field public final g:Landroid/graphics/Rect;
 
 .field public h:I
 
@@ -25,19 +23,21 @@
 
 .field public k:I
 
-.field public l:Ljava/lang/reflect/Field;
+.field public l:I
 
-.field public m:Landroidx/appcompat/widget/r$a;
+.field public m:Ljava/lang/reflect/Field;
 
-.field public n:Z
+.field public n:Landroidx/appcompat/widget/r$a;
 
 .field public o:Z
 
 .field public p:Z
 
-.field public q:Landroidx/core/widget/f;
+.field public q:Z
 
-.field public r:Landroidx/appcompat/widget/r$b;
+.field public r:Landroidx/core/widget/f;
+
+.field public s:Landroidx/appcompat/widget/r$b;
 
 
 # direct methods
@@ -56,24 +56,24 @@
 
     invoke-direct {p1}, Landroid/graphics/Rect;-><init>()V
 
-    iput-object p1, p0, Landroidx/appcompat/widget/r;->f:Landroid/graphics/Rect;
+    iput-object p1, p0, Landroidx/appcompat/widget/r;->g:Landroid/graphics/Rect;
 
     const/4 p1, 0x0
 
     .line 3
-    iput p1, p0, Landroidx/appcompat/widget/r;->g:I
-
-    .line 4
     iput p1, p0, Landroidx/appcompat/widget/r;->h:I
 
-    .line 5
+    .line 4
     iput p1, p0, Landroidx/appcompat/widget/r;->i:I
 
-    .line 6
+    .line 5
     iput p1, p0, Landroidx/appcompat/widget/r;->j:I
 
+    .line 6
+    iput p1, p0, Landroidx/appcompat/widget/r;->k:I
+
     .line 7
-    iput-boolean p2, p0, Landroidx/appcompat/widget/r;->o:Z
+    iput-boolean p2, p0, Landroidx/appcompat/widget/r;->p:Z
 
     .line 8
     invoke-virtual {p0, p1}, Landroid/widget/AbsListView;->setCacheColorHint(I)V
@@ -88,7 +88,7 @@
 
     move-result-object p1
 
-    iput-object p1, p0, Landroidx/appcompat/widget/r;->l:Ljava/lang/reflect/Field;
+    iput-object p1, p0, Landroidx/appcompat/widget/r;->m:Ljava/lang/reflect/Field;
 
     const/4 p2, 0x1
 
@@ -113,12 +113,12 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/r;->m:Landroidx/appcompat/widget/r$a;
+    iget-object v0, p0, Landroidx/appcompat/widget/r;->n:Landroidx/appcompat/widget/r$a;
 
     if-eqz v0, :cond_0
 
     .line 2
-    iput-boolean p1, v0, Landroidx/appcompat/widget/r$a;->g:Z
+    iput-boolean p1, v0, Landroidx/appcompat/widget/r$a;->h:Z
 
     :cond_0
     return-void
@@ -366,7 +366,7 @@
     int-to-float v6, v6
 
     .line 7
-    iput-boolean v5, v1, Landroidx/appcompat/widget/r;->p:Z
+    iput-boolean v5, v1, Landroidx/appcompat/widget/r;->q:Z
 
     .line 8
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
@@ -394,7 +394,7 @@
     invoke-virtual/range {p0 .. p0}, Landroid/widget/AbsListView;->layoutChildren()V
 
     .line 13
-    iget v12, v1, Landroidx/appcompat/widget/r;->k:I
+    iget v12, v1, Landroidx/appcompat/widget/r;->l:I
 
     if-eq v12, v9, :cond_7
 
@@ -425,7 +425,7 @@
 
     .line 17
     :cond_7
-    iput v8, v1, Landroidx/appcompat/widget/r;->k:I
+    iput v8, v1, Landroidx/appcompat/widget/r;->l:I
 
     .line 18
     invoke-virtual {v10}, Landroid/view/View;->getLeft()I
@@ -486,7 +486,7 @@
 
     .line 25
     :cond_b
-    iget-object v0, v1, Landroidx/appcompat/widget/r;->f:Landroid/graphics/Rect;
+    iget-object v0, v1, Landroidx/appcompat/widget/r;->g:Landroid/graphics/Rect;
 
     .line 26
     invoke-virtual {v10}, Landroid/view/View;->getLeft()I
@@ -510,7 +510,7 @@
     .line 27
     iget v5, v0, Landroid/graphics/Rect;->left:I
 
-    iget v13, v1, Landroidx/appcompat/widget/r;->g:I
+    iget v13, v1, Landroidx/appcompat/widget/r;->h:I
 
     sub-int/2addr v5, v13
 
@@ -519,7 +519,7 @@
     .line 28
     iget v5, v0, Landroid/graphics/Rect;->top:I
 
-    iget v13, v1, Landroidx/appcompat/widget/r;->h:I
+    iget v13, v1, Landroidx/appcompat/widget/r;->i:I
 
     sub-int/2addr v5, v13
 
@@ -528,7 +528,7 @@
     .line 29
     iget v5, v0, Landroid/graphics/Rect;->right:I
 
-    iget v13, v1, Landroidx/appcompat/widget/r;->i:I
+    iget v13, v1, Landroidx/appcompat/widget/r;->j:I
 
     add-int/2addr v5, v13
 
@@ -537,7 +537,7 @@
     .line 30
     iget v5, v0, Landroid/graphics/Rect;->bottom:I
 
-    iget v13, v1, Landroidx/appcompat/widget/r;->j:I
+    iget v13, v1, Landroidx/appcompat/widget/r;->k:I
 
     add-int/2addr v5, v13
 
@@ -545,7 +545,7 @@
 
     .line 31
     :try_start_0
-    iget-object v0, v1, Landroidx/appcompat/widget/r;->l:Ljava/lang/reflect/Field;
+    iget-object v0, v1, Landroidx/appcompat/widget/r;->m:Ljava/lang/reflect/Field;
 
     invoke-virtual {v0, v1}, Ljava/lang/reflect/Field;->getBoolean(Ljava/lang/Object;)Z
 
@@ -559,7 +559,7 @@
     if-eq v5, v0, :cond_d
 
     .line 33
-    iget-object v5, v1, Landroidx/appcompat/widget/r;->l:Ljava/lang/reflect/Field;
+    iget-object v5, v1, Landroidx/appcompat/widget/r;->m:Ljava/lang/reflect/Field;
 
     if-nez v0, :cond_c
 
@@ -597,7 +597,7 @@
     if-eqz v12, :cond_f
 
     .line 36
-    iget-object v0, v1, Landroidx/appcompat/widget/r;->f:Landroid/graphics/Rect;
+    iget-object v0, v1, Landroidx/appcompat/widget/r;->g:Landroid/graphics/Rect;
 
     .line 37
     invoke-virtual {v0}, Landroid/graphics/Rect;->exactCenterX()F
@@ -675,7 +675,7 @@
 
     .line 47
     :cond_12
-    iput-boolean v4, v1, Landroidx/appcompat/widget/r;->p:Z
+    iput-boolean v4, v1, Landroidx/appcompat/widget/r;->q:Z
 
     .line 48
     invoke-virtual {v1, v4}, Landroid/view/View;->setPressed(Z)V
@@ -684,7 +684,7 @@
     invoke-virtual/range {p0 .. p0}, Landroidx/appcompat/widget/r;->drawableStateChanged()V
 
     .line 50
-    iget v3, v1, Landroidx/appcompat/widget/r;->k:I
+    iget v3, v1, Landroidx/appcompat/widget/r;->l:I
 
     invoke-virtual/range {p0 .. p0}, Landroid/widget/AdapterView;->getFirstVisiblePosition()I
 
@@ -705,7 +705,7 @@
     if-eqz v0, :cond_15
 
     .line 52
-    iget-object v3, v1, Landroidx/appcompat/widget/r;->q:Landroidx/core/widget/f;
+    iget-object v3, v1, Landroidx/appcompat/widget/r;->r:Landroidx/core/widget/f;
 
     if-nez v3, :cond_14
 
@@ -714,19 +714,19 @@
 
     invoke-direct {v3, v1}, Landroidx/core/widget/f;-><init>(Landroid/widget/ListView;)V
 
-    iput-object v3, v1, Landroidx/appcompat/widget/r;->q:Landroidx/core/widget/f;
+    iput-object v3, v1, Landroidx/appcompat/widget/r;->r:Landroidx/core/widget/f;
 
     .line 54
     :cond_14
-    iget-object v3, v1, Landroidx/appcompat/widget/r;->q:Landroidx/core/widget/f;
+    iget-object v3, v1, Landroidx/appcompat/widget/r;->r:Landroidx/core/widget/f;
 
     .line 55
-    iget-boolean v4, v3, Landroidx/core/widget/a;->u:Z
+    iget-boolean v4, v3, Landroidx/core/widget/a;->v:Z
 
     const/4 v4, 0x1
 
     .line 56
-    iput-boolean v4, v3, Landroidx/core/widget/a;->u:Z
+    iput-boolean v4, v3, Landroidx/core/widget/a;->v:Z
 
     .line 57
     invoke-virtual {v3, v1, v2}, Landroidx/core/widget/a;->onTouch(Landroid/view/View;Landroid/view/MotionEvent;)Z
@@ -735,12 +735,12 @@
 
     .line 58
     :cond_15
-    iget-object v2, v1, Landroidx/appcompat/widget/r;->q:Landroidx/core/widget/f;
+    iget-object v2, v1, Landroidx/appcompat/widget/r;->r:Landroidx/core/widget/f;
 
     if-eqz v2, :cond_17
 
     .line 59
-    iget-boolean v3, v2, Landroidx/core/widget/a;->u:Z
+    iget-boolean v3, v2, Landroidx/core/widget/a;->v:Z
 
     if-eqz v3, :cond_16
 
@@ -749,7 +749,7 @@
 
     .line 61
     :cond_16
-    iput-boolean v4, v2, Landroidx/core/widget/a;->u:Z
+    iput-boolean v4, v2, Landroidx/core/widget/a;->v:Z
 
     :cond_17
     :goto_8
@@ -767,7 +767,7 @@
     if-eqz v0, :cond_0
 
     .line 2
-    iget-boolean v1, p0, Landroidx/appcompat/widget/r;->p:Z
+    iget-boolean v1, p0, Landroidx/appcompat/widget/r;->q:Z
 
     if-eqz v1, :cond_0
 
@@ -793,7 +793,7 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/r;->f:Landroid/graphics/Rect;
+    iget-object v0, p0, Landroidx/appcompat/widget/r;->g:Landroid/graphics/Rect;
 
     invoke-virtual {v0}, Landroid/graphics/Rect;->isEmpty()Z
 
@@ -809,7 +809,7 @@
     if-eqz v0, :cond_0
 
     .line 3
-    iget-object v1, p0, Landroidx/appcompat/widget/r;->f:Landroid/graphics/Rect;
+    iget-object v1, p0, Landroidx/appcompat/widget/r;->g:Landroid/graphics/Rect;
 
     invoke-virtual {v0, v1}, Landroid/graphics/drawable/Drawable;->setBounds(Landroid/graphics/Rect;)V
 
@@ -827,7 +827,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/r;->r:Landroidx/appcompat/widget/r$b;
+    iget-object v0, p0, Landroidx/appcompat/widget/r;->s:Landroidx/appcompat/widget/r$b;
 
     if-eqz v0, :cond_0
 
@@ -851,7 +851,7 @@
 .method public final hasFocus()Z
     .locals 1
 
-    iget-boolean v0, p0, Landroidx/appcompat/widget/r;->o:Z
+    iget-boolean v0, p0, Landroidx/appcompat/widget/r;->p:Z
 
     if-nez v0, :cond_1
 
@@ -879,7 +879,7 @@
 .method public final hasWindowFocus()Z
     .locals 1
 
-    iget-boolean v0, p0, Landroidx/appcompat/widget/r;->o:Z
+    iget-boolean v0, p0, Landroidx/appcompat/widget/r;->p:Z
 
     if-nez v0, :cond_1
 
@@ -907,7 +907,7 @@
 .method public final isFocused()Z
     .locals 1
 
-    iget-boolean v0, p0, Landroidx/appcompat/widget/r;->o:Z
+    iget-boolean v0, p0, Landroidx/appcompat/widget/r;->p:Z
 
     if-nez v0, :cond_1
 
@@ -935,11 +935,11 @@
 .method public final isInTouchMode()Z
     .locals 1
 
-    iget-boolean v0, p0, Landroidx/appcompat/widget/r;->o:Z
+    iget-boolean v0, p0, Landroidx/appcompat/widget/r;->p:Z
 
     if-eqz v0, :cond_0
 
-    iget-boolean v0, p0, Landroidx/appcompat/widget/r;->n:Z
+    iget-boolean v0, p0, Landroidx/appcompat/widget/r;->o:Z
 
     if-nez v0, :cond_1
 
@@ -968,7 +968,7 @@
     const/4 v0, 0x0
 
     .line 1
-    iput-object v0, p0, Landroidx/appcompat/widget/r;->r:Landroidx/appcompat/widget/r$b;
+    iput-object v0, p0, Landroidx/appcompat/widget/r;->s:Landroidx/appcompat/widget/r$b;
 
     .line 2
     invoke-super {p0}, Landroid/widget/ListView;->onDetachedFromWindow()V
@@ -1004,7 +1004,7 @@
     if-ne v0, v1, :cond_1
 
     .line 4
-    iget-object v1, p0, Landroidx/appcompat/widget/r;->r:Landroidx/appcompat/widget/r$b;
+    iget-object v1, p0, Landroidx/appcompat/widget/r;->s:Landroidx/appcompat/widget/r$b;
 
     if-nez v1, :cond_1
 
@@ -1013,7 +1013,7 @@
 
     invoke-direct {v1, p0}, Landroidx/appcompat/widget/r$b;-><init>(Landroidx/appcompat/widget/r;)V
 
-    iput-object v1, p0, Landroidx/appcompat/widget/r;->r:Landroidx/appcompat/widget/r$b;
+    iput-object v1, p0, Landroidx/appcompat/widget/r;->s:Landroidx/appcompat/widget/r$b;
 
     .line 6
     invoke-virtual {p0, v1}, Landroid/view/View;->post(Ljava/lang/Runnable;)Z
@@ -1140,20 +1140,20 @@
 
     move-result v0
 
-    iput v0, p0, Landroidx/appcompat/widget/r;->k:I
+    iput v0, p0, Landroidx/appcompat/widget/r;->l:I
 
     .line 3
     :goto_0
-    iget-object v0, p0, Landroidx/appcompat/widget/r;->r:Landroidx/appcompat/widget/r$b;
+    iget-object v0, p0, Landroidx/appcompat/widget/r;->s:Landroidx/appcompat/widget/r$b;
 
     if-eqz v0, :cond_1
 
     .line 4
-    iget-object v1, v0, Landroidx/appcompat/widget/r$b;->f:Landroidx/appcompat/widget/r;
+    iget-object v1, v0, Landroidx/appcompat/widget/r$b;->g:Landroidx/appcompat/widget/r;
 
     const/4 v2, 0x0
 
-    iput-object v2, v1, Landroidx/appcompat/widget/r;->r:Landroidx/appcompat/widget/r$b;
+    iput-object v2, v1, Landroidx/appcompat/widget/r;->s:Landroidx/appcompat/widget/r$b;
 
     .line 5
     invoke-virtual {v1, v0}, Landroid/view/View;->removeCallbacks(Ljava/lang/Runnable;)Z
@@ -1170,7 +1170,7 @@
 .method public setListSelectionHidden(Z)V
     .locals 0
 
-    iput-boolean p1, p0, Landroidx/appcompat/widget/r;->n:Z
+    iput-boolean p1, p0, Landroidx/appcompat/widget/r;->o:Z
 
     return-void
 .end method
@@ -1191,7 +1191,7 @@
     const/4 v0, 0x0
 
     :goto_0
-    iput-object v0, p0, Landroidx/appcompat/widget/r;->m:Landroidx/appcompat/widget/r$a;
+    iput-object v0, p0, Landroidx/appcompat/widget/r;->n:Landroidx/appcompat/widget/r$a;
 
     .line 2
     invoke-super {p0, v0}, Landroid/widget/AbsListView;->setSelector(Landroid/graphics/drawable/Drawable;)V
@@ -1210,22 +1210,22 @@
     :cond_1
     iget p1, v0, Landroid/graphics/Rect;->left:I
 
-    iput p1, p0, Landroidx/appcompat/widget/r;->g:I
+    iput p1, p0, Landroidx/appcompat/widget/r;->h:I
 
     .line 6
     iget p1, v0, Landroid/graphics/Rect;->top:I
 
-    iput p1, p0, Landroidx/appcompat/widget/r;->h:I
+    iput p1, p0, Landroidx/appcompat/widget/r;->i:I
 
     .line 7
     iget p1, v0, Landroid/graphics/Rect;->right:I
 
-    iput p1, p0, Landroidx/appcompat/widget/r;->i:I
+    iput p1, p0, Landroidx/appcompat/widget/r;->j:I
 
     .line 8
     iget p1, v0, Landroid/graphics/Rect;->bottom:I
 
-    iput p1, p0, Landroidx/appcompat/widget/r;->j:I
+    iput p1, p0, Landroidx/appcompat/widget/r;->k:I
 
     return-void
 .end method

@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field public f:[I
+.field public g:[I
 
-.field public g:I
+.field public h:I
 
 
 # direct methods
@@ -22,14 +22,14 @@
     const/4 v0, 0x0
 
     .line 2
-    iput v0, p0, Ll6/a;->g:I
+    iput v0, p0, Ll6/a;->h:I
 
     const/4 v0, 0x1
 
     new-array v0, v0, [I
 
     .line 3
-    iput-object v0, p0, Ll6/a;->f:[I
+    iput-object v0, p0, Ll6/a;->g:[I
 
     return-void
 .end method
@@ -41,7 +41,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 5
-    iput p1, p0, Ll6/a;->g:I
+    iput p1, p0, Ll6/a;->h:I
 
     add-int/lit8 p1, p1, 0x1f
 
@@ -51,7 +51,7 @@
     new-array p1, p1, [I
 
     .line 7
-    iput-object p1, p0, Ll6/a;->f:[I
+    iput-object p1, p0, Ll6/a;->g:[I
 
     return-void
 .end method
@@ -63,10 +63,10 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 9
-    iput-object p1, p0, Ll6/a;->f:[I
+    iput-object p1, p0, Ll6/a;->g:[I
 
     .line 10
-    iput p2, p0, Ll6/a;->g:I
+    iput p2, p0, Ll6/a;->h:I
 
     return-void
 .end method
@@ -76,7 +76,7 @@
 .method public final a(I)Z
     .locals 2
 
-    iget-object v0, p0, Ll6/a;->f:[I
+    iget-object v0, p0, Ll6/a;->g:[I
 
     div-int/lit8 v1, p1, 0x20
 
@@ -104,7 +104,7 @@
     .locals 3
 
     .line 1
-    iget v0, p0, Ll6/a;->g:I
+    iget v0, p0, Ll6/a;->h:I
 
     if-lt p1, v0, :cond_0
 
@@ -115,7 +115,7 @@
     div-int/lit8 v0, p1, 0x20
 
     .line 3
-    iget-object v1, p0, Ll6/a;->f:[I
+    iget-object v1, p0, Ll6/a;->g:[I
 
     aget v1, v1, v0
 
@@ -137,14 +137,14 @@
     add-int/lit8 v0, v0, 0x1
 
     .line 4
-    iget-object p1, p0, Ll6/a;->f:[I
+    iget-object p1, p0, Ll6/a;->g:[I
 
     array-length v1, p1
 
     if-ne v0, v1, :cond_1
 
     .line 5
-    iget p1, p0, Ll6/a;->g:I
+    iget p1, p0, Ll6/a;->h:I
 
     return p1
 
@@ -165,7 +165,7 @@
     add-int/2addr p1, v0
 
     .line 8
-    iget v0, p0, Ll6/a;->g:I
+    iget v0, p0, Ll6/a;->h:I
 
     if-le p1, v0, :cond_3
 
@@ -179,7 +179,7 @@
     .locals 3
 
     .line 1
-    iget v0, p0, Ll6/a;->g:I
+    iget v0, p0, Ll6/a;->h:I
 
     if-lt p1, v0, :cond_0
 
@@ -190,7 +190,7 @@
     div-int/lit8 v0, p1, 0x20
 
     .line 3
-    iget-object v1, p0, Ll6/a;->f:[I
+    iget-object v1, p0, Ll6/a;->g:[I
 
     aget v1, v1, v0
 
@@ -214,14 +214,14 @@
     add-int/lit8 v0, v0, 0x1
 
     .line 4
-    iget-object p1, p0, Ll6/a;->f:[I
+    iget-object p1, p0, Ll6/a;->g:[I
 
     array-length v1, p1
 
     if-ne v0, v1, :cond_1
 
     .line 5
-    iget p1, p0, Ll6/a;->g:I
+    iget p1, p0, Ll6/a;->h:I
 
     return p1
 
@@ -244,7 +244,7 @@
     add-int/2addr p1, v0
 
     .line 8
-    iget v0, p0, Ll6/a;->g:I
+    iget v0, p0, Ll6/a;->h:I
 
     if-le p1, v0, :cond_3
 
@@ -264,7 +264,7 @@
 
     new-instance v0, Ll6/a;
 
-    iget-object v1, p0, Ll6/a;->f:[I
+    iget-object v1, p0, Ll6/a;->g:[I
 
     invoke-virtual {v1}, [I->clone()Ljava/lang/Object;
 
@@ -272,7 +272,7 @@
 
     check-cast v1, [I
 
-    iget v2, p0, Ll6/a;->g:I
+    iget v2, p0, Ll6/a;->h:I
 
     invoke-direct {v0, v1, v2}, Ll6/a;-><init>([II)V
 
@@ -287,7 +287,7 @@
     if-ltz p1, :cond_5
 
     .line 1
-    iget v0, p0, Ll6/a;->g:I
+    iget v0, p0, Ll6/a;->h:I
 
     if-gt p2, v0, :cond_5
 
@@ -342,7 +342,7 @@
     sub-int/2addr v4, v6
 
     .line 4
-    iget-object v6, p0, Ll6/a;->f:[I
+    iget-object v6, p0, Ll6/a;->g:[I
 
     aget v6, v6, v3
 
@@ -379,14 +379,14 @@
     .locals 13
 
     .line 1
-    iget-object v0, p0, Ll6/a;->f:[I
+    iget-object v0, p0, Ll6/a;->g:[I
 
     array-length v0, v0
 
     new-array v0, v0, [I
 
     .line 2
-    iget v1, p0, Ll6/a;->g:I
+    iget v1, p0, Ll6/a;->h:I
 
     const/4 v2, 0x1
 
@@ -404,7 +404,7 @@
     if-ge v5, v3, :cond_0
 
     .line 3
-    iget-object v6, p0, Ll6/a;->f:[I
+    iget-object v6, p0, Ll6/a;->g:[I
 
     aget v6, v6, v5
 
@@ -491,7 +491,7 @@
 
     .line 5
     :cond_0
-    iget v1, p0, Ll6/a;->g:I
+    iget v1, p0, Ll6/a;->h:I
 
     shl-int/lit8 v5, v3, 0x5
 
@@ -537,7 +537,7 @@
 
     .line 10
     :cond_2
-    iput-object v0, p0, Ll6/a;->f:[I
+    iput-object v0, p0, Ll6/a;->g:[I
 
     return-void
 .end method
@@ -559,15 +559,15 @@
     check-cast p1, Ll6/a;
 
     .line 3
-    iget v0, p0, Ll6/a;->g:I
+    iget v0, p0, Ll6/a;->h:I
 
-    iget v2, p1, Ll6/a;->g:I
+    iget v2, p1, Ll6/a;->h:I
 
     if-ne v0, v2, :cond_1
 
-    iget-object v0, p0, Ll6/a;->f:[I
+    iget-object v0, p0, Ll6/a;->g:[I
 
-    iget-object p1, p1, Ll6/a;->f:[I
+    iget-object p1, p1, Ll6/a;->g:[I
 
     invoke-static {v0, p1}, Ljava/util/Arrays;->equals([I[I)Z
 
@@ -586,7 +586,7 @@
 .method public final f(I)V
     .locals 4
 
-    iget-object v0, p0, Ll6/a;->f:[I
+    iget-object v0, p0, Ll6/a;->g:[I
 
     div-int/lit8 v1, p1, 0x20
 
@@ -608,11 +608,11 @@
 .method public final hashCode()I
     .locals 2
 
-    iget v0, p0, Ll6/a;->g:I
+    iget v0, p0, Ll6/a;->h:I
 
     mul-int/lit8 v0, v0, 0x1f
 
-    iget-object v1, p0, Ll6/a;->f:[I
+    iget-object v1, p0, Ll6/a;->g:[I
 
     invoke-static {v1}, Ljava/util/Arrays;->hashCode([I)I
 
@@ -629,7 +629,7 @@
     .line 1
     new-instance v0, Ljava/lang/StringBuilder;
 
-    iget v1, p0, Ll6/a;->g:I
+    iget v1, p0, Ll6/a;->h:I
 
     invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(I)V
 
@@ -637,7 +637,7 @@
 
     .line 2
     :goto_0
-    iget v2, p0, Ll6/a;->g:I
+    iget v2, p0, Ll6/a;->h:I
 
     if-ge v1, v2, :cond_2
 

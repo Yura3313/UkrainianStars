@@ -7,14 +7,14 @@
 
 
 # instance fields
-.field public final synthetic f:Lla/m;
+.field public final synthetic g:Lla/m;
 
 
 # direct methods
 .method public constructor <init>(Lla/m;)V
     .locals 0
 
-    iput-object p1, p0, Lla/k;->f:Lla/m;
+    iput-object p1, p0, Lla/k;->g:Lla/m;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -27,14 +27,14 @@
     .locals 2
 
     .line 1
-    iget-object p1, p0, Lla/k;->f:Lla/m;
+    iget-object p1, p0, Lla/k;->g:Lla/m;
 
     const-string p2, "feedback"
 
     invoke-virtual {p1, p2}, Lla/m;->U0(Ljava/lang/String;)V
 
     .line 2
-    iget-object p1, p0, Lla/k;->f:Lla/m;
+    iget-object p1, p0, Lla/k;->g:Lla/m;
 
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -51,10 +51,6 @@
     check-cast p1, Lib/a;
 
     .line 5
-    sget-object p2, Lib/a;->f:Lib/a;
-
-    if-eq p1, p2, :cond_0
-
     sget-object p2, Lib/a;->g:Lib/a;
 
     if-eq p1, p2, :cond_0
@@ -67,10 +63,14 @@
 
     if-eq p1, p2, :cond_0
 
+    sget-object p2, Lib/a;->j:Lib/a;
+
+    if-eq p1, p2, :cond_0
+
     .line 6
     new-instance p1, Landroid/content/Intent;
 
-    iget-object p2, p0, Lla/k;->f:Lla/m;
+    iget-object p2, p0, Lla/k;->g:Lla/m;
 
     invoke-virtual {p2}, Landroidx/fragment/app/Fragment;->y()Landroid/content/Context;
 
@@ -93,7 +93,7 @@
     invoke-virtual {p1, p2, v0}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
 
     .line 9
-    iget-object p2, p0, Lla/k;->f:Lla/m;
+    iget-object p2, p0, Lla/k;->g:Lla/m;
 
     .line 10
     invoke-virtual {p2}, Landroidx/fragment/app/Fragment;->v()Landroidx/fragment/app/FragmentActivity;
@@ -120,7 +120,7 @@
     invoke-virtual {p1, p2, v0}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
 
     .line 14
-    iget-object p2, p0, Lla/k;->f:Lla/m;
+    iget-object p2, p0, Lla/k;->g:Lla/m;
 
     invoke-virtual {p2}, Landroidx/fragment/app/Fragment;->v()Landroidx/fragment/app/FragmentActivity;
 

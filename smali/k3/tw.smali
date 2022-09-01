@@ -1,138 +1,69 @@
-.class public final synthetic Lk3/tw;
+.class public interface abstract Lk3/tw;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Landroid/view/ViewTreeObserver$OnScrollChangedListener;
-
-
-# instance fields
-.field public final f:Landroid/view/View;
-
-.field public final g:Lk3/gh;
-
-.field public final h:Ljava/lang/String;
-
-.field public final i:Landroid/view/WindowManager$LayoutParams;
-
-.field public final j:I
-
-.field public final k:Landroid/view/WindowManager;
-
-
-# direct methods
-.method public constructor <init>(Landroid/view/View;Lk3/gh;Ljava/lang/String;Landroid/view/WindowManager$LayoutParams;ILandroid/view/WindowManager;)V
-    .locals 0
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    iput-object p1, p0, Lk3/tw;->f:Landroid/view/View;
-
-    iput-object p2, p0, Lk3/tw;->g:Lk3/gh;
-
-    iput-object p3, p0, Lk3/tw;->h:Ljava/lang/String;
-
-    iput-object p4, p0, Lk3/tw;->i:Landroid/view/WindowManager$LayoutParams;
-
-    iput p5, p0, Lk3/tw;->j:I
-
-    iput-object p6, p0, Lk3/tw;->k:Landroid/view/WindowManager;
-
-    return-void
-.end method
+.implements Landroid/view/View$OnClickListener;
+.implements Landroid/view/View$OnTouchListener;
 
 
 # virtual methods
-.method public final onScrollChanged()V
-    .locals 7
+.method public abstract J0()Lk3/t21;
+.end method
 
-    .line 1
-    iget-object v0, p0, Lk3/tw;->f:Landroid/view/View;
+.method public abstract O4()Ljava/util/Map;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/Map<",
+            "Ljava/lang/String;",
+            "Ljava/lang/ref/WeakReference<",
+            "Landroid/view/View;",
+            ">;>;"
+        }
+    .end annotation
+.end method
 
-    iget-object v1, p0, Lk3/tw;->g:Lk3/gh;
+.method public abstract S0(Ljava/lang/String;)Landroid/view/View;
+.end method
 
-    iget-object v2, p0, Lk3/tw;->h:Ljava/lang/String;
+.method public abstract V3()Ljava/util/Map;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/Map<",
+            "Ljava/lang/String;",
+            "Ljava/lang/ref/WeakReference<",
+            "Landroid/view/View;",
+            ">;>;"
+        }
+    .end annotation
+.end method
 
-    iget-object v3, p0, Lk3/tw;->i:Landroid/view/WindowManager$LayoutParams;
+.method public abstract g7()Landroid/widget/FrameLayout;
+.end method
 
-    iget v4, p0, Lk3/tw;->j:I
+.method public abstract i2()Lcom/google/android/gms/dynamic/IObjectWrapper;
+.end method
 
-    iget-object v5, p0, Lk3/tw;->k:Landroid/view/WindowManager;
+.method public abstract j5()Landroid/view/View;
+.end method
 
-    .line 2
-    new-instance v6, Landroid/graphics/Rect;
+.method public abstract o6()Ljava/lang/String;
+.end method
 
-    invoke-direct {v6}, Landroid/graphics/Rect;-><init>()V
+.method public abstract o7(Ljava/lang/String;Landroid/view/View;)V
+.end method
 
-    .line 3
-    invoke-virtual {v0, v6}, Landroid/view/View;->getGlobalVisibleRect(Landroid/graphics/Rect;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_3
-
-    .line 4
-    invoke-interface {v1}, Lk3/gh;->getView()Landroid/view/View;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Landroid/view/View;->getWindowToken()Landroid/os/IBinder;
-
-    move-result-object v0
-
-    if-nez v0, :cond_0
-
-    goto :goto_2
-
-    :cond_0
-    const-string v0, "1"
-
-    .line 5
-    invoke-virtual {v0, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-nez v0, :cond_2
-
-    const-string v0, "2"
-
-    .line 6
-    invoke-virtual {v0, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_1
-
-    goto :goto_0
-
-    .line 7
-    :cond_1
-    iget v0, v6, Landroid/graphics/Rect;->top:I
-
-    sub-int/2addr v0, v4
-
-    iput v0, v3, Landroid/view/WindowManager$LayoutParams;->y:I
-
-    goto :goto_1
-
-    .line 8
-    :cond_2
-    :goto_0
-    iget v0, v6, Landroid/graphics/Rect;->bottom:I
-
-    sub-int/2addr v0, v4
-
-    iput v0, v3, Landroid/view/WindowManager$LayoutParams;->y:I
-
-    .line 9
-    :goto_1
-    invoke-interface {v1}, Lk3/gh;->getView()Landroid/view/View;
-
-    move-result-object v0
-
-    invoke-interface {v5, v0, v3}, Landroid/view/ViewManager;->updateViewLayout(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
-
-    :cond_3
-    :goto_2
-    return-void
+.method public abstract y5()Ljava/util/Map;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/Map<",
+            "Ljava/lang/String;",
+            "Ljava/lang/ref/WeakReference<",
+            "Landroid/view/View;",
+            ">;>;"
+        }
+    .end annotation
 .end method

@@ -76,7 +76,7 @@
 
     .line 6
     :cond_1
-    invoke-static {}, Lcom/helpshift/util/u;->a()Le8/s;
+    invoke-static {}, Lcom/helpshift/util/t;->a()Le8/s;
 
     move-result-object p1
 
@@ -89,7 +89,7 @@
     move-result p1
 
     .line 7
-    invoke-static {p0}, Lcom/android/billingclient/api/c0;->h(Landroid/content/Context;)Z
+    invoke-static {p0}, Lcom/android/billingclient/api/b0;->i(Landroid/content/Context;)Z
 
     move-result v1
 
@@ -104,7 +104,7 @@
 
     .line 8
     :goto_1
-    sget-object v3, Lcom/helpshift/util/u;->c:Le7/g;
+    sget-object v3, Lcom/helpshift/util/t;->c:Le7/g;
 
     .line 9
     invoke-interface {v3}, Le7/a;->a()Lj8/b;
@@ -121,25 +121,25 @@
     invoke-direct {v4, p0}, Lx9/e;-><init>(Landroid/content/Context;)V
 
     .line 11
-    sput-object v4, Landroidx/savedstate/d;->f:Lx9/c;
+    sput-object v4, Le5/i;->g:Lx9/c;
 
     .line 12
     invoke-interface {v4, v1}, Lx9/c;->f(I)V
 
     .line 13
-    sget-object v1, Landroidx/savedstate/d;->f:Lx9/c;
+    sget-object v1, Le5/i;->g:Lx9/c;
 
     invoke-interface {v1, v3}, Lx9/c;->d(I)V
 
     .line 14
-    new-instance v1, Lvc/b0;
+    new-instance v1, Lse/b;
 
-    invoke-direct {v1}, Lvc/b0;-><init>()V
+    invoke-direct {v1}, Lse/b;-><init>()V
 
-    invoke-static {v1}, Lz9/b;->c(Lvc/b0;)V
+    invoke-static {v1}, Lid/h;->d(Lse/b;)V
 
     .line 15
-    sget-object v1, Landroidx/savedstate/d;->f:Lx9/c;
+    sget-object v1, Le5/i;->g:Lx9/c;
 
     float-to-long v3, p1
 
@@ -152,7 +152,7 @@
     xor-int/lit8 p1, v2, 0x1
 
     .line 16
-    sget-object v1, Landroidx/savedstate/d;->f:Lx9/c;
+    sget-object v1, Le5/i;->g:Lx9/c;
 
     if-eqz v1, :cond_3
 
@@ -161,7 +161,7 @@
 
     .line 18
     :cond_3
-    invoke-static {p1}, Lid/h;->e(Z)V
+    invoke-static {p1}, Lae/a1;->j(Z)V
 
     if-nez v2, :cond_4
 
@@ -176,7 +176,7 @@
     .locals 2
 
     .line 1
-    invoke-static {}, Lcom/helpshift/util/u;->b()Z
+    invoke-static {}, Lcom/helpshift/util/t;->b()Z
 
     move-result v0
 
@@ -202,7 +202,7 @@
     .locals 2
 
     .line 1
-    invoke-static {}, Lcom/helpshift/util/u;->b()Z
+    invoke-static {}, Lcom/helpshift/util/t;->b()Z
 
     move-result v0
 

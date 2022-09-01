@@ -16,14 +16,14 @@
 
 
 # virtual methods
-.method public final V()Lq9/b;
+.method public final V()Lcom/helpshift/util/a0;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Ljava/lang/Object;",
             ")",
-            "Lq9/b;"
+            "Lcom/helpshift/util/a0;"
         }
     .end annotation
 
@@ -104,7 +104,7 @@
     if-nez v0, :cond_2
 
     .line 4
-    iget-boolean v0, p1, Lr3/a3;->f:Z
+    iget-boolean v0, p1, Lr3/a3;->g:Z
 
     if-nez v0, :cond_1
 
@@ -158,7 +158,7 @@
     const/4 v1, 0x0
 
     .line 2
-    iput-boolean v1, v0, Lr3/a3;->f:Z
+    iput-boolean v1, v0, Lr3/a3;->g:Z
 
     return-object p1
 .end method

@@ -32,7 +32,7 @@
 
     invoke-direct {v0, p1}, Lbe/b$b$a;-><init>(Landroid/content/Context;)V
 
-    invoke-static {v0}, Lae/u1;->o(Lre/a;)Lze/e0;
+    invoke-static {v0}, Lae/t1;->n(Lre/a;)Lze/f0;
 
     return-void
 .end method

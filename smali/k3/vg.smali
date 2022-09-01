@@ -4,10 +4,10 @@
 
 
 # direct methods
-.method public constructor <init>(Lk3/df;)V
+.method public constructor <init>(Lk3/ef;)V
     .locals 0
 
-    invoke-direct {p0, p1}, Lk3/mg;-><init>(Lk3/df;)V
+    invoke-direct {p0, p1}, Lk3/mg;-><init>(Lk3/ef;)V
 
     return-void
 .end method
@@ -24,13 +24,13 @@
     .locals 3
 
     .line 1
-    iget-object v0, p0, Lk3/mg;->h:Ljava/lang/ref/WeakReference;
+    iget-object v0, p0, Lk3/mg;->i:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v0}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lk3/df;
+    check-cast v0, Lk3/ef;
 
     if-eqz v0, :cond_0
 
@@ -39,7 +39,7 @@
 
     move-result-object v1
 
-    invoke-interface {v0, v1, p0}, Lk3/df;->c(Ljava/lang/String;Lk3/mg;)V
+    invoke-interface {v0, v1, p0}, Lk3/ef;->c(Ljava/lang/String;Lk3/mg;)V
 
     .line 3
     :cond_0

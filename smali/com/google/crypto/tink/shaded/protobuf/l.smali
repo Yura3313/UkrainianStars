@@ -63,7 +63,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    sget v0, Lcom/google/crypto/tink/shaded/protobuf/g0;->l:I
+    sget v0, Lcom/google/crypto/tink/shaded/protobuf/g0;->m:I
 
     .line 3
     new-instance v0, Lcom/google/crypto/tink/shaded/protobuf/f0;
@@ -82,7 +82,7 @@
     .locals 1
 
     .line 5
-    sget p1, Lcom/google/crypto/tink/shaded/protobuf/g0;->l:I
+    sget p1, Lcom/google/crypto/tink/shaded/protobuf/g0;->m:I
 
     .line 6
     new-instance p1, Lcom/google/crypto/tink/shaded/protobuf/f0;
@@ -144,7 +144,7 @@
     move-result p1
 
     .line 2
-    sget-object v0, Lo5/e0;->q:Lo5/e0$b;
+    sget-object v0, Lo5/e0;->r:Lo5/e0$b;
 
     if-ne p0, v0, :cond_0
 
@@ -566,7 +566,7 @@
 
     move-result-object v1
 
-    sget-object v2, Lo5/f0;->o:Lo5/f0;
+    sget-object v2, Lo5/f0;->p:Lo5/f0;
 
     const/4 v3, 0x1
 
@@ -836,7 +836,7 @@
 
     move-result-object v2
 
-    sget-object v3, Lo5/f0;->o:Lo5/f0;
+    sget-object v3, Lo5/f0;->p:Lo5/f0;
 
     if-ne v2, v3, :cond_1
 
@@ -1180,7 +1180,7 @@
 
     move-result-object v1
 
-    sget-object v2, Lo5/f0;->o:Lo5/f0;
+    sget-object v2, Lo5/f0;->p:Lo5/f0;
 
     if-ne v1, v2, :cond_2
 
@@ -1295,7 +1295,7 @@
     invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 3
-    iget-object p1, p1, Lo5/e0;->f:Lo5/f0;
+    iget-object p1, p1, Lo5/e0;->g:Lo5/f0;
 
     .line 4
     invoke-virtual {p1}, Ljava/lang/Enum;->ordinal()I

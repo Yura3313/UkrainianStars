@@ -7,7 +7,7 @@
 
 
 # static fields
-.field public static final f:Lze/n;
+.field public static final g:Lze/n;
 
 
 # direct methods
@@ -18,7 +18,7 @@
 
     invoke-direct {v0}, Lze/n;-><init>()V
 
-    sput-object v0, Lze/n;->f:Lze/n;
+    sput-object v0, Lze/n;->g:Lze/n;
 
     return-void
 .end method

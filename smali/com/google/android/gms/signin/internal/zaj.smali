@@ -16,9 +16,9 @@
 
 
 # instance fields
-.field public final f:I
+.field public final g:I
 
-.field public final g:Lcom/google/android/gms/common/internal/zat;
+.field public final h:Lcom/google/android/gms/common/internal/zat;
 
 
 # direct methods
@@ -41,10 +41,10 @@
     invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
 
     .line 2
-    iput p1, p0, Lcom/google/android/gms/signin/internal/zaj;->f:I
+    iput p1, p0, Lcom/google/android/gms/signin/internal/zaj;->g:I
 
     .line 3
-    iput-object p2, p0, Lcom/google/android/gms/signin/internal/zaj;->g:Lcom/google/android/gms/common/internal/zat;
+    iput-object p2, p0, Lcom/google/android/gms/signin/internal/zaj;->h:Lcom/google/android/gms/common/internal/zat;
 
     return-void
 .end method
@@ -58,10 +58,10 @@
     const/4 v0, 0x1
 
     .line 5
-    iput v0, p0, Lcom/google/android/gms/signin/internal/zaj;->f:I
+    iput v0, p0, Lcom/google/android/gms/signin/internal/zaj;->g:I
 
     .line 6
-    iput-object p1, p0, Lcom/google/android/gms/signin/internal/zaj;->g:Lcom/google/android/gms/common/internal/zat;
+    iput-object p1, p0, Lcom/google/android/gms/signin/internal/zaj;->h:Lcom/google/android/gms/common/internal/zat;
 
     return-void
 .end method
@@ -81,7 +81,7 @@
     const/4 v1, 0x1
 
     .line 2
-    iget v2, p0, Lcom/google/android/gms/signin/internal/zaj;->f:I
+    iget v2, p0, Lcom/google/android/gms/signin/internal/zaj;->g:I
 
     const/4 v3, 0x4
 
@@ -94,7 +94,7 @@
     const/4 v1, 0x2
 
     .line 5
-    iget-object v2, p0, Lcom/google/android/gms/signin/internal/zaj;->g:Lcom/google/android/gms/common/internal/zat;
+    iget-object v2, p0, Lcom/google/android/gms/signin/internal/zaj;->h:Lcom/google/android/gms/common/internal/zat;
 
     const/4 v3, 0x0
 

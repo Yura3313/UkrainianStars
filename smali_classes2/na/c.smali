@@ -7,11 +7,11 @@
 
 
 # instance fields
-.field public g0:Lcom/google/android/material/tabs/TabLayout;
+.field public h0:Lcom/google/android/material/tabs/TabLayout;
 
-.field public h0:Landroid/widget/FrameLayout;
+.field public i0:Landroid/widget/FrameLayout;
 
-.field public i0:I
+.field public j0:I
 
 
 # direct methods
@@ -24,7 +24,7 @@
     const/4 v0, 0x0
 
     .line 2
-    iput v0, p0, Lna/c;->i0:I
+    iput v0, p0, Lna/c;->j0:I
 
     return-void
 .end method
@@ -48,13 +48,13 @@
     const/high16 v0, 0x42400000    # 48.0f
 
     .line 2
-    invoke-static {p1, v0}, Lcom/helpshift/util/g0;->a(Landroid/content/Context;F)F
+    invoke-static {p1, v0}, Lcom/helpshift/util/e0;->a(Landroid/content/Context;F)F
 
     move-result p1
 
     float-to-int p1, p1
 
-    iput p1, p0, Lna/c;->i0:I
+    iput p1, p0, Lna/c;->j0:I
 
     return-void
 .end method
@@ -79,15 +79,15 @@
     const/4 v0, 0x0
 
     .line 1
-    iput-object v0, p0, Lna/c;->g0:Lcom/google/android/material/tabs/TabLayout;
+    iput-object v0, p0, Lna/c;->h0:Lcom/google/android/material/tabs/TabLayout;
 
     .line 2
-    iput-object v0, p0, Lna/c;->h0:Landroid/widget/FrameLayout;
+    iput-object v0, p0, Lna/c;->i0:Landroid/widget/FrameLayout;
 
     const/4 v0, 0x1
 
     .line 3
-    iput-boolean v0, p0, Landroidx/fragment/app/Fragment;->K:Z
+    iput-boolean v0, p0, Landroidx/fragment/app/Fragment;->L:Z
 
     return-void
 .end method
@@ -98,12 +98,12 @@
     const/4 v0, 0x1
 
     .line 1
-    iput-boolean v0, p0, Landroidx/fragment/app/Fragment;->K:Z
+    iput-boolean v0, p0, Landroidx/fragment/app/Fragment;->L:Z
 
     const/4 v0, 0x0
 
     .line 2
-    invoke-static {p0}, Lj1/q;->e(Landroidx/fragment/app/Fragment;)Lab/p;
+    invoke-static {p0}, Ls4/e;->h(Landroidx/fragment/app/Fragment;)Lab/p;
 
     move-result-object v1
 
@@ -121,7 +121,7 @@
     if-lt v0, v1, :cond_1
 
     .line 5
-    iget-object v0, p0, Lna/c;->g0:Lcom/google/android/material/tabs/TabLayout;
+    iget-object v0, p0, Lna/c;->h0:Lcom/google/android/material/tabs/TabLayout;
 
     invoke-virtual {p0}, Lab/i;->y()Landroid/content/Context;
 
@@ -129,7 +129,7 @@
 
     const/high16 v2, 0x40800000    # 4.0f
 
-    invoke-static {v1, v2}, Lcom/helpshift/util/g0;->a(Landroid/content/Context;F)F
+    invoke-static {v1, v2}, Lcom/helpshift/util/e0;->a(Landroid/content/Context;F)F
 
     move-result v1
 
@@ -139,7 +139,7 @@
 
     .line 6
     :cond_1
-    iget-object v0, p0, Lna/c;->h0:Landroid/widget/FrameLayout;
+    iget-object v0, p0, Lna/c;->i0:Landroid/widget/FrameLayout;
 
     invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->I()Landroid/content/res/Resources;
 
@@ -161,7 +161,7 @@
     .locals 2
 
     .line 1
-    invoke-static {p0}, Lj1/q;->e(Landroidx/fragment/app/Fragment;)Lab/p;
+    invoke-static {p0}, Ls4/e;->h(Landroidx/fragment/app/Fragment;)Lab/p;
 
     move-result-object v0
 
@@ -183,7 +183,7 @@
     .locals 5
 
     .line 1
-    iget-object p2, p0, Landroidx/fragment/app/Fragment;->l:Landroid/os/Bundle;
+    iget-object p2, p0, Landroidx/fragment/app/Fragment;->m:Landroid/os/Bundle;
 
     const-string v0, "sections"
 
@@ -202,7 +202,7 @@
     check-cast v0, Landroidx/viewpager/widget/ViewPager;
 
     .line 4
-    iget-object v1, p0, Landroidx/fragment/app/Fragment;->l:Landroid/os/Bundle;
+    iget-object v1, p0, Landroidx/fragment/app/Fragment;->m:Landroid/os/Bundle;
 
     const-string v2, "withTagsMatching"
 
@@ -233,7 +233,7 @@
 
     check-cast v1, Lcom/google/android/material/tabs/TabLayout;
 
-    iput-object v1, p0, Lna/c;->g0:Lcom/google/android/material/tabs/TabLayout;
+    iput-object v1, p0, Lna/c;->h0:Lcom/google/android/material/tabs/TabLayout;
 
     const/4 v2, 0x0
 
@@ -242,17 +242,17 @@
 
     move-result-object v1
 
-    iget v3, p0, Lna/c;->i0:I
+    iget v3, p0, Lna/c;->j0:I
 
     invoke-virtual {v1, v3, v2, v3, v2}, Landroid/view/View;->setPadding(IIII)V
 
     .line 9
-    iget-object v1, p0, Lna/c;->g0:Lcom/google/android/material/tabs/TabLayout;
+    iget-object v1, p0, Lna/c;->h0:Lcom/google/android/material/tabs/TabLayout;
 
     invoke-virtual {v1, v0}, Lcom/google/android/material/tabs/TabLayout;->setupWithViewPager(Landroidx/viewpager/widget/ViewPager;)V
 
     .line 10
-    iget-object v1, p0, Landroidx/fragment/app/Fragment;->l:Landroid/os/Bundle;
+    iget-object v1, p0, Landroidx/fragment/app/Fragment;->m:Landroid/os/Bundle;
 
     const-string v3, "sectionPublishId"
 
@@ -279,7 +279,7 @@
     check-cast v4, Lcom/helpshift/support/Section;
 
     .line 14
-    iget-object v4, v4, Lcom/helpshift/support/Section;->h:Ljava/lang/String;
+    iget-object v4, v4, Lcom/helpshift/support/Section;->i:Ljava/lang/String;
 
     .line 15
     invoke-virtual {v4, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -311,7 +311,7 @@
 
     check-cast p1, Landroid/widget/FrameLayout;
 
-    iput-object p1, p0, Lna/c;->h0:Landroid/widget/FrameLayout;
+    iput-object p1, p0, Lna/c;->i0:Landroid/widget/FrameLayout;
 
     return-void
 .end method
@@ -320,7 +320,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/fragment/app/Fragment;->A:Landroidx/fragment/app/Fragment;
+    iget-object v0, p0, Landroidx/fragment/app/Fragment;->B:Landroidx/fragment/app/Fragment;
 
     .line 2
     check-cast v0, Loa/c;

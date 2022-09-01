@@ -35,7 +35,7 @@
 .method public abstract a0()Ljava/lang/String;
 .end method
 
-.method public abstract b2()I
+.method public abstract a2()I
 .end method
 
 .method public abstract c()Landroid/net/Uri;

@@ -478,7 +478,7 @@
     const-string v2, " had non-zero Content-Length: "
 
     .line 56
-    invoke-static {v1, v7, v2}, Lcom/supercell/titan/a;->a(Ljava/lang/String;ILjava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v1, v7, v2}, La2/i;->b(Ljava/lang/String;ILjava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
 

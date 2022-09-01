@@ -16,16 +16,16 @@
 
 
 # instance fields
-.field public final f:Ljava/lang/String;
+.field public final g:Ljava/lang/String;
 
-.field public final g:Lz1/l;
+.field public final h:Lz1/l;
     .annotation runtime Ljavax/annotation/Nullable;
     .end annotation
 .end field
 
-.field public final h:Z
-
 .field public final i:Z
+
+.field public final j:Z
 
 
 # direct methods
@@ -52,7 +52,7 @@
     invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lcom/google/android/gms/common/zzq;->f:Ljava/lang/String;
+    iput-object p1, p0, Lcom/google/android/gms/common/zzq;->g:Ljava/lang/String;
 
     const/4 p1, 0x0
 
@@ -63,7 +63,7 @@
     .line 3
     :cond_0
     :try_start_0
-    sget v0, Lcom/google/android/gms/common/internal/zzo;->f:I
+    sget v0, Lcom/google/android/gms/common/internal/zzo;->g:I
 
     const-string v0, "com.google.android.gms.common.internal.ICertData"
 
@@ -122,13 +122,13 @@
     :catch_0
     :cond_3
     :goto_2
-    iput-object p1, p0, Lcom/google/android/gms/common/zzq;->g:Lz1/l;
+    iput-object p1, p0, Lcom/google/android/gms/common/zzq;->h:Lz1/l;
 
     .line 12
-    iput-boolean p3, p0, Lcom/google/android/gms/common/zzq;->h:Z
+    iput-boolean p3, p0, Lcom/google/android/gms/common/zzq;->i:Z
 
     .line 13
-    iput-boolean p4, p0, Lcom/google/android/gms/common/zzq;->i:Z
+    iput-boolean p4, p0, Lcom/google/android/gms/common/zzq;->j:Z
 
     return-void
 .end method
@@ -144,16 +144,16 @@
     invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
 
     .line 15
-    iput-object p1, p0, Lcom/google/android/gms/common/zzq;->f:Ljava/lang/String;
+    iput-object p1, p0, Lcom/google/android/gms/common/zzq;->g:Ljava/lang/String;
 
     .line 16
-    iput-object p2, p0, Lcom/google/android/gms/common/zzq;->g:Lz1/l;
+    iput-object p2, p0, Lcom/google/android/gms/common/zzq;->h:Lz1/l;
 
     .line 17
-    iput-boolean p3, p0, Lcom/google/android/gms/common/zzq;->h:Z
+    iput-boolean p3, p0, Lcom/google/android/gms/common/zzq;->i:Z
 
     .line 18
-    iput-boolean p4, p0, Lcom/google/android/gms/common/zzq;->i:Z
+    iput-boolean p4, p0, Lcom/google/android/gms/common/zzq;->j:Z
 
     return-void
 .end method
@@ -171,7 +171,7 @@
     move-result v5
 
     .line 2
-    iget-object p2, p0, Lcom/google/android/gms/common/zzq;->f:Ljava/lang/String;
+    iget-object p2, p0, Lcom/google/android/gms/common/zzq;->g:Ljava/lang/String;
 
     const/4 v0, 0x1
 
@@ -181,7 +181,7 @@
     invoke-static {p1, v0, p2, v1}, Le2/b;->m(Landroid/os/Parcel;ILjava/lang/String;Z)V
 
     .line 4
-    iget-object p2, p0, Lcom/google/android/gms/common/zzq;->g:Lz1/l;
+    iget-object p2, p0, Lcom/google/android/gms/common/zzq;->h:Lz1/l;
 
     if-nez p2, :cond_0
 
@@ -204,7 +204,7 @@
     const/4 p2, 0x3
 
     .line 7
-    iget-boolean v0, p0, Lcom/google/android/gms/common/zzq;->h:Z
+    iget-boolean v0, p0, Lcom/google/android/gms/common/zzq;->i:Z
 
     const/4 v2, 0x4
 
@@ -215,7 +215,7 @@
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 10
-    iget-boolean v3, p0, Lcom/google/android/gms/common/zzq;->i:Z
+    iget-boolean v3, p0, Lcom/google/android/gms/common/zzq;->j:Z
 
     move-object v0, p1
 

@@ -1,72 +1,49 @@
-.class public final Lk3/u1;
+.class public final synthetic Lk3/u1;
 .super Ljava/lang/Object;
-.source "com.google.android.gms:play-services-ads-lite@@19.3.0"
-
-# interfaces
-.implements Lf1/f;
-
-
-# instance fields
-.field public final a:Lcom/google/android/gms/internal/ads/zzaes;
+.source "R8$$SyntheticClass"
 
 
 # direct methods
-.method public constructor <init>(Lcom/google/android/gms/internal/ads/zzaes;)V
-    .locals 2
+.method public static synthetic a(I)Ljava/lang/String;
+    .locals 1
 
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    const/4 v0, 0x1
 
-    .line 2
-    iput-object p1, p0, Lk3/u1;->a:Lcom/google/android/gms/internal/ads/zzaes;
+    if-ne p0, v0, :cond_0
 
-    const/4 v0, 0x0
+    const-string p0, "LOW"
 
-    .line 3
-    :try_start_0
-    invoke-interface {p1}, Lcom/google/android/gms/internal/ads/zzaes;->e2()Lcom/google/android/gms/dynamic/IObjectWrapper;
+    return-object p0
 
-    move-result-object p1
-
-    invoke-static {p1}, Lcom/google/android/gms/dynamic/ObjectWrapper;->c2(Lcom/google/android/gms/dynamic/IObjectWrapper;)Ljava/lang/Object;
-
-    move-result-object p1
-
-    check-cast p1, Landroid/content/Context;
-    :try_end_0
-    .catch Ljava/lang/NullPointerException; {:try_start_0 .. :try_end_0} :catch_0
-    .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
-
-    move-object v0, p1
-
-    goto :goto_0
-
-    :catch_0
-    nop
-
-    :goto_0
-    if-eqz v0, :cond_0
-
-    .line 4
-    new-instance p1, Lcom/google/android/gms/ads/formats/MediaView;
-
-    invoke-direct {p1, v0}, Lcom/google/android/gms/ads/formats/MediaView;-><init>(Landroid/content/Context;)V
-
-    .line 5
-    :try_start_1
-    iget-object v0, p0, Lk3/u1;->a:Lcom/google/android/gms/internal/ads/zzaes;
-
-    .line 6
-    new-instance v1, Lcom/google/android/gms/dynamic/ObjectWrapper;
-
-    invoke-direct {v1, p1}, Lcom/google/android/gms/dynamic/ObjectWrapper;-><init>(Ljava/lang/Object;)V
-
-    .line 7
-    invoke-interface {v0, v1}, Lcom/google/android/gms/internal/ads/zzaes;->n4(Lcom/google/android/gms/dynamic/IObjectWrapper;)Z
-    :try_end_1
-    .catch Landroid/os/RemoteException; {:try_start_1 .. :try_end_1} :catch_1
-
-    :catch_1
     :cond_0
-    return-void
+    const/4 v0, 0x2
+
+    if-ne p0, v0, :cond_1
+
+    const-string p0, "NORMAL"
+
+    return-object p0
+
+    :cond_1
+    const/4 v0, 0x3
+
+    if-ne p0, v0, :cond_2
+
+    const-string p0, "HIGH"
+
+    return-object p0
+
+    :cond_2
+    const/4 v0, 0x4
+
+    if-ne p0, v0, :cond_3
+
+    const-string p0, "IMMEDIATE"
+
+    return-object p0
+
+    :cond_3
+    const-string p0, "null"
+
+    return-object p0
 .end method

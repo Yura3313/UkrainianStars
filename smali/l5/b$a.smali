@@ -99,15 +99,15 @@
     if-ne v0, v1, :cond_0
 
     .line 7
-    new-instance v0, Lr5/c0;
+    new-instance v0, Lr5/e0;
 
-    new-instance v1, Lr5/b0;
+    new-instance v1, Lr5/d0;
 
     const-string v3, "HMACSHA512"
 
-    invoke-direct {v1, v3, v2}, Lr5/b0;-><init>(Ljava/lang/String;Ljava/security/Key;)V
+    invoke-direct {v1, v3, v2}, Lr5/d0;-><init>(Ljava/lang/String;Ljava/security/Key;)V
 
-    invoke-direct {v0, v1, p1}, Lr5/c0;-><init>(Lm5/c;I)V
+    invoke-direct {v0, v1, p1}, Lr5/e0;-><init>(Lm5/c;I)V
 
     goto :goto_0
 
@@ -123,29 +123,29 @@
 
     .line 9
     :cond_1
-    new-instance v0, Lr5/c0;
+    new-instance v0, Lr5/e0;
 
-    new-instance v1, Lr5/b0;
+    new-instance v1, Lr5/d0;
 
     const-string v3, "HMACSHA256"
 
-    invoke-direct {v1, v3, v2}, Lr5/b0;-><init>(Ljava/lang/String;Ljava/security/Key;)V
+    invoke-direct {v1, v3, v2}, Lr5/d0;-><init>(Ljava/lang/String;Ljava/security/Key;)V
 
-    invoke-direct {v0, v1, p1}, Lr5/c0;-><init>(Lm5/c;I)V
+    invoke-direct {v0, v1, p1}, Lr5/e0;-><init>(Lm5/c;I)V
 
     goto :goto_0
 
     .line 10
     :cond_2
-    new-instance v0, Lr5/c0;
+    new-instance v0, Lr5/e0;
 
-    new-instance v1, Lr5/b0;
+    new-instance v1, Lr5/d0;
 
     const-string v3, "HMACSHA1"
 
-    invoke-direct {v1, v3, v2}, Lr5/b0;-><init>(Ljava/lang/String;Ljava/security/Key;)V
+    invoke-direct {v1, v3, v2}, Lr5/d0;-><init>(Ljava/lang/String;Ljava/security/Key;)V
 
-    invoke-direct {v0, v1, p1}, Lr5/c0;-><init>(Lm5/c;I)V
+    invoke-direct {v0, v1, p1}, Lr5/e0;-><init>(Lm5/c;I)V
 
     :goto_0
     return-object v0

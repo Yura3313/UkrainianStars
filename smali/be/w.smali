@@ -123,7 +123,7 @@
     const-string v1, "fromPersistentStorage"
 
     .line 3
-    invoke-static {v0, v1}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     new-instance v1, Lbe/w$a;
 
@@ -147,7 +147,7 @@
     const-string v1, "fromServer"
 
     .line 6
-    invoke-static {v0, v1}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     new-instance v1, Lbe/w$b;
 

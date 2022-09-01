@@ -7,7 +7,7 @@
 
 
 # virtual methods
-.method public final Q1()Ljava/lang/String;
+.method public final P1()Ljava/lang/String;
     .locals 1
 
     const-string v0, "external_match_id"
@@ -19,7 +19,7 @@
     return-object v0
 .end method
 
-.method public final S1()Ljava/util/ArrayList;
+.method public final R1()Ljava/util/ArrayList;
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {

@@ -3,61 +3,109 @@
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lk3/zc0;
+.implements Lk3/cd0;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "Lk3/zc0<",
+        "Lk3/cd0<",
+        "Lk3/ad0<",
         "Landroid/os/Bundle;",
-        ">;"
+        ">;>;"
     }
 .end annotation
 
 
 # instance fields
-.field public final a:Landroid/os/Bundle;
+.field public final a:Ljava/util/Set;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/Set<",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+.end field
 
 
 # direct methods
-.method public constructor <init>(Landroid/os/Bundle;)V
+.method public constructor <init>(Ljava/util/Set;)V
     .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/Set<",
+            "Ljava/lang/String;",
+            ">;)V"
+        }
+    .end annotation
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lk3/w90;->a:Landroid/os/Bundle;
+    iput-object p1, p0, Lk3/w90;->a:Ljava/util/Set;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final synthetic b(Ljava/lang/Object;)V
-    .locals 2
+.method public final a()Lk3/hm0;
+    .locals 3
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lk3/hm0<",
+            "Lk3/ad0<",
+            "Landroid/os/Bundle;",
+            ">;>;"
+        }
+    .end annotation
 
     .line 1
-    check-cast p1, Landroid/os/Bundle;
+    new-instance v0, Ljava/util/ArrayList;
+
+    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     .line 2
-    iget-object v0, p0, Lk3/w90;->a:Landroid/os/Bundle;
+    iget-object v1, p0, Lk3/w90;->a:Ljava/util/Set;
 
-    invoke-virtual {v0}, Landroid/os/Bundle;->isEmpty()Z
+    invoke-interface {v1}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
 
-    move-result v0
+    move-result-object v1
 
-    if-nez v0, :cond_0
+    :goto_0
+    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v2
+
+    if-eqz v2, :cond_0
+
+    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Ljava/lang/String;
 
     .line 3
-    iget-object v0, p0, Lk3/w90;->a:Landroid/os/Bundle;
+    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    const-string v1, "installed_adapter_data"
+    goto :goto_0
 
-    invoke-virtual {p1, v1, v0}, Landroid/os/Bundle;->putBundle(Ljava/lang/String;Landroid/os/Bundle;)V
-
+    .line 4
     :cond_0
-    return-void
+    new-instance v1, Lk3/v90;
+
+    const/4 v2, 0x0
+
+    invoke-direct {v1, v0, v2}, Lk3/v90;-><init>(Ljava/lang/Object;I)V
+
+    invoke-static {v1}, Lk3/dm0;->g(Ljava/lang/Object;)Lk3/hm0;
+
+    move-result-object v0
+
+    return-object v0
 .end method

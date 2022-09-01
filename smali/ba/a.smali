@@ -79,7 +79,7 @@
     move-object/from16 v1, p0
 
     .line 1
-    sget-object v2, Ld8/c;->f:Ld8/c;
+    sget-object v2, Ld8/c;->g:Ld8/c;
 
     new-instance v0, Ljava/util/HashMap;
 
@@ -93,7 +93,7 @@
     iget-object v5, v1, Lba/a;->e:Lv0/u;
 
     .line 3
-    iget-object v5, v5, Lv0/u;->f:Ljava/lang/Object;
+    iget-object v5, v5, Lv0/u;->g:Ljava/lang/Object;
 
     check-cast v5, Lk3/s9;
 
@@ -149,14 +149,14 @@
     invoke-direct {v8}, Lorg/json/JSONObject;-><init>()V
 
     .line 9
-    iget-object v9, v7, Lca/a;->f:Ljava/lang/String;
+    iget-object v9, v7, Lca/a;->g:Ljava/lang/String;
 
     const-string v10, "action"
 
     invoke-virtual {v8, v10, v9}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
     .line 10
-    iget-object v7, v7, Lca/a;->g:Ljava/lang/String;
+    iget-object v7, v7, Lca/a;->h:Ljava/lang/String;
 
     const-string v9, "datetime"
 
@@ -251,7 +251,7 @@
     move-result-object v5
 
     .line 24
-    invoke-static {v5}, Lcom/google/android/play/core/appupdate/g;->b(Ljava/lang/String;)Z
+    invoke-static {v5}, La5/b0;->d(Ljava/lang/String;)Z
 
     move-result v7
 
@@ -273,7 +273,7 @@
 
     .line 27
     :cond_2
-    invoke-static {v5}, Lcom/google/android/play/core/appupdate/g;->b(Ljava/lang/String;)Z
+    invoke-static {v5}, La5/b0;->d(Ljava/lang/String;)Z
 
     move-result v7
 
@@ -344,7 +344,7 @@
     move-result-object v5
 
     .line 37
-    invoke-static {v5}, Lcom/google/android/play/core/appupdate/g;->b(Ljava/lang/String;)Z
+    invoke-static {v5}, La5/b0;->d(Ljava/lang/String;)Z
 
     move-result v7
 
@@ -992,7 +992,7 @@
     check-cast v5, Ljava/io/Serializable;
 
     .line 98
-    invoke-static {v6}, Lcom/google/android/play/core/appupdate/g;->b(Ljava/lang/String;)Z
+    invoke-static {v6}, La5/b0;->d(Ljava/lang/String;)Z
 
     move-result v7
 
@@ -1004,7 +1004,7 @@
 
     check-cast v5, Ljava/lang/String;
 
-    invoke-static {v5}, Lcom/google/android/play/core/appupdate/g;->b(Ljava/lang/String;)Z
+    invoke-static {v5}, La5/b0;->d(Ljava/lang/String;)Z
 
     move-result v5
 
@@ -1052,7 +1052,7 @@
     aget-object v11, v6, v10
 
     .line 105
-    invoke-static {v11}, Lcom/google/android/play/core/appupdate/g;->b(Ljava/lang/String;)Z
+    invoke-static {v11}, La5/b0;->d(Ljava/lang/String;)Z
 
     move-result v12
 
@@ -1128,7 +1128,7 @@
     iget-object v3, v1, Lba/a;->e:Lv0/u;
 
     .line 113
-    iget-object v3, v3, Lv0/u;->f:Ljava/lang/Object;
+    iget-object v3, v3, Lv0/u;->g:Ljava/lang/Object;
 
     check-cast v3, Lk3/s9;
 
@@ -1277,7 +1277,7 @@
     move-result-object v3
 
     .line 130
-    iget-boolean v4, v3, Li7/c;->l:Z
+    iget-boolean v4, v3, Li7/c;->m:Z
 
     if-eqz v4, :cond_20
 
@@ -1299,7 +1299,7 @@
 
     .line 133
     :cond_20
-    iget-object v2, v3, Li7/c;->g:Ljava/lang/String;
+    iget-object v2, v3, Li7/c;->h:Ljava/lang/String;
 
     :goto_10
     const-string v3, "extra"
@@ -1332,7 +1332,7 @@
     invoke-virtual {v4, v5, v6}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 137
-    invoke-static {v2}, Lcom/google/android/play/core/appupdate/g;->b(Ljava/lang/String;)Z
+    invoke-static {v2}, La5/b0;->d(Ljava/lang/String;)Z
 
     move-result v5
 

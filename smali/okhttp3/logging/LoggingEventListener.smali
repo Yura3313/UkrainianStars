@@ -308,7 +308,7 @@
     const-string p1, "dnsStart: "
 
     .line 1
-    invoke-static {p1, p2}, Lcom/google/android/gms/ads/e;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p1, p2}, Lf/g;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 

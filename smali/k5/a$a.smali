@@ -258,7 +258,7 @@
     iget-object v4, v0, Lf5/k;->a:Ln5/z0$a;
 
     .line 21
-    iget-object v4, v4, Lcom/google/crypto/tink/shaded/protobuf/n$a;->g:Lcom/google/crypto/tink/shaded/protobuf/n;
+    iget-object v4, v4, Lcom/google/crypto/tink/shaded/protobuf/n$a;->h:Lcom/google/crypto/tink/shaded/protobuf/n;
 
     check-cast v4, Ln5/z0;
 
@@ -272,7 +272,7 @@
     iget-object v4, v0, Lf5/k;->a:Ln5/z0$a;
 
     .line 23
-    iget-object v4, v4, Lcom/google/crypto/tink/shaded/protobuf/n$a;->g:Lcom/google/crypto/tink/shaded/protobuf/n;
+    iget-object v4, v4, Lcom/google/crypto/tink/shaded/protobuf/n$a;->h:Lcom/google/crypto/tink/shaded/protobuf/n;
 
     check-cast v4, Ln5/z0;
 
@@ -292,7 +292,7 @@
 
     move-result-object v3
 
-    sget-object v4, Ln5/w0;->h:Ln5/w0;
+    sget-object v4, Ln5/w0;->i:Ln5/w0;
 
     invoke-virtual {v3, v4}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
@@ -307,7 +307,7 @@
     invoke-virtual {v3}, Lcom/google/crypto/tink/shaded/protobuf/n$a;->e()V
 
     .line 28
-    iget-object v3, v3, Lcom/google/crypto/tink/shaded/protobuf/n$a;->g:Lcom/google/crypto/tink/shaded/protobuf/n;
+    iget-object v3, v3, Lcom/google/crypto/tink/shaded/protobuf/n$a;->h:Lcom/google/crypto/tink/shaded/protobuf/n;
 
     check-cast v3, Ln5/z0;
 
@@ -389,7 +389,7 @@
     invoke-virtual {v4}, Lcom/google/crypto/tink/shaded/protobuf/n$a;->e()V
 
     .line 41
-    iget-object v5, v4, Lcom/google/crypto/tink/shaded/protobuf/n$a;->g:Lcom/google/crypto/tink/shaded/protobuf/n;
+    iget-object v5, v4, Lcom/google/crypto/tink/shaded/protobuf/n$a;->h:Lcom/google/crypto/tink/shaded/protobuf/n;
 
     check-cast v5, Ln5/n0;
 
@@ -404,7 +404,7 @@
     invoke-virtual {v4}, Lcom/google/crypto/tink/shaded/protobuf/n$a;->e()V
 
     .line 44
-    iget-object v2, v4, Lcom/google/crypto/tink/shaded/protobuf/n$a;->g:Lcom/google/crypto/tink/shaded/protobuf/n;
+    iget-object v2, v4, Lcom/google/crypto/tink/shaded/protobuf/n$a;->h:Lcom/google/crypto/tink/shaded/protobuf/n;
 
     check-cast v2, Ln5/n0;
 
@@ -426,7 +426,7 @@
 
     move-result-object v1
 
-    invoke-static {v1}, La5/r;->c([B)Ljava/lang/String;
+    invoke-static {v1}, Ld2/u;->b([B)Ljava/lang/String;
 
     move-result-object v1
 
@@ -495,7 +495,7 @@
 
     move-result-object v1
 
-    invoke-static {v1}, La5/r;->c([B)Ljava/lang/String;
+    invoke-static {v1}, Ld2/u;->b([B)Ljava/lang/String;
 
     move-result-object v1
 
@@ -655,7 +655,7 @@
     iget-object v4, p0, Lk5/a$a;->c:Ljava/lang/String;
 
     .line 6
-    invoke-static {v4}, Lr5/j0;->b(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v4}, Lr5/l0;->b(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v4
 
@@ -692,7 +692,7 @@
     new-instance v6, Lk5/b;
 
     .line 12
-    invoke-static {v5}, Lr5/j0;->b(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v5}, Lr5/l0;->b(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v5
 
@@ -701,7 +701,7 @@
     const/16 v0, 0xa
 
     .line 13
-    invoke-static {v0}, Lr5/d0;->a(I)[B
+    invoke-static {v0}, Lr5/f0;->a(I)[B
 
     move-result-object v0
 

@@ -7,14 +7,14 @@
 
 
 # instance fields
-.field public final synthetic f:Lqa/e0;
+.field public final synthetic g:Lqa/e0;
 
 
 # direct methods
 .method public constructor <init>(Lqa/e0;)V
     .locals 0
 
-    iput-object p1, p0, Lqa/k0;->f:Lqa/e0;
+    iput-object p1, p0, Lqa/k0;->g:Lqa/e0;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -26,7 +26,7 @@
 .method public final onClick(Landroid/view/View;)V
     .locals 0
 
-    iget-object p1, p0, Lqa/k0;->f:Lqa/e0;
+    iget-object p1, p0, Lqa/k0;->g:Lqa/e0;
 
     invoke-virtual {p1}, Lqa/e0;->p()V
 

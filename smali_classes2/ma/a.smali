@@ -97,12 +97,12 @@
     const/4 v0, 0x0
 
     .line 5
-    iget-object v1, p1, Lma/a$a;->y:Landroid/widget/TextView;
+    iget-object v1, p1, Lma/a$a;->z:Landroid/widget/TextView;
 
     invoke-virtual {v1, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 6
-    iget-object p1, p1, Lma/a$a;->y:Landroid/widget/TextView;
+    iget-object p1, p1, Lma/a$a;->z:Landroid/widget/TextView;
 
     invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 

@@ -223,7 +223,7 @@
     .line 8
     aget v0, v0, v2
 
-    invoke-static {v0, v1, p1, v1}, Lo/p;->a(FFFF)F
+    invoke-static {v0, v1, p1, v1}, Lo/o;->a(FFFF)F
 
     move-result p1
 

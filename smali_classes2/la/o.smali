@@ -6,7 +6,7 @@
 # static fields
 .field public static final a:Ljava/util/regex/Pattern;
 
-.field public static b:Lcom/helpshift/util/w;
+.field public static b:Lcom/google/android/gms/ads/i;
 
 .field public static c:Z
 
@@ -39,11 +39,11 @@
     sput-object v0, Lla/o;->a:Ljava/util/regex/Pattern;
 
     .line 2
-    new-instance v0, Lcom/helpshift/util/w;
+    new-instance v0, Lcom/google/android/gms/ads/i;
 
-    invoke-direct {v0}, Lcom/helpshift/util/w;-><init>()V
+    invoke-direct {v0}, Lcom/google/android/gms/ads/i;-><init>()V
 
-    sput-object v0, Lla/o;->b:Lcom/helpshift/util/w;
+    sput-object v0, Lla/o;->b:Lcom/google/android/gms/ads/i;
 
     const/4 v0, 0x0
 
@@ -164,9 +164,9 @@
     check-cast v1, Lcb/c;
 
     .line 3
-    iget-object v2, v1, Lcb/c;->f:Ljava/lang/String;
+    iget-object v2, v1, Lcb/c;->g:Ljava/lang/String;
 
-    iget v1, v1, Lcb/c;->g:I
+    iget v1, v1, Lcb/c;->h:I
 
     if-eqz v2, :cond_1
 
@@ -203,7 +203,7 @@
     move-result v8
 
     .line 8
-    iget-object v9, v5, Lgb/b;->i:Ljava/util/ArrayList;
+    iget-object v9, v5, Lgb/b;->j:Ljava/util/ArrayList;
 
     if-eqz v9, :cond_4
 
@@ -226,7 +226,7 @@
     check-cast v10, Lgb/b;
 
     .line 10
-    iget-char v11, v10, Lgb/b;->f:C
+    iget-char v11, v10, Lgb/b;->g:C
 
     if-ne v11, v8, :cond_3
 
@@ -244,7 +244,7 @@
     invoke-direct {v9, v8}, Lgb/b;-><init>(C)V
 
     .line 12
-    iget-object v5, v5, Lgb/b;->i:Ljava/util/ArrayList;
+    iget-object v5, v5, Lgb/b;->j:Ljava/util/ArrayList;
 
     invoke-virtual {v5, v9}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
@@ -269,7 +269,7 @@
     if-eq v8, v3, :cond_6
 
     .line 13
-    iput-boolean v7, v5, Lgb/b;->g:Z
+    iput-boolean v7, v5, Lgb/b;->h:Z
 
     .line 14
     invoke-static {v6, v1}, Lla/o;->a(II)I
@@ -290,7 +290,7 @@
 
     .line 16
     :cond_7
-    iput-boolean v7, v5, Lgb/b;->g:Z
+    iput-boolean v7, v5, Lgb/b;->h:Z
 
     .line 17
     invoke-static {v3, v1}, Lla/o;->a(II)I
@@ -394,9 +394,9 @@
     invoke-virtual {v0, v1}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
     .line 3
-    sget-object p1, Lla/o;->b:Lcom/helpshift/util/w;
+    sget-object p1, Lla/o;->b:Lcom/google/android/gms/ads/i;
 
-    invoke-virtual {p1, p0}, Lcom/helpshift/util/w;->d(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p1, p0}, Lcom/google/android/gms/ads/i;->c(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p0
 
@@ -447,14 +447,14 @@
 
     .line 2
     :cond_0
-    sget-boolean v0, Lib/e;->a:Z
+    sget-boolean v0, Lib/e;->g:Z
 
     const/4 v2, 0x1
 
     if-nez v0, :cond_1
 
     .line 3
-    invoke-static {}, Lib/e;->a()V
+    invoke-static {}, Lib/e;->c()V
 
     .line 4
     sput-boolean v2, Lla/o;->d:Z
@@ -491,7 +491,7 @@
     check-cast v6, Lcom/helpshift/support/Faq;
 
     .line 8
-    iget-object v6, v6, Lcom/helpshift/support/Faq;->f:Ljava/lang/String;
+    iget-object v6, v6, Lcom/helpshift/support/Faq;->g:Ljava/lang/String;
 
     .line 9
     invoke-static {v6}, Lla/o;->f(Ljava/lang/String;)Ljava/lang/String;
@@ -638,9 +638,9 @@
     check-cast v6, Lcom/helpshift/support/Faq;
 
     .line 26
-    iget-object v7, v6, Lcom/helpshift/support/Faq;->f:Ljava/lang/String;
+    iget-object v7, v6, Lcom/helpshift/support/Faq;->g:Ljava/lang/String;
 
-    iget-object v8, v6, Lcom/helpshift/support/Faq;->j:Ljava/lang/String;
+    iget-object v8, v6, Lcom/helpshift/support/Faq;->k:Ljava/lang/String;
 
     invoke-virtual {v6}, Lcom/helpshift/support/Faq;->j()Ljava/util/List;
 
@@ -733,7 +733,7 @@
     iget-object v2, v3, Lgb/a;->b:Lgb/b;
 
     .line 36
-    iget-object v2, v2, Lgb/b;->i:Ljava/util/ArrayList;
+    iget-object v2, v2, Lgb/b;->j:Ljava/util/ArrayList;
 
     .line 37
     invoke-virtual {v2}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
@@ -790,10 +790,10 @@
     if-eqz v0, :cond_b
 
     .line 44
-    sput-object v1, Lib/e;->b:Lib/d;
+    sput-object v1, Lib/e;->h:Lib/d;
 
     .line 45
-    sput-boolean v4, Lib/e;->a:Z
+    sput-boolean v4, Lib/e;->g:Z
 
     .line 46
     sput-object v1, Lla/o;->e:Ljava/util/HashMap;
@@ -818,7 +818,7 @@
     move-result-object p0
 
     .line 2
-    invoke-static {p0}, Lcom/helpshift/util/v;->a(Ljava/lang/String;)Landroid/text/Spanned;
+    invoke-static {p0}, Lcom/helpshift/util/u;->a(Ljava/lang/String;)Landroid/text/Spanned;
 
     move-result-object p0
 
@@ -831,7 +831,7 @@
 
     move-result-object p0
 
-    invoke-static {p0}, Lib/e;->b(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p0}, Lib/e;->e(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p0
 

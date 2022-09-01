@@ -66,11 +66,11 @@
 
     const-string v0, "uuid"
 
-    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "profileNickname"
 
-    invoke-static {p3, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p3, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -340,13 +340,13 @@
 
     move-object v3, p2
 
-    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "profileNickname"
 
     move-object v4, p3
 
-    invoke-static {p3, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p3, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     new-instance v0, Lcom/kakao/sdk/partner/talk/model/PartnerFriend;
 
@@ -400,7 +400,7 @@
 
     iget-object v3, p1, Lcom/kakao/sdk/partner/talk/model/PartnerFriend;->id:Ljava/lang/Long;
 
-    invoke-static {v1, v3}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -410,7 +410,7 @@
 
     iget-object v3, p1, Lcom/kakao/sdk/partner/talk/model/PartnerFriend;->uuid:Ljava/lang/String;
 
-    invoke-static {v1, v3}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -420,7 +420,7 @@
 
     iget-object v3, p1, Lcom/kakao/sdk/partner/talk/model/PartnerFriend;->profileNickname:Ljava/lang/String;
 
-    invoke-static {v1, v3}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -430,7 +430,7 @@
 
     iget-object v3, p1, Lcom/kakao/sdk/partner/talk/model/PartnerFriend;->profileThumbnailImage:Ljava/lang/String;
 
-    invoke-static {v1, v3}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -456,7 +456,7 @@
 
     iget-object v3, p1, Lcom/kakao/sdk/partner/talk/model/PartnerFriend;->serviceUserId:Ljava/lang/Long;
 
-    invoke-static {v1, v3}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -466,7 +466,7 @@
 
     iget-object v3, p1, Lcom/kakao/sdk/partner/talk/model/PartnerFriend;->registeredToApp:Ljava/lang/Boolean;
 
-    invoke-static {v1, v3}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -476,7 +476,7 @@
 
     iget-object v3, p1, Lcom/kakao/sdk/partner/talk/model/PartnerFriend;->relation:Lcom/kakao/sdk/partner/talk/model/FriendRelation;
 
-    invoke-static {v1, v3}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -486,7 +486,7 @@
 
     iget-object v3, p1, Lcom/kakao/sdk/partner/talk/model/PartnerFriend;->talkOs:Ljava/lang/String;
 
-    invoke-static {v1, v3}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -496,7 +496,7 @@
 
     iget-object p1, p1, Lcom/kakao/sdk/partner/talk/model/PartnerFriend;->msgAllowed:Ljava/lang/Boolean;
 
-    invoke-static {v1, p1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, p1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -867,7 +867,7 @@
 
     const-string p2, "parcel"
 
-    invoke-static {p1, p2}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p2}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     iget-object p2, p0, Lcom/kakao/sdk/partner/talk/model/PartnerFriend;->id:Ljava/lang/Long;
 
@@ -930,7 +930,7 @@
     if-eqz p2, :cond_2
 
     .line 1
-    invoke-static {p1, v0, p2}, Lk3/vo0;->c(Landroid/os/Parcel;ILjava/lang/Boolean;)V
+    invoke-static {p1, v0, p2}, Lj7/a;->b(Landroid/os/Parcel;ILjava/lang/Boolean;)V
 
     goto :goto_2
 
@@ -962,7 +962,7 @@
     if-eqz p2, :cond_4
 
     .line 3
-    invoke-static {p1, v0, p2}, Lk3/vo0;->c(Landroid/os/Parcel;ILjava/lang/Boolean;)V
+    invoke-static {p1, v0, p2}, Lj7/a;->b(Landroid/os/Parcel;ILjava/lang/Boolean;)V
 
     goto :goto_4
 

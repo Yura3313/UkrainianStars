@@ -1,397 +1,525 @@
-.class public final synthetic Lk3/gx;
+.class public final Lk3/gx;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
-# interfaces
-.implements Ljava/util/concurrent/Callable;
-
 
 # instance fields
-.field public final a:Lk3/sg0;
+.field public final a:Landroid/content/Context;
 
-.field public final b:Lk3/jg0;
+.field public final b:Lk3/cx;
 
-.field public final c:Lorg/json/JSONObject;
+.field public final c:Lk3/lr0;
+
+.field public final d:Lcom/google/android/gms/internal/ads/zzbbg;
+
+.field public final e:Li1/b;
+
+.field public final f:Lcom/google/android/gms/internal/ads/q7;
+
+.field public final g:Ljava/util/concurrent/Executor;
+
+.field public final h:Lcom/google/android/gms/internal/ads/zzadm;
+
+.field public final i:Lk3/vx;
+
+.field public final j:Ljava/util/concurrent/ScheduledExecutorService;
 
 
 # direct methods
-.method public constructor <init>(Lk3/ex;Lk3/sg0;Lk3/jg0;Lorg/json/JSONObject;)V
+.method public constructor <init>(Landroid/content/Context;Lk3/cx;Lk3/lr0;Lcom/google/android/gms/internal/ads/zzbbg;Li1/b;Lcom/google/android/gms/internal/ads/q7;Ljava/util/concurrent/Executor;Lk3/vg0;Lk3/vx;Ljava/util/concurrent/ScheduledExecutorService;)V
     .locals 0
 
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p2, p0, Lk3/gx;->a:Lk3/sg0;
+    .line 2
+    iput-object p1, p0, Lk3/gx;->a:Landroid/content/Context;
 
-    iput-object p3, p0, Lk3/gx;->b:Lk3/jg0;
+    .line 3
+    iput-object p2, p0, Lk3/gx;->b:Lk3/cx;
 
-    iput-object p4, p0, Lk3/gx;->c:Lorg/json/JSONObject;
+    .line 4
+    iput-object p3, p0, Lk3/gx;->c:Lk3/lr0;
+
+    .line 5
+    iput-object p4, p0, Lk3/gx;->d:Lcom/google/android/gms/internal/ads/zzbbg;
+
+    .line 6
+    iput-object p5, p0, Lk3/gx;->e:Li1/b;
+
+    .line 7
+    iput-object p6, p0, Lk3/gx;->f:Lcom/google/android/gms/internal/ads/q7;
+
+    .line 8
+    iput-object p7, p0, Lk3/gx;->g:Ljava/util/concurrent/Executor;
+
+    .line 9
+    iget-object p1, p8, Lk3/vg0;->i:Lcom/google/android/gms/internal/ads/zzadm;
+
+    iput-object p1, p0, Lk3/gx;->h:Lcom/google/android/gms/internal/ads/zzadm;
+
+    .line 10
+    iput-object p9, p0, Lk3/gx;->i:Lk3/vx;
+
+    .line 11
+    iput-object p10, p0, Lk3/gx;->j:Ljava/util/concurrent/ScheduledExecutorService;
 
     return-void
 .end method
 
+.method public static c(ZLk3/hm0;)Lk3/hm0;
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Ljava/lang/Object;",
+            ">(Z",
+            "Lk3/hm0<",
+            "TT;>;TT;)",
+            "Lk3/hm0<",
+            "TT;>;"
+        }
+    .end annotation
 
-# virtual methods
-.method public final call()Ljava/lang/Object;
-    .locals 10
+    if-eqz p0, :cond_0
 
     .line 1
-    iget-object v0, p0, Lk3/gx;->a:Lk3/sg0;
+    new-instance p0, Lk3/ox;
 
-    iget-object v1, p0, Lk3/gx;->b:Lk3/jg0;
-
-    iget-object v2, p0, Lk3/gx;->c:Lorg/json/JSONObject;
+    invoke-direct {p0, p1}, Lk3/ox;-><init>(Lk3/hm0;)V
 
     .line 2
-    new-instance v3, Lk3/sv;
-
-    invoke-direct {v3}, Lk3/sv;-><init>()V
-
-    const-string v4, "template_id"
-
-    const/4 v5, -0x1
+    sget-object v0, Lk3/jd;->f:Lk3/od;
 
     .line 3
-    invoke-virtual {v2, v4, v5}, Lorg/json/JSONObject;->optInt(Ljava/lang/String;I)I
+    invoke-static {p1, p0, v0}, Lk3/dm0;->k(Lk3/hm0;Lk3/pl0;Ljava/util/concurrent/Executor;)Lk3/hm0;
 
-    move-result v4
+    move-result-object p0
+
+    return-object p0
 
     .line 4
-    monitor-enter v3
+    :cond_0
+    const-class p0, Ljava/lang/Exception;
+
+    new-instance v0, Lk3/lx;
+
+    invoke-direct {v0}, Lk3/lx;-><init>()V
 
     .line 5
-    :try_start_0
-    iput v4, v3, Lk3/sv;->a:I
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_3
+    sget-object v1, Lk3/jd;->f:Lk3/od;
 
     .line 6
-    monitor-exit v3
+    invoke-static {p1, p0, v0, v1}, Lk3/dm0;->i(Lk3/hm0;Ljava/lang/Class;Lk3/pl0;Ljava/util/concurrent/Executor;)Lk3/hm0;
 
-    const-string v4, "custom_template_id"
+    move-result-object p0
 
-    .line 7
-    invoke-virtual {v2, v4}, Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;
+    return-object p0
+.end method
 
-    move-result-object v4
+.method public static e(Lorg/json/JSONObject;Ljava/lang/String;)Ljava/lang/Integer;
+    .locals 2
 
-    .line 8
-    monitor-enter v3
+    .line 1
+    :try_start_0
+    invoke-virtual {p0, p1}, Lorg/json/JSONObject;->getJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
 
-    .line 9
-    :try_start_1
-    iput-object v4, v3, Lk3/sv;->q:Ljava/lang/String;
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_2
+    move-result-object p0
 
-    .line 10
-    monitor-exit v3
+    const-string p1, "r"
 
-    const-string v4, "omid_settings"
+    .line 2
+    invoke-virtual {p0, p1}, Lorg/json/JSONObject;->getInt(Ljava/lang/String;)I
 
-    .line 11
-    invoke-virtual {v2, v4}, Lorg/json/JSONObject;->optJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
+    move-result p1
 
-    move-result-object v4
+    const-string v0, "g"
 
-    const/4 v5, 0x0
-
-    if-eqz v4, :cond_0
-
-    const-string v6, "omid_partner_name"
-
-    .line 12
-    invoke-virtual {v4, v6}, Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v4
-
-    goto :goto_0
-
-    :cond_0
-    move-object v4, v5
-
-    .line 13
-    :goto_0
-    monitor-enter v3
-
-    .line 14
-    :try_start_2
-    iput-object v4, v3, Lk3/sv;->u:Ljava/lang/String;
-    :try_end_2
-    .catchall {:try_start_2 .. :try_end_2} :catchall_1
-
-    .line 15
-    monitor-exit v3
-
-    .line 16
-    iget-object v0, v0, Lk3/sg0;->a:Lk3/iy0;
-
-    iget-object v0, v0, Lk3/iy0;->f:Ljava/lang/Object;
-
-    check-cast v0, Lk3/ug0;
-
-    .line 17
-    iget-object v4, v0, Lk3/ug0;->g:Ljava/util/ArrayList;
-
-    invoke-virtual {v3}, Lk3/sv;->k()I
-
-    move-result v6
-
-    invoke-static {v6}, Ljava/lang/Integer;->toString(I)Ljava/lang/String;
-
-    move-result-object v6
-
-    invoke-virtual {v4, v6}, Ljava/util/ArrayList;->contains(Ljava/lang/Object;)Z
-
-    move-result v4
-
-    const/4 v6, 0x1
-
-    if-eqz v4, :cond_6
-
-    .line 18
-    invoke-virtual {v3}, Lk3/sv;->k()I
-
-    move-result v4
-
-    const/4 v7, 0x3
-
-    if-ne v4, v7, :cond_3
-
-    .line 19
-    invoke-virtual {v3}, Lk3/sv;->c()Ljava/lang/String;
-
-    move-result-object v4
-
-    if-eqz v4, :cond_2
-
-    .line 20
-    iget-object v0, v0, Lk3/ug0;->h:Ljava/util/ArrayList;
-
-    invoke-virtual {v3}, Lk3/sv;->c()Ljava/lang/String;
-
-    move-result-object v4
-
-    invoke-virtual {v0, v4}, Ljava/util/ArrayList;->contains(Ljava/lang/Object;)Z
+    .line 3
+    invoke-virtual {p0, v0}, Lorg/json/JSONObject;->getInt(Ljava/lang/String;)I
 
     move-result v0
 
-    if-eqz v0, :cond_1
+    const-string v1, "b"
 
-    goto :goto_1
+    .line 4
+    invoke-virtual {p0, v1}, Lorg/json/JSONObject;->getInt(Ljava/lang/String;)I
 
-    .line 21
+    move-result p0
+
+    .line 5
+    invoke-static {p1, v0, p0}, Landroid/graphics/Color;->rgb(III)I
+
+    move-result p0
+
+    invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object p0
+    :try_end_0
+    .catch Lorg/json/JSONException; {:try_start_0 .. :try_end_0} :catch_0
+
+    return-object p0
+
+    :catch_0
+    const/4 p0, 0x0
+
+    return-object p0
+.end method
+
+.method public static f(Lorg/json/JSONObject;)Lcom/google/android/gms/internal/ads/zzzc;
+    .locals 3
+
+    const/4 v0, 0x0
+
+    if-nez p0, :cond_0
+
+    return-object v0
+
+    :cond_0
+    const-string v1, "reason"
+
+    .line 1
+    invoke-virtual {p0, v1}, Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v1
+
+    const-string v2, "ping_url"
+
+    .line 2
+    invoke-virtual {p0, v2}, Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object p0
+
+    .line 3
+    invoke-static {v1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+
+    move-result v2
+
+    if-nez v2, :cond_2
+
+    invoke-static {p0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_1
+
+    goto :goto_0
+
+    .line 4
     :cond_1
-    new-instance v0, Lcom/google/android/gms/internal/ads/zzcuh;
+    new-instance v0, Lcom/google/android/gms/internal/ads/zzzc;
 
-    const-string v1, "Unexpected custom template id in the response."
+    invoke-direct {v0, v1, p0}, Lcom/google/android/gms/internal/ads/zzzc;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
-    invoke-direct {v0, v6, v1}, Lcom/google/android/gms/internal/ads/zzcuh;-><init>(ILjava/lang/String;)V
-
-    throw v0
-
-    .line 22
     :cond_2
-    new-instance v0, Lcom/google/android/gms/internal/ads/zzcuh;
+    :goto_0
+    return-object v0
+.end method
 
-    const-string v1, "No custom template id for custom template ad response."
 
-    invoke-direct {v0, v6, v1}, Lcom/google/android/gms/internal/ads/zzcuh;-><init>(ILjava/lang/String;)V
+# virtual methods
+.method public final a(Lorg/json/JSONArray;ZZ)Lk3/hm0;
+    .locals 3
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lorg/json/JSONArray;",
+            "ZZ)",
+            "Lk3/hm0<",
+            "Ljava/util/List<",
+            "Lcom/google/android/gms/internal/ads/zzadi;",
+            ">;>;"
+        }
+    .end annotation
 
-    throw v0
+    if-eqz p1, :cond_3
 
-    :cond_3
-    :goto_1
-    const-string v0, "rating"
+    .line 1
+    invoke-virtual {p1}, Lorg/json/JSONArray;->length()I
 
-    const-wide/high16 v8, -0x4010000000000000L    # -1.0
+    move-result v0
 
-    .line 23
-    invoke-virtual {v2, v0, v8, v9}, Lorg/json/JSONObject;->optDouble(Ljava/lang/String;D)D
-
-    move-result-wide v8
-
-    .line 24
-    monitor-enter v3
-
-    .line 25
-    :try_start_3
-    iput-wide v8, v3, Lk3/sv;->n:D
-    :try_end_3
-    .catchall {:try_start_3 .. :try_end_3} :catchall_0
-
-    .line 26
-    monitor-exit v3
-
-    const-string v0, "headline"
-
-    const-string v4, "headline"
-
-    .line 27
-    invoke-virtual {v2, v4, v5}, Lorg/json/JSONObject;->optString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v4
-
-    iget-boolean v1, v1, Lk3/jg0;->G:Z
-
-    if-eqz v1, :cond_5
-
-    .line 28
-    sget-object v1, Li1/o;->B:Li1/o;
-
-    iget-object v6, v1, Li1/o;->c:Lk3/bb;
-
-    .line 29
-    iget-object v1, v1, Li1/o;->g:Lk3/ia;
-
-    .line 30
-    invoke-virtual {v1}, Lk3/ia;->a()Landroid/content/res/Resources;
-
-    move-result-object v1
-
-    if-eqz v1, :cond_4
-
-    .line 31
-    sget v6, Lcom/google/android/gms/ads/impl/R$string;->s7:I
-
-    invoke-virtual {v1, v6}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
-
-    move-result-object v1
+    if-gtz v0, :cond_0
 
     goto :goto_2
 
-    :cond_4
-    const-string v1, "Test Ad"
+    .line 2
+    :cond_0
+    new-instance v0, Ljava/util/ArrayList;
 
-    .line 32
+    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
+
+    if-eqz p3, :cond_1
+
+    .line 3
+    invoke-virtual {p1}, Lorg/json/JSONArray;->length()I
+
+    move-result p3
+
+    goto :goto_0
+
+    :cond_1
+    const/4 p3, 0x1
+
+    :goto_0
+    const/4 v1, 0x0
+
+    :goto_1
+    if-ge v1, p3, :cond_2
+
+    .line 4
+    invoke-virtual {p1, v1}, Lorg/json/JSONArray;->optJSONObject(I)Lorg/json/JSONObject;
+
+    move-result-object v2
+
+    invoke-virtual {p0, v2, p2}, Lk3/gx;->b(Lorg/json/JSONObject;Z)Lk3/hm0;
+
+    move-result-object v2
+
+    .line 5
+    invoke-virtual {v0, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    add-int/lit8 v1, v1, 0x1
+
+    goto :goto_1
+
+    .line 6
+    :cond_2
+    new-instance p1, Lk3/rl0;
+
+    invoke-static {v0}, Lk3/gk0;->n(Ljava/lang/Iterable;)Lk3/gk0;
+
+    move-result-object p2
+
+    invoke-direct {p1, p2}, Lk3/rl0;-><init>(Lk3/fk0;)V
+
+    .line 7
+    sget-object p2, Lk3/ix;->a:Lk3/ix;
+
+    iget-object p3, p0, Lk3/gx;->g:Ljava/util/concurrent/Executor;
+
+    .line 8
+    invoke-static {p1, p2, p3}, Lk3/dm0;->j(Lk3/hm0;Lk3/vj0;Ljava/util/concurrent/Executor;)Lk3/hm0;
+
+    move-result-object p1
+
+    return-object p1
+
+    .line 9
+    :cond_3
     :goto_2
-    invoke-static {v1, v7}, La1/e;->a(Ljava/lang/String;I)I
+    invoke-static {}, Ljava/util/Collections;->emptyList()Ljava/util/List;
 
-    move-result v6
+    move-result-object p1
 
-    invoke-static {v4, v6}, La1/e;->a(Ljava/lang/String;I)I
+    invoke-static {p1}, Lk3/dm0;->g(Ljava/lang/Object;)Lk3/hm0;
 
-    move-result v6
+    move-result-object p1
 
-    const-string v7, " : "
+    return-object p1
+.end method
 
-    .line 33
-    invoke-static {v6, v1, v7, v4}, Landroid/support/v4/media/b;->a(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+.method public final b(Lorg/json/JSONObject;Z)Lk3/hm0;
+    .locals 11
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lorg/json/JSONObject;",
+            "Z)",
+            "Lk3/hm0<",
+            "Lcom/google/android/gms/internal/ads/zzadi;",
+            ">;"
+        }
+    .end annotation
 
-    move-result-object v4
+    const/4 v0, 0x0
 
-    .line 34
-    :cond_5
-    invoke-virtual {v3, v0, v4}, Lk3/sv;->u(Ljava/lang/String;Ljava/lang/String;)V
+    if-nez p1, :cond_0
 
-    const-string v0, "body"
+    .line 1
+    invoke-static {v0}, Lk3/dm0;->g(Ljava/lang/Object;)Lk3/hm0;
 
-    const-string v1, "body"
+    move-result-object p1
 
-    .line 35
-    invoke-virtual {v2, v1, v5}, Lorg/json/JSONObject;->optString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    return-object p1
 
-    move-result-object v1
+    :cond_0
+    const-string v1, "url"
 
-    invoke-virtual {v3, v0, v1}, Lk3/sv;->u(Ljava/lang/String;Ljava/lang/String;)V
+    .line 2
+    invoke-virtual {p1, v1}, Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;
 
-    const-string v0, "call_to_action"
+    move-result-object v3
 
-    const-string v1, "call_to_action"
-
-    .line 36
-    invoke-virtual {v2, v1, v5}, Lorg/json/JSONObject;->optString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-virtual {v3, v0, v1}, Lk3/sv;->u(Ljava/lang/String;Ljava/lang/String;)V
-
-    const-string v0, "store"
-
-    const-string v1, "store"
-
-    .line 37
-    invoke-virtual {v2, v1, v5}, Lorg/json/JSONObject;->optString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-virtual {v3, v0, v1}, Lk3/sv;->u(Ljava/lang/String;Ljava/lang/String;)V
-
-    const-string v0, "price"
-
-    const-string v1, "price"
-
-    .line 38
-    invoke-virtual {v2, v1, v5}, Lorg/json/JSONObject;->optString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-virtual {v3, v0, v1}, Lk3/sv;->u(Ljava/lang/String;Ljava/lang/String;)V
-
-    const-string v0, "advertiser"
-
-    const-string v1, "advertiser"
-
-    .line 39
-    invoke-virtual {v2, v1, v5}, Lorg/json/JSONObject;->optString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-virtual {v3, v0, v1}, Lk3/sv;->u(Ljava/lang/String;Ljava/lang/String;)V
-
-    return-object v3
-
-    :catchall_0
-    move-exception v0
-
-    .line 40
-    monitor-exit v3
-
-    throw v0
-
-    .line 41
-    :cond_6
-    new-instance v0, Lcom/google/android/gms/internal/ads/zzcuh;
-
-    .line 42
-    invoke-virtual {v3}, Lk3/sv;->k()I
+    .line 3
+    invoke-static {v3}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
     move-result v1
 
-    const/16 v2, 0x20
+    if-eqz v1, :cond_1
 
-    const-string v3, "Invalid template ID: "
+    .line 4
+    invoke-static {v0}, Lk3/dm0;->g(Ljava/lang/Object;)Lk3/hm0;
 
-    .line 43
-    invoke-static {v2, v3, v1}, Lcom/google/android/gms/ads/e;->a(ILjava/lang/String;I)Ljava/lang/String;
+    move-result-object p1
 
-    move-result-object v1
+    return-object p1
 
-    .line 44
-    invoke-direct {v0, v6, v1}, Lcom/google/android/gms/internal/ads/zzcuh;-><init>(ILjava/lang/String;)V
+    :cond_1
+    const-wide/high16 v0, 0x3ff0000000000000L    # 1.0
 
-    throw v0
+    const-string v2, "scale"
 
-    :catchall_1
-    move-exception v0
+    .line 5
+    invoke-virtual {p1, v2, v0, v1}, Lorg/json/JSONObject;->optDouble(Ljava/lang/String;D)D
 
-    .line 45
-    monitor-exit v3
+    move-result-wide v7
 
-    throw v0
+    const/4 v0, 0x1
 
-    :catchall_2
-    move-exception v0
+    const-string v1, "is_transparent"
 
-    .line 46
-    monitor-exit v3
+    .line 6
+    invoke-virtual {p1, v1, v0}, Lorg/json/JSONObject;->optBoolean(Ljava/lang/String;Z)Z
 
-    throw v0
+    move-result v0
 
-    :catchall_3
-    move-exception v0
+    const/4 v1, -0x1
 
-    .line 47
-    monitor-exit v3
+    const-string v2, "width"
 
-    throw v0
+    .line 7
+    invoke-virtual {p1, v2, v1}, Lorg/json/JSONObject;->optInt(Ljava/lang/String;I)I
+
+    move-result v9
+
+    const-string v2, "height"
+
+    .line 8
+    invoke-virtual {p1, v2, v1}, Lorg/json/JSONObject;->optInt(Ljava/lang/String;I)I
+
+    move-result v10
+
+    if-eqz p2, :cond_2
+
+    .line 9
+    new-instance p1, Lcom/google/android/gms/internal/ads/zzadi;
+
+    const/4 v5, 0x0
+
+    .line 10
+    invoke-static {v3}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
+
+    move-result-object v6
+
+    move-object v4, p1
+
+    invoke-direct/range {v4 .. v10}, Lcom/google/android/gms/internal/ads/zzadi;-><init>(Landroid/graphics/drawable/Drawable;Landroid/net/Uri;DII)V
+
+    .line 11
+    invoke-static {p1}, Lk3/dm0;->g(Ljava/lang/Object;)Lk3/hm0;
+
+    move-result-object p1
+
+    return-object p1
+
+    .line 12
+    :cond_2
+    iget-object p2, p0, Lk3/gx;->b:Lk3/cx;
+
+    .line 13
+    invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 14
+    sget-object v1, Lk3/fc;->a:Lk3/q1;
+
+    .line 15
+    new-instance v1, Lk3/qd;
+
+    invoke-direct {v1}, Lk3/qd;-><init>()V
+
+    .line 16
+    sget-object v2, Lk3/fc;->a:Lk3/q1;
+
+    new-instance v4, Lk3/jc;
+
+    invoke-direct {v4, v3, v1}, Lk3/jc;-><init>(Ljava/lang/String;Lk3/qd;)V
+
+    invoke-virtual {v2, v4}, Lk3/q1;->c(Lk3/a;)Lk3/a;
+
+    .line 17
+    new-instance v2, Lk3/bx;
+
+    invoke-direct {v2, p2, v7, v8, v0}, Lk3/bx;-><init>(Lk3/cx;DZ)V
+
+    iget-object p2, p2, Lk3/cx;->b:Ljava/util/concurrent/Executor;
+
+    .line 18
+    invoke-static {v1, v2, p2}, Lk3/dm0;->j(Lk3/hm0;Lk3/vj0;Ljava/util/concurrent/Executor;)Lk3/hm0;
+
+    move-result-object p2
+
+    .line 19
+    new-instance v0, Lk3/hx;
+
+    move-object v2, v0
+
+    move-wide v4, v7
+
+    move v6, v9
+
+    move v7, v10
+
+    invoke-direct/range {v2 .. v7}, Lk3/hx;-><init>(Ljava/lang/String;DII)V
+
+    iget-object v1, p0, Lk3/gx;->g:Ljava/util/concurrent/Executor;
+
+    .line 20
+    invoke-static {p2, v0, v1}, Lk3/dm0;->j(Lk3/hm0;Lk3/vj0;Ljava/util/concurrent/Executor;)Lk3/hm0;
+
+    move-result-object p2
+
+    const-string v0, "require"
+
+    .line 21
+    invoke-virtual {p1, v0}, Lorg/json/JSONObject;->optBoolean(Ljava/lang/String;)Z
+
+    move-result p1
+
+    invoke-static {p1, p2}, Lk3/gx;->c(ZLk3/hm0;)Lk3/hm0;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public final d(Lorg/json/JSONObject;Ljava/lang/String;)Lk3/hm0;
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lorg/json/JSONObject;",
+            "Ljava/lang/String;",
+            ")",
+            "Lk3/hm0<",
+            "Lcom/google/android/gms/internal/ads/zzadi;",
+            ">;"
+        }
+    .end annotation
+
+    .line 1
+    invoke-virtual {p1, p2}, Lorg/json/JSONObject;->optJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
+
+    move-result-object p1
+
+    iget-object p2, p0, Lk3/gx;->h:Lcom/google/android/gms/internal/ads/zzadm;
+
+    iget-boolean p2, p2, Lcom/google/android/gms/internal/ads/zzadm;->h:Z
+
+    .line 2
+    invoke-virtual {p0, p1, p2}, Lk3/gx;->b(Lorg/json/JSONObject;Z)Lk3/hm0;
+
+    move-result-object p1
+
+    return-object p1
 .end method

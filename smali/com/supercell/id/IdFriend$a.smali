@@ -29,7 +29,7 @@
     .locals 5
 
     .line 1
-    sget-object v0, Lcom/supercell/id/model/IdSocialAccount;->f:Lcom/supercell/id/model/IdSocialAccount$b;
+    sget-object v0, Lcom/supercell/id/model/IdSocialAccount;->g:Lcom/supercell/id/model/IdSocialAccount$b;
 
     invoke-virtual {p1}, Lcom/supercell/websocket/proxy/protocol/notifications/friends/Friend;->getAccount()Lcom/supercell/websocket/proxy/protocol/common/IdSocialAccount;
 
@@ -37,7 +37,7 @@
 
     const-string v2, "message.account"
 
-    invoke-static {v1, v2}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v0, v1}, Lcom/supercell/id/model/IdSocialAccount$b;->a(Lcom/supercell/websocket/proxy/protocol/common/IdSocialAccount;)Lcom/supercell/id/model/IdSocialAccount;
 
@@ -57,7 +57,7 @@
 
     const-string v4, "message.name"
 
-    invoke-static {v3, v4}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v3, v4}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 4
     invoke-virtual {p1}, Lcom/supercell/websocket/proxy/protocol/notifications/friends/Friend;->getImage()Lcom/supercell/websocket/proxy/protocol/common/IdImage;
@@ -108,7 +108,7 @@
 
     .line 7
     :cond_3
-    sget-object p1, Lcom/supercell/id/model/ProfileImage$Empty;->g:Lcom/supercell/id/model/ProfileImage$Empty;
+    sget-object p1, Lcom/supercell/id/model/ProfileImage$Empty;->h:Lcom/supercell/id/model/ProfileImage$Empty;
 
     .line 8
     :goto_1
@@ -127,7 +127,7 @@
 
     .line 1
     :try_start_0
-    sget-object v1, Lcom/supercell/id/model/IdSocialAccount;->f:Lcom/supercell/id/model/IdSocialAccount$b;
+    sget-object v1, Lcom/supercell/id/model/IdSocialAccount;->g:Lcom/supercell/id/model/IdSocialAccount$b;
 
     invoke-virtual {v1, p1}, Lcom/supercell/id/model/IdSocialAccount$b;->b(Lorg/json/JSONObject;)Lcom/supercell/id/model/IdSocialAccount;
 
@@ -145,7 +145,7 @@
     .line 3
     sget-object v3, Lorg/json/JSONObject;->NULL:Ljava/lang/Object;
 
-    invoke-static {v2, v3}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, v3}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v3
 
@@ -190,7 +190,7 @@
     .line 6
     sget-object v4, Lorg/json/JSONObject;->NULL:Ljava/lang/Object;
 
-    invoke-static {v3, v4}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v3, v4}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v4
 
@@ -227,7 +227,7 @@
     .line 9
     sget-object v4, Lorg/json/JSONObject;->NULL:Ljava/lang/Object;
 
-    invoke-static {p1, v4}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {p1, v4}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v4
 
@@ -275,7 +275,7 @@
 
     .line 13
     :cond_b
-    sget-object v3, Lcom/supercell/id/model/ProfileImage$Empty;->g:Lcom/supercell/id/model/ProfileImage$Empty;
+    sget-object v3, Lcom/supercell/id/model/ProfileImage$Empty;->h:Lcom/supercell/id/model/ProfileImage$Empty;
 
     .line 14
     :goto_4

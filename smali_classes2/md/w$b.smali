@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field public final synthetic f:Lmd/w;
+.field public final synthetic g:Lmd/w;
 
 
 # direct methods
 .method public constructor <init>(Lmd/w;)V
     .locals 0
 
-    iput-object p1, p0, Lmd/w$b;->f:Lmd/w;
+    iput-object p1, p0, Lmd/w$b;->g:Lmd/w;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -38,7 +38,7 @@
     .locals 2
 
     .line 1
-    iget-object p1, p0, Lmd/w$b;->f:Lmd/w;
+    iget-object p1, p0, Lmd/w$b;->g:Lmd/w;
 
     sget v0, Lcom/supercell/id/R$id;->okButton:I
 
@@ -50,14 +50,14 @@
 
     const-string v0, "okButton"
 
-    invoke-static {p1, v0}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/4 v0, 0x0
 
     invoke-virtual {p1, v0}, Landroid/view/View;->setEnabled(Z)V
 
     .line 2
-    iget-object p1, p0, Lmd/w$b;->f:Lmd/w;
+    iget-object p1, p0, Lmd/w$b;->g:Lmd/w;
 
     sget v1, Lcom/supercell/id/R$id;->cancelButton:I
 
@@ -69,12 +69,12 @@
 
     const-string v1, "cancelButton"
 
-    invoke-static {p1, v1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v1}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {p1, v0}, Landroid/view/View;->setEnabled(Z)V
 
     .line 3
-    iget-object p1, p0, Lmd/w$b;->f:Lmd/w;
+    iget-object p1, p0, Lmd/w$b;->g:Lmd/w;
 
     invoke-virtual {p1}, Lmd/u;->X0()Lcom/supercell/id/ui/login/LoginFlowFragment;
 

@@ -2099,7 +2099,7 @@
     iget-object v4, v11, Lcom/google/protobuf/j0$a;->c:Lcom/google/protobuf/w1$b;
 
     .line 19
-    iget v1, v4, Lcom/google/protobuf/w1$b;->g:I
+    iget v1, v4, Lcom/google/protobuf/w1$b;->h:I
 
     if-ne v3, v1, :cond_4
 
@@ -2134,7 +2134,7 @@
     iget-object v4, v11, Lcom/google/protobuf/j0$a;->a:Lcom/google/protobuf/w1$b;
 
     .line 25
-    iget v1, v4, Lcom/google/protobuf/w1$b;->g:I
+    iget v1, v4, Lcom/google/protobuf/w1$b;->h:I
 
     if-ne v3, v1, :cond_4
 
@@ -10661,10 +10661,10 @@
     iget-object v5, v5, Lcom/google/protobuf/j0$a;->c:Lcom/google/protobuf/w1$b;
 
     .line 13
-    iget-object v5, v5, Lcom/google/protobuf/w1$b;->f:Lcom/google/protobuf/w1$c;
+    iget-object v5, v5, Lcom/google/protobuf/w1$b;->g:Lcom/google/protobuf/w1$c;
 
     .line 14
-    sget-object v8, Lcom/google/protobuf/w1$c;->o:Lcom/google/protobuf/w1$c;
+    sget-object v8, Lcom/google/protobuf/w1$c;->p:Lcom/google/protobuf/w1$c;
 
     if-eq v5, v8, :cond_8
 
@@ -13584,18 +13584,18 @@
 
     if-eqz v13, :cond_1
 
-    sget-object v13, Lcom/google/protobuf/w;->g:Lcom/google/protobuf/w;
+    sget-object v13, Lcom/google/protobuf/w;->h:Lcom/google/protobuf/w;
 
     .line 8
-    iget v13, v13, Lcom/google/protobuf/w;->f:I
+    iget v13, v13, Lcom/google/protobuf/w;->g:I
 
     if-lt v12, v13, :cond_1
 
     .line 9
-    sget-object v13, Lcom/google/protobuf/w;->h:Lcom/google/protobuf/w;
+    sget-object v13, Lcom/google/protobuf/w;->i:Lcom/google/protobuf/w;
 
     .line 10
-    iget v13, v13, Lcom/google/protobuf/w;->f:I
+    iget v13, v13, Lcom/google/protobuf/w;->g:I
 
     if-gt v12, v13, :cond_1
 
@@ -15277,18 +15277,18 @@
     int-to-long v9, v4
 
     .line 5
-    sget-object v4, Lcom/google/protobuf/w;->g:Lcom/google/protobuf/w;
+    sget-object v4, Lcom/google/protobuf/w;->h:Lcom/google/protobuf/w;
 
     .line 6
-    iget v4, v4, Lcom/google/protobuf/w;->f:I
+    iget v4, v4, Lcom/google/protobuf/w;->g:I
 
     if-lt v5, v4, :cond_0
 
     .line 7
-    sget-object v4, Lcom/google/protobuf/w;->h:Lcom/google/protobuf/w;
+    sget-object v4, Lcom/google/protobuf/w;->i:Lcom/google/protobuf/w;
 
     .line 8
-    iget v4, v4, Lcom/google/protobuf/w;->f:I
+    iget v4, v4, Lcom/google/protobuf/w;->g:I
 
     if-gt v5, v4, :cond_0
 
@@ -17075,7 +17075,7 @@
 
     .line 11
     :pswitch_7
-    sget-object p2, Lcom/google/protobuf/i;->g:Lcom/google/protobuf/i$h;
+    sget-object p2, Lcom/google/protobuf/i;->h:Lcom/google/protobuf/i$h;
 
     invoke-static {p1, v0, v1}, Lcom/google/protobuf/t1;->r(Ljava/lang/Object;J)Ljava/lang/Object;
 
@@ -17133,7 +17133,7 @@
     if-eqz p2, :cond_9
 
     .line 17
-    sget-object p2, Lcom/google/protobuf/i;->g:Lcom/google/protobuf/i$h;
+    sget-object p2, Lcom/google/protobuf/i;->h:Lcom/google/protobuf/i$h;
 
     invoke-virtual {p2, p1}, Lcom/google/protobuf/i$h;->equals(Ljava/lang/Object;)Z
 

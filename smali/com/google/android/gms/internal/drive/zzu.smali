@@ -15,24 +15,24 @@
 
 
 # instance fields
-.field public final f:Lcom/google/android/gms/drive/metadata/internal/MetadataBundle;
+.field public final g:Lcom/google/android/gms/drive/metadata/internal/MetadataBundle;
 
-.field public final g:I
+.field public final h:I
 
-.field public final h:Ljava/lang/String;
+.field public final i:Ljava/lang/String;
 
-.field public final i:Lcom/google/android/gms/drive/DriveId;
+.field public final j:Lcom/google/android/gms/drive/DriveId;
 
-.field public final j:Ljava/lang/Integer;
+.field public final k:Ljava/lang/Integer;
 
 
 # direct methods
 .method public static constructor <clinit>()V
     .locals 1
 
-    new-instance v0, Lr3/a5;
+    new-instance v0, Lr3/b5;
 
-    invoke-direct {v0}, Lr3/a5;-><init>()V
+    invoke-direct {v0}, Lr3/b5;-><init>()V
 
     sput-object v0, Lcom/google/android/gms/internal/drive/zzu;->CREATOR:Landroid/os/Parcelable$Creator;
 
@@ -46,19 +46,19 @@
     invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lcom/google/android/gms/internal/drive/zzu;->f:Lcom/google/android/gms/drive/metadata/internal/MetadataBundle;
+    iput-object p1, p0, Lcom/google/android/gms/internal/drive/zzu;->g:Lcom/google/android/gms/drive/metadata/internal/MetadataBundle;
 
     .line 3
-    iput p2, p0, Lcom/google/android/gms/internal/drive/zzu;->g:I
+    iput p2, p0, Lcom/google/android/gms/internal/drive/zzu;->h:I
 
     .line 4
-    iput-object p3, p0, Lcom/google/android/gms/internal/drive/zzu;->h:Ljava/lang/String;
+    iput-object p3, p0, Lcom/google/android/gms/internal/drive/zzu;->i:Ljava/lang/String;
 
     .line 5
-    iput-object p4, p0, Lcom/google/android/gms/internal/drive/zzu;->i:Lcom/google/android/gms/drive/DriveId;
+    iput-object p4, p0, Lcom/google/android/gms/internal/drive/zzu;->j:Lcom/google/android/gms/drive/DriveId;
 
     .line 6
-    iput-object p5, p0, Lcom/google/android/gms/internal/drive/zzu;->j:Ljava/lang/Integer;
+    iput-object p5, p0, Lcom/google/android/gms/internal/drive/zzu;->k:Ljava/lang/Integer;
 
     return-void
 .end method
@@ -76,7 +76,7 @@
     move-result v0
 
     .line 2
-    iget-object v1, p0, Lcom/google/android/gms/internal/drive/zzu;->f:Lcom/google/android/gms/drive/metadata/internal/MetadataBundle;
+    iget-object v1, p0, Lcom/google/android/gms/internal/drive/zzu;->g:Lcom/google/android/gms/drive/metadata/internal/MetadataBundle;
 
     const/4 v2, 0x2
 
@@ -85,7 +85,7 @@
     invoke-static {p1, v2, v1, p2, v3}, Le2/b;->l(Landroid/os/Parcel;ILandroid/os/Parcelable;IZ)V
 
     .line 3
-    iget v1, p0, Lcom/google/android/gms/internal/drive/zzu;->g:I
+    iget v1, p0, Lcom/google/android/gms/internal/drive/zzu;->h:I
 
     const/4 v2, 0x3
 
@@ -98,19 +98,19 @@
     invoke-virtual {p1, v1}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 6
-    iget-object v1, p0, Lcom/google/android/gms/internal/drive/zzu;->h:Ljava/lang/String;
+    iget-object v1, p0, Lcom/google/android/gms/internal/drive/zzu;->i:Ljava/lang/String;
 
     invoke-static {p1, v4, v1, v3}, Le2/b;->m(Landroid/os/Parcel;ILjava/lang/String;Z)V
 
     .line 7
-    iget-object v1, p0, Lcom/google/android/gms/internal/drive/zzu;->i:Lcom/google/android/gms/drive/DriveId;
+    iget-object v1, p0, Lcom/google/android/gms/internal/drive/zzu;->j:Lcom/google/android/gms/drive/DriveId;
 
     const/4 v2, 0x5
 
     invoke-static {p1, v2, v1, p2, v3}, Le2/b;->l(Landroid/os/Parcel;ILandroid/os/Parcelable;IZ)V
 
     .line 8
-    iget-object p2, p0, Lcom/google/android/gms/internal/drive/zzu;->j:Ljava/lang/Integer;
+    iget-object p2, p0, Lcom/google/android/gms/internal/drive/zzu;->k:Ljava/lang/Integer;
 
     const/4 v1, 0x6
 

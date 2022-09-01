@@ -1,59 +1,63 @@
-.class public final synthetic Lk3/oo0;
-.super Ljava/lang/Object;
+.class public final Lk3/oo0;
+.super Lk3/fn0;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 
-# static fields
-.field public static final synthetic a:[I
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lk3/fn0<",
+        "Lk3/in0;",
+        "Lcom/google/android/gms/internal/ads/y2;",
+        ">;"
+    }
+.end annotation
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 3
+.method public constructor <init>()V
+    .locals 1
 
-    const/4 v0, 0x6
+    const-class v0, Lk3/in0;
+
+    invoke-direct {p0, v0}, Lk3/fn0;-><init>(Ljava/lang/Class;)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final synthetic a(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 2
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/security/GeneralSecurityException;
+        }
+    .end annotation
 
     .line 1
-    invoke-static {v0}, Lp/g;->c(I)[I
-
-    move-result-object v0
+    check-cast p1, Lcom/google/android/gms/internal/ads/y2;
 
     .line 2
-    array-length v0, v0
+    new-instance v0, Lk3/ap0;
 
-    new-array v0, v0, [I
+    invoke-virtual {p1}, Lcom/google/android/gms/internal/ads/y2;->A()Lk3/yq0;
 
-    sput-object v0, Lk3/oo0;->a:[I
+    move-result-object v1
 
-    const/4 v1, 0x1
+    invoke-virtual {v1}, Lk3/yq0;->b()[B
 
-    :try_start_0
-    aput v1, v0, v1
-    :try_end_0
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
+    move-result-object v1
 
-    :catch_0
-    const/4 v0, 0x3
+    invoke-virtual {p1}, Lcom/google/android/gms/internal/ads/y2;->B()Lcom/google/android/gms/internal/ads/c3;
 
-    :try_start_1
-    sget-object v1, Lk3/oo0;->a:[I
+    move-result-object p1
 
-    const/4 v2, 0x2
+    invoke-virtual {p1}, Lcom/google/android/gms/internal/ads/c3;->w()I
 
-    aput v2, v1, v0
-    :try_end_1
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_1
+    move-result p1
 
-    :catch_1
-    :try_start_2
-    sget-object v1, Lk3/oo0;->a:[I
+    invoke-direct {v0, v1, p1}, Lk3/ap0;-><init>([BI)V
 
-    const/4 v2, 0x4
-
-    aput v0, v1, v2
-    :try_end_2
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_2 .. :try_end_2} :catch_2
-
-    :catch_2
-    return-void
+    return-object v0
 .end method

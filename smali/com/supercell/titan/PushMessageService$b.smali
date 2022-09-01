@@ -18,18 +18,18 @@
 
 
 # instance fields
-.field public final synthetic f:Lcom/supercell/titan/PushMessageService;
+.field public final synthetic g:Lcom/supercell/titan/PushMessageService;
 
-.field public final synthetic g:Ljava/util/Map;
+.field public final synthetic h:Ljava/util/Map;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/titan/PushMessageService;Ljava/util/Map;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/titan/PushMessageService$b;->f:Lcom/supercell/titan/PushMessageService;
+    iput-object p1, p0, Lcom/supercell/titan/PushMessageService$b;->g:Lcom/supercell/titan/PushMessageService;
 
-    iput-object p2, p0, Lcom/supercell/titan/PushMessageService$b;->g:Ljava/util/Map;
+    iput-object p2, p0, Lcom/supercell/titan/PushMessageService$b;->h:Ljava/util/Map;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -42,9 +42,9 @@
     .locals 6
 
     .line 1
-    iget-object v0, p0, Lcom/supercell/titan/PushMessageService$b;->f:Lcom/supercell/titan/PushMessageService;
+    iget-object v0, p0, Lcom/supercell/titan/PushMessageService$b;->g:Lcom/supercell/titan/PushMessageService;
 
-    iget-object v1, p0, Lcom/supercell/titan/PushMessageService$b;->g:Ljava/util/Map;
+    iget-object v1, p0, Lcom/supercell/titan/PushMessageService$b;->h:Ljava/util/Map;
 
     if-eqz v1, :cond_3
 
@@ -112,7 +112,7 @@
     invoke-virtual {v2, v3}, Landroid/content/Intent;->putExtras(Landroid/os/Bundle;)Landroid/content/Intent;
 
     .line 8
-    invoke-static {}, Lcom/helpshift/util/u;->b()Z
+    invoke-static {}, Lcom/helpshift/util/t;->b()Z
 
     move-result v1
 

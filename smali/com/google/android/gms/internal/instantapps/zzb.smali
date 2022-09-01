@@ -6,7 +6,7 @@
 
 
 # instance fields
-.field public final f:Landroid/os/IBinder;
+.field public final g:Landroid/os/IBinder;
 
 
 # direct methods
@@ -17,7 +17,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lcom/google/android/gms/internal/instantapps/zzb;->f:Landroid/os/IBinder;
+    iput-object p1, p0, Lcom/google/android/gms/internal/instantapps/zzb;->g:Landroid/os/IBinder;
 
     return-void
 .end method
@@ -27,7 +27,7 @@
 .method public final asBinder()Landroid/os/IBinder;
     .locals 1
 
-    iget-object v0, p0, Lcom/google/android/gms/internal/instantapps/zzb;->f:Landroid/os/IBinder;
+    iget-object v0, p0, Lcom/google/android/gms/internal/instantapps/zzb;->g:Landroid/os/IBinder;
 
     return-object v0
 .end method

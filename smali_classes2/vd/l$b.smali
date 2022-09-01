@@ -1,5 +1,5 @@
 .class public final Lvd/l$b;
-.super Lse/h;
+.super Lse/i;
 .source "SettingsSubscriptionsTabFragment.kt"
 
 # interfaces
@@ -18,28 +18,28 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/l<",
-        "Lvc/c0;",
-        "Lie/h;",
+        "Lvc/z;",
+        "Lie/i;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic f:Lvd/l;
+.field public final synthetic g:Lvd/l;
 
 
 # direct methods
 .method public constructor <init>(Lvd/l;)V
     .locals 0
 
-    iput-object p1, p0, Lvd/l$b;->f:Lvd/l;
+    iput-object p1, p0, Lvd/l$b;->g:Lvd/l;
 
     const/4 p1, 0x1
 
-    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -50,24 +50,24 @@
     .locals 1
 
     .line 1
-    check-cast p1, Lvc/c0;
+    check-cast p1, Lvc/z;
 
     const-string v0, "response"
 
     .line 2
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 3
-    iget-object v0, p0, Lvd/l$b;->f:Lvd/l;
+    iget-object v0, p0, Lvd/l$b;->g:Lvd/l;
 
     .line 4
-    iput-object p1, v0, Lvd/l;->b0:Lvc/c0;
+    iput-object p1, v0, Lvd/l;->c0:Lvc/z;
 
     .line 5
     invoke-virtual {v0}, Lvd/l;->W0()V
 
     .line 6
-    sget-object p1, Lie/h;->a:Lie/h;
+    sget-object p1, Lie/i;->a:Lie/i;
 
     return-object p1
 .end method

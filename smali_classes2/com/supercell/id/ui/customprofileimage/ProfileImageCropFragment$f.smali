@@ -1,5 +1,5 @@
 .class public final Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment$f;
-.super Lae/x;
+.super Lae/w;
 .source "ProfileImageCropFragment.kt"
 
 
@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field public final synthetic g:Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment;
+.field public final synthetic h:Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment;
 
 
 # direct methods
@@ -27,9 +27,9 @@
         }
     .end annotation
 
-    iput-object p1, p0, Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment$f;->g:Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment;
+    iput-object p1, p0, Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment$f;->h:Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment;
 
-    invoke-direct {p0}, Lae/x;-><init>()V
+    invoke-direct {p0}, Lae/w;-><init>()V
 
     return-void
 .end method
@@ -41,10 +41,10 @@
 
     const-string v0, "systemWindowInsets"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
-    iget-object v0, p0, Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment$f;->g:Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment;
+    iget-object v0, p0, Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment$f;->h:Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment;
 
     sget v1, Lcom/supercell/id/R$id;->hole:I
 
@@ -54,7 +54,7 @@
 
     const-string v1, "hole"
 
-    invoke-static {v0, v1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v0}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
@@ -79,12 +79,12 @@
     int-to-float v2, v2
 
     .line 3
-    sget v3, La5/g0;->a:F
+    sget v3, La5/e0;->g:F
 
     mul-float v3, v3, v2
 
     .line 4
-    invoke-static {v3}, Lcom/android/billingclient/api/z;->n(F)I
+    invoke-static {v3}, Lcom/android/billingclient/api/y;->i(F)I
 
     move-result v3
 
@@ -96,12 +96,12 @@
     iget p1, p1, Landroid/graphics/Rect;->top:I
 
     .line 6
-    sget v1, La5/g0;->a:F
+    sget v1, La5/e0;->g:F
 
     mul-float v2, v2, v1
 
     .line 7
-    invoke-static {v2}, Lcom/android/billingclient/api/z;->n(F)I
+    invoke-static {v2}, Lcom/android/billingclient/api/y;->i(F)I
 
     move-result v1
 
@@ -114,24 +114,24 @@
     int-to-float p1, p1
 
     .line 8
-    sget v1, La5/g0;->a:F
+    sget v1, La5/e0;->g:F
 
     mul-float v1, v1, p1
 
     .line 9
-    invoke-static {v1}, Lcom/android/billingclient/api/z;->n(F)I
+    invoke-static {v1}, Lcom/android/billingclient/api/y;->i(F)I
 
     move-result v1
 
     iput v1, v0, Landroid/view/ViewGroup$MarginLayoutParams;->leftMargin:I
 
     .line 10
-    sget v1, La5/g0;->a:F
+    sget v1, La5/e0;->g:F
 
     mul-float p1, p1, v1
 
     .line 11
-    invoke-static {p1}, Lcom/android/billingclient/api/z;->n(F)I
+    invoke-static {p1}, Lcom/android/billingclient/api/y;->i(F)I
 
     move-result p1
 

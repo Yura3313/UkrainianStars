@@ -39,7 +39,7 @@
     invoke-virtual {v0, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
     .line 4
-    invoke-static {v0, p3}, Lk3/cw0;->c(Landroid/os/Parcel;Landroid/os/Parcelable;)V
+    invoke-static {v0, p3}, Lk3/gw0;->c(Landroid/os/Parcel;Landroid/os/Parcelable;)V
 
     const/4 p1, 0x3
 

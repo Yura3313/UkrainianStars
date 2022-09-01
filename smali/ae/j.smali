@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field public final f:Landroid/graphics/Typeface;
+.field public final g:Landroid/graphics/Typeface;
 
 
 # direct methods
@@ -13,11 +13,11 @@
 
     const-string v0, "typeface"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-direct {p0}, Landroid/text/style/MetricAffectingSpan;-><init>()V
 
-    iput-object p1, p0, Lae/j;->f:Landroid/graphics/Typeface;
+    iput-object p1, p0, Lae/j;->g:Landroid/graphics/Typeface;
 
     return-void
 .end method
@@ -46,7 +46,7 @@
 
     .line 3
     :goto_0
-    iget-object v1, p0, Lae/j;->f:Landroid/graphics/Typeface;
+    iget-object v1, p0, Lae/j;->g:Landroid/graphics/Typeface;
 
     invoke-virtual {v1}, Landroid/graphics/Typeface;->getStyle()I
 
@@ -77,7 +77,7 @@
 
     .line 6
     :cond_2
-    iget-object v0, p0, Lae/j;->f:Landroid/graphics/Typeface;
+    iget-object v0, p0, Lae/j;->g:Landroid/graphics/Typeface;
 
     invoke-virtual {p1, v0}, Landroid/graphics/Paint;->setTypeface(Landroid/graphics/Typeface;)Landroid/graphics/Typeface;
 
@@ -89,7 +89,7 @@
 
     const-string v0, "drawState"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {p0, p1}, Lae/j;->a(Landroid/graphics/Paint;)V
 
@@ -101,7 +101,7 @@
 
     const-string v0, "paint"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {p0, p1}, Lae/j;->a(Landroid/graphics/Paint;)V
 

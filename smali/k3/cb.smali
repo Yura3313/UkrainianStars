@@ -7,18 +7,18 @@
 
 
 # instance fields
-.field public final synthetic f:Landroid/content/Context;
+.field public final synthetic g:Landroid/content/Context;
 
-.field public final synthetic g:Lk3/bb;
+.field public final synthetic h:Lk3/bb;
 
 
 # direct methods
 .method public constructor <init>(Lk3/bb;Landroid/content/Context;)V
     .locals 0
 
-    iput-object p1, p0, Lk3/cb;->g:Lk3/bb;
+    iput-object p1, p0, Lk3/cb;->h:Lk3/bb;
 
-    iput-object p2, p0, Lk3/cb;->f:Landroid/content/Context;
+    iput-object p2, p0, Lk3/cb;->g:Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -31,7 +31,7 @@
     .locals 4
 
     .line 1
-    iget-object v0, p0, Lk3/cb;->g:Lk3/bb;
+    iget-object v0, p0, Lk3/cb;->h:Lk3/bb;
 
     .line 2
     iget-object v0, v0, Lk3/bb;->d:Ljava/lang/Object;
@@ -41,9 +41,9 @@
 
     .line 4
     :try_start_0
-    iget-object v1, p0, Lk3/cb;->g:Lk3/bb;
+    iget-object v1, p0, Lk3/cb;->h:Lk3/bb;
 
-    iget-object v2, p0, Lk3/cb;->f:Landroid/content/Context;
+    iget-object v2, p0, Lk3/cb;->g:Landroid/content/Context;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
@@ -77,7 +77,7 @@
     iput-object v2, v1, Lk3/bb;->e:Ljava/lang/String;
 
     .line 8
-    iget-object v1, p0, Lk3/cb;->g:Lk3/bb;
+    iget-object v1, p0, Lk3/cb;->h:Lk3/bb;
 
     .line 9
     iget-object v1, v1, Lk3/bb;->d:Ljava/lang/Object;

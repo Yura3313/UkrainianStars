@@ -122,7 +122,7 @@
     invoke-direct {v4, v2}, Lla/f0;-><init>(Ljava/util/HashMap;)V
 
     .line 13
-    sget-object v5, Lcom/helpshift/util/u;->c:Le7/g;
+    sget-object v5, Lcom/helpshift/util/t;->c:Le7/g;
 
     .line 14
     iget-object v5, v5, Le7/g;->e:Lba/a;
@@ -148,7 +148,7 @@
     move-result-object v5
 
     .line 18
-    sget-object v6, Lcom/helpshift/util/u;->c:Le7/g;
+    sget-object v6, Lcom/helpshift/util/t;->c:Le7/g;
 
     .line 19
     invoke-virtual {v6, v5}, Le7/g;->i(Lk8/a;)V
@@ -190,14 +190,14 @@
     const-string v6, "Exception while parsing CIF data : "
 
     .line 24
-    invoke-static {v7, v6, v5}, Landroidx/savedstate/d;->g(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v7, v6, v5}, Le5/i;->i(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
     :cond_4
     move-object v5, v8
 
     .line 25
     :goto_1
-    sget-object v6, Lcom/helpshift/util/u;->c:Le7/g;
+    sget-object v6, Lcom/helpshift/util/t;->c:Le7/g;
 
     .line 26
     iget-object v6, v6, Le7/g;->f:La8/f;
@@ -275,7 +275,7 @@
     const-string v1, "JSON exception while parsing config : "
 
     .line 34
-    invoke-static {v7, v1, v0, v8}, Landroidx/savedstate/d;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v7, v1, v0, v8}, Le5/i;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
 
     :cond_6
     :goto_2
@@ -413,7 +413,7 @@
     const-string v3, "Invalid FaqTagFilter object in config"
 
     .line 50
-    invoke-static {v7, v3, v1}, Landroidx/savedstate/d;->g(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v7, v3, v1}, Le5/i;->i(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
     .line 51
     :cond_a
@@ -430,7 +430,7 @@
     check-cast v0, Ljava/util/List;
 
     .line 53
-    sput-object v0, Lk/c;->a:Ljava/util/List;
+    sput-object v0, Lr3/r4;->b:Ljava/util/List;
 
     return-object p0
 .end method
@@ -454,7 +454,7 @@
 
     .line 2
     :cond_1
-    sget-object v0, Lcom/helpshift/util/u;->b:Landroid/content/Context;
+    sget-object v0, Lcom/helpshift/util/t;->b:Landroid/content/Context;
 
     if-nez v0, :cond_2
 
@@ -470,7 +470,7 @@
 
     .line 4
     :cond_3
-    sget-object v0, Lcom/helpshift/util/u;->c:Le7/g;
+    sget-object v0, Lcom/helpshift/util/t;->c:Le7/g;
 
     .line 5
     new-instance v1, Lla/e0$a;
@@ -597,7 +597,7 @@
     const-string v0, "Unknown issuetype/issueId in push payload"
 
     .line 10
-    invoke-static {p1, v0, p0, p0}, Landroidx/savedstate/d;->h(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {p1, v0, p0, p0}, Le5/i;->j(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Throwable;[Lz9/a;)V
 
     return-void
 
@@ -632,7 +632,7 @@
 
     .line 14
     :goto_4
-    sget-object v2, Lcom/helpshift/util/u;->c:Le7/g;
+    sget-object v2, Lcom/helpshift/util/t;->c:Le7/g;
 
     .line 15
     invoke-virtual {v2}, Le7/g;->e()Lt8/b;
@@ -719,7 +719,7 @@
 
     .line 25
     :cond_8
-    invoke-static {p1}, Lcom/google/android/play/core/appupdate/g;->b(Ljava/lang/String;)Z
+    invoke-static {p1}, La5/b0;->d(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -744,12 +744,12 @@
     .line 29
     iget-object p1, v2, Lt8/b;->f:Ls8/a;
 
-    iget-object v0, p0, Lq8/d;->j:Ljava/lang/String;
+    iget-object v0, p0, Lq8/d;->k:Ljava/lang/String;
 
     .line 30
     check-cast p1, Le8/c;
 
-    invoke-virtual {p1, v0}, Le8/c;->c(Ljava/lang/String;)Lk3/c01;
+    invoke-virtual {p1, v0}, Le8/c;->c(Ljava/lang/String;)Lk3/i01;
 
     move-result-object p1
 
@@ -763,12 +763,12 @@
 
     .line 31
     :cond_a
-    iget v0, p1, Lk3/c01;->f:I
+    iget v0, p1, Lk3/i01;->g:I
 
     add-int/2addr v4, v0
 
     .line 32
-    iget-object p1, p1, Lk3/c01;->g:Ljava/lang/Object;
+    iget-object p1, p1, Lk3/i01;->h:Ljava/lang/Object;
 
     check-cast p1, Ljava/lang/String;
 
@@ -778,7 +778,7 @@
     :goto_6
     iget-object v0, v2, Lt8/b;->f:Ls8/a;
 
-    iget-object v1, p0, Lq8/d;->j:Ljava/lang/String;
+    iget-object v1, p0, Lq8/d;->k:Ljava/lang/String;
 
     check-cast v0, Le8/c;
 
@@ -792,7 +792,7 @@
     move-result-object v3
 
     .line 35
-    invoke-static {v3}, Lcom/google/android/play/core/appupdate/g;->b(Ljava/lang/String;)Z
+    invoke-static {v3}, La5/b0;->d(Ljava/lang/String;)Z
 
     move-result v5
 
@@ -853,9 +853,9 @@
     if-eqz p1, :cond_c
 
     .line 44
-    iget-object v4, p0, Lq8/d;->g:Ljava/lang/Long;
+    iget-object v4, p0, Lq8/d;->h:Ljava/lang/Long;
 
-    iget-object v5, p0, Lq8/d;->j:Ljava/lang/String;
+    iget-object v5, p0, Lq8/d;->k:Ljava/lang/String;
 
     const/4 v8, 0x0
 
@@ -906,7 +906,7 @@
     move-result-object v0
 
     .line 48
-    invoke-static {p1, v0, p0, p0}, Landroidx/savedstate/d;->h(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {p1, v0, p0, p0}, Le5/i;->j(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Throwable;[Lz9/a;)V
 
     :goto_8
     return-void
@@ -945,7 +945,7 @@
     sput-object v0, Lla/c;->a:Lla/e;
 
     .line 6
-    sget-object v0, Lcom/helpshift/util/u;->c:Le7/g;
+    sget-object v0, Lcom/helpshift/util/t;->c:Le7/g;
 
     .line 7
     iget-object v0, v0, Le7/g;->a:Lj8/b;
@@ -1058,12 +1058,12 @@
     invoke-static {v3}, Lla/e0;->d(Landroid/content/Context;)V
 
     .line 2
-    new-instance v3, La7/a;
+    new-instance v3, Ldb/a;
 
-    invoke-direct {v3}, La7/a;-><init>()V
+    invoke-direct {v3}, Ldb/a;-><init>()V
 
     .line 3
-    sput-object v3, Ld4/i;->h:La7/a;
+    sput-object v3, Lcom/google/android/gms/ads/r;->a:Ldb/a;
 
     .line 4
     sget-object v3, Lib/c;->b:Ljava/util/HashMap;
@@ -1233,7 +1233,7 @@
 
     const-string v8, "enableInAppNotification"
 
-    invoke-static {v3, v8, v7, v6}, Lcom/helpshift/util/b0;->c(Ljava/util/Map;Ljava/lang/String;Ljava/lang/Class;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {v3, v8, v7, v6}, Lcom/helpshift/util/a0;->b(Ljava/util/Map;Ljava/lang/String;Ljava/lang/Class;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v8
 
@@ -1242,7 +1242,7 @@
     const-string v9, "enableDefaultFallbackLanguage"
 
     .line 30
-    invoke-static {v3, v9, v7, v6}, Lcom/helpshift/util/b0;->c(Ljava/util/Map;Ljava/lang/String;Ljava/lang/Class;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {v3, v9, v7, v6}, Lcom/helpshift/util/a0;->b(Ljava/util/Map;Ljava/lang/String;Ljava/lang/Class;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v9
 
@@ -1251,7 +1251,7 @@
     const-string v10, "enableInboxPolling"
 
     .line 31
-    invoke-static {v3, v10, v7, v6}, Lcom/helpshift/util/b0;->c(Ljava/util/Map;Ljava/lang/String;Ljava/lang/Class;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {v3, v10, v7, v6}, Lcom/helpshift/util/a0;->b(Ljava/util/Map;Ljava/lang/String;Ljava/lang/Class;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v10
 
@@ -1260,7 +1260,7 @@
     const-string v11, "enableNotificationMute"
 
     .line 32
-    invoke-static {v3, v11, v7, v6}, Lcom/helpshift/util/b0;->c(Ljava/util/Map;Ljava/lang/String;Ljava/lang/Class;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {v3, v11, v7, v6}, Lcom/helpshift/util/a0;->b(Ljava/util/Map;Ljava/lang/String;Ljava/lang/Class;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v11
 
@@ -1269,7 +1269,7 @@
     const-string v12, "disableHelpshiftBranding"
 
     .line 33
-    invoke-static {v3, v12, v7, v6}, Lcom/helpshift/util/b0;->c(Ljava/util/Map;Ljava/lang/String;Ljava/lang/Class;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {v3, v12, v7, v6}, Lcom/helpshift/util/a0;->b(Ljava/util/Map;Ljava/lang/String;Ljava/lang/Class;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v12
 
@@ -1278,7 +1278,7 @@
     const-string v13, "disableErrorLogging"
 
     .line 34
-    invoke-static {v3, v13, v7, v6}, Lcom/helpshift/util/b0;->c(Ljava/util/Map;Ljava/lang/String;Ljava/lang/Class;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {v3, v13, v7, v6}, Lcom/helpshift/util/a0;->b(Ljava/util/Map;Ljava/lang/String;Ljava/lang/Class;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v13
 
@@ -1287,7 +1287,7 @@
     const-string v14, "disableAppLaunchEvent"
 
     .line 35
-    invoke-static {v3, v14, v7, v6}, Lcom/helpshift/util/b0;->c(Ljava/util/Map;Ljava/lang/String;Ljava/lang/Class;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {v3, v14, v7, v6}, Lcom/helpshift/util/a0;->b(Ljava/util/Map;Ljava/lang/String;Ljava/lang/Class;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v14
 
@@ -1296,7 +1296,7 @@
     const-string v15, "disableAnimations"
 
     .line 36
-    invoke-static {v3, v15, v7, v6}, Lcom/helpshift/util/b0;->c(Ljava/util/Map;Ljava/lang/String;Ljava/lang/Class;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {v3, v15, v7, v6}, Lcom/helpshift/util/a0;->b(Ljava/util/Map;Ljava/lang/String;Ljava/lang/Class;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v7
 
@@ -1305,7 +1305,7 @@
     const-string v15, "notificationIcon"
 
     .line 37
-    invoke-static {v3, v15, v2, v6}, Lcom/helpshift/util/b0;->c(Ljava/util/Map;Ljava/lang/String;Ljava/lang/Class;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {v3, v15, v2, v6}, Lcom/helpshift/util/a0;->b(Ljava/util/Map;Ljava/lang/String;Ljava/lang/Class;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v15
 
@@ -1314,7 +1314,7 @@
     const-string v5, "largeNotificationIcon"
 
     .line 38
-    invoke-static {v3, v5, v2, v6}, Lcom/helpshift/util/b0;->c(Ljava/util/Map;Ljava/lang/String;Ljava/lang/Class;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {v3, v5, v2, v6}, Lcom/helpshift/util/a0;->b(Ljava/util/Map;Ljava/lang/String;Ljava/lang/Class;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v5
 
@@ -1323,7 +1323,7 @@
     const-string v1, "notificationSound"
 
     .line 39
-    invoke-static {v3, v1, v2, v6}, Lcom/helpshift/util/b0;->c(Ljava/util/Map;Ljava/lang/String;Ljava/lang/Class;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {v3, v1, v2, v6}, Lcom/helpshift/util/a0;->b(Ljava/util/Map;Ljava/lang/String;Ljava/lang/Class;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v1
 
@@ -1334,7 +1334,7 @@
     const-string v5, "font"
 
     .line 40
-    invoke-static {v3, v5, v0, v6}, Lcom/helpshift/util/b0;->c(Ljava/util/Map;Ljava/lang/String;Ljava/lang/Class;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {v3, v5, v0, v6}, Lcom/helpshift/util/a0;->b(Ljava/util/Map;Ljava/lang/String;Ljava/lang/Class;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v5
 
@@ -1345,7 +1345,7 @@
     const-string v15, "sdkType"
 
     .line 41
-    invoke-static {v3, v15, v0, v6}, Lcom/helpshift/util/b0;->c(Ljava/util/Map;Ljava/lang/String;Ljava/lang/Class;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {v3, v15, v0, v6}, Lcom/helpshift/util/a0;->b(Ljava/util/Map;Ljava/lang/String;Ljava/lang/Class;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v15
 
@@ -1356,7 +1356,7 @@
     const-string v15, "pluginVersion"
 
     .line 42
-    invoke-static {v3, v15, v0, v6}, Lcom/helpshift/util/b0;->c(Ljava/util/Map;Ljava/lang/String;Ljava/lang/Class;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {v3, v15, v0, v6}, Lcom/helpshift/util/a0;->b(Ljava/util/Map;Ljava/lang/String;Ljava/lang/Class;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v15
 
@@ -1367,7 +1367,7 @@
     const-string v15, "runtimeVersion"
 
     .line 43
-    invoke-static {v3, v15, v0, v6}, Lcom/helpshift/util/b0;->c(Ljava/util/Map;Ljava/lang/String;Ljava/lang/Class;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {v3, v15, v0, v6}, Lcom/helpshift/util/a0;->b(Ljava/util/Map;Ljava/lang/String;Ljava/lang/Class;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v15
 
@@ -1378,7 +1378,7 @@
     const-string v15, "supportNotificationChannelId"
 
     .line 44
-    invoke-static {v3, v15, v0, v6}, Lcom/helpshift/util/b0;->c(Ljava/util/Map;Ljava/lang/String;Ljava/lang/Class;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {v3, v15, v0, v6}, Lcom/helpshift/util/a0;->b(Ljava/util/Map;Ljava/lang/String;Ljava/lang/Class;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -1392,10 +1392,10 @@
     move-object/from16 v20, v1
 
     .line 46
-    sget-object v1, Lcom/helpshift/util/u;->d:Le8/j;
+    sget-object v1, Lcom/helpshift/util/t;->d:Le8/j;
 
     .line 47
-    sget-object v0, Lcom/helpshift/util/u;->c:Le7/g;
+    sget-object v0, Lcom/helpshift/util/t;->c:Le7/g;
 
     move-object/from16 v21, v14
 
@@ -1425,7 +1425,7 @@
     move-result-object v11
 
     .line 51
-    invoke-static {v11}, Lcom/google/android/play/core/appupdate/g;->b(Ljava/lang/String;)Z
+    invoke-static {v11}, La5/b0;->d(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -1440,17 +1440,17 @@
     if-nez v0, :cond_37
 
     .line 52
-    new-instance v12, Lcom/helpshift/util/i0;
+    new-instance v12, Lcom/helpshift/util/g0;
 
     const-string v0, "0"
 
-    invoke-direct {v12, v0}, Lcom/helpshift/util/i0;-><init>(Ljava/lang/String;)V
+    invoke-direct {v12, v0}, Lcom/helpshift/util/g0;-><init>(Ljava/lang/String;)V
 
     .line 53
     :try_start_0
-    new-instance v0, Lcom/helpshift/util/i0;
+    new-instance v0, Lcom/helpshift/util/g0;
 
-    invoke-direct {v0, v11}, Lcom/helpshift/util/i0;-><init>(Ljava/lang/String;)V
+    invoke-direct {v0, v11}, Lcom/helpshift/util/g0;-><init>(Ljava/lang/String;)V
     :try_end_0
     .catch Ljava/lang/NumberFormatException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -1487,33 +1487,33 @@
     const/4 v12, 0x0
 
     .line 55
-    invoke-static {v10, v0, v12, v12}, Landroidx/savedstate/d;->h(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v10, v0, v12, v12}, Le5/i;->j(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Throwable;[Lz9/a;)V
 
     move-object/from16 v12, v23
 
     .line 56
     :goto_0
-    new-instance v0, Lcom/helpshift/util/i0;
+    new-instance v0, Lcom/helpshift/util/g0;
 
     const-string v10, "7.11.0"
 
-    invoke-direct {v0, v10}, Lcom/helpshift/util/i0;-><init>(Ljava/lang/String;)V
+    invoke-direct {v0, v10}, Lcom/helpshift/util/g0;-><init>(Ljava/lang/String;)V
 
     .line 57
-    invoke-virtual {v12, v0}, Lcom/helpshift/util/i0;->f(Lcom/helpshift/util/i0;)Z
+    invoke-virtual {v12, v0}, Lcom/helpshift/util/g0;->f(Lcom/helpshift/util/g0;)Z
 
     move-result v10
 
     if-eqz v10, :cond_35
 
     .line 58
-    new-instance v0, Lcom/helpshift/util/i0;
+    new-instance v0, Lcom/helpshift/util/g0;
 
     const-string v10, "7.0.0"
 
-    invoke-direct {v0, v10}, Lcom/helpshift/util/i0;-><init>(Ljava/lang/String;)V
+    invoke-direct {v0, v10}, Lcom/helpshift/util/g0;-><init>(Ljava/lang/String;)V
 
-    invoke-virtual {v12, v0}, Lcom/helpshift/util/i0;->f(Lcom/helpshift/util/i0;)Z
+    invoke-virtual {v12, v0}, Lcom/helpshift/util/g0;->f(Lcom/helpshift/util/g0;)Z
 
     move-result v0
 
@@ -1523,7 +1523,7 @@
     new-instance v10, Lhb/d;
 
     .line 60
-    sget-object v24, Lcom/helpshift/util/u;->c:Le7/g;
+    sget-object v24, Lcom/helpshift/util/t;->c:Le7/g;
 
     .line 61
     iget-object v0, v1, Le8/j;->f:Lk3/s9;
@@ -1535,7 +1535,7 @@
 
     .line 63
     :try_start_1
-    sget-object v25, Lh7/a;->g:Lh7/a;
+    sget-object v25, Lh7/a;->h:Lh7/a;
 
     if-nez v25, :cond_4
 
@@ -1546,7 +1546,7 @@
 
     invoke-direct {v9, v6}, Lh7/a;-><init>(Landroid/content/Context;)V
 
-    sput-object v9, Lh7/a;->g:Lh7/a;
+    sput-object v9, Lh7/a;->h:Lh7/a;
 
     goto :goto_1
 
@@ -1555,7 +1555,7 @@
 
     .line 65
     :goto_1
-    sget-object v27, Lh7/a;->g:Lh7/a;
+    sget-object v27, Lh7/a;->h:Lh7/a;
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
@@ -1584,16 +1584,16 @@
 
     move-object/from16 v31, v12
 
-    invoke-direct/range {v23 .. v31}, Lhb/d;-><init>(Le7/a;Lla/p;Lk3/s9;Lh7/a;Le8/a;Lv0/f;Lg7/a;Lcom/helpshift/util/i0;)V
+    invoke-direct/range {v23 .. v31}, Lhb/d;-><init>(Le7/a;Lla/p;Lk3/s9;Lh7/a;Le8/a;Lv0/f;Lg7/a;Lcom/helpshift/util/g0;)V
 
     .line 69
-    sget-object v0, Lcom/helpshift/util/u;->c:Le7/g;
+    sget-object v0, Lcom/helpshift/util/t;->c:Le7/g;
 
     .line 70
     iget-object v0, v0, Le7/g;->a:Lj8/b;
 
     .line 71
-    sget-object v9, Lcom/helpshift/util/u;->d:Le8/j;
+    sget-object v9, Lcom/helpshift/util/t;->d:Le8/j;
 
     .line 72
     invoke-virtual {v9}, Le8/j;->a()Lf8/d;
@@ -1606,7 +1606,7 @@
     move-object/from16 v24, v8
 
     .line 74
-    sget-object v8, Lcom/helpshift/util/u;->d:Le8/j;
+    sget-object v8, Lcom/helpshift/util/t;->d:Le8/j;
 
     .line 75
     iget-object v8, v8, Le8/j;->f:Lk3/s9;
@@ -1614,15 +1614,15 @@
     move-object/from16 v25, v15
 
     .line 76
-    new-instance v15, Lcom/helpshift/util/i0;
+    new-instance v15, Lcom/helpshift/util/g0;
 
     move-object/from16 v26, v7
 
     const-string v7, "7.0.0"
 
-    invoke-direct {v15, v7}, Lcom/helpshift/util/i0;-><init>(Ljava/lang/String;)V
+    invoke-direct {v15, v7}, Lcom/helpshift/util/g0;-><init>(Ljava/lang/String;)V
 
-    invoke-virtual {v12, v15}, Lcom/helpshift/util/i0;->e(Lcom/helpshift/util/i0;)Z
+    invoke-virtual {v12, v15}, Lcom/helpshift/util/g0;->e(Lcom/helpshift/util/g0;)Z
 
     move-result v7
 
@@ -1647,14 +1647,14 @@
 
     .line 77
     :cond_6
-    new-instance v7, Lcom/helpshift/util/i0;
+    new-instance v7, Lcom/helpshift/util/g0;
 
     const-string v15, "4.9.1"
 
-    invoke-direct {v7, v15}, Lcom/helpshift/util/i0;-><init>(Ljava/lang/String;)V
+    invoke-direct {v7, v15}, Lcom/helpshift/util/g0;-><init>(Ljava/lang/String;)V
 
     .line 78
-    invoke-virtual {v12, v7}, Lcom/helpshift/util/i0;->c(Lcom/helpshift/util/i0;)I
+    invoke-virtual {v12, v7}, Lcom/helpshift/util/g0;->c(Lcom/helpshift/util/g0;)I
 
     move-result v7
 
@@ -1710,14 +1710,14 @@
     iput-object v7, v10, Lhb/d;->j:Ljava/lang/String;
 
     .line 82
-    invoke-static {v7}, Lcom/google/android/play/core/appupdate/g;->b(Ljava/lang/String;)Z
+    invoke-static {v7}, La5/b0;->d(Ljava/lang/String;)Z
 
     move-result v7
 
     if-eqz v7, :cond_9
 
     .line 83
-    sget-object v7, Lcom/helpshift/util/u;->b:Landroid/content/Context;
+    sget-object v7, Lcom/helpshift/util/t;->b:Landroid/content/Context;
 
     .line 84
     invoke-virtual {v7}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
@@ -1786,7 +1786,7 @@
     move-result-object v2
 
     .line 89
-    invoke-static {v2}, Lbc/a;->d(Ljava/util/List;)Z
+    invoke-static {v2}, Lt5/a;->g(Ljava/util/List;)Z
 
     move-result v3
 
@@ -1822,7 +1822,7 @@
 
     invoke-direct {v7}, Ljava/lang/StringBuilder;-><init>()V
 
-    iget-object v15, v3, Lg7/d;->h:Ljava/lang/String;
+    iget-object v15, v3, Lg7/d;->i:Ljava/lang/String;
 
     invoke-virtual {v7, v15}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -1830,7 +1830,7 @@
 
     invoke-virtual {v7, v15}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v15, v3, Lg7/d;->k:Ljava/lang/String;
+    iget-object v15, v3, Lg7/d;->l:Ljava/lang/String;
 
     invoke-virtual {v7, v15}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -1841,33 +1841,33 @@
     .line 93
     new-instance v7, Lg7/d;
 
-    iget-object v15, v3, Lg7/d;->f:Ljava/lang/Long;
+    iget-object v15, v3, Lg7/d;->g:Ljava/lang/Long;
 
     move-object/from16 v29, v2
 
-    iget-object v2, v3, Lg7/d;->h:Ljava/lang/String;
+    iget-object v2, v3, Lg7/d;->i:Ljava/lang/String;
 
     move-object/from16 v30, v4
 
-    iget-object v4, v3, Lg7/d;->g:Ljava/lang/String;
+    iget-object v4, v3, Lg7/d;->h:Ljava/lang/String;
 
     move-object/from16 v31, v5
 
-    iget-object v5, v3, Lg7/d;->i:Ljava/lang/String;
+    iget-object v5, v3, Lg7/d;->j:Ljava/lang/String;
 
     move-object/from16 v47, v11
 
-    iget-object v11, v3, Lg7/d;->j:Ljava/lang/String;
+    iget-object v11, v3, Lg7/d;->k:Ljava/lang/String;
 
     move-object/from16 v48, v12
 
-    iget-object v12, v3, Lg7/d;->l:Ljava/lang/String;
+    iget-object v12, v3, Lg7/d;->m:Ljava/lang/String;
 
     move-object/from16 v49, v6
 
-    iget-object v6, v3, Lg7/d;->m:Ljava/lang/String;
+    iget-object v6, v3, Lg7/d;->n:Ljava/lang/String;
 
-    iget-boolean v3, v3, Lg7/d;->n:Z
+    iget-boolean v3, v3, Lg7/d;->o:Z
 
     move-object/from16 v37, v7
 
@@ -1944,7 +1944,7 @@
     iput-object v2, v10, Lhb/d;->j:Ljava/lang/String;
 
     .line 97
-    invoke-static {v2}, Lcom/google/android/play/core/appupdate/g;->b(Ljava/lang/String;)Z
+    invoke-static {v2}, La5/b0;->d(Ljava/lang/String;)Z
 
     move-result v2
 
@@ -2248,9 +2248,9 @@
     .line 130
     move-object/from16 v0, v23
 
-    check-cast v0, Lk3/v8;
+    check-cast v0, Lk3/w8;
 
-    invoke-virtual {v0}, Lk3/v8;->a()F
+    invoke-virtual {v0}, Lk3/w8;->a()F
 
     move-result v0
 
@@ -2273,7 +2273,7 @@
 
     .line 133
     :try_start_2
-    invoke-static {v0}, Lcom/google/android/play/core/appupdate/g;->b(Ljava/lang/String;)Z
+    invoke-static {v0}, La5/b0;->d(Ljava/lang/String;)Z
 
     move-result v14
 
@@ -2405,7 +2405,7 @@
     const/4 v15, 0x0
 
     .line 142
-    invoke-static {v8, v14, v0, v15}, Landroidx/savedstate/d;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v8, v14, v0, v15}, Le5/i;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
 
     move-object/from16 v15, v40
 
@@ -2417,7 +2417,7 @@
     move-object/from16 v38, v15
 
     .line 143
-    iget-object v0, v9, Lv0/u;->f:Ljava/lang/Object;
+    iget-object v0, v9, Lv0/u;->g:Ljava/lang/Object;
 
     check-cast v0, Lk3/s9;
 
@@ -2464,7 +2464,7 @@
     iget-object v0, v10, Lhb/d;->e:Lh7/a;
 
     .line 151
-    iget-object v0, v0, Lh7/a;->f:Ljava/lang/Object;
+    iget-object v0, v0, Lh7/a;->g:Ljava/lang/Object;
 
     check-cast v0, Lm9/a;
 
@@ -2488,7 +2488,7 @@
     invoke-virtual {v0}, Le8/b;->b()V
 
     .line 154
-    sget-object v0, Lcom/helpshift/util/u;->c:Le7/g;
+    sget-object v0, Lcom/helpshift/util/t;->c:Le7/g;
 
     .line 155
     invoke-virtual {v0}, Le7/g;->h()V
@@ -2497,7 +2497,7 @@
     iget-object v0, v1, Le8/j;->f:Lk3/s9;
 
     .line 157
-    iget-object v0, v0, Lk3/s9;->f:Ljava/lang/Object;
+    iget-object v0, v0, Lk3/s9;->g:Ljava/lang/Object;
 
     check-cast v0, Lka/c;
 
@@ -2575,7 +2575,7 @@
     move-result-object v0
 
     .line 171
-    sget-object v2, Lcom/helpshift/util/u;->c:Le7/g;
+    sget-object v2, Lcom/helpshift/util/t;->c:Le7/g;
 
     .line 172
     invoke-virtual {v2, v0}, Le7/g;->i(Lk8/a;)V
@@ -2583,17 +2583,17 @@
     .line 173
     move-object/from16 v0, v23
 
-    check-cast v0, Lk3/v8;
+    check-cast v0, Lk3/w8;
 
     move/from16 v2, v39
 
-    invoke-virtual {v0, v2}, Lk3/v8;->h(F)V
+    invoke-virtual {v0, v2}, Lk3/w8;->h(F)V
 
     .line 174
     invoke-virtual {v9, v15}, Lv0/u;->d(Ljava/util/HashMap;)V
 
     .line 175
-    invoke-static/range {v38 .. v38}, Lcom/google/android/play/core/appupdate/g;->b(Ljava/lang/String;)Z
+    invoke-static/range {v38 .. v38}, La5/b0;->d(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -2867,7 +2867,7 @@
     const/4 v3, 0x0
 
     .line 204
-    invoke-static {v2, v0, v3, v3}, Landroidx/savedstate/d;->h(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v2, v0, v3, v3}, Le5/i;->j(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Throwable;[Lz9/a;)V
 
     :cond_21
     :goto_15
@@ -2907,15 +2907,15 @@
     move-object/from16 v25, v15
 
     .line 206
-    new-instance v0, Lcom/helpshift/util/i0;
+    new-instance v0, Lcom/helpshift/util/g0;
 
     const-string v3, "7.0.0"
 
-    invoke-direct {v0, v3}, Lcom/helpshift/util/i0;-><init>(Ljava/lang/String;)V
+    invoke-direct {v0, v3}, Lcom/helpshift/util/g0;-><init>(Ljava/lang/String;)V
 
     move-object/from16 v3, v48
 
-    invoke-virtual {v3, v0}, Lcom/helpshift/util/i0;->e(Lcom/helpshift/util/i0;)Z
+    invoke-virtual {v3, v0}, Lcom/helpshift/util/g0;->e(Lcom/helpshift/util/g0;)Z
 
     move-result v0
 
@@ -2984,7 +2984,7 @@
 
     .line 216
     :cond_24
-    iget-object v7, v7, Li7/c;->f:Ljava/lang/Long;
+    iget-object v7, v7, Li7/c;->g:Ljava/lang/Long;
 
     .line 217
     invoke-virtual {v7}, Ljava/lang/Long;->longValue()J
@@ -3002,7 +3002,7 @@
     check-cast v7, Ljava/util/List;
 
     .line 220
-    invoke-static {v7}, Lbc/a;->d(Ljava/util/List;)Z
+    invoke-static {v7}, Lt5/a;->g(Ljava/util/List;)Z
 
     move-result v8
 
@@ -3031,15 +3031,15 @@
     check-cast v8, Lq8/d;
 
     .line 222
-    iget-object v9, v8, Lq8/d;->i:Ljava/lang/String;
+    iget-object v9, v8, Lq8/d;->j:Ljava/lang/String;
 
-    invoke-static {v9}, Lcom/google/android/play/core/appupdate/g;->b(Ljava/lang/String;)Z
+    invoke-static {v9}, La5/b0;->d(Ljava/lang/String;)Z
 
     move-result v9
 
     if-nez v9, :cond_27
 
-    iget-object v9, v8, Lq8/d;->i:Ljava/lang/String;
+    iget-object v9, v8, Lq8/d;->j:Ljava/lang/String;
 
     .line 223
     invoke-virtual {v6, v9}, Ljava/util/HashSet;->contains(Ljava/lang/Object;)Z
@@ -3057,15 +3057,15 @@
 
     .line 224
     :goto_18
-    iget-object v10, v8, Lq8/d;->h:Ljava/lang/String;
+    iget-object v10, v8, Lq8/d;->i:Ljava/lang/String;
 
-    invoke-static {v10}, Lcom/google/android/play/core/appupdate/g;->b(Ljava/lang/String;)Z
+    invoke-static {v10}, La5/b0;->d(Ljava/lang/String;)Z
 
     move-result v10
 
     if-nez v10, :cond_28
 
-    iget-object v10, v8, Lq8/d;->h:Ljava/lang/String;
+    iget-object v10, v8, Lq8/d;->i:Ljava/lang/String;
 
     .line 225
     invoke-virtual {v5, v10}, Ljava/util/HashSet;->contains(Ljava/lang/Object;)Z
@@ -3090,31 +3090,31 @@
 
     .line 226
     :cond_29
-    iget-object v9, v8, Lq8/d;->i:Ljava/lang/String;
+    iget-object v9, v8, Lq8/d;->j:Ljava/lang/String;
 
-    invoke-static {v9}, Lcom/google/android/play/core/appupdate/g;->b(Ljava/lang/String;)Z
+    invoke-static {v9}, La5/b0;->d(Ljava/lang/String;)Z
 
     move-result v9
 
     if-nez v9, :cond_2a
 
     .line 227
-    iget-object v9, v8, Lq8/d;->i:Ljava/lang/String;
+    iget-object v9, v8, Lq8/d;->j:Ljava/lang/String;
 
     invoke-virtual {v6, v9}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
     .line 228
     :cond_2a
-    iget-object v9, v8, Lq8/d;->h:Ljava/lang/String;
+    iget-object v9, v8, Lq8/d;->i:Ljava/lang/String;
 
-    invoke-static {v9}, Lcom/google/android/play/core/appupdate/g;->b(Ljava/lang/String;)Z
+    invoke-static {v9}, La5/b0;->d(Ljava/lang/String;)Z
 
     move-result v9
 
     if-nez v9, :cond_26
 
     .line 229
-    iget-object v8, v8, Lq8/d;->h:Ljava/lang/String;
+    iget-object v8, v8, Lq8/d;->i:Ljava/lang/String;
 
     invoke-virtual {v5, v8}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
@@ -3126,33 +3126,33 @@
     invoke-virtual {v4}, Le8/b;->b()V
 
     .line 231
-    sget-object v0, Lcom/helpshift/util/u;->c:Le7/g;
+    sget-object v0, Lcom/helpshift/util/t;->c:Le7/g;
 
     .line 232
     invoke-virtual {v0}, Le7/g;->h()V
 
     .line 233
     :cond_2c
-    new-instance v0, Lcom/helpshift/util/i0;
+    new-instance v0, Lcom/helpshift/util/g0;
 
     const-string v4, "7.0.0"
 
-    invoke-direct {v0, v4}, Lcom/helpshift/util/i0;-><init>(Ljava/lang/String;)V
+    invoke-direct {v0, v4}, Lcom/helpshift/util/g0;-><init>(Ljava/lang/String;)V
 
-    invoke-virtual {v3, v0}, Lcom/helpshift/util/i0;->e(Lcom/helpshift/util/i0;)Z
+    invoke-virtual {v3, v0}, Lcom/helpshift/util/g0;->e(Lcom/helpshift/util/g0;)Z
 
     move-result v0
 
     if-eqz v0, :cond_33
 
-    new-instance v0, Lcom/helpshift/util/i0;
+    new-instance v0, Lcom/helpshift/util/g0;
 
     const-string v4, "7.1.0"
 
-    invoke-direct {v0, v4}, Lcom/helpshift/util/i0;-><init>(Ljava/lang/String;)V
+    invoke-direct {v0, v4}, Lcom/helpshift/util/g0;-><init>(Ljava/lang/String;)V
 
     .line 234
-    invoke-virtual {v3, v0}, Lcom/helpshift/util/i0;->c(Lcom/helpshift/util/i0;)I
+    invoke-virtual {v3, v0}, Lcom/helpshift/util/g0;->c(Lcom/helpshift/util/g0;)I
 
     move-result v0
 
@@ -3190,7 +3190,7 @@
     move-result-object v5
 
     .line 238
-    invoke-static {v5}, Lbc/a;->d(Ljava/util/List;)Z
+    invoke-static {v5}, Lt5/a;->g(Ljava/util/List;)Z
 
     move-result v6
 
@@ -3221,7 +3221,7 @@
     check-cast v6, Li7/c;
 
     .line 240
-    iget-object v7, v6, Li7/c;->f:Ljava/lang/Long;
+    iget-object v7, v6, Li7/c;->g:Ljava/lang/Long;
 
     .line 241
     invoke-virtual {v7}, Ljava/lang/Long;->longValue()J
@@ -3239,7 +3239,7 @@
     check-cast v7, Ljava/util/List;
 
     .line 244
-    invoke-static {v7}, Lbc/a;->d(Ljava/util/List;)Z
+    invoke-static {v7}, Lt5/a;->g(Ljava/util/List;)Z
 
     move-result v8
 
@@ -3268,25 +3268,25 @@
     check-cast v8, Lq8/d;
 
     .line 246
-    iget-object v9, v8, Lq8/d;->l:Lu8/e;
+    iget-object v9, v8, Lq8/d;->m:Lu8/e;
 
-    sget-object v10, Lu8/e;->l:Lu8/e;
+    sget-object v10, Lu8/e;->m:Lu8/e;
 
     if-ne v9, v10, :cond_32
 
-    iget-boolean v9, v8, Lq8/d;->w:Z
+    iget-boolean v9, v8, Lq8/d;->x:Z
 
     if-nez v9, :cond_32
 
     .line 247
-    iget-object v9, v6, Li7/c;->f:Ljava/lang/Long;
+    iget-object v9, v6, Li7/c;->g:Ljava/lang/Long;
 
     .line 248
     invoke-virtual {v9}, Ljava/lang/Long;->longValue()J
 
     move-result-wide v9
 
-    iput-wide v9, v8, Lq8/d;->x:J
+    iput-wide v9, v8, Lq8/d;->y:J
 
     .line 249
     iget-object v9, v2, La8/f;->s:Lt8/e;
@@ -3304,7 +3304,7 @@
     const/4 v10, 0x1
 
     .line 252
-    iput-boolean v10, v8, Lq8/d;->w:Z
+    iput-boolean v10, v8, Lq8/d;->x:Z
 
     .line 253
     iget-object v9, v9, Ln8/c;->d:Le8/b;
@@ -3320,13 +3320,13 @@
     .line 254
     :cond_34
     :goto_20
-    new-instance v0, Lcom/helpshift/util/i0;
+    new-instance v0, Lcom/helpshift/util/g0;
 
     const-string v2, "7.9.0"
 
-    invoke-direct {v0, v2}, Lcom/helpshift/util/i0;-><init>(Ljava/lang/String;)V
+    invoke-direct {v0, v2}, Lcom/helpshift/util/g0;-><init>(Ljava/lang/String;)V
 
-    invoke-virtual {v3, v0}, Lcom/helpshift/util/i0;->f(Lcom/helpshift/util/i0;)Z
+    invoke-virtual {v3, v0}, Lcom/helpshift/util/g0;->f(Lcom/helpshift/util/g0;)Z
 
     move-result v0
 
@@ -3337,11 +3337,11 @@
 
     move-result-object v0
 
-    check-cast v0, Lk3/v8;
+    check-cast v0, Lk3/w8;
 
     const-string v1, "/config/"
 
-    invoke-virtual {v0, v1}, Lk3/v8;->f(Ljava/lang/String;)V
+    invoke-virtual {v0, v1}, Lk3/w8;->f(Ljava/lang/String;)V
 
     goto/16 :goto_22
 
@@ -3369,7 +3369,7 @@
     const/4 v4, -0x1
 
     .line 256
-    invoke-virtual {v3, v0}, Lcom/helpshift/util/i0;->c(Lcom/helpshift/util/i0;)I
+    invoke-virtual {v3, v0}, Lcom/helpshift/util/g0;->c(Lcom/helpshift/util/g0;)I
 
     move-result v0
 
@@ -3388,7 +3388,7 @@
     if-eqz v10, :cond_38
 
     .line 257
-    sget-object v0, Lcom/helpshift/util/u;->d:Le8/j;
+    sget-object v0, Lcom/helpshift/util/t;->d:Le8/j;
 
     .line 258
     iget-object v0, v0, Le8/j;->f:Lk3/s9;
@@ -3404,7 +3404,7 @@
     iget-object v3, v1, Le8/j;->f:Lk3/s9;
 
     .line 261
-    iget-object v3, v3, Lk3/s9;->f:Ljava/lang/Object;
+    iget-object v3, v3, Lk3/s9;->g:Ljava/lang/Object;
 
     check-cast v3, Lka/c;
 
@@ -3441,7 +3441,7 @@
     invoke-virtual {v1, v3}, Lh9/a;->c(Landroid/database/sqlite/SQLiteDatabase;)Z
 
     .line 268
-    invoke-static {v2}, Lcom/google/android/play/core/appupdate/g;->b(Ljava/lang/String;)Z
+    invoke-static {v2}, La5/b0;->d(Ljava/lang/String;)Z
 
     move-result v1
 
@@ -3527,7 +3527,7 @@
     const/4 v6, 0x0
 
     .line 276
-    invoke-static {v3, v0, v2, v6}, Lcom/helpshift/util/b0;->c(Ljava/util/Map;Ljava/lang/String;Ljava/lang/Class;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {v3, v0, v2, v6}, Lcom/helpshift/util/a0;->b(Ljava/util/Map;Ljava/lang/String;Ljava/lang/Class;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -3590,7 +3590,7 @@
     .line 283
     sget-object v0, Lla/e0;->c:Landroid/content/Context;
 
-    invoke-static {v0}, Lcom/android/billingclient/api/c0;->a(Landroid/content/Context;)Ljava/lang/String;
+    invoke-static {v0}, Lcom/android/billingclient/api/b0;->a(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -3626,7 +3626,7 @@
     move-result v2
 
     .line 289
-    sget-object v3, Lcom/helpshift/util/u;->c:Le7/g;
+    sget-object v3, Lcom/helpshift/util/t;->c:Le7/g;
 
     .line 290
     iget-object v3, v3, Le7/g;->a:Lj8/b;
@@ -3692,7 +3692,7 @@
     invoke-virtual {v1, v2}, Lla/p;->h(I)V
 
     .line 298
-    sget-object v1, Lcom/helpshift/util/u;->c:Le7/g;
+    sget-object v1, Lcom/helpshift/util/t;->c:Le7/g;
 
     .line 299
     iget-object v1, v1, Le7/g;->a:Lj8/b;
@@ -3710,7 +3710,7 @@
 
     .line 303
     :cond_3e
-    sget-object v0, Lcom/helpshift/util/u;->c:Le7/g;
+    sget-object v0, Lcom/helpshift/util/t;->c:Le7/g;
 
     .line 304
     iget-object v0, v0, Le7/g;->a:Lj8/b;
@@ -3871,7 +3871,7 @@
     invoke-virtual {v1, v0}, Landroid/content/Context;->deleteDatabase(Ljava/lang/String;)Z
 
     .line 327
-    sget-object v0, Lcom/helpshift/util/u;->c:Le7/g;
+    sget-object v0, Lcom/helpshift/util/t;->c:Le7/g;
 
     .line 328
     invoke-virtual {v0}, Le7/g;->e()Lt8/b;
@@ -3902,7 +3902,7 @@
     invoke-virtual {v0}, Lha/a;->b()V
 
     .line 333
-    sget-object v0, Lcom/helpshift/util/u;->c:Le7/g;
+    sget-object v0, Lcom/helpshift/util/t;->c:Le7/g;
 
     .line 334
     iget-object v0, v0, Le7/g;->g:Li7/e;
@@ -3921,10 +3921,10 @@
     const/4 v2, 0x0
 
     .line 336
-    invoke-static {v0, v1, v2, v2}, Landroidx/savedstate/d;->h(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v0, v1, v2, v2}, Le5/i;->j(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Throwable;[Lz9/a;)V
 
     .line 337
-    sget-object v0, Lcom/helpshift/util/u;->c:Le7/g;
+    sget-object v0, Lcom/helpshift/util/t;->c:Le7/g;
 
     .line 338
     iget-object v0, v0, Le7/g;->f:La8/f;
@@ -3989,7 +3989,7 @@
     if-nez v0, :cond_4
 
     .line 2
-    sget-object v0, Lcom/helpshift/util/u;->c:Le7/g;
+    sget-object v0, Lcom/helpshift/util/t;->c:Le7/g;
 
     .line 3
     iget-object v0, v0, Le7/g;->e:Lba/a;
@@ -4020,7 +4020,7 @@
     iget-object v2, v0, Lba/a;->e:Lv0/u;
 
     .line 8
-    iget-object v2, v2, Lv0/u;->f:Ljava/lang/Object;
+    iget-object v2, v2, Lv0/u;->g:Ljava/lang/Object;
 
     check-cast v2, Lk3/s9;
 
@@ -4096,7 +4096,7 @@
     iget-object p0, v0, Lba/a;->e:Lv0/u;
 
     .line 16
-    iget-object p0, p0, Lv0/u;->f:Ljava/lang/Object;
+    iget-object p0, p0, Lv0/u;->g:Ljava/lang/Object;
 
     check-cast p0, Lk3/s9;
 
@@ -4129,7 +4129,7 @@
     .locals 4
 
     .line 1
-    sget-object v0, Lcom/helpshift/util/u;->c:Le7/g;
+    sget-object v0, Lcom/helpshift/util/t;->c:Le7/g;
 
     .line 2
     monitor-enter v0
@@ -4166,7 +4166,7 @@
     .locals 4
 
     .line 1
-    sget-object v0, Lcom/helpshift/util/u;->c:Le7/g;
+    sget-object v0, Lcom/helpshift/util/t;->c:Le7/g;
 
     .line 2
     monitor-enter v0
@@ -4232,25 +4232,25 @@
     move-result-object v2
 
     .line 5
-    invoke-static {p1, p2, p3}, Lcom/helpshift/util/e0;->b(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p1, p2, p3}, Lcom/helpshift/util/d0;->b(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v5
 
     .line 6
-    invoke-static {v4}, Lcom/google/android/play/core/appupdate/g;->b(Ljava/lang/String;)Z
+    invoke-static {v4}, La5/b0;->d(Ljava/lang/String;)Z
 
     move-result v4
 
     if-eqz v4, :cond_0
 
     .line 7
-    invoke-static {v0, v5}, Lcom/helpshift/util/e0;->c(Landroid/content/SharedPreferences;Ljava/lang/String;)V
+    invoke-static {v0, v5}, Lcom/helpshift/util/d0;->c(Landroid/content/SharedPreferences;Ljava/lang/String;)V
 
     goto :goto_0
 
     .line 8
     :cond_0
-    invoke-static {v2}, Lcom/google/android/play/core/appupdate/g;->b(Ljava/lang/String;)Z
+    invoke-static {v2}, La5/b0;->d(Ljava/lang/String;)Z
 
     move-result v4
 
@@ -4266,11 +4266,11 @@
     if-nez v2, :cond_1
 
     .line 10
-    invoke-static {p0, v1}, Lcom/helpshift/util/e0;->a(Landroid/content/Context;Ljava/util/Map;)V
+    invoke-static {p0, v1}, Lcom/helpshift/util/d0;->a(Landroid/content/Context;Ljava/util/Map;)V
 
     .line 11
     :cond_1
-    invoke-static {v0, v5}, Lcom/helpshift/util/e0;->c(Landroid/content/SharedPreferences;Ljava/lang/String;)V
+    invoke-static {v0, v5}, Lcom/helpshift/util/d0;->c(Landroid/content/SharedPreferences;Ljava/lang/String;)V
 
     goto :goto_0
 
@@ -4283,10 +4283,10 @@
     if-nez v2, :cond_3
 
     .line 13
-    invoke-static {p0, v1}, Lcom/helpshift/util/e0;->a(Landroid/content/Context;Ljava/util/Map;)V
+    invoke-static {p0, v1}, Lcom/helpshift/util/d0;->a(Landroid/content/Context;Ljava/util/Map;)V
 
     .line 14
-    invoke-static {v0, v5}, Lcom/helpshift/util/e0;->c(Landroid/content/SharedPreferences;Ljava/lang/String;)V
+    invoke-static {v0, v5}, Lcom/helpshift/util/d0;->c(Landroid/content/SharedPreferences;Ljava/lang/String;)V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -4299,18 +4299,18 @@
     move-result-object v0
 
     .line 16
-    sget-object v1, Lcom/helpshift/util/u;->a:Ljava/lang/Object;
+    sget-object v1, Lcom/helpshift/util/t;->a:Ljava/lang/Object;
 
     monitor-enter v1
 
     .line 17
     :try_start_1
-    sget-object v2, Lcom/helpshift/util/u;->b:Landroid/content/Context;
+    sget-object v2, Lcom/helpshift/util/t;->b:Landroid/content/Context;
 
     if-nez v2, :cond_4
 
     .line 18
-    sput-object v0, Lcom/helpshift/util/u;->b:Landroid/content/Context;
+    sput-object v0, Lcom/helpshift/util/t;->b:Landroid/content/Context;
 
     .line 19
     :cond_4
@@ -4319,33 +4319,33 @@
     .catchall {:try_start_1 .. :try_end_1} :catchall_2
 
     .line 20
-    sget-object v0, Lcom/helpshift/util/u;->d:Le8/j;
+    sget-object v0, Lcom/helpshift/util/t;->d:Le8/j;
 
     if-nez v0, :cond_5
 
     .line 21
     new-instance v0, Le8/j;
 
-    sget-object v1, Lcom/helpshift/util/u;->b:Landroid/content/Context;
+    sget-object v1, Lcom/helpshift/util/t;->b:Landroid/content/Context;
 
     invoke-direct {v0, v1, p1, p2, p3}, Le8/j;-><init>(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
-    sput-object v0, Lcom/helpshift/util/u;->d:Le8/j;
+    sput-object v0, Lcom/helpshift/util/t;->d:Le8/j;
 
     .line 22
     :cond_5
-    sget-object p1, Lcom/helpshift/util/u;->c:Le7/g;
+    sget-object p1, Lcom/helpshift/util/t;->c:Le7/g;
 
     if-nez p1, :cond_6
 
     .line 23
     new-instance p1, Le7/g;
 
-    sget-object p2, Lcom/helpshift/util/u;->d:Le8/j;
+    sget-object p2, Lcom/helpshift/util/t;->d:Le8/j;
 
     invoke-direct {p1, p2}, Le7/g;-><init>(Le8/s;)V
 
-    sput-object p1, Lcom/helpshift/util/u;->c:Le7/g;
+    sput-object p1, Lcom/helpshift/util/t;->c:Le7/g;
 
     :cond_6
     if-eqz p4, :cond_7
@@ -4423,7 +4423,7 @@
     iget-object p0, p2, Ls7/c;->b:Ls7/a;
 
     .line 34
-    iput-object p2, p0, Ls7/a;->g:Ls7/d;
+    iput-object p2, p0, Ls7/a;->h:Ls7/d;
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_1
 
@@ -4489,7 +4489,7 @@
     if-eqz p1, :cond_4
 
     .line 2
-    sget-object p0, Lcom/helpshift/util/u;->c:Le7/g;
+    sget-object p0, Lcom/helpshift/util/t;->c:Le7/g;
 
     .line 3
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -4593,9 +4593,9 @@
     if-eqz v2, :cond_2
 
     .line 20
-    iget-object v4, v1, Li7/c;->f:Ljava/lang/Long;
+    iget-object v4, v1, Li7/c;->g:Ljava/lang/Long;
 
-    iget-object v2, v2, Li7/c;->f:Ljava/lang/Long;
+    iget-object v2, v2, Li7/c;->g:Ljava/lang/Long;
 
     .line 21
     invoke-virtual {v4, v2}, Ljava/lang/Long;->equals(Ljava/lang/Object;)Z
@@ -4647,7 +4647,7 @@
     const/4 v0, 0x0
 
     .line 28
-    invoke-static {p0, p1, v0, v0}, Landroidx/savedstate/d;->h(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {p0, p1, v0, v0}, Le5/i;->j(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Throwable;[Lz9/a;)V
 
     :goto_1
     return-void
@@ -4686,7 +4686,7 @@
     .locals 1
 
     .line 1
-    sget-object v0, Lcom/helpshift/util/u;->c:Le7/g;
+    sget-object v0, Lcom/helpshift/util/t;->c:Le7/g;
 
     .line 2
     iget-object v0, v0, Le7/g;->f:La8/f;
@@ -4714,7 +4714,7 @@
     invoke-direct {v0, p0}, Lla/e0$b;-><init>(Lla/r;)V
 
     .line 2
-    sget-object p0, Lcom/helpshift/util/u;->c:Le7/g;
+    sget-object p0, Lcom/helpshift/util/t;->c:Le7/g;
 
     .line 3
     iget-object p0, p0, Le7/g;->e:Lba/a;
@@ -4729,7 +4729,7 @@
     .locals 5
 
     .line 1
-    sget-object v0, Lcom/helpshift/util/u;->c:Le7/g;
+    sget-object v0, Lcom/helpshift/util/t;->c:Le7/g;
 
     .line 2
     iget-object v0, v0, Le7/g;->a:Lj8/b;
@@ -4742,7 +4742,7 @@
     move-result-object v2
 
     .line 4
-    invoke-static {v2}, Lcom/google/android/play/core/appupdate/g;->b(Ljava/lang/String;)Z
+    invoke-static {v2}, La5/b0;->d(Ljava/lang/String;)Z
 
     move-result v3
 
@@ -4754,7 +4754,7 @@
 
     .line 5
     :cond_0
-    invoke-static {p0}, Lcom/google/android/play/core/appupdate/g;->b(Ljava/lang/String;)Z
+    invoke-static {p0}, La5/b0;->d(Ljava/lang/String;)Z
 
     move-result v3
 
@@ -4784,11 +4784,11 @@
 
     move-result-object v2
 
-    check-cast v2, Lk3/v8;
+    check-cast v2, Lk3/w8;
 
     const-string v3, "/config/"
 
-    invoke-virtual {v2, v3, v4}, Lk3/v8;->g(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v2, v3, v4}, Lk3/w8;->g(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 8
     :cond_2
@@ -4823,7 +4823,7 @@
     new-array v1, p1, [Lz9/a;
 
     .line 2
-    invoke-static {v0}, Lz9/b;->a(Ljava/util/Map;)Lz9/a;
+    invoke-static {v0}, Lid/h;->b(Ljava/util/Map;)Lz9/a;
 
     move-result-object v2
 
@@ -4838,7 +4838,7 @@
     const/4 v5, 0x0
 
     .line 3
-    invoke-static {v2, v4, v5, v1}, Landroidx/savedstate/d;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v2, v4, v5, v1}, Le5/i;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
 
     .line 4
     new-instance v1, Landroid/content/Intent;
@@ -4938,7 +4938,7 @@
     const-string p2, "Show FAQ section : Publish Id : "
 
     .line 3
-    invoke-static {p2, p1}, Lcom/google/android/gms/ads/e;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p2, p1}, Lf/g;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p2
 
@@ -4949,7 +4949,7 @@
     const/4 v4, 0x0
 
     .line 4
-    invoke-static {v0}, Lz9/b;->a(Ljava/util/Map;)Lz9/a;
+    invoke-static {v0}, Lid/h;->b(Ljava/util/Map;)Lz9/a;
 
     move-result-object v5
 
@@ -4958,7 +4958,7 @@
     const-string v4, "Helpshift_SupportInter"
 
     .line 5
-    invoke-static {v4, p2, v1, v3}, Landroidx/savedstate/d;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v4, p2, v1, v3}, Le5/i;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
 
     .line 6
     new-instance p2, Landroid/content/Intent;
@@ -5038,7 +5038,7 @@
     new-array v1, p1, [Lz9/a;
 
     .line 2
-    invoke-static {v0}, Lz9/b;->a(Ljava/util/Map;)Lz9/a;
+    invoke-static {v0}, Lid/h;->b(Ljava/util/Map;)Lz9/a;
 
     move-result-object v2
 
@@ -5053,7 +5053,7 @@
     const/4 v5, 0x0
 
     .line 3
-    invoke-static {v2, v4, v5, v1}, Landroidx/savedstate/d;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v2, v4, v5, v1}, Le5/i;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
 
     .line 4
     new-instance v1, Landroid/content/Intent;
@@ -5132,7 +5132,7 @@
     const-string p2, "Show single FAQ : Publish Id : "
 
     .line 3
-    invoke-static {p2, p1}, Lcom/google/android/gms/ads/e;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p2, p1}, Lf/g;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p2
 
@@ -5143,7 +5143,7 @@
     const/4 v4, 0x0
 
     .line 4
-    invoke-static {v0}, Lz9/b;->a(Ljava/util/Map;)Lz9/a;
+    invoke-static {v0}, Lid/h;->b(Ljava/util/Map;)Lz9/a;
 
     move-result-object v5
 
@@ -5152,7 +5152,7 @@
     const-string v4, "Helpshift_SupportInter"
 
     .line 5
-    invoke-static {v4, p2, v1, v3}, Landroidx/savedstate/d;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v4, p2, v1, v3}, Le5/i;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
 
     .line 6
     new-instance p2, Landroid/content/Intent;

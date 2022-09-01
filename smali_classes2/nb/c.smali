@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field public final f:Landroid/graphics/Typeface;
+.field public final g:Landroid/graphics/Typeface;
 
 
 # direct methods
@@ -15,7 +15,7 @@
     invoke-direct {p0}, Landroid/text/style/MetricAffectingSpan;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lnb/c;->f:Landroid/graphics/Typeface;
+    iput-object p1, p0, Lnb/c;->g:Landroid/graphics/Typeface;
 
     return-void
 .end method
@@ -25,7 +25,7 @@
 .method public final updateDrawState(Landroid/text/TextPaint;)V
     .locals 1
 
-    iget-object v0, p0, Lnb/c;->f:Landroid/graphics/Typeface;
+    iget-object v0, p0, Lnb/c;->g:Landroid/graphics/Typeface;
 
     invoke-virtual {p1, v0}, Landroid/graphics/Paint;->setTypeface(Landroid/graphics/Typeface;)Landroid/graphics/Typeface;
 
@@ -35,7 +35,7 @@
 .method public final updateMeasureState(Landroid/text/TextPaint;)V
     .locals 1
 
-    iget-object v0, p0, Lnb/c;->f:Landroid/graphics/Typeface;
+    iget-object v0, p0, Lnb/c;->g:Landroid/graphics/Typeface;
 
     invoke-virtual {p1, v0}, Landroid/graphics/Paint;->setTypeface(Landroid/graphics/Typeface;)Landroid/graphics/Typeface;
 

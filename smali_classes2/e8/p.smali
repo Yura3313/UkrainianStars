@@ -51,9 +51,9 @@
     iput-object v0, p0, Le8/p;->b:Ljava/util/HashMap;
 
     .line 3
-    new-instance v0, Lv3/g1;
+    new-instance v0, Lv3/f1;
 
-    invoke-direct {v0, p2}, Lv3/g1;-><init>(Ljava/lang/Object;)V
+    invoke-direct {v0, p2}, Lv3/f1;-><init>(Ljava/lang/Object;)V
 
     .line 4
     new-instance v7, Ljava/util/concurrent/LinkedBlockingQueue;
@@ -84,7 +84,7 @@
     .line 6
     new-instance v1, Lm7/d;
 
-    invoke-direct {v1, p1, v0, p2}, Lm7/d;-><init>(Landroid/content/Context;Lv3/g1;Ljava/util/concurrent/ThreadPoolExecutor;)V
+    invoke-direct {v1, p1, v0, p2}, Lm7/d;-><init>(Landroid/content/Context;Lv3/f1;Ljava/util/concurrent/ThreadPoolExecutor;)V
 
     iput-object v1, p0, Le8/p;->a:Lm7/d;
 

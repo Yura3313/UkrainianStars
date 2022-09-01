@@ -41,7 +41,7 @@
     invoke-direct {v1}, Landroid/os/Handler;-><init>()V
 
     .line 3
-    invoke-static {}, Lcom/helpshift/util/u;->b()Z
+    invoke-static {}, Lcom/helpshift/util/t;->b()Z
 
     move-result v2
 

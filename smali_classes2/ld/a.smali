@@ -3,7 +3,7 @@
 .source "IngameFriendsFragment.kt"
 
 # interfaces
-.implements Lae/b2;
+.implements Lae/a2;
 
 
 # instance fields
@@ -35,12 +35,12 @@
 
 
 # virtual methods
-.method public final a(Lae/b2;)Z
+.method public final a(Lae/a2;)Z
     .locals 3
 
     const-string v0, "other"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     instance-of v0, p1, Lld/a;
@@ -81,12 +81,12 @@
     return v0
 .end method
 
-.method public final d(Lae/b2;)Z
+.method public final d(Lae/a2;)Z
     .locals 1
 
     const-string v0, "other"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     instance-of p1, p1, Lld/a;
 
@@ -173,7 +173,7 @@
     const-string v2, ")"
 
     .line 3
-    invoke-static {v0, v1, v2}, Landroidx/appcompat/app/j;->b(Ljava/lang/StringBuilder;ZLjava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, v1, v2}, Landroidx/appcompat/app/j;->a(Ljava/lang/StringBuilder;ZLjava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 

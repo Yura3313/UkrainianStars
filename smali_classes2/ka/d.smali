@@ -24,9 +24,9 @@
     .line 3
     new-instance v0, Ll9/a;
 
-    new-instance v1, Lk3/od;
+    new-instance v1, Lk3/pd;
 
-    invoke-direct {v1}, Lk3/od;-><init>()V
+    invoke-direct {v1}, Lk3/pd;-><init>()V
 
     invoke-direct {v0, p1, v1}, Ll9/a;-><init>(Landroid/content/Context;Lh9/b;)V
 
@@ -68,7 +68,7 @@
     const-string v2, "Error in closing DB"
 
     .line 3
-    invoke-static {v1, v2, v0}, Landroidx/savedstate/d;->g(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v1, v2, v0}, Le5/i;->i(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
     .line 4
     :cond_0
@@ -77,9 +77,9 @@
 
     iget-object v1, p0, Lka/d;->b:Landroid/content/Context;
 
-    new-instance v2, Lk3/od;
+    new-instance v2, Lk3/pd;
 
-    invoke-direct {v2}, Lk3/od;-><init>()V
+    invoke-direct {v2}, Lk3/pd;-><init>()V
 
     invoke-direct {v0, v1, v2}, Ll9/a;-><init>(Landroid/content/Context;Lh9/b;)V
 

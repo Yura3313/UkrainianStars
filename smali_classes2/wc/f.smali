@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field public final synthetic f:Lwc/e;
+.field public final synthetic g:Lwc/e;
 
 
 # direct methods
@@ -18,7 +18,7 @@
         }
     .end annotation
 
-    iput-object p1, p0, Lwc/f;->f:Lwc/e;
+    iput-object p1, p0, Lwc/f;->g:Lwc/e;
 
     invoke-direct {p0, p2, p3}, Landroid/app/Dialog;-><init>(Landroid/content/Context;I)V
 
@@ -30,7 +30,7 @@
 .method public final onBackPressed()V
     .locals 1
 
-    iget-object v0, p0, Lwc/f;->f:Lwc/e;
+    iget-object v0, p0, Lwc/f;->g:Lwc/e;
 
     invoke-virtual {v0}, Lwc/e;->V0()V
 

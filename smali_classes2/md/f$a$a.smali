@@ -1,5 +1,5 @@
 .class public final Lmd/f$a$a;
-.super Lse/h;
+.super Lse/i;
 .source "LoginEnterContactDetailsPageFragment.kt"
 
 # interfaces
@@ -18,7 +18,7 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/a<",
         "Lmd/m;",
         ">;"
@@ -27,7 +27,7 @@
 
 
 # static fields
-.field public static final f:Lmd/f$a$a;
+.field public static final g:Lmd/f$a$a;
 
 
 # direct methods
@@ -38,7 +38,7 @@
 
     invoke-direct {v0}, Lmd/f$a$a;-><init>()V
 
-    sput-object v0, Lmd/f$a$a;->f:Lmd/f$a$a;
+    sput-object v0, Lmd/f$a$a;->g:Lmd/f$a$a;
 
     return-void
 .end method
@@ -48,7 +48,7 @@
 
     const/4 v0, 0x0
 
-    invoke-direct {p0, v0}, Lse/h;-><init>(I)V
+    invoke-direct {p0, v0}, Lse/i;-><init>(I)V
 
     return-void
 .end method

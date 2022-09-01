@@ -1,5 +1,5 @@
 .class public final Lpd/b$d;
-.super Lse/h;
+.super Lse/i;
 .source "ConnectedGamesFragment.kt"
 
 # interfaces
@@ -18,28 +18,28 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/l<",
-        "Lbe/l0;",
-        "Lie/h;",
+        "Lbe/n0;",
+        "Lie/i;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic f:Lpd/b;
+.field public final synthetic g:Lpd/b;
 
 
 # direct methods
 .method public constructor <init>(Lpd/b;)V
     .locals 0
 
-    iput-object p1, p0, Lpd/b$d;->f:Lpd/b;
+    iput-object p1, p0, Lpd/b$d;->g:Lpd/b;
 
     const/4 p1, 0x1
 
-    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -50,17 +50,17 @@
     .locals 6
 
     .line 1
-    check-cast p1, Lbe/l0;
+    check-cast p1, Lbe/n0;
 
     .line 2
-    iget-object v0, p0, Lpd/b$d;->f:Lpd/b;
+    iget-object v0, p0, Lpd/b$d;->g:Lpd/b;
 
     const/4 v1, 0x0
 
     if-eqz p1, :cond_4
 
     .line 3
-    iget-object p1, p1, Lbe/l0;->a:Lae/m;
+    iget-object p1, p1, Lbe/n0;->a:Lae/m;
 
     if-eqz p1, :cond_4
 
@@ -69,12 +69,12 @@
 
     move-result-object p1
 
-    check-cast p1, Lvc/z;
+    check-cast p1, Lvc/x;
 
     if-eqz p1, :cond_4
 
     .line 5
-    iget-object p1, p1, Lvc/z;->b:Ljava/util/List;
+    iget-object p1, p1, Lvc/x;->b:Ljava/util/List;
 
     if-eqz p1, :cond_4
 
@@ -102,13 +102,13 @@
 
     move-object v4, v3
 
-    check-cast v4, Lvc/x;
+    check-cast v4, Lvc/v;
 
     .line 8
-    iget-object v4, v4, Lvc/x;->c:Lvc/x$b;
+    iget-object v4, v4, Lvc/v;->c:Lvc/v$b;
 
     .line 9
-    sget-object v5, Lvc/x$b;->g:Lvc/x$b;
+    sget-object v5, Lvc/v$b;->h:Lvc/v$b;
 
     if-ne v4, v5, :cond_1
 
@@ -149,13 +149,13 @@
     move-result-object v3
 
     .line 12
-    check-cast v3, Lvc/x;
+    check-cast v3, Lvc/v;
 
     .line 13
-    iget-object v3, v3, Lvc/x;->d:Ljava/util/List;
+    iget-object v3, v3, Lvc/v;->d:Ljava/util/List;
 
     .line 14
-    invoke-static {p1, v3}, Lje/h;->u(Ljava/util/Collection;Ljava/lang/Iterable;)Z
+    invoke-static {p1, v3}, Lje/h;->p(Ljava/util/Collection;Ljava/lang/Iterable;)Z
 
     goto :goto_2
 
@@ -166,7 +166,7 @@
     invoke-direct {v2, p1}, Lpd/e;-><init>(Ljava/lang/Iterable;)V
 
     .line 16
-    invoke-static {v2}, Lj1/b;->g(Lje/o;)Ljava/util/Map;
+    invoke-static {v2}, Lcom/google/android/material/internal/c;->f(Lje/o;)Ljava/util/Map;
 
     move-result-object p1
 
@@ -177,7 +177,7 @@
 
     .line 17
     :goto_3
-    iput-object p1, v0, Lpd/b;->e0:Ljava/util/Map;
+    iput-object p1, v0, Lpd/b;->f0:Ljava/util/Map;
 
     .line 18
     sget p1, Lcom/supercell/id/R$id;->gamesList:I
@@ -214,11 +214,11 @@
 
     if-eqz v1, :cond_7
 
-    invoke-virtual {v1}, Lae/c2;->m()V
+    invoke-virtual {v1}, Lae/b2;->m()V
 
     .line 19
     :cond_7
-    sget-object p1, Lie/h;->a:Lie/h;
+    sget-object p1, Lie/i;->a:Lie/i;
 
     return-object p1
 .end method

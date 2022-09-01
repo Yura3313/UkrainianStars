@@ -22,7 +22,7 @@
         }
     .end annotation
 
-    sget-object p1, Lk3/ad;->b:Lk3/qj0;
+    sget-object p1, Lk3/ad;->b:Lk3/sj0;
 
     new-instance v0, Lk3/ih;
 
@@ -147,7 +147,7 @@
         }
     .end annotation
 
-    sget-object p1, Lk3/ad;->b:Lk3/qj0;
+    sget-object p1, Lk3/ad;->b:Lk3/sj0;
 
     new-instance v0, Lk3/ih;
 

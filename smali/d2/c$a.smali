@@ -61,7 +61,7 @@
 
     iget-object v5, p0, Ld2/c$a;->d:Ljava/lang/String;
 
-    sget-object v6, La4/a;->f:La4/a;
+    sget-object v6, La4/a;->g:La4/a;
 
     const/4 v3, 0x0
 

@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lp4/d;->b(Landroid/content/Context;Lb2/a0;)V
+    value = Lp4/d;->b(Landroid/content/Context;Lb2/z;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,18 +15,18 @@
 
 
 # instance fields
-.field public final synthetic a:Lb2/a0;
+.field public final synthetic a:Lb2/z;
 
 .field public final synthetic b:Lp4/d;
 
 
 # direct methods
-.method public constructor <init>(Lp4/d;Lb2/a0;)V
+.method public constructor <init>(Lp4/d;Lb2/z;)V
     .locals 0
 
     iput-object p1, p0, Lp4/d$a;->b:Lp4/d;
 
-    iput-object p2, p0, Lp4/d$a;->a:Lb2/a0;
+    iput-object p2, p0, Lp4/d$a;->a:Lb2/z;
 
     invoke-direct {p0}, Lw/e$a;-><init>()V
 
@@ -47,9 +47,9 @@
     iput-boolean v1, v0, Lp4/d;->k:Z
 
     .line 3
-    iget-object v0, p0, Lp4/d$a;->a:Lb2/a0;
+    iget-object v0, p0, Lp4/d$a;->a:Lb2/z;
 
-    invoke-virtual {v0, p1}, Lb2/a0;->a(I)V
+    invoke-virtual {v0, p1}, Lb2/z;->a(I)V
 
     return-void
 .end method
@@ -78,7 +78,7 @@
     iput-boolean v0, p1, Lp4/d;->k:Z
 
     .line 5
-    iget-object v0, p0, Lp4/d$a;->a:Lb2/a0;
+    iget-object v0, p0, Lp4/d$a;->a:Lb2/z;
 
     .line 6
     iget-object p1, p1, Lp4/d;->l:Landroid/graphics/Typeface;
@@ -86,7 +86,7 @@
     const/4 v1, 0x0
 
     .line 7
-    invoke-virtual {v0, p1, v1}, Lb2/a0;->d(Landroid/graphics/Typeface;Z)V
+    invoke-virtual {v0, p1, v1}, Lb2/z;->d(Landroid/graphics/Typeface;Z)V
 
     return-void
 .end method

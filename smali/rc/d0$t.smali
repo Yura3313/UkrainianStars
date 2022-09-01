@@ -1,5 +1,5 @@
 .class public final synthetic Lrc/d0$t;
-.super Lse/g;
+.super Lse/h;
 .source "SocialApiClient.kt"
 
 # interfaces
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lrc/d0;->n(Ljava/lang/String;)Lze/e0;
+    value = Lrc/d0;->n(Ljava/lang/String;)Lze/f0;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,17 +18,17 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/g;",
+        "Lse/h;",
         "Lre/l<",
         "Lorg/json/JSONObject;",
-        "Lvc/t;",
+        "Lvc/s;",
         ">;"
     }
 .end annotation
 
 
 # static fields
-.field public static final g:Lrc/d0$t;
+.field public static final h:Lrc/d0$t;
 
 
 # direct methods
@@ -39,7 +39,7 @@
 
     invoke-direct {v0}, Lrc/d0$t;-><init>()V
 
-    sput-object v0, Lrc/d0$t;->g:Lrc/d0$t;
+    sput-object v0, Lrc/d0$t;->h:Lrc/d0$t;
 
     return-void
 .end method
@@ -49,7 +49,7 @@
 
     const/4 v0, 0x1
 
-    invoke-direct {p0, v0}, Lse/g;-><init>(I)V
+    invoke-direct {p0, v0}, Lse/h;-><init>(I)V
 
     return-void
 .end method
@@ -67,9 +67,9 @@
 .method public final getOwner()Lwe/d;
     .locals 1
 
-    const-class v0, Lvc/t;
+    const-class v0, Lvc/s;
 
-    invoke-static {v0}, Lse/r;->a(Ljava/lang/Class;)Lwe/c;
+    invoke-static {v0}, Lse/s;->a(Ljava/lang/Class;)Lwe/c;
 
     move-result-object v0
 
@@ -93,12 +93,12 @@
     const-string v0, "p1"
 
     .line 2
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    new-instance v0, Lvc/t;
+    new-instance v0, Lvc/s;
 
     .line 3
-    invoke-direct {v0, p1}, Lvc/t;-><init>(Lorg/json/JSONObject;)V
+    invoke-direct {v0, p1}, Lvc/s;-><init>(Lorg/json/JSONObject;)V
 
     return-object v0
 .end method

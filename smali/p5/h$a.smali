@@ -99,7 +99,7 @@
     check-cast v0, Ljava/security/interfaces/RSAPublicKey;
 
     .line 7
-    new-instance v1, Lr5/f0;
+    new-instance v1, Lr5/h0;
 
     .line 8
     invoke-virtual {p1}, Ln5/k1;->y()Ln5/i1;
@@ -114,7 +114,7 @@
 
     move-result p1
 
-    invoke-direct {v1, v0, p1}, Lr5/f0;-><init>(Ljava/security/interfaces/RSAPublicKey;I)V
+    invoke-direct {v1, v0, p1}, Lr5/h0;-><init>(Ljava/security/interfaces/RSAPublicKey;I)V
 
     return-object v1
 .end method

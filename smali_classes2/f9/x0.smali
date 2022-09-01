@@ -57,12 +57,12 @@
     .line 4
     iget-object v0, p0, Lf9/x0;->c:Lf9/t0;
 
-    iget-object v1, v0, Lf9/t0;->d:Lk3/p;
+    iget-object v1, v0, Lf9/t0;->d:Lk3/n;
 
     iget-object v0, v0, Lf9/t0;->e:Lqb/n;
 
     .line 5
-    iget-object v1, v1, Lk3/p;->g:Ljava/lang/Object;
+    iget-object v1, v1, Lk3/n;->h:Ljava/lang/Object;
 
     check-cast v1, Lt8/b;
 

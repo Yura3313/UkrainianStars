@@ -1,63 +1,64 @@
-.class public final Lb2/z;
-.super Lb2/q;
+.class public abstract Lb2/z;
+.super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-base@@17.5.0"
 
-
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "<O::",
-        "Lcom/google/android/gms/common/api/a$d;",
-        ">",
-        "Lb2/q;"
-    }
-.end annotation
-
-
-# instance fields
-.field public final b:Lcom/google/android/gms/common/api/b;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lcom/google/android/gms/common/api/b<",
-            "TO;>;"
-        }
-    .end annotation
-
-    .annotation runtime Lorg/checkerframework/checker/initialization/qual/NotOnlyInitialized;
-    .end annotation
-.end field
+# interfaces
+.implements Lc2/e;
 
 
 # direct methods
-.method public constructor <init>(Lcom/google/android/gms/common/api/b;)V
+.method public synthetic constructor <init>()V
     .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lcom/google/android/gms/common/api/b<",
-            "TO;>;)V"
-        }
-    .end annotation
 
-    .line 1
-    invoke-direct {p0}, Lb2/q;-><init>()V
-
-    .line 2
-    iput-object p1, p0, Lb2/z;->b:Lcom/google/android/gms/common/api/b;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a()Landroid/os/Looper;
+.method public abstract B(Ljava/lang/Object;)Lb2/z;
+.end method
+
+.method public abstract a(I)V
+.end method
+
+.method public abstract d(Landroid/graphics/Typeface;Z)V
+.end method
+
+.method public abstract j(I)Z
+.end method
+
+.method public abstract l()V
+.end method
+
+.method public q(Ljava/lang/Iterable;)Lb2/z;
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lb2/z;->b:Lcom/google/android/gms/common/api/b;
+    invoke-interface {p1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+
+    move-result-object p1
+
+    :goto_0
+    invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v0
 
     .line 2
-    iget-object v0, v0, Lcom/google/android/gms/common/api/b;->f:Landroid/os/Looper;
+    invoke-virtual {p0, v0}, Lb2/z;->B(Ljava/lang/Object;)Lb2/z;
 
-    return-object v0
+    goto :goto_0
+
+    :cond_0
+    return-object p0
+.end method
+
+.method public abstract x(Ljava/lang/Throwable;Ljava/lang/Throwable;)V
 .end method

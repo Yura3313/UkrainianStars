@@ -1,138 +1,104 @@
-.class public final Lv3/h4;
+.class public interface abstract Lv3/h4;
 .super Ljava/lang/Object;
 
-# interfaces
-.implements Lv3/r3;
 
-
-# instance fields
-.field public final a:Lv3/t3;
-
-.field public final b:Ljava/lang/String;
-
-.field public final c:[Ljava/lang/Object;
-
-.field public final d:I
-
-
-# direct methods
-.method public constructor <init>(Lv3/t3;Ljava/lang/String;[Ljava/lang/Object;)V
-    .locals 3
-
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 2
-    iput-object p1, p0, Lv3/h4;->a:Lv3/t3;
-
-    .line 3
-    iput-object p2, p0, Lv3/h4;->b:Ljava/lang/String;
-
-    .line 4
-    iput-object p3, p0, Lv3/h4;->c:[Ljava/lang/Object;
-
-    const/4 p1, 0x0
-
-    .line 5
-    invoke-virtual {p2, p1}, Ljava/lang/String;->charAt(I)C
-
-    move-result p1
-
-    const p3, 0xd800
-
-    if-ge p1, p3, :cond_0
-
-    .line 6
-    iput p1, p0, Lv3/h4;->d:I
-
-    return-void
-
-    :cond_0
-    and-int/lit16 p1, p1, 0x1fff
-
-    const/4 v0, 0x1
-
-    const/16 v1, 0xd
-
-    :goto_0
-    add-int/lit8 v2, v0, 0x1
-
-    .line 7
-    invoke-virtual {p2, v0}, Ljava/lang/String;->charAt(I)C
-
-    move-result v0
-
-    if-lt v0, p3, :cond_1
-
-    and-int/lit16 v0, v0, 0x1fff
-
-    shl-int/2addr v0, v1
-
-    or-int/2addr p1, v0
-
-    add-int/lit8 v1, v1, 0xd
-
-    move v0, v2
-
-    goto :goto_0
-
-    :cond_1
-    shl-int p2, v0, v1
-
-    or-int/2addr p1, p2
-
-    .line 8
-    iput p1, p0, Lv3/h4;->d:I
-
-    return-void
-.end method
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<T:",
+        "Ljava/lang/Object;",
+        ">",
+        "Ljava/lang/Object;"
+    }
+.end annotation
 
 
 # virtual methods
-.method public final a()Lv3/t3;
-    .locals 1
-
-    iget-object v0, p0, Lv3/h4;->a:Lv3/t3;
-
-    return-object v0
+.method public abstract a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;TT;)Z"
+        }
+    .end annotation
 .end method
 
-.method public final b()Z
-    .locals 2
-
-    iget v0, p0, Lv3/h4;->d:I
-
-    const/4 v1, 0x2
-
-    and-int/2addr v0, v1
-
-    if-ne v0, v1, :cond_0
-
-    const/4 v0, 0x1
-
-    return v0
-
-    :cond_0
-    const/4 v0, 0x0
-
-    return v0
+.method public abstract b(Ljava/lang/Object;)I
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;)I"
+        }
+    .end annotation
 .end method
 
-.method public final c()I
-    .locals 2
+.method public abstract c(Ljava/lang/Object;)Z
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;)Z"
+        }
+    .end annotation
+.end method
 
-    iget v0, p0, Lv3/h4;->d:I
+.method public abstract d()Ljava/lang/Object;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()TT;"
+        }
+    .end annotation
+.end method
 
-    const/4 v1, 0x1
+.method public abstract e(Ljava/lang/Object;Lv3/c2;Lv3/g2;)V
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;",
+            "Lv3/c2;",
+            "Lv3/g2;",
+            ")V"
+        }
+    .end annotation
 
-    and-int/2addr v0, v1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+.end method
 
-    if-ne v0, v1, :cond_0
+.method public abstract f(Ljava/lang/Object;Ljava/lang/Object;)V
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;TT;)V"
+        }
+    .end annotation
+.end method
 
-    return v1
+.method public abstract g(Ljava/lang/Object;)I
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;)I"
+        }
+    .end annotation
+.end method
 
-    :cond_0
-    const/4 v0, 0x2
+.method public abstract h(Ljava/lang/Object;Lv3/m5;)V
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;",
+            "Lv3/m5;",
+            ")V"
+        }
+    .end annotation
 
-    return v0
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+.end method
+
+.method public abstract i(Ljava/lang/Object;)V
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;)V"
+        }
+    .end annotation
 .end method

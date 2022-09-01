@@ -19,7 +19,7 @@
 
     const/4 v3, 0x0
 
-    invoke-direct {v0, v1, v2, v3}, Lae/k;-><init>(IILse/e;)V
+    invoke-direct {v0, v1, v2, v3}, Lae/k;-><init>(IILse/f;)V
 
     sput-object v0, Lpd/g;->a:Lae/k;
 

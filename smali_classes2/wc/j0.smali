@@ -7,18 +7,18 @@
 
 
 # instance fields
-.field public final synthetic f:Landroid/animation/ValueAnimator;
+.field public final synthetic g:Landroid/animation/ValueAnimator;
 
-.field public final synthetic g:Lwc/m0;
+.field public final synthetic h:Lwc/m0;
 
 
 # direct methods
 .method public constructor <init>(Landroid/animation/ValueAnimator;Lwc/m0;)V
     .locals 0
 
-    iput-object p1, p0, Lwc/j0;->f:Landroid/animation/ValueAnimator;
+    iput-object p1, p0, Lwc/j0;->g:Landroid/animation/ValueAnimator;
 
-    iput-object p2, p0, Lwc/j0;->g:Lwc/m0;
+    iput-object p2, p0, Lwc/j0;->h:Lwc/m0;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -31,11 +31,11 @@
     .locals 4
 
     .line 1
-    iget-object p1, p0, Lwc/j0;->g:Lwc/m0;
+    iget-object p1, p0, Lwc/j0;->h:Lwc/m0;
 
-    iget-object p1, p1, Lwc/m0;->f:Lcom/supercell/id/ui/MainActivity;
+    iget-object p1, p1, Lwc/m0;->g:Lcom/supercell/id/ui/MainActivity;
 
-    sget-object v0, Lcom/supercell/id/ui/MainActivity;->s:Ljava/lang/ref/WeakReference;
+    sget-object v0, Lcom/supercell/id/ui/MainActivity;->t:Ljava/lang/ref/WeakReference;
 
     .line 2
     invoke-virtual {p1}, Lcom/supercell/id/ui/MainActivity;->p()Ljava/lang/Integer;
@@ -50,9 +50,9 @@
     move-result p1
 
     .line 4
-    iget-object v0, p0, Lwc/j0;->g:Lwc/m0;
+    iget-object v0, p0, Lwc/j0;->h:Lwc/m0;
 
-    iget-object v0, v0, Lwc/m0;->f:Lcom/supercell/id/ui/MainActivity;
+    iget-object v0, v0, Lwc/m0;->g:Lcom/supercell/id/ui/MainActivity;
 
     sget v1, Lcom/supercell/id/R$id;->panel:I
 
@@ -64,14 +64,14 @@
 
     const-string v1, "panel"
 
-    invoke-static {v0, v1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v0}, Landroid/view/View;->getHeight()I
 
     move-result v0
 
     .line 5
-    iget-object v1, p0, Lwc/j0;->f:Landroid/animation/ValueAnimator;
+    iget-object v1, p0, Lwc/j0;->g:Landroid/animation/ValueAnimator;
 
     invoke-virtual {v1}, Landroid/animation/ValueAnimator;->getAnimatedValue()Ljava/lang/Object;
 
@@ -96,14 +96,14 @@
     add-float/2addr v0, v2
 
     .line 6
-    invoke-static {v0}, Lcom/android/billingclient/api/z;->n(F)I
+    invoke-static {v0}, Lcom/android/billingclient/api/y;->i(F)I
 
     move-result v0
 
     .line 7
-    iget-object v1, p0, Lwc/j0;->g:Lwc/m0;
+    iget-object v1, p0, Lwc/j0;->h:Lwc/m0;
 
-    iget-object v1, v1, Lwc/m0;->f:Lcom/supercell/id/ui/MainActivity;
+    iget-object v1, v1, Lwc/m0;->g:Lcom/supercell/id/ui/MainActivity;
 
     sget v2, Lcom/supercell/id/R$id;->head:I
 
@@ -115,7 +115,7 @@
 
     const-string v3, "head"
 
-    invoke-static {v1, v3}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, v3}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v1}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
@@ -124,9 +124,9 @@
     iput v0, v1, Landroid/view/ViewGroup$LayoutParams;->height:I
 
     .line 8
-    iget-object v1, p0, Lwc/j0;->g:Lwc/m0;
+    iget-object v1, p0, Lwc/j0;->h:Lwc/m0;
 
-    iget-object v1, v1, Lwc/m0;->f:Lcom/supercell/id/ui/MainActivity;
+    iget-object v1, v1, Lwc/m0;->g:Lcom/supercell/id/ui/MainActivity;
 
     invoke-virtual {v1, v2}, Lcom/supercell/id/ui/MainActivity;->_$_findCachedViewById(I)Landroid/view/View;
 
@@ -137,9 +137,9 @@
     invoke-virtual {v1}, Landroid/view/View;->requestLayout()V
 
     .line 9
-    iget-object v1, p0, Lwc/j0;->g:Lwc/m0;
+    iget-object v1, p0, Lwc/j0;->h:Lwc/m0;
 
-    iget-object v1, v1, Lwc/m0;->f:Lcom/supercell/id/ui/MainActivity;
+    iget-object v1, v1, Lwc/m0;->g:Lcom/supercell/id/ui/MainActivity;
 
     sget v2, Lcom/supercell/id/R$id;->body:I
 
@@ -151,7 +151,7 @@
 
     const-string v3, "body"
 
-    invoke-static {v1, v3}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, v3}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-static {v1}, Lae/z2;->e(Landroid/view/View;)Landroid/view/ViewGroup$MarginLayoutParams;
 
@@ -165,9 +165,9 @@
 
     .line 10
     :cond_0
-    iget-object p1, p0, Lwc/j0;->g:Lwc/m0;
+    iget-object p1, p0, Lwc/j0;->h:Lwc/m0;
 
-    iget-object p1, p1, Lwc/m0;->f:Lcom/supercell/id/ui/MainActivity;
+    iget-object p1, p1, Lwc/m0;->g:Lcom/supercell/id/ui/MainActivity;
 
     invoke-virtual {p1, v2}, Lcom/supercell/id/ui/MainActivity;->_$_findCachedViewById(I)Landroid/view/View;
 

@@ -62,7 +62,7 @@
 
     move v1, p1
 
-    invoke-direct/range {v0 .. v7}, Lcom/kakao/sdk/template/model/Commerce;-><init>(ILjava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/String;ILse/e;)V
+    invoke-direct/range {v0 .. v7}, Lcom/kakao/sdk/template/model/Commerce;-><init>(ILjava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/String;ILse/f;)V
 
     return-void
 .end method
@@ -86,7 +86,7 @@
 
     move-object v2, p2
 
-    invoke-direct/range {v0 .. v7}, Lcom/kakao/sdk/template/model/Commerce;-><init>(ILjava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/String;ILse/e;)V
+    invoke-direct/range {v0 .. v7}, Lcom/kakao/sdk/template/model/Commerce;-><init>(ILjava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/String;ILse/f;)V
 
     return-void
 .end method
@@ -110,7 +110,7 @@
 
     move-object v3, p3
 
-    invoke-direct/range {v0 .. v7}, Lcom/kakao/sdk/template/model/Commerce;-><init>(ILjava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/String;ILse/e;)V
+    invoke-direct/range {v0 .. v7}, Lcom/kakao/sdk/template/model/Commerce;-><init>(ILjava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/String;ILse/f;)V
 
     return-void
 .end method
@@ -134,7 +134,7 @@
 
     move-object v4, p4
 
-    invoke-direct/range {v0 .. v7}, Lcom/kakao/sdk/template/model/Commerce;-><init>(ILjava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/String;ILse/e;)V
+    invoke-direct/range {v0 .. v7}, Lcom/kakao/sdk/template/model/Commerce;-><init>(ILjava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/String;ILse/f;)V
 
     return-void
 .end method
@@ -158,7 +158,7 @@
     return-void
 .end method
 
-.method public synthetic constructor <init>(ILjava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/String;ILse/e;)V
+.method public synthetic constructor <init>(ILjava/lang/Integer;Ljava/lang/Integer;Ljava/lang/Integer;Ljava/lang/String;ILse/f;)V
     .locals 7
 
     and-int/lit8 p7, p6, 0x2
@@ -393,7 +393,7 @@
 
     iget-object v3, p1, Lcom/kakao/sdk/template/model/Commerce;->discountPrice:Ljava/lang/Integer;
 
-    invoke-static {v1, v3}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -403,7 +403,7 @@
 
     iget-object v3, p1, Lcom/kakao/sdk/template/model/Commerce;->fixedDiscountPrice:Ljava/lang/Integer;
 
-    invoke-static {v1, v3}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -413,7 +413,7 @@
 
     iget-object v3, p1, Lcom/kakao/sdk/template/model/Commerce;->discountRate:Ljava/lang/Integer;
 
-    invoke-static {v1, v3}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -423,7 +423,7 @@
 
     iget-object p1, p1, Lcom/kakao/sdk/template/model/Commerce;->productName:Ljava/lang/String;
 
-    invoke-static {v1, p1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, p1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -604,7 +604,7 @@
     const-string v2, ")"
 
     .line 3
-    invoke-static {v0, v1, v2}, Landroid/support/v4/media/b;->b(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, v1, v2}, Landroid/support/v4/media/b;->a(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -616,7 +616,7 @@
 
     const-string p2, "parcel"
 
-    invoke-static {p1, p2}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p2}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     iget p2, p0, Lcom/kakao/sdk/template/model/Commerce;->regularPrice:I
 

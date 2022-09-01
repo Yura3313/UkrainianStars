@@ -1,5 +1,5 @@
 .class public final Ls3/b$a;
-.super Lb2/a0;
+.super Lb2/z;
 
 
 # annotations
@@ -17,7 +17,7 @@
 .method public constructor <init>()V
     .locals 0
 
-    invoke-direct {p0}, Lb2/a0;-><init>()V
+    invoke-direct {p0}, Lb2/z;-><init>()V
 
     return-void
 .end method

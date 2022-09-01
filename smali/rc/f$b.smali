@@ -1,5 +1,5 @@
 .class public final Lrc/f$b;
-.super Lse/h;
+.super Lse/i;
 .source "BaseApiClient.kt"
 
 # interfaces
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lrc/f;->d(Ljava/lang/String;Ljava/util/Map;Ljava/lang/String;)Lze/e0;
+    value = Lrc/f;->d(Ljava/lang/String;Ljava/util/Map;Ljava/lang/String;)Lze/f0;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,17 +18,17 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/l<",
         "Ljava/lang/Exception;",
-        "Lie/h;",
+        "Lie/i;",
         ">;"
     }
 .end annotation
 
 
 # static fields
-.field public static final f:Lrc/f$b;
+.field public static final g:Lrc/f$b;
 
 
 # direct methods
@@ -39,7 +39,7 @@
 
     invoke-direct {v0}, Lrc/f$b;-><init>()V
 
-    sput-object v0, Lrc/f$b;->f:Lrc/f$b;
+    sput-object v0, Lrc/f$b;->g:Lrc/f$b;
 
     return-void
 .end method
@@ -49,7 +49,7 @@
 
     const/4 v0, 0x1
 
-    invoke-direct {p0, v0}, Lse/h;-><init>(I)V
+    invoke-direct {p0, v0}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -65,7 +65,7 @@
     const-string v0, "it"
 
     .line 2
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 3
     sget v0, Lrc/f;->c:I
@@ -73,7 +73,7 @@
     invoke-virtual {p1}, Ljava/lang/Throwable;->getLocalizedMessage()Ljava/lang/String;
 
     .line 4
-    sget-object p1, Lie/h;->a:Lie/h;
+    sget-object p1, Lie/i;->a:Lie/i;
 
     return-object p1
 .end method

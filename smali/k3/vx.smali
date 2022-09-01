@@ -1,97 +1,178 @@
-.class public final synthetic Lk3/vx;
+.class public final Lk3/vx;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
-# interfaces
-.implements Lk3/nl0;
-
 
 # instance fields
-.field public final a:Lk3/wx;
+.field public final a:Lk3/vg0;
 
-.field public final b:Lorg/json/JSONObject;
+.field public final b:Ljava/util/concurrent/Executor;
+
+.field public final c:Lk3/iz;
 
 
 # direct methods
-.method public constructor <init>(Lk3/wx;Lorg/json/JSONObject;)V
+.method public constructor <init>(Lk3/vg0;Ljava/util/concurrent/Executor;Lk3/iz;)V
     .locals 0
 
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lk3/vx;->a:Lk3/wx;
+    .line 2
+    iput-object p1, p0, Lk3/vx;->a:Lk3/vg0;
 
-    iput-object p2, p0, Lk3/vx;->b:Lorg/json/JSONObject;
+    .line 3
+    iput-object p2, p0, Lk3/vx;->b:Ljava/util/concurrent/Executor;
+
+    .line 4
+    iput-object p3, p0, Lk3/vx;->c:Lk3/iz;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Ljava/lang/Object;)Lk3/em0;
-    .locals 6
-
-    iget-object v0, p0, Lk3/vx;->a:Lk3/wx;
-
-    iget-object v1, p0, Lk3/vx;->b:Lorg/json/JSONObject;
-
-    check-cast p1, Lk3/gh;
-
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+.method public final a(Lk3/gh;)V
+    .locals 3
 
     .line 1
-    new-instance v2, Lk3/qd;
+    sget-object v0, Lk3/g2;->g:Lk3/gg;
 
-    invoke-direct {v2, p1}, Lk3/qd;-><init>(Ljava/lang/Object;)V
+    const-string v1, "/video"
+
+    invoke-interface {p1, v1, v0}, Lk3/gh;->f(Ljava/lang/String;Lk3/x2;)V
 
     .line 2
-    iget-object v3, v0, Lk3/wx;->a:Lk3/ug0;
+    sget-object v0, Lk3/g2;->h:Lk3/jg;
 
-    iget-object v3, v3, Lk3/ug0;->c:Lcom/google/android/gms/internal/ads/zzair;
+    const-string v1, "/videoMeta"
 
-    const/4 v4, 0x0
-
-    if-eqz v3, :cond_0
+    invoke-interface {p1, v1, v0}, Lk3/gh;->f(Ljava/lang/String;Lk3/x2;)V
 
     .line 3
-    new-instance v3, Lk3/pi;
+    new-instance v0, Lk3/t2;
 
-    const/4 v5, 0x5
+    const/4 v1, 0x1
 
-    invoke-direct {v3, v5, v4, v4}, Lk3/pi;-><init>(III)V
+    invoke-direct {v0, v1}, Lk3/t2;-><init>(I)V
+
+    const-string v2, "/precache"
+
+    invoke-interface {p1, v2, v0}, Lk3/gh;->f(Ljava/lang/String;Lk3/x2;)V
 
     .line 4
-    invoke-interface {p1, v3}, Lk3/gh;->r0(Lk3/pi;)V
+    sget-object v0, Lk3/g2;->k:Lk3/w2;
+
+    const-string v2, "/delayPageLoaded"
+
+    invoke-interface {p1, v2, v0}, Lk3/gh;->f(Ljava/lang/String;Lk3/x2;)V
+
+    .line 5
+    sget-object v0, Lk3/g2;->i:Lk3/h2;
+
+    const-string v2, "/instrument"
+
+    invoke-interface {p1, v2, v0}, Lk3/gh;->f(Ljava/lang/String;Lk3/x2;)V
+
+    .line 6
+    sget-object v0, Lk3/g2;->c:Lk3/s2;
+
+    const-string v2, "/log"
+
+    invoke-interface {p1, v2, v0}, Lk3/gh;->f(Ljava/lang/String;Lk3/x2;)V
+
+    .line 7
+    sget-object v0, Lk3/g2;->d:Lk3/q2;
+
+    const-string v2, "/videoClicked"
+
+    invoke-interface {p1, v2, v0}, Lk3/gh;->f(Ljava/lang/String;Lk3/x2;)V
+
+    .line 8
+    invoke-interface {p1}, Lk3/gh;->N()Lk3/ji;
+
+    move-result-object v0
+
+    invoke-interface {v0}, Lk3/ji;->a()V
+
+    .line 9
+    sget-object v0, Lk3/g2;->a:Lk3/p2;
+
+    sget-object v0, Lk3/k2;->g:Lk3/k2;
+
+    const-string v2, "/click"
+
+    invoke-interface {p1, v2, v0}, Lk3/gh;->f(Ljava/lang/String;Lk3/x2;)V
+
+    .line 10
+    iget-object v0, p0, Lk3/vx;->a:Lk3/vg0;
+
+    iget-object v0, v0, Lk3/vg0;->c:Lcom/google/android/gms/internal/ads/zzair;
+
+    if-eqz v0, :cond_0
+
+    .line 11
+    invoke-interface {p1}, Lk3/gh;->N()Lk3/ji;
+
+    move-result-object v0
+
+    invoke-interface {v0, v1}, Lk3/ji;->m(Z)V
+
+    .line 12
+    new-instance v0, Lk3/a3;
+
+    const/4 v1, 0x0
+
+    invoke-direct {v0, v1, v1}, Lk3/a3;-><init>(Li1/a;Lk3/h7;)V
+
+    const-string v1, "/open"
+
+    invoke-interface {p1, v1, v0}, Lk3/gh;->f(Ljava/lang/String;Lk3/x2;)V
 
     goto :goto_0
 
-    .line 5
+    .line 13
     :cond_0
-    new-instance v3, Lk3/pi;
-
-    const/4 v5, 0x4
-
-    invoke-direct {v3, v5, v4, v4}, Lk3/pi;-><init>(III)V
-
-    .line 6
-    invoke-interface {p1, v3}, Lk3/gh;->r0(Lk3/pi;)V
-
-    .line 7
-    :goto_0
     invoke-interface {p1}, Lk3/gh;->N()Lk3/ji;
 
-    move-result-object v3
+    move-result-object v0
 
-    new-instance v4, Lk3/by;
+    const/4 v1, 0x0
 
-    invoke-direct {v4, v0, p1, v2}, Lk3/by;-><init>(Lk3/wx;Lk3/gh;Lk3/qd;)V
+    invoke-interface {v0, v1}, Lk3/ji;->m(Z)V
 
-    .line 8
-    invoke-interface {v3, v4}, Lk3/ji;->e(Lk3/mi;)V
+    .line 14
+    :goto_0
+    sget-object v0, Li1/p;->B:Li1/p;
 
-    const-string v0, "google.afma.nativeAds.renderVideo"
+    iget-object v0, v0, Li1/p;->x:Lk3/p9;
 
-    .line 9
-    invoke-interface {p1, v0, v1}, Lk3/o4;->V(Ljava/lang/String;Lorg/json/JSONObject;)V
+    .line 15
+    invoke-interface {p1}, Lk3/gh;->getContext()Landroid/content/Context;
 
-    return-object v2
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Lk3/p9;->h(Landroid/content/Context;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    .line 16
+    new-instance v0, Lk3/z2;
+
+    .line 17
+    invoke-interface {p1}, Lk3/gh;->getContext()Landroid/content/Context;
+
+    move-result-object v1
+
+    invoke-direct {v0, v1}, Lk3/z2;-><init>(Landroid/content/Context;)V
+
+    const-string v1, "/logScionEvent"
+
+    .line 18
+    invoke-interface {p1, v1, v0}, Lk3/gh;->f(Ljava/lang/String;Lk3/x2;)V
+
+    :cond_1
+    return-void
 .end method

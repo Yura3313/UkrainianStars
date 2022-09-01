@@ -629,7 +629,7 @@
     const-string v2, "Overread allowed size end="
 
     .line 3
-    invoke-static {v1, v2, p1}, Lcom/google/android/gms/ads/e;->a(ILjava/lang/String;I)Ljava/lang/String;
+    invoke-static {v1, v2, p1}, Lcom/google/android/gms/ads/f;->a(ILjava/lang/String;I)Ljava/lang/String;
 
     move-result-object p1
 
@@ -1020,7 +1020,7 @@
     const/16 v2, 0x2e
 
     .line 4
-    invoke-static {v1, v2}, La1/e;->a(Ljava/lang/String;I)I
+    invoke-static {v1, v2}, La1/e;->b(Ljava/lang/String;I)I
 
     move-result v2
 
@@ -1079,7 +1079,7 @@
     const/16 v2, 0x2e
 
     .line 3
-    invoke-static {v1, v2}, La1/e;->a(Ljava/lang/String;I)I
+    invoke-static {v1, v2}, La1/e;->b(Ljava/lang/String;I)I
 
     move-result v2
 

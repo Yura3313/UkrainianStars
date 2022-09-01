@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field public final synthetic f:Lcom/google/android/material/snackbar/i;
+.field public final synthetic g:Lcom/google/android/material/snackbar/i;
 
 
 # direct methods
 .method public constructor <init>(Lcom/google/android/material/snackbar/i;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/google/android/material/snackbar/i$a;->f:Lcom/google/android/material/snackbar/i;
+    iput-object p1, p0, Lcom/google/android/material/snackbar/i$a;->g:Lcom/google/android/material/snackbar/i;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -48,7 +48,7 @@
 
     .line 2
     :cond_0
-    iget-object v0, p0, Lcom/google/android/material/snackbar/i$a;->f:Lcom/google/android/material/snackbar/i;
+    iget-object v0, p0, Lcom/google/android/material/snackbar/i$a;->g:Lcom/google/android/material/snackbar/i;
 
     iget-object p1, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
 

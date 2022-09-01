@@ -1,5 +1,5 @@
 .class public final Lcom/supercell/id/IdIngameFriend$a;
-.super Lse/h;
+.super Lse/i;
 .source "SupercellId.kt"
 
 # interfaces
@@ -18,7 +18,7 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/a<",
         "Lcom/supercell/id/model/IdSocialAccount;",
         ">;"
@@ -27,18 +27,18 @@
 
 
 # instance fields
-.field public final synthetic f:Lcom/supercell/id/IdIngameFriend;
+.field public final synthetic g:Lcom/supercell/id/IdIngameFriend;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/id/IdIngameFriend;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/IdIngameFriend$a;->f:Lcom/supercell/id/IdIngameFriend;
+    iput-object p1, p0, Lcom/supercell/id/IdIngameFriend$a;->g:Lcom/supercell/id/IdIngameFriend;
 
     const/4 p1, 0x0
 
-    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -49,7 +49,7 @@
     .locals 4
 
     .line 1
-    iget-object v0, p0, Lcom/supercell/id/IdIngameFriend$a;->f:Lcom/supercell/id/IdIngameFriend;
+    iget-object v0, p0, Lcom/supercell/id/IdIngameFriend$a;->g:Lcom/supercell/id/IdIngameFriend;
 
     invoke-virtual {v0}, Lcom/supercell/id/IdIngameFriend;->getSupercellId()Ljava/lang/String;
 
@@ -66,9 +66,9 @@
     :cond_0
     new-instance v1, Lcom/supercell/id/model/IdSocialAccount$AppAccount;
 
-    new-instance v0, Lvc/e;
+    new-instance v0, Lvc/d;
 
-    iget-object v2, p0, Lcom/supercell/id/IdIngameFriend$a;->f:Lcom/supercell/id/IdIngameFriend;
+    iget-object v2, p0, Lcom/supercell/id/IdIngameFriend$a;->g:Lcom/supercell/id/IdIngameFriend;
 
     invoke-virtual {v2}, Lcom/supercell/id/IdIngameFriend;->getAppAccount()Ljava/lang/String;
 
@@ -84,13 +84,13 @@
     iget-object v3, v3, Lae/u;->j:Lcom/supercell/id/IdConfiguration;
 
     .line 3
-    invoke-virtual {v3}, Lcom/supercell/id/IdConfiguration;->getApp()Lvc/d;
+    invoke-virtual {v3}, Lcom/supercell/id/IdConfiguration;->getApp()Lvc/c;
 
     move-result-object v3
 
-    invoke-direct {v0, v2, v3}, Lvc/e;-><init>(Ljava/lang/String;Lvc/d;)V
+    invoke-direct {v0, v2, v3}, Lvc/d;-><init>(Ljava/lang/String;Lvc/c;)V
 
-    invoke-direct {v1, v0}, Lcom/supercell/id/model/IdSocialAccount$AppAccount;-><init>(Lvc/e;)V
+    invoke-direct {v1, v0}, Lcom/supercell/id/model/IdSocialAccount$AppAccount;-><init>(Lvc/d;)V
 
     :goto_0
     return-object v1

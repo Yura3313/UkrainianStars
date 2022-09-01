@@ -32,17 +32,17 @@
     return-void
 .end method
 
-.method public static synthetic a(Lcom/kakaogame/util/MutexLock;Lcom/kakao/sdk/partner/user/model/AgeAuthInfo;Ljava/lang/Throwable;)Lie/h;
+.method public static synthetic a(Lcom/kakaogame/util/MutexLock;Lcom/kakao/sdk/partner/user/model/AgeAuthInfo;Ljava/lang/Throwable;)Lie/i;
     .locals 0
 
-    invoke-static {p0, p1, p2}, Lcom/kakaogame/kakao/KakaoAgeAuthManager$1;->lambda$run$0(Lcom/kakaogame/util/MutexLock;Lcom/kakao/sdk/partner/user/model/AgeAuthInfo;Ljava/lang/Throwable;)Lie/h;
+    invoke-static {p0, p1, p2}, Lcom/kakaogame/kakao/KakaoAgeAuthManager$1;->lambda$run$0(Lcom/kakaogame/util/MutexLock;Lcom/kakao/sdk/partner/user/model/AgeAuthInfo;Ljava/lang/Throwable;)Lie/i;
 
     move-result-object p0
 
     return-object p0
 .end method
 
-.method private static synthetic lambda$run$0(Lcom/kakaogame/util/MutexLock;Lcom/kakao/sdk/partner/user/model/AgeAuthInfo;Ljava/lang/Throwable;)Lie/h;
+.method private static synthetic lambda$run$0(Lcom/kakaogame/util/MutexLock;Lcom/kakao/sdk/partner/user/model/AgeAuthInfo;Ljava/lang/Throwable;)Lie/i;
     .locals 2
 
     const-string v0, "KakaoAgeAuthManager"
@@ -130,7 +130,7 @@
 
     .line 11
     :goto_0
-    sget-object p0, Lie/h;->a:Lie/h;
+    sget-object p0, Lie/i;->a:Lie/i;
 
     return-object p0
 .end method

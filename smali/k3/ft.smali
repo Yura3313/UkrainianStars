@@ -1,25 +1,28 @@
-.class public final Lk3/ft;
+.class public final synthetic Lk3/ft;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lk3/iv0;
+.implements Lk3/vs;
 
 
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ljava/lang/Object;",
-        "Lk3/iv0<",
-        "Ljava/util/Set<",
-        "Lk3/rt<",
-        "Lcom/google/android/gms/ads/o$a;",
-        ">;>;>;"
-    }
-.end annotation
+# static fields
+.field public static final g:Lk3/ft;
 
 
 # direct methods
+.method public static constructor <clinit>()V
+    .locals 1
+
+    new-instance v0, Lk3/ft;
+
+    invoke-direct {v0}, Lk3/ft;-><init>()V
+
+    sput-object v0, Lk3/ft;->g:Lk3/ft;
+
+    return-void
+.end method
+
 .method public constructor <init>()V
     .locals 0
 
@@ -30,20 +33,14 @@
 
 
 # virtual methods
-.method public final synthetic get()Ljava/lang/Object;
-    .locals 2
+.method public final d(Ljava/lang/Object;)V
+    .locals 0
 
     .line 1
-    invoke-static {}, Ljava/util/Collections;->emptySet()Ljava/util/Set;
-
-    move-result-object v0
-
-    const-string v1, "Cannot return null from a non-@Nullable @Provides method"
+    check-cast p1, Lk3/ht;
 
     .line 2
-    invoke-static {v0, v1}, Ltd/c;->k(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+    invoke-interface {p1}, Lk3/ht;->b()V
 
-    check-cast v0, Ljava/util/Set;
-
-    return-object v0
+    return-void
 .end method

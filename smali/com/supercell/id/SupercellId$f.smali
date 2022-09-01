@@ -1,5 +1,5 @@
 .class public final Lcom/supercell/id/SupercellId$f;
-.super Lse/h;
+.super Lse/i;
 .source "SupercellId.kt"
 
 # interfaces
@@ -18,16 +18,16 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/a<",
-        "Lie/h;",
+        "Lie/i;",
         ">;"
     }
 .end annotation
 
 
 # static fields
-.field public static final f:Lcom/supercell/id/SupercellId$f;
+.field public static final g:Lcom/supercell/id/SupercellId$f;
 
 
 # direct methods
@@ -38,7 +38,7 @@
 
     invoke-direct {v0}, Lcom/supercell/id/SupercellId$f;-><init>()V
 
-    sput-object v0, Lcom/supercell/id/SupercellId$f;->f:Lcom/supercell/id/SupercellId$f;
+    sput-object v0, Lcom/supercell/id/SupercellId$f;->g:Lcom/supercell/id/SupercellId$f;
 
     return-void
 .end method
@@ -48,7 +48,7 @@
 
     const/4 v0, 0x0
 
-    invoke-direct {p0, v0}, Lse/h;-><init>(I)V
+    invoke-direct {p0, v0}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -66,26 +66,26 @@
     move-result-object v0
 
     .line 2
-    iget-object v0, v0, Lae/u;->s:Lud/j;
+    iget-object v0, v0, Lae/u;->s:Lud/i;
 
     .line 3
-    invoke-virtual {v0}, Lud/j;->a()V
+    invoke-virtual {v0}, Lud/i;->a()V
 
     .line 4
-    sget-object v0, Lae/b0;->e:Lae/b0;
+    sget-object v0, Lae/a0;->e:Lae/a0;
 
     .line 5
-    sget-object v0, Lae/b0;->b:Lae/r1;
+    sget-object v0, Lae/a0;->b:Lae/q1;
 
-    invoke-virtual {v0}, Lae/r1;->a()V
+    invoke-virtual {v0}, Lae/q1;->a()V
 
     .line 6
-    sget-object v0, Lae/b0;->c:Lae/r1;
+    sget-object v0, Lae/a0;->c:Lae/q1;
 
-    invoke-virtual {v0}, Lae/r1;->a()V
+    invoke-virtual {v0}, Lae/q1;->a()V
 
     .line 7
-    sget-object v0, Lie/h;->a:Lie/h;
+    sget-object v0, Lie/i;->a:Lie/i;
 
     return-object v0
 .end method

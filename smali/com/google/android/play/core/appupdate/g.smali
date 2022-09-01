@@ -1,250 +1,103 @@
-.class public final synthetic Lcom/google/android/play/core/appupdate/g;
-.super Ljava/lang/Object;
-
-# interfaces
-.implements La5/h;
+.class public final Lcom/google/android/play/core/appupdate/g;
+.super La5/c;
 
 
-# static fields
-.field public static final a:Lcom/google/android/play/core/appupdate/g;
+# instance fields
+.field public final synthetic h:Lcom/google/android/play/core/tasks/i;
+
+.field public final synthetic i:Ljava/lang/String;
+
+.field public final synthetic j:Lcom/google/android/play/core/appupdate/k;
 
 
 # direct methods
-.method static synthetic constructor <clinit>()V
-    .locals 1
+.method public constructor <init>(Lcom/google/android/play/core/appupdate/k;Lcom/google/android/play/core/tasks/i;Lcom/google/android/play/core/tasks/i;Ljava/lang/String;)V
+    .locals 0
 
-    new-instance v0, Lcom/google/android/play/core/appupdate/g;
+    iput-object p1, p0, Lcom/google/android/play/core/appupdate/g;->j:Lcom/google/android/play/core/appupdate/k;
 
-    invoke-direct {v0}, Lcom/google/android/play/core/appupdate/g;-><init>()V
+    iput-object p3, p0, Lcom/google/android/play/core/appupdate/g;->h:Lcom/google/android/play/core/tasks/i;
 
-    sput-object v0, Lcom/google/android/play/core/appupdate/g;->a:Lcom/google/android/play/core/appupdate/g;
+    iput-object p4, p0, Lcom/google/android/play/core/appupdate/g;->i:Ljava/lang/String;
+
+    invoke-direct {p0, p2}, La5/c;-><init>(Lcom/google/android/play/core/tasks/i;)V
 
     return-void
-.end method
-
-.method public synthetic constructor <init>()V
-    .locals 0
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    return-void
-.end method
-
-.method public static b(Ljava/lang/String;)Z
-    .locals 0
-
-    if-eqz p0, :cond_1
-
-    invoke-virtual {p0}, Ljava/lang/String;->trim()Ljava/lang/String;
-
-    move-result-object p0
-
-    invoke-virtual {p0}, Ljava/lang/String;->length()I
-
-    move-result p0
-
-    if-nez p0, :cond_0
-
-    goto :goto_0
-
-    :cond_0
-    const/4 p0, 0x0
-
-    goto :goto_1
-
-    :cond_1
-    :goto_0
-    const/4 p0, 0x1
-
-    :goto_1
-    return p0
-.end method
-
-.method public static c(Ljava/lang/String;)Z
-    .locals 0
-
-    if-eqz p0, :cond_1
-
-    invoke-virtual {p0}, Ljava/lang/String;->length()I
-
-    move-result p0
-
-    if-nez p0, :cond_0
-
-    goto :goto_0
-
-    :cond_0
-    const/4 p0, 0x0
-
-    goto :goto_1
-
-    :cond_1
-    :goto_0
-    const/4 p0, 0x1
-
-    :goto_1
-    return p0
-.end method
-
-.method public static d(Ljava/lang/String;Ljava/lang/String;)Z
-    .locals 0
-
-    if-nez p0, :cond_0
-
-    if-eqz p1, :cond_1
-
-    :cond_0
-    if-eqz p0, :cond_2
-
-    invoke-virtual {p0, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result p0
-
-    if-eqz p0, :cond_2
-
-    :cond_1
-    const/4 p0, 0x1
-
-    goto :goto_0
-
-    :cond_2
-    const/4 p0, 0x0
-
-    :goto_0
-    return p0
-.end method
-
-.method public static e(Ljava/lang/String;)Z
-    .locals 0
-
-    invoke-static {p0}, Lcom/google/android/play/core/appupdate/g;->b(Ljava/lang/String;)Z
-
-    move-result p0
-
-    xor-int/lit8 p0, p0, 0x1
-
-    return p0
-.end method
-
-.method public static f(Ljava/lang/String;Ljava/lang/String;)Z
-    .locals 0
-
-    invoke-static {p0, p1}, Lcom/google/android/play/core/appupdate/g;->d(Ljava/lang/String;Ljava/lang/String;)Z
-
-    move-result p0
-
-    xor-int/lit8 p0, p0, 0x1
-
-    return p0
-.end method
-
-.method public static g(Ljava/lang/Iterable;)Ljava/lang/String;
-    .locals 4
-
-    .line 1
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    const/4 v1, 0x1
-
-    .line 2
-    invoke-interface {p0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
-
-    move-result-object p0
-
-    :goto_0
-    invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v2
-
-    if-eqz v2, :cond_1
-
-    invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v2
-
-    if-eqz v1, :cond_0
-
-    const/4 v1, 0x0
-
-    goto :goto_1
-
-    :cond_0
-    const-string v3, "&"
-
-    .line 3
-    invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/CharSequence;)Ljava/lang/StringBuilder;
-
-    .line 4
-    :goto_1
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    goto :goto_0
-
-    .line 5
-    :cond_1
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public static h(Ljava/lang/String;)I
-    .locals 3
-
-    const/4 v0, -0x1
-
-    if-nez p0, :cond_0
-
-    return v0
-
-    .line 1
-    :cond_0
-    invoke-virtual {p0}, Ljava/lang/String;->length()I
-
-    move-result v1
-
-    const/4 v2, 0x0
-
-    if-nez v1, :cond_1
-
-    return v2
-
-    .line 2
-    :cond_1
-    invoke-static {}, Ljava/text/BreakIterator;->getCharacterInstance()Ljava/text/BreakIterator;
-
-    move-result-object v1
-
-    .line 3
-    invoke-virtual {v1, p0}, Ljava/text/BreakIterator;->setText(Ljava/lang/String;)V
-
-    .line 4
-    :goto_0
-    invoke-virtual {v1}, Ljava/text/BreakIterator;->next()I
-
-    move-result p0
-
-    if-eq p0, v0, :cond_2
-
-    add-int/lit8 v2, v2, 0x1
-
-    goto :goto_0
-
-    :cond_2
-    return v2
 .end method
 
 
 # virtual methods
-.method public a(Landroid/os/IBinder;)Ljava/lang/Object;
-    .locals 0
+.method public final a()V
+    .locals 6
 
-    invoke-static {p1}, Lcom/google/android/play/core/internal/m;->S0(Landroid/os/IBinder;)Lcom/google/android/play/core/internal/n;
+    :try_start_0
+    iget-object v0, p0, Lcom/google/android/play/core/appupdate/g;->j:Lcom/google/android/play/core/appupdate/k;
 
-    move-result-object p1
+    iget-object v1, v0, Lcom/google/android/play/core/appupdate/k;->a:La5/l;
 
-    return-object p1
+    .line 1
+    iget-object v1, v1, La5/l;->k:Landroid/os/IInterface;
+
+    .line 2
+    check-cast v1, Lcom/google/android/play/core/internal/n;
+
+    .line 3
+    iget-object v0, v0, Lcom/google/android/play/core/appupdate/k;->b:Ljava/lang/String;
+
+    .line 4
+    new-instance v2, Landroid/os/Bundle;
+
+    invoke-direct {v2}, Landroid/os/Bundle;-><init>()V
+
+    const/16 v3, 0x29ce
+
+    const-string v4, "playcore.version.code"
+
+    invoke-virtual {v2, v4, v3}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
+
+    .line 5
+    new-instance v3, Lcom/google/android/play/core/appupdate/i;
+
+    iget-object v4, p0, Lcom/google/android/play/core/appupdate/g;->j:Lcom/google/android/play/core/appupdate/k;
+
+    iget-object v5, p0, Lcom/google/android/play/core/appupdate/g;->h:Lcom/google/android/play/core/tasks/i;
+
+    invoke-direct {v3, v4, v5}, Lcom/google/android/play/core/appupdate/i;-><init>(Lcom/google/android/play/core/appupdate/k;Lcom/google/android/play/core/tasks/i;)V
+
+    invoke-interface {v1, v0, v2, v3}, Lcom/google/android/play/core/internal/n;->T6(Ljava/lang/String;Landroid/os/Bundle;Lcom/google/android/play/core/internal/p;)V
+    :try_end_0
+    .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
+
+    return-void
+
+    :catch_0
+    move-exception v0
+
+    .line 6
+    sget-object v1, Lcom/google/android/play/core/appupdate/k;->e:La5/b;
+
+    const/4 v2, 0x1
+
+    new-array v2, v2, [Ljava/lang/Object;
+
+    const/4 v3, 0x0
+
+    .line 7
+    iget-object v4, p0, Lcom/google/android/play/core/appupdate/g;->i:Ljava/lang/String;
+
+    aput-object v4, v2, v3
+
+    const-string v3, "completeUpdate(%s)"
+
+    invoke-virtual {v1, v3, v2}, La5/b;->c(Ljava/lang/String;[Ljava/lang/Object;)V
+
+    iget-object v1, p0, Lcom/google/android/play/core/appupdate/g;->h:Lcom/google/android/play/core/tasks/i;
+
+    new-instance v2, Ljava/lang/RuntimeException;
+
+    invoke-direct {v2, v0}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/Throwable;)V
+
+    invoke-virtual {v1, v2}, Lcom/google/android/play/core/tasks/i;->b(Ljava/lang/Exception;)V
+
+    return-void
 .end method

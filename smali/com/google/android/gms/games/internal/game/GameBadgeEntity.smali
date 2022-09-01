@@ -31,13 +31,13 @@
 
 
 # instance fields
-.field public h:I
-
-.field public i:Ljava/lang/String;
+.field public i:I
 
 .field public j:Ljava/lang/String;
 
-.field public k:Landroid/net/Uri;
+.field public k:Ljava/lang/String;
+
+.field public l:Landroid/net/Uri;
 
 
 # direct methods
@@ -60,16 +60,16 @@
     invoke-direct {p0}, Lcom/google/android/gms/games/internal/GamesDowngradeableSafeParcel;-><init>()V
 
     .line 2
-    iput p1, p0, Lcom/google/android/gms/games/internal/game/GameBadgeEntity;->h:I
+    iput p1, p0, Lcom/google/android/gms/games/internal/game/GameBadgeEntity;->i:I
 
     .line 3
-    iput-object p2, p0, Lcom/google/android/gms/games/internal/game/GameBadgeEntity;->i:Ljava/lang/String;
+    iput-object p2, p0, Lcom/google/android/gms/games/internal/game/GameBadgeEntity;->j:Ljava/lang/String;
 
     .line 4
-    iput-object p3, p0, Lcom/google/android/gms/games/internal/game/GameBadgeEntity;->j:Ljava/lang/String;
+    iput-object p3, p0, Lcom/google/android/gms/games/internal/game/GameBadgeEntity;->k:Ljava/lang/String;
 
     .line 5
-    iput-object p4, p0, Lcom/google/android/gms/games/internal/game/GameBadgeEntity;->k:Landroid/net/Uri;
+    iput-object p4, p0, Lcom/google/android/gms/games/internal/game/GameBadgeEntity;->l:Landroid/net/Uri;
 
     return-void
 .end method
@@ -104,7 +104,7 @@
     move-result-object v1
 
     .line 4
-    iget-object v2, p0, Lcom/google/android/gms/games/internal/game/GameBadgeEntity;->i:Ljava/lang/String;
+    iget-object v2, p0, Lcom/google/android/gms/games/internal/game/GameBadgeEntity;->j:Ljava/lang/String;
 
     .line 5
     invoke-static {v1, v2}, Ld2/f;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
@@ -119,7 +119,7 @@
     move-result-object p1
 
     .line 7
-    iget-object v1, p0, Lcom/google/android/gms/games/internal/game/GameBadgeEntity;->k:Landroid/net/Uri;
+    iget-object v1, p0, Lcom/google/android/gms/games/internal/game/GameBadgeEntity;->l:Landroid/net/Uri;
 
     .line 8
     invoke-static {p1, v1}, Ld2/f;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
@@ -139,7 +139,7 @@
 .method public final getDescription()Ljava/lang/String;
     .locals 1
 
-    iget-object v0, p0, Lcom/google/android/gms/games/internal/game/GameBadgeEntity;->j:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/android/gms/games/internal/game/GameBadgeEntity;->k:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -147,7 +147,7 @@
 .method public final getType()I
     .locals 1
 
-    iget v0, p0, Lcom/google/android/gms/games/internal/game/GameBadgeEntity;->h:I
+    iget v0, p0, Lcom/google/android/gms/games/internal/game/GameBadgeEntity;->i:I
 
     return v0
 .end method
@@ -160,7 +160,7 @@
     new-array v0, v0, [Ljava/lang/Object;
 
     .line 1
-    iget v1, p0, Lcom/google/android/gms/games/internal/game/GameBadgeEntity;->h:I
+    iget v1, p0, Lcom/google/android/gms/games/internal/game/GameBadgeEntity;->i:I
 
     .line 2
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -174,21 +174,21 @@
     const/4 v1, 0x1
 
     .line 3
-    iget-object v2, p0, Lcom/google/android/gms/games/internal/game/GameBadgeEntity;->i:Ljava/lang/String;
+    iget-object v2, p0, Lcom/google/android/gms/games/internal/game/GameBadgeEntity;->j:Ljava/lang/String;
 
     aput-object v2, v0, v1
 
     const/4 v1, 0x2
 
     .line 4
-    iget-object v2, p0, Lcom/google/android/gms/games/internal/game/GameBadgeEntity;->j:Ljava/lang/String;
+    iget-object v2, p0, Lcom/google/android/gms/games/internal/game/GameBadgeEntity;->k:Ljava/lang/String;
 
     aput-object v2, v0, v1
 
     const/4 v1, 0x3
 
     .line 5
-    iget-object v2, p0, Lcom/google/android/gms/games/internal/game/GameBadgeEntity;->k:Landroid/net/Uri;
+    iget-object v2, p0, Lcom/google/android/gms/games/internal/game/GameBadgeEntity;->l:Landroid/net/Uri;
 
     aput-object v2, v0, v1
 
@@ -209,7 +209,7 @@
     invoke-direct {v0, p0}, Ld2/f$a;-><init>(Ljava/lang/Object;)V
 
     .line 2
-    iget v1, p0, Lcom/google/android/gms/games/internal/game/GameBadgeEntity;->h:I
+    iget v1, p0, Lcom/google/android/gms/games/internal/game/GameBadgeEntity;->i:I
 
     .line 3
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -221,7 +221,7 @@
     invoke-virtual {v0, v2, v1}, Ld2/f$a;->a(Ljava/lang/String;Ljava/lang/Object;)Ld2/f$a;
 
     .line 4
-    iget-object v1, p0, Lcom/google/android/gms/games/internal/game/GameBadgeEntity;->i:Ljava/lang/String;
+    iget-object v1, p0, Lcom/google/android/gms/games/internal/game/GameBadgeEntity;->j:Ljava/lang/String;
 
     const-string v2, "Title"
 
@@ -229,7 +229,7 @@
     invoke-virtual {v0, v2, v1}, Ld2/f$a;->a(Ljava/lang/String;Ljava/lang/Object;)Ld2/f$a;
 
     .line 6
-    iget-object v1, p0, Lcom/google/android/gms/games/internal/game/GameBadgeEntity;->j:Ljava/lang/String;
+    iget-object v1, p0, Lcom/google/android/gms/games/internal/game/GameBadgeEntity;->k:Ljava/lang/String;
 
     const-string v2, "Description"
 
@@ -237,7 +237,7 @@
     invoke-virtual {v0, v2, v1}, Ld2/f$a;->a(Ljava/lang/String;Ljava/lang/Object;)Ld2/f$a;
 
     .line 8
-    iget-object v1, p0, Lcom/google/android/gms/games/internal/game/GameBadgeEntity;->k:Landroid/net/Uri;
+    iget-object v1, p0, Lcom/google/android/gms/games/internal/game/GameBadgeEntity;->l:Landroid/net/Uri;
 
     const-string v2, "IconImageUri"
 
@@ -265,7 +265,7 @@
     const/4 v1, 0x1
 
     .line 2
-    iget v2, p0, Lcom/google/android/gms/games/internal/game/GameBadgeEntity;->h:I
+    iget v2, p0, Lcom/google/android/gms/games/internal/game/GameBadgeEntity;->i:I
 
     const/4 v3, 0x4
 
@@ -278,7 +278,7 @@
     const/4 v1, 0x2
 
     .line 5
-    iget-object v2, p0, Lcom/google/android/gms/games/internal/game/GameBadgeEntity;->i:Ljava/lang/String;
+    iget-object v2, p0, Lcom/google/android/gms/games/internal/game/GameBadgeEntity;->j:Ljava/lang/String;
 
     const/4 v4, 0x0
 
@@ -288,13 +288,13 @@
     const/4 v1, 0x3
 
     .line 7
-    iget-object v2, p0, Lcom/google/android/gms/games/internal/game/GameBadgeEntity;->j:Ljava/lang/String;
+    iget-object v2, p0, Lcom/google/android/gms/games/internal/game/GameBadgeEntity;->k:Ljava/lang/String;
 
     .line 8
     invoke-static {p1, v1, v2, v4}, Le2/b;->m(Landroid/os/Parcel;ILjava/lang/String;Z)V
 
     .line 9
-    iget-object v1, p0, Lcom/google/android/gms/games/internal/game/GameBadgeEntity;->k:Landroid/net/Uri;
+    iget-object v1, p0, Lcom/google/android/gms/games/internal/game/GameBadgeEntity;->l:Landroid/net/Uri;
 
     .line 10
     invoke-static {p1, v3, v1, p2, v4}, Le2/b;->l(Landroid/os/Parcel;ILandroid/os/Parcelable;IZ)V

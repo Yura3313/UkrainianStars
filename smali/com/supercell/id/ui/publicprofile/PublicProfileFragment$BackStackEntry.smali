@@ -30,9 +30,9 @@
 
 
 # instance fields
-.field public final g:Z
+.field public final h:Z
 
-.field public final h:Ljava/lang/Class;
+.field public final i:Ljava/lang/Class;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/lang/Class<",
@@ -43,23 +43,23 @@
     .end annotation
 .end field
 
-.field public final i:Ljava/lang/String;
+.field public final j:Ljava/lang/String;
 
-.field public final j:Lcom/supercell/id/model/IdSocialAccount;
+.field public final k:Lcom/supercell/id/model/IdSocialAccount;
 
-.field public final k:Ljava/lang/String;
+.field public final l:Ljava/lang/String;
 
-.field public final l:Lcom/supercell/id/model/ProfileImage;
+.field public final m:Lcom/supercell/id/model/ProfileImage;
 
-.field public final m:Lcom/supercell/id/model/IdRelationshipStatus;
+.field public final n:Lcom/supercell/id/model/IdRelationshipStatus;
 
-.field public final n:Lcom/supercell/id/model/IdPresenceStatus;
+.field public final o:Lcom/supercell/id/model/IdPresenceStatus;
 
-.field public final o:Z
+.field public final p:Z
 
-.field public final p:Ljava/lang/String;
+.field public final q:Ljava/lang/String;
 
-.field public final q:Z
+.field public final r:Z
 
 
 # direct methods
@@ -111,38 +111,38 @@
 
     const-string v0, "image"
 
-    invoke-static {p4, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p4, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 2
     invoke-direct {p0}, Lcom/supercell/id/ui/BackStack$Entry;-><init>()V
 
-    iput-object p1, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;->i:Ljava/lang/String;
+    iput-object p1, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;->j:Ljava/lang/String;
 
-    iput-object p2, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;->j:Lcom/supercell/id/model/IdSocialAccount;
+    iput-object p2, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;->k:Lcom/supercell/id/model/IdSocialAccount;
 
-    iput-object p3, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;->k:Ljava/lang/String;
+    iput-object p3, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;->l:Ljava/lang/String;
 
-    iput-object p4, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;->l:Lcom/supercell/id/model/ProfileImage;
+    iput-object p4, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;->m:Lcom/supercell/id/model/ProfileImage;
 
-    iput-object p5, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;->m:Lcom/supercell/id/model/IdRelationshipStatus;
+    iput-object p5, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;->n:Lcom/supercell/id/model/IdRelationshipStatus;
 
-    iput-object p6, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;->n:Lcom/supercell/id/model/IdPresenceStatus;
+    iput-object p6, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;->o:Lcom/supercell/id/model/IdPresenceStatus;
 
-    iput-boolean p7, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;->o:Z
+    iput-boolean p7, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;->p:Z
 
-    iput-object p8, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;->p:Ljava/lang/String;
+    iput-object p8, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;->q:Ljava/lang/String;
 
-    iput-boolean p9, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;->q:Z
+    iput-boolean p9, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;->r:Z
 
     const/4 p1, 0x1
 
     .line 3
-    iput-boolean p1, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;->g:Z
+    iput-boolean p1, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;->h:Z
 
     .line 4
     const-class p1, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment;
 
-    iput-object p1, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;->h:Ljava/lang/Class;
+    iput-object p1, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;->i:Ljava/lang/Class;
 
     return-void
 .end method
@@ -244,16 +244,16 @@
 
     const-string p2, "mainActivity"
 
-    invoke-static {p1, p2}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p2}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
-    invoke-static {p1}, Lcom/android/billingclient/api/c0;->d(Lcom/supercell/id/ui/MainActivity;)Z
+    invoke-static {p1}, Lcom/android/billingclient/api/b0;->d(Lcom/supercell/id/ui/MainActivity;)Z
 
     move-result p2
 
     if-nez p2, :cond_2
 
-    invoke-static {p1}, Lcom/android/billingclient/api/c0;->c(Lcom/supercell/id/ui/MainActivity;)Z
+    invoke-static {p1}, Lcom/android/billingclient/api/b0;->c(Lcom/supercell/id/ui/MainActivity;)Z
 
     move-result p2
 
@@ -269,7 +269,7 @@
 
     const-string p2, "mainActivity.resources"
 
-    invoke-static {p1, p2}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p2}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 3
     sget p2, Lcom/supercell/id/R$bool;->isSmallScreen:I
@@ -285,12 +285,12 @@
     int-to-float p1, p1
 
     .line 4
-    sget p2, La5/g0;->a:F
+    sget p2, La5/e0;->g:F
 
     mul-float p1, p1, p2
 
     .line 5
-    invoke-static {p1}, Lcom/android/billingclient/api/z;->n(F)I
+    invoke-static {p1}, Lcom/android/billingclient/api/y;->i(F)I
 
     move-result p1
 
@@ -302,12 +302,12 @@
     int-to-float p1, p1
 
     .line 6
-    sget p2, La5/g0;->a:F
+    sget p2, La5/e0;->g:F
 
     mul-float p1, p1, p2
 
     .line 7
-    invoke-static {p1}, Lcom/android/billingclient/api/z;->n(F)I
+    invoke-static {p1}, Lcom/android/billingclient/api/y;->i(F)I
 
     move-result p1
 
@@ -320,12 +320,12 @@
     int-to-float p1, p1
 
     .line 8
-    sget p2, La5/g0;->a:F
+    sget p2, La5/e0;->g:F
 
     mul-float p1, p1, p2
 
     .line 9
-    invoke-static {p1}, Lcom/android/billingclient/api/z;->n(F)I
+    invoke-static {p1}, Lcom/android/billingclient/api/y;->i(F)I
 
     move-result p1
 
@@ -340,10 +340,10 @@
 
     const-string v0, "mainActivity"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
-    invoke-static {p1}, Lcom/android/billingclient/api/c0;->c(Lcom/supercell/id/ui/MainActivity;)Z
+    invoke-static {p1}, Lcom/android/billingclient/api/b0;->c(Lcom/supercell/id/ui/MainActivity;)Z
 
     move-result v0
 
@@ -379,27 +379,27 @@
             ")",
             "Ljava/lang/Class<",
             "+",
-            "Lwc/a1;",
+            "Lwc/b1;",
             ">;"
         }
     .end annotation
 
     const-string v0, "mainActivity"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     invoke-virtual {p1}, Lcom/supercell/id/ui/MainActivity;->i()Ljava/util/List;
 
     move-result-object v0
 
-    invoke-static {v0}, Lje/j;->A(Ljava/util/List;)Ljava/lang/Object;
+    invoke-static {v0}, Lje/j;->v(Ljava/util/List;)Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Lcom/supercell/id/ui/BackStack$Entry;
 
-    invoke-static {v0, p0}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, p0}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
@@ -412,9 +412,9 @@
 
     const-string v2, "mainActivity.resources"
 
-    invoke-static {v1, v2}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-static {v1}, Lcom/android/billingclient/api/c0;->k(Landroid/content/res/Resources;)Z
+    invoke-static {v1}, Lcom/android/billingclient/api/b0;->l(Landroid/content/res/Resources;)Z
 
     move-result v1
 
@@ -432,9 +432,9 @@
 
     move-result-object v1
 
-    invoke-static {v1, v2}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-static {v1}, Lcom/android/billingclient/api/c0;->k(Landroid/content/res/Resources;)Z
+    invoke-static {v1}, Lcom/android/billingclient/api/b0;->l(Landroid/content/res/Resources;)Z
 
     move-result v1
 
@@ -446,13 +446,13 @@
 
     .line 4
     :cond_1
-    invoke-static {p1}, Lcom/android/billingclient/api/c0;->d(Lcom/supercell/id/ui/MainActivity;)Z
+    invoke-static {p1}, Lcom/android/billingclient/api/b0;->d(Lcom/supercell/id/ui/MainActivity;)Z
 
     move-result v1
 
     if-nez v1, :cond_2
 
-    invoke-static {p1}, Lcom/android/billingclient/api/c0;->c(Lcom/supercell/id/ui/MainActivity;)Z
+    invoke-static {p1}, Lcom/android/billingclient/api/b0;->c(Lcom/supercell/id/ui/MainActivity;)Z
 
     move-result v1
 
@@ -467,13 +467,13 @@
 
     .line 5
     :cond_3
-    invoke-static {p1}, Lcom/android/billingclient/api/c0;->d(Lcom/supercell/id/ui/MainActivity;)Z
+    invoke-static {p1}, Lcom/android/billingclient/api/b0;->d(Lcom/supercell/id/ui/MainActivity;)Z
 
     move-result v1
 
     if-nez v1, :cond_6
 
-    invoke-static {p1}, Lcom/android/billingclient/api/c0;->c(Lcom/supercell/id/ui/MainActivity;)Z
+    invoke-static {p1}, Lcom/android/billingclient/api/b0;->c(Lcom/supercell/id/ui/MainActivity;)Z
 
     move-result p1
 
@@ -491,7 +491,7 @@
 
     .line 7
     :cond_5
-    const-class p1, Lwc/c1;
+    const-class p1, Lwc/d1;
 
     goto :goto_1
 
@@ -516,7 +516,7 @@
         }
     .end annotation
 
-    iget-object v0, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;->h:Ljava/lang/Class;
+    iget-object v0, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;->i:Ljava/lang/Class;
 
     return-object v0
 .end method
@@ -538,7 +538,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;->i:Ljava/lang/String;
+    iget-object v1, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;->j:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -546,7 +546,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;->j:Lcom/supercell/id/model/IdSocialAccount;
+    iget-object v1, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;->k:Lcom/supercell/id/model/IdSocialAccount;
 
     if-eqz v1, :cond_0
 
@@ -559,17 +559,17 @@
     goto :goto_0
 
     :cond_0
-    iget-object v1, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;->j:Lcom/supercell/id/model/IdSocialAccount;
+    iget-object v1, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;->k:Lcom/supercell/id/model/IdSocialAccount;
 
     if-eqz v1, :cond_1
 
-    invoke-virtual {v1}, Lcom/supercell/id/model/IdSocialAccount;->a()Lvc/e;
+    invoke-virtual {v1}, Lcom/supercell/id/model/IdSocialAccount;->a()Lvc/d;
 
     move-result-object v1
 
     if-eqz v1, :cond_1
 
-    invoke-virtual {v1}, Lvc/e;->a()Ljava/lang/String;
+    invoke-virtual {v1}, Lvc/d;->a()Ljava/lang/String;
 
     move-result-object v1
 
@@ -607,85 +607,85 @@
 
     check-cast p1, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;
 
-    iget-object v0, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;->i:Ljava/lang/String;
+    iget-object v0, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;->j:Ljava/lang/String;
 
-    iget-object v1, p1, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;->i:Ljava/lang/String;
+    iget-object v1, p1, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;->j:Ljava/lang/String;
 
-    invoke-static {v0, v1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    iget-object v0, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;->j:Lcom/supercell/id/model/IdSocialAccount;
-
-    iget-object v1, p1, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;->j:Lcom/supercell/id/model/IdSocialAccount;
-
-    invoke-static {v0, v1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;->k:Ljava/lang/String;
+    iget-object v0, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;->k:Lcom/supercell/id/model/IdSocialAccount;
 
-    iget-object v1, p1, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;->k:Ljava/lang/String;
+    iget-object v1, p1, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;->k:Lcom/supercell/id/model/IdSocialAccount;
 
-    invoke-static {v0, v1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    iget-object v0, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;->l:Lcom/supercell/id/model/ProfileImage;
-
-    iget-object v1, p1, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;->l:Lcom/supercell/id/model/ProfileImage;
-
-    invoke-static {v0, v1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;->m:Lcom/supercell/id/model/IdRelationshipStatus;
+    iget-object v0, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;->l:Ljava/lang/String;
 
-    iget-object v1, p1, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;->m:Lcom/supercell/id/model/IdRelationshipStatus;
+    iget-object v1, p1, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;->l:Ljava/lang/String;
 
-    invoke-static {v0, v1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    iget-object v0, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;->n:Lcom/supercell/id/model/IdPresenceStatus;
-
-    iget-object v1, p1, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;->n:Lcom/supercell/id/model/IdPresenceStatus;
-
-    invoke-static {v0, v1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    iget-boolean v0, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;->o:Z
+    iget-object v0, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;->m:Lcom/supercell/id/model/ProfileImage;
 
-    iget-boolean v1, p1, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;->o:Z
+    iget-object v1, p1, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;->m:Lcom/supercell/id/model/ProfileImage;
+
+    invoke-static {v0, v1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    iget-object v0, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;->n:Lcom/supercell/id/model/IdRelationshipStatus;
+
+    iget-object v1, p1, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;->n:Lcom/supercell/id/model/IdRelationshipStatus;
+
+    invoke-static {v0, v1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    iget-object v0, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;->o:Lcom/supercell/id/model/IdPresenceStatus;
+
+    iget-object v1, p1, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;->o:Lcom/supercell/id/model/IdPresenceStatus;
+
+    invoke-static {v0, v1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    iget-boolean v0, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;->p:Z
+
+    iget-boolean v1, p1, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;->p:Z
 
     if-ne v0, v1, :cond_0
 
-    iget-object v0, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;->p:Ljava/lang/String;
+    iget-object v0, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;->q:Ljava/lang/String;
 
-    iget-object v1, p1, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;->p:Ljava/lang/String;
+    iget-object v1, p1, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;->q:Ljava/lang/String;
 
-    invoke-static {v0, v1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    iget-boolean v0, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;->q:Z
+    iget-boolean v0, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;->r:Z
 
-    iget-boolean p1, p1, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;->q:Z
+    iget-boolean p1, p1, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;->r:Z
 
     if-ne v0, p1, :cond_0
 
@@ -706,7 +706,7 @@
 .method public final hashCode()I
     .locals 4
 
-    iget-object v0, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;->i:Ljava/lang/String;
+    iget-object v0, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;->j:Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -724,7 +724,7 @@
     :goto_0
     mul-int/lit8 v0, v0, 0x1f
 
-    iget-object v2, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;->j:Lcom/supercell/id/model/IdSocialAccount;
+    iget-object v2, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;->k:Lcom/supercell/id/model/IdSocialAccount;
 
     if-eqz v2, :cond_1
 
@@ -742,7 +742,7 @@
 
     mul-int/lit8 v0, v0, 0x1f
 
-    iget-object v2, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;->k:Ljava/lang/String;
+    iget-object v2, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;->l:Ljava/lang/String;
 
     if-eqz v2, :cond_2
 
@@ -760,7 +760,7 @@
 
     mul-int/lit8 v0, v0, 0x1f
 
-    iget-object v2, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;->l:Lcom/supercell/id/model/ProfileImage;
+    iget-object v2, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;->m:Lcom/supercell/id/model/ProfileImage;
 
     if-eqz v2, :cond_3
 
@@ -778,7 +778,7 @@
 
     mul-int/lit8 v0, v0, 0x1f
 
-    iget-object v2, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;->m:Lcom/supercell/id/model/IdRelationshipStatus;
+    iget-object v2, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;->n:Lcom/supercell/id/model/IdRelationshipStatus;
 
     if-eqz v2, :cond_4
 
@@ -796,7 +796,7 @@
 
     mul-int/lit8 v0, v0, 0x1f
 
-    iget-object v2, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;->n:Lcom/supercell/id/model/IdPresenceStatus;
+    iget-object v2, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;->o:Lcom/supercell/id/model/IdPresenceStatus;
 
     if-eqz v2, :cond_5
 
@@ -814,7 +814,7 @@
 
     mul-int/lit8 v0, v0, 0x1f
 
-    iget-boolean v2, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;->o:Z
+    iget-boolean v2, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;->p:Z
 
     const/4 v3, 0x1
 
@@ -827,7 +827,7 @@
 
     mul-int/lit8 v0, v0, 0x1f
 
-    iget-object v2, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;->p:Ljava/lang/String;
+    iget-object v2, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;->q:Ljava/lang/String;
 
     if-eqz v2, :cond_7
 
@@ -840,7 +840,7 @@
 
     mul-int/lit8 v0, v0, 0x1f
 
-    iget-boolean v1, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;->q:Z
+    iget-boolean v1, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;->r:Z
 
     if-eqz v1, :cond_8
 
@@ -860,10 +860,10 @@
 
     const-string v0, "mainActivity"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
-    invoke-static {p1}, Lcom/android/billingclient/api/c0;->c(Lcom/supercell/id/ui/MainActivity;)Z
+    invoke-static {p1}, Lcom/android/billingclient/api/b0;->c(Lcom/supercell/id/ui/MainActivity;)Z
 
     move-result v0
 
@@ -876,7 +876,7 @@
     int-to-float p1, p1
 
     .line 2
-    sget v0, La5/g0;->a:F
+    sget v0, La5/e0;->g:F
 
     mul-float p1, p1, v0
 
@@ -895,7 +895,7 @@
 
     move-result p1
 
-    invoke-static {p1}, Lcom/android/billingclient/api/z;->n(F)I
+    invoke-static {p1}, Lcom/android/billingclient/api/y;->i(F)I
 
     move-result p1
 
@@ -906,12 +906,12 @@
     int-to-float p1, p1
 
     .line 4
-    sget p4, La5/g0;->a:F
+    sget p4, La5/e0;->g:F
 
     mul-float p1, p1, p4
 
     .line 5
-    invoke-static {p1}, Lcom/android/billingclient/api/z;->n(F)I
+    invoke-static {p1}, Lcom/android/billingclient/api/y;->i(F)I
 
     move-result p1
 
@@ -943,7 +943,7 @@
 .method public final l()Z
     .locals 1
 
-    iget-boolean v0, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;->g:Z
+    iget-boolean v0, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;->h:Z
 
     return v0
 .end method
@@ -953,10 +953,10 @@
 
     const-string v0, "mainActivity"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
-    invoke-static {p1}, Lcom/android/billingclient/api/c0;->d(Lcom/supercell/id/ui/MainActivity;)Z
+    invoke-static {p1}, Lcom/android/billingclient/api/b0;->d(Lcom/supercell/id/ui/MainActivity;)Z
 
     move-result v0
 
@@ -978,7 +978,7 @@
 
     .line 2
     :cond_0
-    invoke-static {p1}, Lcom/android/billingclient/api/c0;->c(Lcom/supercell/id/ui/MainActivity;)Z
+    invoke-static {p1}, Lcom/android/billingclient/api/b0;->c(Lcom/supercell/id/ui/MainActivity;)Z
 
     move-result p1
 
@@ -989,12 +989,12 @@
     int-to-float p1, p1
 
     .line 3
-    sget p3, La5/g0;->a:F
+    sget p3, La5/e0;->g:F
 
     mul-float p1, p1, p3
 
     .line 4
-    invoke-static {p1}, Lcom/android/billingclient/api/z;->n(F)I
+    invoke-static {p1}, Lcom/android/billingclient/api/y;->i(F)I
 
     move-result p1
 
@@ -1006,7 +1006,7 @@
 
     mul-float p1, p1, p2
 
-    invoke-static {p1}, Lcom/android/billingclient/api/z;->n(F)I
+    invoke-static {p1}, Lcom/android/billingclient/api/y;->i(F)I
 
     move-result p1
 
@@ -1025,20 +1025,20 @@
     const-string v1, "mainActivity.resources"
 
     .line 1
-    invoke-static {p1, v0, v1}, Lk3/ax;->e(Lcom/supercell/id/ui/MainActivity;Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {p1, v0, v1}, Lwc/v0;->a(Lcom/supercell/id/ui/MainActivity;Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
     .line 2
-    invoke-static {p1}, Lcom/android/billingclient/api/c0;->d(Lcom/supercell/id/ui/MainActivity;)Z
+    invoke-static {p1}, Lcom/android/billingclient/api/b0;->d(Lcom/supercell/id/ui/MainActivity;)Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    invoke-static {p1}, Lcom/android/billingclient/api/c0;->c(Lcom/supercell/id/ui/MainActivity;)Z
+    invoke-static {p1}, Lcom/android/billingclient/api/b0;->c(Lcom/supercell/id/ui/MainActivity;)Z
 
     move-result p1
 
@@ -1066,7 +1066,7 @@
     move-result-object v0
 
     .line 2
-    iget-object v1, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;->i:Ljava/lang/String;
+    iget-object v1, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;->j:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -1074,7 +1074,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;->j:Lcom/supercell/id/model/IdSocialAccount;
+    iget-object v1, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;->k:Lcom/supercell/id/model/IdSocialAccount;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -1082,7 +1082,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;->k:Ljava/lang/String;
+    iget-object v1, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;->l:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -1090,7 +1090,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;->l:Lcom/supercell/id/model/ProfileImage;
+    iget-object v1, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;->m:Lcom/supercell/id/model/ProfileImage;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -1098,7 +1098,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;->m:Lcom/supercell/id/model/IdRelationshipStatus;
+    iget-object v1, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;->n:Lcom/supercell/id/model/IdRelationshipStatus;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -1106,7 +1106,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;->n:Lcom/supercell/id/model/IdPresenceStatus;
+    iget-object v1, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;->o:Lcom/supercell/id/model/IdPresenceStatus;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -1114,7 +1114,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean v1, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;->o:Z
+    iget-boolean v1, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;->p:Z
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -1122,7 +1122,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;->p:Ljava/lang/String;
+    iget-object v1, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;->q:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -1130,12 +1130,12 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean v1, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;->q:Z
+    iget-boolean v1, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;->r:Z
 
     const-string v2, ")"
 
     .line 3
-    invoke-static {v0, v1, v2}, Landroidx/appcompat/app/j;->b(Ljava/lang/StringBuilder;ZLjava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, v1, v2}, Landroidx/appcompat/app/j;->a(Ljava/lang/StringBuilder;ZLjava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -1147,51 +1147,51 @@
 
     const-string v0, "dest"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
-    iget-object v0, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;->i:Ljava/lang/String;
+    iget-object v0, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;->j:Ljava/lang/String;
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
     .line 2
-    iget-object v0, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;->j:Lcom/supercell/id/model/IdSocialAccount;
+    iget-object v0, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;->k:Lcom/supercell/id/model/IdSocialAccount;
 
-    invoke-static {p1, v0}, Lvc/b0;->b(Landroid/os/Parcel;Lcom/supercell/id/model/IdSocialAccount;)V
+    invoke-static {p1, v0}, Landroidx/appcompat/widget/g;->e(Landroid/os/Parcel;Lcom/supercell/id/model/IdSocialAccount;)V
 
     .line 3
-    iget-object v0, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;->k:Ljava/lang/String;
+    iget-object v0, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;->l:Ljava/lang/String;
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
     .line 4
-    iget-object v0, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;->l:Lcom/supercell/id/model/ProfileImage;
+    iget-object v0, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;->m:Lcom/supercell/id/model/ProfileImage;
 
     invoke-virtual {p1, v0, p2}, Landroid/os/Parcel;->writeParcelable(Landroid/os/Parcelable;I)V
 
     .line 5
-    iget-object v0, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;->m:Lcom/supercell/id/model/IdRelationshipStatus;
+    iget-object v0, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;->n:Lcom/supercell/id/model/IdRelationshipStatus;
 
     invoke-virtual {p1, v0, p2}, Landroid/os/Parcel;->writeParcelable(Landroid/os/Parcelable;I)V
 
     .line 6
-    iget-object v0, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;->n:Lcom/supercell/id/model/IdPresenceStatus;
+    iget-object v0, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;->o:Lcom/supercell/id/model/IdPresenceStatus;
 
     invoke-virtual {p1, v0, p2}, Landroid/os/Parcel;->writeParcelable(Landroid/os/Parcelable;I)V
 
     .line 7
-    iget-boolean p2, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;->o:Z
+    iget-boolean p2, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;->p:Z
 
     .line 8
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 9
-    iget-object p2, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;->p:Ljava/lang/String;
+    iget-object p2, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;->q:Ljava/lang/String;
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
     .line 10
-    iget-boolean p2, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;->q:Z
+    iget-boolean p2, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;->r:Z
 
     .line 11
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
@@ -1218,7 +1218,7 @@
     const-string v1, "mainActivity.resources"
 
     .line 1
-    invoke-static {p1, v0, v1}, Lk3/ax;->e(Lcom/supercell/id/ui/MainActivity;Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {p1, v0, v1}, Lwc/v0;->a(Lcom/supercell/id/ui/MainActivity;Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v0
 
@@ -1240,19 +1240,19 @@
     goto :goto_1
 
     :cond_0
-    const-class p1, Lwc/d1;
+    const-class p1, Lwc/e1;
 
     goto :goto_1
 
     .line 3
     :cond_1
-    invoke-static {p1}, Lcom/android/billingclient/api/c0;->d(Lcom/supercell/id/ui/MainActivity;)Z
+    invoke-static {p1}, Lcom/android/billingclient/api/b0;->d(Lcom/supercell/id/ui/MainActivity;)Z
 
     move-result v0
 
     if-nez v0, :cond_4
 
-    invoke-static {p1}, Lcom/android/billingclient/api/c0;->c(Lcom/supercell/id/ui/MainActivity;)Z
+    invoke-static {p1}, Lcom/android/billingclient/api/b0;->c(Lcom/supercell/id/ui/MainActivity;)Z
 
     move-result v0
 
@@ -1266,9 +1266,9 @@
 
     move-result-object p1
 
-    invoke-static {p1, v1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v1}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-static {p1}, Lcom/android/billingclient/api/c0;->m(Landroid/content/res/Resources;)Z
+    invoke-static {p1}, Lcom/android/billingclient/api/b0;->n(Landroid/content/res/Resources;)Z
 
     move-result p1
 
@@ -1298,7 +1298,7 @@
 
     const-string v0, "mainActivity"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/4 p1, 0x0
 

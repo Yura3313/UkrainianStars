@@ -754,9 +754,9 @@
     move/from16 v12, p4
 
     .line 1
-    sget-object v13, Lq/e$a;->h:Lq/e$a;
+    sget-object v13, Lq/e$a;->i:Lq/e$a;
 
-    sget-object v14, Lq/e$a;->g:Lq/e$a;
+    sget-object v14, Lq/e$a;->h:Lq/e$a;
 
     iget v0, v8, Lq/j;->p0:I
 
@@ -2771,7 +2771,7 @@
     aget-object v1, v1, v2
 
     .line 2
-    sget-object v3, Lq/e$a;->h:Lq/e$a;
+    sget-object v3, Lq/e$a;->i:Lq/e$a;
 
     if-ne v1, v3, :cond_5
 
@@ -2816,7 +2816,7 @@
 
     move-result v6
 
-    sget-object v7, Lq/e$a;->f:Lq/e$a;
+    sget-object v7, Lq/e$a;->g:Lq/e$a;
 
     move-object v3, p0
 
@@ -2888,7 +2888,7 @@
     aget-object v1, v1, v0
 
     .line 2
-    sget-object v2, Lq/e$a;->h:Lq/e$a;
+    sget-object v2, Lq/e$a;->i:Lq/e$a;
 
     if-ne v1, v2, :cond_5
 
@@ -2926,7 +2926,7 @@
     iput-boolean v2, p1, Lq/e;->g:Z
 
     .line 7
-    sget-object v5, Lq/e$a;->f:Lq/e$a;
+    sget-object v5, Lq/e$a;->g:Lq/e$a;
 
     .line 8
     iget-object v0, p1, Lq/e;->O:[Lq/e$a;

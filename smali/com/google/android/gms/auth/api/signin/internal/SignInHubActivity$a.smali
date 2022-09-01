@@ -53,10 +53,10 @@
     iget-object p1, p0, Lcom/google/android/gms/auth/api/signin/internal/SignInHubActivity$a;->a:Lcom/google/android/gms/auth/api/signin/internal/SignInHubActivity;
 
     .line 3
-    iget v0, p1, Lcom/google/android/gms/auth/api/signin/internal/SignInHubActivity;->i:I
+    iget v0, p1, Lcom/google/android/gms/auth/api/signin/internal/SignInHubActivity;->j:I
 
     .line 4
-    iget-object v1, p1, Lcom/google/android/gms/auth/api/signin/internal/SignInHubActivity;->j:Landroid/content/Intent;
+    iget-object v1, p1, Lcom/google/android/gms/auth/api/signin/internal/SignInHubActivity;->k:Landroid/content/Intent;
 
     .line 5
     invoke-virtual {p1, v0, v1}, Landroid/app/Activity;->setResult(ILandroid/content/Intent;)V

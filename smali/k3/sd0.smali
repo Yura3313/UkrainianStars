@@ -1,83 +1,95 @@
-.class public final synthetic Lk3/sd0;
+.class public final Lk3/sd0;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lk3/nl0;
+.implements Lk3/ad0;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Lk3/ad0<",
+        "Lorg/json/JSONObject;",
+        ">;"
+    }
+.end annotation
 
 
 # instance fields
-.field public final synthetic a:I
-
-.field public final b:Ljava/lang/Object;
+.field public final a:Lorg/json/JSONObject;
 
 
 # direct methods
-.method public synthetic constructor <init>(Ljava/lang/Object;I)V
+.method public constructor <init>(Lorg/json/JSONObject;)V
     .locals 0
 
-    iput p2, p0, Lk3/sd0;->a:I
-
-    iput-object p1, p0, Lk3/sd0;->b:Ljava/lang/Object;
-
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    iput-object p1, p0, Lk3/sd0;->a:Lorg/json/JSONObject;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Ljava/lang/Object;)Lk3/em0;
-    .locals 2
+.method public final b(Ljava/lang/Object;)V
+    .locals 4
 
-    iget v0, p0, Lk3/sd0;->a:I
+    .line 1
+    check-cast p1, Lorg/json/JSONObject;
 
-    packed-switch v0, :pswitch_data_0
+    :try_start_0
+    const-string v0, "content_info"
+
+    .line 2
+    invoke-static {p1, v0}, Lk3/mc;->j(Lorg/json/JSONObject;Ljava/lang/String;)Lorg/json/JSONObject;
+
+    move-result-object p1
+
+    .line 3
+    iget-object v0, p0, Lk3/sd0;->a:Lorg/json/JSONObject;
+
+    .line 4
+    invoke-virtual {v0}, Lorg/json/JSONObject;->keys()Ljava/util/Iterator;
+
+    move-result-object v1
+
+    .line 5
+    :goto_0
+    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v2
+
+    if-eqz v2, :cond_0
+
+    .line 6
+    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Ljava/lang/String;
+
+    .line 7
+    invoke-virtual {v0, v2}, Lorg/json/JSONObject;->get(Ljava/lang/String;)Ljava/lang/Object;
+
+    move-result-object v3
+
+    invoke-virtual {p1, v2, v3}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
+    :try_end_0
+    .catch Lorg/json/JSONException; {:try_start_0 .. :try_end_0} :catch_0
 
     goto :goto_0
 
-    .line 1
-    :pswitch_0
-    iget-object v0, p0, Lk3/sd0;->b:Ljava/lang/Object;
+    :cond_0
+    return-void
 
-    check-cast v0, Lk3/qd0;
+    .line 8
+    :catch_0
+    invoke-static {}, Lcom/google/android/gms/ads/a;->k()Z
 
-    check-cast p1, Ljava/lang/Throwable;
-
-    .line 2
-    new-instance p1, Lk3/dc0;
-
-    iget-object v0, v0, Lk3/qd0;->c:Ljava/lang/String;
-
-    const/4 v1, 0x1
-
-    invoke-direct {p1, v0, v1}, Lk3/dc0;-><init>(Ljava/lang/String;I)V
-
-    invoke-static {p1}, Lk3/am0;->f(Ljava/lang/Object;)Lk3/em0;
-
-    move-result-object p1
-
-    return-object p1
-
-    .line 3
-    :goto_0
-    iget-object v0, p0, Lk3/sd0;->b:Ljava/lang/Object;
-
-    check-cast v0, Lk3/gi0;
-
-    .line 4
-    invoke-interface {v0, p1}, Lk3/gi0;->a(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object p1
-
-    invoke-static {p1}, Lk3/am0;->f(Ljava/lang/Object;)Lk3/em0;
-
-    move-result-object p1
-
-    return-object p1
-
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+    return-void
 .end method

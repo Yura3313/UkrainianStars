@@ -2,70 +2,63 @@
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
+# interfaces
+.implements Lk3/k11;
+
 
 # instance fields
-.field public final a:Ljava/util/concurrent/ExecutorService;
+.field public final a:[B
 
-.field public b:Lk3/j11;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lk3/j11<",
-            "+",
-            "Lk3/tz0;",
-            ">;"
-        }
-    .end annotation
-.end field
+.field public b:Landroid/net/Uri;
 
-.field public c:Ljava/io/IOException;
+.field public c:I
+
+.field public d:I
 
 
 # direct methods
-.method public constructor <init>()V
+.method public constructor <init>([B)V
     .locals 1
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    sget v0, Lk3/v11;->a:I
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 3
-    new-instance v0, Lk3/u11;
+    array-length v0, p1
 
-    invoke-direct {v0}, Lk3/u11;-><init>()V
+    if-lez v0, :cond_0
 
-    invoke-static {v0}, Ljava/util/concurrent/Executors;->newSingleThreadExecutor(Ljava/util/concurrent/ThreadFactory;)Ljava/util/concurrent/ExecutorService;
+    const/4 v0, 0x1
 
-    move-result-object v0
+    goto :goto_0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    :goto_0
+    invoke-static {v0}, Lcom/google/android/gms/ads/a;->a(Z)V
 
     .line 4
-    iput-object v0, p0, Lk3/i11;->a:Ljava/util/concurrent/ExecutorService;
+    iput-object p1, p0, Lk3/i11;->a:[B
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a()Z
+.method public final W0()Landroid/net/Uri;
     .locals 1
 
-    iget-object v0, p0, Lk3/i11;->b:Lk3/j11;
+    iget-object v0, p0, Lk3/i11;->b:Landroid/net/Uri;
 
-    if-eqz v0, :cond_0
-
-    const/4 v0, 0x1
-
-    return v0
-
-    :cond_0
-    const/4 v0, 0x0
-
-    return v0
+    return-object v0
 .end method
 
-.method public final b()V
-    .locals 3
+.method public final a(Lk3/l11;)J
+    .locals 8
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -73,38 +66,165 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lk3/i11;->c:Ljava/io/IOException;
+    iget-object v0, p1, Lk3/l11;->a:Landroid/net/Uri;
 
-    if-nez v0, :cond_2
+    iput-object v0, p0, Lk3/i11;->b:Landroid/net/Uri;
 
     .line 2
-    iget-object v0, p0, Lk3/i11;->b:Lk3/j11;
+    iget-wide v0, p1, Lk3/l11;->d:J
 
-    if-eqz v0, :cond_1
+    long-to-int v2, v0
+
+    iput v2, p0, Lk3/i11;->c:I
 
     .line 3
-    iget v1, v0, Lk3/j11;->h:I
+    iget-wide v3, p1, Lk3/l11;->e:J
+
+    const-wide/16 v5, -0x1
+
+    cmp-long v7, v3, v5
+
+    if-nez v7, :cond_0
 
     .line 4
-    iget-object v2, v0, Lk3/j11;->j:Ljava/io/IOException;
+    iget-object v3, p0, Lk3/i11;->a:[B
 
-    if-eqz v2, :cond_1
+    array-length v3, v3
 
-    iget v0, v0, Lk3/j11;->k:I
+    int-to-long v3, v3
 
-    if-gt v0, v1, :cond_0
+    sub-long/2addr v3, v0
 
-    goto :goto_0
+    :cond_0
+    long-to-int v0, v3
+
+    iput v0, p0, Lk3/i11;->d:I
+
+    if-lez v0, :cond_1
+
+    add-int/2addr v2, v0
 
     .line 5
-    :cond_0
-    throw v2
+    iget-object v1, p0, Lk3/i11;->a:[B
 
-    :cond_1
-    :goto_0
-    return-void
+    array-length v1, v1
+
+    if-gt v2, v1, :cond_1
+
+    int-to-long v0, v0
+
+    return-wide v0
 
     .line 6
-    :cond_2
+    :cond_1
+    new-instance v0, Ljava/io/IOException;
+
+    iget v1, p0, Lk3/i11;->c:I
+
+    iget-wide v2, p1, Lk3/l11;->e:J
+
+    iget-object p1, p0, Lk3/i11;->a:[B
+
+    array-length p1, p1
+
+    const/16 v4, 0x4d
+
+    new-instance v5, Ljava/lang/StringBuilder;
+
+    invoke-direct {v5, v4}, Ljava/lang/StringBuilder;-><init>(I)V
+
+    const-string v4, "Unsatisfiable range: ["
+
+    invoke-virtual {v5, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v5, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    const-string v1, ", "
+
+    invoke-virtual {v5, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v5, v2, v3}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
+    const-string v1, "], length: "
+
+    invoke-virtual {v5, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v5, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-direct {v0, p1}, Ljava/io/IOException;-><init>(Ljava/lang/String;)V
+
     throw v0
+.end method
+
+.method public final close()V
+    .locals 1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    const/4 v0, 0x0
+
+    iput-object v0, p0, Lk3/i11;->b:Landroid/net/Uri;
+
+    return-void
+.end method
+
+.method public final read([BII)I
+    .locals 2
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    if-nez p3, :cond_0
+
+    const/4 p1, 0x0
+
+    return p1
+
+    .line 1
+    :cond_0
+    iget v0, p0, Lk3/i11;->d:I
+
+    if-nez v0, :cond_1
+
+    const/4 p1, -0x1
+
+    return p1
+
+    .line 2
+    :cond_1
+    invoke-static {p3, v0}, Ljava/lang/Math;->min(II)I
+
+    move-result p3
+
+    .line 3
+    iget-object v0, p0, Lk3/i11;->a:[B
+
+    iget v1, p0, Lk3/i11;->c:I
+
+    invoke-static {v0, v1, p1, p2, p3}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+
+    .line 4
+    iget p1, p0, Lk3/i11;->c:I
+
+    add-int/2addr p1, p3
+
+    iput p1, p0, Lk3/i11;->c:I
+
+    .line 5
+    iget p1, p0, Lk3/i11;->d:I
+
+    sub-int/2addr p1, p3
+
+    iput p1, p0, Lk3/i11;->d:I
+
+    return p3
 .end method

@@ -40,7 +40,7 @@
 
     const-string v0, "seenFriends"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-direct {p0}, Lbe/b$a;-><init>()V
 
@@ -66,7 +66,7 @@
 
     iget-object p1, p1, Lbe/b$a$b;->a:Ljava/lang/Iterable;
 
-    invoke-static {v0, p1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, p1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -124,7 +124,7 @@
     .line 3
     iget-object v3, p0, Lbe/b$a$b;->a:Ljava/lang/Iterable;
 
-    invoke-static {v2, v3}, Lje/v;->g(Ljava/util/Set;Ljava/lang/Iterable;)Ljava/util/Set;
+    invoke-static {v2, v3}, Lje/v;->h(Ljava/util/Set;Ljava/lang/Iterable;)Ljava/util/Set;
 
     move-result-object v2
 
@@ -140,7 +140,7 @@
 
     iget-object v2, p0, Lbe/b$a$b;->a:Ljava/lang/Iterable;
 
-    invoke-static {v2}, Lje/j;->U(Ljava/lang/Iterable;)Ljava/util/Set;
+    invoke-static {v2}, Lje/j;->P(Ljava/lang/Iterable;)Ljava/util/Set;
 
     move-result-object v2
 

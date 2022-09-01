@@ -22,14 +22,14 @@
 
 
 # instance fields
-.field public final synthetic f:Lo0/c;
+.field public final synthetic g:Lo0/c;
 
 
 # direct methods
 .method public constructor <init>(Lo0/c;Ljava/util/concurrent/Callable;)V
     .locals 0
 
-    iput-object p1, p0, Lo0/c$c;->f:Lo0/c;
+    iput-object p1, p0, Lo0/c$c;->g:Lo0/c;
 
     invoke-direct {p0, p2}, Ljava/util/concurrent/FutureTask;-><init>(Ljava/util/concurrent/Callable;)V
 
@@ -50,10 +50,10 @@
     move-result-object v1
 
     .line 2
-    iget-object v2, p0, Lo0/c$c;->f:Lo0/c;
+    iget-object v2, p0, Lo0/c$c;->g:Lo0/c;
 
     .line 3
-    iget-object v3, v2, Lo0/c;->j:Ljava/util/concurrent/atomic/AtomicBoolean;
+    iget-object v3, v2, Lo0/c;->k:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     invoke-virtual {v3}, Ljava/util/concurrent/atomic/AtomicBoolean;->get()Z
 
@@ -83,12 +83,12 @@
 
     .line 6
     :catch_0
-    iget-object v0, p0, Lo0/c$c;->f:Lo0/c;
+    iget-object v0, p0, Lo0/c$c;->g:Lo0/c;
 
     const/4 v1, 0x0
 
     .line 7
-    iget-object v2, v0, Lo0/c;->j:Ljava/util/concurrent/atomic/AtomicBoolean;
+    iget-object v2, v0, Lo0/c;->k:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     invoke-virtual {v2}, Ljava/util/concurrent/atomic/AtomicBoolean;->get()Z
 

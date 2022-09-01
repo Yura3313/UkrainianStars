@@ -79,7 +79,7 @@
     sput-object v0, Lv3/z4;->b:Lsun/misc/Unsafe;
 
     .line 3
-    sget-object v8, Lv3/u1;->a:Ljava/lang/Class;
+    sget-object v8, Lv3/t1;->a:Ljava/lang/Class;
 
     .line 4
     sput-object v8, Lv3/z4;->c:Ljava/lang/Class;
@@ -104,7 +104,7 @@
 
     .line 7
     :cond_0
-    invoke-static {}, Lv3/u1;->a()Z
+    invoke-static {}, Lv3/t1;->a()Z
 
     move-result v12
 
@@ -226,7 +226,7 @@
 
     .line 16
     :cond_5
-    invoke-static {}, Lv3/u1;->a()Z
+    invoke-static {}, Lv3/t1;->a()Z
 
     move-result v5
 
@@ -528,7 +528,7 @@
     invoke-virtual {v0, v3, v4}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
 
     .line 40
-    invoke-static {}, Lv3/u1;->a()Z
+    invoke-static {}, Lv3/t1;->a()Z
 
     move-result v3
 
@@ -1161,7 +1161,7 @@
     .line 1
     const-class v0, [B
 
-    invoke-static {}, Lv3/u1;->a()Z
+    invoke-static {}, Lv3/t1;->a()Z
 
     move-result v1
 
@@ -1437,7 +1437,7 @@
     .locals 4
 
     .line 1
-    invoke-static {}, Lv3/u1;->a()Z
+    invoke-static {}, Lv3/t1;->a()Z
 
     move-result v0
 

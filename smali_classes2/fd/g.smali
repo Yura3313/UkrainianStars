@@ -4,7 +4,7 @@
 
 
 # static fields
-.field public static final a:Lae/f2;
+.field public static final a:Lae/e2;
 
 .field public static final b:Lae/k;
 
@@ -14,13 +14,13 @@
     .locals 4
 
     .line 1
-    new-instance v0, Lae/f2;
+    new-instance v0, Lae/e2;
 
     const-string v1, "account_friends_pending_requests"
 
-    invoke-direct {v0, v1}, Lae/f2;-><init>(Ljava/lang/String;)V
+    invoke-direct {v0, v1}, Lae/e2;-><init>(Ljava/lang/String;)V
 
-    sput-object v0, Lfd/g;->a:Lae/f2;
+    sput-object v0, Lfd/g;->a:Lae/e2;
 
     .line 2
     new-instance v0, Lae/k;
@@ -31,7 +31,7 @@
 
     const/4 v3, 0x0
 
-    invoke-direct {v0, v1, v2, v3}, Lae/k;-><init>(IILse/e;)V
+    invoke-direct {v0, v1, v2, v3}, Lae/k;-><init>(IILse/f;)V
 
     sput-object v0, Lfd/g;->b:Lae/k;
 

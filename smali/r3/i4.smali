@@ -19,7 +19,7 @@
 
 
 # instance fields
-.field public final f:Lr3/s2;
+.field public final g:Lr3/s2;
 
 
 # direct methods
@@ -30,7 +30,7 @@
     invoke-direct {p0}, Ljava/util/AbstractList;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lr3/i4;->f:Lr3/s2;
+    iput-object p1, p0, Lr3/i4;->g:Lr3/s2;
 
     return-void
 .end method
@@ -43,12 +43,12 @@
     return-object p0
 .end method
 
-.method public final Z1(I)Ljava/lang/Object;
+.method public final Y1(I)Ljava/lang/Object;
     .locals 1
 
-    iget-object v0, p0, Lr3/i4;->f:Lr3/s2;
+    iget-object v0, p0, Lr3/i4;->g:Lr3/s2;
 
-    invoke-interface {v0, p1}, Lr3/s2;->Z1(I)Ljava/lang/Object;
+    invoke-interface {v0, p1}, Lr3/s2;->Y1(I)Ljava/lang/Object;
 
     move-result-object p1
 
@@ -58,7 +58,7 @@
 .method public final synthetic get(I)Ljava/lang/Object;
     .locals 1
 
-    iget-object v0, p0, Lr3/i4;->f:Lr3/s2;
+    iget-object v0, p0, Lr3/i4;->g:Lr3/s2;
 
     invoke-interface {v0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -115,7 +115,7 @@
         }
     .end annotation
 
-    iget-object v0, p0, Lr3/i4;->f:Lr3/s2;
+    iget-object v0, p0, Lr3/i4;->g:Lr3/s2;
 
     invoke-interface {v0}, Lr3/s2;->o0()Ljava/util/List;
 
@@ -127,7 +127,7 @@
 .method public final size()I
     .locals 1
 
-    iget-object v0, p0, Lr3/i4;->f:Lr3/s2;
+    iget-object v0, p0, Lr3/i4;->g:Lr3/s2;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
 

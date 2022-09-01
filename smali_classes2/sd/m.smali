@@ -108,7 +108,7 @@
 
     if-eqz v0, :cond_0
 
-    invoke-static {v0}, Lae/t;->a(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0}, Lae/t;->g(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -121,14 +121,14 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/supercell/id/model/IdSocialAccount;->a()Lvc/e;
+    invoke-virtual {v0}, Lcom/supercell/id/model/IdSocialAccount;->a()Lvc/d;
 
     move-result-object v0
 
     if-eqz v0, :cond_1
 
     .line 2
-    iget-object v0, v0, Lvc/e;->a:Ljava/lang/String;
+    iget-object v0, v0, Lvc/d;->a:Ljava/lang/String;
 
     goto :goto_0
 

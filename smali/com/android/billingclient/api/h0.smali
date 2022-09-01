@@ -7,18 +7,18 @@
 
 
 # instance fields
-.field public final synthetic f:Ljava/util/concurrent/Future;
+.field public final synthetic g:Lcom/android/billingclient/api/g;
 
-.field public final synthetic g:Ljava/lang/Runnable;
+.field public final synthetic h:Lcom/android/billingclient/api/e;
 
 
 # direct methods
-.method public constructor <init>(Ljava/util/concurrent/Future;Ljava/lang/Runnable;)V
+.method public constructor <init>(Lcom/android/billingclient/api/g;Lcom/android/billingclient/api/e;Ljava/lang/String;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/android/billingclient/api/h0;->f:Ljava/util/concurrent/Future;
+    iput-object p1, p0, Lcom/android/billingclient/api/h0;->g:Lcom/android/billingclient/api/g;
 
-    iput-object p2, p0, Lcom/android/billingclient/api/h0;->g:Ljava/lang/Runnable;
+    iput-object p2, p0, Lcom/android/billingclient/api/h0;->h:Lcom/android/billingclient/api/e;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,40 +30,20 @@
 .method public final run()V
     .locals 2
 
-    iget-object v0, p0, Lcom/android/billingclient/api/h0;->f:Ljava/util/concurrent/Future;
-
     .line 1
-    invoke-interface {v0}, Ljava/util/concurrent/Future;->isDone()Z
-
-    move-result v0
-
-    if-nez v0, :cond_0
-
-    iget-object v0, p0, Lcom/android/billingclient/api/h0;->f:Ljava/util/concurrent/Future;
-
-    invoke-interface {v0}, Ljava/util/concurrent/Future;->isCancelled()Z
-
-    move-result v0
-
-    if-nez v0, :cond_0
-
-    iget-object v0, p0, Lcom/android/billingclient/api/h0;->f:Ljava/util/concurrent/Future;
-
-    const/4 v1, 0x1
-
-    .line 2
-    invoke-interface {v0, v1}, Ljava/util/concurrent/Future;->cancel(Z)Z
-
-    .line 3
     sget v0, Lw3/a;->a:I
 
-    iget-object v0, p0, Lcom/android/billingclient/api/h0;->g:Ljava/lang/Runnable;
+    iget-object v0, p0, Lcom/android/billingclient/api/h0;->g:Lcom/android/billingclient/api/g;
 
-    if-eqz v0, :cond_0
+    iget-object v1, p0, Lcom/android/billingclient/api/h0;->h:Lcom/android/billingclient/api/e;
 
-    .line 4
-    invoke-interface {v0}, Ljava/lang/Runnable;->run()V
+    .line 2
+    check-cast v0, Lcom/supercell/titan/l;
 
-    :cond_0
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 3
+    iget v0, v1, Lcom/android/billingclient/api/e;->a:I
+
     return-void
 .end method

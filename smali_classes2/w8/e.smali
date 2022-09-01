@@ -14,7 +14,7 @@
 
 .field public e:Lt8/d;
 
-.field public f:Lk3/m6;
+.field public f:Lk3/n6;
 
 
 # direct methods
@@ -54,11 +54,11 @@
     iput-object v0, p0, Lw8/e;->e:Lt8/d;
 
     .line 7
-    new-instance v0, Lk3/m6;
+    new-instance v0, Lk3/n6;
 
-    invoke-direct {v0, p1, p2, p3, p4}, Lk3/m6;-><init>(Le8/s;La8/f;Li7/c;Ln8/c;)V
+    invoke-direct {v0, p1, p2, p3, p4}, Lk3/n6;-><init>(Le8/s;La8/f;Li7/c;Ln8/c;)V
 
-    iput-object v0, p0, Lw8/e;->f:Lk3/m6;
+    iput-object v0, p0, Lw8/e;->f:Lk3/n6;
 
     return-void
 .end method
@@ -74,7 +74,7 @@
     iget-object v1, p0, Lw8/e;->b:Li7/c;
 
     .line 2
-    iget-object v1, v1, Li7/c;->f:Ljava/lang/Long;
+    iget-object v1, v1, Li7/c;->g:Ljava/lang/Long;
 
     .line 3
     invoke-virtual {v1}, Ljava/lang/Long;->longValue()J
@@ -146,7 +146,7 @@
     iget-object v2, p0, Lw8/e;->b:Li7/c;
 
     .line 4
-    iget-object v2, v2, Li7/c;->f:Ljava/lang/Long;
+    iget-object v2, v2, Li7/c;->g:Ljava/lang/Long;
 
     .line 5
     invoke-virtual {v2}, Ljava/lang/Long;->longValue()J
@@ -158,7 +158,7 @@
     move-result-object v0
 
     .line 6
-    invoke-static {v0}, Lcom/google/android/play/core/appupdate/g;->b(Ljava/lang/String;)Z
+    invoke-static {v0}, La5/b0;->d(Ljava/lang/String;)Z
 
     move-result v2
     :try_end_1
@@ -190,7 +190,7 @@
     iget-object v2, p0, Lw8/e;->b:Li7/c;
 
     .line 10
-    iget-object v2, v2, Li7/c;->f:Ljava/lang/Long;
+    iget-object v2, v2, Li7/c;->g:Ljava/lang/Long;
 
     .line 11
     invoke-virtual {v2}, Ljava/lang/Long;->longValue()J
@@ -204,11 +204,11 @@
     invoke-virtual {v1, v2, v3, v4}, Le8/c;->e(JZ)V
 
     .line 12
-    iget-object v1, p0, Lw8/e;->f:Lk3/m6;
+    iget-object v1, p0, Lw8/e;->f:Lk3/n6;
 
     iget-object v0, v0, Lu8/c;->a:Ljava/util/List;
 
-    invoke-virtual {v1, v0}, Lk3/m6;->a(Ljava/util/List;)V
+    invoke-virtual {v1, v0}, Lk3/n6;->a(Ljava/util/List;)V
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_0
 
@@ -224,13 +224,13 @@
 
     .line 14
     :try_start_4
-    iget-object v1, v0, Lcom/helpshift/common/exception/RootAPIException;->h:Ld8/a;
+    iget-object v1, v0, Lcom/helpshift/common/exception/RootAPIException;->i:Ld8/a;
 
-    sget-object v2, Ld8/b;->x:Ld8/b;
+    sget-object v2, Ld8/b;->y:Ld8/b;
 
     if-eq v1, v2, :cond_2
 
-    sget-object v2, Ld8/b;->y:Ld8/b;
+    sget-object v2, Ld8/b;->z:Ld8/b;
 
     if-ne v1, v2, :cond_3
 

@@ -1,5 +1,5 @@
 .class public final Lcom/supercell/id/view/AvatarEditView$h;
-.super Lse/h;
+.super Lse/i;
 .source "AvatarEditView.kt"
 
 # interfaces
@@ -18,28 +18,28 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/l<",
         "Landroid/graphics/Bitmap;",
-        "Lie/h;",
+        "Lie/i;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic f:Ljava/lang/ref/WeakReference;
+.field public final synthetic g:Ljava/lang/ref/WeakReference;
 
 
 # direct methods
 .method public constructor <init>(Ljava/lang/ref/WeakReference;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/view/AvatarEditView$h;->f:Ljava/lang/ref/WeakReference;
+    iput-object p1, p0, Lcom/supercell/id/view/AvatarEditView$h;->g:Ljava/lang/ref/WeakReference;
 
     const/4 p1, 0x1
 
-    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -55,10 +55,10 @@
     const-string v0, "bitmap"
 
     .line 2
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 3
-    iget-object v0, p0, Lcom/supercell/id/view/AvatarEditView$h;->f:Ljava/lang/ref/WeakReference;
+    iget-object v0, p0, Lcom/supercell/id/view/AvatarEditView$h;->g:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v0}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
 
@@ -73,7 +73,7 @@
 
     .line 5
     :cond_0
-    sget-object p1, Lie/h;->a:Lie/h;
+    sget-object p1, Lie/i;->a:Lie/i;
 
     return-object p1
 .end method

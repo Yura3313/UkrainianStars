@@ -4,164 +4,178 @@
 
 
 # instance fields
-.field public final a:I
+.field public final a:Ll2/c;
 
-.field public final b:I
+.field public final b:Ljava/lang/Object;
 
-.field public final c:Z
+.field public volatile c:I
+    .annotation build Ljavax/annotation/concurrent/GuardedBy;
+        value = "lock"
+    .end annotation
+.end field
+
+.field public volatile d:J
 
 
 # direct methods
-.method public constructor <init>(IIZ)V
-    .locals 0
+.method public constructor <init>(Ll2/c;)V
+    .locals 2
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput p1, p0, Lk3/ig0;->a:I
+    new-instance v0, Ljava/lang/Object;
+
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+
+    iput-object v0, p0, Lk3/ig0;->b:Ljava/lang/Object;
+
+    const/4 v0, 0x1
 
     .line 3
-    iput p2, p0, Lk3/ig0;->b:I
+    iput v0, p0, Lk3/ig0;->c:I
+
+    const-wide/16 v0, 0x0
 
     .line 4
-    iput-boolean p3, p0, Lk3/ig0;->c:Z
+    iput-wide v0, p0, Lk3/ig0;->d:J
+
+    .line 5
+    iput-object p1, p0, Lk3/ig0;->a:Ll2/c;
 
     return-void
 .end method
 
-.method public static a(Landroid/util/JsonReader;)Ljava/util/List;
-    .locals 6
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Landroid/util/JsonReader;",
-            ")",
-            "Ljava/util/List<",
-            "Lk3/ig0;",
-            ">;"
-        }
-    .end annotation
 
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/lang/IllegalStateException;,
-            Ljava/io/IOException;,
-            Ljava/lang/NumberFormatException;
-        }
-    .end annotation
+# virtual methods
+.method public final a()V
+    .locals 7
 
     .line 1
-    new-instance v0, Ljava/util/ArrayList;
+    iget-object v0, p0, Lk3/ig0;->a:Ll2/c;
 
-    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
+    invoke-interface {v0}, Ll2/c;->a()J
+
+    move-result-wide v0
 
     .line 2
-    invoke-virtual {p0}, Landroid/util/JsonReader;->beginArray()V
+    iget-object v2, p0, Lk3/ig0;->b:Ljava/lang/Object;
+
+    monitor-enter v2
 
     .line 3
-    :goto_0
-    invoke-virtual {p0}, Landroid/util/JsonReader;->hasNext()Z
+    :try_start_0
+    iget v3, p0, Lk3/ig0;->c:I
 
-    move-result v1
+    const/4 v4, 0x3
 
-    if-eqz v1, :cond_4
+    if-ne v3, v4, :cond_0
+
+    iget-wide v3, p0, Lk3/ig0;->d:J
+
+    sget-object v5, Lk3/o;->S2:Lk3/g;
 
     .line 4
-    invoke-virtual {p0}, Landroid/util/JsonReader;->beginObject()V
+    sget-object v6, Lk3/o51;->j:Lk3/o51;
 
-    const/4 v1, 0x0
-
-    const/4 v2, 0x0
-
-    const/4 v3, 0x0
+    iget-object v6, v6, Lk3/o51;->f:Lk3/l;
 
     .line 5
-    :goto_1
-    invoke-virtual {p0}, Landroid/util/JsonReader;->hasNext()Z
+    invoke-virtual {v6, v5}, Lk3/l;->a(Lk3/f;)Ljava/lang/Object;
 
-    move-result v4
-
-    if-eqz v4, :cond_3
+    move-result-object v5
 
     .line 6
-    invoke-virtual {p0}, Landroid/util/JsonReader;->nextName()Ljava/lang/String;
+    check-cast v5, Ljava/lang/Long;
 
-    move-result-object v4
+    invoke-virtual {v5}, Ljava/lang/Long;->longValue()J
 
-    const-string v5, "width"
+    move-result-wide v5
+
+    add-long/2addr v3, v5
+
+    cmp-long v5, v3, v0
+
+    if-gtz v5, :cond_0
+
+    const/4 v0, 0x1
 
     .line 7
-    invoke-virtual {v5, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v5
-
-    if-eqz v5, :cond_0
+    iput v0, p0, Lk3/ig0;->c:I
 
     .line 8
-    invoke-virtual {p0}, Landroid/util/JsonReader;->nextInt()I
-
-    move-result v1
-
-    goto :goto_1
-
     :cond_0
-    const-string v5, "height"
+    monitor-exit v2
+
+    return-void
+
+    :catchall_0
+    move-exception v0
+
+    monitor-exit v2
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    throw v0
+.end method
+
+.method public final b(II)V
+    .locals 4
+
+    .line 1
+    invoke-virtual {p0}, Lk3/ig0;->a()V
+
+    .line 2
+    iget-object v0, p0, Lk3/ig0;->a:Ll2/c;
+
+    invoke-interface {v0}, Ll2/c;->a()J
+
+    move-result-wide v0
+
+    .line 3
+    iget-object v2, p0, Lk3/ig0;->b:Ljava/lang/Object;
+
+    monitor-enter v2
+
+    .line 4
+    :try_start_0
+    iget v3, p0, Lk3/ig0;->c:I
+
+    if-eq v3, p1, :cond_0
+
+    .line 5
+    monitor-exit v2
+
+    return-void
+
+    .line 6
+    :cond_0
+    iput p2, p0, Lk3/ig0;->c:I
+
+    .line 7
+    iget p1, p0, Lk3/ig0;->c:I
+
+    const/4 p2, 0x3
+
+    if-ne p1, p2, :cond_1
+
+    .line 8
+    iput-wide v0, p0, Lk3/ig0;->d:J
 
     .line 9
-    invoke-virtual {v5, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    :cond_1
+    monitor-exit v2
 
-    move-result v5
+    return-void
 
-    if-eqz v5, :cond_1
+    :catchall_0
+    move-exception p1
 
     .line 10
-    invoke-virtual {p0}, Landroid/util/JsonReader;->nextInt()I
+    monitor-exit v2
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    move-result v2
-
-    goto :goto_1
-
-    :cond_1
-    const-string v5, "is_fluid_height"
-
-    .line 11
-    invoke-virtual {v5, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v4
-
-    if-eqz v4, :cond_2
-
-    .line 12
-    invoke-virtual {p0}, Landroid/util/JsonReader;->nextBoolean()Z
-
-    move-result v3
-
-    goto :goto_1
-
-    .line 13
-    :cond_2
-    invoke-virtual {p0}, Landroid/util/JsonReader;->skipValue()V
-
-    goto :goto_1
-
-    .line 14
-    :cond_3
-    invoke-virtual {p0}, Landroid/util/JsonReader;->endObject()V
-
-    .line 15
-    new-instance v4, Lk3/ig0;
-
-    invoke-direct {v4, v1, v2, v3}, Lk3/ig0;-><init>(IIZ)V
-
-    .line 16
-    invoke-virtual {v0, v4}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    goto :goto_0
-
-    .line 17
-    :cond_4
-    invoke-virtual {p0}, Landroid/util/JsonReader;->endArray()V
-
-    return-object v0
+    throw p1
 .end method

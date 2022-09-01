@@ -1,5 +1,5 @@
 .class public final Lbe/r$b;
-.super Lse/h;
+.super Lse/i;
 .source "IdFriendsStorage.kt"
 
 # interfaces
@@ -18,28 +18,28 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/l<",
         "Lbe/q;",
-        "Lie/h;",
+        "Lie/i;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic f:Lre/l;
+.field public final synthetic g:Lre/l;
 
 
 # direct methods
 .method public constructor <init>(Lre/l;)V
     .locals 0
 
-    iput-object p1, p0, Lbe/r$b;->f:Lre/l;
+    iput-object p1, p0, Lbe/r$b;->g:Lre/l;
 
     const/4 p1, 0x1
 
-    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -60,7 +60,7 @@
     if-nez v0, :cond_0
 
     .line 3
-    iget-object v0, p0, Lbe/r$b;->f:Lre/l;
+    iget-object v0, p0, Lbe/r$b;->g:Lre/l;
 
     .line 4
     iget-object p1, p1, Lbe/q;->a:Ljava/util/List;
@@ -70,7 +70,7 @@
 
     .line 6
     :cond_0
-    sget-object p1, Lie/h;->a:Lie/h;
+    sget-object p1, Lie/i;->a:Lie/i;
 
     return-object p1
 .end method

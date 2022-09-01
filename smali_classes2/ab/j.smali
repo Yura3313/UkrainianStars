@@ -13,21 +13,21 @@
 
 
 # instance fields
-.field public g0:Lla/e;
+.field public h0:Lla/e;
 
-.field public h0:Lla/d;
-
-.field public i0:Ljava/lang/String;
+.field public i0:Lla/d;
 
 .field public j0:Ljava/lang/String;
 
-.field public k0:Landroidx/recyclerview/widget/RecyclerView;
+.field public k0:Ljava/lang/String;
 
-.field public l0:Lab/j$a;
+.field public l0:Landroidx/recyclerview/widget/RecyclerView;
 
-.field public m0:Z
+.field public m0:Lab/j$a;
 
 .field public n0:Z
+
+.field public o0:Z
 
 
 # direct methods
@@ -40,10 +40,10 @@
     const/4 v0, 0x0
 
     .line 2
-    iput-boolean v0, p0, Lab/j;->m0:Z
+    iput-boolean v0, p0, Lab/j;->n0:Z
 
     .line 3
-    iput-boolean v0, p0, Lab/j;->n0:Z
+    iput-boolean v0, p0, Lab/j;->o0:Z
 
     return-void
 .end method
@@ -80,7 +80,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/fragment/app/Fragment;->A:Landroidx/fragment/app/Fragment;
+    iget-object v0, p0, Landroidx/fragment/app/Fragment;->B:Landroidx/fragment/app/Fragment;
 
     .line 2
     instance-of v0, v0, Lab/e;
@@ -92,20 +92,20 @@
     .locals 5
 
     .line 1
-    iget-boolean v0, p0, Landroidx/fragment/app/Fragment;->O:Z
+    iget-boolean v0, p0, Landroidx/fragment/app/Fragment;->P:Z
 
     if-eqz v0, :cond_0
 
     .line 2
-    iget-boolean v0, p0, Lab/j;->m0:Z
-
-    if-nez v0, :cond_0
-
     iget-boolean v0, p0, Lab/j;->n0:Z
 
     if-nez v0, :cond_0
 
-    iget-object v0, p0, Lab/j;->j0:Ljava/lang/String;
+    iget-boolean v0, p0, Lab/j;->o0:Z
+
+    if-nez v0, :cond_0
+
+    iget-object v0, p0, Lab/j;->k0:Ljava/lang/String;
 
     .line 3
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
@@ -115,7 +115,7 @@
     if-nez v0, :cond_0
 
     .line 4
-    sget-object v0, Lcom/helpshift/util/u;->c:Le7/g;
+    sget-object v0, Lcom/helpshift/util/t;->c:Le7/g;
 
     .line 5
     iget-object v0, v0, Le7/g;->b:Lk7/a;
@@ -123,7 +123,7 @@
     const/4 v1, 0x6
 
     .line 6
-    iget-object v2, p0, Lab/j;->j0:Ljava/lang/String;
+    iget-object v2, p0, Lab/j;->k0:Ljava/lang/String;
 
     .line 7
     monitor-enter v0
@@ -150,7 +150,7 @@
     const/4 v0, 0x1
 
     .line 12
-    iput-boolean v0, p0, Lab/j;->m0:Z
+    iput-boolean v0, p0, Lab/j;->n0:Z
 
     goto :goto_0
 
@@ -181,7 +181,7 @@
 
     invoke-direct {v0, p1}, Lla/e;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lab/j;->g0:Lla/e;
+    iput-object v0, p0, Lab/j;->h0:Lla/e;
 
     .line 3
     sget p1, Lcom/helpshift/R$string;->hs__help_header:I
@@ -190,7 +190,7 @@
 
     move-result-object p1
 
-    iput-object p1, p0, Lab/j;->i0:Ljava/lang/String;
+    iput-object p1, p0, Lab/j;->j0:Ljava/lang/String;
 
     :catch_0
     return-void
@@ -203,7 +203,7 @@
     invoke-super {p0, p1}, Landroidx/fragment/app/Fragment;->V(Landroid/os/Bundle;)V
 
     .line 2
-    iget-object p1, p0, Landroidx/fragment/app/Fragment;->l:Landroid/os/Bundle;
+    iget-object p1, p0, Landroidx/fragment/app/Fragment;->m:Landroid/os/Bundle;
 
     if-eqz p1, :cond_0
 
@@ -216,7 +216,7 @@
 
     check-cast p1, Lla/d;
 
-    iput-object p1, p0, Lab/j;->h0:Lla/d;
+    iput-object p1, p0, Lab/j;->i0:Lla/d;
 
     :cond_0
     return-void
@@ -240,25 +240,25 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Landroidx/fragment/app/Fragment;->M:Landroid/view/View;
+    iget-object v0, p0, Landroidx/fragment/app/Fragment;->N:Landroid/view/View;
 
     .line 2
     invoke-static {v0}, Lib/f;->a(Landroid/view/View;)V
 
     .line 3
-    iget-object v0, p0, Lab/j;->k0:Landroidx/recyclerview/widget/RecyclerView;
+    iget-object v0, p0, Lab/j;->l0:Landroidx/recyclerview/widget/RecyclerView;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Landroidx/recyclerview/widget/RecyclerView;->setAdapter(Landroidx/recyclerview/widget/RecyclerView$e;)V
 
     .line 4
-    iput-object v1, p0, Lab/j;->k0:Landroidx/recyclerview/widget/RecyclerView;
+    iput-object v1, p0, Lab/j;->l0:Landroidx/recyclerview/widget/RecyclerView;
 
     const/4 v0, 0x1
 
     .line 5
-    iput-boolean v0, p0, Landroidx/fragment/app/Fragment;->K:Z
+    iput-boolean v0, p0, Landroidx/fragment/app/Fragment;->L:Z
 
     return-void
 .end method
@@ -269,7 +269,7 @@
     const/4 v0, 0x1
 
     .line 1
-    iput-boolean v0, p0, Landroidx/fragment/app/Fragment;->K:Z
+    iput-boolean v0, p0, Landroidx/fragment/app/Fragment;->L:Z
 
     .line 2
     sget v1, Lcom/helpshift/R$string;->hs__help_header:I
@@ -281,17 +281,17 @@
     invoke-virtual {p0, v1}, Lab/i;->P0(Ljava/lang/String;)V
 
     .line 3
-    iget-boolean v1, p0, Lab/i;->d0:Z
+    iget-boolean v1, p0, Lab/i;->e0:Z
 
     if-eqz v1, :cond_0
 
     .line 4
-    iget-object v1, p0, Lab/j;->i0:Ljava/lang/String;
+    iget-object v1, p0, Lab/j;->j0:Ljava/lang/String;
 
     invoke-virtual {p0, v1}, Lab/i;->P0(Ljava/lang/String;)V
 
     .line 5
-    iget-object v1, p0, Landroidx/fragment/app/Fragment;->A:Landroidx/fragment/app/Fragment;
+    iget-object v1, p0, Landroidx/fragment/app/Fragment;->B:Landroidx/fragment/app/Fragment;
 
     .line 6
     instance-of v2, v1, Lab/e;
@@ -317,15 +317,15 @@
     invoke-super {p0}, Lab/i;->i0()V
 
     .line 2
-    iget-boolean v0, p0, Lab/i;->c0:Z
+    iget-boolean v0, p0, Lab/i;->d0:Z
 
     .line 3
-    iput-boolean v0, p0, Lab/j;->n0:Z
+    iput-boolean v0, p0, Lab/j;->o0:Z
 
     const/4 v0, 0x0
 
     .line 4
-    iput-boolean v0, p0, Lab/j;->m0:Z
+    iput-boolean v0, p0, Lab/j;->n0:Z
 
     return-void
 .end method
@@ -334,7 +334,7 @@
     .locals 1
 
     .line 1
-    iget-boolean v0, p0, Lab/i;->d0:Z
+    iget-boolean v0, p0, Lab/i;->e0:Z
 
     if-eqz v0, :cond_0
 
@@ -366,7 +366,7 @@
 
     check-cast p2, Landroidx/recyclerview/widget/RecyclerView;
 
-    iput-object p2, p0, Lab/j;->k0:Landroidx/recyclerview/widget/RecyclerView;
+    iput-object p2, p0, Lab/j;->l0:Landroidx/recyclerview/widget/RecyclerView;
 
     .line 2
     new-instance v0, Landroidx/recyclerview/widget/LinearLayoutManager;
@@ -386,10 +386,10 @@
 
     invoke-direct {p1, p0}, Lab/j$a;-><init>(Lab/j;)V
 
-    iput-object p1, p0, Lab/j;->l0:Lab/j$a;
+    iput-object p1, p0, Lab/j;->m0:Lab/j$a;
 
     .line 6
-    iget-object p1, p0, Landroidx/fragment/app/Fragment;->l:Landroid/os/Bundle;
+    iget-object p1, p0, Landroidx/fragment/app/Fragment;->m:Landroid/os/Bundle;
 
     const-string p2, "sectionPublishId"
 
@@ -399,14 +399,14 @@
     move-result-object p1
 
     .line 8
-    iget-boolean p2, p0, Lab/i;->d0:Z
+    iget-boolean p2, p0, Lab/i;->e0:Z
 
     const/4 v0, 0x0
 
     if-eqz p2, :cond_1
 
     .line 9
-    iget-object p2, p0, Lab/j;->g0:Lla/e;
+    iget-object p2, p0, Lab/j;->h0:Lla/e;
 
     .line 10
     iget-object p2, p2, Lla/e;->b:Lhb/e;
@@ -418,7 +418,7 @@
     if-eqz p2, :cond_0
 
     .line 11
-    iget-object p2, p2, Lcom/helpshift/support/Section;->g:Ljava/lang/String;
+    iget-object p2, p2, Lcom/helpshift/support/Section;->h:Ljava/lang/String;
 
     goto :goto_0
 
@@ -434,7 +434,7 @@
     if-nez v1, :cond_1
 
     .line 13
-    iput-object p2, p0, Lab/j;->i0:Ljava/lang/String;
+    iput-object p2, p0, Lab/j;->j0:Ljava/lang/String;
 
     .line 14
     :cond_1
@@ -448,7 +448,7 @@
     invoke-direct {v1, p0}, Lab/j$b;-><init>(Lab/j;)V
 
     .line 16
-    iget-object v2, p0, Landroidx/fragment/app/Fragment;->l:Landroid/os/Bundle;
+    iget-object v2, p0, Landroidx/fragment/app/Fragment;->m:Landroid/os/Bundle;
 
     const/4 v3, 0x0
 
@@ -468,7 +468,7 @@
     if-eq v2, v3, :cond_4
 
     .line 18
-    iget-object v2, p0, Lab/j;->g0:Lla/e;
+    iget-object v2, p0, Lab/j;->h0:Lla/e;
 
     invoke-virtual {v2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -529,15 +529,15 @@
     move-exception p1
 
     .line 27
-    invoke-static {v5, v4, p1}, Landroidx/savedstate/d;->g(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v5, v4, p1}, Le5/i;->i(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
     goto :goto_1
 
     .line 28
     :cond_4
-    iget-object v2, p0, Lab/j;->g0:Lla/e;
+    iget-object v2, p0, Lab/j;->h0:Lla/e;
 
-    iget-object v3, p0, Lab/j;->h0:Lla/d;
+    iget-object v3, p0, Lab/j;->i0:Lla/d;
 
     invoke-virtual {v2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -596,7 +596,7 @@
     move-exception p1
 
     .line 37
-    invoke-static {v5, v4, p1}, Landroidx/savedstate/d;->g(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v5, v4, p1}, Le5/i;->i(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
     :goto_1
     const-string p1, "FAQ section loaded : Name : "
@@ -607,7 +607,7 @@
     move-result-object p1
 
     .line 39
-    iget-object p2, p0, Lab/j;->i0:Ljava/lang/String;
+    iget-object p2, p0, Lab/j;->j0:Ljava/lang/String;
 
     invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -618,7 +618,7 @@
     const-string p2, "Helpshift_QstnListFrag"
 
     .line 40
-    invoke-static {p2, p1, v0, v0}, Landroidx/savedstate/d;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {p2, p1, v0, v0}, Le5/i;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
 
     return-void
 .end method

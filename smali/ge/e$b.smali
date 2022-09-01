@@ -47,7 +47,7 @@
     new-instance v2, Lge/e;
 
     .line 4
-    invoke-static {v0}, Lje/j;->Q(Ljava/lang/Iterable;)Ljava/util/List;
+    invoke-static {v0}, Lje/j;->L(Ljava/lang/Iterable;)Ljava/util/List;
 
     move-result-object v0
 

@@ -1,5 +1,5 @@
 .class public final Lcom/supercell/id/SupercellId$e;
-.super Lse/h;
+.super Lse/i;
 .source "SupercellId.kt"
 
 # interfaces
@@ -18,16 +18,16 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/a<",
-        "Lie/h;",
+        "Lie/i;",
         ">;"
     }
 .end annotation
 
 
 # static fields
-.field public static final f:Lcom/supercell/id/SupercellId$e;
+.field public static final g:Lcom/supercell/id/SupercellId$e;
 
 
 # direct methods
@@ -38,7 +38,7 @@
 
     invoke-direct {v0}, Lcom/supercell/id/SupercellId$e;-><init>()V
 
-    sput-object v0, Lcom/supercell/id/SupercellId$e;->f:Lcom/supercell/id/SupercellId$e;
+    sput-object v0, Lcom/supercell/id/SupercellId$e;->g:Lcom/supercell/id/SupercellId$e;
 
     return-void
 .end method
@@ -48,7 +48,7 @@
 
     const/4 v0, 0x0
 
-    invoke-direct {p0, v0}, Lse/h;-><init>(I)V
+    invoke-direct {p0, v0}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -66,10 +66,10 @@
     move-result-object v1
 
     .line 2
-    iget-object v1, v1, Lae/u;->s:Lud/j;
+    iget-object v1, v1, Lae/u;->s:Lud/i;
 
     .line 3
-    invoke-virtual {v1}, Lud/j;->a()V
+    invoke-virtual {v1}, Lud/i;->a()V
 
     .line 4
     invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lae/u;
@@ -106,25 +106,25 @@
     monitor-exit v0
 
     .line 11
-    sget-object v0, Lae/b0;->e:Lae/b0;
+    sget-object v0, Lae/a0;->e:Lae/a0;
 
     .line 12
-    sget-object v0, Lae/b0;->b:Lae/r1;
+    sget-object v0, Lae/a0;->b:Lae/q1;
 
-    invoke-virtual {v0}, Lae/r1;->a()V
+    invoke-virtual {v0}, Lae/q1;->a()V
 
     .line 13
-    sget-object v0, Lae/b0;->c:Lae/r1;
+    sget-object v0, Lae/a0;->c:Lae/q1;
 
-    invoke-virtual {v0}, Lae/r1;->a()V
+    invoke-virtual {v0}, Lae/q1;->a()V
 
     .line 14
-    sget-object v0, Lae/b0;->d:Lae/r1;
+    sget-object v0, Lae/a0;->d:Lae/q1;
 
-    invoke-virtual {v0}, Lae/r1;->a()V
+    invoke-virtual {v0}, Lae/q1;->a()V
 
     .line 15
-    sget-object v0, Lie/h;->a:Lie/h;
+    sget-object v0, Lie/i;->a:Lie/i;
 
     return-object v0
 

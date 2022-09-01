@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field public q0:Ljava/lang/String;
+.field public r0:Ljava/lang/String;
 
-.field public r0:Z
+.field public s0:Z
 
 
 # direct methods
@@ -19,12 +19,12 @@
     const-string v0, ""
 
     .line 2
-    iput-object v0, p0, Lla/m;->q0:Ljava/lang/String;
+    iput-object v0, p0, Lla/m;->r0:Ljava/lang/String;
 
     const/4 v0, 0x1
 
     .line 3
-    iput-boolean v0, p0, Lla/m;->r0:Z
+    iput-boolean v0, p0, Lla/m;->s0:Z
 
     return-void
 .end method
@@ -59,7 +59,7 @@
 
     move-result v2
 
-    iput-boolean v2, p0, Lla/m;->r0:Z
+    iput-boolean v2, p0, Lla/m;->s0:Z
 
     const-string v2, "rurl"
 
@@ -68,7 +68,7 @@
 
     move-result-object v1
 
-    iput-object v1, p0, Lla/m;->q0:Ljava/lang/String;
+    iput-object v1, p0, Lla/m;->r0:Ljava/lang/String;
 
     .line 5
     :cond_0
@@ -199,7 +199,7 @@
     invoke-virtual {v0, v1, p1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 4
-    sget-object p1, Lcom/helpshift/util/u;->c:Le7/g;
+    sget-object p1, Lcom/helpshift/util/t;->c:Le7/g;
 
     .line 5
     iget-object p1, p1, Le7/g;->b:Lk7/a;
@@ -219,12 +219,12 @@
     invoke-super {p0}, Landroidx/fragment/app/k;->a0()V
 
     .line 2
-    iget-boolean v0, p0, Lla/m;->r0:Z
+    iget-boolean v0, p0, Lla/m;->s0:Z
 
     if-eqz v0, :cond_0
 
     .line 3
-    sget-object v0, Lcom/helpshift/util/u;->c:Le7/g;
+    sget-object v0, Lcom/helpshift/util/t;->c:Le7/g;
 
     .line 4
     iget-object v0, v0, Le7/g;->a:Lj8/b;

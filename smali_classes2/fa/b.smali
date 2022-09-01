@@ -109,7 +109,7 @@
     new-instance v0, Lfa/c;
 
     .line 12
-    sget-object v2, Lcom/helpshift/util/u;->d:Le8/j;
+    sget-object v2, Lcom/helpshift/util/t;->d:Le8/j;
 
     .line 13
     invoke-direct {v0, v1, v2}, Lfa/c;-><init>(Lka/c;Le8/s;)V

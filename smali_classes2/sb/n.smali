@@ -18,18 +18,18 @@
 
 
 # instance fields
-.field public final synthetic f:Lrb/o;
+.field public final synthetic g:Lrb/o;
 
-.field public final synthetic g:Lsb/o;
+.field public final synthetic h:Lsb/o;
 
 
 # direct methods
 .method public constructor <init>(Lsb/o;Lrb/o;)V
     .locals 0
 
-    iput-object p1, p0, Lsb/n;->g:Lsb/o;
+    iput-object p1, p0, Lsb/n;->h:Lsb/o;
 
-    iput-object p2, p0, Lsb/n;->f:Lrb/o;
+    iput-object p2, p0, Lsb/n;->g:Lrb/o;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -47,18 +47,18 @@
     check-cast p2, Lrb/o;
 
     .line 2
-    iget-object v0, p0, Lsb/n;->g:Lsb/o;
+    iget-object v0, p0, Lsb/n;->h:Lsb/o;
 
-    iget-object v1, p0, Lsb/n;->f:Lrb/o;
+    iget-object v1, p0, Lsb/n;->g:Lrb/o;
 
     invoke-virtual {v0, p1, v1}, Lsb/o;->a(Lrb/o;Lrb/o;)F
 
     move-result p1
 
     .line 3
-    iget-object v0, p0, Lsb/n;->g:Lsb/o;
+    iget-object v0, p0, Lsb/n;->h:Lsb/o;
 
-    iget-object v1, p0, Lsb/n;->f:Lrb/o;
+    iget-object v1, p0, Lsb/n;->g:Lrb/o;
 
     invoke-virtual {v0, p2, v1}, Lsb/o;->a(Lrb/o;Lrb/o;)F
 

@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field public f:Landroidx/fragment/app/Fragment;
+.field public g:Landroidx/fragment/app/Fragment;
 
 
 # direct methods
@@ -15,7 +15,7 @@
     invoke-direct {p0}, Lcom/google/android/gms/dynamic/IFragmentWrapper$Stub;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lcom/google/android/gms/dynamic/SupportFragmentWrapper;->f:Landroidx/fragment/app/Fragment;
+    iput-object p1, p0, Lcom/google/android/gms/dynamic/SupportFragmentWrapper;->g:Landroidx/fragment/app/Fragment;
 
     return-void
 .end method
@@ -26,10 +26,10 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/gms/dynamic/SupportFragmentWrapper;->f:Landroidx/fragment/app/Fragment;
+    iget-object v0, p0, Lcom/google/android/gms/dynamic/SupportFragmentWrapper;->g:Landroidx/fragment/app/Fragment;
 
     .line 2
-    iget v0, v0, Landroidx/fragment/app/Fragment;->o:I
+    iget v0, v0, Landroidx/fragment/app/Fragment;->p:I
 
     return v0
 .end method
@@ -37,7 +37,7 @@
 .method public final B()Z
     .locals 1
 
-    iget-object v0, p0, Lcom/google/android/gms/dynamic/SupportFragmentWrapper;->f:Landroidx/fragment/app/Fragment;
+    iget-object v0, p0, Lcom/google/android/gms/dynamic/SupportFragmentWrapper;->g:Landroidx/fragment/app/Fragment;
 
     invoke-virtual {v0}, Landroidx/fragment/app/Fragment;->R()Z
 
@@ -49,7 +49,7 @@
 .method public final B1(Z)V
     .locals 1
 
-    iget-object v0, p0, Lcom/google/android/gms/dynamic/SupportFragmentWrapper;->f:Landroidx/fragment/app/Fragment;
+    iget-object v0, p0, Lcom/google/android/gms/dynamic/SupportFragmentWrapper;->g:Landroidx/fragment/app/Fragment;
 
     invoke-virtual {v0, p1}, Landroidx/fragment/app/Fragment;->K0(Z)V
 
@@ -62,10 +62,10 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/gms/dynamic/SupportFragmentWrapper;->f:Landroidx/fragment/app/Fragment;
+    iget-object v0, p0, Lcom/google/android/gms/dynamic/SupportFragmentWrapper;->g:Landroidx/fragment/app/Fragment;
 
     .line 2
-    iget-object v1, v0, Landroidx/fragment/app/Fragment;->m:Landroidx/fragment/app/Fragment;
+    iget-object v1, v0, Landroidx/fragment/app/Fragment;->n:Landroidx/fragment/app/Fragment;
 
     const/4 v2, 0x0
 
@@ -75,11 +75,11 @@
 
     .line 3
     :cond_0
-    iget-object v1, v0, Landroidx/fragment/app/Fragment;->x:Landroidx/fragment/app/FragmentManager;
+    iget-object v1, v0, Landroidx/fragment/app/Fragment;->y:Landroidx/fragment/app/FragmentManager;
 
     if-eqz v1, :cond_1
 
-    iget-object v0, v0, Landroidx/fragment/app/Fragment;->n:Ljava/lang/String;
+    iget-object v0, v0, Landroidx/fragment/app/Fragment;->o:Ljava/lang/String;
 
     if-eqz v0, :cond_1
 
@@ -109,10 +109,10 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/gms/dynamic/SupportFragmentWrapper;->f:Landroidx/fragment/app/Fragment;
+    iget-object v0, p0, Lcom/google/android/gms/dynamic/SupportFragmentWrapper;->g:Landroidx/fragment/app/Fragment;
 
     .line 2
-    iget-boolean v0, v0, Landroidx/fragment/app/Fragment;->G:Z
+    iget-boolean v0, v0, Landroidx/fragment/app/Fragment;->H:Z
 
     return v0
 .end method
@@ -132,7 +132,7 @@
     check-cast p1, Landroid/view/View;
 
     .line 2
-    iget-object v0, p0, Lcom/google/android/gms/dynamic/SupportFragmentWrapper;->f:Landroidx/fragment/app/Fragment;
+    iget-object v0, p0, Lcom/google/android/gms/dynamic/SupportFragmentWrapper;->g:Landroidx/fragment/app/Fragment;
 
     invoke-static {p1}, Ld2/h;->h(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -158,15 +158,15 @@
     .end param
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/gms/dynamic/SupportFragmentWrapper;->f:Landroidx/fragment/app/Fragment;
+    iget-object v0, p0, Lcom/google/android/gms/dynamic/SupportFragmentWrapper;->g:Landroidx/fragment/app/Fragment;
 
     .line 2
-    iget-object v1, v0, Landroidx/fragment/app/Fragment;->y:Landroidx/fragment/app/s;
+    iget-object v1, v0, Landroidx/fragment/app/Fragment;->z:Landroidx/fragment/app/s;
 
     if-eqz v1, :cond_0
 
     .line 3
-    iget-object v0, v1, Landroidx/fragment/app/s;->g:Landroid/content/Context;
+    iget-object v0, v1, Landroidx/fragment/app/s;->h:Landroid/content/Context;
 
     sget-object v1, Lv/a;->a:Ljava/lang/Object;
 
@@ -186,7 +186,7 @@
     const-string v2, " not attached to Activity"
 
     .line 6
-    invoke-static {v1, v0, v2}, Landroidx/fragment/app/l;->a(Ljava/lang/String;Landroidx/fragment/app/Fragment;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v1, v0, v2}, Landroidx/fragment/app/l;->d(Ljava/lang/String;Landroidx/fragment/app/Fragment;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -200,10 +200,10 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/gms/dynamic/SupportFragmentWrapper;->f:Landroidx/fragment/app/Fragment;
+    iget-object v0, p0, Lcom/google/android/gms/dynamic/SupportFragmentWrapper;->g:Landroidx/fragment/app/Fragment;
 
     .line 2
-    iget-boolean v0, v0, Landroidx/fragment/app/Fragment;->t:Z
+    iget-boolean v0, v0, Landroidx/fragment/app/Fragment;->u:Z
 
     return v0
 .end method
@@ -214,10 +214,10 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/gms/dynamic/SupportFragmentWrapper;->f:Landroidx/fragment/app/Fragment;
+    iget-object v0, p0, Lcom/google/android/gms/dynamic/SupportFragmentWrapper;->g:Landroidx/fragment/app/Fragment;
 
     .line 2
-    iget-object v0, v0, Landroidx/fragment/app/Fragment;->A:Landroidx/fragment/app/Fragment;
+    iget-object v0, v0, Landroidx/fragment/app/Fragment;->B:Landroidx/fragment/app/Fragment;
 
     if-eqz v0, :cond_0
 
@@ -241,10 +241,10 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/gms/dynamic/SupportFragmentWrapper;->f:Landroidx/fragment/app/Fragment;
+    iget-object v0, p0, Lcom/google/android/gms/dynamic/SupportFragmentWrapper;->g:Landroidx/fragment/app/Fragment;
 
     .line 2
-    iget-object v0, v0, Landroidx/fragment/app/Fragment;->D:Ljava/lang/String;
+    iget-object v0, v0, Landroidx/fragment/app/Fragment;->E:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -252,7 +252,7 @@
 .method public final L5(Z)V
     .locals 1
 
-    iget-object v0, p0, Lcom/google/android/gms/dynamic/SupportFragmentWrapper;->f:Landroidx/fragment/app/Fragment;
+    iget-object v0, p0, Lcom/google/android/gms/dynamic/SupportFragmentWrapper;->g:Landroidx/fragment/app/Fragment;
 
     invoke-virtual {v0, p1}, Landroidx/fragment/app/Fragment;->F0(Z)V
 
@@ -263,10 +263,10 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/gms/dynamic/SupportFragmentWrapper;->f:Landroidx/fragment/app/Fragment;
+    iget-object v0, p0, Lcom/google/android/gms/dynamic/SupportFragmentWrapper;->g:Landroidx/fragment/app/Fragment;
 
     .line 2
-    iget-boolean v0, v0, Landroidx/fragment/app/Fragment;->O:Z
+    iget-boolean v0, v0, Landroidx/fragment/app/Fragment;->P:Z
 
     return v0
 .end method
@@ -274,7 +274,7 @@
 .method public final S()Z
     .locals 1
 
-    iget-object v0, p0, Lcom/google/android/gms/dynamic/SupportFragmentWrapper;->f:Landroidx/fragment/app/Fragment;
+    iget-object v0, p0, Lcom/google/android/gms/dynamic/SupportFragmentWrapper;->g:Landroidx/fragment/app/Fragment;
 
     invoke-virtual {v0}, Landroidx/fragment/app/Fragment;->N()Z
 
@@ -287,10 +287,10 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/gms/dynamic/SupportFragmentWrapper;->f:Landroidx/fragment/app/Fragment;
+    iget-object v0, p0, Lcom/google/android/gms/dynamic/SupportFragmentWrapper;->g:Landroidx/fragment/app/Fragment;
 
     .line 2
-    iget-boolean v0, v0, Landroidx/fragment/app/Fragment;->F:Z
+    iget-boolean v0, v0, Landroidx/fragment/app/Fragment;->G:Z
 
     return v0
 .end method
@@ -301,10 +301,10 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/gms/dynamic/SupportFragmentWrapper;->f:Landroidx/fragment/app/Fragment;
+    iget-object v0, p0, Lcom/google/android/gms/dynamic/SupportFragmentWrapper;->g:Landroidx/fragment/app/Fragment;
 
     .line 2
-    iget-object v0, v0, Landroidx/fragment/app/Fragment;->M:Landroid/view/View;
+    iget-object v0, v0, Landroidx/fragment/app/Fragment;->N:Landroid/view/View;
 
     .line 3
     new-instance v1, Lcom/google/android/gms/dynamic/ObjectWrapper;
@@ -329,7 +329,7 @@
     check-cast p1, Landroid/view/View;
 
     .line 2
-    iget-object v0, p0, Lcom/google/android/gms/dynamic/SupportFragmentWrapper;->f:Landroidx/fragment/app/Fragment;
+    iget-object v0, p0, Lcom/google/android/gms/dynamic/SupportFragmentWrapper;->g:Landroidx/fragment/app/Fragment;
 
     invoke-static {p1}, Ld2/h;->h(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -351,7 +351,7 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/gms/dynamic/SupportFragmentWrapper;->f:Landroidx/fragment/app/Fragment;
+    iget-object v0, p0, Lcom/google/android/gms/dynamic/SupportFragmentWrapper;->g:Landroidx/fragment/app/Fragment;
 
     invoke-virtual {v0}, Landroidx/fragment/app/Fragment;->I()Landroid/content/res/Resources;
 
@@ -373,7 +373,7 @@
     .end param
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/gms/dynamic/SupportFragmentWrapper;->f:Landroidx/fragment/app/Fragment;
+    iget-object v0, p0, Lcom/google/android/gms/dynamic/SupportFragmentWrapper;->g:Landroidx/fragment/app/Fragment;
 
     const/4 v1, 0x0
 
@@ -389,7 +389,7 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/gms/dynamic/SupportFragmentWrapper;->f:Landroidx/fragment/app/Fragment;
+    iget-object v0, p0, Lcom/google/android/gms/dynamic/SupportFragmentWrapper;->g:Landroidx/fragment/app/Fragment;
 
     invoke-virtual {v0}, Landroidx/fragment/app/Fragment;->v()Landroidx/fragment/app/FragmentActivity;
 
@@ -407,10 +407,10 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/gms/dynamic/SupportFragmentWrapper;->f:Landroidx/fragment/app/Fragment;
+    iget-object v0, p0, Lcom/google/android/gms/dynamic/SupportFragmentWrapper;->g:Landroidx/fragment/app/Fragment;
 
     .line 2
-    iget v0, v0, Landroidx/fragment/app/Fragment;->B:I
+    iget v0, v0, Landroidx/fragment/app/Fragment;->C:I
 
     return v0
 .end method
@@ -421,10 +421,10 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/gms/dynamic/SupportFragmentWrapper;->f:Landroidx/fragment/app/Fragment;
+    iget-object v0, p0, Lcom/google/android/gms/dynamic/SupportFragmentWrapper;->g:Landroidx/fragment/app/Fragment;
 
     .line 2
-    iget-object v0, v0, Landroidx/fragment/app/Fragment;->l:Landroid/os/Bundle;
+    iget-object v0, v0, Landroidx/fragment/app/Fragment;->m:Landroid/os/Bundle;
 
     return-object v0
 .end method
@@ -433,10 +433,10 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/gms/dynamic/SupportFragmentWrapper;->f:Landroidx/fragment/app/Fragment;
+    iget-object v0, p0, Lcom/google/android/gms/dynamic/SupportFragmentWrapper;->g:Landroidx/fragment/app/Fragment;
 
     .line 2
-    iget-boolean v0, v0, Landroidx/fragment/app/Fragment;->r:Z
+    iget-boolean v0, v0, Landroidx/fragment/app/Fragment;->s:Z
 
     return v0
 .end method
@@ -444,7 +444,7 @@
 .method public final k4(Z)V
     .locals 1
 
-    iget-object v0, p0, Lcom/google/android/gms/dynamic/SupportFragmentWrapper;->f:Landroidx/fragment/app/Fragment;
+    iget-object v0, p0, Lcom/google/android/gms/dynamic/SupportFragmentWrapper;->g:Landroidx/fragment/app/Fragment;
 
     invoke-virtual {v0, p1}, Landroidx/fragment/app/Fragment;->I0(Z)V
 
@@ -454,7 +454,7 @@
 .method public final l0()Z
     .locals 1
 
-    iget-object v0, p0, Lcom/google/android/gms/dynamic/SupportFragmentWrapper;->f:Landroidx/fragment/app/Fragment;
+    iget-object v0, p0, Lcom/google/android/gms/dynamic/SupportFragmentWrapper;->g:Landroidx/fragment/app/Fragment;
 
     invoke-virtual {v0}, Landroidx/fragment/app/Fragment;->Q()Z
 
@@ -466,7 +466,7 @@
 .method public final l3(Z)V
     .locals 1
 
-    iget-object v0, p0, Lcom/google/android/gms/dynamic/SupportFragmentWrapper;->f:Landroidx/fragment/app/Fragment;
+    iget-object v0, p0, Lcom/google/android/gms/dynamic/SupportFragmentWrapper;->g:Landroidx/fragment/app/Fragment;
 
     invoke-virtual {v0, p1}, Landroidx/fragment/app/Fragment;->G0(Z)V
 
@@ -477,10 +477,10 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/gms/dynamic/SupportFragmentWrapper;->f:Landroidx/fragment/app/Fragment;
+    iget-object v0, p0, Lcom/google/android/gms/dynamic/SupportFragmentWrapper;->g:Landroidx/fragment/app/Fragment;
 
     .line 2
-    iget-boolean v0, v0, Landroidx/fragment/app/Fragment;->E:Z
+    iget-boolean v0, v0, Landroidx/fragment/app/Fragment;->F:Z
 
     return v0
 .end method

@@ -1,249 +1,185 @@
-.class public abstract Lk3/h;
-.super Ljava/lang/Object;
+.class public final Lk3/h;
+.super Lk3/f;
 .source "com.google.android.gms:play-services-ads-lite@@19.3.0"
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "<T:",
-        "Ljava/lang/Object;",
-        ">",
-        "Ljava/lang/Object;"
+        "Lk3/f<",
+        "Ljava/lang/Integer;",
+        ">;"
     }
 .end annotation
 
 
-# instance fields
-.field public final a:I
-
-.field public final b:Ljava/lang/String;
-
-.field public final c:Ljava/lang/Object;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "TT;"
-        }
-    .end annotation
-.end field
-
-
 # direct methods
-.method public constructor <init>(ILjava/lang/String;Ljava/lang/Object;Lk3/g;)V
-    .locals 0
+.method public constructor <init>(Ljava/lang/String;Ljava/lang/Integer;)V
+    .locals 2
 
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    const/4 v0, 0x1
 
-    .line 2
-    iput p1, p0, Lk3/h;->a:I
+    const/4 v1, 0x0
 
-    .line 3
-    iput-object p2, p0, Lk3/h;->b:Ljava/lang/String;
-
-    .line 4
-    iput-object p3, p0, Lk3/h;->c:Ljava/lang/Object;
-
-    .line 5
-    sget-object p1, Lk3/l51;->j:Lk3/l51;
-
-    iget-object p1, p1, Lk3/l51;->d:Lk3/m;
-
-    .line 6
-    iget-object p1, p1, Lk3/m;->a:Ljava/util/ArrayList;
-
-    invoke-virtual {p1, p0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    invoke-direct {p0, v0, p1, p2, v1}, Lk3/f;-><init>(ILjava/lang/String;Ljava/lang/Object;Lk3/e;)V
 
     return-void
 .end method
 
-.method public static c(ILjava/lang/String;Ljava/lang/Boolean;)Lk3/h;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(I",
-            "Ljava/lang/String;",
-            "Ljava/lang/Boolean;",
-            ")",
-            "Lk3/h<",
-            "Ljava/lang/Boolean;",
-            ">;"
-        }
-    .end annotation
 
-    new-instance v0, Lk3/g;
-
-    invoke-direct {v0, p0, p1, p2}, Lk3/g;-><init>(ILjava/lang/String;Ljava/lang/Boolean;)V
-
-    return-object v0
-.end method
-
-.method public static d(Ljava/lang/String;)Lk3/h;
+# virtual methods
+.method public final a(Landroid/content/SharedPreferences;)Ljava/lang/Object;
     .locals 2
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(I",
-            "Ljava/lang/String;",
-            "F)",
-            "Lk3/h<",
-            "Ljava/lang/Float;",
-            ">;"
-        }
-    .end annotation
 
-    new-instance v0, Lk3/l;
+    .line 1
+    iget-object v0, p0, Lk3/f;->b:Ljava/lang/String;
 
-    const/4 v1, 0x0
+    .line 2
+    iget-object v1, p0, Lk3/f;->c:Ljava/lang/Object;
 
-    invoke-static {v1}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
+    .line 3
+    check-cast v1, Ljava/lang/Integer;
 
-    move-result-object v1
+    invoke-virtual {v1}, Ljava/lang/Integer;->intValue()I
 
-    invoke-direct {v0, p0, v1}, Lk3/l;-><init>(Ljava/lang/String;Ljava/lang/Float;)V
+    move-result v1
 
-    return-object v0
-.end method
+    invoke-interface {p1, v0, v1}, Landroid/content/SharedPreferences;->getInt(Ljava/lang/String;I)I
 
-.method public static e(Ljava/lang/String;I)Lk3/h;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(I",
-            "Ljava/lang/String;",
-            "I)",
-            "Lk3/h<",
-            "Ljava/lang/Integer;",
-            ">;"
-        }
-    .end annotation
-
-    new-instance v0, Lk3/j;
+    move-result p1
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p1
 
-    invoke-direct {v0, p0, p1}, Lk3/j;-><init>(Ljava/lang/String;Ljava/lang/Integer;)V
-
-    return-object v0
+    return-object p1
 .end method
 
-.method public static f(Ljava/lang/String;Ljava/lang/String;)Lk3/h;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(I",
-            "Ljava/lang/String;",
-            "Ljava/lang/String;",
-            ")",
-            "Lk3/h<",
-            "Ljava/lang/String;",
-            ">;"
-        }
-    .end annotation
-
-    new-instance v0, Lk3/k;
-
-    invoke-direct {v0, p0, p1}, Lk3/k;-><init>(Ljava/lang/String;Ljava/lang/String;)V
-
-    return-object v0
-.end method
-
-.method public static i(Ljava/lang/String;)Lk3/h;
-    .locals 2
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(I",
-            "Ljava/lang/String;",
-            ")",
-            "Lk3/h<",
-            "Ljava/lang/String;",
-            ">;"
-        }
-    .end annotation
+.method public final b(Landroid/os/Bundle;)Ljava/lang/Object;
+    .locals 3
 
     .line 1
-    new-instance v0, Lk3/k;
-
-    const/4 v1, 0x0
-
-    invoke-direct {v0, p0, v1}, Lk3/k;-><init>(Ljava/lang/String;Ljava/lang/String;)V
+    iget-object v0, p0, Lk3/f;->b:Ljava/lang/String;
 
     .line 2
-    sget-object p0, Lk3/l51;->j:Lk3/l51;
+    invoke-static {v0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
 
-    iget-object p0, p0, Lk3/l51;->d:Lk3/m;
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/String;->length()I
+
+    move-result v1
+
+    const-string v2, "com.google.android.gms.ads.flag."
+
+    if-eqz v1, :cond_0
+
+    invoke-virtual {v2, v0}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
+
+    goto :goto_0
+
+    :cond_0
+    new-instance v0, Ljava/lang/String;
+
+    invoke-direct {v0, v2}, Ljava/lang/String;-><init>(Ljava/lang/String;)V
+
+    :goto_0
+    invoke-virtual {p1, v0}, Landroid/os/Bundle;->containsKey(Ljava/lang/String;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_2
 
     .line 3
-    iget-object p0, p0, Lk3/m;->c:Ljava/util/ArrayList;
+    iget-object v0, p0, Lk3/f;->b:Ljava/lang/String;
 
-    invoke-virtual {p0, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    .line 4
+    invoke-static {v0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
 
-    return-object v0
-.end method
+    move-result-object v0
 
-.method public static j(Ljava/lang/String;J)Lk3/h;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(I",
-            "Ljava/lang/String;",
-            "J)",
-            "Lk3/h<",
-            "Ljava/lang/Long;",
-            ">;"
-        }
-    .end annotation
+    invoke-virtual {v0}, Ljava/lang/String;->length()I
 
-    new-instance v0, Lk3/i;
+    move-result v1
 
-    invoke-static {p1, p2}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+    if-eqz v1, :cond_1
+
+    invoke-virtual {v2, v0}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
+
+    goto :goto_1
+
+    :cond_1
+    new-instance v0, Ljava/lang/String;
+
+    invoke-direct {v0, v2}, Ljava/lang/String;-><init>(Ljava/lang/String;)V
+
+    :goto_1
+    invoke-virtual {p1, v0}, Landroid/os/Bundle;->getInt(Ljava/lang/String;)I
+
+    move-result p1
+
+    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p1
 
-    invoke-direct {v0, p0, p1}, Lk3/i;-><init>(Ljava/lang/String;Ljava/lang/Long;)V
+    return-object p1
 
-    return-object v0
+    .line 5
+    :cond_2
+    iget-object p1, p0, Lk3/f;->c:Ljava/lang/Object;
+
+    .line 6
+    check-cast p1, Ljava/lang/Integer;
+
+    return-object p1
 .end method
 
+.method public final g(Landroid/content/SharedPreferences$Editor;Ljava/lang/Object;)V
+    .locals 1
 
-# virtual methods
-.method public abstract a(Landroid/content/SharedPreferences;)Ljava/lang/Object;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Landroid/content/SharedPreferences;",
-            ")TT;"
-        }
-    .end annotation
+    .line 1
+    check-cast p2, Ljava/lang/Integer;
+
+    .line 2
+    iget-object v0, p0, Lk3/f;->b:Ljava/lang/String;
+
+    .line 3
+    invoke-virtual {p2}, Ljava/lang/Integer;->intValue()I
+
+    move-result p2
+
+    invoke-interface {p1, v0, p2}, Landroid/content/SharedPreferences$Editor;->putInt(Ljava/lang/String;I)Landroid/content/SharedPreferences$Editor;
+
+    return-void
 .end method
 
-.method public abstract b(Landroid/os/Bundle;)Ljava/lang/Object;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Landroid/os/Bundle;",
-            ")TT;"
-        }
-    .end annotation
-.end method
+.method public final h(Lorg/json/JSONObject;)Ljava/lang/Object;
+    .locals 2
 
-.method public abstract g(Landroid/content/SharedPreferences$Editor;Ljava/lang/Object;)V
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Landroid/content/SharedPreferences$Editor;",
-            "TT;)V"
-        }
-    .end annotation
-.end method
+    .line 1
+    iget-object v0, p0, Lk3/f;->b:Ljava/lang/String;
 
-.method public abstract h(Lorg/json/JSONObject;)Ljava/lang/Object;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lorg/json/JSONObject;",
-            ")TT;"
-        }
-    .end annotation
+    .line 2
+    iget-object v1, p0, Lk3/f;->c:Ljava/lang/Object;
+
+    .line 3
+    check-cast v1, Ljava/lang/Integer;
+
+    invoke-virtual {v1}, Ljava/lang/Integer;->intValue()I
+
+    move-result v1
+
+    invoke-virtual {p1, v0, v1}, Lorg/json/JSONObject;->optInt(Ljava/lang/String;I)I
+
+    move-result p1
+
+    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object p1
+
+    return-object p1
 .end method

@@ -15,7 +15,7 @@
 
 
 # static fields
-.field public static final g:Lcom/supercell/id/model/ProfileImage$Empty;
+.field public static final h:Lcom/supercell/id/model/ProfileImage$Empty;
 
 
 # direct methods
@@ -26,7 +26,7 @@
 
     invoke-direct {v0}, Lcom/supercell/id/model/ProfileImage$Empty;-><init>()V
 
-    sput-object v0, Lcom/supercell/id/model/ProfileImage$Empty;->g:Lcom/supercell/id/model/ProfileImage$Empty;
+    sput-object v0, Lcom/supercell/id/model/ProfileImage$Empty;->h:Lcom/supercell/id/model/ProfileImage$Empty;
 
     return-void
 .end method

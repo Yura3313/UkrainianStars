@@ -4,13 +4,13 @@
 
 
 # instance fields
-.field public g0:Loa/e;
+.field public h0:Loa/e;
 
-.field public h0:Landroidx/recyclerview/widget/RecyclerView;
+.field public i0:Landroidx/recyclerview/widget/RecyclerView;
 
-.field public i0:Lab/l$a;
+.field public j0:Lab/l$a;
 
-.field public j0:Lab/l$b;
+.field public k0:Lab/l$b;
 
 
 # direct methods
@@ -52,7 +52,7 @@
     const/4 v0, 0x1
 
     .line 1
-    iput-boolean v0, p0, Landroidx/fragment/app/Fragment;->K:Z
+    iput-boolean v0, p0, Landroidx/fragment/app/Fragment;->L:Z
 
     .line 2
     sget v0, Lcom/helpshift/R$string;->hs__search_result_title:I
@@ -64,7 +64,7 @@
     invoke-virtual {p0, v0}, Lab/i;->P0(Ljava/lang/String;)V
 
     .line 3
-    iget-object v0, p0, Landroidx/fragment/app/Fragment;->l:Landroid/os/Bundle;
+    iget-object v0, p0, Landroidx/fragment/app/Fragment;->m:Landroid/os/Bundle;
 
     const-string v1, "search_fragment_results"
 
@@ -95,14 +95,14 @@
     :cond_0
     new-instance v1, Lma/d;
 
-    iget-object v2, p0, Lab/l;->i0:Lab/l$a;
+    iget-object v2, p0, Lab/l;->j0:Lab/l$a;
 
-    iget-object v3, p0, Lab/l;->j0:Lab/l$b;
+    iget-object v3, p0, Lab/l;->k0:Lab/l$b;
 
     invoke-direct {v1, v0, v2, v3}, Lma/d;-><init>(Ljava/util/List;Landroid/view/View$OnClickListener;Landroid/view/View$OnClickListener;)V
 
     .line 8
-    iget-object v0, p0, Lab/l;->h0:Landroidx/recyclerview/widget/RecyclerView;
+    iget-object v0, p0, Lab/l;->i0:Landroidx/recyclerview/widget/RecyclerView;
 
     invoke-virtual {v0, v1}, Landroidx/recyclerview/widget/RecyclerView;->setAdapter(Landroidx/recyclerview/widget/RecyclerView$e;)V
 
@@ -121,7 +121,7 @@
 
     check-cast p2, Landroidx/recyclerview/widget/RecyclerView;
 
-    iput-object p2, p0, Lab/l;->h0:Landroidx/recyclerview/widget/RecyclerView;
+    iput-object p2, p0, Lab/l;->i0:Landroidx/recyclerview/widget/RecyclerView;
 
     .line 2
     new-instance v0, Landroidx/recyclerview/widget/LinearLayoutManager;
@@ -141,14 +141,14 @@
 
     invoke-direct {p1, p0}, Lab/l$a;-><init>(Lab/l;)V
 
-    iput-object p1, p0, Lab/l;->i0:Lab/l$a;
+    iput-object p1, p0, Lab/l;->j0:Lab/l$a;
 
     .line 6
     new-instance p1, Lab/l$b;
 
     invoke-direct {p1, p0}, Lab/l$b;-><init>(Lab/l;)V
 
-    iput-object p1, p0, Lab/l;->j0:Lab/l$b;
+    iput-object p1, p0, Lab/l;->k0:Lab/l$b;
 
     return-void
 .end method

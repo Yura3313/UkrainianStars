@@ -15,21 +15,21 @@
 
 
 # static fields
-.field public static final synthetic l:I
+.field public static final synthetic m:I
 
 
 # instance fields
-.field public f:Landroid/view/ViewGroup;
+.field public g:Landroid/view/ViewGroup;
 
-.field public g:Landroid/view/View;
+.field public h:Landroid/view/View;
 
-.field public final h:Landroid/view/View;
+.field public final i:Landroid/view/View;
 
-.field public i:I
+.field public j:I
 
-.field public j:Landroid/graphics/Matrix;
+.field public k:Landroid/graphics/Matrix;
 
-.field public final k:Lv0/g$a;
+.field public final l:Lv0/g$a;
 
 
 # direct methods
@@ -48,10 +48,10 @@
 
     invoke-direct {v0, p0}, Lv0/g$a;-><init>(Lv0/g;)V
 
-    iput-object v0, p0, Lv0/g;->k:Lv0/g$a;
+    iput-object v0, p0, Lv0/g;->l:Lv0/g$a;
 
     .line 3
-    iput-object p1, p0, Lv0/g;->h:Landroid/view/View;
+    iput-object p1, p0, Lv0/g;->i:Landroid/view/View;
 
     const/4 p1, 0x0
 
@@ -129,10 +129,10 @@
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lv0/g;->f:Landroid/view/ViewGroup;
+    iput-object p1, p0, Lv0/g;->g:Landroid/view/ViewGroup;
 
     .line 2
-    iput-object p2, p0, Lv0/g;->g:Landroid/view/View;
+    iput-object p2, p0, Lv0/g;->h:Landroid/view/View;
 
     return-void
 .end method
@@ -144,7 +144,7 @@
     invoke-super {p0}, Landroid/view/ViewGroup;->onAttachedToWindow()V
 
     .line 2
-    iget-object v0, p0, Lv0/g;->h:Landroid/view/View;
+    iget-object v0, p0, Lv0/g;->i:Landroid/view/View;
 
     .line 3
     sget v1, Landroidx/transition/R$id;->ghost_view:I
@@ -152,25 +152,25 @@
     invoke-virtual {v0, v1, p0}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
 
     .line 4
-    iget-object v0, p0, Lv0/g;->h:Landroid/view/View;
+    iget-object v0, p0, Lv0/g;->i:Landroid/view/View;
 
     invoke-virtual {v0}, Landroid/view/View;->getViewTreeObserver()Landroid/view/ViewTreeObserver;
 
     move-result-object v0
 
-    iget-object v1, p0, Lv0/g;->k:Lv0/g$a;
+    iget-object v1, p0, Lv0/g;->l:Lv0/g$a;
 
     invoke-virtual {v0, v1}, Landroid/view/ViewTreeObserver;->addOnPreDrawListener(Landroid/view/ViewTreeObserver$OnPreDrawListener;)V
 
     .line 5
-    iget-object v0, p0, Lv0/g;->h:Landroid/view/View;
+    iget-object v0, p0, Lv0/g;->i:Landroid/view/View;
 
     const/4 v1, 0x4
 
     invoke-static {v0, v1}, Lv0/x;->d(Landroid/view/View;I)V
 
     .line 6
-    iget-object v0, p0, Lv0/g;->h:Landroid/view/View;
+    iget-object v0, p0, Lv0/g;->i:Landroid/view/View;
 
     invoke-virtual {v0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
 
@@ -179,7 +179,7 @@
     if-eqz v0, :cond_0
 
     .line 7
-    iget-object v0, p0, Lv0/g;->h:Landroid/view/View;
+    iget-object v0, p0, Lv0/g;->i:Landroid/view/View;
 
     invoke-virtual {v0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
 
@@ -197,25 +197,25 @@
     .locals 3
 
     .line 1
-    iget-object v0, p0, Lv0/g;->h:Landroid/view/View;
+    iget-object v0, p0, Lv0/g;->i:Landroid/view/View;
 
     invoke-virtual {v0}, Landroid/view/View;->getViewTreeObserver()Landroid/view/ViewTreeObserver;
 
     move-result-object v0
 
-    iget-object v1, p0, Lv0/g;->k:Lv0/g$a;
+    iget-object v1, p0, Lv0/g;->l:Lv0/g$a;
 
     invoke-virtual {v0, v1}, Landroid/view/ViewTreeObserver;->removeOnPreDrawListener(Landroid/view/ViewTreeObserver$OnPreDrawListener;)V
 
     .line 2
-    iget-object v0, p0, Lv0/g;->h:Landroid/view/View;
+    iget-object v0, p0, Lv0/g;->i:Landroid/view/View;
 
     const/4 v1, 0x0
 
     invoke-static {v0, v1}, Lv0/x;->d(Landroid/view/View;I)V
 
     .line 3
-    iget-object v0, p0, Lv0/g;->h:Landroid/view/View;
+    iget-object v0, p0, Lv0/g;->i:Landroid/view/View;
 
     .line 4
     sget v1, Landroidx/transition/R$id;->ghost_view:I
@@ -225,7 +225,7 @@
     invoke-virtual {v0, v1, v2}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
 
     .line 5
-    iget-object v0, p0, Lv0/g;->h:Landroid/view/View;
+    iget-object v0, p0, Lv0/g;->i:Landroid/view/View;
 
     invoke-virtual {v0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
 
@@ -234,7 +234,7 @@
     if-eqz v0, :cond_0
 
     .line 6
-    iget-object v0, p0, Lv0/g;->h:Landroid/view/View;
+    iget-object v0, p0, Lv0/g;->i:Landroid/view/View;
 
     invoke-virtual {v0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
 
@@ -260,31 +260,31 @@
     invoke-static {p1, v0}, Lv0/a;->a(Landroid/graphics/Canvas;Z)V
 
     .line 2
-    iget-object v0, p0, Lv0/g;->j:Landroid/graphics/Matrix;
+    iget-object v0, p0, Lv0/g;->k:Landroid/graphics/Matrix;
 
     invoke-virtual {p1, v0}, Landroid/graphics/Canvas;->setMatrix(Landroid/graphics/Matrix;)V
 
     .line 3
-    iget-object v0, p0, Lv0/g;->h:Landroid/view/View;
+    iget-object v0, p0, Lv0/g;->i:Landroid/view/View;
 
     const/4 v1, 0x0
 
     invoke-static {v0, v1}, Lv0/x;->d(Landroid/view/View;I)V
 
     .line 4
-    iget-object v0, p0, Lv0/g;->h:Landroid/view/View;
+    iget-object v0, p0, Lv0/g;->i:Landroid/view/View;
 
     invoke-virtual {v0}, Landroid/view/View;->invalidate()V
 
     .line 5
-    iget-object v0, p0, Lv0/g;->h:Landroid/view/View;
+    iget-object v0, p0, Lv0/g;->i:Landroid/view/View;
 
     const/4 v2, 0x4
 
     invoke-static {v0, v2}, Lv0/x;->d(Landroid/view/View;I)V
 
     .line 6
-    iget-object v0, p0, Lv0/g;->h:Landroid/view/View;
+    iget-object v0, p0, Lv0/g;->i:Landroid/view/View;
 
     invoke-virtual {p0}, Landroid/view/View;->getDrawingTime()J
 
@@ -311,7 +311,7 @@
     invoke-super {p0, p1}, Landroid/view/View;->setVisibility(I)V
 
     .line 2
-    iget-object v0, p0, Lv0/g;->h:Landroid/view/View;
+    iget-object v0, p0, Lv0/g;->i:Landroid/view/View;
 
     invoke-static {v0}, Lv0/g;->c(Landroid/view/View;)Lv0/g;
 
@@ -330,7 +330,7 @@
 
     .line 3
     :goto_0
-    iget-object v0, p0, Lv0/g;->h:Landroid/view/View;
+    iget-object v0, p0, Lv0/g;->i:Landroid/view/View;
 
     invoke-static {v0, p1}, Lv0/x;->d(Landroid/view/View;I)V
 

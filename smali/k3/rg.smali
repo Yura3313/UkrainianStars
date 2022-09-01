@@ -7,30 +7,30 @@
 
 
 # instance fields
-.field public final synthetic f:Ljava/lang/String;
-
 .field public final synthetic g:Ljava/lang/String;
 
 .field public final synthetic h:Ljava/lang/String;
 
 .field public final synthetic i:Ljava/lang/String;
 
-.field public final synthetic j:Lk3/mg;
+.field public final synthetic j:Ljava/lang/String;
+
+.field public final synthetic k:Lk3/mg;
 
 
 # direct methods
 .method public constructor <init>(Lk3/mg;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
 
-    iput-object p1, p0, Lk3/rg;->j:Lk3/mg;
+    iput-object p1, p0, Lk3/rg;->k:Lk3/mg;
 
-    iput-object p2, p0, Lk3/rg;->f:Ljava/lang/String;
+    iput-object p2, p0, Lk3/rg;->g:Ljava/lang/String;
 
-    iput-object p3, p0, Lk3/rg;->g:Ljava/lang/String;
+    iput-object p3, p0, Lk3/rg;->h:Ljava/lang/String;
 
-    iput-object p4, p0, Lk3/rg;->h:Ljava/lang/String;
+    iput-object p4, p0, Lk3/rg;->i:Ljava/lang/String;
 
-    iput-object p5, p0, Lk3/rg;->i:Ljava/lang/String;
+    iput-object p5, p0, Lk3/rg;->j:Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -55,14 +55,14 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 3
-    iget-object v1, p0, Lk3/rg;->f:Ljava/lang/String;
+    iget-object v1, p0, Lk3/rg;->g:Ljava/lang/String;
 
     const-string v2, "src"
 
     invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 4
-    iget-object v1, p0, Lk3/rg;->g:Ljava/lang/String;
+    iget-object v1, p0, Lk3/rg;->h:Ljava/lang/String;
 
     invoke-static {v1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -71,7 +71,7 @@
     if-nez v1, :cond_0
 
     .line 5
-    iget-object v1, p0, Lk3/rg;->g:Ljava/lang/String;
+    iget-object v1, p0, Lk3/rg;->h:Ljava/lang/String;
 
     const-string v2, "cachedSrc"
 
@@ -79,7 +79,7 @@
 
     .line 6
     :cond_0
-    iget-object v1, p0, Lk3/rg;->h:Ljava/lang/String;
+    iget-object v1, p0, Lk3/rg;->i:Ljava/lang/String;
 
     .line 7
     invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -333,14 +333,14 @@
     invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 9
-    iget-object v1, p0, Lk3/rg;->h:Ljava/lang/String;
+    iget-object v1, p0, Lk3/rg;->i:Ljava/lang/String;
 
     const-string v2, "reason"
 
     invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 10
-    iget-object v1, p0, Lk3/rg;->i:Ljava/lang/String;
+    iget-object v1, p0, Lk3/rg;->j:Ljava/lang/String;
 
     invoke-static {v1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -349,7 +349,7 @@
     if-nez v1, :cond_10
 
     .line 11
-    iget-object v1, p0, Lk3/rg;->i:Ljava/lang/String;
+    iget-object v1, p0, Lk3/rg;->j:Ljava/lang/String;
 
     const-string v2, "message"
 
@@ -357,7 +357,7 @@
 
     .line 12
     :cond_10
-    iget-object v1, p0, Lk3/rg;->j:Lk3/mg;
+    iget-object v1, p0, Lk3/rg;->k:Lk3/mg;
 
     invoke-static {v1, v0}, Lk3/mg;->j(Lk3/mg;Ljava/util/Map;)V
 

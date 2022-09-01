@@ -3,14 +3,14 @@
 .source "com.google.android.gms:play-services-games@@20.0.1"
 
 # interfaces
-.implements Lb2/d;
+.implements Lb2/c;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "Lb2/d<",
+        "Lb2/c<",
         "Lcom/google/android/gms/common/api/Status;",
         ">;"
     }
@@ -43,9 +43,9 @@
     .line 2
     iget-object p1, p0, Lz2/a;->a:Lcom/google/android/gms/common/internal/BaseGmsClient$e;
 
-    check-cast p1, Lb2/w;
+    check-cast p1, Lb2/v;
 
-    invoke-virtual {p1}, Lb2/w;->X0()V
+    invoke-virtual {p1}, Lb2/v;->X0()V
 
     return-void
 .end method
@@ -55,9 +55,9 @@
 
     iget-object p1, p0, Lz2/a;->a:Lcom/google/android/gms/common/internal/BaseGmsClient$e;
 
-    check-cast p1, Lb2/w;
+    check-cast p1, Lb2/v;
 
-    invoke-virtual {p1}, Lb2/w;->X0()V
+    invoke-virtual {p1}, Lb2/v;->X0()V
 
     return-void
 .end method

@@ -3,14 +3,14 @@
 
 
 # instance fields
-.field public final synthetic f:Ljava/util/Map;
+.field public final synthetic g:Ljava/util/Map;
 
 
 # direct methods
 .method public constructor <init>(Ljava/util/Map;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/google/android/gms/ads/identifier/a;->f:Ljava/util/Map;
+    iput-object p1, p0, Lcom/google/android/gms/ads/identifier/a;->g:Ljava/util/Map;
 
     invoke-direct {p0}, Ljava/lang/Thread;-><init>()V
 
@@ -22,7 +22,7 @@
 .method public final run()V
     .locals 5
 
-    iget-object v0, p0, Lcom/google/android/gms/ads/identifier/a;->f:Ljava/util/Map;
+    iget-object v0, p0, Lcom/google/android/gms/ads/identifier/a;->g:Ljava/util/Map;
 
     const-string v1, "https://pagead2.googlesyndication.com/pagead/gen_204?id=gmob-apps"
 
@@ -152,11 +152,11 @@
     const/16 v2, 0x1b
 
     .line 1
-    invoke-static {v0, v2}, La1/e;->a(Ljava/lang/String;I)I
+    invoke-static {v0, v2}, La1/e;->b(Ljava/lang/String;I)I
 
     move-result v0
 
-    invoke-static {v1, v0}, La1/e;->a(Ljava/lang/String;I)I
+    invoke-static {v1, v0}, La1/e;->b(Ljava/lang/String;I)I
 
     move-result v0
 
@@ -177,11 +177,11 @@
     const/16 v2, 0x20
 
     .line 3
-    invoke-static {v0, v2}, La1/e;->a(Ljava/lang/String;I)I
+    invoke-static {v0, v2}, La1/e;->b(Ljava/lang/String;I)I
 
     move-result v0
 
-    invoke-static {v1, v0}, La1/e;->a(Ljava/lang/String;I)I
+    invoke-static {v1, v0}, La1/e;->b(Ljava/lang/String;I)I
 
     move-result v0
 

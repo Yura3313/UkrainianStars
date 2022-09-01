@@ -4,14 +4,14 @@
 
 
 # static fields
-.field public static final a:Lcom/helpshift/util/s;
+.field public static final a:Lcom/helpshift/util/r;
 
 .field public static final b:Ljava/util/HashMap;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Map<",
             "Ljava/lang/String;",
-            "Lcom/helpshift/util/s;",
+            "Lcom/helpshift/util/r;",
             ">;"
         }
     .end annotation
@@ -23,15 +23,15 @@
     .locals 3
 
     .line 1
-    new-instance v0, Lcom/helpshift/util/s;
+    new-instance v0, Lcom/helpshift/util/r;
 
     const-string v1, "yyyy-MM-dd\'T\'HH:mm:ss.SSS\'Z\'"
 
     const-string v2, "GMT"
 
-    invoke-direct {v0, v1, v2}, Lcom/helpshift/util/s;-><init>(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {v0, v1, v2}, Lcom/helpshift/util/r;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
-    sput-object v0, Li8/b;->a:Lcom/helpshift/util/s;
+    sput-object v0, Li8/b;->a:Lcom/helpshift/util/r;
 
     .line 2
     new-instance v0, Ljava/util/HashMap;
@@ -43,12 +43,12 @@
     return-void
 .end method
 
-.method public static a(Lcom/helpshift/util/s;Ljava/lang/String;I)Ljava/lang/String;
+.method public static a(Lcom/helpshift/util/r;Ljava/lang/String;I)Ljava/lang/String;
     .locals 5
 
     .line 1
     :try_start_0
-    invoke-virtual {p0, p1}, Lcom/helpshift/util/s;->b(Ljava/lang/String;)Ljava/util/Date;
+    invoke-virtual {p0, p1}, Lcom/helpshift/util/r;->b(Ljava/lang/String;)Ljava/util/Date;
 
     move-result-object v0
 
@@ -74,7 +74,7 @@
     invoke-direct {v0, v1, v2}, Ljava/util/Date;-><init>(J)V
 
     .line 5
-    invoke-virtual {p0, v0}, Lcom/helpshift/util/s;->a(Ljava/util/Date;)Ljava/lang/String;
+    invoke-virtual {p0, v0}, Lcom/helpshift/util/r;->a(Ljava/util/Date;)Ljava/lang/String;
 
     move-result-object p0
     :try_end_0
@@ -90,7 +90,7 @@
     const-string v0, "Parsing exception on adding millisecond"
 
     .line 6
-    invoke-static {p2, v0, p0}, Landroidx/savedstate/d;->g(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {p2, v0, p0}, Le5/i;->i(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
     return-object p1
 .end method
@@ -100,9 +100,9 @@
 
     .line 1
     :try_start_0
-    sget-object v0, Li8/b;->a:Lcom/helpshift/util/s;
+    sget-object v0, Li8/b;->a:Lcom/helpshift/util/r;
 
-    invoke-virtual {v0, p0}, Lcom/helpshift/util/s;->b(Ljava/lang/String;)Ljava/util/Date;
+    invoke-virtual {v0, p0}, Lcom/helpshift/util/r;->b(Ljava/lang/String;)Ljava/util/Date;
 
     move-result-object p0
 
@@ -123,7 +123,7 @@
     const-string v1, "Parsing exception on converting storageTimeFormat to epochTime"
 
     .line 3
-    invoke-static {v0, v1, p0}, Landroidx/savedstate/d;->g(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v0, v1, p0}, Le5/i;->i(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
     const-wide/16 v0, -0x1
 
@@ -131,14 +131,14 @@
     return-wide v0
 .end method
 
-.method public static c(Le8/s;)Lcom/helpshift/util/h0;
+.method public static c(Le8/s;)Lcom/helpshift/util/f0;
     .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Le8/s;",
             ")",
-            "Lcom/helpshift/util/h0<",
+            "Lcom/helpshift/util/f0<",
             "Ljava/lang/String;",
             "Ljava/lang/Long;",
             ">;"
@@ -164,16 +164,16 @@
     invoke-direct {v0, v1, v2}, Ljava/util/Date;-><init>(J)V
 
     .line 3
-    sget-object v1, Li8/b;->a:Lcom/helpshift/util/s;
+    sget-object v1, Li8/b;->a:Lcom/helpshift/util/r;
 
-    invoke-virtual {v1, v0}, Lcom/helpshift/util/s;->a(Ljava/util/Date;)Ljava/lang/String;
+    invoke-virtual {v1, v0}, Lcom/helpshift/util/r;->a(Ljava/util/Date;)Ljava/lang/String;
 
     move-result-object v0
 
     .line 4
-    new-instance v1, Lcom/helpshift/util/h0;
+    new-instance v1, Lcom/helpshift/util/f0;
 
-    invoke-direct {v1, v0, p0}, Lcom/helpshift/util/h0;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-direct {v1, v0, p0}, Lcom/helpshift/util/f0;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
 
     return-object v1
 .end method
@@ -188,9 +188,9 @@
 
     move-result-object p0
 
-    check-cast p0, Lk3/v8;
+    check-cast p0, Lk3/w8;
 
-    invoke-virtual {p0}, Lk3/v8;->a()F
+    invoke-virtual {p0}, Lk3/w8;->a()F
 
     move-result p0
 
@@ -228,13 +228,13 @@
     return-wide v0
 .end method
 
-.method public static e(Ljava/lang/String;Ljava/util/Locale;)Lcom/helpshift/util/s;
+.method public static e(Ljava/lang/String;Ljava/util/Locale;)Lcom/helpshift/util/r;
     .locals 3
 
     const-string v0, "_"
 
     .line 1
-    invoke-static {p0, v0}, Lo/g;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {p0, v0}, Lcom/supercell/titan/a;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
@@ -256,14 +256,14 @@
 
     move-result-object v2
 
-    check-cast v2, Lcom/helpshift/util/s;
+    check-cast v2, Lcom/helpshift/util/r;
 
     if-nez v2, :cond_0
 
     .line 4
-    new-instance v2, Lcom/helpshift/util/s;
+    new-instance v2, Lcom/helpshift/util/r;
 
-    invoke-direct {v2, p0, p1}, Lcom/helpshift/util/s;-><init>(Ljava/lang/String;Ljava/util/Locale;)V
+    invoke-direct {v2, p0, p1}, Lcom/helpshift/util/r;-><init>(Ljava/lang/String;Ljava/util/Locale;)V
 
     .line 5
     invoke-virtual {v1, v0, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
@@ -272,7 +272,7 @@
     return-object v2
 .end method
 
-.method public static f(Ljava/util/Locale;)Lcom/helpshift/util/s;
+.method public static f(Ljava/util/Locale;)Lcom/helpshift/util/r;
     .locals 3
 
     const-string v0, "yyyy-MM-dd\'T\'HH:mm:ss.SSS\'Z\'"
@@ -280,7 +280,7 @@
     const-string v1, "_"
 
     .line 1
-    invoke-static {v0, v1}, Lo/g;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v0, v1}, Lcom/supercell/titan/a;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
@@ -308,14 +308,14 @@
 
     move-result-object v2
 
-    check-cast v2, Lcom/helpshift/util/s;
+    check-cast v2, Lcom/helpshift/util/r;
 
     if-nez v2, :cond_0
 
     .line 4
-    new-instance v2, Lcom/helpshift/util/s;
+    new-instance v2, Lcom/helpshift/util/r;
 
-    invoke-direct {v2, p0}, Lcom/helpshift/util/s;-><init>(Ljava/util/Locale;)V
+    invoke-direct {v2, p0}, Lcom/helpshift/util/r;-><init>(Ljava/util/Locale;)V
 
     .line 5
     invoke-virtual {v1, v0, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;

@@ -12,17 +12,17 @@
 
 
 # instance fields
-.field public final f:Ljava/util/LinkedList;
+.field public final g:Ljava/util/LinkedList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Queue<",
-            "Lvc/n$j;",
+            "Lvc/m$j;",
             ">;"
         }
     .end annotation
 .end field
 
-.field public final g:Ljava/util/ArrayList;
+.field public final h:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
@@ -32,11 +32,11 @@
     .end annotation
 .end field
 
-.field public h:Landroid/view/LayoutInflater;
+.field public i:Landroid/view/LayoutInflater;
 
-.field public final i:J
+.field public final j:J
 
-.field public final j:Landroid/app/Activity;
+.field public final k:Landroid/app/Activity;
 
 
 # direct methods
@@ -48,173 +48,173 @@
 
     invoke-direct {p0, p1, v0}, Lwc/d;-><init>(Landroid/app/Activity;I)V
 
-    iput-object p1, p0, Lid/w;->j:Landroid/app/Activity;
+    iput-object p1, p0, Lid/w;->k:Landroid/app/Activity;
 
     .line 2
     new-instance p1, Ljava/util/LinkedList;
 
     invoke-direct {p1}, Ljava/util/LinkedList;-><init>()V
 
-    iput-object p1, p0, Lid/w;->f:Ljava/util/LinkedList;
+    iput-object p1, p0, Lid/w;->g:Ljava/util/LinkedList;
 
     .line 3
     new-instance p1, Ljava/util/ArrayList;
 
     invoke-direct {p1}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object p1, p0, Lid/w;->g:Ljava/util/ArrayList;
+    iput-object p1, p0, Lid/w;->h:Ljava/util/ArrayList;
 
     .line 4
     invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
 
     move-result-wide v0
 
-    iput-wide v0, p0, Lid/w;->i:J
+    iput-wide v0, p0, Lid/w;->j:J
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Lvc/n$j;)Lid/w$a;
+.method public final a(Lvc/m$j;)Lid/w$a;
     .locals 1
 
     .line 1
-    instance-of v0, p1, Lvc/n$j$f;
+    instance-of v0, p1, Lvc/m$j$f;
 
     if-eqz v0, :cond_0
 
     new-instance v0, Lid/u;
 
-    check-cast p1, Lvc/n$j$f;
+    check-cast p1, Lvc/m$j$f;
 
-    invoke-direct {v0, p0, p1}, Lid/u;-><init>(Lid/w;Lvc/n$j$f;)V
+    invoke-direct {v0, p0, p1}, Lid/u;-><init>(Lid/w;Lvc/m$j$f;)V
 
     goto/16 :goto_0
 
     .line 2
     :cond_0
-    instance-of v0, p1, Lvc/n$j$d;
+    instance-of v0, p1, Lvc/m$j$d;
 
     if-eqz v0, :cond_1
 
     new-instance v0, Lid/o;
 
-    check-cast p1, Lvc/n$j$d;
+    check-cast p1, Lvc/m$j$d;
 
-    invoke-direct {v0, p0, p1}, Lid/o;-><init>(Lid/w;Lvc/n$j$d;)V
+    invoke-direct {v0, p0, p1}, Lid/o;-><init>(Lid/w;Lvc/m$j$d;)V
 
     goto :goto_0
 
     .line 3
     :cond_1
-    instance-of v0, p1, Lvc/n$j$b;
+    instance-of v0, p1, Lvc/m$j$b;
 
     if-eqz v0, :cond_2
 
     new-instance v0, Lid/b;
 
-    check-cast p1, Lvc/n$j$b;
+    check-cast p1, Lvc/m$j$b;
 
-    invoke-direct {v0, p0, p1}, Lid/b;-><init>(Lid/w;Lvc/n$j$b;)V
+    invoke-direct {v0, p0, p1}, Lid/b;-><init>(Lid/w;Lvc/m$j$b;)V
 
     goto :goto_0
 
     .line 4
     :cond_2
-    instance-of v0, p1, Lvc/n$j$h;
+    instance-of v0, p1, Lvc/m$j$h;
 
     if-eqz v0, :cond_3
 
     new-instance v0, Lid/a0;
 
-    check-cast p1, Lvc/n$j$h;
+    check-cast p1, Lvc/m$j$h;
 
-    invoke-direct {v0, p0, p1}, Lid/a0;-><init>(Lid/w;Lvc/n$j$h;)V
+    invoke-direct {v0, p0, p1}, Lid/a0;-><init>(Lid/w;Lvc/m$j$h;)V
 
     goto :goto_0
 
     .line 5
     :cond_3
-    instance-of v0, p1, Lvc/n$j$c;
+    instance-of v0, p1, Lvc/m$j$c;
 
     if-eqz v0, :cond_4
 
     new-instance v0, Lid/i;
 
-    check-cast p1, Lvc/n$j$c;
+    check-cast p1, Lvc/m$j$c;
 
-    invoke-direct {v0, p0, p1}, Lid/i;-><init>(Lid/w;Lvc/n$j$c;)V
+    invoke-direct {v0, p0, p1}, Lid/i;-><init>(Lid/w;Lvc/m$j$c;)V
 
     goto :goto_0
 
     .line 6
     :cond_4
-    instance-of v0, p1, Lvc/n$j$i;
+    instance-of v0, p1, Lvc/m$j$i;
 
     if-eqz v0, :cond_5
 
     new-instance v0, Lid/c0;
 
-    check-cast p1, Lvc/n$j$i;
+    check-cast p1, Lvc/m$j$i;
 
-    invoke-direct {v0, p0, p1}, Lid/c0;-><init>(Lid/w;Lvc/n$j$i;)V
+    invoke-direct {v0, p0, p1}, Lid/c0;-><init>(Lid/w;Lvc/m$j$i;)V
 
     goto :goto_0
 
     .line 7
     :cond_5
-    instance-of v0, p1, Lvc/n$j$a;
+    instance-of v0, p1, Lvc/m$j$a;
 
     if-eqz v0, :cond_6
 
     new-instance v0, Lid/a;
 
-    check-cast p1, Lvc/n$j$a;
+    check-cast p1, Lvc/m$j$a;
 
-    invoke-direct {v0, p0, p1}, Lid/a;-><init>(Lid/w;Lvc/n$j$a;)V
+    invoke-direct {v0, p0, p1}, Lid/a;-><init>(Lid/w;Lvc/m$j$a;)V
 
     goto :goto_0
 
     .line 8
     :cond_6
-    instance-of v0, p1, Lvc/n$j$e;
+    instance-of v0, p1, Lvc/m$j$e;
 
     if-eqz v0, :cond_7
 
     new-instance v0, Lid/q;
 
-    check-cast p1, Lvc/n$j$e;
+    check-cast p1, Lvc/m$j$e;
 
-    invoke-direct {v0, p0, p1}, Lid/q;-><init>(Lid/w;Lvc/n$j$e;)V
+    invoke-direct {v0, p0, p1}, Lid/q;-><init>(Lid/w;Lvc/m$j$e;)V
 
     goto :goto_0
 
     .line 9
     :cond_7
-    instance-of v0, p1, Lvc/n$j$g;
+    instance-of v0, p1, Lvc/m$j$g;
 
     if-eqz v0, :cond_8
 
     new-instance v0, Lid/v;
 
-    check-cast p1, Lvc/n$j$g;
+    check-cast p1, Lvc/m$j$g;
 
-    invoke-direct {v0, p0, p1}, Lid/v;-><init>(Lid/w;Lvc/n$j$g;)V
+    invoke-direct {v0, p0, p1}, Lid/v;-><init>(Lid/w;Lvc/m$j$g;)V
 
     goto :goto_0
 
     .line 10
     :cond_8
-    instance-of v0, p1, Lvc/n$j$j;
+    instance-of v0, p1, Lvc/m$j$j;
 
     if-eqz v0, :cond_9
 
     new-instance v0, Lid/d0;
 
-    check-cast p1, Lvc/n$j$j;
+    check-cast p1, Lvc/m$j$j;
 
-    invoke-direct {v0, p0, p1}, Lid/d0;-><init>(Lid/w;Lvc/n$j$j;)V
+    invoke-direct {v0, p0, p1}, Lid/d0;-><init>(Lid/w;Lvc/m$j$j;)V
 
     :goto_0
     return-object v0
@@ -227,16 +227,16 @@
     throw p1
 .end method
 
-.method public final b(Lvc/n$j;)V
+.method public final b(Lvc/m$j;)V
     .locals 4
 
     .line 1
-    invoke-virtual {p0, p1}, Lid/w;->a(Lvc/n$j;)Lid/w$a;
+    invoke-virtual {p0, p1}, Lid/w;->a(Lvc/m$j;)Lid/w$a;
 
     move-result-object p1
 
     .line 2
-    iget-object v0, p0, Lid/w;->g:Ljava/util/ArrayList;
+    iget-object v0, p0, Lid/w;->h:Ljava/util/ArrayList;
 
     invoke-interface {v0, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
@@ -244,7 +244,7 @@
     invoke-virtual {p0}, Lid/w;->e()V
 
     .line 4
-    iget-object v0, p0, Lid/w;->h:Landroid/view/LayoutInflater;
+    iget-object v0, p0, Lid/w;->i:Landroid/view/LayoutInflater;
 
     if-eqz v0, :cond_0
 
@@ -258,7 +258,7 @@
 
     const-string v3, "root"
 
-    invoke-static {v2, v3}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v2, v3}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {p1, v0, v2}, Lid/w$a;->b(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;)Landroid/view/View;
 
@@ -296,7 +296,7 @@
     const-string p1, "inflater"
 
     .line 9
-    invoke-static {p1}, Lt3/e;->g(Ljava/lang/String;)V
+    invoke-static {p1}, Lt3/h;->k(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 
@@ -308,10 +308,10 @@
 
     const-string v0, "notificationView"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
-    iget-object v0, p0, Lid/w;->g:Ljava/util/ArrayList;
+    iget-object v0, p0, Lid/w;->h:Ljava/util/ArrayList;
 
     invoke-interface {v0, p1}, Ljava/util/List;->remove(Ljava/lang/Object;)Z
 
@@ -340,18 +340,18 @@
 
     .line 4
     :cond_1
-    iget-object p1, p0, Lid/w;->f:Ljava/util/LinkedList;
+    iget-object p1, p0, Lid/w;->g:Ljava/util/LinkedList;
 
     invoke-interface {p1}, Ljava/util/Queue;->poll()Ljava/lang/Object;
 
     move-result-object p1
 
-    check-cast p1, Lvc/n$j;
+    check-cast p1, Lvc/m$j;
 
     if-eqz p1, :cond_2
 
     .line 5
-    invoke-virtual {p0, p1}, Lid/w;->b(Lvc/n$j;)V
+    invoke-virtual {p0, p1}, Lid/w;->b(Lvc/m$j;)V
 
     goto :goto_0
 
@@ -361,7 +361,7 @@
 
     .line 7
     :goto_0
-    iget-object p1, p0, Lid/w;->f:Ljava/util/LinkedList;
+    iget-object p1, p0, Lid/w;->g:Ljava/util/LinkedList;
 
     invoke-interface {p1}, Ljava/util/Collection;->isEmpty()Z
 
@@ -369,7 +369,7 @@
 
     if-eqz p1, :cond_3
 
-    iget-object p1, p0, Lid/w;->g:Ljava/util/ArrayList;
+    iget-object p1, p0, Lid/w;->h:Ljava/util/ArrayList;
 
     invoke-interface {p1}, Ljava/util/List;->isEmpty()Z
 
@@ -389,7 +389,7 @@
 
     const-string v0, "notificationViewView"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     iget-object v0, p1, Lid/w$a;->e:Landroid/view/View;
@@ -444,7 +444,7 @@
 
     const-string v0, "ev"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     invoke-super {p0, p1}, Landroid/app/Dialog;->dispatchTouchEvent(Landroid/view/MotionEvent;)Z
@@ -454,9 +454,9 @@
     if-eqz p1, :cond_1
 
     .line 2
-    iget-object p1, p0, Lid/w;->g:Ljava/util/ArrayList;
+    iget-object p1, p0, Lid/w;->h:Ljava/util/ArrayList;
 
-    invoke-static {p1}, Lje/j;->A(Ljava/util/List;)Ljava/lang/Object;
+    invoke-static {p1}, Lje/j;->v(Ljava/util/List;)Ljava/lang/Object;
 
     move-result-object p1
 
@@ -481,7 +481,7 @@
     .locals 5
 
     .line 1
-    iget-object v0, p0, Lid/w;->g:Ljava/util/ArrayList;
+    iget-object v0, p0, Lid/w;->h:Ljava/util/ArrayList;
 
     .line 2
     invoke-interface {v0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
@@ -533,7 +533,7 @@
 
     .line 8
     :cond_1
-    invoke-static {}, Lcom/android/billingclient/api/z;->p()V
+    invoke-static {}, Lcom/android/billingclient/api/y;->k()V
 
     const/4 v0, 0x0
 
@@ -546,7 +546,7 @@
 .method public final onBackPressed()V
     .locals 1
 
-    iget-object v0, p0, Lid/w;->j:Landroid/app/Activity;
+    iget-object v0, p0, Lid/w;->k:Landroid/app/Activity;
 
     invoke-virtual {v0}, Landroid/app/Activity;->onBackPressed()V
 
@@ -582,7 +582,7 @@
     .line 5
     new-instance v1, Landroid/content/res/Configuration;
 
-    iget-object v2, p0, Lid/w;->j:Landroid/app/Activity;
+    iget-object v2, p0, Lid/w;->k:Landroid/app/Activity;
 
     invoke-virtual {v2}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -590,7 +590,7 @@
 
     const-string v3, "activity.resources"
 
-    invoke-static {v2, v3}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v2, v3}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v2}, Landroid/content/res/Resources;->getConfiguration()Landroid/content/res/Configuration;
 
@@ -602,7 +602,7 @@
     invoke-virtual {v1, v0}, Landroid/content/res/Configuration;->setLocale(Ljava/util/Locale;)V
 
     .line 7
-    iget-object v0, p0, Lid/w;->j:Landroid/app/Activity;
+    iget-object v0, p0, Lid/w;->k:Landroid/app/Activity;
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->createConfigurationContext(Landroid/content/res/Configuration;)Landroid/content/Context;
 
@@ -615,9 +615,9 @@
 
     const-string v1, "LayoutInflater.from(context)"
 
-    invoke-static {v0, v1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    iput-object v0, p0, Lid/w;->h:Landroid/view/LayoutInflater;
+    iput-object v0, p0, Lid/w;->i:Landroid/view/LayoutInflater;
 
     .line 9
     sget v1, Lcom/supercell/id/R$layout;->dialog_notification:I
@@ -720,9 +720,9 @@
 
     .line 9
     :cond_0
-    iget-object v2, p0, Lid/w;->j:Landroid/app/Activity;
+    iget-object v2, p0, Lid/w;->k:Landroid/app/Activity;
 
-    invoke-static {v2}, Lcom/android/billingclient/api/c0;->i(Landroid/app/Activity;)Z
+    invoke-static {v2}, Lcom/android/billingclient/api/b0;->j(Landroid/app/Activity;)Z
 
     move-result v2
 
@@ -745,7 +745,7 @@
     if-eqz v0, :cond_3
 
     .line 13
-    iget-object v2, p0, Lid/w;->j:Landroid/app/Activity;
+    iget-object v2, p0, Lid/w;->k:Landroid/app/Activity;
 
     invoke-virtual {v2}, Landroid/app/Activity;->getWindow()Landroid/view/Window;
 
@@ -753,7 +753,7 @@
 
     const-string v3, "activity.window"
 
-    invoke-static {v2, v3}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v2, v3}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v2}, Landroid/view/Window;->getDecorView()Landroid/view/View;
 
@@ -761,16 +761,16 @@
 
     const-string v3, "activity.window.decorView"
 
-    invoke-static {v2, v3}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v2, v3}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v2}, Landroid/view/View;->getSystemUiVisibility()I
 
     move-result v2
 
     .line 14
-    iget-object v3, p0, Lid/w;->j:Landroid/app/Activity;
+    iget-object v3, p0, Lid/w;->k:Landroid/app/Activity;
 
-    invoke-static {v3}, Lcom/android/billingclient/api/c0;->i(Landroid/app/Activity;)Z
+    invoke-static {v3}, Lcom/android/billingclient/api/b0;->j(Landroid/app/Activity;)Z
 
     move-result v3
 
@@ -803,7 +803,7 @@
 
     const-string v3, "decorView"
 
-    invoke-static {v0, v3}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v3}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v0, v2}, Landroid/view/View;->setSystemUiVisibility(I)V
 

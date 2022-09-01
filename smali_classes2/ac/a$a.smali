@@ -61,7 +61,7 @@
     iget-object v1, p0, Lac/a$a;->a:Lac/a;
 
     .line 3
-    iget-object v2, v1, Lac/a;->p:Ljava/io/BufferedWriter;
+    iget-object v2, v1, Lac/a;->q:Ljava/io/BufferedWriter;
 
     if-nez v2, :cond_0
 
@@ -102,7 +102,7 @@
     const/4 v2, 0x0
 
     .line 13
-    iput v2, v1, Lac/a;->r:I
+    iput v2, v1, Lac/a;->s:I
 
     .line 14
     :cond_1

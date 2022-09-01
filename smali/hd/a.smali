@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field public final f:Ljava/lang/ref/WeakReference;
+.field public final g:Ljava/lang/ref/WeakReference;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/lang/ref/WeakReference<",
@@ -21,7 +21,7 @@
 
     const-string v0, "activity"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     sget v0, Lcom/supercell/id/R$style;->SupercellIdTheme:I
@@ -33,7 +33,7 @@
 
     invoke-direct {v0, p1}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
 
-    iput-object v0, p0, Lhd/a;->f:Ljava/lang/ref/WeakReference;
+    iput-object v0, p0, Lhd/a;->g:Ljava/lang/ref/WeakReference;
 
     return-void
 .end method
@@ -92,7 +92,7 @@
     invoke-super {p0, p1}, Landroid/app/Dialog;->onCreate(Landroid/os/Bundle;)V
 
     .line 2
-    iget-object p1, p0, Lhd/a;->f:Ljava/lang/ref/WeakReference;
+    iget-object p1, p0, Lhd/a;->g:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {p1}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
 
@@ -128,7 +128,7 @@
 
     .line 7
     :cond_0
-    invoke-static {p1}, Lcom/android/billingclient/api/c0;->i(Landroid/app/Activity;)Z
+    invoke-static {p1}, Lcom/android/billingclient/api/b0;->j(Landroid/app/Activity;)Z
 
     move-result v2
 
@@ -164,7 +164,7 @@
 
     const-string v5, "activity.resources"
 
-    invoke-static {v4, v5}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v4, v5}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v4}, Landroid/content/res/Resources;->getConfiguration()Landroid/content/res/Configuration;
 
@@ -262,12 +262,12 @@
 
     const-string v3, "logoImageView"
 
-    invoke-static {v1, v3}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, v3}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v3, "id_logo_black.png"
 
     .line 29
-    invoke-static {v1, v3, v0}, Lud/f0;->h(Landroid/widget/ImageView;Ljava/lang/String;Z)V
+    invoke-static {v1, v3, v0}, Lud/d0;->h(Landroid/widget/ImageView;Ljava/lang/String;Z)V
 
     .line 30
     sget v1, Lcom/supercell/id/R$id;->title:I
@@ -280,7 +280,7 @@
 
     const-string v6, "title"
 
-    invoke-static {v3, v6}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v3, v6}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     sget v7, Lcom/supercell/id/R$font;->supercell_text_android_bd:I
 
@@ -293,12 +293,12 @@
 
     check-cast v1, Landroid/widget/TextView;
 
-    invoke-static {v1, v6}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, v6}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v3, "ingame_mute_invites_title"
 
     .line 32
-    invoke-static {v1, v3, v4}, Lud/f0;->j(Landroid/widget/TextView;Ljava/lang/String;Lre/p;)V
+    invoke-static {v1, v3, v4}, Lud/d0;->j(Landroid/widget/TextView;Ljava/lang/String;Lre/p;)V
 
     .line 33
     sget v1, Lcom/supercell/id/R$id;->closeButton:I
@@ -310,20 +310,20 @@
     check-cast v1, Landroid/widget/ImageButton;
 
     .line 34
-    sget-object v3, Luc/p;->k:Luc/p$c;
+    sget-object v3, Luc/o;->k:Luc/o$c;
 
     const-string v6, "context"
 
-    invoke-static {p1, v6}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v6}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-virtual {v3, p1}, Luc/p$c;->j(Landroid/content/Context;)Luc/p;
+    invoke-virtual {v3, p1}, Luc/o$c;->j(Landroid/content/Context;)Luc/o;
 
     move-result-object p1
 
     invoke-virtual {v1, p1}, Landroid/widget/ImageView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
 
     .line 35
-    sget-object p1, Lsc/a$a;->g:Lsc/a$a;
+    sget-object p1, Lsc/a$a;->h:Lsc/a$a;
 
     const/4 p1, -0x1
 
@@ -349,7 +349,7 @@
 
     const-string v1, "rowsContainer"
 
-    invoke-static {v6, v1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v6, v1}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/4 v7, 0x0
 
@@ -363,7 +363,7 @@
 
     const/16 v12, 0x1f
 
-    invoke-static/range {v6 .. v12}, Luc/d;->a(Landroid/view/View;IFFFLuc/o$b;I)V
+    invoke-static/range {v6 .. v12}, La5/a0;->a(Landroid/view/View;IFFFLuc/n$b;I)V
 
     .line 38
     invoke-virtual {p0, p1}, Landroid/app/Dialog;->findViewById(I)Landroid/view/View;
@@ -377,7 +377,7 @@
 
     move-result v1
 
-    invoke-static {v5, v1}, Lcom/google/android/play/core/appupdate/c;->c(II)Lve/c;
+    invoke-static {v5, v1}, La5/b0;->l(II)Lve/c;
 
     move-result-object v1
 
@@ -398,7 +398,7 @@
     check-cast v6, Lve/b;
 
     .line 42
-    iget-boolean v6, v6, Lve/b;->g:Z
+    iget-boolean v6, v6, Lve/b;->h:Z
 
     if-eqz v6, :cond_3
 
@@ -513,7 +513,7 @@
 
     const-string v8, "row.titleTextView"
 
-    invoke-static {v7, v8}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v7, v8}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     sget v11, Lcom/supercell/id/R$font;->supercell_text_android_md:I
 
@@ -526,7 +526,7 @@
 
     check-cast v1, Landroid/widget/TextView;
 
-    invoke-static {v1, v8}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, v8}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     new-array v7, v0, [Lie/d;
 
@@ -546,7 +546,7 @@
     const-string v8, "ingame_mute_invites_hours"
 
     .line 52
-    invoke-static {v1, v8, v7, v4}, Lud/f0;->k(Landroid/widget/TextView;Ljava/lang/String;[Lie/d;Lre/l;)V
+    invoke-static {v1, v8, v7, v4}, Lud/d0;->k(Landroid/widget/TextView;Ljava/lang/String;[Lie/d;Lre/l;)V
 
     .line 53
     sget v1, Lcom/supercell/id/R$id;->selectButton:I
@@ -563,14 +563,14 @@
     invoke-static {v1, v3}, Lae/r;->b(Landroid/widget/TextView;I)V
 
     .line 55
-    sget-object v3, Lsc/a$a;->g:Lsc/a$a;
+    sget-object v3, Lsc/a$a;->h:Lsc/a$a;
 
     invoke-static {v1, v5, v5}, Lae/z2;->r(Landroid/view/View;II)V
 
     const-string v3, "ingame_mute_invites_select_btn"
 
     .line 56
-    invoke-static {v1, v3, v4}, Lud/f0;->j(Landroid/widget/TextView;Ljava/lang/String;Lre/p;)V
+    invoke-static {v1, v3, v4}, Lud/d0;->j(Landroid/widget/TextView;Ljava/lang/String;Lre/p;)V
 
     .line 57
     new-instance v3, Lhd/a$c;
@@ -585,7 +585,7 @@
 
     .line 58
     :cond_8
-    invoke-static {}, Lcom/android/billingclient/api/z;->p()V
+    invoke-static {}, Lcom/android/billingclient/api/y;->k()V
 
     throw v4
 
@@ -607,7 +607,7 @@
     move-result-object v0
 
     .line 3
-    iget-object v0, v0, Lae/u;->m:La5/d0;
+    iget-object v0, v0, Lae/u;->m:Lpe/a;
 
     .line 4
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;

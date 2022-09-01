@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field public f:I
+.field public g:I
 
-.field public g:Ljava/lang/Object;
+.field public h:Ljava/lang/Object;
 
-.field public h:I
+.field public i:I
 
 
 # direct methods
@@ -19,13 +19,13 @@
     invoke-direct {p0}, Ljava/lang/Exception;-><init>()V
 
     .line 2
-    iput p1, p0, Lcom/nzincorp/zinny/util/json/parser/ParseException;->h:I
+    iput p1, p0, Lcom/nzincorp/zinny/util/json/parser/ParseException;->i:I
 
     .line 3
-    iput p2, p0, Lcom/nzincorp/zinny/util/json/parser/ParseException;->f:I
+    iput p2, p0, Lcom/nzincorp/zinny/util/json/parser/ParseException;->g:I
 
     .line 4
-    iput-object p3, p0, Lcom/nzincorp/zinny/util/json/parser/ParseException;->g:Ljava/lang/Object;
+    iput-object p3, p0, Lcom/nzincorp/zinny/util/json/parser/ParseException;->h:Ljava/lang/Object;
 
     return-void
 .end method
@@ -41,7 +41,7 @@
     invoke-direct {v0}, Ljava/lang/StringBuffer;-><init>()V
 
     .line 2
-    iget v1, p0, Lcom/nzincorp/zinny/util/json/parser/ParseException;->f:I
+    iget v1, p0, Lcom/nzincorp/zinny/util/json/parser/ParseException;->g:I
 
     const-string v2, "."
 
@@ -60,7 +60,7 @@
     .line 3
     invoke-virtual {v0, v1}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
 
-    iget v1, p0, Lcom/nzincorp/zinny/util/json/parser/ParseException;->h:I
+    iget v1, p0, Lcom/nzincorp/zinny/util/json/parser/ParseException;->i:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuffer;->append(I)Ljava/lang/StringBuffer;
 
@@ -74,7 +74,7 @@
     .line 4
     invoke-virtual {v0, v1}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
 
-    iget v1, p0, Lcom/nzincorp/zinny/util/json/parser/ParseException;->h:I
+    iget v1, p0, Lcom/nzincorp/zinny/util/json/parser/ParseException;->i:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuffer;->append(I)Ljava/lang/StringBuffer;
 
@@ -82,7 +82,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
 
-    iget-object v1, p0, Lcom/nzincorp/zinny/util/json/parser/ParseException;->g:Ljava/lang/Object;
+    iget-object v1, p0, Lcom/nzincorp/zinny/util/json/parser/ParseException;->h:Ljava/lang/Object;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuffer;->append(Ljava/lang/Object;)Ljava/lang/StringBuffer;
 
@@ -94,7 +94,7 @@
     .line 5
     invoke-virtual {v0, v1}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
 
-    iget-object v1, p0, Lcom/nzincorp/zinny/util/json/parser/ParseException;->g:Ljava/lang/Object;
+    iget-object v1, p0, Lcom/nzincorp/zinny/util/json/parser/ParseException;->h:Ljava/lang/Object;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuffer;->append(Ljava/lang/Object;)Ljava/lang/StringBuffer;
 
@@ -102,7 +102,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
 
-    iget v1, p0, Lcom/nzincorp/zinny/util/json/parser/ParseException;->h:I
+    iget v1, p0, Lcom/nzincorp/zinny/util/json/parser/ParseException;->i:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuffer;->append(I)Ljava/lang/StringBuffer;
 
@@ -116,7 +116,7 @@
     .line 6
     invoke-virtual {v0, v1}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
 
-    iget-object v1, p0, Lcom/nzincorp/zinny/util/json/parser/ParseException;->g:Ljava/lang/Object;
+    iget-object v1, p0, Lcom/nzincorp/zinny/util/json/parser/ParseException;->h:Ljava/lang/Object;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuffer;->append(Ljava/lang/Object;)Ljava/lang/StringBuffer;
 
@@ -124,7 +124,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuffer;->append(Ljava/lang/String;)Ljava/lang/StringBuffer;
 
-    iget v1, p0, Lcom/nzincorp/zinny/util/json/parser/ParseException;->h:I
+    iget v1, p0, Lcom/nzincorp/zinny/util/json/parser/ParseException;->i:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuffer;->append(I)Ljava/lang/StringBuffer;
 

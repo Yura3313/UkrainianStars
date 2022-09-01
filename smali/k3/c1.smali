@@ -4,10 +4,10 @@
 
 
 # static fields
-.field public static a:Lk3/k0;
+.field public static a:Lk3/j0;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lk3/k0<",
+            "Lk3/j0<",
             "Ljava/lang/String;",
             ">;"
         }
@@ -19,15 +19,15 @@
 .method public static constructor <clinit>()V
     .locals 2
 
-    const-string v0, "gads:pan:experiment_id"
+    const-string v0, "gads:sdk_core_location"
 
-    const-string v1, ""
+    const-string v1, "https://googleads.g.doubleclick.net/mads/static/mad/sdk/native/sdk-core-v40-loader.html"
 
-    invoke-static {v0, v1}, Lk3/k0;->d(Ljava/lang/String;Ljava/lang/String;)Lk3/k0;
+    invoke-static {v0, v1}, Lk3/j0;->d(Ljava/lang/String;Ljava/lang/String;)Lk3/j0;
 
     move-result-object v0
 
-    sput-object v0, Lk3/c1;->a:Lk3/k0;
+    sput-object v0, Lk3/c1;->a:Lk3/j0;
 
     return-void
 .end method

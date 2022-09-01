@@ -14,15 +14,15 @@
 
 
 # static fields
-.field public static final enum f:Lib/a;
-
 .field public static final enum g:Lib/a;
 
 .field public static final enum h:Lib/a;
 
 .field public static final enum i:Lib/a;
 
-.field public static final synthetic j:[Lib/a;
+.field public static final enum j:Lib/a;
+
+.field public static final synthetic k:[Lib/a;
 
 
 # direct methods
@@ -38,7 +38,7 @@
 
     invoke-direct {v0, v1, v2}, Lib/a;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lib/a;->f:Lib/a;
+    sput-object v0, Lib/a;->g:Lib/a;
 
     .line 2
     new-instance v1, Lib/a;
@@ -49,7 +49,7 @@
 
     invoke-direct {v1, v3, v4}, Lib/a;-><init>(Ljava/lang/String;I)V
 
-    sput-object v1, Lib/a;->g:Lib/a;
+    sput-object v1, Lib/a;->h:Lib/a;
 
     .line 3
     new-instance v3, Lib/a;
@@ -60,7 +60,7 @@
 
     invoke-direct {v3, v5, v6}, Lib/a;-><init>(Ljava/lang/String;I)V
 
-    sput-object v3, Lib/a;->h:Lib/a;
+    sput-object v3, Lib/a;->i:Lib/a;
 
     .line 4
     new-instance v5, Lib/a;
@@ -71,7 +71,7 @@
 
     invoke-direct {v5, v7, v8}, Lib/a;-><init>(Ljava/lang/String;I)V
 
-    sput-object v5, Lib/a;->i:Lib/a;
+    sput-object v5, Lib/a;->j:Lib/a;
 
     const/4 v7, 0x4
 
@@ -86,7 +86,7 @@
     aput-object v5, v7, v8
 
     .line 5
-    sput-object v7, Lib/a;->j:[Lib/a;
+    sput-object v7, Lib/a;->k:[Lib/a;
 
     return-void
 .end method
@@ -121,7 +121,7 @@
 .method public static values()[Lib/a;
     .locals 1
 
-    sget-object v0, Lib/a;->j:[Lib/a;
+    sget-object v0, Lib/a;->k:[Lib/a;
 
     invoke-virtual {v0}, [Lib/a;->clone()Ljava/lang/Object;
 

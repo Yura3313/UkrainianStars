@@ -17,21 +17,21 @@
 
 
 # static fields
-.field public static i:[Ljava/lang/Object;
+.field public static j:[Ljava/lang/Object;
 
-.field public static j:I
+.field public static k:I
 
-.field public static k:[Ljava/lang/Object;
+.field public static l:[Ljava/lang/Object;
 
-.field public static l:I
+.field public static m:I
 
 
 # instance fields
-.field public f:[I
+.field public g:[I
 
-.field public g:[Ljava/lang/Object;
+.field public h:[Ljava/lang/Object;
 
-.field public h:I
+.field public i:I
 
 
 # direct methods
@@ -42,19 +42,19 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    sget-object v0, Lcom/android/billingclient/api/z;->a:[I
+    sget-object v0, Ll2/p;->a:[I
 
-    iput-object v0, p0, Lm/g;->f:[I
+    iput-object v0, p0, Lm/g;->g:[I
 
     .line 3
-    sget-object v0, Lcom/android/billingclient/api/z;->b:[Ljava/lang/Object;
+    sget-object v0, Ll2/p;->b:[Ljava/lang/Object;
 
-    iput-object v0, p0, Lm/g;->g:[Ljava/lang/Object;
+    iput-object v0, p0, Lm/g;->h:[Ljava/lang/Object;
 
     const/4 v0, 0x0
 
     .line 4
-    iput v0, p0, Lm/g;->h:I
+    iput v0, p0, Lm/g;->i:I
 
     return-void
 .end method
@@ -68,14 +68,14 @@
     if-nez p1, :cond_0
 
     .line 6
-    sget-object p1, Lcom/android/billingclient/api/z;->a:[I
+    sget-object p1, Ll2/p;->a:[I
 
-    iput-object p1, p0, Lm/g;->f:[I
+    iput-object p1, p0, Lm/g;->g:[I
 
     .line 7
-    sget-object p1, Lcom/android/billingclient/api/z;->b:[Ljava/lang/Object;
+    sget-object p1, Ll2/p;->b:[Ljava/lang/Object;
 
-    iput-object p1, p0, Lm/g;->g:[Ljava/lang/Object;
+    iput-object p1, p0, Lm/g;->h:[Ljava/lang/Object;
 
     goto :goto_0
 
@@ -87,7 +87,7 @@
     const/4 p1, 0x0
 
     .line 9
-    iput p1, p0, Lm/g;->h:I
+    iput p1, p0, Lm/g;->i:I
 
     return-void
 .end method
@@ -108,17 +108,17 @@
     if-eqz p1, :cond_1
 
     .line 11
-    iget v0, p1, Lm/g;->h:I
+    iget v0, p1, Lm/g;->i:I
 
     .line 12
-    iget v1, p0, Lm/g;->h:I
+    iget v1, p0, Lm/g;->i:I
 
     add-int/2addr v1, v0
 
     invoke-virtual {p0, v1}, Lm/g;->b(I)V
 
     .line 13
-    iget v1, p0, Lm/g;->h:I
+    iget v1, p0, Lm/g;->i:I
 
     const/4 v2, 0x0
 
@@ -127,23 +127,23 @@
     if-lez v0, :cond_1
 
     .line 14
-    iget-object v1, p1, Lm/g;->f:[I
+    iget-object v1, p1, Lm/g;->g:[I
 
-    iget-object v3, p0, Lm/g;->f:[I
+    iget-object v3, p0, Lm/g;->g:[I
 
     invoke-static {v1, v2, v3, v2, v0}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     .line 15
-    iget-object p1, p1, Lm/g;->g:[Ljava/lang/Object;
+    iget-object p1, p1, Lm/g;->h:[Ljava/lang/Object;
 
-    iget-object v1, p0, Lm/g;->g:[Ljava/lang/Object;
+    iget-object v1, p0, Lm/g;->h:[Ljava/lang/Object;
 
     shl-int/lit8 v3, v0, 0x1
 
     invoke-static {p1, v2, v1, v2, v3}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     .line 16
-    iput v0, p0, Lm/g;->h:I
+    iput v0, p0, Lm/g;->i:I
 
     goto :goto_1
 
@@ -192,26 +192,26 @@
 
     .line 3
     :try_start_0
-    sget-object v4, Lm/g;->k:[Ljava/lang/Object;
+    sget-object v4, Lm/g;->l:[Ljava/lang/Object;
 
     if-eqz v4, :cond_0
 
     .line 4
-    iput-object v4, p0, Lm/g;->g:[Ljava/lang/Object;
+    iput-object v4, p0, Lm/g;->h:[Ljava/lang/Object;
 
     .line 5
     aget-object p1, v4, v2
 
     check-cast p1, [Ljava/lang/Object;
 
-    sput-object p1, Lm/g;->k:[Ljava/lang/Object;
+    sput-object p1, Lm/g;->l:[Ljava/lang/Object;
 
     .line 6
     aget-object p1, v4, v3
 
     check-cast p1, [I
 
-    iput-object p1, p0, Lm/g;->f:[I
+    iput-object p1, p0, Lm/g;->g:[I
 
     .line 7
     aput-object v1, v4, v3
@@ -219,11 +219,11 @@
     aput-object v1, v4, v2
 
     .line 8
-    sget p1, Lm/g;->l:I
+    sget p1, Lm/g;->m:I
 
     sub-int/2addr p1, v3
 
-    sput p1, Lm/g;->l:I
+    sput p1, Lm/g;->m:I
 
     .line 9
     monitor-exit v0
@@ -255,26 +255,26 @@
 
     .line 12
     :try_start_1
-    sget-object v4, Lm/g;->i:[Ljava/lang/Object;
+    sget-object v4, Lm/g;->j:[Ljava/lang/Object;
 
     if-eqz v4, :cond_2
 
     .line 13
-    iput-object v4, p0, Lm/g;->g:[Ljava/lang/Object;
+    iput-object v4, p0, Lm/g;->h:[Ljava/lang/Object;
 
     .line 14
     aget-object p1, v4, v2
 
     check-cast p1, [Ljava/lang/Object;
 
-    sput-object p1, Lm/g;->i:[Ljava/lang/Object;
+    sput-object p1, Lm/g;->j:[Ljava/lang/Object;
 
     .line 15
     aget-object p1, v4, v3
 
     check-cast p1, [I
 
-    iput-object p1, p0, Lm/g;->f:[I
+    iput-object p1, p0, Lm/g;->g:[I
 
     .line 16
     aput-object v1, v4, v3
@@ -282,11 +282,11 @@
     aput-object v1, v4, v2
 
     .line 17
-    sget p1, Lm/g;->j:I
+    sget p1, Lm/g;->k:I
 
     sub-int/2addr p1, v3
 
-    sput p1, Lm/g;->j:I
+    sput p1, Lm/g;->k:I
 
     .line 18
     monitor-exit v0
@@ -313,14 +313,14 @@
     :goto_0
     new-array v0, p1, [I
 
-    iput-object v0, p0, Lm/g;->f:[I
+    iput-object v0, p0, Lm/g;->g:[I
 
     shl-int/2addr p1, v3
 
     .line 21
     new-array p1, p1, [Ljava/lang/Object;
 
-    iput-object p1, p0, Lm/g;->g:[Ljava/lang/Object;
+    iput-object p1, p0, Lm/g;->h:[Ljava/lang/Object;
 
     return-void
 .end method
@@ -352,12 +352,12 @@
 
     .line 3
     :try_start_0
-    sget v1, Lm/g;->l:I
+    sget v1, Lm/g;->m:I
 
     if-ge v1, v5, :cond_1
 
     .line 4
-    sget-object v1, Lm/g;->k:[Ljava/lang/Object;
+    sget-object v1, Lm/g;->l:[Ljava/lang/Object;
 
     aput-object v1, p1, v4
 
@@ -380,14 +380,14 @@
 
     .line 7
     :cond_0
-    sput-object p1, Lm/g;->k:[Ljava/lang/Object;
+    sput-object p1, Lm/g;->l:[Ljava/lang/Object;
 
     .line 8
-    sget p0, Lm/g;->l:I
+    sget p0, Lm/g;->m:I
 
     add-int/2addr p0, v6
 
-    sput p0, Lm/g;->l:I
+    sput p0, Lm/g;->m:I
 
     .line 9
     :cond_1
@@ -417,12 +417,12 @@
 
     .line 12
     :try_start_1
-    sget v1, Lm/g;->j:I
+    sget v1, Lm/g;->k:I
 
     if-ge v1, v5, :cond_4
 
     .line 13
-    sget-object v1, Lm/g;->i:[Ljava/lang/Object;
+    sget-object v1, Lm/g;->j:[Ljava/lang/Object;
 
     aput-object v1, p1, v4
 
@@ -445,14 +445,14 @@
 
     .line 16
     :cond_3
-    sput-object p1, Lm/g;->i:[Ljava/lang/Object;
+    sput-object p1, Lm/g;->j:[Ljava/lang/Object;
 
     .line 17
-    sget p0, Lm/g;->j:I
+    sget p0, Lm/g;->k:I
 
     add-int/2addr p0, v6
 
-    sput p0, Lm/g;->j:I
+    sput p0, Lm/g;->k:I
 
     .line 18
     :cond_4
@@ -480,35 +480,35 @@
     .locals 5
 
     .line 1
-    iget v0, p0, Lm/g;->h:I
+    iget v0, p0, Lm/g;->i:I
 
     .line 2
-    iget-object v1, p0, Lm/g;->f:[I
+    iget-object v1, p0, Lm/g;->g:[I
 
     array-length v2, v1
 
     if-ge v2, p1, :cond_1
 
     .line 3
-    iget-object v2, p0, Lm/g;->g:[Ljava/lang/Object;
+    iget-object v2, p0, Lm/g;->h:[Ljava/lang/Object;
 
     .line 4
     invoke-direct {p0, p1}, Lm/g;->a(I)V
 
     .line 5
-    iget p1, p0, Lm/g;->h:I
+    iget p1, p0, Lm/g;->i:I
 
     if-lez p1, :cond_0
 
     .line 6
-    iget-object p1, p0, Lm/g;->f:[I
+    iget-object p1, p0, Lm/g;->g:[I
 
     const/4 v3, 0x0
 
     invoke-static {v1, v3, p1, v3, v0}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     .line 7
-    iget-object p1, p0, Lm/g;->g:[Ljava/lang/Object;
+    iget-object p1, p0, Lm/g;->h:[Ljava/lang/Object;
 
     shl-int/lit8 v4, v0, 0x1
 
@@ -520,7 +520,7 @@
 
     .line 9
     :cond_1
-    iget p1, p0, Lm/g;->h:I
+    iget p1, p0, Lm/g;->i:I
 
     if-ne p1, v0, :cond_2
 
@@ -539,37 +539,37 @@
     .locals 4
 
     .line 1
-    iget v0, p0, Lm/g;->h:I
+    iget v0, p0, Lm/g;->i:I
 
     if-lez v0, :cond_0
 
     .line 2
-    iget-object v1, p0, Lm/g;->f:[I
+    iget-object v1, p0, Lm/g;->g:[I
 
     .line 3
-    iget-object v2, p0, Lm/g;->g:[Ljava/lang/Object;
+    iget-object v2, p0, Lm/g;->h:[Ljava/lang/Object;
 
     .line 4
-    sget-object v3, Lcom/android/billingclient/api/z;->a:[I
+    sget-object v3, Ll2/p;->a:[I
 
-    iput-object v3, p0, Lm/g;->f:[I
+    iput-object v3, p0, Lm/g;->g:[I
 
     .line 5
-    sget-object v3, Lcom/android/billingclient/api/z;->b:[Ljava/lang/Object;
+    sget-object v3, Ll2/p;->b:[Ljava/lang/Object;
 
-    iput-object v3, p0, Lm/g;->g:[Ljava/lang/Object;
+    iput-object v3, p0, Lm/g;->h:[Ljava/lang/Object;
 
     const/4 v3, 0x0
 
     .line 6
-    iput v3, p0, Lm/g;->h:I
+    iput v3, p0, Lm/g;->i:I
 
     .line 7
     invoke-static {v1, v2, v0}, Lm/g;->c([I[Ljava/lang/Object;I)V
 
     .line 8
     :cond_0
-    iget v0, p0, Lm/g;->h:I
+    iget v0, p0, Lm/g;->i:I
 
     if-gtz v0, :cond_1
 
@@ -628,7 +628,7 @@
     .locals 6
 
     .line 1
-    iget v0, p0, Lm/g;->h:I
+    iget v0, p0, Lm/g;->i:I
 
     const/4 v1, -0x1
 
@@ -638,11 +638,11 @@
 
     .line 2
     :cond_0
-    iget-object v2, p0, Lm/g;->f:[I
+    iget-object v2, p0, Lm/g;->g:[I
 
     .line 3
     :try_start_0
-    invoke-static {v2, v0, p2}, Lcom/android/billingclient/api/z;->b([III)I
+    invoke-static {v2, v0, p2}, Ll2/p;->a([III)I
 
     move-result v2
     :try_end_0
@@ -654,7 +654,7 @@
 
     .line 4
     :cond_1
-    iget-object v3, p0, Lm/g;->g:[Ljava/lang/Object;
+    iget-object v3, p0, Lm/g;->h:[Ljava/lang/Object;
 
     shl-int/lit8 v4, v2, 0x1
 
@@ -675,14 +675,14 @@
     if-ge v3, v0, :cond_4
 
     .line 5
-    iget-object v4, p0, Lm/g;->f:[I
+    iget-object v4, p0, Lm/g;->g:[I
 
     aget v4, v4, v3
 
     if-ne v4, p2, :cond_4
 
     .line 6
-    iget-object v4, p0, Lm/g;->g:[Ljava/lang/Object;
+    iget-object v4, p0, Lm/g;->h:[Ljava/lang/Object;
 
     shl-int/lit8 v5, v3, 0x1
 
@@ -708,14 +708,14 @@
     if-ltz v2, :cond_6
 
     .line 7
-    iget-object v0, p0, Lm/g;->f:[I
+    iget-object v0, p0, Lm/g;->g:[I
 
     aget v0, v0, v2
 
     if-ne v0, p2, :cond_6
 
     .line 8
-    iget-object v0, p0, Lm/g;->g:[Ljava/lang/Object;
+    iget-object v0, p0, Lm/g;->h:[Ljava/lang/Object;
 
     shl-int/lit8 v4, v2, 0x1
 
@@ -799,10 +799,10 @@
     check-cast p1, Lm/g;
 
     .line 3
-    iget v1, p0, Lm/g;->h:I
+    iget v1, p0, Lm/g;->i:I
 
     .line 4
-    iget v3, p1, Lm/g;->h:I
+    iget v3, p1, Lm/g;->i:I
 
     if-eq v1, v3, :cond_1
 
@@ -814,7 +814,7 @@
     .line 5
     :goto_0
     :try_start_0
-    iget v3, p0, Lm/g;->h:I
+    iget v3, p0, Lm/g;->i:I
 
     if-ge v1, v3, :cond_5
 
@@ -883,7 +883,7 @@
     check-cast p1, Ljava/util/Map;
 
     .line 13
-    iget v1, p0, Lm/g;->h:I
+    iget v1, p0, Lm/g;->i:I
 
     .line 14
     invoke-interface {p1}, Ljava/util/Map;->size()I
@@ -900,7 +900,7 @@
     .line 15
     :goto_1
     :try_start_1
-    iget v3, p0, Lm/g;->h:I
+    iget v3, p0, Lm/g;->i:I
 
     if-ge v1, v3, :cond_b
 
@@ -963,7 +963,7 @@
     .locals 6
 
     .line 1
-    iget v0, p0, Lm/g;->h:I
+    iget v0, p0, Lm/g;->i:I
 
     const/4 v1, -0x1
 
@@ -973,13 +973,13 @@
 
     .line 2
     :cond_0
-    iget-object v2, p0, Lm/g;->f:[I
+    iget-object v2, p0, Lm/g;->g:[I
 
     const/4 v3, 0x0
 
     .line 3
     :try_start_0
-    invoke-static {v2, v0, v3}, Lcom/android/billingclient/api/z;->b([III)I
+    invoke-static {v2, v0, v3}, Ll2/p;->a([III)I
 
     move-result v2
     :try_end_0
@@ -991,7 +991,7 @@
 
     .line 4
     :cond_1
-    iget-object v3, p0, Lm/g;->g:[Ljava/lang/Object;
+    iget-object v3, p0, Lm/g;->h:[Ljava/lang/Object;
 
     shl-int/lit8 v4, v2, 0x1
 
@@ -1008,14 +1008,14 @@
     if-ge v3, v0, :cond_4
 
     .line 5
-    iget-object v4, p0, Lm/g;->f:[I
+    iget-object v4, p0, Lm/g;->g:[I
 
     aget v4, v4, v3
 
     if-nez v4, :cond_4
 
     .line 6
-    iget-object v4, p0, Lm/g;->g:[Ljava/lang/Object;
+    iget-object v4, p0, Lm/g;->h:[Ljava/lang/Object;
 
     shl-int/lit8 v5, v3, 0x1
 
@@ -1037,14 +1037,14 @@
     if-ltz v2, :cond_6
 
     .line 7
-    iget-object v0, p0, Lm/g;->f:[I
+    iget-object v0, p0, Lm/g;->g:[I
 
     aget v0, v0, v2
 
     if-nez v0, :cond_6
 
     .line 8
-    iget-object v0, p0, Lm/g;->g:[Ljava/lang/Object;
+    iget-object v0, p0, Lm/g;->h:[Ljava/lang/Object;
 
     shl-int/lit8 v4, v2, 0x1
 
@@ -1083,12 +1083,12 @@
     .locals 5
 
     .line 1
-    iget v0, p0, Lm/g;->h:I
+    iget v0, p0, Lm/g;->i:I
 
     mul-int/lit8 v0, v0, 0x2
 
     .line 2
-    iget-object v1, p0, Lm/g;->g:[Ljava/lang/Object;
+    iget-object v1, p0, Lm/g;->h:[Ljava/lang/Object;
 
     const/4 v2, 0x1
 
@@ -1180,7 +1180,7 @@
     if-ltz p1, :cond_0
 
     .line 2
-    iget-object p2, p0, Lm/g;->g:[Ljava/lang/Object;
+    iget-object p2, p0, Lm/g;->h:[Ljava/lang/Object;
 
     shl-int/lit8 p1, p1, 0x1
 
@@ -1200,7 +1200,7 @@
         }
     .end annotation
 
-    iget-object v0, p0, Lm/g;->g:[Ljava/lang/Object;
+    iget-object v0, p0, Lm/g;->h:[Ljava/lang/Object;
 
     shl-int/lit8 p1, p1, 0x1
 
@@ -1213,13 +1213,13 @@
     .locals 9
 
     .line 1
-    iget-object v0, p0, Lm/g;->f:[I
+    iget-object v0, p0, Lm/g;->g:[I
 
     .line 2
-    iget-object v1, p0, Lm/g;->g:[Ljava/lang/Object;
+    iget-object v1, p0, Lm/g;->h:[Ljava/lang/Object;
 
     .line 3
-    iget v2, p0, Lm/g;->h:I
+    iget v2, p0, Lm/g;->i:I
 
     const/4 v3, 0x1
 
@@ -1273,7 +1273,7 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lm/g;->g:[Ljava/lang/Object;
+    iget-object v0, p0, Lm/g;->h:[Ljava/lang/Object;
 
     shl-int/lit8 v1, p1, 0x1
 
@@ -1282,7 +1282,7 @@
     aget-object v2, v0, v2
 
     .line 2
-    iget v3, p0, Lm/g;->h:I
+    iget v3, p0, Lm/g;->i:I
 
     const/4 v4, 0x0
 
@@ -1291,19 +1291,19 @@
     if-gt v3, v5, :cond_0
 
     .line 3
-    iget-object p1, p0, Lm/g;->f:[I
+    iget-object p1, p0, Lm/g;->g:[I
 
     invoke-static {p1, v0, v3}, Lm/g;->c([I[Ljava/lang/Object;I)V
 
     .line 4
-    sget-object p1, Lcom/android/billingclient/api/z;->a:[I
+    sget-object p1, Ll2/p;->a:[I
 
-    iput-object p1, p0, Lm/g;->f:[I
+    iput-object p1, p0, Lm/g;->g:[I
 
     .line 5
-    sget-object p1, Lcom/android/billingclient/api/z;->b:[Ljava/lang/Object;
+    sget-object p1, Ll2/p;->b:[Ljava/lang/Object;
 
-    iput-object p1, p0, Lm/g;->g:[Ljava/lang/Object;
+    iput-object p1, p0, Lm/g;->h:[Ljava/lang/Object;
 
     goto :goto_1
 
@@ -1311,7 +1311,7 @@
     add-int/lit8 v6, v3, -0x1
 
     .line 6
-    iget-object v7, p0, Lm/g;->f:[I
+    iget-object v7, p0, Lm/g;->g:[I
 
     array-length v8, v7
 
@@ -1336,19 +1336,19 @@
     invoke-direct {p0, v9}, Lm/g;->a(I)V
 
     .line 8
-    iget v8, p0, Lm/g;->h:I
+    iget v8, p0, Lm/g;->i:I
 
     if-ne v3, v8, :cond_3
 
     if-lez p1, :cond_2
 
     .line 9
-    iget-object v8, p0, Lm/g;->f:[I
+    iget-object v8, p0, Lm/g;->g:[I
 
     invoke-static {v7, v4, v8, v4, p1}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     .line 10
-    iget-object v8, p0, Lm/g;->g:[Ljava/lang/Object;
+    iget-object v8, p0, Lm/g;->h:[Ljava/lang/Object;
 
     invoke-static {v0, v4, v8, v4, v1}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
@@ -1358,7 +1358,7 @@
     add-int/lit8 v4, p1, 0x1
 
     .line 11
-    iget-object v8, p0, Lm/g;->f:[I
+    iget-object v8, p0, Lm/g;->g:[I
 
     sub-int v9, v6, p1
 
@@ -1367,7 +1367,7 @@
     shl-int/lit8 p1, v4, 0x1
 
     .line 12
-    iget-object v4, p0, Lm/g;->g:[Ljava/lang/Object;
+    iget-object v4, p0, Lm/g;->h:[Ljava/lang/Object;
 
     shl-int/lit8 v5, v9, 0x1
 
@@ -1394,7 +1394,7 @@
     invoke-static {v7, v0, v7, p1, v4}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     .line 15
-    iget-object p1, p0, Lm/g;->g:[Ljava/lang/Object;
+    iget-object p1, p0, Lm/g;->h:[Ljava/lang/Object;
 
     shl-int/2addr v0, v5
 
@@ -1404,7 +1404,7 @@
 
     .line 16
     :cond_5
-    iget-object p1, p0, Lm/g;->g:[Ljava/lang/Object;
+    iget-object p1, p0, Lm/g;->h:[Ljava/lang/Object;
 
     shl-int/lit8 v0, v6, 0x1
 
@@ -1423,12 +1423,12 @@
 
     .line 18
     :goto_1
-    iget p1, p0, Lm/g;->h:I
+    iget p1, p0, Lm/g;->i:I
 
     if-ne v3, p1, :cond_7
 
     .line 19
-    iput v4, p0, Lm/g;->h:I
+    iput v4, p0, Lm/g;->i:I
 
     return-object v2
 
@@ -1444,7 +1444,7 @@
 .method public final isEmpty()Z
     .locals 1
 
-    iget v0, p0, Lm/g;->h:I
+    iget v0, p0, Lm/g;->i:I
 
     if-gtz v0, :cond_0
 
@@ -1472,7 +1472,7 @@
     add-int/lit8 p1, p1, 0x1
 
     .line 1
-    iget-object v0, p0, Lm/g;->g:[Ljava/lang/Object;
+    iget-object v0, p0, Lm/g;->h:[Ljava/lang/Object;
 
     aget-object v1, v0, p1
 
@@ -1490,7 +1490,7 @@
         }
     .end annotation
 
-    iget-object v0, p0, Lm/g;->g:[Ljava/lang/Object;
+    iget-object v0, p0, Lm/g;->h:[Ljava/lang/Object;
 
     shl-int/lit8 p1, p1, 0x1
 
@@ -1510,7 +1510,7 @@
     .end annotation
 
     .line 1
-    iget v0, p0, Lm/g;->h:I
+    iget v0, p0, Lm/g;->i:I
 
     const/4 v1, 0x0
 
@@ -1550,7 +1550,7 @@
     add-int/lit8 p1, p1, 0x1
 
     .line 5
-    iget-object v0, p0, Lm/g;->g:[Ljava/lang/Object;
+    iget-object v0, p0, Lm/g;->h:[Ljava/lang/Object;
 
     aget-object v1, v0, p1
 
@@ -1563,7 +1563,7 @@
     xor-int/lit8 v2, v2, -0x1
 
     .line 7
-    iget-object v4, p0, Lm/g;->f:[I
+    iget-object v4, p0, Lm/g;->g:[I
 
     array-length v5, v4
 
@@ -1589,18 +1589,18 @@
     .line 8
     :cond_3
     :goto_1
-    iget-object v6, p0, Lm/g;->g:[Ljava/lang/Object;
+    iget-object v6, p0, Lm/g;->h:[Ljava/lang/Object;
 
     .line 9
     invoke-direct {p0, v5}, Lm/g;->a(I)V
 
     .line 10
-    iget v5, p0, Lm/g;->h:I
+    iget v5, p0, Lm/g;->i:I
 
     if-ne v0, v5, :cond_5
 
     .line 11
-    iget-object v5, p0, Lm/g;->f:[I
+    iget-object v5, p0, Lm/g;->g:[I
 
     array-length v7, v5
 
@@ -1612,7 +1612,7 @@
     invoke-static {v4, v1, v5, v1, v7}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     .line 13
-    iget-object v5, p0, Lm/g;->g:[Ljava/lang/Object;
+    iget-object v5, p0, Lm/g;->h:[Ljava/lang/Object;
 
     array-length v7, v6
 
@@ -1637,7 +1637,7 @@
     if-ge v2, v0, :cond_7
 
     .line 16
-    iget-object v1, p0, Lm/g;->f:[I
+    iget-object v1, p0, Lm/g;->g:[I
 
     add-int/lit8 v4, v2, 0x1
 
@@ -1646,13 +1646,13 @@
     invoke-static {v1, v2, v1, v4, v5}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     .line 17
-    iget-object v1, p0, Lm/g;->g:[Ljava/lang/Object;
+    iget-object v1, p0, Lm/g;->h:[Ljava/lang/Object;
 
     shl-int/lit8 v5, v2, 0x1
 
     shl-int/lit8 v4, v4, 0x1
 
-    iget v6, p0, Lm/g;->h:I
+    iget v6, p0, Lm/g;->i:I
 
     sub-int/2addr v6, v2
 
@@ -1662,11 +1662,11 @@
 
     .line 18
     :cond_7
-    iget v1, p0, Lm/g;->h:I
+    iget v1, p0, Lm/g;->i:I
 
     if-ne v0, v1, :cond_8
 
-    iget-object v0, p0, Lm/g;->f:[I
+    iget-object v0, p0, Lm/g;->g:[I
 
     array-length v4, v0
 
@@ -1676,7 +1676,7 @@
     aput v3, v0, v2
 
     .line 20
-    iget-object v0, p0, Lm/g;->g:[Ljava/lang/Object;
+    iget-object v0, p0, Lm/g;->h:[Ljava/lang/Object;
 
     shl-int/lit8 v2, v2, 0x1
 
@@ -1690,7 +1690,7 @@
     add-int/lit8 v1, v1, 0x1
 
     .line 22
-    iput v1, p0, Lm/g;->h:I
+    iput v1, p0, Lm/g;->i:I
 
     const/4 p1, 0x0
 
@@ -1877,7 +1877,7 @@
 .method public final size()I
     .locals 1
 
-    iget v0, p0, Lm/g;->h:I
+    iget v0, p0, Lm/g;->i:I
 
     return v0
 .end method
@@ -1900,7 +1900,7 @@
     :cond_0
     new-instance v0, Ljava/lang/StringBuilder;
 
-    iget v1, p0, Lm/g;->h:I
+    iget v1, p0, Lm/g;->i:I
 
     mul-int/lit8 v1, v1, 0x1c
 
@@ -1915,7 +1915,7 @@
 
     .line 4
     :goto_0
-    iget v2, p0, Lm/g;->h:I
+    iget v2, p0, Lm/g;->i:I
 
     if-ge v1, v2, :cond_4
 

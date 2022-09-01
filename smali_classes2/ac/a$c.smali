@@ -53,7 +53,7 @@
 
     .line 4
     :cond_0
-    iget p1, p1, Lac/a;->m:I
+    iget p1, p1, Lac/a;->n:I
 
     .line 5
     new-array p1, p1, [Z
@@ -193,7 +193,7 @@
     iget-object v2, p0, Lac/a$c;->d:Lac/a;
 
     .line 9
-    iget-object v2, v2, Lac/a;->f:Ljava/io/File;
+    iget-object v2, v2, Lac/a;->g:Ljava/io/File;
 
     .line 10
     invoke-virtual {v2}, Ljava/io/File;->mkdirs()Z
@@ -226,7 +226,7 @@
 
     .line 13
     :catch_1
-    sget-object v1, Lac/a;->w:Lac/a$b;
+    sget-object v1, Lac/a;->x:Lac/a$b;
 
     .line 14
     monitor-exit v0

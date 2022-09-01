@@ -12,9 +12,7 @@
 
 
 # instance fields
-.field public final f:I
-
-.field public final g:F
+.field public final g:I
 
 .field public final h:F
 
@@ -22,9 +20,11 @@
 
 .field public final j:F
 
-.field public final k:Landroid/widget/EditText;
+.field public final k:F
 
-.field public final l:Ljava/util/ArrayList;
+.field public final l:Landroid/widget/EditText;
+
+.field public final m:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
@@ -34,9 +34,9 @@
     .end annotation
 .end field
 
-.field public m:Landroid/view/View$OnFocusChangeListener;
+.field public n:Landroid/view/View$OnFocusChangeListener;
 
-.field public n:Lre/p;
+.field public o:Lre/p;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lre/p<",
@@ -44,7 +44,7 @@
             "Lcom/supercell/id/view/PinEntryView;",
             "-",
             "Ljava/lang/CharSequence;",
-            "Lie/h;",
+            "Lie/i;",
             ">;"
         }
     .end annotation
@@ -57,7 +57,7 @@
 
     const-string v0, "context"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/4 v0, 0x0
 
@@ -76,7 +76,7 @@
 
     const-string v2, "context"
 
-    invoke-static {v0, v2}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v2}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 2
     invoke-direct/range {p0 .. p3}, Landroid/view/ViewGroup;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
@@ -97,7 +97,7 @@
 
     const-string v4, "context.resources"
 
-    invoke-static {v2, v4}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v2, v4}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 5
     invoke-virtual {v2}, Landroid/content/res/Resources;->getDisplayMetrics()Landroid/util/DisplayMetrics;
@@ -111,7 +111,7 @@
     move-result v2
 
     .line 6
-    sput v2, La5/g0;->a:F
+    sput v2, La5/e0;->g:F
 
     :cond_0
     const/4 v2, 0x0
@@ -147,7 +147,7 @@
 
     move-result v5
 
-    iput v5, v1, Lcom/supercell/id/view/PinEntryView;->f:I
+    iput v5, v1, Lcom/supercell/id/view/PinEntryView;->g:I
 
     .line 11
     sget v6, Lcom/supercell/id/R$styleable;->PinEntryView_digitSpacing:I
@@ -157,7 +157,7 @@
     int-to-float v7, v7
 
     .line 12
-    sget v8, La5/g0;->a:F
+    sget v8, La5/e0;->g:F
 
     mul-float v7, v7, v8
 
@@ -166,7 +166,7 @@
 
     move-result v6
 
-    iput v6, v1, Lcom/supercell/id/view/PinEntryView;->g:F
+    iput v6, v1, Lcom/supercell/id/view/PinEntryView;->h:F
 
     .line 14
     sget v6, Lcom/supercell/id/R$styleable;->PinEntryView_digitCenterExtraSpacing:I
@@ -176,7 +176,7 @@
     int-to-float v7, v7
 
     .line 15
-    sget v8, La5/g0;->a:F
+    sget v8, La5/e0;->g:F
 
     mul-float v7, v7, v8
 
@@ -185,7 +185,7 @@
 
     move-result v6
 
-    iput v6, v1, Lcom/supercell/id/view/PinEntryView;->h:F
+    iput v6, v1, Lcom/supercell/id/view/PinEntryView;->i:F
 
     .line 17
     sget v6, Lcom/supercell/id/R$styleable;->PinEntryView_digitWidth:I
@@ -195,7 +195,7 @@
     int-to-float v7, v7
 
     .line 18
-    sget v8, La5/g0;->a:F
+    sget v8, La5/e0;->g:F
 
     mul-float v7, v7, v8
 
@@ -204,7 +204,7 @@
 
     move-result v6
 
-    iput v6, v1, Lcom/supercell/id/view/PinEntryView;->i:F
+    iput v6, v1, Lcom/supercell/id/view/PinEntryView;->j:F
 
     .line 20
     sget v6, Lcom/supercell/id/R$styleable;->PinEntryView_digitHeight:I
@@ -214,7 +214,7 @@
     int-to-float v7, v7
 
     .line 21
-    sget v8, La5/g0;->a:F
+    sget v8, La5/e0;->g:F
 
     mul-float v7, v7, v8
 
@@ -223,7 +223,7 @@
 
     move-result v6
 
-    iput v6, v1, Lcom/supercell/id/view/PinEntryView;->j:F
+    iput v6, v1, Lcom/supercell/id/view/PinEntryView;->k:F
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -334,7 +334,7 @@
     invoke-direct {v15, v9, v10}, Landroid/content/res/ColorStateList;-><init>([[I[I)V
 
     .line 29
-    invoke-static {v2, v5}, Lcom/google/android/play/core/appupdate/c;->c(II)Lve/c;
+    invoke-static {v2, v5}, La5/b0;->l(II)Lve/c;
 
     move-result-object v4
 
@@ -343,7 +343,7 @@
 
     const/16 v7, 0xa
 
-    invoke-static {v4, v7}, Lje/f;->q(Ljava/lang/Iterable;I)I
+    invoke-static {v4, v7}, Lje/f;->l(Ljava/lang/Iterable;I)I
 
     move-result v7
 
@@ -360,7 +360,7 @@
     check-cast v7, Lve/b;
 
     .line 32
-    iget-boolean v7, v7, Lve/b;->g:Z
+    iget-boolean v7, v7, Lve/b;->h:Z
 
     if-eqz v7, :cond_5
 
@@ -422,7 +422,7 @@
     int-to-float v10, v10
 
     .line 42
-    sget v11, La5/g0;->a:F
+    sget v11, La5/e0;->g:F
 
     mul-float v11, v11, v10
 
@@ -440,7 +440,7 @@
     invoke-virtual {v13, v11, v9}, Landroid/graphics/drawable/StateListDrawable;->addState([ILandroid/graphics/drawable/Drawable;)V
 
     .line 46
-    sget-object v9, Luc/m;->b:Luc/m;
+    sget-object v9, Luc/l;->b:Luc/l;
 
     invoke-virtual {v7}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
 
@@ -448,14 +448,14 @@
 
     const-string v12, "resources"
 
-    invoke-static {v11, v12}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v11, v12}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/4 v12, 0x0
 
     int-to-float v14, v3
 
     .line 47
-    sget v17, La5/g0;->a:F
+    sget v17, La5/e0;->g:F
 
     mul-float v14, v14, v17
 
@@ -474,7 +474,7 @@
     move/from16 v15, v17
 
     .line 48
-    invoke-virtual/range {v9 .. v15}, Luc/m;->a(Landroid/content/res/Resources;IFFFF)Landroid/graphics/drawable/Drawable;
+    invoke-virtual/range {v9 .. v15}, Luc/l;->a(Landroid/content/res/Resources;IFFFF)Landroid/graphics/drawable/Drawable;
 
     move-result-object v9
 
@@ -526,14 +526,14 @@
 
     .line 55
     :cond_6
-    iput-object v5, v1, Lcom/supercell/id/view/PinEntryView;->l:Ljava/util/ArrayList;
+    iput-object v5, v1, Lcom/supercell/id/view/PinEntryView;->m:Ljava/util/ArrayList;
 
     .line 56
     new-instance v3, Landroid/widget/EditText;
 
     invoke-direct {v3, v0}, Landroid/widget/EditText;-><init>(Landroid/content/Context;)V
 
-    iput-object v3, v1, Lcom/supercell/id/view/PinEntryView;->k:Landroid/widget/EditText;
+    iput-object v3, v1, Lcom/supercell/id/view/PinEntryView;->l:Landroid/widget/EditText;
 
     const v4, 0x106000d
 
@@ -561,7 +561,7 @@
     .line 60
     new-instance v5, Landroid/text/InputFilter$LengthFilter;
 
-    iget v6, v1, Lcom/supercell/id/view/PinEntryView;->f:I
+    iget v6, v1, Lcom/supercell/id/view/PinEntryView;->g:I
 
     invoke-direct {v5, v6}, Landroid/text/InputFilter$LengthFilter;-><init>(I)V
 
@@ -660,7 +660,7 @@
 
     .line 3
     :goto_0
-    iget-object v2, p0, Lcom/supercell/id/view/PinEntryView;->l:Ljava/util/ArrayList;
+    iget-object v2, p0, Lcom/supercell/id/view/PinEntryView;->m:Ljava/util/ArrayList;
 
     .line 4
     invoke-virtual {v2}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
@@ -714,7 +714,7 @@
     if-eq v3, v1, :cond_2
 
     .line 6
-    iget v6, p0, Lcom/supercell/id/view/PinEntryView;->f:I
+    iget v6, p0, Lcom/supercell/id/view/PinEntryView;->g:I
 
     add-int/lit8 v7, v6, -0x1
 
@@ -739,7 +739,7 @@
 
     .line 7
     :cond_4
-    invoke-static {}, Lcom/android/billingclient/api/z;->p()V
+    invoke-static {}, Lcom/android/billingclient/api/y;->k()V
 
     const/4 p0, 0x0
 
@@ -754,7 +754,7 @@
 .method public final b(F)F
     .locals 2
 
-    iget v0, p0, Lcom/supercell/id/view/PinEntryView;->f:I
+    iget v0, p0, Lcom/supercell/id/view/PinEntryView;->g:I
 
     int-to-float v1, v0
 
@@ -764,13 +764,13 @@
 
     int-to-float p1, v0
 
-    iget v0, p0, Lcom/supercell/id/view/PinEntryView;->g:F
+    iget v0, p0, Lcom/supercell/id/view/PinEntryView;->h:F
 
     mul-float p1, p1, v0
 
     add-float/2addr p1, v1
 
-    iget v0, p0, Lcom/supercell/id/view/PinEntryView;->h:F
+    iget v0, p0, Lcom/supercell/id/view/PinEntryView;->i:F
 
     add-float/2addr p1, v0
 
@@ -780,17 +780,17 @@
 .method public final c(F)F
     .locals 3
 
-    iget v0, p0, Lcom/supercell/id/view/PinEntryView;->h:F
+    iget v0, p0, Lcom/supercell/id/view/PinEntryView;->i:F
 
     sub-float/2addr p1, v0
 
-    iget v0, p0, Lcom/supercell/id/view/PinEntryView;->f:I
+    iget v0, p0, Lcom/supercell/id/view/PinEntryView;->g:I
 
     add-int/lit8 v1, v0, -0x1
 
     int-to-float v1, v1
 
-    iget v2, p0, Lcom/supercell/id/view/PinEntryView;->g:F
+    iget v2, p0, Lcom/supercell/id/view/PinEntryView;->h:F
 
     mul-float v1, v1, v2
 
@@ -806,7 +806,7 @@
 .method public final d()Z
     .locals 2
 
-    iget-object v0, p0, Lcom/supercell/id/view/PinEntryView;->k:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/supercell/id/view/PinEntryView;->l:Landroid/widget/EditText;
 
     invoke-virtual {v0}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
 
@@ -816,7 +816,7 @@
 
     move-result v0
 
-    iget v1, p0, Lcom/supercell/id/view/PinEntryView;->f:I
+    iget v1, p0, Lcom/supercell/id/view/PinEntryView;->g:I
 
     if-ne v0, v1, :cond_0
 
@@ -895,7 +895,7 @@
 
     move-result v3
 
-    iget v4, p0, Lcom/supercell/id/view/PinEntryView;->f:I
+    iget v4, p0, Lcom/supercell/id/view/PinEntryView;->g:I
 
     add-int/lit8 v4, v4, 0x3
 
@@ -930,7 +930,7 @@
 
     const-string v4, "Pattern.compile(pattern)"
 
-    invoke-static {v3, v4}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v3, v4}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v4, ""
 
@@ -945,18 +945,18 @@
 
     const-string v3, "nativePattern.matcher(in\u2026).replaceAll(replacement)"
 
-    invoke-static {v0, v3}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v3}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 7
     invoke-virtual {v0}, Ljava/lang/String;->length()I
 
     move-result v3
 
-    iget v4, p0, Lcom/supercell/id/view/PinEntryView;->f:I
+    iget v4, p0, Lcom/supercell/id/view/PinEntryView;->g:I
 
     if-ne v3, v4, :cond_4
 
-    invoke-static {v0}, Lye/m;->g(Ljava/lang/String;)Ljava/lang/Integer;
+    invoke-static {v0}, Lye/m;->h(Ljava/lang/String;)Ljava/lang/Integer;
 
     move-result-object v3
 
@@ -976,7 +976,7 @@
     invoke-virtual {p0, v2}, Lcom/supercell/id/view/PinEntryView;->setPin(Ljava/lang/String;)V
 
     .line 9
-    iget-object v0, p0, Lcom/supercell/id/view/PinEntryView;->k:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/supercell/id/view/PinEntryView;->l:Landroid/widget/EditText;
 
     invoke-virtual {v0}, Landroid/view/View;->clearFocus()V
 
@@ -1033,7 +1033,7 @@
 .method public final getDigits()I
     .locals 1
 
-    iget v0, p0, Lcom/supercell/id/view/PinEntryView;->f:I
+    iget v0, p0, Lcom/supercell/id/view/PinEntryView;->g:I
 
     return v0
 .end method
@@ -1041,7 +1041,7 @@
 .method public getOnFocusChangeListener()Landroid/view/View$OnFocusChangeListener;
     .locals 1
 
-    iget-object v0, p0, Lcom/supercell/id/view/PinEntryView;->m:Landroid/view/View$OnFocusChangeListener;
+    iget-object v0, p0, Lcom/supercell/id/view/PinEntryView;->n:Landroid/view/View$OnFocusChangeListener;
 
     return-object v0
 .end method
@@ -1049,7 +1049,7 @@
 .method public final getText()Ljava/lang/CharSequence;
     .locals 2
 
-    iget-object v0, p0, Lcom/supercell/id/view/PinEntryView;->k:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/supercell/id/view/PinEntryView;->l:Landroid/widget/EditText;
 
     invoke-virtual {v0}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
 
@@ -1057,7 +1057,7 @@
 
     const-string v1, "editText.text"
 
-    invoke-static {v0, v1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     return-object v0
 .end method
@@ -1076,12 +1076,12 @@
 
     move-result p1
 
-    invoke-static {p1}, Lcom/android/billingclient/api/z;->n(F)I
+    invoke-static {p1}, Lcom/android/billingclient/api/y;->i(F)I
 
     move-result p1
 
     .line 2
-    iget-object p2, p0, Lcom/supercell/id/view/PinEntryView;->l:Ljava/util/ArrayList;
+    iget-object p2, p0, Lcom/supercell/id/view/PinEntryView;->m:Ljava/util/ArrayList;
 
     .line 3
     invoke-virtual {p2}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
@@ -1114,19 +1114,19 @@
     int-to-float v4, p1
 
     .line 4
-    iget v5, p0, Lcom/supercell/id/view/PinEntryView;->g:F
+    iget v5, p0, Lcom/supercell/id/view/PinEntryView;->h:F
 
     add-float/2addr v4, v5
 
     mul-float v4, v4, v3
 
-    iget v3, p0, Lcom/supercell/id/view/PinEntryView;->f:I
+    iget v3, p0, Lcom/supercell/id/view/PinEntryView;->g:I
 
     div-int/lit8 v3, v3, 0x2
 
     if-lt v0, v3, :cond_0
 
-    iget v0, p0, Lcom/supercell/id/view/PinEntryView;->h:F
+    iget v0, p0, Lcom/supercell/id/view/PinEntryView;->i:F
 
     goto :goto_1
 
@@ -1136,7 +1136,7 @@
     :goto_1
     add-float/2addr v4, v0
 
-    invoke-static {v4}, Lcom/android/billingclient/api/z;->n(F)I
+    invoke-static {v4}, Lcom/android/billingclient/api/y;->i(F)I
 
     move-result v0
 
@@ -1151,7 +1151,7 @@
 
     .line 6
     :cond_1
-    invoke-static {}, Lcom/android/billingclient/api/z;->p()V
+    invoke-static {}, Lcom/android/billingclient/api/y;->k()V
 
     const/4 p1, 0x0
 
@@ -1159,19 +1159,19 @@
 
     .line 7
     :cond_2
-    iget-object p1, p0, Lcom/supercell/id/view/PinEntryView;->k:Landroid/widget/EditText;
+    iget-object p1, p0, Lcom/supercell/id/view/PinEntryView;->l:Landroid/widget/EditText;
 
-    iget p2, p0, Lcom/supercell/id/view/PinEntryView;->g:F
+    iget p2, p0, Lcom/supercell/id/view/PinEntryView;->h:F
 
-    invoke-static {p2}, Lcom/android/billingclient/api/z;->n(F)I
+    invoke-static {p2}, Lcom/android/billingclient/api/y;->i(F)I
 
     move-result p2
 
     neg-int p2, p2
 
-    iget v0, p0, Lcom/supercell/id/view/PinEntryView;->g:F
+    iget v0, p0, Lcom/supercell/id/view/PinEntryView;->h:F
 
-    invoke-static {v0}, Lcom/android/billingclient/api/z;->n(F)I
+    invoke-static {v0}, Lcom/android/billingclient/api/y;->i(F)I
 
     move-result v0
 
@@ -1201,13 +1201,13 @@
     if-eq v0, v2, :cond_0
 
     .line 2
-    iget p1, p0, Lcom/supercell/id/view/PinEntryView;->i:F
+    iget p1, p0, Lcom/supercell/id/view/PinEntryView;->j:F
 
     invoke-virtual {p0, p1}, Lcom/supercell/id/view/PinEntryView;->b(F)F
 
     move-result p1
 
-    invoke-static {p1}, Lcom/android/billingclient/api/z;->n(F)I
+    invoke-static {p1}, Lcom/android/billingclient/api/y;->i(F)I
 
     move-result p1
 
@@ -1223,13 +1223,13 @@
 
     .line 4
     :cond_1
-    iget p1, p0, Lcom/supercell/id/view/PinEntryView;->i:F
+    iget p1, p0, Lcom/supercell/id/view/PinEntryView;->j:F
 
     invoke-virtual {p0, p1}, Lcom/supercell/id/view/PinEntryView;->b(F)F
 
     move-result p1
 
-    invoke-static {p1}, Lcom/android/billingclient/api/z;->n(F)I
+    invoke-static {p1}, Lcom/android/billingclient/api/y;->i(F)I
 
     move-result p1
 
@@ -1247,7 +1247,7 @@
 
     move-result p1
 
-    iget v0, p0, Lcom/supercell/id/view/PinEntryView;->i:F
+    iget v0, p0, Lcom/supercell/id/view/PinEntryView;->j:F
 
     const/high16 v3, 0x3f800000    # 1.0f
 
@@ -1278,7 +1278,7 @@
 
     move-result p1
 
-    invoke-static {p1}, Lcom/android/billingclient/api/z;->n(F)I
+    invoke-static {p1}, Lcom/android/billingclient/api/y;->i(F)I
 
     move-result p1
 
@@ -1297,9 +1297,9 @@
     if-eq v0, v2, :cond_5
 
     .line 9
-    iget p2, p0, Lcom/supercell/id/view/PinEntryView;->j:F
+    iget p2, p0, Lcom/supercell/id/view/PinEntryView;->k:F
 
-    invoke-static {p2}, Lcom/android/billingclient/api/z;->n(F)I
+    invoke-static {p2}, Lcom/android/billingclient/api/y;->i(F)I
 
     move-result v3
 
@@ -1315,9 +1315,9 @@
 
     .line 11
     :cond_6
-    iget p2, p0, Lcom/supercell/id/view/PinEntryView;->j:F
+    iget p2, p0, Lcom/supercell/id/view/PinEntryView;->k:F
 
-    invoke-static {p2}, Lcom/android/billingclient/api/z;->n(F)I
+    invoke-static {p2}, Lcom/android/billingclient/api/y;->i(F)I
 
     move-result v3
 
@@ -1329,14 +1329,14 @@
 
     move-result p2
 
-    iget v0, p0, Lcom/supercell/id/view/PinEntryView;->j:F
+    iget v0, p0, Lcom/supercell/id/view/PinEntryView;->k:F
 
-    invoke-static {v0}, Lcom/android/billingclient/api/z;->n(F)I
+    invoke-static {v0}, Lcom/android/billingclient/api/y;->i(F)I
 
     move-result v0
 
     .line 13
-    invoke-static {p2, v3}, Lt3/e;->d(II)I
+    invoke-static {p2, v3}, Lt3/h;->d(II)I
 
     move-result v1
 
@@ -1345,7 +1345,7 @@
     goto :goto_2
 
     :cond_8
-    invoke-static {p2, v0}, Lt3/e;->d(II)I
+    invoke-static {p2, v0}, Lt3/h;->d(II)I
 
     move-result v1
 
@@ -1369,7 +1369,7 @@
 
     move-result p2
 
-    invoke-static {p2}, Lcom/android/billingclient/api/z;->n(F)I
+    invoke-static {p2}, Lcom/android/billingclient/api/y;->i(F)I
 
     move-result p2
 
@@ -1383,7 +1383,7 @@
     move-result v0
 
     .line 17
-    iget-object v1, p0, Lcom/supercell/id/view/PinEntryView;->l:Ljava/util/ArrayList;
+    iget-object v1, p0, Lcom/supercell/id/view/PinEntryView;->m:Ljava/util/ArrayList;
 
     .line 18
     invoke-virtual {v1}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
@@ -1410,15 +1410,15 @@
 
     .line 20
     :cond_a
-    iget-object p2, p0, Lcom/supercell/id/view/PinEntryView;->k:Landroid/widget/EditText;
+    iget-object p2, p0, Lcom/supercell/id/view/PinEntryView;->l:Landroid/widget/EditText;
 
     invoke-static {p1, v2}, Landroid/view/View$MeasureSpec;->makeMeasureSpec(II)I
 
     move-result p1
 
-    iget v0, p0, Lcom/supercell/id/view/PinEntryView;->g:F
+    iget v0, p0, Lcom/supercell/id/view/PinEntryView;->h:F
 
-    invoke-static {v0}, Lcom/android/billingclient/api/z;->n(F)I
+    invoke-static {v0}, Lcom/android/billingclient/api/y;->i(F)I
 
     move-result v0
 
@@ -1459,7 +1459,7 @@
     invoke-super {p0, v0}, Landroid/view/View;->onRestoreInstanceState(Landroid/os/Parcelable;)V
 
     .line 4
-    iget-object v0, p1, Lcom/supercell/id/view/PinEntryView$SavedState;->f:Ljava/lang/String;
+    iget-object v0, p1, Lcom/supercell/id/view/PinEntryView$SavedState;->g:Ljava/lang/String;
 
     if-eqz v0, :cond_1
 
@@ -1468,10 +1468,10 @@
 
     .line 6
     :cond_1
-    iget-object v0, p0, Lcom/supercell/id/view/PinEntryView;->k:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/supercell/id/view/PinEntryView;->l:Landroid/widget/EditText;
 
     .line 7
-    iget-object p1, p1, Lcom/supercell/id/view/PinEntryView$SavedState;->f:Ljava/lang/String;
+    iget-object p1, p1, Lcom/supercell/id/view/PinEntryView$SavedState;->g:Ljava/lang/String;
 
     if-eqz p1, :cond_2
 
@@ -1507,7 +1507,7 @@
     invoke-direct {v1, v0}, Lcom/supercell/id/view/PinEntryView$SavedState;-><init>(Landroid/os/Parcelable;)V
 
     .line 3
-    iget-object v0, p0, Lcom/supercell/id/view/PinEntryView;->k:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/supercell/id/view/PinEntryView;->l:Landroid/widget/EditText;
 
     invoke-virtual {v0}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
 
@@ -1518,7 +1518,7 @@
     move-result-object v0
 
     .line 4
-    iput-object v0, v1, Lcom/supercell/id/view/PinEntryView$SavedState;->f:Ljava/lang/String;
+    iput-object v0, v1, Lcom/supercell/id/view/PinEntryView$SavedState;->g:Ljava/lang/String;
 
     goto :goto_0
 
@@ -1542,7 +1542,7 @@
     if-nez v0, :cond_2
 
     .line 2
-    iget-object p1, p0, Lcom/supercell/id/view/PinEntryView;->k:Landroid/widget/EditText;
+    iget-object p1, p0, Lcom/supercell/id/view/PinEntryView;->l:Landroid/widget/EditText;
 
     invoke-virtual {p1}, Landroid/view/View;->hasFocus()Z
 
@@ -1566,7 +1566,7 @@
     check-cast p1, Landroid/view/inputmethod/InputMethodManager;
 
     .line 4
-    iget-object v0, p0, Lcom/supercell/id/view/PinEntryView;->k:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/supercell/id/view/PinEntryView;->l:Landroid/widget/EditText;
 
     const/4 v1, 0x0
 
@@ -1586,7 +1586,7 @@
 
     .line 6
     :cond_1
-    iget-object p1, p0, Lcom/supercell/id/view/PinEntryView;->k:Landroid/widget/EditText;
+    iget-object p1, p0, Lcom/supercell/id/view/PinEntryView;->l:Landroid/widget/EditText;
 
     invoke-virtual {p1}, Landroid/view/View;->requestFocus()Z
 
@@ -1607,7 +1607,7 @@
 .method public setOnFocusChangeListener(Landroid/view/View$OnFocusChangeListener;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/view/PinEntryView;->m:Landroid/view/View$OnFocusChangeListener;
+    iput-object p1, p0, Lcom/supercell/id/view/PinEntryView;->n:Landroid/view/View$OnFocusChangeListener;
 
     return-void
 .end method
@@ -1622,12 +1622,12 @@
             "Lcom/supercell/id/view/PinEntryView;",
             "-",
             "Ljava/lang/CharSequence;",
-            "Lie/h;",
+            "Lie/i;",
             ">;)V"
         }
     .end annotation
 
-    iput-object p1, p0, Lcom/supercell/id/view/PinEntryView;->n:Lre/p;
+    iput-object p1, p0, Lcom/supercell/id/view/PinEntryView;->o:Lre/p;
 
     return-void
 .end method
@@ -1637,7 +1637,7 @@
 
     const-string v0, "pin"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {p0, p1}, Lcom/supercell/id/view/PinEntryView;->setText(Ljava/lang/CharSequence;)V
 
@@ -1649,14 +1649,14 @@
 
     const-string v0, "value"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     invoke-interface {p1}, Ljava/lang/CharSequence;->length()I
 
     move-result v0
 
-    iget v1, p0, Lcom/supercell/id/view/PinEntryView;->f:I
+    iget v1, p0, Lcom/supercell/id/view/PinEntryView;->g:I
 
     if-le v0, v1, :cond_0
 
@@ -1669,7 +1669,7 @@
 
     .line 3
     :cond_0
-    iget-object v0, p0, Lcom/supercell/id/view/PinEntryView;->k:Landroid/widget/EditText;
+    iget-object v0, p0, Lcom/supercell/id/view/PinEntryView;->l:Landroid/widget/EditText;
 
     invoke-virtual {v0, p1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 

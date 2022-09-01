@@ -13,11 +13,11 @@
     return-void
 .end method
 
-.method public constructor <init>(Lk3/o51;)V
+.method public constructor <init>(Lk3/r51;)V
     .locals 0
 
     .line 2
-    invoke-direct {p0, p1}, Lcom/google/android/gms/internal/ads/zzao;-><init>(Lk3/o51;)V
+    invoke-direct {p0, p1}, Lcom/google/android/gms/internal/ads/zzao;-><init>(Lk3/r51;)V
 
     return-void
 .end method

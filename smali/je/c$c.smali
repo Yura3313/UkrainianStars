@@ -29,9 +29,9 @@
 
 
 # instance fields
-.field public f:I
+.field public g:I
 
-.field public final g:Lje/c;
+.field public final h:Lje/c;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lje/c<",
@@ -40,7 +40,7 @@
     .end annotation
 .end field
 
-.field public final h:I
+.field public final i:I
 
 
 # direct methods
@@ -56,14 +56,14 @@
 
     const-string v0, "list"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     invoke-direct {p0}, Lje/c;-><init>()V
 
-    iput-object p1, p0, Lje/c$c;->g:Lje/c;
+    iput-object p1, p0, Lje/c$c;->h:Lje/c;
 
-    iput p2, p0, Lje/c$c;->h:I
+    iput p2, p0, Lje/c$c;->i:I
 
     .line 2
     invoke-virtual {p1}, Lje/a;->b()I
@@ -81,7 +81,7 @@
     sub-int/2addr p3, p2
 
     .line 3
-    iput p3, p0, Lje/c$c;->f:I
+    iput p3, p0, Lje/c$c;->g:I
 
     return-void
 
@@ -149,7 +149,7 @@
 .method public final b()I
     .locals 1
 
-    iget v0, p0, Lje/c$c;->f:I
+    iget v0, p0, Lje/c$c;->g:I
 
     return v0
 .end method
@@ -163,16 +163,16 @@
     .end annotation
 
     .line 1
-    iget v0, p0, Lje/c$c;->f:I
+    iget v0, p0, Lje/c$c;->g:I
 
     if-ltz p1, :cond_0
 
     if-ge p1, v0, :cond_0
 
     .line 2
-    iget-object v0, p0, Lje/c$c;->g:Lje/c;
+    iget-object v0, p0, Lje/c$c;->h:Lje/c;
 
-    iget v1, p0, Lje/c$c;->h:I
+    iget v1, p0, Lje/c$c;->i:I
 
     add-int/2addr v1, p1
 

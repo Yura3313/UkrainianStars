@@ -32,7 +32,7 @@
     .locals 3
 
     .line 1
-    sget-object v0, Lcom/google/protobuf/w1$b;->p:Lcom/google/protobuf/w1$b$a;
+    sget-object v0, Lcom/google/protobuf/w1$b;->q:Lcom/google/protobuf/w1$b$a;
 
     .line 2
     new-instance v1, Lcom/google/protobuf/j0;

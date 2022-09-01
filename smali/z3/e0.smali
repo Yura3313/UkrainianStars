@@ -43,7 +43,7 @@
     move-result-object p1
 
     .line 2
-    iget-object p1, p1, Lz3/o;->i:Lz3/q;
+    iget-object p1, p1, Lz3/o;->o:Lz3/q;
 
     const-string p2, "Install Referrer connection returned with null binder"
 
@@ -55,7 +55,7 @@
     .line 4
     :cond_0
     :try_start_0
-    sget p1, Lcom/google/android/gms/internal/measurement/zzv;->f:I
+    sget p1, Lcom/google/android/gms/internal/measurement/zzv;->g:I
 
     const-string p1, "com.google.android.finsky.externalreferrer.IGetInstallReferrerService"
 
@@ -93,7 +93,7 @@
     move-result-object p1
 
     .line 10
-    iget-object p1, p1, Lz3/o;->i:Lz3/q;
+    iget-object p1, p1, Lz3/o;->o:Lz3/q;
 
     const-string p2, "Install Referrer Service implementation was not found"
 
@@ -113,7 +113,7 @@
     move-result-object p2
 
     .line 13
-    iget-object p2, p2, Lz3/o;->l:Lz3/q;
+    iget-object p2, p2, Lz3/o;->r:Lz3/q;
 
     const-string v0, "Install Referrer Service connected"
 
@@ -156,7 +156,7 @@
     move-result-object p2
 
     .line 19
-    iget-object p2, p2, Lz3/o;->i:Lz3/q;
+    iget-object p2, p2, Lz3/o;->o:Lz3/q;
 
     const-string v0, "Exception occurred while calling Install Referrer API"
 
@@ -179,7 +179,7 @@
     move-result-object p1
 
     .line 2
-    iget-object p1, p1, Lz3/o;->l:Lz3/q;
+    iget-object p1, p1, Lz3/o;->r:Lz3/q;
 
     const-string v0, "Install Referrer Service disconnected"
 

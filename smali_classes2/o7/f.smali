@@ -92,7 +92,7 @@
     const/4 v3, 0x0
 
     .line 6
-    invoke-static {v1, v2, p2, v3}, Landroidx/savedstate/d;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v1, v2, p2, v3}, Le5/i;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 

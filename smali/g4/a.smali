@@ -85,7 +85,7 @@
 .method public constructor <init>(Lcom/google/android/material/card/MaterialCardView;Landroid/util/AttributeSet;I)V
     .locals 4
 
-    sget v0, Lcom/google/android/material/card/MaterialCardView;->w:I
+    sget v0, Lcom/google/android/material/card/MaterialCardView;->x:I
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -127,7 +127,7 @@
     invoke-virtual {v1}, Ls4/g;->r()V
 
     .line 8
-    iget-object v0, v1, Ls4/g;->f:Ls4/g$b;
+    iget-object v0, v1, Ls4/g;->g:Ls4/g$b;
 
     iget-object v0, v0, Ls4/g$b;->a:Ls4/k;
 
@@ -226,7 +226,7 @@
     iget-object v0, p0, Lg4/a;->l:Ls4/k;
 
     .line 2
-    iget-object v0, v0, Ls4/k;->a:Lj1/q;
+    iget-object v0, v0, Ls4/k;->a:Lcom/helpshift/util/v;
 
     .line 3
     iget-object v1, p0, Lg4/a;->c:Ls4/g;
@@ -236,20 +236,20 @@
     move-result v1
 
     .line 4
-    invoke-virtual {p0, v0, v1}, Lg4/a;->b(Lj1/q;F)F
+    invoke-virtual {p0, v0, v1}, Lg4/a;->b(Lcom/helpshift/util/v;F)F
 
     move-result v0
 
     iget-object v1, p0, Lg4/a;->l:Ls4/k;
 
     .line 5
-    iget-object v1, v1, Ls4/k;->b:Lj1/q;
+    iget-object v1, v1, Ls4/k;->b:Lcom/helpshift/util/v;
 
     .line 6
     iget-object v2, p0, Lg4/a;->c:Ls4/g;
 
     .line 7
-    iget-object v3, v2, Ls4/g;->f:Ls4/g$b;
+    iget-object v3, v2, Ls4/g;->g:Ls4/g$b;
 
     iget-object v3, v3, Ls4/g$b;->a:Ls4/k;
 
@@ -266,7 +266,7 @@
     move-result v2
 
     .line 10
-    invoke-virtual {p0, v1, v2}, Lg4/a;->b(Lj1/q;F)F
+    invoke-virtual {p0, v1, v2}, Lg4/a;->b(Lcom/helpshift/util/v;F)F
 
     move-result v1
 
@@ -278,13 +278,13 @@
     iget-object v1, p0, Lg4/a;->l:Ls4/k;
 
     .line 12
-    iget-object v1, v1, Ls4/k;->c:Lj1/q;
+    iget-object v1, v1, Ls4/k;->c:Lcom/helpshift/util/v;
 
     .line 13
     iget-object v2, p0, Lg4/a;->c:Ls4/g;
 
     .line 14
-    iget-object v3, v2, Ls4/g;->f:Ls4/g$b;
+    iget-object v3, v2, Ls4/g;->g:Ls4/g$b;
 
     iget-object v3, v3, Ls4/g$b;->a:Ls4/k;
 
@@ -301,20 +301,20 @@
     move-result v2
 
     .line 17
-    invoke-virtual {p0, v1, v2}, Lg4/a;->b(Lj1/q;F)F
+    invoke-virtual {p0, v1, v2}, Lg4/a;->b(Lcom/helpshift/util/v;F)F
 
     move-result v1
 
     iget-object v2, p0, Lg4/a;->l:Ls4/k;
 
     .line 18
-    iget-object v2, v2, Ls4/k;->d:Lj1/q;
+    iget-object v2, v2, Ls4/k;->d:Lcom/helpshift/util/v;
 
     .line 19
     iget-object v3, p0, Lg4/a;->c:Ls4/g;
 
     .line 20
-    iget-object v4, v3, Ls4/g;->f:Ls4/g$b;
+    iget-object v4, v3, Ls4/g;->g:Ls4/g$b;
 
     iget-object v4, v4, Ls4/g$b;->a:Ls4/k;
 
@@ -331,7 +331,7 @@
     move-result v3
 
     .line 23
-    invoke-virtual {p0, v2, v3}, Lg4/a;->b(Lj1/q;F)F
+    invoke-virtual {p0, v2, v3}, Lg4/a;->b(Lcom/helpshift/util/v;F)F
 
     move-result v2
 
@@ -348,7 +348,7 @@
     return v0
 .end method
 
-.method public final b(Lj1/q;F)F
+.method public final b(Lcom/helpshift/util/v;F)F
     .locals 4
 
     .line 1
@@ -759,7 +759,7 @@
     xor-int/lit8 v1, v1, 0x1
 
     .line 4
-    iput-boolean v1, v0, Ls4/g;->A:Z
+    iput-boolean v1, v0, Ls4/g;->B:Z
 
     .line 5
     iget-object v0, p0, Lg4/a;->d:Ls4/g;
@@ -1098,14 +1098,14 @@
     add-int/2addr v2, v0
 
     .line 8
-    iget-object v0, v1, Landroidx/cardview/widget/CardView;->j:Landroid/graphics/Rect;
+    iget-object v0, v1, Landroidx/cardview/widget/CardView;->k:Landroid/graphics/Rect;
 
     invoke-virtual {v0, v3, v4, v5, v2}, Landroid/graphics/Rect;->set(IIII)V
 
     .line 9
-    sget-object v0, Landroidx/cardview/widget/CardView;->n:Ll/e;
+    sget-object v0, Landroidx/cardview/widget/CardView;->o:Ll/e;
 
-    iget-object v1, v1, Landroidx/cardview/widget/CardView;->l:Landroidx/cardview/widget/CardView$a;
+    iget-object v1, v1, Landroidx/cardview/widget/CardView;->m:Landroidx/cardview/widget/CardView$a;
 
     invoke-interface {v0, v1}, Ll/e;->a(Ll/d;)V
 

@@ -283,7 +283,7 @@
 
     move-result v0
 
-    sget-object v1, Lcom/google/protobuf/i;->g:Lcom/google/protobuf/i$h;
+    sget-object v1, Lcom/google/protobuf/i;->h:Lcom/google/protobuf/i$h;
 
     .line 2
     new-array v1, v0, [B

@@ -1,5 +1,5 @@
 .class public final Lwc/e0$a;
-.super Lse/h;
+.super Lse/i;
 .source "HeadFragments.kt"
 
 # interfaces
@@ -18,28 +18,28 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/l<",
         "Lbe/w;",
-        "Lie/h;",
+        "Lie/i;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic f:Lwc/e0;
+.field public final synthetic g:Lwc/e0;
 
 
 # direct methods
 .method public constructor <init>(Lwc/e0;)V
     .locals 0
 
-    iput-object p1, p0, Lwc/e0$a;->f:Lwc/e0;
+    iput-object p1, p0, Lwc/e0$a;->g:Lwc/e0;
 
     const/4 p1, 0x1
 
-    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -53,7 +53,7 @@
     check-cast p1, Lbe/w;
 
     .line 2
-    iget-object v0, p0, Lwc/e0$a;->f:Lwc/e0;
+    iget-object v0, p0, Lwc/e0$a;->g:Lwc/e0;
 
     sget v1, Lcom/supercell/id/R$id;->my_nickname:I
 
@@ -74,7 +74,7 @@
     if-eqz p1, :cond_0
 
     .line 3
-    iget-object p1, p1, Lcom/supercell/id/model/IdProfile;->i:Ljava/lang/String;
+    iget-object p1, p1, Lcom/supercell/id/model/IdProfile;->j:Ljava/lang/String;
 
     if-eqz p1, :cond_0
 
@@ -97,7 +97,7 @@
 
     .line 5
     :cond_1
-    sget-object p1, Lie/h;->a:Lie/h;
+    sget-object p1, Lie/i;->a:Lie/i;
 
     return-object p1
 .end method

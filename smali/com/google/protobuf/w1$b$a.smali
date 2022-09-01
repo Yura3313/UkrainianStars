@@ -18,7 +18,7 @@
 .method public constructor <init>()V
     .locals 4
 
-    sget-object v0, Lcom/google/protobuf/w1$c;->l:Lcom/google/protobuf/w1$c;
+    sget-object v0, Lcom/google/protobuf/w1$c;->m:Lcom/google/protobuf/w1$c;
 
     const-string v1, "STRING"
 

@@ -1,5 +1,5 @@
 .class public final Lzd/b;
-.super Lse/h;
+.super Lse/i;
 .source "YoungPlayerRegisterEnterEmailPageFragment.kt"
 
 # interfaces
@@ -9,29 +9,29 @@
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/p<",
         "Lzd/d;",
         "Ljava/lang/Boolean;",
-        "Lie/h;",
+        "Lie/i;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic f:Ljava/lang/String;
+.field public final synthetic g:Ljava/lang/String;
 
 
 # direct methods
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 0
 
-    iput-object p1, p0, Lzd/b;->f:Ljava/lang/String;
+    iput-object p1, p0, Lzd/b;->g:Ljava/lang/String;
 
     const/4 p1, 0x2
 
-    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -51,19 +51,19 @@
     const-string p2, "$receiver"
 
     .line 2
-    invoke-static {p1, p2}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p2}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 3
     sget-object p2, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
 
-    iget-object v0, p0, Lzd/b;->f:Ljava/lang/String;
+    iget-object v0, p0, Lzd/b;->g:Ljava/lang/String;
 
     const/4 v1, 0x0
 
     invoke-virtual {p2, v0, v1}, Lcom/supercell/id/SupercellId;->setPendingRegistrationWithEmail$supercellId_release(Ljava/lang/String;Z)V
 
     .line 4
-    iget-object p2, p0, Lzd/b;->f:Ljava/lang/String;
+    iget-object p2, p0, Lzd/b;->g:Ljava/lang/String;
 
     .line 5
     invoke-virtual {p1}, Lzd/k;->V0()Lcom/supercell/id/ui/youngplayer/register/YoungPlayerRegisterFlowFragment;
@@ -73,7 +73,7 @@
     if-eqz v0, :cond_0
 
     .line 6
-    iput-object p2, v0, Lcom/supercell/id/ui/youngplayer/register/YoungPlayerRegisterFlowFragment;->j0:Ljava/lang/String;
+    iput-object p2, v0, Lcom/supercell/id/ui/youngplayer/register/YoungPlayerRegisterFlowFragment;->k0:Ljava/lang/String;
 
     .line 7
     :cond_0
@@ -87,7 +87,7 @@
 
     .line 8
     :cond_1
-    sget-object p1, Lie/h;->a:Lie/h;
+    sget-object p1, Lie/i;->a:Lie/i;
 
     return-object p1
 .end method

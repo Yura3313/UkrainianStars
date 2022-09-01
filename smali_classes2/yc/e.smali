@@ -7,18 +7,18 @@
 
 
 # instance fields
-.field public final synthetic f:Lyc/d$c;
+.field public final synthetic g:Lyc/d$c;
 
-.field public final synthetic g:Landroid/net/Uri;
+.field public final synthetic h:Landroid/net/Uri;
 
 
 # direct methods
 .method public constructor <init>(Lyc/d$c;Landroid/net/Uri;)V
     .locals 0
 
-    iput-object p1, p0, Lyc/e;->f:Lyc/d$c;
+    iput-object p1, p0, Lyc/e;->g:Lyc/d$c;
 
-    iput-object p2, p0, Lyc/e;->g:Landroid/net/Uri;
+    iput-object p2, p0, Lyc/e;->h:Landroid/net/Uri;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -31,7 +31,7 @@
     .locals 3
 
     .line 1
-    iget-object v0, p0, Lyc/e;->f:Lyc/d$c;
+    iget-object v0, p0, Lyc/e;->g:Lyc/d$c;
 
     iget-object v0, v0, Lyc/d$c;->a:Lyc/d;
 
@@ -39,7 +39,7 @@
     iget-object v0, v0, Lyc/d;->g:Landroidx/fragment/app/Fragment;
 
     .line 3
-    invoke-static {v0}, Lcom/android/billingclient/api/c0;->e(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
+    invoke-static {v0}, Lcom/android/billingclient/api/b0;->f(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
 
     move-result-object v0
 
@@ -47,11 +47,11 @@
 
     new-instance v1, Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment$BackStackEntry;
 
-    iget-object v2, p0, Lyc/e;->g:Landroid/net/Uri;
+    iget-object v2, p0, Lyc/e;->h:Landroid/net/Uri;
 
     invoke-direct {v1, v2}, Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment$BackStackEntry;-><init>(Landroid/net/Uri;)V
 
-    sget-object v2, Lcom/supercell/id/ui/MainActivity;->s:Ljava/lang/ref/WeakReference;
+    sget-object v2, Lcom/supercell/id/ui/MainActivity;->t:Ljava/lang/ref/WeakReference;
 
     const/4 v2, 0x0
 

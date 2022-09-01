@@ -16,7 +16,7 @@
 
 
 # instance fields
-.field public f:Lq4/a$b;
+.field public g:Lq4/a$b;
 
 
 # direct methods
@@ -27,7 +27,7 @@
     invoke-direct {p0}, Landroid/graphics/drawable/Drawable;-><init>()V
 
     .line 5
-    iput-object p1, p0, Lq4/a;->f:Lq4/a$b;
+    iput-object p1, p0, Lq4/a;->g:Lq4/a$b;
 
     return-void
 .end method
@@ -48,7 +48,7 @@
     invoke-direct {p0}, Landroid/graphics/drawable/Drawable;-><init>()V
 
     .line 3
-    iput-object v0, p0, Lq4/a;->f:Lq4/a$b;
+    iput-object v0, p0, Lq4/a;->g:Lq4/a$b;
 
     return-void
 .end method
@@ -59,7 +59,7 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lq4/a;->f:Lq4/a$b;
+    iget-object v0, p0, Lq4/a;->g:Lq4/a$b;
 
     iget-boolean v1, v0, Lq4/a$b;->b:Z
 
@@ -77,7 +77,7 @@
 .method public final getConstantState()Landroid/graphics/drawable/Drawable$ConstantState;
     .locals 1
 
-    iget-object v0, p0, Lq4/a;->f:Lq4/a$b;
+    iget-object v0, p0, Lq4/a;->g:Lq4/a$b;
 
     return-object v0
 .end method
@@ -85,7 +85,7 @@
 .method public final getOpacity()I
     .locals 1
 
-    iget-object v0, p0, Lq4/a;->f:Lq4/a$b;
+    iget-object v0, p0, Lq4/a;->g:Lq4/a$b;
 
     iget-object v0, v0, Lq4/a$b;->a:Ls4/g;
 
@@ -110,12 +110,12 @@
     .line 1
     new-instance v0, Lq4/a$b;
 
-    iget-object v1, p0, Lq4/a;->f:Lq4/a$b;
+    iget-object v1, p0, Lq4/a;->g:Lq4/a$b;
 
     invoke-direct {v0, v1}, Lq4/a$b;-><init>(Lq4/a$b;)V
 
     .line 2
-    iput-object v0, p0, Lq4/a;->f:Lq4/a$b;
+    iput-object v0, p0, Lq4/a;->g:Lq4/a$b;
 
     return-object p0
 .end method
@@ -127,7 +127,7 @@
     invoke-super {p0, p1}, Landroid/graphics/drawable/Drawable;->onBoundsChange(Landroid/graphics/Rect;)V
 
     .line 2
-    iget-object v0, p0, Lq4/a;->f:Lq4/a$b;
+    iget-object v0, p0, Lq4/a;->g:Lq4/a$b;
 
     iget-object v0, v0, Lq4/a$b;->a:Ls4/g;
 
@@ -145,7 +145,7 @@
     move-result v0
 
     .line 2
-    iget-object v1, p0, Lq4/a;->f:Lq4/a$b;
+    iget-object v1, p0, Lq4/a;->g:Lq4/a$b;
 
     iget-object v1, v1, Lq4/a$b;->a:Ls4/g;
 
@@ -166,7 +166,7 @@
     move-result p1
 
     .line 4
-    iget-object v1, p0, Lq4/a;->f:Lq4/a$b;
+    iget-object v1, p0, Lq4/a;->g:Lq4/a$b;
 
     iget-boolean v3, v1, Lq4/a$b;->b:Z
 
@@ -187,7 +187,7 @@
 .method public final setAlpha(I)V
     .locals 1
 
-    iget-object v0, p0, Lq4/a;->f:Lq4/a$b;
+    iget-object v0, p0, Lq4/a;->g:Lq4/a$b;
 
     iget-object v0, v0, Lq4/a$b;->a:Ls4/g;
 
@@ -199,7 +199,7 @@
 .method public final setColorFilter(Landroid/graphics/ColorFilter;)V
     .locals 1
 
-    iget-object v0, p0, Lq4/a;->f:Lq4/a$b;
+    iget-object v0, p0, Lq4/a;->g:Lq4/a$b;
 
     iget-object v0, v0, Lq4/a$b;->a:Ls4/g;
 
@@ -211,7 +211,7 @@
 .method public final setShapeAppearanceModel(Ls4/k;)V
     .locals 1
 
-    iget-object v0, p0, Lq4/a;->f:Lq4/a$b;
+    iget-object v0, p0, Lq4/a;->g:Lq4/a$b;
 
     iget-object v0, v0, Lq4/a$b;->a:Ls4/g;
 
@@ -223,7 +223,7 @@
 .method public final setTint(I)V
     .locals 1
 
-    iget-object v0, p0, Lq4/a;->f:Lq4/a$b;
+    iget-object v0, p0, Lq4/a;->g:Lq4/a$b;
 
     iget-object v0, v0, Lq4/a$b;->a:Ls4/g;
 
@@ -235,7 +235,7 @@
 .method public final setTintList(Landroid/content/res/ColorStateList;)V
     .locals 1
 
-    iget-object v0, p0, Lq4/a;->f:Lq4/a$b;
+    iget-object v0, p0, Lq4/a;->g:Lq4/a$b;
 
     iget-object v0, v0, Lq4/a$b;->a:Ls4/g;
 
@@ -247,7 +247,7 @@
 .method public final setTintMode(Landroid/graphics/PorterDuff$Mode;)V
     .locals 1
 
-    iget-object v0, p0, Lq4/a;->f:Lq4/a$b;
+    iget-object v0, p0, Lq4/a;->g:Lq4/a$b;
 
     iget-object v0, v0, Lq4/a$b;->a:Ls4/g;
 

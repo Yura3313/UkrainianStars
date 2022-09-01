@@ -1,128 +1,87 @@
 .class public final Lk3/od;
-.super Ljava/lang/Object;
+.super Lk3/hl0;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
-
-# interfaces
-.implements Lk3/yl0;
-.implements Lh9/b;
 
 
 # instance fields
-.field public final f:Ljava/lang/String;
+.field public final g:Ljava/util/concurrent/Executor;
 
 
 # direct methods
-.method public synthetic constructor <init>()V
-    .locals 1
-
-    .line 2
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    const-string v0, "CREATE TABLE key_value_store(key text primary key,value blob not null);"
-
-    .line 3
-    iput-object v0, p0, Lk3/od;->f:Ljava/lang/String;
-
-    return-void
-.end method
-
-.method public synthetic constructor <init>(Ljava/lang/String;)V
+.method public constructor <init>(Ljava/util/concurrent/Executor;)V
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lk3/od;->f:Ljava/lang/String;
+    invoke-direct {p0}, Lk3/hl0;-><init>()V
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    .line 2
+    iput-object p1, p0, Lk3/od;->g:Ljava/util/concurrent/Executor;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Ljava/lang/Throwable;)V
-    .locals 2
+.method public final awaitTermination(JLjava/util/concurrent/TimeUnit;)Z
+    .locals 0
 
-    .line 1
-    sget-object v0, Li1/o;->B:Li1/o;
+    new-instance p1, Ljava/lang/UnsupportedOperationException;
 
-    iget-object v0, v0, Li1/o;->g:Lk3/ia;
+    invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V
 
-    .line 2
-    iget-object v1, p0, Lk3/od;->f:Ljava/lang/String;
+    throw p1
+.end method
 
-    invoke-virtual {v0, p1, v1}, Lk3/ia;->b(Ljava/lang/Throwable;Ljava/lang/String;)V
+.method public final execute(Ljava/lang/Runnable;)V
+    .locals 1
+
+    iget-object v0, p0, Lk3/od;->g:Ljava/util/concurrent/Executor;
+
+    invoke-interface {v0, p1}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
 
     return-void
 .end method
 
-.method public final c()Ljava/util/List;
+.method public final isShutdown()Z
     .locals 1
 
-    const-string v0, "CREATE TABLE key_value_store(key text primary key,value blob not null);"
-
-    invoke-static {v0}, Ljava/util/Collections;->singletonList(Ljava/lang/Object;)Ljava/util/List;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public final getTag()Ljava/lang/String;
-    .locals 1
-
-    const-string v0, "Helpshift_KeyValueDB"
-
-    return-object v0
-.end method
-
-.method public final i()Ljava/lang/String;
-    .locals 2
-
-    sget-object v0, Lva/a;->a:Ljava/util/Map;
-
-    const-string v1, "keyvalue_db"
-
-    invoke-interface {v0, v1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Ljava/lang/String;
-
-    return-object v0
-.end method
-
-.method public final n()Ljava/util/List;
-    .locals 1
-
-    const-string v0, "key_value_store"
-
-    invoke-static {v0}, Ljava/util/Collections;->singletonList(Ljava/lang/Object;)Ljava/util/List;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public final o(I)Ljava/util/List;
-    .locals 0
-
-    invoke-static {}, Ljava/util/Collections;->emptyList()Ljava/util/List;
-
-    move-result-object p1
-
-    return-object p1
-.end method
-
-.method public final onSuccess(Ljava/lang/Object;)V
-    .locals 0
-
-    return-void
-.end method
-
-.method public final p()I
-    .locals 1
-
-    const/4 v0, 0x1
+    const/4 v0, 0x0
 
     return v0
+.end method
+
+.method public final isTerminated()Z
+    .locals 1
+
+    const/4 v0, 0x0
+
+    return v0
+.end method
+
+.method public final shutdown()V
+    .locals 1
+
+    new-instance v0, Ljava/lang/UnsupportedOperationException;
+
+    invoke-direct {v0}, Ljava/lang/UnsupportedOperationException;-><init>()V
+
+    throw v0
+.end method
+
+.method public final shutdownNow()Ljava/util/List;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/List<",
+            "Ljava/lang/Runnable;",
+            ">;"
+        }
+    .end annotation
+
+    new-instance v0, Ljava/lang/UnsupportedOperationException;
+
+    invoke-direct {v0}, Ljava/lang/UnsupportedOperationException;-><init>()V
+
+    throw v0
 .end method

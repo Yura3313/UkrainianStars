@@ -21,7 +21,7 @@
 
     .line 3
     :try_start_0
-    sget-object v1, Lo9/c;->g:Lo9/c;
+    sget-object v1, Lo9/c;->h:Lo9/c;
 
     if-nez v1, :cond_0
 
@@ -30,11 +30,11 @@
 
     invoke-direct {v1, p1}, Lo9/c;-><init>(Landroid/content/Context;)V
 
-    sput-object v1, Lo9/c;->g:Lo9/c;
+    sput-object v1, Lo9/c;->h:Lo9/c;
 
     .line 5
     :cond_0
-    sget-object p1, Lo9/c;->g:Lo9/c;
+    sget-object p1, Lo9/c;->h:Lo9/c;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 

@@ -1,130 +1,100 @@
 .class public final Lk3/ky;
 .super Ljava/lang/Object;
-.source "com.google.android.gms:play-services-ads@@19.3.0"
+.source "com.google.android.gms:play-services-gass@@19.3.0"
 
 # interfaces
-.implements Lk3/y2;
+.implements Lk3/cs0;
 
 
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ljava/lang/Object;",
-        "Lk3/y2<",
-        "Ljava/lang/Object;",
-        ">;"
-    }
-.end annotation
-
-
-# instance fields
-.field public final f:Lcom/google/android/gms/internal/ads/zzafc;
-
-.field public final g:Lk3/oy;
-
-.field public final h:Lk3/ev0;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lk3/ev0<",
-            "Lcom/google/android/gms/internal/ads/zzcgw;",
-            ">;"
-        }
-    .end annotation
-.end field
+# static fields
+.field public static final a:Lk3/ky;
 
 
 # direct methods
-.method public constructor <init>(Lk3/xv;Lk3/sv;Lk3/oy;Lk3/ev0;)V
+.method public static constructor <clinit>()V
+    .locals 1
+
+    new-instance v0, Lk3/ky;
+
+    invoke-direct {v0}, Lk3/ky;-><init>()V
+
+    sput-object v0, Lk3/ky;->a:Lk3/ky;
+
+    return-void
+.end method
+
+.method public constructor <init>()V
     .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lk3/xv;",
-            "Lk3/sv;",
-            "Lk3/oy;",
-            "Lk3/ev0<",
-            "Lcom/google/android/gms/internal/ads/zzcgw;",
-            ">;)V"
-        }
-    .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 2
-    invoke-virtual {p2}, Lk3/sv;->c()Ljava/lang/String;
-
-    move-result-object p2
-
-    invoke-virtual {p1, p2}, Lk3/xv;->a(Ljava/lang/String;)Lcom/google/android/gms/internal/ads/zzafc;
-
-    move-result-object p1
-
-    iput-object p1, p0, Lk3/ky;->f:Lcom/google/android/gms/internal/ads/zzafc;
-
-    .line 3
-    iput-object p3, p0, Lk3/ky;->g:Lk3/oy;
-
-    .line 4
-    iput-object p4, p0, Lk3/ky;->h:Lk3/ev0;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final c(Ljava/lang/Object;Ljava/util/Map;)V
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/lang/Object;",
-            "Ljava/util/Map<",
-            "Ljava/lang/String;",
-            "Ljava/lang/String;",
-            ">;)V"
-        }
-    .end annotation
+.method public final a(I)Z
+    .locals 2
 
-    const-string p1, "asset"
+    const/4 v0, 0x1
 
-    .line 1
-    invoke-interface {p2, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    const/4 v1, 0x0
 
-    move-result-object p1
+    packed-switch p1, :pswitch_data_0
 
-    check-cast p1, Ljava/lang/String;
+    const/4 p1, 0x0
 
-    .line 2
-    :try_start_0
-    iget-object p2, p0, Lk3/ky;->f:Lcom/google/android/gms/internal/ads/zzafc;
+    goto :goto_0
 
-    iget-object v0, p0, Lk3/ky;->h:Lk3/ev0;
+    :pswitch_0
+    const/4 p1, 0x7
 
-    invoke-interface {v0}, Lk3/ev0;->get()Ljava/lang/Object;
+    goto :goto_0
 
-    move-result-object v0
+    :pswitch_1
+    const/4 p1, 0x6
 
-    check-cast v0, Lcom/google/android/gms/internal/ads/zzaes;
+    goto :goto_0
 
-    invoke-interface {p2, v0, p1}, Lcom/google/android/gms/internal/ads/zzafc;->Z0(Lcom/google/android/gms/internal/ads/zzaes;Ljava/lang/String;)V
-    :try_end_0
-    .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
+    :pswitch_2
+    const/4 p1, 0x5
 
-    return-void
+    goto :goto_0
 
-    :catch_0
-    const/16 p2, 0x28
+    :pswitch_3
+    const/4 p1, 0x4
 
-    .line 3
-    invoke-static {p1, p2}, La1/e;->a(Ljava/lang/String;I)I
+    goto :goto_0
 
-    move-result p1
+    :pswitch_4
+    const/4 p1, 0x3
 
-    .line 4
-    new-instance p2, Ljava/lang/StringBuilder;
+    goto :goto_0
 
-    invoke-direct {p2, p1}, Ljava/lang/StringBuilder;-><init>(I)V
+    :pswitch_5
+    const/4 p1, 0x2
 
-    return-void
+    goto :goto_0
+
+    :pswitch_6
+    const/4 p1, 0x1
+
+    :goto_0
+    if-eqz p1, :cond_0
+
+    return v0
+
+    :cond_0
+    return v1
+
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_6
+        :pswitch_5
+        :pswitch_4
+        :pswitch_3
+        :pswitch_2
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
 .end method

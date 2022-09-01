@@ -18,22 +18,22 @@
 
 
 # instance fields
-.field public final synthetic f:Lse/o;
-
-.field public final synthetic g:I
+.field public final synthetic g:Lse/p;
 
 .field public final synthetic h:I
 
+.field public final synthetic i:I
+
 
 # direct methods
-.method public constructor <init>(Lse/o;II)V
+.method public constructor <init>(Lse/p;II)V
     .locals 0
 
-    iput-object p1, p0, Lae/z2$f;->f:Lse/o;
+    iput-object p1, p0, Lae/z2$f;->g:Lse/p;
 
-    iput p2, p0, Lae/z2$f;->g:I
+    iput p2, p0, Lae/z2$f;->h:I
 
-    iput p3, p0, Lae/z2$f;->h:I
+    iput p3, p0, Lae/z2$f;->i:I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -48,7 +48,7 @@
     const-string v0, "event"
 
     .line 1
-    invoke-static {p2, v0}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {p2}, Landroid/view/MotionEvent;->getAction()I
 
@@ -80,12 +80,12 @@
 
     .line 2
     :cond_0
-    iget-object p2, p0, Lae/z2$f;->f:Lse/o;
+    iget-object p2, p0, Lae/z2$f;->g:Lse/p;
 
-    iput-boolean v3, p2, Lse/o;->f:Z
+    iput-boolean v3, p2, Lse/p;->g:Z
 
     .line 3
-    iget p2, p0, Lae/z2$f;->g:I
+    iget p2, p0, Lae/z2$f;->h:I
 
     if-eqz p2, :cond_2
 
@@ -151,17 +151,17 @@
 
     .line 10
     :cond_3
-    iget-object v0, p0, Lae/z2$f;->f:Lse/o;
+    iget-object v0, p0, Lae/z2$f;->g:Lse/p;
 
-    iget-boolean v0, v0, Lse/o;->f:Z
+    iget-boolean v0, v0, Lse/p;->g:Z
 
     if-eqz v0, :cond_d
 
     const-string v0, "v"
 
-    invoke-static {p1, v0}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    iget v0, p0, Lae/z2$f;->h:I
+    iget v0, p0, Lae/z2$f;->i:I
 
     .line 11
     invoke-virtual {p2}, Landroid/view/MotionEvent;->getX()F
@@ -233,12 +233,12 @@
     if-nez p2, :cond_d
 
     .line 14
-    iget-object p2, p0, Lae/z2$f;->f:Lse/o;
+    iget-object p2, p0, Lae/z2$f;->g:Lse/p;
 
-    iput-boolean v3, p2, Lse/o;->f:Z
+    iput-boolean v3, p2, Lse/p;->g:Z
 
     .line 15
-    iget p2, p0, Lae/z2$f;->g:I
+    iget p2, p0, Lae/z2$f;->h:I
 
     if-eqz p2, :cond_6
 
@@ -304,12 +304,12 @@
 
     .line 22
     :cond_7
-    iget-object p2, p0, Lae/z2$f;->f:Lse/o;
+    iget-object p2, p0, Lae/z2$f;->g:Lse/p;
 
-    iput-boolean v3, p2, Lse/o;->f:Z
+    iput-boolean v3, p2, Lse/p;->g:Z
 
     .line 23
-    iget p2, p0, Lae/z2$f;->g:I
+    iget p2, p0, Lae/z2$f;->h:I
 
     if-eqz p2, :cond_9
 
@@ -375,12 +375,12 @@
 
     .line 30
     :cond_a
-    iget-object p2, p0, Lae/z2$f;->f:Lse/o;
+    iget-object p2, p0, Lae/z2$f;->g:Lse/p;
 
-    iput-boolean v4, p2, Lse/o;->f:Z
+    iput-boolean v4, p2, Lse/p;->g:Z
 
     .line 31
-    iget p2, p0, Lae/z2$f;->g:I
+    iget p2, p0, Lae/z2$f;->h:I
 
     if-eqz p2, :cond_c
 

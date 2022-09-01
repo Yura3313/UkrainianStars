@@ -85,7 +85,7 @@
     iput-object v0, p0, Ln5/v0;->typeUrl_:Ljava/lang/String;
 
     .line 3
-    sget-object v0, Lo5/d;->g:Lo5/d$f;
+    sget-object v0, Lo5/d;->h:Lo5/d$f;
 
     iput-object v0, p0, Ln5/v0;->value_:Lo5/d;
 
@@ -331,7 +331,7 @@
     if-nez v0, :cond_0
 
     .line 2
-    sget-object v0, Ln5/v0$b;->l:Ln5/v0$b;
+    sget-object v0, Ln5/v0$b;->m:Ln5/v0$b;
 
     :cond_0
     return-object v0

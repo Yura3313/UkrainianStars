@@ -1,33 +1,49 @@
-.class public interface abstract Lk3/tj0;
+.class public final Lk3/tj0;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads-lite@@19.3.0"
 
 
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "<F:",
-        "Ljava/lang/Object;",
-        "T:",
-        "Ljava/lang/Object;",
-        ">",
-        "Ljava/lang/Object;"
-    }
-.end annotation
+# static fields
+.field public static final a:Ljava/nio/charset/Charset;
 
 
-# virtual methods
-.method public abstract a(Ljava/lang/Object;)Ljava/lang/Object;
-    .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
-        .end annotation
-    .end param
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TF;)TT;"
-        }
-    .end annotation
+# direct methods
+.method public static constructor <clinit>()V
+    .locals 1
 
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
-    .end annotation
+    const-string v0, "US-ASCII"
+
+    .line 1
+    invoke-static {v0}, Ljava/nio/charset/Charset;->forName(Ljava/lang/String;)Ljava/nio/charset/Charset;
+
+    const-string v0, "ISO-8859-1"
+
+    .line 2
+    invoke-static {v0}, Ljava/nio/charset/Charset;->forName(Ljava/lang/String;)Ljava/nio/charset/Charset;
+
+    const-string v0, "UTF-8"
+
+    .line 3
+    invoke-static {v0}, Ljava/nio/charset/Charset;->forName(Ljava/lang/String;)Ljava/nio/charset/Charset;
+
+    move-result-object v0
+
+    sput-object v0, Lk3/tj0;->a:Ljava/nio/charset/Charset;
+
+    const-string v0, "UTF-16BE"
+
+    .line 4
+    invoke-static {v0}, Ljava/nio/charset/Charset;->forName(Ljava/lang/String;)Ljava/nio/charset/Charset;
+
+    const-string v0, "UTF-16LE"
+
+    .line 5
+    invoke-static {v0}, Ljava/nio/charset/Charset;->forName(Ljava/lang/String;)Ljava/nio/charset/Charset;
+
+    const-string v0, "UTF-16"
+
+    .line 6
+    invoke-static {v0}, Ljava/nio/charset/Charset;->forName(Ljava/lang/String;)Ljava/nio/charset/Charset;
+
+    return-void
 .end method

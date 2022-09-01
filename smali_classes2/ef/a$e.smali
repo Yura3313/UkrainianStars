@@ -21,7 +21,7 @@
         "Ljava/lang/Object;",
         "Lef/j<",
         "Lokhttp3/ResponseBody;",
-        "Lie/h;",
+        "Lie/i;",
         ">;"
     }
 .end annotation
@@ -69,7 +69,7 @@
     invoke-virtual {p1}, Lokhttp3/ResponseBody;->close()V
 
     .line 3
-    sget-object p1, Lie/h;->a:Lie/h;
+    sget-object p1, Lie/i;->a:Lie/i;
 
     return-object p1
 .end method

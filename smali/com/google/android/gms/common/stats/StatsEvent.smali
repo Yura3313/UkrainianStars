@@ -64,7 +64,7 @@
     const/16 v6, 0x35
 
     .line 5
-    invoke-static {v5, v6}, La1/e;->a(Ljava/lang/String;I)I
+    invoke-static {v5, v6}, La1/e;->b(Ljava/lang/String;I)I
 
     move-result v6
 

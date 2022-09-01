@@ -179,7 +179,7 @@
 
     move-result-object p1
 
-    invoke-static {p1}, Lcom/google/protobuf/o1;->a(Lcom/google/protobuf/i;)Ljava/lang/String;
+    invoke-static {p1}, Lcom/google/protobuf/o1;->c(Lcom/google/protobuf/i;)Ljava/lang/String;
 
     move-result-object p1
 
@@ -201,7 +201,7 @@
 
     check-cast p3, Lcom/google/protobuf/i;
 
-    invoke-static {p3}, Lcom/google/protobuf/o1;->a(Lcom/google/protobuf/i;)Ljava/lang/String;
+    invoke-static {p3}, Lcom/google/protobuf/o1;->c(Lcom/google/protobuf/i;)Ljava/lang/String;
 
     move-result-object p1
 
@@ -901,7 +901,7 @@
     if-eqz v6, :cond_d
 
     .line 55
-    sget-object v6, Lcom/google/protobuf/i;->g:Lcom/google/protobuf/i$h;
+    sget-object v6, Lcom/google/protobuf/i;->h:Lcom/google/protobuf/i$h;
 
     invoke-virtual {v4, v6}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
@@ -1037,7 +1037,7 @@
     check-cast v3, Lcom/google/protobuf/GeneratedMessageLite$c;
 
     .line 69
-    iget v3, v3, Lcom/google/protobuf/GeneratedMessageLite$c;->g:I
+    iget v3, v3, Lcom/google/protobuf/GeneratedMessageLite$c;->h:I
 
     const-string v6, "]"
 

@@ -20,7 +20,7 @@
 
     const-string v0, "$this$dropLast"
 
-    invoke-static {p0, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     invoke-interface {p0}, Ljava/util/List;->size()I
@@ -34,7 +34,7 @@
     const/4 v0, 0x0
 
     :cond_0
-    invoke-static {p0, v0}, Lje/j;->N(Ljava/lang/Iterable;I)Ljava/util/List;
+    invoke-static {p0, v0}, Lje/j;->I(Ljava/lang/Iterable;I)Ljava/util/List;
 
     move-result-object p0
 

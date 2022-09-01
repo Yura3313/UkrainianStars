@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field public final synthetic f:Landroidx/appcompat/app/AppCompatDelegateImpl;
+.field public final synthetic g:Landroidx/appcompat/app/AppCompatDelegateImpl;
 
 
 # direct methods
 .method public constructor <init>(Landroidx/appcompat/app/AppCompatDelegateImpl;)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/appcompat/app/AppCompatDelegateImpl$b;->f:Landroidx/appcompat/app/AppCompatDelegateImpl;
+    iput-object p1, p0, Landroidx/appcompat/app/AppCompatDelegateImpl$b;->g:Landroidx/appcompat/app/AppCompatDelegateImpl;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -38,9 +38,9 @@
     .locals 3
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/app/AppCompatDelegateImpl$b;->f:Landroidx/appcompat/app/AppCompatDelegateImpl;
+    iget-object v0, p0, Landroidx/appcompat/app/AppCompatDelegateImpl$b;->g:Landroidx/appcompat/app/AppCompatDelegateImpl;
 
-    iget v1, v0, Landroidx/appcompat/app/AppCompatDelegateImpl;->X:I
+    iget v1, v0, Landroidx/appcompat/app/AppCompatDelegateImpl;->Y:I
 
     and-int/lit8 v1, v1, 0x1
 
@@ -53,9 +53,9 @@
 
     .line 3
     :cond_0
-    iget-object v0, p0, Landroidx/appcompat/app/AppCompatDelegateImpl$b;->f:Landroidx/appcompat/app/AppCompatDelegateImpl;
+    iget-object v0, p0, Landroidx/appcompat/app/AppCompatDelegateImpl$b;->g:Landroidx/appcompat/app/AppCompatDelegateImpl;
 
-    iget v1, v0, Landroidx/appcompat/app/AppCompatDelegateImpl;->X:I
+    iget v1, v0, Landroidx/appcompat/app/AppCompatDelegateImpl;->Y:I
 
     and-int/lit16 v1, v1, 0x1000
 
@@ -68,12 +68,12 @@
 
     .line 5
     :cond_1
-    iget-object v0, p0, Landroidx/appcompat/app/AppCompatDelegateImpl$b;->f:Landroidx/appcompat/app/AppCompatDelegateImpl;
+    iget-object v0, p0, Landroidx/appcompat/app/AppCompatDelegateImpl$b;->g:Landroidx/appcompat/app/AppCompatDelegateImpl;
 
-    iput-boolean v2, v0, Landroidx/appcompat/app/AppCompatDelegateImpl;->W:Z
+    iput-boolean v2, v0, Landroidx/appcompat/app/AppCompatDelegateImpl;->X:Z
 
     .line 6
-    iput v2, v0, Landroidx/appcompat/app/AppCompatDelegateImpl;->X:I
+    iput v2, v0, Landroidx/appcompat/app/AppCompatDelegateImpl;->Y:I
 
     return-void
 .end method

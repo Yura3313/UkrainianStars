@@ -12,11 +12,11 @@
 
 
 # static fields
-.field public static final f0:Lxd/b$a;
+.field public static final g0:Lxd/b$a;
 
 
 # instance fields
-.field public e0:Ljava/util/HashMap;
+.field public f0:Ljava/util/HashMap;
 
 
 # direct methods
@@ -27,7 +27,7 @@
 
     invoke-direct {v0}, Lxd/b$a;-><init>()V
 
-    sput-object v0, Lxd/b;->f0:Lxd/b$a;
+    sput-object v0, Lxd/b;->g0:Lxd/b$a;
 
     return-void
 .end method
@@ -45,7 +45,7 @@
 .method public final N0()V
     .locals 1
 
-    iget-object v0, p0, Lxd/b;->e0:Ljava/util/HashMap;
+    iget-object v0, p0, Lxd/b;->f0:Ljava/util/HashMap;
 
     if-eqz v0, :cond_0
 
@@ -58,7 +58,7 @@
 .method public final T0(I)Landroid/view/View;
     .locals 2
 
-    iget-object v0, p0, Lxd/b;->e0:Ljava/util/HashMap;
+    iget-object v0, p0, Lxd/b;->f0:Ljava/util/HashMap;
 
     if-nez v0, :cond_0
 
@@ -66,10 +66,10 @@
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    iput-object v0, p0, Lxd/b;->e0:Ljava/util/HashMap;
+    iput-object v0, p0, Lxd/b;->f0:Ljava/util/HashMap;
 
     :cond_0
-    iget-object v0, p0, Lxd/b;->e0:Ljava/util/HashMap;
+    iget-object v0, p0, Lxd/b;->f0:Ljava/util/HashMap;
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -84,7 +84,7 @@
     if-nez v0, :cond_2
 
     .line 1
-    iget-object v0, p0, Landroidx/fragment/app/Fragment;->M:Landroid/view/View;
+    iget-object v0, p0, Landroidx/fragment/app/Fragment;->N:Landroid/view/View;
 
     if-nez v0, :cond_1
 
@@ -98,7 +98,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lxd/b;->e0:Ljava/util/HashMap;
+    iget-object v1, p0, Lxd/b;->f0:Ljava/util/HashMap;
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -115,7 +115,7 @@
 
     const-string p3, "inflater"
 
-    invoke-static {p1, p3}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p3}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     sget p3, Lcom/supercell/id/R$layout;->fragment_tutorial_cover_page:I
 

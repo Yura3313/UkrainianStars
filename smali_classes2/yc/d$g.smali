@@ -1,5 +1,5 @@
 .class public final Lyc/d$g;
-.super Lse/h;
+.super Lse/i;
 .source "CustomProfileImageManager.kt"
 
 # interfaces
@@ -18,28 +18,28 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/l<",
         "Lwc/q;",
-        "Lie/h;",
+        "Lie/i;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic f:Lyc/d;
+.field public final synthetic g:Lyc/d;
 
 
 # direct methods
 .method public constructor <init>(Lyc/d;)V
     .locals 0
 
-    iput-object p1, p0, Lyc/d$g;->f:Lyc/d;
+    iput-object p1, p0, Lyc/d$g;->g:Lyc/d;
 
     const/4 p1, 0x1
 
-    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -55,7 +55,7 @@
     const-string v0, "it"
 
     .line 2
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 3
     sget-object p1, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
@@ -65,7 +65,7 @@
     move-result-object p1
 
     .line 4
-    iget-object p1, p1, Lae/u;->m:La5/d0;
+    iget-object p1, p1, Lae/u;->m:Lpe/a;
 
     const-string v0, "Profile Picture Editor - Camera Rationale Dialog"
 
@@ -76,10 +76,10 @@
     const/16 v3, 0x18
 
     .line 5
-    invoke-static {p1, v0, v1, v2, v3}, La5/d0;->a(La5/d0;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;I)V
+    invoke-static {p1, v0, v1, v2, v3}, Lpe/a;->e(Lpe/a;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;I)V
 
     .line 6
-    iget-object p1, p0, Lyc/d$g;->f:Lyc/d;
+    iget-object p1, p0, Lyc/d$g;->g:Lyc/d;
 
     .line 7
     iget-object p1, p1, Lyc/d;->e:Landroidx/fragment/app/n;
@@ -90,7 +90,7 @@
     invoke-virtual {p1, v0}, Landroidx/fragment/app/n;->a(Ljava/lang/Object;)V
 
     .line 9
-    sget-object p1, Lie/h;->a:Lie/h;
+    sget-object p1, Lie/i;->a:Lie/i;
 
     return-object p1
 .end method

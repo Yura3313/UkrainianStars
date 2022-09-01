@@ -10,49 +10,57 @@
     value = {
         "Ljava/lang/Object;",
         "La5/u0<",
-        "Landroid/content/Context;",
+        "Ljava/lang/String;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final f:Lcom/google/android/play/core/assetpacks/n2;
+.field public final g:La5/u0;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "La5/u0<",
+            "Landroid/content/Context;",
+            ">;"
+        }
+    .end annotation
+.end field
 
 
 # direct methods
-.method public constructor <init>(Lcom/google/android/play/core/assetpacks/n2;)V
+.method public constructor <init>(La5/u0;)V
     .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "La5/u0<",
+            "Landroid/content/Context;",
+            ">;)V"
+        }
+    .end annotation
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lcom/google/android/play/core/assetpacks/r2;->f:Lcom/google/android/play/core/assetpacks/n2;
+    iput-object p1, p0, Lcom/google/android/play/core/assetpacks/r2;->g:La5/u0;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a()Landroid/content/Context;
-    .locals 2
-
-    iget-object v0, p0, Lcom/google/android/play/core/assetpacks/r2;->f:Lcom/google/android/play/core/assetpacks/n2;
-
-    .line 1
-    iget-object v0, v0, Lcom/google/android/play/core/assetpacks/n2;->a:Landroid/content/Context;
-
-    const-string v1, "Cannot return null from a non-@Nullable @Provides method"
-
-    .line 2
-    invoke-static {v0, v1}, La5/g0;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    return-object v0
-.end method
-
 .method public final bridge synthetic e()Ljava/lang/Object;
     .locals 1
 
-    invoke-virtual {p0}, Lcom/google/android/play/core/assetpacks/r2;->a()Landroid/content/Context;
+    iget-object v0, p0, Lcom/google/android/play/core/assetpacks/r2;->g:La5/u0;
+
+    check-cast v0, Lcom/google/android/play/core/assetpacks/q2;
+
+    invoke-virtual {v0}, Lcom/google/android/play/core/assetpacks/q2;->a()Landroid/content/Context;
+
+    move-result-object v0
+
+    invoke-static {v0}, Lcom/google/android/play/core/assetpacks/m2;->a(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object v0
 

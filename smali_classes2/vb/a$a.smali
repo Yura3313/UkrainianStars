@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field public final f:Ljavax/net/ssl/SSLSocket;
+.field public final g:Ljavax/net/ssl/SSLSocket;
 
 
 # direct methods
@@ -26,7 +26,7 @@
     invoke-direct {p0}, Ljavax/net/ssl/SSLSocket;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lvb/a$a;->f:Ljavax/net/ssl/SSLSocket;
+    iput-object p1, p0, Lvb/a$a;->g:Ljavax/net/ssl/SSLSocket;
 
     return-void
 .end method
@@ -36,7 +36,7 @@
 .method public final addHandshakeCompletedListener(Ljavax/net/ssl/HandshakeCompletedListener;)V
     .locals 1
 
-    iget-object v0, p0, Lvb/a$a;->f:Ljavax/net/ssl/SSLSocket;
+    iget-object v0, p0, Lvb/a$a;->g:Ljavax/net/ssl/SSLSocket;
 
     invoke-virtual {v0, p1}, Ljavax/net/ssl/SSLSocket;->addHandshakeCompletedListener(Ljavax/net/ssl/HandshakeCompletedListener;)V
 
@@ -46,7 +46,7 @@
 .method public final bind(Ljava/net/SocketAddress;)V
     .locals 1
 
-    iget-object v0, p0, Lvb/a$a;->f:Ljavax/net/ssl/SSLSocket;
+    iget-object v0, p0, Lvb/a$a;->g:Ljavax/net/ssl/SSLSocket;
 
     invoke-virtual {v0, p1}, Ljava/net/Socket;->bind(Ljava/net/SocketAddress;)V
 
@@ -60,7 +60,7 @@
 
     .line 1
     :try_start_0
-    iget-object v0, p0, Lvb/a$a;->f:Ljavax/net/ssl/SSLSocket;
+    iget-object v0, p0, Lvb/a$a;->g:Ljavax/net/ssl/SSLSocket;
 
     invoke-virtual {v0}, Ljava/net/Socket;->close()V
     :try_end_0
@@ -83,7 +83,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lvb/a$a;->f:Ljavax/net/ssl/SSLSocket;
+    iget-object v0, p0, Lvb/a$a;->g:Ljavax/net/ssl/SSLSocket;
 
     invoke-virtual {v0, p1}, Ljava/net/Socket;->connect(Ljava/net/SocketAddress;)V
 
@@ -94,7 +94,7 @@
     .locals 1
 
     .line 2
-    iget-object v0, p0, Lvb/a$a;->f:Ljavax/net/ssl/SSLSocket;
+    iget-object v0, p0, Lvb/a$a;->g:Ljavax/net/ssl/SSLSocket;
 
     invoke-virtual {v0, p1, p2}, Ljava/net/Socket;->connect(Ljava/net/SocketAddress;I)V
 
@@ -104,7 +104,7 @@
 .method public final equals(Ljava/lang/Object;)Z
     .locals 1
 
-    iget-object v0, p0, Lvb/a$a;->f:Ljavax/net/ssl/SSLSocket;
+    iget-object v0, p0, Lvb/a$a;->g:Ljavax/net/ssl/SSLSocket;
 
     invoke-virtual {v0, p1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
@@ -116,7 +116,7 @@
 .method public final getChannel()Ljava/nio/channels/SocketChannel;
     .locals 1
 
-    iget-object v0, p0, Lvb/a$a;->f:Ljavax/net/ssl/SSLSocket;
+    iget-object v0, p0, Lvb/a$a;->g:Ljavax/net/ssl/SSLSocket;
 
     invoke-virtual {v0}, Ljava/net/Socket;->getChannel()Ljava/nio/channels/SocketChannel;
 
@@ -128,7 +128,7 @@
 .method public final getEnableSessionCreation()Z
     .locals 1
 
-    iget-object v0, p0, Lvb/a$a;->f:Ljavax/net/ssl/SSLSocket;
+    iget-object v0, p0, Lvb/a$a;->g:Ljavax/net/ssl/SSLSocket;
 
     invoke-virtual {v0}, Ljavax/net/ssl/SSLSocket;->getEnableSessionCreation()Z
 
@@ -140,7 +140,7 @@
 .method public final getEnabledCipherSuites()[Ljava/lang/String;
     .locals 1
 
-    iget-object v0, p0, Lvb/a$a;->f:Ljavax/net/ssl/SSLSocket;
+    iget-object v0, p0, Lvb/a$a;->g:Ljavax/net/ssl/SSLSocket;
 
     invoke-virtual {v0}, Ljavax/net/ssl/SSLSocket;->getEnabledCipherSuites()[Ljava/lang/String;
 
@@ -152,7 +152,7 @@
 .method public final getEnabledProtocols()[Ljava/lang/String;
     .locals 1
 
-    iget-object v0, p0, Lvb/a$a;->f:Ljavax/net/ssl/SSLSocket;
+    iget-object v0, p0, Lvb/a$a;->g:Ljavax/net/ssl/SSLSocket;
 
     invoke-virtual {v0}, Ljavax/net/ssl/SSLSocket;->getEnabledProtocols()[Ljava/lang/String;
 
@@ -164,7 +164,7 @@
 .method public final getInetAddress()Ljava/net/InetAddress;
     .locals 1
 
-    iget-object v0, p0, Lvb/a$a;->f:Ljavax/net/ssl/SSLSocket;
+    iget-object v0, p0, Lvb/a$a;->g:Ljavax/net/ssl/SSLSocket;
 
     invoke-virtual {v0}, Ljava/net/Socket;->getInetAddress()Ljava/net/InetAddress;
 
@@ -176,7 +176,7 @@
 .method public final getInputStream()Ljava/io/InputStream;
     .locals 1
 
-    iget-object v0, p0, Lvb/a$a;->f:Ljavax/net/ssl/SSLSocket;
+    iget-object v0, p0, Lvb/a$a;->g:Ljavax/net/ssl/SSLSocket;
 
     invoke-virtual {v0}, Ljava/net/Socket;->getInputStream()Ljava/io/InputStream;
 
@@ -188,7 +188,7 @@
 .method public final getKeepAlive()Z
     .locals 1
 
-    iget-object v0, p0, Lvb/a$a;->f:Ljavax/net/ssl/SSLSocket;
+    iget-object v0, p0, Lvb/a$a;->g:Ljavax/net/ssl/SSLSocket;
 
     invoke-virtual {v0}, Ljava/net/Socket;->getKeepAlive()Z
 
@@ -200,7 +200,7 @@
 .method public final getLocalAddress()Ljava/net/InetAddress;
     .locals 1
 
-    iget-object v0, p0, Lvb/a$a;->f:Ljavax/net/ssl/SSLSocket;
+    iget-object v0, p0, Lvb/a$a;->g:Ljavax/net/ssl/SSLSocket;
 
     invoke-virtual {v0}, Ljava/net/Socket;->getLocalAddress()Ljava/net/InetAddress;
 
@@ -212,7 +212,7 @@
 .method public final getLocalPort()I
     .locals 1
 
-    iget-object v0, p0, Lvb/a$a;->f:Ljavax/net/ssl/SSLSocket;
+    iget-object v0, p0, Lvb/a$a;->g:Ljavax/net/ssl/SSLSocket;
 
     invoke-virtual {v0}, Ljava/net/Socket;->getLocalPort()I
 
@@ -224,7 +224,7 @@
 .method public final getLocalSocketAddress()Ljava/net/SocketAddress;
     .locals 1
 
-    iget-object v0, p0, Lvb/a$a;->f:Ljavax/net/ssl/SSLSocket;
+    iget-object v0, p0, Lvb/a$a;->g:Ljavax/net/ssl/SSLSocket;
 
     invoke-virtual {v0}, Ljava/net/Socket;->getLocalSocketAddress()Ljava/net/SocketAddress;
 
@@ -236,7 +236,7 @@
 .method public final getNeedClientAuth()Z
     .locals 1
 
-    iget-object v0, p0, Lvb/a$a;->f:Ljavax/net/ssl/SSLSocket;
+    iget-object v0, p0, Lvb/a$a;->g:Ljavax/net/ssl/SSLSocket;
 
     invoke-virtual {v0}, Ljavax/net/ssl/SSLSocket;->getNeedClientAuth()Z
 
@@ -248,7 +248,7 @@
 .method public final getOOBInline()Z
     .locals 1
 
-    iget-object v0, p0, Lvb/a$a;->f:Ljavax/net/ssl/SSLSocket;
+    iget-object v0, p0, Lvb/a$a;->g:Ljavax/net/ssl/SSLSocket;
 
     invoke-virtual {v0}, Ljava/net/Socket;->getOOBInline()Z
 
@@ -260,7 +260,7 @@
 .method public final getOutputStream()Ljava/io/OutputStream;
     .locals 1
 
-    iget-object v0, p0, Lvb/a$a;->f:Ljavax/net/ssl/SSLSocket;
+    iget-object v0, p0, Lvb/a$a;->g:Ljavax/net/ssl/SSLSocket;
 
     invoke-virtual {v0}, Ljava/net/Socket;->getOutputStream()Ljava/io/OutputStream;
 
@@ -272,7 +272,7 @@
 .method public final getPort()I
     .locals 1
 
-    iget-object v0, p0, Lvb/a$a;->f:Ljavax/net/ssl/SSLSocket;
+    iget-object v0, p0, Lvb/a$a;->g:Ljavax/net/ssl/SSLSocket;
 
     invoke-virtual {v0}, Ljava/net/Socket;->getPort()I
 
@@ -287,7 +287,7 @@
     monitor-enter p0
 
     :try_start_0
-    iget-object v0, p0, Lvb/a$a;->f:Ljavax/net/ssl/SSLSocket;
+    iget-object v0, p0, Lvb/a$a;->g:Ljavax/net/ssl/SSLSocket;
 
     invoke-virtual {v0}, Ljava/net/Socket;->getReceiveBufferSize()I
 
@@ -310,7 +310,7 @@
 .method public final getRemoteSocketAddress()Ljava/net/SocketAddress;
     .locals 1
 
-    iget-object v0, p0, Lvb/a$a;->f:Ljavax/net/ssl/SSLSocket;
+    iget-object v0, p0, Lvb/a$a;->g:Ljavax/net/ssl/SSLSocket;
 
     invoke-virtual {v0}, Ljava/net/Socket;->getRemoteSocketAddress()Ljava/net/SocketAddress;
 
@@ -322,7 +322,7 @@
 .method public final getReuseAddress()Z
     .locals 1
 
-    iget-object v0, p0, Lvb/a$a;->f:Ljavax/net/ssl/SSLSocket;
+    iget-object v0, p0, Lvb/a$a;->g:Ljavax/net/ssl/SSLSocket;
 
     invoke-virtual {v0}, Ljava/net/Socket;->getReuseAddress()Z
 
@@ -337,7 +337,7 @@
     monitor-enter p0
 
     :try_start_0
-    iget-object v0, p0, Lvb/a$a;->f:Ljavax/net/ssl/SSLSocket;
+    iget-object v0, p0, Lvb/a$a;->g:Ljavax/net/ssl/SSLSocket;
 
     invoke-virtual {v0}, Ljava/net/Socket;->getSendBufferSize()I
 
@@ -360,7 +360,7 @@
 .method public final getSession()Ljavax/net/ssl/SSLSession;
     .locals 1
 
-    iget-object v0, p0, Lvb/a$a;->f:Ljavax/net/ssl/SSLSocket;
+    iget-object v0, p0, Lvb/a$a;->g:Ljavax/net/ssl/SSLSocket;
 
     invoke-virtual {v0}, Ljavax/net/ssl/SSLSocket;->getSession()Ljavax/net/ssl/SSLSession;
 
@@ -372,7 +372,7 @@
 .method public final getSoLinger()I
     .locals 1
 
-    iget-object v0, p0, Lvb/a$a;->f:Ljavax/net/ssl/SSLSocket;
+    iget-object v0, p0, Lvb/a$a;->g:Ljavax/net/ssl/SSLSocket;
 
     invoke-virtual {v0}, Ljava/net/Socket;->getSoLinger()I
 
@@ -387,7 +387,7 @@
     monitor-enter p0
 
     :try_start_0
-    iget-object v0, p0, Lvb/a$a;->f:Ljavax/net/ssl/SSLSocket;
+    iget-object v0, p0, Lvb/a$a;->g:Ljavax/net/ssl/SSLSocket;
 
     invoke-virtual {v0}, Ljava/net/Socket;->getSoTimeout()I
 
@@ -410,7 +410,7 @@
 .method public final getSupportedCipherSuites()[Ljava/lang/String;
     .locals 1
 
-    iget-object v0, p0, Lvb/a$a;->f:Ljavax/net/ssl/SSLSocket;
+    iget-object v0, p0, Lvb/a$a;->g:Ljavax/net/ssl/SSLSocket;
 
     invoke-virtual {v0}, Ljavax/net/ssl/SSLSocket;->getSupportedCipherSuites()[Ljava/lang/String;
 
@@ -422,7 +422,7 @@
 .method public final getSupportedProtocols()[Ljava/lang/String;
     .locals 1
 
-    iget-object v0, p0, Lvb/a$a;->f:Ljavax/net/ssl/SSLSocket;
+    iget-object v0, p0, Lvb/a$a;->g:Ljavax/net/ssl/SSLSocket;
 
     invoke-virtual {v0}, Ljavax/net/ssl/SSLSocket;->getSupportedProtocols()[Ljava/lang/String;
 
@@ -434,7 +434,7 @@
 .method public final getTcpNoDelay()Z
     .locals 1
 
-    iget-object v0, p0, Lvb/a$a;->f:Ljavax/net/ssl/SSLSocket;
+    iget-object v0, p0, Lvb/a$a;->g:Ljavax/net/ssl/SSLSocket;
 
     invoke-virtual {v0}, Ljava/net/Socket;->getTcpNoDelay()Z
 
@@ -446,7 +446,7 @@
 .method public final getTrafficClass()I
     .locals 1
 
-    iget-object v0, p0, Lvb/a$a;->f:Ljavax/net/ssl/SSLSocket;
+    iget-object v0, p0, Lvb/a$a;->g:Ljavax/net/ssl/SSLSocket;
 
     invoke-virtual {v0}, Ljava/net/Socket;->getTrafficClass()I
 
@@ -458,7 +458,7 @@
 .method public final getUseClientMode()Z
     .locals 1
 
-    iget-object v0, p0, Lvb/a$a;->f:Ljavax/net/ssl/SSLSocket;
+    iget-object v0, p0, Lvb/a$a;->g:Ljavax/net/ssl/SSLSocket;
 
     invoke-virtual {v0}, Ljavax/net/ssl/SSLSocket;->getUseClientMode()Z
 
@@ -470,7 +470,7 @@
 .method public final getWantClientAuth()Z
     .locals 1
 
-    iget-object v0, p0, Lvb/a$a;->f:Ljavax/net/ssl/SSLSocket;
+    iget-object v0, p0, Lvb/a$a;->g:Ljavax/net/ssl/SSLSocket;
 
     invoke-virtual {v0}, Ljavax/net/ssl/SSLSocket;->getWantClientAuth()Z
 
@@ -482,7 +482,7 @@
 .method public final isBound()Z
     .locals 1
 
-    iget-object v0, p0, Lvb/a$a;->f:Ljavax/net/ssl/SSLSocket;
+    iget-object v0, p0, Lvb/a$a;->g:Ljavax/net/ssl/SSLSocket;
 
     invoke-virtual {v0}, Ljava/net/Socket;->isBound()Z
 
@@ -494,7 +494,7 @@
 .method public final isClosed()Z
     .locals 1
 
-    iget-object v0, p0, Lvb/a$a;->f:Ljavax/net/ssl/SSLSocket;
+    iget-object v0, p0, Lvb/a$a;->g:Ljavax/net/ssl/SSLSocket;
 
     invoke-virtual {v0}, Ljava/net/Socket;->isClosed()Z
 
@@ -506,7 +506,7 @@
 .method public final isConnected()Z
     .locals 1
 
-    iget-object v0, p0, Lvb/a$a;->f:Ljavax/net/ssl/SSLSocket;
+    iget-object v0, p0, Lvb/a$a;->g:Ljavax/net/ssl/SSLSocket;
 
     invoke-virtual {v0}, Ljava/net/Socket;->isConnected()Z
 
@@ -518,7 +518,7 @@
 .method public final isInputShutdown()Z
     .locals 1
 
-    iget-object v0, p0, Lvb/a$a;->f:Ljavax/net/ssl/SSLSocket;
+    iget-object v0, p0, Lvb/a$a;->g:Ljavax/net/ssl/SSLSocket;
 
     invoke-virtual {v0}, Ljava/net/Socket;->isInputShutdown()Z
 
@@ -530,7 +530,7 @@
 .method public final isOutputShutdown()Z
     .locals 1
 
-    iget-object v0, p0, Lvb/a$a;->f:Ljavax/net/ssl/SSLSocket;
+    iget-object v0, p0, Lvb/a$a;->g:Ljavax/net/ssl/SSLSocket;
 
     invoke-virtual {v0}, Ljava/net/Socket;->isOutputShutdown()Z
 
@@ -542,7 +542,7 @@
 .method public final removeHandshakeCompletedListener(Ljavax/net/ssl/HandshakeCompletedListener;)V
     .locals 1
 
-    iget-object v0, p0, Lvb/a$a;->f:Ljavax/net/ssl/SSLSocket;
+    iget-object v0, p0, Lvb/a$a;->g:Ljavax/net/ssl/SSLSocket;
 
     invoke-virtual {v0, p1}, Ljavax/net/ssl/SSLSocket;->removeHandshakeCompletedListener(Ljavax/net/ssl/HandshakeCompletedListener;)V
 
@@ -552,7 +552,7 @@
 .method public final sendUrgentData(I)V
     .locals 1
 
-    iget-object v0, p0, Lvb/a$a;->f:Ljavax/net/ssl/SSLSocket;
+    iget-object v0, p0, Lvb/a$a;->g:Ljavax/net/ssl/SSLSocket;
 
     invoke-virtual {v0, p1}, Ljava/net/Socket;->sendUrgentData(I)V
 
@@ -562,7 +562,7 @@
 .method public final setEnableSessionCreation(Z)V
     .locals 1
 
-    iget-object v0, p0, Lvb/a$a;->f:Ljavax/net/ssl/SSLSocket;
+    iget-object v0, p0, Lvb/a$a;->g:Ljavax/net/ssl/SSLSocket;
 
     invoke-virtual {v0, p1}, Ljavax/net/ssl/SSLSocket;->setEnableSessionCreation(Z)V
 
@@ -572,7 +572,7 @@
 .method public final setEnabledCipherSuites([Ljava/lang/String;)V
     .locals 1
 
-    iget-object v0, p0, Lvb/a$a;->f:Ljavax/net/ssl/SSLSocket;
+    iget-object v0, p0, Lvb/a$a;->g:Ljavax/net/ssl/SSLSocket;
 
     invoke-virtual {v0, p1}, Ljavax/net/ssl/SSLSocket;->setEnabledCipherSuites([Ljava/lang/String;)V
 
@@ -582,7 +582,7 @@
 .method public setEnabledProtocols([Ljava/lang/String;)V
     .locals 1
 
-    iget-object v0, p0, Lvb/a$a;->f:Ljavax/net/ssl/SSLSocket;
+    iget-object v0, p0, Lvb/a$a;->g:Ljavax/net/ssl/SSLSocket;
 
     invoke-virtual {v0, p1}, Ljavax/net/ssl/SSLSocket;->setEnabledProtocols([Ljava/lang/String;)V
 
@@ -592,7 +592,7 @@
 .method public final setKeepAlive(Z)V
     .locals 1
 
-    iget-object v0, p0, Lvb/a$a;->f:Ljavax/net/ssl/SSLSocket;
+    iget-object v0, p0, Lvb/a$a;->g:Ljavax/net/ssl/SSLSocket;
 
     invoke-virtual {v0, p1}, Ljava/net/Socket;->setKeepAlive(Z)V
 
@@ -602,7 +602,7 @@
 .method public final setNeedClientAuth(Z)V
     .locals 1
 
-    iget-object v0, p0, Lvb/a$a;->f:Ljavax/net/ssl/SSLSocket;
+    iget-object v0, p0, Lvb/a$a;->g:Ljavax/net/ssl/SSLSocket;
 
     invoke-virtual {v0, p1}, Ljavax/net/ssl/SSLSocket;->setNeedClientAuth(Z)V
 
@@ -612,7 +612,7 @@
 .method public final setOOBInline(Z)V
     .locals 1
 
-    iget-object v0, p0, Lvb/a$a;->f:Ljavax/net/ssl/SSLSocket;
+    iget-object v0, p0, Lvb/a$a;->g:Ljavax/net/ssl/SSLSocket;
 
     invoke-virtual {v0, p1}, Ljava/net/Socket;->setOOBInline(Z)V
 
@@ -622,7 +622,7 @@
 .method public final setPerformancePreferences(III)V
     .locals 1
 
-    iget-object v0, p0, Lvb/a$a;->f:Ljavax/net/ssl/SSLSocket;
+    iget-object v0, p0, Lvb/a$a;->g:Ljavax/net/ssl/SSLSocket;
 
     invoke-virtual {v0, p1, p2, p3}, Ljava/net/Socket;->setPerformancePreferences(III)V
 
@@ -636,7 +636,7 @@
 
     .line 1
     :try_start_0
-    iget-object v0, p0, Lvb/a$a;->f:Ljavax/net/ssl/SSLSocket;
+    iget-object v0, p0, Lvb/a$a;->g:Ljavax/net/ssl/SSLSocket;
 
     invoke-virtual {v0, p1}, Ljava/net/Socket;->setReceiveBufferSize(I)V
     :try_end_0
@@ -658,7 +658,7 @@
 .method public final setReuseAddress(Z)V
     .locals 1
 
-    iget-object v0, p0, Lvb/a$a;->f:Ljavax/net/ssl/SSLSocket;
+    iget-object v0, p0, Lvb/a$a;->g:Ljavax/net/ssl/SSLSocket;
 
     invoke-virtual {v0, p1}, Ljava/net/Socket;->setReuseAddress(Z)V
 
@@ -672,7 +672,7 @@
 
     .line 1
     :try_start_0
-    iget-object v0, p0, Lvb/a$a;->f:Ljavax/net/ssl/SSLSocket;
+    iget-object v0, p0, Lvb/a$a;->g:Ljavax/net/ssl/SSLSocket;
 
     invoke-virtual {v0, p1}, Ljava/net/Socket;->setSendBufferSize(I)V
     :try_end_0
@@ -694,7 +694,7 @@
 .method public final setSoLinger(ZI)V
     .locals 1
 
-    iget-object v0, p0, Lvb/a$a;->f:Ljavax/net/ssl/SSLSocket;
+    iget-object v0, p0, Lvb/a$a;->g:Ljavax/net/ssl/SSLSocket;
 
     invoke-virtual {v0, p1, p2}, Ljava/net/Socket;->setSoLinger(ZI)V
 
@@ -708,7 +708,7 @@
 
     .line 1
     :try_start_0
-    iget-object v0, p0, Lvb/a$a;->f:Ljavax/net/ssl/SSLSocket;
+    iget-object v0, p0, Lvb/a$a;->g:Ljavax/net/ssl/SSLSocket;
 
     invoke-virtual {v0, p1}, Ljava/net/Socket;->setSoTimeout(I)V
     :try_end_0
@@ -730,7 +730,7 @@
 .method public final setTcpNoDelay(Z)V
     .locals 1
 
-    iget-object v0, p0, Lvb/a$a;->f:Ljavax/net/ssl/SSLSocket;
+    iget-object v0, p0, Lvb/a$a;->g:Ljavax/net/ssl/SSLSocket;
 
     invoke-virtual {v0, p1}, Ljava/net/Socket;->setTcpNoDelay(Z)V
 
@@ -740,7 +740,7 @@
 .method public final setTrafficClass(I)V
     .locals 1
 
-    iget-object v0, p0, Lvb/a$a;->f:Ljavax/net/ssl/SSLSocket;
+    iget-object v0, p0, Lvb/a$a;->g:Ljavax/net/ssl/SSLSocket;
 
     invoke-virtual {v0, p1}, Ljava/net/Socket;->setTrafficClass(I)V
 
@@ -750,7 +750,7 @@
 .method public final setUseClientMode(Z)V
     .locals 1
 
-    iget-object v0, p0, Lvb/a$a;->f:Ljavax/net/ssl/SSLSocket;
+    iget-object v0, p0, Lvb/a$a;->g:Ljavax/net/ssl/SSLSocket;
 
     invoke-virtual {v0, p1}, Ljavax/net/ssl/SSLSocket;->setUseClientMode(Z)V
 
@@ -760,7 +760,7 @@
 .method public final setWantClientAuth(Z)V
     .locals 1
 
-    iget-object v0, p0, Lvb/a$a;->f:Ljavax/net/ssl/SSLSocket;
+    iget-object v0, p0, Lvb/a$a;->g:Ljavax/net/ssl/SSLSocket;
 
     invoke-virtual {v0, p1}, Ljavax/net/ssl/SSLSocket;->setWantClientAuth(Z)V
 
@@ -770,7 +770,7 @@
 .method public final shutdownInput()V
     .locals 1
 
-    iget-object v0, p0, Lvb/a$a;->f:Ljavax/net/ssl/SSLSocket;
+    iget-object v0, p0, Lvb/a$a;->g:Ljavax/net/ssl/SSLSocket;
 
     invoke-virtual {v0}, Ljava/net/Socket;->shutdownInput()V
 
@@ -780,7 +780,7 @@
 .method public final shutdownOutput()V
     .locals 1
 
-    iget-object v0, p0, Lvb/a$a;->f:Ljavax/net/ssl/SSLSocket;
+    iget-object v0, p0, Lvb/a$a;->g:Ljavax/net/ssl/SSLSocket;
 
     invoke-virtual {v0}, Ljava/net/Socket;->shutdownOutput()V
 
@@ -790,7 +790,7 @@
 .method public final startHandshake()V
     .locals 1
 
-    iget-object v0, p0, Lvb/a$a;->f:Ljavax/net/ssl/SSLSocket;
+    iget-object v0, p0, Lvb/a$a;->g:Ljavax/net/ssl/SSLSocket;
 
     invoke-virtual {v0}, Ljavax/net/ssl/SSLSocket;->startHandshake()V
 
@@ -800,7 +800,7 @@
 .method public final toString()Ljava/lang/String;
     .locals 1
 
-    iget-object v0, p0, Lvb/a$a;->f:Ljavax/net/ssl/SSLSocket;
+    iget-object v0, p0, Lvb/a$a;->g:Ljavax/net/ssl/SSLSocket;
 
     invoke-virtual {v0}, Ljavax/net/ssl/SSLSocket;->toString()Ljava/lang/String;
 

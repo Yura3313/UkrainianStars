@@ -7,14 +7,14 @@
 
 
 # instance fields
-.field public final synthetic f:Ljava/lang/String;
+.field public final synthetic g:Ljava/lang/String;
 
 
 # direct methods
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/titan/h;->f:Ljava/lang/String;
+    iput-object p1, p0, Lcom/supercell/titan/h;->g:Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -27,22 +27,22 @@
     .locals 5
 
     .line 1
-    sget-object v0, Lcom/supercell/titan/KeyboardDialog;->o:Lcom/supercell/titan/KeyboardDialog;
+    sget-object v0, Lcom/supercell/titan/KeyboardDialog;->p:Lcom/supercell/titan/KeyboardDialog;
 
     if-eqz v0, :cond_0
 
     .line 2
-    iget-object v0, v0, Lcom/supercell/titan/KeyboardDialog;->i:Lcom/supercell/titan/n;
+    iget-object v0, v0, Lcom/supercell/titan/KeyboardDialog;->j:Lcom/supercell/titan/n;
 
     if-eqz v0, :cond_0
 
     .line 3
-    iget-object v1, p0, Lcom/supercell/titan/h;->f:Ljava/lang/String;
+    iget-object v1, p0, Lcom/supercell/titan/h;->g:Ljava/lang/String;
 
     const/4 v2, 0x1
 
     .line 4
-    iput-boolean v2, v0, Lcom/supercell/titan/n;->f:Z
+    iput-boolean v2, v0, Lcom/supercell/titan/n;->g:Z
 
     .line 5
     invoke-virtual {v0}, Landroid/widget/TextView;->getEditableText()Landroid/text/Editable;
@@ -59,16 +59,16 @@
     invoke-interface {v2, v4, v3, v1}, Landroid/text/Editable;->replace(IILjava/lang/CharSequence;)Landroid/text/Editable;
 
     .line 7
-    iput-boolean v4, v0, Lcom/supercell/titan/n;->f:Z
+    iput-boolean v4, v0, Lcom/supercell/titan/n;->g:Z
 
     goto :goto_0
 
     .line 8
     :cond_0
-    iget-object v0, p0, Lcom/supercell/titan/h;->f:Ljava/lang/String;
+    iget-object v0, p0, Lcom/supercell/titan/h;->g:Ljava/lang/String;
 
     .line 9
-    sput-object v0, Lcom/supercell/titan/KeyboardDialog;->l:Ljava/lang/String;
+    sput-object v0, Lcom/supercell/titan/KeyboardDialog;->m:Ljava/lang/String;
 
     :goto_0
     return-void

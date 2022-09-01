@@ -18,7 +18,7 @@
 
 
 # instance fields
-.field public f:Ljava/util/HashMap;
+.field public g:Ljava/util/HashMap;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/HashMap<",
@@ -47,7 +47,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lla/s;->f:Ljava/util/HashMap;
+    iput-object p1, p0, Lla/s;->g:Ljava/util/HashMap;
 
     return-void
 .end method
@@ -63,7 +63,7 @@
     check-cast p2, Ljava/lang/String;
 
     .line 2
-    iget-object v0, p0, Lla/s;->f:Ljava/util/HashMap;
+    iget-object v0, p0, Lla/s;->g:Ljava/util/HashMap;
 
     invoke-virtual {v0, p1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -72,7 +72,7 @@
     check-cast p1, Ljava/lang/Double;
 
     .line 3
-    iget-object v0, p0, Lla/s;->f:Ljava/util/HashMap;
+    iget-object v0, p0, Lla/s;->g:Ljava/util/HashMap;
 
     invoke-virtual {v0, p2}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 

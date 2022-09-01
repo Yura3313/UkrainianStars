@@ -23,7 +23,7 @@
     return-void
 .end method
 
-.method public synthetic constructor <init>(Lse/e;)V
+.method public synthetic constructor <init>(Lse/f;)V
     .locals 0
 
     invoke-direct {p0}, Lcom/kakao/sdk/common/model/ApiError$Companion;-><init>()V
@@ -47,7 +47,7 @@
 
     const-string v0, "scopes"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     new-instance v0, Lcom/kakao/sdk/common/model/ApiError;
@@ -78,7 +78,7 @@
     move-object v6, p1
 
     .line 5
-    invoke-direct/range {v2 .. v9}, Lcom/kakao/sdk/common/model/ApiErrorResponse;-><init>(ILjava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/util/List;ILse/e;)V
+    invoke-direct/range {v2 .. v9}, Lcom/kakao/sdk/common/model/ApiErrorResponse;-><init>(ILjava/lang/String;Ljava/lang/String;Ljava/util/List;Ljava/util/List;ILse/f;)V
 
     const/16 p1, 0x193
 

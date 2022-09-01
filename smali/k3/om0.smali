@@ -1,56 +1,92 @@
 .class public final Lk3/om0;
-.super Lk3/bl0$j;
+.super Lk3/dl0$j;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
+
+# interfaces
+.implements Ljava/lang/Runnable;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "<V:",
-        "Ljava/lang/Object;",
-        ">",
-        "Lk3/bl0$j<",
-        "TV;>;"
+        "Lk3/dl0$j<",
+        "Ljava/lang/Void;",
+        ">;",
+        "Ljava/lang/Runnable;"
     }
 .end annotation
 
 
+# instance fields
+.field public final n:Ljava/lang/Runnable;
+
+
 # direct methods
-.method public constructor <init>()V
+.method public constructor <init>(Ljava/lang/Runnable;)V
     .locals 0
 
-    invoke-direct {p0}, Lk3/bl0$j;-><init>()V
+    .line 1
+    invoke-direct {p0}, Lk3/dl0$j;-><init>()V
+
+    .line 2
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 3
+    iput-object p1, p0, Lk3/om0;->n:Ljava/lang/Runnable;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final i(Ljava/lang/Object;)Z
-    .locals 0
-    .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
-        .end annotation
-    .end param
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TV;)Z"
-        }
-    .end annotation
+.method public final run()V
+    .locals 2
 
-    invoke-super {p0, p1}, Lk3/bl0;->i(Ljava/lang/Object;)Z
+    .line 1
+    :try_start_0
+    iget-object v0, p0, Lk3/om0;->n:Ljava/lang/Runnable;
 
-    move-result p1
+    invoke-interface {v0}, Ljava/lang/Runnable;->run()V
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    return p1
-.end method
+    return-void
 
-.method public final j(Ljava/lang/Throwable;)Z
-    .locals 0
+    :catchall_0
+    move-exception v0
 
-    invoke-super {p0, p1}, Lk3/bl0;->j(Ljava/lang/Throwable;)Z
+    .line 2
+    invoke-virtual {p0, v0}, Lk3/dl0;->j(Ljava/lang/Throwable;)Z
 
-    move-result p1
+    .line 3
+    sget-object v1, Lk3/ck0;->a:Ljava/lang/Object;
 
-    return p1
+    .line 4
+    instance-of v1, v0, Ljava/lang/RuntimeException;
+
+    if-nez v1, :cond_1
+
+    .line 5
+    instance-of v1, v0, Ljava/lang/Error;
+
+    if-nez v1, :cond_0
+
+    .line 6
+    new-instance v1, Ljava/lang/RuntimeException;
+
+    invoke-direct {v1, v0}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/Throwable;)V
+
+    throw v1
+
+    .line 7
+    :cond_0
+    check-cast v0, Ljava/lang/Error;
+
+    throw v0
+
+    .line 8
+    :cond_1
+    check-cast v0, Ljava/lang/RuntimeException;
+
+    throw v0
 .end method

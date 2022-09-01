@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field public final synthetic f:Lae/z2$a;
+.field public final synthetic g:Lae/z2$a;
 
 
 # direct methods
 .method public constructor <init>(Lae/z2$a;)V
     .locals 0
 
-    iput-object p1, p0, Lae/z2$a$a;->f:Lae/z2$a;
+    iput-object p1, p0, Lae/z2$a$a;->g:Lae/z2$a;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -37,7 +37,7 @@
 .method public final run()V
     .locals 2
 
-    iget-object v0, p0, Lae/z2$a$a;->f:Lae/z2$a;
+    iget-object v0, p0, Lae/z2$a$a;->g:Lae/z2$a;
 
     iget-object v1, v0, Lae/z2$a;->b:Lre/l;
 

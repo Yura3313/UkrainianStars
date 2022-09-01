@@ -7,11 +7,11 @@
 
 
 # instance fields
-.field public g0:Lpa/b;
+.field public h0:Lpa/b;
 
-.field public h0:Landroidx/recyclerview/widget/RecyclerView;
+.field public i0:Landroidx/recyclerview/widget/RecyclerView;
 
-.field public i0:Ljava/util/List;
+.field public j0:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
@@ -21,9 +21,9 @@
     .end annotation
 .end field
 
-.field public j0:Z
+.field public k0:Z
 
-.field public k0:Ljava/lang/String;
+.field public l0:Ljava/lang/String;
 
 
 # direct methods
@@ -36,7 +36,7 @@
     const/4 v0, 0x1
 
     .line 2
-    iput-boolean v0, p0, Lab/d;->j0:Z
+    iput-boolean v0, p0, Lab/d;->k0:Z
 
     return-void
 .end method
@@ -58,7 +58,7 @@
     invoke-super {p0, p1}, Landroidx/fragment/app/Fragment;->V(Landroid/os/Bundle;)V
 
     .line 2
-    iget-object p1, p0, Landroidx/fragment/app/Fragment;->l:Landroid/os/Bundle;
+    iget-object p1, p0, Landroidx/fragment/app/Fragment;->m:Landroid/os/Bundle;
 
     if-eqz p1, :cond_0
 
@@ -69,7 +69,7 @@
 
     move-result-object p1
 
-    iput-object p1, p0, Lab/d;->k0:Ljava/lang/String;
+    iput-object p1, p0, Lab/d;->l0:Ljava/lang/String;
 
     .line 4
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
@@ -85,7 +85,7 @@
 
     move-result-object p1
 
-    iput-object p1, p0, Lab/d;->k0:Ljava/lang/String;
+    iput-object p1, p0, Lab/d;->l0:Ljava/lang/String;
 
     :cond_0
     return-void
@@ -111,12 +111,12 @@
     const/4 v0, 0x0
 
     .line 1
-    iput-object v0, p0, Lab/d;->h0:Landroidx/recyclerview/widget/RecyclerView;
+    iput-object v0, p0, Lab/d;->i0:Landroidx/recyclerview/widget/RecyclerView;
 
     const/4 v0, 0x1
 
     .line 2
-    iput-boolean v0, p0, Landroidx/fragment/app/Fragment;->K:Z
+    iput-boolean v0, p0, Landroidx/fragment/app/Fragment;->L:Z
 
     return-void
 .end method
@@ -127,20 +127,20 @@
     const/4 v0, 0x1
 
     .line 1
-    iput-boolean v0, p0, Landroidx/fragment/app/Fragment;->K:Z
+    iput-boolean v0, p0, Landroidx/fragment/app/Fragment;->L:Z
 
     .line 2
-    iget-object v0, p0, Lab/d;->k0:Ljava/lang/String;
+    iget-object v0, p0, Lab/d;->l0:Ljava/lang/String;
 
     invoke-virtual {p0, v0}, Lab/i;->P0(Ljava/lang/String;)V
 
     .line 3
-    iget-object v0, p0, Lab/d;->i0:Ljava/util/List;
+    iget-object v0, p0, Lab/d;->j0:Ljava/util/List;
 
     if-eqz v0, :cond_0
 
     .line 4
-    iget-object v1, p0, Lab/d;->h0:Landroidx/recyclerview/widget/RecyclerView;
+    iget-object v1, p0, Lab/d;->i0:Landroidx/recyclerview/widget/RecyclerView;
 
     new-instance v2, Lma/a;
 
@@ -159,17 +159,17 @@
     invoke-super {p0}, Lab/i;->i0()V
 
     .line 2
-    iget-boolean v0, p0, Lab/i;->c0:Z
+    iget-boolean v0, p0, Lab/i;->d0:Z
 
     if-nez v0, :cond_0
 
     .line 3
-    iget-boolean v0, p0, Lab/d;->j0:Z
+    iget-boolean v0, p0, Lab/d;->k0:Z
 
     if-eqz v0, :cond_0
 
     .line 4
-    sget-object v0, Lcom/helpshift/util/u;->c:Le7/g;
+    sget-object v0, Lcom/helpshift/util/t;->c:Le7/g;
 
     .line 5
     iget-object v0, v0, Le7/g;->b:Lk7/a;
@@ -183,7 +183,7 @@
     const/4 v0, 0x1
 
     .line 7
-    iput-boolean v0, p0, Lab/d;->j0:Z
+    iput-boolean v0, p0, Lab/d;->k0:Z
 
     return-void
 .end method
@@ -195,17 +195,17 @@
     invoke-super {p0}, Lab/i;->j0()V
 
     .line 2
-    iget-boolean v0, p0, Lab/i;->c0:Z
+    iget-boolean v0, p0, Lab/i;->d0:Z
 
     if-nez v0, :cond_0
 
     .line 3
-    iget-boolean v0, p0, Lab/d;->j0:Z
+    iget-boolean v0, p0, Lab/d;->k0:Z
 
     if-eqz v0, :cond_0
 
     .line 4
-    sget-object v0, Lcom/helpshift/util/u;->c:Le7/g;
+    sget-object v0, Lcom/helpshift/util/t;->c:Le7/g;
 
     .line 5
     iget-object v0, v0, Le7/g;->b:Lk7/a;
@@ -231,7 +231,7 @@
 
     check-cast p2, Landroidx/recyclerview/widget/RecyclerView;
 
-    iput-object p2, p0, Lab/d;->h0:Landroidx/recyclerview/widget/RecyclerView;
+    iput-object p2, p0, Lab/d;->i0:Landroidx/recyclerview/widget/RecyclerView;
 
     .line 2
     new-instance v0, Landroidx/recyclerview/widget/LinearLayoutManager;
@@ -264,7 +264,7 @@
     move-result p1
 
     .line 2
-    iget-object v0, p0, Lab/d;->i0:Ljava/util/List;
+    iget-object v0, p0, Lab/d;->j0:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -275,7 +275,7 @@
     const/4 v0, 0x0
 
     .line 3
-    iput-boolean v0, p0, Lab/d;->j0:Z
+    iput-boolean v0, p0, Lab/d;->k0:Z
 
     .line 4
     instance-of v0, p1, Lza/a;
@@ -287,7 +287,7 @@
 
     check-cast v0, Lza/a;
 
-    iget-object v1, p0, Lab/d;->g0:Lpa/b;
+    iget-object v1, p0, Lab/d;->h0:Lpa/b;
 
     .line 6
     iput-object v1, v0, Lza/a;->a:Lpa/b;
@@ -337,7 +337,7 @@
 
     check-cast v0, Lza/b;
 
-    iget-object v1, p0, Lab/d;->g0:Lpa/b;
+    iget-object v1, p0, Lab/d;->h0:Lpa/b;
 
     .line 15
     iput-object v1, v0, Lza/b;->a:Lpa/b;

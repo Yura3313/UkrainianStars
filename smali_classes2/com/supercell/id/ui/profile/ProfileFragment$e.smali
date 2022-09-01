@@ -42,14 +42,14 @@
     iget-object v0, p0, Lcom/supercell/id/ui/profile/ProfileFragment$e;->b:Lcom/supercell/id/ui/profile/ProfileFragment;
 
     .line 2
-    iput p1, v0, Lcom/supercell/id/ui/profile/ProfileFragment;->l0:I
+    iput p1, v0, Lcom/supercell/id/ui/profile/ProfileFragment;->m0:I
 
     .line 3
     iget-object v0, p0, Lcom/supercell/id/ui/profile/ProfileFragment$e;->a:Landroid/view/View;
 
     const-string v1, "add_friends_button"
 
-    invoke-static {v0, v1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/4 v2, 0x0
 
@@ -58,7 +58,7 @@
     .line 4
     iget-object v0, p0, Lcom/supercell/id/ui/profile/ProfileFragment$e;->a:Landroid/view/View;
 
-    invoke-static {v0, v1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v0, v2}, Landroid/view/View;->setVisibility(I)V
 
@@ -111,7 +111,7 @@
 
     const-string v1, "add_friends_button.anima\u2026          .scaleY(target)"
 
-    invoke-static {v0, v1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 12
     new-instance v1, Lcom/supercell/id/ui/profile/ProfileFragment$e$a;
@@ -124,7 +124,7 @@
 
     const-string v0, "setListener(object : Ani\u2026d = true\n        }\n    })"
 
-    invoke-static {p1, v0}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 13
     invoke-virtual {p1}, Landroid/view/ViewPropertyAnimator;->start()V

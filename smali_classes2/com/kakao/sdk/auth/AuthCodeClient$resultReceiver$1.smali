@@ -124,7 +124,7 @@
     :goto_2
     const-string v1, "uri?.getQueryParameter(C\u2026: Constants.UNKNOWN_ERROR"
 
-    invoke-static {p2, v1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v1}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     if-eqz p1, :cond_4
 
@@ -166,7 +166,7 @@
     move-exception v3
 
     .line 9
-    invoke-static {v3}, Le5/i;->h(Ljava/lang/Throwable;)Ljava/lang/Object;
+    invoke-static {v3}, Lie/f;->a(Ljava/lang/Throwable;)Ljava/lang/Object;
 
     move-result-object v3
 

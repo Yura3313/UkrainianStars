@@ -9,7 +9,7 @@
 
 
 # static fields
-.field public static final f:Lje/n;
+.field public static final g:Lje/n;
 
 
 # direct methods
@@ -20,7 +20,7 @@
 
     invoke-direct {v0}, Lje/n;-><init>()V
 
-    sput-object v0, Lje/n;->f:Lje/n;
+    sput-object v0, Lje/n;->g:Lje/n;
 
     return-void
 .end method
@@ -36,7 +36,7 @@
 .method private final readResolve()Ljava/lang/Object;
     .locals 1
 
-    sget-object v0, Lje/n;->f:Lje/n;
+    sget-object v0, Lje/n;->g:Lje/n;
 
     return-object v0
 .end method
@@ -94,7 +94,7 @@
     const-string v0, "element"
 
     .line 2
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     :cond_0
     return v1
@@ -105,7 +105,7 @@
 
     const-string v0, "elements"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-interface {p1}, Ljava/util/Collection;->isEmpty()Z
 
@@ -159,7 +159,7 @@
 .method public final iterator()Ljava/util/Iterator;
     .locals 1
 
-    sget-object v0, Lje/k;->f:Lje/k;
+    sget-object v0, Lje/k;->g:Lje/k;
 
     return-object v0
 .end method
@@ -211,7 +211,7 @@
 .method public final toArray()[Ljava/lang/Object;
     .locals 1
 
-    invoke-static {p0}, La2/a;->b(Ljava/util/Collection;)[Ljava/lang/Object;
+    invoke-static {p0}, Lid/h;->f(Ljava/util/Collection;)[Ljava/lang/Object;
 
     move-result-object v0
 
@@ -228,7 +228,7 @@
         }
     .end annotation
 
-    invoke-static {p0, p1}, La2/a;->c(Ljava/util/Collection;[Ljava/lang/Object;)[Ljava/lang/Object;
+    invoke-static {p0, p1}, Lid/h;->g(Ljava/util/Collection;[Ljava/lang/Object;)[Ljava/lang/Object;
 
     move-result-object p1
 

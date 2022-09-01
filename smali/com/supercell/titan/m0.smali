@@ -7,18 +7,18 @@
 
 
 # instance fields
-.field public final synthetic f:Z
-
 .field public final synthetic g:Z
+
+.field public final synthetic h:Z
 
 
 # direct methods
 .method public constructor <init>(ZZ)V
     .locals 0
 
-    iput-boolean p1, p0, Lcom/supercell/titan/m0;->f:Z
+    iput-boolean p1, p0, Lcom/supercell/titan/m0;->g:Z
 
-    iput-boolean p2, p0, Lcom/supercell/titan/m0;->g:Z
+    iput-boolean p2, p0, Lcom/supercell/titan/m0;->h:Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -36,12 +36,12 @@
     if-eqz v0, :cond_3
 
     .line 2
-    iget-boolean v1, p0, Lcom/supercell/titan/m0;->f:Z
+    iget-boolean v1, p0, Lcom/supercell/titan/m0;->g:Z
 
-    iget-boolean v2, p0, Lcom/supercell/titan/m0;->g:Z
+    iget-boolean v2, p0, Lcom/supercell/titan/m0;->h:Z
 
     .line 3
-    iget-object v3, v0, Lcom/supercell/titan/KeyboardDialog;->f:Lcom/supercell/titan/GameApp;
+    iget-object v3, v0, Lcom/supercell/titan/KeyboardDialog;->g:Lcom/supercell/titan/GameApp;
 
     const-string v4, "input_method"
 
@@ -57,7 +57,7 @@
 
     .line 4
     :cond_0
-    iget-object v4, v0, Lcom/supercell/titan/KeyboardDialog;->i:Lcom/supercell/titan/n;
+    iget-object v4, v0, Lcom/supercell/titan/KeyboardDialog;->j:Lcom/supercell/titan/n;
 
     if-nez v4, :cond_1
 
@@ -74,7 +74,7 @@
     invoke-virtual {v3, v4, v5}, Landroid/view/inputmethod/InputMethodManager;->hideSoftInputFromWindow(Landroid/os/IBinder;I)Z
 
     .line 6
-    iget-object v3, v0, Lcom/supercell/titan/KeyboardDialog;->i:Lcom/supercell/titan/n;
+    iget-object v3, v0, Lcom/supercell/titan/KeyboardDialog;->j:Lcom/supercell/titan/n;
 
     invoke-virtual {v3}, Landroid/view/View;->clearFocus()V
 
@@ -87,12 +87,12 @@
 
     .line 8
     :cond_2
-    iget-object v1, v0, Lcom/supercell/titan/KeyboardDialog;->f:Lcom/supercell/titan/GameApp;
+    iget-object v1, v0, Lcom/supercell/titan/KeyboardDialog;->g:Lcom/supercell/titan/GameApp;
 
     invoke-virtual {v1}, Lcom/supercell/titan/GameApp;->setSystemUiVisibility()V
 
     .line 9
-    iget-object v1, v0, Lcom/supercell/titan/KeyboardDialog;->f:Lcom/supercell/titan/GameApp;
+    iget-object v1, v0, Lcom/supercell/titan/KeyboardDialog;->g:Lcom/supercell/titan/GameApp;
 
     const-wide/16 v2, 0x7d0
 

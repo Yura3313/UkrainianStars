@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field public final synthetic f:Lcom/supercell/titan/ScInfoBox;
+.field public final synthetic g:Lcom/supercell/titan/ScInfoBox;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lcom/supercell/titan/m;->f:Lcom/supercell/titan/ScInfoBox;
+    iput-object p1, p0, Lcom/supercell/titan/m;->g:Lcom/supercell/titan/ScInfoBox;
 
     return-void
 .end method
@@ -26,7 +26,7 @@
 .method public final run()V
     .locals 2
 
-    iget-object v0, p0, Lcom/supercell/titan/m;->f:Lcom/supercell/titan/ScInfoBox;
+    iget-object v0, p0, Lcom/supercell/titan/m;->g:Lcom/supercell/titan/ScInfoBox;
 
     .line 1
     iget-object v1, v0, Lcom/supercell/titan/ScInfoBox;->d:Landroid/widget/LinearLayout;

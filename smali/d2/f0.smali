@@ -1,244 +1,374 @@
 .class public final Ld2/f0;
-.super Ljava/lang/Object;
+.super Ld2/d;
 .source "com.google.android.gms:play-services-basement@@17.5.0"
-
-# interfaces
-.implements Landroid/os/Handler$Callback;
 
 
 # instance fields
-.field public final synthetic f:Ld2/e0;
+.field public final c:Ljava/util/HashMap;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/HashMap<",
+            "Ld2/d$a;",
+            "Ld2/h0;",
+            ">;"
+        }
+    .end annotation
+
+    .annotation build Ljavax/annotation/concurrent/GuardedBy;
+        value = "connectionStatus"
+    .end annotation
+.end field
+
+.field public final d:Landroid/content/Context;
+
+.field public final e:Lq3/b;
+
+.field public final f:Lk2/a;
+
+.field public final g:J
+
+.field public final h:J
 
 
 # direct methods
-.method public constructor <init>(Ld2/e0;)V
-    .locals 0
+.method public constructor <init>(Landroid/content/Context;)V
+    .locals 2
 
-    iput-object p1, p0, Ld2/f0;->f:Ld2/e0;
+    .line 1
+    invoke-direct {p0}, Ld2/d;-><init>()V
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    .line 2
+    new-instance v0, Ljava/util/HashMap;
+
+    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
+
+    iput-object v0, p0, Ld2/f0;->c:Ljava/util/HashMap;
+
+    .line 3
+    invoke-virtual {p1}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
+
+    move-result-object v0
+
+    iput-object v0, p0, Ld2/f0;->d:Landroid/content/Context;
+
+    .line 4
+    new-instance v0, Lq3/b;
+
+    invoke-virtual {p1}, Landroid/content/Context;->getMainLooper()Landroid/os/Looper;
+
+    move-result-object p1
+
+    new-instance v1, Ld2/g0;
+
+    invoke-direct {v1, p0}, Ld2/g0;-><init>(Ld2/f0;)V
+
+    invoke-direct {v0, p1, v1}, Lq3/b;-><init>(Landroid/os/Looper;Landroid/os/Handler$Callback;)V
+
+    iput-object v0, p0, Ld2/f0;->e:Lq3/b;
+
+    .line 5
+    invoke-static {}, Lk2/a;->b()Lk2/a;
+
+    move-result-object p1
+
+    iput-object p1, p0, Ld2/f0;->f:Lk2/a;
+
+    const-wide/16 v0, 0x1388
+
+    .line 6
+    iput-wide v0, p0, Ld2/f0;->g:J
+
+    const-wide/32 v0, 0x493e0
+
+    .line 7
+    iput-wide v0, p0, Ld2/f0;->h:J
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final handleMessage(Landroid/os/Message;)Z
-    .locals 6
+.method public final c(Ld2/d$a;Landroid/content/ServiceConnection;Ljava/lang/String;)Z
+    .locals 4
 
     .line 1
-    iget v0, p1, Landroid/os/Message;->what:I
+    iget-object v0, p0, Ld2/f0;->c:Ljava/util/HashMap;
 
-    const/4 v1, 0x0
-
-    const/4 v2, 0x1
-
-    if-eqz v0, :cond_4
-
-    if-eq v0, v2, :cond_0
-
-    return v1
-
-    .line 2
-    :cond_0
-    iget-object v0, p0, Ld2/f0;->f:Ld2/e0;
-
-    .line 3
-    iget-object v0, v0, Ld2/e0;->c:Ljava/util/HashMap;
-
-    .line 4
     monitor-enter v0
 
-    .line 5
+    .line 2
     :try_start_0
-    iget-object p1, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
+    iget-object v1, p0, Ld2/f0;->c:Ljava/util/HashMap;
 
-    check-cast p1, Ld2/d$a;
-
-    .line 6
-    iget-object v1, p0, Ld2/f0;->f:Ld2/e0;
-
-    .line 7
-    iget-object v1, v1, Ld2/e0;->c:Ljava/util/HashMap;
-
-    .line 8
     invoke-virtual {v1, p1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v1
 
-    check-cast v1, Ld2/g0;
+    check-cast v1, Ld2/h0;
 
-    if-eqz v1, :cond_3
+    if-nez v1, :cond_0
 
-    .line 9
-    iget v3, v1, Ld2/g0;->b:I
+    .line 3
+    new-instance v1, Ld2/h0;
 
-    const/4 v4, 0x3
+    invoke-direct {v1, p0, p1}, Ld2/h0;-><init>(Ld2/f0;Ld2/d$a;)V
 
-    if-ne v3, v4, :cond_3
+    .line 4
+    iget-object v2, v1, Ld2/h0;->a:Ljava/util/HashMap;
 
-    .line 10
-    invoke-static {p1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+    invoke-virtual {v2, p2, p2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    move-result-object v3
+    .line 5
+    invoke-virtual {v1, p3}, Ld2/h0;->a(Ljava/lang/String;)V
 
-    invoke-virtual {v3}, Ljava/lang/String;->length()I
+    .line 6
+    iget-object p2, p0, Ld2/f0;->c:Ljava/util/HashMap;
 
-    move-result v3
+    invoke-virtual {p2, p1, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    add-int/lit8 v3, v3, 0x2f
+    goto :goto_0
 
-    new-instance v4, Ljava/lang/StringBuilder;
-
-    invoke-direct {v4, v3}, Ljava/lang/StringBuilder;-><init>(I)V
-
-    new-instance v3, Ljava/lang/Exception;
-
-    invoke-direct {v3}, Ljava/lang/Exception;-><init>()V
-
-    .line 11
-    iget-object v3, v1, Ld2/g0;->f:Landroid/content/ComponentName;
-
-    if-nez v3, :cond_1
-
-    .line 12
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    .line 7
+    :cond_0
+    iget-object v2, p0, Ld2/f0;->e:Lq3/b;
 
     const/4 v3, 0x0
 
+    invoke-virtual {v2, v3, p1}, Landroid/os/Handler;->removeMessages(ILjava/lang/Object;)V
+
+    .line 8
+    iget-object v2, v1, Ld2/h0;->a:Ljava/util/HashMap;
+
+    invoke-virtual {v2, p2}, Ljava/util/HashMap;->containsKey(Ljava/lang/Object;)Z
+
+    move-result v2
+
+    if-nez v2, :cond_3
+
+    .line 9
+    iget-object p1, v1, Ld2/h0;->a:Ljava/util/HashMap;
+
+    invoke-virtual {p1, p2, p2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 10
+    iget p1, v1, Ld2/h0;->b:I
+
+    const/4 v2, 0x1
+
+    if-eq p1, v2, :cond_2
+
+    const/4 p2, 0x2
+
+    if-eq p1, p2, :cond_1
+
+    goto :goto_0
+
+    .line 11
     :cond_1
-    if-nez v3, :cond_2
+    invoke-virtual {v1, p3}, Ld2/h0;->a(Ljava/lang/String;)V
+
+    goto :goto_0
+
+    .line 12
+    :cond_2
+    iget-object p1, v1, Ld2/h0;->f:Landroid/content/ComponentName;
 
     .line 13
-    new-instance v3, Landroid/content/ComponentName;
+    iget-object p3, v1, Ld2/h0;->d:Landroid/os/IBinder;
 
     .line 14
-    iget-object p1, p1, Ld2/d$a;->b:Ljava/lang/String;
+    check-cast p2, Lcom/google/android/gms/common/internal/BaseGmsClient$i;
+
+    invoke-virtual {p2, p1, p3}, Lcom/google/android/gms/common/internal/BaseGmsClient$i;->onServiceConnected(Landroid/content/ComponentName;Landroid/os/IBinder;)V
 
     .line 15
-    invoke-static {p1}, Ld2/h;->h(Ljava/lang/Object;)Ljava/lang/Object;
-
-    const-string v4, "unknown"
-
-    invoke-direct {v3, p1, v4}, Landroid/content/ComponentName;-><init>(Ljava/lang/String;Ljava/lang/String;)V
+    :goto_0
+    iget-boolean p1, v1, Ld2/h0;->c:Z
 
     .line 16
-    :cond_2
-    invoke-virtual {v1, v3}, Ld2/g0;->onServiceDisconnected(Landroid/content/ComponentName;)V
+    monitor-exit v0
+
+    return p1
 
     .line 17
     :cond_3
-    monitor-exit v0
+    new-instance p2, Ljava/lang/IllegalStateException;
 
-    return v2
+    invoke-static {p1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Ljava/lang/String;->length()I
+
+    move-result p3
+
+    add-int/lit8 p3, p3, 0x51
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1, p3}, Ljava/lang/StringBuilder;-><init>(I)V
+
+    const-string p3, "Trying to bind a GmsServiceConnection that was already connected before.  config="
+
+    invoke-virtual {v1, p3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-direct {p2, p1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    throw p2
 
     :catchall_0
     move-exception p1
 
+    .line 18
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     throw p1
+.end method
 
-    .line 18
-    :cond_4
-    iget-object v0, p0, Ld2/f0;->f:Ld2/e0;
+.method public final d(Ld2/d$a;Landroid/content/ServiceConnection;)V
+    .locals 3
 
-    .line 19
-    iget-object v0, v0, Ld2/e0;->c:Ljava/util/HashMap;
+    .line 1
+    iget-object v0, p0, Ld2/f0;->c:Ljava/util/HashMap;
 
-    .line 20
     monitor-enter v0
 
-    .line 21
-    :try_start_1
-    iget-object p1, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
+    .line 2
+    :try_start_0
+    iget-object v1, p0, Ld2/f0;->c:Ljava/util/HashMap;
 
-    check-cast p1, Ld2/d$a;
+    invoke-virtual {v1, p1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 22
-    iget-object v3, p0, Ld2/f0;->f:Ld2/e0;
+    move-result-object v1
 
-    .line 23
-    iget-object v3, v3, Ld2/e0;->c:Ljava/util/HashMap;
+    check-cast v1, Ld2/h0;
 
-    .line 24
-    invoke-virtual {v3, p1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    if-eqz v1, :cond_2
 
-    move-result-object v3
+    .line 3
+    iget-object v2, v1, Ld2/h0;->a:Ljava/util/HashMap;
 
-    check-cast v3, Ld2/g0;
+    invoke-virtual {v2, p2}, Ljava/util/HashMap;->containsKey(Ljava/lang/Object;)Z
 
-    if-eqz v3, :cond_6
+    move-result v2
 
-    .line 25
-    iget-object v4, v3, Ld2/g0;->a:Ljava/util/HashMap;
+    if-eqz v2, :cond_1
 
-    invoke-virtual {v4}, Ljava/util/HashMap;->isEmpty()Z
+    .line 4
+    iget-object v2, v1, Ld2/h0;->a:Ljava/util/HashMap;
 
-    move-result v4
+    invoke-virtual {v2, p2}, Ljava/util/HashMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
-    if-eqz v4, :cond_6
+    .line 5
+    iget-object p2, v1, Ld2/h0;->a:Ljava/util/HashMap;
 
-    .line 26
-    iget-boolean v4, v3, Ld2/g0;->c:Z
+    invoke-virtual {p2}, Ljava/util/HashMap;->isEmpty()Z
 
-    if-eqz v4, :cond_5
+    move-result p2
 
-    .line 27
-    iget-object v4, v3, Ld2/g0;->g:Ld2/e0;
+    if-eqz p2, :cond_0
 
-    .line 28
-    iget-object v4, v4, Ld2/e0;->e:Lq3/b;
+    .line 6
+    iget-object p2, p0, Ld2/f0;->e:Lq3/b;
 
-    .line 29
-    iget-object v5, v3, Ld2/g0;->e:Ld2/d$a;
+    const/4 v1, 0x0
 
-    invoke-virtual {v4, v2, v5}, Landroid/os/Handler;->removeMessages(ILjava/lang/Object;)V
+    invoke-virtual {p2, v1, p1}, Landroid/os/Handler;->obtainMessage(ILjava/lang/Object;)Landroid/os/Message;
 
-    .line 30
-    iget-object v4, v3, Ld2/g0;->g:Ld2/e0;
+    move-result-object p1
 
-    .line 31
-    iget-object v5, v4, Ld2/e0;->f:Lk2/a;
+    .line 7
+    iget-object p2, p0, Ld2/f0;->e:Lq3/b;
 
-    .line 32
-    iget-object v4, v4, Ld2/e0;->d:Landroid/content/Context;
+    iget-wide v1, p0, Ld2/f0;->g:J
 
-    .line 33
-    invoke-virtual {v5, v4, v3}, Lk2/a;->c(Landroid/content/Context;Landroid/content/ServiceConnection;)V
+    invoke-virtual {p2, p1, v1, v2}, Landroid/os/Handler;->sendMessageDelayed(Landroid/os/Message;J)Z
 
-    .line 34
-    iput-boolean v1, v3, Ld2/g0;->c:Z
-
-    const/4 v1, 0x2
-
-    .line 35
-    iput v1, v3, Ld2/g0;->b:I
-
-    .line 36
-    :cond_5
-    iget-object v1, p0, Ld2/f0;->f:Ld2/e0;
-
-    .line 37
-    iget-object v1, v1, Ld2/e0;->c:Ljava/util/HashMap;
-
-    .line 38
-    invoke-virtual {v1, p1}, Ljava/util/HashMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 39
-    :cond_6
+    .line 8
+    :cond_0
     monitor-exit v0
 
-    return v2
+    return-void
 
-    :catchall_1
+    .line 9
+    :cond_1
+    new-instance p2, Ljava/lang/IllegalStateException;
+
+    invoke-static {p1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Ljava/lang/String;->length()I
+
+    move-result v1
+
+    add-int/lit8 v1, v1, 0x4c
+
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2, v1}, Ljava/lang/StringBuilder;-><init>(I)V
+
+    const-string v1, "Trying to unbind a GmsServiceConnection  that was not bound before.  config="
+
+    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-direct {p2, p1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    throw p2
+
+    .line 10
+    :cond_2
+    new-instance p2, Ljava/lang/IllegalStateException;
+
+    invoke-static {p1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Ljava/lang/String;->length()I
+
+    move-result v1
+
+    add-int/lit8 v1, v1, 0x32
+
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2, v1}, Ljava/lang/StringBuilder;-><init>(I)V
+
+    const-string v1, "Nonexistent connection status for service config: "
+
+    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-direct {p2, p1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    throw p2
+
+    :catchall_0
     move-exception p1
 
+    .line 11
     monitor-exit v0
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_1
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     throw p1
 .end method

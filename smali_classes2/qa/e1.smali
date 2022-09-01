@@ -9,15 +9,15 @@
 
 
 # instance fields
-.field public i0:Lf9/t0;
+.field public j0:Lf9/t0;
 
-.field public j0:Lqa/g1;
+.field public k0:Lqa/g1;
 
-.field public k0:Lcom/google/android/material/textfield/TextInputEditText;
+.field public l0:Lcom/google/android/material/textfield/TextInputEditText;
 
-.field public l0:Lu8/a;
+.field public m0:Lu8/a;
 
-.field public m0:Z
+.field public n0:Z
 
 
 # direct methods
@@ -46,7 +46,7 @@
 .method public final U0()Lib/a;
     .locals 1
 
-    sget-object v0, Lib/a;->f:Lib/a;
+    sget-object v0, Lib/a;->g:Lib/a;
 
     return-object v0
 .end method
@@ -79,7 +79,7 @@
     invoke-virtual {p1, v0, v1}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
 
     .line 4
-    iget-object v0, p0, Landroidx/fragment/app/Fragment;->A:Landroidx/fragment/app/Fragment;
+    iget-object v0, p0, Landroidx/fragment/app/Fragment;->B:Landroidx/fragment/app/Fragment;
 
     .line 5
     check-cast v0, Lab/p;
@@ -171,15 +171,15 @@
 
     .line 1
     :cond_0
-    iget-object p1, p0, Lqa/e1;->i0:Lf9/t0;
+    iget-object p1, p0, Lqa/e1;->j0:Lf9/t0;
 
     if-nez p1, :cond_1
 
     .line 2
-    iput-object v0, p0, Lqa/e1;->l0:Lu8/a;
+    iput-object v0, p0, Lqa/e1;->m0:Lu8/a;
 
     .line 3
-    iput-boolean v1, p0, Lqa/e1;->m0:Z
+    iput-boolean v1, p0, Lqa/e1;->n0:Z
 
     goto :goto_0
 
@@ -192,15 +192,15 @@
 
     .line 5
     :cond_2
-    iget-object p1, p0, Lqa/e1;->i0:Lf9/t0;
+    iget-object p1, p0, Lqa/e1;->j0:Lf9/t0;
 
     if-nez p1, :cond_3
 
     .line 6
-    iput-object p2, p0, Lqa/e1;->l0:Lu8/a;
+    iput-object p2, p0, Lqa/e1;->m0:Lu8/a;
 
     .line 7
-    iput-boolean v1, p0, Lqa/e1;->m0:Z
+    iput-boolean v1, p0, Lqa/e1;->n0:Z
 
     goto :goto_1
 
@@ -220,13 +220,13 @@
     .locals 4
 
     .line 1
-    iget-object v0, p0, Landroidx/fragment/app/Fragment;->A:Landroidx/fragment/app/Fragment;
+    iget-object v0, p0, Landroidx/fragment/app/Fragment;->B:Landroidx/fragment/app/Fragment;
 
     .line 2
     check-cast v0, Lab/p;
 
     .line 3
-    iget-object v1, v0, Lab/p;->C0:Ljava/lang/ref/WeakReference;
+    iget-object v1, v0, Lab/p;->D0:Ljava/lang/ref/WeakReference;
 
     const/4 v2, 0x0
 
@@ -240,13 +240,13 @@
     if-ne v1, p0, :cond_0
 
     .line 5
-    iput-object v2, v0, Lab/p;->C0:Ljava/lang/ref/WeakReference;
+    iput-object v2, v0, Lab/p;->D0:Ljava/lang/ref/WeakReference;
 
     .line 6
     :cond_0
-    iget-object v0, p0, Lqa/e1;->i0:Lf9/t0;
+    iget-object v0, p0, Lqa/e1;->j0:Lf9/t0;
 
-    iget-object v1, p0, Lqa/e1;->j0:Lqa/g1;
+    iget-object v1, p0, Lqa/e1;->k0:Lqa/g1;
 
     .line 7
     iget-object v3, v0, Lf9/t0;->m:Ljava/lang/ref/WeakReference;
@@ -300,7 +300,7 @@
 
     .line 16
     :cond_2
-    iget-object v0, p0, Lqa/e1;->i0:Lf9/t0;
+    iget-object v0, p0, Lqa/e1;->j0:Lf9/t0;
 
     const/4 v1, -0x1
 
@@ -323,7 +323,7 @@
     .locals 3
 
     .line 1
-    iget-object v0, p0, Lqa/e1;->i0:Lf9/t0;
+    iget-object v0, p0, Lqa/e1;->j0:Lf9/t0;
 
     .line 2
     iget-object v1, v0, Lf9/t0;->e:Lqb/n;
@@ -383,9 +383,9 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lqa/e1;->k0:Lcom/google/android/material/textfield/TextInputEditText;
+    iget-object v1, p0, Lqa/e1;->l0:Lcom/google/android/material/textfield/TextInputEditText;
 
-    invoke-static {v0, v1}, Lbc/a;->b(Landroid/content/Context;Landroid/view/View;)V
+    invoke-static {v0, v1}, Ll2/g;->a(Landroid/content/Context;Landroid/view/View;)V
 
     return-void
 .end method
@@ -394,9 +394,9 @@
     .locals 3
 
     .line 1
-    iget-object v0, p0, Lqa/e1;->j0:Lqa/g1;
+    iget-object v0, p0, Lqa/e1;->k0:Lqa/g1;
 
-    iget-object v1, p0, Lqa/e1;->i0:Lf9/t0;
+    iget-object v1, p0, Lqa/e1;->j0:Lf9/t0;
 
     .line 2
     iget-object v1, v1, Lf9/t0;->j:Lqb/g;
@@ -405,7 +405,7 @@
     iget-boolean v1, v1, Lqb/a;->d:Z
 
     .line 4
-    sget-object v2, Lab/f;->f:Lab/f;
+    sget-object v2, Lab/f;->g:Lab/f;
 
     .line 5
     iget-object v0, v0, Lqa/g1;->p:Lab/h;
@@ -419,9 +419,9 @@
 
     .line 7
     :cond_0
-    iget-object v0, p0, Lqa/e1;->j0:Lqa/g1;
+    iget-object v0, p0, Lqa/e1;->k0:Lqa/g1;
 
-    iget-object v1, p0, Lqa/e1;->i0:Lf9/t0;
+    iget-object v1, p0, Lqa/e1;->j0:Lf9/t0;
 
     .line 8
     iget-object v1, v1, Lf9/t0;->k:Lqb/g;
@@ -430,7 +430,7 @@
     iget-boolean v1, v1, Lqb/a;->d:Z
 
     .line 10
-    sget-object v2, Lab/f;->g:Lab/f;
+    sget-object v2, Lab/f;->h:Lab/f;
 
     .line 11
     iget-object v0, v0, Lqa/g1;->p:Lab/h;
@@ -453,13 +453,13 @@
     invoke-super {p0}, Lqa/b;->g0()V
 
     .line 2
-    sget-object v0, Lcom/helpshift/util/u;->c:Le7/g;
+    sget-object v0, Lcom/helpshift/util/t;->c:Le7/g;
 
     .line 3
     iget-object v0, v0, Le7/g;->f:La8/f;
 
     .line 4
-    iget-object v1, p0, Lqa/e1;->i0:Lf9/t0;
+    iget-object v1, p0, Lqa/e1;->j0:Lf9/t0;
 
     .line 5
     iget-object v1, v1, Lf9/t0;->e:Lqb/n;
@@ -472,7 +472,7 @@
     invoke-virtual {v1, v0, v2}, Lqb/c;->c(La8/f;Lqb/d;)V
 
     .line 7
-    iget-object v1, p0, Lqa/e1;->i0:Lf9/t0;
+    iget-object v1, p0, Lqa/e1;->j0:Lf9/t0;
 
     .line 8
     iget-object v1, v1, Lf9/t0;->i:Lqb/g;
@@ -485,7 +485,7 @@
     invoke-virtual {v1, v0, v2}, Lqb/c;->c(La8/f;Lqb/d;)V
 
     .line 10
-    iget-object v1, p0, Lqa/e1;->i0:Lf9/t0;
+    iget-object v1, p0, Lqa/e1;->j0:Lf9/t0;
 
     .line 11
     iget-object v1, v1, Lf9/t0;->j:Lqb/g;
@@ -498,7 +498,7 @@
     invoke-virtual {v1, v0, v2}, Lqb/c;->c(La8/f;Lqb/d;)V
 
     .line 13
-    iget-object v1, p0, Lqa/e1;->i0:Lf9/t0;
+    iget-object v1, p0, Lqa/e1;->j0:Lf9/t0;
 
     .line 14
     iget-object v1, v1, Lf9/t0;->k:Lqb/g;
@@ -511,7 +511,7 @@
     invoke-virtual {v1, v0, v2}, Lqb/c;->c(La8/f;Lqb/d;)V
 
     .line 16
-    iget-object v1, p0, Lqa/e1;->i0:Lf9/t0;
+    iget-object v1, p0, Lqa/e1;->j0:Lf9/t0;
 
     .line 17
     iget-object v1, v1, Lf9/t0;->h:Lqb/j;
@@ -524,7 +524,7 @@
     invoke-virtual {v1, v0, v2}, Lqb/c;->c(La8/f;Lqb/d;)V
 
     .line 19
-    iget-object v1, p0, Lqa/e1;->i0:Lf9/t0;
+    iget-object v1, p0, Lqa/e1;->j0:Lf9/t0;
 
     .line 20
     iget-object v1, v1, Lf9/t0;->f:Lqb/n;
@@ -537,7 +537,7 @@
     invoke-virtual {v1, v0, v2}, Lqb/c;->c(La8/f;Lqb/d;)V
 
     .line 22
-    iget-object v1, p0, Lqa/e1;->i0:Lf9/t0;
+    iget-object v1, p0, Lqa/e1;->j0:Lf9/t0;
 
     .line 23
     iget-object v1, v1, Lf9/t0;->g:Lqb/n;
@@ -550,7 +550,7 @@
     invoke-virtual {v1, v0, v2}, Lqb/c;->c(La8/f;Lqb/d;)V
 
     .line 25
-    iget-object v1, p0, Lqa/e1;->i0:Lf9/t0;
+    iget-object v1, p0, Lqa/e1;->j0:Lf9/t0;
 
     .line 26
     iget-object v1, v1, Lf9/t0;->l:Lqb/g;
@@ -563,12 +563,12 @@
     invoke-virtual {v1, v0, v2}, Lqb/c;->c(La8/f;Lqb/d;)V
 
     .line 28
-    iget-boolean v0, p0, Lab/i;->c0:Z
+    iget-boolean v0, p0, Lab/i;->d0:Z
 
     if-nez v0, :cond_0
 
     .line 29
-    sget-object v0, Lcom/helpshift/util/u;->c:Le7/g;
+    sget-object v0, Lcom/helpshift/util/t;->c:Le7/g;
 
     .line 30
     iget-object v0, v0, Le7/g;->b:Lk7/a;
@@ -580,7 +580,7 @@
 
     .line 32
     :cond_0
-    iget-object v0, p0, Lqa/e1;->k0:Lcom/google/android/material/textfield/TextInputEditText;
+    iget-object v0, p0, Lqa/e1;->l0:Lcom/google/android/material/textfield/TextInputEditText;
 
     invoke-virtual {v0}, Landroid/view/View;->requestFocus()Z
 
@@ -589,12 +589,12 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lqa/e1;->k0:Lcom/google/android/material/textfield/TextInputEditText;
+    iget-object v1, p0, Lqa/e1;->l0:Lcom/google/android/material/textfield/TextInputEditText;
 
-    invoke-static {v0, v1}, Lbc/a;->f(Landroid/content/Context;Landroid/view/View;)V
+    invoke-static {v0, v1}, Ll2/g;->b(Landroid/content/Context;Landroid/view/View;)V
 
     .line 34
-    iget-object v0, p0, Lqa/e1;->i0:Lf9/t0;
+    iget-object v0, p0, Lqa/e1;->j0:Lf9/t0;
 
     const/4 v1, 0x1
 
@@ -617,12 +617,12 @@
     invoke-super {p0}, Lqa/b;->i0()V
 
     .line 2
-    iget-boolean v0, p0, Lab/i;->c0:Z
+    iget-boolean v0, p0, Lab/i;->d0:Z
 
     if-nez v0, :cond_0
 
     .line 3
-    sget-object v0, Lcom/helpshift/util/u;->c:Le7/g;
+    sget-object v0, Lcom/helpshift/util/t;->c:Le7/g;
 
     .line 4
     invoke-virtual {v0}, Le7/g;->e()Lt8/b;
@@ -679,7 +679,7 @@
 
     check-cast v4, Lcom/google/android/material/textfield/TextInputEditText;
 
-    iput-object v4, v14, Lqa/e1;->k0:Lcom/google/android/material/textfield/TextInputEditText;
+    iput-object v4, v14, Lqa/e1;->l0:Lcom/google/android/material/textfield/TextInputEditText;
 
     .line 5
     sget v4, Lcom/helpshift/R$id;->hs__usernameWrapper:I
@@ -834,12 +834,12 @@
 
     move-object/from16 p2, v2
 
-    iget-object v2, v14, Lqa/e1;->k0:Lcom/google/android/material/textfield/TextInputEditText;
+    iget-object v2, v14, Lqa/e1;->l0:Lcom/google/android/material/textfield/TextInputEditText;
 
     move-object v3, v2
 
     .line 22
-    iget-object v2, v14, Landroidx/fragment/app/Fragment;->M:Landroid/view/View;
+    iget-object v2, v14, Landroidx/fragment/app/Fragment;->N:Landroid/view/View;
 
     move-object/from16 v22, v0
 
@@ -848,7 +848,7 @@
     move-object v14, v2
 
     .line 23
-    iget-object v2, v0, Landroidx/fragment/app/Fragment;->A:Landroidx/fragment/app/Fragment;
+    iget-object v2, v0, Landroidx/fragment/app/Fragment;->B:Landroidx/fragment/app/Fragment;
 
     .line 24
     move-object/from16 v16, v2
@@ -868,10 +868,10 @@
 
     move-object/from16 v1, v23
 
-    iput-object v1, v0, Lqa/e1;->j0:Lqa/g1;
+    iput-object v1, v0, Lqa/e1;->k0:Lqa/g1;
 
     .line 26
-    sget-object v2, Lcom/helpshift/util/u;->c:Le7/g;
+    sget-object v2, Lcom/helpshift/util/t;->c:Le7/g;
 
     .line 27
     new-instance v3, Lf9/t0;
@@ -887,22 +887,22 @@
     invoke-direct {v3, v4, v2, v1}, Lf9/t0;-><init>(La8/f;Lt8/b;Lf9/s0;)V
 
     .line 28
-    iput-object v3, v0, Lqa/e1;->i0:Lf9/t0;
+    iput-object v3, v0, Lqa/e1;->j0:Lf9/t0;
 
     .line 29
-    iget-boolean v1, v0, Lqa/e1;->m0:Z
+    iget-boolean v1, v0, Lqa/e1;->n0:Z
 
     if-eqz v1, :cond_0
 
     .line 30
-    iget-object v1, v0, Lqa/e1;->l0:Lu8/a;
+    iget-object v1, v0, Lqa/e1;->m0:Lu8/a;
 
     invoke-virtual {v3, v1}, Lf9/t0;->d(Lu8/a;)V
 
     const/4 v1, 0x0
 
     .line 31
-    iput-boolean v1, v0, Lqa/e1;->m0:Z
+    iput-boolean v1, v0, Lqa/e1;->n0:Z
 
     goto :goto_0
 
@@ -911,7 +911,7 @@
 
     .line 32
     :goto_0
-    iget-object v2, v0, Lqa/e1;->k0:Lcom/google/android/material/textfield/TextInputEditText;
+    iget-object v2, v0, Lqa/e1;->l0:Lcom/google/android/material/textfield/TextInputEditText;
 
     new-instance v3, Lqa/d1;
 
@@ -938,7 +938,7 @@
     invoke-virtual {v7, v2}, Landroid/widget/TextView;->addTextChangedListener(Landroid/text/TextWatcher;)V
 
     .line 35
-    iget-object v2, v0, Landroidx/fragment/app/Fragment;->l:Landroid/os/Bundle;
+    iget-object v2, v0, Landroidx/fragment/app/Fragment;->m:Landroid/os/Bundle;
 
     if-eqz v2, :cond_1
 
@@ -950,7 +950,7 @@
     move-result-object v3
 
     .line 37
-    iget-object v4, v0, Lqa/e1;->i0:Lf9/t0;
+    iget-object v4, v0, Lqa/e1;->j0:Lf9/t0;
 
     .line 38
     iget-object v5, v4, Lf9/t0;->a:La8/f;
@@ -969,7 +969,7 @@
     move-result v2
 
     .line 40
-    iget-object v3, v0, Lqa/e1;->i0:Lf9/t0;
+    iget-object v3, v0, Lqa/e1;->j0:Lf9/t0;
 
     .line 41
     iget-object v4, v3, Lf9/t0;->a:La8/f;
@@ -981,7 +981,7 @@
     invoke-virtual {v4, v5}, La8/f;->i(La8/g;)V
 
     .line 42
-    iget-object v2, v0, Landroidx/fragment/app/Fragment;->l:Landroid/os/Bundle;
+    iget-object v2, v0, Landroidx/fragment/app/Fragment;->m:Landroid/os/Bundle;
 
     const-string v3, "search_performed"
 
@@ -991,7 +991,7 @@
     move-result v1
 
     .line 44
-    iget-object v2, v0, Lqa/e1;->i0:Lf9/t0;
+    iget-object v2, v0, Lqa/e1;->j0:Lf9/t0;
 
     .line 45
     iget-object v3, v2, Lf9/t0;->a:La8/f;
@@ -1004,7 +1004,7 @@
 
     .line 46
     :cond_1
-    iget-object v1, v0, Landroidx/fragment/app/Fragment;->A:Landroidx/fragment/app/Fragment;
+    iget-object v1, v0, Landroidx/fragment/app/Fragment;->B:Landroidx/fragment/app/Fragment;
 
     .line 47
     check-cast v1, Lab/p;
@@ -1017,7 +1017,7 @@
 
     invoke-direct {v2, v0}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
 
-    iput-object v2, v1, Lab/p;->C0:Ljava/lang/ref/WeakReference;
+    iput-object v2, v1, Lab/p;->D0:Ljava/lang/ref/WeakReference;
 
     move-object/from16 v1, p1
 
@@ -1030,7 +1030,7 @@
 
     check-cast v2, Lcom/google/android/material/textfield/TextInputEditText;
 
-    iput-object v2, v0, Lqa/e1;->k0:Lcom/google/android/material/textfield/TextInputEditText;
+    iput-object v2, v0, Lqa/e1;->l0:Lcom/google/android/material/textfield/TextInputEditText;
 
     .line 51
     new-instance v3, Lqa/s0;
@@ -1119,7 +1119,7 @@
     invoke-virtual {p1, v1, v0}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
 
     .line 6
-    iget-object v0, p0, Landroidx/fragment/app/Fragment;->A:Landroidx/fragment/app/Fragment;
+    iget-object v0, p0, Landroidx/fragment/app/Fragment;->B:Landroidx/fragment/app/Fragment;
 
     .line 7
     check-cast v0, Lab/p;
@@ -1131,7 +1131,7 @@
 
     .line 9
     :cond_1
-    iget-object p1, p0, Lqa/e1;->i0:Lf9/t0;
+    iget-object p1, p0, Lqa/e1;->j0:Lf9/t0;
 
     .line 10
     iget-object v1, p1, Lf9/t0;->a:La8/f;

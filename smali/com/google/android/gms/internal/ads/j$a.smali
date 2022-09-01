@@ -17,13 +17,13 @@
 # instance fields
 .field public a:Landroid/content/Context;
 
-.field public b:Lk3/ug0;
+.field public b:Lk3/vg0;
 
 .field public c:Landroid/os/Bundle;
 
 .field public d:Ljava/lang/String;
 
-.field public e:Lk3/rg0;
+.field public e:Lk3/sg0;
 
 
 # direct methods

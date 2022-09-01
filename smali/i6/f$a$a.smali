@@ -18,18 +18,18 @@
 
 
 # instance fields
-.field public final synthetic f:Z
+.field public final synthetic g:Z
 
-.field public final synthetic g:Li6/f$a;
+.field public final synthetic h:Li6/f$a;
 
 
 # direct methods
 .method public constructor <init>(Li6/f$a;Z)V
     .locals 0
 
-    iput-object p1, p0, Li6/f$a$a;->g:Li6/f$a;
+    iput-object p1, p0, Li6/f$a$a;->h:Li6/f$a;
 
-    iput-boolean p2, p0, Li6/f$a$a;->f:Z
+    iput-boolean p2, p0, Li6/f$a$a;->g:Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -42,11 +42,11 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Li6/f$a$a;->g:Li6/f$a;
+    iget-object v0, p0, Li6/f$a$a;->h:Li6/f$a;
 
     iget-object v0, v0, Li6/f$a;->a:Li6/f;
 
-    iget-boolean v1, p0, Li6/f$a$a;->f:Z
+    iget-boolean v1, p0, Li6/f$a$a;->g:Z
 
     .line 2
     iput-boolean v1, v0, Li6/f;->f:Z

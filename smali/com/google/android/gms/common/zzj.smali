@@ -16,15 +16,15 @@
 
 
 # instance fields
-.field public final f:Ljava/lang/String;
-
-.field public final g:Z
+.field public final g:Ljava/lang/String;
 
 .field public final h:Z
 
-.field public final i:Landroid/content/Context;
+.field public final i:Z
 
-.field public final j:Z
+.field public final j:Landroid/content/Context;
+
+.field public final k:Z
 
 
 # direct methods
@@ -47,13 +47,13 @@
     invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lcom/google/android/gms/common/zzj;->f:Ljava/lang/String;
+    iput-object p1, p0, Lcom/google/android/gms/common/zzj;->g:Ljava/lang/String;
 
     .line 3
-    iput-boolean p2, p0, Lcom/google/android/gms/common/zzj;->g:Z
+    iput-boolean p2, p0, Lcom/google/android/gms/common/zzj;->h:Z
 
     .line 4
-    iput-boolean p3, p0, Lcom/google/android/gms/common/zzj;->h:Z
+    iput-boolean p3, p0, Lcom/google/android/gms/common/zzj;->i:Z
 
     .line 5
     invoke-static {p4}, Lcom/google/android/gms/dynamic/IObjectWrapper$Stub;->S0(Landroid/os/IBinder;)Lcom/google/android/gms/dynamic/IObjectWrapper;
@@ -66,10 +66,10 @@
 
     check-cast p1, Landroid/content/Context;
 
-    iput-object p1, p0, Lcom/google/android/gms/common/zzj;->i:Landroid/content/Context;
+    iput-object p1, p0, Lcom/google/android/gms/common/zzj;->j:Landroid/content/Context;
 
     .line 6
-    iput-boolean p5, p0, Lcom/google/android/gms/common/zzj;->j:Z
+    iput-boolean p5, p0, Lcom/google/android/gms/common/zzj;->k:Z
 
     return-void
 .end method
@@ -87,7 +87,7 @@
     move-result v5
 
     .line 2
-    iget-object p2, p0, Lcom/google/android/gms/common/zzj;->f:Ljava/lang/String;
+    iget-object p2, p0, Lcom/google/android/gms/common/zzj;->g:Ljava/lang/String;
 
     const/4 v0, 0x1
 
@@ -97,7 +97,7 @@
     invoke-static {p1, v0, p2, v1}, Le2/b;->m(Landroid/os/Parcel;ILjava/lang/String;Z)V
 
     .line 4
-    iget-boolean p2, p0, Lcom/google/android/gms/common/zzj;->g:Z
+    iget-boolean p2, p0, Lcom/google/android/gms/common/zzj;->h:Z
 
     const/4 v0, 0x2
 
@@ -110,7 +110,7 @@
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 7
-    iget-boolean p2, p0, Lcom/google/android/gms/common/zzj;->h:Z
+    iget-boolean p2, p0, Lcom/google/android/gms/common/zzj;->i:Z
 
     const/4 v0, 0x3
 
@@ -121,7 +121,7 @@
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 10
-    iget-object p2, p0, Lcom/google/android/gms/common/zzj;->i:Landroid/content/Context;
+    iget-object p2, p0, Lcom/google/android/gms/common/zzj;->j:Landroid/content/Context;
 
     .line 11
     new-instance v0, Lcom/google/android/gms/dynamic/ObjectWrapper;
@@ -132,7 +132,7 @@
     invoke-static {p1, v2, v0}, Le2/b;->f(Landroid/os/Parcel;ILandroid/os/IBinder;)V
 
     .line 13
-    iget-boolean v3, p0, Lcom/google/android/gms/common/zzj;->j:Z
+    iget-boolean v3, p0, Lcom/google/android/gms/common/zzj;->k:Z
 
     const/4 v1, 0x5
 

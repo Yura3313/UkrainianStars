@@ -19,9 +19,9 @@
 
 
 # static fields
-.field public static final D:I
+.field public static final E:I
 
-.field public static final E:Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$c;
+.field public static final F:Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$c;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Landroid/util/Property<",
@@ -32,7 +32,7 @@
     .end annotation
 .end field
 
-.field public static final F:Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$d;
+.field public static final G:Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$d;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Landroid/util/Property<",
@@ -45,9 +45,11 @@
 
 
 # instance fields
-.field public final A:Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$f;
+.field public final A:Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$g;
 
-.field public final B:Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$ExtendedFloatingActionButtonBehavior;
+.field public final B:Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$f;
+
+.field public final C:Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$ExtendedFloatingActionButtonBehavior;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Landroidx/coordinatorlayout/widget/CoordinatorLayout$Behavior<",
@@ -57,15 +59,13 @@
     .end annotation
 .end field
 
-.field public C:Z
+.field public D:Z
 
-.field public w:I
-
-.field public final x:Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$e;
+.field public x:I
 
 .field public final y:Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$e;
 
-.field public final z:Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$g;
+.field public final z:Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$e;
 
 
 # direct methods
@@ -75,21 +75,21 @@
     .line 1
     sget v0, Lcom/google/android/material/R$style;->Widget_MaterialComponents_ExtendedFloatingActionButton_Icon:I
 
-    sput v0, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;->D:I
+    sput v0, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;->E:I
 
     .line 2
     new-instance v0, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$c;
 
     invoke-direct {v0}, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$c;-><init>()V
 
-    sput-object v0, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;->E:Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$c;
+    sput-object v0, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;->F:Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$c;
 
     .line 3
     new-instance v0, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$d;
 
     invoke-direct {v0}, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$d;-><init>()V
 
-    sput-object v0, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;->F:Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$d;
+    sput-object v0, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;->G:Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$d;
 
     return-void
 .end method
@@ -115,7 +115,7 @@
     move/from16 v8, p3
 
     .line 2
-    sget v9, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;->D:I
+    sget v9, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;->E:I
 
     move-object/from16 v1, p1
 
@@ -128,7 +128,7 @@
     const/4 v10, 0x0
 
     .line 3
-    iput v10, v0, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;->w:I
+    iput v10, v0, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;->x:I
 
     .line 4
     new-instance v1, Lj1/d;
@@ -140,19 +140,19 @@
 
     invoke-direct {v11, v0, v1}, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$g;-><init>(Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;Lj1/d;)V
 
-    iput-object v11, v0, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;->z:Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$g;
+    iput-object v11, v0, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;->A:Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$g;
 
     .line 6
     new-instance v12, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$f;
 
     invoke-direct {v12, v0, v1}, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$f;-><init>(Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;Lj1/d;)V
 
-    iput-object v12, v0, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;->A:Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$f;
+    iput-object v12, v0, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;->B:Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$f;
 
     const/4 v13, 0x1
 
     .line 7
-    iput-boolean v13, v0, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;->C:Z
+    iput-boolean v13, v0, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;->D:Z
 
     .line 8
     invoke-virtual/range {p0 .. p0}, Landroid/view/View;->getContext()Landroid/content/Context;
@@ -164,7 +164,7 @@
 
     invoke-direct {v1, v14, v7}, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$ExtendedFloatingActionButtonBehavior;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
-    iput-object v1, v0, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;->B:Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$ExtendedFloatingActionButtonBehavior;
+    iput-object v1, v0, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;->C:Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$ExtendedFloatingActionButtonBehavior;
 
     .line 10
     sget-object v3, Lcom/google/android/material/R$styleable;->ExtendedFloatingActionButton:[I
@@ -230,7 +230,7 @@
 
     invoke-direct {v15, v0, v6, v10, v13}, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$e;-><init>(Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;Lj1/d;Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$h;Z)V
 
-    iput-object v15, v0, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;->y:Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$e;
+    iput-object v15, v0, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;->z:Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$e;
 
     .line 22
     new-instance v10, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$e;
@@ -243,7 +243,7 @@
 
     invoke-direct {v10, v0, v6, v13, v7}, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$e;-><init>(Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;Lj1/d;Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$h;Z)V
 
-    iput-object v10, v0, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;->x:Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$e;
+    iput-object v10, v0, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;->y:Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$e;
 
     .line 23
     iput-object v2, v11, Ln4/a;->f:Ld4/g;
@@ -393,7 +393,7 @@
         }
     .end annotation
 
-    iget-object v0, p0, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;->B:Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$ExtendedFloatingActionButtonBehavior;
+    iget-object v0, p0, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;->C:Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$ExtendedFloatingActionButtonBehavior;
 
     return-object v0
 .end method
@@ -435,7 +435,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;->y:Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$e;
+    iget-object v0, p0, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;->z:Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$e;
 
     .line 2
     iget-object v0, v0, Ln4/a;->f:Ld4/g;
@@ -447,7 +447,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;->A:Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$f;
+    iget-object v0, p0, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;->B:Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$f;
 
     .line 2
     iget-object v0, v0, Ln4/a;->f:Ld4/g;
@@ -459,7 +459,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;->z:Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$g;
+    iget-object v0, p0, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;->A:Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$g;
 
     .line 2
     iget-object v0, v0, Ln4/a;->f:Ld4/g;
@@ -471,7 +471,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;->x:Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$e;
+    iget-object v0, p0, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;->y:Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$e;
 
     .line 2
     iget-object v0, v0, Ln4/a;->f:Ld4/g;
@@ -486,7 +486,7 @@
     invoke-super {p0}, Lcom/google/android/material/button/MaterialButton;->onAttachedToWindow()V
 
     .line 2
-    iget-boolean v0, p0, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;->C:Z
+    iget-boolean v0, p0, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;->D:Z
 
     if-eqz v0, :cond_0
 
@@ -509,10 +509,10 @@
     const/4 v0, 0x0
 
     .line 3
-    iput-boolean v0, p0, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;->C:Z
+    iput-boolean v0, p0, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;->D:Z
 
     .line 4
-    iget-object v0, p0, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;->x:Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$e;
+    iget-object v0, p0, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;->y:Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$e;
 
     invoke-virtual {v0}, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$e;->d()V
 
@@ -524,7 +524,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;->y:Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$e;
+    iget-object v0, p0, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;->z:Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$e;
 
     .line 2
     iput-object p1, v0, Ln4/a;->f:Ld4/g;
@@ -552,7 +552,7 @@
     .locals 1
 
     .line 1
-    iget-boolean v0, p0, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;->C:Z
+    iget-boolean v0, p0, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;->D:Z
 
     if-ne v0, p1, :cond_0
 
@@ -562,12 +562,12 @@
     if-eqz p1, :cond_1
 
     .line 2
-    iget-object p1, p0, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;->y:Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$e;
+    iget-object p1, p0, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;->z:Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$e;
 
     goto :goto_0
 
     :cond_1
-    iget-object p1, p0, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;->x:Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$e;
+    iget-object p1, p0, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;->y:Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$e;
 
     .line 3
     :goto_0
@@ -590,7 +590,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;->A:Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$f;
+    iget-object v0, p0, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;->B:Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$f;
 
     .line 2
     iput-object p1, v0, Ln4/a;->f:Ld4/g;
@@ -618,7 +618,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;->z:Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$g;
+    iget-object v0, p0, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;->A:Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$g;
 
     .line 2
     iput-object p1, v0, Ln4/a;->f:Ld4/g;
@@ -646,7 +646,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;->x:Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$e;
+    iget-object v0, p0, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;->y:Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$e;
 
     .line 2
     iput-object p1, v0, Ln4/a;->f:Ld4/g;

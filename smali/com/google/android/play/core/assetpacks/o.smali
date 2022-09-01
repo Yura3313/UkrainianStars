@@ -2,7 +2,7 @@
 .super Ljava/lang/Object;
 
 # interfaces
-.implements Lcom/google/android/play/core/assetpacks/u2;
+.implements Lcom/google/android/play/core/assetpacks/t2;
 
 
 # static fields
@@ -14,7 +14,7 @@
 # instance fields
 .field public final a:Ljava/lang/String;
 
-.field public final b:Lcom/google/android/play/core/assetpacks/s0;
+.field public final b:Lcom/google/android/play/core/assetpacks/r0;
 
 .field public c:La5/l;
     .annotation system Ldalvik/annotation/Signature;
@@ -68,7 +68,7 @@
     return-void
 .end method
 
-.method public constructor <init>(Landroid/content/Context;Lcom/google/android/play/core/assetpacks/s0;)V
+.method public constructor <init>(Landroid/content/Context;Lcom/google/android/play/core/assetpacks/r0;)V
     .locals 8
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -85,7 +85,7 @@
 
     iput-object v0, p0, Lcom/google/android/play/core/assetpacks/o;->a:Ljava/lang/String;
 
-    iput-object p2, p0, Lcom/google/android/play/core/assetpacks/o;->b:Lcom/google/android/play/core/assetpacks/s0;
+    iput-object p2, p0, Lcom/google/android/play/core/assetpacks/o;->b:Lcom/google/android/play/core/assetpacks/r0;
 
     invoke-static {p1}, La5/h0;->a(Landroid/content/Context;)Z
 
@@ -115,7 +115,7 @@
 
     sget-object v7, Lcom/google/android/play/core/assetpacks/o;->g:Landroid/content/Intent;
 
-    sget-object v5, La5/u;->a:La5/u;
+    sget-object v5, Lae/t;->g:Lae/t;
 
     const-string v3, "AssetPackService"
 
@@ -147,7 +147,7 @@
 
     .line 4
     :goto_1
-    sget-object p1, La5/v;->a:La5/v;
+    sget-object p1, Lcom/google/android/play/core/assetpacks/u2;->g:Lcom/google/android/play/core/assetpacks/u2;
 
     const-string v5, "AssetPackService-keepAlive"
 
@@ -342,11 +342,11 @@
     return-void
 
     :cond_0
-    new-instance v0, Lcom/google/android/play/core/assetpacks/p0;
+    new-instance v0, Lcom/google/android/play/core/assetpacks/o0;
 
     const-string v1, "The Play Store app is not installed or is an unofficial version."
 
-    invoke-direct {v0, v1, p1}, Lcom/google/android/play/core/assetpacks/p0;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v0, v1, p1}, Lcom/google/android/play/core/assetpacks/o0;-><init>(Ljava/lang/String;I)V
 
     throw v0
 .end method
@@ -399,11 +399,11 @@
     return-void
 
     :cond_0
-    new-instance p2, Lcom/google/android/play/core/assetpacks/p0;
+    new-instance p2, Lcom/google/android/play/core/assetpacks/o0;
 
     const-string p3, "The Play Store app is not installed or is an unofficial version."
 
-    invoke-direct {p2, p3, p1}, Lcom/google/android/play/core/assetpacks/p0;-><init>(Ljava/lang/String;I)V
+    invoke-direct {p2, p3, p1}, Lcom/google/android/play/core/assetpacks/o0;-><init>(Ljava/lang/String;I)V
 
     throw p2
 .end method
@@ -718,11 +718,11 @@
     return-void
 
     :cond_0
-    new-instance v0, Lcom/google/android/play/core/assetpacks/p0;
+    new-instance v0, Lcom/google/android/play/core/assetpacks/o0;
 
     const-string v1, "The Play Store app is not installed or is an unofficial version."
 
-    invoke-direct {v0, v1, p1}, Lcom/google/android/play/core/assetpacks/p0;-><init>(Ljava/lang/String;I)V
+    invoke-direct {v0, v1, p1}, Lcom/google/android/play/core/assetpacks/o0;-><init>(Ljava/lang/String;I)V
 
     throw v0
 .end method

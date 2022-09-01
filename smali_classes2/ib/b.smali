@@ -38,7 +38,7 @@
     const-string v1, "."
 
     .line 3
-    invoke-static {v0, v1, p0}, Landroid/support/v4/media/f;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, v1, p0}, Landroid/support/v4/media/f;->b(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -55,7 +55,7 @@
     .end annotation
 
     .line 1
-    sget-object v0, Lcom/helpshift/util/u;->b:Landroid/content/Context;
+    sget-object v0, Lcom/helpshift/util/t;->b:Landroid/content/Context;
 
     .line 2
     new-instance v1, Lla/e;
@@ -148,7 +148,7 @@
 
     .line 13
     :cond_0
-    sget-object v2, Lcom/helpshift/util/x;->a:Ljava/util/HashSet;
+    sget-object v2, Lcom/helpshift/util/w;->a:Ljava/util/HashSet;
 
     invoke-static {v5}, Lcom/helpshift/util/b;->b(Ljava/lang/String;)Ljava/lang/String;
 
@@ -161,7 +161,7 @@
     if-eqz v2, :cond_1
 
     .line 14
-    invoke-static {v5, v1}, Lcom/helpshift/util/x;->c(Ljava/lang/String;I)V
+    invoke-static {v5, v1}, Lcom/helpshift/util/w;->c(Ljava/lang/String;I)V
     :try_end_2
     .catch Ljava/lang/NullPointerException; {:try_start_2 .. :try_end_2} :catch_0
     .catchall {:try_start_2 .. :try_end_2} :catchall_2
@@ -193,10 +193,10 @@
 
     .line 15
     :goto_1
-    invoke-static {v3}, Lcom/helpshift/util/w;->b(Ljava/io/Closeable;)V
+    invoke-static {v3}, Lcom/helpshift/util/v;->a(Ljava/io/Closeable;)V
 
     .line 16
-    invoke-static {p0}, Lcom/helpshift/util/w;->b(Ljava/io/Closeable;)V
+    invoke-static {p0}, Lcom/helpshift/util/v;->a(Ljava/io/Closeable;)V
 
     return-object v5
 
@@ -225,15 +225,15 @@
     const-string v4, "NPE"
 
     .line 17
-    invoke-static {v2, v4, v1, v3}, Landroidx/savedstate/d;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v2, v4, v1, v3}, Le5/i;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_2
 
     .line 18
-    invoke-static {v0}, Lcom/helpshift/util/w;->b(Ljava/io/Closeable;)V
+    invoke-static {v0}, Lcom/helpshift/util/v;->a(Ljava/io/Closeable;)V
 
     .line 19
-    invoke-static {p0}, Lcom/helpshift/util/w;->b(Ljava/io/Closeable;)V
+    invoke-static {p0}, Lcom/helpshift/util/v;->a(Ljava/io/Closeable;)V
 
     return-object v3
 
@@ -246,10 +246,10 @@
 
     .line 20
     :goto_3
-    invoke-static {v3}, Lcom/helpshift/util/w;->b(Ljava/io/Closeable;)V
+    invoke-static {v3}, Lcom/helpshift/util/v;->a(Ljava/io/Closeable;)V
 
     .line 21
-    invoke-static {p0}, Lcom/helpshift/util/w;->b(Ljava/io/Closeable;)V
+    invoke-static {p0}, Lcom/helpshift/util/v;->a(Ljava/io/Closeable;)V
 
     .line 22
     goto :goto_5
@@ -285,13 +285,13 @@
     const-string v1, "Can\'t proceed if uri is null"
 
     .line 2
-    invoke-static {p0, v1, v0, v0}, Landroidx/savedstate/d;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {p0, v1, v0, v0}, Le5/i;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
 
     return-void
 
     .line 3
     :cond_0
-    sget-object v1, Lcom/helpshift/util/u;->b:Landroid/content/Context;
+    sget-object v1, Lcom/helpshift/util/t;->b:Landroid/content/Context;
 
     .line 4
     new-instance v3, Lla/e;
@@ -439,7 +439,7 @@
     iput-boolean v6, p0, Lu8/a;->e:Z
 
     .line 22
-    sget-object p0, Lcom/helpshift/util/x;->a:Ljava/util/HashSet;
+    sget-object p0, Lcom/helpshift/util/w;->a:Ljava/util/HashSet;
 
     invoke-static {v7}, Lcom/helpshift/util/b;->b(Ljava/lang/String;)Ljava/lang/String;
 
@@ -528,7 +528,7 @@
 
     .line 30
     :cond_6
-    invoke-static {v7, v9}, Lcom/helpshift/util/x;->c(Ljava/lang/String;I)V
+    invoke-static {v7, v9}, Lcom/helpshift/util/w;->c(Ljava/lang/String;I)V
     :try_end_4
     .catchall {:try_start_4 .. :try_end_4} :catchall_1
 
@@ -563,10 +563,10 @@
 
     .line 33
     :goto_4
-    invoke-static {v0}, Lcom/helpshift/util/w;->b(Ljava/io/Closeable;)V
+    invoke-static {v0}, Lcom/helpshift/util/v;->a(Ljava/io/Closeable;)V
 
     .line 34
-    invoke-static {v8}, Lcom/helpshift/util/w;->b(Ljava/io/Closeable;)V
+    invoke-static {v8}, Lcom/helpshift/util/v;->a(Ljava/io/Closeable;)V
 
     return-void
 
@@ -577,10 +577,10 @@
 
     .line 35
     :goto_5
-    invoke-static {v0}, Lcom/helpshift/util/w;->b(Ljava/io/Closeable;)V
+    invoke-static {v0}, Lcom/helpshift/util/v;->a(Ljava/io/Closeable;)V
 
     .line 36
-    invoke-static {v8}, Lcom/helpshift/util/w;->b(Ljava/io/Closeable;)V
+    invoke-static {v8}, Lcom/helpshift/util/v;->a(Ljava/io/Closeable;)V
 
     .line 37
     goto :goto_7

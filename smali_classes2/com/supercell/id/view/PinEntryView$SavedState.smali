@@ -27,7 +27,7 @@
 
 
 # instance fields
-.field public f:Ljava/lang/String;
+.field public g:Ljava/lang/String;
 
 
 # direct methods
@@ -54,7 +54,7 @@
 
     move-result-object p1
 
-    iput-object p1, p0, Lcom/supercell/id/view/PinEntryView$SavedState;->f:Ljava/lang/String;
+    iput-object p1, p0, Lcom/supercell/id/view/PinEntryView$SavedState;->g:Ljava/lang/String;
 
     return-void
 .end method
@@ -79,7 +79,7 @@
     if-eqz p1, :cond_0
 
     .line 2
-    iget-object p2, p0, Lcom/supercell/id/view/PinEntryView$SavedState;->f:Ljava/lang/String;
+    iget-object p2, p0, Lcom/supercell/id/view/PinEntryView$SavedState;->g:Ljava/lang/String;
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 

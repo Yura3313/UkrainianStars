@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field public final synthetic f:Ld/b;
+.field public final synthetic g:Ld/b;
 
 
 # direct methods
 .method public constructor <init>(Ld/b;)V
     .locals 0
 
-    iput-object p1, p0, Ld/b$a;->f:Ld/b;
+    iput-object p1, p0, Ld/b$a;->g:Ld/b;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -38,14 +38,14 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Ld/b$a;->f:Ld/b;
+    iget-object v0, p0, Ld/b$a;->g:Ld/b;
 
     const/4 v1, 0x1
 
     invoke-virtual {v0, v1}, Ld/b;->a(Z)V
 
     .line 2
-    iget-object v0, p0, Ld/b$a;->f:Ld/b;
+    iget-object v0, p0, Ld/b$a;->g:Ld/b;
 
     invoke-virtual {v0}, Landroid/graphics/drawable/Drawable;->invalidateSelf()V
 

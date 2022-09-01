@@ -1,739 +1,285 @@
 .class public final Lk3/r51;
 .super Ljava/lang/Object;
-.source "com.google.android.gms:play-services-ads-lite@@19.3.0"
+.source "com.google.android.gms:play-services-ads@@19.3.0"
 
 
 # instance fields
-.field public final a:Lcom/google/android/gms/internal/ads/zzamr;
+.field public final a:I
 
-.field public final b:Lcom/google/android/gms/ads/o;
+.field public final b:[B
 
-.field public final c:Lk3/u51;
+.field public final c:Ljava/util/Map;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/Map<",
+            "Ljava/lang/String;",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+.end field
 
-.field public d:Lk3/s41;
+.field public final d:Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/List<",
+            "Lk3/o41;",
+            ">;"
+        }
+    .end annotation
+.end field
 
-.field public e:Lcom/google/android/gms/ads/b;
-
-.field public f:[Lcom/google/android/gms/ads/f;
-
-.field public g:Le1/a;
-
-.field public h:Lcom/google/android/gms/internal/ads/zzwu;
-
-.field public i:Le1/b;
-
-.field public j:Lcom/google/android/gms/ads/p;
-
-.field public k:Ljava/lang/String;
-
-.field public l:Landroid/view/ViewGroup;
-
-.field public m:I
-
-.field public n:Z
-
-.field public o:Lcom/google/android/gms/ads/l;
+.field public final e:Z
 
 
 # direct methods
-.method public constructor <init>(Landroid/view/ViewGroup;Landroid/util/AttributeSet;Z)V
-    .locals 6
-
-    .line 1
-    sget-object v4, Ltd/c;->h:Ltd/c;
-
-    const/4 v5, 0x0
-
-    move-object v0, p0
-
-    move-object v1, p1
-
-    move-object v2, p2
-
-    move v3, p3
-
-    .line 2
-    invoke-direct/range {v0 .. v5}, Lk3/r51;-><init>(Landroid/view/ViewGroup;Landroid/util/AttributeSet;ZLtd/c;I)V
-
-    return-void
-.end method
-
-.method public constructor <init>(Landroid/view/ViewGroup;Landroid/util/AttributeSet;ZLtd/c;I)V
-    .locals 7
-
-    .line 3
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 4
-    new-instance p4, Lcom/google/android/gms/internal/ads/zzamr;
-
-    invoke-direct {p4}, Lcom/google/android/gms/internal/ads/zzamr;-><init>()V
-
-    iput-object p4, p0, Lk3/r51;->a:Lcom/google/android/gms/internal/ads/zzamr;
-
-    .line 5
-    new-instance p4, Lcom/google/android/gms/ads/o;
-
-    invoke-direct {p4}, Lcom/google/android/gms/ads/o;-><init>()V
-
-    iput-object p4, p0, Lk3/r51;->b:Lcom/google/android/gms/ads/o;
-
-    .line 6
-    new-instance p4, Lk3/u51;
-
-    invoke-direct {p4, p0}, Lk3/u51;-><init>(Lk3/r51;)V
-
-    iput-object p4, p0, Lk3/r51;->c:Lk3/u51;
-
-    .line 7
-    iput-object p1, p0, Lk3/r51;->l:Landroid/view/ViewGroup;
-
-    const/4 p4, 0x0
-
-    .line 8
-    iput-object p4, p0, Lk3/r51;->h:Lcom/google/android/gms/internal/ads/zzwu;
-
-    .line 9
-    new-instance p4, Ljava/util/concurrent/atomic/AtomicBoolean;
-
-    const/4 v0, 0x0
-
-    invoke-direct {p4, v0}, Ljava/util/concurrent/atomic/AtomicBoolean;-><init>(Z)V
-
-    .line 10
-    iput p5, p0, Lk3/r51;->m:I
-
-    if-eqz p2, :cond_4
-
-    .line 11
-    invoke-virtual {p1}, Landroid/view/View;->getContext()Landroid/content/Context;
-
-    move-result-object p4
-
-    .line 12
-    :try_start_0
-    new-instance p5, Lcom/google/android/gms/internal/ads/zzvo;
-
-    invoke-direct {p5, p4, p2}, Lcom/google/android/gms/internal/ads/zzvo;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
-
-    const/4 p2, 0x1
-
-    if-nez p3, :cond_1
-
-    .line 13
-    iget-object p3, p5, Lcom/google/android/gms/internal/ads/zzvo;->a:[Lcom/google/android/gms/ads/f;
-
-    array-length p3, p3
-
-    if-ne p3, p2, :cond_0
-
-    goto :goto_0
-
-    .line 14
-    :cond_0
-    new-instance p2, Ljava/lang/IllegalArgumentException;
-
-    const-string p3, "The adSizes XML attribute is only allowed on PublisherAdViews."
-
-    invoke-direct {p2, p3}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
-
-    throw p2
+.method public constructor <init>(I[BLjava/util/Map;Ljava/util/List;Z)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(I[B",
+            "Ljava/util/Map<",
+            "Ljava/lang/String;",
+            "Ljava/lang/String;",
+            ">;",
+            "Ljava/util/List<",
+            "Lk3/o41;",
+            ">;ZJ)V"
+        }
+    .end annotation
 
     .line 15
-    :cond_1
-    :goto_0
-    iget-object p3, p5, Lcom/google/android/gms/internal/ads/zzvo;->a:[Lcom/google/android/gms/ads/f;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 16
-    iput-object p3, p0, Lk3/r51;->f:[Lcom/google/android/gms/ads/f;
+    iput p1, p0, Lk3/r51;->a:I
 
     .line 17
-    iget-object p3, p5, Lcom/google/android/gms/internal/ads/zzvo;->b:Ljava/lang/String;
+    iput-object p2, p0, Lk3/r51;->b:[B
 
     .line 18
-    iput-object p3, p0, Lk3/r51;->k:Ljava/lang/String;
-    :try_end_0
-    .catch Ljava/lang/IllegalArgumentException; {:try_start_0 .. :try_end_0} :catch_0
+    iput-object p3, p0, Lk3/r51;->c:Ljava/util/Map;
 
-    .line 19
-    invoke-virtual {p1}, Landroid/view/View;->isInEditMode()Z
-
-    move-result p3
-
-    if-eqz p3, :cond_4
-
-    .line 20
-    sget-object p3, Lk3/l51;->j:Lk3/l51;
-
-    iget-object v1, p3, Lk3/l51;->a:Lk3/ad;
-
-    .line 21
-    iget-object p3, p0, Lk3/r51;->f:[Lcom/google/android/gms/ads/f;
-
-    aget-object p3, p3, v0
-
-    iget p5, p0, Lk3/r51;->m:I
-
-    .line 22
-    sget-object v2, Lcom/google/android/gms/ads/f;->n:Lcom/google/android/gms/ads/f;
-
-    invoke-virtual {p3, v2}, Lcom/google/android/gms/ads/f;->equals(Ljava/lang/Object;)Z
-
-    move-result v2
-
-    if-eqz v2, :cond_2
-
-    .line 23
-    invoke-static {}, Lcom/google/android/gms/internal/ads/zzvj;->G2()Lcom/google/android/gms/internal/ads/zzvj;
-
-    move-result-object p2
-
-    move-object v3, p2
-
-    goto :goto_1
-
-    .line 24
-    :cond_2
-    new-instance v2, Lcom/google/android/gms/internal/ads/zzvj;
-
-    invoke-direct {v2, p4, p3}, Lcom/google/android/gms/internal/ads/zzvj;-><init>(Landroid/content/Context;Lcom/google/android/gms/ads/f;)V
-
-    if-ne p5, p2, :cond_3
-
-    const/4 v0, 0x1
-
-    .line 25
-    :cond_3
-    iput-boolean v0, v2, Lcom/google/android/gms/internal/ads/zzvj;->o:Z
-
-    move-object v3, v2
-
-    :goto_1
-    const/high16 v5, -0x1000000
-
-    const/4 v6, -0x1
-
-    const-string v4, "Ads by Google"
-
-    move-object v2, p1
-
-    .line 26
-    invoke-virtual/range {v1 .. v6}, Lk3/ad;->c(Landroid/view/ViewGroup;Lcom/google/android/gms/internal/ads/zzvj;Ljava/lang/String;II)V
-
-    goto :goto_2
-
-    :catch_0
-    move-exception p2
-
-    .line 27
-    sget-object p3, Lk3/l51;->j:Lk3/l51;
-
-    iget-object v0, p3, Lk3/l51;->a:Lk3/ad;
-
-    .line 28
-    new-instance v2, Lcom/google/android/gms/internal/ads/zzvj;
-
-    sget-object p3, Lcom/google/android/gms/ads/f;->f:Lcom/google/android/gms/ads/f;
-
-    invoke-direct {v2, p4, p3}, Lcom/google/android/gms/internal/ads/zzvj;-><init>(Landroid/content/Context;Lcom/google/android/gms/ads/f;)V
-
-    .line 29
-    invoke-virtual {p2}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
-
-    move-result-object v3
-
-    .line 30
-    invoke-virtual {p2}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
-
-    const/high16 v4, -0x10000
-
-    const/high16 v5, -0x1000000
-
-    move-object v1, p1
-
-    .line 31
-    invoke-virtual/range {v0 .. v5}, Lk3/ad;->c(Landroid/view/ViewGroup;Lcom/google/android/gms/internal/ads/zzvj;Ljava/lang/String;II)V
-
-    :cond_4
-    :goto_2
-    return-void
-.end method
-
-.method public static h(Landroid/content/Context;[Lcom/google/android/gms/ads/f;I)Lcom/google/android/gms/internal/ads/zzvj;
-    .locals 5
-
-    .line 1
-    array-length v0, p1
-
-    const/4 v1, 0x0
-
-    const/4 v2, 0x0
-
-    :goto_0
-    if-ge v2, v0, :cond_1
-
-    aget-object v3, p1, v2
-
-    .line 2
-    sget-object v4, Lcom/google/android/gms/ads/f;->n:Lcom/google/android/gms/ads/f;
-
-    invoke-virtual {v3, v4}, Lcom/google/android/gms/ads/f;->equals(Ljava/lang/Object;)Z
-
-    move-result v3
-
-    if-eqz v3, :cond_0
-
-    .line 3
-    invoke-static {}, Lcom/google/android/gms/internal/ads/zzvj;->G2()Lcom/google/android/gms/internal/ads/zzvj;
-
-    move-result-object p0
-
-    return-object p0
-
-    :cond_0
-    add-int/lit8 v2, v2, 0x1
-
-    goto :goto_0
-
-    .line 4
-    :cond_1
-    new-instance v0, Lcom/google/android/gms/internal/ads/zzvj;
-
-    invoke-direct {v0, p0, p1}, Lcom/google/android/gms/internal/ads/zzvj;-><init>(Landroid/content/Context;[Lcom/google/android/gms/ads/f;)V
-
-    const/4 p0, 0x1
-
-    if-ne p2, p0, :cond_2
-
-    const/4 v1, 0x1
-
-    .line 5
-    :cond_2
-    iput-boolean v1, v0, Lcom/google/android/gms/internal/ads/zzvj;->o:Z
-
-    return-object v0
-.end method
-
-
-# virtual methods
-.method public final a()Lcom/google/android/gms/ads/f;
-    .locals 4
-
-    .line 1
-    :try_start_0
-    iget-object v0, p0, Lk3/r51;->h:Lcom/google/android/gms/internal/ads/zzwu;
-
-    if-eqz v0, :cond_0
-
-    .line 2
-    invoke-interface {v0}, Lcom/google/android/gms/internal/ads/zzwu;->z2()Lcom/google/android/gms/internal/ads/zzvj;
-
-    move-result-object v0
-
-    if-eqz v0, :cond_0
-
-    .line 3
-    iget v1, v0, Lcom/google/android/gms/internal/ads/zzvj;->j:I
-
-    iget v2, v0, Lcom/google/android/gms/internal/ads/zzvj;->g:I
-
-    iget-object v0, v0, Lcom/google/android/gms/internal/ads/zzvj;->f:Ljava/lang/String;
-
-    .line 4
-    new-instance v3, Lcom/google/android/gms/ads/f;
-
-    invoke-direct {v3, v1, v2, v0}, Lcom/google/android/gms/ads/f;-><init>(IILjava/lang/String;)V
-    :try_end_0
-    .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
-
-    return-object v3
-
-    :catch_0
-    move-exception v0
-
-    const-string v1, "#007 Could not call remote method."
-
-    .line 5
-    invoke-static {v1, v0}, Lk3/j6;->k(Ljava/lang/String;Ljava/lang/Throwable;)V
-
-    .line 6
-    :cond_0
-    iget-object v0, p0, Lk3/r51;->f:[Lcom/google/android/gms/ads/f;
-
-    if-eqz v0, :cond_1
-
-    const/4 v1, 0x0
-
-    aget-object v0, v0, v1
-
-    return-object v0
-
-    :cond_1
-    const/4 v0, 0x0
-
-    return-object v0
-.end method
-
-.method public final b()Ljava/lang/String;
-    .locals 2
-
-    .line 1
-    iget-object v0, p0, Lk3/r51;->k:Ljava/lang/String;
-
-    if-nez v0, :cond_0
-
-    iget-object v0, p0, Lk3/r51;->h:Lcom/google/android/gms/internal/ads/zzwu;
-
-    if-eqz v0, :cond_0
-
-    .line 2
-    :try_start_0
-    invoke-interface {v0}, Lcom/google/android/gms/internal/ads/zzwu;->F6()Ljava/lang/String;
-
-    move-result-object v0
-
-    iput-object v0, p0, Lk3/r51;->k:Ljava/lang/String;
-    :try_end_0
-    .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
-
-    goto :goto_0
-
-    :catch_0
-    move-exception v0
-
-    const-string v1, "#007 Could not call remote method."
-
-    .line 3
-    invoke-static {v1, v0}, Lk3/j6;->k(Ljava/lang/String;Ljava/lang/Throwable;)V
-
-    .line 4
-    :cond_0
-    :goto_0
-    iget-object v0, p0, Lk3/r51;->k:Ljava/lang/String;
-
-    return-object v0
-.end method
-
-.method public final c()Lcom/google/android/gms/ads/n;
-    .locals 3
-
-    const/4 v0, 0x0
-
-    .line 1
-    :try_start_0
-    iget-object v1, p0, Lk3/r51;->h:Lcom/google/android/gms/internal/ads/zzwu;
-
-    if-eqz v1, :cond_0
-
-    .line 2
-    invoke-interface {v1}, Lcom/google/android/gms/internal/ads/zzwu;->c0()Lcom/google/android/gms/internal/ads/zzyf;
-
-    move-result-object v1
-    :try_end_0
-    .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
-
-    goto :goto_1
-
-    :cond_0
-    :goto_0
-    move-object v1, v0
-
-    goto :goto_1
-
-    :catch_0
-    move-exception v1
-
-    const-string v2, "#007 Could not call remote method."
-
-    .line 3
-    invoke-static {v2, v1}, Lk3/j6;->k(Ljava/lang/String;Ljava/lang/Throwable;)V
-
-    goto :goto_0
-
-    :goto_1
-    if-eqz v1, :cond_1
-
-    .line 4
-    new-instance v0, Lcom/google/android/gms/ads/n;
-
-    invoke-direct {v0, v1}, Lcom/google/android/gms/ads/n;-><init>(Lcom/google/android/gms/internal/ads/zzyf;)V
-
-    :cond_1
-    return-object v0
-.end method
-
-.method public final d(Lcom/google/android/gms/ads/b;)V
-    .locals 2
-
-    .line 1
-    iput-object p1, p0, Lk3/r51;->e:Lcom/google/android/gms/ads/b;
-
-    .line 2
-    iget-object v0, p0, Lk3/r51;->c:Lk3/u51;
-
-    .line 3
-    iget-object v1, v0, Lk3/u51;->a:Ljava/lang/Object;
-
-    monitor-enter v1
-
-    .line 4
-    :try_start_0
-    iput-object p1, v0, Lk3/u51;->b:Lcom/google/android/gms/ads/b;
-
-    .line 5
-    monitor-exit v1
-
-    return-void
-
-    :catchall_0
-    move-exception p1
-
-    monitor-exit v1
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    throw p1
-.end method
-
-.method public final e(Ljava/lang/String;)V
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lk3/r51;->k:Ljava/lang/String;
-
-    if-nez v0, :cond_0
-
-    .line 2
-    iput-object p1, p0, Lk3/r51;->k:Ljava/lang/String;
-
-    return-void
-
-    .line 3
-    :cond_0
-    new-instance p1, Ljava/lang/IllegalStateException;
-
-    const-string v0, "The ad unit ID can only be set once on AdView."
-
-    invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
-    throw p1
-.end method
-
-.method public final f(Le1/a;)V
-    .locals 2
-
-    .line 1
-    :try_start_0
-    iput-object p1, p0, Lk3/r51;->g:Le1/a;
-
-    .line 2
-    iget-object v0, p0, Lk3/r51;->h:Lcom/google/android/gms/internal/ads/zzwu;
-
-    if-eqz v0, :cond_1
-
-    if-eqz p1, :cond_0
-
-    .line 3
-    new-instance v1, Lcom/google/android/gms/internal/ads/zzvn;
-
-    invoke-direct {v1, p1}, Lcom/google/android/gms/internal/ads/zzvn;-><init>(Le1/a;)V
-
-    goto :goto_0
-
-    :cond_0
-    const/4 v1, 0x0
-
-    .line 4
-    :goto_0
-    invoke-interface {v0, v1}, Lcom/google/android/gms/internal/ads/zzwu;->W4(Lcom/google/android/gms/internal/ads/zzxc;)V
-    :try_end_0
-    .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
-
-    :cond_1
-    return-void
-
-    :catch_0
-    move-exception p1
-
-    const-string v0, "#007 Could not call remote method."
-
-    .line 5
-    invoke-static {v0, p1}, Lk3/j6;->k(Ljava/lang/String;Ljava/lang/Throwable;)V
-
-    return-void
-.end method
-
-.method public final g(Lcom/google/android/gms/ads/p;)V
-    .locals 2
-
-    .line 1
-    iput-object p1, p0, Lk3/r51;->j:Lcom/google/android/gms/ads/p;
-
-    .line 2
-    :try_start_0
-    iget-object v0, p0, Lk3/r51;->h:Lcom/google/android/gms/internal/ads/zzwu;
-
-    if-eqz v0, :cond_1
-
-    if-nez p1, :cond_0
+    if-nez p4, :cond_0
 
     const/4 p1, 0x0
 
+    .line 19
+    iput-object p1, p0, Lk3/r51;->d:Ljava/util/List;
+
     goto :goto_0
 
-    .line 3
+    .line 20
     :cond_0
-    new-instance v1, Lcom/google/android/gms/internal/ads/zzaac;
+    invoke-static {p4}, Ljava/util/Collections;->unmodifiableList(Ljava/util/List;)Ljava/util/List;
 
-    invoke-direct {v1, p1}, Lcom/google/android/gms/internal/ads/zzaac;-><init>(Lcom/google/android/gms/ads/p;)V
+    move-result-object p1
 
-    move-object p1, v1
+    iput-object p1, p0, Lk3/r51;->d:Ljava/util/List;
 
-    .line 4
+    .line 21
     :goto_0
-    invoke-interface {v0, p1}, Lcom/google/android/gms/internal/ads/zzwu;->E3(Lcom/google/android/gms/internal/ads/zzaac;)V
-    :try_end_0
-    .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
+    iput-boolean p5, p0, Lk3/r51;->e:Z
 
+    return-void
+.end method
+
+.method public constructor <init>(I[BLjava/util/Map;ZJ)V
+    .locals 9
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(I[B",
+            "Ljava/util/Map<",
+            "Ljava/lang/String;",
+            "Ljava/lang/String;",
+            ">;ZJ)V"
+        }
+    .end annotation
+
+    .annotation runtime Ljava/lang/Deprecated;
+    .end annotation
+
+    if-nez p3, :cond_1
+
+    const/4 p5, 0x0
+
+    :cond_0
+    :goto_0
+    move-object v7, p5
+
+    goto :goto_2
+
+    .line 1
     :cond_1
-    return-void
+    invoke-interface {p3}, Ljava/util/Map;->isEmpty()Z
 
-    :catch_0
-    move-exception p1
+    move-result p5
 
-    const-string v0, "#007 Could not call remote method."
+    if-eqz p5, :cond_2
+
+    .line 2
+    invoke-static {}, Ljava/util/Collections;->emptyList()Ljava/util/List;
+
+    move-result-object p5
+
+    goto :goto_0
+
+    .line 3
+    :cond_2
+    new-instance p5, Ljava/util/ArrayList;
+
+    invoke-interface {p3}, Ljava/util/Map;->size()I
+
+    move-result p6
+
+    invoke-direct {p5, p6}, Ljava/util/ArrayList;-><init>(I)V
+
+    .line 4
+    invoke-interface {p3}, Ljava/util/Map;->entrySet()Ljava/util/Set;
+
+    move-result-object p6
+
+    invoke-interface {p6}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
+
+    move-result-object p6
+
+    :goto_1
+    invoke-interface {p6}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    invoke-interface {p6}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Ljava/util/Map$Entry;
 
     .line 5
-    invoke-static {v0, p1}, Lk3/j6;->k(Ljava/lang/String;Ljava/lang/Throwable;)V
+    new-instance v1, Lk3/o41;
+
+    invoke-interface {v0}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Ljava/lang/String;
+
+    invoke-interface {v0}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Ljava/lang/String;
+
+    invoke-direct {v1, v2, v0}, Lk3/o41;-><init>(Ljava/lang/String;Ljava/lang/String;)V
+
+    invoke-virtual {p5, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    goto :goto_1
+
+    :goto_2
+    move-object v3, p0
+
+    move v4, p1
+
+    move-object v5, p2
+
+    move-object v6, p3
+
+    move v8, p4
+
+    .line 6
+    invoke-direct/range {v3 .. v8}, Lk3/r51;-><init>(I[BLjava/util/Map;Ljava/util/List;Z)V
 
     return-void
 .end method
 
-.method public final i(Lk3/s41;)V
-    .locals 2
+.method public constructor <init>(I[BZJLjava/util/List;)V
+    .locals 8
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(I[BZJ",
+            "Ljava/util/List<",
+            "Lk3/o41;",
+            ">;)V"
+        }
+    .end annotation
 
-    .line 1
-    :try_start_0
-    iput-object p1, p0, Lk3/r51;->d:Lk3/s41;
+    if-nez p6, :cond_1
 
-    .line 2
-    iget-object v0, p0, Lk3/r51;->h:Lcom/google/android/gms/internal/ads/zzwu;
-
-    if-eqz v0, :cond_1
-
-    if-eqz p1, :cond_0
-
-    .line 3
-    new-instance v1, Lcom/google/android/gms/internal/ads/zzuv;
-
-    invoke-direct {v1, p1}, Lcom/google/android/gms/internal/ads/zzuv;-><init>(Lk3/s41;)V
-
-    goto :goto_0
+    const/4 p4, 0x0
 
     :cond_0
-    const/4 v1, 0x0
-
-    .line 4
     :goto_0
-    invoke-interface {v0, v1}, Lcom/google/android/gms/internal/ads/zzwu;->Z5(Lcom/google/android/gms/internal/ads/zzwg;)V
-    :try_end_0
-    .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
+    move-object v5, p4
 
+    goto :goto_2
+
+    .line 7
     :cond_1
-    return-void
+    invoke-interface {p6}, Ljava/util/List;->isEmpty()Z
 
-    :catch_0
-    move-exception p1
+    move-result p4
 
-    const-string v0, "#007 Could not call remote method."
+    if-eqz p4, :cond_2
 
-    .line 5
-    invoke-static {v0, p1}, Lk3/j6;->k(Ljava/lang/String;Ljava/lang/Throwable;)V
+    .line 8
+    invoke-static {}, Ljava/util/Collections;->emptyMap()Ljava/util/Map;
 
-    return-void
-.end method
-
-.method public final varargs j([Lcom/google/android/gms/ads/f;)V
-    .locals 3
-
-    .line 1
-    iput-object p1, p0, Lk3/r51;->f:[Lcom/google/android/gms/ads/f;
-
-    .line 2
-    :try_start_0
-    iget-object p1, p0, Lk3/r51;->h:Lcom/google/android/gms/internal/ads/zzwu;
-
-    if-eqz p1, :cond_0
-
-    .line 3
-    iget-object v0, p0, Lk3/r51;->l:Landroid/view/ViewGroup;
-
-    invoke-virtual {v0}, Landroid/view/View;->getContext()Landroid/content/Context;
-
-    move-result-object v0
-
-    iget-object v1, p0, Lk3/r51;->f:[Lcom/google/android/gms/ads/f;
-
-    iget v2, p0, Lk3/r51;->m:I
-
-    invoke-static {v0, v1, v2}, Lk3/r51;->h(Landroid/content/Context;[Lcom/google/android/gms/ads/f;I)Lcom/google/android/gms/internal/ads/zzvj;
-
-    move-result-object v0
-
-    invoke-interface {p1, v0}, Lcom/google/android/gms/internal/ads/zzwu;->S3(Lcom/google/android/gms/internal/ads/zzvj;)V
-    :try_end_0
-    .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
+    move-result-object p4
 
     goto :goto_0
 
-    :catch_0
-    move-exception p1
+    .line 9
+    :cond_2
+    new-instance p4, Ljava/util/TreeMap;
 
-    const-string v0, "#007 Could not call remote method."
+    sget-object p5, Ljava/lang/String;->CASE_INSENSITIVE_ORDER:Ljava/util/Comparator;
 
-    .line 4
-    invoke-static {v0, p1}, Lk3/j6;->k(Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-direct {p4, p5}, Ljava/util/TreeMap;-><init>(Ljava/util/Comparator;)V
 
-    .line 5
-    :cond_0
-    :goto_0
-    iget-object p1, p0, Lk3/r51;->l:Landroid/view/ViewGroup;
+    .line 10
+    invoke-interface {p6}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
-    invoke-virtual {p1}, Landroid/view/View;->requestLayout()V
+    move-result-object p5
 
-    return-void
-.end method
+    :goto_1
+    invoke-interface {p5}, Ljava/util/Iterator;->hasNext()Z
 
-.method public final k()Lcom/google/android/gms/internal/ads/zzyg;
-    .locals 3
+    move-result v0
 
-    .line 1
-    iget-object v0, p0, Lk3/r51;->h:Lcom/google/android/gms/internal/ads/zzwu;
+    if-eqz v0, :cond_0
 
-    const/4 v1, 0x0
-
-    if-nez v0, :cond_0
-
-    return-object v1
-
-    .line 2
-    :cond_0
-    :try_start_0
-    invoke-interface {v0}, Lcom/google/android/gms/internal/ads/zzwu;->getVideoController()Lcom/google/android/gms/internal/ads/zzyg;
+    invoke-interface {p5}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v0
-    :try_end_0
-    .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
-    return-object v0
+    check-cast v0, Lk3/o41;
 
-    :catch_0
-    move-exception v0
+    .line 11
+    iget-object v1, v0, Lk3/o41;->a:Ljava/lang/String;
 
-    const-string v2, "#007 Could not call remote method."
+    .line 12
+    iget-object v0, v0, Lk3/o41;->b:Ljava/lang/String;
 
-    .line 3
-    invoke-static {v2, v0}, Lk3/j6;->k(Ljava/lang/String;Ljava/lang/Throwable;)V
+    .line 13
+    invoke-virtual {p4, v1, v0}, Ljava/util/TreeMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    return-object v1
+    goto :goto_1
+
+    :goto_2
+    move-object v2, p0
+
+    move v3, p1
+
+    move-object v4, p2
+
+    move-object v6, p6
+
+    move v7, p3
+
+    .line 14
+    invoke-direct/range {v2 .. v7}, Lk3/r51;-><init>(I[BLjava/util/Map;Ljava/util/List;Z)V
+
+    return-void
 .end method

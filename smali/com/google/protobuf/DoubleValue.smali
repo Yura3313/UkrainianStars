@@ -156,7 +156,7 @@
     invoke-virtual {v0}, Lcom/google/protobuf/GeneratedMessageLite$a;->d()V
 
     .line 3
-    iget-object v1, v0, Lcom/google/protobuf/GeneratedMessageLite$a;->g:Lcom/google/protobuf/GeneratedMessageLite;
+    iget-object v1, v0, Lcom/google/protobuf/GeneratedMessageLite$a;->h:Lcom/google/protobuf/GeneratedMessageLite;
 
     check-cast v1, Lcom/google/protobuf/DoubleValue;
 

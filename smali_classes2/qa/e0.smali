@@ -306,7 +306,7 @@
     sget-object v3, Landroid/graphics/drawable/GradientDrawable$Orientation;->BOTTOM_TOP:Landroid/graphics/drawable/GradientDrawable$Orientation;
 
     .line 4
-    invoke-static {v0, v2, v3}, Lcom/helpshift/util/g0;->g(Landroid/view/View;ILandroid/graphics/drawable/GradientDrawable$Orientation;)V
+    invoke-static {v0, v2, v3}, Lcom/helpshift/util/e0;->g(Landroid/view/View;ILandroid/graphics/drawable/GradientDrawable$Orientation;)V
 
     .line 5
     invoke-virtual {p0}, Lqa/e0;->v()V
@@ -362,7 +362,7 @@
     sget-object v3, Landroid/graphics/drawable/GradientDrawable$Orientation;->TOP_BOTTOM:Landroid/graphics/drawable/GradientDrawable$Orientation;
 
     .line 4
-    invoke-static {v0, v2, v3}, Lcom/helpshift/util/g0;->g(Landroid/view/View;ILandroid/graphics/drawable/GradientDrawable$Orientation;)V
+    invoke-static {v0, v2, v3}, Lcom/helpshift/util/e0;->g(Landroid/view/View;ILandroid/graphics/drawable/GradientDrawable$Orientation;)V
 
     .line 5
     iget-object v0, p0, Lqa/e0;->A:Landroid/view/View;
@@ -410,7 +410,7 @@
     check-cast v2, Lqa/t;
 
     .line 5
-    iget-object v2, v2, Landroidx/fragment/app/Fragment;->A:Landroidx/fragment/app/Fragment;
+    iget-object v2, v2, Landroidx/fragment/app/Fragment;->B:Landroidx/fragment/app/Fragment;
 
     .line 6
     check-cast v2, Lab/p;
@@ -423,12 +423,12 @@
 
     .line 7
     :cond_0
-    iget-boolean v0, v2, Lab/p;->E0:Z
+    iget-boolean v0, v2, Lab/p;->F0:Z
 
     if-eqz v0, :cond_1
 
     .line 8
-    iget-object v0, v2, Lab/p;->w0:Landroidx/appcompat/widget/Toolbar;
+    iget-object v0, v2, Lab/p;->x0:Landroidx/appcompat/widget/Toolbar;
 
     if-eqz v0, :cond_2
 
@@ -437,10 +437,10 @@
 
     move-result v0
 
-    iput v0, v2, Lab/p;->x0:I
+    iput v0, v2, Lab/p;->y0:I
 
     .line 10
-    iget-object v0, v2, Lab/p;->w0:Landroidx/appcompat/widget/Toolbar;
+    iget-object v0, v2, Lab/p;->x0:Landroidx/appcompat/widget/Toolbar;
 
     invoke-virtual {v0, v3}, Landroid/view/View;->setImportantForAccessibility(I)V
 
@@ -448,7 +448,7 @@
 
     .line 11
     :cond_1
-    iget-object v0, v2, Lab/p;->y0:Landroidx/appcompat/widget/Toolbar;
+    iget-object v0, v2, Lab/p;->z0:Landroidx/appcompat/widget/Toolbar;
 
     if-eqz v0, :cond_2
 
@@ -466,7 +466,7 @@
     if-nez p1, :cond_0
 
     .line 1
-    invoke-static {p2}, Lcom/google/android/play/core/appupdate/g;->b(Ljava/lang/String;)Z
+    invoke-static {p2}, La5/b0;->d(Ljava/lang/String;)Z
 
     move-result p1
 
@@ -521,7 +521,7 @@
 
     iget-object v1, p0, Lqa/e0;->a:Landroid/widget/EditText;
 
-    invoke-static {v0, v1}, Lbc/a;->b(Landroid/content/Context;Landroid/view/View;)V
+    invoke-static {v0, v1}, Ll2/g;->a(Landroid/content/Context;Landroid/view/View;)V
 
     return-void
 .end method
@@ -690,7 +690,7 @@
     nop
 
     .line 2
-    sget-object p1, Lcom/helpshift/util/u;->c:Le7/g;
+    sget-object p1, Lcom/helpshift/util/t;->c:Le7/g;
 
     .line 3
     iget-object p1, p1, Le7/g;->f:La8/f;
@@ -728,7 +728,7 @@
 
     .line 7
     :cond_1
-    sget-object p1, Ld8/d;->f:Ld8/d;
+    sget-object p1, Ld8/d;->g:Ld8/d;
 
     invoke-virtual {p0, p1}, Lqa/e0;->t(Ld8/a;)V
 
@@ -839,7 +839,7 @@
     check-cast v2, Lqa/t;
 
     .line 4
-    iget-object v2, v2, Landroidx/fragment/app/Fragment;->A:Landroidx/fragment/app/Fragment;
+    iget-object v2, v2, Landroidx/fragment/app/Fragment;->B:Landroidx/fragment/app/Fragment;
 
     .line 5
     check-cast v2, Lab/p;
@@ -852,17 +852,17 @@
 
     .line 6
     :cond_0
-    iget-boolean v0, v2, Lab/p;->E0:Z
+    iget-boolean v0, v2, Lab/p;->F0:Z
 
     if-eqz v0, :cond_1
 
     .line 7
-    iget-object v0, v2, Lab/p;->w0:Landroidx/appcompat/widget/Toolbar;
+    iget-object v0, v2, Lab/p;->x0:Landroidx/appcompat/widget/Toolbar;
 
     if-eqz v0, :cond_2
 
     .line 8
-    iget v1, v2, Lab/p;->x0:I
+    iget v1, v2, Lab/p;->y0:I
 
     .line 9
     invoke-virtual {v0, v1}, Landroid/view/View;->setImportantForAccessibility(I)V
@@ -871,7 +871,7 @@
 
     .line 10
     :cond_1
-    iget-object v0, v2, Lab/p;->y0:Landroidx/appcompat/widget/Toolbar;
+    iget-object v0, v2, Lab/p;->z0:Landroidx/appcompat/widget/Toolbar;
 
     if-eqz v0, :cond_2
 
@@ -983,7 +983,7 @@
 
     int-to-float p2, p2
 
-    invoke-static {v3, p2}, Lcom/helpshift/util/g0;->a(Landroid/content/Context;F)F
+    invoke-static {v3, p2}, Lcom/helpshift/util/e0;->a(Landroid/content/Context;F)F
 
     move-result p2
 
@@ -1003,7 +1003,7 @@
 
     const/high16 v1, 0x41400000    # 12.0f
 
-    invoke-static {v0, v1}, Lcom/helpshift/util/g0;->a(Landroid/content/Context;F)F
+    invoke-static {v0, v1}, Lcom/helpshift/util/e0;->a(Landroid/content/Context;F)F
 
     move-result v0
 
@@ -1082,7 +1082,7 @@
 
     sget v6, Lcom/helpshift/R$attr;->hs__errorTextColor:I
 
-    invoke-static {v4, v3, v5, v6}, Lcom/helpshift/util/g0;->f(Landroid/content/Context;Landroid/view/View;II)V
+    invoke-static {v4, v3, v5, v6}, Lcom/helpshift/util/e0;->f(Landroid/content/Context;Landroid/view/View;II)V
 
     const/16 v4, 0x8
 
@@ -1389,7 +1389,7 @@
 
     sget v2, Lcom/helpshift/R$attr;->hs__selectableOptionColor:I
 
-    invoke-static {v0, v1, v2}, Lcom/helpshift/util/g0;->e(Landroid/content/Context;Landroid/graphics/drawable/Drawable;I)V
+    invoke-static {v0, v1, v2}, Lcom/helpshift/util/e0;->e(Landroid/content/Context;Landroid/graphics/drawable/Drawable;I)V
 
     .line 3
     iget-object v0, p0, Lqa/e0;->b:Landroid/view/View;
@@ -1406,7 +1406,7 @@
 
     const v2, 0x1010054
 
-    invoke-static {v0, v1, v2}, Lcom/helpshift/util/g0;->e(Landroid/content/Context;Landroid/graphics/drawable/Drawable;I)V
+    invoke-static {v0, v1, v2}, Lcom/helpshift/util/e0;->e(Landroid/content/Context;Landroid/graphics/drawable/Drawable;I)V
 
     .line 4
     iget-object v0, p0, Lqa/e0;->q:Landroid/widget/LinearLayout;

@@ -28,7 +28,7 @@
     const/4 v1, 0x0
 
     .line 2
-    iput-boolean v1, v0, Lcom/google/crypto/tink/shaded/protobuf/w;->f:Z
+    iput-boolean v1, v0, Lcom/google/crypto/tink/shaded/protobuf/w;->g:Z
 
     return-object p1
 .end method
@@ -67,7 +67,7 @@
     if-nez v0, :cond_2
 
     .line 4
-    iget-boolean v0, p1, Lcom/google/crypto/tink/shaded/protobuf/w;->f:Z
+    iget-boolean v0, p1, Lcom/google/crypto/tink/shaded/protobuf/w;->g:Z
 
     if-nez v0, :cond_1
 
@@ -114,7 +114,7 @@
     .locals 2
 
     .line 1
-    sget-object v0, Lcom/google/crypto/tink/shaded/protobuf/w;->g:Lcom/google/crypto/tink/shaded/protobuf/w;
+    sget-object v0, Lcom/google/crypto/tink/shaded/protobuf/w;->h:Lcom/google/crypto/tink/shaded/protobuf/w;
 
     .line 2
     invoke-virtual {v0}, Ljava/util/AbstractMap;->isEmpty()Z
@@ -226,7 +226,7 @@
     check-cast p1, Lcom/google/crypto/tink/shaded/protobuf/w;
 
     .line 2
-    iget-boolean p1, p1, Lcom/google/crypto/tink/shaded/protobuf/w;->f:Z
+    iget-boolean p1, p1, Lcom/google/crypto/tink/shaded/protobuf/w;->g:Z
 
     xor-int/lit8 p1, p1, 0x1
 

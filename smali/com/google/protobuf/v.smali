@@ -63,7 +63,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    sget v0, Lcom/google/protobuf/l1;->l:I
+    sget v0, Lcom/google/protobuf/l1;->m:I
 
     .line 3
     new-instance v0, Lcom/google/protobuf/k1;
@@ -82,7 +82,7 @@
     .locals 1
 
     .line 5
-    sget p1, Lcom/google/protobuf/l1;->l:I
+    sget p1, Lcom/google/protobuf/l1;->m:I
 
     .line 6
     new-instance p1, Lcom/google/protobuf/k1;
@@ -144,7 +144,7 @@
     move-result p1
 
     .line 2
-    sget-object v0, Lcom/google/protobuf/w1$b;->q:Lcom/google/protobuf/w1$b$b;
+    sget-object v0, Lcom/google/protobuf/w1$b;->r:Lcom/google/protobuf/w1$b$b;
 
     if-ne p0, v0, :cond_0
 
@@ -639,7 +639,7 @@
     return p0
 
     :cond_0
-    iget p0, p0, Lcom/google/protobuf/w1$b;->g:I
+    iget p0, p0, Lcom/google/protobuf/w1$b;->h:I
 
     return p0
 .end method
@@ -670,7 +670,7 @@
 
     move-result-object v1
 
-    sget-object v2, Lcom/google/protobuf/w1$c;->o:Lcom/google/protobuf/w1$c;
+    sget-object v2, Lcom/google/protobuf/w1$c;->p:Lcom/google/protobuf/w1$c;
 
     const/4 v3, 0x1
 
@@ -770,7 +770,7 @@
         }
     .end annotation
 
-    sget-object v0, Lcom/google/protobuf/w1$d;->f:Lcom/google/protobuf/w1$d$a;
+    sget-object v0, Lcom/google/protobuf/w1$d;->g:Lcom/google/protobuf/w1$d$a;
 
     invoke-static {p0, p1, v0}, Lcom/google/protobuf/w1;->a(Lcom/google/protobuf/j;Lcom/google/protobuf/w1$b;Lcom/google/protobuf/w1$d;)Ljava/lang/Object;
 
@@ -788,7 +788,7 @@
     .end annotation
 
     .line 1
-    sget-object v0, Lcom/google/protobuf/w1$b;->q:Lcom/google/protobuf/w1$b$b;
+    sget-object v0, Lcom/google/protobuf/w1$b;->r:Lcom/google/protobuf/w1$b$b;
 
     if-ne p1, v0, :cond_0
 
@@ -1150,7 +1150,7 @@
     check-cast v0, Lcom/google/protobuf/GeneratedMessageLite$c;
 
     .line 2
-    iget-boolean v0, v0, Lcom/google/protobuf/GeneratedMessageLite$c;->i:Z
+    iget-boolean v0, v0, Lcom/google/protobuf/GeneratedMessageLite$c;->j:Z
 
     if-eqz v0, :cond_1
 
@@ -1495,7 +1495,7 @@
 
     move-result-object v2
 
-    sget-object v3, Lcom/google/protobuf/w1$c;->o:Lcom/google/protobuf/w1$c;
+    sget-object v3, Lcom/google/protobuf/w1$c;->p:Lcom/google/protobuf/w1$c;
 
     if-ne v2, v3, :cond_1
 
@@ -2056,7 +2056,7 @@
 
     move-result-object v1
 
-    sget-object v2, Lcom/google/protobuf/w1$c;->o:Lcom/google/protobuf/w1$c;
+    sget-object v2, Lcom/google/protobuf/w1$c;->p:Lcom/google/protobuf/w1$c;
 
     if-ne v1, v2, :cond_5
 
@@ -2236,7 +2236,7 @@
     invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 4
-    iget-object v0, v0, Lcom/google/protobuf/w1$b;->f:Lcom/google/protobuf/w1$c;
+    iget-object v0, v0, Lcom/google/protobuf/w1$b;->g:Lcom/google/protobuf/w1$c;
 
     .line 5
     invoke-virtual {v0}, Ljava/lang/Enum;->ordinal()I
@@ -2363,7 +2363,7 @@
     move-result-object p1
 
     .line 18
-    iget-object p1, p1, Lcom/google/protobuf/w1$b;->f:Lcom/google/protobuf/w1$c;
+    iget-object p1, p1, Lcom/google/protobuf/w1$b;->g:Lcom/google/protobuf/w1$c;
 
     aput-object p1, v3, v1
 

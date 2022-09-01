@@ -16,15 +16,15 @@
 
 
 # instance fields
-.field public final f:I
-
 .field public final g:I
 
-.field public final h:Z
+.field public final h:I
 
 .field public final i:Z
 
 .field public final j:Z
+
+.field public final k:Z
 
 
 # direct methods
@@ -93,19 +93,19 @@
     invoke-static {v0}, Ld2/h;->a(Z)V
 
     .line 4
-    iput p1, p0, Lcom/google/android/gms/games/video/VideoConfiguration;->f:I
+    iput p1, p0, Lcom/google/android/gms/games/video/VideoConfiguration;->g:I
 
     .line 5
-    iput p2, p0, Lcom/google/android/gms/games/video/VideoConfiguration;->g:I
+    iput p2, p0, Lcom/google/android/gms/games/video/VideoConfiguration;->h:I
 
     .line 6
-    iput-boolean p3, p0, Lcom/google/android/gms/games/video/VideoConfiguration;->h:Z
+    iput-boolean p3, p0, Lcom/google/android/gms/games/video/VideoConfiguration;->i:Z
 
     .line 7
-    iput-boolean p4, p0, Lcom/google/android/gms/games/video/VideoConfiguration;->i:Z
+    iput-boolean p4, p0, Lcom/google/android/gms/games/video/VideoConfiguration;->j:Z
 
     .line 8
-    iput-boolean p5, p0, Lcom/google/android/gms/games/video/VideoConfiguration;->j:Z
+    iput-boolean p5, p0, Lcom/google/android/gms/games/video/VideoConfiguration;->k:Z
 
     return-void
 .end method
@@ -123,7 +123,7 @@
     move-result v5
 
     .line 2
-    iget p2, p0, Lcom/google/android/gms/games/video/VideoConfiguration;->f:I
+    iget p2, p0, Lcom/google/android/gms/games/video/VideoConfiguration;->g:I
 
     const/4 v0, 0x1
 
@@ -136,7 +136,7 @@
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 5
-    iget p2, p0, Lcom/google/android/gms/games/video/VideoConfiguration;->g:I
+    iget p2, p0, Lcom/google/android/gms/games/video/VideoConfiguration;->h:I
 
     const/4 v0, 0x2
 
@@ -147,7 +147,7 @@
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 8
-    iget-boolean p2, p0, Lcom/google/android/gms/games/video/VideoConfiguration;->h:Z
+    iget-boolean p2, p0, Lcom/google/android/gms/games/video/VideoConfiguration;->i:Z
 
     const/4 v0, 0x7
 
@@ -158,7 +158,7 @@
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 11
-    iget-boolean p2, p0, Lcom/google/android/gms/games/video/VideoConfiguration;->i:Z
+    iget-boolean p2, p0, Lcom/google/android/gms/games/video/VideoConfiguration;->j:Z
 
     const/16 v0, 0x8
 
@@ -169,7 +169,7 @@
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 14
-    iget-boolean v3, p0, Lcom/google/android/gms/games/video/VideoConfiguration;->j:Z
+    iget-boolean v3, p0, Lcom/google/android/gms/games/video/VideoConfiguration;->k:Z
 
     const/16 v1, 0x9
 

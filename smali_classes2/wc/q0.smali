@@ -7,26 +7,26 @@
 
 
 # instance fields
-.field public final synthetic f:Landroid/animation/ValueAnimator;
+.field public final synthetic g:Landroid/animation/ValueAnimator;
 
-.field public final synthetic g:I
+.field public final synthetic h:I
 
-.field public final synthetic h:F
+.field public final synthetic i:F
 
-.field public final synthetic i:Lwc/s0;
+.field public final synthetic j:Lwc/s0;
 
 
 # direct methods
 .method public constructor <init>(Landroid/animation/ValueAnimator;IFLwc/s0;)V
     .locals 0
 
-    iput-object p1, p0, Lwc/q0;->f:Landroid/animation/ValueAnimator;
+    iput-object p1, p0, Lwc/q0;->g:Landroid/animation/ValueAnimator;
 
-    iput p2, p0, Lwc/q0;->g:I
+    iput p2, p0, Lwc/q0;->h:I
 
-    iput p3, p0, Lwc/q0;->h:F
+    iput p3, p0, Lwc/q0;->i:F
 
-    iput-object p4, p0, Lwc/q0;->i:Lwc/s0;
+    iput-object p4, p0, Lwc/q0;->j:Lwc/s0;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -39,9 +39,9 @@
     .locals 5
 
     .line 1
-    iget-object p1, p0, Lwc/q0;->i:Lwc/s0;
+    iget-object p1, p0, Lwc/q0;->j:Lwc/s0;
 
-    iget-object p1, p1, Lwc/s0;->f:Lcom/supercell/id/ui/MainActivity;
+    iget-object p1, p1, Lwc/s0;->g:Lcom/supercell/id/ui/MainActivity;
 
     sget v0, Lcom/supercell/id/R$id;->panel:I
 
@@ -53,7 +53,7 @@
 
     const-string v1, "panel"
 
-    invoke-static {p1, v1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v1}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-static {p1}, Lae/z2;->e(Landroid/view/View;)Landroid/view/ViewGroup$MarginLayoutParams;
 
@@ -61,11 +61,11 @@
 
     if-eqz p1, :cond_0
 
-    iget v1, p0, Lwc/q0;->g:I
+    iget v1, p0, Lwc/q0;->h:I
 
-    iget-object v2, p0, Lwc/q0;->i:Lwc/s0;
+    iget-object v2, p0, Lwc/q0;->j:Lwc/s0;
 
-    iget-object v2, v2, Lwc/s0;->f:Lcom/supercell/id/ui/MainActivity;
+    iget-object v2, v2, Lwc/s0;->g:Lcom/supercell/id/ui/MainActivity;
 
     .line 2
     invoke-virtual {v2}, Lcom/supercell/id/ui/MainActivity;->u()I
@@ -73,7 +73,7 @@
     move-result v2
 
     .line 3
-    iget-object v3, p0, Lwc/q0;->f:Landroid/animation/ValueAnimator;
+    iget-object v3, p0, Lwc/q0;->g:Landroid/animation/ValueAnimator;
 
     invoke-virtual {v3}, Landroid/animation/ValueAnimator;->getAnimatedFraction()F
 
@@ -90,7 +90,7 @@
     add-float/2addr v1, v4
 
     .line 4
-    invoke-static {v1}, Lcom/android/billingclient/api/z;->n(F)I
+    invoke-static {v1}, Lcom/android/billingclient/api/y;->i(F)I
 
     move-result v1
 
@@ -98,27 +98,27 @@
 
     .line 5
     :cond_0
-    iget-object p1, p0, Lwc/q0;->i:Lwc/s0;
+    iget-object p1, p0, Lwc/q0;->j:Lwc/s0;
 
-    iget-object p1, p1, Lwc/s0;->f:Lcom/supercell/id/ui/MainActivity;
+    iget-object p1, p1, Lwc/s0;->g:Lcom/supercell/id/ui/MainActivity;
 
     .line 6
-    invoke-virtual {p1}, Lcom/supercell/id/ui/MainActivity;->n()Luc/e;
+    invoke-virtual {p1}, Lcom/supercell/id/ui/MainActivity;->n()Luc/d;
 
     move-result-object p1
 
     .line 7
-    iget v1, p0, Lwc/q0;->h:F
+    iget v1, p0, Lwc/q0;->i:F
 
-    iget-object v2, p0, Lwc/q0;->i:Lwc/s0;
+    iget-object v2, p0, Lwc/q0;->j:Lwc/s0;
 
-    iget-object v2, v2, Lwc/s0;->f:Lcom/supercell/id/ui/MainActivity;
+    iget-object v2, v2, Lwc/s0;->g:Lcom/supercell/id/ui/MainActivity;
 
     invoke-static {v2}, Lcom/supercell/id/ui/MainActivity;->c(Lcom/supercell/id/ui/MainActivity;)F
 
     move-result v2
 
-    iget-object v3, p0, Lwc/q0;->f:Landroid/animation/ValueAnimator;
+    iget-object v3, p0, Lwc/q0;->g:Landroid/animation/ValueAnimator;
 
     invoke-virtual {v3}, Landroid/animation/ValueAnimator;->getAnimatedFraction()F
 
@@ -131,12 +131,12 @@
     add-float/2addr v2, v1
 
     .line 8
-    invoke-virtual {p1, v2}, Luc/e;->j(F)V
+    invoke-virtual {p1, v2}, Luc/d;->j(F)V
 
     .line 9
-    iget-object p1, p0, Lwc/q0;->i:Lwc/s0;
+    iget-object p1, p0, Lwc/q0;->j:Lwc/s0;
 
-    iget-object p1, p1, Lwc/s0;->f:Lcom/supercell/id/ui/MainActivity;
+    iget-object p1, p1, Lwc/s0;->g:Lcom/supercell/id/ui/MainActivity;
 
     invoke-virtual {p1, v0}, Lcom/supercell/id/ui/MainActivity;->_$_findCachedViewById(I)Landroid/view/View;
 

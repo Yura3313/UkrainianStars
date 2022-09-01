@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field public q0:Landroid/app/Dialog;
+.field public r0:Landroid/app/Dialog;
 
-.field public r0:Landroid/content/DialogInterface$OnCancelListener;
+.field public s0:Landroid/content/DialogInterface$OnCancelListener;
 
-.field public s0:Landroid/app/AlertDialog;
+.field public t0:Landroid/app/AlertDialog;
 
 
 # direct methods
@@ -50,12 +50,12 @@
     invoke-virtual {p0, v1}, Landroid/app/Dialog;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
 
     .line 5
-    iput-object p0, v0, Lz1/h;->q0:Landroid/app/Dialog;
+    iput-object p0, v0, Lz1/h;->r0:Landroid/app/Dialog;
 
     if-eqz p1, :cond_0
 
     .line 6
-    iput-object p1, v0, Lz1/h;->r0:Landroid/content/DialogInterface$OnCancelListener;
+    iput-object p1, v0, Lz1/h;->s0:Landroid/content/DialogInterface$OnCancelListener;
 
     :cond_0
     return-object v0
@@ -67,17 +67,17 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lz1/h;->q0:Landroid/app/Dialog;
+    iget-object v0, p0, Lz1/h;->r0:Landroid/app/Dialog;
 
     if-nez v0, :cond_1
 
     const/4 v0, 0x0
 
     .line 2
-    iput-boolean v0, p0, Landroidx/fragment/app/k;->h0:Z
+    iput-boolean v0, p0, Landroidx/fragment/app/k;->i0:Z
 
     .line 3
-    iget-object v0, p0, Lz1/h;->s0:Landroid/app/AlertDialog;
+    iget-object v0, p0, Lz1/h;->t0:Landroid/app/AlertDialog;
 
     if-nez v0, :cond_0
 
@@ -94,11 +94,11 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lz1/h;->s0:Landroid/app/AlertDialog;
+    iput-object v0, p0, Lz1/h;->t0:Landroid/app/AlertDialog;
 
     .line 5
     :cond_0
-    iget-object v0, p0, Lz1/h;->s0:Landroid/app/AlertDialog;
+    iget-object v0, p0, Lz1/h;->t0:Landroid/app/AlertDialog;
 
     :cond_1
     return-object v0
@@ -114,12 +114,12 @@
     const/4 v0, 0x0
 
     .line 1
-    iput-boolean v0, p0, Landroidx/fragment/app/k;->n0:Z
+    iput-boolean v0, p0, Landroidx/fragment/app/k;->o0:Z
 
     const/4 v1, 0x1
 
     .line 2
-    iput-boolean v1, p0, Landroidx/fragment/app/k;->o0:Z
+    iput-boolean v1, p0, Landroidx/fragment/app/k;->p0:Z
 
     .line 3
     new-instance v2, Landroidx/fragment/app/a;
@@ -143,7 +143,7 @@
     .end param
 
     .line 1
-    iget-object v0, p0, Lz1/h;->r0:Landroid/content/DialogInterface$OnCancelListener;
+    iget-object v0, p0, Lz1/h;->s0:Landroid/content/DialogInterface$OnCancelListener;
 
     if-eqz v0, :cond_0
 

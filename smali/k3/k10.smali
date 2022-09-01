@@ -7,20 +7,32 @@
 
 
 # instance fields
-.field public final synthetic f:I
+.field public final g:Lk3/i10;
 
-.field public final g:Ljava/lang/Object;
+.field public final h:Ljava/lang/Object;
+
+.field public final i:Lk3/qd;
+
+.field public final j:Ljava/lang/String;
+
+.field public final k:J
 
 
 # direct methods
-.method public synthetic constructor <init>(Ljava/lang/Object;I)V
+.method public constructor <init>(Lk3/i10;Ljava/lang/Object;Lk3/qd;Ljava/lang/String;J)V
     .locals 0
 
-    iput p2, p0, Lk3/k10;->f:I
-
-    iput-object p1, p0, Lk3/k10;->g:Ljava/lang/Object;
-
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lk3/k10;->g:Lk3/i10;
+
+    iput-object p2, p0, Lk3/k10;->h:Ljava/lang/Object;
+
+    iput-object p3, p0, Lk3/k10;->i:Lk3/qd;
+
+    iput-object p4, p0, Lk3/k10;->j:Ljava/lang/String;
+
+    iput-wide p5, p0, Lk3/k10;->k:J
 
     return-void
 .end method
@@ -28,123 +40,76 @@
 
 # virtual methods
 .method public final run()V
-    .locals 8
+    .locals 10
 
-    iget v0, p0, Lk3/k10;->f:I
+    iget-object v0, p0, Lk3/k10;->g:Lk3/i10;
 
-    packed-switch v0, :pswitch_data_0
+    iget-object v1, p0, Lk3/k10;->h:Ljava/lang/Object;
 
-    goto :goto_1
+    iget-object v2, p0, Lk3/k10;->i:Lk3/qd;
+
+    iget-object v3, p0, Lk3/k10;->j:Ljava/lang/String;
+
+    iget-wide v4, p0, Lk3/k10;->k:J
+
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 1
-    :pswitch_0
-    iget-object v0, p0, Lk3/k10;->g:Ljava/lang/Object;
-
-    check-cast v0, Lk3/t20;
+    monitor-enter v1
 
     .line 2
-    invoke-virtual {v0}, Lk3/r20;->b()V
+    :try_start_0
+    invoke-virtual {v2}, Lk3/qd;->isDone()Z
 
-    return-void
+    move-result v6
+
+    if-nez v6, :cond_0
+
+    const/4 v6, 0x0
+
+    const-string v7, "Timeout."
 
     .line 3
-    :pswitch_1
-    iget-object v0, p0, Lk3/k10;->g:Ljava/lang/Object;
+    sget-object v8, Li1/p;->B:Li1/p;
 
-    check-cast v0, Lk3/h10;
+    iget-object v8, v8, Li1/p;->j:Ll2/c;
 
     .line 4
-    monitor-enter v0
+    invoke-interface {v8}, Ll2/c;->b()J
+
+    move-result-wide v8
+
+    sub-long/2addr v8, v4
+
+    long-to-int v4, v8
 
     .line 5
-    :try_start_0
-    iget-boolean v1, v0, Lk3/h10;->b:Z
-
-    if-eqz v1, :cond_0
+    invoke-virtual {v0, v3, v6, v7, v4}, Lk3/i10;->a(Ljava/lang/String;ZLjava/lang/String;I)V
 
     .line 6
-    monitor-exit v0
+    iget-object v0, v0, Lk3/i10;->k:Lk3/a10;
 
-    goto :goto_0
+    const-string v4, "timeout"
 
-    :cond_0
-    const-string v1, "com.google.android.gms.ads.MobileAds"
-
-    const/4 v2, 0x0
-
-    const-string v3, "Timeout."
+    invoke-virtual {v0, v3, v4}, Lk3/a10;->e(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 7
-    sget-object v4, Li1/o;->B:Li1/o;
+    sget-object v0, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
 
-    iget-object v4, v4, Li1/o;->j:Ll2/c;
+    invoke-virtual {v2, v0}, Lk3/qd;->a(Ljava/lang/Object;)Z
 
     .line 8
-    invoke-interface {v4}, Ll2/c;->b()J
+    :cond_0
+    monitor-exit v1
 
-    move-result-wide v4
-
-    iget-wide v6, v0, Lk3/h10;->c:J
-
-    sub-long/2addr v4, v6
-
-    long-to-int v5, v4
-
-    .line 9
-    invoke-virtual {v0, v1, v2, v3, v5}, Lk3/h10;->a(Ljava/lang/String;ZLjava/lang/String;I)V
-
-    .line 10
-    iget-object v1, v0, Lk3/h10;->d:Lk3/pd;
-
-    new-instance v2, Ljava/lang/Exception;
-
-    invoke-direct {v2}, Ljava/lang/Exception;-><init>()V
-
-    invoke-virtual {v1, v2}, Lk3/pd;->b(Ljava/lang/Throwable;)Z
-
-    .line 11
-    monitor-exit v0
-
-    :goto_0
     return-void
 
     :catchall_0
-    move-exception v1
+    move-exception v0
 
-    monitor-exit v0
+    monitor-exit v1
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    throw v1
-
-    .line 12
-    :goto_1
-    iget-object v0, p0, Lk3/k10;->g:Ljava/lang/Object;
-
-    check-cast v0, Lcom/google/android/gms/internal/ads/zzzm;
-
-    .line 13
-    iget-object v0, v0, Lcom/google/android/gms/internal/ads/zzzm;->f:Lcom/google/android/gms/internal/ads/zzaim;
-
-    if-eqz v0, :cond_1
-
-    .line 14
-    :try_start_1
-    invoke-static {}, Ljava/util/Collections;->emptyList()Ljava/util/List;
-
-    move-result-object v1
-
-    invoke-interface {v0, v1}, Lcom/google/android/gms/internal/ads/zzaim;->B6(Ljava/util/List;)V
-    :try_end_1
-    .catch Landroid/os/RemoteException; {:try_start_1 .. :try_end_1} :catch_0
-
-    :catch_0
-    :cond_1
-    return-void
-
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_1
-        :pswitch_0
-    .end packed-switch
+    throw v0
 .end method

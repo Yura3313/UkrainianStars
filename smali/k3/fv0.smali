@@ -1,279 +1,210 @@
 .class public final Lk3/fv0;
-.super Ljava/lang/Object;
+.super Ljava/util/AbstractList;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
-
-# interfaces
-.implements Lk3/ev0;
-.implements Lk3/mv0;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "<T:",
+        "<E:",
         "Ljava/lang/Object;",
         ">",
-        "Ljava/lang/Object;",
-        "Lk3/ev0<",
-        "TT;>;",
-        "Lk3/mv0<",
-        "TT;>;"
+        "Ljava/util/AbstractList<",
+        "TE;>;"
     }
 .end annotation
 
 
 # static fields
-.field public static final c:Ljava/lang/Object;
+.field public static final i:Lk3/v7;
 
 
 # instance fields
-.field public volatile a:Lk3/mv0;
+.field public g:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lk3/mv0<",
-            "TT;>;"
+            "Ljava/util/List<",
+            "TE;>;"
         }
     .end annotation
 .end field
 
-.field public volatile b:Ljava/lang/Object;
+.field public h:Ljava/util/Iterator;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/Iterator<",
+            "TE;>;"
+        }
+    .end annotation
+.end field
 
 
 # direct methods
 .method public static constructor <clinit>()V
     .locals 1
 
-    new-instance v0, Ljava/lang/Object;
+    const-class v0, Lk3/fv0;
 
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+    invoke-static {v0}, Lk3/v7;->q(Ljava/lang/Class;)Lk3/v7;
 
-    sput-object v0, Lk3/fv0;->c:Ljava/lang/Object;
+    move-result-object v0
+
+    sput-object v0, Lk3/fv0;->i:Lk3/v7;
 
     return-void
 .end method
 
-.method public constructor <init>(Lk3/mv0;)V
-    .locals 1
+.method public constructor <init>(Ljava/util/List;Ljava/util/Iterator;)V
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lk3/mv0<",
-            "TT;>;)V"
+            "Ljava/util/List<",
+            "TE;>;",
+            "Ljava/util/Iterator<",
+            "TE;>;)V"
         }
     .end annotation
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Ljava/util/AbstractList;-><init>()V
 
     .line 2
-    sget-object v0, Lk3/fv0;->c:Ljava/lang/Object;
-
-    iput-object v0, p0, Lk3/fv0;->b:Ljava/lang/Object;
+    iput-object p1, p0, Lk3/fv0;->g:Ljava/util/List;
 
     .line 3
-    iput-object p1, p0, Lk3/fv0;->a:Lk3/mv0;
+    iput-object p2, p0, Lk3/fv0;->h:Ljava/util/Iterator;
 
     return-void
-.end method
-
-.method public static a(Lk3/mv0;)Lk3/mv0;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "<P::",
-            "Lk3/mv0<",
-            "TT;>;T:",
-            "Ljava/lang/Object;",
-            ">(TP;)",
-            "Lk3/mv0<",
-            "TT;>;"
-        }
-    .end annotation
-
-    .line 1
-    instance-of v0, p0, Lk3/fv0;
-
-    if-eqz v0, :cond_0
-
-    return-object p0
-
-    .line 2
-    :cond_0
-    new-instance v0, Lk3/fv0;
-
-    invoke-direct {v0, p0}, Lk3/fv0;-><init>(Lk3/mv0;)V
-
-    return-object v0
-.end method
-
-.method public static b(Lk3/mv0;)Lk3/ev0;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "<P::",
-            "Lk3/mv0<",
-            "TT;>;T:",
-            "Ljava/lang/Object;",
-            ">(TP;)",
-            "Lk3/ev0<",
-            "TT;>;"
-        }
-    .end annotation
-
-    .line 1
-    instance-of v0, p0, Lk3/ev0;
-
-    if-eqz v0, :cond_0
-
-    .line 2
-    check-cast p0, Lk3/ev0;
-
-    return-object p0
-
-    .line 3
-    :cond_0
-    new-instance v0, Lk3/fv0;
-
-    .line 4
-    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 5
-    invoke-direct {v0, p0}, Lk3/fv0;-><init>(Lk3/mv0;)V
-
-    return-object v0
 .end method
 
 
 # virtual methods
-.method public final get()Ljava/lang/Object;
-    .locals 5
+.method public final get(I)Ljava/lang/Object;
+    .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "()TT;"
+            "(I)TE;"
         }
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lk3/fv0;->b:Ljava/lang/Object;
+    iget-object v0, p0, Lk3/fv0;->g:Ljava/util/List;
+
+    invoke-interface {v0}, Ljava/util/List;->size()I
+
+    move-result v0
+
+    if-le v0, p1, :cond_0
 
     .line 2
-    sget-object v1, Lk3/fv0;->c:Ljava/lang/Object;
+    iget-object v0, p0, Lk3/fv0;->g:Ljava/util/List;
 
-    if-ne v0, v1, :cond_4
+    invoke-interface {v0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object p1
+
+    return-object p1
 
     .line 3
-    monitor-enter p0
+    :cond_0
+    iget-object v0, p0, Lk3/fv0;->h:Ljava/util/Iterator;
+
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
 
     .line 4
-    :try_start_0
-    iget-object v0, p0, Lk3/fv0;->b:Ljava/lang/Object;
+    iget-object v0, p0, Lk3/fv0;->g:Ljava/util/List;
 
-    if-ne v0, v1, :cond_3
+    iget-object v1, p0, Lk3/fv0;->h:Ljava/util/Iterator;
+
+    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v1
+
+    invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     .line 5
-    iget-object v0, p0, Lk3/fv0;->a:Lk3/mv0;
+    invoke-virtual {p0, p1}, Lk3/fv0;->get(I)Ljava/lang/Object;
 
-    invoke-interface {v0}, Lk3/mv0;->get()Ljava/lang/Object;
+    move-result-object p1
 
-    move-result-object v0
+    return-object p1
 
     .line 6
-    iget-object v2, p0, Lk3/fv0;->b:Ljava/lang/Object;
+    :cond_1
+    new-instance p1, Ljava/util/NoSuchElementException;
 
-    if-eq v2, v1, :cond_0
+    invoke-direct {p1}, Ljava/util/NoSuchElementException;-><init>()V
 
-    const/4 v1, 0x1
+    throw p1
+.end method
+
+.method public final iterator()Ljava/util/Iterator;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/Iterator<",
+            "TE;>;"
+        }
+    .end annotation
+
+    new-instance v0, Lk3/ev0;
+
+    invoke-direct {v0, p0}, Lk3/ev0;-><init>(Lk3/fv0;)V
+
+    return-object v0
+.end method
+
+.method public final size()I
+    .locals 2
+
+    .line 1
+    sget-object v0, Lk3/fv0;->i:Lk3/v7;
+
+    const-string v1, "potentially expensive size() call"
+
+    invoke-virtual {v0, v1}, Lk3/v7;->p(Ljava/lang/String;)V
+
+    const-string v1, "blowup running"
+
+    .line 2
+    invoke-virtual {v0, v1}, Lk3/v7;->p(Ljava/lang/String;)V
+
+    .line 3
+    :goto_0
+    iget-object v0, p0, Lk3/fv0;->h:Ljava/util/Iterator;
+
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    .line 4
+    iget-object v0, p0, Lk3/fv0;->g:Ljava/util/List;
+
+    iget-object v1, p0, Lk3/fv0;->h:Ljava/util/Iterator;
+
+    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v1
+
+    invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     goto :goto_0
 
+    .line 5
     :cond_0
-    const/4 v1, 0x0
+    iget-object v0, p0, Lk3/fv0;->g:Ljava/util/List;
 
-    :goto_0
-    if-eqz v1, :cond_2
+    invoke-interface {v0}, Ljava/util/List;->size()I
 
-    if-ne v2, v0, :cond_1
+    move-result v0
 
-    goto :goto_1
-
-    .line 7
-    :cond_1
-    new-instance v1, Ljava/lang/IllegalStateException;
-
-    invoke-static {v2}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-static {v0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-virtual {v2}, Ljava/lang/String;->length()I
-
-    move-result v3
-
-    add-int/lit8 v3, v3, 0x76
-
-    invoke-virtual {v0}, Ljava/lang/String;->length()I
-
-    move-result v4
-
-    add-int/2addr v3, v4
-
-    new-instance v4, Ljava/lang/StringBuilder;
-
-    invoke-direct {v4, v3}, Ljava/lang/StringBuilder;-><init>(I)V
-
-    const-string v3, "Scoped provider was invoked recursively returning different results: "
-
-    invoke-virtual {v4, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v4, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string v2, " & "
-
-    invoke-virtual {v4, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string v0, ". This is likely due to a circular dependency."
-
-    invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-direct {v1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
-    throw v1
-
-    .line 8
-    :cond_2
-    :goto_1
-    iput-object v0, p0, Lk3/fv0;->b:Ljava/lang/Object;
-
-    const/4 v1, 0x0
-
-    .line 9
-    iput-object v1, p0, Lk3/fv0;->a:Lk3/mv0;
-
-    .line 10
-    :cond_3
-    monitor-exit p0
-
-    goto :goto_2
-
-    :catchall_0
-    move-exception v0
-
-    monitor-exit p0
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    throw v0
-
-    :cond_4
-    :goto_2
-    return-object v0
+    return v0
 .end method

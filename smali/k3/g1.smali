@@ -1,72 +1,64 @@
 .class public final Lk3/g1;
 .super Ljava/lang/Object;
-.source "com.google.android.gms:play-services-ads-lite@@19.3.0"
+.source "com.google.android.gms:play-services-ads@@19.3.0"
+
+# interfaces
+.implements Ljava/lang/Runnable;
 
 
-# static fields
-.field public static a:Lk3/k0;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lk3/k0<",
-            "Ljava/lang/Boolean;",
-            ">;"
-        }
-    .end annotation
-.end field
+# instance fields
+.field public final synthetic g:Ljava/lang/String;
 
-.field public static b:Lk3/k0;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lk3/k0<",
-            "Ljava/lang/Boolean;",
-            ">;"
-        }
-    .end annotation
-.end field
+.field public final synthetic h:J
 
-.field public static c:Lk3/k0;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lk3/k0<",
-            "Ljava/lang/Boolean;",
-            ">;"
-        }
-    .end annotation
-.end field
+.field public final synthetic i:Lk3/a;
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 2
+.method public constructor <init>(Lk3/a;Ljava/lang/String;J)V
+    .locals 0
 
-    const-string v0, "gads:webview:permission:disabled"
+    iput-object p1, p0, Lk3/g1;->i:Lk3/a;
 
-    const/4 v1, 0x0
+    iput-object p2, p0, Lk3/g1;->g:Ljava/lang/String;
+
+    iput-wide p3, p0, Lk3/g1;->h:J
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final run()V
+    .locals 4
 
     .line 1
-    invoke-static {v0, v1}, Lk3/k0;->c(Ljava/lang/String;Z)Lk3/k0;
-
-    move-result-object v0
-
-    sput-object v0, Lk3/g1;->a:Lk3/k0;
-
-    const-string v0, "gads:corewebview:adwebview_factory:enable"
+    iget-object v0, p0, Lk3/g1;->i:Lk3/a;
 
     .line 2
-    invoke-static {v0, v1}, Lk3/k0;->c(Ljava/lang/String;Z)Lk3/k0;
-
-    move-result-object v0
-
-    sput-object v0, Lk3/g1;->b:Lk3/k0;
-
-    const-string v0, "gads:corewebview:javascript_engine"
+    iget-object v0, v0, Lk3/a;->g:Lk3/k7$a;
 
     .line 3
-    invoke-static {v0, v1}, Lk3/k0;->c(Ljava/lang/String;Z)Lk3/k0;
+    iget-object v1, p0, Lk3/g1;->g:Ljava/lang/String;
+
+    iget-wide v2, p0, Lk3/g1;->h:J
+
+    invoke-virtual {v0, v1, v2, v3}, Lk3/k7$a;->a(Ljava/lang/String;J)V
+
+    .line 4
+    iget-object v0, p0, Lk3/g1;->i:Lk3/a;
+
+    .line 5
+    iget-object v1, v0, Lk3/a;->g:Lk3/k7$a;
+
+    .line 6
+    invoke-virtual {v0}, Lk3/a;->toString()Ljava/lang/String;
 
     move-result-object v0
 
-    sput-object v0, Lk3/g1;->c:Lk3/k0;
+    invoke-virtual {v1, v0}, Lk3/k7$a;->b(Ljava/lang/String;)V
 
     return-void
 .end method

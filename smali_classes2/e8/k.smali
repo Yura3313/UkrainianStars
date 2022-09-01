@@ -17,7 +17,7 @@
 
 
 # virtual methods
-.method public final A(Lo8/y;Lorg/json/JSONObject;)V
+.method public final A(Lo8/z;Lorg/json/JSONObject;)V
     .locals 2
 
     const-string v0, "feedback_message"
@@ -28,12 +28,12 @@
 
     move-result p2
 
-    iput-boolean p2, p1, Lo8/y;->y:Z
+    iput-boolean p2, p1, Lo8/z;->z:Z
 
     return-void
 .end method
 
-.method public final B(Lorg/json/JSONObject;Z)Lo8/o;
+.method public final B(Lorg/json/JSONObject;Z)Lo8/p;
     .locals 3
 
     const-string v0, "role"
@@ -61,13 +61,13 @@
 
     move-result-object p2
 
-    invoke-static {p2}, Lk3/so0;->a(Ljava/lang/String;)I
+    invoke-static {p2}, Lo8/o;->a(Ljava/lang/String;)I
 
     move-result p2
 
     .line 3
     :cond_1
-    new-instance v0, Lo8/o;
+    new-instance v0, Lo8/p;
 
     const-string v1, "name"
 
@@ -82,7 +82,7 @@
 
     move-result-object p1
 
-    invoke-direct {v0, v1, p1, p2}, Lo8/o;-><init>(Ljava/lang/String;Ljava/lang/String;I)V
+    invoke-direct {v0, v1, p1, p2}, Lo8/p;-><init>(Ljava/lang/String;Ljava/lang/String;I)V
     :try_end_0
     .catch Lorg/json/JSONException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -92,7 +92,7 @@
     move-exception p1
 
     .line 5
-    sget-object p2, Ld8/c;->f:Ld8/c;
+    sget-object p2, Ld8/c;->g:Ld8/c;
 
     const-string v0, "Parsing exception while reading author of message"
 
@@ -111,7 +111,7 @@
             "Lorg/json/JSONArray;",
             ")",
             "Ljava/util/List<",
-            "Lo8/y;",
+            "Lo8/z;",
             ">;"
         }
     .end annotation
@@ -188,7 +188,7 @@
     const/4 v5, 0x0
 
     .line 10
-    invoke-static {v0, v4, v5, v5}, Landroidx/savedstate/d;->h(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v0, v4, v5, v5}, Le5/i;->j(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Throwable;[Lz9/a;)V
     :try_end_0
     .catch Lcom/helpshift/common/exception/RootAPIException; {:try_start_0 .. :try_end_0} :catch_1
     .catch Lorg/json/JSONException; {:try_start_0 .. :try_end_0} :catch_0
@@ -207,7 +207,7 @@
     const-string v5, "Exception while parsing messages: "
 
     .line 11
-    invoke-static {v0, v5, v4}, Landroidx/savedstate/d;->g(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v0, v5, v4}, Le5/i;->i(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
     :goto_2
     add-int/lit8 v3, v3, 0x1
@@ -226,7 +226,7 @@
             "Ljava/lang/String;",
             "Lorg/json/JSONObject;",
             "Ljava/util/List<",
-            "Lo8/y;",
+            "Lo8/z;",
             ">;)V"
         }
     .end annotation
@@ -510,7 +510,7 @@
 
     move-result-object p1
 
-    invoke-virtual {p0, p1, v2}, Le8/k;->p(Ljava/lang/String;Z)Lo8/y;
+    invoke-virtual {p0, p1, v2}, Le8/k;->p(Ljava/lang/String;Z)Lo8/z;
 
     move-result-object p1
 
@@ -524,7 +524,7 @@
 
     move-result-object p1
 
-    invoke-virtual {p0, p1}, Le8/k;->M(Ljava/lang/String;)Lo8/s0;
+    invoke-virtual {p0, p1}, Le8/k;->M(Ljava/lang/String;)Lo8/u0;
 
     move-result-object p1
 
@@ -538,7 +538,7 @@
 
     move-result-object p1
 
-    invoke-virtual {p0, p1}, Le8/k;->N(Ljava/lang/String;)Lo8/t0;
+    invoke-virtual {p0, p1}, Le8/k;->N(Ljava/lang/String;)Lo8/v0;
 
     move-result-object p1
 
@@ -552,7 +552,7 @@
 
     move-result-object p1
 
-    invoke-virtual {p0, p1}, Le8/k;->O(Ljava/lang/String;)Lo8/u0;
+    invoke-virtual {p0, p1}, Le8/k;->O(Ljava/lang/String;)Lo8/w0;
 
     move-result-object p1
 
@@ -566,7 +566,7 @@
 
     move-result-object p1
 
-    invoke-virtual {p0, p1}, Le8/k;->W(Ljava/lang/String;)Lo8/y;
+    invoke-virtual {p0, p1}, Le8/k;->W(Ljava/lang/String;)Lo8/z;
 
     move-result-object p1
 
@@ -576,7 +576,7 @@
 
     .line 8
     :pswitch_5
-    invoke-virtual {p0, p2}, Le8/k;->z(Lorg/json/JSONObject;)Lo8/w;
+    invoke-virtual {p0, p2}, Le8/k;->z(Lorg/json/JSONObject;)Lo8/x;
 
     move-result-object p1
 
@@ -586,7 +586,7 @@
 
     .line 9
     :pswitch_6
-    invoke-virtual {p0, p2}, Le8/k;->y(Lorg/json/JSONObject;)Lo8/v;
+    invoke-virtual {p0, p2}, Le8/k;->y(Lorg/json/JSONObject;)Lo8/w;
 
     move-result-object p1
 
@@ -596,7 +596,7 @@
 
     .line 10
     :pswitch_7
-    invoke-virtual {p0, p2}, Le8/k;->V(Lorg/json/JSONObject;)Lo8/p0;
+    invoke-virtual {p0, p2}, Le8/k;->V(Lorg/json/JSONObject;)Lo8/r0;
 
     move-result-object p1
 
@@ -606,7 +606,7 @@
 
     .line 11
     :pswitch_8
-    invoke-virtual {p0, p2}, Le8/k;->P(Lorg/json/JSONObject;)Lo8/f0;
+    invoke-virtual {p0, p2}, Le8/k;->P(Lorg/json/JSONObject;)Lo8/h0;
 
     move-result-object p1
 
@@ -620,7 +620,7 @@
 
     move-result-object p1
 
-    invoke-virtual {p0, p1}, Le8/k;->r(Ljava/lang/String;)Lo8/r;
+    invoke-virtual {p0, p1}, Le8/k;->r(Ljava/lang/String;)Lo8/s;
 
     move-result-object p1
 
@@ -634,7 +634,7 @@
 
     move-result-object p1
 
-    invoke-virtual {p0, p1}, Le8/k;->s(Ljava/lang/String;)Lo8/s;
+    invoke-virtual {p0, p1}, Le8/k;->s(Ljava/lang/String;)Lo8/t;
 
     move-result-object p1
 
@@ -662,7 +662,7 @@
 
     move-result-object p1
 
-    invoke-virtual {p0, p1}, Le8/k;->I(Ljava/lang/String;)Lo8/r0;
+    invoke-virtual {p0, p1}, Le8/k;->I(Ljava/lang/String;)Lo8/t0;
 
     move-result-object p1
 
@@ -685,10 +685,10 @@
 
     move-result-object v1
 
-    check-cast v1, Lo8/y;
+    check-cast v1, Lo8/z;
 
     .line 17
-    invoke-virtual {p0, v1, p2}, Le8/k;->A(Lo8/y;Lorg/json/JSONObject;)V
+    invoke-virtual {p0, v1, p2}, Le8/k;->A(Lo8/z;Lorg/json/JSONObject;)V
 
     goto :goto_3
 
@@ -708,7 +708,7 @@
     const-string p3, "Exception while parsing messages: "
 
     .line 19
-    invoke-static {p2, p3, p1}, Landroidx/savedstate/d;->g(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {p2, p3, p1}, Le5/i;->i(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
     :goto_4
     return-void
@@ -786,7 +786,7 @@
 
     move-result p1
 
-    invoke-static {v0, p1}, Lp8/d;->a(Ljava/lang/String;I)I
+    invoke-static {v0, p1}, Lp8/e;->a(Ljava/lang/String;I)I
 
     move-result p1
 
@@ -801,7 +801,7 @@
             "Lorg/json/JSONObject;",
             ")",
             "Ljava/util/List<",
-            "Lp8/c$a;",
+            "Lp8/d$a;",
             ">;"
         }
     .end annotation
@@ -846,7 +846,7 @@
     move-result-object v3
 
     .line 5
-    new-instance v4, Lp8/c$a;
+    new-instance v4, Lp8/d$a;
 
     const-string v5, "title"
 
@@ -865,7 +865,7 @@
 
     move-result-object v3
 
-    invoke-direct {v4, v5, v3}, Lp8/c$a;-><init>(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {v4, v5, v3}, Lp8/d$a;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 7
     invoke-virtual {v0, v4}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
@@ -1033,7 +1033,7 @@
 
     move-result-object v12
 
-    check-cast v12, Lo8/y;
+    check-cast v12, Lo8/z;
 
     .line 5
     instance-of v13, v12, Lo8/e;
@@ -1045,7 +1045,7 @@
     if-nez v13, :cond_0
 
     .line 6
-    iget-object v9, v12, Lo8/y;->v:Ljava/lang/String;
+    iget-object v9, v12, Lo8/z;->w:Ljava/lang/String;
 
     move-object/from16 v20, v9
 
@@ -1144,7 +1144,7 @@
 
     move-result v10
 
-    iput-boolean v10, v5, Lq8/d;->B:Z
+    iput-boolean v10, v5, Lq8/d;->C:Z
 
     .line 16
     invoke-virtual {v6, v4}, Lorg/json/JSONObject;->isNull(Ljava/lang/String;)Z
@@ -1163,7 +1163,7 @@
     move-result-object v4
 
     :goto_2
-    iput-object v4, v5, Lq8/d;->h:Ljava/lang/String;
+    iput-object v4, v5, Lq8/d;->i:Ljava/lang/String;
 
     .line 17
     invoke-virtual {v6, v3}, Lorg/json/JSONObject;->isNull(Ljava/lang/String;)Z
@@ -1182,10 +1182,10 @@
     move-result-object v3
 
     :goto_3
-    iput-object v3, v5, Lq8/d;->i:Ljava/lang/String;
+    iput-object v3, v5, Lq8/d;->j:Ljava/lang/String;
 
     .line 18
-    iput-object v9, v5, Lq8/d;->m:Ljava/lang/String;
+    iput-object v9, v5, Lq8/d;->n:Ljava/lang/String;
 
     const-string v3, "request_id"
 
@@ -1194,7 +1194,7 @@
 
     move-result-object v3
 
-    iput-object v3, v5, Lq8/d;->z:Ljava/lang/String;
+    iput-object v3, v5, Lq8/d;->A:Ljava/lang/String;
 
     .line 20
     invoke-virtual {v6, v2}, Lorg/json/JSONObject;->isNull(Ljava/lang/String;)Z
@@ -1215,7 +1215,7 @@
     move-result-object v11
 
     :goto_4
-    iput-object v11, v5, Lq8/d;->J:Ljava/util/List;
+    iput-object v11, v5, Lq8/d;->K:Ljava/util/List;
 
     const-string v2, "issue"
 
@@ -1243,7 +1243,7 @@
     const/4 v2, 0x1
 
     :goto_5
-    iput v2, v5, Lq8/d;->t:I
+    iput v2, v5, Lq8/d;->u:I
 
     .line 23
     :cond_7
@@ -1262,7 +1262,7 @@
 
     move-result-object v1
 
-    iput-object v1, v5, Lq8/d;->M:Ljava/lang/Long;
+    iput-object v1, v5, Lq8/d;->N:Ljava/lang/Long;
 
     .line 25
     :cond_8
@@ -1281,7 +1281,7 @@
 
     move-result-object v0
 
-    iput-object v0, v5, Lq8/d;->N:Ljava/lang/Long;
+    iput-object v0, v5, Lq8/d;->O:Ljava/lang/Long;
 
     :cond_9
     const-string v0, "feedback_bots_enabled"
@@ -1291,7 +1291,7 @@
 
     move-result v0
 
-    iput-boolean v0, v5, Lq8/d;->O:Z
+    iput-boolean v0, v5, Lq8/d;->P:Z
 
     const-string v0, "show_new_conversation_button"
 
@@ -1300,7 +1300,7 @@
 
     move-result v0
 
-    iput-boolean v0, v5, Lq8/d;->P:Z
+    iput-boolean v0, v5, Lq8/d;->Q:Z
 
     .line 29
     invoke-virtual {v5, v7}, Lq8/d;->f(Ljava/util/List;)V
@@ -1321,7 +1321,7 @@
 
     .line 30
     :goto_6
-    sget-object v1, Ld8/c;->f:Ld8/c;
+    sget-object v1, Ld8/c;->g:Ld8/c;
 
     const-string v2, "Parsing exception in reading conversation"
 
@@ -1338,7 +1338,7 @@
     goto :goto_7
 .end method
 
-.method public final I(Ljava/lang/String;)Lo8/r0;
+.method public final I(Ljava/lang/String;)Lo8/t0;
     .locals 7
 
     .line 1
@@ -1360,7 +1360,7 @@
     move-result-wide v4
 
     .line 4
-    new-instance p1, Lo8/r0;
+    new-instance p1, Lo8/t0;
 
     const-string v1, "body"
 
@@ -1377,13 +1377,13 @@
 
     const/4 v6, 0x1
 
-    invoke-virtual {p0, v1, v6}, Le8/k;->B(Lorg/json/JSONObject;Z)Lo8/o;
+    invoke-virtual {p0, v1, v6}, Le8/k;->B(Lorg/json/JSONObject;Z)Lo8/p;
 
     move-result-object v6
 
     move-object v1, p1
 
-    invoke-direct/range {v1 .. v6}, Lo8/r0;-><init>(Ljava/lang/String;Ljava/lang/String;JLo8/o;)V
+    invoke-direct/range {v1 .. v6}, Lo8/t0;-><init>(Ljava/lang/String;Ljava/lang/String;JLo8/p;)V
 
     const-string v1, "id"
 
@@ -1392,7 +1392,7 @@
 
     move-result-object v1
 
-    iput-object v1, p1, Lo8/y;->i:Ljava/lang/String;
+    iput-object v1, p1, Lo8/z;->j:Ljava/lang/String;
 
     const-string v1, "md_state"
 
@@ -1407,7 +1407,7 @@
 
     move-result v1
 
-    iput v1, p1, Lo8/y;->p:I
+    iput v1, p1, Lo8/z;->q:I
 
     const-string v1, "redacted"
 
@@ -1418,13 +1418,13 @@
 
     move-result v1
 
-    iput-boolean v1, p1, Lo8/y;->s:Z
+    iput-boolean v1, p1, Lo8/z;->t:Z
 
     .line 9
-    invoke-virtual {p0, p1, v0}, Le8/k;->m(Lo8/y;Lorg/json/JSONObject;)V
+    invoke-virtual {p0, p1, v0}, Le8/k;->m(Lo8/z;Lorg/json/JSONObject;)V
 
     .line 10
-    invoke-virtual {p0, p1, v0}, Le8/k;->A(Lo8/y;Lorg/json/JSONObject;)V
+    invoke-virtual {p0, p1, v0}, Le8/k;->A(Lo8/z;Lorg/json/JSONObject;)V
     :try_end_0
     .catch Lorg/json/JSONException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -1434,7 +1434,7 @@
     move-exception p1
 
     .line 11
-    sget-object v0, Ld8/c;->f:Ld8/c;
+    sget-object v0, Ld8/c;->g:Ld8/c;
 
     const-string v1, "Parsing exception while reading user text message"
 
@@ -1445,7 +1445,7 @@
     throw p1
 .end method
 
-.method public final J(Lorg/json/JSONObject;)Lo8/a0;
+.method public final J(Lorg/json/JSONObject;)Lo8/c0;
     .locals 10
 
     :try_start_0
@@ -1517,7 +1517,7 @@
     move-result-wide v6
 
     .line 6
-    new-instance v0, Lo8/a0;
+    new-instance v0, Lo8/c0;
 
     const-string v2, "id"
 
@@ -1540,13 +1540,13 @@
     move-result-object v2
 
     .line 9
-    invoke-virtual {p0, v2, v1}, Le8/k;->B(Lorg/json/JSONObject;Z)Lo8/o;
+    invoke-virtual {p0, v2, v1}, Le8/k;->B(Lorg/json/JSONObject;Z)Lo8/p;
 
     move-result-object v8
 
     move-object v2, v0
 
-    invoke-direct/range {v2 .. v9}, Lo8/a0;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;JLo8/o;Z)V
+    invoke-direct/range {v2 .. v9}, Lo8/c0;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;JLo8/p;Z)V
 
     const-string v2, "md_state"
 
@@ -1561,7 +1561,7 @@
 
     move-result v2
 
-    iput v2, v0, Lo8/y;->p:I
+    iput v2, v0, Lo8/z;->q:I
 
     const-string v2, "redacted"
 
@@ -1570,7 +1570,7 @@
 
     move-result p1
 
-    iput-boolean p1, v0, Lo8/y;->s:Z
+    iput-boolean p1, v0, Lo8/z;->t:Z
     :try_end_0
     .catch Lorg/json/JSONException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -1580,7 +1580,7 @@
     move-exception p1
 
     .line 12
-    sget-object v0, Ld8/c;->f:Ld8/c;
+    sget-object v0, Ld8/c;->g:Ld8/c;
 
     const-string v1, "Parsing exception while reading request review message"
 
@@ -1591,7 +1591,7 @@
     throw p1
 .end method
 
-.method public final K(Lorg/json/JSONObject;)Lo8/b0;
+.method public final K(Lorg/json/JSONObject;)Lo8/d0;
     .locals 9
 
     :try_start_0
@@ -1608,7 +1608,7 @@
     move-result-wide v5
 
     .line 3
-    new-instance v0, Lo8/b0;
+    new-instance v0, Lo8/d0;
 
     const-string v1, "id"
 
@@ -1633,13 +1633,13 @@
     const/4 v8, 0x0
 
     .line 6
-    invoke-virtual {p0, v1, v8}, Le8/k;->B(Lorg/json/JSONObject;Z)Lo8/o;
+    invoke-virtual {p0, v1, v8}, Le8/k;->B(Lorg/json/JSONObject;Z)Lo8/p;
 
     move-result-object v7
 
     move-object v1, v0
 
-    invoke-direct/range {v1 .. v7}, Lo8/b0;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;JLo8/o;)V
+    invoke-direct/range {v1 .. v7}, Lo8/d0;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;JLo8/p;)V
 
     const-string v1, "md_state"
 
@@ -1654,7 +1654,7 @@
 
     move-result v1
 
-    iput v1, v0, Lo8/y;->p:I
+    iput v1, v0, Lo8/z;->q:I
 
     const-string v1, "redacted"
 
@@ -1663,7 +1663,7 @@
 
     move-result p1
 
-    iput-boolean p1, v0, Lo8/y;->s:Z
+    iput-boolean p1, v0, Lo8/z;->t:Z
     :try_end_0
     .catch Lorg/json/JSONException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -1673,7 +1673,7 @@
     move-exception p1
 
     .line 9
-    sget-object v0, Ld8/c;->f:Ld8/c;
+    sget-object v0, Ld8/c;->g:Ld8/c;
 
     const-string v1, "Parsing exception while reading reopen message"
 
@@ -1692,7 +1692,7 @@
             "Lorg/json/JSONObject;",
             ")",
             "Ljava/util/List<",
-            "Lo8/y;",
+            "Lo8/z;",
             ">;"
         }
     .end annotation
@@ -1749,7 +1749,7 @@
     move-result-wide v7
 
     .line 7
-    new-instance v1, Lo8/c0;
+    new-instance v1, Lo8/e0;
 
     const-string v3, "id"
 
@@ -1772,13 +1772,13 @@
     move-result-object v3
 
     .line 10
-    invoke-virtual {p0, v3, v2}, Le8/k;->B(Lorg/json/JSONObject;Z)Lo8/o;
+    invoke-virtual {p0, v3, v2}, Le8/k;->B(Lorg/json/JSONObject;Z)Lo8/p;
 
     move-result-object v9
 
     move-object v3, v1
 
-    invoke-direct/range {v3 .. v10}, Lo8/c0;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;JLo8/o;Z)V
+    invoke-direct/range {v3 .. v10}, Lo8/e0;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;JLo8/p;Z)V
 
     const-string v3, "md_state"
 
@@ -1793,7 +1793,7 @@
 
     move-result v3
 
-    iput v3, v1, Lo8/y;->p:I
+    iput v3, v1, Lo8/z;->q:I
 
     const-string v3, "redacted"
 
@@ -1802,7 +1802,7 @@
 
     move-result v2
 
-    iput-boolean v2, v1, Lo8/y;->s:Z
+    iput-boolean v2, v1, Lo8/z;->t:Z
 
     .line 13
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
@@ -1822,7 +1822,7 @@
     move-exception p1
 
     .line 15
-    sget-object v0, Ld8/c;->f:Ld8/c;
+    sget-object v0, Ld8/c;->g:Ld8/c;
 
     const-string v1, "Parsing exception while reading request screenshot message"
 
@@ -1834,7 +1834,7 @@
     throw p1
 .end method
 
-.method public final M(Ljava/lang/String;)Lo8/s0;
+.method public final M(Ljava/lang/String;)Lo8/u0;
     .locals 14
 
     .line 1
@@ -1904,7 +1904,7 @@
     move-result-wide v5
 
     .line 8
-    new-instance p1, Lo8/s0;
+    new-instance p1, Lo8/u0;
 
     const-string v2, "body"
 
@@ -1922,7 +1922,7 @@
 
     const/4 v7, 0x1
 
-    invoke-virtual {p0, v2, v7}, Le8/k;->B(Lorg/json/JSONObject;Z)Lo8/o;
+    invoke-virtual {p0, v2, v7}, Le8/k;->B(Lorg/json/JSONObject;Z)Lo8/p;
 
     move-result-object v7
 
@@ -1954,7 +1954,7 @@
 
     move-object v2, p1
 
-    invoke-direct/range {v2 .. v13}, Lo8/s0;-><init>(Ljava/lang/String;Ljava/lang/String;JLo8/o;IZLjava/lang/String;Ljava/lang/String;Ljava/lang/String;I)V
+    invoke-direct/range {v2 .. v13}, Lo8/u0;-><init>(Ljava/lang/String;Ljava/lang/String;JLo8/p;IZLjava/lang/String;Ljava/lang/String;Ljava/lang/String;I)V
 
     const-string v2, "id"
 
@@ -1963,7 +1963,7 @@
 
     move-result-object v2
 
-    iput-object v2, p1, Lo8/y;->i:Ljava/lang/String;
+    iput-object v2, p1, Lo8/z;->j:Ljava/lang/String;
 
     const-string v2, "redacted"
 
@@ -1972,13 +1972,13 @@
 
     move-result v1
 
-    iput-boolean v1, p1, Lo8/y;->s:Z
+    iput-boolean v1, p1, Lo8/z;->t:Z
 
     .line 15
-    invoke-virtual {p0, p1, v0}, Le8/k;->m(Lo8/y;Lorg/json/JSONObject;)V
+    invoke-virtual {p0, p1, v0}, Le8/k;->m(Lo8/z;Lorg/json/JSONObject;)V
 
     .line 16
-    invoke-virtual {p0, p1, v0}, Le8/k;->A(Lo8/y;Lorg/json/JSONObject;)V
+    invoke-virtual {p0, p1, v0}, Le8/k;->A(Lo8/z;Lorg/json/JSONObject;)V
     :try_end_0
     .catch Lorg/json/JSONException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -1988,7 +1988,7 @@
     move-exception p1
 
     .line 17
-    sget-object v0, Ld8/c;->f:Ld8/c;
+    sget-object v0, Ld8/c;->g:Ld8/c;
 
     const-string v1, "Parsing exception while reading user response for csat input"
 
@@ -1999,7 +1999,7 @@
     throw p1
 .end method
 
-.method public final N(Ljava/lang/String;)Lo8/t0;
+.method public final N(Ljava/lang/String;)Lo8/v0;
     .locals 20
 
     move-object/from16 v1, p0
@@ -2159,7 +2159,7 @@
     move-result-wide v12
 
     .line 8
-    new-instance v2, Lo8/t0;
+    new-instance v2, Lo8/v0;
 
     const-string v3, "body"
 
@@ -2175,7 +2175,7 @@
 
     move-result-object v3
 
-    invoke-virtual {v1, v3, v6}, Le8/k;->B(Lorg/json/JSONObject;Z)Lo8/o;
+    invoke-virtual {v1, v3, v6}, Le8/k;->B(Lorg/json/JSONObject;Z)Lo8/p;
 
     move-result-object v14
 
@@ -2205,7 +2205,7 @@
 
     move-object v9, v2
 
-    invoke-direct/range {v9 .. v19}, Lo8/t0;-><init>(Ljava/lang/String;Ljava/lang/String;JLo8/o;Ljava/lang/String;ZLjava/lang/String;Ljava/lang/String;I)V
+    invoke-direct/range {v9 .. v19}, Lo8/v0;-><init>(Ljava/lang/String;Ljava/lang/String;JLo8/p;Ljava/lang/String;ZLjava/lang/String;Ljava/lang/String;I)V
 
     const-string v3, "id"
 
@@ -2214,7 +2214,7 @@
 
     move-result-object v3
 
-    iput-object v3, v2, Lo8/y;->i:Ljava/lang/String;
+    iput-object v3, v2, Lo8/z;->j:Ljava/lang/String;
 
     const-string v3, "redacted"
 
@@ -2223,13 +2223,13 @@
 
     move-result v3
 
-    iput-boolean v3, v2, Lo8/y;->s:Z
+    iput-boolean v3, v2, Lo8/z;->t:Z
 
     .line 15
-    invoke-virtual {v1, v2, v0}, Le8/k;->m(Lo8/y;Lorg/json/JSONObject;)V
+    invoke-virtual {v1, v2, v0}, Le8/k;->m(Lo8/z;Lorg/json/JSONObject;)V
 
     .line 16
-    invoke-virtual {v1, v2, v0}, Le8/k;->A(Lo8/y;Lorg/json/JSONObject;)V
+    invoke-virtual {v1, v2, v0}, Le8/k;->A(Lo8/z;Lorg/json/JSONObject;)V
     :try_end_0
     .catch Lorg/json/JSONException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -2239,7 +2239,7 @@
     move-exception v0
 
     .line 17
-    sget-object v2, Ld8/c;->f:Ld8/c;
+    sget-object v2, Ld8/c;->g:Ld8/c;
 
     const-string v3, "Parsing exception while reading user response for option input"
 
@@ -2256,7 +2256,7 @@
     goto :goto_4
 .end method
 
-.method public final O(Ljava/lang/String;)Lo8/u0;
+.method public final O(Ljava/lang/String;)Lo8/w0;
     .locals 20
 
     move-object/from16 v1, p0
@@ -2440,7 +2440,7 @@
     move-result-wide v12
 
     .line 8
-    new-instance v4, Lo8/u0;
+    new-instance v4, Lo8/w0;
 
     const-string v6, "body"
 
@@ -2456,7 +2456,7 @@
 
     move-result-object v6
 
-    invoke-virtual {v1, v6, v9}, Le8/k;->B(Lorg/json/JSONObject;Z)Lo8/o;
+    invoke-virtual {v1, v6, v9}, Le8/k;->B(Lorg/json/JSONObject;Z)Lo8/p;
 
     move-result-object v14
 
@@ -2484,7 +2484,7 @@
 
     move/from16 v17, v2
 
-    invoke-direct/range {v9 .. v19}, Lo8/u0;-><init>(Ljava/lang/String;Ljava/lang/String;JLo8/o;ILjava/lang/String;ZLjava/lang/String;Z)V
+    invoke-direct/range {v9 .. v19}, Lo8/w0;-><init>(Ljava/lang/String;Ljava/lang/String;JLo8/p;ILjava/lang/String;ZLjava/lang/String;Z)V
 
     if-ne v5, v7, :cond_7
 
@@ -2497,7 +2497,7 @@
 
     move-result-wide v5
 
-    iput-wide v5, v4, Lo8/u0;->E:J
+    iput-wide v5, v4, Lo8/w0;->F:J
 
     const-string v2, "timezone"
 
@@ -2506,7 +2506,7 @@
 
     move-result-object v2
 
-    iput-object v2, v4, Lo8/u0;->F:Ljava/lang/String;
+    iput-object v2, v4, Lo8/w0;->G:Ljava/lang/String;
 
     :cond_7
     const-string v2, "id"
@@ -2516,7 +2516,7 @@
 
     move-result-object v2
 
-    iput-object v2, v4, Lo8/y;->i:Ljava/lang/String;
+    iput-object v2, v4, Lo8/z;->j:Ljava/lang/String;
 
     const-string v2, "redacted"
 
@@ -2525,13 +2525,13 @@
 
     move-result v2
 
-    iput-boolean v2, v4, Lo8/y;->s:Z
+    iput-boolean v2, v4, Lo8/z;->t:Z
 
     .line 17
-    invoke-virtual {v1, v4, v0}, Le8/k;->m(Lo8/y;Lorg/json/JSONObject;)V
+    invoke-virtual {v1, v4, v0}, Le8/k;->m(Lo8/z;Lorg/json/JSONObject;)V
 
     .line 18
-    invoke-virtual {v1, v4, v0}, Le8/k;->A(Lo8/y;Lorg/json/JSONObject;)V
+    invoke-virtual {v1, v4, v0}, Le8/k;->A(Lo8/z;Lorg/json/JSONObject;)V
     :try_end_0
     .catch Lorg/json/JSONException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -2541,7 +2541,7 @@
     move-exception v0
 
     .line 19
-    sget-object v2, Ld8/c;->f:Ld8/c;
+    sget-object v2, Ld8/c;->g:Ld8/c;
 
     const-string v3, "Parsing exception while reading user response for text input"
 
@@ -2561,7 +2561,7 @@
     .end sparse-switch
 .end method
 
-.method public final P(Lorg/json/JSONObject;)Lo8/f0;
+.method public final P(Lorg/json/JSONObject;)Lo8/h0;
     .locals 21
 
     move-object/from16 v1, p0
@@ -2630,7 +2630,7 @@
     move-object v9, v4
 
     .line 7
-    new-instance v4, Lo8/f0;
+    new-instance v4, Lo8/h0;
 
     const-string v7, "author"
 
@@ -2641,7 +2641,7 @@
 
     const/4 v15, 0x1
 
-    invoke-virtual {v1, v7, v15}, Le8/k;->B(Lorg/json/JSONObject;Z)Lo8/o;
+    invoke-virtual {v1, v7, v15}, Le8/k;->B(Lorg/json/JSONObject;Z)Lo8/p;
 
     move-result-object v13
 
@@ -2693,7 +2693,7 @@
 
     move-object v15, v7
 
-    invoke-direct/range {v8 .. v19}, Lo8/f0;-><init>(Ljava/lang/String;Ljava/lang/String;JLo8/o;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IZ)V
+    invoke-direct/range {v8 .. v19}, Lo8/h0;-><init>(Ljava/lang/String;Ljava/lang/String;JLo8/p;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IZ)V
 
     const-string v7, "id"
 
@@ -2702,7 +2702,7 @@
 
     move-result-object v7
 
-    iput-object v7, v4, Lo8/y;->i:Ljava/lang/String;
+    iput-object v7, v4, Lo8/z;->j:Ljava/lang/String;
 
     const-string v7, "md_state"
 
@@ -2715,7 +2715,7 @@
 
     move-result v3
 
-    iput v3, v4, Lo8/y;->p:I
+    iput v3, v4, Lo8/z;->q:I
 
     .line 17
     invoke-virtual {v0, v2, v6}, Lorg/json/JSONObject;->optBoolean(Ljava/lang/String;Z)Z
@@ -2742,7 +2742,7 @@
     const/4 v15, 0x1
 
     :goto_2
-    iput-boolean v15, v4, Lo8/y;->s:Z
+    iput-boolean v15, v4, Lo8/z;->t:Z
 
     const-string v2, "zipped"
 
@@ -2751,13 +2751,13 @@
 
     move-result v2
 
-    iput-boolean v2, v4, Lo8/n;->F:Z
+    iput-boolean v2, v4, Lo8/n;->G:Z
 
     .line 19
-    invoke-virtual {v1, v4, v0}, Le8/k;->m(Lo8/y;Lorg/json/JSONObject;)V
+    invoke-virtual {v1, v4, v0}, Le8/k;->m(Lo8/z;Lorg/json/JSONObject;)V
 
     .line 20
-    invoke-virtual {v1, v4, v0}, Le8/k;->A(Lo8/y;Lorg/json/JSONObject;)V
+    invoke-virtual {v1, v4, v0}, Le8/k;->A(Lo8/z;Lorg/json/JSONObject;)V
     :try_end_0
     .catch Lorg/json/JSONException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -2767,7 +2767,7 @@
     move-exception v0
 
     .line 21
-    sget-object v2, Ld8/c;->f:Ld8/c;
+    sget-object v2, Ld8/c;->g:Ld8/c;
 
     const-string v3, "Parsing exception while reading screenshot message"
 
@@ -2918,7 +2918,7 @@
     move-exception p1
 
     .line 15
-    sget-object v0, Ld8/c;->f:Ld8/c;
+    sget-object v0, Ld8/c;->g:Ld8/c;
 
     const-string v1, "Parsing exception while reading single faq"
 
@@ -3124,7 +3124,7 @@
     move-exception p1
 
     .line 22
-    sget-object v0, Ld8/c;->f:Ld8/c;
+    sget-object v0, Ld8/c;->g:Ld8/c;
 
     const-string v1, "Parsing exception while reading smart intent model"
 
@@ -3253,7 +3253,7 @@
     move-exception p1
 
     .line 15
-    sget-object v0, Ld8/c;->f:Ld8/c;
+    sget-object v0, Ld8/c;->g:Ld8/c;
 
     const-string v1, "Parsing exception while reading smart intent tree"
 
@@ -3355,7 +3355,7 @@
     return-object v0
 .end method
 
-.method public final U(Ljava/lang/String;)Lo8/m0;
+.method public final U(Ljava/lang/String;)Lo8/o0;
     .locals 11
 
     .line 1
@@ -3377,7 +3377,7 @@
     move-result-wide v5
 
     .line 4
-    new-instance p1, Lo8/m0;
+    new-instance p1, Lo8/o0;
 
     const-string v1, "id"
 
@@ -3401,7 +3401,7 @@
 
     const/4 v7, 0x0
 
-    invoke-virtual {p0, v1, v7}, Le8/k;->B(Lorg/json/JSONObject;Z)Lo8/o;
+    invoke-virtual {p0, v1, v7}, Le8/k;->B(Lorg/json/JSONObject;Z)Lo8/p;
 
     move-result-object v7
 
@@ -3436,7 +3436,7 @@
 
     move-object v1, p1
 
-    invoke-direct/range {v1 .. v10}, Lo8/m0;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;JLo8/o;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct/range {v1 .. v10}, Lo8/o0;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;JLo8/p;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     :try_end_0
     .catch Lorg/json/JSONException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -3446,7 +3446,7 @@
     move-exception p1
 
     .line 10
-    sget-object v0, Ld8/c;->f:Ld8/c;
+    sget-object v0, Ld8/c;->g:Ld8/c;
 
     const-string v1, "Parsing exception while reading unsupported admin message with input"
 
@@ -3457,7 +3457,7 @@
     throw p1
 .end method
 
-.method public final V(Lorg/json/JSONObject;)Lo8/p0;
+.method public final V(Lorg/json/JSONObject;)Lo8/r0;
     .locals 19
 
     move-object/from16 v1, p0
@@ -3524,7 +3524,7 @@
     move-object v8, v3
 
     .line 7
-    new-instance v3, Lo8/p0;
+    new-instance v3, Lo8/r0;
 
     const-string v6, "author"
 
@@ -3535,7 +3535,7 @@
 
     const/4 v15, 0x1
 
-    invoke-virtual {v1, v6, v15}, Le8/k;->B(Lorg/json/JSONObject;Z)Lo8/o;
+    invoke-virtual {v1, v6, v15}, Le8/k;->B(Lorg/json/JSONObject;Z)Lo8/p;
 
     move-result-object v12
 
@@ -3580,7 +3580,7 @@
 
     move-object v15, v6
 
-    invoke-direct/range {v7 .. v17}, Lo8/p0;-><init>(Ljava/lang/String;Ljava/lang/String;JLo8/o;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)V
+    invoke-direct/range {v7 .. v17}, Lo8/r0;-><init>(Ljava/lang/String;Ljava/lang/String;JLo8/p;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)V
 
     const-string v6, "id"
 
@@ -3589,7 +3589,7 @@
 
     move-result-object v6
 
-    iput-object v6, v3, Lo8/y;->i:Ljava/lang/String;
+    iput-object v6, v3, Lo8/z;->j:Ljava/lang/String;
 
     const-string v6, "md_state"
 
@@ -3604,7 +3604,7 @@
 
     move-result v6
 
-    iput v6, v3, Lo8/y;->p:I
+    iput v6, v3, Lo8/z;->q:I
 
     .line 16
     invoke-virtual {v0, v2, v5}, Lorg/json/JSONObject;->optBoolean(Ljava/lang/String;Z)Z
@@ -3631,7 +3631,7 @@
     const/4 v15, 0x1
 
     :goto_2
-    iput-boolean v15, v3, Lo8/y;->s:Z
+    iput-boolean v15, v3, Lo8/z;->t:Z
 
     const-string v2, "zipped"
 
@@ -3640,13 +3640,13 @@
 
     move-result v2
 
-    iput-boolean v2, v3, Lo8/n;->F:Z
+    iput-boolean v2, v3, Lo8/n;->G:Z
 
     .line 18
-    invoke-virtual {v1, v3, v0}, Le8/k;->m(Lo8/y;Lorg/json/JSONObject;)V
+    invoke-virtual {v1, v3, v0}, Le8/k;->m(Lo8/z;Lorg/json/JSONObject;)V
 
     .line 19
-    invoke-virtual {v1, v3, v0}, Le8/k;->A(Lo8/y;Lorg/json/JSONObject;)V
+    invoke-virtual {v1, v3, v0}, Le8/k;->A(Lo8/z;Lorg/json/JSONObject;)V
     :try_end_0
     .catch Lorg/json/JSONException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -3656,7 +3656,7 @@
     move-exception v0
 
     .line 20
-    sget-object v2, Ld8/c;->f:Ld8/c;
+    sget-object v2, Ld8/c;->g:Ld8/c;
 
     const-string v3, "Parsing exception while reading user attachment message"
 
@@ -3667,7 +3667,7 @@
     throw v0
 .end method
 
-.method public final W(Ljava/lang/String;)Lo8/y;
+.method public final W(Ljava/lang/String;)Lo8/z;
     .locals 7
 
     .line 1
@@ -3716,7 +3716,7 @@
     move-result-wide v4
 
     .line 7
-    new-instance p1, Lo8/v0;
+    new-instance p1, Lo8/x0;
 
     const-string v1, "author"
 
@@ -3727,13 +3727,13 @@
 
     const/4 v6, 0x1
 
-    invoke-virtual {p0, v1, v6}, Le8/k;->B(Lorg/json/JSONObject;Z)Lo8/o;
+    invoke-virtual {p0, v1, v6}, Le8/k;->B(Lorg/json/JSONObject;Z)Lo8/p;
 
     move-result-object v6
 
     move-object v1, p1
 
-    invoke-direct/range {v1 .. v6}, Lo8/v0;-><init>(Ljava/util/List;Ljava/lang/String;JLo8/o;)V
+    invoke-direct/range {v1 .. v6}, Lo8/x0;-><init>(Ljava/util/List;Ljava/lang/String;JLo8/p;)V
 
     const-string v1, "id"
 
@@ -3742,7 +3742,7 @@
 
     move-result-object v1
 
-    iput-object v1, p1, Lo8/y;->i:Ljava/lang/String;
+    iput-object v1, p1, Lo8/z;->j:Ljava/lang/String;
 
     const-string v1, "body"
 
@@ -3751,7 +3751,7 @@
 
     move-result-object v1
 
-    iput-object v1, p1, Lo8/y;->j:Ljava/lang/String;
+    iput-object v1, p1, Lo8/z;->k:Ljava/lang/String;
 
     const-string v1, "md_state"
 
@@ -3766,7 +3766,7 @@
 
     move-result v1
 
-    iput v1, p1, Lo8/y;->p:I
+    iput v1, p1, Lo8/z;->q:I
 
     const-string v1, "redacted"
 
@@ -3777,10 +3777,10 @@
 
     move-result v1
 
-    iput-boolean v1, p1, Lo8/y;->s:Z
+    iput-boolean v1, p1, Lo8/z;->t:Z
 
     .line 13
-    invoke-virtual {p0, p1, v0}, Le8/k;->m(Lo8/y;Lorg/json/JSONObject;)V
+    invoke-virtual {p0, p1, v0}, Le8/k;->m(Lo8/z;Lorg/json/JSONObject;)V
     :try_end_0
     .catch Lorg/json/JSONException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -3790,7 +3790,7 @@
     move-exception p1
 
     .line 14
-    sget-object v0, Ld8/c;->f:Ld8/c;
+    sget-object v0, Ld8/c;->g:Ld8/c;
 
     const-string v1, "Parsing exception while reading user smart intent message"
 
@@ -3878,7 +3878,7 @@
 
     const/4 v6, 0x1
 
-    invoke-virtual {p0, v1, v6}, Le8/k;->B(Lorg/json/JSONObject;Z)Lo8/o;
+    invoke-virtual {p0, v1, v6}, Le8/k;->B(Lorg/json/JSONObject;Z)Lo8/p;
 
     move-result-object v6
 
@@ -3899,7 +3899,7 @@
 
     move-object v1, p1
 
-    invoke-direct/range {v1 .. v8}, Lo8/a;-><init>(Ljava/lang/String;Ljava/lang/String;JLo8/o;Ljava/lang/String;I)V
+    invoke-direct/range {v1 .. v8}, Lo8/a;-><init>(Ljava/lang/String;Ljava/lang/String;JLo8/p;Ljava/lang/String;I)V
 
     const-string v1, "id"
 
@@ -3908,7 +3908,7 @@
 
     move-result-object v1
 
-    iput-object v1, p1, Lo8/y;->i:Ljava/lang/String;
+    iput-object v1, p1, Lo8/z;->j:Ljava/lang/String;
 
     const-string v1, "md_state"
 
@@ -3923,7 +3923,7 @@
 
     move-result v1
 
-    iput v1, p1, Lo8/y;->p:I
+    iput v1, p1, Lo8/z;->q:I
 
     const-string v1, "redacted"
 
@@ -3934,10 +3934,10 @@
 
     move-result v1
 
-    iput-boolean v1, p1, Lo8/y;->s:Z
+    iput-boolean v1, p1, Lo8/z;->t:Z
 
     .line 11
-    invoke-virtual {p0, p1, v0}, Le8/k;->m(Lo8/y;Lorg/json/JSONObject;)V
+    invoke-virtual {p0, p1, v0}, Le8/k;->m(Lo8/z;Lorg/json/JSONObject;)V
     :try_end_0
     .catch Lorg/json/JSONException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -3947,7 +3947,7 @@
     move-exception p1
 
     .line 12
-    sget-object v0, Ld8/c;->f:Ld8/c;
+    sget-object v0, Ld8/c;->g:Ld8/c;
 
     const-string v1, "Parsing exception while reading accepted review message"
 
@@ -3995,11 +3995,11 @@
     move-result-object v0
 
     .line 3
-    sget-object v2, Li8/b;->a:Lcom/helpshift/util/s;
+    sget-object v2, Li8/b;->a:Lcom/helpshift/util/r;
 
     const/4 v3, 0x1
 
-    invoke-static {v2, v0, v3}, Li8/b;->a(Lcom/helpshift/util/s;Ljava/lang/String;I)Ljava/lang/String;
+    invoke-static {v2, v0, v3}, Li8/b;->a(Lcom/helpshift/util/r;Ljava/lang/String;I)Ljava/lang/String;
 
     move-result-object v6
 
@@ -4113,7 +4113,7 @@
     move-result-object v3
 
     .line 17
-    invoke-virtual {p0, v3, v2}, Le8/k;->B(Lorg/json/JSONObject;Z)Lo8/o;
+    invoke-virtual {p0, v3, v2}, Le8/k;->B(Lorg/json/JSONObject;Z)Lo8/p;
 
     move-result-object v9
 
@@ -4124,7 +4124,7 @@
 
     move-object v3, v0
 
-    invoke-direct/range {v3 .. v11}, Lo8/c;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;JLo8/o;Ljava/lang/String;Lq8/b;)V
+    invoke-direct/range {v3 .. v11}, Lo8/c;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;JLo8/p;Ljava/lang/String;Lq8/b;)V
 
     const-string v1, "md_state"
 
@@ -4139,7 +4139,7 @@
 
     move-result v1
 
-    iput v1, v0, Lo8/y;->p:I
+    iput v1, v0, Lo8/z;->q:I
 
     const-string v1, "redacted"
 
@@ -4148,7 +4148,7 @@
 
     move-result p1
 
-    iput-boolean p1, v0, Lo8/y;->s:Z
+    iput-boolean p1, v0, Lo8/z;->t:Z
 
     return-object v0
 .end method
@@ -4161,7 +4161,7 @@
             "Lorg/json/JSONObject;",
             ")",
             "Ljava/util/List<",
-            "Lo8/y;",
+            "Lo8/z;",
             ">;"
         }
     .end annotation
@@ -4239,7 +4239,7 @@
 
     const/4 v10, 0x0
 
-    invoke-virtual {v1, v9, v10}, Le8/k;->B(Lorg/json/JSONObject;Z)Lo8/o;
+    invoke-virtual {v1, v9, v10}, Le8/k;->B(Lorg/json/JSONObject;Z)Lo8/p;
 
     move-result-object v9
 
@@ -4294,12 +4294,12 @@
     move-result-object v5
 
     .line 14
-    sget-object v13, Li8/b;->a:Lcom/helpshift/util/s;
+    sget-object v13, Li8/b;->a:Lcom/helpshift/util/r;
 
     add-int/lit8 v15, v11, 0x1
 
     .line 15
-    invoke-static {v13, v7, v15}, Li8/b;->a(Lcom/helpshift/util/s;Ljava/lang/String;I)Ljava/lang/String;
+    invoke-static {v13, v7, v15}, Li8/b;->a(Lcom/helpshift/util/r;Ljava/lang/String;I)Ljava/lang/String;
 
     move-result-object v14
 
@@ -4427,7 +4427,7 @@
 
     move/from16 v22, v25
 
-    invoke-direct/range {v11 .. v23}, Lo8/h;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;JLo8/o;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZI)V
+    invoke-direct/range {v11 .. v23}, Lo8/h;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;JLo8/p;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZI)V
 
     goto :goto_4
 
@@ -4457,14 +4457,14 @@
 
     move/from16 v22, v25
 
-    invoke-direct/range {v11 .. v22}, Lo8/e;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;JLo8/o;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)V
+    invoke-direct/range {v11 .. v22}, Lo8/e;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;JLo8/p;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)V
 
     .line 29
     :goto_4
-    iput v0, v10, Lo8/y;->p:I
+    iput v0, v10, Lo8/z;->q:I
 
     .line 30
-    iput-boolean v2, v10, Lo8/y;->s:Z
+    iput-boolean v2, v10, Lo8/z;->t:Z
 
     .line 31
     invoke-virtual {v4, v10}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
@@ -4489,7 +4489,7 @@
     move-exception v0
 
     .line 32
-    sget-object v1, Ld8/c;->f:Ld8/c;
+    sget-object v1, Ld8/c;->g:Ld8/c;
 
     const-string v2, "Parsing exception while reading admin attachment message"
 
@@ -4507,7 +4507,7 @@
     goto :goto_6
 .end method
 
-.method public final e(Lorg/json/JSONObject;)Lo8/y;
+.method public final e(Lorg/json/JSONObject;)Lo8/z;
     .locals 19
 
     move-object/from16 v1, p0
@@ -4568,7 +4568,7 @@
 
     const/4 v15, 0x0
 
-    invoke-virtual {v1, v4, v15}, Le8/k;->B(Lorg/json/JSONObject;Z)Lo8/o;
+    invoke-virtual {v1, v4, v15}, Le8/k;->B(Lorg/json/JSONObject;Z)Lo8/p;
 
     move-result-object v10
 
@@ -4632,7 +4632,7 @@
 
     move-object/from16 v18, v2
 
-    invoke-direct/range {v4 .. v18}, Lo8/g;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;JLo8/o;Ljava/lang/String;ZLjava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;Ljava/util/List;)V
+    invoke-direct/range {v4 .. v18}, Lo8/g;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;JLo8/p;Ljava/lang/String;ZLjava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;Ljava/util/List;)V
 
     const-string v2, "md_state"
 
@@ -4647,7 +4647,7 @@
 
     move-result v2
 
-    iput v2, v3, Lo8/y;->p:I
+    iput v2, v3, Lo8/z;->q:I
 
     const-string v2, "redacted"
 
@@ -4658,7 +4658,7 @@
 
     move-result v0
 
-    iput-boolean v0, v3, Lo8/y;->s:Z
+    iput-boolean v0, v3, Lo8/z;->t:Z
     :try_end_0
     .catch Lorg/json/JSONException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -4668,7 +4668,7 @@
     move-exception v0
 
     .line 18
-    sget-object v2, Ld8/c;->f:Ld8/c;
+    sget-object v2, Ld8/c;->g:Ld8/c;
 
     const-string v3, "Parsing exception while reading admin resolution message with option input"
 
@@ -4728,7 +4728,7 @@
 
     const/4 v15, 0x0
 
-    invoke-virtual {v1, v4, v15}, Le8/k;->B(Lorg/json/JSONObject;Z)Lo8/o;
+    invoke-virtual {v1, v4, v15}, Le8/k;->B(Lorg/json/JSONObject;Z)Lo8/p;
 
     move-result-object v10
 
@@ -4779,7 +4779,7 @@
 
     move-object v15, v2
 
-    invoke-direct/range {v4 .. v17}, Lo8/l;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;JLo8/o;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;Ljava/lang/String;IZ)V
+    invoke-direct/range {v4 .. v17}, Lo8/l;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;JLo8/p;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;Ljava/lang/String;IZ)V
 
     const-string v2, "md_state"
 
@@ -4794,7 +4794,7 @@
 
     move-result v2
 
-    iput v2, v3, Lo8/y;->p:I
+    iput v2, v3, Lo8/z;->q:I
 
     const-string v2, "redacted"
 
@@ -4805,7 +4805,7 @@
 
     move-result v0
 
-    iput-boolean v0, v3, Lo8/y;->s:Z
+    iput-boolean v0, v3, Lo8/z;->t:Z
     :try_end_0
     .catch Lorg/json/JSONException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -4815,7 +4815,7 @@
     move-exception v0
 
     .line 14
-    sget-object v2, Ld8/c;->f:Ld8/c;
+    sget-object v2, Ld8/c;->g:Ld8/c;
 
     const-string v3, "Parsing exception while reading admin empty message with text input"
 
@@ -4834,7 +4834,7 @@
             "Ljava/lang/String;",
             "Lorg/json/JSONObject;",
             "Ljava/util/List<",
-            "Lo8/y;",
+            "Lo8/z;",
             ">;)V"
         }
     .end annotation
@@ -5102,7 +5102,7 @@
 
     move-result-object p1
 
-    invoke-virtual {p0, p1, v2}, Le8/k;->p(Ljava/lang/String;Z)Lo8/y;
+    invoke-virtual {p0, p1, v2}, Le8/k;->p(Ljava/lang/String;Z)Lo8/z;
 
     move-result-object p1
 
@@ -5112,7 +5112,7 @@
 
     .line 4
     :pswitch_1
-    invoke-virtual {p0, p2}, Le8/k;->e(Lorg/json/JSONObject;)Lo8/y;
+    invoke-virtual {p0, p2}, Le8/k;->e(Lorg/json/JSONObject;)Lo8/z;
 
     move-result-object p1
 
@@ -5142,7 +5142,7 @@
 
     .line 7
     :pswitch_4
-    invoke-virtual {p0, p2}, Le8/k;->x(Lorg/json/JSONObject;)Lo8/y;
+    invoke-virtual {p0, p2}, Le8/k;->x(Lorg/json/JSONObject;)Lo8/z;
 
     move-result-object p1
 
@@ -5152,7 +5152,7 @@
 
     .line 8
     :pswitch_5
-    invoke-virtual {p0, p2}, Le8/k;->w(Lorg/json/JSONObject;)Lo8/t;
+    invoke-virtual {p0, p2}, Le8/k;->w(Lorg/json/JSONObject;)Lo8/u;
 
     move-result-object p1
 
@@ -5162,7 +5162,7 @@
 
     .line 9
     :pswitch_6
-    invoke-virtual {p0, p2}, Le8/k;->K(Lorg/json/JSONObject;)Lo8/b0;
+    invoke-virtual {p0, p2}, Le8/k;->K(Lorg/json/JSONObject;)Lo8/d0;
 
     move-result-object p1
 
@@ -5182,7 +5182,7 @@
 
     .line 11
     :pswitch_8
-    invoke-virtual {p0, p2}, Le8/k;->J(Lorg/json/JSONObject;)Lo8/a0;
+    invoke-virtual {p0, p2}, Le8/k;->J(Lorg/json/JSONObject;)Lo8/c0;
 
     move-result-object p1
 
@@ -5273,7 +5273,7 @@
 
     move-result-object p1
 
-    invoke-virtual {p0, p1}, Le8/k;->U(Ljava/lang/String;)Lo8/m0;
+    invoke-virtual {p0, p1}, Le8/k;->U(Ljava/lang/String;)Lo8/o0;
 
     move-result-object p1
 
@@ -5297,7 +5297,7 @@
 
     move-result-object v1
 
-    check-cast v1, Lo8/y;
+    check-cast v1, Lo8/z;
 
     const-string v2, "feedback_message"
 
@@ -5306,7 +5306,7 @@
 
     move-result v2
 
-    iput-boolean v2, v1, Lo8/y;->y:Z
+    iput-boolean v2, v1, Lo8/z;->z:Z
 
     goto :goto_4
 
@@ -5326,7 +5326,7 @@
     const-string p3, "Exception while parsing messages: "
 
     .line 24
-    invoke-static {p2, p3, p1}, Landroidx/savedstate/d;->g(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {p2, p3, p1}, Le5/i;->i(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
     :goto_5
     return-void
@@ -5384,7 +5384,7 @@
             "Lorg/json/JSONObject;",
             ")",
             "Ljava/util/List<",
-            "Lo8/y;",
+            "Lo8/z;",
             ">;"
         }
     .end annotation
@@ -5432,13 +5432,13 @@
 
     const/4 v9, 0x0
 
-    invoke-virtual {p0, v2, v9}, Le8/k;->B(Lorg/json/JSONObject;Z)Lo8/o;
+    invoke-virtual {p0, v2, v9}, Le8/k;->B(Lorg/json/JSONObject;Z)Lo8/p;
 
     move-result-object v8
 
     move-object v2, v1
 
-    invoke-direct/range {v2 .. v8}, Lo8/j;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;JLo8/o;)V
+    invoke-direct/range {v2 .. v8}, Lo8/j;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;JLo8/p;)V
 
     const-string v2, "md_state"
 
@@ -5453,7 +5453,7 @@
 
     move-result v2
 
-    iput v2, v1, Lo8/y;->p:I
+    iput v2, v1, Lo8/z;->q:I
 
     const-string v2, "redacted"
 
@@ -5462,7 +5462,7 @@
 
     move-result v2
 
-    iput-boolean v2, v1, Lo8/y;->s:Z
+    iput-boolean v2, v1, Lo8/z;->t:Z
 
     .line 9
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
@@ -5482,7 +5482,7 @@
     move-exception p1
 
     .line 11
-    sget-object v0, Ld8/c;->f:Ld8/c;
+    sget-object v0, Ld8/c;->g:Ld8/c;
 
     const-string v1, "Parsing exception while reading admin text message"
 
@@ -5501,7 +5501,7 @@
             "Lorg/json/JSONObject;",
             ")",
             "Ljava/util/List<",
-            "Lo8/y;",
+            "Lo8/z;",
             ">;"
         }
     .end annotation
@@ -5549,13 +5549,13 @@
 
     const/4 v9, 0x0
 
-    invoke-virtual {p0, v2, v9}, Le8/k;->B(Lorg/json/JSONObject;Z)Lo8/o;
+    invoke-virtual {p0, v2, v9}, Le8/k;->B(Lorg/json/JSONObject;Z)Lo8/p;
 
     move-result-object v8
 
     move-object v2, v1
 
-    invoke-direct/range {v2 .. v8}, Lo8/j;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;JLo8/o;)V
+    invoke-direct/range {v2 .. v8}, Lo8/j;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;JLo8/p;)V
 
     const-string v2, "md_state"
 
@@ -5570,7 +5570,7 @@
 
     move-result v2
 
-    iput v2, v1, Lo8/y;->p:I
+    iput v2, v1, Lo8/z;->q:I
 
     const-string v2, "redacted"
 
@@ -5579,7 +5579,7 @@
 
     move-result v2
 
-    iput-boolean v2, v1, Lo8/y;->s:Z
+    iput-boolean v2, v1, Lo8/z;->t:Z
 
     .line 9
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
@@ -5599,7 +5599,7 @@
     move-exception p1
 
     .line 11
-    sget-object v0, Ld8/c;->f:Ld8/c;
+    sget-object v0, Ld8/c;->g:Ld8/c;
 
     const-string v1, "Parsing exception while reading admin action card message"
 
@@ -5618,7 +5618,7 @@
             "Lorg/json/JSONObject;",
             ")",
             "Ljava/util/List<",
-            "Lo8/y;",
+            "Lo8/z;",
             ">;"
         }
     .end annotation
@@ -5677,7 +5677,7 @@
 
     const/4 v15, 0x0
 
-    invoke-virtual {v1, v5, v15}, Le8/k;->B(Lorg/json/JSONObject;Z)Lo8/o;
+    invoke-virtual {v1, v5, v15}, Le8/k;->B(Lorg/json/JSONObject;Z)Lo8/p;
 
     move-result-object v11
 
@@ -5736,7 +5736,7 @@
 
     move/from16 v17, v3
 
-    invoke-direct/range {v5 .. v17}, Lo8/k;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;JLo8/o;Ljava/lang/String;ZLjava/lang/String;Ljava/lang/String;Ljava/util/List;I)V
+    invoke-direct/range {v5 .. v17}, Lo8/k;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;JLo8/p;Ljava/lang/String;ZLjava/lang/String;Ljava/lang/String;Ljava/util/List;I)V
 
     const-string v3, "md_state"
 
@@ -5751,7 +5751,7 @@
 
     move-result v3
 
-    iput v3, v4, Lo8/y;->p:I
+    iput v3, v4, Lo8/z;->q:I
 
     const-string v3, "redacted"
 
@@ -5760,7 +5760,7 @@
 
     move-result v2
 
-    iput-boolean v2, v4, Lo8/y;->s:Z
+    iput-boolean v2, v4, Lo8/z;->t:Z
 
     .line 17
     invoke-virtual/range {p0 .. p1}, Le8/k;->d(Lorg/json/JSONObject;)Ljava/util/List;
@@ -5776,7 +5776,7 @@
 
     move-result v2
 
-    iput v2, v4, Lo8/k;->A:I
+    iput v2, v4, Lo8/k;->B:I
 
     move-object/from16 v2, v18
 
@@ -5794,7 +5794,7 @@
     move-exception v0
 
     .line 21
-    sget-object v2, Ld8/c;->f:Ld8/c;
+    sget-object v2, Ld8/c;->g:Ld8/c;
 
     const-string v3, "Parsing exception while reading admin text message with option input"
 
@@ -5814,7 +5814,7 @@
             "Lorg/json/JSONObject;",
             "I)",
             "Ljava/util/List<",
-            "Lo8/y;",
+            "Lo8/z;",
             ">;"
         }
     .end annotation
@@ -5874,7 +5874,7 @@
 
     const/4 v15, 0x0
 
-    invoke-virtual {v1, v5, v15}, Le8/k;->B(Lorg/json/JSONObject;Z)Lo8/o;
+    invoke-virtual {v1, v5, v15}, Le8/k;->B(Lorg/json/JSONObject;Z)Lo8/p;
 
     move-result-object v11
 
@@ -5932,7 +5932,7 @@
 
     move/from16 v17, p2
 
-    invoke-direct/range {v5 .. v18}, Lo8/l;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;JLo8/o;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;Ljava/lang/String;IZ)V
+    invoke-direct/range {v5 .. v18}, Lo8/l;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;JLo8/p;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;Ljava/lang/String;IZ)V
 
     const-string v3, "md_state"
 
@@ -5947,7 +5947,7 @@
 
     move-result v3
 
-    iput v3, v4, Lo8/y;->p:I
+    iput v3, v4, Lo8/z;->q:I
 
     const-string v3, "redacted"
 
@@ -5956,7 +5956,7 @@
 
     move-result v2
 
-    iput-boolean v2, v4, Lo8/y;->s:Z
+    iput-boolean v2, v4, Lo8/z;->t:Z
 
     move-object/from16 v2, v19
 
@@ -5978,7 +5978,7 @@
     move-exception v0
 
     .line 19
-    sget-object v2, Ld8/c;->f:Ld8/c;
+    sget-object v2, Ld8/c;->g:Ld8/c;
 
     const-string v3, "Parsing exception while reading admin message with text input"
 
@@ -5997,7 +5997,7 @@
             "Lorg/json/JSONObject;",
             ")",
             "Ljava/util/List<",
-            "Lo8/y;",
+            "Lo8/z;",
             ">;"
         }
     .end annotation
@@ -6056,7 +6056,7 @@
 
     const/4 v15, 0x0
 
-    invoke-virtual {v1, v5, v15}, Le8/k;->B(Lorg/json/JSONObject;Z)Lo8/o;
+    invoke-virtual {v1, v5, v15}, Le8/k;->B(Lorg/json/JSONObject;Z)Lo8/p;
 
     move-result-object v11
 
@@ -6115,7 +6115,7 @@
 
     move/from16 v17, v3
 
-    invoke-direct/range {v5 .. v17}, Lo8/m;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;JLo8/o;Ljava/lang/String;ZLjava/lang/String;Ljava/lang/String;Ljava/util/List;I)V
+    invoke-direct/range {v5 .. v17}, Lo8/m;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;JLo8/p;Ljava/lang/String;ZLjava/lang/String;Ljava/lang/String;Ljava/util/List;I)V
 
     const-string v3, "md_state"
 
@@ -6130,7 +6130,7 @@
 
     move-result v3
 
-    iput v3, v4, Lo8/y;->p:I
+    iput v3, v4, Lo8/z;->q:I
 
     const-string v3, "redacted"
 
@@ -6139,7 +6139,7 @@
 
     move-result v2
 
-    iput-boolean v2, v4, Lo8/y;->s:Z
+    iput-boolean v2, v4, Lo8/z;->t:Z
 
     .line 17
     invoke-virtual/range {p0 .. p1}, Le8/k;->d(Lorg/json/JSONObject;)Ljava/util/List;
@@ -6155,7 +6155,7 @@
 
     move-result v2
 
-    iput v2, v4, Lo8/m;->A:I
+    iput v2, v4, Lo8/m;->B:I
 
     move-object/from16 v2, v18
 
@@ -6173,7 +6173,7 @@
     move-exception v0
 
     .line 21
-    sget-object v2, Ld8/c;->f:Ld8/c;
+    sget-object v2, Ld8/c;->g:Ld8/c;
 
     const-string v3, "Parsing exception while reading admin resolution message with option input"
 
@@ -6185,7 +6185,7 @@
     throw v0
 .end method
 
-.method public final m(Lo8/y;Lorg/json/JSONObject;)V
+.method public final m(Lo8/z;Lorg/json/JSONObject;)V
     .locals 2
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -6194,7 +6194,7 @@
     .end annotation
 
     .line 1
-    instance-of v0, p1, Lo8/s;
+    instance-of v0, p1, Lo8/t;
 
     xor-int/lit8 v0, v0, 0x1
 
@@ -6205,11 +6205,11 @@
 
     move-result-object v1
 
-    invoke-virtual {p0, v1, v0}, Le8/k;->B(Lorg/json/JSONObject;Z)Lo8/o;
+    invoke-virtual {p0, v1, v0}, Le8/k;->B(Lorg/json/JSONObject;Z)Lo8/p;
 
     move-result-object v0
 
-    iput-object v0, p1, Lo8/y;->k:Lo8/o;
+    iput-object v0, p1, Lo8/z;->l:Lo8/p;
 
     const-string v0, "request_id"
 
@@ -6218,7 +6218,7 @@
 
     move-result-object p2
 
-    iput-object p2, p1, Lo8/y;->r:Ljava/lang/String;
+    iput-object p2, p1, Lo8/z;->s:Ljava/lang/String;
 
     return-void
 .end method
@@ -6263,7 +6263,7 @@
     const-string v1, "Exception in parsing auth token"
 
     .line 5
-    invoke-static {v0, v1, p1}, Landroidx/savedstate/d;->g(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v0, v1, p1}, Le5/i;->i(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
     const/4 v1, 0x0
 
@@ -6368,7 +6368,7 @@
     return-object v10
 .end method
 
-.method public final p(Ljava/lang/String;Z)Lo8/y;
+.method public final p(Ljava/lang/String;Z)Lo8/z;
     .locals 17
 
     move-object/from16 v1, p0
@@ -6449,7 +6449,7 @@
 
     move-result-object v3
 
-    invoke-virtual {v1, v3, v12}, Le8/k;->B(Lorg/json/JSONObject;Z)Lo8/o;
+    invoke-virtual {v1, v3, v12}, Le8/k;->B(Lorg/json/JSONObject;Z)Lo8/p;
 
     move-result-object v9
 
@@ -6459,7 +6459,7 @@
 
     move-object v10, v2
 
-    invoke-direct/range {v3 .. v11}, Lo8/f;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;JLo8/o;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct/range {v3 .. v11}, Lo8/f;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;JLo8/p;Ljava/lang/String;Ljava/lang/String;)V
 
     const-string v2, "has_next_bot"
 
@@ -6468,10 +6468,10 @@
 
     move-result v0
 
-    iput-boolean v0, v13, Lo8/f;->A:Z
+    iput-boolean v0, v13, Lo8/f;->B:Z
 
     .line 12
-    iput-boolean v15, v13, Lo8/y;->s:Z
+    iput-boolean v15, v13, Lo8/z;->t:Z
 
     return-object v13
 
@@ -6498,7 +6498,7 @@
     move-result-object v12
 
     .line 16
-    new-instance v13, Lo8/q0;
+    new-instance v13, Lo8/s0;
 
     .line 17
     invoke-virtual {v0, v4}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
@@ -6512,7 +6512,7 @@
 
     const/4 v5, 0x1
 
-    invoke-virtual {v1, v3, v5}, Le8/k;->B(Lorg/json/JSONObject;Z)Lo8/o;
+    invoke-virtual {v1, v3, v5}, Le8/k;->B(Lorg/json/JSONObject;Z)Lo8/p;
 
     move-result-object v9
 
@@ -6532,16 +6532,16 @@
 
     move/from16 v13, v16
 
-    invoke-direct/range {v3 .. v13}, Lo8/q0;-><init>(Ljava/lang/String;Ljava/lang/String;JLo8/o;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;I)V
+    invoke-direct/range {v3 .. v13}, Lo8/s0;-><init>(Ljava/lang/String;Ljava/lang/String;JLo8/p;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;I)V
 
     .line 19
-    iput-object v14, v2, Lo8/y;->i:Ljava/lang/String;
+    iput-object v14, v2, Lo8/z;->j:Ljava/lang/String;
 
     .line 20
-    iput-boolean v15, v2, Lo8/y;->s:Z
+    iput-boolean v15, v2, Lo8/z;->t:Z
 
     .line 21
-    invoke-virtual {v1, v2, v0}, Le8/k;->m(Lo8/y;Lorg/json/JSONObject;)V
+    invoke-virtual {v1, v2, v0}, Le8/k;->m(Lo8/z;Lorg/json/JSONObject;)V
     :try_end_1
     .catch Lorg/json/JSONException; {:try_start_1 .. :try_end_1} :catch_0
 
@@ -6551,7 +6551,7 @@
     move-exception v0
 
     .line 22
-    sget-object v2, Ld8/c;->f:Ld8/c;
+    sget-object v2, Ld8/c;->g:Ld8/c;
 
     const-string v3, "Parsing exception while reading bot control messages."
 
@@ -7044,7 +7044,7 @@
 
     .line 47
     :goto_6
-    sget-object v1, Ld8/c;->f:Ld8/c;
+    sget-object v1, Ld8/c;->g:Ld8/c;
 
     const-string v3, "Parsing exception while fetching config"
 
@@ -7055,116 +7055,8 @@
     throw v0
 .end method
 
-.method public final r(Ljava/lang/String;)Lo8/r;
+.method public final r(Ljava/lang/String;)Lo8/s;
     .locals 8
-
-    .line 1
-    :try_start_0
-    new-instance v0, Lorg/json/JSONObject;
-
-    invoke-direct {v0, p1}, Lorg/json/JSONObject;-><init>(Ljava/lang/String;)V
-
-    const-string p1, "created_at"
-
-    .line 2
-    invoke-virtual {v0, p1}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v3
-
-    .line 3
-    invoke-static {v3}, Li8/b;->b(Ljava/lang/String;)J
-
-    move-result-wide v4
-
-    .line 4
-    new-instance p1, Lo8/r;
-
-    const-string v1, "body"
-
-    .line 5
-    invoke-virtual {v0, v1}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v2
-
-    const-string v1, "author"
-
-    .line 6
-    invoke-virtual {v0, v1}, Lorg/json/JSONObject;->getJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
-
-    move-result-object v1
-
-    const/4 v6, 0x1
-
-    invoke-virtual {p0, v1, v6}, Le8/k;->B(Lorg/json/JSONObject;Z)Lo8/o;
-
-    move-result-object v6
-
-    const/4 v7, 0x2
-
-    move-object v1, p1
-
-    invoke-direct/range {v1 .. v7}, Lo8/r;-><init>(Ljava/lang/String;Ljava/lang/String;JLo8/o;I)V
-
-    const-string v1, "id"
-
-    .line 7
-    invoke-virtual {v0, v1}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v1
-
-    iput-object v1, p1, Lo8/y;->i:Ljava/lang/String;
-
-    const-string v1, "md_state"
-
-    const-string v2, ""
-
-    .line 8
-    invoke-virtual {v0, v1, v2}, Lorg/json/JSONObject;->optString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-virtual {p0, v1}, Le8/k;->a(Ljava/lang/String;)I
-
-    move-result v1
-
-    iput v1, p1, Lo8/y;->p:I
-
-    const-string v1, "redacted"
-
-    const/4 v2, 0x0
-
-    .line 9
-    invoke-virtual {v0, v1, v2}, Lorg/json/JSONObject;->optBoolean(Ljava/lang/String;Z)Z
-
-    move-result v1
-
-    iput-boolean v1, p1, Lo8/y;->s:Z
-
-    .line 10
-    invoke-virtual {p0, p1, v0}, Le8/k;->m(Lo8/y;Lorg/json/JSONObject;)V
-    :try_end_0
-    .catch Lorg/json/JSONException; {:try_start_0 .. :try_end_0} :catch_0
-
-    return-object p1
-
-    :catch_0
-    move-exception p1
-
-    .line 11
-    sget-object v0, Ld8/c;->f:Ld8/c;
-
-    const-string v1, "Parsing exception while reading confirmation accepted message"
-
-    .line 12
-    invoke-static {p1, v0, v1}, Lcom/helpshift/common/exception/RootAPIException;->b(Ljava/lang/Exception;Ld8/a;Ljava/lang/String;)Lcom/helpshift/common/exception/RootAPIException;
-
-    move-result-object p1
-
-    throw p1
-.end method
-
-.method public final s(Ljava/lang/String;)Lo8/s;
-    .locals 9
 
     .line 1
     :try_start_0
@@ -7201,9 +7093,9 @@
 
     move-result-object v1
 
-    const/4 v8, 0x0
+    const/4 v6, 0x1
 
-    invoke-virtual {p0, v1, v8}, Le8/k;->B(Lorg/json/JSONObject;Z)Lo8/o;
+    invoke-virtual {p0, v1, v6}, Le8/k;->B(Lorg/json/JSONObject;Z)Lo8/p;
 
     move-result-object v6
 
@@ -7211,7 +7103,7 @@
 
     move-object v1, p1
 
-    invoke-direct/range {v1 .. v7}, Lo8/s;-><init>(Ljava/lang/String;Ljava/lang/String;JLo8/o;I)V
+    invoke-direct/range {v1 .. v7}, Lo8/s;-><init>(Ljava/lang/String;Ljava/lang/String;JLo8/p;I)V
 
     const-string v1, "id"
 
@@ -7220,7 +7112,7 @@
 
     move-result-object v1
 
-    iput-object v1, p1, Lo8/y;->i:Ljava/lang/String;
+    iput-object v1, p1, Lo8/z;->j:Ljava/lang/String;
 
     const-string v1, "md_state"
 
@@ -7235,19 +7127,21 @@
 
     move-result v1
 
-    iput v1, p1, Lo8/y;->p:I
+    iput v1, p1, Lo8/z;->q:I
 
     const-string v1, "redacted"
 
+    const/4 v2, 0x0
+
     .line 9
-    invoke-virtual {v0, v1, v8}, Lorg/json/JSONObject;->optBoolean(Ljava/lang/String;Z)Z
+    invoke-virtual {v0, v1, v2}, Lorg/json/JSONObject;->optBoolean(Ljava/lang/String;Z)Z
 
     move-result v1
 
-    iput-boolean v1, p1, Lo8/y;->s:Z
+    iput-boolean v1, p1, Lo8/z;->t:Z
 
     .line 10
-    invoke-virtual {p0, p1, v0}, Le8/k;->m(Lo8/y;Lorg/json/JSONObject;)V
+    invoke-virtual {p0, p1, v0}, Le8/k;->m(Lo8/z;Lorg/json/JSONObject;)V
     :try_end_0
     .catch Lorg/json/JSONException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -7257,7 +7151,113 @@
     move-exception p1
 
     .line 11
-    sget-object v0, Ld8/c;->f:Ld8/c;
+    sget-object v0, Ld8/c;->g:Ld8/c;
+
+    const-string v1, "Parsing exception while reading confirmation accepted message"
+
+    .line 12
+    invoke-static {p1, v0, v1}, Lcom/helpshift/common/exception/RootAPIException;->b(Ljava/lang/Exception;Ld8/a;Ljava/lang/String;)Lcom/helpshift/common/exception/RootAPIException;
+
+    move-result-object p1
+
+    throw p1
+.end method
+
+.method public final s(Ljava/lang/String;)Lo8/t;
+    .locals 9
+
+    .line 1
+    :try_start_0
+    new-instance v0, Lorg/json/JSONObject;
+
+    invoke-direct {v0, p1}, Lorg/json/JSONObject;-><init>(Ljava/lang/String;)V
+
+    const-string p1, "created_at"
+
+    .line 2
+    invoke-virtual {v0, p1}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v3
+
+    .line 3
+    invoke-static {v3}, Li8/b;->b(Ljava/lang/String;)J
+
+    move-result-wide v4
+
+    .line 4
+    new-instance p1, Lo8/t;
+
+    const-string v1, "body"
+
+    .line 5
+    invoke-virtual {v0, v1}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    const-string v1, "author"
+
+    .line 6
+    invoke-virtual {v0, v1}, Lorg/json/JSONObject;->getJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
+
+    move-result-object v1
+
+    const/4 v8, 0x0
+
+    invoke-virtual {p0, v1, v8}, Le8/k;->B(Lorg/json/JSONObject;Z)Lo8/p;
+
+    move-result-object v6
+
+    const/4 v7, 0x2
+
+    move-object v1, p1
+
+    invoke-direct/range {v1 .. v7}, Lo8/t;-><init>(Ljava/lang/String;Ljava/lang/String;JLo8/p;I)V
+
+    const-string v1, "id"
+
+    .line 7
+    invoke-virtual {v0, v1}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v1
+
+    iput-object v1, p1, Lo8/z;->j:Ljava/lang/String;
+
+    const-string v1, "md_state"
+
+    const-string v2, ""
+
+    .line 8
+    invoke-virtual {v0, v1, v2}, Lorg/json/JSONObject;->optString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {p0, v1}, Le8/k;->a(Ljava/lang/String;)I
+
+    move-result v1
+
+    iput v1, p1, Lo8/z;->q:I
+
+    const-string v1, "redacted"
+
+    .line 9
+    invoke-virtual {v0, v1, v8}, Lorg/json/JSONObject;->optBoolean(Ljava/lang/String;Z)Z
+
+    move-result v1
+
+    iput-boolean v1, p1, Lo8/z;->t:Z
+
+    .line 10
+    invoke-virtual {p0, p1, v0}, Le8/k;->m(Lo8/z;Lorg/json/JSONObject;)V
+    :try_end_0
+    .catch Lorg/json/JSONException; {:try_start_0 .. :try_end_0} :catch_0
+
+    return-object p1
+
+    :catch_0
+    move-exception p1
+
+    .line 11
+    sget-object v0, Ld8/c;->g:Ld8/c;
 
     const-string v1, "Parsing exception while reading confirmation rejected message"
 
@@ -7368,7 +7368,7 @@
     move-exception p1
 
     .line 11
-    sget-object v0, Ld8/c;->f:Ld8/c;
+    sget-object v0, Ld8/c;->g:Ld8/c;
 
     const-string v1, "Parsing exception while reading conversation inbox"
 
@@ -7427,7 +7427,7 @@
             "Lorg/json/JSONArray;",
             ")",
             "Ljava/util/List<",
-            "Lo8/t$a;",
+            "Lo8/u$a;",
             ">;"
         }
     .end annotation
@@ -7466,7 +7466,7 @@
     move-result-object v3
 
     .line 5
-    new-instance v4, Lo8/t$a;
+    new-instance v4, Lo8/u$a;
 
     const-string v5, "title"
 
@@ -7488,7 +7488,7 @@
 
     move-result-object v3
 
-    invoke-direct {v4, v2, v5, v3}, Lo8/t$a;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {v4, v2, v5, v3}, Lo8/u$a;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     .line 8
     invoke-virtual {v0, v4}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
@@ -7501,7 +7501,7 @@
     return-object v0
 .end method
 
-.method public final w(Lorg/json/JSONObject;)Lo8/t;
+.method public final w(Lorg/json/JSONObject;)Lo8/u;
     .locals 11
 
     :try_start_0
@@ -7518,7 +7518,7 @@
     move-result-wide v5
 
     .line 3
-    new-instance v0, Lo8/t;
+    new-instance v0, Lo8/u;
 
     const-string v1, "id"
 
@@ -7542,7 +7542,7 @@
 
     const/4 v10, 0x0
 
-    invoke-virtual {p0, v1, v10}, Le8/k;->B(Lorg/json/JSONObject;Z)Lo8/o;
+    invoke-virtual {p0, v1, v10}, Le8/k;->B(Lorg/json/JSONObject;Z)Lo8/p;
 
     move-result-object v7
 
@@ -7566,7 +7566,7 @@
 
     move-object v1, v0
 
-    invoke-direct/range {v1 .. v9}, Lo8/t;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;JLo8/o;Ljava/util/List;Ljava/lang/String;)V
+    invoke-direct/range {v1 .. v9}, Lo8/u;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;JLo8/p;Ljava/util/List;Ljava/lang/String;)V
 
     const-string v1, "md_state"
 
@@ -7581,7 +7581,7 @@
 
     move-result v1
 
-    iput v1, v0, Lo8/y;->p:I
+    iput v1, v0, Lo8/z;->q:I
 
     const-string v1, "redacted"
 
@@ -7590,7 +7590,7 @@
 
     move-result p1
 
-    iput-boolean p1, v0, Lo8/y;->s:Z
+    iput-boolean p1, v0, Lo8/z;->t:Z
     :try_end_0
     .catch Lorg/json/JSONException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -7600,7 +7600,7 @@
     move-exception p1
 
     .line 10
-    sget-object v0, Ld8/c;->f:Ld8/c;
+    sget-object v0, Ld8/c;->g:Ld8/c;
 
     const-string v1, "Parsing exception while reading faq list message"
 
@@ -7611,7 +7611,7 @@
     throw p1
 .end method
 
-.method public final x(Lorg/json/JSONObject;)Lo8/y;
+.method public final x(Lorg/json/JSONObject;)Lo8/z;
     .locals 18
 
     move-object/from16 v1, p0
@@ -7639,7 +7639,7 @@
     move-result-wide v8
 
     .line 4
-    new-instance v3, Lo8/u;
+    new-instance v3, Lo8/v;
 
     const-string v4, "id"
 
@@ -7663,7 +7663,7 @@
 
     const/4 v15, 0x0
 
-    invoke-virtual {v1, v4, v15}, Le8/k;->B(Lorg/json/JSONObject;Z)Lo8/o;
+    invoke-virtual {v1, v4, v15}, Le8/k;->B(Lorg/json/JSONObject;Z)Lo8/p;
 
     move-result-object v10
 
@@ -7730,7 +7730,7 @@
 
     move-object/from16 v17, v2
 
-    invoke-direct/range {v4 .. v17}, Lo8/u;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;JLo8/o;Ljava/util/List;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;Ljava/lang/String;Ljava/util/List;)V
+    invoke-direct/range {v4 .. v17}, Lo8/v;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;JLo8/p;Ljava/util/List;Ljava/lang/String;Ljava/lang/String;ZLjava/lang/String;Ljava/lang/String;Ljava/util/List;)V
 
     const-string v2, "md_state"
 
@@ -7745,7 +7745,7 @@
 
     move-result v2
 
-    iput v2, v3, Lo8/y;->p:I
+    iput v2, v3, Lo8/z;->q:I
 
     const-string v2, "redacted"
 
@@ -7756,7 +7756,7 @@
 
     move-result v0
 
-    iput-boolean v0, v3, Lo8/y;->s:Z
+    iput-boolean v0, v3, Lo8/z;->t:Z
     :try_end_0
     .catch Lorg/json/JSONException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -7766,7 +7766,7 @@
     move-exception v0
 
     .line 16
-    sget-object v2, Ld8/c;->f:Ld8/c;
+    sget-object v2, Ld8/c;->g:Ld8/c;
 
     const-string v3, "Parsing exception while reading list message with option input"
 
@@ -7777,123 +7777,7 @@
     throw v0
 .end method
 
-.method public final y(Lorg/json/JSONObject;)Lo8/v;
-    .locals 9
-
-    :try_start_0
-    const-string v0, "created_at"
-
-    .line 1
-    invoke-virtual {p1, v0}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v3
-
-    .line 2
-    invoke-static {v3}, Li8/b;->b(Ljava/lang/String;)J
-
-    move-result-wide v4
-
-    .line 3
-    new-instance v0, Lo8/v;
-
-    const-string v1, "body"
-
-    .line 4
-    invoke-virtual {p1, v1}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v2
-
-    const-string v1, "author"
-
-    .line 5
-    invoke-virtual {p1, v1}, Lorg/json/JSONObject;->getJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
-
-    move-result-object v1
-
-    const/4 v6, 0x1
-
-    invoke-virtual {p0, v1, v6}, Le8/k;->B(Lorg/json/JSONObject;Z)Lo8/o;
-
-    move-result-object v6
-
-    const-string v1, "meta"
-
-    .line 6
-    invoke-virtual {p1, v1}, Lorg/json/JSONObject;->getJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
-
-    move-result-object v1
-
-    const-string v7, "refers"
-
-    invoke-virtual {v1, v7}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v7
-
-    const/4 v8, 0x2
-
-    move-object v1, v0
-
-    invoke-direct/range {v1 .. v8}, Lo8/v;-><init>(Ljava/lang/String;Ljava/lang/String;JLo8/o;Ljava/lang/String;I)V
-
-    const-string v1, "id"
-
-    .line 7
-    invoke-virtual {p1, v1}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v1
-
-    iput-object v1, v0, Lo8/y;->i:Ljava/lang/String;
-
-    const-string v1, "md_state"
-
-    const-string v2, ""
-
-    .line 8
-    invoke-virtual {p1, v1, v2}, Lorg/json/JSONObject;->optString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-virtual {p0, v1}, Le8/k;->a(Ljava/lang/String;)I
-
-    move-result v1
-
-    iput v1, v0, Lo8/y;->p:I
-
-    const-string v1, "redacted"
-
-    const/4 v2, 0x0
-
-    .line 9
-    invoke-virtual {p1, v1, v2}, Lorg/json/JSONObject;->optBoolean(Ljava/lang/String;Z)Z
-
-    move-result v1
-
-    iput-boolean v1, v0, Lo8/y;->s:Z
-
-    .line 10
-    invoke-virtual {p0, v0, p1}, Le8/k;->m(Lo8/y;Lorg/json/JSONObject;)V
-    :try_end_0
-    .catch Lorg/json/JSONException; {:try_start_0 .. :try_end_0} :catch_0
-
-    return-object v0
-
-    :catch_0
-    move-exception p1
-
-    .line 11
-    sget-object v0, Ld8/c;->f:Ld8/c;
-
-    const-string v1, "Parsing exception while reading follow-up accepted message"
-
-    .line 12
-    invoke-static {p1, v0, v1}, Lcom/helpshift/common/exception/RootAPIException;->b(Ljava/lang/Exception;Ld8/a;Ljava/lang/String;)Lcom/helpshift/common/exception/RootAPIException;
-
-    move-result-object p1
-
-    throw p1
-.end method
-
-.method public final z(Lorg/json/JSONObject;)Lo8/w;
+.method public final y(Lorg/json/JSONObject;)Lo8/w;
     .locals 9
 
     :try_start_0
@@ -7928,7 +7812,7 @@
 
     const/4 v6, 0x1
 
-    invoke-virtual {p0, v1, v6}, Le8/k;->B(Lorg/json/JSONObject;Z)Lo8/o;
+    invoke-virtual {p0, v1, v6}, Le8/k;->B(Lorg/json/JSONObject;Z)Lo8/p;
 
     move-result-object v6
 
@@ -7949,7 +7833,7 @@
 
     move-object v1, v0
 
-    invoke-direct/range {v1 .. v8}, Lo8/w;-><init>(Ljava/lang/String;Ljava/lang/String;JLo8/o;Ljava/lang/String;I)V
+    invoke-direct/range {v1 .. v8}, Lo8/w;-><init>(Ljava/lang/String;Ljava/lang/String;JLo8/p;Ljava/lang/String;I)V
 
     const-string v1, "id"
 
@@ -7958,7 +7842,7 @@
 
     move-result-object v1
 
-    iput-object v1, v0, Lo8/y;->i:Ljava/lang/String;
+    iput-object v1, v0, Lo8/z;->j:Ljava/lang/String;
 
     const-string v1, "md_state"
 
@@ -7973,7 +7857,7 @@
 
     move-result v1
 
-    iput v1, v0, Lo8/y;->p:I
+    iput v1, v0, Lo8/z;->q:I
 
     const-string v1, "redacted"
 
@@ -7984,10 +7868,10 @@
 
     move-result v1
 
-    iput-boolean v1, v0, Lo8/y;->s:Z
+    iput-boolean v1, v0, Lo8/z;->t:Z
 
     .line 10
-    invoke-virtual {p0, v0, p1}, Le8/k;->m(Lo8/y;Lorg/json/JSONObject;)V
+    invoke-virtual {p0, v0, p1}, Le8/k;->m(Lo8/z;Lorg/json/JSONObject;)V
     :try_end_0
     .catch Lorg/json/JSONException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -7997,7 +7881,123 @@
     move-exception p1
 
     .line 11
-    sget-object v0, Ld8/c;->f:Ld8/c;
+    sget-object v0, Ld8/c;->g:Ld8/c;
+
+    const-string v1, "Parsing exception while reading follow-up accepted message"
+
+    .line 12
+    invoke-static {p1, v0, v1}, Lcom/helpshift/common/exception/RootAPIException;->b(Ljava/lang/Exception;Ld8/a;Ljava/lang/String;)Lcom/helpshift/common/exception/RootAPIException;
+
+    move-result-object p1
+
+    throw p1
+.end method
+
+.method public final z(Lorg/json/JSONObject;)Lo8/x;
+    .locals 9
+
+    :try_start_0
+    const-string v0, "created_at"
+
+    .line 1
+    invoke-virtual {p1, v0}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v3
+
+    .line 2
+    invoke-static {v3}, Li8/b;->b(Ljava/lang/String;)J
+
+    move-result-wide v4
+
+    .line 3
+    new-instance v0, Lo8/x;
+
+    const-string v1, "body"
+
+    .line 4
+    invoke-virtual {p1, v1}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v2
+
+    const-string v1, "author"
+
+    .line 5
+    invoke-virtual {p1, v1}, Lorg/json/JSONObject;->getJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
+
+    move-result-object v1
+
+    const/4 v6, 0x1
+
+    invoke-virtual {p0, v1, v6}, Le8/k;->B(Lorg/json/JSONObject;Z)Lo8/p;
+
+    move-result-object v6
+
+    const-string v1, "meta"
+
+    .line 6
+    invoke-virtual {p1, v1}, Lorg/json/JSONObject;->getJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
+
+    move-result-object v1
+
+    const-string v7, "refers"
+
+    invoke-virtual {v1, v7}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v7
+
+    const/4 v8, 0x2
+
+    move-object v1, v0
+
+    invoke-direct/range {v1 .. v8}, Lo8/x;-><init>(Ljava/lang/String;Ljava/lang/String;JLo8/p;Ljava/lang/String;I)V
+
+    const-string v1, "id"
+
+    .line 7
+    invoke-virtual {p1, v1}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v1
+
+    iput-object v1, v0, Lo8/z;->j:Ljava/lang/String;
+
+    const-string v1, "md_state"
+
+    const-string v2, ""
+
+    .line 8
+    invoke-virtual {p1, v1, v2}, Lorg/json/JSONObject;->optString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {p0, v1}, Le8/k;->a(Ljava/lang/String;)I
+
+    move-result v1
+
+    iput v1, v0, Lo8/z;->q:I
+
+    const-string v1, "redacted"
+
+    const/4 v2, 0x0
+
+    .line 9
+    invoke-virtual {p1, v1, v2}, Lorg/json/JSONObject;->optBoolean(Ljava/lang/String;Z)Z
+
+    move-result v1
+
+    iput-boolean v1, v0, Lo8/z;->t:Z
+
+    .line 10
+    invoke-virtual {p0, v0, p1}, Le8/k;->m(Lo8/z;Lorg/json/JSONObject;)V
+    :try_end_0
+    .catch Lorg/json/JSONException; {:try_start_0 .. :try_end_0} :catch_0
+
+    return-object v0
+
+    :catch_0
+    move-exception p1
+
+    .line 11
+    sget-object v0, Ld8/c;->g:Ld8/c;
 
     const-string v1, "Parsing exception while reading follow-up rejected message"
 

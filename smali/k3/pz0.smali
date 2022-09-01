@@ -3,18 +3,7 @@
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Landroid/os/Parcelable$Creator;
-
-
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ljava/lang/Object;",
-        "Landroid/os/Parcelable$Creator<",
-        "Lcom/google/android/gms/internal/ads/zzmm;",
-        ">;"
-    }
-.end annotation
+.implements Lk3/qz0;
 
 
 # direct methods
@@ -28,20 +17,42 @@
 
 
 # virtual methods
-.method public final synthetic createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
+.method public final a()Z
     .locals 1
 
-    new-instance v0, Lcom/google/android/gms/internal/ads/zzmm;
+    const/4 v0, 0x0
 
-    invoke-direct {v0, p1}, Lcom/google/android/gms/internal/ads/zzmm;-><init>(Landroid/os/Parcel;)V
-
-    return-object v0
+    return v0
 .end method
 
-.method public final synthetic newArray(I)[Ljava/lang/Object;
+.method public final b(I)Landroid/media/MediaCodecInfo;
     .locals 0
 
-    new-array p1, p1, [Lcom/google/android/gms/internal/ads/zzmm;
+    invoke-static {p1}, Landroid/media/MediaCodecList;->getCodecInfoAt(I)Landroid/media/MediaCodecInfo;
+
+    move-result-object p1
 
     return-object p1
+.end method
+
+.method public final c()I
+    .locals 1
+
+    invoke-static {}, Landroid/media/MediaCodecList;->getCodecCount()I
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public final d(Ljava/lang/String;Landroid/media/MediaCodecInfo$CodecCapabilities;)Z
+    .locals 0
+
+    const-string p2, "video/avc"
+
+    invoke-virtual {p2, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result p1
+
+    return p1
 .end method

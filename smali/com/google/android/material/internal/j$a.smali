@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field public final synthetic f:Landroid/widget/TextView;
+.field public final synthetic g:Landroid/widget/TextView;
 
 
 # direct methods
 .method public constructor <init>(Landroid/widget/TextView;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/google/android/material/internal/j$a;->f:Landroid/widget/TextView;
+    iput-object p1, p0, Lcom/google/android/material/internal/j$a;->g:Landroid/widget/TextView;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -49,12 +49,12 @@
     move-result p1
 
     .line 2
-    iget-object v0, p0, Lcom/google/android/material/internal/j$a;->f:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/google/android/material/internal/j$a;->g:Landroid/widget/TextView;
 
     invoke-virtual {v0, p1}, Landroid/view/View;->setScaleX(F)V
 
     .line 3
-    iget-object v0, p0, Lcom/google/android/material/internal/j$a;->f:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/google/android/material/internal/j$a;->g:Landroid/widget/TextView;
 
     invoke-virtual {v0, p1}, Landroid/view/View;->setScaleY(F)V
 

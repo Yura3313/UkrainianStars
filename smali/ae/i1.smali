@@ -1,162 +1,143 @@
 .class public final Lae/i1;
-.super Lse/h;
+.super Lse/i;
 .source "ProfileUtil.kt"
 
 # interfaces
-.implements Lre/l;
+.implements Lre/p;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
-        "Lre/l<",
-        "Lae/i;",
-        "Lie/h;",
+        "Lse/i;",
+        "Lre/p<",
+        "Lae/p1;",
+        "Landroid/graphics/Bitmap;",
+        "Lie/i;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic f:Ljava/lang/String;
+.field public final synthetic g:I
 
-.field public final synthetic g:Lre/r;
+.field public final synthetic h:Landroid/content/res/Resources;
+
+.field public final synthetic i:Lre/p;
+
+.field public final synthetic j:Lre/p;
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;Lre/r;)V
+.method public constructor <init>(ILandroid/content/res/Resources;Lre/p;Lre/p;)V
     .locals 0
 
-    iput-object p1, p0, Lae/i1;->f:Ljava/lang/String;
+    iput p1, p0, Lae/i1;->g:I
 
-    iput-object p2, p0, Lae/i1;->g:Lre/r;
+    iput-object p2, p0, Lae/i1;->h:Landroid/content/res/Resources;
 
-    const/4 p1, 0x1
+    iput-object p3, p0, Lae/i1;->i:Lre/p;
 
-    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
+    iput-object p4, p0, Lae/i1;->j:Lre/p;
+
+    const/4 p1, 0x2
+
+    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 4
+.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 2
 
     .line 1
-    check-cast p1, Lae/i;
+    check-cast p1, Lae/p1;
 
-    const-string v0, "conf"
+    check-cast p2, Landroid/graphics/Bitmap;
+
+    const-string v0, "$receiver"
 
     .line 2
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string p1, "bitmap"
+
+    invoke-static {p2, p1}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 3
-    iget-object v0, p0, Lae/i1;->f:Ljava/lang/String;
+    iget-object p1, p0, Lae/i1;->h:Landroid/content/res/Resources;
 
-    const/4 v1, 0x0
+    .line 4
+    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
-    if-eqz v0, :cond_0
+    const/16 v1, 0x15
 
-    sget-object v2, Lae/e;->e:Lae/e$a;
+    if-lt v0, v1, :cond_0
 
-    invoke-virtual {v2, v0}, Lae/e$a;->a(Ljava/lang/String;)Lae/e;
+    .line 5
+    new-instance v0, Ly/b;
 
-    move-result-object v0
+    invoke-direct {v0, p1, p2}, Ly/b;-><init>(Landroid/content/res/Resources;Landroid/graphics/Bitmap;)V
 
     goto :goto_0
 
+    .line 6
     :cond_0
-    move-object v0, v1
+    new-instance v0, Ly/d;
+
+    invoke-direct {v0, p1, p2}, Ly/d;-><init>(Landroid/content/res/Resources;Landroid/graphics/Bitmap;)V
 
     :goto_0
-    if-eqz v0, :cond_2
-
-    .line 4
-    iget-object v2, v0, Lae/e;->a:Ljava/lang/String;
-
-    if-eqz v2, :cond_2
-
-    const/16 v3, 0x12
-
-    .line 5
-    invoke-virtual {p1, v3}, Lae/i;->d(I)Ljava/util/List;
-
-    move-result-object p1
-
-    if-eqz p1, :cond_1
-
-    invoke-interface {p1, v2}, Ljava/util/List;->indexOf(Ljava/lang/Object;)I
-
-    move-result p1
-
-    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v1
-
-    :cond_1
-    if-eqz v1, :cond_2
-
-    .line 6
-    invoke-virtual {v1}, Ljava/lang/Integer;->intValue()I
-
-    move-result p1
-
-    goto :goto_1
-
-    :cond_2
-    const/4 p1, -0x1
-
-    :goto_1
-    if-eqz v0, :cond_3
-
-    if-ltz p1, :cond_3
+    const/4 p1, 0x1
 
     .line 7
-    sget-object v1, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
-
-    invoke-virtual {v1}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lae/u;
-
-    move-result-object v1
+    iput-boolean p1, v0, Ly/c;->k:Z
 
     .line 8
-    iget-object v1, v1, Lae/u;->s:Lud/j;
+    iput-boolean p1, v0, Ly/c;->j:Z
 
     .line 9
-    new-instance v2, Lae/g1;
+    iget p1, v0, Ly/c;->m:I
 
-    invoke-direct {v2, p0, p1, v0}, Lae/g1;-><init>(Lae/i1;ILae/e;)V
+    iget p2, v0, Ly/c;->l:I
 
-    const-string p1, "portraits.png"
+    invoke-static {p1, p2}, Ljava/lang/Math;->min(II)I
 
-    invoke-virtual {v1, p1, v2}, Lud/j;->b(Ljava/lang/String;Lre/p;)V
-
-    goto :goto_2
+    move-result p1
 
     .line 10
-    :cond_3
-    sget-object p1, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
+    div-int/lit8 p1, p1, 0x2
 
-    invoke-virtual {p1}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lae/u;
+    int-to-float p1, p1
 
-    move-result-object p1
+    iput p1, v0, Ly/c;->g:F
 
     .line 11
-    iget-object p1, p1, Lae/u;->s:Lud/j;
+    iget-object p1, v0, Ly/c;->d:Landroid/graphics/Paint;
+
+    iget-object p2, v0, Ly/c;->e:Landroid/graphics/BitmapShader;
+
+    invoke-virtual {p1, p2}, Landroid/graphics/Paint;->setShader(Landroid/graphics/Shader;)Landroid/graphics/Shader;
 
     .line 12
-    new-instance v0, Lae/h1;
-
-    invoke-direct {v0, p0}, Lae/h1;-><init>(Lae/i1;)V
-
-    const-string v1, "unknown_user.png"
-
-    invoke-virtual {p1, v1, v0}, Lud/j;->b(Ljava/lang/String;Lre/p;)V
+    invoke-virtual {v0}, Landroid/graphics/drawable/Drawable;->invalidateSelf()V
 
     .line 13
-    :goto_2
-    sget-object p1, Lie/h;->a:Lie/h;
+    iget-object p1, p0, Lae/i1;->i:Lre/p;
+
+    iget p2, p0, Lae/i1;->g:I
+
+    invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object p2
+
+    invoke-interface {p1, p2, v0}, Lre/p;->invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 14
+    sget-object p1, Lie/i;->a:Lie/i;
 
     return-object p1
 .end method

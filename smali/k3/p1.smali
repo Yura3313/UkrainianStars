@@ -1,186 +1,167 @@
 .class public final Lk3/p1;
-.super Ljava/lang/Object;
+.super Lf1/a$a;
 .source "com.google.android.gms:play-services-ads-lite@@19.3.0"
 
-# interfaces
-.implements Landroid/os/Parcelable$Creator;
 
+# instance fields
+.field public final a:Lcom/google/android/gms/internal/ads/zzadw;
 
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ljava/lang/Object;",
-        "Landroid/os/Parcelable$Creator<",
-        "Lcom/google/android/gms/internal/ads/zzadm;",
-        ">;"
-    }
-.end annotation
+.field public final b:Landroid/graphics/drawable/Drawable;
+
+.field public final c:Landroid/net/Uri;
+
+.field public final d:D
+
+.field public final e:I
+
+.field public final f:I
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 0
+.method public constructor <init>(Lcom/google/android/gms/internal/ads/zzadw;)V
+    .locals 2
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    .line 1
+    invoke-direct {p0}, Lf1/a$a;-><init>()V
+
+    .line 2
+    iput-object p1, p0, Lk3/p1;->a:Lcom/google/android/gms/internal/ads/zzadw;
+
+    const/4 v0, 0x0
+
+    .line 3
+    :try_start_0
+    invoke-interface {p1}, Lcom/google/android/gms/internal/ads/zzadw;->F2()Lcom/google/android/gms/dynamic/IObjectWrapper;
+
+    move-result-object p1
+
+    if-eqz p1, :cond_0
+
+    .line 4
+    invoke-static {p1}, Lcom/google/android/gms/dynamic/ObjectWrapper;->c2(Lcom/google/android/gms/dynamic/IObjectWrapper;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Landroid/graphics/drawable/Drawable;
+    :try_end_0
+    .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
+
+    goto :goto_0
+
+    :catch_0
+    :cond_0
+    move-object p1, v0
+
+    .line 5
+    :goto_0
+    iput-object p1, p0, Lk3/p1;->b:Landroid/graphics/drawable/Drawable;
+
+    .line 6
+    :try_start_1
+    iget-object p1, p0, Lk3/p1;->a:Lcom/google/android/gms/internal/ads/zzadw;
+
+    invoke-interface {p1}, Lcom/google/android/gms/internal/ads/zzadw;->W0()Landroid/net/Uri;
+
+    move-result-object v0
+    :try_end_1
+    .catch Landroid/os/RemoteException; {:try_start_1 .. :try_end_1} :catch_1
+
+    .line 7
+    :catch_1
+    iput-object v0, p0, Lk3/p1;->c:Landroid/net/Uri;
+
+    const-wide/high16 v0, 0x3ff0000000000000L    # 1.0
+
+    .line 8
+    :try_start_2
+    iget-object p1, p0, Lk3/p1;->a:Lcom/google/android/gms/internal/ads/zzadw;
+
+    invoke-interface {p1}, Lcom/google/android/gms/internal/ads/zzadw;->B4()D
+
+    move-result-wide v0
+    :try_end_2
+    .catch Landroid/os/RemoteException; {:try_start_2 .. :try_end_2} :catch_2
+
+    .line 9
+    :catch_2
+    iput-wide v0, p0, Lk3/p1;->d:D
+
+    const/4 p1, -0x1
+
+    .line 10
+    :try_start_3
+    iget-object v0, p0, Lk3/p1;->a:Lcom/google/android/gms/internal/ads/zzadw;
+
+    invoke-interface {v0}, Lcom/google/android/gms/internal/ads/zzadw;->getWidth()I
+
+    move-result v0
+    :try_end_3
+    .catch Landroid/os/RemoteException; {:try_start_3 .. :try_end_3} :catch_3
+
+    goto :goto_1
+
+    :catch_3
+    const/4 v0, -0x1
+
+    .line 11
+    :goto_1
+    iput v0, p0, Lk3/p1;->e:I
+
+    .line 12
+    :try_start_4
+    iget-object v0, p0, Lk3/p1;->a:Lcom/google/android/gms/internal/ads/zzadw;
+
+    invoke-interface {v0}, Lcom/google/android/gms/internal/ads/zzadw;->getHeight()I
+
+    move-result p1
+    :try_end_4
+    .catch Landroid/os/RemoteException; {:try_start_4 .. :try_end_4} :catch_4
+
+    .line 13
+    :catch_4
+    iput p1, p0, Lk3/p1;->f:I
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
-    .locals 12
+.method public final a()Landroid/graphics/drawable/Drawable;
+    .locals 1
 
-    .line 1
-    invoke-static {p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->x(Landroid/os/Parcel;)I
+    iget-object v0, p0, Lk3/p1;->b:Landroid/graphics/drawable/Drawable;
 
-    move-result v0
-
-    const/4 v1, 0x0
-
-    const/4 v2, 0x0
-
-    move-object v9, v2
-
-    const/4 v4, 0x0
-
-    const/4 v5, 0x0
-
-    const/4 v6, 0x0
-
-    const/4 v7, 0x0
-
-    const/4 v8, 0x0
-
-    const/4 v10, 0x0
-
-    const/4 v11, 0x0
-
-    .line 2
-    :goto_0
-    invoke-virtual {p1}, Landroid/os/Parcel;->dataPosition()I
-
-    move-result v1
-
-    if-ge v1, v0, :cond_0
-
-    .line 3
-    invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
-
-    move-result v1
-
-    const v2, 0xffff
-
-    and-int/2addr v2, v1
-
-    packed-switch v2, :pswitch_data_0
-
-    .line 4
-    invoke-static {p1, v1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->w(Landroid/os/Parcel;I)V
-
-    goto :goto_0
-
-    .line 5
-    :pswitch_0
-    invoke-static {p1, v1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->r(Landroid/os/Parcel;I)I
-
-    move-result v11
-
-    goto :goto_0
-
-    .line 6
-    :pswitch_1
-    invoke-static {p1, v1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->o(Landroid/os/Parcel;I)Z
-
-    move-result v10
-
-    goto :goto_0
-
-    .line 7
-    :pswitch_2
-    sget-object v2, Lcom/google/android/gms/internal/ads/zzaac;->CREATOR:Landroid/os/Parcelable$Creator;
-
-    .line 8
-    invoke-static {p1, v1, v2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->h(Landroid/os/Parcel;ILandroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
-
-    move-result-object v1
-
-    move-object v9, v1
-
-    check-cast v9, Lcom/google/android/gms/internal/ads/zzaac;
-
-    goto :goto_0
-
-    .line 9
-    :pswitch_3
-    invoke-static {p1, v1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->r(Landroid/os/Parcel;I)I
-
-    move-result v8
-
-    goto :goto_0
-
-    .line 10
-    :pswitch_4
-    invoke-static {p1, v1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->o(Landroid/os/Parcel;I)Z
-
-    move-result v7
-
-    goto :goto_0
-
-    .line 11
-    :pswitch_5
-    invoke-static {p1, v1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->r(Landroid/os/Parcel;I)I
-
-    move-result v6
-
-    goto :goto_0
-
-    .line 12
-    :pswitch_6
-    invoke-static {p1, v1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->o(Landroid/os/Parcel;I)Z
-
-    move-result v5
-
-    goto :goto_0
-
-    .line 13
-    :pswitch_7
-    invoke-static {p1, v1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->r(Landroid/os/Parcel;I)I
-
-    move-result v4
-
-    goto :goto_0
-
-    .line 14
-    :cond_0
-    invoke-static {p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->n(Landroid/os/Parcel;I)V
-
-    .line 15
-    new-instance p1, Lcom/google/android/gms/internal/ads/zzadm;
-
-    move-object v3, p1
-
-    invoke-direct/range {v3 .. v11}, Lcom/google/android/gms/internal/ads/zzadm;-><init>(IZIZILcom/google/android/gms/internal/ads/zzaac;ZI)V
-
-    return-object p1
-
-    :pswitch_data_0
-    .packed-switch 0x1
-        :pswitch_7
-        :pswitch_6
-        :pswitch_5
-        :pswitch_4
-        :pswitch_3
-        :pswitch_2
-        :pswitch_1
-        :pswitch_0
-    .end packed-switch
+    return-object v0
 .end method
 
-.method public final synthetic newArray(I)[Ljava/lang/Object;
-    .locals 0
+.method public final b()I
+    .locals 1
 
-    new-array p1, p1, [Lcom/google/android/gms/internal/ads/zzadm;
+    iget v0, p0, Lk3/p1;->f:I
 
-    return-object p1
+    return v0
+.end method
+
+.method public final c()D
+    .locals 2
+
+    iget-wide v0, p0, Lk3/p1;->d:D
+
+    return-wide v0
+.end method
+
+.method public final d()Landroid/net/Uri;
+    .locals 1
+
+    iget-object v0, p0, Lk3/p1;->c:Landroid/net/Uri;
+
+    return-object v0
+.end method
+
+.method public final e()I
+    .locals 1
+
+    iget v0, p0, Lk3/p1;->e:I
+
+    return v0
 .end method

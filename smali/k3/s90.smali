@@ -1,338 +1,329 @@
-.class public final synthetic Lk3/s90;
+.class public final Lk3/s90;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lk3/tj0;
+.implements Lk3/ad0;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Lk3/ad0<",
+        "Landroid/os/Bundle;",
+        ">;"
+    }
+.end annotation
 
 
 # instance fields
-.field public final a:Lk3/p90;
+.field public final a:Lcom/google/android/gms/internal/ads/zzvj;
+
+.field public final b:Ljava/lang/String;
+
+.field public final c:Z
+
+.field public final d:Ljava/lang/String;
+
+.field public final e:F
+
+.field public final f:I
+
+.field public final g:I
+
+.field public final h:Ljava/lang/String;
+
+.field public final i:Z
 
 
 # direct methods
-.method public constructor <init>(Lk3/p90;)V
+.method public constructor <init>(Lcom/google/android/gms/internal/ads/zzvj;Ljava/lang/String;ZLjava/lang/String;FIILjava/lang/String;Z)V
     .locals 0
 
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lk3/s90;->a:Lk3/p90;
+    .line 2
+    iput-object p1, p0, Lk3/s90;->a:Lcom/google/android/gms/internal/ads/zzvj;
+
+    .line 3
+    iput-object p2, p0, Lk3/s90;->b:Ljava/lang/String;
+
+    .line 4
+    iput-boolean p3, p0, Lk3/s90;->c:Z
+
+    .line 5
+    iput-object p4, p0, Lk3/s90;->d:Ljava/lang/String;
+
+    .line 6
+    iput p5, p0, Lk3/s90;->e:F
+
+    .line 7
+    iput p6, p0, Lk3/s90;->f:I
+
+    .line 8
+    iput p7, p0, Lk3/s90;->g:I
+
+    .line 9
+    iput-object p8, p0, Lk3/s90;->h:Ljava/lang/String;
+
+    .line 10
+    iput-boolean p9, p0, Lk3/s90;->i:Z
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 19
-
-    move-object/from16 v0, p0
-
-    iget-object v1, v0, Lk3/s90;->a:Lk3/p90;
-
-    move-object/from16 v2, p1
-
-    check-cast v2, Lk3/ed0;
+.method public final synthetic b(Ljava/lang/Object;)V
+    .locals 10
 
     .line 1
-    iget-object v2, v1, Lk3/p90;->b:Lk3/ug0;
-
-    iget-object v4, v2, Lk3/ug0;->e:Lcom/google/android/gms/internal/ads/zzvj;
+    check-cast p1, Landroid/os/Bundle;
 
     .line 2
-    iget-object v2, v4, Lcom/google/android/gms/internal/ads/zzvj;->l:[Lcom/google/android/gms/internal/ads/zzvj;
+    iget-object v0, p0, Lk3/s90;->a:Lcom/google/android/gms/internal/ads/zzvj;
 
-    const/4 v3, 0x0
+    iget v0, v0, Lcom/google/android/gms/internal/ads/zzvj;->k:I
 
-    if-nez v2, :cond_0
+    const/4 v1, 0x0
 
-    .line 3
-    iget-object v2, v4, Lcom/google/android/gms/internal/ads/zzvj;->f:Ljava/lang/String;
+    const/4 v2, 0x1
 
-    .line 4
-    iget-boolean v7, v4, Lcom/google/android/gms/internal/ads/zzvj;->n:Z
+    const/4 v3, -0x1
 
-    move-object v11, v2
+    if-ne v0, v3, :cond_0
 
-    move v12, v7
-
-    goto :goto_1
-
-    .line 5
-    :cond_0
-    array-length v7, v2
-
-    move-object v11, v3
-
-    const/4 v8, 0x0
-
-    const/4 v9, 0x0
-
-    const/4 v10, 0x0
-
-    const/4 v12, 0x0
-
-    :goto_0
-    if-ge v8, v7, :cond_4
-
-    aget-object v13, v2, v8
-
-    .line 6
-    iget-boolean v14, v13, Lcom/google/android/gms/internal/ads/zzvj;->n:Z
-
-    if-nez v14, :cond_1
-
-    if-nez v9, :cond_1
-
-    .line 7
-    iget-object v11, v13, Lcom/google/android/gms/internal/ads/zzvj;->f:Ljava/lang/String;
-
-    const/4 v9, 0x1
-
-    :cond_1
-    if-eqz v14, :cond_2
-
-    if-nez v10, :cond_2
-
-    const/4 v10, 0x1
-
-    const/4 v12, 0x1
-
-    :cond_2
-    if-eqz v9, :cond_3
-
-    if-nez v10, :cond_4
-
-    :cond_3
-    add-int/lit8 v8, v8, 0x1
+    const/4 v0, 0x1
 
     goto :goto_0
 
-    .line 8
-    :cond_4
+    :cond_0
+    const/4 v0, 0x0
+
+    :goto_0
+    const-string v3, "smart_w"
+
+    const-string v4, "full"
+
+    invoke-static {p1, v3, v4, v0}, Lk3/f4;->k(Landroid/os/Bundle;Ljava/lang/String;Ljava/lang/String;Z)V
+
+    .line 3
+    iget-object v0, p0, Lk3/s90;->a:Lcom/google/android/gms/internal/ads/zzvj;
+
+    iget v0, v0, Lcom/google/android/gms/internal/ads/zzvj;->h:I
+
+    const/4 v3, -0x2
+
+    if-ne v0, v3, :cond_1
+
+    const/4 v0, 0x1
+
+    goto :goto_1
+
+    :cond_1
+    const/4 v0, 0x0
+
     :goto_1
-    iget-object v2, v1, Lk3/p90;->c:Landroid/content/Context;
+    const-string v3, "smart_h"
 
-    invoke-virtual {v2}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+    const-string v4, "auto"
 
-    move-result-object v2
+    invoke-static {p1, v3, v4, v0}, Lk3/f4;->k(Landroid/os/Bundle;Ljava/lang/String;Ljava/lang/String;Z)V
 
-    if-eqz v2, :cond_5
+    .line 4
+    sget-object v0, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
+
+    iget-object v3, p0, Lk3/s90;->a:Lcom/google/android/gms/internal/ads/zzvj;
+
+    iget-boolean v3, v3, Lcom/google/android/gms/internal/ads/zzvj;->p:Z
+
+    const-string v4, "ene"
+
+    invoke-static {p1, v4, v0, v3}, Lk3/f4;->h(Landroid/os/Bundle;Ljava/lang/String;Ljava/lang/Boolean;Z)V
+
+    .line 5
+    iget-object v3, p0, Lk3/s90;->a:Lcom/google/android/gms/internal/ads/zzvj;
+
+    iget-boolean v3, v3, Lcom/google/android/gms/internal/ads/zzvj;->s:Z
+
+    const-string v4, "rafmt"
+
+    const-string v5, "102"
+
+    invoke-static {p1, v4, v5, v3}, Lk3/f4;->k(Landroid/os/Bundle;Ljava/lang/String;Ljava/lang/String;Z)V
+
+    .line 6
+    iget-object v3, p0, Lk3/s90;->a:Lcom/google/android/gms/internal/ads/zzvj;
+
+    iget-boolean v3, v3, Lcom/google/android/gms/internal/ads/zzvj;->t:Z
+
+    const-string v5, "103"
+
+    invoke-static {p1, v4, v5, v3}, Lk3/f4;->k(Landroid/os/Bundle;Ljava/lang/String;Ljava/lang/String;Z)V
+
+    .line 7
+    iget-boolean v3, p0, Lk3/s90;->i:Z
+
+    const-string v4, "inline_adaptive_slot"
+
+    invoke-static {p1, v4, v0, v3}, Lk3/f4;->h(Landroid/os/Bundle;Ljava/lang/String;Ljava/lang/Boolean;Z)V
+
+    .line 8
+    iget-object v0, p0, Lk3/s90;->b:Ljava/lang/String;
+
+    const-string v3, "format"
+
+    invoke-static {p1, v3, v0}, Lk3/f4;->j(Landroid/os/Bundle;Ljava/lang/String;Ljava/lang/String;)V
 
     .line 9
-    invoke-virtual {v2}, Landroid/content/res/Resources;->getDisplayMetrics()Landroid/util/DisplayMetrics;
+    iget-boolean v0, p0, Lk3/s90;->c:Z
 
-    move-result-object v2
+    const-string v3, "fluid"
 
-    if-eqz v2, :cond_5
+    const-string v4, "height"
+
+    invoke-static {p1, v3, v4, v0}, Lk3/f4;->k(Landroid/os/Bundle;Ljava/lang/String;Ljava/lang/String;Z)V
 
     .line 10
-    iget v3, v2, Landroid/util/DisplayMetrics;->density:F
+    iget-object v0, p0, Lk3/s90;->d:Ljava/lang/String;
 
     .line 11
-    iget v8, v2, Landroid/util/DisplayMetrics;->widthPixels:I
+    invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+
+    move-result v3
+
+    xor-int/2addr v3, v2
+
+    const-string v5, "sz"
 
     .line 12
-    iget v2, v2, Landroid/util/DisplayMetrics;->heightPixels:I
+    invoke-static {p1, v5, v0, v3}, Lk3/f4;->k(Landroid/os/Bundle;Ljava/lang/String;Ljava/lang/String;Z)V
 
     .line 13
-    iget-object v9, v1, Lk3/p90;->d:Lk3/ia;
+    iget v0, p0, Lk3/s90;->e:F
 
-    invoke-virtual {v9}, Lk3/ia;->f()Lk3/ua;
+    const-string v3, "u_sd"
 
-    move-result-object v9
-
-    check-cast v9, Lk3/xa;
-
-    invoke-virtual {v9}, Lk3/xa;->C()Ljava/lang/String;
-
-    move-result-object v9
-
-    move v10, v2
-
-    move-object v2, v9
-
-    move v9, v8
-
-    move v8, v3
-
-    goto :goto_2
-
-    :cond_5
-    move-object v2, v3
-
-    const/4 v8, 0x0
-
-    const/4 v9, 0x0
-
-    const/4 v10, 0x0
+    invoke-virtual {p1, v3, v0}, Landroid/os/Bundle;->putFloat(Ljava/lang/String;F)V
 
     .line 14
-    :goto_2
-    new-instance v3, Ljava/lang/StringBuilder;
+    iget v0, p0, Lk3/s90;->f:I
 
-    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
+    const-string v3, "sw"
+
+    invoke-virtual {p1, v3, v0}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
 
     .line 15
-    iget-object v13, v4, Lcom/google/android/gms/internal/ads/zzvj;->l:[Lcom/google/android/gms/internal/ads/zzvj;
+    iget v0, p0, Lk3/s90;->g:I
 
-    if-eqz v13, :cond_d
+    const-string v3, "sh"
+
+    invoke-virtual {p1, v3, v0}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
 
     .line 16
-    array-length v14, v13
+    iget-object v0, p0, Lk3/s90;->h:Ljava/lang/String;
 
-    const/4 v15, 0x0
+    invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
-    const/16 v16, 0x0
+    move-result v3
 
-    :goto_3
-    const-string v5, "|"
+    xor-int/2addr v2, v3
 
-    if-ge v15, v14, :cond_b
+    const-string v3, "sc"
 
-    aget-object v6, v13, v15
+    invoke-static {p1, v3, v0, v2}, Lk3/f4;->k(Landroid/os/Bundle;Ljava/lang/String;Ljava/lang/String;Z)V
 
     .line 17
-    iget-boolean v7, v6, Lcom/google/android/gms/internal/ads/zzvj;->n:Z
+    new-instance v0, Ljava/util/ArrayList;
 
-    if-eqz v7, :cond_6
-
-    const/4 v7, 0x0
-
-    const/16 v16, 0x1
-
-    goto :goto_5
+    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     .line 18
-    :cond_6
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->length()I
+    iget-object v2, p0, Lk3/s90;->a:Lcom/google/android/gms/internal/ads/zzvj;
 
-    move-result v7
+    iget-object v2, v2, Lcom/google/android/gms/internal/ads/zzvj;->m:[Lcom/google/android/gms/internal/ads/zzvj;
 
-    if-eqz v7, :cond_7
+    const-string v3, "is_fluid_height"
+
+    const-string v5, "width"
+
+    if-nez v2, :cond_2
 
     .line 19
-    invoke-virtual {v3, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    new-instance v1, Landroid/os/Bundle;
+
+    invoke-direct {v1}, Landroid/os/Bundle;-><init>()V
 
     .line 20
-    :cond_7
-    iget v5, v6, Lcom/google/android/gms/internal/ads/zzvj;->j:I
+    iget-object v2, p0, Lk3/s90;->a:Lcom/google/android/gms/internal/ads/zzvj;
 
-    const/4 v7, -0x1
+    iget v2, v2, Lcom/google/android/gms/internal/ads/zzvj;->h:I
 
-    if-ne v5, v7, :cond_8
-
-    const/4 v7, 0x0
-
-    cmpl-float v18, v8, v7
-
-    if-eqz v18, :cond_8
+    invoke-virtual {v1, v4, v2}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
 
     .line 21
-    iget v5, v6, Lcom/google/android/gms/internal/ads/zzvj;->k:I
+    iget-object v2, p0, Lk3/s90;->a:Lcom/google/android/gms/internal/ads/zzvj;
 
-    int-to-float v5, v5
+    iget v2, v2, Lcom/google/android/gms/internal/ads/zzvj;->k:I
 
-    div-float/2addr v5, v8
-
-    float-to-int v5, v5
+    invoke-virtual {v1, v5, v2}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
 
     .line 22
-    :cond_8
-    invoke-virtual {v3, v5}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    iget-object v2, p0, Lk3/s90;->a:Lcom/google/android/gms/internal/ads/zzvj;
 
-    const-string v5, "x"
+    iget-boolean v2, v2, Lcom/google/android/gms/internal/ads/zzvj;->o:Z
+
+    invoke-virtual {v1, v3, v2}, Landroid/os/Bundle;->putBoolean(Ljava/lang/String;Z)V
 
     .line 23
-    invoke-virtual {v3, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 24
-    iget v5, v6, Lcom/google/android/gms/internal/ads/zzvj;->g:I
-
-    const/4 v7, -0x2
-
-    if-ne v5, v7, :cond_9
-
-    const/4 v7, 0x0
-
-    cmpl-float v17, v8, v7
-
-    if-eqz v17, :cond_a
-
-    .line 25
-    iget v5, v6, Lcom/google/android/gms/internal/ads/zzvj;->h:I
-
-    int-to-float v5, v5
-
-    div-float/2addr v5, v8
-
-    float-to-int v5, v5
-
-    goto :goto_4
-
-    :cond_9
-    const/4 v7, 0x0
-
-    .line 26
-    :cond_a
-    :goto_4
-    invoke-virtual {v3, v5}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    :goto_5
-    add-int/lit8 v15, v15, 0x1
+    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     goto :goto_3
 
-    :cond_b
-    if-eqz v16, :cond_d
+    .line 24
+    :cond_2
+    array-length v6, v2
+
+    :goto_2
+    if-ge v1, v6, :cond_3
+
+    aget-object v7, v2, v1
+
+    .line 25
+    new-instance v8, Landroid/os/Bundle;
+
+    invoke-direct {v8}, Landroid/os/Bundle;-><init>()V
+
+    .line 26
+    iget-boolean v9, v7, Lcom/google/android/gms/internal/ads/zzvj;->o:Z
+
+    invoke-virtual {v8, v3, v9}, Landroid/os/Bundle;->putBoolean(Ljava/lang/String;Z)V
 
     .line 27
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->length()I
+    iget v9, v7, Lcom/google/android/gms/internal/ads/zzvj;->h:I
 
-    move-result v6
-
-    if-eqz v6, :cond_c
-
-    const/4 v6, 0x0
+    invoke-virtual {v8, v4, v9}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
 
     .line 28
-    invoke-virtual {v3, v6, v5}, Ljava/lang/StringBuilder;->insert(ILjava/lang/String;)Ljava/lang/StringBuilder;
+    iget v7, v7, Lcom/google/android/gms/internal/ads/zzvj;->k:I
 
-    goto :goto_6
-
-    :cond_c
-    const/4 v6, 0x0
-
-    :goto_6
-    const-string v5, "320x50"
+    invoke-virtual {v8, v5, v7}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
 
     .line 29
-    invoke-virtual {v3, v6, v5}, Ljava/lang/StringBuilder;->insert(ILjava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, v8}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    add-int/lit8 v1, v1, 0x1
+
+    goto :goto_2
+
+    :cond_3
+    :goto_3
+    const-string v1, "valid_ad_sizes"
 
     .line 30
-    :cond_d
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {p1, v1, v0}, Landroid/os/Bundle;->putParcelableArrayList(Ljava/lang/String;Ljava/util/ArrayList;)V
 
-    move-result-object v7
-
-    .line 31
-    new-instance v13, Lk3/q90;
-
-    iget-object v1, v1, Lk3/p90;->b:Lk3/ug0;
-
-    iget-boolean v1, v1, Lk3/ug0;->o:Z
-
-    move-object v3, v13
-
-    move-object v5, v11
-
-    move v6, v12
-
-    move-object v11, v2
-
-    move v12, v1
-
-    invoke-direct/range {v3 .. v12}, Lk3/q90;-><init>(Lcom/google/android/gms/internal/ads/zzvj;Ljava/lang/String;ZLjava/lang/String;FIILjava/lang/String;Z)V
-
-    return-object v13
+    return-void
 .end method

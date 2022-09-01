@@ -91,7 +91,7 @@
     iput-object v0, p0, Ln5/g1;->configName_:Ljava/lang/String;
 
     .line 3
-    sget-object v0, Lcom/google/crypto/tink/shaded/protobuf/c0;->i:Lcom/google/crypto/tink/shaded/protobuf/c0;
+    sget-object v0, Lcom/google/crypto/tink/shaded/protobuf/c0;->j:Lcom/google/crypto/tink/shaded/protobuf/c0;
 
     .line 4
     iput-object v0, p0, Ln5/g1;->entry_:Lcom/google/crypto/tink/shaded/protobuf/p$c;

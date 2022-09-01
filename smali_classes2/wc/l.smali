@@ -7,14 +7,14 @@
 
 
 # instance fields
-.field public final synthetic f:Lwc/m;
+.field public final synthetic g:Lwc/m;
 
 
 # direct methods
 .method public constructor <init>(Lwc/m;)V
     .locals 0
 
-    iput-object p1, p0, Lwc/l;->f:Lwc/m;
+    iput-object p1, p0, Lwc/l;->g:Lwc/m;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -26,13 +26,13 @@
 .method public final onAnimationUpdate(Landroid/animation/ValueAnimator;)V
     .locals 2
 
-    iget-object v0, p0, Lwc/l;->f:Lwc/m;
+    iget-object v0, p0, Lwc/l;->g:Lwc/m;
 
-    iget-object v0, v0, Lwc/m;->f:Landroid/view/View;
+    iget-object v0, v0, Lwc/m;->g:Landroid/view/View;
 
     const-string v1, "animator"
 
-    invoke-static {p1, v1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v1}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {p1}, Landroid/animation/ValueAnimator;->getAnimatedFraction()F
 

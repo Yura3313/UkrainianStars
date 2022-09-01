@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field public final synthetic f:Ltd/f$c;
+.field public final synthetic g:Ltd/f$c;
 
 
 # direct methods
 .method public constructor <init>(Ltd/f$c;)V
     .locals 0
 
-    iput-object p1, p0, Ltd/f$c$a;->f:Ltd/f$c;
+    iput-object p1, p0, Ltd/f$c$a;->g:Ltd/f$c;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -37,9 +37,9 @@
 .method public final run()V
     .locals 2
 
-    iget-object v0, p0, Ltd/f$c$a;->f:Ltd/f$c;
+    iget-object v0, p0, Ltd/f$c$a;->g:Ltd/f$c;
 
-    iget-object v0, v0, Ltd/f$c;->f:Ltd/f;
+    iget-object v0, v0, Ltd/f$c;->g:Ltd/f;
 
     invoke-virtual {v0}, Ltd/s;->W0()Lcom/supercell/id/ui/register/RegisterFlowFragment;
 
@@ -47,7 +47,7 @@
 
     if-eqz v0, :cond_0
 
-    sget-object v1, Ltd/f$c$a$a;->f:Ltd/f$c$a$a;
+    sget-object v1, Ltd/f$c$a$a;->g:Ltd/f$c$a$a;
 
     invoke-virtual {v0, v1}, Lcom/supercell/id/ui/FlowFragment;->i1(Lre/l;)V
 

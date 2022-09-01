@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field public final synthetic f:Lwc/y;
+.field public final synthetic g:Lwc/y;
 
 
 # direct methods
 .method public constructor <init>(Lwc/y;)V
     .locals 0
 
-    iput-object p1, p0, Lwc/y$b;->f:Lwc/y;
+    iput-object p1, p0, Lwc/y$b;->g:Lwc/y;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -38,7 +38,7 @@
     .locals 1
 
     .line 1
-    iget-object p1, p0, Lwc/y$b;->f:Lwc/y;
+    iget-object p1, p0, Lwc/y$b;->g:Lwc/y;
 
     sget v0, Lcom/supercell/id/R$id;->errorOkButton:I
 
@@ -50,14 +50,14 @@
 
     const-string v0, "errorOkButton"
 
-    invoke-static {p1, v0}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/4 v0, 0x0
 
     invoke-virtual {p1, v0}, Landroid/view/View;->setEnabled(Z)V
 
     .line 2
-    iget-object p1, p0, Lwc/y$b;->f:Lwc/y;
+    iget-object p1, p0, Lwc/y$b;->g:Lwc/y;
 
     invoke-virtual {p1}, Lwc/e;->V0()V
 

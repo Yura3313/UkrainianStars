@@ -28,7 +28,7 @@
     const/4 v0, 0x0
 
     .line 1
-    invoke-direct {p0, v0}, Lcom/google/android/gms/internal/drive/zzjr;-><init>(Ld4/i;)V
+    invoke-direct {p0, v0}, Lcom/google/android/gms/internal/drive/zzjr;-><init>(Lp6/c;)V
 
     or-int/lit8 v0, p2, 0x0
 
@@ -1295,7 +1295,7 @@
     .line 7
     iget-object p1, p0, Lcom/google/android/gms/internal/drive/zzjr;->a:Lr3/u1;
 
-    invoke-interface {p3, p2, p1}, Lr3/u3;->f(Ljava/lang/Object;Lr3/x4;)V
+    invoke-interface {p3, p2, p1}, Lr3/u3;->f(Ljava/lang/Object;Lr3/y4;)V
 
     return-void
 .end method

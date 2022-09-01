@@ -50,11 +50,11 @@
     .line 2
     iget-object v0, p0, Lf9/t0$a;->c:Lf9/t0;
 
-    iget-object v1, v0, Lf9/t0;->d:Lk3/p;
+    iget-object v1, v0, Lf9/t0;->d:Lk3/n;
 
     iget-object v0, v0, Lf9/t0;->h:Lqb/j;
 
-    invoke-virtual {v1, v0}, Lk3/p;->b(Lqb/j;)V
+    invoke-virtual {v1, v0}, Lk3/n;->b(Lqb/j;)V
 
     .line 3
     iget-object v0, p0, Lf9/t0$a;->c:Lf9/t0;
@@ -85,7 +85,7 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lcom/google/android/play/core/appupdate/g;->b(Ljava/lang/String;)Z
+    invoke-static {v0}, La5/b0;->d(Ljava/lang/String;)Z
 
     move-result v0
 

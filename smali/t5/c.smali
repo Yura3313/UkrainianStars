@@ -27,7 +27,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    sget v0, Ll2/l;->a:I
+    sget v0, Ll2/n;->a:I
 
     const/4 v0, 0x1
 

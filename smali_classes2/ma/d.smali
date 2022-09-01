@@ -130,7 +130,7 @@
 
     check-cast p1, Lcom/helpshift/support/Faq;
 
-    iget-object p1, p1, Lcom/helpshift/support/Faq;->g:Ljava/lang/String;
+    iget-object p1, p1, Lcom/helpshift/support/Faq;->h:Ljava/lang/String;
 
     invoke-static {p1}, Ljava/lang/Long;->valueOf(Ljava/lang/String;)Ljava/lang/Long;
 
@@ -206,12 +206,12 @@
     if-eqz v2, :cond_0
 
     .line 4
-    iget-object v2, v1, Lma/d$a;->y:Landroid/widget/LinearLayout;
+    iget-object v2, v1, Lma/d$a;->z:Landroid/widget/LinearLayout;
 
     invoke-virtual {v2, v3}, Landroid/view/View;->setVisibility(I)V
 
     .line 5
-    iget-object v1, v1, Lma/d$a;->z:Landroid/widget/Button;
+    iget-object v1, v1, Lma/d$a;->A:Landroid/widget/Button;
 
     iget-object v2, v0, Lma/d;->e:Landroid/view/View$OnClickListener;
 
@@ -221,7 +221,7 @@
 
     .line 6
     :cond_0
-    iget-object v1, v1, Lma/d$a;->y:Landroid/widget/LinearLayout;
+    iget-object v1, v1, Lma/d$a;->z:Landroid/widget/LinearLayout;
 
     const/16 v2, 0x8
 
@@ -250,10 +250,10 @@
     check-cast v2, Lcom/helpshift/support/Faq;
 
     .line 10
-    iget-object v4, v2, Lcom/helpshift/support/Faq;->m:Ljava/util/ArrayList;
+    iget-object v4, v2, Lcom/helpshift/support/Faq;->n:Ljava/util/ArrayList;
 
     .line 11
-    iget-object v5, v2, Lcom/helpshift/support/Faq;->f:Ljava/lang/String;
+    iget-object v5, v2, Lcom/helpshift/support/Faq;->g:Ljava/lang/String;
 
     if-eqz v4, :cond_8
 
@@ -265,7 +265,7 @@
     if-lez v6, :cond_8
 
     .line 13
-    iget-object v6, v1, Lma/d$c;->y:Landroid/widget/TextView;
+    iget-object v6, v1, Lma/d$c;->z:Landroid/widget/TextView;
 
     invoke-virtual {v6}, Landroid/view/View;->getContext()Landroid/content/Context;
 
@@ -273,7 +273,7 @@
 
     sget v7, Lcom/helpshift/R$attr;->hs__searchHighlightColor:I
 
-    invoke-static {v6, v7}, Lcom/helpshift/util/g0;->b(Landroid/content/Context;I)I
+    invoke-static {v6, v7}, Lcom/helpshift/util/e0;->b(Landroid/content/Context;I)I
 
     move-result v6
 
@@ -283,7 +283,7 @@
     invoke-direct {v7, v5}, Landroid/text/SpannableString;-><init>(Ljava/lang/CharSequence;)V
 
     .line 15
-    invoke-static {v5}, Lib/e;->b(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v5}, Lib/e;->e(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v8
 
@@ -405,7 +405,7 @@
 
     move-result-object v14
 
-    invoke-static {v14}, Lib/e;->b(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v14}, Lib/e;->e(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v14
 
@@ -555,7 +555,7 @@
 
     .line 44
     :cond_7
-    iget-object v3, v1, Lma/d$c;->y:Landroid/widget/TextView;
+    iget-object v3, v1, Lma/d$c;->z:Landroid/widget/TextView;
 
     invoke-virtual {v3, v7}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
@@ -563,22 +563,22 @@
 
     .line 45
     :cond_8
-    iget-object v3, v1, Lma/d$c;->y:Landroid/widget/TextView;
+    iget-object v3, v1, Lma/d$c;->z:Landroid/widget/TextView;
 
     invoke-virtual {v3, v5}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 46
     :goto_5
-    iget-object v3, v1, Lma/d$c;->y:Landroid/widget/TextView;
+    iget-object v3, v1, Lma/d$c;->z:Landroid/widget/TextView;
 
     iget-object v4, v0, Lma/d;->d:Landroid/view/View$OnClickListener;
 
     invoke-virtual {v3, v4}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 47
-    iget-object v1, v1, Lma/d$c;->y:Landroid/widget/TextView;
+    iget-object v1, v1, Lma/d$c;->z:Landroid/widget/TextView;
 
-    iget-object v2, v2, Lcom/helpshift/support/Faq;->g:Ljava/lang/String;
+    iget-object v2, v2, Lcom/helpshift/support/Faq;->h:Ljava/lang/String;
 
     invoke-virtual {v1, v2}, Landroid/view/View;->setTag(Ljava/lang/Object;)V
 

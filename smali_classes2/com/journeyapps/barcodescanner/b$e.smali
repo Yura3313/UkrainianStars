@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field public final synthetic f:Lcom/journeyapps/barcodescanner/b;
+.field public final synthetic g:Lcom/journeyapps/barcodescanner/b;
 
 
 # direct methods
 .method public constructor <init>(Lcom/journeyapps/barcodescanner/b;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/journeyapps/barcodescanner/b$e;->f:Lcom/journeyapps/barcodescanner/b;
+    iput-object p1, p0, Lcom/journeyapps/barcodescanner/b$e;->g:Lcom/journeyapps/barcodescanner/b;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -37,7 +37,7 @@
 .method public final onCancel(Landroid/content/DialogInterface;)V
     .locals 0
 
-    iget-object p1, p0, Lcom/journeyapps/barcodescanner/b$e;->f:Lcom/journeyapps/barcodescanner/b;
+    iget-object p1, p0, Lcom/journeyapps/barcodescanner/b$e;->g:Lcom/journeyapps/barcodescanner/b;
 
     invoke-static {p1}, Lcom/journeyapps/barcodescanner/b;->a(Lcom/journeyapps/barcodescanner/b;)V
 

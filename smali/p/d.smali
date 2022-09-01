@@ -1707,7 +1707,7 @@
     iget-object v0, p1, Lp/f;->i:Lp/f$b;
 
     .line 11
-    iput-object p2, v0, Lp/f$b;->f:Lp/h;
+    iput-object p2, v0, Lp/f$b;->g:Lp/h;
 
     .line 12
     iget-object v0, p2, Lp/h;->h:[F

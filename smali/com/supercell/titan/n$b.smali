@@ -39,9 +39,9 @@
 
     move-result-object p1
 
-    sget-object p2, Lcom/supercell/titan/n;->g:Lcom/supercell/titan/n$a;
+    sget-object p2, Lcom/supercell/titan/n;->h:Lcom/supercell/titan/n$a;
 
-    sget-object p2, Lcom/supercell/titan/n;->g:Lcom/supercell/titan/n$a;
+    sget-object p2, Lcom/supercell/titan/n;->h:Lcom/supercell/titan/n$a;
 
     invoke-virtual {p1, p2}, Lcom/supercell/titan/GameApp;->runOnView(Ljava/lang/Runnable;)V
 

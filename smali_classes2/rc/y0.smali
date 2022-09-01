@@ -1,4 +1,4 @@
-.class public final Lrc/y0;
+.class public final synthetic Lrc/y0;
 .super Lse/h;
 .source "SocialApiClient.kt"
 
@@ -12,54 +12,70 @@
         "Lse/h;",
         "Lre/l<",
         "Lorg/json/JSONObject;",
-        "Ljava/lang/Boolean;",
+        "Lorg/json/JSONObject;",
         ">;"
     }
 .end annotation
 
 
-# static fields
-.field public static final f:Lrc/y0;
-
-
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 1
-
-    new-instance v0, Lrc/y0;
-
-    invoke-direct {v0}, Lrc/y0;-><init>()V
-
-    sput-object v0, Lrc/y0;->f:Lrc/y0;
-
-    return-void
-.end method
-
-.method public constructor <init>()V
+.method public constructor <init>(Lrc/d0;)V
     .locals 1
 
     const/4 v0, 0x1
 
-    invoke-direct {p0, v0}, Lse/h;-><init>(I)V
+    invoke-direct {p0, v0, p1}, Lse/h;-><init>(ILjava/lang/Object;)V
 
     return-void
 .end method
 
 
 # virtual methods
+.method public final getName()Ljava/lang/String;
+    .locals 1
+
+    const-string v0, "handleResponse"
+
+    return-object v0
+.end method
+
+.method public final getOwner()Lwe/d;
+    .locals 1
+
+    const-class v0, Lrc/d0;
+
+    invoke-static {v0}, Lse/s;->a(Ljava/lang/Class;)Lwe/c;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public final getSignature()Ljava/lang/String;
+    .locals 1
+
+    const-string v0, "handleResponse(Lorg/json/JSONObject;)Lorg/json/JSONObject;"
+
+    return-object v0
+.end method
+
 .method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
 
     .line 1
     check-cast p1, Lorg/json/JSONObject;
 
-    const-string v0, "it"
+    const-string v0, "p1"
 
     .line 2
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    iget-object v0, p0, Lse/c;->receiver:Ljava/lang/Object;
+
+    check-cast v0, Lrc/d0;
 
     .line 3
-    sget-object p1, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
+    invoke-virtual {v0, p1}, Lrc/f;->b(Lorg/json/JSONObject;)Lorg/json/JSONObject;
 
     return-object p1
 .end method

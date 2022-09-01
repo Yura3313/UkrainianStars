@@ -156,7 +156,7 @@
     const-string v3, ", splitId="
 
     .line 1
-    invoke-static {v4, v2, v0, v3, v1}, Lk0/a;->a(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v4, v2, v0, v3, v1}, Lcom/kakaogame/session/websocket/a;->b(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     const-string v0, "}"
 

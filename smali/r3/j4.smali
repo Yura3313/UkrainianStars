@@ -17,7 +17,7 @@
 
 
 # instance fields
-.field public f:Ljava/util/ListIterator;
+.field public g:Ljava/util/ListIterator;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/ListIterator<",
@@ -36,14 +36,14 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iget-object p1, p1, Lr3/i4;->f:Lr3/s2;
+    iget-object p1, p1, Lr3/i4;->g:Lr3/s2;
 
     .line 3
     invoke-interface {p1, p2}, Ljava/util/List;->listIterator(I)Ljava/util/ListIterator;
 
     move-result-object p1
 
-    iput-object p1, p0, Lr3/j4;->f:Ljava/util/ListIterator;
+    iput-object p1, p0, Lr3/j4;->g:Ljava/util/ListIterator;
 
     return-void
 .end method
@@ -63,7 +63,7 @@
 .method public final hasNext()Z
     .locals 1
 
-    iget-object v0, p0, Lr3/j4;->f:Ljava/util/ListIterator;
+    iget-object v0, p0, Lr3/j4;->g:Ljava/util/ListIterator;
 
     invoke-interface {v0}, Ljava/util/ListIterator;->hasNext()Z
 
@@ -75,7 +75,7 @@
 .method public final hasPrevious()Z
     .locals 1
 
-    iget-object v0, p0, Lr3/j4;->f:Ljava/util/ListIterator;
+    iget-object v0, p0, Lr3/j4;->g:Ljava/util/ListIterator;
 
     invoke-interface {v0}, Ljava/util/ListIterator;->hasPrevious()Z
 
@@ -87,7 +87,7 @@
 .method public final synthetic next()Ljava/lang/Object;
     .locals 1
 
-    iget-object v0, p0, Lr3/j4;->f:Ljava/util/ListIterator;
+    iget-object v0, p0, Lr3/j4;->g:Ljava/util/ListIterator;
 
     invoke-interface {v0}, Ljava/util/ListIterator;->next()Ljava/lang/Object;
 
@@ -101,7 +101,7 @@
 .method public final nextIndex()I
     .locals 1
 
-    iget-object v0, p0, Lr3/j4;->f:Ljava/util/ListIterator;
+    iget-object v0, p0, Lr3/j4;->g:Ljava/util/ListIterator;
 
     invoke-interface {v0}, Ljava/util/ListIterator;->nextIndex()I
 
@@ -113,7 +113,7 @@
 .method public final synthetic previous()Ljava/lang/Object;
     .locals 1
 
-    iget-object v0, p0, Lr3/j4;->f:Ljava/util/ListIterator;
+    iget-object v0, p0, Lr3/j4;->g:Ljava/util/ListIterator;
 
     invoke-interface {v0}, Ljava/util/ListIterator;->previous()Ljava/lang/Object;
 
@@ -127,7 +127,7 @@
 .method public final previousIndex()I
     .locals 1
 
-    iget-object v0, p0, Lr3/j4;->f:Ljava/util/ListIterator;
+    iget-object v0, p0, Lr3/j4;->g:Ljava/util/ListIterator;
 
     invoke-interface {v0}, Ljava/util/ListIterator;->previousIndex()I
 

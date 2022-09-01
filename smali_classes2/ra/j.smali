@@ -7,18 +7,18 @@
 
 
 # instance fields
-.field public final synthetic a:Lo8/y;
+.field public final synthetic a:Lo8/z;
 
 .field public final synthetic b:Lra/k;
 
 
 # direct methods
-.method public constructor <init>(Lra/k;Lo8/y;)V
+.method public constructor <init>(Lra/k;Lo8/z;)V
     .locals 0
 
     iput-object p1, p0, Lra/j;->b:Lra/k;
 
-    iput-object p2, p0, Lra/j;->a:Lo8/y;
+    iput-object p2, p0, Lra/j;->a:Lo8/z;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -38,11 +38,11 @@
     if-eqz v0, :cond_0
 
     .line 2
-    iget-object v1, p0, Lra/j;->a:Lo8/y;
+    iget-object v1, p0, Lra/j;->a:Lo8/z;
 
     check-cast v0, Lqa/p0;
 
-    invoke-virtual {v0, p1, v1}, Lqa/p0;->q(Ljava/lang/String;Lo8/y;)V
+    invoke-virtual {v0, p1, v1}, Lqa/p0;->q(Ljava/lang/String;Lo8/z;)V
 
     :cond_0
     return-void

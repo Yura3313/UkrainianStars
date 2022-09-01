@@ -1,5 +1,5 @@
 .class public final Lae/d2;
-.super Landroidx/recyclerview/widget/l$b;
+.super Ljava/lang/Object;
 .source "RecyclerViewUtil.kt"
 
 
@@ -8,7 +8,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
-            "Lae/b2;",
+            "Lae/a2;",
             ">;"
         }
     .end annotation
@@ -18,165 +18,193 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
-            "Lae/b2;",
+            "Lae/a2;",
             ">;"
         }
     .end annotation
 .end field
 
+.field public final c:Landroidx/recyclerview/widget/l$c;
+
 
 # direct methods
-.method public constructor <init>(Ljava/util/List;Ljava/util/List;)V
+.method public constructor <init>(Ljava/util/List;Ljava/util/List;Landroidx/recyclerview/widget/l$c;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Ljava/util/List<",
             "+",
-            "Lae/b2;",
+            "Lae/a2;",
             ">;",
             "Ljava/util/List<",
             "+",
-            "Lae/b2;",
-            ">;)V"
+            "Lae/a2;",
+            ">;",
+            "Landroidx/recyclerview/widget/l$c;",
+            ")V"
         }
     .end annotation
 
-    invoke-direct {p0}, Landroidx/recyclerview/widget/l$b;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-object p1, p0, Lae/d2;->a:Ljava/util/List;
 
     iput-object p2, p0, Lae/d2;->b:Ljava/util/List;
+
+    iput-object p3, p0, Lae/d2;->c:Landroidx/recyclerview/widget/l$c;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(II)Z
-    .locals 4
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 2
 
-    .line 1
+    if-eq p0, p1, :cond_1
+
+    instance-of v0, p1, Lae/d2;
+
+    if-eqz v0, :cond_0
+
+    check-cast p1, Lae/d2;
+
     iget-object v0, p0, Lae/d2;->a:Ljava/util/List;
 
-    invoke-interface {v0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    iget-object v1, p1, Lae/d2;->a:Ljava/util/List;
 
-    move-result-object v0
-
-    check-cast v0, Lae/b2;
-
-    iget-object v1, p0, Lae/d2;->b:Ljava/util/List;
-
-    invoke-interface {v1, p2}, Ljava/util/List;->get(I)Ljava/lang/Object;
-
-    move-result-object v1
-
-    check-cast v1, Lae/b2;
-
-    invoke-interface {v0, v1}, Lae/b2;->a(Lae/b2;)Z
+    invoke-static {v0, v1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
-    const/4 v1, 0x1
-
-    const/4 v2, 0x0
-
-    if-eqz v0, :cond_1
-
-    .line 2
-    iget-object v0, p0, Lae/d2;->a:Ljava/util/List;
-
-    invoke-static {v0, p1}, Lae/y1;->d(Ljava/util/List;I)Z
-
-    move-result v0
-
-    iget-object v3, p0, Lae/d2;->b:Ljava/util/List;
-
-    invoke-static {v3, p2}, Lae/y1;->d(Ljava/util/List;I)Z
-
-    move-result v3
-
-    if-ne v0, v3, :cond_0
-
-    iget-object v0, p0, Lae/d2;->a:Ljava/util/List;
-
-    invoke-static {v0, p1}, Lae/y1;->c(Ljava/util/List;I)Z
-
-    move-result p1
+    if-eqz v0, :cond_0
 
     iget-object v0, p0, Lae/d2;->b:Ljava/util/List;
 
-    invoke-static {v0, p2}, Lae/y1;->c(Ljava/util/List;I)Z
+    iget-object v1, p1, Lae/d2;->b:Ljava/util/List;
 
-    move-result p2
+    invoke-static {v0, v1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
-    if-ne p1, p2, :cond_0
+    move-result v0
 
-    const/4 p1, 0x1
+    if-eqz v0, :cond_0
+
+    iget-object v0, p0, Lae/d2;->c:Landroidx/recyclerview/widget/l$c;
+
+    iget-object p1, p1, Lae/d2;->c:Landroidx/recyclerview/widget/l$c;
+
+    invoke-static {v0, p1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_0
 
     goto :goto_0
 
     :cond_0
     const/4 p1, 0x0
 
-    :goto_0
-    if-eqz p1, :cond_1
-
-    goto :goto_1
+    return p1
 
     :cond_1
-    const/4 v1, 0x0
-
-    :goto_1
-    return v1
-.end method
-
-.method public final b(II)Z
-    .locals 1
-
-    iget-object v0, p0, Lae/d2;->a:Ljava/util/List;
-
-    invoke-interface {v0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
-
-    move-result-object p1
-
-    check-cast p1, Lae/b2;
-
-    iget-object v0, p0, Lae/d2;->b:Ljava/util/List;
-
-    invoke-interface {v0, p2}, Ljava/util/List;->get(I)Ljava/lang/Object;
-
-    move-result-object p2
-
-    check-cast p2, Lae/b2;
-
-    invoke-interface {p1, p2}, Lae/b2;->d(Lae/b2;)Z
-
-    move-result p1
+    :goto_0
+    const/4 p1, 0x1
 
     return p1
 .end method
 
-.method public final c()I
-    .locals 1
+.method public final hashCode()I
+    .locals 3
 
-    iget-object v0, p0, Lae/d2;->b:Ljava/util/List;
+    iget-object v0, p0, Lae/d2;->a:Ljava/util/List;
 
-    invoke-interface {v0}, Ljava/util/List;->size()I
+    const/4 v1, 0x0
+
+    if-eqz v0, :cond_0
+
+    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
 
     move-result v0
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    :goto_0
+    mul-int/lit8 v0, v0, 0x1f
+
+    iget-object v2, p0, Lae/d2;->b:Ljava/util/List;
+
+    if-eqz v2, :cond_1
+
+    invoke-virtual {v2}, Ljava/lang/Object;->hashCode()I
+
+    move-result v2
+
+    goto :goto_1
+
+    :cond_1
+    const/4 v2, 0x0
+
+    :goto_1
+    add-int/2addr v0, v2
+
+    mul-int/lit8 v0, v0, 0x1f
+
+    iget-object v2, p0, Lae/d2;->c:Landroidx/recyclerview/widget/l$c;
+
+    if-eqz v2, :cond_2
+
+    invoke-virtual {v2}, Ljava/lang/Object;->hashCode()I
+
+    move-result v1
+
+    :cond_2
+    add-int/2addr v0, v1
 
     return v0
 .end method
 
-.method public final d()I
-    .locals 1
+.method public final toString()Ljava/lang/String;
+    .locals 2
 
-    iget-object v0, p0, Lae/d2;->a:Ljava/util/List;
+    const-string v0, "RowDiffUtilResult(oldRows="
 
-    invoke-interface {v0}, Ljava/util/List;->size()I
+    .line 1
+    invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result v0
+    move-result-object v0
 
-    return v0
+    .line 2
+    iget-object v1, p0, Lae/d2;->a:Ljava/util/List;
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    const-string v1, ", newRows="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object v1, p0, Lae/d2;->b:Ljava/util/List;
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    const-string v1, ", result="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object v1, p0, Lae/d2;->c:Landroidx/recyclerview/widget/l$c;
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    const-string v1, ")"
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
 .end method

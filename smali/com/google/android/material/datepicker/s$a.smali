@@ -15,9 +15,9 @@
 
 
 # instance fields
-.field public final y:Landroid/widget/TextView;
+.field public final A:Lcom/google/android/material/datepicker/MaterialCalendarGridView;
 
-.field public final z:Lcom/google/android/material/datepicker/MaterialCalendarGridView;
+.field public final z:Landroid/widget/TextView;
 
 
 # direct methods
@@ -36,7 +36,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/google/android/material/datepicker/s$a;->y:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/google/android/material/datepicker/s$a;->z:Landroid/widget/TextView;
 
     .line 3
     sget-object v1, Lf0/r;->a:Ljava/util/WeakHashMap;
@@ -62,7 +62,7 @@
 
     check-cast p1, Lcom/google/android/material/datepicker/MaterialCalendarGridView;
 
-    iput-object p1, p0, Lcom/google/android/material/datepicker/s$a;->z:Lcom/google/android/material/datepicker/MaterialCalendarGridView;
+    iput-object p1, p0, Lcom/google/android/material/datepicker/s$a;->A:Lcom/google/android/material/datepicker/MaterialCalendarGridView;
 
     if-nez p2, :cond_0
 

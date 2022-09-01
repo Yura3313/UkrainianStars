@@ -4,7 +4,7 @@
 
 
 # static fields
-.field public static final D:[Ljava/lang/String;
+.field public static final E:[Ljava/lang/String;
 
 
 # direct methods
@@ -21,7 +21,7 @@
 
     aput-object v2, v0, v1
 
-    sput-object v0, Landroidx/transition/ChangeClipBounds;->D:[Ljava/lang/String;
+    sput-object v0, Landroidx/transition/ChangeClipBounds;->E:[Ljava/lang/String;
 
     return-void
 .end method
@@ -292,7 +292,7 @@
 .method public final r()[Ljava/lang/String;
     .locals 1
 
-    sget-object v0, Landroidx/transition/ChangeClipBounds;->D:[Ljava/lang/String;
+    sget-object v0, Landroidx/transition/ChangeClipBounds;->E:[Ljava/lang/String;
 
     return-object v0
 .end method

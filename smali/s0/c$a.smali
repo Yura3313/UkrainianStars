@@ -141,7 +141,7 @@
     if-eqz v0, :cond_a
 
     .line 10
-    sget v8, Ls0/d;->a:I
+    sget v8, Ls0/e;->a:I
 
     .line 11
     invoke-virtual {v0}, Landroid/security/keystore/KeyGenParameterSpec;->getKeySize()I
@@ -477,7 +477,7 @@
     move-result-object v2
 
     .line 8
-    invoke-static {v0}, La2/i;->b(I)Ljava/lang/String;
+    invoke-static {v0}, Ls0/d;->a(I)Ljava/lang/String;
 
     move-result-object v0
 

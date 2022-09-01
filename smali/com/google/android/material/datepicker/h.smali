@@ -36,7 +36,7 @@
     iget-object p1, p0, Lcom/google/android/material/datepicker/h;->d:Lcom/google/android/material/datepicker/f;
 
     .line 5
-    iget-object p1, p1, Lcom/google/android/material/datepicker/f;->k0:Landroid/view/View;
+    iget-object p1, p1, Lcom/google/android/material/datepicker/f;->l0:Landroid/view/View;
 
     .line 6
     invoke-virtual {p1}, Landroid/view/View;->getVisibility()I

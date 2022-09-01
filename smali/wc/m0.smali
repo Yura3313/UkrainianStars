@@ -1,5 +1,5 @@
 .class public final Lwc/m0;
-.super Lse/h;
+.super Lse/i;
 .source "MainActivity.kt"
 
 # interfaces
@@ -9,28 +9,28 @@
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/l<",
         "Lcom/supercell/id/view/RootFrameLayout;",
-        "Lie/h;",
+        "Lie/i;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic f:Lcom/supercell/id/ui/MainActivity;
+.field public final synthetic g:Lcom/supercell/id/ui/MainActivity;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/id/ui/MainActivity;)V
     .locals 0
 
-    iput-object p1, p0, Lwc/m0;->f:Lcom/supercell/id/ui/MainActivity;
+    iput-object p1, p0, Lwc/m0;->g:Lcom/supercell/id/ui/MainActivity;
 
     const/4 p1, 0x1
 
-    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -44,7 +44,7 @@
     check-cast p1, Lcom/supercell/id/view/RootFrameLayout;
 
     .line 2
-    iget-object p1, p0, Lwc/m0;->f:Lcom/supercell/id/ui/MainActivity;
+    iget-object p1, p0, Lwc/m0;->g:Lcom/supercell/id/ui/MainActivity;
 
     sget v0, Lcom/supercell/id/R$id;->dimmer:I
 
@@ -54,27 +54,27 @@
 
     const-string v1, "dimmer"
 
-    invoke-static {p1, v1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v1}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/4 v2, 0x0
 
     invoke-virtual {p1, v2}, Landroid/view/View;->setAlpha(F)V
 
     .line 3
-    iget-object p1, p0, Lwc/m0;->f:Lcom/supercell/id/ui/MainActivity;
+    iget-object p1, p0, Lwc/m0;->g:Lcom/supercell/id/ui/MainActivity;
 
     invoke-virtual {p1, v0}, Lcom/supercell/id/ui/MainActivity;->_$_findCachedViewById(I)Landroid/view/View;
 
     move-result-object p1
 
-    invoke-static {p1, v1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v1}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/4 v1, 0x0
 
     invoke-virtual {p1, v1}, Landroid/view/View;->setVisibility(I)V
 
     .line 4
-    iget-object p1, p0, Lwc/m0;->f:Lcom/supercell/id/ui/MainActivity;
+    iget-object p1, p0, Lwc/m0;->g:Lcom/supercell/id/ui/MainActivity;
 
     invoke-virtual {p1}, Landroidx/appcompat/app/AppCompatActivity;->getResources()Landroid/content/res/Resources;
 
@@ -82,9 +82,9 @@
 
     const-string v2, "resources"
 
-    invoke-static {p1, v2}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v2}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-static {p1}, Lcom/android/billingclient/api/c0;->j(Landroid/content/res/Resources;)Z
+    invoke-static {p1}, Lcom/android/billingclient/api/b0;->k(Landroid/content/res/Resources;)Z
 
     move-result p1
 
@@ -100,15 +100,15 @@
 
     if-nez p1, :cond_3
 
-    iget-object p1, p0, Lwc/m0;->f:Lcom/supercell/id/ui/MainActivity;
+    iget-object p1, p0, Lwc/m0;->g:Lcom/supercell/id/ui/MainActivity;
 
     invoke-virtual {p1}, Landroidx/appcompat/app/AppCompatActivity;->getResources()Landroid/content/res/Resources;
 
     move-result-object p1
 
-    invoke-static {p1, v2}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v2}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-static {p1}, Lcom/android/billingclient/api/c0;->n(Landroid/content/res/Resources;)Z
+    invoke-static {p1}, Lcom/android/billingclient/api/b0;->o(Landroid/content/res/Resources;)Z
 
     move-result p1
 
@@ -118,24 +118,24 @@
 
     .line 5
     :cond_0
-    iget-object p1, p0, Lwc/m0;->f:Lcom/supercell/id/ui/MainActivity;
+    iget-object p1, p0, Lwc/m0;->g:Lcom/supercell/id/ui/MainActivity;
 
     .line 6
-    invoke-virtual {p1}, Lcom/supercell/id/ui/MainActivity;->n()Luc/e;
+    invoke-virtual {p1}, Lcom/supercell/id/ui/MainActivity;->n()Luc/d;
 
     move-result-object p1
 
     .line 7
-    iget-object v2, p0, Lwc/m0;->f:Lcom/supercell/id/ui/MainActivity;
+    iget-object v2, p0, Lwc/m0;->g:Lcom/supercell/id/ui/MainActivity;
 
     invoke-static {v2}, Lcom/supercell/id/ui/MainActivity;->c(Lcom/supercell/id/ui/MainActivity;)F
 
     move-result v2
 
-    invoke-virtual {p1, v2}, Luc/e;->j(F)V
+    invoke-virtual {p1, v2}, Luc/d;->j(F)V
 
     .line 8
-    iget-object p1, p0, Lwc/m0;->f:Lcom/supercell/id/ui/MainActivity;
+    iget-object p1, p0, Lwc/m0;->g:Lcom/supercell/id/ui/MainActivity;
 
     sget v2, Lcom/supercell/id/R$id;->panel:I
 
@@ -145,7 +145,7 @@
 
     check-cast p1, Landroid/widget/FrameLayout;
 
-    invoke-static {p1, v7}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v7}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-static {p1}, Lae/z2;->e(Landroid/view/View;)Landroid/view/ViewGroup$MarginLayoutParams;
 
@@ -153,7 +153,7 @@
 
     if-eqz p1, :cond_1
 
-    iget-object v9, p0, Lwc/m0;->f:Lcom/supercell/id/ui/MainActivity;
+    iget-object v9, p0, Lwc/m0;->g:Lcom/supercell/id/ui/MainActivity;
 
     .line 9
     invoke-virtual {v9}, Lcom/supercell/id/ui/MainActivity;->u()I
@@ -165,7 +165,7 @@
 
     .line 11
     :cond_1
-    iget-object p1, p0, Lwc/m0;->f:Lcom/supercell/id/ui/MainActivity;
+    iget-object p1, p0, Lwc/m0;->g:Lcom/supercell/id/ui/MainActivity;
 
     invoke-virtual {p1, v2}, Lcom/supercell/id/ui/MainActivity;->_$_findCachedViewById(I)Landroid/view/View;
 
@@ -176,7 +176,7 @@
     invoke-virtual {p1}, Landroid/view/View;->requestLayout()V
 
     .line 12
-    iget-object p1, p0, Lwc/m0;->f:Lcom/supercell/id/ui/MainActivity;
+    iget-object p1, p0, Lwc/m0;->g:Lcom/supercell/id/ui/MainActivity;
 
     invoke-virtual {p1, v0}, Lcom/supercell/id/ui/MainActivity;->_$_findCachedViewById(I)Landroid/view/View;
 
@@ -221,7 +221,7 @@
     invoke-virtual {v0, v9}, Landroid/animation/ValueAnimator;->addUpdateListener(Landroid/animation/ValueAnimator$AnimatorUpdateListener;)V
 
     .line 19
-    iget-object v9, p0, Lwc/m0;->f:Lcom/supercell/id/ui/MainActivity;
+    iget-object v9, p0, Lwc/m0;->g:Lcom/supercell/id/ui/MainActivity;
 
     invoke-static {v9}, Lcom/supercell/id/ui/MainActivity;->b(Lcom/supercell/id/ui/MainActivity;)Lcom/supercell/id/ui/BackStack;
 
@@ -240,7 +240,7 @@
     if-ne v9, v4, :cond_2
 
     .line 20
-    iget-object v9, p0, Lwc/m0;->f:Lcom/supercell/id/ui/MainActivity;
+    iget-object v9, p0, Lwc/m0;->g:Lcom/supercell/id/ui/MainActivity;
 
     sget v10, Lcom/supercell/id/R$id;->head:I
 
@@ -252,13 +252,13 @@
 
     const-string v11, "head"
 
-    invoke-static {v9, v11}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v9, v11}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v9}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     move-result-object v9
 
-    iget-object v11, p0, Lwc/m0;->f:Lcom/supercell/id/ui/MainActivity;
+    iget-object v11, p0, Lwc/m0;->g:Lcom/supercell/id/ui/MainActivity;
 
     invoke-virtual {v11, v2}, Lcom/supercell/id/ui/MainActivity;->_$_findCachedViewById(I)Landroid/view/View;
 
@@ -266,7 +266,7 @@
 
     check-cast v2, Landroid/widget/FrameLayout;
 
-    invoke-static {v2, v7}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v2, v7}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v2}, Landroid/view/View;->getHeight()I
 
@@ -275,7 +275,7 @@
     iput v2, v9, Landroid/view/ViewGroup$LayoutParams;->height:I
 
     .line 21
-    iget-object v2, p0, Lwc/m0;->f:Lcom/supercell/id/ui/MainActivity;
+    iget-object v2, p0, Lwc/m0;->g:Lcom/supercell/id/ui/MainActivity;
 
     invoke-virtual {v2, v10}, Lcom/supercell/id/ui/MainActivity;->_$_findCachedViewById(I)Landroid/view/View;
 
@@ -316,16 +316,16 @@
 
     .line 27
     :cond_2
-    iget-object v3, p0, Lwc/m0;->f:Lcom/supercell/id/ui/MainActivity;
+    iget-object v3, p0, Lwc/m0;->g:Lcom/supercell/id/ui/MainActivity;
 
     invoke-static {v3}, Lcom/supercell/id/ui/MainActivity;->d(Lcom/supercell/id/ui/MainActivity;)V
 
     .line 28
-    new-instance v3, Lse/p;
+    new-instance v3, Lse/q;
 
-    invoke-direct {v3}, Lse/p;-><init>()V
+    invoke-direct {v3}, Lse/q;-><init>()V
 
-    iget-object v5, p0, Lwc/m0;->f:Lcom/supercell/id/ui/MainActivity;
+    iget-object v5, p0, Lwc/m0;->g:Lcom/supercell/id/ui/MainActivity;
 
     invoke-virtual {v5, v2}, Lcom/supercell/id/ui/MainActivity;->_$_findCachedViewById(I)Landroid/view/View;
 
@@ -333,18 +333,18 @@
 
     check-cast v2, Landroid/widget/FrameLayout;
 
-    invoke-static {v2, v7}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v2, v7}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v2}, Landroid/view/View;->getHeight()I
 
     move-result v2
 
-    iput v2, v3, Lse/p;->f:I
+    iput v2, v3, Lse/q;->g:I
 
     .line 29
     new-instance v2, Lwc/l0;
 
-    invoke-direct {v2, p0, v3}, Lwc/l0;-><init>(Lwc/m0;Lse/p;)V
+    invoke-direct {v2, p0, v3}, Lwc/l0;-><init>(Lwc/m0;Lse/q;)V
 
     invoke-virtual {v0, v2}, Landroid/animation/ValueAnimator;->addUpdateListener(Landroid/animation/ValueAnimator$AnimatorUpdateListener;)V
 
@@ -367,7 +367,7 @@
     aput-object v2, v5, v8
 
     .line 31
-    invoke-static {v5}, Lcom/android/billingclient/api/z;->k([Ljava/lang/Object;)Ljava/util/List;
+    invoke-static {v5}, Lcom/android/billingclient/api/y;->f([Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object p1
 
@@ -381,7 +381,7 @@
     .line 33
     :cond_3
     :goto_1
-    iget-object p1, p0, Lwc/m0;->f:Lcom/supercell/id/ui/MainActivity;
+    iget-object p1, p0, Lwc/m0;->g:Lcom/supercell/id/ui/MainActivity;
 
     sget v9, Lcom/supercell/id/R$id;->panel:I
 
@@ -391,7 +391,7 @@
 
     check-cast p1, Landroid/widget/FrameLayout;
 
-    invoke-static {p1, v7}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v7}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-static {p1}, Lae/z2;->e(Landroid/view/View;)Landroid/view/ViewGroup$MarginLayoutParams;
 
@@ -399,7 +399,7 @@
 
     if-eqz p1, :cond_4
 
-    iget-object v10, p0, Lwc/m0;->f:Lcom/supercell/id/ui/MainActivity;
+    iget-object v10, p0, Lwc/m0;->g:Lcom/supercell/id/ui/MainActivity;
 
     .line 34
     invoke-virtual {v10}, Lcom/supercell/id/ui/MainActivity;->t()I
@@ -411,7 +411,7 @@
 
     .line 36
     :cond_4
-    iget-object p1, p0, Lwc/m0;->f:Lcom/supercell/id/ui/MainActivity;
+    iget-object p1, p0, Lwc/m0;->g:Lcom/supercell/id/ui/MainActivity;
 
     invoke-static {p1}, Lcom/supercell/id/ui/MainActivity;->b(Lcom/supercell/id/ui/MainActivity;)Lcom/supercell/id/ui/BackStack;
 
@@ -422,15 +422,15 @@
     move-result-object p1
 
     .line 37
-    iget-object v10, p0, Lwc/m0;->f:Lcom/supercell/id/ui/MainActivity;
+    iget-object v10, p0, Lwc/m0;->g:Lcom/supercell/id/ui/MainActivity;
 
     invoke-virtual {v10}, Landroidx/appcompat/app/AppCompatActivity;->getResources()Landroid/content/res/Resources;
 
     move-result-object v10
 
-    invoke-static {v10, v2}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v10, v2}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-static {v10}, Lcom/android/billingclient/api/c0;->n(Landroid/content/res/Resources;)Z
+    invoke-static {v10}, Lcom/android/billingclient/api/b0;->o(Landroid/content/res/Resources;)Z
 
     move-result v10
 
@@ -445,7 +445,7 @@
     if-ne p1, v4, :cond_5
 
     .line 38
-    iget-object p1, p0, Lwc/m0;->f:Lcom/supercell/id/ui/MainActivity;
+    iget-object p1, p0, Lwc/m0;->g:Lcom/supercell/id/ui/MainActivity;
 
     invoke-virtual {p1, v9}, Lcom/supercell/id/ui/MainActivity;->_$_findCachedViewById(I)Landroid/view/View;
 
@@ -453,13 +453,13 @@
 
     check-cast p1, Landroid/widget/FrameLayout;
 
-    invoke-static {p1, v7}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v7}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {p1}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
     move-result-object p1
 
-    iget-object v10, p0, Lwc/m0;->f:Lcom/supercell/id/ui/MainActivity;
+    iget-object v10, p0, Lwc/m0;->g:Lcom/supercell/id/ui/MainActivity;
 
     sget v11, Lcom/supercell/id/R$id;->root_layout:I
 
@@ -471,7 +471,7 @@
 
     const-string v11, "root_layout"
 
-    invoke-static {v10, v11}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v10, v11}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v10}, Landroid/view/View;->getWidth()I
 
@@ -481,7 +481,7 @@
 
     .line 39
     :cond_5
-    iget-object p1, p0, Lwc/m0;->f:Lcom/supercell/id/ui/MainActivity;
+    iget-object p1, p0, Lwc/m0;->g:Lcom/supercell/id/ui/MainActivity;
 
     invoke-virtual {p1, v9}, Lcom/supercell/id/ui/MainActivity;->_$_findCachedViewById(I)Landroid/view/View;
 
@@ -492,7 +492,7 @@
     invoke-virtual {p1}, Landroid/view/View;->requestLayout()V
 
     .line 40
-    iget-object p1, p0, Lwc/m0;->f:Lcom/supercell/id/ui/MainActivity;
+    iget-object p1, p0, Lwc/m0;->g:Lcom/supercell/id/ui/MainActivity;
 
     invoke-virtual {p1, v0}, Lcom/supercell/id/ui/MainActivity;->_$_findCachedViewById(I)Landroid/view/View;
 
@@ -535,31 +535,31 @@
     invoke-virtual {v0, v3}, Landroid/animation/ValueAnimator;->addUpdateListener(Landroid/animation/ValueAnimator$AnimatorUpdateListener;)V
 
     .line 47
-    iget-object v3, p0, Lwc/m0;->f:Lcom/supercell/id/ui/MainActivity;
+    iget-object v3, p0, Lwc/m0;->g:Lcom/supercell/id/ui/MainActivity;
 
     invoke-virtual {v3}, Landroidx/appcompat/app/AppCompatActivity;->getResources()Landroid/content/res/Resources;
 
     move-result-object v3
 
-    invoke-static {v3, v2}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v3, v2}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-static {v3}, Lcom/android/billingclient/api/c0;->k(Landroid/content/res/Resources;)Z
+    invoke-static {v3}, Lcom/android/billingclient/api/b0;->l(Landroid/content/res/Resources;)Z
 
     move-result v2
 
     if-eqz v2, :cond_6
 
     .line 48
-    iget-object v2, p0, Lwc/m0;->f:Lcom/supercell/id/ui/MainActivity;
+    iget-object v2, p0, Lwc/m0;->g:Lcom/supercell/id/ui/MainActivity;
 
     invoke-static {v2}, Lcom/supercell/id/ui/MainActivity;->d(Lcom/supercell/id/ui/MainActivity;)V
 
     .line 49
-    new-instance v2, Lse/p;
+    new-instance v2, Lse/q;
 
-    invoke-direct {v2}, Lse/p;-><init>()V
+    invoke-direct {v2}, Lse/q;-><init>()V
 
-    iget-object v3, p0, Lwc/m0;->f:Lcom/supercell/id/ui/MainActivity;
+    iget-object v3, p0, Lwc/m0;->g:Lcom/supercell/id/ui/MainActivity;
 
     invoke-virtual {v3, v9}, Lcom/supercell/id/ui/MainActivity;->_$_findCachedViewById(I)Landroid/view/View;
 
@@ -567,18 +567,18 @@
 
     check-cast v3, Landroid/widget/FrameLayout;
 
-    invoke-static {v3, v7}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v3, v7}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v3}, Landroid/view/View;->getWidth()I
 
     move-result v3
 
-    iput v3, v2, Lse/p;->f:I
+    iput v3, v2, Lse/q;->g:I
 
     .line 50
     new-instance v3, Lwc/k0;
 
-    invoke-direct {v3, p0, v2}, Lwc/k0;-><init>(Lwc/m0;Lse/p;)V
+    invoke-direct {v3, p0, v2}, Lwc/k0;-><init>(Lwc/m0;Lse/q;)V
 
     invoke-virtual {v0, v3}, Landroid/animation/ValueAnimator;->addUpdateListener(Landroid/animation/ValueAnimator$AnimatorUpdateListener;)V
 
@@ -586,7 +586,7 @@
 
     .line 51
     :cond_6
-    iget-object v2, p0, Lwc/m0;->f:Lcom/supercell/id/ui/MainActivity;
+    iget-object v2, p0, Lwc/m0;->g:Lcom/supercell/id/ui/MainActivity;
 
     invoke-static {v2}, Lcom/supercell/id/ui/MainActivity;->d(Lcom/supercell/id/ui/MainActivity;)V
 
@@ -610,7 +610,7 @@
 
     .line 55
     :goto_3
-    sget-object p1, Lie/h;->a:Lie/h;
+    sget-object p1, Lie/i;->a:Lie/i;
 
     return-object p1
 

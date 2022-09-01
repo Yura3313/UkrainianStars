@@ -12,7 +12,7 @@
 
 
 # static fields
-.field public static h:Ljava/lang/ref/WeakReference;
+.field public static i:Ljava/lang/ref/WeakReference;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/lang/ref/WeakReference<",
@@ -22,11 +22,11 @@
     .end annotation
 .end field
 
-.field public static final i:Led/a$a;
+.field public static final j:Led/a$a;
 
 
 # instance fields
-.field public final f:Ljava/lang/ref/WeakReference;
+.field public final g:Ljava/lang/ref/WeakReference;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/lang/ref/WeakReference<",
@@ -36,7 +36,7 @@
     .end annotation
 .end field
 
-.field public final g:Lcom/supercell/id/util/NormalizedError;
+.field public final h:Lcom/supercell/id/util/NormalizedError;
 
 
 # direct methods
@@ -47,7 +47,7 @@
 
     invoke-direct {v0}, Led/a$a;-><init>()V
 
-    sput-object v0, Led/a;->i:Led/a$a;
+    sput-object v0, Led/a;->j:Led/a$a;
 
     return-void
 .end method
@@ -57,21 +57,21 @@
 
     const-string v0, "activity"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     sget v0, Lcom/supercell/id/R$style;->SupercellIdTheme:I
 
     invoke-direct {p0, p1, v0}, Lwc/d;-><init>(Landroid/app/Activity;I)V
 
-    iput-object p2, p0, Led/a;->g:Lcom/supercell/id/util/NormalizedError;
+    iput-object p2, p0, Led/a;->h:Lcom/supercell/id/util/NormalizedError;
 
     .line 2
     new-instance p2, Ljava/lang/ref/WeakReference;
 
     invoke-direct {p2, p1}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
 
-    iput-object p2, p0, Led/a;->f:Ljava/lang/ref/WeakReference;
+    iput-object p2, p0, Led/a;->g:Ljava/lang/ref/WeakReference;
 
     return-void
 .end method
@@ -85,7 +85,7 @@
     invoke-super {p0, p1}, Landroid/app/Dialog;->onCreate(Landroid/os/Bundle;)V
 
     .line 2
-    iget-object p1, p0, Led/a;->f:Ljava/lang/ref/WeakReference;
+    iget-object p1, p0, Led/a;->g:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {p1}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
 
@@ -96,7 +96,7 @@
     if-eqz p1, :cond_7
 
     .line 3
-    sget-object v0, Led/a;->h:Ljava/lang/ref/WeakReference;
+    sget-object v0, Led/a;->i:Ljava/lang/ref/WeakReference;
 
     const/4 v1, 0x1
 
@@ -113,7 +113,7 @@
 
     if-eqz v0, :cond_1
 
-    invoke-static {v0, p0}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, p0}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v3
 
@@ -138,7 +138,7 @@
     invoke-direct {v0, p0}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
 
     .line 6
-    sput-object v0, Led/a;->h:Ljava/lang/ref/WeakReference;
+    sput-object v0, Led/a;->i:Ljava/lang/ref/WeakReference;
 
     .line 7
     invoke-virtual {p0, v1}, Landroid/app/Dialog;->requestWindowFeature(I)Z
@@ -164,7 +164,7 @@
 
     .line 11
     :cond_2
-    invoke-static {p1}, Lcom/android/billingclient/api/c0;->i(Landroid/app/Activity;)Z
+    invoke-static {p1}, Lcom/android/billingclient/api/b0;->j(Landroid/app/Activity;)Z
 
     move-result v3
 
@@ -200,7 +200,7 @@
 
     const-string v6, "activity.resources"
 
-    invoke-static {v5, v6}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v5, v6}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v5}, Landroid/content/res/Resources;->getConfiguration()Landroid/content/res/Configuration;
 
@@ -296,12 +296,12 @@
 
     const-string v3, "logoImageView"
 
-    invoke-static {v0, v3}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v3}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v3, "AccountIconBig.png"
 
     .line 33
-    invoke-static {v0, v3, v1}, Lud/f0;->h(Landroid/widget/ImageView;Ljava/lang/String;Z)V
+    invoke-static {v0, v3, v1}, Lud/d0;->h(Landroid/widget/ImageView;Ljava/lang/String;Z)V
 
     .line 34
     sget v0, Lcom/supercell/id/R$id;->errorTitleTextView:I
@@ -314,7 +314,7 @@
 
     const-string v5, "errorTitleTextView"
 
-    invoke-static {v3, v5}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v3, v5}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     sget v6, Lcom/supercell/id/R$font;->supercell_text_android_md:I
 
@@ -327,15 +327,15 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    invoke-static {v0, v5}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v5}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    iget-object v3, p0, Led/a;->g:Lcom/supercell/id/util/NormalizedError;
+    iget-object v3, p0, Led/a;->h:Lcom/supercell/id/util/NormalizedError;
 
     .line 36
-    iget-object v3, v3, Lcom/supercell/id/util/NormalizedError;->f:Ljava/lang/String;
+    iget-object v3, v3, Lcom/supercell/id/util/NormalizedError;->g:Ljava/lang/String;
 
     .line 37
-    invoke-static {v0, v3, v2}, Lud/f0;->j(Landroid/widget/TextView;Ljava/lang/String;Lre/p;)V
+    invoke-static {v0, v3, v2}, Lud/d0;->j(Landroid/widget/TextView;Ljava/lang/String;Lre/p;)V
 
     .line 38
     sget v0, Lcom/supercell/id/R$id;->errorTextTextView:I
@@ -348,7 +348,7 @@
 
     const-string v5, "errorTextTextView"
 
-    invoke-static {v3, v5}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v3, v5}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-static {v3, v6}, Lae/r;->b(Landroid/widget/TextView;I)V
 
@@ -359,20 +359,20 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    invoke-static {v0, v5}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v5}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    iget-object v3, p0, Led/a;->g:Lcom/supercell/id/util/NormalizedError;
+    iget-object v3, p0, Led/a;->h:Lcom/supercell/id/util/NormalizedError;
 
     .line 40
-    iget-object v5, v3, Lcom/supercell/id/util/NormalizedError;->g:Ljava/lang/String;
+    iget-object v5, v3, Lcom/supercell/id/util/NormalizedError;->h:Ljava/lang/String;
 
     .line 41
-    iget-object v3, v3, Lcom/supercell/id/util/NormalizedError;->i:Lie/d;
+    iget-object v3, v3, Lcom/supercell/id/util/NormalizedError;->j:Lie/d;
 
     if-eqz v3, :cond_4
 
     .line 42
-    invoke-static {v3}, Lcom/google/android/play/core/assetpacks/o2;->j(Lie/d;)Ljava/util/Map;
+    invoke-static {v3}, Lt3/h;->h(Lie/d;)Ljava/util/Map;
 
     move-result-object v3
 
@@ -380,11 +380,11 @@
 
     .line 43
     :cond_4
-    sget-object v3, Lje/m;->f:Lje/m;
+    sget-object v3, Lje/m;->g:Lje/m;
 
     .line 44
     :goto_1
-    invoke-static {v0, v5, v3, v2}, Lud/f0;->i(Landroid/widget/TextView;Ljava/lang/String;Ljava/util/Map;Lre/l;)V
+    invoke-static {v0, v5, v3, v2}, Lud/d0;->i(Landroid/widget/TextView;Ljava/lang/String;Ljava/util/Map;Lre/l;)V
 
     .line 45
     sget v0, Lcom/supercell/id/R$id;->errorOkButton:I
@@ -401,18 +401,18 @@
     invoke-static {v0, v3}, Lae/r;->b(Landroid/widget/TextView;I)V
 
     .line 47
-    sget-object v3, Lsc/a$a;->g:Lsc/a$a;
+    sget-object v3, Lsc/a$a;->h:Lsc/a$a;
 
     invoke-static {v0, v4, v4}, Lae/z2;->r(Landroid/view/View;II)V
 
     .line 48
-    iget-object v3, p0, Led/a;->g:Lcom/supercell/id/util/NormalizedError;
+    iget-object v3, p0, Led/a;->h:Lcom/supercell/id/util/NormalizedError;
 
     .line 49
-    iget-object v3, v3, Lcom/supercell/id/util/NormalizedError;->h:Ljava/lang/String;
+    iget-object v3, v3, Lcom/supercell/id/util/NormalizedError;->i:Ljava/lang/String;
 
     .line 50
-    invoke-static {v3}, Lye/n;->i(Ljava/lang/CharSequence;)Z
+    invoke-static {v3}, Lye/n;->j(Ljava/lang/CharSequence;)Z
 
     move-result v4
 
@@ -435,7 +435,7 @@
 
     .line 51
     :goto_3
-    invoke-static {v0, v3, v2}, Lud/f0;->j(Landroid/widget/TextView;Ljava/lang/String;Lre/p;)V
+    invoke-static {v0, v3, v2}, Lud/d0;->j(Landroid/widget/TextView;Ljava/lang/String;Lre/p;)V
 
     .line 52
     new-instance v1, Led/a$b;
@@ -456,7 +456,7 @@
     const-string v0, "it"
 
     .line 54
-    invoke-static {p1, v0}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     const v0, 0x3f4ccccd
 
@@ -479,7 +479,7 @@
 
     const-string v2, "spring"
 
-    invoke-static {v1, v2}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     const v3, 0x3e99999a
 
@@ -490,7 +490,7 @@
 
     move-result-object v1
 
-    invoke-static {v1, v2}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/high16 v4, 0x43c80000    # 400.0f
 
@@ -511,7 +511,7 @@
 
     move-result-object p1
 
-    invoke-static {p1, v2}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v2}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {p1, v3}, Ll0/e;->a(F)Ll0/e;
 
@@ -520,7 +520,7 @@
 
     move-result-object p1
 
-    invoke-static {p1, v2}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v2}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {p1, v4}, Ll0/e;->b(F)Ll0/e;
 

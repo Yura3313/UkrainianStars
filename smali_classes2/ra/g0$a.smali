@@ -1,6 +1,9 @@
 .class public final Lra/g0$a;
 .super Landroidx/recyclerview/widget/RecyclerView$z;
-.source "SystemDividerMessageDataBinder.java"
+.source "SystemPublishIdMessageDataBinder.java"
+
+# interfaces
+.implements Landroid/view/View$OnCreateContextMenuListener;
 
 
 # annotations
@@ -15,37 +18,83 @@
 
 
 # instance fields
-.field public y:Landroid/widget/TextView;
+.field public final synthetic A:Lra/g0;
 
-.field public z:Landroid/view/View;
+.field public final z:Landroid/widget/TextView;
 
 
 # direct methods
-.method public constructor <init>(Landroid/view/View;)V
-    .locals 1
+.method public constructor <init>(Lra/g0;Landroid/view/View;)V
+    .locals 0
 
     .line 1
-    invoke-direct {p0, p1}, Landroidx/recyclerview/widget/RecyclerView$z;-><init>(Landroid/view/View;)V
+    iput-object p1, p0, Lra/g0$a;->A:Lra/g0;
 
     .line 2
-    sget v0, Lcom/helpshift/R$id;->conversations_divider:I
-
-    invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    move-result-object v0
-
-    iput-object v0, p0, Lra/g0$a;->z:Landroid/view/View;
+    invoke-direct {p0, p2}, Landroidx/recyclerview/widget/RecyclerView$z;-><init>(Landroid/view/View;)V
 
     .line 3
-    sget v0, Lcom/helpshift/R$id;->conversation_closed_view:I
+    sget p1, Lcom/helpshift/R$id;->issue_publish_id_label:I
 
-    invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p2, p1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
     move-result-object p1
 
     check-cast p1, Landroid/widget/TextView;
 
-    iput-object p1, p0, Lra/g0$a;->y:Landroid/widget/TextView;
+    iput-object p1, p0, Lra/g0$a;->z:Landroid/widget/TextView;
 
+    return-void
+.end method
+
+
+# virtual methods
+.method public final onCreateContextMenu(Landroid/view/ContextMenu;Landroid/view/View;Landroid/view/ContextMenu$ContextMenuInfo;)V
+    .locals 1
+
+    .line 1
+    iget-object p3, p0, Lra/g0$a;->A:Lra/g0;
+
+    iget-object p3, p3, Lra/u;->b:Lra/u$a;
+
+    if-eqz p3, :cond_0
+
+    .line 2
+    check-cast p2, Landroid/widget/TextView;
+
+    invoke-virtual {p2}, Landroid/widget/TextView;->getText()Ljava/lang/CharSequence;
+
+    move-result-object p2
+
+    invoke-interface {p2}, Ljava/lang/CharSequence;->toString()Ljava/lang/String;
+
+    move-result-object p2
+
+    const-string p3, "#"
+
+    .line 3
+    invoke-virtual {p2, p3}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
+
+    move-result-object p2
+
+    .line 4
+    array-length p3, p2
+
+    const/4 v0, 0x1
+
+    if-le p3, v0, :cond_0
+
+    .line 5
+    iget-object p3, p0, Lra/g0$a;->A:Lra/g0;
+
+    iget-object p3, p3, Lra/u;->b:Lra/u$a;
+
+    aget-object p2, p2, v0
+
+    check-cast p3, Lqa/p0;
+
+    invoke-virtual {p3, p1, p2}, Lqa/p0;->r(Landroid/view/ContextMenu;Ljava/lang/String;)V
+
+    :cond_0
     return-void
 .end method

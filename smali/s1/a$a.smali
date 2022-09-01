@@ -27,15 +27,15 @@
 
 
 # static fields
-.field public static final i:Ls1/a$a;
+.field public static final j:Ls1/a$a;
 
 
 # instance fields
-.field public final f:Ljava/lang/String;
+.field public final g:Ljava/lang/String;
 
-.field public final g:Z
+.field public final h:Z
 
-.field public final h:Ljava/lang/String;
+.field public final i:Ljava/lang/String;
 
 
 # direct methods
@@ -53,7 +53,7 @@
     invoke-direct {v1, v0}, Ls1/a$a;-><init>(Ls1/a$a$a;)V
 
     .line 3
-    sput-object v1, Ls1/a$a;->i:Ls1/a$a;
+    sput-object v1, Ls1/a$a;->j:Ls1/a$a;
 
     return-void
 .end method
@@ -67,7 +67,7 @@
     .line 2
     iget-object v0, p1, Ls1/a$a$a;->a:Ljava/lang/String;
 
-    iput-object v0, p0, Ls1/a$a;->f:Ljava/lang/String;
+    iput-object v0, p0, Ls1/a$a;->g:Ljava/lang/String;
 
     .line 3
     iget-object v0, p1, Ls1/a$a$a;->b:Ljava/lang/Boolean;
@@ -76,12 +76,12 @@
 
     move-result v0
 
-    iput-boolean v0, p0, Ls1/a$a;->g:Z
+    iput-boolean v0, p0, Ls1/a$a;->h:Z
 
     .line 4
     iget-object p1, p1, Ls1/a$a$a;->c:Ljava/lang/String;
 
-    iput-object p1, p0, Ls1/a$a;->h:Ljava/lang/String;
+    iput-object p1, p0, Ls1/a$a;->i:Ljava/lang/String;
 
     return-void
 .end method
@@ -112,9 +112,9 @@
     check-cast p1, Ls1/a$a;
 
     .line 3
-    iget-object v1, p0, Ls1/a$a;->f:Ljava/lang/String;
+    iget-object v1, p0, Ls1/a$a;->g:Ljava/lang/String;
 
-    iget-object v3, p1, Ls1/a$a;->f:Ljava/lang/String;
+    iget-object v3, p1, Ls1/a$a;->g:Ljava/lang/String;
 
     invoke-static {v1, v3}, Ld2/f;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
@@ -122,15 +122,15 @@
 
     if-eqz v1, :cond_2
 
-    iget-boolean v1, p0, Ls1/a$a;->g:Z
+    iget-boolean v1, p0, Ls1/a$a;->h:Z
 
-    iget-boolean v3, p1, Ls1/a$a;->g:Z
+    iget-boolean v3, p1, Ls1/a$a;->h:Z
 
     if-ne v1, v3, :cond_2
 
-    iget-object v1, p0, Ls1/a$a;->h:Ljava/lang/String;
+    iget-object v1, p0, Ls1/a$a;->i:Ljava/lang/String;
 
-    iget-object p1, p1, Ls1/a$a;->h:Ljava/lang/String;
+    iget-object p1, p1, Ls1/a$a;->i:Ljava/lang/String;
 
     .line 4
     invoke-static {v1, p1}, Ld2/f;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
@@ -153,13 +153,13 @@
     new-array v0, v0, [Ljava/lang/Object;
 
     .line 1
-    iget-object v1, p0, Ls1/a$a;->f:Ljava/lang/String;
+    iget-object v1, p0, Ls1/a$a;->g:Ljava/lang/String;
 
     const/4 v2, 0x0
 
     aput-object v1, v0, v2
 
-    iget-boolean v1, p0, Ls1/a$a;->g:Z
+    iget-boolean v1, p0, Ls1/a$a;->h:Z
 
     invoke-static {v1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -169,7 +169,7 @@
 
     aput-object v1, v0, v2
 
-    iget-object v1, p0, Ls1/a$a;->h:Ljava/lang/String;
+    iget-object v1, p0, Ls1/a$a;->i:Ljava/lang/String;
 
     const/4 v2, 0x2
 

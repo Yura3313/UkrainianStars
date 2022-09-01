@@ -1,5 +1,5 @@
 .class public final Lcom/supercell/id/ui/youngplayer/register/YoungPlayerRegisterFlowFragment$c;
-.super Lse/h;
+.super Lse/i;
 .source "YoungPlayerRegisterFlow.kt"
 
 # interfaces
@@ -18,7 +18,7 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/a<",
         "Lzd/i;",
         ">;"
@@ -27,7 +27,7 @@
 
 
 # static fields
-.field public static final f:Lcom/supercell/id/ui/youngplayer/register/YoungPlayerRegisterFlowFragment$c;
+.field public static final g:Lcom/supercell/id/ui/youngplayer/register/YoungPlayerRegisterFlowFragment$c;
 
 
 # direct methods
@@ -38,7 +38,7 @@
 
     invoke-direct {v0}, Lcom/supercell/id/ui/youngplayer/register/YoungPlayerRegisterFlowFragment$c;-><init>()V
 
-    sput-object v0, Lcom/supercell/id/ui/youngplayer/register/YoungPlayerRegisterFlowFragment$c;->f:Lcom/supercell/id/ui/youngplayer/register/YoungPlayerRegisterFlowFragment$c;
+    sput-object v0, Lcom/supercell/id/ui/youngplayer/register/YoungPlayerRegisterFlowFragment$c;->g:Lcom/supercell/id/ui/youngplayer/register/YoungPlayerRegisterFlowFragment$c;
 
     return-void
 .end method
@@ -48,7 +48,7 @@
 
     const/4 v0, 0x0
 
-    invoke-direct {p0, v0}, Lse/h;-><init>(I)V
+    invoke-direct {p0, v0}, Lse/i;-><init>(I)V
 
     return-void
 .end method

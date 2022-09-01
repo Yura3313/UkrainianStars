@@ -172,7 +172,7 @@
 .method public static emptyBooleanList()Lcom/google/protobuf/a0$a;
     .locals 1
 
-    sget-object v0, Lcom/google/protobuf/g;->i:Lcom/google/protobuf/g;
+    sget-object v0, Lcom/google/protobuf/g;->j:Lcom/google/protobuf/g;
 
     return-object v0
 .end method
@@ -180,7 +180,7 @@
 .method public static emptyDoubleList()Lcom/google/protobuf/a0$b;
     .locals 1
 
-    sget-object v0, Lcom/google/protobuf/m;->i:Lcom/google/protobuf/m;
+    sget-object v0, Lcom/google/protobuf/m;->j:Lcom/google/protobuf/m;
 
     return-object v0
 .end method
@@ -188,7 +188,7 @@
 .method public static emptyFloatList()Lcom/google/protobuf/a0$f;
     .locals 1
 
-    sget-object v0, Lcom/google/protobuf/x;->i:Lcom/google/protobuf/x;
+    sget-object v0, Lcom/google/protobuf/x;->j:Lcom/google/protobuf/x;
 
     return-object v0
 .end method
@@ -196,7 +196,7 @@
 .method public static emptyIntList()Lcom/google/protobuf/a0$g;
     .locals 1
 
-    sget-object v0, Lcom/google/protobuf/z;->i:Lcom/google/protobuf/z;
+    sget-object v0, Lcom/google/protobuf/z;->j:Lcom/google/protobuf/z;
 
     return-object v0
 .end method
@@ -204,7 +204,7 @@
 .method public static emptyLongList()Lcom/google/protobuf/a0$h;
     .locals 1
 
-    sget-object v0, Lcom/google/protobuf/h0;->i:Lcom/google/protobuf/h0;
+    sget-object v0, Lcom/google/protobuf/h0;->j:Lcom/google/protobuf/h0;
 
     return-object v0
 .end method
@@ -478,7 +478,7 @@
     .end annotation
 
     .line 2
-    sget-object v0, Lcom/google/protobuf/GeneratedMessageLite$e;->f:Lcom/google/protobuf/GeneratedMessageLite$e;
+    sget-object v0, Lcom/google/protobuf/GeneratedMessageLite$e;->g:Lcom/google/protobuf/GeneratedMessageLite$e;
 
     .line 3
     invoke-virtual {p0, v0}, Lcom/google/protobuf/GeneratedMessageLite;->dynamicMethod(Lcom/google/protobuf/GeneratedMessageLite$e;)Ljava/lang/Object;
@@ -528,7 +528,7 @@
     if-eqz p1, :cond_3
 
     .line 8
-    sget-object p1, Lcom/google/protobuf/GeneratedMessageLite$e;->g:Lcom/google/protobuf/GeneratedMessageLite$e;
+    sget-object p1, Lcom/google/protobuf/GeneratedMessageLite$e;->h:Lcom/google/protobuf/GeneratedMessageLite$e;
 
     if-eqz v0, :cond_2
 
@@ -555,7 +555,7 @@
     check-cast v0, Lcom/google/protobuf/g;
 
     .line 14
-    iget v0, v0, Lcom/google/protobuf/g;->h:I
+    iget v0, v0, Lcom/google/protobuf/g;->i:I
 
     if-nez v0, :cond_0
 
@@ -586,7 +586,7 @@
     check-cast v0, Lcom/google/protobuf/m;
 
     .line 11
-    iget v0, v0, Lcom/google/protobuf/m;->h:I
+    iget v0, v0, Lcom/google/protobuf/m;->i:I
 
     if-nez v0, :cond_0
 
@@ -617,7 +617,7 @@
     check-cast v0, Lcom/google/protobuf/x;
 
     .line 8
-    iget v0, v0, Lcom/google/protobuf/x;->h:I
+    iget v0, v0, Lcom/google/protobuf/x;->i:I
 
     if-nez v0, :cond_0
 
@@ -648,7 +648,7 @@
     check-cast v0, Lcom/google/protobuf/z;
 
     .line 2
-    iget v0, v0, Lcom/google/protobuf/z;->h:I
+    iget v0, v0, Lcom/google/protobuf/z;->i:I
 
     if-nez v0, :cond_0
 
@@ -679,7 +679,7 @@
     check-cast v0, Lcom/google/protobuf/h0;
 
     .line 5
-    iget v0, v0, Lcom/google/protobuf/h0;->h:I
+    iget v0, v0, Lcom/google/protobuf/h0;->i:I
 
     if-nez v0, :cond_0
 
@@ -1343,7 +1343,7 @@
     move-exception p0
 
     .line 9
-    iget-boolean p1, p0, Lcom/google/protobuf/InvalidProtocolBufferException;->f:Z
+    iget-boolean p1, p0, Lcom/google/protobuf/InvalidProtocolBufferException;->g:Z
 
     if-eqz p1, :cond_1
 
@@ -1467,7 +1467,7 @@
     .end annotation
 
     .line 1
-    sget-object v0, Lcom/google/protobuf/GeneratedMessageLite$e;->i:Lcom/google/protobuf/GeneratedMessageLite$e;
+    sget-object v0, Lcom/google/protobuf/GeneratedMessageLite$e;->j:Lcom/google/protobuf/GeneratedMessageLite$e;
 
     invoke-virtual {p0, v0}, Lcom/google/protobuf/GeneratedMessageLite;->dynamicMethod(Lcom/google/protobuf/GeneratedMessageLite$e;)Ljava/lang/Object;
 
@@ -1577,7 +1577,7 @@
 
     .line 14
     :goto_3
-    iget-boolean p1, p0, Lcom/google/protobuf/InvalidProtocolBufferException;->f:Z
+    iget-boolean p1, p0, Lcom/google/protobuf/InvalidProtocolBufferException;->g:Z
 
     if-eqz p1, :cond_3
 
@@ -1612,7 +1612,7 @@
     .end annotation
 
     .line 17
-    sget-object v0, Lcom/google/protobuf/GeneratedMessageLite$e;->i:Lcom/google/protobuf/GeneratedMessageLite$e;
+    sget-object v0, Lcom/google/protobuf/GeneratedMessageLite$e;->j:Lcom/google/protobuf/GeneratedMessageLite$e;
 
     invoke-virtual {p0, v0}, Lcom/google/protobuf/GeneratedMessageLite;->dynamicMethod(Lcom/google/protobuf/GeneratedMessageLite$e;)Ljava/lang/Object;
 
@@ -1712,7 +1712,7 @@
     move-exception p0
 
     .line 28
-    iget-boolean p1, p0, Lcom/google/protobuf/InvalidProtocolBufferException;->f:Z
+    iget-boolean p1, p0, Lcom/google/protobuf/InvalidProtocolBufferException;->g:Z
 
     if-eqz p1, :cond_2
 
@@ -1793,7 +1793,7 @@
         }
     .end annotation
 
-    sget-object v0, Lcom/google/protobuf/GeneratedMessageLite$e;->h:Lcom/google/protobuf/GeneratedMessageLite$e;
+    sget-object v0, Lcom/google/protobuf/GeneratedMessageLite$e;->i:Lcom/google/protobuf/GeneratedMessageLite$e;
 
     invoke-virtual {p0, v0}, Lcom/google/protobuf/GeneratedMessageLite;->dynamicMethod(Lcom/google/protobuf/GeneratedMessageLite$e;)Ljava/lang/Object;
 
@@ -1815,7 +1815,7 @@
     .end annotation
 
     .line 1
-    sget-object v0, Lcom/google/protobuf/GeneratedMessageLite$e;->j:Lcom/google/protobuf/GeneratedMessageLite$e;
+    sget-object v0, Lcom/google/protobuf/GeneratedMessageLite$e;->k:Lcom/google/protobuf/GeneratedMessageLite$e;
 
     invoke-virtual {p0, v0}, Lcom/google/protobuf/GeneratedMessageLite;->dynamicMethod(Lcom/google/protobuf/GeneratedMessageLite$e;)Ljava/lang/Object;
 
@@ -1942,7 +1942,7 @@
     .end annotation
 
     .line 2
-    sget-object v0, Lcom/google/protobuf/GeneratedMessageLite$e;->k:Lcom/google/protobuf/GeneratedMessageLite$e;
+    sget-object v0, Lcom/google/protobuf/GeneratedMessageLite$e;->l:Lcom/google/protobuf/GeneratedMessageLite$e;
 
     invoke-virtual {p0, v0}, Lcom/google/protobuf/GeneratedMessageLite;->dynamicMethod(Lcom/google/protobuf/GeneratedMessageLite$e;)Ljava/lang/Object;
 
@@ -1982,7 +1982,7 @@
         }
     .end annotation
 
-    sget-object v0, Lcom/google/protobuf/GeneratedMessageLite$e;->l:Lcom/google/protobuf/GeneratedMessageLite$e;
+    sget-object v0, Lcom/google/protobuf/GeneratedMessageLite$e;->m:Lcom/google/protobuf/GeneratedMessageLite$e;
 
     invoke-virtual {p0, v0}, Lcom/google/protobuf/GeneratedMessageLite;->dynamicMethod(Lcom/google/protobuf/GeneratedMessageLite$e;)Ljava/lang/Object;
 
@@ -2202,7 +2202,7 @@
     .end annotation
 
     .line 2
-    sget-object v0, Lcom/google/protobuf/GeneratedMessageLite$e;->j:Lcom/google/protobuf/GeneratedMessageLite$e;
+    sget-object v0, Lcom/google/protobuf/GeneratedMessageLite$e;->k:Lcom/google/protobuf/GeneratedMessageLite$e;
 
     invoke-virtual {p0, v0}, Lcom/google/protobuf/GeneratedMessageLite;->dynamicMethod(Lcom/google/protobuf/GeneratedMessageLite$e;)Ljava/lang/Object;
 
@@ -2273,7 +2273,7 @@
     .end annotation
 
     .line 2
-    sget-object v0, Lcom/google/protobuf/GeneratedMessageLite$e;->j:Lcom/google/protobuf/GeneratedMessageLite$e;
+    sget-object v0, Lcom/google/protobuf/GeneratedMessageLite$e;->k:Lcom/google/protobuf/GeneratedMessageLite$e;
 
     invoke-virtual {p0, v0}, Lcom/google/protobuf/GeneratedMessageLite;->dynamicMethod(Lcom/google/protobuf/GeneratedMessageLite$e;)Ljava/lang/Object;
 

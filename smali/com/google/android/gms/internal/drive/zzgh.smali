@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field public final f:Z
+.field public final g:Z
 
 
 # direct methods
@@ -38,7 +38,7 @@
     invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
 
     .line 2
-    iput-boolean p1, p0, Lcom/google/android/gms/internal/drive/zzgh;->f:Z
+    iput-boolean p1, p0, Lcom/google/android/gms/internal/drive/zzgh;->g:Z
 
     return-void
 .end method
@@ -56,7 +56,7 @@
     move-result v5
 
     .line 2
-    iget-boolean v3, p0, Lcom/google/android/gms/internal/drive/zzgh;->f:Z
+    iget-boolean v3, p0, Lcom/google/android/gms/internal/drive/zzgh;->g:Z
 
     const/4 v1, 0x2
 

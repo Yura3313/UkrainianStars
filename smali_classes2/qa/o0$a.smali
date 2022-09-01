@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field public final synthetic f:Lqa/o0;
+.field public final synthetic g:Lqa/o0;
 
 
 # direct methods
 .method public constructor <init>(Lqa/o0;)V
     .locals 0
 
-    iput-object p1, p0, Lqa/o0$a;->f:Lqa/o0;
+    iput-object p1, p0, Lqa/o0$a;->g:Lqa/o0;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -38,7 +38,7 @@
     .locals 3
 
     .line 1
-    iget-object v0, p0, Lqa/o0$a;->f:Lqa/o0;
+    iget-object v0, p0, Lqa/o0$a;->g:Lqa/o0;
 
     .line 2
     iget-object v0, v0, Lqa/o0;->b:Lqa/o0$d;
@@ -47,7 +47,7 @@
     check-cast v0, Lqa/t;
 
     .line 4
-    iget-object v0, v0, Lqa/t;->m0:Lf9/i;
+    iget-object v0, v0, Lqa/t;->n0:Lf9/i;
 
     .line 5
     iget-object v1, v0, Lf9/i;->x:Lqb/i;

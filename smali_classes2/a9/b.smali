@@ -79,7 +79,7 @@
     const/4 v2, 0x0
 
     .line 3
-    invoke-static {v1, v0, v2, v2}, Landroidx/savedstate/d;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v1, v0, v2, v2}, Le5/i;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
 
     .line 4
     new-instance v0, Ljava/util/ArrayList;
@@ -110,7 +110,7 @@
     const-string p1, "In-memory conversation not alive, returning!"
 
     .line 8
-    invoke-static {v1, p1, v2, v2}, Landroidx/savedstate/d;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v1, p1, v2, v2}, Le5/i;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
 
     return-object v2
 
@@ -152,7 +152,7 @@
     check-cast v5, Lq8/d;
 
     .line 13
-    invoke-virtual {v7, v5}, Lz8/a;->a(Lq8/d;)Lcom/helpshift/util/h0;
+    invoke-virtual {v7, v5}, Lz8/a;->a(Lq8/d;)Lcom/helpshift/util/f0;
 
     move-result-object v8
 
@@ -161,10 +161,10 @@
     const-string v9, "Matching conversation found in-memory, processing as updated conversation"
 
     .line 14
-    invoke-static {v1, v9, v2, v2}, Landroidx/savedstate/d;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v1, v9, v2, v2}, Le5/i;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
 
     .line 15
-    iget-object v8, v8, Lcom/helpshift/util/h0;->b:Ljava/lang/Object;
+    iget-object v8, v8, Lcom/helpshift/util/f0;->b:Ljava/lang/Object;
 
     check-cast v8, Lq8/d;
 
@@ -174,9 +174,9 @@
     invoke-virtual {v9, v8, v5}, Lk3/lu;->c(Lq8/d;Lq8/d;)V
 
     .line 17
-    iget-object v9, v5, Lq8/d;->o:Lcom/helpshift/util/q;
+    iget-object v9, v5, Lq8/d;->p:Lcom/helpshift/util/q;
 
-    invoke-static {v9}, Lbc/a;->d(Ljava/util/List;)Z
+    invoke-static {v9}, Lt5/a;->g(Ljava/util/List;)Z
 
     move-result v9
 
@@ -185,9 +185,9 @@
     .line 18
     iget-object v9, p0, La9/b;->c:Lo/e;
 
-    iget-object v10, v8, Lq8/d;->o:Lcom/helpshift/util/q;
+    iget-object v10, v8, Lq8/d;->p:Lcom/helpshift/util/q;
 
-    iget-object v5, v5, Lq8/d;->o:Lcom/helpshift/util/q;
+    iget-object v5, v5, Lq8/d;->p:Lcom/helpshift/util/q;
 
     invoke-virtual {v9, v8, v10, v5}, Lo/e;->f(Lq8/d;Ljava/util/List;Ljava/util/List;)Lz8/b;
 

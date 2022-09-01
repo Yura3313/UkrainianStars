@@ -3,112 +3,87 @@
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lk3/kr;
-.implements Lk3/ur;
+.implements Lk3/mv0;
 
 
 # instance fields
-.field public final f:Landroid/content/Context;
+.field public final synthetic a:I
 
-.field public final g:Lk3/jg0;
-
-.field public final h:Lk3/s7;
+.field public final b:Lk3/qv0;
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;Lk3/jg0;Lk3/s7;)V
+.method public synthetic constructor <init>(Lk3/qv0;I)V
     .locals 0
 
-    .line 1
+    iput p2, p0, Lk3/lq;->a:I
+
+    iput-object p1, p0, Lk3/lq;->b:Lk3/qv0;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
-    iput-object p1, p0, Lk3/lq;->f:Landroid/content/Context;
-
-    .line 3
-    iput-object p2, p0, Lk3/lq;->g:Lk3/jg0;
-
-    .line 4
-    iput-object p3, p0, Lk3/lq;->h:Lk3/s7;
-
     return-void
+.end method
+
+.method public static a(Lk3/qv0;)Lk3/lq;
+    .locals 2
+
+    new-instance v0, Lk3/lq;
+
+    const/4 v1, 0x0
+
+    invoke-direct {v0, p0, v1}, Lk3/lq;-><init>(Lk3/qv0;I)V
+
+    return-object v0
 .end method
 
 
 # virtual methods
-.method public final J()V
+.method public final synthetic get()Ljava/lang/Object;
     .locals 2
 
-    .line 1
-    iget-object v0, p0, Lk3/lq;->g:Lk3/jg0;
+    iget v0, p0, Lk3/lq;->a:I
 
-    iget-object v0, v0, Lk3/jg0;->X:Lk3/q7;
-
-    if-eqz v0, :cond_2
-
-    iget-boolean v0, v0, Lk3/q7;->a:Z
-
-    if-nez v0, :cond_0
+    packed-switch v0, :pswitch_data_0
 
     goto :goto_0
 
-    .line 2
-    :cond_0
-    new-instance v0, Ljava/util/ArrayList;
+    .line 1
+    :pswitch_0
+    iget-object v0, p0, Lk3/lq;->b:Lk3/qv0;
 
-    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
+    invoke-interface {v0}, Lk3/qv0;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lk3/cs;
+
+    const-string v1, "Cannot return null from a non-@Nullable @Provides method"
+
+    .line 2
+    invoke-static {v0, v1}, Lk3/gj;->f(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+
+    return-object v0
 
     .line 3
-    iget-object v1, p0, Lk3/lq;->g:Lk3/jg0;
+    :goto_0
+    iget-object v0, p0, Lk3/lq;->b:Lk3/qv0;
 
-    iget-object v1, v1, Lk3/jg0;->X:Lk3/q7;
+    invoke-interface {v0}, Lk3/qv0;->get()Ljava/lang/Object;
 
-    iget-object v1, v1, Lk3/q7;->b:Ljava/lang/String;
+    move-result-object v0
 
-    invoke-virtual {v1}, Ljava/lang/String;->isEmpty()Z
-
-    move-result v1
-
-    if-nez v1, :cond_1
+    check-cast v0, Lk3/fh0;
 
     .line 4
-    iget-object v1, p0, Lk3/lq;->g:Lk3/jg0;
+    new-instance v1, Lk3/ag0;
 
-    iget-object v1, v1, Lk3/jg0;->X:Lk3/q7;
+    invoke-direct {v1, v0}, Lk3/ag0;-><init>(Lk3/fh0;)V
 
-    iget-object v1, v1, Lk3/q7;->b:Ljava/lang/String;
+    return-object v1
 
-    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    .line 5
-    :cond_1
-    iget-object v0, p0, Lk3/lq;->h:Lk3/s7;
-
-    invoke-interface {v0}, Lk3/s7;->a()V
-
-    :cond_2
-    :goto_0
-    return-void
-.end method
-
-.method public final g(Landroid/content/Context;)V
-    .locals 0
-
-    return-void
-.end method
-
-.method public final i(Landroid/content/Context;)V
-    .locals 0
-
-    iget-object p1, p0, Lk3/lq;->h:Lk3/s7;
-
-    invoke-interface {p1}, Lk3/s7;->b()V
-
-    return-void
-.end method
-
-.method public final u(Landroid/content/Context;)V
-    .locals 0
-
-    return-void
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

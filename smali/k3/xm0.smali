@@ -1,13 +1,18 @@
-.class public interface abstract Lk3/xm0;
+.class public abstract Lk3/xm0;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
 # virtual methods
-.method public abstract a([B[B)[B
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/security/GeneralSecurityException;
-        }
-    .end annotation
+.method public abstract a()Ljava/lang/Throwable;
 .end method

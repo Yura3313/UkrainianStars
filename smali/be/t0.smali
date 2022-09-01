@@ -1,5 +1,5 @@
 .class public final Lbe/t0;
-.super Lse/h;
+.super Lse/i;
 .source "ShopStorage.kt"
 
 # interfaces
@@ -9,38 +9,28 @@
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/l<",
-        "Ljava/lang/Exception;",
-        "Lie/h;",
+        "Lvc/v;",
+        "Lie/i;",
         ">;"
     }
 .end annotation
 
 
-# static fields
-.field public static final f:Lbe/t0;
+# instance fields
+.field public final synthetic g:Lbe/q0;
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 1
+.method public constructor <init>(Lbe/q0;)V
+    .locals 0
 
-    new-instance v0, Lbe/t0;
+    iput-object p1, p0, Lbe/t0;->g:Lbe/q0;
 
-    invoke-direct {v0}, Lbe/t0;-><init>()V
+    const/4 p1, 0x1
 
-    sput-object v0, Lbe/t0;->f:Lbe/t0;
-
-    return-void
-.end method
-
-.method public constructor <init>()V
-    .locals 1
-
-    const/4 v0, 0x1
-
-    invoke-direct {p0, v0}, Lse/h;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -48,18 +38,27 @@
 
 # virtual methods
 .method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 1
+    .locals 2
 
     .line 1
-    check-cast p1, Ljava/lang/Exception;
+    check-cast p1, Lvc/v;
 
     const-string v0, "it"
 
     .line 2
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 3
-    sget-object p1, Lie/h;->a:Lie/h;
+    iget-object v0, p0, Lbe/t0;->g:Lbe/q0;
+
+    new-instance v1, Lbe/q0$b$g;
+
+    invoke-direct {v1, p1}, Lbe/q0$b$g;-><init>(Lvc/v;)V
+
+    invoke-virtual {v0, v1}, Lbe/x0;->a(Lbe/a;)V
+
+    .line 4
+    sget-object p1, Lie/i;->a:Lie/i;
 
     return-object p1
 .end method

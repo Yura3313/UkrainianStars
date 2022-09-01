@@ -6,24 +6,24 @@
 # instance fields
 .field public h:Lid/e;
 
-.field public final i:Lvc/n$j$c;
+.field public final i:Lvc/m$j$c;
 
 
 # direct methods
-.method public constructor <init>(Lid/w;Lvc/n$j$c;)V
+.method public constructor <init>(Lid/w;Lvc/m$j$c;)V
     .locals 1
 
     const-string v0, "dialog"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "donationReceived"
 
-    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-direct {p0, p1, p2}, Lid/w$a;-><init>(Lid/w;Lvc/n$j;)V
+    invoke-direct {p0, p1, p2}, Lid/w$a;-><init>(Lid/w;Lvc/m$j;)V
 
-    iput-object p2, p0, Lid/i;->i:Lvc/n$j$c;
+    iput-object p2, p0, Lid/i;->i:Lvc/m$j$c;
 
     return-void
 .end method
@@ -35,7 +35,7 @@
 
     const-string v0, "inflater"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     new-instance p1, Landroid/view/View;
 
@@ -79,9 +79,9 @@
     iget-object v1, p0, Lid/w$a;->f:Lid/w;
 
     .line 3
-    iget-object v2, p0, Lid/i;->i:Lvc/n$j$c;
+    iget-object v2, p0, Lid/i;->i:Lvc/m$j$c;
 
-    invoke-direct {v0, v1, v2}, Lid/e;-><init>(Lid/w;Lvc/n$j$c;)V
+    invoke-direct {v0, v1, v2}, Lid/e;-><init>(Lid/w;Lvc/m$j$c;)V
 
     .line 4
     new-instance v1, Lid/i$a;
@@ -104,7 +104,7 @@
     move-result-object v1
 
     .line 8
-    iget-object v1, v1, Lae/u;->m:La5/d0;
+    iget-object v1, v1, Lae/u;->m:Lpe/a;
 
     const-string v2, "Donation Received Notification"
 
@@ -115,7 +115,7 @@
     const/16 v5, 0x1c
 
     .line 9
-    invoke-static {v1, v2, v3, v4, v5}, La5/d0;->a(La5/d0;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;I)V
+    invoke-static {v1, v2, v3, v4, v5}, Lpe/a;->e(Lpe/a;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;I)V
 
     .line 10
     invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lae/u;
@@ -126,13 +126,13 @@
     iget-object v0, v0, Lae/u;->p:Lrc/h;
 
     .line 12
-    iget-object v1, p0, Lid/i;->i:Lvc/n$j$c;
+    iget-object v1, p0, Lid/i;->i:Lvc/m$j$c;
 
     .line 13
-    iget-object v1, v1, Lvc/n$j$c;->i:Ljava/lang/String;
+    iget-object v1, v1, Lvc/m$j$c;->i:Ljava/lang/String;
 
     .line 14
-    invoke-virtual {v0, v3, v1}, Lrc/h;->g(Ljava/lang/String;Ljava/lang/String;)Lze/e0;
+    invoke-virtual {v0, v3, v1}, Lrc/h;->g(Ljava/lang/String;Ljava/lang/String;)Lze/f0;
 
     return-void
 .end method
@@ -142,7 +142,7 @@
 
     const-string v0, "view"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     return-void
 .end method

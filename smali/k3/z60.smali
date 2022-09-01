@@ -1,85 +1,207 @@
-.class public final synthetic Lk3/z60;
+.class public final Lk3/z60;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lk3/yu;
+.implements Lk3/mv0;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Lk3/mv0<",
+        "Lk3/s60;",
+        ">;"
+    }
+.end annotation
 
 
 # instance fields
-.field public final a:Lk3/g40;
+.field public final a:Lk3/qv0;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lk3/qv0<",
+            "Landroid/content/Context;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public final b:Lk3/qv0;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lk3/qv0<",
+            "Lcom/google/android/gms/internal/ads/zzbbg;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public final c:Lk3/qv0;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lk3/qv0<",
+            "Lk3/vg0;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public final d:Lk3/qv0;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lk3/qv0<",
+            "Ljava/util/concurrent/Executor;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public final e:Lk3/qv0;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lk3/qv0<",
+            "Lk3/dz;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public final f:Lk3/qv0;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lk3/qv0<",
+            "Lk3/iz;",
+            ">;"
+        }
+    .end annotation
+.end field
 
 
 # direct methods
-.method public constructor <init>(Lk3/g40;)V
+.method public constructor <init>(Lk3/qv0;Lk3/qv0;Lk3/qv0;Lk3/qv0;Lk3/qv0;Lk3/qv0;)V
     .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lk3/qv0<",
+            "Landroid/content/Context;",
+            ">;",
+            "Lk3/qv0<",
+            "Lcom/google/android/gms/internal/ads/zzbbg;",
+            ">;",
+            "Lk3/qv0<",
+            "Lk3/vg0;",
+            ">;",
+            "Lk3/qv0<",
+            "Ljava/util/concurrent/Executor;",
+            ">;",
+            "Lk3/qv0<",
+            "Lk3/dz;",
+            ">;",
+            "Lk3/qv0<",
+            "Lk3/iz;",
+            ">;)V"
+        }
+    .end annotation
 
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lk3/z60;->a:Lk3/g40;
+    .line 2
+    iput-object p1, p0, Lk3/z60;->a:Lk3/qv0;
+
+    .line 3
+    iput-object p2, p0, Lk3/z60;->b:Lk3/qv0;
+
+    .line 4
+    iput-object p3, p0, Lk3/z60;->c:Lk3/qv0;
+
+    .line 5
+    iput-object p4, p0, Lk3/z60;->d:Lk3/qv0;
+
+    .line 6
+    iput-object p5, p0, Lk3/z60;->e:Lk3/qv0;
+
+    .line 7
+    iput-object p6, p0, Lk3/z60;->f:Lk3/qv0;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(ZLandroid/content/Context;)V
-    .locals 1
+.method public final synthetic get()Ljava/lang/Object;
+    .locals 8
 
     .line 1
-    iget-object p2, p0, Lk3/z60;->a:Lk3/g40;
+    iget-object v0, p0, Lk3/z60;->a:Lk3/qv0;
+
+    invoke-interface {v0}, Lk3/qv0;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    move-object v2, v0
+
+    check-cast v2, Landroid/content/Context;
+
+    iget-object v0, p0, Lk3/z60;->b:Lk3/qv0;
+
+    invoke-interface {v0}, Lk3/qv0;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    move-object v3, v0
+
+    check-cast v3, Lcom/google/android/gms/internal/ads/zzbbg;
+
+    iget-object v0, p0, Lk3/z60;->c:Lk3/qv0;
+
+    invoke-interface {v0}, Lk3/qv0;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    move-object v4, v0
+
+    check-cast v4, Lk3/vg0;
+
+    iget-object v0, p0, Lk3/z60;->d:Lk3/qv0;
+
+    invoke-interface {v0}, Lk3/qv0;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    move-object v5, v0
+
+    check-cast v5, Ljava/util/concurrent/Executor;
+
+    iget-object v0, p0, Lk3/z60;->e:Lk3/qv0;
+
+    invoke-interface {v0}, Lk3/qv0;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    move-object v6, v0
+
+    check-cast v6, Lk3/dz;
+
+    iget-object v0, p0, Lk3/z60;->f:Lk3/qv0;
+
+    invoke-interface {v0}, Lk3/qv0;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    move-object v7, v0
+
+    check-cast v7, Lk3/iz;
 
     .line 2
-    :try_start_0
-    iget-object v0, p2, Lk3/g40;->b:Ljava/lang/Object;
+    new-instance v0, Lk3/s60;
 
-    check-cast v0, Lk3/yg0;
+    move-object v1, v0
 
-    invoke-virtual {v0, p1}, Lk3/yg0;->a(Z)V
+    invoke-direct/range {v1 .. v7}, Lk3/s60;-><init>(Landroid/content/Context;Lcom/google/android/gms/internal/ads/zzbbg;Lk3/vg0;Ljava/util/concurrent/Executor;Lk3/dz;Lk3/iz;)V
 
-    .line 3
-    iget-object p1, p2, Lk3/g40;->b:Ljava/lang/Object;
-
-    check-cast p1, Lk3/yg0;
-
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-    :try_end_0
-    .catch Lcom/google/android/gms/internal/ads/zzdlr; {:try_start_0 .. :try_end_0} :catch_0
-
-    .line 4
-    :try_start_1
-    iget-object p1, p1, Lk3/yg0;->a:Lcom/google/android/gms/internal/ads/zzamv;
-
-    invoke-interface {p1}, Lcom/google/android/gms/internal/ads/zzamv;->showVideo()V
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
-    return-void
-
-    :catchall_0
-    move-exception p1
-
-    .line 5
-    :try_start_2
-    new-instance p2, Lcom/google/android/gms/internal/ads/zzdlr;
-
-    invoke-direct {p2, p1}, Lcom/google/android/gms/internal/ads/zzdlr;-><init>(Ljava/lang/Throwable;)V
-
-    throw p2
-    :try_end_2
-    .catch Lcom/google/android/gms/internal/ads/zzdlr; {:try_start_2 .. :try_end_2} :catch_0
-
-    :catch_0
-    move-exception p1
-
-    .line 6
-    new-instance p2, Lcom/google/android/gms/internal/ads/zzcbc;
-
-    invoke-virtual {p1}, Ljava/lang/Throwable;->getCause()Ljava/lang/Throwable;
-
-    move-result-object p1
-
-    invoke-direct {p2, p1}, Lcom/google/android/gms/internal/ads/zzcbc;-><init>(Ljava/lang/Throwable;)V
-
-    throw p2
+    return-object v0
 .end method

@@ -1,5 +1,5 @@
 .class public final Lae/u$a;
-.super Lse/h;
+.super Lse/i;
 .source "IdServices.kt"
 
 # interfaces
@@ -18,17 +18,17 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/l<",
         "Lbe/t;",
-        "Lie/h;",
+        "Lie/i;",
         ">;"
     }
 .end annotation
 
 
 # static fields
-.field public static final f:Lae/u$a;
+.field public static final g:Lae/u$a;
 
 
 # direct methods
@@ -39,7 +39,7 @@
 
     invoke-direct {v0}, Lae/u$a;-><init>()V
 
-    sput-object v0, Lae/u$a;->f:Lae/u$a;
+    sput-object v0, Lae/u$a;->g:Lae/u$a;
 
     return-void
 .end method
@@ -49,7 +49,7 @@
 
     const/4 v0, 0x1
 
-    invoke-direct {p0, v0}, Lse/h;-><init>(I)V
+    invoke-direct {p0, v0}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -92,7 +92,7 @@
     invoke-virtual {v0, v2, v1}, Lcom/supercell/id/SupercellId;->setNotificationBadge$supercellId_release(ZI)V
 
     .line 6
-    sget-object p1, Lie/h;->a:Lie/h;
+    sget-object p1, Lie/i;->a:Lie/i;
 
     return-object p1
 .end method

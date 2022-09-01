@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field public final synthetic f:Lzd/d$d;
+.field public final synthetic g:Lzd/d$d;
 
 
 # direct methods
 .method public constructor <init>(Lzd/d$d;)V
     .locals 0
 
-    iput-object p1, p0, Lzd/d$d$a;->f:Lzd/d$d;
+    iput-object p1, p0, Lzd/d$d$a;->g:Lzd/d$d;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -37,9 +37,9 @@
 .method public final run()V
     .locals 2
 
-    iget-object v0, p0, Lzd/d$d$a;->f:Lzd/d$d;
+    iget-object v0, p0, Lzd/d$d$a;->g:Lzd/d$d;
 
-    iget-object v0, v0, Lzd/d$d;->f:Lzd/d;
+    iget-object v0, v0, Lzd/d$d;->g:Lzd/d;
 
     invoke-virtual {v0}, Lzd/k;->V0()Lcom/supercell/id/ui/youngplayer/register/YoungPlayerRegisterFlowFragment;
 
@@ -47,7 +47,7 @@
 
     if-eqz v0, :cond_0
 
-    sget-object v1, Lzd/d$d$a$a;->f:Lzd/d$d$a$a;
+    sget-object v1, Lzd/d$d$a$a;->g:Lzd/d$d$a$a;
 
     invoke-virtual {v0, v1}, Lcom/supercell/id/ui/FlowFragment;->i1(Lre/l;)V
 

@@ -4,14 +4,14 @@
 
 
 # instance fields
-.field public final synthetic f:Lcom/google/android/gms/games/internal/zzbq;
+.field public final synthetic g:Lcom/google/android/gms/games/internal/zzbq;
 
 
 # direct methods
 .method public constructor <init>(Lcom/google/android/gms/games/internal/zzbq;)V
     .locals 0
 
-    iput-object p1, p0, Lz2/j;->f:Lcom/google/android/gms/games/internal/zzbq;
+    iput-object p1, p0, Lz2/j;->g:Lcom/google/android/gms/games/internal/zzbq;
 
     invoke-direct {p0}, Lcom/google/android/gms/games/internal/zzc;-><init>()V
 
@@ -23,7 +23,7 @@
 .method public final N1()Lcom/google/android/gms/games/internal/zzbq;
     .locals 1
 
-    iget-object v0, p0, Lz2/j;->f:Lcom/google/android/gms/games/internal/zzbq;
+    iget-object v0, p0, Lz2/j;->g:Lcom/google/android/gms/games/internal/zzbq;
 
     return-object v0
 .end method

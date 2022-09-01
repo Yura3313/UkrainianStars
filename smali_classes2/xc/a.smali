@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field public final synthetic f:Lre/l;
+.field public final synthetic g:Lre/l;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lxc/a;->f:Lre/l;
+    iput-object p1, p0, Lxc/a;->g:Lre/l;
 
     return-void
 .end method
@@ -26,7 +26,7 @@
 .method public final synthetic onClick(Landroid/view/View;)V
     .locals 1
 
-    iget-object v0, p0, Lxc/a;->f:Lre/l;
+    iget-object v0, p0, Lxc/a;->g:Lre/l;
 
     invoke-interface {v0, p1}, Lre/l;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -34,7 +34,7 @@
 
     const-string v0, "invoke(...)"
 
-    invoke-static {p1, v0}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     return-void
 .end method

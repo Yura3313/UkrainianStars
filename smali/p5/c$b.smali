@@ -56,7 +56,7 @@
     const/16 p1, 0x20
 
     .line 2
-    invoke-static {p1}, Lr5/d0;->a(I)[B
+    invoke-static {p1}, Lr5/f0;->a(I)[B
 
     move-result-object v0
 
@@ -83,7 +83,7 @@
     invoke-virtual {v2}, Lcom/google/crypto/tink/shaded/protobuf/n$a;->e()V
 
     .line 7
-    iget-object v3, v2, Lcom/google/crypto/tink/shaded/protobuf/n$a;->g:Lcom/google/crypto/tink/shaded/protobuf/n;
+    iget-object v3, v2, Lcom/google/crypto/tink/shaded/protobuf/n$a;->h:Lcom/google/crypto/tink/shaded/protobuf/n;
 
     check-cast v3, Ln5/l0;
 
@@ -103,7 +103,7 @@
     invoke-virtual {v2}, Lcom/google/crypto/tink/shaded/protobuf/n$a;->e()V
 
     .line 11
-    iget-object v1, v2, Lcom/google/crypto/tink/shaded/protobuf/n$a;->g:Lcom/google/crypto/tink/shaded/protobuf/n;
+    iget-object v1, v2, Lcom/google/crypto/tink/shaded/protobuf/n$a;->h:Lcom/google/crypto/tink/shaded/protobuf/n;
 
     check-cast v1, Ln5/l0;
 
@@ -130,7 +130,7 @@
     invoke-virtual {v1}, Lcom/google/crypto/tink/shaded/protobuf/n$a;->e()V
 
     .line 16
-    iget-object v2, v1, Lcom/google/crypto/tink/shaded/protobuf/n$a;->g:Lcom/google/crypto/tink/shaded/protobuf/n;
+    iget-object v2, v1, Lcom/google/crypto/tink/shaded/protobuf/n$a;->h:Lcom/google/crypto/tink/shaded/protobuf/n;
 
     check-cast v2, Ln5/k0;
 
@@ -152,7 +152,7 @@
     invoke-virtual {v1}, Lcom/google/crypto/tink/shaded/protobuf/n$a;->e()V
 
     .line 20
-    iget-object v2, v1, Lcom/google/crypto/tink/shaded/protobuf/n$a;->g:Lcom/google/crypto/tink/shaded/protobuf/n;
+    iget-object v2, v1, Lcom/google/crypto/tink/shaded/protobuf/n$a;->h:Lcom/google/crypto/tink/shaded/protobuf/n;
 
     check-cast v2, Ln5/k0;
 
@@ -162,7 +162,7 @@
     invoke-virtual {v1}, Lcom/google/crypto/tink/shaded/protobuf/n$a;->e()V
 
     .line 22
-    iget-object v0, v1, Lcom/google/crypto/tink/shaded/protobuf/n$a;->g:Lcom/google/crypto/tink/shaded/protobuf/n;
+    iget-object v0, v1, Lcom/google/crypto/tink/shaded/protobuf/n$a;->h:Lcom/google/crypto/tink/shaded/protobuf/n;
 
     check-cast v0, Ln5/k0;
 

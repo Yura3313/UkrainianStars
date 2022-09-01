@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field public final f:I
+.field public final g:I
 
-.field public final g:Ljava/util/Map;
+.field public final h:Ljava/util/Map;
 
 
 # direct methods
@@ -18,21 +18,21 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput p1, p0, Lk3/fd;->f:I
+    iput p1, p0, Lk3/fd;->g:I
 
-    iput-object p2, p0, Lk3/fd;->g:Ljava/util/Map;
+    iput-object p2, p0, Lk3/fd;->h:Ljava/util/Map;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final b(Landroid/util/JsonWriter;)V
+.method public final c(Landroid/util/JsonWriter;)V
     .locals 5
 
-    iget v0, p0, Lk3/fd;->f:I
+    iget v0, p0, Lk3/fd;->g:I
 
-    iget-object v1, p0, Lk3/fd;->g:Ljava/util/Map;
+    iget-object v1, p0, Lk3/fd;->h:Ljava/util/Map;
 
     const-string v2, "params"
 

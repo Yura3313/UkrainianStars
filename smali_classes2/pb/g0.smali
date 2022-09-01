@@ -1,818 +1,454 @@
-.class public final Lpb/g0;
+.class public Lpb/g0;
 .super Ljava/lang/Object;
-.source "WebSocketFrame.java"
+.source "WebSocketExtension.java"
 
 
 # instance fields
-.field public a:Z
+.field public final a:Ljava/lang/String;
 
-.field public b:Z
-
-.field public c:Z
-
-.field public d:Z
-
-.field public e:I
-
-.field public f:Z
-
-.field public g:[B
+.field public final b:Ljava/util/LinkedHashMap;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/Map<",
+            "Ljava/lang/String;",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+.end field
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 0
+.method public constructor <init>(Ljava/lang/String;)V
+    .locals 1
 
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    return-void
-.end method
-
-.method public static b(Lpb/g0;Lpb/s;)Lpb/g0;
-    .locals 2
-
-    if-nez p1, :cond_0
-
-    return-object p0
-
-    .line 1
-    :cond_0
-    invoke-virtual {p0}, Lpb/g0;->h()Z
-
-    move-result v0
-
-    if-nez v0, :cond_1
-
     .line 2
-    invoke-virtual {p0}, Lpb/g0;->e()Z
+    invoke-static {p1}, Lp6/c;->b(Ljava/lang/String;)Z
 
     move-result v0
 
-    if-nez v0, :cond_1
-
-    return-object p0
+    if-eqz v0, :cond_0
 
     .line 3
-    :cond_1
-    iget-boolean v0, p0, Lpb/g0;->a:Z
-
-    if-nez v0, :cond_2
-
-    return-object p0
+    iput-object p1, p0, Lpb/g0;->a:Ljava/lang/String;
 
     .line 4
-    :cond_2
-    iget-boolean v0, p0, Lpb/g0;->b:Z
+    new-instance p1, Ljava/util/LinkedHashMap;
 
-    if-eqz v0, :cond_3
+    invoke-direct {p1}, Ljava/util/LinkedHashMap;-><init>()V
 
-    return-object p0
+    iput-object p1, p0, Lpb/g0;->b:Ljava/util/LinkedHashMap;
+
+    return-void
 
     .line 5
-    :cond_3
-    iget-object v0, p0, Lpb/g0;->g:[B
+    :cond_0
+    new-instance p1, Ljava/lang/IllegalArgumentException;
 
-    if-eqz v0, :cond_5
+    const-string v0, "\'name\' is not a valid token."
 
-    .line 6
-    array-length v1, v0
+    invoke-direct {p1, v0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
-    if-nez v1, :cond_4
-
-    goto :goto_0
-
-    .line 7
-    :cond_4
-    :try_start_0
-    invoke-virtual {p1, v0}, Lpb/s;->c([B)[B
-
-    move-result-object v0
-    :try_end_0
-    .catch Lcom/helpshift/websockets/WebSocketException; {:try_start_0 .. :try_end_0} :catch_0
-
-    .line 8
-    :catch_0
-    invoke-virtual {p0, v0}, Lpb/g0;->i([B)Lpb/g0;
-
-    const/4 p1, 0x1
-
-    .line 9
-    iput-boolean p1, p0, Lpb/g0;->b:Z
-
-    :cond_5
-    :goto_0
-    return-object p0
+    throw p1
 .end method
 
-.method public static c(ILjava/lang/String;)Lpb/g0;
-    .locals 6
+.method public static a(Ljava/lang/String;)Lpb/g0;
+    .locals 13
 
-    .line 1
-    new-instance v0, Lpb/g0;
-
-    invoke-direct {v0}, Lpb/g0;-><init>()V
-
-    const/4 v1, 0x1
-
-    .line 2
-    iput-boolean v1, v0, Lpb/g0;->a:Z
-
-    const/16 v2, 0x8
-
-    .line 3
-    iput v2, v0, Lpb/g0;->e:I
-
-    const/4 v2, 0x2
-
-    new-array v3, v2, [B
-
-    shr-int/lit8 v4, p0, 0x8
-
-    and-int/lit16 v4, v4, 0xff
-
-    int-to-byte v4, v4
-
-    const/4 v5, 0x0
-
-    aput-byte v4, v3, v5
-
-    and-int/lit16 p0, p0, 0xff
-
-    int-to-byte p0, p0
-
-    aput-byte p0, v3, v1
-
-    if-eqz p1, :cond_1
-
-    .line 4
-    invoke-virtual {p1}, Ljava/lang/String;->length()I
-
-    move-result p0
+    const/4 v0, 0x0
 
     if-nez p0, :cond_0
 
-    goto :goto_0
+    return-object v0
 
-    .line 5
+    .line 1
     :cond_0
-    invoke-static {p1}, Lpb/p;->a(Ljava/lang/String;)[B
+    invoke-virtual {p0}, Ljava/lang/String;->trim()Ljava/lang/String;
 
     move-result-object p0
 
-    .line 6
-    array-length p1, p0
+    const-string v1, "\\s*;\\s*"
 
-    add-int/2addr p1, v2
+    invoke-virtual {p0, v1}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
 
-    new-array p1, p1, [B
+    move-result-object p0
 
-    .line 7
-    invoke-static {v3, v5, p1, v5, v2}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
-
-    .line 8
+    .line 2
     array-length v1, p0
 
-    invoke-static {p0, v5, p1, v2, v1}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+    if-nez v1, :cond_1
+
+    return-object v0
+
+    :cond_1
+    const/4 v1, 0x0
+
+    .line 3
+    aget-object v2, p0, v1
+
+    .line 4
+    invoke-static {v2}, Lp6/c;->b(Ljava/lang/String;)Z
+
+    move-result v3
+
+    if-nez v3, :cond_2
+
+    return-object v0
+
+    :cond_2
+    const-string v3, "permessage-deflate"
+
+    .line 5
+    invoke-virtual {v3, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v3
+
+    if-eqz v3, :cond_3
+
+    .line 6
+    new-instance v3, Lpb/t;
+
+    invoke-direct {v3, v2}, Lpb/t;-><init>(Ljava/lang/String;)V
+
+    goto :goto_0
+
+    .line 7
+    :cond_3
+    new-instance v3, Lpb/g0;
+
+    invoke-direct {v3, v2}, Lpb/g0;-><init>(Ljava/lang/String;)V
+
+    :goto_0
+    const/4 v2, 0x1
+
+    const/4 v4, 0x1
+
+    .line 8
+    :goto_1
+    array-length v5, p0
+
+    if-ge v4, v5, :cond_13
 
     .line 9
-    invoke-virtual {v0, p1}, Lpb/g0;->i([B)Lpb/g0;
+    aget-object v5, p0, v4
 
-    goto :goto_1
+    const/4 v6, 0x2
+
+    const-string v7, "\\s*=\\s*"
+
+    invoke-virtual {v5, v7, v6}, Ljava/lang/String;->split(Ljava/lang/String;I)[Ljava/lang/String;
+
+    move-result-object v5
 
     .line 10
-    :cond_1
-    :goto_0
-    invoke-virtual {v0, v3}, Lpb/g0;->i([B)Lpb/g0;
+    array-length v7, v5
 
-    :goto_1
-    return-object v0
+    if-eqz v7, :cond_12
+
+    aget-object v7, v5, v1
+
+    invoke-virtual {v7}, Ljava/lang/String;->length()I
+
+    move-result v7
+
+    if-nez v7, :cond_4
+
+    goto/16 :goto_7
+
+    .line 11
+    :cond_4
+    aget-object v7, v5, v1
+
+    .line 12
+    invoke-static {v7}, Lp6/c;->b(Ljava/lang/String;)Z
+
+    move-result v8
+
+    if-nez v8, :cond_5
+
+    goto/16 :goto_7
+
+    .line 13
+    :cond_5
+    array-length v8, v5
+
+    if-eq v8, v6, :cond_6
+
+    goto :goto_2
+
+    .line 14
+    :cond_6
+    aget-object v5, v5, v2
+
+    if-nez v5, :cond_7
+
+    goto :goto_2
+
+    .line 15
+    :cond_7
+    invoke-virtual {v5}, Ljava/lang/String;->length()I
+
+    move-result v8
+
+    if-lt v8, v6, :cond_d
+
+    .line 16
+    invoke-virtual {v5, v1}, Ljava/lang/String;->charAt(I)C
+
+    move-result v6
+
+    const/16 v9, 0x22
+
+    if-ne v6, v9, :cond_d
+
+    add-int/lit8 v8, v8, -0x1
+
+    invoke-virtual {v5, v8}, Ljava/lang/String;->charAt(I)C
+
+    move-result v6
+
+    if-eq v6, v9, :cond_8
+
+    goto :goto_5
+
+    .line 17
+    :cond_8
+    invoke-virtual {v5, v2, v8}, Ljava/lang/String;->substring(II)Ljava/lang/String;
+
+    move-result-object v5
+
+    if-nez v5, :cond_9
+
+    :goto_2
+    move-object v5, v0
+
+    goto :goto_5
+
+    :cond_9
+    const/16 v6, 0x5c
+
+    .line 18
+    invoke-virtual {v5, v6}, Ljava/lang/String;->indexOf(I)I
+
+    move-result v8
+
+    if-gez v8, :cond_a
+
+    goto :goto_5
+
+    .line 19
+    :cond_a
+    invoke-virtual {v5}, Ljava/lang/String;->length()I
+
+    move-result v8
+
+    .line 20
+    new-instance v9, Ljava/lang/StringBuilder;
+
+    invoke-direct {v9}, Ljava/lang/StringBuilder;-><init>()V
+
+    const/4 v10, 0x0
+
+    const/4 v11, 0x0
+
+    :goto_3
+    if-ge v10, v8, :cond_c
+
+    .line 21
+    invoke-virtual {v5, v10}, Ljava/lang/String;->charAt(I)C
+
+    move-result v12
+
+    if-ne v12, v6, :cond_b
+
+    if-nez v11, :cond_b
+
+    const/4 v11, 0x1
+
+    goto :goto_4
+
+    .line 22
+    :cond_b
+    invoke-virtual {v9, v12}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    const/4 v11, 0x0
+
+    :goto_4
+    add-int/lit8 v10, v10, 0x1
+
+    goto :goto_3
+
+    .line 23
+    :cond_c
+    invoke-virtual {v9}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v5
+
+    :cond_d
+    :goto_5
+    if-eqz v5, :cond_e
+
+    .line 24
+    invoke-static {v5}, Lp6/c;->b(Ljava/lang/String;)Z
+
+    move-result v6
+
+    if-nez v6, :cond_e
+
+    goto :goto_7
+
+    .line 25
+    :cond_e
+    invoke-static {v7}, Lp6/c;->b(Ljava/lang/String;)Z
+
+    move-result v6
+
+    if-eqz v6, :cond_11
+
+    if-eqz v5, :cond_10
+
+    .line 26
+    invoke-static {v5}, Lp6/c;->b(Ljava/lang/String;)Z
+
+    move-result v6
+
+    if-eqz v6, :cond_f
+
+    goto :goto_6
+
+    .line 27
+    :cond_f
+    new-instance p0, Ljava/lang/IllegalArgumentException;
+
+    const-string v0, "\'value\' is not a valid token."
+
+    invoke-direct {p0, v0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
+    throw p0
+
+    .line 28
+    :cond_10
+    :goto_6
+    iget-object v6, v3, Lpb/g0;->b:Ljava/util/LinkedHashMap;
+
+    invoke-interface {v6, v7, v5}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    goto :goto_7
+
+    .line 29
+    :cond_11
+    new-instance p0, Ljava/lang/IllegalArgumentException;
+
+    const-string v0, "\'key\' is not a valid token."
+
+    invoke-direct {p0, v0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
+    throw p0
+
+    :cond_12
+    :goto_7
+    add-int/lit8 v4, v4, 0x1
+
+    goto/16 :goto_1
+
+    :cond_13
+    return-object v3
 .end method
 
 
 # virtual methods
-.method public final a(Ljava/lang/StringBuilder;)Z
-    .locals 2
+.method public b()V
+    .locals 0
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lcom/helpshift/websockets/WebSocketException;
+        }
+    .end annotation
 
-    const-string v0, ",Payload="
-
-    .line 1
-    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 2
-    iget-object v0, p0, Lpb/g0;->g:[B
-
-    const/4 v1, 0x1
-
-    if-nez v0, :cond_0
-
-    const-string v0, "null"
-
-    .line 3
-    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    return v1
-
-    .line 4
-    :cond_0
-    iget-boolean v0, p0, Lpb/g0;->b:Z
-
-    if-eqz v0, :cond_1
-
-    const-string v0, "compressed"
-
-    .line 5
-    invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    return v1
-
-    :cond_1
-    const/4 p1, 0x0
-
-    return p1
-.end method
-
-.method public final d()I
-    .locals 1
-
-    .line 1
-    iget-object v0, p0, Lpb/g0;->g:[B
-
-    if-nez v0, :cond_0
-
-    const/4 v0, 0x0
-
-    return v0
-
-    .line 2
-    :cond_0
-    array-length v0, v0
-
-    return v0
-.end method
-
-.method public final e()Z
-    .locals 2
-
-    iget v0, p0, Lpb/g0;->e:I
-
-    const/4 v1, 0x2
-
-    if-ne v0, v1, :cond_0
-
-    const/4 v0, 0x1
-
-    goto :goto_0
-
-    :cond_0
-    const/4 v0, 0x0
-
-    :goto_0
-    return v0
-.end method
-
-.method public final f()Z
-    .locals 2
-
-    iget v0, p0, Lpb/g0;->e:I
-
-    const/16 v1, 0x8
-
-    if-ne v0, v1, :cond_0
-
-    const/4 v0, 0x1
-
-    goto :goto_0
-
-    :cond_0
-    const/4 v0, 0x0
-
-    :goto_0
-    return v0
-.end method
-
-.method public final g()Z
-    .locals 2
-
-    iget v0, p0, Lpb/g0;->e:I
-
-    const/16 v1, 0x8
-
-    if-gt v1, v0, :cond_0
-
-    const/16 v1, 0xf
-
-    if-gt v0, v1, :cond_0
-
-    const/4 v0, 0x1
-
-    goto :goto_0
-
-    :cond_0
-    const/4 v0, 0x0
-
-    :goto_0
-    return v0
-.end method
-
-.method public final h()Z
-    .locals 2
-
-    iget v0, p0, Lpb/g0;->e:I
-
-    const/4 v1, 0x1
-
-    if-ne v0, v1, :cond_0
-
-    goto :goto_0
-
-    :cond_0
-    const/4 v1, 0x0
-
-    :goto_0
-    return v1
-.end method
-
-.method public final i([B)Lpb/g0;
-    .locals 1
-
-    if-eqz p1, :cond_0
-
-    .line 1
-    array-length v0, p1
-
-    if-nez v0, :cond_0
-
-    const/4 p1, 0x0
-
-    .line 2
-    :cond_0
-    iput-object p1, p0, Lpb/g0;->g:[B
-
-    return-object p0
+    return-void
 .end method
 
 .method public final toString()Ljava/lang/String;
-    .locals 9
-
-    const-string v0, "WebSocketFrame(FIN="
+    .locals 4
 
     .line 1
-    invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    new-instance v0, Ljava/lang/StringBuilder;
 
-    move-result-object v0
+    iget-object v1, p0, Lpb/g0;->a:Ljava/lang/String;
+
+    invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
     .line 2
-    iget-boolean v1, p0, Lpb/g0;->a:Z
+    iget-object v1, p0, Lpb/g0;->b:Ljava/util/LinkedHashMap;
 
-    const-string v2, "1"
+    invoke-virtual {v1}, Ljava/util/LinkedHashMap;->entrySet()Ljava/util/Set;
 
-    const-string v3, "0"
+    move-result-object v1
 
-    if-eqz v1, :cond_0
+    invoke-interface {v1}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
 
-    move-object v1, v2
+    move-result-object v1
+
+    :cond_0
+    :goto_0
+    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v2
+
+    if-eqz v2, :cond_1
+
+    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Ljava/util/Map$Entry;
+
+    const-string v3, "; "
+
+    .line 3
+    invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-interface {v2}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
+
+    move-result-object v3
+
+    check-cast v3, Ljava/lang/String;
+
+    invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 4
+    invoke-interface {v2}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Ljava/lang/String;
+
+    if-eqz v2, :cond_0
+
+    .line 5
+    invoke-virtual {v2}, Ljava/lang/String;->length()I
+
+    move-result v3
+
+    if-eqz v3, :cond_0
+
+    const-string v3, "="
+
+    .line 6
+    invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     goto :goto_0
 
-    :cond_0
-    move-object v1, v3
-
-    :goto_0
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string v1, ",RSV1="
-
-    .line 3
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget-boolean v1, p0, Lpb/g0;->b:Z
-
-    if-eqz v1, :cond_1
-
-    move-object v1, v2
-
-    goto :goto_1
-
-    :cond_1
-    move-object v1, v3
-
-    :goto_1
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string v1, ",RSV2="
-
-    .line 4
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget-boolean v1, p0, Lpb/g0;->c:Z
-
-    if-eqz v1, :cond_2
-
-    move-object v1, v2
-
-    goto :goto_2
-
-    :cond_2
-    move-object v1, v3
-
-    :goto_2
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string v1, ",RSV3="
-
-    .line 5
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget-boolean v1, p0, Lpb/g0;->d:Z
-
-    if-eqz v1, :cond_3
-
-    goto :goto_3
-
-    :cond_3
-    move-object v2, v3
-
-    :goto_3
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string v1, ",Opcode="
-
-    .line 6
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget v1, p0, Lpb/g0;->e:I
-
-    sget-object v2, Lpb/p;->a:Ljava/security/SecureRandom;
-
-    const/16 v2, 0x8
-
-    const/4 v3, 0x2
-
-    const/4 v4, 0x0
-
-    const/4 v5, 0x1
-
-    if-eqz v1, :cond_8
-
-    if-eq v1, v5, :cond_7
-
-    if-eq v1, v3, :cond_6
-
-    packed-switch v1, :pswitch_data_0
-
-    if-gt v5, v1, :cond_4
-
-    const/4 v6, 0x7
-
-    if-gt v1, v6, :cond_4
-
-    new-array v6, v5, [Ljava/lang/Object;
-
     .line 7
-    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v1
-
-    aput-object v1, v6, v4
-
-    const-string v1, "DATA(0x%X)"
-
-    invoke-static {v1, v6}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object v1
-
-    goto :goto_4
-
-    :pswitch_0
-    const-string v1, "PONG"
-
-    goto :goto_4
-
-    :pswitch_1
-    const-string v1, "PING"
-
-    goto :goto_4
-
-    :pswitch_2
-    const-string v1, "CLOSE"
-
-    goto :goto_4
-
-    :cond_4
-    if-gt v2, v1, :cond_5
-
-    const/16 v6, 0xf
-
-    if-gt v1, v6, :cond_5
-
-    new-array v6, v5, [Ljava/lang/Object;
-
-    .line 8
-    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v1
-
-    aput-object v1, v6, v4
-
-    const-string v1, "CONTROL(0x%X)"
-
-    invoke-static {v1, v6}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object v1
-
-    goto :goto_4
-
-    :cond_5
-    new-array v6, v5, [Ljava/lang/Object;
-
-    .line 9
-    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v1
-
-    aput-object v1, v6, v4
-
-    const-string v1, "0x%X"
-
-    invoke-static {v1, v6}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object v1
-
-    goto :goto_4
-
-    :cond_6
-    const-string v1, "BINARY"
-
-    goto :goto_4
-
-    :cond_7
-    const-string v1, "TEXT"
-
-    goto :goto_4
-
-    :cond_8
-    const-string v1, "CONTINUATION"
-
-    .line 10
-    :goto_4
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string v1, ",Length="
-
-    .line 11
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p0}, Lpb/g0;->d()I
-
-    move-result v1
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    .line 12
-    iget v1, p0, Lpb/g0;->e:I
-
-    const-string v6, "UTF-8"
-
-    const/4 v7, 0x0
-
-    const-string v8, "\""
-
-    if-eq v1, v5, :cond_12
-
-    if-eq v1, v3, :cond_f
-
-    if-eq v1, v2, :cond_9
-
-    goto/16 :goto_a
-
-    :cond_9
-    const-string v1, ",CloseCode="
-
-    .line 13
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 14
-    iget-object v1, p0, Lpb/g0;->g:[B
-
-    if-eqz v1, :cond_b
-
-    array-length v2, v1
-
-    if-ge v2, v3, :cond_a
-
-    goto :goto_5
-
-    .line 15
-    :cond_a
-    aget-byte v2, v1, v4
-
-    and-int/lit16 v2, v2, 0xff
-
-    shl-int/lit8 v2, v2, 0x8
-
-    aget-byte v1, v1, v5
-
-    and-int/lit16 v1, v1, 0xff
-
-    or-int/2addr v1, v2
-
-    goto :goto_6
-
-    :cond_b
-    :goto_5
-    const/16 v1, 0x3ed
-
-    .line 16
-    :goto_6
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    const-string v1, ",Reason="
-
-    .line 17
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 18
-    iget-object v1, p0, Lpb/g0;->g:[B
-
-    if-eqz v1, :cond_d
-
-    array-length v2, v1
-
-    const/4 v4, 0x3
-
-    if-ge v2, v4, :cond_c
-
-    goto :goto_7
-
-    .line 19
-    :cond_c
-    array-length v2, v1
-
-    sub-int/2addr v2, v3
-
-    .line 20
-    :try_start_0
-    new-instance v4, Ljava/lang/String;
-
-    invoke-direct {v4, v1, v3, v2, v6}, Ljava/lang/String;-><init>([BIILjava/lang/String;)V
-    :try_end_0
-    .catch Ljava/io/UnsupportedEncodingException; {:try_start_0 .. :try_end_0} :catch_0
-    .catch Ljava/lang/IndexOutOfBoundsException; {:try_start_0 .. :try_end_0} :catch_0
-
-    move-object v7, v4
-
-    goto :goto_7
-
-    :catch_0
-    nop
-
-    :cond_d
-    :goto_7
-    if-nez v7, :cond_e
-
-    const-string v1, "null"
-
-    .line 21
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    goto :goto_a
-
-    .line 22
-    :cond_e
-    invoke-virtual {v0, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    goto :goto_a
-
-    .line 23
-    :cond_f
-    invoke-virtual {p0, v0}, Lpb/g0;->a(Ljava/lang/StringBuilder;)Z
-
-    move-result v1
-
-    if-eqz v1, :cond_10
-
-    goto :goto_a
-
-    :cond_10
-    const/4 v1, 0x0
-
-    .line 24
-    :goto_8
-    iget-object v2, p0, Lpb/g0;->g:[B
-
-    array-length v3, v2
-
-    if-ge v1, v3, :cond_11
-
-    new-array v3, v5, [Ljava/lang/Object;
-
-    .line 25
-    aget-byte v2, v2, v1
-
-    and-int/lit16 v2, v2, 0xff
-
-    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v2
-
-    aput-object v2, v3, v4
-
-    const-string v2, "%02X "
-
-    invoke-static {v2, v3}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    add-int/lit8 v1, v1, 0x1
-
-    goto :goto_8
-
-    .line 26
-    :cond_11
-    array-length v1, v2
-
-    if-eqz v1, :cond_15
-
-    .line 27
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->length()I
-
-    move-result v1
-
-    sub-int/2addr v1, v5
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->setLength(I)V
-
-    goto :goto_a
-
-    .line 28
-    :cond_12
-    invoke-virtual {p0, v0}, Lpb/g0;->a(Ljava/lang/StringBuilder;)Z
-
-    move-result v1
-
-    if-eqz v1, :cond_13
-
-    goto :goto_a
-
-    .line 29
-    :cond_13
-    invoke-virtual {v0, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 30
-    iget-object v1, p0, Lpb/g0;->g:[B
-
-    if-nez v1, :cond_14
-
-    goto :goto_9
-
-    .line 31
-    :cond_14
-    array-length v2, v1
-
-    .line 32
-    :try_start_1
-    new-instance v3, Ljava/lang/String;
-
-    invoke-direct {v3, v1, v4, v2, v6}, Ljava/lang/String;-><init>([BIILjava/lang/String;)V
-    :try_end_1
-    .catch Ljava/io/UnsupportedEncodingException; {:try_start_1 .. :try_end_1} :catch_1
-    .catch Ljava/lang/IndexOutOfBoundsException; {:try_start_1 .. :try_end_1} :catch_1
-
-    move-object v7, v3
-
-    .line 33
-    :catch_1
-    :goto_9
-    invoke-virtual {v0, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 34
-    invoke-virtual {v0, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    :cond_15
-    :goto_a
-    const-string v1, ")"
-
-    .line 35
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
+    :cond_1
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v0
 
     return-object v0
-
-    nop
-
-    :pswitch_data_0
-    .packed-switch 0x8
-        :pswitch_2
-        :pswitch_1
-        :pswitch_0
-    .end packed-switch
 .end method

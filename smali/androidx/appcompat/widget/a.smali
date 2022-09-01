@@ -12,21 +12,21 @@
 
 
 # instance fields
-.field public final f:Landroidx/appcompat/widget/a$a;
+.field public final g:Landroidx/appcompat/widget/a$a;
 
-.field public final g:Landroid/content/Context;
+.field public final h:Landroid/content/Context;
 
-.field public h:Landroidx/appcompat/widget/ActionMenuView;
+.field public i:Landroidx/appcompat/widget/ActionMenuView;
 
-.field public i:Landroidx/appcompat/widget/ActionMenuPresenter;
+.field public j:Landroidx/appcompat/widget/ActionMenuPresenter;
 
-.field public j:I
+.field public k:I
 
-.field public k:Lf0/x;
-
-.field public l:Z
+.field public l:Lf0/x;
 
 .field public m:Z
+
+.field public n:Z
 
 
 # direct methods
@@ -52,7 +52,7 @@
 
     invoke-direct {p2, p0}, Landroidx/appcompat/widget/a$a;-><init>(Landroidx/appcompat/widget/a;)V
 
-    iput-object p2, p0, Landroidx/appcompat/widget/a;->f:Landroidx/appcompat/widget/a$a;
+    iput-object p2, p0, Landroidx/appcompat/widget/a;->g:Landroidx/appcompat/widget/a$a;
 
     .line 4
     new-instance p2, Landroid/util/TypedValue;
@@ -85,13 +85,13 @@
 
     invoke-direct {p3, p1, p2}, Landroid/view/ContextThemeWrapper;-><init>(Landroid/content/Context;I)V
 
-    iput-object p3, p0, Landroidx/appcompat/widget/a;->g:Landroid/content/Context;
+    iput-object p3, p0, Landroidx/appcompat/widget/a;->h:Landroid/content/Context;
 
     goto :goto_0
 
     .line 7
     :cond_0
-    iput-object p1, p0, Landroidx/appcompat/widget/a;->g:Landroid/content/Context;
+    iput-object p1, p0, Landroidx/appcompat/widget/a;->h:Landroid/content/Context;
 
     :goto_0
     return-void
@@ -200,7 +200,7 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/a;->k:Lf0/x;
+    iget-object v0, p0, Landroidx/appcompat/widget/a;->l:Lf0/x;
 
     if-eqz v0, :cond_0
 
@@ -236,7 +236,7 @@
     invoke-virtual {v0, p2, p3}, Lf0/x;->c(J)Lf0/x;
 
     .line 7
-    iget-object p2, p0, Landroidx/appcompat/widget/a;->f:Landroidx/appcompat/widget/a$a;
+    iget-object p2, p0, Landroidx/appcompat/widget/a;->g:Landroidx/appcompat/widget/a$a;
 
     invoke-virtual {p2, v0, p1}, Landroidx/appcompat/widget/a$a;->d(Lf0/x;I)Landroidx/appcompat/widget/a$a;
 
@@ -256,7 +256,7 @@
     invoke-virtual {v1, p2, p3}, Lf0/x;->c(J)Lf0/x;
 
     .line 10
-    iget-object p2, p0, Landroidx/appcompat/widget/a;->f:Landroidx/appcompat/widget/a$a;
+    iget-object p2, p0, Landroidx/appcompat/widget/a;->g:Landroidx/appcompat/widget/a$a;
 
     invoke-virtual {p2, v1, p1}, Landroidx/appcompat/widget/a$a;->d(Lf0/x;I)Landroidx/appcompat/widget/a$a;
 
@@ -269,12 +269,12 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/a;->k:Lf0/x;
+    iget-object v0, p0, Landroidx/appcompat/widget/a;->l:Lf0/x;
 
     if-eqz v0, :cond_0
 
     .line 2
-    iget-object v0, p0, Landroidx/appcompat/widget/a;->f:Landroidx/appcompat/widget/a$a;
+    iget-object v0, p0, Landroidx/appcompat/widget/a;->g:Landroidx/appcompat/widget/a$a;
 
     iget v0, v0, Landroidx/appcompat/widget/a$a;->b:I
 
@@ -292,7 +292,7 @@
 .method public getContentHeight()I
     .locals 1
 
-    iget v0, p0, Landroidx/appcompat/widget/a;->j:I
+    iget v0, p0, Landroidx/appcompat/widget/a;->k:I
 
     return v0
 .end method
@@ -333,7 +333,7 @@
     invoke-virtual {p1}, Landroid/content/res/TypedArray;->recycle()V
 
     .line 5
-    iget-object p1, p0, Landroidx/appcompat/widget/a;->i:Landroidx/appcompat/widget/ActionMenuPresenter;
+    iget-object p1, p0, Landroidx/appcompat/widget/a;->j:Landroidx/appcompat/widget/ActionMenuPresenter;
 
     if-eqz p1, :cond_0
 
@@ -359,11 +359,11 @@
     if-ne v0, v2, :cond_0
 
     .line 2
-    iput-boolean v1, p0, Landroidx/appcompat/widget/a;->m:Z
+    iput-boolean v1, p0, Landroidx/appcompat/widget/a;->n:Z
 
     .line 3
     :cond_0
-    iget-boolean v3, p0, Landroidx/appcompat/widget/a;->m:Z
+    iget-boolean v3, p0, Landroidx/appcompat/widget/a;->n:Z
 
     const/4 v4, 0x1
 
@@ -379,7 +379,7 @@
     if-nez p1, :cond_1
 
     .line 5
-    iput-boolean v4, p0, Landroidx/appcompat/widget/a;->m:Z
+    iput-boolean v4, p0, Landroidx/appcompat/widget/a;->n:Z
 
     :cond_1
     const/16 p1, 0xa
@@ -392,7 +392,7 @@
 
     .line 6
     :cond_2
-    iput-boolean v1, p0, Landroidx/appcompat/widget/a;->m:Z
+    iput-boolean v1, p0, Landroidx/appcompat/widget/a;->n:Z
 
     :cond_3
     return v4
@@ -411,11 +411,11 @@
     if-nez v0, :cond_0
 
     .line 2
-    iput-boolean v1, p0, Landroidx/appcompat/widget/a;->l:Z
+    iput-boolean v1, p0, Landroidx/appcompat/widget/a;->m:Z
 
     .line 3
     :cond_0
-    iget-boolean v2, p0, Landroidx/appcompat/widget/a;->l:Z
+    iget-boolean v2, p0, Landroidx/appcompat/widget/a;->m:Z
 
     const/4 v3, 0x1
 
@@ -431,7 +431,7 @@
     if-nez p1, :cond_1
 
     .line 5
-    iput-boolean v3, p0, Landroidx/appcompat/widget/a;->l:Z
+    iput-boolean v3, p0, Landroidx/appcompat/widget/a;->m:Z
 
     :cond_1
     if-eq v0, v3, :cond_2
@@ -442,7 +442,7 @@
 
     .line 6
     :cond_2
-    iput-boolean v1, p0, Landroidx/appcompat/widget/a;->l:Z
+    iput-boolean v1, p0, Landroidx/appcompat/widget/a;->m:Z
 
     :cond_3
     return v3
@@ -452,7 +452,7 @@
     .locals 0
 
     .line 1
-    iput p1, p0, Landroidx/appcompat/widget/a;->j:I
+    iput p1, p0, Landroidx/appcompat/widget/a;->k:I
 
     .line 2
     invoke-virtual {p0}, Landroid/view/View;->requestLayout()V
@@ -471,7 +471,7 @@
     if-eq p1, v0, :cond_1
 
     .line 2
-    iget-object v0, p0, Landroidx/appcompat/widget/a;->k:Lf0/x;
+    iget-object v0, p0, Landroidx/appcompat/widget/a;->l:Lf0/x;
 
     if-eqz v0, :cond_0
 

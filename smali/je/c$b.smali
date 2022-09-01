@@ -27,7 +27,7 @@
 
 
 # instance fields
-.field public final synthetic h:Lje/c;
+.field public final synthetic i:Lje/c;
 
 
 # direct methods
@@ -40,7 +40,7 @@
     .end annotation
 
     .line 1
-    iput-object p1, p0, Lje/c$b;->h:Lje/c;
+    iput-object p1, p0, Lje/c$b;->i:Lje/c;
 
     invoke-direct {p0, p1}, Lje/c$a;-><init>(Lje/c;)V
 
@@ -54,7 +54,7 @@
     if-gt p2, p1, :cond_0
 
     .line 3
-    iput p2, p0, Lje/c$a;->f:I
+    iput p2, p0, Lje/c$a;->g:I
 
     return-void
 
@@ -109,7 +109,7 @@
 .method public final hasPrevious()Z
     .locals 1
 
-    iget v0, p0, Lje/c$a;->f:I
+    iget v0, p0, Lje/c$a;->g:I
 
     if-lez v0, :cond_0
 
@@ -127,7 +127,7 @@
 .method public final nextIndex()I
     .locals 1
 
-    iget v0, p0, Lje/c$a;->f:I
+    iget v0, p0, Lje/c$a;->g:I
 
     return v0
 .end method
@@ -148,15 +148,15 @@
     if-eqz v0, :cond_0
 
     .line 2
-    iget-object v0, p0, Lje/c$b;->h:Lje/c;
+    iget-object v0, p0, Lje/c$b;->i:Lje/c;
 
     .line 3
-    iget v1, p0, Lje/c$a;->f:I
+    iget v1, p0, Lje/c$a;->g:I
 
     add-int/lit8 v1, v1, -0x1
 
     .line 4
-    iput v1, p0, Lje/c$a;->f:I
+    iput v1, p0, Lje/c$a;->g:I
 
     .line 5
     invoke-virtual {v0, v1}, Lje/c;->get(I)Ljava/lang/Object;
@@ -177,7 +177,7 @@
 .method public final previousIndex()I
     .locals 1
 
-    iget v0, p0, Lje/c$a;->f:I
+    iget v0, p0, Lje/c$a;->g:I
 
     add-int/lit8 v0, v0, -0x1
 

@@ -15,11 +15,11 @@
 
 
 # instance fields
-.field public final f:I
+.field public final g:I
 
-.field public final g:Ljava/lang/String;
+.field public final h:Ljava/lang/String;
 
-.field public final h:[Landroid/accounts/Account;
+.field public final i:[Landroid/accounts/Account;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 .end field
@@ -45,13 +45,13 @@
     invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
 
     .line 2
-    iput p1, p0, Lcom/google/android/gms/internal/instantapps/zzam;->f:I
+    iput p1, p0, Lcom/google/android/gms/internal/instantapps/zzam;->g:I
 
     .line 3
-    iput-object p2, p0, Lcom/google/android/gms/internal/instantapps/zzam;->g:Ljava/lang/String;
+    iput-object p2, p0, Lcom/google/android/gms/internal/instantapps/zzam;->h:Ljava/lang/String;
 
     .line 4
-    iput-object p3, p0, Lcom/google/android/gms/internal/instantapps/zzam;->h:[Landroid/accounts/Account;
+    iput-object p3, p0, Lcom/google/android/gms/internal/instantapps/zzam;->i:[Landroid/accounts/Account;
 
     return-void
 .end method
@@ -69,7 +69,7 @@
     move-result v0
 
     .line 2
-    iget v1, p0, Lcom/google/android/gms/internal/instantapps/zzam;->f:I
+    iget v1, p0, Lcom/google/android/gms/internal/instantapps/zzam;->g:I
 
     const/4 v2, 0x2
 
@@ -82,7 +82,7 @@
     invoke-virtual {p1, v1}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 5
-    iget-object v1, p0, Lcom/google/android/gms/internal/instantapps/zzam;->g:Ljava/lang/String;
+    iget-object v1, p0, Lcom/google/android/gms/internal/instantapps/zzam;->h:Ljava/lang/String;
 
     const/4 v2, 0x3
 
@@ -92,7 +92,7 @@
     invoke-static {p1, v2, v1, v4}, Le2/b;->m(Landroid/os/Parcel;ILjava/lang/String;Z)V
 
     .line 7
-    iget-object v1, p0, Lcom/google/android/gms/internal/instantapps/zzam;->h:[Landroid/accounts/Account;
+    iget-object v1, p0, Lcom/google/android/gms/internal/instantapps/zzam;->i:[Landroid/accounts/Account;
 
     .line 8
     invoke-static {p1, v3, v1, p2}, Le2/b;->p(Landroid/os/Parcel;I[Landroid/os/Parcelable;I)V

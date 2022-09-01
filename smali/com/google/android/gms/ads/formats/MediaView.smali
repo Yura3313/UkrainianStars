@@ -4,17 +4,17 @@
 
 
 # instance fields
-.field public f:Lcom/google/android/gms/ads/k;
+.field public g:Lcom/google/android/gms/ads/l;
 
-.field public g:Z
+.field public h:Z
 
-.field public h:Lf1/i;
+.field public i:Lf1/j;
 
-.field public i:Landroid/widget/ImageView$ScaleType;
+.field public j:Landroid/widget/ImageView$ScaleType;
 
-.field public j:Z
+.field public k:Z
 
-.field public k:Lk3/n1;
+.field public l:Lk3/m1;
 
 
 # direct methods
@@ -53,21 +53,21 @@
     const/4 v0, 0x1
 
     .line 1
-    iput-boolean v0, p0, Lcom/google/android/gms/ads/formats/MediaView;->j:Z
+    iput-boolean v0, p0, Lcom/google/android/gms/ads/formats/MediaView;->k:Z
 
     .line 2
-    iput-object p1, p0, Lcom/google/android/gms/ads/formats/MediaView;->i:Landroid/widget/ImageView$ScaleType;
+    iput-object p1, p0, Lcom/google/android/gms/ads/formats/MediaView;->j:Landroid/widget/ImageView$ScaleType;
 
     .line 3
-    iget-object v0, p0, Lcom/google/android/gms/ads/formats/MediaView;->k:Lk3/n1;
+    iget-object v0, p0, Lcom/google/android/gms/ads/formats/MediaView;->l:Lk3/m1;
 
     if-eqz v0, :cond_0
 
     .line 4
-    check-cast v0, Lf1/j;
+    check-cast v0, Lf1/k;
 
     .line 5
-    iget-object v0, v0, Lf1/j;->f:Ljava/lang/Object;
+    iget-object v0, v0, Lf1/k;->g:Ljava/lang/Object;
 
     check-cast v0, Lcom/google/android/gms/ads/formats/UnifiedNativeAdView;
 
@@ -77,7 +77,7 @@
 
     .line 6
     :try_start_0
-    iget-object v0, v0, Lcom/google/android/gms/ads/formats/UnifiedNativeAdView;->g:Lcom/google/android/gms/internal/ads/zzaea;
+    iget-object v0, v0, Lcom/google/android/gms/ads/formats/UnifiedNativeAdView;->h:Lcom/google/android/gms/internal/ads/zzaea;
 
     .line 7
     new-instance v1, Lcom/google/android/gms/dynamic/ObjectWrapper;
@@ -94,24 +94,24 @@
     return-void
 .end method
 
-.method public setMediaContent(Lcom/google/android/gms/ads/k;)V
+.method public setMediaContent(Lcom/google/android/gms/ads/l;)V
     .locals 1
 
     const/4 v0, 0x1
 
     .line 1
-    iput-boolean v0, p0, Lcom/google/android/gms/ads/formats/MediaView;->g:Z
+    iput-boolean v0, p0, Lcom/google/android/gms/ads/formats/MediaView;->h:Z
 
     .line 2
-    iput-object p1, p0, Lcom/google/android/gms/ads/formats/MediaView;->f:Lcom/google/android/gms/ads/k;
+    iput-object p1, p0, Lcom/google/android/gms/ads/formats/MediaView;->g:Lcom/google/android/gms/ads/l;
 
     .line 3
-    iget-object v0, p0, Lcom/google/android/gms/ads/formats/MediaView;->h:Lf1/i;
+    iget-object v0, p0, Lcom/google/android/gms/ads/formats/MediaView;->i:Lf1/j;
 
     if-eqz v0, :cond_0
 
     .line 4
-    invoke-virtual {v0, p1}, Lf1/i;->a(Lcom/google/android/gms/ads/k;)V
+    invoke-virtual {v0, p1}, Lf1/j;->a(Lcom/google/android/gms/ads/l;)V
 
     :cond_0
     return-void

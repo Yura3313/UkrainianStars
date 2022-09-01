@@ -22,14 +22,14 @@
 
 
 # instance fields
-.field public final synthetic j:Lgc/b;
+.field public final synthetic k:Lgc/b;
 
 
 # direct methods
 .method public constructor <init>(Lgc/b;)V
     .locals 0
 
-    iput-object p1, p0, Lgc/b$b;->j:Lgc/b;
+    iput-object p1, p0, Lgc/b$b;->k:Lgc/b;
 
     invoke-direct {p0, p1}, Lgc/b$a;-><init>(Lgc/b;)V
 

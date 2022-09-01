@@ -12,13 +12,13 @@
 
 
 # static fields
-.field public static final synthetic h:I
+.field public static final synthetic i:I
 
 
 # instance fields
-.field public f:Landroid/view/ViewGroup;
+.field public g:Landroid/view/ViewGroup;
 
-.field public g:Z
+.field public h:Z
 
 
 # direct methods
@@ -38,7 +38,7 @@
     invoke-virtual {p0, v0}, Landroid/view/ViewGroup;->setClipChildren(Z)V
 
     .line 3
-    iput-object p1, p0, Lv0/e;->f:Landroid/view/ViewGroup;
+    iput-object p1, p0, Lv0/e;->g:Landroid/view/ViewGroup;
 
     .line 4
     sget v0, Landroidx/transition/R$id;->ghost_view_holder:I
@@ -46,7 +46,7 @@
     invoke-virtual {p1, v0, p0}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
 
     .line 5
-    iget-object p1, p0, Lv0/e;->f:Landroid/view/ViewGroup;
+    iget-object p1, p0, Lv0/e;->g:Landroid/view/ViewGroup;
 
     .line 6
     new-instance v0, Lv0/u;
@@ -59,7 +59,7 @@
     const/4 p1, 0x1
 
     .line 8
-    iput-boolean p1, p0, Lv0/e;->g:Z
+    iput-boolean p1, p0, Lv0/e;->h:Z
 
     return-void
 .end method
@@ -109,7 +109,7 @@
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     .line 2
-    iget-object v1, p1, Lv0/g;->h:Landroid/view/View;
+    iget-object v1, p1, Lv0/g;->i:Landroid/view/View;
 
     invoke-static {v1, v0}, Lv0/e;->b(Landroid/view/View;Ljava/util/ArrayList;)V
 
@@ -147,7 +147,7 @@
     check-cast v7, Lv0/g;
 
     .line 7
-    iget-object v7, v7, Lv0/g;->h:Landroid/view/View;
+    iget-object v7, v7, Lv0/g;->i:Landroid/view/View;
 
     invoke-static {v7, v1}, Lv0/e;->b(Landroid/view/View;Ljava/util/ArrayList;)V
 
@@ -363,7 +363,7 @@
     .locals 1
 
     .line 1
-    iget-boolean v0, p0, Lv0/e;->g:Z
+    iget-boolean v0, p0, Lv0/e;->h:Z
 
     if-eqz v0, :cond_0
 
@@ -416,7 +416,7 @@
 
     .line 4
     :cond_1
-    iget-object p1, p0, Lv0/e;->f:Landroid/view/ViewGroup;
+    iget-object p1, p0, Lv0/e;->g:Landroid/view/ViewGroup;
 
     sget v0, Landroidx/transition/R$id;->ghost_view_holder:I
 
@@ -425,7 +425,7 @@
     invoke-virtual {p1, v0, v2}, Landroid/view/View;->setTag(ILjava/lang/Object;)V
 
     .line 5
-    iget-object p1, p0, Lv0/e;->f:Landroid/view/ViewGroup;
+    iget-object p1, p0, Lv0/e;->g:Landroid/view/ViewGroup;
 
     .line 6
     new-instance v0, Lv0/u;
@@ -436,7 +436,7 @@
     invoke-virtual {v0, p0}, Lv0/u;->c(Landroid/view/View;)V
 
     .line 8
-    iput-boolean v1, p0, Lv0/e;->g:Z
+    iput-boolean v1, p0, Lv0/e;->h:Z
 
     :cond_2
     return-void

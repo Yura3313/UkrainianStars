@@ -1,13 +1,13 @@
 .class public final Lwc/f1;
-.super Lcom/supercell/id/ui/BaseFragment;
-.source "HeadFragments.kt"
+.super Lwc/b1;
+.source "NavigationFragments.kt"
 
 
 # direct methods
 .method public constructor <init>()V
     .locals 0
 
-    invoke-direct {p0}, Lcom/supercell/id/ui/BaseFragment;-><init>()V
+    invoke-direct {p0}, Lwc/b1;-><init>()V
 
     return-void
 .end method
@@ -25,9 +25,9 @@
 
     const-string p3, "inflater"
 
-    invoke-static {p1, p3}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p3}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    sget p3, Lcom/supercell/id/R$layout;->fragment_head_not_logged_in:I
+    sget p3, Lcom/supercell/id/R$layout;->fragment_navigation_none:I
 
     const/4 v0, 0x0
 
@@ -41,7 +41,7 @@
 .method public final synthetic a0()V
     .locals 0
 
-    invoke-super {p0}, Lcom/supercell/id/ui/BaseFragment;->a0()V
+    invoke-super {p0}, Lwc/b1;->a0()V
 
     return-void
 .end method

@@ -3,76 +3,67 @@
 .source "com.android.billingclient:billing@@3.0.3"
 
 # interfaces
-.implements Ljava/util/concurrent/ThreadFactory;
+.implements Ljava/lang/Runnable;
 
 
 # instance fields
-.field public final a:Ljava/util/concurrent/ThreadFactory;
+.field public final synthetic g:Ljava/util/concurrent/Future;
 
-.field public final b:Ljava/util/concurrent/atomic/AtomicInteger;
+.field public final synthetic h:Ljava/lang/Runnable;
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 2
+.method public constructor <init>(Ljava/util/concurrent/Future;Ljava/lang/Runnable;)V
+    .locals 0
+
+    iput-object p1, p0, Lcom/android/billingclient/api/g0;->g:Ljava/util/concurrent/Future;
+
+    iput-object p2, p0, Lcom/android/billingclient/api/g0;->h:Ljava/lang/Runnable;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 1
-    invoke-static {}, Ljava/util/concurrent/Executors;->defaultThreadFactory()Ljava/util/concurrent/ThreadFactory;
-
-    move-result-object v0
-
-    iput-object v0, p0, Lcom/android/billingclient/api/g0;->a:Ljava/util/concurrent/ThreadFactory;
-
-    new-instance v0, Ljava/util/concurrent/atomic/AtomicInteger;
-
-    const/4 v1, 0x1
-
-    .line 2
-    invoke-direct {v0, v1}, Ljava/util/concurrent/atomic/AtomicInteger;-><init>(I)V
-
-    iput-object v0, p0, Lcom/android/billingclient/api/g0;->b:Ljava/util/concurrent/atomic/AtomicInteger;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final newThread(Ljava/lang/Runnable;)Ljava/lang/Thread;
-    .locals 3
+.method public final run()V
+    .locals 2
 
-    iget-object v0, p0, Lcom/android/billingclient/api/g0;->a:Ljava/util/concurrent/ThreadFactory;
+    iget-object v0, p0, Lcom/android/billingclient/api/g0;->g:Ljava/util/concurrent/Future;
 
     .line 1
-    invoke-interface {v0, p1}, Ljava/util/concurrent/ThreadFactory;->newThread(Ljava/lang/Runnable;)Ljava/lang/Thread;
-
-    move-result-object p1
-
-    iget-object v0, p0, Lcom/android/billingclient/api/g0;->b:Ljava/util/concurrent/atomic/AtomicInteger;
-
-    .line 2
-    invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicInteger;->getAndIncrement()I
+    invoke-interface {v0}, Ljava/util/concurrent/Future;->isDone()Z
 
     move-result v0
 
-    new-instance v1, Ljava/lang/StringBuilder;
+    if-nez v0, :cond_0
 
-    const/16 v2, 0x1e
+    iget-object v0, p0, Lcom/android/billingclient/api/g0;->g:Ljava/util/concurrent/Future;
 
-    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(I)V
+    invoke-interface {v0}, Ljava/util/concurrent/Future;->isCancelled()Z
 
-    const-string v2, "PlayBillingLibrary-"
+    move-result v0
 
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    if-nez v0, :cond_0
 
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+    iget-object v0, p0, Lcom/android/billingclient/api/g0;->g:Ljava/util/concurrent/Future;
 
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    const/4 v1, 0x1
 
-    move-result-object v0
+    .line 2
+    invoke-interface {v0, v1}, Ljava/util/concurrent/Future;->cancel(Z)Z
 
-    invoke-virtual {p1, v0}, Ljava/lang/Thread;->setName(Ljava/lang/String;)V
+    .line 3
+    sget v0, Lw3/a;->a:I
 
-    return-object p1
+    iget-object v0, p0, Lcom/android/billingclient/api/g0;->h:Ljava/lang/Runnable;
+
+    if-eqz v0, :cond_0
+
+    .line 4
+    invoke-interface {v0}, Ljava/lang/Runnable;->run()V
+
+    :cond_0
+    return-void
 .end method

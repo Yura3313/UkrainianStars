@@ -103,7 +103,7 @@
     iput-object v0, p0, Lcom/google/android/material/bottomappbar/BottomAppBar$Behavior;->f:Ljava/lang/ref/WeakReference;
 
     .line 3
-    sget v0, Lcom/google/android/material/bottomappbar/BottomAppBar;->o0:I
+    sget v0, Lcom/google/android/material/bottomappbar/BottomAppBar;->p0:I
 
     .line 4
     invoke-virtual {p2}, Lcom/google/android/material/bottomappbar/BottomAppBar;->K()Landroid/view/View;
@@ -150,7 +150,7 @@
     invoke-virtual {v0, v1}, Landroid/view/View;->addOnLayoutChangeListener(Landroid/view/View$OnLayoutChangeListener;)V
 
     .line 12
-    iget-object v1, p2, Lcom/google/android/material/bottomappbar/BottomAppBar;->m0:Lcom/google/android/material/bottomappbar/BottomAppBar$a;
+    iget-object v1, p2, Lcom/google/android/material/bottomappbar/BottomAppBar;->n0:Lcom/google/android/material/bottomappbar/BottomAppBar$a;
 
     invoke-virtual {v0, v1}, Lcom/google/android/material/floatingactionbutton/FloatingActionButton;->d(Landroid/animation/Animator$AnimatorListener;)V
 
@@ -162,7 +162,7 @@
     invoke-virtual {v0, v1}, Lcom/google/android/material/floatingactionbutton/FloatingActionButton;->e(Landroid/animation/Animator$AnimatorListener;)V
 
     .line 14
-    iget-object v1, p2, Lcom/google/android/material/bottomappbar/BottomAppBar;->n0:Lcom/google/android/material/bottomappbar/BottomAppBar$b;
+    iget-object v1, p2, Lcom/google/android/material/bottomappbar/BottomAppBar;->o0:Lcom/google/android/material/bottomappbar/BottomAppBar$b;
 
     invoke-virtual {v0, v1}, Lcom/google/android/material/floatingactionbutton/FloatingActionButton;->f(Ld4/j;)V
 

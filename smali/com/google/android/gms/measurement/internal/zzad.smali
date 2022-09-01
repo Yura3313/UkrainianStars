@@ -29,7 +29,7 @@
 
 
 # instance fields
-.field public final f:Landroid/os/Bundle;
+.field public final g:Landroid/os/Bundle;
 
 
 # direct methods
@@ -52,7 +52,7 @@
     invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lcom/google/android/gms/measurement/internal/zzad;->f:Landroid/os/Bundle;
+    iput-object p1, p0, Lcom/google/android/gms/measurement/internal/zzad;->g:Landroid/os/Bundle;
 
     return-void
 .end method
@@ -62,7 +62,7 @@
 .method public final D2()Ljava/lang/Long;
     .locals 2
 
-    iget-object v0, p0, Lcom/google/android/gms/measurement/internal/zzad;->f:Landroid/os/Bundle;
+    iget-object v0, p0, Lcom/google/android/gms/measurement/internal/zzad;->g:Landroid/os/Bundle;
 
     const-string v1, "value"
 
@@ -80,7 +80,7 @@
 .method public final E2(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
 
-    iget-object p1, p0, Lcom/google/android/gms/measurement/internal/zzad;->f:Landroid/os/Bundle;
+    iget-object p1, p0, Lcom/google/android/gms/measurement/internal/zzad;->g:Landroid/os/Bundle;
 
     const-string v0, "currency"
 
@@ -94,7 +94,7 @@
 .method public final F2()Ljava/lang/Double;
     .locals 2
 
-    iget-object v0, p0, Lcom/google/android/gms/measurement/internal/zzad;->f:Landroid/os/Bundle;
+    iget-object v0, p0, Lcom/google/android/gms/measurement/internal/zzad;->g:Landroid/os/Bundle;
 
     const-string v1, "value"
 
@@ -114,7 +114,7 @@
 
     new-instance v0, Landroid/os/Bundle;
 
-    iget-object v1, p0, Lcom/google/android/gms/measurement/internal/zzad;->f:Landroid/os/Bundle;
+    iget-object v1, p0, Lcom/google/android/gms/measurement/internal/zzad;->g:Landroid/os/Bundle;
 
     invoke-direct {v0, v1}, Landroid/os/Bundle;-><init>(Landroid/os/Bundle;)V
 
@@ -142,7 +142,7 @@
 .method public final size()I
     .locals 1
 
-    iget-object v0, p0, Lcom/google/android/gms/measurement/internal/zzad;->f:Landroid/os/Bundle;
+    iget-object v0, p0, Lcom/google/android/gms/measurement/internal/zzad;->g:Landroid/os/Bundle;
 
     invoke-virtual {v0}, Landroid/os/Bundle;->size()I
 
@@ -154,7 +154,7 @@
 .method public final toString()Ljava/lang/String;
     .locals 1
 
-    iget-object v0, p0, Lcom/google/android/gms/measurement/internal/zzad;->f:Landroid/os/Bundle;
+    iget-object v0, p0, Lcom/google/android/gms/measurement/internal/zzad;->g:Landroid/os/Bundle;
 
     invoke-virtual {v0}, Landroid/os/Bundle;->toString()Ljava/lang/String;
 

@@ -367,7 +367,7 @@
 
     .line 6
     :goto_0
-    invoke-interface {v0, p0, v1}, Lr3/u3;->f(Ljava/lang/Object;Lr3/x4;)V
+    invoke-interface {v0, p0, v1}, Lr3/u3;->f(Ljava/lang/Object;Lr3/y4;)V
 
     return-void
 .end method

@@ -44,7 +44,7 @@
     invoke-static {p3}, Landroid/support/v4/media/session/MediaSessionCompat;->ensureClassLoader(Landroid/os/Bundle;)V
 
     .line 2
-    iget-object p3, p0, Landroidx/media/j$a;->f:Landroidx/media/j$c;
+    iget-object p3, p0, Landroidx/media/j$a;->g:Landroidx/media/j$c;
 
     check-cast p3, Landroidx/media/m$c;
 

@@ -47,7 +47,7 @@
     const/4 v1, 0x0
 
     .line 3
-    iput v1, v0, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;->w:I
+    iput v1, v0, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;->x:I
 
     .line 4
     iget-boolean v1, p0, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$f;->g:Z
@@ -72,7 +72,7 @@
     const/4 v1, 0x0
 
     .line 2
-    iput-object v1, v0, Lj1/d;->f:Ljava/lang/Object;
+    iput-object v1, v0, Lj1/d;->g:Ljava/lang/Object;
 
     const/4 v0, 0x1
 
@@ -114,7 +114,7 @@
     .line 1
     iget-object v0, p0, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton$f;->h:Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;
 
-    sget v1, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;->D:I
+    sget v1, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;->E:I
 
     .line 2
     invoke-virtual {v0}, Landroid/view/View;->getVisibility()I
@@ -128,7 +128,7 @@
     if-nez v1, :cond_0
 
     .line 3
-    iget v0, v0, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;->w:I
+    iget v0, v0, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;->x:I
 
     if-ne v0, v3, :cond_1
 
@@ -136,7 +136,7 @@
 
     .line 4
     :cond_0
-    iget v0, v0, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;->w:I
+    iget v0, v0, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;->x:I
 
     const/4 v1, 0x2
 
@@ -171,7 +171,7 @@
     const/4 v0, 0x1
 
     .line 5
-    iput v0, p1, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;->w:I
+    iput v0, p1, Lcom/google/android/material/floatingactionbutton/ExtendedFloatingActionButton;->x:I
 
     return-void
 .end method

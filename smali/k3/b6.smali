@@ -1,127 +1,92 @@
-.class public final Lk3/b6;
+.class public final synthetic Lk3/b6;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lk3/nl0;
-
-
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "<I:",
-        "Ljava/lang/Object;",
-        "O:",
-        "Ljava/lang/Object;",
-        ">",
-        "Ljava/lang/Object;",
-        "Lk3/nl0<",
-        "TI;TO;>;"
-    }
-.end annotation
+.implements Lk3/pl0;
 
 
 # instance fields
-.field public final a:Lk3/n5;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lk3/n5<",
-            "TO;>;"
-        }
-    .end annotation
-.end field
+.field public final a:Lk3/c6;
 
-.field public final b:Lk3/m5;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lk3/m5<",
-            "TI;>;"
-        }
-    .end annotation
-.end field
-
-.field public final c:Ljava/lang/String;
-
-.field public final d:Lk3/em0;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lk3/em0<",
-            "Lk3/j5;",
-            ">;"
-        }
-    .end annotation
-.end field
+.field public final b:Ljava/lang/Object;
 
 
 # direct methods
-.method public constructor <init>(Lk3/em0;Lk3/m5;Lk3/n5;)V
+.method public constructor <init>(Lk3/c6;Ljava/lang/Object;)V
     .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lk3/em0<",
-            "Lk3/j5;",
-            ">;",
-            "Ljava/lang/String;",
-            "Lk3/m5<",
-            "TI;>;",
-            "Lk3/n5<",
-            "TO;>;)V"
-        }
-    .end annotation
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
-    iput-object p1, p0, Lk3/b6;->d:Lk3/em0;
+    iput-object p1, p0, Lk3/b6;->a:Lk3/c6;
 
-    const-string p1, "google.afma.activeView.handleUpdate"
-
-    .line 3
-    iput-object p1, p0, Lk3/b6;->c:Ljava/lang/String;
-
-    .line 4
-    iput-object p2, p0, Lk3/b6;->b:Lk3/m5;
-
-    .line 5
-    iput-object p3, p0, Lk3/b6;->a:Lk3/n5;
+    iput-object p2, p0, Lk3/b6;->b:Ljava/lang/Object;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Ljava/lang/Object;)Lk3/em0;
-    .locals 2
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TI;)",
-            "Lk3/em0<",
-            "TO;>;"
-        }
-    .end annotation
+.method public final a(Ljava/lang/Object;)Lk3/hm0;
+    .locals 6
 
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/lang/Exception;
-        }
-    .end annotation
+    iget-object v0, p0, Lk3/b6;->a:Lk3/c6;
+
+    iget-object v1, p0, Lk3/b6;->b:Ljava/lang/Object;
+
+    check-cast p1, Lk3/j5;
+
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 1
-    iget-object v0, p0, Lk3/b6;->d:Lk3/em0;
+    new-instance v2, Lk3/qd;
 
-    new-instance v1, Lk3/a6;
-
-    invoke-direct {v1, p0, p1}, Lk3/a6;-><init>(Lk3/b6;Ljava/lang/Object;)V
+    invoke-direct {v2}, Lk3/qd;-><init>()V
 
     .line 2
-    sget-object p1, Lk3/jd;->f:Lk3/nd;
+    sget-object v3, Li1/p;->B:Li1/p;
+
+    iget-object v3, v3, Li1/p;->c:Lk3/bb;
 
     .line 3
-    invoke-static {v0, v1, p1}, Lk3/am0;->j(Lk3/em0;Lk3/nl0;Ljava/util/concurrent/Executor;)Lk3/em0;
+    invoke-static {}, Lk3/bb;->J()Ljava/lang/String;
 
-    move-result-object p1
+    move-result-object v3
 
-    return-object p1
+    .line 4
+    sget-object v4, Lk3/g2;->j:Lk3/c3;
+
+    new-instance v5, Lk3/e6;
+
+    invoke-direct {v5, v0, v2}, Lk3/e6;-><init>(Lk3/c6;Lk3/qd;)V
+
+    invoke-virtual {v4, v3, v5}, Lk3/c3;->a(Ljava/lang/String;Lk3/e3;)V
+
+    .line 5
+    new-instance v4, Lorg/json/JSONObject;
+
+    invoke-direct {v4}, Lorg/json/JSONObject;-><init>()V
+
+    const-string v5, "id"
+
+    .line 6
+    invoke-virtual {v4, v5, v3}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
+
+    .line 7
+    iget-object v3, v0, Lk3/c6;->b:Lk3/m5;
+
+    invoke-interface {v3, v1}, Lk3/m5;->b(Ljava/lang/Object;)Lorg/json/JSONObject;
+
+    move-result-object v1
+
+    const-string v3, "args"
+
+    invoke-virtual {v4, v3, v1}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
+
+    .line 8
+    iget-object v0, v0, Lk3/c6;->c:Ljava/lang/String;
+
+    invoke-interface {p1, v0, v4}, Lk3/o4;->V(Ljava/lang/String;Lorg/json/JSONObject;)V
+
+    return-object v2
 .end method

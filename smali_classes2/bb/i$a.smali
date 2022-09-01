@@ -91,14 +91,14 @@
     const/4 v0, 0x0
 
     .line 2
-    invoke-static {p3, p1, v0, v0}, Landroidx/savedstate/d;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {p3, p1, v0, v0}, Le5/i;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
 
     .line 3
     iget-object p1, p0, Lbb/i$a;->a:Lcom/helpshift/util/f;
 
     iget p3, p0, Lbb/i$a;->b:I
 
-    invoke-static {p2, p3}, Lcom/helpshift/util/x;->b(Ljava/lang/String;I)Landroid/graphics/Bitmap;
+    invoke-static {p2, p3}, Lcom/helpshift/util/w;->b(Ljava/lang/String;I)Landroid/graphics/Bitmap;
 
     move-result-object p2
 

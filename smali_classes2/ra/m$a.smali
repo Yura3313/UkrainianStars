@@ -20,15 +20,15 @@
 # instance fields
 .field public final A:Landroid/widget/TextView;
 
-.field public final B:Landroid/view/View;
+.field public final B:Landroid/widget/TextView;
 
-.field public final C:Lcom/helpshift/views/CircleImageView;
+.field public final C:Landroid/view/View;
 
-.field public final synthetic D:Lra/m;
+.field public final D:Lcom/helpshift/views/CircleImageView;
 
-.field public final y:Landroid/view/View;
+.field public final synthetic E:Lra/m;
 
-.field public final z:Landroid/widget/TextView;
+.field public final z:Landroid/view/View;
 
 
 # direct methods
@@ -36,7 +36,7 @@
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lra/m$a;->D:Lra/m;
+    iput-object p1, p0, Lra/m$a;->E:Lra/m;
 
     .line 2
     invoke-direct {p0, p2}, Landroidx/recyclerview/widget/RecyclerView$z;-><init>(Landroid/view/View;)V
@@ -48,7 +48,7 @@
 
     move-result-object p1
 
-    iput-object p1, p0, Lra/m$a;->y:Landroid/view/View;
+    iput-object p1, p0, Lra/m$a;->z:Landroid/view/View;
 
     .line 4
     sget p1, Lcom/helpshift/R$id;->admin_message_text:I
@@ -59,7 +59,7 @@
 
     check-cast p1, Landroid/widget/TextView;
 
-    iput-object p1, p0, Lra/m$a;->z:Landroid/widget/TextView;
+    iput-object p1, p0, Lra/m$a;->A:Landroid/widget/TextView;
 
     .line 5
     sget p1, Lcom/helpshift/R$id;->admin_date_text:I
@@ -70,7 +70,7 @@
 
     check-cast p1, Landroid/widget/TextView;
 
-    iput-object p1, p0, Lra/m$a;->A:Landroid/widget/TextView;
+    iput-object p1, p0, Lra/m$a;->B:Landroid/widget/TextView;
 
     .line 6
     sget p1, Lcom/helpshift/R$id;->admin_message_container:I
@@ -79,7 +79,7 @@
 
     move-result-object p1
 
-    iput-object p1, p0, Lra/m$a;->B:Landroid/view/View;
+    iput-object p1, p0, Lra/m$a;->C:Landroid/view/View;
 
     .line 7
     sget p1, Lcom/helpshift/R$id;->avatar_image_view:I
@@ -90,7 +90,7 @@
 
     check-cast p1, Lcom/helpshift/views/CircleImageView;
 
-    iput-object p1, p0, Lra/m$a;->C:Lcom/helpshift/views/CircleImageView;
+    iput-object p1, p0, Lra/m$a;->D:Lcom/helpshift/views/CircleImageView;
 
     return-void
 .end method
@@ -101,7 +101,7 @@
     .locals 0
 
     .line 1
-    iget-object p3, p0, Lra/m$a;->D:Lra/m;
+    iget-object p3, p0, Lra/m$a;->E:Lra/m;
 
     iget-object p3, p3, Lra/u;->b:Lra/u$a;
 
@@ -119,7 +119,7 @@
     move-result-object p2
 
     .line 3
-    iget-object p3, p0, Lra/m$a;->D:Lra/m;
+    iget-object p3, p0, Lra/m$a;->E:Lra/m;
 
     iget-object p3, p3, Lra/u;->b:Lra/u$a;
 

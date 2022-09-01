@@ -222,7 +222,7 @@
     const-string v5, "Exception in parsing web-socket message"
 
     .line 18
-    invoke-static {v4, v5, v0}, Landroidx/savedstate/d;->g(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v4, v5, v0}, Le5/i;->i(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
     .line 19
     :cond_4

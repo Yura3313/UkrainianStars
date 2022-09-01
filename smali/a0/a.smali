@@ -1,22 +1,12 @@
-.class public final La0/a;
+.class public La0/a;
 .super Ljava/lang/Object;
 .source "MathUtils.java"
 
-# interfaces
-.implements Lk3/xs;
-.implements Lk3/xq0;
-
 
 # static fields
-.field public static final f:La0/a;
+.field public static final a:Lk3/qj;
 
-.field public static final g:Lk3/cl;
-
-.field public static final h:[I
-
-.field public static final i:[I
-
-.field public static final j:[I
+.field public static final b:Lcom/google/android/gms/internal/ads/i;
 
 
 # direct methods
@@ -24,158 +14,25 @@
     .locals 2
 
     .line 1
-    new-instance v0, La0/a;
-
-    invoke-direct {v0}, La0/a;-><init>()V
-
-    sput-object v0, La0/a;->f:La0/a;
-
-    .line 2
-    new-instance v0, Lk3/cl;
-
-    const/4 v1, 0x2
-
-    invoke-direct {v0, v1}, Lk3/cl;-><init>(I)V
-
-    sput-object v0, La0/a;->g:Lk3/cl;
-
-    const/4 v0, 0x4
-
-    new-array v0, v0, [I
-
-    .line 3
-    fill-array-data v0, :array_0
-
-    sput-object v0, La0/a;->h:[I
-
-    const/4 v0, 0x3
-
-    new-array v0, v0, [I
-
-    .line 4
-    fill-array-data v0, :array_1
-
-    sput-object v0, La0/a;->i:[I
-
-    const/16 v0, 0x8
-
-    new-array v0, v0, [I
-
-    .line 5
-    fill-array-data v0, :array_2
-
-    sput-object v0, La0/a;->j:[I
-
-    return-void
-
-    nop
-
-    :array_0
-    .array-data 4
-        0x1
-        0x2
-        0x3
-        0x6
-    .end array-data
-
-    :array_1
-    .array-data 4
-        0xbb80
-        0xac44
-        0x7d00
-    .end array-data
-
-    :array_2
-    .array-data 4
-        0x2
-        0x1
-        0x2
-        0x3
-        0x3
-        0x4
-        0x4
-        0x5
-    .end array-data
-.end method
-
-.method public synthetic constructor <init>()V
-    .locals 0
-
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    return-void
-.end method
-
-.method public synthetic constructor <init>(Lk3/sq0;)V
-    .locals 0
-
-    .line 2
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    return-void
-.end method
-
-.method public static b(Landroid/content/Context;Ljava/lang/String;)Z
-    .locals 2
-
-    .line 1
-    invoke-static {p1}, La0/a;->g(Ljava/lang/String;)Z
-
-    move-result v0
+    new-instance v0, Lk3/qj;
 
     const/4 v1, 0x0
 
-    if-nez v0, :cond_0
+    invoke-direct {v0, v1}, Lk3/qj;-><init>(I)V
 
-    return v1
+    sput-object v0, La0/a;->a:Lk3/qj;
 
     .line 2
-    :cond_0
-    :try_start_0
-    invoke-static {p1}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
+    new-instance v0, Lcom/google/android/gms/internal/ads/i;
 
-    move-result-object p1
+    invoke-direct {v0}, Lcom/google/android/gms/internal/ads/i;-><init>()V
 
-    .line 3
-    invoke-virtual {p0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+    sput-object v0, La0/a;->b:Lcom/google/android/gms/internal/ads/i;
 
-    move-result-object p0
-
-    const-string v0, "r"
-
-    .line 4
-    invoke-virtual {p0, p1, v0}, Landroid/content/ContentResolver;->openFileDescriptor(Landroid/net/Uri;Ljava/lang/String;)Landroid/os/ParcelFileDescriptor;
-
-    move-result-object p0
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    if-eqz p0, :cond_1
-
-    const/4 p1, 0x1
-
-    const/4 v1, 0x1
-
-    .line 5
-    :cond_1
-    invoke-static {p0}, La0/a;->f(Landroid/os/ParcelFileDescriptor;)V
-
-    goto :goto_0
-
-    :catchall_0
-    move-exception p0
-
-    .line 6
-    throw p0
-
-    :catch_0
-    :goto_0
-    return v1
+    return-void
 .end method
 
-.method public static c(FFF)F
+.method public static a(FFF)F
     .locals 1
 
     cmpg-float v0, p0, p1
@@ -195,7 +52,7 @@
     return p0
 .end method
 
-.method public static e(III)I
+.method public static b(III)I
     .locals 0
 
     if-ge p0, p1, :cond_0
@@ -211,163 +68,275 @@
     return p0
 .end method
 
-.method public static f(Landroid/os/ParcelFileDescriptor;)V
-    .locals 0
+.method public static c(Landroid/database/Cursor;)Ljava/util/List;
+    .locals 9
+
+    .line 1
+    new-instance v0, Ljava/util/ArrayList;
+
+    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     if-eqz p0, :cond_0
 
-    :try_start_0
-    invoke-virtual {p0}, Landroid/os/ParcelFileDescriptor;->close()V
-    :try_end_0
-    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
+    .line 2
+    invoke-interface {p0}, Landroid/database/Cursor;->moveToFirst()Z
 
-    :catch_0
-    :cond_0
-    return-void
-.end method
+    move-result v1
 
-.method public static g(Ljava/lang/String;)Z
-    .locals 1
+    if-eqz v1, :cond_0
 
-    if-eqz p0, :cond_1
+    .line 3
+    :goto_0
+    invoke-interface {p0}, Landroid/database/Cursor;->isAfterLast()Z
 
-    .line 1
-    invoke-virtual {p0}, Ljava/lang/String;->length()I
+    move-result v1
 
-    move-result v0
+    if-nez v1, :cond_0
 
-    if-nez v0, :cond_0
+    const-string v1, "TIMESTAMP"
+
+    .line 4
+    invoke-interface {p0, v1}, Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;)I
+
+    move-result v1
+
+    invoke-interface {p0, v1}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
+
+    move-result-object v3
+
+    const-string v1, "MESSAGE"
+
+    .line 5
+    invoke-interface {p0, v1}, Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;)I
+
+    move-result v1
+
+    invoke-interface {p0, v1}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
+
+    move-result-object v5
+
+    const-string v1, "LEVEL"
+
+    .line 6
+    invoke-interface {p0, v1}, Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;)I
+
+    move-result v1
+
+    invoke-interface {p0, v1}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
+
+    move-result-object v4
+
+    const-string v1, "STACKTRACE"
+
+    .line 7
+    invoke-interface {p0, v1}, Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;)I
+
+    move-result v1
+
+    invoke-interface {p0, v1}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
+
+    move-result-object v6
+
+    const-string v1, "EXTRAS"
+
+    .line 8
+    invoke-interface {p0, v1}, Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;)I
+
+    move-result v1
+
+    invoke-interface {p0, v1}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
+
+    move-result-object v7
+
+    const-string v1, "SDK_VERSION"
+
+    .line 9
+    invoke-interface {p0, v1}, Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;)I
+
+    move-result v1
+
+    invoke-interface {p0, v1}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
+
+    move-result-object v8
+
+    .line 10
+    new-instance v1, Laa/a;
+
+    move-object v2, v1
+
+    invoke-direct/range {v2 .. v8}, Laa/a;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 11
+    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    .line 12
+    invoke-interface {p0}, Landroid/database/Cursor;->moveToNext()Z
 
     goto :goto_0
 
     :cond_0
-    const-string v0, "content://"
+    return-object v0
+.end method
 
-    .line 2
-    invoke-virtual {p0, v0}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
+.method public static d(D)Ljava/lang/String;
+    .locals 6
 
-    move-result p0
+    const-string v0, " MB"
 
-    return p0
+    const-wide/high16 v1, 0x4090000000000000L    # 1024.0
+
+    cmpg-double v3, p0, v1
+
+    if-gez v3, :cond_0
+
+    const-string v1, " B"
+
+    goto :goto_0
+
+    :cond_0
+    const-wide/high16 v3, 0x4130000000000000L    # 1048576.0
+
+    cmpg-double v5, p0, v3
+
+    if-gez v5, :cond_1
+
+    div-double/2addr p0, v1
+
+    const-string v1, " KB"
+
+    goto :goto_0
 
     :cond_1
+    div-double/2addr p0, v3
+
+    move-object v1, v0
+
+    .line 1
     :goto_0
-    const/4 p0, 0x0
+    invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    return p0
-.end method
+    move-result v0
 
-.method public static h()V
-    .locals 2
+    const/4 v2, 0x0
 
-    .line 1
-    invoke-static {}, Landroid/os/Looper;->getMainLooper()Landroid/os/Looper;
+    const/4 v3, 0x1
 
-    move-result-object v0
-
-    invoke-static {}, Landroid/os/Looper;->myLooper()Landroid/os/Looper;
-
-    move-result-object v1
-
-    if-ne v0, v1, :cond_0
-
-    return-void
+    if-eqz v0, :cond_2
 
     .line 2
-    :cond_0
-    new-instance v0, Ljava/lang/IllegalStateException;
+    new-instance v0, Ljava/lang/StringBuilder;
 
-    const-string v1, "Must be called from the main thread."
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+    sget-object v4, Ljava/util/Locale;->US:Ljava/util/Locale;
 
-    throw v0
-.end method
+    new-array v3, v3, [Ljava/lang/Object;
 
-.method public static i(Ljava/lang/Object;I)Ljava/lang/Object;
-    .locals 2
+    invoke-static {p0, p1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
 
-    if-eqz p0, :cond_0
+    move-result-object p0
 
-    return-object p0
+    aput-object p0, v3, v2
 
-    .line 1
-    :cond_0
-    new-instance p0, Ljava/lang/NullPointerException;
+    const-string p0, "%.1f"
 
-    const/16 v0, 0x14
+    invoke-static {v4, p0, v3}, Ljava/lang/String;->format(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
 
-    const-string v1, "at index "
+    move-result-object p0
 
-    .line 2
-    invoke-static {v0, v1, p1}, Lcom/google/android/gms/ads/e;->a(ILjava/lang/String;I)Ljava/lang/String;
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    move-result-object p1
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p0
+
+    goto :goto_1
 
     .line 3
-    invoke-direct {p0, p1}, Ljava/lang/NullPointerException;-><init>(Ljava/lang/String;)V
+    :cond_2
+    new-instance v0, Ljava/lang/StringBuilder;
 
-    throw p0
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    sget-object v4, Ljava/util/Locale;->US:Ljava/util/Locale;
+
+    new-array v3, v3, [Ljava/lang/Object;
+
+    invoke-static {p0, p1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
+
+    move-result-object p0
+
+    aput-object p0, v3, v2
+
+    const-string p0, "%.0f"
+
+    invoke-static {v4, p0, v3}, Ljava/lang/String;->format(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object p0
+
+    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p0
+
+    :goto_1
+    return-object p0
 .end method
 
-.method public static j(I)I
-    .locals 1
-
-    const/4 v0, 0x3
-
-    if-ge p0, v0, :cond_0
-
-    add-int/lit8 p0, p0, 0x1
-
-    return p0
-
-    :cond_0
-    const/high16 v0, 0x40000000    # 2.0f
-
-    if-ge p0, v0, :cond_1
-
-    int-to-float p0, p0
-
-    const/high16 v0, 0x3f400000    # 0.75f
-
-    div-float/2addr p0, v0
-
-    const/high16 v0, 0x3f800000    # 1.0f
-
-    add-float/2addr p0, v0
-
-    float-to-int p0, p0
-
-    return p0
-
-    :cond_1
-    const p0, 0x7fffffff
-
-    return p0
-.end method
-
-
-# virtual methods
-.method public a([BII)[B
-    .locals 0
-
-    add-int/2addr p3, p2
-
-    invoke-static {p1, p2, p3}, Ljava/util/Arrays;->copyOfRange([BII)[B
-
-    move-result-object p1
-
-    return-object p1
-.end method
-
-.method public d(Ljava/lang/Object;)V
-    .locals 0
+.method public static e(Laa/a;)Landroid/content/ContentValues;
+    .locals 3
 
     .line 1
-    check-cast p1, Lk3/s41;
+    new-instance v0, Landroid/content/ContentValues;
+
+    invoke-direct {v0}, Landroid/content/ContentValues;-><init>()V
 
     .line 2
-    invoke-interface {p1}, Lk3/s41;->q()V
+    iget-object v1, p0, Laa/a;->a:Ljava/lang/String;
 
-    return-void
+    const-string v2, "TIMESTAMP"
+
+    invoke-virtual {v0, v2, v1}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 3
+    iget-object v1, p0, Laa/a;->b:Ljava/lang/String;
+
+    const-string v2, "MESSAGE"
+
+    invoke-virtual {v0, v2, v1}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 4
+    iget-object v1, p0, Laa/a;->d:Ljava/lang/String;
+
+    const-string v2, "LEVEL"
+
+    invoke-virtual {v0, v2, v1}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 5
+    iget-object v1, p0, Laa/a;->e:Ljava/lang/String;
+
+    const-string v2, "EXTRAS"
+
+    invoke-virtual {v0, v2, v1}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 6
+    iget-object v1, p0, Laa/a;->c:Ljava/lang/String;
+
+    const-string v2, "STACKTRACE"
+
+    invoke-virtual {v0, v2, v1}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 7
+    iget-object p0, p0, Laa/a;->f:Ljava/lang/String;
+
+    const-string v1, "SDK_VERSION"
+
+    invoke-virtual {v0, v1, p0}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
+
+    return-object v0
 .end method

@@ -1,5 +1,5 @@
 .class public abstract Lo8/n;
-.super Lo8/y;
+.super Lo8/z;
 .source "AttachmentMessageDM.java"
 
 
@@ -8,21 +8,21 @@
 
 .field public B:Ljava/lang/String;
 
-.field public C:I
+.field public C:Ljava/lang/String;
 
-.field public D:Ljava/lang/String;
+.field public D:I
 
-.field public E:Z
+.field public E:Ljava/lang/String;
 
 .field public F:Z
 
 .field public G:Z
 
-.field public z:Ljava/lang/String;
+.field public H:Z
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;JLo8/o;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;ZZI)V
+.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;JLo8/p;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;ZZI)V
     .locals 9
 
     move-object v8, p0
@@ -42,32 +42,32 @@
     move/from16 v7, p12
 
     .line 1
-    invoke-direct/range {v0 .. v7}, Lo8/y;-><init>(Ljava/lang/String;Ljava/lang/String;JLo8/o;ZI)V
+    invoke-direct/range {v0 .. v7}, Lo8/z;-><init>(Ljava/lang/String;Ljava/lang/String;JLo8/p;ZI)V
 
     move v0, p6
 
     .line 2
-    iput v0, v8, Lo8/n;->C:I
+    iput v0, v8, Lo8/n;->D:I
 
     move-object/from16 v0, p7
 
     .line 3
-    iput-object v0, v8, Lo8/n;->z:Ljava/lang/String;
+    iput-object v0, v8, Lo8/n;->A:Ljava/lang/String;
 
     move-object/from16 v0, p8
 
     .line 4
-    iput-object v0, v8, Lo8/n;->B:Ljava/lang/String;
+    iput-object v0, v8, Lo8/n;->C:Ljava/lang/String;
 
     move-object/from16 v0, p9
 
     .line 5
-    iput-object v0, v8, Lo8/n;->A:Ljava/lang/String;
+    iput-object v0, v8, Lo8/n;->B:Ljava/lang/String;
 
     move/from16 v0, p11
 
     .line 6
-    iput-boolean v0, v8, Lo8/n;->E:Z
+    iput-boolean v0, v8, Lo8/n;->F:Z
 
     return-void
 .end method
@@ -76,58 +76,58 @@
     .locals 1
 
     .line 7
-    invoke-direct {p0, p1}, Lo8/y;-><init>(Lo8/y;)V
+    invoke-direct {p0, p1}, Lo8/z;-><init>(Lo8/z;)V
 
     .line 8
-    iget-object v0, p1, Lo8/n;->z:Ljava/lang/String;
-
-    iput-object v0, p0, Lo8/n;->z:Ljava/lang/String;
-
-    .line 9
     iget-object v0, p1, Lo8/n;->A:Ljava/lang/String;
 
     iput-object v0, p0, Lo8/n;->A:Ljava/lang/String;
 
-    .line 10
+    .line 9
     iget-object v0, p1, Lo8/n;->B:Ljava/lang/String;
 
     iput-object v0, p0, Lo8/n;->B:Ljava/lang/String;
 
-    .line 11
-    iget v0, p1, Lo8/n;->C:I
+    .line 10
+    iget-object v0, p1, Lo8/n;->C:Ljava/lang/String;
 
-    iput v0, p0, Lo8/n;->C:I
+    iput-object v0, p0, Lo8/n;->C:Ljava/lang/String;
+
+    .line 11
+    iget v0, p1, Lo8/n;->D:I
+
+    iput v0, p0, Lo8/n;->D:I
 
     .line 12
-    iget-object v0, p1, Lo8/n;->D:Ljava/lang/String;
+    iget-object v0, p1, Lo8/n;->E:Ljava/lang/String;
 
-    iput-object v0, p0, Lo8/n;->D:Ljava/lang/String;
+    iput-object v0, p0, Lo8/n;->E:Ljava/lang/String;
 
     .line 13
-    iget-boolean v0, p1, Lo8/n;->E:Z
-
-    iput-boolean v0, p0, Lo8/n;->E:Z
-
-    .line 14
     iget-boolean v0, p1, Lo8/n;->F:Z
 
     iput-boolean v0, p0, Lo8/n;->F:Z
 
-    .line 15
-    iget-boolean p1, p1, Lo8/n;->G:Z
+    .line 14
+    iget-boolean v0, p1, Lo8/n;->G:Z
 
-    iput-boolean p1, p0, Lo8/n;->G:Z
+    iput-boolean v0, p0, Lo8/n;->G:Z
+
+    .line 15
+    iget-boolean p1, p1, Lo8/n;->H:Z
+
+    iput-boolean p1, p0, Lo8/n;->H:Z
 
     return-void
 .end method
 
 
 # virtual methods
-.method public k(Lo8/y;)V
+.method public k(Lo8/z;)V
     .locals 1
 
     .line 1
-    invoke-super {p0, p1}, Lo8/y;->k(Lo8/y;)V
+    invoke-super {p0, p1}, Lo8/z;->k(Lo8/z;)V
 
     .line 2
     instance-of v0, p1, Lo8/n;
@@ -138,35 +138,35 @@
     check-cast p1, Lo8/n;
 
     .line 4
-    iget-boolean v0, p1, Lo8/n;->F:Z
+    iget-boolean v0, p1, Lo8/n;->G:Z
 
     if-nez v0, :cond_0
 
     .line 5
-    iget-object v0, p1, Lo8/n;->z:Ljava/lang/String;
-
-    iput-object v0, p0, Lo8/n;->z:Ljava/lang/String;
-
-    .line 6
-    iget v0, p1, Lo8/n;->C:I
-
-    iput v0, p0, Lo8/n;->C:I
-
-    .line 7
     iget-object v0, p1, Lo8/n;->A:Ljava/lang/String;
 
     iput-object v0, p0, Lo8/n;->A:Ljava/lang/String;
 
-    .line 8
-    :cond_0
+    .line 6
+    iget v0, p1, Lo8/n;->D:I
+
+    iput v0, p0, Lo8/n;->D:I
+
+    .line 7
     iget-object v0, p1, Lo8/n;->B:Ljava/lang/String;
 
     iput-object v0, p0, Lo8/n;->B:Ljava/lang/String;
 
-    .line 9
-    iget-boolean p1, p1, Lo8/n;->E:Z
+    .line 8
+    :cond_0
+    iget-object v0, p1, Lo8/n;->C:Ljava/lang/String;
 
-    iput-boolean p1, p0, Lo8/n;->E:Z
+    iput-object v0, p0, Lo8/n;->C:Ljava/lang/String;
+
+    .line 9
+    iget-boolean p1, p1, Lo8/n;->F:Z
+
+    iput-boolean p1, p0, Lo8/n;->F:Z
 
     :cond_1
     return-void
@@ -175,11 +175,11 @@
 .method public final p()Ljava/lang/String;
     .locals 2
 
-    iget v0, p0, Lo8/n;->C:I
+    iget v0, p0, Lo8/n;->D:I
 
     int-to-double v0, v0
 
-    invoke-static {v0, v1}, Lcom/google/android/play/core/assetpacks/y;->b(D)Ljava/lang/String;
+    invoke-static {v0, v1}, La0/a;->d(D)Ljava/lang/String;
 
     move-result-object v0
 
@@ -189,7 +189,7 @@
 .method public final q(Ljava/lang/String;)Z
     .locals 1
 
-    invoke-static {p1}, Lcom/google/android/play/core/appupdate/g;->b(Ljava/lang/String;)Z
+    invoke-static {p1}, La5/b0;->d(Ljava/lang/String;)Z
 
     move-result v0
 

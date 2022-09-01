@@ -1,5 +1,5 @@
 .class public final Lsd/j$a$a;
-.super Lse/h;
+.super Lse/i;
 .source "GamesFragment.kt"
 
 # interfaces
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lsd/j$a;->n(Lae/c2$a;ILae/b2;)V
+    value = Lsd/j$a;->n(Lae/b2$a;ILae/a2;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,41 +18,41 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/p<",
         "Ljava/util/Observable;",
         "Ljava/lang/Object;",
-        "Lie/h;",
+        "Lie/i;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic f:Lsd/j$a;
-
-.field public final synthetic g:Ljava/lang/String;
+.field public final synthetic g:Lsd/j$a;
 
 .field public final synthetic h:Ljava/lang/String;
 
-.field public final synthetic i:Landroid/view/View;
+.field public final synthetic i:Ljava/lang/String;
+
+.field public final synthetic j:Landroid/view/View;
 
 
 # direct methods
 .method public constructor <init>(Lsd/j$a;Ljava/lang/String;Ljava/lang/String;Landroid/view/View;)V
     .locals 0
 
-    iput-object p1, p0, Lsd/j$a$a;->f:Lsd/j$a;
+    iput-object p1, p0, Lsd/j$a$a;->g:Lsd/j$a;
 
-    iput-object p2, p0, Lsd/j$a$a;->g:Ljava/lang/String;
+    iput-object p2, p0, Lsd/j$a$a;->h:Ljava/lang/String;
 
-    iput-object p3, p0, Lsd/j$a$a;->h:Ljava/lang/String;
+    iput-object p3, p0, Lsd/j$a$a;->i:Ljava/lang/String;
 
-    iput-object p4, p0, Lsd/j$a$a;->i:Landroid/view/View;
+    iput-object p4, p0, Lsd/j$a$a;->j:Landroid/view/View;
 
     const/4 p1, 0x2
 
-    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -66,7 +66,7 @@
     check-cast p1, Ljava/util/Observable;
 
     .line 2
-    iget-object p1, p0, Lsd/j$a$a;->f:Lsd/j$a;
+    iget-object p1, p0, Lsd/j$a$a;->g:Lsd/j$a;
 
     .line 3
     iget-object p1, p1, Lae/s;->f:Landroidx/fragment/app/Fragment;
@@ -75,7 +75,7 @@
     check-cast p1, Lsd/j;
 
     .line 5
-    iget-object p1, p1, Lsd/j;->c0:Lbe/l0;
+    iget-object p1, p1, Lsd/j;->d0:Lbe/n0;
 
     const/4 p2, 0x1
 
@@ -84,17 +84,17 @@
     if-eqz p1, :cond_1
 
     .line 6
-    iget-object v1, p0, Lsd/j$a$a;->g:Ljava/lang/String;
+    iget-object v1, p0, Lsd/j$a$a;->h:Ljava/lang/String;
 
     sget-object v2, Lbd/d;->a:Lae/k;
 
     const-string v2, "game"
 
     .line 7
-    invoke-static {v1, v2}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 8
-    invoke-static {p1, v1}, Lbd/d;->b(Lbe/l0;Ljava/lang/String;)I
+    invoke-static {p1, v1}, Lbd/d;->b(Lbe/n0;Ljava/lang/String;)I
 
     move-result p1
 
@@ -119,7 +119,7 @@
 
     .line 9
     :goto_1
-    iget-object v1, p0, Lsd/j$a$a;->f:Lsd/j$a;
+    iget-object v1, p0, Lsd/j$a$a;->g:Lsd/j$a;
 
     .line 10
     iget-object v1, v1, Lae/s;->f:Landroidx/fragment/app/Fragment;
@@ -128,16 +128,16 @@
     check-cast v1, Lsd/j;
 
     .line 12
-    iget-object v1, v1, Lsd/j;->c0:Lbe/l0;
+    iget-object v1, v1, Lsd/j;->d0:Lbe/n0;
 
     if-eqz v1, :cond_2
 
     .line 13
-    iget-object v2, p0, Lsd/j$a$a;->g:Ljava/lang/String;
+    iget-object v2, p0, Lsd/j$a$a;->h:Ljava/lang/String;
 
-    iget-object v3, p0, Lsd/j$a$a;->h:Ljava/lang/String;
+    iget-object v3, p0, Lsd/j$a$a;->i:Ljava/lang/String;
 
-    invoke-static {v1, v2, v3}, Lbd/d;->a(Lbe/l0;Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {v1, v2, v3}, Lbd/d;->a(Lbe/n0;Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v1
 
@@ -150,7 +150,7 @@
 
     .line 14
     :goto_2
-    iget-object v1, p0, Lsd/j$a$a;->i:Landroid/view/View;
+    iget-object v1, p0, Lsd/j$a$a;->j:Landroid/view/View;
 
     sget v2, Lcom/supercell/id/R$id;->donateButtonGroup:I
 
@@ -162,7 +162,7 @@
 
     const-string v2, "containerView.donateButtonGroup"
 
-    invoke-static {v1, v2}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/16 v2, 0x8
 
@@ -181,7 +181,7 @@
     invoke-virtual {v1, p1}, Landroidx/constraintlayout/widget/Group;->setVisibility(I)V
 
     .line 15
-    iget-object p1, p0, Lsd/j$a$a;->i:Landroid/view/View;
+    iget-object p1, p0, Lsd/j$a$a;->j:Landroid/view/View;
 
     sget v1, Lcom/supercell/id/R$id;->donatePendingGroup:I
 
@@ -193,7 +193,7 @@
 
     const-string v1, "containerView.donatePendingGroup"
 
-    invoke-static {p1, v1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v1}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     if-eqz p2, :cond_4
 
@@ -206,7 +206,7 @@
     invoke-virtual {p1, v0}, Landroidx/constraintlayout/widget/Group;->setVisibility(I)V
 
     .line 16
-    sget-object p1, Lie/h;->a:Lie/h;
+    sget-object p1, Lie/i;->a:Lie/i;
 
     return-object p1
 .end method

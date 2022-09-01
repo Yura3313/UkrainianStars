@@ -1,182 +1,62 @@
 .class public final Lud/y;
-.super Ljava/lang/Object;
+.super Lse/i;
 .source "RemoteAssetClient.kt"
 
 # interfaces
-.implements Ljava/util/Comparator;
+.implements Lre/l;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "<T:",
-        "Ljava/lang/Object;",
-        ">",
-        "Ljava/lang/Object;",
-        "Ljava/util/Comparator<",
-        "Ljava/lang/String;",
+        "Lse/i;",
+        "Lre/l<",
+        "Lie/i;",
+        "Lie/i;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic f:Ljava/util/Set;
+.field public final synthetic g:Lre/l;
 
 
 # direct methods
-.method public constructor <init>(Ljava/util/Set;)V
+.method public constructor <init>(Lre/l;)V
     .locals 0
 
-    iput-object p1, p0, Lud/y;->f:Ljava/util/Set;
+    iput-object p1, p0, Lud/y;->g:Lre/l;
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    const/4 p1, 0x1
+
+    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final compare(Ljava/lang/Object;Ljava/lang/Object;)I
-    .locals 8
+.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 1
 
     .line 1
-    check-cast p1, Ljava/lang/String;
+    check-cast p1, Lie/i;
 
-    check-cast p2, Ljava/lang/String;
+    const-string v0, "it"
 
     .line 2
-    iget-object v0, p0, Lud/y;->f:Ljava/util/Set;
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 3
-    invoke-interface {v0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+    iget-object p1, p0, Lud/y;->g:Lre/l;
 
-    move-result-object v0
+    sget-object v0, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
 
-    const/4 v1, 0x0
-
-    const/4 v2, 0x0
-
-    :goto_0
-    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v3
-
-    const/4 v4, 0x0
-
-    const/4 v5, -0x1
-
-    if-eqz v3, :cond_2
-
-    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v3
-
-    if-ltz v2, :cond_1
+    invoke-interface {p1, v0}, Lre/l;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 4
-    check-cast v3, Ljava/lang/String;
+    sget-object p1, Lie/i;->a:Lie/i;
 
-    const-string v6, "o1"
-
-    .line 5
-    invoke-static {p1, v6}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 6
-    invoke-static {p1, v3, v1}, Lye/r;->m(Ljava/lang/CharSequence;Ljava/lang/CharSequence;Z)Z
-
-    move-result v3
-
-    if-eqz v3, :cond_0
-
-    goto :goto_1
-
-    :cond_0
-    add-int/lit8 v2, v2, 0x1
-
-    goto :goto_0
-
-    .line 7
-    :cond_1
-    invoke-static {}, Lcom/android/billingclient/api/z;->p()V
-
-    throw v4
-
-    :cond_2
-    const/4 v2, -0x1
-
-    :goto_1
-    const p1, 0x7fffffff
-
-    if-ne v2, v5, :cond_3
-
-    const v2, 0x7fffffff
-
-    .line 8
-    :cond_3
-    iget-object v0, p0, Lud/y;->f:Ljava/util/Set;
-
-    .line 9
-    invoke-interface {v0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
-
-    move-result-object v0
-
-    const/4 v3, 0x0
-
-    :goto_2
-    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v6
-
-    if-eqz v6, :cond_6
-
-    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v6
-
-    if-ltz v3, :cond_5
-
-    .line 10
-    check-cast v6, Ljava/lang/String;
-
-    const-string v7, "o2"
-
-    .line 11
-    invoke-static {p2, v7}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 12
-    invoke-static {p2, v6, v1}, Lye/r;->m(Ljava/lang/CharSequence;Ljava/lang/CharSequence;Z)Z
-
-    move-result v6
-
-    if-eqz v6, :cond_4
-
-    goto :goto_3
-
-    :cond_4
-    add-int/lit8 v3, v3, 0x1
-
-    goto :goto_2
-
-    .line 13
-    :cond_5
-    invoke-static {}, Lcom/android/billingclient/api/z;->p()V
-
-    throw v4
-
-    :cond_6
-    const/4 v3, -0x1
-
-    :goto_3
-    if-ne v3, v5, :cond_7
-
-    goto :goto_4
-
-    :cond_7
-    move p1, v3
-
-    :goto_4
-    sub-int/2addr v2, p1
-
-    return v2
+    return-object p1
 .end method

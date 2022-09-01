@@ -66,7 +66,7 @@
     .locals 2
 
     .line 1
-    invoke-static {p1}, Lcom/google/android/play/core/appupdate/g;->b(Ljava/lang/String;)Z
+    invoke-static {p1}, La5/b0;->d(Ljava/lang/String;)Z
 
     move-result v0
 

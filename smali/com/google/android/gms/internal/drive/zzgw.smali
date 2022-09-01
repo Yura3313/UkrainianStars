@@ -15,9 +15,9 @@
 
 
 # instance fields
-.field public final f:Lcom/google/android/gms/drive/DriveId;
+.field public final g:Lcom/google/android/gms/drive/DriveId;
 
-.field public final g:Ljava/util/List;
+.field public final h:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
@@ -57,10 +57,10 @@
     invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lcom/google/android/gms/internal/drive/zzgw;->f:Lcom/google/android/gms/drive/DriveId;
+    iput-object p1, p0, Lcom/google/android/gms/internal/drive/zzgw;->g:Lcom/google/android/gms/drive/DriveId;
 
     .line 3
-    iput-object p2, p0, Lcom/google/android/gms/internal/drive/zzgw;->g:Ljava/util/List;
+    iput-object p2, p0, Lcom/google/android/gms/internal/drive/zzgw;->h:Ljava/util/List;
 
     return-void
 .end method
@@ -80,7 +80,7 @@
     const/4 v1, 0x2
 
     .line 2
-    iget-object v2, p0, Lcom/google/android/gms/internal/drive/zzgw;->f:Lcom/google/android/gms/drive/DriveId;
+    iget-object v2, p0, Lcom/google/android/gms/internal/drive/zzgw;->g:Lcom/google/android/gms/drive/DriveId;
 
     const/4 v3, 0x0
 
@@ -89,7 +89,7 @@
     const/4 p2, 0x3
 
     .line 3
-    iget-object v1, p0, Lcom/google/android/gms/internal/drive/zzgw;->g:Ljava/util/List;
+    iget-object v1, p0, Lcom/google/android/gms/internal/drive/zzgw;->h:Ljava/util/List;
 
     invoke-static {p1, p2, v1, v3}, Le2/b;->q(Landroid/os/Parcel;ILjava/util/List;Z)V
 

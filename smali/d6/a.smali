@@ -15,14 +15,14 @@
 
 
 # instance fields
-.field public final synthetic f:Ld6/b$a;
+.field public final synthetic g:Ld6/b$a;
 
 
 # direct methods
 .method public constructor <init>(Ld6/b$a;I)V
     .locals 1
 
-    iput-object p1, p0, Ld6/a;->f:Ld6/b$a;
+    iput-object p1, p0, Ld6/a;->g:Ld6/b$a;
 
     const/high16 p1, 0x3f400000    # 0.75f
 
@@ -52,7 +52,7 @@
 
     move-result p1
 
-    iget-object v0, p0, Ld6/a;->f:Ld6/b$a;
+    iget-object v0, p0, Ld6/a;->g:Ld6/b$a;
 
     .line 2
     iget v0, v0, Ld6/b$a;->b:I

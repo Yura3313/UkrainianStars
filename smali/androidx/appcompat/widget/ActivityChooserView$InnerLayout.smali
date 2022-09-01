@@ -15,7 +15,7 @@
 
 
 # static fields
-.field public static final f:[I
+.field public static final g:[I
 
 
 # direct methods
@@ -32,7 +32,7 @@
 
     aput v2, v0, v1
 
-    sput-object v0, Landroidx/appcompat/widget/ActivityChooserView$InnerLayout;->f:[I
+    sput-object v0, Landroidx/appcompat/widget/ActivityChooserView$InnerLayout;->g:[I
 
     return-void
 .end method
@@ -44,7 +44,7 @@
     invoke-direct {p0, p1, p2}, Landroid/widget/LinearLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     .line 2
-    sget-object v0, Landroidx/appcompat/widget/ActivityChooserView$InnerLayout;->f:[I
+    sget-object v0, Landroidx/appcompat/widget/ActivityChooserView$InnerLayout;->g:[I
 
     .line 3
     invoke-virtual {p1, p2, v0}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[I)Landroid/content/res/TypedArray;

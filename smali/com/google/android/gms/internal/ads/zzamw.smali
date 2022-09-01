@@ -43,7 +43,7 @@
     move-result-object p1
 
     .line 4
-    sget-object v0, Lk3/cw0;->a:Ljava/lang/ClassLoader;
+    sget-object v0, Lk3/gw0;->a:Ljava/lang/ClassLoader;
 
     .line 5
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
@@ -163,7 +163,7 @@
 
     move-result-object v0
 
-    sget v1, Lcom/google/android/gms/internal/ads/zzaoz;->f:I
+    sget v1, Lcom/google/android/gms/internal/ads/zzaoz;->g:I
 
     if-nez v0, :cond_0
 

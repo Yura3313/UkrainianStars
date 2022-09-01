@@ -3,89 +3,164 @@
 .source "com.google.android.gms:play-services-ads-lite@@19.3.0"
 
 # interfaces
-.implements Ljava/security/PrivilegedExceptionAction;
+.implements Ljava/util/ListIterator;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "Ljava/security/PrivilegedExceptionAction<",
-        "Lsun/misc/Unsafe;",
+        "Ljava/util/ListIterator<",
+        "Ljava/lang/String;",
         ">;"
     }
 .end annotation
 
 
+# instance fields
+.field public g:Ljava/util/ListIterator;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/ListIterator<",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+
 # direct methods
-.method public constructor <init>()V
+.method public constructor <init>(Lk3/gu0;I)V
     .locals 0
 
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    iget-object p1, p1, Lk3/gu0;->g:Lk3/ns0;
+
+    .line 3
+    invoke-interface {p1, p2}, Ljava/util/List;->listIterator(I)Ljava/util/ListIterator;
+
+    move-result-object p1
+
+    iput-object p1, p0, Lk3/fu0;->g:Ljava/util/ListIterator;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final synthetic run()Ljava/lang/Object;
-    .locals 7
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/lang/Exception;
-        }
-    .end annotation
+.method public final synthetic add(Ljava/lang/Object;)V
+    .locals 0
 
     .line 1
-    const-class v0, Lsun/misc/Unsafe;
+    check-cast p1, Ljava/lang/String;
 
     .line 2
-    invoke-virtual {v0}, Ljava/lang/Class;->getDeclaredFields()[Ljava/lang/reflect/Field;
+    new-instance p1, Ljava/lang/UnsupportedOperationException;
 
-    move-result-object v1
+    invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V
 
-    array-length v2, v1
+    throw p1
+.end method
 
-    const/4 v3, 0x0
+.method public final hasNext()Z
+    .locals 1
 
-    :goto_0
-    const/4 v4, 0x0
+    iget-object v0, p0, Lk3/fu0;->g:Ljava/util/ListIterator;
 
-    if-ge v3, v2, :cond_1
+    invoke-interface {v0}, Ljava/util/ListIterator;->hasNext()Z
 
-    aget-object v5, v1, v3
+    move-result v0
 
-    const/4 v6, 0x1
+    return v0
+.end method
 
-    .line 3
-    invoke-virtual {v5, v6}, Ljava/lang/reflect/AccessibleObject;->setAccessible(Z)V
+.method public final hasPrevious()Z
+    .locals 1
 
-    .line 4
-    invoke-virtual {v5, v4}, Ljava/lang/reflect/Field;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    iget-object v0, p0, Lk3/fu0;->g:Ljava/util/ListIterator;
 
-    move-result-object v4
+    invoke-interface {v0}, Ljava/util/ListIterator;->hasPrevious()Z
 
-    .line 5
-    invoke-virtual {v0, v4}, Ljava/lang/Class;->isInstance(Ljava/lang/Object;)Z
+    move-result v0
 
-    move-result v5
+    return v0
+.end method
 
-    if-eqz v5, :cond_0
+.method public final synthetic next()Ljava/lang/Object;
+    .locals 1
 
-    .line 6
-    invoke-virtual {v0, v4}, Ljava/lang/Class;->cast(Ljava/lang/Object;)Ljava/lang/Object;
+    iget-object v0, p0, Lk3/fu0;->g:Ljava/util/ListIterator;
+
+    invoke-interface {v0}, Ljava/util/ListIterator;->next()Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lsun/misc/Unsafe;
+    check-cast v0, Ljava/lang/String;
 
     return-object v0
+.end method
 
-    :cond_0
-    add-int/lit8 v3, v3, 0x1
+.method public final nextIndex()I
+    .locals 1
 
-    goto :goto_0
+    iget-object v0, p0, Lk3/fu0;->g:Ljava/util/ListIterator;
 
-    :cond_1
-    return-object v4
+    invoke-interface {v0}, Ljava/util/ListIterator;->nextIndex()I
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public final synthetic previous()Ljava/lang/Object;
+    .locals 1
+
+    iget-object v0, p0, Lk3/fu0;->g:Ljava/util/ListIterator;
+
+    invoke-interface {v0}, Ljava/util/ListIterator;->previous()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Ljava/lang/String;
+
+    return-object v0
+.end method
+
+.method public final previousIndex()I
+    .locals 1
+
+    iget-object v0, p0, Lk3/fu0;->g:Ljava/util/ListIterator;
+
+    invoke-interface {v0}, Ljava/util/ListIterator;->previousIndex()I
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public final remove()V
+    .locals 1
+
+    new-instance v0, Ljava/lang/UnsupportedOperationException;
+
+    invoke-direct {v0}, Ljava/lang/UnsupportedOperationException;-><init>()V
+
+    throw v0
+.end method
+
+.method public final synthetic set(Ljava/lang/Object;)V
+    .locals 0
+
+    .line 1
+    check-cast p1, Ljava/lang/String;
+
+    .line 2
+    new-instance p1, Ljava/lang/UnsupportedOperationException;
+
+    invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V
+
+    throw p1
 .end method

@@ -348,7 +348,7 @@
     invoke-virtual {v0}, Lcom/google/crypto/tink/shaded/protobuf/n$a;->e()V
 
     .line 6
-    iget-object v2, v0, Lcom/google/crypto/tink/shaded/protobuf/n$a;->g:Lcom/google/crypto/tink/shaded/protobuf/n;
+    iget-object v2, v0, Lcom/google/crypto/tink/shaded/protobuf/n$a;->h:Lcom/google/crypto/tink/shaded/protobuf/n;
 
     check-cast v2, Ln5/v0;
 
@@ -363,7 +363,7 @@
     invoke-virtual {v0}, Lcom/google/crypto/tink/shaded/protobuf/n$a;->e()V
 
     .line 9
-    iget-object v1, v0, Lcom/google/crypto/tink/shaded/protobuf/n$a;->g:Lcom/google/crypto/tink/shaded/protobuf/n;
+    iget-object v1, v0, Lcom/google/crypto/tink/shaded/protobuf/n$a;->h:Lcom/google/crypto/tink/shaded/protobuf/n;
 
     check-cast v1, Ln5/v0;
 
@@ -381,7 +381,7 @@
     invoke-virtual {v0}, Lcom/google/crypto/tink/shaded/protobuf/n$a;->e()V
 
     .line 13
-    iget-object v1, v0, Lcom/google/crypto/tink/shaded/protobuf/n$a;->g:Lcom/google/crypto/tink/shaded/protobuf/n;
+    iget-object v1, v0, Lcom/google/crypto/tink/shaded/protobuf/n$a;->h:Lcom/google/crypto/tink/shaded/protobuf/n;
 
     check-cast v1, Ln5/v0;
 

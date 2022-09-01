@@ -3,10 +3,11 @@
 
 # interfaces
 .implements La5/p;
+.implements La5/u0;
 
 
 # direct methods
-.method public constructor <init>()V
+.method public synthetic constructor <init>()V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -16,17 +17,6 @@
 
 .method public static a(Ljava/lang/ClassLoader;Ljava/util/Set;La5/x;)V
     .locals 2
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/lang/ClassLoader;",
-            "Ljava/util/Set<",
-            "Ljava/io/File;",
-            ">;",
-            "La5/x;",
-            ")V"
-        }
-    .end annotation
 
     invoke-interface {p1}, Ljava/util/Set;->isEmpty()Z
 
@@ -72,7 +62,7 @@
 
     const-class v1, Ljava/util/List;
 
-    invoke-static {p0, p1, v1}, La5/g0;->b(Ljava/lang/Object;Ljava/lang/String;Ljava/lang/Class;)La5/f0;
+    invoke-static {p0, p1, v1}, La5/g0;->a(Ljava/lang/Object;Ljava/lang/String;Ljava/lang/Class;)La5/f0;
 
     move-result-object p1
 
@@ -94,7 +84,7 @@
 
     invoke-direct {v1, v0}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
 
-    invoke-interface {p2, p0, v1, p1}, La5/x;->a(Ljava/lang/Object;Ljava/util/List;Ljava/util/List;)[Ljava/lang/Object;
+    invoke-interface {p2, p0, v1, p1}, La5/x;->b(Ljava/lang/Object;Ljava/util/List;Ljava/util/List;)[Ljava/lang/Object;
 
     move-result-object p2
 
@@ -144,7 +134,7 @@
 
     const-class v1, Ljava/lang/Object;
 
-    invoke-static {p0, v0, v1}, La5/g0;->k(Ljava/lang/Object;Ljava/lang/String;Ljava/lang/Class;)La5/f0;
+    invoke-static {p0, v0, v1}, La5/g0;->i(Ljava/lang/Object;Ljava/lang/String;Ljava/lang/Class;)La5/f0;
 
     move-result-object p0
 
@@ -180,9 +170,9 @@
     invoke-direct {v4}, La5/v;-><init>()V
 
     .line 2
-    new-instance v6, Lm3/e;
+    new-instance v6, Le0/f;
 
-    invoke-direct {v6}, Lm3/e;-><init>()V
+    invoke-direct {v6}, Le0/f;-><init>()V
 
     const-string v5, "zip"
 
@@ -204,17 +194,8 @@
 
 
 # virtual methods
-.method public final b(Ljava/lang/ClassLoader;Ljava/util/Set;)V
+.method public b(Ljava/lang/ClassLoader;Ljava/util/Set;)V
     .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/lang/ClassLoader;",
-            "Ljava/util/Set<",
-            "Ljava/io/File;",
-            ">;)V"
-        }
-    .end annotation
 
     .line 1
     new-instance v0, La5/w;
@@ -227,7 +208,7 @@
     return-void
 .end method
 
-.method public final c(Ljava/lang/ClassLoader;Ljava/io/File;Ljava/io/File;Z)Z
+.method public c(Ljava/lang/ClassLoader;Ljava/io/File;Ljava/io/File;Z)Z
     .locals 0
 
     invoke-static {p1, p2, p3, p4}, La5/z;->d(Ljava/lang/ClassLoader;Ljava/io/File;Ljava/io/File;Z)Z
@@ -235,4 +216,14 @@
     move-result p1
 
     return p1
+.end method
+
+.method public e()Ljava/lang/Object;
+    .locals 1
+
+    new-instance v0, Lcom/google/android/play/core/assetpacks/r0;
+
+    invoke-direct {v0}, Lcom/google/android/play/core/assetpacks/r0;-><init>()V
+
+    return-object v0
 .end method

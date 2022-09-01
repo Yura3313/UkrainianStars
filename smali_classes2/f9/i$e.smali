@@ -69,7 +69,7 @@
 
     move-result-object v0
 
-    check-cast v0, Lo8/y;
+    check-cast v0, Lo8/z;
 
     goto :goto_0
 
@@ -78,17 +78,17 @@
 
     .line 6
     :goto_0
-    instance-of v1, v0, Lo8/r0;
+    instance-of v1, v0, Lo8/t0;
 
     const/4 v2, 0x1
 
     if-eqz v1, :cond_1
 
     .line 7
-    check-cast v0, Lo8/r0;
+    check-cast v0, Lo8/t0;
 
     .line 8
-    invoke-virtual {v0, v2}, Lo8/r0;->v(I)V
+    invoke-virtual {v0, v2}, Lo8/t0;->v(I)V
 
     .line 9
     :cond_1

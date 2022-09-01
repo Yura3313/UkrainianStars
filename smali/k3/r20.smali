@@ -1,143 +1,109 @@
-.class public abstract Lk3/r20;
+.class public final synthetic Lk3/r20;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lcom/google/android/gms/common/internal/BaseGmsClient$a;
-.implements Lcom/google/android/gms/common/internal/BaseGmsClient$b;
+.implements Lk3/pl0;
 
 
 # instance fields
-.field public final a:Lk3/pd;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lk3/pd<",
-            "Ljava/io/InputStream;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field public final b:Ljava/lang/Object;
-
-.field public c:Z
-
-.field public d:Z
-
-.field public e:Lcom/google/android/gms/internal/ads/zzasp;
-
-.field public f:Lk3/b8;
+.field public final a:Lcom/google/android/gms/internal/ads/zzuu;
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 1
+.method public constructor <init>(Lcom/google/android/gms/internal/ads/zzuu;)V
+    .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
-    new-instance v0, Lk3/pd;
-
-    invoke-direct {v0}, Lk3/pd;-><init>()V
-
-    .line 3
-    iput-object v0, p0, Lk3/r20;->a:Lk3/pd;
-
-    .line 4
-    new-instance v0, Ljava/lang/Object;
-
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
-
-    iput-object v0, p0, Lk3/r20;->b:Ljava/lang/Object;
-
-    const/4 v0, 0x0
-
-    .line 5
-    iput-boolean v0, p0, Lk3/r20;->c:Z
-
-    .line 6
-    iput-boolean v0, p0, Lk3/r20;->d:Z
+    iput-object p1, p0, Lk3/r20;->a:Lcom/google/android/gms/internal/ads/zzuu;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final J0(I)V
-    .locals 0
-
-    return-void
-.end method
-
-.method public S0(Lcom/google/android/gms/common/ConnectionResult;)V
-    .locals 2
-
-    iget-object p1, p0, Lk3/r20;->a:Lk3/pd;
-
-    new-instance v0, Lcom/google/android/gms/internal/ads/zzcpa;
-
-    const/4 v1, 0x1
-
-    invoke-direct {v0, v1}, Lcom/google/android/gms/internal/ads/zzcpa;-><init>(I)V
-
-    invoke-virtual {p1, v0}, Lk3/pd;->b(Ljava/lang/Throwable;)Z
-
-    return-void
-.end method
-
-.method public final b()V
-    .locals 2
+.method public final a(Ljava/lang/Object;)Lk3/hm0;
+    .locals 6
 
     .line 1
-    iget-object v0, p0, Lk3/r20;->b:Ljava/lang/Object;
+    iget-object v0, p0, Lk3/r20;->a:Lcom/google/android/gms/internal/ads/zzuu;
 
-    monitor-enter v0
-
-    const/4 v1, 0x1
+    check-cast p1, Ljava/lang/String;
 
     .line 2
-    :try_start_0
-    iput-boolean v1, p0, Lk3/r20;->d:Z
+    iget-object p1, v0, Lcom/google/android/gms/internal/ads/zzuu;->g:Ljava/lang/String;
+
+    iget-object v0, v0, Lcom/google/android/gms/internal/ads/zzuu;->h:Ljava/lang/String;
 
     .line 3
-    iget-object v1, p0, Lk3/r20;->f:Lk3/b8;
+    new-instance v1, Lorg/json/JSONObject;
 
-    invoke-virtual {v1}, Lcom/google/android/gms/common/internal/BaseGmsClient;->isConnected()Z
-
-    move-result v1
-
-    if-nez v1, :cond_0
-
-    iget-object v1, p0, Lk3/r20;->f:Lk3/b8;
-
-    invoke-virtual {v1}, Lcom/google/android/gms/common/internal/BaseGmsClient;->d()Z
-
-    move-result v1
-
-    if-eqz v1, :cond_1
+    invoke-direct {v1}, Lorg/json/JSONObject;-><init>()V
 
     .line 4
-    :cond_0
-    iget-object v1, p0, Lk3/r20;->f:Lk3/b8;
+    new-instance v2, Lorg/json/JSONObject;
 
-    invoke-virtual {v1}, Lcom/google/android/gms/common/internal/BaseGmsClient;->disconnect()V
+    invoke-direct {v2}, Lorg/json/JSONObject;-><init>()V
 
     .line 5
-    :cond_1
-    invoke-static {}, Landroid/os/Binder;->flushPendingCommands()V
+    new-instance v3, Lorg/json/JSONObject;
+
+    invoke-direct {v3}, Lorg/json/JSONObject;-><init>()V
 
     .line 6
-    monitor-exit v0
+    new-instance v4, Lorg/json/JSONObject;
 
-    return-void
+    invoke-direct {v4}, Lorg/json/JSONObject;-><init>()V
 
-    :catchall_0
-    move-exception v1
+    const-string v5, "headers"
 
-    monitor-exit v0
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+    invoke-virtual {v3, v5, v4}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
-    throw v1
+    const-string v4, "body"
+
+    .line 7
+    invoke-virtual {v3, v4, p1}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
+
+    const-string p1, "base_url"
+
+    const-string v4, ""
+
+    .line 8
+    invoke-virtual {v2, p1, v4}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
+
+    .line 9
+    new-instance p1, Lorg/json/JSONObject;
+
+    invoke-direct {p1, v0}, Lorg/json/JSONObject;-><init>(Ljava/lang/String;)V
+
+    const-string v0, "signals"
+
+    invoke-virtual {v2, v0, p1}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
+
+    const-string p1, "request"
+
+    .line 10
+    invoke-virtual {v1, p1, v2}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
+
+    const-string p1, "response"
+
+    .line 11
+    invoke-virtual {v1, p1, v3}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
+
+    .line 12
+    new-instance p1, Lorg/json/JSONObject;
+
+    invoke-direct {p1}, Lorg/json/JSONObject;-><init>()V
+
+    const-string v0, "flags"
+
+    invoke-virtual {v1, v0, p1}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
+
+    .line 13
+    invoke-static {v1}, Lk3/dm0;->g(Ljava/lang/Object;)Lk3/hm0;
+
+    move-result-object p1
+
+    return-object p1
 .end method

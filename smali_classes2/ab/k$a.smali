@@ -65,7 +65,7 @@
     .line 4
     iget-object v1, p0, Lab/k$a;->a:Lab/k;
 
-    iget-object v1, v1, Lab/k;->j0:Ljava/lang/String;
+    iget-object v1, v1, Lab/k;->k0:Ljava/lang/String;
 
     if-eqz v1, :cond_5
 
@@ -92,7 +92,7 @@
     iget-object v0, p0, Lab/k$a;->a:Lab/k;
 
     .line 8
-    iget-object v1, v0, Lab/k;->i0:Landroidx/recyclerview/widget/RecyclerView;
+    iget-object v1, v0, Lab/k;->j0:Landroidx/recyclerview/widget/RecyclerView;
 
     if-nez v1, :cond_2
 
@@ -102,11 +102,11 @@
     :cond_2
     new-instance v1, Lma/c;
 
-    iget-object v2, v0, Lab/k;->j0:Ljava/lang/String;
+    iget-object v2, v0, Lab/k;->k0:Ljava/lang/String;
 
-    iget-object v3, v0, Lab/k;->k0:Lab/k$b;
+    iget-object v3, v0, Lab/k;->l0:Lab/k$b;
 
-    iget-object v4, v0, Lab/k;->l0:Lab/k$c;
+    iget-object v4, v0, Lab/k;->m0:Lab/k$c;
 
     invoke-direct {v1, v2, p1, v3, v4}, Lma/c;-><init>(Ljava/lang/String;Ljava/util/List;Landroid/view/View$OnClickListener;Landroid/view/View$OnClickListener;)V
 
@@ -125,7 +125,7 @@
     iput-boolean v2, v1, Landroidx/recyclerview/widget/RecyclerView$e;->b:Z
 
     .line 12
-    iget-object v3, v0, Lab/k;->i0:Landroidx/recyclerview/widget/RecyclerView;
+    iget-object v3, v0, Lab/k;->j0:Landroidx/recyclerview/widget/RecyclerView;
 
     invoke-virtual {v3}, Landroidx/recyclerview/widget/RecyclerView;->getAdapter()Landroidx/recyclerview/widget/RecyclerView$e;
 
@@ -134,7 +134,7 @@
     if-nez v3, :cond_3
 
     .line 13
-    iget-object p1, v0, Lab/k;->i0:Landroidx/recyclerview/widget/RecyclerView;
+    iget-object p1, v0, Lab/k;->j0:Landroidx/recyclerview/widget/RecyclerView;
 
     invoke-virtual {p1, v1}, Landroidx/recyclerview/widget/RecyclerView;->setAdapter(Landroidx/recyclerview/widget/RecyclerView$e;)V
 
@@ -142,15 +142,15 @@
 
     .line 14
     :cond_3
-    iget-object v1, v0, Lab/k;->i0:Landroidx/recyclerview/widget/RecyclerView;
+    iget-object v1, v0, Lab/k;->j0:Landroidx/recyclerview/widget/RecyclerView;
 
     new-instance v3, Lma/c;
 
-    iget-object v4, v0, Lab/k;->j0:Ljava/lang/String;
+    iget-object v4, v0, Lab/k;->k0:Ljava/lang/String;
 
-    iget-object v5, v0, Lab/k;->k0:Lab/k$b;
+    iget-object v5, v0, Lab/k;->l0:Lab/k$b;
 
-    iget-object v0, v0, Lab/k;->l0:Lab/k$c;
+    iget-object v0, v0, Lab/k;->m0:Lab/k$c;
 
     invoke-direct {v3, v4, p1, v5, v0}, Lma/c;-><init>(Ljava/lang/String;Ljava/util/List;Landroid/view/View$OnClickListener;Landroid/view/View$OnClickListener;)V
 

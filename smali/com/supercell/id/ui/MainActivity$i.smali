@@ -1,5 +1,5 @@
 .class public final synthetic Lcom/supercell/id/ui/MainActivity$i;
-.super Lse/g;
+.super Lse/h;
 .source "MainActivity.kt"
 
 # interfaces
@@ -18,9 +18,9 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/g;",
+        "Lse/h;",
         "Lre/a<",
-        "Lie/h;",
+        "Lie/i;",
         ">;"
     }
 .end annotation
@@ -32,7 +32,7 @@
 
     const/4 v0, 0x0
 
-    invoke-direct {p0, v0, p1}, Lse/g;-><init>(ILjava/lang/Object;)V
+    invoke-direct {p0, v0, p1}, Lse/h;-><init>(ILjava/lang/Object;)V
 
     return-void
 .end method
@@ -52,7 +52,7 @@
 
     const-class v0, Lcom/supercell/id/ui/MainActivity;
 
-    invoke-static {v0}, Lse/r;->a(Ljava/lang/Class;)Lwe/c;
+    invoke-static {v0}, Lse/s;->a(Ljava/lang/Class;)Lwe/c;
 
     move-result-object v0
 
@@ -71,12 +71,12 @@
     .locals 3
 
     .line 1
-    iget-object v0, p0, Lse/b;->receiver:Ljava/lang/Object;
+    iget-object v0, p0, Lse/c;->receiver:Ljava/lang/Object;
 
     check-cast v0, Lcom/supercell/id/ui/MainActivity;
 
     .line 2
-    sget-object v1, Lcom/supercell/id/ui/MainActivity;->s:Ljava/lang/ref/WeakReference;
+    sget-object v1, Lcom/supercell/id/ui/MainActivity;->t:Ljava/lang/ref/WeakReference;
 
     .line 3
     sget v1, Lcom/supercell/id/R$id;->panel:I
@@ -94,7 +94,7 @@
     invoke-static {v1, v2}, Lae/z2;->a(Landroid/view/View;Lre/l;)V
 
     .line 4
-    sget-object v0, Lie/h;->a:Lie/h;
+    sget-object v0, Lie/i;->a:Lie/i;
 
     return-object v0
 .end method

@@ -23,7 +23,7 @@
 
 
 # instance fields
-.field public final f:Lre/a;
+.field public final g:Lre/a;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lre/a<",
@@ -49,7 +49,7 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lje/q;->f:Lre/a;
+    iput-object p1, p0, Lje/q;->g:Lre/a;
 
     return-void
 .end method
@@ -69,7 +69,7 @@
 
     new-instance v0, Lje/r;
 
-    iget-object v1, p0, Lje/q;->f:Lre/a;
+    iget-object v1, p0, Lje/q;->g:Lre/a;
 
     invoke-interface {v1}, Lre/a;->invoke()Ljava/lang/Object;
 

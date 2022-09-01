@@ -1,5 +1,5 @@
 .class public final Lcom/supercell/id/IdConfiguration$e;
-.super Lse/h;
+.super Lse/i;
 .source "SupercellId.kt"
 
 # interfaces
@@ -18,7 +18,7 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/a<",
         "Ljava/lang/Boolean;",
         ">;"
@@ -27,18 +27,18 @@
 
 
 # instance fields
-.field public final synthetic f:Lcom/supercell/id/IdConfiguration;
+.field public final synthetic g:Lcom/supercell/id/IdConfiguration;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/id/IdConfiguration;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/IdConfiguration$e;->f:Lcom/supercell/id/IdConfiguration;
+    iput-object p1, p0, Lcom/supercell/id/IdConfiguration$e;->g:Lcom/supercell/id/IdConfiguration;
 
     const/4 p1, 0x0
 
-    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -49,7 +49,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/supercell/id/IdConfiguration$e;->f:Lcom/supercell/id/IdConfiguration;
+    iget-object v0, p0, Lcom/supercell/id/IdConfiguration$e;->g:Lcom/supercell/id/IdConfiguration;
 
     invoke-virtual {v0}, Lcom/supercell/id/IdConfiguration;->getGameAccountToken()Ljava/lang/String;
 

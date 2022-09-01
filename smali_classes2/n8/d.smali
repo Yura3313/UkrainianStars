@@ -8,13 +8,13 @@
 
 .field public final synthetic c:Lq8/d;
 
-.field public final synthetic d:Lo8/a0;
+.field public final synthetic d:Lo8/c0;
 
 .field public final synthetic e:Ln8/c;
 
 
 # direct methods
-.method public constructor <init>(Ln8/c;Lo8/a;Lq8/d;Lo8/a0;)V
+.method public constructor <init>(Ln8/c;Lo8/a;Lq8/d;Lo8/c0;)V
     .locals 0
 
     iput-object p1, p0, Ln8/d;->e:Ln8/c;
@@ -23,7 +23,7 @@
 
     iput-object p3, p0, Ln8/d;->c:Lq8/d;
 
-    iput-object p4, p0, Ln8/d;->d:Lo8/a0;
+    iput-object p4, p0, Ln8/d;->d:Lo8/c0;
 
     invoke-direct {p0}, La8/g;-><init>()V
 
@@ -50,7 +50,7 @@
     invoke-virtual {v1, v2, v3}, Lo8/a;->q(Li7/c;Ln8/j;)V
 
     .line 2
-    iget-object v1, p0, Ln8/d;->d:Lo8/a0;
+    iget-object v1, p0, Ln8/d;->d:Lo8/c0;
 
     iget-object v2, p0, Ln8/d;->e:Ln8/c;
 
@@ -59,13 +59,13 @@
     const/4 v3, 0x0
 
     .line 3
-    iput-boolean v3, v1, Lo8/a0;->A:Z
+    iput-boolean v3, v1, Lo8/c0;->B:Z
 
     .line 4
-    iput-boolean v0, v1, Lo8/a0;->z:Z
+    iput-boolean v0, v1, Lo8/c0;->A:Z
 
     .line 5
-    invoke-virtual {v1}, Lo8/y;->l()V
+    invoke-virtual {v1}, Lo8/z;->l()V
 
     .line 6
     check-cast v2, Le8/j;
@@ -74,7 +74,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v2, v1}, Le8/b;->e(Lo8/y;)V
+    invoke-virtual {v2, v1}, Le8/b;->e(Lo8/z;)V
     :try_end_0
     .catch Lcom/helpshift/common/exception/RootAPIException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -84,9 +84,9 @@
     move-exception v1
 
     .line 7
-    iget-object v2, v1, Lcom/helpshift/common/exception/RootAPIException;->h:Ld8/a;
+    iget-object v2, v1, Lcom/helpshift/common/exception/RootAPIException;->i:Ld8/a;
 
-    sget-object v3, Ld8/b;->t:Ld8/b;
+    sget-object v3, Ld8/b;->u:Ld8/b;
 
     if-ne v2, v3, :cond_0
 
@@ -95,7 +95,7 @@
 
     iget-object v1, p0, Ln8/d;->c:Lq8/d;
 
-    sget-object v2, Lu8/e;->q:Lu8/e;
+    sget-object v2, Lu8/e;->r:Lu8/e;
 
     invoke-virtual {v0, v1, v2}, Ln8/c;->S(Lq8/d;Lu8/e;)V
 
@@ -104,13 +104,13 @@
 
     .line 9
     :cond_0
-    iget-object v2, p0, Ln8/d;->d:Lo8/a0;
+    iget-object v2, p0, Ln8/d;->d:Lo8/c0;
 
     .line 10
-    iput-boolean v0, v2, Lo8/a0;->A:Z
+    iput-boolean v0, v2, Lo8/c0;->B:Z
 
     .line 11
-    invoke-virtual {v2}, Lo8/y;->l()V
+    invoke-virtual {v2}, Lo8/z;->l()V
 
     .line 12
     throw v1

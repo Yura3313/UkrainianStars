@@ -1,5 +1,5 @@
 .class public final Ljd/c$a;
-.super Lae/c2;
+.super Lae/b2;
 .source "EmbeddedIngameChatDialog.kt"
 
 
@@ -15,11 +15,11 @@
 
 
 # instance fields
-.field public final e:Lae/o2;
+.field public final e:Lae/n2;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lae/o2<",
-            "Lae/e2;",
+            "Lae/n2<",
+            "Lae/d2;",
             ">;"
         }
     .end annotation
@@ -37,45 +37,45 @@
             "Ljd/c;",
             "Ljava/util/List<",
             "+",
-            "Lae/b2;",
+            "Lae/a2;",
             ">;)V"
         }
     .end annotation
 
-    sget-object v0, Lje/l;->f:Lje/l;
+    sget-object v0, Lje/l;->g:Lje/l;
 
     const-string v1, "dialog"
 
-    invoke-static {p1, v1}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v1}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
-    invoke-direct {p0, v0}, Lae/c2;-><init>(Ljava/util/List;)V
+    invoke-direct {p0, v0}, Lae/b2;-><init>(Ljava/util/List;)V
 
     iput-object p1, p0, Ljd/c$a;->f:Ljd/c;
 
     .line 2
-    new-instance p1, Lae/o2;
+    new-instance p1, Lae/n2;
 
     new-instance v0, Ljd/d;
 
     invoke-direct {v0, p0}, Ljd/d;-><init>(Ljd/c$a;)V
 
-    sget-object v1, Ljd/e;->f:Ljd/e;
+    sget-object v1, Ljd/e;->g:Ljd/e;
 
-    invoke-direct {p1, v0, v1}, Lae/o2;-><init>(Lre/l;Lre/l;)V
+    invoke-direct {p1, v0, v1}, Lae/n2;-><init>(Lre/l;Lre/l;)V
 
-    iput-object p1, p0, Ljd/c$a;->e:Lae/o2;
+    iput-object p1, p0, Ljd/c$a;->e:Lae/n2;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final n(Lae/c2$a;ILae/b2;)V
+.method public final n(Lae/b2$a;ILae/a2;)V
     .locals 5
 
     .line 1
-    iget-object p1, p1, Lae/c2$a;->A:Landroid/view/View;
+    iget-object p1, p1, Lae/b2$a;->B:Landroid/view/View;
 
     .line 2
     instance-of v0, p3, Ljd/b;
@@ -120,7 +120,7 @@
 
     .line 6
     :goto_1
-    iget-object v3, p0, Lae/c2;->d:Ljava/util/List;
+    iget-object v3, p0, Lae/b2;->d:Ljava/util/List;
 
     .line 7
     invoke-interface {v3}, Ljava/util/List;->size()I
@@ -163,7 +163,7 @@
     check-cast v0, Landroidx/constraintlayout/widget/ConstraintLayout;
 
     .line 12
-    iget-object v3, p0, Lae/c2;->d:Ljava/util/List;
+    iget-object v3, p0, Lae/b2;->d:Ljava/util/List;
 
     .line 13
     invoke-static {v3, p2}, Lae/y1;->d(Ljava/util/List;I)Z
@@ -171,7 +171,7 @@
     move-result v3
 
     .line 14
-    iget-object v4, p0, Lae/c2;->d:Ljava/util/List;
+    iget-object v4, p0, Lae/b2;->d:Ljava/util/List;
 
     .line 15
     invoke-static {v4, p2}, Lae/y1;->c(Ljava/util/List;I)Z
@@ -179,7 +179,7 @@
     move-result p2
 
     .line 16
-    invoke-static {v0, v3, p2, v2, v1}, Lt2/f;->b(Landroid/view/View;ZZII)V
+    invoke-static {v0, v3, p2, v2, v1}, Lr3/r4;->d(Landroid/view/View;ZZII)V
 
     .line 17
     sget p2, Lcom/supercell/id/R$id;->senderImageView:I
@@ -192,19 +192,19 @@
 
     const-string v0, "containerView.senderImageView"
 
-    invoke-static {p2, v0}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 18
     check-cast p3, Ljd/b;
 
     .line 19
-    iget-object v0, p3, Ljd/b;->c:Lvc/f;
+    iget-object v0, p3, Ljd/b;->c:Lvc/e;
 
     .line 20
-    iget-object v1, v0, Lvc/f;->d:Ljava/lang/String;
+    iget-object v1, v0, Lvc/e;->d:Ljava/lang/String;
 
     .line 21
-    iget-object v0, v0, Lvc/f;->e:Ljava/lang/String;
+    iget-object v0, v0, Lvc/e;->e:Ljava/lang/String;
 
     if-eqz v0, :cond_4
 
@@ -229,11 +229,11 @@
 
     .line 24
     :cond_5
-    sget-object v1, Lcom/supercell/id/model/ProfileImage$Empty;->g:Lcom/supercell/id/model/ProfileImage$Empty;
+    sget-object v1, Lcom/supercell/id/model/ProfileImage$Empty;->h:Lcom/supercell/id/model/ProfileImage$Empty;
 
     .line 25
     :goto_3
-    invoke-static {p2, v1}, Lud/f0;->g(Landroid/widget/ImageView;Lcom/supercell/id/model/ProfileImage;)V
+    invoke-static {p2, v1}, Lud/d0;->g(Landroid/widget/ImageView;Lcom/supercell/id/model/ProfileImage;)V
 
     .line 26
     sget p2, Lcom/supercell/id/R$id;->senderNameLabel:I
@@ -246,13 +246,13 @@
 
     const-string v0, "containerView.senderNameLabel"
 
-    invoke-static {p2, v0}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 27
-    iget-object v0, p3, Ljd/b;->c:Lvc/f;
+    iget-object v0, p3, Ljd/b;->c:Lvc/e;
 
     .line 28
-    iget-object v0, v0, Lvc/f;->c:Ljava/lang/String;
+    iget-object v0, v0, Lvc/e;->c:Ljava/lang/String;
 
     .line 29
     invoke-virtual {p2, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
@@ -268,13 +268,13 @@
 
     const-string p2, "containerView.messageLabel"
 
-    invoke-static {p1, p2}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p2}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 31
-    iget-object p2, p3, Ljd/b;->b:Lvc/g;
+    iget-object p2, p3, Ljd/b;->b:Lvc/f;
 
     .line 32
-    iget-object p2, p2, Lvc/g;->d:Ljava/lang/String;
+    iget-object p2, p2, Lvc/f;->d:Ljava/lang/String;
 
     .line 33
     invoke-virtual {p1, p2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V

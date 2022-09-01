@@ -35,7 +35,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lt8/b;->n()Lcom/helpshift/util/h0;
+    invoke-virtual {v0}, Lt8/b;->n()Lcom/helpshift/util/f0;
 
     move-result-object v0
     :try_end_0
@@ -47,7 +47,7 @@
     if-eqz v1, :cond_1
 
     .line 3
-    iget-object v1, v0, Lcom/helpshift/util/h0;->a:Ljava/lang/Object;
+    iget-object v1, v0, Lcom/helpshift/util/f0;->a:Ljava/lang/Object;
 
     check-cast v1, Ljava/lang/Integer;
 

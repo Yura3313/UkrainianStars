@@ -14,7 +14,7 @@
 
 
 # static fields
-.field public static final synthetic f:[Lwe/l;
+.field public static final synthetic g:[Lwe/l;
 
 
 # direct methods
@@ -65,7 +65,7 @@
 
     aput-object v1, v0, v3
 
-    sput-object v0, Lwe/l;->f:[Lwe/l;
+    sput-object v0, Lwe/l;->g:[Lwe/l;
 
     return-void
 .end method
@@ -100,7 +100,7 @@
 .method public static values()[Lwe/l;
     .locals 1
 
-    sget-object v0, Lwe/l;->f:[Lwe/l;
+    sget-object v0, Lwe/l;->g:[Lwe/l;
 
     invoke-virtual {v0}, [Lwe/l;->clone()Ljava/lang/Object;
 

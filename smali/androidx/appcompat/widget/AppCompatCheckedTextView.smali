@@ -4,11 +4,11 @@
 
 
 # static fields
-.field public static final g:[I
+.field public static final h:[I
 
 
 # instance fields
-.field public final f:Landroidx/appcompat/widget/m;
+.field public final g:Landroidx/appcompat/widget/m;
 
 
 # direct methods
@@ -25,7 +25,7 @@
 
     aput v2, v0, v1
 
-    sput-object v0, Landroidx/appcompat/widget/AppCompatCheckedTextView;->g:[I
+    sput-object v0, Landroidx/appcompat/widget/AppCompatCheckedTextView;->h:[I
 
     return-void
 .end method
@@ -63,7 +63,7 @@
 
     invoke-direct {p1, p0}, Landroidx/appcompat/widget/m;-><init>(Landroid/widget/TextView;)V
 
-    iput-object p1, p0, Landroidx/appcompat/widget/AppCompatCheckedTextView;->f:Landroidx/appcompat/widget/m;
+    iput-object p1, p0, Landroidx/appcompat/widget/AppCompatCheckedTextView;->g:Landroidx/appcompat/widget/m;
 
     .line 5
     invoke-virtual {p1, p2, p3}, Landroidx/appcompat/widget/m;->f(Landroid/util/AttributeSet;I)V
@@ -76,7 +76,7 @@
 
     move-result-object p1
 
-    sget-object v0, Landroidx/appcompat/widget/AppCompatCheckedTextView;->g:[I
+    sget-object v0, Landroidx/appcompat/widget/AppCompatCheckedTextView;->h:[I
 
     invoke-static {p1, p2, v0, p3}, Landroidx/appcompat/widget/h0;->r(Landroid/content/Context;Landroid/util/AttributeSet;[II)Landroidx/appcompat/widget/h0;
 
@@ -106,7 +106,7 @@
     invoke-super {p0}, Landroid/widget/CheckedTextView;->drawableStateChanged()V
 
     .line 2
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatCheckedTextView;->f:Landroidx/appcompat/widget/m;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatCheckedTextView;->g:Landroidx/appcompat/widget/m;
 
     if-eqz v0, :cond_0
 
@@ -166,7 +166,7 @@
     invoke-super {p0, p1, p2}, Landroid/widget/TextView;->setTextAppearance(Landroid/content/Context;I)V
 
     .line 2
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatCheckedTextView;->f:Landroidx/appcompat/widget/m;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatCheckedTextView;->g:Landroidx/appcompat/widget/m;
 
     if-eqz v0, :cond_0
 

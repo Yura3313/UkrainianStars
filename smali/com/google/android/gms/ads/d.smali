@@ -3,35 +3,24 @@
 .source "com.google.android.gms:play-services-ads-lite@@19.3.0"
 
 
-# annotations
-.annotation system Ldalvik/annotation/MemberClasses;
-    value = {
-        Lcom/google/android/gms/ads/d$a;
-    }
-.end annotation
-
-
 # instance fields
-.field public final a:Lk3/p51;
+.field public final a:Landroid/content/Context;
+
+.field public final b:Lcom/google/android/gms/internal/ads/zzwm;
 
 
 # direct methods
-.method public constructor <init>(Lcom/google/android/gms/ads/d$a;)V
-    .locals 1
+.method public constructor <init>(Landroid/content/Context;Lcom/google/android/gms/internal/ads/zzwm;)V
+    .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    new-instance v0, Lk3/p51;
+    iput-object p1, p0, Lcom/google/android/gms/ads/d;->a:Landroid/content/Context;
 
     .line 3
-    iget-object p1, p1, Lcom/google/android/gms/ads/d$a;->a:Lk3/s51;
-
-    .line 4
-    invoke-direct {v0, p1}, Lk3/p51;-><init>(Lk3/s51;)V
-
-    iput-object v0, p0, Lcom/google/android/gms/ads/d;->a:Lk3/p51;
+    iput-object p2, p0, Lcom/google/android/gms/ads/d;->b:Lcom/google/android/gms/internal/ads/zzwm;
 
     return-void
 .end method

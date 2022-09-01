@@ -221,7 +221,7 @@
     if-eqz v2, :cond_1
 
     .line 13
-    iget-object v3, v2, Lla/d;->f:Ljava/lang/String;
+    iget-object v3, v2, Lla/d;->g:Ljava/lang/String;
 
     if-eqz v3, :cond_0
 
@@ -234,7 +234,7 @@
 
     if-eqz v3, :cond_0
 
-    iget-object v3, v2, Lla/d;->g:[Ljava/lang/String;
+    iget-object v3, v2, Lla/d;->h:[Ljava/lang/String;
 
     if-eqz v3, :cond_0
 
@@ -248,14 +248,14 @@
     invoke-direct {v3}, Ljava/util/HashMap;-><init>()V
 
     .line 16
-    iget-object v4, v2, Lla/d;->f:Ljava/lang/String;
+    iget-object v4, v2, Lla/d;->g:Ljava/lang/String;
 
     const-string v5, "operator"
 
     invoke-interface {v3, v5, v4}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 17
-    iget-object v2, v2, Lla/d;->g:[Ljava/lang/String;
+    iget-object v2, v2, Lla/d;->h:[Ljava/lang/String;
 
     const-string v4, "tags"
 

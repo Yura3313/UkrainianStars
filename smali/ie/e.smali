@@ -34,7 +34,7 @@
 
     check-cast p0, Lie/e$a;
 
-    iget-object p0, p0, Lie/e$a;->f:Ljava/lang/Throwable;
+    iget-object p0, p0, Lie/e$a;->g:Ljava/lang/Throwable;
 
     goto :goto_0
 

@@ -1,5 +1,5 @@
 .class public final Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment$d;
-.super Lse/h;
+.super Lse/i;
 .source "ProfileImageEditorFragment.kt"
 
 # interfaces
@@ -18,7 +18,7 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/a<",
         "Lyc/d;",
         ">;"
@@ -27,18 +27,18 @@
 
 
 # instance fields
-.field public final synthetic f:Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment;
+.field public final synthetic g:Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment$d;->f:Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment;
+    iput-object p1, p0, Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment$d;->g:Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment;
 
     const/4 p1, 0x0
 
-    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -50,7 +50,7 @@
 
     new-instance v0, Lyc/d;
 
-    iget-object v1, p0, Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment$d;->f:Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment;
+    iget-object v1, p0, Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment$d;->g:Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment;
 
     invoke-direct {v0, v1, v1}, Lyc/d;-><init>(Landroidx/fragment/app/Fragment;Lyc/a;)V
 

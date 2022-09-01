@@ -12,9 +12,9 @@
 
 .field public final b:[I
 
-.field public final c:Lk3/qs;
+.field public final c:Lk3/os;
 
-.field public final d:Lk3/qs;
+.field public final d:Lk3/os;
 
 
 # direct methods
@@ -96,33 +96,33 @@
 
     .line 7
     :cond_1
-    new-instance v0, Lk3/qs;
+    new-instance v0, Lk3/os;
 
     new-array v3, v2, [I
 
     aput v1, v3, v1
 
-    invoke-direct {v0, p0, v3}, Lk3/qs;-><init>(Lz6/b;[I)V
+    invoke-direct {v0, p0, v3}, Lk3/os;-><init>(Lz6/b;[I)V
 
-    iput-object v0, p0, Lz6/b;->c:Lk3/qs;
+    iput-object v0, p0, Lz6/b;->c:Lk3/os;
 
     .line 8
-    new-instance v0, Lk3/qs;
+    new-instance v0, Lk3/os;
 
     new-array v3, v2, [I
 
     aput v2, v3, v1
 
-    invoke-direct {v0, p0, v3}, Lk3/qs;-><init>(Lz6/b;[I)V
+    invoke-direct {v0, p0, v3}, Lk3/os;-><init>(Lz6/b;[I)V
 
-    iput-object v0, p0, Lz6/b;->d:Lk3/qs;
+    iput-object v0, p0, Lz6/b;->d:Lk3/os;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(II)Lk3/qs;
+.method public final a(II)Lk3/os;
     .locals 1
 
     if-ltz p1, :cond_1
@@ -130,7 +130,7 @@
     if-nez p2, :cond_0
 
     .line 1
-    iget-object p1, p0, Lz6/b;->c:Lk3/qs;
+    iget-object p1, p0, Lz6/b;->c:Lk3/os;
 
     return-object p1
 
@@ -146,9 +146,9 @@
     aput p2, p1, v0
 
     .line 4
-    new-instance p2, Lk3/qs;
+    new-instance p2, Lk3/os;
 
-    invoke-direct {p2, p0, p1}, Lk3/qs;-><init>(Lz6/b;[I)V
+    invoke-direct {p2, p0, p1}, Lk3/os;-><init>(Lz6/b;[I)V
 
     return-object p2
 

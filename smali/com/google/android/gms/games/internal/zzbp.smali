@@ -42,7 +42,7 @@
     invoke-virtual {p3}, Landroid/os/Parcel;->writeNoException()V
 
     .line 3
-    sget v0, Lt3/f;->a:I
+    sget v0, Lt3/i;->a:I
 
     const/4 v0, 0x1
 

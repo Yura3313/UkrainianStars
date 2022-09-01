@@ -15,13 +15,13 @@
 
 
 # instance fields
-.field public f:Landroid/content/Context;
+.field public g:Landroid/content/Context;
 
-.field public g:Lcom/google/android/material/bottomsheet/a;
+.field public h:Lcom/google/android/material/bottomsheet/a;
 
-.field public h:Landroid/widget/ListPopupWindow;
+.field public i:Landroid/widget/ListPopupWindow;
 
-.field public i:Llb/b$a;
+.field public j:Llb/b$a;
 
 
 # direct methods
@@ -32,7 +32,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object p1, p0, Llb/b;->f:Landroid/content/Context;
+    iput-object p1, p0, Llb/b;->g:Landroid/content/Context;
 
     return-void
 .end method
@@ -43,7 +43,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Llb/b;->g:Lcom/google/android/material/bottomsheet/a;
+    iget-object v0, p0, Llb/b;->h:Lcom/google/android/material/bottomsheet/a;
 
     if-eqz v0, :cond_0
 
@@ -54,13 +54,13 @@
     if-eqz v0, :cond_0
 
     .line 2
-    iget-object v0, p0, Llb/b;->g:Lcom/google/android/material/bottomsheet/a;
+    iget-object v0, p0, Llb/b;->h:Lcom/google/android/material/bottomsheet/a;
 
     invoke-virtual {v0}, Landroidx/appcompat/app/p;->dismiss()V
 
     .line 3
     :cond_0
-    iget-object v0, p0, Llb/b;->h:Landroid/widget/ListPopupWindow;
+    iget-object v0, p0, Llb/b;->i:Landroid/widget/ListPopupWindow;
 
     if-eqz v0, :cond_1
 
@@ -71,7 +71,7 @@
     if-eqz v0, :cond_1
 
     .line 4
-    iget-object v0, p0, Llb/b;->h:Landroid/widget/ListPopupWindow;
+    iget-object v0, p0, Llb/b;->i:Landroid/widget/ListPopupWindow;
 
     invoke-virtual {v0}, Landroid/widget/ListPopupWindow;->dismiss()V
 
@@ -94,7 +94,7 @@
     .line 1
     new-instance v6, Landroid/widget/SimpleAdapter;
 
-    iget-object v1, p0, Llb/b;->f:Landroid/content/Context;
+    iget-object v1, p0, Llb/b;->g:Landroid/content/Context;
 
     .line 2
     new-instance v2, Ljava/util/ArrayList;
@@ -144,7 +144,7 @@
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
     .line 7
-    iget-object v5, p0, Llb/b;->f:Landroid/content/Context;
+    iget-object v5, p0, Llb/b;->g:Landroid/content/Context;
 
     sget v7, Lcom/helpshift/R$string;->hs__photo:I
 
@@ -182,7 +182,7 @@
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
     .line 12
-    iget-object v5, p0, Llb/b;->f:Landroid/content/Context;
+    iget-object v5, p0, Llb/b;->g:Landroid/content/Context;
 
     sget v7, Lcom/helpshift/R$string;->hs__video:I
 
@@ -222,7 +222,7 @@
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
     .line 17
-    iget-object v5, p0, Llb/b;->f:Landroid/content/Context;
+    iget-object v5, p0, Llb/b;->g:Landroid/content/Context;
 
     sget v7, Lcom/helpshift/R$string;->hs__documents:I
 
@@ -295,7 +295,7 @@
     invoke-virtual {p0}, Llb/b;->a()V
 
     .line 2
-    iget-object p1, p0, Llb/b;->i:Llb/b$a;
+    iget-object p1, p0, Llb/b;->j:Llb/b$a;
 
     if-eqz p1, :cond_2
 
@@ -317,7 +317,7 @@
     move-result-object p1
 
     .line 4
-    iget-object p2, p0, Llb/b;->f:Landroid/content/Context;
+    iget-object p2, p0, Llb/b;->g:Landroid/content/Context;
 
     sget p3, Lcom/helpshift/R$string;->hs__photo:I
 
@@ -332,7 +332,7 @@
     if-eqz p2, :cond_0
 
     .line 5
-    iget-object p1, p0, Llb/b;->i:Llb/b$a;
+    iget-object p1, p0, Llb/b;->j:Llb/b$a;
 
     const/4 p2, 0x1
 
@@ -344,7 +344,7 @@
 
     .line 6
     :cond_0
-    iget-object p2, p0, Llb/b;->f:Landroid/content/Context;
+    iget-object p2, p0, Llb/b;->g:Landroid/content/Context;
 
     sget p3, Lcom/helpshift/R$string;->hs__video:I
 
@@ -359,7 +359,7 @@
     if-eqz p2, :cond_1
 
     .line 7
-    iget-object p1, p0, Llb/b;->i:Llb/b$a;
+    iget-object p1, p0, Llb/b;->j:Llb/b$a;
 
     const/4 p2, 0x2
 
@@ -371,7 +371,7 @@
 
     .line 8
     :cond_1
-    iget-object p2, p0, Llb/b;->f:Landroid/content/Context;
+    iget-object p2, p0, Llb/b;->g:Landroid/content/Context;
 
     sget p3, Lcom/helpshift/R$string;->hs__documents:I
 
@@ -386,7 +386,7 @@
     if-eqz p1, :cond_2
 
     .line 9
-    iget-object p1, p0, Llb/b;->i:Llb/b$a;
+    iget-object p1, p0, Llb/b;->j:Llb/b$a;
 
     const/4 p2, 0x3
 

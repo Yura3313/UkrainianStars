@@ -18,22 +18,22 @@
 
 
 # instance fields
-.field public final synthetic f:Lpd/x;
+.field public final synthetic g:Lpd/x;
 
-.field public final synthetic g:Lpd/t;
+.field public final synthetic h:Lpd/t;
 
-.field public final synthetic h:Landroid/media/MediaPlayer;
+.field public final synthetic i:Landroid/media/MediaPlayer;
 
 
 # direct methods
 .method public constructor <init>(Lpd/x;Lpd/t;Landroid/media/MediaPlayer;)V
     .locals 0
 
-    iput-object p1, p0, Lpd/x$b;->f:Lpd/x;
+    iput-object p1, p0, Lpd/x$b;->g:Lpd/x;
 
-    iput-object p2, p0, Lpd/x$b;->g:Lpd/t;
+    iput-object p2, p0, Lpd/x$b;->h:Lpd/t;
 
-    iput-object p3, p0, Lpd/x$b;->h:Landroid/media/MediaPlayer;
+    iput-object p3, p0, Lpd/x$b;->i:Landroid/media/MediaPlayer;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -46,10 +46,10 @@
     .locals 2
 
     .line 1
-    iget-object p1, p0, Lpd/x$b;->g:Lpd/t;
+    iget-object p1, p0, Lpd/x$b;->h:Lpd/t;
 
     .line 2
-    iget-object p1, p1, Lpd/t;->j:Lpd/t$e;
+    iget-object p1, p1, Lpd/t;->k:Lpd/t$e;
 
     .line 3
     iget-object v0, p1, Lpd/t$e;->c:Lpd/t$e$c;
@@ -57,7 +57,7 @@
     const/4 v1, 0x1
 
     .line 4
-    iput-boolean v1, v0, Lpd/t$e$c;->v:Z
+    iput-boolean v1, v0, Lpd/t$e$c;->w:Z
 
     .line 5
     iget-object v0, p1, Lpd/t$e;->c:Lpd/t$e$c;
@@ -69,21 +69,21 @@
     iput v0, p1, Lpd/t$e;->d:F
 
     .line 6
-    iget-object p1, p0, Lpd/x$b;->h:Landroid/media/MediaPlayer;
+    iget-object p1, p0, Lpd/x$b;->i:Landroid/media/MediaPlayer;
 
     invoke-virtual {p1}, Landroid/media/MediaPlayer;->release()V
 
     .line 7
-    iget-object p1, p0, Lpd/x$b;->f:Lpd/x;
+    iget-object p1, p0, Lpd/x$b;->g:Lpd/x;
 
     .line 8
     iget-object p1, p1, Lpd/x;->a:Lze/p;
 
     .line 9
-    sget-object v0, Lie/h;->a:Lie/h;
+    sget-object v0, Lie/i;->a:Lie/i;
 
     .line 10
-    invoke-virtual {p1, v0}, Lze/e1;->G(Ljava/lang/Object;)Z
+    invoke-virtual {p1, v0}, Lze/f1;->G(Ljava/lang/Object;)Z
 
     return-void
 .end method

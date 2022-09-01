@@ -140,17 +140,7 @@
     return v0
 .end method
 
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 0
-
-    invoke-static {p0, p1}, Lcom/google/android/gms/games/achievement/AchievementEntity;->E2(Lcom/google/android/gms/games/achievement/Achievement;Ljava/lang/Object;)Z
-
-    move-result p1
-
-    return p1
-.end method
-
-.method public final f2()I
+.method public final e2()I
     .locals 2
 
     .line 1
@@ -178,6 +168,16 @@
     move-result v0
 
     return v0
+.end method
+
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 0
+
+    invoke-static {p0, p1}, Lcom/google/android/gms/games/achievement/AchievementEntity;->E2(Lcom/google/android/gms/games/achievement/Achievement;Ljava/lang/Object;)Z
+
+    move-result p1
+
+    return p1
 .end method
 
 .method public final getDescription()Ljava/lang/String;
@@ -368,9 +368,9 @@
     :cond_0
     new-instance v0, Lcom/google/android/gms/games/PlayerRef;
 
-    iget-object v1, p0, Lc2/d;->f:Lcom/google/android/gms/common/data/DataHolder;
+    iget-object v1, p0, Lc2/d;->g:Lcom/google/android/gms/common/data/DataHolder;
 
-    iget v2, p0, Lc2/d;->g:I
+    iget v2, p0, Lc2/d;->h:I
 
     invoke-direct {v0, v1, v2}, Lcom/google/android/gms/games/PlayerRef;-><init>(Lcom/google/android/gms/common/data/DataHolder;I)V
 

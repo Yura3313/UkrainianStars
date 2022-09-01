@@ -1,221 +1,145 @@
 .class public abstract Lk3/ml0;
-.super Lk3/jl0;
+.super Lk3/dl0$j;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 
 # annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lk3/ml0$c;,
+        Lk3/ml0$a;,
+        Lk3/ml0$b;
+    }
+.end annotation
+
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "<V:",
-        "Ljava/lang/Object;",
-        "C:",
+        "<OutputT:",
         "Ljava/lang/Object;",
         ">",
-        "Lk3/jl0<",
-        "TV;TC;>;"
+        "Lk3/dl0$j<",
+        "TOutputT;>;"
     }
 .end annotation
 
 
+# static fields
+.field public static final p:Lk3/ml0$b;
+
+.field public static final q:Ljava/util/logging/Logger;
+
+
 # instance fields
-.field public u:Ljava/util/AbstractCollection;
+.field public volatile n:Ljava/util/Set;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Ljava/util/List<",
-            "Lk3/ol0<",
-            "TV;>;>;"
+            "Ljava/util/Set<",
+            "Ljava/lang/Throwable;",
+            ">;"
         }
     .end annotation
 .end field
 
+.field public volatile o:I
+
 
 # direct methods
-.method public constructor <init>(Lk3/dk0;)V
-    .locals 3
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lk3/dk0<",
-            "+",
-            "Lk3/em0<",
-            "+TV;>;>;Z)V"
-        }
-    .end annotation
-
-    const/4 v0, 0x1
+.method public static constructor <clinit>()V
+    .locals 7
 
     .line 1
-    invoke-direct {p0, p1, v0, v0}, Lk3/jl0;-><init>(Lk3/dk0;ZZ)V
+    const-class v0, Lk3/ml0;
 
-    .line 2
-    invoke-virtual {p1}, Ljava/util/AbstractCollection;->isEmpty()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    .line 3
-    sget-object v0, Lk3/ek0;->g:Lk3/fk0;
-
-    .line 4
-    sget-object v0, Lk3/mk0;->j:Lk3/mk0;
-
-    goto :goto_0
-
-    .line 5
-    :cond_0
-    invoke-virtual {p1}, Ljava/util/AbstractCollection;->size()I
-
-    move-result v0
-
-    const-string v1, "initialArraySize"
-
-    .line 6
-    invoke-static {v0, v1}, Lk3/q5;->o(ILjava/lang/String;)I
-
-    .line 7
-    new-instance v1, Ljava/util/ArrayList;
-
-    invoke-direct {v1, v0}, Ljava/util/ArrayList;-><init>(I)V
-
-    move-object v0, v1
-
-    :goto_0
-    const/4 v1, 0x0
-
-    .line 8
-    :goto_1
-    invoke-virtual {p1}, Ljava/util/AbstractCollection;->size()I
-
-    move-result v2
-
-    if-ge v1, v2, :cond_1
-
-    const/4 v2, 0x0
-
-    .line 9
-    invoke-interface {v0, v2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
-
-    add-int/lit8 v1, v1, 0x1
-
-    goto :goto_1
-
-    .line 10
-    :cond_1
-    iput-object v0, p0, Lk3/ml0;->u:Ljava/util/AbstractCollection;
-
-    return-void
-.end method
-
-
-# virtual methods
-.method public final t(Lk3/jl0$a;)V
-    .locals 0
-
-    const/4 p1, 0x0
-
-    .line 1
-    iput-object p1, p0, Lk3/jl0;->q:Lk3/dk0;
-
-    .line 2
-    iput-object p1, p0, Lk3/ml0;->u:Ljava/util/AbstractCollection;
-
-    return-void
-.end method
-
-.method public final v()V
-    .locals 3
-
-    .line 1
-    iget-object v0, p0, Lk3/ml0;->u:Ljava/util/AbstractCollection;
-
-    if-eqz v0, :cond_2
-
-    .line 2
-    invoke-interface {v0}, Ljava/util/List;->size()I
-
-    move-result v1
-
-    const-string v2, "initialArraySize"
-
-    .line 3
-    invoke-static {v1, v2}, Lk3/q5;->o(ILjava/lang/String;)I
-
-    .line 4
-    new-instance v2, Ljava/util/ArrayList;
-
-    invoke-direct {v2, v1}, Ljava/util/ArrayList;-><init>(I)V
-
-    .line 5
-    invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+    invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
     move-result-object v0
 
-    :goto_0
-    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+    invoke-static {v0}, Ljava/util/logging/Logger;->getLogger(Ljava/lang/String;)Ljava/util/logging/Logger;
 
-    move-result v1
+    move-result-object v0
 
-    if-eqz v1, :cond_1
+    sput-object v0, Lk3/ml0;->q:Ljava/util/logging/Logger;
 
-    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    .line 2
+    :try_start_0
+    new-instance v0, Lk3/ml0$a;
+
+    const-class v1, Lk3/ml0;
+
+    const-class v2, Ljava/util/Set;
+
+    const-string v3, "n"
+
+    .line 3
+    invoke-static {v1, v2, v3}, Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;->newUpdater(Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/String;)Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
 
     move-result-object v1
 
-    check-cast v1, Lk3/ol0;
+    const-class v2, Lk3/ml0;
 
-    if-eqz v1, :cond_0
+    const-string v3, "o"
 
-    .line 6
-    iget-object v1, v1, Lk3/ol0;->a:Ljava/lang/Object;
+    .line 4
+    invoke-static {v2, v3}, Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;->newUpdater(Ljava/lang/Class;Ljava/lang/String;)Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;
 
-    goto :goto_1
+    move-result-object v2
 
-    :cond_0
+    invoke-direct {v0, v1, v2}, Lk3/ml0$a;-><init>(Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;)V
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
     const/4 v1, 0x0
-
-    :goto_1
-    invoke-virtual {v2, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     goto :goto_0
 
+    :catchall_0
+    move-exception v0
+
+    move-object v1, v0
+
+    .line 5
+    new-instance v0, Lk3/ml0$c;
+
+    invoke-direct {v0}, Lk3/ml0$c;-><init>()V
+
+    :goto_0
+    move-object v6, v1
+
+    .line 6
+    sput-object v0, Lk3/ml0;->p:Lk3/ml0$b;
+
+    if-eqz v6, :cond_0
+
     .line 7
-    :cond_1
-    invoke-static {v2}, Ljava/util/Collections;->unmodifiableList(Ljava/util/List;)Ljava/util/List;
+    sget-object v1, Lk3/ml0;->q:Ljava/util/logging/Logger;
 
-    move-result-object v0
+    sget-object v2, Ljava/util/logging/Level;->SEVERE:Ljava/util/logging/Level;
 
-    .line 8
-    invoke-virtual {p0, v0}, Lk3/bl0;->i(Ljava/lang/Object;)Z
+    const-string v3, "com.google.common.util.concurrent.AggregateFutureState"
 
-    :cond_2
+    const-string v4, "<clinit>"
+
+    const-string v5, "SafeAtomicHelper is broken!"
+
+    invoke-virtual/range {v1 .. v6}, Ljava/util/logging/Logger;->logp(Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+
+    :cond_0
     return-void
 .end method
 
-.method public final w(ILjava/lang/Object;)V
-    .locals 2
-    .param p2    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
-        .end annotation
-    .end param
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(ITV;)V"
-        }
-    .end annotation
+.method public constructor <init>(I)V
+    .locals 1
 
     .line 1
-    iget-object v0, p0, Lk3/ml0;->u:Ljava/util/AbstractCollection;
+    invoke-direct {p0}, Lk3/dl0$j;-><init>()V
 
-    if-eqz v0, :cond_0
+    const/4 v0, 0x0
 
     .line 2
-    new-instance v1, Lk3/ol0;
+    iput-object v0, p0, Lk3/ml0;->n:Ljava/util/Set;
 
-    invoke-direct {v1, p2}, Lk3/ol0;-><init>(Ljava/lang/Object;)V
+    .line 3
+    iput p1, p0, Lk3/ml0;->o:I
 
-    invoke-interface {v0, p1, v1}, Ljava/util/List;->set(ILjava/lang/Object;)Ljava/lang/Object;
-
-    :cond_0
     return-void
 .end method

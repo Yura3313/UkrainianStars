@@ -3,7 +3,7 @@
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lk3/xr0;
+.implements Lk3/cs0;
 
 
 # static fields
@@ -36,7 +36,7 @@
 .method public final a(I)Z
     .locals 0
 
-    invoke-static {p1}, Lk3/ru0;->a(I)I
+    invoke-static {p1}, Lk3/x10;->a(I)I
 
     move-result p1
 

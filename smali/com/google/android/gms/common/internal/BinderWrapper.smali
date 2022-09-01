@@ -27,16 +27,16 @@
 
 
 # instance fields
-.field public f:Landroid/os/IBinder;
+.field public g:Landroid/os/IBinder;
 
 
 # direct methods
 .method public static constructor <clinit>()V
     .locals 1
 
-    new-instance v0, Ld2/a0;
+    new-instance v0, Ld2/b0;
 
-    invoke-direct {v0}, Ld2/a0;-><init>()V
+    invoke-direct {v0}, Ld2/b0;-><init>()V
 
     sput-object v0, Lcom/google/android/gms/common/internal/BinderWrapper;->CREATOR:Landroid/os/Parcelable$Creator;
 
@@ -54,7 +54,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lcom/google/android/gms/common/internal/BinderWrapper;->f:Landroid/os/IBinder;
+    iput-object p1, p0, Lcom/google/android/gms/common/internal/BinderWrapper;->g:Landroid/os/IBinder;
 
     return-void
 .end method
@@ -70,7 +70,7 @@
 
     move-result-object p1
 
-    iput-object p1, p0, Lcom/google/android/gms/common/internal/BinderWrapper;->f:Landroid/os/IBinder;
+    iput-object p1, p0, Lcom/google/android/gms/common/internal/BinderWrapper;->g:Landroid/os/IBinder;
 
     return-void
 .end method
@@ -92,7 +92,7 @@
         .end annotation
     .end param
 
-    iget-object p2, p0, Lcom/google/android/gms/common/internal/BinderWrapper;->f:Landroid/os/IBinder;
+    iget-object p2, p0, Lcom/google/android/gms/common/internal/BinderWrapper;->g:Landroid/os/IBinder;
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeStrongBinder(Landroid/os/IBinder;)V
 

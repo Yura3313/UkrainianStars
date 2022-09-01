@@ -3,18 +3,18 @@
 .source "com.google.android.gms:play-services-base@@17.5.0"
 
 # interfaces
-.implements Lcom/google/android/gms/common/internal/BaseGmsClient$e;
+.implements Ljava/lang/Runnable;
 
 
 # instance fields
-.field public final synthetic a:Lb2/f$a;
+.field public final synthetic g:Lb2/v;
 
 
 # direct methods
-.method public constructor <init>(Lb2/f$a;)V
+.method public constructor <init>(Lb2/v;)V
     .locals 0
 
-    iput-object p1, p0, Lb2/w;->a:Lb2/f$a;
+    iput-object p1, p0, Lb2/w;->g:Lb2/v;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -23,23 +23,34 @@
 
 
 # virtual methods
-.method public final X0()V
-    .locals 2
+.method public final run()V
+    .locals 3
 
     .line 1
-    iget-object v0, p0, Lb2/w;->a:Lb2/f$a;
+    iget-object v0, p0, Lb2/w;->g:Lb2/v;
 
-    iget-object v0, v0, Lb2/f$a;->r:Lb2/f;
+    iget-object v0, v0, Lb2/v;->a:Lb2/e$a;
 
     .line 2
-    iget-object v0, v0, Lb2/f;->s:Lp3/c;
+    iget-object v0, v0, Lb2/e$a;->h:Lcom/google/android/gms/common/api/a$f;
 
     .line 3
-    new-instance v1, Lb2/x;
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    invoke-direct {v1, p0}, Lb2/x;-><init>(Lb2/w;)V
+    move-result-object v1
 
-    invoke-virtual {v0, v1}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
+    invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
+
+    move-result-object v1
+
+    const-string v2, " disconnecting because it was signed out."
+
+    invoke-virtual {v1, v2}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v1
+
+    .line 4
+    invoke-interface {v0, v1}, Lcom/google/android/gms/common/api/a$f;->c(Ljava/lang/String;)V
 
     return-void
 .end method

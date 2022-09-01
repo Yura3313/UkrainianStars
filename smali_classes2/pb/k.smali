@@ -34,7 +34,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
-            "Lpb/f0;",
+            "Lpb/g0;",
             ">;"
         }
     .end annotation

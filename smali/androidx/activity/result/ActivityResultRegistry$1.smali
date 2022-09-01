@@ -144,10 +144,10 @@
     iget-object v0, p0, Landroidx/activity/result/ActivityResultRegistry$1;->c:Lb/a;
 
     .line 10
-    iget v1, p1, Landroidx/activity/result/ActivityResult;->f:I
+    iget v1, p1, Landroidx/activity/result/ActivityResult;->g:I
 
     .line 11
-    iget-object p1, p1, Landroidx/activity/result/ActivityResult;->g:Landroid/content/Intent;
+    iget-object p1, p1, Landroidx/activity/result/ActivityResult;->h:Landroid/content/Intent;
 
     .line 12
     invoke-virtual {v0, v1, p1}, Lb/a;->c(ILandroid/content/Intent;)Ljava/lang/Object;

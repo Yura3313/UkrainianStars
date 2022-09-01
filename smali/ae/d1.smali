@@ -1,103 +1,126 @@
 .class public final Lae/d1;
-.super Lse/h;
+.super Lse/i;
 .source "ProfileUtil.kt"
 
 # interfaces
-.implements Lre/l;
+.implements Lre/p;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
-        "Lre/l<",
-        "Landroid/graphics/Bitmap;",
-        "Lie/h;",
+        "Lse/i;",
+        "Lre/p<",
+        "Landroid/graphics/drawable/Drawable;",
+        "Lud/g;",
+        "Lie/i;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic f:Lre/r;
+.field public final synthetic g:Lae/e1;
 
 
 # direct methods
-.method public constructor <init>(Lre/r;)V
+.method public constructor <init>(Lae/e1;)V
     .locals 0
 
-    iput-object p1, p0, Lae/d1;->f:Lre/r;
+    iput-object p1, p0, Lae/d1;->g:Lae/e1;
 
-    const/4 p1, 0x1
+    const/4 p1, 0x2
 
-    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 4
+.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 3
 
     .line 1
-    check-cast p1, Landroid/graphics/Bitmap;
+    check-cast p1, Landroid/graphics/drawable/Drawable;
 
-    const-string v0, "bitmap"
+    check-cast p2, Lud/g;
+
+    const-string v0, "drawable"
 
     .line 2
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "<anonymous parameter 1>"
+
+    invoke-static {p2, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 3
-    invoke-virtual {p1}, Landroid/graphics/Bitmap;->getRowBytes()I
+    instance-of p2, p1, Landroid/graphics/drawable/BitmapDrawable;
 
-    move-result v0
+    const/4 v0, 0x0
 
-    invoke-virtual {p1}, Landroid/graphics/Bitmap;->getHeight()I
+    if-nez p2, :cond_0
 
-    move-result v1
+    move-object p1, v0
 
-    mul-int v1, v1, v0
+    :cond_0
+    check-cast p1, Landroid/graphics/drawable/BitmapDrawable;
+
+    if-eqz p1, :cond_1
 
     .line 4
-    invoke-static {v1}, Ljava/nio/ByteBuffer;->allocate(I)Ljava/nio/ByteBuffer;
-
-    move-result-object v0
-
-    .line 5
-    invoke-virtual {p1, v0}, Landroid/graphics/Bitmap;->copyPixelsToBuffer(Ljava/nio/Buffer;)V
-
-    .line 6
-    iget-object v2, p0, Lae/d1;->f:Lre/r;
-
-    invoke-virtual {v0}, Ljava/nio/ByteBuffer;->array()[B
-
-    move-result-object v0
-
-    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v1
-
-    invoke-virtual {p1}, Landroid/graphics/Bitmap;->getWidth()I
-
-    move-result v3
-
-    invoke-static {v3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v3
-
-    invoke-virtual {p1}, Landroid/graphics/Bitmap;->getHeight()I
-
-    move-result p1
-
-    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    invoke-virtual {p1}, Landroid/graphics/drawable/BitmapDrawable;->getBitmap()Landroid/graphics/Bitmap;
 
     move-result-object p1
 
-    invoke-interface {v2, v0, v1, v3, p1}, Lre/r;->i(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
+    const-string p2, "it.bitmap"
+
+    invoke-static {p1, p2}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
+
+    sget-object p2, Lae/e;->e:Lae/e$a;
+
+    .line 5
+    sget-object p2, Lae/e;->c:Lae/d;
+
+    sget-object p2, Lae/e;->c:Lae/d;
+
+    .line 6
+    iget-object p2, p0, Lae/d1;->g:Lae/e1;
+
+    iget-object p2, p2, Lae/e1;->g:Lre/r;
+
+    const v0, -0x161617
+
+    invoke-static {p1, v0, v0, p2}, Lae/l;->d(Landroid/graphics/Bitmap;IILre/r;)V
+
+    goto :goto_0
 
     .line 7
-    sget-object p1, Lie/h;->a:Lie/h;
+    :cond_1
+    iget-object p1, p0, Lae/d1;->g:Lae/e1;
+
+    iget-object p1, p1, Lae/e1;->g:Lre/r;
+
+    const/4 p2, 0x0
+
+    invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v2
+
+    invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object p2
+
+    invoke-interface {p1, v0, v1, v2, p2}, Lre/r;->i(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
+
+    .line 8
+    :goto_0
+    sget-object p1, Lie/i;->a:Lie/i;
 
     return-object p1
 .end method

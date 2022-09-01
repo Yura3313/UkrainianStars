@@ -14,10 +14,10 @@
 
 
 # virtual methods
-.method public abstract a(Lk3/uo;Lk3/yv;Lk3/zw;)Lk3/tv;
+.method public abstract a(Lk3/uo;Lk3/xv;Lk3/yw;)Lk3/sv;
 .end method
 
-.method public abstract b(Lk3/uo;Lk3/yv;Lk3/e31;)Lk3/tv;
+.method public abstract b(Lk3/uo;Lk3/xv;Lk3/k31;)Lk3/sv;
 .end method
 
 .method public abstract c()Lk3/zo;
@@ -31,5 +31,5 @@
     .end annotation
 .end method
 
-.method public abstract d()Lk3/xq;
+.method public abstract d()Lk3/wq;
 .end method

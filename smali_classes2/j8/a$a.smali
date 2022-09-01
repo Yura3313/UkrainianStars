@@ -57,9 +57,9 @@
 
     if-eqz v1, :cond_0
 
-    iget-object v1, v0, Lcom/helpshift/common/exception/RootAPIException;->h:Ld8/a;
+    iget-object v1, v0, Lcom/helpshift/common/exception/RootAPIException;->i:Ld8/a;
 
-    sget-object v2, Ld8/b;->s:Ld8/b;
+    sget-object v2, Ld8/b;->t:Ld8/b;
 
     if-eq v1, v2, :cond_0
 
@@ -73,7 +73,7 @@
     iget-object v1, v1, La8/f;->o:Lx7/d;
 
     .line 7
-    sget-object v2, Lx7/d$b;->m:Lx7/d$b;
+    sget-object v2, Lx7/d$b;->n:Lx7/d$b;
 
     .line 8
     invoke-virtual {v0}, Lcom/helpshift/common/exception/RootAPIException;->a()I

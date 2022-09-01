@@ -27,8 +27,6 @@
 
 
 # static fields
-.field public static final enum g:Ln5/v0$b;
-
 .field public static final enum h:Ln5/v0$b;
 
 .field public static final enum i:Ln5/v0$b;
@@ -39,11 +37,13 @@
 
 .field public static final enum l:Ln5/v0$b;
 
-.field public static final synthetic m:[Ln5/v0$b;
+.field public static final enum m:Ln5/v0$b;
+
+.field public static final synthetic n:[Ln5/v0$b;
 
 
 # instance fields
-.field public final f:I
+.field public final g:I
 
 
 # direct methods
@@ -59,7 +59,7 @@
 
     invoke-direct {v0, v1, v2, v2}, Ln5/v0$b;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Ln5/v0$b;->g:Ln5/v0$b;
+    sput-object v0, Ln5/v0$b;->h:Ln5/v0$b;
 
     .line 2
     new-instance v1, Ln5/v0$b;
@@ -70,7 +70,7 @@
 
     invoke-direct {v1, v3, v4, v4}, Ln5/v0$b;-><init>(Ljava/lang/String;II)V
 
-    sput-object v1, Ln5/v0$b;->h:Ln5/v0$b;
+    sput-object v1, Ln5/v0$b;->i:Ln5/v0$b;
 
     .line 3
     new-instance v3, Ln5/v0$b;
@@ -81,7 +81,7 @@
 
     invoke-direct {v3, v5, v6, v6}, Ln5/v0$b;-><init>(Ljava/lang/String;II)V
 
-    sput-object v3, Ln5/v0$b;->i:Ln5/v0$b;
+    sput-object v3, Ln5/v0$b;->j:Ln5/v0$b;
 
     .line 4
     new-instance v5, Ln5/v0$b;
@@ -92,7 +92,7 @@
 
     invoke-direct {v5, v7, v8, v8}, Ln5/v0$b;-><init>(Ljava/lang/String;II)V
 
-    sput-object v5, Ln5/v0$b;->j:Ln5/v0$b;
+    sput-object v5, Ln5/v0$b;->k:Ln5/v0$b;
 
     .line 5
     new-instance v7, Ln5/v0$b;
@@ -103,7 +103,7 @@
 
     invoke-direct {v7, v9, v10, v10}, Ln5/v0$b;-><init>(Ljava/lang/String;II)V
 
-    sput-object v7, Ln5/v0$b;->k:Ln5/v0$b;
+    sput-object v7, Ln5/v0$b;->l:Ln5/v0$b;
 
     .line 6
     new-instance v9, Ln5/v0$b;
@@ -116,7 +116,7 @@
 
     invoke-direct {v9, v11, v12, v13}, Ln5/v0$b;-><init>(Ljava/lang/String;II)V
 
-    sput-object v9, Ln5/v0$b;->l:Ln5/v0$b;
+    sput-object v9, Ln5/v0$b;->m:Ln5/v0$b;
 
     const/4 v11, 0x6
 
@@ -135,7 +135,7 @@
     aput-object v9, v11, v12
 
     .line 7
-    sput-object v11, Ln5/v0$b;->m:[Ln5/v0$b;
+    sput-object v11, Ln5/v0$b;->n:[Ln5/v0$b;
 
     return-void
 .end method
@@ -152,7 +152,7 @@
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 2
-    iput p3, p0, Ln5/v0$b;->f:I
+    iput p3, p0, Ln5/v0$b;->g:I
 
     return-void
 .end method
@@ -184,31 +184,31 @@
 
     .line 1
     :cond_0
-    sget-object p0, Ln5/v0$b;->k:Ln5/v0$b;
+    sget-object p0, Ln5/v0$b;->l:Ln5/v0$b;
 
     return-object p0
 
     .line 2
     :cond_1
-    sget-object p0, Ln5/v0$b;->j:Ln5/v0$b;
+    sget-object p0, Ln5/v0$b;->k:Ln5/v0$b;
 
     return-object p0
 
     .line 3
     :cond_2
-    sget-object p0, Ln5/v0$b;->i:Ln5/v0$b;
+    sget-object p0, Ln5/v0$b;->j:Ln5/v0$b;
 
     return-object p0
 
     .line 4
     :cond_3
-    sget-object p0, Ln5/v0$b;->h:Ln5/v0$b;
+    sget-object p0, Ln5/v0$b;->i:Ln5/v0$b;
 
     return-object p0
 
     .line 5
     :cond_4
-    sget-object p0, Ln5/v0$b;->g:Ln5/v0$b;
+    sget-object p0, Ln5/v0$b;->h:Ln5/v0$b;
 
     return-object p0
 .end method
@@ -230,7 +230,7 @@
 .method public static values()[Ln5/v0$b;
     .locals 1
 
-    sget-object v0, Ln5/v0$b;->m:[Ln5/v0$b;
+    sget-object v0, Ln5/v0$b;->n:[Ln5/v0$b;
 
     invoke-virtual {v0}, [Ln5/v0$b;->clone()Ljava/lang/Object;
 
@@ -247,12 +247,12 @@
     .locals 2
 
     .line 1
-    sget-object v0, Ln5/v0$b;->l:Ln5/v0$b;
+    sget-object v0, Ln5/v0$b;->m:Ln5/v0$b;
 
     if-eq p0, v0, :cond_0
 
     .line 2
-    iget v0, p0, Ln5/v0$b;->f:I
+    iget v0, p0, Ln5/v0$b;->g:I
 
     return v0
 

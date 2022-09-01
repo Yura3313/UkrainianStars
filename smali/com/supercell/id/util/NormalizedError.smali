@@ -25,19 +25,19 @@
     .end annotation
 .end field
 
-.field public static final k:Lye/e;
+.field public static final l:Lye/e;
 
-.field public static final l:Lcom/supercell/id/util/NormalizedError$b;
+.field public static final m:Lcom/supercell/id/util/NormalizedError$b;
 
 
 # instance fields
-.field public final f:Ljava/lang/String;
-
 .field public final g:Ljava/lang/String;
 
 .field public final h:Ljava/lang/String;
 
-.field public final i:Lie/d;
+.field public final i:Ljava/lang/String;
+
+.field public final j:Lie/d;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lie/d<",
@@ -48,7 +48,7 @@
     .end annotation
 .end field
 
-.field public final j:Ljava/lang/String;
+.field public final k:Ljava/lang/String;
 
 
 # direct methods
@@ -61,7 +61,7 @@
     invoke-direct {v0}, Lcom/supercell/id/util/NormalizedError$b;-><init>()V
 
     .line 2
-    sput-object v0, Lcom/supercell/id/util/NormalizedError;->l:Lcom/supercell/id/util/NormalizedError$b;
+    sput-object v0, Lcom/supercell/id/util/NormalizedError;->m:Lcom/supercell/id/util/NormalizedError$b;
 
     .line 3
     new-instance v0, Lye/e;
@@ -70,7 +70,7 @@
 
     invoke-direct {v0, v1}, Lye/e;-><init>(Ljava/lang/String;)V
 
-    sput-object v0, Lcom/supercell/id/util/NormalizedError;->k:Lye/e;
+    sput-object v0, Lcom/supercell/id/util/NormalizedError;->l:Lye/e;
 
     .line 4
     new-instance v0, Lcom/supercell/id/util/NormalizedError$a;
@@ -102,31 +102,31 @@
 
     const-string v0, "titleKey"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "textKey"
 
-    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "buttonKey"
 
-    invoke-static {p3, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p3, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "ingameKey"
 
-    invoke-static {p5, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p5, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lcom/supercell/id/util/NormalizedError;->f:Ljava/lang/String;
+    iput-object p1, p0, Lcom/supercell/id/util/NormalizedError;->g:Ljava/lang/String;
 
-    iput-object p2, p0, Lcom/supercell/id/util/NormalizedError;->g:Ljava/lang/String;
+    iput-object p2, p0, Lcom/supercell/id/util/NormalizedError;->h:Ljava/lang/String;
 
-    iput-object p3, p0, Lcom/supercell/id/util/NormalizedError;->h:Ljava/lang/String;
+    iput-object p3, p0, Lcom/supercell/id/util/NormalizedError;->i:Ljava/lang/String;
 
-    iput-object p4, p0, Lcom/supercell/id/util/NormalizedError;->i:Lie/d;
+    iput-object p4, p0, Lcom/supercell/id/util/NormalizedError;->j:Lie/d;
 
-    iput-object p5, p0, Lcom/supercell/id/util/NormalizedError;->j:Ljava/lang/String;
+    iput-object p5, p0, Lcom/supercell/id/util/NormalizedError;->k:Ljava/lang/String;
 
     return-void
 .end method
@@ -152,21 +152,11 @@
 
     check-cast p1, Lcom/supercell/id/util/NormalizedError;
 
-    iget-object v0, p0, Lcom/supercell/id/util/NormalizedError;->f:Ljava/lang/String;
-
-    iget-object v1, p1, Lcom/supercell/id/util/NormalizedError;->f:Ljava/lang/String;
-
-    invoke-static {v0, v1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
     iget-object v0, p0, Lcom/supercell/id/util/NormalizedError;->g:Ljava/lang/String;
 
     iget-object v1, p1, Lcom/supercell/id/util/NormalizedError;->g:Ljava/lang/String;
 
-    invoke-static {v0, v1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
@@ -176,27 +166,37 @@
 
     iget-object v1, p1, Lcom/supercell/id/util/NormalizedError;->h:Ljava/lang/String;
 
-    invoke-static {v0, v1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/supercell/id/util/NormalizedError;->i:Lie/d;
+    iget-object v0, p0, Lcom/supercell/id/util/NormalizedError;->i:Ljava/lang/String;
 
-    iget-object v1, p1, Lcom/supercell/id/util/NormalizedError;->i:Lie/d;
+    iget-object v1, p1, Lcom/supercell/id/util/NormalizedError;->i:Ljava/lang/String;
 
-    invoke-static {v0, v1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/supercell/id/util/NormalizedError;->j:Ljava/lang/String;
+    iget-object v0, p0, Lcom/supercell/id/util/NormalizedError;->j:Lie/d;
 
-    iget-object p1, p1, Lcom/supercell/id/util/NormalizedError;->j:Ljava/lang/String;
+    iget-object v1, p1, Lcom/supercell/id/util/NormalizedError;->j:Lie/d;
 
-    invoke-static {v0, p1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    iget-object v0, p0, Lcom/supercell/id/util/NormalizedError;->k:Ljava/lang/String;
+
+    iget-object p1, p1, Lcom/supercell/id/util/NormalizedError;->k:Ljava/lang/String;
+
+    invoke-static {v0, p1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -219,7 +219,7 @@
 .method public final hashCode()I
     .locals 3
 
-    iget-object v0, p0, Lcom/supercell/id/util/NormalizedError;->f:Ljava/lang/String;
+    iget-object v0, p0, Lcom/supercell/id/util/NormalizedError;->g:Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -237,7 +237,7 @@
     :goto_0
     mul-int/lit8 v0, v0, 0x1f
 
-    iget-object v2, p0, Lcom/supercell/id/util/NormalizedError;->g:Ljava/lang/String;
+    iget-object v2, p0, Lcom/supercell/id/util/NormalizedError;->h:Ljava/lang/String;
 
     if-eqz v2, :cond_1
 
@@ -255,7 +255,7 @@
 
     mul-int/lit8 v0, v0, 0x1f
 
-    iget-object v2, p0, Lcom/supercell/id/util/NormalizedError;->h:Ljava/lang/String;
+    iget-object v2, p0, Lcom/supercell/id/util/NormalizedError;->i:Ljava/lang/String;
 
     if-eqz v2, :cond_2
 
@@ -273,7 +273,7 @@
 
     mul-int/lit8 v0, v0, 0x1f
 
-    iget-object v2, p0, Lcom/supercell/id/util/NormalizedError;->i:Lie/d;
+    iget-object v2, p0, Lcom/supercell/id/util/NormalizedError;->j:Lie/d;
 
     if-eqz v2, :cond_3
 
@@ -291,7 +291,7 @@
 
     mul-int/lit8 v0, v0, 0x1f
 
-    iget-object v2, p0, Lcom/supercell/id/util/NormalizedError;->j:Ljava/lang/String;
+    iget-object v2, p0, Lcom/supercell/id/util/NormalizedError;->k:Ljava/lang/String;
 
     if-eqz v2, :cond_4
 
@@ -316,7 +316,7 @@
     move-result-object v0
 
     .line 2
-    iget-object v1, p0, Lcom/supercell/id/util/NormalizedError;->f:Ljava/lang/String;
+    iget-object v1, p0, Lcom/supercell/id/util/NormalizedError;->g:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -324,7 +324,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lcom/supercell/id/util/NormalizedError;->g:Ljava/lang/String;
+    iget-object v1, p0, Lcom/supercell/id/util/NormalizedError;->h:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -332,7 +332,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lcom/supercell/id/util/NormalizedError;->h:Ljava/lang/String;
+    iget-object v1, p0, Lcom/supercell/id/util/NormalizedError;->i:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -340,7 +340,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lcom/supercell/id/util/NormalizedError;->i:Lie/d;
+    iget-object v1, p0, Lcom/supercell/id/util/NormalizedError;->j:Lie/d;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -348,12 +348,12 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lcom/supercell/id/util/NormalizedError;->j:Ljava/lang/String;
+    iget-object v1, p0, Lcom/supercell/id/util/NormalizedError;->k:Ljava/lang/String;
 
     const-string v2, ")"
 
     .line 3
-    invoke-static {v0, v1, v2}, Landroid/support/v4/media/b;->b(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, v1, v2}, Landroid/support/v4/media/b;->a(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -365,32 +365,32 @@
 
     const-string p2, "dest"
 
-    invoke-static {p1, p2}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p2}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
-    iget-object p2, p0, Lcom/supercell/id/util/NormalizedError;->f:Ljava/lang/String;
-
-    invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
-
-    .line 2
     iget-object p2, p0, Lcom/supercell/id/util/NormalizedError;->g:Ljava/lang/String;
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
-    .line 3
+    .line 2
     iget-object p2, p0, Lcom/supercell/id/util/NormalizedError;->h:Ljava/lang/String;
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
+    .line 3
+    iget-object p2, p0, Lcom/supercell/id/util/NormalizedError;->i:Ljava/lang/String;
+
+    invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
+
     .line 4
-    iget-object p2, p0, Lcom/supercell/id/util/NormalizedError;->i:Lie/d;
+    iget-object p2, p0, Lcom/supercell/id/util/NormalizedError;->j:Lie/d;
 
     const/4 v0, 0x0
 
     if-eqz p2, :cond_0
 
     .line 5
-    iget-object v1, p2, Lie/d;->f:Ljava/lang/Object;
+    iget-object v1, p2, Lie/d;->g:Ljava/lang/Object;
 
     .line 6
     check-cast v1, Ljava/lang/String;
@@ -406,7 +406,7 @@
     if-eqz p2, :cond_1
 
     .line 7
-    iget-object p2, p2, Lie/d;->g:Ljava/lang/Object;
+    iget-object p2, p2, Lie/d;->h:Ljava/lang/Object;
 
     .line 8
     move-object v0, p2
@@ -417,7 +417,7 @@
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
     .line 9
-    iget-object p2, p0, Lcom/supercell/id/util/NormalizedError;->j:Ljava/lang/String;
+    iget-object p2, p0, Lcom/supercell/id/util/NormalizedError;->k:Ljava/lang/String;
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 

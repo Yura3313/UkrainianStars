@@ -4,16 +4,16 @@
 
 
 # instance fields
-.field public final f:Lb2/i;
+.field public final g:Lb2/h;
     .annotation build Landroidx/annotation/RecentlyNonNull;
     .end annotation
 .end field
 
 
 # direct methods
-.method public constructor <init>(Lb2/i;)V
+.method public constructor <init>(Lb2/h;)V
     .locals 0
-    .param p1    # Lb2/i;
+    .param p1    # Lb2/h;
         .annotation build Landroidx/annotation/RecentlyNonNull;
         .end annotation
     .end param
@@ -22,12 +22,12 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lcom/google/android/gms/common/api/internal/LifecycleCallback;->f:Lb2/i;
+    iput-object p1, p0, Lcom/google/android/gms/common/api/internal/LifecycleCallback;->g:Lb2/h;
 
     return-void
 .end method
 
-.method public static b(Landroid/app/Activity;)Lb2/i;
+.method public static b(Landroid/app/Activity;)Lb2/h;
     .locals 5
     .param p0    # Landroid/app/Activity;
         .annotation build Landroidx/annotation/RecentlyNonNull;
@@ -52,7 +52,7 @@
     const-string v0, "SupportLifecycleFragmentImpl"
 
     .line 4
-    sget-object v1, Lb2/d1;->d0:Ljava/util/WeakHashMap;
+    sget-object v1, Lb2/c1;->e0:Ljava/util/WeakHashMap;
 
     invoke-virtual {v1, p0}, Ljava/util/WeakHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -67,7 +67,7 @@
 
     move-result-object v1
 
-    check-cast v1, Lb2/d1;
+    check-cast v1, Lb2/c1;
 
     if-eqz v1, :cond_0
 
@@ -84,22 +84,22 @@
 
     move-result-object v1
 
-    check-cast v1, Lb2/d1;
+    check-cast v1, Lb2/c1;
     :try_end_0
     .catch Ljava/lang/ClassCastException; {:try_start_0 .. :try_end_0} :catch_0
 
     if-eqz v1, :cond_1
 
     .line 7
-    iget-boolean v2, v1, Landroidx/fragment/app/Fragment;->r:Z
+    iget-boolean v2, v1, Landroidx/fragment/app/Fragment;->s:Z
 
     if-eqz v2, :cond_2
 
     .line 8
     :cond_1
-    new-instance v1, Lb2/d1;
+    new-instance v1, Lb2/c1;
 
-    invoke-direct {v1}, Lb2/d1;-><init>()V
+    invoke-direct {v1}, Lb2/c1;-><init>()V
 
     .line 9
     invoke-virtual {p0}, Landroidx/fragment/app/FragmentActivity;->getSupportFragmentManager()Landroidx/fragment/app/FragmentManager;
@@ -123,7 +123,7 @@
 
     .line 13
     :cond_2
-    sget-object v0, Lb2/d1;->d0:Ljava/util/WeakHashMap;
+    sget-object v0, Lb2/c1;->e0:Ljava/util/WeakHashMap;
 
     new-instance v2, Ljava/lang/ref/WeakReference;
 
@@ -149,7 +149,7 @@
     const-string v0, "LifecycleFragmentImpl"
 
     .line 15
-    sget-object v1, Lb2/c1;->i:Ljava/util/WeakHashMap;
+    sget-object v1, Lb2/b1;->j:Ljava/util/WeakHashMap;
 
     invoke-virtual {v1, p0}, Ljava/util/WeakHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -164,7 +164,7 @@
 
     move-result-object v1
 
-    check-cast v1, Lb2/c1;
+    check-cast v1, Lb2/b1;
 
     if-eqz v1, :cond_4
 
@@ -181,7 +181,7 @@
 
     move-result-object v1
 
-    check-cast v1, Lb2/c1;
+    check-cast v1, Lb2/b1;
     :try_end_1
     .catch Ljava/lang/ClassCastException; {:try_start_1 .. :try_end_1} :catch_1
 
@@ -196,9 +196,9 @@
 
     .line 19
     :cond_5
-    new-instance v1, Lb2/c1;
+    new-instance v1, Lb2/b1;
 
-    invoke-direct {v1}, Lb2/c1;-><init>()V
+    invoke-direct {v1}, Lb2/b1;-><init>()V
 
     .line 20
     invoke-virtual {p0}, Landroid/app/Activity;->getFragmentManager()Landroid/app/FragmentManager;
@@ -217,7 +217,7 @@
 
     .line 21
     :cond_6
-    sget-object v0, Lb2/c1;->i:Ljava/util/WeakHashMap;
+    sget-object v0, Lb2/b1;->j:Ljava/util/WeakHashMap;
 
     new-instance v2, Ljava/lang/ref/WeakReference;
 
@@ -241,7 +241,7 @@
     throw v0
 .end method
 
-.method private static getChimeraLifecycleFragmentImpl(Lb2/h;)Lb2/i;
+.method private static getChimeraLifecycleFragmentImpl(Lb2/g;)Lb2/h;
     .locals 1
     .annotation build Landroidx/annotation/Keep;
     .end annotation
@@ -262,9 +262,9 @@
     .annotation build Landroidx/annotation/RecentlyNonNull;
     .end annotation
 
-    iget-object v0, p0, Lcom/google/android/gms/common/api/internal/LifecycleCallback;->f:Lb2/i;
+    iget-object v0, p0, Lcom/google/android/gms/common/api/internal/LifecycleCallback;->g:Lb2/h;
 
-    invoke-interface {v0}, Lb2/i;->i()Landroid/app/Activity;
+    invoke-interface {v0}, Lb2/h;->i()Landroid/app/Activity;
 
     move-result-object v0
 

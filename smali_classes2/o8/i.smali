@@ -41,10 +41,10 @@
     .line 1
     iget-object p1, p0, Lo8/i;->a:Lo8/h;
 
-    iput-object p2, p1, Lo8/n;->D:Ljava/lang/String;
+    iput-object p2, p1, Lo8/n;->E:Ljava/lang/String;
 
     .line 2
-    iget-object p1, p1, Lo8/y;->u:Le8/s;
+    iget-object p1, p1, Lo8/z;->v:Le8/s;
 
     check-cast p1, Le8/j;
 
@@ -55,7 +55,7 @@
     iget-object p2, p0, Lo8/i;->a:Lo8/h;
 
     .line 3
-    invoke-virtual {p1, p2}, Le8/b;->e(Lo8/y;)V
+    invoke-virtual {p1, p2}, Le8/b;->e(Lo8/z;)V
 
     .line 4
     iget-object p1, p0, Lo8/i;->a:Lo8/h;
@@ -74,10 +74,10 @@
     iget-object v0, p0, Lo8/i;->a:Lo8/h;
 
     .line 2
-    iput p1, v0, Lo8/h;->K:I
+    iput p1, v0, Lo8/h;->L:I
 
     .line 3
-    invoke-virtual {v0}, Lo8/y;->l()V
+    invoke-virtual {v0}, Lo8/z;->l()V
 
     return-void
 .end method

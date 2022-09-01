@@ -239,7 +239,7 @@
     .locals 3
 
     .line 1
-    invoke-static {p1}, Landroidx/savedstate/d;->b(I)I
+    invoke-static {p1}, Le0/f;->c(I)I
 
     .line 2
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
@@ -314,7 +314,7 @@
     .locals 3
 
     .line 1
-    invoke-static {p1}, Landroidx/savedstate/d;->b(I)I
+    invoke-static {p1}, Le0/f;->c(I)I
 
     .line 2
     invoke-virtual {p0}, Landroid/widget/TextView;->getPaint()Landroid/text/TextPaint;
@@ -376,7 +376,7 @@
     .locals 2
 
     .line 1
-    invoke-static {p1}, Landroidx/savedstate/d;->b(I)I
+    invoke-static {p1}, Le0/f;->c(I)I
 
     .line 2
     invoke-virtual {p0}, Landroid/widget/TextView;->getPaint()Landroid/text/TextPaint;

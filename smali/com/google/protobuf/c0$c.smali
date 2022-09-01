@@ -32,7 +32,7 @@
 
 
 # instance fields
-.field public f:Ljava/util/Iterator;
+.field public g:Ljava/util/Iterator;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Iterator<",
@@ -63,7 +63,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lcom/google/protobuf/c0$c;->f:Ljava/util/Iterator;
+    iput-object p1, p0, Lcom/google/protobuf/c0$c;->g:Ljava/util/Iterator;
 
     return-void
 .end method
@@ -73,7 +73,7 @@
 .method public final hasNext()Z
     .locals 1
 
-    iget-object v0, p0, Lcom/google/protobuf/c0$c;->f:Ljava/util/Iterator;
+    iget-object v0, p0, Lcom/google/protobuf/c0$c;->g:Ljava/util/Iterator;
 
     invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
 
@@ -86,7 +86,7 @@
     .locals 3
 
     .line 1
-    iget-object v0, p0, Lcom/google/protobuf/c0$c;->f:Ljava/util/Iterator;
+    iget-object v0, p0, Lcom/google/protobuf/c0$c;->g:Ljava/util/Iterator;
 
     invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
@@ -119,7 +119,7 @@
 .method public final remove()V
     .locals 1
 
-    iget-object v0, p0, Lcom/google/protobuf/c0$c;->f:Ljava/util/Iterator;
+    iget-object v0, p0, Lcom/google/protobuf/c0$c;->g:Ljava/util/Iterator;
 
     invoke-interface {v0}, Ljava/util/Iterator;->remove()V
 

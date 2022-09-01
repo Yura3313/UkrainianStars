@@ -1,5 +1,5 @@
 .class public final Lwc/m;
-.super Lse/h;
+.super Lse/i;
 .source "BaseFragment.kt"
 
 # interfaces
@@ -9,32 +9,32 @@
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/l<",
         "Landroid/view/View;",
-        "Lie/h;",
+        "Lie/i;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic f:Landroid/view/View;
+.field public final synthetic g:Landroid/view/View;
 
-.field public final synthetic g:Lcom/supercell/id/ui/BaseFragment;
+.field public final synthetic h:Lcom/supercell/id/ui/BaseFragment;
 
 
 # direct methods
 .method public constructor <init>(Landroid/view/View;Lcom/supercell/id/ui/BaseFragment;)V
     .locals 0
 
-    iput-object p1, p0, Lwc/m;->f:Landroid/view/View;
+    iput-object p1, p0, Lwc/m;->g:Landroid/view/View;
 
-    iput-object p2, p0, Lwc/m;->g:Lcom/supercell/id/ui/BaseFragment;
+    iput-object p2, p0, Lwc/m;->h:Lcom/supercell/id/ui/BaseFragment;
 
     const/4 p1, 0x1
 
-    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -50,10 +50,10 @@
     const-string v0, "it"
 
     .line 2
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 3
-    iget-object p1, p0, Lwc/m;->g:Lcom/supercell/id/ui/BaseFragment;
+    iget-object p1, p0, Lwc/m;->h:Lcom/supercell/id/ui/BaseFragment;
 
     invoke-virtual {p1}, Landroidx/fragment/app/Fragment;->N()Z
 
@@ -65,9 +65,9 @@
 
     .line 4
     :cond_0
-    iget-object p1, p0, Lwc/m;->g:Lcom/supercell/id/ui/BaseFragment;
+    iget-object p1, p0, Lwc/m;->h:Lcom/supercell/id/ui/BaseFragment;
 
-    invoke-static {p1}, Lcom/android/billingclient/api/c0;->e(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
+    invoke-static {p1}, Lcom/android/billingclient/api/b0;->f(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
 
     move-result-object p1
 
@@ -126,12 +126,12 @@
 
     .line 14
     :cond_1
-    iget-object p1, p0, Lwc/m;->f:Landroid/view/View;
+    iget-object p1, p0, Lwc/m;->g:Landroid/view/View;
 
     invoke-virtual {p1}, Landroid/view/View;->bringToFront()V
 
     .line 15
-    iget-object p1, p0, Lwc/m;->f:Landroid/view/View;
+    iget-object p1, p0, Lwc/m;->g:Landroid/view/View;
 
     .line 16
     sget-object v7, Lf0/r;->a:Ljava/util/WeakHashMap;
@@ -159,7 +159,7 @@
 
     .line 18
     :goto_0
-    iget-object v4, p0, Lwc/m;->f:Landroid/view/View;
+    iget-object v4, p0, Lwc/m;->g:Landroid/view/View;
 
     invoke-virtual {v4}, Landroid/view/View;->getWidth()I
 
@@ -172,7 +172,7 @@
     invoke-virtual {v4, p1}, Landroid/view/View;->setTranslationX(F)V
 
     .line 19
-    iget-object p1, p0, Lwc/m;->f:Landroid/view/View;
+    iget-object p1, p0, Lwc/m;->g:Landroid/view/View;
 
     invoke-virtual {p1, v6}, Landroid/view/View;->setAlpha(F)V
 
@@ -184,13 +184,13 @@
     if-lt p1, v4, :cond_4
 
     .line 21
-    iget-object v6, p0, Lwc/m;->f:Landroid/view/View;
+    iget-object v6, p0, Lwc/m;->g:Landroid/view/View;
 
     invoke-virtual {v6, v5}, Landroid/view/View;->setElevation(F)V
 
     .line 22
     :cond_4
-    iget-object v6, p0, Lwc/m;->f:Landroid/view/View;
+    iget-object v6, p0, Lwc/m;->g:Landroid/view/View;
 
     invoke-virtual {v6}, Landroid/view/View;->animate()Landroid/view/ViewPropertyAnimator;
 
@@ -243,7 +243,7 @@
 
     .line 31
     :goto_1
-    sget-object p1, Lie/h;->a:Lie/h;
+    sget-object p1, Lie/i;->a:Lie/i;
 
     return-object p1
 .end method

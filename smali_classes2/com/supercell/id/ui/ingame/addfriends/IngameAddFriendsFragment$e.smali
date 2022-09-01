@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field public final synthetic f:Lcom/supercell/id/ui/ingame/addfriends/IngameAddFriendsFragment;
+.field public final synthetic g:Lcom/supercell/id/ui/ingame/addfriends/IngameAddFriendsFragment;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/id/ui/ingame/addfriends/IngameAddFriendsFragment;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/ui/ingame/addfriends/IngameAddFriendsFragment$e;->f:Lcom/supercell/id/ui/ingame/addfriends/IngameAddFriendsFragment;
+    iput-object p1, p0, Lcom/supercell/id/ui/ingame/addfriends/IngameAddFriendsFragment$e;->g:Lcom/supercell/id/ui/ingame/addfriends/IngameAddFriendsFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -45,7 +45,7 @@
     move-result-object v0
 
     .line 2
-    iget-object v0, v0, Lae/u;->m:La5/d0;
+    iget-object v0, v0, Lae/u;->m:Lpe/a;
 
     const-string v1, "In-game - Invite Friends"
 
@@ -56,12 +56,12 @@
     const/16 v4, 0x18
 
     .line 3
-    invoke-static {v0, v1, v2, v3, v4}, La5/d0;->a(La5/d0;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;I)V
+    invoke-static {v0, v1, v2, v3, v4}, Lpe/a;->e(Lpe/a;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;I)V
 
     .line 4
-    iget-object v0, p0, Lcom/supercell/id/ui/ingame/addfriends/IngameAddFriendsFragment$e;->f:Lcom/supercell/id/ui/ingame/addfriends/IngameAddFriendsFragment;
+    iget-object v0, p0, Lcom/supercell/id/ui/ingame/addfriends/IngameAddFriendsFragment$e;->g:Lcom/supercell/id/ui/ingame/addfriends/IngameAddFriendsFragment;
 
-    invoke-static {v0}, Lcom/android/billingclient/api/c0;->e(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
+    invoke-static {v0}, Lcom/android/billingclient/api/b0;->f(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
 
     move-result-object v0
 
@@ -69,10 +69,10 @@
 
     const-string v1, "it"
 
-    invoke-static {p1, v1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v1}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 5
-    sget-object v1, Lwc/x;->x0:Lwc/x$a;
+    sget-object v1, Lwc/x;->y0:Lwc/x$a;
 
     invoke-static {p1}, Lae/z2;->b(Landroid/view/View;)Landroid/graphics/Rect;
 
@@ -86,9 +86,9 @@
 
     const-string v4, "resources"
 
-    invoke-static {v3, v4}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v3, v4}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-static {v3}, Lcom/android/billingclient/api/c0;->k(Landroid/content/res/Resources;)Z
+    invoke-static {v3}, Lcom/android/billingclient/api/b0;->l(Landroid/content/res/Resources;)Z
 
     move-result v3
 
@@ -96,7 +96,7 @@
 
     move-result-object p1
 
-    sget-object v1, Lcom/supercell/id/ui/MainActivity;->s:Ljava/lang/ref/WeakReference;
+    sget-object v1, Lcom/supercell/id/ui/MainActivity;->t:Ljava/lang/ref/WeakReference;
 
     const-string v1, "popupDialog"
 

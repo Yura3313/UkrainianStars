@@ -32,15 +32,15 @@
 
 
 # instance fields
-.field public f:Ljava/lang/String;
-
-.field public g:Ljava/lang/Long;
+.field public g:Ljava/lang/String;
 
 .field public h:Ljava/lang/Long;
 
 .field public i:Ljava/lang/Long;
 
 .field public j:Ljava/lang/Long;
+
+.field public k:Ljava/lang/Long;
 
 
 # direct methods
@@ -65,16 +65,16 @@
     const/4 v0, 0x0
 
     .line 2
-    iput-object v0, p0, Lcom/google/android/material/datepicker/RangeDateSelector;->g:Ljava/lang/Long;
-
-    .line 3
     iput-object v0, p0, Lcom/google/android/material/datepicker/RangeDateSelector;->h:Ljava/lang/Long;
 
-    .line 4
+    .line 3
     iput-object v0, p0, Lcom/google/android/material/datepicker/RangeDateSelector;->i:Ljava/lang/Long;
 
-    .line 5
+    .line 4
     iput-object v0, p0, Lcom/google/android/material/datepicker/RangeDateSelector;->j:Ljava/lang/Long;
+
+    .line 5
+    iput-object v0, p0, Lcom/google/android/material/datepicker/RangeDateSelector;->k:Ljava/lang/Long;
 
     return-void
 .end method
@@ -83,13 +83,13 @@
     .locals 6
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/datepicker/RangeDateSelector;->i:Ljava/lang/Long;
+    iget-object v0, p0, Lcom/google/android/material/datepicker/RangeDateSelector;->j:Ljava/lang/Long;
 
     const-string v1, " "
 
     if-eqz v0, :cond_2
 
-    iget-object v2, p0, Lcom/google/android/material/datepicker/RangeDateSelector;->j:Ljava/lang/Long;
+    iget-object v2, p0, Lcom/google/android/material/datepicker/RangeDateSelector;->k:Ljava/lang/Long;
 
     if-nez v2, :cond_0
 
@@ -101,7 +101,7 @@
 
     move-result-wide v2
 
-    iget-object v0, p0, Lcom/google/android/material/datepicker/RangeDateSelector;->j:Ljava/lang/Long;
+    iget-object v0, p0, Lcom/google/android/material/datepicker/RangeDateSelector;->k:Ljava/lang/Long;
 
     invoke-virtual {v0}, Ljava/lang/Long;->longValue()J
 
@@ -114,14 +114,14 @@
     if-eqz v0, :cond_1
 
     .line 3
-    iget-object p1, p0, Lcom/google/android/material/datepicker/RangeDateSelector;->i:Ljava/lang/Long;
+    iget-object p1, p0, Lcom/google/android/material/datepicker/RangeDateSelector;->j:Ljava/lang/Long;
 
-    iput-object p1, p0, Lcom/google/android/material/datepicker/RangeDateSelector;->g:Ljava/lang/Long;
+    iput-object p1, p0, Lcom/google/android/material/datepicker/RangeDateSelector;->h:Ljava/lang/Long;
 
     .line 4
-    iget-object p2, p0, Lcom/google/android/material/datepicker/RangeDateSelector;->j:Ljava/lang/Long;
+    iget-object p2, p0, Lcom/google/android/material/datepicker/RangeDateSelector;->k:Ljava/lang/Long;
 
-    iput-object p2, p0, Lcom/google/android/material/datepicker/RangeDateSelector;->h:Ljava/lang/Long;
+    iput-object p2, p0, Lcom/google/android/material/datepicker/RangeDateSelector;->i:Ljava/lang/Long;
 
     .line 5
     new-instance p0, Le0/c;
@@ -135,7 +135,7 @@
 
     .line 7
     :cond_1
-    iget-object p0, p0, Lcom/google/android/material/datepicker/RangeDateSelector;->f:Ljava/lang/String;
+    iget-object p0, p0, Lcom/google/android/material/datepicker/RangeDateSelector;->g:Ljava/lang/String;
 
     invoke-virtual {p1, p0}, Lcom/google/android/material/textfield/TextInputLayout;->setError(Ljava/lang/CharSequence;)V
 
@@ -158,7 +158,7 @@
 
     if-eqz v0, :cond_3
 
-    iget-object p0, p0, Lcom/google/android/material/datepicker/RangeDateSelector;->f:Ljava/lang/String;
+    iget-object p0, p0, Lcom/google/android/material/datepicker/RangeDateSelector;->g:Ljava/lang/String;
 
     invoke-virtual {p1}, Lcom/google/android/material/textfield/TextInputLayout;->getError()Ljava/lang/CharSequence;
 
@@ -261,15 +261,15 @@
     return p1
 .end method
 
-.method public final P1()Z
+.method public final O1()Z
     .locals 4
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/datepicker/RangeDateSelector;->g:Ljava/lang/Long;
+    iget-object v0, p0, Lcom/google/android/material/datepicker/RangeDateSelector;->h:Ljava/lang/Long;
 
     if-eqz v0, :cond_0
 
-    iget-object v1, p0, Lcom/google/android/material/datepicker/RangeDateSelector;->h:Ljava/lang/Long;
+    iget-object v1, p0, Lcom/google/android/material/datepicker/RangeDateSelector;->i:Ljava/lang/Long;
 
     if-eqz v1, :cond_0
 
@@ -278,7 +278,7 @@
 
     move-result-wide v0
 
-    iget-object v2, p0, Lcom/google/android/material/datepicker/RangeDateSelector;->h:Ljava/lang/Long;
+    iget-object v2, p0, Lcom/google/android/material/datepicker/RangeDateSelector;->i:Ljava/lang/Long;
 
     invoke-virtual {v2}, Ljava/lang/Long;->longValue()J
 
@@ -301,7 +301,7 @@
     return v0
 .end method
 
-.method public final Y1()Ljava/util/Collection;
+.method public final X1()Ljava/util/Collection;
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -318,7 +318,7 @@
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     .line 2
-    iget-object v1, p0, Lcom/google/android/material/datepicker/RangeDateSelector;->g:Ljava/lang/Long;
+    iget-object v1, p0, Lcom/google/android/material/datepicker/RangeDateSelector;->h:Ljava/lang/Long;
 
     if-eqz v1, :cond_0
 
@@ -327,7 +327,7 @@
 
     .line 4
     :cond_0
-    iget-object v1, p0, Lcom/google/android/material/datepicker/RangeDateSelector;->h:Ljava/lang/Long;
+    iget-object v1, p0, Lcom/google/android/material/datepicker/RangeDateSelector;->i:Ljava/lang/Long;
 
     if-eqz v1, :cond_1
 
@@ -338,14 +338,14 @@
     return-object v0
 .end method
 
-.method public final a2()Ljava/lang/Object;
+.method public final Z1()Ljava/lang/Object;
     .locals 3
 
     new-instance v0, Le0/c;
 
-    iget-object v1, p0, Lcom/google/android/material/datepicker/RangeDateSelector;->g:Ljava/lang/Long;
+    iget-object v1, p0, Lcom/google/android/material/datepicker/RangeDateSelector;->h:Ljava/lang/Long;
 
-    iget-object v2, p0, Lcom/google/android/material/datepicker/RangeDateSelector;->h:Ljava/lang/Long;
+    iget-object v2, p0, Lcom/google/android/material/datepicker/RangeDateSelector;->i:Ljava/lang/Long;
 
     invoke-direct {v0, v1, v2}, Le0/c;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
 
@@ -361,11 +361,11 @@
     move-result-object p1
 
     .line 2
-    iget-object v0, p0, Lcom/google/android/material/datepicker/RangeDateSelector;->g:Ljava/lang/Long;
+    iget-object v0, p0, Lcom/google/android/material/datepicker/RangeDateSelector;->h:Ljava/lang/Long;
 
     if-nez v0, :cond_0
 
-    iget-object v1, p0, Lcom/google/android/material/datepicker/RangeDateSelector;->h:Ljava/lang/Long;
+    iget-object v1, p0, Lcom/google/android/material/datepicker/RangeDateSelector;->i:Ljava/lang/Long;
 
     if-nez v1, :cond_0
 
@@ -380,7 +380,7 @@
 
     .line 4
     :cond_0
-    iget-object v1, p0, Lcom/google/android/material/datepicker/RangeDateSelector;->h:Ljava/lang/Long;
+    iget-object v1, p0, Lcom/google/android/material/datepicker/RangeDateSelector;->i:Ljava/lang/Long;
 
     const/4 v2, 0x0
 
@@ -652,11 +652,11 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/datepicker/RangeDateSelector;->g:Ljava/lang/Long;
+    iget-object v0, p0, Lcom/google/android/material/datepicker/RangeDateSelector;->h:Ljava/lang/Long;
 
     if-eqz v0, :cond_1
 
-    iget-object v0, p0, Lcom/google/android/material/datepicker/RangeDateSelector;->h:Ljava/lang/Long;
+    iget-object v0, p0, Lcom/google/android/material/datepicker/RangeDateSelector;->i:Ljava/lang/Long;
 
     if-nez v0, :cond_0
 
@@ -671,9 +671,9 @@
     .line 3
     new-instance v1, Le0/c;
 
-    iget-object v2, p0, Lcom/google/android/material/datepicker/RangeDateSelector;->g:Ljava/lang/Long;
+    iget-object v2, p0, Lcom/google/android/material/datepicker/RangeDateSelector;->h:Ljava/lang/Long;
 
-    iget-object v3, p0, Lcom/google/android/material/datepicker/RangeDateSelector;->h:Ljava/lang/Long;
+    iget-object v3, p0, Lcom/google/android/material/datepicker/RangeDateSelector;->i:Ljava/lang/Long;
 
     invoke-direct {v1, v2, v3}, Le0/c;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
 
@@ -760,7 +760,7 @@
     move-result-object v14
 
     .line 8
-    invoke-static {}, Lcom/google/android/material/internal/c;->a()Z
+    invoke-static {}, Lcom/google/android/material/internal/c;->i()Z
 
     move-result v0
 
@@ -786,7 +786,7 @@
 
     move-result-object v0
 
-    iput-object v0, v9, Lcom/google/android/material/datepicker/RangeDateSelector;->f:Ljava/lang/String;
+    iput-object v0, v9, Lcom/google/android/material/datepicker/RangeDateSelector;->g:Ljava/lang/String;
 
     .line 12
     invoke-static {}, Lcom/google/android/material/datepicker/b0;->e()Ljava/text/SimpleDateFormat;
@@ -794,7 +794,7 @@
     move-result-object v15
 
     .line 13
-    iget-object v0, v9, Lcom/google/android/material/datepicker/RangeDateSelector;->g:Ljava/lang/Long;
+    iget-object v0, v9, Lcom/google/android/material/datepicker/RangeDateSelector;->h:Ljava/lang/Long;
 
     if-eqz v0, :cond_1
 
@@ -806,13 +806,13 @@
     invoke-virtual {v13, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 15
-    iget-object v0, v9, Lcom/google/android/material/datepicker/RangeDateSelector;->g:Ljava/lang/Long;
+    iget-object v0, v9, Lcom/google/android/material/datepicker/RangeDateSelector;->h:Ljava/lang/Long;
 
-    iput-object v0, v9, Lcom/google/android/material/datepicker/RangeDateSelector;->i:Ljava/lang/Long;
+    iput-object v0, v9, Lcom/google/android/material/datepicker/RangeDateSelector;->j:Ljava/lang/Long;
 
     .line 16
     :cond_1
-    iget-object v0, v9, Lcom/google/android/material/datepicker/RangeDateSelector;->h:Ljava/lang/Long;
+    iget-object v0, v9, Lcom/google/android/material/datepicker/RangeDateSelector;->i:Ljava/lang/Long;
 
     if-eqz v0, :cond_2
 
@@ -824,9 +824,9 @@
     invoke-virtual {v14, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 18
-    iget-object v0, v9, Lcom/google/android/material/datepicker/RangeDateSelector;->h:Ljava/lang/Long;
+    iget-object v0, v9, Lcom/google/android/material/datepicker/RangeDateSelector;->i:Ljava/lang/Long;
 
-    iput-object v0, v9, Lcom/google/android/material/datepicker/RangeDateSelector;->j:Ljava/lang/Long;
+    iput-object v0, v9, Lcom/google/android/material/datepicker/RangeDateSelector;->k:Ljava/lang/Long;
 
     .line 19
     :cond_2
@@ -893,7 +893,7 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/datepicker/RangeDateSelector;->g:Ljava/lang/Long;
+    iget-object v0, p0, Lcom/google/android/material/datepicker/RangeDateSelector;->h:Ljava/lang/Long;
 
     if-nez v0, :cond_0
 
@@ -902,13 +902,13 @@
 
     move-result-object p1
 
-    iput-object p1, p0, Lcom/google/android/material/datepicker/RangeDateSelector;->g:Ljava/lang/Long;
+    iput-object p1, p0, Lcom/google/android/material/datepicker/RangeDateSelector;->h:Ljava/lang/Long;
 
     goto :goto_0
 
     .line 3
     :cond_0
-    iget-object v1, p0, Lcom/google/android/material/datepicker/RangeDateSelector;->h:Ljava/lang/Long;
+    iget-object v1, p0, Lcom/google/android/material/datepicker/RangeDateSelector;->i:Ljava/lang/Long;
 
     if-nez v1, :cond_1
 
@@ -927,7 +927,7 @@
 
     move-result-object p1
 
-    iput-object p1, p0, Lcom/google/android/material/datepicker/RangeDateSelector;->h:Ljava/lang/Long;
+    iput-object p1, p0, Lcom/google/android/material/datepicker/RangeDateSelector;->i:Ljava/lang/Long;
 
     goto :goto_0
 
@@ -935,14 +935,14 @@
     const/4 v0, 0x0
 
     .line 5
-    iput-object v0, p0, Lcom/google/android/material/datepicker/RangeDateSelector;->h:Ljava/lang/Long;
+    iput-object v0, p0, Lcom/google/android/material/datepicker/RangeDateSelector;->i:Ljava/lang/Long;
 
     .line 6
     invoke-static {p1, p2}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     move-result-object p1
 
-    iput-object p1, p0, Lcom/google/android/material/datepicker/RangeDateSelector;->g:Ljava/lang/Long;
+    iput-object p1, p0, Lcom/google/android/material/datepicker/RangeDateSelector;->h:Ljava/lang/Long;
 
     :goto_0
     return-void
@@ -952,12 +952,12 @@
     .locals 0
 
     .line 1
-    iget-object p2, p0, Lcom/google/android/material/datepicker/RangeDateSelector;->g:Ljava/lang/Long;
+    iget-object p2, p0, Lcom/google/android/material/datepicker/RangeDateSelector;->h:Ljava/lang/Long;
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeValue(Ljava/lang/Object;)V
 
     .line 2
-    iget-object p2, p0, Lcom/google/android/material/datepicker/RangeDateSelector;->h:Ljava/lang/Long;
+    iget-object p2, p0, Lcom/google/android/material/datepicker/RangeDateSelector;->i:Ljava/lang/Long;
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeValue(Ljava/lang/Object;)V
 

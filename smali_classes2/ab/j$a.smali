@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field public final synthetic f:Lab/j;
+.field public final synthetic g:Lab/j;
 
 
 # direct methods
 .method public constructor <init>(Lab/j;)V
     .locals 0
 
-    iput-object p1, p0, Lab/j$a;->f:Lab/j;
+    iput-object p1, p0, Lab/j$a;->g:Lab/j;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -45,10 +45,10 @@
     check-cast p1, Ljava/lang/String;
 
     .line 2
-    iget-object v0, p0, Lab/j$a;->f:Lab/j;
+    iget-object v0, p0, Lab/j$a;->g:Lab/j;
 
     .line 3
-    iget-object v0, v0, Landroidx/fragment/app/Fragment;->A:Landroidx/fragment/app/Fragment;
+    iget-object v0, v0, Landroidx/fragment/app/Fragment;->B:Landroidx/fragment/app/Fragment;
 
     .line 4
     check-cast v0, Loa/c;

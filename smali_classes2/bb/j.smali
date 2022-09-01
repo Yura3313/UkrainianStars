@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field public f:Landroid/net/Uri;
+.field public g:Landroid/net/Uri;
 
 
 # direct methods
@@ -18,7 +18,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lbb/j;->f:Landroid/net/Uri;
+    iput-object p1, p0, Lbb/j;->g:Landroid/net/Uri;
 
     return-void
 .end method
@@ -38,7 +38,7 @@
     .end annotation
 
     .line 1
-    sget-object v0, Lcom/helpshift/util/u;->b:Landroid/content/Context;
+    sget-object v0, Lcom/helpshift/util/t;->b:Landroid/content/Context;
 
     .line 2
     invoke-virtual {v0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
@@ -47,7 +47,7 @@
 
     .line 3
     :try_start_0
-    iget-object v1, p0, Lbb/j;->f:Landroid/net/Uri;
+    iget-object v1, p0, Lbb/j;->g:Landroid/net/Uri;
 
     invoke-static {v0, v1}, Landroid/graphics/ImageDecoder;->createSource(Landroid/content/ContentResolver;Landroid/net/Uri;)Landroid/graphics/ImageDecoder$Source;
 
@@ -69,7 +69,7 @@
 
     invoke-virtual {p2, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v2, p0, Lbb/j;->f:Landroid/net/Uri;
+    iget-object v2, p0, Lbb/j;->g:Landroid/net/Uri;
 
     invoke-virtual {p2, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -80,7 +80,7 @@
     const/4 v2, 0x0
 
     .line 6
-    invoke-static {p1, p2, v2, v2}, Landroidx/savedstate/d;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {p1, p2, v2, v2}, Le5/i;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
 
     .line 7
     invoke-static {v0, v1}, Landroid/graphics/ImageDecoder;->decodeBitmap(Landroid/graphics/ImageDecoder$Source;Landroid/graphics/ImageDecoder$OnHeaderDecodedListener;)Landroid/graphics/Bitmap;
@@ -102,7 +102,7 @@
     move-result-object p1
 
     .line 9
-    iget-object p2, p0, Lbb/j;->f:Landroid/net/Uri;
+    iget-object p2, p0, Lbb/j;->g:Landroid/net/Uri;
 
     invoke-virtual {p2}, Landroid/net/Uri;->toString()Ljava/lang/String;
 
@@ -123,7 +123,7 @@
 .method public final b()Ljava/lang/String;
     .locals 1
 
-    iget-object v0, p0, Lbb/j;->f:Landroid/net/Uri;
+    iget-object v0, p0, Lbb/j;->g:Landroid/net/Uri;
 
     invoke-virtual {v0}, Landroid/net/Uri;->toString()Ljava/lang/String;
 

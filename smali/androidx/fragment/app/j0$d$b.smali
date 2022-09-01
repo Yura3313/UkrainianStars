@@ -23,13 +23,13 @@
 
 
 # static fields
-.field public static final enum f:Landroidx/fragment/app/j0$d$b;
-
 .field public static final enum g:Landroidx/fragment/app/j0$d$b;
 
 .field public static final enum h:Landroidx/fragment/app/j0$d$b;
 
-.field public static final synthetic i:[Landroidx/fragment/app/j0$d$b;
+.field public static final enum i:Landroidx/fragment/app/j0$d$b;
+
+.field public static final synthetic j:[Landroidx/fragment/app/j0$d$b;
 
 
 # direct methods
@@ -45,7 +45,7 @@
 
     invoke-direct {v0, v1, v2}, Landroidx/fragment/app/j0$d$b;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Landroidx/fragment/app/j0$d$b;->f:Landroidx/fragment/app/j0$d$b;
+    sput-object v0, Landroidx/fragment/app/j0$d$b;->g:Landroidx/fragment/app/j0$d$b;
 
     .line 2
     new-instance v1, Landroidx/fragment/app/j0$d$b;
@@ -56,7 +56,7 @@
 
     invoke-direct {v1, v3, v4}, Landroidx/fragment/app/j0$d$b;-><init>(Ljava/lang/String;I)V
 
-    sput-object v1, Landroidx/fragment/app/j0$d$b;->g:Landroidx/fragment/app/j0$d$b;
+    sput-object v1, Landroidx/fragment/app/j0$d$b;->h:Landroidx/fragment/app/j0$d$b;
 
     .line 3
     new-instance v3, Landroidx/fragment/app/j0$d$b;
@@ -67,7 +67,7 @@
 
     invoke-direct {v3, v5, v6}, Landroidx/fragment/app/j0$d$b;-><init>(Ljava/lang/String;I)V
 
-    sput-object v3, Landroidx/fragment/app/j0$d$b;->h:Landroidx/fragment/app/j0$d$b;
+    sput-object v3, Landroidx/fragment/app/j0$d$b;->i:Landroidx/fragment/app/j0$d$b;
 
     const/4 v5, 0x3
 
@@ -80,7 +80,7 @@
     aput-object v3, v5, v6
 
     .line 4
-    sput-object v5, Landroidx/fragment/app/j0$d$b;->i:[Landroidx/fragment/app/j0$d$b;
+    sput-object v5, Landroidx/fragment/app/j0$d$b;->j:[Landroidx/fragment/app/j0$d$b;
 
     return-void
 .end method
@@ -115,7 +115,7 @@
 .method public static values()[Landroidx/fragment/app/j0$d$b;
     .locals 1
 
-    sget-object v0, Landroidx/fragment/app/j0$d$b;->i:[Landroidx/fragment/app/j0$d$b;
+    sget-object v0, Landroidx/fragment/app/j0$d$b;->j:[Landroidx/fragment/app/j0$d$b;
 
     invoke-virtual {v0}, [Landroidx/fragment/app/j0$d$b;->clone()Ljava/lang/Object;
 

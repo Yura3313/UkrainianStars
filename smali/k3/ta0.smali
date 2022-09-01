@@ -1,45 +1,66 @@
-.class public final synthetic Lk3/ta0;
+.class public final Lk3/ta0;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lk3/zc0;
+.implements Lk3/cd0;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Lk3/cd0<",
+        "Lk3/ra0;",
+        ">;"
+    }
+.end annotation
 
 
 # instance fields
-.field public final a:Lk3/sa0;
+.field public final a:Lk3/jm0;
+
+.field public final b:Landroid/content/Context;
 
 
 # direct methods
-.method public constructor <init>(Lk3/sa0;)V
+.method public constructor <init>(Lk3/jm0;Landroid/content/Context;)V
     .locals 0
 
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lk3/ta0;->a:Lk3/sa0;
+    .line 2
+    iput-object p1, p0, Lk3/ta0;->a:Lk3/jm0;
+
+    .line 3
+    iput-object p2, p0, Lk3/ta0;->b:Landroid/content/Context;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final b(Ljava/lang/Object;)V
+.method public final a()Lk3/hm0;
     .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lk3/hm0<",
+            "Lk3/ra0;",
+            ">;"
+        }
+    .end annotation
 
-    iget-object v0, p0, Lk3/ta0;->a:Lk3/sa0;
+    iget-object v0, p0, Lk3/ta0;->a:Lk3/jm0;
 
-    check-cast p1, Landroid/os/Bundle;
+    new-instance v1, Lk3/sa0;
 
-    .line 1
-    iget-object v0, v0, Lk3/sa0;->a:Lk3/gf0;
+    invoke-direct {v1, p0}, Lk3/sa0;-><init>(Lk3/ta0;)V
 
-    .line 2
-    iget-object v0, v0, Lk3/gf0;->a:Ljava/lang/String;
+    invoke-interface {v0, v1}, Lk3/jm0;->c(Ljava/util/concurrent/Callable;)Lk3/hm0;
 
-    const-string v1, "key_schema"
+    move-result-object v0
 
-    .line 3
-    invoke-virtual {p1, v1, v0}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
-
-    return-void
+    return-object v0
 .end method

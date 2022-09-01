@@ -6,9 +6,9 @@
 
 
 # instance fields
-.field public final f:Lcom/google/android/play/core/assetpacks/t;
+.field public final g:Lcom/google/android/play/core/assetpacks/t;
 
-.field public final g:Lcom/google/android/play/core/assetpacks/AssetPackState;
+.field public final h:Lcom/google/android/play/core/assetpacks/AssetPackState;
 
 
 # direct methods
@@ -17,9 +17,9 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lcom/google/android/play/core/assetpacks/q;->f:Lcom/google/android/play/core/assetpacks/t;
+    iput-object p1, p0, Lcom/google/android/play/core/assetpacks/q;->g:Lcom/google/android/play/core/assetpacks/t;
 
-    iput-object p2, p0, Lcom/google/android/play/core/assetpacks/q;->g:Lcom/google/android/play/core/assetpacks/AssetPackState;
+    iput-object p2, p0, Lcom/google/android/play/core/assetpacks/q;->h:Lcom/google/android/play/core/assetpacks/AssetPackState;
 
     return-void
 .end method
@@ -29,9 +29,9 @@
 .method public final run()V
     .locals 2
 
-    iget-object v0, p0, Lcom/google/android/play/core/assetpacks/q;->f:Lcom/google/android/play/core/assetpacks/t;
+    iget-object v0, p0, Lcom/google/android/play/core/assetpacks/q;->g:Lcom/google/android/play/core/assetpacks/t;
 
-    iget-object v1, p0, Lcom/google/android/play/core/assetpacks/q;->g:Lcom/google/android/play/core/assetpacks/AssetPackState;
+    iget-object v1, p0, Lcom/google/android/play/core/assetpacks/q;->h:Lcom/google/android/play/core/assetpacks/AssetPackState;
 
     invoke-virtual {v0, v1}, Lb5/c;->b(Ljava/lang/Object;)V
 

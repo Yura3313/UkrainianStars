@@ -253,7 +253,7 @@
     sget-object v0, Lk3/tc;->b:Lk3/tc;
 
     .line 4
-    invoke-static {}, Lk3/j6;->m()Z
+    invoke-static {}, Lcom/google/android/gms/ads/a;->k()Z
 
     .line 5
     invoke-static {p1}, Landroid/webkit/WebSettings;->getDefaultUserAgent(Landroid/content/Context;)Ljava/lang/String;
@@ -325,7 +325,7 @@
 
     .line 14
     :cond_3
-    invoke-static {}, Lk3/j6;->m()Z
+    invoke-static {}, Lcom/google/android/gms/ads/a;->k()Z
 
     return-void
 .end method

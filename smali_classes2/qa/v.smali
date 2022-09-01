@@ -34,7 +34,7 @@
     check-cast v0, Lqa/t;
 
     .line 2
-    iput p1, v0, Lqa/t;->o0:I
+    iput p1, v0, Lqa/t;->p0:I
 
     .line 3
     new-instance v1, Landroid/os/Bundle;
@@ -49,7 +49,7 @@
     invoke-virtual {v1, v3, v2}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
 
     .line 5
-    iget-object v2, v0, Lqa/t;->n0:Ljava/lang/String;
+    iget-object v2, v0, Lqa/t;->o0:Ljava/lang/String;
 
     const-string v3, "key_refers_id"
 
@@ -61,7 +61,7 @@
     invoke-virtual {v1, v2, p1}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
 
     .line 7
-    iget-object p1, v0, Landroidx/fragment/app/Fragment;->A:Landroidx/fragment/app/Fragment;
+    iget-object p1, v0, Landroidx/fragment/app/Fragment;->B:Landroidx/fragment/app/Fragment;
 
     .line 8
     check-cast p1, Lab/p;

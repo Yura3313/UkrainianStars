@@ -1,5 +1,5 @@
 .class public final Lcom/supercell/id/ui/tutorial/TutorialFragment$d$a;
-.super Lse/h;
+.super Lse/i;
 .source "TutorialFragment.kt"
 
 # interfaces
@@ -18,7 +18,7 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/a<",
         "Lxd/b;",
         ">;"
@@ -27,7 +27,7 @@
 
 
 # static fields
-.field public static final f:Lcom/supercell/id/ui/tutorial/TutorialFragment$d$a;
+.field public static final g:Lcom/supercell/id/ui/tutorial/TutorialFragment$d$a;
 
 
 # direct methods
@@ -38,7 +38,7 @@
 
     invoke-direct {v0}, Lcom/supercell/id/ui/tutorial/TutorialFragment$d$a;-><init>()V
 
-    sput-object v0, Lcom/supercell/id/ui/tutorial/TutorialFragment$d$a;->f:Lcom/supercell/id/ui/tutorial/TutorialFragment$d$a;
+    sput-object v0, Lcom/supercell/id/ui/tutorial/TutorialFragment$d$a;->g:Lcom/supercell/id/ui/tutorial/TutorialFragment$d$a;
 
     return-void
 .end method
@@ -48,7 +48,7 @@
 
     const/4 v0, 0x0
 
-    invoke-direct {p0, v0}, Lse/h;-><init>(I)V
+    invoke-direct {p0, v0}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -59,7 +59,7 @@
     .locals 4
 
     .line 1
-    sget-object v0, Lxd/b;->f0:Lxd/b$a;
+    sget-object v0, Lxd/b;->g0:Lxd/b$a;
 
     .line 2
     new-instance v0, Lxd/b;
@@ -67,7 +67,7 @@
     invoke-direct {v0}, Lxd/b;-><init>()V
 
     .line 3
-    iget-object v1, v0, Landroidx/fragment/app/Fragment;->l:Landroid/os/Bundle;
+    iget-object v1, v0, Landroidx/fragment/app/Fragment;->m:Landroid/os/Bundle;
 
     if-eqz v1, :cond_0
 

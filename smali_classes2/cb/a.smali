@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field public final f:Ljava/util/Map;
+.field public final g:Ljava/util/Map;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Map<",
@@ -38,7 +38,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lcb/a;->f:Ljava/util/Map;
+    iput-object p1, p0, Lcb/a;->g:Ljava/util/Map;
 
     return-void
 .end method

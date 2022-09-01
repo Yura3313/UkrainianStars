@@ -1,112 +1,38 @@
-.class public final Lk3/rs;
-.super Lk3/vs;
+.class public final synthetic Lk3/rs;
+.super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lk3/ws;
+.implements Lk3/vs;
 
 
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Lk3/vs<",
-        "Lk3/ws;",
-        ">;",
-        "Lk3/ws;"
-    }
-.end annotation
+# instance fields
+.field public final g:Z
 
 
 # direct methods
-.method public constructor <init>(Ljava/util/Set;)V
+.method public constructor <init>(Z)V
     .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/util/Set<",
-            "Lk3/rt<",
-            "Lk3/ws;",
-            ">;>;)V"
-        }
-    .end annotation
 
-    invoke-direct {p0, p1}, Lk3/vs;-><init>(Ljava/util/Set;)V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-boolean p1, p0, Lk3/rs;->g:Z
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final B(Z)V
+.method public final d(Ljava/lang/Object;)V
     .locals 1
 
-    new-instance v0, Lk3/ss;
+    .line 1
+    iget-boolean v0, p0, Lk3/rs;->g:Z
 
-    invoke-direct {v0, p1}, Lk3/ss;-><init>(Z)V
+    check-cast p1, Lk3/us;
 
-    invoke-virtual {p0, v0}, Lk3/vs;->F0(Lk3/xs;)V
-
-    return-void
-.end method
-
-.method public final d0(Lcom/google/android/gms/internal/ads/x7;)V
-    .locals 2
-
-    new-instance v0, Lk3/br;
-
-    const/4 v1, 0x1
-
-    invoke-direct {v0, p1, v1}, Lk3/br;-><init>(Ljava/lang/Object;I)V
-
-    invoke-virtual {p0, v0}, Lk3/vs;->F0(Lk3/xs;)V
-
-    return-void
-.end method
-
-.method public final g(Z)V
-    .locals 1
-
-    new-instance v0, Lk3/ts;
-
-    invoke-direct {v0, p1}, Lk3/ts;-><init>(Z)V
-
-    invoke-virtual {p0, v0}, Lk3/vs;->F0(Lk3/xs;)V
-
-    return-void
-.end method
-
-.method public final j0(Lcom/google/android/gms/internal/ads/x7;)V
-    .locals 2
-
-    new-instance v0, Lk3/dr;
-
-    const/4 v1, 0x1
-
-    invoke-direct {v0, p1, v1}, Lk3/dr;-><init>(Ljava/lang/Object;I)V
-
-    invoke-virtual {p0, v0}, Lk3/vs;->F0(Lk3/xs;)V
-
-    return-void
-.end method
-
-.method public final k0(Lcom/google/android/gms/internal/ads/x7;)V
-    .locals 1
-
-    new-instance v0, Lk3/c5;
-
-    invoke-direct {v0, p1}, Lk3/c5;-><init>(Ljava/lang/Object;)V
-
-    invoke-virtual {p0, v0}, Lk3/vs;->F0(Lk3/xs;)V
-
-    return-void
-.end method
-
-.method public final w()V
-    .locals 1
-
-    sget-object v0, La7/a;->j:La7/a;
-
-    invoke-virtual {p0, v0}, Lk3/vs;->F0(Lk3/xs;)V
+    .line 2
+    invoke-interface {p1, v0}, Lk3/us;->g(Z)V
 
     return-void
 .end method

@@ -50,7 +50,7 @@
 
     iget-object v1, p1, Lbe/v$a$b;->a:Lcom/supercell/id/model/IdSocialAccount;
 
-    invoke-static {v0, v1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
@@ -60,7 +60,7 @@
 
     iget-object p1, p1, Lbe/v$a$b;->b:Lcom/supercell/id/model/IdPresenceStatus;
 
-    invoke-static {v0, p1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, p1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -132,7 +132,7 @@
 
     .line 3
     :cond_0
-    sget-object p1, Lje/m;->f:Lje/m;
+    sget-object p1, Lje/m;->g:Lje/m;
 
     :goto_0
     iget-object v1, p0, Lbe/v$a$b;->a:Lcom/supercell/id/model/IdSocialAccount;
@@ -143,7 +143,7 @@
     invoke-direct {v2, v1, v0}, Lie/d;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
 
     .line 5
-    invoke-static {p1, v2}, Lje/t;->n(Ljava/util/Map;Lie/d;)Ljava/util/Map;
+    invoke-static {p1, v2}, Lje/t;->o(Ljava/util/Map;Lie/d;)Ljava/util/Map;
 
     move-result-object p1
 
@@ -155,7 +155,7 @@
     .line 6
     iget-object v0, p0, Lbe/v$a$b;->a:Lcom/supercell/id/model/IdSocialAccount;
 
-    invoke-static {p1, v0}, Lje/t;->l(Ljava/util/Map;Ljava/lang/Object;)Ljava/util/Map;
+    invoke-static {p1, v0}, Lje/t;->m(Ljava/util/Map;Ljava/lang/Object;)Ljava/util/Map;
 
     move-result-object p1
 

@@ -21,7 +21,7 @@
 
 
 # static fields
-.field public static final f:Lcom/supercell/id/ui/ingame/friendrequests/a;
+.field public static final g:Lcom/supercell/id/ui/ingame/friendrequests/a;
 
 
 # direct methods
@@ -32,7 +32,7 @@
 
     invoke-direct {v0}, Lcom/supercell/id/ui/ingame/friendrequests/a;-><init>()V
 
-    sput-object v0, Lcom/supercell/id/ui/ingame/friendrequests/a;->f:Lcom/supercell/id/ui/ingame/friendrequests/a;
+    sput-object v0, Lcom/supercell/id/ui/ingame/friendrequests/a;->g:Lcom/supercell/id/ui/ingame/friendrequests/a;
 
     return-void
 .end method
@@ -56,19 +56,19 @@
     check-cast p2, Lfd/b;
 
     .line 2
-    iget-object p1, p1, Lfd/b;->b:Lvc/i;
+    iget-object p1, p1, Lfd/b;->b:Lvc/h;
 
     .line 3
-    iget-object p1, p1, Lvc/i;->b:Ljava/lang/String;
+    iget-object p1, p1, Lvc/h;->b:Ljava/lang/String;
 
     .line 4
-    iget-object p2, p2, Lfd/b;->b:Lvc/i;
+    iget-object p2, p2, Lfd/b;->b:Lvc/h;
 
     .line 5
-    iget-object p2, p2, Lvc/i;->b:Ljava/lang/String;
+    iget-object p2, p2, Lvc/h;->b:Ljava/lang/String;
 
     .line 6
-    invoke-static {p1, p2}, Lcom/google/android/gms/ads/q;->b(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {p1, p2}, Lcom/google/android/gms/ads/r;->a(Ljava/lang/String;Ljava/lang/String;)I
 
     move-result p1
 

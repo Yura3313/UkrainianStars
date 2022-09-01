@@ -22,7 +22,7 @@
 
     const-string v1, "Charset.forName(\"UTF-8\")"
 
-    invoke-static {v0, v1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     sput-object v0, Lye/a;->a:Ljava/nio/charset/Charset;
 
@@ -35,7 +35,7 @@
 
     const-string v1, "Charset.forName(\"UTF-16\")"
 
-    invoke-static {v0, v1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "UTF-16BE"
 
@@ -46,7 +46,7 @@
 
     const-string v1, "Charset.forName(\"UTF-16BE\")"
 
-    invoke-static {v0, v1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "UTF-16LE"
 
@@ -57,7 +57,7 @@
 
     const-string v1, "Charset.forName(\"UTF-16LE\")"
 
-    invoke-static {v0, v1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "US-ASCII"
 
@@ -68,7 +68,7 @@
 
     const-string v1, "Charset.forName(\"US-ASCII\")"
 
-    invoke-static {v0, v1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     sput-object v0, Lye/a;->b:Ljava/nio/charset/Charset;
 
@@ -81,7 +81,7 @@
 
     const-string v1, "Charset.forName(\"ISO-8859-1\")"
 
-    invoke-static {v0, v1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     return-void
 .end method

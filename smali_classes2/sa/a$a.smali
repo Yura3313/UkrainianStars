@@ -18,11 +18,11 @@
 
 
 # instance fields
-.field public final synthetic A:Lsa/a;
+.field public final A:Landroid/widget/TextView;
 
-.field public final y:Landroid/view/View;
+.field public final synthetic B:Lsa/a;
 
-.field public final z:Landroid/widget/TextView;
+.field public final z:Landroid/view/View;
 
 
 # direct methods
@@ -30,7 +30,7 @@
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lsa/a$a;->A:Lsa/a;
+    iput-object p1, p0, Lsa/a$a;->B:Lsa/a;
 
     .line 2
     invoke-direct {p0, p2}, Landroidx/recyclerview/widget/RecyclerView$z;-><init>(Landroid/view/View;)V
@@ -44,7 +44,7 @@
 
     check-cast p1, Landroid/widget/TextView;
 
-    iput-object p1, p0, Lsa/a$a;->z:Landroid/widget/TextView;
+    iput-object p1, p0, Lsa/a$a;->A:Landroid/widget/TextView;
 
     .line 4
     sget p1, Lcom/helpshift/R$id;->option_list_item_layout:I
@@ -53,7 +53,7 @@
 
     move-result-object p1
 
-    iput-object p1, p0, Lsa/a$a;->y:Landroid/view/View;
+    iput-object p1, p0, Lsa/a$a;->z:Landroid/view/View;
 
     .line 5
     invoke-virtual {p1, p0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
@@ -67,7 +67,7 @@
     .locals 2
 
     .line 1
-    iget-object p1, p0, Lsa/a$a;->A:Lsa/a;
+    iget-object p1, p0, Lsa/a$a;->B:Lsa/a;
 
     iget-object v0, p1, Lsa/a;->d:Lqa/n0;
 

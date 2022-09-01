@@ -56,7 +56,7 @@
     return-void
 .end method
 
-.method public constructor <init>(Ld4/i;)V
+.method public constructor <init>(Lp6/c;)V
     .locals 0
 
     .line 2

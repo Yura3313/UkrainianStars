@@ -18,7 +18,7 @@
 
 .field public final b:Lx5/d;
 
-.field public c:Ly5/f0;
+.field public c:Ly5/h0;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lx5/b<",
@@ -225,11 +225,11 @@
     if-eqz p1, :cond_3
 
     .line 28
-    new-instance p1, Ly5/f0;
+    new-instance p1, Ly5/h0;
 
-    invoke-direct {p1, p0}, Ly5/f0;-><init>(Lcom/google/firebase/iid/FirebaseInstanceId$a;)V
+    invoke-direct {p1, p0}, Ly5/h0;-><init>(Lcom/google/firebase/iid/FirebaseInstanceId$a;)V
 
-    iput-object p1, p0, Lcom/google/firebase/iid/FirebaseInstanceId$a;->c:Ly5/f0;
+    iput-object p1, p0, Lcom/google/firebase/iid/FirebaseInstanceId$a;->c:Ly5/h0;
 
     .line 29
     invoke-interface {p2, p1}, Lx5/d;->b(Lx5/b;)V

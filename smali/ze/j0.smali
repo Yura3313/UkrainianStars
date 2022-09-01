@@ -1,392 +1,773 @@
-.class public abstract Lze/j0;
-.super Lbf/h;
+.class public final Lze/j0;
+.super Ljava/lang/Object;
 .source "Dispatched.kt"
 
 
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "<T:",
-        "Ljava/lang/Object;",
-        ">",
-        "Lbf/h;"
-    }
-.end annotation
-
-
-# instance fields
-.field public h:I
+# static fields
+.field public static final a:Laf/w;
 
 
 # direct methods
-.method public constructor <init>(I)V
-    .locals 0
+.method public static constructor <clinit>()V
+    .locals 2
 
-    invoke-direct {p0}, Lbf/h;-><init>()V
+    new-instance v0, Laf/w;
 
-    iput p1, p0, Lze/j0;->h:I
+    const-string v1, "UNDEFINED"
 
-    return-void
-.end method
+    invoke-direct {v0, v1}, Laf/w;-><init>(Ljava/lang/String;)V
 
-
-# virtual methods
-.method public d(Ljava/lang/Object;Ljava/lang/Throwable;)V
-    .locals 0
-
-    const-string p1, "cause"
-
-    invoke-static {p2, p1}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    sput-object v0, Lze/j0;->a:Laf/w;
 
     return-void
 .end method
 
-.method public abstract e()Lke/d;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Lke/d<",
-            "TT;>;"
-        }
-    .end annotation
-.end method
-
-.method public f(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 0
+.method public static final a(Lze/k0;Lke/d;I)V
+    .locals 7
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<T:",
             "Ljava/lang/Object;",
             ">(",
-            "Ljava/lang/Object;",
-            ")TT;"
+            "Lze/k0<",
+            "-TT;>;",
+            "Lke/d<",
+            "-TT;>;I)V"
         }
     .end annotation
 
-    return-object p1
-.end method
+    const-string v0, "$this$resume"
 
-.method public final h(Ljava/lang/Throwable;Ljava/lang/Throwable;)V
-    .locals 2
+    invoke-static {p0, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    if-nez p1, :cond_0
+    const-string v0, "delegate"
 
-    if-nez p2, :cond_0
-
-    return-void
-
-    :cond_0
-    if-eqz p1, :cond_1
-
-    if-eqz p2, :cond_1
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
-    invoke-static {p1, p2}, La5/g0;->i(Ljava/lang/Throwable;Ljava/lang/Throwable;)V
-
-    :cond_1
-    if-eqz p1, :cond_2
-
-    goto :goto_0
-
-    :cond_2
-    move-object p1, p2
-
-    .line 2
-    :goto_0
-    new-instance p2, Lqe/a;
-
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v1, "Fatal exception in coroutines machinery for "
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    const-string v1, ". "
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string v1, "Please read KDoc to \'handleFatalException\' method and report this incident to maintainers"
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-virtual {p0}, Lze/k0;->i()Ljava/lang/Object;
 
     move-result-object v0
 
-    if-eqz p1, :cond_3
-
-    invoke-direct {p2, v0, p1}, Lqe/a;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
-
-    .line 3
-    invoke-virtual {p0}, Lze/j0;->e()Lke/d;
-
-    move-result-object p1
-
-    invoke-interface {p1}, Lke/d;->getContext()Lke/f;
-
-    move-result-object p1
-
-    invoke-static {p1, p2}, Le5/i;->j(Lke/f;Ljava/lang/Throwable;)V
-
-    return-void
-
-    .line 4
-    :cond_3
-    invoke-static {}, Lt3/e;->f()V
-
-    const/4 p1, 0x0
-
-    throw p1
-.end method
-
-.method public abstract i()Ljava/lang/Object;
-.end method
-
-.method public final run()V
-    .locals 9
-
-    .line 1
-    iget-object v0, p0, Lbf/h;->g:Lbf/i;
-
     .line 2
-    :try_start_0
-    invoke-virtual {p0}, Lze/j0;->e()Lke/d;
+    instance-of v1, v0, Lze/q;
 
-    move-result-object v1
+    const/4 v2, 0x0
 
-    if-eqz v1, :cond_6
+    if-nez v1, :cond_0
 
-    check-cast v1, Lze/h0;
-
-    .line 3
-    iget-object v2, v1, Lze/h0;->m:Lke/d;
-
-    .line 4
-    invoke-interface {v2}, Lke/d;->getContext()Lke/f;
-
-    move-result-object v3
-
-    .line 5
-    invoke-virtual {p0}, Lze/j0;->i()Ljava/lang/Object;
-
-    move-result-object v4
-
-    .line 6
-    iget-object v1, v1, Lze/h0;->k:Ljava/lang/Object;
-
-    .line 7
-    invoke-static {v3, v1}, Laf/y;->c(Lke/f;Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v1
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_2
-
-    .line 8
-    :try_start_1
-    instance-of v5, v4, Lze/q;
-
-    const/4 v6, 0x0
-
-    if-nez v5, :cond_0
-
-    move-object v5, v6
+    move-object v1, v2
 
     goto :goto_0
 
     :cond_0
-    move-object v5, v4
+    move-object v1, v0
 
     :goto_0
-    check-cast v5, Lze/q;
+    check-cast v1, Lze/q;
 
-    if-eqz v5, :cond_1
+    if-eqz v1, :cond_1
 
-    iget-object v5, v5, Lze/q;->a:Ljava/lang/Throwable;
+    iget-object v2, v1, Lze/q;->a:Ljava/lang/Throwable;
+
+    :cond_1
+    const-string v1, "Invalid mode "
+
+    const/4 v3, 0x4
+
+    const/4 v4, 0x3
+
+    const/4 v5, 0x2
+
+    const/4 v6, 0x1
+
+    if-eqz v2, :cond_9
+
+    .line 3
+    instance-of p0, p1, Lze/k0;
+
+    if-eqz p0, :cond_2
 
     goto :goto_1
 
-    :catchall_0
-    move-exception v2
-
-    goto :goto_6
-
-    :cond_1
-    move-object v5, v6
-
-    .line 9
-    :goto_1
-    iget v7, p0, Lze/j0;->h:I
-
-    const/4 v8, 0x1
-
-    if-ne v7, v8, :cond_2
-
-    goto :goto_2
-
     :cond_2
-    const/4 v8, 0x0
-
-    :goto_2
-    if-eqz v8, :cond_3
-
-    sget-object v7, Lze/b1;->e:Lze/b1$b;
-
-    invoke-interface {v3, v7}, Lke/f;->get(Lke/f$b;)Lke/f$a;
-
-    move-result-object v7
-
-    check-cast v7, Lze/b1;
-
-    goto :goto_3
-
-    :cond_3
-    move-object v7, v6
-
-    :goto_3
-    if-nez v5, :cond_4
-
-    if-eqz v7, :cond_4
-
-    .line 10
-    invoke-interface {v7}, Lze/b1;->isActive()Z
-
-    move-result v8
-
-    if-nez v8, :cond_4
-
-    .line 11
-    invoke-interface {v7}, Lze/b1;->h()Ljava/util/concurrent/CancellationException;
-
-    move-result-object v5
-
-    .line 12
-    invoke-virtual {p0, v4, v5}, Lze/j0;->d(Ljava/lang/Object;Ljava/lang/Throwable;)V
-
-    .line 13
-    invoke-static {v5, v2}, Laf/v;->c(Ljava/lang/Throwable;Lke/d;)Ljava/lang/Throwable;
-
-    move-result-object v4
-
-    invoke-static {v4}, Le5/i;->h(Ljava/lang/Throwable;)Ljava/lang/Object;
-
-    move-result-object v4
-
-    invoke-interface {v2, v4}, Lke/d;->c(Ljava/lang/Object;)V
-
-    goto :goto_4
-
-    :cond_4
-    if-eqz v5, :cond_5
-
-    .line 14
-    invoke-static {v5, v2}, Laf/v;->c(Ljava/lang/Throwable;Lke/d;)Ljava/lang/Throwable;
-
-    move-result-object v4
-
-    invoke-static {v4}, Le5/i;->h(Ljava/lang/Throwable;)Ljava/lang/Object;
-
-    move-result-object v4
-
-    invoke-interface {v2, v4}, Lke/d;->c(Ljava/lang/Object;)V
-
-    goto :goto_4
-
-    .line 15
-    :cond_5
-    invoke-virtual {p0, v4}, Lze/j0;->f(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v4
-
-    invoke-interface {v2, v4}, Lke/d;->c(Ljava/lang/Object;)V
-
-    .line 16
-    :goto_4
-    sget-object v2, Lie/h;->a:Lie/h;
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
-    .line 17
-    :try_start_2
-    invoke-static {v3, v1}, Laf/y;->a(Lke/f;Ljava/lang/Object;)V
-    :try_end_2
-    .catchall {:try_start_2 .. :try_end_2} :catchall_2
-
-    .line 18
-    :try_start_3
-    invoke-interface {v0}, Lbf/i;->g()V
-    :try_end_3
-    .catchall {:try_start_3 .. :try_end_3} :catchall_1
-
-    goto :goto_5
-
-    :catchall_1
-    move-exception v0
-
-    invoke-static {v0}, Le5/i;->h(Ljava/lang/Throwable;)Ljava/lang/Object;
+    invoke-static {v2, p1}, Laf/v;->c(Ljava/lang/Throwable;Lke/d;)Ljava/lang/Throwable;
 
     move-result-object v2
 
-    .line 19
-    :goto_5
-    invoke-static {v2}, Lie/e;->a(Ljava/lang/Object;)Ljava/lang/Throwable;
+    :goto_1
+    if-eqz p2, :cond_8
+
+    if-eq p2, v6, :cond_7
+
+    if-eq p2, v5, :cond_5
+
+    if-eq p2, v4, :cond_4
+
+    if-ne p2, v3, :cond_3
+
+    goto/16 :goto_2
+
+    .line 4
+    :cond_3
+    invoke-static {v1, p2}, Landroid/support/v4/media/c;->b(Ljava/lang/String;I)Ljava/lang/String;
+
+    move-result-object p0
+
+    .line 5
+    new-instance p1, Ljava/lang/IllegalStateException;
+
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
+
+    move-result-object p0
+
+    invoke-direct {p1, p0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    throw p1
+
+    .line 6
+    :cond_4
+    check-cast p1, Lze/i0;
+
+    .line 7
+    invoke-virtual {p1}, Lze/i0;->getContext()Lke/f;
+
+    move-result-object p0
+
+    iget-object p2, p1, Lze/i0;->l:Ljava/lang/Object;
+
+    .line 8
+    invoke-static {p0, p2}, Laf/y;->c(Lke/f;Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p2
+
+    .line 9
+    :try_start_0
+    iget-object p1, p1, Lze/i0;->n:Lke/d;
+
+    .line 10
+    invoke-static {v2, p1}, Laf/v;->c(Ljava/lang/Throwable;Lke/d;)Ljava/lang/Throwable;
 
     move-result-object v0
 
-    invoke-virtual {p0, v6, v0}, Lze/j0;->h(Ljava/lang/Throwable;Ljava/lang/Throwable;)V
+    invoke-static {v0}, Lie/f;->a(Ljava/lang/Throwable;)Ljava/lang/Object;
 
-    goto :goto_8
+    move-result-object v0
+
+    invoke-interface {p1, v0}, Lke/d;->c(Ljava/lang/Object;)V
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 11
+    invoke-static {p0, p2}, Laf/y;->a(Lke/f;Ljava/lang/Object;)V
+
+    goto/16 :goto_2
+
+    :catchall_0
+    move-exception p1
+
+    invoke-static {p0, p2}, Laf/y;->a(Lke/f;Ljava/lang/Object;)V
+
+    throw p1
+
+    .line 12
+    :cond_5
+    instance-of p0, p1, Lze/i0;
+
+    if-eqz p0, :cond_6
+
+    check-cast p1, Lze/i0;
+
+    iget-object p0, p1, Lze/i0;->n:Lke/d;
+
+    .line 13
+    invoke-static {v2, p0}, Laf/v;->c(Ljava/lang/Throwable;Lke/d;)Ljava/lang/Throwable;
+
+    move-result-object p1
+
+    invoke-static {p1}, Lie/f;->a(Ljava/lang/Throwable;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    invoke-interface {p0, p1}, Lke/d;->c(Ljava/lang/Object;)V
+
+    goto :goto_2
+
+    .line 14
+    :cond_6
+    invoke-static {v2, p1}, Laf/v;->c(Ljava/lang/Throwable;Lke/d;)Ljava/lang/Throwable;
+
+    move-result-object p0
+
+    invoke-static {p0}, Lie/f;->a(Ljava/lang/Throwable;)Ljava/lang/Object;
+
+    move-result-object p0
+
+    invoke-interface {p1, p0}, Lke/d;->c(Ljava/lang/Object;)V
+
+    goto :goto_2
+
+    .line 15
+    :cond_7
+    invoke-static {p1, v2}, Lze/j0;->c(Lke/d;Ljava/lang/Throwable;)V
+
+    goto :goto_2
+
+    .line 16
+    :cond_8
+    invoke-static {v2}, Lie/f;->a(Ljava/lang/Throwable;)Ljava/lang/Object;
+
+    move-result-object p0
+
+    invoke-interface {p1, p0}, Lke/d;->c(Ljava/lang/Object;)V
+
+    goto :goto_2
+
+    .line 17
+    :cond_9
+    invoke-virtual {p0, v0}, Lze/k0;->f(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p0
+
+    if-eqz p2, :cond_f
+
+    if-eq p2, v6, :cond_e
+
+    if-eq p2, v5, :cond_c
+
+    if-eq p2, v4, :cond_b
+
+    if-ne p2, v3, :cond_a
+
+    goto :goto_2
+
+    .line 18
+    :cond_a
+    invoke-static {v1, p2}, Landroid/support/v4/media/c;->b(Ljava/lang/String;I)Ljava/lang/String;
+
+    move-result-object p0
+
+    .line 19
+    new-instance p1, Ljava/lang/IllegalStateException;
+
+    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
+
+    move-result-object p0
+
+    invoke-direct {p1, p0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    throw p1
 
     .line 20
-    :goto_6
-    :try_start_4
-    invoke-static {v3, v1}, Laf/y;->a(Lke/f;Ljava/lang/Object;)V
-
-    throw v2
+    :cond_b
+    check-cast p1, Lze/i0;
 
     .line 21
-    :cond_6
-    new-instance v1, Lkotlin/TypeCastException;
+    invoke-virtual {p1}, Lze/i0;->getContext()Lke/f;
 
-    const-string v2, "null cannot be cast to non-null type kotlinx.coroutines.DispatchedContinuation<T>"
+    move-result-object p2
 
-    invoke-direct {v1, v2}, Lkotlin/TypeCastException;-><init>(Ljava/lang/String;)V
-
-    throw v1
-    :try_end_4
-    .catchall {:try_start_4 .. :try_end_4} :catchall_2
-
-    :catchall_2
-    move-exception v1
+    iget-object v0, p1, Lze/i0;->l:Ljava/lang/Object;
 
     .line 22
-    :try_start_5
-    invoke-interface {v0}, Lbf/i;->g()V
-
-    sget-object v0, Lie/h;->a:Lie/h;
-    :try_end_5
-    .catchall {:try_start_5 .. :try_end_5} :catchall_3
-
-    goto :goto_7
-
-    :catchall_3
-    move-exception v0
-
-    invoke-static {v0}, Le5/i;->h(Ljava/lang/Throwable;)Ljava/lang/Object;
+    invoke-static {p2, v0}, Laf/y;->c(Lke/f;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v0
 
     .line 23
-    :goto_7
-    invoke-static {v0}, Lie/e;->a(Ljava/lang/Object;)Ljava/lang/Throwable;
+    :try_start_1
+    iget-object p1, p1, Lze/i0;->n:Lke/d;
+
+    invoke-interface {p1, p0}, Lke/d;->c(Ljava/lang/Object;)V
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_1
+
+    .line 24
+    invoke-static {p2, v0}, Laf/y;->a(Lke/f;Ljava/lang/Object;)V
+
+    goto :goto_2
+
+    :catchall_1
+    move-exception p0
+
+    invoke-static {p2, v0}, Laf/y;->a(Lke/f;Ljava/lang/Object;)V
+
+    throw p0
+
+    .line 25
+    :cond_c
+    instance-of p2, p1, Lze/i0;
+
+    if-eqz p2, :cond_d
+
+    check-cast p1, Lze/i0;
+
+    iget-object p1, p1, Lze/i0;->n:Lke/d;
+
+    invoke-interface {p1, p0}, Lke/d;->c(Ljava/lang/Object;)V
+
+    goto :goto_2
+
+    .line 26
+    :cond_d
+    invoke-interface {p1, p0}, Lke/d;->c(Ljava/lang/Object;)V
+
+    goto :goto_2
+
+    .line 27
+    :cond_e
+    invoke-static {p1, p0}, Lze/j0;->b(Lke/d;Ljava/lang/Object;)V
+
+    goto :goto_2
+
+    .line 28
+    :cond_f
+    invoke-interface {p1, p0}, Lke/d;->c(Ljava/lang/Object;)V
+
+    :goto_2
+    return-void
+.end method
+
+.method public static final b(Lke/d;Ljava/lang/Object;)V
+    .locals 4
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Ljava/lang/Object;",
+            ">(",
+            "Lke/d<",
+            "-TT;>;TT;)V"
+        }
+    .end annotation
+
+    const-string v0, "$this$resumeCancellable"
+
+    invoke-static {p0, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 1
+    instance-of v0, p0, Lze/i0;
+
+    if-eqz v0, :cond_4
+
+    check-cast p0, Lze/i0;
+
+    .line 2
+    iget-object v0, p0, Lze/i0;->m:Lze/w;
+
+    invoke-virtual {p0}, Lze/i0;->getContext()Lke/f;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Lze/w;->isDispatchNeeded(Lke/f;)Z
+
+    move-result v0
+
+    const/4 v1, 0x1
+
+    if-eqz v0, :cond_0
+
+    .line 3
+    iput-object p1, p0, Lze/i0;->j:Ljava/lang/Object;
+
+    .line 4
+    iput v1, p0, Lze/k0;->i:I
+
+    .line 5
+    iget-object p1, p0, Lze/i0;->m:Lze/w;
+
+    invoke-virtual {p0}, Lze/i0;->getContext()Lke/f;
 
     move-result-object v0
 
-    invoke-virtual {p0, v1, v0}, Lze/j0;->h(Ljava/lang/Throwable;Ljava/lang/Throwable;)V
+    invoke-virtual {p1, v0, p0}, Lze/w;->dispatch(Lke/f;Ljava/lang/Runnable;)V
 
-    :goto_8
+    goto :goto_3
+
+    .line 6
+    :cond_0
+    sget-object v0, Lze/r1;->b:Lze/r1;
+
+    invoke-static {}, Lze/r1;->a()Lze/q0;
+
+    move-result-object v0
+
+    .line 7
+    invoke-virtual {v0}, Lze/q0;->u()Z
+
+    move-result v2
+
+    if-eqz v2, :cond_1
+
+    .line 8
+    iput-object p1, p0, Lze/i0;->j:Ljava/lang/Object;
+
+    .line 9
+    iput v1, p0, Lze/k0;->i:I
+
+    .line 10
+    invoke-virtual {v0, p0}, Lze/q0;->s(Lze/k0;)V
+
+    goto :goto_3
+
+    .line 11
+    :cond_1
+    invoke-virtual {v0, v1}, Lze/q0;->t(Z)V
+
+    .line 12
+    :try_start_0
+    invoke-virtual {p0}, Lze/i0;->getContext()Lke/f;
+
+    move-result-object v2
+
+    sget-object v3, Lze/c1;->f:Lze/c1$b;
+
+    invoke-interface {v2, v3}, Lke/f;->get(Lke/f$b;)Lke/f$a;
+
+    move-result-object v2
+
+    check-cast v2, Lze/c1;
+
+    if-eqz v2, :cond_2
+
+    .line 13
+    invoke-interface {v2}, Lze/c1;->isActive()Z
+
+    move-result v3
+
+    if-nez v3, :cond_2
+
+    .line 14
+    invoke-interface {v2}, Lze/c1;->h()Ljava/util/concurrent/CancellationException;
+
+    move-result-object v2
+
+    invoke-static {v2}, Lie/f;->a(Ljava/lang/Throwable;)Ljava/lang/Object;
+
+    move-result-object v2
+
+    invoke-virtual {p0, v2}, Lze/i0;->c(Ljava/lang/Object;)V
+
+    goto :goto_0
+
+    :cond_2
+    const/4 v1, 0x0
+
+    :goto_0
+    if-nez v1, :cond_3
+
+    .line 15
+    invoke-virtual {p0}, Lze/i0;->getContext()Lke/f;
+
+    move-result-object v1
+
+    iget-object v2, p0, Lze/i0;->l:Ljava/lang/Object;
+
+    .line 16
+    invoke-static {v1, v2}, Laf/y;->c(Lke/f;Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v2
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_1
+
+    .line 17
+    :try_start_1
+    iget-object v3, p0, Lze/i0;->n:Lke/d;
+
+    invoke-interface {v3, p1}, Lke/d;->c(Ljava/lang/Object;)V
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    .line 18
+    :try_start_2
+    invoke-static {v1, v2}, Laf/y;->a(Lke/f;Ljava/lang/Object;)V
+
+    goto :goto_1
+
+    :catchall_0
+    move-exception p1
+
+    invoke-static {v1, v2}, Laf/y;->a(Lke/f;Ljava/lang/Object;)V
+
+    throw p1
+
+    .line 19
+    :cond_3
+    :goto_1
+    invoke-virtual {v0}, Lze/q0;->v()Z
+
+    move-result p1
+    :try_end_2
+    .catchall {:try_start_2 .. :try_end_2} :catchall_1
+
+    if-nez p1, :cond_3
+
+    goto :goto_2
+
+    :catchall_1
+    move-exception p1
+
+    const/4 v1, 0x0
+
+    .line 20
+    :try_start_3
+    invoke-virtual {p0, p1, v1}, Lze/k0;->h(Ljava/lang/Throwable;Ljava/lang/Throwable;)V
+    :try_end_3
+    .catchall {:try_start_3 .. :try_end_3} :catchall_2
+
+    .line 21
+    :goto_2
+    invoke-virtual {v0}, Lze/q0;->n()V
+
+    goto :goto_3
+
+    :catchall_2
+    move-exception p0
+
+    invoke-virtual {v0}, Lze/q0;->n()V
+
+    throw p0
+
+    .line 22
+    :cond_4
+    invoke-interface {p0, p1}, Lke/d;->c(Ljava/lang/Object;)V
+
+    :goto_3
+    return-void
+.end method
+
+.method public static final c(Lke/d;Ljava/lang/Throwable;)V
+    .locals 6
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Ljava/lang/Object;",
+            ">(",
+            "Lke/d<",
+            "-TT;>;",
+            "Ljava/lang/Throwable;",
+            ")V"
+        }
+    .end annotation
+
+    const-string v0, "$this$resumeCancellableWithException"
+
+    invoke-static {p0, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "exception"
+
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 1
+    instance-of v0, p0, Lze/i0;
+
+    if-eqz v0, :cond_4
+
+    check-cast p0, Lze/i0;
+
+    .line 2
+    iget-object v0, p0, Lze/i0;->n:Lke/d;
+
+    invoke-interface {v0}, Lke/d;->getContext()Lke/f;
+
+    move-result-object v0
+
+    .line 3
+    new-instance v1, Lze/q;
+
+    const/4 v2, 0x0
+
+    const/4 v3, 0x0
+
+    invoke-direct {v1, p1}, Lze/q;-><init>(Ljava/lang/Throwable;)V
+
+    .line 4
+    iget-object v4, p0, Lze/i0;->m:Lze/w;
+
+    invoke-virtual {v4, v0}, Lze/w;->isDispatchNeeded(Lke/f;)Z
+
+    move-result v4
+
+    const/4 v5, 0x1
+
+    if-eqz v4, :cond_0
+
+    .line 5
+    new-instance v1, Lze/q;
+
+    invoke-direct {v1, p1}, Lze/q;-><init>(Ljava/lang/Throwable;)V
+
+    iput-object v1, p0, Lze/i0;->j:Ljava/lang/Object;
+
+    .line 6
+    iput v5, p0, Lze/k0;->i:I
+
+    .line 7
+    iget-object p1, p0, Lze/i0;->m:Lze/w;
+
+    invoke-virtual {p1, v0, p0}, Lze/w;->dispatch(Lke/f;Ljava/lang/Runnable;)V
+
+    goto/16 :goto_2
+
+    .line 8
+    :cond_0
+    sget-object v0, Lze/r1;->b:Lze/r1;
+
+    invoke-static {}, Lze/r1;->a()Lze/q0;
+
+    move-result-object v0
+
+    .line 9
+    invoke-virtual {v0}, Lze/q0;->u()Z
+
+    move-result v4
+
+    if-eqz v4, :cond_1
+
+    .line 10
+    iput-object v1, p0, Lze/i0;->j:Ljava/lang/Object;
+
+    .line 11
+    iput v5, p0, Lze/k0;->i:I
+
+    .line 12
+    invoke-virtual {v0, p0}, Lze/q0;->s(Lze/k0;)V
+
+    goto :goto_2
+
+    .line 13
+    :cond_1
+    invoke-virtual {v0, v5}, Lze/q0;->t(Z)V
+
+    .line 14
+    :try_start_0
+    invoke-virtual {p0}, Lze/i0;->getContext()Lke/f;
+
+    move-result-object v1
+
+    sget-object v4, Lze/c1;->f:Lze/c1$b;
+
+    invoke-interface {v1, v4}, Lke/f;->get(Lke/f$b;)Lke/f$a;
+
+    move-result-object v1
+
+    check-cast v1, Lze/c1;
+
+    if-eqz v1, :cond_2
+
+    .line 15
+    invoke-interface {v1}, Lze/c1;->isActive()Z
+
+    move-result v4
+
+    if-nez v4, :cond_2
+
+    .line 16
+    invoke-interface {v1}, Lze/c1;->h()Ljava/util/concurrent/CancellationException;
+
+    move-result-object v1
+
+    invoke-static {v1}, Lie/f;->a(Ljava/lang/Throwable;)Ljava/lang/Object;
+
+    move-result-object v1
+
+    invoke-virtual {p0, v1}, Lze/i0;->c(Ljava/lang/Object;)V
+
+    const/4 v2, 0x1
+
+    :cond_2
+    if-nez v2, :cond_3
+
+    .line 17
+    invoke-virtual {p0}, Lze/i0;->getContext()Lke/f;
+
+    move-result-object v1
+
+    iget-object v2, p0, Lze/i0;->l:Ljava/lang/Object;
+
+    .line 18
+    invoke-static {v1, v2}, Laf/y;->c(Lke/f;Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v2
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_1
+
+    .line 19
+    :try_start_1
+    iget-object v4, p0, Lze/i0;->n:Lke/d;
+
+    .line 20
+    invoke-static {p1, v4}, Laf/v;->c(Ljava/lang/Throwable;Lke/d;)Ljava/lang/Throwable;
+
+    move-result-object p1
+
+    invoke-static {p1}, Lie/f;->a(Ljava/lang/Throwable;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    invoke-interface {v4, p1}, Lke/d;->c(Ljava/lang/Object;)V
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    .line 21
+    :try_start_2
+    invoke-static {v1, v2}, Laf/y;->a(Lke/f;Ljava/lang/Object;)V
+
+    goto :goto_0
+
+    :catchall_0
+    move-exception p1
+
+    invoke-static {v1, v2}, Laf/y;->a(Lke/f;Ljava/lang/Object;)V
+
+    throw p1
+
+    .line 22
+    :cond_3
+    :goto_0
+    invoke-virtual {v0}, Lze/q0;->v()Z
+
+    move-result p1
+    :try_end_2
+    .catchall {:try_start_2 .. :try_end_2} :catchall_1
+
+    if-nez p1, :cond_3
+
+    goto :goto_1
+
+    :catchall_1
+    move-exception p1
+
+    .line 23
+    :try_start_3
+    invoke-virtual {p0, p1, v3}, Lze/k0;->h(Ljava/lang/Throwable;Ljava/lang/Throwable;)V
+    :try_end_3
+    .catchall {:try_start_3 .. :try_end_3} :catchall_2
+
+    .line 24
+    :goto_1
+    invoke-virtual {v0}, Lze/q0;->n()V
+
+    goto :goto_2
+
+    :catchall_2
+    move-exception p0
+
+    invoke-virtual {v0}, Lze/q0;->n()V
+
+    throw p0
+
+    .line 25
+    :cond_4
+    invoke-static {p1, p0}, Laf/v;->c(Ljava/lang/Throwable;Lke/d;)Ljava/lang/Throwable;
+
+    move-result-object p1
+
+    invoke-static {p1}, Lie/f;->a(Ljava/lang/Throwable;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    invoke-interface {p0, p1}, Lke/d;->c(Ljava/lang/Object;)V
+
+    :goto_2
     return-void
 .end method

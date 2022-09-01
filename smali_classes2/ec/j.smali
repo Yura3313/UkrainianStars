@@ -7,22 +7,22 @@
 
 
 # instance fields
-.field public final synthetic f:I
+.field public final synthetic g:I
 
-.field public final synthetic g:Ljava/lang/Throwable;
+.field public final synthetic h:Ljava/lang/Throwable;
 
-.field public final synthetic h:Lec/l;
+.field public final synthetic i:Lec/l;
 
 
 # direct methods
 .method public constructor <init>(Lec/l;ILjava/lang/Throwable;)V
     .locals 0
 
-    iput-object p1, p0, Lec/j;->h:Lec/l;
+    iput-object p1, p0, Lec/j;->i:Lec/l;
 
-    iput p2, p0, Lec/j;->f:I
+    iput p2, p0, Lec/j;->g:I
 
-    iput-object p3, p0, Lec/j;->g:Ljava/lang/Throwable;
+    iput-object p3, p0, Lec/j;->h:Ljava/lang/Throwable;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -35,9 +35,9 @@
     .locals 4
 
     .line 1
-    iget-object v0, p0, Lec/j;->h:Lec/l;
+    iget-object v0, p0, Lec/j;->i:Lec/l;
 
-    iget-object v1, v0, Lec/l;->r:Lec/c;
+    iget-object v1, v0, Lec/l;->s:Lec/c;
 
     .line 2
     iget-object v2, v1, Lec/c;->f:Landroid/graphics/drawable/Drawable;
@@ -63,10 +63,10 @@
     if-eqz v3, :cond_3
 
     .line 3
-    iget-object v3, v0, Lec/l;->p:Ljc/a;
+    iget-object v3, v0, Lec/l;->q:Ljc/a;
 
     .line 4
-    iget-object v0, v0, Lec/l;->i:Lec/e;
+    iget-object v0, v0, Lec/l;->j:Lec/e;
 
     .line 5
     iget-object v0, v0, Lec/e;->a:Landroid/content/res/Resources;
@@ -86,13 +86,13 @@
 
     .line 8
     :cond_3
-    iget-object v0, p0, Lec/j;->h:Lec/l;
+    iget-object v0, p0, Lec/j;->i:Lec/l;
 
-    iget-object v1, v0, Lec/l;->s:Lkc/a;
+    iget-object v1, v0, Lec/l;->t:Lkc/a;
 
-    iget-object v2, v0, Lec/l;->n:Ljava/lang/String;
+    iget-object v2, v0, Lec/l;->o:Ljava/lang/String;
 
-    iget-object v0, v0, Lec/l;->p:Ljc/a;
+    iget-object v0, v0, Lec/l;->q:Ljc/a;
 
     invoke-interface {v0}, Ljc/a;->b()Landroid/view/View;
 

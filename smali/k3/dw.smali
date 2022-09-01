@@ -2,312 +2,260 @@
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
+# interfaces
+.implements Lk3/n1;
+.implements Lc8/j;
+
 
 # instance fields
-.field public final a:Lk3/ua;
+.field public final g:Ljava/lang/Object;
 
-.field public final b:Lk3/ug0;
+.field public final h:Ljava/lang/Object;
 
-.field public final c:Lk3/uv;
-
-.field public final d:Lk3/sv;
-
-.field public final e:Lk3/iw;
-
-.field public final f:Lk3/nw;
-
-.field public final g:Ljava/util/concurrent/Executor;
-
-.field public final h:Ljava/util/concurrent/Executor;
-
-.field public final i:Lcom/google/android/gms/internal/ads/zzadm;
-
-.field public final j:Lk3/rv;
+.field public final i:Ljava/lang/Object;
 
 
 # direct methods
-.method public constructor <init>(Lk3/ua;Lk3/ug0;Lk3/uv;Lk3/sv;Lk3/iw;Lk3/nw;Ljava/util/concurrent/Executor;Ljava/util/concurrent/Executor;Lk3/rv;)V
+.method public synthetic constructor <init>(Lc8/j;Le8/s;Ljava/lang/String;)V
     .locals 0
 
-    .line 1
+    .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
-    iput-object p1, p0, Lk3/dw;->a:Lk3/ua;
-
     .line 3
-    iput-object p2, p0, Lk3/dw;->b:Lk3/ug0;
+    iput-object p1, p0, Lk3/dw;->g:Ljava/lang/Object;
 
     .line 4
-    iget-object p1, p2, Lk3/ug0;->i:Lcom/google/android/gms/internal/ads/zzadm;
+    check-cast p2, Le8/j;
 
-    iput-object p1, p0, Lk3/dw;->i:Lcom/google/android/gms/internal/ads/zzadm;
+    invoke-virtual {p2}, Le8/j;->a()Lf8/d;
+
+    move-result-object p1
+
+    iput-object p1, p0, Lk3/dw;->h:Ljava/lang/Object;
 
     .line 5
-    iput-object p3, p0, Lk3/dw;->c:Lk3/uv;
-
-    .line 6
-    iput-object p4, p0, Lk3/dw;->d:Lk3/sv;
-
-    .line 7
-    iput-object p5, p0, Lk3/dw;->e:Lk3/iw;
-
-    .line 8
-    iput-object p6, p0, Lk3/dw;->f:Lk3/nw;
-
-    .line 9
-    iput-object p7, p0, Lk3/dw;->g:Ljava/util/concurrent/Executor;
-
-    .line 10
-    iput-object p8, p0, Lk3/dw;->h:Ljava/util/concurrent/Executor;
-
-    .line 11
-    iput-object p9, p0, Lk3/dw;->j:Lk3/rv;
+    iput-object p3, p0, Lk3/dw;->i:Ljava/lang/Object;
 
     return-void
 .end method
 
-.method public static a(Landroid/widget/RelativeLayout$LayoutParams;I)V
-    .locals 5
-
-    const/16 v0, 0x9
-
-    const/16 v1, 0xa
-
-    if-eqz p1, :cond_2
-
-    const/4 v2, 0x2
-
-    const/16 v3, 0xc
-
-    const/16 v4, 0xb
-
-    if-eq p1, v2, :cond_1
-
-    const/4 v2, 0x3
-
-    if-eq p1, v2, :cond_0
+.method public synthetic constructor <init>(Lk3/bw;Lk3/tw;Landroid/view/ViewGroup;)V
+    .locals 0
 
     .line 1
-    invoke-virtual {p0, v1}, Landroid/widget/RelativeLayout$LayoutParams;->addRule(I)V
+    iput-object p1, p0, Lk3/dw;->i:Ljava/lang/Object;
 
-    .line 2
-    invoke-virtual {p0, v4}, Landroid/widget/RelativeLayout$LayoutParams;->addRule(I)V
+    iput-object p2, p0, Lk3/dw;->g:Ljava/lang/Object;
 
-    return-void
+    iput-object p3, p0, Lk3/dw;->h:Ljava/lang/Object;
 
-    .line 3
-    :cond_0
-    invoke-virtual {p0, v3}, Landroid/widget/RelativeLayout$LayoutParams;->addRule(I)V
-
-    .line 4
-    invoke-virtual {p0, v0}, Landroid/widget/RelativeLayout$LayoutParams;->addRule(I)V
-
-    return-void
-
-    .line 5
-    :cond_1
-    invoke-virtual {p0, v3}, Landroid/widget/RelativeLayout$LayoutParams;->addRule(I)V
-
-    .line 6
-    invoke-virtual {p0, v4}, Landroid/widget/RelativeLayout$LayoutParams;->addRule(I)V
-
-    return-void
-
-    .line 7
-    :cond_2
-    invoke-virtual {p0, v1}, Landroid/widget/RelativeLayout$LayoutParams;->addRule(I)V
-
-    .line 8
-    invoke-virtual {p0, v0}, Landroid/widget/RelativeLayout$LayoutParams;->addRule(I)V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final b(Landroid/view/ViewGroup;)Z
-    .locals 4
+.method public final a()V
+    .locals 6
 
     .line 1
-    iget-object v0, p0, Lk3/dw;->d:Lk3/sv;
+    iget-object v0, p0, Lk3/dw;->g:Ljava/lang/Object;
 
-    invoke-virtual {v0}, Lk3/sv;->n()Landroid/view/View;
+    check-cast v0, Lk3/tw;
+
+    sget-object v1, Lcom/google/android/gms/internal/ads/zzcdp;->u:[Ljava/lang/String;
+
+    .line 2
+    invoke-interface {v0}, Lk3/tw;->O4()Ljava/util/Map;
 
     move-result-object v0
+
+    const/4 v2, 0x0
 
     if-nez v0, :cond_0
 
-    const/4 p1, 0x0
+    goto :goto_1
 
-    return p1
-
-    .line 2
     :cond_0
-    invoke-virtual {p1}, Landroid/view/ViewGroup;->removeAllViews()V
+    const/4 v3, 0x3
+
+    const/4 v4, 0x0
+
+    :goto_0
+    if-ge v4, v3, :cond_2
 
     .line 3
-    invoke-virtual {v0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
-
-    move-result-object v1
-
-    instance-of v1, v1, Landroid/view/ViewGroup;
-
-    if-eqz v1, :cond_1
+    aget-object v5, v1, v4
 
     .line 4
-    invoke-virtual {v0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
+    invoke-interface {v0, v5}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
-    move-result-object v1
+    move-result-object v5
 
-    check-cast v1, Landroid/view/ViewGroup;
+    if-eqz v5, :cond_1
 
-    invoke-virtual {v1, v0}, Landroid/view/ViewGroup;->removeView(Landroid/view/View;)V
+    const/4 v2, 0x1
 
-    .line 5
+    goto :goto_1
+
     :cond_1
-    sget-object v1, Lk3/q;->F1:Lk3/g;
-
-    .line 6
-    sget-object v2, Lk3/l51;->j:Lk3/l51;
-
-    iget-object v2, v2, Lk3/l51;->f:Lk3/n;
-
-    .line 7
-    invoke-virtual {v2, v1}, Lk3/n;->a(Lk3/h;)Ljava/lang/Object;
-
-    move-result-object v1
-
-    .line 8
-    check-cast v1, Ljava/lang/Boolean;
-
-    invoke-virtual {v1}, Ljava/lang/Boolean;->booleanValue()Z
-
-    move-result v1
-
-    const/16 v2, 0x11
-
-    if-eqz v1, :cond_2
-
-    .line 9
-    new-instance v1, Landroid/widget/FrameLayout$LayoutParams;
-
-    const/4 v3, -0x1
-
-    invoke-direct {v1, v3, v3, v2}, Landroid/widget/FrameLayout$LayoutParams;-><init>(III)V
+    add-int/lit8 v4, v4, 0x1
 
     goto :goto_0
 
-    .line 10
     :cond_2
-    new-instance v1, Landroid/widget/FrameLayout$LayoutParams;
+    :goto_1
+    if-eqz v2, :cond_3
 
-    const/4 v3, -0x2
+    .line 5
+    iget-object v0, p0, Lk3/dw;->g:Ljava/lang/Object;
 
-    invoke-direct {v1, v3, v3, v2}, Landroid/widget/FrameLayout$LayoutParams;-><init>(III)V
+    check-cast v0, Lk3/tw;
 
-    .line 11
-    :goto_0
-    invoke-virtual {p1, v0, v1}, Landroid/view/ViewGroup;->addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
+    iget-object v1, p0, Lk3/dw;->h:Ljava/lang/Object;
 
-    const/4 p1, 0x1
+    check-cast v1, Landroid/view/ViewGroup;
 
-    return p1
+    invoke-interface {v0, v1}, Landroid/view/View$OnClickListener;->onClick(Landroid/view/View;)V
+
+    :cond_3
+    return-void
 .end method
 
-.method public final c(Lk3/uw;)V
-    .locals 2
-
-    if-nez p1, :cond_0
-
-    return-void
+.method public final b(Lf8/h;)Lf8/i;
+    .locals 4
 
     .line 1
-    :cond_0
-    invoke-interface {p1}, Lk3/uw;->j5()Landroid/view/View;
+    iget-object v0, p0, Lk3/dw;->h:Ljava/lang/Object;
+
+    check-cast v0, Lf8/d;
+
+    iget-object v1, p0, Lk3/dw;->i:Ljava/lang/Object;
+
+    check-cast v1, Ljava/lang/String;
+
+    check-cast v0, Lk3/w8;
+
+    invoke-virtual {v0, v1}, Lk3/w8;->d(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Landroid/view/View;->getContext()Landroid/content/Context;
-
-    move-result-object v0
+    if-eqz v0, :cond_1
 
     .line 2
-    iget-object v1, p0, Lk3/dw;->c:Lk3/uv;
+    iget-object v1, p1, Lf8/h;->c:Ljava/util/Map;
 
-    iget-object v1, v1, Lk3/uv;->a:Lk3/jg0;
+    if-nez v1, :cond_0
 
-    invoke-static {v1}, Lk3/rc;->g(Lk3/jg0;)Z
+    .line 3
+    new-instance v1, Ljava/util/HashMap;
+
+    invoke-direct {v1}, Ljava/util/HashMap;-><init>()V
+
+    :cond_0
+    const-string v2, "If-None-Match"
+
+    .line 4
+    invoke-interface {v1, v2, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 5
+    iput-object v1, p1, Lf8/h;->c:Ljava/util/Map;
+
+    .line 6
+    :cond_1
+    iget-object v0, p0, Lk3/dw;->g:Ljava/lang/Object;
+
+    check-cast v0, Lc8/j;
+
+    invoke-interface {v0, p1}, Lc8/j;->b(Lf8/h;)Lf8/i;
+
+    move-result-object p1
+
+    .line 7
+    iget v0, p1, Lf8/i;->a:I
+
+    const/16 v1, 0xc8
+
+    if-lt v0, v1, :cond_4
+
+    const/16 v1, 0x12c
+
+    if-ge v0, v1, :cond_4
+
+    .line 8
+    iget-object v0, p1, Lf8/i;->c:Ljava/util/List;
+
+    .line 9
+    invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+
+    move-result-object v0
+
+    :cond_2
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
 
     move-result v1
 
-    if-nez v1, :cond_1
+    if-eqz v1, :cond_3
 
-    return-void
-
-    .line 3
-    :cond_1
-    instance-of v1, v0, Landroid/app/Activity;
-
-    if-nez v1, :cond_2
-
-    return-void
-
-    .line 4
-    :cond_2
-    iget-object v1, p0, Lk3/dw;->f:Lk3/nw;
-
-    if-eqz v1, :cond_4
-
-    invoke-interface {p1}, Lk3/uw;->g7()Landroid/widget/FrameLayout;
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v1
 
-    if-nez v1, :cond_3
+    check-cast v1, Lf8/b;
+
+    .line 10
+    iget-object v2, v1, Lf8/b;->a:Ljava/lang/String;
+
+    if-eqz v2, :cond_2
+
+    const-string v3, "ETag"
+
+    invoke-virtual {v2, v3}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_2
+
+    .line 11
+    iget-object v0, v1, Lf8/b;->b:Ljava/lang/String;
 
     goto :goto_0
 
     :cond_3
-    :try_start_0
-    const-string v1, "window"
+    const/4 v0, 0x0
 
-    .line 5
-    invoke-virtual {v0, v1}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    :goto_0
+    if-eqz v0, :cond_4
 
-    move-result-object v0
+    .line 12
+    iget-object v1, p0, Lk3/dw;->h:Ljava/lang/Object;
 
-    check-cast v0, Landroid/view/WindowManager;
+    check-cast v1, Lf8/d;
 
-    .line 6
-    invoke-interface {p1}, Lk3/uw;->g7()Landroid/widget/FrameLayout;
+    iget-object v2, p0, Lk3/dw;->i:Ljava/lang/Object;
 
-    move-result-object p1
+    check-cast v2, Ljava/lang/String;
 
-    .line 7
-    iget-object v1, p0, Lk3/dw;->f:Lk3/nw;
+    check-cast v1, Lk3/w8;
 
-    .line 8
-    invoke-virtual {v1, p1, v0}, Lk3/nw;->b(Landroid/view/View;Landroid/view/WindowManager;)Landroid/view/View;
-
-    move-result-object p1
-
-    .line 9
-    invoke-static {}, Lk3/rc;->n()Landroid/view/WindowManager$LayoutParams;
-
-    move-result-object v1
-
-    .line 10
-    invoke-interface {v0, p1, v1}, Landroid/view/ViewManager;->addView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
-    :try_end_0
-    .catch Lcom/google/android/gms/internal/ads/zzbgc; {:try_start_0 .. :try_end_0} :catch_0
-
-    return-void
-
-    .line 11
-    :catch_0
-    invoke-static {}, Lk3/j6;->m()Z
+    invoke-virtual {v1, v2, v0}, Lk3/w8;->g(Ljava/lang/String;Ljava/lang/String;)V
 
     :cond_4
-    :goto_0
+    return-object p1
+.end method
+
+.method public final c(Landroid/view/MotionEvent;)V
+    .locals 2
+
+    iget-object v0, p0, Lk3/dw;->g:Ljava/lang/Object;
+
+    check-cast v0, Lk3/tw;
+
+    const/4 v1, 0x0
+
+    invoke-interface {v0, v1, p1}, Landroid/view/View$OnTouchListener;->onTouch(Landroid/view/View;Landroid/view/MotionEvent;)Z
+
     return-void
 .end method

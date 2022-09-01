@@ -1,5 +1,5 @@
 .class public final Lnd/b;
-.super Lwc/s1;
+.super Lwc/t1;
 .source "MessagesTabFriendsFragment.kt"
 
 
@@ -12,25 +12,10 @@
 
 
 # static fields
-.field public static final synthetic h0:I
+.field public static final synthetic i0:I
 
 
 # instance fields
-.field public b0:Lae/m;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lae/m<",
-            "+",
-            "Ljava/util/List<",
-            "+",
-            "Lae/b2;",
-            ">;",
-            "Lcom/supercell/id/util/NormalizedError;",
-            ">;"
-        }
-    .end annotation
-.end field
-
 .field public c0:Lae/m;
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -38,7 +23,7 @@
             "+",
             "Ljava/util/List<",
             "+",
-            "Lae/b2;",
+            "Lae/a2;",
             ">;",
             "Lcom/supercell/id/util/NormalizedError;",
             ">;"
@@ -46,43 +31,58 @@
     .end annotation
 .end field
 
-.field public final d0:Lnd/b$c;
+.field public d0:Lae/m;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lre/l<",
-            "Lbe/l0;",
-            "Lie/h;",
+            "Lae/m<",
+            "+",
+            "Ljava/util/List<",
+            "+",
+            "Lae/a2;",
+            ">;",
+            "Lcom/supercell/id/util/NormalizedError;",
             ">;"
         }
     .end annotation
 .end field
 
-.field public final e0:Lnd/b$b;
+.field public final e0:Lnd/b$c;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lre/l<",
+            "Lbe/n0;",
+            "Lie/i;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public final f0:Lnd/b$b;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lre/l<",
             "Lae/m<",
-            "Lvc/j;",
+            "Lvc/i;",
             "Lcom/supercell/id/util/NormalizedError;",
             ">;",
-            "Lie/h;",
+            "Lie/i;",
             ">;"
         }
     .end annotation
 .end field
 
-.field public f0:Ljava/util/List;
+.field public g0:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
             "+",
-            "Lae/b2;",
+            "Lae/a2;",
             ">;"
         }
     .end annotation
 .end field
 
-.field public g0:Ljava/util/HashMap;
+.field public h0:Ljava/util/HashMap;
 
 
 # direct methods
@@ -90,21 +90,21 @@
     .locals 1
 
     .line 1
-    invoke-direct {p0}, Lwc/s1;-><init>()V
+    invoke-direct {p0}, Lwc/t1;-><init>()V
 
     .line 2
     new-instance v0, Lnd/b$c;
 
     invoke-direct {v0, p0}, Lnd/b$c;-><init>(Lnd/b;)V
 
-    iput-object v0, p0, Lnd/b;->d0:Lnd/b$c;
+    iput-object v0, p0, Lnd/b;->e0:Lnd/b$c;
 
     .line 3
     new-instance v0, Lnd/b$b;
 
     invoke-direct {v0, p0}, Lnd/b$b;-><init>(Lnd/b;)V
 
-    iput-object v0, p0, Lnd/b;->e0:Lnd/b$b;
+    iput-object v0, p0, Lnd/b;->f0:Lnd/b$b;
 
     return-void
 .end method
@@ -114,7 +114,7 @@
 .method public final N0()V
     .locals 1
 
-    iget-object v0, p0, Lnd/b;->g0:Ljava/util/HashMap;
+    iget-object v0, p0, Lnd/b;->h0:Ljava/util/HashMap;
 
     if-eqz v0, :cond_0
 
@@ -135,7 +135,7 @@
     move-result-object v0
 
     .line 2
-    iget-object v0, v0, Lae/u;->m:La5/d0;
+    iget-object v0, v0, Lae/u;->m:Lpe/a;
 
     .line 3
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -146,7 +146,7 @@
 .method public final T0(I)Landroid/view/View;
     .locals 2
 
-    iget-object v0, p0, Lnd/b;->g0:Ljava/util/HashMap;
+    iget-object v0, p0, Lnd/b;->h0:Ljava/util/HashMap;
 
     if-nez v0, :cond_0
 
@@ -154,10 +154,10 @@
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    iput-object v0, p0, Lnd/b;->g0:Ljava/util/HashMap;
+    iput-object v0, p0, Lnd/b;->h0:Ljava/util/HashMap;
 
     :cond_0
-    iget-object v0, p0, Lnd/b;->g0:Ljava/util/HashMap;
+    iget-object v0, p0, Lnd/b;->h0:Ljava/util/HashMap;
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -172,7 +172,7 @@
     if-nez v0, :cond_2
 
     .line 1
-    iget-object v0, p0, Landroidx/fragment/app/Fragment;->M:Landroid/view/View;
+    iget-object v0, p0, Landroidx/fragment/app/Fragment;->N:Landroid/view/View;
 
     if-nez v0, :cond_1
 
@@ -186,7 +186,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lnd/b;->g0:Ljava/util/HashMap;
+    iget-object v1, p0, Lnd/b;->h0:Ljava/util/HashMap;
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -208,11 +208,11 @@
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lae/u;->k()Lbe/o0;
+    invoke-virtual {v1}, Lae/u;->k()Lbe/q0;
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lbe/o0;->h()Lze/e0;
+    invoke-virtual {v1}, Lbe/q0;->h()Lze/f0;
 
     .line 2
     invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lae/u;
@@ -223,7 +223,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lbe/h;->l()Lze/e0;
+    invoke-virtual {v0}, Lbe/h;->l()Lze/f0;
 
     return-void
 .end method
@@ -235,13 +235,13 @@
             "(",
             "Ljava/util/List<",
             "+",
-            "Lae/b2;",
+            "Lae/a2;",
             ">;)V"
         }
     .end annotation
 
     .line 1
-    iput-object p1, p0, Lnd/b;->f0:Ljava/util/List;
+    iput-object p1, p0, Lnd/b;->g0:Ljava/util/List;
 
     const/4 v0, 0x4
 
@@ -351,10 +351,10 @@
     .locals 8
 
     .line 1
-    iget-object v0, p0, Lnd/b;->c0:Lae/m;
+    iget-object v0, p0, Lnd/b;->d0:Lae/m;
 
     .line 2
-    iget-object v1, p0, Lnd/b;->b0:Lae/m;
+    iget-object v1, p0, Lnd/b;->c0:Lae/m;
 
     const/4 v2, 0x0
 
@@ -382,7 +382,7 @@
 
     invoke-direct {v1, v0}, Lae/q;-><init>(Lcom/supercell/id/util/NormalizedError;)V
 
-    invoke-static {v1}, Lcom/android/billingclient/api/z;->h(Ljava/lang/Object;)Ljava/util/List;
+    invoke-static {v1}, Lcom/android/billingclient/api/y;->c(Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object v2
 
@@ -406,7 +406,7 @@
 
     invoke-direct {v0, v1}, Lae/q;-><init>(Lcom/supercell/id/util/NormalizedError;)V
 
-    invoke-static {v0}, Lcom/android/billingclient/api/z;->h(Ljava/lang/Object;)Ljava/util/List;
+    invoke-static {v0}, Lcom/android/billingclient/api/y;->c(Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object v2
 
@@ -441,17 +441,17 @@
     if-eqz v1, :cond_4
 
     .line 10
-    new-instance v4, Lae/f2;
+    new-instance v4, Lae/e2;
 
     const-string v5, "account_messages_donations_header"
 
-    invoke-direct {v4, v5}, Lae/f2;-><init>(Ljava/lang/String;)V
+    invoke-direct {v4, v5}, Lae/e2;-><init>(Ljava/lang/String;)V
 
-    invoke-static {v4}, Lcom/android/billingclient/api/z;->h(Ljava/lang/Object;)Ljava/util/List;
+    invoke-static {v4}, Lcom/android/billingclient/api/y;->c(Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object v4
 
-    invoke-static {v4, v1}, Lje/j;->I(Ljava/util/Collection;Ljava/lang/Iterable;)Ljava/util/List;
+    invoke-static {v4, v1}, Lje/j;->D(Ljava/util/Collection;Ljava/lang/Iterable;)Ljava/util/List;
 
     move-result-object v1
 
@@ -459,7 +459,7 @@
 
     .line 11
     :cond_4
-    sget-object v1, Lje/l;->f:Lje/l;
+    sget-object v1, Lje/l;->g:Lje/l;
 
     .line 12
     :goto_1
@@ -485,17 +485,17 @@
     if-eqz v2, :cond_6
 
     .line 13
-    new-instance v0, Lae/f2;
+    new-instance v0, Lae/e2;
 
     const-string v4, "account_messages_friend_requests_header"
 
-    invoke-direct {v0, v4}, Lae/f2;-><init>(Ljava/lang/String;)V
+    invoke-direct {v0, v4}, Lae/e2;-><init>(Ljava/lang/String;)V
 
-    invoke-static {v0}, Lcom/android/billingclient/api/z;->h(Ljava/lang/Object;)Ljava/util/List;
+    invoke-static {v0}, Lcom/android/billingclient/api/y;->c(Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object v0
 
-    invoke-static {v0, v2}, Lje/j;->I(Ljava/util/Collection;Ljava/lang/Iterable;)Ljava/util/List;
+    invoke-static {v0, v2}, Lje/j;->D(Ljava/util/Collection;Ljava/lang/Iterable;)Ljava/util/List;
 
     move-result-object v0
 
@@ -503,11 +503,11 @@
 
     .line 14
     :cond_6
-    sget-object v0, Lje/l;->f:Lje/l;
+    sget-object v0, Lje/l;->g:Lje/l;
 
     .line 15
     :goto_2
-    invoke-static {v1, v0}, Lje/j;->I(Ljava/util/Collection;Ljava/lang/Iterable;)Ljava/util/List;
+    invoke-static {v1, v0}, Lje/j;->D(Ljava/util/Collection;Ljava/lang/Iterable;)Ljava/util/List;
 
     move-result-object v0
 
@@ -523,13 +523,13 @@
     if-eqz v2, :cond_7
 
     .line 17
-    new-instance v0, Lae/y;
+    new-instance v0, Lae/x;
 
     const-string v1, "account_messages_no_new_messages"
 
-    invoke-direct {v0, v1}, Lae/y;-><init>(Ljava/lang/String;)V
+    invoke-direct {v0, v1}, Lae/x;-><init>(Ljava/lang/String;)V
 
-    invoke-static {v0}, Lcom/android/billingclient/api/z;->h(Ljava/lang/Object;)Ljava/util/List;
+    invoke-static {v0}, Lcom/android/billingclient/api/y;->c(Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object v2
 
@@ -540,7 +540,7 @@
     sget-object v2, Lnd/k;->a:Lae/k;
 
     .line 19
-    invoke-static {v0}, Lje/j;->V(Ljava/lang/Iterable;)Ljava/lang/Iterable;
+    invoke-static {v0}, Lje/j;->Q(Ljava/lang/Iterable;)Ljava/lang/Iterable;
 
     move-result-object v0
 
@@ -598,7 +598,7 @@
 
     move-result-object v6
 
-    invoke-static {v5, v6}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v5, v6}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v5
 
@@ -606,7 +606,7 @@
 
     const/4 v5, 0x2
 
-    new-array v5, v5, [Lae/b2;
+    new-array v5, v5, [Lae/a2;
 
     const/4 v6, 0x0
 
@@ -619,11 +619,11 @@
     iget-object v4, v4, Lje/p;->b:Ljava/lang/Object;
 
     .line 29
-    check-cast v4, Lae/b2;
+    check-cast v4, Lae/a2;
 
     aput-object v4, v5, v3
 
-    invoke-static {v5}, Lcom/android/billingclient/api/z;->i([Ljava/lang/Object;)Ljava/util/List;
+    invoke-static {v5}, Lcom/android/billingclient/api/y;->d([Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object v4
 
@@ -634,13 +634,13 @@
     iget-object v4, v4, Lje/p;->b:Ljava/lang/Object;
 
     .line 31
-    invoke-static {v4}, Lcom/android/billingclient/api/z;->h(Ljava/lang/Object;)Ljava/util/List;
+    invoke-static {v4}, Lcom/android/billingclient/api/y;->c(Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object v4
 
     .line 32
     :goto_4
-    invoke-static {v2, v4}, Lje/h;->u(Ljava/util/Collection;Ljava/lang/Iterable;)Z
+    invoke-static {v2, v4}, Lje/h;->p(Ljava/util/Collection;Ljava/lang/Iterable;)Z
 
     goto :goto_3
 
@@ -657,7 +657,7 @@
 
     const-string p3, "inflater"
 
-    invoke-static {p1, p3}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p3}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     sget p3, Lcom/supercell/id/R$layout;->fragment_messages_friends_page:I
 
@@ -680,13 +680,13 @@
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lae/u;->k()Lbe/o0;
+    invoke-virtual {v1}, Lae/u;->k()Lbe/q0;
 
     move-result-object v1
 
-    iget-object v2, p0, Lnd/b;->d0:Lnd/b$c;
+    iget-object v2, p0, Lnd/b;->e0:Lnd/b$c;
 
-    invoke-virtual {v1, v2}, Lbe/v0;->e(Lre/l;)V
+    invoke-virtual {v1, v2}, Lbe/x0;->e(Lre/l;)V
 
     .line 2
     invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lae/u;
@@ -697,15 +697,15 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lnd/b;->e0:Lnd/b$b;
+    iget-object v1, p0, Lnd/b;->f0:Lnd/b$b;
 
-    invoke-virtual {v0, v1}, Lbe/v0;->e(Lre/l;)V
+    invoke-virtual {v0, v1}, Lbe/x0;->e(Lre/l;)V
 
     .line 3
-    invoke-super {p0}, Lwc/s1;->a0()V
+    invoke-super {p0}, Lwc/t1;->a0()V
 
     .line 4
-    iget-object v0, p0, Lnd/b;->g0:Ljava/util/HashMap;
+    iget-object v0, p0, Lnd/b;->h0:Ljava/util/HashMap;
 
     if-eqz v0, :cond_0
 
@@ -720,7 +720,7 @@
 
     const-string p2, "view"
 
-    invoke-static {p1, p2}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p2}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->I()Landroid/content/res/Resources;
@@ -729,9 +729,9 @@
 
     const-string p2, "resources"
 
-    invoke-static {p1, p2}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p2}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-static {p1}, Lcom/android/billingclient/api/c0;->k(Landroid/content/res/Resources;)Z
+    invoke-static {p1}, Lcom/android/billingclient/api/b0;->l(Landroid/content/res/Resources;)Z
 
     move-result p1
 
@@ -749,7 +749,7 @@
     move-result p1
 
     .line 3
-    iget-object p2, p0, Landroidx/fragment/app/Fragment;->A:Landroidx/fragment/app/Fragment;
+    iget-object p2, p0, Landroidx/fragment/app/Fragment;->B:Landroidx/fragment/app/Fragment;
 
     .line 4
     instance-of v0, p2, Lcom/supercell/id/ui/messages/MessagesFragment;
@@ -783,7 +783,7 @@
 
     .line 7
     :cond_1
-    iget-object p1, p0, Lnd/b;->f0:Ljava/util/List;
+    iget-object p1, p0, Lnd/b;->g0:Ljava/util/List;
 
     invoke-virtual {p0, p1}, Lnd/b;->V0(Ljava/util/List;)V
 
@@ -809,7 +809,7 @@
 
     const-string v0, "messagesList"
 
-    invoke-static {p2, v0}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     new-instance v1, Lcom/supercell/id/ui/profile/LinearLayoutManagerWrapper;
 
@@ -828,18 +828,18 @@
 
     check-cast p1, Landroidx/recyclerview/widget/RecyclerView;
 
-    invoke-static {p1, v0}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     new-instance p2, Lnd/b$a;
 
-    iget-object v0, p0, Lnd/b;->f0:Ljava/util/List;
+    iget-object v0, p0, Lnd/b;->g0:Ljava/util/List;
 
     if-eqz v0, :cond_2
 
     goto :goto_0
 
     :cond_2
-    sget-object v0, Lje/l;->f:Lje/l;
+    sget-object v0, Lje/l;->g:Lje/l;
 
     :goto_0
     invoke-direct {p2, p0, v0}, Lnd/b$a;-><init>(Lnd/b;Ljava/util/List;)V
@@ -853,13 +853,13 @@
 
     move-result-object p2
 
-    invoke-virtual {p2}, Lae/u;->k()Lbe/o0;
+    invoke-virtual {p2}, Lae/u;->k()Lbe/q0;
 
     move-result-object p2
 
-    iget-object v0, p0, Lnd/b;->d0:Lnd/b$c;
+    iget-object v0, p0, Lnd/b;->e0:Lnd/b$c;
 
-    invoke-virtual {p2, v0}, Lbe/v0;->b(Lre/l;)V
+    invoke-virtual {p2, v0}, Lbe/x0;->b(Lre/l;)V
 
     .line 12
     invoke-virtual {p1}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lae/u;
@@ -870,9 +870,9 @@
 
     move-result-object p1
 
-    iget-object p2, p0, Lnd/b;->e0:Lnd/b$b;
+    iget-object p2, p0, Lnd/b;->f0:Lnd/b$b;
 
-    invoke-virtual {p1, p2}, Lbe/v0;->b(Lre/l;)V
+    invoke-virtual {p1, p2}, Lbe/x0;->b(Lre/l;)V
 
     .line 13
     invoke-virtual {p0}, Lnd/b;->U0()V

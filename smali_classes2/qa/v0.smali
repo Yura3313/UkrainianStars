@@ -33,7 +33,7 @@
     iget-object v0, p0, Lqa/v0;->a:Lqa/e1;
 
     .line 3
-    iget-object v0, v0, Lqa/e1;->j0:Lqa/g1;
+    iget-object v0, v0, Lqa/e1;->k0:Lqa/g1;
 
     .line 4
     invoke-virtual {p1}, Lqb/r;->d()Ljava/lang/String;
@@ -62,7 +62,7 @@
     iget-object v0, p0, Lqa/v0;->a:Lqa/e1;
 
     .line 8
-    iget-object v0, v0, Lqa/e1;->j0:Lqa/g1;
+    iget-object v0, v0, Lqa/e1;->k0:Lqa/g1;
 
     .line 9
     iget p1, p1, Lqb/r;->d:I

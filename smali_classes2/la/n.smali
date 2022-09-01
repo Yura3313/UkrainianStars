@@ -20,7 +20,7 @@
 .method public final run()V
     .locals 0
 
-    invoke-static {}, Lib/e;->a()V
+    invoke-static {}, Lib/e;->c()V
 
     return-void
 .end method

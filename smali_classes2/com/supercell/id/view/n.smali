@@ -4,14 +4,14 @@
 
 
 # instance fields
-.field public final synthetic f:Lcom/supercell/id/view/ViewAnimator;
+.field public final synthetic g:Lcom/supercell/id/view/ViewAnimator;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/id/view/ViewAnimator;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/view/n;->f:Lcom/supercell/id/view/ViewAnimator;
+    iput-object p1, p0, Lcom/supercell/id/view/n;->g:Lcom/supercell/id/view/ViewAnimator;
 
     invoke-direct {p0}, Landroid/animation/AnimatorListenerAdapter;-><init>()V
 
@@ -31,9 +31,9 @@
 
     const-string v0, "animation"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    iget-object p1, p0, Lcom/supercell/id/view/n;->f:Lcom/supercell/id/view/ViewAnimator;
+    iget-object p1, p0, Lcom/supercell/id/view/n;->g:Lcom/supercell/id/view/ViewAnimator;
 
     invoke-virtual {p1}, Landroid/view/View;->requestLayout()V
 

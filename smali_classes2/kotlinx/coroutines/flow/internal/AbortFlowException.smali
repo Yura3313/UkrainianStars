@@ -20,7 +20,7 @@
     .locals 1
 
     .line 1
-    sget-boolean v0, Lze/b0;->a:Z
+    sget-boolean v0, Lze/c0;->a:Z
 
     if-eqz v0, :cond_0
 

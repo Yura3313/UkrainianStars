@@ -4,7 +4,7 @@
 
 
 # direct methods
-.method public static final h(Ljava/lang/String;Ljava/lang/String;)Z
+.method public static final i(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 0
 
     if-nez p0, :cond_1
@@ -29,12 +29,12 @@
     return p0
 .end method
 
-.method public static final i(Ljava/lang/CharSequence;)Z
+.method public static final j(Ljava/lang/CharSequence;)Z
     .locals 4
 
     const-string v0, "$this$isBlank"
 
-    invoke-static {p0, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     invoke-interface {p0}, Ljava/lang/CharSequence;->length()I
@@ -104,7 +104,7 @@
 
     move-result v3
 
-    invoke-static {v3}, Lcom/google/android/play/core/assetpacks/o2;->h(C)Z
+    invoke-static {v3}, Lt3/h;->f(C)Z
 
     move-result v3
 
@@ -122,16 +122,16 @@
     return v1
 .end method
 
-.method public static final j(Ljava/lang/String;Ljava/lang/String;IIZ)Z
+.method public static final k(Ljava/lang/String;Ljava/lang/String;IIZ)Z
     .locals 6
 
     const-string v0, "$this$regionMatches"
 
-    invoke-static {p0, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "other"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     if-nez p4, :cond_0
 
@@ -166,13 +166,13 @@
     return p0
 .end method
 
-.method public static k(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+.method public static l(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 2
 
     const-string v0, "$this$replace"
 
     .line 1
-    invoke-static {p0, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/4 v0, 0x1
 
@@ -185,28 +185,28 @@
     const/4 p1, 0x4
 
     .line 2
-    invoke-static {p0, v0, v1, v1, p1}, Lye/r;->A(Ljava/lang/CharSequence;[Ljava/lang/String;ZII)Lxe/d;
+    invoke-static {p0, v0, v1, v1, p1}, Lye/r;->B(Ljava/lang/CharSequence;[Ljava/lang/String;ZII)Lxe/d;
 
     move-result-object p0
 
-    invoke-static {p0, p2}, Lxe/k;->e(Lxe/d;Ljava/lang/CharSequence;)Ljava/lang/String;
+    invoke-static {p0, p2}, Lxe/k;->d(Lxe/d;Ljava/lang/CharSequence;)Ljava/lang/String;
 
     move-result-object p0
 
     return-object p0
 .end method
 
-.method public static l(Ljava/lang/String;Ljava/lang/String;)Z
+.method public static m(Ljava/lang/String;Ljava/lang/String;)Z
     .locals 1
 
     const-string v0, "$this$startsWith"
 
     .line 1
-    invoke-static {p0, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "prefix"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 2
     invoke-virtual {p0, p1}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z

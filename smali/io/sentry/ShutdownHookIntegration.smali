@@ -126,9 +126,9 @@
     .line 4
     new-instance v0, Ljava/lang/Thread;
 
-    new-instance v2, Lio/sentry/d0;
+    new-instance v2, Lio/sentry/e0;
 
-    invoke-direct {v2, p1, p2}, Lio/sentry/d0;-><init>(Lio/sentry/IHub;Lio/sentry/SentryOptions;)V
+    invoke-direct {v2, p1, p2}, Lio/sentry/e0;-><init>(Lio/sentry/IHub;Lio/sentry/SentryOptions;)V
 
     invoke-direct {v0, v2}, Ljava/lang/Thread;-><init>(Ljava/lang/Runnable;)V
 

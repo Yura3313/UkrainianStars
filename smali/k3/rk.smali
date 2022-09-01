@@ -8,14 +8,14 @@
 
 .field public b:Lcom/google/android/gms/internal/ads/y0;
 
-.field public final synthetic c:Lk3/wj;
+.field public final synthetic c:Lk3/xj;
 
 
 # direct methods
-.method public constructor <init>(Lk3/wj;)V
+.method public constructor <init>(Lk3/xj;)V
     .locals 0
 
-    iput-object p1, p0, Lk3/rk;->c:Lk3/wj;
+    iput-object p1, p0, Lk3/rk;->c:Lk3/xj;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

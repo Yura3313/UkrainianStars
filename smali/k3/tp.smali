@@ -1,94 +1,98 @@
 .class public final Lk3/tp;
-.super Lk3/xu0;
+.super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lk3/eo;
+.implements Lk3/mv0;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Lk3/mv0<",
+        "Li1/a;",
+        ">;"
+    }
+.end annotation
 
 
 # instance fields
-.field public m:Ljava/lang/String;
+.field public final a:Lk3/qv0;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lk3/qv0<",
+            "Landroid/content/Context;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public final b:Lk3/qv0;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lk3/qv0<",
+            "Lk3/k9;",
+            ">;"
+        }
+    .end annotation
+.end field
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 1
+.method public constructor <init>(Lk3/qv0;Lk3/qv0;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/Object;",
+            "Lk3/qv0<",
+            "Landroid/content/Context;",
+            ">;",
+            "Lk3/qv0<",
+            "Lk3/k9;",
+            ">;)V"
+        }
+    .end annotation
 
     .line 1
-    invoke-direct {p0}, Lk3/xu0;-><init>()V
-
-    const-string v0, "moov"
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object v0, p0, Lk3/tp;->m:Ljava/lang/String;
+    iput-object p1, p0, Lk3/tp;->a:Lk3/qv0;
+
+    .line 3
+    iput-object p2, p0, Lk3/tp;->b:Lk3/qv0;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final bridge synthetic a()V
-    .locals 0
-
-    return-void
-.end method
-
-.method public final c(Lk3/cg;Ljava/nio/ByteBuffer;JLk3/qn;)V
-    .locals 0
+.method public final get()Ljava/lang/Object;
+    .locals 3
 
     .line 1
-    invoke-virtual {p1}, Lk3/cg;->a()J
+    iget-object v0, p0, Lk3/tp;->a:Lk3/qv0;
 
-    invoke-virtual {p2}, Ljava/nio/Buffer;->remaining()I
+    invoke-interface {v0}, Lk3/qv0;->get()Ljava/lang/Object;
 
-    .line 2
-    invoke-virtual {p2}, Ljava/nio/Buffer;->remaining()I
+    move-result-object v0
 
-    .line 3
-    invoke-virtual {p0, p1, p3, p4, p5}, Lk3/tp;->d(Lk3/cg;JLk3/qn;)V
+    check-cast v0, Landroid/content/Context;
 
-    return-void
-.end method
+    iget-object v1, p0, Lk3/tp;->b:Lk3/qv0;
 
-.method public final d(Lk3/cg;JLk3/qn;)V
-    .locals 2
+    invoke-interface {v1}, Lk3/qv0;->get()Ljava/lang/Object;
 
-    .line 1
-    iput-object p1, p0, Lk3/xu0;->g:Lk3/cg;
+    move-result-object v1
+
+    check-cast v1, Lk3/k9;
 
     .line 2
-    invoke-virtual {p1}, Lk3/cg;->a()J
+    new-instance v2, Li1/a;
 
-    move-result-wide v0
+    invoke-direct {v2, v0, v1}, Li1/a;-><init>(Landroid/content/Context;Lk3/k9;)V
 
-    iput-wide v0, p0, Lk3/xu0;->i:J
-
-    .line 3
-    invoke-virtual {p1}, Lk3/cg;->a()J
-
-    move-result-wide v0
-
-    add-long/2addr v0, p2
-
-    invoke-virtual {p1, v0, v1}, Lk3/cg;->b(J)V
-
-    .line 4
-    invoke-virtual {p1}, Lk3/cg;->a()J
-
-    move-result-wide p1
-
-    iput-wide p1, p0, Lk3/xu0;->j:J
-
-    .line 5
-    iput-object p4, p0, Lk3/xu0;->f:Lk3/qn;
-
-    return-void
-.end method
-
-.method public final getType()Ljava/lang/String;
-    .locals 1
-
-    iget-object v0, p0, Lk3/tp;->m:Ljava/lang/String;
-
-    return-object v0
+    return-object v2
 .end method

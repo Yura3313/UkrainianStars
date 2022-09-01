@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field public h:Z
+.field public i:Z
 
 
 # direct methods
@@ -17,7 +17,7 @@
     const/4 p1, 0x0
 
     .line 2
-    iput-boolean p1, p0, Ls7/e;->h:Z
+    iput-boolean p1, p0, Ls7/e;->i:Z
 
     return-void
 .end method
@@ -28,7 +28,7 @@
     .locals 3
 
     .line 1
-    iget-boolean v0, p0, Ls7/e;->h:Z
+    iget-boolean v0, p0, Ls7/e;->i:Z
 
     const/4 v1, 0x0
 
@@ -39,13 +39,13 @@
     const-string v0, "Application is already in background, so ignore this event"
 
     .line 2
-    invoke-static {v2, v0, v1, v1}, Landroidx/savedstate/d;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v2, v0, v1, v1}, Le5/i;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
 
     return-void
 
     .line 3
     :cond_0
-    sget-object v0, Lcom/helpshift/util/u;->e:Ljava/util/concurrent/atomic/AtomicBoolean;
+    sget-object v0, Lcom/helpshift/util/t;->e:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicBoolean;->get()Z
 
@@ -56,10 +56,10 @@
     const/4 v0, 0x0
 
     .line 4
-    iput-boolean v0, p0, Ls7/e;->h:Z
+    iput-boolean v0, p0, Ls7/e;->i:Z
 
     .line 5
-    iget-object v0, p0, Ls7/a;->g:Ls7/d;
+    iget-object v0, p0, Ls7/a;->h:Ls7/d;
 
     if-nez v0, :cond_1
 
@@ -67,7 +67,7 @@
 
     .line 6
     :cond_1
-    iget-object v1, p0, Ls7/a;->f:Landroid/content/Context;
+    iget-object v1, p0, Ls7/a;->g:Landroid/content/Context;
 
     invoke-interface {v0, v1}, Ls7/d;->b(Landroid/content/Context;)V
 
@@ -77,7 +77,7 @@
     const-string v0, "onManualAppBackgroundAPI is called without calling install API"
 
     .line 7
-    invoke-static {v2, v0, v1, v1}, Landroidx/savedstate/d;->h(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v2, v0, v1, v1}, Le5/i;->j(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Throwable;[Lz9/a;)V
 
     :goto_0
     return-void
@@ -87,7 +87,7 @@
     .locals 3
 
     .line 1
-    iget-boolean v0, p0, Ls7/e;->h:Z
+    iget-boolean v0, p0, Ls7/e;->i:Z
 
     const/4 v1, 0x0
 
@@ -98,13 +98,13 @@
     const-string v0, "Application is already in foreground, so ignore this event"
 
     .line 2
-    invoke-static {v2, v0, v1, v1}, Landroidx/savedstate/d;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v2, v0, v1, v1}, Le5/i;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
 
     return-void
 
     .line 3
     :cond_0
-    sget-object v0, Lcom/helpshift/util/u;->e:Ljava/util/concurrent/atomic/AtomicBoolean;
+    sget-object v0, Lcom/helpshift/util/t;->e:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicBoolean;->get()Z
 
@@ -115,10 +115,10 @@
     const/4 v0, 0x1
 
     .line 4
-    iput-boolean v0, p0, Ls7/e;->h:Z
+    iput-boolean v0, p0, Ls7/e;->i:Z
 
     .line 5
-    iget-object v0, p0, Ls7/a;->g:Ls7/d;
+    iget-object v0, p0, Ls7/a;->h:Ls7/d;
 
     if-nez v0, :cond_1
 
@@ -126,7 +126,7 @@
 
     .line 6
     :cond_1
-    iget-object v1, p0, Ls7/a;->f:Landroid/content/Context;
+    iget-object v1, p0, Ls7/a;->g:Landroid/content/Context;
 
     invoke-interface {v0, v1}, Ls7/d;->a(Landroid/content/Context;)V
 
@@ -136,7 +136,7 @@
     const-string v0, "onManualAppForegroundAPI is called without calling install API"
 
     .line 7
-    invoke-static {v2, v0, v1, v1}, Landroidx/savedstate/d;->h(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v2, v0, v1, v1}, Le5/i;->j(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Throwable;[Lz9/a;)V
 
     :goto_0
     return-void

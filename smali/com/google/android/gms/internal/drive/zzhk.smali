@@ -22,10 +22,10 @@
     .end annotation
 
     .line 1
-    iget-object p1, p1, Lcom/google/android/gms/internal/drive/zzfn;->f:Lcom/google/android/gms/drive/DriveId;
+    iget-object p1, p1, Lcom/google/android/gms/internal/drive/zzfn;->g:Lcom/google/android/gms/drive/DriveId;
 
     .line 2
-    iget p1, p1, Lcom/google/android/gms/drive/DriveId;->i:I
+    iget p1, p1, Lcom/google/android/gms/drive/DriveId;->j:I
 
     if-eqz p1, :cond_0
 

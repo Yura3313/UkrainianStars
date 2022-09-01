@@ -1260,7 +1260,7 @@
     if-nez v0, :cond_1
 
     .line 5
-    sget-object v0, Lo5/d;->g:Lo5/d$f;
+    sget-object v0, Lo5/d;->h:Lo5/d$f;
 
     return-object v0
 
@@ -1300,7 +1300,7 @@
 
     .line 10
     :goto_0
-    sget-object v1, Lo5/d;->g:Lo5/d$f;
+    sget-object v1, Lo5/d;->h:Lo5/d$f;
 
     .line 11
     new-instance v1, Lo5/d$f;

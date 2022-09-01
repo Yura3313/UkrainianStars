@@ -7,7 +7,7 @@
 
 
 # static fields
-.field public static final f:Lk3/e9;
+.field public static final g:Lk3/e9;
 
 
 # direct methods
@@ -18,7 +18,7 @@
 
     invoke-direct {v0}, Lk3/e9;-><init>()V
 
-    sput-object v0, Lk3/e9;->f:Lk3/e9;
+    sput-object v0, Lk3/e9;->g:Lk3/e9;
 
     return-void
 .end method
@@ -38,7 +38,7 @@
 
     sget-object v0, Lcom/google/android/gms/internal/ads/a;->n:Ljava/util/List;
 
-    invoke-static {}, Lj1/q;->o()V
+    invoke-static {}, Lk3/aq0;->b()V
 
     return-void
 .end method

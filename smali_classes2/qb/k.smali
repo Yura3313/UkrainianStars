@@ -28,7 +28,7 @@
     const/4 p1, 0x0
 
     .line 3
-    iput-object p1, p0, Lqb/o;->e:Lp8/b;
+    iput-object p1, p0, Lqb/o;->e:Lp8/c;
 
     .line 4
     invoke-virtual {p0, p0}, Lqb/c;->a(Ljava/lang/Object;)V

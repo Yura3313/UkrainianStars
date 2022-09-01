@@ -4,5 +4,11 @@
 
 
 # virtual methods
-.method public abstract O()V
+.method public abstract g(Landroid/content/Context;)V
+.end method
+
+.method public abstract i(Landroid/content/Context;)V
+.end method
+
+.method public abstract u(Landroid/content/Context;)V
 .end method

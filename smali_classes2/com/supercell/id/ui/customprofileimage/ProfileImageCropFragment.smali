@@ -12,25 +12,25 @@
 
 
 # static fields
-.field public static final synthetic p0:I
+.field public static final synthetic q0:I
 
 
 # instance fields
-.field public h0:Landroid/graphics/Matrix;
-
 .field public i0:Landroid/graphics/Matrix;
 
-.field public j0:Landroid/graphics/RectF;
+.field public j0:Landroid/graphics/Matrix;
 
 .field public k0:Landroid/graphics/RectF;
 
-.field public l0:Ljava/lang/Float;
+.field public l0:Landroid/graphics/RectF;
 
-.field public final m0:Lie/f;
+.field public m0:Ljava/lang/Float;
 
-.field public final n0:Lie/f;
+.field public final n0:Lie/g;
 
-.field public o0:Ljava/util/HashMap;
+.field public final o0:Lie/g;
+
+.field public p0:Ljava/util/HashMap;
 
 
 # direct methods
@@ -45,40 +45,40 @@
 
     invoke-direct {v0}, Landroid/graphics/Matrix;-><init>()V
 
-    iput-object v0, p0, Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment;->h0:Landroid/graphics/Matrix;
+    iput-object v0, p0, Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment;->i0:Landroid/graphics/Matrix;
 
     .line 3
     new-instance v0, Landroid/graphics/Matrix;
 
     invoke-direct {v0}, Landroid/graphics/Matrix;-><init>()V
 
-    iput-object v0, p0, Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment;->i0:Landroid/graphics/Matrix;
+    iput-object v0, p0, Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment;->j0:Landroid/graphics/Matrix;
 
     .line 4
     new-instance v0, Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment$h;
 
     invoke-direct {v0, p0}, Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment$h;-><init>(Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment;)V
 
-    invoke-static {v0}, La5/r;->d(Lre/a;)Lie/c;
+    invoke-static {v0}, Ld2/u;->c(Lre/a;)Lie/c;
 
     move-result-object v0
 
-    check-cast v0, Lie/f;
+    check-cast v0, Lie/g;
 
-    iput-object v0, p0, Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment;->m0:Lie/f;
+    iput-object v0, p0, Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment;->n0:Lie/g;
 
     .line 5
     new-instance v0, Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment$g;
 
     invoke-direct {v0, p0}, Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment$g;-><init>(Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment;)V
 
-    invoke-static {v0}, La5/r;->d(Lre/a;)Lie/c;
+    invoke-static {v0}, Ld2/u;->c(Lre/a;)Lie/c;
 
     move-result-object v0
 
-    check-cast v0, Lie/f;
+    check-cast v0, Lie/g;
 
-    iput-object v0, p0, Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment;->n0:Lie/f;
+    iput-object v0, p0, Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment;->o0:Lie/g;
 
     return-void
 .end method
@@ -87,7 +87,7 @@
     .locals 8
 
     .line 1
-    iget-object v0, p0, Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment;->j0:Landroid/graphics/RectF;
+    iget-object v0, p0, Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment;->k0:Landroid/graphics/RectF;
 
     if-eqz v0, :cond_1
 
@@ -111,7 +111,7 @@
 
     const-string v4, "hole"
 
-    invoke-static {v3, v4}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v3, v4}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v3}, Landroid/view/View;->getWidth()I
 
@@ -123,7 +123,7 @@
 
     move-result-object v5
 
-    invoke-static {v5, v4}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v5, v4}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v5}, Landroid/view/View;->getHeight()I
 
@@ -144,7 +144,7 @@
 
     move-result-object v3
 
-    invoke-static {v3, v4}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v3, v4}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v3}, Landroid/view/View;->getWidth()I
 
@@ -154,7 +154,7 @@
 
     move-result-object v6
 
-    invoke-static {v6, v4}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v6, v4}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v6}, Landroid/view/View;->getHeight()I
 
@@ -173,7 +173,7 @@
 
     move-result-object v1
 
-    invoke-static {v1, v4}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, v4}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v1}, Landroid/view/View;->getHeight()I
 
@@ -192,7 +192,7 @@
 
     move-result-object v5
 
-    invoke-static {v5, v4}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v5, v4}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v5}, Landroid/view/View;->getLeft()I
 
@@ -204,7 +204,7 @@
 
     move-result-object v6
 
-    invoke-static {v6, v4}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v6, v4}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v6}, Landroid/view/View;->getTop()I
 
@@ -218,7 +218,7 @@
 
     move-result-object v7
 
-    invoke-static {v7, v4}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v7, v4}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v7}, Landroid/view/View;->getRight()I
 
@@ -230,7 +230,7 @@
 
     move-result-object v2
 
-    invoke-static {v2, v4}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v2, v4}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v2}, Landroid/view/View;->getBottom()I
 
@@ -250,7 +250,7 @@
 
     move-result-object v3
 
-    invoke-static {v3, v4}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v3, v4}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v3}, Landroid/view/View;->getWidth()I
 
@@ -260,7 +260,7 @@
 
     move-result-object v6
 
-    invoke-static {v6, v4}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v6, v4}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v6}, Landroid/view/View;->getHeight()I
 
@@ -279,7 +279,7 @@
 
     move-result-object v1
 
-    invoke-static {v1, v4}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, v4}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v1}, Landroid/view/View;->getWidth()I
 
@@ -298,7 +298,7 @@
 
     move-result-object v5
 
-    invoke-static {v5, v4}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v5, v4}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v5}, Landroid/view/View;->getLeft()I
 
@@ -312,7 +312,7 @@
 
     move-result-object v6
 
-    invoke-static {v6, v4}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v6, v4}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v6}, Landroid/view/View;->getTop()I
 
@@ -324,7 +324,7 @@
 
     move-result-object v7
 
-    invoke-static {v7, v4}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v7, v4}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v7}, Landroid/view/View;->getRight()I
 
@@ -338,7 +338,7 @@
 
     move-result-object v2
 
-    invoke-static {v2, v4}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v2, v4}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v2}, Landroid/view/View;->getBottom()I
 
@@ -350,16 +350,16 @@
 
     .line 10
     :goto_0
-    iget-object v2, p0, Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment;->i0:Landroid/graphics/Matrix;
+    iget-object v2, p0, Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment;->j0:Landroid/graphics/Matrix;
 
     sget-object v3, Landroid/graphics/Matrix$ScaleToFit;->CENTER:Landroid/graphics/Matrix$ScaleToFit;
 
     invoke-virtual {v2, v0, v1, v3}, Landroid/graphics/Matrix;->setRectToRect(Landroid/graphics/RectF;Landroid/graphics/RectF;Landroid/graphics/Matrix$ScaleToFit;)Z
 
     .line 11
-    iget-object v0, p0, Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment;->i0:Landroid/graphics/Matrix;
+    iget-object v0, p0, Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment;->j0:Landroid/graphics/Matrix;
 
-    invoke-static {v0}, Lk3/sp;->c(Landroid/graphics/Matrix;)[F
+    invoke-static {v0}, Lt5/a;->c(Landroid/graphics/Matrix;)[F
 
     move-result-object v0
 
@@ -373,12 +373,12 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment;->l0:Ljava/lang/Float;
+    iput-object v0, p0, Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment;->m0:Ljava/lang/Float;
 
     .line 14
-    iget-object v0, p0, Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment;->h0:Landroid/graphics/Matrix;
+    iget-object v0, p0, Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment;->i0:Landroid/graphics/Matrix;
 
-    iget-object v2, p0, Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment;->i0:Landroid/graphics/Matrix;
+    iget-object v2, p0, Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment;->j0:Landroid/graphics/Matrix;
 
     invoke-virtual {v0, v2}, Landroid/graphics/Matrix;->set(Landroid/graphics/Matrix;)V
 
@@ -393,14 +393,14 @@
 
     const-string v2, "crop_image"
 
-    invoke-static {v0, v2}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v2}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    iget-object v2, p0, Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment;->h0:Landroid/graphics/Matrix;
+    iget-object v2, p0, Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment;->i0:Landroid/graphics/Matrix;
 
     invoke-virtual {v0, v2}, Landroid/widget/ImageView;->setImageMatrix(Landroid/graphics/Matrix;)V
 
     .line 16
-    iput-object v1, p0, Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment;->k0:Landroid/graphics/RectF;
+    iput-object v1, p0, Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment;->l0:Landroid/graphics/RectF;
 
     :cond_1
     return-void
@@ -411,7 +411,7 @@
 .method public final N0()V
     .locals 1
 
-    iget-object v0, p0, Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment;->o0:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment;->p0:Ljava/util/HashMap;
 
     if-eqz v0, :cond_0
 
@@ -426,7 +426,7 @@
 
     const-string p3, "inflater"
 
-    invoke-static {p1, p3}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p3}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     sget p3, Lcom/supercell/id/R$layout;->fragment_profile_image_crop:I
 
@@ -450,7 +450,7 @@
     move-result-object v0
 
     .line 2
-    iget-object v0, v0, Lae/u;->m:La5/d0;
+    iget-object v0, v0, Lae/u;->m:Lpe/a;
 
     const-string v1, "Profile Picture Crop"
 
@@ -461,7 +461,7 @@
     const/16 v4, 0x18
 
     .line 3
-    invoke-static {v0, v1, v2, v3, v4}, La5/d0;->a(La5/d0;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;I)V
+    invoke-static {v0, v1, v2, v3, v4}, Lpe/a;->e(Lpe/a;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;I)V
 
     const/4 v0, 0x0
 
@@ -473,7 +473,7 @@
 
     invoke-super {p0}, Lcom/supercell/id/ui/BaseFragment;->a0()V
 
-    iget-object v0, p0, Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment;->o0:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment;->p0:Ljava/util/HashMap;
 
     if-eqz v0, :cond_0
 
@@ -486,7 +486,7 @@
 .method public final f1(I)Landroid/view/View;
     .locals 2
 
-    iget-object v0, p0, Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment;->o0:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment;->p0:Ljava/util/HashMap;
 
     if-nez v0, :cond_0
 
@@ -494,10 +494,10 @@
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    iput-object v0, p0, Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment;->o0:Ljava/util/HashMap;
+    iput-object v0, p0, Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment;->p0:Ljava/util/HashMap;
 
     :cond_0
-    iget-object v0, p0, Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment;->o0:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment;->p0:Ljava/util/HashMap;
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -512,7 +512,7 @@
     if-nez v0, :cond_2
 
     .line 1
-    iget-object v0, p0, Landroidx/fragment/app/Fragment;->M:Landroid/view/View;
+    iget-object v0, p0, Landroidx/fragment/app/Fragment;->N:Landroid/view/View;
 
     if-nez v0, :cond_1
 
@@ -526,7 +526,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment;->o0:Ljava/util/HashMap;
+    iget-object v1, p0, Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment;->p0:Ljava/util/HashMap;
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -552,7 +552,7 @@
 
     move-object/from16 v2, p1
 
-    invoke-static {v2, v1}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v2, v1}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     invoke-super/range {p0 .. p2}, Lcom/supercell/id/ui/BaseFragment;->k0(Landroid/view/View;Landroid/os/Bundle;)V
@@ -567,7 +567,7 @@
     if-eqz v1, :cond_0
 
     .line 3
-    iget-object v1, v1, Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment$BackStackEntry;->j:Landroid/net/Uri;
+    iget-object v1, v1, Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment$BackStackEntry;->k:Landroid/net/Uri;
 
     if-eqz v1, :cond_0
 
@@ -595,9 +595,9 @@
 
     const-string v4, "hole"
 
-    invoke-static {v3, v4}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v3, v4}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    sget-object v5, Luc/p;->k:Luc/p$c;
+    sget-object v5, Luc/o;->k:Luc/o$c;
 
     invoke-virtual/range {p0 .. p0}, Landroidx/fragment/app/Fragment;->z0()Landroid/content/Context;
 
@@ -608,7 +608,7 @@
     int-to-float v7, v6
 
     .line 6
-    sget v8, La5/g0;->a:F
+    sget v8, La5/e0;->g:F
 
     mul-float v7, v7, v8
 
@@ -632,7 +632,7 @@
 
     move-result-object v11
 
-    invoke-static {v15, v10, v11}, Lj1/b;->c(Landroid/graphics/Path;Ljava/lang/Number;Ljava/lang/Number;)Landroid/graphics/Path;
+    invoke-static {v15, v10, v11}, Lcom/google/android/material/internal/c;->c(Landroid/graphics/Path;Ljava/lang/Number;Ljava/lang/Number;)Landroid/graphics/Path;
 
     .line 9
     invoke-static {v6}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -643,7 +643,7 @@
 
     move-result-object v11
 
-    invoke-static {v15, v10, v11}, Lj1/b;->b(Landroid/graphics/Path;Ljava/lang/Number;Ljava/lang/Number;)Landroid/graphics/Path;
+    invoke-static {v15, v10, v11}, Lcom/google/android/material/internal/c;->b(Landroid/graphics/Path;Ljava/lang/Number;Ljava/lang/Number;)Landroid/graphics/Path;
 
     const/16 v17, 0x200
 
@@ -656,7 +656,7 @@
 
     move-result-object v11
 
-    invoke-static {v15, v10, v11}, Lj1/b;->b(Landroid/graphics/Path;Ljava/lang/Number;Ljava/lang/Number;)Landroid/graphics/Path;
+    invoke-static {v15, v10, v11}, Lcom/google/android/material/internal/c;->b(Landroid/graphics/Path;Ljava/lang/Number;Ljava/lang/Number;)Landroid/graphics/Path;
 
     .line 11
     invoke-static/range {v17 .. v17}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -667,7 +667,7 @@
 
     move-result-object v11
 
-    invoke-static {v15, v10, v11}, Lj1/b;->b(Landroid/graphics/Path;Ljava/lang/Number;Ljava/lang/Number;)Landroid/graphics/Path;
+    invoke-static {v15, v10, v11}, Lcom/google/android/material/internal/c;->b(Landroid/graphics/Path;Ljava/lang/Number;Ljava/lang/Number;)Landroid/graphics/Path;
 
     const-wide v18, 0x4088d628f5c28f5cL    # 794.77
 
@@ -706,7 +706,7 @@
 
     move-object/from16 v16, v20
 
-    invoke-static/range {v10 .. v16}, Lj1/b;->a(Landroid/graphics/Path;Ljava/lang/Number;Ljava/lang/Number;Ljava/lang/Number;Ljava/lang/Number;Ljava/lang/Number;Ljava/lang/Number;)Landroid/graphics/Path;
+    invoke-static/range {v10 .. v16}, Lcom/google/android/material/internal/c;->a(Landroid/graphics/Path;Ljava/lang/Number;Ljava/lang/Number;Ljava/lang/Number;Ljava/lang/Number;Ljava/lang/Number;Ljava/lang/Number;)Landroid/graphics/Path;
 
     .line 13
     invoke-static {v6}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -737,7 +737,7 @@
 
     move-object/from16 v10, p1
 
-    invoke-static/range {v10 .. v16}, Lj1/b;->a(Landroid/graphics/Path;Ljava/lang/Number;Ljava/lang/Number;Ljava/lang/Number;Ljava/lang/Number;Ljava/lang/Number;Ljava/lang/Number;)Landroid/graphics/Path;
+    invoke-static/range {v10 .. v16}, Lcom/google/android/material/internal/c;->a(Landroid/graphics/Path;Ljava/lang/Number;Ljava/lang/Number;Ljava/lang/Number;Ljava/lang/Number;Ljava/lang/Number;Ljava/lang/Number;)Landroid/graphics/Path;
 
     .line 14
     invoke-static/range {v22 .. v23}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
@@ -764,7 +764,7 @@
 
     move-result-object v16
 
-    invoke-static/range {v10 .. v16}, Lj1/b;->a(Landroid/graphics/Path;Ljava/lang/Number;Ljava/lang/Number;Ljava/lang/Number;Ljava/lang/Number;Ljava/lang/Number;Ljava/lang/Number;)Landroid/graphics/Path;
+    invoke-static/range {v10 .. v16}, Lcom/google/android/material/internal/c;->a(Landroid/graphics/Path;Ljava/lang/Number;Ljava/lang/Number;Ljava/lang/Number;Ljava/lang/Number;Ljava/lang/Number;Ljava/lang/Number;)Landroid/graphics/Path;
 
     .line 15
     invoke-static/range {v21 .. v21}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -791,7 +791,7 @@
 
     move-result-object v16
 
-    invoke-static/range {v10 .. v16}, Lj1/b;->a(Landroid/graphics/Path;Ljava/lang/Number;Ljava/lang/Number;Ljava/lang/Number;Ljava/lang/Number;Ljava/lang/Number;Ljava/lang/Number;)Landroid/graphics/Path;
+    invoke-static/range {v10 .. v16}, Lcom/google/android/material/internal/c;->a(Landroid/graphics/Path;Ljava/lang/Number;Ljava/lang/Number;Ljava/lang/Number;Ljava/lang/Number;Ljava/lang/Number;Ljava/lang/Number;)Landroid/graphics/Path;
 
     .line 16
     invoke-static/range {v21 .. v21}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -804,7 +804,7 @@
 
     move-object/from16 v12, p1
 
-    invoke-static {v12, v10, v11}, Lj1/b;->b(Landroid/graphics/Path;Ljava/lang/Number;Ljava/lang/Number;)Landroid/graphics/Path;
+    invoke-static {v12, v10, v11}, Lcom/google/android/material/internal/c;->b(Landroid/graphics/Path;Ljava/lang/Number;Ljava/lang/Number;)Landroid/graphics/Path;
 
     .line 17
     invoke-static/range {v21 .. v21}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -815,7 +815,7 @@
 
     move-result-object v11
 
-    invoke-static {v12, v10, v11}, Lj1/b;->b(Landroid/graphics/Path;Ljava/lang/Number;Ljava/lang/Number;)Landroid/graphics/Path;
+    invoke-static {v12, v10, v11}, Lcom/google/android/material/internal/c;->b(Landroid/graphics/Path;Ljava/lang/Number;Ljava/lang/Number;)Landroid/graphics/Path;
 
     .line 18
     invoke-static {v6}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -826,13 +826,13 @@
 
     move-result-object v10
 
-    invoke-static {v12, v6, v10}, Lj1/b;->b(Landroid/graphics/Path;Ljava/lang/Number;Ljava/lang/Number;)Landroid/graphics/Path;
+    invoke-static {v12, v6, v10}, Lcom/google/android/material/internal/c;->b(Landroid/graphics/Path;Ljava/lang/Number;Ljava/lang/Number;)Landroid/graphics/Path;
 
     .line 19
     invoke-virtual {v12}, Landroid/graphics/Path;->close()V
 
     .line 20
-    invoke-static {v12}, Lj1/b;->q(Landroid/graphics/Path;)Landroid/graphics/Path;
+    invoke-static {v12}, Lcom/google/android/material/internal/c;->q(Landroid/graphics/Path;)Landroid/graphics/Path;
 
     .line 21
     new-instance v6, Landroid/graphics/Paint;
@@ -851,7 +851,7 @@
     sget v10, Lcom/supercell/id/R$color;->blackTranslucent60:I
 
     .line 25
-    invoke-static {v5, v10, v6, v12, v6}, Luc/q;->a(Landroid/content/Context;ILandroid/graphics/Paint;Landroid/graphics/Path;Landroid/graphics/Paint;)Lie/d;
+    invoke-static {v5, v10, v6, v12, v6}, Luc/p;->a(Landroid/content/Context;ILandroid/graphics/Paint;Landroid/graphics/Path;Landroid/graphics/Paint;)Lie/d;
 
     move-result-object v5
 
@@ -860,11 +860,11 @@
     aput-object v5, v9, v6
 
     .line 26
-    new-instance v5, Luc/p;
+    new-instance v5, Luc/o;
 
     const-string v10, "Hole"
 
-    invoke-direct {v5, v10, v7, v7, v9}, Luc/p;-><init>(Ljava/lang/String;FF[Lie/d;)V
+    invoke-direct {v5, v10, v7, v7, v9}, Luc/o;-><init>(Ljava/lang/String;FF[Lie/d;)V
 
     .line 27
     invoke-virtual {v3, v5}, Landroid/view/View;->setBackground(Landroid/graphics/drawable/Drawable;)V
@@ -880,7 +880,7 @@
 
     const-string v5, "crop_image"
 
-    invoke-static {v3, v5}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v3, v5}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     sget-object v5, Landroid/widget/ImageView$ScaleType;->MATRIX:Landroid/widget/ImageView$ScaleType;
 
@@ -945,7 +945,7 @@
 
     const-string v3, "title"
 
-    invoke-static {v1, v3}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, v3}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     sget v3, Lcom/supercell/id/R$id;->body:I
 
@@ -962,7 +962,7 @@
 
     const-string v5, "button_container"
 
-    invoke-static {v1, v5}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, v5}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/4 v5, 0x2
 
@@ -973,13 +973,13 @@
 
     move-result-object v1
 
-    invoke-static {v1, v4}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, v4}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     new-instance v2, Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment$f;
 
     invoke-direct {v2, v0}, Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment$f;-><init>(Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment;)V
 
-    invoke-static {v1, v2}, Lae/z2;->o(Landroid/view/View;Lae/x;)V
+    invoke-static {v1, v2}, Lae/z2;->o(Landroid/view/View;Lae/w;)V
 
     :cond_0
     return-void

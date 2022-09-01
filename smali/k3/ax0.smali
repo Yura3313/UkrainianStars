@@ -1,45 +1,59 @@
 .class public final Lk3/ax0;
-.super Ljava/lang/Object;
+.super Lk3/ww0;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
-
-# interfaces
-.implements Ljava/lang/Runnable;
-
-
-# instance fields
-.field public final synthetic f:Lk3/qx0;
-
-.field public final synthetic g:Lk3/xf;
 
 
 # direct methods
-.method public constructor <init>(Lk3/xf;Lk3/qx0;)V
+.method public constructor <init>()V
     .locals 0
 
-    iput-object p1, p0, Lk3/ax0;->g:Lk3/xf;
-
-    iput-object p2, p0, Lk3/ax0;->f:Lk3/qx0;
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Lk3/ww0;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final run()V
+.method public final c(ILk3/zw0;Z)Lk3/zw0;
+    .locals 0
+
+    new-instance p1, Ljava/lang/IndexOutOfBoundsException;
+
+    invoke-direct {p1}, Ljava/lang/IndexOutOfBoundsException;-><init>()V
+
+    throw p1
+.end method
+
+.method public final e(ILk3/bx0;)Lk3/bx0;
+    .locals 0
+
+    new-instance p1, Ljava/lang/IndexOutOfBoundsException;
+
+    invoke-direct {p1}, Ljava/lang/IndexOutOfBoundsException;-><init>()V
+
+    throw p1
+.end method
+
+.method public final f(Ljava/lang/Object;)I
+    .locals 0
+
+    const/4 p1, -0x1
+
+    return p1
+.end method
+
+.method public final g()I
     .locals 1
 
-    .line 1
-    iget-object v0, p0, Lk3/ax0;->g:Lk3/xf;
+    const/4 v0, 0x0
 
-    .line 2
-    iget-object v0, v0, Lk3/xf;->g:Ljava/lang/Object;
+    return v0
+.end method
 
-    check-cast v0, Lk3/zw0;
+.method public final h()I
+    .locals 1
 
-    .line 3
-    invoke-interface {v0}, Lk3/zw0;->a()V
+    const/4 v0, 0x0
 
-    return-void
+    return v0
 .end method

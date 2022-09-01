@@ -257,7 +257,7 @@
 
     .line 7
     :cond_2
-    invoke-static {p1}, La0/a;->g(Ljava/lang/String;)Z
+    invoke-static {p1}, Lr3/r4;->c(Ljava/lang/String;)Z
 
     move-result p3
 
@@ -310,7 +310,7 @@
     if-eqz p3, :cond_6
 
     .line 10
-    sget-object p3, Lcom/helpshift/util/u;->d:Le8/j;
+    sget-object p3, Lcom/helpshift/util/t;->d:Le8/j;
 
     .line 11
     invoke-virtual {p3}, Le8/j;->e()Lt9/c;
@@ -321,13 +321,13 @@
     new-instance v0, Lbb/i;
 
     .line 13
-    sget-object v1, Lcom/helpshift/util/u;->c:Le7/g;
+    sget-object v1, Lcom/helpshift/util/t;->c:Le7/g;
 
     .line 14
     iget-object v1, v1, Le7/g;->f:La8/f;
 
     .line 15
-    sget-object v3, Lcom/helpshift/util/u;->d:Le8/j;
+    sget-object v3, Lcom/helpshift/util/t;->d:Le8/j;
 
     .line 16
     invoke-direct {v0, p1, p3, v1, v3}, Lbb/i;-><init>(Ljava/lang/String;Lt9/c;La8/f;Le8/s;)V
@@ -394,7 +394,7 @@
     const-string p3, "Rejected execution of image loader task"
 
     .line 23
-    invoke-static {p2, p3, p1}, Landroidx/savedstate/d;->g(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {p2, p3, p1}, Le5/i;->i(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
     :cond_7
     :goto_3
@@ -488,7 +488,7 @@
     const-string p3, "Rejected execution of image loader task"
 
     .line 11
-    invoke-static {p2, p3, p1}, Landroidx/savedstate/d;->g(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {p2, p3, p1}, Le5/i;->i(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
     :goto_0
     return-void

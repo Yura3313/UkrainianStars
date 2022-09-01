@@ -1,5 +1,5 @@
 .class public final Lvd/b$o;
-.super Lse/h;
+.super Lse/i;
 .source "SettingsGeneralTabFragment.kt"
 
 # interfaces
@@ -18,17 +18,17 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/l<",
-        "Lvc/v;",
-        "Lie/h;",
+        "Lvc/u;",
+        "Lie/i;",
         ">;"
     }
 .end annotation
 
 
 # static fields
-.field public static final f:Lvd/b$o;
+.field public static final g:Lvd/b$o;
 
 
 # direct methods
@@ -39,7 +39,7 @@
 
     invoke-direct {v0}, Lvd/b$o;-><init>()V
 
-    sput-object v0, Lvd/b$o;->f:Lvd/b$o;
+    sput-object v0, Lvd/b$o;->g:Lvd/b$o;
 
     return-void
 .end method
@@ -49,7 +49,7 @@
 
     const/4 v0, 0x1
 
-    invoke-direct {p0, v0}, Lse/h;-><init>(I)V
+    invoke-direct {p0, v0}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -60,15 +60,15 @@
     .locals 1
 
     .line 1
-    check-cast p1, Lvc/v;
+    check-cast p1, Lvc/u;
 
     const-string v0, "it"
 
     .line 2
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 3
-    sget-object p1, Lie/h;->a:Lie/h;
+    sget-object p1, Lie/i;->a:Lie/i;
 
     return-object p1
 .end method

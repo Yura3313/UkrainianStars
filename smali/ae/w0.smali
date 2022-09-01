@@ -1,34 +1,39 @@
 .class public final Lae/w0;
-.super Lse/h;
+.super Lse/i;
 .source "NotificationQueue.kt"
 
 # interfaces
 .implements Lre/l;
 
 
-# static fields
-.field public static final f:Lae/w0;
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lse/i;",
+        "Lre/l<",
+        "Ljava/util/List<",
+        "+",
+        "Landroid/graphics/Bitmap;",
+        ">;",
+        "Lvc/m$j;",
+        ">;"
+    }
+.end annotation
+
+
+# instance fields
+.field public final synthetic g:Lvc/m$j;
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 1
+.method public constructor <init>(Lvc/m$j;)V
+    .locals 0
 
-    new-instance v0, Lae/w0;
+    iput-object p1, p0, Lae/w0;->g:Lvc/m$j;
 
-    invoke-direct {v0}, Lae/w0;-><init>()V
+    const/4 p1, 0x1
 
-    sput-object v0, Lae/w0;->f:Lae/w0;
-
-    return-void
-.end method
-
-.method public constructor <init>()V
-    .locals 1
-
-    const/4 v0, 0x1
-
-    invoke-direct {p0, v0}, Lse/h;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -36,15 +41,11 @@
 
 # virtual methods
 .method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 1
+    .locals 0
 
-    check-cast p1, Ljava/lang/Exception;
+    check-cast p1, Ljava/util/List;
 
-    const-string v0, "it"
-
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const/4 p1, 0x0
+    iget-object p1, p0, Lae/w0;->g:Lvc/m$j;
 
     return-object p1
 .end method

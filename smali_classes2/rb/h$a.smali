@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field public final synthetic f:Lrb/h;
+.field public final synthetic g:Lrb/h;
 
 
 # direct methods
 .method public constructor <init>(Lrb/h;)V
     .locals 0
 
-    iput-object p1, p0, Lrb/h$a;->f:Lrb/h;
+    iput-object p1, p0, Lrb/h$a;->g:Lrb/h;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -51,7 +51,7 @@
     if-ne v2, v3, :cond_10
 
     .line 2
-    iget-object v2, v1, Lrb/h$a;->f:Lrb/h;
+    iget-object v2, v1, Lrb/h$a;->g:Lrb/h;
 
     iget-object v0, v0, Landroid/os/Message;->obj:Ljava/lang/Object;
 
@@ -461,7 +461,7 @@
     if-ne v2, v0, :cond_11
 
     .line 44
-    iget-object v0, v1, Lrb/h$a;->f:Lrb/h;
+    iget-object v0, v1, Lrb/h$a;->g:Lrb/h;
 
     .line 45
     invoke-virtual {v0}, Lrb/h;->a()V

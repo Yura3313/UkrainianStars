@@ -1,18 +1,18 @@
 .class public final Lje/v;
-.super Lcom/helpshift/util/r;
+.super La5/u;
 
 
 # direct methods
-.method public static final g(Ljava/util/Set;Ljava/lang/Iterable;)Ljava/util/Set;
+.method public static final h(Ljava/util/Set;Ljava/lang/Iterable;)Ljava/util/Set;
     .locals 2
 
     const-string v0, "$this$plus"
 
-    invoke-static {p0, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "elements"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     instance-of v0, p1, Ljava/util/Collection;
@@ -60,7 +60,7 @@
     mul-int/lit8 v1, v0, 0x2
 
     :goto_1
-    invoke-static {v1}, Lcom/google/android/play/core/assetpacks/o2;->i(I)I
+    invoke-static {v1}, Lt3/h;->g(I)I
 
     move-result v0
 
@@ -72,17 +72,17 @@
     invoke-virtual {v1, p0}, Ljava/util/AbstractCollection;->addAll(Ljava/util/Collection;)Z
 
     .line 4
-    invoke-static {v1, p1}, Lje/h;->u(Ljava/util/Collection;Ljava/lang/Iterable;)Z
+    invoke-static {v1, p1}, Lje/h;->p(Ljava/util/Collection;Ljava/lang/Iterable;)Z
 
     return-object v1
 .end method
 
-.method public static final h(Ljava/util/Set;Ljava/lang/Object;)Ljava/util/Set;
+.method public static final i(Ljava/util/Set;Ljava/lang/Object;)Ljava/util/Set;
     .locals 2
 
     const-string v0, "$this$plus"
 
-    invoke-static {p0, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     new-instance v0, Ljava/util/LinkedHashSet;
@@ -93,7 +93,7 @@
 
     add-int/lit8 v1, v1, 0x1
 
-    invoke-static {v1}, Lcom/google/android/play/core/assetpacks/o2;->i(I)I
+    invoke-static {v1}, Lt3/h;->g(I)I
 
     move-result v1
 

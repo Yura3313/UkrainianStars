@@ -1625,7 +1625,7 @@ TID_BARREL_BOT_WEAPON_DESC,Dua senapan sebar Darryl menyemburkan ledakan dua tah
 TID_BARREL_BOT_ULTI,TONG GELINDING
 TID_BARREL_BOT_ULTI_DESC,Darryl menggelinding maju dalam badan tongnya dan akan memantul di tembok! Lawan yang ada di jalurnya akan terhantam mundur dan kerusakan yang diterima akan berkurang. Bilah kekuatan Super miliknya akan terisi ulang seiring waktu!
 TID_ARTILLERY_DUDE,PENNY
-TID_ARTILLERY_DUDE_DESC,"Hidup di lautan lepas, Penny haus tantangan, berjiwa petualang, dan tidak mau dikekang. Berhati-hatilah karena dia tidak akan segan-segan menjarah kapal mana saja yang melintas!"
+TID_ARTILLERY_DUDE_DESC,"Hidup di \qlautan lepas\q, Penny haus tantangan, berjiwa petualang, dan tidak mau dikekang. Berhati-hatilah karena dia tidak akan segan-segan menjarah kapal mana saja yang melintas!"
 TID_ARTILLERY_DUDE_WEAPON,PLUNDERBUSS
 TID_ARTILLERY_DUDE_WEAPON_DESC,"Menembakkan kantung berisi emas palsu. Jika mengenai lawan, akan terbuka dan keping koinnya akan mengincar lawan di belakangnya."
 TID_ARTILLERY_DUDE_ULTI,MERIAM SALVO
@@ -1792,7 +1792,7 @@ TID_HINT_1,Kamu bisa MENGETUK <cff9900>KONTROL KUNING</c> untuk MENEMBAK CEPAT l
 TID_HINT_2,Kamu bisa MENYERET <ccc0033>KONTROL MERAH</c> untuk MEMBIDIK tembakan.
 TID_HINT_3,Kamu bisa MENYERET <cff9900>KONTROL KUNING</c> untuk MEMBIDIK Super.
 TID_HINT_4,Kamu bisa membatalkan bidikan dengan mengembalikan kontrol ke tengah.
-TID_HINT_5,"Pencarian lawan dilakukan berdasar pada jumlah Trofi Jagoan yang dimainkan. Oleh karena itu, Trofi bisa didapatkan lebih mudah dengan Jagoan yang baru didapatkan."
+TID_HINT_5,"Pencarian lawan dilakukan berdasarkan jumlah Trofi Jagoan yang dimainkan. Oleh karena itu, Trofi bisa didapatkan lebih mudah dengan Jagoan yang baru didapatkan."
 TID_HINT_6,Mendapatkan lebih banyak Jagoan akan memudahkanmu meraih lebih banyak total Trofi dan Hadiah.
 TID_HINT_7,"Semakin jauh jarak tembakan Piper, kerusakan jadi semakin besar."
 TID_HINT_8,Serangan Super Barley semakin kuat pada jarak dekat karena botol jatuh di area yang lebih kecil.
@@ -1808,7 +1808,7 @@ TID_HINT_17,Membidik tembakan bagus saat kamu menembak ke arah semak-semak untuk
 TID_HINT_18,TEMBAK CEPAT bekerja sangat baik pada lawan yang tidak bergerak.
 TID_HINT_19,TEMBAK CEPAT bekerja sangat baik pada lawan yang bergerak lurus mendekat maupun menjauh.
 TID_HINT_20,"Saat berada di semak, kamu akan terlihat lawan saat kamu menembak atau terkena serangan."
-TID_HINT_21,Gunakan semak untuk bersembunyi dari lawan.
+TID_HINT_21,Gunakan semak untuk bersembunyi dari lawan dan menemukan kesempatan untuk menyembuhkan diri.
 TID_HINT_22,"Dengan TEMBAK CEPAT, kamu masih akan menembak meski tak ada lawan dalam jangkauanmu."
 TID_VS_TUTORIAL,Kumpulkan semua <c50d050>KUBUS KEKUATAN</c>!
 TID_USE_MANUAL_FIRE_TUTORIAL,SERET <ccc0033>KONTROL MERAH</c> untuk membidik!
@@ -1863,7 +1863,7 @@ TID_GATCHA_AD_CONTINUE_BUTTON_TITLE,LANJUTKAN
 TID_AD_DOUBLER_TITLE,PILIH HADIAH UNTUK DIGANDAKAN
 TID_AD_DOUBLER_CONTINUE,LANJUTKAN
 TID_GATCHA_CONTINUE,LANJUT
-TID_HINT_23,Beberapa Jagoan unggul di beberapa peta dan acara daripada Jagoan lain.
+TID_HINT_23,Beberapa Jagoan lebih unggul di beberapa peta dan acara daripada Jagoan lain.
 TID_HINT_24,Jagoan berjangkauan jauh secara umum lebih baik di peta terbuka.
 TID_HINT_25,Jagoan berjangkauan dekat secara umum lebih baik di peta dengan banyak halangan dan semak.
 TID_SPEC_ABI_SELF_DESTRUCT,LEDAKAN TERAKHIR
@@ -1966,7 +1966,7 @@ TID_ADD_FRIEND_ERROR_TOO_MANY_FRIENDS_YOU,Temanmu terlalu banyak. Hapus satu jik
 TID_HINT_26,Penny bisa memberikan kerusakan yang besar dengan serangan percikan saat targetnya berbaris.
 TID_HINT_27,Mengumpulkan rekan tim sebelum Laga memungkinkanmu untuk menyusun strategi dan memilih kombinasi Jagoan yang optimal.
 TID_HINT_28,"Coba mainkan laga persahabatan untuk latihan acara, mengadakan kompetisi, dan masih banyak lagi!"
-TID_HINT_29,"Seusai laga bagus dengan rekan tim baru, tekan Main Lagi untuk bermain dalam satu laga lain bersama mereka!"
+TID_HINT_29,"Seusai laga yang bagus dengan rekan tim baru, ketuk \qMain Lagi\q untuk bermain dalam satu laga lain bersama mereka!"
 TID_HINT_30,Laga persahabatan memungkinkanmu memilih acara dan peta mana saja. Jagoan juga akan ditingkatkan hingga maksimal!
 TID_HINT_31,"Ada jeda dalam serangan reguler dan Super milik Frank, sehingga lawan berkesempatan menjauh dari jangkauannya."
 TID_EXPERIENCE,XP
@@ -2077,7 +2077,7 @@ TID_PLAYER_MAP_PROPS,Peta pemain oleh:\n<cff8000><CREDIT></c>
 TID_PLAYER_MAP_WINNER_SLOT_PROPS,PEMENANG HARI INI!\n\nKonsep oleh:\n<cff8000><CREDIT></c>
 TID_BATTLE_ROYALE_12,Labirin Panas
 TID_TEAM_INVITE_ALREADY_IN_TEAM,Pemain sudah ada dalam tim!
-TID_HINT_38,Lingkaran biru yang berputar di bawah Jagoan berarti Supernya siap!
+TID_HINT_38,Lingkaran yang berputar di bawah Jagoan menandakan kekuatan Super yang siap digunakan!
 TID_HINT_39,Lingkaran kuning yang berputar di bawah jagoan berarti dia sedang membidik Supernya!
 TID_EVENT_NOT_AVAILABLE,Tidak Ada Acara
 TID_SHOP_OFFER_PURCHASE_AD_NOT_AVAILABLE,Tidak ada video yang tersedia. Kunjungi lagi nanti!
@@ -4009,7 +4009,7 @@ TID_BRAWL_PASS_INFO_TEXT_2,Raih banyak hadiah ekstra seperti:\n\n<BRAWLER> - Jag
 TID_BRAWL_PASS_SEASON_3,SAATNYA LIBURAN
 TID_BRAWL_PASS_INFO_TEXT_3,Raih banyak hadiah ekstra seperti:\n\n<BRAWLER> - Jagoan Kromatik baru!\n\nKOSTUM EKSKLUSIF: <SKIN_1>!\n\nKOSTUM EKSKLUSIF: <SKIN_2>!\n\nPIN EKSKLUSIF KEREN untuk <BRAWLER>\n\n<NUM> KOTAK MEGA!\n\nKOIN dan POIN KEKUATAN EKSTRA!\n\n\nTUGAS EKSTRA untuk membantumu menyelesaikan Brawl Pass lebih cepat!\n\nNAMA KROMATIK EKSKLUSIF sepanjang musim!
 TID_BRAWL_PASS_SEASON_4,ARMADA STARR!
-TID_BRAWL_PASS_INFO_TEXT_GENERIC,Raih banyak hadiah ekstra seperti:\n\n<BRAWLER> - Jagoan Kromatik baru!\n\nKOSTUM EKSKLUSIF BERBATAS WAKTU: <SKIN_1>!\n\nKOSTUM EKSKLUSIF BERBATAS WAKTU: <SKIN_2>!\n\nPIN EKSKLUSIF KEREN BERBATAS WAKTU untuk <BRAWLER>\n\nCAT EKSKLUSIF BERBATAS WAKTU\n\n<NUM_BOX> KOTAK MEGA!\n\nKOIN dan POIN KEKUATAN EKSTRA!\n\nTUGAS EKSTRA untuk membantumu menyelesaikan Brawl Pass lebih cepat!\n\n<NUM_REROLL>ACAK TUGAS EKSTRA PER MINGGU\n\nNAMA KROMATIK EKSKLUSIF sepanjang musim!
+TID_BRAWL_PASS_INFO_TEXT_GENERIC,Raih banyak hadiah ekstra seperti:\n\n<BRAWLER> - Jagoan Kromatik baru!\n\nKOSTUM EKSKLUSIF BERBATAS WAKTU: <SKIN_1>!\n\nKOSTUM EKSKLUSIF BERBATAS WAKTU: <SKIN_2>!\n\nPIN EKSKLUSIF KEREN BERBATAS WAKTU untuk <BRAWLER>\n\nCAT EKSKLUSIF BERBATAS WAKTU\n\n<NUM_BOX> KOTAK MEGA!\n\nKOIN dan POIN KEKUATAN EKSTRA!\n\nTUGAS EKSTRA untuk membantumu menyelesaikan Brawl Pass lebih cepat!\n\n<NUM_REROLL> ACAK TUGAS EKSTRA PER MINGGU\n\nNAMA KROMATIK EKSKLUSIF sepanjang musim!
 TID_QUESTS_MORE,Tampilkan Semua Tugas
 TID_QUESTS_MORE_NEXT_SEASON,Kamu telah menyelesaikan semua Tugas untuk Musim <THIS_SEASON>. Tugas Baru akan tersedia saat Musim <NEXT_SEASON> dimulai.
 TID_BRAWL_PASS_AUTOCOLLECT_TITLE,Hadiah Musim <NUM>
@@ -4484,9 +4484,9 @@ TID_EMOTE_BUNDLE_BRALWMAS_PACK,PIN LIBURAN JAGOAN
 TID_MAP_EDITOR_LEGAL_WARNING_TITLE,Pemberitahuan Penting
 TID_MAP_EDITOR_LEGAL_WARNING_DESC,"Terima kasih telah menggunakan Kreator Peta. Mohon untuk mematuhi Lisensi dan Perjanjian Layanan Tencent Games serta regulasi terkait lainnya saat menggunakan Kreator Peta. Dilarang membuat atau menyebarkan konten tidak pantas yang bersifat erotis, tidak senonoh, atau membahayakan persatuan bangsa, kedaulatan, integritas wilayah, serta melanggar hukum dan peraturan lainnya."
 TID_MAP_EDITOR_LEGAL_WARNING_DESC_YOOZOO,"Terima kasih telah menggunakan Kreator Peta. Mohon untuk mematuhi Persetujuan Pengguna serta regulasi terkait lainnya saat menggunakan Kreator Peta. Dilarang membuat atau menyebarkan konten tidak pantas yang bersifat erotis, tidak senonoh, atau membahayakan persatuan bangsa, kedaulatan, integritas wilayah, serta melanggar hukum dan peraturan lainnya."
-TID_RUFFS,KOLONEL\nRUFFS
+TID_RUFFS,RUFFS
 TID_RUFFS_SHORT_DESC,PENDUKUNG
-TID_RUFFS_DESC,Ruffs menembakkan laser ganda yang akan memantul dari tembok. Kekuatan Super miliknya berupa kiriman suplai yang dapat memberikan kerusakan pada lawan yang berada di area pendaratan dan akan meninggalkan penguat yang bisa digunakan oleh rekan tim.
+TID_RUFFS_DESC,"Sebagai pemimpin yang galak, Kolonel Ruffs tak ragu untuk menggonggong pada siapa saja!\n\nDi balik gaya yang serius dan misterius, Kolonel Ruffs sebenarnya suka sekali main lempar tangkap!"
 TID_RUFFS_WEAPON,LASER GANDA
 TID_RUFFS_WEAPON_DESC,Laser ganda Ruffs akan memantul dari tembok beberapa kali dan bisa mengenai lawan yang berada di balik penghalang.
 TID_RUFFS_ULTI,KIRIMAN SUPLAI
@@ -4527,7 +4527,7 @@ TID_ACCESSORY_ENRAGER_PROTECTION_DESC,Edgar mengerahkan perisai yang melindungin
 TID_ACCESSORY_MINIGUN_DUDE_AMMO_SINK,PENGOLEKSI AMUNISI
 TID_ACCESSORY_MINIGUN_DUDE_AMMO_SINK_DESC,"Amunisi maksimum lawan akan berkurang <c00cc00><VALUE1>%</c> untuk tiap proyektil serangan Pam berikutnya yang mengenainya. Sementara itu, Pam akan menerima <c00cc00><VALUE2>%</c> amunisi untuk dirinya sendiri."
 TID_ACCESSORY_SANDSTORM_STUN_SLEEP,MIMPI INDAH
-TID_ACCESSORY_SANDSTORM_STUN_SLEEP_DESC,"Serangan Sandy berikutnya akan membuat lawan tertidur selama <c00cc00><VALUE1></c> detik, tetapi mereka akan terbangun begitu menerima kerusakan."
+TID_ACCESSORY_SANDSTORM_STUN_SLEEP_DESC,Serangan Sandy berikutnya akan membuat lawan tertidur selama <c00cc00><VALUE1></c> detik. Lawan akan terbangun begitu menerima kerusakan.
 TID_ACCESSORY_CACTUS_COVER,KAKTUS PELINDUNG
 TID_ACCESSORY_CACTUS_COVER_DESC,"Spike menumbuhkan kaktus besar dengan <c00cc00><VALUE1></c> kesehatan untuk melindungi rekan. Saat dihancurkan, kaktus tersebut akan meledak dan memberikan <c00cc00><VALUE2></c> kesehatan bagi semua rekan terdekat."
 TID_ACCESSORY_BLOWER_STOPPER,TORNADO
@@ -6345,7 +6345,7 @@ TID_ACCESSORY_FIRE_DUDE_FLAME_SHIELD_DESC,"Selama <c00cc00><VALUE2></c> detik, A
 TID_ACCESSORY_MECHA_DUDE_TOWER_RELOAD,KOTAK PERKAKAS
 TID_ACCESSORY_MECHA_DUDE_TOWER_RELOAD_DESC,Meg menjatuhkan kotak perkakas yang akan mempercepat isi ulang untuk rekan terdekat sebesar <c00cc00><VALUE1>%</c> hingga dihancurkan.
 TID_ACCESSORY_ROPE_DUDE_VISION,KACAMATA X-RAY
-TID_ACCESSORY_ROPE_DUDE_VISION_DESC,Buzz dapat melihat di balik semak selama <c00cc00><VALUE1></c> detik.
+TID_ACCESSORY_ROPE_DUDE_VISION_DESC,Buzz dapat melihat menembus semak di area pengisian Kekuatan Super miliknya selama <c00cc00><VALUE1> detik.
 TID_LOGIN_CALENDAR_ALREADY_HAVE_BRAWLER,Kamu sudah memiliki Jagoan ini
 TID_LOGIN_CALENDAR_ALREADY_HAVE_GADGET,Kamu sudah memiliki Gadget ini
 TID_LOGIN_CALENDAR_ALREADY_HAVE_STAR_POWER,Kamu sudah memiliki Kekuatan Bintang ini
@@ -6460,6 +6460,7 @@ TID_ACCESSORY_SILENCER_GADGET_1_DESC,"Jika bintang laut berikutnya tidak mengena
 TID_ACCESSORY_SILENCER_GADGET_2,GENANGAN TINTA
 TID_ACCESSORY_SILENCER_GADGET_2_DESC,"Pada serangan berikutnya, Otis akan menembakkan bola tinta raksasa yang meninggalkan genangan dan memberikan <c00cc00><VALUE1></c> kerusakan seiring waktu selama <c00cc00> detik."
 TID_RANDOM_GAME_MODE,MISTERI
+TID_ADVENTURE_GAME_MODE,PETUALANGAN
 TID_NOTIFICATION_RANDOM,Ada peta baru di mode MISTERI! Saatnya untuk memenangkan Hadiah baru!
 TID_SKIN_INFO_DEEPSEA,Kostum Jagoan Bawah Laut
 TID_EMOTE_BUNDLE_DEEPSEA_PACK,Pin Jagoan Bawah Laut
@@ -6555,9 +6556,9 @@ TID_CLUB_QUESTS_THIS_WEEKS_QUESTS,TUGAS GENG MINGGU INI
 TID_SPEC_ABI_ARTILLERY_DUDE_1,BUNTALAN HARTA
 TID_SPEC_ABI_ARTILLERY_DUDE_1_DESC,Kantong Emas Penny akan meledak dan membentuk kerucut yang <c00cc00><VALUE1>%</c> lebih lebar setelah tiap serangan.
 TID_SPEC_ABI_ARTILLERY_DUDE_2,AHLI LEDAKAN
-TID_SPEC_ABI_ARTILLERY_DUDE_2_DESC,Meriam Penny memberikan <c00cc00><VALUE1></c> kerusakan dan menghantam mundur lawan yang berada di area target.
+TID_SPEC_ABI_ARTILLERY_DUDE_2_DESC,Meriam Penny memberikan <c00cc00><VALUE1></c> kerusakan dan menghantam mundur lawan yang berada di area pengerahan meriam.
 TID_ACCESSORY_ARTILLERY_DUDE_GADGET_1,TONG GARAM
-TID_ACCESSORY_ARTILLERY_DUDE_GADGET_1_DESC,Penny menjatuhkan tong garam yang menghalangi proyektil lawan. Dia juga bisa menggunakannya untuk menembakkan kantong emas miliknya.
+TID_ACCESSORY_ARTILLERY_DUDE_GADGET_1_DESC,Penny menjatuhkan tong garam yang menghalangi proyektil lawan. Dia juga bisa menggunakan tong ini untuk memecahkan kantong emas miliknya.
 TID_ACCESSORY_ARTILLERY_DUDE_GADGET_2,TEMBAKAN TERKOORDINASI
 TID_ACCESSORY_ARTILLERY_DUDE_GADGET_2_DESC,Meriam Penny akan menembak semua lawan yang tampak berada dalam jangkauan.
 TID_RANDOM_GAME_MODE_DESC,"Mainkan laga acak dari berbagai macam mode laga, peta, dan, modifikasi laga. Tak ada yang tahu kamu akan dapat apa!"
@@ -6602,6 +6603,146 @@ TID_TRUE_GOLD_EVE_SKIN_SHOP,EVE\nEMAS
 TID_TRUE_SILVER_EVE_SKIN,EVE PERAK
 TID_TRUE_SILVER_EVE_SKIN_SHOP,EVE\nPERAK
 TID_BRAWL_PASS_SEASON_12,JAGOAN BAWAH LAUT
+TID_TRIPLE_TAKEDOWN,TIGA TUMBANG!
+TID_QUAD_TAKEDOWN,EMPAT TUMBANG!
+TID_WEAPON_THROWER,SAM
+TID_WEAPON_THROWER_SHORT_DESC,PENYERANG
+TID_WEAPON_THROWER_DESC,Si mantan pekerja pabrik Sam Bronson punya dendam kepada SEMUA robot.\n\nDia adalah pendiri dan otak di balik Geng Senjata Emas yang akan merampok dan menghancurkan para robot!
+TID_WEAPON_THROWER_WEAPON,TINJU BERAT
+TID_WEAPON_THROWER_WEAPON_DESC,"Sam mengerahkan tinju keras. Dengan sarung tangan keling, kerusakan yang diberikan akan semakin besar."
+TID_WEAPON_THROWER_ULTI,KELING SAKTI
+TID_WEAPON_THROWER_ULTI_DESC,Sam melemparkan Keling Sakti miliknya yang akan memberikan kerusakan pada semua lawan sebelum akhirnya jatuh. Kekuatan Super berikutnya akan mengembalikan Keling Sakti ke tangannya sembari memberi kerusakan.
+TID_SPEC_ABI_WEAPON_THROWER_1,PEMULIHAN BESAR
+TID_SPEC_ABI_WEAPON_THROWER_1_DESC,"Saat Keling Sakti kembali, Sam akan langsung memulihkan <c00cc00><VALUE1>%</c> kesehatan."
+TID_SPEC_ABI_WEAPON_THROWER_2,ISI ULANG JARAK JAUH
+TID_SPEC_ABI_WEAPON_THROWER_2_DESC,"Saat berada di tanah dan berada di dekat lawan, Keling Sakti akan mengisi Kekuatan Super Sam."
+TID_ACCESSORY_WEAPON_THROWER_GADGET_1,MEDAN MAGNET
+TID_ACCESSORY_WEAPON_THROWER_GADGET_1_DESC,"Saat berada id tanah, Sam dapat mengaktifkan Keling Sakti untuk menarik lawan mendekat."
+TID_ACCESSORY_WEAPON_THROWER_GADGET_2,GELOMBANG PENDORONG
+TID_ACCESSORY_WEAPON_THROWER_GADGET_2_DESC,"Saat jatuh, pengerahan Keling Sakti berikutnya akan mengeluarkan gelombang listrik yang bisa memukul mundur lawan."
+TID_ACCESSORY_BLOCKED_MISSING_GAUNTLETS,Keling Sakti tidak sedang jatuh!
+TID_ACCESSORY_BLOCKED_GAUNTLETS_TOO_FAR,Keling Sakti terlalu jauh!
+TID_ACCESSORY_BLOCKED_GAUNTLETS_REQUIRED,Keling Sakti diperlukan!
+TID_SOUL_COLLECTOR,GUS
+TID_SOUL_COLLECTOR_SHORT_DESC,PENDUKUNG
+TID_SOUL_COLLECTOR_DESC,"Suka menghabiskan waktu di wahana kereta yang terabaikan, Gus tergila-gila dengan balon. Dia bisa menciptakan berbagai makhluk dari balon. Sepertinya keahlian ini dia pelajari karena dia kesepian dan perlu teman."
+TID_SOUL_COLLECTOR_WEAPON,BALON SERAM
+TID_SOUL_COLLECTOR_WEAPON_DESC,"Gus menembakkan balon ke lawan. Setelah mengenai lawan beberapa kali, roh akan jatuh. Mengumpulkan roh akan memulihkan kesehatan Gus serta rekan Jagoan."
+TID_SOUL_COLLECTOR_ULTI,SI SPOOKY
+TID_SOUL_COLLECTOR_ULTI_DESC,Gus menggunakan Spooky (sahabat balon ciptaannya) untuk menjadi perisai yang melindungi Gus serta salah satu rekan Jagoan.
+TID_SPEC_ABI_SOUL_COLLECTOR_1,KESEHATAN UNTUK SEMUA
+TID_SPEC_ABI_SOUL_COLLECTOR_1_DESC,Kesehatan yang dipulihkan dari BALON SERAM akan meningkat sebesar <c00cc00><VALUE1>%</c>.
+TID_SPEC_ABI_SOUL_COLLECTOR_2,ROH HEWAN
+TID_SPEC_ABI_SOUL_COLLECTOR_2_DESC,Spooky meningkatkan kerusakan rekan tim sebesar <c00cc00><VALUE1>%</c> selama <c00cc00><VALUE2></c> detik.
+TID_ACCESSORY_SOUL_COLLECTOR_GADGET_1,LEDAKAN ROH
+TID_ACCESSORY_SOUL_COLLECTOR_GADGET_1_DESC,Semua roh yang belum diambil akan meledak dan memberikan <c00cc00><VALUE1></c> kerusakan ke lawan yang berada di dekatnya.
+TID_ACCESSORY_SOUL_COLLECTOR_GADGET_2,PERTUKARAN ROH
+TID_ACCESSORY_SOUL_COLLECTOR_GADGET_2_DESC,Gus kehilangan <ccc0000><VALUE1>%</c> kesehatan dan mendapatkan <c00cc00><VALUE2>%</c> roh secara langsung.
+TID_ACCESSORY_BLOCKED_MISSING_SOULS,Tidak ada roh!
+TID_ACCESSORY_BLOCKED_SPIRIT_ALREADY_FULL,Roh penuh!
+TID_SKIN_INFO_OUTLAW,Kostum Geng Mara Bahaya
+TID_EMOJI_SURGE_TEAM,NAVI
+TID_EMOJI_MORTIS_TEAM,SK
+TID_EMOJI_SPIKE_TEAM,INTZ
+TID_EMOJI_PRIMO_TEAM,TQ
+TID_EMOJI_COLT_TEAM,STMN
+TID_EMOJI_NITA_TEAM,OBEY
+TID_EMOJI_LEON_TEAM,QLASH
+TID_EMOJI_JESSIE_TEAM,ZETA
+TID_EMOJI_EMZ_TEAM,TRIBE
+TID_EMOJI_SHELLY_TEAM,TOTEM
+TID_SKIN_INFO_MECHA,Kostum Mecha
+TID_SCID_REQUIRED_DESC,"Karena usiamu, kamu harus menyambungkan game ke Supercell ID"
+TID_SCID_REQUIRED_CONNECT,SAMBUNGKAN
+TID_LOGIN_CALENDAR_POPULAR,POPULER
+TID_TRAIT_SUPER_START,Jagoan ini memulai laga dengan Kekuatan Super penuh
+TID_GAME_MODE_29,PERLAWANAN TERAKHIR
+TID_GAME_MODE_29_DESC,Robot jahat menyerang! 8-Bit adalah satu-satunya harapan kita. Dia membawa kode rahasia yang harus dipertahankan! Lindungi 8-Bit dari gelombang serangan robot hingga waktu habis untuk bisa memenangkan laga.\n\nKumpulkan Koin Jagoan untuk memastikan 8-Bit bertahan dalam pertempuran!
+TID_GAME_MODE_29_INTRO_TEXT,Lindungi 8-Bit!
+TID_LAST_STAND_1,Eliminator
+TID_LAST_STAND_2,Hari Penghakiman
+TID_LAST_STAND_3,Kebangkitan Para Robot
+TID_LAST_STAND_4,Pengampunan
+TID_LAST_STAND_5,Korsleting
+TID_LAST_STAND_6,Takdir Gelap
+TID_INBOX_CAPTION_55,Hadiah menyelesaikan Tugas:
+TID_ESPORTS_OFFER_TITLE,KEJUARAAN
+TID_ESPORTS_OFFER_SUBTITLE_PINS,Set Pin
+TID_ESPORTS_OFFER_SUBTITLE_THUMBNAILS,Ikon Pemain
+TID_ESPORTS_OFFER_SUBTITLE_EACH,MASING-MASING
+TID_ESPORTS_OFFER_SUBTITLE_ALREADY_OWNED,Sudah dimiliki!
+TID_ESPORTS_OFFER_ITEM_PINS,Pin
+TID_ESPORTS_OFFER_ITEM_THUMBNAILS,Ikon Pemain
+TID_EMOTE_BUNDLE_MORTIS_MECHA_PACK,Paket Pin Mortis Mecha
+TID_BRAWL_PASS_SEASON_13,PABRIK ROBOT
+TID_TRUE_GOLD_OTIS_SKIN,OTIS EMAS
+TID_TRUE_GOLD_OTIS_SKIN_SHOP,OTIS\nEMAS
+TID_TRUE_SILVER_OTIS_SKIN,OTIS PERAK
+TID_TRUE_SILVER_OTIS_SKIN_SHOP,OTIS\nPERAK
+TID_TRUE_GOLD_SQUEAK_SKIN,SQUEAK EMAS
+TID_TRUE_GOLD_SQUEAK_SKIN_SHOP,SQUEAK\nEMAS
+TID_TRUE_SILVER_SQUEAK_SKIN,SQUEAK PERAK
+TID_TRUE_SILVER_SQUEAK_SKIN_SHOP,SQUEAK\nPERAK
+TID_TRUE_GOLD_BYRON_SKIN,BYRON EMAS
+TID_TRUE_GOLD_BYRON_SKIN_SHOP,BYRON\nEMAS
+TID_TRUE_SILVER_BRYON_SKIN,BYRON PERAK
+TID_TRUE_SILVER_BYRON_SKIN_SHOP,BYRON\nPERAK
+TID_TRUE_GOLD_GRIFF_SKIN,GRIFF EMAS
+TID_TRUE_GOLD_GRIFF_SKIN_SHOP,GRIFF\nEMAS
+TID_TRUE_SILVER_GRIFF_SKIN,GRIFF PERAK
+TID_TRUE_SILVER_GRIFF_SKIN_SHOP,GRIFF\nPERAK
+TID_TRUE_GOLD_EDGAR_SKIN,EDGAR EMAS
+TID_TRUE_GOLD_EDGAR_SKIN_SHOP,EDGAR\nEMAS
+TID_TRUE_SILVER_EDGAR_SKIN,EDGAR PERAK
+TID_TRUE_SILVER_EDGAR_SKIN_SHOP,EDGAR\nPERAK
+TID_CAESAR_BRONSON_SKIN,KAISAR SAM
+TID_CAESAR_BRONSON_SKIN_SHOP,KAISAR\nSAM
+TID_MECHA_MORIS_SKIN,MORTIS MECHA
+TID_MECHA_MORTIS_SKIN_SHOP,MORTIS\nMECHA
+TID_DARK_MECHA_MORTIS_SKIN,MORTIS MECHA KEGELAPAN
+TID_DARK_MECHA_MORTIS_SKIN_SHOP,MORTIS\nMECHA KEGELAPAN
+TID_LIGHT_MECHA_MORTIS_SKIN,MORTIS MECHA CAHAYA
+TID_LIGHT_MECHA_MORTIS_SKIN_SHOP,MORTIS\nMECHA CAHAYA
+TID_OUTLAW_LOLA_SKIN,LOLA PENYAMUN
+TID_OUTLAW_LOLA_SKIN_SHOP,LOLA\nPENYAMUN
+TID_OUTLAW_CROW,CROW TULANG
+TID_OUTLAW_CROW_SKIN_SHOP,CROW TULANG
+TID_OUTLAW_POCO_SKIN,POCO DESPERADO
+TID_OUTLAW_POCO_SKIN_SHOP,POCO\nDESPERADO
+TID_BROKER_PAM_SKIN,PAM STONKS
+TID_BROKER_PAM_SKIN_SHOP,PAM\nSTONKS
+TID_MOON_FESTIVAL_SQUEAK_SKIN,SQUEAK KELINCI BULAN
+TID_MOON_FESTIVAL_SQUEAK_SKIN_SHOP,SQUEAK\nKELINCI BULAN
+TID_BRAWLOWEEN_LEON_SKIN,LEON TRICK OR TREAT
+TID_BRAWLOWEEN_LEON_SKIN_SHOP,LEON\nTRICK OR TREAT
+TID_HINT_45,Pastikan untuk menggunakan Kode Kreator di Toko.
+TID_HINT_46,Masuk ke game setiap hari untuk mengeklaim hadiah gratis!
+TID_HINT_47,Mengumpan bola ke lawan di Bola Jagoan bisa membuat mereka membuang amunisi mereka!
+TID_HINT_48,Gunakan Pin dan Cat untuk menunjukkan perasaanmu dalam game.
+TID_HINT_49,"Pagar mirip dengan tembok, namun kamu bisa menembak melaluinya!"
+TID_HINT_50,Kerja sama adalah kunci kemenangan!
+TID_HINT_51,Tidak suka tata letak kontrol? Ganti dengan fungsi \qCOBA\q.
+TID_HINT_52,"Di Bola Jagoan, kamu bisa menggunakan Kekuatan Super untuk melakukan tendangan super!"
+TID_HINT_53,"Saat kamu memegang Permata di Rebut Permata, fokuslah pada bertahan."
+TID_HINT_54,"Jika rekan tim tumbang, tunggu hingga mereka bangkit kembali agar bisa menyusun serangan bersama!"
+TID_HINT_55,Gunakan Laga Persahabatan untuk berlatih dan mengasah kemampuan!
+TID_HINT_56,Beberapa Jagoan punya Atribut spesial! Temukan detail lengkap di layar statistik.
+TID_HINT_57,"Di Showdown Duo, pastikan rekan tim masih bertahan sebelum mengambil Kubus Kekuatan."
+TID_HINT_58,Manfaatkan fitur \qCari Tim\q saat bermain Tantangan!!
+TID_HINT_59,Berhati-hatilah dengan ranjau milik Bo karena dia sendiri tak ingat di mana bom berada!
+TID_HINT_60,Kemampuan Super Lou sangat berguna untuk menguasai area. Gunakan dengan cermat di titik-titik kunci peta!
+TID_HINT_61,Kerusakan yang diberikan Jessie semakin meningkat setiap kali memantul dari lawan.
+TID_HINT_62,Colette bisa memberikan kerusakan yang besar saat menghadapi Jagoan dengan kesehatan tinggi!
+TID_HINT_63,Edgar menyembuhkan diri setiap kali mendaratkan pukulan!
+TID_HINT_64,Jangkauan tembakan Janet jadi makin jauh mengikuti lama waktu membidik.
+TID_HINT_65,Gene bisa memberikan kerusakan kecil pada lawan untuk mencegah mereka memulihkan kesehatan serta untuk menghimpun Kekuatan Super!
+TID_LAST_STAND_WAVE_1,Robot mendekat!
+TID_LAST_STAND_WAVE_2,Ada banyak lawan mendekat!
+TID_LAST_STAND_SHUTDOWN,<ccc0000>8-Bit menyerah!</c>
+TID_EMOTE_BUNDLE_OUTLAW_PACK,Paket Pin Geng Mara Bahaya
+TID_SHOP_OUTLAW_SKINS,Kostum Geng Mara Bahaya
+TID_SHOP_OUTLAW_TITLE,GENG MARA BAHAYA
+TID_ACCESSORY_BLOCKED_SOULS_TOO_FAR,Roh terlalu jauh!
 TID_REGION_CUSTOM1,
 TID_REGION_CUSTOM2,
 TID_REGION_CUSTOM3,

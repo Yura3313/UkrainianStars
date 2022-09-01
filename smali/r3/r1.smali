@@ -19,11 +19,11 @@
 
 
 # static fields
-.field public static final g:Lr3/t1;
+.field public static final h:Lr3/t1;
 
 
 # instance fields
-.field public f:I
+.field public g:I
 
 
 # direct methods
@@ -37,7 +37,7 @@
 
     invoke-direct {v0, v1}, Lr3/t1;-><init>([B)V
 
-    sput-object v0, Lr3/r1;->g:Lr3/t1;
+    sput-object v0, Lr3/r1;->h:Lr3/t1;
 
     .line 2
     sget-object v0, Lr3/p1;->a:Ljava/lang/Class;
@@ -54,7 +54,7 @@
     const/4 v0, 0x0
 
     .line 2
-    iput v0, p0, Lr3/r1;->f:I
+    iput v0, p0, Lr3/r1;->g:I
 
     return-void
 .end method
@@ -91,7 +91,7 @@
     .locals 1
 
     .line 1
-    iget v0, p0, Lr3/r1;->f:I
+    iget v0, p0, Lr3/r1;->g:I
 
     if-nez v0, :cond_1
 
@@ -111,7 +111,7 @@
 
     .line 4
     :cond_0
-    iput v0, p0, Lr3/r1;->f:I
+    iput v0, p0, Lr3/r1;->g:I
 
     :cond_1
     return v0

@@ -861,19 +861,19 @@
 
     .line 2
     :cond_0
-    sget-object v0, Lcom/supercell/websocket/proxy/protocol/presence/PresenceMessage$b;->g:Lcom/supercell/websocket/proxy/protocol/presence/PresenceMessage$b;
+    sget-object v0, Lcom/supercell/websocket/proxy/protocol/presence/PresenceMessage$b;->h:Lcom/supercell/websocket/proxy/protocol/presence/PresenceMessage$b;
 
     goto :goto_0
 
     .line 3
     :cond_1
-    sget-object v0, Lcom/supercell/websocket/proxy/protocol/presence/PresenceMessage$b;->f:Lcom/supercell/websocket/proxy/protocol/presence/PresenceMessage$b;
+    sget-object v0, Lcom/supercell/websocket/proxy/protocol/presence/PresenceMessage$b;->g:Lcom/supercell/websocket/proxy/protocol/presence/PresenceMessage$b;
 
     goto :goto_0
 
     .line 4
     :cond_2
-    sget-object v0, Lcom/supercell/websocket/proxy/protocol/presence/PresenceMessage$b;->h:Lcom/supercell/websocket/proxy/protocol/presence/PresenceMessage$b;
+    sget-object v0, Lcom/supercell/websocket/proxy/protocol/presence/PresenceMessage$b;->i:Lcom/supercell/websocket/proxy/protocol/presence/PresenceMessage$b;
 
     :goto_0
     return-object v0

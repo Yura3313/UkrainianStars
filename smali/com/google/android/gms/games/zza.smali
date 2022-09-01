@@ -19,7 +19,7 @@
 
 
 # instance fields
-.field public final f:I
+.field public final g:I
 
 
 # direct methods
@@ -42,7 +42,7 @@
     invoke-direct {p0}, Lcom/google/android/gms/games/internal/zze;-><init>()V
 
     .line 4
-    iput p1, p0, Lcom/google/android/gms/games/zza;->f:I
+    iput p1, p0, Lcom/google/android/gms/games/zza;->g:I
 
     return-void
 .end method
@@ -58,7 +58,7 @@
 
     move-result p1
 
-    iput p1, p0, Lcom/google/android/gms/games/zza;->f:I
+    iput p1, p0, Lcom/google/android/gms/games/zza;->g:I
 
     return-void
 .end method
@@ -191,7 +191,7 @@
 .method public final v2()I
     .locals 1
 
-    iget v0, p0, Lcom/google/android/gms/games/zza;->f:I
+    iget v0, p0, Lcom/google/android/gms/games/zza;->g:I
 
     return v0
 .end method
@@ -207,7 +207,7 @@
     move-result v5
 
     .line 2
-    iget v3, p0, Lcom/google/android/gms/games/zza;->f:I
+    iget v3, p0, Lcom/google/android/gms/games/zza;->g:I
 
     const/4 v1, 0x1
 

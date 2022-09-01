@@ -1,5 +1,5 @@
 .class public final Lpd/j;
-.super Lse/h;
+.super Lse/i;
 .source "FriendsFragment.kt"
 
 # interfaces
@@ -9,33 +9,33 @@
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/p<",
         "Landroid/graphics/drawable/Drawable;",
         "Lud/g;",
-        "Lie/h;",
+        "Lie/i;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic f:Lpd/i$a$f;
+.field public final synthetic g:Lpd/i$a$f;
 
-.field public final synthetic g:Lre/l;
+.field public final synthetic h:Lre/l;
 
 
 # direct methods
 .method public constructor <init>(Lpd/i$a$f;Lre/l;)V
     .locals 0
 
-    iput-object p1, p0, Lpd/j;->f:Lpd/i$a$f;
+    iput-object p1, p0, Lpd/j;->g:Lpd/i$a$f;
 
-    iput-object p2, p0, Lpd/j;->g:Lre/l;
+    iput-object p2, p0, Lpd/j;->h:Lre/l;
 
     const/4 p1, 0x2
 
-    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -53,16 +53,16 @@
     const-string v0, "drawable"
 
     .line 2
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "<anonymous parameter 1>"
 
-    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 3
-    iget-object p2, p0, Lpd/j;->f:Lpd/i$a$f;
+    iget-object p2, p0, Lpd/j;->g:Lpd/i$a$f;
 
-    iget-object p2, p2, Lpd/i$a$f;->f:Lpd/i$a;
+    iget-object p2, p2, Lpd/i$a$f;->g:Lpd/i$a;
 
     .line 4
     iget-object p2, p2, Lpd/i$a;->g:Ljava/lang/ref/WeakReference;
@@ -129,17 +129,17 @@
     if-eqz v1, :cond_3
 
     .line 9
-    iget-object p1, p0, Lpd/j;->g:Lre/l;
+    iget-object p1, p0, Lpd/j;->h:Lre/l;
 
     invoke-interface {p1, v1}, Lre/l;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
 
-    check-cast p1, Lie/h;
+    check-cast p1, Lie/i;
 
     .line 10
     :cond_3
-    sget-object p1, Lie/h;->a:Lie/h;
+    sget-object p1, Lie/i;->a:Lie/i;
 
     return-object p1
 .end method

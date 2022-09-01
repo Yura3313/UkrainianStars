@@ -27,9 +27,9 @@
     array-length v0, p1
 
     .line 4
-    new-instance v1, La5/u;
+    new-instance v1, Lr5/b0;
 
-    invoke-direct {v1, p1, v0}, La5/u;-><init>([BI)V
+    invoke-direct {v1, p1, v0}, Lr5/b0;-><init>([BI)V
 
     .line 5
     iput-object v1, p0, Lg1/a;->a:Ljava/lang/Object;

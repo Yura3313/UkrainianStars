@@ -20,13 +20,13 @@
         value = {
             "(",
             "Ljava/util/List<",
-            "Lp8/c$a;",
+            "Lp8/d$a;",
             ">;",
             "Ljava/util/List<",
             "Ljava/lang/String;",
             ">;)",
             "Ljava/util/List<",
-            "Lp8/c$a;",
+            "Lp8/d$a;",
             ">;"
         }
     .end annotation

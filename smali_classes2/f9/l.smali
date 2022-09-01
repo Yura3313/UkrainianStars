@@ -59,10 +59,10 @@
 
     if-eqz v2, :cond_1
 
-    iget-object v0, v0, Lq8/d;->i:Ljava/lang/String;
+    iget-object v0, v0, Lq8/d;->j:Ljava/lang/String;
 
     .line 6
-    invoke-static {v0}, Lcom/google/android/play/core/appupdate/g;->b(Ljava/lang/String;)Z
+    invoke-static {v0}, La5/b0;->d(Ljava/lang/String;)Z
 
     move-result v0
 

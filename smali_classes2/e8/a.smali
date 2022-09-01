@@ -110,7 +110,7 @@
 
     .line 8
     :goto_1
-    invoke-static {v0}, Lcom/helpshift/util/w;->b(Ljava/io/Closeable;)V
+    invoke-static {v0}, Lcom/helpshift/util/v;->a(Ljava/io/Closeable;)V
 
     .line 9
     throw p1
@@ -119,7 +119,7 @@
     :catch_1
     :cond_1
     :goto_2
-    invoke-static {v0}, Lcom/helpshift/util/w;->b(Ljava/io/Closeable;)V
+    invoke-static {v0}, Lcom/helpshift/util/v;->a(Ljava/io/Closeable;)V
 
     return-void
 .end method
@@ -140,7 +140,7 @@
     move-result-object v0
 
     .line 3
-    sget-object v1, Lcom/helpshift/util/u;->b:Landroid/content/Context;
+    sget-object v1, Lcom/helpshift/util/t;->b:Landroid/content/Context;
 
     .line 4
     invoke-virtual {v1}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
@@ -338,7 +338,7 @@
 
     .line 9
     :goto_1
-    invoke-static {v2}, Lcom/helpshift/util/w;->b(Ljava/io/Closeable;)V
+    invoke-static {v2}, Lcom/helpshift/util/v;->a(Ljava/io/Closeable;)V
 
     move-object v2, v1
 
@@ -348,7 +348,7 @@
     move-exception v1
 
     :goto_2
-    invoke-static {v2}, Lcom/helpshift/util/w;->b(Ljava/io/Closeable;)V
+    invoke-static {v2}, Lcom/helpshift/util/v;->a(Ljava/io/Closeable;)V
 
     .line 10
     throw v1
@@ -358,7 +358,7 @@
 
     .line 11
     :catch_2
-    invoke-static {v0}, Lcom/helpshift/util/w;->b(Ljava/io/Closeable;)V
+    invoke-static {v0}, Lcom/helpshift/util/v;->a(Ljava/io/Closeable;)V
 
     :goto_3
     return-object v2

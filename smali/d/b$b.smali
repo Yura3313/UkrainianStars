@@ -18,7 +18,7 @@
 
 
 # instance fields
-.field public f:Landroid/graphics/drawable/Drawable$Callback;
+.field public g:Landroid/graphics/drawable/Drawable$Callback;
 
 
 # direct methods
@@ -42,7 +42,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Ld/b$b;->f:Landroid/graphics/drawable/Drawable$Callback;
+    iget-object v0, p0, Ld/b$b;->g:Landroid/graphics/drawable/Drawable$Callback;
 
     if-eqz v0, :cond_0
 
@@ -57,7 +57,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Ld/b$b;->f:Landroid/graphics/drawable/Drawable$Callback;
+    iget-object v0, p0, Ld/b$b;->g:Landroid/graphics/drawable/Drawable$Callback;
 
     if-eqz v0, :cond_0
 

@@ -1,5 +1,5 @@
 .class public final Lvd/h;
-.super Lse/h;
+.super Lse/i;
 .source "SettingsSubscriptionsTabFragment.kt"
 
 # interfaces
@@ -9,32 +9,32 @@
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/l<",
         "Ljava/lang/Exception;",
-        "Lie/h;",
+        "Lie/i;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic f:Lvd/l;
+.field public final synthetic g:Lvd/l;
 
-.field public final synthetic g:Ljava/lang/String;
+.field public final synthetic h:Ljava/lang/String;
 
 
 # direct methods
 .method public constructor <init>(Lvd/l;Ljava/lang/String;)V
     .locals 0
 
-    iput-object p1, p0, Lvd/h;->f:Lvd/l;
+    iput-object p1, p0, Lvd/h;->g:Lvd/l;
 
-    iput-object p2, p0, Lvd/h;->g:Ljava/lang/String;
+    iput-object p2, p0, Lvd/h;->h:Ljava/lang/String;
 
     const/4 p1, 0x1
 
-    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -50,29 +50,29 @@
     const-string v0, "it"
 
     .line 2
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 3
-    iget-object v1, p0, Lvd/h;->f:Lvd/l;
+    iget-object v1, p0, Lvd/h;->g:Lvd/l;
 
-    iget-object v2, p0, Lvd/h;->g:Ljava/lang/String;
+    iget-object v2, p0, Lvd/h;->h:Ljava/lang/String;
 
-    sget v3, Lvd/l;->g0:I
+    sget v3, Lvd/l;->h0:I
 
     .line 4
-    iget-object v3, v1, Landroidx/fragment/app/Fragment;->M:Landroid/view/View;
+    iget-object v3, v1, Landroidx/fragment/app/Fragment;->N:Landroid/view/View;
 
     const/4 v4, 0x0
 
     if-eqz v3, :cond_6
 
     .line 5
-    iget-object v3, v1, Lvd/l;->b0:Lvc/c0;
+    iget-object v3, v1, Lvd/l;->c0:Lvc/z;
 
     if-eqz v3, :cond_6
 
     .line 6
-    iget-object v3, v3, Lvc/c0;->b:Ljava/util/List;
+    iget-object v3, v3, Lvc/z;->b:Ljava/util/List;
 
     .line 7
     invoke-interface {v3}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
@@ -92,13 +92,13 @@
 
     move-object v6, v5
 
-    check-cast v6, Lvc/c0$b;
+    check-cast v6, Lvc/z$b;
 
     .line 8
-    iget-object v6, v6, Lvc/c0$b;->a:Ljava/lang/String;
+    iget-object v6, v6, Lvc/z$b;->a:Ljava/lang/String;
 
     .line 9
-    invoke-static {v6, v2}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v6, v2}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v6
 
@@ -110,7 +110,7 @@
     move-object v5, v4
 
     :goto_0
-    check-cast v5, Lvc/c0$b;
+    check-cast v5, Lvc/z$b;
 
     if-eqz v5, :cond_6
 
@@ -130,7 +130,7 @@
 
     const/4 v7, 0x0
 
-    invoke-static {v7, v6}, Lcom/google/android/play/core/appupdate/c;->c(II)Lve/c;
+    invoke-static {v7, v6}, La5/b0;->l(II)Lve/c;
 
     move-result-object v6
 
@@ -170,23 +170,23 @@
     move-result-object v9
 
     .line 15
-    invoke-static {v9, v0}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v9, v0}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v9}, Landroid/view/View;->getTag()Ljava/lang/Object;
 
     move-result-object v10
 
-    instance-of v11, v10, Lvc/c0$b;
+    instance-of v11, v10, Lvc/z$b;
 
     if-eqz v11, :cond_3
 
-    check-cast v10, Lvc/c0$b;
+    check-cast v10, Lvc/z$b;
 
     .line 16
-    iget-object v10, v10, Lvc/c0$b;->a:Ljava/lang/String;
+    iget-object v10, v10, Lvc/z$b;->a:Ljava/lang/String;
 
     .line 17
-    invoke-static {v10, v2}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v10, v2}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v10
 
@@ -217,7 +217,7 @@
 
     .line 19
     :cond_5
-    invoke-static {v8}, Lje/j;->A(Ljava/util/List;)Ljava/lang/Object;
+    invoke-static {v8}, Lje/j;->v(Ljava/util/List;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -226,26 +226,26 @@
     if-eqz v0, :cond_6
 
     .line 20
-    invoke-virtual {v1, v0, v5}, Lvd/l;->V0(Landroid/view/View;Lvc/c0$b;)Landroid/view/View;
+    invoke-virtual {v1, v0, v5}, Lvd/l;->V0(Landroid/view/View;Lvc/z$b;)Landroid/view/View;
 
     .line 21
     :cond_6
-    iget-object v0, p0, Lvd/h;->f:Lvd/l;
+    iget-object v0, p0, Lvd/h;->g:Lvd/l;
 
-    invoke-static {v0}, Lcom/android/billingclient/api/c0;->e(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
+    invoke-static {v0}, Lcom/android/billingclient/api/b0;->f(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
 
     move-result-object v0
 
     if-eqz v0, :cond_7
 
-    sget-object v1, Lcom/supercell/id/ui/MainActivity;->s:Ljava/lang/ref/WeakReference;
+    sget-object v1, Lcom/supercell/id/ui/MainActivity;->t:Ljava/lang/ref/WeakReference;
 
     .line 22
     invoke-virtual {v0, p1, v4}, Lcom/supercell/id/ui/MainActivity;->G(Ljava/lang/Exception;Lre/l;)V
 
     .line 23
     :cond_7
-    sget-object p1, Lie/h;->a:Lie/h;
+    sget-object p1, Lie/i;->a:Lie/i;
 
     return-object p1
 .end method

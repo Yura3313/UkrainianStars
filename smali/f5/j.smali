@@ -190,7 +190,7 @@
     sget-object v0, Lf5/x;->a:Ljava/util/logging/Logger;
 
     .line 2
-    sget-object v0, Ln5/w0;->h:Ln5/w0;
+    sget-object v0, Ln5/w0;->i:Ln5/w0;
 
     iget-object v1, p0, Lf5/j;->a:Ln5/z0;
 
@@ -256,7 +256,7 @@
 
     move-result-object v9
 
-    sget-object v10, Ln5/f1;->g:Ln5/f1;
+    sget-object v10, Ln5/f1;->h:Ln5/f1;
 
     if-eq v9, v10, :cond_5
 
@@ -265,7 +265,7 @@
 
     move-result-object v9
 
-    sget-object v10, Ln5/w0;->g:Ln5/w0;
+    sget-object v10, Ln5/w0;->h:Ln5/w0;
 
     if-eq v9, v10, :cond_4
 
@@ -303,7 +303,7 @@
 
     move-result-object v8
 
-    sget-object v9, Ln5/v0$b;->j:Ln5/v0$b;
+    sget-object v9, Ln5/v0$b;->k:Ln5/v0$b;
 
     if-eq v8, v9, :cond_3
 

@@ -50,7 +50,7 @@
 
     const-string v0, "source"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     new-instance v0, Lcom/supercell/id/model/IdSystem;
@@ -120,7 +120,7 @@
 
     .line 9
     :cond_1
-    invoke-static {}, Lt3/e;->f()V
+    invoke-static {}, Lt3/h;->j()V
 
     const/4 p1, 0x0
 

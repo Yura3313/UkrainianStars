@@ -48,7 +48,7 @@
     if-eqz p1, :cond_0
 
     .line 5
-    invoke-static {p1}, Lcom/google/android/play/core/appupdate/g;->b(Ljava/lang/String;)Z
+    invoke-static {p1}, La5/b0;->d(Ljava/lang/String;)Z
 
     .line 6
     :cond_0
@@ -65,7 +65,7 @@
     if-eqz p1, :cond_1
 
     .line 7
-    invoke-static {p1}, Lcom/helpshift/util/f0;->a(Ljava/lang/String;)Z
+    invoke-static {p1}, La5/a0;->d(Ljava/lang/String;)Z
 
     .line 8
     :cond_1

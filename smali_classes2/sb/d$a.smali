@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field public final synthetic f:Lsb/d;
+.field public final synthetic g:Lsb/d;
 
 
 # direct methods
 .method public constructor <init>(Lsb/d;)V
     .locals 0
 
-    iput-object p1, p0, Lsb/d$a;->f:Lsb/d;
+    iput-object p1, p0, Lsb/d$a;->g:Lsb/d;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -42,7 +42,7 @@
     sget v0, Lsb/d;->n:I
 
     .line 2
-    iget-object v0, p0, Lsb/d$a;->f:Lsb/d;
+    iget-object v0, p0, Lsb/d$a;->g:Lsb/d;
 
     .line 3
     iget-object v0, v0, Lsb/d;->c:Lsb/e;
@@ -58,7 +58,7 @@
     move-exception v0
 
     .line 5
-    iget-object v1, p0, Lsb/d$a;->f:Lsb/d;
+    iget-object v1, p0, Lsb/d$a;->g:Lsb/d;
 
     invoke-static {v1, v0}, Lsb/d;->a(Lsb/d;Ljava/lang/Exception;)V
 

@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field public final synthetic f:Lmd/p;
+.field public final synthetic g:Lmd/p;
 
 
 # direct methods
 .method public constructor <init>(Lmd/p;)V
     .locals 0
 
-    iput-object p1, p0, Lmd/p$d;->f:Lmd/p;
+    iput-object p1, p0, Lmd/p$d;->g:Lmd/p;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -37,7 +37,7 @@
 .method public final onClick(Landroid/view/View;)V
     .locals 1
 
-    iget-object p1, p0, Lmd/p$d;->f:Lmd/p;
+    iget-object p1, p0, Lmd/p$d;->g:Lmd/p;
 
     sget v0, Lcom/supercell/id/R$id;->rememberCheckBox:I
 

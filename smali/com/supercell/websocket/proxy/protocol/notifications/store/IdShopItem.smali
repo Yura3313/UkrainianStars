@@ -1152,19 +1152,19 @@
 
     .line 2
     :cond_0
-    sget-object v0, Lee/b;->h:Lee/b;
+    sget-object v0, Lee/b;->i:Lee/b;
 
     goto :goto_0
 
     .line 3
     :cond_1
-    sget-object v0, Lee/b;->g:Lee/b;
+    sget-object v0, Lee/b;->h:Lee/b;
 
     :goto_0
     if-nez v0, :cond_2
 
     .line 4
-    sget-object v0, Lee/b;->i:Lee/b;
+    sget-object v0, Lee/b;->j:Lee/b;
 
     :cond_2
     return-object v0

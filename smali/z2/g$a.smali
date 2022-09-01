@@ -24,10 +24,10 @@
 
 
 # instance fields
-.field public final f:Lb2/d;
+.field public final g:Lb2/c;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lb2/d<",
+            "Lb2/c<",
             "TT;>;"
         }
     .end annotation
@@ -35,12 +35,12 @@
 
 
 # direct methods
-.method public constructor <init>(Lb2/d;)V
+.method public constructor <init>(Lb2/c;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lb2/d<",
+            "Lb2/c<",
             "TT;>;)V"
         }
     .end annotation
@@ -49,7 +49,7 @@
     invoke-direct {p0}, Lcom/google/android/gms/games/internal/zza;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lz2/g$a;->f:Lb2/d;
+    iput-object p1, p0, Lz2/g$a;->g:Lb2/c;
 
     return-void
 .end method

@@ -18,24 +18,24 @@
 
 
 # instance fields
-.field public f:Z
+.field public g:Z
 
-.field public final synthetic g:Landroid/animation/AnimatorSet;
+.field public final synthetic h:Landroid/animation/AnimatorSet;
 
-.field public final synthetic h:Lcom/supercell/id/view/ProgressBar;
+.field public final synthetic i:Lcom/supercell/id/view/ProgressBar;
 
-.field public final synthetic i:Ljava/util/List;
+.field public final synthetic j:Ljava/util/List;
 
 
 # direct methods
 .method public constructor <init>(Landroid/animation/AnimatorSet;Lcom/supercell/id/view/ProgressBar;Ljava/util/List;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/view/ProgressBar$b;->g:Landroid/animation/AnimatorSet;
+    iput-object p1, p0, Lcom/supercell/id/view/ProgressBar$b;->h:Landroid/animation/AnimatorSet;
 
-    iput-object p2, p0, Lcom/supercell/id/view/ProgressBar$b;->h:Lcom/supercell/id/view/ProgressBar;
+    iput-object p2, p0, Lcom/supercell/id/view/ProgressBar$b;->i:Lcom/supercell/id/view/ProgressBar;
 
-    iput-object p3, p0, Lcom/supercell/id/view/ProgressBar$b;->i:Ljava/util/List;
+    iput-object p3, p0, Lcom/supercell/id/view/ProgressBar$b;->j:Ljava/util/List;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -49,7 +49,7 @@
 
     const/4 p1, 0x1
 
-    iput-boolean p1, p0, Lcom/supercell/id/view/ProgressBar$b;->f:Z
+    iput-boolean p1, p0, Lcom/supercell/id/view/ProgressBar$b;->g:Z
 
     return-void
 .end method
@@ -58,20 +58,20 @@
     .locals 0
 
     .line 1
-    iget-object p1, p0, Lcom/supercell/id/view/ProgressBar$b;->h:Lcom/supercell/id/view/ProgressBar;
+    iget-object p1, p0, Lcom/supercell/id/view/ProgressBar$b;->i:Lcom/supercell/id/view/ProgressBar;
 
     .line 2
-    iget-boolean p1, p1, Lcom/supercell/id/view/ProgressBar;->w:Z
+    iget-boolean p1, p1, Lcom/supercell/id/view/ProgressBar;->x:Z
 
     if-eqz p1, :cond_0
 
     .line 3
-    iget-boolean p1, p0, Lcom/supercell/id/view/ProgressBar$b;->f:Z
+    iget-boolean p1, p0, Lcom/supercell/id/view/ProgressBar$b;->g:Z
 
     if-nez p1, :cond_0
 
     .line 4
-    iget-object p1, p0, Lcom/supercell/id/view/ProgressBar$b;->g:Landroid/animation/AnimatorSet;
+    iget-object p1, p0, Lcom/supercell/id/view/ProgressBar$b;->h:Landroid/animation/AnimatorSet;
 
     invoke-virtual {p1}, Landroid/animation/AnimatorSet;->start()V
 

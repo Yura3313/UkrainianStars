@@ -6,15 +6,15 @@
 
 
 # static fields
-.field public static final i:Lv3/r5;
+.field public static final j:Lv3/r5;
 
 
 # instance fields
-.field public f:[I
+.field public g:[I
 
-.field public g:[Lv3/r5;
+.field public h:[Lv3/r5;
 
-.field public h:I
+.field public i:I
 
 
 # direct methods
@@ -25,7 +25,7 @@
 
     invoke-direct {v0}, Lv3/r5;-><init>()V
 
-    sput-object v0, Lv3/q5;->i:Lv3/r5;
+    sput-object v0, Lv3/q5;->j:Lv3/r5;
 
     return-void
 .end method
@@ -46,17 +46,17 @@
     .line 3
     new-array v1, v0, [I
 
-    iput-object v1, p0, Lv3/q5;->f:[I
+    iput-object v1, p0, Lv3/q5;->g:[I
 
     .line 4
     new-array v0, v0, [Lv3/r5;
 
-    iput-object v0, p0, Lv3/q5;->g:[Lv3/r5;
+    iput-object v0, p0, Lv3/q5;->h:[Lv3/r5;
 
     const/4 v0, 0x0
 
     .line 5
-    iput v0, p0, Lv3/q5;->h:I
+    iput v0, p0, Lv3/q5;->i:I
 
     return-void
 .end method
@@ -75,17 +75,17 @@
     .line 8
     new-array v0, p1, [I
 
-    iput-object v0, p0, Lv3/q5;->f:[I
+    iput-object v0, p0, Lv3/q5;->g:[I
 
     .line 9
     new-array p1, p1, [Lv3/r5;
 
-    iput-object p1, p0, Lv3/q5;->g:[Lv3/r5;
+    iput-object p1, p0, Lv3/q5;->h:[Lv3/r5;
 
     const/4 p1, 0x0
 
     .line 10
-    iput p1, p0, Lv3/q5;->h:I
+    iput p1, p0, Lv3/q5;->i:I
 
     return-void
 .end method
@@ -133,7 +133,7 @@
 .method public final b()Z
     .locals 1
 
-    iget v0, p0, Lv3/q5;->h:I
+    iget v0, p0, Lv3/q5;->i:I
 
     if-nez v0, :cond_0
 
@@ -151,7 +151,7 @@
     .locals 4
 
     .line 1
-    iget v0, p0, Lv3/q5;->h:I
+    iget v0, p0, Lv3/q5;->i:I
 
     add-int/lit8 v0, v0, -0x1
 
@@ -165,7 +165,7 @@
     ushr-int/lit8 v2, v2, 0x1
 
     .line 2
-    iget-object v3, p0, Lv3/q5;->f:[I
+    iget-object v3, p0, Lv3/q5;->g:[I
 
     aget v3, v3, v2
 
@@ -200,7 +200,7 @@
     .end annotation
 
     .line 1
-    iget v0, p0, Lv3/q5;->h:I
+    iget v0, p0, Lv3/q5;->i:I
 
     .line 2
     new-instance v1, Lv3/q5;
@@ -208,9 +208,9 @@
     invoke-direct {v1, v0}, Lv3/q5;-><init>(I)V
 
     .line 3
-    iget-object v2, p0, Lv3/q5;->f:[I
+    iget-object v2, p0, Lv3/q5;->g:[I
 
-    iget-object v3, v1, Lv3/q5;->f:[I
+    iget-object v3, v1, Lv3/q5;->g:[I
 
     const/4 v4, 0x0
 
@@ -220,14 +220,14 @@
     if-ge v4, v0, :cond_1
 
     .line 4
-    iget-object v2, p0, Lv3/q5;->g:[Lv3/r5;
+    iget-object v2, p0, Lv3/q5;->h:[Lv3/r5;
 
     aget-object v3, v2, v4
 
     if-eqz v3, :cond_0
 
     .line 5
-    iget-object v3, v1, Lv3/q5;->g:[Lv3/r5;
+    iget-object v3, v1, Lv3/q5;->h:[Lv3/r5;
 
     aget-object v2, v2, v4
 
@@ -246,7 +246,7 @@
 
     .line 6
     :cond_1
-    iput v0, v1, Lv3/q5;->h:I
+    iput v0, v1, Lv3/q5;->i:I
 
     return-object v1
 .end method
@@ -275,10 +275,10 @@
     check-cast p1, Lv3/q5;
 
     .line 3
-    iget v1, p0, Lv3/q5;->h:I
+    iget v1, p0, Lv3/q5;->i:I
 
     .line 4
-    iget v3, p1, Lv3/q5;->h:I
+    iget v3, p1, Lv3/q5;->i:I
 
     if-eq v1, v3, :cond_2
 
@@ -286,9 +286,9 @@
 
     .line 5
     :cond_2
-    iget-object v3, p0, Lv3/q5;->f:[I
+    iget-object v3, p0, Lv3/q5;->g:[I
 
-    iget-object v4, p1, Lv3/q5;->f:[I
+    iget-object v4, p1, Lv3/q5;->g:[I
 
     const/4 v5, 0x0
 
@@ -318,11 +318,11 @@
     if-eqz v1, :cond_7
 
     .line 7
-    iget-object v1, p0, Lv3/q5;->g:[Lv3/r5;
+    iget-object v1, p0, Lv3/q5;->h:[Lv3/r5;
 
-    iget-object p1, p1, Lv3/q5;->g:[Lv3/r5;
+    iget-object p1, p1, Lv3/q5;->h:[Lv3/r5;
 
-    iget v3, p0, Lv3/q5;->h:I
+    iget v3, p0, Lv3/q5;->i:I
 
     const/4 v4, 0x0
 
@@ -370,14 +370,14 @@
 
     .line 1
     :goto_0
-    iget v2, p0, Lv3/q5;->h:I
+    iget v2, p0, Lv3/q5;->i:I
 
     if-ge v1, v2, :cond_0
 
     mul-int/lit8 v0, v0, 0x1f
 
     .line 2
-    iget-object v2, p0, Lv3/q5;->f:[I
+    iget-object v2, p0, Lv3/q5;->g:[I
 
     aget v2, v2, v1
 
@@ -386,7 +386,7 @@
     mul-int/lit8 v0, v0, 0x1f
 
     .line 3
-    iget-object v2, p0, Lv3/q5;->g:[Lv3/r5;
+    iget-object v2, p0, Lv3/q5;->h:[Lv3/r5;
 
     aget-object v2, v2, v1
 

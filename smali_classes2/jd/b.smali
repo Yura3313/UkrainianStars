@@ -3,31 +3,31 @@
 .source "EmbeddedIngameChatDialog.kt"
 
 # interfaces
-.implements Lae/b2;
+.implements Lae/a2;
 
 
 # instance fields
 .field public final a:I
 
-.field public final b:Lvc/g;
+.field public final b:Lvc/f;
 
-.field public final c:Lvc/f;
+.field public final c:Lvc/e;
 
 
 # direct methods
-.method public constructor <init>(Lvc/g;Lvc/f;)V
+.method public constructor <init>(Lvc/f;Lvc/e;)V
     .locals 1
 
     const-string v0, "chatMessage"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Ljd/b;->b:Lvc/g;
+    iput-object p1, p0, Ljd/b;->b:Lvc/f;
 
-    iput-object p2, p0, Ljd/b;->c:Lvc/f;
+    iput-object p2, p0, Ljd/b;->c:Lvc/e;
 
     .line 2
     sget p1, Lcom/supercell/id/R$layout;->fragment_chat_messages_chat_message:I
@@ -39,12 +39,12 @@
 
 
 # virtual methods
-.method public final a(Lae/b2;)Z
+.method public final a(Lae/a2;)Z
     .locals 3
 
     const-string v0, "other"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     instance-of v0, p1, Ljd/b;
@@ -57,79 +57,79 @@
 
     .line 2
     :cond_0
-    iget-object v0, p0, Ljd/b;->c:Lvc/f;
+    iget-object v0, p0, Ljd/b;->c:Lvc/e;
 
     .line 3
-    iget-object v0, v0, Lvc/f;->c:Ljava/lang/String;
+    iget-object v0, v0, Lvc/e;->c:Ljava/lang/String;
 
     .line 4
     check-cast p1, Ljd/b;
 
     .line 5
-    iget-object v2, p1, Ljd/b;->c:Lvc/f;
+    iget-object v2, p1, Ljd/b;->c:Lvc/e;
 
     .line 6
-    iget-object v2, v2, Lvc/f;->c:Ljava/lang/String;
+    iget-object v2, v2, Lvc/e;->c:Ljava/lang/String;
 
     .line 7
-    invoke-static {v0, v2}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v2}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
     .line 8
-    iget-object v0, p0, Ljd/b;->c:Lvc/f;
+    iget-object v0, p0, Ljd/b;->c:Lvc/e;
 
     .line 9
-    iget-object v0, v0, Lvc/f;->d:Ljava/lang/String;
+    iget-object v0, v0, Lvc/e;->d:Ljava/lang/String;
 
     .line 10
-    iget-object v2, p1, Ljd/b;->c:Lvc/f;
+    iget-object v2, p1, Ljd/b;->c:Lvc/e;
 
     .line 11
-    iget-object v2, v2, Lvc/f;->d:Ljava/lang/String;
+    iget-object v2, v2, Lvc/e;->d:Ljava/lang/String;
 
     .line 12
-    invoke-static {v0, v2}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v2}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
     .line 13
-    iget-object v0, p0, Ljd/b;->c:Lvc/f;
+    iget-object v0, p0, Ljd/b;->c:Lvc/e;
 
     .line 14
-    iget-object v0, v0, Lvc/f;->e:Ljava/lang/String;
+    iget-object v0, v0, Lvc/e;->e:Ljava/lang/String;
 
     .line 15
-    iget-object v2, p1, Ljd/b;->c:Lvc/f;
+    iget-object v2, p1, Ljd/b;->c:Lvc/e;
 
     .line 16
-    iget-object v2, v2, Lvc/f;->e:Ljava/lang/String;
+    iget-object v2, v2, Lvc/e;->e:Ljava/lang/String;
 
     .line 17
-    invoke-static {v0, v2}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v2}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
     .line 18
-    iget-object v0, p0, Ljd/b;->b:Lvc/g;
+    iget-object v0, p0, Ljd/b;->b:Lvc/f;
 
     .line 19
-    iget-object v0, v0, Lvc/g;->d:Ljava/lang/String;
+    iget-object v0, v0, Lvc/f;->d:Ljava/lang/String;
 
     .line 20
-    iget-object p1, p1, Ljd/b;->b:Lvc/g;
+    iget-object p1, p1, Ljd/b;->b:Lvc/f;
 
     .line 21
-    iget-object p1, p1, Lvc/g;->d:Ljava/lang/String;
+    iget-object p1, p1, Lvc/f;->d:Ljava/lang/String;
 
     .line 22
-    invoke-static {v0, p1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, p1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -149,12 +149,12 @@
     return v0
 .end method
 
-.method public final d(Lae/b2;)Z
+.method public final d(Lae/a2;)Z
     .locals 1
 
     const-string v0, "other"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     instance-of v0, p1, Ljd/b;
@@ -164,19 +164,19 @@
     check-cast p1, Ljd/b;
 
     .line 2
-    iget-object p1, p1, Ljd/b;->b:Lvc/g;
+    iget-object p1, p1, Ljd/b;->b:Lvc/f;
 
     .line 3
-    iget-object p1, p1, Lvc/g;->b:Ljava/lang/String;
+    iget-object p1, p1, Lvc/f;->b:Ljava/lang/String;
 
     .line 4
-    iget-object v0, p0, Ljd/b;->b:Lvc/g;
+    iget-object v0, p0, Ljd/b;->b:Lvc/f;
 
     .line 5
-    iget-object v0, v0, Lvc/g;->b:Ljava/lang/String;
+    iget-object v0, v0, Lvc/f;->b:Ljava/lang/String;
 
     .line 6
-    invoke-static {p1, v0}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {p1, v0}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -204,21 +204,21 @@
 
     check-cast p1, Ljd/b;
 
-    iget-object v0, p0, Ljd/b;->b:Lvc/g;
+    iget-object v0, p0, Ljd/b;->b:Lvc/f;
 
-    iget-object v1, p1, Ljd/b;->b:Lvc/g;
+    iget-object v1, p1, Ljd/b;->b:Lvc/f;
 
-    invoke-static {v0, v1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Ljd/b;->c:Lvc/f;
+    iget-object v0, p0, Ljd/b;->c:Lvc/e;
 
-    iget-object p1, p1, Ljd/b;->c:Lvc/f;
+    iget-object p1, p1, Ljd/b;->c:Lvc/e;
 
-    invoke-static {v0, p1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, p1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -241,13 +241,13 @@
 .method public final hashCode()I
     .locals 3
 
-    iget-object v0, p0, Ljd/b;->b:Lvc/g;
+    iget-object v0, p0, Ljd/b;->b:Lvc/f;
 
     const/4 v1, 0x0
 
     if-eqz v0, :cond_0
 
-    invoke-virtual {v0}, Lvc/g;->hashCode()I
+    invoke-virtual {v0}, Lvc/f;->hashCode()I
 
     move-result v0
 
@@ -259,11 +259,11 @@
     :goto_0
     mul-int/lit8 v0, v0, 0x1f
 
-    iget-object v2, p0, Ljd/b;->c:Lvc/f;
+    iget-object v2, p0, Ljd/b;->c:Lvc/e;
 
     if-eqz v2, :cond_1
 
-    invoke-virtual {v2}, Lvc/f;->hashCode()I
+    invoke-virtual {v2}, Lvc/e;->hashCode()I
 
     move-result v1
 
@@ -284,7 +284,7 @@
     move-result-object v0
 
     .line 2
-    iget-object v1, p0, Ljd/b;->b:Lvc/g;
+    iget-object v1, p0, Ljd/b;->b:Lvc/f;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -292,7 +292,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Ljd/b;->c:Lvc/f;
+    iget-object v1, p0, Ljd/b;->c:Lvc/e;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 

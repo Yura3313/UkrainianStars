@@ -1,5 +1,5 @@
 .class public final Lcom/supercell/id/ui/profile/ProfileFragment$m;
-.super Lse/h;
+.super Lse/i;
 .source "ProfileFragment.kt"
 
 # interfaces
@@ -18,28 +18,28 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/l<",
-        "Lbe/l0;",
-        "Lie/h;",
+        "Lbe/n0;",
+        "Lie/i;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic f:Lcom/supercell/id/ui/profile/ProfileFragment;
+.field public final synthetic g:Lcom/supercell/id/ui/profile/ProfileFragment;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/id/ui/profile/ProfileFragment;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/ui/profile/ProfileFragment$m;->f:Lcom/supercell/id/ui/profile/ProfileFragment;
+    iput-object p1, p0, Lcom/supercell/id/ui/profile/ProfileFragment$m;->g:Lcom/supercell/id/ui/profile/ProfileFragment;
 
     const/4 p1, 0x1
 
-    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -50,10 +50,10 @@
     .locals 2
 
     .line 1
-    check-cast p1, Lbe/l0;
+    check-cast p1, Lbe/n0;
 
     .line 2
-    iget-object v0, p0, Lcom/supercell/id/ui/profile/ProfileFragment$m;->f:Lcom/supercell/id/ui/profile/ProfileFragment;
+    iget-object v0, p0, Lcom/supercell/id/ui/profile/ProfileFragment$m;->g:Lcom/supercell/id/ui/profile/ProfileFragment;
 
     sget v1, Lcom/supercell/id/R$id;->tabMyGames:I
 
@@ -78,7 +78,7 @@
     if-eqz p1, :cond_0
 
     .line 3
-    invoke-static {p1}, Lcom/helpshift/util/b0;->a(Lbe/l0;)I
+    invoke-static {p1}, Lcom/helpshift/util/a0;->a(Lbe/n0;)I
 
     move-result p1
 
@@ -121,12 +121,12 @@
     .line 7
     :cond_3
     :goto_2
-    iget-object p1, p0, Lcom/supercell/id/ui/profile/ProfileFragment$m;->f:Lcom/supercell/id/ui/profile/ProfileFragment;
+    iget-object p1, p0, Lcom/supercell/id/ui/profile/ProfileFragment$m;->g:Lcom/supercell/id/ui/profile/ProfileFragment;
 
     invoke-static {p1}, Lcom/supercell/id/ui/profile/ProfileFragment;->g1(Lcom/supercell/id/ui/profile/ProfileFragment;)V
 
     .line 8
-    sget-object p1, Lie/h;->a:Lie/h;
+    sget-object p1, Lie/i;->a:Lie/i;
 
     return-object p1
 .end method

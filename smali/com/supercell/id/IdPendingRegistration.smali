@@ -19,11 +19,11 @@
 
 
 # instance fields
-.field public final f:Ljava/lang/String;
-
 .field public final g:Ljava/lang/String;
 
-.field public final h:Z
+.field public final h:Ljava/lang/String;
+
+.field public final i:Z
 
 
 # direct methods
@@ -44,7 +44,7 @@
 
     const-string v0, "parcel"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 2
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
@@ -82,11 +82,11 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lcom/supercell/id/IdPendingRegistration;->f:Ljava/lang/String;
+    iput-object p1, p0, Lcom/supercell/id/IdPendingRegistration;->g:Ljava/lang/String;
 
-    iput-object p2, p0, Lcom/supercell/id/IdPendingRegistration;->g:Ljava/lang/String;
+    iput-object p2, p0, Lcom/supercell/id/IdPendingRegistration;->h:Ljava/lang/String;
 
-    iput-boolean p3, p0, Lcom/supercell/id/IdPendingRegistration;->h:Z
+    iput-boolean p3, p0, Lcom/supercell/id/IdPendingRegistration;->i:Z
 
     return-void
 .end method
@@ -96,7 +96,7 @@
 
     const-string v0, "jsonObject"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "email"
 
@@ -112,7 +112,7 @@
     .line 7
     sget-object v2, Lorg/json/JSONObject;->NULL:Ljava/lang/Object;
 
-    invoke-static {v0, v2}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v2}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v2
 
@@ -149,7 +149,7 @@
     .line 10
     sget-object v3, Lorg/json/JSONObject;->NULL:Ljava/lang/Object;
 
-    invoke-static {v2, v3}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, v3}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v3
 
@@ -186,7 +186,7 @@
     .line 13
     sget-object v3, Lorg/json/JSONObject;->NULL:Ljava/lang/Object;
 
-    invoke-static {p1, v3}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {p1, v3}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v3
 
@@ -234,21 +234,21 @@
 
     if-eqz p5, :cond_0
 
-    iget-object p1, p0, Lcom/supercell/id/IdPendingRegistration;->f:Ljava/lang/String;
+    iget-object p1, p0, Lcom/supercell/id/IdPendingRegistration;->g:Ljava/lang/String;
 
     :cond_0
     and-int/lit8 p5, p4, 0x2
 
     if-eqz p5, :cond_1
 
-    iget-object p2, p0, Lcom/supercell/id/IdPendingRegistration;->g:Ljava/lang/String;
+    iget-object p2, p0, Lcom/supercell/id/IdPendingRegistration;->h:Ljava/lang/String;
 
     :cond_1
     and-int/lit8 p4, p4, 0x4
 
     if-eqz p4, :cond_2
 
-    iget-boolean p3, p0, Lcom/supercell/id/IdPendingRegistration;->h:Z
+    iget-boolean p3, p0, Lcom/supercell/id/IdPendingRegistration;->i:Z
 
     :cond_2
     invoke-virtual {p0, p1, p2, p3}, Lcom/supercell/id/IdPendingRegistration;->copy(Ljava/lang/String;Ljava/lang/String;Z)Lcom/supercell/id/IdPendingRegistration;
@@ -268,7 +268,7 @@
     const-string v0, "email"
 
     .line 1
-    invoke-static {p0, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 2
     new-instance v0, Lcom/supercell/id/IdPendingRegistration;
@@ -290,7 +290,7 @@
     const-string v0, "phone"
 
     .line 1
-    invoke-static {p0, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 2
     new-instance v0, Lcom/supercell/id/IdPendingRegistration;
@@ -309,7 +309,7 @@
 .method public final component1()Ljava/lang/String;
     .locals 1
 
-    iget-object v0, p0, Lcom/supercell/id/IdPendingRegistration;->f:Ljava/lang/String;
+    iget-object v0, p0, Lcom/supercell/id/IdPendingRegistration;->g:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -317,7 +317,7 @@
 .method public final component2()Ljava/lang/String;
     .locals 1
 
-    iget-object v0, p0, Lcom/supercell/id/IdPendingRegistration;->g:Ljava/lang/String;
+    iget-object v0, p0, Lcom/supercell/id/IdPendingRegistration;->h:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -325,7 +325,7 @@
 .method public final component3()Z
     .locals 1
 
-    iget-boolean v0, p0, Lcom/supercell/id/IdPendingRegistration;->h:Z
+    iget-boolean v0, p0, Lcom/supercell/id/IdPendingRegistration;->i:Z
 
     return v0
 .end method
@@ -359,29 +359,29 @@
 
     check-cast p1, Lcom/supercell/id/IdPendingRegistration;
 
-    iget-object v0, p0, Lcom/supercell/id/IdPendingRegistration;->f:Ljava/lang/String;
-
-    iget-object v1, p1, Lcom/supercell/id/IdPendingRegistration;->f:Ljava/lang/String;
-
-    invoke-static {v0, v1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
     iget-object v0, p0, Lcom/supercell/id/IdPendingRegistration;->g:Ljava/lang/String;
 
     iget-object v1, p1, Lcom/supercell/id/IdPendingRegistration;->g:Ljava/lang/String;
 
-    invoke-static {v0, v1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    iget-boolean v0, p0, Lcom/supercell/id/IdPendingRegistration;->h:Z
+    iget-object v0, p0, Lcom/supercell/id/IdPendingRegistration;->h:Ljava/lang/String;
 
-    iget-boolean p1, p1, Lcom/supercell/id/IdPendingRegistration;->h:Z
+    iget-object v1, p1, Lcom/supercell/id/IdPendingRegistration;->h:Ljava/lang/String;
+
+    invoke-static {v0, v1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    iget-boolean v0, p0, Lcom/supercell/id/IdPendingRegistration;->i:Z
+
+    iget-boolean p1, p1, Lcom/supercell/id/IdPendingRegistration;->i:Z
 
     if-ne v0, p1, :cond_0
 
@@ -402,7 +402,7 @@
 .method public final getAcceptMarketing()Z
     .locals 1
 
-    iget-boolean v0, p0, Lcom/supercell/id/IdPendingRegistration;->h:Z
+    iget-boolean v0, p0, Lcom/supercell/id/IdPendingRegistration;->i:Z
 
     return v0
 .end method
@@ -410,7 +410,7 @@
 .method public final getEmail()Ljava/lang/String;
     .locals 1
 
-    iget-object v0, p0, Lcom/supercell/id/IdPendingRegistration;->f:Ljava/lang/String;
+    iget-object v0, p0, Lcom/supercell/id/IdPendingRegistration;->g:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -418,7 +418,7 @@
 .method public final getPhone()Ljava/lang/String;
     .locals 1
 
-    iget-object v0, p0, Lcom/supercell/id/IdPendingRegistration;->g:Ljava/lang/String;
+    iget-object v0, p0, Lcom/supercell/id/IdPendingRegistration;->h:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -426,7 +426,7 @@
 .method public hashCode()I
     .locals 3
 
-    iget-object v0, p0, Lcom/supercell/id/IdPendingRegistration;->f:Ljava/lang/String;
+    iget-object v0, p0, Lcom/supercell/id/IdPendingRegistration;->g:Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -444,7 +444,7 @@
     :goto_0
     mul-int/lit8 v0, v0, 0x1f
 
-    iget-object v2, p0, Lcom/supercell/id/IdPendingRegistration;->g:Ljava/lang/String;
+    iget-object v2, p0, Lcom/supercell/id/IdPendingRegistration;->h:Ljava/lang/String;
 
     if-eqz v2, :cond_1
 
@@ -457,7 +457,7 @@
 
     mul-int/lit8 v0, v0, 0x1f
 
-    iget-boolean v1, p0, Lcom/supercell/id/IdPendingRegistration;->h:Z
+    iget-boolean v1, p0, Lcom/supercell/id/IdPendingRegistration;->i:Z
 
     if-eqz v1, :cond_2
 
@@ -478,21 +478,21 @@
     invoke-direct {v0}, Lorg/json/JSONObject;-><init>()V
 
     .line 2
-    iget-object v1, p0, Lcom/supercell/id/IdPendingRegistration;->f:Ljava/lang/String;
+    iget-object v1, p0, Lcom/supercell/id/IdPendingRegistration;->g:Ljava/lang/String;
 
     const-string v2, "email"
 
     invoke-virtual {v0, v2, v1}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
     .line 3
-    iget-object v1, p0, Lcom/supercell/id/IdPendingRegistration;->g:Ljava/lang/String;
+    iget-object v1, p0, Lcom/supercell/id/IdPendingRegistration;->h:Ljava/lang/String;
 
     const-string v2, "phone"
 
     invoke-virtual {v0, v2, v1}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
     .line 4
-    iget-boolean v1, p0, Lcom/supercell/id/IdPendingRegistration;->h:Z
+    iget-boolean v1, p0, Lcom/supercell/id/IdPendingRegistration;->i:Z
 
     const-string v2, "acceptMarketing"
 
@@ -512,7 +512,7 @@
     move-result-object v0
 
     .line 2
-    iget-object v1, p0, Lcom/supercell/id/IdPendingRegistration;->f:Ljava/lang/String;
+    iget-object v1, p0, Lcom/supercell/id/IdPendingRegistration;->g:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -520,7 +520,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lcom/supercell/id/IdPendingRegistration;->g:Ljava/lang/String;
+    iget-object v1, p0, Lcom/supercell/id/IdPendingRegistration;->h:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -528,12 +528,12 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean v1, p0, Lcom/supercell/id/IdPendingRegistration;->h:Z
+    iget-boolean v1, p0, Lcom/supercell/id/IdPendingRegistration;->i:Z
 
     const-string v2, ")"
 
     .line 3
-    invoke-static {v0, v1, v2}, Landroidx/appcompat/app/j;->b(Ljava/lang/StringBuilder;ZLjava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, v1, v2}, Landroidx/appcompat/app/j;->a(Ljava/lang/StringBuilder;ZLjava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -545,20 +545,20 @@
 
     const-string p2, "parcel"
 
-    invoke-static {p1, p2}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p2}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
-    iget-object p2, p0, Lcom/supercell/id/IdPendingRegistration;->f:Ljava/lang/String;
-
-    invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
-
-    .line 2
     iget-object p2, p0, Lcom/supercell/id/IdPendingRegistration;->g:Ljava/lang/String;
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
+    .line 2
+    iget-object p2, p0, Lcom/supercell/id/IdPendingRegistration;->h:Ljava/lang/String;
+
+    invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
+
     .line 3
-    iget-boolean p2, p0, Lcom/supercell/id/IdPendingRegistration;->h:Z
+    iget-boolean p2, p0, Lcom/supercell/id/IdPendingRegistration;->i:Z
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeByte(B)V
 

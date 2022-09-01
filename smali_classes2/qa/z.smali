@@ -35,7 +35,7 @@
     invoke-virtual {p1, p2, p3, p4}, Ljava/util/Calendar;->set(III)V
 
     .line 3
-    sget-object p2, Lcom/helpshift/util/u;->c:Le7/g;
+    sget-object p2, Lcom/helpshift/util/t;->c:Le7/g;
 
     .line 4
     iget-object p2, p2, Le7/g;->f:La8/f;
@@ -51,7 +51,7 @@
     const-string p3, "EEEE, MMMM dd, yyyy"
 
     .line 7
-    invoke-static {p3, p2}, Li8/b;->e(Ljava/lang/String;Ljava/util/Locale;)Lcom/helpshift/util/s;
+    invoke-static {p3, p2}, Li8/b;->e(Ljava/lang/String;Ljava/util/Locale;)Lcom/helpshift/util/r;
 
     move-result-object p2
 
@@ -59,7 +59,7 @@
 
     move-result-object p1
 
-    invoke-virtual {p2, p1}, Lcom/helpshift/util/s;->a(Ljava/util/Date;)Ljava/lang/String;
+    invoke-virtual {p2, p1}, Lcom/helpshift/util/r;->a(Ljava/util/Date;)Ljava/lang/String;
 
     move-result-object p1
 

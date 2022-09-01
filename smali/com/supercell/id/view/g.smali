@@ -4,23 +4,23 @@
 
 
 # instance fields
-.field public final f:Z
+.field public final g:Z
 
-.field public final g:F
+.field public final h:F
 
-.field public final h:I
+.field public final i:I
 
-.field public final i:Z
+.field public final j:Z
 
-.field public final j:Landroid/graphics/BlurMaskFilter;
-
-.field public final k:I
+.field public final k:Landroid/graphics/BlurMaskFilter;
 
 .field public final l:I
 
-.field public final m:F
+.field public final m:I
 
 .field public final n:F
+
+.field public final o:F
 
 
 # direct methods
@@ -30,13 +30,13 @@
     .line 1
     invoke-direct {p0}, Landroid/text/style/ReplacementSpan;-><init>()V
 
-    iput p1, p0, Lcom/supercell/id/view/g;->k:I
+    iput p1, p0, Lcom/supercell/id/view/g;->l:I
 
-    iput p3, p0, Lcom/supercell/id/view/g;->l:I
+    iput p3, p0, Lcom/supercell/id/view/g;->m:I
 
-    iput p5, p0, Lcom/supercell/id/view/g;->m:F
+    iput p5, p0, Lcom/supercell/id/view/g;->n:F
 
-    iput p6, p0, Lcom/supercell/id/view/g;->n:F
+    iput p6, p0, Lcom/supercell/id/view/g;->o:F
 
     const/4 p1, 0x1
 
@@ -57,7 +57,7 @@
 
     .line 2
     :goto_0
-    iput-boolean v1, p0, Lcom/supercell/id/view/g;->f:Z
+    iput-boolean v1, p0, Lcom/supercell/id/view/g;->g:Z
 
     if-eqz v1, :cond_1
 
@@ -72,7 +72,7 @@
 
     .line 3
     :goto_1
-    iput p2, p0, Lcom/supercell/id/view/g;->g:F
+    iput p2, p0, Lcom/supercell/id/view/g;->h:F
 
     const/high16 v1, 0x3f000000    # 0.5f
 
@@ -89,7 +89,7 @@
 
     float-to-int p2, p2
 
-    iput p2, p0, Lcom/supercell/id/view/g;->h:I
+    iput p2, p0, Lcom/supercell/id/view/g;->i:I
 
     cmpl-float p2, p4, v0
 
@@ -111,7 +111,7 @@
     .line 5
     :cond_3
     :goto_2
-    iput-boolean p1, p0, Lcom/supercell/id/view/g;->i:Z
+    iput-boolean p1, p0, Lcom/supercell/id/view/g;->j:Z
 
     cmpl-float p1, p4, v0
 
@@ -130,7 +130,7 @@
     const/4 p1, 0x0
 
     :goto_3
-    iput-object p1, p0, Lcom/supercell/id/view/g;->j:Landroid/graphics/BlurMaskFilter;
+    iput-object p1, p0, Lcom/supercell/id/view/g;->k:Landroid/graphics/BlurMaskFilter;
 
     return-void
 .end method
@@ -150,17 +150,17 @@
 
     move-object v10, p1
 
-    invoke-static {p1, v2}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v2}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v2, "text"
 
     move-object v11, p2
 
-    invoke-static {p2, v2}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v2}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v2, "paint"
 
-    invoke-static {v9, v2}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v9, v2}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     invoke-virtual/range {p9 .. p9}, Landroid/graphics/Paint;->getColor()I
@@ -168,17 +168,17 @@
     move-result v12
 
     .line 2
-    iget-boolean v2, v0, Lcom/supercell/id/view/g;->i:Z
+    iget-boolean v2, v0, Lcom/supercell/id/view/g;->j:Z
 
     if-eqz v2, :cond_0
 
     .line 3
-    iget-object v2, v0, Lcom/supercell/id/view/g;->j:Landroid/graphics/BlurMaskFilter;
+    iget-object v2, v0, Lcom/supercell/id/view/g;->k:Landroid/graphics/BlurMaskFilter;
 
     invoke-virtual {v9, v2}, Landroid/graphics/Paint;->setMaskFilter(Landroid/graphics/MaskFilter;)Landroid/graphics/MaskFilter;
 
     .line 4
-    iget v2, v0, Lcom/supercell/id/view/g;->l:I
+    iget v2, v0, Lcom/supercell/id/view/g;->m:I
 
     invoke-virtual {v9, v2}, Landroid/graphics/Paint;->setColor(I)V
 
@@ -188,24 +188,24 @@
     invoke-virtual {v9, v2}, Landroid/graphics/Paint;->setStyle(Landroid/graphics/Paint$Style;)V
 
     .line 6
-    iget v2, v0, Lcom/supercell/id/view/g;->g:F
+    iget v2, v0, Lcom/supercell/id/view/g;->h:F
 
     invoke-virtual {v9, v2}, Landroid/graphics/Paint;->setStrokeWidth(F)V
 
     .line 7
-    iget v2, v0, Lcom/supercell/id/view/g;->h:I
+    iget v2, v0, Lcom/supercell/id/view/g;->i:I
 
     int-to-float v2, v2
 
     add-float v2, p5, v2
 
-    iget v3, v0, Lcom/supercell/id/view/g;->m:F
+    iget v3, v0, Lcom/supercell/id/view/g;->n:F
 
     add-float v6, v2, v3
 
     int-to-float v2, v1
 
-    iget v3, v0, Lcom/supercell/id/view/g;->n:F
+    iget v3, v0, Lcom/supercell/id/view/g;->o:F
 
     add-float v7, v2, v3
 
@@ -228,12 +228,12 @@
 
     .line 9
     :cond_0
-    iget-boolean v2, v0, Lcom/supercell/id/view/g;->f:Z
+    iget-boolean v2, v0, Lcom/supercell/id/view/g;->g:Z
 
     if-eqz v2, :cond_1
 
     .line 10
-    iget v2, v0, Lcom/supercell/id/view/g;->k:I
+    iget v2, v0, Lcom/supercell/id/view/g;->l:I
 
     invoke-virtual {v9, v2}, Landroid/graphics/Paint;->setColor(I)V
 
@@ -243,12 +243,12 @@
     invoke-virtual {v9, v2}, Landroid/graphics/Paint;->setStyle(Landroid/graphics/Paint$Style;)V
 
     .line 12
-    iget v2, v0, Lcom/supercell/id/view/g;->g:F
+    iget v2, v0, Lcom/supercell/id/view/g;->h:F
 
     invoke-virtual {v9, v2}, Landroid/graphics/Paint;->setStrokeWidth(F)V
 
     .line 13
-    iget v2, v0, Lcom/supercell/id/view/g;->h:I
+    iget v2, v0, Lcom/supercell/id/view/g;->i:I
 
     int-to-float v2, v2
 
@@ -278,7 +278,7 @@
     invoke-virtual {v9, v2}, Landroid/graphics/Paint;->setStyle(Landroid/graphics/Paint$Style;)V
 
     .line 16
-    iget v2, v0, Lcom/supercell/id/view/g;->h:I
+    iget v2, v0, Lcom/supercell/id/view/g;->i:I
 
     int-to-float v2, v2
 
@@ -306,11 +306,11 @@
 
     const-string v0, "paint"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "text"
 
-    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     if-eqz p5, :cond_0
 
@@ -365,7 +365,7 @@
 
     float-to-int p1, p1
 
-    iget p2, p0, Lcom/supercell/id/view/g;->h:I
+    iget p2, p0, Lcom/supercell/id/view/g;->i:I
 
     mul-int/lit8 p2, p2, 0x2
 

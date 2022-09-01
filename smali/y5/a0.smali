@@ -1,43 +1,34 @@
-.class public final synthetic Ly5/a0;
+.class public final Ly5/a0;
 .super Ljava/lang/Object;
-
-# interfaces
-.implements Ljava/util/concurrent/Executor;
 
 
 # static fields
-.field public static final f:Ly5/a0;
+.field public static final synthetic a:I
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 1
+.method public static a()Ljava/util/concurrent/Executor;
+    .locals 9
 
-    new-instance v0, Ly5/a0;
+    new-instance v8, Ljava/util/concurrent/ThreadPoolExecutor;
 
-    invoke-direct {v0}, Ly5/a0;-><init>()V
+    sget-object v5, Ljava/util/concurrent/TimeUnit;->SECONDS:Ljava/util/concurrent/TimeUnit;
 
-    sput-object v0, Ly5/a0;->f:Ly5/a0;
+    new-instance v6, Ljava/util/concurrent/LinkedBlockingQueue;
 
-    return-void
-.end method
+    invoke-direct {v6}, Ljava/util/concurrent/LinkedBlockingQueue;-><init>()V
 
-.method public constructor <init>()V
-    .locals 0
+    sget-object v7, Ly5/b0;->a:Ly5/b0;
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    const/4 v1, 0x0
 
-    return-void
-.end method
+    const/4 v2, 0x1
 
+    const-wide/16 v3, 0x1e
 
-# virtual methods
-.method public final execute(Ljava/lang/Runnable;)V
-    .locals 1
+    move-object v0, v8
 
-    sget v0, Lvc/b0;->a:I
+    invoke-direct/range {v0 .. v7}, Ljava/util/concurrent/ThreadPoolExecutor;-><init>(IIJLjava/util/concurrent/TimeUnit;Ljava/util/concurrent/BlockingQueue;Ljava/util/concurrent/ThreadFactory;)V
 
-    invoke-interface {p1}, Ljava/lang/Runnable;->run()V
-
-    return-void
+    return-object v8
 .end method

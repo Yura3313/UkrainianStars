@@ -31,7 +31,7 @@
     .line 2
     array-length v0, p1
 
-    invoke-static {v0}, Lr5/j0;->a(I)V
+    invoke-static {v0}, Lr5/l0;->a(I)V
 
     const/16 v0, 0xa
 
@@ -77,14 +77,14 @@
     move-result-object p1
 
     .line 8
-    invoke-static {p1}, Ll2/g;->c([B)[B
+    invoke-static {p1}, Ll2/p;->d([B)[B
 
     move-result-object p1
 
     iput-object p1, p0, Lr5/a;->c:[B
 
     .line 9
-    invoke-static {p1}, Ll2/g;->c([B)[B
+    invoke-static {p1}, Ll2/p;->d([B)[B
 
     move-result-object p1
 
@@ -241,7 +241,7 @@
 
     move-result-object v2
 
-    invoke-static {v2}, Ll2/g;->b([B)[B
+    invoke-static {v2}, Ll2/p;->c([B)[B
 
     move-result-object v2
 

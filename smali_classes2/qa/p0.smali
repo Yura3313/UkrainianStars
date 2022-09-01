@@ -22,19 +22,19 @@
 
 
 # instance fields
-.field public c:Lra/w;
+.field public c:Lra/v;
 
 .field public d:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
-            "Lo8/y;",
+            "Lo8/z;",
             ">;"
         }
     .end annotation
 .end field
 
-.field public e:Lra/x;
+.field public e:Lra/w;
 
 .field public f:I
 
@@ -46,16 +46,16 @@
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;Ljava/util/List;ZLra/x;)V
+.method public constructor <init>(Landroid/content/Context;Ljava/util/List;ZLra/w;)V
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Landroid/content/Context;",
             "Ljava/util/List<",
-            "Lo8/y;",
+            "Lo8/z;",
             ">;Z",
-            "Lra/x;",
+            "Lra/w;",
             ")V"
         }
     .end annotation
@@ -77,11 +77,11 @@
     iput v0, p0, Lqa/p0;->h:I
 
     .line 5
-    new-instance v0, Lra/w;
+    new-instance v0, Lra/v;
 
-    invoke-direct {v0, p1}, Lra/w;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, p1}, Lra/v;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lqa/p0;->c:Lra/w;
+    iput-object v0, p0, Lqa/p0;->c:Lra/v;
 
     .line 6
     iput-object p2, p0, Lqa/p0;->d:Ljava/util/List;
@@ -90,7 +90,7 @@
     iput-boolean p3, p0, Lqa/p0;->i:Z
 
     .line 8
-    iput-object p4, p0, Lqa/p0;->e:Lra/x;
+    iput-object p4, p0, Lqa/p0;->e:Lra/w;
 
     return-void
 .end method
@@ -160,21 +160,21 @@
     if-ge p1, v1, :cond_17
 
     .line 3
-    iget-object v1, p0, Lqa/p0;->c:Lra/w;
+    iget-object v1, p0, Lqa/p0;->c:Lra/v;
 
-    invoke-virtual {p0, p1}, Lqa/p0;->o(I)Lo8/y;
+    invoke-virtual {p0, p1}, Lqa/p0;->o(I)Lo8/z;
 
     move-result-object p1
 
     invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 4
-    iget-boolean v1, p1, Lo8/y;->s:Z
+    iget-boolean v1, p1, Lo8/z;->t:Z
 
     if-eqz v1, :cond_2
 
     .line 5
-    iget-boolean p1, p1, Lo8/y;->f:Z
+    iget-boolean p1, p1, Lo8/z;->g:Z
 
     if-eqz p1, :cond_1
 
@@ -189,7 +189,7 @@
 
     .line 6
     :cond_2
-    instance-of v1, p1, Lo8/s0;
+    instance-of v1, p1, Lo8/u0;
 
     if-eqz v1, :cond_3
 
@@ -209,7 +209,7 @@
 
     .line 8
     :cond_4
-    instance-of v1, p1, Lo8/t;
+    instance-of v1, p1, Lo8/u;
 
     if-eqz v1, :cond_5
 
@@ -219,7 +219,7 @@
 
     .line 9
     :cond_5
-    instance-of v1, p1, Lo8/z;
+    instance-of v1, p1, Lo8/b0;
 
     if-eqz v1, :cond_6
 
@@ -239,7 +239,7 @@
 
     .line 11
     :cond_7
-    instance-of v1, p1, Lo8/v0;
+    instance-of v1, p1, Lo8/x0;
 
     if-eqz v1, :cond_8
 
@@ -259,7 +259,7 @@
 
     .line 13
     :cond_9
-    instance-of v1, p1, Lo8/r0;
+    instance-of v1, p1, Lo8/t0;
 
     if-eqz v1, :cond_a
 
@@ -269,7 +269,7 @@
 
     .line 14
     :cond_a
-    instance-of v1, p1, Lo8/f0;
+    instance-of v1, p1, Lo8/h0;
 
     if-eqz v1, :cond_b
 
@@ -279,7 +279,7 @@
 
     .line 15
     :cond_b
-    instance-of v1, p1, Lo8/p0;
+    instance-of v1, p1, Lo8/r0;
 
     if-eqz v1, :cond_c
 
@@ -309,7 +309,7 @@
 
     .line 18
     :cond_e
-    instance-of v1, p1, Lo8/a0;
+    instance-of v1, p1, Lo8/c0;
 
     if-eqz v1, :cond_f
 
@@ -319,7 +319,7 @@
 
     .line 19
     :cond_f
-    instance-of v1, p1, Lo8/s;
+    instance-of v1, p1, Lo8/t;
 
     if-eqz v1, :cond_10
 
@@ -329,7 +329,7 @@
 
     .line 20
     :cond_10
-    instance-of v1, p1, Lo8/c0;
+    instance-of v1, p1, Lo8/e0;
 
     if-eqz v1, :cond_11
 
@@ -339,7 +339,7 @@
 
     .line 21
     :cond_11
-    instance-of v1, p1, Lo8/b0;
+    instance-of v1, p1, Lo8/d0;
 
     if-eqz v1, :cond_12
 
@@ -349,7 +349,7 @@
 
     .line 22
     :cond_12
-    instance-of v1, p1, Lo8/g0;
+    instance-of v1, p1, Lo8/i0;
 
     if-eqz v1, :cond_13
 
@@ -359,7 +359,7 @@
 
     .line 23
     :cond_13
-    instance-of v1, p1, Lo8/h0;
+    instance-of v1, p1, Lo8/j0;
 
     if-eqz v1, :cond_14
 
@@ -369,7 +369,7 @@
 
     .line 24
     :cond_14
-    instance-of v1, p1, Lo8/j0;
+    instance-of v1, p1, Lo8/l0;
 
     if-eqz v1, :cond_15
 
@@ -379,7 +379,7 @@
 
     .line 25
     :cond_15
-    instance-of p1, p1, Lo8/k0;
+    instance-of p1, p1, Lo8/m0;
 
     if-eqz p1, :cond_16
 
@@ -461,7 +461,7 @@
     .end param
 
     .line 1
-    iget v0, p1, Landroidx/recyclerview/widget/RecyclerView$z;->k:I
+    iget v0, p1, Landroidx/recyclerview/widget/RecyclerView$z;->l:I
 
     const/16 v1, 0x8
 
@@ -474,10 +474,10 @@
     if-ne v0, v4, :cond_6
 
     .line 2
-    iget-object p2, p0, Lqa/p0;->c:Lra/w;
+    iget-object p2, p0, Lqa/p0;->c:Lra/v;
 
     .line 3
-    iget-object p2, p2, Lra/w;->d:Lra/t;
+    iget-object p2, p2, Lra/v;->d:Lra/t;
 
     .line 4
     check-cast p1, Lra/t$b;
@@ -528,7 +528,7 @@
 
     .line 7
     :goto_1
-    iget-object v4, p1, Lra/t$b;->y:Landroid/view/View;
+    iget-object v4, p1, Lra/t$b;->z:Landroid/view/View;
 
     if-eqz v2, :cond_3
 
@@ -544,7 +544,7 @@
     invoke-virtual {v4, v2}, Landroid/view/View;->setVisibility(I)V
 
     .line 9
-    iget-object v2, p1, Lra/t$b;->z:Landroid/view/View;
+    iget-object v2, p1, Lra/t$b;->A:Landroid/view/View;
 
     if-eqz p2, :cond_4
 
@@ -560,7 +560,7 @@
     invoke-virtual {v2, p2}, Landroid/view/View;->setVisibility(I)V
 
     .line 11
-    iget-object p1, p1, Lra/t$b;->A:Landroid/view/View;
+    iget-object p1, p1, Lra/t$b;->B:Landroid/view/View;
 
     if-eqz v0, :cond_5
 
@@ -578,10 +578,10 @@
     if-ne v0, v4, :cond_e
 
     .line 13
-    iget-object p2, p0, Lqa/p0;->c:Lra/w;
+    iget-object p2, p0, Lqa/p0;->c:Lra/v;
 
     .line 14
-    iget-object p2, p2, Lra/w;->b:Lra/s;
+    iget-object p2, p2, Lra/v;->b:Lra/s;
 
     .line 15
     check-cast p1, Lra/s$b;
@@ -741,19 +741,19 @@
     if-eqz v2, :cond_d
 
     .line 21
-    iget-object v2, p1, Lra/s$b;->y:Landroid/view/View;
+    iget-object v2, p1, Lra/s$b;->z:Landroid/view/View;
 
     invoke-virtual {v2, v3}, Landroid/view/View;->setVisibility(I)V
 
     if-eqz p2, :cond_7
 
     .line 22
-    iget-object p2, p1, Lra/s$b;->z:Landroid/widget/TextView;
+    iget-object p2, p1, Lra/s$b;->A:Landroid/widget/TextView;
 
     invoke-virtual {p2, v7}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 23
-    iget-object p2, p1, Lra/s$b;->z:Landroid/widget/TextView;
+    iget-object p2, p1, Lra/s$b;->A:Landroid/widget/TextView;
 
     invoke-virtual {p2, v3}, Landroid/view/View;->setVisibility(I)V
 
@@ -761,7 +761,7 @@
 
     .line 24
     :cond_7
-    iget-object p2, p1, Lra/s$b;->z:Landroid/widget/TextView;
+    iget-object p2, p1, Lra/s$b;->A:Landroid/widget/TextView;
 
     invoke-virtual {p2, v1}, Landroid/view/View;->setVisibility(I)V
 
@@ -771,12 +771,12 @@
     if-eqz v0, :cond_8
 
     .line 25
-    iget-object v0, p1, Lra/s$b;->A:Landroid/widget/LinearLayout;
+    iget-object v0, p1, Lra/s$b;->B:Landroid/widget/LinearLayout;
 
     invoke-virtual {v0, v3}, Landroid/view/View;->setVisibility(I)V
 
     .line 26
-    iget-object v0, p1, Lra/s$b;->B:Landroid/widget/Button;
+    iget-object v0, p1, Lra/s$b;->C:Landroid/widget/Button;
 
     invoke-virtual {v0, p1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -784,12 +784,12 @@
 
     .line 27
     :cond_8
-    iget-object v0, p1, Lra/s$b;->A:Landroid/widget/LinearLayout;
+    iget-object v0, p1, Lra/s$b;->B:Landroid/widget/LinearLayout;
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
 
     .line 28
-    iget-object v0, p1, Lra/s$b;->A:Landroid/widget/LinearLayout;
+    iget-object v0, p1, Lra/s$b;->B:Landroid/widget/LinearLayout;
 
     invoke-virtual {v0, p2}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -797,12 +797,12 @@
     if-eqz v4, :cond_9
 
     .line 29
-    iget-object p2, p1, Lra/s$b;->C:Lcom/helpshift/support/widget/CSATView;
+    iget-object p2, p1, Lra/s$b;->D:Lcom/helpshift/support/widget/CSATView;
 
     invoke-virtual {p2, v3}, Landroid/view/View;->setVisibility(I)V
 
     .line 30
-    iget-object p2, p1, Lra/s$b;->C:Lcom/helpshift/support/widget/CSATView;
+    iget-object p2, p1, Lra/s$b;->D:Lcom/helpshift/support/widget/CSATView;
 
     invoke-virtual {p2, p1}, Lcom/helpshift/support/widget/CSATView;->setCSATListener(Lcom/helpshift/support/widget/CSATView$a;)V
 
@@ -810,10 +810,10 @@
 
     .line 31
     :cond_9
-    iget-object v0, p1, Lra/s$b;->C:Lcom/helpshift/support/widget/CSATView;
+    iget-object v0, p1, Lra/s$b;->D:Lcom/helpshift/support/widget/CSATView;
 
     .line 32
-    iget-object v2, v0, Lcom/helpshift/support/widget/CSATView;->f:Llb/c;
+    iget-object v2, v0, Lcom/helpshift/support/widget/CSATView;->g:Llb/c;
 
     if-eqz v2, :cond_a
 
@@ -824,18 +824,18 @@
     if-eqz v2, :cond_a
 
     .line 33
-    iget-object v0, v0, Lcom/helpshift/support/widget/CSATView;->f:Llb/c;
+    iget-object v0, v0, Lcom/helpshift/support/widget/CSATView;->g:Llb/c;
 
     invoke-virtual {v0}, Landroid/app/Dialog;->dismiss()V
 
     .line 34
     :cond_a
-    iget-object v0, p1, Lra/s$b;->C:Lcom/helpshift/support/widget/CSATView;
+    iget-object v0, p1, Lra/s$b;->D:Lcom/helpshift/support/widget/CSATView;
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
 
     .line 35
-    iget-object v0, p1, Lra/s$b;->C:Lcom/helpshift/support/widget/CSATView;
+    iget-object v0, p1, Lra/s$b;->D:Lcom/helpshift/support/widget/CSATView;
 
     invoke-virtual {v0, p2}, Lcom/helpshift/support/widget/CSATView;->setCSATListener(Lcom/helpshift/support/widget/CSATView$a;)V
 
@@ -843,12 +843,12 @@
     if-eqz v5, :cond_b
 
     .line 36
-    iget-object p2, p1, Lra/s$b;->D:Landroid/widget/TextView;
+    iget-object p2, p1, Lra/s$b;->E:Landroid/widget/TextView;
 
     invoke-virtual {p2, v3}, Landroid/view/View;->setVisibility(I)V
 
     .line 37
-    iget-object p1, p1, Lra/s$b;->D:Landroid/widget/TextView;
+    iget-object p1, p1, Lra/s$b;->E:Landroid/widget/TextView;
 
     sget p2, Lcom/helpshift/R$string;->hs__issue_archival_message:I
 
@@ -860,12 +860,12 @@
     if-eqz v6, :cond_c
 
     .line 38
-    iget-object p2, p1, Lra/s$b;->D:Landroid/widget/TextView;
+    iget-object p2, p1, Lra/s$b;->E:Landroid/widget/TextView;
 
     invoke-virtual {p2, v3}, Landroid/view/View;->setVisibility(I)V
 
     .line 39
-    iget-object p1, p1, Lra/s$b;->D:Landroid/widget/TextView;
+    iget-object p1, p1, Lra/s$b;->E:Landroid/widget/TextView;
 
     sget p2, Lcom/helpshift/R$string;->hs__new_conversation_footer_generic_reason:I
 
@@ -875,7 +875,7 @@
 
     .line 40
     :cond_c
-    iget-object p1, p1, Lra/s$b;->D:Landroid/widget/TextView;
+    iget-object p1, p1, Lra/s$b;->E:Landroid/widget/TextView;
 
     invoke-virtual {p1, v1}, Landroid/view/View;->setVisibility(I)V
 
@@ -883,7 +883,7 @@
 
     .line 41
     :cond_d
-    iget-object p1, p1, Lra/s$b;->y:Landroid/view/View;
+    iget-object p1, p1, Lra/s$b;->z:Landroid/view/View;
 
     invoke-virtual {p1, v1}, Landroid/view/View;->setVisibility(I)V
 
@@ -895,10 +895,10 @@
     if-ne v0, v1, :cond_f
 
     .line 42
-    iget-object p2, p0, Lqa/p0;->c:Lra/w;
+    iget-object p2, p0, Lqa/p0;->c:Lra/v;
 
     .line 43
-    iget-object p2, p2, Lra/w;->c:Lra/q;
+    iget-object p2, p2, Lra/v;->c:Lra/q;
 
     .line 44
     check-cast p1, Lra/q$a;
@@ -911,7 +911,7 @@
     if-eqz v0, :cond_10
 
     .line 46
-    iget-object p1, p1, Lra/q$a;->y:Landroid/widget/LinearLayout;
+    iget-object p1, p1, Lra/q$a;->z:Landroid/widget/LinearLayout;
 
     .line 47
     invoke-virtual {p1}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
@@ -948,18 +948,18 @@
 
     .line 50
     :cond_f
-    invoke-virtual {p0, p2}, Lqa/p0;->o(I)Lo8/y;
+    invoke-virtual {p0, p2}, Lqa/p0;->o(I)Lo8/z;
 
     move-result-object p2
 
     .line 51
-    iget-object v1, p0, Lqa/p0;->c:Lra/w;
+    iget-object v1, p0, Lqa/p0;->c:Lra/v;
 
-    invoke-virtual {v1, v0}, Lra/w;->a(I)Lra/u;
+    invoke-virtual {v1, v0}, Lra/v;->a(I)Lra/u;
 
     move-result-object v0
 
-    invoke-virtual {v0, p1, p2}, Lra/u;->a(Landroidx/recyclerview/widget/RecyclerView$z;Lo8/y;)V
+    invoke-virtual {v0, p1, p2}, Lra/u;->a(Landroidx/recyclerview/widget/RecyclerView$z;Lo8/z;)V
 
     :cond_10
     :goto_e
@@ -990,10 +990,10 @@
     if-ne p2, v1, :cond_0
 
     .line 1
-    iget-object p2, p0, Lqa/p0;->c:Lra/w;
+    iget-object p2, p0, Lqa/p0;->c:Lra/v;
 
     .line 2
-    iget-object p2, p2, Lra/w;->d:Lra/t;
+    iget-object p2, p2, Lra/v;->d:Lra/t;
 
     .line 3
     iput-object p0, p2, Lra/t;->b:Lra/t$a;
@@ -1027,10 +1027,10 @@
     if-ne p2, v1, :cond_1
 
     .line 7
-    iget-object p2, p0, Lqa/p0;->c:Lra/w;
+    iget-object p2, p0, Lqa/p0;->c:Lra/v;
 
     .line 8
-    iget-object p2, p2, Lra/w;->b:Lra/s;
+    iget-object p2, p2, Lra/v;->b:Lra/s;
 
     .line 9
     iput-object p0, p2, Lra/s;->a:Lra/s$a;
@@ -1064,10 +1064,10 @@
     if-ne p2, v1, :cond_2
 
     .line 13
-    iget-object p2, p0, Lqa/p0;->c:Lra/w;
+    iget-object p2, p0, Lqa/p0;->c:Lra/v;
 
     .line 14
-    iget-object p2, p2, Lra/w;->c:Lra/q;
+    iget-object p2, p2, Lra/v;->c:Lra/q;
 
     .line 15
     iget-object v1, p2, Lra/q;->a:Landroid/content/Context;
@@ -1099,7 +1099,7 @@
     .line 18
     sget v1, Lcom/helpshift/R$attr;->hs__chatBubbleAdminBackgroundColor:I
 
-    invoke-static {p2, v0, v1}, Lcom/helpshift/util/g0;->e(Landroid/content/Context;Landroid/graphics/drawable/Drawable;I)V
+    invoke-static {p2, v0, v1}, Lcom/helpshift/util/e0;->e(Landroid/content/Context;Landroid/graphics/drawable/Drawable;I)V
 
     .line 19
     new-instance p2, Lra/q$a;
@@ -1110,9 +1110,9 @@
 
     .line 20
     :cond_2
-    iget-object v0, p0, Lqa/p0;->c:Lra/w;
+    iget-object v0, p0, Lqa/p0;->c:Lra/v;
 
-    invoke-virtual {v0, p2}, Lra/w;->a(I)Lra/u;
+    invoke-virtual {v0, p2}, Lra/v;->a(I)Lra/u;
 
     move-result-object p2
 
@@ -1157,7 +1157,7 @@
     return v0
 .end method
 
-.method public final o(I)Lo8/y;
+.method public final o(I)Lo8/z;
     .locals 1
 
     .line 1
@@ -1174,7 +1174,7 @@
 
     move-result-object p1
 
-    check-cast p1, Lo8/y;
+    check-cast p1, Lo8/z;
 
     return-object p1
 .end method
@@ -1183,7 +1183,7 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lqa/p0;->e:Lra/x;
+    iget-object v0, p0, Lqa/p0;->e:Lra/w;
 
     if-eqz v0, :cond_0
 
@@ -1191,12 +1191,12 @@
     check-cast v0, Lqa/t;
 
     .line 3
-    iget-object v0, v0, Lqa/t;->m0:Lf9/i;
+    iget-object v0, v0, Lqa/t;->n0:Lf9/i;
 
     .line 4
     iget-object v0, v0, Lf9/i;->n:Ln8/l;
 
-    sget-object v1, Ld8/d;->f:Ld8/d;
+    sget-object v1, Ld8/d;->g:Ld8/d;
 
     check-cast v0, Lqa/e0;
 
@@ -1206,11 +1206,11 @@
     return-void
 .end method
 
-.method public final q(Ljava/lang/String;Lo8/y;)V
+.method public final q(Ljava/lang/String;Lo8/z;)V
     .locals 6
 
     .line 1
-    iget-object v0, p0, Lqa/p0;->e:Lra/x;
+    iget-object v0, p0, Lqa/p0;->e:Lra/w;
 
     if-eqz v0, :cond_6
 
@@ -1218,7 +1218,7 @@
     check-cast v0, Lqa/t;
 
     .line 3
-    iget-object v0, v0, Lqa/t;->m0:Lf9/i;
+    iget-object v0, v0, Lqa/t;->n0:Lf9/i;
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -1247,7 +1247,7 @@
 
     .line 6
     :goto_0
-    iget-object p2, p2, Lo8/y;->l:Ljava/lang/Long;
+    iget-object p2, p2, Lo8/z;->m:Ljava/lang/Long;
 
     .line 7
     iget-object v3, v0, Lf9/i;->k:Ln8/p;
@@ -1275,7 +1275,7 @@
     check-cast v4, Lq8/d;
 
     .line 9
-    iget-object v5, v4, Lq8/d;->g:Ljava/lang/Long;
+    iget-object v5, v4, Lq8/d;->h:Ljava/lang/Long;
 
     invoke-virtual {v5, p2}, Ljava/lang/Long;->equals(Ljava/lang/Object;)Z
 
@@ -1287,7 +1287,7 @@
 
     .line 10
     :cond_2
-    invoke-static {v2}, Lcom/google/android/play/core/appupdate/g;->b(Ljava/lang/String;)Z
+    invoke-static {v2}, La5/b0;->d(Ljava/lang/String;)Z
 
     move-result p2
 
@@ -1301,16 +1301,16 @@
     if-eqz v1, :cond_5
 
     .line 12
-    iget-object v3, v1, Lq8/d;->i:Ljava/lang/String;
+    iget-object v3, v1, Lq8/d;->j:Ljava/lang/String;
 
-    invoke-static {v3}, Lcom/google/android/play/core/appupdate/g;->b(Ljava/lang/String;)Z
+    invoke-static {v3}, La5/b0;->d(Ljava/lang/String;)Z
 
     move-result v3
 
     if-nez v3, :cond_3
 
     .line 13
-    iget-object v3, v1, Lq8/d;->i:Ljava/lang/String;
+    iget-object v3, v1, Lq8/d;->j:Ljava/lang/String;
 
     const-string v4, "preissue_id"
 
@@ -1318,16 +1318,16 @@
 
     .line 14
     :cond_3
-    iget-object v3, v1, Lq8/d;->h:Ljava/lang/String;
+    iget-object v3, v1, Lq8/d;->i:Ljava/lang/String;
 
-    invoke-static {v3}, Lcom/google/android/play/core/appupdate/g;->b(Ljava/lang/String;)Z
+    invoke-static {v3}, La5/b0;->d(Ljava/lang/String;)Z
 
     move-result v3
 
     if-nez v3, :cond_4
 
     .line 15
-    iget-object v3, v1, Lq8/d;->h:Ljava/lang/String;
+    iget-object v3, v1, Lq8/d;->i:Ljava/lang/String;
 
     const-string v4, "issue_id"
 
@@ -1335,16 +1335,16 @@
 
     .line 16
     :cond_4
-    iget-object v3, v1, Lq8/d;->I:Ljava/lang/String;
+    iget-object v3, v1, Lq8/d;->J:Ljava/lang/String;
 
-    invoke-static {v3}, Lcom/google/android/play/core/appupdate/g;->e(Ljava/lang/String;)Z
+    invoke-static {v3}, La5/b0;->g(Ljava/lang/String;)Z
 
     move-result v3
 
     if-eqz v3, :cond_5
 
     .line 17
-    iget-object v1, v1, Lq8/d;->I:Ljava/lang/String;
+    iget-object v1, v1, Lq8/d;->J:Ljava/lang/String;
 
     const-string v3, "acid"
 
@@ -1374,7 +1374,7 @@
     .locals 3
 
     .line 1
-    iget-object v0, p0, Lqa/p0;->e:Lra/x;
+    iget-object v0, p0, Lqa/p0;->e:Lra/w;
 
     if-eqz v0, :cond_0
 
@@ -1384,7 +1384,7 @@
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 3
-    invoke-static {p2}, Lcom/google/android/play/core/appupdate/g;->b(Ljava/lang/String;)Z
+    invoke-static {p2}, La5/b0;->d(Ljava/lang/String;)Z
 
     move-result v1
 
@@ -1414,29 +1414,29 @@
     .locals 3
 
     .line 1
-    iget-object v0, p0, Lqa/p0;->e:Lra/x;
+    iget-object v0, p0, Lqa/p0;->e:Lra/w;
 
     if-eqz v0, :cond_0
 
     .line 2
-    invoke-virtual {p0, p1}, Lqa/p0;->o(I)Lo8/y;
+    invoke-virtual {p0, p1}, Lqa/p0;->o(I)Lo8/z;
 
     move-result-object p1
 
     .line 3
-    iget-object v0, p0, Lqa/p0;->e:Lra/x;
+    iget-object v0, p0, Lqa/p0;->e:Lra/w;
 
     check-cast v0, Lqa/t;
 
     .line 4
-    iget-object v0, v0, Lqa/t;->m0:Lf9/i;
+    iget-object v0, v0, Lqa/t;->n0:Lf9/i;
 
     .line 5
     iget-object v1, v0, Lf9/i;->o:La8/f;
 
     new-instance v2, Lf9/h;
 
-    invoke-direct {v2, v0, p1}, Lf9/h;-><init>(Lf9/i;Lo8/y;)V
+    invoke-direct {v2, v0, p1}, Lf9/h;-><init>(Lf9/i;Lo8/z;)V
 
     invoke-virtual {v1, v2}, La8/f;->h(La8/g;)V
 

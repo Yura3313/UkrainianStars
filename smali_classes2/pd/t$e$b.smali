@@ -72,7 +72,7 @@
 
     const-string v0, "image"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -165,14 +165,14 @@
     move-result-object v0
 
     .line 19
-    iget-object v0, v0, Lae/u;->s:Lud/j;
+    iget-object v0, v0, Lae/u;->s:Lud/i;
 
     .line 20
     new-instance v1, Lpd/t$e$b$a;
 
     invoke-direct {v1, p0}, Lpd/t$e$b$a;-><init>(Lpd/t$e$b;)V
 
-    invoke-virtual {v0, p1, v1}, Lud/j;->b(Ljava/lang/String;Lre/p;)V
+    invoke-virtual {v0, p1, v1}, Lud/i;->b(Ljava/lang/String;Lre/p;)V
 
     return-void
 .end method
@@ -348,7 +348,7 @@
 
     const-string v1, "quadVertices"
 
-    invoke-static {v7, v1}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v7, v1}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     iget-boolean v1, v0, Lpd/t$e$b;->s:Z
@@ -472,7 +472,7 @@
 
     iget v5, v0, Lpd/t$e$b;->v:F
 
-    invoke-static {v5, v4, v1, v4}, Lo/p;->a(FFFF)F
+    invoke-static {v5, v4, v1, v4}, Lo/o;->a(FFFF)F
 
     move-result v4
 
@@ -527,7 +527,7 @@
 
     const/4 v5, 0x0
 
-    invoke-static {v4, v5, v1, v5}, Lo/p;->a(FFFF)F
+    invoke-static {v4, v5, v1, v5}, Lo/o;->a(FFFF)F
 
     move-result v4
 

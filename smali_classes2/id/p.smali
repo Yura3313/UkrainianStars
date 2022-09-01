@@ -7,18 +7,18 @@
 
 
 # instance fields
-.field public final synthetic f:Ljava/lang/ref/WeakReference;
+.field public final synthetic g:Ljava/lang/ref/WeakReference;
 
-.field public final synthetic g:Lvc/n;
+.field public final synthetic h:Lvc/m;
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/ref/WeakReference;Lvc/n;)V
+.method public constructor <init>(Ljava/lang/ref/WeakReference;Lvc/m;)V
     .locals 0
 
-    iput-object p1, p0, Lid/p;->f:Ljava/lang/ref/WeakReference;
+    iput-object p1, p0, Lid/p;->g:Ljava/lang/ref/WeakReference;
 
-    iput-object p2, p0, Lid/p;->g:Lvc/n;
+    iput-object p2, p0, Lid/p;->h:Lvc/m;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

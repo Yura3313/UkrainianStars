@@ -23,13 +23,13 @@
 
 
 # static fields
-.field public static final enum f:Lcom/google/protobuf/w1$d$a;
+.field public static final enum g:Lcom/google/protobuf/w1$d$a;
 
-.field public static final enum g:Lcom/google/protobuf/w1$d$b;
+.field public static final enum h:Lcom/google/protobuf/w1$d$b;
 
-.field public static final enum h:Lcom/google/protobuf/w1$d$c;
+.field public static final enum i:Lcom/google/protobuf/w1$d$c;
 
-.field public static final synthetic i:[Lcom/google/protobuf/w1$d;
+.field public static final synthetic j:[Lcom/google/protobuf/w1$d;
 
 
 # direct methods
@@ -41,7 +41,7 @@
 
     invoke-direct {v0}, Lcom/google/protobuf/w1$d$a;-><init>()V
 
-    sput-object v0, Lcom/google/protobuf/w1$d;->f:Lcom/google/protobuf/w1$d$a;
+    sput-object v0, Lcom/google/protobuf/w1$d;->g:Lcom/google/protobuf/w1$d$a;
 
     .line 2
     new-instance v1, Lcom/google/protobuf/w1$d$b;
@@ -50,7 +50,7 @@
 
     invoke-direct {v1}, Lcom/google/protobuf/w1$d$b;-><init>()V
 
-    sput-object v1, Lcom/google/protobuf/w1$d;->g:Lcom/google/protobuf/w1$d$b;
+    sput-object v1, Lcom/google/protobuf/w1$d;->h:Lcom/google/protobuf/w1$d$b;
 
     .line 3
     new-instance v3, Lcom/google/protobuf/w1$d$c;
@@ -59,7 +59,7 @@
 
     invoke-direct {v3}, Lcom/google/protobuf/w1$d$c;-><init>()V
 
-    sput-object v3, Lcom/google/protobuf/w1$d;->h:Lcom/google/protobuf/w1$d$c;
+    sput-object v3, Lcom/google/protobuf/w1$d;->i:Lcom/google/protobuf/w1$d$c;
 
     const/4 v5, 0x3
 
@@ -74,7 +74,7 @@
     aput-object v3, v5, v4
 
     .line 4
-    sput-object v5, Lcom/google/protobuf/w1$d;->i:[Lcom/google/protobuf/w1$d;
+    sput-object v5, Lcom/google/protobuf/w1$d;->j:[Lcom/google/protobuf/w1$d;
 
     return-void
 .end method
@@ -104,7 +104,7 @@
 .method public static values()[Lcom/google/protobuf/w1$d;
     .locals 1
 
-    sget-object v0, Lcom/google/protobuf/w1$d;->i:[Lcom/google/protobuf/w1$d;
+    sget-object v0, Lcom/google/protobuf/w1$d;->j:[Lcom/google/protobuf/w1$d;
 
     invoke-virtual {v0}, [Lcom/google/protobuf/w1$d;->clone()Ljava/lang/Object;
 

@@ -1,5 +1,5 @@
 .class public final Lrc/d0$b;
-.super Lse/h;
+.super Lse/i;
 .source "SocialApiClient.kt"
 
 # interfaces
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lrc/d0;->g(Ljava/util/List;)Lze/e0;
+    value = Lrc/d0;->g(Ljava/util/List;)Lze/f0;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,7 +18,7 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/l<",
         "Lorg/json/JSONObject;",
         "Ljava/util/Map<",
@@ -26,7 +26,7 @@
         "+",
         "Lae/m<",
         "+",
-        "Lvc/t;",
+        "Lvc/s;",
         "+",
         "Ljava/lang/Exception;",
         ">;>;>;"
@@ -35,18 +35,18 @@
 
 
 # instance fields
-.field public final synthetic f:Lrc/d0;
+.field public final synthetic g:Lrc/d0;
 
 
 # direct methods
 .method public constructor <init>(Lrc/d0;)V
     .locals 0
 
-    iput-object p1, p0, Lrc/d0$b;->f:Lrc/d0;
+    iput-object p1, p0, Lrc/d0$b;->g:Lrc/d0;
 
     const/4 p1, 0x1
 
-    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -62,7 +62,7 @@
     const-string v0, "data"
 
     .line 2
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "scids"
 
@@ -84,9 +84,9 @@
 
     const-string v4, "scidsData.keys()"
 
-    invoke-static {v3, v4}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v3, v4}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-static {v3}, Lxe/h;->d(Ljava/util/Iterator;)Lxe/d;
+    invoke-static {v3}, Lxe/h;->c(Ljava/util/Iterator;)Lxe/d;
 
     move-result-object v3
 
@@ -117,7 +117,7 @@
     .line 8
     new-instance v6, Lcom/supercell/id/model/IdSocialAccount$Scid;
 
-    invoke-static {v5, v2}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v5, v2}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-direct {v6, v5}, Lcom/supercell/id/model/IdSocialAccount$Scid;-><init>(Ljava/lang/String;)V
 
@@ -128,24 +128,24 @@
     move-result-object v5
 
     .line 10
-    iget-object v7, p0, Lrc/d0$b;->f:Lrc/d0;
+    iget-object v7, p0, Lrc/d0$b;->g:Lrc/d0;
 
-    invoke-static {v5, v1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v5, v1}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v7, v5}, Lrc/f;->b(Lorg/json/JSONObject;)Lorg/json/JSONObject;
 
     .line 11
     new-instance v7, Lae/m$a;
 
-    new-instance v8, Lvc/t;
+    new-instance v8, Lvc/s;
 
-    iget-object v9, p0, Lrc/d0$b;->f:Lrc/d0;
+    iget-object v9, p0, Lrc/d0$b;->g:Lrc/d0;
 
     invoke-virtual {v9, v5}, Lrc/f;->c(Lorg/json/JSONObject;)Lorg/json/JSONObject;
 
     move-result-object v5
 
-    invoke-direct {v8, v5}, Lvc/t;-><init>(Lorg/json/JSONObject;)V
+    invoke-direct {v8, v5}, Lvc/s;-><init>(Lorg/json/JSONObject;)V
 
     invoke-direct {v7, v8}, Lae/m$a;-><init>(Ljava/lang/Object;)V
     :try_end_0
@@ -169,7 +169,7 @@
 
     .line 14
     :cond_0
-    sget-object v4, Lje/m;->f:Lje/m;
+    sget-object v4, Lje/m;->g:Lje/m;
 
     :cond_1
     const-string v0, "appAccounts"
@@ -188,9 +188,9 @@
 
     const-string v3, "appAccountsData.keys()"
 
-    invoke-static {v0, v3}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v3}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-static {v0}, Lxe/h;->d(Ljava/util/Iterator;)Lxe/d;
+    invoke-static {v0}, Lxe/h;->c(Ljava/util/Iterator;)Lxe/d;
 
     move-result-object v0
 
@@ -221,15 +221,15 @@
     .line 20
     new-instance v6, Lcom/supercell/id/model/IdSocialAccount$AppAccount;
 
-    sget-object v7, Lvc/e;->c:Lvc/e$a;
+    sget-object v7, Lvc/d;->c:Lvc/d$a;
 
-    invoke-static {v5, v2}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v5, v2}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-virtual {v7, v5}, Lvc/e$a;->a(Ljava/lang/String;)Lvc/e;
+    invoke-virtual {v7, v5}, Lvc/d$a;->a(Ljava/lang/String;)Lvc/d;
 
     move-result-object v7
 
-    invoke-direct {v6, v7}, Lcom/supercell/id/model/IdSocialAccount$AppAccount;-><init>(Lvc/e;)V
+    invoke-direct {v6, v7}, Lcom/supercell/id/model/IdSocialAccount$AppAccount;-><init>(Lvc/d;)V
 
     .line 21
     :try_start_1
@@ -238,24 +238,24 @@
     move-result-object v5
 
     .line 22
-    iget-object v7, p0, Lrc/d0$b;->f:Lrc/d0;
+    iget-object v7, p0, Lrc/d0$b;->g:Lrc/d0;
 
-    invoke-static {v5, v1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v5, v1}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v7, v5}, Lrc/f;->b(Lorg/json/JSONObject;)Lorg/json/JSONObject;
 
     .line 23
     new-instance v7, Lae/m$a;
 
-    new-instance v8, Lvc/t;
+    new-instance v8, Lvc/s;
 
-    iget-object v9, p0, Lrc/d0$b;->f:Lrc/d0;
+    iget-object v9, p0, Lrc/d0$b;->g:Lrc/d0;
 
     invoke-virtual {v9, v5}, Lrc/f;->c(Lorg/json/JSONObject;)Lorg/json/JSONObject;
 
     move-result-object v5
 
-    invoke-direct {v8, v5}, Lvc/t;-><init>(Lorg/json/JSONObject;)V
+    invoke-direct {v8, v5}, Lvc/s;-><init>(Lorg/json/JSONObject;)V
 
     invoke-direct {v7, v8}, Lae/m$a;-><init>(Ljava/lang/Object;)V
     :try_end_1
@@ -279,11 +279,11 @@
 
     .line 26
     :cond_2
-    sget-object v3, Lje/m;->f:Lje/m;
+    sget-object v3, Lje/m;->g:Lje/m;
 
     .line 27
     :cond_3
-    invoke-static {v4, v3}, Lje/t;->o(Ljava/util/Map;Ljava/util/Map;)Ljava/util/Map;
+    invoke-static {v4, v3}, Lje/t;->p(Ljava/util/Map;Ljava/util/Map;)Ljava/util/Map;
 
     move-result-object p1
 

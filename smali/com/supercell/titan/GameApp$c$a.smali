@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field public final synthetic f:Lcom/supercell/titan/GameApp$c;
+.field public final synthetic g:Lcom/supercell/titan/GameApp$c;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/titan/GameApp$c;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/titan/GameApp$c$a;->f:Lcom/supercell/titan/GameApp$c;
+    iput-object p1, p0, Lcom/supercell/titan/GameApp$c$a;->g:Lcom/supercell/titan/GameApp$c;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -75,17 +75,17 @@
     invoke-virtual {p1, p2}, Landroid/content/Intent;->setData(Landroid/net/Uri;)Landroid/content/Intent;
 
     .line 5
-    iget-object p2, p0, Lcom/supercell/titan/GameApp$c$a;->f:Lcom/supercell/titan/GameApp$c;
+    iget-object p2, p0, Lcom/supercell/titan/GameApp$c$a;->g:Lcom/supercell/titan/GameApp$c;
 
-    iget-object p2, p2, Lcom/supercell/titan/GameApp$c;->f:Lcom/supercell/titan/GameApp;
+    iget-object p2, p2, Lcom/supercell/titan/GameApp$c;->g:Lcom/supercell/titan/GameApp;
 
     invoke-virtual {p2, p1}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
 
     .line 6
     :goto_0
-    iget-object p1, p0, Lcom/supercell/titan/GameApp$c$a;->f:Lcom/supercell/titan/GameApp$c;
+    iget-object p1, p0, Lcom/supercell/titan/GameApp$c$a;->g:Lcom/supercell/titan/GameApp$c;
 
-    iget-object p1, p1, Lcom/supercell/titan/GameApp$c;->f:Lcom/supercell/titan/GameApp;
+    iget-object p1, p1, Lcom/supercell/titan/GameApp$c;->g:Lcom/supercell/titan/GameApp;
 
     invoke-virtual {p1}, Landroid/app/Activity;->finish()V
 

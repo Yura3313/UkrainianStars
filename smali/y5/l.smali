@@ -177,7 +177,7 @@
     .line 6
     :cond_1
     :try_start_2
-    invoke-static {}, Ll2/j;->c()Z
+    invoke-static {}, Ll2/l;->c()Z
 
     move-result v1
 
@@ -264,7 +264,7 @@
     .line 19
     :cond_3
     :try_start_4
-    invoke-static {}, Ll2/j;->c()Z
+    invoke-static {}, Ll2/l;->c()Z
 
     move-result v0
 

@@ -1,5 +1,5 @@
 .class public final Lae/p$b;
-.super Lse/h;
+.super Lse/i;
 .source "EncryptedStorage.kt"
 
 # interfaces
@@ -18,7 +18,7 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/a<",
         "Lcom/supercell/id/util/SecurePreferences;",
         ">;"
@@ -27,18 +27,18 @@
 
 
 # instance fields
-.field public final synthetic f:Lae/p;
+.field public final synthetic g:Lae/p;
 
 
 # direct methods
 .method public constructor <init>(Lae/p;)V
     .locals 0
 
-    iput-object p1, p0, Lae/p$b;->f:Lae/p;
+    iput-object p1, p0, Lae/p$b;->g:Lae/p;
 
     const/4 p1, 0x0
 
-    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -56,7 +56,7 @@
     fill-array-data v0, :array_0
 
     .line 2
-    iget-object v1, p0, Lae/p$b;->f:Lae/p;
+    iget-object v1, p0, Lae/p$b;->g:Lae/p;
 
     .line 3
     iget-object v1, v1, Lae/p;->c:Landroid/content/Context;
@@ -115,7 +115,7 @@
     new-instance v0, Lcom/supercell/id/util/SecurePreferences;
 
     .line 11
-    iget-object v1, p0, Lae/p$b;->f:Lae/p;
+    iget-object v1, p0, Lae/p$b;->g:Lae/p;
 
     .line 12
     iget-object v2, v1, Lae/p;->c:Landroid/content/Context;

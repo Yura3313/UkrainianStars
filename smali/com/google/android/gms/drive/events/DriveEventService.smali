@@ -12,31 +12,31 @@
 
 
 # static fields
-.field public static final k:Ld2/e;
+.field public static final l:Ld2/e;
 
 
 # instance fields
-.field public final f:Ljava/lang/String;
+.field public final g:Ljava/lang/String;
 
-.field public g:Ljava/util/concurrent/CountDownLatch;
+.field public h:Ljava/util/concurrent/CountDownLatch;
     .annotation build Ljavax/annotation/concurrent/GuardedBy;
         value = "this"
     .end annotation
 .end field
 
-.field public h:Lcom/google/android/gms/drive/events/DriveEventService$a;
+.field public i:Lcom/google/android/gms/drive/events/DriveEventService$a;
     .annotation build Ljavax/annotation/concurrent/GuardedBy;
         value = "this"
     .end annotation
 .end field
 
-.field public i:Z
+.field public j:Z
     .annotation build Ljavax/annotation/concurrent/GuardedBy;
         value = "this"
     .end annotation
 .end field
 
-.field public j:I
+.field public k:I
 
 
 # direct methods
@@ -51,7 +51,7 @@
 
     invoke-direct {v0, v1, v2}, Ld2/e;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
-    sput-object v0, Lcom/google/android/gms/drive/events/DriveEventService;->k:Ld2/e;
+    sput-object v0, Lcom/google/android/gms/drive/events/DriveEventService;->l:Ld2/e;
 
     return-void
 .end method
@@ -65,17 +65,17 @@
     const/4 v0, 0x0
 
     .line 2
-    iput-boolean v0, p0, Lcom/google/android/gms/drive/events/DriveEventService;->i:Z
+    iput-boolean v0, p0, Lcom/google/android/gms/drive/events/DriveEventService;->j:Z
 
     const/4 v0, -0x1
 
     .line 3
-    iput v0, p0, Lcom/google/android/gms/drive/events/DriveEventService;->j:I
+    iput v0, p0, Lcom/google/android/gms/drive/events/DriveEventService;->k:I
 
     const-string v0, "DriveEventService"
 
     .line 4
-    iput-object v0, p0, Lcom/google/android/gms/drive/events/DriveEventService;->f:Ljava/lang/String;
+    iput-object v0, p0, Lcom/google/android/gms/drive/events/DriveEventService;->g:Ljava/lang/String;
 
     return-void
 .end method
@@ -104,18 +104,18 @@
     if-eqz p1, :cond_1
 
     .line 2
-    iget-object p1, p0, Lcom/google/android/gms/drive/events/DriveEventService;->h:Lcom/google/android/gms/drive/events/DriveEventService$a;
+    iget-object p1, p0, Lcom/google/android/gms/drive/events/DriveEventService;->i:Lcom/google/android/gms/drive/events/DriveEventService$a;
 
     if-nez p1, :cond_0
 
-    iget-boolean p1, p0, Lcom/google/android/gms/drive/events/DriveEventService;->i:Z
+    iget-boolean p1, p0, Lcom/google/android/gms/drive/events/DriveEventService;->j:Z
 
     if-nez p1, :cond_0
 
     const/4 p1, 0x1
 
     .line 3
-    iput-boolean p1, p0, Lcom/google/android/gms/drive/events/DriveEventService;->i:Z
+    iput-boolean p1, p0, Lcom/google/android/gms/drive/events/DriveEventService;->j:Z
 
     .line 4
     new-instance v0, Ljava/util/concurrent/CountDownLatch;
@@ -127,7 +127,7 @@
 
     invoke-direct {v1, p1}, Ljava/util/concurrent/CountDownLatch;-><init>(I)V
 
-    iput-object v1, p0, Lcom/google/android/gms/drive/events/DriveEventService;->g:Ljava/util/concurrent/CountDownLatch;
+    iput-object v1, p0, Lcom/google/android/gms/drive/events/DriveEventService;->h:Ljava/util/concurrent/CountDownLatch;
 
     .line 6
     new-instance p1, Lcom/google/android/gms/drive/events/a;
@@ -153,7 +153,7 @@
     if-nez p1, :cond_0
 
     .line 10
-    sget-object p1, Lcom/google/android/gms/drive/events/DriveEventService;->k:Ld2/e;
+    sget-object p1, Lcom/google/android/gms/drive/events/DriveEventService;->l:Ld2/e;
 
     const-string v0, "Failed to synchronously initialize event handler."
 
@@ -211,7 +211,7 @@
 
     .line 1
     :try_start_0
-    iget-object v0, p0, Lcom/google/android/gms/drive/events/DriveEventService;->h:Lcom/google/android/gms/drive/events/DriveEventService$a;
+    iget-object v0, p0, Lcom/google/android/gms/drive/events/DriveEventService;->i:Lcom/google/android/gms/drive/events/DriveEventService$a;
 
     if-eqz v0, :cond_1
 
@@ -226,20 +226,20 @@
     move-result-object v0
 
     .line 4
-    iget-object v1, p0, Lcom/google/android/gms/drive/events/DriveEventService;->h:Lcom/google/android/gms/drive/events/DriveEventService$a;
+    iget-object v1, p0, Lcom/google/android/gms/drive/events/DriveEventService;->i:Lcom/google/android/gms/drive/events/DriveEventService$a;
 
     invoke-virtual {v1, v0}, Landroid/os/Handler;->sendMessage(Landroid/os/Message;)Z
 
     const/4 v0, 0x0
 
     .line 5
-    iput-object v0, p0, Lcom/google/android/gms/drive/events/DriveEventService;->h:Lcom/google/android/gms/drive/events/DriveEventService$a;
+    iput-object v0, p0, Lcom/google/android/gms/drive/events/DriveEventService;->i:Lcom/google/android/gms/drive/events/DriveEventService$a;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 6
     :try_start_1
-    iget-object v1, p0, Lcom/google/android/gms/drive/events/DriveEventService;->g:Ljava/util/concurrent/CountDownLatch;
+    iget-object v1, p0, Lcom/google/android/gms/drive/events/DriveEventService;->h:Ljava/util/concurrent/CountDownLatch;
 
     const-wide/16 v2, 0x1388
 
@@ -253,7 +253,7 @@
     if-nez v1, :cond_0
 
     .line 8
-    sget-object v1, Lcom/google/android/gms/drive/events/DriveEventService;->k:Ld2/e;
+    sget-object v1, Lcom/google/android/gms/drive/events/DriveEventService;->l:Ld2/e;
 
     const-string v2, "Failed to synchronously quit event handler. Will quit itself"
 
@@ -276,7 +276,7 @@
     :catch_0
     :cond_0
     :try_start_2
-    iput-object v0, p0, Lcom/google/android/gms/drive/events/DriveEventService;->g:Ljava/util/concurrent/CountDownLatch;
+    iput-object v0, p0, Lcom/google/android/gms/drive/events/DriveEventService;->h:Ljava/util/concurrent/CountDownLatch;
 
     .line 12
     :cond_1

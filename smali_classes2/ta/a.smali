@@ -189,7 +189,7 @@
 
     const v4, 0x1010036
 
-    invoke-static {v2, v3, v4}, Lcom/helpshift/util/g0;->e(Landroid/content/Context;Landroid/graphics/drawable/Drawable;I)V
+    invoke-static {v2, v3, v4}, Lcom/helpshift/util/e0;->e(Landroid/content/Context;Landroid/graphics/drawable/Drawable;I)V
 
     .line 14
     iget-boolean v2, p0, Lta/a;->c:Z
@@ -241,7 +241,7 @@
     .line 1
     iget-object v0, p0, Lta/a;->f:Landroid/view/View;
 
-    invoke-static {v0}, Lcom/helpshift/util/t;->c(Landroid/view/View;)Z
+    invoke-static {v0}, Lcom/helpshift/util/s;->c(Landroid/view/View;)Z
 
     move-result v0
 
@@ -250,7 +250,7 @@
     iget-object v0, p0, Lta/a;->j:Landroid/view/View;
 
     .line 2
-    invoke-static {v0}, Lcom/helpshift/util/t;->a(Landroid/view/View;)Z
+    invoke-static {v0}, Lcom/helpshift/util/s;->a(Landroid/view/View;)Z
 
     move-result v0
 
@@ -342,13 +342,13 @@
     check-cast p1, Lqa/t;
 
     .line 5
-    iget-object p1, p1, Landroidx/fragment/app/Fragment;->A:Landroidx/fragment/app/Fragment;
+    iget-object p1, p1, Landroidx/fragment/app/Fragment;->B:Landroidx/fragment/app/Fragment;
 
     .line 6
     check-cast p1, Lab/p;
 
     .line 7
-    iget-object v1, p1, Lab/p;->F0:Landroid/widget/FrameLayout;
+    iget-object v1, p1, Lab/p;->G0:Landroid/widget/FrameLayout;
 
     invoke-virtual {v1}, Landroid/view/View;->getVisibility()I
 
@@ -366,20 +366,20 @@
     const-string v3, "hideBottomSheetViewContainer called"
 
     .line 8
-    invoke-static {v1, v3, v0, v0}, Landroidx/savedstate/d;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v1, v3, v0, v0}, Le5/i;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
 
     .line 9
-    iget-object v0, p1, Lab/p;->F0:Landroid/widget/FrameLayout;
+    iget-object v0, p1, Lab/p;->G0:Landroid/widget/FrameLayout;
 
     invoke-virtual {v0}, Landroid/view/ViewGroup;->removeAllViews()V
 
     .line 10
-    iget-object v0, p1, Lab/p;->F0:Landroid/widget/FrameLayout;
+    iget-object v0, p1, Lab/p;->G0:Landroid/widget/FrameLayout;
 
     invoke-virtual {v0, v2}, Landroid/view/View;->setVisibility(I)V
 
     .line 11
-    iget-object v0, p1, Lab/p;->G0:Landroid/widget/LinearLayout;
+    iget-object v0, p1, Lab/p;->H0:Landroid/widget/LinearLayout;
 
     const/4 v1, 0x0
 
@@ -396,7 +396,7 @@
     invoke-virtual {v3, v0, v1}, Landroid/view/animation/Animation;->setDuration(J)V
 
     .line 14
-    iget-object p1, p1, Lab/p;->G0:Landroid/widget/LinearLayout;
+    iget-object p1, p1, Lab/p;->H0:Landroid/widget/LinearLayout;
 
     invoke-virtual {p1, v3}, Landroid/view/View;->startAnimation(Landroid/view/animation/Animation;)V
 
@@ -410,7 +410,7 @@
     .line 1
     iget-object v0, p0, Lta/a;->f:Landroid/view/View;
 
-    invoke-static {v0}, Lcom/helpshift/util/t;->a(Landroid/view/View;)Z
+    invoke-static {v0}, Lcom/helpshift/util/s;->a(Landroid/view/View;)Z
 
     move-result v0
 
@@ -419,7 +419,7 @@
     iget-object v0, p0, Lta/a;->j:Landroid/view/View;
 
     .line 2
-    invoke-static {v0}, Lcom/helpshift/util/t;->c(Landroid/view/View;)Z
+    invoke-static {v0}, Lcom/helpshift/util/s;->c(Landroid/view/View;)Z
 
     move-result v0
 
@@ -473,7 +473,7 @@
     .line 2
     iget-object v1, p0, Lta/a;->a:Landroid/content/Context;
 
-    invoke-static {v1, v0}, Lbc/a;->b(Landroid/content/Context;Landroid/view/View;)V
+    invoke-static {v1, v0}, Ll2/g;->a(Landroid/content/Context;Landroid/view/View;)V
 
     :cond_0
     return-void

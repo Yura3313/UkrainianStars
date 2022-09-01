@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field public final f:Lc8/j;
+.field public final g:Lc8/j;
 
 
 # direct methods
@@ -18,7 +18,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lc8/e;->f:Lc8/j;
+    iput-object p1, p0, Lc8/e;->g:Lc8/j;
 
     return-void
 .end method
@@ -29,7 +29,7 @@
     .locals 3
 
     .line 1
-    iget-object v0, p0, Lc8/e;->f:Lc8/j;
+    iget-object v0, p0, Lc8/e;->g:Lc8/j;
 
     invoke-interface {v0, p1}, Lc8/j;->b(Lf8/h;)Lf8/i;
 
@@ -55,10 +55,10 @@
 
     .line 4
     :cond_0
-    sget-object p1, Ld8/b;->s:Ld8/b;
+    sget-object p1, Ld8/b;->t:Ld8/b;
 
     .line 5
-    iput v0, p1, Ld8/b;->f:I
+    iput v0, p1, Ld8/b;->g:I
 
     const/4 v0, 0x0
 

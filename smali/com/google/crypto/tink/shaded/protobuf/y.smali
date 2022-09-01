@@ -175,7 +175,7 @@
     check-cast p3, Ljava/lang/String;
 
     .line 14
-    sget-object p1, Lo5/d;->g:Lo5/d$f;
+    sget-object p1, Lo5/d;->h:Lo5/d$f;
 
     .line 15
     new-instance p1, Lo5/d$f;
@@ -911,7 +911,7 @@
     if-eqz v6, :cond_d
 
     .line 55
-    sget-object v6, Lo5/d;->g:Lo5/d$f;
+    sget-object v6, Lo5/d;->h:Lo5/d$f;
 
     invoke-virtual {v4, v6}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 

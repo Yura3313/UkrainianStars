@@ -110,7 +110,7 @@
 
     const-string v1, "SoundPool.Builder()\n    \u2026                 .build()"
 
-    invoke-static {v0, v1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     goto :goto_0
 
@@ -133,7 +133,7 @@
 
     const-string v0, "effect"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     sget-object v0, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
@@ -258,14 +258,14 @@
 
     const-string v6, "name"
 
-    invoke-static {v5, v6}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v5, v6}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/4 v6, 0x6
 
     const-string v7, "."
 
     .line 7
-    invoke-static {v5, v7, v6}, Lye/r;->t(Ljava/lang/CharSequence;Ljava/lang/String;I)I
+    invoke-static {v5, v7, v6}, Lye/r;->u(Ljava/lang/CharSequence;Ljava/lang/String;I)I
 
     move-result v6
 
@@ -283,14 +283,14 @@
 
     const-string v6, "(this as java.lang.Strin\u2026ing(startIndex, endIndex)"
 
-    invoke-static {v5, v6}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v5, v6}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 9
     :goto_1
-    iget-object v6, v4, Lsc/a$a;->f:Ljava/lang/String;
+    iget-object v6, v4, Lsc/a$a;->g:Ljava/lang/String;
 
     .line 10
-    invoke-static {v5, v6}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v5, v6}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v5
 

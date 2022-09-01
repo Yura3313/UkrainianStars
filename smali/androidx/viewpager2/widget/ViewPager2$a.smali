@@ -39,10 +39,10 @@
 
     const/4 v1, 0x1
 
-    iput-boolean v1, v0, Landroidx/viewpager2/widget/ViewPager2;->j:Z
+    iput-boolean v1, v0, Landroidx/viewpager2/widget/ViewPager2;->k:Z
 
     .line 2
-    iget-object v0, v0, Landroidx/viewpager2/widget/ViewPager2;->q:Landroidx/viewpager2/widget/f;
+    iget-object v0, v0, Landroidx/viewpager2/widget/ViewPager2;->r:Landroidx/viewpager2/widget/f;
 
     .line 3
     iput-boolean v1, v0, Landroidx/viewpager2/widget/f;->l:Z

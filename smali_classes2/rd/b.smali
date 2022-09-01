@@ -1,5 +1,5 @@
 .class public final Lrd/b;
-.super Lse/h;
+.super Lse/i;
 .source "ProfileSelectorFragment.kt"
 
 # interfaces
@@ -9,42 +9,37 @@
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/p<",
         "Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;",
-        "Ljava/util/List<",
+        "Ljava/util/Map<",
+        "Ljava/lang/String;",
         "+",
-        "Lvc/c;",
+        "Lvc/s;",
         ">;",
-        "Lie/h;",
+        "Lie/i;",
         ">;"
     }
 .end annotation
 
 
-# static fields
-.field public static final f:Lrd/b;
+# instance fields
+.field public final synthetic g:Ljava/util/List;
+
+.field public final synthetic h:Ljava/util/List;
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 1
+.method public constructor <init>(Ljava/util/List;Ljava/util/List;)V
+    .locals 0
 
-    new-instance v0, Lrd/b;
+    iput-object p1, p0, Lrd/b;->g:Ljava/util/List;
 
-    invoke-direct {v0}, Lrd/b;-><init>()V
+    iput-object p2, p0, Lrd/b;->h:Ljava/util/List;
 
-    sput-object v0, Lrd/b;->f:Lrd/b;
+    const/4 p1, 0x2
 
-    return-void
-.end method
-
-.method public constructor <init>()V
-    .locals 1
-
-    const/4 v0, 0x2
-
-    invoke-direct {p0, v0}, Lse/h;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -52,35 +47,34 @@
 
 # virtual methods
 .method public final invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 1
+    .locals 3
 
     .line 1
     check-cast p1, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;
 
-    check-cast p2, Ljava/util/List;
+    check-cast p2, Ljava/util/Map;
 
     const-string v0, "$receiver"
 
     .line 2
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "it"
 
-    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 3
-    iput-object p2, p1, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->n0:Ljava/util/List;
+    iget-object v0, p0, Lrd/b;->g:Ljava/util/List;
+
+    iget-object v1, p0, Lrd/b;->h:Ljava/util/List;
+
+    sget v2, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->n0:I
 
     .line 4
-    invoke-virtual {p1}, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->i1()V
-
-    const/4 p2, 0x1
+    invoke-virtual {p1, v0, v1, p2}, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->k1(Ljava/util/List;Ljava/util/List;Ljava/util/Map;)V
 
     .line 5
-    invoke-virtual {p1, p2}, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->h1(Z)V
-
-    .line 6
-    sget-object p1, Lie/h;->a:Lie/h;
+    sget-object p1, Lie/i;->a:Lie/i;
 
     return-object p1
 .end method

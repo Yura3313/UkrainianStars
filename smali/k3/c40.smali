@@ -2,144 +2,151 @@
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
-# interfaces
-.implements Lk3/iv0;
-
-
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ljava/lang/Object;",
-        "Lk3/iv0<",
-        "Lcom/google/android/gms/internal/ads/k0;",
-        ">;"
-    }
-.end annotation
-
 
 # instance fields
-.field public final a:Lk3/mv0;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lk3/mv0<",
-            "Landroid/content/Context;",
-            ">;"
-        }
-    .end annotation
-.end field
+.field public a:I
 
-.field public final b:Lk3/mv0;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lk3/mv0<",
-            "Lk3/nq;",
-            ">;"
-        }
-    .end annotation
-.end field
+.field public b:J
 
-.field public final c:Lk3/mv0;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lk3/mv0<",
-            "Lk3/z30;",
-            ">;"
-        }
-    .end annotation
-.end field
+.field public c:J
 
-.field public final d:Lk3/mv0;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lk3/mv0<",
-            "Lk3/x30;",
-            ">;"
-        }
-    .end annotation
-.end field
+.field public d:J
+
+.field public final e:Ljava/lang/Object;
+
+.field public final f:Ljava/lang/Object;
+
+.field public final g:Ljava/lang/Object;
+
+.field public final h:Ljava/lang/Object;
 
 
 # direct methods
-.method public constructor <init>(Lk3/mv0;Lk3/mv0;Lk3/mv0;Lk3/mv0;)V
-    .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lk3/mv0<",
-            "Landroid/content/Context;",
-            ">;",
-            "Lk3/mv0<",
-            "Lk3/nq;",
-            ">;",
-            "Lk3/mv0<",
-            "Lk3/z30;",
-            ">;",
-            "Lk3/mv0<",
-            "Lk3/x30;",
-            ">;)V"
-        }
-    .end annotation
+.method public constructor <init>()V
+    .locals 2
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    const/4 v0, 0x0
+
     .line 2
-    iput-object p1, p0, Lk3/c40;->a:Lk3/mv0;
+    iput v0, p0, Lk3/c40;->a:I
+
+    const-wide/16 v0, 0x0
 
     .line 3
-    iput-object p2, p0, Lk3/c40;->b:Lk3/mv0;
+    iput-wide v0, p0, Lk3/c40;->b:J
 
     .line 4
-    iput-object p3, p0, Lk3/c40;->c:Lk3/mv0;
+    iput-wide v0, p0, Lk3/c40;->c:J
 
     .line 5
-    iput-object p4, p0, Lk3/c40;->d:Lk3/mv0;
+    iput-wide v0, p0, Lk3/c40;->d:J
+
+    .line 6
+    new-instance v0, Ljava/lang/Object;
+
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+
+    iput-object v0, p0, Lk3/c40;->e:Ljava/lang/Object;
+
+    .line 7
+    new-instance v0, Ljava/lang/Object;
+
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+
+    iput-object v0, p0, Lk3/c40;->f:Ljava/lang/Object;
+
+    .line 8
+    new-instance v0, Ljava/lang/Object;
+
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+
+    iput-object v0, p0, Lk3/c40;->g:Ljava/lang/Object;
+
+    .line 9
+    new-instance v0, Ljava/lang/Object;
+
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+
+    iput-object v0, p0, Lk3/c40;->h:Ljava/lang/Object;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final synthetic get()Ljava/lang/Object;
-    .locals 5
+.method public final declared-synchronized a()J
+    .locals 3
+
+    monitor-enter p0
 
     .line 1
-    iget-object v0, p0, Lk3/c40;->a:Lk3/mv0;
+    :try_start_0
+    iget-object v0, p0, Lk3/c40;->g:Ljava/lang/Object;
 
-    invoke-interface {v0}, Lk3/mv0;->get()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Landroid/content/Context;
-
-    iget-object v1, p0, Lk3/c40;->b:Lk3/mv0;
-
-    invoke-interface {v1}, Lk3/mv0;->get()Ljava/lang/Object;
-
-    move-result-object v1
-
-    check-cast v1, Lk3/nq;
-
-    iget-object v2, p0, Lk3/c40;->c:Lk3/mv0;
-
-    invoke-interface {v2}, Lk3/mv0;->get()Ljava/lang/Object;
-
-    move-result-object v2
-
-    check-cast v2, Lk3/z30;
-
-    iget-object v3, p0, Lk3/c40;->d:Lk3/mv0;
-
-    invoke-interface {v3}, Lk3/mv0;->get()Ljava/lang/Object;
-
-    move-result-object v3
-
-    check-cast v3, Lk3/x30;
+    monitor-enter v0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_1
 
     .line 2
-    new-instance v4, Lcom/google/android/gms/internal/ads/k0;
+    :try_start_1
+    iget-wide v1, p0, Lk3/c40;->c:J
 
-    invoke-direct {v4, v0, v1, v2, v3}, Lcom/google/android/gms/internal/ads/k0;-><init>(Landroid/content/Context;Lk3/nq;Lk3/z30;Lk3/x30;)V
+    monitor-exit v0
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    return-object v4
+    monitor-exit p0
+
+    return-wide v1
+
+    :catchall_0
+    move-exception v1
+
+    .line 3
+    :try_start_2
+    monitor-exit v0
+    :try_end_2
+    .catchall {:try_start_2 .. :try_end_2} :catchall_0
+
+    :try_start_3
+    throw v1
+    :try_end_3
+    .catchall {:try_start_3 .. :try_end_3} :catchall_1
+
+    :catchall_1
+    move-exception v0
+
+    monitor-exit p0
+
+    throw v0
+.end method
+
+.method public final b(I)V
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lk3/c40;->e:Ljava/lang/Object;
+
+    monitor-enter v0
+
+    .line 2
+    :try_start_0
+    iput p1, p0, Lk3/c40;->a:I
+
+    .line 3
+    monitor-exit v0
+
+    return-void
+
+    :catchall_0
+    move-exception p1
+
+    monitor-exit v0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    throw p1
 .end method

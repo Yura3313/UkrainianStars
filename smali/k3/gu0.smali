@@ -1,408 +1,148 @@
 .class public final Lk3/gu0;
-.super Ljava/lang/Object;
+.super Ljava/util/AbstractList;
 .source "com.google.android.gms:play-services-ads-lite@@19.3.0"
 
+# interfaces
+.implements Lk3/ns0;
+.implements Ljava/util/RandomAccess;
 
-# static fields
-.field public static final a:Lk3/u7;
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/util/AbstractList<",
+        "Ljava/lang/String;",
+        ">;",
+        "Lk3/ns0;",
+        "Ljava/util/RandomAccess;"
+    }
+.end annotation
+
+
+# instance fields
+.field public final g:Lk3/ns0;
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 1
+.method public constructor <init>(Lk3/ns0;)V
+    .locals 0
 
     .line 1
-    sget-boolean v0, Lk3/du0;->f:Z
-
-    if-eqz v0, :cond_0
+    invoke-direct {p0}, Ljava/util/AbstractList;-><init>()V
 
     .line 2
-    sget-boolean v0, Lk3/du0;->e:Z
-
-    if-eqz v0, :cond_0
-
-    const/4 v0, 0x1
-
-    goto :goto_0
-
-    :cond_0
-    const/4 v0, 0x0
-
-    :goto_0
-    if-eqz v0, :cond_1
-
-    .line 3
-    invoke-static {}, Lk3/oq0;->a()Z
-
-    move-result v0
-
-    if-nez v0, :cond_1
-
-    .line 4
-    new-instance v0, Lk3/ku0;
-
-    invoke-direct {v0}, Lk3/ku0;-><init>()V
-
-    goto :goto_1
-
-    .line 5
-    :cond_1
-    new-instance v0, Lk3/ju0;
-
-    invoke-direct {v0}, Lk3/ju0;-><init>()V
-
-    :goto_1
-    sput-object v0, Lk3/gu0;->a:Lk3/u7;
+    iput-object p1, p0, Lk3/gu0;->g:Lk3/ns0;
 
     return-void
 .end method
 
-.method public static a(Ljava/lang/CharSequence;)I
-    .locals 8
 
-    .line 1
-    invoke-interface {p0}, Ljava/lang/CharSequence;->length()I
+# virtual methods
+.method public final A0(Lk3/yq0;)V
+    .locals 0
 
-    move-result v0
+    new-instance p1, Ljava/lang/UnsupportedOperationException;
 
-    const/4 v1, 0x0
+    invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V
 
-    const/4 v2, 0x0
-
-    :goto_0
-    if-ge v2, v0, :cond_0
-
-    .line 2
-    invoke-interface {p0, v2}, Ljava/lang/CharSequence;->charAt(I)C
-
-    move-result v3
-
-    const/16 v4, 0x80
-
-    if-ge v3, v4, :cond_0
-
-    add-int/lit8 v2, v2, 0x1
-
-    goto :goto_0
-
-    :cond_0
-    move v3, v0
-
-    :goto_1
-    if-ge v2, v0, :cond_6
-
-    .line 3
-    invoke-interface {p0, v2}, Ljava/lang/CharSequence;->charAt(I)C
-
-    move-result v4
-
-    const/16 v5, 0x800
-
-    if-ge v4, v5, :cond_1
-
-    rsub-int/lit8 v4, v4, 0x7f
-
-    ushr-int/lit8 v4, v4, 0x1f
-
-    add-int/2addr v3, v4
-
-    add-int/lit8 v2, v2, 0x1
-
-    goto :goto_1
-
-    .line 4
-    :cond_1
-    invoke-interface {p0}, Ljava/lang/CharSequence;->length()I
-
-    move-result v4
-
-    :goto_2
-    if-ge v2, v4, :cond_5
-
-    .line 5
-    invoke-interface {p0, v2}, Ljava/lang/CharSequence;->charAt(I)C
-
-    move-result v6
-
-    if-ge v6, v5, :cond_2
-
-    rsub-int/lit8 v6, v6, 0x7f
-
-    ushr-int/lit8 v6, v6, 0x1f
-
-    add-int/2addr v1, v6
-
-    goto :goto_3
-
-    :cond_2
-    add-int/lit8 v1, v1, 0x2
-
-    const v7, 0xd800
-
-    if-gt v7, v6, :cond_4
-
-    const v7, 0xdfff
-
-    if-gt v6, v7, :cond_4
-
-    .line 6
-    invoke-static {p0, v2}, Ljava/lang/Character;->codePointAt(Ljava/lang/CharSequence;I)I
-
-    move-result v6
-
-    const/high16 v7, 0x10000
-
-    if-lt v6, v7, :cond_3
-
-    add-int/lit8 v2, v2, 0x1
-
-    goto :goto_3
-
-    .line 7
-    :cond_3
-    new-instance p0, Lk3/hu0;
-
-    invoke-direct {p0, v2, v4}, Lk3/hu0;-><init>(II)V
-
-    throw p0
-
-    :cond_4
-    :goto_3
-    add-int/lit8 v2, v2, 0x1
-
-    goto :goto_2
-
-    :cond_5
-    add-int/2addr v3, v1
-
-    :cond_6
-    if-lt v3, v0, :cond_7
-
-    return v3
-
-    .line 8
-    :cond_7
-    new-instance p0, Ljava/lang/IllegalArgumentException;
-
-    int-to-long v0, v3
-
-    const-wide v2, 0x100000000L
-
-    add-long/2addr v0, v2
-
-    const/16 v2, 0x36
-
-    new-instance v3, Ljava/lang/StringBuilder;
-
-    invoke-direct {v3, v2}, Ljava/lang/StringBuilder;-><init>(I)V
-
-    const-string v2, "UTF-8 length does not fit in int: "
-
-    invoke-virtual {v3, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v3, v0, v1}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-direct {p0, v0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
-
-    goto :goto_5
-
-    :goto_4
-    throw p0
-
-    :goto_5
-    goto :goto_4
+    throw p1
 .end method
 
-.method public static b(II)I
+.method public final O0()Ljava/util/List;
     .locals 1
-
-    const/16 v0, -0xc
-
-    if-gt p0, v0, :cond_1
-
-    const/16 v0, -0x41
-
-    if-le p1, v0, :cond_0
-
-    goto :goto_0
-
-    :cond_0
-    shl-int/lit8 p1, p1, 0x8
-
-    xor-int/2addr p0, p1
-
-    goto :goto_1
-
-    :cond_1
-    :goto_0
-    const/4 p0, -0x1
-
-    :goto_1
-    return p0
-.end method
-
-.method public static c(III)I
-    .locals 1
-
-    const/16 v0, -0xc
-
-    if-gt p0, v0, :cond_1
-
-    const/16 v0, -0x41
-
-    if-gt p1, v0, :cond_1
-
-    if-le p2, v0, :cond_0
-
-    goto :goto_0
-
-    :cond_0
-    shl-int/lit8 p1, p1, 0x8
-
-    xor-int/2addr p0, p1
-
-    shl-int/lit8 p1, p2, 0x10
-
-    xor-int/2addr p0, p1
-
-    goto :goto_1
-
-    :cond_1
-    :goto_0
-    const/4 p0, -0x1
-
-    :goto_1
-    return p0
-.end method
-
-.method public static d([BII)Z
-    .locals 2
-
-    .line 1
-    sget-object v0, Lk3/gu0;->a:Lk3/u7;
-
-    const/4 v1, 0x0
-
-    .line 2
-    invoke-virtual {v0, v1, p0, p1, p2}, Lk3/u7;->l(I[BII)I
-
-    move-result p0
-
-    if-nez p0, :cond_0
-
-    const/4 v1, 0x1
-
-    :cond_0
-    return v1
-.end method
-
-.method public static e([BII)Ljava/lang/String;
-    .locals 1
-    .annotation system Ldalvik/annotation/Throws;
+    .annotation system Ldalvik/annotation/Signature;
         value = {
-            Lcom/google/android/gms/internal/ads/zzegz;
+            "()",
+            "Ljava/util/List<",
+            "*>;"
         }
     .end annotation
 
-    sget-object v0, Lk3/gu0;->a:Lk3/u7;
+    iget-object v0, p0, Lk3/gu0;->g:Lk3/ns0;
 
-    invoke-virtual {v0, p0, p1, p2}, Lk3/u7;->r([BII)Ljava/lang/String;
+    invoke-interface {v0}, Lk3/ns0;->O0()Ljava/util/List;
 
-    move-result-object p0
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public final V1(I)Ljava/lang/Object;
+    .locals 1
+
+    iget-object v0, p0, Lk3/gu0;->g:Lk3/ns0;
+
+    invoke-interface {v0, p1}, Lk3/ns0;->V1(I)Ljava/lang/Object;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public final g1()Lk3/ns0;
+    .locals 0
 
     return-object p0
 .end method
 
-.method public static f([BII)I
-    .locals 6
+.method public final synthetic get(I)Ljava/lang/Object;
+    .locals 1
 
-    add-int/lit8 v0, p1, -0x1
+    iget-object v0, p0, Lk3/gu0;->g:Lk3/ns0;
 
-    .line 1
-    aget-byte v0, p0, v0
+    invoke-interface {v0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
-    sub-int/2addr p2, p1
+    move-result-object p1
 
-    const/16 v1, -0xc
+    check-cast p1, Ljava/lang/String;
 
-    const/4 v2, -0x1
+    return-object p1
+.end method
 
-    if-eqz p2, :cond_4
+.method public final iterator()Ljava/util/Iterator;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/Iterator<",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
 
-    const/16 v3, -0x41
+    new-instance v0, Lk3/iu0;
 
-    const/4 v4, 0x1
+    invoke-direct {v0, p0}, Lk3/iu0;-><init>(Lk3/gu0;)V
 
-    if-eq p2, v4, :cond_2
+    return-object v0
+.end method
 
-    const/4 v5, 0x2
+.method public final listIterator(I)Ljava/util/ListIterator;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(I)",
+            "Ljava/util/ListIterator<",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
 
-    if-ne p2, v5, :cond_1
+    new-instance v0, Lk3/fu0;
 
-    .line 2
-    aget-byte p2, p0, p1
+    invoke-direct {v0, p0, p1}, Lk3/fu0;-><init>(Lk3/gu0;I)V
 
-    add-int/2addr p1, v4
+    return-object v0
+.end method
 
-    aget-byte p0, p0, p1
+.method public final size()I
+    .locals 1
 
-    if-gt v0, v1, :cond_6
+    iget-object v0, p0, Lk3/gu0;->g:Lk3/ns0;
 
-    if-gt p2, v3, :cond_6
+    invoke-interface {v0}, Ljava/util/List;->size()I
 
-    if-le p0, v3, :cond_0
+    move-result v0
 
-    goto :goto_0
-
-    :cond_0
-    shl-int/lit8 p1, p2, 0x8
-
-    xor-int/2addr p1, v0
-
-    shl-int/lit8 p0, p0, 0x10
-
-    xor-int v2, p1, p0
-
-    goto :goto_0
-
-    .line 3
-    :cond_1
-    new-instance p0, Ljava/lang/AssertionError;
-
-    invoke-direct {p0}, Ljava/lang/AssertionError;-><init>()V
-
-    throw p0
-
-    .line 4
-    :cond_2
-    aget-byte p0, p0, p1
-
-    if-gt v0, v1, :cond_6
-
-    if-le p0, v3, :cond_3
-
-    goto :goto_0
-
-    :cond_3
-    shl-int/lit8 p0, p0, 0x8
-
-    xor-int v2, v0, p0
-
-    goto :goto_0
-
-    :cond_4
-    if-le v0, v1, :cond_5
-
-    const/4 v0, -0x1
-
-    :cond_5
-    move v2, v0
-
-    :cond_6
-    :goto_0
-    return v2
+    return v0
 .end method

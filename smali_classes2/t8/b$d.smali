@@ -45,7 +45,7 @@
 
     iget-object v1, p0, Lt8/b$d;->b:Lq8/d;
 
-    iget-object v1, v1, Lq8/d;->j:Ljava/lang/String;
+    iget-object v1, v1, Lq8/d;->k:Ljava/lang/String;
 
     check-cast v0, Le8/j;
 
@@ -80,10 +80,10 @@
     const-string v5, "Helpshift_AppUtil"
 
     .line 4
-    invoke-static {v5, v2, v4, v4}, Landroidx/savedstate/d;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v5, v2, v4, v4}, Le5/i;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
 
     .line 5
-    invoke-static {v0}, Lcom/android/billingclient/api/c0;->f(Landroid/content/Context;)Landroid/app/NotificationManager;
+    invoke-static {v0}, Lcom/android/billingclient/api/b0;->g(Landroid/content/Context;)Landroid/app/NotificationManager;
 
     move-result-object v0
 

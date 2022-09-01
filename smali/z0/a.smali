@@ -7,18 +7,18 @@
 
 
 # instance fields
-.field public final synthetic f:Lz0/b$a;
+.field public final synthetic g:Lz0/b$a;
 
-.field public final synthetic g:Lz0/b;
+.field public final synthetic h:Lz0/b;
 
 
 # direct methods
 .method public constructor <init>(Lz0/b;Lz0/b$a;)V
     .locals 0
 
-    iput-object p1, p0, Lz0/a;->g:Lz0/b;
+    iput-object p1, p0, Lz0/a;->h:Lz0/b;
 
-    iput-object p2, p0, Lz0/a;->f:Lz0/b$a;
+    iput-object p2, p0, Lz0/a;->g:Lz0/b$a;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -31,7 +31,7 @@
     .locals 13
 
     .line 1
-    iget-object v0, p0, Lz0/a;->g:Lz0/b;
+    iget-object v0, p0, Lz0/a;->h:Lz0/b;
 
     .line 2
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -1018,13 +1018,13 @@
 
     .line 91
     :cond_1e
-    iget-object v0, p0, Lz0/a;->g:Lz0/b;
+    iget-object v0, p0, Lz0/a;->h:Lz0/b;
 
     .line 92
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 93
-    iget-object v0, p0, Lz0/a;->f:Lz0/b$a;
+    iget-object v0, p0, Lz0/a;->g:Lz0/b$a;
 
     if-eqz v0, :cond_1f
 
@@ -1035,7 +1035,7 @@
     iget-object v0, v0, Lcom/supercell/titan/e;->a:Lcom/supercell/titan/GameApp;
 
     .line 96
-    iput-boolean v1, v0, Lcom/supercell/titan/GameApp;->i:Z
+    iput-boolean v1, v0, Lcom/supercell/titan/GameApp;->j:Z
 
     :cond_1f
     return-void

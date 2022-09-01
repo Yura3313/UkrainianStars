@@ -44,7 +44,7 @@
 
     const-string p2, "recyclerView"
 
-    invoke-static {p1, p2}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p2}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     iget-object p1, p0, Lcom/supercell/id/ui/BaseFragment$h;->c:Lcom/supercell/id/ui/BaseFragment;
 
@@ -56,7 +56,7 @@
 
     move-result v1
 
-    invoke-static {v1}, Lcom/android/billingclient/api/z;->n(F)I
+    invoke-static {v1}, Lcom/android/billingclient/api/y;->i(F)I
 
     move-result v1
 

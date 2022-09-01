@@ -21,10 +21,7 @@
 
 
 # virtual methods
-.method public abstract M0()V
-.end method
-
-.method public abstract M1(I)Lr3/l2;
+.method public abstract L1(I)Lr3/l2;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I)",
@@ -32,6 +29,9 @@
             "TE;>;"
         }
     .end annotation
+.end method
+
+.method public abstract M0()V
 .end method
 
 .method public abstract n1()Z

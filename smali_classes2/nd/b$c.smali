@@ -1,5 +1,5 @@
 .class public final Lnd/b$c;
-.super Lse/h;
+.super Lse/i;
 .source "MessagesTabFriendsFragment.kt"
 
 # interfaces
@@ -18,28 +18,28 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/l<",
-        "Lbe/l0;",
-        "Lie/h;",
+        "Lbe/n0;",
+        "Lie/i;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic f:Lnd/b;
+.field public final synthetic g:Lnd/b;
 
 
 # direct methods
 .method public constructor <init>(Lnd/b;)V
     .locals 0
 
-    iput-object p1, p0, Lnd/b$c;->f:Lnd/b;
+    iput-object p1, p0, Lnd/b$c;->g:Lnd/b;
 
     const/4 p1, 0x1
 
-    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -50,15 +50,15 @@
     .locals 4
 
     .line 1
-    check-cast p1, Lbe/l0;
+    check-cast p1, Lbe/n0;
 
     .line 2
-    iget-object v0, p0, Lnd/b$c;->f:Lnd/b;
+    iget-object v0, p0, Lnd/b$c;->g:Lnd/b;
 
     if-eqz p1, :cond_3
 
     .line 3
-    iget-object p1, p1, Lbe/l0;->a:Lae/m;
+    iget-object p1, p1, Lbe/n0;->a:Lae/m;
 
     if-eqz p1, :cond_3
 
@@ -73,17 +73,17 @@
     iget-object p1, p1, Lae/m$a;->a:Ljava/lang/Object;
 
     .line 6
-    check-cast p1, Lvc/z;
+    check-cast p1, Lvc/x;
 
     .line 7
-    iget-object p1, p1, Lvc/z;->d:Ljava/util/List;
+    iget-object p1, p1, Lvc/x;->d:Ljava/util/List;
 
     .line 8
     new-instance v1, Ljava/util/ArrayList;
 
     const/16 v2, 0xa
 
-    invoke-static {p1, v2}, Lje/f;->q(Ljava/lang/Iterable;I)I
+    invoke-static {p1, v2}, Lje/f;->l(Ljava/lang/Iterable;I)I
 
     move-result v2
 
@@ -106,12 +106,12 @@
     move-result-object v2
 
     .line 10
-    check-cast v2, Lvc/x;
+    check-cast v2, Lvc/v;
 
     .line 11
     new-instance v3, Lnd/l;
 
-    invoke-direct {v3, v2}, Lnd/l;-><init>(Lvc/x;)V
+    invoke-direct {v3, v2}, Lnd/l;-><init>(Lvc/v;)V
 
     invoke-virtual {v1, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
@@ -123,7 +123,7 @@
 
     invoke-direct {p1}, Lnd/h;-><init>()V
 
-    invoke-static {v1, p1}, Lje/j;->L(Ljava/lang/Iterable;Ljava/util/Comparator;)Ljava/util/List;
+    invoke-static {v1, p1}, Lje/j;->G(Ljava/lang/Iterable;Ljava/util/Comparator;)Ljava/util/List;
 
     move-result-object p1
 
@@ -164,13 +164,13 @@
 
     .line 17
     :goto_1
-    iput-object v1, v0, Lnd/b;->b0:Lae/m;
+    iput-object v1, v0, Lnd/b;->c0:Lae/m;
 
     .line 18
     invoke-virtual {v0}, Lnd/b;->W0()V
 
     .line 19
-    sget-object p1, Lie/h;->a:Lie/h;
+    sget-object p1, Lie/i;->a:Lie/i;
 
     return-object p1
 .end method

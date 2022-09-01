@@ -1,75 +1,67 @@
 .class public final Lbe/s0;
-.super Lse/h;
+.super Lse/i;
 .source "ShopStorage.kt"
 
 # interfaces
-.implements Lre/a;
+.implements Lre/l;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
-        "Lre/a<",
-        "Lie/h;",
+        "Lse/i;",
+        "Lre/l<",
+        "Ljava/lang/Boolean;",
+        "Lie/i;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic f:Lbe/o0;
+.field public final synthetic g:Lbe/q0;
 
-.field public final synthetic g:Ljava/lang/String;
-
-.field public final synthetic h:Lvc/x$b;
-
-.field public final synthetic i:Ljava/lang/String;
+.field public final synthetic h:Ljava/lang/String;
 
 
 # direct methods
-.method public constructor <init>(Lbe/o0;Ljava/lang/String;Ljava/lang/String;)V
-    .locals 1
+.method public constructor <init>(Lbe/q0;Ljava/lang/String;)V
+    .locals 0
 
-    sget-object v0, Lvc/x$b;->g:Lvc/x$b;
+    iput-object p1, p0, Lbe/s0;->g:Lbe/q0;
 
-    iput-object p1, p0, Lbe/s0;->f:Lbe/o0;
+    iput-object p2, p0, Lbe/s0;->h:Ljava/lang/String;
 
-    iput-object p2, p0, Lbe/s0;->g:Ljava/lang/String;
+    const/4 p1, 0x1
 
-    iput-object v0, p0, Lbe/s0;->h:Lvc/x$b;
-
-    iput-object p3, p0, Lbe/s0;->i:Ljava/lang/String;
-
-    const/4 p1, 0x0
-
-    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final invoke()Ljava/lang/Object;
-    .locals 5
+.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 2
 
     .line 1
-    iget-object v0, p0, Lbe/s0;->f:Lbe/o0;
+    check-cast p1, Ljava/lang/Boolean;
 
-    new-instance v1, Lbe/o0$b$f;
-
-    iget-object v2, p0, Lbe/s0;->g:Ljava/lang/String;
-
-    iget-object v3, p0, Lbe/s0;->h:Lvc/x$b;
-
-    iget-object v4, p0, Lbe/s0;->i:Ljava/lang/String;
-
-    invoke-direct {v1, v2, v3, v4}, Lbe/o0$b$f;-><init>(Ljava/lang/String;Lvc/x$b;Ljava/lang/String;)V
-
-    invoke-virtual {v0, v1}, Lbe/v0;->a(Lbe/a;)V
+    invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
 
     .line 2
-    sget-object v0, Lie/h;->a:Lie/h;
+    iget-object p1, p0, Lbe/s0;->g:Lbe/q0;
 
-    return-object v0
+    new-instance v0, Lbe/q0$b$b;
+
+    iget-object v1, p0, Lbe/s0;->h:Ljava/lang/String;
+
+    invoke-direct {v0, v1}, Lbe/q0$b$b;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {p1, v0}, Lbe/x0;->a(Lbe/a;)V
+
+    .line 3
+    sget-object p1, Lie/i;->a:Lie/i;
+
+    return-object p1
 .end method

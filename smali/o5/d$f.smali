@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field public final i:[B
+.field public final j:[B
 
 
 # direct methods
@@ -29,7 +29,7 @@
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 3
-    iput-object p1, p0, Lo5/d$f;->i:[B
+    iput-object p1, p0, Lo5/d$f;->j:[B
 
     return-void
 .end method
@@ -39,7 +39,7 @@
 .method public b(I)B
     .locals 1
 
-    iget-object v0, p0, Lo5/d$f;->i:[B
+    iget-object v0, p0, Lo5/d$f;->j:[B
 
     aget-byte p1, v0, p1
 
@@ -103,10 +103,10 @@
     check-cast p1, Lo5/d$f;
 
     .line 6
-    iget v1, p0, Lo5/d;->f:I
+    iget v1, p0, Lo5/d;->g:I
 
     .line 7
-    iget v3, p1, Lo5/d;->f:I
+    iget v3, p1, Lo5/d;->g:I
 
     if-eqz v1, :cond_4
 
@@ -139,10 +139,10 @@
     if-gt v3, v4, :cond_7
 
     .line 11
-    iget-object v3, p0, Lo5/d$f;->i:[B
+    iget-object v3, p0, Lo5/d$f;->j:[B
 
     .line 12
-    iget-object v4, p1, Lo5/d$f;->i:[B
+    iget-object v4, p1, Lo5/d$f;->j:[B
 
     .line 13
     invoke-virtual {p0}, Lo5/d$f;->r()I
@@ -265,7 +265,7 @@
 .method public g([BI)V
     .locals 2
 
-    iget-object v0, p0, Lo5/d$f;->i:[B
+    iget-object v0, p0, Lo5/d$f;->j:[B
 
     const/4 v1, 0x0
 
@@ -277,7 +277,7 @@
 .method public h(I)B
     .locals 1
 
-    iget-object v0, p0, Lo5/d$f;->i:[B
+    iget-object v0, p0, Lo5/d$f;->j:[B
 
     aget-byte p1, v0, p1
 
@@ -293,7 +293,7 @@
     move-result v0
 
     .line 2
-    iget-object v1, p0, Lo5/d$f;->i:[B
+    iget-object v1, p0, Lo5/d$f;->j:[B
 
     invoke-virtual {p0}, Lo5/d$f;->size()I
 
@@ -312,7 +312,7 @@
     .locals 4
 
     .line 1
-    iget-object v0, p0, Lo5/d$f;->i:[B
+    iget-object v0, p0, Lo5/d$f;->j:[B
 
     .line 2
     invoke-virtual {p0}, Lo5/d$f;->r()I
@@ -337,7 +337,7 @@
     .locals 4
 
     .line 1
-    iget-object v0, p0, Lo5/d$f;->i:[B
+    iget-object v0, p0, Lo5/d$f;->j:[B
 
     invoke-virtual {p0}, Lo5/d$f;->r()I
 
@@ -386,7 +386,7 @@
     if-nez p1, :cond_0
 
     .line 2
-    sget-object p1, Lo5/d;->g:Lo5/d$f;
+    sget-object p1, Lo5/d;->h:Lo5/d$f;
 
     return-object p1
 
@@ -394,7 +394,7 @@
     :cond_0
     new-instance v0, Lo5/d$c;
 
-    iget-object v2, p0, Lo5/d$f;->i:[B
+    iget-object v2, p0, Lo5/d$f;->j:[B
 
     invoke-virtual {p0}, Lo5/d$f;->r()I
 
@@ -412,7 +412,7 @@
 
     new-instance v0, Ljava/lang/String;
 
-    iget-object v1, p0, Lo5/d$f;->i:[B
+    iget-object v1, p0, Lo5/d$f;->j:[B
 
     invoke-virtual {p0}, Lo5/d$f;->r()I
 
@@ -435,7 +435,7 @@
         }
     .end annotation
 
-    iget-object v0, p0, Lo5/d$f;->i:[B
+    iget-object v0, p0, Lo5/d$f;->j:[B
 
     invoke-virtual {p0}, Lo5/d$f;->r()I
 
@@ -461,7 +461,7 @@
 .method public size()I
     .locals 1
 
-    iget-object v0, p0, Lo5/d$f;->i:[B
+    iget-object v0, p0, Lo5/d$f;->j:[B
 
     array-length v0, v0
 

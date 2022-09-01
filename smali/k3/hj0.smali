@@ -2,65 +2,60 @@
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-gass@@19.3.0"
 
-# interfaces
-.implements Lk3/xr0;
 
+# instance fields
+.field public final a:Landroid/content/Context;
 
-# static fields
-.field public static final a:Lk3/hj0;
+.field public final b:Ljava/util/concurrent/Executor;
+
+.field public final c:Lcom/google/android/gms/internal/ads/e1;
+
+.field public final d:Lcom/google/android/gms/internal/ads/i1;
+
+.field public final e:Lcom/google/android/gms/internal/ads/h1;
+
+.field public f:Lc4/y;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lc4/f<",
+            "Lcom/google/android/gms/internal/ads/a0;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public g:Lc4/y;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lc4/f<",
+            "Lcom/google/android/gms/internal/ads/a0;",
+            ">;"
+        }
+    .end annotation
+.end field
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 1
-
-    new-instance v0, Lk3/hj0;
-
-    invoke-direct {v0}, Lk3/hj0;-><init>()V
-
-    sput-object v0, Lk3/hj0;->a:Lk3/hj0;
-
-    return-void
-.end method
-
-.method public constructor <init>()V
+.method public constructor <init>(Landroid/content/Context;Ljava/util/concurrent/Executor;Lcom/google/android/gms/internal/ads/e1;Lk3/bj0;Lcom/google/android/gms/internal/ads/i1;Lcom/google/android/gms/internal/ads/h1;)V
     .locals 0
 
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    iput-object p1, p0, Lk3/hj0;->a:Landroid/content/Context;
+
+    .line 3
+    iput-object p2, p0, Lk3/hj0;->b:Ljava/util/concurrent/Executor;
+
+    .line 4
+    iput-object p3, p0, Lk3/hj0;->c:Lcom/google/android/gms/internal/ads/e1;
+
+    .line 5
+    iput-object p5, p0, Lk3/hj0;->d:Lcom/google/android/gms/internal/ads/i1;
+
+    .line 6
+    iput-object p6, p0, Lk3/hj0;->e:Lcom/google/android/gms/internal/ads/h1;
+
     return-void
-.end method
-
-
-# virtual methods
-.method public final a(I)Z
-    .locals 2
-
-    const/4 v0, 0x1
-
-    const/4 v1, 0x0
-
-    if-eqz p1, :cond_1
-
-    if-eq p1, v0, :cond_0
-
-    const/4 p1, 0x0
-
-    goto :goto_0
-
-    :cond_0
-    const/4 p1, 0x2
-
-    goto :goto_0
-
-    :cond_1
-    const/4 p1, 0x1
-
-    :goto_0
-    if-eqz p1, :cond_2
-
-    return v0
-
-    :cond_2
-    return v1
 .end method

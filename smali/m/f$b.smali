@@ -27,14 +27,14 @@
 
 
 # instance fields
-.field public final synthetic f:Lm/f;
+.field public final synthetic g:Lm/f;
 
 
 # direct methods
 .method public constructor <init>(Lm/f;)V
     .locals 0
 
-    iput-object p1, p0, Lm/f$b;->f:Lm/f;
+    iput-object p1, p0, Lm/f$b;->g:Lm/f;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -70,7 +70,7 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lm/f$b;->f:Lm/f;
+    iget-object v0, p0, Lm/f$b;->g:Lm/f;
 
     invoke-virtual {v0}, Lm/f;->d()I
 
@@ -95,7 +95,7 @@
     check-cast v1, Ljava/util/Map$Entry;
 
     .line 3
-    iget-object v2, p0, Lm/f$b;->f:Lm/f;
+    iget-object v2, p0, Lm/f$b;->g:Lm/f;
 
     invoke-interface {v1}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
@@ -111,7 +111,7 @@
 
     .line 4
     :cond_0
-    iget-object p1, p0, Lm/f$b;->f:Lm/f;
+    iget-object p1, p0, Lm/f$b;->g:Lm/f;
 
     invoke-virtual {p1}, Lm/f;->d()I
 
@@ -133,7 +133,7 @@
 .method public final clear()V
     .locals 1
 
-    iget-object v0, p0, Lm/f$b;->f:Lm/f;
+    iget-object v0, p0, Lm/f$b;->g:Lm/f;
 
     invoke-virtual {v0}, Lm/f;->a()V
 
@@ -157,7 +157,7 @@
     check-cast p1, Ljava/util/Map$Entry;
 
     .line 3
-    iget-object v0, p0, Lm/f$b;->f:Lm/f;
+    iget-object v0, p0, Lm/f$b;->g:Lm/f;
 
     invoke-interface {p1}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
@@ -173,7 +173,7 @@
 
     .line 4
     :cond_1
-    iget-object v1, p0, Lm/f$b;->f:Lm/f;
+    iget-object v1, p0, Lm/f$b;->g:Lm/f;
 
     const/4 v2, 0x1
 
@@ -186,7 +186,7 @@
 
     move-result-object p1
 
-    invoke-static {v0, p1}, Lcom/android/billingclient/api/z;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, p1}, Ll2/p;->e(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -251,7 +251,7 @@
     .locals 6
 
     .line 1
-    iget-object v0, p0, Lm/f$b;->f:Lm/f;
+    iget-object v0, p0, Lm/f$b;->g:Lm/f;
 
     invoke-virtual {v0}, Lm/f;->d()I
 
@@ -269,14 +269,14 @@
     if-ltz v0, :cond_2
 
     .line 2
-    iget-object v4, p0, Lm/f$b;->f:Lm/f;
+    iget-object v4, p0, Lm/f$b;->g:Lm/f;
 
     invoke-virtual {v4, v0, v2}, Lm/f;->b(II)Ljava/lang/Object;
 
     move-result-object v4
 
     .line 3
-    iget-object v5, p0, Lm/f$b;->f:Lm/f;
+    iget-object v5, p0, Lm/f$b;->g:Lm/f;
 
     invoke-virtual {v5, v0, v1}, Lm/f;->b(II)Ljava/lang/Object;
 
@@ -323,7 +323,7 @@
 .method public final isEmpty()Z
     .locals 1
 
-    iget-object v0, p0, Lm/f$b;->f:Lm/f;
+    iget-object v0, p0, Lm/f$b;->g:Lm/f;
 
     invoke-virtual {v0}, Lm/f;->d()I
 
@@ -355,7 +355,7 @@
 
     new-instance v0, Lm/f$d;
 
-    iget-object v1, p0, Lm/f$b;->f:Lm/f;
+    iget-object v1, p0, Lm/f$b;->g:Lm/f;
 
     invoke-direct {v0, v1}, Lm/f$d;-><init>(Lm/f;)V
 
@@ -409,7 +409,7 @@
 .method public final size()I
     .locals 1
 
-    iget-object v0, p0, Lm/f$b;->f:Lm/f;
+    iget-object v0, p0, Lm/f$b;->g:Lm/f;
 
     invoke-virtual {v0}, Lm/f;->d()I
 

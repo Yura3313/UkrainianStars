@@ -12,15 +12,15 @@
 
 
 # static fields
-.field public static final x0:Lwc/x$a;
+.field public static final y0:Lwc/x$a;
 
 
 # instance fields
-.field public final u0:J
+.field public final v0:J
 
-.field public final v0:Z
+.field public final w0:Z
 
-.field public w0:Ljava/util/HashMap;
+.field public x0:Ljava/util/HashMap;
 
 
 # direct methods
@@ -31,7 +31,7 @@
 
     invoke-direct {v0}, Lwc/x$a;-><init>()V
 
-    sput-object v0, Lwc/x;->x0:Lwc/x$a;
+    sput-object v0, Lwc/x;->y0:Lwc/x$a;
 
     return-void
 .end method
@@ -45,12 +45,12 @@
     const-wide/16 v0, 0x46
 
     .line 2
-    iput-wide v0, p0, Lwc/x;->u0:J
+    iput-wide v0, p0, Lwc/x;->v0:J
 
     const/4 v0, 0x1
 
     .line 3
-    iput-boolean v0, p0, Lwc/x;->v0:Z
+    iput-boolean v0, p0, Lwc/x;->w0:Z
 
     return-void
 .end method
@@ -60,7 +60,7 @@
 .method public final U0()V
     .locals 1
 
-    iget-object v0, p0, Lwc/x;->w0:Ljava/util/HashMap;
+    iget-object v0, p0, Lwc/x;->x0:Ljava/util/HashMap;
 
     if-eqz v0, :cond_0
 
@@ -108,7 +108,7 @@
     if-eqz v0, :cond_0
 
     .line 3
-    iget-wide v1, p0, Lwc/x;->u0:J
+    iget-wide v1, p0, Lwc/x;->v0:J
 
     .line 4
     invoke-virtual {v0, v1, v2}, Landroid/view/ViewPropertyAnimator;->setDuration(J)Landroid/view/ViewPropertyAnimator;
@@ -137,7 +137,7 @@
 .method public final W0()J
     .locals 2
 
-    iget-wide v0, p0, Lwc/x;->u0:J
+    iget-wide v0, p0, Lwc/x;->v0:J
 
     return-wide v0
 .end method
@@ -147,7 +147,7 @@
 
     const-string p3, "inflater"
 
-    invoke-static {p1, p3}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p3}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     sget p3, Lcom/supercell/id/R$layout;->fragment_info_dialog:I
@@ -159,7 +159,7 @@
     move-result-object p2
 
     .line 2
-    iget-object p3, p0, Landroidx/fragment/app/Fragment;->l:Landroid/os/Bundle;
+    iget-object p3, p0, Landroidx/fragment/app/Fragment;->m:Landroid/os/Bundle;
 
     if-eqz p3, :cond_0
 
@@ -173,7 +173,7 @@
     const-string v0, "view"
 
     .line 4
-    invoke-static {p2, v0}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     sget v0, Lcom/supercell/id/R$id;->info_dialog_content:I
 
@@ -194,7 +194,7 @@
 .method public final Y0(I)Landroid/view/View;
     .locals 2
 
-    iget-object v0, p0, Lwc/x;->w0:Ljava/util/HashMap;
+    iget-object v0, p0, Lwc/x;->x0:Ljava/util/HashMap;
 
     if-nez v0, :cond_0
 
@@ -202,10 +202,10 @@
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    iput-object v0, p0, Lwc/x;->w0:Ljava/util/HashMap;
+    iput-object v0, p0, Lwc/x;->x0:Ljava/util/HashMap;
 
     :cond_0
-    iget-object v0, p0, Lwc/x;->w0:Ljava/util/HashMap;
+    iget-object v0, p0, Lwc/x;->x0:Ljava/util/HashMap;
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -220,7 +220,7 @@
     if-nez v0, :cond_2
 
     .line 1
-    iget-object v0, p0, Landroidx/fragment/app/Fragment;->M:Landroid/view/View;
+    iget-object v0, p0, Landroidx/fragment/app/Fragment;->N:Landroid/view/View;
 
     if-nez v0, :cond_1
 
@@ -234,7 +234,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lwc/x;->w0:Ljava/util/HashMap;
+    iget-object v1, p0, Lwc/x;->x0:Ljava/util/HashMap;
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -251,7 +251,7 @@
 
     invoke-super {p0}, Lwc/e;->a0()V
 
-    iget-object v0, p0, Lwc/x;->w0:Ljava/util/HashMap;
+    iget-object v0, p0, Lwc/x;->x0:Ljava/util/HashMap;
 
     if-eqz v0, :cond_0
 
@@ -266,10 +266,10 @@
 
     const-string p2, "view"
 
-    invoke-static {p1, p2}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p2}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
-    iget-boolean p2, p0, Lwc/x;->v0:Z
+    iget-boolean p2, p0, Lwc/x;->w0:Z
 
     const/4 v0, 0x0
 
@@ -287,7 +287,7 @@
 
     .line 4
     :cond_0
-    iget-object p2, p0, Landroidx/fragment/app/Fragment;->l:Landroid/os/Bundle;
+    iget-object p2, p0, Landroidx/fragment/app/Fragment;->m:Landroid/os/Bundle;
 
     const/4 v1, 0x0
 
@@ -329,7 +329,7 @@
 
     .line 6
     :goto_2
-    iget-object p2, p0, Landroidx/fragment/app/Fragment;->l:Landroid/os/Bundle;
+    iget-object p2, p0, Landroidx/fragment/app/Fragment;->m:Landroid/os/Bundle;
 
     if-eqz p2, :cond_4
 
@@ -353,7 +353,7 @@
     const-string v2, "it"
 
     .line 9
-    invoke-static {p2, v2}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v2}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/4 v2, 0x0
 

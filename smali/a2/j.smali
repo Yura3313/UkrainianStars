@@ -2,59 +2,86 @@
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-base@@17.5.0"
 
+# interfaces
+.implements Lcom/google/android/play/core/assetpacks/v;
+
+
+# static fields
+.field public static final a:La2/j;
+
 
 # direct methods
-.method public static final synthetic a(Landroidx/fragment/app/Fragment;Lcom/supercell/id/ui/BaseFragment$b;ZLcom/supercell/id/ui/BaseFragment$d;Ljava/util/Set;)Lze/e0;
-    .locals 0
-
-    invoke-static {p0, p1, p2, p3, p4}, La2/j;->c(Landroidx/fragment/app/Fragment;Lcom/supercell/id/ui/BaseFragment$b;ZLcom/supercell/id/ui/BaseFragment$d;Ljava/util/Set;)Lze/e0;
-
-    move-result-object p0
-
-    return-object p0
-.end method
-
-.method public static final synthetic b(Landroidx/fragment/app/Fragment;ZLcom/supercell/id/ui/BaseFragment$d;Ljava/util/Set;)Lze/e0;
+.method static synthetic constructor <clinit>()V
     .locals 1
 
-    sget-object v0, Lcom/supercell/id/ui/BaseFragment$c;->g:Lcom/supercell/id/ui/BaseFragment$c;
+    new-instance v0, La2/j;
 
-    invoke-static {p0, v0, p1, p2, p3}, La2/j;->e(Landroidx/fragment/app/Fragment;Lcom/supercell/id/ui/BaseFragment$c;ZLcom/supercell/id/ui/BaseFragment$d;Ljava/util/Set;)Lze/e0;
+    invoke-direct {v0}, La2/j;-><init>()V
+
+    sput-object v0, La2/j;->a:La2/j;
+
+    return-void
+.end method
+
+.method public synthetic constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method public static final synthetic a(Landroidx/fragment/app/Fragment;Lcom/supercell/id/ui/BaseFragment$b;ZLcom/supercell/id/ui/BaseFragment$d;Ljava/util/Set;)Lze/f0;
+    .locals 0
+
+    invoke-static {p0, p1, p2, p3, p4}, La2/j;->c(Landroidx/fragment/app/Fragment;Lcom/supercell/id/ui/BaseFragment$b;ZLcom/supercell/id/ui/BaseFragment$d;Ljava/util/Set;)Lze/f0;
 
     move-result-object p0
 
     return-object p0
 .end method
 
-.method public static final c(Landroidx/fragment/app/Fragment;Lcom/supercell/id/ui/BaseFragment$b;ZLcom/supercell/id/ui/BaseFragment$d;Ljava/util/Set;)Lze/e0;
+.method public static final synthetic b(Landroidx/fragment/app/Fragment;ZLcom/supercell/id/ui/BaseFragment$d;Ljava/util/Set;)Lze/f0;
+    .locals 1
+
+    sget-object v0, Lcom/supercell/id/ui/BaseFragment$c;->h:Lcom/supercell/id/ui/BaseFragment$c;
+
+    invoke-static {p0, v0, p1, p2, p3}, La2/j;->e(Landroidx/fragment/app/Fragment;Lcom/supercell/id/ui/BaseFragment$c;ZLcom/supercell/id/ui/BaseFragment$d;Ljava/util/Set;)Lze/f0;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static final c(Landroidx/fragment/app/Fragment;Lcom/supercell/id/ui/BaseFragment$b;ZLcom/supercell/id/ui/BaseFragment$d;Ljava/util/Set;)Lze/f0;
     .locals 2
 
     .line 1
-    instance-of v0, p0, Lwc/a1;
+    instance-of v0, p0, Lwc/b1;
 
     if-eqz v0, :cond_1
 
-    check-cast p0, Lwc/a1;
+    check-cast p0, Lwc/b1;
 
     const-string v0, "sharedElements"
 
     .line 2
-    invoke-static {p4, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p4, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "coordinator"
 
-    invoke-static {p3, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p3, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 3
-    iput-object p4, p0, Lwc/a1;->h0:Ljava/util/Set;
+    iput-object p4, p0, Lwc/b1;->i0:Ljava/util/Set;
 
     .line 4
-    invoke-static {}, Lbf/g;->c()Lze/o;
+    invoke-static {}, Landroidx/lifecycle/b0;->b()Lze/o;
 
     move-result-object p4
 
     .line 5
-    iget-object v0, p0, Lwc/a1;->i0:Lze/p;
+    iget-object v0, p0, Lwc/b1;->j0:Lze/p;
 
     if-eqz v0, :cond_0
 
@@ -71,7 +98,7 @@
 
     check-cast v0, Lze/p;
 
-    iput-object v0, p0, Lwc/a1;->i0:Lze/p;
+    iput-object v0, p0, Lwc/b1;->j0:Lze/p;
 
     .line 8
     invoke-virtual {p0, p1, p2, p3}, Lcom/supercell/id/ui/BaseFragment;->Q0(Lcom/supercell/id/ui/BaseFragment$b;ZLcom/supercell/id/ui/BaseFragment$d;)V
@@ -95,42 +122,42 @@
     return-object p4
 .end method
 
-.method public static synthetic d(Landroidx/fragment/app/Fragment;Lcom/supercell/id/ui/BaseFragment$b;ZLcom/supercell/id/ui/BaseFragment$d;)Lze/e0;
+.method public static synthetic d(Landroidx/fragment/app/Fragment;Lcom/supercell/id/ui/BaseFragment$b;ZLcom/supercell/id/ui/BaseFragment$d;)Lze/f0;
     .locals 1
 
-    sget-object v0, Lje/n;->f:Lje/n;
+    sget-object v0, Lje/n;->g:Lje/n;
 
-    invoke-static {p0, p1, p2, p3, v0}, La2/j;->c(Landroidx/fragment/app/Fragment;Lcom/supercell/id/ui/BaseFragment$b;ZLcom/supercell/id/ui/BaseFragment$d;Ljava/util/Set;)Lze/e0;
+    invoke-static {p0, p1, p2, p3, v0}, La2/j;->c(Landroidx/fragment/app/Fragment;Lcom/supercell/id/ui/BaseFragment$b;ZLcom/supercell/id/ui/BaseFragment$d;Ljava/util/Set;)Lze/f0;
 
     move-result-object p0
 
     return-object p0
 .end method
 
-.method public static final e(Landroidx/fragment/app/Fragment;Lcom/supercell/id/ui/BaseFragment$c;ZLcom/supercell/id/ui/BaseFragment$d;Ljava/util/Set;)Lze/e0;
+.method public static final e(Landroidx/fragment/app/Fragment;Lcom/supercell/id/ui/BaseFragment$c;ZLcom/supercell/id/ui/BaseFragment$d;Ljava/util/Set;)Lze/f0;
     .locals 1
 
     .line 1
-    instance-of v0, p0, Lwc/a1;
+    instance-of v0, p0, Lwc/b1;
 
     if-eqz v0, :cond_0
 
-    check-cast p0, Lwc/a1;
+    check-cast p0, Lwc/b1;
 
     const-string v0, "sharedElements"
 
     .line 2
-    invoke-static {p4, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p4, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "coordinator"
 
-    invoke-static {p3, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p3, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 3
-    iput-object p4, p0, Lwc/a1;->h0:Ljava/util/Set;
+    iput-object p4, p0, Lwc/b1;->i0:Ljava/util/Set;
 
     .line 4
-    invoke-virtual {p0, p1, p2, p3}, Lcom/supercell/id/ui/BaseFragment;->R0(Lcom/supercell/id/ui/BaseFragment$c;ZLcom/supercell/id/ui/BaseFragment$d;)Lze/e0;
+    invoke-virtual {p0, p1, p2, p3}, Lcom/supercell/id/ui/BaseFragment;->R0(Lcom/supercell/id/ui/BaseFragment$c;ZLcom/supercell/id/ui/BaseFragment$d;)Lze/f0;
 
     move-result-object p0
 
@@ -144,7 +171,7 @@
 
     check-cast p0, Lcom/supercell/id/ui/BaseFragment;
 
-    invoke-virtual {p0, p1, p2, p3}, Lcom/supercell/id/ui/BaseFragment;->R0(Lcom/supercell/id/ui/BaseFragment$c;ZLcom/supercell/id/ui/BaseFragment$d;)Lze/e0;
+    invoke-virtual {p0, p1, p2, p3}, Lcom/supercell/id/ui/BaseFragment;->R0(Lcom/supercell/id/ui/BaseFragment$c;ZLcom/supercell/id/ui/BaseFragment$d;)Lze/f0;
 
     move-result-object p0
 
@@ -157,12 +184,12 @@
     return-object p0
 .end method
 
-.method public static synthetic f(Landroidx/fragment/app/Fragment;Lcom/supercell/id/ui/BaseFragment$c;ZLcom/supercell/id/ui/BaseFragment$d;)Lze/e0;
+.method public static synthetic f(Landroidx/fragment/app/Fragment;Lcom/supercell/id/ui/BaseFragment$c;ZLcom/supercell/id/ui/BaseFragment$d;)Lze/f0;
     .locals 1
 
-    sget-object v0, Lje/n;->f:Lje/n;
+    sget-object v0, Lje/n;->g:Lje/n;
 
-    invoke-static {p0, p1, p2, p3, v0}, La2/j;->e(Landroidx/fragment/app/Fragment;Lcom/supercell/id/ui/BaseFragment$c;ZLcom/supercell/id/ui/BaseFragment$d;Ljava/util/Set;)Lze/e0;
+    invoke-static {p0, p1, p2, p3, v0}, La2/j;->e(Landroidx/fragment/app/Fragment;Lcom/supercell/id/ui/BaseFragment$c;ZLcom/supercell/id/ui/BaseFragment$d;Ljava/util/Set;)Lze/f0;
 
     move-result-object p0
 
@@ -174,10 +201,10 @@
 
     const-string v0, "$this$backStackEntry"
 
-    invoke-static {p0, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
-    iget-object p0, p0, Landroidx/fragment/app/Fragment;->l:Landroid/os/Bundle;
+    iget-object p0, p0, Landroidx/fragment/app/Fragment;->m:Landroid/os/Bundle;
 
     if-eqz p0, :cond_0
 
@@ -204,7 +231,7 @@
 
     const-string v0, "$this$sharedElements"
 
-    invoke-static {p0, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     :try_start_0
     const-string v0, "sharedElements"
@@ -216,7 +243,7 @@
 
     const-string v0, "getDeclaredField(\"sharedElements\")"
 
-    invoke-static {p0, v0}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/4 v0, 0x0
 
@@ -242,7 +269,7 @@
     goto :goto_1
 
     :cond_1
-    sget-object v0, Lje/n;->f:Lje/n;
+    sget-object v0, Lje/n;->g:Lje/n;
     :try_end_0
     .catch Ljava/lang/NoSuchFieldException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -250,7 +277,7 @@
 
     .line 3
     :catch_0
-    sget-object v0, Lje/n;->f:Lje/n;
+    sget-object v0, Lje/n;->g:Lje/n;
 
     :goto_1
     return-object v0
@@ -266,7 +293,7 @@
     mul-float v0, v0, p1
 
     .line 1
-    invoke-static {v0}, Lcom/android/billingclient/api/z;->n(F)I
+    invoke-static {v0}, Lcom/android/billingclient/api/y;->i(F)I
 
     move-result p1
 
@@ -291,4 +318,12 @@
     move-result p0
 
     return p0
+.end method
+
+
+# virtual methods
+.method public K(I)I
+    .locals 0
+
+    return p1
 .end method

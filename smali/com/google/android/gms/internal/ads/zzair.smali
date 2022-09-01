@@ -21,22 +21,22 @@
 
 
 # instance fields
-.field public final f:I
-
 .field public final g:I
 
-.field public final h:Ljava/lang/String;
+.field public final h:I
 
-.field public final i:I
+.field public final i:Ljava/lang/String;
+
+.field public final j:I
 
 
 # direct methods
 .method public static constructor <clinit>()V
     .locals 1
 
-    new-instance v0, Lk3/v3;
+    new-instance v0, Lk3/u3;
 
-    invoke-direct {v0}, Lk3/v3;-><init>()V
+    invoke-direct {v0}, Lk3/u3;-><init>()V
 
     sput-object v0, Lcom/google/android/gms/internal/ads/zzair;->CREATOR:Landroid/os/Parcelable$Creator;
 
@@ -50,16 +50,16 @@
     invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
 
     .line 2
-    iput p1, p0, Lcom/google/android/gms/internal/ads/zzair;->f:I
+    iput p1, p0, Lcom/google/android/gms/internal/ads/zzair;->g:I
 
     .line 3
-    iput p2, p0, Lcom/google/android/gms/internal/ads/zzair;->g:I
+    iput p2, p0, Lcom/google/android/gms/internal/ads/zzair;->h:I
 
     .line 4
-    iput-object p3, p0, Lcom/google/android/gms/internal/ads/zzair;->h:Ljava/lang/String;
+    iput-object p3, p0, Lcom/google/android/gms/internal/ads/zzair;->i:Ljava/lang/String;
 
     .line 5
-    iput p4, p0, Lcom/google/android/gms/internal/ads/zzair;->i:I
+    iput p4, p0, Lcom/google/android/gms/internal/ads/zzair;->j:I
 
     return-void
 .end method
@@ -77,7 +77,7 @@
     move-result v5
 
     .line 2
-    iget p2, p0, Lcom/google/android/gms/internal/ads/zzair;->g:I
+    iget p2, p0, Lcom/google/android/gms/internal/ads/zzair;->h:I
 
     const/4 v0, 0x1
 
@@ -90,7 +90,7 @@
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 5
-    iget-object p2, p0, Lcom/google/android/gms/internal/ads/zzair;->h:Ljava/lang/String;
+    iget-object p2, p0, Lcom/google/android/gms/internal/ads/zzair;->i:Ljava/lang/String;
 
     const/4 v0, 0x2
 
@@ -99,7 +99,7 @@
     invoke-static {p1, v0, p2, v1}, Le2/b;->m(Landroid/os/Parcel;ILjava/lang/String;Z)V
 
     .line 6
-    iget p2, p0, Lcom/google/android/gms/internal/ads/zzair;->i:I
+    iget p2, p0, Lcom/google/android/gms/internal/ads/zzair;->j:I
 
     const/4 v0, 0x3
 
@@ -110,7 +110,7 @@
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 9
-    iget v3, p0, Lcom/google/android/gms/internal/ads/zzair;->f:I
+    iget v3, p0, Lcom/google/android/gms/internal/ads/zzair;->g:I
 
     const/16 v1, 0x3e8
 

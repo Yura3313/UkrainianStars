@@ -37,13 +37,13 @@
 
     const/4 v1, 0x0
 
-    invoke-direct {v0, v1}, Lcom/kakao/sdk/auth/AuthCodeClient$Companion;-><init>(Lse/e;)V
+    invoke-direct {v0, v1}, Lcom/kakao/sdk/auth/AuthCodeClient$Companion;-><init>(Lse/f;)V
 
     sput-object v0, Lcom/kakao/sdk/auth/AuthCodeClient;->Companion:Lcom/kakao/sdk/auth/AuthCodeClient$Companion;
 
     sget-object v0, Lcom/kakao/sdk/auth/AuthCodeClient$Companion$instance$2;->INSTANCE:Lcom/kakao/sdk/auth/AuthCodeClient$Companion$instance$2;
 
-    invoke-static {v0}, La5/r;->d(Lre/a;)Lie/c;
+    invoke-static {v0}, Ld2/u;->c(Lre/a;)Lie/c;
 
     move-result-object v0
 
@@ -69,7 +69,7 @@
 
     move-object v0, p0
 
-    invoke-direct/range {v0 .. v6}, Lcom/kakao/sdk/auth/AuthCodeClient;-><init>(Lcom/kakao/sdk/common/util/IntentResolveClient;Lcom/kakao/sdk/common/model/ApplicationInfo;Lcom/kakao/sdk/common/model/ContextInfo;Lcom/kakao/sdk/common/model/ApprovalType;ILse/e;)V
+    invoke-direct/range {v0 .. v6}, Lcom/kakao/sdk/auth/AuthCodeClient;-><init>(Lcom/kakao/sdk/common/util/IntentResolveClient;Lcom/kakao/sdk/common/model/ApplicationInfo;Lcom/kakao/sdk/common/model/ContextInfo;Lcom/kakao/sdk/common/model/ApprovalType;ILse/f;)V
 
     return-void
 .end method
@@ -79,19 +79,19 @@
 
     const-string v0, "intentResolveClient"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "applicationInfo"
 
-    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "contextInfo"
 
-    invoke-static {p3, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p3, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "approvalType"
 
-    invoke-static {p4, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p4, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -107,7 +107,7 @@
     return-void
 .end method
 
-.method public synthetic constructor <init>(Lcom/kakao/sdk/common/util/IntentResolveClient;Lcom/kakao/sdk/common/model/ApplicationInfo;Lcom/kakao/sdk/common/model/ContextInfo;Lcom/kakao/sdk/common/model/ApprovalType;ILse/e;)V
+.method public synthetic constructor <init>(Lcom/kakao/sdk/common/util/IntentResolveClient;Lcom/kakao/sdk/common/model/ApplicationInfo;Lcom/kakao/sdk/common/model/ContextInfo;Lcom/kakao/sdk/common/model/ApprovalType;ILse/f;)V
     .locals 0
 
     and-int/lit8 p6, p5, 0x1
@@ -392,7 +392,7 @@
             "Ljava/lang/String;",
             "-",
             "Ljava/lang/Throwable;",
-            "Lie/h;",
+            "Lie/i;",
             ">;)V"
         }
     .end annotation
@@ -458,7 +458,7 @@
             "Ljava/lang/String;",
             "-",
             "Ljava/lang/Throwable;",
-            "Lie/h;",
+            "Lie/i;",
             ">;)V"
         }
     .end annotation
@@ -475,11 +475,11 @@
 
     const-string v5, "context"
 
-    invoke-static {v0, v5}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v5}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v5, "callback"
 
-    invoke-static {v4, v5}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v4, v5}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     new-instance v5, Lcom/kakao/sdk/auth/UriUtility;
@@ -488,7 +488,7 @@
 
     const/4 v6, 0x1
 
-    invoke-direct {v5, v15, v6, v15}, Lcom/kakao/sdk/auth/UriUtility;-><init>(Lcom/kakao/sdk/common/model/ServerHosts;ILse/e;)V
+    invoke-direct {v5, v15, v6, v15}, Lcom/kakao/sdk/auth/UriUtility;-><init>(Lcom/kakao/sdk/common/model/ServerHosts;ILse/f;)V
 
     .line 2
     iget-object v6, v1, Lcom/kakao/sdk/auth/AuthCodeClient;->applicationInfo:Lcom/kakao/sdk/common/model/ApplicationInfo;
@@ -531,7 +531,7 @@
 
     const-string v10, "(this as java.lang.String).getBytes(charset)"
 
-    invoke-static {v8, v10}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v8, v10}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v6, v8}, Lcom/kakao/sdk/auth/AuthCodeClient$Companion;->codeChallenge([B)Ljava/lang/String;
 
@@ -666,7 +666,7 @@
             "Ljava/lang/String;",
             "-",
             "Ljava/lang/Throwable;",
-            "Lie/h;",
+            "Lie/i;",
             ">;)V"
         }
     .end annotation
@@ -727,7 +727,7 @@
             "Ljava/lang/String;",
             "-",
             "Ljava/lang/Throwable;",
-            "Lie/h;",
+            "Lie/i;",
             ">;)V"
         }
     .end annotation
@@ -785,7 +785,7 @@
             "Ljava/lang/String;",
             "-",
             "Ljava/lang/Throwable;",
-            "Lie/h;",
+            "Lie/i;",
             ">;)V"
         }
     .end annotation
@@ -840,7 +840,7 @@
             "Ljava/lang/String;",
             "-",
             "Ljava/lang/Throwable;",
-            "Lie/h;",
+            "Lie/i;",
             ">;)V"
         }
     .end annotation
@@ -894,7 +894,7 @@
             "Ljava/lang/String;",
             "-",
             "Ljava/lang/Throwable;",
-            "Lie/h;",
+            "Lie/i;",
             ">;)V"
         }
     .end annotation
@@ -945,7 +945,7 @@
             "Ljava/lang/String;",
             "-",
             "Ljava/lang/Throwable;",
-            "Lie/h;",
+            "Lie/i;",
             ">;)V"
         }
     .end annotation
@@ -992,7 +992,7 @@
             "Ljava/lang/String;",
             "-",
             "Ljava/lang/Throwable;",
-            "Lie/h;",
+            "Lie/i;",
             ">;)V"
         }
     .end annotation
@@ -1047,7 +1047,7 @@
             "Ljava/lang/String;",
             "-",
             "Ljava/lang/Throwable;",
-            "Lie/h;",
+            "Lie/i;",
             ">;)V"
         }
     .end annotation
@@ -1062,11 +1062,11 @@
 
     const-string v3, "context"
 
-    invoke-static {v0, v3}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v3}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v3, "callback"
 
-    invoke-static {v10, v3}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v10, v3}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     invoke-virtual/range {p0 .. p1}, Lcom/kakao/sdk/auth/AuthCodeClient;->isKakaoTalkLoginAvailable(Landroid/content/Context;)Z
@@ -1138,7 +1138,7 @@
     move-object/from16 v12, p3
 
     .line 8
-    invoke-static/range {v12 .. v17}, Lje/j;->E(Ljava/lang/Iterable;Ljava/lang/CharSequence;Ljava/lang/CharSequence;Ljava/lang/CharSequence;Lre/l;I)Ljava/lang/String;
+    invoke-static/range {v12 .. v17}, Lje/j;->z(Ljava/lang/Iterable;Ljava/lang/CharSequence;Ljava/lang/CharSequence;Ljava/lang/CharSequence;Lre/l;I)Ljava/lang/String;
 
     move-result-object v9
 
@@ -1162,7 +1162,7 @@
     move-object/from16 v12, p4
 
     .line 9
-    invoke-static/range {v12 .. v17}, Lje/j;->E(Ljava/lang/Iterable;Ljava/lang/CharSequence;Ljava/lang/CharSequence;Ljava/lang/CharSequence;Lre/l;I)Ljava/lang/String;
+    invoke-static/range {v12 .. v17}, Lje/j;->z(Ljava/lang/Iterable;Ljava/lang/CharSequence;Ljava/lang/CharSequence;Ljava/lang/CharSequence;Lre/l;I)Ljava/lang/String;
 
     move-result-object v9
 
@@ -1198,7 +1198,7 @@
 
     const-string v12, "(this as java.lang.String).getBytes(charset)"
 
-    invoke-static {v2, v12}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v2, v12}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v9, v2}, Lcom/kakao/sdk/auth/AuthCodeClient$Companion;->codeChallenge([B)Ljava/lang/String;
 
@@ -1270,7 +1270,7 @@
             "Ljava/lang/String;",
             "-",
             "Ljava/lang/Throwable;",
-            "Lie/h;",
+            "Lie/i;",
             ">;)V"
         }
     .end annotation
@@ -1313,7 +1313,7 @@
             "Ljava/lang/String;",
             "-",
             "Ljava/lang/Throwable;",
-            "Lie/h;",
+            "Lie/i;",
             ">;)V"
         }
     .end annotation
@@ -1353,7 +1353,7 @@
             "Ljava/lang/String;",
             "-",
             "Ljava/lang/Throwable;",
-            "Lie/h;",
+            "Lie/i;",
             ">;)V"
         }
     .end annotation
@@ -1392,7 +1392,7 @@
             "Ljava/lang/String;",
             "-",
             "Ljava/lang/Throwable;",
-            "Lie/h;",
+            "Lie/i;",
             ">;)V"
         }
     .end annotation
@@ -1425,7 +1425,7 @@
 
     const-string v0, "context"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     iget-object v0, p0, Lcom/kakao/sdk/auth/AuthCodeClient;->intentResolveClient:Lcom/kakao/sdk/common/util/IntentResolveClient;
 
@@ -1462,7 +1462,7 @@
             "Ljava/lang/String;",
             "-",
             "Ljava/lang/Throwable;",
-            "Lie/h;",
+            "Lie/i;",
             ">;)",
             "Landroid/os/ResultReceiver;"
         }
@@ -1470,7 +1470,7 @@
 
     const-string v0, "callback"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     new-instance v0, Lcom/kakao/sdk/auth/AuthCodeClient$resultReceiver$1;
 

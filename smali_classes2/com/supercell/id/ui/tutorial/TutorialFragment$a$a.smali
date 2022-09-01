@@ -1,5 +1,5 @@
 .class public final Lcom/supercell/id/ui/tutorial/TutorialFragment$a$a;
-.super Lse/h;
+.super Lse/i;
 .source "TutorialFragment.kt"
 
 # interfaces
@@ -18,32 +18,32 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/l<",
         "Landroid/view/View;",
-        "Lie/h;",
+        "Lie/i;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic f:Landroid/view/View;
+.field public final synthetic g:Landroid/view/View;
 
-.field public final synthetic g:Lcom/supercell/id/ui/tutorial/TutorialFragment$a;
+.field public final synthetic h:Lcom/supercell/id/ui/tutorial/TutorialFragment$a;
 
 
 # direct methods
 .method public constructor <init>(Landroid/view/View;Lcom/supercell/id/ui/tutorial/TutorialFragment$a;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/ui/tutorial/TutorialFragment$a$a;->f:Landroid/view/View;
+    iput-object p1, p0, Lcom/supercell/id/ui/tutorial/TutorialFragment$a$a;->g:Landroid/view/View;
 
-    iput-object p2, p0, Lcom/supercell/id/ui/tutorial/TutorialFragment$a$a;->g:Lcom/supercell/id/ui/tutorial/TutorialFragment$a;
+    iput-object p2, p0, Lcom/supercell/id/ui/tutorial/TutorialFragment$a$a;->h:Lcom/supercell/id/ui/tutorial/TutorialFragment$a;
 
     const/4 p1, 0x1
 
-    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -59,10 +59,10 @@
     const-string v0, "it"
 
     .line 2
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 3
-    iget-object p1, p0, Lcom/supercell/id/ui/tutorial/TutorialFragment$a$a;->g:Lcom/supercell/id/ui/tutorial/TutorialFragment$a;
+    iget-object p1, p0, Lcom/supercell/id/ui/tutorial/TutorialFragment$a$a;->h:Lcom/supercell/id/ui/tutorial/TutorialFragment$a;
 
     invoke-virtual {p1}, Landroidx/fragment/app/Fragment;->N()Z
 
@@ -74,7 +74,7 @@
 
     .line 4
     :cond_0
-    iget-object p1, p0, Lcom/supercell/id/ui/tutorial/TutorialFragment$a$a;->f:Landroid/view/View;
+    iget-object p1, p0, Lcom/supercell/id/ui/tutorial/TutorialFragment$a$a;->g:Landroid/view/View;
 
     invoke-virtual {p1}, Landroid/view/View;->animate()Landroid/view/ViewPropertyAnimator;
 
@@ -108,7 +108,7 @@
 
     .line 7
     :goto_0
-    sget-object p1, Lie/h;->a:Lie/h;
+    sget-object p1, Lie/i;->a:Lie/i;
 
     return-object p1
 .end method

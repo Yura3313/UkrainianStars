@@ -48,12 +48,12 @@
     .line 2
     move-object p2, p0
 
-    check-cast p2, Lk3/b60;
+    check-cast p2, Lk3/e60;
 
     .line 3
-    iget-object p2, p2, Lk3/b60;->f:Lk3/g40;
+    iget-object p2, p2, Lk3/e60;->g:Lk3/j40;
 
-    iget-object p2, p2, Lk3/g40;->c:Lk3/qr;
+    iget-object p2, p2, Lk3/j40;->c:Lk3/or;
 
     check-cast p2, Lcom/google/android/gms/internal/ads/zzcso;
 
@@ -105,18 +105,18 @@
     :goto_0
     move-object p2, p0
 
-    check-cast p2, Lk3/b60;
+    check-cast p2, Lk3/e60;
 
     .line 10
-    iget-object v1, p2, Lk3/b60;->g:Lk3/a60;
+    iget-object v1, p2, Lk3/e60;->h:Lk3/d60;
 
     .line 11
-    iput-object p1, v1, Lk3/a60;->c:Lcom/google/android/gms/internal/ads/zzanj;
+    iput-object p1, v1, Lk3/d60;->c:Lcom/google/android/gms/internal/ads/zzanj;
 
     .line 12
-    iget-object p1, p2, Lk3/b60;->f:Lk3/g40;
+    iget-object p1, p2, Lk3/e60;->g:Lk3/j40;
 
-    iget-object p1, p1, Lk3/g40;->c:Lk3/qr;
+    iget-object p1, p1, Lk3/j40;->c:Lk3/or;
 
     check-cast p1, Lcom/google/android/gms/internal/ads/zzcso;
 

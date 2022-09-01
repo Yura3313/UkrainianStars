@@ -4,15 +4,17 @@
 
 
 # virtual methods
-.method public abstract B()Lk3/em0;
+.method public abstract a()V
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Landroid/content/Context;",
-            ")",
-            "Lk3/em0<",
-            "Landroid/os/Bundle;",
-            ">;"
+            "Ljava/util/List<",
+            "Ljava/lang/String;",
+            ">;)V"
         }
     .end annotation
+.end method
+
+.method public abstract b()V
 .end method

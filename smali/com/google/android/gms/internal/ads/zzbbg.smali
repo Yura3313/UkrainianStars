@@ -16,15 +16,15 @@
 
 
 # instance fields
-.field public f:Ljava/lang/String;
-
-.field public g:I
+.field public g:Ljava/lang/String;
 
 .field public h:I
 
-.field public i:Z
+.field public i:I
 
 .field public j:Z
+
+.field public k:Z
 
 
 # direct methods
@@ -98,7 +98,7 @@
     invoke-virtual {v0, p2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     .line 3
-    invoke-static {v0, p5, p4}, Landroid/support/v4/media/b;->b(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, p5, p4}, Landroid/support/v4/media/b;->a(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p4
 
@@ -108,19 +108,19 @@
     invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
 
     .line 5
-    iput-object p4, p0, Lcom/google/android/gms/internal/ads/zzbbg;->f:Ljava/lang/String;
+    iput-object p4, p0, Lcom/google/android/gms/internal/ads/zzbbg;->g:Ljava/lang/String;
 
     .line 6
-    iput p1, p0, Lcom/google/android/gms/internal/ads/zzbbg;->g:I
+    iput p1, p0, Lcom/google/android/gms/internal/ads/zzbbg;->h:I
 
     .line 7
-    iput p2, p0, Lcom/google/android/gms/internal/ads/zzbbg;->h:I
+    iput p2, p0, Lcom/google/android/gms/internal/ads/zzbbg;->i:I
 
     .line 8
-    iput-boolean p3, p0, Lcom/google/android/gms/internal/ads/zzbbg;->i:Z
+    iput-boolean p3, p0, Lcom/google/android/gms/internal/ads/zzbbg;->j:Z
 
     .line 9
-    iput-boolean p5, p0, Lcom/google/android/gms/internal/ads/zzbbg;->j:Z
+    iput-boolean p5, p0, Lcom/google/android/gms/internal/ads/zzbbg;->k:Z
 
     return-void
 .end method
@@ -132,19 +132,19 @@
     invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
 
     .line 14
-    iput-object p1, p0, Lcom/google/android/gms/internal/ads/zzbbg;->f:Ljava/lang/String;
+    iput-object p1, p0, Lcom/google/android/gms/internal/ads/zzbbg;->g:Ljava/lang/String;
 
     .line 15
-    iput p2, p0, Lcom/google/android/gms/internal/ads/zzbbg;->g:I
+    iput p2, p0, Lcom/google/android/gms/internal/ads/zzbbg;->h:I
 
     .line 16
-    iput p3, p0, Lcom/google/android/gms/internal/ads/zzbbg;->h:I
+    iput p3, p0, Lcom/google/android/gms/internal/ads/zzbbg;->i:I
 
     .line 17
-    iput-boolean p4, p0, Lcom/google/android/gms/internal/ads/zzbbg;->i:Z
+    iput-boolean p4, p0, Lcom/google/android/gms/internal/ads/zzbbg;->j:Z
 
     .line 18
-    iput-boolean p5, p0, Lcom/google/android/gms/internal/ads/zzbbg;->j:Z
+    iput-boolean p5, p0, Lcom/google/android/gms/internal/ads/zzbbg;->k:Z
 
     return-void
 .end method
@@ -176,7 +176,7 @@
     move-result v5
 
     .line 2
-    iget-object p2, p0, Lcom/google/android/gms/internal/ads/zzbbg;->f:Ljava/lang/String;
+    iget-object p2, p0, Lcom/google/android/gms/internal/ads/zzbbg;->g:Ljava/lang/String;
 
     const/4 v0, 0x2
 
@@ -185,7 +185,7 @@
     invoke-static {p1, v0, p2, v1}, Le2/b;->m(Landroid/os/Parcel;ILjava/lang/String;Z)V
 
     .line 3
-    iget p2, p0, Lcom/google/android/gms/internal/ads/zzbbg;->g:I
+    iget p2, p0, Lcom/google/android/gms/internal/ads/zzbbg;->h:I
 
     const/4 v0, 0x3
 
@@ -198,7 +198,7 @@
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 6
-    iget p2, p0, Lcom/google/android/gms/internal/ads/zzbbg;->h:I
+    iget p2, p0, Lcom/google/android/gms/internal/ads/zzbbg;->i:I
 
     .line 7
     invoke-static {p1, v2, v2}, Le2/b;->s(Landroid/os/Parcel;II)V
@@ -207,7 +207,7 @@
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 9
-    iget-boolean p2, p0, Lcom/google/android/gms/internal/ads/zzbbg;->i:Z
+    iget-boolean p2, p0, Lcom/google/android/gms/internal/ads/zzbbg;->j:Z
 
     const/4 v0, 0x5
 
@@ -218,7 +218,7 @@
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 12
-    iget-boolean v3, p0, Lcom/google/android/gms/internal/ads/zzbbg;->j:Z
+    iget-boolean v3, p0, Lcom/google/android/gms/internal/ads/zzbbg;->k:Z
 
     const/4 v1, 0x6
 

@@ -4,28 +4,41 @@
 
 
 # instance fields
-.field public final a:Landroid/content/Context;
+.field public final a:Ljava/util/HashMap;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/Map<",
+            "Ljava/lang/String;",
+            "Lk3/eh0;",
+            ">;"
+        }
+    .end annotation
+.end field
 
-.field public final b:Lk3/ua;
+.field public final b:Landroid/content/Context;
 
-.field public final c:Lk3/ra;
+.field public final c:Lk3/ia;
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;Lk3/ua;Lk3/ra;)V
-    .locals 0
+.method public constructor <init>(Landroid/content/Context;Lk3/ia;)V
+    .locals 1
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lk3/dh0;->a:Landroid/content/Context;
+    new-instance v0, Ljava/util/HashMap;
+
+    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
+
+    iput-object v0, p0, Lk3/dh0;->a:Ljava/util/HashMap;
 
     .line 3
-    iput-object p2, p0, Lk3/dh0;->b:Lk3/ua;
+    iput-object p1, p0, Lk3/dh0;->b:Landroid/content/Context;
 
     .line 4
-    iput-object p3, p0, Lk3/dh0;->c:Lk3/ra;
+    iput-object p2, p0, Lk3/dh0;->c:Lk3/ia;
 
     return-void
 .end method

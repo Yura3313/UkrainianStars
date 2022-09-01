@@ -69,7 +69,7 @@
     .line 6
     invoke-virtual {v1, v3}, Lw5/a$b;->a(Lw5/d;)Lw5/a$b;
 
-    sget-object v2, Lt2/f;->a:Lt2/f;
+    sget-object v2, Ly5/m;->g:Ly5/m;
 
     .line 7
     iput-object v2, v1, Lw5/a$b;->d:Lw5/b;
@@ -119,7 +119,7 @@
     .line 14
     invoke-virtual {v2, v5}, Lw5/a$b;->a(Lw5/d;)Lw5/a$b;
 
-    sget-object v0, Lef/t;->a:Lef/t;
+    sget-object v0, Lv6/a;->g:Lv6/a;
 
     .line 15
     iput-object v0, v2, Lw5/a$b;->d:Lw5/b;

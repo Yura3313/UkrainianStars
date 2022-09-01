@@ -7,13 +7,13 @@
 
 
 # instance fields
-.field public f:Ljava/lang/String;
+.field public g:Ljava/lang/String;
 
-.field public g:Lt9/c;
+.field public h:Lt9/c;
 
-.field public h:La8/f;
+.field public i:La8/f;
 
-.field public i:Le8/s;
+.field public j:Le8/s;
 
 
 # direct methods
@@ -24,16 +24,16 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lbb/i;->f:Ljava/lang/String;
+    iput-object p1, p0, Lbb/i;->g:Ljava/lang/String;
 
     .line 3
-    iput-object p2, p0, Lbb/i;->g:Lt9/c;
+    iput-object p2, p0, Lbb/i;->h:Lt9/c;
 
     .line 4
-    iput-object p3, p0, Lbb/i;->h:La8/f;
+    iput-object p3, p0, Lbb/i;->i:La8/f;
 
     .line 5
-    iput-object p4, p0, Lbb/i;->i:Le8/s;
+    iput-object p4, p0, Lbb/i;->j:Le8/s;
 
     return-void
 .end method
@@ -55,7 +55,7 @@
     .line 1
     new-instance p2, Lt9/a;
 
-    iget-object v0, p0, Lbb/i;->f:Ljava/lang/String;
+    iget-object v0, p0, Lbb/i;->g:Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -64,13 +64,13 @@
     invoke-direct {p2, v0, v1, v2}, Lt9/a;-><init>(Ljava/lang/String;Ljava/lang/String;Z)V
 
     .line 2
-    iget-object v0, p0, Lbb/i;->g:Lt9/c;
+    iget-object v0, p0, Lbb/i;->h:Lt9/c;
 
     new-instance v1, Lc8/a;
 
-    iget-object v2, p0, Lbb/i;->h:La8/f;
+    iget-object v2, p0, Lbb/i;->i:La8/f;
 
-    iget-object v3, p0, Lbb/i;->i:Le8/s;
+    iget-object v3, p0, Lbb/i;->j:Le8/s;
 
     invoke-direct {v1, v2, v3}, Lc8/a;-><init>(La8/f;Le8/s;)V
 
@@ -90,7 +90,7 @@
 .method public final b()Ljava/lang/String;
     .locals 1
 
-    iget-object v0, p0, Lbb/i;->f:Ljava/lang/String;
+    iget-object v0, p0, Lbb/i;->g:Ljava/lang/String;
 
     return-object v0
 .end method

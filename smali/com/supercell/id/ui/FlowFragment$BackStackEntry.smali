@@ -30,7 +30,7 @@
 
     const-string v0, "mainActivity"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     new-instance v0, Ljava/lang/StringBuilder;
 
@@ -64,7 +64,7 @@
 
     const-string v0, "mainActivity"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     sub-int/2addr p2, p3
 
@@ -77,7 +77,7 @@
     int-to-float p2, p2
 
     .line 1
-    sget p4, La5/g0;->a:F
+    sget p4, La5/e0;->g:F
 
     mul-float p2, p2, p4
 
@@ -116,7 +116,7 @@
     .line 3
     :cond_1
     :goto_0
-    invoke-static {p2}, Lcom/android/billingclient/api/z;->n(F)I
+    invoke-static {p2}, Lcom/android/billingclient/api/y;->i(F)I
 
     move-result p1
 
@@ -130,7 +130,7 @@
 
     const-string v0, "mainActivity"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     sub-int/2addr p2, p3
 
@@ -143,7 +143,7 @@
     int-to-float p2, p2
 
     .line 1
-    sget p4, La5/g0;->a:F
+    sget p4, La5/e0;->g:F
 
     mul-float p2, p2, p4
 
@@ -184,7 +184,7 @@
     .line 3
     :cond_1
     :goto_0
-    invoke-static {p1}, Lcom/android/billingclient/api/z;->n(F)I
+    invoke-static {p1}, Lcom/android/billingclient/api/y;->i(F)I
 
     move-result p1
 
@@ -209,7 +209,7 @@
 
     const-string v0, "mainActivity"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-class p1, Lcom/supercell/id/ui/FlowFragment$b;
 

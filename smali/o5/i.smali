@@ -65,7 +65,7 @@
     move-result-object v0
 
     .line 4
-    sget-object v1, Lcom/google/crypto/tink/shaded/protobuf/n$f;->h:Lcom/google/crypto/tink/shaded/protobuf/n$f;
+    sget-object v1, Lcom/google/crypto/tink/shaded/protobuf/n$f;->i:Lcom/google/crypto/tink/shaded/protobuf/n$f;
 
     .line 5
     invoke-virtual {v0, v1}, Lcom/google/crypto/tink/shaded/protobuf/n;->i(Lcom/google/crypto/tink/shaded/protobuf/n$f;)Ljava/lang/Object;

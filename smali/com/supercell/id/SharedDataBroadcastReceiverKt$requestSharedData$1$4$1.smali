@@ -39,7 +39,7 @@
 
     const/4 v0, 0x3
 
-    invoke-static {p2, p1, v0}, La5/g0;->m(Lke/f;Lre/p;I)Lze/b1;
+    invoke-static {p2, p1, v0}, La5/b0;->j(Lke/f;Lre/p;I)Lze/c1;
 
     return-void
 .end method

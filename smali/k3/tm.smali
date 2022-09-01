@@ -3,14 +3,14 @@
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lk3/sq;
+.implements Lk3/rq;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "Lk3/sq<",
+        "Lk3/rq<",
         "Lk3/wm;",
         ">;"
     }
@@ -42,5 +42,5 @@
 .method public abstract d(Lk3/uo;Lk3/qm;)Lk3/rm;
 .end method
 
-.method public abstract e()Lk3/xq;
+.method public abstract e()Lk3/wq;
 .end method

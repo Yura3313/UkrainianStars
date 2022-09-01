@@ -90,7 +90,7 @@
     iget-object p1, p1, La8/f;->o:Lx7/d;
 
     .line 12
-    sget-object p2, Lx7/d$b;->l:Lx7/d$b;
+    sget-object p2, Lx7/d$b;->m:Lx7/d$b;
 
     invoke-virtual {p1, p2, p0}, Lx7/d;->a(Lx7/d$b;Lx7/a;)V
 
@@ -163,7 +163,7 @@
     .locals 6
 
     .line 1
-    sget-object v0, Lx7/d$b;->l:Lx7/d$b;
+    sget-object v0, Lx7/d$b;->m:Lx7/d$b;
 
     if-eq p1, v0, :cond_0
 
@@ -244,9 +244,9 @@
     move-exception v3
 
     .line 10
-    iget-object v4, v3, Lcom/helpshift/common/exception/RootAPIException;->h:Ld8/a;
+    iget-object v4, v3, Lcom/helpshift/common/exception/RootAPIException;->i:Ld8/a;
 
-    sget-object v5, Ld8/b;->s:Ld8/b;
+    sget-object v5, Ld8/b;->t:Ld8/b;
 
     if-ne v4, v5, :cond_1
 
@@ -399,7 +399,7 @@
     invoke-virtual {v3, v4, v5}, Lk3/s9;->j(Ljava/lang/String;Ljava/io/Serializable;)V
 
     .line 13
-    invoke-static {v0}, Lbc/a;->d(Ljava/util/List;)Z
+    invoke-static {v0}, Lt5/a;->g(Ljava/util/List;)Z
 
     move-result v3
 
@@ -413,7 +413,7 @@
     move-result-object v3
 
     .line 15
-    invoke-static/range {p1 .. p1}, Lmd/g;->g(Li7/c;)Ljava/util/HashMap;
+    invoke-static/range {p1 .. p1}, Lae/v;->g(Li7/c;)Ljava/util/HashMap;
 
     move-result-object v4
 
@@ -423,7 +423,7 @@
     iget-object v0, v1, Lk7/a;->b:Le8/s;
 
     .line 17
-    iget-boolean v7, v2, Li7/c;->l:Z
+    iget-boolean v7, v2, Li7/c;->m:Z
 
     if-eqz v7, :cond_2
 
@@ -431,10 +431,10 @@
 
     .line 18
     :cond_2
-    iget-object v7, v2, Li7/c;->g:Ljava/lang/String;
+    iget-object v7, v2, Li7/c;->h:Ljava/lang/String;
 
     .line 19
-    invoke-static {v7}, Lcom/google/android/play/core/appupdate/g;->b(Ljava/lang/String;)Z
+    invoke-static {v7}, La5/b0;->d(Ljava/lang/String;)Z
 
     move-result v7
 
@@ -451,13 +451,13 @@
     move-result-object v0
 
     .line 21
-    iget-object v7, v2, Li7/c;->g:Ljava/lang/String;
+    iget-object v7, v2, Li7/c;->h:Ljava/lang/String;
 
     .line 22
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 23
-    invoke-static {v7}, Lcom/google/android/play/core/appupdate/g;->b(Ljava/lang/String;)Z
+    invoke-static {v7}, La5/b0;->d(Ljava/lang/String;)Z
 
     move-result v8
 
@@ -470,7 +470,7 @@
 
     .line 24
     :cond_4
-    iget-object v0, v0, Lg7/a;->f:Ljava/lang/Object;
+    iget-object v0, v0, Lg7/a;->g:Ljava/lang/Object;
 
     move-object v8, v0
 
@@ -565,7 +565,7 @@
     const-string v10, "Error in reading legacy analytics eventID with identifier"
 
     .line 31
-    invoke-static {v9, v10, v0}, Landroidx/savedstate/d;->g(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v9, v10, v0}, Le5/i;->i(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
     :try_end_5
     .catchall {:try_start_5 .. :try_end_5} :catchall_1
 
@@ -592,14 +592,14 @@
 
     .line 34
     :goto_4
-    invoke-static {v0}, Lcom/google/android/play/core/appupdate/g;->b(Ljava/lang/String;)Z
+    invoke-static {v0}, La5/b0;->d(Ljava/lang/String;)Z
 
     move-result v7
 
     if-eqz v7, :cond_7
 
     .line 35
-    iget-object v0, v2, Li7/c;->j:Ljava/lang/String;
+    iget-object v0, v2, Li7/c;->k:Ljava/lang/String;
 
     .line 36
     :cond_7
@@ -684,7 +684,7 @@
     move-result-object v3
 
     .line 49
-    invoke-static {v2}, Lcom/google/android/play/core/appupdate/g;->b(Ljava/lang/String;)Z
+    invoke-static {v2}, La5/b0;->d(Ljava/lang/String;)Z
 
     move-result v6
 
@@ -697,7 +697,7 @@
 
     .line 51
     :cond_8
-    invoke-static {v3}, Lcom/google/android/play/core/appupdate/g;->b(Ljava/lang/String;)Z
+    invoke-static {v3}, La5/b0;->d(Ljava/lang/String;)Z
 
     move-result v2
 
@@ -764,7 +764,7 @@
 
     .line 57
     :goto_5
-    invoke-static {v2}, Lcom/google/android/play/core/appupdate/g;->b(Ljava/lang/String;)Z
+    invoke-static {v2}, La5/b0;->d(Ljava/lang/String;)Z
 
     move-result v3
 
@@ -802,7 +802,7 @@
     move-result-object v2
 
     .line 64
-    invoke-static {v2}, Lcom/google/android/play/core/appupdate/g;->b(Ljava/lang/String;)Z
+    invoke-static {v2}, La5/b0;->d(Ljava/lang/String;)Z
 
     move-result v3
 
@@ -842,7 +842,7 @@
     const-string v6, "Exception while getting android_id"
 
     .line 67
-    invoke-static {v3, v6, v0}, Landroidx/savedstate/d;->g(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v3, v6, v0}, Le5/i;->i(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
     .line 68
     :goto_6
@@ -890,9 +890,9 @@
     move-exception v0
 
     .line 74
-    iget-object v2, v0, Lcom/helpshift/common/exception/RootAPIException;->h:Ld8/a;
+    iget-object v2, v0, Lcom/helpshift/common/exception/RootAPIException;->i:Ld8/a;
 
-    sget-object v3, Ld8/b;->s:Ld8/b;
+    sget-object v3, Ld8/b;->t:Ld8/b;
 
     if-ne v2, v3, :cond_d
 
@@ -934,7 +934,7 @@
     iget-object v2, v2, La8/f;->o:Lx7/d;
 
     .line 83
-    sget-object v3, Lx7/d$b;->l:Lx7/d$b;
+    sget-object v3, Lx7/d$b;->m:Lx7/d$b;
 
     invoke-virtual {v0}, Lcom/helpshift/common/exception/RootAPIException;->a()I
 

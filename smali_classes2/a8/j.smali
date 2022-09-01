@@ -79,7 +79,7 @@
 
     iget v3, p0, La8/j;->f:I
 
-    invoke-static {v3}, La8/m;->a(I)Ljava/lang/String;
+    invoke-static {v3}, La8/m;->b(I)Ljava/lang/String;
 
     move-result-object v3
 
@@ -90,7 +90,7 @@
     move-result-object v2
 
     .line 3
-    invoke-static {v1, v2, v0, v0}, Landroidx/savedstate/d;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v1, v2, v0, v0}, Le5/i;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
 
     .line 4
     iget-object v1, p0, La8/j;->c:La8/g;
@@ -112,7 +112,7 @@
     move-exception v1
 
     .line 6
-    iget-object v2, v1, Lcom/helpshift/common/exception/RootAPIException;->h:Ld8/a;
+    iget-object v2, v1, Lcom/helpshift/common/exception/RootAPIException;->i:Ld8/a;
 
     instance-of v2, v2, Ld8/b;
 
@@ -150,7 +150,7 @@
     const-string v3, "Poll stopped via backoff, resetting currentPollingInterval"
 
     .line 11
-    invoke-static {v2, v3, v0, v0}, Landroidx/savedstate/d;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v2, v3, v0, v0}, Le5/i;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
 
     .line 12
     iget-object v0, v1, Lm8/a$a;->a:Lm8/a;
@@ -187,7 +187,7 @@
     .line 2
     iget v1, p0, La8/j;->f:I
 
-    invoke-static {v1}, La8/m;->a(I)Ljava/lang/String;
+    invoke-static {v1}, La8/m;->b(I)Ljava/lang/String;
 
     move-result-object v1
 
@@ -202,7 +202,7 @@
     const/4 v2, 0x0
 
     .line 3
-    invoke-static {v1, v0, v2, v2}, Landroidx/savedstate/d;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v1, v0, v2, v2}, Le5/i;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
 
     .line 4
     iget-boolean v0, p0, La8/j;->e:Z

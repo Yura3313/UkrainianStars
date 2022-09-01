@@ -26,7 +26,7 @@
 
 
 # static fields
-.field public static final k:Lb2/v0;
+.field public static final k:Lb2/u0;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/lang/ThreadLocal<",
@@ -65,7 +65,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/concurrent/atomic/AtomicReference<",
-            "Lb2/l0;",
+            "Lb2/k0;",
             ">;"
         }
     .end annotation
@@ -103,11 +103,11 @@
 .method public static constructor <clinit>()V
     .locals 1
 
-    new-instance v0, Lb2/v0;
+    new-instance v0, Lb2/u0;
 
-    invoke-direct {v0}, Lb2/v0;-><init>()V
+    invoke-direct {v0}, Lb2/u0;-><init>()V
 
-    sput-object v0, Lcom/google/android/gms/common/api/internal/BasePendingResult;->k:Lb2/v0;
+    sput-object v0, Lcom/google/android/gms/common/api/internal/BasePendingResult;->k:Lb2/u0;
 
     return-void
 .end method
@@ -385,7 +385,7 @@
     if-nez v0, :cond_0
 
     .line 3
-    sget-object v0, Lcom/google/android/gms/common/api/Status;->n:Lcom/google/android/gms/common/api/Status;
+    sget-object v0, Lcom/google/android/gms/common/api/Status;->o:Lcom/google/android/gms/common/api/Status;
 
     invoke-virtual {p0, v0}, Lcom/google/android/gms/common/api/internal/BasePendingResult;->e(Lcom/google/android/gms/common/api/Status;)V
     :try_end_0
@@ -395,7 +395,7 @@
 
     .line 4
     :catch_0
-    sget-object v0, Lcom/google/android/gms/common/api/Status;->l:Lcom/google/android/gms/common/api/Status;
+    sget-object v0, Lcom/google/android/gms/common/api/Status;->m:Lcom/google/android/gms/common/api/Status;
 
     invoke-virtual {p0, v0}, Lcom/google/android/gms/common/api/internal/BasePendingResult;->e(Lcom/google/android/gms/common/api/Status;)V
 
@@ -737,12 +737,12 @@
 
     move-result-object v0
 
-    check-cast v0, Lb2/l0;
+    check-cast v0, Lb2/k0;
 
     if-eqz v0, :cond_1
 
     .line 9
-    invoke-interface {v0}, Lb2/l0;->a()V
+    invoke-interface {v0}, Lb2/k0;->a()V
 
     .line 10
     :cond_1

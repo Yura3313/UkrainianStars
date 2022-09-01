@@ -74,14 +74,14 @@
     iget-object v0, p0, Li7/h;->c:Li7/c;
 
     .line 2
-    iget-object v0, v0, Li7/c;->p:Li7/i;
+    iget-object v0, v0, Li7/c;->q:Li7/i;
 
     .line 3
-    sget-object v1, Li7/i;->h:Li7/i;
+    sget-object v1, Li7/i;->i:Li7/i;
 
     if-eq v0, v1, :cond_1
 
-    sget-object v1, Li7/i;->g:Li7/i;
+    sget-object v1, Li7/i;->h:Li7/i;
 
     if-ne v0, v1, :cond_0
 
@@ -105,9 +105,9 @@
 .method public final declared-synchronized b()V
     .locals 6
 
-    sget-object v0, Li7/i;->h:Li7/i;
+    sget-object v0, Li7/i;->i:Li7/i;
 
-    sget-object v1, Li7/i;->i:Li7/i;
+    sget-object v1, Li7/i;->j:Li7/i;
 
     monitor-enter p0
 
@@ -116,10 +116,10 @@
     iget-object v2, p0, Li7/h;->c:Li7/c;
 
     .line 2
-    iget-object v2, v2, Li7/c;->p:Li7/i;
+    iget-object v2, v2, Li7/c;->q:Li7/i;
 
     .line 3
-    sget-object v3, Li7/i;->f:Li7/i;
+    sget-object v3, Li7/i;->g:Li7/i;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -135,7 +135,7 @@
     .line 5
     :cond_0
     :try_start_1
-    sget-object v3, Li7/i;->g:Li7/i;
+    sget-object v3, Li7/i;->h:Li7/i;
 
     invoke-virtual {p0, v2, v3}, Li7/h;->c(Li7/i;Li7/i;)V
     :try_end_1
@@ -198,7 +198,7 @@
     iget-object v1, p0, Li7/h;->c:Li7/c;
 
     .line 12
-    iget-object v1, v1, Li7/c;->f:Ljava/lang/Long;
+    iget-object v1, v1, Li7/c;->g:Ljava/lang/Long;
 
     .line 13
     invoke-virtual {v1}, Ljava/lang/Long;->longValue()J
@@ -213,9 +213,9 @@
 
     .line 14
     :cond_1
-    iget-object v0, v3, Lcom/helpshift/common/exception/RootAPIException;->h:Ld8/a;
+    iget-object v0, v3, Lcom/helpshift/common/exception/RootAPIException;->i:Ld8/a;
 
-    sget-object v4, Ld8/b;->s:Ld8/b;
+    sget-object v4, Ld8/b;->t:Ld8/b;
 
     if-ne v0, v4, :cond_2
 

@@ -4,15 +4,15 @@
 
 
 # instance fields
-.field public final f:Landroid/graphics/drawable/Drawable;
+.field public final g:Landroid/graphics/drawable/Drawable;
 
-.field public final g:Landroid/net/Uri;
+.field public final h:Landroid/net/Uri;
 
-.field public final h:D
-
-.field public final i:I
+.field public final i:D
 
 .field public final j:I
+
+.field public final k:I
 
 
 # direct methods
@@ -23,19 +23,19 @@
     invoke-direct {p0}, Lcom/google/android/gms/internal/ads/zzadv;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lcom/google/android/gms/internal/ads/zzadi;->f:Landroid/graphics/drawable/Drawable;
+    iput-object p1, p0, Lcom/google/android/gms/internal/ads/zzadi;->g:Landroid/graphics/drawable/Drawable;
 
     .line 3
-    iput-object p2, p0, Lcom/google/android/gms/internal/ads/zzadi;->g:Landroid/net/Uri;
+    iput-object p2, p0, Lcom/google/android/gms/internal/ads/zzadi;->h:Landroid/net/Uri;
 
     .line 4
-    iput-wide p3, p0, Lcom/google/android/gms/internal/ads/zzadi;->h:D
+    iput-wide p3, p0, Lcom/google/android/gms/internal/ads/zzadi;->i:D
 
     .line 5
-    iput p5, p0, Lcom/google/android/gms/internal/ads/zzadi;->i:I
+    iput p5, p0, Lcom/google/android/gms/internal/ads/zzadi;->j:I
 
     .line 6
-    iput p6, p0, Lcom/google/android/gms/internal/ads/zzadi;->j:I
+    iput p6, p0, Lcom/google/android/gms/internal/ads/zzadi;->k:I
 
     return-void
 .end method
@@ -45,7 +45,7 @@
 .method public final B4()D
     .locals 2
 
-    iget-wide v0, p0, Lcom/google/android/gms/internal/ads/zzadi;->h:D
+    iget-wide v0, p0, Lcom/google/android/gms/internal/ads/zzadi;->i:D
 
     return-wide v0
 .end method
@@ -59,7 +59,7 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/gms/internal/ads/zzadi;->f:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Lcom/google/android/gms/internal/ads/zzadi;->g:Landroid/graphics/drawable/Drawable;
 
     .line 2
     new-instance v1, Lcom/google/android/gms/dynamic/ObjectWrapper;
@@ -77,7 +77,7 @@
         }
     .end annotation
 
-    iget-object v0, p0, Lcom/google/android/gms/internal/ads/zzadi;->g:Landroid/net/Uri;
+    iget-object v0, p0, Lcom/google/android/gms/internal/ads/zzadi;->h:Landroid/net/Uri;
 
     return-object v0
 .end method
@@ -85,7 +85,7 @@
 .method public final getHeight()I
     .locals 1
 
-    iget v0, p0, Lcom/google/android/gms/internal/ads/zzadi;->j:I
+    iget v0, p0, Lcom/google/android/gms/internal/ads/zzadi;->k:I
 
     return v0
 .end method
@@ -93,7 +93,7 @@
 .method public final getWidth()I
     .locals 1
 
-    iget v0, p0, Lcom/google/android/gms/internal/ads/zzadi;->i:I
+    iget v0, p0, Lcom/google/android/gms/internal/ads/zzadi;->j:I
 
     return v0
 .end method

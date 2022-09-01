@@ -366,12 +366,12 @@
     return v0
 .end method
 
-.method public final f(Ljava/lang/Object;Lr3/x4;)V
+.method public final f(Ljava/lang/Object;Lr3/y4;)V
     .locals 5
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TT;",
-            "Lr3/x4;",
+            "Lr3/y4;",
             ")V"
         }
     .end annotation
@@ -417,11 +417,11 @@
     check-cast v2, Lr3/d2;
 
     .line 6
-    invoke-interface {v2}, Lr3/d2;->T()Lr3/w4;
+    invoke-interface {v2}, Lr3/d2;->T()Lr3/x4;
 
     move-result-object v3
 
-    sget-object v4, Lr3/w4;->o:Lr3/w4;
+    sget-object v4, Lr3/x4;->p:Lr3/x4;
 
     if-ne v3, v4, :cond_1
 
@@ -450,7 +450,7 @@
     check-cast v1, Lr3/o2;
 
     .line 9
-    iget-object v1, v1, Lr3/o2;->f:Ljava/util/Map$Entry;
+    iget-object v1, v1, Lr3/o2;->g:Ljava/util/Map$Entry;
 
     invoke-interface {v1}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
@@ -509,7 +509,7 @@
 
     move-result-object p1
 
-    invoke-virtual {v0, p1, p2}, Lr3/e4;->b(Ljava/lang/Object;Lr3/x4;)V
+    invoke-virtual {v0, p1, p2}, Lr3/e4;->b(Ljava/lang/Object;Lr3/y4;)V
 
     return-void
 .end method

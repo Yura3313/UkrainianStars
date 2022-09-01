@@ -24,7 +24,7 @@
 
     const-string v0, "profile"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-direct {p0}, Lbe/y$a;-><init>()V
 
@@ -50,7 +50,7 @@
 
     iget-object p1, p1, Lbe/y$a$c;->a:Lcom/supercell/id/model/IdProfile;
 
-    invoke-static {v0, p1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, p1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 

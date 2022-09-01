@@ -55,15 +55,15 @@
     iget-object v0, p0, Lf9/i$f;->b:Lf9/i;
 
     .line 4
-    iget-object v1, v0, Lf9/i;->h:Lo8/y;
+    iget-object v1, v0, Lf9/i;->h:Lo8/z;
 
     .line 5
-    check-cast v1, Lo8/z;
+    check-cast v1, Lo8/b0;
 
     .line 6
-    iget-object v2, v1, Lo8/z;->A:Lp8/c;
+    iget-object v2, v1, Lo8/b0;->B:Lp8/d;
 
-    iget v2, v2, Lp8/c;->k:I
+    iget v2, v2, Lp8/d;->l:I
 
     const/4 v3, 0x1
 
@@ -91,14 +91,14 @@
 
     iget-object v3, v0, Lf9/i;->o:La8/f;
 
-    invoke-direct {v2, v3, v1, v0}, Lf9/j0;-><init>(La8/f;Lo8/z;Lf9/k0;)V
+    invoke-direct {v2, v3, v1, v0}, Lf9/j0;-><init>(La8/f;Lo8/b0;Lf9/k0;)V
 
     iput-object v2, v0, Lf9/i;->g:Lf9/j0;
 
     .line 12
     new-instance v2, Lf9/q;
 
-    invoke-direct {v2, v0, v1}, Lf9/q;-><init>(Lf9/i;Lo8/z;)V
+    invoke-direct {v2, v0, v1}, Lf9/q;-><init>(Lf9/i;Lo8/b0;)V
 
     invoke-virtual {v3, v2}, La8/f;->g(La8/g;)V
 

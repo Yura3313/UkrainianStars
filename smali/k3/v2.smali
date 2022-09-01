@@ -3,14 +3,14 @@
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lk3/y2;
+.implements Lk3/x2;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "Lk3/y2<",
+        "Lk3/x2<",
         "Lk3/gh;",
         ">;"
     }
@@ -29,29 +29,48 @@
 
 # virtual methods
 .method public final synthetic c(Ljava/lang/Object;Ljava/util/Map;)V
-    .locals 1
+    .locals 2
 
     .line 1
     check-cast p1, Lk3/gh;
 
-    const-string v0, "disabled"
-
     .line 2
-    invoke-interface {p2, v0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {p2}, Ljava/util/Map;->keySet()Ljava/util/Set;
+
+    move-result-object v0
+
+    const-string v1, "start"
+
+    invoke-interface {v0, v1}, Ljava/util/Set;->contains(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    const/4 v0, 0x1
+
+    .line 3
+    invoke-interface {p1, v0}, Lk3/gh;->i0(Z)V
+
+    .line 4
+    :cond_0
+    invoke-interface {p2}, Ljava/util/Map;->keySet()Ljava/util/Set;
 
     move-result-object p2
 
-    check-cast p2, Ljava/lang/String;
+    const-string v0, "stop"
 
-    .line 3
-    invoke-static {p2}, Ljava/lang/Boolean;->parseBoolean(Ljava/lang/String;)Z
+    invoke-interface {p2, v0}, Ljava/util/Set;->contains(Ljava/lang/Object;)Z
 
     move-result p2
 
-    xor-int/lit8 p2, p2, 0x1
+    if-eqz p2, :cond_1
 
-    .line 4
-    invoke-interface {p1, p2}, Lk3/gh;->a0(Z)V
+    const/4 p2, 0x0
 
+    .line 5
+    invoke-interface {p1, p2}, Lk3/gh;->i0(Z)V
+
+    :cond_1
     return-void
 .end method

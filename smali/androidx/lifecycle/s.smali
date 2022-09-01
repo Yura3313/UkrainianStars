@@ -13,11 +13,11 @@
 
 
 # static fields
-.field public static final synthetic g:I
+.field public static final synthetic h:I
 
 
 # instance fields
-.field public f:Landroidx/lifecycle/s$a;
+.field public g:Landroidx/lifecycle/s$a;
 
 
 # direct methods
@@ -176,7 +176,7 @@
     const/4 v0, 0x0
 
     .line 3
-    iput-object v0, p0, Landroidx/lifecycle/s;->f:Landroidx/lifecycle/s$a;
+    iput-object v0, p0, Landroidx/lifecycle/s;->g:Landroidx/lifecycle/s$a;
 
     return-void
 .end method
@@ -202,7 +202,7 @@
     invoke-super {p0}, Landroid/app/Fragment;->onResume()V
 
     .line 2
-    iget-object v0, p0, Landroidx/lifecycle/s;->f:Landroidx/lifecycle/s$a;
+    iget-object v0, p0, Landroidx/lifecycle/s;->g:Landroidx/lifecycle/s$a;
 
     if-eqz v0, :cond_0
 
@@ -230,7 +230,7 @@
     invoke-super {p0}, Landroid/app/Fragment;->onStart()V
 
     .line 2
-    iget-object v0, p0, Landroidx/lifecycle/s;->f:Landroidx/lifecycle/s$a;
+    iget-object v0, p0, Landroidx/lifecycle/s;->g:Landroidx/lifecycle/s$a;
 
     if-eqz v0, :cond_0
 

@@ -25,7 +25,7 @@
     move-result-object v1
 
     .line 2
-    iget v2, p0, Landroidx/fragment/app/k;->f0:I
+    iget v2, p0, Landroidx/fragment/app/k;->g0:I
 
     .line 3
     invoke-direct {v0, v1, v2}, Lcom/google/android/material/bottomsheet/a;-><init>(Landroid/content/Context;I)V

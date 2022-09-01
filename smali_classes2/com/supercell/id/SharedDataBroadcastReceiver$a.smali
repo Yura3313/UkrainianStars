@@ -1,5 +1,5 @@
 .class public final Lcom/supercell/id/SharedDataBroadcastReceiver$a;
-.super Lse/h;
+.super Lse/i;
 .source "SharedDataBroadcastReceiver.kt"
 
 # interfaces
@@ -18,44 +18,44 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/l<",
         "Ljava/util/Map<",
         "Ljava/lang/String;",
         "+",
         "Ljava/lang/String;",
         ">;",
-        "Lie/h;",
+        "Lie/i;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic f:Ljava/lang/String;
-
 .field public final synthetic g:Ljava/lang/String;
 
-.field public final synthetic h:Landroid/content/Context;
+.field public final synthetic h:Ljava/lang/String;
 
-.field public final synthetic i:Landroid/app/PendingIntent;
+.field public final synthetic i:Landroid/content/Context;
+
+.field public final synthetic j:Landroid/app/PendingIntent;
 
 
 # direct methods
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Landroid/content/Context;Landroid/app/PendingIntent;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/SharedDataBroadcastReceiver$a;->f:Ljava/lang/String;
+    iput-object p1, p0, Lcom/supercell/id/SharedDataBroadcastReceiver$a;->g:Ljava/lang/String;
 
-    iput-object p2, p0, Lcom/supercell/id/SharedDataBroadcastReceiver$a;->g:Ljava/lang/String;
+    iput-object p2, p0, Lcom/supercell/id/SharedDataBroadcastReceiver$a;->h:Ljava/lang/String;
 
-    iput-object p3, p0, Lcom/supercell/id/SharedDataBroadcastReceiver$a;->h:Landroid/content/Context;
+    iput-object p3, p0, Lcom/supercell/id/SharedDataBroadcastReceiver$a;->i:Landroid/content/Context;
 
-    iput-object p4, p0, Lcom/supercell/id/SharedDataBroadcastReceiver$a;->i:Landroid/app/PendingIntent;
+    iput-object p4, p0, Lcom/supercell/id/SharedDataBroadcastReceiver$a;->j:Landroid/app/PendingIntent;
 
     const/4 p1, 0x1
 
-    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -71,10 +71,10 @@
     const-string v0, "whitelist"
 
     .line 2
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 3
-    iget-object v0, p0, Lcom/supercell/id/SharedDataBroadcastReceiver$a;->f:Ljava/lang/String;
+    iget-object v0, p0, Lcom/supercell/id/SharedDataBroadcastReceiver$a;->g:Ljava/lang/String;
 
     invoke-interface {p1, v0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -85,9 +85,9 @@
     if-eqz p1, :cond_3
 
     .line 4
-    iget-object v0, p0, Lcom/supercell/id/SharedDataBroadcastReceiver$a;->h:Landroid/content/Context;
+    iget-object v0, p0, Lcom/supercell/id/SharedDataBroadcastReceiver$a;->i:Landroid/content/Context;
 
-    iget-object v1, p0, Lcom/supercell/id/SharedDataBroadcastReceiver$a;->f:Ljava/lang/String;
+    iget-object v1, p0, Lcom/supercell/id/SharedDataBroadcastReceiver$a;->g:Ljava/lang/String;
 
     invoke-static {v0, v1, p1}, Lpc/e;->a(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)Z
 
@@ -95,7 +95,7 @@
 
     if-eqz p1, :cond_3
 
-    iget-object p1, p0, Lcom/supercell/id/SharedDataBroadcastReceiver$a;->g:Ljava/lang/String;
+    iget-object p1, p0, Lcom/supercell/id/SharedDataBroadcastReceiver$a;->h:Ljava/lang/String;
 
     if-nez p1, :cond_0
 
@@ -103,27 +103,27 @@
 
     .line 5
     :cond_0
-    sget-object p1, Lae/j2;->b:Lae/j2$a;
+    sget-object p1, Lae/i2;->b:Lae/i2$a;
 
-    iget-object v0, p0, Lcom/supercell/id/SharedDataBroadcastReceiver$a;->h:Landroid/content/Context;
+    iget-object v0, p0, Lcom/supercell/id/SharedDataBroadcastReceiver$a;->i:Landroid/content/Context;
 
-    invoke-virtual {p1, v0}, Lae/k2;->a(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {p1, v0}, Lae/j2;->a(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
 
-    check-cast p1, Lae/j2;
+    check-cast p1, Lae/i2;
 
-    iget-object v0, p0, Lcom/supercell/id/SharedDataBroadcastReceiver$a;->g:Ljava/lang/String;
+    iget-object v0, p0, Lcom/supercell/id/SharedDataBroadcastReceiver$a;->h:Ljava/lang/String;
 
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     const-string v1, "key"
 
     .line 6
-    invoke-static {v0, v1}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 7
-    iget-object p1, p1, Lae/j2;->a:Lae/p;
+    iget-object p1, p1, Lae/i2;->a:Lae/p;
 
     if-eqz p1, :cond_1
 
@@ -140,9 +140,9 @@
     if-eqz p1, :cond_2
 
     .line 8
-    iget-object v0, p0, Lcom/supercell/id/SharedDataBroadcastReceiver$a;->i:Landroid/app/PendingIntent;
+    iget-object v0, p0, Lcom/supercell/id/SharedDataBroadcastReceiver$a;->j:Landroid/app/PendingIntent;
 
-    iget-object v1, p0, Lcom/supercell/id/SharedDataBroadcastReceiver$a;->h:Landroid/content/Context;
+    iget-object v1, p0, Lcom/supercell/id/SharedDataBroadcastReceiver$a;->i:Landroid/content/Context;
 
     const/4 v2, 0x0
 
@@ -162,7 +162,7 @@
 
     .line 11
     :cond_2
-    iget-object p1, p0, Lcom/supercell/id/SharedDataBroadcastReceiver$a;->i:Landroid/app/PendingIntent;
+    iget-object p1, p0, Lcom/supercell/id/SharedDataBroadcastReceiver$a;->j:Landroid/app/PendingIntent;
 
     invoke-virtual {p1}, Landroid/app/PendingIntent;->send()V
 
@@ -171,13 +171,13 @@
     .line 12
     :cond_3
     :goto_1
-    iget-object p1, p0, Lcom/supercell/id/SharedDataBroadcastReceiver$a;->i:Landroid/app/PendingIntent;
+    iget-object p1, p0, Lcom/supercell/id/SharedDataBroadcastReceiver$a;->j:Landroid/app/PendingIntent;
 
     invoke-virtual {p1}, Landroid/app/PendingIntent;->send()V
 
     .line 13
     :goto_2
-    sget-object p1, Lie/h;->a:Lie/h;
+    sget-object p1, Lie/i;->a:Lie/i;
 
     return-object p1
 .end method

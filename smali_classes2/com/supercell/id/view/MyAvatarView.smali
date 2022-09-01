@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field public final f:Lie/f;
+.field public final g:Lie/g;
 
-.field public final g:Lie/f;
+.field public final h:Lie/g;
 
 
 # direct methods
@@ -15,7 +15,7 @@
 
     const-string v0, "context"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     invoke-direct {p0, p1, p2}, Landroid/widget/FrameLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
@@ -30,26 +30,26 @@
 
     invoke-direct {p1, p0}, Lcom/supercell/id/view/MyAvatarView$a;-><init>(Lcom/supercell/id/view/MyAvatarView;)V
 
-    invoke-static {p1}, La5/r;->d(Lre/a;)Lie/c;
+    invoke-static {p1}, Ld2/u;->c(Lre/a;)Lie/c;
 
     move-result-object p1
 
-    check-cast p1, Lie/f;
+    check-cast p1, Lie/g;
 
-    iput-object p1, p0, Lcom/supercell/id/view/MyAvatarView;->f:Lie/f;
+    iput-object p1, p0, Lcom/supercell/id/view/MyAvatarView;->g:Lie/g;
 
     .line 4
     new-instance p1, Lcom/supercell/id/view/MyAvatarView$b;
 
     invoke-direct {p1, p0}, Lcom/supercell/id/view/MyAvatarView$b;-><init>(Lcom/supercell/id/view/MyAvatarView;)V
 
-    invoke-static {p1}, La5/r;->d(Lre/a;)Lie/c;
+    invoke-static {p1}, Ld2/u;->c(Lre/a;)Lie/c;
 
     move-result-object p1
 
-    check-cast p1, Lie/f;
+    check-cast p1, Lie/g;
 
-    iput-object p1, p0, Lcom/supercell/id/view/MyAvatarView;->g:Lie/f;
+    iput-object p1, p0, Lcom/supercell/id/view/MyAvatarView;->h:Lie/g;
 
     return-void
 .end method
@@ -66,9 +66,9 @@
 
     const-string v2, "imageView"
 
-    invoke-static {v1, v2}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    sget-object v2, Lud/f0;->a:Ljava/util/Map;
+    sget-object v2, Lud/d0;->a:Ljava/util/Map;
 
     .line 2
     instance-of v2, p1, Lcom/supercell/id/model/MyProfileImage$Avatar;
@@ -90,7 +90,7 @@
     if-eqz v2, :cond_1
 
     .line 3
-    iget-object v2, v2, Lcom/supercell/id/model/MyProfileImage$Avatar;->f:Ljava/lang/String;
+    iget-object v2, v2, Lcom/supercell/id/model/MyProfileImage$Avatar;->g:Ljava/lang/String;
 
     goto :goto_1
 
@@ -116,7 +116,7 @@
     if-eqz v4, :cond_3
 
     .line 5
-    iget-object v4, v4, Lcom/supercell/id/model/MyProfileImage$Image;->f:Ljava/lang/String;
+    iget-object v4, v4, Lcom/supercell/id/model/MyProfileImage$Image;->g:Ljava/lang/String;
 
     goto :goto_3
 
@@ -137,11 +137,11 @@
     if-eqz p1, :cond_5
 
     .line 7
-    iget-object v3, p1, Lcom/supercell/id/model/MyProfileImage$UnderReviewImage;->f:Ljava/lang/String;
+    iget-object v3, p1, Lcom/supercell/id/model/MyProfileImage$UnderReviewImage;->g:Ljava/lang/String;
 
     .line 8
     :cond_5
-    invoke-static {v1, v2, v4, v3, v0}, Lud/f0;->a(Landroid/widget/ImageView;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)V
+    invoke-static {v1, v2, v4, v3, v0}, Lud/d0;->a(Landroid/widget/ImageView;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)V
 
     .line 9
     invoke-direct {p0}, Lcom/supercell/id/view/MyAvatarView;->getUnderReviewView()Landroid/view/ViewGroup;
@@ -150,7 +150,7 @@
 
     const-string p1, "underReviewView"
 
-    invoke-static {p0, p1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, p1}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     if-eqz v5, :cond_6
 
@@ -170,9 +170,9 @@
 .method private final getImageView()Lcom/google/android/material/imageview/ShapeableImageView;
     .locals 1
 
-    iget-object v0, p0, Lcom/supercell/id/view/MyAvatarView;->f:Lie/f;
+    iget-object v0, p0, Lcom/supercell/id/view/MyAvatarView;->g:Lie/g;
 
-    invoke-virtual {v0}, Lie/f;->getValue()Ljava/lang/Object;
+    invoke-virtual {v0}, Lie/g;->getValue()Ljava/lang/Object;
 
     move-result-object v0
 
@@ -184,9 +184,9 @@
 .method private final getUnderReviewView()Landroid/view/ViewGroup;
     .locals 1
 
-    iget-object v0, p0, Lcom/supercell/id/view/MyAvatarView;->g:Lie/f;
+    iget-object v0, p0, Lcom/supercell/id/view/MyAvatarView;->h:Lie/g;
 
-    invoke-virtual {v0}, Lie/f;->getValue()Ljava/lang/Object;
+    invoke-virtual {v0}, Lie/g;->getValue()Ljava/lang/Object;
 
     move-result-object v0
 

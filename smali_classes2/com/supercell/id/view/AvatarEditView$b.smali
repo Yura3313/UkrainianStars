@@ -23,13 +23,13 @@
 
 
 # static fields
-.field public static final enum f:Lcom/supercell/id/view/AvatarEditView$b;
-
 .field public static final enum g:Lcom/supercell/id/view/AvatarEditView$b;
 
 .field public static final enum h:Lcom/supercell/id/view/AvatarEditView$b;
 
-.field public static final synthetic i:[Lcom/supercell/id/view/AvatarEditView$b;
+.field public static final enum i:Lcom/supercell/id/view/AvatarEditView$b;
+
+.field public static final synthetic j:[Lcom/supercell/id/view/AvatarEditView$b;
 
 
 # direct methods
@@ -48,7 +48,7 @@
 
     invoke-direct {v1, v2, v3}, Lcom/supercell/id/view/AvatarEditView$b;-><init>(Ljava/lang/String;I)V
 
-    sput-object v1, Lcom/supercell/id/view/AvatarEditView$b;->f:Lcom/supercell/id/view/AvatarEditView$b;
+    sput-object v1, Lcom/supercell/id/view/AvatarEditView$b;->g:Lcom/supercell/id/view/AvatarEditView$b;
 
     aput-object v1, v0, v3
 
@@ -60,7 +60,7 @@
 
     invoke-direct {v1, v2, v3}, Lcom/supercell/id/view/AvatarEditView$b;-><init>(Ljava/lang/String;I)V
 
-    sput-object v1, Lcom/supercell/id/view/AvatarEditView$b;->g:Lcom/supercell/id/view/AvatarEditView$b;
+    sput-object v1, Lcom/supercell/id/view/AvatarEditView$b;->h:Lcom/supercell/id/view/AvatarEditView$b;
 
     aput-object v1, v0, v3
 
@@ -72,11 +72,11 @@
 
     invoke-direct {v1, v2, v3}, Lcom/supercell/id/view/AvatarEditView$b;-><init>(Ljava/lang/String;I)V
 
-    sput-object v1, Lcom/supercell/id/view/AvatarEditView$b;->h:Lcom/supercell/id/view/AvatarEditView$b;
+    sput-object v1, Lcom/supercell/id/view/AvatarEditView$b;->i:Lcom/supercell/id/view/AvatarEditView$b;
 
     aput-object v1, v0, v3
 
-    sput-object v0, Lcom/supercell/id/view/AvatarEditView$b;->i:[Lcom/supercell/id/view/AvatarEditView$b;
+    sput-object v0, Lcom/supercell/id/view/AvatarEditView$b;->j:[Lcom/supercell/id/view/AvatarEditView$b;
 
     return-void
 .end method
@@ -111,7 +111,7 @@
 .method public static values()[Lcom/supercell/id/view/AvatarEditView$b;
     .locals 1
 
-    sget-object v0, Lcom/supercell/id/view/AvatarEditView$b;->i:[Lcom/supercell/id/view/AvatarEditView$b;
+    sget-object v0, Lcom/supercell/id/view/AvatarEditView$b;->j:[Lcom/supercell/id/view/AvatarEditView$b;
 
     invoke-virtual {v0}, [Lcom/supercell/id/view/AvatarEditView$b;->clone()Ljava/lang/Object;
 

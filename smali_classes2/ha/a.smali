@@ -57,7 +57,7 @@
     const-string v4, "Target SDK version not found"
 
     .line 4
-    invoke-static {v3, v4, v0, v2}, Landroidx/savedstate/d;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v3, v4, v0, v2}, Le5/i;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
 
     const/4 v0, 0x0
 
@@ -81,7 +81,7 @@
     if-nez v0, :cond_4
 
     .line 7
-    sget-object v0, Lcom/helpshift/util/u;->c:Le7/g;
+    sget-object v0, Lcom/helpshift/util/t;->c:Le7/g;
 
     .line 8
     iget-object v0, v0, Le7/g;->a:Lj8/b;
@@ -94,7 +94,7 @@
     move-result-object v0
 
     .line 10
-    invoke-static {v0}, Ll2/g;->d(Ljava/lang/CharSequence;)Z
+    invoke-static {v0}, Ll2/p;->h(Ljava/lang/CharSequence;)Z
 
     move-result v1
 
@@ -105,7 +105,7 @@
     .line 11
     iget-object v0, p0, Lha/a;->a:Landroid/content/Context;
 
-    invoke-static {v0}, Lcom/android/billingclient/api/c0;->f(Landroid/content/Context;)Landroid/app/NotificationManager;
+    invoke-static {v0}, Lcom/android/billingclient/api/b0;->g(Landroid/content/Context;)Landroid/app/NotificationManager;
 
     move-result-object v0
 
@@ -155,10 +155,10 @@
     invoke-virtual {v4, v3}, Landroid/app/NotificationChannel;->setDescription(Ljava/lang/String;)V
 
     .line 17
-    sget-object v1, Lcom/helpshift/util/u;->b:Landroid/content/Context;
+    sget-object v1, Lcom/helpshift/util/t;->b:Landroid/content/Context;
 
     .line 18
-    sget-object v3, Lcom/helpshift/util/u;->c:Le7/g;
+    sget-object v3, Lcom/helpshift/util/t;->c:Le7/g;
 
     .line 19
     iget-object v3, v3, Le7/g;->a:Lj8/b;
@@ -201,7 +201,7 @@
     :cond_2
     iget-object v1, p0, Lha/a;->a:Landroid/content/Context;
 
-    invoke-static {v1}, Lcom/android/billingclient/api/c0;->f(Landroid/content/Context;)Landroid/app/NotificationManager;
+    invoke-static {v1}, Lcom/android/billingclient/api/b0;->g(Landroid/content/Context;)Landroid/app/NotificationManager;
 
     move-result-object v1
 
@@ -276,7 +276,7 @@
     const-string v4, "Target SDK version not found"
 
     .line 4
-    invoke-static {v3, v4, v0, v2}, Landroidx/savedstate/d;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v3, v4, v0, v2}, Le5/i;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
 
     const/4 v0, 0x0
 
@@ -288,7 +288,7 @@
     .line 5
     iget-object v1, p0, Lha/a;->a:Landroid/content/Context;
 
-    invoke-static {v1}, Lcom/android/billingclient/api/c0;->f(Landroid/content/Context;)Landroid/app/NotificationManager;
+    invoke-static {v1}, Lcom/android/billingclient/api/b0;->g(Landroid/content/Context;)Landroid/app/NotificationManager;
 
     move-result-object v1
 

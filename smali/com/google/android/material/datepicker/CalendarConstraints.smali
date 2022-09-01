@@ -28,17 +28,17 @@
 
 
 # instance fields
-.field public final f:Lcom/google/android/material/datepicker/Month;
-
 .field public final g:Lcom/google/android/material/datepicker/Month;
 
 .field public final h:Lcom/google/android/material/datepicker/Month;
 
-.field public final i:Lcom/google/android/material/datepicker/CalendarConstraints$DateValidator;
+.field public final i:Lcom/google/android/material/datepicker/Month;
 
-.field public final j:I
+.field public final j:Lcom/google/android/material/datepicker/CalendarConstraints$DateValidator;
 
 .field public final k:I
+
+.field public final l:I
 
 
 # direct methods
@@ -61,21 +61,21 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lcom/google/android/material/datepicker/CalendarConstraints;->f:Lcom/google/android/material/datepicker/Month;
+    iput-object p1, p0, Lcom/google/android/material/datepicker/CalendarConstraints;->g:Lcom/google/android/material/datepicker/Month;
 
     .line 3
-    iput-object p2, p0, Lcom/google/android/material/datepicker/CalendarConstraints;->g:Lcom/google/android/material/datepicker/Month;
+    iput-object p2, p0, Lcom/google/android/material/datepicker/CalendarConstraints;->h:Lcom/google/android/material/datepicker/Month;
 
     .line 4
-    iput-object p3, p0, Lcom/google/android/material/datepicker/CalendarConstraints;->h:Lcom/google/android/material/datepicker/Month;
+    iput-object p3, p0, Lcom/google/android/material/datepicker/CalendarConstraints;->i:Lcom/google/android/material/datepicker/Month;
 
     .line 5
-    iput-object p4, p0, Lcom/google/android/material/datepicker/CalendarConstraints;->i:Lcom/google/android/material/datepicker/CalendarConstraints$DateValidator;
+    iput-object p4, p0, Lcom/google/android/material/datepicker/CalendarConstraints;->j:Lcom/google/android/material/datepicker/CalendarConstraints$DateValidator;
 
     .line 6
-    iget-object p4, p1, Lcom/google/android/material/datepicker/Month;->f:Ljava/util/Calendar;
+    iget-object p4, p1, Lcom/google/android/material/datepicker/Month;->g:Ljava/util/Calendar;
 
-    iget-object v0, p3, Lcom/google/android/material/datepicker/Month;->f:Ljava/util/Calendar;
+    iget-object v0, p3, Lcom/google/android/material/datepicker/Month;->g:Ljava/util/Calendar;
 
     invoke-virtual {p4, v0}, Ljava/util/Calendar;->compareTo(Ljava/util/Calendar;)I
 
@@ -84,9 +84,9 @@
     if-gtz p4, :cond_1
 
     .line 7
-    iget-object p3, p3, Lcom/google/android/material/datepicker/Month;->f:Ljava/util/Calendar;
+    iget-object p3, p3, Lcom/google/android/material/datepicker/Month;->g:Ljava/util/Calendar;
 
-    iget-object p4, p2, Lcom/google/android/material/datepicker/Month;->f:Ljava/util/Calendar;
+    iget-object p4, p2, Lcom/google/android/material/datepicker/Month;->g:Ljava/util/Calendar;
 
     invoke-virtual {p3, p4}, Ljava/util/Calendar;->compareTo(Ljava/util/Calendar;)I
 
@@ -101,18 +101,18 @@
 
     add-int/lit8 p3, p3, 0x1
 
-    iput p3, p0, Lcom/google/android/material/datepicker/CalendarConstraints;->k:I
+    iput p3, p0, Lcom/google/android/material/datepicker/CalendarConstraints;->l:I
 
     .line 9
-    iget p2, p2, Lcom/google/android/material/datepicker/Month;->i:I
+    iget p2, p2, Lcom/google/android/material/datepicker/Month;->j:I
 
-    iget p1, p1, Lcom/google/android/material/datepicker/Month;->i:I
+    iget p1, p1, Lcom/google/android/material/datepicker/Month;->j:I
 
     sub-int/2addr p2, p1
 
     add-int/lit8 p2, p2, 0x1
 
-    iput p2, p0, Lcom/google/android/material/datepicker/CalendarConstraints;->j:I
+    iput p2, p0, Lcom/google/android/material/datepicker/CalendarConstraints;->k:I
 
     return-void
 
@@ -171,21 +171,10 @@
     check-cast p1, Lcom/google/android/material/datepicker/CalendarConstraints;
 
     .line 3
-    iget-object v1, p0, Lcom/google/android/material/datepicker/CalendarConstraints;->f:Lcom/google/android/material/datepicker/Month;
-
-    iget-object v3, p1, Lcom/google/android/material/datepicker/CalendarConstraints;->f:Lcom/google/android/material/datepicker/Month;
-
-    invoke-virtual {v1, v3}, Lcom/google/android/material/datepicker/Month;->equals(Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-eqz v1, :cond_2
-
     iget-object v1, p0, Lcom/google/android/material/datepicker/CalendarConstraints;->g:Lcom/google/android/material/datepicker/Month;
 
     iget-object v3, p1, Lcom/google/android/material/datepicker/CalendarConstraints;->g:Lcom/google/android/material/datepicker/Month;
 
-    .line 4
     invoke-virtual {v1, v3}, Lcom/google/android/material/datepicker/Month;->equals(Ljava/lang/Object;)Z
 
     move-result v1
@@ -196,6 +185,17 @@
 
     iget-object v3, p1, Lcom/google/android/material/datepicker/CalendarConstraints;->h:Lcom/google/android/material/datepicker/Month;
 
+    .line 4
+    invoke-virtual {v1, v3}, Lcom/google/android/material/datepicker/Month;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_2
+
+    iget-object v1, p0, Lcom/google/android/material/datepicker/CalendarConstraints;->i:Lcom/google/android/material/datepicker/Month;
+
+    iget-object v3, p1, Lcom/google/android/material/datepicker/CalendarConstraints;->i:Lcom/google/android/material/datepicker/Month;
+
     .line 5
     invoke-virtual {v1, v3}, Lcom/google/android/material/datepicker/Month;->equals(Ljava/lang/Object;)Z
 
@@ -203,9 +203,9 @@
 
     if-eqz v1, :cond_2
 
-    iget-object v1, p0, Lcom/google/android/material/datepicker/CalendarConstraints;->i:Lcom/google/android/material/datepicker/CalendarConstraints$DateValidator;
+    iget-object v1, p0, Lcom/google/android/material/datepicker/CalendarConstraints;->j:Lcom/google/android/material/datepicker/CalendarConstraints$DateValidator;
 
-    iget-object p1, p1, Lcom/google/android/material/datepicker/CalendarConstraints;->i:Lcom/google/android/material/datepicker/CalendarConstraints$DateValidator;
+    iget-object p1, p1, Lcom/google/android/material/datepicker/CalendarConstraints;->j:Lcom/google/android/material/datepicker/CalendarConstraints$DateValidator;
 
     .line 6
     invoke-virtual {v1, p1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
@@ -231,25 +231,25 @@
     new-array v0, v0, [Ljava/lang/Object;
 
     .line 1
-    iget-object v1, p0, Lcom/google/android/material/datepicker/CalendarConstraints;->f:Lcom/google/android/material/datepicker/Month;
+    iget-object v1, p0, Lcom/google/android/material/datepicker/CalendarConstraints;->g:Lcom/google/android/material/datepicker/Month;
 
     const/4 v2, 0x0
 
     aput-object v1, v0, v2
 
-    iget-object v1, p0, Lcom/google/android/material/datepicker/CalendarConstraints;->g:Lcom/google/android/material/datepicker/Month;
+    iget-object v1, p0, Lcom/google/android/material/datepicker/CalendarConstraints;->h:Lcom/google/android/material/datepicker/Month;
 
     const/4 v2, 0x1
 
     aput-object v1, v0, v2
 
-    iget-object v1, p0, Lcom/google/android/material/datepicker/CalendarConstraints;->h:Lcom/google/android/material/datepicker/Month;
+    iget-object v1, p0, Lcom/google/android/material/datepicker/CalendarConstraints;->i:Lcom/google/android/material/datepicker/Month;
 
     const/4 v2, 0x2
 
     aput-object v1, v0, v2
 
-    iget-object v1, p0, Lcom/google/android/material/datepicker/CalendarConstraints;->i:Lcom/google/android/material/datepicker/CalendarConstraints$DateValidator;
+    iget-object v1, p0, Lcom/google/android/material/datepicker/CalendarConstraints;->j:Lcom/google/android/material/datepicker/CalendarConstraints$DateValidator;
 
     const/4 v2, 0x3
 
@@ -267,24 +267,24 @@
     .locals 1
 
     .line 1
-    iget-object p2, p0, Lcom/google/android/material/datepicker/CalendarConstraints;->f:Lcom/google/android/material/datepicker/Month;
+    iget-object p2, p0, Lcom/google/android/material/datepicker/CalendarConstraints;->g:Lcom/google/android/material/datepicker/Month;
 
     const/4 v0, 0x0
 
     invoke-virtual {p1, p2, v0}, Landroid/os/Parcel;->writeParcelable(Landroid/os/Parcelable;I)V
 
     .line 2
-    iget-object p2, p0, Lcom/google/android/material/datepicker/CalendarConstraints;->g:Lcom/google/android/material/datepicker/Month;
-
-    invoke-virtual {p1, p2, v0}, Landroid/os/Parcel;->writeParcelable(Landroid/os/Parcelable;I)V
-
-    .line 3
     iget-object p2, p0, Lcom/google/android/material/datepicker/CalendarConstraints;->h:Lcom/google/android/material/datepicker/Month;
 
     invoke-virtual {p1, p2, v0}, Landroid/os/Parcel;->writeParcelable(Landroid/os/Parcelable;I)V
 
+    .line 3
+    iget-object p2, p0, Lcom/google/android/material/datepicker/CalendarConstraints;->i:Lcom/google/android/material/datepicker/Month;
+
+    invoke-virtual {p1, p2, v0}, Landroid/os/Parcel;->writeParcelable(Landroid/os/Parcelable;I)V
+
     .line 4
-    iget-object p2, p0, Lcom/google/android/material/datepicker/CalendarConstraints;->i:Lcom/google/android/material/datepicker/CalendarConstraints$DateValidator;
+    iget-object p2, p0, Lcom/google/android/material/datepicker/CalendarConstraints;->j:Lcom/google/android/material/datepicker/CalendarConstraints$DateValidator;
 
     invoke-virtual {p1, p2, v0}, Landroid/os/Parcel;->writeParcelable(Landroid/os/Parcelable;I)V
 

@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field public final synthetic f:Ltd/a;
+.field public final synthetic g:Ltd/a;
 
 
 # direct methods
 .method public constructor <init>(Ltd/a;)V
     .locals 0
 
-    iput-object p1, p0, Ltd/a$a;->f:Ltd/a;
+    iput-object p1, p0, Ltd/a$a;->g:Ltd/a;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -38,9 +38,9 @@
     .locals 2
 
     .line 1
-    iget-object p1, p0, Ltd/a$a;->f:Ltd/a;
+    iget-object p1, p0, Ltd/a$a;->g:Ltd/a;
 
-    invoke-static {p1}, Lcom/android/billingclient/api/c0;->e(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
+    invoke-static {p1}, Lcom/android/billingclient/api/b0;->f(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
 
     move-result-object p1
 
@@ -57,7 +57,7 @@
 
     const-string v1, "okButton"
 
-    invoke-static {v0, v1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/4 v1, 0x0
 

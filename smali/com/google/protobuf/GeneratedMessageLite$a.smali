@@ -27,7 +27,7 @@
 
 
 # instance fields
-.field public final f:Lcom/google/protobuf/GeneratedMessageLite;
+.field public final g:Lcom/google/protobuf/GeneratedMessageLite;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "TMessageType;"
@@ -35,7 +35,7 @@
     .end annotation
 .end field
 
-.field public g:Lcom/google/protobuf/GeneratedMessageLite;
+.field public h:Lcom/google/protobuf/GeneratedMessageLite;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "TMessageType;"
@@ -43,7 +43,7 @@
     .end annotation
 .end field
 
-.field public h:Z
+.field public i:Z
 
 
 # direct methods
@@ -59,10 +59,10 @@
     invoke-direct {p0}, Lcom/google/protobuf/a$a;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lcom/google/protobuf/GeneratedMessageLite$a;->f:Lcom/google/protobuf/GeneratedMessageLite;
+    iput-object p1, p0, Lcom/google/protobuf/GeneratedMessageLite$a;->g:Lcom/google/protobuf/GeneratedMessageLite;
 
     .line 3
-    sget-object v0, Lcom/google/protobuf/GeneratedMessageLite$e;->i:Lcom/google/protobuf/GeneratedMessageLite$e;
+    sget-object v0, Lcom/google/protobuf/GeneratedMessageLite$e;->j:Lcom/google/protobuf/GeneratedMessageLite$e;
 
     .line 4
     invoke-virtual {p1, v0}, Lcom/google/protobuf/GeneratedMessageLite;->dynamicMethod(Lcom/google/protobuf/GeneratedMessageLite$e;)Ljava/lang/Object;
@@ -71,12 +71,12 @@
 
     check-cast p1, Lcom/google/protobuf/GeneratedMessageLite;
 
-    iput-object p1, p0, Lcom/google/protobuf/GeneratedMessageLite$a;->g:Lcom/google/protobuf/GeneratedMessageLite;
+    iput-object p1, p0, Lcom/google/protobuf/GeneratedMessageLite$a;->h:Lcom/google/protobuf/GeneratedMessageLite;
 
     const/4 p1, 0x0
 
     .line 5
-    iput-boolean p1, p0, Lcom/google/protobuf/GeneratedMessageLite$a;->h:Z
+    iput-boolean p1, p0, Lcom/google/protobuf/GeneratedMessageLite$a;->i:Z
 
     return-void
 .end method
@@ -124,28 +124,28 @@
     .end annotation
 
     .line 1
-    iget-boolean v0, p0, Lcom/google/protobuf/GeneratedMessageLite$a;->h:Z
+    iget-boolean v0, p0, Lcom/google/protobuf/GeneratedMessageLite$a;->i:Z
 
     if-eqz v0, :cond_0
 
     .line 2
-    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$a;->g:Lcom/google/protobuf/GeneratedMessageLite;
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$a;->h:Lcom/google/protobuf/GeneratedMessageLite;
 
     return-object v0
 
     .line 3
     :cond_0
-    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$a;->g:Lcom/google/protobuf/GeneratedMessageLite;
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$a;->h:Lcom/google/protobuf/GeneratedMessageLite;
 
     invoke-virtual {v0}, Lcom/google/protobuf/GeneratedMessageLite;->makeImmutable()V
 
     const/4 v0, 0x1
 
     .line 4
-    iput-boolean v0, p0, Lcom/google/protobuf/GeneratedMessageLite$a;->h:Z
+    iput-boolean v0, p0, Lcom/google/protobuf/GeneratedMessageLite$a;->i:Z
 
     .line 5
-    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$a;->g:Lcom/google/protobuf/GeneratedMessageLite;
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$a;->h:Lcom/google/protobuf/GeneratedMessageLite;
 
     return-object v0
 .end method
@@ -159,7 +159,7 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$a;->f:Lcom/google/protobuf/GeneratedMessageLite;
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$a;->g:Lcom/google/protobuf/GeneratedMessageLite;
 
     .line 2
     invoke-virtual {v0}, Lcom/google/protobuf/GeneratedMessageLite;->newBuilderForType()Lcom/google/protobuf/GeneratedMessageLite$a;
@@ -180,14 +180,14 @@
     .locals 4
 
     .line 1
-    iget-boolean v0, p0, Lcom/google/protobuf/GeneratedMessageLite$a;->h:Z
+    iget-boolean v0, p0, Lcom/google/protobuf/GeneratedMessageLite$a;->i:Z
 
     if-eqz v0, :cond_0
 
     .line 2
-    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$a;->g:Lcom/google/protobuf/GeneratedMessageLite;
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$a;->h:Lcom/google/protobuf/GeneratedMessageLite;
 
-    sget-object v1, Lcom/google/protobuf/GeneratedMessageLite$e;->i:Lcom/google/protobuf/GeneratedMessageLite$e;
+    sget-object v1, Lcom/google/protobuf/GeneratedMessageLite$e;->j:Lcom/google/protobuf/GeneratedMessageLite$e;
 
     .line 3
     invoke-virtual {v0, v1}, Lcom/google/protobuf/GeneratedMessageLite;->dynamicMethod(Lcom/google/protobuf/GeneratedMessageLite$e;)Ljava/lang/Object;
@@ -197,7 +197,7 @@
     check-cast v0, Lcom/google/protobuf/GeneratedMessageLite;
 
     .line 4
-    iget-object v1, p0, Lcom/google/protobuf/GeneratedMessageLite$a;->g:Lcom/google/protobuf/GeneratedMessageLite;
+    iget-object v1, p0, Lcom/google/protobuf/GeneratedMessageLite$a;->h:Lcom/google/protobuf/GeneratedMessageLite;
 
     .line 5
     sget-object v2, Lcom/google/protobuf/e1;->c:Lcom/google/protobuf/e1;
@@ -218,12 +218,12 @@
     invoke-interface {v2, v0, v1}, Lcom/google/protobuf/i1;->c(Ljava/lang/Object;Ljava/lang/Object;)V
 
     .line 9
-    iput-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$a;->g:Lcom/google/protobuf/GeneratedMessageLite;
+    iput-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$a;->h:Lcom/google/protobuf/GeneratedMessageLite;
 
     const/4 v0, 0x0
 
     .line 10
-    iput-boolean v0, p0, Lcom/google/protobuf/GeneratedMessageLite$a;->h:Z
+    iput-boolean v0, p0, Lcom/google/protobuf/GeneratedMessageLite$a;->i:Z
 
     :cond_0
     return-void
@@ -254,13 +254,13 @@
     sget-object v0, Lcom/google/protobuf/e1;->c:Lcom/google/protobuf/e1;
 
     .line 3
-    iget-object v1, p0, Lcom/google/protobuf/GeneratedMessageLite$a;->g:Lcom/google/protobuf/GeneratedMessageLite;
+    iget-object v1, p0, Lcom/google/protobuf/GeneratedMessageLite$a;->h:Lcom/google/protobuf/GeneratedMessageLite;
 
     invoke-virtual {v0, v1}, Lcom/google/protobuf/e1;->b(Ljava/lang/Object;)Lcom/google/protobuf/i1;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/google/protobuf/GeneratedMessageLite$a;->g:Lcom/google/protobuf/GeneratedMessageLite;
+    iget-object v1, p0, Lcom/google/protobuf/GeneratedMessageLite$a;->h:Lcom/google/protobuf/GeneratedMessageLite;
 
     .line 4
     iget-object v2, p1, Lcom/google/protobuf/j;->d:Lcom/google/protobuf/k;
@@ -321,7 +321,7 @@
     invoke-virtual {p0}, Lcom/google/protobuf/GeneratedMessageLite$a;->d()V
 
     .line 2
-    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$a;->g:Lcom/google/protobuf/GeneratedMessageLite;
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$a;->h:Lcom/google/protobuf/GeneratedMessageLite;
 
     invoke-virtual {p0, v0, p1}, Lcom/google/protobuf/GeneratedMessageLite$a;->g(Lcom/google/protobuf/GeneratedMessageLite;Lcom/google/protobuf/GeneratedMessageLite;)V
 
@@ -360,7 +360,7 @@
 .method public final getDefaultInstanceForType()Lcom/google/protobuf/q0;
     .locals 1
 
-    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$a;->f:Lcom/google/protobuf/GeneratedMessageLite;
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$a;->g:Lcom/google/protobuf/GeneratedMessageLite;
 
     return-object v0
 .end method

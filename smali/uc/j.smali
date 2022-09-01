@@ -1,103 +1,122 @@
 .class public final Luc/j;
-.super Lse/h;
+.super Lse/i;
 .source "HeadBackgroundDrawable.kt"
 
 # interfaces
-.implements Lre/a;
+.implements Lre/p;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
-        "Lre/a<",
-        "Landroid/graphics/Bitmap;",
+        "Lse/i;",
+        "Lre/p<",
+        "Landroid/graphics/drawable/Drawable;",
+        "Lud/g;",
+        "Lie/i;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic f:Luc/e;
+.field public final synthetic g:Lze/o;
+
+.field public final synthetic h:Ljava/lang/String;
 
 
 # direct methods
-.method public constructor <init>(Luc/e;)V
+.method public constructor <init>(Lze/o;Ljava/lang/String;)V
     .locals 0
 
-    iput-object p1, p0, Luc/j;->f:Luc/e;
+    iput-object p1, p0, Luc/j;->g:Lze/o;
 
-    const/4 p1, 0x0
+    iput-object p2, p0, Luc/j;->h:Ljava/lang/String;
 
-    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
+    const/4 p1, 0x2
+
+    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final invoke()Ljava/lang/Object;
-    .locals 5
+.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 3
+
+    check-cast p1, Landroid/graphics/drawable/Drawable;
+
+    check-cast p2, Lud/g;
+
+    const-string v0, "drawable"
 
     .line 1
-    iget-object v0, p0, Luc/j;->f:Luc/e;
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "<anonymous parameter 1>"
+
+    invoke-static {p2, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 2
-    iget v1, v0, Luc/e;->N:I
+    instance-of p2, p1, Landroid/graphics/drawable/BitmapDrawable;
+
+    const/4 v0, 0x0
+
+    if-nez p2, :cond_0
+
+    move-object p1, v0
+
+    :cond_0
+    check-cast p1, Landroid/graphics/drawable/BitmapDrawable;
+
+    if-eqz p1, :cond_1
+
+    invoke-virtual {p1}, Landroid/graphics/drawable/BitmapDrawable;->getBitmap()Landroid/graphics/Bitmap;
+
+    move-result-object v0
 
     .line 3
-    iget-object v0, v0, Luc/e;->z:Ljava/util/LinkedHashMap;
+    :cond_1
+    instance-of p1, v0, Landroid/graphics/Bitmap;
+
+    if-eqz p1, :cond_2
+
+    iget-object p1, p0, Luc/j;->g:Lze/o;
 
     .line 4
-    invoke-interface {v0}, Ljava/util/Map;->size()I
-
-    move-result v0
-
-    const/16 v2, 0x64
-
-    .line 5
-    :goto_0
-    iget-object v3, p0, Luc/j;->f:Luc/e;
-
-    .line 6
-    iget v4, v3, Luc/e;->N:I
-
-    if-ne v1, v4, :cond_0
-
-    if-lez v2, :cond_0
-
-    .line 7
-    sget-object v1, Lue/c;->b:Lue/c$a;
-
-    invoke-virtual {v1, v0}, Lue/c$a;->b(I)I
-
-    move-result v1
-
-    add-int/lit8 v2, v2, -0x1
+    invoke-interface {p1, v0}, Lze/o;->m(Ljava/lang/Object;)Z
 
     goto :goto_0
 
+    .line 5
+    :cond_2
+    iget-object p1, p0, Luc/j;->g:Lze/o;
+
+    new-instance p2, Landroid/content/res/Resources$NotFoundException;
+
+    new-instance v0, Ljava/lang/StringBuilder;
+
+    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+
+    iget-object v1, p0, Luc/j;->h:Ljava/lang/String;
+
+    const-string v2, " not found"
+
+    .line 6
+    invoke-static {v0, v1, v2}, Landroid/support/v4/media/b;->a(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
+
+    .line 7
+    invoke-direct {p2, v0}, Landroid/content/res/Resources$NotFoundException;-><init>(Ljava/lang/String;)V
+
     .line 8
-    :cond_0
-    iput v1, v3, Luc/e;->N:I
+    invoke-interface {p1, p2}, Lze/o;->l(Ljava/lang/Throwable;)Z
 
     .line 9
-    iget-object v0, v3, Luc/e;->z:Ljava/util/LinkedHashMap;
+    :goto_0
+    sget-object p1, Lie/i;->a:Lie/i;
 
-    .line 10
-    invoke-interface {v0}, Ljava/util/Map;->values()Ljava/util/Collection;
-
-    move-result-object v0
-
-    invoke-static {v0}, Lje/j;->Q(Ljava/lang/Iterable;)Ljava/util/List;
-
-    move-result-object v0
-
-    invoke-interface {v0, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Landroid/graphics/Bitmap;
-
-    return-object v0
+    return-object p1
 .end method

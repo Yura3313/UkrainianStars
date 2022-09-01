@@ -3,97 +3,91 @@
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lk3/tj0;
+.implements Ljava/util/concurrent/Callable;
 
 
 # instance fields
-.field public final a:Ljava/util/List;
+.field public final a:Lcom/google/android/gms/internal/ads/zzcyk;
+
+.field public final b:Landroid/net/Uri;
+
+.field public final c:Lcom/google/android/gms/dynamic/IObjectWrapper;
 
 
 # direct methods
-.method public constructor <init>(Ljava/util/List;)V
+.method public constructor <init>(Lcom/google/android/gms/internal/ads/zzcyk;Landroid/net/Uri;Lcom/google/android/gms/dynamic/IObjectWrapper;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lk3/q80;->a:Ljava/util/List;
+    iput-object p1, p0, Lk3/q80;->a:Lcom/google/android/gms/internal/ads/zzcyk;
+
+    iput-object p2, p0, Lk3/q80;->b:Landroid/net/Uri;
+
+    iput-object p3, p0, Lk3/q80;->c:Lcom/google/android/gms/dynamic/IObjectWrapper;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Ljava/lang/Object;)Ljava/lang/Object;
+.method public final call()Ljava/lang/Object;
     .locals 5
 
-    iget-object v0, p0, Lk3/q80;->a:Ljava/util/List;
+    iget-object v0, p0, Lk3/q80;->a:Lcom/google/android/gms/internal/ads/zzcyk;
 
-    check-cast p1, Ljava/lang/String;
+    iget-object v1, p0, Lk3/q80;->b:Landroid/net/Uri;
 
-    sget-object v1, Lcom/google/android/gms/internal/ads/zzcyk;->p:Ljava/util/ArrayList;
+    iget-object v2, p0, Lk3/q80;->c:Lcom/google/android/gms/dynamic/IObjectWrapper;
+
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 1
-    new-instance v1, Ljava/util/ArrayList;
+    :try_start_0
+    iget-object v3, v0, Lcom/google/android/gms/internal/ads/zzcyk;->i:Lk3/lr0;
 
-    invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
+    iget-object v0, v0, Lcom/google/android/gms/internal/ads/zzcyk;->h:Landroid/content/Context;
 
     .line 2
-    invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+    invoke-static {v2}, Lcom/google/android/gms/dynamic/ObjectWrapper;->c2(Lcom/google/android/gms/dynamic/IObjectWrapper;)Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Landroid/view/View;
+
+    const/4 v4, 0x0
+
+    .line 3
+    invoke-virtual {v3, v1, v0, v2, v4}, Lk3/lr0;->a(Landroid/net/Uri;Landroid/content/Context;Landroid/view/View;Landroid/app/Activity;)Landroid/net/Uri;
+
+    move-result-object v1
+    :try_end_0
+    .catch Lcom/google/android/gms/internal/ads/zzef; {:try_start_0 .. :try_end_0} :catch_0
+
+    goto :goto_0
+
+    :catch_0
+    nop
+
+    :goto_0
+    const-string v0, "ms"
+
+    .line 4
+    invoke-virtual {v1, v0}, Landroid/net/Uri;->getQueryParameter(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
-    :goto_0
-    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+    if-eqz v0, :cond_0
 
-    move-result v2
-
-    if-eqz v2, :cond_2
-
-    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v2
-
-    check-cast v2, Landroid/net/Uri;
-
-    .line 3
-    sget-object v3, Lcom/google/android/gms/internal/ads/zzcyk;->r:Ljava/util/ArrayList;
-
-    sget-object v4, Lcom/google/android/gms/internal/ads/zzcyk;->s:Ljava/util/ArrayList;
-
-    invoke-static {v2, v3, v4}, Lcom/google/android/gms/internal/ads/zzcyk;->v7(Landroid/net/Uri;Ljava/util/List;Ljava/util/List;)Z
-
-    move-result v3
-
-    if-eqz v3, :cond_1
-
-    .line 4
-    invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
-
-    move-result v3
-
-    if-eqz v3, :cond_0
-
-    goto :goto_1
-
-    :cond_0
-    const-string v3, "nas"
+    return-object v1
 
     .line 5
-    invoke-static {v2, v3, p1}, Lcom/google/android/gms/internal/ads/zzcyk;->u7(Landroid/net/Uri;Ljava/lang/String;Ljava/lang/String;)Landroid/net/Uri;
+    :cond_0
+    new-instance v0, Ljava/lang/Exception;
 
-    move-result-object v2
+    const-string v1, "Failed to append spam signals to click url."
 
-    invoke-virtual {v1, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    invoke-direct {v0, v1}, Ljava/lang/Exception;-><init>(Ljava/lang/String;)V
 
-    goto :goto_0
-
-    .line 6
-    :cond_1
-    :goto_1
-    invoke-virtual {v1, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    goto :goto_0
-
-    :cond_2
-    return-object v1
+    throw v0
 .end method

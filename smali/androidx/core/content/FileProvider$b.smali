@@ -384,7 +384,7 @@
     const-string v1, "Failed to find configured root that contains "
 
     .line 14
-    invoke-static {v1, p1}, Lcom/google/android/gms/ads/e;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v1, p1}, Lf/g;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 

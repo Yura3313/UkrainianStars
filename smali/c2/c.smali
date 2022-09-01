@@ -20,7 +20,7 @@
 
 
 # instance fields
-.field public final f:Lc2/b;
+.field public final g:Lc2/b;
     .annotation build Landroidx/annotation/RecentlyNonNull;
     .end annotation
 
@@ -32,7 +32,7 @@
     .end annotation
 .end field
 
-.field public g:I
+.field public h:I
 
 
 # direct methods
@@ -58,12 +58,12 @@
 
     check-cast p1, Lc2/b;
 
-    iput-object p1, p0, Lc2/c;->f:Lc2/b;
+    iput-object p1, p0, Lc2/c;->g:Lc2/b;
 
     const/4 p1, -0x1
 
     .line 3
-    iput p1, p0, Lc2/c;->g:I
+    iput p1, p0, Lc2/c;->h:I
 
     return-void
 .end method
@@ -73,9 +73,9 @@
 .method public final hasNext()Z
     .locals 3
 
-    iget v0, p0, Lc2/c;->g:I
+    iget v0, p0, Lc2/c;->h:I
 
-    iget-object v1, p0, Lc2/c;->f:Lc2/b;
+    iget-object v1, p0, Lc2/c;->g:Lc2/b;
 
     invoke-interface {v1}, Lc2/b;->getCount()I
 
@@ -114,13 +114,13 @@
     if-eqz v0, :cond_0
 
     .line 2
-    iget-object v0, p0, Lc2/c;->f:Lc2/b;
+    iget-object v0, p0, Lc2/c;->g:Lc2/b;
 
-    iget v1, p0, Lc2/c;->g:I
+    iget v1, p0, Lc2/c;->h:I
 
     add-int/lit8 v1, v1, 0x1
 
-    iput v1, p0, Lc2/c;->g:I
+    iput v1, p0, Lc2/c;->h:I
 
     invoke-interface {v0, v1}, Lc2/b;->get(I)Ljava/lang/Object;
 
@@ -132,14 +132,14 @@
     :cond_0
     new-instance v0, Ljava/util/NoSuchElementException;
 
-    iget v1, p0, Lc2/c;->g:I
+    iget v1, p0, Lc2/c;->h:I
 
     const/16 v2, 0x2e
 
     const-string v3, "Cannot advance the iterator beyond "
 
     .line 4
-    invoke-static {v2, v3, v1}, Lcom/google/android/gms/ads/e;->a(ILjava/lang/String;I)Ljava/lang/String;
+    invoke-static {v2, v3, v1}, Lcom/google/android/gms/ads/f;->a(ILjava/lang/String;I)Ljava/lang/String;
 
     move-result-object v1
 

@@ -3,7 +3,7 @@
 .source "ChaCha20Base.java"
 
 # interfaces
-.implements Lr5/a0;
+.implements Lr5/c0;
 
 
 # static fields
@@ -568,7 +568,7 @@
 
     move-result v0
 
-    invoke-static {v0}, Lr5/d0;->a(I)[B
+    invoke-static {v0}, Lr5/f0;->a(I)[B
 
     move-result-object v0
 

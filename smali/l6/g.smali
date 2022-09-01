@@ -31,7 +31,7 @@
     .locals 4
 
     .line 1
-    invoke-static {p2}, Lbc/a;->d(Ljava/util/List;)Z
+    invoke-static {p2}, Lt5/a;->g(Ljava/util/List;)Z
 
     move-result v0
 
@@ -63,7 +63,7 @@
     const-string v2, "HS_DBPollChangeListener"
 
     .line 4
-    invoke-static {v2, v0, v1, v1}, Landroidx/savedstate/d;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v2, v0, v1, v1}, Le5/i;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
 
     .line 5
     invoke-interface {p2}, Ljava/util/List;->size()I
@@ -76,35 +76,35 @@
 
     move-result-object v0
 
-    check-cast v0, Lo8/y;
+    check-cast v0, Lo8/z;
 
     .line 6
-    instance-of v2, v0, Lo8/b0;
+    instance-of v2, v0, Lo8/d0;
 
     if-eqz v2, :cond_1
 
     .line 7
-    check-cast v0, Lo8/b0;
+    check-cast v0, Lo8/d0;
 
     .line 8
-    iget-boolean p2, v0, Lo8/b0;->z:Z
+    iget-boolean p2, v0, Lo8/d0;->A:Z
 
     if-nez p2, :cond_4
 
     .line 9
-    invoke-virtual {p0, p1, v0}, Ll6/g;->d(Lq8/d;Lo8/b0;)V
+    invoke-virtual {p0, p1, v0}, Ll6/g;->d(Lq8/d;Lo8/d0;)V
 
     goto :goto_0
 
     .line 10
     :cond_1
-    iget-boolean v0, p1, Lq8/d;->O:Z
+    iget-boolean v0, p1, Lq8/d;->P:Z
 
     if-eqz v0, :cond_4
 
-    iget-object v0, p1, Lq8/d;->l:Lu8/e;
+    iget-object v0, p1, Lq8/d;->m:Lu8/e;
 
-    sget-object v2, Lu8/e;->k:Lu8/e;
+    sget-object v2, Lu8/e;->l:Lu8/e;
 
     if-ne v0, v2, :cond_4
 
@@ -123,28 +123,28 @@
 
     move-result-object v2
 
-    check-cast v2, Lo8/y;
+    check-cast v2, Lo8/z;
 
     .line 13
-    instance-of v3, v2, Lo8/b0;
+    instance-of v3, v2, Lo8/d0;
 
     if-eqz v3, :cond_2
 
     .line 14
     move-object v1, v2
 
-    check-cast v1, Lo8/b0;
+    check-cast v1, Lo8/d0;
 
     :cond_3
     if-eqz v1, :cond_4
 
     .line 15
-    iget-boolean p2, v1, Lo8/b0;->z:Z
+    iget-boolean p2, v1, Lo8/d0;->A:Z
 
     if-nez p2, :cond_4
 
     .line 16
-    invoke-virtual {p0, p1, v1}, Ll6/g;->d(Lq8/d;Lo8/b0;)V
+    invoke-virtual {p0, p1, v1}, Ll6/g;->d(Lq8/d;Lo8/d0;)V
 
     :cond_4
     :goto_0
@@ -161,12 +161,12 @@
     const/4 v2, 0x0
 
     .line 1
-    invoke-static {v0, v1, v2, v2}, Landroidx/savedstate/d;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v0, v1, v2, v2}, Le5/i;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
 
     .line 2
-    iget-object v1, p1, Lq8/d;->l:Lu8/e;
+    iget-object v1, p1, Lq8/d;->m:Lu8/e;
 
-    iget-object v3, p2, Lq8/d;->l:Lu8/e;
+    iget-object v3, p2, Lq8/d;->m:Lu8/e;
 
     if-eq v1, v3, :cond_9
 
@@ -178,7 +178,7 @@
     move-result-object v1
 
     .line 4
-    iget-object v4, p1, Lq8/d;->l:Lu8/e;
+    iget-object v4, p1, Lq8/d;->m:Lu8/e;
 
     invoke-virtual {v1, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -193,10 +193,10 @@
     move-result-object v1
 
     .line 5
-    invoke-static {v0, v1, v2, v2}, Landroidx/savedstate/d;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v0, v1, v2, v2}, Le5/i;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
 
     .line 6
-    sget-object v1, Lu8/e;->n:Lu8/e;
+    sget-object v1, Lu8/e;->o:Lu8/e;
 
     if-ne v3, v1, :cond_0
 
@@ -211,7 +211,7 @@
 
     .line 8
     :cond_0
-    sget-object v1, Lu8/e;->o:Lu8/e;
+    sget-object v1, Lu8/e;->p:Lu8/e;
 
     if-ne v3, v1, :cond_2
 
@@ -247,7 +247,7 @@
 
     .line 12
     :cond_2
-    sget-object v1, Lu8/e;->s:Lu8/e;
+    sget-object v1, Lu8/e;->t:Lu8/e;
 
     if-ne v3, v1, :cond_3
 
@@ -269,11 +269,11 @@
 
     .line 15
     :cond_3
-    sget-object v1, Lu8/e;->l:Lu8/e;
+    sget-object v1, Lu8/e;->m:Lu8/e;
 
     if-eq v3, v1, :cond_4
 
-    sget-object v1, Lu8/e;->t:Lu8/e;
+    sget-object v1, Lu8/e;->u:Lu8/e;
 
     if-ne v3, v1, :cond_5
 
@@ -311,7 +311,7 @@
 
     .line 19
     :cond_6
-    iget-object v1, p2, Lq8/d;->l:Lu8/e;
+    iget-object v1, p2, Lq8/d;->m:Lu8/e;
 
     .line 20
     invoke-virtual {p1}, Lq8/d;->c()Z
@@ -322,11 +322,7 @@
 
     if-eqz v3, :cond_8
 
-    sget-object v3, Lu8/e;->k:Lu8/e;
-
-    if-eq v1, v3, :cond_7
-
-    sget-object v3, Lu8/e;->o:Lu8/e;
+    sget-object v3, Lu8/e;->l:Lu8/e;
 
     if-eq v1, v3, :cond_7
 
@@ -334,7 +330,11 @@
 
     if-eq v1, v3, :cond_7
 
-    sget-object v3, Lu8/e;->s:Lu8/e;
+    sget-object v3, Lu8/e;->q:Lu8/e;
+
+    if-eq v1, v3, :cond_7
+
+    sget-object v3, Lu8/e;->t:Lu8/e;
 
     if-ne v1, v3, :cond_8
 
@@ -368,9 +368,9 @@
     .line 24
     :cond_9
     :goto_1
-    iget v1, p1, Lq8/d;->t:I
+    iget v1, p1, Lq8/d;->u:I
 
-    iget v3, p2, Lq8/d;->t:I
+    iget v3, p2, Lq8/d;->u:I
 
     if-eq v1, v3, :cond_a
 
@@ -402,9 +402,9 @@
     move-result-object v1
 
     .line 27
-    iget-object p1, p1, Lq8/d;->i:Ljava/lang/String;
+    iget-object p1, p1, Lq8/d;->j:Ljava/lang/String;
 
-    invoke-static {p1}, Lcom/google/android/play/core/appupdate/g;->b(Ljava/lang/String;)Z
+    invoke-static {p1}, La5/b0;->d(Ljava/lang/String;)Z
 
     move-result p1
 
@@ -412,7 +412,7 @@
 
     if-eqz v1, :cond_c
 
-    iget-object p1, p2, Lq8/d;->z:Ljava/lang/String;
+    iget-object p1, p2, Lq8/d;->A:Ljava/lang/String;
 
     .line 28
     invoke-virtual {v1, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -431,7 +431,7 @@
     const-string p1, "Preissue created from poller response"
 
     .line 30
-    invoke-static {v0, p1, v2, v2}, Landroidx/savedstate/d;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v0, p1, v2, v2}, Le5/i;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
 
     .line 31
     iget-object p1, p0, Ll6/g;->a:Ljava/lang/Object;
@@ -445,7 +445,7 @@
 
     move-result-wide v0
 
-    iput-wide v0, p2, Lq8/d;->y:J
+    iput-wide v0, p2, Lq8/d;->z:J
 
     .line 33
     invoke-virtual {p1, p2}, Ln8/c;->D(Lq8/d;)V
@@ -456,7 +456,7 @@
     const-string p1, "Preissue creation skipped, issue created directly - idempotent case."
 
     .line 34
-    invoke-static {v0, p1, v2, v2}, Landroidx/savedstate/d;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v0, p1, v2, v2}, Le5/i;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
 
     .line 35
     iget-object p1, p0, Ll6/g;->a:Ljava/lang/Object;
@@ -496,7 +496,7 @@
     const/4 v2, 0x0
 
     .line 3
-    invoke-static {v1, v0, v2, v2}, Landroidx/savedstate/d;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v1, v0, v2, v2}, Le5/i;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
 
     .line 4
     new-instance v0, Ljava/util/ArrayList;
@@ -520,10 +520,10 @@
 
     move-result-object v1
 
-    check-cast v1, Lo8/y;
+    check-cast v1, Lo8/z;
 
     .line 6
-    iget-boolean v2, v1, Lo8/y;->s:Z
+    iget-boolean v2, v1, Lo8/z;->t:Z
 
     if-eqz v2, :cond_0
 
@@ -579,7 +579,7 @@
     return-void
 .end method
 
-.method public final d(Lq8/d;Lo8/b0;)V
+.method public final d(Lq8/d;Lo8/d0;)V
     .locals 19
 
     move-object/from16 v0, p0
@@ -638,7 +638,7 @@
 
     .line 7
     :cond_0
-    iget-object v3, v3, Lq8/d;->h:Ljava/lang/String;
+    iget-object v3, v3, Lq8/d;->i:Ljava/lang/String;
 
     goto :goto_0
 
@@ -659,7 +659,7 @@
     if-ne v4, v6, :cond_2
 
     .line 9
-    iget-object v2, v2, Lo8/y;->i:Ljava/lang/String;
+    iget-object v2, v2, Lo8/z;->j:Ljava/lang/String;
 
     invoke-virtual {v9, v1, v6, v7, v2}, Ln8/c;->G(Lq8/d;ILjava/lang/String;Ljava/lang/String;)V
 
@@ -671,7 +671,7 @@
     if-eqz v8, :cond_3
 
     .line 10
-    iget-object v2, v2, Lo8/y;->i:Ljava/lang/String;
+    iget-object v2, v2, Lo8/z;->j:Ljava/lang/String;
 
     invoke-virtual {v9, v1, v10, v7, v2}, Ln8/c;->G(Lq8/d;ILjava/lang/String;Ljava/lang/String;)V
 
@@ -679,7 +679,7 @@
 
     .line 11
     :cond_3
-    iget-object v8, v1, Lq8/d;->l:Lu8/e;
+    iget-object v8, v1, Lq8/d;->m:Lu8/e;
 
     invoke-static {v8}, Lm8/c;->d(Lu8/e;)Z
 
@@ -687,9 +687,9 @@
 
     if-nez v8, :cond_7
 
-    iget-object v8, v1, Lq8/d;->l:Lu8/e;
+    iget-object v8, v1, Lq8/d;->m:Lu8/e;
 
-    sget-object v11, Lu8/e;->p:Lu8/e;
+    sget-object v11, Lu8/e;->q:Lu8/e;
 
     const/4 v12, 0x2
 
@@ -703,7 +703,7 @@
     if-eqz v3, :cond_5
 
     .line 12
-    iget-object v4, v1, Lq8/d;->h:Ljava/lang/String;
+    iget-object v4, v1, Lq8/d;->i:Ljava/lang/String;
 
     .line 13
     invoke-virtual {v3, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -713,7 +713,7 @@
     if-nez v4, :cond_5
 
     .line 14
-    iget-object v2, v2, Lo8/y;->i:Ljava/lang/String;
+    iget-object v2, v2, Lo8/z;->j:Ljava/lang/String;
 
     invoke-virtual {v9, v1, v12, v3, v2}, Ln8/c;->G(Lq8/d;ILjava/lang/String;Ljava/lang/String;)V
 
@@ -721,12 +721,12 @@
 
     .line 15
     :cond_5
-    sget-object v3, Lu8/e;->j:Lu8/e;
+    sget-object v3, Lu8/e;->k:Lu8/e;
 
-    iput-object v3, v1, Lq8/d;->l:Lu8/e;
+    iput-object v3, v1, Lq8/d;->m:Lu8/e;
 
     .line 16
-    iput-boolean v5, v1, Lq8/d;->s:Z
+    iput-boolean v5, v1, Lq8/d;->t:Z
 
     .line 17
     iget-object v3, v9, Ln8/c;->d:Le8/b;
@@ -736,19 +736,19 @@
     .line 18
     iget-object v3, v9, Ln8/c;->a:Le8/s;
 
-    invoke-static {v3}, Li8/b;->c(Le8/s;)Lcom/helpshift/util/h0;
+    invoke-static {v3}, Li8/b;->c(Le8/s;)Lcom/helpshift/util/f0;
 
     move-result-object v3
 
     .line 19
-    iget-object v4, v3, Lcom/helpshift/util/h0;->a:Ljava/lang/Object;
+    iget-object v4, v3, Lcom/helpshift/util/f0;->a:Ljava/lang/Object;
 
     move-object v13, v4
 
     check-cast v13, Ljava/lang/String;
 
     .line 20
-    iget-object v3, v3, Lcom/helpshift/util/h0;->b:Ljava/lang/Object;
+    iget-object v3, v3, Lcom/helpshift/util/f0;->b:Ljava/lang/Object;
 
     check-cast v3, Ljava/lang/Long;
 
@@ -757,20 +757,20 @@
     move-result-wide v14
 
     .line 21
-    new-instance v3, Lo8/o;
+    new-instance v3, Lo8/p;
 
     const-string v4, "mobile"
 
     const-string v5, ""
 
-    invoke-direct {v3, v4, v5, v10}, Lo8/o;-><init>(Ljava/lang/String;Ljava/lang/String;I)V
+    invoke-direct {v3, v4, v5, v10}, Lo8/p;-><init>(Ljava/lang/String;Ljava/lang/String;I)V
 
     .line 22
-    new-instance v4, Lo8/v;
+    new-instance v4, Lo8/w;
 
     const/4 v12, 0x0
 
-    iget-object v5, v2, Lo8/y;->i:Ljava/lang/String;
+    iget-object v5, v2, Lo8/z;->j:Ljava/lang/String;
 
     const/16 v18, 0x1
 
@@ -780,12 +780,12 @@
 
     move-object/from16 v17, v5
 
-    invoke-direct/range {v11 .. v18}, Lo8/v;-><init>(Ljava/lang/String;Ljava/lang/String;JLo8/o;Ljava/lang/String;I)V
+    invoke-direct/range {v11 .. v18}, Lo8/w;-><init>(Ljava/lang/String;Ljava/lang/String;JLo8/p;Ljava/lang/String;I)V
 
     .line 23
-    iget-object v3, v1, Lq8/d;->g:Ljava/lang/Long;
+    iget-object v3, v1, Lq8/d;->h:Ljava/lang/Long;
 
-    iput-object v3, v4, Lo8/y;->l:Ljava/lang/Long;
+    iput-object v3, v4, Lo8/z;->m:Ljava/lang/Long;
 
     .line 24
     iget-object v3, v9, Ln8/c;->b:La8/f;
@@ -793,16 +793,16 @@
     iget-object v5, v9, Ln8/c;->a:Le8/s;
 
     .line 25
-    iput-object v3, v4, Lo8/y;->t:La8/f;
+    iput-object v3, v4, Lo8/z;->u:La8/f;
 
     .line 26
-    iput-object v5, v4, Lo8/y;->u:Le8/s;
+    iput-object v5, v4, Lo8/z;->v:Le8/s;
 
     .line 27
-    invoke-virtual {v9, v1, v4}, Ln8/c;->a(Lq8/d;Lo8/y;)V
+    invoke-virtual {v9, v1, v4}, Ln8/c;->a(Lq8/d;Lo8/z;)V
 
     .line 28
-    iget-boolean v3, v2, Lo8/b0;->z:Z
+    iget-boolean v3, v2, Lo8/d0;->A:Z
 
     if-ne v3, v6, :cond_6
 
@@ -810,21 +810,21 @@
 
     .line 29
     :cond_6
-    iput-boolean v6, v2, Lo8/b0;->z:Z
+    iput-boolean v6, v2, Lo8/d0;->A:Z
 
     .line 30
-    invoke-virtual/range {p2 .. p2}, Lo8/y;->l()V
+    invoke-virtual/range {p2 .. p2}, Lo8/z;->l()V
 
     .line 31
     :goto_2
     iget-object v3, v9, Ln8/c;->d:Le8/b;
 
-    invoke-virtual {v3, v2}, Le8/b;->e(Lo8/y;)V
+    invoke-virtual {v3, v2}, Le8/b;->e(Lo8/z;)V
 
     .line 32
     new-instance v2, Ln8/h;
 
-    invoke-direct {v2, v9, v4, v1}, Ln8/h;-><init>(Ln8/c;Lo8/v;Lq8/d;)V
+    invoke-direct {v2, v9, v4, v1}, Ln8/h;-><init>(Ln8/c;Lo8/w;Lq8/d;)V
 
     invoke-virtual {v9, v2}, Ln8/c;->E(La8/g;)V
 
@@ -835,7 +835,7 @@
     const/4 v3, 0x3
 
     .line 33
-    iget-object v2, v2, Lo8/y;->i:Ljava/lang/String;
+    iget-object v2, v2, Lo8/z;->j:Ljava/lang/String;
 
     invoke-virtual {v9, v1, v3, v7, v2}, Ln8/c;->G(Lq8/d;ILjava/lang/String;Ljava/lang/String;)V
 

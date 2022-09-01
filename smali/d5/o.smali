@@ -6,18 +6,18 @@
 
 
 # instance fields
-.field public final synthetic f:I
+.field public final synthetic g:I
 
-.field public final g:Ljava/lang/Object;
+.field public final h:Ljava/lang/Object;
 
 
 # direct methods
 .method public synthetic constructor <init>(Ljava/lang/Object;I)V
     .locals 0
 
-    iput p2, p0, Ld5/o;->f:I
+    iput p2, p0, Ld5/o;->g:I
 
-    iput-object p1, p0, Ld5/o;->g:Ljava/lang/Object;
+    iput-object p1, p0, Ld5/o;->h:Ljava/lang/Object;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -29,7 +29,7 @@
 .method public final run()V
     .locals 8
 
-    iget v0, p0, Ld5/o;->f:I
+    iget v0, p0, Ld5/o;->g:I
 
     packed-switch v0, :pswitch_data_0
 
@@ -38,7 +38,7 @@
     .line 1
     :pswitch_0
     :try_start_0
-    iget-object v0, p0, Ld5/o;->g:Ljava/lang/Object;
+    iget-object v0, p0, Ld5/o;->h:Ljava/lang/Object;
 
     check-cast v0, Ld5/a;
 
@@ -55,7 +55,7 @@
 
     .line 4
     :goto_0
-    iget-object v0, p0, Ld5/o;->g:Ljava/lang/Object;
+    iget-object v0, p0, Ld5/o;->h:Ljava/lang/Object;
 
     check-cast v0, Ly5/e;
 

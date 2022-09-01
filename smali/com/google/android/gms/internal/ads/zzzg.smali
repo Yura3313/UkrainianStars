@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field public f:Lcom/google/android/gms/internal/ads/zzwl;
+.field public g:Lcom/google/android/gms/internal/ads/zzwl;
 
 
 # direct methods
@@ -59,7 +59,7 @@
         }
     .end annotation
 
-    iput-object p1, p0, Lcom/google/android/gms/internal/ads/zzzg;->f:Lcom/google/android/gms/internal/ads/zzwl;
+    iput-object p1, p0, Lcom/google/android/gms/internal/ads/zzzg;->g:Lcom/google/android/gms/internal/ads/zzwl;
 
     return-void
 .end method
@@ -94,9 +94,9 @@
         }
     .end annotation
 
-    new-instance v0, Lk3/x51;
+    new-instance v0, Lk3/a61;
 
-    invoke-direct {v0, p0}, Lk3/x51;-><init>(Lcom/google/android/gms/internal/ads/zzzg;)V
+    invoke-direct {v0, p0}, Lk3/a61;-><init>(Lcom/google/android/gms/internal/ads/zzzg;)V
 
     return-object v0
 .end method

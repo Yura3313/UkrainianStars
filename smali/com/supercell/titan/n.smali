@@ -4,11 +4,11 @@
 
 
 # static fields
-.field public static final g:Lcom/supercell/titan/n$a;
+.field public static final h:Lcom/supercell/titan/n$a;
 
 
 # instance fields
-.field public f:Z
+.field public g:Z
 
 
 # direct methods
@@ -19,7 +19,7 @@
 
     invoke-direct {v0}, Lcom/supercell/titan/n$a;-><init>()V
 
-    sput-object v0, Lcom/supercell/titan/n;->g:Lcom/supercell/titan/n$a;
+    sput-object v0, Lcom/supercell/titan/n;->h:Lcom/supercell/titan/n$a;
 
     return-void
 .end method

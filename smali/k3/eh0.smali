@@ -4,20 +4,28 @@
 
 
 # instance fields
-.field public a:Lk3/j00;
+.field public final a:Landroid/content/Context;
+
+.field public final b:Lk3/ua;
+
+.field public final c:Lk3/ra;
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 1
+.method public constructor <init>(Landroid/content/Context;Lk3/ua;Lk3/ra;)V
+    .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    const/4 v0, 0x0
-
     .line 2
-    iput-object v0, p0, Lk3/eh0;->a:Lk3/j00;
+    iput-object p1, p0, Lk3/eh0;->a:Landroid/content/Context;
+
+    .line 3
+    iput-object p2, p0, Lk3/eh0;->b:Lk3/ua;
+
+    .line 4
+    iput-object p3, p0, Lk3/eh0;->c:Lk3/ra;
 
     return-void
 .end method

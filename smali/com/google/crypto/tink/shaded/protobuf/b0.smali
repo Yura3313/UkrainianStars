@@ -23,7 +23,7 @@
     .line 1
     check-cast p1, Lcom/google/crypto/tink/shaded/protobuf/n;
 
-    sget-object v0, Lcom/google/crypto/tink/shaded/protobuf/n$f;->i:Lcom/google/crypto/tink/shaded/protobuf/n$f;
+    sget-object v0, Lcom/google/crypto/tink/shaded/protobuf/n$f;->j:Lcom/google/crypto/tink/shaded/protobuf/n$f;
 
     .line 2
     invoke-virtual {p1, v0}, Lcom/google/crypto/tink/shaded/protobuf/n;->i(Lcom/google/crypto/tink/shaded/protobuf/n$f;)Ljava/lang/Object;

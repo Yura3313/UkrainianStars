@@ -4,20 +4,20 @@
 
 
 # instance fields
-.field public final a:Lk3/xv;
+.field public final a:Lk3/wv;
 
 .field public final b:Lcom/google/android/gms/internal/ads/zzwl;
 
 
 # direct methods
-.method public constructor <init>(Lk3/xv;Lcom/google/android/gms/internal/ads/zzwl;)V
+.method public constructor <init>(Lk3/wv;Lcom/google/android/gms/internal/ads/zzwl;)V
     .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lk3/bv;->a:Lk3/xv;
+    iput-object p1, p0, Lk3/bv;->a:Lk3/wv;
 
     .line 3
     iput-object p2, p0, Lk3/bv;->b:Lcom/google/android/gms/internal/ads/zzwl;

@@ -12,9 +12,9 @@
 
 
 # instance fields
-.field public f:Lh9/b;
+.field public g:Lh9/b;
 
-.field public g:Lh9/a$a;
+.field public h:Lh9/a$a;
 
 
 # direct methods
@@ -35,7 +35,7 @@
     invoke-direct {p0, p1, v0, v2, v1}, Landroid/database/sqlite/SQLiteOpenHelper;-><init>(Landroid/content/Context;Ljava/lang/String;Landroid/database/sqlite/SQLiteDatabase$CursorFactory;I)V
 
     .line 2
-    iput-object p2, p0, Lh9/a;->f:Lh9/b;
+    iput-object p2, p0, Lh9/a;->g:Lh9/b;
 
     return-void
 .end method
@@ -46,7 +46,7 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lh9/a;->f:Lh9/b;
+    iget-object v0, p0, Lh9/a;->g:Lh9/b;
 
     invoke-interface {v0}, Lh9/b;->c()Ljava/util/List;
 
@@ -82,7 +82,7 @@
     .locals 4
 
     .line 1
-    iget-object v0, p0, Lh9/a;->f:Lh9/b;
+    iget-object v0, p0, Lh9/a;->g:Lh9/b;
 
     invoke-interface {v0}, Lh9/b;->n()Ljava/util/List;
 
@@ -177,7 +177,7 @@
     move-exception p1
 
     .line 8
-    iget-object v2, p0, Lh9/a;->f:Lh9/b;
+    iget-object v2, p0, Lh9/a;->g:Lh9/b;
 
     invoke-interface {v2}, Lh9/b;->getTag()Ljava/lang/String;
 
@@ -185,7 +185,7 @@
 
     new-array v1, v1, [Lz9/a;
 
-    invoke-static {v2, v0, p1, v1}, Landroidx/savedstate/d;->j(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v2, v0, p1, v1}, Le5/i;->l(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
 
     goto :goto_3
 
@@ -199,7 +199,7 @@
 
     .line 9
     :try_start_2
-    iget-object v3, p0, Lh9/a;->f:Lh9/b;
+    iget-object v3, p0, Lh9/a;->g:Lh9/b;
 
     invoke-interface {v3}, Lh9/b;->getTag()Ljava/lang/String;
 
@@ -213,7 +213,7 @@
 
     invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v5, p0, Lh9/a;->f:Lh9/b;
+    iget-object v5, p0, Lh9/a;->g:Lh9/b;
 
     .line 10
     invoke-interface {v5}, Lh9/b;->p()I
@@ -229,7 +229,7 @@
     new-array v5, v1, [Lz9/a;
 
     .line 11
-    invoke-static {v3, v4, v2, v5}, Landroidx/savedstate/d;->j(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v3, v4, v2, v5}, Le5/i;->l(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
@@ -252,7 +252,7 @@
     move-exception p1
 
     .line 14
-    iget-object v2, p0, Lh9/a;->f:Lh9/b;
+    iget-object v2, p0, Lh9/a;->g:Lh9/b;
 
     invoke-interface {v2}, Lh9/b;->getTag()Ljava/lang/String;
 
@@ -260,7 +260,7 @@
 
     new-array v3, v1, [Lz9/a;
 
-    invoke-static {v2, v0, p1, v3}, Landroidx/savedstate/d;->j(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v2, v0, p1, v3}, Le5/i;->l(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
 
     :cond_0
     :goto_0
@@ -286,7 +286,7 @@
     move-exception p1
 
     .line 17
-    iget-object v3, p0, Lh9/a;->f:Lh9/b;
+    iget-object v3, p0, Lh9/a;->g:Lh9/b;
 
     invoke-interface {v3}, Lh9/b;->getTag()Ljava/lang/String;
 
@@ -294,7 +294,7 @@
 
     new-array v1, v1, [Lz9/a;
 
-    invoke-static {v3, v0, p1, v1}, Landroidx/savedstate/d;->j(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v3, v0, p1, v1}, Le5/i;->l(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
 
     .line 18
     :cond_1
@@ -326,7 +326,7 @@
     move-exception p1
 
     .line 3
-    iget-object v0, p0, Lh9/a;->f:Lh9/b;
+    iget-object v0, p0, Lh9/a;->g:Lh9/b;
 
     invoke-interface {v0}, Lh9/b;->getTag()Ljava/lang/String;
 
@@ -340,7 +340,7 @@
     move-result-object v1
 
     .line 5
-    iget-object v2, p0, Lh9/a;->f:Lh9/b;
+    iget-object v2, p0, Lh9/a;->g:Lh9/b;
 
     .line 6
     invoke-interface {v2}, Lh9/b;->p()I
@@ -358,7 +358,7 @@
     new-array v2, v2, [Lz9/a;
 
     .line 7
-    invoke-static {v0, v1, p1, v2}, Landroidx/savedstate/d;->j(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v0, v1, p1, v2}, Le5/i;->l(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
 
     .line 8
     throw p1
@@ -402,7 +402,7 @@
     move-exception p1
 
     .line 6
-    iget-object v2, p0, Lh9/a;->f:Lh9/b;
+    iget-object v2, p0, Lh9/a;->g:Lh9/b;
 
     invoke-interface {v2}, Lh9/b;->getTag()Ljava/lang/String;
 
@@ -410,7 +410,7 @@
 
     new-array v1, v1, [Lz9/a;
 
-    invoke-static {v2, v0, p1, v1}, Landroidx/savedstate/d;->j(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v2, v0, p1, v1}, Le5/i;->l(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
 
     :cond_0
     :goto_0
@@ -438,7 +438,7 @@
     move-exception p1
 
     .line 9
-    iget-object v3, p0, Lh9/a;->f:Lh9/b;
+    iget-object v3, p0, Lh9/a;->g:Lh9/b;
 
     invoke-interface {v3}, Lh9/b;->getTag()Ljava/lang/String;
 
@@ -446,7 +446,7 @@
 
     new-array v1, v1, [Lz9/a;
 
-    invoke-static {v3, v0, p1, v1}, Landroidx/savedstate/d;->j(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v3, v0, p1, v1}, Le5/i;->l(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
 
     .line 10
     :cond_1
@@ -461,17 +461,17 @@
     invoke-virtual {p0, p1}, Lh9/a;->d(Landroid/database/sqlite/SQLiteDatabase;)V
 
     .line 2
-    iget-object p1, p0, Lh9/a;->g:Lh9/a$a;
+    iget-object p1, p0, Lh9/a;->h:Lh9/a$a;
 
     if-eqz p1, :cond_0
 
     .line 3
-    iget-object p1, p0, Lh9/a;->f:Lh9/b;
+    iget-object p1, p0, Lh9/a;->g:Lh9/b;
 
     invoke-interface {p1}, Lh9/b;->i()Ljava/lang/String;
 
     .line 4
-    sget-object p1, Lcom/helpshift/util/u;->c:Le7/g;
+    sget-object p1, Lcom/helpshift/util/t;->c:Le7/g;
 
     .line 5
     invoke-virtual {p1}, Le7/g;->h()V
@@ -484,14 +484,14 @@
     .locals 4
 
     .line 1
-    iget-object p3, p0, Lh9/a;->f:Lh9/b;
+    iget-object p3, p0, Lh9/a;->g:Lh9/b;
 
     invoke-interface {p3, p2}, Lh9/b;->o(I)Ljava/util/List;
 
     move-result-object p3
 
     .line 2
-    invoke-static {p3}, Lbc/a;->d(Ljava/util/List;)Z
+    invoke-static {p3}, Lt5/a;->g(Ljava/util/List;)Z
 
     move-result v0
 
@@ -534,7 +534,7 @@
     move-exception p3
 
     .line 5
-    iget-object v1, p0, Lh9/a;->f:Lh9/b;
+    iget-object v1, p0, Lh9/a;->g:Lh9/b;
 
     invoke-interface {v1}, Lh9/b;->getTag()Ljava/lang/String;
 
@@ -548,7 +548,7 @@
     move-result-object v2
 
     .line 7
-    iget-object v3, p0, Lh9/a;->f:Lh9/b;
+    iget-object v3, p0, Lh9/a;->g:Lh9/b;
 
     .line 8
     invoke-interface {v3}, Lh9/b;->i()Ljava/lang/String;
@@ -567,7 +567,7 @@
 
     invoke-virtual {v2, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object p2, p0, Lh9/a;->f:Lh9/b;
+    iget-object p2, p0, Lh9/a;->g:Lh9/b;
 
     .line 9
     invoke-interface {p2}, Lh9/b;->p()I
@@ -583,7 +583,7 @@
     new-array v2, v0, [Lz9/a;
 
     .line 10
-    invoke-static {v1, p2, p3, v2}, Landroidx/savedstate/d;->j(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v1, p2, p3, v2}, Le5/i;->l(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
 
     :goto_1
     if-nez v0, :cond_1
@@ -593,14 +593,14 @@
 
     .line 12
     :cond_1
-    iget-object p1, p0, Lh9/a;->g:Lh9/a$a;
+    iget-object p1, p0, Lh9/a;->h:Lh9/a$a;
 
     if-eqz p1, :cond_3
 
     if-eqz v0, :cond_2
 
     .line 13
-    iget-object p1, p0, Lh9/a;->f:Lh9/b;
+    iget-object p1, p0, Lh9/a;->g:Lh9/b;
 
     invoke-interface {p1}, Lh9/b;->i()Ljava/lang/String;
 
@@ -608,12 +608,12 @@
 
     .line 14
     :cond_2
-    iget-object p1, p0, Lh9/a;->f:Lh9/b;
+    iget-object p1, p0, Lh9/a;->g:Lh9/b;
 
     invoke-interface {p1}, Lh9/b;->i()Ljava/lang/String;
 
     .line 15
-    sget-object p1, Lcom/helpshift/util/u;->c:Le7/g;
+    sget-object p1, Lcom/helpshift/util/t;->c:Le7/g;
 
     .line 16
     invoke-virtual {p1}, Le7/g;->h()V

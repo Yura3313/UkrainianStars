@@ -3,27 +3,27 @@
 .source "MessagesTabFriendsFragment.kt"
 
 # interfaces
-.implements Lae/b2;
+.implements Lae/a2;
 
 
 # instance fields
 .field public final a:I
 
-.field public final b:Lvc/x;
+.field public final b:Lvc/v;
 
 
 # direct methods
-.method public constructor <init>(Lvc/x;)V
+.method public constructor <init>(Lvc/v;)V
     .locals 1
 
     const-string v0, "shopItem"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lnd/l;->b:Lvc/x;
+    iput-object p1, p0, Lnd/l;->b:Lvc/v;
 
     .line 2
     sget p1, Lcom/supercell/id/R$layout;->fragment_messages_list_item_friend_request:I
@@ -35,12 +35,12 @@
 
 
 # virtual methods
-.method public final a(Lae/b2;)Z
+.method public final a(Lae/a2;)Z
     .locals 1
 
     const-string v0, "other"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     instance-of v0, p1, Lnd/l;
@@ -55,19 +55,19 @@
     :cond_0
     check-cast p1, Lnd/l;
 
-    iget-object p1, p1, Lnd/l;->b:Lvc/x;
+    iget-object p1, p1, Lnd/l;->b:Lvc/v;
 
     .line 3
-    iget-object p1, p1, Lvc/x;->e:Lvc/y;
+    iget-object p1, p1, Lvc/v;->e:Lvc/w;
 
     .line 4
-    iget-object v0, p0, Lnd/l;->b:Lvc/x;
+    iget-object v0, p0, Lnd/l;->b:Lvc/v;
 
     .line 5
-    iget-object v0, v0, Lvc/x;->e:Lvc/y;
+    iget-object v0, v0, Lvc/v;->e:Lvc/w;
 
     .line 6
-    invoke-static {p1, v0}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {p1, v0}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -82,12 +82,12 @@
     return v0
 .end method
 
-.method public final d(Lae/b2;)Z
+.method public final d(Lae/a2;)Z
     .locals 1
 
     const-string v0, "other"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     instance-of v0, p1, Lnd/l;
@@ -96,19 +96,19 @@
 
     check-cast p1, Lnd/l;
 
-    iget-object p1, p1, Lnd/l;->b:Lvc/x;
+    iget-object p1, p1, Lnd/l;->b:Lvc/v;
 
     .line 2
-    iget-object p1, p1, Lvc/x;->a:Ljava/lang/String;
+    iget-object p1, p1, Lvc/v;->a:Ljava/lang/String;
 
     .line 3
-    iget-object v0, p0, Lnd/l;->b:Lvc/x;
+    iget-object v0, p0, Lnd/l;->b:Lvc/v;
 
     .line 4
-    iget-object v0, v0, Lvc/x;->a:Ljava/lang/String;
+    iget-object v0, v0, Lvc/v;->a:Ljava/lang/String;
 
     .line 5
-    invoke-static {p1, v0}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {p1, v0}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -129,25 +129,25 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lnd/l;->b:Lvc/x;
+    iget-object v0, p0, Lnd/l;->b:Lvc/v;
 
     .line 2
-    iget-object v0, v0, Lvc/x;->e:Lvc/y;
+    iget-object v0, v0, Lvc/v;->e:Lvc/w;
 
     .line 3
-    instance-of v1, v0, Lvc/y$e;
+    instance-of v1, v0, Lvc/w$e;
 
     if-nez v1, :cond_0
 
     const/4 v0, 0x0
 
     :cond_0
-    check-cast v0, Lvc/y$e;
+    check-cast v0, Lvc/w$e;
 
     if-eqz v0, :cond_1
 
     .line 4
-    iget-object v0, v0, Lvc/y$e;->e:Ljava/util/Date;
+    iget-object v0, v0, Lvc/w$e;->e:Ljava/util/Date;
 
     if-eqz v0, :cond_1
 
@@ -174,11 +174,11 @@
 
     check-cast p1, Lnd/l;
 
-    iget-object v0, p0, Lnd/l;->b:Lvc/x;
+    iget-object v0, p0, Lnd/l;->b:Lvc/v;
 
-    iget-object p1, p1, Lnd/l;->b:Lvc/x;
+    iget-object p1, p1, Lnd/l;->b:Lvc/v;
 
-    invoke-static {v0, p1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, p1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -201,11 +201,11 @@
 .method public final hashCode()I
     .locals 1
 
-    iget-object v0, p0, Lnd/l;->b:Lvc/x;
+    iget-object v0, p0, Lnd/l;->b:Lvc/v;
 
     if-eqz v0, :cond_0
 
-    invoke-virtual {v0}, Lvc/x;->hashCode()I
+    invoke-virtual {v0}, Lvc/v;->hashCode()I
 
     move-result v0
 
@@ -229,7 +229,7 @@
     move-result-object v0
 
     .line 2
-    iget-object v1, p0, Lnd/l;->b:Lvc/x;
+    iget-object v1, p0, Lnd/l;->b:Lvc/v;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 

@@ -58,7 +58,7 @@
     iget-object v0, p0, Landroidx/constraintlayout/utils/widget/ImageFilterView$a;->a:Landroidx/constraintlayout/utils/widget/ImageFilterView;
 
     .line 4
-    iget v0, v0, Landroidx/constraintlayout/utils/widget/ImageFilterView;->i:F
+    iget v0, v0, Landroidx/constraintlayout/utils/widget/ImageFilterView;->j:F
 
     mul-float p1, p1, v0
 

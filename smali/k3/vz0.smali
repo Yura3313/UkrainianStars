@@ -2,24 +2,46 @@
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
+# interfaces
+.implements Landroid/os/Parcelable$Creator;
 
-# instance fields
-.field public final a:I
 
-.field public final synthetic b:Lk3/qz0;
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Landroid/os/Parcelable$Creator<",
+        "Lcom/google/android/gms/internal/ads/zzmm;",
+        ">;"
+    }
+.end annotation
 
 
 # direct methods
-.method public constructor <init>(Lk3/qz0;I)V
+.method public constructor <init>()V
     .locals 0
-
-    .line 1
-    iput-object p1, p0, Lk3/vz0;->b:Lk3/qz0;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
-    iput p2, p0, Lk3/vz0;->a:I
-
     return-void
+.end method
+
+
+# virtual methods
+.method public final synthetic createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
+    .locals 1
+
+    new-instance v0, Lcom/google/android/gms/internal/ads/zzmm;
+
+    invoke-direct {v0, p1}, Lcom/google/android/gms/internal/ads/zzmm;-><init>(Landroid/os/Parcel;)V
+
+    return-object v0
+.end method
+
+.method public final synthetic newArray(I)[Ljava/lang/Object;
+    .locals 0
+
+    new-array p1, p1, [Lcom/google/android/gms/internal/ads/zzmm;
+
+    return-object p1
 .end method

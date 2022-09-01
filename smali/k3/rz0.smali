@@ -3,86 +3,112 @@
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Ljava/lang/Runnable;
+.implements Lk3/qz0;
+
+
+# annotations
+.annotation build Landroid/annotation/TargetApi;
+    value = 0x15
+.end annotation
 
 
 # instance fields
-.field public final synthetic f:I
+.field public final a:I
 
-.field public final synthetic g:Ljava/lang/Object;
-
-.field public final synthetic h:Ljava/lang/Object;
+.field public b:[Landroid/media/MediaCodecInfo;
 
 
 # direct methods
-.method public synthetic constructor <init>(Ljava/lang/Object;Ljava/lang/Object;I)V
+.method public constructor <init>(Z)V
     .locals 0
 
-    iput p3, p0, Lk3/rz0;->f:I
-
-    iput-object p1, p0, Lk3/rz0;->h:Ljava/lang/Object;
-
-    iput-object p2, p0, Lk3/rz0;->g:Ljava/lang/Object;
-
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    iput p1, p0, Lk3/rz0;->a:I
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final run()V
-    .locals 3
+.method public final a()Z
+    .locals 1
 
-    iget v0, p0, Lk3/rz0;->f:I
+    const/4 v0, 0x1
 
-    packed-switch v0, :pswitch_data_0
+    return v0
+.end method
 
-    goto :goto_0
+.method public final b(I)Landroid/media/MediaCodecInfo;
+    .locals 2
 
     .line 1
-    :pswitch_0
-    iget-object v0, p0, Lk3/rz0;->h:Ljava/lang/Object;
+    iget-object v0, p0, Lk3/rz0;->b:[Landroid/media/MediaCodecInfo;
 
-    check-cast v0, Lk3/qz0;
+    if-nez v0, :cond_0
 
     .line 2
-    iget-object v0, v0, Lk3/qz0;->j:Lk3/wf;
+    new-instance v0, Landroid/media/MediaCodecList;
+
+    iget v1, p0, Lk3/rz0;->a:I
+
+    invoke-direct {v0, v1}, Landroid/media/MediaCodecList;-><init>(I)V
+
+    invoke-virtual {v0}, Landroid/media/MediaCodecList;->getCodecInfos()[Landroid/media/MediaCodecInfo;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lk3/rz0;->b:[Landroid/media/MediaCodecInfo;
 
     .line 3
-    iget-object v1, p0, Lk3/rz0;->g:Ljava/lang/Object;
-
-    check-cast v1, Ljava/io/IOException;
-
-    .line 4
-    iget-object v0, v0, Lk3/wf;->o:Lk3/bg;
-
-    if-eqz v0, :cond_0
-
-    const-string v2, "onLoadError"
-
-    .line 5
-    invoke-interface {v0, v2, v1}, Lk3/bg;->d(Ljava/lang/String;Ljava/lang/Exception;)V
-
     :cond_0
-    return-void
+    iget-object v0, p0, Lk3/rz0;->b:[Landroid/media/MediaCodecInfo;
 
-    .line 6
-    :goto_0
-    iget-object v0, p0, Lk3/rz0;->h:Ljava/lang/Object;
+    aget-object p1, v0, p1
 
-    check-cast v0, Lk3/f21;
+    return-object p1
+.end method
 
-    .line 7
-    iget-object v0, v0, Lk3/f21;->b:Lk3/wf;
+.method public final c()I
+    .locals 2
 
-    .line 8
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    .line 1
+    iget-object v0, p0, Lk3/rz0;->b:[Landroid/media/MediaCodecInfo;
 
-    return-void
+    if-nez v0, :cond_0
 
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+    .line 2
+    new-instance v0, Landroid/media/MediaCodecList;
+
+    iget v1, p0, Lk3/rz0;->a:I
+
+    invoke-direct {v0, v1}, Landroid/media/MediaCodecList;-><init>(I)V
+
+    invoke-virtual {v0}, Landroid/media/MediaCodecList;->getCodecInfos()[Landroid/media/MediaCodecInfo;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lk3/rz0;->b:[Landroid/media/MediaCodecInfo;
+
+    .line 3
+    :cond_0
+    iget-object v0, p0, Lk3/rz0;->b:[Landroid/media/MediaCodecInfo;
+
+    array-length v0, v0
+
+    return v0
+.end method
+
+.method public final d(Ljava/lang/String;Landroid/media/MediaCodecInfo$CodecCapabilities;)Z
+    .locals 0
+
+    const-string p1, "secure-playback"
+
+    invoke-virtual {p2, p1}, Landroid/media/MediaCodecInfo$CodecCapabilities;->isFeatureSupported(Ljava/lang/String;)Z
+
+    move-result p1
+
+    return p1
 .end method

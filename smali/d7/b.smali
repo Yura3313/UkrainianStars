@@ -177,7 +177,7 @@
     iget-object v9, v0, Ld7/b;->a:Ll6/b;
 
     .line 5
-    iget v10, v9, Ll6/b;->g:I
+    iget v10, v9, Ll6/b;->h:I
 
     .line 6
     iget-object v11, v0, Ld7/b;->h:[I

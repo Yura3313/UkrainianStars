@@ -8,7 +8,7 @@
 
 
 # direct methods
-.method public constructor <init>(Ln7/a;Lv3/g1;)V
+.method public constructor <init>(Ln7/a;Lv3/f1;)V
     .locals 0
 
     .line 1

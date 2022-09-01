@@ -1,12 +1,35 @@
-.class public final Lk3/ms0;
+.class public abstract Lk3/ms0;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads-lite@@19.3.0"
 
-# interfaces
-.implements Lk3/ys0;
+
+# static fields
+.field public static final a:Lk3/os0;
+
+.field public static final b:Lk3/qs0;
 
 
 # direct methods
+.method public static constructor <clinit>()V
+    .locals 1
+
+    .line 1
+    new-instance v0, Lk3/os0;
+
+    invoke-direct {v0}, Lk3/os0;-><init>()V
+
+    sput-object v0, Lk3/ms0;->a:Lk3/os0;
+
+    .line 2
+    new-instance v0, Lk3/qs0;
+
+    invoke-direct {v0}, Lk3/qs0;-><init>()V
+
+    sput-object v0, Lk3/ms0;->b:Lk3/qs0;
+
+    return-void
+.end method
+
 .method public constructor <init>()V
     .locals 0
 
@@ -17,37 +40,34 @@
 
 
 # virtual methods
-.method public final a(Ljava/lang/Class;)Lk3/us0;
-    .locals 1
+.method public abstract a(Ljava/lang/Object;J)Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "(",
-            "Ljava/lang/Class<",
-            "*>;)",
-            "Lk3/us0;"
+            "<",
+            "L:Ljava/lang/Object;",
+            ">(",
+            "Ljava/lang/Object;",
+            "J)",
+            "Ljava/util/List<",
+            "T",
+            "L;",
+            ">;"
         }
     .end annotation
-
-    new-instance p1, Ljava/lang/IllegalStateException;
-
-    const-string v0, "This should never be called."
-
-    invoke-direct {p1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
-    throw p1
 .end method
 
-.method public final b(Ljava/lang/Class;)Z
-    .locals 0
+.method public abstract b(Ljava/lang/Object;Ljava/lang/Object;J)V
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "(",
-            "Ljava/lang/Class<",
-            "*>;)Z"
+            "<",
+            "L:Ljava/lang/Object;",
+            ">(",
+            "Ljava/lang/Object;",
+            "Ljava/lang/Object;",
+            "J)V"
         }
     .end annotation
+.end method
 
-    const/4 p1, 0x0
-
-    return p1
+.method public abstract c(Ljava/lang/Object;J)V
 .end method

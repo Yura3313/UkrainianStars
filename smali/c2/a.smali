@@ -20,7 +20,7 @@
 
 
 # instance fields
-.field public final f:Lcom/google/android/gms/common/data/DataHolder;
+.field public final g:Lcom/google/android/gms/common/data/DataHolder;
     .annotation build Landroidx/annotation/RecentlyNullable;
     .end annotation
 .end field
@@ -39,7 +39,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lc2/a;->f:Lcom/google/android/gms/common/data/DataHolder;
+    iget-object v0, p0, Lc2/a;->g:Lcom/google/android/gms/common/data/DataHolder;
 
     if-nez v0, :cond_0
 
@@ -49,7 +49,7 @@
 
     .line 2
     :cond_0
-    iget v0, v0, Lcom/google/android/gms/common/data/DataHolder;->m:I
+    iget v0, v0, Lcom/google/android/gms/common/data/DataHolder;->n:I
 
     return v0
 .end method
@@ -78,7 +78,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lc2/a;->f:Lcom/google/android/gms/common/data/DataHolder;
+    iget-object v0, p0, Lc2/a;->g:Lcom/google/android/gms/common/data/DataHolder;
 
     if-eqz v0, :cond_0
 

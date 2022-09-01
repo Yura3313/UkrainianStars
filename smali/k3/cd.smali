@@ -4,14 +4,14 @@
 
 
 # instance fields
-.field public final synthetic f:Ljava/lang/String;
+.field public final synthetic g:Ljava/lang/String;
 
 
 # direct methods
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 0
 
-    iput-object p1, p0, Lk3/cd;->f:Ljava/lang/String;
+    iput-object p1, p0, Lk3/cd;->g:Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Thread;-><init>()V
 
@@ -32,7 +32,7 @@
     invoke-direct {v0, v1}, Lk3/id;-><init>(Ljava/lang/String;)V
 
     .line 3
-    iget-object v1, p0, Lk3/cd;->f:Ljava/lang/String;
+    iget-object v1, p0, Lk3/cd;->g:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Lk3/id;->c(Ljava/lang/String;)V
 

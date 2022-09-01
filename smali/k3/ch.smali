@@ -7,14 +7,14 @@
 
 
 # instance fields
-.field public final synthetic f:Landroid/webkit/JsPromptResult;
+.field public final synthetic g:Landroid/webkit/JsPromptResult;
 
 
 # direct methods
 .method public constructor <init>(Landroid/webkit/JsPromptResult;)V
     .locals 0
 
-    iput-object p1, p0, Lk3/ch;->f:Landroid/webkit/JsPromptResult;
+    iput-object p1, p0, Lk3/ch;->g:Landroid/webkit/JsPromptResult;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -26,7 +26,7 @@
 .method public final onCancel(Landroid/content/DialogInterface;)V
     .locals 0
 
-    iget-object p1, p0, Lk3/ch;->f:Landroid/webkit/JsPromptResult;
+    iget-object p1, p0, Lk3/ch;->g:Landroid/webkit/JsPromptResult;
 
     invoke-virtual {p1}, Landroid/webkit/JsResult;->cancel()V
 

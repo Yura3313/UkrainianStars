@@ -9,35 +9,35 @@
 
 
 # instance fields
-.field public g0:Lu8/a;
+.field public h0:Lu8/a;
 
-.field public h0:Landroid/widget/ProgressBar;
+.field public i0:Landroid/widget/ProgressBar;
 
-.field public i0:I
+.field public j0:I
 
-.field public j0:Loa/a;
-
-.field public k0:I
+.field public k0:Loa/a;
 
 .field public l0:I
 
-.field public m0:Landroid/widget/ImageView;
+.field public m0:I
 
-.field public n0:Landroid/widget/Button;
+.field public n0:Landroid/widget/ImageView;
 
-.field public o0:Landroid/view/View;
+.field public o0:Landroid/widget/Button;
 
 .field public p0:Landroid/view/View;
 
-.field public q0:Landroid/widget/TextView;
+.field public q0:Landroid/view/View;
 
 .field public r0:Landroid/widget/TextView;
 
 .field public s0:Landroid/widget/TextView;
 
-.field public t0:Ljava/lang/String;
+.field public t0:Landroid/widget/TextView;
 
-.field public u0:Lf9/a;
+.field public u0:Ljava/lang/String;
+
+.field public v0:Lf9/a;
 
 
 # direct methods
@@ -63,7 +63,7 @@
     .locals 4
 
     .line 1
-    iget-object v0, p0, Lab/c;->g0:Lu8/a;
+    iget-object v0, p0, Lab/c;->h0:Lu8/a;
 
     iget v0, v0, Lu8/a;->f:I
 
@@ -76,12 +76,12 @@
     if-ne v0, v2, :cond_0
 
     .line 2
-    iget-object v0, p0, Lab/c;->p0:Landroid/view/View;
+    iget-object v0, p0, Lab/c;->q0:Landroid/view/View;
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
 
     .line 3
-    iget-object v0, p0, Lab/c;->m0:Landroid/widget/ImageView;
+    iget-object v0, p0, Lab/c;->n0:Landroid/widget/ImageView;
 
     invoke-virtual {v0, v3}, Landroid/widget/ImageView;->setVisibility(I)V
 
@@ -90,7 +90,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lab/c;->m0:Landroid/widget/ImageView;
+    iget-object v1, p0, Lab/c;->n0:Landroid/widget/ImageView;
 
     .line 5
     invoke-virtual {p0}, Lab/i;->y()Landroid/content/Context;
@@ -117,26 +117,26 @@
 
     .line 8
     :cond_0
-    iget-object p1, p0, Lab/c;->p0:Landroid/view/View;
+    iget-object p1, p0, Lab/c;->q0:Landroid/view/View;
 
     invoke-virtual {p1, v3}, Landroid/view/View;->setVisibility(I)V
 
     .line 9
-    iget-object p1, p0, Lab/c;->m0:Landroid/widget/ImageView;
+    iget-object p1, p0, Lab/c;->n0:Landroid/widget/ImageView;
 
     invoke-virtual {p1, v1}, Landroid/widget/ImageView;->setVisibility(I)V
 
     .line 10
-    iget-object p1, p0, Lab/c;->q0:Landroid/widget/TextView;
+    iget-object p1, p0, Lab/c;->r0:Landroid/widget/TextView;
 
-    iget-object v0, p0, Lab/c;->g0:Lu8/a;
+    iget-object v0, p0, Lab/c;->h0:Lu8/a;
 
     iget-object v0, v0, Lu8/a;->a:Ljava/lang/String;
 
     invoke-virtual {p1, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 11
-    iget-object p1, p0, Lab/c;->g0:Lu8/a;
+    iget-object p1, p0, Lab/c;->h0:Lu8/a;
 
     iget-object p1, p1, Lu8/a;->a:Ljava/lang/String;
 
@@ -145,7 +145,7 @@
     move-result-object p1
 
     .line 12
-    invoke-static {p1}, Lcom/google/android/play/core/appupdate/g;->b(Ljava/lang/String;)Z
+    invoke-static {p1}, La5/b0;->d(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -182,14 +182,14 @@
 
     .line 16
     :cond_1
-    iget-object p1, p0, Lab/c;->r0:Landroid/widget/TextView;
+    iget-object p1, p0, Lab/c;->s0:Landroid/widget/TextView;
 
     invoke-virtual {p1, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 17
-    iget-object p1, p0, Lab/c;->s0:Landroid/widget/TextView;
+    iget-object p1, p0, Lab/c;->t0:Landroid/widget/TextView;
 
-    iget-object v0, p0, Lab/c;->g0:Lu8/a;
+    iget-object v0, p0, Lab/c;->h0:Lu8/a;
 
     iget-object v0, v0, Lu8/a;->b:Ljava/lang/Long;
 
@@ -199,7 +199,7 @@
 
     long-to-double v0, v0
 
-    invoke-static {v0, v1}, Lcom/google/android/play/core/assetpacks/y;->b(D)Ljava/lang/String;
+    invoke-static {v0, v1}, La0/a;->d(D)Ljava/lang/String;
 
     move-result-object v0
 
@@ -220,12 +220,12 @@
     if-eqz v0, :cond_3
 
     .line 2
-    iget-object v0, p0, Lab/c;->g0:Lu8/a;
+    iget-object v0, p0, Lab/c;->h0:Lu8/a;
 
     if-nez v0, :cond_1
 
     .line 3
-    iget-object v0, p0, Lab/c;->j0:Loa/a;
+    iget-object v0, p0, Lab/c;->k0:Loa/a;
 
     if-eqz v0, :cond_0
 
@@ -241,7 +241,7 @@
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lj1/q;->h(Landroidx/fragment/app/FragmentManager;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Ls4/e;->l(Landroidx/fragment/app/FragmentManager;Ljava/lang/String;)V
 
     :cond_0
     return-void
@@ -269,14 +269,14 @@
     invoke-virtual {p0, v0}, Lab/c;->U0(Z)V
 
     .line 10
-    sget-object v0, Lcom/helpshift/util/u;->c:Le7/g;
+    sget-object v0, Lcom/helpshift/util/t;->c:Le7/g;
 
     .line 11
     invoke-virtual {v0}, Le7/g;->d()La8/b;
 
     move-result-object v0
 
-    iget-object v1, p0, Lab/c;->g0:Lu8/a;
+    iget-object v1, p0, Lab/c;->h0:Lu8/a;
 
     .line 12
     iget-object v2, v0, La8/b;->b:La8/f;
@@ -302,22 +302,22 @@
     if-eqz p1, :cond_0
 
     .line 1
-    iget-object p1, p0, Lab/c;->h0:Landroid/widget/ProgressBar;
+    iget-object p1, p0, Lab/c;->i0:Landroid/widget/ProgressBar;
 
     invoke-virtual {p1, v0}, Landroid/view/View;->setVisibility(I)V
 
     .line 2
-    iget-object p1, p0, Lab/c;->o0:Landroid/view/View;
+    iget-object p1, p0, Lab/c;->p0:Landroid/view/View;
 
     invoke-virtual {p1, v1}, Landroid/view/View;->setVisibility(I)V
 
     .line 3
-    iget-object p1, p0, Lab/c;->m0:Landroid/widget/ImageView;
+    iget-object p1, p0, Lab/c;->n0:Landroid/widget/ImageView;
 
     invoke-virtual {p1, v1}, Landroid/widget/ImageView;->setVisibility(I)V
 
     .line 4
-    iget-object p1, p0, Lab/c;->p0:Landroid/view/View;
+    iget-object p1, p0, Lab/c;->q0:Landroid/view/View;
 
     invoke-virtual {p1, v1}, Landroid/view/View;->setVisibility(I)V
 
@@ -325,17 +325,17 @@
 
     .line 5
     :cond_0
-    iget-object p1, p0, Lab/c;->h0:Landroid/widget/ProgressBar;
+    iget-object p1, p0, Lab/c;->i0:Landroid/widget/ProgressBar;
 
     invoke-virtual {p1, v1}, Landroid/view/View;->setVisibility(I)V
 
     .line 6
-    iget-object p1, p0, Lab/c;->o0:Landroid/view/View;
+    iget-object p1, p0, Lab/c;->p0:Landroid/view/View;
 
     invoke-virtual {p1, v0}, Landroid/view/View;->setVisibility(I)V
 
     .line 7
-    iget-object p1, p0, Lab/c;->g0:Lu8/a;
+    iget-object p1, p0, Lab/c;->h0:Lu8/a;
 
     iget p1, p1, Lu8/a;->f:I
 
@@ -344,7 +344,7 @@
     if-ne p1, v1, :cond_1
 
     .line 8
-    iget-object p1, p0, Lab/c;->m0:Landroid/widget/ImageView;
+    iget-object p1, p0, Lab/c;->n0:Landroid/widget/ImageView;
 
     invoke-virtual {p1, v0}, Landroid/widget/ImageView;->setVisibility(I)V
 
@@ -352,7 +352,7 @@
 
     .line 9
     :cond_1
-    iget-object p1, p0, Lab/c;->p0:Landroid/view/View;
+    iget-object p1, p0, Lab/c;->q0:Landroid/view/View;
 
     invoke-virtual {p1, v0}, Landroid/view/View;->setVisibility(I)V
 
@@ -378,7 +378,7 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lab/c;->u0:Lf9/a;
+    iget-object v0, p0, Lab/c;->v0:Lf9/a;
 
     const/4 v1, 0x0
 
@@ -404,7 +404,7 @@
     const/4 v0, 0x1
 
     .line 7
-    iput-boolean v0, p0, Landroidx/fragment/app/Fragment;->K:Z
+    iput-boolean v0, p0, Landroidx/fragment/app/Fragment;->L:Z
 
     return-void
 .end method
@@ -413,7 +413,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/fragment/app/Fragment;->M:Landroid/view/View;
+    iget-object v0, p0, Landroidx/fragment/app/Fragment;->N:Landroid/view/View;
 
     .line 2
     invoke-static {v0}, Lib/f;->a(Landroid/view/View;)V
@@ -430,12 +430,12 @@
     const/4 v0, 0x1
 
     .line 1
-    iput-boolean v0, p0, Landroidx/fragment/app/Fragment;->K:Z
+    iput-boolean v0, p0, Landroidx/fragment/app/Fragment;->L:Z
 
     .line 2
-    iget-object v1, p0, Lab/c;->n0:Landroid/widget/Button;
+    iget-object v1, p0, Lab/c;->o0:Landroid/widget/Button;
 
-    iget v2, p0, Lab/c;->k0:I
+    iget v2, p0, Lab/c;->l0:I
 
     .line 3
     invoke-virtual {v1}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
@@ -494,7 +494,7 @@
     const v6, 0x1010039
 
     .line 8
-    invoke-static {v3, v5, v6}, Lcom/helpshift/util/g0;->e(Landroid/content/Context;Landroid/graphics/drawable/Drawable;I)V
+    invoke-static {v3, v5, v6}, Lcom/helpshift/util/e0;->e(Landroid/content/Context;Landroid/graphics/drawable/Drawable;I)V
 
     goto :goto_1
 
@@ -533,13 +533,13 @@
     invoke-virtual {p0}, Lab/c;->T0()V
 
     .line 14
-    iget-object v1, p0, Landroidx/fragment/app/Fragment;->M:Landroid/view/View;
+    iget-object v1, p0, Landroidx/fragment/app/Fragment;->N:Landroid/view/View;
 
     .line 15
     invoke-virtual {v1, v0}, Landroid/view/View;->setFocusableInTouchMode(Z)V
 
     .line 16
-    iget-object v0, p0, Landroidx/fragment/app/Fragment;->M:Landroid/view/View;
+    iget-object v0, p0, Landroidx/fragment/app/Fragment;->N:Landroid/view/View;
 
     .line 17
     invoke-virtual {v0}, Landroid/view/View;->requestFocus()Z
@@ -566,7 +566,7 @@
     sget-object v0, Lhb/c$a;->a:Lhb/c;
 
     .line 3
-    sget-object v1, Lib/a;->i:Lib/a;
+    sget-object v1, Lib/a;->j:Lib/a;
 
     const-string v2, "current_open_screen"
 
@@ -596,7 +596,7 @@
     if-eqz v2, :cond_0
 
     .line 4
-    sget-object v3, Lib/a;->i:Lib/a;
+    sget-object v3, Lib/a;->j:Lib/a;
 
     invoke-virtual {v2, v3}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
@@ -615,7 +615,7 @@
     .locals 1
 
     .line 1
-    sget-object p2, Lcom/helpshift/util/u;->c:Le7/g;
+    sget-object p2, Lcom/helpshift/util/t;->c:Le7/g;
 
     .line 2
     new-instance v0, Lf9/a;
@@ -625,7 +625,7 @@
     invoke-direct {v0, p2, p0}, Lf9/a;-><init>(La8/f;Ln8/a;)V
 
     .line 3
-    iput-object v0, p0, Lab/c;->u0:Lf9/a;
+    iput-object v0, p0, Lab/c;->v0:Lf9/a;
 
     .line 4
     sget p2, Lcom/helpshift/R$id;->screenshot_preview:I
@@ -636,7 +636,7 @@
 
     check-cast p2, Landroid/widget/ImageView;
 
-    iput-object p2, p0, Lab/c;->m0:Landroid/widget/ImageView;
+    iput-object p2, p0, Lab/c;->n0:Landroid/widget/ImageView;
 
     .line 5
     sget p2, Lcom/helpshift/R$id;->generic_attachment_preview:I
@@ -645,7 +645,7 @@
 
     move-result-object p2
 
-    iput-object p2, p0, Lab/c;->p0:Landroid/view/View;
+    iput-object p2, p0, Lab/c;->q0:Landroid/view/View;
 
     .line 6
     sget p2, Lcom/helpshift/R$id;->attachment_file_name:I
@@ -656,7 +656,7 @@
 
     check-cast p2, Landroid/widget/TextView;
 
-    iput-object p2, p0, Lab/c;->q0:Landroid/widget/TextView;
+    iput-object p2, p0, Lab/c;->r0:Landroid/widget/TextView;
 
     .line 7
     sget p2, Lcom/helpshift/R$id;->attachment_file_type:I
@@ -667,7 +667,7 @@
 
     check-cast p2, Landroid/widget/TextView;
 
-    iput-object p2, p0, Lab/c;->r0:Landroid/widget/TextView;
+    iput-object p2, p0, Lab/c;->s0:Landroid/widget/TextView;
 
     .line 8
     sget p2, Lcom/helpshift/R$id;->attachment_file_size:I
@@ -678,7 +678,7 @@
 
     check-cast p2, Landroid/widget/TextView;
 
-    iput-object p2, p0, Lab/c;->s0:Landroid/widget/TextView;
+    iput-object p2, p0, Lab/c;->t0:Landroid/widget/TextView;
 
     .line 9
     sget p2, Lcom/helpshift/R$id;->change:I
@@ -701,7 +701,7 @@
 
     check-cast p2, Landroid/widget/Button;
 
-    iput-object p2, p0, Lab/c;->n0:Landroid/widget/Button;
+    iput-object p2, p0, Lab/c;->o0:Landroid/widget/Button;
 
     .line 12
     invoke-virtual {p2, p0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
@@ -715,7 +715,7 @@
 
     check-cast p2, Landroid/widget/ProgressBar;
 
-    iput-object p2, p0, Lab/c;->h0:Landroid/widget/ProgressBar;
+    iput-object p2, p0, Lab/c;->i0:Landroid/widget/ProgressBar;
 
     .line 14
     sget p2, Lcom/helpshift/R$id;->button_containers:I
@@ -724,7 +724,7 @@
 
     move-result-object p1
 
-    iput-object p1, p0, Lab/c;->o0:Landroid/view/View;
+    iput-object p1, p0, Lab/c;->p0:Landroid/view/View;
 
     return-void
 .end method
@@ -752,12 +752,12 @@
 
     if-ne p1, v0, :cond_4
 
-    iget-object v0, p0, Lab/c;->g0:Lu8/a;
+    iget-object v0, p0, Lab/c;->h0:Lu8/a;
 
     if-eqz v0, :cond_4
 
     .line 3
-    iget p1, p0, Lab/c;->k0:I
+    iget p1, p0, Lab/c;->l0:I
 
     if-eq p1, v1, :cond_3
 
@@ -769,9 +769,9 @@
 
     .line 4
     :cond_0
-    iget-object p1, p0, Lab/c;->j0:Loa/a;
+    iget-object p1, p0, Lab/c;->k0:Loa/a;
 
-    iget-object v2, p0, Lab/c;->t0:Ljava/lang/String;
+    iget-object v2, p0, Lab/c;->u0:Ljava/lang/String;
 
     check-cast p1, Lpa/b;
 
@@ -784,7 +784,7 @@
 
     move-result-object v4
 
-    invoke-static {v3, v4}, Lj1/q;->h(Landroidx/fragment/app/FragmentManager;Ljava/lang/String;)V
+    invoke-static {v3, v4}, Ls4/e;->l(Landroidx/fragment/app/FragmentManager;Ljava/lang/String;)V
 
     .line 6
     iget-object p1, p1, Lpa/b;->d:Landroidx/fragment/app/FragmentManager;
@@ -801,11 +801,11 @@
     if-eqz p1, :cond_6
 
     .line 8
-    iget-boolean v3, p1, Lqa/t;->s0:Z
+    iget-boolean v3, p1, Lqa/t;->t0:Z
 
     if-eqz v3, :cond_1
 
-    iget-object v3, p1, Lqa/t;->m0:Lf9/i;
+    iget-object v3, p1, Lqa/t;->n0:Lf9/i;
 
     if-eqz v3, :cond_1
 
@@ -822,31 +822,31 @@
 
     .line 10
     :cond_1
-    iput-object v0, p1, Lqa/t;->t0:Lu8/a;
+    iput-object v0, p1, Lqa/t;->u0:Lu8/a;
 
     .line 11
-    iput-object v2, p1, Lqa/t;->u0:Ljava/lang/String;
+    iput-object v2, p1, Lqa/t;->v0:Ljava/lang/String;
 
     .line 12
-    iput-boolean v1, p1, Lqa/t;->v0:Z
+    iput-boolean v1, p1, Lqa/t;->w0:Z
 
     goto/16 :goto_0
 
     .line 13
     :cond_2
-    sget-object p1, Lcom/helpshift/util/u;->c:Le7/g;
+    sget-object p1, Lcom/helpshift/util/t;->c:Le7/g;
 
     .line 14
     invoke-virtual {p1}, Le7/g;->d()La8/b;
 
     move-result-object p1
 
-    iget-object v0, p0, Lab/c;->g0:Lu8/a;
+    iget-object v0, p0, Lab/c;->h0:Lu8/a;
 
     invoke-virtual {p1, v0}, La8/b;->a(Lu8/a;)V
 
     .line 15
-    iget-object p1, p0, Lab/c;->j0:Loa/a;
+    iget-object p1, p0, Lab/c;->k0:Loa/a;
 
     check-cast p1, Lpa/b;
 
@@ -859,7 +859,7 @@
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lj1/q;->h(Landroidx/fragment/app/FragmentManager;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Ls4/e;->l(Landroidx/fragment/app/FragmentManager;Ljava/lang/String;)V
 
     .line 17
     iget-object p1, p1, Lpa/b;->d:Landroidx/fragment/app/FragmentManager;
@@ -880,7 +880,7 @@
 
     .line 20
     :cond_3
-    iget-object p1, p0, Lab/c;->j0:Loa/a;
+    iget-object p1, p0, Lab/c;->k0:Loa/a;
 
     check-cast p1, Lpa/b;
 
@@ -893,7 +893,7 @@
 
     move-result-object v3
 
-    invoke-static {v2, v3}, Lj1/q;->h(Landroidx/fragment/app/FragmentManager;Ljava/lang/String;)V
+    invoke-static {v2, v3}, Ls4/e;->l(Landroidx/fragment/app/FragmentManager;Ljava/lang/String;)V
 
     .line 22
     iget-object p1, p1, Lpa/b;->d:Landroidx/fragment/app/FragmentManager;
@@ -919,28 +919,28 @@
     if-ne p1, v0, :cond_6
 
     .line 26
-    iget p1, p0, Lab/c;->k0:I
+    iget p1, p0, Lab/c;->l0:I
 
     if-ne p1, v3, :cond_5
 
     .line 27
-    iput v1, p0, Lab/c;->k0:I
+    iput v1, p0, Lab/c;->l0:I
 
     .line 28
     :cond_5
-    sget-object p1, Lcom/helpshift/util/u;->c:Le7/g;
+    sget-object p1, Lcom/helpshift/util/t;->c:Le7/g;
 
     .line 29
     invoke-virtual {p1}, Le7/g;->d()La8/b;
 
     move-result-object p1
 
-    iget-object v0, p0, Lab/c;->g0:Lu8/a;
+    iget-object v0, p0, Lab/c;->h0:Lu8/a;
 
     invoke-virtual {p1, v0}, La8/b;->a(Lu8/a;)V
 
     .line 30
-    iput-object v5, p0, Lab/c;->g0:Lu8/a;
+    iput-object v5, p0, Lab/c;->h0:Lu8/a;
 
     .line 31
     new-instance p1, Landroid/os/Bundle;
@@ -948,28 +948,28 @@
     invoke-direct {p1}, Landroid/os/Bundle;-><init>()V
 
     .line 32
-    iget v0, p0, Lab/c;->k0:I
+    iget v0, p0, Lab/c;->l0:I
 
     const-string v1, "key_attachment_mode"
 
     invoke-virtual {p1, v1, v0}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
 
     .line 33
-    iget-object v0, p0, Lab/c;->t0:Ljava/lang/String;
+    iget-object v0, p0, Lab/c;->u0:Ljava/lang/String;
 
     const-string v1, "key_refers_id"
 
     invoke-virtual {p1, v1, v0}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 34
-    iget v0, p0, Lab/c;->l0:I
+    iget v0, p0, Lab/c;->m0:I
 
     const-string v1, "key_attachment_type"
 
     invoke-virtual {p1, v1, v0}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
 
     .line 35
-    iget-object v0, p0, Lab/c;->j0:Loa/a;
+    iget-object v0, p0, Lab/c;->k0:Loa/a;
 
     check-cast v0, Lpa/b;
 

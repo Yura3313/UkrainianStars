@@ -75,7 +75,7 @@
 
     .line 5
     :cond_0
-    iget-boolean v0, v2, Lcom/google/android/gms/internal/ads/v5$b;->h:Z
+    iget-boolean v0, v2, Lcom/google/android/gms/internal/ads/v5$b;->i:Z
 
     if-eqz v0, :cond_1
 
@@ -83,11 +83,11 @@
     invoke-virtual {v2}, Lcom/google/android/gms/internal/ads/v5$b;->n()V
 
     .line 7
-    iput-boolean v4, v2, Lcom/google/android/gms/internal/ads/v5$b;->h:Z
+    iput-boolean v4, v2, Lcom/google/android/gms/internal/ads/v5$b;->i:Z
 
     .line 8
     :cond_1
-    iget-object v0, v2, Lcom/google/android/gms/internal/ads/v5$b;->g:Lcom/google/android/gms/internal/ads/v5;
+    iget-object v0, v2, Lcom/google/android/gms/internal/ads/v5$b;->h:Lcom/google/android/gms/internal/ads/v5;
 
     check-cast v0, Lcom/google/android/gms/internal/ads/a0;
 

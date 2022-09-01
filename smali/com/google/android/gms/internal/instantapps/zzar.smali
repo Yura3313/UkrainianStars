@@ -15,14 +15,12 @@
 
 
 # instance fields
-.field public f:Z
+.field public g:Z
 
-.field public g:Ljava/lang/String;
+.field public h:Ljava/lang/String;
     .annotation runtime Ljavax/annotation/Nullable;
     .end annotation
 .end field
-
-.field public h:Z
 
 .field public i:Z
 
@@ -31,6 +29,8 @@
 .field public k:Z
 
 .field public l:Z
+
+.field public m:Z
 
 
 # direct methods
@@ -66,25 +66,25 @@
     invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
 
     .line 2
-    iput-boolean p1, p0, Lcom/google/android/gms/internal/instantapps/zzar;->f:Z
+    iput-boolean p1, p0, Lcom/google/android/gms/internal/instantapps/zzar;->g:Z
 
     .line 3
-    iput-object p2, p0, Lcom/google/android/gms/internal/instantapps/zzar;->g:Ljava/lang/String;
+    iput-object p2, p0, Lcom/google/android/gms/internal/instantapps/zzar;->h:Ljava/lang/String;
 
     .line 4
-    iput-boolean p3, p0, Lcom/google/android/gms/internal/instantapps/zzar;->h:Z
+    iput-boolean p3, p0, Lcom/google/android/gms/internal/instantapps/zzar;->i:Z
 
     .line 5
-    iput-boolean p4, p0, Lcom/google/android/gms/internal/instantapps/zzar;->i:Z
+    iput-boolean p4, p0, Lcom/google/android/gms/internal/instantapps/zzar;->j:Z
 
     .line 6
-    iput-boolean p5, p0, Lcom/google/android/gms/internal/instantapps/zzar;->j:Z
+    iput-boolean p5, p0, Lcom/google/android/gms/internal/instantapps/zzar;->k:Z
 
     .line 7
-    iput-boolean p6, p0, Lcom/google/android/gms/internal/instantapps/zzar;->k:Z
+    iput-boolean p6, p0, Lcom/google/android/gms/internal/instantapps/zzar;->l:Z
 
     .line 8
-    iput-boolean p7, p0, Lcom/google/android/gms/internal/instantapps/zzar;->l:Z
+    iput-boolean p7, p0, Lcom/google/android/gms/internal/instantapps/zzar;->m:Z
 
     return-void
 .end method
@@ -102,7 +102,7 @@
     move-result v5
 
     .line 2
-    iget-boolean p2, p0, Lcom/google/android/gms/internal/instantapps/zzar;->f:Z
+    iget-boolean p2, p0, Lcom/google/android/gms/internal/instantapps/zzar;->g:Z
 
     const/4 v0, 0x1
 
@@ -115,7 +115,7 @@
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 5
-    iget-object p2, p0, Lcom/google/android/gms/internal/instantapps/zzar;->g:Ljava/lang/String;
+    iget-object p2, p0, Lcom/google/android/gms/internal/instantapps/zzar;->h:Ljava/lang/String;
 
     const/4 v0, 0x2
 
@@ -125,7 +125,7 @@
     invoke-static {p1, v0, p2, v1}, Le2/b;->m(Landroid/os/Parcel;ILjava/lang/String;Z)V
 
     .line 7
-    iget-boolean p2, p0, Lcom/google/android/gms/internal/instantapps/zzar;->h:Z
+    iget-boolean p2, p0, Lcom/google/android/gms/internal/instantapps/zzar;->i:Z
 
     const/4 v0, 0x3
 
@@ -136,7 +136,7 @@
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 10
-    iget-boolean p2, p0, Lcom/google/android/gms/internal/instantapps/zzar;->i:Z
+    iget-boolean p2, p0, Lcom/google/android/gms/internal/instantapps/zzar;->j:Z
 
     .line 11
     invoke-static {p1, v2, v2}, Le2/b;->s(Landroid/os/Parcel;II)V
@@ -145,7 +145,7 @@
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 13
-    iget-boolean p2, p0, Lcom/google/android/gms/internal/instantapps/zzar;->j:Z
+    iget-boolean p2, p0, Lcom/google/android/gms/internal/instantapps/zzar;->k:Z
 
     const/4 v0, 0x5
 
@@ -156,7 +156,7 @@
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 16
-    iget-boolean p2, p0, Lcom/google/android/gms/internal/instantapps/zzar;->k:Z
+    iget-boolean p2, p0, Lcom/google/android/gms/internal/instantapps/zzar;->l:Z
 
     const/4 v0, 0x6
 
@@ -167,7 +167,7 @@
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 19
-    iget-boolean v3, p0, Lcom/google/android/gms/internal/instantapps/zzar;->l:Z
+    iget-boolean v3, p0, Lcom/google/android/gms/internal/instantapps/zzar;->m:Z
 
     const/4 v1, 0x7
 

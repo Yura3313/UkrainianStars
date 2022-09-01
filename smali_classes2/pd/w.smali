@@ -3,27 +3,27 @@
 .source "ConnectedGamesFragment.kt"
 
 # interfaces
-.implements Lae/b2;
+.implements Lae/a2;
 
 
 # instance fields
 .field public final a:I
 
-.field public final b:Lvc/k;
+.field public final b:Lvc/j;
 
 
 # direct methods
-.method public constructor <init>(Lvc/k;)V
+.method public constructor <init>(Lvc/j;)V
     .locals 1
 
     const-string v0, "game"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lpd/w;->b:Lvc/k;
+    iput-object p1, p0, Lpd/w;->b:Lvc/j;
 
     .line 2
     sget p1, Lcom/supercell/id/R$layout;->fragment_profile_list_item_new_game:I
@@ -35,12 +35,12 @@
 
 
 # virtual methods
-.method public final a(Lae/b2;)Z
+.method public final a(Lae/a2;)Z
     .locals 1
 
     const-string v0, "other"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     instance-of p1, p1, Lpd/w;
 
@@ -55,12 +55,12 @@
     return v0
 .end method
 
-.method public final d(Lae/b2;)Z
+.method public final d(Lae/a2;)Z
     .locals 1
 
     const-string v0, "other"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     instance-of v0, p1, Lpd/w;
 
@@ -68,11 +68,11 @@
 
     check-cast p1, Lpd/w;
 
-    iget-object p1, p1, Lpd/w;->b:Lvc/k;
+    iget-object p1, p1, Lpd/w;->b:Lvc/j;
 
-    iget-object v0, p0, Lpd/w;->b:Lvc/k;
+    iget-object v0, p0, Lpd/w;->b:Lvc/j;
 
-    invoke-static {p1, v0}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {p1, v0}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -100,11 +100,11 @@
 
     check-cast p1, Lpd/w;
 
-    iget-object v0, p0, Lpd/w;->b:Lvc/k;
+    iget-object v0, p0, Lpd/w;->b:Lvc/j;
 
-    iget-object p1, p1, Lpd/w;->b:Lvc/k;
+    iget-object p1, p1, Lpd/w;->b:Lvc/j;
 
-    invoke-static {v0, p1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, p1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -127,11 +127,11 @@
 .method public final hashCode()I
     .locals 1
 
-    iget-object v0, p0, Lpd/w;->b:Lvc/k;
+    iget-object v0, p0, Lpd/w;->b:Lvc/j;
 
     if-eqz v0, :cond_0
 
-    invoke-virtual {v0}, Lvc/k;->hashCode()I
+    invoke-virtual {v0}, Lvc/j;->hashCode()I
 
     move-result v0
 
@@ -155,7 +155,7 @@
     move-result-object v0
 
     .line 2
-    iget-object v1, p0, Lpd/w;->b:Lvc/k;
+    iget-object v1, p0, Lpd/w;->b:Lvc/j;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 

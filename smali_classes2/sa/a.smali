@@ -89,21 +89,21 @@
     check-cast p2, Lf9/f1;
 
     .line 3
-    iget-object v0, p2, Lf9/f1;->a:Lp8/c$a;
+    iget-object v0, p2, Lf9/f1;->a:Lp8/d$a;
 
-    iget-object v0, v0, Lp8/c$a;->f:Ljava/lang/String;
+    iget-object v0, v0, Lp8/d$a;->g:Ljava/lang/String;
 
     .line 4
     iget-object v1, p2, Lf9/f1;->b:Ljava/util/List;
 
-    invoke-static {v1}, Lbc/a;->d(Ljava/util/List;)Z
+    invoke-static {v1}, Lt5/a;->g(Ljava/util/List;)Z
 
     move-result v1
 
     if-eqz v1, :cond_0
 
     .line 5
-    iget-object p2, p1, Lsa/a$a;->z:Landroid/widget/TextView;
+    iget-object p2, p1, Lsa/a$a;->A:Landroid/widget/TextView;
 
     .line 6
     invoke-virtual {p2, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
@@ -112,7 +112,7 @@
 
     .line 7
     :cond_0
-    iget-object v1, p1, Lsa/a$a;->z:Landroid/widget/TextView;
+    iget-object v1, p1, Lsa/a$a;->A:Landroid/widget/TextView;
 
     .line 8
     invoke-virtual {v1}, Landroid/view/View;->getContext()Landroid/content/Context;
@@ -121,7 +121,7 @@
 
     sget v2, Lcom/helpshift/R$attr;->hs__searchHighlightColor:I
 
-    invoke-static {v1, v2}, Lcom/helpshift/util/g0;->b(Landroid/content/Context;I)I
+    invoke-static {v1, v2}, Lcom/helpshift/util/e0;->b(Landroid/content/Context;I)I
 
     move-result v1
 
@@ -169,14 +169,14 @@
 
     .line 12
     :cond_1
-    iget-object p2, p1, Lsa/a$a;->z:Landroid/widget/TextView;
+    iget-object p2, p1, Lsa/a$a;->A:Landroid/widget/TextView;
 
     .line 13
     invoke-virtual {p2, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 14
     :goto_1
-    iget-object p2, p1, Lsa/a$a;->z:Landroid/widget/TextView;
+    iget-object p2, p1, Lsa/a$a;->A:Landroid/widget/TextView;
 
     .line 15
     invoke-virtual {p2}, Landroid/view/View;->getContext()Landroid/content/Context;
@@ -199,7 +199,7 @@
     move-result-object p2
 
     .line 17
-    iget-object p1, p1, Lsa/a$a;->y:Landroid/view/View;
+    iget-object p1, p1, Lsa/a$a;->z:Landroid/view/View;
 
     .line 18
     invoke-virtual {p1, p2}, Landroid/view/View;->setContentDescription(Ljava/lang/CharSequence;)V

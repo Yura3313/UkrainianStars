@@ -7,15 +7,15 @@
 
 
 # static fields
-.field public static j:Lga/d;
+.field public static k:Lga/d;
 
 
 # instance fields
-.field public f:Landroid/content/Context;
+.field public g:Landroid/content/Context;
 
-.field public g:Lga/b;
+.field public h:Lga/b;
 
-.field public h:Ljava/util/Set;
+.field public i:Ljava/util/Set;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Set<",
@@ -25,7 +25,7 @@
     .end annotation
 .end field
 
-.field public i:Lga/a;
+.field public j:Lga/a;
 
 
 # direct methods
@@ -45,17 +45,17 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lga/d;->h:Ljava/util/Set;
+    iput-object v0, p0, Lga/d;->i:Ljava/util/Set;
 
     .line 4
-    iput-object p1, p0, Lga/d;->f:Landroid/content/Context;
+    iput-object p1, p0, Lga/d;->g:Landroid/content/Context;
 
     .line 5
     new-instance p1, Lga/b;
 
     invoke-direct {p1}, Lga/b;-><init>()V
 
-    iput-object p1, p0, Lga/d;->g:Lga/b;
+    iput-object p1, p0, Lga/d;->h:Lga/b;
 
     return-void
 .end method
@@ -64,7 +64,7 @@
     .locals 1
 
     .line 1
-    sget-object v0, Lga/d;->j:Lga/d;
+    sget-object v0, Lga/d;->k:Lga/d;
 
     if-nez v0, :cond_0
 
@@ -73,11 +73,11 @@
 
     invoke-direct {v0, p0}, Lga/d;-><init>(Landroid/content/Context;)V
 
-    sput-object v0, Lga/d;->j:Lga/d;
+    sput-object v0, Lga/d;->k:Lga/d;
 
     .line 3
     :cond_0
-    sget-object p0, Lga/d;->j:Lga/d;
+    sget-object p0, Lga/d;->k:Lga/d;
 
     return-object p0
 .end method
@@ -88,7 +88,7 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lga/d;->h:Ljava/util/Set;
+    iget-object v0, p0, Lga/d;->i:Ljava/util/Set;
 
     invoke-interface {v0}, Ljava/util/Set;->isEmpty()Z
 
@@ -100,7 +100,7 @@
 
     .line 2
     :cond_0
-    iget-object v0, p0, Lga/d;->h:Ljava/util/Set;
+    iget-object v0, p0, Lga/d;->i:Ljava/util/Set;
 
     invoke-interface {v0}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
 
@@ -135,28 +135,28 @@
 
     .line 1
     :try_start_0
-    iget-object v0, p0, Lga/d;->h:Ljava/util/Set;
+    iget-object v0, p0, Lga/d;->i:Ljava/util/Set;
 
     invoke-interface {v0}, Ljava/util/Set;->isEmpty()Z
 
     move-result v0
 
     .line 2
-    iget-object v1, p0, Lga/d;->h:Ljava/util/Set;
+    iget-object v1, p0, Lga/d;->i:Ljava/util/Set;
 
     invoke-interface {v1, p1}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
 
     if-eqz v0, :cond_2
 
     .line 3
-    iget-object p1, p0, Lga/d;->i:Lga/a;
+    iget-object p1, p0, Lga/d;->j:Lga/a;
 
     if-nez p1, :cond_1
 
     .line 4
-    iget-object p1, p0, Lga/d;->g:Lga/b;
+    iget-object p1, p0, Lga/d;->h:Lga/b;
 
-    iget-object v0, p0, Lga/d;->f:Landroid/content/Context;
+    iget-object v0, p0, Lga/d;->g:Landroid/content/Context;
 
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -187,11 +187,11 @@
 
     .line 8
     :goto_0
-    iput-object p1, p0, Lga/d;->i:Lga/a;
+    iput-object p1, p0, Lga/d;->j:Lga/a;
 
     .line 9
     :cond_1
-    iget-object p1, p0, Lga/d;->i:Lga/a;
+    iget-object p1, p0, Lga/d;->j:Lga/a;
 
     invoke-interface {p1, p0}, Lga/a;->c(Lga/e;)V
 
@@ -199,7 +199,7 @@
 
     .line 10
     :cond_2
-    iget-object v0, p0, Lga/d;->i:Lga/a;
+    iget-object v0, p0, Lga/d;->j:Lga/a;
 
     invoke-interface {v0}, Lga/a;->a()I
 
@@ -251,12 +251,12 @@
 
     .line 1
     :try_start_0
-    iget-object v0, p0, Lga/d;->h:Ljava/util/Set;
+    iget-object v0, p0, Lga/d;->i:Ljava/util/Set;
 
     invoke-interface {v0, p1}, Ljava/util/Set;->remove(Ljava/lang/Object;)Z
 
     .line 2
-    iget-object p1, p0, Lga/d;->h:Ljava/util/Set;
+    iget-object p1, p0, Lga/d;->i:Ljava/util/Set;
 
     invoke-interface {p1}, Ljava/util/Set;->isEmpty()Z
 
@@ -265,7 +265,7 @@
     if-eqz p1, :cond_1
 
     .line 3
-    iget-object p1, p0, Lga/d;->i:Lga/a;
+    iget-object p1, p0, Lga/d;->j:Lga/a;
 
     if-nez p1, :cond_0
 
@@ -278,7 +278,7 @@
     const/4 p1, 0x0
 
     .line 5
-    iput-object p1, p0, Lga/d;->i:Lga/a;
+    iput-object p1, p0, Lga/d;->j:Lga/a;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -301,7 +301,7 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lga/d;->h:Ljava/util/Set;
+    iget-object v0, p0, Lga/d;->i:Ljava/util/Set;
 
     invoke-interface {v0}, Ljava/util/Set;->isEmpty()Z
 
@@ -313,7 +313,7 @@
 
     .line 2
     :cond_0
-    iget-object v0, p0, Lga/d;->h:Ljava/util/Set;
+    iget-object v0, p0, Lga/d;->i:Ljava/util/Set;
 
     invoke-interface {v0}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
 

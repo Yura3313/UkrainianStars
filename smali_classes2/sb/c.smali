@@ -7,18 +7,18 @@
 
 
 # instance fields
-.field public final synthetic f:Lsb/m;
+.field public final synthetic g:Lsb/m;
 
-.field public final synthetic g:Lsb/d;
+.field public final synthetic h:Lsb/d;
 
 
 # direct methods
 .method public constructor <init>(Lsb/d;Lsb/m;)V
     .locals 0
 
-    iput-object p1, p0, Lsb/c;->g:Lsb/d;
+    iput-object p1, p0, Lsb/c;->h:Lsb/d;
 
-    iput-object p2, p0, Lsb/c;->f:Lsb/m;
+    iput-object p2, p0, Lsb/c;->g:Lsb/m;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -31,7 +31,7 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lsb/c;->g:Lsb/d;
+    iget-object v0, p0, Lsb/c;->h:Lsb/d;
 
     .line 2
     iget-boolean v1, v0, Lsb/d;->f:Z

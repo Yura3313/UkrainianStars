@@ -540,7 +540,7 @@
     new-instance v1, Ljava/lang/IllegalStateException;
 
     .line 18
-    invoke-static {v11, v14, v10}, Lcom/supercell/titan/a;->a(Ljava/lang/String;ILjava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v11, v14, v10}, La2/i;->b(Ljava/lang/String;ILjava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v2
 
@@ -716,7 +716,7 @@
     new-instance v1, Ljava/lang/IllegalStateException;
 
     .line 34
-    invoke-static {v11, v7, v10}, Lcom/supercell/titan/a;->a(Ljava/lang/String;ILjava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v11, v7, v10}, La2/i;->b(Ljava/lang/String;ILjava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v2
 

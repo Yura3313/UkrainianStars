@@ -41,14 +41,14 @@
     sub-int/2addr v1, v2
 
     .line 2
-    invoke-virtual {v0, v1}, Lf9/q0;->l(I)Lo8/y;
+    invoke-virtual {v0, v1}, Lf9/q0;->l(I)Lo8/z;
 
     move-result-object v0
 
     if-eqz v0, :cond_2
 
     .line 3
-    iget-wide v0, v0, Lo8/y;->w:J
+    iget-wide v0, v0, Lo8/z;->x:J
 
     .line 4
     iget-object v3, p0, Lf9/m0;->b:Ljava/util/List;
@@ -59,10 +59,10 @@
 
     move-result-object v3
 
-    check-cast v3, Lo8/y;
+    check-cast v3, Lo8/z;
 
     .line 5
-    iget-wide v3, v3, Lo8/y;->w:J
+    iget-wide v3, v3, Lo8/z;->x:J
 
     cmp-long v5, v0, v3
 
@@ -95,10 +95,10 @@
 
     move-result-object v2
 
-    check-cast v2, Lo8/y;
+    check-cast v2, Lo8/z;
 
     .line 9
-    invoke-virtual {v0, v2}, Lf9/q0;->p(Lo8/y;)V
+    invoke-virtual {v0, v2}, Lf9/q0;->p(Lo8/z;)V
 
     goto :goto_0
 
@@ -125,12 +125,12 @@
     add-int/lit8 v4, v3, -0x1
 
     .line 13
-    invoke-virtual {v0, v4}, Lf9/q0;->l(I)Lo8/y;
+    invoke-virtual {v0, v4}, Lf9/q0;->l(I)Lo8/z;
 
     move-result-object v5
 
     .line 14
-    invoke-virtual {v0, v1, v5, v2}, Lf9/q0;->o(Ljava/util/List;Lo8/y;Z)Ljava/util/List;
+    invoke-virtual {v0, v1, v5, v2}, Lf9/q0;->o(Ljava/util/List;Lo8/z;Z)Ljava/util/List;
 
     move-result-object v1
 
@@ -149,7 +149,7 @@
 
     sub-int/2addr v6, v2
 
-    invoke-virtual {v0, v5, v4, v6}, Lf9/q0;->e(Ljava/util/List;II)Lcom/helpshift/util/h0;
+    invoke-virtual {v0, v5, v4, v6}, Lf9/q0;->e(Ljava/util/List;II)Lcom/helpshift/util/f0;
 
     move-result-object v2
 
@@ -172,7 +172,7 @@
     if-eqz v2, :cond_3
 
     .line 20
-    iget-object v1, v2, Lcom/helpshift/util/h0;->a:Ljava/lang/Object;
+    iget-object v1, v2, Lcom/helpshift/util/f0;->a:Ljava/lang/Object;
 
     check-cast v1, Ljava/lang/Integer;
 

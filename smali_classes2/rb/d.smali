@@ -7,14 +7,14 @@
 
 
 # instance fields
-.field public final synthetic f:Lcom/journeyapps/barcodescanner/b;
+.field public final synthetic g:Lcom/journeyapps/barcodescanner/b;
 
 
 # direct methods
 .method public constructor <init>(Lcom/journeyapps/barcodescanner/b;)V
     .locals 0
 
-    iput-object p1, p0, Lrb/d;->f:Lcom/journeyapps/barcodescanner/b;
+    iput-object p1, p0, Lrb/d;->g:Lcom/journeyapps/barcodescanner/b;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -27,7 +27,7 @@
     .locals 4
 
     .line 1
-    iget-object v0, p0, Lrb/d;->f:Lcom/journeyapps/barcodescanner/b;
+    iget-object v0, p0, Lrb/d;->g:Lcom/journeyapps/barcodescanner/b;
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 

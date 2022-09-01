@@ -173,7 +173,7 @@
     iget p3, p1, Landroid/view/ViewGroup$MarginLayoutParams;->leftMargin:I
 
     .line 25
-    iget p2, p2, Lcom/google/android/material/bottomappbar/BottomAppBar;->U:I
+    iget p2, p2, Lcom/google/android/material/bottomappbar/BottomAppBar;->V:I
 
     add-int/2addr p3, p2
 
@@ -187,7 +187,7 @@
     iget p3, p1, Landroid/view/ViewGroup$MarginLayoutParams;->rightMargin:I
 
     .line 28
-    iget p2, p2, Lcom/google/android/material/bottomappbar/BottomAppBar;->U:I
+    iget p2, p2, Lcom/google/android/material/bottomappbar/BottomAppBar;->V:I
 
     add-int/2addr p3, p2
 

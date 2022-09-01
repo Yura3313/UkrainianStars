@@ -11,7 +11,7 @@
 # static fields
 .field public static final a:Ljava/lang/reflect/Method;
 
-.field public static volatile b:Lv3/z;
+.field public static volatile b:Lr3/r4;
 
 
 # direct methods
@@ -93,9 +93,9 @@
     .line 6
     :catch_1
     :cond_1
-    sget-object v0, Lv3/z;->a:Lv3/z;
+    sget-object v0, Lr3/r4;->a:Lr3/r4;
 
-    sput-object v0, Lv3/y;->b:Lv3/z;
+    sput-object v0, Lv3/y;->b:Lr3/r4;
 
     return-void
 .end method
@@ -117,7 +117,7 @@
 
     if-eqz v0, :cond_0
 
-    sget-object v0, Lv3/y;->b:Lv3/z;
+    sget-object v0, Lv3/y;->b:Lr3/r4;
 
     .line 3
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;

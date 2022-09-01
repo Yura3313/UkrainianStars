@@ -22,7 +22,7 @@
     .end annotation
 
     .line 1
-    iget-object p1, p1, Lcom/google/android/gms/internal/drive/zzfn;->f:Lcom/google/android/gms/drive/DriveId;
+    iget-object p1, p1, Lcom/google/android/gms/internal/drive/zzfn;->g:Lcom/google/android/gms/drive/DriveId;
 
     const/4 p1, 0x0
 
@@ -39,13 +39,13 @@
     .end annotation
 
     .line 1
-    iget-object p1, p1, Lcom/google/android/gms/internal/drive/zzfy;->f:Lcom/google/android/gms/drive/metadata/internal/MetadataBundle;
+    iget-object p1, p1, Lcom/google/android/gms/internal/drive/zzfy;->g:Lcom/google/android/gms/drive/metadata/internal/MetadataBundle;
 
     .line 2
     sget-object v0, Lr3/n0;->a:Lr3/i1;
 
     .line 3
-    iget-object p1, p1, Lcom/google/android/gms/drive/metadata/internal/MetadataBundle;->f:Landroid/os/Bundle;
+    iget-object p1, p1, Lcom/google/android/gms/drive/metadata/internal/MetadataBundle;->g:Landroid/os/Bundle;
 
     invoke-virtual {v0, p1}, Lq2/b;->P0(Landroid/os/Bundle;)Ljava/lang/Object;
 

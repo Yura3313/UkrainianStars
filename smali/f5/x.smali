@@ -394,7 +394,7 @@
     const-class v0, Lf5/a;
 
     .line 1
-    sget-object v1, Lo5/d;->g:Lo5/d$f;
+    sget-object v1, Lo5/d;->h:Lo5/d$f;
 
     .line 2
     array-length v1, p1

@@ -39,7 +39,7 @@
 
     iget-object v0, v0, Lcom/google/android/material/bottomappbar/b;->b:Lcom/google/android/material/bottomappbar/BottomAppBar;
 
-    sget v1, Lcom/google/android/material/bottomappbar/BottomAppBar;->o0:I
+    sget v1, Lcom/google/android/material/bottomappbar/BottomAppBar;->p0:I
 
     .line 2
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;

@@ -92,7 +92,7 @@
     const-string v3, "Helpshift_AppUtil"
 
     .line 5
-    invoke-static {v3, v0, v2, v1}, Landroidx/savedstate/d;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v3, v0, v2, v1}, Le5/i;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
 
     :goto_0
     if-eqz v1, :cond_1

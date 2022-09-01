@@ -13,7 +13,7 @@
 
 
 # instance fields
-.field public final synthetic h:Lcom/google/android/play/core/assetpacks/o;
+.field public final synthetic i:Lcom/google/android/play/core/assetpacks/o;
 
 
 # direct methods
@@ -28,7 +28,7 @@
         }
     .end annotation
 
-    iput-object p1, p0, Lcom/google/android/play/core/assetpacks/m;->h:Lcom/google/android/play/core/assetpacks/o;
+    iput-object p1, p0, Lcom/google/android/play/core/assetpacks/m;->i:Lcom/google/android/play/core/assetpacks/o;
 
     invoke-direct {p0, p1, p2}, Lcom/google/android/play/core/assetpacks/j;-><init>(Lcom/google/android/play/core/assetpacks/o;Lcom/google/android/play/core/tasks/i;)V
 
@@ -42,7 +42,7 @@
 
     invoke-super {p0, p1, p2}, Lcom/google/android/play/core/assetpacks/j;->z0(Landroid/os/Bundle;Landroid/os/Bundle;)V
 
-    iget-object p2, p0, Lcom/google/android/play/core/assetpacks/m;->h:Lcom/google/android/play/core/assetpacks/o;
+    iget-object p2, p0, Lcom/google/android/play/core/assetpacks/m;->i:Lcom/google/android/play/core/assetpacks/o;
 
     .line 1
     iget-object p2, p2, Lcom/google/android/play/core/assetpacks/o;->e:Ljava/util/concurrent/atomic/AtomicBoolean;
@@ -80,7 +80,7 @@
 
     if-eqz p1, :cond_1
 
-    iget-object p1, p0, Lcom/google/android/play/core/assetpacks/m;->h:Lcom/google/android/play/core/assetpacks/o;
+    iget-object p1, p0, Lcom/google/android/play/core/assetpacks/m;->i:Lcom/google/android/play/core/assetpacks/o;
 
     invoke-virtual {p1}, Lcom/google/android/play/core/assetpacks/o;->o0()V
 

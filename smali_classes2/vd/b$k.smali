@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field public final synthetic f:Lvd/b;
+.field public final synthetic g:Lvd/b;
 
 
 # direct methods
 .method public constructor <init>(Lvd/b;)V
     .locals 0
 
-    iput-object p1, p0, Lvd/b$k;->f:Lvd/b;
+    iput-object p1, p0, Lvd/b$k;->g:Lvd/b;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -38,7 +38,7 @@
     .locals 5
 
     .line 1
-    iget-object p1, p0, Lvd/b$k;->f:Lvd/b;
+    iget-object p1, p0, Lvd/b$k;->g:Lvd/b;
 
     sget v0, Lcom/supercell/id/R$id;->receiveFriendRequestsSwitch:I
 
@@ -50,7 +50,7 @@
 
     const-string v0, "receiveFriendRequestsSwitch"
 
-    invoke-static {p1, v0}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {p1}, Landroid/widget/CompoundButton;->isChecked()Z
 
@@ -64,7 +64,7 @@
     move-result-object v0
 
     .line 3
-    iget-object v0, v0, Lae/u;->m:La5/d0;
+    iget-object v0, v0, Lae/u;->m:Lpe/a;
 
     if-eqz p1, :cond_0
 
@@ -88,24 +88,24 @@
     const-string v4, "click"
 
     .line 5
-    invoke-static {v0, v3, v4, v1, v2}, La5/d0;->a(La5/d0;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;I)V
+    invoke-static {v0, v3, v4, v1, v2}, Lpe/a;->e(Lpe/a;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;I)V
 
     .line 6
-    iget-object v0, p0, Lvd/b$k;->f:Lvd/b;
+    iget-object v0, p0, Lvd/b$k;->g:Lvd/b;
 
     .line 7
-    iget-object v1, v0, Landroidx/fragment/app/Fragment;->M:Landroid/view/View;
+    iget-object v1, v0, Landroidx/fragment/app/Fragment;->N:Landroid/view/View;
 
     if-eqz v1, :cond_1
 
     .line 8
-    iget-object v0, v0, Lvd/b;->d0:Lae/o2;
+    iget-object v0, v0, Lvd/b;->e0:Lae/n2;
 
     new-instance v1, Lvd/e;
 
     invoke-direct {v1, p1}, Lvd/e;-><init>(Z)V
 
-    invoke-virtual {v0, v1}, Lae/o2;->a(Lre/a;)V
+    invoke-virtual {v0, v1}, Lae/n2;->a(Lre/a;)V
 
     :cond_1
     return-void

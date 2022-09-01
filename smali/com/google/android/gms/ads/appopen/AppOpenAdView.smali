@@ -22,7 +22,7 @@
     return-void
 .end method
 
-.method private final getAdSize()Lcom/google/android/gms/ads/f;
+.method private final getAdSize()Lcom/google/android/gms/ads/g;
     .locals 1
 
     const/4 v0, 0x0
@@ -129,7 +129,7 @@
 
     .line 6
     :try_start_0
-    invoke-direct {p0}, Lcom/google/android/gms/ads/appopen/AppOpenAdView;->getAdSize()Lcom/google/android/gms/ads/f;
+    invoke-direct {p0}, Lcom/google/android/gms/ads/appopen/AppOpenAdView;->getAdSize()Lcom/google/android/gms/ads/g;
 
     move-result-object v1
     :try_end_0
@@ -149,12 +149,12 @@
     move-result-object v0
 
     .line 8
-    invoke-virtual {v1, v0}, Lcom/google/android/gms/ads/f;->b(Landroid/content/Context;)I
+    invoke-virtual {v1, v0}, Lcom/google/android/gms/ads/g;->b(Landroid/content/Context;)I
 
     move-result v2
 
     .line 9
-    invoke-virtual {v1, v0}, Lcom/google/android/gms/ads/f;->a(Landroid/content/Context;)I
+    invoke-virtual {v1, v0}, Lcom/google/android/gms/ads/g;->a(Landroid/content/Context;)I
 
     move-result v0
 

@@ -1,550 +1,437 @@
-.class public abstract Lk3/dm0;
-.super Ljava/util/concurrent/atomic/AtomicReference;
+.class public final Lk3/dm0;
+.super Lk3/dx0;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
-
-# interfaces
-.implements Ljava/lang/Runnable;
-
-
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "<T:",
-        "Ljava/lang/Object;",
-        ">",
-        "Ljava/util/concurrent/atomic/AtomicReference<",
-        "Ljava/lang/Runnable;",
-        ">;",
-        "Ljava/lang/Runnable;"
-    }
-.end annotation
-
-
-# static fields
-.field public static final f:Lk3/fm0;
-
-.field public static final g:Lk3/fm0;
-
-.field public static final h:Lk3/fm0;
 
 
 # direct methods
-.method public static constructor <clinit>()V
+.method public static a(Ljava/lang/Throwable;)Lk3/hm0;
     .locals 1
-
-    .line 1
-    new-instance v0, Lk3/fm0;
-
-    invoke-direct {v0}, Lk3/fm0;-><init>()V
-
-    sput-object v0, Lk3/dm0;->f:Lk3/fm0;
-
-    .line 2
-    new-instance v0, Lk3/fm0;
-
-    invoke-direct {v0}, Lk3/fm0;-><init>()V
-
-    sput-object v0, Lk3/dm0;->g:Lk3/fm0;
-
-    .line 3
-    new-instance v0, Lk3/fm0;
-
-    invoke-direct {v0}, Lk3/fm0;-><init>()V
-
-    sput-object v0, Lk3/dm0;->h:Lk3/fm0;
-
-    return-void
-.end method
-
-.method public constructor <init>()V
-    .locals 0
-
-    invoke-direct {p0}, Ljava/util/concurrent/atomic/AtomicReference;-><init>()V
-
-    return-void
-.end method
-
-
-# virtual methods
-.method public final a()V
-    .locals 4
-
-    .line 1
-    invoke-virtual {p0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Ljava/lang/Runnable;
-
-    .line 2
-    instance-of v1, v0, Ljava/lang/Thread;
-
-    if-eqz v1, :cond_2
-
-    sget-object v1, Lk3/dm0;->g:Lk3/fm0;
-
-    invoke-virtual {p0, v0, v1}, Ljava/util/concurrent/atomic/AtomicReference;->compareAndSet(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result v1
-
-    if-eqz v1, :cond_2
-
-    .line 3
-    :try_start_0
-    move-object v1, v0
-
-    check-cast v1, Ljava/lang/Thread;
-
-    invoke-virtual {v1}, Ljava/lang/Thread;->interrupt()V
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    .line 4
-    sget-object v1, Lk3/dm0;->f:Lk3/fm0;
-
-    invoke-virtual {p0, v1}, Ljava/util/concurrent/atomic/AtomicReference;->getAndSet(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v1
-
-    check-cast v1, Ljava/lang/Runnable;
-
-    .line 5
-    sget-object v2, Lk3/dm0;->h:Lk3/fm0;
-
-    if-ne v1, v2, :cond_0
-
-    .line 6
-    check-cast v0, Ljava/lang/Thread;
-
-    invoke-static {v0}, Ljava/util/concurrent/locks/LockSupport;->unpark(Ljava/lang/Thread;)V
-
-    :cond_0
-    return-void
-
-    :catchall_0
-    move-exception v1
-
-    .line 7
-    sget-object v2, Lk3/dm0;->f:Lk3/fm0;
-
-    invoke-virtual {p0, v2}, Ljava/util/concurrent/atomic/AtomicReference;->getAndSet(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v2
-
-    check-cast v2, Ljava/lang/Runnable;
-
-    .line 8
-    sget-object v3, Lk3/dm0;->h:Lk3/fm0;
-
-    if-ne v2, v3, :cond_1
-
-    .line 9
-    check-cast v0, Ljava/lang/Thread;
-
-    invoke-static {v0}, Ljava/util/concurrent/locks/LockSupport;->unpark(Ljava/lang/Thread;)V
-
-    .line 10
-    :cond_1
-    throw v1
-
-    :cond_2
-    return-void
-.end method
-
-.method public abstract b()Z
-.end method
-
-.method public abstract c()Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "()TT;"
+            "<V:",
+            "Ljava/lang/Object;",
+            ">(",
+            "Ljava/lang/Throwable;",
+            ")",
+            "Lk3/hm0<",
+            "TV;>;"
+        }
+    .end annotation
+
+    .line 1
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 2
+    new-instance v0, Lk3/fm0$a;
+
+    invoke-direct {v0, p0}, Lk3/fm0$a;-><init>(Ljava/lang/Throwable;)V
+
+    return-object v0
+.end method
+
+.method public static b(Ljava/util/concurrent/Future;)Ljava/lang/Object;
+    .locals 3
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<V:",
+            "Ljava/lang/Object;",
+            ">(",
+            "Ljava/util/concurrent/Future<",
+            "TV;>;)TV;"
         }
     .end annotation
 
     .annotation system Ldalvik/annotation/Throws;
         value = {
-            Ljava/lang/Exception;
+            Ljava/util/concurrent/ExecutionException;
         }
     .end annotation
+
+    .line 1
+    invoke-interface {p0}, Ljava/util/concurrent/Future;->isDone()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    .line 2
+    invoke-static {p0}, Lk3/v6;->a(Ljava/util/concurrent/Future;)Ljava/lang/Object;
+
+    move-result-object p0
+
+    return-object p0
+
+    .line 3
+    :cond_0
+    new-instance v0, Ljava/lang/IllegalStateException;
+
+    const/4 v1, 0x1
+
+    new-array v1, v1, [Ljava/lang/Object;
+
+    const/4 v2, 0x0
+
+    aput-object p0, v1, v2
+
+    const-string p0, "Future was expected to be done: %s"
+
+    invoke-static {p0, v1}, Lk3/bk0;->a(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object p0
+
+    invoke-direct {v0, p0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    throw v0
 .end method
 
-.method public abstract d()Ljava/lang/String;
+.method public static c(Lk3/nl0;Ljava/util/concurrent/Executor;)Lk3/hm0;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<O:",
+            "Ljava/lang/Object;",
+            ">(",
+            "Lk3/nl0<",
+            "TO;>;",
+            "Ljava/util/concurrent/Executor;",
+            ")",
+            "Lk3/hm0<",
+            "TO;>;"
+        }
+    .end annotation
+
+    .line 1
+    new-instance v0, Lk3/tm0;
+
+    invoke-direct {v0, p0}, Lk3/tm0;-><init>(Lk3/nl0;)V
+
+    .line 2
+    invoke-interface {p1, v0}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
+
+    return-object v0
 .end method
 
-.method public abstract e(Ljava/lang/Object;Ljava/lang/Throwable;)V
-    .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
-        .end annotation
-    .end param
-    .param p2    # Ljava/lang/Throwable;
+.method public static e(Lk3/hm0;JLjava/util/concurrent/TimeUnit;Ljava/util/concurrent/ScheduledExecutorService;)Lk3/hm0;
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<V:",
+            "Ljava/lang/Object;",
+            ">(",
+            "Lk3/hm0<",
+            "TV;>;J",
+            "Ljava/util/concurrent/TimeUnit;",
+            "Ljava/util/concurrent/ScheduledExecutorService;",
+            ")",
+            "Lk3/hm0<",
+            "TV;>;"
+        }
+    .end annotation
+
+    .line 1
+    invoke-interface {p0}, Ljava/util/concurrent/Future;->isDone()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    return-object p0
+
+    .line 2
+    :cond_0
+    new-instance v0, Lk3/qm0;
+
+    invoke-direct {v0, p0}, Lk3/qm0;-><init>(Lk3/hm0;)V
+
+    .line 3
+    new-instance v1, Lk3/sm0;
+
+    invoke-direct {v1, v0}, Lk3/sm0;-><init>(Lk3/qm0;)V
+
+    .line 4
+    invoke-interface {p4, v1, p1, p2, p3}, Ljava/util/concurrent/ScheduledExecutorService;->schedule(Ljava/lang/Runnable;JLjava/util/concurrent/TimeUnit;)Ljava/util/concurrent/ScheduledFuture;
+
+    move-result-object p1
+
+    iput-object p1, v0, Lk3/qm0;->o:Ljava/util/concurrent/ScheduledFuture;
+
+    .line 5
+    sget-object p1, Lk3/ul0;->g:Lk3/ul0;
+
+    .line 6
+    invoke-interface {p0, v1, p1}, Lk3/hm0;->c(Ljava/lang/Runnable;Ljava/util/concurrent/Executor;)V
+
+    return-object v0
+.end method
+
+.method public static f(Lk3/hm0;Lk3/am0;Ljava/util/concurrent/Executor;)V
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<V:",
+            "Ljava/lang/Object;",
+            ">(",
+            "Lk3/hm0<",
+            "TV;>;",
+            "Lk3/am0<",
+            "-TV;>;",
+            "Ljava/util/concurrent/Executor;",
+            ")V"
+        }
+    .end annotation
+
+    .line 1
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 2
+    new-instance v0, Lk3/o80;
+
+    const/4 v1, 0x2
+
+    invoke-direct {v0, p0, p1, v1}, Lk3/o80;-><init>(Ljava/lang/Object;Ljava/lang/Object;I)V
+
+    invoke-interface {p0, v0, p2}, Lk3/hm0;->c(Ljava/lang/Runnable;Ljava/util/concurrent/Executor;)V
+
+    return-void
+.end method
+
+.method public static g(Ljava/lang/Object;)Lk3/hm0;
+    .locals 1
+    .param p0    # Ljava/lang/Object;
         .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
         .end annotation
     .end param
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "(TT;",
-            "Ljava/lang/Throwable;",
-            ")V"
+            "<V:",
+            "Ljava/lang/Object;",
+            ">(TV;)",
+            "Lk3/hm0<",
+            "TV;>;"
         }
     .end annotation
-.end method
 
-.method public final run()V
-    .locals 12
+    if-nez p0, :cond_0
 
     .line 1
-    invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
+    sget-object p0, Lk3/fm0;->h:Lk3/fm0;
 
-    move-result-object v0
-
-    const/4 v1, 0x0
+    return-object p0
 
     .line 2
-    invoke-virtual {p0, v1, v0}, Ljava/util/concurrent/atomic/AtomicReference;->compareAndSet(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result v2
-
-    if-nez v2, :cond_0
-
-    return-void
-
-    .line 3
     :cond_0
-    invoke-virtual {p0}, Lk3/dm0;->b()Z
+    new-instance v0, Lk3/fm0;
 
-    move-result v2
+    invoke-direct {v0, p0}, Lk3/fm0;-><init>(Ljava/lang/Object;)V
 
-    const/4 v3, 0x1
+    return-object v0
+.end method
 
-    xor-int/2addr v2, v3
+.method public static h(Ljava/util/concurrent/Future;)Ljava/lang/Object;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<V:",
+            "Ljava/lang/Object;",
+            ">(",
+            "Ljava/util/concurrent/Future<",
+            "TV;>;)TV;"
+        }
+    .end annotation
 
-    const/16 v4, 0x3e8
+    .line 1
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    const/4 v5, 0x0
-
-    if-eqz v2, :cond_9
-
-    .line 4
+    .line 2
     :try_start_0
-    invoke-virtual {p0}, Lk3/dm0;->c()Ljava/lang/Object;
+    invoke-static {p0}, Lk3/v6;->a(Ljava/util/concurrent/Future;)Ljava/lang/Object;
 
-    move-result-object v6
+    move-result-object p0
     :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+    .catch Ljava/util/concurrent/ExecutionException; {:try_start_0 .. :try_end_0} :catch_0
 
-    goto :goto_6
+    return-object p0
 
-    :catchall_0
-    move-exception v6
-
-    .line 5
-    sget-object v7, Lk3/dm0;->f:Lk3/fm0;
-
-    invoke-virtual {p0, v0, v7}, Ljava/util/concurrent/atomic/AtomicReference;->compareAndSet(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result v7
-
-    if-nez v7, :cond_8
-
-    .line 6
-    invoke-virtual {p0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
-
-    move-result-object v7
-
-    check-cast v7, Ljava/lang/Runnable;
-
-    const/4 v8, 0x0
-
-    const/4 v9, 0x0
-
-    .line 7
-    :goto_0
-    sget-object v10, Lk3/dm0;->g:Lk3/fm0;
-
-    if-eq v7, v10, :cond_2
-
-    sget-object v11, Lk3/dm0;->h:Lk3/fm0;
-
-    if-ne v7, v11, :cond_1
-
-    goto :goto_1
-
-    :cond_1
-    if-eqz v8, :cond_8
-
-    .line 8
-    invoke-virtual {v0}, Ljava/lang/Thread;->interrupt()V
-
-    goto :goto_5
-
-    :cond_2
-    :goto_1
-    add-int/2addr v9, v3
-
-    if-le v9, v4, :cond_6
-
-    .line 9
-    sget-object v11, Lk3/dm0;->h:Lk3/fm0;
-
-    if-eq v7, v11, :cond_3
-
-    invoke-virtual {p0, v10, v11}, Ljava/util/concurrent/atomic/AtomicReference;->compareAndSet(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result v7
-
-    if-eqz v7, :cond_7
-
-    .line 10
-    :cond_3
-    invoke-static {}, Ljava/lang/Thread;->interrupted()Z
-
-    move-result v7
-
-    if-nez v7, :cond_5
-
-    if-eqz v8, :cond_4
-
-    goto :goto_2
-
-    :cond_4
-    const/4 v8, 0x0
-
-    goto :goto_3
-
-    :cond_5
-    :goto_2
-    const/4 v8, 0x1
-
-    .line 11
-    :goto_3
-    invoke-static {p0}, Ljava/util/concurrent/locks/LockSupport;->park(Ljava/lang/Object;)V
-
-    goto :goto_4
-
-    .line 12
-    :cond_6
-    invoke-static {}, Ljava/lang/Thread;->yield()V
-
-    .line 13
-    :cond_7
-    :goto_4
-    invoke-virtual {p0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
-
-    move-result-object v7
-
-    check-cast v7, Ljava/lang/Runnable;
-
-    goto :goto_0
-
-    :cond_8
-    :goto_5
-    if-eqz v2, :cond_12
-
-    .line 14
-    invoke-virtual {p0, v1, v6}, Lk3/dm0;->e(Ljava/lang/Object;Ljava/lang/Throwable;)V
-
-    return-void
-
-    :cond_9
-    move-object v6, v1
-
-    .line 15
-    :goto_6
-    sget-object v7, Lk3/dm0;->f:Lk3/fm0;
-
-    invoke-virtual {p0, v0, v7}, Ljava/util/concurrent/atomic/AtomicReference;->compareAndSet(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result v7
-
-    if-nez v7, :cond_11
-
-    .line 16
-    invoke-virtual {p0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
-
-    move-result-object v7
-
-    check-cast v7, Ljava/lang/Runnable;
-
-    const/4 v8, 0x0
-
-    const/4 v9, 0x0
-
-    .line 17
-    :goto_7
-    sget-object v10, Lk3/dm0;->g:Lk3/fm0;
-
-    if-eq v7, v10, :cond_b
-
-    sget-object v11, Lk3/dm0;->h:Lk3/fm0;
-
-    if-ne v7, v11, :cond_a
-
-    goto :goto_8
-
-    :cond_a
-    if-eqz v8, :cond_11
-
-    .line 18
-    invoke-virtual {v0}, Ljava/lang/Thread;->interrupt()V
-
-    goto :goto_c
-
-    :cond_b
-    :goto_8
-    add-int/2addr v9, v3
-
-    if-le v9, v4, :cond_f
-
-    .line 19
-    sget-object v11, Lk3/dm0;->h:Lk3/fm0;
-
-    if-eq v7, v11, :cond_c
-
-    invoke-virtual {p0, v10, v11}, Ljava/util/concurrent/atomic/AtomicReference;->compareAndSet(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result v7
-
-    if-eqz v7, :cond_10
-
-    .line 20
-    :cond_c
-    invoke-static {}, Ljava/lang/Thread;->interrupted()Z
-
-    move-result v7
-
-    if-nez v7, :cond_e
-
-    if-eqz v8, :cond_d
-
-    goto :goto_9
-
-    :cond_d
-    const/4 v8, 0x0
-
-    goto :goto_a
-
-    :cond_e
-    :goto_9
-    const/4 v8, 0x1
-
-    .line 21
-    :goto_a
-    invoke-static {p0}, Ljava/util/concurrent/locks/LockSupport;->park(Ljava/lang/Object;)V
-
-    goto :goto_b
-
-    .line 22
-    :cond_f
-    invoke-static {}, Ljava/lang/Thread;->yield()V
-
-    .line 23
-    :cond_10
-    :goto_b
-    invoke-virtual {p0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
-
-    move-result-object v7
-
-    check-cast v7, Ljava/lang/Runnable;
-
-    goto :goto_7
-
-    :cond_11
-    :goto_c
-    if-eqz v2, :cond_12
-
-    .line 24
-    invoke-virtual {p0, v6, v1}, Lk3/dm0;->e(Ljava/lang/Object;Ljava/lang/Throwable;)V
-
-    :cond_12
-    return-void
-.end method
-
-.method public final toString()Ljava/lang/String;
-    .locals 4
-
-    .line 1
-    invoke-virtual {p0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Ljava/lang/Runnable;
-
-    .line 2
-    sget-object v1, Lk3/dm0;->f:Lk3/fm0;
-
-    if-ne v0, v1, :cond_0
-
-    const-string v0, "running=[DONE]"
-
-    goto :goto_0
+    :catch_0
+    move-exception p0
 
     .line 3
-    :cond_0
-    sget-object v1, Lk3/dm0;->g:Lk3/fm0;
+    invoke-virtual {p0}, Ljava/lang/Throwable;->getCause()Ljava/lang/Throwable;
 
-    if-ne v0, v1, :cond_1
-
-    const-string v0, "running=[INTERRUPTED]"
-
-    goto :goto_0
+    move-result-object p0
 
     .line 4
-    :cond_1
-    instance-of v1, v0, Ljava/lang/Thread;
+    instance-of v0, p0, Ljava/lang/Error;
 
-    if-eqz v1, :cond_2
+    if-eqz v0, :cond_0
 
     .line 5
-    check-cast v0, Ljava/lang/Thread;
+    new-instance v0, Lk3/wl0;
 
-    invoke-virtual {v0}, Ljava/lang/Thread;->getName()Ljava/lang/String;
+    check-cast p0, Ljava/lang/Error;
 
-    move-result-object v0
+    invoke-direct {v0, p0}, Lk3/wl0;-><init>(Ljava/lang/Error;)V
 
-    const/16 v1, 0x15
+    throw v0
 
     .line 6
-    invoke-static {v0, v1}, La1/e;->a(Ljava/lang/String;I)I
+    :cond_0
+    new-instance v0, Lcom/google/android/gms/internal/ads/zzdwm;
 
-    move-result v1
+    invoke-direct {v0, p0}, Lcom/google/android/gms/internal/ads/zzdwm;-><init>(Ljava/lang/Throwable;)V
 
-    const-string v2, "running=[RUNNING ON "
+    throw v0
+.end method
 
-    const-string v3, "]"
+.method public static i(Lk3/hm0;Ljava/lang/Class;Lk3/pl0;Ljava/util/concurrent/Executor;)Lk3/hm0;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<V:",
+            "Ljava/lang/Object;",
+            "X:",
+            "Ljava/lang/Throwable;",
+            ">(",
+            "Lk3/hm0<",
+            "+TV;>;",
+            "Ljava/lang/Class<",
+            "TX;>;",
+            "Lk3/pl0<",
+            "-TX;+TV;>;",
+            "Ljava/util/concurrent/Executor;",
+            ")",
+            "Lk3/hm0<",
+            "TV;>;"
+        }
+    .end annotation
 
-    .line 7
-    invoke-static {v1, v2, v0, v3}, Landroid/support/v4/media/b;->a(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    .line 1
+    sget v0, Lk3/cl0;->q:I
 
-    move-result-object v0
+    .line 2
+    new-instance v0, Lk3/bl0;
 
-    goto :goto_0
+    invoke-direct {v0, p0, p1, p2}, Lk3/bl0;-><init>(Lk3/hm0;Ljava/lang/Class;Lk3/pl0;)V
 
-    :cond_2
-    const-string v0, "running=[NOT STARTED YET]"
+    .line 3
+    invoke-static {p3, v0}, Lib/e;->f(Ljava/util/concurrent/Executor;Lk3/dl0;)Ljava/util/concurrent/Executor;
 
-    .line 8
-    :goto_0
-    invoke-virtual {p0}, Lk3/dm0;->d()Ljava/lang/String;
+    move-result-object p1
 
-    move-result-object v1
+    invoke-interface {p0, v0, p1}, Lk3/hm0;->c(Ljava/lang/Runnable;Ljava/util/concurrent/Executor;)V
 
-    const/4 v2, 0x2
+    return-object v0
+.end method
 
-    .line 9
-    invoke-static {v0, v2}, La1/e;->a(Ljava/lang/String;I)I
+.method public static j(Lk3/hm0;Lk3/vj0;Ljava/util/concurrent/Executor;)Lk3/hm0;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<I:",
+            "Ljava/lang/Object;",
+            "O:",
+            "Ljava/lang/Object;",
+            ">(",
+            "Lk3/hm0<",
+            "TI;>;",
+            "Lk3/vj0<",
+            "-TI;+TO;>;",
+            "Ljava/util/concurrent/Executor;",
+            ")",
+            "Lk3/hm0<",
+            "TO;>;"
+        }
+    .end annotation
 
-    move-result v2
+    .line 1
+    sget v0, Lk3/gl0;->p:I
 
-    invoke-static {v1, v2}, La1/e;->a(Ljava/lang/String;I)I
+    .line 2
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    move-result v2
+    .line 3
+    new-instance v0, Lk3/il0;
 
-    const-string v3, ", "
+    invoke-direct {v0, p0, p1}, Lk3/il0;-><init>(Lk3/hm0;Lk3/vj0;)V
 
-    .line 10
-    invoke-static {v2, v0, v3, v1}, Landroid/support/v4/media/b;->a(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    .line 4
+    invoke-static {p2, v0}, Lib/e;->f(Ljava/util/concurrent/Executor;Lk3/dl0;)Ljava/util/concurrent/Executor;
 
-    move-result-object v0
+    move-result-object p1
+
+    invoke-interface {p0, v0, p1}, Lk3/hm0;->c(Ljava/lang/Runnable;Ljava/util/concurrent/Executor;)V
+
+    return-object v0
+.end method
+
+.method public static k(Lk3/hm0;Lk3/pl0;Ljava/util/concurrent/Executor;)Lk3/hm0;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<I:",
+            "Ljava/lang/Object;",
+            "O:",
+            "Ljava/lang/Object;",
+            ">(",
+            "Lk3/hm0<",
+            "TI;>;",
+            "Lk3/pl0<",
+            "-TI;+TO;>;",
+            "Ljava/util/concurrent/Executor;",
+            ")",
+            "Lk3/hm0<",
+            "TO;>;"
+        }
+    .end annotation
+
+    .line 1
+    sget v0, Lk3/gl0;->p:I
+
+    .line 2
+    invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 3
+    new-instance v0, Lk3/jl0;
+
+    invoke-direct {v0, p0, p1}, Lk3/jl0;-><init>(Lk3/hm0;Lk3/pl0;)V
+
+    .line 4
+    invoke-static {p2, v0}, Lib/e;->f(Ljava/util/concurrent/Executor;Lk3/dl0;)Ljava/util/concurrent/Executor;
+
+    move-result-object p1
+
+    invoke-interface {p0, v0, p1}, Lk3/hm0;->c(Ljava/lang/Runnable;Ljava/util/concurrent/Executor;)V
+
+    return-object v0
+.end method
+
+.method public static l(Ljava/lang/Iterable;)Lk3/em0;
+    .locals 3
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<V:",
+            "Ljava/lang/Object;",
+            ">(",
+            "Ljava/lang/Iterable<",
+            "+",
+            "Lk3/hm0<",
+            "+TV;>;>;)",
+            "Lk3/em0<",
+            "TV;>;"
+        }
+    .end annotation
+
+    new-instance v0, Lk3/em0;
+
+    invoke-static {p0}, Lk3/gk0;->n(Ljava/lang/Iterable;)Lk3/gk0;
+
+    move-result-object p0
+
+    const/4 v1, 0x1
+
+    const/4 v2, 0x0
+
+    invoke-direct {v0, v1, p0, v2}, Lk3/em0;-><init>(ZLk3/gk0;Lk3/cm0;)V
 
     return-object v0
 .end method

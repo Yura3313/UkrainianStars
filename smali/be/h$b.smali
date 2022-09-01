@@ -37,7 +37,7 @@
         "Lbe/a<",
         "Lae/m<",
         "+",
-        "Lvc/j;",
+        "Lvc/i;",
         "+",
         "Lcom/supercell/id/util/NormalizedError;",
         ">;>;"

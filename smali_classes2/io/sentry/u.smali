@@ -28,7 +28,7 @@
 
     iget-object v0, p0, Lio/sentry/u;->a:Lio/sentry/SentryEnvelopeItem$CachedItem;
 
-    invoke-static {v0}, Lio/sentry/SentryEnvelopeItem;->d(Lio/sentry/SentryEnvelopeItem$CachedItem;)[B
+    invoke-static {v0}, Lio/sentry/SentryEnvelopeItem;->a(Lio/sentry/SentryEnvelopeItem$CachedItem;)Ljava/lang/Integer;
 
     move-result-object v0
 

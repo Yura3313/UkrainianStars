@@ -814,7 +814,7 @@
 
     move-result-object v3
 
-    sget-object v4, Lo5/f0;->o:Lo5/f0;
+    sget-object v4, Lo5/f0;->p:Lo5/f0;
 
     if-ne v3, v4, :cond_1
 
@@ -835,7 +835,7 @@
     check-cast v1, Lcom/google/crypto/tink/shaded/protobuf/q$b;
 
     .line 9
-    iget-object v1, v1, Lcom/google/crypto/tink/shaded/protobuf/q$b;->f:Ljava/util/Map$Entry;
+    iget-object v1, v1, Lcom/google/crypto/tink/shaded/protobuf/q$b;->g:Ljava/util/Map$Entry;
 
     invoke-interface {v1}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 

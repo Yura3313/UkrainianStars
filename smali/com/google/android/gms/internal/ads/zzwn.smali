@@ -33,7 +33,7 @@
     move-result-object v0
 
     .line 2
-    invoke-static {v0, p1}, Lk3/cw0;->c(Landroid/os/Parcel;Landroid/os/Parcelable;)V
+    invoke-static {v0, p1}, Lk3/gw0;->c(Landroid/os/Parcel;Landroid/os/Parcelable;)V
 
     const/16 p1, 0x8
 

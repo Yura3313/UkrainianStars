@@ -1,5 +1,5 @@
 .class public final Lbe/c;
-.super Lse/h;
+.super Lse/i;
 .source "ClientStateStorage.kt"
 
 # interfaces
@@ -9,27 +9,27 @@
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/a<",
-        "Lie/h;",
+        "Lie/i;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic f:Lbe/b;
+.field public final synthetic g:Lbe/b;
 
 
 # direct methods
 .method public constructor <init>(Lbe/b;)V
     .locals 0
 
-    iput-object p1, p0, Lbe/c;->f:Lbe/b;
+    iput-object p1, p0, Lbe/c;->g:Lbe/b;
 
     const/4 p1, 0x0
 
-    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -40,7 +40,7 @@
     .locals 3
 
     .line 1
-    iget-object v0, p0, Lbe/c;->f:Lbe/b;
+    iget-object v0, p0, Lbe/c;->g:Lbe/b;
 
     .line 2
     iget-object v0, v0, Lbe/b;->e:Landroid/content/Context;
@@ -59,7 +59,7 @@
     if-eqz v0, :cond_0
 
     .line 4
-    iget-object v2, p0, Lbe/c;->f:Lbe/b;
+    iget-object v2, p0, Lbe/c;->g:Lbe/b;
 
     .line 5
     iget-object v2, v2, Lbe/b;->f:Ljava/lang/String;
@@ -103,16 +103,16 @@
 
     .line 9
     :goto_1
-    iget-object v1, p0, Lbe/c;->f:Lbe/b;
+    iget-object v1, p0, Lbe/c;->g:Lbe/b;
 
     new-instance v2, Lbe/b$a$a;
 
     invoke-direct {v2, v0}, Lbe/b$a$a;-><init>(Lvc/a;)V
 
-    invoke-virtual {v1, v2}, Lbe/v0;->a(Lbe/a;)V
+    invoke-virtual {v1, v2}, Lbe/x0;->a(Lbe/a;)V
 
     .line 10
-    sget-object v0, Lie/h;->a:Lie/h;
+    sget-object v0, Lie/i;->a:Lie/i;
 
     return-object v0
 .end method

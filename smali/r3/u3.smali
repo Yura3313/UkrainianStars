@@ -54,11 +54,11 @@
     .end annotation
 .end method
 
-.method public abstract f(Ljava/lang/Object;Lr3/x4;)V
+.method public abstract f(Ljava/lang/Object;Lr3/y4;)V
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(TT;",
-            "Lr3/x4;",
+            "Lr3/y4;",
             ")V"
         }
     .end annotation

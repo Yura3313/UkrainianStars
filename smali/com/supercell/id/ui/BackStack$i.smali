@@ -1,5 +1,5 @@
 .class public final Lcom/supercell/id/ui/BackStack$i;
-.super Lse/h;
+.super Lse/i;
 .source "BackStack.kt"
 
 # interfaces
@@ -18,18 +18,18 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/p<",
         "Lcom/supercell/id/ui/BackStack;",
         "Ljava/lang/Object;",
-        "Lie/h;",
+        "Lie/i;",
         ">;"
     }
 .end annotation
 
 
 # static fields
-.field public static final f:Lcom/supercell/id/ui/BackStack$i;
+.field public static final g:Lcom/supercell/id/ui/BackStack$i;
 
 
 # direct methods
@@ -40,7 +40,7 @@
 
     invoke-direct {v0}, Lcom/supercell/id/ui/BackStack$i;-><init>()V
 
-    sput-object v0, Lcom/supercell/id/ui/BackStack$i;->f:Lcom/supercell/id/ui/BackStack$i;
+    sput-object v0, Lcom/supercell/id/ui/BackStack$i;->g:Lcom/supercell/id/ui/BackStack$i;
 
     return-void
 .end method
@@ -50,7 +50,7 @@
 
     const/4 v0, 0x2
 
-    invoke-direct {p0, v0}, Lse/h;-><init>(I)V
+    invoke-direct {p0, v0}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -66,7 +66,7 @@
     const-string p2, "$receiver"
 
     .line 2
-    invoke-static {p1, p2}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p2}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 3
     iget-object p1, p1, Lcom/supercell/id/ui/BackStack;->e:Lre/a;
@@ -75,7 +75,7 @@
     invoke-interface {p1}, Lre/a;->invoke()Ljava/lang/Object;
 
     .line 5
-    sget-object p1, Lie/h;->a:Lie/h;
+    sget-object p1, Lie/i;->a:Lie/i;
 
     return-object p1
 .end method

@@ -1,30 +1,41 @@
 .class public final Lv3/y0;
-.super Landroid/database/ContentObserver;
+.super Ljava/lang/Object;
+
+
+# static fields
+.field public static volatile a:Z
 
 
 # direct methods
-.method public constructor <init>()V
+.method public static constructor <clinit>()V
     .locals 1
 
-    const/4 v0, 0x0
+    invoke-static {}, Lv3/y0;->a()Z
 
-    invoke-direct {p0, v0}, Landroid/database/ContentObserver;-><init>(Landroid/os/Handler;)V
+    move-result v0
+
+    xor-int/lit8 v0, v0, 0x1
+
+    sput-boolean v0, Lv3/y0;->a:Z
 
     return-void
 .end method
 
+.method public static a()Z
+    .locals 2
 
-# virtual methods
-.method public final onChange(Z)V
-    .locals 1
+    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
 
-    .line 1
-    sget-object p1, Lv3/x0;->e:Ljava/util/concurrent/atomic/AtomicBoolean;
+    const/16 v1, 0x18
+
+    if-lt v0, v1, :cond_0
 
     const/4 v0, 0x1
 
-    .line 2
-    invoke-virtual {p1, v0}, Ljava/util/concurrent/atomic/AtomicBoolean;->set(Z)V
+    return v0
 
-    return-void
+    :cond_0
+    const/4 v0, 0x0
+
+    return v0
 .end method

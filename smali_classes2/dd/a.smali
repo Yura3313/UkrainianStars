@@ -4,31 +4,31 @@
 
 
 # instance fields
-.field public f:Lre/l;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lre/l<",
-            "-",
-            "Ldd/a;",
-            "Lie/h;",
-            ">;"
-        }
-    .end annotation
-.end field
-
 .field public g:Lre/l;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lre/l<",
             "-",
             "Ldd/a;",
-            "Lie/h;",
+            "Lie/i;",
             ">;"
         }
     .end annotation
 .end field
 
-.field public final h:Ljava/lang/ref/WeakReference;
+.field public h:Lre/l;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lre/l<",
+            "-",
+            "Ldd/a;",
+            "Lie/i;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public final i:Ljava/lang/ref/WeakReference;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/lang/ref/WeakReference<",
@@ -38,24 +38,13 @@
     .end annotation
 .end field
 
-.field public final i:Ljava/lang/String;
-
 .field public final j:Ljava/lang/String;
 
 .field public final k:Ljava/lang/String;
 
 .field public final l:Ljava/lang/String;
 
-.field public final m:Lie/d;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lie/d<",
-            "Ljava/lang/String;",
-            "Ljava/lang/String;",
-            ">;"
-        }
-    .end annotation
-.end field
+.field public final m:Ljava/lang/String;
 
 .field public final n:Lie/d;
     .annotation system Ldalvik/annotation/Signature;
@@ -68,7 +57,18 @@
     .end annotation
 .end field
 
-.field public final o:Z
+.field public final o:Lie/d;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lie/d<",
+            "Ljava/lang/String;",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public final p:Z
 
 
 # direct methods
@@ -80,7 +80,7 @@
     const-string v1, "activity"
 
     .line 1
-    invoke-static {p1, v1}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v1}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 2
     sget v1, Lcom/supercell/id/R$style;->SupercellIdTheme:I
@@ -89,34 +89,34 @@
 
     const-string v1, "account_received_donation_confirm_decline_heading"
 
-    iput-object v1, p0, Ldd/a;->i:Ljava/lang/String;
+    iput-object v1, p0, Ldd/a;->j:Ljava/lang/String;
 
     const-string v1, "account_received_donation_confirm_decline_btn_confirm"
 
-    iput-object v1, p0, Ldd/a;->j:Ljava/lang/String;
+    iput-object v1, p0, Ldd/a;->k:Ljava/lang/String;
 
     const-string v1, "account_received_donation_confirm_decline_btn_cancel"
 
-    iput-object v1, p0, Ldd/a;->k:Ljava/lang/String;
+    iput-object v1, p0, Ldd/a;->l:Ljava/lang/String;
 
     const-string v1, "account_received_donation_confirm_decline_description"
 
-    iput-object v1, p0, Ldd/a;->l:Ljava/lang/String;
+    iput-object v1, p0, Ldd/a;->m:Ljava/lang/String;
 
     const/4 v1, 0x0
 
-    iput-object v1, p0, Ldd/a;->m:Lie/d;
-
     iput-object v1, p0, Ldd/a;->n:Lie/d;
 
-    iput-boolean v0, p0, Ldd/a;->o:Z
+    iput-object v1, p0, Ldd/a;->o:Lie/d;
+
+    iput-boolean v0, p0, Ldd/a;->p:Z
 
     .line 3
     new-instance v0, Ljava/lang/ref/WeakReference;
 
     invoke-direct {v0, p1}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
 
-    iput-object v0, p0, Ldd/a;->h:Ljava/lang/ref/WeakReference;
+    iput-object v0, p0, Ldd/a;->i:Ljava/lang/ref/WeakReference;
 
     return-void
 .end method
@@ -175,7 +175,7 @@
     invoke-super {p0, p1}, Landroid/app/Dialog;->onCreate(Landroid/os/Bundle;)V
 
     .line 2
-    iget-object p1, p0, Ldd/a;->h:Ljava/lang/ref/WeakReference;
+    iget-object p1, p0, Ldd/a;->i:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {p1}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
 
@@ -211,7 +211,7 @@
 
     .line 7
     :cond_0
-    invoke-static {p1}, Lcom/android/billingclient/api/c0;->i(Landroid/app/Activity;)Z
+    invoke-static {p1}, Lcom/android/billingclient/api/b0;->j(Landroid/app/Activity;)Z
 
     move-result v2
 
@@ -247,7 +247,7 @@
 
     const-string v5, "activity.resources"
 
-    invoke-static {v4, v5}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v4, v5}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v4}, Landroid/content/res/Resources;->getConfiguration()Landroid/content/res/Configuration;
 
@@ -266,7 +266,7 @@
     const-string v2, "context"
 
     .line 15
-    invoke-static {p1, v2}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v2}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -344,7 +344,7 @@
     invoke-virtual {v3}, Landroid/view/ViewPropertyAnimator;->start()V
 
     .line 29
-    iget-boolean v3, p0, Ldd/a;->o:Z
+    iget-boolean v3, p0, Ldd/a;->p:Z
 
     if-eqz v3, :cond_2
 
@@ -403,7 +403,7 @@
 
     const-string v3, "dialogTitleTextView"
 
-    invoke-static {v2, v3}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v2, v3}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     sget v6, Lcom/supercell/id/R$font;->supercell_text_android_md:I
 
@@ -416,29 +416,29 @@
 
     check-cast v1, Landroid/widget/TextView;
 
-    invoke-static {v1, v3}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, v3}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    iget-object v2, p0, Ldd/a;->i:Ljava/lang/String;
+    iget-object v2, p0, Ldd/a;->j:Ljava/lang/String;
 
-    iget-object v3, p0, Ldd/a;->m:Lie/d;
+    iget-object v3, p0, Ldd/a;->n:Lie/d;
 
     if-eqz v3, :cond_3
 
-    invoke-static {v3}, Lcom/google/android/play/core/assetpacks/o2;->j(Lie/d;)Ljava/util/Map;
+    invoke-static {v3}, Lt3/h;->h(Lie/d;)Ljava/util/Map;
 
     move-result-object v3
 
     goto :goto_0
 
     :cond_3
-    sget-object v3, Lje/m;->f:Lje/m;
+    sget-object v3, Lje/m;->g:Lje/m;
 
     .line 35
     :goto_0
-    invoke-static {v1, v2, v3, v4}, Lud/f0;->i(Landroid/widget/TextView;Ljava/lang/String;Ljava/util/Map;Lre/l;)V
+    invoke-static {v1, v2, v3, v4}, Lud/d0;->i(Landroid/widget/TextView;Ljava/lang/String;Ljava/util/Map;Lre/l;)V
 
     .line 36
-    iget-object v1, p0, Ldd/a;->l:Ljava/lang/String;
+    iget-object v1, p0, Ldd/a;->m:Ljava/lang/String;
 
     const-string v2, "dialogTextTextView"
 
@@ -453,24 +453,24 @@
 
     check-cast v3, Landroid/widget/TextView;
 
-    invoke-static {v3, v2}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v3, v2}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    iget-object v7, p0, Ldd/a;->n:Lie/d;
+    iget-object v7, p0, Ldd/a;->o:Lie/d;
 
     if-eqz v7, :cond_4
 
-    invoke-static {v7}, Lcom/google/android/play/core/assetpacks/o2;->j(Lie/d;)Ljava/util/Map;
+    invoke-static {v7}, Lt3/h;->h(Lie/d;)Ljava/util/Map;
 
     move-result-object v7
 
     goto :goto_1
 
     :cond_4
-    sget-object v7, Lje/m;->f:Lje/m;
+    sget-object v7, Lje/m;->g:Lje/m;
 
     .line 38
     :goto_1
-    invoke-static {v3, v1, v7, v4}, Lud/f0;->i(Landroid/widget/TextView;Ljava/lang/String;Ljava/util/Map;Lre/l;)V
+    invoke-static {v3, v1, v7, v4}, Lud/d0;->i(Landroid/widget/TextView;Ljava/lang/String;Ljava/util/Map;Lre/l;)V
 
     .line 39
     :cond_5
@@ -482,7 +482,7 @@
 
     check-cast v3, Landroid/widget/TextView;
 
-    invoke-static {v3, v2}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v3, v2}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-static {v3, v6}, Lae/r;->b(Landroid/widget/TextView;I)V
 
@@ -493,9 +493,9 @@
 
     check-cast v1, Landroid/widget/TextView;
 
-    invoke-static {v1, v2}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    iget-object v2, p0, Ldd/a;->l:Ljava/lang/String;
+    iget-object v2, p0, Ldd/a;->m:Ljava/lang/String;
 
     if-eqz v2, :cond_7
 
@@ -544,15 +544,15 @@
     invoke-static {v1, v2}, Lae/r;->b(Landroid/widget/TextView;I)V
 
     .line 43
-    sget-object v3, Lsc/a$a;->g:Lsc/a$a;
+    sget-object v3, Lsc/a$a;->h:Lsc/a$a;
 
     invoke-static {v1, v5, v5}, Lae/z2;->r(Landroid/view/View;II)V
 
     .line 44
-    iget-object v3, p0, Ldd/a;->j:Ljava/lang/String;
+    iget-object v3, p0, Ldd/a;->k:Ljava/lang/String;
 
     .line 45
-    invoke-static {v1, v3, v4}, Lud/f0;->j(Landroid/widget/TextView;Ljava/lang/String;Lre/p;)V
+    invoke-static {v1, v3, v4}, Lud/d0;->j(Landroid/widget/TextView;Ljava/lang/String;Lre/p;)V
 
     .line 46
     new-instance v3, Ldd/a$b;
@@ -574,15 +574,15 @@
     invoke-static {v1, v2}, Lae/r;->b(Landroid/widget/TextView;I)V
 
     .line 49
-    sget-object v2, Lsc/a$a;->h:Lsc/a$a;
+    sget-object v2, Lsc/a$a;->i:Lsc/a$a;
 
     invoke-static {v1, v5, v0}, Lae/z2;->r(Landroid/view/View;II)V
 
     .line 50
-    iget-object v0, p0, Ldd/a;->k:Ljava/lang/String;
+    iget-object v0, p0, Ldd/a;->l:Ljava/lang/String;
 
     .line 51
-    invoke-static {v1, v0, v4}, Lud/f0;->j(Landroid/widget/TextView;Ljava/lang/String;Lre/p;)V
+    invoke-static {v1, v0, v4}, Lud/d0;->j(Landroid/widget/TextView;Ljava/lang/String;Lre/p;)V
 
     .line 52
     new-instance v0, Ldd/a$c;
@@ -603,7 +603,7 @@
     const-string v0, "it"
 
     .line 54
-    invoke-static {p1, v0}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     const v0, 0x3f4ccccd
 
@@ -625,7 +625,7 @@
     const-string v2, "spring"
 
     .line 58
-    invoke-static {v1, v2}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     const v3, 0x3e99999a
 
@@ -635,7 +635,7 @@
     iget-object v1, v0, Ll0/d;->q:Ll0/e;
 
     .line 60
-    invoke-static {v1, v2}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/high16 v4, 0x43c80000    # 400.0f
 
@@ -655,7 +655,7 @@
     iget-object p1, v0, Ll0/d;->q:Ll0/e;
 
     .line 64
-    invoke-static {p1, v2}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v2}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {p1, v3}, Ll0/e;->a(F)Ll0/e;
 
@@ -663,7 +663,7 @@
     iget-object p1, v0, Ll0/d;->q:Ll0/e;
 
     .line 66
-    invoke-static {p1, v2}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v2}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {p1, v4}, Ll0/e;->b(F)Ll0/e;
 

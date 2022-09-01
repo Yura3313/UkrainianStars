@@ -1,5 +1,5 @@
 .class public final Lsd/c;
-.super Lse/h;
+.super Lse/i;
 .source "FriendsFragment.kt"
 
 # interfaces
@@ -9,29 +9,29 @@
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/p<",
         "Lsd/b;",
         "Ljava/lang/Exception;",
-        "Lie/h;",
+        "Lie/i;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic f:Lsd/a;
+.field public final synthetic g:Lsd/a;
 
 
 # direct methods
 .method public constructor <init>(Lsd/a;)V
     .locals 0
 
-    iput-object p1, p0, Lsd/c;->f:Lsd/a;
+    iput-object p1, p0, Lsd/c;->g:Lsd/a;
 
     const/4 p1, 0x2
 
-    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -49,14 +49,14 @@
     const-string v0, "$receiver"
 
     .line 2
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "it"
 
-    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 3
-    invoke-static {p1}, Lcom/android/billingclient/api/c0;->e(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
+    invoke-static {p1}, Lcom/android/billingclient/api/b0;->f(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
 
     move-result-object v0
 
@@ -64,14 +64,14 @@
 
     if-eqz v0, :cond_0
 
-    sget-object v2, Lcom/supercell/id/ui/MainActivity;->s:Ljava/lang/ref/WeakReference;
+    sget-object v2, Lcom/supercell/id/ui/MainActivity;->t:Ljava/lang/ref/WeakReference;
 
     .line 4
     invoke-virtual {v0, p2, v1}, Lcom/supercell/id/ui/MainActivity;->G(Ljava/lang/Exception;Lre/l;)V
 
     .line 5
     :cond_0
-    iget-object p2, p1, Lsd/b;->b0:Ljava/util/List;
+    iget-object p2, p1, Lsd/b;->c0:Ljava/util/List;
 
     if-eqz p2, :cond_6
 
@@ -98,7 +98,7 @@
     move-result-object v2
 
     .line 8
-    check-cast v2, Lae/b2;
+    check-cast v2, Lae/a2;
 
     .line 9
     instance-of v3, v2, Lsd/a;
@@ -123,7 +123,7 @@
 
     const/16 v1, 0xa
 
-    invoke-static {v0, v1}, Lje/f;->q(Ljava/lang/Iterable;I)I
+    invoke-static {v0, v1}, Lje/f;->l(Ljava/lang/Iterable;I)I
 
     move-result v1
 
@@ -149,15 +149,15 @@
     check-cast v1, Lsd/a;
 
     .line 14
-    iget-object v2, p0, Lsd/c;->f:Lsd/a;
+    iget-object v2, p0, Lsd/c;->g:Lsd/a;
 
-    invoke-virtual {v1, v2}, Lsd/a;->d(Lae/b2;)Z
+    invoke-virtual {v1, v2}, Lsd/a;->d(Lae/a2;)Z
 
     move-result v2
 
     if-eqz v2, :cond_4
 
-    iget-object v2, p0, Lsd/c;->f:Lsd/a;
+    iget-object v2, p0, Lsd/c;->g:Lsd/a;
 
     .line 15
     iget-object v2, v2, Lsd/a;->f:Lcom/supercell/id/model/IdRelationshipStatus;
@@ -178,7 +178,7 @@
 
     .line 18
     :cond_6
-    sget-object p1, Lie/h;->a:Lie/h;
+    sget-object p1, Lie/i;->a:Lie/i;
 
     return-object p1
 .end method

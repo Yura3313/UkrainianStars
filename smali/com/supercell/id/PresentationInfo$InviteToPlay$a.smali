@@ -50,7 +50,7 @@
 
     const-string v0, "source"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     new-instance v0, Lcom/supercell/id/PresentationInfo$InviteToPlay;
 
@@ -64,7 +64,7 @@
 
     const-string v3, "it.readString()!!"
 
-    invoke-static {v1, v3}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, v3}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
 
@@ -72,19 +72,19 @@
 
     if-eqz p1, :cond_0
 
-    invoke-static {p1, v3}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v3}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-direct {v0, v1, p1}, Lcom/supercell/id/PresentationInfo$InviteToPlay;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
     return-object v0
 
     :cond_0
-    invoke-static {}, Lt3/e;->f()V
+    invoke-static {}, Lt3/h;->j()V
 
     throw v2
 
     :cond_1
-    invoke-static {}, Lt3/e;->f()V
+    invoke-static {}, Lt3/h;->j()V
 
     throw v2
 .end method

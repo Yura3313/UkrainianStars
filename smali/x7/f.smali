@@ -18,7 +18,7 @@
     iget-object v1, p0, Lcom/helpshift/g;->a:Ljava/lang/String;
 
     .line 2
-    invoke-static {v1}, Lcom/google/android/play/core/appupdate/g;->c(Ljava/lang/String;)Z
+    invoke-static {v1}, La5/b0;->e(Ljava/lang/String;)Z
 
     move-result v1
 
@@ -28,7 +28,7 @@
     iget-object p0, p0, Lcom/helpshift/g;->b:Ljava/lang/String;
 
     .line 4
-    invoke-static {p0}, Lcom/google/android/play/core/appupdate/g;->c(Ljava/lang/String;)Z
+    invoke-static {p0}, La5/b0;->e(Ljava/lang/String;)Z
 
     move-result p0
 

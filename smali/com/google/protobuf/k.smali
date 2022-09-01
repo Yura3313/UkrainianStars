@@ -806,7 +806,7 @@
 
     .line 6
     :cond_3
-    sget p1, Lcom/google/protobuf/InvalidProtocolBufferException;->g:I
+    sget p1, Lcom/google/protobuf/InvalidProtocolBufferException;->h:I
 
     .line 7
     new-instance p1, Lcom/google/protobuf/InvalidProtocolBufferException$InvalidWireTypeException;
@@ -936,7 +936,7 @@
 
     .line 6
     :cond_3
-    sget p1, Lcom/google/protobuf/InvalidProtocolBufferException;->g:I
+    sget p1, Lcom/google/protobuf/InvalidProtocolBufferException;->h:I
 
     .line 7
     new-instance p1, Lcom/google/protobuf/InvalidProtocolBufferException$InvalidWireTypeException;

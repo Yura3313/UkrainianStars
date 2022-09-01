@@ -186,9 +186,9 @@
     .line 1
     new-instance v0, Lio/sentry/SentryEnvelopeItem$CachedItem;
 
-    new-instance v1, Lio/sentry/n;
+    new-instance v1, Lio/sentry/o;
 
-    invoke-direct {v1, p0, p1, p2}, Lio/sentry/n;-><init>(Lio/sentry/Attachment;J)V
+    invoke-direct {v1, p0, p1, p2}, Lio/sentry/o;-><init>(Lio/sentry/Attachment;J)V
 
     invoke-direct {v0, v1}, Lio/sentry/SentryEnvelopeItem$CachedItem;-><init>(Ljava/util/concurrent/Callable;)V
 
@@ -197,9 +197,9 @@
 
     sget-object v3, Lio/sentry/SentryItemType;->Attachment:Lio/sentry/SentryItemType;
 
-    new-instance v4, Lio/sentry/t;
+    new-instance v4, Lio/sentry/u;
 
-    invoke-direct {v4, v0}, Lio/sentry/t;-><init>(Lio/sentry/SentryEnvelopeItem$CachedItem;)V
+    invoke-direct {v4, v0}, Lio/sentry/u;-><init>(Lio/sentry/SentryEnvelopeItem$CachedItem;)V
 
     .line 3
     invoke-virtual {p0}, Lio/sentry/Attachment;->getContentType()Ljava/lang/String;
@@ -223,9 +223,9 @@
     .line 6
     new-instance p0, Lio/sentry/SentryEnvelopeItem;
 
-    new-instance p2, Lio/sentry/u;
+    new-instance p2, Lio/sentry/v;
 
-    invoke-direct {p2, v0}, Lio/sentry/u;-><init>(Lio/sentry/SentryEnvelopeItem$CachedItem;)V
+    invoke-direct {p2, v0}, Lio/sentry/v;-><init>(Lio/sentry/SentryEnvelopeItem$CachedItem;)V
 
     invoke-direct {p0, p1, p2}, Lio/sentry/SentryEnvelopeItem;-><init>(Lio/sentry/SentryEnvelopeItemHeader;Ljava/util/concurrent/Callable;)V
 
@@ -253,9 +253,9 @@
     .line 3
     new-instance v0, Lio/sentry/SentryEnvelopeItem$CachedItem;
 
-    new-instance v1, Lio/sentry/q;
+    new-instance v1, Lio/sentry/r;
 
-    invoke-direct {v1, p0, p1}, Lio/sentry/q;-><init>(Lio/sentry/ISerializer;Lio/sentry/SentryBaseEvent;)V
+    invoke-direct {v1, p0, p1}, Lio/sentry/r;-><init>(Lio/sentry/ISerializer;Lio/sentry/SentryBaseEvent;)V
 
     invoke-direct {v0, v1}, Lio/sentry/SentryEnvelopeItem$CachedItem;-><init>(Ljava/util/concurrent/Callable;)V
 
@@ -267,9 +267,9 @@
 
     move-result-object p1
 
-    new-instance v1, Lio/sentry/y;
+    new-instance v1, Lio/sentry/z;
 
-    invoke-direct {v1, v0}, Lio/sentry/y;-><init>(Lio/sentry/SentryEnvelopeItem$CachedItem;)V
+    invoke-direct {v1, v0}, Lio/sentry/z;-><init>(Lio/sentry/SentryEnvelopeItem$CachedItem;)V
 
     const-string v2, "application/json"
 
@@ -280,9 +280,9 @@
     .line 6
     new-instance p1, Lio/sentry/SentryEnvelopeItem;
 
-    new-instance v1, Lio/sentry/w;
+    new-instance v1, Lio/sentry/x;
 
-    invoke-direct {v1, v0}, Lio/sentry/w;-><init>(Lio/sentry/SentryEnvelopeItem$CachedItem;)V
+    invoke-direct {v1, v0}, Lio/sentry/x;-><init>(Lio/sentry/SentryEnvelopeItem$CachedItem;)V
 
     invoke-direct {p1, p0, v1}, Lio/sentry/SentryEnvelopeItem;-><init>(Lio/sentry/SentryEnvelopeItemHeader;Ljava/util/concurrent/Callable;)V
 
@@ -310,9 +310,9 @@
     .line 3
     new-instance v0, Lio/sentry/SentryEnvelopeItem$CachedItem;
 
-    new-instance v1, Lio/sentry/r;
+    new-instance v1, Lio/sentry/s;
 
-    invoke-direct {v1, p0, p1}, Lio/sentry/r;-><init>(Lio/sentry/ISerializer;Lio/sentry/Session;)V
+    invoke-direct {v1, p0, p1}, Lio/sentry/s;-><init>(Lio/sentry/ISerializer;Lio/sentry/Session;)V
 
     invoke-direct {v0, v1}, Lio/sentry/SentryEnvelopeItem$CachedItem;-><init>(Ljava/util/concurrent/Callable;)V
 
@@ -321,9 +321,9 @@
 
     sget-object p1, Lio/sentry/SentryItemType;->Session:Lio/sentry/SentryItemType;
 
-    new-instance v1, Lio/sentry/o;
+    new-instance v1, Lio/sentry/p;
 
-    invoke-direct {v1, v0}, Lio/sentry/o;-><init>(Lio/sentry/SentryEnvelopeItem$CachedItem;)V
+    invoke-direct {v1, v0}, Lio/sentry/p;-><init>(Lio/sentry/SentryEnvelopeItem$CachedItem;)V
 
     const-string v2, "application/json"
 
@@ -334,9 +334,9 @@
     .line 5
     new-instance p1, Lio/sentry/SentryEnvelopeItem;
 
-    new-instance v1, Lio/sentry/x;
+    new-instance v1, Lio/sentry/y;
 
-    invoke-direct {v1, v0}, Lio/sentry/x;-><init>(Lio/sentry/SentryEnvelopeItem$CachedItem;)V
+    invoke-direct {v1, v0}, Lio/sentry/y;-><init>(Lio/sentry/SentryEnvelopeItem$CachedItem;)V
 
     invoke-direct {p1, p0, v1}, Lio/sentry/SentryEnvelopeItem;-><init>(Lio/sentry/SentryEnvelopeItemHeader;Ljava/util/concurrent/Callable;)V
 
@@ -359,9 +359,9 @@
     .line 3
     new-instance v0, Lio/sentry/SentryEnvelopeItem$CachedItem;
 
-    new-instance v1, Lio/sentry/s;
+    new-instance v1, Lio/sentry/t;
 
-    invoke-direct {v1, p0, p1}, Lio/sentry/s;-><init>(Lio/sentry/ISerializer;Lio/sentry/UserFeedback;)V
+    invoke-direct {v1, p0, p1}, Lio/sentry/t;-><init>(Lio/sentry/ISerializer;Lio/sentry/UserFeedback;)V
 
     invoke-direct {v0, v1}, Lio/sentry/SentryEnvelopeItem$CachedItem;-><init>(Ljava/util/concurrent/Callable;)V
 
@@ -370,9 +370,9 @@
 
     sget-object p1, Lio/sentry/SentryItemType;->UserFeedback:Lio/sentry/SentryItemType;
 
-    new-instance v1, Lio/sentry/p;
+    new-instance v1, Lio/sentry/q;
 
-    invoke-direct {v1, v0}, Lio/sentry/p;-><init>(Lio/sentry/SentryEnvelopeItem$CachedItem;)V
+    invoke-direct {v1, v0}, Lio/sentry/q;-><init>(Lio/sentry/SentryEnvelopeItem$CachedItem;)V
 
     const-string v2, "application/json"
 
@@ -383,9 +383,9 @@
     .line 5
     new-instance p1, Lio/sentry/SentryEnvelopeItem;
 
-    new-instance v1, Lio/sentry/v;
+    new-instance v1, Lio/sentry/w;
 
-    invoke-direct {v1, v0}, Lio/sentry/v;-><init>(Lio/sentry/SentryEnvelopeItem$CachedItem;)V
+    invoke-direct {v1, v0}, Lio/sentry/w;-><init>(Lio/sentry/SentryEnvelopeItem$CachedItem;)V
 
     invoke-direct {p1, p0, v1}, Lio/sentry/SentryEnvelopeItem;-><init>(Lio/sentry/SentryEnvelopeItemHeader;Ljava/util/concurrent/Callable;)V
 

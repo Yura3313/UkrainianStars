@@ -48,7 +48,7 @@
     const-string v3, "AdWorker(SCION_TASK_EXECUTOR) #"
 
     .line 2
-    invoke-static {v2, v3, v1}, Lcom/google/android/gms/ads/e;->a(ILjava/lang/String;I)Ljava/lang/String;
+    invoke-static {v2, v3, v1}, Lcom/google/android/gms/ads/f;->a(ILjava/lang/String;I)Ljava/lang/String;
 
     move-result-object v1
 

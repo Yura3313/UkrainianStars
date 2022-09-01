@@ -42,12 +42,12 @@
     .line 2
     iget-object p1, p0, Lcom/google/android/material/internal/e$h;->f:Lcom/google/android/material/internal/e;
 
-    iget-object p1, p1, Lcom/google/android/material/internal/e;->j:Lcom/google/android/material/internal/e$c;
+    iget-object p1, p1, Lcom/google/android/material/internal/e;->k:Lcom/google/android/material/internal/e$c;
 
     .line 3
     iget-object v0, p1, Lcom/google/android/material/internal/e$c;->f:Lcom/google/android/material/internal/e;
 
-    iget-object v0, v0, Lcom/google/android/material/internal/e;->g:Landroid/widget/LinearLayout;
+    iget-object v0, v0, Lcom/google/android/material/internal/e;->h:Landroid/widget/LinearLayout;
 
     invoke-virtual {v0}, Landroid/view/ViewGroup;->getChildCount()I
 
@@ -68,7 +68,7 @@
     :goto_0
     iget-object v2, p1, Lcom/google/android/material/internal/e$c;->f:Lcom/google/android/material/internal/e;
 
-    iget-object v2, v2, Lcom/google/android/material/internal/e;->j:Lcom/google/android/material/internal/e$c;
+    iget-object v2, v2, Lcom/google/android/material/internal/e;->k:Lcom/google/android/material/internal/e$c;
 
     invoke-virtual {v2}, Lcom/google/android/material/internal/e$c;->b()I
 
@@ -79,7 +79,7 @@
     .line 5
     iget-object v2, p1, Lcom/google/android/material/internal/e$c;->f:Lcom/google/android/material/internal/e;
 
-    iget-object v2, v2, Lcom/google/android/material/internal/e;->j:Lcom/google/android/material/internal/e$c;
+    iget-object v2, v2, Lcom/google/android/material/internal/e;->k:Lcom/google/android/material/internal/e$c;
 
     invoke-virtual {v2, v1}, Lcom/google/android/material/internal/e$c;->d(I)I
 

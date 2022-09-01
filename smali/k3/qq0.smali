@@ -1,30 +1,37 @@
-.class public final Lk3/qq0;
+.class public Lk3/qq0;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads-lite@@19.3.0"
 
+# interfaces
+.implements Lk3/jt0;
 
-# instance fields
-.field public a:I
 
-.field public b:J
-
-.field public c:Ljava/lang/Object;
-
-.field public final d:Lcom/google/android/gms/internal/ads/t5;
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<MessageType::",
+        "Lk3/at0;",
+        ">",
+        "Ljava/lang/Object;",
+        "Lk3/jt0<",
+        "TMessageType;>;"
+    }
+.end annotation
 
 
 # direct methods
-.method public constructor <init>(Lcom/google/android/gms/internal/ads/t5;)V
+.method public static constructor <clinit>()V
     .locals 0
 
-    .line 1
+    invoke-static {}, Lcom/google/android/gms/internal/ads/t5;->a()Lcom/google/android/gms/internal/ads/t5;
+
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .locals 0
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 2
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 3
-    iput-object p1, p0, Lk3/qq0;->d:Lcom/google/android/gms/internal/ads/t5;
 
     return-void
 .end method

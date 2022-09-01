@@ -40,7 +40,7 @@
     .line 1
     iget-object p1, p0, Lcom/google/android/material/internal/ScrimInsetsFrameLayout$a;->a:Lcom/google/android/material/internal/ScrimInsetsFrameLayout;
 
-    iget-object v0, p1, Lcom/google/android/material/internal/ScrimInsetsFrameLayout;->g:Landroid/graphics/Rect;
+    iget-object v0, p1, Lcom/google/android/material/internal/ScrimInsetsFrameLayout;->h:Landroid/graphics/Rect;
 
     if-nez v0, :cond_0
 
@@ -49,13 +49,13 @@
 
     invoke-direct {v0}, Landroid/graphics/Rect;-><init>()V
 
-    iput-object v0, p1, Lcom/google/android/material/internal/ScrimInsetsFrameLayout;->g:Landroid/graphics/Rect;
+    iput-object v0, p1, Lcom/google/android/material/internal/ScrimInsetsFrameLayout;->h:Landroid/graphics/Rect;
 
     .line 3
     :cond_0
     iget-object p1, p0, Lcom/google/android/material/internal/ScrimInsetsFrameLayout$a;->a:Lcom/google/android/material/internal/ScrimInsetsFrameLayout;
 
-    iget-object p1, p1, Lcom/google/android/material/internal/ScrimInsetsFrameLayout;->g:Landroid/graphics/Rect;
+    iget-object p1, p1, Lcom/google/android/material/internal/ScrimInsetsFrameLayout;->h:Landroid/graphics/Rect;
 
     .line 4
     invoke-virtual {p2}, Lf0/a0;->e()I
@@ -108,7 +108,7 @@
     .line 12
     iget-object v0, p0, Lcom/google/android/material/internal/ScrimInsetsFrameLayout$a;->a:Lcom/google/android/material/internal/ScrimInsetsFrameLayout;
 
-    iget-object v0, v0, Lcom/google/android/material/internal/ScrimInsetsFrameLayout;->f:Landroid/graphics/drawable/Drawable;
+    iget-object v0, v0, Lcom/google/android/material/internal/ScrimInsetsFrameLayout;->g:Landroid/graphics/drawable/Drawable;
 
     if-nez v0, :cond_1
 

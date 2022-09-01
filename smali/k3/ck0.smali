@@ -1,228 +1,199 @@
-.class public Lk3/ck0;
-.super Lk3/u7;
-.source "com.google.android.gms:play-services-gass@@19.3.0"
+.class public final Lk3/ck0;
+.super Ljava/lang/Object;
+.source "com.google.android.gms:play-services-ads-lite@@19.3.0"
 
 
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "<E:",
-        "Ljava/lang/Object;",
-        ">",
-        "Lk3/u7;"
-    }
-.end annotation
-
-
-# instance fields
-.field public a:[Ljava/lang/Object;
-
-.field public b:I
-
-.field public c:Z
+# static fields
+.field public static final a:Ljava/lang/Object;
+    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+    .end annotation
+.end field
 
 
 # direct methods
-.method public constructor <init>(I)V
-    .locals 1
+.method public static constructor <clinit>()V
+    .locals 7
+
+    const-string v0, "sun.misc.JavaLangAccess"
 
     .line 1
-    invoke-direct {p0}, Lk3/u7;-><init>()V
+    invoke-static {}, Lk3/ck0;->a()Ljava/lang/Object;
 
-    const-string v0, "initialCapacity"
+    move-result-object v1
 
     .line 2
-    invoke-static {p1, v0}, Lk3/q5;->o(ILjava/lang/String;)I
-
-    .line 3
-    new-array p1, p1, [Ljava/lang/Object;
-
-    iput-object p1, p0, Lk3/ck0;->a:[Ljava/lang/Object;
-
-    const/4 p1, 0x0
-
-    .line 4
-    iput p1, p0, Lk3/ck0;->b:I
-
-    return-void
-.end method
-
-
-# virtual methods
-.method public n(Ljava/lang/Iterable;)Lk3/u7;
-    .locals 3
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/lang/Iterable<",
-            "+TE;>;)",
-            "Lk3/u7;"
-        }
-    .end annotation
-
-    .line 1
-    instance-of v0, p1, Ljava/util/Collection;
-
-    if-eqz v0, :cond_0
-
-    .line 2
-    move-object v0, p1
-
-    check-cast v0, Ljava/util/Collection;
-
-    .line 3
-    iget v1, p0, Lk3/ck0;->b:I
-
-    invoke-interface {v0}, Ljava/util/Collection;->size()I
-
-    move-result v2
-
-    add-int/2addr v2, v1
-
-    invoke-virtual {p0, v2}, Lk3/ck0;->t(I)V
-
-    .line 4
-    instance-of v1, v0, Lk3/dk0;
-
-    if-eqz v1, :cond_0
-
-    .line 5
-    check-cast v0, Lk3/dk0;
-
-    .line 6
-    iget-object p1, p0, Lk3/ck0;->a:[Ljava/lang/Object;
-
-    iget v1, p0, Lk3/ck0;->b:I
-
-    invoke-virtual {v0, p1, v1}, Lk3/dk0;->b([Ljava/lang/Object;I)I
-
-    move-result p1
-
-    iput p1, p0, Lk3/ck0;->b:I
-
-    return-object p0
-
-    .line 7
-    :cond_0
-    invoke-super {p0, p1}, Lk3/u7;->n(Ljava/lang/Iterable;)Lk3/u7;
-
-    return-object p0
-.end method
-
-.method public final s(Ljava/lang/Object;)Lk3/ck0;
-    .locals 3
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TE;)",
-            "Lk3/ck0<",
-            "TE;>;"
-        }
-    .end annotation
-
-    .line 1
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 2
-    iget v0, p0, Lk3/ck0;->b:I
-
-    add-int/lit8 v0, v0, 0x1
-
-    invoke-virtual {p0, v0}, Lk3/ck0;->t(I)V
-
-    .line 3
-    iget-object v0, p0, Lk3/ck0;->a:[Ljava/lang/Object;
-
-    iget v1, p0, Lk3/ck0;->b:I
-
-    add-int/lit8 v2, v1, 0x1
-
-    iput v2, p0, Lk3/ck0;->b:I
-
-    aput-object p1, v0, v1
-
-    return-object p0
-.end method
-
-.method public final t(I)V
-    .locals 4
-
-    .line 1
-    iget-object v0, p0, Lk3/ck0;->a:[Ljava/lang/Object;
-
-    array-length v1, v0
+    sput-object v1, Lk3/ck0;->a:Ljava/lang/Object;
 
     const/4 v2, 0x0
 
-    if-ge v1, p1, :cond_3
+    const/4 v3, 0x1
 
-    .line 2
-    array-length v1, v0
+    const/4 v4, 0x0
 
-    if-ltz p1, :cond_2
+    if-nez v1, :cond_0
 
-    shr-int/lit8 v3, v1, 0x1
-
-    add-int/2addr v1, v3
-
-    add-int/lit8 v1, v1, 0x1
-
-    if-ge v1, p1, :cond_0
-
-    add-int/lit8 p1, p1, -0x1
-
-    .line 3
-    invoke-static {p1}, Ljava/lang/Integer;->highestOneBit(I)I
-
-    move-result p1
-
-    shl-int/lit8 v1, p1, 0x1
+    goto :goto_0
 
     :cond_0
-    if-gez v1, :cond_1
+    const-string v1, "getStackTraceElement"
 
-    const v1, 0x7fffffff
+    const/4 v5, 0x2
+
+    new-array v5, v5, [Ljava/lang/Class;
+
+    .line 3
+    const-class v6, Ljava/lang/Throwable;
+
+    aput-object v6, v5, v4
+
+    sget-object v6, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
+
+    aput-object v6, v5, v3
 
     .line 4
-    :cond_1
-    invoke-static {v0, v1}, Ljava/util/Arrays;->copyOf([Ljava/lang/Object;I)[Ljava/lang/Object;
+    :try_start_0
+    invoke-static {v0, v4, v2}, Ljava/lang/Class;->forName(Ljava/lang/String;ZLjava/lang/ClassLoader;)Ljava/lang/Class;
 
-    move-result-object p1
+    move-result-object v6
 
-    iput-object p1, p0, Lk3/ck0;->a:[Ljava/lang/Object;
+    invoke-virtual {v6, v1, v5}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+    :try_end_0
+    .catch Ljava/lang/ThreadDeath; {:try_start_0 .. :try_end_0} :catch_2
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    goto :goto_0
+
+    :catchall_0
+    nop
 
     .line 5
-    iput-boolean v2, p0, Lk3/ck0;->c:Z
+    :goto_0
+    sget-object v1, Lk3/ck0;->a:Ljava/lang/Object;
 
-    return-void
+    if-nez v1, :cond_1
+
+    goto :goto_2
+
+    :cond_1
+    :try_start_1
+    const-string v1, "getStackTraceDepth"
+
+    new-array v5, v3, [Ljava/lang/Class;
 
     .line 6
-    :cond_2
-    new-instance p1, Ljava/lang/AssertionError;
+    const-class v6, Ljava/lang/Throwable;
 
-    const-string v0, "cannot store more than MAX_VALUE elements"
-
-    invoke-direct {p1, v0}, Ljava/lang/AssertionError;-><init>(Ljava/lang/Object;)V
-
-    throw p1
+    aput-object v6, v5, v4
+    :try_end_1
+    .catch Ljava/lang/UnsupportedOperationException; {:try_start_1 .. :try_end_1} :catch_1
+    .catch Ljava/lang/IllegalAccessException; {:try_start_1 .. :try_end_1} :catch_1
+    .catch Ljava/lang/reflect/InvocationTargetException; {:try_start_1 .. :try_end_1} :catch_1
 
     .line 7
-    :cond_3
-    iget-boolean p1, p0, Lk3/ck0;->c:Z
+    :try_start_2
+    invoke-static {v0, v4, v2}, Ljava/lang/Class;->forName(Ljava/lang/String;ZLjava/lang/ClassLoader;)Ljava/lang/Class;
 
-    if-eqz p1, :cond_4
+    move-result-object v0
+
+    invoke-virtual {v0, v1, v5}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+
+    move-result-object v2
+    :try_end_2
+    .catch Ljava/lang/ThreadDeath; {:try_start_2 .. :try_end_2} :catch_0
+    .catchall {:try_start_2 .. :try_end_2} :catchall_1
+
+    goto :goto_1
+
+    :catchall_1
+    nop
+
+    :goto_1
+    if-nez v2, :cond_2
+
+    goto :goto_2
 
     .line 8
-    invoke-virtual {v0}, [Ljava/lang/Object;->clone()Ljava/lang/Object;
+    :cond_2
+    :try_start_3
+    invoke-static {}, Lk3/ck0;->a()Ljava/lang/Object;
 
-    move-result-object p1
+    move-result-object v0
 
-    check-cast p1, [Ljava/lang/Object;
+    new-array v1, v3, [Ljava/lang/Object;
 
-    iput-object p1, p0, Lk3/ck0;->a:[Ljava/lang/Object;
+    new-instance v3, Ljava/lang/Throwable;
+
+    invoke-direct {v3}, Ljava/lang/Throwable;-><init>()V
+
+    aput-object v3, v1, v4
+
+    invoke-virtual {v2, v0, v1}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+
+    goto :goto_2
+
+    :catch_0
+    move-exception v0
 
     .line 9
-    iput-boolean v2, p0, Lk3/ck0;->c:Z
+    throw v0
+    :try_end_3
+    .catch Ljava/lang/UnsupportedOperationException; {:try_start_3 .. :try_end_3} :catch_1
+    .catch Ljava/lang/IllegalAccessException; {:try_start_3 .. :try_end_3} :catch_1
+    .catch Ljava/lang/reflect/InvocationTargetException; {:try_start_3 .. :try_end_3} :catch_1
 
-    :cond_4
+    :catch_1
+    :goto_2
     return-void
+
+    :catch_2
+    move-exception v0
+
+    .line 10
+    throw v0
+.end method
+
+.method public static a()Ljava/lang/Object;
+    .locals 5
+    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+    .end annotation
+
+    const/4 v0, 0x0
+
+    :try_start_0
+    const-string v1, "sun.misc.SharedSecrets"
+
+    const/4 v2, 0x0
+
+    .line 1
+    invoke-static {v1, v2, v0}, Ljava/lang/Class;->forName(Ljava/lang/String;ZLjava/lang/ClassLoader;)Ljava/lang/Class;
+
+    move-result-object v1
+
+    const-string v3, "getJavaLangAccess"
+
+    new-array v4, v2, [Ljava/lang/Class;
+
+    .line 2
+    invoke-virtual {v1, v3, v4}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+
+    move-result-object v1
+
+    new-array v2, v2, [Ljava/lang/Object;
+
+    .line 3
+    invoke-virtual {v1, v0, v2}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v0
+    :try_end_0
+    .catch Ljava/lang/ThreadDeath; {:try_start_0 .. :try_end_0} :catch_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    :catchall_0
+    return-object v0
+
+    :catch_0
+    move-exception v0
+
+    .line 4
+    throw v0
 .end method

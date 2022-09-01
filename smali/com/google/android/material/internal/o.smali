@@ -160,9 +160,9 @@
 
     .line 2
     :cond_0
-    new-instance v0, Lk3/l6;
+    new-instance v0, Lk3/m6;
 
-    invoke-direct {v0, p0}, Lk3/l6;-><init>(Landroid/view/View;)V
+    invoke-direct {v0, p0}, Lk3/m6;-><init>(Landroid/view/View;)V
 
     move-object p0, v0
 

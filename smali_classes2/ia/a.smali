@@ -29,14 +29,14 @@
     new-instance v0, Lia/b;
 
     .line 2
-    iget-object v1, p1, Li7/c;->f:Ljava/lang/Long;
+    iget-object v1, p1, Li7/c;->g:Ljava/lang/Long;
 
     .line 3
     invoke-virtual {v1}, Ljava/lang/Long;->longValue()J
 
     move-result-wide v1
 
-    sget-object v3, Lia/e;->f:Lia/e;
+    sget-object v3, Lia/e;->g:Lia/e;
 
     invoke-direct {v0, v1, v2, v3, p2}, Lia/b;-><init>(JLia/e;I)V
 
@@ -50,7 +50,7 @@
     move-result-object p2
 
     .line 5
-    iget-object p1, p1, Li7/c;->f:Ljava/lang/Long;
+    iget-object p1, p1, Li7/c;->g:Ljava/lang/Long;
 
     .line 6
     invoke-virtual {p1}, Ljava/lang/Long;->longValue()J
@@ -108,7 +108,7 @@
     const-string v1, "Error in inserting redaction info of the user"
 
     .line 12
-    invoke-static {v0, v1, p2}, Landroidx/savedstate/d;->g(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v0, v1, p2}, Le5/i;->i(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
@@ -182,7 +182,7 @@
     const-string v1, "Error in updating redaction detail"
 
     .line 20
-    invoke-static {v0, v1, p2}, Landroidx/savedstate/d;->g(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v0, v1, p2}, Le5/i;->i(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_1
 

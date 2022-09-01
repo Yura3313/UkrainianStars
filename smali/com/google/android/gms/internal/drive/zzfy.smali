@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field public final f:Lcom/google/android/gms/drive/metadata/internal/MetadataBundle;
+.field public final g:Lcom/google/android/gms/drive/metadata/internal/MetadataBundle;
 
 
 # direct methods
@@ -38,7 +38,7 @@
     invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lcom/google/android/gms/internal/drive/zzfy;->f:Lcom/google/android/gms/drive/metadata/internal/MetadataBundle;
+    iput-object p1, p0, Lcom/google/android/gms/internal/drive/zzfy;->g:Lcom/google/android/gms/drive/metadata/internal/MetadataBundle;
 
     return-void
 .end method
@@ -58,7 +58,7 @@
     const/4 v1, 0x2
 
     .line 2
-    iget-object v2, p0, Lcom/google/android/gms/internal/drive/zzfy;->f:Lcom/google/android/gms/drive/metadata/internal/MetadataBundle;
+    iget-object v2, p0, Lcom/google/android/gms/internal/drive/zzfy;->g:Lcom/google/android/gms/drive/metadata/internal/MetadataBundle;
 
     const/4 v3, 0x0
 

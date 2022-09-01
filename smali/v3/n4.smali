@@ -38,7 +38,7 @@
         }
     .end annotation
 
-    sget-object v0, Lq9/b;->f:Lv3/m4;
+    sget-object v0, Lv3/l4;->a:Lv3/m4;
 
     return-object v0
 .end method

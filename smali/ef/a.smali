@@ -37,7 +37,7 @@
 
 
 # virtual methods
-.method public final requestBodyConverter(Ljava/lang/reflect/Type;[Ljava/lang/annotation/Annotation;[Ljava/lang/annotation/Annotation;Lef/d0;)Lef/j;
+.method public final requestBodyConverter(Ljava/lang/reflect/Type;[Ljava/lang/annotation/Annotation;[Ljava/lang/annotation/Annotation;Lef/c0;)Lef/j;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -47,7 +47,7 @@
             "Ljava/lang/annotation/Annotation;",
             "[",
             "Ljava/lang/annotation/Annotation;",
-            "Lef/d0;",
+            "Lef/c0;",
             ")",
             "Lef/j<",
             "*",
@@ -62,7 +62,7 @@
     .line 1
     const-class p2, Lokhttp3/RequestBody;
 
-    invoke-static {p1}, Lef/h0;->g(Ljava/lang/reflect/Type;)Ljava/lang/Class;
+    invoke-static {p1}, Lef/g0;->g(Ljava/lang/reflect/Type;)Ljava/lang/Class;
 
     move-result-object p1
 
@@ -83,7 +83,7 @@
     return-object p1
 .end method
 
-.method public final responseBodyConverter(Ljava/lang/reflect/Type;[Ljava/lang/annotation/Annotation;Lef/d0;)Lef/j;
+.method public final responseBodyConverter(Ljava/lang/reflect/Type;[Ljava/lang/annotation/Annotation;Lef/c0;)Lef/j;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -91,7 +91,7 @@
             "Ljava/lang/reflect/Type;",
             "[",
             "Ljava/lang/annotation/Annotation;",
-            "Lef/d0;",
+            "Lef/c0;",
             ")",
             "Lef/j<",
             "Lokhttp3/ResponseBody;",
@@ -110,7 +110,7 @@
     .line 2
     const-class p1, Lgf/w;
 
-    invoke-static {p2, p1}, Lef/h0;->j([Ljava/lang/annotation/Annotation;Ljava/lang/Class;)Z
+    invoke-static {p2, p1}, Lef/g0;->j([Ljava/lang/annotation/Annotation;Ljava/lang/Class;)Z
 
     move-result p1
 
@@ -147,7 +147,7 @@
 
     .line 8
     :try_start_0
-    const-class p2, Lie/h;
+    const-class p2, Lie/i;
 
     if-ne p1, p2, :cond_3
 

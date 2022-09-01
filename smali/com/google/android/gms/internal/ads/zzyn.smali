@@ -117,7 +117,7 @@
     move-result-object v0
 
     .line 2
-    sget-object v1, Lk3/cw0;->a:Ljava/lang/ClassLoader;
+    sget-object v1, Lk3/gw0;->a:Ljava/lang/ClassLoader;
 
     .line 3
     invoke-virtual {v0, p1}, Landroid/os/Parcel;->writeInt(I)V

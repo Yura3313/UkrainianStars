@@ -4,11 +4,11 @@
 
 
 # static fields
-.field public static a:Lk3/k0;
+.field public static a:Lk3/j0;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lk3/k0<",
-            "Ljava/lang/Long;",
+            "Lk3/j0<",
+            "Ljava/lang/Boolean;",
             ">;"
         }
     .end annotation
@@ -17,17 +17,17 @@
 
 # direct methods
 .method public static constructor <clinit>()V
-    .locals 3
+    .locals 2
 
-    const-string v0, "gads:rendering:timeout_ms"
+    const-string v0, "gads:signals_collection_on_service:enabled"
 
-    const-wide/32 v1, 0xea60
+    const/4 v1, 0x1
 
-    invoke-static {v0, v1, v2}, Lk3/k0;->b(Ljava/lang/String;J)Lk3/k0;
+    invoke-static {v0, v1}, Lk3/j0;->c(Ljava/lang/String;Z)Lk3/j0;
 
     move-result-object v0
 
-    sput-object v0, Lk3/e1;->a:Lk3/k0;
+    sput-object v0, Lk3/e1;->a:Lk3/j0;
 
     return-void
 .end method

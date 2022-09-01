@@ -218,7 +218,7 @@
     check-cast v1, La5/c;
 
     .line 5
-    iget-object v1, v1, La5/c;->f:Lcom/google/android/play/core/tasks/i;
+    iget-object v1, v1, La5/c;->g:Lcom/google/android/play/core/tasks/i;
 
     if-eqz v1, :cond_0
 
@@ -289,7 +289,7 @@
     new-instance v0, La5/e;
 
     .line 1
-    iget-object v1, p1, La5/c;->f:Lcom/google/android/play/core/tasks/i;
+    iget-object v1, p1, La5/c;->g:Lcom/google/android/play/core/tasks/i;
 
     .line 2
     invoke-direct {v0, p0, v1, p1}, La5/e;-><init>(La5/l;Lcom/google/android/play/core/tasks/i;La5/c;)V
@@ -424,7 +424,7 @@
     check-cast v3, La5/c;
 
     .line 5
-    iget-object v3, v3, La5/c;->f:Lcom/google/android/play/core/tasks/i;
+    iget-object v3, v3, La5/c;->g:Lcom/google/android/play/core/tasks/i;
 
     if-nez v3, :cond_0
 

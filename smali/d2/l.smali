@@ -40,7 +40,7 @@
     const-string p3, "Unknown color scheme: "
 
     .line 2
-    invoke-static {p2, p3, p0}, Lcom/google/android/gms/ads/e;->a(ILjava/lang/String;I)Ljava/lang/String;
+    invoke-static {p2, p3, p0}, Lcom/google/android/gms/ads/f;->a(ILjava/lang/String;I)Ljava/lang/String;
 
     move-result-object p0
 

@@ -99,9 +99,9 @@
     move-exception p1
 
     .line 3
-    sget-object v1, Li1/o;->B:Li1/o;
+    sget-object v1, Li1/p;->B:Li1/p;
 
-    iget-object v1, v1, Li1/o;->g:Lk3/ia;
+    iget-object v1, v1, Li1/p;->g:Lk3/ia;
 
     const-string v2, "ApiLevelUtil.getCookieManager"
 

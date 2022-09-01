@@ -88,7 +88,7 @@
     iput-object v0, p0, Lsb/d;->m:Lsb/d$d;
 
     .line 9
-    invoke-static {}, La0/a;->h()V
+    invoke-static {}, Lr3/r4;->e()V
 
     .line 10
     sget-object v0, Lsb/h;->e:Lsb/h;

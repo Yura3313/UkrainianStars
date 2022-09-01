@@ -4,23 +4,11 @@
 
 
 # static fields
-.field public static final synthetic d0:I
+.field public static final synthetic e0:I
 
 
 # instance fields
-.field public V:Landroidx/viewpager/widget/ViewPager;
-
-.field public W:Lre/l;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lre/l<",
-            "-",
-            "Ljava/lang/Integer;",
-            "Ljava/lang/String;",
-            ">;"
-        }
-    .end annotation
-.end field
+.field public W:Landroidx/viewpager/widget/ViewPager;
 
 .field public a0:Lre/l;
     .annotation system Ldalvik/annotation/Signature;
@@ -46,7 +34,19 @@
     .end annotation
 .end field
 
-.field public final c0:Lcom/supercell/id/view/FlatTabLayout$e;
+.field public c0:Lre/l;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lre/l<",
+            "-",
+            "Ljava/lang/Integer;",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public final d0:Lcom/supercell/id/view/FlatTabLayout$e;
 
 
 # direct methods
@@ -66,32 +66,32 @@
 
     const-string v0, "context"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 2
     invoke-direct {p0, p1, p2, p3}, Lcom/google/android/material/tabs/TabLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     .line 3
-    sget-object p1, Lcom/supercell/id/view/FlatTabLayout$d;->f:Lcom/supercell/id/view/FlatTabLayout$d;
-
-    iput-object p1, p0, Lcom/supercell/id/view/FlatTabLayout;->W:Lre/l;
-
-    .line 4
-    sget-object p1, Lcom/supercell/id/view/FlatTabLayout$c;->f:Lcom/supercell/id/view/FlatTabLayout$c;
+    sget-object p1, Lcom/supercell/id/view/FlatTabLayout$d;->g:Lcom/supercell/id/view/FlatTabLayout$d;
 
     iput-object p1, p0, Lcom/supercell/id/view/FlatTabLayout;->a0:Lre/l;
 
-    .line 5
-    sget-object p1, Lcom/supercell/id/view/FlatTabLayout$b;->f:Lcom/supercell/id/view/FlatTabLayout$b;
+    .line 4
+    sget-object p1, Lcom/supercell/id/view/FlatTabLayout$c;->g:Lcom/supercell/id/view/FlatTabLayout$c;
 
     iput-object p1, p0, Lcom/supercell/id/view/FlatTabLayout;->b0:Lre/l;
+
+    .line 5
+    sget-object p1, Lcom/supercell/id/view/FlatTabLayout$b;->g:Lcom/supercell/id/view/FlatTabLayout$b;
+
+    iput-object p1, p0, Lcom/supercell/id/view/FlatTabLayout;->c0:Lre/l;
 
     .line 6
     new-instance p1, Lcom/supercell/id/view/FlatTabLayout$e;
 
     invoke-direct {p1, p0}, Lcom/supercell/id/view/FlatTabLayout$e;-><init>(Lcom/supercell/id/view/FlatTabLayout;)V
 
-    iput-object p1, p0, Lcom/supercell/id/view/FlatTabLayout;->c0:Lcom/supercell/id/view/FlatTabLayout$e;
+    iput-object p1, p0, Lcom/supercell/id/view/FlatTabLayout;->d0:Lcom/supercell/id/view/FlatTabLayout$e;
 
     return-void
 .end method
@@ -117,7 +117,7 @@
     if-eqz p3, :cond_0
 
     .line 4
-    iget-object v1, p0, Lcom/supercell/id/view/FlatTabLayout;->W:Lre/l;
+    iget-object v1, p0, Lcom/supercell/id/view/FlatTabLayout;->a0:Lre/l;
 
     invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -141,10 +141,10 @@
 
     const-string v2, "view.tab_title"
 
-    invoke-static {p3, v2}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p3, v2}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 5
-    invoke-static {p3, v1, v0}, Lud/f0;->j(Landroid/widget/TextView;Ljava/lang/String;Lre/p;)V
+    invoke-static {p3, v1, v0}, Lud/d0;->j(Landroid/widget/TextView;Ljava/lang/String;Lre/p;)V
 
     .line 6
     :cond_0
@@ -168,13 +168,13 @@
     invoke-virtual {v0, p3}, Landroid/view/View;->setSoundEffectsEnabled(Z)V
 
     .line 8
-    sget-object v1, Lcom/supercell/id/view/FlatTabLayout$a;->f:Lcom/supercell/id/view/FlatTabLayout$a;
+    sget-object v1, Lcom/supercell/id/view/FlatTabLayout$a;->g:Lcom/supercell/id/view/FlatTabLayout$a;
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 9
     :cond_2
-    iget-object v0, p0, Lcom/supercell/id/view/FlatTabLayout;->V:Landroidx/viewpager/widget/ViewPager;
+    iget-object v0, p0, Lcom/supercell/id/view/FlatTabLayout;->W:Landroidx/viewpager/widget/ViewPager;
 
     if-eqz v0, :cond_3
 
@@ -204,7 +204,7 @@
         }
     .end annotation
 
-    iget-object v0, p0, Lcom/supercell/id/view/FlatTabLayout;->b0:Lre/l;
+    iget-object v0, p0, Lcom/supercell/id/view/FlatTabLayout;->c0:Lre/l;
 
     return-object v0
 .end method
@@ -221,7 +221,7 @@
         }
     .end annotation
 
-    iget-object v0, p0, Lcom/supercell/id/view/FlatTabLayout;->a0:Lre/l;
+    iget-object v0, p0, Lcom/supercell/id/view/FlatTabLayout;->b0:Lre/l;
 
     return-object v0
 .end method
@@ -238,7 +238,7 @@
         }
     .end annotation
 
-    iget-object v0, p0, Lcom/supercell/id/view/FlatTabLayout;->W:Lre/l;
+    iget-object v0, p0, Lcom/supercell/id/view/FlatTabLayout;->a0:Lre/l;
 
     return-object v0
 .end method
@@ -247,7 +247,7 @@
     .locals 1
 
     .line 1
-    iput-object p1, p0, Lcom/supercell/id/view/FlatTabLayout;->V:Landroidx/viewpager/widget/ViewPager;
+    iput-object p1, p0, Lcom/supercell/id/view/FlatTabLayout;->W:Landroidx/viewpager/widget/ViewPager;
 
     const/4 v0, 0x0
 
@@ -255,13 +255,13 @@
     invoke-virtual {p0, p1, p2, v0}, Lcom/google/android/material/tabs/TabLayout;->o(Landroidx/viewpager/widget/ViewPager;ZZ)V
 
     .line 3
-    iget-object p1, p0, Lcom/supercell/id/view/FlatTabLayout;->c0:Lcom/supercell/id/view/FlatTabLayout$e;
+    iget-object p1, p0, Lcom/supercell/id/view/FlatTabLayout;->d0:Lcom/supercell/id/view/FlatTabLayout$e;
 
     .line 4
     invoke-virtual {p0, p1}, Lcom/google/android/material/tabs/TabLayout;->j(Lcom/google/android/material/tabs/TabLayout$c;)V
 
     .line 5
-    iget-object p1, p0, Lcom/supercell/id/view/FlatTabLayout;->c0:Lcom/supercell/id/view/FlatTabLayout$e;
+    iget-object p1, p0, Lcom/supercell/id/view/FlatTabLayout;->d0:Lcom/supercell/id/view/FlatTabLayout$e;
 
     .line 6
     invoke-virtual {p0, p1}, Lcom/google/android/material/tabs/TabLayout;->a(Lcom/google/android/material/tabs/TabLayout$c;)V
@@ -309,12 +309,12 @@
     if-eqz p2, :cond_1
 
     .line 3
-    iget-object p2, p0, Lcom/supercell/id/view/FlatTabLayout;->a0:Lre/l;
+    iget-object p2, p0, Lcom/supercell/id/view/FlatTabLayout;->b0:Lre/l;
 
     goto :goto_1
 
     :cond_1
-    iget-object p2, p0, Lcom/supercell/id/view/FlatTabLayout;->b0:Lre/l;
+    iget-object p2, p0, Lcom/supercell/id/view/FlatTabLayout;->c0:Lre/l;
 
     .line 4
     :goto_1
@@ -344,12 +344,12 @@
 
     const-string v0, "view.tab_icon"
 
-    invoke-static {p2, v0}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/4 v0, 0x1
 
     .line 7
-    invoke-static {p2, p1, v0}, Lud/f0;->h(Landroid/widget/ImageView;Ljava/lang/String;Z)V
+    invoke-static {p2, p1, v0}, Lud/d0;->h(Landroid/widget/ImageView;Ljava/lang/String;Z)V
 
     :cond_2
     return-void
@@ -370,9 +370,9 @@
 
     const-string v0, "<set-?>"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    iput-object p1, p0, Lcom/supercell/id/view/FlatTabLayout;->b0:Lre/l;
+    iput-object p1, p0, Lcom/supercell/id/view/FlatTabLayout;->c0:Lre/l;
 
     return-void
 .end method
@@ -392,9 +392,9 @@
 
     const-string v0, "<set-?>"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    iput-object p1, p0, Lcom/supercell/id/view/FlatTabLayout;->a0:Lre/l;
+    iput-object p1, p0, Lcom/supercell/id/view/FlatTabLayout;->b0:Lre/l;
 
     return-void
 .end method
@@ -414,9 +414,9 @@
 
     const-string v0, "<set-?>"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    iput-object p1, p0, Lcom/supercell/id/view/FlatTabLayout;->W:Lre/l;
+    iput-object p1, p0, Lcom/supercell/id/view/FlatTabLayout;->a0:Lre/l;
 
     return-void
 .end method

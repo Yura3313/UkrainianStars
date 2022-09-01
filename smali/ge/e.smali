@@ -14,7 +14,7 @@
 # static fields
 .field public static e:Lge/e;
 
-.field public static final f:Lie/f;
+.field public static final f:Lie/g;
 
 .field public static final g:Lge/e$b;
 
@@ -58,15 +58,15 @@
     sput-object v0, Lge/e;->g:Lge/e$b;
 
     .line 3
-    sget-object v0, Lge/e$a;->f:Lge/e$a;
+    sget-object v0, Lge/e$a;->g:Lge/e$a;
 
-    invoke-static {v0}, La5/r;->d(Lre/a;)Lie/c;
+    invoke-static {v0}, Ld2/u;->c(Lre/a;)Lie/c;
 
     move-result-object v0
 
-    check-cast v0, Lie/f;
+    check-cast v0, Lie/g;
 
-    sput-object v0, Lge/e;->f:Lie/f;
+    sput-object v0, Lge/e;->f:Lie/g;
 
     return-void
 .end method
@@ -88,11 +88,11 @@
 
     invoke-direct {p2}, Lhe/a;-><init>()V
 
-    invoke-static {p1, p2}, Lje/j;->J(Ljava/util/Collection;Ljava/lang/Object;)Ljava/util/List;
+    invoke-static {p1, p2}, Lje/j;->E(Ljava/util/Collection;Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object p1
 
-    invoke-static {p1}, Lje/j;->S(Ljava/util/Collection;)Ljava/util/List;
+    invoke-static {p1}, Lje/j;->N(Ljava/util/Collection;)Ljava/util/List;
 
     move-result-object p1
 

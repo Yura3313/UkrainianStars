@@ -1,5 +1,5 @@
 .class public final Lpd/i$a$f;
-.super Lse/h;
+.super Lse/i;
 .source "FriendsFragment.kt"
 
 # interfaces
@@ -18,34 +18,34 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/p<",
         "Ljava/lang/String;",
         "Lre/l<",
         "-",
         "Landroid/graphics/drawable/BitmapDrawable;",
         "+",
-        "Lie/h;",
+        "Lie/i;",
         ">;",
-        "Lie/h;",
+        "Lie/i;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic f:Lpd/i$a;
+.field public final synthetic g:Lpd/i$a;
 
 
 # direct methods
 .method public constructor <init>(Lpd/i$a;)V
     .locals 0
 
-    iput-object p1, p0, Lpd/i$a$f;->f:Lpd/i$a;
+    iput-object p1, p0, Lpd/i$a$f;->g:Lpd/i$a;
 
     const/4 p1, 0x2
 
-    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -63,11 +63,11 @@
     const-string v0, "key"
 
     .line 2
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "callback"
 
-    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 3
     sget-object v0, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
@@ -77,17 +77,17 @@
     move-result-object v0
 
     .line 4
-    iget-object v0, v0, Lae/u;->s:Lud/j;
+    iget-object v0, v0, Lae/u;->s:Lud/i;
 
     .line 5
     new-instance v1, Lpd/j;
 
     invoke-direct {v1, p0, p2}, Lpd/j;-><init>(Lpd/i$a$f;Lre/l;)V
 
-    invoke-virtual {v0, p1, v1}, Lud/j;->b(Ljava/lang/String;Lre/p;)V
+    invoke-virtual {v0, p1, v1}, Lud/i;->b(Ljava/lang/String;Lre/p;)V
 
     .line 6
-    sget-object p1, Lie/h;->a:Lie/h;
+    sget-object p1, Lie/i;->a:Lie/i;
 
     return-object p1
 .end method

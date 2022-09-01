@@ -37,7 +37,7 @@
 
 
 # virtual methods
-.method public a(Landroid/content/Context;Landroid/os/Looper;Ld2/c;Ljava/lang/Object;Lb2/e;Lb2/l;)Lcom/google/android/gms/common/api/a$f;
+.method public a(Landroid/content/Context;Landroid/os/Looper;Ld2/c;Ljava/lang/Object;Lb2/d;Lb2/k;)Lcom/google/android/gms/common/api/a$f;
     .locals 0
     .param p1    # Landroid/content/Context;
         .annotation build Landroidx/annotation/RecentlyNonNull;
@@ -55,11 +55,11 @@
         .annotation build Landroidx/annotation/RecentlyNonNull;
         .end annotation
     .end param
-    .param p5    # Lb2/e;
+    .param p5    # Lb2/d;
         .annotation build Landroidx/annotation/RecentlyNonNull;
         .end annotation
     .end param
-    .param p6    # Lb2/l;
+    .param p6    # Lb2/k;
         .annotation build Landroidx/annotation/RecentlyNonNull;
         .end annotation
     .end param
@@ -73,8 +73,8 @@
             "Landroid/os/Looper;",
             "Ld2/c;",
             "TO;",
-            "Lb2/e;",
-            "Lb2/l;",
+            "Lb2/d;",
+            "Lb2/k;",
             ")TT;"
         }
     .end annotation
@@ -133,7 +133,7 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    invoke-virtual/range {p0 .. p6}, Lcom/google/android/gms/common/api/a$a;->a(Landroid/content/Context;Landroid/os/Looper;Ld2/c;Ljava/lang/Object;Lb2/e;Lb2/l;)Lcom/google/android/gms/common/api/a$f;
+    invoke-virtual/range {p0 .. p6}, Lcom/google/android/gms/common/api/a$a;->a(Landroid/content/Context;Landroid/os/Looper;Ld2/c;Ljava/lang/Object;Lb2/d;Lb2/k;)Lcom/google/android/gms/common/api/a$f;
 
     move-result-object p1
 

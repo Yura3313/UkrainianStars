@@ -183,7 +183,7 @@
     .end annotation
 
     .line 1
-    sget-object v0, Ln5/o0;->k:Ln5/o0;
+    sget-object v0, Ln5/o0;->l:Ln5/o0;
 
     invoke-virtual {p0}, Ln5/z;->t()Ln5/c0;
 
@@ -263,7 +263,7 @@
 
     .line 9
     :cond_4
-    sget-object p0, Ln5/o0;->i:Ln5/o0;
+    sget-object p0, Ln5/o0;->j:Ln5/o0;
 
     if-eq v2, p0, :cond_7
 
@@ -281,7 +281,7 @@
 
     .line 11
     :cond_6
-    sget-object p0, Ln5/o0;->j:Ln5/o0;
+    sget-object p0, Ln5/o0;->k:Ln5/o0;
 
     if-ne v2, p0, :cond_8
 

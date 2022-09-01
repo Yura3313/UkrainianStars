@@ -747,7 +747,7 @@
     iget v2, v1, Le6/f;->a:I
 
     .line 4
-    iget v3, p2, Ll6/a;->g:I
+    iget v3, p2, Ll6/a;->h:I
 
     const/4 v4, 0x0
 
@@ -762,7 +762,7 @@
 
     .line 6
     :cond_0
-    iget-object v3, p2, Ll6/a;->f:[I
+    iget-object v3, p2, Ll6/a;->g:[I
 
     array-length v3, v3
 
@@ -772,7 +772,7 @@
     if-ge v5, v3, :cond_1
 
     .line 7
-    iget-object v6, p2, Ll6/a;->f:[I
+    iget-object v6, p2, Ll6/a;->g:[I
 
     aput v4, v6, v5
 

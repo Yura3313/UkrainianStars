@@ -20,7 +20,7 @@
     value = {
         "Ljava/lang/Object;",
         "Ljava/util/Comparator<",
-        "Lo8/y;",
+        "Lo8/z;",
         ">;"
     }
 .end annotation
@@ -41,15 +41,15 @@
     .locals 3
 
     .line 1
-    check-cast p1, Lo8/y;
+    check-cast p1, Lo8/z;
 
-    check-cast p2, Lo8/y;
+    check-cast p2, Lo8/z;
 
     .line 2
-    iget-wide v0, p1, Lo8/y;->w:J
+    iget-wide v0, p1, Lo8/z;->x:J
 
     .line 3
-    iget-wide p1, p2, Lo8/y;->w:J
+    iget-wide p1, p2, Lo8/z;->x:J
 
     cmp-long v2, v0, p1
 

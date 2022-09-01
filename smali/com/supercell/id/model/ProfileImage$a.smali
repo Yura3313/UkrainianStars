@@ -43,7 +43,7 @@
     const-string v0, "parcel"
 
     .line 1
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 2
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
@@ -57,13 +57,13 @@
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
     if-eqz v1, :cond_0
 
-    sget-object p1, Lcom/supercell/id/model/ProfileImage$Empty;->g:Lcom/supercell/id/model/ProfileImage$Empty;
+    sget-object p1, Lcom/supercell/id/model/ProfileImage$Empty;->h:Lcom/supercell/id/model/ProfileImage$Empty;
 
     goto :goto_1
 
@@ -75,7 +75,7 @@
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -99,7 +99,7 @@
     goto :goto_1
 
     :cond_1
-    invoke-static {}, Lt3/e;->f()V
+    invoke-static {}, Lt3/h;->j()V
 
     throw v2
 
@@ -111,7 +111,7 @@
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -133,7 +133,7 @@
     return-object p1
 
     :cond_3
-    invoke-static {}, Lt3/e;->f()V
+    invoke-static {}, Lt3/h;->j()V
 
     throw v2
 
@@ -144,7 +144,7 @@
     const-string v1, "Could not create IdImage from type "
 
     .line 7
-    invoke-static {v1, v0}, Lcom/google/android/gms/ads/e;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v1, v0}, Lf/g;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 

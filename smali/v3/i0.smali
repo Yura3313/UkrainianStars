@@ -12,16 +12,20 @@
 .end annotation
 
 
+# static fields
+.field public static volatile h:[Lv3/i0;
+
+
 # instance fields
 .field public c:Ljava/lang/Integer;
 
-.field public d:Ljava/lang/Boolean;
+.field public d:Ljava/lang/String;
 
-.field public e:Ljava/lang/String;
+.field public e:Lv3/g0;
 
-.field public f:Ljava/lang/String;
+.field public f:Ljava/lang/Boolean;
 
-.field public g:Ljava/lang/String;
+.field public g:Ljava/lang/Boolean;
 
 
 # direct methods
@@ -37,16 +41,16 @@
     iput-object v0, p0, Lv3/i0;->c:Ljava/lang/Integer;
 
     .line 3
-    iput-object v0, p0, Lv3/i0;->d:Ljava/lang/Boolean;
+    iput-object v0, p0, Lv3/i0;->d:Ljava/lang/String;
 
     .line 4
-    iput-object v0, p0, Lv3/i0;->e:Ljava/lang/String;
+    iput-object v0, p0, Lv3/i0;->e:Lv3/g0;
 
     .line 5
-    iput-object v0, p0, Lv3/i0;->f:Ljava/lang/String;
+    iput-object v0, p0, Lv3/i0;->f:Ljava/lang/Boolean;
 
     .line 6
-    iput-object v0, p0, Lv3/i0;->g:Ljava/lang/String;
+    iput-object v0, p0, Lv3/i0;->g:Ljava/lang/Boolean;
 
     .line 7
     iput-object v0, p0, Lv3/p5;->b:Lv3/q5;
@@ -61,8 +65,8 @@
 
 
 # virtual methods
-.method public final a(Lv3/n5;)Lv3/t5;
-    .locals 6
+.method public final synthetic a(Lv3/n5;)Lv3/t5;
+    .locals 2
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;
@@ -80,21 +84,21 @@
 
     const/16 v1, 0x8
 
+    if-eq v0, v1, :cond_6
+
+    const/16 v1, 0x12
+
     if-eq v0, v1, :cond_5
-
-    const/16 v1, 0x10
-
-    if-eq v0, v1, :cond_4
 
     const/16 v1, 0x1a
 
     if-eq v0, v1, :cond_3
 
-    const/16 v1, 0x22
+    const/16 v1, 0x20
 
     if-eq v0, v1, :cond_2
 
-    const/16 v1, 0x2a
+    const/16 v1, 0x28
 
     if-eq v0, v1, :cond_1
 
@@ -105,40 +109,10 @@
 
     if-nez v0, :cond_0
 
-    goto :goto_1
+    return-object p0
 
     .line 3
     :cond_1
-    invoke-virtual {p1}, Lv3/n5;->a()Ljava/lang/String;
-
-    move-result-object v0
-
-    iput-object v0, p0, Lv3/i0;->g:Ljava/lang/String;
-
-    goto :goto_0
-
-    .line 4
-    :cond_2
-    invoke-virtual {p1}, Lv3/n5;->a()Ljava/lang/String;
-
-    move-result-object v0
-
-    iput-object v0, p0, Lv3/i0;->f:Ljava/lang/String;
-
-    goto :goto_0
-
-    .line 5
-    :cond_3
-    invoke-virtual {p1}, Lv3/n5;->a()Ljava/lang/String;
-
-    move-result-object v0
-
-    iput-object v0, p0, Lv3/i0;->e:Ljava/lang/String;
-
-    goto :goto_0
-
-    .line 6
-    :cond_4
     invoke-virtual {p1}, Lv3/n5;->k()Z
 
     move-result v0
@@ -147,74 +121,71 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lv3/i0;->d:Ljava/lang/Boolean;
+    iput-object v0, p0, Lv3/i0;->g:Ljava/lang/Boolean;
 
     goto :goto_0
+
+    .line 4
+    :cond_2
+    invoke-virtual {p1}, Lv3/n5;->k()Z
+
+    move-result v0
+
+    invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lv3/i0;->f:Ljava/lang/Boolean;
+
+    goto :goto_0
+
+    .line 5
+    :cond_3
+    iget-object v0, p0, Lv3/i0;->e:Lv3/g0;
+
+    if-nez v0, :cond_4
+
+    .line 6
+    new-instance v0, Lv3/g0;
+
+    invoke-direct {v0}, Lv3/g0;-><init>()V
+
+    iput-object v0, p0, Lv3/i0;->e:Lv3/g0;
 
     .line 7
-    :cond_5
-    iget v1, p1, Lv3/n5;->e:I
+    :cond_4
+    iget-object v0, p0, Lv3/i0;->e:Lv3/g0;
 
-    add-int/lit8 v1, v1, 0x0
-
-    .line 8
-    :try_start_0
-    invoke-virtual {p1}, Lv3/n5;->l()I
-
-    move-result v2
-
-    if-ltz v2, :cond_6
-
-    const/4 v3, 0x4
-
-    if-gt v2, v3, :cond_6
-
-    .line 9
-    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v2
-
-    iput-object v2, p0, Lv3/i0;->c:Ljava/lang/Integer;
+    invoke-virtual {p1, v0}, Lv3/n5;->b(Lv3/t5;)V
 
     goto :goto_0
 
-    .line 10
+    .line 8
+    :cond_5
+    invoke-virtual {p1}, Lv3/n5;->a()Ljava/lang/String;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lv3/i0;->d:Ljava/lang/String;
+
+    goto :goto_0
+
+    .line 9
     :cond_6
-    new-instance v3, Ljava/lang/IllegalArgumentException;
+    invoke-virtual {p1}, Lv3/n5;->l()I
 
-    const/16 v4, 0x2e
+    move-result v0
 
-    new-instance v5, Ljava/lang/StringBuilder;
+    .line 10
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    invoke-direct {v5, v4}, Ljava/lang/StringBuilder;-><init>(I)V
+    move-result-object v0
 
-    invoke-virtual {v5, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    const-string v2, " is not a valid enum ComparisonType"
-
-    invoke-virtual {v5, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-direct {v3, v2}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
-
-    throw v3
-    :try_end_0
-    .catch Ljava/lang/IllegalArgumentException; {:try_start_0 .. :try_end_0} :catch_0
-
-    .line 11
-    :catch_0
-    invoke-virtual {p1, v1}, Lv3/n5;->g(I)V
-
-    .line 12
-    invoke-virtual {p0, p1, v0}, Lv3/p5;->f(Lv3/n5;I)Z
+    iput-object v0, p0, Lv3/i0;->c:Ljava/lang/Integer;
 
     goto :goto_0
 
     :cond_7
-    :goto_1
     return-object p0
 .end method
 
@@ -242,51 +213,55 @@
 
     .line 3
     :cond_0
-    iget-object v0, p0, Lv3/i0;->d:Ljava/lang/Boolean;
+    iget-object v0, p0, Lv3/i0;->d:Ljava/lang/String;
 
     if-eqz v0, :cond_1
 
     const/4 v1, 0x2
 
     .line 4
-    invoke-virtual {v0}, Ljava/lang/Boolean;->booleanValue()Z
-
-    move-result v0
-
-    invoke-virtual {p1, v1, v0}, Lv3/o5;->g(IZ)V
+    invoke-virtual {p1, v1, v0}, Lv3/o5;->f(ILjava/lang/String;)V
 
     .line 5
     :cond_1
-    iget-object v0, p0, Lv3/i0;->e:Ljava/lang/String;
+    iget-object v0, p0, Lv3/i0;->e:Lv3/g0;
 
     if-eqz v0, :cond_2
 
     const/4 v1, 0x3
 
     .line 6
-    invoke-virtual {p1, v1, v0}, Lv3/o5;->f(ILjava/lang/String;)V
+    invoke-virtual {p1, v1, v0}, Lv3/o5;->d(ILv3/t5;)V
 
     .line 7
     :cond_2
-    iget-object v0, p0, Lv3/i0;->f:Ljava/lang/String;
+    iget-object v0, p0, Lv3/i0;->f:Ljava/lang/Boolean;
 
     if-eqz v0, :cond_3
 
     const/4 v1, 0x4
 
     .line 8
-    invoke-virtual {p1, v1, v0}, Lv3/o5;->f(ILjava/lang/String;)V
+    invoke-virtual {v0}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result v0
+
+    invoke-virtual {p1, v1, v0}, Lv3/o5;->g(IZ)V
 
     .line 9
     :cond_3
-    iget-object v0, p0, Lv3/i0;->g:Ljava/lang/String;
+    iget-object v0, p0, Lv3/i0;->g:Ljava/lang/Boolean;
 
     if-eqz v0, :cond_4
 
     const/4 v1, 0x5
 
     .line 10
-    invoke-virtual {p1, v1, v0}, Lv3/o5;->f(ILjava/lang/String;)V
+    invoke-virtual {v0}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result v0
+
+    invoke-virtual {p1, v1, v0}, Lv3/o5;->g(IZ)V
 
     .line 11
     :cond_4
@@ -323,16 +298,46 @@
 
     .line 4
     :cond_0
-    iget-object v1, p0, Lv3/i0;->d:Ljava/lang/Boolean;
+    iget-object v1, p0, Lv3/i0;->d:Ljava/lang/String;
 
     if-eqz v1, :cond_1
 
     const/4 v3, 0x2
 
     .line 5
-    invoke-virtual {v1}, Ljava/lang/Boolean;->booleanValue()Z
+    invoke-static {v3, v1}, Lv3/o5;->l(ILjava/lang/String;)I
+
+    move-result v1
+
+    add-int/2addr v0, v1
 
     .line 6
+    :cond_1
+    iget-object v1, p0, Lv3/i0;->e:Lv3/g0;
+
+    if-eqz v1, :cond_2
+
+    const/4 v3, 0x3
+
+    .line 7
+    invoke-static {v3, v1}, Lv3/o5;->e(ILv3/t5;)I
+
+    move-result v1
+
+    add-int/2addr v0, v1
+
+    .line 8
+    :cond_2
+    iget-object v1, p0, Lv3/i0;->f:Ljava/lang/Boolean;
+
+    if-eqz v1, :cond_3
+
+    const/4 v3, 0x4
+
+    .line 9
+    invoke-virtual {v1}, Ljava/lang/Boolean;->booleanValue()Z
+
+    .line 10
     invoke-static {v3}, Lv3/o5;->h(I)I
 
     move-result v1
@@ -341,48 +346,23 @@
 
     add-int/2addr v0, v1
 
-    .line 7
-    :cond_1
-    iget-object v1, p0, Lv3/i0;->e:Ljava/lang/String;
-
-    if-eqz v1, :cond_2
-
-    const/4 v2, 0x3
-
-    .line 8
-    invoke-static {v2, v1}, Lv3/o5;->l(ILjava/lang/String;)I
-
-    move-result v1
-
-    add-int/2addr v0, v1
-
-    .line 9
-    :cond_2
-    iget-object v1, p0, Lv3/i0;->f:Ljava/lang/String;
-
-    if-eqz v1, :cond_3
-
-    const/4 v2, 0x4
-
-    .line 10
-    invoke-static {v2, v1}, Lv3/o5;->l(ILjava/lang/String;)I
-
-    move-result v1
-
-    add-int/2addr v0, v1
-
     .line 11
     :cond_3
-    iget-object v1, p0, Lv3/i0;->g:Ljava/lang/String;
+    iget-object v1, p0, Lv3/i0;->g:Ljava/lang/Boolean;
 
     if-eqz v1, :cond_4
 
-    const/4 v2, 0x5
+    const/4 v3, 0x5
 
     .line 12
-    invoke-static {v2, v1}, Lv3/o5;->l(ILjava/lang/String;)I
+    invoke-virtual {v1}, Ljava/lang/Boolean;->booleanValue()Z
+
+    .line 13
+    invoke-static {v3}, Lv3/o5;->h(I)I
 
     move-result v1
+
+    add-int/2addr v1, v2
 
     add-int/2addr v0, v1
 
@@ -439,12 +419,12 @@
 
     .line 6
     :cond_3
-    iget-object v1, p0, Lv3/i0;->d:Ljava/lang/Boolean;
+    iget-object v1, p0, Lv3/i0;->d:Ljava/lang/String;
 
     if-nez v1, :cond_4
 
     .line 7
-    iget-object v1, p1, Lv3/i0;->d:Ljava/lang/Boolean;
+    iget-object v1, p1, Lv3/i0;->d:Ljava/lang/String;
 
     if-eqz v1, :cond_5
 
@@ -452,9 +432,9 @@
 
     .line 8
     :cond_4
-    iget-object v3, p1, Lv3/i0;->d:Ljava/lang/Boolean;
+    iget-object v3, p1, Lv3/i0;->d:Ljava/lang/String;
 
-    invoke-virtual {v1, v3}, Ljava/lang/Boolean;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v1, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -464,12 +444,12 @@
 
     .line 9
     :cond_5
-    iget-object v1, p0, Lv3/i0;->e:Ljava/lang/String;
+    iget-object v1, p0, Lv3/i0;->e:Lv3/g0;
 
     if-nez v1, :cond_6
 
     .line 10
-    iget-object v1, p1, Lv3/i0;->e:Ljava/lang/String;
+    iget-object v1, p1, Lv3/i0;->e:Lv3/g0;
 
     if-eqz v1, :cond_7
 
@@ -477,9 +457,9 @@
 
     .line 11
     :cond_6
-    iget-object v3, p1, Lv3/i0;->e:Ljava/lang/String;
+    iget-object v3, p1, Lv3/i0;->e:Lv3/g0;
 
-    invoke-virtual {v1, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v1, v3}, Lv3/g0;->equals(Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -489,12 +469,12 @@
 
     .line 12
     :cond_7
-    iget-object v1, p0, Lv3/i0;->f:Ljava/lang/String;
+    iget-object v1, p0, Lv3/i0;->f:Ljava/lang/Boolean;
 
     if-nez v1, :cond_8
 
     .line 13
-    iget-object v1, p1, Lv3/i0;->f:Ljava/lang/String;
+    iget-object v1, p1, Lv3/i0;->f:Ljava/lang/Boolean;
 
     if-eqz v1, :cond_9
 
@@ -502,9 +482,9 @@
 
     .line 14
     :cond_8
-    iget-object v3, p1, Lv3/i0;->f:Ljava/lang/String;
+    iget-object v3, p1, Lv3/i0;->f:Ljava/lang/Boolean;
 
-    invoke-virtual {v1, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v1, v3}, Ljava/lang/Boolean;->equals(Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -514,12 +494,12 @@
 
     .line 15
     :cond_9
-    iget-object v1, p0, Lv3/i0;->g:Ljava/lang/String;
+    iget-object v1, p0, Lv3/i0;->g:Ljava/lang/Boolean;
 
     if-nez v1, :cond_a
 
     .line 16
-    iget-object v1, p1, Lv3/i0;->g:Ljava/lang/String;
+    iget-object v1, p1, Lv3/i0;->g:Ljava/lang/Boolean;
 
     if-eqz v1, :cond_b
 
@@ -527,9 +507,9 @@
 
     .line 17
     :cond_a
-    iget-object v3, p1, Lv3/i0;->g:Ljava/lang/String;
+    iget-object v3, p1, Lv3/i0;->g:Ljava/lang/Boolean;
 
-    invoke-virtual {v1, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v1, v3}, Ljava/lang/Boolean;->equals(Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -616,7 +596,7 @@
     goto :goto_0
 
     :cond_0
-    invoke-virtual {v1}, Ljava/lang/Integer;->intValue()I
+    invoke-virtual {v1}, Ljava/lang/Integer;->hashCode()I
 
     move-result v1
 
@@ -626,7 +606,7 @@
     mul-int/lit8 v0, v0, 0x1f
 
     .line 3
-    iget-object v1, p0, Lv3/i0;->d:Ljava/lang/Boolean;
+    iget-object v1, p0, Lv3/i0;->d:Ljava/lang/String;
 
     if-nez v1, :cond_1
 
@@ -635,17 +615,17 @@
     goto :goto_1
 
     :cond_1
-    invoke-virtual {v1}, Ljava/lang/Boolean;->hashCode()I
+    invoke-virtual {v1}, Ljava/lang/String;->hashCode()I
 
     move-result v1
 
     :goto_1
     add-int/2addr v0, v1
 
-    mul-int/lit8 v0, v0, 0x1f
-
     .line 4
-    iget-object v1, p0, Lv3/i0;->e:Ljava/lang/String;
+    iget-object v1, p0, Lv3/i0;->e:Lv3/g0;
+
+    mul-int/lit8 v0, v0, 0x1f
 
     if-nez v1, :cond_2
 
@@ -653,8 +633,9 @@
 
     goto :goto_2
 
+    .line 5
     :cond_2
-    invoke-virtual {v1}, Ljava/lang/String;->hashCode()I
+    invoke-virtual {v1}, Lv3/g0;->hashCode()I
 
     move-result v1
 
@@ -663,8 +644,8 @@
 
     mul-int/lit8 v0, v0, 0x1f
 
-    .line 5
-    iget-object v1, p0, Lv3/i0;->f:Ljava/lang/String;
+    .line 6
+    iget-object v1, p0, Lv3/i0;->f:Ljava/lang/Boolean;
 
     if-nez v1, :cond_3
 
@@ -673,7 +654,7 @@
     goto :goto_3
 
     :cond_3
-    invoke-virtual {v1}, Ljava/lang/String;->hashCode()I
+    invoke-virtual {v1}, Ljava/lang/Boolean;->hashCode()I
 
     move-result v1
 
@@ -682,8 +663,8 @@
 
     mul-int/lit8 v0, v0, 0x1f
 
-    .line 6
-    iget-object v1, p0, Lv3/i0;->g:Ljava/lang/String;
+    .line 7
+    iget-object v1, p0, Lv3/i0;->g:Ljava/lang/Boolean;
 
     if-nez v1, :cond_4
 
@@ -692,7 +673,7 @@
     goto :goto_4
 
     :cond_4
-    invoke-virtual {v1}, Ljava/lang/String;->hashCode()I
+    invoke-virtual {v1}, Ljava/lang/Boolean;->hashCode()I
 
     move-result v1
 
@@ -701,7 +682,7 @@
 
     mul-int/lit8 v0, v0, 0x1f
 
-    .line 7
+    .line 8
     iget-object v1, p0, Lv3/p5;->b:Lv3/q5;
 
     if-eqz v1, :cond_6
@@ -714,7 +695,7 @@
 
     goto :goto_5
 
-    .line 8
+    .line 9
     :cond_5
     iget-object v1, p0, Lv3/p5;->b:Lv3/q5;
 

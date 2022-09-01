@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field public final synthetic f:Lcom/google/android/material/internal/e;
+.field public final synthetic g:Lcom/google/android/material/internal/e;
 
 
 # direct methods
 .method public constructor <init>(Lcom/google/android/material/internal/e;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/google/android/material/internal/e$a;->f:Lcom/google/android/material/internal/e;
+    iput-object p1, p0, Lcom/google/android/material/internal/e$a;->g:Lcom/google/android/material/internal/e;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -41,7 +41,7 @@
     check-cast p1, Lcom/google/android/material/internal/NavigationMenuItemView;
 
     .line 2
-    iget-object v0, p0, Lcom/google/android/material/internal/e$a;->f:Lcom/google/android/material/internal/e;
+    iget-object v0, p0, Lcom/google/android/material/internal/e$a;->g:Lcom/google/android/material/internal/e;
 
     const/4 v1, 0x1
 
@@ -53,9 +53,9 @@
     move-result-object p1
 
     .line 4
-    iget-object v0, p0, Lcom/google/android/material/internal/e$a;->f:Lcom/google/android/material/internal/e;
+    iget-object v0, p0, Lcom/google/android/material/internal/e$a;->g:Lcom/google/android/material/internal/e;
 
-    iget-object v2, v0, Lcom/google/android/material/internal/e;->h:Landroidx/appcompat/view/menu/e;
+    iget-object v2, v0, Lcom/google/android/material/internal/e;->i:Landroidx/appcompat/view/menu/e;
 
     const/4 v3, 0x0
 
@@ -75,9 +75,9 @@
     if-eqz v0, :cond_0
 
     .line 6
-    iget-object v0, p0, Lcom/google/android/material/internal/e$a;->f:Lcom/google/android/material/internal/e;
+    iget-object v0, p0, Lcom/google/android/material/internal/e$a;->g:Lcom/google/android/material/internal/e;
 
-    iget-object v0, v0, Lcom/google/android/material/internal/e;->j:Lcom/google/android/material/internal/e$c;
+    iget-object v0, v0, Lcom/google/android/material/internal/e;->k:Lcom/google/android/material/internal/e$c;
 
     invoke-virtual {v0, p1}, Lcom/google/android/material/internal/e$c;->n(Landroidx/appcompat/view/menu/g;)V
 
@@ -88,14 +88,14 @@
 
     .line 7
     :goto_0
-    iget-object p1, p0, Lcom/google/android/material/internal/e$a;->f:Lcom/google/android/material/internal/e;
+    iget-object p1, p0, Lcom/google/android/material/internal/e$a;->g:Lcom/google/android/material/internal/e;
 
     invoke-virtual {p1, v3}, Lcom/google/android/material/internal/e;->m(Z)V
 
     if-eqz v1, :cond_1
 
     .line 8
-    iget-object p1, p0, Lcom/google/android/material/internal/e$a;->f:Lcom/google/android/material/internal/e;
+    iget-object p1, p0, Lcom/google/android/material/internal/e$a;->g:Lcom/google/android/material/internal/e;
 
     invoke-virtual {p1, v3}, Lcom/google/android/material/internal/e;->c(Z)V
 

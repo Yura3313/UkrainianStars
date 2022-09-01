@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field public final g:Lhe/d$f;
+.field public final h:Lhe/d$f;
 
 
 # direct methods
@@ -24,7 +24,7 @@
 
     const-string v0, "inflater"
 
-    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     invoke-direct {p0, p1}, Lhe/d$g;-><init>(Landroid/view/LayoutInflater$Factory2;)V
@@ -34,7 +34,7 @@
 
     invoke-direct {v0, p1, p2}, Lhe/d$f;-><init>(Landroid/view/LayoutInflater$Factory2;Lhe/d;)V
 
-    iput-object v0, p0, Lhe/d$e;->g:Lhe/d$f;
+    iput-object v0, p0, Lhe/d$e;->h:Lhe/d$f;
 
     return-void
 .end method
@@ -46,11 +46,11 @@
 
     const-string v0, "name"
 
-    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "context"
 
-    invoke-static {p3, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p3, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     sget-object v0, Lge/e;->g:Lge/e$b;
@@ -63,7 +63,7 @@
     new-instance v7, Lge/b;
 
     .line 3
-    iget-object v6, p0, Lhe/d$e;->g:Lhe/d$f;
+    iget-object v6, p0, Lhe/d$e;->h:Lhe/d$f;
 
     move-object v1, v7
 

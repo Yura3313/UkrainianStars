@@ -4,7 +4,7 @@
 
 
 # virtual methods
-.method public abstract b(Landroid/util/JsonWriter;)V
+.method public abstract c(Landroid/util/JsonWriter;)V
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/io/IOException;

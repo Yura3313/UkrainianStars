@@ -409,7 +409,7 @@
     .locals 2
 
     .line 1
-    sget-object v0, Landroid/support/v4/media/b;->a:Landroid/support/v4/media/b;
+    sget-object v0, Lio/sentry/m;->a:Lio/sentry/m;
 
     const/4 v1, 0x0
 

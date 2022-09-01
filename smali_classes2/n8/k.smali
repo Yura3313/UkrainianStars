@@ -8,7 +8,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
-            "Lo8/y;",
+            "Lo8/z;",
             ">;"
         }
     .end annotation
@@ -18,7 +18,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
-            "Lo8/y;",
+            "Lo8/z;",
             ">;"
         }
     .end annotation

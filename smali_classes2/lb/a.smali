@@ -100,7 +100,7 @@
     const-string p1, "Processing attachment uri with flow when permissions are available"
 
     .line 2
-    invoke-static {v2, p1, v1, v1}, Landroidx/savedstate/d;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v2, p1, v1, v1}, Le5/i;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
 
     .line 3
     invoke-virtual {p0, v0}, Llb/a;->b(Landroid/net/Uri;)V
@@ -115,7 +115,7 @@
     const-string p1, "Processing attachment uri with flow when permissions are not available"
 
     .line 4
-    invoke-static {v2, p1, v1, v1}, Landroidx/savedstate/d;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v2, p1, v1, v1}, Le5/i;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
 
     .line 5
     invoke-virtual {p2}, Landroid/content/Intent;->getFlags()I
@@ -221,7 +221,7 @@
     if-nez v0, :cond_4
 
     .line 8
-    invoke-static {v4}, Lcom/google/android/play/core/appupdate/g;->b(Ljava/lang/String;)Z
+    invoke-static {v4}, La5/b0;->d(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -233,7 +233,7 @@
 
     .line 9
     :cond_1
-    sget-object v0, Lcom/helpshift/util/r;->d:Ljava/util/regex/Pattern;
+    sget-object v0, La5/u;->j:Ljava/util/regex/Pattern;
 
     if-nez v0, :cond_2
 
@@ -244,11 +244,11 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/helpshift/util/r;->d:Ljava/util/regex/Pattern;
+    sput-object v0, La5/u;->j:Ljava/util/regex/Pattern;
 
     .line 11
     :cond_2
-    sget-object v0, Lcom/helpshift/util/r;->d:Ljava/util/regex/Pattern;
+    sget-object v0, La5/u;->j:Ljava/util/regex/Pattern;
 
     .line 12
     invoke-virtual {v4}, Ljava/lang/String;->trim()Ljava/lang/String;
@@ -350,7 +350,7 @@
     move-result-object v4
 
     .line 18
-    invoke-static {v1, v4, v0, v3}, Landroidx/savedstate/d;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v1, v4, v0, v3}, Le5/i;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
@@ -409,7 +409,7 @@
     move-result-object v0
 
     .line 24
-    invoke-static {v4}, Lcom/google/android/play/core/appupdate/g;->b(Ljava/lang/String;)Z
+    invoke-static {v4}, La5/b0;->d(Ljava/lang/String;)Z
 
     move-result v6
 
@@ -479,7 +479,7 @@
     move-result-object v6
 
     .line 31
-    invoke-static {v2, v6, v3, v3}, Landroidx/savedstate/d;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v2, v6, v3, v3}, Le5/i;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
     :try_end_5
     .catchall {:try_start_5 .. :try_end_5} :catchall_1
 
@@ -517,7 +517,7 @@
     invoke-direct {v1, p1, v4, v6}, Lu8/a;-><init>(Ljava/lang/Object;Ljava/lang/String;Ljava/lang/Long;)V
 
     .line 36
-    invoke-static {v0}, Lcom/google/android/play/core/appupdate/g;->b(Ljava/lang/String;)Z
+    invoke-static {v0}, La5/b0;->d(Ljava/lang/String;)Z
 
     move-result v4
 
@@ -563,7 +563,7 @@
     iget-object v0, p0, Llb/a;->a:Landroid/content/Context;
 
     .line 40
-    sget-object v4, Lcom/helpshift/util/x;->a:Ljava/util/HashSet;
+    sget-object v4, Lcom/helpshift/util/w;->a:Ljava/util/HashSet;
 
     .line 41
     invoke-virtual {v0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
@@ -576,7 +576,7 @@
     move-result-object v0
 
     .line 43
-    sget-object v4, Lcom/helpshift/util/x;->a:Ljava/util/HashSet;
+    sget-object v4, Lcom/helpshift/util/w;->a:Ljava/util/HashSet;
 
     invoke-virtual {v4, v0}, Ljava/util/HashSet;->contains(Ljava/lang/Object;)Z
 
@@ -607,7 +607,7 @@
     move-result-object p1
 
     .line 45
-    invoke-static {v2, p1, v3, v3}, Landroidx/savedstate/d;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v2, p1, v3, v3}, Le5/i;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
 
     const/4 p1, -0x3
 
@@ -639,7 +639,7 @@
     move-result-object p1
 
     .line 49
-    invoke-static {v2, p1, v3, v3}, Landroidx/savedstate/d;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v2, p1, v3, v3}, Le5/i;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
 
     .line 50
     iget-object p1, p0, Llb/a;->d:Landroid/os/Bundle;
@@ -666,7 +666,7 @@
     const-string p1, "Attachment picker file reading error, returning failure"
 
     .line 53
-    invoke-static {v2, p1, v3, v3}, Landroidx/savedstate/d;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v2, p1, v3, v3}, Le5/i;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
 
     const/4 p1, -0x1
 
@@ -681,7 +681,7 @@
 
     .line 56
     :cond_f
-    invoke-static {v2, v1, v3, v3}, Landroidx/savedstate/d;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v2, v1, v3, v3}, Le5/i;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
 
     const/4 p1, -0x2
 
@@ -692,7 +692,7 @@
 
     .line 58
     :cond_10
-    invoke-static {v2, v1, v3, v3}, Landroidx/savedstate/d;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v2, v1, v3, v3}, Le5/i;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
 
     const/4 p1, -0x5
 
@@ -779,7 +779,7 @@
     const-string p2, "Helpshift_AttPicker"
 
     .line 5
-    invoke-static {p2, p1, v0, v0}, Landroidx/savedstate/d;->h(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {p2, p1, v0, v0}, Le5/i;->j(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Throwable;[Lz9/a;)V
 
     const/4 p1, -0x4
 

@@ -12,11 +12,11 @@
 
 
 # static fields
-.field public static final f:Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
-
 .field public static final g:Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
 
 .field public static final h:Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
+
+.field public static final i:Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
 
 
 # instance fields
@@ -41,7 +41,7 @@
 
     move-result-object v2
 
-    sput-object v2, Laf/n;->f:Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
+    sput-object v2, Laf/n;->g:Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
 
     const-string v2, "_prev"
 
@@ -49,7 +49,7 @@
 
     move-result-object v2
 
-    sput-object v2, Laf/n;->g:Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
+    sput-object v2, Laf/n;->h:Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
 
     const-string v2, "_removedRef"
 
@@ -57,7 +57,7 @@
 
     move-result-object v0
 
-    sput-object v0, Laf/n;->h:Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
+    sput-object v0, Laf/n;->i:Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
 
     return-void
 .end method
@@ -126,7 +126,7 @@
     invoke-virtual {p1}, Laf/n;->j()Laf/n;
 
     .line 6
-    sget-object v3, Laf/n;->f:Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
+    sget-object v3, Laf/n;->g:Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
 
     check-cast v2, Laf/t;
 
@@ -157,7 +157,7 @@
     :cond_5
     iget-object p1, p1, Laf/n;->_prev:Ljava/lang/Object;
 
-    invoke-static {p1}, La5/a0;->a(Ljava/lang/Object;)Laf/n;
+    invoke-static {p1}, La5/v;->c(Ljava/lang/Object;)Laf/n;
 
     move-result-object p1
 
@@ -208,7 +208,7 @@
 
     .line 11
     :cond_a
-    sget-object v2, Laf/n;->g:Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
+    sget-object v2, Laf/n;->h:Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
 
     :cond_b
     invoke-virtual {v2, p0, v3, p1}, Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;->compareAndSet(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Z
@@ -265,7 +265,7 @@
 
     .line 3
     :cond_1
-    sget-object v1, Laf/n;->g:Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
+    sget-object v1, Laf/n;->h:Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
 
     :cond_2
     invoke-virtual {v1, p1, v0, p0}, Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;->compareAndSet(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Z
@@ -352,7 +352,7 @@
 
     move-result-object v0
 
-    invoke-static {v0}, La5/a0;->a(Ljava/lang/Object;)Laf/n;
+    invoke-static {v0}, La5/v;->c(Ljava/lang/Object;)Laf/n;
 
     move-result-object v0
 
@@ -451,7 +451,7 @@
     move-result-object v1
 
     .line 5
-    sget-boolean v2, Lze/b0;->a:Z
+    sget-boolean v2, Lze/c0;->a:Z
 
     goto :goto_0
 
@@ -478,13 +478,13 @@
 
     invoke-direct {v2, v1}, Laf/t;-><init>(Laf/n;)V
 
-    sget-object v3, Laf/n;->h:Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
+    sget-object v3, Laf/n;->i:Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
 
     invoke-virtual {v3, v1, v2}, Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;->lazySet(Ljava/lang/Object;Ljava/lang/Object;)V
 
     .line 8
     :goto_2
-    sget-object v1, Laf/n;->g:Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
+    sget-object v1, Laf/n;->h:Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
 
     :cond_5
     invoke-virtual {v1, p0, v0, v2}, Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;->compareAndSet(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Z
@@ -577,13 +577,13 @@
 
     invoke-direct {v4, v3}, Laf/t;-><init>(Laf/n;)V
 
-    sget-object v5, Laf/n;->h:Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
+    sget-object v5, Laf/n;->i:Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
 
     invoke-virtual {v5, v3, v4}, Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;->lazySet(Ljava/lang/Object;Ljava/lang/Object;)V
 
     .line 5
     :goto_0
-    sget-object v5, Laf/n;->f:Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
+    sget-object v5, Laf/n;->g:Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
 
     :cond_4
     invoke-virtual {v5, p0, v0, v4}, Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;->compareAndSet(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Z
@@ -666,7 +666,7 @@
     invoke-virtual {v0}, Laf/n;->j()Laf/n;
 
     .line 15
-    sget-object v8, Laf/n;->f:Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
+    sget-object v8, Laf/n;->g:Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
 
     check-cast v6, Laf/t;
 
@@ -697,7 +697,7 @@
     :cond_a
     iget-object v0, v0, Laf/n;->_prev:Ljava/lang/Object;
 
-    invoke-static {v0}, La5/a0;->a(Ljava/lang/Object;)Laf/n;
+    invoke-static {v0}, La5/v;->c(Ljava/lang/Object;)Laf/n;
 
     move-result-object v0
 
@@ -735,7 +735,7 @@
 
     .line 18
     :cond_e
-    sget-object v6, Laf/n;->f:Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
+    sget-object v6, Laf/n;->g:Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
 
     :cond_f
     invoke-virtual {v6, v0, p0, v4}, Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;->compareAndSet(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Z
@@ -764,7 +764,7 @@
     :goto_6
     iget-object v0, p0, Laf/n;->_prev:Ljava/lang/Object;
 
-    invoke-static {v0}, La5/a0;->a(Ljava/lang/Object;)Laf/n;
+    invoke-static {v0}, La5/v;->c(Ljava/lang/Object;)Laf/n;
 
     move-result-object v0
 

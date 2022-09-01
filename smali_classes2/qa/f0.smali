@@ -7,14 +7,14 @@
 
 
 # instance fields
-.field public final synthetic f:Lqa/e0;
+.field public final synthetic g:Lqa/e0;
 
 
 # direct methods
 .method public constructor <init>(Lqa/e0;)V
     .locals 0
 
-    iput-object p1, p0, Lqa/f0;->f:Lqa/e0;
+    iput-object p1, p0, Lqa/f0;->g:Lqa/e0;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -27,7 +27,7 @@
     .locals 10
 
     .line 1
-    iget-object p1, p0, Lqa/f0;->f:Lqa/e0;
+    iget-object p1, p0, Lqa/f0;->g:Lqa/e0;
 
     iget-object p1, p1, Lqa/e0;->c:Lqa/n0;
 
@@ -39,10 +39,10 @@
     const/4 v0, 0x0
 
     .line 3
-    iput-object v0, p1, Lqa/t;->n0:Ljava/lang/String;
+    iput-object v0, p1, Lqa/t;->o0:Ljava/lang/String;
 
     .line 4
-    iget-object v1, p1, Lqa/t;->m0:Lf9/i;
+    iget-object v1, p1, Lqa/t;->n0:Lf9/i;
 
     .line 5
     iget-object v1, v1, Lf9/i;->l:Lt8/b;
@@ -52,9 +52,9 @@
     invoke-virtual {v1, v2}, Lt8/b;->G(Z)V
 
     .line 6
-    iget-object v1, p1, Lqa/t;->j0:Lqa/e0;
+    iget-object v1, p1, Lqa/t;->k0:Lqa/e0;
 
-    iget-object p1, p1, Lqa/t;->m0:Lf9/i;
+    iget-object p1, p1, Lqa/t;->n0:Lf9/i;
 
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -197,7 +197,7 @@
     invoke-direct {v4, v1}, Lqa/v;-><init>(Lqa/e0;)V
 
     .line 26
-    iput-object v4, v3, Llb/b;->i:Llb/b$a;
+    iput-object v4, v3, Llb/b;->j:Llb/b$a;
 
     .line 27
     iget-object v1, v1, Lqa/e0;->i:Landroid/widget/ImageButton;
@@ -212,7 +212,7 @@
     if-ne v4, v2, :cond_6
 
     .line 29
-    iget-object v0, v3, Llb/b;->i:Llb/b$a;
+    iget-object v0, v3, Llb/b;->j:Llb/b$a;
 
     if-eqz v0, :cond_8
 
@@ -235,7 +235,7 @@
 
     .line 31
     :cond_6
-    iget-object v2, v3, Llb/b;->f:Landroid/content/Context;
+    iget-object v2, v3, Llb/b;->g:Landroid/content/Context;
 
     invoke-static {v2}, Lib/g;->d(Landroid/content/Context;)Z
 
@@ -246,31 +246,31 @@
     .line 32
     new-instance v0, Landroid/widget/ListPopupWindow;
 
-    iget-object v2, v3, Llb/b;->f:Landroid/content/Context;
+    iget-object v2, v3, Llb/b;->g:Landroid/content/Context;
 
     invoke-direct {v0, v2}, Landroid/widget/ListPopupWindow;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, v3, Llb/b;->h:Landroid/widget/ListPopupWindow;
+    iput-object v0, v3, Llb/b;->i:Landroid/widget/ListPopupWindow;
 
     .line 33
     invoke-virtual {v0, v1}, Landroid/widget/ListPopupWindow;->setAnchorView(Landroid/view/View;)V
 
     .line 34
-    iget-object v0, v3, Llb/b;->h:Landroid/widget/ListPopupWindow;
+    iget-object v0, v3, Llb/b;->i:Landroid/widget/ListPopupWindow;
 
     const/16 v1, 0x14
 
     invoke-virtual {v0, v1}, Landroid/widget/ListPopupWindow;->setHorizontalOffset(I)V
 
     .line 35
-    iget-object v0, v3, Llb/b;->h:Landroid/widget/ListPopupWindow;
+    iget-object v0, v3, Llb/b;->i:Landroid/widget/ListPopupWindow;
 
     const/16 v1, 0xa
 
     invoke-virtual {v0, v1}, Landroid/widget/ListPopupWindow;->setVerticalOffset(I)V
 
     .line 36
-    iget-object v0, v3, Llb/b;->h:Landroid/widget/ListPopupWindow;
+    iget-object v0, v3, Llb/b;->i:Landroid/widget/ListPopupWindow;
 
     invoke-virtual {v3, p1}, Llb/b;->b(Ljava/util/List;)Landroid/widget/ListAdapter;
 
@@ -279,9 +279,9 @@
     invoke-virtual {v0, p1}, Landroid/widget/ListPopupWindow;->setAdapter(Landroid/widget/ListAdapter;)V
 
     .line 37
-    iget-object p1, v3, Llb/b;->h:Landroid/widget/ListPopupWindow;
+    iget-object p1, v3, Llb/b;->i:Landroid/widget/ListPopupWindow;
 
-    iget-object v0, v3, Llb/b;->f:Landroid/content/Context;
+    iget-object v0, v3, Llb/b;->g:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -300,12 +300,12 @@
     invoke-virtual {p1, v0}, Landroid/widget/ListPopupWindow;->setWidth(I)V
 
     .line 40
-    iget-object p1, v3, Llb/b;->h:Landroid/widget/ListPopupWindow;
+    iget-object p1, v3, Llb/b;->i:Landroid/widget/ListPopupWindow;
 
     invoke-virtual {p1, v3}, Landroid/widget/ListPopupWindow;->setOnItemClickListener(Landroid/widget/AdapterView$OnItemClickListener;)V
 
     .line 41
-    iget-object p1, v3, Llb/b;->h:Landroid/widget/ListPopupWindow;
+    iget-object p1, v3, Llb/b;->i:Landroid/widget/ListPopupWindow;
 
     invoke-virtual {p1}, Landroid/widget/ListPopupWindow;->show()V
 
@@ -313,7 +313,7 @@
 
     .line 42
     :cond_7
-    iget-object v1, v3, Llb/b;->f:Landroid/content/Context;
+    iget-object v1, v3, Llb/b;->g:Landroid/content/Context;
 
     .line 43
     invoke-static {v1}, Landroid/view/LayoutInflater;->from(Landroid/content/Context;)Landroid/view/LayoutInflater;
@@ -348,19 +348,19 @@
     .line 47
     new-instance p1, Lcom/google/android/material/bottomsheet/a;
 
-    iget-object v1, v3, Llb/b;->f:Landroid/content/Context;
+    iget-object v1, v3, Llb/b;->g:Landroid/content/Context;
 
     .line 48
     invoke-direct {p1, v1, v5}, Lcom/google/android/material/bottomsheet/a;-><init>(Landroid/content/Context;I)V
 
     .line 49
-    iput-object p1, v3, Llb/b;->g:Lcom/google/android/material/bottomsheet/a;
+    iput-object p1, v3, Llb/b;->h:Lcom/google/android/material/bottomsheet/a;
 
     .line 50
     invoke-virtual {p1, v0}, Lcom/google/android/material/bottomsheet/a;->setContentView(Landroid/view/View;)V
 
     .line 51
-    iget-object p1, v3, Llb/b;->g:Lcom/google/android/material/bottomsheet/a;
+    iget-object p1, v3, Llb/b;->h:Lcom/google/android/material/bottomsheet/a;
 
     sget v0, Lcom/helpshift/R$id;->design_bottom_sheet:I
 
@@ -371,7 +371,7 @@
     check-cast p1, Landroid/widget/FrameLayout;
 
     .line 52
-    iget-object v0, v3, Llb/b;->g:Lcom/google/android/material/bottomsheet/a;
+    iget-object v0, v3, Llb/b;->h:Lcom/google/android/material/bottomsheet/a;
 
     invoke-virtual {v0}, Landroid/app/Dialog;->show()V
 

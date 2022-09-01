@@ -1,5 +1,5 @@
 .class public final Lhe/d$a;
-.super Lse/h;
+.super Lse/i;
 .source "-ViewPumpLayoutInflater.kt"
 
 # interfaces
@@ -18,7 +18,7 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/a<",
         "Ljava/lang/reflect/Field;",
         ">;"
@@ -27,7 +27,7 @@
 
 
 # static fields
-.field public static final f:Lhe/d$a;
+.field public static final g:Lhe/d$a;
 
 
 # direct methods
@@ -38,7 +38,7 @@
 
     invoke-direct {v0}, Lhe/d$a;-><init>()V
 
-    sput-object v0, Lhe/d$a;->f:Lhe/d$a;
+    sput-object v0, Lhe/d$a;->g:Lhe/d$a;
 
     return-void
 .end method
@@ -48,7 +48,7 @@
 
     const/4 v0, 0x0
 
-    invoke-direct {p0, v0}, Lse/h;-><init>(I)V
+    invoke-direct {p0, v0}, Lse/i;-><init>(I)V
 
     return-void
 .end method

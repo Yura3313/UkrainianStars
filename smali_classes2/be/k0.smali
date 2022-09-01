@@ -1,5 +1,5 @@
 .class public final Lbe/k0;
-.super Lse/h;
+.super Lse/i;
 .source "ProfileStorage.kt"
 
 # interfaces
@@ -9,32 +9,34 @@
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/l<",
-        "Ljava/util/concurrent/CancellationException;",
-        "Lie/h;",
-        ">;"
+        "Lvc/q;",
+        "Lze/f0<",
+        "+",
+        "Lvc/p;",
+        ">;>;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic f:Lze/e0;
+.field public final synthetic g:Lbe/y;
 
-.field public final synthetic g:Lse/q;
+.field public final synthetic h:Lse/r;
 
 
 # direct methods
-.method public constructor <init>(Lze/e0;Lse/q;)V
+.method public constructor <init>(Lbe/y;Lse/r;)V
     .locals 0
 
-    iput-object p1, p0, Lbe/k0;->f:Lze/e0;
+    iput-object p1, p0, Lbe/k0;->g:Lbe/y;
 
-    iput-object p2, p0, Lbe/k0;->g:Lse/q;
+    iput-object p2, p0, Lbe/k0;->h:Lse/r;
 
     const/4 p1, 0x1
 
-    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -45,32 +47,28 @@
     .locals 1
 
     .line 1
-    check-cast p1, Ljava/util/concurrent/CancellationException;
+    check-cast p1, Lvc/q;
 
     const-string v0, "it"
 
     .line 2
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 3
-    iget-object v0, p0, Lbe/k0;->f:Lze/e0;
-
-    invoke-interface {v0, p1}, Lze/b1;->q(Ljava/util/concurrent/CancellationException;)V
+    iget-object v0, p0, Lbe/k0;->g:Lbe/y;
 
     .line 4
-    iget-object v0, p0, Lbe/k0;->g:Lse/q;
-
-    iget-object v0, v0, Lse/q;->f:Ljava/lang/Object;
-
-    check-cast v0, Lze/e0;
-
-    if-eqz v0, :cond_0
-
-    invoke-interface {v0, p1}, Lze/b1;->q(Ljava/util/concurrent/CancellationException;)V
+    iget-object p1, p1, Lvc/q;->a:Ljava/lang/String;
 
     .line 5
-    :cond_0
-    sget-object p1, Lie/h;->a:Lie/h;
+    invoke-static {v0, p1}, Lbe/y;->f(Lbe/y;Ljava/lang/String;)Lze/f0;
+
+    move-result-object p1
+
+    .line 6
+    iget-object v0, p0, Lbe/k0;->h:Lse/r;
+
+    iput-object p1, v0, Lse/r;->g:Ljava/lang/Object;
 
     return-object p1
 .end method

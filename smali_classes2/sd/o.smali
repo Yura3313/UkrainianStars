@@ -1,5 +1,5 @@
 .class public final Lsd/o;
-.super Lse/h;
+.super Lse/i;
 .source "PublicProfileFragment.kt"
 
 # interfaces
@@ -9,18 +9,18 @@
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/p<",
         "Lcom/supercell/id/ui/publicprofile/PublicProfileFragment;",
-        "Lvc/t;",
-        "Lie/h;",
+        "Lvc/s;",
+        "Lie/i;",
         ">;"
     }
 .end annotation
 
 
 # static fields
-.field public static final f:Lsd/o;
+.field public static final g:Lsd/o;
 
 
 # direct methods
@@ -31,7 +31,7 @@
 
     invoke-direct {v0}, Lsd/o;-><init>()V
 
-    sput-object v0, Lsd/o;->f:Lsd/o;
+    sput-object v0, Lsd/o;->g:Lsd/o;
 
     return-void
 .end method
@@ -41,7 +41,7 @@
 
     const/4 v0, 0x2
 
-    invoke-direct {p0, v0}, Lse/h;-><init>(I)V
+    invoke-direct {p0, v0}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -54,19 +54,19 @@
     .line 1
     check-cast p1, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment;
 
-    check-cast p2, Lvc/t;
+    check-cast p2, Lvc/s;
 
     const-string v0, "$receiver"
 
     .line 2
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "it"
 
-    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 3
-    iget-object v0, p1, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment;->l0:Lsd/m;
+    iget-object v0, p1, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment;->m0:Lsd/m;
 
     .line 4
     instance-of v1, v0, Lsd/m$c;
@@ -78,7 +78,7 @@
 
     new-instance v2, Lsd/m$b;
 
-    invoke-direct {v2, p2}, Lsd/m$b;-><init>(Lvc/t;)V
+    invoke-direct {v2, p2}, Lsd/m$b;-><init>(Lvc/s;)V
 
     invoke-virtual {v0}, Lsd/m;->i()Lcom/supercell/id/model/IdRelationshipStatus;
 
@@ -92,14 +92,14 @@
     :cond_0
     new-instance v1, Lsd/m$b;
 
-    invoke-direct {v1, p2}, Lsd/m$b;-><init>(Lvc/t;)V
+    invoke-direct {v1, p2}, Lsd/m$b;-><init>(Lvc/s;)V
 
     .line 7
     :goto_0
     invoke-virtual {p1, v1}, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment;->k1(Lsd/m;)V
 
     .line 8
-    sget-object p1, Lie/h;->a:Lie/h;
+    sget-object p1, Lie/i;->a:Lie/i;
 
     return-object p1
 .end method

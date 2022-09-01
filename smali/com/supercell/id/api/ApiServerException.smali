@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field public final f:I
+.field public final g:I
 
 
 # direct methods
@@ -13,11 +13,11 @@
 
     const-string v0, "message"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-direct {p0, p1}, Ljava/lang/Exception;-><init>(Ljava/lang/String;)V
 
-    iput p2, p0, Lcom/supercell/id/api/ApiServerException;->f:I
+    iput p2, p0, Lcom/supercell/id/api/ApiServerException;->g:I
 
     return-void
 .end method

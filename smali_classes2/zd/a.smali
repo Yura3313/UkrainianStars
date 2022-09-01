@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field public b0:Ljava/util/HashMap;
+.field public c0:Ljava/util/HashMap;
 
 
 # direct methods
@@ -21,7 +21,7 @@
 .method public final N0()V
     .locals 1
 
-    iget-object v0, p0, Lzd/a;->b0:Ljava/util/HashMap;
+    iget-object v0, p0, Lzd/a;->c0:Ljava/util/HashMap;
 
     if-eqz v0, :cond_0
 
@@ -42,7 +42,7 @@
     move-result-object v0
 
     .line 2
-    iget-object v0, v0, Lae/u;->m:La5/d0;
+    iget-object v0, v0, Lae/u;->m:Lpe/a;
 
     .line 3
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -55,7 +55,7 @@
 
     const-string p3, "inflater"
 
-    invoke-static {p1, p3}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p3}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     sget p3, Lcom/supercell/id/R$layout;->fragment_young_player_register_done_page:I
 
@@ -83,7 +83,7 @@
 
     const-string v0, "view"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     invoke-super {p0, p1, p2}, Lwc/w;->k0(Landroid/view/View;Landroid/os/Bundle;)V
@@ -92,7 +92,7 @@
     sget p1, Lcom/supercell/id/R$id;->okButton:I
 
     .line 3
-    iget-object p2, p0, Lzd/a;->b0:Ljava/util/HashMap;
+    iget-object p2, p0, Lzd/a;->c0:Ljava/util/HashMap;
 
     if-nez p2, :cond_0
 
@@ -100,10 +100,10 @@
 
     invoke-direct {p2}, Ljava/util/HashMap;-><init>()V
 
-    iput-object p2, p0, Lzd/a;->b0:Ljava/util/HashMap;
+    iput-object p2, p0, Lzd/a;->c0:Ljava/util/HashMap;
 
     :cond_0
-    iget-object p2, p0, Lzd/a;->b0:Ljava/util/HashMap;
+    iget-object p2, p0, Lzd/a;->c0:Ljava/util/HashMap;
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -118,7 +118,7 @@
     if-nez p2, :cond_2
 
     .line 4
-    iget-object p2, p0, Landroidx/fragment/app/Fragment;->M:Landroid/view/View;
+    iget-object p2, p0, Landroidx/fragment/app/Fragment;->N:Landroid/view/View;
 
     if-nez p2, :cond_1
 
@@ -132,7 +132,7 @@
 
     move-result-object p2
 
-    iget-object v0, p0, Lzd/a;->b0:Ljava/util/HashMap;
+    iget-object v0, p0, Lzd/a;->c0:Ljava/util/HashMap;
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 

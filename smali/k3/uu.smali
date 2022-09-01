@@ -28,5 +28,5 @@
     .end annotation
 .end method
 
-.method public abstract c()Lk3/xq;
+.method public abstract c()Lk3/wq;
 .end method

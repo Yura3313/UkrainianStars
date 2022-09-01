@@ -40,14 +40,14 @@
 
     move-result-object v0
 
-    check-cast v0, Lo8/y;
+    check-cast v0, Lo8/z;
 
     .line 2
     iget-object v1, p0, Lf9/p0;->c:Lf9/q0;
 
     iget-object v1, v1, Lf9/q0;->d:Ljava/util/ArrayList;
 
-    invoke-static {v1}, Lbc/a;->d(Ljava/util/List;)Z
+    invoke-static {v1}, Lt5/a;->g(Ljava/util/List;)Z
 
     move-result v1
 
@@ -64,7 +64,7 @@
 
     move-result-object v1
 
-    check-cast v1, Lo8/y;
+    check-cast v1, Lo8/z;
 
     goto :goto_0
 
@@ -91,7 +91,7 @@
     iget-object v4, p0, Lf9/p0;->c:Lf9/q0;
 
     .line 8
-    invoke-virtual {v4, v0, v1, v2, v3}, Lf9/q0;->b(Lo8/y;Lo8/y;ZZ)Ljava/util/List;
+    invoke-virtual {v4, v0, v1, v2, v3}, Lf9/q0;->b(Lo8/z;Lo8/z;ZZ)Ljava/util/List;
 
     move-result-object v0
 
@@ -146,7 +146,7 @@
     add-int/lit8 v0, v0, 0x1
 
     .line 16
-    invoke-virtual {v3, v4, v2, v0}, Lf9/q0;->e(Ljava/util/List;II)Lcom/helpshift/util/h0;
+    invoke-virtual {v3, v4, v2, v0}, Lf9/q0;->e(Ljava/util/List;II)Lcom/helpshift/util/f0;
 
     move-result-object v0
 
@@ -168,7 +168,7 @@
     invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 19
-    iget-object v2, v0, Lcom/helpshift/util/h0;->a:Ljava/lang/Object;
+    iget-object v2, v0, Lcom/helpshift/util/f0;->a:Ljava/lang/Object;
 
     check-cast v2, Ljava/lang/Integer;
 
@@ -177,7 +177,7 @@
     move-result v2
 
     .line 20
-    iget-object v3, v0, Lcom/helpshift/util/h0;->b:Ljava/lang/Object;
+    iget-object v3, v0, Lcom/helpshift/util/f0;->b:Ljava/lang/Object;
 
     check-cast v3, Ljava/lang/Integer;
 
@@ -198,7 +198,7 @@
 
     if-lez v3, :cond_3
 
-    iget-object v0, v0, Lcom/helpshift/util/h0;->b:Ljava/lang/Object;
+    iget-object v0, v0, Lcom/helpshift/util/f0;->b:Ljava/lang/Object;
 
     check-cast v0, Ljava/lang/Integer;
 

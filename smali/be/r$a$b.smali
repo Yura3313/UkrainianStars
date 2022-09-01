@@ -46,7 +46,7 @@
 
     iget-object p1, p1, Lbe/r$a$b;->a:Lcom/supercell/id/model/IdSocialAccount;
 
-    invoke-static {v0, p1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, p1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -130,7 +130,7 @@
 
     iget-object v3, p0, Lbe/r$a$b;->a:Lcom/supercell/id/model/IdSocialAccount;
 
-    invoke-static {v2, v3}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, v3}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v2
 

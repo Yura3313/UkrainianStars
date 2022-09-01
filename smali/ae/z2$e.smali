@@ -52,14 +52,14 @@
     iget-object p1, p1, Lae/u;->w:Lsc/a;
 
     .line 4
-    sget-object p2, Lsc/a$a;->m:Lsc/a$a$a;
+    sget-object p2, Lsc/a$a;->n:Lsc/a$a$a;
 
     iget p2, p0, Lae/z2$e;->a:I
 
     if-ltz p2, :cond_1
 
     .line 5
-    sget-object v0, Lsc/a$a;->l:[Lsc/a$a;
+    sget-object v0, Lsc/a$a;->m:[Lsc/a$a;
 
     .line 6
     array-length v1, v0
@@ -77,7 +77,7 @@
     .line 8
     :cond_1
     :goto_0
-    sget-object p2, Lsc/a$a;->l:[Lsc/a$a;
+    sget-object p2, Lsc/a$a;->m:[Lsc/a$a;
 
     const/4 v0, 0x0
 

@@ -7,17 +7,17 @@
 
 
 # static fields
-.field public static final synthetic f0:I
+.field public static final synthetic g0:I
 
 
 # instance fields
-.field public b0:Ljava/lang/String;
-
-.field public c0:Z
+.field public c0:Ljava/lang/String;
 
 .field public d0:Z
 
-.field public e0:Ljava/util/HashMap;
+.field public e0:Z
+
+.field public f0:Ljava/util/HashMap;
 
 
 # direct methods
@@ -30,7 +30,7 @@
     const-string v0, ""
 
     .line 2
-    iput-object v0, p0, Ltd/f;->b0:Ljava/lang/String;
+    iput-object v0, p0, Ltd/f;->c0:Ljava/lang/String;
 
     return-void
 .end method
@@ -40,7 +40,7 @@
 .method public final N0()V
     .locals 1
 
-    iget-object v0, p0, Ltd/f;->e0:Ljava/util/HashMap;
+    iget-object v0, p0, Ltd/f;->f0:Ljava/util/HashMap;
 
     if-eqz v0, :cond_0
 
@@ -61,7 +61,7 @@
     move-result-object v0
 
     .line 2
-    iget-object v0, v0, Lae/u;->m:La5/d0;
+    iget-object v0, v0, Lae/u;->m:Lpe/a;
 
     .line 3
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -72,7 +72,7 @@
 .method public final X0(I)Landroid/view/View;
     .locals 2
 
-    iget-object v0, p0, Ltd/f;->e0:Ljava/util/HashMap;
+    iget-object v0, p0, Ltd/f;->f0:Ljava/util/HashMap;
 
     if-nez v0, :cond_0
 
@@ -80,10 +80,10 @@
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    iput-object v0, p0, Ltd/f;->e0:Ljava/util/HashMap;
+    iput-object v0, p0, Ltd/f;->f0:Ljava/util/HashMap;
 
     :cond_0
-    iget-object v0, p0, Ltd/f;->e0:Ljava/util/HashMap;
+    iget-object v0, p0, Ltd/f;->f0:Ljava/util/HashMap;
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -98,7 +98,7 @@
     if-nez v0, :cond_2
 
     .line 1
-    iget-object v0, p0, Landroidx/fragment/app/Fragment;->M:Landroid/view/View;
+    iget-object v0, p0, Landroidx/fragment/app/Fragment;->N:Landroid/view/View;
 
     if-nez v0, :cond_1
 
@@ -112,7 +112,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Ltd/f;->e0:Ljava/util/HashMap;
+    iget-object v1, p0, Ltd/f;->f0:Ljava/util/HashMap;
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -129,7 +129,7 @@
 
     const-string p3, "inflater"
 
-    invoke-static {p1, p3}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p3}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     sget p3, Lcom/supercell/id/R$layout;->fragment_register_enter_email_page:I
 
@@ -156,7 +156,7 @@
 
     const-string v1, "emailEditText"
 
-    invoke-static {v0, v1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v0}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
 
@@ -170,7 +170,7 @@
 
     if-eqz v0, :cond_7
 
-    invoke-static {v0}, Lye/r;->E(Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
+    invoke-static {v0}, Lye/r;->F(Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
 
     move-result-object v0
 
@@ -178,7 +178,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Ltd/f;->b0:Ljava/lang/String;
+    iput-object v0, p0, Ltd/f;->c0:Ljava/lang/String;
 
     .line 2
     sget-object v2, Lae/n;->b:Lae/n;
@@ -187,7 +187,7 @@
 
     move-result v0
 
-    iput-boolean v0, p0, Ltd/f;->d0:Z
+    iput-boolean v0, p0, Ltd/f;->e0:Z
 
     .line 3
     sget v0, Lcom/supercell/id/R$id;->validImageView:I
@@ -200,7 +200,7 @@
 
     const-string v3, "validImageView"
 
-    invoke-static {v2, v3}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v2, v3}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v2}, Landroid/view/View;->getVisibility()I
 
@@ -216,7 +216,7 @@
 
     if-ne v2, v8, :cond_0
 
-    iget-boolean v2, p0, Ltd/f;->d0:Z
+    iget-boolean v2, p0, Ltd/f;->e0:Z
 
     if-eqz v2, :cond_0
 
@@ -227,7 +227,7 @@
 
     check-cast v2, Landroid/widget/ImageView;
 
-    invoke-static {v2, v3}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v2, v3}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v2, v7}, Landroid/view/View;->setScaleX(F)V
 
@@ -238,7 +238,7 @@
 
     check-cast v2, Landroid/widget/ImageView;
 
-    invoke-static {v2, v3}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v2, v3}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v2, v7}, Landroid/view/View;->setScaleY(F)V
 
@@ -283,9 +283,9 @@
 
     check-cast v0, Landroid/widget/ImageView;
 
-    invoke-static {v0, v3}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v3}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    iget-boolean v2, p0, Ltd/f;->d0:Z
+    iget-boolean v2, p0, Ltd/f;->e0:Z
 
     const/4 v3, 0x0
 
@@ -312,7 +312,7 @@
 
     const-string v2, "confirmEditText"
 
-    invoke-static {v0, v2}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v2}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v0}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
 
@@ -324,7 +324,7 @@
 
     if-eqz v0, :cond_6
 
-    invoke-static {v0}, Lye/r;->E(Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
+    invoke-static {v0}, Lye/r;->F(Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
 
     move-result-object v0
 
@@ -333,13 +333,13 @@
     move-result-object v0
 
     .line 11
-    iget-object v1, p0, Ltd/f;->b0:Ljava/lang/String;
+    iget-object v1, p0, Ltd/f;->c0:Ljava/lang/String;
 
-    invoke-static {v0, v1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
-    iput-boolean v0, p0, Ltd/f;->c0:Z
+    iput-boolean v0, p0, Ltd/f;->d0:Z
 
     .line 12
     sget v0, Lcom/supercell/id/R$id;->confirmValidImageView:I
@@ -352,7 +352,7 @@
 
     const-string v2, "confirmValidImageView"
 
-    invoke-static {v1, v2}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v1}, Landroid/view/View;->getVisibility()I
 
@@ -360,11 +360,11 @@
 
     if-ne v1, v8, :cond_2
 
-    iget-boolean v1, p0, Ltd/f;->d0:Z
+    iget-boolean v1, p0, Ltd/f;->e0:Z
 
     if-eqz v1, :cond_2
 
-    iget-boolean v1, p0, Ltd/f;->c0:Z
+    iget-boolean v1, p0, Ltd/f;->d0:Z
 
     if-eqz v1, :cond_2
 
@@ -375,7 +375,7 @@
 
     check-cast v1, Landroid/widget/ImageView;
 
-    invoke-static {v1, v2}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v1, v7}, Landroid/view/View;->setScaleX(F)V
 
@@ -386,7 +386,7 @@
 
     check-cast v1, Landroid/widget/ImageView;
 
-    invoke-static {v1, v2}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v1, v7}, Landroid/view/View;->setScaleY(F)V
 
@@ -431,13 +431,13 @@
 
     check-cast v0, Landroid/widget/ImageView;
 
-    invoke-static {v0, v2}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v2}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    iget-boolean v1, p0, Ltd/f;->d0:Z
+    iget-boolean v1, p0, Ltd/f;->e0:Z
 
     if-eqz v1, :cond_3
 
-    iget-boolean v1, p0, Ltd/f;->c0:Z
+    iget-boolean v1, p0, Ltd/f;->d0:Z
 
     if-eqz v1, :cond_3
 
@@ -457,13 +457,13 @@
 
     const-string v1, "okButton"
 
-    invoke-static {v0, v1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    iget-boolean v1, p0, Ltd/f;->d0:Z
+    iget-boolean v1, p0, Ltd/f;->e0:Z
 
     if-eqz v1, :cond_4
 
-    iget-boolean v1, p0, Ltd/f;->c0:Z
+    iget-boolean v1, p0, Ltd/f;->d0:Z
 
     if-nez v1, :cond_5
 
@@ -499,7 +499,7 @@
     invoke-super {p0}, Ltd/s;->a0()V
 
     .line 2
-    invoke-static {p0}, Lcom/android/billingclient/api/c0;->e(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
+    invoke-static {p0}, Lcom/android/billingclient/api/b0;->f(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
 
     move-result-object v0
 
@@ -519,13 +519,13 @@
 
     const-string v0, "view"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     invoke-super {p0, p1, p2}, Lwc/w;->k0(Landroid/view/View;Landroid/os/Bundle;)V
 
     .line 2
-    invoke-static {p0}, Lcom/android/billingclient/api/c0;->e(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
+    invoke-static {p0}, Lcom/android/billingclient/api/b0;->f(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
 
     move-result-object p1
 
@@ -617,7 +617,7 @@
 
     const-string p2, "acceptMarketingCheckBox"
 
-    invoke-static {p1, p2}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p2}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 10
     invoke-virtual {p0}, Ltd/s;->W0()Lcom/supercell/id/ui/register/RegisterFlowFragment;
@@ -627,7 +627,7 @@
     if-eqz p2, :cond_1
 
     .line 11
-    iget-boolean p2, p2, Lcom/supercell/id/ui/register/RegisterFlowFragment;->l0:Z
+    iget-boolean p2, p2, Lcom/supercell/id/ui/register/RegisterFlowFragment;->m0:Z
 
     goto :goto_0
 
@@ -694,7 +694,7 @@
 
     const-string v0, "termsTextView"
 
-    invoke-static {p2, v0}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-static {}, Landroid/text/method/LinkMovementMethod;->getInstance()Landroid/text/method/MovementMethod;
 
@@ -709,7 +709,7 @@
 
     check-cast p1, Landroid/widget/TextView;
 
-    invoke-static {p1, v0}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/4 p2, 0x1
 
@@ -726,7 +726,7 @@
 
     const-string v1, "privacyTextView"
 
-    invoke-static {v0, v1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-static {}, Landroid/text/method/LinkMovementMethod;->getInstance()Landroid/text/method/MovementMethod;
 
@@ -741,7 +741,7 @@
 
     check-cast p1, Landroid/widget/TextView;
 
-    invoke-static {p1, v1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v1}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {p1, p2}, Landroid/widget/TextView;->setLinksClickable(Z)V
 
@@ -758,7 +758,7 @@
     move-result-object v0
 
     .line 22
-    iget-object v0, v0, Lae/u;->s:Lud/j;
+    iget-object v0, v0, Lae/u;->s:Lud/i;
 
     .line 23
     new-instance v1, Ltd/f$h;
@@ -767,7 +767,7 @@
 
     const-string v2, "register_terms_url"
 
-    invoke-virtual {v0, v2, v1}, Lud/j;->e(Ljava/lang/String;Lre/l;)V
+    invoke-virtual {v0, v2, v1}, Lud/i;->e(Ljava/lang/String;Lre/l;)V
 
     .line 24
     invoke-virtual {p2}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lae/u;
@@ -775,7 +775,7 @@
     move-result-object p2
 
     .line 25
-    iget-object p2, p2, Lae/u;->s:Lud/j;
+    iget-object p2, p2, Lae/u;->s:Lud/i;
 
     .line 26
     new-instance v0, Ltd/f$i;
@@ -784,7 +784,7 @@
 
     const-string p1, "register_privacy_url"
 
-    invoke-virtual {p2, p1, v0}, Lud/j;->e(Ljava/lang/String;Lre/l;)V
+    invoke-virtual {p2, p1, v0}, Lud/i;->e(Ljava/lang/String;Lre/l;)V
 
     return-void
 .end method
@@ -794,7 +794,7 @@
 
     const-string v0, "dialog"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     sget p1, Lcom/supercell/id/R$id;->okButton:I
@@ -807,7 +807,7 @@
 
     const-string v0, "okButton"
 
-    invoke-static {p1, v0}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/4 v0, 0x1
 
@@ -824,7 +824,7 @@
 
     const-string v1, "cancelButton"
 
-    invoke-static {p1, v1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v1}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {p1, v0}, Landroid/view/View;->setEnabled(Z)V
 

@@ -66,9 +66,9 @@
     .line 4
     new-instance p2, Lrb/p;
 
-    iget v4, v0, Lrb/o;->f:I
+    iget v4, v0, Lrb/o;->g:I
 
-    iget v5, v0, Lrb/o;->g:I
+    iget v5, v0, Lrb/o;->h:I
 
     iget-object v0, p0, Lsb/e$a;->c:Lsb/e;
 

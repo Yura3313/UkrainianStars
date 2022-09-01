@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field public final a:Lie/f;
+.field public final a:Lie/g;
 
 .field public final b:Ljava/lang/String;
 
@@ -25,7 +25,7 @@
 
     const-string v0, "appAccount"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -47,13 +47,13 @@
 
     invoke-direct {p1, p0}, Lcom/supercell/id/IdIngameFriend$a;-><init>(Lcom/supercell/id/IdIngameFriend;)V
 
-    invoke-static {p1}, La5/r;->d(Lre/a;)Lie/c;
+    invoke-static {p1}, Ld2/u;->c(Lre/a;)Lie/c;
 
     move-result-object p1
 
-    check-cast p1, Lie/f;
+    check-cast p1, Lie/g;
 
-    iput-object p1, p0, Lcom/supercell/id/IdIngameFriend;->a:Lie/f;
+    iput-object p1, p0, Lcom/supercell/id/IdIngameFriend;->a:Lie/g;
 
     return-void
 .end method
@@ -189,7 +189,7 @@
 
     const-string v0, "appAccount"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     new-instance v0, Lcom/supercell/id/IdIngameFriend;
 
@@ -218,28 +218,28 @@
     .line 1
     iget-object v0, p0, Lcom/supercell/id/IdIngameFriend;->c:Ljava/lang/String;
 
-    invoke-static {v0}, Landroidx/savedstate/d;->a(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0}, Le0/f;->b(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v3
 
     .line 2
     iget-object v0, p0, Lcom/supercell/id/IdIngameFriend;->d:Ljava/lang/String;
 
-    invoke-static {v0}, Landroidx/savedstate/d;->a(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0}, Le0/f;->b(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v4
 
     .line 3
     iget-object v0, p0, Lcom/supercell/id/IdIngameFriend;->e:Ljava/lang/String;
 
-    invoke-static {v0}, Landroidx/savedstate/d;->a(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0}, Le0/f;->b(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v5
 
     .line 4
     iget-object v0, p0, Lcom/supercell/id/IdIngameFriend;->f:Ljava/lang/String;
 
-    invoke-static {v0}, Landroidx/savedstate/d;->a(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0}, Le0/f;->b(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v6
 
@@ -276,7 +276,7 @@
 
     iget-object v1, p1, Lcom/supercell/id/IdIngameFriend;->b:Ljava/lang/String;
 
-    invoke-static {v0, v1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
@@ -286,7 +286,7 @@
 
     iget-object v1, p1, Lcom/supercell/id/IdIngameFriend;->c:Ljava/lang/String;
 
-    invoke-static {v0, v1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
@@ -296,7 +296,7 @@
 
     iget-object v1, p1, Lcom/supercell/id/IdIngameFriend;->d:Ljava/lang/String;
 
-    invoke-static {v0, v1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
@@ -306,7 +306,7 @@
 
     iget-object v1, p1, Lcom/supercell/id/IdIngameFriend;->e:Ljava/lang/String;
 
-    invoke-static {v0, v1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
@@ -316,7 +316,7 @@
 
     iget-object v1, p1, Lcom/supercell/id/IdIngameFriend;->f:Ljava/lang/String;
 
-    invoke-static {v0, v1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
@@ -345,9 +345,9 @@
 .method public final getAccount()Lcom/supercell/id/model/IdSocialAccount;
     .locals 1
 
-    iget-object v0, p0, Lcom/supercell/id/IdIngameFriend;->a:Lie/f;
+    iget-object v0, p0, Lcom/supercell/id/IdIngameFriend;->a:Lie/g;
 
-    invoke-virtual {v0}, Lie/f;->getValue()Ljava/lang/Object;
+    invoke-virtual {v0}, Lie/g;->getValue()Ljava/lang/Object;
 
     move-result-object v0
 
@@ -560,7 +560,7 @@
     const-string v2, ")"
 
     .line 3
-    invoke-static {v0, v1, v2}, Landroidx/appcompat/app/j;->b(Ljava/lang/StringBuilder;ZLjava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, v1, v2}, Landroidx/appcompat/app/j;->a(Ljava/lang/StringBuilder;ZLjava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 

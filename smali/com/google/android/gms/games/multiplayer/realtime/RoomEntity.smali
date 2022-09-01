@@ -31,21 +31,21 @@
 
 
 # instance fields
-.field public final h:Ljava/lang/String;
-
 .field public final i:Ljava/lang/String;
 
-.field public final j:J
+.field public final j:Ljava/lang/String;
 
-.field public final k:I
+.field public final k:J
 
-.field public final l:Ljava/lang/String;
+.field public final l:I
 
-.field public final m:I
+.field public final m:Ljava/lang/String;
 
-.field public final n:Landroid/os/Bundle;
+.field public final n:I
 
-.field public final o:Ljava/util/ArrayList;
+.field public final o:Landroid/os/Bundle;
+
+.field public final p:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/ArrayList<",
@@ -55,7 +55,7 @@
     .end annotation
 .end field
 
-.field public final p:I
+.field public final q:I
 
 
 # direct methods
@@ -75,7 +75,7 @@
     .locals 3
 
     .line 1
-    invoke-interface {p1}, Ld3/a;->S1()Ljava/util/ArrayList;
+    invoke-interface {p1}, Ld3/a;->R1()Ljava/util/ArrayList;
 
     move-result-object v0
 
@@ -87,63 +87,63 @@
     invoke-direct {p0}, Lcom/google/android/gms/games/internal/GamesDowngradeableSafeParcel;-><init>()V
 
     .line 3
-    invoke-interface {p1}, Lcom/google/android/gms/games/multiplayer/realtime/Room;->Q1()Ljava/lang/String;
+    invoke-interface {p1}, Lcom/google/android/gms/games/multiplayer/realtime/Room;->P1()Ljava/lang/String;
 
     move-result-object v1
 
-    iput-object v1, p0, Lcom/google/android/gms/games/multiplayer/realtime/RoomEntity;->h:Ljava/lang/String;
+    iput-object v1, p0, Lcom/google/android/gms/games/multiplayer/realtime/RoomEntity;->i:Ljava/lang/String;
 
     .line 4
     invoke-interface {p1}, Lcom/google/android/gms/games/multiplayer/realtime/Room;->p()Ljava/lang/String;
 
     move-result-object v1
 
-    iput-object v1, p0, Lcom/google/android/gms/games/multiplayer/realtime/RoomEntity;->i:Ljava/lang/String;
+    iput-object v1, p0, Lcom/google/android/gms/games/multiplayer/realtime/RoomEntity;->j:Ljava/lang/String;
 
     .line 5
     invoke-interface {p1}, Lcom/google/android/gms/games/multiplayer/realtime/Room;->f()J
 
     move-result-wide v1
 
-    iput-wide v1, p0, Lcom/google/android/gms/games/multiplayer/realtime/RoomEntity;->j:J
+    iput-wide v1, p0, Lcom/google/android/gms/games/multiplayer/realtime/RoomEntity;->k:J
 
     .line 6
     invoke-interface {p1}, Lcom/google/android/gms/games/multiplayer/realtime/Room;->getStatus()I
 
     move-result v1
 
-    iput v1, p0, Lcom/google/android/gms/games/multiplayer/realtime/RoomEntity;->k:I
+    iput v1, p0, Lcom/google/android/gms/games/multiplayer/realtime/RoomEntity;->l:I
 
     .line 7
     invoke-interface {p1}, Lcom/google/android/gms/games/multiplayer/realtime/Room;->getDescription()Ljava/lang/String;
 
     move-result-object v1
 
-    iput-object v1, p0, Lcom/google/android/gms/games/multiplayer/realtime/RoomEntity;->l:Ljava/lang/String;
+    iput-object v1, p0, Lcom/google/android/gms/games/multiplayer/realtime/RoomEntity;->m:Ljava/lang/String;
 
     .line 8
     invoke-interface {p1}, Lcom/google/android/gms/games/multiplayer/realtime/Room;->g()I
 
     move-result v1
 
-    iput v1, p0, Lcom/google/android/gms/games/multiplayer/realtime/RoomEntity;->m:I
+    iput v1, p0, Lcom/google/android/gms/games/multiplayer/realtime/RoomEntity;->n:I
 
     .line 9
     invoke-interface {p1}, Lcom/google/android/gms/games/multiplayer/realtime/Room;->y()Landroid/os/Bundle;
 
     move-result-object v1
 
-    iput-object v1, p0, Lcom/google/android/gms/games/multiplayer/realtime/RoomEntity;->n:Landroid/os/Bundle;
+    iput-object v1, p0, Lcom/google/android/gms/games/multiplayer/realtime/RoomEntity;->o:Landroid/os/Bundle;
 
     .line 10
-    iput-object v0, p0, Lcom/google/android/gms/games/multiplayer/realtime/RoomEntity;->o:Ljava/util/ArrayList;
+    iput-object v0, p0, Lcom/google/android/gms/games/multiplayer/realtime/RoomEntity;->p:Ljava/util/ArrayList;
 
     .line 11
     invoke-interface {p1}, Lcom/google/android/gms/games/multiplayer/realtime/Room;->s1()I
 
     move-result p1
 
-    iput p1, p0, Lcom/google/android/gms/games/multiplayer/realtime/RoomEntity;->p:I
+    iput p1, p0, Lcom/google/android/gms/games/multiplayer/realtime/RoomEntity;->q:I
 
     return-void
 .end method
@@ -169,31 +169,31 @@
     invoke-direct {p0}, Lcom/google/android/gms/games/internal/GamesDowngradeableSafeParcel;-><init>()V
 
     .line 13
-    iput-object p1, p0, Lcom/google/android/gms/games/multiplayer/realtime/RoomEntity;->h:Ljava/lang/String;
+    iput-object p1, p0, Lcom/google/android/gms/games/multiplayer/realtime/RoomEntity;->i:Ljava/lang/String;
 
     .line 14
-    iput-object p2, p0, Lcom/google/android/gms/games/multiplayer/realtime/RoomEntity;->i:Ljava/lang/String;
+    iput-object p2, p0, Lcom/google/android/gms/games/multiplayer/realtime/RoomEntity;->j:Ljava/lang/String;
 
     .line 15
-    iput-wide p3, p0, Lcom/google/android/gms/games/multiplayer/realtime/RoomEntity;->j:J
+    iput-wide p3, p0, Lcom/google/android/gms/games/multiplayer/realtime/RoomEntity;->k:J
 
     .line 16
-    iput p5, p0, Lcom/google/android/gms/games/multiplayer/realtime/RoomEntity;->k:I
+    iput p5, p0, Lcom/google/android/gms/games/multiplayer/realtime/RoomEntity;->l:I
 
     .line 17
-    iput-object p6, p0, Lcom/google/android/gms/games/multiplayer/realtime/RoomEntity;->l:Ljava/lang/String;
+    iput-object p6, p0, Lcom/google/android/gms/games/multiplayer/realtime/RoomEntity;->m:Ljava/lang/String;
 
     .line 18
-    iput p7, p0, Lcom/google/android/gms/games/multiplayer/realtime/RoomEntity;->m:I
+    iput p7, p0, Lcom/google/android/gms/games/multiplayer/realtime/RoomEntity;->n:I
 
     .line 19
-    iput-object p8, p0, Lcom/google/android/gms/games/multiplayer/realtime/RoomEntity;->n:Landroid/os/Bundle;
+    iput-object p8, p0, Lcom/google/android/gms/games/multiplayer/realtime/RoomEntity;->o:Landroid/os/Bundle;
 
     .line 20
-    iput-object p9, p0, Lcom/google/android/gms/games/multiplayer/realtime/RoomEntity;->o:Ljava/util/ArrayList;
+    iput-object p9, p0, Lcom/google/android/gms/games/multiplayer/realtime/RoomEntity;->p:Ljava/util/ArrayList;
 
     .line 21
-    iput p10, p0, Lcom/google/android/gms/games/multiplayer/realtime/RoomEntity;->p:I
+    iput p10, p0, Lcom/google/android/gms/games/multiplayer/realtime/RoomEntity;->q:I
 
     return-void
 .end method
@@ -206,7 +206,7 @@
     new-array v0, v0, [Ljava/lang/Object;
 
     .line 1
-    invoke-interface {p0}, Lcom/google/android/gms/games/multiplayer/realtime/Room;->Q1()Ljava/lang/String;
+    invoke-interface {p0}, Lcom/google/android/gms/games/multiplayer/realtime/Room;->P1()Ljava/lang/String;
 
     move-result-object v1
 
@@ -276,7 +276,7 @@
 
     move-result-object v1
 
-    invoke-static {v1}, Lk/c;->a(Landroid/os/Bundle;)I
+    invoke-static {v1}, Le1/c;->a(Landroid/os/Bundle;)I
 
     move-result v1
 
@@ -289,7 +289,7 @@
     aput-object v1, v0, v2
 
     .line 8
-    invoke-interface {p0}, Ld3/a;->S1()Ljava/util/ArrayList;
+    invoke-interface {p0}, Ld3/a;->R1()Ljava/util/ArrayList;
 
     move-result-object v1
 
@@ -342,11 +342,11 @@
     check-cast p1, Lcom/google/android/gms/games/multiplayer/realtime/Room;
 
     .line 3
-    invoke-interface {p1}, Lcom/google/android/gms/games/multiplayer/realtime/Room;->Q1()Ljava/lang/String;
+    invoke-interface {p1}, Lcom/google/android/gms/games/multiplayer/realtime/Room;->P1()Ljava/lang/String;
 
     move-result-object v2
 
-    invoke-interface {p0}, Lcom/google/android/gms/games/multiplayer/realtime/Room;->Q1()Ljava/lang/String;
+    invoke-interface {p0}, Lcom/google/android/gms/games/multiplayer/realtime/Room;->P1()Ljava/lang/String;
 
     move-result-object v3
 
@@ -464,18 +464,18 @@
 
     move-result-object v3
 
-    invoke-static {v2, v3}, Lk/c;->b(Landroid/os/Bundle;Landroid/os/Bundle;)Z
+    invoke-static {v2, v3}, Le1/c;->b(Landroid/os/Bundle;Landroid/os/Bundle;)Z
 
     move-result v2
 
     if-eqz v2, :cond_2
 
     .line 10
-    invoke-interface {p1}, Ld3/a;->S1()Ljava/util/ArrayList;
+    invoke-interface {p1}, Ld3/a;->R1()Ljava/util/ArrayList;
 
     move-result-object v2
 
-    invoke-interface {p0}, Ld3/a;->S1()Ljava/util/ArrayList;
+    invoke-interface {p0}, Ld3/a;->R1()Ljava/util/ArrayList;
 
     move-result-object v3
 
@@ -524,7 +524,7 @@
     invoke-direct {v0, p0}, Ld2/f$a;-><init>(Ljava/lang/Object;)V
 
     .line 2
-    invoke-interface {p0}, Lcom/google/android/gms/games/multiplayer/realtime/Room;->Q1()Ljava/lang/String;
+    invoke-interface {p0}, Lcom/google/android/gms/games/multiplayer/realtime/Room;->P1()Ljava/lang/String;
 
     move-result-object v1
 
@@ -599,7 +599,7 @@
     invoke-virtual {v0, v2, v1}, Ld2/f$a;->a(Ljava/lang/String;Ljava/lang/Object;)Ld2/f$a;
 
     .line 9
-    invoke-interface {p0}, Ld3/a;->S1()Ljava/util/ArrayList;
+    invoke-interface {p0}, Ld3/a;->R1()Ljava/util/ArrayList;
 
     move-result-object v1
 
@@ -630,15 +630,15 @@
 
 
 # virtual methods
-.method public final Q1()Ljava/lang/String;
+.method public final P1()Ljava/lang/String;
     .locals 1
 
-    iget-object v0, p0, Lcom/google/android/gms/games/multiplayer/realtime/RoomEntity;->h:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/android/gms/games/multiplayer/realtime/RoomEntity;->i:Ljava/lang/String;
 
     return-object v0
 .end method
 
-.method public final S1()Ljava/util/ArrayList;
+.method public final R1()Ljava/util/ArrayList;
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -651,7 +651,7 @@
 
     new-instance v0, Ljava/util/ArrayList;
 
-    iget-object v1, p0, Lcom/google/android/gms/games/multiplayer/realtime/RoomEntity;->o:Ljava/util/ArrayList;
+    iget-object v1, p0, Lcom/google/android/gms/games/multiplayer/realtime/RoomEntity;->p:Ljava/util/ArrayList;
 
     invoke-direct {v0, v1}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
 
@@ -671,7 +671,7 @@
 .method public final f()J
     .locals 2
 
-    iget-wide v0, p0, Lcom/google/android/gms/games/multiplayer/realtime/RoomEntity;->j:J
+    iget-wide v0, p0, Lcom/google/android/gms/games/multiplayer/realtime/RoomEntity;->k:J
 
     return-wide v0
 .end method
@@ -679,7 +679,7 @@
 .method public final g()I
     .locals 1
 
-    iget v0, p0, Lcom/google/android/gms/games/multiplayer/realtime/RoomEntity;->m:I
+    iget v0, p0, Lcom/google/android/gms/games/multiplayer/realtime/RoomEntity;->n:I
 
     return v0
 .end method
@@ -687,7 +687,7 @@
 .method public final getDescription()Ljava/lang/String;
     .locals 1
 
-    iget-object v0, p0, Lcom/google/android/gms/games/multiplayer/realtime/RoomEntity;->l:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/android/gms/games/multiplayer/realtime/RoomEntity;->m:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -695,7 +695,7 @@
 .method public final getStatus()I
     .locals 1
 
-    iget v0, p0, Lcom/google/android/gms/games/multiplayer/realtime/RoomEntity;->k:I
+    iget v0, p0, Lcom/google/android/gms/games/multiplayer/realtime/RoomEntity;->l:I
 
     return v0
 .end method
@@ -713,7 +713,7 @@
 .method public final p()Ljava/lang/String;
     .locals 1
 
-    iget-object v0, p0, Lcom/google/android/gms/games/multiplayer/realtime/RoomEntity;->i:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/android/gms/games/multiplayer/realtime/RoomEntity;->j:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -721,7 +721,7 @@
 .method public final s1()I
     .locals 1
 
-    iget v0, p0, Lcom/google/android/gms/games/multiplayer/realtime/RoomEntity;->p:I
+    iget v0, p0, Lcom/google/android/gms/games/multiplayer/realtime/RoomEntity;->q:I
 
     return v0
 .end method
@@ -747,7 +747,7 @@
     move-result v5
 
     .line 2
-    iget-object p2, p0, Lcom/google/android/gms/games/multiplayer/realtime/RoomEntity;->h:Ljava/lang/String;
+    iget-object p2, p0, Lcom/google/android/gms/games/multiplayer/realtime/RoomEntity;->i:Ljava/lang/String;
 
     const/4 v0, 0x1
 
@@ -757,7 +757,7 @@
     invoke-static {p1, v0, p2, v1}, Le2/b;->m(Landroid/os/Parcel;ILjava/lang/String;Z)V
 
     .line 4
-    iget-object p2, p0, Lcom/google/android/gms/games/multiplayer/realtime/RoomEntity;->i:Ljava/lang/String;
+    iget-object p2, p0, Lcom/google/android/gms/games/multiplayer/realtime/RoomEntity;->j:Ljava/lang/String;
 
     const/4 v0, 0x2
 
@@ -765,7 +765,7 @@
     invoke-static {p1, v0, p2, v1}, Le2/b;->m(Landroid/os/Parcel;ILjava/lang/String;Z)V
 
     .line 6
-    iget-wide v2, p0, Lcom/google/android/gms/games/multiplayer/realtime/RoomEntity;->j:J
+    iget-wide v2, p0, Lcom/google/android/gms/games/multiplayer/realtime/RoomEntity;->k:J
 
     const/4 p2, 0x3
 
@@ -778,7 +778,7 @@
     invoke-virtual {p1, v2, v3}, Landroid/os/Parcel;->writeLong(J)V
 
     .line 9
-    iget p2, p0, Lcom/google/android/gms/games/multiplayer/realtime/RoomEntity;->k:I
+    iget p2, p0, Lcom/google/android/gms/games/multiplayer/realtime/RoomEntity;->l:I
 
     const/4 v2, 0x4
 
@@ -789,7 +789,7 @@
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 12
-    iget-object p2, p0, Lcom/google/android/gms/games/multiplayer/realtime/RoomEntity;->l:Ljava/lang/String;
+    iget-object p2, p0, Lcom/google/android/gms/games/multiplayer/realtime/RoomEntity;->m:Ljava/lang/String;
 
     const/4 v3, 0x5
 
@@ -797,7 +797,7 @@
     invoke-static {p1, v3, p2, v1}, Le2/b;->m(Landroid/os/Parcel;ILjava/lang/String;Z)V
 
     .line 14
-    iget p2, p0, Lcom/google/android/gms/games/multiplayer/realtime/RoomEntity;->m:I
+    iget p2, p0, Lcom/google/android/gms/games/multiplayer/realtime/RoomEntity;->n:I
 
     const/4 v3, 0x6
 
@@ -808,7 +808,7 @@
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 17
-    iget-object p2, p0, Lcom/google/android/gms/games/multiplayer/realtime/RoomEntity;->n:Landroid/os/Bundle;
+    iget-object p2, p0, Lcom/google/android/gms/games/multiplayer/realtime/RoomEntity;->o:Landroid/os/Bundle;
 
     const/4 v3, 0x7
 
@@ -816,7 +816,7 @@
     invoke-static {p1, v3, p2}, Le2/b;->d(Landroid/os/Parcel;ILandroid/os/Bundle;)V
 
     .line 19
-    invoke-virtual {p0}, Lcom/google/android/gms/games/multiplayer/realtime/RoomEntity;->S1()Ljava/util/ArrayList;
+    invoke-virtual {p0}, Lcom/google/android/gms/games/multiplayer/realtime/RoomEntity;->R1()Ljava/util/ArrayList;
 
     move-result-object p2
 
@@ -824,7 +824,7 @@
     invoke-static {p1, v0, p2, v1}, Le2/b;->q(Landroid/os/Parcel;ILjava/util/List;Z)V
 
     .line 21
-    iget v3, p0, Lcom/google/android/gms/games/multiplayer/realtime/RoomEntity;->p:I
+    iget v3, p0, Lcom/google/android/gms/games/multiplayer/realtime/RoomEntity;->q:I
 
     const/16 v1, 0x9
 
@@ -841,7 +841,7 @@
 .method public final y()Landroid/os/Bundle;
     .locals 1
 
-    iget-object v0, p0, Lcom/google/android/gms/games/multiplayer/realtime/RoomEntity;->n:Landroid/os/Bundle;
+    iget-object v0, p0, Lcom/google/android/gms/games/multiplayer/realtime/RoomEntity;->o:Landroid/os/Bundle;
 
     return-object v0
 .end method

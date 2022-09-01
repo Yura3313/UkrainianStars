@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lsd/b$a;->n(Lae/c2$a;ILae/b2;)V
+    value = Lsd/b$a;->n(Lae/b2$a;ILae/a2;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,18 +18,18 @@
 
 
 # instance fields
-.field public final synthetic f:Lsd/b$a;
+.field public final synthetic g:Lsd/b$a;
 
-.field public final synthetic g:Lae/b2;
+.field public final synthetic h:Lae/a2;
 
 
 # direct methods
-.method public constructor <init>(Lsd/b$a;Lae/b2;)V
+.method public constructor <init>(Lsd/b$a;Lae/a2;)V
     .locals 0
 
-    iput-object p1, p0, Lsd/b$a$b;->f:Lsd/b$a;
+    iput-object p1, p0, Lsd/b$a$b;->g:Lsd/b$a;
 
-    iput-object p2, p0, Lsd/b$a$b;->g:Lae/b2;
+    iput-object p2, p0, Lsd/b$a$b;->h:Lae/a2;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -49,7 +49,7 @@
     move-result-object p1
 
     .line 2
-    iget-object p1, p1, Lae/u;->m:La5/d0;
+    iget-object p1, p1, Lae/u;->m:Lpe/a;
 
     const-string v0, "Public Profile Friends"
 
@@ -60,21 +60,21 @@
     const/16 v3, 0x18
 
     .line 3
-    invoke-static {p1, v0, v1, v2, v3}, La5/d0;->a(La5/d0;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;I)V
+    invoke-static {p1, v0, v1, v2, v3}, Lpe/a;->e(Lpe/a;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;I)V
 
     .line 4
-    iget-object p1, p0, Lsd/b$a$b;->f:Lsd/b$a;
+    iget-object p1, p0, Lsd/b$a$b;->g:Lsd/b$a;
 
     .line 5
     iget-object p1, p1, Lsd/b$a;->e:Lsd/b;
 
     .line 6
-    iget-object v0, p0, Lsd/b$a$b;->g:Lae/b2;
+    iget-object v0, p0, Lsd/b$a$b;->h:Lae/a2;
 
     check-cast v0, Lsd/a;
 
     .line 7
-    iget-object v1, p1, Lsd/b;->b0:Ljava/util/List;
+    iget-object v1, p1, Lsd/b;->c0:Ljava/util/List;
 
     if-eqz v1, :cond_5
 
@@ -101,7 +101,7 @@
     move-result-object v4
 
     .line 10
-    check-cast v4, Lae/b2;
+    check-cast v4, Lae/a2;
 
     .line 11
     instance-of v5, v4, Lsd/a;
@@ -126,7 +126,7 @@
 
     const/16 v4, 0xa
 
-    invoke-static {v3, v4}, Lje/f;->q(Ljava/lang/Iterable;I)I
+    invoke-static {v3, v4}, Lje/f;->l(Ljava/lang/Iterable;I)I
 
     move-result v4
 
@@ -152,7 +152,7 @@
     check-cast v4, Lsd/a;
 
     .line 16
-    invoke-virtual {v4, v0}, Lsd/a;->d(Lae/b2;)Z
+    invoke-virtual {v4, v0}, Lsd/a;->d(Lae/a2;)Z
 
     move-result v5
 
@@ -195,7 +195,7 @@
     iget-object v3, v0, Lsd/a;->b:Lcom/supercell/id/model/IdSocialAccount;
 
     .line 20
-    invoke-virtual {v1, v3, v2}, Lbe/h;->j(Lcom/supercell/id/model/IdSocialAccount;Ljava/lang/String;)Lze/e0;
+    invoke-virtual {v1, v3, v2}, Lbe/h;->j(Lcom/supercell/id/model/IdSocialAccount;Ljava/lang/String;)Lze/f0;
 
     move-result-object v1
 
@@ -204,7 +204,7 @@
 
     invoke-direct {v2, v0}, Lsd/c;-><init>(Lsd/a;)V
 
-    invoke-static {v1, p1, v2}, Lae/u1;->e(Lze/e0;Ljava/lang/Object;Lre/p;)Lze/e0;
+    invoke-static {v1, p1, v2}, Lae/t1;->d(Lze/f0;Ljava/lang/Object;Lre/p;)Lze/f0;
 
     return-void
 .end method

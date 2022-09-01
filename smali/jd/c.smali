@@ -12,7 +12,7 @@
 
 
 # instance fields
-.field public final f:Ljava/lang/ref/WeakReference;
+.field public final g:Ljava/lang/ref/WeakReference;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/lang/ref/WeakReference<",
@@ -22,50 +22,50 @@
     .end annotation
 .end field
 
-.field public final g:Ljd/c$h;
+.field public final h:Ljd/c$h;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lre/l<",
             "Lae/m<",
-            "Lvc/h;",
+            "Lvc/g;",
             "Lcom/supercell/id/util/NormalizedError;",
             ">;",
-            "Lie/h;",
+            "Lie/i;",
             ">;"
         }
     .end annotation
 .end field
 
-.field public h:Ljava/util/List;
+.field public i:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
             "+",
-            "Lae/b2;",
+            "Lae/a2;",
             ">;"
         }
     .end annotation
 .end field
 
-.field public i:Lze/f0;
+.field public j:Lze/g0;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lze/e0<",
-            "Lie/h;",
+            "Lze/f0<",
+            "Lie/i;",
             ">;"
         }
     .end annotation
 .end field
 
-.field public final j:Ljava/lang/String;
-
-.field public final k:I
+.field public final k:Ljava/lang/String;
 
 .field public final l:I
 
 .field public final m:I
 
 .field public final n:I
+
+.field public final o:I
 
 
 # direct methods
@@ -74,40 +74,40 @@
 
     const-string v0, "activity"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "feedId"
 
-    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const v0, 0x1030059
 
     .line 1
     invoke-direct {p0, p1, v0}, Lwc/d;-><init>(Landroid/app/Activity;I)V
 
-    iput-object p2, p0, Ljd/c;->j:Ljava/lang/String;
+    iput-object p2, p0, Ljd/c;->k:Ljava/lang/String;
 
-    iput p3, p0, Ljd/c;->k:I
+    iput p3, p0, Ljd/c;->l:I
 
-    iput p4, p0, Ljd/c;->l:I
+    iput p4, p0, Ljd/c;->m:I
 
-    iput p5, p0, Ljd/c;->m:I
+    iput p5, p0, Ljd/c;->n:I
 
-    iput p6, p0, Ljd/c;->n:I
+    iput p6, p0, Ljd/c;->o:I
 
     .line 2
     new-instance p2, Ljava/lang/ref/WeakReference;
 
     invoke-direct {p2, p1}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
 
-    iput-object p2, p0, Ljd/c;->f:Ljava/lang/ref/WeakReference;
+    iput-object p2, p0, Ljd/c;->g:Ljava/lang/ref/WeakReference;
 
     .line 3
     new-instance p1, Ljd/c$h;
 
     invoke-direct {p1, p0}, Ljd/c$h;-><init>(Ljd/c;)V
 
-    iput-object p1, p0, Ljd/c;->g:Ljd/c$h;
+    iput-object p1, p0, Ljd/c;->h:Ljd/c$h;
 
     return-void
 .end method
@@ -128,9 +128,9 @@
     iget-object v0, v0, Lae/u;->o:Lrc/d0;
 
     .line 3
-    iget-object v1, p0, Ljd/c;->j:Ljava/lang/String;
+    iget-object v1, p0, Ljd/c;->k:Ljava/lang/String;
 
-    invoke-virtual {v0, v1}, Lrc/d0;->i(Ljava/lang/String;)Lze/e0;
+    invoke-virtual {v0, v1}, Lrc/d0;->i(Ljava/lang/String;)Lze/f0;
 
     move-result-object v0
 
@@ -138,19 +138,19 @@
 
     invoke-direct {v1, p0}, Ljd/c$b;-><init>(Ljd/c;)V
 
-    invoke-static {v0, v1}, Lae/u1;->m(Lze/e0;Lre/l;)Lze/e0;
+    invoke-static {v0, v1}, Lae/t1;->l(Lze/f0;Lre/l;)Lze/f0;
 
     .line 4
     new-instance v1, Ljd/c$c;
 
     invoke-direct {v1, p0}, Ljd/c$c;-><init>(Ljd/c;)V
 
-    invoke-static {v0, v1}, Lae/u1;->d(Lze/e0;Lre/l;)Lze/e0;
+    invoke-static {v0, v1}, Lae/t1;->c(Lze/f0;Lre/l;)Lze/f0;
 
     const-wide/16 v0, 0x1f4
 
     .line 5
-    invoke-static {v0, v1}, Lae/u1;->g(J)Lze/e0;
+    invoke-static {v0, v1}, Lae/t1;->f(J)Lze/f0;
 
     move-result-object v0
 
@@ -158,13 +158,13 @@
 
     invoke-direct {v1, p0}, Ljd/c$d;-><init>(Ljd/c;)V
 
-    invoke-static {v0, v1}, Lae/u1;->r(Lze/e0;Lre/l;)Lze/e0;
+    invoke-static {v0, v1}, Lae/t1;->q(Lze/f0;Lre/l;)Lze/f0;
 
     move-result-object v0
 
-    check-cast v0, Lze/f0;
+    check-cast v0, Lze/g0;
 
-    iput-object v0, p0, Ljd/c;->i:Lze/f0;
+    iput-object v0, p0, Ljd/c;->j:Lze/g0;
 
     return-void
 .end method
@@ -173,14 +173,14 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Ljd/c;->i:Lze/f0;
+    iget-object v0, p0, Ljd/c;->j:Lze/g0;
 
     if-eqz v0, :cond_0
 
     const/4 v1, 0x0
 
     .line 2
-    invoke-virtual {v0, v1}, Lze/e1;->q(Ljava/util/concurrent/CancellationException;)V
+    invoke-virtual {v0, v1}, Lze/f1;->q(Ljava/util/concurrent/CancellationException;)V
 
     .line 3
     :cond_0
@@ -196,7 +196,7 @@
     invoke-super {p0, p1}, Landroid/app/Dialog;->onCreate(Landroid/os/Bundle;)V
 
     .line 2
-    iget-object p1, p0, Ljd/c;->f:Ljava/lang/ref/WeakReference;
+    iget-object p1, p0, Ljd/c;->g:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {p1}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
 
@@ -261,7 +261,7 @@
 
     const-string v6, "activity.resources"
 
-    invoke-static {v5, v6}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v5, v6}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v5}, Landroid/content/res/Resources;->getConfiguration()Landroid/content/res/Configuration;
 
@@ -325,7 +325,7 @@
 
     const-string v3, "editMessageView"
 
-    invoke-static {v1, v3}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, v3}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v1}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
 
@@ -368,22 +368,22 @@
     iput v2, v3, Landroid/view/WindowManager$LayoutParams;->gravity:I
 
     .line 24
-    iget v2, p0, Ljd/c;->k:I
+    iget v2, p0, Ljd/c;->l:I
 
     iput v2, v3, Landroid/view/WindowManager$LayoutParams;->x:I
 
     .line 25
-    iget v2, p0, Ljd/c;->l:I
+    iget v2, p0, Ljd/c;->m:I
 
     iput v2, v3, Landroid/view/WindowManager$LayoutParams;->y:I
 
     .line 26
-    iget v2, p0, Ljd/c;->m:I
+    iget v2, p0, Ljd/c;->n:I
 
     iput v2, v3, Landroid/view/WindowManager$LayoutParams;->width:I
 
     .line 27
-    iget v2, p0, Ljd/c;->n:I
+    iget v2, p0, Ljd/c;->o:I
 
     iput v2, v3, Landroid/view/WindowManager$LayoutParams;->height:I
 
@@ -395,11 +395,11 @@
 
     .line 29
     :cond_5
-    new-instance v1, Lse/o;
+    new-instance v1, Lse/p;
 
-    invoke-direct {v1}, Lse/o;-><init>()V
+    invoke-direct {v1}, Lse/p;-><init>()V
 
-    iput-boolean v0, v1, Lse/o;->f:Z
+    iput-boolean v0, v1, Lse/p;->g:Z
 
     .line 30
     sget v2, Lcom/supercell/id/R$id;->messagesList:I
@@ -421,7 +421,7 @@
 
     const-string v4, "messagesList"
 
-    invoke-static {v3, v4}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v3, v4}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     new-instance v5, Lcom/supercell/id/ui/profile/LinearLayoutManagerWrapper;
 
@@ -440,7 +440,7 @@
 
     check-cast p1, Landroidx/recyclerview/widget/RecyclerView;
 
-    invoke-static {p1, v4}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v4}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     new-instance v0, Ljd/c$a;
 
@@ -449,7 +449,7 @@
     .line 35
     new-instance v3, Ljd/c$e;
 
-    invoke-direct {v3, v0, p0, v1}, Ljd/c$e;-><init>(Ljd/c$a;Ljd/c;Lse/o;)V
+    invoke-direct {v3, v0, p0, v1}, Ljd/c$e;-><init>(Ljd/c$a;Ljd/c;Lse/p;)V
 
     invoke-virtual {v0, v3}, Landroidx/recyclerview/widget/RecyclerView$e;->k(Landroidx/recyclerview/widget/RecyclerView$g;)V
 
@@ -465,7 +465,7 @@
 
     new-instance v0, Ljd/c$f;
 
-    invoke-direct {v0, v1}, Ljd/c$f;-><init>(Lse/o;)V
+    invoke-direct {v0, v1}, Ljd/c$f;-><init>(Lse/p;)V
 
     invoke-virtual {p1, v0}, Landroidx/recyclerview/widget/RecyclerView;->h(Landroidx/recyclerview/widget/RecyclerView$q;)V
 

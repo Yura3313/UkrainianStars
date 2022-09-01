@@ -72,7 +72,7 @@
     const-string v2, "Broken system behaviour for dns lookup of "
 
     .line 3
-    invoke-static {v2, p1}, Lcom/google/android/gms/ads/e;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2, p1}, Lf/g;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 

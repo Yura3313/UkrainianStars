@@ -15,9 +15,9 @@
 
 
 # instance fields
-.field public final f:Ljava/lang/String;
+.field public final g:Ljava/lang/String;
 
-.field public final g:Z
+.field public final h:Z
 
 
 # direct methods
@@ -40,10 +40,10 @@
     invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lcom/google/android/gms/drive/query/internal/zzf;->f:Ljava/lang/String;
+    iput-object p1, p0, Lcom/google/android/gms/drive/query/internal/zzf;->g:Ljava/lang/String;
 
     .line 3
-    iput-boolean p2, p0, Lcom/google/android/gms/drive/query/internal/zzf;->g:Z
+    iput-boolean p2, p0, Lcom/google/android/gms/drive/query/internal/zzf;->h:Z
 
     return-void
 .end method
@@ -60,14 +60,14 @@
 
     new-array v1, v1, [Ljava/lang/Object;
 
-    iget-object v2, p0, Lcom/google/android/gms/drive/query/internal/zzf;->f:Ljava/lang/String;
+    iget-object v2, p0, Lcom/google/android/gms/drive/query/internal/zzf;->g:Ljava/lang/String;
 
     const/4 v3, 0x0
 
     aput-object v2, v1, v3
 
     .line 2
-    iget-boolean v2, p0, Lcom/google/android/gms/drive/query/internal/zzf;->g:Z
+    iget-boolean v2, p0, Lcom/google/android/gms/drive/query/internal/zzf;->h:Z
 
     if-eqz v2, :cond_0
 
@@ -104,7 +104,7 @@
     move-result v5
 
     .line 2
-    iget-object p2, p0, Lcom/google/android/gms/drive/query/internal/zzf;->f:Ljava/lang/String;
+    iget-object p2, p0, Lcom/google/android/gms/drive/query/internal/zzf;->g:Ljava/lang/String;
 
     const/4 v0, 0x1
 
@@ -113,7 +113,7 @@
     invoke-static {p1, v0, p2, v1}, Le2/b;->m(Landroid/os/Parcel;ILjava/lang/String;Z)V
 
     .line 3
-    iget-boolean v3, p0, Lcom/google/android/gms/drive/query/internal/zzf;->g:Z
+    iget-boolean v3, p0, Lcom/google/android/gms/drive/query/internal/zzf;->h:Z
 
     const/4 v1, 0x2
 

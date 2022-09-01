@@ -1,5 +1,5 @@
 .class public final Ltd/b$a$b;
-.super Lse/h;
+.super Lse/i;
 .source "RegisterEnterContactDetailsPageFragment.kt"
 
 # interfaces
@@ -18,7 +18,7 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/a<",
         "Ltd/l;",
         ">;"
@@ -27,7 +27,7 @@
 
 
 # static fields
-.field public static final f:Ltd/b$a$b;
+.field public static final g:Ltd/b$a$b;
 
 
 # direct methods
@@ -38,7 +38,7 @@
 
     invoke-direct {v0}, Ltd/b$a$b;-><init>()V
 
-    sput-object v0, Ltd/b$a$b;->f:Ltd/b$a$b;
+    sput-object v0, Ltd/b$a$b;->g:Ltd/b$a$b;
 
     return-void
 .end method
@@ -48,7 +48,7 @@
 
     const/4 v0, 0x0
 
-    invoke-direct {p0, v0}, Lse/h;-><init>(I)V
+    invoke-direct {p0, v0}, Lse/i;-><init>(I)V
 
     return-void
 .end method

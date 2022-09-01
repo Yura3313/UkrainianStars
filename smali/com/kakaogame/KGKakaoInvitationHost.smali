@@ -319,7 +319,7 @@
 
     .line 24
     :goto_1
-    invoke-static {v0, p0}, Lcom/kakaogame/d;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
+    invoke-static {v0, p0}, Lcom/kakaogame/b;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -334,7 +334,7 @@
 
     .line 26
     :goto_2
-    invoke-static {v0, v2}, Lcom/kakaogame/d;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
+    invoke-static {v0, v2}, Lcom/kakaogame/b;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -620,7 +620,7 @@
 
     .line 26
     :goto_2
-    invoke-static {v0, p0}, Lcom/kakaogame/d;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
+    invoke-static {v0, p0}, Lcom/kakaogame/b;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -637,7 +637,7 @@
     const/4 v1, 0x0
 
     .line 28
-    invoke-static {v0, v1}, Lcom/kakaogame/d;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
+    invoke-static {v0, v1}, Lcom/kakaogame/b;->a(Lcom/kakaogame/util/Stopwatch;Lcom/kakaogame/KGResult;)Ljava/lang/String;
 
     move-result-object v2
 

@@ -1,208 +1,274 @@
 .class public final Lvc/j;
 .super Ljava/lang/Object;
-.source "IdFriends.kt"
-
-
-# annotations
-.annotation system Ldalvik/annotation/MemberClasses;
-    value = {
-        Lvc/j$a;
-    }
-.end annotation
-
-
-# static fields
-.field public static final e:Lvc/j$a;
+.source "IdProfile.kt"
 
 
 # instance fields
-.field public final a:Ljava/util/List;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/List<",
-            "Lvc/i;",
-            ">;"
-        }
-    .end annotation
-.end field
+.field public final a:Z
 
-.field public final b:Ljava/util/List;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/List<",
-            "Lvc/i;",
-            ">;"
-        }
-    .end annotation
-.end field
+.field public final b:Ljava/lang/String;
 
 .field public final c:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
-            "Lvc/i;",
+            "Ljava/lang/String;",
             ">;"
         }
     .end annotation
 .end field
 
-.field public final d:Ljava/util/List;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/List<",
-            "Lvc/i;",
-            ">;"
-        }
-    .end annotation
-.end field
+.field public final d:Ljava/lang/Integer;
+
+.field public final e:Lcom/supercell/id/model/IdSeason;
+
+.field public final f:Ljava/lang/Boolean;
+
+.field public final g:Ljava/lang/String;
+
+.field public final h:Ljava/lang/String;
+
+.field public final i:Ljava/lang/String;
+
+.field public final j:Ljava/lang/String;
+
+.field public final k:Lcom/supercell/id/model/IdSystem;
+
+.field public final l:Lcom/supercell/id/model/IdConnectedSystem;
 
 
 # direct methods
-.method public static constructor <clinit>()V
+.method public constructor <init>(Ljava/lang/String;Lcom/supercell/id/model/IdSystem;Lcom/supercell/id/model/IdConnectedSystem;)V
     .locals 1
 
-    new-instance v0, Lvc/j$a;
+    const-string v0, "name"
+
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
-    invoke-direct {v0}, Lvc/j$a;-><init>()V
-
-    .line 2
-    sput-object v0, Lvc/j;->e:Lvc/j$a;
-
-    return-void
-.end method
-
-.method public constructor <init>(Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/util/List;)V
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/util/List<",
-            "Lvc/i;",
-            ">;",
-            "Ljava/util/List<",
-            "Lvc/i;",
-            ">;",
-            "Ljava/util/List<",
-            "Lvc/i;",
-            ">;",
-            "Ljava/util/List<",
-            "Lvc/i;",
-            ">;)V"
-        }
-    .end annotation
-
-    const-string v0, "friends"
-
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "sentInvites"
-
-    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "receivedInvites"
-
-    invoke-static {p3, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "strangers"
-
-    invoke-static {p4, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
-
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lvc/j;->a:Ljava/util/List;
+    iput-object p1, p0, Lvc/j;->j:Ljava/lang/String;
 
-    iput-object p2, p0, Lvc/j;->b:Ljava/util/List;
+    iput-object p2, p0, Lvc/j;->k:Lcom/supercell/id/model/IdSystem;
 
-    iput-object p3, p0, Lvc/j;->c:Ljava/util/List;
+    iput-object p3, p0, Lvc/j;->l:Lcom/supercell/id/model/IdConnectedSystem;
 
-    iput-object p4, p0, Lvc/j;->d:Ljava/util/List;
+    if-eqz p3, :cond_0
 
-    return-void
-.end method
+    const/4 p1, 0x1
 
-.method public static synthetic b(Lvc/j;Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/util/List;I)Lvc/j;
-    .locals 1
-
-    and-int/lit8 v0, p5, 0x1
-
-    if-eqz v0, :cond_0
-
-    iget-object p1, p0, Lvc/j;->a:Ljava/util/List;
+    goto :goto_0
 
     :cond_0
-    and-int/lit8 v0, p5, 0x2
+    const/4 p1, 0x0
 
-    if-eqz v0, :cond_1
+    .line 2
+    :goto_0
+    iput-boolean p1, p0, Lvc/j;->a:Z
 
-    iget-object p2, p0, Lvc/j;->b:Ljava/util/List;
+    const/4 p1, 0x0
+
+    if-eqz p3, :cond_1
+
+    .line 3
+    iget-object v0, p3, Lcom/supercell/id/model/IdConnectedSystem;->h:Ljava/lang/String;
+
+    goto :goto_1
 
     :cond_1
-    and-int/lit8 v0, p5, 0x4
+    move-object v0, p1
 
-    if-eqz v0, :cond_2
+    .line 4
+    :goto_1
+    iput-object v0, p0, Lvc/j;->b:Ljava/lang/String;
 
-    iget-object p3, p0, Lvc/j;->c:Ljava/util/List;
+    if-eqz p3, :cond_2
+
+    .line 5
+    iget-object v0, p3, Lcom/supercell/id/model/IdConnectedSystem;->i:Ljava/util/List;
+
+    goto :goto_2
 
     :cond_2
-    and-int/lit8 p5, p5, 0x8
+    move-object v0, p1
 
-    if-eqz p5, :cond_3
+    .line 6
+    :goto_2
+    iput-object v0, p0, Lvc/j;->c:Ljava/util/List;
 
-    iget-object p4, p0, Lvc/j;->d:Ljava/util/List;
+    if-eqz p3, :cond_3
+
+    .line 7
+    iget-object v0, p3, Lcom/supercell/id/model/IdConnectedSystem;->j:Ljava/lang/Integer;
+
+    goto :goto_3
 
     :cond_3
-    invoke-virtual {p0, p1, p2, p3, p4}, Lvc/j;->a(Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/util/List;)Lvc/j;
+    move-object v0, p1
 
-    move-result-object p0
+    .line 8
+    :goto_3
+    iput-object v0, p0, Lvc/j;->d:Ljava/lang/Integer;
 
-    return-object p0
+    .line 9
+    iget-object v0, p2, Lcom/supercell/id/model/IdSystem;->l:Lcom/supercell/id/model/IdSeason;
+
+    .line 10
+    iput-object v0, p0, Lvc/j;->e:Lcom/supercell/id/model/IdSeason;
+
+    if-eqz p3, :cond_4
+
+    .line 11
+    iget-object p1, p3, Lcom/supercell/id/model/IdConnectedSystem;->k:Ljava/lang/Boolean;
+
+    .line 12
+    :cond_4
+    iput-object p1, p0, Lvc/j;->f:Ljava/lang/Boolean;
+
+    .line 13
+    iget-object p1, p2, Lcom/supercell/id/model/IdSystem;->k:Ljava/lang/String;
+
+    .line 14
+    iput-object p1, p0, Lvc/j;->g:Ljava/lang/String;
+
+    .line 15
+    iget-object p1, p2, Lcom/supercell/id/model/IdSystem;->j:Ljava/lang/String;
+
+    .line 16
+    iput-object p1, p0, Lvc/j;->h:Ljava/lang/String;
+
+    .line 17
+    iget-object p1, p2, Lcom/supercell/id/model/IdSystem;->i:Ljava/lang/String;
+
+    .line 18
+    iput-object p1, p0, Lvc/j;->i:Ljava/lang/String;
+
+    return-void
 .end method
 
 
 # virtual methods
-.method public final a(Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/util/List;)Lvc/j;
+.method public final a()Ljava/lang/String;
     .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/util/List<",
-            "Lvc/i;",
-            ">;",
-            "Ljava/util/List<",
-            "Lvc/i;",
-            ">;",
-            "Ljava/util/List<",
-            "Lvc/i;",
-            ">;",
-            "Ljava/util/List<",
-            "Lvc/i;",
-            ">;)",
-            "Lvc/j;"
-        }
-    .end annotation
 
-    const-string v0, "friends"
+    iget-object v0, p0, Lvc/j;->k:Lcom/supercell/id/model/IdSystem;
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-virtual {v0}, Lcom/supercell/id/model/IdSystem;->a()Ljava/lang/String;
 
-    const-string v0, "sentInvites"
-
-    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "receivedInvites"
-
-    invoke-static {p3, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "strangers"
-
-    invoke-static {p4, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
-
-    new-instance v0, Lvc/j;
-
-    invoke-direct {v0, p1, p2, p3, p4}, Lvc/j;-><init>(Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/util/List;)V
+    move-result-object v0
 
     return-object v0
+.end method
+
+.method public final b()Ljava/lang/String;
+    .locals 3
+
+    .line 1
+    iget-object v0, p0, Lvc/j;->k:Lcom/supercell/id/model/IdSystem;
+
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 2
+    sget-object v1, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
+
+    invoke-virtual {v1}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lae/u;
+
+    move-result-object v1
+
+    .line 3
+    iget-object v1, v1, Lae/u;->s:Lud/i;
+
+    const-string v2, "game_name_"
+
+    .line 4
+    invoke-static {v2}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    .line 5
+    iget-object v0, v0, Lcom/supercell/id/model/IdSystem;->g:Ljava/lang/String;
+
+    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-virtual {v1, v0}, Lud/i;->g(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    const-string v0, ""
+
+    :goto_0
+    return-object v0
+.end method
+
+.method public final c()Z
+    .locals 3
+
+    .line 1
+    sget-object v0, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
+
+    invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lae/u;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lae/u;->b()Lbe/b;
+
+    move-result-object v0
+
+    .line 2
+    iget-object v0, v0, Lbe/x0;->a:Ljava/lang/Object;
+
+    .line 3
+    check-cast v0, Lvc/a;
+
+    .line 4
+    iget-object v1, p0, Lvc/j;->k:Lcom/supercell/id/model/IdSystem;
+
+    .line 5
+    iget-boolean v1, v1, Lcom/supercell/id/model/IdSystem;->h:Z
+
+    const/4 v2, 0x1
+
+    if-eqz v1, :cond_0
+
+    .line 6
+    iget-object v1, p0, Lvc/j;->l:Lcom/supercell/id/model/IdConnectedSystem;
+
+    if-nez v1, :cond_0
+
+    if-eqz v0, :cond_1
+
+    .line 7
+    iget-object v0, v0, Lvc/a;->b:Ljava/util/Set;
+
+    if-eqz v0, :cond_1
+
+    .line 8
+    iget-object v1, p0, Lvc/j;->j:Ljava/lang/String;
+
+    invoke-interface {v0, v1}, Ljava/util/Set;->contains(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eq v0, v2, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v2, 0x0
+
+    :cond_1
+    :goto_0
+    return v2
 .end method
 
 .method public final equals(Ljava/lang/Object;)Z
@@ -216,41 +282,31 @@
 
     check-cast p1, Lvc/j;
 
-    iget-object v0, p0, Lvc/j;->a:Ljava/util/List;
+    iget-object v0, p0, Lvc/j;->j:Ljava/lang/String;
 
-    iget-object v1, p1, Lvc/j;->a:Ljava/util/List;
+    iget-object v1, p1, Lvc/j;->j:Ljava/lang/String;
 
-    invoke-static {v0, v1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    iget-object v0, p0, Lvc/j;->b:Ljava/util/List;
-
-    iget-object v1, p1, Lvc/j;->b:Ljava/util/List;
-
-    invoke-static {v0, v1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lvc/j;->c:Ljava/util/List;
+    iget-object v0, p0, Lvc/j;->k:Lcom/supercell/id/model/IdSystem;
 
-    iget-object v1, p1, Lvc/j;->c:Ljava/util/List;
+    iget-object v1, p1, Lvc/j;->k:Lcom/supercell/id/model/IdSystem;
 
-    invoke-static {v0, v1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lvc/j;->d:Ljava/util/List;
+    iget-object v0, p0, Lvc/j;->l:Lcom/supercell/id/model/IdConnectedSystem;
 
-    iget-object p1, p1, Lvc/j;->d:Ljava/util/List;
+    iget-object p1, p1, Lvc/j;->l:Lcom/supercell/id/model/IdConnectedSystem;
 
-    invoke-static {v0, p1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, p1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -273,7 +329,7 @@
 .method public final hashCode()I
     .locals 3
 
-    iget-object v0, p0, Lvc/j;->a:Ljava/util/List;
+    iget-object v0, p0, Lvc/j;->j:Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -291,11 +347,11 @@
     :goto_0
     mul-int/lit8 v0, v0, 0x1f
 
-    iget-object v2, p0, Lvc/j;->b:Ljava/util/List;
+    iget-object v2, p0, Lvc/j;->k:Lcom/supercell/id/model/IdSystem;
 
     if-eqz v2, :cond_1
 
-    invoke-virtual {v2}, Ljava/lang/Object;->hashCode()I
+    invoke-virtual {v2}, Lcom/supercell/id/model/IdSystem;->hashCode()I
 
     move-result v2
 
@@ -309,42 +365,24 @@
 
     mul-int/lit8 v0, v0, 0x1f
 
-    iget-object v2, p0, Lvc/j;->c:Ljava/util/List;
+    iget-object v2, p0, Lvc/j;->l:Lcom/supercell/id/model/IdConnectedSystem;
 
     if-eqz v2, :cond_2
 
-    invoke-virtual {v2}, Ljava/lang/Object;->hashCode()I
-
-    move-result v2
-
-    goto :goto_2
-
-    :cond_2
-    const/4 v2, 0x0
-
-    :goto_2
-    add-int/2addr v0, v2
-
-    mul-int/lit8 v0, v0, 0x1f
-
-    iget-object v2, p0, Lvc/j;->d:Ljava/util/List;
-
-    if-eqz v2, :cond_3
-
-    invoke-virtual {v2}, Ljava/lang/Object;->hashCode()I
+    invoke-virtual {v2}, Lcom/supercell/id/model/IdConnectedSystem;->hashCode()I
 
     move-result v1
 
-    :cond_3
+    :cond_2
     add-int/2addr v0, v1
 
     return v0
 .end method
 
 .method public final toString()Ljava/lang/String;
-    .locals 3
+    .locals 2
 
-    const-string v0, "IdFriends(friends="
+    const-string v0, "IdGame(name="
 
     .line 1
     invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -352,36 +390,31 @@
     move-result-object v0
 
     .line 2
-    iget-object v1, p0, Lvc/j;->a:Ljava/util/List;
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    const-string v1, ", sentInvites="
+    iget-object v1, p0, Lvc/j;->j:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lvc/j;->b:Ljava/util/List;
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    const-string v1, ", receivedInvites="
+    const-string v1, ", system="
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lvc/j;->c:Ljava/util/List;
+    iget-object v1, p0, Lvc/j;->k:Lcom/supercell/id/model/IdSystem;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    const-string v1, ", strangers="
+    const-string v1, ", connectedSystem="
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lvc/j;->d:Ljava/util/List;
+    iget-object v1, p0, Lvc/j;->l:Lcom/supercell/id/model/IdConnectedSystem;
 
-    const-string v2, ")"
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    .line 3
-    invoke-static {v0, v1, v2}, Ltb/a;->a(Ljava/lang/StringBuilder;Ljava/util/List;Ljava/lang/String;)Ljava/lang/String;
+    const-string v1, ")"
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v0
 

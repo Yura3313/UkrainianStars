@@ -1,148 +1,340 @@
-.class public final Lk3/cu0;
-.super Ljava/util/AbstractList;
+.class public abstract Lk3/cu0;
+.super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads-lite@@19.3.0"
-
-# interfaces
-.implements Lk3/is0;
-.implements Ljava/util/RandomAccess;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Ljava/util/AbstractList<",
-        "Ljava/lang/String;",
-        ">;",
-        "Lk3/is0;",
-        "Ljava/util/RandomAccess;"
+        "<T:",
+        "Ljava/lang/Object;",
+        "B:",
+        "Ljava/lang/Object;",
+        ">",
+        "Ljava/lang/Object;"
     }
 .end annotation
 
 
-# instance fields
-.field public final f:Lk3/is0;
-
-
 # direct methods
-.method public constructor <init>(Lk3/is0;)V
+.method public constructor <init>()V
     .locals 0
 
-    .line 1
-    invoke-direct {p0}, Ljava/util/AbstractList;-><init>()V
-
-    .line 2
-    iput-object p1, p0, Lk3/cu0;->f:Lk3/is0;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final A0(Lk3/tq0;)V
-    .locals 0
-
-    new-instance p1, Ljava/lang/UnsupportedOperationException;
-
-    invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V
-
-    throw p1
+.method public abstract a()V
 .end method
 
-.method public final O0()Ljava/util/List;
-    .locals 1
+.method public abstract b(Ljava/lang/Object;IJ)V
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "()",
-            "Ljava/util/List<",
-            "*>;"
+            "(TB;IJ)V"
+        }
+    .end annotation
+.end method
+
+.method public abstract c(Ljava/lang/Object;ILjava/lang/Object;)V
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TB;ITT;)V"
+        }
+    .end annotation
+.end method
+
+.method public abstract d(Ljava/lang/Object;ILk3/yq0;)V
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TB;I",
+            "Lk3/yq0;",
+            ")V"
+        }
+    .end annotation
+.end method
+
+.method public abstract e(Ljava/lang/Object;Lk3/wu0;)V
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;",
+            "Lk3/wu0;",
+            ")V"
         }
     .end annotation
 
-    iget-object v0, p0, Lk3/cu0;->f:Lk3/is0;
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+.end method
 
-    invoke-interface {v0}, Lk3/is0;->O0()Ljava/util/List;
+.method public final f(Ljava/lang/Object;Lk3/kr0;)Z
+    .locals 6
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TB;",
+            "Lk3/kr0;",
+            ")Z"
+        }
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    .line 1
+    iget v0, p2, Lk3/kr0;->b:I
+
+    ushr-int/lit8 v1, v0, 0x3
+
+    and-int/lit8 v0, v0, 0x7
+
+    const/4 v2, 0x1
+
+    if-eqz v0, :cond_8
+
+    if-eq v0, v2, :cond_7
+
+    const/4 v3, 0x2
+
+    if-eq v0, v3, :cond_6
+
+    const/4 v3, 0x4
+
+    const/4 v4, 0x3
+
+    if-eq v0, v4, :cond_2
+
+    if-eq v0, v3, :cond_1
+
+    const/4 v3, 0x5
+
+    if-ne v0, v3, :cond_0
+
+    .line 2
+    invoke-virtual {p2}, Lk3/kr0;->m()I
+
+    move-result p2
+
+    invoke-virtual {p0, p1, v1, p2}, Lk3/cu0;->o(Ljava/lang/Object;II)V
+
+    return v2
+
+    .line 3
+    :cond_0
+    sget p1, Lcom/google/android/gms/internal/ads/zzegz;->g:I
+
+    .line 4
+    new-instance p1, Lcom/google/android/gms/internal/ads/zzehc;
+
+    invoke-direct {p1}, Lcom/google/android/gms/internal/ads/zzehc;-><init>()V
+
+    .line 5
+    throw p1
+
+    :cond_1
+    const/4 p1, 0x0
+
+    return p1
+
+    .line 6
+    :cond_2
+    invoke-virtual {p0}, Lk3/cu0;->n()Ljava/lang/Object;
 
     move-result-object v0
 
-    return-object v0
-.end method
+    shl-int/lit8 v4, v1, 0x3
 
-.method public final W1(I)Ljava/lang/Object;
-    .locals 1
+    or-int/2addr v3, v4
 
-    iget-object v0, p0, Lk3/cu0;->f:Lk3/is0;
+    .line 7
+    :cond_3
+    invoke-virtual {p2}, Lk3/kr0;->w()I
 
-    invoke-interface {v0, p1}, Lk3/is0;->W1(I)Ljava/lang/Object;
+    move-result v4
+
+    const v5, 0x7fffffff
+
+    if-eq v4, v5, :cond_4
+
+    .line 8
+    invoke-virtual {p0, v0, p2}, Lk3/cu0;->f(Ljava/lang/Object;Lk3/kr0;)Z
+
+    move-result v4
+
+    if-nez v4, :cond_3
+
+    .line 9
+    :cond_4
+    iget p2, p2, Lk3/kr0;->b:I
+
+    if-ne v3, p2, :cond_5
+
+    .line 10
+    invoke-virtual {p0, v0}, Lk3/cu0;->h(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p2
+
+    invoke-virtual {p0, p1, v1, p2}, Lk3/cu0;->c(Ljava/lang/Object;ILjava/lang/Object;)V
+
+    return v2
+
+    .line 11
+    :cond_5
+    invoke-static {}, Lcom/google/android/gms/internal/ads/zzegz;->e()Lcom/google/android/gms/internal/ads/zzegz;
 
     move-result-object p1
 
-    return-object p1
+    throw p1
+
+    .line 12
+    :cond_6
+    invoke-virtual {p2}, Lk3/kr0;->p()Lk3/yq0;
+
+    move-result-object p2
+
+    invoke-virtual {p0, p1, v1, p2}, Lk3/cu0;->d(Ljava/lang/Object;ILk3/yq0;)V
+
+    return v2
+
+    .line 13
+    :cond_7
+    invoke-virtual {p2}, Lk3/kr0;->l()J
+
+    move-result-wide v3
+
+    invoke-virtual {p0, p1, v1, v3, v4}, Lk3/cu0;->m(Ljava/lang/Object;IJ)V
+
+    return v2
+
+    .line 14
+    :cond_8
+    invoke-virtual {p2}, Lk3/kr0;->j()J
+
+    move-result-wide v3
+
+    invoke-virtual {p0, p1, v1, v3, v4}, Lk3/cu0;->b(Ljava/lang/Object;IJ)V
+
+    return v2
 .end method
 
-.method public final g1()Lk3/is0;
-    .locals 0
-
-    return-object p0
+.method public abstract g(Ljava/lang/Object;)V
 .end method
 
-.method public final synthetic get(I)Ljava/lang/Object;
-    .locals 1
-
-    iget-object v0, p0, Lk3/cu0;->f:Lk3/is0;
-
-    invoke-interface {v0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
-
-    move-result-object p1
-
-    check-cast p1, Ljava/lang/String;
-
-    return-object p1
-.end method
-
-.method public final iterator()Ljava/util/Iterator;
-    .locals 1
+.method public abstract h(Ljava/lang/Object;)Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "()",
-            "Ljava/util/Iterator<",
-            "Ljava/lang/String;",
-            ">;"
+            "(TB;)TT;"
+        }
+    .end annotation
+.end method
+
+.method public abstract i(Ljava/lang/Object;)I
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;)I"
+        }
+    .end annotation
+.end method
+
+.method public abstract j(Ljava/lang/Object;)Ljava/lang/Object;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/Object;",
+            ")TT;"
+        }
+    .end annotation
+.end method
+
+.method public abstract k(Ljava/lang/Object;)Ljava/lang/Object;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/Object;",
+            ")TB;"
+        }
+    .end annotation
+.end method
+
+.method public abstract l(Ljava/lang/Object;)I
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;)I"
+        }
+    .end annotation
+.end method
+
+.method public abstract m(Ljava/lang/Object;IJ)V
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TB;IJ)V"
+        }
+    .end annotation
+.end method
+
+.method public abstract n()Ljava/lang/Object;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()TB;"
+        }
+    .end annotation
+.end method
+
+.method public abstract o(Ljava/lang/Object;II)V
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TB;II)V"
+        }
+    .end annotation
+.end method
+
+.method public abstract p(Ljava/lang/Object;Lk3/wu0;)V
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;",
+            "Lk3/wu0;",
+            ")V"
         }
     .end annotation
 
-    new-instance v0, Lk3/eu0;
-
-    invoke-direct {v0, p0}, Lk3/eu0;-><init>(Lk3/cu0;)V
-
-    return-object v0
-.end method
-
-.method public final listIterator(I)Ljava/util/ListIterator;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
+    .annotation system Ldalvik/annotation/Throws;
         value = {
-            "(I)",
-            "Ljava/util/ListIterator<",
-            "Ljava/lang/String;",
-            ">;"
+            Ljava/io/IOException;
         }
     .end annotation
-
-    new-instance v0, Lk3/bu0;
-
-    invoke-direct {v0, p0, p1}, Lk3/bu0;-><init>(Lk3/cu0;I)V
-
-    return-object v0
 .end method
 
-.method public final size()I
-    .locals 1
+.method public abstract q(Ljava/lang/Object;Ljava/lang/Object;)V
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/Object;",
+            "TT;)V"
+        }
+    .end annotation
+.end method
 
-    iget-object v0, p0, Lk3/cu0;->f:Lk3/is0;
+.method public abstract r(Ljava/lang/Object;Ljava/lang/Object;)V
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/Object;",
+            "TB;)V"
+        }
+    .end annotation
+.end method
 
-    invoke-interface {v0}, Ljava/util/List;->size()I
-
-    move-result v0
-
-    return v0
+.method public abstract s(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;TT;)TT;"
+        }
+    .end annotation
 .end method

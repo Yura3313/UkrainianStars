@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field public final synthetic f:Lcom/google/android/material/textfield/TextInputLayout;
+.field public final synthetic g:Lcom/google/android/material/textfield/TextInputLayout;
 
 
 # direct methods
 .method public constructor <init>(Lcom/google/android/material/textfield/TextInputLayout;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout$c;->f:Lcom/google/android/material/textfield/TextInputLayout;
+    iput-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout$c;->g:Lcom/google/android/material/textfield/TextInputLayout;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -37,9 +37,9 @@
 .method public final run()V
     .locals 1
 
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout$c;->f:Lcom/google/android/material/textfield/TextInputLayout;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout$c;->g:Lcom/google/android/material/textfield/TextInputLayout;
 
-    iget-object v0, v0, Lcom/google/android/material/textfield/TextInputLayout;->j:Landroid/widget/EditText;
+    iget-object v0, v0, Lcom/google/android/material/textfield/TextInputLayout;->k:Landroid/widget/EditText;
 
     invoke-virtual {v0}, Landroid/view/View;->requestLayout()V
 

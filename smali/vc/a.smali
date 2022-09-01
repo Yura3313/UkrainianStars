@@ -54,11 +54,11 @@
 
     const-string v0, "seenInGameFriends"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "seenNewGames"
 
-    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -78,7 +78,7 @@
     if-eqz v0, :cond_0
 
     .line 2
-    sget-object p1, Lje/n;->f:Lje/n;
+    sget-object p1, Lje/n;->g:Lje/n;
 
     :cond_0
     and-int/lit8 p3, p3, 0x2
@@ -86,7 +86,7 @@
     if-eqz p3, :cond_1
 
     .line 3
-    sget-object p2, Lje/n;->f:Lje/n;
+    sget-object p2, Lje/n;->g:Lje/n;
 
     :cond_1
     invoke-direct {p0, p1, p2}, Lvc/a;-><init>(Ljava/util/Set;Ljava/util/Set;)V
@@ -115,7 +115,7 @@
 
     move-result v3
 
-    invoke-static {v1, v3}, Lcom/google/android/play/core/appupdate/c;->c(II)Lve/c;
+    invoke-static {v1, v3}, La5/b0;->l(II)Lve/c;
 
     move-result-object v3
 
@@ -155,7 +155,7 @@
     .line 9
     sget-object v6, Lorg/json/JSONObject;->NULL:Ljava/lang/Object;
 
-    invoke-static {v5, v6}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v5, v6}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v6
 
@@ -189,7 +189,7 @@
 
     .line 12
     :cond_4
-    invoke-static {v4}, Lje/j;->U(Ljava/lang/Iterable;)Ljava/util/Set;
+    invoke-static {v4}, Lje/j;->P(Ljava/lang/Iterable;)Ljava/util/Set;
 
     move-result-object v0
 
@@ -197,7 +197,7 @@
 
     .line 13
     :cond_5
-    sget-object v0, Lje/n;->f:Lje/n;
+    sget-object v0, Lje/n;->g:Lje/n;
 
     :goto_2
     const-string v3, "seenNewGames"
@@ -214,7 +214,7 @@
 
     move-result v3
 
-    invoke-static {v1, v3}, Lcom/google/android/play/core/appupdate/c;->c(II)Lve/c;
+    invoke-static {v1, v3}, La5/b0;->l(II)Lve/c;
 
     move-result-object v1
 
@@ -254,7 +254,7 @@
     .line 19
     sget-object v5, Lorg/json/JSONObject;->NULL:Ljava/lang/Object;
 
-    invoke-static {v4, v5}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v4, v5}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v5
 
@@ -288,7 +288,7 @@
 
     .line 22
     :cond_a
-    invoke-static {v3}, Lje/j;->U(Ljava/lang/Iterable;)Ljava/util/Set;
+    invoke-static {v3}, Lje/j;->P(Ljava/lang/Iterable;)Ljava/util/Set;
 
     move-result-object p1
 
@@ -296,7 +296,7 @@
 
     .line 23
     :cond_b
-    sget-object p1, Lje/n;->f:Lje/n;
+    sget-object p1, Lje/n;->g:Lje/n;
 
     .line 24
     :goto_5
@@ -326,11 +326,11 @@
 
     const-string p0, "seenInGameFriends"
 
-    invoke-static {p1, p0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string p0, "seenNewGames"
 
-    invoke-static {p2, p0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, p0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     new-instance p0, Lvc/a;
 
@@ -356,7 +356,7 @@
 
     iget-object v1, p1, Lvc/a;->a:Ljava/util/Set;
 
-    invoke-static {v0, v1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
@@ -366,7 +366,7 @@
 
     iget-object p1, p1, Lvc/a;->b:Ljava/util/Set;
 
-    invoke-static {v0, p1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, p1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 

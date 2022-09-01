@@ -1,5 +1,5 @@
 .class public final Lcom/supercell/id/SupercellId$c;
-.super Lse/h;
+.super Lse/i;
 .source "SupercellId.kt"
 
 # interfaces
@@ -18,32 +18,32 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/l<",
         "Ljava/lang/Exception;",
-        "Lie/h;",
+        "Lie/i;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic f:Ljava/lang/String;
-
 .field public final synthetic g:Ljava/lang/String;
+
+.field public final synthetic h:Ljava/lang/String;
 
 
 # direct methods
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/SupercellId$c;->f:Ljava/lang/String;
+    iput-object p1, p0, Lcom/supercell/id/SupercellId$c;->g:Ljava/lang/String;
 
-    iput-object p2, p0, Lcom/supercell/id/SupercellId$c;->g:Ljava/lang/String;
+    iput-object p2, p0, Lcom/supercell/id/SupercellId$c;->h:Ljava/lang/String;
 
     const/4 p1, 0x1
 
-    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -59,10 +59,10 @@
     const-string v0, "it"
 
     .line 2
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 3
-    iget-object v0, p0, Lcom/supercell/id/SupercellId$c;->f:Ljava/lang/String;
+    iget-object v0, p0, Lcom/supercell/id/SupercellId$c;->g:Ljava/lang/String;
 
     sget-object v1, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
 
@@ -88,14 +88,14 @@
     move-object v2, v3
 
     :goto_0
-    invoke-static {v0, v2}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v2}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
     .line 6
-    sget-object v0, Lcom/supercell/id/util/NormalizedError;->l:Lcom/supercell/id/util/NormalizedError$b;
+    sget-object v0, Lcom/supercell/id/util/NormalizedError;->m:Lcom/supercell/id/util/NormalizedError$b;
 
     invoke-virtual {v0, p1}, Lcom/supercell/id/util/NormalizedError$b;->a(Ljava/lang/Exception;)Lcom/supercell/id/util/NormalizedError;
 
@@ -108,17 +108,17 @@
 
     if-eqz v0, :cond_1
 
-    iget-object v1, p0, Lcom/supercell/id/SupercellId$c;->g:Ljava/lang/String;
+    iget-object v1, p0, Lcom/supercell/id/SupercellId$c;->h:Ljava/lang/String;
 
     .line 8
-    iget-object p1, p1, Lcom/supercell/id/util/NormalizedError;->j:Ljava/lang/String;
+    iget-object p1, p1, Lcom/supercell/id/util/NormalizedError;->k:Ljava/lang/String;
 
     .line 9
     invoke-interface {v0, v1, v3, p1}, Lcom/supercell/id/SupercellIdDelegate;->claimShopItemResult(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     .line 10
     :cond_1
-    sget-object p1, Lie/h;->a:Lie/h;
+    sget-object p1, Lie/i;->a:Lie/i;
 
     return-object p1
 .end method

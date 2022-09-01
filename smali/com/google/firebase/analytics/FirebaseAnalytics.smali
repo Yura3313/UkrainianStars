@@ -113,7 +113,7 @@
     .end annotation
 
     .line 1
-    invoke-static {}, Lk3/c9;->a()Z
+    invoke-static {}, Lcom/helpshift/util/a0;->c()Z
 
     move-result v0
 
@@ -127,7 +127,7 @@
     move-result-object p1
 
     .line 3
-    iget-object p1, p1, Lz3/o;->i:Lz3/q;
+    iget-object p1, p1, Lz3/o;->o:Lz3/q;
 
     const-string p2, "setCurrentScreen must be called from the main thread"
 
@@ -140,11 +140,11 @@
     :cond_0
     iget-object v0, p0, Lcom/google/firebase/analytics/FirebaseAnalytics;->a:Lz3/p0;
 
-    invoke-virtual {v0}, Lz3/p0;->o()Lz3/u1;
+    invoke-virtual {v0}, Lz3/p0;->o()Lz3/v1;
 
     move-result-object v0
 
-    invoke-virtual {v0, p1, p2, p3}, Lz3/u1;->m(Landroid/app/Activity;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v0, p1, p2, p3}, Lz3/v1;->m(Landroid/app/Activity;Ljava/lang/String;Ljava/lang/String;)V
 
     return-void
 .end method

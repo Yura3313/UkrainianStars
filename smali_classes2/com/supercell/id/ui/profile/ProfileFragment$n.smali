@@ -1,5 +1,5 @@
 .class public final Lcom/supercell/id/ui/profile/ProfileFragment$n;
-.super Lse/h;
+.super Lse/i;
 .source "ProfileFragment.kt"
 
 # interfaces
@@ -18,28 +18,28 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/l<",
         "Lcom/supercell/id/view/MyAvatarView;",
-        "Lie/h;",
+        "Lie/i;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic f:Lcom/supercell/id/ui/profile/ProfileFragment;
+.field public final synthetic g:Lcom/supercell/id/ui/profile/ProfileFragment;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/id/ui/profile/ProfileFragment;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/ui/profile/ProfileFragment$n;->f:Lcom/supercell/id/ui/profile/ProfileFragment;
+    iput-object p1, p0, Lcom/supercell/id/ui/profile/ProfileFragment$n;->g:Lcom/supercell/id/ui/profile/ProfileFragment;
 
     const/4 p1, 0x1
 
-    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -55,10 +55,10 @@
     const-string v0, "imageView"
 
     .line 2
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 3
-    iget-object v0, p0, Lcom/supercell/id/ui/profile/ProfileFragment$n;->f:Lcom/supercell/id/ui/profile/ProfileFragment;
+    iget-object v0, p0, Lcom/supercell/id/ui/profile/ProfileFragment$n;->g:Lcom/supercell/id/ui/profile/ProfileFragment;
 
     sget v1, Lcom/supercell/id/R$id;->online_status_indicator:I
 
@@ -70,11 +70,11 @@
 
     if-eqz v0, :cond_0
 
-    invoke-static {v0, p1}, Lae/w;->d(Landroid/view/View;Landroid/view/View;)V
+    invoke-static {v0, p1}, Lae/v;->j(Landroid/view/View;Landroid/view/View;)V
 
     .line 4
     :cond_0
-    sget-object p1, Lie/h;->a:Lie/h;
+    sget-object p1, Lie/i;->a:Lie/i;
 
     return-object p1
 .end method

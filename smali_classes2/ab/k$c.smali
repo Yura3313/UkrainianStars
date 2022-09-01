@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field public final synthetic f:Lab/k;
+.field public final synthetic g:Lab/k;
 
 
 # direct methods
 .method public constructor <init>(Lab/k;)V
     .locals 0
 
-    iput-object p1, p0, Lab/k$c;->f:Lab/k;
+    iput-object p1, p0, Lab/k$c;->g:Lab/k;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -38,10 +38,10 @@
     .locals 2
 
     .line 1
-    iget-object p1, p0, Lab/k$c;->f:Lab/k;
+    iget-object p1, p0, Lab/k$c;->g:Lab/k;
 
     .line 2
-    iget-object p1, p1, Landroidx/fragment/app/Fragment;->A:Landroidx/fragment/app/Fragment;
+    iget-object p1, p1, Landroidx/fragment/app/Fragment;->B:Landroidx/fragment/app/Fragment;
 
     .line 3
     check-cast p1, Loa/c;
@@ -51,9 +51,9 @@
     move-result-object p1
 
     .line 4
-    iget-object v0, p0, Lab/k$c;->f:Lab/k;
+    iget-object v0, p0, Lab/k$c;->g:Lab/k;
 
-    iget-object v0, v0, Lab/k;->j0:Ljava/lang/String;
+    iget-object v0, v0, Lab/k;->k0:Ljava/lang/String;
 
     check-cast p1, Lpa/a;
 
@@ -71,13 +71,13 @@
     check-cast p1, Lab/e;
 
     .line 8
-    iget-object p1, p1, Landroidx/fragment/app/Fragment;->A:Landroidx/fragment/app/Fragment;
+    iget-object p1, p1, Landroidx/fragment/app/Fragment;->B:Landroidx/fragment/app/Fragment;
 
     .line 9
     check-cast p1, Lab/p;
 
     .line 10
-    iget-object p1, p1, Lab/p;->j0:Lpa/b;
+    iget-object p1, p1, Lab/p;->k0:Lpa/b;
 
     .line 11
     invoke-virtual {p1, v0}, Lpa/b;->d(Ljava/lang/String;)V

@@ -1,6 +1,6 @@
 .class public final Lra/f0$a;
 .super Landroidx/recyclerview/widget/RecyclerView$z;
-.source "SystemDateMessageDataBinder.java"
+.source "SystemDividerMessageDataBinder.java"
 
 
 # annotations
@@ -15,7 +15,9 @@
 
 
 # instance fields
-.field public final y:Landroid/widget/TextView;
+.field public A:Landroid/view/View;
+
+.field public z:Landroid/widget/TextView;
 
 
 # direct methods
@@ -26,7 +28,16 @@
     invoke-direct {p0, p1}, Landroidx/recyclerview/widget/RecyclerView$z;-><init>(Landroid/view/View;)V
 
     .line 2
-    sget v0, Lcom/helpshift/R$id;->system_message:I
+    sget v0, Lcom/helpshift/R$id;->conversations_divider:I
+
+    invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lra/f0$a;->A:Landroid/view/View;
+
+    .line 3
+    sget v0, Lcom/helpshift/R$id;->conversation_closed_view:I
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -34,7 +45,7 @@
 
     check-cast p1, Landroid/widget/TextView;
 
-    iput-object p1, p0, Lra/f0$a;->y:Landroid/widget/TextView;
+    iput-object p1, p0, Lra/f0$a;->z:Landroid/widget/TextView;
 
     return-void
 .end method

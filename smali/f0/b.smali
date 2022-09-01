@@ -102,12 +102,12 @@
     if-eqz p1, :cond_0
 
     .line 3
-    iget-object p1, v0, Landroidx/appcompat/view/menu/a;->j:Landroidx/appcompat/view/menu/i$a;
+    iget-object p1, v0, Landroidx/appcompat/view/menu/a;->k:Landroidx/appcompat/view/menu/i$a;
 
     if-eqz p1, :cond_1
 
     .line 4
-    iget-object v0, v0, Landroidx/appcompat/view/menu/a;->h:Landroidx/appcompat/view/menu/e;
+    iget-object v0, v0, Landroidx/appcompat/view/menu/a;->i:Landroidx/appcompat/view/menu/e;
 
     invoke-interface {p1, v0}, Landroidx/appcompat/view/menu/i$a;->c(Landroidx/appcompat/view/menu/e;)Z
 
@@ -115,7 +115,7 @@
 
     .line 5
     :cond_0
-    iget-object p1, v0, Landroidx/appcompat/view/menu/a;->h:Landroidx/appcompat/view/menu/e;
+    iget-object p1, v0, Landroidx/appcompat/view/menu/a;->i:Landroidx/appcompat/view/menu/e;
 
     if-eqz p1, :cond_1
 

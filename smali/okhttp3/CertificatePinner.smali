@@ -357,7 +357,7 @@
     const-string v3, "\n  Peer certificate chain:"
 
     .line 18
-    invoke-static {v1, v3}, Lo/g;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v1, v3}, Lcom/supercell/titan/a;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
 

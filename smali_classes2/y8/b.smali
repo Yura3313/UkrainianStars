@@ -10,7 +10,7 @@
             "(",
             "Lq8/d;",
             "Ljava/util/List<",
-            "Lo8/y;",
+            "Lo8/z;",
             ">;)V"
         }
     .end annotation
@@ -24,10 +24,10 @@
         value = {
             "(",
             "Ljava/util/List<",
-            "Lo8/y;",
+            "Lo8/z;",
             ">;",
             "Ljava/util/List<",
-            "Lo8/y;",
+            "Lo8/z;",
             ">;)V"
         }
     .end annotation

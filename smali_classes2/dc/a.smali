@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field public final j:Ljava/util/Map;
+.field public final k:Ljava/util/Map;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Map<",
@@ -38,7 +38,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Ldc/a;->j:Ljava/util/Map;
+    iput-object v0, p0, Ldc/a;->k:Ljava/util/Map;
 
     return-void
 .end method
@@ -49,12 +49,12 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Ldc/a;->j:Ljava/util/Map;
+    iget-object v0, p0, Ldc/a;->k:Ljava/util/Map;
 
     invoke-interface {v0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 2
-    iget-object v0, p0, Lcc/a;->f:Ljava/util/Map;
+    iget-object v0, p0, Lcc/a;->g:Ljava/util/Map;
 
     invoke-interface {v0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -96,7 +96,7 @@
     return p1
 .end method
 
-.method public final e(Ljava/lang/String;Landroid/graphics/Bitmap;)Z
+.method public final d(Ljava/lang/String;Landroid/graphics/Bitmap;)Z
     .locals 8
 
     .line 1
@@ -105,10 +105,10 @@
     move-result v0
 
     .line 2
-    iget v1, p0, Lcc/a;->g:I
+    iget v1, p0, Lcc/a;->h:I
 
     .line 3
-    iget-object v2, p0, Lcc/a;->h:Ljava/util/concurrent/atomic/AtomicInteger;
+    iget-object v2, p0, Lcc/a;->i:Ljava/util/concurrent/atomic/AtomicInteger;
 
     invoke-virtual {v2}, Ljava/util/concurrent/atomic/AtomicInteger;->get()I
 
@@ -127,13 +127,13 @@
     if-le v5, v1, :cond_2
 
     .line 4
-    iget-object v5, p0, Ldc/a;->j:Ljava/util/Map;
+    iget-object v5, p0, Ldc/a;->k:Ljava/util/Map;
 
     monitor-enter v5
 
     .line 5
     :try_start_0
-    iget-object v6, p0, Ldc/a;->j:Ljava/util/Map;
+    iget-object v6, p0, Ldc/a;->k:Ljava/util/Map;
 
     invoke-interface {v6}, Ljava/util/Map;->entrySet()Ljava/util/Set;
 
@@ -179,7 +179,7 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 11
-    iget-object v5, p0, Lcc/a;->i:Ljava/util/List;
+    iget-object v5, p0, Lcc/a;->j:Ljava/util/List;
 
     invoke-interface {v5, v7}, Ljava/util/List;->remove(Ljava/lang/Object;)Z
 
@@ -188,7 +188,7 @@
     if-eqz v5, :cond_0
 
     .line 12
-    iget-object v2, p0, Lcc/a;->h:Ljava/util/concurrent/atomic/AtomicInteger;
+    iget-object v2, p0, Lcc/a;->i:Ljava/util/concurrent/atomic/AtomicInteger;
 
     invoke-virtual {p0, v7}, Ldc/a;->b(Landroid/graphics/Bitmap;)I
 
@@ -215,12 +215,12 @@
 
     .line 14
     :cond_2
-    iget-object v1, p0, Lcc/a;->i:Ljava/util/List;
+    iget-object v1, p0, Lcc/a;->j:Ljava/util/List;
 
     invoke-interface {v1, p2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     .line 15
-    iget-object v1, p0, Lcc/a;->h:Ljava/util/concurrent/atomic/AtomicInteger;
+    iget-object v1, p0, Lcc/a;->i:Ljava/util/concurrent/atomic/AtomicInteger;
 
     invoke-virtual {v1, v0}, Ljava/util/concurrent/atomic/AtomicInteger;->addAndGet(I)I
 
@@ -233,7 +233,7 @@
 
     .line 16
     :goto_2
-    iget-object v1, p0, Lcc/a;->f:Ljava/util/Map;
+    iget-object v1, p0, Lcc/a;->g:Ljava/util/Map;
 
     .line 17
     new-instance v2, Ljava/lang/ref/WeakReference;
@@ -246,7 +246,7 @@
     if-eqz v0, :cond_4
 
     .line 19
-    iget-object v0, p0, Ldc/a;->j:Ljava/util/Map;
+    iget-object v0, p0, Ldc/a;->k:Ljava/util/Map;
 
     invoke-interface {v0, p1, p2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -260,12 +260,12 @@
     .locals 3
 
     .line 1
-    iget-object v0, p0, Ldc/a;->j:Ljava/util/Map;
+    iget-object v0, p0, Ldc/a;->k:Ljava/util/Map;
 
     invoke-interface {v0, p1}, Ljava/util/Map;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 2
-    iget-object v0, p0, Lcc/a;->f:Ljava/util/Map;
+    iget-object v0, p0, Lcc/a;->g:Ljava/util/Map;
 
     invoke-interface {v0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -293,7 +293,7 @@
     if-eqz v0, :cond_1
 
     .line 4
-    iget-object v2, p0, Lcc/a;->i:Ljava/util/List;
+    iget-object v2, p0, Lcc/a;->j:Ljava/util/List;
 
     invoke-interface {v2, v0}, Ljava/util/List;->remove(Ljava/lang/Object;)Z
 
@@ -302,7 +302,7 @@
     if-eqz v2, :cond_1
 
     .line 5
-    iget-object v2, p0, Lcc/a;->h:Ljava/util/concurrent/atomic/AtomicInteger;
+    iget-object v2, p0, Lcc/a;->i:Ljava/util/concurrent/atomic/AtomicInteger;
 
     invoke-virtual {p0, v0}, Ldc/a;->b(Landroid/graphics/Bitmap;)I
 
@@ -314,7 +314,7 @@
 
     .line 6
     :cond_1
-    iget-object v0, p0, Lcc/a;->f:Ljava/util/Map;
+    iget-object v0, p0, Lcc/a;->g:Ljava/util/Map;
 
     invoke-interface {v0, p1}, Ljava/util/Map;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 

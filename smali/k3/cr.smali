@@ -1,43 +1,36 @@
 .class public final Lk3/cr;
-.super Lk3/vs;
+.super Lk3/ts;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lk3/yq;
+.implements Lk3/xq;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lk3/vs<",
-        "Lk3/yq;",
+        "Lk3/ts<",
+        "Lk3/dr;",
         ">;",
-        "Lk3/yq;"
+        "Lk3/xq;"
     }
 .end annotation
 
 
 # direct methods
-.method public constructor <init>(Lk3/er;Ljava/util/Set;Ljava/util/concurrent/Executor;)V
+.method public constructor <init>(Ljava/util/Set;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lk3/er;",
             "Ljava/util/Set<",
-            "Lk3/rt<",
-            "Lk3/yq;",
-            ">;>;",
-            "Ljava/util/concurrent/Executor;",
-            ")V"
+            "Lk3/qt<",
+            "Lk3/dr;",
+            ">;>;)V"
         }
     .end annotation
 
-    .line 1
-    invoke-direct {p0, p2}, Lk3/vs;-><init>(Ljava/util/Set;)V
-
-    .line 2
-    invoke-virtual {p0, p1, p3}, Lk3/vs;->E0(Ljava/lang/Object;Ljava/util/concurrent/Executor;)V
+    invoke-direct {p0, p1}, Lk3/ts;-><init>(Ljava/util/Set;)V
 
     return-void
 .end method
@@ -45,15 +38,7 @@
 
 # virtual methods
 .method public final L(Lcom/google/android/gms/internal/ads/zzcbc;)V
-    .locals 2
-
-    new-instance v0, Lk3/dr;
-
-    const/4 v1, 0x0
-
-    invoke-direct {v0, p1, v1}, Lk3/dr;-><init>(Ljava/lang/Object;I)V
-
-    invoke-virtual {p0, v0}, Lk3/vs;->F0(Lk3/xs;)V
+    .locals 0
 
     return-void
 .end method
@@ -61,23 +46,21 @@
 .method public final i()V
     .locals 1
 
-    sget-object v0, Lk3/ep0;->f:Lk3/ep0;
+    sget-object v0, Lcom/helpshift/util/x;->g:Lcom/helpshift/util/x;
 
-    invoke-virtual {p0, v0}, Lk3/vs;->F0(Lk3/xs;)V
+    invoke-virtual {p0, v0}, Lk3/ts;->F0(Lk3/vs;)V
 
     return-void
 .end method
 
 .method public final m0(Lcom/google/android/gms/internal/ads/zzuw;)V
-    .locals 2
+    .locals 1
 
-    new-instance v0, Lk3/br;
+    new-instance v0, Lk3/ny0;
 
-    const/4 v1, 0x0
+    invoke-direct {v0, p1}, Lk3/ny0;-><init>(Ljava/lang/Object;)V
 
-    invoke-direct {v0, p1, v1}, Lk3/br;-><init>(Ljava/lang/Object;I)V
-
-    invoke-virtual {p0, v0}, Lk3/vs;->F0(Lk3/xs;)V
+    invoke-virtual {p0, v0}, Lk3/ts;->F0(Lk3/vs;)V
 
     return-void
 .end method

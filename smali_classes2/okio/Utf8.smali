@@ -154,7 +154,7 @@
     const-string v1, " > "
 
     .line 6
-    invoke-static {v0, p2, v1}, Lcom/supercell/titan/a;->a(Ljava/lang/String;ILjava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v0, p2, v1}, La2/i;->b(Ljava/lang/String;ILjava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object p2
 

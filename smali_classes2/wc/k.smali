@@ -4,16 +4,16 @@
 
 
 # instance fields
-.field public f:Z
+.field public g:Z
 
-.field public final synthetic g:Lwc/m;
+.field public final synthetic h:Lwc/m;
 
 
 # direct methods
 .method public constructor <init>(Lwc/m;)V
     .locals 0
 
-    iput-object p1, p0, Lwc/k;->g:Lwc/m;
+    iput-object p1, p0, Lwc/k;->h:Lwc/m;
 
     invoke-direct {p0}, Landroid/animation/AnimatorListenerAdapter;-><init>()V
 
@@ -27,7 +27,7 @@
 
     const/4 p1, 0x1
 
-    iput-boolean p1, p0, Lwc/k;->f:Z
+    iput-boolean p1, p0, Lwc/k;->g:Z
 
     return-void
 .end method
@@ -36,16 +36,16 @@
     .locals 1
 
     .line 1
-    iget-boolean p1, p0, Lwc/k;->f:Z
+    iget-boolean p1, p0, Lwc/k;->g:Z
 
     if-nez p1, :cond_1
 
     .line 2
-    iget-object p1, p0, Lwc/k;->g:Lwc/m;
+    iget-object p1, p0, Lwc/k;->h:Lwc/m;
 
-    iget-object p1, p1, Lwc/m;->g:Lcom/supercell/id/ui/BaseFragment;
+    iget-object p1, p1, Lwc/m;->h:Lcom/supercell/id/ui/BaseFragment;
 
-    invoke-static {p1}, Lcom/android/billingclient/api/c0;->e(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
+    invoke-static {p1}, Lcom/android/billingclient/api/b0;->f(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
 
     move-result-object p1
 
@@ -70,9 +70,9 @@
     if-lt p1, v0, :cond_1
 
     .line 4
-    iget-object p1, p0, Lwc/k;->g:Lwc/m;
+    iget-object p1, p0, Lwc/k;->h:Lwc/m;
 
-    iget-object p1, p1, Lwc/m;->f:Landroid/view/View;
+    iget-object p1, p1, Lwc/m;->g:Landroid/view/View;
 
     const/4 v0, 0x0
 

@@ -29,7 +29,7 @@
     .locals 3
 
     .line 1
-    sget-object v0, Lcom/supercell/id/ui/MainActivity;->s:Ljava/lang/ref/WeakReference;
+    sget-object v0, Lcom/supercell/id/ui/MainActivity;->t:Ljava/lang/ref/WeakReference;
 
     const/4 v1, 0x0
 

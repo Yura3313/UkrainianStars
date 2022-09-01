@@ -10,14 +10,14 @@
     value = {
         "Ljava/lang/Object;",
         "La5/u0<",
-        "Ljava/lang/String;",
+        "Le5/l;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final f:La5/u0;
+.field public final g:La5/u0;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "La5/u0<",
@@ -42,7 +42,7 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lcom/google/android/play/core/assetpacks/s2;->f:La5/u0;
+    iput-object p1, p0, Lcom/google/android/play/core/assetpacks/s2;->g:La5/u0;
 
     return-void
 .end method
@@ -50,19 +50,21 @@
 
 # virtual methods
 .method public final bridge synthetic e()Ljava/lang/Object;
-    .locals 1
+    .locals 2
 
-    iget-object v0, p0, Lcom/google/android/play/core/assetpacks/s2;->f:La5/u0;
+    iget-object v0, p0, Lcom/google/android/play/core/assetpacks/s2;->g:La5/u0;
 
-    check-cast v0, Lcom/google/android/play/core/assetpacks/r2;
+    check-cast v0, Lcom/google/android/play/core/assetpacks/q2;
 
-    invoke-virtual {v0}, Lcom/google/android/play/core/assetpacks/r2;->a()Landroid/content/Context;
-
-    move-result-object v0
-
-    invoke-static {v0}, Lcom/google/android/play/core/assetpacks/n2;->a(Landroid/content/Context;)Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/google/android/play/core/assetpacks/q2;->a()Landroid/content/Context;
 
     move-result-object v0
 
-    return-object v0
+    new-instance v1, Le5/l;
+
+    invoke-virtual {v0}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
+
+    invoke-direct {v1}, Le5/l;-><init>()V
+
+    return-object v1
 .end method

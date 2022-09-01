@@ -12,31 +12,31 @@
 
 
 # instance fields
-.field public final f:Lze/p;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lze/o<",
-            "Lie/h;",
-            ">;"
-        }
-    .end annotation
-.end field
-
 .field public final g:Lze/p;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lze/o<",
-            "Lie/h;",
+            "Lie/i;",
             ">;"
         }
     .end annotation
 .end field
 
-.field public h:Landroid/graphics/Rect;
+.field public final h:Lze/p;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lze/o<",
+            "Lie/i;",
+            ">;"
+        }
+    .end annotation
+.end field
 
 .field public i:Landroid/graphics/Rect;
 
-.field public final j:Lpd/t$e;
+.field public j:Landroid/graphics/Rect;
+
+.field public final k:Lpd/t$e;
 
 
 # direct methods
@@ -45,26 +45,17 @@
 
     const-string v0, "context"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "game"
 
-    invoke-static {p3, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p3, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     invoke-direct {p0, p1}, Landroid/opengl/GLSurfaceView;-><init>(Landroid/content/Context;)V
 
     .line 2
-    invoke-static {}, Lbf/g;->c()Lze/o;
-
-    move-result-object p1
-
-    check-cast p1, Lze/p;
-
-    iput-object p1, p0, Lpd/t;->f:Lze/p;
-
-    .line 3
-    invoke-static {}, Lbf/g;->c()Lze/o;
+    invoke-static {}, Landroidx/lifecycle/b0;->b()Lze/o;
 
     move-result-object p1
 
@@ -72,19 +63,28 @@
 
     iput-object p1, p0, Lpd/t;->g:Lze/p;
 
+    .line 3
+    invoke-static {}, Landroidx/lifecycle/b0;->b()Lze/o;
+
+    move-result-object p1
+
+    check-cast p1, Lze/p;
+
+    iput-object p1, p0, Lpd/t;->h:Lze/p;
+
     .line 4
     new-instance p1, Landroid/graphics/Rect;
 
     invoke-direct {p1}, Landroid/graphics/Rect;-><init>()V
 
-    iput-object p1, p0, Lpd/t;->h:Landroid/graphics/Rect;
+    iput-object p1, p0, Lpd/t;->i:Landroid/graphics/Rect;
 
     .line 5
     new-instance p1, Landroid/graphics/Rect;
 
     invoke-direct {p1}, Landroid/graphics/Rect;-><init>()V
 
-    iput-object p1, p0, Lpd/t;->i:Landroid/graphics/Rect;
+    iput-object p1, p0, Lpd/t;->j:Landroid/graphics/Rect;
 
     .line 6
     new-instance p1, Lpd/t$e;
@@ -94,14 +94,14 @@
     const-string v1, ".png"
 
     .line 7
-    invoke-static {v0, p3, v1}, Landroid/support/v4/media/f;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, p3, v1}, Landroid/support/v4/media/f;->b(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p3
 
     .line 8
     invoke-direct {p1, p2, p3}, Lpd/t$e;-><init>(Landroid/media/MediaPlayer;Ljava/lang/String;)V
 
-    iput-object p1, p0, Lpd/t;->j:Lpd/t$e;
+    iput-object p1, p0, Lpd/t;->k:Lpd/t$e;
 
     .line 9
     new-instance p3, Lpd/t$a;
@@ -119,7 +119,7 @@
     invoke-direct {p3, p0}, Lpd/t$b;-><init>(Lpd/t;)V
 
     .line 12
-    iput-object p3, p2, Lpd/t$e$c;->x:Lre/a;
+    iput-object p3, p2, Lpd/t$e$c;->y:Lre/a;
 
     .line 13
     new-instance p2, Lpd/t$c;
@@ -195,6 +195,108 @@
     move-result-object v0
 
     .line 2
+    iget-object v1, p0, Lpd/t;->j:Landroid/graphics/Rect;
+
+    iget v2, v1, Landroid/graphics/Rect;->left:I
+
+    iget v3, v0, Landroid/graphics/Rect;->left:I
+
+    sub-int/2addr v2, v3
+
+    .line 3
+    iget v3, v1, Landroid/graphics/Rect;->top:I
+
+    iget v0, v0, Landroid/graphics/Rect;->top:I
+
+    sub-int/2addr v3, v0
+
+    .line 4
+    invoke-virtual {v1}, Landroid/graphics/Rect;->width()I
+
+    move-result v0
+
+    add-int/2addr v0, v2
+
+    .line 5
+    iget-object v1, p0, Lpd/t;->j:Landroid/graphics/Rect;
+
+    invoke-virtual {v1}, Landroid/graphics/Rect;->height()I
+
+    move-result v1
+
+    add-int/2addr v1, v3
+
+    .line 6
+    iget-object v4, p0, Lpd/t;->k:Lpd/t$e;
+
+    new-instance v5, Landroid/graphics/RectF;
+
+    int-to-float v2, v2
+
+    int-to-float p1, p1
+
+    div-float/2addr v2, p1
+
+    int-to-float v3, v3
+
+    int-to-float p2, p2
+
+    div-float/2addr v3, p2
+
+    int-to-float v0, v0
+
+    div-float/2addr v0, p1
+
+    int-to-float p1, v1
+
+    div-float/2addr p1, p2
+
+    invoke-direct {v5, v2, v3, v0, p1}, Landroid/graphics/RectF;-><init>(FFFF)V
+
+    .line 7
+    iget-object p1, p0, Lpd/t;->j:Landroid/graphics/Rect;
+
+    invoke-static {p1}, Landroid/support/v4/media/a;->a(Ljava/lang/Object;)V
+
+    invoke-virtual {v5}, Ljava/lang/Object;->toString()Ljava/lang/String;
+
+    .line 8
+    invoke-virtual {v4}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 9
+    iget-object p1, v4, Lpd/t$e;->i:Landroid/graphics/RectF;
+
+    invoke-static {p1, v5}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result p1
+
+    xor-int/lit8 p1, p1, 0x1
+
+    if-eqz p1, :cond_0
+
+    .line 10
+    iput-object v5, v4, Lpd/t$e;->i:Landroid/graphics/RectF;
+
+    .line 11
+    invoke-virtual {v4}, Lpd/t$e;->a()V
+
+    :cond_0
+    return-void
+.end method
+
+.method public final b(II)V
+    .locals 6
+
+    if-lez p1, :cond_0
+
+    if-lez p2, :cond_0
+
+    .line 1
+    invoke-static {p0}, Lae/z2;->b(Landroid/view/View;)Landroid/graphics/Rect;
+
+    move-result-object v0
+
+    .line 2
     iget-object v1, p0, Lpd/t;->i:Landroid/graphics/Rect;
 
     iget v2, v1, Landroid/graphics/Rect;->left:I
@@ -227,7 +329,7 @@
     add-int/2addr v1, v3
 
     .line 6
-    iget-object v4, p0, Lpd/t;->j:Lpd/t$e;
+    iget-object v4, p0, Lpd/t;->k:Lpd/t$e;
 
     new-instance v5, Landroid/graphics/RectF;
 
@@ -264,111 +366,9 @@
     invoke-virtual {v4}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 9
-    iget-object p1, v4, Lpd/t$e;->i:Landroid/graphics/RectF;
-
-    invoke-static {p1, v5}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result p1
-
-    xor-int/lit8 p1, p1, 0x1
-
-    if-eqz p1, :cond_0
-
-    .line 10
-    iput-object v5, v4, Lpd/t$e;->i:Landroid/graphics/RectF;
-
-    .line 11
-    invoke-virtual {v4}, Lpd/t$e;->a()V
-
-    :cond_0
-    return-void
-.end method
-
-.method public final b(II)V
-    .locals 6
-
-    if-lez p1, :cond_0
-
-    if-lez p2, :cond_0
-
-    .line 1
-    invoke-static {p0}, Lae/z2;->b(Landroid/view/View;)Landroid/graphics/Rect;
-
-    move-result-object v0
-
-    .line 2
-    iget-object v1, p0, Lpd/t;->h:Landroid/graphics/Rect;
-
-    iget v2, v1, Landroid/graphics/Rect;->left:I
-
-    iget v3, v0, Landroid/graphics/Rect;->left:I
-
-    sub-int/2addr v2, v3
-
-    .line 3
-    iget v3, v1, Landroid/graphics/Rect;->top:I
-
-    iget v0, v0, Landroid/graphics/Rect;->top:I
-
-    sub-int/2addr v3, v0
-
-    .line 4
-    invoke-virtual {v1}, Landroid/graphics/Rect;->width()I
-
-    move-result v0
-
-    add-int/2addr v0, v2
-
-    .line 5
-    iget-object v1, p0, Lpd/t;->h:Landroid/graphics/Rect;
-
-    invoke-virtual {v1}, Landroid/graphics/Rect;->height()I
-
-    move-result v1
-
-    add-int/2addr v1, v3
-
-    .line 6
-    iget-object v4, p0, Lpd/t;->j:Lpd/t$e;
-
-    new-instance v5, Landroid/graphics/RectF;
-
-    int-to-float v2, v2
-
-    int-to-float p1, p1
-
-    div-float/2addr v2, p1
-
-    int-to-float v3, v3
-
-    int-to-float p2, p2
-
-    div-float/2addr v3, p2
-
-    int-to-float v0, v0
-
-    div-float/2addr v0, p1
-
-    int-to-float p1, v1
-
-    div-float/2addr p1, p2
-
-    invoke-direct {v5, v2, v3, v0, p1}, Landroid/graphics/RectF;-><init>(FFFF)V
-
-    .line 7
-    iget-object p1, p0, Lpd/t;->h:Landroid/graphics/Rect;
-
-    invoke-static {p1}, Landroid/support/v4/media/a;->a(Ljava/lang/Object;)V
-
-    invoke-virtual {v5}, Ljava/lang/Object;->toString()Ljava/lang/String;
-
-    .line 8
-    invoke-virtual {v4}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 9
     iget-object p1, v4, Lpd/t$e;->h:Landroid/graphics/RectF;
 
-    invoke-static {p1, v5}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {p1, v5}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -392,12 +392,12 @@
         value = {
             "()",
             "Lze/o<",
-            "Lie/h;",
+            "Lie/i;",
             ">;"
         }
     .end annotation
 
-    iget-object v0, p0, Lpd/t;->g:Lze/p;
+    iget-object v0, p0, Lpd/t;->h:Lze/p;
 
     return-object v0
 .end method
@@ -405,7 +405,7 @@
 .method public final getGameLogoFrameOnScreen()Landroid/graphics/Rect;
     .locals 1
 
-    iget-object v0, p0, Lpd/t;->i:Landroid/graphics/Rect;
+    iget-object v0, p0, Lpd/t;->j:Landroid/graphics/Rect;
 
     return-object v0
 .end method
@@ -413,7 +413,7 @@
 .method public final getIdLogoFrameOnScreen()Landroid/graphics/Rect;
     .locals 1
 
-    iget-object v0, p0, Lpd/t;->h:Landroid/graphics/Rect;
+    iget-object v0, p0, Lpd/t;->i:Landroid/graphics/Rect;
 
     return-object v0
 .end method
@@ -424,12 +424,12 @@
         value = {
             "()",
             "Lze/o<",
-            "Lie/h;",
+            "Lie/i;",
             ">;"
         }
     .end annotation
 
-    iget-object v0, p0, Lpd/t;->f:Lze/p;
+    iget-object v0, p0, Lpd/t;->g:Lze/p;
 
     return-object v0
 .end method
@@ -454,12 +454,12 @@
 
     const-string v0, "value"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
-    iget-object v0, p0, Lpd/t;->i:Landroid/graphics/Rect;
+    iget-object v0, p0, Lpd/t;->j:Landroid/graphics/Rect;
 
-    invoke-static {v0, p1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, p1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
@@ -468,7 +468,7 @@
     if-eqz v0, :cond_0
 
     .line 2
-    iput-object p1, p0, Lpd/t;->i:Landroid/graphics/Rect;
+    iput-object p1, p0, Lpd/t;->j:Landroid/graphics/Rect;
 
     .line 3
     invoke-virtual {p0}, Landroid/view/View;->getWidth()I
@@ -490,12 +490,12 @@
 
     const-string v0, "value"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
-    iget-object v0, p0, Lpd/t;->h:Landroid/graphics/Rect;
+    iget-object v0, p0, Lpd/t;->i:Landroid/graphics/Rect;
 
-    invoke-static {v0, p1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, p1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
@@ -504,7 +504,7 @@
     if-eqz v0, :cond_0
 
     .line 2
-    iput-object p1, p0, Lpd/t;->h:Landroid/graphics/Rect;
+    iput-object p1, p0, Lpd/t;->i:Landroid/graphics/Rect;
 
     .line 3
     invoke-virtual {p0}, Landroid/view/View;->getWidth()I

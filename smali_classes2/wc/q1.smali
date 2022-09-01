@@ -1,78 +1,54 @@
 .class public final Lwc/q1;
-.super Ljava/lang/Object;
+.super Landroid/app/Dialog;
 .source "RegionListDialogFragment.kt"
-
-# interfaces
-.implements Landroid/content/DialogInterface$OnShowListener;
 
 
 # instance fields
-.field public final synthetic f:Lcom/google/android/material/bottomsheet/a;
+.field public final synthetic g:Lwc/o1;
 
 
 # direct methods
-.method public constructor <init>(Lcom/google/android/material/bottomsheet/a;)V
+.method public constructor <init>(Lwc/o1;Landroid/content/Context;I)V
     .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Landroid/content/Context;",
+            "I)V"
+        }
+    .end annotation
 
-    iput-object p1, p0, Lwc/q1;->f:Lcom/google/android/material/bottomsheet/a;
+    iput-object p1, p0, Lwc/q1;->g:Lwc/o1;
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0, p2, p3}, Landroid/app/Dialog;-><init>(Landroid/content/Context;I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final onShow(Landroid/content/DialogInterface;)V
-    .locals 3
+.method public final onBackPressed()V
+    .locals 2
 
     .line 1
-    iget-object p1, p0, Lwc/q1;->f:Lcom/google/android/material/bottomsheet/a;
+    sget-object v0, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
 
-    sget v0, Lcom/google/android/material/R$id;->design_bottom_sheet:I
+    invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lae/u;
 
-    invoke-virtual {p1, v0}, Landroidx/appcompat/app/p;->findViewById(I)Landroid/view/View;
-
-    move-result-object p1
-
-    check-cast p1, Landroid/widget/FrameLayout;
-
-    if-eqz p1, :cond_0
+    move-result-object v0
 
     .line 2
-    invoke-static {p1}, Lcom/google/android/material/bottomsheet/BottomSheetBehavior;->z(Landroid/view/View;)Lcom/google/android/material/bottomsheet/BottomSheetBehavior;
-
-    move-result-object v0
-
-    const-string v1, "BottomSheetBehavior.from(frameLayout)"
-
-    invoke-static {v0, v1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const/4 v2, 0x3
-
-    invoke-virtual {v0, v2}, Lcom/google/android/material/bottomsheet/BottomSheetBehavior;->E(I)V
+    iget-object v0, v0, Lae/u;->w:Lsc/a;
 
     .line 3
-    invoke-static {p1}, Lcom/google/android/material/bottomsheet/BottomSheetBehavior;->z(Landroid/view/View;)Lcom/google/android/material/bottomsheet/BottomSheetBehavior;
+    sget-object v1, Lsc/a$a;->i:Lsc/a$a;
 
-    move-result-object v0
-
-    invoke-static {v0, v1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const/4 v2, 0x1
+    invoke-virtual {v0, v1}, Lsc/a;->b(Lsc/a$a;)V
 
     .line 4
-    iput-boolean v2, v0, Lcom/google/android/material/bottomsheet/BottomSheetBehavior;->w:Z
+    iget-object v0, p0, Lwc/q1;->g:Lwc/o1;
 
-    .line 5
-    invoke-static {p1}, Lcom/google/android/material/bottomsheet/BottomSheetBehavior;->z(Landroid/view/View;)Lcom/google/android/material/bottomsheet/BottomSheetBehavior;
+    invoke-virtual {v0}, Lwc/o1;->X0()V
 
-    move-result-object p1
-
-    invoke-static {p1, v1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
-
-    invoke-virtual {p1, v2}, Lcom/google/android/material/bottomsheet/BottomSheetBehavior;->C(Z)V
-
-    :cond_0
     return-void
 .end method

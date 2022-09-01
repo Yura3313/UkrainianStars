@@ -7,14 +7,14 @@
 
 
 # instance fields
-.field public final synthetic f:Lcom/google/android/material/textfield/a;
+.field public final synthetic g:Lcom/google/android/material/textfield/a;
 
 
 # direct methods
 .method public constructor <init>(Lcom/google/android/material/textfield/a;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/google/android/material/textfield/d;->f:Lcom/google/android/material/textfield/a;
+    iput-object p1, p0, Lcom/google/android/material/textfield/d;->g:Lcom/google/android/material/textfield/a;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -38,14 +38,14 @@
     move-result p1
 
     .line 2
-    iget-object v0, p0, Lcom/google/android/material/textfield/d;->f:Lcom/google/android/material/textfield/a;
+    iget-object v0, p0, Lcom/google/android/material/textfield/d;->g:Lcom/google/android/material/textfield/a;
 
     iget-object v0, v0, Lcom/google/android/material/textfield/k;->c:Lcom/google/android/material/internal/CheckableImageButton;
 
     invoke-virtual {v0, p1}, Landroid/view/View;->setScaleX(F)V
 
     .line 3
-    iget-object v0, p0, Lcom/google/android/material/textfield/d;->f:Lcom/google/android/material/textfield/a;
+    iget-object v0, p0, Lcom/google/android/material/textfield/d;->g:Lcom/google/android/material/textfield/a;
 
     iget-object v0, v0, Lcom/google/android/material/textfield/k;->c:Lcom/google/android/material/internal/CheckableImageButton;
 

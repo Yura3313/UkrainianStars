@@ -1,5 +1,5 @@
 .class public final Lcom/supercell/id/ui/game/GameFragment$o;
-.super Lse/h;
+.super Lse/i;
 .source "GameFragment.kt"
 
 # interfaces
@@ -18,7 +18,7 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/a<",
         "Ljava/lang/Boolean;",
         ">;"
@@ -27,18 +27,18 @@
 
 
 # instance fields
-.field public final synthetic f:Lcom/supercell/id/ui/game/GameFragment;
+.field public final synthetic g:Lcom/supercell/id/ui/game/GameFragment;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/id/ui/game/GameFragment;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/ui/game/GameFragment$o;->f:Lcom/supercell/id/ui/game/GameFragment;
+    iput-object p1, p0, Lcom/supercell/id/ui/game/GameFragment$o;->g:Lcom/supercell/id/ui/game/GameFragment;
 
     const/4 p1, 0x0
 
-    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -49,12 +49,12 @@
     .locals 5
 
     .line 1
-    iget-object v0, p0, Lcom/supercell/id/ui/game/GameFragment$o;->f:Lcom/supercell/id/ui/game/GameFragment;
+    iget-object v0, p0, Lcom/supercell/id/ui/game/GameFragment$o;->g:Lcom/supercell/id/ui/game/GameFragment;
 
-    sget v1, Lcom/supercell/id/ui/game/GameFragment;->y0:I
+    sget v1, Lcom/supercell/id/ui/game/GameFragment;->z0:I
 
     .line 2
-    invoke-virtual {v0}, Lcom/supercell/id/ui/game/GameFragment;->i1()Lvc/k;
+    invoke-virtual {v0}, Lcom/supercell/id/ui/game/GameFragment;->i1()Lvc/j;
 
     move-result-object v0
 
@@ -63,13 +63,13 @@
     if-eqz v0, :cond_0
 
     .line 3
-    iget-boolean v0, v0, Lvc/k;->a:Z
+    iget-boolean v0, v0, Lvc/j;->a:Z
 
     if-eq v0, v1, :cond_2
 
     .line 4
     :cond_0
-    iget-object v0, p0, Lcom/supercell/id/ui/game/GameFragment$o;->f:Lcom/supercell/id/ui/game/GameFragment;
+    iget-object v0, p0, Lcom/supercell/id/ui/game/GameFragment$o;->g:Lcom/supercell/id/ui/game/GameFragment;
 
     invoke-static {v0}, Lcom/supercell/id/ui/game/GameFragment;->h1(Lcom/supercell/id/ui/game/GameFragment;)Ljava/lang/String;
 
@@ -104,7 +104,7 @@
     :cond_1
     sget-object v0, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
 
-    invoke-static {v2, v0}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, v0}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 

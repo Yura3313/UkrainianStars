@@ -1,5 +1,5 @@
 .class public final Lke/c$c;
-.super Lse/h;
+.super Lse/i;
 .source "CoroutineContextImpl.kt"
 
 # interfaces
@@ -18,33 +18,33 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/p<",
-        "Lie/h;",
+        "Lie/i;",
         "Lke/f$a;",
-        "Lie/h;",
+        "Lie/i;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic f:[Lke/f;
+.field public final synthetic g:[Lke/f;
 
-.field public final synthetic g:Lse/p;
+.field public final synthetic h:Lse/q;
 
 
 # direct methods
-.method public constructor <init>([Lke/f;Lse/p;)V
+.method public constructor <init>([Lke/f;Lse/q;)V
     .locals 0
 
-    iput-object p1, p0, Lke/c$c;->f:[Lke/f;
+    iput-object p1, p0, Lke/c$c;->g:[Lke/f;
 
-    iput-object p2, p0, Lke/c$c;->g:Lse/p;
+    iput-object p2, p0, Lke/c$c;->h:Lse/q;
 
     const/4 p1, 0x2
 
-    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -55,34 +55,34 @@
     .locals 3
 
     .line 1
-    check-cast p1, Lie/h;
+    check-cast p1, Lie/i;
 
     check-cast p2, Lke/f$a;
 
     const-string v0, "<anonymous parameter 0>"
 
     .line 2
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string p1, "element"
 
-    invoke-static {p2, p1}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, p1}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 3
-    iget-object p1, p0, Lke/c$c;->f:[Lke/f;
+    iget-object p1, p0, Lke/c$c;->g:[Lke/f;
 
-    iget-object v0, p0, Lke/c$c;->g:Lse/p;
+    iget-object v0, p0, Lke/c$c;->h:Lse/q;
 
-    iget v1, v0, Lse/p;->f:I
+    iget v1, v0, Lse/q;->g:I
 
     add-int/lit8 v2, v1, 0x1
 
-    iput v2, v0, Lse/p;->f:I
+    iput v2, v0, Lse/q;->g:I
 
     aput-object p2, p1, v1
 
     .line 4
-    sget-object p1, Lie/h;->a:Lie/h;
+    sget-object p1, Lie/i;->a:Lie/i;
 
     return-object p1
 .end method

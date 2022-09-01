@@ -7,13 +7,13 @@
 
 
 # instance fields
-.field public f:Landroid/widget/TextView;
+.field public g:Landroid/widget/TextView;
 
-.field public g:Landroid/widget/Button;
-
-.field public h:I
+.field public h:Landroid/widget/Button;
 
 .field public i:I
+
+.field public j:I
 
 
 # direct methods
@@ -39,7 +39,7 @@
 
     move-result p2
 
-    iput p2, p0, Lcom/google/android/material/snackbar/SnackbarContentLayout;->h:I
+    iput p2, p0, Lcom/google/android/material/snackbar/SnackbarContentLayout;->i:I
 
     .line 4
     sget p2, Lcom/google/android/material/R$styleable;->SnackbarLayout_maxActionInlineWidth:I
@@ -49,7 +49,7 @@
 
     move-result p2
 
-    iput p2, p0, Lcom/google/android/material/snackbar/SnackbarContentLayout;->i:I
+    iput p2, p0, Lcom/google/android/material/snackbar/SnackbarContentLayout;->j:I
 
     .line 6
     invoke-virtual {p1}, Landroid/content/res/TypedArray;->recycle()V
@@ -83,7 +83,7 @@
 
     .line 3
     :goto_0
-    iget-object v0, p0, Lcom/google/android/material/snackbar/SnackbarContentLayout;->f:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/google/android/material/snackbar/SnackbarContentLayout;->g:Landroid/widget/TextView;
 
     invoke-virtual {v0}, Landroid/view/View;->getPaddingTop()I
 
@@ -91,7 +91,7 @@
 
     if-ne v0, p2, :cond_2
 
-    iget-object v0, p0, Lcom/google/android/material/snackbar/SnackbarContentLayout;->f:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/google/android/material/snackbar/SnackbarContentLayout;->g:Landroid/widget/TextView;
 
     .line 4
     invoke-virtual {v0}, Landroid/view/View;->getPaddingBottom()I
@@ -110,7 +110,7 @@
     .line 5
     :cond_2
     :goto_1
-    iget-object p1, p0, Lcom/google/android/material/snackbar/SnackbarContentLayout;->f:Landroid/widget/TextView;
+    iget-object p1, p0, Lcom/google/android/material/snackbar/SnackbarContentLayout;->g:Landroid/widget/TextView;
 
     .line 6
     sget-object v0, Lf0/r;->a:Ljava/util/WeakHashMap;
@@ -156,7 +156,7 @@
 .method public getActionView()Landroid/widget/Button;
     .locals 1
 
-    iget-object v0, p0, Lcom/google/android/material/snackbar/SnackbarContentLayout;->g:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/google/android/material/snackbar/SnackbarContentLayout;->h:Landroid/widget/Button;
 
     return-object v0
 .end method
@@ -164,7 +164,7 @@
 .method public getMessageView()Landroid/widget/TextView;
     .locals 1
 
-    iget-object v0, p0, Lcom/google/android/material/snackbar/SnackbarContentLayout;->f:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/google/android/material/snackbar/SnackbarContentLayout;->g:Landroid/widget/TextView;
 
     return-object v0
 .end method
@@ -184,7 +184,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/google/android/material/snackbar/SnackbarContentLayout;->f:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/google/android/material/snackbar/SnackbarContentLayout;->g:Landroid/widget/TextView;
 
     .line 3
     sget v0, Lcom/google/android/material/R$id;->snackbar_action:I
@@ -195,7 +195,7 @@
 
     check-cast v0, Landroid/widget/Button;
 
-    iput-object v0, p0, Lcom/google/android/material/snackbar/SnackbarContentLayout;->g:Landroid/widget/Button;
+    iput-object v0, p0, Lcom/google/android/material/snackbar/SnackbarContentLayout;->h:Landroid/widget/Button;
 
     return-void
 .end method
@@ -207,7 +207,7 @@
     invoke-super {p0, p1, p2}, Landroid/widget/LinearLayout;->onMeasure(II)V
 
     .line 2
-    iget v0, p0, Lcom/google/android/material/snackbar/SnackbarContentLayout;->h:I
+    iget v0, p0, Lcom/google/android/material/snackbar/SnackbarContentLayout;->i:I
 
     if-lez v0, :cond_0
 
@@ -215,7 +215,7 @@
 
     move-result v0
 
-    iget v1, p0, Lcom/google/android/material/snackbar/SnackbarContentLayout;->h:I
+    iget v1, p0, Lcom/google/android/material/snackbar/SnackbarContentLayout;->i:I
 
     if-le v0, v1, :cond_0
 
@@ -253,7 +253,7 @@
     move-result v1
 
     .line 7
-    iget-object v2, p0, Lcom/google/android/material/snackbar/SnackbarContentLayout;->f:Landroid/widget/TextView;
+    iget-object v2, p0, Lcom/google/android/material/snackbar/SnackbarContentLayout;->g:Landroid/widget/TextView;
 
     invoke-virtual {v2}, Landroid/widget/TextView;->getLayout()Landroid/text/Layout;
 
@@ -280,18 +280,18 @@
     if-eqz v2, :cond_2
 
     .line 8
-    iget v5, p0, Lcom/google/android/material/snackbar/SnackbarContentLayout;->i:I
+    iget v5, p0, Lcom/google/android/material/snackbar/SnackbarContentLayout;->j:I
 
     if-lez v5, :cond_2
 
-    iget-object v5, p0, Lcom/google/android/material/snackbar/SnackbarContentLayout;->g:Landroid/widget/Button;
+    iget-object v5, p0, Lcom/google/android/material/snackbar/SnackbarContentLayout;->h:Landroid/widget/Button;
 
     .line 9
     invoke-virtual {v5}, Landroid/view/View;->getMeasuredWidth()I
 
     move-result v5
 
-    iget v6, p0, Lcom/google/android/material/snackbar/SnackbarContentLayout;->i:I
+    iget v6, p0, Lcom/google/android/material/snackbar/SnackbarContentLayout;->j:I
 
     if-le v5, v6, :cond_2
 
@@ -338,7 +338,7 @@
 .method public setMaxInlineActionWidth(I)V
     .locals 0
 
-    iput p1, p0, Lcom/google/android/material/snackbar/SnackbarContentLayout;->i:I
+    iput p1, p0, Lcom/google/android/material/snackbar/SnackbarContentLayout;->j:I
 
     return-void
 .end method

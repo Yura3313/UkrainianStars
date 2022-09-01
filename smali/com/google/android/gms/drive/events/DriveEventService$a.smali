@@ -65,7 +65,7 @@
     if-eq v0, v2, :cond_0
 
     .line 2
-    sget-object p1, Lcom/google/android/gms/drive/events/DriveEventService;->k:Ld2/e;
+    sget-object p1, Lcom/google/android/gms/drive/events/DriveEventService;->l:Ld2/e;
 
     new-array v2, v3, [Ljava/lang/Object;
 
@@ -109,7 +109,7 @@
 
     check-cast p1, Lcom/google/android/gms/internal/drive/zzfp;
 
-    sget-object v4, Lcom/google/android/gms/drive/events/DriveEventService;->k:Ld2/e;
+    sget-object v4, Lcom/google/android/gms/drive/events/DriveEventService;->l:Ld2/e;
 
     .line 7
     invoke-virtual {p1}, Lcom/google/android/gms/internal/drive/zzfp;->D2()Lcom/google/android/gms/drive/events/DriveEvent;
@@ -135,7 +135,7 @@
     if-eq v4, v5, :cond_2
 
     .line 9
-    sget-object v2, Lcom/google/android/gms/drive/events/DriveEventService;->k:Ld2/e;
+    sget-object v2, Lcom/google/android/gms/drive/events/DriveEventService;->l:Ld2/e;
 
     const-string v4, "Unhandled event: %s"
 
@@ -152,13 +152,13 @@
     check-cast p1, Lcom/google/android/gms/drive/events/zzv;
 
     .line 11
-    sget-object v4, Lcom/google/android/gms/drive/events/DriveEventService;->k:Ld2/e;
+    sget-object v4, Lcom/google/android/gms/drive/events/DriveEventService;->l:Ld2/e;
 
     const-string v5, "Unhandled transfer state event in %s: %s"
 
     new-array v2, v2, [Ljava/lang/Object;
 
-    iget-object v6, v0, Lcom/google/android/gms/drive/events/DriveEventService;->f:Ljava/lang/String;
+    iget-object v6, v0, Lcom/google/android/gms/drive/events/DriveEventService;->g:Ljava/lang/String;
 
     aput-object v6, v2, v1
 
@@ -173,11 +173,11 @@
     check-cast p1, Lcom/google/android/gms/drive/events/zzb;
 
     .line 13
-    sget-object v4, Lcom/google/android/gms/drive/events/DriveEventService;->k:Ld2/e;
+    sget-object v4, Lcom/google/android/gms/drive/events/DriveEventService;->l:Ld2/e;
 
     new-array v2, v2, [Ljava/lang/Object;
 
-    iget-object v5, v0, Lcom/google/android/gms/drive/events/DriveEventService;->f:Ljava/lang/String;
+    iget-object v5, v0, Lcom/google/android/gms/drive/events/DriveEventService;->g:Ljava/lang/String;
 
     aput-object v5, v2, v1
 
@@ -194,11 +194,11 @@
     check-cast p1, Lcom/google/android/gms/drive/events/CompletionEvent;
 
     .line 15
-    sget-object v4, Lcom/google/android/gms/drive/events/DriveEventService;->k:Ld2/e;
+    sget-object v4, Lcom/google/android/gms/drive/events/DriveEventService;->l:Ld2/e;
 
     new-array v2, v2, [Ljava/lang/Object;
 
-    iget-object v5, v0, Lcom/google/android/gms/drive/events/DriveEventService;->f:Ljava/lang/String;
+    iget-object v5, v0, Lcom/google/android/gms/drive/events/DriveEventService;->g:Ljava/lang/String;
 
     aput-object v5, v2, v1
 
@@ -215,11 +215,11 @@
     check-cast p1, Lcom/google/android/gms/drive/events/ChangeEvent;
 
     .line 17
-    sget-object v4, Lcom/google/android/gms/drive/events/DriveEventService;->k:Ld2/e;
+    sget-object v4, Lcom/google/android/gms/drive/events/DriveEventService;->l:Ld2/e;
 
     new-array v2, v2, [Ljava/lang/Object;
 
-    iget-object v5, v0, Lcom/google/android/gms/drive/events/DriveEventService;->f:Ljava/lang/String;
+    iget-object v5, v0, Lcom/google/android/gms/drive/events/DriveEventService;->g:Ljava/lang/String;
 
     aput-object v5, v2, v1
 
@@ -237,11 +237,11 @@
     nop
 
     .line 18
-    sget-object p1, Lcom/google/android/gms/drive/events/DriveEventService;->k:Ld2/e;
+    sget-object p1, Lcom/google/android/gms/drive/events/DriveEventService;->l:Ld2/e;
 
     new-array v2, v3, [Ljava/lang/Object;
 
-    iget-object v0, v0, Lcom/google/android/gms/drive/events/DriveEventService;->f:Ljava/lang/String;
+    iget-object v0, v0, Lcom/google/android/gms/drive/events/DriveEventService;->g:Ljava/lang/String;
 
     aput-object v0, v2, v1
 

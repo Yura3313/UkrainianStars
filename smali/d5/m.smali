@@ -621,7 +621,7 @@
 
     const-string v9, "File to remove is not a native library"
 
-    invoke-static {v8, v9}, Lcom/google/android/play/core/assetpacks/o2;->f(ZLjava/lang/Object;)V
+    invoke-static {v8, v9}, Lod/a;->c(ZLjava/lang/Object;)V
 
     invoke-static {v7}, Ld5/e;->e(Ljava/io/File;)V
 

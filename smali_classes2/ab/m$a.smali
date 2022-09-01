@@ -18,22 +18,22 @@
 
 
 # instance fields
-.field public final synthetic f:Ljava/util/ArrayList;
+.field public final synthetic g:Ljava/util/ArrayList;
 
-.field public final synthetic g:Lla/d;
+.field public final synthetic h:Lla/d;
 
-.field public final synthetic h:Lab/m;
+.field public final synthetic i:Lab/m;
 
 
 # direct methods
 .method public constructor <init>(Lab/m;Ljava/util/ArrayList;Lla/d;)V
     .locals 0
 
-    iput-object p1, p0, Lab/m$a;->h:Lab/m;
+    iput-object p1, p0, Lab/m$a;->i:Lab/m;
 
-    iput-object p2, p0, Lab/m$a;->f:Ljava/util/ArrayList;
+    iput-object p2, p0, Lab/m$a;->g:Ljava/util/ArrayList;
 
-    iput-object p3, p0, Lab/m$a;->g:Lla/d;
+    iput-object p3, p0, Lab/m$a;->h:Lla/d;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -58,7 +58,7 @@
     invoke-direct {v0}, Landroid/os/Bundle;-><init>()V
 
     .line 3
-    iget-object v1, p0, Lab/m$a;->f:Ljava/util/ArrayList;
+    iget-object v1, p0, Lab/m$a;->g:Ljava/util/ArrayList;
 
     const-string v2, "sections"
 
@@ -70,17 +70,17 @@
     invoke-virtual {v0, v1, p1}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 5
-    iget-object p1, p0, Lab/m$a;->g:Lla/d;
+    iget-object p1, p0, Lab/m$a;->h:Lla/d;
 
     const-string v1, "withTagsMatching"
 
     invoke-virtual {v0, v1, p1}, Landroid/os/Bundle;->putSerializable(Ljava/lang/String;Ljava/io/Serializable;)V
 
     .line 6
-    iget-object p1, p0, Lab/m$a;->h:Lab/m;
+    iget-object p1, p0, Lab/m$a;->i:Lab/m;
 
     .line 7
-    iget-object p1, p1, Landroidx/fragment/app/Fragment;->A:Landroidx/fragment/app/Fragment;
+    iget-object p1, p1, Landroidx/fragment/app/Fragment;->B:Landroidx/fragment/app/Fragment;
 
     .line 8
     check-cast p1, Loa/c;
@@ -109,7 +109,7 @@
 
     sget v1, Lcom/helpshift/R$id;->list_fragment_container:I
 
-    invoke-static {p1, v1, v0, v2}, Lj1/q;->m(Landroidx/fragment/app/FragmentManager;ILandroidx/fragment/app/Fragment;Ljava/lang/String;)V
+    invoke-static {p1, v1, v0, v2}, Ls4/e;->q(Landroidx/fragment/app/FragmentManager;ILandroidx/fragment/app/Fragment;Ljava/lang/String;)V
 
     goto :goto_0
 
@@ -127,7 +127,7 @@
 
     sget v0, Lcom/helpshift/R$id;->list_fragment_container:I
 
-    invoke-static {p1, v0, v1, v2}, Lj1/q;->m(Landroidx/fragment/app/FragmentManager;ILandroidx/fragment/app/Fragment;Ljava/lang/String;)V
+    invoke-static {p1, v0, v1, v2}, Ls4/e;->q(Landroidx/fragment/app/FragmentManager;ILandroidx/fragment/app/Fragment;Ljava/lang/String;)V
 
     :goto_0
     return-void

@@ -1,18 +1,18 @@
 .class public final Lbf/e;
-.super Lze/t0;
+.super Lze/u0;
 .source "Dispatcher.kt"
 
 # interfaces
-.implements Lbf/i;
+.implements Lbf/h;
 .implements Ljava/util/concurrent/Executor;
 
 
 # static fields
-.field public static final j:Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;
+.field public static final k:Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;
 
 
 # instance fields
-.field public final f:Ljava/util/concurrent/ConcurrentLinkedQueue;
+.field public final g:Ljava/util/concurrent/ConcurrentLinkedQueue;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/concurrent/ConcurrentLinkedQueue<",
@@ -22,13 +22,13 @@
     .end annotation
 .end field
 
-.field public final g:Lbf/c;
-
-.field public final h:I
+.field public final h:Lbf/c;
 
 .field public final i:I
 
 .field private volatile inFlightTasks:I
+
+.field public final j:I
 
 
 # direct methods
@@ -43,7 +43,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lbf/e;->j:Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;
+    sput-object v0, Lbf/e;->k:Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;
 
     return-void
 .end method
@@ -55,23 +55,23 @@
 
     const-string v1, "taskMode"
 
-    invoke-static {v0, v1}, Lcom/google/android/gms/ads/e;->c(ILjava/lang/String;)V
+    invoke-static {v0, v1}, Lt3/g;->a(ILjava/lang/String;)V
 
     .line 1
-    invoke-direct {p0}, Lze/t0;-><init>()V
+    invoke-direct {p0}, Lze/u0;-><init>()V
 
-    iput-object p1, p0, Lbf/e;->g:Lbf/c;
+    iput-object p1, p0, Lbf/e;->h:Lbf/c;
 
-    iput p2, p0, Lbf/e;->h:I
+    iput p2, p0, Lbf/e;->i:I
 
-    iput v0, p0, Lbf/e;->i:I
+    iput v0, p0, Lbf/e;->j:I
 
     .line 2
     new-instance p1, Ljava/util/concurrent/ConcurrentLinkedQueue;
 
     invoke-direct {p1}, Ljava/util/concurrent/ConcurrentLinkedQueue;-><init>()V
 
-    iput-object p1, p0, Lbf/e;->f:Ljava/util/concurrent/ConcurrentLinkedQueue;
+    iput-object p1, p0, Lbf/e;->g:Ljava/util/concurrent/ConcurrentLinkedQueue;
 
     const/4 p1, 0x0
 
@@ -86,7 +86,7 @@
 .method public final a()I
     .locals 1
 
-    iget v0, p0, Lbf/e;->i:I
+    iget v0, p0, Lbf/e;->j:I
 
     return v0
 .end method
@@ -112,11 +112,11 @@
 
     const-string v0, "context"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string p1, "block"
 
-    invoke-static {p2, p1}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, p1}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/4 p1, 0x0
 
@@ -130,7 +130,7 @@
 
     const-string v0, "command"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/4 v0, 0x0
 
@@ -143,7 +143,7 @@
     .locals 3
 
     .line 1
-    iget-object v0, p0, Lbf/e;->f:Ljava/util/concurrent/ConcurrentLinkedQueue;
+    iget-object v0, p0, Lbf/e;->g:Ljava/util/concurrent/ConcurrentLinkedQueue;
 
     invoke-virtual {v0}, Ljava/util/concurrent/ConcurrentLinkedQueue;->poll()Ljava/lang/Object;
 
@@ -156,20 +156,20 @@
     if-eqz v0, :cond_0
 
     .line 2
-    iget-object v2, p0, Lbf/e;->g:Lbf/c;
+    iget-object v2, p0, Lbf/e;->h:Lbf/c;
 
-    invoke-virtual {v2, v0, p0, v1}, Lbf/c;->n(Ljava/lang/Runnable;Lbf/i;Z)V
+    invoke-virtual {v2, v0, p0, v1}, Lbf/c;->n(Ljava/lang/Runnable;Lbf/h;Z)V
 
     return-void
 
     .line 3
     :cond_0
-    sget-object v0, Lbf/e;->j:Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;
+    sget-object v0, Lbf/e;->k:Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;
 
     invoke-virtual {v0, p0}, Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;->decrementAndGet(Ljava/lang/Object;)I
 
     .line 4
-    iget-object v0, p0, Lbf/e;->f:Ljava/util/concurrent/ConcurrentLinkedQueue;
+    iget-object v0, p0, Lbf/e;->g:Ljava/util/concurrent/ConcurrentLinkedQueue;
 
     invoke-virtual {v0}, Ljava/util/concurrent/ConcurrentLinkedQueue;->poll()Ljava/lang/Object;
 
@@ -191,27 +191,27 @@
 
     .line 1
     :goto_0
-    sget-object v0, Lbf/e;->j:Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;
+    sget-object v0, Lbf/e;->k:Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;
 
     invoke-virtual {v0, p0}, Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;->incrementAndGet(Ljava/lang/Object;)I
 
     move-result v1
 
     .line 2
-    iget v2, p0, Lbf/e;->h:I
+    iget v2, p0, Lbf/e;->i:I
 
     if-gt v1, v2, :cond_0
 
     .line 3
-    iget-object v0, p0, Lbf/e;->g:Lbf/c;
+    iget-object v0, p0, Lbf/e;->h:Lbf/c;
 
-    invoke-virtual {v0, p1, p0, p2}, Lbf/c;->n(Ljava/lang/Runnable;Lbf/i;Z)V
+    invoke-virtual {v0, p1, p0, p2}, Lbf/c;->n(Ljava/lang/Runnable;Lbf/h;Z)V
 
     return-void
 
     .line 4
     :cond_0
-    iget-object v1, p0, Lbf/e;->f:Ljava/util/concurrent/ConcurrentLinkedQueue;
+    iget-object v1, p0, Lbf/e;->g:Ljava/util/concurrent/ConcurrentLinkedQueue;
 
     invoke-virtual {v1, p1}, Ljava/util/concurrent/ConcurrentLinkedQueue;->add(Ljava/lang/Object;)Z
 
@@ -220,7 +220,7 @@
 
     move-result p1
 
-    iget v0, p0, Lbf/e;->h:I
+    iget v0, p0, Lbf/e;->i:I
 
     if-lt p1, v0, :cond_1
 
@@ -228,7 +228,7 @@
 
     .line 6
     :cond_1
-    iget-object p1, p0, Lbf/e;->f:Ljava/util/concurrent/ConcurrentLinkedQueue;
+    iget-object p1, p0, Lbf/e;->g:Ljava/util/concurrent/ConcurrentLinkedQueue;
 
     invoke-virtual {p1}, Ljava/util/concurrent/ConcurrentLinkedQueue;->poll()Ljava/lang/Object;
 
@@ -261,7 +261,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lbf/e;->g:Lbf/c;
+    iget-object v1, p0, Lbf/e;->h:Lbf/c;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 

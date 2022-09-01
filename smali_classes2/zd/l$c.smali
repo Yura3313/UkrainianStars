@@ -1,5 +1,5 @@
 .class public final Lzd/l$c;
-.super Lse/h;
+.super Lse/i;
 .source "YoungPlayerRegisterIntroPageFragment.kt"
 
 # interfaces
@@ -18,7 +18,7 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/p<",
         "Landroid/widget/TextView;",
         "Ljava/lang/String;",
@@ -29,7 +29,7 @@
 
 
 # static fields
-.field public static final f:Lzd/l$c;
+.field public static final g:Lzd/l$c;
 
 
 # direct methods
@@ -40,7 +40,7 @@
 
     invoke-direct {v0}, Lzd/l$c;-><init>()V
 
-    sput-object v0, Lzd/l$c;->f:Lzd/l$c;
+    sput-object v0, Lzd/l$c;->g:Lzd/l$c;
 
     return-void
 .end method
@@ -50,7 +50,7 @@
 
     const/4 v0, 0x2
 
-    invoke-direct {p0, v0}, Lse/h;-><init>(I)V
+    invoke-direct {p0, v0}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -68,16 +68,16 @@
     const-string v0, "<anonymous parameter 0>"
 
     .line 2
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string p1, "value"
 
-    invoke-static {p2, p1}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, p1}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 3
-    sget-object p1, Lzd/m;->f:Lzd/m;
+    sget-object p1, Lzd/m;->g:Lzd/m;
 
-    invoke-static {p2, p1}, Lud/f0;->d(Ljava/lang/CharSequence;Lre/p;)Landroid/text/SpannableStringBuilder;
+    invoke-static {p2, p1}, Lud/d0;->d(Ljava/lang/CharSequence;Lre/p;)Landroid/text/SpannableStringBuilder;
 
     move-result-object p1
 

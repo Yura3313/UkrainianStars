@@ -19,14 +19,14 @@
 
     const/4 v3, 0x0
 
-    invoke-direct {v0, v1, v2, v3}, Lae/k;-><init>(IILse/e;)V
+    invoke-direct {v0, v1, v2, v3}, Lae/k;-><init>(IILse/f;)V
 
     sput-object v0, Lnd/k;->a:Lae/k;
 
     return-void
 .end method
 
-.method public static final a(Landroid/widget/TextView;Lvc/x;Landroid/graphics/drawable/BitmapDrawable;)V
+.method public static final a(Landroid/widget/TextView;Lvc/v;Landroid/graphics/drawable/BitmapDrawable;)V
     .locals 3
 
     const-string v0, "account_messages_donation_"
@@ -37,10 +37,10 @@
     move-result-object v0
 
     .line 2
-    iget-object v1, p1, Lvc/x;->d:Ljava/util/List;
+    iget-object v1, p1, Lvc/v;->d:Ljava/util/List;
 
     .line 3
-    invoke-static {v1}, Lje/j;->y(Ljava/util/List;)Ljava/lang/Object;
+    invoke-static {v1}, Lje/j;->t(Ljava/util/List;)Ljava/lang/Object;
 
     move-result-object v1
 
@@ -53,17 +53,17 @@
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
     .line 4
-    iget-object p1, p1, Lvc/x;->c:Lvc/x$b;
+    iget-object p1, p1, Lvc/v;->c:Lvc/v$b;
 
     .line 5
-    iget-object p1, p1, Lvc/x$b;->f:Ljava/lang/String;
+    iget-object p1, p1, Lvc/v$b;->g:Ljava/lang/String;
 
     .line 6
     sget-object v1, Ljava/util/Locale;->ENGLISH:Ljava/util/Locale;
 
     const-string v2, "Locale.ENGLISH"
 
-    invoke-static {v1, v2}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     if-eqz p1, :cond_0
 
@@ -73,7 +73,7 @@
 
     const-string v1, "(this as java.lang.String).toLowerCase(locale)"
 
-    invoke-static {p1, v1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v1}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -85,7 +85,7 @@
 
     invoke-direct {v0, p2}, Lnd/k$a;-><init>(Landroid/graphics/drawable/BitmapDrawable;)V
 
-    invoke-static {p0, p1, v0}, Lud/f0;->j(Landroid/widget/TextView;Ljava/lang/String;Lre/p;)V
+    invoke-static {p0, p1, v0}, Lud/d0;->j(Landroid/widget/TextView;Ljava/lang/String;Lre/p;)V
 
     return-void
 

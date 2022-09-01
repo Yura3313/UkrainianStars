@@ -16,20 +16,20 @@
 
 
 # instance fields
-.field public final f:I
+.field public final g:I
 
-.field public final g:[B
+.field public final h:[B
 
-.field public final h:I
+.field public final i:I
 
 
 # direct methods
 .method public static constructor <clinit>()V
     .locals 1
 
-    new-instance v0, Lk3/nj0;
+    new-instance v0, Lk3/pj0;
 
-    invoke-direct {v0}, Lk3/nj0;-><init>()V
+    invoke-direct {v0}, Lk3/pj0;-><init>()V
 
     sput-object v0, Lcom/google/android/gms/internal/ads/zzdru;->CREATOR:Landroid/os/Parcelable$Creator;
 
@@ -45,15 +45,15 @@
     const/4 v0, 0x1
 
     .line 2
-    iput v0, p0, Lcom/google/android/gms/internal/ads/zzdru;->f:I
+    iput v0, p0, Lcom/google/android/gms/internal/ads/zzdru;->g:I
 
     const/4 v1, 0x0
 
     .line 3
-    iput-object v1, p0, Lcom/google/android/gms/internal/ads/zzdru;->g:[B
+    iput-object v1, p0, Lcom/google/android/gms/internal/ads/zzdru;->h:[B
 
     .line 4
-    iput v0, p0, Lcom/google/android/gms/internal/ads/zzdru;->h:I
+    iput v0, p0, Lcom/google/android/gms/internal/ads/zzdru;->i:I
 
     return-void
 .end method
@@ -65,7 +65,7 @@
     invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
 
     .line 6
-    iput p1, p0, Lcom/google/android/gms/internal/ads/zzdru;->f:I
+    iput p1, p0, Lcom/google/android/gms/internal/ads/zzdru;->g:I
 
     if-nez p2, :cond_0
 
@@ -82,10 +82,10 @@
     move-result-object p1
 
     :goto_0
-    iput-object p1, p0, Lcom/google/android/gms/internal/ads/zzdru;->g:[B
+    iput-object p1, p0, Lcom/google/android/gms/internal/ads/zzdru;->h:[B
 
     .line 8
-    iput p3, p0, Lcom/google/android/gms/internal/ads/zzdru;->h:I
+    iput p3, p0, Lcom/google/android/gms/internal/ads/zzdru;->i:I
 
     return-void
 .end method
@@ -103,7 +103,7 @@
     move-result v5
 
     .line 2
-    iget p2, p0, Lcom/google/android/gms/internal/ads/zzdru;->f:I
+    iget p2, p0, Lcom/google/android/gms/internal/ads/zzdru;->g:I
 
     const/4 v0, 0x1
 
@@ -116,7 +116,7 @@
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 5
-    iget-object p2, p0, Lcom/google/android/gms/internal/ads/zzdru;->g:[B
+    iget-object p2, p0, Lcom/google/android/gms/internal/ads/zzdru;->h:[B
 
     const/4 v0, 0x2
 
@@ -125,7 +125,7 @@
     invoke-static {p1, v0, p2, v1}, Le2/b;->e(Landroid/os/Parcel;I[BZ)V
 
     .line 6
-    iget v3, p0, Lcom/google/android/gms/internal/ads/zzdru;->h:I
+    iget v3, p0, Lcom/google/android/gms/internal/ads/zzdru;->i:I
 
     const/4 v1, 0x3
 

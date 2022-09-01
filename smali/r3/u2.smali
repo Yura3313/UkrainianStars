@@ -186,7 +186,7 @@
     .line 8
     check-cast v1, Lr3/l2;
 
-    invoke-interface {v1, v0}, Lr3/l2;->M1(I)Lr3/l2;
+    invoke-interface {v1, v0}, Lr3/l2;->L1(I)Lr3/l2;
 
     move-result-object v0
 
@@ -297,7 +297,7 @@
 
     add-int/2addr v1, v0
 
-    invoke-interface {v2, v1}, Lr3/l2;->M1(I)Lr3/l2;
+    invoke-interface {v2, v1}, Lr3/l2;->L1(I)Lr3/l2;
 
     move-result-object v1
 

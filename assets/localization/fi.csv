@@ -304,11 +304,11 @@ TID_LUCHADOR_WEAPON_DESC,El Primo nakuttaa menemään neljä napakkaa nyrkinisku
 TID_LUCHADOR_ULTI,LENTÄVÄ KYYNÄRISKU
 TID_LUCHADOR_ULTI_DESC,"El Primo loikkaa korkeuksiin ja pudottaa galaktisen kyynärpäänsä, joka tyrmää lähistöllä olevia vastustajia ja tuhoaa suojapaikkoja."
 TID_TRICKSHOT_DUDE_OLD,RICOCHET
-TID_TRICKSHOT_DUDE_DESC,"Rico ampuu ryöpyn luoteja, jotka kimpoavat seinistä. Superillaan hän tulittaa järeän annoksen pomppivia ammuksia, jotka lävistävät kohteensa."
+TID_TRICKSHOT_DUDE_DESC,"Rico ampuu ryöpyn luoteja, jotka kimpoavat muureista. Superillaan hän tulittaa järeän annoksen pomppivia ammuksia, jotka lävistävät kohteensa."
 TID_TRICKSHOT_DUDE_WEAPON,POMPPUPANOKSET
-TID_TRICKSHOT_DUDE_WEAPON_DESC,Ricon luodit saavat lisää kantamaa pomppaamalla seinistä ja voivat osua suojien takana piileskeleviin vastustajiinkin.
+TID_TRICKSHOT_DUDE_WEAPON_DESC,Ricon luodit saavat lisää kantamaa pomppaamalla muureista ja voivat osua suojien takana piileskeleviin vastustajiinkin.
 TID_TRICKSHOT_DUDE_ULTI,TAITOLAUKAUS
-TID_TRICKSHOT_DUDE_ULTI_DESC,"Rico tulittaa pitkän luotiryöpyn, joka läpäisee vastustajia ja pomppaa seinistä saaden näin lisää kantamaa."
+TID_TRICKSHOT_DUDE_ULTI_DESC,"Rico tulittaa pitkän luotiryöpyn, joka läpäisee vastustajia ja pomppaa muureista saaden näin lisää kantamaa."
 TID_CACTUS,SPIKE
 TID_CACTUS_DESC,"Spike heittelee kaktuskranaatteja, joista sinkoutuu piikkejä. Spiken supervoima on pisteliäällä asenteella kylvetty piikkikenttä, joka hidastaa ja vahingoittaa vastustajia."
 TID_CACTUS_WEAPON,KAKTUSKRANAATTI
@@ -868,7 +868,7 @@ TID_TUTORIAL_2,Kerätään ne kaikki! Nämä <c50d050>voimakuutiot</c> kuuluvat 
 TID_TUTORIAL_3,"Robokohteita! Tähtää <ccc0033>vetämällä</c> <ccc0033>punaista ohjainta</c> oikealla peukalollasi, ja laukaise ase nostamalla peukalo. Tuhoa robotit!"
 TID_TUTORIAL_GOOD_JOB_1,Hienosti toimittu!
 TID_TUTORIAL_5,"Lisää kohteita! <ccc0033>Napauta</c> <ccc0033>punaista ohjainta</c>, kun haluat ampua lähintä vastustajaa. Tuhoa robotit!"
-TID_TUTORIAL_6,Käytä nyt supervoimaasi seinän takana olevan pomon ampumiseen! Tähtää supervoimasi <cff9900>vetämällä</c> <cff9900>keltaista ohjainta</c> ja laukaise irrottamalla ote!
+TID_TUTORIAL_6,Käytä nyt supervoimaasi muurin takana olevan pomon ampumiseen! Tähtää supervoimasi <cff9900>vetämällä</c> <cff9900>keltaista ohjainta</c> ja laukaise irrottamalla ote!
 TID_TUTORIAL_555,"Hyvin menee, anna palaa!"
 TID_TUTORIAL_7,"Hyvää työtä! Saimme <c50d050>voimakuutiot</c>, joten nyt ulos täältä!"
 TID_TUTORIAL_8,Vastustajaan osuminen lataa supervoimasi. Käytä <cff9900>keltaista ohjainta</c> hyökätäksesi supervoimallasi!
@@ -1623,7 +1623,7 @@ TID_BARREL_BOT_DESC,Darryl hyökkää tehokkaasti kahdella haulikolla. Hänen su
 TID_BARREL_BOT_WEAPON,TUPLAPIIPPU
 TID_BARREL_BOT_WEAPON_DESC,Darrylin kaksipiippuiset haulikot ampuvat kaksi annosta raskasta lyhyen kantaman tuhoa.
 TID_BARREL_BOT_ULTI,TYNNYRIJYRÄYS
-TID_BARREL_BOT_ULTI_DESC,"Darryl etenee rullaamalla tynnyrissään. Matkalla hän kolkkaa vastustajia, vähentää itseensä kohdistuvaa tuhovoimaa ja pomppii seinistä. Hänen superinsa latautuu uudelleen ajan mittaan!"
+TID_BARREL_BOT_ULTI_DESC,"Darryl etenee rullaamalla tynnyrissään. Matkalla hän kolkkaa vastustajia, vähentää itseensä kohdistuvaa tuhovoimaa ja pomppii muureista. Hänen superinsa latautuu uudelleen ajan mittaan!"
 TID_ARTILLERY_DUDE,PENNY
 TID_ARTILLERY_DUDE_DESC,"Ilkikurinen Penny on rellestävä kapinallinen, joka hallitsee \qvaltameriä\q. Hän on varsin vaarallinen seikkailija, joka tekee mitä vain saaliinsa eteen."
 TID_ARTILLERY_DUDE_WEAPON,LANTTILÄIMÄYS
@@ -1808,7 +1808,7 @@ TID_HINT_17,"Laukausten tähtääminen pensaaseen on hyvä tapa tarkistaa, onko 
 TID_HINT_18,Pikatulitus tehoaa hyvin paikallaan pysyviin vastustajiin.
 TID_HINT_19,"Pikatulitus tehoaa hyvin vastustajiin, jotka kulkevat suoraan sinua kohti tai sinusta pois päin."
 TID_HINT_20,"Kun olet pensaassa, vastustaja voi nähdä sinut, jos hyökkäät tai vahingoitut."
-TID_HINT_21,Voit käyttää pensaita vastustajalta piiloutumiseen.
+TID_HINT_21,Pensaissa voit olla piilossa vastustajilta ja samalla parantua.
 TID_HINT_22,"Kun käytät pikatulitusta, aseesi ampuu, vaikka sen kantamalla ei olisi vastustajia."
 TID_VS_TUTORIAL,Kerää kaikki <c50d050>voimakuutiot</c>!
 TID_USE_MANUAL_FIRE_TUTORIAL,Tähtää vetämällä <ccc0033>punaista ohjainta</c>!
@@ -1863,7 +1863,7 @@ TID_GATCHA_AD_CONTINUE_BUTTON_TITLE,JATKA
 TID_AD_DOUBLER_TITLE,VALITSE TUPLATTAVA PALKINTO
 TID_AD_DOUBLER_CONTINUE,JATKA
 TID_GATCHA_CONTINUE,JATKA
-TID_HINT_23,Jotkin rämäpäät ovat toisia parempia tietyissä kartoissa ja tapahtumissa.
+TID_HINT_23,Jotkin rämäpäät sopivat toisia paremmin tiettyihin karttoihin ja tapahtumiin.
 TID_HINT_24,Pitkän kantaman rämäpäät ovat yleensä parempia avoimissa kartoissa.
 TID_HINT_25,"Lyhyen kantaman rämäpäät ovat yleensä parempia kartoissa, joissa on enemmän suoja- ja piilopaikkoja."
 TID_SPEC_ABI_SELF_DESTRUCT,VIIMEINEN PAMAUS
@@ -2077,13 +2077,13 @@ TID_PLAYER_MAP_PROPS,Pelaajakartan suunnittelija:\n<cff8000><CREDIT></c>
 TID_PLAYER_MAP_WINNER_SLOT_PROPS,PÄIVÄN VOITTAJA!\n\nSuunnitellut:\n<cff8000><CREDIT></c>
 TID_BATTLE_ROYALE_12,Tukala labyrintti
 TID_TEAM_INVITE_ALREADY_IN_TEAM,Pelaaja on jo joukkueessa!
-TID_HINT_38,"Pyörivä sininen kehä rämäpään alla tarkoittaa, että supervoima on valmis."
+TID_HINT_38,"Pyörivä kehä rämäpään alla tarkoittaa, että supervoima on valmis."
 TID_HINT_39,"Pyörivä keltainen kehä rämäpään alla tarkoittaa, että hän tähtää parhaillaan supervoimaansa."
 TID_EVENT_NOT_AVAILABLE,Ei tapahtumaa
 TID_SHOP_OFFER_PURCHASE_AD_NOT_AVAILABLE,Ei videota saatavilla. Kurkkaa myöhemmin uudelleen!
 TID_SHOP_NOT_AVAILABLE,ei saatavilla
 TID_UNDERTAKER_GREASER_SKIN_SHOP,FIFTARI-\nMORTIS
-TID_HINT_40,Yhdistä pelisi Supercell ID:hen asetusvalikossa. Näin pidät pelitilisi turvassa ja voit pelata useilla laitteilla. Lisäksi saat ilmaisen asupalkinnon!
+TID_HINT_40,Yhdistä pelisi Supercell ID:hen asetusvalikossa. Näin pidät pelitilisi turvassa ja voit pelata useilla laitteilla. Lisäksi saat palkinnoksi ilmaisen asun!
 TID_GACHA_VIDEO_REWARD_RECEIVED,Ylimääräisiä palkintoja lisätty!
 TID_BUTTON_NAVI_SHOP,KAUPPA
 TID_BUTTON_NAVI_SOCIAL,PELAAJAT
@@ -2099,7 +2099,7 @@ TID_EVENT_MODIFIER_DESC_5,Parantavia sieniä ilmestyy sattumanvaraisesti. Hetken
 TID_EVENT_MODIFIER_DESC_5_SD,Parantavia sieniä ilmestyy sattumanvaraisesti! Kavereidesi lähellä oleminen kuitenkin estää sieniä kasvamasta.
 TID_NINJA,LEON
 TID_ROSA,ROSA
-TID_HINT_42,"Kun rämäpääsi ei hyökkää tai vahingoitu hetkeen, se alkaa parantua."
+TID_HINT_42,"Kun rämäpääsi ei hyökkää tai vahingoitu, se alkaa hetken kuluttua parantua."
 TID_HOOK_SHORT_DESC,VAHVISTUS
 TID_HOOK_DESC,"Gene ampuu taikalampustaan moneen osaan jakaantuvan ammuksen. Hänen superinsa on lampunhengen taikakäsi, joka nappaa vastustajia ja vetää heidät lähemmäksi."
 TID_SPEC_ABI_HOOK,TÄHTISUMU
@@ -2762,7 +2762,7 @@ TID_SPEC_SHIELD_ULTI_DESC,"Kun Brockin supervoima on täyteen latautunut ja käy
 TID_SPEC_ABI_PET,KANANLENTO
 TID_SPEC_ABI_PET_DESC,Dynamiken lintu liittyy taistoon!
 TID_SPEC_ABI_DAMAGE_ULTI,HENKIEN MÄTKIMÄ
-TID_SPEC_ABI_DAMAGE_ULTI_DESC,"Kun Genen supervoima on latautunut, hänen hyökkäyksensä aiheuttaa <c00cc00><VALUE1></c> pisteen verran enemmän tuhoa."
+TID_SPEC_ABI_DAMAGE_ULTI_DESC,"Kun Genen supervoima on latautunut, hänen hyökkäyksensä aiheuttaa <c00cc00><VALUE1></c> pistettä enemmän tuhoa."
 TID_ARCADE,8-BIT
 TID_ARCADE_DESC,"8-BIT on raskaan oloisesti jolkottava vanhan ajan pelikone, joka ampuu tuhoisia lasersäteitä ja lisää oman joukkueensa tuhovoimaa superillaan!"
 TID_ARCADE_SHORT_DESC,TUHOAJA
@@ -3724,7 +3724,7 @@ TID_POWER_LEVELER_WEAPON_DESC,"Surge ampuu energiajuoman, joka jakautuu kahteen 
 TID_POWER_LEVELER_ULTI,BILETEMPUT
 TID_POWER_LEVELER_ULTI_DESC,"Jokaisen supervoiman käytön myötä Surge päivittyy (enintään 3 tasoa). Päivitykset poistuvat, jos Surge tyrmätään.\n\n1. taso: nopeampi liikkuminen\n2. taso: pidempi aseen kantama\n3. taso: perushyökkäys jakautuu kahden sijasta kuuteen"
 TID_SPEC_ABI_POWER_LEVELER_1,ÄÄRIRAJOILLE!
-TID_SPEC_ABI_POWER_LEVELER_1_DESC,Surgen perushyökkäyksen ammus jakautuu nyt osuessaan seinään.
+TID_SPEC_ABI_POWER_LEVELER_1_DESC,Surgen perushyökkäyksen ammus jakautuu nyt osuessaan muuriin.
 TID_SPEC_ABI_POWER_LEVELER_2,TARJOILLAAN KYLMÄNÄ
 TID_SPEC_ABI_POWER_LEVELER_2_DESC,Surge ei menetä päivitysten ensimmäistä tasoa koko ottelun aikana.
 TID_ACCESSORY_POWER_LEVELER_BLINK,ENERGIAPIIKKI
@@ -3764,7 +3764,7 @@ TID_ACCESSORY_UNDERTAKER_RELOAD_DESC,Mortis lataa nopeammin <c00cc00><VALUE1></c
 TID_ACCESSORY_SNIPER_SEEKER,OHJAUSJÄRJESTELMÄ
 TID_ACCESSORY_SNIPER_SEEKER_DESC,Aktivoimisen jälkeen Piperin seuraava perushyökkäys hakeutuu vastustajien luokse.
 TID_ACCESSORY_LUCHADOR_METEOR,ASTEROIDIVYÖHYKE
-TID_ACCESSORY_LUCHADOR_METEOR_DESC,"El Primo lähettää kohti lähintä vastustajaa pienen meteoriitin, joka aiheuttaa <c00cc00><VALUE1></c> pistettä tuhoa ja tuhoaa seiniä."
+TID_ACCESSORY_LUCHADOR_METEOR_DESC,"El Primo lähettää kohti lähintä vastustajaa pienen meteoriitin, joka aiheuttaa <c00cc00><VALUE1></c> pistettä tuhoa ja tuhoaa muureja."
 TID_ACCESSORY_BARKEEP_HEAL_POTION,YRTTIROHTO
 TID_ACCESSORY_BARKEEP_HEAL_POTION_DESC,"Barley heittää lähimpiä liittolaisiaan kohti parantavan rohdon, jonka vaikutusalueella näille palautuu <c00cc00><VALUE1></c> elinvoimapistettä sekunnissa."
 TID_ACCESSORY_TNT_STUN,KASAPANOS
@@ -4080,7 +4080,7 @@ TID_ACCESSORY_SHAMAN_SHIELD_DESC,Nitan karhu saa <c00cc00><VALUE2> %:n</c> suoj
 TID_ACCESSORY_WALLY_REPOSITION,PIKAIDÄTYS
 TID_ACCESSORY_WALLY_REPOSITION_DESC,"Sprout tuhoaa senhetkisen pensasaitansa, mutta hänen supervoimansa latautuu heti täysin."
 TID_ACCESSORY_MEGA_ROCKET,MEGARAKETTI
-TID_ACCESSORY_MEGA_ROCKET_DESC,"Brockin seuraava hyökkäys on megaraketti, joka on isompi, pahempi ja nopeampi ja tuhoaa myös seiniä."
+TID_ACCESSORY_MEGA_ROCKET_DESC,"Brockin seuraava hyökkäys on megaraketti, joka on isompi, pahempi ja nopeampi ja tuhoaa myös muureja."
 TID_ACCESSORY_WHIRLWIND_FLY,LENTOHAKKU
 TID_ACCESSORY_WHIRLWIND_FLY_DESC,Carlin seuraavassa hyökkäyksessä hänen hakkunsa lennättää hänet mahdollisimman kauas hyökkäyksestä.
 TID_ACCESSORY_ARCADE_DOUBLE,BONUSPOLETIT
@@ -4387,14 +4387,14 @@ TID_BOSS_7,Tulenarka taistelu
 TID_BOSS_8,Pyyntikausi
 TID_COOP_7,Kaikki peliin
 TID_COOP_8,Päätepysäkki
-TID_HERO_INFO_LOCKED_BP_TIER_INFO_SHORT,Saatavilla kauden tason <NUM> jälkeen
-TID_HERO_INFO_LOCKED_BP_TIER_INFO,Saatavilla kauden tason <NUM> jälkeen
+TID_HERO_INFO_LOCKED_BP_TIER_INFO_SHORT,Saatavilla kauden tason <NUM> jälkeen.
+TID_HERO_INFO_LOCKED_BP_TIER_INFO,Saatavilla kauden tason <NUM> jälkeen.
 TID_HERO_INFO_LOCKED_BP_INFO_SHORT,Hanki Brawl Pass tai löydä avaamalla lippaita.
 TID_HERO_INFO_LOCKED_BP_INFO,Hanki Brawl Pass tai löydä avaamalla lippaita.
 TID_HERO_INFO_LOCKED_BP_TIER_OWNED_INFO_SHORT,Avaa kauden tasolla <NUM>.
 TID_HERO_INFO_LOCKED_BP_TIER_OWNED_INFO,Avaa kauden tasolla <NUM>.
-TID_HERO_INFO_LOCKED_BP_FUTURE_SEASON_INFO,Saapuu kaudella <SEASON>
-TID_HERO_INFO_LOCKED_BP_FUTURE_SEASON_INFO_SHORT,Saapuu kaudella <SEASON>
+TID_HERO_INFO_LOCKED_BP_FUTURE_SEASON_INFO,Saapuu kaudella <SEASON>.
+TID_HERO_INFO_LOCKED_BP_FUTURE_SEASON_INFO_SHORT,Saapuu kaudella <SEASON>.
 TID_RAID_4,Ryminää viidakossa
 TID_RAID_5,Köysikikka
 TID_BRAWLPASS_AUTOCOLLECT_INFO,"Haluaisimme muistuttaa, että sinulla on lunastamattomia palkintoja kaudelta <NUM>. Kaudella <NUM> ansaitsemasi palkinnot lunastetaan puolestasi automaattisesti, jos et lunasta niitä pian. Lunastamattomat tehopistepalkinnot muutetaan kolikoiksi nykyisen kauden päättyessä."
@@ -4484,9 +4484,9 @@ TID_EMOTE_BUNDLE_BRALWMAS_PACK,RÄMÄPÄIDEN JUHLAPYHÄMERKIT
 TID_MAP_EDITOR_LEGAL_WARNING_TITLE,Tärkeä ilmoitus
 TID_MAP_EDITOR_LEGAL_WARNING_DESC,"Kiitos, kun käytät kartantekijää. Muistathan kartantekijää käyttäessäsi noudattaa Tencent Gamesin lisenssi- ja palvelusopimusta ja muita sovellettavissa olevia sääntöjä. Älä luo tai levitä sopimatonta sisältöä, kuten eroottista tai siveetöntä materiaalia tai materiaalia, joka vaarantaa kansallisen yhtenäisyyden, suvereniteetin tai alueellisen koskemattomuuden, tai joka rikkoo lakeja ja muita määräyksiä."
 TID_MAP_EDITOR_LEGAL_WARNING_DESC_YOOZOO,"Kiitos, kun käytät kartantekijää. Muistathan kartantekijää käyttäessäsi noudattaa käyttäjäsopimusta ja muita sovellettavissa olevia sääntöjä. Älä luo tai levitä sopimatonta sisältöä, kuten eroottista tai siveetöntä materiaalia tai materiaalia, joka vaarantaa kansallisen yhtenäisyyden, suvereniteetin tai alueellisen koskemattomuuden, tai joka rikkoo lakeja ja muita määräyksiä."
-TID_RUFFS,EVERSTI RUFFS
+TID_RUFFS,RUFFS
 TID_RUFFS_SHORT_DESC,VAHVISTUS
-TID_RUFFS_DESC,"Ruffs ampuu kaksoislaukauksen laserilla, joka kimpoaa muureista. Hänen supervoimansa on avustuslähetys, joka vahingoittaa vastustajia putoamisalueella ja antaa tehosteen oman joukkueen kerättäväksi."
+TID_RUFFS_DESC,"Eversti Ruffsin käskyt saattavat kuulostaa haukkumiselta, mutta oikeasti hän on tosi hyvä poika!\n\nRuffsin vakava olemus kätkee taakseen koiramaiset piirteet, jotka paljastuvat, jos joku alkaa heittää keppiä."
 TID_RUFFS_WEAPON,TUPLALASER
 TID_RUFFS_WEAPON_DESC,Ruffsin kaksoislaser kimpoaa muureista useita kertoja ja voi osua myös esteiden taakse piiloutuneisiin vastustajiin.
 TID_RUFFS_ULTI,AVUSTUSLÄHETYS
@@ -4527,7 +4527,7 @@ TID_ACCESSORY_ENRAGER_PROTECTION_DESC,"Edgar saa suojan, joka estää seuraavat 
 TID_ACCESSORY_MINIGUN_DUDE_AMMO_SINK,ROMUNRYÖSTÄJÄ
 TID_ACCESSORY_MINIGUN_DUDE_AMMO_SINK_DESC,Jokainen Pamin seuraavan hyökkäyksen osumista poistaa <c00cc00><VALUE1> %</c> vastustajarämäpään ammuksista. Näistä Pam saa <c00cc00><VALUE2> %</c> itselleen.
 TID_ACCESSORY_SANDSTORM_STUN_SLEEP,KAUNIITA UNIA
-TID_ACCESSORY_SANDSTORM_STUN_SLEEP_DESC,"Sandyn seuraava hyökkäys tuudittaa vastustajan uneen <c00cc00><VALUE1></c> sekunniksi. Vastustaja kuitenkin herää, jos hänelle aiheutuu tuhoa."
+TID_ACCESSORY_SANDSTORM_STUN_SLEEP_DESC,"Sandyn seuraava hyökkäys tuudittaa vastustajat uneen <c00cc00><VALUE1></c> sekunniksi. Vastustajat kuitenkin heräävät, jos heille aiheutuu tuhoa."
 TID_ACCESSORY_CACTUS_COVER,KASVIVOIMAA
 TID_ACCESSORY_CACTUS_COVER_DESC,"Spike kasvattaa oman joukkueensa suojaksi ison kaktuksen, jolla on <c00cc00><VALUE1></c> pistettä elinvoimaa. Jos kaktus tuhotaan, se räjähtää ja lähellä oleville omille rämäpäille palautuu <c00cc00><VALUE2></c> pistettä elinvoimaa."
 TID_ACCESSORY_BLOWER_STOPPER,PYÖRREMYRSKY
@@ -4927,7 +4927,7 @@ TID_ROPE_DUDE_DESC,"Buzz työskentelee uimavalvojana Velocirapids-kylpylässä. 
 TID_ROPE_DUDE_WEAPON,VESIPERÄ
 TID_ROPE_DUDE_WEAPON_DESC,"Buzz puhaltaa pillillään kaaren muodossa viisi vihellystä, jotka vihlovat lähellä olevien korvia."
 TID_ROPE_DUDE_ULTI,TORPEDONHEITTO
-TID_ROPE_DUDE_ULTI_DESC,"Buzz viskaa torpedopoijunsa. Jos se osuu vastustajaan tai seinään, Buzz kiskoo itsensä sen luo, ja lähellä hänen saapumispaikkaansa olevat vastustajat lamaantuvat hetkeksi."
+TID_ROPE_DUDE_ULTI_DESC,"Buzz viskaa torpedopoijunsa. Jos se osuu vastustajaan tai muuriin, Buzz kiskoo itsensä sen luo, ja lähellä hänen saapumispaikkaansa olevat vastustajat lamaantuvat hetkeksi."
 TID_SPEC_ABI_ROPE_DUDE_1,RAJUMPI TORPEDO
 TID_SPEC_ABI_ROPE_DUDE_1_DESC,Buzzin supervoiman aiheuttaman lamaannuksen vähimmäiskesto pitenee <c00cc00><VALUE1></c> sekuntiin.
 TID_SPEC_ABI_ROPE_DUDE_2,SILMÄ TARKKANA
@@ -4947,7 +4947,7 @@ TID_SPEC_ABI_ASSAULT_SHOTGUN_1_DESC,"Raivoisa Griff viskoo kolikoita nopeammin, 
 TID_SPEC_ABI_ASSAULT_SHOTGUN_2,BISNESVAISTO
 TID_SPEC_ABI_ASSAULT_SHOTGUN_2_DESC,Griff saa takaisin puuttuvaa elinvoimaansa <c00cc00><VALUE1> %</c> joka <c00cc00><VALUE2>.</c> sekunti.
 TID_ACCESSORY_ASSAULT_SHOTGUN_BOMB,SÄÄSTÖPOSSU
-TID_ACCESSORY_ASSAULT_SHOTGUN_BOMB_DESC,"Griff pudottaa papateilla täytetyn säästöpossun, joka pienen viiveen jälkeen räjähtää ja tuhoaa esteitä sekä aiheuttaa <c00cc00><VALUE1></c> pisteen verran tuhoa kantaman sisällä oleville vastustajille."
+TID_ACCESSORY_ASSAULT_SHOTGUN_BOMB_DESC,"Griff pudottaa papateilla täytetyn säästöpossun, joka pienen viiveen jälkeen räjähtää ja tuhoaa esteitä sekä aiheuttaa <c00cc00><VALUE1></c> pistettä tuhoa kantaman sisällä oleville vastustajille."
 TID_KNIGHT,ASH
 TID_KNIGHT_SHORT_DESC,TANKKI
 TID_KNIGHT_DESC,"Rojujen siivoaminen kiukuttaa Ashia, varsinkin, kun homman joutuu hoitamaan samalla taistellen. Raivostuttuaan hän on nopeampi ja vaarallisempi, mutta rauhoittuu kyllä aikanaan."
@@ -5795,7 +5795,7 @@ TID_KICKER_DUDE_DESC,"Fang potkii ensimmäisenä ja nopeasti. Hänen perushyökk
 TID_KICKER_DUDE_WEAPON,KENG-FU
 TID_KICKER_DUDE_WEAPON_DESC,"Fang heilauttaa nopean potkun, johon liittyy salainen kikka: jos potku menee ohi, Fangin kenkä lentää hänen jalastaan!"
 TID_KICKER_DUDE_ULTI,LENTOPOTKU
-TID_KICKER_DUDE_ULTI_DESC,Fangin napakka potku voi osuessaan ketjuttaa 3 lisäpotkua lähellä oleviin vihollisiin.
+TID_KICKER_DUDE_ULTI_DESC,Fangin napakka lentopotku voi osuessaan ketjuttaa 3 lisäpotkua lähellä oleviin vastustajiin.
 TID_SPEC_ABI_KICKER_DUDE_1,HIPPULAT VINKUU
 TID_SPEC_ABI_KICKER_DUDE_1_DESC,"Kun Fang voittaa vastustajarämäpään superillaan, supervoima latautuu välittömästi, eli hän voi käyttää sitä heti uudelleen!"
 TID_SPEC_ABI_KICKER_DUDE_2,TURVAKENGÄT
@@ -6015,7 +6015,7 @@ TID_LOGIN_CALENDAR_REWARD_DESC_GADGET_CHOICE,"Valitse varuste rämäpäälle <VA
 TID_LOGIN_CALENDAR_REWARD_DESC_PIN_X2,Tästä lahjasta saat 2 uutta merkkiä
 TID_LOGIN_CALENDAR_REWARD_DESC_STARPOWER_CHOICE,Valitse tähtivoima rämäpäälle <VALUE>. Tähtivoimat ovat passiivisia lisäkykyjä rämäpäällesi.
 TID_LOGIN_CALENDAR_ERROR_REWARD_EXPIRED,Palkinto on vanhentunut
-TID_CHINA_PRIVACY_SETTINGS_BUTTON,Yksityisyysasetukset
+TID_CHINA_PRIVACY_SETTINGS_BUTTON,Yksityisyys-\nasetukset
 TID_CHINA_PRIVACY_SETTINGS_TITLE,YKSITYISYYSASETUKSET
 TID_CHINA_PRIVACY_HIDE_IN_LEADERBOARDS,PIILOTA PISTETAULUKOSSA
 TID_ACCESSORY_CROSS_BOMBER_BURST,RADION TESTAUS
@@ -6168,7 +6168,7 @@ TID_CANNON_GIRL_DESC,"Bonnie ja hänen tykkinsä Clyde eivät yleensä ole liikk
 TID_CANNON_GIRL_WEAPON,HAMMASKEIJU
 TID_CANNON_GIRL_WEAPON_DESC,Bonnie ampuu Clydella vastustajia kohti valtavan hampaan.
 TID_CANNON_GIRL_ULTI,STUNTTITYKKI
-TID_CANNON_GIRL_ULTI_DESC,Clyde ampuu Bonnien yläilmoihin. Bonnie voi ylittää esteitä ja aiheuttaa tuhoa vastustajille laskeutuessaan.
+TID_CANNON_GIRL_ULTI_DESC,"Clyde ampuu Bonnien yläilmoihin. Bonnie voi ylittää esteitä, ja hän aiheuttaa tuhoa vastustajille laskeutuessaan."
 TID_CANNON_GIRL_SMALL_WEAPON,ÄSSÄ HIHASSA
 TID_CANNON_GIRL_SMALL_WEAPON_DESC,Bonnie lähettää hihastaan matkaan joukon pikku kranaatteja.
 TID_CANNON_GIRL_SMALL_ULTI,CLYDE
@@ -6345,7 +6345,7 @@ TID_ACCESSORY_FIRE_DUDE_FLAME_SHIELD_DESC,"Amber luo <c00cc00><VALUE3></c> liekk
 TID_ACCESSORY_MECHA_DUDE_TOWER_RELOAD,TYÖKALUPAKKI
 TID_ACCESSORY_MECHA_DUDE_TOWER_RELOAD_DESC,"Mega pudottaa työkalupakkinsa, ja lähellä olevien omien rämäpäiden latausnopeus kasvaa <c00cc00><VALUE1> %:lla</c> pakin tuhoutumiseen saakka."
 TID_ACCESSORY_ROPE_DUDE_VISION,RÖNTGENLASIT
-TID_ACCESSORY_ROPE_DUDE_VISION_DESC,Buzz näkee kaikkiin pensaisiin <c00cc00><VALUE1></c> sekunnin ajan.
+TID_ACCESSORY_ROPE_DUDE_VISION_DESC,Buzz näkee kaikkiin supervoimansa latausalueella oleviin pensaisiin <c00cc00><VALUE1></c> sekunnin ajan.
 TID_LOGIN_CALENDAR_ALREADY_HAVE_BRAWLER,Sinulla on jo tämä rämäpää.
 TID_LOGIN_CALENDAR_ALREADY_HAVE_GADGET,Sinulla on jo tämä varuste.
 TID_LOGIN_CALENDAR_ALREADY_HAVE_STAR_POWER,Sinulla on jo tämä tähtivoima.
@@ -6460,6 +6460,7 @@ TID_ACCESSORY_SILENCER_GADGET_1_DESC,"Jos seuraava meritähti ei osu vastustajaa
 TID_ACCESSORY_SILENCER_GADGET_2,JÄTTIROISKAUS
 TID_ACCESSORY_SILENCER_GADGET_2_DESC,"Seuraavalla hyökkäyksellään Otis ampuu jättimäisen mustepallon, jonka jättämä lätäkkö aiheuttaa <c00cc00><VALUE1></c> pistettä tuhoa <c00cc00><VALUE2></c> sekunnissa."
 TID_RANDOM_GAME_MODE,MYSTEERI
+TID_ADVENTURE_GAME_MODE,SEIKKAILU
 TID_NOTIFICATION_RANDOM,MYSTEERIN uusi kartta on auki! Voita uusia palkintoja!
 TID_SKIN_INFO_DEEPSEA,Syvänmeren rähinäasu
 TID_EMOTE_BUNDLE_DEEPSEA_PACK,Syvänmeren rähinäasumerkit
@@ -6539,7 +6540,7 @@ TID_RANKED_SUGGESTION,<NAME> ehdotti tätä: <BRAWLER>
 TID_CLUB_EVENTS_STARTS_IN,Alkamiseen:
 TID_CLUB_EVENTS_ACTIVE_FOR,Aktiivisena:
 TID_GAME_MODE_28,METSÄSTÄJÄT
-TID_GAME_MODE_28_DESC,Metsästyskausi alkaa!\n\nKerää pisteitä metsästämällä ja kukistamalla vastustajia. Ensimmäisenä <MAX_SCORE> pistettä kerännyt voittaa ottelun!
+TID_GAME_MODE_28_DESC,Metsästyskausi alkaa!\n\nKerää pisteitä jahtaamalla ja kukistamalla vastustajia. Ensimmäisenä <MAX_SCORE> pistettä kerännyt voittaa ottelun!
 TID_DEATHMATCH_FFA_INTRO_TEXT,Tyrmää vastustajia!
 TID_NOTIFICATION_DEATHMATCH_FFA,METSÄSTÄJIEN uusi kartta on auki! Voita uusia palkintoja!
 TID_DEATHMATCH_FFA_1,Kovat koettelemukset
@@ -6554,10 +6555,10 @@ TID_CLUB_QUESTS_CURRENT_CLUB_POINTS,Jengisi tällä viikolla keräämät kokonai
 TID_CLUB_QUESTS_THIS_WEEKS_QUESTS,TÄMÄN VIIKON JENGITEHTÄVÄT
 TID_SPEC_ABI_ARTILLERY_DUDE_1,KIRSTUT TÄYNNÄ
 TID_SPEC_ABI_ARTILLERY_DUDE_1_DESC,Pennyn kultapussit ratkeavat <c00cc00><VALUE1> %</c> laajempana kartiona jokaisen osuman jälkeen.
-TID_SPEC_ABI_ARTILLERY_DUDE_2,SUPERSÄTEILYTTÄJÄ
-TID_SPEC_ABI_ARTILLERY_DUDE_2_DESC,Pennyn tykki aiheuttaa <c00cc00><VALUE1> %</c> tuhoa ja työntää lähellä olevia vastustajia taaksepäin laskeutuessaan.
+TID_SPEC_ABI_ARTILLERY_DUDE_2,TUHOISA TYKKI
+TID_SPEC_ABI_ARTILLERY_DUDE_2_DESC,Pennyn tykki aiheuttaa <c00cc00><VALUE1></c> pistettä tuhoa ja työntää lähellä olevia vastustajia taaksepäin laskeutuessaan.
 TID_ACCESSORY_ARTILLERY_DUDE_GADGET_1,SUOLATYNNYRI
-TID_ACCESSORY_ARTILLERY_DUDE_GADGET_1_DESC,"Penny pudottaa suolatynnyrin, joka pysäyttää vastustajan ammukset. Hän voi myös avata sillä omat kultapussinsa."
+TID_ACCESSORY_ARTILLERY_DUDE_GADGET_1_DESC,"Penny pudottaa suolatynnyrin, joka pysäyttää vastustajien ammukset. Hän voi myös avata sillä omat kultapussinsa."
 TID_ACCESSORY_ARTILLERY_DUDE_GADGET_2,LUOTTOKAUKOPUTKI
 TID_ACCESSORY_ARTILLERY_DUDE_GADGET_2_DESC,Pennyn tykki ampuu kaikkia kantamalla sisällä näkyvissä olevia vastustajia.
 TID_RANDOM_GAME_MODE_DESC,"Pelaa ottelu, joka on koottu satunnaisista pelitiloista, kartoista ja muokkaajista. Täysin ennalta arvaamatonta!"
@@ -6602,6 +6603,146 @@ TID_TRUE_GOLD_EVE_SKIN_SHOP,JALOKULTA-\nEVE
 TID_TRUE_SILVER_EVE_SKIN,JALOHOPEA-EVE
 TID_TRUE_SILVER_EVE_SKIN_SHOP,JALOHOPEA-\nEVE
 TID_BRAWL_PASS_SEASON_12,SYVÄNMEREN RÄHINÄT
+TID_TRIPLE_TAKEDOWN,TRIPLATYRMÄYS
+TID_QUAD_TAKEDOWN,NELOSTYRMÄYS
+TID_WEAPON_THROWER,SAM
+TID_WEAPON_THROWER_SHORT_DESC,TUHOAJA
+TID_WEAPON_THROWER_DESC,"Entisenä tehdastyöntekijänä Sam Bronson janoaa kostoa kaikille roboteille.\n\nKultakäden koplassa hän edustaa raakaa voimaa ja suostuu milloin vain ryöstökeikalle, jos siellä pääsee romuttamaan robotteja!"
+TID_WEAPON_THROWER_WEAPON,KOVAT OTTEET
+TID_WEAPON_THROWER_WEAPON_DESC,"Sam jakaa ronskit lyöntinsä tuplana. Kun hanskat ovat kädessä, hän aiheuttaa paljon enemmän tuhoa."
+TID_WEAPON_THROWER_ULTI,RÄJÄHTÄVÄT RYSTYSET
+TID_WEAPON_THROWER_ULTI_DESC,"Sam heittää räjähtävät rystysensä, jotka aiheuttavat tuhoa kaikille vastustajille ennen maahan osumista. Hänen seuraava superinsa palauttaa ne hänen käteensä ja aiheuttaa tuhoa."
+TID_SPEC_ABI_WEAPON_THROWER_1,PIKAINEN PARANEMINEN
+TID_SPEC_ABI_WEAPON_THROWER_1_DESC,Räjähtävien rystysten palauttamisen jälkeen Sam saa heti takaisin <c00cc00><VALUE1> %</c> elinvoimaa.
+TID_SPEC_ABI_WEAPON_THROWER_2,KAUKOLATAUS
+TID_SPEC_ABI_WEAPON_THROWER_2_DESC,"Kun räjähtävät rystyset ovat maassa vastustajien lähellä, Samin supervoima latautuu."
+TID_ACCESSORY_WEAPON_THROWER_GADGET_1,MAGNEETTIKENTTÄ
+TID_ACCESSORY_WEAPON_THROWER_GADGET_1_DESC,"Kun räjähtävät rystyset ovat maassa, Sam voi aktivoida ne, jolloin ne vetävät vastustajia puoleensa."
+TID_ACCESSORY_WEAPON_THROWER_GADGET_2,HYLJEKSIJÄ
+TID_ACCESSORY_WEAPON_THROWER_GADGET_2_DESC,"Kun Samin seuraavat räjähtävät rystyset osuvat maahan, ne työntävät vastustajia taaksepäin sähköpurkauksella."
+TID_ACCESSORY_BLOCKED_MISSING_GAUNTLETS,Räjähtävät rystyset eivät ole maassa!
+TID_ACCESSORY_BLOCKED_GAUNTLETS_TOO_FAR,Räjähtävät rystyset ovat liian kaukana!
+TID_ACCESSORY_BLOCKED_GAUNTLETS_REQUIRED,Tarvitaan räjähtävät rystyset!
+TID_SOUL_COLLECTOR,GUS
+TID_SOUL_COLLECTOR_SHORT_DESC,VAHVISTUS
+TID_SOUL_COLLECTOR_DESC,"Kauan sitten hylätyssä junassa majaileva Gus rakastaa ilmapalloja. Hän on mestarillinen ilmapalloeläinten tekijä - se on hyvää ajanvietettä, eikä olo ole niin yksinäinen."
+TID_SOUL_COLLECTOR_WEAPON,HULLUT PALLOT
+TID_SOUL_COLLECTOR_WEAPON_DESC,"Gus ampuu vastustajia ilmapalloilla. Usean osuman jälkeen ilmaantuu henki, joita kokoamalla sinulle ja joukkueellesi palautuu elinvoimaa."
+TID_SOUL_COLLECTOR_ULTI,AAVEPALLO
+TID_SOUL_COLLECTOR_ULTI_DESC,"Gusin paras kaveri on hänen itse tekemänsä ilmapallokummitus, jonka avulla hän voi luoda suojan itsensä tai yhden joukkuekaverinsa ympärille."
+TID_SPEC_ABI_SOUL_COLLECTOR_1,ELINVOIMALÄHDE
+TID_SPEC_ABI_SOUL_COLLECTOR_1_DESC,Hulluista palloista saatu parantuminen kasvaa <c00cc00><VALUE1> %</c>.
+TID_SPEC_ABI_SOUL_COLLECTOR_2,VOIMAELÄIN
+TID_SPEC_ABI_SOUL_COLLECTOR_2_DESC,Aavepallo kasvattaa joukkuekaverin aiheuttamaa tuhoa <c00cc00><VALUE1> %</c> <c00cc00><VALUE2></c> sekunnin ajan.
+TID_ACCESSORY_SOUL_COLLECTOR_GADGET_1,HENKIPAMAUS
+TID_ACCESSORY_SOUL_COLLECTOR_GADGET_1_DESC,"Räjäytä kaikki keräämättömät henget, niin lähellä olevat vastustajat kärsivät <c00cc00><VALUE1></c> pistettä tuhoa."
+TID_ACCESSORY_SOUL_COLLECTOR_GADGET_2,SIELUNVAIHTO
+TID_ACCESSORY_SOUL_COLLECTOR_GADGET_2_DESC,Gus menettää <ccc0000><VALUE1> %</c> elinvoimaa ja kerryttää henkeä välittömästi <c00cc00><VALUE2> %</c>.
+TID_ACCESSORY_BLOCKED_MISSING_SOULS,Tarvitaan enemmän henkiä!
+TID_ACCESSORY_BLOCKED_SPIRIT_ALREADY_FULL,Henki on jo täynnä!
+TID_SKIN_INFO_OUTLAW,Katalan koplan asu
+TID_EMOJI_SURGE_TEAM,NAVI
+TID_EMOJI_MORTIS_TEAM,SK
+TID_EMOJI_SPIKE_TEAM,INTZ
+TID_EMOJI_PRIMO_TEAM,TQ
+TID_EMOJI_COLT_TEAM,STMN
+TID_EMOJI_NITA_TEAM,OBEY
+TID_EMOJI_LEON_TEAM,QLASH
+TID_EMOJI_JESSIE_TEAM,ZETA
+TID_EMOJI_EMZ_TEAM,TRIBE
+TID_EMOJI_SHELLY_TEAM,TOTEM
+TID_SKIN_INFO_MECHA,Mechan asu
+TID_SCID_REQUIRED_DESC,Iästäsi johtuen sinun on yhdistettävä pelisi Supercell ID:hen
+TID_SCID_REQUIRED_CONNECT,YHDISTÄ
+TID_LOGIN_CALENDAR_POPULAR,SUOSITTU
+TID_TRAIT_SUPER_START,Tämä rämäpää aloittaa täyteen ladatulla supervoimalla.
+TID_GAME_MODE_29,VIIMEINEN TOIVO
+TID_GAME_MODE_29_DESC,"Vioittuneet robotit ovat kääntyneet meitä vastaan! 8-BIT on ainoa toivomme, sillä hänen hallussaan on salainen koodi. Meidän on siis tehtävä kaikkemme, jotta 8-BIT selviää. Suojele häntä pahojen robottien hyökkäysaalloilta, kunnes aika loppuu, niin voitat ottelun.\n\nPidä 8-BIT ottelussa keräämällä rähinäkolikoita!"
+TID_GAME_MODE_29_INTRO_TEXT,Puolusta 8-BITia!
+TID_LAST_STAND_1,Eliminointi
+TID_LAST_STAND_2,Rangaistuspäivä
+TID_LAST_STAND_3,Robottien nousu
+TID_LAST_STAND_4,Pelastus
+TID_LAST_STAND_5,Oikosulku
+TID_LAST_STAND_6,Karu kohtalo
+TID_INBOX_CAPTION_55,Palkinto tehtävän suorituksesta:
+TID_ESPORTS_OFFER_TITLE,MESTARUUSKISOJEN
+TID_ESPORTS_OFFER_SUBTITLE_PINS,merkkisetti
+TID_ESPORTS_OFFER_SUBTITLE_THUMBNAILS,pelaajakuvakkeet
+TID_ESPORTS_OFFER_SUBTITLE_EACH,KPL
+TID_ESPORTS_OFFER_SUBTITLE_ALREADY_OWNED,Sinulla on nämä jo!
+TID_ESPORTS_OFFER_ITEM_PINS,Merkki
+TID_ESPORTS_OFFER_ITEM_THUMBNAILS,Pelaajakuvake
+TID_EMOTE_BUNDLE_MORTIS_MECHA_PACK,Mecha-Mortisin merkkipaketti
+TID_BRAWL_PASS_SEASON_13,ROBOTTITEHDAS
+TID_TRUE_GOLD_OTIS_SKIN,JALOKULTA-OTIS
+TID_TRUE_GOLD_OTIS_SKIN_SHOP,JALOKULTA-\nOTIS
+TID_TRUE_SILVER_OTIS_SKIN,JALOHOPEA-OTIS
+TID_TRUE_SILVER_OTIS_SKIN_SHOP,JALOHOPEA-\nOTIS
+TID_TRUE_GOLD_SQUEAK_SKIN,JALOKULTA-SQUEAK
+TID_TRUE_GOLD_SQUEAK_SKIN_SHOP,JALOKULTA-\nSQUEAK
+TID_TRUE_SILVER_SQUEAK_SKIN,JALOHOPEA-SQUEAK
+TID_TRUE_SILVER_SQUEAK_SKIN_SHOP,JALOHOPEA-\nSQUEAK
+TID_TRUE_GOLD_BYRON_SKIN,JALOKULTA-BYRON
+TID_TRUE_GOLD_BYRON_SKIN_SHOP,JALOKULTA-\nBYRON
+TID_TRUE_SILVER_BRYON_SKIN,JALOHOPEA-BYRON
+TID_TRUE_SILVER_BYRON_SKIN_SHOP,JALOHOPEA-\nBYRON
+TID_TRUE_GOLD_GRIFF_SKIN,JALOKULTA-GRIFF
+TID_TRUE_GOLD_GRIFF_SKIN_SHOP,JALOKULTA-\nGRIFF
+TID_TRUE_SILVER_GRIFF_SKIN,JALOHOPEA-GRIFF
+TID_TRUE_SILVER_GRIFF_SKIN_SHOP,JALOHOPEA-\nGRIFF
+TID_TRUE_GOLD_EDGAR_SKIN,JALOKULTA-EDGAR
+TID_TRUE_GOLD_EDGAR_SKIN_SHOP,JALOKULTA-\nEDGAR
+TID_TRUE_SILVER_EDGAR_SKIN,JALOHOPEA-EDGAR
+TID_TRUE_SILVER_EDGAR_SKIN_SHOP,JALOHOPEA-\nEDGAR
+TID_CAESAR_BRONSON_SKIN,CAESAR-SAM
+TID_CAESAR_BRONSON_SKIN_SHOP,CAESAR-\nSAM
+TID_MECHA_MORIS_SKIN,MECHA-MORTIS
+TID_MECHA_MORTIS_SKIN_SHOP,MECHA-\nMORTIS
+TID_DARK_MECHA_MORTIS_SKIN,TUMMA MECHA-MORTIS
+TID_DARK_MECHA_MORTIS_SKIN_SHOP,TUMMA\nMECHA-MORTIS
+TID_LIGHT_MECHA_MORTIS_SKIN,VAALEA MECHA-MORTIS
+TID_LIGHT_MECHA_MORTIS_SKIN_SHOP,VAALEA\nMECHA-MORTIS
+TID_OUTLAW_LOLA_SKIN,LAITON LOLA
+TID_OUTLAW_LOLA_SKIN_SHOP,LAITON\nLOLA
+TID_OUTLAW_CROW,KALLO-CROW
+TID_OUTLAW_CROW_SKIN_SHOP,KALLO-CROW
+TID_OUTLAW_POCO_SKIN,DESPERADO-POCO
+TID_OUTLAW_POCO_SKIN_SHOP,DESPERADO-\nPOCO
+TID_BROKER_PAM_SKIN,OSAKE-PAM
+TID_BROKER_PAM_SKIN_SHOP,OSAKE-\nPAM
+TID_MOON_FESTIVAL_SQUEAK_SKIN,KUUPUPU-SQUEAK
+TID_MOON_FESTIVAL_SQUEAK_SKIN_SHOP,KUUPUPU-\nSQUEAK
+TID_BRAWLOWEEN_LEON_SKIN,KEPPOSTELIJA-LEON
+TID_BRAWLOWEEN_LEON_SKIN_SHOP,KEPPOSTELIJA-\nLEON
+TID_HINT_45,Muista käyttää kaupassa sisällöntuottajan koodia.
+TID_HINT_46,Lunasta lahjoja kirjautumalla peliin joka päivä!
+TID_HINT_47,"Rähinäpallossa voit yrittää syöttää pallon vastustajalle, jotta hän tuhlaisi ammuksiaan!"
+TID_HINT_48,Ilmaise itseäsi pelissä merkeillä ja sprayilla!
+TID_HINT_49,"Aidat ovat muuten kuin muureja, mutta niiden läpi voi ampua."
+TID_HINT_50,Tiimityö on kaiken avain!
+TID_HINT_51,Haluaisitko muuttaa ohjainten paikkoja? Se onnistuu KOKEILE-toiminnolla.
+TID_HINT_52,Rähinäpallossa voit käyttää supervoimaasi superpotkuun.
+TID_HINT_53,"Kun sinulla on eniten jalokiviä jalokivikaappauksessa, keskity puolustamaan."
+TID_HINT_54,"Jos joukkuekaverisi tyrmätään, odota, että hän palaa peliin, niin voitte hyökätä yhdessä."
+TID_HINT_55,Harjoittele ja paranna taitojasi ystävyysotteluissa.
+TID_HINT_56,Tietyillä rämäpäillä on erikoispiirteitä! Voit katsoa ne rämäpään tiedoista.
+TID_HINT_57,"Kaksinpeliselkkauksessa on hyvä varmistaa, että tiimikaveri on hengissä, ennen kuin keräät voimakuutioita."
+TID_HINT_58,"Kun pelaat haasteissa, käytä Etsin joukkuetta -toimintoa."
+TID_HINT_59,"Bo voi piilottaa miinoja minne vain, joten ole varuillasi!"
+TID_HINT_60,"Loun supervoimalla voi hyvin hallita alueita, joten käytä sitä kartan avainkohdissa."
+TID_HINT_61,"Jessien aiheuttama tuho pienenee joka kerta, kun hyökkäys pomppaa vastustajasta."
+TID_HINT_62,Colette voi aiheuttaa valtavasti tuhoa korkean elinvoiman rämäpäille.
+TID_HINT_63,"Edgar paranee joka kerta, kun hänen iskunsa osuu."
+TID_HINT_64,"Janet ampuu pidemmälle sen mukaan, miten pitkälle tähtäät."
+TID_HINT_65,Gene voi härnätä vastustajaa ja ladata supervoimansa jakaantuvalla hyökkäyksellään.
+TID_LAST_STAND_WAVE_1,Robotit lähestyvät!
+TID_LAST_STAND_WAVE_2,Lisää vihollisia tulossa!
+TID_LAST_STAND_SHUTDOWN,<ccc0000>8-BIT sammuu!</c>
+TID_EMOTE_BUNDLE_OUTLAW_PACK,Katalan koplan merkkipaketti
+TID_SHOP_OUTLAW_SKINS,Katalan koplan asu
+TID_SHOP_OUTLAW_TITLE,KATALA KOPLA
+TID_ACCESSORY_BLOCKED_SOULS_TOO_FAR,Henget ovat liian kaukana!
 TID_REGION_CUSTOM1,
 TID_REGION_CUSTOM2,
 TID_REGION_CUSTOM3,

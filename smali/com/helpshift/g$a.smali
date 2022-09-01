@@ -145,7 +145,7 @@
 
     .line 12
     :cond_6
-    sget-object v0, Lcom/helpshift/util/r;->a:Ljava/util/regex/Pattern;
+    sget-object v0, La5/u;->g:Ljava/util/regex/Pattern;
 
     if-nez v0, :cond_7
 
@@ -156,11 +156,11 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/helpshift/util/r;->a:Ljava/util/regex/Pattern;
+    sput-object v0, La5/u;->g:Ljava/util/regex/Pattern;
 
     .line 14
     :cond_7
-    sget-object v0, Lcom/helpshift/util/r;->a:Ljava/util/regex/Pattern;
+    sget-object v0, La5/u;->g:Ljava/util/regex/Pattern;
 
     .line 15
     invoke-virtual {v0, p2}, Ljava/util/regex/Pattern;->matcher(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;

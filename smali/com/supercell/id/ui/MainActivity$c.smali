@@ -1,5 +1,5 @@
 .class public final Lcom/supercell/id/ui/MainActivity$c;
-.super Lse/h;
+.super Lse/i;
 .source "MainActivity.kt"
 
 # interfaces
@@ -18,29 +18,29 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/p<",
         "Lcom/supercell/id/ui/MainActivity;",
         "Lcom/supercell/id/model/IdProfile;",
-        "Lie/h;",
+        "Lie/i;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic f:Z
+.field public final synthetic g:Z
 
 
 # direct methods
 .method public constructor <init>(Z)V
     .locals 0
 
-    iput-boolean p1, p0, Lcom/supercell/id/ui/MainActivity$c;->f:Z
+    iput-boolean p1, p0, Lcom/supercell/id/ui/MainActivity$c;->g:Z
 
     const/4 p1, 0x2
 
-    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -58,14 +58,14 @@
     const-string v0, "$receiver"
 
     .line 2
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "profile"
 
-    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 3
-    iget-boolean v0, p0, Lcom/supercell/id/ui/MainActivity$c;->f:Z
+    iget-boolean v0, p0, Lcom/supercell/id/ui/MainActivity$c;->g:Z
 
     sget-object v1, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
 
@@ -91,7 +91,7 @@
     :goto_0
     xor-int/2addr v1, v2
 
-    sget-object v4, Lcom/supercell/id/ui/MainActivity;->s:Ljava/lang/ref/WeakReference;
+    sget-object v4, Lcom/supercell/id/ui/MainActivity;->t:Ljava/lang/ref/WeakReference;
 
     .line 4
     invoke-virtual {p1}, Landroid/app/Activity;->isFinishing()Z
@@ -108,7 +108,7 @@
 
     move-result-object v4
 
-    invoke-static {v4}, Lje/j;->A(Ljava/util/List;)Ljava/lang/Object;
+    invoke-static {v4}, Lje/j;->v(Ljava/util/List;)Ljava/lang/Object;
 
     move-result-object v4
 
@@ -144,7 +144,7 @@
     .line 8
     :cond_3
     :goto_1
-    sget-object p1, Lie/h;->a:Lie/h;
+    sget-object p1, Lie/i;->a:Lie/i;
 
     return-object p1
 .end method

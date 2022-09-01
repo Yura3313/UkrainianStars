@@ -46,7 +46,7 @@
     .line 2
     iget-object v2, v0, Ln8/c;->d:Le8/b;
 
-    iget-object v1, v1, Lq8/d;->g:Ljava/lang/Long;
+    iget-object v1, v1, Lq8/d;->h:Ljava/lang/Long;
 
     .line 3
     invoke-virtual {v1}, Ljava/lang/Long;->longValue()J
@@ -112,14 +112,14 @@
 
     move-result-object v3
 
-    check-cast v3, Lo8/y;
+    check-cast v3, Lo8/z;
 
     .line 11
     check-cast v3, Lo8/k;
 
-    iget-object v3, v3, Lo8/k;->z:Lp8/c;
+    iget-object v3, v3, Lo8/k;->A:Lp8/d;
 
-    iget-object v3, v3, Lp8/c;->j:Ljava/util/List;
+    iget-object v3, v3, Lp8/d;->k:Ljava/util/List;
 
     invoke-interface {v3}, Ljava/util/List;->clear()V
 
@@ -139,7 +139,7 @@
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 14
-    iget-boolean v2, v1, Lq8/d;->s:Z
+    iget-boolean v2, v1, Lq8/d;->t:Z
 
     if-nez v2, :cond_2
 
@@ -165,7 +165,7 @@
 
     .line 19
     :cond_1
-    iput-boolean v4, v1, Lq8/d;->s:Z
+    iput-boolean v4, v1, Lq8/d;->t:Z
 
     .line 20
     iget-object v0, v0, Ln8/c;->d:Le8/b;

@@ -7,7 +7,7 @@
 
 
 # static fields
-.field public static final f:Lx1/c;
+.field public static final g:Lx1/c;
 
 
 # direct methods
@@ -18,7 +18,7 @@
 
     invoke-direct {v0}, Lx1/c;-><init>()V
 
-    sput-object v0, Lx1/c;->f:Lx1/c;
+    sput-object v0, Lx1/c;->g:Lx1/c;
 
     return-void
 .end method
@@ -43,9 +43,9 @@
     sget-object v0, Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;->CREATOR:Landroid/os/Parcelable$Creator;
 
     .line 1
-    iget-object p1, p1, Lcom/google/android/gms/common/api/Scope;->g:Ljava/lang/String;
+    iget-object p1, p1, Lcom/google/android/gms/common/api/Scope;->h:Ljava/lang/String;
 
-    iget-object p2, p2, Lcom/google/android/gms/common/api/Scope;->g:Ljava/lang/String;
+    iget-object p2, p2, Lcom/google/android/gms/common/api/Scope;->h:Ljava/lang/String;
 
     .line 2
     invoke-virtual {p1, p2}, Ljava/lang/String;->compareTo(Ljava/lang/String;)I

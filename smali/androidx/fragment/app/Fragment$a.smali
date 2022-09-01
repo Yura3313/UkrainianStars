@@ -15,14 +15,14 @@
 
 
 # instance fields
-.field public final synthetic f:Landroidx/fragment/app/Fragment;
+.field public final synthetic g:Landroidx/fragment/app/Fragment;
 
 
 # direct methods
 .method public constructor <init>(Landroidx/fragment/app/Fragment;)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/fragment/app/Fragment$a;->f:Landroidx/fragment/app/Fragment;
+    iput-object p1, p0, Landroidx/fragment/app/Fragment$a;->g:Landroidx/fragment/app/Fragment;
 
     invoke-direct {p0}, Landroidx/fragment/app/p;-><init>()V
 
@@ -35,9 +35,9 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Landroidx/fragment/app/Fragment$a;->f:Landroidx/fragment/app/Fragment;
+    iget-object v0, p0, Landroidx/fragment/app/Fragment$a;->g:Landroidx/fragment/app/Fragment;
 
-    iget-object v0, v0, Landroidx/fragment/app/Fragment;->M:Landroid/view/View;
+    iget-object v0, v0, Landroidx/fragment/app/Fragment;->N:Landroid/view/View;
 
     if-eqz v0, :cond_0
 
@@ -60,7 +60,7 @@
     move-result-object v0
 
     .line 5
-    iget-object v1, p0, Landroidx/fragment/app/Fragment$a;->f:Landroidx/fragment/app/Fragment;
+    iget-object v1, p0, Landroidx/fragment/app/Fragment$a;->g:Landroidx/fragment/app/Fragment;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -80,9 +80,9 @@
 .method public final i()Z
     .locals 1
 
-    iget-object v0, p0, Landroidx/fragment/app/Fragment$a;->f:Landroidx/fragment/app/Fragment;
+    iget-object v0, p0, Landroidx/fragment/app/Fragment$a;->g:Landroidx/fragment/app/Fragment;
 
-    iget-object v0, v0, Landroidx/fragment/app/Fragment;->M:Landroid/view/View;
+    iget-object v0, v0, Landroidx/fragment/app/Fragment;->N:Landroid/view/View;
 
     if-eqz v0, :cond_0
 

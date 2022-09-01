@@ -2,55 +2,39 @@
 .super Ljava/lang/Object;
 .source "R8$$SyntheticClass"
 
+# interfaces
+.implements Lre/p;
+
+
+# instance fields
+.field public final synthetic g:Lcom/kakaogame/KGResultCallback;
+
 
 # direct methods
-.method public static a(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
-    .locals 1
+.method public synthetic constructor <init>(Lcom/kakaogame/KGResultCallback;)V
+    .locals 0
 
-    .line 1
-    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    move-result-object v0
+    iput-object p1, p0, Lcom/kakaogame/c;->g:Lcom/kakaogame/KGResultCallback;
 
-    .line 2
-    invoke-static {p1, v0, p2}, Lcom/kakaogame/Logger;->e(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
-
-    .line 3
-    invoke-virtual {p0}, Ljava/lang/Object;->toString()Ljava/lang/String;
-
-    move-result-object p0
-
-    .line 4
-    invoke-static {p3, p0}, Lcom/kakaogame/KGResult;->getResult(ILjava/lang/String;)Lcom/kakaogame/KGResult;
-
-    move-result-object p0
-
-    return-object p0
+    return-void
 .end method
 
-.method public static b(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+# virtual methods
+.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
 
-    .line 1
-    new-instance v0, Ljava/lang/StringBuilder;
+    iget-object v0, p0, Lcom/kakaogame/c;->g:Lcom/kakaogame/KGResultCallback;
 
-    .line 2
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+    check-cast p1, Lcom/kakao/sdk/link/model/LinkResult;
 
-    .line 3
-    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    check-cast p2, Ljava/lang/Throwable;
 
-    .line 4
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v0, p1, p2}, Lcom/kakaogame/KGKakaoTalkMessage;->a(Lcom/kakaogame/KGResultCallback;Lcom/kakao/sdk/link/model/LinkResult;Ljava/lang/Throwable;)Lie/i;
 
-    .line 5
-    invoke-virtual {v0, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    move-result-object p1
 
-    .line 6
-    invoke-virtual {v0, p3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    .line 7
-    invoke-virtual {v0, p4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    return-object v0
+    return-object p1
 .end method

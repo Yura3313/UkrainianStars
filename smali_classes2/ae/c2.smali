@@ -1,33 +1,24 @@
-.class public Lae/c2;
-.super Landroidx/recyclerview/widget/RecyclerView$e;
+.class public final Lae/c2;
+.super Landroidx/recyclerview/widget/l$b;
 .source "RecyclerViewUtil.kt"
 
 
-# annotations
-.annotation system Ldalvik/annotation/MemberClasses;
-    value = {
-        Lae/c2$a;
-    }
-.end annotation
-
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Landroidx/recyclerview/widget/RecyclerView$e<",
-        "Lae/c2$a;",
-        ">;"
-    }
-.end annotation
-
-
 # instance fields
-.field public final c:Lae/c2$b;
-
-.field public d:Ljava/util/List;
+.field public final a:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
-            "+",
-            "Lae/b2;",
+            "Lae/a2;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public final b:Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/List<",
+            "Lae/a2;",
             ">;"
         }
     .end annotation
@@ -35,43 +26,141 @@
 
 
 # direct methods
-.method public constructor <init>(Ljava/util/List;)V
-    .locals 1
+.method public constructor <init>(Ljava/util/List;Ljava/util/List;)V
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Ljava/util/List<",
             "+",
-            "Lae/b2;",
+            "Lae/a2;",
+            ">;",
+            "Ljava/util/List<",
+            "+",
+            "Lae/a2;",
             ">;)V"
         }
     .end annotation
 
-    const-string v0, "data"
+    invoke-direct {p0}, Landroidx/recyclerview/widget/l$b;-><init>()V
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    iput-object p1, p0, Lae/c2;->a:Ljava/util/List;
 
-    .line 1
-    invoke-direct {p0}, Landroidx/recyclerview/widget/RecyclerView$e;-><init>()V
-
-    iput-object p1, p0, Lae/c2;->d:Ljava/util/List;
-
-    .line 2
-    new-instance p1, Lae/c2$b;
-
-    invoke-direct {p1}, Lae/c2$b;-><init>()V
-
-    iput-object p1, p0, Lae/c2;->c:Lae/c2$b;
+    iput-object p2, p0, Lae/c2;->b:Ljava/util/List;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final b()I
+.method public final a(II)Z
+    .locals 4
+
+    .line 1
+    iget-object v0, p0, Lae/c2;->a:Ljava/util/List;
+
+    invoke-interface {v0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lae/a2;
+
+    iget-object v1, p0, Lae/c2;->b:Ljava/util/List;
+
+    invoke-interface {v1, p2}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Lae/a2;
+
+    invoke-interface {v0, v1}, Lae/a2;->a(Lae/a2;)Z
+
+    move-result v0
+
+    const/4 v1, 0x1
+
+    const/4 v2, 0x0
+
+    if-eqz v0, :cond_1
+
+    .line 2
+    iget-object v0, p0, Lae/c2;->a:Ljava/util/List;
+
+    invoke-static {v0, p1}, Lae/y1;->d(Ljava/util/List;I)Z
+
+    move-result v0
+
+    iget-object v3, p0, Lae/c2;->b:Ljava/util/List;
+
+    invoke-static {v3, p2}, Lae/y1;->d(Ljava/util/List;I)Z
+
+    move-result v3
+
+    if-ne v0, v3, :cond_0
+
+    iget-object v0, p0, Lae/c2;->a:Ljava/util/List;
+
+    invoke-static {v0, p1}, Lae/y1;->c(Ljava/util/List;I)Z
+
+    move-result p1
+
+    iget-object v0, p0, Lae/c2;->b:Ljava/util/List;
+
+    invoke-static {v0, p2}, Lae/y1;->c(Ljava/util/List;I)Z
+
+    move-result p2
+
+    if-ne p1, p2, :cond_0
+
+    const/4 p1, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 p1, 0x0
+
+    :goto_0
+    if-eqz p1, :cond_1
+
+    goto :goto_1
+
+    :cond_1
+    const/4 v1, 0x0
+
+    :goto_1
+    return v1
+.end method
+
+.method public final b(II)Z
     .locals 1
 
-    iget-object v0, p0, Lae/c2;->d:Ljava/util/List;
+    iget-object v0, p0, Lae/c2;->a:Ljava/util/List;
+
+    invoke-interface {v0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Lae/a2;
+
+    iget-object v0, p0, Lae/c2;->b:Ljava/util/List;
+
+    invoke-interface {v0, p2}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object p2
+
+    check-cast p2, Lae/a2;
+
+    invoke-interface {p1, p2}, Lae/a2;->d(Lae/a2;)Z
+
+    move-result p1
+
+    return p1
+.end method
+
+.method public final c()I
+    .locals 1
+
+    iget-object v0, p0, Lae/c2;->b:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
 
@@ -80,362 +169,14 @@
     return v0
 .end method
 
-.method public final d(I)I
+.method public final d()I
     .locals 1
 
-    iget-object v0, p0, Lae/c2;->d:Ljava/util/List;
+    iget-object v0, p0, Lae/c2;->a:Ljava/util/List;
 
-    invoke-interface {v0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
+    invoke-interface {v0}, Ljava/util/List;->size()I
 
-    move-result-object p1
+    move-result v0
 
-    check-cast p1, Lae/b2;
-
-    invoke-interface {p1}, Lae/b2;->c()I
-
-    move-result p1
-
-    return p1
-.end method
-
-.method public final h(Landroidx/recyclerview/widget/RecyclerView$z;I)V
-    .locals 10
-
-    .line 1
-    check-cast p1, Lae/c2$a;
-
-    .line 2
-    iget-object v0, p0, Lae/c2;->d:Ljava/util/List;
-
-    invoke-interface {v0, p2}, Ljava/util/List;->get(I)Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Lae/b2;
-
-    const-string v1, "item"
-
-    .line 3
-    invoke-static {v0, v1}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 4
-    iput-object v0, p1, Lae/c2$a;->z:Lae/b2;
-
-    .line 5
-    instance-of v1, v0, Lae/k;
-
-    if-eqz v1, :cond_0
-
-    .line 6
-    iget-object v1, p1, Lae/c2$a;->A:Landroid/view/View;
-
-    sget v2, Lcom/supercell/id/R$id;->listDivider:I
-
-    invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    move-result-object v3
-
-    const-string v1, "containerView.listDivider"
-
-    invoke-static {v3, v1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const/4 v4, 0x0
-
-    const/4 v5, 0x0
-
-    const/4 v6, 0x0
-
-    const/4 v7, 0x0
-
-    sget-object v8, Luc/o$b;->g:Luc/o$b;
-
-    const/16 v9, 0xf
-
-    invoke-static/range {v3 .. v9}, Luc/d;->a(Landroid/view/View;IFFFLuc/o$b;I)V
-
-    goto/16 :goto_1
-
-    .line 7
-    :cond_0
-    instance-of v1, v0, Lae/q;
-
-    const/4 v2, 0x0
-
-    if-eqz v1, :cond_3
-
-    .line 8
-    iget-object v1, p1, Lae/c2$a;->A:Landroid/view/View;
-
-    sget v3, Lcom/supercell/id/R$id;->errorTitleTextView:I
-
-    invoke-virtual {v1, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    move-result-object v1
-
-    check-cast v1, Landroid/widget/TextView;
-
-    const-string v3, "containerView.errorTitleTextView"
-
-    invoke-static {v1, v3}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
-
-    move-object v3, v0
-
-    check-cast v3, Lae/q;
-
-    .line 9
-    iget-object v4, v3, Lae/q;->b:Lcom/supercell/id/util/NormalizedError;
-
-    .line 10
-    iget-object v4, v4, Lcom/supercell/id/util/NormalizedError;->f:Ljava/lang/String;
-
-    .line 11
-    invoke-static {v1, v4, v2}, Lud/f0;->j(Landroid/widget/TextView;Ljava/lang/String;Lre/p;)V
-
-    .line 12
-    iget-object v1, p1, Lae/c2$a;->A:Landroid/view/View;
-
-    sget v4, Lcom/supercell/id/R$id;->errorTextTextView:I
-
-    invoke-virtual {v1, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    move-result-object v1
-
-    check-cast v1, Landroid/widget/TextView;
-
-    const-string v4, "containerView.errorTextTextView"
-
-    invoke-static {v1, v4}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 13
-    iget-object v3, v3, Lae/q;->b:Lcom/supercell/id/util/NormalizedError;
-
-    .line 14
-    iget-object v4, v3, Lcom/supercell/id/util/NormalizedError;->g:Ljava/lang/String;
-
-    const/4 v5, 0x1
-
-    new-array v6, v5, [Lie/d;
-
-    .line 15
-    iget-object v3, v3, Lcom/supercell/id/util/NormalizedError;->i:Lie/d;
-
-    const/4 v7, 0x0
-
-    aput-object v3, v6, v7
-
-    .line 16
-    new-instance v3, Ljava/util/ArrayList;
-
-    invoke-direct {v3}, Ljava/util/ArrayList;-><init>()V
-
-    :goto_0
-    if-ge v7, v5, :cond_2
-
-    .line 17
-    aget-object v8, v6, v7
-
-    if-eqz v8, :cond_1
-
-    .line 18
-    invoke-virtual {v3, v8}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    :cond_1
-    add-int/lit8 v7, v7, 0x1
-
-    goto :goto_0
-
-    .line 19
-    :cond_2
-    invoke-static {v3}, Lje/t;->q(Ljava/lang/Iterable;)Ljava/util/Map;
-
-    move-result-object v3
-
-    .line 20
-    invoke-static {v1, v4, v3, v2}, Lud/f0;->i(Landroid/widget/TextView;Ljava/lang/String;Ljava/util/Map;Lre/l;)V
-
-    .line 21
-    iget-object v1, p1, Lae/c2$a;->A:Landroid/view/View;
-
-    sget v3, Lcom/supercell/id/R$id;->errorRetryButton:I
-
-    invoke-virtual {v1, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    move-result-object v1
-
-    check-cast v1, Lcom/supercell/id/view/WidthAdjustingMultilineButton;
-
-    const-string v3, "containerView.errorRetryButton"
-
-    invoke-static {v1, v3}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v3, "account_friend_api_error_server_btn_retry"
-
-    .line 22
-    invoke-static {v1, v3, v2}, Lud/f0;->j(Landroid/widget/TextView;Ljava/lang/String;Lre/p;)V
-
-    goto :goto_1
-
-    .line 23
-    :cond_3
-    instance-of v1, v0, Lae/y;
-
-    if-eqz v1, :cond_4
-
-    .line 24
-    iget-object v1, p1, Lae/c2$a;->A:Landroid/view/View;
-
-    sget v3, Lcom/supercell/id/R$id;->message_text:I
-
-    invoke-virtual {v1, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    move-result-object v1
-
-    check-cast v1, Landroid/widget/TextView;
-
-    const-string v3, "containerView.message_text"
-
-    invoke-static {v1, v3}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
-
-    move-object v3, v0
-
-    check-cast v3, Lae/y;
-
-    .line 25
-    iget-object v3, v3, Lae/y;->b:Ljava/lang/String;
-
-    .line 26
-    invoke-static {v1, v3, v2}, Lud/f0;->j(Landroid/widget/TextView;Ljava/lang/String;Lre/p;)V
-
-    goto :goto_1
-
-    .line 27
-    :cond_4
-    instance-of v1, v0, Lae/f2;
-
-    if-eqz v1, :cond_5
-
-    .line 28
-    iget-object v1, p1, Lae/c2$a;->A:Landroid/view/View;
-
-    sget v3, Lcom/supercell/id/R$id;->title:I
-
-    invoke-virtual {v1, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    move-result-object v1
-
-    check-cast v1, Landroid/widget/TextView;
-
-    const-string v3, "containerView.title"
-
-    invoke-static {v1, v3}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
-
-    move-object v3, v0
-
-    check-cast v3, Lae/f2;
-
-    .line 29
-    iget-object v3, v3, Lae/f2;->b:Ljava/lang/String;
-
-    .line 30
-    invoke-static {v1, v3, v2}, Lud/f0;->j(Landroid/widget/TextView;Ljava/lang/String;Lre/p;)V
-
-    .line 31
-    :cond_5
-    :goto_1
-    invoke-virtual {p0, p1, p2, v0}, Lae/c2;->n(Lae/c2$a;ILae/b2;)V
-
-    .line 32
-    iget-object p2, p1, Lae/c2$a;->y:Lre/p;
-
-    if-eqz p2, :cond_6
-
-    .line 33
-    iget-object p2, p0, Lae/c2;->c:Lae/c2$b;
-
-    invoke-virtual {p2, p1}, Ljava/util/Observable;->addObserver(Ljava/util/Observer;)V
-
-    :cond_6
-    return-void
-.end method
-
-.method public bridge synthetic i(Landroid/view/ViewGroup;I)Landroidx/recyclerview/widget/RecyclerView$z;
-    .locals 0
-
-    invoke-virtual {p0, p1, p2}, Lae/c2;->o(Landroid/view/ViewGroup;I)Lae/c2$a;
-
-    move-result-object p1
-
-    return-object p1
-.end method
-
-.method public final j(Landroidx/recyclerview/widget/RecyclerView$z;)V
-    .locals 1
-
-    .line 1
-    check-cast p1, Lae/c2$a;
-
-    const-string v0, "holder"
-
-    .line 2
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const/4 v0, 0x0
-
-    .line 3
-    iput-object v0, p1, Lae/c2$a;->y:Lre/p;
-
-    .line 4
-    iget-object v0, p0, Lae/c2;->c:Lae/c2$b;
-
-    invoke-virtual {v0, p1}, Ljava/util/Observable;->deleteObserver(Ljava/util/Observer;)V
-
-    return-void
-.end method
-
-.method public final m()V
-    .locals 1
-
-    iget-object v0, p0, Lae/c2;->c:Lae/c2$b;
-
-    invoke-virtual {v0}, Lae/c2$b;->notifyObservers()V
-
-    return-void
-.end method
-
-.method public n(Lae/c2$a;ILae/b2;)V
-    .locals 0
-
-    return-void
-.end method
-
-.method public o(Landroid/view/ViewGroup;I)Lae/c2$a;
-    .locals 3
-
-    const-string v0, "parent"
-
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
-
-    new-instance v0, Lae/c2$a;
-
-    invoke-virtual {p1}, Landroid/view/View;->getContext()Landroid/content/Context;
-
-    move-result-object v1
-
-    invoke-static {v1}, Landroid/view/LayoutInflater;->from(Landroid/content/Context;)Landroid/view/LayoutInflater;
-
-    move-result-object v1
-
-    const/4 v2, 0x0
-
-    invoke-virtual {v1, p2, p1, v2}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
-
-    move-result-object p1
-
-    const-string p2, "LayoutInflater.from(pare\u2026(viewType, parent, false)"
-
-    invoke-static {p1, p2}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
-
-    invoke-direct {v0, p1}, Lae/c2$a;-><init>(Landroid/view/View;)V
-
-    return-object v0
+    return v0
 .end method

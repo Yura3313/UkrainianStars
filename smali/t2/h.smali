@@ -10,7 +10,7 @@
     value = {
         "Ljava/lang/Object;",
         "Landroid/os/Parcelable$Creator<",
-        "Lcom/google/android/gms/drive/query/internal/zzn;",
+        "Lcom/google/android/gms/drive/query/internal/zzp;",
         ">;"
     }
 .end annotation
@@ -81,9 +81,9 @@
     invoke-static {p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->n(Landroid/os/Parcel;I)V
 
     .line 8
-    new-instance p1, Lcom/google/android/gms/drive/query/internal/zzn;
+    new-instance p1, Lcom/google/android/gms/drive/query/internal/zzp;
 
-    invoke-direct {p1, v1}, Lcom/google/android/gms/drive/query/internal/zzn;-><init>(Lcom/google/android/gms/drive/metadata/internal/MetadataBundle;)V
+    invoke-direct {p1, v1}, Lcom/google/android/gms/drive/query/internal/zzp;-><init>(Lcom/google/android/gms/drive/metadata/internal/MetadataBundle;)V
 
     return-object p1
 .end method
@@ -91,7 +91,7 @@
 .method public final synthetic newArray(I)[Ljava/lang/Object;
     .locals 0
 
-    new-array p1, p1, [Lcom/google/android/gms/drive/query/internal/zzn;
+    new-array p1, p1, [Lcom/google/android/gms/drive/query/internal/zzp;
 
     return-object p1
 .end method

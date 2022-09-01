@@ -39,13 +39,13 @@
 
     const-string v1, "ServiceLoader.load(\n    \u2026.classLoader\n).iterator()"
 
-    invoke-static {v0, v1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-static {v0}, Lxe/h;->d(Ljava/util/Iterator;)Lxe/d;
+    invoke-static {v0}, Lxe/h;->c(Ljava/util/Iterator;)Lxe/d;
 
     move-result-object v0
 
-    invoke-static {v0}, Lxe/k;->g(Lxe/d;)Ljava/util/List;
+    invoke-static {v0}, Lxe/k;->f(Lxe/d;)Ljava/util/List;
 
     move-result-object v0
 
@@ -59,7 +59,7 @@
 
     const-string v0, "context"
 
-    invoke-static {p0, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     sget-object v0, Lze/x;->a:Ljava/util/List;
@@ -100,13 +100,13 @@
     move-result-object v3
 
     .line 4
-    invoke-static {v3, v2}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v3, v2}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v3}, Ljava/lang/Thread;->getUncaughtExceptionHandler()Ljava/lang/Thread$UncaughtExceptionHandler;
 
     move-result-object v2
 
-    invoke-static {p1, v1}, Le5/i;->k(Ljava/lang/Throwable;Ljava/lang/Throwable;)Ljava/lang/Throwable;
+    invoke-static {p1, v1}, Lie/f;->c(Ljava/lang/Throwable;Ljava/lang/Throwable;)Ljava/lang/Throwable;
 
     move-result-object v1
 
@@ -121,7 +121,7 @@
     move-result-object p0
 
     .line 6
-    invoke-static {p0, v2}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v2}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {p0}, Ljava/lang/Thread;->getUncaughtExceptionHandler()Ljava/lang/Thread$UncaughtExceptionHandler;
 

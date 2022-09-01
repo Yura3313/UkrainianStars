@@ -1,83 +1,218 @@
-.class public final synthetic Lk3/c90;
+.class public final Lk3/c90;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lk3/nl0;
+.implements Lk3/mv0;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Lk3/mv0<",
+        "Lcom/google/android/gms/internal/ads/zzcyk;",
+        ">;"
+    }
+.end annotation
 
 
 # instance fields
-.field public final a:Lcom/google/android/gms/internal/ads/zzasp;
+.field public final a:Lk3/qv0;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lk3/qv0<",
+            "Lk3/fj;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public final b:Lk3/qv0;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lk3/qv0<",
+            "Landroid/content/Context;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public final c:Lk3/qv0;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lk3/qv0<",
+            "Lk3/lr0;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public final d:Lk3/qv0;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lk3/qv0<",
+            "Lcom/google/android/gms/internal/ads/zzbbg;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public final e:Lk3/qv0;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lk3/qv0<",
+            "Lk3/ah0<",
+            "Lk3/ny;",
+            ">;>;"
+        }
+    .end annotation
+.end field
+
+.field public final f:Lk3/qv0;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lk3/qv0<",
+            "Ljava/util/concurrent/ScheduledExecutorService;",
+            ">;"
+        }
+    .end annotation
+.end field
 
 
 # direct methods
-.method public constructor <init>(Lcom/google/android/gms/internal/ads/zzasp;)V
+.method public constructor <init>(Lk3/qv0;Lk3/qv0;Lk3/qv0;Lk3/qv0;Lk3/qv0;Lk3/qv0;)V
     .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lk3/qv0<",
+            "Lk3/fj;",
+            ">;",
+            "Lk3/qv0<",
+            "Landroid/content/Context;",
+            ">;",
+            "Lk3/qv0<",
+            "Lk3/lr0;",
+            ">;",
+            "Lk3/qv0<",
+            "Lcom/google/android/gms/internal/ads/zzbbg;",
+            ">;",
+            "Lk3/qv0<",
+            "Lk3/ah0<",
+            "Lk3/ny;",
+            ">;>;",
+            "Lk3/qv0<",
+            "Lk3/jm0;",
+            ">;",
+            "Lk3/qv0<",
+            "Ljava/util/concurrent/ScheduledExecutorService;",
+            ">;)V"
+        }
+    .end annotation
 
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lk3/c90;->a:Lcom/google/android/gms/internal/ads/zzasp;
+    .line 2
+    iput-object p1, p0, Lk3/c90;->a:Lk3/qv0;
+
+    .line 3
+    iput-object p2, p0, Lk3/c90;->b:Lk3/qv0;
+
+    .line 4
+    iput-object p3, p0, Lk3/c90;->c:Lk3/qv0;
+
+    .line 5
+    iput-object p4, p0, Lk3/c90;->d:Lk3/qv0;
+
+    .line 6
+    iput-object p5, p0, Lk3/c90;->e:Lk3/qv0;
+
+    .line 7
+    iput-object p6, p0, Lk3/c90;->f:Lk3/qv0;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Ljava/lang/Object;)Lk3/em0;
-    .locals 4
+.method public final synthetic get()Ljava/lang/Object;
+    .locals 9
 
     .line 1
-    iget-object v0, p0, Lk3/c90;->a:Lcom/google/android/gms/internal/ads/zzasp;
+    iget-object v0, p0, Lk3/c90;->a:Lk3/qv0;
 
-    check-cast p1, Ljava/io/InputStream;
+    invoke-interface {v0}, Lk3/qv0;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    move-object v2, v0
+
+    check-cast v2, Lk3/fj;
+
+    iget-object v0, p0, Lk3/c90;->b:Lk3/qv0;
+
+    invoke-interface {v0}, Lk3/qv0;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    move-object v3, v0
+
+    check-cast v3, Landroid/content/Context;
+
+    iget-object v0, p0, Lk3/c90;->c:Lk3/qv0;
+
+    invoke-interface {v0}, Lk3/qv0;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    move-object v4, v0
+
+    check-cast v4, Lk3/lr0;
+
+    iget-object v0, p0, Lk3/c90;->d:Lk3/qv0;
+
+    invoke-interface {v0}, Lk3/qv0;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    move-object v5, v0
+
+    check-cast v5, Lcom/google/android/gms/internal/ads/zzbbg;
+
+    iget-object v0, p0, Lk3/c90;->e:Lk3/qv0;
+
+    invoke-interface {v0}, Lk3/qv0;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    move-object v6, v0
+
+    check-cast v6, Lk3/ah0;
 
     .line 2
-    new-instance v1, Lk3/e90;
+    invoke-static {}, Lk3/ei0;->a()Lk3/jm0;
 
-    new-instance v2, Landroid/util/JsonReader;
-
-    new-instance v3, Ljava/io/InputStreamReader;
-
-    invoke-direct {v3, p1}, Ljava/io/InputStreamReader;-><init>(Ljava/io/InputStream;)V
-
-    invoke-direct {v2, v3}, Landroid/util/JsonReader;-><init>(Ljava/io/Reader;)V
-
-    invoke-direct {v1, v2}, Lk3/e90;-><init>(Landroid/util/JsonReader;)V
-
-    iget-object p1, v0, Lcom/google/android/gms/internal/ads/zzasp;->f:Landroid/os/Bundle;
+    move-result-object v7
 
     .line 3
-    :try_start_0
-    sget-object v0, Li1/o;->B:Li1/o;
+    iget-object v0, p0, Lk3/c90;->f:Lk3/qv0;
 
-    iget-object v0, v0, Li1/o;->c:Lk3/bb;
+    invoke-interface {v0}, Lk3/qv0;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    move-object v8, v0
+
+    check-cast v8, Ljava/util/concurrent/ScheduledExecutorService;
 
     .line 4
-    invoke-virtual {v0, p1}, Lk3/bb;->v(Landroid/os/Bundle;)Lorg/json/JSONObject;
+    new-instance v0, Lcom/google/android/gms/internal/ads/zzcyk;
 
-    move-result-object p1
+    move-object v1, v0
 
-    invoke-virtual {p1}, Lorg/json/JSONObject;->toString()Ljava/lang/String;
+    invoke-direct/range {v1 .. v8}, Lcom/google/android/gms/internal/ads/zzcyk;-><init>(Lk3/fj;Landroid/content/Context;Lk3/lr0;Lcom/google/android/gms/internal/ads/zzbbg;Lk3/ah0;Lk3/jm0;Ljava/util/concurrent/ScheduledExecutorService;)V
 
-    move-result-object p1
-
-    iput-object p1, v1, Lk3/e90;->b:Ljava/lang/String;
-    :try_end_0
-    .catch Lorg/json/JSONException; {:try_start_0 .. :try_end_0} :catch_0
-
-    goto :goto_0
-
-    :catch_0
-    const-string p1, "{}"
-
-    .line 5
-    iput-object p1, v1, Lk3/e90;->b:Ljava/lang/String;
-
-    .line 6
-    :goto_0
-    invoke-static {v1}, Lk3/am0;->f(Ljava/lang/Object;)Lk3/em0;
-
-    move-result-object p1
-
-    return-object p1
+    return-object v0
 .end method

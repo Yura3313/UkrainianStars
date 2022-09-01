@@ -1,5 +1,5 @@
 .class public final Lvd/m;
-.super Lse/h;
+.super Lse/i;
 .source "SettingsSubscriptionsTabFragment.kt"
 
 # interfaces
@@ -9,33 +9,33 @@
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/a<",
-        "Lze/e0<",
+        "Lze/f0<",
         "+",
-        "Lvc/c0$b;",
+        "Lvc/z$b;",
         ">;>;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic f:Ljava/lang/String;
+.field public final synthetic g:Ljava/lang/String;
 
-.field public final synthetic g:Z
+.field public final synthetic h:Z
 
 
 # direct methods
 .method public constructor <init>(Ljava/lang/String;Z)V
     .locals 0
 
-    iput-object p1, p0, Lvd/m;->f:Ljava/lang/String;
+    iput-object p1, p0, Lvd/m;->g:Ljava/lang/String;
 
-    iput-boolean p2, p0, Lvd/m;->g:Z
+    iput-boolean p2, p0, Lvd/m;->h:Z
 
     const/4 p1, 0x0
 
-    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -56,16 +56,16 @@
     iget-object v0, v0, Lae/u;->n:Lrc/c0;
 
     .line 3
-    iget-object v1, p0, Lvd/m;->f:Ljava/lang/String;
+    iget-object v1, p0, Lvd/m;->g:Ljava/lang/String;
 
-    iget-boolean v2, p0, Lvd/m;->g:Z
+    iget-boolean v2, p0, Lvd/m;->h:Z
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     const-string v3, "scopeId"
 
     .line 4
-    invoke-static {v1, v3}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, v3}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/4 v3, 0x2
 
@@ -104,7 +104,7 @@
     aput-object v2, v3, v1
 
     .line 7
-    invoke-static {v3}, Lje/t;->k([Lie/d;)Ljava/util/Map;
+    invoke-static {v3}, Lje/t;->l([Lie/d;)Ljava/util/Map;
 
     move-result-object v3
 
@@ -119,7 +119,7 @@
     move-object v1, v0
 
     .line 8
-    invoke-static/range {v1 .. v6}, Lrc/f;->e(Lrc/f;Ljava/lang/String;Ljava/util/Map;Ljava/lang/String;ILjava/lang/Object;)Lze/e0;
+    invoke-static/range {v1 .. v6}, Lrc/f;->e(Lrc/f;Ljava/lang/String;Ljava/util/Map;Ljava/lang/String;ILjava/lang/Object;)Lze/f0;
 
     move-result-object v1
 
@@ -128,7 +128,7 @@
 
     invoke-direct {v2, v0}, Lrc/y;-><init>(Lrc/c0;)V
 
-    invoke-static {v1, v2}, Lae/u1;->p(Lze/e0;Lre/l;)Lze/e0;
+    invoke-static {v1, v2}, Lae/t1;->o(Lze/f0;Lre/l;)Lze/f0;
 
     move-result-object v0
 
@@ -137,7 +137,7 @@
 
     invoke-direct {v1}, Lrc/z;-><init>()V
 
-    invoke-static {v0, v1}, Lae/u1;->p(Lze/e0;Lre/l;)Lze/e0;
+    invoke-static {v0, v1}, Lae/t1;->o(Lze/f0;Lre/l;)Lze/f0;
 
     move-result-object v0
 

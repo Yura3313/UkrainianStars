@@ -7,17 +7,17 @@
 
 
 # instance fields
-.field public final f:La8/l;
+.field public final g:La8/l;
 
-.field public final g:Li7/c;
+.field public final h:Li7/c;
 
-.field public final h:Lj8/b;
+.field public final i:Lj8/b;
 
-.field public final i:Le8/b;
+.field public final j:Le8/b;
 
-.field public j:I
+.field public k:I
 
-.field public k:Lm8/a$a;
+.field public l:Lm8/a$a;
 
 
 # direct methods
@@ -32,19 +32,19 @@
 
     invoke-direct {v0, p0}, Lm8/a$a;-><init>(Lm8/a;)V
 
-    iput-object v0, p0, Lm8/a;->k:Lm8/a$a;
+    iput-object v0, p0, Lm8/a;->l:Lm8/a$a;
 
     .line 3
-    iput-object p1, p0, Lm8/a;->g:Li7/c;
+    iput-object p1, p0, Lm8/a;->h:Li7/c;
 
     .line 4
-    iput-object p2, p0, Lm8/a;->h:Lj8/b;
+    iput-object p2, p0, Lm8/a;->i:Lj8/b;
 
     .line 5
-    iput-object p3, p0, Lm8/a;->f:La8/l;
+    iput-object p3, p0, Lm8/a;->g:La8/l;
 
     .line 6
-    iput-object p4, p0, Lm8/a;->i:Le8/b;
+    iput-object p4, p0, Lm8/a;->j:Le8/b;
 
     return-void
 .end method
@@ -55,15 +55,15 @@
     .locals 2
 
     .line 1
-    sget-boolean v0, Lcom/helpshift/util/y;->a:Z
+    sget-boolean v0, Lmd/g;->a:Z
 
     if-eqz v0, :cond_2
 
     .line 2
-    iget-object v0, p0, Lm8/a;->g:Li7/c;
+    iget-object v0, p0, Lm8/a;->h:Li7/c;
 
     .line 3
-    iget-boolean v0, v0, Li7/c;->k:Z
+    iget-boolean v0, v0, Li7/c;->l:Z
 
     if-nez v0, :cond_0
 
@@ -71,7 +71,7 @@
 
     .line 4
     :cond_0
-    iget v0, p0, Lm8/a;->j:I
+    iget v0, p0, Lm8/a;->k:I
 
     const/4 v1, 0x1
 
@@ -101,27 +101,27 @@
     .locals 5
 
     .line 1
-    sget-boolean v0, Lcom/helpshift/util/y;->a:Z
+    sget-boolean v0, Lmd/g;->a:Z
 
     const/4 v1, 0x0
 
     if-eqz v0, :cond_0
 
     .line 2
-    iget-object v0, p0, Lm8/a;->g:Li7/c;
+    iget-object v0, p0, Lm8/a;->h:Li7/c;
 
     .line 3
-    iget-boolean v2, v0, Li7/c;->o:Z
+    iget-boolean v2, v0, Li7/c;->p:Z
 
     if-eqz v2, :cond_0
 
     .line 4
-    iget-boolean v0, v0, Li7/c;->m:Z
+    iget-boolean v0, v0, Li7/c;->n:Z
 
     if-nez v0, :cond_0
 
     .line 5
-    iget-object v0, p0, Lm8/a;->h:Lj8/b;
+    iget-object v0, p0, Lm8/a;->i:Lj8/b;
 
     const-string v2, "disableInAppConversation"
 
@@ -149,12 +149,12 @@
 
     .line 8
     :cond_1
-    iget-object v0, p0, Lm8/a;->i:Le8/b;
+    iget-object v0, p0, Lm8/a;->j:Le8/b;
 
-    iget-object v2, p0, Lm8/a;->g:Li7/c;
+    iget-object v2, p0, Lm8/a;->h:Li7/c;
 
     .line 9
-    iget-object v2, v2, Li7/c;->f:Ljava/lang/Long;
+    iget-object v2, v2, Li7/c;->g:Ljava/lang/Long;
 
     .line 10
     invoke-virtual {v2}, Ljava/lang/Long;->longValue()J
@@ -172,7 +172,7 @@
     check-cast v0, Ljava/util/List;
 
     .line 13
-    invoke-static {v0}, Lbc/a;->d(Ljava/util/List;)Z
+    invoke-static {v0}, Lt5/a;->g(Ljava/util/List;)Z
 
     move-result v2
 
@@ -183,9 +183,9 @@
 
     move-result-object v2
 
-    iget-object v2, v2, Lq8/d;->l:Lu8/e;
+    iget-object v2, v2, Lq8/d;->m:Lu8/e;
 
-    sget-object v3, Lu8/e;->l:Lu8/e;
+    sget-object v3, Lu8/e;->m:Lu8/e;
 
     if-ne v2, v3, :cond_3
 
@@ -202,7 +202,7 @@
     const-string p1, "Stopped listening for conversation updates : no issues or latest is rejected."
 
     .line 15
-    invoke-static {v3, p1, v2, v2}, Landroidx/savedstate/d;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v3, p1, v2, v2}, Le5/i;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
 
     .line 16
     invoke-virtual {p0}, Lm8/a;->d()V
@@ -226,7 +226,7 @@
 
     .line 18
     :goto_1
-    iget v1, p0, Lm8/a;->j:I
+    iget v1, p0, Lm8/a;->k:I
 
     if-ne v1, v0, :cond_6
 
@@ -237,7 +237,7 @@
     invoke-virtual {p0}, Lm8/a;->d()V
 
     .line 20
-    iput v0, p0, Lm8/a;->j:I
+    iput v0, p0, Lm8/a;->k:I
 
     const-string v1, "Listening for conversation updates : "
 
@@ -247,9 +247,9 @@
     move-result-object v1
 
     .line 22
-    iget v4, p0, Lm8/a;->j:I
+    iget v4, p0, Lm8/a;->k:I
 
-    invoke-static {v4}, La8/m;->b(I)Ljava/lang/String;
+    invoke-static {v4}, La8/m;->c(I)Ljava/lang/String;
 
     move-result-object v4
 
@@ -260,7 +260,7 @@
     move-result-object v1
 
     .line 23
-    invoke-static {v3, v1, v2, v2}, Landroidx/savedstate/d;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v3, v1, v2, v2}, Le5/i;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
 
     if-eqz p1, :cond_7
 
@@ -273,9 +273,9 @@
 
     .line 24
     :goto_2
-    iget-object p1, p0, Lm8/a;->f:La8/l;
+    iget-object p1, p0, Lm8/a;->g:La8/l;
 
-    iget-object v3, p0, Lm8/a;->k:Lm8/a$a;
+    iget-object v3, p0, Lm8/a;->l:Lm8/a$a;
 
     invoke-virtual {p1, v0, v1, v2, v3}, La8/l;->a(IJLa8/j$a;)V
 
@@ -286,7 +286,7 @@
     .locals 5
 
     .line 1
-    sget-boolean v0, Lcom/helpshift/util/y;->a:Z
+    sget-boolean v0, Lmd/g;->a:Z
 
     if-nez v0, :cond_0
 
@@ -297,7 +297,7 @@
 
     .line 3
     :cond_0
-    iget v0, p0, Lm8/a;->j:I
+    iget v0, p0, Lm8/a;->k:I
 
     const/4 v1, 0x1
 
@@ -310,7 +310,7 @@
     invoke-virtual {p0}, Lm8/a;->d()V
 
     .line 5
-    iput v1, p0, Lm8/a;->j:I
+    iput v1, p0, Lm8/a;->k:I
 
     const/4 v0, 0x0
 
@@ -319,14 +319,14 @@
     const-string v3, "Listening for in-chat conversation updates"
 
     .line 6
-    invoke-static {v2, v3, v0, v0}, Landroidx/savedstate/d;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v2, v3, v0, v0}, Le5/i;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
 
     .line 7
-    iget-object v0, p0, Lm8/a;->f:La8/l;
+    iget-object v0, p0, Lm8/a;->g:La8/l;
 
     const-wide/16 v2, 0x0
 
-    iget-object v4, p0, Lm8/a;->k:Lm8/a$a;
+    iget-object v4, p0, Lm8/a;->l:Lm8/a$a;
 
     invoke-virtual {v0, v1, v2, v3, v4}, La8/l;->a(IJLa8/j$a;)V
 
@@ -344,9 +344,9 @@
     move-result-object v0
 
     .line 2
-    iget v1, p0, Lm8/a;->j:I
+    iget v1, p0, Lm8/a;->k:I
 
-    invoke-static {v1}, La8/m;->b(I)Ljava/lang/String;
+    invoke-static {v1}, La8/m;->c(I)Ljava/lang/String;
 
     move-result-object v1
 
@@ -361,17 +361,17 @@
     const/4 v2, 0x0
 
     .line 3
-    invoke-static {v1, v0, v2, v2}, Landroidx/savedstate/d;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v1, v0, v2, v2}, Le5/i;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
 
     .line 4
-    iget-object v0, p0, Lm8/a;->f:La8/l;
+    iget-object v0, p0, Lm8/a;->g:La8/l;
 
     invoke-virtual {v0}, La8/l;->b()V
 
     const/4 v0, 0x0
 
     .line 5
-    iput v0, p0, Lm8/a;->j:I
+    iput v0, p0, Lm8/a;->k:I
 
     return-void
 .end method

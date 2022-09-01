@@ -1309,7 +1309,7 @@
     if-nez v0, :cond_0
 
     .line 2
-    sget-object v0, Lcom/google/protobuf/Field$b;->k:Lcom/google/protobuf/Field$b;
+    sget-object v0, Lcom/google/protobuf/Field$b;->l:Lcom/google/protobuf/Field$b;
 
     :cond_0
     return-object v0
@@ -1376,7 +1376,7 @@
     if-nez v0, :cond_0
 
     .line 2
-    sget-object v0, Lcom/google/protobuf/Field$c;->z:Lcom/google/protobuf/Field$c;
+    sget-object v0, Lcom/google/protobuf/Field$c;->A:Lcom/google/protobuf/Field$c;
 
     :cond_0
     return-object v0

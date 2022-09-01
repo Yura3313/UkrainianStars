@@ -2437,9 +2437,9 @@
     if-eqz p3, :cond_0
 
     .line 2
-    new-instance v0, Lio/sentry/m;
+    new-instance v0, Lio/sentry/n;
 
-    invoke-direct {v0, p0, p1, p2}, Lio/sentry/m;-><init>(Lio/sentry/SentryClient;Lio/sentry/SentryEvent;Ljava/lang/Object;)V
+    invoke-direct {v0, p0, p1, p2}, Lio/sentry/n;-><init>(Lio/sentry/SentryClient;Lio/sentry/SentryEvent;Ljava/lang/Object;)V
 
     .line 3
     invoke-virtual {p3, v0}, Lio/sentry/Scope;->withSession(Lio/sentry/Scope$IWithSession;)Lio/sentry/Session;

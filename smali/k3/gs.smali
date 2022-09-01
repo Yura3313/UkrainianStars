@@ -4,5 +4,8 @@
 
 
 # virtual methods
-.method public abstract Q5()V
+.method public abstract C0(Lcom/google/android/gms/internal/ads/zzasp;)V
+.end method
+
+.method public abstract K(Lk3/tg0;)V
 .end method

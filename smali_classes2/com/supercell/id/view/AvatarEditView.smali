@@ -81,7 +81,7 @@
 
     const-string v0, "context"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     invoke-direct {p0, p1, p2}, Landroidx/appcompat/widget/AppCompatImageView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
@@ -120,7 +120,7 @@
     iput-object p1, p0, Lcom/supercell/id/view/AvatarEditView;->enteringBgBounds:Landroid/graphics/Rect;
 
     .line 7
-    sget-object p1, Lcom/supercell/id/view/AvatarEditView$b;->f:Lcom/supercell/id/view/AvatarEditView$b;
+    sget-object p1, Lcom/supercell/id/view/AvatarEditView$b;->g:Lcom/supercell/id/view/AvatarEditView$b;
 
     iput-object p1, p0, Lcom/supercell/id/view/AvatarEditView;->imageAnimationState:Lcom/supercell/id/view/AvatarEditView$b;
 
@@ -159,7 +159,7 @@
     move-result-object p1
 
     .line 12
-    iget-object p1, p1, Lae/u;->s:Lud/j;
+    iget-object p1, p1, Lae/u;->s:Lud/i;
 
     .line 13
     new-instance v0, Lcom/supercell/id/view/AvatarEditView$a;
@@ -168,7 +168,7 @@
 
     const-string v1, "portraits.png"
 
-    invoke-virtual {p1, v1, v0}, Lud/j;->b(Ljava/lang/String;Lre/p;)V
+    invoke-virtual {p1, v1, v0}, Lud/i;->b(Ljava/lang/String;Lre/p;)V
 
     const/4 p1, 0x0
 
@@ -299,7 +299,7 @@
 
     if-eqz p3, :cond_0
 
-    sget-object p2, Lcom/supercell/id/view/AvatarEditView$b;->f:Lcom/supercell/id/view/AvatarEditView$b;
+    sget-object p2, Lcom/supercell/id/view/AvatarEditView$b;->g:Lcom/supercell/id/view/AvatarEditView$b;
 
     :cond_0
     invoke-virtual {p0, p1, p2}, Lcom/supercell/id/view/AvatarEditView;->setAvatar(Ljava/lang/String;Lcom/supercell/id/view/AvatarEditView$b;)V
@@ -314,7 +314,7 @@
 
     if-eqz p4, :cond_0
 
-    sget-object p3, Lcom/supercell/id/view/AvatarEditView$b;->f:Lcom/supercell/id/view/AvatarEditView$b;
+    sget-object p3, Lcom/supercell/id/view/AvatarEditView$b;->g:Lcom/supercell/id/view/AvatarEditView$b;
 
     :cond_0
     invoke-virtual {p0, p1, p2, p3}, Lcom/supercell/id/view/AvatarEditView;->setBackgroundGradient(IILcom/supercell/id/view/AvatarEditView$b;)V
@@ -401,9 +401,9 @@
     .locals 8
 
     .line 1
-    sget-object v0, Lcom/supercell/id/view/AvatarEditView$b;->g:Lcom/supercell/id/view/AvatarEditView$b;
+    sget-object v0, Lcom/supercell/id/view/AvatarEditView$b;->h:Lcom/supercell/id/view/AvatarEditView$b;
 
-    sget-object v1, Lcom/supercell/id/view/AvatarEditView$b;->f:Lcom/supercell/id/view/AvatarEditView$b;
+    sget-object v1, Lcom/supercell/id/view/AvatarEditView$b;->g:Lcom/supercell/id/view/AvatarEditView$b;
 
     if-eqz p1, :cond_9
 
@@ -710,12 +710,12 @@
     int-to-float p1, v5
 
     .line 3
-    sget v6, La5/g0;->a:F
+    sget v6, La5/e0;->g:F
 
     mul-float p1, p1, v6
 
     .line 4
-    invoke-static {p1}, Lcom/android/billingclient/api/z;->n(F)I
+    invoke-static {p1}, Lcom/android/billingclient/api/y;->i(F)I
 
     move-result p1
 
@@ -733,12 +733,12 @@
     int-to-float p1, v5
 
     .line 6
-    sget v6, La5/g0;->a:F
+    sget v6, La5/e0;->g:F
 
     mul-float p1, p1, v6
 
     .line 7
-    invoke-static {p1}, Lcom/android/billingclient/api/z;->n(F)I
+    invoke-static {p1}, Lcom/android/billingclient/api/y;->i(F)I
 
     move-result p1
 
@@ -755,7 +755,7 @@
     int-to-float v6, v5
 
     .line 9
-    sget v7, La5/g0;->a:F
+    sget v7, La5/e0;->g:F
 
     mul-float v6, v6, v7
 
@@ -782,7 +782,7 @@
     .line 11
     :cond_4
     :goto_0
-    invoke-static {p1}, Lcom/android/billingclient/api/z;->n(F)I
+    invoke-static {p1}, Lcom/android/billingclient/api/y;->i(F)I
 
     move-result p1
 
@@ -796,12 +796,12 @@
     int-to-float p2, v5
 
     .line 12
-    sget v1, La5/g0;->a:F
+    sget v1, La5/e0;->g:F
 
     mul-float p2, p2, v1
 
     .line 13
-    invoke-static {p2}, Lcom/android/billingclient/api/z;->n(F)I
+    invoke-static {p2}, Lcom/android/billingclient/api/y;->i(F)I
 
     move-result p2
 
@@ -819,12 +819,12 @@
     int-to-float p2, v5
 
     .line 15
-    sget v1, La5/g0;->a:F
+    sget v1, La5/e0;->g:F
 
     mul-float p2, p2, v1
 
     .line 16
-    invoke-static {p2}, Lcom/android/billingclient/api/z;->n(F)I
+    invoke-static {p2}, Lcom/android/billingclient/api/y;->i(F)I
 
     move-result p2
 
@@ -841,7 +841,7 @@
     int-to-float v1, v5
 
     .line 18
-    sget v5, La5/g0;->a:F
+    sget v5, La5/e0;->g:F
 
     mul-float v1, v1, v5
 
@@ -870,7 +870,7 @@
 
     .line 20
     :goto_2
-    invoke-static {v2}, Lcom/android/billingclient/api/z;->n(F)I
+    invoke-static {v2}, Lcom/android/billingclient/api/y;->i(F)I
 
     move-result p2
 
@@ -1048,11 +1048,11 @@
 
     const-string v0, "avatarName"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "animate"
 
-    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     iput-object p1, p0, Lcom/supercell/id/view/AvatarEditView;->avatarName:Ljava/lang/String;
@@ -1088,7 +1088,7 @@
 
     .line 4
     :goto_0
-    sget-object v1, Lcom/supercell/id/view/AvatarEditView$b;->f:Lcom/supercell/id/view/AvatarEditView$b;
+    sget-object v1, Lcom/supercell/id/view/AvatarEditView$b;->g:Lcom/supercell/id/view/AvatarEditView$b;
 
     if-eq p2, v1, :cond_1
 
@@ -1136,7 +1136,7 @@
     const-string v2, "bitmapAtlas"
 
     .line 12
-    invoke-static {p2, v2}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v2}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {p2}, Landroid/graphics/Bitmap;->getWidth()I
 
@@ -1201,7 +1201,7 @@
 
     const-string v0, "bitmap"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, ""
 
@@ -1227,10 +1227,10 @@
 
     const-string v0, "animate"
 
-    invoke-static {p3, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p3, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
-    sget-object v0, Lcom/supercell/id/view/AvatarEditView$b;->f:Lcom/supercell/id/view/AvatarEditView$b;
+    sget-object v0, Lcom/supercell/id/view/AvatarEditView$b;->g:Lcom/supercell/id/view/AvatarEditView$b;
 
     if-eq p3, v0, :cond_0
 
@@ -1290,7 +1290,7 @@
 
     const-string v0, "imageUrl"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     new-instance v0, Ljava/lang/ref/WeakReference;
@@ -1298,9 +1298,9 @@
     invoke-direct {v0, p0}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
 
     .line 2
-    sget-object v1, Lae/b0;->e:Lae/b0;
+    sget-object v1, Lae/a0;->e:Lae/a0;
 
-    invoke-virtual {v1, p1}, Lae/b0;->a(Ljava/lang/String;)Lze/e0;
+    invoke-virtual {v1, p1}, Lae/a0;->a(Ljava/lang/String;)Lze/f0;
 
     move-result-object p1
 
@@ -1308,7 +1308,7 @@
 
     invoke-direct {v1, v0}, Lcom/supercell/id/view/AvatarEditView$h;-><init>(Ljava/lang/ref/WeakReference;)V
 
-    invoke-static {p1, v1}, Lae/u1;->m(Lze/e0;Lre/l;)Lze/e0;
+    invoke-static {p1, v1}, Lae/t1;->l(Lze/f0;Lre/l;)Lze/f0;
 
     return-void
 .end method

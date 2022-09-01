@@ -1,5 +1,5 @@
 .class public final Lpd/x$d;
-.super Lse/h;
+.super Lse/i;
 .source "NewGameTransitionCoordinator.kt"
 
 # interfaces
@@ -18,28 +18,28 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/l<",
-        "Lie/h;",
-        "Lie/h;",
+        "Lie/i;",
+        "Lie/i;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic f:Lpd/x;
+.field public final synthetic g:Lpd/x;
 
 
 # direct methods
 .method public constructor <init>(Lpd/x;)V
     .locals 0
 
-    iput-object p1, p0, Lpd/x$d;->f:Lpd/x;
+    iput-object p1, p0, Lpd/x$d;->g:Lpd/x;
 
     const/4 p1, 0x1
 
-    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -50,15 +50,15 @@
     .locals 1
 
     .line 1
-    check-cast p1, Lie/h;
+    check-cast p1, Lie/i;
 
     const-string v0, "it"
 
     .line 2
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 3
-    iget-object p1, p0, Lpd/x$d;->f:Lpd/x;
+    iget-object p1, p0, Lpd/x$d;->g:Lpd/x;
 
     .line 4
     iget-object p1, p1, Lpd/x;->g:Ljava/lang/ref/WeakReference;
@@ -78,7 +78,7 @@
 
     .line 6
     :cond_0
-    sget-object p1, Lie/h;->a:Lie/h;
+    sget-object p1, Lie/i;->a:Lie/i;
 
     return-object p1
 .end method

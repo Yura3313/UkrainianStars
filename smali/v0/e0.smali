@@ -4,7 +4,7 @@
 
 
 # static fields
-.field public static final f:[Ljava/lang/String;
+.field public static final g:[Ljava/lang/String;
 
 
 # direct methods
@@ -27,7 +27,7 @@
 
     aput-object v2, v0, v1
 
-    sput-object v0, Lv0/e0;->f:[Ljava/lang/String;
+    sput-object v0, Lv0/e0;->g:[Ljava/lang/String;
 
     return-void
 .end method

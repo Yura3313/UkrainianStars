@@ -43,7 +43,7 @@
     return-object v0
 .end method
 
-.method public final J1()Ljava/lang/String;
+.method public final I1()Ljava/lang/String;
     .locals 1
 
     const-string v0, "description_participant_id"
@@ -55,7 +55,7 @@
     return-object v0
 .end method
 
-.method public final S1()Ljava/util/ArrayList;
+.method public final R1()Ljava/util/ArrayList;
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -123,6 +123,18 @@
     return-object v0
 .end method
 
+.method public final b2()I
+    .locals 1
+
+    const-string v0, "match_number"
+
+    invoke-virtual {p0, v0}, Lc2/d;->l(Ljava/lang/String;)I
+
+    move-result v0
+
+    return v0
+.end method
+
 .method public final c1()[B
     .locals 1
 
@@ -133,18 +145,6 @@
     move-result-object v0
 
     return-object v0
-.end method
-
-.method public final c2()I
-    .locals 1
-
-    const-string v0, "match_number"
-
-    invoke-virtual {p0, v0}, Lc2/d;->l(Ljava/lang/String;)I
-
-    move-result v0
-
-    return v0
 .end method
 
 .method public final describeContents()I

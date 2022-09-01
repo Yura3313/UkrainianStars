@@ -214,7 +214,7 @@
     iget v9, p0, Lec/e$a;->k:I
 
     .line 12
-    invoke-static {v0, v2}, Lk3/q5;->d(Landroid/content/Context;Z)Ljava/io/File;
+    invoke-static {v0, v2}, Lcom/helpshift/util/x;->b(Landroid/content/Context;Z)Ljava/io/File;
 
     move-result-object v3
 
@@ -260,7 +260,7 @@
 
     .line 15
     :cond_5
-    invoke-static {v0, v1}, Lk3/q5;->d(Landroid/content/Context;Z)Ljava/io/File;
+    invoke-static {v0, v1}, Lcom/helpshift/util/x;->b(Landroid/content/Context;Z)Ljava/io/File;
 
     move-result-object v3
 
@@ -306,11 +306,11 @@
     move-exception v3
 
     .line 20
-    invoke-static {v3}, Lae/w;->b(Ljava/lang/Throwable;)V
+    invoke-static {v3}, Lk3/f4;->b(Ljava/lang/Throwable;)V
 
     .line 21
     :cond_7
-    invoke-static {v0, v1}, Lk3/q5;->d(Landroid/content/Context;Z)Ljava/io/File;
+    invoke-static {v0, v1}, Lcom/helpshift/util/x;->b(Landroid/content/Context;Z)Ljava/io/File;
 
     move-result-object v0
 

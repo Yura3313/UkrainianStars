@@ -19,17 +19,17 @@
 
 
 # instance fields
-.field public final f:Ljava/lang/String;
+.field public final g:Ljava/lang/String;
 
-.field public final g:Z
-
-.field public final h:Ljava/lang/String;
+.field public final h:Z
 
 .field public final i:Ljava/lang/String;
 
 .field public final j:Ljava/lang/String;
 
-.field public final k:Lcom/supercell/id/model/IdSeason;
+.field public final k:Ljava/lang/String;
+
+.field public final l:Lcom/supercell/id/model/IdSeason;
 
 
 # direct methods
@@ -53,17 +53,17 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lcom/supercell/id/model/IdSystem;->f:Ljava/lang/String;
+    iput-object p1, p0, Lcom/supercell/id/model/IdSystem;->g:Ljava/lang/String;
 
-    iput-boolean p2, p0, Lcom/supercell/id/model/IdSystem;->g:Z
+    iput-boolean p2, p0, Lcom/supercell/id/model/IdSystem;->h:Z
 
-    iput-object p3, p0, Lcom/supercell/id/model/IdSystem;->h:Ljava/lang/String;
+    iput-object p3, p0, Lcom/supercell/id/model/IdSystem;->i:Ljava/lang/String;
 
-    iput-object p4, p0, Lcom/supercell/id/model/IdSystem;->i:Ljava/lang/String;
+    iput-object p4, p0, Lcom/supercell/id/model/IdSystem;->j:Ljava/lang/String;
 
-    iput-object p5, p0, Lcom/supercell/id/model/IdSystem;->j:Ljava/lang/String;
+    iput-object p5, p0, Lcom/supercell/id/model/IdSystem;->k:Ljava/lang/String;
 
-    iput-object p6, p0, Lcom/supercell/id/model/IdSystem;->k:Lcom/supercell/id/model/IdSeason;
+    iput-object p6, p0, Lcom/supercell/id/model/IdSystem;->l:Lcom/supercell/id/model/IdSeason;
 
     return-void
 .end method
@@ -80,7 +80,7 @@
 
     const-string v0, "data.getString(\"system\")"
 
-    invoke-static {v2, v0}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v2, v0}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "new"
 
@@ -96,7 +96,7 @@
     .line 4
     sget-object v3, Lorg/json/JSONObject;->NULL:Ljava/lang/Object;
 
-    invoke-static {v0, v3}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v3}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v3
 
@@ -159,7 +159,7 @@
     .line 9
     sget-object v4, Lorg/json/JSONObject;->NULL:Ljava/lang/Object;
 
-    invoke-static {v0, v4}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v4}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v4
 
@@ -204,7 +204,7 @@
     .line 12
     sget-object v5, Lorg/json/JSONObject;->NULL:Ljava/lang/Object;
 
-    invoke-static {v0, v5}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v5}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v5
 
@@ -249,7 +249,7 @@
     .line 15
     sget-object v6, Lorg/json/JSONObject;->NULL:Ljava/lang/Object;
 
-    invoke-static {v0, v6}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v6}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v6
 
@@ -348,7 +348,7 @@
     move-result-object v0
 
     .line 2
-    iget-object v0, v0, Lae/u;->s:Lud/j;
+    iget-object v0, v0, Lae/u;->s:Lud/i;
 
     const-string v1, "game_name_"
 
@@ -358,7 +358,7 @@
     move-result-object v1
 
     .line 4
-    iget-object v2, p0, Lcom/supercell/id/model/IdSystem;->f:Ljava/lang/String;
+    iget-object v2, p0, Lcom/supercell/id/model/IdSystem;->g:Ljava/lang/String;
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -366,7 +366,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lud/j;->f(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v0, v1}, Lud/i;->f(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -376,7 +376,7 @@
 
     .line 5
     :cond_0
-    iget-object v0, p0, Lcom/supercell/id/model/IdSystem;->f:Ljava/lang/String;
+    iget-object v0, p0, Lcom/supercell/id/model/IdSystem;->g:Ljava/lang/String;
 
     :goto_0
     return-object v0
@@ -401,37 +401,27 @@
 
     check-cast p1, Lcom/supercell/id/model/IdSystem;
 
-    iget-object v0, p0, Lcom/supercell/id/model/IdSystem;->f:Ljava/lang/String;
+    iget-object v0, p0, Lcom/supercell/id/model/IdSystem;->g:Ljava/lang/String;
 
-    iget-object v1, p1, Lcom/supercell/id/model/IdSystem;->f:Ljava/lang/String;
+    iget-object v1, p1, Lcom/supercell/id/model/IdSystem;->g:Ljava/lang/String;
 
-    invoke-static {v0, v1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    iget-boolean v0, p0, Lcom/supercell/id/model/IdSystem;->g:Z
+    iget-boolean v0, p0, Lcom/supercell/id/model/IdSystem;->h:Z
 
-    iget-boolean v1, p1, Lcom/supercell/id/model/IdSystem;->g:Z
+    iget-boolean v1, p1, Lcom/supercell/id/model/IdSystem;->h:Z
 
     if-ne v0, v1, :cond_0
-
-    iget-object v0, p0, Lcom/supercell/id/model/IdSystem;->h:Ljava/lang/String;
-
-    iget-object v1, p1, Lcom/supercell/id/model/IdSystem;->h:Ljava/lang/String;
-
-    invoke-static {v0, v1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
 
     iget-object v0, p0, Lcom/supercell/id/model/IdSystem;->i:Ljava/lang/String;
 
     iget-object v1, p1, Lcom/supercell/id/model/IdSystem;->i:Ljava/lang/String;
 
-    invoke-static {v0, v1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
@@ -441,17 +431,27 @@
 
     iget-object v1, p1, Lcom/supercell/id/model/IdSystem;->j:Ljava/lang/String;
 
-    invoke-static {v0, v1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/supercell/id/model/IdSystem;->k:Lcom/supercell/id/model/IdSeason;
+    iget-object v0, p0, Lcom/supercell/id/model/IdSystem;->k:Ljava/lang/String;
 
-    iget-object p1, p1, Lcom/supercell/id/model/IdSystem;->k:Lcom/supercell/id/model/IdSeason;
+    iget-object v1, p1, Lcom/supercell/id/model/IdSystem;->k:Ljava/lang/String;
 
-    invoke-static {v0, p1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    iget-object v0, p0, Lcom/supercell/id/model/IdSystem;->l:Lcom/supercell/id/model/IdSeason;
+
+    iget-object p1, p1, Lcom/supercell/id/model/IdSystem;->l:Lcom/supercell/id/model/IdSeason;
+
+    invoke-static {v0, p1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -474,7 +474,7 @@
 .method public final hashCode()I
     .locals 3
 
-    iget-object v0, p0, Lcom/supercell/id/model/IdSystem;->f:Ljava/lang/String;
+    iget-object v0, p0, Lcom/supercell/id/model/IdSystem;->g:Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -492,7 +492,7 @@
     :goto_0
     mul-int/lit8 v0, v0, 0x1f
 
-    iget-boolean v2, p0, Lcom/supercell/id/model/IdSystem;->g:Z
+    iget-boolean v2, p0, Lcom/supercell/id/model/IdSystem;->h:Z
 
     if-eqz v2, :cond_1
 
@@ -503,7 +503,7 @@
 
     mul-int/lit8 v0, v0, 0x1f
 
-    iget-object v2, p0, Lcom/supercell/id/model/IdSystem;->h:Ljava/lang/String;
+    iget-object v2, p0, Lcom/supercell/id/model/IdSystem;->i:Ljava/lang/String;
 
     if-eqz v2, :cond_2
 
@@ -521,7 +521,7 @@
 
     mul-int/lit8 v0, v0, 0x1f
 
-    iget-object v2, p0, Lcom/supercell/id/model/IdSystem;->i:Ljava/lang/String;
+    iget-object v2, p0, Lcom/supercell/id/model/IdSystem;->j:Ljava/lang/String;
 
     if-eqz v2, :cond_3
 
@@ -539,7 +539,7 @@
 
     mul-int/lit8 v0, v0, 0x1f
 
-    iget-object v2, p0, Lcom/supercell/id/model/IdSystem;->j:Ljava/lang/String;
+    iget-object v2, p0, Lcom/supercell/id/model/IdSystem;->k:Ljava/lang/String;
 
     if-eqz v2, :cond_4
 
@@ -557,7 +557,7 @@
 
     mul-int/lit8 v0, v0, 0x1f
 
-    iget-object v2, p0, Lcom/supercell/id/model/IdSystem;->k:Lcom/supercell/id/model/IdSeason;
+    iget-object v2, p0, Lcom/supercell/id/model/IdSystem;->l:Lcom/supercell/id/model/IdSeason;
 
     if-eqz v2, :cond_5
 
@@ -582,7 +582,7 @@
     move-result-object v0
 
     .line 2
-    iget-object v1, p0, Lcom/supercell/id/model/IdSystem;->f:Ljava/lang/String;
+    iget-object v1, p0, Lcom/supercell/id/model/IdSystem;->g:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -590,7 +590,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean v1, p0, Lcom/supercell/id/model/IdSystem;->g:Z
+    iget-boolean v1, p0, Lcom/supercell/id/model/IdSystem;->h:Z
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -598,7 +598,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lcom/supercell/id/model/IdSystem;->h:Ljava/lang/String;
+    iget-object v1, p0, Lcom/supercell/id/model/IdSystem;->i:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -606,7 +606,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lcom/supercell/id/model/IdSystem;->i:Ljava/lang/String;
+    iget-object v1, p0, Lcom/supercell/id/model/IdSystem;->j:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -614,7 +614,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lcom/supercell/id/model/IdSystem;->j:Ljava/lang/String;
+    iget-object v1, p0, Lcom/supercell/id/model/IdSystem;->k:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -622,7 +622,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lcom/supercell/id/model/IdSystem;->k:Lcom/supercell/id/model/IdSeason;
+    iget-object v1, p0, Lcom/supercell/id/model/IdSystem;->l:Lcom/supercell/id/model/IdSeason;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -642,36 +642,36 @@
 
     const-string v0, "dest"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
-    iget-object v0, p0, Lcom/supercell/id/model/IdSystem;->f:Ljava/lang/String;
+    iget-object v0, p0, Lcom/supercell/id/model/IdSystem;->g:Ljava/lang/String;
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
     .line 2
-    iget-boolean v0, p0, Lcom/supercell/id/model/IdSystem;->g:Z
+    iget-boolean v0, p0, Lcom/supercell/id/model/IdSystem;->h:Z
 
     .line 3
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 4
-    iget-object v0, p0, Lcom/supercell/id/model/IdSystem;->h:Ljava/lang/String;
-
-    invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
-
-    .line 5
     iget-object v0, p0, Lcom/supercell/id/model/IdSystem;->i:Ljava/lang/String;
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
-    .line 6
+    .line 5
     iget-object v0, p0, Lcom/supercell/id/model/IdSystem;->j:Ljava/lang/String;
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
+    .line 6
+    iget-object v0, p0, Lcom/supercell/id/model/IdSystem;->k:Ljava/lang/String;
+
+    invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
+
     .line 7
-    iget-object v0, p0, Lcom/supercell/id/model/IdSystem;->k:Lcom/supercell/id/model/IdSeason;
+    iget-object v0, p0, Lcom/supercell/id/model/IdSystem;->l:Lcom/supercell/id/model/IdSeason;
 
     invoke-virtual {p1, v0, p2}, Landroid/os/Parcel;->writeParcelable(Landroid/os/Parcelable;I)V
 

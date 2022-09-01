@@ -155,20 +155,20 @@
 
     invoke-direct {v0}, Landroid/os/Bundle;-><init>()V
 
-    iput-object v0, p1, Lcom/google/android/gms/common/data/DataHolder;->h:Landroid/os/Bundle;
+    iput-object v0, p1, Lcom/google/android/gms/common/data/DataHolder;->i:Landroid/os/Bundle;
 
     const/4 v0, 0x0
 
     .line 14
     :goto_1
-    iget-object v1, p1, Lcom/google/android/gms/common/data/DataHolder;->g:[Ljava/lang/String;
+    iget-object v1, p1, Lcom/google/android/gms/common/data/DataHolder;->h:[Ljava/lang/String;
 
     array-length v3, v1
 
     if-ge v0, v3, :cond_6
 
     .line 15
-    iget-object v3, p1, Lcom/google/android/gms/common/data/DataHolder;->h:Landroid/os/Bundle;
+    iget-object v3, p1, Lcom/google/android/gms/common/data/DataHolder;->i:Landroid/os/Bundle;
 
     aget-object v1, v1, v0
 
@@ -180,26 +180,26 @@
 
     .line 16
     :cond_6
-    iget-object v0, p1, Lcom/google/android/gms/common/data/DataHolder;->i:[Landroid/database/CursorWindow;
+    iget-object v0, p1, Lcom/google/android/gms/common/data/DataHolder;->j:[Landroid/database/CursorWindow;
 
     array-length v0, v0
 
     new-array v0, v0, [I
 
-    iput-object v0, p1, Lcom/google/android/gms/common/data/DataHolder;->l:[I
+    iput-object v0, p1, Lcom/google/android/gms/common/data/DataHolder;->m:[I
 
     const/4 v0, 0x0
 
     .line 17
     :goto_2
-    iget-object v1, p1, Lcom/google/android/gms/common/data/DataHolder;->i:[Landroid/database/CursorWindow;
+    iget-object v1, p1, Lcom/google/android/gms/common/data/DataHolder;->j:[Landroid/database/CursorWindow;
 
     array-length v3, v1
 
     if-ge v2, v3, :cond_7
 
     .line 18
-    iget-object v3, p1, Lcom/google/android/gms/common/data/DataHolder;->l:[I
+    iget-object v3, p1, Lcom/google/android/gms/common/data/DataHolder;->m:[I
 
     aput v0, v3, v2
 
@@ -213,7 +213,7 @@
     sub-int v1, v0, v1
 
     .line 20
-    iget-object v3, p1, Lcom/google/android/gms/common/data/DataHolder;->i:[Landroid/database/CursorWindow;
+    iget-object v3, p1, Lcom/google/android/gms/common/data/DataHolder;->j:[Landroid/database/CursorWindow;
 
     aget-object v3, v3, v2
 
@@ -231,7 +231,7 @@
 
     .line 21
     :cond_7
-    iput v0, p1, Lcom/google/android/gms/common/data/DataHolder;->m:I
+    iput v0, p1, Lcom/google/android/gms/common/data/DataHolder;->n:I
 
     return-object p1
 .end method

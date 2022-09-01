@@ -31,7 +31,7 @@
     return-void
 .end method
 
-.method public constructor <init>(Lk3/o51;)V
+.method public constructor <init>(Lk3/r51;)V
     .locals 0
 
     .line 2

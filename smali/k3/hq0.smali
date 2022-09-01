@@ -1,130 +1,166 @@
 .class public final Lk3/hq0;
-.super Lk3/u7;
-.source "com.google.android.gms:play-services-ads-base@@19.3.0"
-
-
-# instance fields
-.field public final a:Lk3/gq0;
+.super Lk3/hp0;
+.source "com.google.android.gms:play-services-ads@@19.3.0"
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 1
+.method public constructor <init>([BI)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/security/InvalidKeyException;
+        }
+    .end annotation
 
-    .line 1
-    invoke-direct {p0}, Lk3/u7;-><init>()V
-
-    .line 2
-    new-instance v0, Lk3/gq0;
-
-    invoke-direct {v0}, Lk3/gq0;-><init>()V
-
-    iput-object v0, p0, Lk3/hq0;->a:Lk3/gq0;
+    invoke-direct {p0, p1, p2}, Lk3/hp0;-><init>([BI)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final b(Ljava/lang/Throwable;Ljava/io/PrintWriter;)V
-    .locals 3
+.method public final e([II)[I
+    .locals 11
 
     .line 1
-    invoke-virtual {p1, p2}, Ljava/lang/Throwable;->printStackTrace(Ljava/io/PrintWriter;)V
-
-    .line 2
-    iget-object v0, p0, Lk3/hq0;->a:Lk3/gq0;
-
-    const/4 v1, 0x0
-
-    invoke-virtual {v0, p1, v1}, Lk3/gq0;->a(Ljava/lang/Throwable;Z)Ljava/util/List;
-
-    move-result-object p1
-
-    if-nez p1, :cond_0
-
-    return-void
-
-    .line 3
-    :cond_0
-    monitor-enter p1
-
-    .line 4
-    :try_start_0
-    invoke-interface {p1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
-
-    move-result-object v0
-
-    :goto_0
-    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v1
-
-    if-eqz v1, :cond_1
-
-    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v1
-
-    check-cast v1, Ljava/lang/Throwable;
-
-    const-string v2, "Suppressed: "
-
-    .line 5
-    invoke-virtual {p2, v2}, Ljava/io/PrintWriter;->print(Ljava/lang/String;)V
-
-    .line 6
-    invoke-virtual {v1, p2}, Ljava/lang/Throwable;->printStackTrace(Ljava/io/PrintWriter;)V
-
-    goto :goto_0
-
-    .line 7
-    :cond_1
-    monitor-exit p1
-
-    return-void
-
-    :catchall_0
-    move-exception p2
-
-    monitor-exit p1
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    goto :goto_2
-
-    :goto_1
-    throw p2
-
-    :goto_2
-    goto :goto_1
-.end method
-
-.method public final c(Ljava/lang/Throwable;Ljava/lang/Throwable;)V
-    .locals 2
-
-    if-eq p2, p1, :cond_0
-
-    .line 1
-    iget-object v0, p0, Lk3/hq0;->a:Lk3/gq0;
+    array-length v0, p1
 
     const/4 v1, 0x1
 
-    invoke-virtual {v0, p1, v1}, Lk3/gq0;->a(Ljava/lang/Throwable;Z)Ljava/util/List;
+    const/4 v2, 0x6
+
+    const/4 v3, 0x5
+
+    const/4 v4, 0x0
+
+    if-ne v0, v2, :cond_0
+
+    const/16 v0, 0x10
+
+    new-array v5, v0, [I
+
+    .line 2
+    iget-object v6, p0, Lk3/hp0;->a:[I
+
+    new-array v0, v0, [I
+
+    .line 3
+    invoke-static {v0, v6}, Lk3/hp0;->d([I[I)V
+
+    .line 4
+    aget v6, p1, v4
+
+    const/16 v7, 0xc
+
+    aput v6, v0, v7
+
+    .line 5
+    aget v1, p1, v1
+
+    const/16 v6, 0xd
+
+    aput v1, v0, v6
+
+    const/4 v1, 0x2
+
+    .line 6
+    aget v1, p1, v1
+
+    const/16 v8, 0xe
+
+    aput v1, v0, v8
+
+    const/4 v1, 0x3
+
+    .line 7
+    aget v1, p1, v1
+
+    const/16 v9, 0xf
+
+    aput v1, v0, v9
+
+    .line 8
+    invoke-static {v0}, Lk3/hp0;->g([I)V
+
+    aget v1, v0, v7
+
+    const/4 v10, 0x4
+
+    aput v1, v0, v10
+
+    aget v1, v0, v6
+
+    aput v1, v0, v3
+
+    aget v1, v0, v8
+
+    aput v1, v0, v2
+
+    const/4 v1, 0x7
+
+    aget v2, v0, v9
+
+    aput v2, v0, v1
+
+    const/16 v1, 0x8
+
+    .line 9
+    invoke-static {v0, v1}, Ljava/util/Arrays;->copyOf([II)[I
+
+    move-result-object v0
+
+    .line 10
+    invoke-static {v5, v0}, Lk3/hp0;->d([I[I)V
+
+    aput p2, v5, v7
+
+    aput v4, v5, v6
+
+    .line 11
+    aget p2, p1, v10
+
+    aput p2, v5, v8
+
+    .line 12
+    aget p1, p1, v3
+
+    aput p1, v5, v9
+
+    return-object v5
+
+    .line 13
+    :cond_0
+    new-instance p2, Ljava/lang/IllegalArgumentException;
+
+    new-array v0, v1, [Ljava/lang/Object;
+
+    array-length p1, p1
+
+    shl-int/2addr p1, v3
+
+    .line 14
+    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object p1
 
-    invoke-interface {p1, p2}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    aput-object p1, v0, v4
 
-    return-void
+    const-string p1, "XChaCha20 uses 192-bit nonces, but got a %d-bit nonce"
 
-    .line 2
-    :cond_0
-    new-instance p1, Ljava/lang/IllegalArgumentException;
+    .line 15
+    invoke-static {p1, v0}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
 
-    const-string v0, "Self suppression is not allowed."
+    move-result-object p1
 
-    invoke-direct {p1, v0, p2}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-direct {p2, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
 
-    throw p1
+    throw p2
+.end method
+
+.method public final f()I
+    .locals 1
+
+    const/16 v0, 0x18
+
+    return v0
 .end method

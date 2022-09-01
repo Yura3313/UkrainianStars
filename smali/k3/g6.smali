@@ -1,227 +1,86 @@
-.class public final Lk3/g6;
+.class public final synthetic Lk3/g6;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads-lite@@19.3.0"
 
 # interfaces
-.implements Lk3/xs;
-.implements Lk3/yl0;
-
-
-# static fields
-.field public static g:Lk3/g6;
+.implements Ljava/lang/Runnable;
 
 
 # instance fields
-.field public f:Ljava/lang/Object;
+.field public final g:Landroid/content/Context;
+
+.field public final h:Ljava/lang/String;
 
 
 # direct methods
-.method public synthetic constructor <init>()V
-    .locals 2
-
-    .line 2
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 3
-    new-instance v0, Ljava/util/concurrent/atomic/AtomicBoolean;
-
-    const/4 v1, 0x0
-
-    invoke-direct {v0, v1}, Ljava/util/concurrent/atomic/AtomicBoolean;-><init>(Z)V
-
-    iput-object v0, p0, Lk3/g6;->f:Ljava/lang/Object;
-
-    return-void
-.end method
-
-.method public synthetic constructor <init>(Ljava/lang/Object;)V
+.method public constructor <init>(Landroid/content/Context;Ljava/lang/String;)V
     .locals 0
 
-    .line 1
-    iput-object p1, p0, Lk3/g6;->f:Ljava/lang/Object;
-
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    return-void
-.end method
+    iput-object p1, p0, Lk3/g6;->g:Landroid/content/Context;
 
-.method public static b(Landroid/content/Context;Ly3/a;)V
-    .locals 3
-
-    :try_start_0
-    const-string v0, "com.google.android.gms.ads.measurement.DynamiteMeasurementManager"
-    :try_end_0
-    .catch Lcom/google/android/gms/internal/ads/zzbbe; {:try_start_0 .. :try_end_0} :catch_4
-    .catch Ljava/lang/NullPointerException; {:try_start_0 .. :try_end_0} :catch_3
-    .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_2
-
-    .line 1
-    :try_start_1
-    sget-object v1, Lcom/google/android/gms/dynamite/DynamiteModule;->j:Lcom/google/android/gms/dynamite/c;
-
-    const-string v2, "com.google.android.gms.ads.dynamite"
-
-    invoke-static {p0, v1, v2}, Lcom/google/android/gms/dynamite/DynamiteModule;->c(Landroid/content/Context;Lcom/google/android/gms/dynamite/DynamiteModule$a;Ljava/lang/String;)Lcom/google/android/gms/dynamite/DynamiteModule;
-
-    move-result-object v1
-    :try_end_1
-    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
-
-    .line 2
-    :try_start_2
-    invoke-virtual {v1, v0}, Lcom/google/android/gms/dynamite/DynamiteModule;->b(Ljava/lang/String;)Landroid/os/IBinder;
-
-    move-result-object v0
-
-    .line 3
-    sget v1, Lcom/google/android/gms/internal/ads/zzbic;->f:I
-
-    if-nez v0, :cond_0
-
-    const/4 v0, 0x0
-
-    goto :goto_0
-
-    :cond_0
-    const-string v1, "com.google.android.gms.ads.measurement.IMeasurementManager"
-
-    .line 4
-    invoke-interface {v0, v1}, Landroid/os/IBinder;->queryLocalInterface(Ljava/lang/String;)Landroid/os/IInterface;
-
-    move-result-object v1
-
-    .line 5
-    instance-of v2, v1, Lcom/google/android/gms/internal/ads/zzbid;
-
-    if-eqz v2, :cond_1
-
-    .line 6
-    move-object v0, v1
-
-    check-cast v0, Lcom/google/android/gms/internal/ads/zzbid;
-
-    goto :goto_0
-
-    .line 7
-    :cond_1
-    new-instance v1, Lcom/google/android/gms/internal/ads/zzbie;
-
-    invoke-direct {v1, v0}, Lcom/google/android/gms/internal/ads/zzbie;-><init>(Landroid/os/IBinder;)V
-    :try_end_2
-    .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_1
-
-    move-object v0, v1
-
-    .line 8
-    :goto_0
-    :try_start_3
-    new-instance v1, Lcom/google/android/gms/dynamic/ObjectWrapper;
-
-    invoke-direct {v1, p0}, Lcom/google/android/gms/dynamic/ObjectWrapper;-><init>(Ljava/lang/Object;)V
-
-    .line 9
-    new-instance p0, Lcom/google/android/gms/internal/ads/zzamj;
-
-    invoke-direct {p0, p1}, Lcom/google/android/gms/internal/ads/zzamj;-><init>(Ly3/a;)V
-
-    invoke-interface {v0, v1, p0}, Lcom/google/android/gms/internal/ads/zzbid;->x6(Lcom/google/android/gms/dynamic/IObjectWrapper;Lcom/google/android/gms/internal/ads/zzbib;)V
-    :try_end_3
-    .catch Lcom/google/android/gms/internal/ads/zzbbe; {:try_start_3 .. :try_end_3} :catch_4
-    .catch Ljava/lang/NullPointerException; {:try_start_3 .. :try_end_3} :catch_3
-    .catch Landroid/os/RemoteException; {:try_start_3 .. :try_end_3} :catch_2
-
-    return-void
-
-    :catch_0
-    move-exception p0
-
-    .line 10
-    :try_start_4
-    new-instance p1, Lcom/google/android/gms/internal/ads/zzbbe;
-
-    invoke-direct {p1, p0}, Lcom/google/android/gms/internal/ads/zzbbe;-><init>(Ljava/lang/Throwable;)V
-
-    throw p1
-    :try_end_4
-    .catch Ljava/lang/Exception; {:try_start_4 .. :try_end_4} :catch_1
-
-    :catch_1
-    move-exception p0
-
-    .line 11
-    :try_start_5
-    new-instance p1, Lcom/google/android/gms/internal/ads/zzbbe;
-
-    invoke-direct {p1, p0}, Lcom/google/android/gms/internal/ads/zzbbe;-><init>(Ljava/lang/Throwable;)V
-
-    throw p1
-    :try_end_5
-    .catch Lcom/google/android/gms/internal/ads/zzbbe; {:try_start_5 .. :try_end_5} :catch_4
-    .catch Ljava/lang/NullPointerException; {:try_start_5 .. :try_end_5} :catch_3
-    .catch Landroid/os/RemoteException; {:try_start_5 .. :try_end_5} :catch_2
-
-    :catch_2
-    move-exception p0
-
-    goto :goto_1
-
-    :catch_3
-    move-exception p0
-
-    goto :goto_1
-
-    :catch_4
-    move-exception p0
-
-    :goto_1
-    const-string p1, "#007 Could not call remote method."
-
-    .line 12
-    invoke-static {p1, p0}, Lk3/j6;->k(Ljava/lang/String;Ljava/lang/Throwable;)V
+    iput-object p2, p0, Lk3/g6;->h:Ljava/lang/String;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Ljava/lang/Throwable;)V
-    .locals 0
+.method public final run()V
+    .locals 5
 
-    return-void
-.end method
+    iget-object v0, p0, Lk3/g6;->g:Landroid/content/Context;
 
-.method public final d(Ljava/lang/Object;)V
-    .locals 1
+    iget-object v1, p0, Lk3/g6;->h:Ljava/lang/String;
 
     .line 1
-    iget-object v0, p0, Lk3/g6;->f:Ljava/lang/Object;
-
-    check-cast v0, Lk3/sg0;
-
-    check-cast p1, Lk3/is;
+    invoke-static {v0}, Lk3/o;->a(Landroid/content/Context;)V
 
     .line 2
-    invoke-interface {p1, v0}, Lk3/is;->K(Lk3/sg0;)V
+    new-instance v2, Landroid/os/Bundle;
 
-    return-void
-.end method
-
-.method public final synthetic onSuccess(Ljava/lang/Object;)V
-    .locals 1
-
-    .line 1
-    check-cast p1, Lk3/sg0;
-
-    .line 2
-    iget-object v0, p0, Lk3/g6;->f:Ljava/lang/Object;
-
-    check-cast v0, Lk3/c20;
+    invoke-direct {v2}, Landroid/os/Bundle;-><init>()V
 
     .line 3
-    iget-object v0, v0, Lk3/c20;->a:Lk3/fs;
+    sget-object v3, Lk3/o;->Y:Lk3/e;
 
     .line 4
-    invoke-virtual {v0, p1}, Lk3/fs;->K(Lk3/sg0;)V
+    sget-object v4, Lk3/o51;->j:Lk3/o51;
+
+    iget-object v4, v4, Lk3/o51;->f:Lk3/l;
+
+    .line 5
+    invoke-virtual {v4, v3}, Lk3/l;->a(Lk3/f;)Ljava/lang/Object;
+
+    move-result-object v3
+
+    .line 6
+    check-cast v3, Ljava/lang/Boolean;
+
+    invoke-virtual {v3}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result v3
+
+    const-string v4, "measurementEnabled"
+
+    .line 7
+    invoke-virtual {v2, v4, v3}, Landroid/os/Bundle;->putBoolean(Ljava/lang/String;Z)V
+
+    const-string v3, "FA-Ads"
+
+    const-string v4, "am"
+
+    .line 8
+    invoke-static {v0, v3, v4, v1, v2}, Lv3/s4;->d(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/os/Bundle;)Lv3/s4;
+
+    move-result-object v1
+
+    .line 9
+    iget-object v1, v1, Lv3/s4;->b:Ly3/a;
+
+    .line 10
+    invoke-static {v0, v1}, Lk3/h6;->b(Landroid/content/Context;Ly3/a;)V
 
     return-void
 .end method

@@ -2,152 +2,143 @@
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-basement@@17.5.0"
 
-# interfaces
-.implements Landroid/os/Parcelable$Creator;
 
+# static fields
+.field public static a:Ljava/lang/Object;
 
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ljava/lang/Object;",
-        "Landroid/os/Parcelable$Creator<",
-        "Lcom/google/android/gms/common/internal/RootTelemetryConfiguration;",
-        ">;"
-    }
-.end annotation
+.field public static b:Z
+    .annotation build Ljavax/annotation/concurrent/GuardedBy;
+        value = "sLock"
+    .end annotation
+.end field
+
+.field public static c:Ljava/lang/String;
+
+.field public static d:I
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 0
+.method public static constructor <clinit>()V
+    .locals 1
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    new-instance v0, Ljava/lang/Object;
+
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+
+    sput-object v0, Ld2/m0;->a:Ljava/lang/Object;
 
     return-void
 .end method
 
-
-# virtual methods
-.method public final createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
-    .locals 9
+.method public static a(Landroid/content/Context;)V
+    .locals 3
 
     .line 1
-    invoke-static {p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->x(Landroid/os/Parcel;)I
+    sget-object v0, Ld2/m0;->a:Ljava/lang/Object;
 
-    move-result v0
-
-    const/4 v1, 0x0
-
-    const/4 v3, 0x0
-
-    const/4 v4, 0x0
-
-    const/4 v5, 0x0
-
-    const/4 v6, 0x0
-
-    const/4 v7, 0x0
+    monitor-enter v0
 
     .line 2
-    :goto_0
-    invoke-virtual {p1}, Landroid/os/Parcel;->dataPosition()I
+    :try_start_0
+    sget-boolean v1, Ld2/m0;->b:Z
 
-    move-result v1
-
-    if-ge v1, v0, :cond_5
+    if-eqz v1, :cond_0
 
     .line 3
-    invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
+    monitor-exit v0
 
-    move-result v1
+    return-void
 
-    const v2, 0xffff
-
-    and-int/2addr v2, v1
-
-    const/4 v8, 0x1
-
-    if-eq v2, v8, :cond_4
-
-    const/4 v8, 0x2
-
-    if-eq v2, v8, :cond_3
-
-    const/4 v8, 0x3
-
-    if-eq v2, v8, :cond_2
-
-    const/4 v8, 0x4
-
-    if-eq v2, v8, :cond_1
-
-    const/4 v8, 0x5
-
-    if-eq v2, v8, :cond_0
+    :cond_0
+    const/4 v1, 0x1
 
     .line 4
-    invoke-static {p1, v1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->w(Landroid/os/Parcel;I)V
-
-    goto :goto_0
+    sput-boolean v1, Ld2/m0;->b:Z
 
     .line 5
-    :cond_0
-    invoke-static {p1, v1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->r(Landroid/os/Parcel;I)I
+    invoke-virtual {p0}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
 
-    move-result v7
-
-    goto :goto_0
+    move-result-object v1
 
     .line 6
-    :cond_1
-    invoke-static {p1, v1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->r(Landroid/os/Parcel;I)I
+    invoke-static {p0}, Ln2/c;->a(Landroid/content/Context;)Ln2/b;
 
-    move-result v6
+    move-result-object p0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    goto :goto_0
+    const/16 v2, 0x80
 
     .line 7
-    :cond_2
-    invoke-static {p1, v1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->o(Landroid/os/Parcel;I)Z
+    :try_start_1
+    invoke-virtual {p0, v1, v2}, Ln2/b;->a(Ljava/lang/String;I)Landroid/content/pm/ApplicationInfo;
 
-    move-result v5
-
-    goto :goto_0
+    move-result-object p0
 
     .line 8
-    :cond_3
-    invoke-static {p1, v1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->o(Landroid/os/Parcel;I)Z
+    iget-object p0, p0, Landroid/content/pm/ApplicationInfo;->metaData:Landroid/os/Bundle;
+    :try_end_1
+    .catch Landroid/content/pm/PackageManager$NameNotFoundException; {:try_start_1 .. :try_end_1} :catch_0
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    move-result v4
-
-    goto :goto_0
+    if-nez p0, :cond_1
 
     .line 9
-    :cond_4
-    invoke-static {p1, v1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->r(Landroid/os/Parcel;I)I
+    :try_start_2
+    monitor-exit v0
+    :try_end_2
+    .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
-    move-result v3
+    return-void
+
+    :cond_1
+    :try_start_3
+    const-string v1, "com.google.app.id"
+
+    .line 10
+    invoke-virtual {p0, v1}, Landroid/os/Bundle;->getString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v1
+
+    sput-object v1, Ld2/m0;->c:Ljava/lang/String;
+
+    const-string v1, "com.google.android.gms.version"
+
+    .line 11
+    invoke-virtual {p0, v1}, Landroid/os/Bundle;->getInt(Ljava/lang/String;)I
+
+    move-result p0
+
+    sput p0, Ld2/m0;->d:I
+    :try_end_3
+    .catch Landroid/content/pm/PackageManager$NameNotFoundException; {:try_start_3 .. :try_end_3} :catch_0
+    .catchall {:try_start_3 .. :try_end_3} :catchall_0
 
     goto :goto_0
 
-    .line 10
-    :cond_5
-    invoke-static {p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->n(Landroid/os/Parcel;I)V
+    :catch_0
+    move-exception p0
 
-    .line 11
-    new-instance p1, Lcom/google/android/gms/common/internal/RootTelemetryConfiguration;
+    :try_start_4
+    const-string v1, "MetadataValueReader"
 
-    move-object v2, p1
+    const-string v2, "This should never happen."
 
-    invoke-direct/range {v2 .. v7}, Lcom/google/android/gms/common/internal/RootTelemetryConfiguration;-><init>(IZZII)V
+    .line 12
+    invoke-static {v1, v2, p0}, Landroid/util/Log;->wtf(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I
 
-    return-object p1
-.end method
+    .line 13
+    :goto_0
+    monitor-exit v0
 
-.method public final synthetic newArray(I)[Ljava/lang/Object;
-    .locals 0
+    return-void
 
-    new-array p1, p1, [Lcom/google/android/gms/common/internal/RootTelemetryConfiguration;
+    :catchall_0
+    move-exception p0
 
-    return-object p1
+    monitor-exit v0
+    :try_end_4
+    .catchall {:try_start_4 .. :try_end_4} :catchall_0
+
+    throw p0
 .end method

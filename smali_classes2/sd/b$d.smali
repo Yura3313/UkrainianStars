@@ -1,5 +1,5 @@
 .class public final Lsd/b$d;
-.super Lse/h;
+.super Lse/i;
 .source "FriendsFragment.kt"
 
 # interfaces
@@ -18,31 +18,31 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/l<",
         "Ljava/util/List<",
         "+",
-        "Lvc/i;",
+        "Lvc/h;",
         ">;",
-        "Lie/h;",
+        "Lie/i;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic f:Lsd/b;
+.field public final synthetic g:Lsd/b;
 
 
 # direct methods
 .method public constructor <init>(Lsd/b;)V
     .locals 0
 
-    iput-object p1, p0, Lsd/b$d;->f:Lsd/b;
+    iput-object p1, p0, Lsd/b$d;->g:Lsd/b;
 
     const/4 p1, 0x1
 
-    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -58,17 +58,17 @@
     const-string v0, "list"
 
     .line 2
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 3
-    iget-object v0, p0, Lsd/b$d;->f:Lsd/b;
+    iget-object v0, p0, Lsd/b$d;->g:Lsd/b;
 
     .line 4
     new-instance v1, Ljava/util/ArrayList;
 
     const/16 v2, 0xa
 
-    invoke-static {p1, v2}, Lje/f;->q(Ljava/lang/Iterable;I)I
+    invoke-static {p1, v2}, Lje/f;->l(Ljava/lang/Iterable;I)I
 
     move-result v2
 
@@ -91,31 +91,31 @@
     move-result-object v2
 
     .line 6
-    check-cast v2, Lvc/i;
+    check-cast v2, Lvc/h;
 
     .line 7
     new-instance v11, Lsd/a;
 
     .line 8
-    iget-object v4, v2, Lvc/i;->a:Lcom/supercell/id/model/IdSocialAccount;
+    iget-object v4, v2, Lvc/h;->a:Lcom/supercell/id/model/IdSocialAccount;
 
     .line 9
-    iget-object v5, v2, Lvc/i;->b:Ljava/lang/String;
+    iget-object v5, v2, Lvc/h;->b:Ljava/lang/String;
 
     .line 10
-    iget-object v6, v2, Lvc/i;->c:Lcom/supercell/id/model/ProfileImage;
+    iget-object v6, v2, Lvc/h;->c:Lcom/supercell/id/model/ProfileImage;
 
     .line 11
-    iget-object v7, v2, Lvc/i;->d:Lcom/supercell/id/model/IdPresenceStatus;
+    iget-object v7, v2, Lvc/h;->d:Lcom/supercell/id/model/IdPresenceStatus;
 
     .line 12
-    iget-object v8, v2, Lvc/i;->e:Lcom/supercell/id/model/IdRelationshipStatus;
+    iget-object v8, v2, Lvc/h;->e:Lcom/supercell/id/model/IdRelationshipStatus;
 
     .line 13
-    iget v9, v2, Lvc/i;->f:I
+    iget v9, v2, Lvc/h;->f:I
 
     .line 14
-    iget-boolean v10, v2, Lvc/i;->g:Z
+    iget-boolean v10, v2, Lvc/h;->g:Z
 
     move-object v3, v11
 
@@ -128,13 +128,13 @@
 
     .line 16
     :cond_0
-    sget p1, Lsd/b;->f0:I
+    sget p1, Lsd/b;->g0:I
 
     .line 17
     invoke-virtual {v0, v1}, Lsd/b;->V0(Ljava/util/List;)V
 
     .line 18
-    sget-object p1, Lie/h;->a:Lie/h;
+    sget-object p1, Lie/i;->a:Lie/i;
 
     return-object p1
 .end method

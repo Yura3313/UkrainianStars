@@ -466,11 +466,11 @@
     move-object/from16 v0, p1
 
     .line 1
-    sget-object v1, Lq/e$a;->h:Lq/e$a;
+    sget-object v1, Lq/e$a;->i:Lq/e$a;
 
-    sget-object v8, Lq/e$a;->g:Lq/e$a;
+    sget-object v8, Lq/e$a;->h:Lq/e$a;
 
-    sget-object v9, Lq/e$a;->f:Lq/e$a;
+    sget-object v9, Lq/e$a;->g:Lq/e$a;
 
     iget-object v2, v0, Lq/m;->o0:Ljava/util/ArrayList;
 
@@ -683,7 +683,7 @@
     iput v3, v2, Lr/q;->a:I
 
     .line 25
-    sget-object v2, Lq/e$a;->i:Lq/e$a;
+    sget-object v2, Lq/e$a;->j:Lq/e$a;
 
     if-eq v4, v2, :cond_e
 
@@ -2022,7 +2022,7 @@
 
     float-to-long v10, v1
 
-    invoke-static {v14, v6, v0, v7}, Lo/p;->a(FFFF)F
+    invoke-static {v14, v6, v0, v7}, Lo/o;->a(FFFF)F
 
     move-result v0
 
@@ -2462,9 +2462,9 @@
     .locals 14
 
     .line 1
-    sget-object v6, Lq/e$a;->f:Lq/e$a;
+    sget-object v6, Lq/e$a;->g:Lq/e$a;
 
-    sget-object v7, Lq/e$a;->h:Lq/e$a;
+    sget-object v7, Lq/e$a;->i:Lq/e$a;
 
     iget-object v0, p0, Lr/e;->a:Lq/f;
 
@@ -2517,7 +2517,7 @@
     iget v2, v9, Lq/e;->m:I
 
     .line 7
-    sget-object v4, Lq/e$a;->g:Lq/e$a;
+    sget-object v4, Lq/e$a;->h:Lq/e$a;
 
     if-eq v10, v4, :cond_3
 

@@ -12,11 +12,11 @@
 
 
 # instance fields
-.field public b0:Z
-
 .field public c0:Z
 
-.field public d0:Ljava/util/HashMap;
+.field public d0:Z
+
+.field public e0:Ljava/util/HashMap;
 
 
 # direct methods
@@ -33,7 +33,7 @@
 .method public final N0()V
     .locals 1
 
-    iget-object v0, p0, Lmd/f;->d0:Ljava/util/HashMap;
+    iget-object v0, p0, Lmd/f;->e0:Ljava/util/HashMap;
 
     if-eqz v0, :cond_0
 
@@ -53,7 +53,7 @@
 
     const-string v1, "childFragmentManager"
 
-    invoke-static {v0, v1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v0}, Landroidx/fragment/app/FragmentManager;->K()Ljava/util/List;
 
@@ -61,7 +61,7 @@
 
     const-string v1, "childFragmentManager.fragments"
 
-    invoke-static {v0, v1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 2
     new-instance v1, Ljava/util/ArrayList;
@@ -125,7 +125,7 @@
     check-cast v1, Lwc/w;
 
     .line 8
-    invoke-virtual {v1}, Lwc/s1;->R0()V
+    invoke-virtual {v1}, Lwc/t1;->R0()V
 
     goto :goto_1
 
@@ -139,7 +139,7 @@
     const/4 v0, 0x1
 
     .line 1
-    iput-boolean v0, p0, Landroidx/fragment/app/Fragment;->K:Z
+    iput-boolean v0, p0, Landroidx/fragment/app/Fragment;->L:Z
 
     .line 2
     sget v1, Lcom/supercell/id/R$id;->tab_pager:I
@@ -160,7 +160,7 @@
 
     const-string v5, "childFragmentManager"
 
-    invoke-static {v4, v5}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v4, v5}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-direct {v3, v4}, Lmd/f$a;-><init>(Landroidx/fragment/app/FragmentManager;)V
 
@@ -181,17 +181,17 @@
     if-eqz v2, :cond_1
 
     .line 4
-    sget-object v4, Lmd/f$b;->g:Lmd/f$b;
+    sget-object v4, Lmd/f$b;->h:Lmd/f$b;
 
     invoke-virtual {v2, v4}, Lcom/supercell/id/view/FlatTabLayout;->setGetTitleKey(Lre/l;)V
 
     .line 5
-    sget-object v4, Lmd/f$c;->g:Lmd/f$c;
+    sget-object v4, Lmd/f$c;->h:Lmd/f$c;
 
     invoke-virtual {v2, v4}, Lcom/supercell/id/view/FlatTabLayout;->setGetIconKey(Lre/l;)V
 
     .line 6
-    sget-object v4, Lmd/f$d;->g:Lmd/f$d;
+    sget-object v4, Lmd/f$d;->h:Lmd/f$d;
 
     invoke-virtual {v2, v4}, Lcom/supercell/id/view/FlatTabLayout;->setGetIconDisabledKey(Lre/l;)V
 
@@ -235,7 +235,7 @@
 
     const-string v1, "tab_pager"
 
-    invoke-static {p1, v1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v1}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {p1, v0}, Landroidx/viewpager/widget/RtlViewPager;->setCurrentItem(I)V
 
@@ -248,7 +248,7 @@
 
     const-string p3, "inflater"
 
-    invoke-static {p1, p3}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p3}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     sget p3, Lcom/supercell/id/R$layout;->fragment_login_enter_contact_details_page:I
 
@@ -274,7 +274,7 @@
 .method public final d1(I)Landroid/view/View;
     .locals 2
 
-    iget-object v0, p0, Lmd/f;->d0:Ljava/util/HashMap;
+    iget-object v0, p0, Lmd/f;->e0:Ljava/util/HashMap;
 
     if-nez v0, :cond_0
 
@@ -282,10 +282,10 @@
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    iput-object v0, p0, Lmd/f;->d0:Ljava/util/HashMap;
+    iput-object v0, p0, Lmd/f;->e0:Ljava/util/HashMap;
 
     :cond_0
-    iget-object v0, p0, Lmd/f;->d0:Ljava/util/HashMap;
+    iget-object v0, p0, Lmd/f;->e0:Ljava/util/HashMap;
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -300,7 +300,7 @@
     if-nez v0, :cond_2
 
     .line 1
-    iget-object v0, p0, Landroidx/fragment/app/Fragment;->M:Landroid/view/View;
+    iget-object v0, p0, Landroidx/fragment/app/Fragment;->N:Landroid/view/View;
 
     if-nez v0, :cond_1
 
@@ -314,7 +314,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lmd/f;->d0:Ljava/util/HashMap;
+    iget-object v1, p0, Lmd/f;->e0:Ljava/util/HashMap;
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 

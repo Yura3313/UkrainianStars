@@ -39,14 +39,14 @@
     new-array p1, p1, [Lre/a;
 
     .line 2
-    sget-object v0, Ltd/b$a$a;->f:Ltd/b$a$a;
+    sget-object v0, Ltd/b$a$a;->g:Ltd/b$a$a;
 
     const/4 v1, 0x0
 
     aput-object v0, p1, v1
 
     .line 3
-    sget-object v0, Ltd/b$a$b;->f:Ltd/b$a$b;
+    sget-object v0, Ltd/b$a$b;->g:Ltd/b$a$b;
 
     const/4 v1, 0x1
 

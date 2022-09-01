@@ -2,64 +2,37 @@
 .super Ljava/lang/Object;
 .source "ViewTreeViewModelStoreOwner.java"
 
-# interfaces
-.implements La5/u0;
-
 
 # direct methods
-.method public synthetic constructor <init>()V
-    .locals 0
+.method public static final a(Ljava/lang/Object;)Lze/o;
+    .locals 2
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    .line 1
+    new-instance v0, Lze/p;
 
-    return-void
+    const/4 v1, 0x0
+
+    invoke-direct {v0, v1}, Lze/p;-><init>(Lze/c1;)V
+
+    .line 2
+    invoke-virtual {v0, p0}, Lze/f1;->G(Ljava/lang/Object;)Z
+
+    return-object v0
 .end method
 
-.method public static a([J[JI)V
-    .locals 5
-
-    neg-int p2, p2
+.method public static b()Lze/o;
+    .locals 2
 
     const/4 v0, 0x0
 
-    :goto_0
-    const/16 v1, 0xa
+    new-instance v1, Lze/p;
 
-    if-ge v0, v1, :cond_0
+    invoke-direct {v1, v0}, Lze/p;-><init>(Lze/c1;)V
 
-    .line 1
-    aget-wide v1, p0, v0
-
-    long-to-int v2, v1
-
-    aget-wide v3, p1, v0
-
-    long-to-int v1, v3
-
-    xor-int/2addr v1, v2
-
-    and-int/2addr v1, p2
-
-    .line 2
-    aget-wide v2, p0, v0
-
-    long-to-int v3, v2
-
-    xor-int/2addr v1, v3
-
-    int-to-long v1, v1
-
-    aput-wide v1, p0, v0
-
-    add-int/lit8 v0, v0, 0x1
-
-    goto :goto_0
-
-    :cond_0
-    return-void
+    return-object v1
 .end method
 
-.method public static b(Landroid/view/View;Landroidx/lifecycle/z;)V
+.method public static c(Landroid/view/View;Landroidx/lifecycle/z;)V
     .locals 1
 
     sget v0, Landroidx/lifecycle/viewmodel/R$id;->view_tree_view_model_store_owner:I
@@ -69,7 +42,7 @@
     return-void
 .end method
 
-.method public static final c(Ljava/lang/String;JJJ)J
+.method public static final d(Ljava/lang/String;JJJ)J
     .locals 21
 
     move-object/from16 v0, p0
@@ -79,7 +52,7 @@
     move-wide/from16 v3, p5
 
     .line 1
-    invoke-static/range {p0 .. p0}, Landroidx/lifecycle/b0;->d(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static/range {p0 .. p0}, Landroidx/lifecycle/b0;->e(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v5
 
@@ -333,7 +306,7 @@
     return-wide v7
 .end method
 
-.method public static final d(Ljava/lang/String;)Ljava/lang/String;
+.method public static final e(Ljava/lang/String;)Ljava/lang/String;
     .locals 1
 
     .line 1
@@ -381,7 +354,7 @@
 
     move-object v0, p0
 
-    invoke-static/range {v0 .. v6}, Landroidx/lifecycle/b0;->c(Ljava/lang/String;JJJ)J
+    invoke-static/range {v0 .. v6}, Landroidx/lifecycle/b0;->d(Ljava/lang/String;JJJ)J
 
     move-result-wide p0
 
@@ -401,27 +374,9 @@
 
     move-wide v1, p1
 
-    invoke-static/range {v0 .. v6}, Landroidx/lifecycle/b0;->c(Ljava/lang/String;JJJ)J
+    invoke-static/range {v0 .. v6}, Landroidx/lifecycle/b0;->d(Ljava/lang/String;JJJ)J
 
     move-result-wide p0
 
     return-wide p0
-.end method
-
-
-# virtual methods
-.method public e()Ljava/lang/Object;
-    .locals 2
-
-    sget-object v0, Lcom/google/android/play/core/assetpacks/l2;->a:Lcom/google/android/play/core/assetpacks/l2;
-
-    invoke-static {v0}, Ljava/util/concurrent/Executors;->newSingleThreadExecutor(Ljava/util/concurrent/ThreadFactory;)Ljava/util/concurrent/ExecutorService;
-
-    move-result-object v0
-
-    const-string v1, "Cannot return null from a non-@Nullable @Provides method"
-
-    invoke-static {v0, v1}, La5/g0;->h(Ljava/lang/Object;Ljava/lang/String;)V
-
-    return-object v0
 .end method

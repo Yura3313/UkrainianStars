@@ -14,7 +14,7 @@
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;Landroid/os/Looper;Ld2/c;Lb2/e;Lb2/l;)V
+.method public constructor <init>(Landroid/content/Context;Landroid/os/Looper;Ld2/c;Lb2/d;Lb2/k;)V
     .locals 7
 
     const/16 v3, 0x10e
@@ -31,7 +31,7 @@
 
     move-object v6, p5
 
-    invoke-direct/range {v0 .. v6}, Lcom/google/android/gms/common/internal/a;-><init>(Landroid/content/Context;Landroid/os/Looper;ILd2/c;Lb2/e;Lb2/l;)V
+    invoke-direct/range {v0 .. v6}, Lcom/google/android/gms/common/internal/a;-><init>(Landroid/content/Context;Landroid/os/Looper;ILd2/c;Lb2/d;Lb2/k;)V
 
     return-void
 .end method

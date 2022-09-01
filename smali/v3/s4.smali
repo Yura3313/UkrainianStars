@@ -74,10 +74,10 @@
 
     .line 5
     :try_start_0
-    invoke-static {p1}, Lb2/g;->c(Landroid/content/Context;)Lcom/google/android/gms/common/api/Status;
+    invoke-static {p1}, Lb2/f;->c(Landroid/content/Context;)Lcom/google/android/gms/common/api/Status;
 
     .line 6
-    invoke-static {}, Lb2/g;->b()Ljava/lang/String;
+    invoke-static {}, Lb2/f;->b()Ljava/lang/String;
     :try_end_0
     .catch Ljava/lang/IllegalStateException; {:try_start_0 .. :try_end_0} :catch_0
 

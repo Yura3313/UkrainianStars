@@ -18,18 +18,18 @@
 
 
 # instance fields
-.field public final synthetic f:Lf0/z;
+.field public final synthetic g:Lf0/z;
 
-.field public final synthetic g:Landroid/view/View;
+.field public final synthetic h:Landroid/view/View;
 
 
 # direct methods
 .method public constructor <init>(Lf0/z;Landroid/view/View;)V
     .locals 0
 
-    iput-object p1, p0, Lf0/x$b;->f:Lf0/z;
+    iput-object p1, p0, Lf0/x$b;->g:Lf0/z;
 
-    iput-object p2, p0, Lf0/x$b;->g:Landroid/view/View;
+    iput-object p2, p0, Lf0/x$b;->h:Landroid/view/View;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -42,7 +42,7 @@
     .locals 0
 
     .line 1
-    iget-object p1, p0, Lf0/x$b;->f:Lf0/z;
+    iget-object p1, p0, Lf0/x$b;->g:Lf0/z;
 
     check-cast p1, Landroidx/appcompat/app/w$c;
 

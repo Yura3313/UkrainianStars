@@ -21,22 +21,22 @@
 
 
 # instance fields
-.field public final f:I
-
 .field public final g:I
 
-.field public final h:Ljava/lang/String;
+.field public final h:I
 
-.field public final i:J
+.field public final i:Ljava/lang/String;
+
+.field public final j:J
 
 
 # direct methods
 .method public static constructor <clinit>()V
     .locals 1
 
-    new-instance v0, Lk3/b51;
+    new-instance v0, Lk3/e51;
 
-    invoke-direct {v0}, Lk3/b51;-><init>()V
+    invoke-direct {v0}, Lk3/e51;-><init>()V
 
     sput-object v0, Lcom/google/android/gms/internal/ads/zzvl;->CREATOR:Landroid/os/Parcelable$Creator;
 
@@ -50,16 +50,16 @@
     invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
 
     .line 2
-    iput p1, p0, Lcom/google/android/gms/internal/ads/zzvl;->f:I
+    iput p1, p0, Lcom/google/android/gms/internal/ads/zzvl;->g:I
 
     .line 3
-    iput p2, p0, Lcom/google/android/gms/internal/ads/zzvl;->g:I
+    iput p2, p0, Lcom/google/android/gms/internal/ads/zzvl;->h:I
 
     .line 4
-    iput-object p3, p0, Lcom/google/android/gms/internal/ads/zzvl;->h:Ljava/lang/String;
+    iput-object p3, p0, Lcom/google/android/gms/internal/ads/zzvl;->i:Ljava/lang/String;
 
     .line 5
-    iput-wide p4, p0, Lcom/google/android/gms/internal/ads/zzvl;->i:J
+    iput-wide p4, p0, Lcom/google/android/gms/internal/ads/zzvl;->j:J
 
     return-void
 .end method
@@ -77,7 +77,7 @@
     move-result p2
 
     .line 2
-    iget v0, p0, Lcom/google/android/gms/internal/ads/zzvl;->f:I
+    iget v0, p0, Lcom/google/android/gms/internal/ads/zzvl;->g:I
 
     const/4 v1, 0x1
 
@@ -90,7 +90,7 @@
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 5
-    iget v0, p0, Lcom/google/android/gms/internal/ads/zzvl;->g:I
+    iget v0, p0, Lcom/google/android/gms/internal/ads/zzvl;->h:I
 
     const/4 v1, 0x2
 
@@ -101,7 +101,7 @@
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 8
-    iget-object v0, p0, Lcom/google/android/gms/internal/ads/zzvl;->h:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/android/gms/internal/ads/zzvl;->i:Ljava/lang/String;
 
     const/4 v1, 0x3
 
@@ -110,7 +110,7 @@
     invoke-static {p1, v1, v0, v3}, Le2/b;->m(Landroid/os/Parcel;ILjava/lang/String;Z)V
 
     .line 9
-    iget-wide v0, p0, Lcom/google/android/gms/internal/ads/zzvl;->i:J
+    iget-wide v0, p0, Lcom/google/android/gms/internal/ads/zzvl;->j:J
 
     const/16 v3, 0x8
 

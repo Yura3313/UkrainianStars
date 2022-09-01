@@ -3,9 +3,9 @@
 .source "Job.kt"
 
 # interfaces
-.implements Lze/b1;
+.implements Lze/c1;
 
 
 # virtual methods
-.method public abstract j(Lze/m1;)V
+.method public abstract j(Lze/n1;)V
 .end method

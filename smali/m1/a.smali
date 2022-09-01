@@ -26,7 +26,7 @@
             "Lk1/i;",
             ">;",
             "Landroid/os/Bundle;",
-            "Lcom/google/android/gms/ads/f;",
+            "Lcom/google/android/gms/ads/g;",
             ")V"
         }
     .end annotation

@@ -65,7 +65,7 @@
     iget-object p1, p1, La8/f;->o:Lx7/d;
 
     .line 13
-    sget-object p2, Lx7/d$b;->k:Lx7/d$b;
+    sget-object p2, Lx7/d$b;->l:Lx7/d$b;
 
     invoke-virtual {p1, p2, p0}, Lx7/d;->a(Lx7/d$b;Lx7/a;)V
 
@@ -100,11 +100,11 @@
     invoke-direct {v1, v0}, Lc8/e;-><init>(Lc8/j;)V
 
     .line 3
-    new-instance v0, Lk3/m7;
+    new-instance v0, Lk3/n7;
 
     iget-object v2, p0, Lv9/e;->b:Le8/s;
 
-    invoke-direct {v0, v1, v2}, Lk3/m7;-><init>(Lc8/j;Le8/s;)V
+    invoke-direct {v0, v1, v2}, Lk3/n7;-><init>(Lc8/j;Le8/s;)V
 
     .line 4
     new-instance v1, Lc8/c;
@@ -117,11 +117,11 @@
     invoke-direct {v0, v1}, Ln1/a;-><init>(Ljava/lang/Object;)V
 
     .line 6
-    new-instance v1, Lk3/fw;
+    new-instance v1, Lk3/dw;
 
     iget-object v2, p0, Lv9/e;->b:Le8/s;
 
-    invoke-direct {v1, v0, v2, p1}, Lk3/fw;-><init>(Lc8/j;Le8/s;Ljava/lang/String;)V
+    invoke-direct {v1, v0, v2, p1}, Lk3/dw;-><init>(Lc8/j;Le8/s;Ljava/lang/String;)V
 
     return-object v1
 .end method
@@ -136,7 +136,7 @@
     const-string p2, "/helpful/"
 
     .line 1
-    invoke-static {v0, p1, p2}, Landroid/support/v4/media/f;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, p1, p2}, Landroid/support/v4/media/f;->b(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 
@@ -146,7 +146,7 @@
     const-string p2, "/unhelpful/"
 
     .line 2
-    invoke-static {v0, p1, p2}, Landroid/support/v4/media/f;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, p1, p2}, Landroid/support/v4/media/f;->b(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 
@@ -166,11 +166,11 @@
     invoke-direct {p1, p2}, Lc8/e;-><init>(Lc8/j;)V
 
     .line 5
-    new-instance p2, Lk3/m7;
+    new-instance p2, Lk3/n7;
 
     iget-object v0, p0, Lv9/e;->b:Le8/s;
 
-    invoke-direct {p2, p1, v0}, Lk3/m7;-><init>(Lc8/j;Le8/s;)V
+    invoke-direct {p2, p1, v0}, Lk3/n7;-><init>(Lc8/j;Le8/s;)V
 
     .line 6
     new-instance p1, Ln1/a;
@@ -196,7 +196,7 @@
     .locals 5
 
     .line 1
-    sget-object v0, Lx7/d$b;->k:Lx7/d$b;
+    sget-object v0, Lx7/d$b;->l:Lx7/d$b;
 
     if-eq p1, v0, :cond_0
 
@@ -263,9 +263,9 @@
     move-exception v2
 
     .line 8
-    iget-object v3, v2, Lcom/helpshift/common/exception/RootAPIException;->h:Ld8/a;
+    iget-object v3, v2, Lcom/helpshift/common/exception/RootAPIException;->i:Ld8/a;
 
-    sget-object v4, Ld8/b;->s:Ld8/b;
+    sget-object v4, Ld8/b;->t:Ld8/b;
 
     if-ne v3, v4, :cond_1
 
@@ -293,7 +293,7 @@
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
     .line 2
-    invoke-static {p2}, Lcom/google/android/play/core/appupdate/g;->b(Ljava/lang/String;)Z
+    invoke-static {p2}, La5/b0;->d(Ljava/lang/String;)Z
 
     move-result v1
 
@@ -322,7 +322,7 @@
     move-result-object v1
 
     .line 9
-    invoke-static {p2}, Lcom/google/android/play/core/appupdate/g;->b(Ljava/lang/String;)Z
+    invoke-static {p2}, La5/b0;->d(Ljava/lang/String;)Z
 
     move-result v2
 

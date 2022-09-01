@@ -1,84 +1,93 @@
 .class public final Lk3/a41;
-.super Ljava/lang/Object;
+.super Li1/c;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 
-# instance fields
-.field public a:Lk3/u31;
-    .annotation build Ljavax/annotation/concurrent/GuardedBy;
-        value = "lock"
-    .end annotation
-.end field
-
-.field public b:Z
-    .annotation build Ljavax/annotation/concurrent/GuardedBy;
-        value = "lock"
-    .end annotation
-.end field
-
-.field public final c:Ljava/lang/Object;
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Li1/c<",
+        "Lcom/google/android/gms/internal/ads/zztb;",
+        ">;"
+    }
+.end annotation
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;)V
-    .locals 0
+.method public constructor <init>(Landroid/content/Context;Landroid/os/Looper;Lcom/google/android/gms/common/internal/BaseGmsClient$a;Lcom/google/android/gms/common/internal/BaseGmsClient$b;)V
+    .locals 6
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-static {p1}, Lk3/y8;->a(Landroid/content/Context;)Landroid/content/Context;
+
+    move-result-object v1
+
+    const/16 v3, 0x7b
+
+    move-object v0, p0
+
+    move-object v2, p2
+
+    move-object v4, p3
+
+    move-object v5, p4
 
     .line 2
-    new-instance p1, Ljava/lang/Object;
-
-    invoke-direct {p1}, Ljava/lang/Object;-><init>()V
-
-    iput-object p1, p0, Lk3/a41;->c:Ljava/lang/Object;
+    invoke-direct/range {v0 .. v5}, Li1/c;-><init>(Landroid/content/Context;Landroid/os/Looper;ILcom/google/android/gms/common/internal/BaseGmsClient$a;Lcom/google/android/gms/common/internal/BaseGmsClient$b;)V
 
     return-void
 .end method
 
-.method public static a(Lk3/a41;)V
+
+# virtual methods
+.method public final synthetic p(Landroid/os/IBinder;)Landroid/os/IInterface;
     .locals 2
 
-    .line 1
-    iget-object v0, p0, Lk3/a41;->c:Ljava/lang/Object;
+    if-nez p1, :cond_0
 
-    monitor-enter v0
+    const/4 p1, 0x0
+
+    return-object p1
+
+    :cond_0
+    const-string v0, "com.google.android.gms.ads.internal.cache.ICacheService"
+
+    .line 1
+    invoke-interface {p1, v0}, Landroid/os/IBinder;->queryLocalInterface(Ljava/lang/String;)Landroid/os/IInterface;
+
+    move-result-object v0
 
     .line 2
-    :try_start_0
-    iget-object v1, p0, Lk3/a41;->a:Lk3/u31;
+    instance-of v1, v0, Lcom/google/android/gms/internal/ads/zztb;
 
-    if-nez v1, :cond_0
+    if-eqz v1, :cond_1
 
     .line 3
-    monitor-exit v0
+    check-cast v0, Lcom/google/android/gms/internal/ads/zztb;
 
-    goto :goto_0
+    return-object v0
 
     .line 4
-    :cond_0
-    invoke-virtual {v1}, Lcom/google/android/gms/common/internal/BaseGmsClient;->disconnect()V
+    :cond_1
+    new-instance v0, Lcom/google/android/gms/internal/ads/zzte;
 
-    const/4 v1, 0x0
+    invoke-direct {v0, p1}, Lcom/google/android/gms/internal/ads/zzte;-><init>(Landroid/os/IBinder;)V
 
-    .line 5
-    iput-object v1, p0, Lk3/a41;->a:Lk3/u31;
+    return-object v0
+.end method
 
-    .line 6
-    invoke-static {}, Landroid/os/Binder;->flushPendingCommands()V
+.method public final w()Ljava/lang/String;
+    .locals 1
 
-    .line 7
-    monitor-exit v0
+    const-string v0, "com.google.android.gms.ads.internal.cache.ICacheService"
 
-    :goto_0
-    return-void
+    return-object v0
+.end method
 
-    :catchall_0
-    move-exception p0
+.method public final x()Ljava/lang/String;
+    .locals 1
 
-    monitor-exit v0
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+    const-string v0, "com.google.android.gms.ads.service.CACHE"
 
-    throw p0
+    return-object v0
 .end method

@@ -1,180 +1,340 @@
-.class public Lz3/w1;
-.super Ly3/a;
+.class public final Lz3/w1;
+.super Ljava/lang/Object;
+
+# interfaces
+.implements Ljava/lang/Runnable;
+
+
+# instance fields
+.field public final synthetic g:Z
+
+.field public final synthetic h:Lz3/u1;
+
+.field public final synthetic i:Lz3/u1;
+
+.field public final synthetic j:Lz3/v1;
 
 
 # direct methods
-.method public constructor <init>(Lz3/p0;)V
+.method public constructor <init>(Lz3/v1;ZLz3/u1;Lz3/u1;)V
     .locals 0
 
-    invoke-direct {p0, p1}, Ly3/a;-><init>(Lz3/p0;)V
+    iput-object p1, p0, Lz3/w1;->j:Lz3/v1;
+
+    iput-boolean p2, p0, Lz3/w1;->g:Z
+
+    iput-object p3, p0, Lz3/w1;->h:Lz3/u1;
+
+    iput-object p4, p0, Lz3/w1;->i:Lz3/u1;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final A()Lz3/u1;
-    .locals 1
-
-    iget-object v0, p0, Ly3/a;->a:Ljava/lang/Object;
-
-    check-cast v0, Lz3/p0;
-
-    invoke-virtual {v0}, Lz3/p0;->o()Lz3/u1;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public final B()Lz3/k;
-    .locals 2
+.method public final run()V
+    .locals 13
 
     .line 1
-    iget-object v0, p0, Ly3/a;->a:Ljava/lang/Object;
+    iget-object v0, p0, Lz3/w1;->j:Lz3/v1;
 
-    check-cast v0, Lz3/p0;
-
-    .line 2
-    iget-object v1, v0, Lz3/p0;->s:Lz3/k;
-
-    invoke-static {v1}, Lz3/p0;->i(Lz3/m2;)V
-
-    .line 3
-    iget-object v0, v0, Lz3/p0;->s:Lz3/k;
-
-    return-object v0
-.end method
-
-.method public final C()Lz3/q2;
-    .locals 2
-
-    .line 1
-    iget-object v0, p0, Ly3/a;->a:Ljava/lang/Object;
-
-    check-cast v0, Lz3/p0;
-
-    .line 2
-    iget-object v1, v0, Lz3/p0;->k:Lz3/q2;
-
-    invoke-static {v1}, Lz3/p0;->i(Lz3/m2;)V
-
-    .line 3
-    iget-object v0, v0, Lz3/p0;->k:Lz3/q2;
-
-    return-object v0
-.end method
-
-.method public final n()V
-    .locals 1
-
-    iget-object v0, p0, Ly3/a;->a:Ljava/lang/Object;
-
-    check-cast v0, Lz3/p0;
-
-    invoke-virtual {v0}, Lz3/p0;->b()Lz3/l0;
+    invoke-virtual {v0}, Ly3/a;->u()Lz3/n3;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lz3/l0;->n()V
+    iget-object v1, p0, Lz3/w1;->j:Lz3/v1;
 
-    return-void
-.end method
+    invoke-virtual {v1}, Lz3/x1;->y()Lz3/i;
 
-.method public final o()V
-    .locals 1
+    move-result-object v1
 
-    iget-object v0, p0, Ly3/a;->a:Ljava/lang/Object;
+    .line 2
+    invoke-virtual {v1}, Lz3/n2;->D()V
 
-    check-cast v0, Lz3/p0;
+    .line 3
+    iget-object v1, v1, Lz3/i;->i:Ljava/lang/String;
 
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    .line 4
+    invoke-virtual {v0, v1}, Lz3/n3;->F(Ljava/lang/String;)Z
 
-    return-void
-.end method
+    move-result v0
 
-.method public final p()V
-    .locals 1
+    const/4 v1, 0x0
 
-    iget-object v0, p0, Ly3/a;->a:Ljava/lang/Object;
+    const/4 v2, 0x1
 
-    check-cast v0, Lz3/p0;
+    if-eqz v0, :cond_1
 
-    invoke-virtual {v0}, Lz3/p0;->b()Lz3/l0;
+    .line 5
+    iget-boolean v0, p0, Lz3/w1;->g:Z
 
-    move-result-object v0
+    if-eqz v0, :cond_0
 
-    invoke-virtual {v0}, Lz3/l0;->p()V
+    iget-object v0, p0, Lz3/w1;->j:Lz3/v1;
 
-    return-void
-.end method
+    iget-object v0, v0, Lz3/v1;->i:Lz3/u1;
 
-.method public final v()V
-    .locals 1
+    if-eqz v0, :cond_0
 
-    iget-object v0, p0, Ly3/a;->a:Ljava/lang/Object;
+    const/4 v0, 0x1
 
-    check-cast v0, Lz3/p0;
+    goto :goto_0
 
-    invoke-virtual {v0}, Lz3/p0;->j()V
-
+    :cond_0
     const/4 v0, 0x0
 
-    throw v0
-.end method
+    :goto_0
+    if-eqz v0, :cond_3
 
-.method public final w()Lz3/a;
-    .locals 1
+    .line 6
+    iget-object v3, p0, Lz3/w1;->j:Lz3/v1;
 
-    iget-object v0, p0, Ly3/a;->a:Ljava/lang/Object;
+    iget-object v4, v3, Lz3/v1;->i:Lz3/u1;
 
-    check-cast v0, Lz3/p0;
+    invoke-static {v3, v4, v2}, Lz3/v1;->J(Lz3/v1;Lz3/u1;Z)V
 
-    invoke-virtual {v0}, Lz3/p0;->k()Lz3/a;
+    goto :goto_1
+
+    .line 7
+    :cond_1
+    iget-boolean v0, p0, Lz3/w1;->g:Z
+
+    if-eqz v0, :cond_2
+
+    iget-object v0, p0, Lz3/w1;->j:Lz3/v1;
+
+    iget-object v3, v0, Lz3/v1;->i:Lz3/u1;
+
+    if-eqz v3, :cond_2
+
+    .line 8
+    invoke-static {v0, v3, v2}, Lz3/v1;->J(Lz3/v1;Lz3/u1;Z)V
+
+    :cond_2
+    const/4 v0, 0x0
+
+    .line 9
+    :cond_3
+    :goto_1
+    iget-object v3, p0, Lz3/w1;->h:Lz3/u1;
+
+    if-eqz v3, :cond_4
+
+    iget-wide v4, v3, Lz3/u1;->c:J
+
+    iget-object v6, p0, Lz3/w1;->i:Lz3/u1;
+
+    iget-wide v7, v6, Lz3/u1;->c:J
+
+    cmp-long v9, v4, v7
+
+    if-nez v9, :cond_4
+
+    iget-object v3, v3, Lz3/u1;->b:Ljava/lang/String;
+
+    iget-object v4, v6, Lz3/u1;->b:Ljava/lang/String;
+
+    .line 10
+    invoke-static {v3, v4}, Lz3/g3;->o0(Ljava/lang/String;Ljava/lang/String;)Z
+
+    move-result v3
+
+    if-eqz v3, :cond_4
+
+    iget-object v3, p0, Lz3/w1;->h:Lz3/u1;
+
+    iget-object v3, v3, Lz3/u1;->a:Ljava/lang/String;
+
+    iget-object v4, p0, Lz3/w1;->i:Lz3/u1;
+
+    iget-object v4, v4, Lz3/u1;->a:Ljava/lang/String;
+
+    .line 11
+    invoke-static {v3, v4}, Lz3/g3;->o0(Ljava/lang/String;Ljava/lang/String;)Z
+
+    move-result v3
+
+    if-nez v3, :cond_5
+
+    :cond_4
+    const/4 v1, 0x1
+
+    :cond_5
+    if-eqz v1, :cond_9
+
+    .line 12
+    new-instance v8, Landroid/os/Bundle;
+
+    invoke-direct {v8}, Landroid/os/Bundle;-><init>()V
+
+    .line 13
+    iget-object v1, p0, Lz3/w1;->i:Lz3/u1;
+
+    invoke-static {v1, v8, v2}, Lz3/v1;->I(Lz3/u1;Landroid/os/Bundle;Z)V
+
+    .line 14
+    iget-object v1, p0, Lz3/w1;->h:Lz3/u1;
+
+    if-eqz v1, :cond_7
+
+    .line 15
+    iget-object v1, v1, Lz3/u1;->a:Ljava/lang/String;
+
+    if-eqz v1, :cond_6
+
+    const-string v2, "_pn"
+
+    .line 16
+    invoke-virtual {v8, v2, v1}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 17
+    :cond_6
+    iget-object v1, p0, Lz3/w1;->h:Lz3/u1;
+
+    iget-object v1, v1, Lz3/u1;->b:Ljava/lang/String;
+
+    const-string v2, "_pc"
+
+    invoke-virtual {v8, v2, v1}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 18
+    iget-object v1, p0, Lz3/w1;->h:Lz3/u1;
+
+    iget-wide v1, v1, Lz3/u1;->c:J
+
+    const-string v3, "_pi"
+
+    invoke-virtual {v8, v3, v1, v2}, Landroid/os/Bundle;->putLong(Ljava/lang/String;J)V
+
+    .line 19
+    :cond_7
+    iget-object v1, p0, Lz3/w1;->j:Lz3/v1;
+
+    invoke-virtual {v1}, Ly3/a;->u()Lz3/n3;
+
+    move-result-object v1
+
+    iget-object v2, p0, Lz3/w1;->j:Lz3/v1;
+
+    invoke-virtual {v2}, Lz3/x1;->y()Lz3/i;
+
+    move-result-object v2
+
+    .line 20
+    invoke-virtual {v2}, Lz3/n2;->D()V
+
+    .line 21
+    iget-object v2, v2, Lz3/i;->i:Ljava/lang/String;
+
+    .line 22
+    invoke-virtual {v1, v2}, Lz3/n3;->F(Ljava/lang/String;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_8
+
+    if-eqz v0, :cond_8
+
+    .line 23
+    iget-object v0, p0, Lz3/w1;->j:Lz3/v1;
+
+    .line 24
+    invoke-virtual {v0}, Lz3/x1;->C()Lz3/r2;
 
     move-result-object v0
 
-    return-object v0
-.end method
+    invoke-virtual {v0}, Lz3/r2;->K()J
 
-.method public final x()Lz3/k1;
-    .locals 1
+    move-result-wide v0
 
-    iget-object v0, p0, Ly3/a;->a:Ljava/lang/Object;
+    const-wide/16 v2, 0x0
 
-    check-cast v0, Lz3/p0;
+    cmp-long v4, v0, v2
 
-    invoke-virtual {v0}, Lz3/p0;->l()Lz3/k1;
+    if-lez v4, :cond_8
 
-    move-result-object v0
+    .line 25
+    iget-object v2, p0, Lz3/w1;->j:Lz3/v1;
 
-    return-object v0
-.end method
+    invoke-virtual {v2}, Ly3/a;->s()Lz3/g3;
 
-.method public final y()Lz3/i;
-    .locals 1
+    move-result-object v2
 
-    iget-object v0, p0, Ly3/a;->a:Ljava/lang/Object;
+    invoke-virtual {v2, v8, v0, v1}, Lz3/g3;->I(Landroid/os/Bundle;J)V
 
-    check-cast v0, Lz3/p0;
+    .line 26
+    :cond_8
+    iget-object v0, p0, Lz3/w1;->j:Lz3/v1;
 
-    invoke-virtual {v0}, Lz3/p0;->m()Lz3/i;
+    invoke-virtual {v0}, Lz3/x1;->x()Lz3/l1;
 
-    move-result-object v0
+    move-result-object v3
 
-    return-object v0
-.end method
+    .line 27
+    invoke-virtual {v3}, Lz3/x1;->o()V
 
-.method public final z()Lz3/y1;
-    .locals 1
+    .line 28
+    invoke-virtual {v3}, Lz3/x1;->n()V
 
-    iget-object v0, p0, Ly3/a;->a:Ljava/lang/Object;
-
-    check-cast v0, Lz3/p0;
-
-    invoke-virtual {v0}, Lz3/p0;->n()Lz3/y1;
+    .line 29
+    invoke-virtual {v3}, Ly3/a;->d()Ll2/c;
 
     move-result-object v0
 
-    return-object v0
+    invoke-interface {v0}, Ll2/c;->a()J
+
+    move-result-wide v6
+
+    .line 30
+    invoke-virtual {v3}, Lz3/x1;->o()V
+
+    .line 31
+    invoke-virtual {v3}, Lz3/x1;->n()V
+
+    const/4 v10, 0x1
+
+    const/4 v9, 0x1
+
+    const/4 v11, 0x0
+
+    const/4 v12, 0x0
+
+    const-string v4, "auto"
+
+    const-string v5, "_vs"
+
+    .line 32
+    invoke-virtual/range {v3 .. v12}, Lz3/l1;->H(Ljava/lang/String;Ljava/lang/String;JLandroid/os/Bundle;ZZZLjava/lang/String;)V
+
+    .line 33
+    :cond_9
+    iget-object v0, p0, Lz3/w1;->j:Lz3/v1;
+
+    iget-object v1, p0, Lz3/w1;->i:Lz3/u1;
+
+    iput-object v1, v0, Lz3/v1;->i:Lz3/u1;
+
+    .line 34
+    invoke-virtual {v0}, Lz3/x1;->z()Lz3/z1;
+
+    move-result-object v0
+
+    iget-object v1, p0, Lz3/w1;->i:Lz3/u1;
+
+    .line 35
+    invoke-virtual {v0}, Lz3/x1;->n()V
+
+    .line 36
+    invoke-virtual {v0}, Lz3/n2;->D()V
+
+    .line 37
+    new-instance v2, Lk3/b80;
+
+    invoke-direct {v2, v0, v1}, Lk3/b80;-><init>(Lz3/z1;Lz3/u1;)V
+
+    invoke-virtual {v0, v2}, Lz3/z1;->N(Ljava/lang/Runnable;)V
+
+    return-void
 .end method

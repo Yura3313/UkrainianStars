@@ -110,10 +110,10 @@
 
     .line 7
     :goto_1
-    invoke-static {p0}, Lcom/helpshift/util/w;->b(Ljava/io/Closeable;)V
+    invoke-static {p0}, Lcom/helpshift/util/v;->a(Ljava/io/Closeable;)V
 
     .line 8
-    invoke-static {v0}, Lcom/helpshift/util/w;->b(Ljava/io/Closeable;)V
+    invoke-static {v0}, Lcom/helpshift/util/v;->a(Ljava/io/Closeable;)V
 
     return-object v1
 
@@ -184,7 +184,7 @@
     move-result-object v2
 
     .line 10
-    invoke-static {v3, v2, v1, v1}, Landroidx/savedstate/d;->h(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v3, v2, v1, v1}, Le5/i;->j(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Throwable;[Lz9/a;)V
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_2
 
@@ -203,10 +203,10 @@
 
     .line 11
     :goto_3
-    invoke-static {v1}, Lcom/helpshift/util/w;->b(Ljava/io/Closeable;)V
+    invoke-static {v1}, Lcom/helpshift/util/v;->a(Ljava/io/Closeable;)V
 
     .line 12
-    invoke-static {p0}, Lcom/helpshift/util/w;->b(Ljava/io/Closeable;)V
+    invoke-static {p0}, Lcom/helpshift/util/v;->a(Ljava/io/Closeable;)V
 
     .line 13
     goto :goto_5

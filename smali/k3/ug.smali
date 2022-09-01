@@ -8,7 +8,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/ArrayList<",
-            "Lk3/g11;",
+            "Lk3/m11;",
             ">;"
         }
     .end annotation

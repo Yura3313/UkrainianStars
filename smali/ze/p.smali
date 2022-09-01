@@ -1,5 +1,5 @@
 .class public final Lze/p;
-.super Lze/e1;
+.super Lze/f1;
 .source "CompletableDeferred.kt"
 
 # interfaces
@@ -12,7 +12,7 @@
         "<T:",
         "Ljava/lang/Object;",
         ">",
-        "Lze/e1;",
+        "Lze/f1;",
         "Lze/o<",
         "TT;>;"
     }
@@ -20,16 +20,16 @@
 
 
 # direct methods
-.method public constructor <init>(Lze/b1;)V
+.method public constructor <init>(Lze/c1;)V
     .locals 1
 
     const/4 v0, 0x1
 
     .line 1
-    invoke-direct {p0, v0}, Lze/e1;-><init>(Z)V
+    invoke-direct {p0, v0}, Lze/f1;-><init>(Z)V
 
     .line 2
-    invoke-virtual {p0, p1}, Lze/e1;->D(Lze/b1;)V
+    invoke-virtual {p0, p1}, Lze/f1;->D(Lze/c1;)V
 
     return-void
 .end method
@@ -41,13 +41,13 @@
 
     const-string v0, "exception"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     new-instance v0, Lze/q;
 
     invoke-direct {v0, p1}, Lze/q;-><init>(Ljava/lang/Throwable;)V
 
-    invoke-virtual {p0, v0}, Lze/e1;->G(Ljava/lang/Object;)Z
+    invoke-virtual {p0, v0}, Lze/f1;->G(Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -62,7 +62,7 @@
         }
     .end annotation
 
-    invoke-virtual {p0, p1}, Lze/e1;->G(Ljava/lang/Object;)Z
+    invoke-virtual {p0, p1}, Lze/f1;->G(Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -88,7 +88,7 @@
 
     check-cast v0, Lze/p$a;
 
-    iget v1, v0, Lze/p$a;->j:I
+    iget v1, v0, Lze/p$a;->k:I
 
     const/high16 v2, -0x80000000
 
@@ -98,7 +98,7 @@
 
     sub-int/2addr v1, v2
 
-    iput v1, v0, Lze/p$a;->j:I
+    iput v1, v0, Lze/p$a;->k:I
 
     goto :goto_0
 
@@ -108,11 +108,11 @@
     invoke-direct {v0, p0, p1}, Lze/p$a;-><init>(Lze/p;Lke/d;)V
 
     :goto_0
-    iget-object p1, v0, Lze/p$a;->i:Ljava/lang/Object;
+    iget-object p1, v0, Lze/p$a;->j:Ljava/lang/Object;
 
-    sget-object v1, Lle/a;->f:Lle/a;
+    sget-object v1, Lle/a;->g:Lle/a;
 
-    iget v2, v0, Lze/p$a;->j:I
+    iget v2, v0, Lze/p$a;->k:I
 
     const/4 v3, 0x1
 
@@ -120,7 +120,7 @@
 
     if-ne v2, v3, :cond_1
 
-    invoke-static {p1}, Le5/i;->q(Ljava/lang/Object;)V
+    invoke-static {p1}, Lie/f;->d(Ljava/lang/Object;)V
 
     goto :goto_1
 
@@ -134,13 +134,13 @@
     throw p1
 
     :cond_2
-    invoke-static {p1}, Le5/i;->q(Ljava/lang/Object;)V
+    invoke-static {p1}, Lie/f;->d(Ljava/lang/Object;)V
 
-    iput-object p0, v0, Lze/p$a;->l:Lze/p;
+    iput-object p0, v0, Lze/p$a;->m:Lze/p;
 
-    iput v3, v0, Lze/p$a;->j:I
+    iput v3, v0, Lze/p$a;->k:I
 
-    invoke-virtual {p0, v0}, Lze/e1;->u(Lke/d;)Ljava/lang/Object;
+    invoke-virtual {p0, v0}, Lze/f1;->u(Lke/d;)Ljava/lang/Object;
 
     move-result-object p1
 

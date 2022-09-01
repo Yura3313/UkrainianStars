@@ -1,5 +1,5 @@
 .class public final Lcom/supercell/id/ui/login/LoginFlowFragment$f;
-.super Lse/h;
+.super Lse/i;
 .source "LoginFlow.kt"
 
 # interfaces
@@ -18,7 +18,7 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/a<",
         "Lmd/v;",
         ">;"
@@ -27,7 +27,7 @@
 
 
 # static fields
-.field public static final f:Lcom/supercell/id/ui/login/LoginFlowFragment$f;
+.field public static final g:Lcom/supercell/id/ui/login/LoginFlowFragment$f;
 
 
 # direct methods
@@ -38,7 +38,7 @@
 
     invoke-direct {v0}, Lcom/supercell/id/ui/login/LoginFlowFragment$f;-><init>()V
 
-    sput-object v0, Lcom/supercell/id/ui/login/LoginFlowFragment$f;->f:Lcom/supercell/id/ui/login/LoginFlowFragment$f;
+    sput-object v0, Lcom/supercell/id/ui/login/LoginFlowFragment$f;->g:Lcom/supercell/id/ui/login/LoginFlowFragment$f;
 
     return-void
 .end method
@@ -48,7 +48,7 @@
 
     const/4 v0, 0x0
 
-    invoke-direct {p0, v0}, Lse/h;-><init>(I)V
+    invoke-direct {p0, v0}, Lse/i;-><init>(I)V
 
     return-void
 .end method

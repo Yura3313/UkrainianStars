@@ -1,5 +1,5 @@
 .class public final Lo2/a$a;
-.super Lb2/a0;
+.super Lb2/z;
 
 
 # annotations
@@ -14,11 +14,11 @@
 
 
 # instance fields
-.field public final f:Lcom/google/android/gms/common/data/DataHolder;
-
-.field public final g:I
+.field public final g:Lcom/google/android/gms/common/data/DataHolder;
 
 .field public final h:I
+
+.field public final i:I
 
 
 # direct methods
@@ -26,20 +26,20 @@
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Lb2/a0;-><init>()V
+    invoke-direct {p0}, Lb2/z;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lo2/a$a;->f:Lcom/google/android/gms/common/data/DataHolder;
+    iput-object p1, p0, Lo2/a$a;->g:Lcom/google/android/gms/common/data/DataHolder;
 
     .line 3
-    iput p2, p0, Lo2/a$a;->g:I
+    iput p2, p0, Lo2/a$a;->h:I
 
     .line 4
     invoke-virtual {p1, p2}, Lcom/google/android/gms/common/data/DataHolder;->H2(I)I
 
     move-result p1
 
-    iput p1, p0, Lo2/a$a;->h:I
+    iput p1, p0, Lo2/a$a;->i:I
 
     return-void
 .end method

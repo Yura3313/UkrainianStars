@@ -1,69 +1,362 @@
 .class public final Lze/t1;
-.super Lze/w;
-.source "Unconfined.kt"
-
-
-# static fields
-.field public static final f:Lze/t1;
+.super Ljava/lang/Object;
+.source "Timeout.kt"
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 1
+.method public static final a(Lze/s1;Lre/p;)Ljava/lang/Object;
+    .locals 5
 
-    new-instance v0, Lze/t1;
+    .line 1
+    iget-object v0, p0, Lze/s1;->k:Lke/d;
 
-    invoke-direct {v0}, Lze/t1;-><init>()V
+    .line 2
+    invoke-interface {v0}, Lke/d;->getContext()Lke/f;
 
-    sput-object v0, Lze/t1;->f:Lze/t1;
+    move-result-object v0
 
-    return-void
-.end method
+    .line 3
+    invoke-static {v0}, Lcom/android/billingclient/api/s;->b(Lke/f;)Lze/h0;
 
-.method public constructor <init>()V
-    .locals 0
+    move-result-object v0
 
-    invoke-direct {p0}, Lze/w;-><init>()V
+    iget-wide v1, p0, Lze/s1;->j:J
 
-    return-void
-.end method
+    invoke-interface {v0, v1, v2, p0}, Lze/h0;->invokeOnTimeout(JLjava/lang/Runnable;)Lze/m0;
 
+    move-result-object v0
 
-# virtual methods
-.method public final dispatch(Lke/f;Ljava/lang/Runnable;)V
-    .locals 1
+    const-string v1, "handle"
 
-    const-string v0, "context"
+    .line 4
+    invoke-static {v0, v1}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    .line 5
+    new-instance v1, Lze/o0;
 
-    const-string p1, "block"
+    invoke-direct {v1, p0, v0}, Lze/o0;-><init>(Lze/c1;Lze/m0;)V
 
-    invoke-static {p2, p1}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    const/4 v0, 0x0
 
-    new-instance p1, Ljava/lang/UnsupportedOperationException;
+    const/4 v2, 0x1
 
-    invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V
+    .line 6
+    invoke-virtual {p0, v0, v2, v1}, Lze/f1;->k(ZZLre/l;)Lze/m0;
 
+    const-string v1, "block"
+
+    .line 7
+    invoke-static {p1, v1}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 8
+    iget-object v1, p0, Lze/a;->i:Lke/f;
+
+    sget-object v3, Lze/c1;->f:Lze/c1$b;
+
+    invoke-interface {v1, v3}, Lke/f;->get(Lke/f$b;)Lke/f$a;
+
+    move-result-object v1
+
+    check-cast v1, Lze/c1;
+
+    invoke-virtual {p0, v1}, Lze/f1;->D(Lze/c1;)V
+
+    const/4 v1, 0x0
+
+    .line 9
+    :try_start_0
+    invoke-static {p1}, Lse/u;->b(Ljava/lang/Object;)Ljava/lang/Object;
+
+    invoke-interface {p1, p0, p0}, Lre/p;->invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p1
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    goto :goto_0
+
+    :catchall_0
+    move-exception p1
+
+    .line 10
+    new-instance v3, Lze/q;
+
+    invoke-direct {v3, p1}, Lze/q;-><init>(Ljava/lang/Throwable;)V
+
+    move-object p1, v3
+
+    .line 11
+    :goto_0
+    sget-object v3, Lle/a;->g:Lle/a;
+
+    if-ne p1, v3, :cond_0
+
+    goto :goto_1
+
+    :cond_0
+    const/4 v4, 0x4
+
+    .line 12
+    invoke-virtual {p0, p1, v4}, Lze/f1;->H(Ljava/lang/Object;I)Z
+
+    move-result v4
+
+    if-eqz v4, :cond_7
+
+    .line 13
+    invoke-virtual {p0}, Lze/f1;->A()Ljava/lang/Object;
+
+    move-result-object v3
+
+    .line 14
+    instance-of v4, v3, Lze/q;
+
+    if-eqz v4, :cond_6
+
+    .line 15
+    check-cast v3, Lze/q;
+
+    iget-object v3, v3, Lze/q;->a:Ljava/lang/Throwable;
+
+    .line 16
+    instance-of v4, v3, Lkotlinx/coroutines/TimeoutCancellationException;
+
+    if-eqz v4, :cond_1
+
+    move-object v4, v3
+
+    check-cast v4, Lkotlinx/coroutines/TimeoutCancellationException;
+
+    iget-object v4, v4, Lkotlinx/coroutines/TimeoutCancellationException;->g:Lze/c1;
+
+    if-eq v4, p0, :cond_2
+
+    :cond_1
+    const/4 v0, 0x1
+
+    :cond_2
+    const-string v2, "exception"
+
+    if-eqz v0, :cond_4
+
+    .line 17
+    invoke-static {v3, v2}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 18
+    instance-of p1, p0, Laf/u;
+
+    if-nez p1, :cond_3
+
+    move-object p0, v1
+
+    :cond_3
+    check-cast p0, Laf/u;
+
+    .line 19
+    throw v3
+
+    .line 20
+    :cond_4
+    instance-of v0, p1, Lze/q;
+
+    if-eqz v0, :cond_8
+
+    check-cast p1, Lze/q;
+
+    iget-object p1, p1, Lze/q;->a:Ljava/lang/Throwable;
+
+    .line 21
+    invoke-static {p1, v2}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 22
+    instance-of v0, p0, Laf/u;
+
+    if-nez v0, :cond_5
+
+    move-object p0, v1
+
+    :cond_5
+    check-cast p0, Laf/u;
+
+    .line 23
     throw p1
+
+    .line 24
+    :cond_6
+    invoke-static {v3}, Lze/g1;->a(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    goto :goto_2
+
+    :cond_7
+    :goto_1
+    move-object p1, v3
+
+    :cond_8
+    :goto_2
+    return-object p1
 .end method
 
-.method public final isDispatchNeeded(Lke/f;)Z
-    .locals 1
+.method public static final b(JLre/p;Lke/d;)Ljava/lang/Object;
+    .locals 7
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Ljava/lang/Object;",
+            ">(J",
+            "Lre/p<",
+            "-",
+            "Lze/a0;",
+            "-",
+            "Lke/d<",
+            "-TT;>;+",
+            "Ljava/lang/Object;",
+            ">;",
+            "Lke/d<",
+            "-TT;>;)",
+            "Ljava/lang/Object;"
+        }
+    .end annotation
 
-    const-string v0, "context"
+    instance-of v0, p3, Lze/t1$a;
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    if-eqz v0, :cond_0
 
-    const/4 p1, 0x0
+    move-object v0, p3
 
-    return p1
-.end method
+    check-cast v0, Lze/t1$a;
 
-.method public final toString()Ljava/lang/String;
-    .locals 1
+    iget v1, v0, Lze/t1$a;->k:I
 
-    const-string v0, "Unconfined"
+    const/high16 v2, -0x80000000
 
-    return-object v0
+    and-int v3, v1, v2
+
+    if-eqz v3, :cond_0
+
+    sub-int/2addr v1, v2
+
+    iput v1, v0, Lze/t1$a;->k:I
+
+    goto :goto_0
+
+    :cond_0
+    new-instance v0, Lze/t1$a;
+
+    invoke-direct {v0, p3}, Lze/t1$a;-><init>(Lke/d;)V
+
+    :goto_0
+    iget-object p3, v0, Lze/t1$a;->j:Ljava/lang/Object;
+
+    sget-object v1, Lle/a;->g:Lle/a;
+
+    .line 1
+    iget v2, v0, Lze/t1$a;->k:I
+
+    const/4 v3, 0x1
+
+    const/4 v4, 0x0
+
+    if-eqz v2, :cond_2
+
+    if-ne v2, v3, :cond_1
+
+    iget-object p0, v0, Lze/t1$a;->m:Lse/r;
+
+    :try_start_0
+    invoke-static {p3}, Lie/f;->d(Ljava/lang/Object;)V
+    :try_end_0
+    .catch Lkotlinx/coroutines/TimeoutCancellationException; {:try_start_0 .. :try_end_0} :catch_0
+
+    goto :goto_1
+
+    :catch_0
+    move-exception p1
+
+    goto :goto_2
+
+    .line 2
+    :cond_1
+    new-instance p0, Ljava/lang/IllegalStateException;
+
+    const-string p1, "call to \'resume\' before \'invoke\' with coroutine"
+
+    invoke-direct {p0, p1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    throw p0
+
+    .line 3
+    :cond_2
+    invoke-static {p3}, Lie/f;->d(Ljava/lang/Object;)V
+
+    const-wide/16 v5, 0x0
+
+    cmp-long p3, p0, v5
+
+    if-gtz p3, :cond_3
+
+    return-object v4
+
+    .line 4
+    :cond_3
+    new-instance p3, Lse/r;
+
+    invoke-direct {p3}, Lse/r;-><init>()V
+
+    iput-object v4, p3, Lse/r;->g:Ljava/lang/Object;
+
+    .line 5
+    :try_start_1
+    iput-object p2, v0, Lze/t1$a;->l:Lre/p;
+
+    iput-object p3, v0, Lze/t1$a;->m:Lse/r;
+
+    iput v3, v0, Lze/t1$a;->k:I
+
+    .line 6
+    new-instance v2, Lze/s1;
+
+    invoke-direct {v2, p0, p1, v0}, Lze/s1;-><init>(JLke/d;)V
+
+    .line 7
+    iput-object v2, p3, Lse/r;->g:Ljava/lang/Object;
+
+    .line 8
+    invoke-static {v2, p2}, Lze/t1;->a(Lze/s1;Lre/p;)Ljava/lang/Object;
+
+    move-result-object p3
+    :try_end_1
+    .catch Lkotlinx/coroutines/TimeoutCancellationException; {:try_start_1 .. :try_end_1} :catch_1
+
+    if-ne p3, v1, :cond_4
+
+    return-object v1
+
+    :cond_4
+    :goto_1
+    return-object p3
+
+    :catch_1
+    move-exception p0
+
+    move-object p1, p0
+
+    move-object p0, p3
+
+    .line 9
+    :goto_2
+    iget-object p2, p1, Lkotlinx/coroutines/TimeoutCancellationException;->g:Lze/c1;
+
+    iget-object p0, p0, Lse/r;->g:Ljava/lang/Object;
+
+    check-cast p0, Lze/s1;
+
+    if-ne p2, p0, :cond_5
+
+    return-object v4
+
+    .line 10
+    :cond_5
+    throw p1
 .end method

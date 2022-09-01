@@ -69,7 +69,7 @@
 
     move-object v1, p1
 
-    invoke-direct/range {v0 .. v6}, Lcom/kakao/sdk/template/model/FeedTemplate;-><init>(Lcom/kakao/sdk/template/model/Content;Lcom/kakao/sdk/template/model/Social;Ljava/util/List;Ljava/lang/String;ILse/e;)V
+    invoke-direct/range {v0 .. v6}, Lcom/kakao/sdk/template/model/FeedTemplate;-><init>(Lcom/kakao/sdk/template/model/Content;Lcom/kakao/sdk/template/model/Social;Ljava/util/List;Ljava/lang/String;ILse/f;)V
 
     return-void
 .end method
@@ -91,7 +91,7 @@
 
     move-object v2, p2
 
-    invoke-direct/range {v0 .. v6}, Lcom/kakao/sdk/template/model/FeedTemplate;-><init>(Lcom/kakao/sdk/template/model/Content;Lcom/kakao/sdk/template/model/Social;Ljava/util/List;Ljava/lang/String;ILse/e;)V
+    invoke-direct/range {v0 .. v6}, Lcom/kakao/sdk/template/model/FeedTemplate;-><init>(Lcom/kakao/sdk/template/model/Content;Lcom/kakao/sdk/template/model/Social;Ljava/util/List;Ljava/lang/String;ILse/f;)V
 
     return-void
 .end method
@@ -123,7 +123,7 @@
 
     move-object v3, p3
 
-    invoke-direct/range {v0 .. v6}, Lcom/kakao/sdk/template/model/FeedTemplate;-><init>(Lcom/kakao/sdk/template/model/Content;Lcom/kakao/sdk/template/model/Social;Ljava/util/List;Ljava/lang/String;ILse/e;)V
+    invoke-direct/range {v0 .. v6}, Lcom/kakao/sdk/template/model/FeedTemplate;-><init>(Lcom/kakao/sdk/template/model/Content;Lcom/kakao/sdk/template/model/Social;Ljava/util/List;Ljava/lang/String;ILse/f;)V
 
     return-void
 .end method
@@ -145,7 +145,7 @@
 
     const-string v0, "content"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -166,7 +166,7 @@
     return-void
 .end method
 
-.method public synthetic constructor <init>(Lcom/kakao/sdk/template/model/Content;Lcom/kakao/sdk/template/model/Social;Ljava/util/List;Ljava/lang/String;ILse/e;)V
+.method public synthetic constructor <init>(Lcom/kakao/sdk/template/model/Content;Lcom/kakao/sdk/template/model/Social;Ljava/util/List;Ljava/lang/String;ILse/f;)V
     .locals 1
 
     and-int/lit8 p6, p5, 0x2
@@ -296,7 +296,7 @@
 
     const-string v0, "content"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     new-instance v0, Lcom/kakao/sdk/template/model/FeedTemplate;
 
@@ -328,7 +328,7 @@
 
     iget-object v1, p1, Lcom/kakao/sdk/template/model/FeedTemplate;->content:Lcom/kakao/sdk/template/model/Content;
 
-    invoke-static {v0, v1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
@@ -338,7 +338,7 @@
 
     iget-object v1, p1, Lcom/kakao/sdk/template/model/FeedTemplate;->social:Lcom/kakao/sdk/template/model/Social;
 
-    invoke-static {v0, v1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
@@ -348,7 +348,7 @@
 
     iget-object v1, p1, Lcom/kakao/sdk/template/model/FeedTemplate;->buttons:Ljava/util/List;
 
-    invoke-static {v0, v1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
@@ -358,7 +358,7 @@
 
     iget-object p1, p1, Lcom/kakao/sdk/template/model/FeedTemplate;->buttonTitle:Ljava/lang/String;
 
-    invoke-static {v0, p1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, p1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -537,7 +537,7 @@
     const-string v2, ")"
 
     .line 3
-    invoke-static {v0, v1, v2}, Landroid/support/v4/media/b;->b(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, v1, v2}, Landroid/support/v4/media/b;->a(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -549,7 +549,7 @@
 
     const-string p2, "parcel"
 
-    invoke-static {p1, p2}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p2}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     iget-object p2, p0, Lcom/kakao/sdk/template/model/FeedTemplate;->content:Lcom/kakao/sdk/template/model/Content;
 

@@ -1,262 +1,188 @@
 .class public final Lra/y;
-.super Ljava/lang/Object;
+.super Lra/u;
 .source "RequestAppReviewMessageDataBinder.java"
 
-# interfaces
-.implements Landroid/view/View$OnClickListener;
 
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lra/y$a;
+    }
+.end annotation
 
-# instance fields
-.field public final synthetic f:Lo8/a0;
-
-.field public final synthetic g:Lra/z;
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lra/u<",
+        "Lra/y$a;",
+        "Lo8/c0;",
+        ">;"
+    }
+.end annotation
 
 
 # direct methods
-.method public constructor <init>(Lra/z;Lo8/a0;)V
+.method public constructor <init>(Landroid/content/Context;)V
     .locals 0
 
-    iput-object p1, p0, Lra/y;->g:Lra/z;
-
-    iput-object p2, p0, Lra/y;->f:Lo8/a0;
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0, p1}, Lra/u;-><init>(Landroid/content/Context;)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final onClick(Landroid/view/View;)V
-    .locals 14
+.method public final a(Landroidx/recyclerview/widget/RecyclerView$z;Lo8/z;)V
+    .locals 4
 
     .line 1
-    iget-object p1, p0, Lra/y;->g:Lra/z;
+    check-cast p1, Lra/y$a;
 
-    iget-object p1, p1, Lra/u;->b:Lra/u$a;
-
-    if-eqz p1, :cond_2
+    check-cast p2, Lo8/c0;
 
     .line 2
-    iget-object v0, p0, Lra/y;->f:Lo8/a0;
+    iget-object v0, p1, Lra/y$a;->A:Landroid/widget/TextView;
 
-    check-cast p1, Lqa/p0;
+    sget v1, Lcom/helpshift/R$string;->hs__review_request_message:I
+
+    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
 
     .line 3
-    iget-object p1, p1, Lqa/p0;->e:Lra/x;
+    iget-boolean v0, p2, Lo8/c0;->A:Z
 
-    if-eqz p1, :cond_2
+    if-eqz v0, :cond_0
 
     .line 4
-    check-cast p1, Lqa/t;
+    iget-object v0, p1, Lra/y$a;->B:Landroid/widget/Button;
 
-    .line 5
-    iget-object p1, p1, Lqa/t;->m0:Lf9/i;
+    const/16 v1, 0x8
 
-    .line 6
-    iget-object v1, p1, Lf9/i;->m:Lj8/b;
-
-    const-string v2, "reviewUrl"
-
-    invoke-virtual {v1, v2}, Lj8/b;->k(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-virtual {v1}, Ljava/lang/String;->trim()Ljava/lang/String;
-
-    move-result-object v1
-
-    .line 7
-    invoke-static {v1}, Lcom/google/android/play/core/appupdate/g;->b(Ljava/lang/String;)Z
-
-    move-result v2
-
-    if-nez v2, :cond_0
-
-    .line 8
-    iget-object v2, p1, Lf9/i;->m:Lj8/b;
-
-    const/4 v3, 0x1
-
-    invoke-virtual {v2, v3}, Lj8/b;->r(Z)V
-
-    .line 9
-    iget-object v2, p1, Lf9/i;->n:Ln8/l;
-
-    if-eqz v2, :cond_0
-
-    .line 10
-    check-cast v2, Lqa/e0;
-
-    .line 11
-    new-instance v3, Landroid/content/Intent;
-
-    const-string v4, "android.intent.action.VIEW"
-
-    invoke-direct {v3, v4}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
-
-    .line 12
-    invoke-static {v1}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
-
-    move-result-object v1
-
-    invoke-virtual {v3, v1}, Landroid/content/Intent;->setData(Landroid/net/Uri;)Landroid/content/Intent;
-
-    .line 13
-    :try_start_0
-    iget-object v1, v2, Lqa/e0;->g:Landroid/content/Context;
-
-    invoke-virtual {v1, v3}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+    invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
 
     goto :goto_0
 
-    .line 14
-    :catch_0
-    sget-object v1, Ld8/d;->f:Ld8/d;
-
-    invoke-virtual {v2, v1}, Lqa/e0;->t(Ld8/a;)V
-
-    .line 15
+    .line 5
     :cond_0
+    iget-object v0, p1, Lra/y$a;->B:Landroid/widget/Button;
+
+    const/4 v1, 0x0
+
+    invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
+
+    .line 6
     :goto_0
-    iget-object v1, p1, Lf9/i;->s:Ln8/c;
+    iget-object v0, p2, Lo8/z;->i:Lo8/n0;
 
-    iget-object p1, p1, Lf9/i;->k:Ln8/p;
+    .line 7
+    iget-boolean v1, v0, Lo8/n0;->h:Z
 
-    invoke-virtual {p1}, Ln8/p;->c()Lq8/d;
+    if-eqz v1, :cond_1
 
-    move-result-object p1
-
-    .line 16
-    iget-object v2, v1, Ln8/c;->b:La8/f;
-
-    iget-object v3, v1, Ln8/c;->a:Le8/s;
-
-    .line 17
-    iget-boolean v4, v0, Lo8/a0;->z:Z
-
-    if-eqz v4, :cond_1
-
-    const/4 v2, 0x0
+    .line 8
+    sget v1, Lcom/helpshift/R$drawable;->hs__chat_bubble_rounded:I
 
     goto :goto_1
 
     :cond_1
-    const/4 v4, 0x0
+    sget v1, Lcom/helpshift/R$drawable;->hs__chat_bubble_admin:I
+
+    .line 9
+    :goto_1
+    iget-object v2, p1, Lra/y$a;->D:Landroid/view/View;
+
+    sget v3, Lcom/helpshift/R$attr;->hs__chatBubbleAdminBackgroundColor:I
+
+    invoke-virtual {p0, v2, v1, v3}, Lra/u;->i(Landroid/view/View;II)V
+
+    .line 10
+    iget-boolean v1, v0, Lo8/n0;->g:Z
+
+    if-eqz v1, :cond_2
+
+    .line 11
+    iget-object v1, p1, Lra/y$a;->C:Landroid/widget/TextView;
+
+    invoke-virtual {p2}, Lo8/z;->i()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    .line 12
+    :cond_2
+    iget-object v1, p1, Lra/y$a;->C:Landroid/widget/TextView;
+
+    .line 13
+    iget-boolean v0, v0, Lo8/n0;->g:Z
+
+    .line 14
+    invoke-virtual {p0, v1, v0}, Lra/u;->m(Landroid/view/View;Z)V
+
+    .line 15
+    iget-boolean v0, p2, Lo8/c0;->B:Z
+
+    if-eqz v0, :cond_3
+
+    .line 16
+    iget-object v0, p1, Lra/y$a;->B:Landroid/widget/Button;
+
+    new-instance v1, Lra/x;
+
+    invoke-direct {v1, p0, p2}, Lra/x;-><init>(Lra/y;Lo8/c0;)V
+
+    invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+
+    goto :goto_2
+
+    .line 17
+    :cond_3
+    iget-object v0, p1, Lra/y$a;->B:Landroid/widget/Button;
+
+    const/4 v1, 0x0
+
+    invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 18
-    iput-boolean v4, v0, Lo8/a0;->A:Z
+    :goto_2
+    iget-object v0, p1, Lra/y$a;->z:Landroid/view/View;
+
+    invoke-virtual {p0, p2}, Lra/u;->d(Lo8/z;)Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Landroid/view/View;->setContentDescription(Ljava/lang/CharSequence;)V
 
     .line 19
-    invoke-virtual {v0}, Lo8/y;->l()V
+    iget-object p1, p1, Lra/y$a;->E:Lcom/helpshift/views/CircleImageView;
 
-    .line 20
-    invoke-static {v3}, Li8/b;->c(Le8/s;)Lcom/helpshift/util/h0;
+    invoke-virtual {p0, p2, p1}, Lra/u;->h(Lo8/z;Lcom/helpshift/views/CircleImageView;)V
 
-    move-result-object v4
-
-    .line 21
-    iget-object v5, v4, Lcom/helpshift/util/h0;->a:Ljava/lang/Object;
-
-    move-object v8, v5
-
-    check-cast v8, Ljava/lang/String;
-
-    .line 22
-    iget-object v4, v4, Lcom/helpshift/util/h0;->b:Ljava/lang/Object;
-
-    check-cast v4, Ljava/lang/Long;
-
-    invoke-virtual {v4}, Ljava/lang/Long;->longValue()J
-
-    move-result-wide v9
-
-    .line 23
-    new-instance v11, Lo8/o;
-
-    const/4 v4, 0x3
-
-    const-string v5, "mobile"
-
-    const-string v6, ""
-
-    invoke-direct {v11, v5, v6, v4}, Lo8/o;-><init>(Ljava/lang/String;Ljava/lang/String;I)V
-
-    .line 24
-    new-instance v4, Lo8/a;
-
-    iget-object v12, v0, Lo8/y;->i:Ljava/lang/String;
-
-    const/4 v13, 0x1
-
-    const-string v7, "Accepted review request"
-
-    move-object v6, v4
-
-    invoke-direct/range {v6 .. v13}, Lo8/a;-><init>(Ljava/lang/String;Ljava/lang/String;JLo8/o;Ljava/lang/String;I)V
-
-    .line 25
-    iget-object v5, v0, Lo8/y;->l:Ljava/lang/Long;
-
-    iput-object v5, v4, Lo8/y;->l:Ljava/lang/Long;
-
-    .line 26
-    iput-object v2, v4, Lo8/y;->t:La8/f;
-
-    .line 27
-    iput-object v3, v4, Lo8/y;->u:Le8/s;
-
-    .line 28
-    check-cast v3, Le8/j;
-
-    invoke-virtual {v3}, Le8/j;->c()Le8/b;
-
-    move-result-object v3
-
-    invoke-virtual {v3, v4}, Le8/b;->e(Lo8/y;)V
-
-    .line 29
-    new-instance v3, Ljava/util/HashMap;
-
-    invoke-direct {v3}, Ljava/util/HashMap;-><init>()V
-
-    const-string v5, "type"
-
-    const-string v6, "conversation"
-
-    .line 30
-    invoke-virtual {v3, v5, v6}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 31
-    iget-object v5, v2, La8/f;->h:Lk7/a;
-
-    const/16 v6, 0xc
-
-    .line 32
-    invoke-virtual {v5, v6, v3}, Lk7/a;->d(ILjava/util/Map;)V
-
-    .line 33
-    iget-object v2, v2, La8/f;->j:Ls9/h;
-
-    const-string v3, "User reviewed the app"
-
-    .line 34
-    invoke-virtual {v2, v3}, Ls9/h;->a(Ljava/lang/String;)V
-
-    move-object v2, v4
-
-    :goto_1
-    if-eqz v2, :cond_2
-
-    .line 35
-    new-instance v3, Ln8/d;
-
-    invoke-direct {v3, v1, v2, p1, v0}, Ln8/d;-><init>(Ln8/c;Lo8/a;Lq8/d;Lo8/a0;)V
-
-    invoke-virtual {v1, v3}, Ln8/c;->E(La8/g;)V
-
-    :cond_2
     return-void
+.end method
+
+.method public final b(Landroid/view/ViewGroup;)Landroidx/recyclerview/widget/RecyclerView$z;
+    .locals 3
+
+    .line 1
+    invoke-virtual {p1}, Landroid/view/View;->getContext()Landroid/content/Context;
+
+    move-result-object v0
+
+    invoke-static {v0}, Landroid/view/LayoutInflater;->from(Landroid/content/Context;)Landroid/view/LayoutInflater;
+
+    move-result-object v0
+
+    sget v1, Lcom/helpshift/R$layout;->hs__msg_review_request:I
+
+    const/4 v2, 0x0
+
+    invoke-virtual {v0, v1, p1, v2}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
+
+    move-result-object p1
+
+    .line 2
+    new-instance v0, Lra/y$a;
+
+    invoke-direct {v0, p1}, Lra/y$a;-><init>(Landroid/view/View;)V
+
+    return-object v0
 .end method

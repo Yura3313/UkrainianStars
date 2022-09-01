@@ -1,6 +1,6 @@
 .class public final Lef/y$b;
 .super Lef/y;
-.source "ParameterHandler.java"
+.source "Platform.java"
 
 
 # annotations
@@ -9,140 +9,194 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x19
+    accessFlags = 0x9
     name = "b"
 .end annotation
 
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "<T:",
-        "Ljava/lang/Object;",
-        ">",
-        "Lef/y<",
-        "TT;>;"
-    }
+.annotation build Lorg/codehaus/mojo/animal_sniffer/IgnoreJRERequirement;
 .end annotation
 
 
-# instance fields
-.field public final a:Ljava/lang/String;
-
-.field public final b:Lef/j;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lef/j<",
-            "TT;",
-            "Ljava/lang/String;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field public final c:Z
-
-
 # direct methods
-.method public constructor <init>(Ljava/lang/String;Lef/j;Z)V
+.method public constructor <init>()V
     .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/lang/String;",
-            "Lef/j<",
-            "TT;",
-            "Ljava/lang/String;",
-            ">;Z)V"
-        }
-    .end annotation
 
-    .line 1
     invoke-direct {p0}, Lef/y;-><init>()V
 
-    if-eqz p1, :cond_0
-
-    .line 2
-    iput-object p1, p0, Lef/y$b;->a:Ljava/lang/String;
-
-    .line 3
-    iput-object p2, p0, Lef/y$b;->b:Lef/j;
-
-    .line 4
-    iput-boolean p3, p0, Lef/y$b;->c:Z
-
     return-void
-
-    .line 5
-    :cond_0
-    new-instance p1, Ljava/lang/NullPointerException;
-
-    const-string p2, "name == null"
-
-    invoke-direct {p1, p2}, Ljava/lang/NullPointerException;-><init>(Ljava/lang/String;)V
-
-    throw p1
 .end method
 
 
 # virtual methods
-.method public final a(Lef/a0;Ljava/lang/Object;)V
+.method public final a(Ljava/util/concurrent/Executor;)Ljava/util/List;
     .locals 2
-    .param p2    # Ljava/lang/Object;
+    .param p1    # Ljava/util/concurrent/Executor;
         .annotation runtime Ljavax/annotation/Nullable;
         .end annotation
     .end param
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lef/a0;",
-            "TT;)V"
+            "Ljava/util/concurrent/Executor;",
+            ")",
+            "Ljava/util/List<",
+            "+",
+            "Lef/c$a;",
+            ">;"
+        }
+    .end annotation
+
+    .line 1
+    new-instance v0, Ljava/util/ArrayList;
+
+    const/4 v1, 0x2
+
+    invoke-direct {v0, v1}, Ljava/util/ArrayList;-><init>(I)V
+
+    .line 2
+    sget-object v1, Lef/g;->a:Lef/g;
+
+    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    .line 3
+    new-instance v1, Lef/l;
+
+    invoke-direct {v1, p1}, Lef/l;-><init>(Ljava/util/concurrent/Executor;)V
+
+    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    .line 4
+    invoke-static {v0}, Ljava/util/Collections;->unmodifiableList(Ljava/util/List;)Ljava/util/List;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public final c()Ljava/util/List;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/List<",
+            "+",
+            "Lef/j$a;",
+            ">;"
+        }
+    .end annotation
+
+    sget-object v0, Lef/u;->a:Lef/u;
+
+    invoke-static {v0}, Ljava/util/Collections;->singletonList(Ljava/lang/Object;)Ljava/util/List;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public final d()I
+    .locals 1
+
+    const/4 v0, 0x1
+
+    return v0
+.end method
+
+.method public final varargs e(Ljava/lang/reflect/Method;Ljava/lang/Class;Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 6
+    .param p4    # [Ljava/lang/Object;
+        .annotation runtime Ljavax/annotation/Nullable;
+        .end annotation
+    .end param
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/reflect/Method;",
+            "Ljava/lang/Class<",
+            "*>;",
+            "Ljava/lang/Object;",
+            "[",
+            "Ljava/lang/Object;",
+            ")",
+            "Ljava/lang/Object;"
         }
     .end annotation
 
     .annotation system Ldalvik/annotation/Throws;
         value = {
-            Ljava/io/IOException;
+            Ljava/lang/Throwable;
         }
     .end annotation
 
-    if-nez p2, :cond_0
-
-    return-void
-
     .line 1
-    :cond_0
-    iget-object v0, p0, Lef/y$b;->b:Lef/j;
+    const-class v0, Ljava/lang/invoke/MethodHandles$Lookup;
 
-    invoke-interface {v0, p2}, Lef/j;->convert(Ljava/lang/Object;)Ljava/lang/Object;
+    const/4 v1, 0x2
 
-    move-result-object p2
+    new-array v2, v1, [Ljava/lang/Class;
 
-    check-cast p2, Ljava/lang/String;
+    const-class v3, Ljava/lang/Class;
 
-    if-nez p2, :cond_1
+    const/4 v4, 0x0
 
-    return-void
+    aput-object v3, v2, v4
+
+    sget-object v3, Ljava/lang/Integer;->TYPE:Ljava/lang/Class;
+
+    const/4 v5, 0x1
+
+    aput-object v3, v2, v5
+
+    invoke-virtual {v0, v2}, Ljava/lang/Class;->getDeclaredConstructor([Ljava/lang/Class;)Ljava/lang/reflect/Constructor;
+
+    move-result-object v0
 
     .line 2
-    :cond_1
-    iget-object v0, p0, Lef/y$b;->a:Ljava/lang/String;
+    invoke-virtual {v0, v5}, Ljava/lang/reflect/AccessibleObject;->setAccessible(Z)V
 
-    iget-boolean v1, p0, Lef/y$b;->c:Z
+    new-array v1, v1, [Ljava/lang/Object;
 
-    if-eqz v1, :cond_2
+    aput-object p2, v1, v4
+
+    const/4 v2, -0x1
 
     .line 3
-    iget-object p1, p1, Lef/a0;->j:Lokhttp3/FormBody$Builder;
+    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    invoke-virtual {p1, v0, p2}, Lokhttp3/FormBody$Builder;->addEncoded(Ljava/lang/String;Ljava/lang/String;)Lokhttp3/FormBody$Builder;
+    move-result-object v2
 
-    goto :goto_0
+    aput-object v2, v1, v5
+
+    invoke-virtual {v0, v1}, Ljava/lang/reflect/Constructor;->newInstance([Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Ljava/lang/invoke/MethodHandles$Lookup;
 
     .line 4
-    :cond_2
-    iget-object p1, p1, Lef/a0;->j:Lokhttp3/FormBody$Builder;
+    invoke-virtual {v0, p1, p2}, Ljava/lang/invoke/MethodHandles$Lookup;->unreflectSpecial(Ljava/lang/reflect/Method;Ljava/lang/Class;)Ljava/lang/invoke/MethodHandle;
 
-    invoke-virtual {p1, v0, p2}, Lokhttp3/FormBody$Builder;->add(Ljava/lang/String;Ljava/lang/String;)Lokhttp3/FormBody$Builder;
+    move-result-object p1
 
-    :goto_0
-    return-void
+    .line 5
+    invoke-virtual {p1, p3}, Ljava/lang/invoke/MethodHandle;->bindTo(Ljava/lang/Object;)Ljava/lang/invoke/MethodHandle;
+
+    move-result-object p1
+
+    .line 6
+    invoke-virtual {p1, p4}, Ljava/lang/invoke/MethodHandle;->invokeWithArguments([Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public final f(Ljava/lang/reflect/Method;)Z
+    .locals 0
+
+    invoke-virtual {p1}, Ljava/lang/reflect/Method;->isDefault()Z
+
+    move-result p1
+
+    return p1
 .end method

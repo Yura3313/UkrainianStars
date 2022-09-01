@@ -29,11 +29,11 @@
 
     .line 1
     :try_start_0
-    sget-object v0, Lk3/op0;->e:Lk3/op0;
+    sget-object v0, Lk3/sp0;->e:Lk3/sp0;
 
-    const-string v1, "AES/GCM/NoPadding"
+    const-string v1, "AES/CTR/NoPadding"
 
-    invoke-virtual {v0, v1}, Lk3/op0;->a(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {v0, v1}, Lk3/sp0;->a(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 

@@ -16,13 +16,13 @@
 
 
 # instance fields
-.field public a:Lj1/q;
+.field public a:Lcom/helpshift/util/v;
 
-.field public b:Lj1/q;
+.field public b:Lcom/helpshift/util/v;
 
-.field public c:Lj1/q;
+.field public c:Lcom/helpshift/util/v;
 
-.field public d:Lj1/q;
+.field public d:Lcom/helpshift/util/v;
 
 .field public e:Ls4/c;
 
@@ -68,7 +68,7 @@
     invoke-direct {v0}, Ls4/j;-><init>()V
 
     .line 28
-    iput-object v0, p0, Ls4/k;->a:Lj1/q;
+    iput-object v0, p0, Ls4/k;->a:Lcom/helpshift/util/v;
 
     .line 29
     new-instance v0, Ls4/j;
@@ -76,7 +76,7 @@
     invoke-direct {v0}, Ls4/j;-><init>()V
 
     .line 30
-    iput-object v0, p0, Ls4/k;->b:Lj1/q;
+    iput-object v0, p0, Ls4/k;->b:Lcom/helpshift/util/v;
 
     .line 31
     new-instance v0, Ls4/j;
@@ -84,7 +84,7 @@
     invoke-direct {v0}, Ls4/j;-><init>()V
 
     .line 32
-    iput-object v0, p0, Ls4/k;->c:Lj1/q;
+    iput-object v0, p0, Ls4/k;->c:Lcom/helpshift/util/v;
 
     .line 33
     new-instance v0, Ls4/j;
@@ -92,7 +92,7 @@
     invoke-direct {v0}, Ls4/j;-><init>()V
 
     .line 34
-    iput-object v0, p0, Ls4/k;->d:Lj1/q;
+    iput-object v0, p0, Ls4/k;->d:Lcom/helpshift/util/v;
 
     .line 35
     new-instance v0, Ls4/a;
@@ -166,28 +166,28 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iget-object v0, p1, Ls4/k$a;->a:Lj1/q;
+    iget-object v0, p1, Ls4/k$a;->a:Lcom/helpshift/util/v;
 
     .line 3
-    iput-object v0, p0, Ls4/k;->a:Lj1/q;
+    iput-object v0, p0, Ls4/k;->a:Lcom/helpshift/util/v;
 
     .line 4
-    iget-object v0, p1, Ls4/k$a;->b:Lj1/q;
+    iget-object v0, p1, Ls4/k$a;->b:Lcom/helpshift/util/v;
 
     .line 5
-    iput-object v0, p0, Ls4/k;->b:Lj1/q;
+    iput-object v0, p0, Ls4/k;->b:Lcom/helpshift/util/v;
 
     .line 6
-    iget-object v0, p1, Ls4/k$a;->c:Lj1/q;
+    iget-object v0, p1, Ls4/k$a;->c:Lcom/helpshift/util/v;
 
     .line 7
-    iput-object v0, p0, Ls4/k;->c:Lj1/q;
+    iput-object v0, p0, Ls4/k;->c:Lcom/helpshift/util/v;
 
     .line 8
-    iget-object v0, p1, Ls4/k$a;->d:Lj1/q;
+    iget-object v0, p1, Ls4/k$a;->d:Lcom/helpshift/util/v;
 
     .line 9
-    iput-object v0, p0, Ls4/k;->d:Lj1/q;
+    iput-object v0, p0, Ls4/k;->d:Lcom/helpshift/util/v;
 
     .line 10
     iget-object v0, p1, Ls4/k$a;->e:Ls4/c;
@@ -351,57 +351,57 @@
     invoke-direct {v5}, Ls4/k$a;-><init>()V
 
     .line 24
-    invoke-static {p2}, Lj1/q;->a(I)Lj1/q;
+    invoke-static {p2}, Ls4/e;->b(I)Lcom/helpshift/util/v;
 
     move-result-object p2
 
     .line 25
-    iput-object p2, v5, Ls4/k$a;->a:Lj1/q;
+    iput-object p2, v5, Ls4/k$a;->a:Lcom/helpshift/util/v;
 
     .line 26
-    invoke-static {p2}, Ls4/k$a;->b(Lj1/q;)V
+    invoke-static {p2}, Ls4/k$a;->b(Lcom/helpshift/util/v;)V
 
     .line 27
     iput-object v2, v5, Ls4/k$a;->e:Ls4/c;
 
     .line 28
-    invoke-static {v0}, Lj1/q;->a(I)Lj1/q;
+    invoke-static {v0}, Ls4/e;->b(I)Lcom/helpshift/util/v;
 
     move-result-object p2
 
     .line 29
-    iput-object p2, v5, Ls4/k$a;->b:Lj1/q;
+    iput-object p2, v5, Ls4/k$a;->b:Lcom/helpshift/util/v;
 
     .line 30
-    invoke-static {p2}, Ls4/k$a;->b(Lj1/q;)V
+    invoke-static {p2}, Ls4/k$a;->b(Lcom/helpshift/util/v;)V
 
     .line 31
     iput-object v3, v5, Ls4/k$a;->f:Ls4/c;
 
     .line 32
-    invoke-static {v1}, Lj1/q;->a(I)Lj1/q;
+    invoke-static {v1}, Ls4/e;->b(I)Lcom/helpshift/util/v;
 
     move-result-object p2
 
     .line 33
-    iput-object p2, v5, Ls4/k$a;->c:Lj1/q;
+    iput-object p2, v5, Ls4/k$a;->c:Lcom/helpshift/util/v;
 
     .line 34
-    invoke-static {p2}, Ls4/k$a;->b(Lj1/q;)V
+    invoke-static {p2}, Ls4/k$a;->b(Lcom/helpshift/util/v;)V
 
     .line 35
     iput-object v4, v5, Ls4/k$a;->g:Ls4/c;
 
     .line 36
-    invoke-static {p1}, Lj1/q;->a(I)Lj1/q;
+    invoke-static {p1}, Ls4/e;->b(I)Lcom/helpshift/util/v;
 
     move-result-object p1
 
     .line 37
-    iput-object p1, v5, Ls4/k$a;->d:Lj1/q;
+    iput-object p1, v5, Ls4/k$a;->d:Lcom/helpshift/util/v;
 
     .line 38
-    invoke-static {p1}, Ls4/k$a;->b(Lj1/q;)V
+    invoke-static {p1}, Ls4/k$a;->b(Lcom/helpshift/util/v;)V
 
     .line 39
     iput-object p3, v5, Ls4/k$a;->h:Ls4/c;
@@ -667,25 +667,25 @@
 
     .line 11
     :goto_1
-    iget-object v1, p0, Ls4/k;->b:Lj1/q;
+    iget-object v1, p0, Ls4/k;->b:Lcom/helpshift/util/v;
 
     instance-of v1, v1, Ls4/j;
 
     if-eqz v1, :cond_2
 
-    iget-object v1, p0, Ls4/k;->a:Lj1/q;
+    iget-object v1, p0, Ls4/k;->a:Lcom/helpshift/util/v;
 
     instance-of v1, v1, Ls4/j;
 
     if-eqz v1, :cond_2
 
-    iget-object v1, p0, Ls4/k;->c:Lj1/q;
+    iget-object v1, p0, Ls4/k;->c:Lcom/helpshift/util/v;
 
     instance-of v1, v1, Ls4/j;
 
     if-eqz v1, :cond_2
 
-    iget-object v1, p0, Ls4/k;->d:Lj1/q;
+    iget-object v1, p0, Ls4/k;->d:Lcom/helpshift/util/v;
 
     instance-of v1, v1, Ls4/j;
 

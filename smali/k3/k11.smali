@@ -3,40 +3,30 @@
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "<S:",
-        "Ljava/lang/Object;",
-        ">",
-        "Ljava/lang/Object;"
-    }
-.end annotation
-
-
 # virtual methods
-.method public abstract X()V
-    .annotation system Ldalvik/annotation/Signature;
+.method public abstract W0()Landroid/net/Uri;
+.end method
+
+.method public abstract a(Lk3/l11;)J
+    .annotation system Ldalvik/annotation/Throws;
         value = {
-            "(TS;)V"
+            Ljava/io/IOException;
         }
     .end annotation
 .end method
 
-.method public abstract c(I)V
-    .annotation system Ldalvik/annotation/Signature;
+.method public abstract close()V
+    .annotation system Ldalvik/annotation/Throws;
         value = {
-            "(TS;I)V"
+            Ljava/io/IOException;
         }
     .end annotation
 .end method
 
-.method public abstract e(Ljava/lang/Object;)V
-    .annotation system Ldalvik/annotation/Signature;
+.method public abstract read([BII)I
+    .annotation system Ldalvik/annotation/Throws;
         value = {
-            "(TS;",
-            "Lk3/f11;",
-            ")V"
+            Ljava/io/IOException;
         }
     .end annotation
 .end method

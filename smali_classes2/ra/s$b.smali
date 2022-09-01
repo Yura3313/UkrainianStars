@@ -19,19 +19,19 @@
 
 
 # instance fields
-.field public final A:Landroid/widget/LinearLayout;
+.field public final A:Landroid/widget/TextView;
 
-.field public final B:Landroid/widget/Button;
+.field public final B:Landroid/widget/LinearLayout;
 
-.field public final C:Lcom/helpshift/support/widget/CSATView;
+.field public final C:Landroid/widget/Button;
 
-.field public final D:Landroid/widget/TextView;
+.field public final D:Lcom/helpshift/support/widget/CSATView;
 
-.field public final synthetic E:Lra/s;
+.field public final E:Landroid/widget/TextView;
 
-.field public final y:Landroid/view/View;
+.field public final synthetic F:Lra/s;
 
-.field public final z:Landroid/widget/TextView;
+.field public final z:Landroid/view/View;
 
 
 # direct methods
@@ -39,13 +39,13 @@
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lra/s$b;->E:Lra/s;
+    iput-object p1, p0, Lra/s$b;->F:Lra/s;
 
     .line 2
     invoke-direct {p0, p2}, Landroidx/recyclerview/widget/RecyclerView$z;-><init>(Landroid/view/View;)V
 
     .line 3
-    iput-object p2, p0, Lra/s$b;->y:Landroid/view/View;
+    iput-object p2, p0, Lra/s$b;->z:Landroid/view/View;
 
     .line 4
     sget p1, Lcom/helpshift/R$id;->footer_message:I
@@ -56,7 +56,7 @@
 
     check-cast p1, Landroid/widget/TextView;
 
-    iput-object p1, p0, Lra/s$b;->z:Landroid/widget/TextView;
+    iput-object p1, p0, Lra/s$b;->A:Landroid/widget/TextView;
 
     .line 5
     sget p1, Lcom/helpshift/R$id;->hs__new_conversation:I
@@ -67,7 +67,7 @@
 
     check-cast p1, Landroid/widget/LinearLayout;
 
-    iput-object p1, p0, Lra/s$b;->A:Landroid/widget/LinearLayout;
+    iput-object p1, p0, Lra/s$b;->B:Landroid/widget/LinearLayout;
 
     .line 6
     sget p1, Lcom/helpshift/R$id;->hs__new_conversation_btn:I
@@ -78,7 +78,7 @@
 
     check-cast p1, Landroid/widget/Button;
 
-    iput-object p1, p0, Lra/s$b;->B:Landroid/widget/Button;
+    iput-object p1, p0, Lra/s$b;->C:Landroid/widget/Button;
 
     .line 7
     sget p1, Lcom/helpshift/R$id;->csat_view_layout:I
@@ -89,7 +89,7 @@
 
     check-cast p1, Lcom/helpshift/support/widget/CSATView;
 
-    iput-object p1, p0, Lra/s$b;->C:Lcom/helpshift/support/widget/CSATView;
+    iput-object p1, p0, Lra/s$b;->D:Lcom/helpshift/support/widget/CSATView;
 
     .line 8
     sget p1, Lcom/helpshift/R$id;->hs__new_conversation_footer_reason:I
@@ -100,7 +100,7 @@
 
     check-cast p1, Landroid/widget/TextView;
 
-    iput-object p1, p0, Lra/s$b;->D:Landroid/widget/TextView;
+    iput-object p1, p0, Lra/s$b;->E:Landroid/widget/TextView;
 
     return-void
 .end method
@@ -111,7 +111,7 @@
     .locals 0
 
     .line 1
-    iget-object p1, p0, Lra/s$b;->E:Lra/s;
+    iget-object p1, p0, Lra/s$b;->F:Lra/s;
 
     iget-object p1, p1, Lra/s;->a:Lra/s$a;
 
@@ -121,7 +121,7 @@
     check-cast p1, Lqa/p0;
 
     .line 3
-    iget-object p1, p1, Lqa/p0;->e:Lra/x;
+    iget-object p1, p1, Lqa/p0;->e:Lra/w;
 
     if-eqz p1, :cond_0
 
@@ -129,7 +129,7 @@
     check-cast p1, Lqa/t;
 
     .line 5
-    iget-object p1, p1, Lqa/t;->m0:Lf9/i;
+    iget-object p1, p1, Lqa/t;->n0:Lf9/i;
 
     invoke-virtual {p1}, Lf9/i;->D()V
 

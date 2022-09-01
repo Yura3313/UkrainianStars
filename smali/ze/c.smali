@@ -1,19 +1,19 @@
 .class public final Lze/c;
-.super Lze/q0;
+.super Lze/r0;
 .source "EventLoop.kt"
 
 
 # instance fields
-.field public final k:Ljava/lang/Thread;
+.field public final l:Ljava/lang/Thread;
 
 
 # direct methods
 .method public constructor <init>(Ljava/lang/Thread;)V
     .locals 0
 
-    invoke-direct {p0}, Lze/q0;-><init>()V
+    invoke-direct {p0}, Lze/r0;-><init>()V
 
-    iput-object p1, p0, Lze/c;->k:Ljava/lang/Thread;
+    iput-object p1, p0, Lze/c;->l:Ljava/lang/Thread;
 
     return-void
 .end method
@@ -23,7 +23,7 @@
 .method public final w()Ljava/lang/Thread;
     .locals 1
 
-    iget-object v0, p0, Lze/c;->k:Ljava/lang/Thread;
+    iget-object v0, p0, Lze/c;->l:Ljava/lang/Thread;
 
     return-object v0
 .end method

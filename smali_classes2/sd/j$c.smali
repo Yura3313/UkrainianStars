@@ -55,7 +55,7 @@
     if-eqz p2, :cond_0
 
     .line 2
-    invoke-static {p1, p3}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p3}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {p1}, Landroid/view/View;->getHeight()I
 
@@ -90,7 +90,7 @@
     if-eqz p2, :cond_1
 
     .line 6
-    invoke-static {p1, p3}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p3}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {p1}, Landroid/view/View;->getHeight()I
 

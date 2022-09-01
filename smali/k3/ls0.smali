@@ -1,174 +1,314 @@
-.class public final Lk3/ls0;
-.super Lk3/hs0;
+.class public Lk3/ls0;
+.super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads-lite@@19.3.0"
 
 
+# instance fields
+.field public volatile a:Lk3/at0;
+
+.field public volatile b:Lk3/yq0;
+
+
 # direct methods
-.method public constructor <init>()V
+.method public static constructor <clinit>()V
     .locals 0
 
-    invoke-direct {p0}, Lk3/hs0;-><init>()V
+    invoke-static {}, Lcom/google/android/gms/internal/ads/t5;->a()Lcom/google/android/gms/internal/ads/t5;
 
     return-void
 .end method
 
-.method public static d(Ljava/lang/Object;J)Lk3/as0;
+.method public constructor <init>()V
     .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "<E:",
-            "Ljava/lang/Object;",
-            ">(",
-            "Ljava/lang/Object;",
-            "J)",
-            "Lk3/as0<",
-            "TE;>;"
-        }
-    .end annotation
 
-    invoke-static {p0, p1, p2}, Lk3/du0;->v(Ljava/lang/Object;J)Ljava/lang/Object;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    move-result-object p0
-
-    check-cast p0, Lk3/as0;
-
-    return-object p0
+    return-void
 .end method
 
 
 # virtual methods
-.method public final a(Ljava/lang/Object;J)Ljava/util/List;
-    .locals 2
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "<",
-            "L:Ljava/lang/Object;",
-            ">(",
-            "Ljava/lang/Object;",
-            "J)",
-            "Ljava/util/List<",
-            "T",
-            "L;",
-            ">;"
-        }
-    .end annotation
+.method public final a()Lk3/yq0;
+    .locals 1
 
     .line 1
-    invoke-static {p1, p2, p3}, Lk3/ls0;->d(Ljava/lang/Object;J)Lk3/as0;
+    iget-object v0, p0, Lk3/ls0;->b:Lk3/yq0;
 
-    move-result-object v0
+    if-eqz v0, :cond_0
 
     .line 2
-    invoke-interface {v0}, Lk3/as0;->T0()Z
+    iget-object v0, p0, Lk3/ls0;->b:Lk3/yq0;
 
-    move-result v1
-
-    if-nez v1, :cond_1
+    return-object v0
 
     .line 3
-    invoke-interface {v0}, Ljava/util/List;->size()I
+    :cond_0
+    monitor-enter p0
 
-    move-result v1
+    .line 4
+    :try_start_0
+    iget-object v0, p0, Lk3/ls0;->b:Lk3/yq0;
 
-    if-nez v1, :cond_0
+    if-eqz v0, :cond_1
 
-    const/16 v1, 0xa
+    .line 5
+    iget-object v0, p0, Lk3/ls0;->b:Lk3/yq0;
+
+    monitor-exit p0
+
+    return-object v0
+
+    .line 6
+    :cond_1
+    iget-object v0, p0, Lk3/ls0;->a:Lk3/at0;
+
+    if-nez v0, :cond_2
+
+    .line 7
+    sget-object v0, Lk3/yq0;->h:Lk3/gr0;
+
+    iput-object v0, p0, Lk3/ls0;->b:Lk3/yq0;
 
     goto :goto_0
 
-    :cond_0
-    shl-int/lit8 v1, v1, 0x1
-
-    .line 4
-    :goto_0
-    invoke-interface {v0, v1}, Lk3/as0;->Q(I)Lk3/as0;
-
-    move-result-object v0
-
-    .line 5
-    invoke-static {p1, p2, p3, v0}, Lk3/du0;->f(Ljava/lang/Object;JLjava/lang/Object;)V
-
-    :cond_1
-    return-object v0
-.end method
-
-.method public final b(Ljava/lang/Object;Ljava/lang/Object;J)V
-    .locals 4
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "<E:",
-            "Ljava/lang/Object;",
-            ">(",
-            "Ljava/lang/Object;",
-            "Ljava/lang/Object;",
-            "J)V"
-        }
-    .end annotation
-
-    .line 1
-    invoke-static {p1, p3, p4}, Lk3/ls0;->d(Ljava/lang/Object;J)Lk3/as0;
-
-    move-result-object v0
-
-    .line 2
-    invoke-static {p2, p3, p4}, Lk3/ls0;->d(Ljava/lang/Object;J)Lk3/as0;
-
-    move-result-object p2
-
-    .line 3
-    invoke-interface {v0}, Ljava/util/List;->size()I
-
-    move-result v1
-
-    .line 4
-    invoke-interface {p2}, Ljava/util/List;->size()I
-
-    move-result v2
-
-    if-lez v1, :cond_1
-
-    if-lez v2, :cond_1
-
-    .line 5
-    invoke-interface {v0}, Lk3/as0;->T0()Z
-
-    move-result v3
-
-    if-nez v3, :cond_0
-
-    add-int/2addr v2, v1
-
-    .line 6
-    invoke-interface {v0, v2}, Lk3/as0;->Q(I)Lk3/as0;
-
-    move-result-object v0
-
-    .line 7
-    :cond_0
-    invoke-interface {v0, p2}, Ljava/util/List;->addAll(Ljava/util/Collection;)Z
-
-    :cond_1
-    if-lez v1, :cond_2
-
-    move-object p2, v0
-
     .line 8
     :cond_2
-    invoke-static {p1, p3, p4, p2}, Lk3/du0;->f(Ljava/lang/Object;JLjava/lang/Object;)V
+    iget-object v0, p0, Lk3/ls0;->a:Lk3/at0;
 
-    return-void
+    invoke-interface {v0}, Lk3/at0;->f()Lk3/yq0;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lk3/ls0;->b:Lk3/yq0;
+
+    .line 9
+    :goto_0
+    iget-object v0, p0, Lk3/ls0;->b:Lk3/yq0;
+
+    monitor-exit p0
+
+    return-object v0
+
+    :catchall_0
+    move-exception v0
+
+    .line 10
+    monitor-exit p0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    throw v0
 .end method
 
-.method public final c(Ljava/lang/Object;J)V
-    .locals 0
+.method public final b()I
+    .locals 1
 
     .line 1
-    invoke-static {p1, p2, p3}, Lk3/ls0;->d(Ljava/lang/Object;J)Lk3/as0;
+    iget-object v0, p0, Lk3/ls0;->b:Lk3/yq0;
+
+    if-eqz v0, :cond_0
+
+    .line 2
+    iget-object v0, p0, Lk3/ls0;->b:Lk3/yq0;
+
+    invoke-virtual {v0}, Lk3/yq0;->size()I
+
+    move-result v0
+
+    return v0
+
+    .line 3
+    :cond_0
+    iget-object v0, p0, Lk3/ls0;->a:Lk3/at0;
+
+    if-eqz v0, :cond_1
+
+    .line 4
+    iget-object v0, p0, Lk3/ls0;->a:Lk3/at0;
+
+    invoke-interface {v0}, Lk3/at0;->d()I
+
+    move-result v0
+
+    return v0
+
+    :cond_1
+    const/4 v0, 0x0
+
+    return v0
+.end method
+
+.method public final c(Lk3/at0;)Lk3/at0;
+    .locals 1
+
+    .line 1
+    iget-object v0, p0, Lk3/ls0;->a:Lk3/at0;
+
+    if-nez v0, :cond_1
+
+    .line 2
+    monitor-enter p0
+
+    .line 3
+    :try_start_0
+    iget-object v0, p0, Lk3/ls0;->a:Lk3/at0;
+
+    if-eqz v0, :cond_0
+
+    .line 4
+    monitor-exit p0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    goto :goto_1
+
+    .line 5
+    :cond_0
+    :try_start_1
+    iput-object p1, p0, Lk3/ls0;->a:Lk3/at0;
+
+    .line 6
+    sget-object v0, Lk3/yq0;->h:Lk3/gr0;
+
+    iput-object v0, p0, Lk3/ls0;->b:Lk3/yq0;
+    :try_end_1
+    .catch Lcom/google/android/gms/internal/ads/zzegz; {:try_start_1 .. :try_end_1} :catch_0
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    goto :goto_0
+
+    .line 7
+    :catch_0
+    :try_start_2
+    iput-object p1, p0, Lk3/ls0;->a:Lk3/at0;
+
+    .line 8
+    sget-object p1, Lk3/yq0;->h:Lk3/gr0;
+
+    iput-object p1, p0, Lk3/ls0;->b:Lk3/yq0;
+
+    .line 9
+    :goto_0
+    monitor-exit p0
+
+    goto :goto_1
+
+    :catchall_0
+    move-exception p1
+
+    monitor-exit p0
+    :try_end_2
+    .catchall {:try_start_2 .. :try_end_2} :catchall_0
+
+    throw p1
+
+    .line 10
+    :cond_1
+    :goto_1
+    iget-object p1, p0, Lk3/ls0;->a:Lk3/at0;
+
+    return-object p1
+.end method
+
+.method public equals(Ljava/lang/Object;)Z
+    .locals 2
+
+    if-ne p0, p1, :cond_0
+
+    const/4 p1, 0x1
+
+    return p1
+
+    .line 1
+    :cond_0
+    instance-of v0, p1, Lk3/ls0;
+
+    if-nez v0, :cond_1
+
+    const/4 p1, 0x0
+
+    return p1
+
+    .line 2
+    :cond_1
+    check-cast p1, Lk3/ls0;
+
+    .line 3
+    iget-object v0, p0, Lk3/ls0;->a:Lk3/at0;
+
+    .line 4
+    iget-object v1, p1, Lk3/ls0;->a:Lk3/at0;
+
+    if-nez v0, :cond_2
+
+    if-nez v1, :cond_2
+
+    .line 5
+    invoke-virtual {p0}, Lk3/ls0;->a()Lk3/yq0;
+
+    move-result-object v0
+
+    invoke-virtual {p1}, Lk3/ls0;->a()Lk3/yq0;
 
     move-result-object p1
 
-    .line 2
-    invoke-interface {p1}, Lk3/as0;->x1()V
+    invoke-virtual {v0, p1}, Lk3/yq0;->equals(Ljava/lang/Object;)Z
 
-    return-void
+    move-result p1
+
+    return p1
+
+    :cond_2
+    if-eqz v0, :cond_3
+
+    if-eqz v1, :cond_3
+
+    .line 6
+    invoke-virtual {v0, v1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+
+    move-result p1
+
+    return p1
+
+    :cond_3
+    if-eqz v0, :cond_4
+
+    .line 7
+    invoke-interface {v0}, Lk3/dt0;->b()Lk3/at0;
+
+    move-result-object v1
+
+    invoke-virtual {p1, v1}, Lk3/ls0;->c(Lk3/at0;)Lk3/at0;
+
+    move-result-object p1
+
+    invoke-virtual {v0, p1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+
+    move-result p1
+
+    return p1
+
+    .line 8
+    :cond_4
+    invoke-interface {v1}, Lk3/dt0;->b()Lk3/at0;
+
+    move-result-object p1
+
+    invoke-virtual {p0, p1}, Lk3/ls0;->c(Lk3/at0;)Lk3/at0;
+
+    move-result-object p1
+
+    invoke-virtual {p1, v1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+
+    move-result p1
+
+    return p1
+.end method
+
+.method public hashCode()I
+    .locals 1
+
+    const/4 v0, 0x1
+
+    return v0
 .end method

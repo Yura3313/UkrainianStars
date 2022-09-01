@@ -14,13 +14,13 @@
 
 
 # static fields
-.field public static final enum f:Lia/e;
-
 .field public static final enum g:Lia/e;
 
 .field public static final enum h:Lia/e;
 
-.field public static final synthetic i:[Lia/e;
+.field public static final enum i:Lia/e;
+
+.field public static final synthetic j:[Lia/e;
 
 
 # direct methods
@@ -36,7 +36,7 @@
 
     invoke-direct {v0, v1, v2}, Lia/e;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lia/e;->f:Lia/e;
+    sput-object v0, Lia/e;->g:Lia/e;
 
     .line 2
     new-instance v1, Lia/e;
@@ -47,7 +47,7 @@
 
     invoke-direct {v1, v3, v4}, Lia/e;-><init>(Ljava/lang/String;I)V
 
-    sput-object v1, Lia/e;->g:Lia/e;
+    sput-object v1, Lia/e;->h:Lia/e;
 
     .line 3
     new-instance v3, Lia/e;
@@ -58,7 +58,7 @@
 
     invoke-direct {v3, v5, v6}, Lia/e;-><init>(Ljava/lang/String;I)V
 
-    sput-object v3, Lia/e;->h:Lia/e;
+    sput-object v3, Lia/e;->i:Lia/e;
 
     const/4 v5, 0x3
 
@@ -71,7 +71,7 @@
     aput-object v3, v5, v6
 
     .line 4
-    sput-object v5, Lia/e;->i:[Lia/e;
+    sput-object v5, Lia/e;->j:[Lia/e;
 
     return-void
 .end method
@@ -106,7 +106,7 @@
 .method public static values()[Lia/e;
     .locals 1
 
-    sget-object v0, Lia/e;->i:[Lia/e;
+    sget-object v0, Lia/e;->j:[Lia/e;
 
     invoke-virtual {v0}, [Lia/e;->clone()Ljava/lang/Object;
 

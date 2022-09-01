@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field public final synthetic f:Lcom/supercell/id/view/SubPageTabLayout;
+.field public final synthetic g:Lcom/supercell/id/view/SubPageTabLayout;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/id/view/SubPageTabLayout;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/view/SubPageTabLayout$a;->f:Lcom/supercell/id/view/SubPageTabLayout;
+    iput-object p1, p0, Lcom/supercell/id/view/SubPageTabLayout$a;->g:Lcom/supercell/id/view/SubPageTabLayout;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -38,7 +38,7 @@
     .locals 3
 
     .line 1
-    iget-object v0, p0, Lcom/supercell/id/view/SubPageTabLayout$a;->f:Lcom/supercell/id/view/SubPageTabLayout;
+    iget-object v0, p0, Lcom/supercell/id/view/SubPageTabLayout$a;->g:Lcom/supercell/id/view/SubPageTabLayout;
 
     invoke-virtual {v0}, Lcom/google/android/material/tabs/TabLayout;->getTabCount()I
 
@@ -59,7 +59,7 @@
     iget-object v0, v0, Lae/u;->w:Lsc/a;
 
     .line 4
-    sget-object v2, Lsc/a$a;->i:Lsc/a$a;
+    sget-object v2, Lsc/a$a;->j:Lsc/a$a;
 
     invoke-virtual {v0, v2}, Lsc/a;->b(Lsc/a$a;)V
 
@@ -67,7 +67,7 @@
     const-string v0, "view"
 
     .line 5
-    invoke-static {p1, v0}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {p1, v1}, Landroid/view/View;->setSelected(Z)V
 

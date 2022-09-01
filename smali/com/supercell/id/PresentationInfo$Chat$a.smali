@@ -50,7 +50,7 @@
 
     const-string v0, "source"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     new-instance v0, Lcom/supercell/id/PresentationInfo$Chat;
 
@@ -62,14 +62,14 @@
 
     const-string v1, "it.readString()!!"
 
-    invoke-static {p1, v1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v1}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-direct {v0, p1}, Lcom/supercell/id/PresentationInfo$Chat;-><init>(Ljava/lang/String;)V
 
     return-object v0
 
     :cond_0
-    invoke-static {}, Lt3/e;->f()V
+    invoke-static {}, Lt3/h;->j()V
 
     const/4 p1, 0x0
 

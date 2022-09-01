@@ -2,57 +2,180 @@
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
-# interfaces
-.implements Lk3/kz0;
+
+# instance fields
+.field public final a:I
+
+.field public final b:[J
+
+.field public final c:[I
+
+.field public final d:I
+
+.field public final e:[J
+
+.field public final f:[I
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 0
+.method public constructor <init>([J[II[J[I)V
+    .locals 4
 
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    array-length v0, p2
+
+    array-length v1, p4
+
+    const/4 v2, 0x0
+
+    const/4 v3, 0x1
+
+    if-ne v0, v1, :cond_0
+
+    const/4 v0, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    :goto_0
+    invoke-static {v0}, Lcom/google/android/gms/ads/a;->a(Z)V
+
+    .line 3
+    array-length v0, p1
+
+    array-length v1, p4
+
+    if-ne v0, v1, :cond_1
+
+    const/4 v0, 0x1
+
+    goto :goto_1
+
+    :cond_1
+    const/4 v0, 0x0
+
+    :goto_1
+    invoke-static {v0}, Lcom/google/android/gms/ads/a;->a(Z)V
+
+    .line 4
+    array-length v0, p5
+
+    array-length v1, p4
+
+    if-ne v0, v1, :cond_2
+
+    const/4 v2, 0x1
+
+    :cond_2
+    invoke-static {v2}, Lcom/google/android/gms/ads/a;->a(Z)V
+
+    .line 5
+    iput-object p1, p0, Lk3/jz0;->b:[J
+
+    .line 6
+    iput-object p2, p0, Lk3/jz0;->c:[I
+
+    .line 7
+    iput p3, p0, Lk3/jz0;->d:I
+
+    .line 8
+    iput-object p4, p0, Lk3/jz0;->e:[J
+
+    .line 9
+    iput-object p5, p0, Lk3/jz0;->f:[I
+
+    .line 10
+    array-length p1, p1
+
+    iput p1, p0, Lk3/jz0;->a:I
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a()Z
-    .locals 1
+.method public final a(J)I
+    .locals 2
 
-    const/4 v0, 0x0
+    .line 1
+    iget-object v0, p0, Lk3/jz0;->e:[J
 
-    return v0
-.end method
+    const/4 v1, 0x0
 
-.method public final b(I)Landroid/media/MediaCodecInfo;
-    .locals 0
-
-    invoke-static {p1}, Landroid/media/MediaCodecList;->getCodecInfoAt(I)Landroid/media/MediaCodecInfo;
-
-    move-result-object p1
-
-    return-object p1
-.end method
-
-.method public final c()I
-    .locals 1
-
-    invoke-static {}, Landroid/media/MediaCodecList;->getCodecCount()I
-
-    move-result v0
-
-    return v0
-.end method
-
-.method public final d(Ljava/lang/String;Landroid/media/MediaCodecInfo$CodecCapabilities;)Z
-    .locals 0
-
-    const-string p2, "video/avc"
-
-    invoke-virtual {p2, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-static {v0, p1, p2, v1}, Lk3/b21;->a([JJZ)I
 
     move-result p1
+
+    :goto_0
+    if-ltz p1, :cond_1
+
+    .line 2
+    iget-object p2, p0, Lk3/jz0;->f:[I
+
+    aget p2, p2, p1
+
+    and-int/lit8 p2, p2, 0x1
+
+    if-eqz p2, :cond_0
+
+    return p1
+
+    :cond_0
+    add-int/lit8 p1, p1, -0x1
+
+    goto :goto_0
+
+    :cond_1
+    const/4 p1, -0x1
+
+    return p1
+.end method
+
+.method public final b(J)I
+    .locals 3
+
+    .line 1
+    iget-object v0, p0, Lk3/jz0;->e:[J
+
+    const/4 v1, 0x1
+
+    const/4 v2, 0x0
+
+    invoke-static {v0, p1, p2, v1, v2}, Lk3/b21;->e([JJZZ)I
+
+    move-result p1
+
+    .line 2
+    :goto_0
+    iget-object p2, p0, Lk3/jz0;->e:[J
+
+    array-length p2, p2
+
+    if-ge p1, p2, :cond_1
+
+    .line 3
+    iget-object p2, p0, Lk3/jz0;->f:[I
+
+    aget p2, p2, p1
+
+    and-int/2addr p2, v1
+
+    if-eqz p2, :cond_0
+
+    return p1
+
+    :cond_0
+    add-int/lit8 p1, p1, 0x1
+
+    goto :goto_0
+
+    :cond_1
+    const/4 p1, -0x1
 
     return p1
 .end method

@@ -9,7 +9,7 @@
         value = {
             "Ljava/util/List<",
             "+",
-            "Lk3/em0<",
+            "Lk3/hm0<",
             "+",
             "Lk3/io;",
             ">;>;"
@@ -26,7 +26,7 @@
             "(",
             "Ljava/util/List<",
             "+",
-            "Lk3/em0<",
+            "Lk3/hm0<",
             "+",
             "Lk3/io;",
             ">;>;)V"
@@ -49,7 +49,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 4
-    invoke-static {p1}, Lk3/am0;->f(Ljava/lang/Object;)Lk3/em0;
+    invoke-static {p1}, Lk3/dm0;->g(Ljava/lang/Object;)Lk3/hm0;
 
     move-result-object p1
 

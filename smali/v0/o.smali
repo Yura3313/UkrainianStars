@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field public g:I
+.field public h:I
 
 
 # direct methods
@@ -17,7 +17,7 @@
     const/16 v0, 0x50
 
     .line 2
-    iput v0, p0, Lv0/o;->g:I
+    iput v0, p0, Lv0/o;->h:I
 
     return-void
 .end method
@@ -164,7 +164,7 @@
 
     .line 14
     :goto_2
-    iget v15, v0, Lv0/o;->g:I
+    iget v15, v0, Lv0/o;->h:I
 
     const v11, 0x800005
 
@@ -302,7 +302,7 @@
     int-to-float v1, v1
 
     .line 23
-    iget v4, v0, Lv0/o;->g:I
+    iget v4, v0, Lv0/o;->h:I
 
     if-eq v4, v3, :cond_e
 
@@ -335,7 +335,7 @@
     move-object/from16 v2, p2
 
     .line 26
-    iget-wide v2, v2, Landroidx/transition/Transition;->h:J
+    iget-wide v2, v2, Landroidx/transition/Transition;->i:J
 
     const-wide/16 v4, 0x0
 

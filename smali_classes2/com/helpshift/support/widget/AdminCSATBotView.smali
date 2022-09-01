@@ -15,11 +15,11 @@
 
 
 # instance fields
-.field public f:Landroid/widget/RatingBar;
+.field public g:Landroid/widget/RatingBar;
 
-.field public g:Lcom/helpshift/views/HSButton;
+.field public h:Lcom/helpshift/views/HSButton;
 
-.field public h:Lcom/helpshift/support/widget/AdminCSATBotView$b;
+.field public i:Lcom/helpshift/support/widget/AdminCSATBotView$b;
 
 
 # direct methods
@@ -32,7 +32,7 @@
     const/4 p2, 0x0
 
     .line 2
-    iput-object p2, p0, Lcom/helpshift/support/widget/AdminCSATBotView;->h:Lcom/helpshift/support/widget/AdminCSATBotView$b;
+    iput-object p2, p0, Lcom/helpshift/support/widget/AdminCSATBotView;->i:Lcom/helpshift/support/widget/AdminCSATBotView$b;
 
     .line 3
     sget p2, Lcom/helpshift/R$layout;->hs__csat_bot_view:I
@@ -51,7 +51,7 @@
     const/4 p2, 0x0
 
     .line 5
-    iput-object p2, p0, Lcom/helpshift/support/widget/AdminCSATBotView;->h:Lcom/helpshift/support/widget/AdminCSATBotView$b;
+    iput-object p2, p0, Lcom/helpshift/support/widget/AdminCSATBotView;->i:Lcom/helpshift/support/widget/AdminCSATBotView$b;
 
     .line 6
     sget p2, Lcom/helpshift/R$layout;->hs__csat_bot_view:I
@@ -78,7 +78,7 @@
 
     check-cast v0, Landroid/widget/RatingBar;
 
-    iput-object v0, p0, Lcom/helpshift/support/widget/AdminCSATBotView;->f:Landroid/widget/RatingBar;
+    iput-object v0, p0, Lcom/helpshift/support/widget/AdminCSATBotView;->g:Landroid/widget/RatingBar;
 
     .line 3
     sget v0, Lcom/helpshift/R$id;->csat_sendfeedback_btn:I
@@ -89,14 +89,14 @@
 
     check-cast v0, Lcom/helpshift/views/HSButton;
 
-    iput-object v0, p0, Lcom/helpshift/support/widget/AdminCSATBotView;->g:Lcom/helpshift/views/HSButton;
+    iput-object v0, p0, Lcom/helpshift/support/widget/AdminCSATBotView;->h:Lcom/helpshift/views/HSButton;
 
     .line 4
     invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/helpshift/support/widget/AdminCSATBotView;->f:Landroid/widget/RatingBar;
+    iget-object v1, p0, Lcom/helpshift/support/widget/AdminCSATBotView;->g:Landroid/widget/RatingBar;
 
     invoke-virtual {v1}, Landroid/widget/ProgressBar;->getProgressDrawable()Landroid/graphics/drawable/Drawable;
 
@@ -105,12 +105,12 @@
     invoke-static {v0, v1}, Lib/g;->e(Landroid/content/Context;Landroid/graphics/drawable/Drawable;)V
 
     .line 5
-    iget-object v0, p0, Lcom/helpshift/support/widget/AdminCSATBotView;->f:Landroid/widget/RatingBar;
+    iget-object v0, p0, Lcom/helpshift/support/widget/AdminCSATBotView;->g:Landroid/widget/RatingBar;
 
     invoke-virtual {v0, p0}, Landroid/widget/RatingBar;->setOnRatingBarChangeListener(Landroid/widget/RatingBar$OnRatingBarChangeListener;)V
 
     .line 6
-    iget-object v0, p0, Lcom/helpshift/support/widget/AdminCSATBotView;->g:Lcom/helpshift/views/HSButton;
+    iget-object v0, p0, Lcom/helpshift/support/widget/AdminCSATBotView;->h:Lcom/helpshift/views/HSButton;
 
     new-instance v1, Lcom/helpshift/support/widget/AdminCSATBotView$a;
 
@@ -127,7 +127,7 @@
     if-eqz p3, :cond_3
 
     .line 1
-    iget-object p3, p0, Lcom/helpshift/support/widget/AdminCSATBotView;->h:Lcom/helpshift/support/widget/AdminCSATBotView$b;
+    iget-object p3, p0, Lcom/helpshift/support/widget/AdminCSATBotView;->i:Lcom/helpshift/support/widget/AdminCSATBotView$b;
 
     if-eqz p3, :cond_3
 
@@ -149,14 +149,14 @@
 
     .line 4
     :cond_0
-    iget-object p1, p0, Lcom/helpshift/support/widget/AdminCSATBotView;->h:Lcom/helpshift/support/widget/AdminCSATBotView$b;
+    iget-object p1, p0, Lcom/helpshift/support/widget/AdminCSATBotView;->i:Lcom/helpshift/support/widget/AdminCSATBotView$b;
 
     check-cast p1, Lra/e;
 
     .line 5
     iget-object p3, p1, Lra/e;->a:Lra/g$a;
 
-    iget-object p3, p3, Lra/g$a;->A:Lcom/helpshift/views/HSButton;
+    iget-object p3, p3, Lra/g$a;->B:Lcom/helpshift/views/HSButton;
 
     const/4 v0, 0x0
 
@@ -165,7 +165,7 @@
     .line 6
     iget-object p3, p1, Lra/e;->a:Lra/g$a;
 
-    iget-object p3, p3, Lra/g$a;->D:Lcom/helpshift/views/HSTextView;
+    iget-object p3, p3, Lra/g$a;->E:Lcom/helpshift/views/HSTextView;
 
     const/16 v1, 0x8
 
@@ -174,14 +174,14 @@
     .line 7
     iget-object p3, p1, Lra/e;->a:Lra/g$a;
 
-    iget-object p3, p3, Lra/g$a;->C:Lcom/helpshift/views/HSTextView;
+    iget-object p3, p3, Lra/g$a;->D:Lcom/helpshift/views/HSTextView;
 
     invoke-virtual {p3, v1}, Landroid/view/View;->setVisibility(I)V
 
     .line 8
     iget-object p3, p1, Lra/e;->b:Lp8/a;
 
-    iget-object p3, p3, Lp8/a;->j:Ljava/util/List;
+    iget-object p3, p3, Lp8/a;->k:Ljava/util/List;
 
     invoke-interface {p3}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -201,16 +201,16 @@
     check-cast v1, Lp8/a$a;
 
     .line 9
-    iget v2, v1, Lp8/a$a;->g:I
+    iget v2, v1, Lp8/a$a;->h:I
 
     if-ne p2, v2, :cond_1
 
     .line 10
     iget-object p2, p1, Lra/e;->a:Lra/g$a;
 
-    iget-object p2, p2, Lra/g$a;->E:Lcom/helpshift/views/HSTextView;
+    iget-object p2, p2, Lra/g$a;->F:Lcom/helpshift/views/HSTextView;
 
-    iget-object p3, v1, Lp8/a$a;->f:Ljava/lang/String;
+    iget-object p3, v1, Lp8/a$a;->g:Ljava/lang/String;
 
     invoke-virtual {p2, p3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
@@ -218,7 +218,7 @@
     :cond_2
     iget-object p2, p1, Lra/e;->a:Lra/g$a;
 
-    iget-object p2, p2, Lra/g$a;->E:Lcom/helpshift/views/HSTextView;
+    iget-object p2, p2, Lra/g$a;->F:Lcom/helpshift/views/HSTextView;
 
     invoke-virtual {p2, v0}, Landroid/view/View;->setVisibility(I)V
 
@@ -232,12 +232,12 @@
     .line 13
     iget-object p1, p1, Lra/e;->c:Lo8/g;
 
-    iget-object p1, p1, Lo8/y;->i:Ljava/lang/String;
+    iget-object p1, p1, Lo8/z;->j:Ljava/lang/String;
 
     check-cast p2, Lqa/p0;
 
     .line 14
-    iget-object p2, p2, Lqa/p0;->e:Lra/x;
+    iget-object p2, p2, Lqa/p0;->e:Lra/w;
 
     if-eqz p2, :cond_3
 
@@ -245,7 +245,7 @@
     check-cast p2, Lqa/t;
 
     .line 16
-    iget-object p2, p2, Lqa/t;->m0:Lf9/i;
+    iget-object p2, p2, Lqa/t;->n0:Lf9/i;
 
     .line 17
     iget-object p3, p2, Lf9/i;->F:Ljava/lang/String;
@@ -272,7 +272,7 @@
     .locals 2
 
     .line 1
-    iput-object p1, p0, Lcom/helpshift/support/widget/AdminCSATBotView;->h:Lcom/helpshift/support/widget/AdminCSATBotView$b;
+    iput-object p1, p0, Lcom/helpshift/support/widget/AdminCSATBotView;->i:Lcom/helpshift/support/widget/AdminCSATBotView$b;
 
     .line 2
     check-cast p1, Lra/e;
@@ -287,12 +287,12 @@
     .line 4
     iget-object p1, p1, Lra/e;->c:Lo8/g;
 
-    iget-object p1, p1, Lo8/y;->i:Ljava/lang/String;
+    iget-object p1, p1, Lo8/z;->j:Ljava/lang/String;
 
     check-cast v0, Lqa/p0;
 
     .line 5
-    iget-object v0, v0, Lqa/p0;->e:Lra/x;
+    iget-object v0, v0, Lqa/p0;->e:Lra/w;
 
     if-eqz v0, :cond_0
 
@@ -300,7 +300,7 @@
     check-cast v0, Lqa/t;
 
     .line 7
-    iget-object v0, v0, Lqa/t;->m0:Lf9/i;
+    iget-object v0, v0, Lqa/t;->n0:Lf9/i;
 
     .line 8
     iget-object v1, v0, Lf9/i;->G:Ljava/lang/String;

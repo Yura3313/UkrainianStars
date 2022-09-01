@@ -36,7 +36,7 @@
     .line 3
     iget-object v1, v0, Lu8/a;->d:Ljava/lang/String;
 
-    invoke-static {v1}, Lcom/google/android/play/core/appupdate/g;->b(Ljava/lang/String;)Z
+    invoke-static {v1}, La5/b0;->d(Ljava/lang/String;)Z
 
     move-result v1
 

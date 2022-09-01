@@ -1,49 +1,47 @@
 .class public final Lk3/yk0;
-.super Ljava/lang/Object;
+.super Ljava/io/OutputStream;
 .source "com.google.android.gms:play-services-gass@@19.3.0"
-
-# interfaces
-.implements Ljava/io/FilenameFilter;
-
-
-# instance fields
-.field public final a:Ljava/util/regex/Pattern;
 
 
 # direct methods
-.method public constructor <init>(Ljava/util/regex/Pattern;)V
+.method public constructor <init>()V
     .locals 0
 
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 2
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 3
-    iput-object p1, p0, Lk3/yk0;->a:Ljava/util/regex/Pattern;
+    invoke-direct {p0}, Ljava/io/OutputStream;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final accept(Ljava/io/File;Ljava/lang/String;)Z
+.method public final toString()Ljava/lang/String;
+    .locals 1
+
+    const-string v0, "ByteStreams.nullOutputStream()"
+
+    return-object v0
+.end method
+
+.method public final write(I)V
     .locals 0
-    .param p1    # Ljava/io/File;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
-        .end annotation
-    .end param
 
-    iget-object p1, p0, Lk3/yk0;->a:Ljava/util/regex/Pattern;
+    return-void
+.end method
 
-    invoke-virtual {p1, p2}, Ljava/util/regex/Pattern;->matcher(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
+.method public final write([B)V
+    .locals 0
 
-    move-result-object p1
+    .line 1
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    invoke-virtual {p1}, Ljava/util/regex/Matcher;->matches()Z
+    return-void
+.end method
 
-    move-result p1
+.method public final write([BII)V
+    .locals 0
 
-    return p1
+    .line 2
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    return-void
 .end method

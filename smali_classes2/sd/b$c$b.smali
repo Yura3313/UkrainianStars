@@ -18,18 +18,18 @@
 
 
 # instance fields
-.field public final synthetic f:Landroidx/recyclerview/widget/RecyclerView;
+.field public final synthetic g:Landroidx/recyclerview/widget/RecyclerView;
 
-.field public final synthetic g:I
+.field public final synthetic h:I
 
 
 # direct methods
 .method public constructor <init>(Landroidx/recyclerview/widget/RecyclerView;I)V
     .locals 0
 
-    iput-object p1, p0, Lsd/b$c$b;->f:Landroidx/recyclerview/widget/RecyclerView;
+    iput-object p1, p0, Lsd/b$c$b;->g:Landroidx/recyclerview/widget/RecyclerView;
 
-    iput p2, p0, Lsd/b$c$b;->g:I
+    iput p2, p0, Lsd/b$c$b;->h:I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -42,7 +42,7 @@
     .locals 3
 
     .line 1
-    iget-object v0, p0, Lsd/b$c$b;->f:Landroidx/recyclerview/widget/RecyclerView;
+    iget-object v0, p0, Lsd/b$c$b;->g:Landroidx/recyclerview/widget/RecyclerView;
 
     invoke-virtual {v0}, Landroidx/recyclerview/widget/RecyclerView;->getLayoutManager()Landroidx/recyclerview/widget/RecyclerView$m;
 
@@ -61,14 +61,14 @@
 
     .line 2
     :goto_0
-    iget-object v1, p0, Lsd/b$c$b;->f:Landroidx/recyclerview/widget/RecyclerView;
+    iget-object v1, p0, Lsd/b$c$b;->g:Landroidx/recyclerview/widget/RecyclerView;
 
-    iget v2, p0, Lsd/b$c$b;->g:I
+    iget v2, p0, Lsd/b$c$b;->h:I
 
     invoke-static {v1, v2}, Lae/z2;->p(Landroid/view/View;I)V
 
     .line 3
-    iget-object v1, p0, Lsd/b$c$b;->f:Landroidx/recyclerview/widget/RecyclerView;
+    iget-object v1, p0, Lsd/b$c$b;->g:Landroidx/recyclerview/widget/RecyclerView;
 
     invoke-virtual {v1}, Landroidx/recyclerview/widget/RecyclerView;->getLayoutManager()Landroidx/recyclerview/widget/RecyclerView$m;
 

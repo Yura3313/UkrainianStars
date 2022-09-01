@@ -18,7 +18,7 @@
 
 
 # instance fields
-.field public final f:Lcom/google/android/gms/drive/events/zze;
+.field public final g:Lcom/google/android/gms/drive/events/zze;
 
 
 # direct methods
@@ -41,7 +41,7 @@
     invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lcom/google/android/gms/drive/events/zzb;->f:Lcom/google/android/gms/drive/events/zze;
+    iput-object p1, p0, Lcom/google/android/gms/drive/events/zzb;->g:Lcom/google/android/gms/drive/events/zze;
 
     return-void
 .end method
@@ -76,9 +76,9 @@
     check-cast p1, Lcom/google/android/gms/drive/events/zzb;
 
     .line 3
-    iget-object v0, p0, Lcom/google/android/gms/drive/events/zzb;->f:Lcom/google/android/gms/drive/events/zze;
+    iget-object v0, p0, Lcom/google/android/gms/drive/events/zzb;->g:Lcom/google/android/gms/drive/events/zze;
 
-    iget-object p1, p1, Lcom/google/android/gms/drive/events/zzb;->f:Lcom/google/android/gms/drive/events/zze;
+    iget-object p1, p1, Lcom/google/android/gms/drive/events/zzb;->g:Lcom/google/android/gms/drive/events/zze;
 
     invoke-static {v0, p1}, Ld2/f;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
@@ -109,7 +109,7 @@
     new-array v0, v0, [Ljava/lang/Object;
 
     .line 1
-    iget-object v1, p0, Lcom/google/android/gms/drive/events/zzb;->f:Lcom/google/android/gms/drive/events/zze;
+    iget-object v1, p0, Lcom/google/android/gms/drive/events/zzb;->g:Lcom/google/android/gms/drive/events/zze;
 
     const/4 v2, 0x0
 
@@ -132,7 +132,7 @@
 
     new-array v1, v1, [Ljava/lang/Object;
 
-    iget-object v2, p0, Lcom/google/android/gms/drive/events/zzb;->f:Lcom/google/android/gms/drive/events/zze;
+    iget-object v2, p0, Lcom/google/android/gms/drive/events/zzb;->g:Lcom/google/android/gms/drive/events/zze;
 
     const/4 v3, 0x0
 
@@ -160,7 +160,7 @@
     const/4 v1, 0x3
 
     .line 2
-    iget-object v2, p0, Lcom/google/android/gms/drive/events/zzb;->f:Lcom/google/android/gms/drive/events/zze;
+    iget-object v2, p0, Lcom/google/android/gms/drive/events/zzb;->g:Lcom/google/android/gms/drive/events/zze;
 
     const/4 v3, 0x0
 

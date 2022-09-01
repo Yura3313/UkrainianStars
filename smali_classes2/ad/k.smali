@@ -3,7 +3,7 @@
 .source "GameFragment.kt"
 
 # interfaces
-.implements Lae/b2;
+.implements Lae/a2;
 
 
 # virtual methods

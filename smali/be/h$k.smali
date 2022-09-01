@@ -1,5 +1,5 @@
 .class public final Lbe/h$k;
-.super Lse/h;
+.super Lse/i;
 .source "FriendsStorage.kt"
 
 # interfaces
@@ -18,35 +18,35 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/a<",
-        "Lie/h;",
+        "Lie/i;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic f:Lbe/h;
+.field public final synthetic g:Lbe/h;
 
-.field public final synthetic g:Ljava/util/List;
+.field public final synthetic h:Ljava/util/List;
 
-.field public final synthetic h:Lcom/supercell/id/model/IdRelationshipStatus;
+.field public final synthetic i:Lcom/supercell/id/model/IdRelationshipStatus;
 
 
 # direct methods
 .method public constructor <init>(Lbe/h;Ljava/util/List;Lcom/supercell/id/model/IdRelationshipStatus;)V
     .locals 0
 
-    iput-object p1, p0, Lbe/h$k;->f:Lbe/h;
+    iput-object p1, p0, Lbe/h$k;->g:Lbe/h;
 
-    iput-object p2, p0, Lbe/h$k;->g:Ljava/util/List;
+    iput-object p2, p0, Lbe/h$k;->h:Ljava/util/List;
 
-    iput-object p3, p0, Lbe/h$k;->h:Lcom/supercell/id/model/IdRelationshipStatus;
+    iput-object p3, p0, Lbe/h$k;->i:Lcom/supercell/id/model/IdRelationshipStatus;
 
     const/4 p1, 0x0
 
-    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -57,7 +57,7 @@
     .locals 5
 
     .line 1
-    iget-object v0, p0, Lbe/h$k;->f:Lbe/h;
+    iget-object v0, p0, Lbe/h$k;->g:Lbe/h;
 
     .line 2
     iget-object v0, v0, Lbe/h;->e:Ljava/util/WeakHashMap;
@@ -67,7 +67,7 @@
 
     .line 4
     :try_start_0
-    iget-object v1, p0, Lbe/h$k;->f:Lbe/h;
+    iget-object v1, p0, Lbe/h$k;->g:Lbe/h;
 
     .line 5
     iget-object v1, v1, Lbe/h;->e:Ljava/util/WeakHashMap;
@@ -79,9 +79,9 @@
 
     const-string v2, "publicProfileChangedListeners.keys"
 
-    invoke-static {v1, v2}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-static {v1}, Lje/j;->Q(Ljava/lang/Iterable;)Ljava/util/List;
+    invoke-static {v1}, Lje/j;->L(Ljava/lang/Iterable;)Ljava/util/List;
 
     move-result-object v1
     :try_end_0
@@ -109,7 +109,7 @@
     check-cast v1, Lbe/h$c;
 
     .line 9
-    iget-object v2, p0, Lbe/h$k;->g:Ljava/util/List;
+    iget-object v2, p0, Lbe/h$k;->h:Ljava/util/List;
 
     invoke-interface {v2}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -129,7 +129,7 @@
     check-cast v3, Lcom/supercell/id/model/IdSocialAccount;
 
     .line 10
-    iget-object v4, p0, Lbe/h$k;->h:Lcom/supercell/id/model/IdRelationshipStatus;
+    iget-object v4, p0, Lbe/h$k;->i:Lcom/supercell/id/model/IdRelationshipStatus;
 
     invoke-interface {v1, v3, v4}, Lbe/h$c;->e(Lcom/supercell/id/model/IdSocialAccount;Lcom/supercell/id/model/IdRelationshipStatus;)V
 
@@ -137,7 +137,7 @@
 
     .line 11
     :cond_1
-    sget-object v0, Lie/h;->a:Lie/h;
+    sget-object v0, Lie/i;->a:Lie/i;
 
     return-object v0
 

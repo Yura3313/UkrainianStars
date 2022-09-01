@@ -1,174 +1,93 @@
 .class public final Lk3/i3;
-.super Ljava/lang/Object;
+.super Li1/c;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
-# interfaces
-.implements Lk3/y2;
 
-
-# instance fields
-.field public final synthetic f:I
-
-.field public final g:Ljava/lang/Object;
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Li1/c<",
+        "Lcom/google/android/gms/internal/ads/zzahx;",
+        ">;"
+    }
+.end annotation
 
 
 # direct methods
-.method public synthetic constructor <init>(Ljava/lang/Object;I)V
-    .locals 0
+.method public constructor <init>(Landroid/content/Context;Landroid/os/Looper;Lcom/google/android/gms/common/internal/BaseGmsClient$a;Lcom/google/android/gms/common/internal/BaseGmsClient$b;)V
+    .locals 6
 
-    iput p2, p0, Lk3/i3;->f:I
+    .line 1
+    invoke-static {p1}, Lk3/y8;->a(Landroid/content/Context;)Landroid/content/Context;
 
-    iput-object p1, p0, Lk3/i3;->g:Ljava/lang/Object;
+    move-result-object v1
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    const/16 v3, 0xa6
+
+    move-object v0, p0
+
+    move-object v2, p2
+
+    move-object v4, p3
+
+    move-object v5, p4
+
+    .line 2
+    invoke-direct/range {v0 .. v5}, Li1/c;-><init>(Landroid/content/Context;Landroid/os/Looper;ILcom/google/android/gms/common/internal/BaseGmsClient$a;Lcom/google/android/gms/common/internal/BaseGmsClient$b;)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final c(Ljava/lang/Object;Ljava/util/Map;)V
+.method public final synthetic p(Landroid/os/IBinder;)Landroid/os/IInterface;
     .locals 2
 
-    iget v0, p0, Lk3/i3;->f:I
-
-    packed-switch v0, :pswitch_data_0
-
-    goto :goto_1
-
-    :pswitch_0
-    const-string p1, "action"
-
-    .line 1
-    invoke-interface {p2, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object p1
-
-    check-cast p1, Ljava/lang/String;
-
-    const-string v0, "grant"
-
-    .line 2
-    invoke-virtual {v0, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_1
+    if-nez p1, :cond_0
 
     const/4 p1, 0x0
 
-    :try_start_0
-    const-string v0, "amount"
+    return-object p1
 
-    .line 3
-    invoke-interface {p2, v0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    :cond_0
+    const-string v0, "com.google.android.gms.ads.internal.httpcache.IHttpAssetsCacheService"
+
+    .line 1
+    invoke-interface {p1, v0}, Landroid/os/IBinder;->queryLocalInterface(Ljava/lang/String;)Landroid/os/IInterface;
 
     move-result-object v0
 
-    check-cast v0, Ljava/lang/String;
+    .line 2
+    instance-of v1, v0, Lcom/google/android/gms/internal/ads/zzahx;
 
-    invoke-static {v0}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
+    if-eqz v1, :cond_1
 
-    move-result v0
+    .line 3
+    check-cast v0, Lcom/google/android/gms/internal/ads/zzahx;
 
-    const-string v1, "type"
+    return-object v0
 
     .line 4
-    invoke-interface {p2, v1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object p2
-
-    check-cast p2, Ljava/lang/String;
-
-    .line 5
-    invoke-static {p2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
-
-    move-result v1
-
-    if-nez v1, :cond_0
-
-    .line 6
-    new-instance v1, Lcom/google/android/gms/internal/ads/zzaue;
-
-    invoke-direct {v1, p2, v0}, Lcom/google/android/gms/internal/ads/zzaue;-><init>(Ljava/lang/String;I)V
-    :try_end_0
-    .catch Ljava/lang/NumberFormatException; {:try_start_0 .. :try_end_0} :catch_0
-
-    move-object p1, v1
-
-    .line 7
-    :catch_0
-    :cond_0
-    iget-object p2, p0, Lk3/i3;->g:Ljava/lang/Object;
-
-    check-cast p2, Lk3/h3;
-
-    invoke-interface {p2, p1}, Lk3/h3;->S(Lcom/google/android/gms/internal/ads/zzaue;)V
-
-    goto :goto_0
-
     :cond_1
-    const-string p2, "video_start"
+    new-instance v0, Lcom/google/android/gms/internal/ads/zzaia;
 
-    .line 8
-    invoke-virtual {p2, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    invoke-direct {v0, p1}, Lcom/google/android/gms/internal/ads/zzaia;-><init>(Landroid/os/IBinder;)V
 
-    move-result p2
+    return-object v0
+.end method
 
-    if-eqz p2, :cond_2
+.method public final w()Ljava/lang/String;
+    .locals 1
 
-    .line 9
-    iget-object p1, p0, Lk3/i3;->g:Ljava/lang/Object;
+    const-string v0, "com.google.android.gms.ads.internal.httpcache.IHttpAssetsCacheService"
 
-    check-cast p1, Lk3/h3;
+    return-object v0
+.end method
 
-    invoke-interface {p1}, Lk3/h3;->Q()V
+.method public final x()Ljava/lang/String;
+    .locals 1
 
-    goto :goto_0
+    const-string v0, "com.google.android.gms.ads.service.HTTP"
 
-    :cond_2
-    const-string p2, "video_complete"
-
-    .line 10
-    invoke-virtual {p2, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result p1
-
-    if-eqz p1, :cond_3
-
-    .line 11
-    iget-object p1, p0, Lk3/i3;->g:Ljava/lang/Object;
-
-    check-cast p1, Lk3/h3;
-
-    invoke-interface {p1}, Lk3/h3;->P()V
-
-    :cond_3
-    :goto_0
-    return-void
-
-    .line 12
-    :goto_1
-    iget-object p2, p0, Lk3/i3;->g:Ljava/lang/Object;
-
-    check-cast p2, Lk3/ay;
-
-    check-cast p1, Lk3/gh;
-
-    .line 13
-    iget-object p1, p2, Lk3/ay;->b:Lk3/mm;
-
-    const/4 p2, 0x0
-
-    .line 14
-    iput-boolean p2, p1, Lk3/mm;->j:Z
-
-    return-void
-
-    nop
-
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+    return-object v0
 .end method

@@ -55,7 +55,7 @@
     iput-object p2, p0, Landroidx/fragment/app/c0$a;->b:Landroidx/fragment/app/Fragment;
 
     .line 5
-    sget-object p1, Landroidx/lifecycle/f$c;->j:Landroidx/lifecycle/f$c;
+    sget-object p1, Landroidx/lifecycle/f$c;->k:Landroidx/lifecycle/f$c;
 
     iput-object p1, p0, Landroidx/fragment/app/c0$a;->g:Landroidx/lifecycle/f$c;
 
@@ -80,7 +80,7 @@
     iput-object p1, p0, Landroidx/fragment/app/c0$a;->b:Landroidx/fragment/app/Fragment;
 
     .line 10
-    iget-object p1, p1, Landroidx/fragment/app/Fragment;->S:Landroidx/lifecycle/f$c;
+    iget-object p1, p1, Landroidx/fragment/app/Fragment;->T:Landroidx/lifecycle/f$c;
 
     iput-object p1, p0, Landroidx/fragment/app/c0$a;->g:Landroidx/lifecycle/f$c;
 

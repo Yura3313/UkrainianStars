@@ -22,10 +22,10 @@
 .method public abstract C1(Landroid/content/Context;)I
 .end method
 
-.method public abstract P1()Z
+.method public abstract O1()Z
 .end method
 
-.method public abstract Y1()Ljava/util/Collection;
+.method public abstract X1()Ljava/util/Collection;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
@@ -36,7 +36,7 @@
     .end annotation
 .end method
 
-.method public abstract a2()Ljava/lang/Object;
+.method public abstract Z1()Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()TS;"

@@ -1,5 +1,5 @@
 .class public final Lcom/supercell/id/ui/profile/ProfileFragment$k;
-.super Lse/h;
+.super Lse/i;
 .source "ProfileFragment.kt"
 
 # interfaces
@@ -18,33 +18,33 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/l<",
         "Lae/m<",
         "+",
-        "Lvc/j;",
+        "Lvc/i;",
         "+",
         "Lcom/supercell/id/util/NormalizedError;",
         ">;",
-        "Lie/h;",
+        "Lie/i;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic f:Lcom/supercell/id/ui/profile/ProfileFragment;
+.field public final synthetic g:Lcom/supercell/id/ui/profile/ProfileFragment;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/id/ui/profile/ProfileFragment;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/ui/profile/ProfileFragment$k;->f:Lcom/supercell/id/ui/profile/ProfileFragment;
+    iput-object p1, p0, Lcom/supercell/id/ui/profile/ProfileFragment$k;->g:Lcom/supercell/id/ui/profile/ProfileFragment;
 
     const/4 p1, 0x1
 
-    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -58,17 +58,17 @@
     check-cast p1, Lae/m;
 
     .line 2
-    iget-object p1, p0, Lcom/supercell/id/ui/profile/ProfileFragment$k;->f:Lcom/supercell/id/ui/profile/ProfileFragment;
+    iget-object p1, p0, Lcom/supercell/id/ui/profile/ProfileFragment$k;->g:Lcom/supercell/id/ui/profile/ProfileFragment;
 
     invoke-static {p1}, Lcom/supercell/id/ui/profile/ProfileFragment;->g1(Lcom/supercell/id/ui/profile/ProfileFragment;)V
 
     .line 3
-    iget-object p1, p0, Lcom/supercell/id/ui/profile/ProfileFragment$k;->f:Lcom/supercell/id/ui/profile/ProfileFragment;
+    iget-object p1, p0, Lcom/supercell/id/ui/profile/ProfileFragment$k;->g:Lcom/supercell/id/ui/profile/ProfileFragment;
 
     invoke-static {p1}, Lcom/supercell/id/ui/profile/ProfileFragment;->h1(Lcom/supercell/id/ui/profile/ProfileFragment;)V
 
     .line 4
-    sget-object p1, Lie/h;->a:Lie/h;
+    sget-object p1, Lie/i;->a:Lie/i;
 
     return-object p1
 .end method

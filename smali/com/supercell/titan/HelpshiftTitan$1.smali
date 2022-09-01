@@ -18,22 +18,22 @@
 
 
 # instance fields
-.field public final synthetic f:Ljava/lang/String;
-
 .field public final synthetic g:Ljava/lang/String;
 
 .field public final synthetic h:Ljava/lang/String;
+
+.field public final synthetic i:Ljava/lang/String;
 
 
 # direct methods
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/titan/HelpshiftTitan$1;->f:Ljava/lang/String;
+    iput-object p1, p0, Lcom/supercell/titan/HelpshiftTitan$1;->g:Ljava/lang/String;
 
-    iput-object p2, p0, Lcom/supercell/titan/HelpshiftTitan$1;->g:Ljava/lang/String;
+    iput-object p2, p0, Lcom/supercell/titan/HelpshiftTitan$1;->h:Ljava/lang/String;
 
-    iput-object p3, p0, Lcom/supercell/titan/HelpshiftTitan$1;->h:Ljava/lang/String;
+    iput-object p3, p0, Lcom/supercell/titan/HelpshiftTitan$1;->i:Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -135,11 +135,11 @@
 
     move-result-object v2
 
-    iget-object v3, p0, Lcom/supercell/titan/HelpshiftTitan$1;->f:Ljava/lang/String;
+    iget-object v3, p0, Lcom/supercell/titan/HelpshiftTitan$1;->g:Ljava/lang/String;
 
-    iget-object v6, p0, Lcom/supercell/titan/HelpshiftTitan$1;->g:Ljava/lang/String;
+    iget-object v6, p0, Lcom/supercell/titan/HelpshiftTitan$1;->h:Ljava/lang/String;
 
-    iget-object v7, p0, Lcom/supercell/titan/HelpshiftTitan$1;->h:Ljava/lang/String;
+    iget-object v7, p0, Lcom/supercell/titan/HelpshiftTitan$1;->i:Ljava/lang/String;
 
     invoke-static {v2, v3, v6, v7, v4}, Lcom/helpshift/a;->a(Landroid/app/Application;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Le7/b;)V
     :try_end_1
@@ -204,7 +204,7 @@
     check-cast v0, Lla/c0$a;
 
     .line 19
-    invoke-static {}, Lcom/helpshift/util/u;->b()Z
+    invoke-static {}, Lcom/helpshift/util/t;->b()Z
 
     move-result v1
 
@@ -242,10 +242,10 @@
     sput-object v0, Lcom/supercell/titan/HelpshiftTitan;->n:Landroidx/lifecycle/i;
 
     .line 26
-    sget-object v0, Landroidx/lifecycle/q;->n:Landroidx/lifecycle/q;
+    sget-object v0, Landroidx/lifecycle/q;->o:Landroidx/lifecycle/q;
 
     .line 27
-    iget-object v0, v0, Landroidx/lifecycle/q;->k:Landroidx/lifecycle/k;
+    iget-object v0, v0, Landroidx/lifecycle/q;->l:Landroidx/lifecycle/k;
 
     .line 28
     sget-object v1, Lcom/supercell/titan/HelpshiftTitan;->n:Landroidx/lifecycle/i;

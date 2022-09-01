@@ -21,37 +21,37 @@
 
 
 # instance fields
-.field public A:Landroidx/appcompat/widget/ActionMenuPresenter$c;
+.field public A:Landroidx/appcompat/widget/ActionMenuPresenter$a;
 
-.field public B:Landroidx/appcompat/widget/ActionMenuPresenter$b;
+.field public B:Landroidx/appcompat/widget/ActionMenuPresenter$c;
 
-.field public final C:Landroidx/appcompat/widget/ActionMenuPresenter$f;
+.field public C:Landroidx/appcompat/widget/ActionMenuPresenter$b;
 
-.field public D:I
+.field public final D:Landroidx/appcompat/widget/ActionMenuPresenter$f;
 
-.field public o:Landroidx/appcompat/widget/ActionMenuPresenter$d;
+.field public E:I
 
-.field public p:Landroid/graphics/drawable/Drawable;
+.field public p:Landroidx/appcompat/widget/ActionMenuPresenter$d;
 
-.field public q:Z
+.field public q:Landroid/graphics/drawable/Drawable;
 
 .field public r:Z
 
 .field public s:Z
 
-.field public t:I
+.field public t:Z
 
 .field public u:I
 
 .field public v:I
 
-.field public w:Z
+.field public w:I
 
-.field public final x:Landroid/util/SparseBooleanArray;
+.field public x:Z
 
-.field public y:Landroidx/appcompat/widget/ActionMenuPresenter$e;
+.field public final y:Landroid/util/SparseBooleanArray;
 
-.field public z:Landroidx/appcompat/widget/ActionMenuPresenter$a;
+.field public z:Landroidx/appcompat/widget/ActionMenuPresenter$e;
 
 
 # direct methods
@@ -70,14 +70,14 @@
 
     invoke-direct {p1}, Landroid/util/SparseBooleanArray;-><init>()V
 
-    iput-object p1, p0, Landroidx/appcompat/widget/ActionMenuPresenter;->x:Landroid/util/SparseBooleanArray;
+    iput-object p1, p0, Landroidx/appcompat/widget/ActionMenuPresenter;->y:Landroid/util/SparseBooleanArray;
 
     .line 3
     new-instance p1, Landroidx/appcompat/widget/ActionMenuPresenter$f;
 
     invoke-direct {p1, p0}, Landroidx/appcompat/widget/ActionMenuPresenter$f;-><init>(Landroidx/appcompat/widget/ActionMenuPresenter;)V
 
-    iput-object p1, p0, Landroidx/appcompat/widget/ActionMenuPresenter;->C:Landroidx/appcompat/widget/ActionMenuPresenter$f;
+    iput-object p1, p0, Landroidx/appcompat/widget/ActionMenuPresenter;->D:Landroidx/appcompat/widget/ActionMenuPresenter$f;
 
     return-void
 .end method
@@ -91,7 +91,7 @@
     invoke-virtual {p0}, Landroidx/appcompat/widget/ActionMenuPresenter;->i()Z
 
     .line 2
-    iget-object v0, p0, Landroidx/appcompat/view/menu/a;->j:Landroidx/appcompat/view/menu/i$a;
+    iget-object v0, p0, Landroidx/appcompat/view/menu/a;->k:Landroidx/appcompat/view/menu/i$a;
 
     if-eqz v0, :cond_0
 
@@ -106,7 +106,7 @@
     .locals 11
 
     .line 1
-    iget-object p1, p0, Landroidx/appcompat/view/menu/a;->m:Landroidx/appcompat/view/menu/j;
+    iget-object p1, p0, Landroidx/appcompat/view/menu/a;->n:Landroidx/appcompat/view/menu/j;
 
     check-cast p1, Landroid/view/ViewGroup;
 
@@ -122,7 +122,7 @@
 
     .line 2
     :cond_0
-    iget-object v3, p0, Landroidx/appcompat/view/menu/a;->h:Landroidx/appcompat/view/menu/e;
+    iget-object v3, p0, Landroidx/appcompat/view/menu/a;->i:Landroidx/appcompat/view/menu/e;
 
     if-eqz v3, :cond_6
 
@@ -130,7 +130,7 @@
     invoke-virtual {v3}, Landroidx/appcompat/view/menu/e;->j()V
 
     .line 4
-    iget-object v3, p0, Landroidx/appcompat/view/menu/a;->h:Landroidx/appcompat/view/menu/e;
+    iget-object v3, p0, Landroidx/appcompat/view/menu/a;->i:Landroidx/appcompat/view/menu/e;
 
     invoke-virtual {v3}, Landroidx/appcompat/view/menu/e;->m()Ljava/util/ArrayList;
 
@@ -217,7 +217,7 @@
 
     .line 16
     :cond_3
-    iget-object v7, p0, Landroidx/appcompat/view/menu/a;->m:Landroidx/appcompat/view/menu/j;
+    iget-object v7, p0, Landroidx/appcompat/view/menu/a;->n:Landroidx/appcompat/view/menu/j;
 
     check-cast v7, Landroid/view/ViewGroup;
 
@@ -248,7 +248,7 @@
 
     move-result-object v3
 
-    iget-object v4, p0, Landroidx/appcompat/widget/ActionMenuPresenter;->o:Landroidx/appcompat/widget/ActionMenuPresenter$d;
+    iget-object v4, p0, Landroidx/appcompat/widget/ActionMenuPresenter;->p:Landroidx/appcompat/widget/ActionMenuPresenter$d;
 
     if-ne v3, v4, :cond_8
 
@@ -272,14 +272,14 @@
     .line 20
     :cond_9
     :goto_4
-    iget-object p1, p0, Landroidx/appcompat/view/menu/a;->m:Landroidx/appcompat/view/menu/j;
+    iget-object p1, p0, Landroidx/appcompat/view/menu/a;->n:Landroidx/appcompat/view/menu/j;
 
     check-cast p1, Landroid/view/View;
 
     invoke-virtual {p1}, Landroid/view/View;->requestLayout()V
 
     .line 21
-    iget-object p1, p0, Landroidx/appcompat/view/menu/a;->h:Landroidx/appcompat/view/menu/e;
+    iget-object p1, p0, Landroidx/appcompat/view/menu/a;->i:Landroidx/appcompat/view/menu/e;
 
     if-eqz p1, :cond_b
 
@@ -321,7 +321,7 @@
 
     .line 28
     :cond_b
-    iget-object p1, p0, Landroidx/appcompat/view/menu/a;->h:Landroidx/appcompat/view/menu/e;
+    iget-object p1, p0, Landroidx/appcompat/view/menu/a;->i:Landroidx/appcompat/view/menu/e;
 
     if-eqz p1, :cond_c
 
@@ -333,7 +333,7 @@
 
     .line 31
     :cond_c
-    iget-boolean p1, p0, Landroidx/appcompat/widget/ActionMenuPresenter;->r:Z
+    iget-boolean p1, p0, Landroidx/appcompat/widget/ActionMenuPresenter;->s:Z
 
     if-eqz p1, :cond_e
 
@@ -370,22 +370,22 @@
     if-eqz v0, :cond_11
 
     .line 35
-    iget-object p1, p0, Landroidx/appcompat/widget/ActionMenuPresenter;->o:Landroidx/appcompat/widget/ActionMenuPresenter$d;
+    iget-object p1, p0, Landroidx/appcompat/widget/ActionMenuPresenter;->p:Landroidx/appcompat/widget/ActionMenuPresenter$d;
 
     if-nez p1, :cond_f
 
     .line 36
     new-instance p1, Landroidx/appcompat/widget/ActionMenuPresenter$d;
 
-    iget-object v0, p0, Landroidx/appcompat/view/menu/a;->f:Landroid/content/Context;
+    iget-object v0, p0, Landroidx/appcompat/view/menu/a;->g:Landroid/content/Context;
 
     invoke-direct {p1, p0, v0}, Landroidx/appcompat/widget/ActionMenuPresenter$d;-><init>(Landroidx/appcompat/widget/ActionMenuPresenter;Landroid/content/Context;)V
 
-    iput-object p1, p0, Landroidx/appcompat/widget/ActionMenuPresenter;->o:Landroidx/appcompat/widget/ActionMenuPresenter$d;
+    iput-object p1, p0, Landroidx/appcompat/widget/ActionMenuPresenter;->p:Landroidx/appcompat/widget/ActionMenuPresenter$d;
 
     .line 37
     :cond_f
-    iget-object p1, p0, Landroidx/appcompat/widget/ActionMenuPresenter;->o:Landroidx/appcompat/widget/ActionMenuPresenter$d;
+    iget-object p1, p0, Landroidx/appcompat/widget/ActionMenuPresenter;->p:Landroidx/appcompat/widget/ActionMenuPresenter$d;
 
     invoke-virtual {p1}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
 
@@ -394,25 +394,25 @@
     check-cast p1, Landroid/view/ViewGroup;
 
     .line 38
-    iget-object v0, p0, Landroidx/appcompat/view/menu/a;->m:Landroidx/appcompat/view/menu/j;
+    iget-object v0, p0, Landroidx/appcompat/view/menu/a;->n:Landroidx/appcompat/view/menu/j;
 
     if-eq p1, v0, :cond_12
 
     if-eqz p1, :cond_10
 
     .line 39
-    iget-object v0, p0, Landroidx/appcompat/widget/ActionMenuPresenter;->o:Landroidx/appcompat/widget/ActionMenuPresenter$d;
+    iget-object v0, p0, Landroidx/appcompat/widget/ActionMenuPresenter;->p:Landroidx/appcompat/widget/ActionMenuPresenter$d;
 
     invoke-virtual {p1, v0}, Landroid/view/ViewGroup;->removeView(Landroid/view/View;)V
 
     .line 40
     :cond_10
-    iget-object p1, p0, Landroidx/appcompat/view/menu/a;->m:Landroidx/appcompat/view/menu/j;
+    iget-object p1, p0, Landroidx/appcompat/view/menu/a;->n:Landroidx/appcompat/view/menu/j;
 
     check-cast p1, Landroidx/appcompat/widget/ActionMenuView;
 
     .line 41
-    iget-object v0, p0, Landroidx/appcompat/widget/ActionMenuPresenter;->o:Landroidx/appcompat/widget/ActionMenuPresenter$d;
+    iget-object v0, p0, Landroidx/appcompat/widget/ActionMenuPresenter;->p:Landroidx/appcompat/widget/ActionMenuPresenter$d;
 
     .line 42
     invoke-virtual {p1}, Landroidx/appcompat/widget/ActionMenuView;->m()Landroidx/appcompat/widget/ActionMenuView$LayoutParams;
@@ -429,7 +429,7 @@
 
     .line 45
     :cond_11
-    iget-object p1, p0, Landroidx/appcompat/widget/ActionMenuPresenter;->o:Landroidx/appcompat/widget/ActionMenuPresenter$d;
+    iget-object p1, p0, Landroidx/appcompat/widget/ActionMenuPresenter;->p:Landroidx/appcompat/widget/ActionMenuPresenter$d;
 
     if-eqz p1, :cond_12
 
@@ -437,25 +437,25 @@
 
     move-result-object p1
 
-    iget-object v0, p0, Landroidx/appcompat/view/menu/a;->m:Landroidx/appcompat/view/menu/j;
+    iget-object v0, p0, Landroidx/appcompat/view/menu/a;->n:Landroidx/appcompat/view/menu/j;
 
     if-ne p1, v0, :cond_12
 
     .line 46
     check-cast v0, Landroid/view/ViewGroup;
 
-    iget-object p1, p0, Landroidx/appcompat/widget/ActionMenuPresenter;->o:Landroidx/appcompat/widget/ActionMenuPresenter$d;
+    iget-object p1, p0, Landroidx/appcompat/widget/ActionMenuPresenter;->p:Landroidx/appcompat/widget/ActionMenuPresenter$d;
 
     invoke-virtual {v0, p1}, Landroid/view/ViewGroup;->removeView(Landroid/view/View;)V
 
     .line 47
     :cond_12
     :goto_7
-    iget-object p1, p0, Landroidx/appcompat/view/menu/a;->m:Landroidx/appcompat/view/menu/j;
+    iget-object p1, p0, Landroidx/appcompat/view/menu/a;->n:Landroidx/appcompat/view/menu/j;
 
     check-cast p1, Landroidx/appcompat/widget/ActionMenuView;
 
-    iget-boolean v0, p0, Landroidx/appcompat/widget/ActionMenuPresenter;->r:Z
+    iget-boolean v0, p0, Landroidx/appcompat/widget/ActionMenuPresenter;->s:Z
 
     invoke-virtual {p1, v0}, Landroidx/appcompat/widget/ActionMenuView;->setOverflowReserved(Z)V
 
@@ -468,7 +468,7 @@
     move-object/from16 v0, p0
 
     .line 1
-    iget-object v1, v0, Landroidx/appcompat/view/menu/a;->h:Landroidx/appcompat/view/menu/e;
+    iget-object v1, v0, Landroidx/appcompat/view/menu/a;->i:Landroidx/appcompat/view/menu/e;
 
     const/4 v3, 0x0
 
@@ -493,10 +493,10 @@
 
     .line 4
     :goto_0
-    iget v5, v0, Landroidx/appcompat/widget/ActionMenuPresenter;->v:I
+    iget v5, v0, Landroidx/appcompat/widget/ActionMenuPresenter;->w:I
 
     .line 5
-    iget v6, v0, Landroidx/appcompat/widget/ActionMenuPresenter;->u:I
+    iget v6, v0, Landroidx/appcompat/widget/ActionMenuPresenter;->v:I
 
     .line 6
     invoke-static {v3, v3}, Landroid/view/View$MeasureSpec;->makeMeasureSpec(II)I
@@ -504,7 +504,7 @@
     move-result v7
 
     .line 7
-    iget-object v8, v0, Landroidx/appcompat/view/menu/a;->m:Landroidx/appcompat/view/menu/j;
+    iget-object v8, v0, Landroidx/appcompat/view/menu/a;->n:Landroidx/appcompat/view/menu/j;
 
     check-cast v8, Landroid/view/ViewGroup;
 
@@ -575,7 +575,7 @@
 
     .line 10
     :goto_4
-    iget-boolean v2, v0, Landroidx/appcompat/widget/ActionMenuPresenter;->w:Z
+    iget-boolean v2, v0, Landroidx/appcompat/widget/ActionMenuPresenter;->x:Z
 
     if-eqz v2, :cond_5
 
@@ -595,7 +595,7 @@
 
     .line 12
     :cond_6
-    iget-boolean v2, v0, Landroidx/appcompat/widget/ActionMenuPresenter;->r:Z
+    iget-boolean v2, v0, Landroidx/appcompat/widget/ActionMenuPresenter;->s:Z
 
     if-eqz v2, :cond_8
 
@@ -612,7 +612,7 @@
     sub-int/2addr v5, v11
 
     .line 13
-    iget-object v2, v0, Landroidx/appcompat/widget/ActionMenuPresenter;->x:Landroid/util/SparseBooleanArray;
+    iget-object v2, v0, Landroidx/appcompat/widget/ActionMenuPresenter;->y:Landroid/util/SparseBooleanArray;
 
     .line 14
     invoke-virtual {v2}, Landroid/util/SparseBooleanArray;->clear()V
@@ -859,13 +859,13 @@
     .locals 4
 
     .line 1
-    iput-object p1, p0, Landroidx/appcompat/view/menu/a;->g:Landroid/content/Context;
+    iput-object p1, p0, Landroidx/appcompat/view/menu/a;->h:Landroid/content/Context;
 
     .line 2
     invoke-static {p1}, Landroid/view/LayoutInflater;->from(Landroid/content/Context;)Landroid/view/LayoutInflater;
 
     .line 3
-    iput-object p2, p0, Landroidx/appcompat/view/menu/a;->h:Landroidx/appcompat/view/menu/e;
+    iput-object p2, p0, Landroidx/appcompat/view/menu/a;->i:Landroidx/appcompat/view/menu/e;
 
     .line 4
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
@@ -873,7 +873,7 @@
     move-result-object p2
 
     .line 5
-    iget-boolean v0, p0, Landroidx/appcompat/widget/ActionMenuPresenter;->s:Z
+    iget-boolean v0, p0, Landroidx/appcompat/widget/ActionMenuPresenter;->t:Z
 
     if-nez v0, :cond_1
 
@@ -902,7 +902,7 @@
 
     .line 8
     :goto_0
-    iput-boolean v1, p0, Landroidx/appcompat/widget/ActionMenuPresenter;->r:Z
+    iput-boolean v1, p0, Landroidx/appcompat/widget/ActionMenuPresenter;->s:Z
 
     .line 9
     :cond_1
@@ -921,7 +921,7 @@
     div-int/2addr v0, v1
 
     .line 10
-    iput v0, p0, Landroidx/appcompat/widget/ActionMenuPresenter;->t:I
+    iput v0, p0, Landroidx/appcompat/widget/ActionMenuPresenter;->u:I
 
     .line 11
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
@@ -1004,49 +1004,49 @@
     .line 15
     :cond_8
     :goto_3
-    iput v1, p0, Landroidx/appcompat/widget/ActionMenuPresenter;->v:I
+    iput v1, p0, Landroidx/appcompat/widget/ActionMenuPresenter;->w:I
 
     .line 16
-    iget p1, p0, Landroidx/appcompat/widget/ActionMenuPresenter;->t:I
+    iget p1, p0, Landroidx/appcompat/widget/ActionMenuPresenter;->u:I
 
     .line 17
-    iget-boolean v0, p0, Landroidx/appcompat/widget/ActionMenuPresenter;->r:Z
+    iget-boolean v0, p0, Landroidx/appcompat/widget/ActionMenuPresenter;->s:Z
 
     const/4 v1, 0x0
 
     if-eqz v0, :cond_b
 
     .line 18
-    iget-object v0, p0, Landroidx/appcompat/widget/ActionMenuPresenter;->o:Landroidx/appcompat/widget/ActionMenuPresenter$d;
+    iget-object v0, p0, Landroidx/appcompat/widget/ActionMenuPresenter;->p:Landroidx/appcompat/widget/ActionMenuPresenter$d;
 
     if-nez v0, :cond_a
 
     .line 19
     new-instance v0, Landroidx/appcompat/widget/ActionMenuPresenter$d;
 
-    iget-object v2, p0, Landroidx/appcompat/view/menu/a;->f:Landroid/content/Context;
+    iget-object v2, p0, Landroidx/appcompat/view/menu/a;->g:Landroid/content/Context;
 
     invoke-direct {v0, p0, v2}, Landroidx/appcompat/widget/ActionMenuPresenter$d;-><init>(Landroidx/appcompat/widget/ActionMenuPresenter;Landroid/content/Context;)V
 
-    iput-object v0, p0, Landroidx/appcompat/widget/ActionMenuPresenter;->o:Landroidx/appcompat/widget/ActionMenuPresenter$d;
+    iput-object v0, p0, Landroidx/appcompat/widget/ActionMenuPresenter;->p:Landroidx/appcompat/widget/ActionMenuPresenter$d;
 
     .line 20
-    iget-boolean v2, p0, Landroidx/appcompat/widget/ActionMenuPresenter;->q:Z
+    iget-boolean v2, p0, Landroidx/appcompat/widget/ActionMenuPresenter;->r:Z
 
     const/4 v3, 0x0
 
     if-eqz v2, :cond_9
 
     .line 21
-    iget-object v2, p0, Landroidx/appcompat/widget/ActionMenuPresenter;->p:Landroid/graphics/drawable/Drawable;
+    iget-object v2, p0, Landroidx/appcompat/widget/ActionMenuPresenter;->q:Landroid/graphics/drawable/Drawable;
 
     invoke-virtual {v0, v2}, Landroidx/appcompat/widget/AppCompatImageView;->setImageDrawable(Landroid/graphics/drawable/Drawable;)V
 
     .line 22
-    iput-object v1, p0, Landroidx/appcompat/widget/ActionMenuPresenter;->p:Landroid/graphics/drawable/Drawable;
+    iput-object v1, p0, Landroidx/appcompat/widget/ActionMenuPresenter;->q:Landroid/graphics/drawable/Drawable;
 
     .line 23
-    iput-boolean v3, p0, Landroidx/appcompat/widget/ActionMenuPresenter;->q:Z
+    iput-boolean v3, p0, Landroidx/appcompat/widget/ActionMenuPresenter;->r:Z
 
     .line 24
     :cond_9
@@ -1055,13 +1055,13 @@
     move-result v0
 
     .line 25
-    iget-object v1, p0, Landroidx/appcompat/widget/ActionMenuPresenter;->o:Landroidx/appcompat/widget/ActionMenuPresenter$d;
+    iget-object v1, p0, Landroidx/appcompat/widget/ActionMenuPresenter;->p:Landroidx/appcompat/widget/ActionMenuPresenter$d;
 
     invoke-virtual {v1, v0, v0}, Landroid/view/View;->measure(II)V
 
     .line 26
     :cond_a
-    iget-object v0, p0, Landroidx/appcompat/widget/ActionMenuPresenter;->o:Landroidx/appcompat/widget/ActionMenuPresenter$d;
+    iget-object v0, p0, Landroidx/appcompat/widget/ActionMenuPresenter;->p:Landroidx/appcompat/widget/ActionMenuPresenter$d;
 
     invoke-virtual {v0}, Landroid/view/View;->getMeasuredWidth()I
 
@@ -1073,11 +1073,11 @@
 
     .line 27
     :cond_b
-    iput-object v1, p0, Landroidx/appcompat/widget/ActionMenuPresenter;->o:Landroidx/appcompat/widget/ActionMenuPresenter$d;
+    iput-object v1, p0, Landroidx/appcompat/widget/ActionMenuPresenter;->p:Landroidx/appcompat/widget/ActionMenuPresenter$d;
 
     .line 28
     :goto_4
-    iput p1, p0, Landroidx/appcompat/widget/ActionMenuPresenter;->u:I
+    iput p1, p0, Landroidx/appcompat/widget/ActionMenuPresenter;->v:I
 
     .line 29
     invoke-virtual {p2}, Landroid/content/res/Resources;->getDisplayMetrics()Landroid/util/DisplayMetrics;
@@ -1104,12 +1104,12 @@
     check-cast p1, Landroidx/appcompat/widget/ActionMenuPresenter$SavedState;
 
     .line 3
-    iget p1, p1, Landroidx/appcompat/widget/ActionMenuPresenter$SavedState;->f:I
+    iget p1, p1, Landroidx/appcompat/widget/ActionMenuPresenter$SavedState;->g:I
 
     if-lez p1, :cond_1
 
     .line 4
-    iget-object v0, p0, Landroidx/appcompat/view/menu/a;->h:Landroidx/appcompat/view/menu/e;
+    iget-object v0, p0, Landroidx/appcompat/view/menu/a;->i:Landroidx/appcompat/view/menu/e;
 
     invoke-virtual {v0, p1}, Landroidx/appcompat/view/menu/e;->findItem(I)Landroid/view/MenuItem;
 
@@ -1140,7 +1140,7 @@
     move-result v0
 
     .line 2
-    iget-object v1, p0, Landroidx/appcompat/widget/ActionMenuPresenter;->z:Landroidx/appcompat/widget/ActionMenuPresenter$a;
+    iget-object v1, p0, Landroidx/appcompat/widget/ActionMenuPresenter;->A:Landroidx/appcompat/widget/ActionMenuPresenter$a;
 
     if-eqz v1, :cond_1
 
@@ -1192,7 +1192,7 @@
     iget-object v2, v0, Landroidx/appcompat/view/menu/l;->z:Landroidx/appcompat/view/menu/e;
 
     .line 3
-    iget-object v3, p0, Landroidx/appcompat/view/menu/a;->h:Landroidx/appcompat/view/menu/e;
+    iget-object v3, p0, Landroidx/appcompat/view/menu/a;->i:Landroidx/appcompat/view/menu/e;
 
     if-eq v2, v3, :cond_1
 
@@ -1208,7 +1208,7 @@
     iget-object v0, v0, Landroidx/appcompat/view/menu/l;->A:Landroidx/appcompat/view/menu/g;
 
     .line 6
-    iget-object v2, p0, Landroidx/appcompat/view/menu/a;->m:Landroidx/appcompat/view/menu/j;
+    iget-object v2, p0, Landroidx/appcompat/view/menu/a;->n:Landroidx/appcompat/view/menu/j;
 
     check-cast v2, Landroid/view/ViewGroup;
 
@@ -1273,7 +1273,7 @@
     iget v0, v0, Landroidx/appcompat/view/menu/g;->a:I
 
     .line 13
-    iput v0, p0, Landroidx/appcompat/widget/ActionMenuPresenter;->D:I
+    iput v0, p0, Landroidx/appcompat/widget/ActionMenuPresenter;->E:I
 
     .line 14
     invoke-virtual {p1}, Landroidx/appcompat/view/menu/e;->size()I
@@ -1321,11 +1321,11 @@
     :goto_4
     new-instance v2, Landroidx/appcompat/widget/ActionMenuPresenter$a;
 
-    iget-object v5, p0, Landroidx/appcompat/view/menu/a;->g:Landroid/content/Context;
+    iget-object v5, p0, Landroidx/appcompat/view/menu/a;->h:Landroid/content/Context;
 
     invoke-direct {v2, p0, v5, p1, v3}, Landroidx/appcompat/widget/ActionMenuPresenter$a;-><init>(Landroidx/appcompat/widget/ActionMenuPresenter;Landroid/content/Context;Landroidx/appcompat/view/menu/l;Landroid/view/View;)V
 
-    iput-object v2, p0, Landroidx/appcompat/widget/ActionMenuPresenter;->z:Landroidx/appcompat/widget/ActionMenuPresenter$a;
+    iput-object v2, p0, Landroidx/appcompat/widget/ActionMenuPresenter;->A:Landroidx/appcompat/widget/ActionMenuPresenter$a;
 
     .line 18
     iput-boolean v0, v2, Landroidx/appcompat/view/menu/h;->h:Z
@@ -1340,7 +1340,7 @@
 
     .line 21
     :cond_8
-    iget-object v0, p0, Landroidx/appcompat/widget/ActionMenuPresenter;->z:Landroidx/appcompat/widget/ActionMenuPresenter$a;
+    iget-object v0, p0, Landroidx/appcompat/widget/ActionMenuPresenter;->A:Landroidx/appcompat/widget/ActionMenuPresenter$a;
 
     .line 22
     invoke-virtual {v0}, Landroidx/appcompat/view/menu/h;->b()Z
@@ -1370,7 +1370,7 @@
     if-eqz v1, :cond_c
 
     .line 25
-    iget-object v0, p0, Landroidx/appcompat/view/menu/a;->j:Landroidx/appcompat/view/menu/i$a;
+    iget-object v0, p0, Landroidx/appcompat/view/menu/a;->k:Landroidx/appcompat/view/menu/i$a;
 
     if-eqz v0, :cond_b
 
@@ -1406,9 +1406,9 @@
     invoke-direct {v0}, Landroidx/appcompat/widget/ActionMenuPresenter$SavedState;-><init>()V
 
     .line 2
-    iget v1, p0, Landroidx/appcompat/widget/ActionMenuPresenter;->D:I
+    iget v1, p0, Landroidx/appcompat/widget/ActionMenuPresenter;->E:I
 
-    iput v1, v0, Landroidx/appcompat/widget/ActionMenuPresenter$SavedState;->f:I
+    iput v1, v0, Landroidx/appcompat/widget/ActionMenuPresenter$SavedState;->g:I
 
     return-object v0
 .end method
@@ -1445,9 +1445,9 @@
 
     .line 5
     :cond_1
-    iget-object p2, p0, Landroidx/appcompat/view/menu/a;->i:Landroid/view/LayoutInflater;
+    iget-object p2, p0, Landroidx/appcompat/view/menu/a;->j:Landroid/view/LayoutInflater;
 
-    iget v0, p0, Landroidx/appcompat/view/menu/a;->l:I
+    iget v0, p0, Landroidx/appcompat/view/menu/a;->m:I
 
     invoke-virtual {p2, v0, p3, v1}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
 
@@ -1460,7 +1460,7 @@
     invoke-interface {p2, p1}, Landroidx/appcompat/view/menu/j$a;->d(Landroidx/appcompat/view/menu/g;)V
 
     .line 7
-    iget-object v0, p0, Landroidx/appcompat/view/menu/a;->m:Landroidx/appcompat/view/menu/j;
+    iget-object v0, p0, Landroidx/appcompat/view/menu/a;->n:Landroidx/appcompat/view/menu/j;
 
     check-cast v0, Landroidx/appcompat/widget/ActionMenuView;
 
@@ -1473,7 +1473,7 @@
     invoke-virtual {v2, v0}, Landroidx/appcompat/view/menu/ActionMenuItemView;->setItemInvoker(Landroidx/appcompat/view/menu/e$b;)V
 
     .line 10
-    iget-object v0, p0, Landroidx/appcompat/widget/ActionMenuPresenter;->B:Landroidx/appcompat/widget/ActionMenuPresenter$b;
+    iget-object v0, p0, Landroidx/appcompat/widget/ActionMenuPresenter;->C:Landroidx/appcompat/widget/ActionMenuPresenter$b;
 
     if-nez v0, :cond_2
 
@@ -1482,11 +1482,11 @@
 
     invoke-direct {v0, p0}, Landroidx/appcompat/widget/ActionMenuPresenter$b;-><init>(Landroidx/appcompat/widget/ActionMenuPresenter;)V
 
-    iput-object v0, p0, Landroidx/appcompat/widget/ActionMenuPresenter;->B:Landroidx/appcompat/widget/ActionMenuPresenter$b;
+    iput-object v0, p0, Landroidx/appcompat/widget/ActionMenuPresenter;->C:Landroidx/appcompat/widget/ActionMenuPresenter$b;
 
     .line 12
     :cond_2
-    iget-object v0, p0, Landroidx/appcompat/widget/ActionMenuPresenter;->B:Landroidx/appcompat/widget/ActionMenuPresenter$b;
+    iget-object v0, p0, Landroidx/appcompat/widget/ActionMenuPresenter;->C:Landroidx/appcompat/widget/ActionMenuPresenter$b;
 
     invoke-virtual {v2, v0}, Landroidx/appcompat/view/menu/ActionMenuItemView;->setPopupCallback(Landroidx/appcompat/view/menu/ActionMenuItemView$b;)V
 
@@ -1537,14 +1537,14 @@
     .locals 4
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/view/menu/a;->m:Landroidx/appcompat/view/menu/j;
+    iget-object v0, p0, Landroidx/appcompat/view/menu/a;->n:Landroidx/appcompat/view/menu/j;
 
     if-nez v0, :cond_0
 
     .line 2
-    iget-object v1, p0, Landroidx/appcompat/view/menu/a;->i:Landroid/view/LayoutInflater;
+    iget-object v1, p0, Landroidx/appcompat/view/menu/a;->j:Landroid/view/LayoutInflater;
 
-    iget v2, p0, Landroidx/appcompat/view/menu/a;->k:I
+    iget v2, p0, Landroidx/appcompat/view/menu/a;->l:I
 
     const/4 v3, 0x0
 
@@ -1554,10 +1554,10 @@
 
     check-cast p1, Landroidx/appcompat/view/menu/j;
 
-    iput-object p1, p0, Landroidx/appcompat/view/menu/a;->m:Landroidx/appcompat/view/menu/j;
+    iput-object p1, p0, Landroidx/appcompat/view/menu/a;->n:Landroidx/appcompat/view/menu/j;
 
     .line 3
-    iget-object v1, p0, Landroidx/appcompat/view/menu/a;->h:Landroidx/appcompat/view/menu/e;
+    iget-object v1, p0, Landroidx/appcompat/view/menu/a;->i:Landroidx/appcompat/view/menu/e;
 
     invoke-interface {p1, v1}, Landroidx/appcompat/view/menu/j;->b(Landroidx/appcompat/view/menu/e;)V
 
@@ -1568,7 +1568,7 @@
 
     .line 5
     :cond_0
-    iget-object p1, p0, Landroidx/appcompat/view/menu/a;->m:Landroidx/appcompat/view/menu/j;
+    iget-object p1, p0, Landroidx/appcompat/view/menu/a;->n:Landroidx/appcompat/view/menu/j;
 
     if-eq v0, p1, :cond_1
 
@@ -1587,13 +1587,13 @@
     .locals 3
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/ActionMenuPresenter;->A:Landroidx/appcompat/widget/ActionMenuPresenter$c;
+    iget-object v0, p0, Landroidx/appcompat/widget/ActionMenuPresenter;->B:Landroidx/appcompat/widget/ActionMenuPresenter$c;
 
     const/4 v1, 0x1
 
     if-eqz v0, :cond_0
 
-    iget-object v2, p0, Landroidx/appcompat/view/menu/a;->m:Landroidx/appcompat/view/menu/j;
+    iget-object v2, p0, Landroidx/appcompat/view/menu/a;->n:Landroidx/appcompat/view/menu/j;
 
     if-eqz v2, :cond_0
 
@@ -1605,13 +1605,13 @@
     const/4 v0, 0x0
 
     .line 3
-    iput-object v0, p0, Landroidx/appcompat/widget/ActionMenuPresenter;->A:Landroidx/appcompat/widget/ActionMenuPresenter$c;
+    iput-object v0, p0, Landroidx/appcompat/widget/ActionMenuPresenter;->B:Landroidx/appcompat/widget/ActionMenuPresenter$c;
 
     return v1
 
     .line 4
     :cond_0
-    iget-object v0, p0, Landroidx/appcompat/widget/ActionMenuPresenter;->y:Landroidx/appcompat/widget/ActionMenuPresenter$e;
+    iget-object v0, p0, Landroidx/appcompat/widget/ActionMenuPresenter;->z:Landroidx/appcompat/widget/ActionMenuPresenter$e;
 
     if-eqz v0, :cond_2
 
@@ -1640,7 +1640,7 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/ActionMenuPresenter;->z:Landroidx/appcompat/widget/ActionMenuPresenter$a;
+    iget-object v0, p0, Landroidx/appcompat/widget/ActionMenuPresenter;->A:Landroidx/appcompat/widget/ActionMenuPresenter$a;
 
     if-eqz v0, :cond_1
 
@@ -1670,7 +1670,7 @@
 .method public final q()Z
     .locals 1
 
-    iget-object v0, p0, Landroidx/appcompat/widget/ActionMenuPresenter;->y:Landroidx/appcompat/widget/ActionMenuPresenter$e;
+    iget-object v0, p0, Landroidx/appcompat/widget/ActionMenuPresenter;->z:Landroidx/appcompat/widget/ActionMenuPresenter$e;
 
     if-eqz v0, :cond_0
 
@@ -1695,7 +1695,7 @@
     .locals 4
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/view/menu/a;->g:Landroid/content/Context;
+    iget-object v0, p0, Landroidx/appcompat/view/menu/a;->h:Landroid/content/Context;
 
     .line 2
     invoke-virtual {v0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
@@ -1782,10 +1782,10 @@
 
     .line 6
     :goto_2
-    iput v0, p0, Landroidx/appcompat/widget/ActionMenuPresenter;->v:I
+    iput v0, p0, Landroidx/appcompat/widget/ActionMenuPresenter;->w:I
 
     .line 7
-    iget-object v0, p0, Landroidx/appcompat/view/menu/a;->h:Landroidx/appcompat/view/menu/e;
+    iget-object v0, p0, Landroidx/appcompat/view/menu/a;->i:Landroidx/appcompat/view/menu/e;
 
     if-eqz v0, :cond_7
 
@@ -1803,7 +1803,7 @@
 
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Landroidx/appcompat/widget/ActionMenuPresenter;->w:Z
+    iput-boolean v0, p0, Landroidx/appcompat/widget/ActionMenuPresenter;->x:Z
 
     return-void
 .end method
@@ -1814,10 +1814,10 @@
     const/4 v0, 0x1
 
     .line 1
-    iput-boolean v0, p0, Landroidx/appcompat/widget/ActionMenuPresenter;->r:Z
+    iput-boolean v0, p0, Landroidx/appcompat/widget/ActionMenuPresenter;->s:Z
 
     .line 2
-    iput-boolean v0, p0, Landroidx/appcompat/widget/ActionMenuPresenter;->s:Z
+    iput-boolean v0, p0, Landroidx/appcompat/widget/ActionMenuPresenter;->t:Z
 
     return-void
 .end method
@@ -1826,7 +1826,7 @@
     .locals 4
 
     .line 1
-    iget-boolean v0, p0, Landroidx/appcompat/widget/ActionMenuPresenter;->r:Z
+    iget-boolean v0, p0, Landroidx/appcompat/widget/ActionMenuPresenter;->s:Z
 
     if-eqz v0, :cond_0
 
@@ -1836,15 +1836,15 @@
 
     if-nez v0, :cond_0
 
-    iget-object v0, p0, Landroidx/appcompat/view/menu/a;->h:Landroidx/appcompat/view/menu/e;
+    iget-object v0, p0, Landroidx/appcompat/view/menu/a;->i:Landroidx/appcompat/view/menu/e;
 
     if-eqz v0, :cond_0
 
-    iget-object v1, p0, Landroidx/appcompat/view/menu/a;->m:Landroidx/appcompat/view/menu/j;
+    iget-object v1, p0, Landroidx/appcompat/view/menu/a;->n:Landroidx/appcompat/view/menu/j;
 
     if-eqz v1, :cond_0
 
-    iget-object v1, p0, Landroidx/appcompat/widget/ActionMenuPresenter;->A:Landroidx/appcompat/widget/ActionMenuPresenter$c;
+    iget-object v1, p0, Landroidx/appcompat/widget/ActionMenuPresenter;->B:Landroidx/appcompat/widget/ActionMenuPresenter$c;
 
     if-nez v1, :cond_0
 
@@ -1864,11 +1864,11 @@
     .line 5
     new-instance v0, Landroidx/appcompat/widget/ActionMenuPresenter$e;
 
-    iget-object v1, p0, Landroidx/appcompat/view/menu/a;->g:Landroid/content/Context;
+    iget-object v1, p0, Landroidx/appcompat/view/menu/a;->h:Landroid/content/Context;
 
-    iget-object v2, p0, Landroidx/appcompat/view/menu/a;->h:Landroidx/appcompat/view/menu/e;
+    iget-object v2, p0, Landroidx/appcompat/view/menu/a;->i:Landroidx/appcompat/view/menu/e;
 
-    iget-object v3, p0, Landroidx/appcompat/widget/ActionMenuPresenter;->o:Landroidx/appcompat/widget/ActionMenuPresenter$d;
+    iget-object v3, p0, Landroidx/appcompat/widget/ActionMenuPresenter;->p:Landroidx/appcompat/widget/ActionMenuPresenter$d;
 
     invoke-direct {v0, p0, v1, v2, v3}, Landroidx/appcompat/widget/ActionMenuPresenter$e;-><init>(Landroidx/appcompat/widget/ActionMenuPresenter;Landroid/content/Context;Landroidx/appcompat/view/menu/e;Landroid/view/View;)V
 
@@ -1877,10 +1877,10 @@
 
     invoke-direct {v1, p0, v0}, Landroidx/appcompat/widget/ActionMenuPresenter$c;-><init>(Landroidx/appcompat/widget/ActionMenuPresenter;Landroidx/appcompat/widget/ActionMenuPresenter$e;)V
 
-    iput-object v1, p0, Landroidx/appcompat/widget/ActionMenuPresenter;->A:Landroidx/appcompat/widget/ActionMenuPresenter$c;
+    iput-object v1, p0, Landroidx/appcompat/widget/ActionMenuPresenter;->B:Landroidx/appcompat/widget/ActionMenuPresenter$c;
 
     .line 7
-    iget-object v0, p0, Landroidx/appcompat/view/menu/a;->m:Landroidx/appcompat/view/menu/j;
+    iget-object v0, p0, Landroidx/appcompat/view/menu/a;->n:Landroidx/appcompat/view/menu/j;
 
     check-cast v0, Landroid/view/View;
 

@@ -18,17 +18,17 @@
 
 
 # static fields
-.field public static final enum g:Lee/b;
-
 .field public static final enum h:Lee/b;
 
 .field public static final enum i:Lee/b;
 
-.field public static final synthetic j:[Lee/b;
+.field public static final enum j:Lee/b;
+
+.field public static final synthetic k:[Lee/b;
 
 
 # instance fields
-.field public final f:I
+.field public final g:I
 
 
 # direct methods
@@ -44,7 +44,7 @@
 
     invoke-direct {v0, v1, v2, v2}, Lee/b;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lee/b;->g:Lee/b;
+    sput-object v0, Lee/b;->h:Lee/b;
 
     .line 2
     new-instance v1, Lee/b;
@@ -55,7 +55,7 @@
 
     invoke-direct {v1, v3, v4, v4}, Lee/b;-><init>(Ljava/lang/String;II)V
 
-    sput-object v1, Lee/b;->h:Lee/b;
+    sput-object v1, Lee/b;->i:Lee/b;
 
     .line 3
     new-instance v3, Lee/b;
@@ -68,7 +68,7 @@
 
     invoke-direct {v3, v5, v6, v7}, Lee/b;-><init>(Ljava/lang/String;II)V
 
-    sput-object v3, Lee/b;->i:Lee/b;
+    sput-object v3, Lee/b;->j:Lee/b;
 
     const/4 v5, 0x3
 
@@ -81,7 +81,7 @@
     aput-object v3, v5, v6
 
     .line 4
-    sput-object v5, Lee/b;->j:[Lee/b;
+    sput-object v5, Lee/b;->k:[Lee/b;
 
     return-void
 .end method
@@ -98,7 +98,7 @@
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 2
-    iput p3, p0, Lee/b;->f:I
+    iput p3, p0, Lee/b;->g:I
 
     return-void
 .end method
@@ -120,7 +120,7 @@
 .method public static values()[Lee/b;
     .locals 1
 
-    sget-object v0, Lee/b;->j:[Lee/b;
+    sget-object v0, Lee/b;->k:[Lee/b;
 
     invoke-virtual {v0}, [Lee/b;->clone()Ljava/lang/Object;
 
@@ -137,12 +137,12 @@
     .locals 2
 
     .line 1
-    sget-object v0, Lee/b;->i:Lee/b;
+    sget-object v0, Lee/b;->j:Lee/b;
 
     if-eq p0, v0, :cond_0
 
     .line 2
-    iget v0, p0, Lee/b;->f:I
+    iget v0, p0, Lee/b;->g:I
 
     return v0
 

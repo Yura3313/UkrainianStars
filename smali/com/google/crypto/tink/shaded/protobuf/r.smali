@@ -61,7 +61,7 @@
     iput-object p1, p0, Lcom/google/crypto/tink/shaded/protobuf/r;->a:Lcom/google/crypto/tink/shaded/protobuf/x;
 
     .line 6
-    sget-object v0, Lo5/d;->g:Lo5/d$f;
+    sget-object v0, Lo5/d;->h:Lo5/d$f;
 
     iput-object v0, p0, Lcom/google/crypto/tink/shaded/protobuf/r;->b:Lo5/d;
     :try_end_1
@@ -76,7 +76,7 @@
     iput-object p1, p0, Lcom/google/crypto/tink/shaded/protobuf/r;->a:Lcom/google/crypto/tink/shaded/protobuf/x;
 
     .line 8
-    sget-object p1, Lo5/d;->g:Lo5/d$f;
+    sget-object p1, Lo5/d;->h:Lo5/d$f;
 
     iput-object p1, p0, Lcom/google/crypto/tink/shaded/protobuf/r;->b:Lo5/d;
 
@@ -141,7 +141,7 @@
     if-nez v0, :cond_2
 
     .line 7
-    sget-object v0, Lo5/d;->g:Lo5/d$f;
+    sget-object v0, Lo5/d;->h:Lo5/d$f;
 
     iput-object v0, p0, Lcom/google/crypto/tink/shaded/protobuf/r;->b:Lo5/d;
 

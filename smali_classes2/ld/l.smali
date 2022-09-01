@@ -1,5 +1,5 @@
 .class public final Lld/l;
-.super Lse/h;
+.super Lse/i;
 .source "IngameFriendsFragment.kt"
 
 # interfaces
@@ -9,7 +9,7 @@
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/l<",
         "Ljava/util/Map<",
         "Lcom/supercell/id/model/IdSocialAccount;",
@@ -30,18 +30,18 @@
 
 
 # instance fields
-.field public final synthetic f:Ljava/util/List;
+.field public final synthetic g:Ljava/util/List;
 
 
 # direct methods
 .method public constructor <init>(Ljava/util/List;)V
     .locals 0
 
-    iput-object p1, p0, Lld/l;->f:Ljava/util/List;
+    iput-object p1, p0, Lld/l;->g:Ljava/util/List;
 
     const/4 p1, 0x1
 
-    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -57,19 +57,19 @@
     const-string v0, "response"
 
     .line 2
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 3
-    iget-object v0, p0, Lld/l;->f:Ljava/util/List;
+    iget-object v0, p0, Lld/l;->g:Ljava/util/List;
 
     const/16 v1, 0xa
 
     .line 4
-    invoke-static {v0, v1}, Lje/f;->q(Ljava/lang/Iterable;I)I
+    invoke-static {v0, v1}, Lje/f;->l(Ljava/lang/Iterable;I)I
 
     move-result v1
 
-    invoke-static {v1}, Lcom/google/android/play/core/assetpacks/o2;->i(I)I
+    invoke-static {v1}, Lt3/h;->g(I)I
 
     move-result v1
 
@@ -105,10 +105,10 @@
     check-cast v1, Lld/c;
 
     .line 8
-    iget-object v3, v1, Lld/c;->j:Lvc/u;
+    iget-object v3, v1, Lld/c;->j:Lvc/t;
 
     .line 9
-    iget-object v3, v3, Lvc/u;->a:Lcom/supercell/id/model/IdSocialAccount;
+    iget-object v3, v3, Lvc/t;->a:Lcom/supercell/id/model/IdSocialAccount;
 
     .line 10
     iget-object v1, v1, Lld/c;->e:Ljava/lang/String;
@@ -192,7 +192,7 @@
 
     move-result v1
 
-    invoke-static {v1}, Lcom/google/android/play/core/assetpacks/o2;->i(I)I
+    invoke-static {v1}, Lt3/h;->g(I)I
 
     move-result v1
 
@@ -249,7 +249,7 @@
     goto :goto_3
 
     :cond_5
-    invoke-static {}, Lt3/e;->f()V
+    invoke-static {}, Lt3/h;->j()V
 
     throw v3
 
@@ -324,7 +324,7 @@
 
     .line 29
     :cond_9
-    invoke-static {v0}, Lje/t;->q(Ljava/lang/Iterable;)Ljava/util/Map;
+    invoke-static {v0}, Lje/t;->r(Ljava/lang/Iterable;)Ljava/util/Map;
 
     move-result-object p1
 

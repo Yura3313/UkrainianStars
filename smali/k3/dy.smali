@@ -3,45 +3,43 @@
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lk3/r21;
+.implements Lk3/x2;
 
 
 # instance fields
-.field public final f:Lk3/gh;
+.field public final g:Lk3/zx;
 
 
 # direct methods
-.method public constructor <init>(Lk3/gh;)V
+.method public constructor <init>(Lk3/zx;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lk3/dy;->f:Lk3/gh;
+    iput-object p1, p0, Lk3/dy;->g:Lk3/zx;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final g0(Lk3/o21;)V
-    .locals 2
+.method public final c(Ljava/lang/Object;Ljava/util/Map;)V
+    .locals 0
+
+    iget-object p2, p0, Lk3/dy;->g:Lk3/zx;
+
+    check-cast p1, Lk3/gh;
 
     .line 1
-    iget-object v0, p0, Lk3/dy;->f:Lk3/gh;
+    iget-object p1, p2, Lk3/zx;->b:Lk3/mm;
+
+    const/4 p2, 0x1
 
     .line 2
-    invoke-interface {v0}, Lk3/gh;->N()Lk3/ji;
-
-    move-result-object v0
-
-    iget-object p1, p1, Lk3/o21;->d:Landroid/graphics/Rect;
-
-    iget v1, p1, Landroid/graphics/Rect;->left:I
-
-    iget p1, p1, Landroid/graphics/Rect;->top:I
+    iput-boolean p2, p1, Lk3/mm;->k:Z
 
     .line 3
-    invoke-interface {v0, v1, p1}, Lk3/ji;->i(II)V
+    invoke-virtual {p1}, Lk3/mm;->g()V
 
     return-void
 .end method

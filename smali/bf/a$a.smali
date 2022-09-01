@@ -15,17 +15,15 @@
 
 
 # static fields
-.field public static final m:Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;
+.field public static final n:Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;
 
 
 # instance fields
-.field public final f:Lbf/l;
-
-.field public g:J
+.field public final g:Lbf/k;
 
 .field public h:J
 
-.field public i:I
+.field public i:J
 
 .field private volatile indexInArray:I
 
@@ -33,7 +31,9 @@
 
 .field public k:I
 
-.field public final synthetic l:Lbf/a;
+.field public l:I
+
+.field public final synthetic m:Lbf/a;
 
 .field private volatile nextParkedWorker:Ljava/lang/Object;
 
@@ -56,7 +56,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lbf/a$a;->m:Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;
+    sput-object v0, Lbf/a$a;->n:Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;
 
     return-void
 .end method
@@ -70,7 +70,7 @@
     .end annotation
 
     .line 1
-    iput-object p1, p0, Lbf/a$a;->l:Lbf/a;
+    iput-object p1, p0, Lbf/a$a;->m:Lbf/a;
 
     invoke-direct {p0}, Ljava/lang/Thread;-><init>()V
 
@@ -80,14 +80,14 @@
     invoke-virtual {p0, v0}, Ljava/lang/Thread;->setDaemon(Z)V
 
     .line 3
-    new-instance v0, Lbf/l;
+    new-instance v0, Lbf/k;
 
-    invoke-direct {v0}, Lbf/l;-><init>()V
+    invoke-direct {v0}, Lbf/k;-><init>()V
 
-    iput-object v0, p0, Lbf/a$a;->f:Lbf/l;
+    iput-object v0, p0, Lbf/a$a;->g:Lbf/k;
 
     .line 4
-    sget-object v0, Lbf/a$b;->i:Lbf/a$b;
+    sget-object v0, Lbf/a$b;->j:Lbf/a$b;
 
     iput-object v0, p0, Lbf/a$a;->state:Lbf/a$b;
 
@@ -97,26 +97,26 @@
     iput v0, p0, Lbf/a$a;->terminationState:I
 
     .line 6
-    sget-object v0, Lbf/a;->u:Laf/w;
+    sget-object v0, Lbf/a;->v:Laf/w;
 
     .line 7
     iput-object v0, p0, Lbf/a$a;->nextParkedWorker:Ljava/lang/Object;
 
     .line 8
-    sget v0, Lbf/a;->t:I
+    sget v0, Lbf/a;->u:I
 
     .line 9
-    iput v0, p0, Lbf/a$a;->i:I
+    iput v0, p0, Lbf/a$a;->j:I
 
     .line 10
-    iget-object p1, p1, Lbf/a;->i:Ljava/util/Random;
+    iget-object p1, p1, Lbf/a;->j:Ljava/util/Random;
 
     .line 11
     invoke-virtual {p1}, Ljava/util/Random;->nextInt()I
 
     move-result p1
 
-    iput p1, p0, Lbf/a$a;->j:I
+    iput p1, p0, Lbf/a$a;->k:I
 
     .line 12
     invoke-virtual {p0, p2}, Lbf/a$a;->j(I)V
@@ -130,30 +130,30 @@
     .locals 3
 
     .line 1
-    iget-object v0, p0, Lbf/a$a;->l:Lbf/a;
+    iget-object v0, p0, Lbf/a$a;->m:Lbf/a;
 
     .line 2
-    iget-object v0, v0, Lbf/a;->f:Lbf/d;
+    iget-object v0, v0, Lbf/a;->g:Lbf/d;
 
     const/4 v1, 0x2
 
     .line 3
-    invoke-virtual {v0, v1}, Lbf/d;->c(I)Lbf/h;
+    invoke-virtual {v0, v1}, Lbf/d;->c(I)Lbf/g;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
     .line 4
-    iget-object v1, p0, Lbf/a$a;->f:Lbf/l;
+    iget-object v1, p0, Lbf/a$a;->g:Lbf/k;
 
-    iget-object v2, p0, Lbf/a$a;->l:Lbf/a;
+    iget-object v2, p0, Lbf/a$a;->m:Lbf/a;
 
     .line 5
-    iget-object v2, v2, Lbf/a;->f:Lbf/d;
+    iget-object v2, v2, Lbf/a;->g:Lbf/d;
 
     .line 6
-    invoke-virtual {v1, v0, v2}, Lbf/l;->a(Lbf/h;Lbf/d;)Z
+    invoke-virtual {v1, v0, v2}, Lbf/k;->a(Lbf/g;Lbf/d;)Z
 
     const/4 v0, 0x0
 
@@ -165,7 +165,7 @@
     return v0
 .end method
 
-.method public final b()Lbf/h;
+.method public final b()Lbf/g;
     .locals 7
 
     .line 1
@@ -178,10 +178,10 @@
     if-eqz v0, :cond_8
 
     .line 2
-    iget-object v0, p0, Lbf/a$a;->l:Lbf/a;
+    iget-object v0, p0, Lbf/a$a;->m:Lbf/a;
 
     .line 3
-    iget v0, v0, Lbf/a;->j:I
+    iget v0, v0, Lbf/a;->k:I
 
     mul-int/lit8 v0, v0, 0x2
 
@@ -205,13 +205,13 @@
     if-eqz v0, :cond_1
 
     .line 5
-    iget-object v3, p0, Lbf/a$a;->l:Lbf/a;
+    iget-object v3, p0, Lbf/a$a;->m:Lbf/a;
 
     .line 6
-    iget-object v3, v3, Lbf/a;->f:Lbf/d;
+    iget-object v3, v3, Lbf/a;->g:Lbf/d;
 
     .line 7
-    invoke-virtual {v3, v2}, Lbf/d;->c(I)Lbf/h;
+    invoke-virtual {v3, v2}, Lbf/d;->c(I)Lbf/g;
 
     move-result-object v3
 
@@ -221,9 +221,9 @@
 
     .line 8
     :cond_1
-    iget-object v3, p0, Lbf/a$a;->f:Lbf/l;
+    iget-object v3, p0, Lbf/a$a;->g:Lbf/k;
 
-    invoke-virtual {v3}, Lbf/l;->d()Lbf/h;
+    invoke-virtual {v3}, Lbf/k;->d()Lbf/g;
 
     move-result-object v3
 
@@ -235,10 +235,10 @@
     if-nez v0, :cond_3
 
     .line 9
-    iget-object v0, p0, Lbf/a$a;->l:Lbf/a;
+    iget-object v0, p0, Lbf/a$a;->m:Lbf/a;
 
     .line 10
-    iget-object v0, v0, Lbf/a;->f:Lbf/d;
+    iget-object v0, v0, Lbf/a;->g:Lbf/d;
 
     .line 11
     invoke-virtual {v0}, Laf/o;->b()Ljava/lang/Object;
@@ -247,7 +247,7 @@
 
     move-object v3, v0
 
-    check-cast v3, Lbf/h;
+    check-cast v3, Lbf/g;
 
     if-eqz v3, :cond_3
 
@@ -255,7 +255,7 @@
 
     .line 12
     :cond_3
-    iget-object v0, p0, Lbf/a$a;->l:Lbf/a;
+    iget-object v0, p0, Lbf/a$a;->m:Lbf/a;
 
     .line 13
     iget-wide v3, v0, Lbf/a;->controlState:J
@@ -274,7 +274,7 @@
 
     .line 14
     :cond_4
-    iget v1, p0, Lbf/a$a;->k:I
+    iget v1, p0, Lbf/a$a;->l:I
 
     if-nez v1, :cond_5
 
@@ -295,13 +295,13 @@
 
     .line 16
     :goto_1
-    iput v2, p0, Lbf/a$a;->k:I
+    iput v2, p0, Lbf/a$a;->l:I
 
     .line 17
-    iget-object v0, p0, Lbf/a$a;->l:Lbf/a;
+    iget-object v0, p0, Lbf/a$a;->m:Lbf/a;
 
     .line 18
-    iget-object v1, v0, Lbf/a;->h:[Lbf/a$a;
+    iget-object v1, v0, Lbf/a;->i:[Lbf/a$a;
 
     .line 19
     aget-object v1, v1, v2
@@ -311,24 +311,24 @@
     if-eq v1, p0, :cond_7
 
     .line 20
-    iget-object v2, p0, Lbf/a$a;->f:Lbf/l;
+    iget-object v2, p0, Lbf/a$a;->g:Lbf/k;
 
-    iget-object v1, v1, Lbf/a$a;->f:Lbf/l;
+    iget-object v1, v1, Lbf/a$a;->g:Lbf/k;
 
     .line 21
-    iget-object v0, v0, Lbf/a;->f:Lbf/d;
+    iget-object v0, v0, Lbf/a;->g:Lbf/d;
 
     .line 22
-    invoke-virtual {v2, v1, v0}, Lbf/l;->f(Lbf/l;Lbf/d;)Z
+    invoke-virtual {v2, v1, v0}, Lbf/k;->f(Lbf/k;Lbf/d;)Z
 
     move-result v0
 
     if-eqz v0, :cond_7
 
     .line 23
-    iget-object v0, p0, Lbf/a$a;->f:Lbf/l;
+    iget-object v0, p0, Lbf/a$a;->g:Lbf/k;
 
-    invoke-virtual {v0}, Lbf/l;->d()Lbf/h;
+    invoke-virtual {v0}, Lbf/k;->d()Lbf/g;
 
     move-result-object v3
 
@@ -338,9 +338,9 @@
 
     .line 24
     :cond_8
-    iget-object v0, p0, Lbf/a$a;->f:Lbf/l;
+    iget-object v0, p0, Lbf/a$a;->g:Lbf/k;
 
-    invoke-virtual {v0}, Lbf/l;->d()Lbf/h;
+    invoke-virtual {v0}, Lbf/k;->d()Lbf/g;
 
     move-result-object v0
 
@@ -349,13 +349,13 @@
     goto :goto_3
 
     :cond_9
-    iget-object v0, p0, Lbf/a$a;->l:Lbf/a;
+    iget-object v0, p0, Lbf/a$a;->m:Lbf/a;
 
     .line 25
-    iget-object v0, v0, Lbf/a;->f:Lbf/d;
+    iget-object v0, v0, Lbf/a;->g:Lbf/d;
 
     .line 26
-    invoke-virtual {v0, v1}, Lbf/d;->c(I)Lbf/h;
+    invoke-virtual {v0, v1}, Lbf/d;->c(I)Lbf/g;
 
     move-result-object v0
 
@@ -391,10 +391,10 @@
     .locals 1
 
     .line 1
-    sget v0, Lbf/a;->t:I
+    sget v0, Lbf/a;->u:I
 
     .line 2
-    iput v0, p0, Lbf/a$a;->i:I
+    iput v0, p0, Lbf/a$a;->j:I
 
     const/4 v0, 0x0
 
@@ -405,26 +405,6 @@
 .end method
 
 .method public final g()Z
-    .locals 2
-
-    iget-object v0, p0, Lbf/a$a;->state:Lbf/a$b;
-
-    sget-object v1, Lbf/a$b;->g:Lbf/a$b;
-
-    if-ne v0, v1, :cond_0
-
-    const/4 v0, 0x1
-
-    goto :goto_0
-
-    :cond_0
-    const/4 v0, 0x0
-
-    :goto_0
-    return v0
-.end method
-
-.method public final h()Z
     .locals 2
 
     iget-object v0, p0, Lbf/a$a;->state:Lbf/a$b;
@@ -444,11 +424,31 @@
     return v0
 .end method
 
+.method public final h()Z
+    .locals 2
+
+    iget-object v0, p0, Lbf/a$a;->state:Lbf/a$b;
+
+    sget-object v1, Lbf/a$b;->i:Lbf/a$b;
+
+    if-ne v0, v1, :cond_0
+
+    const/4 v0, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    :goto_0
+    return v0
+.end method
+
 .method public final i(I)I
     .locals 3
 
     .line 1
-    iget v0, p0, Lbf/a$a;->j:I
+    iget v0, p0, Lbf/a$a;->k:I
 
     shl-int/lit8 v1, v0, 0xd
 
@@ -463,7 +463,7 @@
     xor-int/2addr v0, v1
 
     .line 2
-    iput v0, p0, Lbf/a$a;->j:I
+    iput v0, p0, Lbf/a$a;->k:I
 
     add-int/lit8 v1, p1, -0x1
 
@@ -494,10 +494,10 @@
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    iget-object v1, p0, Lbf/a$a;->l:Lbf/a;
+    iget-object v1, p0, Lbf/a$a;->m:Lbf/a;
 
     .line 2
-    iget-object v1, v1, Lbf/a;->m:Ljava/lang/String;
+    iget-object v1, v1, Lbf/a;->n:Ljava/lang/String;
 
     .line 3
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -546,7 +546,7 @@
     .line 1
     iget-object v0, p0, Lbf/a$a;->state:Lbf/a$b;
 
-    sget-object v1, Lbf/a$b;->f:Lbf/a$b;
+    sget-object v1, Lbf/a$b;->g:Lbf/a$b;
 
     const/4 v2, 0x1
 
@@ -556,10 +556,10 @@
 
     .line 2
     :cond_0
-    iget-object v0, p0, Lbf/a$a;->l:Lbf/a;
+    iget-object v0, p0, Lbf/a$a;->m:Lbf/a;
 
     .line 3
-    iget-object v0, v0, Lbf/a;->g:Ljava/util/concurrent/Semaphore;
+    iget-object v0, v0, Lbf/a;->h:Ljava/util/concurrent/Semaphore;
 
     .line 4
     invoke-virtual {v0}, Ljava/util/concurrent/Semaphore;->tryAcquire()Z
@@ -605,7 +605,7 @@
     if-nez v0, :cond_2
 
     .line 2
-    sget-object v0, Lbf/a$a;->m:Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;
+    sget-object v0, Lbf/a$a;->n:Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;
 
     invoke-virtual {v0, p0, v1, v2}, Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;->compareAndSet(Ljava/lang/Object;II)Z
 
@@ -641,7 +641,7 @@
     iget-object v0, p0, Lbf/a$a;->state:Lbf/a$b;
 
     .line 2
-    sget-object v1, Lbf/a$b;->f:Lbf/a$b;
+    sget-object v1, Lbf/a$b;->g:Lbf/a$b;
 
     if-ne v0, v1, :cond_0
 
@@ -656,10 +656,10 @@
     if-eqz v1, :cond_1
 
     .line 3
-    iget-object v2, p0, Lbf/a$a;->l:Lbf/a;
+    iget-object v2, p0, Lbf/a$a;->m:Lbf/a;
 
     .line 4
-    iget-object v2, v2, Lbf/a;->g:Ljava/util/concurrent/Semaphore;
+    iget-object v2, v2, Lbf/a;->h:Ljava/util/concurrent/Semaphore;
 
     .line 5
     invoke-virtual {v2}, Ljava/util/concurrent/Semaphore;->release()V
@@ -680,11 +680,11 @@
     move-object/from16 v1, p0
 
     .line 1
-    sget-object v0, Lbf/a$b;->g:Lbf/a$b;
+    sget-object v0, Lbf/a$b;->h:Lbf/a$b;
 
-    sget-object v2, Lbf/a$b;->j:Lbf/a$b;
+    sget-object v2, Lbf/a$b;->k:Lbf/a$b;
 
-    sget-object v3, Lbf/a$b;->h:Lbf/a$b;
+    sget-object v3, Lbf/a$b;->i:Lbf/a$b;
 
     const/4 v4, 0x0
 
@@ -692,7 +692,7 @@
 
     .line 2
     :goto_0
-    iget-object v6, v1, Lbf/a$a;->l:Lbf/a;
+    iget-object v6, v1, Lbf/a$a;->m:Lbf/a;
 
     invoke-static {v6}, Lbf/a;->a(Lbf/a;)Z
 
@@ -705,7 +705,7 @@
     if-eq v6, v2, :cond_18
 
     .line 3
-    invoke-virtual/range {p0 .. p0}, Lbf/a$a;->b()Lbf/h;
+    invoke-virtual/range {p0 .. p0}, Lbf/a$a;->b()Lbf/g;
 
     move-result-object v6
 
@@ -718,7 +718,7 @@
     .line 4
     iget-object v5, v1, Lbf/a$a;->state:Lbf/a$b;
 
-    sget-object v6, Lbf/a$b;->f:Lbf/a$b;
+    sget-object v6, Lbf/a$b;->g:Lbf/a$b;
 
     if-ne v5, v6, :cond_4
 
@@ -726,7 +726,7 @@
     iget v5, v1, Lbf/a$a;->spins:I
 
     .line 6
-    sget v6, Lbf/a;->r:I
+    sget v6, Lbf/a;->s:I
 
     if-gt v5, v6, :cond_0
 
@@ -736,7 +736,7 @@
     iput v6, v1, Lbf/a$a;->spins:I
 
     .line 8
-    sget v6, Lbf/a;->q:I
+    sget v6, Lbf/a;->r:I
 
     if-lt v5, v6, :cond_f
 
@@ -747,10 +747,10 @@
 
     .line 10
     :cond_0
-    iget v5, v1, Lbf/a$a;->i:I
+    iget v5, v1, Lbf/a$a;->j:I
 
     .line 11
-    sget v6, Lbf/a;->s:I
+    sget v6, Lbf/a;->t:I
 
     if-ge v5, v6, :cond_2
 
@@ -767,19 +767,19 @@
 
     .line 12
     :goto_1
-    iput v6, v1, Lbf/a$a;->i:I
+    iput v6, v1, Lbf/a$a;->j:I
 
     .line 13
     :cond_2
     invoke-virtual {v1, v3}, Lbf/a$a;->n(Lbf/a$b;)Z
 
     .line 14
-    iget v5, v1, Lbf/a$a;->i:I
+    iget v5, v1, Lbf/a$a;->j:I
 
     int-to-long v5, v5
 
     .line 15
-    iget-object v7, v1, Lbf/a$a;->l:Lbf/a;
+    iget-object v7, v1, Lbf/a$a;->m:Lbf/a;
 
     invoke-static {v7, v1}, Lbf/a;->b(Lbf/a;Lbf/a$a;)V
 
@@ -816,7 +816,7 @@
     iput v4, v1, Lbf/a$a;->terminationState:I
 
     .line 21
-    iget-wide v5, v1, Lbf/a$a;->g:J
+    iget-wide v5, v1, Lbf/a$a;->h:J
 
     cmp-long v10, v5, v7
 
@@ -826,22 +826,22 @@
 
     move-result-wide v5
 
-    iget-object v10, v1, Lbf/a$a;->l:Lbf/a;
+    iget-object v10, v1, Lbf/a$a;->m:Lbf/a;
 
     .line 22
-    iget-wide v10, v10, Lbf/a;->l:J
+    iget-wide v10, v10, Lbf/a;->m:J
 
     add-long/2addr v5, v10
 
     .line 23
-    iput-wide v5, v1, Lbf/a$a;->g:J
+    iput-wide v5, v1, Lbf/a$a;->h:J
 
     .line 24
     :cond_6
-    iget-object v5, v1, Lbf/a$a;->l:Lbf/a;
+    iget-object v5, v1, Lbf/a$a;->m:Lbf/a;
 
     .line 25
-    iget-wide v10, v5, Lbf/a;->l:J
+    iget-wide v10, v5, Lbf/a;->m:J
 
     .line 26
     invoke-static {v5, v1}, Lbf/a;->b(Lbf/a;Lbf/a$a;)V
@@ -874,7 +874,7 @@
 
     move-result-wide v5
 
-    iget-wide v10, v1, Lbf/a$a;->g:J
+    iget-wide v10, v1, Lbf/a$a;->h:J
 
     sub-long/2addr v5, v10
 
@@ -883,20 +883,20 @@
     if-ltz v10, :cond_f
 
     .line 30
-    iput-wide v7, v1, Lbf/a$a;->g:J
+    iput-wide v7, v1, Lbf/a$a;->h:J
 
     .line 31
-    iget-object v5, v1, Lbf/a$a;->l:Lbf/a;
+    iget-object v5, v1, Lbf/a$a;->m:Lbf/a;
 
     .line 32
-    iget-object v5, v5, Lbf/a;->h:[Lbf/a$a;
+    iget-object v5, v5, Lbf/a;->i:[Lbf/a$a;
 
     .line 33
     monitor-enter v5
 
     .line 34
     :try_start_0
-    iget-object v6, v1, Lbf/a$a;->l:Lbf/a;
+    iget-object v6, v1, Lbf/a$a;->m:Lbf/a;
 
     invoke-static {v6}, Lbf/a;->a(Lbf/a;)Z
 
@@ -913,7 +913,7 @@
     .line 35
     :cond_9
     :try_start_1
-    iget-object v6, v1, Lbf/a$a;->l:Lbf/a;
+    iget-object v6, v1, Lbf/a$a;->m:Lbf/a;
 
     .line 36
     iget-wide v6, v6, Lbf/a;->controlState:J
@@ -925,10 +925,10 @@
     long-to-int v7, v6
 
     .line 37
-    iget-object v6, v1, Lbf/a$a;->l:Lbf/a;
+    iget-object v6, v1, Lbf/a$a;->m:Lbf/a;
 
     .line 38
-    iget v6, v6, Lbf/a;->j:I
+    iget v6, v6, Lbf/a;->k:I
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
@@ -957,7 +957,7 @@
     .line 41
     :cond_b
     :try_start_3
-    sget-object v6, Lbf/a$a;->m:Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;
+    sget-object v6, Lbf/a$a;->n:Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;
 
     invoke-virtual {v6, v1, v4, v9}, Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;->compareAndSet(Ljava/lang/Object;II)Z
 
@@ -980,15 +980,15 @@
     invoke-virtual {v1, v4}, Lbf/a$a;->j(I)V
 
     .line 44
-    iget-object v7, v1, Lbf/a$a;->l:Lbf/a;
+    iget-object v7, v1, Lbf/a$a;->m:Lbf/a;
 
     invoke-static {v7, v1, v6, v4}, Lbf/a;->d(Lbf/a;Lbf/a$a;II)V
 
     .line 45
-    iget-object v7, v1, Lbf/a$a;->l:Lbf/a;
+    iget-object v7, v1, Lbf/a$a;->m:Lbf/a;
 
     .line 46
-    sget-object v8, Lbf/a;->o:Ljava/util/concurrent/atomic/AtomicLongFieldUpdater;
+    sget-object v8, Lbf/a;->p:Ljava/util/concurrent/atomic/AtomicLongFieldUpdater;
 
     invoke-virtual {v8, v7}, Ljava/util/concurrent/atomic/AtomicLongFieldUpdater;->getAndDecrement(Ljava/lang/Object;)J
 
@@ -1003,10 +1003,10 @@
     if-eq v8, v6, :cond_e
 
     .line 47
-    iget-object v10, v1, Lbf/a$a;->l:Lbf/a;
+    iget-object v10, v1, Lbf/a$a;->m:Lbf/a;
 
     .line 48
-    iget-object v10, v10, Lbf/a;->h:[Lbf/a$a;
+    iget-object v10, v10, Lbf/a;->i:[Lbf/a$a;
 
     .line 49
     aget-object v11, v10, v8
@@ -1020,7 +1020,7 @@
     invoke-virtual {v11, v6}, Lbf/a$a;->j(I)V
 
     .line 52
-    iget-object v10, v1, Lbf/a$a;->l:Lbf/a;
+    iget-object v10, v1, Lbf/a$a;->m:Lbf/a;
 
     invoke-static {v10, v11, v8, v6}, Lbf/a;->d(Lbf/a;Lbf/a$a;II)V
 
@@ -1028,17 +1028,17 @@
 
     .line 53
     :cond_d
-    invoke-static {}, Lt3/e;->f()V
+    invoke-static {}, Lt3/h;->j()V
 
     throw v7
 
     .line 54
     :cond_e
     :goto_3
-    iget-object v6, v1, Lbf/a$a;->l:Lbf/a;
+    iget-object v6, v1, Lbf/a$a;->m:Lbf/a;
 
     .line 55
-    iget-object v6, v6, Lbf/a;->h:[Lbf/a$a;
+    iget-object v6, v6, Lbf/a;->i:[Lbf/a$a;
 
     .line 56
     aput-object v7, v6, v8
@@ -1069,17 +1069,17 @@
 
     .line 60
     :cond_10
-    invoke-virtual {v6}, Lbf/h;->b()I
+    invoke-virtual {v6}, Lbf/g;->b()I
 
     move-result v10
 
     if-eqz v5, :cond_12
 
     .line 61
-    iput-wide v7, v1, Lbf/a$a;->g:J
+    iput-wide v7, v1, Lbf/a$a;->h:J
 
     .line 62
-    iput v4, v1, Lbf/a$a;->k:I
+    iput v4, v1, Lbf/a$a;->l:I
 
     .line 63
     iget-object v5, v1, Lbf/a$a;->state:Lbf/a$b;
@@ -1087,16 +1087,16 @@
     if-ne v5, v3, :cond_11
 
     .line 64
-    sget-boolean v5, Lze/b0;->a:Z
+    sget-boolean v5, Lze/c0;->a:Z
 
     .line 65
     iput-object v0, v1, Lbf/a$a;->state:Lbf/a$b;
 
     .line 66
-    sget v5, Lbf/a;->t:I
+    sget v5, Lbf/a;->u:I
 
     .line 67
-    iput v5, v1, Lbf/a$a;->i:I
+    iput v5, v1, Lbf/a$a;->j:I
 
     .line 68
     :cond_11
@@ -1106,15 +1106,15 @@
 
     .line 69
     :cond_12
-    iget-wide v7, v6, Lbf/h;->f:J
+    iget-wide v7, v6, Lbf/g;->g:J
 
     if-eq v10, v9, :cond_14
 
     .line 70
-    iget-object v7, v1, Lbf/a$a;->l:Lbf/a;
+    iget-object v7, v1, Lbf/a$a;->m:Lbf/a;
 
     .line 71
-    sget-object v8, Lbf/a;->o:Ljava/util/concurrent/atomic/AtomicLongFieldUpdater;
+    sget-object v8, Lbf/a;->p:Ljava/util/concurrent/atomic/AtomicLongFieldUpdater;
 
     const-wide/32 v11, 0x200000
 
@@ -1128,7 +1128,7 @@
     if-eqz v7, :cond_13
 
     .line 73
-    iget-object v7, v1, Lbf/a$a;->l:Lbf/a;
+    iget-object v7, v1, Lbf/a$a;->m:Lbf/a;
 
     .line 74
     invoke-virtual {v7}, Lbf/a;->k()V
@@ -1141,10 +1141,10 @@
 
     .line 75
     :cond_14
-    iget-object v11, v1, Lbf/a$a;->l:Lbf/a;
+    iget-object v11, v1, Lbf/a$a;->m:Lbf/a;
 
     .line 76
-    iget-object v11, v11, Lbf/a;->g:Ljava/util/concurrent/Semaphore;
+    iget-object v11, v11, Lbf/a;->h:Ljava/util/concurrent/Semaphore;
 
     .line 77
     invoke-virtual {v11}, Ljava/util/concurrent/Semaphore;->availablePermits()I
@@ -1157,7 +1157,7 @@
 
     .line 78
     :cond_15
-    sget-object v11, Lbf/k;->f:Lbf/f;
+    sget-object v11, Lbf/j;->f:Lbf/f;
 
     invoke-virtual {v11}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -1169,14 +1169,14 @@
     sub-long v7, v11, v7
 
     .line 80
-    sget-wide v13, Lbf/k;->a:J
+    sget-wide v13, Lbf/j;->a:J
 
     cmp-long v15, v7, v13
 
     if-ltz v15, :cond_13
 
     .line 81
-    iget-wide v7, v1, Lbf/a$a;->h:J
+    iget-wide v7, v1, Lbf/a$a;->i:J
 
     sub-long v7, v11, v7
 
@@ -1193,10 +1193,10 @@
     if-ltz v4, :cond_16
 
     .line 82
-    iput-wide v11, v1, Lbf/a$a;->h:J
+    iput-wide v11, v1, Lbf/a$a;->i:J
 
     .line 83
-    iget-object v4, v1, Lbf/a$a;->l:Lbf/a;
+    iget-object v4, v1, Lbf/a$a;->m:Lbf/a;
 
     .line 84
     invoke-virtual {v4}, Lbf/a;->k()V
@@ -1204,18 +1204,18 @@
     .line 85
     :cond_16
     :goto_6
-    iget-object v4, v1, Lbf/a$a;->l:Lbf/a;
+    iget-object v4, v1, Lbf/a$a;->m:Lbf/a;
 
     .line 86
-    invoke-virtual {v4, v6}, Lbf/a;->l(Lbf/h;)V
+    invoke-virtual {v4, v6}, Lbf/a;->l(Lbf/g;)V
 
     if-eq v10, v9, :cond_17
 
     .line 87
-    iget-object v4, v1, Lbf/a$a;->l:Lbf/a;
+    iget-object v4, v1, Lbf/a$a;->m:Lbf/a;
 
     .line 88
-    sget-object v5, Lbf/a;->o:Ljava/util/concurrent/atomic/AtomicLongFieldUpdater;
+    sget-object v5, Lbf/a;->p:Ljava/util/concurrent/atomic/AtomicLongFieldUpdater;
 
     const-wide/32 v6, -0x200000
 
@@ -1227,10 +1227,10 @@
     if-eq v4, v2, :cond_17
 
     .line 90
-    sget-boolean v4, Lze/b0;->a:Z
+    sget-boolean v4, Lze/c0;->a:Z
 
     .line 91
-    sget-object v4, Lbf/a$b;->i:Lbf/a$b;
+    sget-object v4, Lbf/a$b;->j:Lbf/a$b;
 
     iput-object v4, v1, Lbf/a$a;->state:Lbf/a$b;
 

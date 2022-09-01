@@ -38,7 +38,7 @@
     iget-object p1, p0, Lua/a;->a:Lua/d;
 
     .line 4
-    iget-object p1, p1, Lua/d;->g0:Landroid/widget/ProgressBar;
+    iget-object p1, p1, Lua/d;->h0:Landroid/widget/ProgressBar;
 
     const/4 v0, 0x0
 
@@ -51,7 +51,7 @@
     iget-object p1, p0, Lua/a;->a:Lua/d;
 
     .line 6
-    iget-object p1, p1, Lua/d;->g0:Landroid/widget/ProgressBar;
+    iget-object p1, p1, Lua/d;->h0:Landroid/widget/ProgressBar;
 
     const/16 v0, 0x8
 

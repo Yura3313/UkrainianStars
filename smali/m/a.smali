@@ -23,7 +23,7 @@
 
 
 # instance fields
-.field public m:Lm/a$a;
+.field public n:Lm/a$a;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lm/f<",
@@ -143,7 +143,7 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lm/a;->m:Lm/a$a;
+    iget-object v0, p0, Lm/a;->n:Lm/a$a;
 
     if-nez v0, :cond_0
 
@@ -152,11 +152,11 @@
 
     invoke-direct {v0, p0}, Lm/a$a;-><init>(Lm/a;)V
 
-    iput-object v0, p0, Lm/a;->m:Lm/a$a;
+    iput-object v0, p0, Lm/a;->n:Lm/a$a;
 
     .line 3
     :cond_0
-    iget-object v0, p0, Lm/a;->m:Lm/a$a;
+    iget-object v0, p0, Lm/a;->n:Lm/a$a;
 
     return-object v0
 .end method
@@ -172,7 +172,7 @@
     .end annotation
 
     .line 1
-    iget v0, p0, Lm/g;->h:I
+    iget v0, p0, Lm/g;->i:I
 
     invoke-interface {p1}, Ljava/util/Map;->size()I
 

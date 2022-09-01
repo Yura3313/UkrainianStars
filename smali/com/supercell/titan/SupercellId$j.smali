@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field public final synthetic f:Lcom/supercell/titan/SupercellId;
+.field public final synthetic g:Lcom/supercell/titan/SupercellId;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/titan/SupercellId;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/titan/SupercellId$j;->f:Lcom/supercell/titan/SupercellId;
+    iput-object p1, p0, Lcom/supercell/titan/SupercellId$j;->g:Lcom/supercell/titan/SupercellId;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -38,7 +38,7 @@
     .locals 3
 
     .line 1
-    iget-object v0, p0, Lcom/supercell/titan/SupercellId$j;->f:Lcom/supercell/titan/SupercellId;
+    iget-object v0, p0, Lcom/supercell/titan/SupercellId$j;->g:Lcom/supercell/titan/SupercellId;
 
     const-wide/16 v1, 0x0
 

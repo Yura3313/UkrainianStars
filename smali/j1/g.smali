@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field public f:Lk3/pb;
+.field public g:Lk3/pb;
 
-.field public g:Z
+.field public h:Z
 
 
 # direct methods
@@ -26,7 +26,7 @@
     iput-object p2, v0, Lk3/pb;->b:Ljava/lang/String;
 
     .line 5
-    iput-object v0, p0, Lj1/g;->f:Lk3/pb;
+    iput-object v0, p0, Lj1/g;->g:Lk3/pb;
 
     .line 6
     iput-object p3, v0, Lk3/pb;->d:Ljava/lang/String;
@@ -40,12 +40,12 @@
     .locals 1
 
     .line 1
-    iget-boolean v0, p0, Lj1/g;->g:Z
+    iget-boolean v0, p0, Lj1/g;->h:Z
 
     if-nez v0, :cond_0
 
     .line 2
-    iget-object v0, p0, Lj1/g;->f:Lk3/pb;
+    iget-object v0, p0, Lj1/g;->g:Lk3/pb;
 
     invoke-virtual {v0, p1}, Lk3/pb;->c(Landroid/view/MotionEvent;)V
 

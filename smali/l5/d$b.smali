@@ -114,7 +114,7 @@
     iget-object v3, v2, Lf5/o$a;->d:Ln5/f1;
 
     .line 7
-    sget-object v4, Ln5/f1;->i:Ln5/f1;
+    sget-object v4, Ln5/f1;->j:Ln5/f1;
 
     invoke-virtual {v3, v4}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
@@ -278,7 +278,7 @@
     iget-object v0, v0, Lf5/o$a;->d:Ln5/f1;
 
     .line 4
-    sget-object v1, Ln5/f1;->i:Ln5/f1;
+    sget-object v1, Ln5/f1;->j:Ln5/f1;
 
     invoke-virtual {v0, v1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 

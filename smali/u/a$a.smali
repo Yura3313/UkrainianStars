@@ -18,22 +18,22 @@
 
 
 # instance fields
-.field public final synthetic f:[Ljava/lang/String;
+.field public final synthetic g:[Ljava/lang/String;
 
-.field public final synthetic g:Landroid/app/Activity;
+.field public final synthetic h:Landroid/app/Activity;
 
-.field public final synthetic h:I
+.field public final synthetic i:I
 
 
 # direct methods
 .method public constructor <init>([Ljava/lang/String;Landroid/app/Activity;I)V
     .locals 0
 
-    iput-object p1, p0, Lu/a$a;->f:[Ljava/lang/String;
+    iput-object p1, p0, Lu/a$a;->g:[Ljava/lang/String;
 
-    iput-object p2, p0, Lu/a$a;->g:Landroid/app/Activity;
+    iput-object p2, p0, Lu/a$a;->h:Landroid/app/Activity;
 
-    iput p3, p0, Lu/a$a;->h:I
+    iput p3, p0, Lu/a$a;->i:I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -46,28 +46,28 @@
     .locals 6
 
     .line 1
-    iget-object v0, p0, Lu/a$a;->f:[Ljava/lang/String;
+    iget-object v0, p0, Lu/a$a;->g:[Ljava/lang/String;
 
     array-length v0, v0
 
     new-array v0, v0, [I
 
     .line 2
-    iget-object v1, p0, Lu/a$a;->g:Landroid/app/Activity;
+    iget-object v1, p0, Lu/a$a;->h:Landroid/app/Activity;
 
     invoke-virtual {v1}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object v1
 
     .line 3
-    iget-object v2, p0, Lu/a$a;->g:Landroid/app/Activity;
+    iget-object v2, p0, Lu/a$a;->h:Landroid/app/Activity;
 
     invoke-virtual {v2}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
 
     move-result-object v2
 
     .line 4
-    iget-object v3, p0, Lu/a$a;->f:[Ljava/lang/String;
+    iget-object v3, p0, Lu/a$a;->g:[Ljava/lang/String;
 
     array-length v3, v3
 
@@ -77,7 +77,7 @@
     if-ge v4, v3, :cond_0
 
     .line 5
-    iget-object v5, p0, Lu/a$a;->f:[Ljava/lang/String;
+    iget-object v5, p0, Lu/a$a;->g:[Ljava/lang/String;
 
     aget-object v5, v5, v4
 
@@ -93,13 +93,13 @@
 
     .line 6
     :cond_0
-    iget-object v1, p0, Lu/a$a;->g:Landroid/app/Activity;
+    iget-object v1, p0, Lu/a$a;->h:Landroid/app/Activity;
 
     check-cast v1, Lu/a$c;
 
-    iget v2, p0, Lu/a$a;->h:I
+    iget v2, p0, Lu/a$a;->i:I
 
-    iget-object v3, p0, Lu/a$a;->f:[Ljava/lang/String;
+    iget-object v3, p0, Lu/a$a;->g:[Ljava/lang/String;
 
     invoke-interface {v1, v2, v3, v0}, Lu/a$c;->onRequestPermissionsResult(I[Ljava/lang/String;[I)V
 

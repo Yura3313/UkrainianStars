@@ -161,7 +161,7 @@
     check-cast v0, Lqa/e1;
 
     .line 2
-    iget-object v0, v0, Landroidx/fragment/app/Fragment;->A:Landroidx/fragment/app/Fragment;
+    iget-object v0, v0, Landroidx/fragment/app/Fragment;->B:Landroidx/fragment/app/Fragment;
 
     .line 3
     check-cast v0, Lab/p;
@@ -221,12 +221,12 @@
     invoke-virtual {v3, v1}, Landroidx/fragment/app/Fragment;->D0(Landroid/os/Bundle;)V
 
     .line 8
-    iput-object p1, v3, Lab/l;->g0:Loa/e;
+    iput-object p1, v3, Lab/l;->h0:Loa/e;
 
     const-string p1, "HSSearchResultFragment"
 
     .line 9
-    invoke-static {v0, v2, v3, p1}, Lj1/q;->m(Landroidx/fragment/app/FragmentManager;ILandroidx/fragment/app/Fragment;Ljava/lang/String;)V
+    invoke-static {v0, v2, v3, p1}, Ls4/e;->q(Landroidx/fragment/app/FragmentManager;ILandroidx/fragment/app/Fragment;Ljava/lang/String;)V
 
     return-void
 .end method

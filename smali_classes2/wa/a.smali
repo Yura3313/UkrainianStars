@@ -12,7 +12,7 @@
 
 
 # static fields
-.field public static final synthetic h:I
+.field public static final synthetic i:I
 
 
 # direct methods

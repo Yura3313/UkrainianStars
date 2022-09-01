@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field public final synthetic f:Lmd/s;
+.field public final synthetic g:Lmd/s;
 
 
 # direct methods
 .method public constructor <init>(Lmd/s;)V
     .locals 0
 
-    iput-object p1, p0, Lmd/s$c;->f:Lmd/s;
+    iput-object p1, p0, Lmd/s$c;->g:Lmd/s;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -38,7 +38,7 @@
     .locals 8
 
     .line 1
-    iget-object p1, p0, Lmd/s$c;->f:Lmd/s;
+    iget-object p1, p0, Lmd/s$c;->g:Lmd/s;
 
     sget v0, Lcom/supercell/id/R$id;->okButton:I
 
@@ -50,14 +50,14 @@
 
     const-string v0, "okButton"
 
-    invoke-static {p1, v0}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/4 v0, 0x0
 
     invoke-virtual {p1, v0}, Landroid/view/View;->setEnabled(Z)V
 
     .line 2
-    iget-object p1, p0, Lmd/s$c;->f:Lmd/s;
+    iget-object p1, p0, Lmd/s$c;->g:Lmd/s;
 
     sget v1, Lcom/supercell/id/R$id;->cancelButton:I
 
@@ -69,12 +69,12 @@
 
     const-string v1, "cancelButton"
 
-    invoke-static {p1, v1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v1}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {p1, v0}, Landroid/view/View;->setEnabled(Z)V
 
     .line 3
-    iget-object v3, p0, Lmd/s$c;->f:Lmd/s;
+    iget-object v3, p0, Lmd/s$c;->g:Lmd/s;
 
     .line 4
     invoke-virtual {v3}, Lmd/u;->V0()Ljava/lang/String;
@@ -117,13 +117,13 @@
     if-nez v1, :cond_0
 
     .line 8
-    invoke-static {v3}, Lcom/android/billingclient/api/c0;->e(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
+    invoke-static {v3}, Lcom/android/billingclient/api/b0;->f(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
 
     move-result-object p1
 
     if-eqz p1, :cond_1
 
-    sget-object v0, Lcom/supercell/id/ui/MainActivity;->s:Ljava/lang/ref/WeakReference;
+    sget-object v0, Lcom/supercell/id/ui/MainActivity;->t:Ljava/lang/ref/WeakReference;
 
     const/4 v0, 0x0
 
@@ -150,7 +150,7 @@
 
     move-result v4
 
-    invoke-virtual {v1, p1, v0, v2, v4}, Lrc/a;->m(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)Lze/e0;
+    invoke-virtual {v1, p1, v0, v2, v4}, Lrc/a;->m(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)Lze/f0;
 
     move-result-object p1
 
@@ -159,7 +159,7 @@
     invoke-direct {v4, v2}, Lmd/q;-><init>(Ljava/lang/String;)V
 
     .line 13
-    sget-object v5, Lmd/r;->f:Lmd/r;
+    sget-object v5, Lmd/r;->g:Lmd/r;
 
     const/4 v6, 0x0
 
@@ -168,7 +168,7 @@
     move-object v2, p1
 
     .line 14
-    invoke-static/range {v2 .. v7}, Lae/u1;->k(Lze/e0;Ljava/lang/Object;Lre/p;Lre/p;Lre/l;I)Lze/e0;
+    invoke-static/range {v2 .. v7}, Lae/t1;->j(Lze/f0;Ljava/lang/Object;Lre/p;Lre/p;Lre/l;I)Lze/f0;
 
     :cond_1
     :goto_0

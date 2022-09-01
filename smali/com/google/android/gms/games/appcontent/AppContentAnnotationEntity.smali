@@ -25,11 +25,9 @@
 
 
 # instance fields
-.field public final f:Ljava/lang/String;
+.field public final g:Ljava/lang/String;
 
-.field public final g:Landroid/net/Uri;
-
-.field public final h:Ljava/lang/String;
+.field public final h:Landroid/net/Uri;
 
 .field public final i:Ljava/lang/String;
 
@@ -37,11 +35,13 @@
 
 .field public final k:Ljava/lang/String;
 
-.field public final l:I
+.field public final l:Ljava/lang/String;
 
 .field public final m:I
 
-.field public final n:Landroid/os/Bundle;
+.field public final n:I
+
+.field public final o:Landroid/os/Bundle;
 
 
 # direct methods
@@ -64,31 +64,31 @@
     invoke-direct {p0}, Lcom/google/android/gms/games/internal/zze;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lcom/google/android/gms/games/appcontent/AppContentAnnotationEntity;->f:Ljava/lang/String;
+    iput-object p1, p0, Lcom/google/android/gms/games/appcontent/AppContentAnnotationEntity;->g:Ljava/lang/String;
 
     .line 3
-    iput-object p4, p0, Lcom/google/android/gms/games/appcontent/AppContentAnnotationEntity;->i:Ljava/lang/String;
+    iput-object p4, p0, Lcom/google/android/gms/games/appcontent/AppContentAnnotationEntity;->j:Ljava/lang/String;
 
     .line 4
-    iput-object p6, p0, Lcom/google/android/gms/games/appcontent/AppContentAnnotationEntity;->k:Ljava/lang/String;
+    iput-object p6, p0, Lcom/google/android/gms/games/appcontent/AppContentAnnotationEntity;->l:Ljava/lang/String;
 
     .line 5
-    iput p7, p0, Lcom/google/android/gms/games/appcontent/AppContentAnnotationEntity;->l:I
+    iput p7, p0, Lcom/google/android/gms/games/appcontent/AppContentAnnotationEntity;->m:I
 
     .line 6
-    iput-object p2, p0, Lcom/google/android/gms/games/appcontent/AppContentAnnotationEntity;->g:Landroid/net/Uri;
+    iput-object p2, p0, Lcom/google/android/gms/games/appcontent/AppContentAnnotationEntity;->h:Landroid/net/Uri;
 
     .line 7
-    iput p8, p0, Lcom/google/android/gms/games/appcontent/AppContentAnnotationEntity;->m:I
+    iput p8, p0, Lcom/google/android/gms/games/appcontent/AppContentAnnotationEntity;->n:I
 
     .line 8
-    iput-object p5, p0, Lcom/google/android/gms/games/appcontent/AppContentAnnotationEntity;->j:Ljava/lang/String;
+    iput-object p5, p0, Lcom/google/android/gms/games/appcontent/AppContentAnnotationEntity;->k:Ljava/lang/String;
 
     .line 9
-    iput-object p9, p0, Lcom/google/android/gms/games/appcontent/AppContentAnnotationEntity;->n:Landroid/os/Bundle;
+    iput-object p9, p0, Lcom/google/android/gms/games/appcontent/AppContentAnnotationEntity;->o:Landroid/os/Bundle;
 
     .line 10
-    iput-object p3, p0, Lcom/google/android/gms/games/appcontent/AppContentAnnotationEntity;->h:Ljava/lang/String;
+    iput-object p3, p0, Lcom/google/android/gms/games/appcontent/AppContentAnnotationEntity;->i:Ljava/lang/String;
 
     return-void
 .end method
@@ -98,15 +98,15 @@
 .method public final E()Landroid/net/Uri;
     .locals 1
 
-    iget-object v0, p0, Lcom/google/android/gms/games/appcontent/AppContentAnnotationEntity;->g:Landroid/net/Uri;
+    iget-object v0, p0, Lcom/google/android/gms/games/appcontent/AppContentAnnotationEntity;->h:Landroid/net/Uri;
 
     return-object v0
 .end method
 
-.method public final O1()Landroid/os/Bundle;
+.method public final N1()Landroid/os/Bundle;
     .locals 1
 
-    iget-object v0, p0, Lcom/google/android/gms/games/appcontent/AppContentAnnotationEntity;->n:Landroid/os/Bundle;
+    iget-object v0, p0, Lcom/google/android/gms/games/appcontent/AppContentAnnotationEntity;->o:Landroid/os/Bundle;
 
     return-object v0
 .end method
@@ -135,7 +135,7 @@
     move-result-object v1
 
     .line 4
-    iget-object v2, p0, Lcom/google/android/gms/games/appcontent/AppContentAnnotationEntity;->f:Ljava/lang/String;
+    iget-object v2, p0, Lcom/google/android/gms/games/appcontent/AppContentAnnotationEntity;->g:Ljava/lang/String;
 
     .line 5
     invoke-static {v1, v2}, Ld2/f;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
@@ -150,7 +150,7 @@
     move-result-object v1
 
     .line 7
-    iget-object v2, p0, Lcom/google/android/gms/games/appcontent/AppContentAnnotationEntity;->i:Ljava/lang/String;
+    iget-object v2, p0, Lcom/google/android/gms/games/appcontent/AppContentAnnotationEntity;->j:Ljava/lang/String;
 
     .line 8
     invoke-static {v1, v2}, Ld2/f;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
@@ -165,7 +165,7 @@
     move-result-object v1
 
     .line 10
-    iget-object v2, p0, Lcom/google/android/gms/games/appcontent/AppContentAnnotationEntity;->k:Ljava/lang/String;
+    iget-object v2, p0, Lcom/google/android/gms/games/appcontent/AppContentAnnotationEntity;->l:Ljava/lang/String;
 
     .line 11
     invoke-static {v1, v2}, Ld2/f;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
@@ -184,7 +184,7 @@
     move-result-object v1
 
     .line 13
-    iget v2, p0, Lcom/google/android/gms/games/appcontent/AppContentAnnotationEntity;->l:I
+    iget v2, p0, Lcom/google/android/gms/games/appcontent/AppContentAnnotationEntity;->m:I
 
     .line 14
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -203,7 +203,7 @@
     move-result-object v1
 
     .line 16
-    iget-object v2, p0, Lcom/google/android/gms/games/appcontent/AppContentAnnotationEntity;->g:Landroid/net/Uri;
+    iget-object v2, p0, Lcom/google/android/gms/games/appcontent/AppContentAnnotationEntity;->h:Landroid/net/Uri;
 
     .line 17
     invoke-static {v1, v2}, Ld2/f;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
@@ -222,7 +222,7 @@
     move-result-object v1
 
     .line 19
-    iget v2, p0, Lcom/google/android/gms/games/appcontent/AppContentAnnotationEntity;->m:I
+    iget v2, p0, Lcom/google/android/gms/games/appcontent/AppContentAnnotationEntity;->n:I
 
     .line 20
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -241,7 +241,7 @@
     move-result-object v1
 
     .line 22
-    iget-object v2, p0, Lcom/google/android/gms/games/appcontent/AppContentAnnotationEntity;->j:Ljava/lang/String;
+    iget-object v2, p0, Lcom/google/android/gms/games/appcontent/AppContentAnnotationEntity;->k:Ljava/lang/String;
 
     .line 23
     invoke-static {v1, v2}, Ld2/f;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
@@ -251,15 +251,15 @@
     if-eqz v1, :cond_1
 
     .line 24
-    invoke-interface {p1}, Lcom/google/android/gms/games/appcontent/zzc;->O1()Landroid/os/Bundle;
+    invoke-interface {p1}, Lcom/google/android/gms/games/appcontent/zzc;->N1()Landroid/os/Bundle;
 
     move-result-object v1
 
     .line 25
-    iget-object v2, p0, Lcom/google/android/gms/games/appcontent/AppContentAnnotationEntity;->n:Landroid/os/Bundle;
+    iget-object v2, p0, Lcom/google/android/gms/games/appcontent/AppContentAnnotationEntity;->o:Landroid/os/Bundle;
 
     .line 26
-    invoke-static {v1, v2}, Lk/c;->b(Landroid/os/Bundle;Landroid/os/Bundle;)Z
+    invoke-static {v1, v2}, Le1/c;->b(Landroid/os/Bundle;Landroid/os/Bundle;)Z
 
     move-result v1
 
@@ -271,7 +271,7 @@
     move-result-object p1
 
     .line 28
-    iget-object v1, p0, Lcom/google/android/gms/games/appcontent/AppContentAnnotationEntity;->h:Ljava/lang/String;
+    iget-object v1, p0, Lcom/google/android/gms/games/appcontent/AppContentAnnotationEntity;->i:Ljava/lang/String;
 
     .line 29
     invoke-static {p1, v1}, Ld2/f;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
@@ -291,7 +291,7 @@
 .method public final getDescription()Ljava/lang/String;
     .locals 1
 
-    iget-object v0, p0, Lcom/google/android/gms/games/appcontent/AppContentAnnotationEntity;->f:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/android/gms/games/appcontent/AppContentAnnotationEntity;->g:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -299,7 +299,7 @@
 .method public final getId()Ljava/lang/String;
     .locals 1
 
-    iget-object v0, p0, Lcom/google/android/gms/games/appcontent/AppContentAnnotationEntity;->i:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/android/gms/games/appcontent/AppContentAnnotationEntity;->j:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -307,7 +307,7 @@
 .method public final getTitle()Ljava/lang/String;
     .locals 1
 
-    iget-object v0, p0, Lcom/google/android/gms/games/appcontent/AppContentAnnotationEntity;->h:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/android/gms/games/appcontent/AppContentAnnotationEntity;->i:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -320,7 +320,7 @@
     new-array v0, v0, [Ljava/lang/Object;
 
     .line 1
-    iget-object v1, p0, Lcom/google/android/gms/games/appcontent/AppContentAnnotationEntity;->f:Ljava/lang/String;
+    iget-object v1, p0, Lcom/google/android/gms/games/appcontent/AppContentAnnotationEntity;->g:Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -329,21 +329,21 @@
     const/4 v1, 0x1
 
     .line 2
-    iget-object v2, p0, Lcom/google/android/gms/games/appcontent/AppContentAnnotationEntity;->i:Ljava/lang/String;
+    iget-object v2, p0, Lcom/google/android/gms/games/appcontent/AppContentAnnotationEntity;->j:Ljava/lang/String;
 
     aput-object v2, v0, v1
 
     const/4 v1, 0x2
 
     .line 3
-    iget-object v2, p0, Lcom/google/android/gms/games/appcontent/AppContentAnnotationEntity;->k:Ljava/lang/String;
+    iget-object v2, p0, Lcom/google/android/gms/games/appcontent/AppContentAnnotationEntity;->l:Ljava/lang/String;
 
     aput-object v2, v0, v1
 
     const/4 v1, 0x3
 
     .line 4
-    iget v2, p0, Lcom/google/android/gms/games/appcontent/AppContentAnnotationEntity;->l:I
+    iget v2, p0, Lcom/google/android/gms/games/appcontent/AppContentAnnotationEntity;->m:I
 
     .line 5
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -355,14 +355,14 @@
     const/4 v1, 0x4
 
     .line 6
-    iget-object v2, p0, Lcom/google/android/gms/games/appcontent/AppContentAnnotationEntity;->g:Landroid/net/Uri;
+    iget-object v2, p0, Lcom/google/android/gms/games/appcontent/AppContentAnnotationEntity;->h:Landroid/net/Uri;
 
     aput-object v2, v0, v1
 
     const/4 v1, 0x5
 
     .line 7
-    iget v2, p0, Lcom/google/android/gms/games/appcontent/AppContentAnnotationEntity;->m:I
+    iget v2, p0, Lcom/google/android/gms/games/appcontent/AppContentAnnotationEntity;->n:I
 
     .line 8
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -374,17 +374,17 @@
     const/4 v1, 0x6
 
     .line 9
-    iget-object v2, p0, Lcom/google/android/gms/games/appcontent/AppContentAnnotationEntity;->j:Ljava/lang/String;
+    iget-object v2, p0, Lcom/google/android/gms/games/appcontent/AppContentAnnotationEntity;->k:Ljava/lang/String;
 
     aput-object v2, v0, v1
 
     const/4 v1, 0x7
 
     .line 10
-    iget-object v2, p0, Lcom/google/android/gms/games/appcontent/AppContentAnnotationEntity;->n:Landroid/os/Bundle;
+    iget-object v2, p0, Lcom/google/android/gms/games/appcontent/AppContentAnnotationEntity;->o:Landroid/os/Bundle;
 
     .line 11
-    invoke-static {v2}, Lk/c;->a(Landroid/os/Bundle;)I
+    invoke-static {v2}, Le1/c;->a(Landroid/os/Bundle;)I
 
     move-result v2
 
@@ -397,7 +397,7 @@
     const/16 v1, 0x8
 
     .line 12
-    iget-object v2, p0, Lcom/google/android/gms/games/appcontent/AppContentAnnotationEntity;->h:Ljava/lang/String;
+    iget-object v2, p0, Lcom/google/android/gms/games/appcontent/AppContentAnnotationEntity;->i:Ljava/lang/String;
 
     aput-object v2, v0, v1
 
@@ -412,7 +412,7 @@
 .method public final i2()I
     .locals 1
 
-    iget v0, p0, Lcom/google/android/gms/games/appcontent/AppContentAnnotationEntity;->l:I
+    iget v0, p0, Lcom/google/android/gms/games/appcontent/AppContentAnnotationEntity;->m:I
 
     return v0
 .end method
@@ -420,7 +420,7 @@
 .method public final k1()Ljava/lang/String;
     .locals 1
 
-    iget-object v0, p0, Lcom/google/android/gms/games/appcontent/AppContentAnnotationEntity;->j:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/android/gms/games/appcontent/AppContentAnnotationEntity;->k:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -428,7 +428,7 @@
 .method public final l2()I
     .locals 1
 
-    iget v0, p0, Lcom/google/android/gms/games/appcontent/AppContentAnnotationEntity;->m:I
+    iget v0, p0, Lcom/google/android/gms/games/appcontent/AppContentAnnotationEntity;->n:I
 
     return v0
 .end method
@@ -436,7 +436,7 @@
 .method public final s()Ljava/lang/String;
     .locals 1
 
-    iget-object v0, p0, Lcom/google/android/gms/games/appcontent/AppContentAnnotationEntity;->k:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/android/gms/games/appcontent/AppContentAnnotationEntity;->l:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -450,7 +450,7 @@
     invoke-direct {v0, p0}, Ld2/f$a;-><init>(Ljava/lang/Object;)V
 
     .line 2
-    iget-object v1, p0, Lcom/google/android/gms/games/appcontent/AppContentAnnotationEntity;->f:Ljava/lang/String;
+    iget-object v1, p0, Lcom/google/android/gms/games/appcontent/AppContentAnnotationEntity;->g:Ljava/lang/String;
 
     const-string v2, "Description"
 
@@ -458,7 +458,7 @@
     invoke-virtual {v0, v2, v1}, Ld2/f$a;->a(Ljava/lang/String;Ljava/lang/Object;)Ld2/f$a;
 
     .line 4
-    iget-object v1, p0, Lcom/google/android/gms/games/appcontent/AppContentAnnotationEntity;->i:Ljava/lang/String;
+    iget-object v1, p0, Lcom/google/android/gms/games/appcontent/AppContentAnnotationEntity;->j:Ljava/lang/String;
 
     const-string v2, "Id"
 
@@ -466,7 +466,7 @@
     invoke-virtual {v0, v2, v1}, Ld2/f$a;->a(Ljava/lang/String;Ljava/lang/Object;)Ld2/f$a;
 
     .line 6
-    iget-object v1, p0, Lcom/google/android/gms/games/appcontent/AppContentAnnotationEntity;->k:Ljava/lang/String;
+    iget-object v1, p0, Lcom/google/android/gms/games/appcontent/AppContentAnnotationEntity;->l:Ljava/lang/String;
 
     const-string v2, "ImageDefaultId"
 
@@ -474,7 +474,7 @@
     invoke-virtual {v0, v2, v1}, Ld2/f$a;->a(Ljava/lang/String;Ljava/lang/Object;)Ld2/f$a;
 
     .line 8
-    iget v1, p0, Lcom/google/android/gms/games/appcontent/AppContentAnnotationEntity;->l:I
+    iget v1, p0, Lcom/google/android/gms/games/appcontent/AppContentAnnotationEntity;->m:I
 
     .line 9
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -486,7 +486,7 @@
     invoke-virtual {v0, v2, v1}, Ld2/f$a;->a(Ljava/lang/String;Ljava/lang/Object;)Ld2/f$a;
 
     .line 10
-    iget-object v1, p0, Lcom/google/android/gms/games/appcontent/AppContentAnnotationEntity;->g:Landroid/net/Uri;
+    iget-object v1, p0, Lcom/google/android/gms/games/appcontent/AppContentAnnotationEntity;->h:Landroid/net/Uri;
 
     const-string v2, "ImageUri"
 
@@ -494,7 +494,7 @@
     invoke-virtual {v0, v2, v1}, Ld2/f$a;->a(Ljava/lang/String;Ljava/lang/Object;)Ld2/f$a;
 
     .line 12
-    iget v1, p0, Lcom/google/android/gms/games/appcontent/AppContentAnnotationEntity;->m:I
+    iget v1, p0, Lcom/google/android/gms/games/appcontent/AppContentAnnotationEntity;->n:I
 
     .line 13
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -506,7 +506,7 @@
     invoke-virtual {v0, v2, v1}, Ld2/f$a;->a(Ljava/lang/String;Ljava/lang/Object;)Ld2/f$a;
 
     .line 14
-    iget-object v1, p0, Lcom/google/android/gms/games/appcontent/AppContentAnnotationEntity;->j:Ljava/lang/String;
+    iget-object v1, p0, Lcom/google/android/gms/games/appcontent/AppContentAnnotationEntity;->k:Ljava/lang/String;
 
     const-string v2, "LayoutSlot"
 
@@ -514,7 +514,7 @@
     invoke-virtual {v0, v2, v1}, Ld2/f$a;->a(Ljava/lang/String;Ljava/lang/Object;)Ld2/f$a;
 
     .line 16
-    iget-object v1, p0, Lcom/google/android/gms/games/appcontent/AppContentAnnotationEntity;->n:Landroid/os/Bundle;
+    iget-object v1, p0, Lcom/google/android/gms/games/appcontent/AppContentAnnotationEntity;->o:Landroid/os/Bundle;
 
     const-string v2, "Modifiers"
 
@@ -522,7 +522,7 @@
     invoke-virtual {v0, v2, v1}, Ld2/f$a;->a(Ljava/lang/String;Ljava/lang/Object;)Ld2/f$a;
 
     .line 18
-    iget-object v1, p0, Lcom/google/android/gms/games/appcontent/AppContentAnnotationEntity;->h:Ljava/lang/String;
+    iget-object v1, p0, Lcom/google/android/gms/games/appcontent/AppContentAnnotationEntity;->i:Ljava/lang/String;
 
     const-string v2, "Title"
 
@@ -548,7 +548,7 @@
     move-result v0
 
     .line 2
-    iget-object v1, p0, Lcom/google/android/gms/games/appcontent/AppContentAnnotationEntity;->f:Ljava/lang/String;
+    iget-object v1, p0, Lcom/google/android/gms/games/appcontent/AppContentAnnotationEntity;->g:Ljava/lang/String;
 
     const/4 v2, 0x1
 
@@ -558,7 +558,7 @@
     invoke-static {p1, v2, v1, v3}, Le2/b;->m(Landroid/os/Parcel;ILjava/lang/String;Z)V
 
     .line 4
-    iget-object v1, p0, Lcom/google/android/gms/games/appcontent/AppContentAnnotationEntity;->g:Landroid/net/Uri;
+    iget-object v1, p0, Lcom/google/android/gms/games/appcontent/AppContentAnnotationEntity;->h:Landroid/net/Uri;
 
     const/4 v2, 0x2
 
@@ -566,7 +566,7 @@
     invoke-static {p1, v2, v1, p2, v3}, Le2/b;->l(Landroid/os/Parcel;ILandroid/os/Parcelable;IZ)V
 
     .line 6
-    iget-object p2, p0, Lcom/google/android/gms/games/appcontent/AppContentAnnotationEntity;->h:Ljava/lang/String;
+    iget-object p2, p0, Lcom/google/android/gms/games/appcontent/AppContentAnnotationEntity;->i:Ljava/lang/String;
 
     const/4 v1, 0x3
 
@@ -574,7 +574,7 @@
     invoke-static {p1, v1, p2, v3}, Le2/b;->m(Landroid/os/Parcel;ILjava/lang/String;Z)V
 
     .line 8
-    iget-object p2, p0, Lcom/google/android/gms/games/appcontent/AppContentAnnotationEntity;->i:Ljava/lang/String;
+    iget-object p2, p0, Lcom/google/android/gms/games/appcontent/AppContentAnnotationEntity;->j:Ljava/lang/String;
 
     const/4 v1, 0x5
 
@@ -582,7 +582,7 @@
     invoke-static {p1, v1, p2, v3}, Le2/b;->m(Landroid/os/Parcel;ILjava/lang/String;Z)V
 
     .line 10
-    iget-object p2, p0, Lcom/google/android/gms/games/appcontent/AppContentAnnotationEntity;->j:Ljava/lang/String;
+    iget-object p2, p0, Lcom/google/android/gms/games/appcontent/AppContentAnnotationEntity;->k:Ljava/lang/String;
 
     const/4 v1, 0x6
 
@@ -590,7 +590,7 @@
     invoke-static {p1, v1, p2, v3}, Le2/b;->m(Landroid/os/Parcel;ILjava/lang/String;Z)V
 
     .line 12
-    iget-object p2, p0, Lcom/google/android/gms/games/appcontent/AppContentAnnotationEntity;->k:Ljava/lang/String;
+    iget-object p2, p0, Lcom/google/android/gms/games/appcontent/AppContentAnnotationEntity;->l:Ljava/lang/String;
 
     const/4 v1, 0x7
 
@@ -598,7 +598,7 @@
     invoke-static {p1, v1, p2, v3}, Le2/b;->m(Landroid/os/Parcel;ILjava/lang/String;Z)V
 
     .line 14
-    iget p2, p0, Lcom/google/android/gms/games/appcontent/AppContentAnnotationEntity;->l:I
+    iget p2, p0, Lcom/google/android/gms/games/appcontent/AppContentAnnotationEntity;->m:I
 
     const/16 v1, 0x8
 
@@ -611,7 +611,7 @@
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 17
-    iget p2, p0, Lcom/google/android/gms/games/appcontent/AppContentAnnotationEntity;->m:I
+    iget p2, p0, Lcom/google/android/gms/games/appcontent/AppContentAnnotationEntity;->n:I
 
     const/16 v1, 0x9
 
@@ -622,7 +622,7 @@
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 20
-    iget-object p2, p0, Lcom/google/android/gms/games/appcontent/AppContentAnnotationEntity;->n:Landroid/os/Bundle;
+    iget-object p2, p0, Lcom/google/android/gms/games/appcontent/AppContentAnnotationEntity;->o:Landroid/os/Bundle;
 
     const/16 v1, 0xa
 

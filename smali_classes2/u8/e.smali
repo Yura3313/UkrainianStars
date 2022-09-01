@@ -14,8 +14,6 @@
 
 
 # static fields
-.field public static final enum g:Lu8/e;
-
 .field public static final enum h:Lu8/e;
 
 .field public static final enum i:Lu8/e;
@@ -44,7 +42,9 @@
 
 .field public static final enum u:Lu8/e;
 
-.field public static final v:Ljava/util/HashMap;
+.field public static final enum v:Lu8/e;
+
+.field public static final w:Ljava/util/HashMap;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Map<",
@@ -55,11 +55,11 @@
     .end annotation
 .end field
 
-.field public static final synthetic w:[Lu8/e;
+.field public static final synthetic x:[Lu8/e;
 
 
 # instance fields
-.field public final f:I
+.field public final g:I
 
 
 # direct methods
@@ -75,7 +75,7 @@
 
     invoke-direct {v0, v1, v2, v2}, Lu8/e;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lu8/e;->g:Lu8/e;
+    sput-object v0, Lu8/e;->h:Lu8/e;
 
     .line 2
     new-instance v1, Lu8/e;
@@ -86,7 +86,7 @@
 
     invoke-direct {v1, v3, v4, v4}, Lu8/e;-><init>(Ljava/lang/String;II)V
 
-    sput-object v1, Lu8/e;->h:Lu8/e;
+    sput-object v1, Lu8/e;->i:Lu8/e;
 
     .line 3
     new-instance v3, Lu8/e;
@@ -97,7 +97,7 @@
 
     invoke-direct {v3, v5, v6, v6}, Lu8/e;-><init>(Ljava/lang/String;II)V
 
-    sput-object v3, Lu8/e;->i:Lu8/e;
+    sput-object v3, Lu8/e;->j:Lu8/e;
 
     .line 4
     new-instance v5, Lu8/e;
@@ -108,7 +108,7 @@
 
     invoke-direct {v5, v7, v8, v8}, Lu8/e;-><init>(Ljava/lang/String;II)V
 
-    sput-object v5, Lu8/e;->j:Lu8/e;
+    sput-object v5, Lu8/e;->k:Lu8/e;
 
     .line 5
     new-instance v7, Lu8/e;
@@ -119,7 +119,7 @@
 
     invoke-direct {v7, v9, v10, v10}, Lu8/e;-><init>(Ljava/lang/String;II)V
 
-    sput-object v7, Lu8/e;->k:Lu8/e;
+    sput-object v7, Lu8/e;->l:Lu8/e;
 
     .line 6
     new-instance v9, Lu8/e;
@@ -130,7 +130,7 @@
 
     invoke-direct {v9, v11, v12, v12}, Lu8/e;-><init>(Ljava/lang/String;II)V
 
-    sput-object v9, Lu8/e;->l:Lu8/e;
+    sput-object v9, Lu8/e;->m:Lu8/e;
 
     .line 7
     new-instance v11, Lu8/e;
@@ -141,7 +141,7 @@
 
     invoke-direct {v11, v13, v14, v14}, Lu8/e;-><init>(Ljava/lang/String;II)V
 
-    sput-object v11, Lu8/e;->m:Lu8/e;
+    sput-object v11, Lu8/e;->n:Lu8/e;
 
     .line 8
     new-instance v13, Lu8/e;
@@ -152,7 +152,7 @@
 
     invoke-direct {v13, v15, v14, v14}, Lu8/e;-><init>(Ljava/lang/String;II)V
 
-    sput-object v13, Lu8/e;->n:Lu8/e;
+    sput-object v13, Lu8/e;->o:Lu8/e;
 
     .line 9
     new-instance v15, Lu8/e;
@@ -165,7 +165,7 @@
 
     invoke-direct {v15, v14, v12, v10}, Lu8/e;-><init>(Ljava/lang/String;II)V
 
-    sput-object v15, Lu8/e;->o:Lu8/e;
+    sput-object v15, Lu8/e;->p:Lu8/e;
 
     .line 10
     new-instance v10, Lu8/e;
@@ -178,7 +178,7 @@
 
     invoke-direct {v10, v14, v12, v8}, Lu8/e;-><init>(Ljava/lang/String;II)V
 
-    sput-object v10, Lu8/e;->p:Lu8/e;
+    sput-object v10, Lu8/e;->q:Lu8/e;
 
     .line 11
     new-instance v8, Lu8/e;
@@ -191,7 +191,7 @@
 
     invoke-direct {v8, v14, v12, v6}, Lu8/e;-><init>(Ljava/lang/String;II)V
 
-    sput-object v8, Lu8/e;->q:Lu8/e;
+    sput-object v8, Lu8/e;->r:Lu8/e;
 
     .line 12
     new-instance v6, Lu8/e;
@@ -204,7 +204,7 @@
 
     invoke-direct {v6, v14, v12, v4}, Lu8/e;-><init>(Ljava/lang/String;II)V
 
-    sput-object v6, Lu8/e;->r:Lu8/e;
+    sput-object v6, Lu8/e;->s:Lu8/e;
 
     .line 13
     new-instance v4, Lu8/e;
@@ -217,7 +217,7 @@
 
     invoke-direct {v4, v14, v12, v2}, Lu8/e;-><init>(Ljava/lang/String;II)V
 
-    sput-object v4, Lu8/e;->s:Lu8/e;
+    sput-object v4, Lu8/e;->t:Lu8/e;
 
     .line 14
     new-instance v2, Lu8/e;
@@ -232,7 +232,7 @@
 
     invoke-direct {v2, v14, v12, v4}, Lu8/e;-><init>(Ljava/lang/String;II)V
 
-    sput-object v2, Lu8/e;->t:Lu8/e;
+    sput-object v2, Lu8/e;->u:Lu8/e;
 
     .line 15
     new-instance v4, Lu8/e;
@@ -247,7 +247,7 @@
 
     invoke-direct {v4, v14, v12, v2}, Lu8/e;-><init>(Ljava/lang/String;II)V
 
-    sput-object v4, Lu8/e;->u:Lu8/e;
+    sput-object v4, Lu8/e;->v:Lu8/e;
 
     const/16 v2, 0xf
 
@@ -312,14 +312,14 @@
     aput-object v4, v2, v12
 
     .line 16
-    sput-object v2, Lu8/e;->w:[Lu8/e;
+    sput-object v2, Lu8/e;->x:[Lu8/e;
 
     .line 17
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    sput-object v0, Lu8/e;->v:Ljava/util/HashMap;
+    sput-object v0, Lu8/e;->w:Ljava/util/HashMap;
 
     return-void
 .end method
@@ -336,7 +336,7 @@
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 2
-    iput p3, p0, Lu8/e;->f:I
+    iput p3, p0, Lu8/e;->g:I
 
     return-void
 .end method
@@ -345,7 +345,7 @@
     .locals 6
 
     .line 1
-    sget-object v0, Lu8/e;->v:Ljava/util/HashMap;
+    sget-object v0, Lu8/e;->w:Ljava/util/HashMap;
 
     invoke-virtual {v0}, Ljava/util/HashMap;->size()I
 
@@ -368,9 +368,9 @@
     aget-object v3, v0, v2
 
     .line 3
-    sget-object v4, Lu8/e;->v:Ljava/util/HashMap;
+    sget-object v4, Lu8/e;->w:Ljava/util/HashMap;
 
-    iget v5, v3, Lu8/e;->f:I
+    iget v5, v3, Lu8/e;->g:I
 
     invoke-static {v5}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -384,7 +384,7 @@
 
     .line 4
     :cond_0
-    sget-object v0, Lu8/e;->v:Ljava/util/HashMap;
+    sget-object v0, Lu8/e;->w:Ljava/util/HashMap;
 
     invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -399,7 +399,7 @@
     if-nez p0, :cond_1
 
     .line 5
-    sget-object p0, Lu8/e;->u:Lu8/e;
+    sget-object p0, Lu8/e;->v:Lu8/e;
 
     :cond_1
     return-object p0
@@ -422,7 +422,7 @@
 .method public static values()[Lu8/e;
     .locals 1
 
-    sget-object v0, Lu8/e;->w:[Lu8/e;
+    sget-object v0, Lu8/e;->x:[Lu8/e;
 
     invoke-virtual {v0}, [Lu8/e;->clone()Ljava/lang/Object;
 

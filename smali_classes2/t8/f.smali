@@ -82,10 +82,10 @@
     const/4 v2, 0x0
 
     .line 2
-    invoke-static {v1, v0, v2, v2}, Landroidx/savedstate/d;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v1, v0, v2, v2}, Le5/i;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
 
     .line 3
-    sget-object v0, Li7/g;->h:Li7/g;
+    sget-object v0, Li7/g;->i:Li7/g;
 
     if-ne p1, v0, :cond_0
 
@@ -138,7 +138,7 @@
     .line 3
     :cond_2
     :goto_0
-    sget-object v1, Li7/g;->h:Li7/g;
+    sget-object v1, Li7/g;->i:Li7/g;
 
     if-eq v0, v1, :cond_3
 
@@ -154,15 +154,15 @@
 
     move-result-object v0
 
-    check-cast v0, Lk3/v8;
+    check-cast v0, Lk3/w8;
 
     const-string v1, "/config/"
 
-    invoke-virtual {v0, v1}, Lk3/v8;->d(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v0, v1}, Lk3/w8;->d(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
-    invoke-static {v0}, Lcom/google/android/play/core/appupdate/g;->b(Ljava/lang/String;)Z
+    invoke-static {v0}, La5/b0;->d(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -206,7 +206,7 @@
     const/4 v2, 0x0
 
     .line 3
-    invoke-static {v1, v0, v2, v2}, Landroidx/savedstate/d;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v1, v0, v2, v2}, Le5/i;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
 
     .line 4
     iget-object v0, p0, Lt8/f;->d:Lf9/f;
@@ -234,7 +234,7 @@
     const-string v2, "Handling user setup complete."
 
     .line 1
-    invoke-static {v1, v2, v0, v0}, Landroidx/savedstate/d;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v1, v2, v0, v0}, Le5/i;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
 
     .line 2
     iget-object v0, p0, Lt8/f;->c:Le8/s;
@@ -245,15 +245,15 @@
 
     move-result-object v0
 
-    check-cast v0, Lk3/v8;
+    check-cast v0, Lk3/w8;
 
     const-string v1, "/config/"
 
-    invoke-virtual {v0, v1}, Lk3/v8;->d(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v0, v1}, Lk3/w8;->d(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
-    invoke-static {v0}, Lcom/google/android/play/core/appupdate/g;->b(Ljava/lang/String;)Z
+    invoke-static {v0}, La5/b0;->d(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -289,10 +289,10 @@
     const/4 v1, 0x0
 
     .line 2
-    invoke-static {p1, v0, v1, v1}, Landroidx/savedstate/d;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {p1, v0, v1, v1}, Le5/i;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
 
     .line 3
-    sget-object p1, Li7/g;->h:Li7/g;
+    sget-object p1, Li7/g;->i:Li7/g;
 
     iget-object v0, p0, Lt8/f;->a:Li7/f;
 

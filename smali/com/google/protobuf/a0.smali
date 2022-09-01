@@ -118,7 +118,7 @@
     check-cast p0, Lcom/google/protobuf/GeneratedMessageLite$a;
 
     .line 3
-    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$a;->f:Lcom/google/protobuf/GeneratedMessageLite;
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$a;->g:Lcom/google/protobuf/GeneratedMessageLite;
 
     .line 4
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;

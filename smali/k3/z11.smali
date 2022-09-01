@@ -2,221 +2,158 @@
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
+# interfaces
+.implements Lk3/s11;
+
 
 # instance fields
-.field public final a:Ljava/util/List;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/List<",
-            "[B>;"
-        }
-    .end annotation
-.end field
+.field public a:Z
 
-.field public final b:I
+.field public b:J
+
+.field public c:J
+
+.field public d:Lk3/uw0;
 
 
 # direct methods
-.method public constructor <init>(Ljava/util/List;I)V
-    .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/util/List<",
-            "[B>;I)V"
-        }
-    .end annotation
+.method public constructor <init>()V
+    .locals 1
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lk3/z11;->a:Ljava/util/List;
+    sget-object v0, Lk3/uw0;->d:Lk3/uw0;
 
-    .line 3
-    iput p2, p0, Lk3/z11;->b:I
+    iput-object v0, p0, Lk3/z11;->d:Lk3/uw0;
 
     return-void
 .end method
 
-.method public static a(Lk3/s11;)Lk3/z11;
-    .locals 13
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Lcom/google/android/gms/internal/ads/zzhv;
-        }
-    .end annotation
 
-    const/16 v0, 0x15
+# virtual methods
+.method public final a(Lk3/s11;)V
+    .locals 2
 
     .line 1
-    :try_start_0
-    invoke-virtual {p0, v0}, Lk3/s11;->i(I)V
+    invoke-interface {p1}, Lk3/s11;->f()J
+
+    move-result-wide v0
+
+    invoke-virtual {p0, v0, v1}, Lk3/z11;->b(J)V
 
     .line 2
-    invoke-virtual {p0}, Lk3/s11;->d()I
+    invoke-interface {p1}, Lk3/s11;->p()Lk3/uw0;
 
-    move-result v0
+    move-result-object p1
 
-    and-int/lit8 v0, v0, 0x3
+    iput-object p1, p0, Lk3/z11;->d:Lk3/uw0;
+
+    return-void
+.end method
+
+.method public final b(J)V
+    .locals 0
+
+    .line 1
+    iput-wide p1, p0, Lk3/z11;->b:J
+
+    .line 2
+    iget-boolean p1, p0, Lk3/z11;->a:Z
+
+    if-eqz p1, :cond_0
 
     .line 3
-    invoke-virtual {p0}, Lk3/s11;->d()I
+    invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
 
-    move-result v1
+    move-result-wide p1
 
-    .line 4
-    iget v2, p0, Lk3/s11;->b:I
-
-    const/4 v3, 0x0
-
-    const/4 v4, 0x0
-
-    const/4 v5, 0x0
-
-    :goto_0
-    const/4 v6, 0x1
-
-    if-ge v4, v1, :cond_1
-
-    .line 5
-    invoke-virtual {p0, v6}, Lk3/s11;->i(I)V
-
-    .line 6
-    invoke-virtual {p0}, Lk3/s11;->e()I
-
-    move-result v6
-
-    const/4 v7, 0x0
-
-    :goto_1
-    if-ge v7, v6, :cond_0
-
-    .line 7
-    invoke-virtual {p0}, Lk3/s11;->e()I
-
-    move-result v8
-
-    add-int/lit8 v9, v8, 0x4
-
-    add-int/2addr v5, v9
-
-    .line 8
-    invoke-virtual {p0, v8}, Lk3/s11;->i(I)V
-
-    add-int/lit8 v7, v7, 0x1
-
-    goto :goto_1
+    iput-wide p1, p0, Lk3/z11;->c:J
 
     :cond_0
-    add-int/lit8 v4, v4, 0x1
+    return-void
+.end method
+
+.method public final f()J
+    .locals 7
+
+    .line 1
+    iget-wide v0, p0, Lk3/z11;->b:J
+
+    .line 2
+    iget-boolean v2, p0, Lk3/z11;->a:Z
+
+    if-eqz v2, :cond_1
+
+    .line 3
+    invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
+
+    move-result-wide v2
+
+    iget-wide v4, p0, Lk3/z11;->c:J
+
+    sub-long/2addr v2, v4
+
+    .line 4
+    iget-object v4, p0, Lk3/z11;->d:Lk3/uw0;
+
+    iget v5, v4, Lk3/uw0;->a:F
+
+    const/high16 v6, 0x3f800000    # 1.0f
+
+    cmpl-float v5, v5, v6
+
+    if-nez v5, :cond_0
+
+    .line 5
+    invoke-static {v2, v3}, Lk3/hw0;->b(J)J
+
+    move-result-wide v2
 
     goto :goto_0
 
-    .line 9
+    .line 6
+    :cond_0
+    iget v4, v4, Lk3/uw0;->c:I
+
+    int-to-long v4, v4
+
+    mul-long v2, v2, v4
+
+    :goto_0
+    add-long/2addr v0, v2
+
     :cond_1
-    invoke-virtual {p0, v2}, Lk3/s11;->h(I)V
+    return-wide v0
+.end method
 
-    .line 10
-    new-array v2, v5, [B
+.method public final p()Lk3/uw0;
+    .locals 1
 
-    const/4 v4, 0x0
+    iget-object v0, p0, Lk3/z11;->d:Lk3/uw0;
 
-    const/4 v7, 0x0
+    return-object v0
+.end method
 
-    :goto_2
-    if-ge v4, v1, :cond_3
+.method public final r(Lk3/uw0;)Lk3/uw0;
+    .locals 2
 
-    .line 11
-    invoke-virtual {p0, v6}, Lk3/s11;->i(I)V
+    .line 1
+    iget-boolean v0, p0, Lk3/z11;->a:Z
 
-    .line 12
-    invoke-virtual {p0}, Lk3/s11;->e()I
+    if-eqz v0, :cond_0
 
-    move-result v8
+    .line 2
+    invoke-virtual {p0}, Lk3/z11;->f()J
 
-    const/4 v9, 0x0
+    move-result-wide v0
 
-    :goto_3
-    if-ge v9, v8, :cond_2
+    invoke-virtual {p0, v0, v1}, Lk3/z11;->b(J)V
 
-    .line 13
-    invoke-virtual {p0}, Lk3/s11;->e()I
+    .line 3
+    :cond_0
+    iput-object p1, p0, Lk3/z11;->d:Lk3/uw0;
 
-    move-result v10
-
-    .line 14
-    sget-object v11, Lk3/o11;->a:[B
-
-    const/4 v12, 0x4
-
-    invoke-static {v11, v3, v2, v7, v12}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
-
-    add-int/lit8 v7, v7, 0x4
-
-    .line 15
-    iget-object v11, p0, Lk3/s11;->a:[B
-
-    .line 16
-    iget v12, p0, Lk3/s11;->b:I
-
-    .line 17
-    invoke-static {v11, v12, v2, v7, v10}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
-
-    add-int/2addr v7, v10
-
-    .line 18
-    invoke-virtual {p0, v10}, Lk3/s11;->i(I)V
-
-    add-int/lit8 v9, v9, 0x1
-
-    goto :goto_3
-
-    :cond_2
-    add-int/lit8 v4, v4, 0x1
-
-    goto :goto_2
-
-    :cond_3
-    if-nez v5, :cond_4
-
-    const/4 p0, 0x0
-
-    goto :goto_4
-
-    .line 19
-    :cond_4
-    invoke-static {v2}, Ljava/util/Collections;->singletonList(Ljava/lang/Object;)Ljava/util/List;
-
-    move-result-object p0
-
-    .line 20
-    :goto_4
-    new-instance v1, Lk3/z11;
-
-    add-int/2addr v0, v6
-
-    invoke-direct {v1, p0, v0}, Lk3/z11;-><init>(Ljava/util/List;I)V
-    :try_end_0
-    .catch Ljava/lang/ArrayIndexOutOfBoundsException; {:try_start_0 .. :try_end_0} :catch_0
-
-    return-object v1
-
-    :catch_0
-    move-exception p0
-
-    .line 21
-    new-instance v0, Lcom/google/android/gms/internal/ads/zzhv;
-
-    const-string v1, "Error parsing HEVC config"
-
-    invoke-direct {v0, v1, p0}, Lcom/google/android/gms/internal/ads/zzhv;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
-
-    goto :goto_6
-
-    :goto_5
-    throw v0
-
-    :goto_6
-    goto :goto_5
+    return-object p1
 .end method

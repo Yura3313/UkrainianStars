@@ -4,63 +4,90 @@
 
 
 # instance fields
-.field public final a:I
+.field public final a:Z
 
-.field public final b:[Lk3/v01;
+.field public final b:I
 
-.field public c:I
+.field public final c:I
+
+.field public final d:I
+
+.field public final e:Z
+
+.field public final f:Z
+
+.field public final g:I
+
+.field public final h:I
+
+.field public final i:Z
 
 
 # direct methods
-.method public varargs constructor <init>([Lk3/v01;)V
-    .locals 0
+.method public constructor <init>()V
+    .locals 2
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    const/4 v0, 0x1
+
     .line 2
-    iput-object p1, p0, Lk3/x01;->b:[Lk3/v01;
+    iput-boolean v0, p0, Lk3/x01;->a:Z
+
+    const v1, 0x7fffffff
 
     .line 3
-    array-length p1, p1
+    iput v1, p0, Lk3/x01;->b:I
 
-    iput p1, p0, Lk3/x01;->a:I
+    .line 4
+    iput v1, p0, Lk3/x01;->c:I
+
+    .line 5
+    iput v1, p0, Lk3/x01;->d:I
+
+    .line 6
+    iput-boolean v0, p0, Lk3/x01;->e:Z
+
+    .line 7
+    iput-boolean v0, p0, Lk3/x01;->f:Z
+
+    .line 8
+    iput v1, p0, Lk3/x01;->g:I
+
+    .line 9
+    iput v1, p0, Lk3/x01;->h:I
+
+    .line 10
+    iput-boolean v0, p0, Lk3/x01;->i:Z
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(I)Lk3/v01;
-    .locals 1
-
-    iget-object v0, p0, Lk3/x01;->b:[Lk3/v01;
-
-    aget-object p1, v0, p1
-
-    return-object p1
-.end method
-
 .method public final equals(Ljava/lang/Object;)Z
-    .locals 2
+    .locals 4
+
+    const/4 v0, 0x1
 
     if-ne p0, p1, :cond_0
 
-    const/4 p1, 0x1
-
-    return p1
+    return v0
 
     :cond_0
+    const/4 v1, 0x0
+
     if-eqz p1, :cond_2
 
     .line 1
-    const-class v0, Lk3/x01;
+    const-class v2, Lk3/x01;
 
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    move-result-object v1
+    move-result-object v3
 
-    if-eq v0, v1, :cond_1
+    if-eq v2, v3, :cond_1
 
     goto :goto_0
 
@@ -69,46 +96,87 @@
     check-cast p1, Lk3/x01;
 
     .line 3
-    iget-object v0, p0, Lk3/x01;->b:[Lk3/v01;
+    iget-boolean v2, p0, Lk3/x01;->a:Z
 
-    iget-object p1, p1, Lk3/x01;->b:[Lk3/v01;
+    iget-boolean v3, p1, Lk3/x01;->a:Z
 
-    invoke-static {v0, p1}, Ljava/util/Arrays;->equals([Ljava/lang/Object;[Ljava/lang/Object;)Z
+    if-ne v2, v3, :cond_2
+
+    iget v2, p0, Lk3/x01;->b:I
+
+    iget v3, p1, Lk3/x01;->b:I
+
+    if-ne v2, v3, :cond_2
+
+    iget v2, p0, Lk3/x01;->c:I
+
+    iget v3, p1, Lk3/x01;->c:I
+
+    if-ne v2, v3, :cond_2
+
+    iget-boolean v2, p0, Lk3/x01;->e:Z
+
+    iget-boolean v3, p1, Lk3/x01;->e:Z
+
+    if-ne v2, v3, :cond_2
+
+    iget-boolean v2, p0, Lk3/x01;->f:Z
+
+    iget-boolean v3, p1, Lk3/x01;->f:Z
+
+    if-ne v2, v3, :cond_2
+
+    iget-boolean v2, p0, Lk3/x01;->i:Z
+
+    iget-boolean v3, p1, Lk3/x01;->i:Z
+
+    if-ne v2, v3, :cond_2
+
+    iget v2, p0, Lk3/x01;->g:I
+
+    iget v3, p1, Lk3/x01;->g:I
+
+    if-ne v2, v3, :cond_2
+
+    iget v2, p0, Lk3/x01;->h:I
+
+    iget v3, p1, Lk3/x01;->h:I
+
+    if-ne v2, v3, :cond_2
+
+    iget v2, p0, Lk3/x01;->d:I
+
+    iget p1, p1, Lk3/x01;->d:I
+
+    if-ne v2, p1, :cond_2
+
+    const/4 p1, 0x0
+
+    .line 4
+    invoke-static {p1, p1}, Landroid/text/TextUtils;->equals(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_2
+
+    .line 5
+    invoke-static {p1, p1}, Landroid/text/TextUtils;->equals(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Z
 
     move-result p1
 
-    return p1
+    if-eqz p1, :cond_2
+
+    return v0
 
     :cond_2
     :goto_0
-    const/4 p1, 0x0
-
-    return p1
+    return v1
 .end method
 
 .method public final hashCode()I
     .locals 1
 
-    .line 1
-    iget v0, p0, Lk3/x01;->c:I
+    const/4 v0, 0x0
 
-    if-nez v0, :cond_0
-
-    .line 2
-    iget-object v0, p0, Lk3/x01;->b:[Lk3/v01;
-
-    invoke-static {v0}, Ljava/util/Arrays;->hashCode([Ljava/lang/Object;)I
-
-    move-result v0
-
-    add-int/lit16 v0, v0, 0x20f
-
-    .line 3
-    iput v0, p0, Lk3/x01;->c:I
-
-    .line 4
-    :cond_0
-    iget v0, p0, Lk3/x01;->c:I
-
-    return v0
+    throw v0
 .end method

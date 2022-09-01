@@ -1,5 +1,5 @@
 .class public final Lec/d$a;
-.super Lk3/sp0;
+.super Lk3/a00;
 .source "ImageLoader.java"
 
 
@@ -15,14 +15,14 @@
 
 
 # instance fields
-.field public h:Landroid/graphics/Bitmap;
+.field public b:Landroid/graphics/Bitmap;
 
 
 # direct methods
 .method public constructor <init>()V
     .locals 0
 
-    invoke-direct {p0}, Lk3/sp0;-><init>()V
+    invoke-direct {p0}, Lk3/a00;-><init>()V
 
     return-void
 .end method
@@ -32,7 +32,7 @@
 .method public final onLoadingComplete(Ljava/lang/String;Landroid/view/View;Landroid/graphics/Bitmap;)V
     .locals 0
 
-    iput-object p3, p0, Lec/d$a;->h:Landroid/graphics/Bitmap;
+    iput-object p3, p0, Lec/d$a;->b:Landroid/graphics/Bitmap;
 
     return-void
 .end method

@@ -1,67 +1,180 @@
-.class public final Lz3/x1;
-.super Ljava/lang/Object;
-
-# interfaces
-.implements Ljava/lang/Runnable;
-
-
-# instance fields
-.field public final synthetic f:Lz3/t1;
-
-.field public final synthetic g:Lz3/u1;
+.class public Lz3/x1;
+.super Ly3/a;
 
 
 # direct methods
-.method public constructor <init>(Lz3/u1;Lz3/t1;)V
+.method public constructor <init>(Lz3/p0;)V
     .locals 0
 
-    iput-object p1, p0, Lz3/x1;->g:Lz3/u1;
-
-    iput-object p2, p0, Lz3/x1;->f:Lz3/t1;
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0, p1}, Ly3/a;-><init>(Lz3/p0;)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final run()V
-    .locals 3
+.method public final A()Lz3/v1;
+    .locals 1
 
-    .line 1
-    iget-object v0, p0, Lz3/x1;->g:Lz3/u1;
+    iget-object v0, p0, Ly3/a;->g:Ljava/lang/Object;
 
-    iget-object v1, p0, Lz3/x1;->f:Lz3/t1;
+    check-cast v0, Lz3/p0;
 
-    const/4 v2, 0x0
-
-    invoke-static {v0, v1, v2}, Lz3/u1;->J(Lz3/u1;Lz3/t1;Z)V
-
-    .line 2
-    iget-object v0, p0, Lz3/x1;->g:Lz3/u1;
-
-    const/4 v1, 0x0
-
-    iput-object v1, v0, Lz3/u1;->c:Lz3/t1;
-
-    .line 3
-    invoke-virtual {v0}, Lz3/w1;->z()Lz3/y1;
+    invoke-virtual {v0}, Lz3/p0;->o()Lz3/v1;
 
     move-result-object v0
 
-    .line 4
-    invoke-virtual {v0}, Lz3/w1;->n()V
+    return-object v0
+.end method
 
-    .line 5
-    invoke-virtual {v0}, Lz3/m2;->D()V
+.method public final B()Lz3/k;
+    .locals 2
 
-    .line 6
-    new-instance v2, Lk3/z70;
+    .line 1
+    iget-object v0, p0, Ly3/a;->g:Ljava/lang/Object;
 
-    invoke-direct {v2, v0, v1}, Lk3/z70;-><init>(Lz3/y1;Lz3/t1;)V
+    check-cast v0, Lz3/p0;
 
-    invoke-virtual {v0, v2}, Lz3/y1;->N(Ljava/lang/Runnable;)V
+    .line 2
+    iget-object v1, v0, Lz3/p0;->y:Lz3/k;
+
+    invoke-static {v1}, Lz3/p0;->i(Lz3/n2;)V
+
+    .line 3
+    iget-object v0, v0, Lz3/p0;->y:Lz3/k;
+
+    return-object v0
+.end method
+
+.method public final C()Lz3/r2;
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Ly3/a;->g:Ljava/lang/Object;
+
+    check-cast v0, Lz3/p0;
+
+    .line 2
+    iget-object v1, v0, Lz3/p0;->q:Lz3/r2;
+
+    invoke-static {v1}, Lz3/p0;->i(Lz3/n2;)V
+
+    .line 3
+    iget-object v0, v0, Lz3/p0;->q:Lz3/r2;
+
+    return-object v0
+.end method
+
+.method public final n()V
+    .locals 1
+
+    iget-object v0, p0, Ly3/a;->g:Ljava/lang/Object;
+
+    check-cast v0, Lz3/p0;
+
+    invoke-virtual {v0}, Lz3/p0;->b()Lz3/l0;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lz3/l0;->n()V
 
     return-void
+.end method
+
+.method public final o()V
+    .locals 1
+
+    iget-object v0, p0, Ly3/a;->g:Ljava/lang/Object;
+
+    check-cast v0, Lz3/p0;
+
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    return-void
+.end method
+
+.method public final p()V
+    .locals 1
+
+    iget-object v0, p0, Ly3/a;->g:Ljava/lang/Object;
+
+    check-cast v0, Lz3/p0;
+
+    invoke-virtual {v0}, Lz3/p0;->b()Lz3/l0;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Lz3/l0;->p()V
+
+    return-void
+.end method
+
+.method public final v()V
+    .locals 1
+
+    iget-object v0, p0, Ly3/a;->g:Ljava/lang/Object;
+
+    check-cast v0, Lz3/p0;
+
+    invoke-virtual {v0}, Lz3/p0;->j()V
+
+    const/4 v0, 0x0
+
+    throw v0
+.end method
+
+.method public final w()Lz3/a;
+    .locals 1
+
+    iget-object v0, p0, Ly3/a;->g:Ljava/lang/Object;
+
+    check-cast v0, Lz3/p0;
+
+    invoke-virtual {v0}, Lz3/p0;->k()Lz3/a;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public final x()Lz3/l1;
+    .locals 1
+
+    iget-object v0, p0, Ly3/a;->g:Ljava/lang/Object;
+
+    check-cast v0, Lz3/p0;
+
+    invoke-virtual {v0}, Lz3/p0;->l()Lz3/l1;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public final y()Lz3/i;
+    .locals 1
+
+    iget-object v0, p0, Ly3/a;->g:Ljava/lang/Object;
+
+    check-cast v0, Lz3/p0;
+
+    invoke-virtual {v0}, Lz3/p0;->m()Lz3/i;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public final z()Lz3/z1;
+    .locals 1
+
+    iget-object v0, p0, Ly3/a;->g:Ljava/lang/Object;
+
+    check-cast v0, Lz3/p0;
+
+    invoke-virtual {v0}, Lz3/p0;->n()Lz3/z1;
+
+    move-result-object v0
+
+    return-object v0
 .end method

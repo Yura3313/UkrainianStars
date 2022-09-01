@@ -1,5 +1,5 @@
 .class public final Lcom/google/android/gms/internal/ads/v5$a;
-.super Lk3/mq0;
+.super Lk3/qq0;
 .source "com.google.android.gms:play-services-ads-lite@@19.3.0"
 
 
@@ -18,7 +18,7 @@
         "<T:",
         "Lcom/google/android/gms/internal/ads/v5<",
         "TT;*>;>",
-        "Lk3/mq0<",
+        "Lk3/qq0<",
         "TT;>;"
     }
 .end annotation
@@ -33,7 +33,7 @@
         }
     .end annotation
 
-    invoke-direct {p0}, Lk3/mq0;-><init>()V
+    invoke-direct {p0}, Lk3/qq0;-><init>()V
 
     return-void
 .end method

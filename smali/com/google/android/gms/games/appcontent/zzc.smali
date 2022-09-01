@@ -23,7 +23,7 @@
 .method public abstract E()Landroid/net/Uri;
 .end method
 
-.method public abstract O1()Landroid/os/Bundle;
+.method public abstract N1()Landroid/os/Bundle;
 .end method
 
 .method public abstract getDescription()Ljava/lang/String;

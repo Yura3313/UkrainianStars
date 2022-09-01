@@ -57,7 +57,7 @@
     if-ne p0, v2, :cond_3
 
     .line 4
-    sget-object p0, Lcom/helpshift/util/u;->c:Le7/g;
+    sget-object p0, Lcom/helpshift/util/t;->c:Le7/g;
 
     .line 5
     invoke-virtual {p0}, Le7/g;->c()Lq8/d;
@@ -109,7 +109,7 @@
 
     .line 8
     :cond_5
-    sget-object p0, Lcom/helpshift/util/u;->c:Le7/g;
+    sget-object p0, Lcom/helpshift/util/t;->c:Le7/g;
 
     .line 9
     invoke-virtual {p0}, Le7/g;->c()Lq8/d;

@@ -6,30 +6,30 @@
 
 
 # instance fields
-.field public final synthetic f:Z
+.field public final synthetic g:Z
 
-.field public final synthetic g:Lcom/google/android/gms/measurement/internal/zzo;
+.field public final synthetic h:Lcom/google/android/gms/measurement/internal/zzag;
 
-.field public final synthetic h:Lcom/google/android/gms/measurement/internal/zzk;
+.field public final synthetic i:Lcom/google/android/gms/measurement/internal/zzk;
 
-.field public final synthetic i:Lcom/google/android/gms/measurement/internal/zzo;
+.field public final synthetic j:Ljava/lang/String;
 
-.field public final synthetic j:Lz3/y1;
+.field public final synthetic k:Lz3/z1;
 
 
 # direct methods
-.method public constructor <init>(Lz3/y1;ZLcom/google/android/gms/measurement/internal/zzo;Lcom/google/android/gms/measurement/internal/zzk;Lcom/google/android/gms/measurement/internal/zzo;)V
+.method public constructor <init>(Lz3/z1;ZLcom/google/android/gms/measurement/internal/zzag;Lcom/google/android/gms/measurement/internal/zzk;Ljava/lang/String;)V
     .locals 0
 
-    iput-object p1, p0, Lz3/c2;->j:Lz3/y1;
+    iput-object p1, p0, Lz3/c2;->k:Lz3/z1;
 
-    iput-boolean p2, p0, Lz3/c2;->f:Z
+    iput-boolean p2, p0, Lz3/c2;->g:Z
 
-    iput-object p3, p0, Lz3/c2;->g:Lcom/google/android/gms/measurement/internal/zzo;
+    iput-object p3, p0, Lz3/c2;->h:Lcom/google/android/gms/measurement/internal/zzag;
 
-    iput-object p4, p0, Lz3/c2;->h:Lcom/google/android/gms/measurement/internal/zzk;
+    iput-object p4, p0, Lz3/c2;->i:Lcom/google/android/gms/measurement/internal/zzk;
 
-    iput-object p5, p0, Lz3/c2;->i:Lcom/google/android/gms/measurement/internal/zzo;
+    iput-object p5, p0, Lz3/c2;->j:Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -42,10 +42,10 @@
     .locals 4
 
     .line 1
-    iget-object v0, p0, Lz3/c2;->j:Lz3/y1;
+    iget-object v0, p0, Lz3/c2;->k:Lz3/z1;
 
     .line 2
-    iget-object v1, v0, Lz3/y1;->d:Lcom/google/android/gms/measurement/internal/zzaj;
+    iget-object v1, v0, Lz3/z1;->j:Lcom/google/android/gms/measurement/internal/zzaj;
 
     if-nez v1, :cond_0
 
@@ -55,9 +55,9 @@
     move-result-object v0
 
     .line 4
-    iget-object v0, v0, Lz3/o;->f:Lz3/q;
+    iget-object v0, v0, Lz3/o;->l:Lz3/q;
 
-    const-string v1, "Discarding data. Failed to send conditional user property to service"
+    const-string v1, "Discarding data. Failed to send event to service"
 
     .line 5
     invoke-virtual {v0, v1}, Lz3/q;->a(Ljava/lang/String;)V
@@ -66,7 +66,7 @@
 
     .line 6
     :cond_0
-    iget-boolean v2, p0, Lz3/c2;->f:Z
+    iget-boolean v2, p0, Lz3/c2;->g:Z
 
     if-eqz v2, :cond_1
 
@@ -75,18 +75,18 @@
     goto :goto_0
 
     :cond_1
-    iget-object v2, p0, Lz3/c2;->g:Lcom/google/android/gms/measurement/internal/zzo;
+    iget-object v2, p0, Lz3/c2;->h:Lcom/google/android/gms/measurement/internal/zzag;
 
     :goto_0
-    iget-object v3, p0, Lz3/c2;->h:Lcom/google/android/gms/measurement/internal/zzk;
+    iget-object v3, p0, Lz3/c2;->i:Lcom/google/android/gms/measurement/internal/zzk;
 
-    invoke-virtual {v0, v1, v2, v3}, Lz3/y1;->I(Lcom/google/android/gms/measurement/internal/zzaj;Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;Lcom/google/android/gms/measurement/internal/zzk;)V
+    invoke-virtual {v0, v1, v2, v3}, Lz3/z1;->I(Lcom/google/android/gms/measurement/internal/zzaj;Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;Lcom/google/android/gms/measurement/internal/zzk;)V
 
     .line 7
-    iget-object v0, p0, Lz3/c2;->j:Lz3/y1;
+    iget-object v0, p0, Lz3/c2;->k:Lz3/z1;
 
     .line 8
-    invoke-virtual {v0}, Lz3/y1;->K()V
+    invoke-virtual {v0}, Lz3/z1;->K()V
 
     return-void
 .end method

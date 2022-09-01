@@ -1,96 +1,94 @@
-.class public abstract Lz3/m2;
-.super Lz3/w1;
+.class public final synthetic Lz3/m2;
+.super Ljava/lang/Object;
+
+# interfaces
+.implements Ljava/lang/Runnable;
 
 
 # instance fields
-.field public b:Z
+.field public final g:Lz3/l2;
+
+.field public final h:I
+
+.field public final i:Lz3/o;
+
+.field public final j:Landroid/content/Intent;
 
 
 # direct methods
-.method public constructor <init>(Lz3/p0;)V
-    .locals 1
+.method public constructor <init>(Lz3/l2;ILz3/o;Landroid/content/Intent;)V
+    .locals 0
 
-    .line 1
-    invoke-direct {p0, p1}, Lz3/w1;-><init>(Lz3/p0;)V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
-    iget-object p1, p0, Ly3/a;->a:Ljava/lang/Object;
+    iput-object p1, p0, Lz3/m2;->g:Lz3/l2;
 
-    check-cast p1, Lz3/p0;
+    iput p2, p0, Lz3/m2;->h:I
 
-    .line 3
-    iget v0, p1, Lz3/p0;->D:I
+    iput-object p3, p0, Lz3/m2;->i:Lz3/o;
 
-    add-int/lit8 v0, v0, 0x1
-
-    iput v0, p1, Lz3/p0;->D:I
+    iput-object p4, p0, Lz3/m2;->j:Landroid/content/Intent;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final D()V
-    .locals 2
+.method public final run()V
+    .locals 5
+
+    iget-object v0, p0, Lz3/m2;->g:Lz3/l2;
+
+    iget v1, p0, Lz3/m2;->h:I
+
+    iget-object v2, p0, Lz3/m2;->i:Lz3/o;
+
+    iget-object v3, p0, Lz3/m2;->j:Landroid/content/Intent;
 
     .line 1
-    iget-boolean v0, p0, Lz3/m2;->b:Z
+    iget-object v4, v0, Lz3/l2;->a:Landroid/content/Context;
 
-    if-eqz v0, :cond_0
+    check-cast v4, Lz3/q2;
 
-    return-void
+    invoke-interface {v4, v1}, Lz3/q2;->a(I)Z
 
-    .line 2
-    :cond_0
-    new-instance v0, Ljava/lang/IllegalStateException;
+    move-result v4
 
-    const-string v1, "Not initialized"
-
-    invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
-    throw v0
-.end method
-
-.method public abstract E()Z
-.end method
-
-.method public final F()V
-    .locals 2
-
-    .line 1
-    iget-boolean v0, p0, Lz3/m2;->b:Z
-
-    if-nez v0, :cond_1
+    if-eqz v4, :cond_0
 
     .line 2
-    invoke-virtual {p0}, Lz3/m2;->E()Z
-
-    move-result v0
-
-    if-nez v0, :cond_0
+    iget-object v2, v2, Lz3/o;->t:Lz3/q;
 
     .line 3
-    iget-object v0, p0, Ly3/a;->a:Ljava/lang/Object;
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    check-cast v0, Lz3/p0;
+    move-result-object v1
 
-    invoke-virtual {v0}, Lz3/p0;->v()V
-
-    const/4 v0, 0x1
+    const-string v4, "Local AppMeasurementService processed last upload request. StartId"
 
     .line 4
-    iput-boolean v0, p0, Lz3/m2;->b:Z
+    invoke-virtual {v2, v4, v1}, Lz3/q;->d(Ljava/lang/String;Ljava/lang/Object;)V
+
+    .line 5
+    invoke-virtual {v0}, Lz3/l2;->d()Lz3/o;
+
+    move-result-object v1
+
+    .line 6
+    iget-object v1, v1, Lz3/o;->t:Lz3/q;
+
+    const-string v2, "Completed wakeful intent."
+
+    .line 7
+    invoke-virtual {v1, v2}, Lz3/q;->a(Ljava/lang/String;)V
+
+    .line 8
+    iget-object v0, v0, Lz3/l2;->a:Landroid/content/Context;
+
+    check-cast v0, Lz3/q2;
+
+    invoke-interface {v0, v3}, Lz3/q2;->G0(Landroid/content/Intent;)V
 
     :cond_0
     return-void
-
-    .line 5
-    :cond_1
-    new-instance v0, Ljava/lang/IllegalStateException;
-
-    const-string v1, "Can\'t initialize twice"
-
-    invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
-    throw v0
 .end method

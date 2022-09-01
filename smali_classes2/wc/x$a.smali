@@ -34,7 +34,7 @@
     invoke-direct {v0}, Lwc/x;-><init>()V
 
     .line 2
-    iget-object v1, v0, Landroidx/fragment/app/Fragment;->l:Landroid/os/Bundle;
+    iget-object v1, v0, Landroidx/fragment/app/Fragment;->m:Landroid/os/Bundle;
 
     if-eqz v1, :cond_0
 

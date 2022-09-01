@@ -55,7 +55,7 @@
     check-cast p2, Landroid/content/res/XmlResourceParser;
 
     .line 7
-    iget v0, p0, Landroidx/transition/Visibility;->D:I
+    iget v0, p0, Landroidx/transition/Visibility;->E:I
 
     const-string v1, "fadingMode"
 

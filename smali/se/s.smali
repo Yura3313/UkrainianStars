@@ -1,64 +1,83 @@
 .class public final Lse/s;
 .super Ljava/lang/Object;
-.source "ReflectionFactory.java"
+.source "Reflection.java"
+
+
+# static fields
+.field public static final a:Lse/t;
+
+.field public static final b:[Lwe/c;
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 0
+.method public static constructor <clinit>()V
+    .locals 2
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    const/4 v0, 0x0
+
+    :try_start_0
+    const-string v1, "kotlin.reflect.jvm.internal.ReflectionFactoryImpl"
+
+    .line 1
+    invoke-static {v1}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
+
+    move-result-object v1
+
+    .line 2
+    invoke-virtual {v1}, Ljava/lang/Class;->newInstance()Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Lse/t;
+    :try_end_0
+    .catch Ljava/lang/ClassCastException; {:try_start_0 .. :try_end_0} :catch_0
+    .catch Ljava/lang/ClassNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
+    .catch Ljava/lang/InstantiationException; {:try_start_0 .. :try_end_0} :catch_0
+    .catch Ljava/lang/IllegalAccessException; {:try_start_0 .. :try_end_0} :catch_0
+
+    move-object v0, v1
+
+    goto :goto_0
+
+    :catch_0
+    nop
+
+    :goto_0
+    if-eqz v0, :cond_0
+
+    goto :goto_1
+
+    .line 3
+    :cond_0
+    new-instance v0, Lse/t;
+
+    invoke-direct {v0}, Lse/t;-><init>()V
+
+    :goto_1
+    sput-object v0, Lse/s;->a:Lse/t;
+
+    const/4 v0, 0x0
+
+    new-array v0, v0, [Lwe/c;
+
+    .line 4
+    sput-object v0, Lse/s;->b:[Lwe/c;
 
     return-void
 .end method
 
-
-# virtual methods
-.method public final a(Ljava/lang/Class;Ljava/lang/String;)Lwe/d;
-    .locals 1
-
-    new-instance v0, Lse/k;
-
-    invoke-direct {v0, p1, p2}, Lse/k;-><init>(Ljava/lang/Class;Ljava/lang/String;)V
-
-    return-object v0
-.end method
-
-.method public final b(Lse/f;)Ljava/lang/String;
+.method public static a(Ljava/lang/Class;)Lwe/c;
     .locals 1
 
     .line 1
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    sget-object v0, Lse/s;->a:Lse/t;
 
-    move-result-object p1
-
-    invoke-virtual {p1}, Ljava/lang/Class;->getGenericInterfaces()[Ljava/lang/reflect/Type;
-
-    move-result-object p1
-
-    const/4 v0, 0x0
-
-    aget-object p1, p1, v0
-
-    invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
-
-    move-result-object p1
-
-    const-string v0, "kotlin.jvm.functions."
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 2
-    invoke-virtual {p1, v0}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
+    new-instance v0, Lse/e;
 
-    move-result v0
+    invoke-direct {v0, p0}, Lse/e;-><init>(Ljava/lang/Class;)V
 
-    if-eqz v0, :cond_0
-
-    const/16 v0, 0x15
-
-    invoke-virtual {p1, v0}, Ljava/lang/String;->substring(I)Ljava/lang/String;
-
-    move-result-object p1
-
-    :cond_0
-    return-object p1
+    return-object v0
 .end method

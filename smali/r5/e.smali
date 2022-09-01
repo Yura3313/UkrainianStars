@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field public final f:I
+.field public final g:I
 
 
 # direct methods
@@ -31,10 +31,10 @@
     if-lt v0, p2, :cond_1
 
     .line 3
-    invoke-static {p2}, Lr5/j0;->a(I)V
+    invoke-static {p2}, Lr5/l0;->a(I)V
 
     .line 4
-    iget v0, p0, Lr5/e;->f:I
+    iget v0, p0, Lr5/e;->g:I
 
     add-int/lit8 v0, v0, 0x1
 
@@ -52,7 +52,7 @@
     invoke-static {p1, p3}, Ljava/util/Arrays;->copyOf([BI)[B
 
     .line 6
-    iput p2, p0, Lr5/e;->f:I
+    iput p2, p0, Lr5/e;->g:I
 
     return-void
 

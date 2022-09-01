@@ -1,5 +1,5 @@
 .class public final Lcom/supercell/id/SupercellId$d;
-.super Lse/h;
+.super Lse/i;
 .source "SupercellId.kt"
 
 # interfaces
@@ -18,16 +18,16 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/a<",
-        "Lie/h;",
+        "Lie/i;",
         ">;"
     }
 .end annotation
 
 
 # static fields
-.field public static final f:Lcom/supercell/id/SupercellId$d;
+.field public static final g:Lcom/supercell/id/SupercellId$d;
 
 
 # direct methods
@@ -38,7 +38,7 @@
 
     invoke-direct {v0}, Lcom/supercell/id/SupercellId$d;-><init>()V
 
-    sput-object v0, Lcom/supercell/id/SupercellId$d;->f:Lcom/supercell/id/SupercellId$d;
+    sput-object v0, Lcom/supercell/id/SupercellId$d;->g:Lcom/supercell/id/SupercellId$d;
 
     return-void
 .end method
@@ -48,7 +48,7 @@
 
     const/4 v0, 0x0
 
-    invoke-direct {p0, v0}, Lse/h;-><init>(I)V
+    invoke-direct {p0, v0}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -66,14 +66,14 @@
     move-result-object v1
 
     .line 2
-    iget-object v1, v1, Lae/u;->s:Lud/j;
+    iget-object v1, v1, Lae/u;->s:Lud/i;
 
     .line 3
-    iget-object v2, v1, Lud/j;->a:Landroid/content/Context;
+    iget-object v2, v1, Lud/i;->a:Landroid/content/Context;
 
     const-string v3, "context"
 
-    invoke-static {v2, v3}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v2, v3}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 4
     invoke-static {v2}, Lv/a;->f(Landroid/content/Context;)Ljava/io/File;
@@ -100,41 +100,41 @@
     if-eqz v4, :cond_1
 
     .line 6
-    invoke-static {v4}, Lpe/d;->g(Ljava/io/File;)Z
+    invoke-static {v4}, Lpe/d;->f(Ljava/io/File;)Z
 
     .line 7
-    invoke-virtual {v1}, Lud/j;->a()V
+    invoke-virtual {v1}, Lud/i;->a()V
 
     .line 8
-    iget-object v2, v1, Lud/j;->f:Lud/q;
+    iget-object v2, v1, Lud/i;->f:Lud/o;
 
     .line 9
-    iput-object v3, v2, Lud/q;->a:Ljava/lang/String;
+    iput-object v3, v2, Lud/o;->a:Ljava/lang/String;
 
     .line 10
-    iget-object v2, v2, Lud/q;->e:Lae/o2;
+    iget-object v2, v2, Lud/o;->e:Lae/n2;
 
-    sget-object v3, Lje/m;->f:Lje/m;
+    sget-object v3, Lje/m;->g:Lje/m;
 
-    new-instance v4, Lud/q$b;
+    new-instance v4, Lud/o$b;
 
-    invoke-direct {v4, v3, v3}, Lud/q$b;-><init>(Ljava/util/Map;Ljava/util/Map;)V
+    invoke-direct {v4, v3, v3}, Lud/o$b;-><init>(Ljava/util/Map;Ljava/util/Map;)V
 
     .line 11
-    invoke-static {v4}, Lbf/g;->b(Ljava/lang/Object;)Lze/o;
+    invoke-static {v4}, Landroidx/lifecycle/b0;->a(Ljava/lang/Object;)Lze/o;
 
     move-result-object v3
 
     .line 12
-    invoke-virtual {v2, v3}, Lae/o2;->b(Lze/e0;)V
+    invoke-virtual {v2, v3}, Lae/n2;->b(Lze/f0;)V
 
     .line 13
-    iget-object v2, v1, Lud/j;->b:Ljava/util/concurrent/ConcurrentHashMap;
+    iget-object v2, v1, Lud/i;->b:Ljava/util/concurrent/ConcurrentHashMap;
 
     invoke-virtual {v2}, Ljava/util/concurrent/ConcurrentHashMap;->clear()V
 
     .line 14
-    invoke-virtual {v1}, Lud/j;->h()V
+    invoke-virtual {v1}, Lud/i;->h()V
 
     .line 15
     :cond_1
@@ -143,22 +143,22 @@
     move-result-object v0
 
     .line 16
-    iget-object v0, v0, Lae/u;->t:Lud/q0;
+    iget-object v0, v0, Lae/u;->t:Lud/o0;
 
     .line 17
-    iget-object v1, v0, Lud/p0;->a:Landroid/content/Context;
+    iget-object v1, v0, Lud/n0;->a:Landroid/content/Context;
 
-    invoke-virtual {v0, v1}, Lud/p0;->a(Landroid/content/Context;)Ljava/io/File;
+    invoke-virtual {v0, v1}, Lud/n0;->a(Landroid/content/Context;)Ljava/io/File;
 
     move-result-object v0
 
     if-eqz v0, :cond_2
 
-    invoke-static {v0}, Lpe/d;->g(Ljava/io/File;)Z
+    invoke-static {v0}, Lpe/d;->f(Ljava/io/File;)Z
 
     .line 18
     :cond_2
-    sget-object v0, Lie/h;->a:Lie/h;
+    sget-object v0, Lie/i;->a:Lie/i;
 
     return-object v0
 .end method

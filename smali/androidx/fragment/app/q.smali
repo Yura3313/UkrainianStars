@@ -41,7 +41,7 @@
 
     iget-object v0, p0, Landroidx/fragment/app/q;->a:Landroidx/fragment/app/s;
 
-    iget-object v0, v0, Landroidx/fragment/app/s;->i:Landroidx/fragment/app/v;
+    iget-object v0, v0, Landroidx/fragment/app/s;->j:Landroidx/fragment/app/v;
 
     invoke-virtual {v0}, Landroidx/fragment/app/FragmentManager;->U()V
 

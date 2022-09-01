@@ -21,19 +21,19 @@
 
 
 # instance fields
-.field public final f:Ljava/lang/String;
-    .annotation runtime Ljava/lang/Deprecated;
-    .end annotation
-.end field
-
 .field public final g:Ljava/lang/String;
-
-.field public final h:Lcom/google/android/gms/internal/ads/zzvj;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 .end field
 
-.field public final i:Lcom/google/android/gms/internal/ads/zzvc;
+.field public final h:Ljava/lang/String;
+
+.field public final i:Lcom/google/android/gms/internal/ads/zzvj;
+    .annotation runtime Ljava/lang/Deprecated;
+    .end annotation
+.end field
+
+.field public final j:Lcom/google/android/gms/internal/ads/zzvc;
 
 
 # direct methods
@@ -56,16 +56,16 @@
     invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lcom/google/android/gms/internal/ads/zzaxa;->f:Ljava/lang/String;
+    iput-object p1, p0, Lcom/google/android/gms/internal/ads/zzaxa;->g:Ljava/lang/String;
 
     .line 3
-    iput-object p2, p0, Lcom/google/android/gms/internal/ads/zzaxa;->g:Ljava/lang/String;
+    iput-object p2, p0, Lcom/google/android/gms/internal/ads/zzaxa;->h:Ljava/lang/String;
 
     .line 4
-    iput-object p3, p0, Lcom/google/android/gms/internal/ads/zzaxa;->h:Lcom/google/android/gms/internal/ads/zzvj;
+    iput-object p3, p0, Lcom/google/android/gms/internal/ads/zzaxa;->i:Lcom/google/android/gms/internal/ads/zzvj;
 
     .line 5
-    iput-object p4, p0, Lcom/google/android/gms/internal/ads/zzaxa;->i:Lcom/google/android/gms/internal/ads/zzvc;
+    iput-object p4, p0, Lcom/google/android/gms/internal/ads/zzaxa;->j:Lcom/google/android/gms/internal/ads/zzvc;
 
     return-void
 .end method
@@ -85,7 +85,7 @@
     const/4 v1, 0x1
 
     .line 2
-    iget-object v2, p0, Lcom/google/android/gms/internal/ads/zzaxa;->f:Ljava/lang/String;
+    iget-object v2, p0, Lcom/google/android/gms/internal/ads/zzaxa;->g:Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -94,21 +94,21 @@
     const/4 v1, 0x2
 
     .line 3
-    iget-object v2, p0, Lcom/google/android/gms/internal/ads/zzaxa;->g:Ljava/lang/String;
+    iget-object v2, p0, Lcom/google/android/gms/internal/ads/zzaxa;->h:Ljava/lang/String;
 
     invoke-static {p1, v1, v2, v3}, Le2/b;->m(Landroid/os/Parcel;ILjava/lang/String;Z)V
 
     const/4 v1, 0x3
 
     .line 4
-    iget-object v2, p0, Lcom/google/android/gms/internal/ads/zzaxa;->h:Lcom/google/android/gms/internal/ads/zzvj;
+    iget-object v2, p0, Lcom/google/android/gms/internal/ads/zzaxa;->i:Lcom/google/android/gms/internal/ads/zzvj;
 
     invoke-static {p1, v1, v2, p2, v3}, Le2/b;->l(Landroid/os/Parcel;ILandroid/os/Parcelable;IZ)V
 
     const/4 v1, 0x4
 
     .line 5
-    iget-object v2, p0, Lcom/google/android/gms/internal/ads/zzaxa;->i:Lcom/google/android/gms/internal/ads/zzvc;
+    iget-object v2, p0, Lcom/google/android/gms/internal/ads/zzaxa;->j:Lcom/google/android/gms/internal/ads/zzvc;
 
     invoke-static {p1, v1, v2, p2, v3}, Le2/b;->l(Landroid/os/Parcel;ILandroid/os/Parcelable;IZ)V
 

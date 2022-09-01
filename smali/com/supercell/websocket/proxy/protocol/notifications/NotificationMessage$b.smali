@@ -23,8 +23,6 @@
 
 
 # static fields
-.field public static final enum f:Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;
-
 .field public static final enum g:Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;
 
 .field public static final enum h:Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;
@@ -55,7 +53,9 @@
 
 .field public static final enum u:Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;
 
-.field public static final synthetic v:[Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;
+.field public static final enum v:Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;
+
+.field public static final synthetic w:[Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;
 
 
 # direct methods
@@ -71,7 +71,7 @@
 
     invoke-direct {v0, v1, v2}, Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;->f:Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;
+    sput-object v0, Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;->g:Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;
 
     .line 2
     new-instance v1, Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;
@@ -82,7 +82,7 @@
 
     invoke-direct {v1, v3, v4}, Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;-><init>(Ljava/lang/String;I)V
 
-    sput-object v1, Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;->g:Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;
+    sput-object v1, Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;->h:Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;
 
     .line 3
     new-instance v3, Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;
@@ -93,7 +93,7 @@
 
     invoke-direct {v3, v5, v6}, Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;-><init>(Ljava/lang/String;I)V
 
-    sput-object v3, Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;->h:Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;
+    sput-object v3, Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;->i:Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;
 
     .line 4
     new-instance v5, Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;
@@ -104,7 +104,7 @@
 
     invoke-direct {v5, v7, v8}, Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;-><init>(Ljava/lang/String;I)V
 
-    sput-object v5, Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;->i:Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;
+    sput-object v5, Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;->j:Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;
 
     .line 5
     new-instance v7, Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;
@@ -115,7 +115,7 @@
 
     invoke-direct {v7, v9, v10}, Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;-><init>(Ljava/lang/String;I)V
 
-    sput-object v7, Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;->j:Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;
+    sput-object v7, Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;->k:Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;
 
     .line 6
     new-instance v9, Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;
@@ -126,7 +126,7 @@
 
     invoke-direct {v9, v11, v12}, Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;-><init>(Ljava/lang/String;I)V
 
-    sput-object v9, Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;->k:Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;
+    sput-object v9, Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;->l:Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;
 
     .line 7
     new-instance v11, Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;
@@ -137,7 +137,7 @@
 
     invoke-direct {v11, v13, v14}, Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;-><init>(Ljava/lang/String;I)V
 
-    sput-object v11, Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;->l:Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;
+    sput-object v11, Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;->m:Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;
 
     .line 8
     new-instance v13, Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;
@@ -148,7 +148,7 @@
 
     invoke-direct {v13, v15, v14}, Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;-><init>(Ljava/lang/String;I)V
 
-    sput-object v13, Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;->m:Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;
+    sput-object v13, Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;->n:Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;
 
     .line 9
     new-instance v15, Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;
@@ -159,7 +159,7 @@
 
     invoke-direct {v15, v14, v12}, Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;-><init>(Ljava/lang/String;I)V
 
-    sput-object v15, Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;->n:Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;
+    sput-object v15, Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;->o:Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;
 
     .line 10
     new-instance v14, Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;
@@ -170,7 +170,7 @@
 
     invoke-direct {v14, v12, v10}, Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;-><init>(Ljava/lang/String;I)V
 
-    sput-object v14, Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;->o:Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;
+    sput-object v14, Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;->p:Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;
 
     .line 11
     new-instance v12, Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;
@@ -181,7 +181,7 @@
 
     invoke-direct {v12, v10, v8}, Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;-><init>(Ljava/lang/String;I)V
 
-    sput-object v12, Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;->p:Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;
+    sput-object v12, Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;->q:Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;
 
     .line 12
     new-instance v10, Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;
@@ -192,7 +192,7 @@
 
     invoke-direct {v10, v8, v6}, Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;-><init>(Ljava/lang/String;I)V
 
-    sput-object v10, Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;->q:Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;
+    sput-object v10, Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;->r:Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;
 
     .line 13
     new-instance v8, Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;
@@ -203,7 +203,7 @@
 
     invoke-direct {v8, v6, v4}, Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;-><init>(Ljava/lang/String;I)V
 
-    sput-object v8, Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;->r:Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;
+    sput-object v8, Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;->s:Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;
 
     .line 14
     new-instance v6, Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;
@@ -214,7 +214,7 @@
 
     invoke-direct {v6, v4, v2}, Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;-><init>(Ljava/lang/String;I)V
 
-    sput-object v6, Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;->s:Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;
+    sput-object v6, Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;->t:Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;
 
     .line 15
     new-instance v4, Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;
@@ -227,7 +227,7 @@
 
     invoke-direct {v4, v2, v6}, Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;-><init>(Ljava/lang/String;I)V
 
-    sput-object v4, Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;->t:Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;
+    sput-object v4, Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;->u:Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;
 
     .line 16
     new-instance v2, Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;
@@ -240,7 +240,7 @@
 
     invoke-direct {v2, v6, v4}, Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;-><init>(Ljava/lang/String;I)V
 
-    sput-object v2, Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;->u:Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;
+    sput-object v2, Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;->v:Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;
 
     const/16 v6, 0x10
 
@@ -309,7 +309,7 @@
     aput-object v2, v6, v4
 
     .line 17
-    sput-object v6, Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;->v:[Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;
+    sput-object v6, Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;->w:[Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;
 
     return-void
 .end method
@@ -344,7 +344,7 @@
 .method public static values()[Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;
     .locals 1
 
-    sget-object v0, Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;->v:[Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;
+    sget-object v0, Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;->w:[Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;
 
     invoke-virtual {v0}, [Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;->clone()Ljava/lang/Object;
 

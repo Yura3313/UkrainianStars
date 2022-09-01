@@ -74,10 +74,10 @@
     iget-object v2, p0, Lcom/journeyapps/barcodescanner/DecoratedBarcodeView$b;->b:Lcom/journeyapps/barcodescanner/DecoratedBarcodeView;
 
     .line 3
-    iget-object v2, v2, Lcom/journeyapps/barcodescanner/DecoratedBarcodeView;->g:Lcom/journeyapps/barcodescanner/ViewfinderView;
+    iget-object v2, v2, Lcom/journeyapps/barcodescanner/DecoratedBarcodeView;->h:Lcom/journeyapps/barcodescanner/ViewfinderView;
 
     .line 4
-    iget-object v3, v2, Lcom/journeyapps/barcodescanner/ViewfinderView;->k:Ljava/util/List;
+    iget-object v3, v2, Lcom/journeyapps/barcodescanner/ViewfinderView;->l:Ljava/util/List;
 
     invoke-interface {v3}, Ljava/util/List;->size()I
 
@@ -88,7 +88,7 @@
     if-ge v3, v4, :cond_0
 
     .line 5
-    iget-object v2, v2, Lcom/journeyapps/barcodescanner/ViewfinderView;->k:Ljava/util/List;
+    iget-object v2, v2, Lcom/journeyapps/barcodescanner/ViewfinderView;->l:Ljava/util/List;
 
     invoke-interface {v2, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 

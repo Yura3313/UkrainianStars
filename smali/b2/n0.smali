@@ -1,216 +1,219 @@
 .class public final Lb2/n0;
-.super Lb2/r;
+.super Lb2/f0;
 .source "com.google.android.gms:play-services-base@@17.5.0"
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "<A:",
-        "Lcom/google/android/gms/common/api/internal/a<",
-        "+",
-        "La2/g;",
-        "Lcom/google/android/gms/common/api/a$b;",
-        ">;>",
-        "Lb2/r;"
+        "Lb2/f0<",
+        "Ljava/lang/Boolean;",
+        ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final b:Lcom/google/android/gms/common/api/internal/a;
+.field public final c:Lb2/i;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "TA;"
+            "Lb2/i<",
+            "*>;"
         }
     .end annotation
 .end field
 
 
 # direct methods
-.method public constructor <init>(ILcom/google/android/gms/common/api/internal/a;)V
+.method public constructor <init>(Lb2/i;Lc4/g;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "(ITA;)V"
+            "(",
+            "Lb2/i<",
+            "*>;",
+            "Lc4/g<",
+            "Ljava/lang/Boolean;",
+            ">;)V"
         }
     .end annotation
 
     .line 1
-    invoke-direct {p0, p1}, Lb2/r;-><init>(I)V
+    invoke-direct {p0, p2}, Lb2/f0;-><init>(Lc4/g;)V
 
     .line 2
-    iput-object p2, p0, Lb2/n0;->b:Lcom/google/android/gms/common/api/internal/a;
+    iput-object p1, p0, Lb2/n0;->c:Lb2/i;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final b(Lb2/f$a;)V
-    .locals 5
+.method public final bridge synthetic c(Lb2/v0;Z)V
+    .locals 0
+
+    return-void
+.end method
+
+.method public final f(Lb2/e$a;)[Lcom/google/android/gms/common/Feature;
+    .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lb2/f$a<",
+            "Lb2/e$a<",
+            "*>;)[",
+            "Lcom/google/android/gms/common/Feature;"
+        }
+    .end annotation
+
+    .line 1
+    iget-object p1, p1, Lb2/e$a;->l:Ljava/util/HashMap;
+
+    .line 2
+    iget-object v0, p0, Lb2/n0;->c:Lb2/i;
+
+    invoke-virtual {p1, v0}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Lb2/e0;
+
+    const/4 v0, 0x0
+
+    if-nez p1, :cond_0
+
+    return-object v0
+
+    .line 3
+    :cond_0
+    throw v0
+.end method
+
+.method public final g(Lb2/e$a;)Z
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lb2/e$a<",
+            "*>;)Z"
+        }
+    .end annotation
+
+    .line 1
+    iget-object p1, p1, Lb2/e$a;->l:Ljava/util/HashMap;
+
+    .line 2
+    iget-object v0, p0, Lb2/n0;->c:Lb2/i;
+
+    invoke-virtual {p1, v0}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Lb2/e0;
+
+    if-nez p1, :cond_0
+
+    const/4 p1, 0x0
+
+    return p1
+
+    :cond_0
+    const/4 p1, 0x0
+
+    .line 3
+    throw p1
+.end method
+
+.method public final h(Lb2/e$a;)V
+    .locals 3
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lb2/e$a<",
             "*>;)V"
         }
     .end annotation
 
     .annotation system Ldalvik/annotation/Throws;
         value = {
-            Landroid/os/DeadObjectException;
+            Landroid/os/RemoteException;
         }
     .end annotation
 
     .line 1
-    :try_start_0
-    iget-object v0, p0, Lb2/n0;->b:Lcom/google/android/gms/common/api/internal/a;
+    iget-object p1, p1, Lb2/e$a;->l:Ljava/util/HashMap;
 
     .line 2
-    iget-object p1, p1, Lb2/f$a;->g:Lcom/google/android/gms/common/api/a$f;
+    iget-object v0, p0, Lb2/n0;->c:Lb2/i;
 
-    .line 3
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-    :try_end_0
-    .catch Ljava/lang/RuntimeException; {:try_start_0 .. :try_end_0} :catch_2
-
-    const/4 v1, 0x0
-
-    const/16 v2, 0x8
-
-    .line 4
-    :try_start_1
-    invoke-virtual {v0, p1}, Lcom/google/android/gms/common/api/internal/a;->k(Lcom/google/android/gms/common/api/a$b;)V
-    :try_end_1
-    .catch Landroid/os/DeadObjectException; {:try_start_1 .. :try_end_1} :catch_1
-    .catch Landroid/os/RemoteException; {:try_start_1 .. :try_end_1} :catch_0
-    .catch Ljava/lang/RuntimeException; {:try_start_1 .. :try_end_1} :catch_2
-
-    goto :goto_0
-
-    :catch_0
-    move-exception p1
-
-    .line 5
-    :try_start_2
-    new-instance v3, Lcom/google/android/gms/common/api/Status;
-
-    invoke-virtual {p1}, Ljava/lang/Throwable;->getLocalizedMessage()Ljava/lang/String;
+    invoke-virtual {p1, v0}, Ljava/util/HashMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
 
-    invoke-direct {v3, v2, p1, v1}, Lcom/google/android/gms/common/api/Status;-><init>(ILjava/lang/String;Landroid/app/PendingIntent;)V
+    check-cast p1, Lb2/e0;
+
+    if-nez p1, :cond_1
+
+    .line 3
+    iget-object p1, p0, Lb2/f0;->b:Lc4/g;
+
+    sget-object v0, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
+
+    .line 4
+    iget-object p1, p1, Lc4/g;->a:Lc4/y;
+
+    .line 5
+    iget-object v1, p1, Lc4/y;->a:Ljava/lang/Object;
+
+    monitor-enter v1
 
     .line 6
-    invoke-virtual {v0, v3}, Lcom/google/android/gms/common/api/internal/a;->l(Lcom/google/android/gms/common/api/Status;)V
+    :try_start_0
+    iget-boolean v2, p1, Lc4/y;->c:Z
+
+    if-eqz v2, :cond_0
+
+    .line 7
+    monitor-exit v1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v2, 0x1
+
+    .line 8
+    iput-boolean v2, p1, Lc4/y;->c:Z
+
+    .line 9
+    iput-object v0, p1, Lc4/y;->e:Ljava/lang/Object;
+
+    .line 10
+    monitor-exit v1
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 11
+    iget-object v0, p1, Lc4/y;->b:Lc4/v;
+
+    invoke-virtual {v0, p1}, Lc4/v;->a(Lc4/f;)V
 
     :goto_0
     return-void
 
-    :catch_1
+    :catchall_0
     move-exception p1
 
-    .line 7
-    new-instance v3, Lcom/google/android/gms/common/api/Status;
+    .line 12
+    :try_start_1
+    monitor-exit v1
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
-    invoke-virtual {p1}, Ljava/lang/Throwable;->getLocalizedMessage()Ljava/lang/String;
-
-    move-result-object v4
-
-    invoke-direct {v3, v2, v4, v1}, Lcom/google/android/gms/common/api/Status;-><init>(ILjava/lang/String;Landroid/app/PendingIntent;)V
-
-    .line 8
-    invoke-virtual {v0, v3}, Lcom/google/android/gms/common/api/internal/a;->l(Lcom/google/android/gms/common/api/Status;)V
-
-    .line 9
     throw p1
-    :try_end_2
-    .catch Ljava/lang/RuntimeException; {:try_start_2 .. :try_end_2} :catch_2
 
-    :catch_2
-    move-exception p1
+    :cond_1
+    const/4 p1, 0x0
 
-    .line 10
-    invoke-virtual {p0, p1}, Lb2/n0;->e(Ljava/lang/Exception;)V
-
-    return-void
-.end method
-
-.method public final c(Lb2/w0;Z)V
-    .locals 1
-
-    iget-object v0, p0, Lb2/n0;->b:Lcom/google/android/gms/common/api/internal/a;
-
-    invoke-virtual {p1, v0, p2}, Lb2/w0;->c(Lcom/google/android/gms/common/api/internal/BasePendingResult;Z)V
-
-    return-void
-.end method
-
-.method public final d(Lcom/google/android/gms/common/api/Status;)V
-    .locals 1
-
-    :try_start_0
-    iget-object v0, p0, Lb2/n0;->b:Lcom/google/android/gms/common/api/internal/a;
-
-    invoke-virtual {v0, p1}, Lcom/google/android/gms/common/api/internal/a;->l(Lcom/google/android/gms/common/api/Status;)V
-    :try_end_0
-    .catch Ljava/lang/IllegalStateException; {:try_start_0 .. :try_end_0} :catch_0
-
-    :catch_0
-    return-void
-.end method
-
-.method public final e(Ljava/lang/Exception;)V
-    .locals 4
-
-    .line 1
-    new-instance v0, Lcom/google/android/gms/common/api/Status;
-
-    .line 2
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    move-result-object v1
-
-    invoke-virtual {v1}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-virtual {p1}, Ljava/lang/Throwable;->getLocalizedMessage()Ljava/lang/String;
-
-    move-result-object p1
-
-    invoke-virtual {v1}, Ljava/lang/String;->length()I
-
-    move-result v2
-
-    add-int/lit8 v2, v2, 0x2
-
-    .line 3
-    invoke-static {p1, v2}, La1/e;->a(Ljava/lang/String;I)I
-
-    move-result v2
-
-    const-string v3, ": "
-
-    .line 4
-    invoke-static {v2, v1, v3, p1}, Landroid/support/v4/media/b;->a(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object p1
-
-    const/16 v1, 0xa
-
-    .line 5
-    invoke-direct {v0, v1, p1}, Lcom/google/android/gms/common/api/Status;-><init>(ILjava/lang/String;)V
-
-    .line 6
-    :try_start_0
-    iget-object p1, p0, Lb2/n0;->b:Lcom/google/android/gms/common/api/internal/a;
-
-    invoke-virtual {p1, v0}, Lcom/google/android/gms/common/api/internal/a;->l(Lcom/google/android/gms/common/api/Status;)V
-    :try_end_0
-    .catch Ljava/lang/IllegalStateException; {:try_start_0 .. :try_end_0} :catch_0
-
-    :catch_0
-    return-void
+    .line 13
+    throw p1
 .end method

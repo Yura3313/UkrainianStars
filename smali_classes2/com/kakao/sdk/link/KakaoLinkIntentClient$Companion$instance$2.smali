@@ -1,5 +1,5 @@
 .class final Lcom/kakao/sdk/link/KakaoLinkIntentClient$Companion$instance$2;
-.super Lse/h;
+.super Lse/i;
 .source "KakaoLinkIntentClient.kt"
 
 # interfaces
@@ -18,7 +18,7 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/a<",
         "Lcom/kakao/sdk/link/KakaoLinkIntentClient;",
         ">;"
@@ -48,7 +48,7 @@
 
     const/4 v0, 0x0
 
-    invoke-direct {p0, v0}, Lse/h;-><init>(I)V
+    invoke-direct {p0, v0}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -73,7 +73,7 @@
 
     move-object v0, v6
 
-    invoke-direct/range {v0 .. v5}, Lcom/kakao/sdk/link/KakaoLinkIntentClient;-><init>(Lcom/kakao/sdk/common/model/ContextInfo;Lcom/kakao/sdk/common/model/ApplicationInfo;Lcom/kakao/sdk/common/util/IntentResolveClient;ILse/e;)V
+    invoke-direct/range {v0 .. v5}, Lcom/kakao/sdk/link/KakaoLinkIntentClient;-><init>(Lcom/kakao/sdk/common/model/ContextInfo;Lcom/kakao/sdk/common/model/ApplicationInfo;Lcom/kakao/sdk/common/util/IntentResolveClient;ILse/f;)V
 
     return-object v6
 .end method

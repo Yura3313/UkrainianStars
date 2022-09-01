@@ -20,7 +20,7 @@
 
     const-string v0, "rootDir"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-direct {p0, p1}, Lpe/c$c;-><init>(Ljava/io/File;)V
 

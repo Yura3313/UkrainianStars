@@ -197,12 +197,12 @@
     :cond_2
     iput v1, v0, Lcom/android/billingclient/api/b;->a:I
 
-    iget-object p1, v0, Lcom/android/billingclient/api/b;->d:Lcom/android/billingclient/api/b0;
+    iget-object p1, v0, Lcom/android/billingclient/api/b;->d:Lcom/android/billingclient/api/a0;
 
     .line 27
-    iget-object v3, p1, Lcom/android/billingclient/api/b0;->b:Lcom/android/billingclient/api/a0;
+    iget-object v3, p1, Lcom/android/billingclient/api/a0;->b:Lcom/android/billingclient/api/z;
 
-    iget-object p1, p1, Lcom/android/billingclient/api/b0;->a:Landroid/content/Context;
+    iget-object p1, p1, Lcom/android/billingclient/api/a0;->a:Landroid/content/Context;
 
     new-instance v4, Landroid/content/IntentFilter;
 
@@ -212,19 +212,19 @@
     invoke-direct {v4, v5}, Landroid/content/IntentFilter;-><init>(Ljava/lang/String;)V
 
     .line 29
-    iget-boolean v5, v3, Lcom/android/billingclient/api/a0;->b:Z
+    iget-boolean v5, v3, Lcom/android/billingclient/api/z;->b:Z
 
     if-nez v5, :cond_3
 
-    iget-object v5, v3, Lcom/android/billingclient/api/a0;->c:Lcom/android/billingclient/api/b0;
+    iget-object v5, v3, Lcom/android/billingclient/api/z;->c:Lcom/android/billingclient/api/a0;
 
     .line 30
-    iget-object v5, v5, Lcom/android/billingclient/api/b0;->b:Lcom/android/billingclient/api/a0;
+    iget-object v5, v5, Lcom/android/billingclient/api/a0;->b:Lcom/android/billingclient/api/z;
 
     .line 31
     invoke-virtual {p1, v5, v4}, Landroid/content/Context;->registerReceiver(Landroid/content/BroadcastReceiver;Landroid/content/IntentFilter;)Landroid/content/Intent;
 
-    iput-boolean v1, v3, Lcom/android/billingclient/api/a0;->b:Z
+    iput-boolean v1, v3, Lcom/android/billingclient/api/z;->b:Z
 
     .line 32
     :cond_3
@@ -949,7 +949,7 @@
     invoke-direct {v4, v15}, Ljava/lang/StringBuilder;-><init>(I)V
 
     .line 68
-    invoke-static {v4, v11, v14}, Landroid/support/v4/media/b;->b(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v4, v11, v14}, Landroid/support/v4/media/b;->a(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v4
 
@@ -1666,7 +1666,7 @@
 
     .line 154
     :goto_14
-    new-instance v0, Lcom/android/billingclient/api/l0;
+    new-instance v0, Lcom/android/billingclient/api/k0;
 
     move-object v6, v0
 
@@ -1675,7 +1675,7 @@
     move-object/from16 v10, v23
 
     .line 155
-    invoke-direct/range {v6 .. v11}, Lcom/android/billingclient/api/l0;-><init>(Lcom/android/billingclient/api/b;ILcom/android/billingclient/api/SkuDetails;Ljava/lang/String;Landroid/os/Bundle;)V
+    invoke-direct/range {v6 .. v11}, Lcom/android/billingclient/api/k0;-><init>(Lcom/android/billingclient/api/b;ILcom/android/billingclient/api/SkuDetails;Ljava/lang/String;Landroid/os/Bundle;)V
 
     const-wide/16 v2, 0x1388
 
@@ -1704,10 +1704,10 @@
     if-eqz v7, :cond_32
 
     .line 157
-    new-instance v5, Lcom/android/billingclient/api/m0;
+    new-instance v5, Lcom/android/billingclient/api/l0;
 
     .line 158
-    invoke-direct {v5, v12, v0, v9}, Lcom/android/billingclient/api/m0;-><init>(Lcom/android/billingclient/api/b;Lcom/android/billingclient/api/d;Lcom/android/billingclient/api/SkuDetails;)V
+    invoke-direct {v5, v12, v0, v9}, Lcom/android/billingclient/api/l0;-><init>(Lcom/android/billingclient/api/b;Lcom/android/billingclient/api/d;Lcom/android/billingclient/api/SkuDetails;)V
 
     .line 159
     invoke-virtual {v12, v5, v2, v3, v4}, Lcom/android/billingclient/api/b;->h(Ljava/util/concurrent/Callable;JLjava/lang/Runnable;)Ljava/util/concurrent/Future;
@@ -1993,14 +1993,14 @@
 
     .line 14
     :cond_0
-    new-instance v2, Lcom/android/billingclient/api/e0;
+    new-instance v2, Lcom/android/billingclient/api/d0;
 
     .line 15
-    invoke-direct {v2, p1, v0, v1}, Lcom/android/billingclient/api/e0;-><init>(Lcom/android/billingclient/api/b;Lcom/android/billingclient/api/f;Lcom/android/billingclient/api/g;)V
+    invoke-direct {v2, p1, v0, v1}, Lcom/android/billingclient/api/d0;-><init>(Lcom/android/billingclient/api/b;Lcom/android/billingclient/api/f;Lcom/android/billingclient/api/g;)V
 
-    new-instance v3, Lcom/android/billingclient/api/f0;
+    new-instance v3, Lcom/android/billingclient/api/e0;
 
-    invoke-direct {v3, v1, v0}, Lcom/android/billingclient/api/f0;-><init>(Lcom/android/billingclient/api/g;Lcom/android/billingclient/api/f;)V
+    invoke-direct {v3, v1, v0}, Lcom/android/billingclient/api/e0;-><init>(Lcom/android/billingclient/api/g;Lcom/android/billingclient/api/f;)V
 
     const-wide/16 v0, 0x7530
 

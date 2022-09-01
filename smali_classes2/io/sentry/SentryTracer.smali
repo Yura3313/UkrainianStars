@@ -250,9 +250,9 @@
 
     iget-object v6, p0, Lio/sentry/SentryTracer;->hub:Lio/sentry/IHub;
 
-    new-instance v8, Lio/sentry/c0;
+    new-instance v8, Lio/sentry/d0;
 
-    invoke-direct {v8, p0}, Lio/sentry/c0;-><init>(Lio/sentry/SentryTracer;)V
+    invoke-direct {v8, p0}, Lio/sentry/d0;-><init>(Lio/sentry/SentryTracer;)V
 
     move-object v1, v0
 
@@ -463,9 +463,9 @@
 .method private synthetic lambda$finish$2(Lio/sentry/Scope;)V
     .locals 1
 
-    new-instance v0, Lio/sentry/z;
+    new-instance v0, Lio/sentry/a0;
 
-    invoke-direct {v0, p0, p1}, Lio/sentry/z;-><init>(Lio/sentry/SentryTracer;Lio/sentry/Scope;)V
+    invoke-direct {v0, p0, p1}, Lio/sentry/a0;-><init>(Lio/sentry/SentryTracer;Lio/sentry/Scope;)V
 
     invoke-virtual {p1, v0}, Lio/sentry/Scope;->withTransaction(Lio/sentry/Scope$IWithTransaction;)V
 
@@ -639,9 +639,9 @@
     :cond_3
     iget-object p1, p0, Lio/sentry/SentryTracer;->hub:Lio/sentry/IHub;
 
-    new-instance v0, Lio/sentry/a0;
+    new-instance v0, Lio/sentry/b0;
 
-    invoke-direct {v0, p0}, Lio/sentry/a0;-><init>(Lio/sentry/SentryTracer;)V
+    invoke-direct {v0, p0}, Lio/sentry/b0;-><init>(Lio/sentry/SentryTracer;)V
 
     invoke-interface {p1, v0}, Lio/sentry/IHub;->configureScope(Lio/sentry/ScopeCallback;)V
 
@@ -1319,9 +1319,9 @@
     .line 5
     iget-object v1, p0, Lio/sentry/SentryTracer;->hub:Lio/sentry/IHub;
 
-    new-instance v2, Lio/sentry/b0;
+    new-instance v2, Lio/sentry/c0;
 
-    invoke-direct {v2, v0}, Lio/sentry/b0;-><init>(Ljava/util/concurrent/atomic/AtomicReference;)V
+    invoke-direct {v2, v0}, Lio/sentry/c0;-><init>(Ljava/util/concurrent/atomic/AtomicReference;)V
 
     invoke-interface {v1, v2}, Lio/sentry/IHub;->configureScope(Lio/sentry/ScopeCallback;)V
 

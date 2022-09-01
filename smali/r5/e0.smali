@@ -1,22 +1,25 @@
 .class public final Lr5/e0;
 .super Ljava/lang/Object;
-.source "RsaSsaPkcs1SignJce.java"
+.source "PrfMac.java"
 
 # interfaces
-.implements Lf5/s;
+.implements Lf5/n;
+
+
+# annotations
+.annotation runtime Lcom/google/errorprone/annotations/Immutable;
+.end annotation
 
 
 # instance fields
-.field public final a:Ljava/security/interfaces/RSAPrivateCrtKey;
+.field public final a:Lm5/c;
 
-.field public final b:Ljava/security/interfaces/RSAPublicKey;
-
-.field public final c:Ljava/lang/String;
+.field public final b:I
 
 
 # direct methods
-.method public constructor <init>(Ljava/security/interfaces/RSAPrivateCrtKey;I)V
-    .locals 2
+.method public constructor <init>(Lm5/c;I)V
+    .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/security/GeneralSecurityException;
@@ -27,87 +30,41 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    invoke-static {p2}, Lr5/j0;->d(I)V
+    iput-object p1, p0, Lr5/e0;->a:Lm5/c;
 
     .line 3
-    invoke-interface {p1}, Ljava/security/interfaces/RSAKey;->getModulus()Ljava/math/BigInteger;
+    iput p2, p0, Lr5/e0;->b:I
 
-    move-result-object v0
+    const/16 v0, 0xa
 
-    invoke-virtual {v0}, Ljava/math/BigInteger;->bitLength()I
+    if-lt p2, v0, :cond_0
 
-    move-result v0
+    const/4 v0, 0x0
 
-    invoke-static {v0}, Lr5/j0;->c(I)V
+    new-array v0, v0, [B
 
     .line 4
-    iput-object p1, p0, Lr5/e0;->a:Ljava/security/interfaces/RSAPrivateCrtKey;
+    check-cast p1, Lr5/d0;
 
-    .line 5
-    invoke-static {p2}, Lr5/j0;->d(I)V
-
-    .line 6
-    new-instance v0, Ljava/lang/StringBuilder;
-
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    invoke-static {p2}, Lr5/z;->b(I)Ljava/lang/String;
-
-    move-result-object p2
-
-    invoke-virtual {v0, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string p2, "withRSA"
-
-    invoke-virtual {v0, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p2
-
-    .line 7
-    iput-object p2, p0, Lr5/e0;->c:Ljava/lang/String;
-
-    .line 8
-    sget-object p2, Lr5/x;->j:Lr5/x;
-
-    const-string v0, "RSA"
-
-    invoke-virtual {p2, v0}, Lr5/x;->a(Ljava/lang/String;)Ljava/lang/Object;
-
-    move-result-object p2
-
-    check-cast p2, Ljava/security/KeyFactory;
-
-    .line 9
-    new-instance v0, Ljava/security/spec/RSAPublicKeySpec;
-
-    .line 10
-    invoke-interface {p1}, Ljava/security/interfaces/RSAKey;->getModulus()Ljava/math/BigInteger;
-
-    move-result-object v1
-
-    invoke-interface {p1}, Ljava/security/interfaces/RSAPrivateCrtKey;->getPublicExponent()Ljava/math/BigInteger;
-
-    move-result-object p1
-
-    invoke-direct {v0, v1, p1}, Ljava/security/spec/RSAPublicKeySpec;-><init>(Ljava/math/BigInteger;Ljava/math/BigInteger;)V
-
-    invoke-virtual {p2, v0}, Ljava/security/KeyFactory;->generatePublic(Ljava/security/spec/KeySpec;)Ljava/security/PublicKey;
-
-    move-result-object p1
-
-    check-cast p1, Ljava/security/interfaces/RSAPublicKey;
-
-    iput-object p1, p0, Lr5/e0;->b:Ljava/security/interfaces/RSAPublicKey;
+    invoke-virtual {p1, v0, p2}, Lr5/d0;->a([BI)[B
 
     return-void
+
+    .line 5
+    :cond_0
+    new-instance p1, Ljava/security/InvalidAlgorithmParameterException;
+
+    const-string p2, "tag size too small, need at least 10 bytes"
+
+    invoke-direct {p1, p2}, Ljava/security/InvalidAlgorithmParameterException;-><init>(Ljava/lang/String;)V
+
+    throw p1
 .end method
 
 
 # virtual methods
-.method public final a([B)[B
-    .locals 3
+.method public final a([B[B)V
+    .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/security/GeneralSecurityException;
@@ -115,62 +72,44 @@
     .end annotation
 
     .line 1
-    sget-object v0, Lr5/x;->g:Lr5/x;
+    invoke-virtual {p0, p2}, Lr5/e0;->b([B)[B
 
-    iget-object v1, p0, Lr5/e0;->c:Ljava/lang/String;
+    move-result-object p2
 
-    invoke-virtual {v0, v1}, Lr5/x;->a(Ljava/lang/String;)Ljava/lang/Object;
-
-    move-result-object v1
-
-    check-cast v1, Ljava/security/Signature;
-
-    .line 2
-    iget-object v2, p0, Lr5/e0;->a:Ljava/security/interfaces/RSAPrivateCrtKey;
-
-    invoke-virtual {v1, v2}, Ljava/security/Signature;->initSign(Ljava/security/PrivateKey;)V
-
-    .line 3
-    invoke-virtual {v1, p1}, Ljava/security/Signature;->update([B)V
-
-    .line 4
-    invoke-virtual {v1}, Ljava/security/Signature;->sign()[B
-
-    move-result-object v1
-
-    .line 5
-    iget-object v2, p0, Lr5/e0;->c:Ljava/lang/String;
-
-    invoke-virtual {v0, v2}, Lr5/x;->a(Ljava/lang/String;)Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Ljava/security/Signature;
-
-    .line 6
-    iget-object v2, p0, Lr5/e0;->b:Ljava/security/interfaces/RSAPublicKey;
-
-    invoke-virtual {v0, v2}, Ljava/security/Signature;->initVerify(Ljava/security/PublicKey;)V
-
-    .line 7
-    invoke-virtual {v0, p1}, Ljava/security/Signature;->update([B)V
-
-    .line 8
-    invoke-virtual {v0, v1}, Ljava/security/Signature;->verify([B)Z
+    invoke-static {p2, p1}, Lr5/i;->b([B[B)Z
 
     move-result p1
 
     if-eqz p1, :cond_0
 
-    return-object v1
+    return-void
 
-    .line 9
+    .line 2
     :cond_0
-    new-instance p1, Ljava/lang/RuntimeException;
+    new-instance p1, Ljava/security/GeneralSecurityException;
 
-    const-string v0, "Security bug: RSA signature computation error"
+    const-string p2, "invalid MAC"
 
-    invoke-direct {p1, v0}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;)V
+    invoke-direct {p1, p2}, Ljava/security/GeneralSecurityException;-><init>(Ljava/lang/String;)V
 
     throw p1
+.end method
+
+.method public final b([B)[B
+    .locals 2
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/security/GeneralSecurityException;
+        }
+    .end annotation
+
+    iget-object v0, p0, Lr5/e0;->a:Lm5/c;
+
+    iget v1, p0, Lr5/e0;->b:I
+
+    invoke-interface {v0, p1, v1}, Lm5/c;->a([BI)[B
+
+    move-result-object p1
+
+    return-object p1
 .end method

@@ -1,87 +1,37 @@
 .class public final Lk3/nd;
-.super Lk3/fl0;
+.super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 
-# instance fields
-.field public final f:Ljava/util/concurrent/Executor;
+# static fields
+.field public static final a:Lk3/gl;
 
 
 # direct methods
-.method public constructor <init>(Ljava/util/concurrent/Executor;)V
-    .locals 0
+.method static synthetic constructor <clinit>()V
+    .locals 2
 
-    .line 1
-    invoke-direct {p0}, Lk3/fl0;-><init>()V
+    new-instance v0, Lk3/gl;
 
-    .line 2
-    iput-object p1, p0, Lk3/nd;->f:Ljava/util/concurrent/Executor;
+    const/4 v1, 0x2
 
-    return-void
-.end method
+    invoke-direct {v0, v1}, Lk3/gl;-><init>(I)V
 
-
-# virtual methods
-.method public final awaitTermination(JLjava/util/concurrent/TimeUnit;)Z
-    .locals 0
-
-    new-instance p1, Ljava/lang/UnsupportedOperationException;
-
-    invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V
-
-    throw p1
-.end method
-
-.method public final execute(Ljava/lang/Runnable;)V
-    .locals 1
-
-    iget-object v0, p0, Lk3/nd;->f:Ljava/util/concurrent/Executor;
-
-    invoke-interface {v0, p1}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
+    sput-object v0, Lk3/nd;->a:Lk3/gl;
 
     return-void
 .end method
 
-.method public final isShutdown()Z
+.method public static a(Lk3/hm0;Ljava/lang/String;)V
     .locals 1
 
-    const/4 v0, 0x0
+    new-instance v0, Lk3/pd;
 
-    return v0
-.end method
+    invoke-direct {v0, p1}, Lk3/pd;-><init>(Ljava/lang/String;)V
 
-.method public final isTerminated()Z
-    .locals 1
+    sget-object p1, Lk3/jd;->f:Lk3/od;
 
-    const/4 v0, 0x0
+    invoke-static {p0, v0, p1}, Lk3/dm0;->f(Lk3/hm0;Lk3/am0;Ljava/util/concurrent/Executor;)V
 
-    return v0
-.end method
-
-.method public final shutdown()V
-    .locals 1
-
-    new-instance v0, Ljava/lang/UnsupportedOperationException;
-
-    invoke-direct {v0}, Ljava/lang/UnsupportedOperationException;-><init>()V
-
-    throw v0
-.end method
-
-.method public final shutdownNow()Ljava/util/List;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Ljava/util/List<",
-            "Ljava/lang/Runnable;",
-            ">;"
-        }
-    .end annotation
-
-    new-instance v0, Ljava/lang/UnsupportedOperationException;
-
-    invoke-direct {v0}, Ljava/lang/UnsupportedOperationException;-><init>()V
-
-    throw v0
+    return-void
 .end method

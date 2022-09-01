@@ -7,7 +7,7 @@
 .method public abstract a(Ljava/lang/String;)Landroid/graphics/Bitmap;
 .end method
 
-.method public abstract d()Ljava/util/Collection;
+.method public abstract c()Ljava/util/Collection;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
@@ -18,7 +18,7 @@
     .end annotation
 .end method
 
-.method public abstract e(Ljava/lang/String;Landroid/graphics/Bitmap;)Z
+.method public abstract d(Ljava/lang/String;Landroid/graphics/Bitmap;)Z
 .end method
 
 .method public abstract remove(Ljava/lang/String;)Landroid/graphics/Bitmap;

@@ -1,101 +1,75 @@
 .class public final Lze/g1;
-.super Lze/f0;
-.source "Builders.common.kt"
+.super Ljava/lang/Object;
+.source "JobSupport.kt"
 
 
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "<T:",
-        "Ljava/lang/Object;",
-        ">",
-        "Lze/f0<",
-        "TT;>;"
-    }
-.end annotation
+# static fields
+.field public static final a:Laf/w;
 
+.field public static final b:Lze/p0;
 
-# instance fields
-.field public i:Lre/p;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lre/p<",
-            "-",
-            "Lze/a0;",
-            "-",
-            "Lke/d<",
-            "-TT;>;+",
-            "Ljava/lang/Object;",
-            ">;"
-        }
-    .end annotation
-.end field
+.field public static final c:Lze/p0;
 
 
 # direct methods
-.method public constructor <init>(Lke/f;Lre/p;)V
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lke/f;",
-            "Lre/p<",
-            "-",
-            "Lze/a0;",
-            "-",
-            "Lke/d<",
-            "-TT;>;+",
-            "Ljava/lang/Object;",
-            ">;)V"
-        }
-    .end annotation
-
-    const-string v0, "parentContext"
-
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const/4 v0, 0x0
+.method public static constructor <clinit>()V
+    .locals 2
 
     .line 1
-    invoke-direct {p0, p1, v0}, Lze/f0;-><init>(Lke/f;Z)V
+    new-instance v0, Laf/w;
+
+    const-string v1, "SEALED"
+
+    invoke-direct {v0, v1}, Laf/w;-><init>(Ljava/lang/String;)V
+
+    sput-object v0, Lze/g1;->a:Laf/w;
 
     .line 2
-    iput-object p2, p0, Lze/g1;->i:Lre/p;
+    new-instance v0, Lze/p0;
+
+    const/4 v1, 0x0
+
+    invoke-direct {v0, v1}, Lze/p0;-><init>(Z)V
+
+    sput-object v0, Lze/g1;->b:Lze/p0;
+
+    .line 3
+    new-instance v0, Lze/p0;
+
+    const/4 v1, 0x1
+
+    invoke-direct {v0, v1}, Lze/p0;-><init>(Z)V
+
+    sput-object v0, Lze/g1;->c:Lze/p0;
 
     return-void
 .end method
 
+.method public static final a(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 1
 
-# virtual methods
-.method public final W()V
-    .locals 2
+    instance-of v0, p0, Lze/y0;
 
-    .line 1
-    iget-object v0, p0, Lze/g1;->i:Lre/p;
+    if-nez v0, :cond_0
 
-    if-eqz v0, :cond_0
+    const/4 v0, 0x0
 
-    const/4 v1, 0x0
+    goto :goto_0
 
-    .line 2
-    iput-object v1, p0, Lze/g1;->i:Lre/p;
-
-    .line 3
-    invoke-static {v0, p0, p0}, Landroidx/savedstate/d;->p(Lre/p;Ljava/lang/Object;Lke/d;)V
-
-    return-void
-
-    .line 4
     :cond_0
-    new-instance v0, Ljava/lang/IllegalStateException;
+    move-object v0, p0
 
-    const-string v1, "Already started"
+    :goto_0
+    check-cast v0, Lze/y0;
 
-    invoke-virtual {v1}, Ljava/lang/Object;->toString()Ljava/lang/String;
+    if-eqz v0, :cond_1
 
-    move-result-object v1
+    iget-object v0, v0, Lze/y0;->a:Lze/x0;
 
-    invoke-direct {v0, v1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+    if-eqz v0, :cond_1
 
-    throw v0
+    move-object p0, v0
+
+    :cond_1
+    return-object p0
 .end method

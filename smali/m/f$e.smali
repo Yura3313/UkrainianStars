@@ -26,14 +26,14 @@
 
 
 # instance fields
-.field public final synthetic f:Lm/f;
+.field public final synthetic g:Lm/f;
 
 
 # direct methods
 .method public constructor <init>(Lm/f;)V
     .locals 0
 
-    iput-object p1, p0, Lm/f$e;->f:Lm/f;
+    iput-object p1, p0, Lm/f$e;->g:Lm/f;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -77,7 +77,7 @@
 .method public final clear()V
     .locals 1
 
-    iget-object v0, p0, Lm/f$e;->f:Lm/f;
+    iget-object v0, p0, Lm/f$e;->g:Lm/f;
 
     invoke-virtual {v0}, Lm/f;->a()V
 
@@ -87,7 +87,7 @@
 .method public final contains(Ljava/lang/Object;)Z
     .locals 1
 
-    iget-object v0, p0, Lm/f$e;->f:Lm/f;
+    iget-object v0, p0, Lm/f$e;->g:Lm/f;
 
     invoke-virtual {v0, p1}, Lm/f;->f(Ljava/lang/Object;)I
 
@@ -153,7 +153,7 @@
 .method public final isEmpty()Z
     .locals 1
 
-    iget-object v0, p0, Lm/f$e;->f:Lm/f;
+    iget-object v0, p0, Lm/f$e;->g:Lm/f;
 
     invoke-virtual {v0}, Lm/f;->d()I
 
@@ -184,7 +184,7 @@
 
     new-instance v0, Lm/f$a;
 
-    iget-object v1, p0, Lm/f$e;->f:Lm/f;
+    iget-object v1, p0, Lm/f$e;->g:Lm/f;
 
     const/4 v2, 0x1
 
@@ -197,7 +197,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lm/f$e;->f:Lm/f;
+    iget-object v0, p0, Lm/f$e;->g:Lm/f;
 
     invoke-virtual {v0, p1}, Lm/f;->f(Ljava/lang/Object;)I
 
@@ -206,7 +206,7 @@
     if-ltz p1, :cond_0
 
     .line 2
-    iget-object v0, p0, Lm/f$e;->f:Lm/f;
+    iget-object v0, p0, Lm/f$e;->g:Lm/f;
 
     invoke-virtual {v0, p1}, Lm/f;->h(I)V
 
@@ -231,7 +231,7 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lm/f$e;->f:Lm/f;
+    iget-object v0, p0, Lm/f$e;->g:Lm/f;
 
     invoke-virtual {v0}, Lm/f;->d()I
 
@@ -245,7 +245,7 @@
     if-ge v1, v0, :cond_1
 
     .line 2
-    iget-object v3, p0, Lm/f$e;->f:Lm/f;
+    iget-object v3, p0, Lm/f$e;->g:Lm/f;
 
     const/4 v4, 0x1
 
@@ -261,7 +261,7 @@
     if-eqz v3, :cond_0
 
     .line 4
-    iget-object v2, p0, Lm/f$e;->f:Lm/f;
+    iget-object v2, p0, Lm/f$e;->g:Lm/f;
 
     invoke-virtual {v2, v1}, Lm/f;->h(I)V
 
@@ -291,7 +291,7 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lm/f$e;->f:Lm/f;
+    iget-object v0, p0, Lm/f$e;->g:Lm/f;
 
     invoke-virtual {v0}, Lm/f;->d()I
 
@@ -305,7 +305,7 @@
     if-ge v1, v0, :cond_1
 
     .line 2
-    iget-object v3, p0, Lm/f$e;->f:Lm/f;
+    iget-object v3, p0, Lm/f$e;->g:Lm/f;
 
     const/4 v4, 0x1
 
@@ -321,7 +321,7 @@
     if-nez v3, :cond_0
 
     .line 4
-    iget-object v2, p0, Lm/f$e;->f:Lm/f;
+    iget-object v2, p0, Lm/f$e;->g:Lm/f;
 
     invoke-virtual {v2, v1}, Lm/f;->h(I)V
 
@@ -343,7 +343,7 @@
 .method public final size()I
     .locals 1
 
-    iget-object v0, p0, Lm/f$e;->f:Lm/f;
+    iget-object v0, p0, Lm/f$e;->g:Lm/f;
 
     invoke-virtual {v0}, Lm/f;->d()I
 
@@ -356,7 +356,7 @@
     .locals 5
 
     .line 1
-    iget-object v0, p0, Lm/f$e;->f:Lm/f;
+    iget-object v0, p0, Lm/f$e;->g:Lm/f;
 
     .line 2
     invoke-virtual {v0}, Lm/f;->d()I
@@ -399,7 +399,7 @@
     .end annotation
 
     .line 5
-    iget-object v0, p0, Lm/f$e;->f:Lm/f;
+    iget-object v0, p0, Lm/f$e;->g:Lm/f;
 
     const/4 v1, 0x1
 

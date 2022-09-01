@@ -14,23 +14,23 @@
 
 
 # static fields
-.field public static final enum f:Lc7/c$a;
+.field public static final enum g:Lc7/c$a;
 
-.field public static final enum g:Lc7/c$b;
+.field public static final enum h:Lc7/c$b;
 
-.field public static final enum h:Lc7/c$c;
+.field public static final enum i:Lc7/c$c;
 
-.field public static final enum i:Lc7/c$d;
+.field public static final enum j:Lc7/c$d;
 
-.field public static final enum j:Lc7/c$e;
+.field public static final enum k:Lc7/c$e;
 
-.field public static final enum k:Lc7/c$f;
+.field public static final enum l:Lc7/c$f;
 
-.field public static final enum l:Lc7/c$g;
+.field public static final enum m:Lc7/c$g;
 
-.field public static final enum m:Lc7/c$h;
+.field public static final enum n:Lc7/c$h;
 
-.field public static final synthetic n:[Lc7/c;
+.field public static final synthetic o:[Lc7/c;
 
 
 # direct methods
@@ -42,7 +42,7 @@
 
     invoke-direct {v0}, Lc7/c$a;-><init>()V
 
-    sput-object v0, Lc7/c;->f:Lc7/c$a;
+    sput-object v0, Lc7/c;->g:Lc7/c$a;
 
     .line 2
     new-instance v1, Lc7/c$b;
@@ -51,7 +51,7 @@
 
     invoke-direct {v1}, Lc7/c$b;-><init>()V
 
-    sput-object v1, Lc7/c;->g:Lc7/c$b;
+    sput-object v1, Lc7/c;->h:Lc7/c$b;
 
     .line 3
     new-instance v3, Lc7/c$c;
@@ -60,7 +60,7 @@
 
     invoke-direct {v3}, Lc7/c$c;-><init>()V
 
-    sput-object v3, Lc7/c;->h:Lc7/c$c;
+    sput-object v3, Lc7/c;->i:Lc7/c$c;
 
     .line 4
     new-instance v5, Lc7/c$d;
@@ -69,7 +69,7 @@
 
     invoke-direct {v5}, Lc7/c$d;-><init>()V
 
-    sput-object v5, Lc7/c;->i:Lc7/c$d;
+    sput-object v5, Lc7/c;->j:Lc7/c$d;
 
     .line 5
     new-instance v7, Lc7/c$e;
@@ -78,7 +78,7 @@
 
     invoke-direct {v7}, Lc7/c$e;-><init>()V
 
-    sput-object v7, Lc7/c;->j:Lc7/c$e;
+    sput-object v7, Lc7/c;->k:Lc7/c$e;
 
     .line 6
     new-instance v9, Lc7/c$f;
@@ -87,14 +87,14 @@
 
     invoke-direct {v9}, Lc7/c$f;-><init>()V
 
-    sput-object v9, Lc7/c;->k:Lc7/c$f;
+    sput-object v9, Lc7/c;->l:Lc7/c$f;
 
     .line 7
     new-instance v11, Lc7/c$g;
 
     invoke-direct {v11}, Lc7/c$g;-><init>()V
 
-    sput-object v11, Lc7/c;->l:Lc7/c$g;
+    sput-object v11, Lc7/c;->m:Lc7/c$g;
 
     .line 8
     new-instance v12, Lc7/c$h;
@@ -103,7 +103,7 @@
 
     invoke-direct {v12}, Lc7/c$h;-><init>()V
 
-    sput-object v12, Lc7/c;->m:Lc7/c$h;
+    sput-object v12, Lc7/c;->n:Lc7/c$h;
 
     const/16 v14, 0x8
 
@@ -130,7 +130,7 @@
     aput-object v12, v14, v13
 
     .line 9
-    sput-object v14, Lc7/c;->n:[Lc7/c;
+    sput-object v14, Lc7/c;->o:[Lc7/c;
 
     return-void
 .end method
@@ -160,7 +160,7 @@
 .method public static values()[Lc7/c;
     .locals 1
 
-    sget-object v0, Lc7/c;->n:[Lc7/c;
+    sget-object v0, Lc7/c;->o:[Lc7/c;
 
     invoke-virtual {v0}, [Lc7/c;->clone()Ljava/lang/Object;
 

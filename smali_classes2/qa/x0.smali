@@ -33,13 +33,13 @@
     iget-object v0, p0, Lqa/x0;->a:Lqa/e1;
 
     .line 3
-    iget-object v0, v0, Lqa/e1;->j0:Lqa/g1;
+    iget-object v0, v0, Lqa/e1;->k0:Lqa/g1;
 
     .line 4
     iget-boolean p1, p1, Lqb/a;->d:Z
 
     .line 5
-    sget-object v1, Lab/f;->f:Lab/f;
+    sget-object v1, Lab/f;->g:Lab/f;
 
     .line 6
     iget-object v0, v0, Lqa/g1;->p:Lab/h;

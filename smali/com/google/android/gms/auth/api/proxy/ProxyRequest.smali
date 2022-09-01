@@ -15,17 +15,17 @@
 
 
 # instance fields
-.field public final f:I
+.field public final g:I
 
-.field public final g:Ljava/lang/String;
+.field public final h:Ljava/lang/String;
 
-.field public final h:I
+.field public final i:I
 
-.field public final i:J
+.field public final j:J
 
-.field public final j:[B
+.field public final k:[B
 
-.field public k:Landroid/os/Bundle;
+.field public l:Landroid/os/Bundle;
 
 
 # direct methods
@@ -48,22 +48,22 @@
     invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
 
     .line 2
-    iput p1, p0, Lcom/google/android/gms/auth/api/proxy/ProxyRequest;->f:I
+    iput p1, p0, Lcom/google/android/gms/auth/api/proxy/ProxyRequest;->g:I
 
     .line 3
-    iput-object p2, p0, Lcom/google/android/gms/auth/api/proxy/ProxyRequest;->g:Ljava/lang/String;
+    iput-object p2, p0, Lcom/google/android/gms/auth/api/proxy/ProxyRequest;->h:Ljava/lang/String;
 
     .line 4
-    iput p3, p0, Lcom/google/android/gms/auth/api/proxy/ProxyRequest;->h:I
+    iput p3, p0, Lcom/google/android/gms/auth/api/proxy/ProxyRequest;->i:I
 
     .line 5
-    iput-wide p4, p0, Lcom/google/android/gms/auth/api/proxy/ProxyRequest;->i:J
+    iput-wide p4, p0, Lcom/google/android/gms/auth/api/proxy/ProxyRequest;->j:J
 
     .line 6
-    iput-object p6, p0, Lcom/google/android/gms/auth/api/proxy/ProxyRequest;->j:[B
+    iput-object p6, p0, Lcom/google/android/gms/auth/api/proxy/ProxyRequest;->k:[B
 
     .line 7
-    iput-object p7, p0, Lcom/google/android/gms/auth/api/proxy/ProxyRequest;->k:Landroid/os/Bundle;
+    iput-object p7, p0, Lcom/google/android/gms/auth/api/proxy/ProxyRequest;->l:Landroid/os/Bundle;
 
     return-void
 .end method
@@ -74,14 +74,14 @@
     .locals 4
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/gms/auth/api/proxy/ProxyRequest;->g:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/android/gms/auth/api/proxy/ProxyRequest;->h:Ljava/lang/String;
 
-    iget v1, p0, Lcom/google/android/gms/auth/api/proxy/ProxyRequest;->h:I
+    iget v1, p0, Lcom/google/android/gms/auth/api/proxy/ProxyRequest;->i:I
 
     const/16 v2, 0x2a
 
     .line 2
-    invoke-static {v0, v2}, La1/e;->a(Ljava/lang/String;I)I
+    invoke-static {v0, v2}, La1/e;->b(Ljava/lang/String;I)I
 
     move-result v2
 
@@ -124,7 +124,7 @@
     move-result v5
 
     .line 2
-    iget-object p2, p0, Lcom/google/android/gms/auth/api/proxy/ProxyRequest;->g:Ljava/lang/String;
+    iget-object p2, p0, Lcom/google/android/gms/auth/api/proxy/ProxyRequest;->h:Ljava/lang/String;
 
     const/4 v0, 0x1
 
@@ -133,7 +133,7 @@
     invoke-static {p1, v0, p2, v1}, Le2/b;->m(Landroid/os/Parcel;ILjava/lang/String;Z)V
 
     .line 3
-    iget p2, p0, Lcom/google/android/gms/auth/api/proxy/ProxyRequest;->h:I
+    iget p2, p0, Lcom/google/android/gms/auth/api/proxy/ProxyRequest;->i:I
 
     const/4 v0, 0x2
 
@@ -146,7 +146,7 @@
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 6
-    iget-wide v3, p0, Lcom/google/android/gms/auth/api/proxy/ProxyRequest;->i:J
+    iget-wide v3, p0, Lcom/google/android/gms/auth/api/proxy/ProxyRequest;->j:J
 
     const/4 p2, 0x3
 
@@ -159,19 +159,19 @@
     invoke-virtual {p1, v3, v4}, Landroid/os/Parcel;->writeLong(J)V
 
     .line 9
-    iget-object p2, p0, Lcom/google/android/gms/auth/api/proxy/ProxyRequest;->j:[B
+    iget-object p2, p0, Lcom/google/android/gms/auth/api/proxy/ProxyRequest;->k:[B
 
     invoke-static {p1, v2, p2, v1}, Le2/b;->e(Landroid/os/Parcel;I[BZ)V
 
     .line 10
-    iget-object p2, p0, Lcom/google/android/gms/auth/api/proxy/ProxyRequest;->k:Landroid/os/Bundle;
+    iget-object p2, p0, Lcom/google/android/gms/auth/api/proxy/ProxyRequest;->l:Landroid/os/Bundle;
 
     const/4 v0, 0x5
 
     invoke-static {p1, v0, p2}, Le2/b;->d(Landroid/os/Parcel;ILandroid/os/Bundle;)V
 
     .line 11
-    iget v3, p0, Lcom/google/android/gms/auth/api/proxy/ProxyRequest;->f:I
+    iget v3, p0, Lcom/google/android/gms/auth/api/proxy/ProxyRequest;->g:I
 
     const/16 v1, 0x3e8
 

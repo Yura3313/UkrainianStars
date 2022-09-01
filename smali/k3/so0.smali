@@ -1,146 +1,67 @@
-.class public final synthetic Lk3/so0;
+.class public final Lk3/so0;
 .super Ljava/lang/Object;
-.source "R8$$SyntheticClass"
+.source "com.google.android.gms:play-services-ads@@19.3.0"
 
 
 # direct methods
-.method public static a(Ljava/lang/String;)I
-    .locals 5
-
-    const/4 v0, 0x4
+.method public static constructor <clinit>()V
+    .locals 2
 
     .line 1
-    invoke-static {v0}, Lp/g;->c(I)[I
+    new-instance v0, Lcom/google/android/gms/internal/ads/v2;
 
-    move-result-object v0
+    invoke-direct {v0}, Lcom/google/android/gms/internal/ads/v2;-><init>()V
 
     .line 2
-    array-length v1, v0
-
-    const/4 v2, 0x0
-
-    :goto_0
-    if-ge v2, v1, :cond_1
-
-    aget v3, v0, v2
+    sget v0, Lcom/google/android/gms/internal/ads/l5;->g:I
 
     .line 3
-    invoke-static {v3}, Lk3/so0;->b(I)Ljava/lang/String;
+    :try_start_0
+    invoke-static {}, Lk3/so0;->a()V
+    :try_end_0
+    .catch Ljava/security/GeneralSecurityException; {:try_start_0 .. :try_end_0} :catch_0
 
-    move-result-object v4
+    return-void
 
-    invoke-virtual {v4, p0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    :catch_0
+    move-exception v0
 
-    move-result v4
+    .line 4
+    new-instance v1, Ljava/lang/ExceptionInInitializerError;
 
-    if-eqz v4, :cond_0
+    invoke-direct {v1, v0}, Ljava/lang/ExceptionInInitializerError;-><init>(Ljava/lang/Throwable;)V
 
-    return v3
-
-    :cond_0
-    add-int/lit8 v2, v2, 0x1
-
-    goto :goto_0
-
-    :cond_1
-    const/4 p0, 0x3
-
-    return p0
+    throw v1
 .end method
 
-.method public static synthetic b(I)Ljava/lang/String;
+.method public static a()V
     .locals 1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/security/GeneralSecurityException;
+        }
+    .end annotation
 
-    const/4 v0, 0x1
+    .line 1
+    new-instance v0, Lcom/google/android/gms/internal/ads/v2;
 
-    if-ne p0, v0, :cond_0
+    invoke-direct {v0}, Lcom/google/android/gms/internal/ads/v2;-><init>()V
 
-    const-string p0, "a"
+    invoke-static {v0}, Lcom/google/android/gms/internal/ads/z1;->f(Lk3/en0;)V
 
-    return-object p0
+    .line 2
+    new-instance v0, Lcom/google/android/gms/internal/ads/s2;
 
-    :cond_0
-    const/4 v0, 0x2
+    invoke-direct {v0}, Lcom/google/android/gms/internal/ads/s2;-><init>()V
 
-    if-ne p0, v0, :cond_1
+    invoke-static {v0}, Lcom/google/android/gms/internal/ads/z1;->f(Lk3/en0;)V
 
-    const-string p0, "b"
+    .line 3
+    new-instance v0, Lk3/ro0;
 
-    return-object p0
+    invoke-direct {v0}, Lk3/ro0;-><init>()V
 
-    :cond_1
-    const/4 v0, 0x3
+    invoke-static {v0}, Lcom/google/android/gms/internal/ads/z1;->g(Lk3/kn0;)V
 
-    if-ne p0, v0, :cond_2
-
-    const-string p0, "s"
-
-    return-object p0
-
-    :cond_2
-    const/4 v0, 0x4
-
-    if-ne p0, v0, :cond_3
-
-    const-string p0, "local_user"
-
-    return-object p0
-
-    :cond_3
-    const/4 p0, 0x0
-
-    throw p0
-.end method
-
-.method public static synthetic c(I)Ljava/lang/String;
-    .locals 1
-
-    const/4 v0, 0x1
-
-    if-ne p0, v0, :cond_0
-
-    const-string p0, "UNKNOWN_FORMAT"
-
-    return-object p0
-
-    :cond_0
-    const/4 v0, 0x2
-
-    if-ne p0, v0, :cond_1
-
-    const-string p0, "UNCOMPRESSED"
-
-    return-object p0
-
-    :cond_1
-    const/4 v0, 0x3
-
-    if-ne p0, v0, :cond_2
-
-    const-string p0, "COMPRESSED"
-
-    return-object p0
-
-    :cond_2
-    const/4 v0, 0x4
-
-    if-ne p0, v0, :cond_3
-
-    const-string p0, "DO_NOT_USE_CRUNCHY_UNCOMPRESSED"
-
-    return-object p0
-
-    :cond_3
-    const/4 v0, 0x5
-
-    if-ne p0, v0, :cond_4
-
-    const-string p0, "UNRECOGNIZED"
-
-    return-object p0
-
-    :cond_4
-    const-string p0, "null"
-
-    return-object p0
+    return-void
 .end method

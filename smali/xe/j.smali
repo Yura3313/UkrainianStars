@@ -1,5 +1,5 @@
 .class public final Lxe/j;
-.super Lse/h;
+.super Lse/i;
 .source "_Sequences.kt"
 
 # interfaces
@@ -9,7 +9,7 @@
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/l<",
         "Ljava/lang/Object;",
         "Ljava/lang/Boolean;",
@@ -19,7 +19,7 @@
 
 
 # static fields
-.field public static final f:Lxe/j;
+.field public static final g:Lxe/j;
 
 
 # direct methods
@@ -30,7 +30,7 @@
 
     invoke-direct {v0}, Lxe/j;-><init>()V
 
-    sput-object v0, Lxe/j;->f:Lxe/j;
+    sput-object v0, Lxe/j;->g:Lxe/j;
 
     return-void
 .end method
@@ -40,7 +40,7 @@
 
     const/4 v0, 0x1
 
-    invoke-direct {p0, v0}, Lse/h;-><init>(I)V
+    invoke-direct {p0, v0}, Lse/i;-><init>(I)V
 
     return-void
 .end method

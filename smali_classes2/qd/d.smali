@@ -7,22 +7,22 @@
 
 
 # instance fields
-.field public final synthetic f:Lqd/c$a;
+.field public final synthetic g:Lqd/c$a;
 
-.field public final synthetic g:Ljava/lang/String;
+.field public final synthetic h:Ljava/lang/String;
 
-.field public final synthetic h:Lqd/c;
+.field public final synthetic i:Lqd/c;
 
 
 # direct methods
 .method public constructor <init>(Lqd/c$a;Ljava/lang/String;Lqd/c;)V
     .locals 0
 
-    iput-object p1, p0, Lqd/d;->f:Lqd/c$a;
+    iput-object p1, p0, Lqd/d;->g:Lqd/c$a;
 
-    iput-object p2, p0, Lqd/d;->g:Ljava/lang/String;
+    iput-object p2, p0, Lqd/d;->h:Ljava/lang/String;
 
-    iput-object p3, p0, Lqd/d;->h:Lqd/c;
+    iput-object p3, p0, Lqd/d;->i:Lqd/c;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -35,13 +35,13 @@
     .locals 3
 
     .line 1
-    iget-object p1, p0, Lqd/d;->h:Lqd/c;
+    iget-object p1, p0, Lqd/d;->i:Lqd/c;
 
     .line 2
     iget v0, p1, Lqd/c;->d:I
 
     .line 3
-    iget-object v1, p0, Lqd/d;->f:Lqd/c$a;
+    iget-object v1, p0, Lqd/d;->g:Lqd/c$a;
 
     invoke-virtual {v1}, Landroidx/recyclerview/widget/RecyclerView$z;->e()I
 
@@ -50,13 +50,13 @@
     invoke-virtual {p1, v1}, Lqd/c;->m(I)V
 
     .line 4
-    iget-object p1, p0, Lqd/d;->h:Lqd/c;
+    iget-object p1, p0, Lqd/d;->i:Lqd/c;
 
     .line 5
     iget-object v1, p1, Lqd/c;->f:Lre/p;
 
     .line 6
-    iget-object v2, p0, Lqd/d;->g:Ljava/lang/String;
+    iget-object v2, p0, Lqd/d;->h:Ljava/lang/String;
 
     .line 7
     iget p1, p1, Lqd/c;->d:I
@@ -95,20 +95,20 @@
 
     if-ne p1, v0, :cond_2
 
-    sget-object p1, Lcom/supercell/id/view/AvatarEditView$b;->h:Lcom/supercell/id/view/AvatarEditView$b;
+    sget-object p1, Lcom/supercell/id/view/AvatarEditView$b;->i:Lcom/supercell/id/view/AvatarEditView$b;
 
     goto :goto_2
 
     .line 11
     :cond_2
-    sget-object p1, Lcom/supercell/id/view/AvatarEditView$b;->g:Lcom/supercell/id/view/AvatarEditView$b;
+    sget-object p1, Lcom/supercell/id/view/AvatarEditView$b;->h:Lcom/supercell/id/view/AvatarEditView$b;
 
     goto :goto_2
 
     .line 12
     :cond_3
     :goto_1
-    sget-object p1, Lcom/supercell/id/view/AvatarEditView$b;->f:Lcom/supercell/id/view/AvatarEditView$b;
+    sget-object p1, Lcom/supercell/id/view/AvatarEditView$b;->g:Lcom/supercell/id/view/AvatarEditView$b;
 
     .line 13
     :goto_2
@@ -125,7 +125,7 @@
     iget-object p1, p1, Lae/u;->w:Lsc/a;
 
     .line 16
-    sget-object v0, Lsc/a$a;->g:Lsc/a$a;
+    sget-object v0, Lsc/a$a;->h:Lsc/a$a;
 
     invoke-virtual {p1, v0}, Lsc/a;->b(Lsc/a$a;)V
 

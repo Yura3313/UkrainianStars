@@ -3,13 +3,13 @@
 
 
 # virtual methods
-.method public abstract V()Lq9/b;
+.method public abstract V()Lcom/helpshift/util/a0;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Ljava/lang/Object;",
             ")",
-            "Lq9/b;"
+            "Lcom/helpshift/util/a0;"
         }
     .end annotation
 .end method

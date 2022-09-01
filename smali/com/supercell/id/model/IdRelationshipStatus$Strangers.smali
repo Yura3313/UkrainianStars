@@ -15,7 +15,7 @@
 
 
 # static fields
-.field public static final g:Lcom/supercell/id/model/IdRelationshipStatus$Strangers;
+.field public static final h:Lcom/supercell/id/model/IdRelationshipStatus$Strangers;
 
 
 # direct methods
@@ -26,7 +26,7 @@
 
     invoke-direct {v0}, Lcom/supercell/id/model/IdRelationshipStatus$Strangers;-><init>()V
 
-    sput-object v0, Lcom/supercell/id/model/IdRelationshipStatus$Strangers;->g:Lcom/supercell/id/model/IdRelationshipStatus$Strangers;
+    sput-object v0, Lcom/supercell/id/model/IdRelationshipStatus$Strangers;->h:Lcom/supercell/id/model/IdRelationshipStatus$Strangers;
 
     return-void
 .end method

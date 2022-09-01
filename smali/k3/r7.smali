@@ -2,38 +2,25 @@
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
-# interfaces
-.implements Lk3/s7;
+
+# instance fields
+.field public final a:Z
+
+.field public final b:Ljava/lang/String;
 
 
 # direct methods
-.method public constructor <init>()V
+.method public constructor <init>(ZLjava/lang/String;)V
     .locals 0
 
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    return-void
-.end method
+    .line 2
+    iput-boolean p1, p0, Lk3/r7;->a:Z
 
-
-# virtual methods
-.method public final a()V
-    .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Landroid/content/Context;",
-            "Ljava/util/List<",
-            "Ljava/lang/String;",
-            ">;)V"
-        }
-    .end annotation
-
-    return-void
-.end method
-
-.method public final b()V
-    .locals 0
+    .line 3
+    iput-object p2, p0, Lk3/r7;->b:Ljava/lang/String;
 
     return-void
 .end method

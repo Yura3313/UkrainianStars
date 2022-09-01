@@ -1,33 +1,40 @@
-.class public interface abstract Lk3/rp0;
+.class public final synthetic Lk3/rp0;
 .super Ljava/lang/Object;
-.source "com.google.android.gms:play-services-ads@@19.3.0"
+.source "R8$$SyntheticClass"
 
 
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "<T:",
-        "Ljava/lang/Object;",
-        ">",
-        "Ljava/lang/Object;"
-    }
-.end annotation
+# direct methods
+.method public static synthetic a(I)Ljava/lang/String;
+    .locals 1
 
+    const/4 v0, 0x1
 
-# virtual methods
-.method public abstract a(Ljava/lang/String;Ljava/security/Provider;)Ljava/lang/Object;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/lang/String;",
-            "Ljava/security/Provider;",
-            ")TT;"
-        }
-    .end annotation
+    if-ne p0, v0, :cond_0
 
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/security/GeneralSecurityException;
-        }
-    .end annotation
+    const-string p0, "NIST_P256"
+
+    return-object p0
+
+    :cond_0
+    const/4 v0, 0x2
+
+    if-ne p0, v0, :cond_1
+
+    const-string p0, "NIST_P384"
+
+    return-object p0
+
+    :cond_1
+    const/4 v0, 0x3
+
+    if-ne p0, v0, :cond_2
+
+    const-string p0, "NIST_P521"
+
+    return-object p0
+
+    :cond_2
+    const-string p0, "null"
+
+    return-object p0
 .end method

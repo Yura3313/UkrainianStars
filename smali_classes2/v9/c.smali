@@ -124,9 +124,9 @@
     move-result-object v1
 
     .line 12
-    check-cast v1, Lk3/fw;
+    check-cast v1, Lk3/dw;
 
-    invoke-virtual {v1, v4}, Lk3/fw;->b(Lf8/h;)Lf8/i;
+    invoke-virtual {v1, v4}, Lk3/dw;->b(Lf8/h;)Lf8/i;
 
     move-result-object v1
 
@@ -164,9 +164,9 @@
     move-exception v1
 
     .line 17
-    iget-object v2, v1, Lcom/helpshift/common/exception/RootAPIException;->h:Ld8/a;
+    iget-object v2, v1, Lcom/helpshift/common/exception/RootAPIException;->i:Ld8/a;
 
-    sget-object v3, Ld8/b;->B:Ld8/b;
+    sget-object v3, Ld8/b;->C:Ld8/b;
 
     if-eq v2, v3, :cond_5
 
@@ -276,7 +276,7 @@
     const-string v4, "Error in removeAdminFAQSuggestion"
 
     .line 27
-    invoke-static {v3, v4, v0}, Landroidx/savedstate/d;->g(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v3, v4, v0}, Le5/i;->i(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_0
 
@@ -309,7 +309,7 @@
     const-string v3, "/"
 
     .line 31
-    invoke-static {v0, v2, v3}, Landroid/support/v4/media/b;->b(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, v2, v3}, Landroid/support/v4/media/b;->a(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -326,9 +326,9 @@
 
     const-string v3, ""
 
-    check-cast v2, Lk3/v8;
+    check-cast v2, Lk3/w8;
 
-    invoke-virtual {v2, v0, v3}, Lk3/v8;->g(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v2, v0, v3}, Lk3/w8;->g(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 33
     :cond_4

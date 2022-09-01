@@ -18,9 +18,9 @@
 
 
 # instance fields
-.field public final f:I
-
 .field public final g:I
+
+.field public final h:I
 
 
 # direct methods
@@ -31,10 +31,10 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput p1, p0, Lrb/o;->f:I
+    iput p1, p0, Lrb/o;->g:I
 
     .line 3
-    iput p2, p0, Lrb/o;->g:I
+    iput p2, p0, Lrb/o;->h:I
 
     return-void
 .end method
@@ -45,15 +45,15 @@
     .locals 5
 
     .line 1
-    iget v0, p0, Lrb/o;->f:I
+    iget v0, p0, Lrb/o;->g:I
 
-    iget v1, p1, Lrb/o;->g:I
+    iget v1, p1, Lrb/o;->h:I
 
     mul-int v2, v0, v1
 
-    iget p1, p1, Lrb/o;->f:I
+    iget p1, p1, Lrb/o;->g:I
 
-    iget v3, p0, Lrb/o;->g:I
+    iget v3, p0, Lrb/o;->h:I
 
     mul-int v4, p1, v3
 
@@ -90,16 +90,16 @@
     check-cast p1, Lrb/o;
 
     .line 2
-    iget v0, p0, Lrb/o;->g:I
+    iget v0, p0, Lrb/o;->h:I
 
-    iget v1, p0, Lrb/o;->f:I
+    iget v1, p0, Lrb/o;->g:I
 
     mul-int v0, v0, v1
 
     .line 3
-    iget v1, p1, Lrb/o;->g:I
+    iget v1, p1, Lrb/o;->h:I
 
-    iget p1, p1, Lrb/o;->f:I
+    iget p1, p1, Lrb/o;->g:I
 
     mul-int v1, v1, p1
 
@@ -127,15 +127,15 @@
     .locals 5
 
     .line 1
-    iget v0, p0, Lrb/o;->f:I
+    iget v0, p0, Lrb/o;->g:I
 
-    iget v1, p1, Lrb/o;->g:I
+    iget v1, p1, Lrb/o;->h:I
 
     mul-int v2, v0, v1
 
-    iget p1, p1, Lrb/o;->f:I
+    iget p1, p1, Lrb/o;->g:I
 
-    iget v3, p0, Lrb/o;->g:I
+    iget v3, p0, Lrb/o;->h:I
 
     mul-int v4, p1, v3
 
@@ -195,15 +195,15 @@
     check-cast p1, Lrb/o;
 
     .line 3
-    iget v2, p0, Lrb/o;->f:I
+    iget v2, p0, Lrb/o;->g:I
 
-    iget v3, p1, Lrb/o;->f:I
+    iget v3, p1, Lrb/o;->g:I
 
     if-ne v2, v3, :cond_2
 
-    iget v2, p0, Lrb/o;->g:I
+    iget v2, p0, Lrb/o;->h:I
 
-    iget p1, p1, Lrb/o;->g:I
+    iget p1, p1, Lrb/o;->h:I
 
     if-ne v2, p1, :cond_2
 
@@ -224,12 +224,12 @@
     .locals 2
 
     .line 1
-    iget v0, p0, Lrb/o;->f:I
+    iget v0, p0, Lrb/o;->g:I
 
     mul-int/lit8 v0, v0, 0x1f
 
     .line 2
-    iget v1, p0, Lrb/o;->g:I
+    iget v1, p0, Lrb/o;->h:I
 
     add-int/2addr v0, v1
 
@@ -243,7 +243,7 @@
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    iget v1, p0, Lrb/o;->f:I
+    iget v1, p0, Lrb/o;->g:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -251,7 +251,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget v1, p0, Lrb/o;->g:I
+    iget v1, p0, Lrb/o;->h:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 

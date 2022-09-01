@@ -25,7 +25,7 @@
 
     move-result-object p1
 
-    sget-object v0, Lke/h;->f:Lke/h;
+    sget-object v0, Lke/h;->g:Lke/h;
 
     if-ne p1, v0, :cond_0
 
@@ -64,7 +64,7 @@
 .method public final getContext()Lke/f;
     .locals 1
 
-    sget-object v0, Lke/h;->f:Lke/h;
+    sget-object v0, Lke/h;->g:Lke/h;
 
     return-object v0
 .end method

@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field public final synthetic f:Lwc/t;
+.field public final synthetic g:Lwc/t;
 
 
 # direct methods
 .method public constructor <init>(Lwc/t;)V
     .locals 0
 
-    iput-object p1, p0, Lwc/t$a;->f:Lwc/t;
+    iput-object p1, p0, Lwc/t$a;->g:Lwc/t;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -38,7 +38,7 @@
     .locals 2
 
     .line 1
-    iget-object p1, p0, Lwc/t$a;->f:Lwc/t;
+    iget-object p1, p0, Lwc/t$a;->g:Lwc/t;
 
     sget v0, Lcom/supercell/id/R$id;->cancelButton:I
 
@@ -50,32 +50,32 @@
 
     const-string v0, "cancelButton"
 
-    invoke-static {p1, v0}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/4 v0, 0x0
 
     invoke-virtual {p1, v0}, Landroid/view/View;->setEnabled(Z)V
 
     .line 2
-    iget-object p1, p0, Lwc/t$a;->f:Lwc/t;
+    iget-object p1, p0, Lwc/t$a;->g:Lwc/t;
 
     .line 3
-    iget-object v0, p1, Lwc/t;->w0:Lre/p;
+    iget-object v0, p1, Lwc/t;->x0:Lre/p;
 
     if-eqz v0, :cond_0
 
     .line 4
-    sget-object v1, Lwc/s;->g:Lwc/s;
+    sget-object v1, Lwc/s;->h:Lwc/s;
 
     invoke-interface {v0, p1, v1}, Lre/p;->invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
 
-    check-cast p1, Lie/h;
+    check-cast p1, Lie/i;
 
     .line 5
     :cond_0
-    iget-object p1, p0, Lwc/t$a;->f:Lwc/t;
+    iget-object p1, p0, Lwc/t$a;->g:Lwc/t;
 
     invoke-virtual {p1}, Lwc/e;->V0()V
 

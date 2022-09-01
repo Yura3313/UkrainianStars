@@ -6,22 +6,22 @@
 
 
 # instance fields
-.field public final synthetic f:Ljava/util/List;
+.field public final synthetic g:Ljava/util/List;
 
-.field public final synthetic g:Le5/f;
+.field public final synthetic h:Le5/f;
 
-.field public final synthetic h:La5/n;
+.field public final synthetic i:La5/n;
 
 
 # direct methods
 .method public constructor <init>(La5/n;Ljava/util/List;Le5/f;)V
     .locals 0
 
-    iput-object p1, p0, La5/m;->h:La5/n;
+    iput-object p1, p0, La5/m;->i:La5/n;
 
-    iput-object p2, p0, La5/m;->f:Ljava/util/List;
+    iput-object p2, p0, La5/m;->g:Ljava/util/List;
 
-    iput-object p3, p0, La5/m;->g:Le5/f;
+    iput-object p3, p0, La5/m;->h:Le5/f;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -38,13 +38,13 @@
     const/16 v0, -0xb
 
     :try_start_0
-    iget-object v2, v1, La5/m;->h:La5/n;
+    iget-object v2, v1, La5/m;->i:La5/n;
 
     .line 1
     iget-object v2, v2, La5/n;->c:La5/o;
 
     .line 2
-    iget-object v3, v1, La5/m;->f:Ljava/util/List;
+    iget-object v3, v1, La5/m;->g:Ljava/util/List;
 
     invoke-virtual {v2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -104,11 +104,11 @@
     if-nez v2, :cond_c
 
     .line 4
-    iget-object v2, v1, La5/m;->h:La5/n;
+    iget-object v2, v1, La5/m;->i:La5/n;
 
-    iget-object v3, v1, La5/m;->f:Ljava/util/List;
+    iget-object v3, v1, La5/m;->g:Ljava/util/List;
 
-    iget-object v4, v1, La5/m;->g:Le5/f;
+    iget-object v4, v1, La5/m;->h:Le5/f;
 
     .line 5
     invoke-virtual {v2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -466,9 +466,9 @@
 
     .line 10
     :cond_c
-    iget-object v0, v1, La5/m;->h:La5/n;
+    iget-object v0, v1, La5/m;->i:La5/n;
 
-    iget-object v2, v1, La5/m;->g:Le5/f;
+    iget-object v2, v1, La5/m;->h:Le5/f;
 
     const/16 v3, -0xc
 
@@ -507,7 +507,7 @@
 
     .line 14
     :catch_5
-    iget-object v2, v1, La5/m;->g:Le5/f;
+    iget-object v2, v1, La5/m;->h:Le5/f;
 
     check-cast v2, Le5/c;
 

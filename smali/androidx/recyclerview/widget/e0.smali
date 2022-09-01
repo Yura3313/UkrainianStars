@@ -333,11 +333,11 @@
     iget-object v2, p0, Landroidx/recyclerview/widget/e0;->b:Lm/d;
 
     .line 4
-    iget-object v3, v2, Lm/d;->h:[Ljava/lang/Object;
+    iget-object v3, v2, Lm/d;->i:[Ljava/lang/Object;
 
     aget-object v4, v3, v0
 
-    sget-object v5, Lm/d;->j:Ljava/lang/Object;
+    sget-object v5, Lm/d;->k:Ljava/lang/Object;
 
     if-eq v4, v5, :cond_1
 
@@ -345,7 +345,7 @@
     aput-object v5, v3, v0
 
     .line 6
-    iput-boolean v1, v2, Lm/d;->f:Z
+    iput-boolean v1, v2, Lm/d;->g:Z
 
     goto :goto_1
 

@@ -46,3 +46,7 @@
 "WallyWeirdWall","-",10,"true","true","true",,,,,,,,,"custom","sprout_004_wall_explosion","sprout_004_wall_hit",,,,,,,"true",,100,60,-10,60,25,200,"sc3d/wally_wall_weird.scw","wally_wall",0,,1,
 "WallyWeirdFillerWall","-",11,"true","true","true",,,,,,,,,"custom","sprout_004_wall_explosion","sprout_004_wall_hit",,,,,,,"true",,100,60,-10,60,25,200,"sc3d/wally_wall_weird.scw","wally_wall_filler",90,,1,
 "Bouncer","o",,"true","true","true",,"true",,,,,,,"respawningwall","Rock_explo_fx","Rock_hit_fx",,,,,,,"true",,100,60,-10,60,25,,,,,,1,
+"ButtonSinglePress","h",,,,,,,,,,,,,"custom",,,,,,,,,,,,,,,,,"sc3d/speedup_tile.scw",,,,1,
+"ButtonHold","i",,,,,,,,,,,,,"custom",,,,,,,,,,,,,,,,,"sc3d/slowdown_tile.scw",,,,1,
+"Door","k",12,"true","true",,,,,,,,,,"blocking3",,,,,,,,,,,,,,,,,,,,,1,
+"Turret",".",,,,,,,,,,,,,"custom",,,,,,,,,,,,,,,,,,,,,1,

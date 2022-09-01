@@ -32,7 +32,7 @@
     .line 2
     iget-object v0, p0, Lqa/c;->a:Lqa/t;
 
-    iget-object v0, v0, Lqa/t;->j0:Lqa/e0;
+    iget-object v0, v0, Lqa/t;->k0:Lqa/e0;
 
     .line 3
     iget-boolean p1, p1, Lqb/a;->d:Z
@@ -60,7 +60,7 @@
     invoke-virtual {v0}, Lqa/e0;->e()V
 
     .line 7
-    sget-object v2, Lab/f;->g:Lab/f;
+    sget-object v2, Lab/f;->h:Lab/f;
 
     .line 8
     iget-object v3, v0, Lqa/e0;->k:Lab/h;

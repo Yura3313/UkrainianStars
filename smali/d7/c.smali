@@ -137,7 +137,7 @@
     iget-object v0, p0, Ld7/c;->a:Ll6/b;
 
     .line 3
-    iget v0, v0, Ll6/b;->f:I
+    iget v0, v0, Ll6/b;->g:I
 
     const/4 v10, 0x1
 
@@ -173,7 +173,7 @@
     iget-object p2, p0, Ld7/c;->a:Ll6/b;
 
     .line 7
-    iget p2, p2, Ll6/b;->g:I
+    iget p2, p2, Ll6/b;->h:I
 
     sub-int/2addr p2, v10
 
@@ -414,21 +414,21 @@
 
     .line 25
     :cond_a
-    sget-object p1, Lcom/google/zxing/NotFoundException;->h:Lcom/google/zxing/NotFoundException;
+    sget-object p1, Lcom/google/zxing/NotFoundException;->i:Lcom/google/zxing/NotFoundException;
 
     .line 26
     throw p1
 
     .line 27
     :cond_b
-    sget-object p1, Lcom/google/zxing/NotFoundException;->h:Lcom/google/zxing/NotFoundException;
+    sget-object p1, Lcom/google/zxing/NotFoundException;->i:Lcom/google/zxing/NotFoundException;
 
     .line 28
     throw p1
 
     .line 29
     :cond_c
-    sget-object p1, Lcom/google/zxing/NotFoundException;->h:Lcom/google/zxing/NotFoundException;
+    sget-object p1, Lcom/google/zxing/NotFoundException;->i:Lcom/google/zxing/NotFoundException;
 
     .line 30
     goto :goto_7
@@ -595,7 +595,7 @@
     if-ne v15, v0, :cond_7
 
     .line 6
-    invoke-static {v13, v14, v1, v4}, Lmd/g;->d(IIII)F
+    invoke-static {v13, v14, v1, v4}, Lae/v;->e(IIII)F
 
     move-result v0
 
@@ -641,7 +641,7 @@
     move/from16 v5, p2
 
     .line 7
-    invoke-static {v5, v6, v1, v4}, Lmd/g;->d(IIII)F
+    invoke-static {v5, v6, v1, v4}, Lae/v;->e(IIII)F
 
     move-result v0
 
@@ -688,7 +688,7 @@
     iget-object v3, p0, Ld7/c;->a:Ll6/b;
 
     .line 3
-    iget v3, v3, Ll6/b;->f:I
+    iget v3, v3, Ll6/b;->g:I
 
     if-lt p3, v3, :cond_1
 
@@ -745,7 +745,7 @@
     iget-object v1, p0, Ld7/c;->a:Ll6/b;
 
     .line 5
-    iget v1, v1, Ll6/b;->g:I
+    iget v1, v1, Ll6/b;->h:I
 
     if-lt p4, v1, :cond_3
 

@@ -124,7 +124,7 @@
     .locals 5
 
     .line 1
-    sget-boolean v0, Landroidx/drawerlayout/widget/DrawerLayout;->J:Z
+    sget-boolean v0, Landroidx/drawerlayout/widget/DrawerLayout;->K:Z
 
     const/4 v1, 0x0
 
@@ -368,7 +368,7 @@
     .locals 1
 
     .line 1
-    sget-boolean v0, Landroidx/drawerlayout/widget/DrawerLayout;->J:Z
+    sget-boolean v0, Landroidx/drawerlayout/widget/DrawerLayout;->K:Z
 
     if-nez v0, :cond_1
 

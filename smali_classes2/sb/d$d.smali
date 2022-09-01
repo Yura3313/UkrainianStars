@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field public final synthetic f:Lsb/d;
+.field public final synthetic g:Lsb/d;
 
 
 # direct methods
 .method public constructor <init>(Lsb/d;)V
     .locals 0
 
-    iput-object p1, p0, Lsb/d$d;->f:Lsb/d;
+    iput-object p1, p0, Lsb/d$d;->g:Lsb/d;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -44,7 +44,7 @@
     sget v1, Lsb/d;->n:I
 
     .line 2
-    iget-object v1, p0, Lsb/d$d;->f:Lsb/d;
+    iget-object v1, p0, Lsb/d$d;->g:Lsb/d;
 
     .line 3
     iget-object v1, v1, Lsb/d;->c:Lsb/e;
@@ -98,7 +98,7 @@
 
     .line 15
     :cond_2
-    iget-object v1, p0, Lsb/d$d;->f:Lsb/d;
+    iget-object v1, p0, Lsb/d$d;->g:Lsb/d;
 
     .line 16
     iget-object v1, v1, Lsb/d;->c:Lsb/e;
@@ -125,7 +125,7 @@
     .line 21
     :cond_3
     :goto_0
-    iget-object v1, p0, Lsb/d$d;->f:Lsb/d;
+    iget-object v1, p0, Lsb/d$d;->g:Lsb/d;
 
     const/4 v2, 0x1
 
@@ -141,7 +141,7 @@
     invoke-virtual {v1, v2}, Landroid/os/Handler;->sendEmptyMessage(I)Z
 
     .line 25
-    iget-object v1, p0, Lsb/d$d;->f:Lsb/d;
+    iget-object v1, p0, Lsb/d$d;->g:Lsb/d;
 
     .line 26
     iget-object v1, v1, Lsb/d;->a:Lsb/h;

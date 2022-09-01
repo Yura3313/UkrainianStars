@@ -37,7 +37,7 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 5
-    invoke-static {p1}, Lj1/p;->a(Landroid/content/Context;)V
+    invoke-static {p1}, Lk3/xp0;->a(Landroid/content/Context;)V
 
     return-void
 

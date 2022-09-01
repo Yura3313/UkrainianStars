@@ -18,19 +18,19 @@
 
 
 # static fields
-.field public static final enum g:Lce/a;
-
 .field public static final enum h:Lce/a;
 
 .field public static final enum i:Lce/a;
 
 .field public static final enum j:Lce/a;
 
-.field public static final synthetic k:[Lce/a;
+.field public static final enum k:Lce/a;
+
+.field public static final synthetic l:[Lce/a;
 
 
 # instance fields
-.field public final f:I
+.field public final g:I
 
 
 # direct methods
@@ -46,7 +46,7 @@
 
     invoke-direct {v0, v1, v2, v2}, Lce/a;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lce/a;->g:Lce/a;
+    sput-object v0, Lce/a;->h:Lce/a;
 
     .line 2
     new-instance v1, Lce/a;
@@ -57,7 +57,7 @@
 
     invoke-direct {v1, v3, v4, v4}, Lce/a;-><init>(Ljava/lang/String;II)V
 
-    sput-object v1, Lce/a;->h:Lce/a;
+    sput-object v1, Lce/a;->i:Lce/a;
 
     .line 3
     new-instance v3, Lce/a;
@@ -68,7 +68,7 @@
 
     invoke-direct {v3, v5, v6, v6}, Lce/a;-><init>(Ljava/lang/String;II)V
 
-    sput-object v3, Lce/a;->i:Lce/a;
+    sput-object v3, Lce/a;->j:Lce/a;
 
     .line 4
     new-instance v5, Lce/a;
@@ -81,7 +81,7 @@
 
     invoke-direct {v5, v7, v8, v9}, Lce/a;-><init>(Ljava/lang/String;II)V
 
-    sput-object v5, Lce/a;->j:Lce/a;
+    sput-object v5, Lce/a;->k:Lce/a;
 
     const/4 v7, 0x4
 
@@ -96,7 +96,7 @@
     aput-object v5, v7, v8
 
     .line 5
-    sput-object v7, Lce/a;->k:[Lce/a;
+    sput-object v7, Lce/a;->l:[Lce/a;
 
     return-void
 .end method
@@ -113,7 +113,7 @@
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 2
-    iput p3, p0, Lce/a;->f:I
+    iput p3, p0, Lce/a;->g:I
 
     return-void
 .end method
@@ -135,7 +135,7 @@
 .method public static values()[Lce/a;
     .locals 1
 
-    sget-object v0, Lce/a;->k:[Lce/a;
+    sget-object v0, Lce/a;->l:[Lce/a;
 
     invoke-virtual {v0}, [Lce/a;->clone()Ljava/lang/Object;
 
@@ -152,12 +152,12 @@
     .locals 2
 
     .line 1
-    sget-object v0, Lce/a;->j:Lce/a;
+    sget-object v0, Lce/a;->k:Lce/a;
 
     if-eq p0, v0, :cond_0
 
     .line 2
-    iget v0, p0, Lce/a;->f:I
+    iget v0, p0, Lce/a;->g:I
 
     return v0
 

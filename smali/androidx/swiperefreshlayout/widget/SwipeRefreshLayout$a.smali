@@ -40,12 +40,12 @@
     .line 1
     iget-object p1, p0, Landroidx/swiperefreshlayout/widget/SwipeRefreshLayout$a;->a:Landroidx/swiperefreshlayout/widget/SwipeRefreshLayout;
 
-    iget-boolean v0, p1, Landroidx/swiperefreshlayout/widget/SwipeRefreshLayout;->h:Z
+    iget-boolean v0, p1, Landroidx/swiperefreshlayout/widget/SwipeRefreshLayout;->i:Z
 
     if-eqz v0, :cond_1
 
     .line 2
-    iget-object p1, p1, Landroidx/swiperefreshlayout/widget/SwipeRefreshLayout;->D:Lt0/d;
+    iget-object p1, p1, Landroidx/swiperefreshlayout/widget/SwipeRefreshLayout;->E:Lt0/d;
 
     const/16 v0, 0xff
 
@@ -54,19 +54,19 @@
     .line 3
     iget-object p1, p0, Landroidx/swiperefreshlayout/widget/SwipeRefreshLayout$a;->a:Landroidx/swiperefreshlayout/widget/SwipeRefreshLayout;
 
-    iget-object p1, p1, Landroidx/swiperefreshlayout/widget/SwipeRefreshLayout;->D:Lt0/d;
+    iget-object p1, p1, Landroidx/swiperefreshlayout/widget/SwipeRefreshLayout;->E:Lt0/d;
 
     invoke-virtual {p1}, Lt0/d;->start()V
 
     .line 4
     iget-object p1, p0, Landroidx/swiperefreshlayout/widget/SwipeRefreshLayout$a;->a:Landroidx/swiperefreshlayout/widget/SwipeRefreshLayout;
 
-    iget-boolean v0, p1, Landroidx/swiperefreshlayout/widget/SwipeRefreshLayout;->I:Z
+    iget-boolean v0, p1, Landroidx/swiperefreshlayout/widget/SwipeRefreshLayout;->J:Z
 
     if-eqz v0, :cond_0
 
     .line 5
-    iget-object p1, p1, Landroidx/swiperefreshlayout/widget/SwipeRefreshLayout;->g:Landroidx/swiperefreshlayout/widget/SwipeRefreshLayout$h;
+    iget-object p1, p1, Landroidx/swiperefreshlayout/widget/SwipeRefreshLayout;->h:Landroidx/swiperefreshlayout/widget/SwipeRefreshLayout$h;
 
     if-eqz p1, :cond_0
 
@@ -77,13 +77,13 @@
     :cond_0
     iget-object p1, p0, Landroidx/swiperefreshlayout/widget/SwipeRefreshLayout$a;->a:Landroidx/swiperefreshlayout/widget/SwipeRefreshLayout;
 
-    iget-object v0, p1, Landroidx/swiperefreshlayout/widget/SwipeRefreshLayout;->x:Lt0/a;
+    iget-object v0, p1, Landroidx/swiperefreshlayout/widget/SwipeRefreshLayout;->y:Lt0/a;
 
     invoke-virtual {v0}, Landroid/view/View;->getTop()I
 
     move-result v0
 
-    iput v0, p1, Landroidx/swiperefreshlayout/widget/SwipeRefreshLayout;->r:I
+    iput v0, p1, Landroidx/swiperefreshlayout/widget/SwipeRefreshLayout;->s:I
 
     goto :goto_0
 

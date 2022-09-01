@@ -310,7 +310,7 @@
     const-string v0, " is a reserved key for the encryption keyset."
 
     .line 10
-    invoke-static {p1, v0}, Lcom/google/android/gms/ads/e;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p1, v0}, Lf/g;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 
@@ -698,7 +698,7 @@
     const-string v1, " is a reserved key for the encryption keyset."
 
     .line 5
-    invoke-static {p1, v1}, Lcom/google/android/gms/ads/e;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p1, v1}, Lf/g;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 

@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field public final f:Lcom/google/android/material/circularreveal/b;
+.field public final g:Lcom/google/android/material/circularreveal/b;
 
 
 # direct methods
@@ -22,7 +22,7 @@
 
     invoke-direct {p1, p0}, Lcom/google/android/material/circularreveal/b;-><init>(Lcom/google/android/material/circularreveal/b$a;)V
 
-    iput-object p1, p0, Lcom/google/android/material/circularreveal/CircularRevealFrameLayout;->f:Lcom/google/android/material/circularreveal/b;
+    iput-object p1, p0, Lcom/google/android/material/circularreveal/CircularRevealFrameLayout;->g:Lcom/google/android/material/circularreveal/b;
 
     return-void
 .end method
@@ -32,7 +32,7 @@
 .method public final a()V
     .locals 1
 
-    iget-object v0, p0, Lcom/google/android/material/circularreveal/CircularRevealFrameLayout;->f:Lcom/google/android/material/circularreveal/b;
+    iget-object v0, p0, Lcom/google/android/material/circularreveal/CircularRevealFrameLayout;->g:Lcom/google/android/material/circularreveal/b;
 
     invoke-virtual {v0}, Lcom/google/android/material/circularreveal/b;->a()V
 
@@ -42,7 +42,7 @@
 .method public final b()V
     .locals 1
 
-    iget-object v0, p0, Lcom/google/android/material/circularreveal/CircularRevealFrameLayout;->f:Lcom/google/android/material/circularreveal/b;
+    iget-object v0, p0, Lcom/google/android/material/circularreveal/CircularRevealFrameLayout;->g:Lcom/google/android/material/circularreveal/b;
 
     invoke-virtual {v0}, Lcom/google/android/material/circularreveal/b;->b()V
 
@@ -76,7 +76,7 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/circularreveal/CircularRevealFrameLayout;->f:Lcom/google/android/material/circularreveal/b;
+    iget-object v0, p0, Lcom/google/android/material/circularreveal/CircularRevealFrameLayout;->g:Lcom/google/android/material/circularreveal/b;
 
     if-eqz v0, :cond_0
 
@@ -97,7 +97,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/circularreveal/CircularRevealFrameLayout;->f:Lcom/google/android/material/circularreveal/b;
+    iget-object v0, p0, Lcom/google/android/material/circularreveal/CircularRevealFrameLayout;->g:Lcom/google/android/material/circularreveal/b;
 
     .line 2
     iget-object v0, v0, Lcom/google/android/material/circularreveal/b;->g:Landroid/graphics/drawable/Drawable;
@@ -108,7 +108,7 @@
 .method public getCircularRevealScrimColor()I
     .locals 1
 
-    iget-object v0, p0, Lcom/google/android/material/circularreveal/CircularRevealFrameLayout;->f:Lcom/google/android/material/circularreveal/b;
+    iget-object v0, p0, Lcom/google/android/material/circularreveal/CircularRevealFrameLayout;->g:Lcom/google/android/material/circularreveal/b;
 
     invoke-virtual {v0}, Lcom/google/android/material/circularreveal/b;->d()I
 
@@ -120,7 +120,7 @@
 .method public getRevealInfo()Lcom/google/android/material/circularreveal/c$d;
     .locals 1
 
-    iget-object v0, p0, Lcom/google/android/material/circularreveal/CircularRevealFrameLayout;->f:Lcom/google/android/material/circularreveal/b;
+    iget-object v0, p0, Lcom/google/android/material/circularreveal/CircularRevealFrameLayout;->g:Lcom/google/android/material/circularreveal/b;
 
     invoke-virtual {v0}, Lcom/google/android/material/circularreveal/b;->f()Lcom/google/android/material/circularreveal/c$d;
 
@@ -133,7 +133,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/circularreveal/CircularRevealFrameLayout;->f:Lcom/google/android/material/circularreveal/b;
+    iget-object v0, p0, Lcom/google/android/material/circularreveal/CircularRevealFrameLayout;->g:Lcom/google/android/material/circularreveal/b;
 
     if-eqz v0, :cond_0
 
@@ -156,7 +156,7 @@
 .method public setCircularRevealOverlayDrawable(Landroid/graphics/drawable/Drawable;)V
     .locals 1
 
-    iget-object v0, p0, Lcom/google/android/material/circularreveal/CircularRevealFrameLayout;->f:Lcom/google/android/material/circularreveal/b;
+    iget-object v0, p0, Lcom/google/android/material/circularreveal/CircularRevealFrameLayout;->g:Lcom/google/android/material/circularreveal/b;
 
     invoke-virtual {v0, p1}, Lcom/google/android/material/circularreveal/b;->h(Landroid/graphics/drawable/Drawable;)V
 
@@ -166,7 +166,7 @@
 .method public setCircularRevealScrimColor(I)V
     .locals 1
 
-    iget-object v0, p0, Lcom/google/android/material/circularreveal/CircularRevealFrameLayout;->f:Lcom/google/android/material/circularreveal/b;
+    iget-object v0, p0, Lcom/google/android/material/circularreveal/CircularRevealFrameLayout;->g:Lcom/google/android/material/circularreveal/b;
 
     invoke-virtual {v0, p1}, Lcom/google/android/material/circularreveal/b;->i(I)V
 
@@ -176,7 +176,7 @@
 .method public setRevealInfo(Lcom/google/android/material/circularreveal/c$d;)V
     .locals 1
 
-    iget-object v0, p0, Lcom/google/android/material/circularreveal/CircularRevealFrameLayout;->f:Lcom/google/android/material/circularreveal/b;
+    iget-object v0, p0, Lcom/google/android/material/circularreveal/CircularRevealFrameLayout;->g:Lcom/google/android/material/circularreveal/b;
 
     invoke-virtual {v0, p1}, Lcom/google/android/material/circularreveal/b;->j(Lcom/google/android/material/circularreveal/c$d;)V
 

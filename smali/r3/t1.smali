@@ -3,7 +3,7 @@
 
 
 # instance fields
-.field public final h:[B
+.field public final i:[B
 
 
 # direct methods
@@ -17,7 +17,7 @@
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 3
-    iput-object p1, p0, Lr3/t1;->h:[B
+    iput-object p1, p0, Lr3/t1;->i:[B
 
     return-void
 .end method
@@ -28,7 +28,7 @@
     .locals 4
 
     .line 1
-    iget-object v0, p0, Lr3/t1;->h:[B
+    iget-object v0, p0, Lr3/t1;->i:[B
 
     invoke-virtual {p0}, Lr3/t1;->i()I
 
@@ -63,7 +63,7 @@
 
     new-instance v0, Ljava/lang/String;
 
-    iget-object v1, p0, Lr3/t1;->h:[B
+    iget-object v1, p0, Lr3/t1;->i:[B
 
     invoke-virtual {p0}, Lr3/t1;->i()I
 
@@ -86,7 +86,7 @@
         }
     .end annotation
 
-    iget-object v0, p0, Lr3/t1;->h:[B
+    iget-object v0, p0, Lr3/t1;->i:[B
 
     invoke-virtual {p0}, Lr3/t1;->i()I
 
@@ -158,10 +158,10 @@
     check-cast p1, Lr3/t1;
 
     .line 6
-    iget v1, p0, Lr3/r1;->f:I
+    iget v1, p0, Lr3/r1;->g:I
 
     .line 7
-    iget v3, p1, Lr3/r1;->f:I
+    iget v3, p1, Lr3/r1;->g:I
 
     if-eqz v1, :cond_4
 
@@ -192,10 +192,10 @@
     if-gt v1, v2, :cond_7
 
     .line 11
-    iget-object v2, p0, Lr3/t1;->h:[B
+    iget-object v2, p0, Lr3/t1;->i:[B
 
     .line 12
-    iget-object v3, p1, Lr3/t1;->h:[B
+    iget-object v3, p1, Lr3/t1;->i:[B
 
     .line 13
     invoke-virtual {p0}, Lr3/t1;->i()I
@@ -312,7 +312,7 @@
     move-result v0
 
     .line 2
-    iget-object v1, p0, Lr3/t1;->h:[B
+    iget-object v1, p0, Lr3/t1;->i:[B
 
     invoke-virtual {p0}, Lr3/t1;->size()I
 
@@ -344,7 +344,7 @@
 .method public g(I)B
     .locals 1
 
-    iget-object v0, p0, Lr3/t1;->h:[B
+    iget-object v0, p0, Lr3/t1;->i:[B
 
     aget-byte p1, v0, p1
 
@@ -354,7 +354,7 @@
 .method public h(I)B
     .locals 1
 
-    iget-object v0, p0, Lr3/t1;->h:[B
+    iget-object v0, p0, Lr3/t1;->i:[B
 
     aget-byte p1, v0, p1
 
@@ -372,7 +372,7 @@
 .method public size()I
     .locals 1
 
-    iget-object v0, p0, Lr3/t1;->h:[B
+    iget-object v0, p0, Lr3/t1;->i:[B
 
     array-length v0, v0
 

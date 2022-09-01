@@ -1,5 +1,5 @@
 .class public final Lid/w$a$a;
-.super Lse/h;
+.super Lse/i;
 .source "NotificationDialog.kt"
 
 # interfaces
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lid/w$a;-><init>(Lid/w;Lvc/n$j;)V
+    value = Lid/w$a;-><init>(Lid/w;Lvc/m$j;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,7 +18,7 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/a<",
         "Ljava/lang/Long;",
         ">;"
@@ -27,7 +27,7 @@
 
 
 # static fields
-.field public static final f:Lid/w$a$a;
+.field public static final g:Lid/w$a$a;
 
 
 # direct methods
@@ -38,7 +38,7 @@
 
     invoke-direct {v0}, Lid/w$a$a;-><init>()V
 
-    sput-object v0, Lid/w$a$a;->f:Lid/w$a$a;
+    sput-object v0, Lid/w$a$a;->g:Lid/w$a$a;
 
     return-void
 .end method
@@ -48,7 +48,7 @@
 
     const/4 v0, 0x0
 
-    invoke-direct {p0, v0}, Lse/h;-><init>(I)V
+    invoke-direct {p0, v0}, Lse/i;-><init>(I)V
 
     return-void
 .end method

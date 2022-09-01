@@ -1,6 +1,9 @@
-.class public final Lae/z1;
+.class public Lae/z1;
 .super Ljava/lang/Object;
 .source "Configuration.kt"
+
+# interfaces
+.implements Lf0/y;
 
 
 # direct methods
@@ -12,122 +15,21 @@
     return-void
 .end method
 
-.method public static final b(Lcom/supercell/id/model/IdSocialAccount;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Z
-    .locals 1
-
-    const-string v0, "account"
-
-    invoke-static {p0, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
-
-    invoke-virtual {p0}, Lcom/supercell/id/model/IdSocialAccount;->d()Ljava/lang/String;
-
-    move-result-object p0
-
-    const/4 v0, 0x1
-
-    if-eqz p0, :cond_8
-
-    if-eqz p1, :cond_1
-
-    invoke-interface {p1}, Ljava/lang/CharSequence;->length()I
-
-    move-result p0
-
-    if-nez p0, :cond_0
-
-    goto :goto_0
-
-    :cond_0
-    const/4 p0, 0x0
-
-    goto :goto_1
-
-    :cond_1
-    :goto_0
-    const/4 p0, 0x1
-
-    :goto_1
-    if-nez p0, :cond_9
-
-    if-eqz p2, :cond_3
-
-    invoke-interface {p2}, Ljava/lang/CharSequence;->length()I
-
-    move-result p0
-
-    if-nez p0, :cond_2
-
-    goto :goto_2
-
-    :cond_2
-    const/4 p0, 0x0
-
-    goto :goto_3
-
-    :cond_3
-    :goto_2
-    const/4 p0, 0x1
-
-    :goto_3
-    if-eqz p0, :cond_8
-
-    if-eqz p3, :cond_5
-
-    invoke-interface {p3}, Ljava/lang/CharSequence;->length()I
-
-    move-result p0
-
-    if-nez p0, :cond_4
-
-    goto :goto_4
-
-    :cond_4
-    const/4 p0, 0x0
-
-    goto :goto_5
-
-    :cond_5
-    :goto_4
-    const/4 p0, 0x1
-
-    :goto_5
-    if-eqz p0, :cond_8
-
-    if-eqz p4, :cond_7
-
-    invoke-interface {p4}, Ljava/lang/CharSequence;->length()I
-
-    move-result p0
-
-    if-nez p0, :cond_6
-
-    goto :goto_6
-
-    :cond_6
-    const/4 p0, 0x0
-
-    goto :goto_7
-
-    :cond_7
-    :goto_6
-    const/4 p0, 0x1
-
-    :goto_7
-    if-eqz p0, :cond_8
-
-    goto :goto_8
-
-    :cond_8
-    const/4 v0, 0x0
-
-    :cond_9
-    :goto_8
-    return v0
-.end method
-
 
 # virtual methods
-.method public a(Lorg/json/JSONObject;)Lorg/json/JSONObject;
+.method public b(Landroid/view/View;)V
+    .locals 0
+
+    return-void
+.end method
+
+.method public c()V
+    .locals 0
+
+    return-void
+.end method
+
+.method public d(Lorg/json/JSONObject;)Lorg/json/JSONObject;
     .locals 3
 
     .line 1
@@ -157,7 +59,7 @@
 
     const/4 v2, 0x0
 
-    invoke-virtual {p0, v0, p1, v2, v1}, Lae/z1;->c(Ljava/util/Map;Lorg/json/JSONObject;ILjava/lang/String;)V
+    invoke-virtual {p0, v0, p1, v2, v1}, Lae/z1;->e(Ljava/util/Map;Lorg/json/JSONObject;ILjava/lang/String;)V
 
     .line 4
     new-instance p1, Lorg/json/JSONObject;
@@ -200,7 +102,7 @@
     check-cast v1, Lie/d;
 
     .line 7
-    iget-object v1, v1, Lie/d;->g:Ljava/lang/Object;
+    iget-object v1, v1, Lie/d;->h:Ljava/lang/Object;
 
     .line 8
     invoke-virtual {p1, v2, v1}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
@@ -211,7 +113,7 @@
     return-object p1
 .end method
 
-.method public c(Ljava/util/Map;Lorg/json/JSONObject;ILjava/lang/String;)V
+.method public e(Ljava/util/Map;Lorg/json/JSONObject;ILjava/lang/String;)V
     .locals 5
 
     .line 1
@@ -221,7 +123,7 @@
 
     const-string v1, "currentConf.keys()"
 
-    invoke-static {v0, v1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     :cond_0
     :goto_0
@@ -250,7 +152,7 @@
     const-string v3, "Android"
 
     .line 4
-    invoke-static {v1, v3}, Lye/n;->h(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {v1, v3}, Lye/n;->i(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v3
 
@@ -259,14 +161,14 @@
     const-string v3, "portraits"
 
     .line 5
-    invoke-static {v1, v3}, Lye/n;->h(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {v1, v3}, Lye/n;->i(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v3
 
     if-nez v3, :cond_1
 
     .line 6
-    invoke-static {v1, p4}, Lye/n;->h(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {v1, p4}, Lye/n;->i(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v3
 
@@ -287,7 +189,7 @@
 
     move-result-object v3
 
-    invoke-static {v1, v3}, Lye/n;->h(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {v1, v3}, Lye/n;->i(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v1
 
@@ -299,7 +201,7 @@
 
     add-int/lit8 v1, p3, 0x1
 
-    invoke-virtual {p0, p1, v2, v1, p4}, Lae/z1;->c(Ljava/util/Map;Lorg/json/JSONObject;ILjava/lang/String;)V
+    invoke-virtual {p0, p1, v2, v1, p4}, Lae/z1;->e(Ljava/util/Map;Lorg/json/JSONObject;ILjava/lang/String;)V
 
     goto :goto_0
 
@@ -314,7 +216,7 @@
     if-eqz v3, :cond_3
 
     .line 12
-    iget-object v3, v3, Lie/d;->f:Ljava/lang/Object;
+    iget-object v3, v3, Lie/d;->g:Ljava/lang/Object;
 
     .line 13
     check-cast v3, Ljava/lang/Number;
@@ -331,7 +233,7 @@
     const-string v3, "key"
 
     .line 14
-    invoke-static {v1, v3}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, v3}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-static {p3}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 

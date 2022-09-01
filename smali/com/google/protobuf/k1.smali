@@ -31,7 +31,7 @@
     .locals 3
 
     .line 1
-    iget-boolean v0, p0, Lcom/google/protobuf/l1;->i:Z
+    iget-boolean v0, p0, Lcom/google/protobuf/l1;->j:Z
 
     if-nez v0, :cond_3
 

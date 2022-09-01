@@ -120,11 +120,11 @@
 
     if-eqz v3, :cond_1
 
-    sget-object v3, Le5/j;->f:Le5/j;
+    sget-object v3, Le5/j;->g:Le5/j;
 
     new-instance v3, La5/n;
 
-    invoke-static {}, Lcom/google/android/play/core/assetpacks/o2;->d()Ljava/util/concurrent/Executor;
+    invoke-static {}, Lod/a;->a()Ljava/util/concurrent/Executor;
 
     move-result-object v5
 
@@ -137,14 +137,14 @@
     invoke-direct {v3, p0, v5, v6, v7}, La5/n;-><init>(Landroid/content/Context;Ljava/util/concurrent/Executor;La5/o;Ld5/e;)V
 
     .line 3
-    sget-object v5, Le5/j;->g:Ljava/util/concurrent/atomic/AtomicReference;
+    sget-object v5, Le5/j;->h:Ljava/util/concurrent/atomic/AtomicReference;
 
     invoke-virtual {v5, v4, v3}, Ljava/util/concurrent/atomic/AtomicReference;->compareAndSet(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 4
-    new-instance v3, Lcom/helpshift/util/f0;
+    new-instance v3, La5/w;
 
-    invoke-direct {v3}, Lcom/helpshift/util/f0;-><init>()V
+    invoke-direct {v3}, La5/w;-><init>()V
 
     .line 5
     sget-object v5, Le5/k;->a:Ljava/util/concurrent/atomic/AtomicReference;
@@ -152,7 +152,7 @@
     invoke-virtual {v5, v4, v3}, Ljava/util/concurrent/atomic/AtomicReference;->compareAndSet(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     .line 6
-    invoke-static {}, Lcom/google/android/play/core/assetpacks/o2;->d()Ljava/util/concurrent/Executor;
+    invoke-static {}, Lod/a;->a()Ljava/util/concurrent/Executor;
 
     move-result-object v3
 
@@ -192,7 +192,7 @@
     if-nez p2, :cond_0
 
     :try_start_0
-    invoke-static {}, Lcom/google/android/play/core/assetpacks/o2;->d()Ljava/util/concurrent/Executor;
+    invoke-static {}, Lod/a;->a()Ljava/util/concurrent/Executor;
 
     move-result-object v1
 
@@ -314,7 +314,7 @@
 
     if-nez v5, :cond_5
 
-    invoke-static {}, Lcom/google/android/play/core/assetpacks/o2;->d()Ljava/util/concurrent/Executor;
+    invoke-static {}, Lod/a;->a()Ljava/util/concurrent/Executor;
 
     move-result-object v5
 

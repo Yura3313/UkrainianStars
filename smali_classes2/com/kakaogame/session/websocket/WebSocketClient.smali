@@ -306,7 +306,7 @@
     const-string p2, "Received Invalid response line: "
 
     .line 11
-    invoke-static {p2, v3}, Lcom/google/android/gms/ads/e;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p2, v3}, Lf/g;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p2
 
@@ -634,7 +634,7 @@
     const-string p2, "Received Invalid status line: "
 
     .line 40
-    invoke-static {p2, v1}, Lcom/google/android/gms/ads/e;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p2, v1}, Lf/g;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p2
 

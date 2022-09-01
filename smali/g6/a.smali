@@ -1691,7 +1691,7 @@
     move-exception v0
 
     .line 64
-    sget-boolean v2, Lcom/google/zxing/ReaderException;->f:Z
+    sget-boolean v2, Lcom/google/zxing/ReaderException;->g:Z
 
     if-eqz v2, :cond_2a
 
@@ -1702,7 +1702,7 @@
     goto :goto_19
 
     :cond_2a
-    sget-object v2, Lcom/google/zxing/FormatException;->h:Lcom/google/zxing/FormatException;
+    sget-object v2, Lcom/google/zxing/FormatException;->i:Lcom/google/zxing/FormatException;
 
     .line 65
     :goto_19

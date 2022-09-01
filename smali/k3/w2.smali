@@ -3,14 +3,14 @@
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lk3/y2;
+.implements Lk3/x2;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "Lk3/y2<",
+        "Lk3/x2<",
         "Lk3/gh;",
         ">;"
     }
@@ -47,30 +47,59 @@
 
     if-eqz v0, :cond_0
 
-    const/4 v0, 0x1
-
     .line 3
-    invoke-interface {p1, v0}, Lk3/gh;->i0(Z)V
+    invoke-interface {p1}, Lk3/gh;->N()Lk3/ji;
+
+    move-result-object p1
+
+    invoke-interface {p1}, Lk3/ji;->o()V
+
+    return-void
 
     .line 4
     :cond_0
     invoke-interface {p2}, Ljava/util/Map;->keySet()Ljava/util/Set;
 
+    move-result-object v0
+
+    const-string v1, "stop"
+
+    invoke-interface {v0, v1}, Ljava/util/Set;->contains(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    .line 5
+    invoke-interface {p1}, Lk3/gh;->N()Lk3/ji;
+
+    move-result-object p1
+
+    invoke-interface {p1}, Lk3/ji;->b()V
+
+    return-void
+
+    .line 6
+    :cond_1
+    invoke-interface {p2}, Ljava/util/Map;->keySet()Ljava/util/Set;
+
     move-result-object p2
 
-    const-string v0, "stop"
+    const-string v0, "cancel"
 
     invoke-interface {p2, v0}, Ljava/util/Set;->contains(Ljava/lang/Object;)Z
 
     move-result p2
 
-    if-eqz p2, :cond_1
+    if-eqz p2, :cond_2
 
-    const/4 p2, 0x0
+    .line 7
+    invoke-interface {p1}, Lk3/gh;->N()Lk3/ji;
 
-    .line 5
-    invoke-interface {p1, p2}, Lk3/gh;->i0(Z)V
+    move-result-object p1
 
-    :cond_1
+    invoke-interface {p1}, Lk3/ji;->d()V
+
+    :cond_2
     return-void
 .end method

@@ -61,7 +61,7 @@
 
     .line 4
     :goto_0
-    iget-object v1, p1, Lcom/google/android/material/appbar/CollapsingToolbarLayout;->B:Lf0/a0;
+    iget-object v1, p1, Lcom/google/android/material/appbar/CollapsingToolbarLayout;->C:Lf0/a0;
 
     invoke-static {v1, v0}, Le0/b;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
@@ -70,7 +70,7 @@
     if-nez v1, :cond_1
 
     .line 5
-    iput-object v0, p1, Lcom/google/android/material/appbar/CollapsingToolbarLayout;->B:Lf0/a0;
+    iput-object v0, p1, Lcom/google/android/material/appbar/CollapsingToolbarLayout;->C:Lf0/a0;
 
     .line 6
     invoke-virtual {p1}, Landroid/view/View;->requestLayout()V

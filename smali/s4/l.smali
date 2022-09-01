@@ -247,25 +247,25 @@
     if-eq v6, v8, :cond_3
 
     .line 9
-    iget-object v11, v1, Ls4/k;->b:Lj1/q;
+    iget-object v11, v1, Ls4/k;->b:Lcom/helpshift/util/v;
 
     goto :goto_2
 
     .line 10
     :cond_3
-    iget-object v11, v1, Ls4/k;->a:Lj1/q;
+    iget-object v11, v1, Ls4/k;->a:Lcom/helpshift/util/v;
 
     goto :goto_2
 
     .line 11
     :cond_4
-    iget-object v11, v1, Ls4/k;->d:Lj1/q;
+    iget-object v11, v1, Ls4/k;->d:Lcom/helpshift/util/v;
 
     goto :goto_2
 
     .line 12
     :cond_5
-    iget-object v11, v1, Ls4/k;->c:Lj1/q;
+    iget-object v11, v1, Ls4/k;->c:Lcom/helpshift/util/v;
 
     .line 13
     :goto_2
@@ -281,7 +281,7 @@
 
     move-result v10
 
-    invoke-virtual {v11, v12, v2, v10}, Lj1/q;->b(Ls4/n;FF)V
+    invoke-virtual {v11, v12, v2, v10}, Lcom/helpshift/util/v;->b(Ls4/n;FF)V
 
     add-int/lit8 v10, v6, 0x1
 
@@ -512,7 +512,7 @@
     iget-object v15, v14, Ls4/g$a;->a:Ls4/g;
 
     .line 46
-    iget-object v15, v15, Ls4/g;->i:Ljava/util/BitSet;
+    iget-object v15, v15, Ls4/g;->j:Ljava/util/BitSet;
 
     .line 47
     invoke-virtual {v12}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -523,7 +523,7 @@
     iget-object v14, v14, Ls4/g$a;->a:Ls4/g;
 
     .line 49
-    iget-object v14, v14, Ls4/g;->g:[Ls4/n$f;
+    iget-object v14, v14, Ls4/g;->h:[Ls4/n$f;
 
     .line 50
     iget v15, v12, Ls4/n;->f:F
@@ -749,7 +749,7 @@
     :goto_7
     iget-object v14, v0, Ls4/l;->g:Ls4/n;
 
-    invoke-virtual {v11, v10, v12, v2, v14}, Ls4/e;->d(FFFLs4/n;)V
+    invoke-virtual {v11, v10, v12, v2, v14}, Ls4/e;->e(FFFLs4/n;)V
 
     .line 83
     new-instance v10, Landroid/graphics/Path;
@@ -881,7 +881,7 @@
     iget-object v13, v12, Ls4/g$a;->a:Ls4/g;
 
     .line 101
-    iget-object v13, v13, Ls4/g;->i:Ljava/util/BitSet;
+    iget-object v13, v13, Ls4/g;->j:Ljava/util/BitSet;
 
     add-int/lit8 v14, v6, 0x4
 
@@ -894,7 +894,7 @@
     iget-object v12, v12, Ls4/g$a;->a:Ls4/g;
 
     .line 104
-    iget-object v12, v12, Ls4/g;->h:[Ls4/n$f;
+    iget-object v12, v12, Ls4/g;->i:[Ls4/n$f;
 
     .line 105
     iget v13, v10, Ls4/n;->f:F

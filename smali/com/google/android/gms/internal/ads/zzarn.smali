@@ -21,9 +21,9 @@
 
 
 # instance fields
-.field public final f:Landroid/view/View;
+.field public final g:Landroid/view/View;
 
-.field public final g:Ljava/util/Map;
+.field public final h:Ljava/util/Map;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Map<",
@@ -40,9 +40,9 @@
 .method public static constructor <clinit>()V
     .locals 1
 
-    new-instance v0, Lk3/v7;
+    new-instance v0, Lk3/w7;
 
-    invoke-direct {v0}, Lk3/v7;-><init>()V
+    invoke-direct {v0}, Lk3/w7;-><init>()V
 
     sput-object v0, Lcom/google/android/gms/internal/ads/zzarn;->CREATOR:Landroid/os/Parcelable$Creator;
 
@@ -66,7 +66,7 @@
 
     check-cast p1, Landroid/view/View;
 
-    iput-object p1, p0, Lcom/google/android/gms/internal/ads/zzarn;->f:Landroid/view/View;
+    iput-object p1, p0, Lcom/google/android/gms/internal/ads/zzarn;->g:Landroid/view/View;
 
     .line 3
     invoke-static {p2}, Lcom/google/android/gms/dynamic/IObjectWrapper$Stub;->S0(Landroid/os/IBinder;)Lcom/google/android/gms/dynamic/IObjectWrapper;
@@ -79,7 +79,7 @@
 
     check-cast p1, Ljava/util/Map;
 
-    iput-object p1, p0, Lcom/google/android/gms/internal/ads/zzarn;->g:Ljava/util/Map;
+    iput-object p1, p0, Lcom/google/android/gms/internal/ads/zzarn;->h:Ljava/util/Map;
 
     return-void
 .end method
@@ -97,7 +97,7 @@
     move-result p2
 
     .line 2
-    iget-object v0, p0, Lcom/google/android/gms/internal/ads/zzarn;->f:Landroid/view/View;
+    iget-object v0, p0, Lcom/google/android/gms/internal/ads/zzarn;->g:Landroid/view/View;
 
     .line 3
     new-instance v1, Lcom/google/android/gms/dynamic/ObjectWrapper;
@@ -110,7 +110,7 @@
     invoke-static {p1, v0, v1}, Le2/b;->f(Landroid/os/Parcel;ILandroid/os/IBinder;)V
 
     .line 5
-    iget-object v0, p0, Lcom/google/android/gms/internal/ads/zzarn;->g:Ljava/util/Map;
+    iget-object v0, p0, Lcom/google/android/gms/internal/ads/zzarn;->h:Ljava/util/Map;
 
     .line 6
     new-instance v1, Lcom/google/android/gms/dynamic/ObjectWrapper;

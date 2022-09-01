@@ -7,14 +7,14 @@
 
 
 # instance fields
-.field public final synthetic f:I
+.field public final synthetic g:I
 
 
 # direct methods
 .method public constructor <init>(I)V
     .locals 0
 
-    iput p1, p0, Lm9/b;->f:I
+    iput p1, p0, Lm9/b;->g:I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -26,7 +26,7 @@
 .method public final c()Ljava/util/List;
     .locals 1
 
-    iget v0, p0, Lm9/b;->f:I
+    iget v0, p0, Lm9/b;->g:I
 
     packed-switch v0, :pswitch_data_0
 
@@ -61,7 +61,7 @@
 .method public final getTag()Ljava/lang/String;
     .locals 1
 
-    iget v0, p0, Lm9/b;->f:I
+    iget v0, p0, Lm9/b;->g:I
 
     packed-switch v0, :pswitch_data_0
 
@@ -85,7 +85,7 @@
 .method public final i()Ljava/lang/String;
     .locals 2
 
-    iget v0, p0, Lm9/b;->f:I
+    iget v0, p0, Lm9/b;->g:I
 
     packed-switch v0, :pswitch_data_0
 
@@ -128,7 +128,7 @@
 .method public final n()Ljava/util/List;
     .locals 1
 
-    iget v0, p0, Lm9/b;->f:I
+    iget v0, p0, Lm9/b;->g:I
 
     packed-switch v0, :pswitch_data_0
 
@@ -163,7 +163,7 @@
 .method public final o(I)Ljava/util/List;
     .locals 2
 
-    iget v0, p0, Lm9/b;->f:I
+    iget v0, p0, Lm9/b;->g:I
 
     packed-switch v0, :pswitch_data_0
 
@@ -220,7 +220,7 @@
 .method public final p()I
     .locals 1
 
-    iget v0, p0, Lm9/b;->f:I
+    iget v0, p0, Lm9/b;->g:I
 
     packed-switch v0, :pswitch_data_0
 

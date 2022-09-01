@@ -18,16 +18,16 @@
 
 
 # instance fields
-.field public f:Landroid/view/ViewGroup$OnHierarchyChangeListener;
+.field public g:Landroid/view/ViewGroup$OnHierarchyChangeListener;
 
-.field public final synthetic g:Lcom/google/android/material/chip/ChipGroup;
+.field public final synthetic h:Lcom/google/android/material/chip/ChipGroup;
 
 
 # direct methods
 .method public constructor <init>(Lcom/google/android/material/chip/ChipGroup;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/google/android/material/chip/ChipGroup$c;->g:Lcom/google/android/material/chip/ChipGroup;
+    iput-object p1, p0, Lcom/google/android/material/chip/ChipGroup$c;->h:Lcom/google/android/material/chip/ChipGroup;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -40,7 +40,7 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/chip/ChipGroup$c;->g:Lcom/google/android/material/chip/ChipGroup;
+    iget-object v0, p0, Lcom/google/android/material/chip/ChipGroup$c;->h:Lcom/google/android/material/chip/ChipGroup;
 
     if-ne p1, v0, :cond_1
 
@@ -71,17 +71,17 @@
 
     check-cast v0, Lcom/google/android/material/chip/Chip;
 
-    iget-object v1, p0, Lcom/google/android/material/chip/ChipGroup$c;->g:Lcom/google/android/material/chip/ChipGroup;
+    iget-object v1, p0, Lcom/google/android/material/chip/ChipGroup$c;->h:Lcom/google/android/material/chip/ChipGroup;
 
     .line 6
-    iget-object v1, v1, Lcom/google/android/material/chip/ChipGroup;->o:Lcom/google/android/material/chip/ChipGroup$a;
+    iget-object v1, v1, Lcom/google/android/material/chip/ChipGroup;->p:Lcom/google/android/material/chip/ChipGroup$a;
 
     .line 7
     invoke-virtual {v0, v1}, Lcom/google/android/material/chip/Chip;->setOnCheckedChangeListenerInternal(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V
 
     .line 8
     :cond_1
-    iget-object v0, p0, Lcom/google/android/material/chip/ChipGroup$c;->f:Landroid/view/ViewGroup$OnHierarchyChangeListener;
+    iget-object v0, p0, Lcom/google/android/material/chip/ChipGroup$c;->g:Landroid/view/ViewGroup$OnHierarchyChangeListener;
 
     if-eqz v0, :cond_2
 
@@ -96,7 +96,7 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/chip/ChipGroup$c;->g:Lcom/google/android/material/chip/ChipGroup;
+    iget-object v0, p0, Lcom/google/android/material/chip/ChipGroup$c;->h:Lcom/google/android/material/chip/ChipGroup;
 
     if-ne p1, v0, :cond_0
 
@@ -115,7 +115,7 @@
 
     .line 3
     :cond_0
-    iget-object v0, p0, Lcom/google/android/material/chip/ChipGroup$c;->f:Landroid/view/ViewGroup$OnHierarchyChangeListener;
+    iget-object v0, p0, Lcom/google/android/material/chip/ChipGroup$c;->g:Landroid/view/ViewGroup$OnHierarchyChangeListener;
 
     if-eqz v0, :cond_1
 

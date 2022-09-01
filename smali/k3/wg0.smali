@@ -4,88 +4,112 @@
 
 
 # instance fields
-.field public final a:Ljava/util/regex/Pattern;
+.field public a:Lcom/google/android/gms/internal/ads/zzvc;
+
+.field public b:Lcom/google/android/gms/internal/ads/zzvj;
+
+.field public c:Lcom/google/android/gms/internal/ads/zzxi;
+
+.field public d:Ljava/lang/String;
+
+.field public e:Lcom/google/android/gms/internal/ads/zzaac;
+
+.field public f:Z
+
+.field public g:Ljava/util/ArrayList;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/ArrayList<",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public h:Ljava/util/ArrayList;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/ArrayList<",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public i:Lcom/google/android/gms/internal/ads/zzadm;
+
+.field public j:Lcom/google/android/gms/internal/ads/zzvm;
+
+.field public k:Lcom/google/android/gms/ads/formats/PublisherAdViewOptions;
+
+.field public l:Lcom/google/android/gms/internal/ads/zzxc;
+
+.field public m:I
+
+.field public n:Lcom/google/android/gms/internal/ads/zzair;
+
+.field public o:Lk3/pg0;
+
+.field public p:Z
 
 
 # direct methods
 .method public constructor <init>()V
-    .locals 2
+    .locals 1
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    const/4 v0, 0x1
+
     .line 2
-    :try_start_0
-    sget-object v0, Lk3/q;->I3:Lk3/k;
+    iput v0, p0, Lk3/wg0;->m:I
 
     .line 3
-    sget-object v1, Lk3/l51;->j:Lk3/l51;
+    new-instance v0, Lk3/pg0;
 
-    iget-object v1, v1, Lk3/l51;->f:Lk3/n;
+    invoke-direct {v0}, Lk3/pg0;-><init>()V
 
-    .line 4
-    invoke-virtual {v1, v0}, Lk3/n;->a(Lk3/h;)Ljava/lang/Object;
+    iput-object v0, p0, Lk3/wg0;->o:Lk3/pg0;
 
-    move-result-object v0
-
-    .line 5
-    check-cast v0, Ljava/lang/String;
-
-    invoke-static {v0}, Ljava/util/regex/Pattern;->compile(Ljava/lang/String;)Ljava/util/regex/Pattern;
-
-    move-result-object v0
-    :try_end_0
-    .catch Ljava/util/regex/PatternSyntaxException; {:try_start_0 .. :try_end_0} :catch_0
-
-    goto :goto_0
-
-    :catch_0
     const/4 v0, 0x0
 
-    .line 6
-    :goto_0
-    iput-object v0, p0, Lk3/wg0;->a:Ljava/util/regex/Pattern;
+    .line 4
+    iput-boolean v0, p0, Lk3/wg0;->p:Z
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Ljava/lang/String;)Ljava/lang/String;
+.method public final a()Lk3/vg0;
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lk3/wg0;->a:Ljava/util/regex/Pattern;
+    iget-object v0, p0, Lk3/wg0;->d:Ljava/lang/String;
 
-    const/4 v1, 0x0
+    const-string v1, "ad unit must not be null"
 
-    if-eqz v0, :cond_1
-
-    if-nez p1, :cond_0
-
-    goto :goto_0
+    invoke-static {v0, v1}, Ld2/h;->i(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 2
-    :cond_0
-    invoke-virtual {v0, p1}, Ljava/util/regex/Pattern;->matcher(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
+    iget-object v0, p0, Lk3/wg0;->b:Lcom/google/android/gms/internal/ads/zzvj;
 
-    move-result-object p1
+    const-string v1, "ad size must not be null"
+
+    invoke-static {v0, v1}, Ld2/h;->i(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 3
-    invoke-virtual {p1}, Ljava/util/regex/Matcher;->find()Z
+    iget-object v0, p0, Lk3/wg0;->a:Lcom/google/android/gms/internal/ads/zzvc;
 
-    move-result v0
+    const-string v1, "ad request must not be null"
 
-    if-eqz v0, :cond_1
+    invoke-static {v0, v1}, Ld2/h;->i(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 4
-    invoke-virtual {p1}, Ljava/util/regex/Matcher;->group()Ljava/lang/String;
+    new-instance v0, Lk3/vg0;
 
-    move-result-object p1
+    invoke-direct {v0, p0}, Lk3/vg0;-><init>(Lk3/wg0;)V
 
-    return-object p1
-
-    :cond_1
-    :goto_0
-    return-object v1
+    return-object v0
 .end method

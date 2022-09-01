@@ -12,21 +12,21 @@
 
 
 # instance fields
-.field public g0:Lla/e;
+.field public h0:Lla/e;
 
-.field public h0:Lla/d;
+.field public i0:Lla/d;
 
-.field public i0:Landroidx/recyclerview/widget/RecyclerView;
+.field public j0:Landroidx/recyclerview/widget/RecyclerView;
 
-.field public j0:Ljava/lang/String;
+.field public k0:Ljava/lang/String;
 
-.field public k0:Lab/k$b;
+.field public l0:Lab/k$b;
 
-.field public l0:Lab/k$c;
+.field public m0:Lab/k$c;
 
-.field public final m0:Lab/k$a;
+.field public final n0:Lab/k$a;
 
-.field public n0:Ljava/lang/String;
+.field public o0:Ljava/lang/String;
 
 
 # direct methods
@@ -41,7 +41,7 @@
 
     invoke-direct {v0, p0}, Lab/k$a;-><init>(Lab/k;)V
 
-    iput-object v0, p0, Lab/k;->m0:Lab/k$a;
+    iput-object v0, p0, Lab/k;->n0:Lab/k$a;
 
     return-void
 .end method
@@ -60,10 +60,10 @@
     .locals 7
 
     .line 1
-    iput-object p2, p0, Lab/k;->n0:Ljava/lang/String;
+    iput-object p2, p0, Lab/k;->o0:Ljava/lang/String;
 
     .line 2
-    iget-object v0, p0, Lab/k;->i0:Landroidx/recyclerview/widget/RecyclerView;
+    iget-object v0, p0, Lab/k;->j0:Landroidx/recyclerview/widget/RecyclerView;
 
     if-nez v0, :cond_0
 
@@ -71,7 +71,7 @@
 
     .line 3
     :cond_0
-    sget-object v0, Lcom/helpshift/util/u;->c:Le7/g;
+    sget-object v0, Lcom/helpshift/util/t;->c:Le7/g;
 
     .line 4
     iget-object v0, v0, Le7/g;->a:Lj8/b;
@@ -157,12 +157,12 @@
     move-object v3, p1
 
     .line 10
-    iput-object v3, p0, Lab/k;->j0:Ljava/lang/String;
+    iput-object v3, p0, Lab/k;->k0:Ljava/lang/String;
 
     .line 11
     new-instance p1, Lab/k$d;
 
-    iget-object v6, p0, Lab/k;->m0:Lab/k$a;
+    iget-object v6, p0, Lab/k;->n0:Lab/k$a;
 
     move-object v1, p1
 
@@ -191,7 +191,7 @@
 
     invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object p2, p0, Lab/k;->j0:Ljava/lang/String;
+    iget-object p2, p0, Lab/k;->k0:Ljava/lang/String;
 
     invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -204,7 +204,7 @@
     const-string v0, "Helpshift_SearchFrag"
 
     .line 15
-    invoke-static {v0, p1, p2, p2}, Landroidx/savedstate/d;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v0, p1, p2, p2}, Le5/i;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
 
     return-void
 .end method
@@ -220,7 +220,7 @@
 
     invoke-direct {v0, p1}, Lla/e;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lab/k;->g0:Lla/e;
+    iput-object v0, p0, Lab/k;->h0:Lla/e;
 
     .line 3
     new-instance p1, Ljava/lang/Thread;
@@ -251,7 +251,7 @@
     invoke-super {p0, p1}, Landroidx/fragment/app/Fragment;->V(Landroid/os/Bundle;)V
 
     .line 2
-    iget-object p1, p0, Landroidx/fragment/app/Fragment;->l:Landroid/os/Bundle;
+    iget-object p1, p0, Landroidx/fragment/app/Fragment;->m:Landroid/os/Bundle;
 
     if-eqz p1, :cond_0
 
@@ -264,7 +264,7 @@
 
     check-cast p1, Lla/d;
 
-    iput-object p1, p0, Lab/k;->h0:Lla/d;
+    iput-object p1, p0, Lab/k;->i0:Lla/d;
 
     :cond_0
     return-void
@@ -288,19 +288,19 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lab/k;->i0:Landroidx/recyclerview/widget/RecyclerView;
+    iget-object v0, p0, Lab/k;->j0:Landroidx/recyclerview/widget/RecyclerView;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Landroidx/recyclerview/widget/RecyclerView;->setAdapter(Landroidx/recyclerview/widget/RecyclerView$e;)V
 
     .line 2
-    iput-object v1, p0, Lab/k;->i0:Landroidx/recyclerview/widget/RecyclerView;
+    iput-object v1, p0, Lab/k;->j0:Landroidx/recyclerview/widget/RecyclerView;
 
     const/4 v0, 0x1
 
     .line 3
-    iput-boolean v0, p0, Landroidx/fragment/app/Fragment;->K:Z
+    iput-boolean v0, p0, Landroidx/fragment/app/Fragment;->L:Z
 
     return-void
 .end method
@@ -317,7 +317,7 @@
 
     check-cast p2, Landroidx/recyclerview/widget/RecyclerView;
 
-    iput-object p2, p0, Lab/k;->i0:Landroidx/recyclerview/widget/RecyclerView;
+    iput-object p2, p0, Lab/k;->j0:Landroidx/recyclerview/widget/RecyclerView;
 
     .line 2
     new-instance v0, Landroidx/recyclerview/widget/LinearLayoutManager;
@@ -337,17 +337,17 @@
 
     invoke-direct {p1, p0}, Lab/k$b;-><init>(Lab/k;)V
 
-    iput-object p1, p0, Lab/k;->k0:Lab/k$b;
+    iput-object p1, p0, Lab/k;->l0:Lab/k$b;
 
     .line 6
     new-instance p1, Lab/k$c;
 
     invoke-direct {p1, p0}, Lab/k$c;-><init>(Lab/k;)V
 
-    iput-object p1, p0, Lab/k;->l0:Lab/k$c;
+    iput-object p1, p0, Lab/k;->m0:Lab/k$c;
 
     .line 7
-    iget-object p1, p0, Landroidx/fragment/app/Fragment;->l:Landroid/os/Bundle;
+    iget-object p1, p0, Landroidx/fragment/app/Fragment;->m:Landroid/os/Bundle;
 
     if-eqz p1, :cond_0
 
@@ -358,13 +358,13 @@
 
     move-result-object p1
 
-    iput-object p1, p0, Lab/k;->n0:Ljava/lang/String;
+    iput-object p1, p0, Lab/k;->o0:Ljava/lang/String;
 
     .line 9
     :cond_0
-    iget-object p1, p0, Lab/k;->j0:Ljava/lang/String;
+    iget-object p1, p0, Lab/k;->k0:Ljava/lang/String;
 
-    iget-object p2, p0, Lab/k;->n0:Ljava/lang/String;
+    iget-object p2, p0, Lab/k;->o0:Ljava/lang/String;
 
     invoke-virtual {p0, p1, p2}, Lab/k;->R0(Ljava/lang/String;Ljava/lang/String;)V
 

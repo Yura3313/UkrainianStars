@@ -155,7 +155,7 @@
     const/4 p2, 0x0
 
     :goto_1
-    sget v3, Ld/b;->r:I
+    sget v3, Ld/b;->s:I
 
     if-nez p3, :cond_3
 
@@ -1018,7 +1018,7 @@
     iput-object p1, p0, Ld/b$c;->b:Landroid/content/res/Resources;
 
     .line 2
-    sget v0, Ld/b;->r:I
+    sget v0, Ld/b;->s:I
 
     .line 3
     invoke-virtual {p1}, Landroid/content/res/Resources;->getDisplayMetrics()Landroid/util/DisplayMetrics;

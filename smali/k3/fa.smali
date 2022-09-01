@@ -7,18 +7,18 @@
 
 
 # instance fields
-.field public final synthetic f:Landroid/content/Context;
+.field public final synthetic g:Landroid/content/Context;
 
-.field public final synthetic g:Lk3/pd;
+.field public final synthetic h:Lk3/qd;
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;Lk3/pd;)V
+.method public constructor <init>(Landroid/content/Context;Lk3/qd;)V
     .locals 0
 
-    iput-object p1, p0, Lk3/fa;->f:Landroid/content/Context;
+    iput-object p1, p0, Lk3/fa;->g:Landroid/content/Context;
 
-    iput-object p2, p0, Lk3/fa;->g:Lk3/pd;
+    iput-object p2, p0, Lk3/fa;->h:Lk3/qd;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -32,16 +32,16 @@
 
     .line 1
     :try_start_0
-    iget-object v0, p0, Lk3/fa;->f:Landroid/content/Context;
+    iget-object v0, p0, Lk3/fa;->g:Landroid/content/Context;
 
     invoke-static {v0}, Lcom/google/android/gms/ads/identifier/AdvertisingIdClient;->getAdvertisingIdInfo(Landroid/content/Context;)Lcom/google/android/gms/ads/identifier/AdvertisingIdClient$Info;
 
     move-result-object v0
 
     .line 2
-    iget-object v1, p0, Lk3/fa;->g:Lk3/pd;
+    iget-object v1, p0, Lk3/fa;->h:Lk3/qd;
 
-    invoke-virtual {v1, v0}, Lk3/pd;->a(Ljava/lang/Object;)Z
+    invoke-virtual {v1, v0}, Lk3/qd;->a(Ljava/lang/Object;)Z
     :try_end_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_3
     .catch Ljava/lang/IllegalStateException; {:try_start_0 .. :try_end_0} :catch_2
@@ -70,9 +70,9 @@
 
     .line 3
     :goto_0
-    iget-object v1, p0, Lk3/fa;->g:Lk3/pd;
+    iget-object v1, p0, Lk3/fa;->h:Lk3/qd;
 
-    invoke-virtual {v1, v0}, Lk3/pd;->b(Ljava/lang/Throwable;)Z
+    invoke-virtual {v1, v0}, Lk3/qd;->b(Ljava/lang/Throwable;)Z
 
     return-void
 .end method

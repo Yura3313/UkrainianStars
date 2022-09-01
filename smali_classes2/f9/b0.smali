@@ -43,17 +43,17 @@
     .line 2
     iget-object v2, v1, Ln8/c;->a:Le8/s;
 
-    invoke-static {v2}, Li8/b;->c(Le8/s;)Lcom/helpshift/util/h0;
+    invoke-static {v2}, Li8/b;->c(Le8/s;)Lcom/helpshift/util/f0;
 
     move-result-object v2
 
     .line 3
-    iget-object v4, v2, Lcom/helpshift/util/h0;->a:Ljava/lang/Object;
+    iget-object v4, v2, Lcom/helpshift/util/f0;->a:Ljava/lang/Object;
 
     check-cast v4, Ljava/lang/String;
 
     .line 4
-    iget-object v2, v2, Lcom/helpshift/util/h0;->b:Ljava/lang/Object;
+    iget-object v2, v2, Lcom/helpshift/util/f0;->b:Ljava/lang/Object;
 
     check-cast v2, Ljava/lang/Long;
 
@@ -62,7 +62,7 @@
     move-result-wide v5
 
     .line 5
-    new-instance v7, Lo8/o;
+    new-instance v7, Lo8/p;
 
     const-string v2, "mobile"
 
@@ -70,32 +70,32 @@
 
     const/4 v9, 0x4
 
-    invoke-direct {v7, v2, v8, v9}, Lo8/o;-><init>(Ljava/lang/String;Ljava/lang/String;I)V
+    invoke-direct {v7, v2, v8, v9}, Lo8/p;-><init>(Ljava/lang/String;Ljava/lang/String;I)V
 
     .line 6
-    new-instance v8, Lo8/r0;
+    new-instance v8, Lo8/t0;
 
     move-object v2, v8
 
-    invoke-direct/range {v2 .. v7}, Lo8/r0;-><init>(Ljava/lang/String;Ljava/lang/String;JLo8/o;)V
+    invoke-direct/range {v2 .. v7}, Lo8/t0;-><init>(Ljava/lang/String;Ljava/lang/String;JLo8/p;)V
 
     .line 7
-    iget-object v2, v0, Lq8/d;->g:Ljava/lang/Long;
+    iget-object v2, v0, Lq8/d;->h:Ljava/lang/Long;
 
-    iput-object v2, v8, Lo8/y;->l:Ljava/lang/Long;
+    iput-object v2, v8, Lo8/z;->m:Ljava/lang/Long;
 
     .line 8
     invoke-virtual {v1, v0}, Ln8/c;->N(Lq8/d;)Z
 
     move-result v2
 
-    invoke-virtual {v8, v2}, Lo8/r0;->x(Z)V
+    invoke-virtual {v8, v2}, Lo8/t0;->x(Z)V
 
     .line 9
-    invoke-virtual {v1, v0, v8}, Ln8/c;->b(Lq8/d;Lo8/y;)V
+    invoke-virtual {v1, v0, v8}, Ln8/c;->b(Lq8/d;Lo8/z;)V
 
     .line 10
-    invoke-virtual {v1, v0, v8}, Ln8/c;->K(Lq8/d;Lo8/r0;)V
+    invoke-virtual {v1, v0, v8}, Ln8/c;->K(Lq8/d;Lo8/t0;)V
 
     return-void
 .end method

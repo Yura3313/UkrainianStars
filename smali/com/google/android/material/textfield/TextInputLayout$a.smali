@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field public final synthetic f:Lcom/google/android/material/textfield/TextInputLayout;
+.field public final synthetic g:Lcom/google/android/material/textfield/TextInputLayout;
 
 
 # direct methods
 .method public constructor <init>(Lcom/google/android/material/textfield/TextInputLayout;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout$a;->f:Lcom/google/android/material/textfield/TextInputLayout;
+    iput-object p1, p0, Lcom/google/android/material/textfield/TextInputLayout$a;->g:Lcom/google/android/material/textfield/TextInputLayout;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -38,10 +38,10 @@
     .locals 3
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout$a;->f:Lcom/google/android/material/textfield/TextInputLayout;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout$a;->g:Lcom/google/android/material/textfield/TextInputLayout;
 
     .line 2
-    iget-boolean v1, v0, Lcom/google/android/material/textfield/TextInputLayout;->M0:Z
+    iget-boolean v1, v0, Lcom/google/android/material/textfield/TextInputLayout;->N0:Z
 
     xor-int/lit8 v1, v1, 0x1
 
@@ -51,9 +51,9 @@
     invoke-virtual {v0, v1, v2}, Lcom/google/android/material/textfield/TextInputLayout;->B(ZZ)V
 
     .line 4
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout$a;->f:Lcom/google/android/material/textfield/TextInputLayout;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout$a;->g:Lcom/google/android/material/textfield/TextInputLayout;
 
-    iget-boolean v1, v0, Lcom/google/android/material/textfield/TextInputLayout;->m:Z
+    iget-boolean v1, v0, Lcom/google/android/material/textfield/TextInputLayout;->n:Z
 
     if-eqz v1, :cond_0
 
@@ -66,10 +66,10 @@
 
     .line 6
     :cond_0
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout$a;->f:Lcom/google/android/material/textfield/TextInputLayout;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout$a;->g:Lcom/google/android/material/textfield/TextInputLayout;
 
     .line 7
-    iget-boolean v1, v0, Lcom/google/android/material/textfield/TextInputLayout;->t:Z
+    iget-boolean v1, v0, Lcom/google/android/material/textfield/TextInputLayout;->u:Z
 
     if-eqz v1, :cond_1
 

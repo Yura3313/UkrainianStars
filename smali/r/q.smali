@@ -448,7 +448,7 @@
 
     iget-object v4, p0, Lr/q;->d:Lq/e$a;
 
-    sget-object v6, Lq/e$a;->h:Lq/e$a;
+    sget-object v6, Lq/e$a;->i:Lq/e$a;
 
     if-ne v4, v6, :cond_a
 

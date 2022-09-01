@@ -3,15 +3,15 @@
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lk3/iv0;
+.implements Lk3/mv0;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "Lk3/iv0<",
-        "Lk3/gm0;",
+        "Lk3/mv0<",
+        "Lk3/jm0;",
         ">;"
     }
 .end annotation
@@ -26,16 +26,16 @@
     return-void
 .end method
 
-.method public static a()Lk3/gm0;
+.method public static a()Lk3/jm0;
     .locals 2
 
     .line 1
-    sget-object v0, Lk3/jd;->b:Lk3/nd;
+    sget-object v0, Lk3/jd;->a:Lk3/od;
 
     const-string v1, "Cannot return null from a non-@Nullable @Provides method"
 
     .line 2
-    invoke-static {v0, v1}, Ltd/c;->k(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+    invoke-static {v0, v1}, Lk3/gj;->f(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     return-object v0
 .end method
@@ -45,7 +45,7 @@
 .method public final synthetic get()Ljava/lang/Object;
     .locals 1
 
-    invoke-static {}, Lk3/ei0;->a()Lk3/gm0;
+    invoke-static {}, Lk3/ei0;->a()Lk3/jm0;
 
     move-result-object v0
 

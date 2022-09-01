@@ -3,7 +3,7 @@
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lk3/iv0;
+.implements Lk3/mv0;
 
 
 # instance fields
@@ -44,8 +44,6 @@
 
     iget v0, p0, Lk3/ys;->a:I
 
-    const-string v1, "Cannot return null from a non-@Nullable @Provides method"
-
     packed-switch v0, :pswitch_data_0
 
     goto :goto_0
@@ -54,53 +52,33 @@
     :pswitch_0
     iget-object v0, p0, Lk3/ys;->b:Ljava/lang/Object;
 
-    check-cast v0, Lk3/mv0;
-
-    invoke-interface {v0}, Lk3/mv0;->get()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Ll2/c;
+    check-cast v0, Lcom/google/android/gms/internal/ads/n;
 
     .line 2
-    new-instance v1, Lk3/hg0;
+    iget-object v0, v0, Lcom/google/android/gms/internal/ads/n;->a:Ljava/util/HashSet;
 
-    invoke-direct {v1, v0}, Lk3/hg0;-><init>(Ll2/c;)V
-
-    return-object v1
+    const-string v1, "Cannot return null from a non-@Nullable @Provides method"
 
     .line 3
-    :pswitch_1
-    invoke-static {}, Ljava/util/Collections;->emptySet()Ljava/util/Set;
-
-    move-result-object v0
-
-    .line 4
-    invoke-static {v0, v1}, Ltd/c;->k(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+    invoke-static {v0, v1}, Lk3/gj;->f(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
     return-object v0
 
-    .line 5
+    .line 4
     :goto_0
     iget-object v0, p0, Lk3/ys;->b:Ljava/lang/Object;
 
-    check-cast v0, Lk3/jy0;
+    check-cast v0, Lk3/yw;
 
-    .line 6
-    iget-object v0, v0, Lk3/jy0;->b:Ljava/lang/Object;
-
-    check-cast v0, Lcom/google/android/gms/internal/ads/zzasp;
-
-    iget-object v0, v0, Lcom/google/android/gms/internal/ads/zzasp;->n:Ljava/lang/String;
-
-    .line 7
-    invoke-static {v0, v1}, Ltd/c;->k(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+    .line 5
+    iget-object v0, v0, Lk3/yw;->b:Lcom/google/android/gms/internal/ads/zzand;
 
     return-object v0
 
+    nop
+
     :pswitch_data_0
     .packed-switch 0x0
-        :pswitch_1
         :pswitch_0
     .end packed-switch
 .end method

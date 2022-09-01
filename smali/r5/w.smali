@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field public final a:Lr5/a0;
+.field public final a:Lr5/c0;
 
 .field public final b:Lf5/n;
 
@@ -15,14 +15,14 @@
 
 
 # direct methods
-.method public constructor <init>(Lr5/a0;Lf5/n;I)V
+.method public constructor <init>(Lr5/c0;Lf5/n;I)V
     .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lr5/w;->a:Lr5/a0;
+    iput-object p1, p0, Lr5/w;->a:Lr5/c0;
 
     .line 3
     iput-object p2, p0, Lr5/w;->b:Lf5/n;
@@ -44,9 +44,9 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lr5/w;->a:Lr5/a0;
+    iget-object v0, p0, Lr5/w;->a:Lr5/c0;
 
-    invoke-interface {v0, p1}, Lr5/a0;->a([B)[B
+    invoke-interface {v0, p1}, Lr5/c0;->a([B)[B
 
     move-result-object p1
 
@@ -219,9 +219,9 @@
     invoke-interface {v3, p1, p2}, Lf5/n;->a([B[B)V
 
     .line 7
-    iget-object p1, p0, Lr5/w;->a:Lr5/a0;
+    iget-object p1, p0, Lr5/w;->a:Lr5/c0;
 
-    invoke-interface {p1, v0}, Lr5/a0;->b([B)[B
+    invoke-interface {p1, v0}, Lr5/c0;->b([B)[B
 
     move-result-object p1
 

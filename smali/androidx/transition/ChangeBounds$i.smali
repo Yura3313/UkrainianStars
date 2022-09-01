@@ -15,9 +15,9 @@
 
 
 # instance fields
-.field public f:Z
+.field public g:Z
 
-.field public final synthetic g:Landroid/view/ViewGroup;
+.field public final synthetic h:Landroid/view/ViewGroup;
 
 
 # direct methods
@@ -25,14 +25,14 @@
     .locals 0
 
     .line 1
-    iput-object p1, p0, Landroidx/transition/ChangeBounds$i;->g:Landroid/view/ViewGroup;
+    iput-object p1, p0, Landroidx/transition/ChangeBounds$i;->h:Landroid/view/ViewGroup;
 
     invoke-direct {p0}, Landroidx/transition/d;-><init>()V
 
     const/4 p1, 0x0
 
     .line 2
-    iput-boolean p1, p0, Landroidx/transition/ChangeBounds$i;->f:Z
+    iput-boolean p1, p0, Landroidx/transition/ChangeBounds$i;->g:Z
 
     return-void
 .end method
@@ -42,7 +42,7 @@
 .method public final a()V
     .locals 2
 
-    iget-object v0, p0, Landroidx/transition/ChangeBounds$i;->g:Landroid/view/ViewGroup;
+    iget-object v0, p0, Landroidx/transition/ChangeBounds$i;->h:Landroid/view/ViewGroup;
 
     const/4 v1, 0x0
 
@@ -55,7 +55,7 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Landroidx/transition/ChangeBounds$i;->g:Landroid/view/ViewGroup;
+    iget-object v0, p0, Landroidx/transition/ChangeBounds$i;->h:Landroid/view/ViewGroup;
 
     const/4 v1, 0x0
 
@@ -64,7 +64,7 @@
     const/4 v0, 0x1
 
     .line 2
-    iput-boolean v0, p0, Landroidx/transition/ChangeBounds$i;->f:Z
+    iput-boolean v0, p0, Landroidx/transition/ChangeBounds$i;->g:Z
 
     return-void
 .end method
@@ -73,12 +73,12 @@
     .locals 2
 
     .line 1
-    iget-boolean v0, p0, Landroidx/transition/ChangeBounds$i;->f:Z
+    iget-boolean v0, p0, Landroidx/transition/ChangeBounds$i;->g:Z
 
     if-nez v0, :cond_0
 
     .line 2
-    iget-object v0, p0, Landroidx/transition/ChangeBounds$i;->g:Landroid/view/ViewGroup;
+    iget-object v0, p0, Landroidx/transition/ChangeBounds$i;->h:Landroid/view/ViewGroup;
 
     const/4 v1, 0x0
 
@@ -94,7 +94,7 @@
 .method public final e()V
     .locals 2
 
-    iget-object v0, p0, Landroidx/transition/ChangeBounds$i;->g:Landroid/view/ViewGroup;
+    iget-object v0, p0, Landroidx/transition/ChangeBounds$i;->h:Landroid/view/ViewGroup;
 
     const/4 v1, 0x1
 

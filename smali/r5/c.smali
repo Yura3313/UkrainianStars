@@ -3,7 +3,7 @@
 .source "AesCtrJceCipher.java"
 
 # interfaces
-.implements Lr5/a0;
+.implements Lr5/c0;
 
 
 # static fields
@@ -53,7 +53,7 @@
     .line 2
     array-length v0, p1
 
-    invoke-static {v0}, Lr5/j0;->a(I)V
+    invoke-static {v0}, Lr5/l0;->a(I)V
 
     .line 3
     new-instance v0, Ljavax/crypto/spec/SecretKeySpec;
@@ -130,7 +130,7 @@
     new-array v0, v0, [B
 
     .line 3
-    invoke-static {v1}, Lr5/d0;->a(I)[B
+    invoke-static {v1}, Lr5/f0;->a(I)[B
 
     move-result-object v8
 

@@ -52,13 +52,13 @@
     iput-object v0, p0, Ls1/a$a$a;->b:Ljava/lang/Boolean;
 
     .line 5
-    iget-object v0, p1, Ls1/a$a;->f:Ljava/lang/String;
+    iget-object v0, p1, Ls1/a$a;->g:Ljava/lang/String;
 
     .line 6
     iput-object v0, p0, Ls1/a$a$a;->a:Ljava/lang/String;
 
     .line 7
-    iget-boolean v0, p1, Ls1/a$a;->g:Z
+    iget-boolean v0, p1, Ls1/a$a;->h:Z
 
     .line 8
     invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
@@ -68,7 +68,7 @@
     iput-object v0, p0, Ls1/a$a$a;->b:Ljava/lang/Boolean;
 
     .line 9
-    iget-object p1, p1, Ls1/a$a;->h:Ljava/lang/String;
+    iget-object p1, p1, Ls1/a$a;->i:Ljava/lang/String;
 
     .line 10
     iput-object p1, p0, Ls1/a$a$a;->c:Ljava/lang/String;

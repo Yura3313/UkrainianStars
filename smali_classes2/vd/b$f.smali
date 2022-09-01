@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field public final synthetic f:Lvd/b;
+.field public final synthetic g:Lvd/b;
 
 
 # direct methods
 .method public constructor <init>(Lvd/b;)V
     .locals 0
 
-    iput-object p1, p0, Lvd/b$f;->f:Lvd/b;
+    iput-object p1, p0, Lvd/b$f;->g:Lvd/b;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -49,7 +49,7 @@
     move-result-object v0
 
     .line 2
-    iget-object v0, v0, Lbe/v0;->a:Ljava/lang/Object;
+    iget-object v0, v0, Lbe/x0;->a:Ljava/lang/Object;
 
     .line 3
     check-cast v0, Lbe/w;
@@ -75,7 +75,7 @@
 
     invoke-direct {v2}, Ljava/util/Date;-><init>()V
 
-    iget-object v3, v0, Lcom/supercell/id/model/IdProfile;->j:Ljava/util/Date;
+    iget-object v3, v0, Lcom/supercell/id/model/IdProfile;->k:Ljava/util/Date;
 
     invoke-virtual {v2, v3}, Ljava/util/Date;->compareTo(Ljava/util/Date;)I
 
@@ -101,7 +101,7 @@
     move-result-object p1
 
     .line 6
-    iget-object p1, p1, Lae/u;->m:La5/d0;
+    iget-object p1, p1, Lae/u;->m:Lpe/a;
 
     const/16 v2, 0x18
 
@@ -110,22 +110,22 @@
     const-string v4, "click"
 
     .line 7
-    invoke-static {p1, v3, v4, v1, v2}, La5/d0;->a(La5/d0;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;I)V
+    invoke-static {p1, v3, v4, v1, v2}, Lpe/a;->e(Lpe/a;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;I)V
 
     .line 8
-    iget-object p1, p0, Lvd/b$f;->f:Lvd/b;
+    iget-object p1, p0, Lvd/b$f;->g:Lvd/b;
 
-    invoke-static {p1}, Lcom/android/billingclient/api/c0;->e(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
+    invoke-static {p1}, Lcom/android/billingclient/api/b0;->f(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
 
     move-result-object p1
 
     if-eqz p1, :cond_4
 
     .line 9
-    iget-object v0, v0, Lcom/supercell/id/model/IdProfile;->i:Ljava/lang/String;
+    iget-object v0, v0, Lcom/supercell/id/model/IdProfile;->j:Ljava/lang/String;
 
     .line 10
-    sget-object v1, Lvd/a;->w0:Lvd/a$a;
+    sget-object v1, Lvd/a;->x0:Lvd/a$a;
 
     .line 11
     new-instance v1, Lvd/a;
@@ -149,7 +149,7 @@
 
     .line 15
     :cond_2
-    sget-object v0, Lcom/supercell/id/ui/MainActivity;->s:Ljava/lang/ref/WeakReference;
+    sget-object v0, Lcom/supercell/id/ui/MainActivity;->t:Ljava/lang/ref/WeakReference;
 
     const-string v0, "popupDialog"
 
@@ -162,21 +162,21 @@
     invoke-direct {p1, p0}, Lvd/b$f$a;-><init>(Lvd/b$f;)V
 
     .line 18
-    iput-object p1, v1, Lvd/a;->u0:Lre/q;
+    iput-object p1, v1, Lvd/a;->v0:Lre/q;
 
     goto :goto_2
 
     .line 19
     :cond_3
-    iget-object p1, p0, Lvd/b$f;->f:Lvd/b;
+    iget-object p1, p0, Lvd/b$f;->g:Lvd/b;
 
-    invoke-static {p1}, Lcom/android/billingclient/api/c0;->e(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
+    invoke-static {p1}, Lcom/android/billingclient/api/b0;->f(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
 
     move-result-object p1
 
     if-eqz p1, :cond_4
 
-    sget-object v0, Lcom/supercell/id/ui/MainActivity;->s:Ljava/lang/ref/WeakReference;
+    sget-object v0, Lcom/supercell/id/ui/MainActivity;->t:Ljava/lang/ref/WeakReference;
 
     const-string v0, "cannot_change_nickname"
 

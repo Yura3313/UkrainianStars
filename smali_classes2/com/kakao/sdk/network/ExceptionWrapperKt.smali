@@ -9,7 +9,7 @@
 
     const-string v0, "$this$origin"
 
-    invoke-static {p0, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     instance-of v0, p0, Lcom/kakao/sdk/network/ExceptionWrapper;
 

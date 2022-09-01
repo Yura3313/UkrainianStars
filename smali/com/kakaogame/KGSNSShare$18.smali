@@ -95,7 +95,7 @@
     const-string v0, "isReward"
 
     .line 9
-    invoke-static {p1, p2, v0, p2}, Landroidx/appcompat/app/j;->a(Lcom/kakaogame/KGResult;Ljava/util/LinkedHashMap;Ljava/lang/String;Ljava/util/LinkedHashMap;)Lcom/kakaogame/KGResult;
+    invoke-static {p1, p2, v0, p2}, Landroid/support/v4/media/c;->a(Lcom/kakaogame/KGResult;Ljava/util/LinkedHashMap;Ljava/lang/String;Ljava/util/LinkedHashMap;)Lcom/kakaogame/KGResult;
 
     move-result-object p1
 

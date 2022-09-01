@@ -7,14 +7,14 @@
 
 
 # instance fields
-.field public final synthetic f:Lqa/e0;
+.field public final synthetic g:Lqa/e0;
 
 
 # direct methods
 .method public constructor <init>(Lqa/e0;)V
     .locals 0
 
-    iput-object p1, p0, Lqa/a0;->f:Lqa/e0;
+    iput-object p1, p0, Lqa/a0;->g:Lqa/e0;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -27,7 +27,7 @@
     .locals 7
 
     .line 1
-    iget-object p1, p0, Lqa/a0;->f:Lqa/e0;
+    iget-object p1, p0, Lqa/a0;->g:Lqa/e0;
 
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -54,14 +54,14 @@
     move-result-object v1
 
     .line 5
-    invoke-static {v1}, Lcom/google/android/play/core/appupdate/g;->b(Ljava/lang/String;)Z
+    invoke-static {v1}, La5/b0;->d(Ljava/lang/String;)Z
 
     move-result v3
 
     if-nez v3, :cond_0
 
     .line 6
-    sget-object v3, Lcom/helpshift/util/u;->c:Le7/g;
+    sget-object v3, Lcom/helpshift/util/t;->c:Le7/g;
 
     .line 7
     iget-object v3, v3, Le7/g;->f:La8/f;
@@ -77,11 +77,11 @@
     const-string v4, "EEEE, MMMM dd, yyyy"
 
     .line 10
-    invoke-static {v4, v3}, Li8/b;->e(Ljava/lang/String;Ljava/util/Locale;)Lcom/helpshift/util/s;
+    invoke-static {v4, v3}, Li8/b;->e(Ljava/lang/String;Ljava/util/Locale;)Lcom/helpshift/util/r;
 
     move-result-object v3
 
-    invoke-virtual {v3, v1}, Lcom/helpshift/util/s;->b(Ljava/lang/String;)Ljava/util/Date;
+    invoke-virtual {v3, v1}, Lcom/helpshift/util/r;->b(Ljava/lang/String;)Ljava/util/Date;
 
     move-result-object v1
 

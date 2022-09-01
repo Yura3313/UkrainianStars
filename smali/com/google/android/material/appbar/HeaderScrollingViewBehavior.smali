@@ -451,7 +451,7 @@
 
     float-to-int p1, p1
 
-    invoke-static {p1, v1, v0}, La0/a;->e(III)I
+    invoke-static {p1, v1, v0}, La0/a;->b(III)I
 
     move-result v1
 

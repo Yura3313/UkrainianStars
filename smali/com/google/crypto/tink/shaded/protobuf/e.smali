@@ -20,9 +20,9 @@
 
 
 # instance fields
-.field public g:[Z
+.field public h:[Z
 
-.field public h:I
+.field public i:I
 
 
 # direct methods
@@ -39,7 +39,7 @@
     invoke-direct {v0, v2, v1}, Lcom/google/crypto/tink/shaded/protobuf/e;-><init>([ZI)V
 
     .line 2
-    iput-boolean v1, v0, Lcom/google/crypto/tink/shaded/protobuf/c;->f:Z
+    iput-boolean v1, v0, Lcom/google/crypto/tink/shaded/protobuf/c;->g:Z
 
     return-void
 .end method
@@ -66,10 +66,10 @@
     invoke-direct {p0}, Lcom/google/crypto/tink/shaded/protobuf/c;-><init>()V
 
     .line 3
-    iput-object p1, p0, Lcom/google/crypto/tink/shaded/protobuf/e;->g:[Z
+    iput-object p1, p0, Lcom/google/crypto/tink/shaded/protobuf/e;->h:[Z
 
     .line 4
-    iput p2, p0, Lcom/google/crypto/tink/shaded/protobuf/e;->h:I
+    iput p2, p0, Lcom/google/crypto/tink/shaded/protobuf/e;->i:I
 
     return-void
 .end method
@@ -93,12 +93,12 @@
     if-ltz p1, :cond_1
 
     .line 4
-    iget v0, p0, Lcom/google/crypto/tink/shaded/protobuf/e;->h:I
+    iget v0, p0, Lcom/google/crypto/tink/shaded/protobuf/e;->i:I
 
     if-gt p1, v0, :cond_1
 
     .line 5
-    iget-object v1, p0, Lcom/google/crypto/tink/shaded/protobuf/e;->g:[Z
+    iget-object v1, p0, Lcom/google/crypto/tink/shaded/protobuf/e;->h:[Z
 
     array-length v2, v1
 
@@ -121,7 +121,7 @@
     const/4 v4, 0x1
 
     .line 7
-    invoke-static {v0, v2, v3, v4}, Landroid/support/v4/media/c;->a(IIII)I
+    invoke-static {v0, v2, v3, v4}, Lk3/vq0;->a(IIII)I
 
     move-result v0
 
@@ -134,31 +134,31 @@
     invoke-static {v1, v2, v0, v2, p1}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     .line 10
-    iget-object v1, p0, Lcom/google/crypto/tink/shaded/protobuf/e;->g:[Z
+    iget-object v1, p0, Lcom/google/crypto/tink/shaded/protobuf/e;->h:[Z
 
     add-int/lit8 v2, p1, 0x1
 
-    iget v3, p0, Lcom/google/crypto/tink/shaded/protobuf/e;->h:I
+    iget v3, p0, Lcom/google/crypto/tink/shaded/protobuf/e;->i:I
 
     sub-int/2addr v3, p1
 
     invoke-static {v1, p1, v0, v2, v3}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     .line 11
-    iput-object v0, p0, Lcom/google/crypto/tink/shaded/protobuf/e;->g:[Z
+    iput-object v0, p0, Lcom/google/crypto/tink/shaded/protobuf/e;->h:[Z
 
     .line 12
     :goto_0
-    iget-object v0, p0, Lcom/google/crypto/tink/shaded/protobuf/e;->g:[Z
+    iget-object v0, p0, Lcom/google/crypto/tink/shaded/protobuf/e;->h:[Z
 
     aput-boolean p2, v0, p1
 
     .line 13
-    iget p1, p0, Lcom/google/crypto/tink/shaded/protobuf/e;->h:I
+    iget p1, p0, Lcom/google/crypto/tink/shaded/protobuf/e;->i:I
 
     add-int/lit8 p1, p1, 0x1
 
-    iput p1, p0, Lcom/google/crypto/tink/shaded/protobuf/e;->h:I
+    iput p1, p0, Lcom/google/crypto/tink/shaded/protobuf/e;->i:I
 
     .line 14
     iget p1, p0, Ljava/util/AbstractList;->modCount:I
@@ -238,7 +238,7 @@
     check-cast p1, Lcom/google/crypto/tink/shaded/protobuf/e;
 
     .line 7
-    iget v0, p1, Lcom/google/crypto/tink/shaded/protobuf/e;->h:I
+    iget v0, p1, Lcom/google/crypto/tink/shaded/protobuf/e;->i:I
 
     const/4 v1, 0x0
 
@@ -250,7 +250,7 @@
     const v2, 0x7fffffff
 
     .line 8
-    iget v3, p0, Lcom/google/crypto/tink/shaded/protobuf/e;->h:I
+    iget v3, p0, Lcom/google/crypto/tink/shaded/protobuf/e;->i:I
 
     sub-int/2addr v2, v3
 
@@ -259,7 +259,7 @@
     add-int/2addr v3, v0
 
     .line 9
-    iget-object v0, p0, Lcom/google/crypto/tink/shaded/protobuf/e;->g:[Z
+    iget-object v0, p0, Lcom/google/crypto/tink/shaded/protobuf/e;->h:[Z
 
     array-length v2, v0
 
@@ -270,22 +270,22 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/google/crypto/tink/shaded/protobuf/e;->g:[Z
+    iput-object v0, p0, Lcom/google/crypto/tink/shaded/protobuf/e;->h:[Z
 
     .line 11
     :cond_2
-    iget-object v0, p1, Lcom/google/crypto/tink/shaded/protobuf/e;->g:[Z
+    iget-object v0, p1, Lcom/google/crypto/tink/shaded/protobuf/e;->h:[Z
 
-    iget-object v2, p0, Lcom/google/crypto/tink/shaded/protobuf/e;->g:[Z
+    iget-object v2, p0, Lcom/google/crypto/tink/shaded/protobuf/e;->h:[Z
 
-    iget v4, p0, Lcom/google/crypto/tink/shaded/protobuf/e;->h:I
+    iget v4, p0, Lcom/google/crypto/tink/shaded/protobuf/e;->i:I
 
-    iget p1, p1, Lcom/google/crypto/tink/shaded/protobuf/e;->h:I
+    iget p1, p1, Lcom/google/crypto/tink/shaded/protobuf/e;->i:I
 
     invoke-static {v0, v1, v2, v4, p1}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     .line 12
-    iput v3, p0, Lcom/google/crypto/tink/shaded/protobuf/e;->h:I
+    iput v3, p0, Lcom/google/crypto/tink/shaded/protobuf/e;->i:I
 
     .line 13
     iget p1, p0, Ljava/util/AbstractList;->modCount:I
@@ -314,9 +314,9 @@
     invoke-virtual {p0}, Lcom/google/crypto/tink/shaded/protobuf/c;->b()V
 
     .line 2
-    iget v0, p0, Lcom/google/crypto/tink/shaded/protobuf/e;->h:I
+    iget v0, p0, Lcom/google/crypto/tink/shaded/protobuf/e;->i:I
 
-    iget-object v1, p0, Lcom/google/crypto/tink/shaded/protobuf/e;->g:[Z
+    iget-object v1, p0, Lcom/google/crypto/tink/shaded/protobuf/e;->h:[Z
 
     array-length v2, v1
 
@@ -329,7 +329,7 @@
     const/4 v4, 0x1
 
     .line 3
-    invoke-static {v0, v2, v3, v4}, Landroid/support/v4/media/c;->a(IIII)I
+    invoke-static {v0, v2, v3, v4}, Lk3/vq0;->a(IIII)I
 
     move-result v2
 
@@ -342,17 +342,17 @@
     invoke-static {v1, v3, v2, v3, v0}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     .line 6
-    iput-object v2, p0, Lcom/google/crypto/tink/shaded/protobuf/e;->g:[Z
+    iput-object v2, p0, Lcom/google/crypto/tink/shaded/protobuf/e;->h:[Z
 
     .line 7
     :cond_0
-    iget-object v0, p0, Lcom/google/crypto/tink/shaded/protobuf/e;->g:[Z
+    iget-object v0, p0, Lcom/google/crypto/tink/shaded/protobuf/e;->h:[Z
 
-    iget v1, p0, Lcom/google/crypto/tink/shaded/protobuf/e;->h:I
+    iget v1, p0, Lcom/google/crypto/tink/shaded/protobuf/e;->i:I
 
     add-int/lit8 v2, v1, 0x1
 
-    iput v2, p0, Lcom/google/crypto/tink/shaded/protobuf/e;->h:I
+    iput v2, p0, Lcom/google/crypto/tink/shaded/protobuf/e;->i:I
 
     aput-boolean p1, v0, v1
 
@@ -365,7 +365,7 @@
     if-ltz p1, :cond_0
 
     .line 1
-    iget v0, p0, Lcom/google/crypto/tink/shaded/protobuf/e;->h:I
+    iget v0, p0, Lcom/google/crypto/tink/shaded/protobuf/e;->i:I
 
     if-ge p1, v0, :cond_0
 
@@ -411,9 +411,9 @@
     check-cast p1, Lcom/google/crypto/tink/shaded/protobuf/e;
 
     .line 4
-    iget v1, p0, Lcom/google/crypto/tink/shaded/protobuf/e;->h:I
+    iget v1, p0, Lcom/google/crypto/tink/shaded/protobuf/e;->i:I
 
-    iget v2, p1, Lcom/google/crypto/tink/shaded/protobuf/e;->h:I
+    iget v2, p1, Lcom/google/crypto/tink/shaded/protobuf/e;->i:I
 
     const/4 v3, 0x0
 
@@ -423,18 +423,18 @@
 
     .line 5
     :cond_2
-    iget-object p1, p1, Lcom/google/crypto/tink/shaded/protobuf/e;->g:[Z
+    iget-object p1, p1, Lcom/google/crypto/tink/shaded/protobuf/e;->h:[Z
 
     const/4 v1, 0x0
 
     .line 6
     :goto_0
-    iget v2, p0, Lcom/google/crypto/tink/shaded/protobuf/e;->h:I
+    iget v2, p0, Lcom/google/crypto/tink/shaded/protobuf/e;->i:I
 
     if-ge v1, v2, :cond_4
 
     .line 7
-    iget-object v2, p0, Lcom/google/crypto/tink/shaded/protobuf/e;->g:[Z
+    iget-object v2, p0, Lcom/google/crypto/tink/shaded/protobuf/e;->h:[Z
 
     aget-boolean v2, v2, v1
 
@@ -461,12 +461,12 @@
     const-string v1, ", Size:"
 
     .line 1
-    invoke-static {v0, p1, v1}, Lcom/supercell/titan/a;->a(Ljava/lang/String;ILjava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v0, p1, v1}, La2/i;->b(Ljava/lang/String;ILjava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object p1
 
     .line 2
-    iget v0, p0, Lcom/google/crypto/tink/shaded/protobuf/e;->h:I
+    iget v0, p0, Lcom/google/crypto/tink/shaded/protobuf/e;->i:I
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -484,7 +484,7 @@
     invoke-virtual {p0, p1}, Lcom/google/crypto/tink/shaded/protobuf/e;->e(I)V
 
     .line 2
-    iget-object v0, p0, Lcom/google/crypto/tink/shaded/protobuf/e;->g:[Z
+    iget-object v0, p0, Lcom/google/crypto/tink/shaded/protobuf/e;->h:[Z
 
     aget-boolean p1, v0, p1
 
@@ -505,14 +505,14 @@
 
     .line 1
     :goto_0
-    iget v2, p0, Lcom/google/crypto/tink/shaded/protobuf/e;->h:I
+    iget v2, p0, Lcom/google/crypto/tink/shaded/protobuf/e;->i:I
 
     if-ge v1, v2, :cond_0
 
     mul-int/lit8 v0, v0, 0x1f
 
     .line 2
-    iget-object v2, p0, Lcom/google/crypto/tink/shaded/protobuf/e;->g:[Z
+    iget-object v2, p0, Lcom/google/crypto/tink/shaded/protobuf/e;->h:[Z
 
     aget-boolean v2, v2, v1
 
@@ -534,20 +534,20 @@
     .locals 2
 
     .line 1
-    iget v0, p0, Lcom/google/crypto/tink/shaded/protobuf/e;->h:I
+    iget v0, p0, Lcom/google/crypto/tink/shaded/protobuf/e;->i:I
 
     if-lt p1, v0, :cond_0
 
     .line 2
     new-instance v0, Lcom/google/crypto/tink/shaded/protobuf/e;
 
-    iget-object v1, p0, Lcom/google/crypto/tink/shaded/protobuf/e;->g:[Z
+    iget-object v1, p0, Lcom/google/crypto/tink/shaded/protobuf/e;->h:[Z
 
     invoke-static {v1, p1}, Ljava/util/Arrays;->copyOf([ZI)[Z
 
     move-result-object p1
 
-    iget v1, p0, Lcom/google/crypto/tink/shaded/protobuf/e;->h:I
+    iget v1, p0, Lcom/google/crypto/tink/shaded/protobuf/e;->i:I
 
     invoke-direct {v0, p1, v1}, Lcom/google/crypto/tink/shaded/protobuf/e;-><init>([ZI)V
 
@@ -572,12 +572,12 @@
     invoke-virtual {p0, p1}, Lcom/google/crypto/tink/shaded/protobuf/e;->e(I)V
 
     .line 9
-    iget-object v0, p0, Lcom/google/crypto/tink/shaded/protobuf/e;->g:[Z
+    iget-object v0, p0, Lcom/google/crypto/tink/shaded/protobuf/e;->h:[Z
 
     aget-boolean v1, v0, p1
 
     .line 10
-    iget v2, p0, Lcom/google/crypto/tink/shaded/protobuf/e;->h:I
+    iget v2, p0, Lcom/google/crypto/tink/shaded/protobuf/e;->i:I
 
     add-int/lit8 v3, v2, -0x1
 
@@ -594,11 +594,11 @@
 
     .line 12
     :cond_0
-    iget p1, p0, Lcom/google/crypto/tink/shaded/protobuf/e;->h:I
+    iget p1, p0, Lcom/google/crypto/tink/shaded/protobuf/e;->i:I
 
     add-int/lit8 p1, p1, -0x1
 
-    iput p1, p0, Lcom/google/crypto/tink/shaded/protobuf/e;->h:I
+    iput p1, p0, Lcom/google/crypto/tink/shaded/protobuf/e;->i:I
 
     .line 13
     iget p1, p0, Ljava/util/AbstractList;->modCount:I
@@ -627,12 +627,12 @@
 
     .line 2
     :goto_0
-    iget v2, p0, Lcom/google/crypto/tink/shaded/protobuf/e;->h:I
+    iget v2, p0, Lcom/google/crypto/tink/shaded/protobuf/e;->i:I
 
     if-ge v1, v2, :cond_1
 
     .line 3
-    iget-object v2, p0, Lcom/google/crypto/tink/shaded/protobuf/e;->g:[Z
+    iget-object v2, p0, Lcom/google/crypto/tink/shaded/protobuf/e;->h:[Z
 
     aget-boolean v2, v2, v1
 
@@ -647,11 +647,11 @@
     if-eqz v2, :cond_0
 
     .line 4
-    iget-object p1, p0, Lcom/google/crypto/tink/shaded/protobuf/e;->g:[Z
+    iget-object p1, p0, Lcom/google/crypto/tink/shaded/protobuf/e;->h:[Z
 
     add-int/lit8 v0, v1, 0x1
 
-    iget v2, p0, Lcom/google/crypto/tink/shaded/protobuf/e;->h:I
+    iget v2, p0, Lcom/google/crypto/tink/shaded/protobuf/e;->i:I
 
     sub-int/2addr v2, v1
 
@@ -662,11 +662,11 @@
     invoke-static {p1, v0, p1, v1, v2}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     .line 5
-    iget p1, p0, Lcom/google/crypto/tink/shaded/protobuf/e;->h:I
+    iget p1, p0, Lcom/google/crypto/tink/shaded/protobuf/e;->i:I
 
     sub-int/2addr p1, v3
 
-    iput p1, p0, Lcom/google/crypto/tink/shaded/protobuf/e;->h:I
+    iput p1, p0, Lcom/google/crypto/tink/shaded/protobuf/e;->i:I
 
     .line 6
     iget p1, p0, Ljava/util/AbstractList;->modCount:I
@@ -695,22 +695,22 @@
     if-lt p2, p1, :cond_0
 
     .line 2
-    iget-object v0, p0, Lcom/google/crypto/tink/shaded/protobuf/e;->g:[Z
+    iget-object v0, p0, Lcom/google/crypto/tink/shaded/protobuf/e;->h:[Z
 
-    iget v1, p0, Lcom/google/crypto/tink/shaded/protobuf/e;->h:I
+    iget v1, p0, Lcom/google/crypto/tink/shaded/protobuf/e;->i:I
 
     sub-int/2addr v1, p2
 
     invoke-static {v0, p2, v0, p1, v1}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     .line 3
-    iget v0, p0, Lcom/google/crypto/tink/shaded/protobuf/e;->h:I
+    iget v0, p0, Lcom/google/crypto/tink/shaded/protobuf/e;->i:I
 
     sub-int/2addr p2, p1
 
     sub-int/2addr v0, p2
 
-    iput v0, p0, Lcom/google/crypto/tink/shaded/protobuf/e;->h:I
+    iput v0, p0, Lcom/google/crypto/tink/shaded/protobuf/e;->i:I
 
     .line 4
     iget p1, p0, Ljava/util/AbstractList;->modCount:I
@@ -750,7 +750,7 @@
     invoke-virtual {p0, p1}, Lcom/google/crypto/tink/shaded/protobuf/e;->e(I)V
 
     .line 5
-    iget-object v0, p0, Lcom/google/crypto/tink/shaded/protobuf/e;->g:[Z
+    iget-object v0, p0, Lcom/google/crypto/tink/shaded/protobuf/e;->h:[Z
 
     aget-boolean v1, v0, p1
 
@@ -768,7 +768,7 @@
 .method public final size()I
     .locals 1
 
-    iget v0, p0, Lcom/google/crypto/tink/shaded/protobuf/e;->h:I
+    iget v0, p0, Lcom/google/crypto/tink/shaded/protobuf/e;->i:I
 
     return v0
 .end method

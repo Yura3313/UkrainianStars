@@ -1715,7 +1715,7 @@
     if-nez v0, :cond_0
 
     .line 2
-    sget-object v0, Lcom/google/protobuf/n1;->i:Lcom/google/protobuf/n1;
+    sget-object v0, Lcom/google/protobuf/n1;->j:Lcom/google/protobuf/n1;
 
     :cond_0
     return-object v0

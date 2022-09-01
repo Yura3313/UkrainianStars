@@ -56,7 +56,7 @@
     if-eqz v0, :cond_0
 
     .line 2
-    invoke-static {}, Lk3/j6;->m()Z
+    invoke-static {}, Lcom/google/android/gms/ads/a;->k()Z
 
     .line 3
     iget-object v0, p0, Lk3/vc;->a:Landroid/content/Context;
@@ -70,7 +70,7 @@
 
     .line 5
     :cond_0
-    invoke-static {}, Lk3/j6;->m()Z
+    invoke-static {}, Lcom/google/android/gms/ads/a;->k()Z
 
     .line 6
     iget-object v0, p0, Lk3/vc;->b:Landroid/content/Context;
@@ -100,7 +100,7 @@
     if-eqz v4, :cond_1
 
     .line 10
-    invoke-static {}, Lk3/j6;->m()Z
+    invoke-static {}, Lcom/google/android/gms/ads/a;->k()Z
 
     .line 11
     iget-object v3, p0, Lk3/vc;->b:Landroid/content/Context;
@@ -123,7 +123,7 @@
     invoke-interface {v0}, Landroid/content/SharedPreferences$Editor;->apply()V
 
     .line 13
-    invoke-static {}, Lk3/j6;->m()Z
+    invoke-static {}, Lcom/google/android/gms/ads/a;->k()Z
 
     :cond_1
     return-object v3

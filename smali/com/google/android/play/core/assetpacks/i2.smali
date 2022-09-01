@@ -2,101 +2,62 @@
 .super Ljava/lang/Object;
 
 # interfaces
-.implements Lcom/google/android/play/core/tasks/OnSuccessListener;
+.implements Lcom/google/android/play/core/tasks/OnFailureListener;
 
 
-# instance fields
-.field public final a:Lcom/google/android/play/core/assetpacks/z;
+# static fields
+.field public static final a:Lcom/google/android/play/core/assetpacks/i2;
 
 
 # direct methods
-.method public constructor <init>(Lcom/google/android/play/core/assetpacks/z;)V
-    .locals 0
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    iput-object p1, p0, Lcom/google/android/play/core/assetpacks/i2;->a:Lcom/google/android/play/core/assetpacks/z;
-
-    return-void
-.end method
-
-.method public static a(Lcom/google/android/play/core/assetpacks/z;)Lcom/google/android/play/core/tasks/OnSuccessListener;
+.method public static constructor <clinit>()V
     .locals 1
 
     new-instance v0, Lcom/google/android/play/core/assetpacks/i2;
 
-    invoke-direct {v0, p0}, Lcom/google/android/play/core/assetpacks/i2;-><init>(Lcom/google/android/play/core/assetpacks/z;)V
+    invoke-direct {v0}, Lcom/google/android/play/core/assetpacks/i2;-><init>()V
 
-    return-object v0
+    sput-object v0, Lcom/google/android/play/core/assetpacks/i2;->a:Lcom/google/android/play/core/assetpacks/i2;
+
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
 .end method
 
 
 # virtual methods
-.method public final onSuccess(Ljava/lang/Object;)V
-    .locals 10
+.method public final onFailure(Ljava/lang/Exception;)V
+    .locals 3
 
-    iget-object v0, p0, Lcom/google/android/play/core/assetpacks/i2;->a:Lcom/google/android/play/core/assetpacks/z;
+    .line 1
+    sget-object v0, Lcom/google/android/play/core/assetpacks/j2;->e:La5/b;
 
-    check-cast p1, Ljava/util/List;
+    const/4 v1, 0x1
 
-    iget-object v1, v0, Lcom/google/android/play/core/assetpacks/z;->b:Lcom/google/android/play/core/assetpacks/v1;
+    new-array v1, v1, [Ljava/lang/Object;
 
-    invoke-virtual {v1}, Lcom/google/android/play/core/assetpacks/v1;->a()I
+    const/4 v2, 0x0
 
-    move-result v1
+    aput-object p1, v1, v2
 
-    invoke-virtual {v0}, Lcom/google/android/play/core/assetpacks/z;->o()Ljava/util/List;
+    const-string p1, "Could not sync active asset packs. %s"
 
-    move-result-object v0
+    invoke-static {p1, v1}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
 
-    check-cast v0, Ljava/util/ArrayList;
+    move-result-object p1
 
-    invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
+    new-array v1, v2, [Ljava/lang/Object;
 
-    move-result v2
+    const/4 v2, 0x5
 
-    const/4 v3, 0x0
+    .line 2
+    invoke-virtual {v0, v2, p1, v1}, La5/b;->a(ILjava/lang/String;[Ljava/lang/Object;)I
 
-    :goto_0
-    if-ge v3, v2, :cond_2
-
-    invoke-virtual {v0, v3}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
-
-    move-result-object v4
-
-    check-cast v4, Ljava/io/File;
-
-    invoke-virtual {v4}, Ljava/io/File;->getName()Ljava/lang/String;
-
-    move-result-object v5
-
-    invoke-interface {p1, v5}, Ljava/util/List;->contains(Ljava/lang/Object;)Z
-
-    move-result v5
-
-    if-eqz v5, :cond_0
-
-    goto :goto_1
-
-    :cond_0
-    invoke-static {v4}, Lcom/google/android/play/core/assetpacks/z;->e(Ljava/io/File;)J
-
-    move-result-wide v5
-
-    int-to-long v7, v1
-
-    cmp-long v9, v5, v7
-
-    if-eqz v9, :cond_1
-
-    invoke-static {v4}, Lcom/google/android/play/core/assetpacks/z;->i(Ljava/io/File;)Z
-
-    :cond_1
-    :goto_1
-    add-int/lit8 v3, v3, 0x1
-
-    goto :goto_0
-
-    :cond_2
     return-void
 .end method

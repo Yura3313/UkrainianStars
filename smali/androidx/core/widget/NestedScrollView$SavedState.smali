@@ -27,7 +27,7 @@
 
 
 # instance fields
-.field public f:I
+.field public g:I
 
 
 # direct methods
@@ -54,7 +54,7 @@
 
     move-result p1
 
-    iput p1, p0, Landroidx/core/widget/NestedScrollView$SavedState;->f:I
+    iput p1, p0, Landroidx/core/widget/NestedScrollView$SavedState;->g:I
 
     return-void
 .end method
@@ -95,7 +95,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget v1, p0, Landroidx/core/widget/NestedScrollView$SavedState;->f:I
+    iget v1, p0, Landroidx/core/widget/NestedScrollView$SavedState;->g:I
 
     const-string v2, "}"
 
@@ -114,7 +114,7 @@
     invoke-super {p0, p1, p2}, Landroid/view/View$BaseSavedState;->writeToParcel(Landroid/os/Parcel;I)V
 
     .line 2
-    iget p2, p0, Landroidx/core/widget/NestedScrollView$SavedState;->f:I
+    iget p2, p0, Landroidx/core/widget/NestedScrollView$SavedState;->g:I
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
 

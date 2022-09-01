@@ -7,14 +7,14 @@
 
 
 # instance fields
-.field public final synthetic f:Lwc/m0;
+.field public final synthetic g:Lwc/m0;
 
 
 # direct methods
 .method public constructor <init>(Lwc/m0;)V
     .locals 0
 
-    iput-object p1, p0, Lwc/h0;->f:Lwc/m0;
+    iput-object p1, p0, Lwc/h0;->g:Lwc/m0;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -27,9 +27,9 @@
     .locals 5
 
     .line 1
-    iget-object v0, p0, Lwc/h0;->f:Lwc/m0;
+    iget-object v0, p0, Lwc/h0;->g:Lwc/m0;
 
-    iget-object v0, v0, Lwc/m0;->f:Lcom/supercell/id/ui/MainActivity;
+    iget-object v0, v0, Lwc/m0;->g:Lcom/supercell/id/ui/MainActivity;
 
     sget v1, Lcom/supercell/id/R$id;->panel:I
 
@@ -41,7 +41,7 @@
 
     const-string v2, "panel"
 
-    invoke-static {v0, v2}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v2}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v0}, Landroid/view/View;->getWidth()I
 
@@ -50,9 +50,9 @@
     if-lez v0, :cond_0
 
     .line 2
-    iget-object v3, p0, Lwc/h0;->f:Lwc/m0;
+    iget-object v3, p0, Lwc/h0;->g:Lwc/m0;
 
-    iget-object v3, v3, Lwc/m0;->f:Lcom/supercell/id/ui/MainActivity;
+    iget-object v3, v3, Lwc/m0;->g:Lcom/supercell/id/ui/MainActivity;
 
     invoke-virtual {v3, v1}, Lcom/supercell/id/ui/MainActivity;->_$_findCachedViewById(I)Landroid/view/View;
 
@@ -60,7 +60,7 @@
 
     check-cast v3, Landroid/widget/FrameLayout;
 
-    invoke-static {v3, v2}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v3, v2}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/4 v4, 0x0
 
@@ -68,9 +68,9 @@
 
     .line 3
     :cond_0
-    iget-object v3, p0, Lwc/h0;->f:Lwc/m0;
+    iget-object v3, p0, Lwc/h0;->g:Lwc/m0;
 
-    iget-object v3, v3, Lwc/m0;->f:Lcom/supercell/id/ui/MainActivity;
+    iget-object v3, v3, Lwc/m0;->g:Lcom/supercell/id/ui/MainActivity;
 
     invoke-virtual {v3, v1}, Lcom/supercell/id/ui/MainActivity;->_$_findCachedViewById(I)Landroid/view/View;
 
@@ -78,13 +78,13 @@
 
     check-cast v1, Landroid/widget/FrameLayout;
 
-    invoke-static {v1, v2}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     int-to-float v0, v0
 
     const-string v2, "it"
 
-    invoke-static {p1, v2}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v2}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {p1}, Landroid/animation/ValueAnimator;->getAnimatedValue()Ljava/lang/Object;
 
@@ -103,9 +103,9 @@
     invoke-virtual {v1, p1}, Landroid/view/View;->setTranslationX(F)V
 
     .line 4
-    iget-object p1, p0, Lwc/h0;->f:Lwc/m0;
+    iget-object p1, p0, Lwc/h0;->g:Lwc/m0;
 
-    iget-object p1, p1, Lwc/m0;->f:Lcom/supercell/id/ui/MainActivity;
+    iget-object p1, p1, Lwc/m0;->g:Lcom/supercell/id/ui/MainActivity;
 
     sget v0, Lcom/supercell/id/R$id;->root_layout:I
 

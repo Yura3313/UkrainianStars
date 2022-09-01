@@ -220,7 +220,7 @@
     const-string p1, "key_value_store"
 
     .line 6
-    invoke-static {v0, p1, v2, v4}, Lj1/b;->h(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Z
+    invoke-static {v0, p1, v2, v4}, Lcom/google/android/material/internal/c;->g(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Z
 
     move-result p2
 
@@ -266,7 +266,7 @@
     const-string v0, "Error in serializing value"
 
     .line 10
-    invoke-static {p2, v0, p1}, Landroidx/savedstate/d;->g(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {p2, v0, p1}, Le5/i;->i(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
     :cond_3
     :goto_1
@@ -411,7 +411,7 @@
     const-string v9, "key_value_store"
 
     .line 10
-    invoke-static {v0, v9, v2, v7}, Lj1/b;->h(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Z
+    invoke-static {v0, v9, v2, v7}, Lcom/google/android/material/internal/c;->g(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Z
 
     move-result v7
 
@@ -470,7 +470,7 @@
     const-string v7, "Error in serializing value"
 
     .line 19
-    invoke-static {v6, v7, v5}, Landroidx/savedstate/d;->g(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v6, v7, v5}, Le5/i;->i(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
     goto :goto_0
 

@@ -16,11 +16,11 @@
 
 
 # instance fields
-.field public final f:I
+.field public final g:I
 
-.field public final g:Ljava/lang/String;
+.field public final h:Ljava/lang/String;
 
-.field public final h:Ljava/util/ArrayList;
+.field public final i:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/ArrayList<",
@@ -60,13 +60,13 @@
     invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
 
     .line 2
-    iput p1, p0, Lcom/google/android/gms/common/server/response/zam;->f:I
+    iput p1, p0, Lcom/google/android/gms/common/server/response/zam;->g:I
 
     .line 3
-    iput-object p2, p0, Lcom/google/android/gms/common/server/response/zam;->g:Ljava/lang/String;
+    iput-object p2, p0, Lcom/google/android/gms/common/server/response/zam;->h:Ljava/lang/String;
 
     .line 4
-    iput-object p3, p0, Lcom/google/android/gms/common/server/response/zam;->h:Ljava/util/ArrayList;
+    iput-object p3, p0, Lcom/google/android/gms/common/server/response/zam;->i:Ljava/util/ArrayList;
 
     return-void
 .end method
@@ -90,10 +90,10 @@
     const/4 v0, 0x1
 
     .line 6
-    iput v0, p0, Lcom/google/android/gms/common/server/response/zam;->f:I
+    iput v0, p0, Lcom/google/android/gms/common/server/response/zam;->g:I
 
     .line 7
-    iput-object p1, p0, Lcom/google/android/gms/common/server/response/zam;->g:Ljava/lang/String;
+    iput-object p1, p0, Lcom/google/android/gms/common/server/response/zam;->h:Ljava/lang/String;
 
     if-nez p2, :cond_0
 
@@ -148,7 +148,7 @@
     .line 12
     :cond_1
     :goto_1
-    iput-object p1, p0, Lcom/google/android/gms/common/server/response/zam;->h:Ljava/util/ArrayList;
+    iput-object p1, p0, Lcom/google/android/gms/common/server/response/zam;->i:Ljava/util/ArrayList;
 
     return-void
 .end method
@@ -166,7 +166,7 @@
     move-result p2
 
     .line 2
-    iget v0, p0, Lcom/google/android/gms/common/server/response/zam;->f:I
+    iget v0, p0, Lcom/google/android/gms/common/server/response/zam;->g:I
 
     const/4 v1, 0x1
 
@@ -179,7 +179,7 @@
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 5
-    iget-object v0, p0, Lcom/google/android/gms/common/server/response/zam;->g:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/android/gms/common/server/response/zam;->h:Ljava/lang/String;
 
     const/4 v1, 0x2
 
@@ -188,7 +188,7 @@
     invoke-static {p1, v1, v0, v2}, Le2/b;->m(Landroid/os/Parcel;ILjava/lang/String;Z)V
 
     .line 6
-    iget-object v0, p0, Lcom/google/android/gms/common/server/response/zam;->h:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/google/android/gms/common/server/response/zam;->i:Ljava/util/ArrayList;
 
     const/4 v1, 0x3
 

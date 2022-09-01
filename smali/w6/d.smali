@@ -27,7 +27,7 @@
     iget-object v0, p0, Lw6/j;->a:Ll6/a;
 
     .line 2
-    iget v0, v0, Ll6/a;->g:I
+    iget v0, v0, Ll6/a;->h:I
 
     const/16 v1, 0x30
 
@@ -126,7 +126,7 @@
 
     .line 22
     :cond_2
-    sget-object v0, Lcom/google/zxing/NotFoundException;->h:Lcom/google/zxing/NotFoundException;
+    sget-object v0, Lcom/google/zxing/NotFoundException;->i:Lcom/google/zxing/NotFoundException;
 
     .line 23
     throw v0

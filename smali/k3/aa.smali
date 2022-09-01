@@ -4,26 +4,26 @@
 
 
 # virtual methods
-.method public abstract a()Lk3/em0;
+.method public abstract a()Lk3/hm0;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Ljava/lang/String;",
             ")",
-            "Lk3/em0<",
+            "Lk3/hm0<",
             "Ljava/lang/String;",
             ">;"
         }
     .end annotation
 .end method
 
-.method public abstract b()Lk3/em0;
+.method public abstract b()Lk3/hm0;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Ljava/lang/String;",
             ")",
-            "Lk3/em0<",
+            "Lk3/hm0<",
             "Ljava/lang/String;",
             ">;"
         }

@@ -84,7 +84,7 @@
     invoke-direct {p0}, Lcom/google/crypto/tink/shaded/protobuf/n;-><init>()V
 
     .line 2
-    sget-object v0, Lcom/google/crypto/tink/shaded/protobuf/c0;->i:Lcom/google/crypto/tink/shaded/protobuf/c0;
+    sget-object v0, Lcom/google/crypto/tink/shaded/protobuf/c0;->j:Lcom/google/crypto/tink/shaded/protobuf/c0;
 
     .line 3
     iput-object v0, p0, Ln5/z0;->key_:Lcom/google/crypto/tink/shaded/protobuf/p$c;

@@ -1,129 +1,263 @@
-.class public Lp8/b;
+.class public final synthetic Lp8/b;
 .super Ljava/lang/Object;
-.source "Input.java"
-
-
-# instance fields
-.field public final f:Ljava/lang/String;
-
-.field public final g:Z
-
-.field public final h:Ljava/lang/String;
-
-.field public final i:Ljava/lang/String;
+.source "R8$$SyntheticClass"
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;ZLjava/lang/String;Ljava/lang/String;)V
-    .locals 0
-
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 2
-    iput-object p1, p0, Lp8/b;->f:Ljava/lang/String;
-
-    .line 3
-    iput-boolean p2, p0, Lp8/b;->g:Z
-
-    .line 4
-    iput-object p3, p0, Lp8/b;->h:Ljava/lang/String;
-
-    .line 5
-    iput-object p4, p0, Lp8/b;->i:Ljava/lang/String;
-
-    return-void
-.end method
-
-.method public constructor <init>(Lp8/b;)V
+.method public static a()[I
     .locals 1
 
-    .line 6
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    const/16 v0, 0x19
 
-    .line 7
-    iget-object v0, p1, Lp8/b;->f:Ljava/lang/String;
+    invoke-static {v0}, Lp/g;->c(I)[I
 
-    iput-object v0, p0, Lp8/b;->f:Ljava/lang/String;
+    move-result-object v0
 
-    .line 8
-    iget-boolean v0, p1, Lp8/b;->g:Z
-
-    iput-boolean v0, p0, Lp8/b;->g:Z
-
-    .line 9
-    iget-object v0, p1, Lp8/b;->h:Ljava/lang/String;
-
-    iput-object v0, p0, Lp8/b;->h:Ljava/lang/String;
-
-    .line 10
-    iget-object p1, p1, Lp8/b;->i:Ljava/lang/String;
-
-    iput-object p1, p0, Lp8/b;->i:Ljava/lang/String;
-
-    return-void
+    return-object v0
 .end method
 
-
-# virtual methods
-.method public equals(Ljava/lang/Object;)Z
+.method public static synthetic b(I)I
     .locals 3
 
-    .line 1
-    instance-of v0, p1, Lp8/b;
-
-    const/4 v1, 0x0
-
-    if-nez v0, :cond_0
-
-    return v1
-
-    .line 2
-    :cond_0
-    check-cast p1, Lp8/b;
-
-    .line 3
-    iget-boolean v0, p1, Lp8/b;->g:Z
-
-    iget-boolean v2, p0, Lp8/b;->g:Z
-
-    if-ne v0, v2, :cond_1
-
-    iget-object v0, p1, Lp8/b;->h:Ljava/lang/String;
-
-    iget-object v2, p0, Lp8/b;->h:Ljava/lang/String;
-
-    .line 4
-    invoke-static {v0, v2}, Lcom/google/android/play/core/appupdate/g;->d(Ljava/lang/String;Ljava/lang/String;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_1
-
-    iget-object v0, p1, Lp8/b;->i:Ljava/lang/String;
-
-    iget-object v2, p0, Lp8/b;->i:Ljava/lang/String;
-
-    .line 5
-    invoke-static {v0, v2}, Lcom/google/android/play/core/appupdate/g;->d(Ljava/lang/String;Ljava/lang/String;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_1
-
-    iget-object p1, p1, Lp8/b;->f:Ljava/lang/String;
-
-    iget-object v0, p0, Lp8/b;->f:Ljava/lang/String;
-
-    .line 6
-    invoke-static {p1, v0}, Lcom/google/android/play/core/appupdate/g;->d(Ljava/lang/String;Ljava/lang/String;)Z
-
-    move-result p1
-
-    if-eqz p1, :cond_1
+    const/16 v0, 0xa
 
     const/4 v1, 0x1
 
+    if-ne p0, v1, :cond_0
+
+    return v0
+
+    :cond_0
+    const/4 v1, 0x2
+
+    const/16 v2, 0x14
+
+    if-ne p0, v1, :cond_1
+
+    return v2
+
     :cond_1
-    return v1
+    const/4 v1, 0x3
+
+    if-ne p0, v1, :cond_2
+
+    const/16 p0, 0x1e
+
+    return p0
+
+    :cond_2
+    const/4 v1, 0x4
+
+    if-ne p0, v1, :cond_3
+
+    const/16 p0, 0x28
+
+    return p0
+
+    :cond_3
+    const/4 v1, 0x5
+
+    if-ne p0, v1, :cond_4
+
+    const/16 p0, 0x32
+
+    return p0
+
+    :cond_4
+    const/4 v1, 0x6
+
+    if-ne p0, v1, :cond_5
+
+    const/16 p0, 0x3c
+
+    return p0
+
+    :cond_5
+    const/4 v1, 0x7
+
+    if-ne p0, v1, :cond_6
+
+    const/16 p0, 0x46
+
+    return p0
+
+    :cond_6
+    const/16 v1, 0x8
+
+    if-ne p0, v1, :cond_7
+
+    const/16 p0, 0x50
+
+    return p0
+
+    :cond_7
+    const/16 v1, 0x9
+
+    if-ne p0, v1, :cond_8
+
+    const/16 p0, 0x5a
+
+    return p0
+
+    :cond_8
+    if-ne p0, v0, :cond_9
+
+    const/16 p0, 0x64
+
+    return p0
+
+    :cond_9
+    const/16 v0, 0xb
+
+    if-ne p0, v0, :cond_a
+
+    const/16 p0, 0x6e
+
+    return p0
+
+    :cond_a
+    const/16 v0, 0xc
+
+    if-ne p0, v0, :cond_b
+
+    const/16 p0, 0x78
+
+    return p0
+
+    :cond_b
+    const/16 v0, 0xd
+
+    if-ne p0, v0, :cond_c
+
+    const/16 p0, 0x82
+
+    return p0
+
+    :cond_c
+    const/16 v0, 0xe
+
+    if-ne p0, v0, :cond_d
+
+    const/16 p0, 0x8c
+
+    return p0
+
+    :cond_d
+    const/16 v0, 0xf
+
+    if-ne p0, v0, :cond_e
+
+    const/16 p0, 0x96
+
+    return p0
+
+    :cond_e
+    const/16 v0, 0x10
+
+    if-ne p0, v0, :cond_f
+
+    const/16 p0, 0xa0
+
+    return p0
+
+    :cond_f
+    const/16 v0, 0x11
+
+    if-ne p0, v0, :cond_10
+
+    const/16 p0, 0xaa
+
+    return p0
+
+    :cond_10
+    const/16 v0, 0x12
+
+    if-ne p0, v0, :cond_11
+
+    const/16 p0, 0xb4
+
+    return p0
+
+    :cond_11
+    const/16 v0, 0x13
+
+    if-ne p0, v0, :cond_12
+
+    const/16 p0, 0xbe
+
+    return p0
+
+    :cond_12
+    if-ne p0, v2, :cond_13
+
+    const/16 p0, 0xc8
+
+    return p0
+
+    :cond_13
+    const/16 v0, 0x15
+
+    if-ne p0, v0, :cond_14
+
+    const/16 p0, 0xd2
+
+    return p0
+
+    :cond_14
+    const/16 v0, 0x16
+
+    if-ne p0, v0, :cond_15
+
+    const/16 p0, 0xdc
+
+    return p0
+
+    :cond_15
+    const/16 v0, 0x17
+
+    if-ne p0, v0, :cond_16
+
+    const/16 p0, 0xe6
+
+    return p0
+
+    :cond_16
+    const/16 v0, 0x18
+
+    if-ne p0, v0, :cond_17
+
+    const/16 p0, 0xf0
+
+    return p0
+
+    :cond_17
+    const/16 v0, 0x19
+
+    if-ne p0, v0, :cond_18
+
+    const/16 p0, 0xfa
+
+    return p0
+
+    :cond_18
+    const/4 p0, 0x0
+
+    throw p0
+.end method
+
+.method public static synthetic c(I)Ljava/lang/String;
+    .locals 1
+
+    const/4 v0, 0x1
+
+    if-ne p0, v0, :cond_0
+
+    const-string p0, "five_star"
+
+    return-object p0
+
+    :cond_0
+    const/4 p0, 0x0
+
+    throw p0
 .end method

@@ -12,7 +12,7 @@
 
 .field public d:Ljava/lang/String;
 
-.field public e:Lk3/o21;
+.field public e:Lk3/u21;
 
 
 # direct methods
@@ -38,7 +38,7 @@
     const/4 v0, 0x0
 
     .line 5
-    iput-object v0, p0, Lk3/gm;->e:Lk3/o21;
+    iput-object v0, p0, Lk3/gm;->e:Lk3/u21;
 
     return-void
 .end method

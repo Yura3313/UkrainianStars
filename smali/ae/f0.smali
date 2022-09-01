@@ -1,4 +1,4 @@
-.class public final Lae/f0;
+.class public final synthetic Lae/f0;
 .super Lse/h;
 .source "NetworkUtil.kt"
 
@@ -11,15 +11,14 @@
     value = {
         "Lse/h;",
         "Lre/l<",
-        "Landroid/graphics/Bitmap;",
-        "Landroid/graphics/Bitmap;",
-        ">;"
+        "Ljava/io/InputStream;",
+        "[B>;"
     }
 .end annotation
 
 
 # static fields
-.field public static final f:Lae/f0;
+.field public static final h:Lae/f0;
 
 
 # direct methods
@@ -30,7 +29,7 @@
 
     invoke-direct {v0}, Lae/f0;-><init>()V
 
-    sput-object v0, Lae/f0;->f:Lae/f0;
+    sput-object v0, Lae/f0;->h:Lae/f0;
 
     return-void
 .end method
@@ -47,23 +46,53 @@
 
 
 # virtual methods
+.method public final getName()Ljava/lang/String;
+    .locals 1
+
+    const-string v0, "readBytes"
+
+    return-object v0
+.end method
+
+.method public final getOwner()Lwe/d;
+    .locals 3
+
+    const-class v0, Lpe/a;
+
+    sget-object v1, Lse/s;->a:Lse/t;
+
+    const-string v2, "supercellId_release"
+
+    invoke-virtual {v1, v0, v2}, Lse/t;->a(Ljava/lang/Class;Ljava/lang/String;)Lwe/d;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public final getSignature()Ljava/lang/String;
+    .locals 1
+
+    const-string v0, "readBytes(Ljava/io/InputStream;)[B"
+
+    return-object v0
+.end method
+
 .method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
 
     .line 1
-    check-cast p1, Landroid/graphics/Bitmap;
+    check-cast p1, Ljava/io/InputStream;
 
-    if-eqz p1, :cond_0
-
-    return-object p1
+    const-string v0, "p1"
 
     .line 2
-    :cond_0
-    new-instance p1, Ljava/lang/Exception;
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    const-string v0, "Invalid bitmap stream"
+    .line 3
+    invoke-static {p1}, Lpe/a;->d(Ljava/io/InputStream;)[B
 
-    invoke-direct {p1, v0}, Ljava/lang/Exception;-><init>(Ljava/lang/String;)V
+    move-result-object p1
 
-    throw p1
+    return-object p1
 .end method

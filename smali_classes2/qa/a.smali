@@ -42,7 +42,7 @@
     const/4 v0, 0x1
 
     .line 1
-    iput-boolean v0, p0, Landroidx/fragment/app/Fragment;->K:Z
+    iput-boolean v0, p0, Landroidx/fragment/app/Fragment;->L:Z
 
     .line 2
     sget v0, Lcom/helpshift/R$string;->hs__conversation_header:I
@@ -79,7 +79,7 @@
 
     const v0, 0x1010036
 
-    invoke-static {p2, p1, v0}, Lcom/helpshift/util/g0;->e(Landroid/content/Context;Landroid/graphics/drawable/Drawable;I)V
+    invoke-static {p2, p1, v0}, Lcom/helpshift/util/e0;->e(Landroid/content/Context;Landroid/graphics/drawable/Drawable;I)V
 
     return-void
 .end method

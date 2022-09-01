@@ -246,7 +246,7 @@
     if-eqz v3, :cond_2
 
     .line 17
-    iget-object v3, v0, Lcom/google/android/material/snackbar/SnackbarContentLayout;->g:Landroid/widget/Button;
+    iget-object v3, v0, Lcom/google/android/material/snackbar/SnackbarContentLayout;->h:Landroid/widget/Button;
 
     invoke-virtual {v3}, Landroid/widget/TextView;->getCurrentTextColor()I
 
@@ -255,17 +255,17 @@
     .line 18
     sget v4, Lcom/google/android/material/R$attr;->colorSurface:I
 
-    invoke-static {v0, v4}, Lk3/q5;->f(Landroid/view/View;I)I
+    invoke-static {v0, v4}, Lk3/a00;->b(Landroid/view/View;I)I
 
     move-result v4
 
     .line 19
-    invoke-static {v4, v3, v2}, Lk3/q5;->g(IIF)I
+    invoke-static {v4, v3, v2}, Lk3/a00;->c(IIF)I
 
     move-result v2
 
     .line 20
-    iget-object v0, v0, Lcom/google/android/material/snackbar/SnackbarContentLayout;->g:Landroid/widget/Button;
+    iget-object v0, v0, Lcom/google/android/material/snackbar/SnackbarContentLayout;->h:Landroid/widget/Button;
 
     invoke-virtual {v0, v2}, Landroid/widget/TextView;->setTextColor(I)V
 

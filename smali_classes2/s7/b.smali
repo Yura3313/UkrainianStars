@@ -7,13 +7,13 @@
 
 
 # instance fields
-.field public h:I
-
 .field public i:I
 
-.field public j:Z
+.field public j:I
 
 .field public k:Z
+
+.field public l:Z
 
 
 # direct methods
@@ -26,7 +26,7 @@
     const/4 v0, 0x0
 
     .line 2
-    iput-boolean v0, p0, Ls7/b;->k:Z
+    iput-boolean v0, p0, Ls7/b;->l:Z
 
     .line 3
     invoke-virtual {p1, p0}, Landroid/app/Application;->unregisterActivityLifecycleCallbacks(Landroid/app/Application$ActivityLifecycleCallbacks;)V
@@ -48,7 +48,7 @@
 
     const-string v2, "Install API is called with manualLifeCycleTracking config as false, Ignore this event"
 
-    invoke-static {v1, v2, v0, v0}, Landroidx/savedstate/d;->h(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v1, v2, v0, v0}, Le5/i;->j(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Throwable;[Lz9/a;)V
 
     return-void
 .end method
@@ -62,7 +62,7 @@
 
     const-string v2, "Install API is called with manualLifeCycleTracking config as false, Ignore this event"
 
-    invoke-static {v1, v2, v0, v0}, Landroidx/savedstate/d;->h(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v1, v2, v0, v0}, Le5/i;->j(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Throwable;[Lz9/a;)V
 
     return-void
 .end method
@@ -101,26 +101,26 @@
     .locals 2
 
     .line 1
-    iget p1, p0, Ls7/b;->h:I
+    iget p1, p0, Ls7/b;->i:I
 
     const/4 v0, 0x1
 
     add-int/2addr p1, v0
 
-    iput p1, p0, Ls7/b;->h:I
+    iput p1, p0, Ls7/b;->i:I
 
     .line 2
-    iget-boolean p1, p0, Ls7/b;->k:Z
+    iget-boolean p1, p0, Ls7/b;->l:Z
 
     if-nez p1, :cond_2
 
     .line 3
-    iget-boolean p1, p0, Ls7/b;->j:Z
+    iget-boolean p1, p0, Ls7/b;->k:Z
 
     if-nez p1, :cond_1
 
     .line 4
-    iget-object p1, p0, Ls7/a;->g:Ls7/d;
+    iget-object p1, p0, Ls7/a;->h:Ls7/d;
 
     if-nez p1, :cond_0
 
@@ -128,20 +128,20 @@
 
     .line 5
     :cond_0
-    iget-object v1, p0, Ls7/a;->f:Landroid/content/Context;
+    iget-object v1, p0, Ls7/a;->g:Landroid/content/Context;
 
     invoke-interface {p1, v1}, Ls7/d;->a(Landroid/content/Context;)V
 
     .line 6
     :cond_1
     :goto_0
-    iput-boolean v0, p0, Ls7/b;->j:Z
+    iput-boolean v0, p0, Ls7/b;->k:Z
 
     :cond_2
     const/4 p1, 0x0
 
     .line 7
-    iput-boolean p1, p0, Ls7/b;->k:Z
+    iput-boolean p1, p0, Ls7/b;->l:Z
 
     return-void
 .end method
@@ -150,13 +150,13 @@
     .locals 2
 
     .line 1
-    iget v0, p0, Ls7/b;->i:I
+    iget v0, p0, Ls7/b;->j:I
 
     const/4 v1, 0x1
 
     add-int/2addr v0, v1
 
-    iput v0, p0, Ls7/b;->i:I
+    iput v0, p0, Ls7/b;->j:I
 
     const/4 v0, 0x0
 
@@ -175,22 +175,22 @@
     const/4 v1, 0x0
 
     :goto_0
-    iput-boolean v1, p0, Ls7/b;->k:Z
+    iput-boolean v1, p0, Ls7/b;->l:Z
 
     if-nez v1, :cond_2
 
     .line 3
-    iget p1, p0, Ls7/b;->h:I
+    iget p1, p0, Ls7/b;->i:I
 
-    iget v1, p0, Ls7/b;->i:I
+    iget v1, p0, Ls7/b;->j:I
 
     if-ne p1, v1, :cond_2
 
     .line 4
-    iput-boolean v0, p0, Ls7/b;->j:Z
+    iput-boolean v0, p0, Ls7/b;->k:Z
 
     .line 5
-    iget-object p1, p0, Ls7/a;->g:Ls7/d;
+    iget-object p1, p0, Ls7/a;->h:Ls7/d;
 
     if-nez p1, :cond_1
 
@@ -198,7 +198,7 @@
 
     .line 6
     :cond_1
-    iget-object v0, p0, Ls7/a;->f:Landroid/content/Context;
+    iget-object v0, p0, Ls7/a;->g:Landroid/content/Context;
 
     invoke-interface {p1, v0}, Ls7/d;->b(Landroid/content/Context;)V
 

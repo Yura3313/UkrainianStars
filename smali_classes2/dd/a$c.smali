@@ -18,18 +18,18 @@
 
 
 # instance fields
-.field public final synthetic f:Ldd/a;
+.field public final synthetic g:Ldd/a;
 
-.field public final synthetic g:Landroid/view/View;
+.field public final synthetic h:Landroid/view/View;
 
 
 # direct methods
 .method public constructor <init>(Ldd/a;Landroid/view/View;)V
     .locals 0
 
-    iput-object p1, p0, Ldd/a$c;->f:Ldd/a;
+    iput-object p1, p0, Ldd/a$c;->g:Ldd/a;
 
-    iput-object p2, p0, Ldd/a$c;->g:Landroid/view/View;
+    iput-object p2, p0, Ldd/a$c;->h:Landroid/view/View;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -42,7 +42,7 @@
     .locals 2
 
     .line 1
-    iget-object p1, p0, Ldd/a$c;->f:Ldd/a;
+    iget-object p1, p0, Ldd/a$c;->g:Ldd/a;
 
     sget v0, Lcom/supercell/id/R$id;->okButton:I
 
@@ -54,14 +54,14 @@
 
     const-string v0, "okButton"
 
-    invoke-static {p1, v0}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/4 v0, 0x0
 
     invoke-virtual {p1, v0}, Landroid/view/View;->setEnabled(Z)V
 
     .line 2
-    iget-object p1, p0, Ldd/a$c;->f:Ldd/a;
+    iget-object p1, p0, Ldd/a$c;->g:Ldd/a;
 
     sget v1, Lcom/supercell/id/R$id;->cancelButton:I
 
@@ -73,15 +73,15 @@
 
     const-string v1, "cancelButton"
 
-    invoke-static {p1, v1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v1}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {p1, v0}, Landroid/view/View;->setEnabled(Z)V
 
     .line 3
-    iget-object p1, p0, Ldd/a$c;->f:Ldd/a;
+    iget-object p1, p0, Ldd/a$c;->g:Ldd/a;
 
     .line 4
-    iget-object v0, p1, Ldd/a;->f:Lre/l;
+    iget-object v0, p1, Ldd/a;->g:Lre/l;
 
     if-eqz v0, :cond_0
 
@@ -90,17 +90,17 @@
 
     move-result-object p1
 
-    check-cast p1, Lie/h;
+    check-cast p1, Lie/i;
 
     .line 6
     :cond_0
-    iget-object p1, p0, Ldd/a$c;->f:Ldd/a;
+    iget-object p1, p0, Ldd/a$c;->g:Ldd/a;
 
-    iget-object v0, p0, Ldd/a$c;->g:Landroid/view/View;
+    iget-object v0, p0, Ldd/a$c;->h:Landroid/view/View;
 
     const-string v1, "view"
 
-    invoke-static {v0, v1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {p1, v0}, Ldd/a;->a(Landroid/view/View;)V
 

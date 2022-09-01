@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/supercell/id/ui/game/donate/DonateFragment$a;->n(Lae/c2$a;ILae/b2;)V
+    value = Lcom/supercell/id/ui/game/donate/DonateFragment$a;->n(Lae/b2$a;ILae/a2;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,18 +18,18 @@
 
 
 # instance fields
-.field public final synthetic f:Lcom/supercell/id/ui/game/donate/DonateFragment$a;
+.field public final synthetic g:Lcom/supercell/id/ui/game/donate/DonateFragment$a;
 
-.field public final synthetic g:Lae/b2;
+.field public final synthetic h:Lae/a2;
 
 
 # direct methods
-.method public constructor <init>(Lcom/supercell/id/ui/game/donate/DonateFragment$a;Lae/b2;)V
+.method public constructor <init>(Lcom/supercell/id/ui/game/donate/DonateFragment$a;Lae/a2;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/ui/game/donate/DonateFragment$a$d;->f:Lcom/supercell/id/ui/game/donate/DonateFragment$a;
+    iput-object p1, p0, Lcom/supercell/id/ui/game/donate/DonateFragment$a$d;->g:Lcom/supercell/id/ui/game/donate/DonateFragment$a;
 
-    iput-object p2, p0, Lcom/supercell/id/ui/game/donate/DonateFragment$a$d;->g:Lae/b2;
+    iput-object p2, p0, Lcom/supercell/id/ui/game/donate/DonateFragment$a$d;->h:Lae/a2;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -42,13 +42,13 @@
     .locals 10
 
     .line 1
-    iget-object p1, p0, Lcom/supercell/id/ui/game/donate/DonateFragment$a$d;->f:Lcom/supercell/id/ui/game/donate/DonateFragment$a;
+    iget-object p1, p0, Lcom/supercell/id/ui/game/donate/DonateFragment$a$d;->g:Lcom/supercell/id/ui/game/donate/DonateFragment$a;
 
     .line 2
     iget-object p1, p1, Lae/s;->f:Landroidx/fragment/app/Fragment;
 
     .line 3
-    invoke-static {p1}, Lcom/android/billingclient/api/c0;->e(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
+    invoke-static {p1}, Lcom/android/billingclient/api/b0;->f(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
 
     move-result-object p1
 
@@ -62,7 +62,7 @@
     .line 5
     new-instance v2, Lcom/supercell/id/model/IdSocialAccount$Scid;
 
-    iget-object v0, p0, Lcom/supercell/id/ui/game/donate/DonateFragment$a$d;->g:Lae/b2;
+    iget-object v0, p0, Lcom/supercell/id/ui/game/donate/DonateFragment$a$d;->h:Lae/a2;
 
     check-cast v0, Lbd/e;
 
@@ -73,7 +73,7 @@
     invoke-direct {v2, v0}, Lcom/supercell/id/model/IdSocialAccount$Scid;-><init>(Ljava/lang/String;)V
 
     .line 8
-    iget-object v0, p0, Lcom/supercell/id/ui/game/donate/DonateFragment$a$d;->g:Lae/b2;
+    iget-object v0, p0, Lcom/supercell/id/ui/game/donate/DonateFragment$a$d;->h:Lae/a2;
 
     check-cast v0, Lbd/e;
 
@@ -98,7 +98,7 @@
     invoke-direct/range {v0 .. v8}, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;-><init>(Ljava/lang/String;Lcom/supercell/id/model/IdSocialAccount;Ljava/lang/String;Lcom/supercell/id/model/ProfileImage;Lcom/supercell/id/model/IdRelationshipStatus;Lcom/supercell/id/model/IdPresenceStatus;ZLjava/lang/String;)V
 
     .line 13
-    sget-object v0, Lcom/supercell/id/ui/MainActivity;->s:Ljava/lang/ref/WeakReference;
+    sget-object v0, Lcom/supercell/id/ui/MainActivity;->t:Ljava/lang/ref/WeakReference;
 
     const/4 v0, 0x0
 

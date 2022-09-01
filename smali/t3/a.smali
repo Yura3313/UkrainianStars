@@ -46,7 +46,7 @@
 
     check-cast v2, Lv2/b$a;
 
-    iget-object v2, v2, Lv2/b$a;->p:Ljava/lang/String;
+    iget-object v2, v2, Lv2/b$a;->q:Ljava/lang/String;
 
     if-nez v2, :cond_0
 
@@ -56,7 +56,7 @@
     :cond_0
     check-cast v1, Lv2/b$a;
 
-    iget-object v1, v1, Lv2/b$a;->p:Ljava/lang/String;
+    iget-object v1, v1, Lv2/b$a;->q:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ld2/c$a;->b(Ljava/lang/String;)Ld2/c$a;
 

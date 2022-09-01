@@ -32,7 +32,7 @@
     .line 2
     iget-object v0, p0, Lqa/p;->a:Lqa/t;
 
-    iget-object v0, v0, Lqa/t;->j0:Lqa/e0;
+    iget-object v0, v0, Lqa/t;->k0:Lqa/e0;
 
     .line 3
     iget-boolean v1, p1, Lqb/a;->d:Z

@@ -18,16 +18,16 @@
 
 
 # instance fields
-.field public f:Lp/h;
+.field public g:Lp/h;
 
-.field public final synthetic g:Lp/f;
+.field public final synthetic h:Lp/f;
 
 
 # direct methods
 .method public constructor <init>(Lp/f;)V
     .locals 0
 
-    iput-object p1, p0, Lp/f$b;->g:Lp/f;
+    iput-object p1, p0, Lp/f$b;->h:Lp/f;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -43,7 +43,7 @@
     check-cast p1, Lp/h;
 
     .line 2
-    iget-object v0, p0, Lp/f$b;->f:Lp/h;
+    iget-object v0, p0, Lp/f$b;->g:Lp/h;
 
     iget v0, v0, Lp/h;->b:I
 
@@ -58,7 +58,7 @@
     .locals 3
 
     .line 1
-    iget-object v0, p0, Lp/f$b;->f:Lp/h;
+    iget-object v0, p0, Lp/f$b;->g:Lp/h;
 
     const-string v1, "[ "
 
@@ -77,7 +77,7 @@
     move-result-object v1
 
     .line 3
-    iget-object v2, p0, Lp/f$b;->f:Lp/h;
+    iget-object v2, p0, Lp/f$b;->g:Lp/h;
 
     iget-object v2, v2, Lp/h;->h:[F
 
@@ -101,12 +101,12 @@
     const-string v0, "] "
 
     .line 4
-    invoke-static {v1, v0}, Lo/g;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v1, v0}, Lcom/supercell/titan/a;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
     .line 5
-    iget-object v1, p0, Lp/f$b;->f:Lp/h;
+    iget-object v1, p0, Lp/f$b;->g:Lp/h;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 

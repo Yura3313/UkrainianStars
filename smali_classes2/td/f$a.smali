@@ -18,7 +18,7 @@
 
 
 # instance fields
-.field public final synthetic f:Ltd/f;
+.field public final synthetic g:Ltd/f;
 
 
 # direct methods
@@ -30,7 +30,7 @@
         }
     .end annotation
 
-    iput-object p1, p0, Ltd/f$a;->f:Ltd/f;
+    iput-object p1, p0, Ltd/f$a;->g:Ltd/f;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -43,9 +43,9 @@
     .locals 1
 
     .line 1
-    iget-object p1, p0, Ltd/f$a;->f:Ltd/f;
+    iget-object p1, p0, Ltd/f$a;->g:Ltd/f;
 
-    sget v0, Ltd/f;->f0:I
+    sget v0, Ltd/f;->g0:I
 
     .line 2
     invoke-virtual {p1}, Ltd/f;->Y0()V

@@ -22,9 +22,9 @@
 
 .field public final B:Landroid/view/View;
 
-.field public final synthetic C:Lra/t;
+.field public final C:Landroid/view/View;
 
-.field public final y:Landroid/view/View;
+.field public final synthetic D:Lra/t;
 
 .field public final z:Landroid/view/View;
 
@@ -34,7 +34,7 @@
     .locals 1
 
     .line 1
-    iput-object p1, p0, Lra/t$b;->C:Lra/t;
+    iput-object p1, p0, Lra/t$b;->D:Lra/t;
 
     .line 2
     invoke-direct {p0, p2}, Landroidx/recyclerview/widget/RecyclerView$z;-><init>(Landroid/view/View;)V
@@ -46,7 +46,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lra/t$b;->y:Landroid/view/View;
+    iput-object v0, p0, Lra/t$b;->z:Landroid/view/View;
 
     .line 4
     sget v0, Lcom/helpshift/R$id;->loading_state_view:I
@@ -55,7 +55,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lra/t$b;->z:Landroid/view/View;
+    iput-object v0, p0, Lra/t$b;->A:Landroid/view/View;
 
     .line 5
     sget v0, Lcom/helpshift/R$id;->loading_error_state_view:I
@@ -64,7 +64,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lra/t$b;->A:Landroid/view/View;
+    iput-object v0, p0, Lra/t$b;->B:Landroid/view/View;
 
     .line 6
     sget v0, Lcom/helpshift/R$id;->loading_error_tap_to_retry:I
@@ -73,7 +73,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lra/t$b;->B:Landroid/view/View;
+    iput-object v0, p0, Lra/t$b;->C:Landroid/view/View;
 
     .line 7
     invoke-virtual {v0, p0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
@@ -106,7 +106,7 @@
     .locals 2
 
     .line 1
-    iget-object p1, p0, Lra/t$b;->C:Lra/t;
+    iget-object p1, p0, Lra/t$b;->D:Lra/t;
 
     .line 2
     iget-object p1, p1, Lra/t;->b:Lra/t$a;
@@ -117,7 +117,7 @@
     check-cast p1, Lqa/p0;
 
     .line 4
-    iget-object p1, p1, Lqa/p0;->e:Lra/x;
+    iget-object p1, p1, Lqa/p0;->e:Lra/w;
 
     if-eqz p1, :cond_1
 
@@ -125,7 +125,7 @@
     check-cast p1, Lqa/t;
 
     .line 6
-    iget-object p1, p1, Lqa/t;->m0:Lf9/i;
+    iget-object p1, p1, Lqa/t;->n0:Lf9/i;
 
     .line 7
     iget-object v0, p1, Lf9/i;->x:Lqb/i;

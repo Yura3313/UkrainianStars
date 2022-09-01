@@ -97,7 +97,7 @@
     add-int/2addr v2, v1
 
     .line 6
-    invoke-interface {v0, v2}, Lr3/l2;->M1(I)Lr3/l2;
+    invoke-interface {v0, v2}, Lr3/l2;->L1(I)Lr3/l2;
 
     move-result-object v0
 

@@ -1,5 +1,5 @@
 .class public final Lcom/google/android/gms/internal/ads/v5$f;
-.super Lk3/xu;
+.super La7/a;
 .source "com.google.android.gms:play-services-ads-lite@@19.3.0"
 
 
@@ -16,10 +16,10 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "<ContainingType::",
-        "Lk3/ws0;",
+        "Lk3/at0;",
         "Type:",
         "Ljava/lang/Object;",
         ">",
-        "Lk3/xu;"
+        "La7/a;"
     }
 .end annotation

@@ -3,7 +3,7 @@
 
 
 # virtual methods
-.method public abstract b(Ljava/lang/String;ILjava/lang/Throwable;[BLjava/util/Map;)V
+.method public abstract c(Ljava/lang/String;ILjava/lang/Throwable;[BLjava/util/Map;)V
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",

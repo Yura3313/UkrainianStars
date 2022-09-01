@@ -1,5 +1,5 @@
 .class public final Lzd/e;
-.super Lse/h;
+.super Lse/i;
 .source "YoungPlayerRegisterEnterPinPageFragment.kt"
 
 # interfaces
@@ -9,18 +9,18 @@
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/p<",
         "Lzd/i;",
         "Ljava/lang/String;",
-        "Lie/h;",
+        "Lie/i;",
         ">;"
     }
 .end annotation
 
 
 # static fields
-.field public static final f:Lzd/e;
+.field public static final g:Lzd/e;
 
 
 # direct methods
@@ -31,7 +31,7 @@
 
     invoke-direct {v0}, Lzd/e;-><init>()V
 
-    sput-object v0, Lzd/e;->f:Lzd/e;
+    sput-object v0, Lzd/e;->g:Lzd/e;
 
     return-void
 .end method
@@ -41,7 +41,7 @@
 
     const/4 v0, 0x2
 
-    invoke-direct {p0, v0}, Lse/h;-><init>(I)V
+    invoke-direct {p0, v0}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -59,11 +59,11 @@
     const-string v0, "$receiver"
 
     .line 2
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "it"
 
-    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 3
     sget-object p2, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
@@ -78,7 +78,7 @@
 
     move-result-object p2
 
-    invoke-virtual {p2}, Lae/u;->m()Lze/e0;
+    invoke-virtual {p2}, Lae/u;->m()Lze/f0;
 
     .line 6
     invoke-virtual {p1}, Lzd/k;->V0()Lcom/supercell/id/ui/youngplayer/register/YoungPlayerRegisterFlowFragment;
@@ -91,7 +91,7 @@
 
     .line 7
     :cond_0
-    sget-object p1, Lie/h;->a:Lie/h;
+    sget-object p1, Lie/i;->a:Lie/i;
 
     return-object p1
 .end method

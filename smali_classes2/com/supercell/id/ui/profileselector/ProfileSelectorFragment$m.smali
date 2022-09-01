@@ -1,14 +1,14 @@
 .class public final Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$m;
-.super Lse/h;
-.source "ProfileSelectorFragment.kt"
+.super Ljava/lang/Object;
+.source "Comparisons.kt"
 
 # interfaces
-.implements Lre/l;
+.implements Ljava/util/Comparator;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;-><init>()V
+    value = Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->k1(Ljava/util/List;Ljava/util/List;Ljava/util/Map;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,64 +18,74 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
-        "Lre/l<",
-        "Ljava/lang/Exception;",
-        "Lie/h;",
-        ">;"
+        "<T:",
+        "Ljava/lang/Object;",
+        ">",
+        "Ljava/lang/Object;",
+        "Ljava/util/Comparator<",
+        "TT;>;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic f:Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;
+.field public final synthetic g:Ljava/util/Comparator;
 
 
 # direct methods
-.method public constructor <init>(Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;)V
+.method public constructor <init>(Ljava/util/Comparator;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$m;->f:Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;
+    iput-object p1, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$m;->g:Ljava/util/Comparator;
 
-    const/4 p1, 0x1
-
-    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
+.method public final compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;TT;)I"
+        }
+    .end annotation
 
     .line 1
-    check-cast p1, Ljava/lang/Exception;
+    iget-object v0, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$m;->g:Ljava/util/Comparator;
 
-    const-string v0, "it"
+    check-cast p1, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$h;
 
     .line 2
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    iget-object p1, p1, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$h;->i:Ljava/lang/String;
+
+    const-string v1, ""
+
+    if-eqz p1, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    move-object p1, v1
 
     .line 3
-    iget-object v0, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$m;->f:Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;
-
-    invoke-static {v0}, Lcom/android/billingclient/api/c0;->e(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
-
-    move-result-object v0
-
-    if-eqz v0, :cond_0
-
-    sget-object v1, Lcom/supercell/id/ui/MainActivity;->s:Ljava/lang/ref/WeakReference;
-
-    const/4 v1, 0x0
+    :goto_0
+    check-cast p2, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$h;
 
     .line 4
-    invoke-virtual {v0, p1, v1}, Lcom/supercell/id/ui/MainActivity;->G(Ljava/lang/Exception;Lre/l;)V
+    iget-object p2, p2, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$h;->i:Ljava/lang/String;
+
+    if-eqz p2, :cond_1
+
+    move-object v1, p2
 
     .line 5
-    :cond_0
-    sget-object p1, Lie/h;->a:Lie/h;
+    :cond_1
+    invoke-interface {v0, p1, v1}, Ljava/util/Comparator;->compare(Ljava/lang/Object;Ljava/lang/Object;)I
 
-    return-object p1
+    move-result p1
+
+    return p1
 .end method

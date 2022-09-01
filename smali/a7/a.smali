@@ -1,22 +1,20 @@
-.class public final La7/a;
+.class public La7/a;
 .super Ljava/lang/Object;
 .source "Detector.java"
 
 # interfaces
-.implements Lk3/xs;
-.implements Lk3/n5;
+.implements Lk3/vs;
+.implements Lv3/y1;
 
 
 # static fields
-.field public static final f:[I
-
 .field public static final g:[I
 
 .field public static final h:[I
 
 .field public static final i:[I
 
-.field public static final j:La7/a;
+.field public static final j:[I
 
 .field public static final k:La7/a;
 
@@ -32,14 +30,14 @@
     .line 1
     fill-array-data v1, :array_0
 
-    sput-object v1, La7/a;->f:[I
+    sput-object v1, La7/a;->g:[I
 
     new-array v0, v0, [I
 
     .line 2
     fill-array-data v0, :array_1
 
-    sput-object v0, La7/a;->g:[I
+    sput-object v0, La7/a;->h:[I
 
     const/16 v0, 0x8
 
@@ -48,7 +46,7 @@
     .line 3
     fill-array-data v0, :array_2
 
-    sput-object v0, La7/a;->h:[I
+    sput-object v0, La7/a;->i:[I
 
     const/16 v0, 0x9
 
@@ -57,16 +55,9 @@
     .line 4
     fill-array-data v0, :array_3
 
-    sput-object v0, La7/a;->i:[I
+    sput-object v0, La7/a;->j:[I
 
     .line 5
-    new-instance v0, La7/a;
-
-    invoke-direct {v0}, La7/a;-><init>()V
-
-    sput-object v0, La7/a;->j:La7/a;
-
-    .line 6
     new-instance v0, La7/a;
 
     invoke-direct {v0}, La7/a;-><init>()V
@@ -74,6 +65,8 @@
     sput-object v0, La7/a;->k:La7/a;
 
     return-void
+
+    nop
 
     :array_0
     .array-data 4
@@ -125,7 +118,7 @@
     return-void
 .end method
 
-.method public static a(Ll6/b;)Ljava/util/List;
+.method public static b(Ll6/b;)Ljava/util/List;
     .locals 14
 
     .line 1
@@ -138,19 +131,19 @@
     const/4 v8, 0x0
 
     .line 2
-    iget v9, p0, Ll6/b;->g:I
+    iget v9, p0, Ll6/b;->h:I
 
     if-lez v9, :cond_4
 
     .line 3
-    iget v10, p0, Ll6/b;->f:I
+    iget v10, p0, Ll6/b;->g:I
 
     const/16 v1, 0x8
 
     new-array v11, v1, [Le6/l;
 
     .line 4
-    sget-object v6, La7/a;->h:[I
+    sget-object v6, La7/a;->i:[I
 
     move-object v1, p0
 
@@ -166,7 +159,7 @@
 
     move-result-object v1
 
-    sget-object v2, La7/a;->f:[I
+    sget-object v2, La7/a;->g:[I
 
     const/4 v12, 0x0
 
@@ -220,7 +213,7 @@
 
     .line 8
     :goto_1
-    sget-object v6, La7/a;->i:[I
+    sget-object v6, La7/a;->j:[I
 
     move-object v1, p0
 
@@ -232,7 +225,7 @@
 
     move-result-object p0
 
-    sget-object v1, La7/a;->g:[I
+    sget-object v1, La7/a;->h:[I
 
     const/4 v2, 0x0
 
@@ -349,7 +342,7 @@
     if-ne v3, v8, :cond_3
 
     .line 6
-    invoke-static {p5, p4}, La7/a;->g([I[I)F
+    invoke-static {p5, p4}, La7/a;->f([I[I)F
 
     move-result v9
 
@@ -410,7 +403,7 @@
     if-ne v3, v0, :cond_5
 
     .line 12
-    invoke-static {p5, p4}, La7/a;->g([I[I)F
+    invoke-static {p5, p4}, La7/a;->f([I[I)F
 
     move-result p0
 
@@ -729,7 +722,7 @@
     return-object v2
 .end method
 
-.method public static g([I[I)F
+.method public static f([I[I)F
     .locals 10
 
     .line 1
@@ -828,12 +821,16 @@
 
 
 # virtual methods
-.method public b(Lorg/json/JSONObject;)Ljava/lang/Object;
-    .locals 1
+.method public a([BII)[B
+    .locals 2
 
-    new-instance v0, Lk3/l8;
+    .line 1
+    new-array v0, p3, [B
 
-    invoke-direct {v0, p1}, Lk3/l8;-><init>(Lorg/json/JSONObject;)V
+    const/4 v1, 0x0
+
+    .line 2
+    invoke-static {p1, p2, v0, v1, p3}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     return-object v0
 .end method
@@ -842,64 +839,10 @@
     .locals 0
 
     .line 1
-    check-cast p1, Lk3/ws;
+    check-cast p1, Lj1/k;
 
     .line 2
-    invoke-interface {p1}, Lk3/ws;->w()V
+    invoke-interface {p1}, Lj1/k;->onResume()V
 
     return-void
-.end method
-
-.method public f()Ljava/lang/String;
-    .locals 3
-
-    .line 1
-    sget-object v0, Lcom/helpshift/util/u;->c:Le7/g;
-
-    .line 2
-    iget-object v0, v0, Le7/g;->b:Lk7/a;
-
-    .line 3
-    monitor-enter v0
-
-    .line 4
-    :try_start_0
-    new-instance v1, Ljava/util/ArrayList;
-
-    invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
-
-    .line 5
-    iget-object v2, v0, Lk7/a;->e:Ljava/util/ArrayList;
-
-    if-eqz v2, :cond_0
-
-    .line 6
-    invoke-virtual {v1, v2}, Ljava/util/ArrayList;->addAll(Ljava/util/Collection;)Z
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    .line 7
-    :cond_0
-    monitor-exit v0
-
-    .line 8
-    sget-object v0, Lcom/helpshift/util/u;->d:Le8/j;
-
-    .line 9
-    iget-object v0, v0, Le8/j;->t:Le8/i;
-
-    .line 10
-    invoke-virtual {v0, v1}, Le8/i;->c(Ljava/util/List;)Ljava/lang/String;
-
-    move-result-object v0
-
-    return-object v0
-
-    :catchall_0
-    move-exception v1
-
-    .line 11
-    monitor-exit v0
-
-    throw v1
 .end method

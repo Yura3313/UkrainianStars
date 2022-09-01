@@ -95,7 +95,7 @@
     iget-object v0, p0, Landroidx/viewpager2/widget/ViewPager2$h;->d:Landroidx/viewpager2/widget/ViewPager2;
 
     .line 2
-    iget-boolean v1, v0, Landroidx/viewpager2/widget/ViewPager2;->w:Z
+    iget-boolean v1, v0, Landroidx/viewpager2/widget/ViewPager2;->x:Z
 
     if-eqz v1, :cond_0
 
@@ -164,7 +164,7 @@
     iget-object v6, p0, Landroidx/viewpager2/widget/ViewPager2$h;->d:Landroidx/viewpager2/widget/ViewPager2;
 
     .line 9
-    iget-boolean v7, v6, Landroidx/viewpager2/widget/ViewPager2;->w:Z
+    iget-boolean v7, v6, Landroidx/viewpager2/widget/ViewPager2;->x:Z
 
     if-nez v7, :cond_2
 
@@ -205,7 +205,7 @@
     :cond_4
     iget-object v2, p0, Landroidx/viewpager2/widget/ViewPager2$h;->d:Landroidx/viewpager2/widget/ViewPager2;
 
-    iget v2, v2, Landroidx/viewpager2/widget/ViewPager2;->i:I
+    iget v2, v2, Landroidx/viewpager2/widget/ViewPager2;->j:I
 
     add-int/lit8 v5, v5, -0x1
 
@@ -226,7 +226,7 @@
     :cond_5
     iget-object v2, p0, Landroidx/viewpager2/widget/ViewPager2$h;->d:Landroidx/viewpager2/widget/ViewPager2;
 
-    iget v2, v2, Landroidx/viewpager2/widget/ViewPager2;->i:I
+    iget v2, v2, Landroidx/viewpager2/widget/ViewPager2;->j:I
 
     if-lez v2, :cond_8
 
@@ -247,7 +247,7 @@
     :cond_6
     iget-object v1, p0, Landroidx/viewpager2/widget/ViewPager2$h;->d:Landroidx/viewpager2/widget/ViewPager2;
 
-    iget v1, v1, Landroidx/viewpager2/widget/ViewPager2;->i:I
+    iget v1, v1, Landroidx/viewpager2/widget/ViewPager2;->j:I
 
     add-int/lit8 v5, v5, -0x1
 
@@ -268,7 +268,7 @@
     :cond_7
     iget-object v1, p0, Landroidx/viewpager2/widget/ViewPager2$h;->d:Landroidx/viewpager2/widget/ViewPager2;
 
-    iget v1, v1, Landroidx/viewpager2/widget/ViewPager2;->i:I
+    iget v1, v1, Landroidx/viewpager2/widget/ViewPager2;->j:I
 
     if-lez v1, :cond_8
 

@@ -424,7 +424,7 @@
 
     move-result-object v3
 
-    sget-object v4, Lcom/google/protobuf/w1$c;->o:Lcom/google/protobuf/w1$c;
+    sget-object v4, Lcom/google/protobuf/w1$c;->p:Lcom/google/protobuf/w1$c;
 
     if-ne v3, v4, :cond_1
 
@@ -453,7 +453,7 @@
     check-cast v1, Lcom/google/protobuf/c0$b;
 
     .line 9
-    iget-object v1, v1, Lcom/google/protobuf/c0$b;->f:Ljava/util/Map$Entry;
+    iget-object v1, v1, Lcom/google/protobuf/c0$b;->g:Ljava/util/Map$Entry;
 
     invoke-interface {v1}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 

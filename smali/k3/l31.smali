@@ -2,83 +2,60 @@
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
+# interfaces
+.implements Ljava/util/Comparator;
 
-# instance fields
-.field public final a:J
 
-.field public final b:Ljava/lang/String;
-
-.field public final c:I
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Ljava/util/Comparator<",
+        "Lk3/r31;",
+        ">;"
+    }
+.end annotation
 
 
 # direct methods
-.method public constructor <init>(JLjava/lang/String;I)V
+.method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 2
-    iput-wide p1, p0, Lk3/l31;->a:J
-
-    .line 3
-    iput-object p3, p0, Lk3/l31;->b:Ljava/lang/String;
-
-    .line 4
-    iput p4, p0, Lk3/l31;->c:I
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 6
-
-    const/4 v0, 0x0
-
-    if-eqz p1, :cond_1
-
-    .line 1
-    instance-of v1, p1, Lk3/l31;
-
-    if-nez v1, :cond_0
-
-    goto :goto_0
-
-    .line 2
-    :cond_0
-    check-cast p1, Lk3/l31;
-
-    iget-wide v1, p1, Lk3/l31;->a:J
-
-    iget-wide v3, p0, Lk3/l31;->a:J
-
-    cmp-long v5, v1, v3
-
-    if-nez v5, :cond_1
-
-    iget p1, p1, Lk3/l31;->c:I
-
-    iget v1, p0, Lk3/l31;->c:I
-
-    if-ne p1, v1, :cond_1
-
-    const/4 p1, 0x1
-
-    return p1
-
-    :cond_1
-    :goto_0
-    return v0
-.end method
-
-.method public final hashCode()I
+.method public final synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 2
 
-    iget-wide v0, p0, Lk3/l31;->a:J
+    .line 1
+    check-cast p1, Lk3/r31;
 
-    long-to-int v1, v0
+    check-cast p2, Lk3/r31;
 
-    return v1
+    .line 2
+    iget v0, p1, Lk3/r31;->c:I
+
+    iget v1, p2, Lk3/r31;->c:I
+
+    sub-int/2addr v0, v1
+
+    if-eqz v0, :cond_0
+
+    return v0
+
+    .line 3
+    :cond_0
+    iget-wide v0, p1, Lk3/r31;->a:J
+
+    iget-wide p1, p2, Lk3/r31;->a:J
+
+    sub-long/2addr v0, p1
+
+    long-to-int p1, v0
+
+    return p1
 .end method

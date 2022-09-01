@@ -3,30 +3,36 @@
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lk3/nl0;
+.implements Ljava/util/concurrent/Callable;
 
 
 # instance fields
-.field public final a:Lk3/em0;
+.field public final a:Lk3/gi0;
 
 
 # direct methods
-.method public constructor <init>(Lk3/em0;)V
+.method public constructor <init>(Lk3/gi0;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lk3/ni0;->a:Lk3/em0;
+    iput-object p1, p0, Lk3/ni0;->a:Lk3/gi0;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Ljava/lang/Object;)Lk3/em0;
-    .locals 0
+.method public final call()Ljava/lang/Object;
+    .locals 1
 
-    iget-object p1, p0, Lk3/ni0;->a:Lk3/em0;
+    .line 1
+    iget-object v0, p0, Lk3/ni0;->a:Lk3/gi0;
 
-    return-object p1
+    .line 2
+    invoke-interface {v0}, Lk3/gi0;->run()V
+
+    const/4 v0, 0x0
+
+    return-object v0
 .end method

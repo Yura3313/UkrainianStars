@@ -63,7 +63,7 @@
     if-eqz p1, :cond_1
 
     .line 3
-    iget-boolean v0, p1, Landroidx/fragment/app/Fragment;->F:Z
+    iget-boolean v0, p1, Landroidx/fragment/app/Fragment;->G:Z
 
     if-eqz v0, :cond_0
 
@@ -71,14 +71,14 @@
 
     .line 4
     :cond_0
-    iget-object v0, p1, Lab/o;->p0:Lcom/helpshift/support/Faq;
+    iget-object v0, p1, Lab/o;->q0:Lcom/helpshift/support/Faq;
 
     if-nez v0, :cond_1
 
     const/16 v0, 0x66
 
     .line 5
-    iget-object p1, p1, Landroidx/fragment/app/Fragment;->M:Landroid/view/View;
+    iget-object p1, p1, Landroidx/fragment/app/Fragment;->N:Landroid/view/View;
 
     .line 6
     invoke-static {v0, p1}, Lib/f;->b(ILandroid/view/View;)V

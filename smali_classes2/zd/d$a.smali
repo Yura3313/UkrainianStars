@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field public final synthetic f:Lzd/d;
+.field public final synthetic g:Lzd/d;
 
 
 # direct methods
 .method public constructor <init>(Lzd/d;)V
     .locals 0
 
-    iput-object p1, p0, Lzd/d$a;->f:Lzd/d;
+    iput-object p1, p0, Lzd/d$a;->g:Lzd/d;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -48,14 +48,14 @@
     iget-object p1, p1, Lae/u;->w:Lsc/a;
 
     .line 3
-    sget-object v0, Lsc/a$a;->g:Lsc/a$a;
+    sget-object v0, Lsc/a$a;->h:Lsc/a$a;
 
     invoke-virtual {p1, v0}, Lsc/a;->b(Lsc/a$a;)V
 
     .line 4
-    iget-object p1, p0, Lzd/d$a;->f:Lzd/d;
+    iget-object p1, p0, Lzd/d$a;->g:Lzd/d;
 
-    invoke-static {p1}, Lcom/android/billingclient/api/c0;->e(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
+    invoke-static {p1}, Lcom/android/billingclient/api/b0;->f(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
 
     move-result-object p1
 

@@ -3,67 +3,48 @@
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Ljava/util/concurrent/Callable;
+.implements Lk3/pl0;
 
 
-# instance fields
-.field public final a:Lk3/em0;
-
-.field public final b:Lk3/em0;
-
-.field public final c:Lk3/em0;
+# static fields
+.field public static final a:Lk3/g30;
 
 
 # direct methods
-.method public constructor <init>(Lk3/em0;Lk3/em0;Lk3/em0;)V
+.method public static constructor <clinit>()V
+    .locals 1
+
+    new-instance v0, Lk3/g30;
+
+    invoke-direct {v0}, Lk3/g30;-><init>()V
+
+    sput-object v0, Lk3/g30;->a:Lk3/g30;
+
+    return-void
+.end method
+
+.method public constructor <init>()V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    iput-object p1, p0, Lk3/g30;->a:Lk3/em0;
-
-    iput-object p2, p0, Lk3/g30;->b:Lk3/em0;
-
-    iput-object p3, p0, Lk3/g30;->c:Lk3/em0;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final call()Ljava/lang/Object;
-    .locals 4
+.method public final a(Ljava/lang/Object;)Lk3/hm0;
+    .locals 0
 
     .line 1
-    iget-object v0, p0, Lk3/g30;->a:Lk3/em0;
+    check-cast p1, Ljava/io/InputStream;
 
-    iget-object v1, p0, Lk3/g30;->b:Lk3/em0;
-
-    iget-object v2, p0, Lk3/g30;->c:Lk3/em0;
+    const/4 p1, 0x0
 
     .line 2
-    new-instance v3, Lk3/n30;
+    invoke-static {p1}, Lk3/dm0;->g(Ljava/lang/Object;)Lk3/hm0;
 
-    .line 3
-    invoke-interface {v0}, Ljava/util/concurrent/Future;->get()Ljava/lang/Object;
+    move-result-object p1
 
-    move-result-object v0
-
-    check-cast v0, Lk3/t30;
-
-    invoke-interface {v1}, Ljava/util/concurrent/Future;->get()Ljava/lang/Object;
-
-    move-result-object v1
-
-    check-cast v1, Lorg/json/JSONObject;
-
-    invoke-interface {v2}, Ljava/util/concurrent/Future;->get()Ljava/lang/Object;
-
-    move-result-object v2
-
-    check-cast v2, Lk3/l8;
-
-    invoke-direct {v3, v0, v1, v2}, Lk3/n30;-><init>(Lk3/t30;Lorg/json/JSONObject;Lk3/l8;)V
-
-    return-object v3
+    return-object p1
 .end method

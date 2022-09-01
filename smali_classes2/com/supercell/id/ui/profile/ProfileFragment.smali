@@ -14,70 +14,70 @@
 
 
 # static fields
-.field public static final n0:Ljava/util/List;
+.field public static final o0:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
-            "Lae/p2;",
+            "Lae/o2;",
             ">;"
         }
     .end annotation
 .end field
 
-.field public static final o0:Lcom/supercell/id/ui/profile/ProfileFragment$a;
+.field public static final p0:Lcom/supercell/id/ui/profile/ProfileFragment$a;
 
 
 # instance fields
-.field public final h0:Lcom/supercell/id/ui/profile/ProfileFragment$l;
+.field public final i0:Lcom/supercell/id/ui/profile/ProfileFragment$l;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lre/l<",
             "Lbe/w;",
-            "Lie/h;",
+            "Lie/i;",
             ">;"
         }
     .end annotation
 .end field
 
-.field public final i0:Lcom/supercell/id/ui/profile/ProfileFragment$k;
+.field public final j0:Lcom/supercell/id/ui/profile/ProfileFragment$k;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lre/l<",
             "Lae/m<",
-            "Lvc/j;",
+            "Lvc/i;",
             "Lcom/supercell/id/util/NormalizedError;",
             ">;",
-            "Lie/h;",
+            "Lie/i;",
             ">;"
         }
     .end annotation
 .end field
 
-.field public final j0:Lcom/supercell/id/ui/profile/ProfileFragment$j;
+.field public final k0:Lcom/supercell/id/ui/profile/ProfileFragment$j;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lre/l<",
             "Lvc/a;",
-            "Lie/h;",
+            "Lie/i;",
             ">;"
         }
     .end annotation
 .end field
 
-.field public final k0:Lcom/supercell/id/ui/profile/ProfileFragment$m;
+.field public final l0:Lcom/supercell/id/ui/profile/ProfileFragment$m;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lre/l<",
-            "Lbe/l0;",
-            "Lie/h;",
+            "Lbe/n0;",
+            "Lie/i;",
             ">;"
         }
     .end annotation
 .end field
 
-.field public l0:I
+.field public m0:I
 
-.field public m0:Ljava/util/HashMap;
+.field public n0:Ljava/util/HashMap;
 
 
 # direct methods
@@ -88,14 +88,14 @@
 
     invoke-direct {v0}, Lcom/supercell/id/ui/profile/ProfileFragment$a;-><init>()V
 
-    sput-object v0, Lcom/supercell/id/ui/profile/ProfileFragment;->o0:Lcom/supercell/id/ui/profile/ProfileFragment$a;
+    sput-object v0, Lcom/supercell/id/ui/profile/ProfileFragment;->p0:Lcom/supercell/id/ui/profile/ProfileFragment$a;
 
     const/4 v0, 0x2
 
-    new-array v0, v0, [Lae/p2;
+    new-array v0, v0, [Lae/o2;
 
     .line 1
-    new-instance v8, Lae/p2;
+    new-instance v8, Lae/o2;
 
     const-class v7, Lpd/i;
 
@@ -111,14 +111,14 @@
 
     move-object v1, v8
 
-    invoke-direct/range {v1 .. v7}, Lae/p2;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Class;)V
+    invoke-direct/range {v1 .. v7}, Lae/o2;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Class;)V
 
     const/4 v1, 0x0
 
     aput-object v8, v0, v1
 
     .line 2
-    new-instance v1, Lae/p2;
+    new-instance v1, Lae/o2;
 
     const-class v15, Lpd/b;
 
@@ -134,18 +134,18 @@
 
     move-object v9, v1
 
-    invoke-direct/range {v9 .. v15}, Lae/p2;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Class;)V
+    invoke-direct/range {v9 .. v15}, Lae/o2;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Class;)V
 
     const/4 v2, 0x1
 
     aput-object v1, v0, v2
 
     .line 3
-    invoke-static {v0}, Lcom/android/billingclient/api/z;->i([Ljava/lang/Object;)Ljava/util/List;
+    invoke-static {v0}, Lcom/android/billingclient/api/y;->d([Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object v0
 
-    sput-object v0, Lcom/supercell/id/ui/profile/ProfileFragment;->n0:Ljava/util/List;
+    sput-object v0, Lcom/supercell/id/ui/profile/ProfileFragment;->o0:Ljava/util/List;
 
     return-void
 .end method
@@ -161,28 +161,28 @@
 
     invoke-direct {v0, p0}, Lcom/supercell/id/ui/profile/ProfileFragment$l;-><init>(Lcom/supercell/id/ui/profile/ProfileFragment;)V
 
-    iput-object v0, p0, Lcom/supercell/id/ui/profile/ProfileFragment;->h0:Lcom/supercell/id/ui/profile/ProfileFragment$l;
+    iput-object v0, p0, Lcom/supercell/id/ui/profile/ProfileFragment;->i0:Lcom/supercell/id/ui/profile/ProfileFragment$l;
 
     .line 3
     new-instance v0, Lcom/supercell/id/ui/profile/ProfileFragment$k;
 
     invoke-direct {v0, p0}, Lcom/supercell/id/ui/profile/ProfileFragment$k;-><init>(Lcom/supercell/id/ui/profile/ProfileFragment;)V
 
-    iput-object v0, p0, Lcom/supercell/id/ui/profile/ProfileFragment;->i0:Lcom/supercell/id/ui/profile/ProfileFragment$k;
+    iput-object v0, p0, Lcom/supercell/id/ui/profile/ProfileFragment;->j0:Lcom/supercell/id/ui/profile/ProfileFragment$k;
 
     .line 4
     new-instance v0, Lcom/supercell/id/ui/profile/ProfileFragment$j;
 
     invoke-direct {v0, p0}, Lcom/supercell/id/ui/profile/ProfileFragment$j;-><init>(Lcom/supercell/id/ui/profile/ProfileFragment;)V
 
-    iput-object v0, p0, Lcom/supercell/id/ui/profile/ProfileFragment;->j0:Lcom/supercell/id/ui/profile/ProfileFragment$j;
+    iput-object v0, p0, Lcom/supercell/id/ui/profile/ProfileFragment;->k0:Lcom/supercell/id/ui/profile/ProfileFragment$j;
 
     .line 5
     new-instance v0, Lcom/supercell/id/ui/profile/ProfileFragment$m;
 
     invoke-direct {v0, p0}, Lcom/supercell/id/ui/profile/ProfileFragment$m;-><init>(Lcom/supercell/id/ui/profile/ProfileFragment;)V
 
-    iput-object v0, p0, Lcom/supercell/id/ui/profile/ProfileFragment;->k0:Lcom/supercell/id/ui/profile/ProfileFragment$m;
+    iput-object v0, p0, Lcom/supercell/id/ui/profile/ProfileFragment;->l0:Lcom/supercell/id/ui/profile/ProfileFragment$m;
 
     return-void
 .end method
@@ -205,7 +205,7 @@
     move-result-object v1
 
     .line 3
-    iget-object v1, v1, Lbe/v0;->a:Ljava/lang/Object;
+    iget-object v1, v1, Lbe/x0;->a:Ljava/lang/Object;
 
     .line 4
     check-cast v1, Lae/m;
@@ -218,12 +218,12 @@
 
     move-result-object v1
 
-    check-cast v1, Lvc/j;
+    check-cast v1, Lvc/i;
 
     if-eqz v1, :cond_0
 
     .line 5
-    iget-object v1, v1, Lvc/j;->c:Ljava/util/List;
+    iget-object v1, v1, Lvc/i;->c:Ljava/util/List;
 
     if-eqz v1, :cond_0
 
@@ -243,20 +243,20 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lae/u;->k()Lbe/o0;
+    invoke-virtual {v0}, Lae/u;->k()Lbe/q0;
 
     move-result-object v0
 
     .line 8
-    iget-object v0, v0, Lbe/v0;->a:Ljava/lang/Object;
+    iget-object v0, v0, Lbe/x0;->a:Ljava/lang/Object;
 
     .line 9
-    check-cast v0, Lbe/l0;
+    check-cast v0, Lbe/n0;
 
     if-eqz v0, :cond_1
 
     .line 10
-    iget-object v0, v0, Lbe/l0;->a:Lae/m;
+    iget-object v0, v0, Lbe/n0;->a:Lae/m;
 
     if-eqz v0, :cond_1
 
@@ -265,12 +265,12 @@
 
     move-result-object v0
 
-    check-cast v0, Lvc/z;
+    check-cast v0, Lvc/x;
 
     if-eqz v0, :cond_1
 
     .line 12
-    iget-object v0, v0, Lvc/z;->d:Ljava/util/List;
+    iget-object v0, v0, Lvc/x;->d:Ljava/util/List;
 
     if-eqz v0, :cond_1
 
@@ -338,7 +338,7 @@
     move-result-object v1
 
     .line 3
-    iget-object v1, v1, Lbe/v0;->a:Ljava/lang/Object;
+    iget-object v1, v1, Lbe/x0;->a:Ljava/lang/Object;
 
     .line 4
     check-cast v1, Lbe/w;
@@ -439,7 +439,7 @@
 .method public final N0()V
     .locals 1
 
-    iget-object v0, p0, Lcom/supercell/id/ui/profile/ProfileFragment;->m0:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/supercell/id/ui/profile/ProfileFragment;->n0:Ljava/util/HashMap;
 
     if-eqz v0, :cond_0
 
@@ -454,11 +454,11 @@
 
     const-string v0, "view"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "animation"
 
-    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     invoke-super {p0, p1, p2, p3}, Lcom/supercell/id/ui/BaseFragment;->P0(Landroid/view/View;Lcom/supercell/id/ui/BaseFragment$b;Z)V
@@ -470,9 +470,9 @@
 
     const-string p3, "resources"
 
-    invoke-static {p1, p3}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p3}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-static {p1}, Lcom/android/billingclient/api/c0;->k(Landroid/content/res/Resources;)Z
+    invoke-static {p1}, Lcom/android/billingclient/api/b0;->l(Landroid/content/res/Resources;)Z
 
     move-result p1
 
@@ -545,7 +545,7 @@
 
     aput-object p2, p1, v3
 
-    invoke-static {p1}, Lcom/android/billingclient/api/z;->k([Ljava/lang/Object;)Ljava/util/List;
+    invoke-static {p1}, Lcom/android/billingclient/api/y;->f([Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object p1
 
@@ -643,7 +643,7 @@
 
     aput-object p2, p1, v3
 
-    invoke-static {p1}, Lcom/android/billingclient/api/z;->k([Ljava/lang/Object;)Ljava/util/List;
+    invoke-static {p1}, Lcom/android/billingclient/api/y;->f([Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object p1
 
@@ -737,7 +737,7 @@
 
     aput-object p2, p1, v2
 
-    invoke-static {p1}, Lcom/android/billingclient/api/z;->k([Ljava/lang/Object;)Ljava/util/List;
+    invoke-static {p1}, Lcom/android/billingclient/api/y;->f([Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object p1
 
@@ -806,7 +806,7 @@
     const/4 p1, 0x1
 
     .line 1
-    iput-boolean p1, p0, Landroidx/fragment/app/Fragment;->K:Z
+    iput-boolean p1, p0, Landroidx/fragment/app/Fragment;->L:Z
 
     .line 2
     sget p1, Lcom/supercell/id/R$id;->profile_settings_button:I
@@ -863,7 +863,7 @@
 
     .line 5
     :cond_2
-    new-instance p1, Lae/q2;
+    new-instance p1, Lae/p2;
 
     invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->x()Landroidx/fragment/app/FragmentManager;
 
@@ -871,11 +871,11 @@
 
     const-string v1, "childFragmentManager"
 
-    invoke-static {v0, v1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    sget-object v1, Lcom/supercell/id/ui/profile/ProfileFragment;->n0:Ljava/util/List;
+    sget-object v1, Lcom/supercell/id/ui/profile/ProfileFragment;->o0:Ljava/util/List;
 
-    invoke-direct {p1, v0, v1}, Lae/q2;-><init>(Landroidx/fragment/app/FragmentManager;Ljava/util/List;)V
+    invoke-direct {p1, v0, v1}, Lae/p2;-><init>(Landroidx/fragment/app/FragmentManager;Ljava/util/List;)V
 
     .line 6
     sget v0, Lcom/supercell/id/R$id;->tab_pager:I
@@ -888,7 +888,7 @@
 
     const-string v2, "tab_pager"
 
-    invoke-static {v1, v2}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v1, p1}, Landroidx/viewpager/widget/RtlViewPager;->setAdapter(Ly0/b;)V
 
@@ -937,7 +937,7 @@
 
     move-result v1
 
-    invoke-static {v0, v1}, Lcom/google/android/play/core/appupdate/c;->c(II)Lve/c;
+    invoke-static {v0, v1}, La5/b0;->l(II)Lve/c;
 
     move-result-object v0
 
@@ -958,7 +958,7 @@
     check-cast v2, Lve/b;
 
     .line 14
-    iget-boolean v2, v2, Lve/b;->g:Z
+    iget-boolean v2, v2, Lve/b;->h:Z
 
     if-eqz v2, :cond_4
 
@@ -989,16 +989,16 @@
 
     move-result-object p1
 
-    sget-object v0, Lcom/supercell/id/ui/profile/ProfileFragment;->n0:Ljava/util/List;
+    sget-object v0, Lcom/supercell/id/ui/profile/ProfileFragment;->o0:Ljava/util/List;
 
-    invoke-static {p1, v1, v0}, Lae/r2;->g(Landroid/content/Context;Ljava/util/List;Ljava/util/List;)V
+    invoke-static {p1, v1, v0}, Lae/q2;->g(Landroid/content/Context;Ljava/util/List;Ljava/util/List;)V
 
     .line 19
     invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->y()Landroid/content/Context;
 
     move-result-object p1
 
-    sget-object v0, Lcom/supercell/id/ui/profile/ProfileFragment$i;->f:Lcom/supercell/id/ui/profile/ProfileFragment$i;
+    sget-object v0, Lcom/supercell/id/ui/profile/ProfileFragment$i;->g:Lcom/supercell/id/ui/profile/ProfileFragment$i;
 
     sget v2, Lcom/supercell/id/R$id;->tab_pager:I
 
@@ -1012,11 +1012,11 @@
 
     invoke-direct {v3, p0}, Lcom/supercell/id/ui/profile/ProfileFragment$c;-><init>(Lcom/supercell/id/ui/profile/ProfileFragment;)V
 
-    invoke-static {p1, v1, v0, v2, v3}, Lae/r2;->c(Landroid/content/Context;Ljava/util/List;Lre/a;Landroidx/viewpager/widget/ViewPager;Lre/p;)V
+    invoke-static {p1, v1, v0, v2, v3}, Lae/q2;->c(Landroid/content/Context;Ljava/util/List;Lre/a;Landroidx/viewpager/widget/ViewPager;Lre/p;)V
 
     .line 20
     :cond_5
-    iget-object p1, p0, Lcom/supercell/id/ui/profile/ProfileFragment;->h0:Lcom/supercell/id/ui/profile/ProfileFragment$l;
+    iget-object p1, p0, Lcom/supercell/id/ui/profile/ProfileFragment;->i0:Lcom/supercell/id/ui/profile/ProfileFragment$l;
 
     sget-object v0, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
 
@@ -1029,13 +1029,13 @@
     move-result-object v1
 
     .line 21
-    iget-object v1, v1, Lbe/v0;->a:Ljava/lang/Object;
+    iget-object v1, v1, Lbe/x0;->a:Ljava/lang/Object;
 
     .line 22
     invoke-virtual {p1, v1}, Lcom/supercell/id/ui/profile/ProfileFragment$l;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 23
-    iget-object p1, p0, Lcom/supercell/id/ui/profile/ProfileFragment;->i0:Lcom/supercell/id/ui/profile/ProfileFragment$k;
+    iget-object p1, p0, Lcom/supercell/id/ui/profile/ProfileFragment;->j0:Lcom/supercell/id/ui/profile/ProfileFragment$k;
 
     invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lae/u;
 
@@ -1046,24 +1046,24 @@
     move-result-object v1
 
     .line 24
-    iget-object v1, v1, Lbe/v0;->a:Ljava/lang/Object;
+    iget-object v1, v1, Lbe/x0;->a:Ljava/lang/Object;
 
     .line 25
     invoke-virtual {p1, v1}, Lcom/supercell/id/ui/profile/ProfileFragment$k;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 26
-    iget-object p1, p0, Lcom/supercell/id/ui/profile/ProfileFragment;->k0:Lcom/supercell/id/ui/profile/ProfileFragment$m;
+    iget-object p1, p0, Lcom/supercell/id/ui/profile/ProfileFragment;->l0:Lcom/supercell/id/ui/profile/ProfileFragment$m;
 
     invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lae/u;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lae/u;->k()Lbe/o0;
+    invoke-virtual {v0}, Lae/u;->k()Lbe/q0;
 
     move-result-object v0
 
     .line 27
-    iget-object v0, v0, Lbe/v0;->a:Ljava/lang/Object;
+    iget-object v0, v0, Lbe/x0;->a:Ljava/lang/Object;
 
     .line 28
     invoke-virtual {p1, v0}, Lcom/supercell/id/ui/profile/ProfileFragment$m;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
@@ -1087,11 +1087,11 @@
 
     const-string v0, "animation"
 
-    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "result"
 
-    invoke-static {p4, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p4, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->I()Landroid/content/res/Resources;
@@ -1100,15 +1100,15 @@
 
     const-string v1, "resources"
 
-    invoke-static {v0, v1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-static {v0}, Lcom/android/billingclient/api/c0;->k(Landroid/content/res/Resources;)Z
+    invoke-static {v0}, Lcom/android/billingclient/api/b0;->l(Landroid/content/res/Resources;)Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
-    sget-object v0, Lcom/supercell/id/ui/BaseFragment$c;->f:Lcom/supercell/id/ui/BaseFragment$c;
+    sget-object v0, Lcom/supercell/id/ui/BaseFragment$c;->g:Lcom/supercell/id/ui/BaseFragment$c;
 
     if-ne p2, v0, :cond_0
 
@@ -1158,7 +1158,7 @@
 
     invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
 
-    invoke-static {v0, v1}, Lje/e;->g([Ljava/lang/Object;Ljava/util/Collection;)Ljava/util/Collection;
+    invoke-static {v0, v1}, Lje/e;->j([Ljava/lang/Object;Ljava/util/Collection;)Ljava/util/Collection;
 
     .line 4
     invoke-virtual {v1}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
@@ -1234,7 +1234,7 @@
 
     const-string v0, "context"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     invoke-super {p0, p1}, Landroidx/fragment/app/Fragment;->U(Landroid/content/Context;)V
@@ -1250,9 +1250,9 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/supercell/id/ui/profile/ProfileFragment;->h0:Lcom/supercell/id/ui/profile/ProfileFragment$l;
+    iget-object v1, p0, Lcom/supercell/id/ui/profile/ProfileFragment;->i0:Lcom/supercell/id/ui/profile/ProfileFragment$l;
 
-    invoke-virtual {v0, v1}, Lbe/v0;->b(Lre/l;)V
+    invoke-virtual {v0, v1}, Lbe/x0;->b(Lre/l;)V
 
     .line 3
     invoke-virtual {p1}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lae/u;
@@ -1263,9 +1263,9 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/supercell/id/ui/profile/ProfileFragment;->i0:Lcom/supercell/id/ui/profile/ProfileFragment$k;
+    iget-object v1, p0, Lcom/supercell/id/ui/profile/ProfileFragment;->j0:Lcom/supercell/id/ui/profile/ProfileFragment$k;
 
-    invoke-virtual {v0, v1}, Lbe/v0;->b(Lre/l;)V
+    invoke-virtual {v0, v1}, Lbe/x0;->b(Lre/l;)V
 
     .line 4
     invoke-virtual {p1}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lae/u;
@@ -1276,22 +1276,22 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/supercell/id/ui/profile/ProfileFragment;->j0:Lcom/supercell/id/ui/profile/ProfileFragment$j;
+    iget-object v1, p0, Lcom/supercell/id/ui/profile/ProfileFragment;->k0:Lcom/supercell/id/ui/profile/ProfileFragment$j;
 
-    invoke-virtual {v0, v1}, Lbe/v0;->b(Lre/l;)V
+    invoke-virtual {v0, v1}, Lbe/x0;->b(Lre/l;)V
 
     .line 5
     invoke-virtual {p1}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lae/u;
 
     move-result-object p1
 
-    invoke-virtual {p1}, Lae/u;->k()Lbe/o0;
+    invoke-virtual {p1}, Lae/u;->k()Lbe/q0;
 
     move-result-object p1
 
-    iget-object v0, p0, Lcom/supercell/id/ui/profile/ProfileFragment;->k0:Lcom/supercell/id/ui/profile/ProfileFragment$m;
+    iget-object v0, p0, Lcom/supercell/id/ui/profile/ProfileFragment;->l0:Lcom/supercell/id/ui/profile/ProfileFragment$m;
 
-    invoke-virtual {p1, v0}, Lbe/v0;->b(Lre/l;)V
+    invoke-virtual {p1, v0}, Lbe/x0;->b(Lre/l;)V
 
     return-void
 .end method
@@ -1301,7 +1301,7 @@
 
     const-string p3, "inflater"
 
-    invoke-static {p1, p3}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p3}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     sget p3, Lcom/supercell/id/R$layout;->fragment_profile:I
 
@@ -1319,7 +1319,7 @@
 
     invoke-super {p0}, Lcom/supercell/id/ui/BaseFragment;->a0()V
 
-    iget-object v0, p0, Lcom/supercell/id/ui/profile/ProfileFragment;->m0:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/supercell/id/ui/profile/ProfileFragment;->n0:Ljava/util/HashMap;
 
     if-eqz v0, :cond_0
 
@@ -1343,9 +1343,9 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/supercell/id/ui/profile/ProfileFragment;->i0:Lcom/supercell/id/ui/profile/ProfileFragment$k;
+    iget-object v2, p0, Lcom/supercell/id/ui/profile/ProfileFragment;->j0:Lcom/supercell/id/ui/profile/ProfileFragment$k;
 
-    invoke-virtual {v1, v2}, Lbe/v0;->e(Lre/l;)V
+    invoke-virtual {v1, v2}, Lbe/x0;->e(Lre/l;)V
 
     .line 2
     invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lae/u;
@@ -1356,9 +1356,9 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/supercell/id/ui/profile/ProfileFragment;->h0:Lcom/supercell/id/ui/profile/ProfileFragment$l;
+    iget-object v2, p0, Lcom/supercell/id/ui/profile/ProfileFragment;->i0:Lcom/supercell/id/ui/profile/ProfileFragment$l;
 
-    invoke-virtual {v1, v2}, Lbe/v0;->e(Lre/l;)V
+    invoke-virtual {v1, v2}, Lbe/x0;->e(Lre/l;)V
 
     .line 3
     invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lae/u;
@@ -1369,27 +1369,27 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/supercell/id/ui/profile/ProfileFragment;->j0:Lcom/supercell/id/ui/profile/ProfileFragment$j;
+    iget-object v2, p0, Lcom/supercell/id/ui/profile/ProfileFragment;->k0:Lcom/supercell/id/ui/profile/ProfileFragment$j;
 
-    invoke-virtual {v1, v2}, Lbe/v0;->e(Lre/l;)V
+    invoke-virtual {v1, v2}, Lbe/x0;->e(Lre/l;)V
 
     .line 4
     invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lae/u;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lae/u;->k()Lbe/o0;
+    invoke-virtual {v0}, Lae/u;->k()Lbe/q0;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/supercell/id/ui/profile/ProfileFragment;->k0:Lcom/supercell/id/ui/profile/ProfileFragment$m;
+    iget-object v1, p0, Lcom/supercell/id/ui/profile/ProfileFragment;->l0:Lcom/supercell/id/ui/profile/ProfileFragment$m;
 
-    invoke-virtual {v0, v1}, Lbe/v0;->e(Lre/l;)V
+    invoke-virtual {v0, v1}, Lbe/x0;->e(Lre/l;)V
 
     const/4 v0, 0x1
 
     .line 5
-    iput-boolean v0, p0, Landroidx/fragment/app/Fragment;->K:Z
+    iput-boolean v0, p0, Landroidx/fragment/app/Fragment;->L:Z
 
     return-void
 .end method
@@ -1397,7 +1397,7 @@
 .method public final f1(I)Landroid/view/View;
     .locals 2
 
-    iget-object v0, p0, Lcom/supercell/id/ui/profile/ProfileFragment;->m0:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/supercell/id/ui/profile/ProfileFragment;->n0:Ljava/util/HashMap;
 
     if-nez v0, :cond_0
 
@@ -1405,10 +1405,10 @@
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    iput-object v0, p0, Lcom/supercell/id/ui/profile/ProfileFragment;->m0:Ljava/util/HashMap;
+    iput-object v0, p0, Lcom/supercell/id/ui/profile/ProfileFragment;->n0:Ljava/util/HashMap;
 
     :cond_0
-    iget-object v0, p0, Lcom/supercell/id/ui/profile/ProfileFragment;->m0:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/supercell/id/ui/profile/ProfileFragment;->n0:Ljava/util/HashMap;
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1423,7 +1423,7 @@
     if-nez v0, :cond_2
 
     .line 1
-    iget-object v0, p0, Landroidx/fragment/app/Fragment;->M:Landroid/view/View;
+    iget-object v0, p0, Landroidx/fragment/app/Fragment;->N:Landroid/view/View;
 
     if-nez v0, :cond_1
 
@@ -1437,7 +1437,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/supercell/id/ui/profile/ProfileFragment;->m0:Ljava/util/HashMap;
+    iget-object v1, p0, Lcom/supercell/id/ui/profile/ProfileFragment;->n0:Ljava/util/HashMap;
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -1453,7 +1453,7 @@
     .locals 2
 
     .line 1
-    iget v0, p0, Lcom/supercell/id/ui/profile/ProfileFragment;->l0:I
+    iget v0, p0, Lcom/supercell/id/ui/profile/ProfileFragment;->m0:I
 
     const-string v1, "selectedTab"
 
@@ -1471,10 +1471,10 @@
     const/4 v0, 0x1
 
     .line 1
-    iput-boolean v0, p0, Landroidx/fragment/app/Fragment;->K:Z
+    iput-boolean v0, p0, Landroidx/fragment/app/Fragment;->L:Z
 
     .line 2
-    iget-object v1, p0, Landroidx/fragment/app/Fragment;->x:Landroidx/fragment/app/FragmentManager;
+    iget-object v1, p0, Landroidx/fragment/app/Fragment;->y:Landroidx/fragment/app/FragmentManager;
 
     const/4 v2, 0x0
 
@@ -1518,10 +1518,10 @@
     const-string v7, "it"
 
     .line 6
-    invoke-static {v6, v7}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v6, v7}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 7
-    iget v6, v6, Landroidx/fragment/app/Fragment;->B:I
+    iget v6, v6, Landroidx/fragment/app/Fragment;->C:I
 
     .line 8
     sget v7, Lcom/supercell/id/R$id;->head:I
@@ -1565,7 +1565,7 @@
 
     move-result-object v5
 
-    instance-of v6, v5, Lwc/g1;
+    instance-of v6, v5, Lwc/h1;
 
     if-eqz v6, :cond_3
 
@@ -1575,7 +1575,7 @@
 
     .line 11
     :cond_4
-    invoke-static {v1}, Lje/j;->A(Ljava/util/List;)Ljava/lang/Object;
+    invoke-static {v1}, Lje/j;->v(Ljava/util/List;)Ljava/lang/Object;
 
     move-result-object v1
 
@@ -1587,14 +1587,14 @@
     move-object v1, v2
 
     :goto_3
-    check-cast v1, Lwc/g1;
+    check-cast v1, Lwc/h1;
 
     const-string v4, "tab_pager"
 
     if-eqz v1, :cond_9
 
     .line 12
-    iget-object v5, v1, Lwc/g1;->i0:Ljava/lang/Integer;
+    iget-object v5, v1, Lwc/h1;->j0:Ljava/lang/Integer;
 
     if-eqz v5, :cond_8
 
@@ -1633,13 +1633,13 @@
 
     check-cast v5, Landroidx/viewpager/widget/FlowPager;
 
-    invoke-static {v5, v4}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v5, v4}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v5, v0}, Landroidx/viewpager/widget/RtlViewPager;->setCurrentItem(I)V
 
     .line 14
     :cond_8
-    iput-object v2, v1, Lwc/g1;->i0:Ljava/lang/Integer;
+    iput-object v2, v1, Lwc/h1;->j0:Ljava/lang/Integer;
 
     .line 15
     sget v0, Lcom/supercell/id/R$id;->tab_pager:I
@@ -1650,7 +1650,7 @@
 
     check-cast v2, Landroidx/viewpager/widget/FlowPager;
 
-    invoke-virtual {v1, v2}, Lwc/g1;->h1(Landroidx/viewpager/widget/ViewPager;)V
+    invoke-virtual {v1, v2}, Lwc/h1;->h1(Landroidx/viewpager/widget/ViewPager;)V
 
     .line 16
     invoke-virtual {p0, v0}, Lcom/supercell/id/ui/profile/ProfileFragment;->f1(I)Landroid/view/View;
@@ -1659,13 +1659,13 @@
 
     check-cast v0, Landroidx/viewpager/widget/FlowPager;
 
-    invoke-static {v0, v4}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v4}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v0}, Landroidx/viewpager/widget/RtlViewPager;->getCurrentItem()I
 
     move-result v0
 
-    invoke-virtual {v1, v0}, Lwc/g1;->i1(I)V
+    invoke-virtual {v1, v0}, Lwc/h1;->i1(I)V
 
     .line 17
     :cond_9
@@ -1684,7 +1684,7 @@
 
     move-result v1
 
-    invoke-static {v3, v1}, Lcom/google/android/play/core/appupdate/c;->c(II)Lve/c;
+    invoke-static {v3, v1}, La5/b0;->l(II)Lve/c;
 
     move-result-object v1
 
@@ -1732,7 +1732,7 @@
 
     move-result-object v0
 
-    sget-object v1, Lcom/supercell/id/ui/profile/ProfileFragment;->n0:Ljava/util/List;
+    sget-object v1, Lcom/supercell/id/ui/profile/ProfileFragment;->o0:Ljava/util/List;
 
     sget v5, Lcom/supercell/id/R$id;->tab_pager:I
 
@@ -1742,14 +1742,14 @@
 
     check-cast v5, Landroidx/viewpager/widget/FlowPager;
 
-    invoke-static {v5, v4}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v5, v4}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v5}, Landroidx/viewpager/widget/RtlViewPager;->getCurrentItem()I
 
     move-result v4
 
     .line 24
-    invoke-static {v0, v2, v1, v4, v3}, Lae/r2;->e(Landroid/content/Context;Ljava/util/List;Ljava/util/List;IZ)V
+    invoke-static {v0, v2, v1, v4, v3}, Lae/q2;->e(Landroid/content/Context;Ljava/util/List;Ljava/util/List;IZ)V
 
     :cond_c
     return-void
@@ -1759,7 +1759,7 @@
     .locals 7
 
     .line 1
-    iget-object v0, p0, Landroidx/fragment/app/Fragment;->x:Landroidx/fragment/app/FragmentManager;
+    iget-object v0, p0, Landroidx/fragment/app/Fragment;->y:Landroidx/fragment/app/FragmentManager;
 
     const/4 v1, 0x1
 
@@ -1803,10 +1803,10 @@
     const-string v6, "it"
 
     .line 5
-    invoke-static {v5, v6}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v5, v6}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 6
-    iget v5, v5, Landroidx/fragment/app/Fragment;->B:I
+    iget v5, v5, Landroidx/fragment/app/Fragment;->C:I
 
     .line 7
     sget v6, Lcom/supercell/id/R$id;->head:I
@@ -1850,7 +1850,7 @@
 
     move-result-object v4
 
-    instance-of v5, v4, Lwc/g1;
+    instance-of v5, v4, Lwc/h1;
 
     if-eqz v5, :cond_3
 
@@ -1860,7 +1860,7 @@
 
     .line 10
     :cond_4
-    invoke-static {v0}, Lje/j;->A(Ljava/util/List;)Ljava/lang/Object;
+    invoke-static {v0}, Lje/j;->v(Ljava/util/List;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -1872,16 +1872,16 @@
     move-object v0, v2
 
     :goto_3
-    check-cast v0, Lwc/g1;
+    check-cast v0, Lwc/h1;
 
     if-eqz v0, :cond_6
 
     .line 11
-    invoke-virtual {v0, v2}, Lwc/g1;->h1(Landroidx/viewpager/widget/ViewPager;)V
+    invoke-virtual {v0, v2}, Lwc/h1;->h1(Landroidx/viewpager/widget/ViewPager;)V
 
     .line 12
     :cond_6
-    iput-boolean v1, p0, Landroidx/fragment/app/Fragment;->K:Z
+    iput-boolean v1, p0, Landroidx/fragment/app/Fragment;->L:Z
 
     return-void
 .end method
@@ -1891,7 +1891,7 @@
 
     const-string v0, "view"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     invoke-super {p0, p1, p2}, Lcom/supercell/id/ui/BaseFragment;->k0(Landroid/view/View;Landroid/os/Bundle;)V
@@ -1903,9 +1903,9 @@
 
     const-string v0, "resources"
 
-    invoke-static {p2, v0}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-static {p2}, Lcom/android/billingclient/api/c0;->k(Landroid/content/res/Resources;)Z
+    invoke-static {p2}, Lcom/android/billingclient/api/b0;->l(Landroid/content/res/Resources;)Z
 
     move-result p2
 
@@ -2014,7 +2014,7 @@
 
     const-string v1, "tab_pager"
 
-    invoke-static {v0, v1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v0, p1}, Landroidx/viewpager/widget/RtlViewPager;->setCurrentItem(I)V
 

@@ -37,9 +37,9 @@
     check-cast p2, Lcom/google/android/gms/common/api/Scope;
 
     .line 2
-    iget-object p1, p1, Lcom/google/android/gms/common/api/Scope;->g:Ljava/lang/String;
+    iget-object p1, p1, Lcom/google/android/gms/common/api/Scope;->h:Ljava/lang/String;
 
-    iget-object p2, p2, Lcom/google/android/gms/common/api/Scope;->g:Ljava/lang/String;
+    iget-object p2, p2, Lcom/google/android/gms/common/api/Scope;->h:Ljava/lang/String;
 
     .line 3
     invoke-virtual {p1, p2}, Ljava/lang/String;->compareTo(Ljava/lang/String;)I

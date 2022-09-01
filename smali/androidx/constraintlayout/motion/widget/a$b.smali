@@ -45,7 +45,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/ArrayList<",
-            "Lo/j;",
+            "Lo/i;",
             ">;"
         }
     .end annotation

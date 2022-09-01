@@ -4,7 +4,7 @@
 
 
 # direct methods
-.method public constructor <init>()V
+.method public synthetic constructor <init>()V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -12,9 +12,39 @@
     return-void
 .end method
 
+.method public static final a(Lcom/google/protobuf/Timestamp;)Ljava/util/Date;
+    .locals 7
+
+    new-instance v0, Ljava/util/Date;
+
+    invoke-virtual {p0}, Lcom/google/protobuf/Timestamp;->getNanos()I
+
+    move-result v1
+
+    int-to-long v1, v1
+
+    const-wide/32 v3, 0xf4240
+
+    div-long/2addr v1, v3
+
+    invoke-virtual {p0}, Lcom/google/protobuf/Timestamp;->getSeconds()J
+
+    move-result-wide v3
+
+    const-wide/16 v5, 0x3e8
+
+    mul-long v3, v3, v5
+
+    add-long/2addr v3, v1
+
+    invoke-direct {v0, v3, v4}, Ljava/util/Date;-><init>(J)V
+
+    return-object v0
+.end method
+
 
 # virtual methods
-.method public final a(Ljava/lang/String;Ljava/lang/String;I)Ljava/lang/String;
+.method public b(Ljava/lang/String;Ljava/lang/String;I)Ljava/lang/String;
     .locals 9
 
     const-string v0, "HmacSHA256"
@@ -151,7 +181,7 @@
 
     new-array v3, v3, [Lz9/a;
 
-    invoke-static {v5, v1, v0, v3}, Landroidx/savedstate/d;->j(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v5, v1, v0, v3}, Le5/i;->l(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
 
     goto :goto_1
 
@@ -176,13 +206,13 @@
 
     move-result-object v1
 
-    invoke-static {v5, v1, v0}, Landroidx/savedstate/d;->g(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v5, v1, v0}, Le5/i;->i(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
     :goto_1
     add-int/2addr p3, v2
 
     .line 16
-    invoke-virtual {p0, p1, p2, p3}, Lg9/a;->a(Ljava/lang/String;Ljava/lang/String;I)Ljava/lang/String;
+    invoke-virtual {p0, p1, p2, p3}, Lg9/a;->b(Ljava/lang/String;Ljava/lang/String;I)Ljava/lang/String;
 
     move-result-object p1
 

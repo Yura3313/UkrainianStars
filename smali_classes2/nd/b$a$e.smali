@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lnd/b$a;->n(Lae/c2$a;ILae/b2;)V
+    value = Lnd/b$a;->n(Lae/b2$a;ILae/a2;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,22 +18,22 @@
 
 
 # instance fields
-.field public final synthetic f:Lnd/b$a;
+.field public final synthetic g:Lnd/b$a;
 
-.field public final synthetic g:Landroid/view/View;
+.field public final synthetic h:Landroid/view/View;
 
-.field public final synthetic h:Lae/b2;
+.field public final synthetic i:Lae/a2;
 
 
 # direct methods
-.method public constructor <init>(Lnd/b$a;Landroid/view/View;Lae/b2;)V
+.method public constructor <init>(Lnd/b$a;Landroid/view/View;Lae/a2;)V
     .locals 0
 
-    iput-object p1, p0, Lnd/b$a$e;->f:Lnd/b$a;
+    iput-object p1, p0, Lnd/b$a$e;->g:Lnd/b$a;
 
-    iput-object p2, p0, Lnd/b$a$e;->g:Landroid/view/View;
+    iput-object p2, p0, Lnd/b$a$e;->h:Landroid/view/View;
 
-    iput-object p3, p0, Lnd/b$a$e;->h:Lae/b2;
+    iput-object p3, p0, Lnd/b$a$e;->i:Lae/a2;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -46,7 +46,7 @@
     .locals 4
 
     .line 1
-    iget-object p1, p0, Lnd/b$a$e;->g:Landroid/view/View;
+    iget-object p1, p0, Lnd/b$a$e;->h:Landroid/view/View;
 
     sget v0, Lcom/supercell/id/R$id;->confirmButton:I
 
@@ -58,14 +58,14 @@
 
     const-string v0, "containerView.confirmButton"
 
-    invoke-static {p1, v0}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/4 v0, 0x0
 
     invoke-virtual {p1, v0}, Landroid/view/View;->setEnabled(Z)V
 
     .line 2
-    iget-object p1, p0, Lnd/b$a$e;->g:Landroid/view/View;
+    iget-object p1, p0, Lnd/b$a$e;->h:Landroid/view/View;
 
     sget v1, Lcom/supercell/id/R$id;->declineButton:I
 
@@ -77,7 +77,7 @@
 
     const-string v1, "containerView.declineButton"
 
-    invoke-static {p1, v1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v1}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {p1, v0}, Landroid/view/View;->setEnabled(Z)V
 
@@ -89,7 +89,7 @@
     move-result-object p1
 
     .line 4
-    iget-object p1, p1, Lae/u;->m:La5/d0;
+    iget-object p1, p1, Lae/u;->m:Lpe/a;
 
     const-string v0, "Messages - Friends - Donation"
 
@@ -100,16 +100,16 @@
     const/16 v3, 0x18
 
     .line 5
-    invoke-static {p1, v0, v1, v2, v3}, La5/d0;->a(La5/d0;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;I)V
+    invoke-static {p1, v0, v1, v2, v3}, Lpe/a;->e(Lpe/a;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;I)V
 
     .line 6
-    iget-object p1, p0, Lnd/b$a$e;->f:Lnd/b$a;
+    iget-object p1, p0, Lnd/b$a$e;->g:Lnd/b$a;
 
     .line 7
     iget-object p1, p1, Lae/s;->f:Landroidx/fragment/app/Fragment;
 
     .line 8
-    invoke-static {p1}, Lcom/android/billingclient/api/c0;->e(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
+    invoke-static {p1}, Lcom/android/billingclient/api/b0;->f(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
 
     move-result-object p1
 
@@ -141,7 +141,7 @@
     invoke-direct {v1, p0}, Lnd/b$a$e$a;-><init>(Lnd/b$a$e;)V
 
     .line 12
-    iput-object v1, v0, Lwc/q;->w0:Lre/l;
+    iput-object v1, v0, Lwc/q;->x0:Lre/l;
 
     .line 13
     new-instance v1, Lnd/b$a$e$b;
@@ -149,10 +149,10 @@
     invoke-direct {v1, p0}, Lnd/b$a$e$b;-><init>(Lnd/b$a$e;)V
 
     .line 14
-    iput-object v1, v0, Lwc/c;->u0:Lre/l;
+    iput-object v1, v0, Lwc/c;->v0:Lre/l;
 
     .line 15
-    sget-object v1, Lcom/supercell/id/ui/MainActivity;->s:Ljava/lang/ref/WeakReference;
+    sget-object v1, Lcom/supercell/id/ui/MainActivity;->t:Ljava/lang/ref/WeakReference;
 
     const-string v1, "popupDialog"
 

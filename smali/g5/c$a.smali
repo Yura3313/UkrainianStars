@@ -59,13 +59,13 @@
 
     move-result-object v2
 
-    const-class v3, Lr5/a0;
+    const-class v3, Lr5/c0;
 
     invoke-virtual {v1, v2, v3}, Lf5/i;->b(Lcom/google/crypto/tink/shaded/protobuf/x;Ljava/lang/Class;)Ljava/lang/Object;
 
     move-result-object v1
 
-    check-cast v1, Lr5/a0;
+    check-cast v1, Lr5/c0;
 
     new-instance v2, Ll5/b;
 
@@ -97,7 +97,7 @@
 
     move-result p1
 
-    invoke-direct {v0, v1, v2, p1}, Lr5/w;-><init>(Lr5/a0;Lf5/n;I)V
+    invoke-direct {v0, v1, v2, p1}, Lr5/w;-><init>(Lr5/c0;Lf5/n;I)V
 
     return-object v0
 .end method

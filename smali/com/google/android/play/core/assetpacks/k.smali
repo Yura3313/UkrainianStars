@@ -40,7 +40,7 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/play/core/assetpacks/j;->g:Lcom/google/android/play/core/assetpacks/o;
+    iget-object v0, p0, Lcom/google/android/play/core/assetpacks/j;->h:Lcom/google/android/play/core/assetpacks/o;
 
     .line 2
     iget-object v0, v0, Lcom/google/android/play/core/assetpacks/o;->c:La5/l;
@@ -71,7 +71,7 @@
 
     check-cast p1, Landroid/os/ParcelFileDescriptor;
 
-    iget-object v0, p0, Lcom/google/android/play/core/assetpacks/j;->f:Lcom/google/android/play/core/tasks/i;
+    iget-object v0, p0, Lcom/google/android/play/core/assetpacks/j;->g:Lcom/google/android/play/core/tasks/i;
 
     invoke-virtual {v0, p1}, Lcom/google/android/play/core/tasks/i;->b(Ljava/lang/Object;)V
 

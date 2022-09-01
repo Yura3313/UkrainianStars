@@ -19,9 +19,9 @@
 
 
 # instance fields
-.field public f:Landroid/widget/SpinnerAdapter;
+.field public g:Landroid/widget/SpinnerAdapter;
 
-.field public g:Landroid/widget/ListAdapter;
+.field public h:Landroid/widget/ListAdapter;
 
 
 # direct methods
@@ -32,7 +32,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object p1, p0, Landroidx/appcompat/widget/AppCompatSpinner$c;->f:Landroid/widget/SpinnerAdapter;
+    iput-object p1, p0, Landroidx/appcompat/widget/AppCompatSpinner$c;->g:Landroid/widget/SpinnerAdapter;
 
     .line 3
     instance-of v0, p1, Landroid/widget/ListAdapter;
@@ -44,7 +44,7 @@
 
     check-cast v0, Landroid/widget/ListAdapter;
 
-    iput-object v0, p0, Landroidx/appcompat/widget/AppCompatSpinner$c;->g:Landroid/widget/ListAdapter;
+    iput-object v0, p0, Landroidx/appcompat/widget/AppCompatSpinner$c;->h:Landroid/widget/ListAdapter;
 
     :cond_0
     if-eqz p2, :cond_2
@@ -105,7 +105,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatSpinner$c;->g:Landroid/widget/ListAdapter;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatSpinner$c;->h:Landroid/widget/ListAdapter;
 
     if-eqz v0, :cond_0
 
@@ -125,7 +125,7 @@
 .method public final getCount()I
     .locals 1
 
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatSpinner$c;->f:Landroid/widget/SpinnerAdapter;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatSpinner$c;->g:Landroid/widget/SpinnerAdapter;
 
     if-nez v0, :cond_0
 
@@ -146,7 +146,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatSpinner$c;->f:Landroid/widget/SpinnerAdapter;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatSpinner$c;->g:Landroid/widget/SpinnerAdapter;
 
     if-nez v0, :cond_0
 
@@ -167,7 +167,7 @@
 .method public final getItem(I)Ljava/lang/Object;
     .locals 1
 
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatSpinner$c;->f:Landroid/widget/SpinnerAdapter;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatSpinner$c;->g:Landroid/widget/SpinnerAdapter;
 
     if-nez v0, :cond_0
 
@@ -187,7 +187,7 @@
 .method public final getItemId(I)J
     .locals 2
 
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatSpinner$c;->f:Landroid/widget/SpinnerAdapter;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatSpinner$c;->g:Landroid/widget/SpinnerAdapter;
 
     if-nez v0, :cond_0
 
@@ -233,7 +233,7 @@
 .method public final hasStableIds()Z
     .locals 1
 
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatSpinner$c;->f:Landroid/widget/SpinnerAdapter;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatSpinner$c;->g:Landroid/widget/SpinnerAdapter;
 
     if-eqz v0, :cond_0
 
@@ -278,7 +278,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatSpinner$c;->g:Landroid/widget/ListAdapter;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatSpinner$c;->h:Landroid/widget/ListAdapter;
 
     if-eqz v0, :cond_0
 
@@ -299,7 +299,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatSpinner$c;->f:Landroid/widget/SpinnerAdapter;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatSpinner$c;->g:Landroid/widget/SpinnerAdapter;
 
     if-eqz v0, :cond_0
 
@@ -314,7 +314,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatSpinner$c;->f:Landroid/widget/SpinnerAdapter;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatSpinner$c;->g:Landroid/widget/SpinnerAdapter;
 
     if-eqz v0, :cond_0
 

@@ -1,106 +1,142 @@
 .class public final Lk3/c70;
-.super Ljava/lang/Object;
+.super Lcom/google/android/gms/internal/ads/zzaud;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
-
-# interfaces
-.implements Lk3/f40;
-
-
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ljava/lang/Object;",
-        "Lk3/f40<",
-        "Lcom/google/android/gms/internal/ads/zzapa;",
-        "Lcom/google/android/gms/internal/ads/zzcso;",
-        ">;"
-    }
-.end annotation
 
 
 # instance fields
-.field public final a:Lk3/t70;
+.field public final synthetic g:Lk3/xr;
+
+.field public final synthetic h:Lk3/uq;
+
+.field public final synthetic i:Lk3/lr;
+
+.field public final synthetic j:Lk3/zt;
 
 
 # direct methods
-.method public constructor <init>(Lk3/t70;)V
+.method public constructor <init>(Lk3/xr;Lk3/uq;Lk3/lr;Lk3/zt;)V
     .locals 0
 
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput-object p1, p0, Lk3/c70;->g:Lk3/xr;
 
-    .line 2
-    iput-object p1, p0, Lk3/c70;->a:Lk3/t70;
+    iput-object p2, p0, Lk3/c70;->h:Lk3/uq;
+
+    iput-object p3, p0, Lk3/c70;->i:Lk3/lr;
+
+    iput-object p4, p0, Lk3/c70;->j:Lk3/zt;
+
+    invoke-direct {p0}, Lcom/google/android/gms/internal/ads/zzaud;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Ljava/lang/String;Lorg/json/JSONObject;)Lk3/g40;
-    .locals 2
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/lang/String;",
-            "Lorg/json/JSONObject;",
-            ")",
-            "Lk3/g40<",
-            "Lcom/google/android/gms/internal/ads/zzapa;",
-            "Lcom/google/android/gms/internal/ads/zzcso;",
-            ">;"
-        }
-    .end annotation
+.method public final G4(Lcom/google/android/gms/dynamic/IObjectWrapper;)V
+    .locals 0
 
+    iget-object p1, p0, Lk3/c70;->h:Lk3/uq;
+
+    invoke-virtual {p1}, Lk3/uq;->q()V
+
+    return-void
+.end method
+
+.method public final H5(Lcom/google/android/gms/dynamic/IObjectWrapper;)V
+    .locals 0
+
+    iget-object p1, p0, Lk3/c70;->i:Lk3/lr;
+
+    invoke-virtual {p1}, Lk3/lr;->G0()V
+
+    return-void
+.end method
+
+.method public final K0(Landroid/os/Bundle;)V
+    .locals 0
+
+    return-void
+.end method
+
+.method public final P1(Lcom/google/android/gms/dynamic/IObjectWrapper;Lcom/google/android/gms/internal/ads/zzaue;)V
+    .locals 0
+
+    iget-object p1, p0, Lk3/c70;->j:Lk3/zt;
+
+    invoke-virtual {p1, p2}, Lk3/zt;->S(Lcom/google/android/gms/internal/ads/zzaue;)V
+
+    return-void
+.end method
+
+.method public final T2(Lcom/google/android/gms/dynamic/IObjectWrapper;I)V
+    .locals 0
+
+    return-void
+.end method
+
+.method public final U1(Lcom/google/android/gms/dynamic/IObjectWrapper;I)V
+    .locals 0
+
+    return-void
+.end method
+
+.method public final W6(Lcom/google/android/gms/dynamic/IObjectWrapper;)V
+    .locals 0
+
+    iget-object p1, p0, Lk3/c70;->g:Lk3/xr;
+
+    invoke-virtual {p1}, Lk3/xr;->U()V
+
+    return-void
+.end method
+
+.method public final c3(Lcom/google/android/gms/dynamic/IObjectWrapper;)V
+    .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
-            Lcom/google/android/gms/internal/ads/zzdlr;
+            Landroid/os/RemoteException;
         }
     .end annotation
 
     .line 1
-    iget-object p2, p0, Lk3/c70;->a:Lk3/t70;
+    iget-object p1, p0, Lk3/c70;->i:Lk3/lr;
 
     .line 2
-    iget-object v0, p2, Lk3/t70;->a:Ljava/util/concurrent/ConcurrentHashMap;
+    sget-object v0, Lk3/gj;->g:Lk3/gj;
 
-    invoke-virtual {v0, p1}, Ljava/util/concurrent/ConcurrentHashMap;->containsKey(Ljava/lang/Object;)Z
+    invoke-virtual {p1, v0}, Lk3/ts;->F0(Lk3/vs;)V
 
-    move-result v0
+    return-void
+.end method
 
-    const/4 v1, 0x0
+.method public final e4(Lcom/google/android/gms/dynamic/IObjectWrapper;)V
+    .locals 0
 
-    if-eqz v0, :cond_0
+    return-void
+.end method
 
-    .line 3
-    iget-object p2, p2, Lk3/t70;->a:Ljava/util/concurrent/ConcurrentHashMap;
+.method public final u2(Lcom/google/android/gms/dynamic/IObjectWrapper;)V
+    .locals 0
 
-    invoke-virtual {p2, p1}, Ljava/util/concurrent/ConcurrentHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    iget-object p1, p0, Lk3/c70;->g:Lk3/xr;
 
-    move-result-object p2
+    invoke-virtual {p1}, Lk3/xr;->I()V
 
-    check-cast p2, Lcom/google/android/gms/internal/ads/zzapa;
+    return-void
+.end method
 
-    goto :goto_0
+.method public final w1(Lcom/google/android/gms/dynamic/IObjectWrapper;)V
+    .locals 0
 
-    :cond_0
-    move-object p2, v1
+    return-void
+.end method
 
-    :goto_0
-    if-nez p2, :cond_1
+.method public final z6(Lcom/google/android/gms/dynamic/IObjectWrapper;)V
+    .locals 0
 
-    return-object v1
+    iget-object p1, p0, Lk3/c70;->j:Lk3/zt;
 
-    .line 4
-    :cond_1
-    new-instance v0, Lcom/google/android/gms/internal/ads/zzcso;
+    invoke-virtual {p1}, Lk3/zt;->Q()V
 
-    invoke-direct {v0}, Lcom/google/android/gms/internal/ads/zzcso;-><init>()V
-
-    .line 5
-    new-instance v1, Lk3/g40;
-
-    invoke-direct {v1, p2, v0, p1}, Lk3/g40;-><init>(Ljava/lang/Object;Lk3/qr;Ljava/lang/String;)V
-
-    return-object v1
+    return-void
 .end method

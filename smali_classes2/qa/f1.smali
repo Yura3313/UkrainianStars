@@ -64,7 +64,7 @@
 
     long-to-double v0, v0
 
-    invoke-static {v0, v1}, Lcom/google/android/play/core/assetpacks/y;->b(D)Ljava/lang/String;
+    invoke-static {v0, v1}, La0/a;->d(D)Ljava/lang/String;
 
     move-result-object v2
 

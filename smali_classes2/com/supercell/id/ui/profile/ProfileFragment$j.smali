@@ -1,5 +1,5 @@
 .class public final Lcom/supercell/id/ui/profile/ProfileFragment$j;
-.super Lse/h;
+.super Lse/i;
 .source "ProfileFragment.kt"
 
 # interfaces
@@ -18,28 +18,28 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/l<",
         "Lvc/a;",
-        "Lie/h;",
+        "Lie/i;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic f:Lcom/supercell/id/ui/profile/ProfileFragment;
+.field public final synthetic g:Lcom/supercell/id/ui/profile/ProfileFragment;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/id/ui/profile/ProfileFragment;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/ui/profile/ProfileFragment$j;->f:Lcom/supercell/id/ui/profile/ProfileFragment;
+    iput-object p1, p0, Lcom/supercell/id/ui/profile/ProfileFragment$j;->g:Lcom/supercell/id/ui/profile/ProfileFragment;
 
     const/4 p1, 0x1
 
-    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -53,12 +53,12 @@
     check-cast p1, Lvc/a;
 
     .line 2
-    iget-object p1, p0, Lcom/supercell/id/ui/profile/ProfileFragment$j;->f:Lcom/supercell/id/ui/profile/ProfileFragment;
+    iget-object p1, p0, Lcom/supercell/id/ui/profile/ProfileFragment$j;->g:Lcom/supercell/id/ui/profile/ProfileFragment;
 
     invoke-static {p1}, Lcom/supercell/id/ui/profile/ProfileFragment;->h1(Lcom/supercell/id/ui/profile/ProfileFragment;)V
 
     .line 3
-    sget-object p1, Lie/h;->a:Lie/h;
+    sget-object p1, Lie/i;->a:Lie/i;
 
     return-object p1
 .end method

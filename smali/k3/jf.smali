@@ -1,227 +1,213 @@
-.class public final synthetic Lk3/jf;
+.class public final Lk3/jf;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Ljava/lang/Runnable;
+.implements Landroid/media/AudioManager$OnAudioFocusChangeListener;
+
+
+# annotations
+.annotation build Landroid/annotation/TargetApi;
+    value = 0xe
+.end annotation
 
 
 # instance fields
-.field public final synthetic f:I
+.field public final a:Landroid/media/AudioManager;
 
-.field public final g:Ljava/lang/Object;
+.field public final b:Lk3/if;
+
+.field public c:Z
+
+.field public d:Z
+
+.field public e:Z
+
+.field public f:F
 
 
 # direct methods
-.method public synthetic constructor <init>(Ljava/lang/Object;I)V
-    .locals 0
+.method public constructor <init>(Landroid/content/Context;Lk3/if;)V
+    .locals 1
 
-    iput p2, p0, Lk3/jf;->f:I
-
-    iput-object p1, p0, Lk3/jf;->g:Ljava/lang/Object;
-
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    const/high16 v0, 0x3f800000    # 1.0f
+
+    .line 2
+    iput v0, p0, Lk3/jf;->f:F
+
+    const-string v0, "audio"
+
+    .line 3
+    invoke-virtual {p1, v0}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Landroid/media/AudioManager;
+
+    iput-object p1, p0, Lk3/jf;->a:Landroid/media/AudioManager;
+
+    .line 4
+    iput-object p2, p0, Lk3/jf;->b:Lk3/if;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final run()V
+.method public final a()V
     .locals 5
 
-    iget v0, p0, Lk3/jf;->f:I
-
-    packed-switch v0, :pswitch_data_0
-
-    goto :goto_0
-
     .line 1
-    :pswitch_0
-    iget-object v0, p0, Lk3/jf;->g:Ljava/lang/Object;
+    iget-boolean v0, p0, Lk3/jf;->d:Z
 
-    check-cast v0, Lk3/an;
-
-    .line 2
-    iget-object v1, v0, Lk3/an;->m:Lk3/xv;
-
-    .line 3
-    iget-object v1, v1, Lk3/xv;->d:Lcom/google/android/gms/internal/ads/zzafk;
-
-    if-eqz v1, :cond_0
-
-    .line 4
-    :try_start_0
-    iget-object v2, v0, Lk3/an;->o:Lk3/ev0;
-
-    .line 5
-    invoke-interface {v2}, Lk3/ev0;->get()Ljava/lang/Object;
-
-    move-result-object v2
-
-    check-cast v2, Lcom/google/android/gms/internal/ads/zzwu;
-
-    iget-object v0, v0, Lk3/an;->h:Landroid/content/Context;
-
-    .line 6
-    new-instance v3, Lcom/google/android/gms/dynamic/ObjectWrapper;
-
-    invoke-direct {v3, v0}, Lcom/google/android/gms/dynamic/ObjectWrapper;-><init>(Ljava/lang/Object;)V
-
-    .line 7
-    invoke-interface {v1, v2, v3}, Lcom/google/android/gms/internal/ads/zzafk;->S1(Lcom/google/android/gms/internal/ads/zzwu;Lcom/google/android/gms/dynamic/IObjectWrapper;)V
-    :try_end_0
-    .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
-
-    :catch_0
-    :cond_0
-    return-void
-
-    .line 8
-    :pswitch_1
-    iget-object v0, p0, Lk3/jf;->g:Ljava/lang/Object;
-
-    check-cast v0, Lk3/kf;
-
-    .line 9
-    iget-object v0, v0, Lk3/kf;->k:Lk3/le;
-
-    if-eqz v0, :cond_1
-
-    .line 10
-    check-cast v0, Lk3/pe;
-
-    invoke-virtual {v0}, Lk3/pe;->d()V
-
-    :cond_1
-    return-void
-
-    .line 11
-    :goto_0
-    iget-object v0, p0, Lk3/jf;->g:Ljava/lang/Object;
-
-    check-cast v0, Lk3/oi0;
-
-    .line 12
-    iget-object v0, v0, Lk3/oi0;->p:Ljava/lang/Object;
-
-    .line 13
-    monitor-enter v0
-
-    .line 14
-    :try_start_1
-    iget-object v1, p0, Lk3/jf;->g:Ljava/lang/Object;
-
-    check-cast v1, Lk3/oi0;
-
-    .line 15
-    iget-boolean v1, v1, Lk3/oi0;->q:Z
-
-    if-nez v1, :cond_2
-
-    .line 16
-    iget-object v1, p0, Lk3/jf;->g:Ljava/lang/Object;
-
-    check-cast v1, Lk3/oi0;
+    const/4 v1, 0x0
 
     const/4 v2, 0x1
 
-    .line 17
-    iput-boolean v2, v1, Lk3/oi0;->q:Z
+    if-eqz v0, :cond_0
 
-    .line 18
-    monitor-exit v0
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_1
+    iget-boolean v0, p0, Lk3/jf;->e:Z
 
-    .line 19
-    :try_start_2
-    iget-object v0, p0, Lk3/jf;->g:Ljava/lang/Object;
+    if-nez v0, :cond_0
 
-    check-cast v0, Lk3/oi0;
+    iget v0, p0, Lk3/jf;->f:F
 
-    invoke-static {v0}, Lk3/oi0;->l(Lk3/oi0;)V
-    :try_end_2
-    .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_1
+    const/4 v3, 0x0
+
+    cmpl-float v0, v0, v3
+
+    if-lez v0, :cond_0
+
+    const/4 v0, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    :goto_0
+    if-eqz v0, :cond_4
+
+    .line 2
+    iget-boolean v3, p0, Lk3/jf;->c:Z
+
+    if-nez v3, :cond_4
+
+    .line 3
+    iget-object v0, p0, Lk3/jf;->a:Landroid/media/AudioManager;
+
+    if-eqz v0, :cond_3
+
+    if-eqz v3, :cond_1
 
     goto :goto_1
 
-    :catch_1
-    move-exception v0
+    :cond_1
+    const/4 v3, 0x3
 
-    .line 20
-    iget-object v1, p0, Lk3/jf;->g:Ljava/lang/Object;
+    const/4 v4, 0x2
 
-    check-cast v1, Lk3/oi0;
+    .line 4
+    invoke-virtual {v0, p0, v3, v4}, Landroid/media/AudioManager;->requestAudioFocus(Landroid/media/AudioManager$OnAudioFocusChangeListener;II)I
 
-    .line 21
-    iget-object v1, v1, Lk3/oi0;->k:Lcom/google/android/gms/internal/ads/e1;
+    move-result v0
 
-    const/16 v2, 0x7e7
+    if-ne v0, v2, :cond_2
 
-    const-wide/16 v3, -0x1
+    const/4 v1, 0x1
 
-    .line 22
-    invoke-virtual {v1, v2, v3, v4, v0}, Lcom/google/android/gms/internal/ads/e1;->a(IJLjava/lang/Exception;)Lc4/f;
+    .line 5
+    :cond_2
+    iput-boolean v1, p0, Lk3/jf;->c:Z
 
-    .line 23
+    .line 6
+    :cond_3
     :goto_1
-    iget-object v0, p0, Lk3/jf;->g:Ljava/lang/Object;
+    iget-object v0, p0, Lk3/jf;->b:Lk3/if;
 
-    check-cast v0, Lk3/oi0;
+    invoke-interface {v0}, Lk3/if;->c()V
 
-    .line 24
-    iget-object v1, v0, Lk3/oi0;->p:Ljava/lang/Object;
+    return-void
 
-    .line 25
-    monitor-enter v1
+    :cond_4
+    if-nez v0, :cond_8
 
-    .line 26
-    :try_start_3
-    iget-object v0, p0, Lk3/jf;->g:Ljava/lang/Object;
+    .line 7
+    iget-boolean v0, p0, Lk3/jf;->c:Z
 
-    check-cast v0, Lk3/oi0;
+    if-eqz v0, :cond_8
 
-    const/4 v2, 0x0
+    .line 8
+    iget-object v3, p0, Lk3/jf;->a:Landroid/media/AudioManager;
 
-    .line 27
-    iput-boolean v2, v0, Lk3/oi0;->q:Z
+    if-eqz v3, :cond_7
 
-    .line 28
-    monitor-exit v1
+    if-nez v0, :cond_5
 
     goto :goto_2
 
-    :catchall_0
-    move-exception v0
+    .line 9
+    :cond_5
+    invoke-virtual {v3, p0}, Landroid/media/AudioManager;->abandonAudioFocus(Landroid/media/AudioManager$OnAudioFocusChangeListener;)I
 
-    monitor-exit v1
-    :try_end_3
-    .catchall {:try_start_3 .. :try_end_3} :catchall_0
+    move-result v0
 
-    throw v0
+    if-nez v0, :cond_6
 
-    .line 29
-    :cond_2
-    :try_start_4
-    monitor-exit v0
+    const/4 v1, 0x1
 
+    .line 10
+    :cond_6
+    iput-boolean v1, p0, Lk3/jf;->c:Z
+
+    .line 11
+    :cond_7
     :goto_2
+    iget-object v0, p0, Lk3/jf;->b:Lk3/if;
+
+    invoke-interface {v0}, Lk3/if;->c()V
+
+    :cond_8
     return-void
+.end method
 
-    :catchall_1
-    move-exception v1
+.method public final b()V
+    .locals 1
 
-    .line 30
-    monitor-exit v0
-    :try_end_4
-    .catchall {:try_start_4 .. :try_end_4} :catchall_1
+    const/4 v0, 0x0
 
-    throw v1
+    .line 1
+    iput-boolean v0, p0, Lk3/jf;->d:Z
 
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_1
-        :pswitch_0
-    .end packed-switch
+    .line 2
+    invoke-virtual {p0}, Lk3/jf;->a()V
+
+    return-void
+.end method
+
+.method public final onAudioFocusChange(I)V
+    .locals 0
+
+    if-lez p1, :cond_0
+
+    const/4 p1, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 p1, 0x0
+
+    .line 1
+    :goto_0
+    iput-boolean p1, p0, Lk3/jf;->c:Z
+
+    .line 2
+    iget-object p1, p0, Lk3/jf;->b:Lk3/if;
+
+    invoke-interface {p1}, Lk3/if;->c()V
+
+    return-void
 .end method

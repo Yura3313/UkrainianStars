@@ -1,5 +1,5 @@
 .class public final Lid/w$a$d;
-.super Lse/h;
+.super Lse/i;
 .source "NotificationDialog.kt"
 
 # interfaces
@@ -18,18 +18,18 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/p<",
         "Lid/w$a;",
-        "Lie/h;",
-        "Lie/h;",
+        "Lie/i;",
+        "Lie/i;",
         ">;"
     }
 .end annotation
 
 
 # static fields
-.field public static final f:Lid/w$a$d;
+.field public static final g:Lid/w$a$d;
 
 
 # direct methods
@@ -40,7 +40,7 @@
 
     invoke-direct {v0}, Lid/w$a$d;-><init>()V
 
-    sput-object v0, Lid/w$a$d;->f:Lid/w$a$d;
+    sput-object v0, Lid/w$a$d;->g:Lid/w$a$d;
 
     return-void
 .end method
@@ -50,7 +50,7 @@
 
     const/4 v0, 0x2
 
-    invoke-direct {p0, v0}, Lse/h;-><init>(I)V
+    invoke-direct {p0, v0}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -63,21 +63,21 @@
     .line 1
     check-cast p1, Lid/w$a;
 
-    check-cast p2, Lie/h;
+    check-cast p2, Lie/i;
 
     const-string v0, "$receiver"
 
     .line 2
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "it"
 
-    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/4 p2, 0x0
 
     .line 3
-    iput-object p2, p1, Lid/w$a;->c:Lze/e0;
+    iput-object p2, p1, Lid/w$a;->c:Lze/f0;
 
     .line 4
     iget-wide v0, p1, Lid/w$a;->b:J
@@ -161,7 +161,7 @@
     .line 18
     :cond_1
     :goto_0
-    sget-object p1, Lie/h;->a:Lie/h;
+    sget-object p1, Lie/i;->a:Lie/i;
 
     return-object p1
 .end method

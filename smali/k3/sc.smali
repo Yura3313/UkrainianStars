@@ -52,9 +52,9 @@
 
     .line 2
     :try_start_0
-    sget-object v1, Li1/o;->B:Li1/o;
+    sget-object v1, Li1/p;->B:Li1/p;
 
-    iget-object v1, v1, Li1/o;->j:Ll2/c;
+    iget-object v1, v1, Li1/p;->j:Ll2/c;
 
     .line 3
     invoke-interface {v1}, Ll2/c;->b()J

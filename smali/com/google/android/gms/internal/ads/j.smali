@@ -14,13 +14,13 @@
 # instance fields
 .field public final a:Landroid/content/Context;
 
-.field public final b:Lk3/ug0;
+.field public final b:Lk3/vg0;
 
 .field public c:Landroid/os/Bundle;
 
 .field public final d:Ljava/lang/String;
 
-.field public final e:Lk3/rg0;
+.field public final e:Lk3/sg0;
 
 
 # direct methods
@@ -37,10 +37,10 @@
     iput-object v0, p0, Lcom/google/android/gms/internal/ads/j;->a:Landroid/content/Context;
 
     .line 4
-    iget-object v0, p1, Lcom/google/android/gms/internal/ads/j$a;->b:Lk3/ug0;
+    iget-object v0, p1, Lcom/google/android/gms/internal/ads/j$a;->b:Lk3/vg0;
 
     .line 5
-    iput-object v0, p0, Lcom/google/android/gms/internal/ads/j;->b:Lk3/ug0;
+    iput-object v0, p0, Lcom/google/android/gms/internal/ads/j;->b:Lk3/vg0;
 
     .line 6
     iget-object v0, p1, Lcom/google/android/gms/internal/ads/j$a;->c:Landroid/os/Bundle;
@@ -55,10 +55,10 @@
     iput-object v0, p0, Lcom/google/android/gms/internal/ads/j;->d:Ljava/lang/String;
 
     .line 10
-    iget-object p1, p1, Lcom/google/android/gms/internal/ads/j$a;->e:Lk3/rg0;
+    iget-object p1, p1, Lcom/google/android/gms/internal/ads/j$a;->e:Lk3/sg0;
 
     .line 11
-    iput-object p1, p0, Lcom/google/android/gms/internal/ads/j;->e:Lk3/rg0;
+    iput-object p1, p0, Lcom/google/android/gms/internal/ads/j;->e:Lk3/sg0;
 
     return-void
 .end method

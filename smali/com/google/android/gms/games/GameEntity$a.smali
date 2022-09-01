@@ -37,7 +37,7 @@
     invoke-static {}, Lcom/google/android/gms/common/internal/DowngradeableSafeParcel;->E2()V
 
     .line 3
-    sget v1, Lcom/google/android/gms/games/internal/GamesDowngradeableSafeParcel;->g:I
+    sget v1, Lcom/google/android/gms/games/internal/GamesDowngradeableSafeParcel;->h:I
 
     .line 4
     const-class v1, Lcom/google/android/gms/games/GameEntity;

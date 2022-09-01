@@ -18,18 +18,18 @@
 
 
 # instance fields
-.field public final synthetic f:Landroid/content/Context;
+.field public final synthetic g:Landroid/content/Context;
 
-.field public final synthetic g:Ls7/c;
+.field public final synthetic h:Ls7/c;
 
 
 # direct methods
 .method public constructor <init>(Ls7/c;Landroid/content/Context;)V
     .locals 0
 
-    iput-object p1, p0, Ls7/c$b;->g:Ls7/c;
+    iput-object p1, p0, Ls7/c$b;->h:Ls7/c;
 
-    iput-object p2, p0, Ls7/c$b;->f:Landroid/content/Context;
+    iput-object p2, p0, Ls7/c$b;->g:Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -50,7 +50,7 @@
 
     .line 2
     :try_start_0
-    iget-object v1, p0, Ls7/c$b;->g:Ls7/c;
+    iget-object v1, p0, Ls7/c$b;->h:Ls7/c;
 
     .line 3
     iget-object v1, v1, Ls7/c;->a:Ljava/util/ArrayList;
@@ -74,7 +74,7 @@
     check-cast v2, Ls7/d;
 
     .line 5
-    iget-object v3, p0, Ls7/c$b;->f:Landroid/content/Context;
+    iget-object v3, p0, Ls7/c$b;->g:Landroid/content/Context;
 
     invoke-interface {v2, v3}, Ls7/d;->b(Landroid/content/Context;)V
 

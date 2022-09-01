@@ -20,7 +20,7 @@
 
 
 # instance fields
-.field public final f:Lo5/k;
+.field public final g:Lo5/k;
 
 
 # direct methods
@@ -31,7 +31,7 @@
     invoke-direct {p0}, Ljava/util/AbstractList;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lo5/c0;->f:Lo5/k;
+    iput-object p1, p0, Lo5/c0;->g:Lo5/k;
 
     return-void
 .end method
@@ -47,7 +47,7 @@
 .method public final K(I)Ljava/lang/Object;
     .locals 1
 
-    iget-object v0, p0, Lo5/c0;->f:Lo5/k;
+    iget-object v0, p0, Lo5/c0;->g:Lo5/k;
 
     invoke-interface {v0, p1}, Lo5/k;->K(I)Ljava/lang/Object;
 
@@ -69,7 +69,7 @@
 .method public final get(I)Ljava/lang/Object;
     .locals 1
 
-    iget-object v0, p0, Lo5/c0;->f:Lo5/k;
+    iget-object v0, p0, Lo5/c0;->g:Lo5/k;
 
     invoke-interface {v0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -126,7 +126,7 @@
         }
     .end annotation
 
-    iget-object v0, p0, Lo5/c0;->f:Lo5/k;
+    iget-object v0, p0, Lo5/c0;->g:Lo5/k;
 
     invoke-interface {v0}, Lo5/k;->q()Ljava/util/List;
 
@@ -138,7 +138,7 @@
 .method public final size()I
     .locals 1
 
-    iget-object v0, p0, Lo5/c0;->f:Lo5/k;
+    iget-object v0, p0, Lo5/c0;->g:Lo5/k;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
 

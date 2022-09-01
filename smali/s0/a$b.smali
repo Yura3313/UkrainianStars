@@ -23,13 +23,13 @@
 
 
 # static fields
-.field public static final enum g:Ls0/a$b;
+.field public static final enum h:Ls0/a$b;
 
-.field public static final synthetic h:[Ls0/a$b;
+.field public static final synthetic i:[Ls0/a$b;
 
 
 # instance fields
-.field public final f:Lf5/h;
+.field public final g:Lf5/h;
 
 
 # direct methods
@@ -48,7 +48,7 @@
     invoke-virtual {v1}, Lcom/google/crypto/tink/shaded/protobuf/n$a;->e()V
 
     .line 4
-    iget-object v2, v1, Lcom/google/crypto/tink/shaded/protobuf/n$a;->g:Lcom/google/crypto/tink/shaded/protobuf/n;
+    iget-object v2, v1, Lcom/google/crypto/tink/shaded/protobuf/n$a;->h:Lcom/google/crypto/tink/shaded/protobuf/n;
 
     check-cast v2, Ln5/u;
 
@@ -81,7 +81,7 @@
     .line 9
     invoke-direct {v0, v1}, Ls0/a$b;-><init>(Lf5/h;)V
 
-    sput-object v0, Ls0/a$b;->g:Ls0/a$b;
+    sput-object v0, Ls0/a$b;->h:Ls0/a$b;
 
     const/4 v1, 0x1
 
@@ -92,7 +92,7 @@
     aput-object v0, v1, v2
 
     .line 10
-    sput-object v1, Ls0/a$b;->h:[Ls0/a$b;
+    sput-object v1, Ls0/a$b;->i:[Ls0/a$b;
 
     return-void
 .end method
@@ -115,7 +115,7 @@
     invoke-direct {p0, v0, v1}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 2
-    iput-object p1, p0, Ls0/a$b;->f:Lf5/h;
+    iput-object p1, p0, Ls0/a$b;->g:Lf5/h;
 
     return-void
 .end method
@@ -137,7 +137,7 @@
 .method public static values()[Ls0/a$b;
     .locals 1
 
-    sget-object v0, Ls0/a$b;->h:[Ls0/a$b;
+    sget-object v0, Ls0/a$b;->i:[Ls0/a$b;
 
     invoke-virtual {v0}, [Ls0/a$b;->clone()Ljava/lang/Object;
 

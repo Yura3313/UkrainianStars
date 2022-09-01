@@ -2,94 +2,57 @@
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
+# interfaces
+.implements Ljava/lang/Runnable;
+
 
 # instance fields
-.field public final a:Z
+.field public final synthetic g:I
 
-.field public final b:I
+.field public final synthetic h:I
 
-.field public final c:Landroid/graphics/Rect;
-
-.field public final d:Landroid/graphics/Rect;
-
-.field public final e:Landroid/graphics/Rect;
-
-.field public final f:Z
-
-.field public final g:Landroid/graphics/Rect;
-
-.field public final h:Z
-
-.field public final i:Landroid/graphics/Rect;
-
-.field public final j:Z
-
-.field public final k:Ljava/util/List;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/List<",
-            "Landroid/graphics/Rect;",
-            ">;"
-        }
-    .end annotation
-.end field
+.field public final synthetic i:Lk3/l21;
 
 
 # direct methods
-.method public constructor <init>(ZILandroid/graphics/Rect;Landroid/graphics/Rect;Landroid/graphics/Rect;ZLandroid/graphics/Rect;ZLandroid/graphics/Rect;ZLjava/util/List;)V
+.method public constructor <init>(Lk3/l21;IIIF)V
     .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(JZZI",
-            "Landroid/graphics/Rect;",
-            "Landroid/graphics/Rect;",
-            "Landroid/graphics/Rect;",
-            "Z",
-            "Landroid/graphics/Rect;",
-            "Z",
-            "Landroid/graphics/Rect;",
-            "FZ",
-            "Ljava/util/List<",
-            "Landroid/graphics/Rect;",
-            ">;)V"
-        }
-    .end annotation
 
-    .line 1
+    iput-object p1, p0, Lk3/o21;->i:Lk3/l21;
+
+    iput p2, p0, Lk3/o21;->g:I
+
+    iput p3, p0, Lk3/o21;->h:I
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    return-void
+.end method
+
+
+# virtual methods
+.method public final run()V
+    .locals 3
+
+    .line 1
+    iget-object v0, p0, Lk3/o21;->i:Lk3/l21;
+
     .line 2
-    iput-boolean p1, p0, Lk3/o21;->a:Z
+    iget-object v0, v0, Lk3/l21;->b:Lk3/xf;
 
     .line 3
-    iput p2, p0, Lk3/o21;->b:I
+    iget v1, p0, Lk3/o21;->g:I
+
+    iget v2, p0, Lk3/o21;->h:I
 
     .line 4
-    iput-object p3, p0, Lk3/o21;->c:Landroid/graphics/Rect;
+    iget-object v0, v0, Lk3/xf;->p:Lk3/bg;
+
+    if-eqz v0, :cond_0
 
     .line 5
-    iput-object p4, p0, Lk3/o21;->d:Landroid/graphics/Rect;
+    invoke-interface {v0, v1, v2}, Lk3/bg;->b(II)V
 
-    .line 6
-    iput-object p5, p0, Lk3/o21;->e:Landroid/graphics/Rect;
-
-    .line 7
-    iput-boolean p6, p0, Lk3/o21;->f:Z
-
-    .line 8
-    iput-object p7, p0, Lk3/o21;->g:Landroid/graphics/Rect;
-
-    .line 9
-    iput-boolean p8, p0, Lk3/o21;->h:Z
-
-    .line 10
-    iput-object p9, p0, Lk3/o21;->i:Landroid/graphics/Rect;
-
-    .line 11
-    iput-boolean p10, p0, Lk3/o21;->j:Z
-
-    .line 12
-    iput-object p11, p0, Lk3/o21;->k:Ljava/util/List;
-
+    :cond_0
     return-void
 .end method

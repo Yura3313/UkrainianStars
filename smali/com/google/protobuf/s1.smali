@@ -20,7 +20,7 @@
 
 
 # instance fields
-.field public final f:Lcom/google/protobuf/f0;
+.field public final g:Lcom/google/protobuf/f0;
 
 
 # direct methods
@@ -31,7 +31,7 @@
     invoke-direct {p0}, Ljava/util/AbstractList;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lcom/google/protobuf/s1;->f:Lcom/google/protobuf/f0;
+    iput-object p1, p0, Lcom/google/protobuf/s1;->g:Lcom/google/protobuf/f0;
 
     return-void
 .end method
@@ -47,7 +47,7 @@
 .method public final K(I)Ljava/lang/Object;
     .locals 1
 
-    iget-object v0, p0, Lcom/google/protobuf/s1;->f:Lcom/google/protobuf/f0;
+    iget-object v0, p0, Lcom/google/protobuf/s1;->g:Lcom/google/protobuf/f0;
 
     invoke-interface {v0, p1}, Lcom/google/protobuf/f0;->K(I)Ljava/lang/Object;
 
@@ -59,7 +59,7 @@
 .method public final get(I)Ljava/lang/Object;
     .locals 1
 
-    iget-object v0, p0, Lcom/google/protobuf/s1;->f:Lcom/google/protobuf/f0;
+    iget-object v0, p0, Lcom/google/protobuf/s1;->g:Lcom/google/protobuf/f0;
 
     invoke-interface {v0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -126,7 +126,7 @@
         }
     .end annotation
 
-    iget-object v0, p0, Lcom/google/protobuf/s1;->f:Lcom/google/protobuf/f0;
+    iget-object v0, p0, Lcom/google/protobuf/s1;->g:Lcom/google/protobuf/f0;
 
     invoke-interface {v0}, Lcom/google/protobuf/f0;->q()Ljava/util/List;
 
@@ -138,7 +138,7 @@
 .method public final size()I
     .locals 1
 
-    iget-object v0, p0, Lcom/google/protobuf/s1;->f:Lcom/google/protobuf/f0;
+    iget-object v0, p0, Lcom/google/protobuf/s1;->g:Lcom/google/protobuf/f0;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
 

@@ -7,13 +7,13 @@
 
 
 # instance fields
-.field public final f:Ljava/lang/String;
-
 .field public final g:Ljava/lang/String;
 
-.field public final h:Ljava/util/Map;
+.field public final h:Ljava/lang/String;
 
-.field public final i:[B
+.field public final i:Ljava/util/Map;
+
+.field public final j:[B
 
 
 # direct methods
@@ -22,29 +22,29 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lk3/dd;->f:Ljava/lang/String;
+    iput-object p1, p0, Lk3/dd;->g:Ljava/lang/String;
 
-    iput-object p2, p0, Lk3/dd;->g:Ljava/lang/String;
+    iput-object p2, p0, Lk3/dd;->h:Ljava/lang/String;
 
-    iput-object p3, p0, Lk3/dd;->h:Ljava/util/Map;
+    iput-object p3, p0, Lk3/dd;->i:Ljava/util/Map;
 
-    iput-object p4, p0, Lk3/dd;->i:[B
+    iput-object p4, p0, Lk3/dd;->j:[B
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final b(Landroid/util/JsonWriter;)V
+.method public final c(Landroid/util/JsonWriter;)V
     .locals 5
 
-    iget-object v0, p0, Lk3/dd;->f:Ljava/lang/String;
+    iget-object v0, p0, Lk3/dd;->g:Ljava/lang/String;
 
-    iget-object v1, p0, Lk3/dd;->g:Ljava/lang/String;
+    iget-object v1, p0, Lk3/dd;->h:Ljava/lang/String;
 
-    iget-object v2, p0, Lk3/dd;->h:Ljava/util/Map;
+    iget-object v2, p0, Lk3/dd;->i:Ljava/util/Map;
 
-    iget-object v3, p0, Lk3/dd;->i:[B
+    iget-object v3, p0, Lk3/dd;->j:[B
 
     const-string v4, "params"
 

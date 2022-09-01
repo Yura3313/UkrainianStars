@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field public final synthetic f:Landroidx/core/widget/a;
+.field public final synthetic g:Landroidx/core/widget/a;
 
 
 # direct methods
 .method public constructor <init>(Landroidx/core/widget/a;)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/core/widget/a$b;->f:Landroidx/core/widget/a;
+    iput-object p1, p0, Landroidx/core/widget/a$b;->g:Landroidx/core/widget/a;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -38,9 +38,9 @@
     .locals 15
 
     .line 1
-    iget-object v0, p0, Landroidx/core/widget/a$b;->f:Landroidx/core/widget/a;
+    iget-object v0, p0, Landroidx/core/widget/a$b;->g:Landroidx/core/widget/a;
 
-    iget-boolean v1, v0, Landroidx/core/widget/a;->t:Z
+    iget-boolean v1, v0, Landroidx/core/widget/a;->u:Z
 
     if-nez v1, :cond_0
 
@@ -48,17 +48,17 @@
 
     .line 2
     :cond_0
-    iget-boolean v1, v0, Landroidx/core/widget/a;->r:Z
+    iget-boolean v1, v0, Landroidx/core/widget/a;->s:Z
 
     const/4 v2, 0x0
 
     if-eqz v1, :cond_1
 
     .line 3
-    iput-boolean v2, v0, Landroidx/core/widget/a;->r:Z
+    iput-boolean v2, v0, Landroidx/core/widget/a;->s:Z
 
     .line 4
-    iget-object v0, v0, Landroidx/core/widget/a;->f:Landroidx/core/widget/a$a;
+    iget-object v0, v0, Landroidx/core/widget/a;->g:Landroidx/core/widget/a$a;
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -84,9 +84,9 @@
 
     .line 9
     :cond_1
-    iget-object v0, p0, Landroidx/core/widget/a$b;->f:Landroidx/core/widget/a;
+    iget-object v0, p0, Landroidx/core/widget/a$b;->g:Landroidx/core/widget/a;
 
-    iget-object v0, v0, Landroidx/core/widget/a;->f:Landroidx/core/widget/a$a;
+    iget-object v0, v0, Landroidx/core/widget/a;->g:Landroidx/core/widget/a$a;
 
     .line 10
     iget-wide v3, v0, Landroidx/core/widget/a$a;->g:J
@@ -125,7 +125,7 @@
     if-nez v1, :cond_6
 
     .line 12
-    iget-object v1, p0, Landroidx/core/widget/a$b;->f:Landroidx/core/widget/a;
+    iget-object v1, p0, Landroidx/core/widget/a$b;->g:Landroidx/core/widget/a;
 
     invoke-virtual {v1}, Landroidx/core/widget/a;->e()Z
 
@@ -137,14 +137,14 @@
 
     .line 13
     :cond_3
-    iget-object v1, p0, Landroidx/core/widget/a$b;->f:Landroidx/core/widget/a;
+    iget-object v1, p0, Landroidx/core/widget/a$b;->g:Landroidx/core/widget/a;
 
-    iget-boolean v3, v1, Landroidx/core/widget/a;->s:Z
+    iget-boolean v3, v1, Landroidx/core/widget/a;->t:Z
 
     if-eqz v3, :cond_4
 
     .line 14
-    iput-boolean v2, v1, Landroidx/core/widget/a;->s:Z
+    iput-boolean v2, v1, Landroidx/core/widget/a;->t:Z
 
     .line 15
     invoke-static {}, Landroid/os/SystemClock;->uptimeMillis()J
@@ -167,7 +167,7 @@
     move-result-object v2
 
     .line 17
-    iget-object v1, v1, Landroidx/core/widget/a;->h:Landroid/view/View;
+    iget-object v1, v1, Landroidx/core/widget/a;->i:Landroid/view/View;
 
     invoke-virtual {v1, v2}, Landroid/view/View;->onTouchEvent(Landroid/view/MotionEvent;)Z
 
@@ -224,19 +224,19 @@
     float-to-int v0, v1
 
     .line 25
-    iget-object v1, p0, Landroidx/core/widget/a$b;->f:Landroidx/core/widget/a;
+    iget-object v1, p0, Landroidx/core/widget/a$b;->g:Landroidx/core/widget/a;
 
     check-cast v1, Landroidx/core/widget/f;
 
     .line 26
-    iget-object v1, v1, Landroidx/core/widget/f;->w:Landroid/widget/ListView;
+    iget-object v1, v1, Landroidx/core/widget/f;->x:Landroid/widget/ListView;
 
     invoke-static {v1, v0}, Landroidx/core/widget/g;->b(Landroid/widget/ListView;I)V
 
     .line 27
-    iget-object v0, p0, Landroidx/core/widget/a$b;->f:Landroidx/core/widget/a;
+    iget-object v0, p0, Landroidx/core/widget/a$b;->g:Landroidx/core/widget/a;
 
-    iget-object v0, v0, Landroidx/core/widget/a;->h:Landroid/view/View;
+    iget-object v0, v0, Landroidx/core/widget/a;->i:Landroid/view/View;
 
     sget-object v1, Lf0/r;->a:Ljava/util/WeakHashMap;
 
@@ -258,9 +258,9 @@
     .line 30
     :cond_6
     :goto_1
-    iget-object v0, p0, Landroidx/core/widget/a$b;->f:Landroidx/core/widget/a;
+    iget-object v0, p0, Landroidx/core/widget/a$b;->g:Landroidx/core/widget/a;
 
-    iput-boolean v2, v0, Landroidx/core/widget/a;->t:Z
+    iput-boolean v2, v0, Landroidx/core/widget/a;->u:Z
 
     return-void
 .end method

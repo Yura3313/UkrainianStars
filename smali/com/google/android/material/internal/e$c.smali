@@ -188,7 +188,7 @@
     check-cast p2, Lcom/google/android/material/internal/e$f;
 
     .line 4
-    iget-object p1, p1, Landroidx/recyclerview/widget/RecyclerView$z;->f:Landroid/view/View;
+    iget-object p1, p1, Landroidx/recyclerview/widget/RecyclerView$z;->g:Landroid/view/View;
 
     .line 5
     iget v0, p2, Lcom/google/android/material/internal/e$f;->a:I
@@ -205,7 +205,7 @@
 
     .line 8
     :cond_1
-    iget-object p1, p1, Landroidx/recyclerview/widget/RecyclerView$z;->f:Landroid/view/View;
+    iget-object p1, p1, Landroidx/recyclerview/widget/RecyclerView$z;->g:Landroid/view/View;
 
     check-cast p1, Landroid/widget/TextView;
 
@@ -231,26 +231,26 @@
 
     .line 13
     :cond_2
-    iget-object p1, p1, Landroidx/recyclerview/widget/RecyclerView$z;->f:Landroid/view/View;
+    iget-object p1, p1, Landroidx/recyclerview/widget/RecyclerView$z;->g:Landroid/view/View;
 
     check-cast p1, Lcom/google/android/material/internal/NavigationMenuItemView;
 
     .line 14
     iget-object v0, p0, Lcom/google/android/material/internal/e$c;->f:Lcom/google/android/material/internal/e;
 
-    iget-object v0, v0, Lcom/google/android/material/internal/e;->o:Landroid/content/res/ColorStateList;
+    iget-object v0, v0, Lcom/google/android/material/internal/e;->p:Landroid/content/res/ColorStateList;
 
     invoke-virtual {p1, v0}, Lcom/google/android/material/internal/NavigationMenuItemView;->setIconTintList(Landroid/content/res/ColorStateList;)V
 
     .line 15
     iget-object v0, p0, Lcom/google/android/material/internal/e$c;->f:Lcom/google/android/material/internal/e;
 
-    iget-boolean v1, v0, Lcom/google/android/material/internal/e;->m:Z
+    iget-boolean v1, v0, Lcom/google/android/material/internal/e;->n:Z
 
     if-eqz v1, :cond_3
 
     .line 16
-    iget v0, v0, Lcom/google/android/material/internal/e;->l:I
+    iget v0, v0, Lcom/google/android/material/internal/e;->m:I
 
     invoke-virtual {p1, v0}, Lcom/google/android/material/internal/NavigationMenuItemView;->setTextAppearance(I)V
 
@@ -258,7 +258,7 @@
     :cond_3
     iget-object v0, p0, Lcom/google/android/material/internal/e$c;->f:Lcom/google/android/material/internal/e;
 
-    iget-object v0, v0, Lcom/google/android/material/internal/e;->n:Landroid/content/res/ColorStateList;
+    iget-object v0, v0, Lcom/google/android/material/internal/e;->o:Landroid/content/res/ColorStateList;
 
     if-eqz v0, :cond_4
 
@@ -269,7 +269,7 @@
     :cond_4
     iget-object v0, p0, Lcom/google/android/material/internal/e$c;->f:Lcom/google/android/material/internal/e;
 
-    iget-object v0, v0, Lcom/google/android/material/internal/e;->p:Landroid/graphics/drawable/Drawable;
+    iget-object v0, v0, Lcom/google/android/material/internal/e;->q:Landroid/graphics/drawable/Drawable;
 
     if-eqz v0, :cond_5
 
@@ -311,26 +311,26 @@
     .line 25
     iget-object v0, p0, Lcom/google/android/material/internal/e$c;->f:Lcom/google/android/material/internal/e;
 
-    iget v0, v0, Lcom/google/android/material/internal/e;->q:I
+    iget v0, v0, Lcom/google/android/material/internal/e;->r:I
 
     invoke-virtual {p1, v0}, Lcom/google/android/material/internal/NavigationMenuItemView;->setHorizontalPadding(I)V
 
     .line 26
     iget-object v0, p0, Lcom/google/android/material/internal/e$c;->f:Lcom/google/android/material/internal/e;
 
-    iget v0, v0, Lcom/google/android/material/internal/e;->r:I
+    iget v0, v0, Lcom/google/android/material/internal/e;->s:I
 
     invoke-virtual {p1, v0}, Lcom/google/android/material/internal/NavigationMenuItemView;->setIconPadding(I)V
 
     .line 27
     iget-object v0, p0, Lcom/google/android/material/internal/e$c;->f:Lcom/google/android/material/internal/e;
 
-    iget-boolean v1, v0, Lcom/google/android/material/internal/e;->t:Z
+    iget-boolean v1, v0, Lcom/google/android/material/internal/e;->u:Z
 
     if-eqz v1, :cond_6
 
     .line 28
-    iget v0, v0, Lcom/google/android/material/internal/e;->s:I
+    iget v0, v0, Lcom/google/android/material/internal/e;->t:I
 
     invoke-virtual {p1, v0}, Lcom/google/android/material/internal/NavigationMenuItemView;->setIconSize(I)V
 
@@ -339,7 +339,7 @@
     iget-object v0, p0, Lcom/google/android/material/internal/e$c;->f:Lcom/google/android/material/internal/e;
 
     .line 30
-    iget v0, v0, Lcom/google/android/material/internal/e;->v:I
+    iget v0, v0, Lcom/google/android/material/internal/e;->w:I
 
     .line 31
     invoke-virtual {p1, v0}, Lcom/google/android/material/internal/NavigationMenuItemView;->setMaxLines(I)V
@@ -381,7 +381,7 @@
 
     iget-object p2, p0, Lcom/google/android/material/internal/e$c;->f:Lcom/google/android/material/internal/e;
 
-    iget-object p2, p2, Lcom/google/android/material/internal/e;->g:Landroid/widget/LinearLayout;
+    iget-object p2, p2, Lcom/google/android/material/internal/e;->h:Landroid/widget/LinearLayout;
 
     invoke-direct {p1, p2}, Lcom/google/android/material/internal/e$b;-><init>(Landroid/view/View;)V
 
@@ -393,7 +393,7 @@
 
     iget-object v0, p0, Lcom/google/android/material/internal/e$c;->f:Lcom/google/android/material/internal/e;
 
-    iget-object v0, v0, Lcom/google/android/material/internal/e;->k:Landroid/view/LayoutInflater;
+    iget-object v0, v0, Lcom/google/android/material/internal/e;->l:Landroid/view/LayoutInflater;
 
     invoke-direct {p2, v0, p1}, Lcom/google/android/material/internal/e$j;-><init>(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;)V
 
@@ -405,7 +405,7 @@
 
     iget-object v0, p0, Lcom/google/android/material/internal/e$c;->f:Lcom/google/android/material/internal/e;
 
-    iget-object v0, v0, Lcom/google/android/material/internal/e;->k:Landroid/view/LayoutInflater;
+    iget-object v0, v0, Lcom/google/android/material/internal/e;->l:Landroid/view/LayoutInflater;
 
     invoke-direct {p2, v0, p1}, Lcom/google/android/material/internal/e$k;-><init>(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;)V
 
@@ -417,9 +417,9 @@
 
     iget-object v0, p0, Lcom/google/android/material/internal/e$c;->f:Lcom/google/android/material/internal/e;
 
-    iget-object v1, v0, Lcom/google/android/material/internal/e;->k:Landroid/view/LayoutInflater;
+    iget-object v1, v0, Lcom/google/android/material/internal/e;->l:Landroid/view/LayoutInflater;
 
-    iget-object v0, v0, Lcom/google/android/material/internal/e;->z:Lcom/google/android/material/internal/e$a;
+    iget-object v0, v0, Lcom/google/android/material/internal/e;->A:Lcom/google/android/material/internal/e$a;
 
     invoke-direct {p2, v1, p1, v0}, Lcom/google/android/material/internal/e$i;-><init>(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/view/View$OnClickListener;)V
 
@@ -442,12 +442,12 @@
     if-eqz v0, :cond_1
 
     .line 3
-    iget-object p1, p1, Landroidx/recyclerview/widget/RecyclerView$z;->f:Landroid/view/View;
+    iget-object p1, p1, Landroidx/recyclerview/widget/RecyclerView$z;->g:Landroid/view/View;
 
     check-cast p1, Lcom/google/android/material/internal/NavigationMenuItemView;
 
     .line 4
-    iget-object v0, p1, Lcom/google/android/material/internal/NavigationMenuItemView;->E:Landroid/widget/FrameLayout;
+    iget-object v0, p1, Lcom/google/android/material/internal/NavigationMenuItemView;->F:Landroid/widget/FrameLayout;
 
     if-eqz v0, :cond_0
 
@@ -456,7 +456,7 @@
 
     .line 6
     :cond_0
-    iget-object p1, p1, Lcom/google/android/material/internal/NavigationMenuItemView;->D:Landroid/widget/CheckedTextView;
+    iget-object p1, p1, Lcom/google/android/material/internal/NavigationMenuItemView;->E:Landroid/widget/CheckedTextView;
 
     const/4 v0, 0x0
 
@@ -503,7 +503,7 @@
     .line 5
     iget-object v3, v0, Lcom/google/android/material/internal/e$c;->f:Lcom/google/android/material/internal/e;
 
-    iget-object v3, v3, Lcom/google/android/material/internal/e;->h:Landroidx/appcompat/view/menu/e;
+    iget-object v3, v3, Lcom/google/android/material/internal/e;->i:Landroidx/appcompat/view/menu/e;
 
     invoke-virtual {v3}, Landroidx/appcompat/view/menu/e;->m()Ljava/util/ArrayList;
 
@@ -527,7 +527,7 @@
     .line 6
     iget-object v8, v0, Lcom/google/android/material/internal/e$c;->f:Lcom/google/android/material/internal/e;
 
-    iget-object v8, v8, Lcom/google/android/material/internal/e;->h:Landroidx/appcompat/view/menu/e;
+    iget-object v8, v8, Lcom/google/android/material/internal/e;->i:Landroidx/appcompat/view/menu/e;
 
     invoke-virtual {v8}, Landroidx/appcompat/view/menu/e;->m()Ljava/util/ArrayList;
 
@@ -587,7 +587,7 @@
 
     iget-object v12, v0, Lcom/google/android/material/internal/e$c;->f:Lcom/google/android/material/internal/e;
 
-    iget v12, v12, Lcom/google/android/material/internal/e;->x:I
+    iget v12, v12, Lcom/google/android/material/internal/e;->y:I
 
     invoke-direct {v11, v12, v4}, Lcom/google/android/material/internal/e$f;-><init>(II)V
 
@@ -754,7 +754,7 @@
 
     iget-object v10, v0, Lcom/google/android/material/internal/e$c;->f:Lcom/google/android/material/internal/e;
 
-    iget v10, v10, Lcom/google/android/material/internal/e;->x:I
+    iget v10, v10, Lcom/google/android/material/internal/e;->y:I
 
     invoke-direct {v9, v10, v10}, Lcom/google/android/material/internal/e$f;-><init>(II)V
 

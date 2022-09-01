@@ -507,7 +507,7 @@
     const-string v2, "Expected \'Upgrade\' header value \'websocket\' but was \'"
 
     .line 12
-    invoke-static {v2, v0, v1}, Landroid/support/v4/media/f;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2, v0, v1}, Landroid/support/v4/media/f;->b(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -523,7 +523,7 @@
     const-string v2, "Expected \'Connection\' header value \'Upgrade\' but was \'"
 
     .line 15
-    invoke-static {v2, v0, v1}, Landroid/support/v4/media/f;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2, v0, v1}, Landroid/support/v4/media/f;->b(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 

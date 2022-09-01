@@ -1,19 +1,21 @@
 .class public final enum Lk3/qu0;
-.super Lk3/mu0;
+.super Lk3/ru0;
 .source "com.google.android.gms:play-services-ads-lite@@19.3.0"
 
 
 # direct methods
-.method public constructor <init>(Lk3/pu0;)V
-    .locals 3
+.method public constructor <init>()V
+    .locals 4
 
-    const-string v0, "BYTES"
+    sget-object v0, Lk3/uu0;->m:Lk3/uu0;
 
-    const/16 v1, 0xb
+    const-string v1, "STRING"
 
-    const/4 v2, 0x2
+    const/16 v2, 0x8
 
-    invoke-direct {p0, v0, v1, p1, v2}, Lk3/mu0;-><init>(Ljava/lang/String;ILk3/pu0;I)V
+    const/4 v3, 0x2
+
+    invoke-direct {p0, v1, v2, v0, v3}, Lk3/ru0;-><init>(Ljava/lang/String;ILk3/uu0;I)V
 
     return-void
 .end method

@@ -58,7 +58,7 @@
     iget-object v1, v1, La8/f;->o:Lx7/d;
 
     .line 6
-    sget-object v2, Lx7/d$b;->g:Lx7/d$b;
+    sget-object v2, Lx7/d$b;->h:Lx7/d$b;
 
     invoke-virtual {v0}, Lcom/helpshift/common/exception/RootAPIException;->a()I
 

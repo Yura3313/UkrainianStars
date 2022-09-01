@@ -4,18 +4,18 @@
 
 
 # instance fields
-.field public final synthetic b:Lo8/z;
+.field public final synthetic b:Lo8/b0;
 
 .field public final synthetic c:Lf9/i;
 
 
 # direct methods
-.method public constructor <init>(Lf9/i;Lo8/z;)V
+.method public constructor <init>(Lf9/i;Lo8/b0;)V
     .locals 0
 
     iput-object p1, p0, Lf9/q;->c:Lf9/i;
 
-    iput-object p2, p0, Lf9/q;->b:Lo8/z;
+    iput-object p2, p0, Lf9/q;->b:Lo8/b0;
 
     invoke-direct {p0}, La8/g;-><init>()V
 
@@ -42,15 +42,15 @@
 
     move-result-object v1
 
-    iget-object v3, v0, Lf9/q;->b:Lo8/z;
+    iget-object v3, v0, Lf9/q;->b:Lo8/b0;
 
-    iget-object v3, v3, Lo8/z;->A:Lp8/c;
+    iget-object v3, v3, Lo8/b0;->B:Lp8/d;
 
-    iget-object v4, v3, Lp8/b;->h:Ljava/lang/String;
+    iget-object v4, v3, Lp8/c;->i:Ljava/lang/String;
 
-    iget-boolean v5, v3, Lp8/b;->g:Z
+    iget-boolean v5, v3, Lp8/c;->h:Z
 
-    iget-object v3, v3, Lp8/b;->i:Ljava/lang/String;
+    iget-object v3, v3, Lp8/c;->j:Ljava/lang/String;
 
     check-cast v2, Lqa/e0;
 
@@ -393,7 +393,7 @@
 
     sget v8, Lcom/helpshift/R$attr;->hs__expandedPickerIconColor:I
 
-    invoke-static {v4, v7, v8}, Lcom/helpshift/util/g0;->e(Landroid/content/Context;Landroid/graphics/drawable/Drawable;I)V
+    invoke-static {v4, v7, v8}, Lcom/helpshift/util/e0;->e(Landroid/content/Context;Landroid/graphics/drawable/Drawable;I)V
 
     .line 44
     iget-object v4, v2, Lqa/e0;->g:Landroid/content/Context;
@@ -404,7 +404,7 @@
 
     move-result-object v7
 
-    invoke-static {v4, v7, v8}, Lcom/helpshift/util/g0;->e(Landroid/content/Context;Landroid/graphics/drawable/Drawable;I)V
+    invoke-static {v4, v7, v8}, Lcom/helpshift/util/e0;->e(Landroid/content/Context;Landroid/graphics/drawable/Drawable;I)V
 
     .line 45
     iget-object v4, v2, Lqa/e0;->g:Landroid/content/Context;
@@ -415,7 +415,7 @@
 
     move-result-object v7
 
-    invoke-static {v4, v7, v8}, Lcom/helpshift/util/g0;->e(Landroid/content/Context;Landroid/graphics/drawable/Drawable;I)V
+    invoke-static {v4, v7, v8}, Lcom/helpshift/util/e0;->e(Landroid/content/Context;Landroid/graphics/drawable/Drawable;I)V
 
     .line 46
     iget-object v4, v2, Lqa/e0;->g:Landroid/content/Context;
@@ -426,7 +426,7 @@
 
     move-result-object v7
 
-    invoke-static {v4, v7, v8}, Lcom/helpshift/util/g0;->e(Landroid/content/Context;Landroid/graphics/drawable/Drawable;I)V
+    invoke-static {v4, v7, v8}, Lcom/helpshift/util/e0;->e(Landroid/content/Context;Landroid/graphics/drawable/Drawable;I)V
 
     .line 47
     iget-object v4, v2, Lqa/e0;->g:Landroid/content/Context;
@@ -439,7 +439,7 @@
 
     sget v8, Lcom/helpshift/R$attr;->hs__collapsedPickerIconColor:I
 
-    invoke-static {v4, v7, v8}, Lcom/helpshift/util/g0;->e(Landroid/content/Context;Landroid/graphics/drawable/Drawable;I)V
+    invoke-static {v4, v7, v8}, Lcom/helpshift/util/e0;->e(Landroid/content/Context;Landroid/graphics/drawable/Drawable;I)V
 
     .line 48
     iget-object v4, v2, Lqa/e0;->v:Lcom/google/android/material/bottomsheet/BottomSheetBehavior;
@@ -448,7 +448,7 @@
 
     const/high16 v8, 0x430e0000    # 142.0f
 
-    invoke-static {v7, v8}, Lcom/helpshift/util/g0;->a(Landroid/content/Context;F)F
+    invoke-static {v7, v8}, Lcom/helpshift/util/e0;->a(Landroid/content/Context;F)F
 
     move-result v7
 
@@ -485,7 +485,7 @@
     sget-object v7, Landroid/graphics/drawable/GradientDrawable$Orientation;->BOTTOM_TOP:Landroid/graphics/drawable/GradientDrawable$Orientation;
 
     .line 53
-    invoke-static {v1, v4, v7}, Lcom/helpshift/util/g0;->g(Landroid/view/View;ILandroid/graphics/drawable/GradientDrawable$Orientation;)V
+    invoke-static {v1, v4, v7}, Lcom/helpshift/util/e0;->g(Landroid/view/View;ILandroid/graphics/drawable/GradientDrawable$Orientation;)V
 
     .line 54
     invoke-virtual {v2}, Lqa/e0;->j()V

@@ -40,7 +40,7 @@
     iget-object v3, v0, Lab/n;->c:Lab/o;
 
     .line 3
-    iget-object v3, v3, Lab/o;->p0:Lcom/helpshift/support/Faq;
+    iget-object v3, v3, Lab/o;->q0:Lcom/helpshift/support/Faq;
 
     .line 4
     iget-object v4, v0, Lab/n;->b:Ljava/util/ArrayList;
@@ -61,10 +61,10 @@
     invoke-static {v4}, Ljava/util/Collections;->reverse(Ljava/util/List;)V
 
     .line 8
-    iget-object v5, v3, Lcom/helpshift/support/Faq;->f:Ljava/lang/String;
+    iget-object v5, v3, Lcom/helpshift/support/Faq;->g:Ljava/lang/String;
 
     .line 9
-    iget-object v6, v3, Lcom/helpshift/support/Faq;->j:Ljava/lang/String;
+    iget-object v6, v3, Lcom/helpshift/support/Faq;->k:Ljava/lang/String;
 
     .line 10
     new-instance v7, Ljava/util/LinkedHashSet;
@@ -74,12 +74,12 @@
     .line 11
     sget v8, Lcom/helpshift/R$attr;->hs__searchHighlightColor:I
 
-    invoke-static {v2, v8}, Lcom/helpshift/util/g0;->c(Landroid/content/Context;I)Ljava/lang/String;
+    invoke-static {v2, v8}, Lcom/helpshift/util/e0;->c(Landroid/content/Context;I)Ljava/lang/String;
 
     move-result-object v2
 
     .line 12
-    invoke-static {v5}, Lib/e;->b(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v5}, Lib/e;->e(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v8
 
@@ -90,7 +90,7 @@
     if-eqz v8, :cond_0
 
     .line 13
-    invoke-static {v6}, Lib/e;->b(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v6}, Lib/e;->e(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v8
 
@@ -147,7 +147,7 @@
 
     move-result-object v13
 
-    invoke-static {v13}, Lib/e;->b(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v13}, Lib/e;->e(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v13
 
@@ -205,7 +205,7 @@
     move-result v11
 
     .line 24
-    invoke-static {v6}, Lib/e;->b(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v6}, Lib/e;->e(Ljava/lang/String;)Ljava/lang/String;
 
     .line 25
     new-instance v12, Ljava/util/ArrayList;
@@ -239,7 +239,7 @@
 
     move-result-object v11
 
-    invoke-static {v11}, Lib/e;->b(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v11}, Lib/e;->e(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v11
 
@@ -496,12 +496,12 @@
     const-string v8, "<"
 
     .line 51
-    invoke-static {v4, v6, v8}, Landroid/support/v4/media/f;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v4, v6, v8}, Landroid/support/v4/media/f;->b(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v6
 
     .line 52
-    invoke-static {v4, v5, v8}, Landroid/support/v4/media/f;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v4, v5, v8}, Landroid/support/v4/media/f;->b(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v4
 
@@ -569,7 +569,7 @@
     move-result-object v7
 
     .line 58
-    invoke-static {v15, v8, v14}, Landroid/support/v4/media/f;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v15, v8, v14}, Landroid/support/v4/media/f;->b(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v11
 
@@ -633,7 +633,7 @@
     move-result-object v9
 
     .line 64
-    invoke-static {v15, v8, v14}, Landroid/support/v4/media/f;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v15, v8, v14}, Landroid/support/v4/media/f;->b(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v11
 
@@ -705,18 +705,18 @@
     new-instance v2, Lcom/helpshift/support/Faq;
 
     .line 70
-    iget-object v8, v3, Lcom/helpshift/support/Faq;->n:Ljava/lang/String;
+    iget-object v8, v3, Lcom/helpshift/support/Faq;->o:Ljava/lang/String;
 
     .line 71
-    iget-object v9, v3, Lcom/helpshift/support/Faq;->g:Ljava/lang/String;
+    iget-object v9, v3, Lcom/helpshift/support/Faq;->h:Ljava/lang/String;
 
-    iget-object v10, v3, Lcom/helpshift/support/Faq;->h:Ljava/lang/String;
+    iget-object v10, v3, Lcom/helpshift/support/Faq;->i:Ljava/lang/String;
 
-    iget-object v11, v3, Lcom/helpshift/support/Faq;->i:Ljava/lang/String;
+    iget-object v11, v3, Lcom/helpshift/support/Faq;->j:Ljava/lang/String;
 
-    iget v14, v3, Lcom/helpshift/support/Faq;->k:I
+    iget v14, v3, Lcom/helpshift/support/Faq;->l:I
 
-    iget-object v15, v3, Lcom/helpshift/support/Faq;->l:Ljava/lang/Boolean;
+    iget-object v15, v3, Lcom/helpshift/support/Faq;->m:Ljava/lang/Boolean;
 
     .line 72
     invoke-virtual {v3}, Lcom/helpshift/support/Faq;->j()Ljava/util/List;
@@ -739,10 +739,10 @@
 
     .line 74
     :goto_b
-    iput-object v2, v1, Lab/o;->A0:Lcom/helpshift/support/Faq;
+    iput-object v2, v1, Lab/o;->B0:Lcom/helpshift/support/Faq;
 
     .line 75
-    sget-object v1, Lcom/helpshift/util/u;->c:Le7/g;
+    sget-object v1, Lcom/helpshift/util/t;->c:Le7/g;
 
     .line 76
     iget-object v1, v1, Le7/g;->f:La8/f;

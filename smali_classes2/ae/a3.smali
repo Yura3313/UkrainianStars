@@ -7,14 +7,14 @@
 
 
 # instance fields
-.field public final synthetic f:Lae/z2$i;
+.field public final synthetic g:Lae/z2$i;
 
 
 # direct methods
 .method public constructor <init>(Lae/z2$i;)V
     .locals 0
 
-    iput-object p1, p0, Lae/a3;->f:Lae/z2$i;
+    iput-object p1, p0, Lae/a3;->g:Lae/z2$i;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -29,9 +29,9 @@
     .line 1
     new-instance v0, Ll0/d;
 
-    iget-object v1, p0, Lae/a3;->f:Lae/z2$i;
+    iget-object v1, p0, Lae/a3;->g:Lae/z2$i;
 
-    iget-object v1, v1, Lae/z2$i;->f:Landroid/view/View;
+    iget-object v1, v1, Lae/z2$i;->g:Landroid/view/View;
 
     sget-object v2, Ll0/b;->k:Ll0/b$b;
 
@@ -43,7 +43,7 @@
     const-string v2, "spring"
 
     .line 3
-    invoke-static {v1, v2}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/high16 v3, 0x3f000000    # 0.5f
 
@@ -53,7 +53,7 @@
     iget-object v1, v0, Ll0/d;->q:Ll0/e;
 
     .line 5
-    invoke-static {v1, v2}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/high16 v4, 0x43fa0000    # 500.0f
 
@@ -65,9 +65,9 @@
     .line 7
     new-instance v0, Ll0/d;
 
-    iget-object v1, p0, Lae/a3;->f:Lae/z2$i;
+    iget-object v1, p0, Lae/a3;->g:Lae/z2$i;
 
-    iget-object v1, v1, Lae/z2$i;->f:Landroid/view/View;
+    iget-object v1, v1, Lae/z2$i;->g:Landroid/view/View;
 
     sget-object v5, Ll0/b;->l:Ll0/b$c;
 
@@ -77,7 +77,7 @@
     iget-object v1, v0, Ll0/d;->q:Ll0/e;
 
     .line 9
-    invoke-static {v1, v2}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v1, v3}, Ll0/e;->a(F)Ll0/e;
 
@@ -85,7 +85,7 @@
     iget-object v1, v0, Ll0/d;->q:Ll0/e;
 
     .line 11
-    invoke-static {v1, v2}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v1, v4}, Ll0/e;->b(F)Ll0/e;
 

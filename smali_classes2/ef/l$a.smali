@@ -29,9 +29,9 @@
 
 
 # instance fields
-.field public final f:Ljava/util/concurrent/Executor;
+.field public final g:Ljava/util/concurrent/Executor;
 
-.field public final g:Lef/b;
+.field public final h:Lef/b;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lef/b<",
@@ -57,10 +57,10 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lef/l$a;->f:Ljava/util/concurrent/Executor;
+    iput-object p1, p0, Lef/l$a;->g:Ljava/util/concurrent/Executor;
 
     .line 3
-    iput-object p2, p0, Lef/l$a;->g:Lef/b;
+    iput-object p2, p0, Lef/l$a;->h:Lef/b;
 
     return-void
 .end method
@@ -70,7 +70,7 @@
 .method public final cancel()V
     .locals 1
 
-    iget-object v0, p0, Lef/l$a;->g:Lef/b;
+    iget-object v0, p0, Lef/l$a;->h:Lef/b;
 
     invoke-interface {v0}, Lef/b;->cancel()V
 
@@ -90,9 +90,9 @@
     .line 1
     new-instance v0, Lef/l$a;
 
-    iget-object v1, p0, Lef/l$a;->f:Ljava/util/concurrent/Executor;
+    iget-object v1, p0, Lef/l$a;->g:Ljava/util/concurrent/Executor;
 
-    iget-object v2, p0, Lef/l$a;->g:Lef/b;
+    iget-object v2, p0, Lef/l$a;->h:Lef/b;
 
     invoke-interface {v2}, Lef/b;->clone()Lef/b;
 
@@ -114,9 +114,9 @@
     .line 2
     new-instance v0, Lef/l$a;
 
-    iget-object v1, p0, Lef/l$a;->f:Ljava/util/concurrent/Executor;
+    iget-object v1, p0, Lef/l$a;->g:Ljava/util/concurrent/Executor;
 
-    iget-object v2, p0, Lef/l$a;->g:Lef/b;
+    iget-object v2, p0, Lef/l$a;->h:Lef/b;
 
     invoke-interface {v2}, Lef/b;->clone()Lef/b;
 
@@ -127,12 +127,12 @@
     return-object v0
 .end method
 
-.method public final execute()Lef/c0;
+.method public final execute()Lef/b0;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lef/c0<",
+            "Lef/b0<",
             "TT;>;"
         }
     .end annotation
@@ -143,9 +143,9 @@
         }
     .end annotation
 
-    iget-object v0, p0, Lef/l$a;->g:Lef/b;
+    iget-object v0, p0, Lef/l$a;->h:Lef/b;
 
-    invoke-interface {v0}, Lef/b;->execute()Lef/c0;
+    invoke-interface {v0}, Lef/b;->execute()Lef/b0;
 
     move-result-object v0
 
@@ -155,7 +155,7 @@
 .method public final isCanceled()Z
     .locals 1
 
-    iget-object v0, p0, Lef/l$a;->g:Lef/b;
+    iget-object v0, p0, Lef/l$a;->h:Lef/b;
 
     invoke-interface {v0}, Lef/b;->isCanceled()Z
 
@@ -167,7 +167,7 @@
 .method public final request()Lokhttp3/Request;
     .locals 1
 
-    iget-object v0, p0, Lef/l$a;->g:Lef/b;
+    iget-object v0, p0, Lef/l$a;->h:Lef/b;
 
     invoke-interface {v0}, Lef/b;->request()Lokhttp3/Request;
 
@@ -186,7 +186,7 @@
         }
     .end annotation
 
-    iget-object v0, p0, Lef/l$a;->g:Lef/b;
+    iget-object v0, p0, Lef/l$a;->h:Lef/b;
 
     new-instance v1, Lef/l$a$a;
 

@@ -7,14 +7,14 @@
 
 
 # instance fields
-.field public final synthetic f:Lta/a;
+.field public final synthetic g:Lta/a;
 
 
 # direct methods
 .method public constructor <init>(Lta/a;)V
     .locals 0
 
-    iput-object p1, p0, Lta/e;->f:Lta/a;
+    iput-object p1, p0, Lta/e;->g:Lta/a;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -27,7 +27,7 @@
     .locals 0
 
     .line 1
-    iget-object p1, p0, Lta/e;->f:Lta/a;
+    iget-object p1, p0, Lta/e;->g:Lta/a;
 
     if-eqz p2, :cond_0
 

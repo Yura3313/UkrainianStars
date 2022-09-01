@@ -61,13 +61,13 @@
 
     move-result-object v0
 
-    check-cast v0, Lk3/v8;
+    check-cast v0, Lk3/w8;
 
     const-string v1, "/preissues/"
 
     const-string v2, "preissue_default_unique_key"
 
-    invoke-virtual {v0, v1, v2}, Lk3/v8;->e(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v0, v1, v2}, Lk3/w8;->e(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 

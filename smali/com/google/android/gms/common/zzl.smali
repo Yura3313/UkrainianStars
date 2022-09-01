@@ -16,14 +16,14 @@
 
 
 # instance fields
-.field public final f:Z
+.field public final g:Z
 
-.field public final g:Ljava/lang/String;
+.field public final h:Ljava/lang/String;
     .annotation runtime Ljavax/annotation/Nullable;
     .end annotation
 .end field
 
-.field public final h:I
+.field public final i:I
 
 
 # direct methods
@@ -46,10 +46,10 @@
     invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
 
     .line 2
-    iput-boolean p1, p0, Lcom/google/android/gms/common/zzl;->f:Z
+    iput-boolean p1, p0, Lcom/google/android/gms/common/zzl;->g:Z
 
     .line 3
-    iput-object p2, p0, Lcom/google/android/gms/common/zzl;->g:Ljava/lang/String;
+    iput-object p2, p0, Lcom/google/android/gms/common/zzl;->h:Ljava/lang/String;
 
     .line 4
     invoke-static {p3}, Lz1/u;->a(I)I
@@ -61,7 +61,7 @@
 
     move-result p1
 
-    iput p1, p0, Lcom/google/android/gms/common/zzl;->h:I
+    iput p1, p0, Lcom/google/android/gms/common/zzl;->i:I
 
     return-void
 .end method
@@ -71,7 +71,7 @@
 .method public final D2()Z
     .locals 1
 
-    iget-boolean v0, p0, Lcom/google/android/gms/common/zzl;->f:Z
+    iget-boolean v0, p0, Lcom/google/android/gms/common/zzl;->g:Z
 
     return v0
 .end method
@@ -81,7 +81,7 @@
     .annotation runtime Ljavax/annotation/Nullable;
     .end annotation
 
-    iget-object v0, p0, Lcom/google/android/gms/common/zzl;->g:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/android/gms/common/zzl;->h:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -89,7 +89,7 @@
 .method public final F2()I
     .locals 1
 
-    iget v0, p0, Lcom/google/android/gms/common/zzl;->h:I
+    iget v0, p0, Lcom/google/android/gms/common/zzl;->i:I
 
     invoke-static {v0}, Lz1/u;->a(I)I
 
@@ -109,7 +109,7 @@
     move-result v5
 
     .line 2
-    iget-boolean p2, p0, Lcom/google/android/gms/common/zzl;->f:Z
+    iget-boolean p2, p0, Lcom/google/android/gms/common/zzl;->g:Z
 
     const/4 v0, 0x1
 
@@ -122,7 +122,7 @@
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 5
-    iget-object p2, p0, Lcom/google/android/gms/common/zzl;->g:Ljava/lang/String;
+    iget-object p2, p0, Lcom/google/android/gms/common/zzl;->h:Ljava/lang/String;
 
     const/4 v0, 0x2
 
@@ -132,7 +132,7 @@
     invoke-static {p1, v0, p2, v1}, Le2/b;->m(Landroid/os/Parcel;ILjava/lang/String;Z)V
 
     .line 7
-    iget v3, p0, Lcom/google/android/gms/common/zzl;->h:I
+    iget v3, p0, Lcom/google/android/gms/common/zzl;->i:I
 
     const/4 v1, 0x3
 

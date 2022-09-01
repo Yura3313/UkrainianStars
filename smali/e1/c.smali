@@ -1,574 +1,24 @@
-.class public Le1/c;
+.class public final Le1/c;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads-lite@@19.3.0"
 
+# interfaces
+.implements Lk3/vs;
+
 
 # static fields
-.field public static final a:Lk3/jt;
-
-.field public static final b:[Ljava/lang/String;
-
-.field public static final c:[Ljava/lang/String;
+.field public static final g:Le1/c;
 
 
 # direct methods
 .method static synthetic constructor <clinit>()V
-    .locals 25
+    .locals 1
 
-    .line 1
-    new-instance v0, Lk3/jt;
+    new-instance v0, Le1/c;
 
-    const/4 v1, 0x0
+    invoke-direct {v0}, Le1/c;-><init>()V
 
-    invoke-direct {v0, v1}, Lk3/jt;-><init>(I)V
-
-    sput-object v0, Le1/c;->a:Lk3/jt;
-
-    const/16 v0, 0x30
-
-    new-array v1, v0, [Ljava/lang/String;
-
-    const-string v2, "firebase_conversion"
-
-    const/4 v3, 0x0
-
-    aput-object v2, v1, v3
-
-    const-string v2, "ga_conversion"
-
-    const/4 v4, 0x1
-
-    aput-object v2, v1, v4
-
-    const-string v2, "engagement_time_msec"
-
-    const/4 v5, 0x2
-
-    aput-object v2, v1, v5
-
-    const-string v2, "exposure_time"
-
-    const/4 v6, 0x3
-
-    aput-object v2, v1, v6
-
-    const-string v2, "ad_event_id"
-
-    const/4 v7, 0x4
-
-    aput-object v2, v1, v7
-
-    const-string v2, "ad_unit_id"
-
-    const/4 v8, 0x5
-
-    aput-object v2, v1, v8
-
-    const-string v2, "firebase_error"
-
-    const/4 v9, 0x6
-
-    aput-object v2, v1, v9
-
-    const-string v2, "ga_error"
-
-    const/4 v10, 0x7
-
-    aput-object v2, v1, v10
-
-    const-string v2, "firebase_error_value"
-
-    const/16 v11, 0x8
-
-    aput-object v2, v1, v11
-
-    const-string v2, "ga_error_value"
-
-    const/16 v12, 0x9
-
-    aput-object v2, v1, v12
-
-    const-string v2, "firebase_error_length"
-
-    const/16 v13, 0xa
-
-    aput-object v2, v1, v13
-
-    const-string v2, "ga_error_length"
-
-    const/16 v14, 0xb
-
-    aput-object v2, v1, v14
-
-    const-string v2, "firebase_event_origin"
-
-    const/16 v15, 0xc
-
-    aput-object v2, v1, v15
-
-    const-string v2, "ga_event_origin"
-
-    const/16 v16, 0xd
-
-    aput-object v2, v1, v16
-
-    const-string v2, "firebase_screen"
-
-    const/16 v17, 0xe
-
-    aput-object v2, v1, v17
-
-    const-string v2, "ga_screen"
-
-    const/16 v18, 0xf
-
-    aput-object v2, v1, v18
-
-    const-string v2, "firebase_screen_class"
-
-    const/16 v19, 0x10
-
-    aput-object v2, v1, v19
-
-    const-string v2, "ga_screen_class"
-
-    const/16 v20, 0x11
-
-    aput-object v2, v1, v20
-
-    const-string v2, "firebase_screen_id"
-
-    const/16 v21, 0x12
-
-    aput-object v2, v1, v21
-
-    const-string v2, "ga_screen_id"
-
-    const/16 v22, 0x13
-
-    aput-object v2, v1, v22
-
-    const-string v2, "firebase_previous_screen"
-
-    const/16 v23, 0x14
-
-    aput-object v2, v1, v23
-
-    const/16 v2, 0x15
-
-    const-string v24, "ga_previous_screen"
-
-    aput-object v24, v1, v2
-
-    const/16 v2, 0x16
-
-    const-string v24, "firebase_previous_class"
-
-    aput-object v24, v1, v2
-
-    const/16 v2, 0x17
-
-    const-string v24, "ga_previous_class"
-
-    aput-object v24, v1, v2
-
-    const/16 v2, 0x18
-
-    const-string v24, "firebase_previous_id"
-
-    aput-object v24, v1, v2
-
-    const/16 v2, 0x19
-
-    const-string v24, "ga_previous_id"
-
-    aput-object v24, v1, v2
-
-    const/16 v2, 0x1a
-
-    const-string v24, "message_device_time"
-
-    aput-object v24, v1, v2
-
-    const/16 v2, 0x1b
-
-    const-string v24, "message_id"
-
-    aput-object v24, v1, v2
-
-    const/16 v2, 0x1c
-
-    const-string v24, "message_name"
-
-    aput-object v24, v1, v2
-
-    const/16 v2, 0x1d
-
-    const-string v24, "message_time"
-
-    aput-object v24, v1, v2
-
-    const/16 v2, 0x1e
-
-    const-string v24, "previous_app_version"
-
-    aput-object v24, v1, v2
-
-    const/16 v2, 0x1f
-
-    const-string v24, "previous_os_version"
-
-    aput-object v24, v1, v2
-
-    const/16 v2, 0x20
-
-    const-string v24, "topic"
-
-    aput-object v24, v1, v2
-
-    const/16 v2, 0x21
-
-    const-string v24, "update_with_analytics"
-
-    aput-object v24, v1, v2
-
-    const/16 v2, 0x22
-
-    const-string v24, "previous_first_open_count"
-
-    aput-object v24, v1, v2
-
-    const/16 v2, 0x23
-
-    const-string v24, "system_app"
-
-    aput-object v24, v1, v2
-
-    const/16 v2, 0x24
-
-    const-string v24, "system_app_update"
-
-    aput-object v24, v1, v2
-
-    const/16 v2, 0x25
-
-    const-string v24, "previous_install_count"
-
-    aput-object v24, v1, v2
-
-    const/16 v2, 0x26
-
-    const-string v24, "ga_event_id"
-
-    aput-object v24, v1, v2
-
-    const/16 v2, 0x27
-
-    const-string v24, "ga_extra_params_ct"
-
-    aput-object v24, v1, v2
-
-    const/16 v2, 0x28
-
-    const-string v24, "ga_group_name"
-
-    aput-object v24, v1, v2
-
-    const/16 v2, 0x29
-
-    const-string v24, "ga_list_length"
-
-    aput-object v24, v1, v2
-
-    const/16 v2, 0x2a
-
-    const-string v24, "ga_index"
-
-    aput-object v24, v1, v2
-
-    const/16 v2, 0x2b
-
-    const-string v24, "ga_event_name"
-
-    aput-object v24, v1, v2
-
-    const/16 v2, 0x2c
-
-    const-string v24, "campaign_info_source"
-
-    aput-object v24, v1, v2
-
-    const/16 v2, 0x2d
-
-    const-string v24, "deferred_analytics_collection"
-
-    aput-object v24, v1, v2
-
-    const/16 v2, 0x2e
-
-    const-string v24, "session_number"
-
-    aput-object v24, v1, v2
-
-    const/16 v2, 0x2f
-
-    const-string v24, "session_id"
-
-    aput-object v24, v1, v2
-
-    .line 2
-    sput-object v1, Le1/c;->b:[Ljava/lang/String;
-
-    new-array v0, v0, [Ljava/lang/String;
-
-    const-string v1, "_c"
-
-    aput-object v1, v0, v3
-
-    const-string v1, "_c"
-
-    aput-object v1, v0, v4
-
-    const-string v1, "_et"
-
-    aput-object v1, v0, v5
-
-    const-string v1, "_xt"
-
-    aput-object v1, v0, v6
-
-    const-string v1, "_aeid"
-
-    aput-object v1, v0, v7
-
-    const-string v1, "_ai"
-
-    aput-object v1, v0, v8
-
-    const-string v1, "_err"
-
-    aput-object v1, v0, v9
-
-    const-string v1, "_err"
-
-    aput-object v1, v0, v10
-
-    const-string v1, "_ev"
-
-    aput-object v1, v0, v11
-
-    const-string v1, "_ev"
-
-    aput-object v1, v0, v12
-
-    const-string v1, "_el"
-
-    aput-object v1, v0, v13
-
-    const-string v1, "_el"
-
-    aput-object v1, v0, v14
-
-    const-string v1, "_o"
-
-    aput-object v1, v0, v15
-
-    const-string v1, "_o"
-
-    aput-object v1, v0, v16
-
-    const-string v1, "_sn"
-
-    aput-object v1, v0, v17
-
-    const-string v1, "_sn"
-
-    aput-object v1, v0, v18
-
-    const-string v1, "_sc"
-
-    aput-object v1, v0, v19
-
-    const-string v1, "_sc"
-
-    aput-object v1, v0, v20
-
-    const-string v1, "_si"
-
-    aput-object v1, v0, v21
-
-    const-string v1, "_si"
-
-    aput-object v1, v0, v22
-
-    const-string v1, "_pn"
-
-    aput-object v1, v0, v23
-
-    const/16 v1, 0x15
-
-    const-string v2, "_pn"
-
-    aput-object v2, v0, v1
-
-    const/16 v1, 0x16
-
-    const-string v2, "_pc"
-
-    aput-object v2, v0, v1
-
-    const/16 v1, 0x17
-
-    const-string v2, "_pc"
-
-    aput-object v2, v0, v1
-
-    const/16 v1, 0x18
-
-    const-string v2, "_pi"
-
-    aput-object v2, v0, v1
-
-    const/16 v1, 0x19
-
-    const-string v2, "_pi"
-
-    aput-object v2, v0, v1
-
-    const/16 v1, 0x1a
-
-    const-string v2, "_ndt"
-
-    aput-object v2, v0, v1
-
-    const/16 v1, 0x1b
-
-    const-string v2, "_nmid"
-
-    aput-object v2, v0, v1
-
-    const/16 v1, 0x1c
-
-    const-string v2, "_nmn"
-
-    aput-object v2, v0, v1
-
-    const/16 v1, 0x1d
-
-    const-string v2, "_nmt"
-
-    aput-object v2, v0, v1
-
-    const/16 v1, 0x1e
-
-    const-string v2, "_pv"
-
-    aput-object v2, v0, v1
-
-    const/16 v1, 0x1f
-
-    const-string v2, "_po"
-
-    aput-object v2, v0, v1
-
-    const/16 v1, 0x20
-
-    const-string v2, "_nt"
-
-    aput-object v2, v0, v1
-
-    const/16 v1, 0x21
-
-    const-string v2, "_uwa"
-
-    aput-object v2, v0, v1
-
-    const/16 v1, 0x22
-
-    const-string v2, "_pfo"
-
-    aput-object v2, v0, v1
-
-    const/16 v1, 0x23
-
-    const-string v2, "_sys"
-
-    aput-object v2, v0, v1
-
-    const/16 v1, 0x24
-
-    const-string v2, "_sysu"
-
-    aput-object v2, v0, v1
-
-    const/16 v1, 0x25
-
-    const-string v2, "_pin"
-
-    aput-object v2, v0, v1
-
-    const/16 v1, 0x26
-
-    const-string v2, "_eid"
-
-    aput-object v2, v0, v1
-
-    const/16 v1, 0x27
-
-    const-string v2, "_epc"
-
-    aput-object v2, v0, v1
-
-    const/16 v1, 0x28
-
-    const-string v2, "_gn"
-
-    aput-object v2, v0, v1
-
-    const/16 v1, 0x29
-
-    const-string v2, "_ll"
-
-    aput-object v2, v0, v1
-
-    const/16 v1, 0x2a
-
-    const-string v2, "_i"
-
-    aput-object v2, v0, v1
-
-    const/16 v1, 0x2b
-
-    const-string v2, "_en"
-
-    aput-object v2, v0, v1
-
-    const/16 v1, 0x2c
-
-    const-string v2, "_cis"
-
-    aput-object v2, v0, v1
-
-    const/16 v1, 0x2d
-
-    const-string v2, "_dac"
-
-    aput-object v2, v0, v1
-
-    const/16 v1, 0x2e
-
-    const-string v2, "_sno"
-
-    aput-object v2, v0, v1
-
-    const/16 v1, 0x2f
-
-    const-string v2, "_sid"
-
-    aput-object v2, v0, v1
-
-    .line 3
-    sput-object v0, Le1/c;->c:[Ljava/lang/String;
+    sput-object v0, Le1/c;->g:Le1/c;
 
     return-void
 .end method
@@ -576,17 +26,855 @@
 .method public synthetic constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
-.method public synthetic constructor <init>(ILjava/lang/String;Ljava/lang/String;Le1/c;)V
-    .locals 0
+.method public static a(Landroid/os/Bundle;)I
+    .locals 12
+
+    const/4 v0, 0x0
+
+    if-nez p0, :cond_0
+
+    return v0
+
+    .line 1
+    :cond_0
+    invoke-virtual {p0}, Landroid/os/Bundle;->size()I
+
+    move-result v1
+
+    if-nez v1, :cond_1
+
+    return v0
 
     .line 2
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    :cond_1
+    invoke-virtual {p0}, Landroid/os/Bundle;->keySet()Ljava/util/Set;
+
+    move-result-object v2
+
+    new-array v1, v1, [Ljava/lang/String;
+
+    invoke-interface {v2, v1}, Ljava/util/Set;->toArray([Ljava/lang/Object;)[Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, [Ljava/lang/String;
+
+    .line 3
+    invoke-static {v1}, Ljava/util/Arrays;->sort([Ljava/lang/Object;)V
+
+    .line 4
+    array-length v2, v1
+
+    const/4 v3, 0x1
+
+    const/4 v4, 0x0
+
+    const/4 v5, 0x1
+
+    :goto_0
+    if-ge v4, v2, :cond_10
+
+    aget-object v6, v1, v4
+
+    mul-int/lit8 v5, v5, 0x1f
+
+    .line 5
+    invoke-virtual {p0, v6}, Landroid/os/Bundle;->get(Ljava/lang/String;)Ljava/lang/Object;
+
+    move-result-object v6
+
+    if-eqz v6, :cond_f
+
+    .line 6
+    instance-of v7, v6, Landroid/os/Bundle;
+
+    if-eqz v7, :cond_2
+
+    .line 7
+    check-cast v6, Landroid/os/Bundle;
+
+    invoke-static {v6}, Le1/c;->a(Landroid/os/Bundle;)I
+
+    move-result v6
+
+    goto/16 :goto_6
+
+    .line 8
+    :cond_2
+    instance-of v7, v6, [B
+
+    if-eqz v7, :cond_3
+
+    .line 9
+    check-cast v6, [B
+
+    invoke-static {v6}, Ljava/util/Arrays;->hashCode([B)I
+
+    move-result v6
+
+    goto/16 :goto_6
+
+    .line 10
+    :cond_3
+    instance-of v7, v6, [C
+
+    if-eqz v7, :cond_4
+
+    .line 11
+    check-cast v6, [C
+
+    invoke-static {v6}, Ljava/util/Arrays;->hashCode([C)I
+
+    move-result v6
+
+    goto/16 :goto_6
+
+    .line 12
+    :cond_4
+    instance-of v7, v6, [S
+
+    if-eqz v7, :cond_5
+
+    .line 13
+    check-cast v6, [S
+
+    invoke-static {v6}, Ljava/util/Arrays;->hashCode([S)I
+
+    move-result v6
+
+    goto/16 :goto_6
+
+    .line 14
+    :cond_5
+    instance-of v7, v6, [F
+
+    if-eqz v7, :cond_6
+
+    .line 15
+    check-cast v6, [F
+
+    invoke-static {v6}, Ljava/util/Arrays;->hashCode([F)I
+
+    move-result v6
+
+    goto/16 :goto_6
+
+    .line 16
+    :cond_6
+    instance-of v7, v6, [Ljava/lang/CharSequence;
+
+    if-eqz v7, :cond_7
+
+    .line 17
+    check-cast v6, [Ljava/lang/CharSequence;
+
+    invoke-static {v6}, Ljava/util/Arrays;->hashCode([Ljava/lang/Object;)I
+
+    move-result v6
+
+    add-int/2addr v5, v6
+
+    goto :goto_7
+
+    .line 18
+    :cond_7
+    instance-of v7, v6, [Ljava/lang/Object;
+
+    if-eqz v7, :cond_a
+
+    .line 19
+    check-cast v6, [Ljava/lang/Object;
+
+    .line 20
+    array-length v7, v6
+
+    const/4 v8, 0x0
+
+    const/4 v9, 0x1
+
+    :goto_1
+    if-ge v8, v7, :cond_d
+
+    aget-object v10, v6, v8
+
+    mul-int/lit8 v9, v9, 0x1f
+
+    .line 21
+    instance-of v11, v10, Landroid/os/Bundle;
+
+    if-eqz v11, :cond_8
+
+    .line 22
+    check-cast v10, Landroid/os/Bundle;
+
+    invoke-static {v10}, Le1/c;->a(Landroid/os/Bundle;)I
+
+    move-result v10
+
+    goto :goto_2
+
+    :cond_8
+    if-eqz v10, :cond_9
+
+    .line 23
+    invoke-virtual {v10}, Ljava/lang/Object;->hashCode()I
+
+    move-result v10
+
+    :goto_2
+    add-int/2addr v10, v9
+
+    move v9, v10
+
+    :cond_9
+    add-int/lit8 v8, v8, 0x1
+
+    goto :goto_1
+
+    .line 24
+    :cond_a
+    instance-of v7, v6, Landroid/util/SparseArray;
+
+    if-eqz v7, :cond_e
+
+    .line 25
+    check-cast v6, Landroid/util/SparseArray;
+
+    .line 26
+    invoke-virtual {v6}, Landroid/util/SparseArray;->size()I
+
+    move-result v7
+
+    const/4 v8, 0x0
+
+    const/4 v9, 0x1
+
+    :goto_3
+    if-ge v8, v7, :cond_d
+
+    mul-int/lit8 v9, v9, 0x1f
+
+    .line 27
+    invoke-virtual {v6, v8}, Landroid/util/SparseArray;->keyAt(I)I
+
+    move-result v10
+
+    add-int/2addr v10, v9
+
+    mul-int/lit8 v10, v10, 0x1f
+
+    .line 28
+    invoke-virtual {v6, v8}, Landroid/util/SparseArray;->valueAt(I)Ljava/lang/Object;
+
+    move-result-object v9
+
+    .line 29
+    instance-of v11, v9, Landroid/os/Bundle;
+
+    if-eqz v11, :cond_b
+
+    .line 30
+    check-cast v9, Landroid/os/Bundle;
+
+    invoke-static {v9}, Le1/c;->a(Landroid/os/Bundle;)I
+
+    move-result v9
+
+    goto :goto_4
+
+    :cond_b
+    if-eqz v9, :cond_c
+
+    .line 31
+    invoke-virtual {v9}, Ljava/lang/Object;->hashCode()I
+
+    move-result v9
+
+    :goto_4
+    add-int/2addr v9, v10
+
+    goto :goto_5
+
+    :cond_c
+    move v9, v10
+
+    :goto_5
+    add-int/lit8 v8, v8, 0x1
+
+    goto :goto_3
+
+    :cond_d
+    add-int/2addr v5, v9
+
+    goto :goto_7
+
+    .line 32
+    :cond_e
+    invoke-virtual {v6}, Ljava/lang/Object;->hashCode()I
+
+    move-result v6
+
+    :goto_6
+    add-int/2addr v6, v5
+
+    move v5, v6
+
+    :cond_f
+    :goto_7
+    add-int/lit8 v4, v4, 0x1
+
+    goto/16 :goto_0
+
+    :cond_10
+    return v5
+.end method
+
+.method public static b(Landroid/os/Bundle;Landroid/os/Bundle;)Z
+    .locals 10
+
+    const/4 v0, 0x1
+
+    if-ne p0, p1, :cond_0
+
+    return v0
+
+    :cond_0
+    const/4 v1, 0x0
+
+    if-eqz p0, :cond_24
+
+    if-nez p1, :cond_1
+
+    goto/16 :goto_6
+
+    .line 1
+    :cond_1
+    invoke-virtual {p0}, Landroid/os/Bundle;->size()I
+
+    move-result v2
+
+    invoke-virtual {p1}, Landroid/os/Bundle;->size()I
+
+    move-result v3
+
+    if-eq v2, v3, :cond_2
+
+    return v1
+
+    .line 2
+    :cond_2
+    invoke-virtual {p0}, Landroid/os/Bundle;->keySet()Ljava/util/Set;
+
+    move-result-object v2
+
+    .line 3
+    invoke-virtual {p1}, Landroid/os/Bundle;->keySet()Ljava/util/Set;
+
+    move-result-object v3
+
+    invoke-interface {v2, v3}, Ljava/util/Set;->equals(Ljava/lang/Object;)Z
+
+    move-result v3
+
+    if-nez v3, :cond_3
+
+    return v1
+
+    .line 4
+    :cond_3
+    invoke-interface {v2}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
+
+    move-result-object v2
+
+    :cond_4
+    invoke-interface {v2}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v3
+
+    if-eqz v3, :cond_23
+
+    invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v3
+
+    check-cast v3, Ljava/lang/String;
+
+    .line 5
+    invoke-virtual {p0, v3}, Landroid/os/Bundle;->get(Ljava/lang/String;)Ljava/lang/Object;
+
+    move-result-object v4
+
+    .line 6
+    invoke-virtual {p1, v3}, Landroid/os/Bundle;->get(Ljava/lang/String;)Ljava/lang/Object;
+
+    move-result-object v3
+
+    if-nez v4, :cond_5
+
+    if-eqz v3, :cond_4
+
+    return v1
+
+    .line 7
+    :cond_5
+    instance-of v5, v4, Landroid/os/Bundle;
+
+    if-eqz v5, :cond_7
+
+    .line 8
+    instance-of v5, v3, Landroid/os/Bundle;
+
+    if-eqz v5, :cond_6
+
+    check-cast v4, Landroid/os/Bundle;
+
+    check-cast v3, Landroid/os/Bundle;
+
+    invoke-static {v4, v3}, Le1/c;->b(Landroid/os/Bundle;Landroid/os/Bundle;)Z
+
+    move-result v3
+
+    if-nez v3, :cond_4
+
+    :cond_6
+    return v1
+
+    .line 9
+    :cond_7
+    instance-of v5, v4, [B
+
+    if-eqz v5, :cond_9
+
+    .line 10
+    instance-of v5, v3, [B
+
+    if-eqz v5, :cond_8
+
+    check-cast v4, [B
+
+    check-cast v3, [B
+
+    invoke-static {v4, v3}, Ljava/util/Arrays;->equals([B[B)Z
+
+    move-result v3
+
+    if-nez v3, :cond_4
+
+    :cond_8
+    return v1
+
+    .line 11
+    :cond_9
+    instance-of v5, v4, [C
+
+    if-eqz v5, :cond_b
+
+    .line 12
+    instance-of v5, v3, [C
+
+    if-eqz v5, :cond_a
+
+    check-cast v4, [C
+
+    check-cast v3, [C
+
+    invoke-static {v4, v3}, Ljava/util/Arrays;->equals([C[C)Z
+
+    move-result v3
+
+    if-nez v3, :cond_4
+
+    :cond_a
+    return v1
+
+    .line 13
+    :cond_b
+    instance-of v5, v4, [S
+
+    if-eqz v5, :cond_d
+
+    .line 14
+    instance-of v5, v3, [S
+
+    if-eqz v5, :cond_c
+
+    check-cast v4, [S
+
+    check-cast v3, [S
+
+    .line 15
+    invoke-static {v4, v3}, Ljava/util/Arrays;->equals([S[S)Z
+
+    move-result v3
+
+    if-nez v3, :cond_4
+
+    :cond_c
+    return v1
+
+    .line 16
+    :cond_d
+    instance-of v5, v4, [F
+
+    if-eqz v5, :cond_f
+
+    .line 17
+    instance-of v5, v3, [F
+
+    if-eqz v5, :cond_e
+
+    check-cast v4, [F
+
+    check-cast v3, [F
+
+    .line 18
+    invoke-static {v4, v3}, Ljava/util/Arrays;->equals([F[F)Z
+
+    move-result v3
+
+    if-nez v3, :cond_4
+
+    :cond_e
+    return v1
+
+    .line 19
+    :cond_f
+    instance-of v5, v4, [Ljava/lang/CharSequence;
+
+    if-eqz v5, :cond_11
+
+    .line 20
+    instance-of v5, v3, [Ljava/lang/CharSequence;
+
+    if-eqz v5, :cond_10
+
+    check-cast v4, [Ljava/lang/CharSequence;
+
+    check-cast v3, [Ljava/lang/CharSequence;
+
+    .line 21
+    invoke-static {v4, v3}, Ljava/util/Arrays;->equals([Ljava/lang/Object;[Ljava/lang/Object;)Z
+
+    move-result v3
+
+    if-nez v3, :cond_4
+
+    :cond_10
+    return v1
+
+    .line 22
+    :cond_11
+    instance-of v5, v4, [Ljava/lang/Object;
+
+    if-eqz v5, :cond_19
+
+    .line 23
+    instance-of v5, v3, [Ljava/lang/Object;
+
+    if-eqz v5, :cond_18
+
+    check-cast v4, [Landroid/os/Parcelable;
+
+    check-cast v3, [Landroid/os/Parcelable;
+
+    if-eq v4, v3, :cond_17
+
+    .line 24
+    array-length v5, v4
+
+    .line 25
+    array-length v6, v3
+
+    if-eq v6, v5, :cond_12
+
+    goto :goto_1
+
+    :cond_12
+    const/4 v6, 0x0
+
+    :goto_0
+    if-ge v6, v5, :cond_17
+
+    .line 26
+    aget-object v7, v4, v6
+
+    .line 27
+    aget-object v8, v3, v6
+
+    if-nez v7, :cond_13
+
+    if-eqz v8, :cond_16
+
+    goto :goto_1
+
+    .line 28
+    :cond_13
+    instance-of v9, v7, Landroid/os/Bundle;
+
+    if-eqz v9, :cond_14
+
+    .line 29
+    instance-of v9, v8, Landroid/os/Bundle;
+
+    if-eqz v9, :cond_15
+
+    check-cast v7, Landroid/os/Bundle;
+
+    check-cast v8, Landroid/os/Bundle;
+
+    invoke-static {v7, v8}, Le1/c;->b(Landroid/os/Bundle;Landroid/os/Bundle;)Z
+
+    move-result v7
+
+    if-nez v7, :cond_16
+
+    goto :goto_1
+
+    .line 30
+    :cond_14
+    invoke-virtual {v7, v8}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+
+    move-result v7
+
+    if-nez v7, :cond_16
+
+    :cond_15
+    :goto_1
+    const/4 v3, 0x0
+
+    goto :goto_2
+
+    :cond_16
+    add-int/lit8 v6, v6, 0x1
+
+    goto :goto_0
+
+    :cond_17
+    const/4 v3, 0x1
+
+    :goto_2
+    if-nez v3, :cond_4
+
+    :cond_18
+    return v1
+
+    .line 31
+    :cond_19
+    instance-of v5, v4, Landroid/util/SparseArray;
+
+    if-eqz v5, :cond_22
+
+    .line 32
+    instance-of v5, v3, Landroid/util/SparseArray;
+
+    if-eqz v5, :cond_21
+
+    check-cast v4, Landroid/util/SparseArray;
+
+    check-cast v3, Landroid/util/SparseArray;
+
+    if-eq v4, v3, :cond_20
+
+    .line 33
+    invoke-virtual {v4}, Landroid/util/SparseArray;->size()I
+
+    move-result v5
+
+    .line 34
+    invoke-virtual {v3}, Landroid/util/SparseArray;->size()I
+
+    move-result v6
+
+    if-eq v6, v5, :cond_1a
+
+    goto :goto_4
+
+    :cond_1a
+    const/4 v6, 0x0
+
+    :goto_3
+    if-ge v6, v5, :cond_20
+
+    .line 35
+    invoke-virtual {v4, v6}, Landroid/util/SparseArray;->keyAt(I)I
+
+    move-result v7
+
+    invoke-virtual {v3, v6}, Landroid/util/SparseArray;->keyAt(I)I
+
+    move-result v8
+
+    if-eq v7, v8, :cond_1b
+
+    goto :goto_4
+
+    .line 36
+    :cond_1b
+    invoke-virtual {v4, v6}, Landroid/util/SparseArray;->valueAt(I)Ljava/lang/Object;
+
+    move-result-object v7
+
+    .line 37
+    invoke-virtual {v3, v6}, Landroid/util/SparseArray;->valueAt(I)Ljava/lang/Object;
+
+    move-result-object v8
+
+    if-nez v7, :cond_1c
+
+    if-eqz v8, :cond_1f
+
+    goto :goto_4
+
+    .line 38
+    :cond_1c
+    instance-of v9, v7, Landroid/os/Bundle;
+
+    if-eqz v9, :cond_1d
+
+    .line 39
+    instance-of v9, v8, Landroid/os/Bundle;
+
+    if-eqz v9, :cond_1e
+
+    check-cast v7, Landroid/os/Bundle;
+
+    check-cast v8, Landroid/os/Bundle;
+
+    invoke-static {v7, v8}, Le1/c;->b(Landroid/os/Bundle;Landroid/os/Bundle;)Z
+
+    move-result v7
+
+    if-nez v7, :cond_1f
+
+    goto :goto_4
+
+    .line 40
+    :cond_1d
+    invoke-virtual {v7, v8}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+
+    move-result v7
+
+    if-nez v7, :cond_1f
+
+    :cond_1e
+    :goto_4
+    const/4 v3, 0x0
+
+    goto :goto_5
+
+    :cond_1f
+    add-int/lit8 v6, v6, 0x1
+
+    goto :goto_3
+
+    :cond_20
+    const/4 v3, 0x1
+
+    :goto_5
+    if-nez v3, :cond_4
+
+    :cond_21
+    return v1
+
+    .line 41
+    :cond_22
+    invoke-virtual {v4, v3}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+
+    move-result v3
+
+    if-nez v3, :cond_4
+
+    return v1
+
+    :cond_23
+    return v0
+
+    :cond_24
+    :goto_6
+    return v1
+.end method
+
+.method public static c(Ljava/lang/Object;Ljava/util/concurrent/Executor;)Ljava/util/Set;
+    .locals 1
+
+    .line 1
+    sget-object v0, Lk3/t0;->a:Lk3/j0;
+
+    invoke-virtual {v0}, Lk3/j0;->a()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Ljava/lang/Boolean;
+
+    invoke-virtual {v0}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    .line 2
+    new-instance v0, Lk3/qt;
+
+    invoke-direct {v0, p0, p1}, Lk3/qt;-><init>(Ljava/lang/Object;Ljava/util/concurrent/Executor;)V
+
+    invoke-static {v0}, Ljava/util/Collections;->singleton(Ljava/lang/Object;)Ljava/util/Set;
+
+    move-result-object p0
+
+    return-object p0
+
+    .line 3
+    :cond_0
+    invoke-static {}, Ljava/util/Collections;->emptySet()Ljava/util/Set;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static e(I)I
+    .locals 4
+
+    int-to-long v0, p0
+
+    const-wide/32 v2, -0x3361d2af
+
+    mul-long v0, v0, v2
+
+    long-to-int p0, v0
+
+    const/16 v0, 0xf
+
+    invoke-static {p0, v0}, Ljava/lang/Integer;->rotateLeft(II)I
+
+    move-result p0
+
+    int-to-long v0, p0
+
+    const-wide/32 v2, 0x1b873593
+
+    mul-long v0, v0, v2
+
+    long-to-int p0, v0
+
+    return p0
+.end method
+
+
+# virtual methods
+.method public d(Ljava/lang/Object;)V
+    .locals 0
+
+    .line 1
+    check-cast p1, Lj1/k;
+
+    .line 2
+    invoke-interface {p1}, Lj1/k;->I()V
 
     return-void
 .end method

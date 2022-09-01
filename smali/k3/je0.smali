@@ -1,156 +1,153 @@
-.class public final synthetic Lk3/je0;
+.class public final Lk3/je0;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Ljava/util/concurrent/Callable;
+.implements Lk3/ad0;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Lk3/ad0<",
+        "Lorg/json/JSONObject;",
+        ">;"
+    }
+.end annotation
 
 
 # instance fields
-.field public final synthetic a:I
-
-.field public final b:Ljava/lang/Object;
+.field public final a:Landroid/location/Location;
 
 
 # direct methods
-.method public synthetic constructor <init>(Ljava/lang/Object;I)V
+.method public constructor <init>(Landroid/location/Location;)V
     .locals 0
 
-    iput p2, p0, Lk3/je0;->a:I
-
-    iput-object p1, p0, Lk3/je0;->b:Ljava/lang/Object;
-
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    iput-object p1, p0, Lk3/je0;->a:Landroid/location/Location;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final call()Ljava/lang/Object;
-    .locals 10
-
-    iget v0, p0, Lk3/je0;->a:I
-
-    packed-switch v0, :pswitch_data_0
-
-    goto :goto_0
+.method public final b(Ljava/lang/Object;)V
+    .locals 9
 
     .line 1
-    :pswitch_0
-    iget-object v0, p0, Lk3/je0;->b:Ljava/lang/Object;
-
-    check-cast v0, Lk3/he0;
+    check-cast p1, Lorg/json/JSONObject;
 
     .line 2
-    new-instance v1, Lk3/xc0;
+    :try_start_0
+    iget-object v0, p0, Lk3/je0;->a:Landroid/location/Location;
 
-    iget-object v2, v0, Lk3/he0;->a:Lk3/f;
-
-    iget-object v0, v0, Lk3/he0;->c:Ljava/util/List;
-
-    invoke-virtual {v2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    if-nez v0, :cond_0
+    if-eqz v0, :cond_0
 
     .line 3
-    invoke-static {}, Ljava/util/Collections;->emptyList()Ljava/util/List;
+    new-instance v0, Lorg/json/JSONObject;
 
-    move-result-object v0
-
-    :cond_0
-    const/4 v2, 0x1
+    invoke-direct {v0}, Lorg/json/JSONObject;-><init>()V
 
     .line 4
-    invoke-direct {v1, v0, v2}, Lk3/xc0;-><init>(Ljava/lang/Object;I)V
+    iget-object v1, p0, Lk3/je0;->a:Landroid/location/Location;
 
-    return-object v1
+    invoke-virtual {v1}, Landroid/location/Location;->getAccuracy()F
+
+    move-result v1
+
+    const/high16 v2, 0x447a0000    # 1000.0f
+
+    mul-float v1, v1, v2
+
+    invoke-static {v1}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
+
+    move-result-object v1
 
     .line 5
-    :goto_0
-    iget-object v0, p0, Lk3/je0;->b:Ljava/lang/Object;
+    iget-object v2, p0, Lk3/je0;->a:Landroid/location/Location;
 
-    check-cast v0, Lk3/oa0;
+    invoke-virtual {v2}, Landroid/location/Location;->getTime()J
+
+    move-result-wide v2
+
+    const-wide/16 v4, 0x3e8
+
+    mul-long v2, v2, v4
+
+    invoke-static {v2, v3}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+
+    move-result-object v2
 
     .line 6
-    iget-object v0, v0, Lk3/oa0;->b:Landroid/content/Context;
+    iget-object v3, p0, Lk3/je0;->a:Landroid/location/Location;
 
-    const-string v1, "audio"
+    invoke-virtual {v3}, Landroid/location/Location;->getLatitude()D
+
+    move-result-wide v3
+
+    const-wide v5, 0x416312d000000000L    # 1.0E7
+
+    mul-double v3, v3, v5
+
+    double-to-long v3, v3
+
+    invoke-static {v3, v4}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+
+    move-result-object v3
 
     .line 7
-    invoke-virtual {v0, v1}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    iget-object v4, p0, Lk3/je0;->a:Landroid/location/Location;
 
-    move-result-object v0
+    invoke-virtual {v4}, Landroid/location/Location;->getLongitude()D
 
-    check-cast v0, Landroid/media/AudioManager;
+    move-result-wide v7
+
+    mul-double v7, v7, v5
+
+    double-to-long v4, v7
+
+    invoke-static {v4, v5}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+
+    move-result-object v4
+
+    const-string v5, "radius"
 
     .line 8
-    invoke-virtual {v0}, Landroid/media/AudioManager;->getMode()I
+    invoke-virtual {v0, v5, v1}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
-    move-result v2
+    const-string v1, "lat"
 
     .line 9
-    invoke-virtual {v0}, Landroid/media/AudioManager;->isMusicActive()Z
+    invoke-virtual {v0, v1, v3}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
-    move-result v3
+    const-string v1, "long"
 
     .line 10
-    invoke-virtual {v0}, Landroid/media/AudioManager;->isSpeakerphoneOn()Z
+    invoke-virtual {v0, v1, v4}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
-    move-result v4
-
-    const/4 v1, 0x3
+    const-string v1, "time"
 
     .line 11
-    invoke-virtual {v0, v1}, Landroid/media/AudioManager;->getStreamVolume(I)I
+    invoke-virtual {v0, v1, v2}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
-    move-result v5
+    const-string v1, "uule"
 
     .line 12
-    invoke-virtual {v0}, Landroid/media/AudioManager;->getRingerMode()I
+    invoke-virtual {p1, v1, v0}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
+    :try_end_0
+    .catch Lorg/json/JSONException; {:try_start_0 .. :try_end_0} :catch_0
 
-    move-result v6
-
-    const/4 v1, 0x2
+    :cond_0
+    return-void
 
     .line 13
-    invoke-virtual {v0, v1}, Landroid/media/AudioManager;->getStreamVolume(I)I
+    :catch_0
+    invoke-static {}, Lcom/google/android/gms/ads/a;->k()Z
 
-    move-result v7
-
-    .line 14
-    sget-object v0, Li1/o;->B:Li1/o;
-
-    iget-object v0, v0, Li1/o;->h:Lk3/qb;
-
-    .line 15
-    invoke-virtual {v0}, Lk3/qb;->b()F
-
-    move-result v8
-
-    .line 16
-    sget-object v0, Li1/o;->B:Li1/o;
-
-    iget-object v0, v0, Li1/o;->h:Lk3/qb;
-
-    .line 17
-    invoke-virtual {v0}, Lk3/qb;->c()Z
-
-    move-result v9
-
-    .line 18
-    new-instance v0, Lk3/ma0;
-
-    move-object v1, v0
-
-    invoke-direct/range {v1 .. v9}, Lk3/ma0;-><init>(IZZIIIFZ)V
-
-    return-object v0
-
-    nop
-
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+    return-void
 .end method

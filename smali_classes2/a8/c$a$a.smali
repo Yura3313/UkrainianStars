@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field public final synthetic f:La8/c$a;
+.field public final synthetic g:La8/c$a;
 
 
 # direct methods
 .method public constructor <init>(La8/c$a;)V
     .locals 0
 
-    iput-object p1, p0, La8/c$a$a;->f:La8/c$a;
+    iput-object p1, p0, La8/c$a$a;->g:La8/c$a;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -47,7 +47,7 @@
 
     .line 1
     :try_start_0
-    iget-object v4, p0, La8/c$a$a;->f:La8/c$a;
+    iget-object v4, p0, La8/c$a$a;->g:La8/c$a;
 
     iget-object v4, v4, La8/c$a;->b:La8/g;
 
@@ -66,7 +66,7 @@
     aput-object v4, v1, v3
 
     .line 2
-    iget-object v4, p0, La8/c$a$a;->f:La8/c$a;
+    iget-object v4, p0, La8/c$a$a;->g:La8/c$a;
 
     iget-object v4, v4, La8/c$a;->b:La8/g;
 
@@ -81,7 +81,7 @@
     const-string v4, "Caught unhandled exception inside BackgroundThreader"
 
     .line 3
-    invoke-static {v3, v0, v4, v1, v2}, Landroidx/savedstate/d;->n(ILjava/lang/String;Ljava/lang/String;[Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v3, v0, v4, v1, v2}, Le5/i;->m(ILjava/lang/String;Ljava/lang/String;[Ljava/lang/Throwable;[Lz9/a;)V
 
     goto :goto_1
 
@@ -89,7 +89,7 @@
     move-exception v4
 
     .line 4
-    iget-object v5, v4, Lcom/helpshift/common/exception/RootAPIException;->g:Ljava/lang/Exception;
+    iget-object v5, v4, Lcom/helpshift/common/exception/RootAPIException;->h:Ljava/lang/Exception;
 
     if-eqz v5, :cond_0
 
@@ -106,7 +106,7 @@
     const/4 v5, 0x0
 
     .line 5
-    iget-object v6, v4, Lcom/helpshift/common/exception/RootAPIException;->f:Ljava/lang/String;
+    iget-object v6, v4, Lcom/helpshift/common/exception/RootAPIException;->g:Ljava/lang/String;
 
     if-nez v6, :cond_1
 
@@ -114,7 +114,7 @@
 
     .line 6
     :cond_1
-    iget-object v7, v4, Lcom/helpshift/common/exception/RootAPIException;->h:Ld8/a;
+    iget-object v7, v4, Lcom/helpshift/common/exception/RootAPIException;->i:Ld8/a;
 
     instance-of v8, v7, Ld8/b;
 
@@ -123,12 +123,12 @@
     .line 7
     check-cast v7, Ld8/b;
 
-    iget-object v5, v7, Ld8/b;->g:Ljava/lang/String;
+    iget-object v5, v7, Ld8/b;->h:Ljava/lang/String;
 
     const-string v7, "route"
 
     .line 8
-    invoke-static {v7, v5}, Lz9/b;->b(Ljava/lang/String;Ljava/lang/String;)Lz9/a;
+    invoke-static {v7, v5}, Lid/h;->c(Ljava/lang/String;Ljava/lang/String;)Lz9/a;
 
     move-result-object v5
 
@@ -136,11 +136,11 @@
     new-array v1, v1, [Ljava/lang/Throwable;
 
     .line 9
-    iget-object v4, v4, Lcom/helpshift/common/exception/RootAPIException;->g:Ljava/lang/Exception;
+    iget-object v4, v4, Lcom/helpshift/common/exception/RootAPIException;->h:Ljava/lang/Exception;
 
     aput-object v4, v1, v3
 
-    iget-object v4, p0, La8/c$a$a;->f:La8/c$a;
+    iget-object v4, p0, La8/c$a$a;->g:La8/c$a;
 
     iget-object v4, v4, La8/c$a;->b:La8/g;
 
@@ -152,7 +152,7 @@
 
     aput-object v5, v2, v3
 
-    invoke-static {v0, v6, v1, v2}, Landroidx/savedstate/d;->h(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v0, v6, v1, v2}, Le5/i;->j(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Throwable;[Lz9/a;)V
 
     :cond_3
     :goto_1

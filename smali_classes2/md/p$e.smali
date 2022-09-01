@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field public final synthetic f:Lmd/p;
+.field public final synthetic g:Lmd/p;
 
 
 # direct methods
 .method public constructor <init>(Lmd/p;)V
     .locals 0
 
-    iput-object p1, p0, Lmd/p$e;->f:Lmd/p;
+    iput-object p1, p0, Lmd/p$e;->g:Lmd/p;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -45,7 +45,7 @@
     move-result-object v0
 
     .line 2
-    iget-object v0, v0, Lae/u;->m:La5/d0;
+    iget-object v0, v0, Lae/u;->m:Lpe/a;
 
     const-string v1, "Log In Progress Step 1 - Phone"
 
@@ -56,12 +56,12 @@
     const/16 v4, 0x18
 
     .line 3
-    invoke-static {v0, v1, v2, v3, v4}, La5/d0;->a(La5/d0;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;I)V
+    invoke-static {v0, v1, v2, v3, v4}, Lpe/a;->e(Lpe/a;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;I)V
 
     .line 4
-    iget-object v0, p0, Lmd/p$e;->f:Lmd/p;
+    iget-object v0, p0, Lmd/p$e;->g:Lmd/p;
 
-    invoke-static {v0}, Lcom/android/billingclient/api/c0;->e(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
+    invoke-static {v0}, Lcom/android/billingclient/api/b0;->f(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
 
     move-result-object v0
 
@@ -69,9 +69,9 @@
 
     const-string v1, "it"
 
-    invoke-static {p1, v1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v1}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-static {v0, p1}, Lmd/g;->i(Lcom/supercell/id/ui/MainActivity;Landroid/view/View;)V
+    invoke-static {v0, p1}, Lmd/g;->b(Lcom/supercell/id/ui/MainActivity;Landroid/view/View;)V
 
     :cond_0
     return-void

@@ -7,11 +7,11 @@
 
 
 # instance fields
-.field public final f:Ljava/lang/Comparable;
+.field public final g:Ljava/lang/Comparable;
 
-.field public g:Ljava/lang/Object;
+.field public h:Ljava/lang/Object;
 
-.field public final synthetic h:Lr3/w3;
+.field public final synthetic i:Lr3/w3;
 
 
 # direct methods
@@ -19,15 +19,15 @@
     .locals 0
 
     .line 5
-    iput-object p1, p0, Lr3/a4;->h:Lr3/w3;
+    iput-object p1, p0, Lr3/a4;->i:Lr3/w3;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 6
-    iput-object p2, p0, Lr3/a4;->f:Ljava/lang/Comparable;
+    iput-object p2, p0, Lr3/a4;->g:Ljava/lang/Comparable;
 
     .line 7
-    iput-object p3, p0, Lr3/a4;->g:Ljava/lang/Object;
+    iput-object p3, p0, Lr3/a4;->h:Ljava/lang/Object;
 
     return-void
 .end method
@@ -47,15 +47,15 @@
     move-result-object p2
 
     .line 2
-    iput-object p1, p0, Lr3/a4;->h:Lr3/w3;
+    iput-object p1, p0, Lr3/a4;->i:Lr3/w3;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 3
-    iput-object v0, p0, Lr3/a4;->f:Ljava/lang/Comparable;
+    iput-object v0, p0, Lr3/a4;->g:Ljava/lang/Comparable;
 
     .line 4
-    iput-object p2, p0, Lr3/a4;->g:Ljava/lang/Object;
+    iput-object p2, p0, Lr3/a4;->h:Ljava/lang/Object;
 
     return-void
 .end method
@@ -69,10 +69,10 @@
     check-cast p1, Lr3/a4;
 
     .line 2
-    iget-object v0, p0, Lr3/a4;->f:Ljava/lang/Comparable;
+    iget-object v0, p0, Lr3/a4;->g:Ljava/lang/Comparable;
 
     .line 3
-    iget-object p1, p1, Lr3/a4;->f:Ljava/lang/Comparable;
+    iget-object p1, p1, Lr3/a4;->g:Ljava/lang/Comparable;
 
     .line 4
     invoke-interface {v0, p1}, Ljava/lang/Comparable;->compareTo(Ljava/lang/Object;)I
@@ -106,7 +106,7 @@
     check-cast p1, Ljava/util/Map$Entry;
 
     .line 3
-    iget-object v1, p0, Lr3/a4;->f:Ljava/lang/Comparable;
+    iget-object v1, p0, Lr3/a4;->g:Ljava/lang/Comparable;
 
     invoke-interface {p1}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
@@ -135,7 +135,7 @@
     if-eqz v1, :cond_6
 
     .line 5
-    iget-object v1, p0, Lr3/a4;->g:Ljava/lang/Object;
+    iget-object v1, p0, Lr3/a4;->h:Ljava/lang/Object;
 
     invoke-interface {p1}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
@@ -172,7 +172,7 @@
 .method public final synthetic getKey()Ljava/lang/Object;
     .locals 1
 
-    iget-object v0, p0, Lr3/a4;->f:Ljava/lang/Comparable;
+    iget-object v0, p0, Lr3/a4;->g:Ljava/lang/Comparable;
 
     return-object v0
 .end method
@@ -180,7 +180,7 @@
 .method public final getValue()Ljava/lang/Object;
     .locals 1
 
-    iget-object v0, p0, Lr3/a4;->g:Ljava/lang/Object;
+    iget-object v0, p0, Lr3/a4;->h:Ljava/lang/Object;
 
     return-object v0
 .end method
@@ -188,7 +188,7 @@
 .method public final hashCode()I
     .locals 3
 
-    iget-object v0, p0, Lr3/a4;->f:Ljava/lang/Comparable;
+    iget-object v0, p0, Lr3/a4;->g:Ljava/lang/Comparable;
 
     const/4 v1, 0x0
 
@@ -204,7 +204,7 @@
     move-result v0
 
     :goto_0
-    iget-object v2, p0, Lr3/a4;->g:Ljava/lang/Object;
+    iget-object v2, p0, Lr3/a4;->h:Ljava/lang/Object;
 
     if-nez v2, :cond_1
 
@@ -225,18 +225,18 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lr3/a4;->h:Lr3/w3;
+    iget-object v0, p0, Lr3/a4;->i:Lr3/w3;
 
-    sget v1, Lr3/w3;->l:I
+    sget v1, Lr3/w3;->m:I
 
     .line 2
     invoke-virtual {v0}, Lr3/w3;->h()V
 
     .line 3
-    iget-object v0, p0, Lr3/a4;->g:Ljava/lang/Object;
+    iget-object v0, p0, Lr3/a4;->h:Ljava/lang/Object;
 
     .line 4
-    iput-object p1, p0, Lr3/a4;->g:Ljava/lang/Object;
+    iput-object p1, p0, Lr3/a4;->h:Ljava/lang/Object;
 
     return-object v0
 .end method
@@ -245,13 +245,13 @@
     .locals 4
 
     .line 1
-    iget-object v0, p0, Lr3/a4;->f:Ljava/lang/Comparable;
+    iget-object v0, p0, Lr3/a4;->g:Ljava/lang/Comparable;
 
     invoke-static {v0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v0
 
-    iget-object v1, p0, Lr3/a4;->g:Ljava/lang/Object;
+    iget-object v1, p0, Lr3/a4;->h:Ljava/lang/Object;
 
     invoke-static {v1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
 
@@ -272,7 +272,7 @@
     const-string v2, "="
 
     .line 2
-    invoke-static {v3, v0, v2, v1}, Landroid/support/v4/media/b;->a(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v3, v0, v2, v1}, Li1/j;->a(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 

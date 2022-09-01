@@ -106,7 +106,7 @@
     check-cast p0, Lcom/google/crypto/tink/shaded/protobuf/n$a;
 
     .line 3
-    iget-object v0, p0, Lcom/google/crypto/tink/shaded/protobuf/n$a;->f:Lcom/google/crypto/tink/shaded/protobuf/n;
+    iget-object v0, p0, Lcom/google/crypto/tink/shaded/protobuf/n$a;->g:Lcom/google/crypto/tink/shaded/protobuf/n;
 
     .line 4
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;

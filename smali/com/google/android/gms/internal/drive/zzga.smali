@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field public final f:Lcom/google/android/gms/internal/drive/zzgo;
+.field public final g:Lcom/google/android/gms/internal/drive/zzgo;
 
 
 # direct methods
@@ -38,7 +38,7 @@
     invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lcom/google/android/gms/internal/drive/zzga;->f:Lcom/google/android/gms/internal/drive/zzgo;
+    iput-object p1, p0, Lcom/google/android/gms/internal/drive/zzga;->g:Lcom/google/android/gms/internal/drive/zzgo;
 
     return-void
 .end method
@@ -58,7 +58,7 @@
     const/4 v1, 0x2
 
     .line 2
-    iget-object v2, p0, Lcom/google/android/gms/internal/drive/zzga;->f:Lcom/google/android/gms/internal/drive/zzgo;
+    iget-object v2, p0, Lcom/google/android/gms/internal/drive/zzga;->g:Lcom/google/android/gms/internal/drive/zzgo;
 
     const/4 v3, 0x0
 

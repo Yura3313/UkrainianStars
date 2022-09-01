@@ -48,7 +48,7 @@
     .locals 1
 
     .line 1
-    sget-object v0, Lo0/c;->m:Ljava/util/concurrent/ThreadPoolExecutor;
+    sget-object v0, Lo0/c;->n:Ljava/util/concurrent/ThreadPoolExecutor;
 
     .line 2
     invoke-direct {p0, p1}, Lo0/b;-><init>(Landroid/content/Context;)V
@@ -264,12 +264,12 @@
     iget-object v0, p0, Lo0/a;->h:Lo0/a$a;
 
     .line 9
-    iget-object v4, v0, Lo0/c;->i:Ljava/util/concurrent/atomic/AtomicBoolean;
+    iget-object v4, v0, Lo0/c;->j:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     invoke-virtual {v4, v2}, Ljava/util/concurrent/atomic/AtomicBoolean;->set(Z)V
 
     .line 10
-    iget-object v0, v0, Lo0/c;->g:Lo0/c$c;
+    iget-object v0, v0, Lo0/c;->h:Lo0/c$c;
 
     invoke-virtual {v0, v1}, Ljava/util/concurrent/FutureTask;->cancel(Z)Z
 
@@ -448,7 +448,7 @@
     iget-object v2, p0, Lo0/a;->g:Ljava/util/concurrent/Executor;
 
     .line 4
-    iget v3, v1, Lo0/c;->h:I
+    iget v3, v1, Lo0/c;->i:I
 
     const/4 v4, 0x2
 
@@ -457,7 +457,7 @@
     if-eq v3, v5, :cond_2
 
     .line 5
-    iget v0, v1, Lo0/c;->h:I
+    iget v0, v1, Lo0/c;->i:I
 
     invoke-static {v0}, Lp/g;->b(I)I
 
@@ -498,15 +498,15 @@
 
     .line 9
     :cond_2
-    iput v4, v1, Lo0/c;->h:I
+    iput v4, v1, Lo0/c;->i:I
 
     .line 10
-    iget-object v3, v1, Lo0/c;->f:Lo0/c$b;
+    iget-object v3, v1, Lo0/c;->g:Lo0/c$b;
 
     iput-object v0, v3, Lo0/c$f;->a:[Ljava/lang/Object;
 
     .line 11
-    iget-object v0, v1, Lo0/c;->g:Lo0/c$c;
+    iget-object v0, v1, Lo0/c;->h:Lo0/c$c;
 
     invoke-interface {v2, v0}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
 

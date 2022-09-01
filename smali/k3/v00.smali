@@ -2,295 +2,492 @@
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
+# interfaces
+.implements Lk3/vi0;
+
 
 # instance fields
-.field public final a:Ljava/lang/String;
-
-.field public final b:Ljava/util/concurrent/Executor;
-
-.field public final c:Lk3/id;
-
-.field public final d:Ljava/util/HashMap;
+.field public final g:Ljava/util/HashMap;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Map<",
-            "Ljava/lang/String;",
-            "Ljava/lang/String;",
+            "Lk3/ti0;",
+            "Ljava/lang/Long;",
             ">;"
         }
     .end annotation
 .end field
 
-.field public final e:Z
+.field public final h:Lk3/s00;
+
+.field public final i:Ll2/c;
+
+.field public final j:Ljava/util/HashMap;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/Map<",
+            "Lk3/ti0;",
+            "Lk3/u00;",
+            ">;"
+        }
+    .end annotation
+.end field
 
 
 # direct methods
-.method public constructor <init>(Ljava/util/concurrent/Executor;Lk3/id;Landroid/content/Context;Lcom/google/android/gms/internal/ads/zzbbg;)V
-    .locals 5
+.method public constructor <init>(Lk3/s00;Ljava/util/Set;Ll2/c;)V
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lk3/s00;",
+            "Ljava/util/Set<",
+            "Lk3/u00;",
+            ">;",
+            "Ll2/c;",
+            ")V"
+        }
+    .end annotation
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    sget-object v0, Lk3/o0;->b:Lk3/k0;
-
-    invoke-virtual {v0}, Lk3/k0;->a()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Ljava/lang/String;
-
-    iput-object v0, p0, Lk3/v00;->a:Ljava/lang/String;
+    iput-object p1, p0, Lk3/v00;->h:Lk3/s00;
 
     .line 3
-    new-instance v0, Ljava/util/HashMap;
+    new-instance p1, Ljava/util/HashMap;
 
-    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
+    invoke-direct {p1}, Ljava/util/HashMap;-><init>()V
 
-    iput-object v0, p0, Lk3/v00;->d:Ljava/util/HashMap;
+    iput-object p1, p0, Lk3/v00;->g:Ljava/util/HashMap;
 
     .line 4
-    iput-object p1, p0, Lk3/v00;->b:Ljava/util/concurrent/Executor;
+    new-instance p1, Ljava/util/HashMap;
+
+    invoke-direct {p1}, Ljava/util/HashMap;-><init>()V
+
+    iput-object p1, p0, Lk3/v00;->j:Ljava/util/HashMap;
 
     .line 5
-    iput-object p2, p0, Lk3/v00;->c:Lk3/id;
-
-    .line 6
-    invoke-virtual {p3}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
-
-    move-result-object p1
-
-    .line 7
-    sget-object p2, Lk3/l51;->j:Lk3/l51;
-
-    iget-object p2, p2, Lk3/l51;->h:Ljava/util/Random;
-
-    .line 8
-    invoke-virtual {p2}, Ljava/util/Random;->nextFloat()F
-
-    move-result p2
-
-    float-to-double v1, p2
-
-    sget-object p2, Lk3/o0;->a:Lk3/k0;
-
-    invoke-virtual {p2}, Lk3/k0;->a()Ljava/lang/Object;
-
-    move-result-object p2
-
-    check-cast p2, Ljava/lang/Double;
-
-    invoke-virtual {p2}, Ljava/lang/Double;->doubleValue()D
-
-    move-result-wide v3
-
-    cmpg-double p2, v1, v3
-
-    if-gtz p2, :cond_0
-
-    const/4 p2, 0x1
-
-    goto :goto_0
-
-    :cond_0
-    const/4 p2, 0x0
-
-    :goto_0
-    iput-boolean p2, p0, Lk3/v00;->e:Z
-
-    .line 9
-    iget-object p2, p4, Lcom/google/android/gms/internal/ads/zzbbg;->f:Ljava/lang/String;
-
-    const-string p4, "s"
-
-    const-string v1, "gmob_sdk"
-
-    .line 10
-    invoke-virtual {v0, p4, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    const-string p4, "v"
-
-    const-string v1, "3"
-
-    .line 11
-    invoke-virtual {v0, p4, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 12
-    sget-object p4, Landroid/os/Build$VERSION;->RELEASE:Ljava/lang/String;
-
-    const-string v1, "os"
-
-    invoke-virtual {v0, v1, p4}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 13
-    sget-object p4, Landroid/os/Build$VERSION;->SDK:Ljava/lang/String;
-
-    const-string v1, "api_v"
-
-    invoke-virtual {v0, v1, p4}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 14
-    sget-object p4, Li1/o;->B:Li1/o;
-
-    iget-object p4, p4, Li1/o;->c:Lk3/bb;
-
-    .line 15
-    invoke-static {}, Lk3/bb;->K()Ljava/lang/String;
-
-    move-result-object p4
-
-    const-string v1, "device"
-
-    invoke-virtual {v0, v1, p4}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    const-string p4, "app"
-
-    .line 16
-    invoke-virtual {v0, p4, p1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 17
-    sget-object p1, Li1/o;->B:Li1/o;
-
-    iget-object p1, p1, Li1/o;->c:Lk3/bb;
-
-    .line 18
-    invoke-static {p3}, Lk3/bb;->o(Landroid/content/Context;)Z
-
-    move-result p1
-
-    if-eqz p1, :cond_1
-
-    const-string p1, "1"
-
-    goto :goto_1
-
-    :cond_1
-    const-string p1, "0"
-
-    :goto_1
-    const-string p3, "is_lite_sdk"
-
-    .line 19
-    invoke-virtual {v0, p3, p1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 20
-    invoke-static {}, Lk3/q;->c()Ljava/util/List;
-
-    move-result-object p1
-
-    const-string p3, ","
-
-    .line 21
-    invoke-static {p3, p1}, Landroid/text/TextUtils;->join(Ljava/lang/CharSequence;Ljava/lang/Iterable;)Ljava/lang/String;
-
-    move-result-object p1
-
-    const-string p3, "e"
-
-    invoke-virtual {v0, p3, p1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    const-string p1, "sdkVersion"
-
-    .line 22
-    invoke-virtual {v0, p1, p2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    return-void
-.end method
-
-
-# virtual methods
-.method public final a(Ljava/util/Map;)V
-    .locals 3
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/util/Map<",
-            "Ljava/lang/String;",
-            "Ljava/lang/String;",
-            ">;)V"
-        }
-    .end annotation
-
-    .line 1
-    iget-object v0, p0, Lk3/v00;->a:Ljava/lang/String;
-
-    .line 2
-    invoke-static {v0}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Landroid/net/Uri;->buildUpon()Landroid/net/Uri$Builder;
-
-    move-result-object v0
-
-    .line 3
-    invoke-interface {p1}, Ljava/util/Map;->entrySet()Ljava/util/Set;
-
-    move-result-object p1
-
-    invoke-interface {p1}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
+    invoke-interface {p2}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
 
     move-result-object p1
 
     :goto_0
     invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
 
-    move-result v1
+    move-result p2
 
-    if-eqz v1, :cond_0
+    if-eqz p2, :cond_0
 
     invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
-    move-result-object v1
+    move-result-object p2
 
-    check-cast v1, Ljava/util/Map$Entry;
+    check-cast p2, Lk3/u00;
 
-    .line 4
-    invoke-interface {v1}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
+    .line 6
+    iget-object v0, p0, Lk3/v00;->j:Ljava/util/HashMap;
 
-    move-result-object v2
+    .line 7
+    iget-object v1, p2, Lk3/u00;->c:Lk3/ti0;
 
-    check-cast v2, Ljava/lang/String;
-
-    invoke-interface {v1}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
-
-    move-result-object v1
-
-    check-cast v1, Ljava/lang/String;
-
-    invoke-virtual {v0, v2, v1}, Landroid/net/Uri$Builder;->appendQueryParameter(Ljava/lang/String;Ljava/lang/String;)Landroid/net/Uri$Builder;
+    .line 8
+    invoke-virtual {v0, v1, p2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     goto :goto_0
 
-    .line 5
+    .line 9
     :cond_0
-    invoke-virtual {v0}, Landroid/net/Uri$Builder;->build()Landroid/net/Uri;
+    iput-object p3, p0, Lk3/v00;->i:Ll2/c;
 
-    move-result-object p1
+    return-void
+.end method
 
-    invoke-virtual {p1}, Landroid/net/Uri;->toString()Ljava/lang/String;
 
-    move-result-object p1
+# virtual methods
+.method public final a(Lk3/ti0;Ljava/lang/String;)V
+    .locals 2
+
+    iget-object p2, p0, Lk3/v00;->g:Ljava/util/HashMap;
+
+    iget-object v0, p0, Lk3/v00;->i:Ll2/c;
+
+    invoke-interface {v0}, Ll2/c;->b()J
+
+    move-result-wide v0
+
+    invoke-static {v0, v1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+
+    move-result-object v0
+
+    invoke-virtual {p2, p1, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    return-void
+.end method
+
+.method public final b(Ljava/lang/String;)V
+    .locals 0
+
+    return-void
+.end method
+
+.method public final c(Lk3/ti0;Ljava/lang/String;Ljava/lang/Throwable;)V
+    .locals 4
+
+    .line 1
+    iget-object p3, p0, Lk3/v00;->g:Ljava/util/HashMap;
+
+    invoke-virtual {p3, p1}, Ljava/util/HashMap;->containsKey(Ljava/lang/Object;)Z
+
+    move-result p3
+
+    if-eqz p3, :cond_2
+
+    .line 2
+    iget-object p3, p0, Lk3/v00;->i:Ll2/c;
+
+    invoke-interface {p3}, Ll2/c;->b()J
+
+    move-result-wide v0
+
+    iget-object p3, p0, Lk3/v00;->g:Ljava/util/HashMap;
+
+    invoke-virtual {p3, p1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p3
+
+    check-cast p3, Ljava/lang/Long;
+
+    invoke-virtual {p3}, Ljava/lang/Long;->longValue()J
+
+    move-result-wide v2
+
+    sub-long/2addr v0, v2
+
+    .line 3
+    iget-object p3, p0, Lk3/v00;->h:Lk3/s00;
+
+    .line 4
+    iget-object p3, p3, Lk3/s00;->a:Ljava/util/concurrent/ConcurrentHashMap;
+
+    const-string v2, "task."
+
+    .line 5
+    invoke-static {p2}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object p2
+
+    invoke-virtual {p2}, Ljava/lang/String;->length()I
+
+    move-result v3
+
+    if-eqz v3, :cond_0
+
+    invoke-virtual {v2, p2}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object p2
+
+    goto :goto_0
+
+    :cond_0
+    new-instance p2, Ljava/lang/String;
+
+    invoke-direct {p2, v2}, Ljava/lang/String;-><init>(Ljava/lang/String;)V
+
+    :goto_0
+    const-string v2, "f."
+
+    invoke-static {v0, v1}, Ljava/lang/Long;->toString(J)Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {v0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/String;->length()I
+
+    move-result v1
+
+    if-eqz v1, :cond_1
+
+    invoke-virtual {v2, v0}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
+
+    goto :goto_1
+
+    :cond_1
+    new-instance v0, Ljava/lang/String;
+
+    invoke-direct {v0, v2}, Ljava/lang/String;-><init>(Ljava/lang/String;)V
+
+    :goto_1
+    invoke-virtual {p3, p2, v0}, Ljava/util/concurrent/ConcurrentHashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 6
-    iget-boolean v0, p0, Lk3/v00;->e:Z
+    :cond_2
+    iget-object p2, p0, Lk3/v00;->j:Ljava/util/HashMap;
 
-    if-eqz v0, :cond_1
+    invoke-virtual {p2, p1}, Ljava/util/HashMap;->containsKey(Ljava/lang/Object;)Z
+
+    move-result p2
+
+    if-eqz p2, :cond_3
+
+    const/4 p2, 0x0
 
     .line 7
-    iget-object v0, p0, Lk3/v00;->b:Ljava/util/concurrent/Executor;
+    invoke-virtual {p0, p1, p2}, Lk3/v00;->e(Lk3/ti0;Z)V
 
-    new-instance v1, Lk3/x00;
+    :cond_3
+    return-void
+.end method
 
-    const/4 v2, 0x0
+.method public final d(Lk3/ti0;Ljava/lang/String;)V
+    .locals 5
 
-    invoke-direct {v1, p0, p1, v2}, Lk3/x00;-><init>(Ljava/lang/Object;Ljava/lang/Object;I)V
+    .line 1
+    iget-object v0, p0, Lk3/v00;->g:Ljava/util/HashMap;
 
-    invoke-interface {v0, v1}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
+    invoke-virtual {v0, p1}, Ljava/util/HashMap;->containsKey(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_2
+
+    .line 2
+    iget-object v0, p0, Lk3/v00;->i:Ll2/c;
+
+    invoke-interface {v0}, Ll2/c;->b()J
+
+    move-result-wide v0
+
+    iget-object v2, p0, Lk3/v00;->g:Ljava/util/HashMap;
+
+    invoke-virtual {v2, p1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Ljava/lang/Long;
+
+    invoke-virtual {v2}, Ljava/lang/Long;->longValue()J
+
+    move-result-wide v2
+
+    sub-long/2addr v0, v2
+
+    .line 3
+    iget-object v2, p0, Lk3/v00;->h:Lk3/s00;
+
+    .line 4
+    iget-object v2, v2, Lk3/s00;->a:Ljava/util/concurrent/ConcurrentHashMap;
+
+    const-string v3, "task."
+
+    .line 5
+    invoke-static {p2}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object p2
+
+    invoke-virtual {p2}, Ljava/lang/String;->length()I
+
+    move-result v4
+
+    if-eqz v4, :cond_0
+
+    invoke-virtual {v3, p2}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object p2
+
+    goto :goto_0
+
+    :cond_0
+    new-instance p2, Ljava/lang/String;
+
+    invoke-direct {p2, v3}, Ljava/lang/String;-><init>(Ljava/lang/String;)V
+
+    :goto_0
+    const-string v3, "s."
+
+    invoke-static {v0, v1}, Ljava/lang/Long;->toString(J)Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {v0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/String;->length()I
+
+    move-result v1
+
+    if-eqz v1, :cond_1
+
+    invoke-virtual {v3, v0}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
+
+    goto :goto_1
+
+    :cond_1
+    new-instance v0, Ljava/lang/String;
+
+    invoke-direct {v0, v3}, Ljava/lang/String;-><init>(Ljava/lang/String;)V
+
+    :goto_1
+    invoke-virtual {v2, p2, v0}, Ljava/util/concurrent/ConcurrentHashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 6
+    :cond_2
+    iget-object p2, p0, Lk3/v00;->j:Ljava/util/HashMap;
+
+    invoke-virtual {p2, p1}, Ljava/util/HashMap;->containsKey(Ljava/lang/Object;)Z
+
+    move-result p2
+
+    if-eqz p2, :cond_3
+
+    const/4 p2, 0x1
+
+    .line 7
+    invoke-virtual {p0, p1, p2}, Lk3/v00;->e(Lk3/ti0;Z)V
+
+    :cond_3
+    return-void
+.end method
+
+.method public final e(Lk3/ti0;Z)V
+    .locals 5
+
+    .line 1
+    iget-object v0, p0, Lk3/v00;->j:Ljava/util/HashMap;
+
+    invoke-virtual {v0, p1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lk3/u00;
+
+    .line 2
+    iget-object v0, v0, Lk3/u00;->b:Lk3/ti0;
+
+    if-eqz p2, :cond_0
+
+    const-string p2, "s."
+
+    goto :goto_0
+
+    :cond_0
+    const-string p2, "f."
+
+    .line 3
+    :goto_0
+    iget-object v1, p0, Lk3/v00;->g:Ljava/util/HashMap;
+
+    invoke-virtual {v1, v0}, Ljava/util/HashMap;->containsKey(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_3
+
+    .line 4
+    iget-object v1, p0, Lk3/v00;->i:Ll2/c;
+
+    invoke-interface {v1}, Ll2/c;->b()J
+
+    move-result-wide v1
+
+    iget-object v3, p0, Lk3/v00;->g:Ljava/util/HashMap;
+
+    invoke-virtual {v3, v0}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Ljava/lang/Long;
+
+    invoke-virtual {v0}, Ljava/lang/Long;->longValue()J
+
+    move-result-wide v3
+
+    sub-long/2addr v1, v3
+
+    .line 5
+    iget-object v0, p0, Lk3/v00;->h:Lk3/s00;
+
+    .line 6
+    iget-object v0, v0, Lk3/s00;->a:Ljava/util/concurrent/ConcurrentHashMap;
+
+    const-string v3, "label."
+
+    .line 7
+    iget-object v4, p0, Lk3/v00;->j:Ljava/util/HashMap;
 
     .line 8
-    :cond_1
-    invoke-static {}, Lk3/j6;->m()Z
+    invoke-virtual {v4, p1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
+    move-result-object p1
+
+    check-cast p1, Lk3/u00;
+
+    .line 9
+    iget-object p1, p1, Lk3/u00;->a:Ljava/lang/String;
+
+    .line 10
+    invoke-static {p1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Ljava/lang/String;->length()I
+
+    move-result v4
+
+    if-eqz v4, :cond_1
+
+    invoke-virtual {v3, p1}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object p1
+
+    goto :goto_1
+
+    :cond_1
+    new-instance p1, Ljava/lang/String;
+
+    invoke-direct {p1, v3}, Ljava/lang/String;-><init>(Ljava/lang/String;)V
+
+    :goto_1
+    invoke-static {v1, v2}, Ljava/lang/Long;->toString(J)Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-static {v1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/lang/String;->length()I
+
+    move-result v2
+
+    if-eqz v2, :cond_2
+
+    invoke-virtual {p2, v1}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object p2
+
+    goto :goto_2
+
+    :cond_2
+    new-instance v1, Ljava/lang/String;
+
+    invoke-direct {v1, p2}, Ljava/lang/String;-><init>(Ljava/lang/String;)V
+
+    move-object p2, v1
+
+    :goto_2
+    invoke-virtual {v0, p1, p2}, Ljava/util/concurrent/ConcurrentHashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    :cond_3
     return-void
 .end method

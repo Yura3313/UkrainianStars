@@ -1,153 +1,183 @@
 .class public final Lk3/e;
-.super Ljava/lang/Object;
-.source "com.google.android.gms:play-services-ads@@19.3.0"
+.super Lk3/f;
+.source "com.google.android.gms:play-services-ads-lite@@19.3.0"
 
 
-# instance fields
-.field public final a:Landroid/content/Context;
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lk3/f<",
+        "Ljava/lang/Boolean;",
+        ">;"
+    }
+.end annotation
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;)V
+.method public constructor <init>(ILjava/lang/String;Ljava/lang/Boolean;)V
     .locals 1
 
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    const/4 v0, 0x0
 
-    const-string v0, "Context can not be null"
-
-    .line 2
-    invoke-static {p1, v0}, Ld2/h;->i(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 3
-    iput-object p1, p0, Lk3/e;->a:Landroid/content/Context;
+    invoke-direct {p0, p1, p2, p3, v0}, Lk3/f;-><init>(ILjava/lang/String;Ljava/lang/Object;Lk3/e;)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Landroid/content/Intent;)Z
+.method public final a(Landroid/content/SharedPreferences;)Ljava/lang/Object;
     .locals 2
 
-    const-string v0, "Intent can not be null"
-
     .line 1
-    invoke-static {p1, v0}, Ld2/h;->i(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    iget-object v0, p0, Lk3/f;->b:Ljava/lang/String;
 
     .line 2
-    iget-object v0, p0, Lk3/e;->a:Landroid/content/Context;
-
-    invoke-virtual {v0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
-
-    move-result-object v0
-
-    const/4 v1, 0x0
+    iget-object v1, p0, Lk3/f;->c:Ljava/lang/Object;
 
     .line 3
-    invoke-virtual {v0, p1, v1}, Landroid/content/pm/PackageManager;->queryIntentActivities(Landroid/content/Intent;I)Ljava/util/List;
+    check-cast v1, Ljava/lang/Boolean;
 
-    move-result-object p1
+    invoke-virtual {v1}, Ljava/lang/Boolean;->booleanValue()Z
 
-    .line 4
-    invoke-interface {p1}, Ljava/util/List;->isEmpty()Z
+    move-result v1
+
+    invoke-interface {p1, v0, v1}, Landroid/content/SharedPreferences;->getBoolean(Ljava/lang/String;Z)Z
 
     move-result p1
 
-    if-nez p1, :cond_0
+    invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
-    const/4 p1, 0x1
+    move-result-object p1
 
-    return p1
-
-    :cond_0
-    return v1
+    return-object p1
 .end method
 
-.method public final b()Z
-    .locals 2
+.method public final b(Landroid/os/Bundle;)Ljava/lang/Object;
+    .locals 3
 
     .line 1
-    iget-object v0, p0, Lk3/e;->a:Landroid/content/Context;
+    iget-object v0, p0, Lk3/f;->b:Ljava/lang/String;
 
     .line 2
-    new-instance v1, Lk3/d;
-
-    invoke-direct {v1}, Lk3/d;-><init>()V
-
-    invoke-static {v0, v1}, Lk3/uc;->a(Landroid/content/Context;Ljava/util/concurrent/Callable;)Ljava/lang/Object;
+    invoke-static {v0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v0
 
-    check-cast v0, Ljava/lang/Boolean;
+    invoke-virtual {v0}, Ljava/lang/String;->length()I
 
-    invoke-virtual {v0}, Ljava/lang/Boolean;->booleanValue()Z
+    move-result v1
+
+    const-string v2, "com.google.android.gms.ads.flag."
+
+    if-eqz v1, :cond_0
+
+    invoke-virtual {v2, v0}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
+
+    goto :goto_0
+
+    :cond_0
+    new-instance v0, Ljava/lang/String;
+
+    invoke-direct {v0, v2}, Ljava/lang/String;-><init>(Ljava/lang/String;)V
+
+    :goto_0
+    invoke-virtual {p1, v0}, Landroid/os/Bundle;->containsKey(Ljava/lang/String;)Z
 
     move-result v0
 
-    if-eqz v0, :cond_0
+    if-eqz v0, :cond_2
 
     .line 3
-    iget-object v0, p0, Lk3/e;->a:Landroid/content/Context;
+    iget-object v0, p0, Lk3/f;->b:Ljava/lang/String;
 
     .line 4
-    invoke-static {v0}, Ln2/c;->a(Landroid/content/Context;)Ln2/b;
+    invoke-static {v0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/String;->length()I
+
+    move-result v1
+
+    if-eqz v1, :cond_1
+
+    invoke-virtual {v2, v0}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
+
+    goto :goto_1
+
+    :cond_1
+    new-instance v0, Ljava/lang/String;
+
+    invoke-direct {v0, v2}, Ljava/lang/String;-><init>(Ljava/lang/String;)V
+
+    :goto_1
+    invoke-virtual {p1, v0}, Landroid/os/Bundle;->getBoolean(Ljava/lang/String;)Z
+
+    move-result p1
+
+    invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object p1
+
+    return-object p1
 
     .line 5
-    iget-object v0, v0, Ln2/b;->a:Landroid/content/Context;
+    :cond_2
+    iget-object p1, p0, Lk3/f;->c:Ljava/lang/Object;
 
-    const-string v1, "android.permission.WRITE_EXTERNAL_STORAGE"
+    .line 6
+    check-cast p1, Ljava/lang/Boolean;
 
-    invoke-virtual {v0, v1}, Landroid/content/Context;->checkCallingOrSelfPermission(Ljava/lang/String;)I
-
-    move-result v0
-
-    if-nez v0, :cond_0
-
-    const/4 v0, 0x1
-
-    return v0
-
-    :cond_0
-    const/4 v0, 0x0
-
-    return v0
+    return-object p1
 .end method
 
-.method public final c()Z
-    .locals 2
-    .annotation build Landroid/annotation/TargetApi;
-        value = 0xe
-    .end annotation
+.method public final g(Landroid/content/SharedPreferences$Editor;Ljava/lang/Object;)V
+    .locals 1
 
     .line 1
-    new-instance v0, Landroid/content/Intent;
-
-    const-string v1, "android.intent.action.INSERT"
-
-    invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
-
-    const-string v1, "vnd.android.cursor.dir/event"
-
-    invoke-virtual {v0, v1}, Landroid/content/Intent;->setType(Ljava/lang/String;)Landroid/content/Intent;
-
-    move-result-object v0
+    check-cast p2, Ljava/lang/Boolean;
 
     .line 2
-    invoke-virtual {p0, v0}, Lk3/e;->a(Landroid/content/Intent;)Z
+    iget-object v0, p0, Lk3/f;->b:Ljava/lang/String;
 
-    move-result v0
+    .line 3
+    invoke-virtual {p2}, Ljava/lang/Boolean;->booleanValue()Z
 
-    if-eqz v0, :cond_0
+    move-result p2
 
-    const/4 v0, 0x1
+    invoke-interface {p1, v0, p2}, Landroid/content/SharedPreferences$Editor;->putBoolean(Ljava/lang/String;Z)Landroid/content/SharedPreferences$Editor;
 
-    return v0
+    return-void
+.end method
 
-    :cond_0
-    const/4 v0, 0x0
+.method public final h(Lorg/json/JSONObject;)Ljava/lang/Object;
+    .locals 2
 
-    return v0
+    .line 1
+    iget-object v0, p0, Lk3/f;->b:Ljava/lang/String;
+
+    .line 2
+    iget-object v1, p0, Lk3/f;->c:Ljava/lang/Object;
+
+    .line 3
+    check-cast v1, Ljava/lang/Boolean;
+
+    invoke-virtual {v1}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result v1
+
+    invoke-virtual {p1, v0, v1}, Lorg/json/JSONObject;->optBoolean(Ljava/lang/String;Z)Z
+
+    move-result p1
+
+    invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+
+    move-result-object p1
+
+    return-object p1
 .end method

@@ -22,7 +22,7 @@
 
 
 # instance fields
-.field public f:Ljava/util/Iterator;
+.field public g:Ljava/util/Iterator;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Iterator<",
@@ -53,7 +53,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lr3/p2;->f:Ljava/util/Iterator;
+    iput-object p1, p0, Lr3/p2;->g:Ljava/util/Iterator;
 
     return-void
 .end method
@@ -63,7 +63,7 @@
 .method public final hasNext()Z
     .locals 1
 
-    iget-object v0, p0, Lr3/p2;->f:Ljava/util/Iterator;
+    iget-object v0, p0, Lr3/p2;->g:Ljava/util/Iterator;
 
     invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
 
@@ -76,7 +76,7 @@
     .locals 3
 
     .line 1
-    iget-object v0, p0, Lr3/p2;->f:Ljava/util/Iterator;
+    iget-object v0, p0, Lr3/p2;->g:Ljava/util/Iterator;
 
     invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
@@ -98,7 +98,7 @@
 
     const/4 v2, 0x0
 
-    invoke-direct {v1, v0, v2}, Lr3/o2;-><init>(Ljava/util/Map$Entry;Lj1/b;)V
+    invoke-direct {v1, v0, v2}, Lr3/o2;-><init>(Ljava/util/Map$Entry;Lcom/google/android/material/internal/c;)V
 
     return-object v1
 
@@ -109,7 +109,7 @@
 .method public final remove()V
     .locals 1
 
-    iget-object v0, p0, Lr3/p2;->f:Ljava/util/Iterator;
+    iget-object v0, p0, Lr3/p2;->g:Ljava/util/Iterator;
 
     invoke-interface {v0}, Ljava/util/Iterator;->remove()V
 

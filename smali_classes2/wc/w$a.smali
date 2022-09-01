@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field public final synthetic f:Lwc/w;
+.field public final synthetic g:Lwc/w;
 
 
 # direct methods
 .method public constructor <init>(Lwc/w;)V
     .locals 0
 
-    iput-object p1, p0, Lwc/w$a;->f:Lwc/w;
+    iput-object p1, p0, Lwc/w$a;->g:Lwc/w;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -38,7 +38,7 @@
     .locals 0
 
     .line 1
-    iget-object p1, p0, Lwc/w$a;->f:Lwc/w;
+    iget-object p1, p0, Lwc/w$a;->g:Lwc/w;
 
     invoke-virtual {p1}, Landroidx/fragment/app/Fragment;->v()Landroidx/fragment/app/FragmentActivity;
 
@@ -46,11 +46,11 @@
 
     if-eqz p1, :cond_0
 
-    invoke-static {p1}, Lcom/android/billingclient/api/c0;->g(Landroid/app/Activity;)V
+    invoke-static {p1}, Lcom/android/billingclient/api/b0;->h(Landroid/app/Activity;)V
 
     .line 2
     :cond_0
-    iget-object p1, p0, Lwc/w$a;->f:Lwc/w;
+    iget-object p1, p0, Lwc/w$a;->g:Lwc/w;
 
     invoke-virtual {p1}, Landroidx/fragment/app/Fragment;->v()Landroidx/fragment/app/FragmentActivity;
 

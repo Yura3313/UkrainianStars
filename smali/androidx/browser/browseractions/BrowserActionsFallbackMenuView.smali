@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field public final f:I
-
 .field public final g:I
+
+.field public final h:I
 
 
 # direct methods
@@ -27,7 +27,7 @@
 
     move-result p1
 
-    iput p1, p0, Landroidx/browser/browseractions/BrowserActionsFallbackMenuView;->f:I
+    iput p1, p0, Landroidx/browser/browseractions/BrowserActionsFallbackMenuView;->g:I
 
     .line 3
     invoke-virtual {p0}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
@@ -40,7 +40,7 @@
 
     move-result p1
 
-    iput p1, p0, Landroidx/browser/browseractions/BrowserActionsFallbackMenuView;->g:I
+    iput p1, p0, Landroidx/browser/browseractions/BrowserActionsFallbackMenuView;->h:I
 
     return-void
 .end method
@@ -62,13 +62,13 @@
     iget p1, p1, Landroid/util/DisplayMetrics;->widthPixels:I
 
     .line 2
-    iget v0, p0, Landroidx/browser/browseractions/BrowserActionsFallbackMenuView;->f:I
+    iget v0, p0, Landroidx/browser/browseractions/BrowserActionsFallbackMenuView;->g:I
 
     mul-int/lit8 v0, v0, 0x2
 
     sub-int/2addr p1, v0
 
-    iget v0, p0, Landroidx/browser/browseractions/BrowserActionsFallbackMenuView;->g:I
+    iget v0, p0, Landroidx/browser/browseractions/BrowserActionsFallbackMenuView;->h:I
 
     invoke-static {p1, v0}, Ljava/lang/Math;->min(II)I
 

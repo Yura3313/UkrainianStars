@@ -68,7 +68,7 @@
 .method public final d()Ln5/v0$b;
     .locals 1
 
-    sget-object v0, Ln5/v0$b;->k:Ln5/v0$b;
+    sget-object v0, Ln5/v0$b;->l:Ln5/v0$b;
 
     return-object v0
 .end method
@@ -108,7 +108,7 @@
 
     move-result p1
 
-    invoke-static {p1}, Lr5/j0;->e(I)V
+    invoke-static {p1}, Lr5/l0;->e(I)V
 
     return-void
 .end method

@@ -1,74 +1,105 @@
-.class public final Lk3/uo0;
+.class public final synthetic Lk3/uo0;
 .super Ljava/lang/Object;
-.source "com.google.android.gms:play-services-ads@@19.3.0"
-
-# interfaces
-.implements Ljava/lang/Runnable;
-
-
-# instance fields
-.field public final synthetic f:Landroid/content/Context;
-
-.field public final synthetic g:Ljava/lang/String;
-
-.field public final synthetic h:Landroid/view/View;
-
-.field public final synthetic i:Landroid/app/Activity;
+.source "R8$$SyntheticClass"
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;Ljava/lang/String;Landroid/view/View;Landroid/app/Activity;)V
-    .locals 0
+.method public static synthetic a(I)I
+    .locals 2
 
-    iput-object p1, p0, Lk3/uo0;->f:Landroid/content/Context;
+    const/4 v0, 0x1
 
-    iput-object p2, p0, Lk3/uo0;->g:Ljava/lang/String;
+    if-ne p0, v0, :cond_0
 
-    iput-object p3, p0, Lk3/uo0;->h:Landroid/view/View;
+    const/4 p0, 0x0
 
-    iput-object p4, p0, Lk3/uo0;->i:Landroid/app/Activity;
+    return p0
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    :cond_0
+    const/4 v0, 0x2
 
-    return-void
+    if-ne p0, v0, :cond_1
+
+    return v0
+
+    :cond_1
+    const/4 v0, 0x3
+
+    const/4 v1, 0x4
+
+    if-ne p0, v0, :cond_2
+
+    return v1
+
+    :cond_2
+    const/4 v0, 0x5
+
+    if-ne p0, v1, :cond_3
+
+    return v0
+
+    :cond_3
+    if-ne p0, v0, :cond_4
+
+    const/4 p0, 0x6
+
+    return p0
+
+    :cond_4
+    const/4 p0, 0x0
+
+    throw p0
 .end method
 
+.method public static synthetic b(I)Ljava/lang/String;
+    .locals 1
 
-# virtual methods
-.method public final run()V
-    .locals 5
+    const/4 v0, 0x1
 
-    .line 1
-    :try_start_0
-    sget-object v0, Lcom/google/android/gms/internal/ads/h2;->D:Lk3/oi0;
+    if-ne p0, v0, :cond_0
 
-    .line 2
-    iget-object v1, p0, Lk3/uo0;->f:Landroid/content/Context;
+    const-string p0, "UNKNOWN_FORMAT"
 
-    iget-object v2, p0, Lk3/uo0;->g:Ljava/lang/String;
+    return-object p0
 
-    iget-object v3, p0, Lk3/uo0;->h:Landroid/view/View;
+    :cond_0
+    const/4 v0, 0x2
 
-    iget-object v4, p0, Lk3/uo0;->i:Landroid/app/Activity;
+    if-ne p0, v0, :cond_1
 
-    invoke-virtual {v0, v1, v2, v3, v4}, Lk3/oi0;->g(Landroid/content/Context;Ljava/lang/String;Landroid/view/View;Landroid/app/Activity;)Ljava/lang/String;
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+    const-string p0, "UNCOMPRESSED"
 
-    return-void
+    return-object p0
 
-    :catch_0
-    move-exception v0
+    :cond_1
+    const/4 v0, 0x3
 
-    .line 3
-    sget-object v1, Lcom/google/android/gms/internal/ads/h2;->F:Lcom/google/android/gms/internal/ads/e1;
+    if-ne p0, v0, :cond_2
 
-    const/16 v2, 0x7e5
+    const-string p0, "COMPRESSED"
 
-    const-wide/16 v3, -0x1
+    return-object p0
 
-    .line 4
-    invoke-virtual {v1, v2, v3, v4, v0}, Lcom/google/android/gms/internal/ads/e1;->a(IJLjava/lang/Exception;)Lc4/f;
+    :cond_2
+    const/4 v0, 0x4
 
-    return-void
+    if-ne p0, v0, :cond_3
+
+    const-string p0, "DO_NOT_USE_CRUNCHY_UNCOMPRESSED"
+
+    return-object p0
+
+    :cond_3
+    const/4 v0, 0x5
+
+    if-ne p0, v0, :cond_4
+
+    const-string p0, "UNRECOGNIZED"
+
+    return-object p0
+
+    :cond_4
+    const-string p0, "null"
+
+    return-object p0
 .end method

@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field public final synthetic f:Landroidx/fragment/app/Fragment;
+.field public final synthetic g:Landroidx/fragment/app/Fragment;
 
 
 # direct methods
 .method public constructor <init>(Landroidx/fragment/app/Fragment;)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/fragment/app/FragmentManager$h;->f:Landroidx/fragment/app/Fragment;
+    iput-object p1, p0, Landroidx/fragment/app/FragmentManager$h;->g:Landroidx/fragment/app/Fragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -37,7 +37,7 @@
 .method public final a(Landroidx/fragment/app/Fragment;)V
     .locals 0
 
-    iget-object p1, p0, Landroidx/fragment/app/FragmentManager$h;->f:Landroidx/fragment/app/Fragment;
+    iget-object p1, p0, Landroidx/fragment/app/FragmentManager$h;->g:Landroidx/fragment/app/Fragment;
 
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 

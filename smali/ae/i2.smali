@@ -1,141 +1,66 @@
 .class public final Lae/i2;
 .super Ljava/lang/Object;
-.source "SharedAccountStorage.kt"
+.source "SharedDataStorage.kt"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lae/i2$a;
+    }
+.end annotation
+
+
+# static fields
+.field public static final b:Lae/i2$a;
 
 
 # instance fields
-.field public a:Ljava/util/List;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/List<",
-            "Lcom/supercell/id/IdAccount;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field public final b:Landroid/content/Context;
-
-.field public final c:Ljava/lang/String;
+.field public final a:Lae/p;
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;Ljava/lang/String;)V
+.method public static constructor <clinit>()V
     .locals 1
 
-    const-string v0, "context"
+    new-instance v0, Lae/i2$a;
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-direct {v0}, Lae/i2$a;-><init>()V
 
-    const-string v0, "environment"
-
-    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    iput-object p1, p0, Lae/i2;->b:Landroid/content/Context;
-
-    iput-object p2, p0, Lae/i2;->c:Ljava/lang/String;
-
-    .line 2
-    sget-object p1, Lje/l;->f:Lje/l;
-
-    iput-object p1, p0, Lae/i2;->a:Ljava/util/List;
+    sput-object v0, Lae/i2;->b:Lae/i2$a;
 
     return-void
 .end method
 
-
-# virtual methods
-.method public final a(Ljava/util/List;)V
-    .locals 4
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/util/List<",
-            "Lcom/supercell/id/IdAccount;",
-            ">;)V"
-        }
-    .end annotation
+.method public constructor <init>(Landroid/content/Context;)V
+    .locals 2
 
     .line 1
-    sget-object v0, Lae/j2;->b:Lae/j2$a;
-
-    iget-object v1, p0, Lae/i2;->b:Landroid/content/Context;
-
-    invoke-virtual {v0, v1}, Lae/k2;->a(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v1
-
-    check-cast v1, Lae/j2;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iget-object v2, p0, Lae/i2;->c:Ljava/lang/String;
+    :try_start_0
+    new-instance v0, Lae/p;
 
-    invoke-virtual {v0, v2}, Lae/j2$a;->b(Ljava/lang/String;)Ljava/lang/String;
+    const-string v1, "com.supercell.id.util.SharedDataStorage"
 
-    move-result-object v0
-
-    .line 3
-    new-instance v2, Lorg/json/JSONArray;
-
-    invoke-direct {v2}, Lorg/json/JSONArray;-><init>()V
-
-    .line 4
-    invoke-interface {p1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
-
-    move-result-object p1
-
-    :goto_0
-    invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v3
-
-    if-eqz v3, :cond_0
-
-    invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v3
-
-    check-cast v3, Lcom/supercell/id/IdAccount;
-
-    .line 5
-    invoke-virtual {v3}, Lcom/supercell/id/IdAccount;->toJsonObject()Lorg/json/JSONObject;
-
-    move-result-object v3
-
-    invoke-virtual {v2, v3}, Lorg/json/JSONArray;->put(Ljava/lang/Object;)Lorg/json/JSONArray;
-
-    move-result-object v2
-
-    const-string v3, "acc.put(account.toJsonObject())"
-
-    invoke-static {v2, v3}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-direct {v0, p1, v1}, Lae/p;-><init>(Landroid/content/Context;Ljava/lang/String;)V
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
     goto :goto_0
 
-    .line 6
-    :cond_0
-    invoke-virtual {v2}, Lorg/json/JSONArray;->toString()Ljava/lang/String;
+    :catch_0
+    move-exception p1
 
-    move-result-object p1
+    .line 3
+    invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
-    .line 7
-    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    const/4 v0, 0x0
 
-    const-string v2, "key"
+    .line 4
+    :goto_0
+    iput-object v0, p0, Lae/i2;->a:Lae/p;
 
-    .line 8
-    invoke-static {v0, v2}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 9
-    iget-object v1, v1, Lae/j2;->a:Lae/p;
-
-    if-eqz v1, :cond_1
-
-    invoke-virtual {v1, v0, p1}, Lae/p;->b(Ljava/lang/String;Ljava/lang/String;)V
-
-    :cond_1
     return-void
 .end method

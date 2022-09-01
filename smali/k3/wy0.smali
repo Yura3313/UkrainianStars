@@ -1,7 +1,14 @@
-.class public final Lk3/wy0;
+.class public interface abstract Lk3/wy0;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 
-# instance fields
-.field public final a:I
+# virtual methods
+.method public abstract a()I
+.end method
+
+.method public abstract b()I
+.end method
+
+.method public abstract c()Z
+.end method

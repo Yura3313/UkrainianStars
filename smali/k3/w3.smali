@@ -1,89 +1,94 @@
 .class public final Lk3/w3;
-.super Ljava/lang/Object;
-.source "com.google.android.gms:play-services-ads@@19.3.0"
-
-
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "<T:",
-        "Ljava/lang/Object;",
-        ">",
-        "Ljava/lang/Object;"
-    }
-.end annotation
+.super Lh1/a;
+.source "com.google.android.gms:play-services-ads-lite@@19.3.0"
 
 
 # instance fields
-.field public final a:Ljava/lang/Object;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "TT;"
-        }
-    .end annotation
-.end field
-
-.field public final b:Lk3/yz0;
-
-.field public final c:Lcom/google/android/gms/internal/ads/zzao;
-
-.field public d:Z
+.field public final a:Lcom/google/android/gms/internal/ads/zzait;
 
 
 # direct methods
-.method public constructor <init>(Lcom/google/android/gms/internal/ads/zzao;)V
+.method public constructor <init>(Lcom/google/android/gms/internal/ads/zzait;)V
     .locals 1
-
-    .line 6
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    const/4 v0, 0x0
-
-    .line 7
-    iput-boolean v0, p0, Lk3/w3;->d:Z
-
-    const/4 v0, 0x0
-
-    .line 8
-    iput-object v0, p0, Lk3/w3;->a:Ljava/lang/Object;
-
-    .line 9
-    iput-object v0, p0, Lk3/w3;->b:Lk3/yz0;
-
-    .line 10
-    iput-object p1, p0, Lk3/w3;->c:Lcom/google/android/gms/internal/ads/zzao;
-
-    return-void
-.end method
-
-.method public constructor <init>(Ljava/lang/Object;Lk3/yz0;)V
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TT;",
-            "Lk3/yz0;",
-            ")V"
-        }
-    .end annotation
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    const/4 v0, 0x0
+    invoke-direct {p0}, Lh1/a;-><init>()V
 
     .line 2
-    iput-boolean v0, p0, Lk3/w3;->d:Z
+    iput-object p1, p0, Lk3/w3;->a:Lcom/google/android/gms/internal/ads/zzait;
 
     .line 3
-    iput-object p1, p0, Lk3/w3;->a:Ljava/lang/Object;
+    new-instance v0, Ljava/lang/Object;
+
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
     .line 4
-    iput-object p2, p0, Lk3/w3;->b:Lk3/yz0;
-
-    const/4 p1, 0x0
+    :try_start_0
+    invoke-interface {p1}, Lcom/google/android/gms/internal/ads/zzait;->getVideoController()Lcom/google/android/gms/internal/ads/zzyg;
 
     .line 5
-    iput-object p1, p0, Lk3/w3;->c:Lcom/google/android/gms/internal/ads/zzao;
+    monitor-enter v0
+    :try_end_0
+    .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
+    .line 6
+    :try_start_1
+    monitor-exit v0
+
+    goto :goto_1
+
+    :goto_0
+    monitor-exit v0
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    :try_start_2
+    throw p1
+    :try_end_2
+    .catch Landroid/os/RemoteException; {:try_start_2 .. :try_end_2} :catch_0
+
+    :catchall_0
+    move-exception p1
+
+    goto :goto_0
+
+    :catch_0
+    move-exception p1
+
+    const-string v0, "#007 Could not call remote method."
+
+    .line 7
+    invoke-static {v0, p1}, Lcom/google/android/gms/ads/a;->i(Ljava/lang/String;Ljava/lang/Throwable;)V
+
+    .line 8
+    :goto_1
+    :try_start_3
+    iget-object p1, p0, Lk3/w3;->a:Lcom/google/android/gms/internal/ads/zzait;
+
+    invoke-interface {p1}, Lcom/google/android/gms/internal/ads/zzait;->K2()Lcom/google/android/gms/internal/ads/zzadr;
+
+    move-result-object p1
+
+    if-eqz p1, :cond_0
+
+    .line 9
+    iget-object p1, p0, Lk3/w3;->a:Lcom/google/android/gms/internal/ads/zzait;
+
+    invoke-interface {p1}, Lcom/google/android/gms/internal/ads/zzait;->K2()Lcom/google/android/gms/internal/ads/zzadr;
+    :try_end_3
+    .catch Landroid/os/RemoteException; {:try_start_3 .. :try_end_3} :catch_1
+
+    goto :goto_2
+
+    :catch_1
+    move-exception p1
+
+    const-string v0, "#007 Could not call remote method."
+
+    .line 10
+    invoke-static {v0, p1}, Lcom/google/android/gms/ads/a;->i(Ljava/lang/String;Ljava/lang/Throwable;)V
+
+    :cond_0
+    :goto_2
     return-void
 .end method

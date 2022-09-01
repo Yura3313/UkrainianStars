@@ -1,122 +1,64 @@
 .class public final Lk3/ij0;
-.super Li1/c;
+.super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-gass@@19.3.0"
 
-
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Li1/c<",
-        "Lcom/google/android/gms/internal/ads/zzdrm;",
-        ">;"
-    }
-.end annotation
+# interfaces
+.implements Lk3/cs0;
 
 
-# instance fields
-.field public final y:I
+# static fields
+.field public static final a:Lk3/ij0;
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;Landroid/os/Looper;Lcom/google/android/gms/common/internal/BaseGmsClient$a;Lcom/google/android/gms/common/internal/BaseGmsClient$b;I)V
-    .locals 6
+.method public static constructor <clinit>()V
+    .locals 1
 
-    const/16 v3, 0x74
+    new-instance v0, Lk3/ij0;
 
-    move-object v0, p0
+    invoke-direct {v0}, Lk3/ij0;-><init>()V
 
-    move-object v1, p1
+    sput-object v0, Lk3/ij0;->a:Lk3/ij0;
 
-    move-object v2, p2
+    return-void
+.end method
 
-    move-object v4, p3
+.method public constructor <init>()V
+    .locals 0
 
-    move-object v5, p4
-
-    .line 1
-    invoke-direct/range {v0 .. v5}, Li1/c;-><init>(Landroid/content/Context;Landroid/os/Looper;ILcom/google/android/gms/common/internal/BaseGmsClient$a;Lcom/google/android/gms/common/internal/BaseGmsClient$b;)V
-
-    .line 2
-    iput p5, p0, Lk3/ij0;->y:I
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final G()Lcom/google/android/gms/internal/ads/zzdrm;
-    .locals 1
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Landroid/os/DeadObjectException;
-        }
-    .end annotation
+.method public final a(I)Z
+    .locals 3
 
-    invoke-virtual {p0}, Lcom/google/android/gms/common/internal/BaseGmsClient;->v()Landroid/os/IInterface;
+    const/4 v0, 0x2
 
-    move-result-object v0
+    const/4 v1, 0x1
 
-    check-cast v0, Lcom/google/android/gms/internal/ads/zzdrm;
+    const/4 v2, 0x0
 
-    return-object v0
-.end method
+    if-eq p1, v1, :cond_0
 
-.method public final i()I
-    .locals 1
+    if-eq p1, v0, :cond_1
 
-    iget v0, p0, Lk3/ij0;->y:I
+    const/4 v0, 0x0
 
-    return v0
-.end method
-
-.method public final synthetic p(Landroid/os/IBinder;)Landroid/os/IInterface;
-    .locals 2
-
-    if-nez p1, :cond_0
-
-    const/4 p1, 0x0
-
-    return-object p1
+    goto :goto_0
 
     :cond_0
-    const-string v0, "com.google.android.gms.gass.internal.IGassService"
+    const/4 v0, 0x1
 
-    .line 1
-    invoke-interface {p1, v0}, Landroid/os/IBinder;->queryLocalInterface(Ljava/lang/String;)Landroid/os/IInterface;
-
-    move-result-object v0
-
-    .line 2
-    instance-of v1, v0, Lcom/google/android/gms/internal/ads/zzdrm;
-
-    if-eqz v1, :cond_1
-
-    .line 3
-    check-cast v0, Lcom/google/android/gms/internal/ads/zzdrm;
-
-    return-object v0
-
-    .line 4
     :cond_1
-    new-instance v0, Lcom/google/android/gms/internal/ads/zzdrl;
+    :goto_0
+    if-eqz v0, :cond_2
 
-    invoke-direct {v0, p1}, Lcom/google/android/gms/internal/ads/zzdrl;-><init>(Landroid/os/IBinder;)V
+    return v1
 
-    return-object v0
-.end method
-
-.method public final w()Ljava/lang/String;
-    .locals 1
-
-    const-string v0, "com.google.android.gms.gass.internal.IGassService"
-
-    return-object v0
-.end method
-
-.method public final x()Ljava/lang/String;
-    .locals 1
-
-    const-string v0, "com.google.android.gms.gass.START"
-
-    return-object v0
+    :cond_2
+    return v2
 .end method

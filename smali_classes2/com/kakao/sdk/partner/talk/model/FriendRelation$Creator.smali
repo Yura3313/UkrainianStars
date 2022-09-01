@@ -34,7 +34,7 @@
 
     const-string v1, "in"
 
-    invoke-static {p1, v1}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v1}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     new-instance v1, Lcom/kakao/sdk/partner/talk/model/FriendRelation;
 

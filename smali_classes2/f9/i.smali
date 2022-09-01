@@ -24,7 +24,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Map<",
-            "Lo8/y;",
+            "Lo8/z;",
             "Ljava/lang/Boolean;",
             ">;"
         }
@@ -49,7 +49,7 @@
 
 .field public g:Lf9/j0;
 
-.field public h:Lo8/y;
+.field public h:Lo8/z;
 
 .field public i:Lf9/i1;
 
@@ -67,7 +67,7 @@
 
 .field public p:Le8/s;
 
-.field public q:Lk3/p;
+.field public q:Lk3/n;
 
 .field public r:Lf9/q0;
 
@@ -160,11 +160,11 @@
     invoke-virtual {v3, p0}, Lf7/a;->b(Lf7/a$a;)V
 
     .line 16
-    new-instance v3, Lk3/p;
+    new-instance v3, Lk3/n;
 
-    invoke-direct {v3, v0, v8}, Lk3/p;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-direct {v3, v0, v8}, Lk3/n;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
 
-    iput-object v3, v7, Lf9/i;->q:Lk3/p;
+    iput-object v3, v7, Lf9/i;->q:Lk3/n;
 
     .line 17
     invoke-virtual/range {p4 .. p4}, Ln8/p;->c()Lq8/d;
@@ -207,7 +207,7 @@
     iput-object v12, v7, Lf9/i;->i:Lf9/i1;
 
     .line 23
-    iget-object v0, v7, Lf9/i;->q:Lk3/p;
+    iget-object v0, v7, Lf9/i;->q:Lk3/n;
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -227,7 +227,7 @@
     iput-object v0, v7, Lf9/i;->x:Lqb/i;
 
     .line 27
-    iget-object v0, v7, Lf9/i;->q:Lk3/p;
+    iget-object v0, v7, Lf9/i;->q:Lk3/n;
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -251,12 +251,12 @@
     invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 33
-    iput-boolean v0, v11, Lq8/d;->F:Z
+    iput-boolean v0, v11, Lq8/d;->G:Z
 
     .line 34
-    iget-object v2, v11, Lq8/d;->l:Lu8/e;
+    iget-object v2, v11, Lq8/d;->m:Lu8/e;
 
-    sget-object v3, Lu8/e;->p:Lu8/e;
+    sget-object v3, Lu8/e;->q:Lu8/e;
 
     if-ne v2, v3, :cond_0
 
@@ -265,7 +265,7 @@
 
     .line 36
     :cond_0
-    iget-object v1, v7, Lf9/i;->q:Lk3/p;
+    iget-object v1, v7, Lf9/i;->q:Lk3/n;
 
     .line 37
     invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -276,13 +276,13 @@
     invoke-direct {v2}, Lqb/h;-><init>()V
 
     .line 39
-    invoke-virtual {v1, v2, v11, v0}, Lk3/p;->d(Lqb/h;Lq8/d;Z)V
+    invoke-virtual {v1, v2, v11, v0}, Lk3/n;->d(Lqb/h;Lq8/d;Z)V
 
     .line 40
     iput-object v2, v7, Lf9/i;->B:Lqb/h;
 
     .line 41
-    iget-object v1, v7, Lf9/i;->q:Lk3/p;
+    iget-object v1, v7, Lf9/i;->q:Lk3/n;
 
     .line 42
     invoke-virtual/range {p4 .. p4}, Ln8/p;->c()Lq8/d;
@@ -303,7 +303,7 @@
 
     if-nez v2, :cond_1
 
-    invoke-virtual {v1}, Lk3/p;->a()Z
+    invoke-virtual {v1}, Lk3/n;->a()Z
 
     move-result v1
 
@@ -329,7 +329,7 @@
     iput-object v1, v7, Lf9/i;->A:Lqb/g;
 
     .line 48
-    iget-object v1, v7, Lf9/i;->q:Lk3/p;
+    iget-object v1, v7, Lf9/i;->q:Lk3/n;
 
     .line 49
     invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -340,13 +340,13 @@
     invoke-direct {v2}, Lqb/k;-><init>()V
 
     .line 51
-    invoke-virtual {v1, v2, v11, v0}, Lk3/p;->e(Lqb/k;Lq8/d;Z)V
+    invoke-virtual {v1, v2, v11, v0}, Lk3/n;->e(Lqb/k;Lq8/d;Z)V
 
     .line 52
     iput-object v2, v7, Lf9/i;->D:Lqb/k;
 
     .line 53
-    iget-object v1, v7, Lf9/i;->q:Lk3/p;
+    iget-object v1, v7, Lf9/i;->q:Lk3/n;
 
     invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -356,7 +356,7 @@
     invoke-direct {v2}, Lqb/g;-><init>()V
 
     .line 55
-    invoke-virtual {v1, v2, v11}, Lk3/p;->c(Lqb/g;Lq8/d;)V
+    invoke-virtual {v1, v2, v11}, Lk3/n;->c(Lqb/g;Lq8/d;)V
 
     .line 56
     iput-object v2, v7, Lf9/i;->z:Lqb/g;
@@ -383,7 +383,7 @@
     if-nez v0, :cond_3
 
     .line 60
-    iget-object v0, v11, Lq8/d;->l:Lu8/e;
+    iget-object v0, v11, Lq8/d;->m:Lu8/e;
 
     if-ne v0, v3, :cond_3
 
@@ -411,7 +411,7 @@
     move-result-object v0
 
     .line 65
-    iput-object v9, v0, Lq8/d;->G:Ln8/b;
+    iput-object v9, v0, Lq8/d;->H:Ln8/b;
 
     move-object/from16 v0, p5
 
@@ -469,7 +469,7 @@
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 2
-    iget-object p1, p1, Lcom/helpshift/common/exception/RootAPIException;->h:Ld8/a;
+    iget-object p1, p1, Lcom/helpshift/common/exception/RootAPIException;->i:Ld8/a;
 
     instance-of p1, p1, Ld8/b;
 
@@ -523,7 +523,7 @@
     const-string v2, "Helpshift_ConvsatnlVM"
 
     .line 2
-    invoke-static {v2, v0, v1, v1}, Landroidx/savedstate/d;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v2, v0, v1, v1}, Le5/i;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
 
     .line 3
     iget-object v0, p0, Lf9/i;->k:Ln8/p;
@@ -533,9 +533,9 @@
     move-result-object v0
 
     .line 4
-    iget-object v1, v0, Lq8/d;->l:Lu8/e;
+    iget-object v1, v0, Lq8/d;->m:Lu8/e;
 
-    sget-object v2, Lu8/e;->k:Lu8/e;
+    sget-object v2, Lu8/e;->l:Lu8/e;
 
     if-ne v1, v2, :cond_0
 
@@ -602,7 +602,7 @@
     const/4 v3, 0x1
 
     .line 5
-    iput-boolean v3, v2, Lq8/d;->w:Z
+    iput-boolean v3, v2, Lq8/d;->x:Z
 
     .line 6
     iget-object v1, v1, Ln8/c;->d:Le8/b;
@@ -626,7 +626,7 @@
     iget-object v2, v0, Lt8/b;->c:Li7/c;
 
     .line 11
-    iget-object v2, v2, Li7/c;->f:Ljava/lang/Long;
+    iget-object v2, v2, Li7/c;->g:Ljava/lang/Long;
 
     .line 12
     invoke-virtual {v2}, Ljava/lang/Long;->longValue()J
@@ -683,14 +683,14 @@
     iget-object v5, v0, Lt8/b;->c:Li7/c;
 
     .line 19
-    iget-object v5, v5, Li7/c;->f:Ljava/lang/Long;
+    iget-object v5, v5, Li7/c;->g:Ljava/lang/Long;
 
     .line 20
     invoke-virtual {v5}, Ljava/lang/Long;->longValue()J
 
     move-result-wide v5
 
-    iput-wide v5, v3, Lq8/d;->x:J
+    iput-wide v5, v3, Lq8/d;->y:J
 
     .line 21
     invoke-virtual {v3}, Lq8/d;->c()Z
@@ -723,7 +723,7 @@
     .line 25
     iget-object v0, v0, Lt8/b;->e:Le8/b;
 
-    iget-object v1, v4, Lq8/d;->g:Ljava/lang/Long;
+    iget-object v1, v4, Lq8/d;->h:Ljava/lang/Long;
 
     invoke-virtual {v1}, Ljava/lang/Long;->longValue()J
 
@@ -823,13 +823,13 @@
     check-cast v0, Lqa/t;
 
     .line 41
-    iget-object v0, v0, Landroidx/fragment/app/Fragment;->A:Landroidx/fragment/app/Fragment;
+    iget-object v0, v0, Landroidx/fragment/app/Fragment;->B:Landroidx/fragment/app/Fragment;
 
     .line 42
     check-cast v0, Lab/p;
 
     .line 43
-    iget-object v0, v0, Lab/p;->j0:Lpa/b;
+    iget-object v0, v0, Lab/p;->k0:Lpa/b;
 
     .line 44
     invoke-virtual {v0, v1}, Lpa/b;->j(Ljava/util/Map;)V
@@ -850,7 +850,7 @@
     .end annotation
 
     .line 1
-    invoke-static {p1}, Lbc/a;->d(Ljava/util/List;)Z
+    invoke-static {p1}, Lt5/a;->g(Ljava/util/List;)Z
 
     move-result v0
 
@@ -909,12 +909,12 @@
     invoke-direct {v3}, Ljava/util/ArrayList;-><init>()V
 
     .line 7
-    iget-boolean v4, v2, Lq8/d;->B:Z
+    iget-boolean v4, v2, Lq8/d;->C:Z
 
     if-eqz v4, :cond_2
 
     .line 8
-    invoke-virtual {p0, v2}, Lf9/i;->p(Lq8/d;)Lo8/k0;
+    invoke-virtual {p0, v2}, Lf9/i;->p(Lq8/d;)Lo8/m0;
 
     move-result-object v2
 
@@ -924,7 +924,7 @@
 
     .line 9
     :cond_2
-    iget-object v2, v2, Lq8/d;->o:Lcom/helpshift/util/q;
+    iget-object v2, v2, Lq8/d;->p:Lcom/helpshift/util/q;
 
     invoke-virtual {v3, v2}, Ljava/util/ArrayList;->addAll(Ljava/util/Collection;)Z
 
@@ -959,10 +959,10 @@
             "(",
             "Ljava/util/Collection<",
             "+",
-            "Lo8/y;",
+            "Lo8/z;",
             ">;Z)",
             "Ljava/util/List<",
-            "Lo8/y;",
+            "Lo8/z;",
             ">;"
         }
     .end annotation
@@ -996,12 +996,12 @@
     .line 5
     iget-object p2, p0, Lf9/i;->s:Ln8/c;
 
-    invoke-virtual {p2, p1}, Ln8/c;->j(Lq8/d;)Lo8/y;
+    invoke-virtual {p2, p1}, Ln8/c;->j(Lq8/d;)Lo8/z;
 
     move-result-object p1
 
     .line 6
-    iget-object p2, p0, Lf9/i;->h:Lo8/y;
+    iget-object p2, p0, Lf9/i;->h:Lo8/z;
 
     const/4 v2, 0x1
 
@@ -1010,9 +1010,9 @@
     if-eqz p1, :cond_0
 
     .line 7
-    iget-object p2, p2, Lo8/y;->i:Ljava/lang/String;
+    iget-object p2, p2, Lo8/z;->j:Ljava/lang/String;
 
-    iget-object v3, p1, Lo8/y;->i:Ljava/lang/String;
+    iget-object v3, p1, Lo8/z;->j:Ljava/lang/String;
 
     invoke-virtual {p2, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -1029,7 +1029,7 @@
     if-eqz p1, :cond_5
 
     .line 9
-    iget p2, p1, Lo8/y;->g:I
+    iget p2, p1, Lo8/z;->h:I
 
     const/16 v3, 0xf
 
@@ -1054,7 +1054,7 @@
     if-eq p2, v5, :cond_6
 
     .line 11
-    iget v5, p1, Lo8/y;->g:I
+    iget v5, p1, Lo8/z;->h:I
 
     if-ne v5, v3, :cond_2
 
@@ -1064,9 +1064,9 @@
     check-cast v3, Lo8/k;
 
     .line 13
-    new-instance v4, Lo8/z;
+    new-instance v4, Lo8/b0;
 
-    invoke-direct {v4, v3}, Lo8/z;-><init>(Lo8/k;)V
+    invoke-direct {v4, v3}, Lo8/b0;-><init>(Lo8/k;)V
 
     .line 14
     iget-object v5, p0, Lf9/i;->o:La8/f;
@@ -1074,19 +1074,19 @@
     iget-object v6, p0, Lf9/i;->p:Le8/s;
 
     .line 15
-    iput-object v5, v4, Lo8/y;->t:La8/f;
+    iput-object v5, v4, Lo8/z;->u:La8/f;
 
     .line 16
-    iput-object v6, v4, Lo8/y;->u:Le8/s;
+    iput-object v6, v4, Lo8/z;->v:Le8/s;
 
     .line 17
-    iget v3, v3, Lo8/k;->A:I
+    iget v3, v3, Lo8/k;->B:I
 
     add-int/2addr v3, v2
 
     int-to-long v5, v3
 
-    invoke-virtual {p0, v4, p1, v5, v6}, Lf9/i;->x(Lo8/y;Lo8/y;J)V
+    invoke-virtual {p0, v4, p1, v5, v6}, Lf9/i;->x(Lo8/z;Lo8/z;J)V
 
     goto :goto_0
 
@@ -1099,9 +1099,9 @@
     check-cast v3, Lo8/m;
 
     .line 19
-    new-instance v4, Lo8/z;
+    new-instance v4, Lo8/b0;
 
-    invoke-direct {v4, v3}, Lo8/z;-><init>(Lo8/m;)V
+    invoke-direct {v4, v3}, Lo8/b0;-><init>(Lo8/m;)V
 
     .line 20
     iget-object v5, p0, Lf9/i;->o:La8/f;
@@ -1109,19 +1109,19 @@
     iget-object v6, p0, Lf9/i;->p:Le8/s;
 
     .line 21
-    iput-object v5, v4, Lo8/y;->t:La8/f;
+    iput-object v5, v4, Lo8/z;->u:La8/f;
 
     .line 22
-    iput-object v6, v4, Lo8/y;->u:Le8/s;
+    iput-object v6, v4, Lo8/z;->v:Le8/s;
 
     .line 23
-    iget v3, v3, Lo8/m;->A:I
+    iget v3, v3, Lo8/m;->B:I
 
     add-int/2addr v3, v2
 
     int-to-long v5, v3
 
-    invoke-virtual {p0, v4, p1, v5, v6}, Lf9/i;->x(Lo8/y;Lo8/y;J)V
+    invoke-virtual {p0, v4, p1, v5, v6}, Lf9/i;->x(Lo8/z;Lo8/z;J)V
 
     goto :goto_0
 
@@ -1129,12 +1129,12 @@
     :cond_3
     move-object v3, p1
 
-    check-cast v3, Lo8/u;
+    check-cast v3, Lo8/v;
 
     .line 25
-    new-instance v4, Lo8/z;
+    new-instance v4, Lo8/b0;
 
-    invoke-direct {v4, v3}, Lo8/z;-><init>(Lo8/u;)V
+    invoke-direct {v4, v3}, Lo8/b0;-><init>(Lo8/v;)V
 
     .line 26
     iget-object v3, p0, Lf9/i;->o:La8/f;
@@ -1142,21 +1142,21 @@
     iget-object v5, p0, Lf9/i;->p:Le8/s;
 
     .line 27
-    iput-object v3, v4, Lo8/y;->t:La8/f;
+    iput-object v3, v4, Lo8/z;->u:La8/f;
 
     .line 28
-    iput-object v5, v4, Lo8/y;->u:Le8/s;
+    iput-object v5, v4, Lo8/z;->v:Le8/s;
 
     const-wide/16 v5, 0x1
 
     .line 29
-    invoke-virtual {p0, v4, p1, v5, v6}, Lf9/i;->x(Lo8/y;Lo8/y;J)V
+    invoke-virtual {p0, v4, p1, v5, v6}, Lf9/i;->x(Lo8/z;Lo8/z;J)V
 
     .line 30
     :goto_0
-    iget-object v3, v4, Lo8/z;->A:Lp8/c;
+    iget-object v3, v4, Lo8/b0;->B:Lp8/d;
 
-    iget v3, v3, Lp8/c;->k:I
+    iget v3, v3, Lp8/d;->l:I
 
     if-ne v3, v2, :cond_4
 
@@ -1167,13 +1167,13 @@
 
     .line 32
     :cond_4
-    iput-object v4, p0, Lf9/i;->h:Lo8/y;
+    iput-object v4, p0, Lf9/i;->h:Lo8/z;
 
     goto :goto_1
 
     .line 33
     :cond_5
-    iput-object p1, p0, Lf9/i;->h:Lo8/y;
+    iput-object p1, p0, Lf9/i;->h:Lo8/z;
 
     :cond_6
     :goto_1
@@ -1237,10 +1237,10 @@
     move-result-object v0
 
     .line 2
-    iget-object v1, v0, Lq8/d;->h:Ljava/lang/String;
+    iget-object v1, v0, Lq8/d;->i:Ljava/lang/String;
 
     .line 3
-    iget-object v2, v0, Lq8/d;->i:Ljava/lang/String;
+    iget-object v2, v0, Lq8/d;->j:Ljava/lang/String;
 
     .line 4
     new-instance v3, Ljava/util/HashMap;
@@ -1248,16 +1248,16 @@
     invoke-direct {v3}, Ljava/util/HashMap;-><init>()V
 
     .line 5
-    iget-object v4, v0, Lq8/d;->I:Ljava/lang/String;
+    iget-object v4, v0, Lq8/d;->J:Ljava/lang/String;
 
-    invoke-static {v4}, Lcom/google/android/play/core/appupdate/g;->e(Ljava/lang/String;)Z
+    invoke-static {v4}, La5/b0;->g(Ljava/lang/String;)Z
 
     move-result v4
 
     if-eqz v4, :cond_0
 
     .line 6
-    iget-object v0, v0, Lq8/d;->I:Ljava/lang/String;
+    iget-object v0, v0, Lq8/d;->J:Ljava/lang/String;
 
     const-string v4, "acid"
 
@@ -1265,7 +1265,7 @@
 
     .line 7
     :cond_0
-    invoke-static {v1}, Lcom/google/android/play/core/appupdate/g;->e(Ljava/lang/String;)Z
+    invoke-static {v1}, La5/b0;->g(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -1285,7 +1285,7 @@
 
     .line 10
     :cond_1
-    invoke-static {v2}, Lcom/google/android/play/core/appupdate/g;->e(Ljava/lang/String;)Z
+    invoke-static {v2}, La5/b0;->g(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -1327,25 +1327,25 @@
     move-result v1
 
     .line 4
-    iget-object v2, p0, Lf9/i;->q:Lk3/p;
+    iget-object v2, p0, Lf9/i;->q:Lk3/n;
 
     iget-object v3, p0, Lf9/i;->D:Lqb/k;
 
-    invoke-virtual {v2, v3, v0, v1}, Lk3/p;->e(Lqb/k;Lq8/d;Z)V
+    invoke-virtual {v2, v3, v0, v1}, Lk3/n;->e(Lqb/k;Lq8/d;Z)V
 
     .line 5
-    iget-object v2, p0, Lf9/i;->q:Lk3/p;
+    iget-object v2, p0, Lf9/i;->q:Lk3/n;
 
     iget-object v3, p0, Lf9/i;->z:Lqb/g;
 
-    invoke-virtual {v2, v3, v0}, Lk3/p;->c(Lqb/g;Lq8/d;)V
+    invoke-virtual {v2, v3, v0}, Lk3/n;->c(Lqb/g;Lq8/d;)V
 
     .line 6
-    iget-object v2, p0, Lf9/i;->q:Lk3/p;
+    iget-object v2, p0, Lf9/i;->q:Lk3/n;
 
     iget-object v3, p0, Lf9/i;->B:Lqb/h;
 
-    invoke-virtual {v2, v3, v0, v1}, Lk3/p;->d(Lqb/h;Lq8/d;Z)V
+    invoke-virtual {v2, v3, v0, v1}, Lk3/n;->d(Lqb/h;Lq8/d;Z)V
 
     .line 7
     iget-object v1, p0, Lf9/i;->D:Lqb/k;
@@ -1386,16 +1386,16 @@
     move-result-object v2
 
     .line 15
-    iput-object v1, v2, Lq8/d;->G:Ln8/b;
+    iput-object v1, v2, Lq8/d;->H:Ln8/b;
 
     .line 16
-    iget-object v1, v0, Lq8/d;->h:Ljava/lang/String;
+    iget-object v1, v0, Lq8/d;->i:Ljava/lang/String;
 
     const/4 v2, 0x1
 
     if-nez v1, :cond_1
 
-    iget-object v1, v0, Lq8/d;->i:Ljava/lang/String;
+    iget-object v1, v0, Lq8/d;->j:Ljava/lang/String;
 
     if-nez v1, :cond_1
 
@@ -1444,7 +1444,7 @@
     if-eqz v1, :cond_5
 
     .line 23
-    iget-object v1, v0, Lq8/d;->o:Lcom/helpshift/util/q;
+    iget-object v1, v0, Lq8/d;->p:Lcom/helpshift/util/q;
 
     invoke-virtual {v1}, Ljava/util/AbstractCollection;->size()I
 
@@ -1456,18 +1456,18 @@
 
     move-result-object v1
 
-    check-cast v1, Lo8/y;
+    check-cast v1, Lo8/z;
 
     .line 24
-    instance-of v2, v1, Lo8/r0;
+    instance-of v2, v1, Lo8/t0;
 
     if-eqz v2, :cond_4
 
     .line 25
-    check-cast v1, Lo8/r0;
+    check-cast v1, Lo8/t0;
 
     .line 26
-    iget v2, v1, Lo8/r0;->z:I
+    iget v2, v1, Lo8/t0;->A:I
 
     const/4 v4, 0x4
 
@@ -1482,7 +1482,7 @@
     :cond_3
     iget-object v2, p0, Lf9/i;->l:Lt8/b;
 
-    iget-object v0, v0, Lq8/d;->g:Ljava/lang/Long;
+    iget-object v0, v0, Lq8/d;->h:Ljava/lang/Long;
 
     invoke-virtual {v0}, Ljava/lang/Long;->longValue()J
 
@@ -1504,7 +1504,7 @@
     const/4 v0, 0x3
 
     .line 30
-    invoke-virtual {v1, v0}, Lo8/r0;->v(I)V
+    invoke-virtual {v1, v0}, Lo8/t0;->v(I)V
 
     :cond_4
     return-void
@@ -1551,7 +1551,7 @@
     move-result-object v1
 
     .line 35
-    invoke-static {v1}, Lcom/google/android/play/core/appupdate/g;->b(Ljava/lang/String;)Z
+    invoke-static {v1}, La5/b0;->d(Ljava/lang/String;)Z
 
     move-result v7
 
@@ -1562,7 +1562,7 @@
     const-string v5, "Auto-filing preissue with client set user message."
 
     .line 36
-    invoke-static {v3, v5, v4, v4}, Landroidx/savedstate/d;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v3, v5, v4, v4}, Le5/i;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
 
     .line 37
     iget-object v3, p0, Lf9/i;->s:Ln8/c;
@@ -1570,7 +1570,7 @@
     invoke-virtual {v3}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 38
-    iput-boolean v2, v0, Lq8/d;->H:Z
+    iput-boolean v2, v0, Lq8/d;->I:Z
 
     .line 39
     iget-object v2, v3, Ln8/c;->d:Le8/b;
@@ -1619,7 +1619,7 @@
 
     move-result-object v8
 
-    invoke-static {v8}, Lcom/google/android/play/core/appupdate/g;->e(Ljava/lang/String;)Z
+    invoke-static {v8}, La5/b0;->g(Ljava/lang/String;)Z
 
     move-result v8
 
@@ -1646,7 +1646,7 @@
 
     move-result-object v5
 
-    invoke-static {v5}, Lcom/google/android/play/core/appupdate/g;->e(Ljava/lang/String;)Z
+    invoke-static {v5}, La5/b0;->g(Ljava/lang/String;)Z
 
     move-result v5
 
@@ -1704,7 +1704,7 @@
     const-string v5, "Showing smart intent UI"
 
     .line 55
-    invoke-static {v1, v5, v4, v4}, Landroidx/savedstate/d;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v1, v5, v4, v4}, Le5/i;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
 
     .line 56
     iget-object v5, v0, Lf9/i1;->e:Lf9/j1;
@@ -1736,10 +1736,10 @@
     const-string v3, "Restoring smart intent UI state on rotation"
 
     .line 60
-    invoke-static {v1, v3, v4, v4}, Landroidx/savedstate/d;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v1, v3, v4, v4}, Le5/i;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
 
     .line 61
-    iget-boolean v1, v5, Lb9/m;->j:Z
+    iget-boolean v1, v5, Lb9/m;->k:Z
 
     if-eqz v1, :cond_c
 
@@ -1751,7 +1751,7 @@
     iget-object v1, v1, Lb9/i;->d:Ljava/util/Set;
 
     .line 63
-    iget-object v3, v3, Li7/c;->f:Ljava/lang/Long;
+    iget-object v3, v3, Li7/c;->g:Ljava/lang/Long;
 
     .line 64
     invoke-interface {v1, v3}, Ljava/util/Set;->contains(Ljava/lang/Object;)Z
@@ -1794,7 +1794,7 @@
     .line 70
     iget-object v1, v0, Lf9/i1;->o:Lb9/m;
 
-    iget-object v3, v1, Lb9/m;->g:Ljava/lang/Long;
+    iget-object v3, v1, Lb9/m;->h:Ljava/lang/Long;
 
     if-eqz v3, :cond_e
 
@@ -1809,7 +1809,7 @@
 
     .line 72
     :cond_e
-    iget-boolean v1, v1, Lb9/m;->f:Z
+    iget-boolean v1, v1, Lb9/m;->g:Z
 
     if-eqz v1, :cond_f
 
@@ -1821,9 +1821,9 @@
     :goto_3
     iget-object v1, v0, Lf9/i1;->o:Lb9/m;
 
-    iget-object v1, v1, Lb9/m;->h:Ljava/lang/String;
+    iget-object v1, v1, Lb9/m;->i:Ljava/lang/String;
 
-    invoke-static {v1}, Lcom/google/android/play/core/appupdate/g;->e(Ljava/lang/String;)Z
+    invoke-static {v1}, La5/b0;->g(Ljava/lang/String;)Z
 
     move-result v1
 
@@ -1832,7 +1832,7 @@
     .line 75
     iget-object v1, v0, Lf9/i1;->o:Lb9/m;
 
-    iget-boolean v3, v1, Lb9/m;->i:Z
+    iget-boolean v3, v1, Lb9/m;->j:Z
 
     if-nez v3, :cond_10
 
@@ -1843,7 +1843,7 @@
     :cond_10
     iget-object v3, v0, Lf9/i1;->h:Lqb/l;
 
-    iget-object v1, v1, Lb9/m;->h:Ljava/lang/String;
+    iget-object v1, v1, Lb9/m;->i:Ljava/lang/String;
 
     invoke-virtual {v3, v1}, Lqb/l;->d(Ljava/lang/String;)V
 
@@ -1973,7 +1973,7 @@
     iget-object v4, v1, Lb9/i;->d:Ljava/util/Set;
 
     .line 96
-    iget-object v5, v3, Li7/c;->f:Ljava/lang/Long;
+    iget-object v5, v3, Li7/c;->g:Ljava/lang/Long;
 
     .line 97
     invoke-interface {v4, v5}, Ljava/util/Set;->contains(Ljava/lang/Object;)Z
@@ -1989,7 +1989,7 @@
     iget-object v4, v1, Lb9/i;->d:Ljava/util/Set;
 
     .line 99
-    iget-object v5, v3, Li7/c;->f:Ljava/lang/Long;
+    iget-object v5, v3, Li7/c;->g:Ljava/lang/Long;
 
     .line 100
     invoke-interface {v4, v5}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
@@ -2021,7 +2021,7 @@
     if-eqz v1, :cond_18
 
     .line 104
-    iget-object v0, v0, Lq8/d;->o:Lcom/helpshift/util/q;
+    iget-object v0, v0, Lq8/d;->p:Lcom/helpshift/util/q;
 
     invoke-virtual {p0, v0}, Lf9/i;->o(Ljava/util/Collection;)Ljava/util/List;
 
@@ -2070,7 +2070,7 @@
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     .line 6
-    invoke-static {v1}, Lbc/a;->d(Ljava/util/List;)Z
+    invoke-static {v1}, Lt5/a;->g(Ljava/util/List;)Z
 
     move-result v2
 
@@ -2093,10 +2093,10 @@
 
     move-result-object v2
 
-    check-cast v2, Lo8/y;
+    check-cast v2, Lo8/z;
 
     .line 8
-    iget v3, v2, Lo8/y;->g:I
+    iget v3, v2, Lo8/z;->h:I
 
     const/16 v4, 0x12
 
@@ -2132,7 +2132,7 @@
     iget-object v0, v0, Lqb/p;->c:Ljava/lang/String;
 
     .line 3
-    invoke-static {v0}, Lcom/google/android/play/core/appupdate/g;->b(Ljava/lang/String;)Z
+    invoke-static {v0}, La5/b0;->d(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -2155,7 +2155,7 @@
     .line 1
     iget-object v0, p0, Lf9/i;->C:Lqb/g;
 
-    iget-object v1, p0, Lf9/i;->q:Lk3/p;
+    iget-object v1, p0, Lf9/i;->q:Lk3/n;
 
     iget-object v2, p0, Lf9/i;->k:Ln8/p;
 
@@ -2173,7 +2173,7 @@
 
     if-nez v2, :cond_0
 
-    invoke-virtual {v1}, Lk3/p;->a()Z
+    invoke-virtual {v1}, Lk3/n;->a()Z
 
     move-result v1
 
@@ -2211,16 +2211,16 @@
     if-eqz v0, :cond_0
 
     .line 3
-    iget-object v2, v0, Lq8/d;->I:Ljava/lang/String;
+    iget-object v2, v0, Lq8/d;->J:Ljava/lang/String;
 
-    invoke-static {v2}, Lcom/google/android/play/core/appupdate/g;->e(Ljava/lang/String;)Z
+    invoke-static {v2}, La5/b0;->g(Ljava/lang/String;)Z
 
     move-result v2
 
     if-eqz v2, :cond_0
 
     .line 4
-    iget-object v0, v0, Lq8/d;->I:Ljava/lang/String;
+    iget-object v0, v0, Lq8/d;->J:Ljava/lang/String;
 
     const-string v2, "acid"
 
@@ -2295,7 +2295,7 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lcom/google/android/play/core/appupdate/g;->b(Ljava/lang/String;)Z
+    invoke-static {v0}, La5/b0;->d(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -2311,7 +2311,7 @@
     iget-object v0, v0, Lt8/b;->c:Li7/c;
 
     .line 3
-    iget-object v0, v0, Li7/c;->f:Ljava/lang/Long;
+    iget-object v0, v0, Li7/c;->g:Ljava/lang/Long;
 
     .line 4
     invoke-virtual {v0}, Ljava/lang/Long;->longValue()J
@@ -2605,7 +2605,7 @@
     if-eqz v0, :cond_5
 
     .line 2
-    iget-object v0, p0, Lf9/i;->h:Lo8/y;
+    iget-object v0, p0, Lf9/i;->h:Lo8/z;
 
     if-nez v0, :cond_0
 
@@ -2625,7 +2625,7 @@
     move-result-object v0
 
     .line 5
-    iget-object v3, v0, Lq8/d;->l:Lu8/e;
+    iget-object v3, v0, Lq8/d;->m:Lu8/e;
 
     invoke-static {v3}, Lm8/c;->d(Lu8/e;)Z
 
@@ -2633,21 +2633,21 @@
 
     if-nez v3, :cond_1
 
-    iget-object v3, v0, Lq8/d;->l:Lu8/e;
+    iget-object v3, v0, Lq8/d;->m:Lu8/e;
 
-    sget-object v4, Lu8/e;->k:Lu8/e;
+    sget-object v4, Lu8/e;->l:Lu8/e;
 
     if-ne v3, v4, :cond_8
 
-    iget-boolean v0, v0, Lq8/d;->O:Z
+    iget-boolean v0, v0, Lq8/d;->P:Z
 
     if-eqz v0, :cond_8
 
     .line 6
     :cond_1
-    iget-object v0, p0, Lf9/i;->h:Lo8/y;
+    iget-object v0, p0, Lf9/i;->h:Lo8/z;
 
-    iget v3, v0, Lo8/y;->g:I
+    iget v3, v0, Lo8/z;->h:I
 
     const/16 v4, 0xe
 
@@ -2659,14 +2659,14 @@
     .line 8
     iget-object v2, p0, Lf9/i;->D:Lqb/k;
 
-    iget-object v0, v0, Lo8/l;->A:Lp8/e;
+    iget-object v0, v0, Lo8/l;->B:Lp8/f;
 
     if-eqz v0, :cond_2
 
     .line 9
-    iget-object v3, v2, Lqb/o;->e:Lp8/b;
+    iget-object v3, v2, Lqb/o;->e:Lp8/c;
 
-    invoke-virtual {v0, v3}, Lp8/e;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v0, v3}, Lp8/f;->equals(Ljava/lang/Object;)Z
 
     move-result v3
 
@@ -2677,7 +2677,7 @@
     iput-boolean v1, v2, Lqb/a;->d:Z
 
     .line 11
-    iput-object v0, v2, Lqb/o;->e:Lp8/b;
+    iput-object v0, v2, Lqb/o;->e:Lp8/c;
 
     .line 12
     invoke-virtual {v2, v2}, Lqb/c;->a(Ljava/lang/Object;)V
@@ -2722,7 +2722,7 @@
     if-eqz v3, :cond_7
 
     .line 17
-    iget-object v4, v0, Lqb/o;->e:Lp8/b;
+    iget-object v4, v0, Lqb/o;->e:Lp8/c;
 
     if-nez v4, :cond_6
 
@@ -2734,7 +2734,7 @@
     const/4 v3, 0x0
 
     .line 18
-    iput-object v3, v0, Lqb/o;->e:Lp8/b;
+    iput-object v3, v0, Lqb/o;->e:Lp8/c;
 
     .line 19
     iput-boolean v1, v0, Lqb/a;->d:Z
@@ -2775,7 +2775,7 @@
     const/4 v2, 0x0
 
     .line 2
-    invoke-static {v1, v0, v2, v2}, Landroidx/savedstate/d;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v1, v0, v2, v2}, Le5/i;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
 
     .line 3
     iget-object v0, p0, Lf9/i;->n:Ln8/l;
@@ -2866,7 +2866,7 @@
 
     move-result-object v6
 
-    invoke-static {v2, v6, v4}, Lcom/helpshift/util/g0;->e(Landroid/content/Context;Landroid/graphics/drawable/Drawable;I)V
+    invoke-static {v2, v6, v4}, Lcom/helpshift/util/e0;->e(Landroid/content/Context;Landroid/graphics/drawable/Drawable;I)V
 
     .line 18
     iget-object v2, v1, Lta/a;->t:Landroidx/recyclerview/widget/RecyclerView;
@@ -3005,7 +3005,7 @@
     iget-object v6, v1, Lta/a;->j:Landroid/view/View;
 
     .line 43
-    invoke-static {v6}, Lcom/helpshift/util/t;->b(Landroid/view/View;)Z
+    invoke-static {v6}, Lcom/helpshift/util/s;->b(Landroid/view/View;)Z
 
     move-result v6
 
@@ -3031,7 +3031,7 @@
 
     move-result-object v6
 
-    invoke-static {v2, v6, v4}, Lcom/helpshift/util/g0;->e(Landroid/content/Context;Landroid/graphics/drawable/Drawable;I)V
+    invoke-static {v2, v6, v4}, Lcom/helpshift/util/e0;->e(Landroid/content/Context;Landroid/graphics/drawable/Drawable;I)V
 
     .line 46
     iget-object v2, v1, Lta/a;->t:Landroidx/recyclerview/widget/RecyclerView;
@@ -3135,12 +3135,12 @@
 
     move-result-object v8
 
-    invoke-static {v2, v8, v4}, Lcom/helpshift/util/g0;->e(Landroid/content/Context;Landroid/graphics/drawable/Drawable;I)V
+    invoke-static {v2, v8, v4}, Lcom/helpshift/util/e0;->e(Landroid/content/Context;Landroid/graphics/drawable/Drawable;I)V
 
     .line 64
     iget-object v2, p1, Lb9/o;->d:Ljava/util/List;
 
-    invoke-static {v2}, Lbc/a;->d(Ljava/util/List;)Z
+    invoke-static {v2}, Lt5/a;->g(Ljava/util/List;)Z
 
     move-result v2
 
@@ -3347,10 +3347,10 @@
     move-result-object v0
 
     .line 2
-    iget-object v1, v0, Lq8/d;->l:Lu8/e;
+    iget-object v1, v0, Lq8/d;->m:Lu8/e;
 
     .line 3
-    sget-object v2, Lu8/e;->l:Lu8/e;
+    sget-object v2, Lu8/e;->m:Lu8/e;
 
     const/4 v3, 0x0
 
@@ -3365,20 +3365,20 @@
 
     .line 5
     :cond_0
-    sget-object v2, Lu8/e;->k:Lu8/e;
+    sget-object v2, Lu8/e;->l:Lu8/e;
 
     if-ne v1, v2, :cond_1
 
-    iget-boolean v5, v0, Lq8/d;->O:Z
+    iget-boolean v5, v0, Lq8/d;->P:Z
 
     if-eqz v5, :cond_9
 
     :cond_1
-    sget-object v5, Lu8/e;->o:Lu8/e;
+    sget-object v5, Lu8/e;->p:Lu8/e;
 
     if-eq v1, v5, :cond_9
 
-    sget-object v5, Lu8/e;->n:Lu8/e;
+    sget-object v5, Lu8/e;->o:Lu8/e;
 
     if-ne v1, v5, :cond_2
 
@@ -3390,7 +3390,7 @@
 
     if-nez v5, :cond_5
 
-    iget-boolean v5, v0, Lq8/d;->O:Z
+    iget-boolean v5, v0, Lq8/d;->P:Z
 
     if-eqz v5, :cond_3
 
@@ -3406,9 +3406,9 @@
 
     if-eqz v1, :cond_4
 
-    iget-object v0, v0, Lq8/d;->i:Ljava/lang/String;
+    iget-object v0, v0, Lq8/d;->j:Ljava/lang/String;
 
-    invoke-static {v0}, Lcom/google/android/play/core/appupdate/g;->b(Ljava/lang/String;)Z
+    invoke-static {v0}, La5/b0;->d(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -3452,7 +3452,7 @@
     if-eqz v1, :cond_8
 
     .line 15
-    iget-object v1, v0, Lq8/d;->o:Lcom/helpshift/util/q;
+    iget-object v1, v0, Lq8/d;->p:Lcom/helpshift/util/q;
 
     invoke-virtual {v1}, Ljava/util/AbstractCollection;->size()I
 
@@ -3461,7 +3461,7 @@
     if-lez v1, :cond_8
 
     .line 16
-    iget-object v0, v0, Lq8/d;->o:Lcom/helpshift/util/q;
+    iget-object v0, v0, Lq8/d;->p:Lcom/helpshift/util/q;
 
     sub-int/2addr v1, v4
 
@@ -3469,23 +3469,23 @@
 
     move-result-object v0
 
-    check-cast v0, Lo8/y;
+    check-cast v0, Lo8/z;
 
     .line 17
-    instance-of v1, v0, Lo8/u0;
+    instance-of v1, v0, Lo8/w0;
 
     if-nez v1, :cond_7
 
-    instance-of v1, v0, Lo8/t0;
+    instance-of v1, v0, Lo8/v0;
 
     if-eqz v1, :cond_8
 
     .line 18
     :cond_7
-    check-cast v0, Lo8/r0;
+    check-cast v0, Lo8/t0;
 
     .line 19
-    iget v0, v0, Lo8/r0;->z:I
+    iget v0, v0, Lo8/t0;->A:I
 
     const/4 v1, 0x4
 
@@ -3525,7 +3525,7 @@
     const-string v1, "Error filing a pre-issue"
 
     .line 1
-    invoke-static {v0, v1, p1}, Landroidx/savedstate/d;->g(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v0, v1, p1}, Le5/i;->i(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
     .line 2
     iget-object p1, p0, Lf9/i;->o:La8/f;
@@ -3546,7 +3546,7 @@
             "(",
             "Ljava/util/Collection<",
             "+",
-            "Lo8/y;",
+            "Lo8/z;",
             ">;)V"
         }
     .end annotation
@@ -3574,7 +3574,7 @@
     const/4 v2, 0x0
 
     .line 3
-    invoke-static {v1, v0, v2, v2}, Landroidx/savedstate/d;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v1, v0, v2, v2}, Le5/i;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
 
     .line 4
     iget-object v0, p0, Lf9/i;->k:Ln8/p;
@@ -3625,10 +3625,10 @@
 
     move-result-object v6
 
-    check-cast v6, Lo8/y;
+    check-cast v6, Lo8/z;
 
     .line 11
-    iget v7, v6, Lo8/y;->g:I
+    iget v7, v6, Lo8/z;->h:I
 
     const/16 v8, 0x14
 
@@ -3638,7 +3638,7 @@
     check-cast v6, Lo8/f;
 
     .line 13
-    iget-object v6, v6, Lo8/f;->z:Ljava/lang/String;
+    iget-object v6, v6, Lo8/f;->A:Ljava/lang/String;
 
     const-string v7, "bot_ended"
 
@@ -3781,7 +3781,7 @@
     invoke-virtual {p0}, Lf9/i;->n()V
 
     .line 3
-    invoke-static {p3}, Lbc/a;->e(Ljava/util/List;)Z
+    invoke-static {p3}, Lt5/a;->h(Ljava/util/List;)Z
 
     move-result v0
 
@@ -3807,24 +3807,24 @@
     const-string v0, "Adding first user message via smart intent to DB and UI."
 
     .line 5
-    invoke-static {v5, v0, v6, v6}, Landroidx/savedstate/d;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v5, v0, v6, v6}, Le5/i;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
 
     .line 6
     iget-object v0, p2, Ln8/c;->a:Le8/s;
 
-    invoke-static {v0}, Li8/b;->c(Le8/s;)Lcom/helpshift/util/h0;
+    invoke-static {v0}, Li8/b;->c(Le8/s;)Lcom/helpshift/util/f0;
 
     move-result-object v0
 
     .line 7
-    iget-object v5, v0, Lcom/helpshift/util/h0;->a:Ljava/lang/Object;
+    iget-object v5, v0, Lcom/helpshift/util/f0;->a:Ljava/lang/Object;
 
     move-object v8, v5
 
     check-cast v8, Ljava/lang/String;
 
     .line 8
-    iget-object v0, v0, Lcom/helpshift/util/h0;->b:Ljava/lang/Object;
+    iget-object v0, v0, Lcom/helpshift/util/f0;->b:Ljava/lang/Object;
 
     check-cast v0, Ljava/lang/Long;
 
@@ -3833,17 +3833,17 @@
     move-result-wide v9
 
     .line 9
-    new-instance v0, Lo8/v0;
+    new-instance v0, Lo8/x0;
 
-    new-instance v11, Lo8/o;
+    new-instance v11, Lo8/p;
 
-    invoke-direct {v11, v4, v3, v2}, Lo8/o;-><init>(Ljava/lang/String;Ljava/lang/String;I)V
+    invoke-direct {v11, v4, v3, v2}, Lo8/p;-><init>(Ljava/lang/String;Ljava/lang/String;I)V
 
     move-object v6, v0
 
     move-object v7, p3
 
-    invoke-direct/range {v6 .. v11}, Lo8/v0;-><init>(Ljava/util/List;Ljava/lang/String;JLo8/o;)V
+    invoke-direct/range {v6 .. v11}, Lo8/x0;-><init>(Ljava/util/List;Ljava/lang/String;JLo8/p;)V
 
     .line 10
     iget-object p3, p2, Ln8/c;->b:La8/f;
@@ -3851,21 +3851,21 @@
     iget-object v2, p2, Ln8/c;->a:Le8/s;
 
     .line 11
-    iput-object p3, v0, Lo8/y;->t:La8/f;
+    iput-object p3, v0, Lo8/z;->u:La8/f;
 
     .line 12
-    iput-object v2, v0, Lo8/y;->u:Le8/s;
+    iput-object v2, v0, Lo8/z;->v:Le8/s;
 
     .line 13
-    iget-object p3, p1, Lq8/d;->g:Ljava/lang/Long;
+    iget-object p3, p1, Lq8/d;->h:Ljava/lang/Long;
 
-    iput-object p3, v0, Lo8/y;->l:Ljava/lang/Long;
+    iput-object p3, v0, Lo8/z;->m:Ljava/lang/Long;
 
     .line 14
-    invoke-virtual {v0, v1}, Lo8/r0;->v(I)V
+    invoke-virtual {v0, v1}, Lo8/t0;->v(I)V
 
     .line 15
-    invoke-virtual {p2, p1, v0}, Ln8/c;->b(Lq8/d;Lo8/y;)V
+    invoke-virtual {p2, p1, v0}, Ln8/c;->b(Lq8/d;Lo8/z;)V
 
     goto :goto_0
 
@@ -3878,24 +3878,24 @@
     const-string v0, "Adding first user message to DB and UI."
 
     .line 17
-    invoke-static {v5, v0, v6, v6}, Landroidx/savedstate/d;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v5, v0, v6, v6}, Le5/i;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
 
     .line 18
     iget-object v0, p3, Ln8/c;->a:Le8/s;
 
-    invoke-static {v0}, Li8/b;->c(Le8/s;)Lcom/helpshift/util/h0;
+    invoke-static {v0}, Li8/b;->c(Le8/s;)Lcom/helpshift/util/f0;
 
     move-result-object v0
 
     .line 19
-    iget-object v5, v0, Lcom/helpshift/util/h0;->a:Ljava/lang/Object;
+    iget-object v5, v0, Lcom/helpshift/util/f0;->a:Ljava/lang/Object;
 
     move-object v8, v5
 
     check-cast v8, Ljava/lang/String;
 
     .line 20
-    iget-object v0, v0, Lcom/helpshift/util/h0;->b:Ljava/lang/Object;
+    iget-object v0, v0, Lcom/helpshift/util/f0;->b:Ljava/lang/Object;
 
     check-cast v0, Ljava/lang/Long;
 
@@ -3904,18 +3904,18 @@
     move-result-wide v9
 
     .line 21
-    new-instance v11, Lo8/o;
+    new-instance v11, Lo8/p;
 
-    invoke-direct {v11, v4, v3, v2}, Lo8/o;-><init>(Ljava/lang/String;Ljava/lang/String;I)V
+    invoke-direct {v11, v4, v3, v2}, Lo8/p;-><init>(Ljava/lang/String;Ljava/lang/String;I)V
 
     .line 22
-    new-instance v0, Lo8/r0;
+    new-instance v0, Lo8/t0;
 
     move-object v6, v0
 
     move-object v7, p2
 
-    invoke-direct/range {v6 .. v11}, Lo8/r0;-><init>(Ljava/lang/String;Ljava/lang/String;JLo8/o;)V
+    invoke-direct/range {v6 .. v11}, Lo8/t0;-><init>(Ljava/lang/String;Ljava/lang/String;JLo8/p;)V
 
     .line 23
     iget-object p2, p3, Ln8/c;->b:La8/f;
@@ -3923,21 +3923,21 @@
     iget-object v2, p3, Ln8/c;->a:Le8/s;
 
     .line 24
-    iput-object p2, v0, Lo8/y;->t:La8/f;
+    iput-object p2, v0, Lo8/z;->u:La8/f;
 
     .line 25
-    iput-object v2, v0, Lo8/y;->u:Le8/s;
+    iput-object v2, v0, Lo8/z;->v:Le8/s;
 
     .line 26
-    iget-object p2, p1, Lq8/d;->g:Ljava/lang/Long;
+    iget-object p2, p1, Lq8/d;->h:Ljava/lang/Long;
 
-    iput-object p2, v0, Lo8/y;->l:Ljava/lang/Long;
+    iput-object p2, v0, Lo8/z;->m:Ljava/lang/Long;
 
     .line 27
-    invoke-virtual {v0, v1}, Lo8/r0;->v(I)V
+    invoke-virtual {v0, v1}, Lo8/t0;->v(I)V
 
     .line 28
-    invoke-virtual {p3, p1, v0}, Ln8/c;->b(Lq8/d;Lo8/y;)V
+    invoke-virtual {p3, p1, v0}, Ln8/c;->b(Lq8/d;Lo8/z;)V
 
     :goto_0
     return-void
@@ -3997,7 +3997,7 @@
     .line 4
     iget-object v2, v1, Lt8/b;->f:Ls8/a;
 
-    iget-object v0, v0, Lq8/d;->j:Ljava/lang/String;
+    iget-object v0, v0, Lq8/d;->k:Ljava/lang/String;
 
     check-cast v2, Le8/c;
 
@@ -4108,7 +4108,7 @@
 
     .line 5
     :cond_0
-    invoke-static {p3}, Lbc/a;->d(Ljava/util/List;)Z
+    invoke-static {p3}, Lt5/a;->g(Ljava/util/List;)Z
 
     move-result v0
 
@@ -4159,7 +4159,7 @@
     const/4 v2, 0x0
 
     .line 1
-    invoke-static {v0, v1, v2, v2}, Landroidx/savedstate/d;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v0, v1, v2, v2}, Le5/i;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
 
     .line 2
     iget-object v0, p0, Lf9/i;->k:Ln8/p;
@@ -4201,7 +4201,7 @@
     const-string v2, "Trigger preissue creation via Smart intent"
 
     .line 1
-    invoke-static {v1, v2, v0, v0}, Landroidx/savedstate/d;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v1, v2, v0, v0}, Le5/i;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
 
     .line 2
     iget-object v0, p0, Lf9/i;->k:Ln8/p;
@@ -4216,13 +4216,13 @@
     invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 4
-    iput-object p1, v0, Lq8/d;->K:Ljava/lang/String;
+    iput-object p1, v0, Lq8/d;->L:Ljava/lang/String;
 
     .line 5
-    iput-object p2, v0, Lq8/d;->J:Ljava/util/List;
+    iput-object p2, v0, Lq8/d;->K:Ljava/util/List;
 
     .line 6
-    iput-object p4, v0, Lq8/d;->L:Ljava/lang/String;
+    iput-object p4, v0, Lq8/d;->M:Ljava/lang/String;
 
     .line 7
     iget-object p1, v1, Ln8/c;->d:Le8/b;
@@ -4274,10 +4274,10 @@
             "(",
             "Ljava/util/Collection<",
             "+",
-            "Lo8/y;",
+            "Lo8/z;",
             ">;)",
             "Ljava/util/List<",
-            "Lo8/y;",
+            "Lo8/z;",
             ">;"
         }
     .end annotation
@@ -4330,7 +4330,7 @@
 
     if-eqz v1, :cond_4
 
-    iget-boolean v2, v0, Lq8/d;->O:Z
+    iget-boolean v2, v0, Lq8/d;->P:Z
 
     if-nez v2, :cond_0
 
@@ -4364,7 +4364,7 @@
     invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
 
     .line 15
-    invoke-static {v2}, Lbc/a;->d(Ljava/util/List;)Z
+    invoke-static {v2}, Lt5/a;->g(Ljava/util/List;)Z
 
     move-result v3
 
@@ -4387,10 +4387,10 @@
 
     move-result-object v3
 
-    check-cast v3, Lo8/y;
+    check-cast v3, Lo8/z;
 
     .line 17
-    iget v4, v3, Lo8/y;->g:I
+    iget v4, v3, Lo8/z;->h:I
 
     const/16 v5, 0x20
 
@@ -4420,7 +4420,7 @@
     iget-object v0, p0, Lf9/i;->D:Lqb/k;
 
     .line 22
-    iget-object v1, v0, Lqb/o;->e:Lp8/b;
+    iget-object v1, v0, Lqb/o;->e:Lp8/c;
 
     if-nez v1, :cond_5
 
@@ -4434,7 +4434,7 @@
     const/4 v1, 0x0
 
     .line 23
-    iput-object v1, v0, Lqb/o;->e:Lp8/b;
+    iput-object v1, v0, Lqb/o;->e:Lp8/c;
 
     const/4 v1, 0x1
 
@@ -4479,20 +4479,20 @@
     return-object p1
 .end method
 
-.method public final p(Lq8/d;)Lo8/k0;
+.method public final p(Lq8/d;)Lo8/m0;
     .locals 4
 
     .line 1
-    new-instance v0, Lo8/k0;
+    new-instance v0, Lo8/m0;
 
     .line 2
-    iget-object v1, p1, Lq8/d;->D:Ljava/lang/String;
+    iget-object v1, p1, Lq8/d;->E:Ljava/lang/String;
 
     .line 3
-    iget-wide v2, p1, Lq8/d;->E:J
+    iget-wide v2, p1, Lq8/d;->F:J
 
     .line 4
-    invoke-direct {v0, v1, v2, v3}, Lo8/k0;-><init>(Ljava/lang/String;J)V
+    invoke-direct {v0, v1, v2, v3}, Lo8/m0;-><init>(Ljava/lang/String;J)V
 
     .line 5
     iget-object v1, p0, Lf9/i;->o:La8/f;
@@ -4500,15 +4500,15 @@
     iget-object v2, p0, Lf9/i;->p:Le8/s;
 
     .line 6
-    iput-object v1, v0, Lo8/y;->t:La8/f;
+    iput-object v1, v0, Lo8/z;->u:La8/f;
 
     .line 7
-    iput-object v2, v0, Lo8/y;->u:Le8/s;
+    iput-object v2, v0, Lo8/z;->v:Le8/s;
 
     .line 8
-    iget-object p1, p1, Lq8/d;->g:Ljava/lang/Long;
+    iget-object p1, p1, Lq8/d;->h:Ljava/lang/Long;
 
-    iput-object p1, v0, Lo8/y;->l:Ljava/lang/Long;
+    iput-object p1, v0, Lo8/z;->m:Ljava/lang/Long;
 
     return-object v0
 .end method
@@ -4522,7 +4522,7 @@
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 2
-    iget v1, p1, Lo8/y;->g:I
+    iget v1, p1, Lo8/z;->h:I
 
     invoke-static {v1}, Lp/g;->b(I)I
 
@@ -4552,7 +4552,7 @@
     iget-object v0, v0, Ln8/p;->g:Lf9/g;
 
     .line 5
-    iget v1, p1, Lo8/h;->J:I
+    iget v1, p1, Lo8/h;->K:I
 
     const/4 v5, 0x5
 
@@ -4565,7 +4565,7 @@
 
     move-result-object v1
 
-    iget-object p1, p1, Lo8/n;->z:Ljava/lang/String;
+    iget-object p1, p1, Lo8/n;->A:Ljava/lang/String;
 
     check-cast v0, Lf9/i;
 
@@ -4589,16 +4589,16 @@
     .line 8
     new-instance v0, Lt9/a;
 
-    iget-object v1, p1, Lo8/n;->B:Ljava/lang/String;
+    iget-object v1, p1, Lo8/n;->C:Ljava/lang/String;
 
-    iget-object v2, p1, Lo8/n;->z:Ljava/lang/String;
+    iget-object v2, p1, Lo8/n;->A:Ljava/lang/String;
 
-    iget-boolean v3, p1, Lo8/n;->E:Z
+    iget-boolean v3, p1, Lo8/n;->F:Z
 
     invoke-direct {v0, v1, v2, v3}, Lt9/a;-><init>(Ljava/lang/String;Ljava/lang/String;Z)V
 
     .line 9
-    iget-object v1, p1, Lo8/y;->u:Le8/s;
+    iget-object v1, p1, Lo8/z;->v:Le8/s;
 
     check-cast v1, Le8/j;
 
@@ -4608,9 +4608,9 @@
 
     new-instance v2, Lc8/a;
 
-    iget-object v3, p1, Lo8/y;->t:La8/f;
+    iget-object v3, p1, Lo8/z;->u:La8/f;
 
-    iget-object v5, p1, Lo8/y;->u:Le8/s;
+    iget-object v5, p1, Lo8/z;->v:Le8/s;
 
     invoke-direct {v2, v3, v5}, Lc8/a;-><init>(La8/f;Le8/s;)V
 
@@ -4633,7 +4633,7 @@
     iget-object v0, v0, Ln8/p;->g:Lf9/g;
 
     .line 13
-    iget v1, p1, Lo8/e;->H:I
+    iget v1, p1, Lo8/e;->I:I
 
     if-ne v1, v3, :cond_4
 
@@ -4644,7 +4644,7 @@
 
     move-result-object v1
 
-    iget-object p1, p1, Lo8/n;->z:Ljava/lang/String;
+    iget-object p1, p1, Lo8/n;->A:Ljava/lang/String;
 
     check-cast v0, Lf9/i;
 
@@ -4661,16 +4661,16 @@
     .line 16
     new-instance v0, Lt9/a;
 
-    iget-object v1, p1, Lo8/n;->B:Ljava/lang/String;
+    iget-object v1, p1, Lo8/n;->C:Ljava/lang/String;
 
-    iget-object v2, p1, Lo8/n;->z:Ljava/lang/String;
+    iget-object v2, p1, Lo8/n;->A:Ljava/lang/String;
 
-    iget-boolean v3, p1, Lo8/n;->E:Z
+    iget-boolean v3, p1, Lo8/n;->F:Z
 
     invoke-direct {v0, v1, v2, v3}, Lt9/a;-><init>(Ljava/lang/String;Ljava/lang/String;Z)V
 
     .line 17
-    iget-object v1, p1, Lo8/y;->u:Le8/s;
+    iget-object v1, p1, Lo8/z;->v:Le8/s;
 
     check-cast v1, Le8/j;
 
@@ -4680,9 +4680,9 @@
 
     new-instance v2, Lc8/a;
 
-    iget-object v3, p1, Lo8/y;->t:La8/f;
+    iget-object v3, p1, Lo8/z;->u:La8/f;
 
-    iget-object v5, p1, Lo8/y;->u:Le8/s;
+    iget-object v5, p1, Lo8/z;->v:Le8/s;
 
     invoke-direct {v2, v3, v5}, Lc8/a;-><init>(La8/f;Le8/s;)V
 
@@ -4725,7 +4725,7 @@
     const-string v3, "On user pressed back button"
 
     .line 3
-    invoke-static {v2, v3, v1, v1}, Landroidx/savedstate/d;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v2, v3, v1, v1}, Le5/i;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
 
     .line 4
     iget-object v2, v0, Lf9/i1;->n:Lo/e;
@@ -4818,14 +4818,14 @@
     .line 17
     iget-object v3, v0, Lf9/i1;->q:Lq8/d;
 
-    iget-object v3, v3, Lq8/d;->I:Ljava/lang/String;
+    iget-object v3, v3, Lq8/d;->J:Ljava/lang/String;
 
     const-string v4, "acid"
 
     invoke-virtual {v2, v4, v3}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 18
-    invoke-static {v1}, Lbc/a;->e(Ljava/util/List;)Z
+    invoke-static {v1}, Lt5/a;->h(Ljava/util/List;)Z
 
     move-result v3
 
@@ -4912,7 +4912,7 @@
     invoke-virtual {v1, v2}, Lt8/b;->E(Ljava/lang/String;)V
 
     .line 3
-    iget-boolean v0, v0, Lq8/d;->B:Z
+    iget-boolean v0, v0, Lq8/d;->C:Z
 
     if-eqz v0, :cond_0
 
@@ -4935,7 +4935,7 @@
     return-void
 .end method
 
-.method public final t(Lo8/z;Lp8/c$a;Z)V
+.method public final t(Lo8/b0;Lp8/d$a;Z)V
     .locals 4
 
     .line 1
@@ -4947,9 +4947,9 @@
 
     .line 2
     :cond_0
-    iget-object v1, p1, Lo8/z;->A:Lp8/c;
+    iget-object v1, p1, Lo8/b0;->B:Lp8/d;
 
-    iget v1, v1, Lp8/c;->k:I
+    iget v1, v1, Lp8/d;->l:I
 
     const/4 v2, 0x1
 
@@ -4986,9 +4986,9 @@
     invoke-virtual {p0}, Lf9/i;->U()V
 
     .line 8
-    iget-object v0, p1, Lo8/z;->A:Lp8/c;
+    iget-object v0, p1, Lo8/b0;->B:Lp8/d;
 
-    iget v0, v0, Lp8/c;->k:I
+    iget v0, v0, Lp8/d;->l:I
 
     if-ne v0, v2, :cond_2
 
@@ -5012,7 +5012,7 @@
 
     new-instance v1, Lf9/i$b;
 
-    invoke-direct {v1, p0, p1, p2, p3}, Lf9/i$b;-><init>(Lf9/i;Lo8/z;Lp8/c$a;Z)V
+    invoke-direct {v1, p0, p1, p2, p3}, Lf9/i$b;-><init>(Lf9/i;Lo8/b0;Lp8/d$a;Z)V
 
     invoke-virtual {v0, v1}, La8/f;->h(La8/g;)V
 
@@ -5071,7 +5071,7 @@
     const-string v2, "hideSmartIntentView called"
 
     .line 1
-    invoke-static {v1, v2, v0, v0}, Landroidx/savedstate/d;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v1, v2, v0, v0}, Le5/i;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
 
     .line 2
     iget-object v0, p0, Lf9/i;->n:Ln8/l;
@@ -5107,14 +5107,14 @@
     return-void
 .end method
 
-.method public final x(Lo8/y;Lo8/y;J)V
+.method public final x(Lo8/z;Lo8/z;J)V
     .locals 3
 
     .line 1
     new-instance v0, Ljava/util/Date;
 
     .line 2
-    iget-wide v1, p2, Lo8/y;->w:J
+    iget-wide v1, p2, Lo8/z;->x:J
 
     add-long/2addr v1, p3
 
@@ -5122,9 +5122,9 @@
     invoke-direct {v0, v1, v2}, Ljava/util/Date;-><init>(J)V
 
     .line 4
-    sget-object p2, Li8/b;->a:Lcom/helpshift/util/s;
+    sget-object p2, Li8/b;->a:Lcom/helpshift/util/r;
 
-    invoke-virtual {p2, v0}, Lcom/helpshift/util/s;->a(Ljava/util/Date;)Ljava/lang/String;
+    invoke-virtual {p2, v0}, Lcom/helpshift/util/r;->a(Ljava/util/Date;)Ljava/lang/String;
 
     move-result-object p2
 
@@ -5134,18 +5134,18 @@
     move-result-wide p3
 
     .line 6
-    invoke-static {p2}, Lcom/google/android/play/core/appupdate/g;->b(Ljava/lang/String;)Z
+    invoke-static {p2}, La5/b0;->d(Ljava/lang/String;)Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
     .line 7
-    iput-object p2, p1, Lo8/y;->v:Ljava/lang/String;
+    iput-object p2, p1, Lo8/z;->w:Ljava/lang/String;
 
     .line 8
     :cond_0
-    iput-wide p3, p1, Lo8/y;->w:J
+    iput-wide p3, p1, Lo8/z;->x:J
 
     return-void
 .end method
@@ -5182,15 +5182,15 @@
     invoke-virtual {v2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 6
-    iget-object v3, v0, Lq8/d;->l:Lu8/e;
+    iget-object v3, v0, Lq8/d;->m:Lu8/e;
 
-    sget-object v4, Lu8/e;->k:Lu8/e;
+    sget-object v4, Lu8/e;->l:Lu8/e;
 
     const/4 v5, 0x1
 
     if-ne v3, v4, :cond_1
 
-    iget-boolean v3, v0, Lq8/d;->O:Z
+    iget-boolean v3, v0, Lq8/d;->P:Z
 
     if-nez v3, :cond_1
 
@@ -5273,12 +5273,12 @@
     invoke-direct {v9}, Ljava/util/ArrayList;-><init>()V
 
     .line 17
-    iget-boolean v10, v7, Lq8/d;->B:Z
+    iget-boolean v10, v7, Lq8/d;->C:Z
 
     if-eqz v10, :cond_2
 
     .line 18
-    invoke-virtual {p0, v7}, Lf9/i;->p(Lq8/d;)Lo8/k0;
+    invoke-virtual {p0, v7}, Lf9/i;->p(Lq8/d;)Lo8/m0;
 
     move-result-object v7
 
@@ -5295,9 +5295,9 @@
     move-result-object v10
 
     .line 20
-    iget-object v11, v10, Lq8/d;->g:Ljava/lang/Long;
+    iget-object v11, v10, Lq8/d;->h:Ljava/lang/Long;
 
-    iget-object v12, v7, Lq8/d;->g:Ljava/lang/Long;
+    iget-object v12, v7, Lq8/d;->h:Ljava/lang/Long;
 
     invoke-virtual {v11, v12}, Ljava/lang/Long;->equals(Ljava/lang/Object;)Z
 
@@ -5315,7 +5315,7 @@
     if-eqz v10, :cond_3
 
     .line 22
-    iget-object v7, v7, Lq8/d;->o:Lcom/helpshift/util/q;
+    iget-object v7, v7, Lq8/d;->p:Lcom/helpshift/util/q;
 
     invoke-virtual {p0, v7, v8}, Lf9/i;->F(Ljava/util/Collection;Z)Ljava/util/List;
 
@@ -5327,7 +5327,7 @@
     :cond_3
     new-instance v8, Ljava/util/ArrayList;
 
-    iget-object v7, v7, Lq8/d;->o:Lcom/helpshift/util/q;
+    iget-object v7, v7, Lq8/d;->p:Lcom/helpshift/util/q;
 
     invoke-direct {v8, v7}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
 
@@ -5369,7 +5369,7 @@
     move-result-object v4
 
     .line 32
-    invoke-virtual {v6, v4, v1, v2}, Lf9/q0;->o(Ljava/util/List;Lo8/y;Z)Ljava/util/List;
+    invoke-virtual {v6, v4, v1, v2}, Lf9/q0;->o(Ljava/util/List;Lo8/z;Z)Ljava/util/List;
 
     move-result-object v1
 
@@ -5380,7 +5380,7 @@
     iput-object v2, v6, Lf9/q0;->d:Ljava/util/ArrayList;
 
     .line 33
-    invoke-static {v1}, Lbc/a;->d(Ljava/util/List;)Z
+    invoke-static {v1}, Lt5/a;->g(Ljava/util/List;)Z
 
     move-result v1
 
@@ -5402,10 +5402,10 @@
 
     move-result-object v1
 
-    check-cast v1, Lo8/y;
+    check-cast v1, Lo8/z;
 
     .line 35
-    iget-object v2, v1, Lo8/y;->l:Ljava/lang/Long;
+    iget-object v2, v1, Lo8/z;->m:Ljava/lang/Long;
 
     .line 36
     check-cast v3, Ljava/util/ArrayList;
@@ -5437,7 +5437,7 @@
     if-nez v2, :cond_8
 
     .line 39
-    iget-object v2, v1, Lo8/y;->l:Ljava/lang/Long;
+    iget-object v2, v1, Lo8/z;->m:Ljava/lang/Long;
 
     invoke-virtual {v2}, Ljava/lang/Long;->longValue()J
 
@@ -5465,11 +5465,11 @@
     if-nez v2, :cond_7
 
     .line 41
-    invoke-virtual {v6, v1}, Lf9/q0;->k(Lo8/y;)Lu8/e;
+    invoke-virtual {v6, v1}, Lf9/q0;->k(Lo8/z;)Lu8/e;
 
     move-result-object v1
 
-    sget-object v2, Lu8/e;->l:Lu8/e;
+    sget-object v2, Lu8/e;->m:Lu8/e;
 
     if-ne v1, v2, :cond_7
 
@@ -5489,7 +5489,7 @@
     invoke-direct {v2, v9, v10}, Ljava/util/Date;-><init>(J)V
 
     .line 43
-    invoke-virtual {v6, v2, v1}, Lf9/q0;->h(Ljava/util/Date;Z)Lo8/h0;
+    invoke-virtual {v6, v2, v1}, Lf9/q0;->h(Ljava/util/Date;Z)Lo8/j0;
 
     move-result-object v1
 
@@ -5500,7 +5500,7 @@
 
     move-result-object v3
 
-    invoke-virtual {v6, v2, v8, v3}, Lf9/q0;->i(Ljava/util/Date;ZLjava/lang/Long;)Lo8/g0;
+    invoke-virtual {v6, v2, v8, v3}, Lf9/q0;->i(Ljava/util/Date;ZLjava/lang/Long;)Lo8/i0;
 
     move-result-object v2
 
@@ -5525,7 +5525,7 @@
 
     sub-int/2addr v2, v5
 
-    invoke-virtual {v6, v1, v8, v2}, Lf9/q0;->e(Ljava/util/List;II)Lcom/helpshift/util/h0;
+    invoke-virtual {v6, v1, v8, v2}, Lf9/q0;->e(Ljava/util/List;II)Lcom/helpshift/util/f0;
 
     .line 48
     iput-object p0, v6, Lf9/q0;->c:Lf9/r0;
@@ -5550,7 +5550,7 @@
 
     iget-object v7, v1, Lqa/e0;->c:Lqa/n0;
 
-    invoke-direct {v3, v4, v2, v6, v7}, Lqa/p0;-><init>(Landroid/content/Context;Ljava/util/List;ZLra/x;)V
+    invoke-direct {v3, v4, v2, v6, v7}, Lqa/p0;-><init>(Landroid/content/Context;Ljava/util/List;ZLra/w;)V
 
     iput-object v3, v1, Lqa/e0;->f:Lqa/p0;
 
@@ -5581,9 +5581,9 @@
     invoke-virtual {v1, p0}, Ln8/p;->p(Lf9/g;)V
 
     .line 59
-    iget-object v0, v0, Lq8/d;->l:Lu8/e;
+    iget-object v0, v0, Lq8/d;->m:Lu8/e;
 
-    sget-object v1, Lu8/e;->l:Lu8/e;
+    sget-object v1, Lu8/e;->m:Lu8/e;
 
     if-ne v0, v1, :cond_9
 
@@ -5610,7 +5610,7 @@
     move-result-object v1
 
     .line 62
-    invoke-static {v0}, Lcom/google/android/play/core/appupdate/g;->b(Ljava/lang/String;)Z
+    invoke-static {v0}, La5/b0;->d(Ljava/lang/String;)Z
 
     move-result v2
 
@@ -5632,7 +5632,7 @@
     move-result-object v0
 
     .line 64
-    invoke-static {v0}, Lcom/google/android/play/core/appupdate/g;->b(Ljava/lang/String;)Z
+    invoke-static {v0}, La5/b0;->d(Ljava/lang/String;)Z
 
     move-result v1
 
@@ -5670,7 +5670,7 @@
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 2
-    invoke-static {p1}, La0/a;->g(Ljava/lang/String;)Z
+    invoke-static {p1}, Lr3/r4;->c(Ljava/lang/String;)Z
 
     move-result v1
 
@@ -5697,7 +5697,7 @@
     invoke-virtual {v1, p1, p2}, Landroid/content/Intent;->setDataAndType(Landroid/net/Uri;Ljava/lang/String;)Landroid/content/Intent;
 
     .line 7
-    sget-object p2, Ld8/d;->f:Ld8/d;
+    sget-object p2, Ld8/d;->g:Ld8/d;
 
     :try_start_0
     iget-object v3, v0, Lqa/e0;->g:Landroid/content/Context;
@@ -5712,7 +5712,7 @@
     nop
 
     .line 8
-    sget-object v1, Lcom/helpshift/util/u;->c:Le7/g;
+    sget-object v1, Lcom/helpshift/util/t;->c:Le7/g;
 
     .line 9
     iget-object v1, v1, Le7/g;->f:La8/f;
@@ -5760,7 +5760,7 @@
 
     .line 17
     :cond_3
-    invoke-static {p1}, Lk3/sp;->i(Ljava/lang/String;)Ljava/io/File;
+    invoke-static {p1}, Lt5/a;->i(Ljava/lang/String;)Ljava/io/File;
 
     move-result-object p1
 
@@ -5776,7 +5776,7 @@
     .line 19
     iget-object v1, v0, Lqa/e0;->g:Landroid/content/Context;
 
-    invoke-static {v1, p1, p2}, Lcom/helpshift/util/y;->b(Landroid/content/Context;Ljava/io/File;Ljava/lang/String;)Landroid/content/Intent;
+    invoke-static {v1, p1, p2}, Lcom/helpshift/util/x;->a(Landroid/content/Context;Ljava/io/File;Ljava/lang/String;)Landroid/content/Intent;
 
     move-result-object p2
 
@@ -5806,7 +5806,7 @@
 
     .line 24
     :cond_5
-    sget-object p1, Ld8/d;->g:Ld8/d;
+    sget-object p1, Ld8/d;->h:Ld8/d;
 
     invoke-virtual {v0, p1}, Lqa/e0;->t(Ld8/a;)V
 

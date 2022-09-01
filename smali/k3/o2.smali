@@ -1,28 +1,23 @@
-.class public final synthetic Lk3/o2;
+.class public final Lk3/o2;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lk3/y2;
+.implements Lk3/x2;
 
 
-# static fields
-.field public static final f:Lk3/o2;
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Lk3/x2<",
+        "Lk3/gh;",
+        ">;"
+    }
+.end annotation
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 1
-
-    new-instance v0, Lk3/o2;
-
-    invoke-direct {v0}, Lk3/o2;-><init>()V
-
-    sput-object v0, Lk3/o2;->f:Lk3/o2;
-
-    return-void
-.end method
-
 .method public constructor <init>()V
     .locals 0
 
@@ -33,48 +28,27 @@
 
 
 # virtual methods
-.method public final c(Ljava/lang/Object;Ljava/util/Map;)V
-    .locals 2
-
-    check-cast p1, Lk3/bi;
-
-    sget-object v0, Lk3/h2;->a:Lk3/q2;
-
-    const-string v0, "u"
+.method public final synthetic c(Ljava/lang/Object;Ljava/util/Map;)V
+    .locals 1
 
     .line 1
+    check-cast p1, Lk3/gh;
+
+    const-string v0, "custom_close"
+
+    .line 2
     invoke-interface {p2, v0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p2
 
-    check-cast p2, Ljava/lang/String;
+    const-string v0, "1"
 
-    if-nez p2, :cond_0
+    invoke-virtual {v0, p2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    goto :goto_0
-
-    .line 2
-    :cond_0
-    new-instance v0, Lk3/qc;
+    move-result p2
 
     .line 3
-    invoke-interface {p1}, Lk3/bi;->getContext()Landroid/content/Context;
+    invoke-interface {p1, p2}, Lk3/gh;->t(Z)V
 
-    move-result-object v1
-
-    check-cast p1, Lk3/hi;
-
-    invoke-interface {p1}, Lk3/hi;->b()Lcom/google/android/gms/internal/ads/zzbbg;
-
-    move-result-object p1
-
-    iget-object p1, p1, Lcom/google/android/gms/internal/ads/zzbbg;->f:Ljava/lang/String;
-
-    invoke-direct {v0, v1, p1, p2}, Lk3/qc;-><init>(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 4
-    invoke-virtual {v0}, Lk3/qa;->b()Lk3/em0;
-
-    :goto_0
     return-void
 .end method

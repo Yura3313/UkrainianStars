@@ -16,9 +16,9 @@
 
 
 # instance fields
-.field public final f:I
+.field public final g:I
 
-.field public g:Ljava/util/List;
+.field public h:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
@@ -64,10 +64,10 @@
     invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
 
     .line 2
-    iput p1, p0, Lcom/google/android/gms/common/internal/zaaa;->f:I
+    iput p1, p0, Lcom/google/android/gms/common/internal/zaaa;->g:I
 
     .line 3
-    iput-object p2, p0, Lcom/google/android/gms/common/internal/zaaa;->g:Ljava/util/List;
+    iput-object p2, p0, Lcom/google/android/gms/common/internal/zaaa;->h:Ljava/util/List;
 
     return-void
 .end method
@@ -77,7 +77,7 @@
 .method public final D2()I
     .locals 1
 
-    iget v0, p0, Lcom/google/android/gms/common/internal/zaaa;->f:I
+    iget v0, p0, Lcom/google/android/gms/common/internal/zaaa;->g:I
 
     return v0
 .end method
@@ -86,7 +86,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/gms/common/internal/zaaa;->g:Ljava/util/List;
+    iget-object v0, p0, Lcom/google/android/gms/common/internal/zaaa;->h:Ljava/util/List;
 
     if-nez v0, :cond_0
 
@@ -95,11 +95,11 @@
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/google/android/gms/common/internal/zaaa;->g:Ljava/util/List;
+    iput-object v0, p0, Lcom/google/android/gms/common/internal/zaaa;->h:Ljava/util/List;
 
     .line 3
     :cond_0
-    iget-object v0, p0, Lcom/google/android/gms/common/internal/zaaa;->g:Ljava/util/List;
+    iget-object v0, p0, Lcom/google/android/gms/common/internal/zaaa;->h:Ljava/util/List;
 
     invoke-interface {v0, p1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
@@ -120,7 +120,7 @@
     .annotation runtime Ljavax/annotation/Nullable;
     .end annotation
 
-    iget-object v0, p0, Lcom/google/android/gms/common/internal/zaaa;->g:Ljava/util/List;
+    iget-object v0, p0, Lcom/google/android/gms/common/internal/zaaa;->h:Ljava/util/List;
 
     return-object v0
 .end method
@@ -136,7 +136,7 @@
     move-result p2
 
     .line 2
-    iget v0, p0, Lcom/google/android/gms/common/internal/zaaa;->f:I
+    iget v0, p0, Lcom/google/android/gms/common/internal/zaaa;->g:I
 
     const/4 v1, 0x1
 
@@ -149,7 +149,7 @@
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 5
-    iget-object v0, p0, Lcom/google/android/gms/common/internal/zaaa;->g:Ljava/util/List;
+    iget-object v0, p0, Lcom/google/android/gms/common/internal/zaaa;->h:Ljava/util/List;
 
     const/4 v1, 0x2
 

@@ -20,14 +20,14 @@
 
 
 # instance fields
-.field public final synthetic f:Ljava/util/Comparator;
+.field public final synthetic g:Ljava/util/Comparator;
 
 
 # direct methods
 .method public constructor <init>(Ljava/util/Comparator;)V
     .locals 0
 
-    iput-object p1, p0, Lld/e;->f:Ljava/util/Comparator;
+    iput-object p1, p0, Lld/e;->g:Ljava/util/Comparator;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -45,7 +45,7 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lld/e;->f:Ljava/util/Comparator;
+    iget-object v0, p0, Lld/e;->g:Ljava/util/Comparator;
 
     check-cast p1, Lld/c;
 

@@ -1,5 +1,5 @@
 .class public final Lzd/i$d;
-.super Lse/h;
+.super Lse/i;
 .source "YoungPlayerRegisterEnterPinPageFragment.kt"
 
 # interfaces
@@ -18,29 +18,29 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/p<",
         "Lcom/supercell/id/view/PinEntryView;",
         "Ljava/lang/CharSequence;",
-        "Lie/h;",
+        "Lie/i;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic f:Lzd/i;
+.field public final synthetic g:Lzd/i;
 
 
 # direct methods
 .method public constructor <init>(Lzd/i;)V
     .locals 0
 
-    iput-object p1, p0, Lzd/i$d;->f:Lzd/i;
+    iput-object p1, p0, Lzd/i$d;->g:Lzd/i;
 
     const/4 p1, 0x2
 
-    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -58,14 +58,14 @@
     const-string v0, "pinEditText"
 
     .line 2
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "<anonymous parameter 1>"
 
-    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 3
-    iget-object p2, p0, Lzd/i$d;->f:Lzd/i;
+    iget-object p2, p0, Lzd/i$d;->g:Lzd/i;
 
     sget v0, Lcom/supercell/id/R$id;->okButton:I
 
@@ -77,7 +77,7 @@
 
     const-string v0, "okButton"
 
-    invoke-static {p2, v0}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {p1}, Lcom/supercell/id/view/PinEntryView;->d()Z
 
@@ -88,7 +88,7 @@
     invoke-static {p2, p1}, Lae/z2;->l(Landroidx/appcompat/widget/AppCompatButton;Z)V
 
     .line 4
-    sget-object p1, Lie/h;->a:Lie/h;
+    sget-object p1, Lie/i;->a:Lie/i;
 
     return-object p1
 .end method

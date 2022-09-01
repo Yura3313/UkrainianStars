@@ -1,5 +1,5 @@
 .class public final Luc/g;
-.super Lse/h;
+.super Lse/i;
 .source "HeadBackgroundDrawable.kt"
 
 # interfaces
@@ -9,32 +9,28 @@
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/l<",
         "Landroid/graphics/Bitmap;",
-        "Lie/h;",
+        "Lie/i;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic f:Luc/e;
-
-.field public final synthetic g:Ljava/lang/String;
+.field public final synthetic g:Luc/d;
 
 
 # direct methods
-.method public constructor <init>(Luc/e;Ljava/lang/String;)V
+.method public constructor <init>(Luc/d;)V
     .locals 0
 
-    iput-object p1, p0, Luc/g;->f:Luc/e;
-
-    iput-object p2, p0, Luc/g;->g:Ljava/lang/String;
+    iput-object p1, p0, Luc/g;->g:Luc/d;
 
     const/4 p1, 0x1
 
-    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -42,7 +38,7 @@
 
 # virtual methods
 .method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 2
+    .locals 1
 
     .line 1
     check-cast p1, Landroid/graphics/Bitmap;
@@ -50,27 +46,19 @@
     const-string v0, "it"
 
     .line 2
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 3
-    iget-object v0, p0, Luc/g;->f:Luc/e;
+    iget-object v0, p0, Luc/g;->g:Luc/d;
 
     .line 4
-    iget-object v0, v0, Luc/e;->z:Ljava/util/LinkedHashMap;
+    iput-object p1, v0, Luc/d;->A:Landroid/graphics/Bitmap;
 
     .line 5
-    iget-object v1, p0, Luc/g;->g:Ljava/lang/String;
-
-    invoke-interface {v0, v1, p1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v0}, Luc/d;->d()V
 
     .line 6
-    iget-object p1, p0, Luc/g;->f:Luc/e;
-
-    .line 7
-    invoke-virtual {p1}, Luc/e;->d()V
-
-    .line 8
-    sget-object p1, Lie/h;->a:Lie/h;
+    sget-object p1, Lie/i;->a:Lie/i;
 
     return-object p1
 .end method

@@ -184,7 +184,7 @@
     :cond_0
     new-instance p0, Ljava/lang/RuntimeException;
 
-    sget p1, Lcom/google/protobuf/InvalidProtocolBufferException;->g:I
+    sget p1, Lcom/google/protobuf/InvalidProtocolBufferException;->h:I
 
     .line 3
     new-instance p1, Lcom/google/protobuf/InvalidProtocolBufferException$InvalidWireTypeException;
@@ -354,7 +354,7 @@
     :cond_1
     new-instance v0, Ljava/lang/IllegalStateException;
 
-    sget v1, Lcom/google/protobuf/InvalidProtocolBufferException;->g:I
+    sget v1, Lcom/google/protobuf/InvalidProtocolBufferException;->h:I
 
     .line 6
     new-instance v1, Lcom/google/protobuf/InvalidProtocolBufferException$InvalidWireTypeException;

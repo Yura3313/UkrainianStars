@@ -19,7 +19,7 @@
 
     const-string v0, "url"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -41,7 +41,7 @@
 
     move-result-object v0
 
-    sget-object v4, Lrc/g;->f:Lrc/g;
+    sget-object v4, Lrc/g;->g:Lrc/g;
 
     const-string v1, "&"
 
@@ -51,14 +51,14 @@
 
     const/16 v5, 0x1e
 
-    invoke-static/range {v0 .. v5}, Lje/j;->E(Ljava/lang/Iterable;Ljava/lang/CharSequence;Ljava/lang/CharSequence;Ljava/lang/CharSequence;Lre/l;I)Ljava/lang/String;
+    invoke-static/range {v0 .. v5}, Lje/j;->z(Ljava/lang/Iterable;Ljava/lang/CharSequence;Ljava/lang/CharSequence;Ljava/lang/CharSequence;Lre/l;I)Ljava/lang/String;
 
     move-result-object p0
 
     return-object p0
 .end method
 
-.method public static synthetic e(Lrc/f;Ljava/lang/String;Ljava/util/Map;Ljava/lang/String;ILjava/lang/Object;)Lze/e0;
+.method public static synthetic e(Lrc/f;Ljava/lang/String;Ljava/util/Map;Ljava/lang/String;ILjava/lang/Object;)Lze/f0;
     .locals 0
 
     and-int/lit8 p3, p4, 0x2
@@ -70,7 +70,7 @@
     move-object p2, p4
 
     :cond_0
-    invoke-virtual {p0, p1, p2, p4}, Lrc/f;->d(Ljava/lang/String;Ljava/util/Map;Ljava/lang/String;)Lze/e0;
+    invoke-virtual {p0, p1, p2, p4}, Lrc/f;->d(Ljava/lang/String;Ljava/util/Map;Ljava/lang/String;)Lze/f0;
 
     move-result-object p0
 
@@ -84,7 +84,7 @@
 
     const-string v0, "json"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "ok"
 
@@ -110,7 +110,7 @@
     .line 3
     new-instance v1, Lcom/supercell/id/api/ApiError;
 
-    invoke-static {p1, v0}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-direct {v1, p1}, Lcom/supercell/id/api/ApiError;-><init>(Ljava/lang/String;)V
 
@@ -122,7 +122,7 @@
 
     const-string v0, "json"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {p0, p1}, Lrc/f;->b(Lorg/json/JSONObject;)Lorg/json/JSONObject;
 
@@ -134,12 +134,12 @@
 
     const-string v0, "handleResponse(json).getJSONObject(\"data\")"
 
-    invoke-static {p1, v0}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     return-object p1
 .end method
 
-.method public final d(Ljava/lang/String;Ljava/util/Map;Ljava/lang/String;)Lze/e0;
+.method public final d(Ljava/lang/String;Ljava/util/Map;Ljava/lang/String;)Lze/f0;
     .locals 9
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -151,17 +151,17 @@
             ">;",
             "Ljava/lang/String;",
             ")",
-            "Lze/e0<",
+            "Lze/f0<",
             "Lorg/json/JSONObject;",
             ">;"
         }
     .end annotation
 
     .line 1
-    sget-object v0, Lze/u0;->f:Lze/u0;
+    sget-object v0, Lze/v0;->g:Lze/v0;
 
     .line 2
-    sget-object v1, Lze/k0;->c:Lbf/e;
+    sget-object v1, Lze/l0;->c:Lbf/e;
 
     .line 3
     new-instance v8, Lrc/f$a;
@@ -182,14 +182,14 @@
 
     const/4 p1, 0x2
 
-    invoke-static {v0, v1, v8, p1}, La5/g0;->j(Lze/a0;Lke/f;Lre/p;I)Lze/e0;
+    invoke-static {v0, v1, v8, p1}, La5/b0;->b(Lze/a0;Lke/f;Lre/p;I)Lze/f0;
 
     move-result-object p1
 
     .line 4
-    sget-object p2, Lrc/f$b;->f:Lrc/f$b;
+    sget-object p2, Lrc/f$b;->g:Lrc/f$b;
 
-    invoke-static {p1, p2}, Lae/u1;->c(Lze/e0;Lre/l;)Lze/e0;
+    invoke-static {p1, p2}, Lae/t1;->b(Lze/f0;Lre/l;)Lze/f0;
 
     return-object p1
 .end method
@@ -199,7 +199,7 @@
 
     const-string v0, "url"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/4 v0, 0x1
 
@@ -212,7 +212,7 @@
     aput-char v2, v0, v1
 
     .line 1
-    invoke-static {p1, v0}, Lye/r;->F(Ljava/lang/String;[C)Ljava/lang/String;
+    invoke-static {p1, v0}, Lye/r;->G(Ljava/lang/String;[C)Ljava/lang/String;
 
     move-result-object p1
 

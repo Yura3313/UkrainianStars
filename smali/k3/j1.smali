@@ -1,39 +1,17 @@
-.class public final Lk3/j1;
+.class public interface abstract Lk3/j1;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads-lite@@19.3.0"
 
 
-# static fields
-.field public static final a:Ljava/util/concurrent/atomic/AtomicReference;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/concurrent/atomic/AtomicReference<",
-            "Lk3/k1;",
-            ">;"
-        }
-    .end annotation
-.end field
+# virtual methods
+.method public abstract a(Ljava/lang/String;Z)Ljava/lang/Boolean;
+.end method
 
-.field public static final b:Ljava/util/concurrent/atomic/AtomicBoolean;
+.method public abstract b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+.end method
 
+.method public abstract c(Ljava/lang/String;D)Ljava/lang/Double;
+.end method
 
-# direct methods
-.method public static constructor <clinit>()V
-    .locals 1
-
-    .line 1
-    new-instance v0, Ljava/util/concurrent/atomic/AtomicReference;
-
-    invoke-direct {v0}, Ljava/util/concurrent/atomic/AtomicReference;-><init>()V
-
-    sput-object v0, Lk3/j1;->a:Ljava/util/concurrent/atomic/AtomicReference;
-
-    .line 2
-    new-instance v0, Ljava/util/concurrent/atomic/AtomicBoolean;
-
-    invoke-direct {v0}, Ljava/util/concurrent/atomic/AtomicBoolean;-><init>()V
-
-    sput-object v0, Lk3/j1;->b:Ljava/util/concurrent/atomic/AtomicBoolean;
-
-    return-void
+.method public abstract getLong(Ljava/lang/String;J)Ljava/lang/Long;
 .end method

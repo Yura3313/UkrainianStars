@@ -1,5 +1,5 @@
 .class public final Lpd/t$d;
-.super Lse/h;
+.super Lse/i;
 .source "NewGameAnimationView.kt"
 
 # interfaces
@@ -18,28 +18,28 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/l<",
         "Ljava/lang/Exception;",
-        "Lie/h;",
+        "Lie/i;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic f:Lpd/t;
+.field public final synthetic g:Lpd/t;
 
 
 # direct methods
 .method public constructor <init>(Lpd/t;)V
     .locals 0
 
-    iput-object p1, p0, Lpd/t$d;->f:Lpd/t;
+    iput-object p1, p0, Lpd/t$d;->g:Lpd/t;
 
     const/4 p1, 0x1
 
-    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -55,13 +55,13 @@
     const-string v0, "e"
 
     .line 2
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 3
     invoke-virtual {p1}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
     .line 4
-    iget-object v0, p0, Lpd/t$d;->f:Lpd/t;
+    iget-object v0, p0, Lpd/t$d;->g:Lpd/t;
 
     invoke-virtual {v0}, Lpd/t;->getAnimationComplete()Lze/o;
 
@@ -71,7 +71,7 @@
     invoke-interface {v0, p1}, Lze/o;->l(Ljava/lang/Throwable;)Z
 
     .line 6
-    sget-object p1, Lie/h;->a:Lie/h;
+    sget-object p1, Lie/i;->a:Lie/i;
 
     return-object p1
 .end method

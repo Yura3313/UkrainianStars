@@ -1071,25 +1071,25 @@
 
     .line 2
     :pswitch_0
-    sget-object v0, Lcom/supercell/websocket/proxy/protocol/ServerMessage$b;->h:Lcom/supercell/websocket/proxy/protocol/ServerMessage$b;
+    sget-object v0, Lcom/supercell/websocket/proxy/protocol/ServerMessage$b;->i:Lcom/supercell/websocket/proxy/protocol/ServerMessage$b;
 
     goto :goto_0
 
     .line 3
     :pswitch_1
-    sget-object v0, Lcom/supercell/websocket/proxy/protocol/ServerMessage$b;->g:Lcom/supercell/websocket/proxy/protocol/ServerMessage$b;
+    sget-object v0, Lcom/supercell/websocket/proxy/protocol/ServerMessage$b;->h:Lcom/supercell/websocket/proxy/protocol/ServerMessage$b;
 
     goto :goto_0
 
     .line 4
     :pswitch_2
-    sget-object v0, Lcom/supercell/websocket/proxy/protocol/ServerMessage$b;->f:Lcom/supercell/websocket/proxy/protocol/ServerMessage$b;
+    sget-object v0, Lcom/supercell/websocket/proxy/protocol/ServerMessage$b;->g:Lcom/supercell/websocket/proxy/protocol/ServerMessage$b;
 
     goto :goto_0
 
     .line 5
     :cond_0
-    sget-object v0, Lcom/supercell/websocket/proxy/protocol/ServerMessage$b;->i:Lcom/supercell/websocket/proxy/protocol/ServerMessage$b;
+    sget-object v0, Lcom/supercell/websocket/proxy/protocol/ServerMessage$b;->j:Lcom/supercell/websocket/proxy/protocol/ServerMessage$b;
 
     :goto_0
     return-object v0

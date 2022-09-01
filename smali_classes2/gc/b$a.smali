@@ -26,7 +26,7 @@
 
 
 # instance fields
-.field public f:Lgc/b$c;
+.field public g:Lgc/b$c;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lgc/b$c<",
@@ -35,7 +35,7 @@
     .end annotation
 .end field
 
-.field public g:Ljava/lang/Object;
+.field public h:Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "TE;"
@@ -43,7 +43,7 @@
     .end annotation
 .end field
 
-.field public h:Lgc/b$c;
+.field public i:Lgc/b$c;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lgc/b$c<",
@@ -52,7 +52,7 @@
     .end annotation
 .end field
 
-.field public final synthetic i:Lgc/b;
+.field public final synthetic j:Lgc/b;
 
 
 # direct methods
@@ -60,12 +60,12 @@
     .locals 1
 
     .line 1
-    iput-object p1, p0, Lgc/b$a;->i:Lgc/b;
+    iput-object p1, p0, Lgc/b$a;->j:Lgc/b;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iget-object p1, p1, Lgc/b;->j:Ljava/util/concurrent/locks/ReentrantLock;
+    iget-object p1, p1, Lgc/b;->k:Ljava/util/concurrent/locks/ReentrantLock;
 
     .line 3
     invoke-virtual {p1}, Ljava/util/concurrent/locks/ReentrantLock;->lock()V
@@ -77,12 +77,12 @@
     check-cast v0, Lgc/b$b;
 
     .line 5
-    iget-object v0, v0, Lgc/b$b;->j:Lgc/b;
+    iget-object v0, v0, Lgc/b$b;->k:Lgc/b;
 
-    iget-object v0, v0, Lgc/b;->f:Lgc/b$c;
+    iget-object v0, v0, Lgc/b;->g:Lgc/b$c;
 
     .line 6
-    iput-object v0, p0, Lgc/b$a;->f:Lgc/b$c;
+    iput-object v0, p0, Lgc/b$a;->g:Lgc/b$c;
 
     if-nez v0, :cond_0
 
@@ -95,7 +95,7 @@
     iget-object v0, v0, Lgc/b$c;->a:Ljava/lang/Object;
 
     :goto_0
-    iput-object v0, p0, Lgc/b$a;->g:Ljava/lang/Object;
+    iput-object v0, p0, Lgc/b$a;->h:Ljava/lang/Object;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -117,7 +117,7 @@
 .method public final hasNext()Z
     .locals 1
 
-    iget-object v0, p0, Lgc/b$a;->f:Lgc/b$c;
+    iget-object v0, p0, Lgc/b$a;->g:Lgc/b$c;
 
     if-eqz v0, :cond_0
 
@@ -141,27 +141,27 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lgc/b$a;->f:Lgc/b$c;
+    iget-object v0, p0, Lgc/b$a;->g:Lgc/b$c;
 
     if-eqz v0, :cond_4
 
     .line 2
-    iput-object v0, p0, Lgc/b$a;->h:Lgc/b$c;
+    iput-object v0, p0, Lgc/b$a;->i:Lgc/b$c;
 
     .line 3
-    iget-object v0, p0, Lgc/b$a;->g:Ljava/lang/Object;
+    iget-object v0, p0, Lgc/b$a;->h:Ljava/lang/Object;
 
     .line 4
-    iget-object v1, p0, Lgc/b$a;->i:Lgc/b;
+    iget-object v1, p0, Lgc/b$a;->j:Lgc/b;
 
-    iget-object v1, v1, Lgc/b;->j:Ljava/util/concurrent/locks/ReentrantLock;
+    iget-object v1, v1, Lgc/b;->k:Ljava/util/concurrent/locks/ReentrantLock;
 
     .line 5
     invoke-virtual {v1}, Ljava/util/concurrent/locks/ReentrantLock;->lock()V
 
     .line 6
     :try_start_0
-    iget-object v2, p0, Lgc/b$a;->f:Lgc/b$c;
+    iget-object v2, p0, Lgc/b$a;->g:Lgc/b$c;
 
     .line 7
     :goto_0
@@ -192,13 +192,13 @@
     check-cast v2, Lgc/b$b;
 
     .line 10
-    iget-object v2, v2, Lgc/b$b;->j:Lgc/b;
+    iget-object v2, v2, Lgc/b$b;->k:Lgc/b;
 
-    iget-object v3, v2, Lgc/b;->f:Lgc/b$c;
+    iget-object v3, v2, Lgc/b;->g:Lgc/b$c;
 
     .line 11
     :goto_1
-    iput-object v3, p0, Lgc/b$a;->f:Lgc/b$c;
+    iput-object v3, p0, Lgc/b$a;->g:Lgc/b$c;
 
     if-nez v3, :cond_2
 
@@ -209,7 +209,7 @@
     iget-object v4, v3, Lgc/b$c;->a:Ljava/lang/Object;
 
     :goto_2
-    iput-object v4, p0, Lgc/b$a;->g:Ljava/lang/Object;
+    iput-object v4, p0, Lgc/b$a;->h:Ljava/lang/Object;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -249,19 +249,19 @@
     .locals 3
 
     .line 1
-    iget-object v0, p0, Lgc/b$a;->h:Lgc/b$c;
+    iget-object v0, p0, Lgc/b$a;->i:Lgc/b$c;
 
     if-eqz v0, :cond_1
 
     const/4 v1, 0x0
 
     .line 2
-    iput-object v1, p0, Lgc/b$a;->h:Lgc/b$c;
+    iput-object v1, p0, Lgc/b$a;->i:Lgc/b$c;
 
     .line 3
-    iget-object v1, p0, Lgc/b$a;->i:Lgc/b;
+    iget-object v1, p0, Lgc/b$a;->j:Lgc/b;
 
-    iget-object v1, v1, Lgc/b;->j:Ljava/util/concurrent/locks/ReentrantLock;
+    iget-object v1, v1, Lgc/b;->k:Ljava/util/concurrent/locks/ReentrantLock;
 
     .line 4
     invoke-virtual {v1}, Ljava/util/concurrent/locks/ReentrantLock;->lock()V
@@ -273,7 +273,7 @@
     if-eqz v2, :cond_0
 
     .line 6
-    iget-object v2, p0, Lgc/b$a;->i:Lgc/b;
+    iget-object v2, p0, Lgc/b$a;->j:Lgc/b;
 
     invoke-virtual {v2, v0}, Lgc/b;->c(Lgc/b$c;)V
     :try_end_0

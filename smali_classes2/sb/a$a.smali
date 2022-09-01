@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field public final synthetic f:Lsb/a;
+.field public final synthetic g:Lsb/a;
 
 
 # direct methods
 .method public constructor <init>(Lsb/a;)V
     .locals 0
 
-    iput-object p1, p0, Lsb/a$a;->f:Lsb/a;
+    iput-object p1, p0, Lsb/a$a;->g:Lsb/a;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -40,7 +40,7 @@
     .line 1
     iget p1, p1, Landroid/os/Message;->what:I
 
-    iget-object v0, p0, Lsb/a$a;->f:Lsb/a;
+    iget-object v0, p0, Lsb/a$a;->g:Lsb/a;
 
     .line 2
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -50,7 +50,7 @@
     if-ne p1, v0, :cond_0
 
     .line 3
-    iget-object p1, p0, Lsb/a$a;->f:Lsb/a;
+    iget-object p1, p0, Lsb/a$a;->g:Lsb/a;
 
     .line 4
     invoke-virtual {p1}, Lsb/a;->b()V

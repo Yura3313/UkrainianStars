@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field public final f:Landroidx/media/j$c;
+.field public final g:Landroidx/media/j$c;
 
 
 # direct methods
@@ -29,7 +29,7 @@
     invoke-virtual {p0, p1}, Landroid/content/ContextWrapper;->attachBaseContext(Landroid/content/Context;)V
 
     .line 3
-    iput-object p2, p0, Landroidx/media/j$a;->f:Landroidx/media/j$c;
+    iput-object p2, p0, Landroidx/media/j$a;->g:Landroidx/media/j$c;
 
     return-void
 .end method
@@ -43,7 +43,7 @@
     invoke-static {p3}, Landroid/support/v4/media/session/MediaSessionCompat;->ensureClassLoader(Landroid/os/Bundle;)V
 
     .line 2
-    iget-object v0, p0, Landroidx/media/j$a;->f:Landroidx/media/j$c;
+    iget-object v0, p0, Landroidx/media/j$a;->g:Landroidx/media/j$c;
 
     const/4 v1, 0x0
 
@@ -77,7 +77,7 @@
         }
     .end annotation
 
-    iget-object v0, p0, Landroidx/media/j$a;->f:Landroidx/media/j$c;
+    iget-object v0, p0, Landroidx/media/j$a;->g:Landroidx/media/j$c;
 
     new-instance v1, Landroidx/media/j$b;
 

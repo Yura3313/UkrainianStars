@@ -49,7 +49,7 @@
     invoke-virtual {p0}, Lcom/google/crypto/tink/shaded/protobuf/n$a;->e()V
 
     .line 2
-    iget-object v0, p0, Lcom/google/crypto/tink/shaded/protobuf/n$a;->g:Lcom/google/crypto/tink/shaded/protobuf/n;
+    iget-object v0, p0, Lcom/google/crypto/tink/shaded/protobuf/n$a;->h:Lcom/google/crypto/tink/shaded/protobuf/n;
 
     check-cast v0, Ln5/g1;
 

@@ -1,152 +1,143 @@
-.class public final Lk3/u20;
+.class public abstract Lk3/u20;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lk3/is;
+.implements Lcom/google/android/gms/common/internal/BaseGmsClient$a;
+.implements Lcom/google/android/gms/common/internal/BaseGmsClient$b;
 
 
 # instance fields
-.field public final f:Landroid/content/Context;
+.field public final a:Lk3/qd;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lk3/qd<",
+            "Ljava/io/InputStream;",
+            ">;"
+        }
+    .end annotation
+.end field
 
-.field public final g:Lk3/p9;
+.field public final b:Ljava/lang/Object;
+
+.field public c:Z
+
+.field public d:Z
+
+.field public e:Lcom/google/android/gms/internal/ads/zzasp;
+
+.field public f:Lk3/c8;
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;Lk3/p9;)V
-    .locals 0
+.method public constructor <init>()V
+    .locals 1
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lk3/u20;->f:Landroid/content/Context;
+    new-instance v0, Lk3/qd;
+
+    invoke-direct {v0}, Lk3/qd;-><init>()V
 
     .line 3
-    iput-object p2, p0, Lk3/u20;->g:Lk3/p9;
+    iput-object v0, p0, Lk3/u20;->a:Lk3/qd;
+
+    .line 4
+    new-instance v0, Ljava/lang/Object;
+
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+
+    iput-object v0, p0, Lk3/u20;->b:Ljava/lang/Object;
+
+    const/4 v0, 0x0
+
+    .line 5
+    iput-boolean v0, p0, Lk3/u20;->c:Z
+
+    .line 6
+    iput-boolean v0, p0, Lk3/u20;->d:Z
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final C0(Lcom/google/android/gms/internal/ads/zzasp;)V
+.method public final J0(I)V
     .locals 0
 
     return-void
 .end method
 
-.method public final K(Lk3/sg0;)V
-    .locals 4
+.method public S0(Lcom/google/android/gms/common/ConnectionResult;)V
+    .locals 2
+
+    iget-object p1, p0, Lk3/u20;->a:Lk3/qd;
+
+    new-instance v0, Lcom/google/android/gms/internal/ads/zzcpa;
+
+    const/4 v1, 0x1
+
+    invoke-direct {v0, v1}, Lcom/google/android/gms/internal/ads/zzcpa;-><init>(I)V
+
+    invoke-virtual {p1, v0}, Lk3/qd;->b(Ljava/lang/Throwable;)Z
+
+    return-void
+.end method
+
+.method public final b()V
+    .locals 2
 
     .line 1
-    iget-object v0, p1, Lk3/sg0;->b:Lk3/qg0;
+    iget-object v0, p0, Lk3/u20;->b:Ljava/lang/Object;
 
-    iget-object v0, v0, Lk3/qg0;->b:Lk3/kg0;
+    monitor-enter v0
 
-    iget-object v0, v0, Lk3/kg0;->d:Ljava/lang/String;
+    const/4 v1, 0x1
 
     .line 2
-    invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
-
-    move-result v0
-
-    if-nez v0, :cond_2
+    :try_start_0
+    iput-boolean v1, p0, Lk3/u20;->d:Z
 
     .line 3
-    iget-object v0, p0, Lk3/u20;->g:Lk3/p9;
+    iget-object v1, p0, Lk3/u20;->f:Lk3/c8;
 
-    iget-object v1, p0, Lk3/u20;->f:Landroid/content/Context;
-
-    iget-object v2, p1, Lk3/sg0;->a:Lk3/iy0;
-
-    iget-object v2, v2, Lk3/iy0;->f:Ljava/lang/Object;
-
-    check-cast v2, Lk3/ug0;
-
-    iget-object v2, v2, Lk3/ug0;->d:Lcom/google/android/gms/internal/ads/zzvc;
-
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 4
-    sget-object v2, Lk3/q;->e0:Lk3/g;
-
-    .line 5
-    sget-object v3, Lk3/l51;->j:Lk3/l51;
-
-    iget-object v3, v3, Lk3/l51;->f:Lk3/n;
-
-    .line 6
-    invoke-virtual {v3, v2}, Lk3/n;->a(Lk3/h;)Ljava/lang/Object;
-
-    move-result-object v2
-
-    .line 7
-    check-cast v2, Ljava/lang/Boolean;
-
-    invoke-virtual {v2}, Ljava/lang/Boolean;->booleanValue()Z
-
-    move-result v2
-
-    if-eqz v2, :cond_1
-
-    .line 8
-    invoke-virtual {v0, v1}, Lk3/p9;->h(Landroid/content/Context;)Z
-
-    move-result v2
-
-    if-eqz v2, :cond_1
-
-    .line 9
-    invoke-static {v1}, Lk3/p9;->i(Landroid/content/Context;)Z
+    invoke-virtual {v1}, Lcom/google/android/gms/common/internal/BaseGmsClient;->isConnected()Z
 
     move-result v1
 
     if-nez v1, :cond_0
 
-    goto :goto_0
+    iget-object v1, p0, Lk3/u20;->f:Lk3/c8;
 
-    .line 10
+    invoke-virtual {v1}, Lcom/google/android/gms/common/internal/BaseGmsClient;->d()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_1
+
+    .line 4
     :cond_0
-    iget-object v0, v0, Lk3/p9;->l:Ljava/lang/Object;
+    iget-object v1, p0, Lk3/u20;->f:Lk3/c8;
 
-    monitor-enter v0
+    invoke-virtual {v1}, Lcom/google/android/gms/common/internal/BaseGmsClient;->disconnect()V
 
-    .line 11
-    :try_start_0
+    .line 5
+    :cond_1
+    invoke-static {}, Landroid/os/Binder;->flushPendingCommands()V
+
+    .line 6
     monitor-exit v0
 
-    goto :goto_0
+    return-void
 
     :catchall_0
-    move-exception p1
+    move-exception v1
 
     monitor-exit v0
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    throw p1
-
-    .line 12
-    :cond_1
-    :goto_0
-    iget-object v0, p0, Lk3/u20;->g:Lk3/p9;
-
-    iget-object v1, p0, Lk3/u20;->f:Landroid/content/Context;
-
-    iget-object p1, p1, Lk3/sg0;->b:Lk3/qg0;
-
-    iget-object p1, p1, Lk3/qg0;->b:Lk3/kg0;
-
-    iget-object p1, p1, Lk3/kg0;->d:Ljava/lang/String;
-
-    const-string v2, "_aq"
-
-    const/4 v3, 0x0
-
-    .line 13
-    invoke-virtual {v0, v1, v2, p1, v3}, Lk3/p9;->c(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;Landroid/os/Bundle;)V
-
-    :cond_2
-    return-void
+    throw v1
 .end method

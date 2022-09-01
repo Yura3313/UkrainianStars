@@ -27,18 +27,11 @@
 
     if-ne p0, v0, :cond_2
 
-    return v1
-
-    :cond_2
-    const/4 v0, 0x4
-
-    if-ne p0, v0, :cond_3
-
     const/16 p0, 0x3e8
 
     return p0
 
-    :cond_3
+    :cond_2
     const/4 p0, 0x0
 
     throw p0

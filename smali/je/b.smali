@@ -22,9 +22,9 @@
 
 
 # instance fields
-.field public f:I
+.field public g:I
 
-.field public g:Ljava/lang/Object;
+.field public h:Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "TT;"
@@ -43,7 +43,7 @@
     const/4 v0, 0x2
 
     .line 2
-    iput v0, p0, Lje/b;->f:I
+    iput v0, p0, Lje/b;->g:I
 
     return-void
 .end method
@@ -57,7 +57,7 @@
     .locals 5
 
     .line 1
-    iget v0, p0, Lje/b;->f:I
+    iget v0, p0, Lje/b;->g:I
 
     const/4 v1, 0x0
 
@@ -89,13 +89,13 @@
     if-eq v0, v4, :cond_2
 
     .line 3
-    iput v3, p0, Lje/b;->f:I
+    iput v3, p0, Lje/b;->g:I
 
     .line 4
     invoke-virtual {p0}, Lje/b;->a()V
 
     .line 5
-    iget v0, p0, Lje/b;->f:I
+    iget v0, p0, Lje/b;->g:I
 
     if-ne v0, v2, :cond_2
 
@@ -138,10 +138,10 @@
     const/4 v0, 0x2
 
     .line 2
-    iput v0, p0, Lje/b;->f:I
+    iput v0, p0, Lje/b;->g:I
 
     .line 3
-    iget-object v0, p0, Lje/b;->g:Ljava/lang/Object;
+    iget-object v0, p0, Lje/b;->h:Ljava/lang/Object;
 
     return-object v0
 

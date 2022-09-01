@@ -11,7 +11,7 @@
     return-void
 .end method
 
-.method public static a(Landroid/os/Bundle;Lcom/google/android/play/core/assetpacks/s0;)Lcom/google/android/play/core/assetpacks/a;
+.method public static a(Landroid/os/Bundle;Lcom/google/android/play/core/assetpacks/r0;)Lcom/google/android/play/core/assetpacks/a;
     .locals 16
 
     move-object/from16 v0, p0
@@ -21,7 +21,7 @@
     invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
 
     .line 1
-    sget-object v2, Lcom/google/android/play/core/assetpacks/y;->f:Lcom/google/android/play/core/assetpacks/y;
+    sget-object v2, Lcom/google/android/play/core/assetpacks/x;->a:Lcom/google/android/play/core/assetpacks/x;
 
     const-string v3, "pack_names"
 
@@ -53,7 +53,7 @@
 
     move-object/from16 v9, p1
 
-    invoke-static {v0, v8, v9, v2}, Lcom/google/android/play/core/assetpacks/AssetPackState;->a(Landroid/os/Bundle;Ljava/lang/String;Lcom/google/android/play/core/assetpacks/s0;Lcom/google/android/play/core/assetpacks/w;)Lcom/google/android/play/core/assetpacks/AssetPackState;
+    invoke-static {v0, v8, v9, v2}, Lcom/google/android/play/core/assetpacks/AssetPackState;->a(Landroid/os/Bundle;Ljava/lang/String;Lcom/google/android/play/core/assetpacks/r0;Lcom/google/android/play/core/assetpacks/v;)Lcom/google/android/play/core/assetpacks/AssetPackState;
 
     move-result-object v10
 
@@ -107,9 +107,9 @@
     move-result-wide v0
 
     .line 3
-    new-instance v2, Lcom/google/android/play/core/assetpacks/f0;
+    new-instance v2, Lcom/google/android/play/core/assetpacks/e0;
 
-    invoke-direct {v2, v0, v1, v4}, Lcom/google/android/play/core/assetpacks/f0;-><init>(JLjava/util/Map;)V
+    invoke-direct {v2, v0, v1, v4}, Lcom/google/android/play/core/assetpacks/e0;-><init>(JLjava/util/Map;)V
 
     return-object v2
 .end method

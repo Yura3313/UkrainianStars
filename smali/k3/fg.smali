@@ -55,7 +55,7 @@
     invoke-direct {p1, v0, v1}, Lk3/vm;-><init>(Lk3/cg;Lk3/qn;)V
 
     .line 6
-    invoke-virtual {p1}, Lk3/xu0;->e()Ljava/util/List;
+    invoke-virtual {p1}, Lk3/bv0;->e()Ljava/util/List;
 
     move-result-object p1
 
@@ -79,12 +79,12 @@
     check-cast v0, Lk3/eo;
 
     .line 7
-    instance-of v4, v0, Lk3/tp;
+    instance-of v4, v0, Lk3/sp;
 
     if-eqz v4, :cond_1
 
     .line 8
-    check-cast v0, Lk3/tp;
+    check-cast v0, Lk3/sp;
 
     goto :goto_0
 
@@ -93,7 +93,7 @@
 
     .line 9
     :goto_0
-    invoke-virtual {v0}, Lk3/xu0;->e()Ljava/util/List;
+    invoke-virtual {v0}, Lk3/bv0;->e()Ljava/util/List;
 
     move-result-object p1
 
@@ -115,25 +115,25 @@
     check-cast v0, Lk3/eo;
 
     .line 10
-    instance-of v4, v0, Lk3/pr;
+    instance-of v4, v0, Lk3/nr;
 
     if-eqz v4, :cond_3
 
     .line 11
     move-object v1, v0
 
-    check-cast v1, Lk3/pr;
+    check-cast v1, Lk3/nr;
 
     :cond_4
     const-wide/16 v4, 0x3e8
 
     .line 12
-    iget-wide v6, v1, Lk3/pr;->r:J
+    iget-wide v6, v1, Lk3/nr;->s:J
 
     mul-long v6, v6, v4
 
     .line 13
-    iget-wide v0, v1, Lk3/pr;->q:J
+    iget-wide v0, v1, Lk3/nr;->r:J
 
     .line 14
     div-long/2addr v6, v0

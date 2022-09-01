@@ -51,7 +51,7 @@
     .locals 4
 
     .line 1
-    iget-boolean v0, p1, Li7/c;->k:Z
+    iget-boolean v0, p1, Li7/c;->l:Z
 
     if-nez v0, :cond_0
 
@@ -61,23 +61,23 @@
     const/4 v0, 0x0
 
     .line 2
-    sget-object v1, Ld8/b;->y:Ld8/b;
+    sget-object v1, Ld8/b;->z:Ld8/b;
 
     if-ne p2, v1, :cond_1
 
     .line 3
-    sget-object v0, Ls9/a;->f:Ls9/a;
+    sget-object v0, Ls9/a;->g:Ls9/a;
 
     goto :goto_0
 
     .line 4
     :cond_1
-    sget-object v1, Ld8/b;->x:Ld8/b;
+    sget-object v1, Ld8/b;->y:Ld8/b;
 
     if-ne p2, v1, :cond_2
 
     .line 5
-    sget-object v0, Ls9/a;->g:Ls9/a;
+    sget-object v0, Ls9/a;->h:Ls9/a;
 
     :cond_2
     :goto_0
@@ -127,7 +127,7 @@
     if-eqz v1, :cond_8
 
     .line 11
-    iget-boolean v1, p1, Li7/c;->k:Z
+    iget-boolean v1, p1, Li7/c;->l:Z
 
     if-nez v1, :cond_6
 
@@ -140,7 +140,7 @@
     invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
 
     .line 13
-    iget-object v2, p1, Li7/c;->f:Ljava/lang/Long;
+    iget-object v2, p1, Li7/c;->g:Ljava/lang/Long;
 
     .line 14
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
@@ -150,7 +150,7 @@
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 15
-    iget-object v2, p1, Li7/c;->n:Ljava/lang/String;
+    iget-object v2, p1, Li7/c;->o:Ljava/lang/String;
 
     .line 16
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -196,22 +196,22 @@
     new-instance v1, Lcom/helpshift/g$a;
 
     .line 20
-    iget-object v2, p1, Li7/c;->g:Ljava/lang/String;
+    iget-object v2, p1, Li7/c;->h:Ljava/lang/String;
 
     .line 21
-    iget-object v3, p1, Li7/c;->h:Ljava/lang/String;
+    iget-object v3, p1, Li7/c;->i:Ljava/lang/String;
 
     .line 22
     invoke-direct {v1, v2, v3}, Lcom/helpshift/g$a;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 23
-    iget-object v2, p1, Li7/c;->i:Ljava/lang/String;
+    iget-object v2, p1, Li7/c;->j:Ljava/lang/String;
 
     .line 24
     iput-object v2, v1, Lcom/helpshift/g$a;->c:Ljava/lang/String;
 
     .line 25
-    iget-object p1, p1, Li7/c;->n:Ljava/lang/String;
+    iget-object p1, p1, Li7/c;->o:Ljava/lang/String;
 
     .line 26
     iput-object p1, v1, Lcom/helpshift/g$a;->d:Ljava/lang/String;

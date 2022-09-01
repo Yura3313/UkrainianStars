@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field public f:Landroidx/appcompat/widget/s$a;
+.field public g:Landroidx/appcompat/widget/s$a;
 
 
 # direct methods
@@ -25,7 +25,7 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/FitWindowsLinearLayout;->f:Landroidx/appcompat/widget/s$a;
+    iget-object v0, p0, Landroidx/appcompat/widget/FitWindowsLinearLayout;->g:Landroidx/appcompat/widget/s$a;
 
     if-eqz v0, :cond_0
 
@@ -55,7 +55,7 @@
 .method public setOnFitSystemWindowsListener(Landroidx/appcompat/widget/s$a;)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/appcompat/widget/FitWindowsLinearLayout;->f:Landroidx/appcompat/widget/s$a;
+    iput-object p1, p0, Landroidx/appcompat/widget/FitWindowsLinearLayout;->g:Landroidx/appcompat/widget/s$a;
 
     return-void
 .end method

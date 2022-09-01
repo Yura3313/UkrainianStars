@@ -18,9 +18,9 @@
 
 
 # instance fields
-.field public s:Ld/d$a;
+.field public t:Ld/d$a;
 
-.field public t:Z
+.field public u:Z
 
 
 # direct methods
@@ -89,10 +89,10 @@
     .locals 1
 
     .line 1
-    iput-object p1, p0, Ld/b;->f:Ld/b$c;
+    iput-object p1, p0, Ld/b;->g:Ld/b$c;
 
     .line 2
-    iget v0, p0, Ld/b;->l:I
+    iget v0, p0, Ld/b;->m:I
 
     if-ltz v0, :cond_0
 
@@ -101,7 +101,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Ld/b;->h:Landroid/graphics/drawable/Drawable;
+    iput-object v0, p0, Ld/b;->i:Landroid/graphics/drawable/Drawable;
 
     if-eqz v0, :cond_0
 
@@ -112,7 +112,7 @@
     const/4 v0, 0x0
 
     .line 5
-    iput-object v0, p0, Ld/b;->i:Landroid/graphics/drawable/Drawable;
+    iput-object v0, p0, Ld/b;->j:Landroid/graphics/drawable/Drawable;
 
     .line 6
     instance-of v0, p1, Ld/d$a;
@@ -122,7 +122,7 @@
     .line 7
     check-cast p1, Ld/d$a;
 
-    iput-object p1, p0, Ld/d;->s:Ld/d$a;
+    iput-object p1, p0, Ld/d;->t:Ld/d$a;
 
     :cond_1
     return-void
@@ -133,7 +133,7 @@
 
     new-instance v0, Ld/d$a;
 
-    iget-object v1, p0, Ld/d;->s:Ld/d$a;
+    iget-object v1, p0, Ld/d;->t:Ld/d$a;
 
     const/4 v2, 0x0
 
@@ -154,21 +154,21 @@
     .locals 1
 
     .line 1
-    iget-boolean v0, p0, Ld/d;->t:Z
+    iget-boolean v0, p0, Ld/d;->u:Z
 
     if-nez v0, :cond_0
 
     invoke-super {p0}, Ld/b;->mutate()Landroid/graphics/drawable/Drawable;
 
     .line 2
-    iget-object v0, p0, Ld/d;->s:Ld/d$a;
+    iget-object v0, p0, Ld/d;->t:Ld/d$a;
 
     invoke-virtual {v0}, Ld/d$a;->f()V
 
     const/4 v0, 0x1
 
     .line 3
-    iput-boolean v0, p0, Ld/d;->t:Z
+    iput-boolean v0, p0, Ld/d;->u:Z
 
     :cond_0
     return-object p0
@@ -183,7 +183,7 @@
     move-result v0
 
     .line 2
-    iget-object v1, p0, Ld/d;->s:Ld/d$a;
+    iget-object v1, p0, Ld/d;->t:Ld/d$a;
 
     invoke-virtual {v1, p1}, Ld/d$a;->j([I)I
 
@@ -192,7 +192,7 @@
     if-gez p1, :cond_0
 
     .line 3
-    iget-object p1, p0, Ld/d;->s:Ld/d$a;
+    iget-object p1, p0, Ld/d;->t:Ld/d$a;
 
     sget-object v1, Landroid/util/StateSet;->WILD_CARD:[I
 

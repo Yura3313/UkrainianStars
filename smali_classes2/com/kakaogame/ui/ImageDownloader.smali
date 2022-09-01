@@ -158,7 +158,7 @@
     invoke-virtual {v0, p0, v1, v2}, Lec/d;->e(Ljava/lang/String;Lec/c;Lkc/a;)V
 
     .line 10
-    iget-object p0, v2, Lec/d$a;->h:Landroid/graphics/Bitmap;
+    iget-object p0, v2, Lec/d$a;->b:Landroid/graphics/Bitmap;
 
     return-object p0
 .end method
@@ -249,7 +249,7 @@
     new-array v1, v5, [Ljava/lang/Object;
 
     .line 7
-    invoke-static {v4, v3, v2, v1}, Lae/w;->c(ILjava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-static {v4, v3, v2, v1}, Lk3/f4;->d(ILjava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V
 
     .line 8
     :cond_2
@@ -273,7 +273,7 @@
     new-array v1, v5, [Ljava/lang/Object;
 
     .line 11
-    invoke-static {v4, v3, v2, v1}, Lae/w;->c(ILjava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-static {v4, v3, v2, v1}, Lk3/f4;->d(ILjava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V
 
     .line 12
     :cond_4
@@ -297,7 +297,7 @@
     new-array v1, v5, [Ljava/lang/Object;
 
     .line 15
-    invoke-static {v4, v3, v2, v1}, Lae/w;->c(ILjava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-static {v4, v3, v2, v1}, Lk3/f4;->d(ILjava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V
 
     .line 16
     :cond_6
@@ -322,7 +322,7 @@
     new-array v2, v5, [Ljava/lang/Object;
 
     .line 19
-    invoke-static {v4, v3, v6, v2}, Lae/w;->c(ILjava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-static {v4, v3, v6, v2}, Lk3/f4;->d(ILjava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V
 
     .line 20
     :cond_7
@@ -341,7 +341,7 @@
     new-array v0, v5, [Ljava/lang/Object;
 
     .line 23
-    invoke-static {v4, v3, v6, v0}, Lae/w;->c(ILjava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-static {v4, v3, v6, v0}, Lk3/f4;->d(ILjava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V
 
     .line 24
     :cond_8
@@ -362,7 +362,7 @@
     new-array v1, v5, [Ljava/lang/Object;
 
     .line 27
-    invoke-static {v4, v3, v6, v1}, Lae/w;->c(ILjava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-static {v4, v3, v6, v1}, Lk3/f4;->d(ILjava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V
 
     .line 28
     :cond_9
@@ -406,7 +406,7 @@
     new-array v1, v5, [Ljava/lang/Object;
 
     .line 32
-    invoke-static {v4, v3, v2, v1}, Lae/w;->c(ILjava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-static {v4, v3, v2, v1}, Lk3/f4;->d(ILjava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V
 
     :cond_a
     int-to-long v0, v0
@@ -429,7 +429,7 @@
     new-array v1, v5, [Ljava/lang/Object;
 
     .line 36
-    invoke-static {v4, v3, v2, v1}, Lae/w;->c(ILjava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-static {v4, v3, v2, v1}, Lk3/f4;->d(ILjava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V
 
     .line 37
     :cond_b

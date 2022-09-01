@@ -43,9 +43,9 @@
     check-cast v0, La5/j0;
 
     .line 1
-    iget-wide v1, v0, La5/j0;->h:J
+    iget-wide v1, v0, La5/j0;->i:J
 
-    iget-wide v3, v0, La5/j0;->g:J
+    iget-wide v3, v0, La5/j0;->h:J
 
     sub-long/2addr v1, v3
 

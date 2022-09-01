@@ -122,7 +122,7 @@
     const-string v2, "handleResponse: "
 
     .line 3
-    invoke-static {v2, v0, v1}, Lcom/kakaogame/b;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v2, v0, v1}, Landroid/support/v4/media/e;->b(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     .line 4
     iget-object v1, p0, Lcom/kakaogame/session/WebSocketManager$WebSocketListenerImpl;->syncRequestMap:Ljava/util/Map;

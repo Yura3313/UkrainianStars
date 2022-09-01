@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field public final synthetic f:Lre/a;
+.field public final synthetic g:Lre/a;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lmd/t;->f:Lre/a;
+    iput-object p1, p0, Lmd/t;->g:Lre/a;
 
     return-void
 .end method
@@ -26,7 +26,7 @@
 .method public final synthetic run()V
     .locals 2
 
-    iget-object v0, p0, Lmd/t;->f:Lre/a;
+    iget-object v0, p0, Lmd/t;->g:Lre/a;
 
     invoke-interface {v0}, Lre/a;->invoke()Ljava/lang/Object;
 
@@ -34,7 +34,7 @@
 
     const-string v1, "invoke(...)"
 
-    invoke-static {v0, v1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     return-void
 .end method

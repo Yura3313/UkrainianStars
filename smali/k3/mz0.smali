@@ -1,49 +1,31 @@
-.class public final Lk3/mz0;
+.class public interface abstract Lk3/mz0;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
-# interfaces
-.implements Landroid/os/Parcelable$Creator;
 
-
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ljava/lang/Object;",
-        "Landroid/os/Parcelable$Creator<",
-        "Lcom/google/android/gms/internal/ads/zzmc;",
-        ">;"
-    }
-.end annotation
+# static fields
+.field public static final c:Lk3/lz0;
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 0
+.method public static constructor <clinit>()V
+    .locals 1
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    new-instance v0, Lk3/lz0;
+
+    invoke-direct {v0}, Lk3/lz0;-><init>()V
+
+    sput-object v0, Lk3/mz0;->c:Lk3/lz0;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final synthetic createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
-    .locals 1
-
-    new-instance v0, Lcom/google/android/gms/internal/ads/zzmc;
-
-    invoke-direct {v0, p1}, Lcom/google/android/gms/internal/ads/zzmc;-><init>(Landroid/os/Parcel;)V
-
-    return-object v0
-.end method
-
-.method public final synthetic newArray(I)[Ljava/lang/Object;
-    .locals 0
-
-    const/4 p1, 0x0
-
-    new-array p1, p1, [Lcom/google/android/gms/internal/ads/zzmc;
-
-    return-object p1
+.method public abstract a(Ljava/lang/String;Z)Lk3/iz0;
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lcom/google/android/gms/internal/ads/zzlz;
+        }
+    .end annotation
 .end method

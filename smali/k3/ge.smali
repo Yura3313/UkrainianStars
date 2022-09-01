@@ -7,18 +7,22 @@
 
 
 # instance fields
-.field public final synthetic f:I
+.field public final synthetic g:Ljava/lang/String;
 
-.field public final g:Ljava/lang/Object;
+.field public final synthetic h:Ljava/lang/String;
+
+.field public final synthetic i:Lk3/ce;
 
 
 # direct methods
-.method public synthetic constructor <init>(Ljava/lang/Object;I)V
+.method public constructor <init>(Lk3/ce;Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
 
-    iput p2, p0, Lk3/ge;->f:I
+    iput-object p1, p0, Lk3/ge;->i:Lk3/ce;
 
-    iput-object p1, p0, Lk3/ge;->g:Ljava/lang/Object;
+    iput-object p2, p0, Lk3/ge;->g:Ljava/lang/String;
+
+    iput-object p3, p0, Lk3/ge;->h:Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,70 +34,23 @@
 .method public final run()V
     .locals 3
 
-    iget v0, p0, Lk3/ge;->f:I
-
-    packed-switch v0, :pswitch_data_0
-
-    goto :goto_0
-
     .line 1
-    :pswitch_0
-    iget-object v0, p0, Lk3/ge;->g:Ljava/lang/Object;
-
-    check-cast v0, Lk3/aj;
-
-    invoke-virtual {v0}, Lk3/aj;->C0()V
-
-    return-void
+    iget-object v0, p0, Lk3/ge;->i:Lk3/ce;
 
     .line 2
-    :pswitch_1
-    iget-object v0, p0, Lk3/ge;->g:Ljava/lang/Object;
-
-    check-cast v0, Lk3/be;
-
-    .line 3
-    iget-object v0, v0, Lk3/be;->s:Lk3/le;
+    iget-object v0, v0, Lk3/ce;->t:Lk3/me;
 
     if-eqz v0, :cond_0
 
-    .line 4
-    check-cast v0, Lk3/pe;
+    .line 3
+    iget-object v1, p0, Lk3/ge;->g:Ljava/lang/String;
 
-    const/4 v1, 0x0
+    iget-object v2, p0, Lk3/ge;->h:Ljava/lang/String;
 
-    new-array v1, v1, [Ljava/lang/String;
+    check-cast v0, Lk3/qe;
 
-    const-string v2, "ended"
-
-    .line 5
-    invoke-virtual {v0, v2, v1}, Lk3/pe;->c(Ljava/lang/String;[Ljava/lang/String;)V
-
-    .line 6
-    invoke-virtual {v0}, Lk3/pe;->k()V
+    invoke-virtual {v0, v1, v2}, Lk3/qe;->f(Ljava/lang/String;Ljava/lang/String;)V
 
     :cond_0
     return-void
-
-    .line 7
-    :goto_0
-    iget-object v0, p0, Lk3/ge;->g:Ljava/lang/Object;
-
-    check-cast v0, Lre/a;
-
-    invoke-interface {v0}, Lre/a;->invoke()Ljava/lang/Object;
-
-    move-result-object v0
-
-    const-string v1, "invoke(...)"
-
-    invoke-static {v0, v1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
-
-    return-void
-
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_1
-        :pswitch_0
-    .end packed-switch
 .end method

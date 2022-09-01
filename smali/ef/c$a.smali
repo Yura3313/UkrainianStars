@@ -32,7 +32,7 @@
             "Ljava/lang/reflect/Type;",
             "[",
             "Ljava/lang/annotation/Annotation;",
-            "Lef/d0;",
+            "Lef/c0;",
             ")",
             "Lef/c<",
             "**>;"

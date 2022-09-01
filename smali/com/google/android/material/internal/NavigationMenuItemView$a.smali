@@ -46,7 +46,7 @@
     .line 4
     iget-object p1, p0, Lcom/google/android/material/internal/NavigationMenuItemView$a;->d:Lcom/google/android/material/internal/NavigationMenuItemView;
 
-    iget-boolean p1, p1, Lcom/google/android/material/internal/NavigationMenuItemView;->C:Z
+    iget-boolean p1, p1, Lcom/google/android/material/internal/NavigationMenuItemView;->D:Z
 
     invoke-virtual {p2, p1}, Lg0/c;->D(Z)V
 

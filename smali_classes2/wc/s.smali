@@ -14,11 +14,11 @@
 
 
 # static fields
-.field public static final enum f:Lwc/s;
-
 .field public static final enum g:Lwc/s;
 
-.field public static final synthetic h:[Lwc/s;
+.field public static final enum h:Lwc/s;
+
+.field public static final synthetic i:[Lwc/s;
 
 
 # direct methods
@@ -37,7 +37,7 @@
 
     invoke-direct {v1, v2, v3}, Lwc/s;-><init>(Ljava/lang/String;I)V
 
-    sput-object v1, Lwc/s;->f:Lwc/s;
+    sput-object v1, Lwc/s;->g:Lwc/s;
 
     aput-object v1, v0, v3
 
@@ -49,11 +49,11 @@
 
     invoke-direct {v1, v2, v3}, Lwc/s;-><init>(Ljava/lang/String;I)V
 
-    sput-object v1, Lwc/s;->g:Lwc/s;
+    sput-object v1, Lwc/s;->h:Lwc/s;
 
     aput-object v1, v0, v3
 
-    sput-object v0, Lwc/s;->h:[Lwc/s;
+    sput-object v0, Lwc/s;->i:[Lwc/s;
 
     return-void
 .end method
@@ -88,7 +88,7 @@
 .method public static values()[Lwc/s;
     .locals 1
 
-    sget-object v0, Lwc/s;->h:[Lwc/s;
+    sget-object v0, Lwc/s;->i:[Lwc/s;
 
     invoke-virtual {v0}, [Lwc/s;->clone()Ljava/lang/Object;
 

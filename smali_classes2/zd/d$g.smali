@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field public final synthetic f:Lzd/d;
+.field public final synthetic g:Lzd/d;
 
 
 # direct methods
 .method public constructor <init>(Lzd/d;)V
     .locals 0
 
-    iput-object p1, p0, Lzd/d$g;->f:Lzd/d;
+    iput-object p1, p0, Lzd/d$g;->g:Lzd/d;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -38,7 +38,7 @@
     .locals 9
 
     .line 1
-    iget-object p1, p0, Lzd/d$g;->f:Lzd/d;
+    iget-object p1, p0, Lzd/d$g;->g:Lzd/d;
 
     sget v0, Lcom/supercell/id/R$id;->okButton:I
 
@@ -50,14 +50,14 @@
 
     const-string v0, "okButton"
 
-    invoke-static {p1, v0}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/4 v0, 0x0
 
     invoke-virtual {p1, v0}, Landroid/view/View;->setEnabled(Z)V
 
     .line 2
-    iget-object p1, p0, Lzd/d$g;->f:Lzd/d;
+    iget-object p1, p0, Lzd/d$g;->g:Lzd/d;
 
     sget v1, Lcom/supercell/id/R$id;->cancelButton:I
 
@@ -69,15 +69,15 @@
 
     const-string v1, "cancelButton"
 
-    invoke-static {p1, v1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v1}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {p1, v0}, Landroid/view/View;->setEnabled(Z)V
 
     .line 3
-    iget-object v3, p0, Lzd/d$g;->f:Lzd/d;
+    iget-object v3, p0, Lzd/d$g;->g:Lzd/d;
 
     .line 4
-    iget-object p1, v3, Lzd/d;->b0:Ljava/lang/String;
+    iget-object p1, v3, Lzd/d;->c0:Ljava/lang/String;
 
     invoke-virtual {p1}, Ljava/lang/String;->length()I
 
@@ -100,13 +100,13 @@
     if-eqz p1, :cond_1
 
     .line 5
-    invoke-static {v3}, Lcom/android/billingclient/api/c0;->e(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
+    invoke-static {v3}, Lcom/android/billingclient/api/b0;->f(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
 
     move-result-object p1
 
     if-eqz p1, :cond_4
 
-    sget-object v0, Lcom/supercell/id/ui/MainActivity;->s:Ljava/lang/ref/WeakReference;
+    sget-object v0, Lcom/supercell/id/ui/MainActivity;->t:Ljava/lang/ref/WeakReference;
 
     const-string v0, "missing_required_data"
 
@@ -117,18 +117,18 @@
 
     .line 7
     :cond_1
-    iget-boolean p1, v3, Lzd/d;->c0:Z
+    iget-boolean p1, v3, Lzd/d;->d0:Z
 
     if-nez p1, :cond_2
 
     .line 8
-    invoke-static {v3}, Lcom/android/billingclient/api/c0;->e(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
+    invoke-static {v3}, Lcom/android/billingclient/api/b0;->f(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
 
     move-result-object p1
 
     if-eqz p1, :cond_4
 
-    sget-object v0, Lcom/supercell/id/ui/MainActivity;->s:Ljava/lang/ref/WeakReference;
+    sget-object v0, Lcom/supercell/id/ui/MainActivity;->t:Ljava/lang/ref/WeakReference;
 
     const-string v0, "email_addresses_do_not_match"
 
@@ -139,18 +139,18 @@
 
     .line 10
     :cond_2
-    iget-boolean p1, v3, Lzd/d;->d0:Z
+    iget-boolean p1, v3, Lzd/d;->e0:Z
 
     if-nez p1, :cond_3
 
     .line 11
-    invoke-static {v3}, Lcom/android/billingclient/api/c0;->e(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
+    invoke-static {v3}, Lcom/android/billingclient/api/b0;->f(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
 
     move-result-object p1
 
     if-eqz p1, :cond_4
 
-    sget-object v0, Lcom/supercell/id/ui/MainActivity;->s:Ljava/lang/ref/WeakReference;
+    sget-object v0, Lcom/supercell/id/ui/MainActivity;->t:Ljava/lang/ref/WeakReference;
 
     const-string v0, "invalid_email_address"
 
@@ -161,7 +161,7 @@
 
     .line 13
     :cond_3
-    iget-object p1, v3, Lzd/d;->b0:Ljava/lang/String;
+    iget-object p1, v3, Lzd/d;->c0:Ljava/lang/String;
 
     .line 14
     sget-object v2, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
@@ -179,7 +179,7 @@
     const-string v5, "email"
 
     .line 17
-    invoke-static {p1, v5}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v5}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/4 v6, 0x5
 
@@ -191,10 +191,10 @@
     move-result-object v2
 
     .line 19
-    iget-object v2, v2, Lae/u;->s:Lud/j;
+    iget-object v2, v2, Lae/u;->s:Lud/i;
 
     .line 20
-    invoke-virtual {v2}, Lud/j;->c()Ljava/lang/String;
+    invoke-virtual {v2}, Lud/i;->c()Ljava/lang/String;
 
     move-result-object v2
 
@@ -254,12 +254,12 @@
     aput-object v1, v6, v0
 
     .line 26
-    invoke-static {v6}, Lje/t;->k([Lie/d;)Ljava/util/Map;
+    invoke-static {v6}, Lje/t;->l([Lie/d;)Ljava/util/Map;
 
     move-result-object v0
 
     .line 27
-    invoke-virtual {v4, v0}, Lrc/a;->h(Ljava/util/Map;)Lze/e0;
+    invoke-virtual {v4, v0}, Lrc/a;->h(Ljava/util/Map;)Lze/f0;
 
     move-result-object v2
 
@@ -269,14 +269,14 @@
     invoke-direct {v4, p1}, Lzd/b;-><init>(Ljava/lang/String;)V
 
     .line 29
-    sget-object v5, Lzd/c;->f:Lzd/c;
+    sget-object v5, Lzd/c;->g:Lzd/c;
 
     const/4 v6, 0x0
 
     const/16 v7, 0x8
 
     .line 30
-    invoke-static/range {v2 .. v7}, Lae/u1;->k(Lze/e0;Ljava/lang/Object;Lre/p;Lre/p;Lre/l;I)Lze/e0;
+    invoke-static/range {v2 .. v7}, Lae/t1;->j(Lze/f0;Ljava/lang/Object;Lre/p;Lre/p;Lre/l;I)Lze/f0;
 
     :cond_4
     :goto_1

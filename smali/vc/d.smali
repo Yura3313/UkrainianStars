@@ -1,31 +1,55 @@
 .class public final Lvc/d;
 .super Ljava/lang/Object;
-.source "IdApp.kt"
+.source "IdAppAccount.kt"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lvc/d$a;
+    }
+.end annotation
+
+
+# static fields
+.field public static final c:Lvc/d$a;
 
 
 # instance fields
 .field public final a:Ljava/lang/String;
 
-.field public final b:Ljava/lang/String;
+.field public final b:Lvc/c;
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;)V
+.method public static constructor <clinit>()V
     .locals 1
 
-    const-string v0, "game"
+    new-instance v0, Lvc/d$a;
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-direct {v0}, Lvc/d$a;-><init>()V
 
-    const-string v0, "environment"
+    sput-object v0, Lvc/d;->c:Lvc/d$a;
 
-    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    return-void
+.end method
+
+.method public constructor <init>(Ljava/lang/String;Lvc/c;)V
+    .locals 1
+
+    const-string v0, "account"
+
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "app"
+
+    invoke-static {p2, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-object p1, p0, Lvc/d;->a:Ljava/lang/String;
 
-    iput-object p2, p0, Lvc/d;->b:Ljava/lang/String;
+    iput-object p2, p0, Lvc/d;->b:Lvc/c;
 
     return-void
 .end method
@@ -39,15 +63,19 @@
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    iget-object v1, p0, Lvc/d;->a:Ljava/lang/String;
+    iget-object v1, p0, Lvc/d;->b:Lvc/c;
+
+    invoke-virtual {v1}, Lvc/c;->a()Ljava/lang/String;
+
+    move-result-object v1
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const/16 v1, 0x2d
+    const/16 v1, 0x3a
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lvc/d;->b:Ljava/lang/String;
+    iget-object v1, p0, Lvc/d;->a:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -73,17 +101,17 @@
 
     iget-object v1, p1, Lvc/d;->a:Ljava/lang/String;
 
-    invoke-static {v0, v1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lvc/d;->b:Ljava/lang/String;
+    iget-object v0, p0, Lvc/d;->b:Lvc/c;
 
-    iget-object p1, p1, Lvc/d;->b:Ljava/lang/String;
+    iget-object p1, p1, Lvc/d;->b:Lvc/c;
 
-    invoke-static {v0, p1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, p1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -124,11 +152,11 @@
     :goto_0
     mul-int/lit8 v0, v0, 0x1f
 
-    iget-object v2, p0, Lvc/d;->b:Ljava/lang/String;
+    iget-object v2, p0, Lvc/d;->b:Lvc/c;
 
     if-eqz v2, :cond_1
 
-    invoke-virtual {v2}, Ljava/lang/Object;->hashCode()I
+    invoke-virtual {v2}, Lvc/c;->hashCode()I
 
     move-result v1
 
@@ -139,9 +167,9 @@
 .end method
 
 .method public final toString()Ljava/lang/String;
-    .locals 3
+    .locals 2
 
-    const-string v0, "IdApp(game="
+    const-string v0, "IdAppAccount(account="
 
     .line 1
     invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -153,16 +181,19 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string v1, ", environment="
+    const-string v1, ", app="
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lvc/d;->b:Ljava/lang/String;
+    iget-object v1, p0, Lvc/d;->b:Lvc/c;
 
-    const-string v2, ")"
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    .line 3
-    invoke-static {v0, v1, v2}, Landroid/support/v4/media/b;->b(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    const-string v1, ")"
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v0
 

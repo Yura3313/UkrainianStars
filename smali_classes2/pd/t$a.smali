@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field public final synthetic f:Lpd/t;
+.field public final synthetic g:Lpd/t;
 
 
 # direct methods
 .method public constructor <init>(Lpd/t;)V
     .locals 0
 
-    iput-object p1, p0, Lpd/t$a;->f:Lpd/t;
+    iput-object p1, p0, Lpd/t$a;->g:Lpd/t;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -38,10 +38,10 @@
     .locals 0
 
     .line 1
-    iget-object p1, p0, Lpd/t$a;->f:Lpd/t;
+    iget-object p1, p0, Lpd/t$a;->g:Lpd/t;
 
     .line 2
-    iget-object p1, p1, Lpd/t;->j:Lpd/t$e;
+    iget-object p1, p1, Lpd/t;->k:Lpd/t$e;
 
     if-lez p2, :cond_0
 

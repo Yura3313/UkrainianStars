@@ -28,7 +28,7 @@
 
 .field public static c:Lcom/supercell/id/SupercellIdAccountStorage;
 
-.field public static final d:Lie/f;
+.field public static final d:Lie/g;
 
 .field public static final e:Ljava/util/WeakHashMap;
     .annotation system Ldalvik/annotation/Signature;
@@ -67,11 +67,11 @@
 
 .field public static j:I
 
-.field public static k:Lze/f0;
+.field public static k:Lze/g0;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lze/e0<",
-            "Lie/h;",
+            "Lze/f0<",
+            "Lie/i;",
             ">;"
         }
     .end annotation
@@ -94,15 +94,15 @@
     sput-object v0, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
 
     .line 2
-    sget-object v0, Lcom/supercell/id/SupercellId$t;->f:Lcom/supercell/id/SupercellId$t;
+    sget-object v0, Lcom/supercell/id/SupercellId$t;->g:Lcom/supercell/id/SupercellId$t;
 
-    invoke-static {v0}, La5/r;->d(Lre/a;)Lie/c;
+    invoke-static {v0}, Ld2/u;->c(Lre/a;)Lie/c;
 
     move-result-object v0
 
-    check-cast v0, Lie/f;
+    check-cast v0, Lie/g;
 
-    sput-object v0, Lcom/supercell/id/SupercellId;->d:Lie/f;
+    sput-object v0, Lcom/supercell/id/SupercellId;->d:Lie/g;
 
     .line 3
     new-instance v0, Ljava/util/WeakHashMap;
@@ -111,7 +111,7 @@
 
     sput-object v0, Lcom/supercell/id/SupercellId;->e:Ljava/util/WeakHashMap;
 
-    const-string v0, "4672-A"
+    const-string v0, "4680-A"
 
     .line 4
     invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -123,7 +123,7 @@
     const-string v2, "debug"
 
     .line 5
-    invoke-static {v1, v2}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v2}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
@@ -282,7 +282,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lae/u;->g()Lae/z0;
+    invoke-virtual {v0}, Lae/u;->g()Lae/y0;
 
     move-result-object v0
 
@@ -347,7 +347,7 @@
 
     const-string v0, "token"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 14
     sget-object v0, Lcom/supercell/id/SupercellId;->h:Lze/p;
@@ -355,7 +355,7 @@
     if-eqz v0, :cond_0
 
     .line 15
-    invoke-virtual {v0, p1}, Lze/e1;->G(Ljava/lang/Object;)Z
+    invoke-virtual {v0, p1}, Lze/f1;->G(Ljava/lang/Object;)Z
 
     :cond_0
     const/4 p1, 0x0
@@ -377,11 +377,11 @@
 
     move-object v11, p1
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "scidToken"
 
-    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     invoke-virtual {p0}, Lcom/supercell/id/SupercellId;->getUseInternalAccountStorage$supercellId_release()Z
@@ -395,16 +395,16 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lae/u;->g()Lae/z0;
+    invoke-virtual {v0}, Lae/u;->g()Lae/y0;
 
     move-result-object v12
 
     invoke-virtual {v12}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 3
-    sget-object v0, Lae/z0;->f:Lae/z0$a;
+    sget-object v0, Lae/y0;->f:Lae/y0$a;
 
-    invoke-virtual {v0, p2}, Lae/z0$a;->a(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v0, p2}, Lae/y0$a;->a(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -414,7 +414,7 @@
 
     .line 4
     :cond_0
-    iget-object v0, v12, Lae/z0;->c:Ljava/util/Map;
+    iget-object v0, v12, Lae/y0;->c:Ljava/util/Map;
 
     invoke-interface {v0, v1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -427,7 +427,7 @@
     if-eqz v10, :cond_1
 
     .line 5
-    iget-object v0, v12, Lae/z0;->c:Ljava/util/Map;
+    iget-object v0, v12, Lae/y0;->c:Ljava/util/Map;
 
     invoke-interface {v0}, Ljava/util/Map;->size()I
 
@@ -435,7 +435,7 @@
 
     int-to-long v2, v0
 
-    invoke-virtual {v12}, Lae/z0;->a()J
+    invoke-virtual {v12}, Lae/y0;->a()J
 
     move-result-wide v6
 
@@ -474,9 +474,9 @@
 
     invoke-direct/range {v0 .. v7}, Lcom/supercell/id/IdAccount;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)V
 
-    iput-object v9, v12, Lae/z0;->b:Lcom/supercell/id/IdAccount;
+    iput-object v9, v12, Lae/y0;->b:Lcom/supercell/id/IdAccount;
 
-    invoke-virtual {v12, v8, v9}, Lae/z0;->e(ZLcom/supercell/id/IdAccount;)V
+    invoke-virtual {v12, v8, v9}, Lae/y0;->e(ZLcom/supercell/id/IdAccount;)V
 
     goto :goto_3
 
@@ -525,14 +525,14 @@
     move-result-object v0
 
     .line 10
-    iput-object v0, v12, Lae/z0;->b:Lcom/supercell/id/IdAccount;
+    iput-object v0, v12, Lae/y0;->b:Lcom/supercell/id/IdAccount;
 
     .line 11
-    invoke-virtual {v12, v10, v0}, Lae/z0;->e(ZLcom/supercell/id/IdAccount;)V
+    invoke-virtual {v12, v10, v0}, Lae/y0;->e(ZLcom/supercell/id/IdAccount;)V
 
     .line 12
     :goto_3
-    invoke-virtual {v12}, Lae/z0;->d()V
+    invoke-virtual {v12}, Lae/y0;->d()V
 
     .line 13
     :cond_5
@@ -547,7 +547,7 @@
 
     const-string v0, "listener"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     sget-object v0, Lcom/supercell/id/SupercellId;->e:Ljava/util/WeakHashMap;
@@ -594,7 +594,7 @@
     throw p1
 .end method
 
-.method public final bindAccount$supercellId_release(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)Lze/e0;
+.method public final bindAccount$supercellId_release(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)Lze/f0;
     .locals 9
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -604,7 +604,7 @@
             "Ljava/lang/String;",
             "Ljava/lang/String;",
             "Z)",
-            "Lze/e0<",
+            "Lze/f0<",
             "Ljava/lang/String;",
             ">;"
         }
@@ -612,14 +612,14 @@
 
     const-string v0, "token"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "scidToken"
 
-    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
-    invoke-static {}, Lbf/g;->c()Lze/o;
+    invoke-static {}, Landroidx/lifecycle/b0;->b()Lze/o;
 
     move-result-object v0
 
@@ -641,7 +641,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lae/u;->g()Lae/z0;
+    invoke-virtual {v1}, Lae/u;->g()Lae/y0;
 
     move-result-object v1
 
@@ -740,9 +740,9 @@
 
     .line 7
     :cond_8
-    sget-object v1, Lae/z0;->f:Lae/z0$a;
+    sget-object v1, Lae/y0;->f:Lae/y0$a;
 
-    invoke-virtual {v1, p2}, Lae/z0$a;->a(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v1, p2}, Lae/y0$a;->a(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -810,7 +810,7 @@
 
     const-string v0, "productId"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     sget-object v1, Lcom/supercell/id/SupercellId;->a:Ljava/lang/ref/WeakReference;
@@ -892,7 +892,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v2}, Lae/u;->k()Lbe/o0;
+    invoke-virtual {v2}, Lae/u;->k()Lbe/q0;
 
     move-result-object v2
 
@@ -917,7 +917,7 @@
     invoke-direct {v4, v0, p1}, Lie/d;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
 
     .line 13
-    invoke-static {v4}, Lcom/google/android/play/core/assetpacks/o2;->j(Lie/d;)Ljava/util/Map;
+    invoke-static {v4}, Lt3/h;->h(Lie/d;)Ljava/util/Map;
 
     move-result-object v6
 
@@ -931,7 +931,7 @@
 
     move-object v4, v3
 
-    invoke-static/range {v4 .. v9}, Lrc/f;->e(Lrc/f;Ljava/lang/String;Ljava/util/Map;Ljava/lang/String;ILjava/lang/Object;)Lze/e0;
+    invoke-static/range {v4 .. v9}, Lrc/f;->e(Lrc/f;Ljava/lang/String;Ljava/util/Map;Ljava/lang/String;ILjava/lang/Object;)Lze/f0;
 
     move-result-object v0
 
@@ -940,44 +940,44 @@
 
     invoke-direct {v4, v3}, Lrc/j;-><init>(Lrc/i;)V
 
-    invoke-static {v0, v4}, Lae/u1;->p(Lze/e0;Lre/l;)Lze/e0;
+    invoke-static {v0, v4}, Lae/t1;->o(Lze/f0;Lre/l;)Lze/f0;
 
     move-result-object v0
 
     .line 15
-    sget-object v3, Lrc/k;->f:Lrc/k;
+    sget-object v3, Lrc/k;->g:Lrc/k;
 
-    invoke-static {v0, v3}, Lae/u1;->p(Lze/e0;Lre/l;)Lze/e0;
+    invoke-static {v0, v3}, Lae/t1;->o(Lze/f0;Lre/l;)Lze/f0;
 
     move-result-object v0
 
     .line 16
-    sget-object v3, Lrc/l;->g:Lrc/l;
+    sget-object v3, Lrc/l;->h:Lrc/l;
 
-    invoke-static {v0, v3}, Lae/u1;->p(Lze/e0;Lre/l;)Lze/e0;
+    invoke-static {v0, v3}, Lae/t1;->o(Lze/f0;Lre/l;)Lze/f0;
 
     move-result-object v0
 
     .line 17
-    new-instance v3, Lbe/p0;
+    new-instance v3, Lbe/r0;
 
-    invoke-direct {v3, v2}, Lbe/p0;-><init>(Lbe/o0;)V
+    invoke-direct {v3, v2}, Lbe/r0;-><init>(Lbe/q0;)V
 
-    invoke-static {v0, v3}, Lae/u1;->l(Lze/e0;Lre/l;)Lze/e0;
+    invoke-static {v0, v3}, Lae/t1;->k(Lze/f0;Lre/l;)Lze/f0;
 
     .line 18
     new-instance v2, Lcom/supercell/id/SupercellId$b;
 
     invoke-direct {v2, v1, p1}, Lcom/supercell/id/SupercellId$b;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
-    invoke-static {v0, v2}, Lae/u1;->m(Lze/e0;Lre/l;)Lze/e0;
+    invoke-static {v0, v2}, Lae/t1;->l(Lze/f0;Lre/l;)Lze/f0;
 
     .line 19
     new-instance v2, Lcom/supercell/id/SupercellId$c;
 
     invoke-direct {v2, v1, p1}, Lcom/supercell/id/SupercellId$c;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
-    invoke-static {v0, v2}, Lae/u1;->d(Lze/e0;Lre/l;)Lze/e0;
+    invoke-static {v0, v2}, Lae/t1;->c(Lze/f0;Lre/l;)Lze/f0;
 
     :cond_5
     return-void
@@ -986,9 +986,9 @@
 .method public final clearAssetsFromDisk()V
     .locals 1
 
-    sget-object v0, Lcom/supercell/id/SupercellId$d;->f:Lcom/supercell/id/SupercellId$d;
+    sget-object v0, Lcom/supercell/id/SupercellId$d;->g:Lcom/supercell/id/SupercellId$d;
 
-    invoke-static {v0}, Lae/u1;->o(Lre/a;)Lze/e0;
+    invoke-static {v0}, Lae/t1;->n(Lre/a;)Lze/f0;
 
     return-void
 .end method
@@ -996,9 +996,9 @@
 .method public final clearAssetsFromMemoryCache()V
     .locals 1
 
-    sget-object v0, Lcom/supercell/id/SupercellId$e;->f:Lcom/supercell/id/SupercellId$e;
+    sget-object v0, Lcom/supercell/id/SupercellId$e;->g:Lcom/supercell/id/SupercellId$e;
 
-    invoke-static {v0}, Lae/u1;->o(Lre/a;)Lze/e0;
+    invoke-static {v0}, Lae/t1;->n(Lre/a;)Lze/f0;
 
     return-void
 .end method
@@ -1039,7 +1039,7 @@
     invoke-virtual {v1, v0}, Lbe/b$b;->a(Landroid/content/Context;)V
 
     .line 5
-    sget-object v1, Lbe/y;->f:Lbe/y$b;
+    sget-object v1, Lbe/y;->g:Lbe/y$b;
 
     invoke-virtual {v1, v0}, Lbe/y$b;->a(Landroid/content/Context;)V
 
@@ -1049,7 +1049,7 @@
     invoke-virtual {v1, v0}, Lpc/f$a;->b(Landroid/content/Context;)V
 
     .line 7
-    sget-object v1, Lbe/n;->f:Lbe/n$b;
+    sget-object v1, Lbe/n;->e:Lbe/n$b;
 
     invoke-virtual {v1, v0}, Lbe/n$b;->a(Landroid/content/Context;)V
 
@@ -1060,9 +1060,9 @@
 .method public final clearImageAssetsFromMemoryCache()V
     .locals 1
 
-    sget-object v0, Lcom/supercell/id/SupercellId$f;->f:Lcom/supercell/id/SupercellId$f;
+    sget-object v0, Lcom/supercell/id/SupercellId$f;->g:Lcom/supercell/id/SupercellId$f;
 
-    invoke-static {v0}, Lae/u1;->o(Lre/a;)Lze/e0;
+    invoke-static {v0}, Lae/t1;->n(Lre/a;)Lze/f0;
 
     return-void
 .end method
@@ -1140,9 +1140,9 @@
 .method public final clearTemporaryAssetsFromDisk()V
     .locals 1
 
-    sget-object v0, Lcom/supercell/id/SupercellId$g;->f:Lcom/supercell/id/SupercellId$g;
+    sget-object v0, Lcom/supercell/id/SupercellId$g;->g:Lcom/supercell/id/SupercellId$g;
 
-    invoke-static {v0}, Lae/u1;->o(Lre/a;)Lze/e0;
+    invoke-static {v0}, Lae/t1;->n(Lre/a;)Lze/f0;
 
     return-void
 .end method
@@ -1155,7 +1155,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lae/u;->g()Lae/z0;
+    invoke-virtual {v0}, Lae/u;->g()Lae/y0;
 
     move-result-object v0
 
@@ -1164,7 +1164,7 @@
     const-string v2, "tutorialComplete"
 
     .line 2
-    invoke-virtual {v0, v2, v1}, Lae/z0;->c(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v0, v2, v1}, Lae/y0;->c(Ljava/lang/String;Ljava/lang/String;)V
 
     return-void
 .end method
@@ -1173,10 +1173,10 @@
     .locals 1
 
     .line 1
-    sget-object v0, Led/a;->i:Led/a$a;
+    sget-object v0, Led/a;->j:Led/a$a;
 
     .line 2
-    sget-object v0, Led/a;->h:Ljava/lang/ref/WeakReference;
+    sget-object v0, Led/a;->i:Ljava/lang/ref/WeakReference;
 
     if-eqz v0, :cond_0
 
@@ -1217,10 +1217,10 @@
     move-result-object v0
 
     .line 2
-    iget-object v0, v0, Lae/u;->x:Lae/i0;
+    iget-object v0, v0, Lae/u;->x:Lae/h0;
 
     .line 3
-    invoke-virtual {v0}, Lae/i0;->b()V
+    invoke-virtual {v0}, Lae/h0;->b()V
 
     return-void
 .end method
@@ -1230,7 +1230,7 @@
 
     const-string v0, "claimToken"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     sget-object v1, Lcom/supercell/id/SupercellId;->a:Ljava/lang/ref/WeakReference;
@@ -1310,7 +1310,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v2}, Lae/u;->k()Lbe/o0;
+    invoke-virtual {v2}, Lae/u;->k()Lbe/q0;
 
     move-result-object v2
 
@@ -1335,7 +1335,7 @@
     invoke-direct {v4, v0, p1}, Lie/d;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
 
     .line 13
-    invoke-static {v4}, Lcom/google/android/play/core/assetpacks/o2;->j(Lie/d;)Ljava/util/Map;
+    invoke-static {v4}, Lt3/h;->h(Lie/d;)Ljava/util/Map;
 
     move-result-object v6
 
@@ -1349,7 +1349,7 @@
 
     move-object v4, v3
 
-    invoke-static/range {v4 .. v9}, Lrc/f;->e(Lrc/f;Ljava/lang/String;Ljava/util/Map;Ljava/lang/String;ILjava/lang/Object;)Lze/e0;
+    invoke-static/range {v4 .. v9}, Lrc/f;->e(Lrc/f;Ljava/lang/String;Ljava/util/Map;Ljava/lang/String;ILjava/lang/Object;)Lze/f0;
 
     move-result-object v0
 
@@ -1358,37 +1358,37 @@
 
     invoke-direct {v4, v3}, Lrc/m;-><init>(Lrc/i;)V
 
-    invoke-static {v0, v4}, Lae/u1;->p(Lze/e0;Lre/l;)Lze/e0;
+    invoke-static {v0, v4}, Lae/t1;->o(Lze/f0;Lre/l;)Lze/f0;
 
     move-result-object v0
 
     .line 15
-    sget-object v3, Lrc/n;->f:Lrc/n;
+    sget-object v3, Lrc/n;->g:Lrc/n;
 
-    invoke-static {v0, v3}, Lae/u1;->p(Lze/e0;Lre/l;)Lze/e0;
+    invoke-static {v0, v3}, Lae/t1;->o(Lze/f0;Lre/l;)Lze/f0;
 
     move-result-object v0
 
     .line 16
-    new-instance v3, Lbe/q0;
+    new-instance v3, Lbe/s0;
 
-    invoke-direct {v3, v2, p1}, Lbe/q0;-><init>(Lbe/o0;Ljava/lang/String;)V
+    invoke-direct {v3, v2, p1}, Lbe/s0;-><init>(Lbe/q0;Ljava/lang/String;)V
 
-    invoke-static {v0, v3}, Lae/u1;->l(Lze/e0;Lre/l;)Lze/e0;
+    invoke-static {v0, v3}, Lae/t1;->k(Lze/f0;Lre/l;)Lze/f0;
 
     .line 17
     new-instance v2, Lcom/supercell/id/SupercellId$h;
 
     invoke-direct {v2, v1, p1}, Lcom/supercell/id/SupercellId$h;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
-    invoke-static {v0, v2}, Lae/u1;->m(Lze/e0;Lre/l;)Lze/e0;
+    invoke-static {v0, v2}, Lae/t1;->l(Lze/f0;Lre/l;)Lze/f0;
 
     .line 18
     new-instance v2, Lcom/supercell/id/SupercellId$i;
 
     invoke-direct {v2, v1, p1}, Lcom/supercell/id/SupercellId$i;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
-    invoke-static {v0, v2}, Lae/u1;->d(Lze/e0;Lre/l;)Lze/e0;
+    invoke-static {v0, v2}, Lae/t1;->c(Lze/f0;Lre/l;)Lze/f0;
 
     :cond_5
     return-void
@@ -1399,7 +1399,7 @@
 
     const-string v0, "url"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     sget-object v0, Lcom/supercell/id/SupercellId;->b:Lcom/supercell/id/SupercellIdDelegate;
 
@@ -1490,7 +1490,7 @@
     .line 5
     new-instance p1, Lcom/supercell/id/model/IdSocialAccount$AppAccount;
 
-    new-instance v0, Lvc/e;
+    new-instance v0, Lvc/d;
 
     invoke-virtual {p0}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lae/u;
 
@@ -1500,13 +1500,13 @@
     iget-object v1, v1, Lae/u;->j:Lcom/supercell/id/IdConfiguration;
 
     .line 7
-    invoke-virtual {v1}, Lcom/supercell/id/IdConfiguration;->getApp()Lvc/d;
+    invoke-virtual {v1}, Lcom/supercell/id/IdConfiguration;->getApp()Lvc/c;
 
     move-result-object v1
 
-    invoke-direct {v0, p2, v1}, Lvc/e;-><init>(Ljava/lang/String;Lvc/d;)V
+    invoke-direct {v0, p2, v1}, Lvc/d;-><init>(Ljava/lang/String;Lvc/c;)V
 
-    invoke-direct {p1, v0}, Lcom/supercell/id/model/IdSocialAccount$AppAccount;-><init>(Lvc/e;)V
+    invoke-direct {p1, v0}, Lcom/supercell/id/model/IdSocialAccount$AppAccount;-><init>(Lvc/d;)V
 
     move-object p2, p1
 
@@ -1523,7 +1523,7 @@
     const/4 v0, 0x0
 
     .line 9
-    invoke-virtual {p1, p2, v0}, Lbe/h;->j(Lcom/supercell/id/model/IdSocialAccount;Ljava/lang/String;)Lze/e0;
+    invoke-virtual {p1, p2, v0}, Lbe/h;->j(Lcom/supercell/id/model/IdSocialAccount;Ljava/lang/String;)Lze/f0;
 
     :cond_5
     return-void
@@ -1533,7 +1533,7 @@
     .locals 2
 
     .line 1
-    sget-object v0, Lcom/supercell/id/ui/MainActivity;->t:Lcom/supercell/id/ui/MainActivity$a;
+    sget-object v0, Lcom/supercell/id/ui/MainActivity;->u:Lcom/supercell/id/ui/MainActivity$a;
 
     invoke-virtual {v0}, Lcom/supercell/id/ui/MainActivity$a;->a()Lcom/supercell/id/ui/MainActivity;
 
@@ -1557,12 +1557,12 @@
 
     .line 4
     :cond_0
-    invoke-static {v0}, Lcom/android/billingclient/api/c0;->g(Landroid/app/Activity;)V
+    invoke-static {v0}, Lcom/android/billingclient/api/b0;->h(Landroid/app/Activity;)V
 
     .line 5
-    iget-object v0, v0, Lcom/supercell/id/ui/MainActivity;->o:Lie/f;
+    iget-object v0, v0, Lcom/supercell/id/ui/MainActivity;->p:Lie/g;
 
-    invoke-virtual {v0}, Lie/f;->getValue()Ljava/lang/Object;
+    invoke-virtual {v0}, Lie/g;->getValue()Ljava/lang/Object;
 
     move-result-object v0
 
@@ -1581,7 +1581,7 @@
 
     const-string v0, "activity"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     invoke-virtual {p0}, Lcom/supercell/id/SupercellId;->prepareForDismiss$supercellId_release()V
@@ -1597,11 +1597,11 @@
 
     const-string v0, "activity"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "feedId"
 
-    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     invoke-virtual {p0}, Lcom/supercell/id/SupercellId;->preload()V
@@ -1644,7 +1644,7 @@
 
     const-string v0, "mainActivity"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     invoke-virtual {p0}, Lcom/supercell/id/SupercellId;->updateSharedServices$supercellId_release()V
@@ -1652,7 +1652,7 @@
     const/4 v0, 0x0
 
     .line 2
-    iput-object v0, p1, Lcom/supercell/id/ui/MainActivity;->f:Lcom/supercell/id/PresentationInfo;
+    iput-object v0, p1, Lcom/supercell/id/ui/MainActivity;->g:Lcom/supercell/id/PresentationInfo;
 
     .line 3
     invoke-virtual {p1}, Lcom/supercell/id/ui/MainActivity;->g()[Lcom/supercell/id/ui/BackStack$Entry;
@@ -1682,7 +1682,7 @@
 
     const-string v0, "supercellId"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     invoke-virtual {p0}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lae/u;
@@ -1690,7 +1690,7 @@
     move-result-object v0
 
     .line 2
-    iget-object v0, v0, Lae/u;->i:Lae/i2;
+    iget-object v0, v0, Lae/u;->i:Lae/h2;
 
     if-eqz v0, :cond_4
 
@@ -1729,7 +1729,7 @@
 
     move-result-object v7
 
-    invoke-static {v7, p1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v7, p1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v7
 
@@ -1747,7 +1747,7 @@
 
     move-result-object v7
 
-    invoke-static {v7, p2}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v7, p2}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v7
 
@@ -1773,7 +1773,7 @@
 
     .line 7
     :cond_3
-    invoke-virtual {v0, v2}, Lae/i2;->a(Ljava/util/List;)V
+    invoke-virtual {v0, v2}, Lae/h2;->a(Ljava/util/List;)V
 
     .line 8
     invoke-virtual {p0}, Lcom/supercell/id/SupercellId;->a()Lcom/supercell/id/SupercellIdAccountStorage;
@@ -1788,7 +1788,7 @@
     const-string p1, "sharedAccountStorage"
 
     .line 9
-    invoke-static {p1}, Lt3/e;->g(Ljava/lang/String;)V
+    invoke-static {p1}, Lt3/h;->k(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 
@@ -1888,12 +1888,12 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lae/u;->g()Lae/z0;
+    invoke-virtual {v0}, Lae/u;->g()Lae/y0;
 
     move-result-object v0
 
     .line 3
-    iget-object v0, v0, Lae/z0;->b:Lcom/supercell/id/IdAccount;
+    iget-object v0, v0, Lae/y0;->b:Lcom/supercell/id/IdAccount;
 
     goto :goto_0
 
@@ -1914,7 +1914,7 @@
 
     const-string v1, "Locale.getDefault()"
 
-    invoke-static {v0, v1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v0}, Ljava/util/Locale;->getCountry()Ljava/lang/String;
 
@@ -2070,7 +2070,7 @@
 
     const-string v1, "(this as java.lang.String).toUpperCase()"
 
-    invoke-static {v0, v1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     return-object v0
 .end method
@@ -2225,10 +2225,10 @@
     move-result-object v0
 
     .line 2
-    iget-object v0, v0, Lae/u;->x:Lae/i0;
+    iget-object v0, v0, Lae/u;->x:Lae/h0;
 
     .line 3
-    iget-boolean v0, v0, Lae/i0;->k:Z
+    iget-boolean v0, v0, Lae/h0;->l:Z
 
     goto :goto_0
 
@@ -2258,7 +2258,7 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Landroidx/savedstate/d;->a(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0}, Le0/f;->b(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -2267,7 +2267,7 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Landroidx/savedstate/d;->a(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0}, Le0/f;->b(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v3
 
@@ -2312,7 +2312,7 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Landroidx/savedstate/d;->a(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0}, Le0/f;->b(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -2321,7 +2321,7 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Landroidx/savedstate/d;->a(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0}, Le0/f;->b(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v3
 
@@ -2455,12 +2455,12 @@
     return-object v0
 .end method
 
-.method public final getRemoteConfigurationPromise$supercellId_release()Lze/e0;
+.method public final getRemoteConfigurationPromise$supercellId_release()Lze/f0;
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lze/e0<",
+            "Lze/f0<",
             "Lae/i;",
             ">;"
         }
@@ -2487,7 +2487,7 @@
     if-eqz v1, :cond_1
 
     .line 3
-    invoke-static {v0}, Lbf/g;->b(Ljava/lang/Object;)Lze/o;
+    invoke-static {v0}, Landroidx/lifecycle/b0;->a(Ljava/lang/Object;)Lze/o;
 
     move-result-object v0
 
@@ -2503,7 +2503,7 @@
 
     .line 5
     :cond_2
-    invoke-static {}, Lbf/g;->c()Lze/o;
+    invoke-static {}, Landroidx/lifecycle/b0;->b()Lze/o;
 
     move-result-object v0
 
@@ -2521,9 +2521,9 @@
 .method public final getSharedServices$supercellId_release()Lae/u;
     .locals 1
 
-    sget-object v0, Lcom/supercell/id/SupercellId;->d:Lie/f;
+    sget-object v0, Lcom/supercell/id/SupercellId;->d:Lie/g;
 
-    invoke-virtual {v0}, Lie/f;->getValue()Ljava/lang/Object;
+    invoke-virtual {v0}, Lie/g;->getValue()Ljava/lang/Object;
 
     move-result-object v0
 
@@ -2567,11 +2567,11 @@
 
     const-string v2, "activity"
 
-    invoke-static {v0, v2}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v2}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v2, "notificationToken"
 
-    invoke-static {v1, v2}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     sget-object v2, Lcom/supercell/id/SupercellId;->a:Ljava/lang/ref/WeakReference;
@@ -2613,7 +2613,7 @@
     move-result-object v2
 
     .line 7
-    iget-object v2, v2, Lae/u;->x:Lae/i0;
+    iget-object v2, v2, Lae/u;->x:Lae/h0;
 
     .line 8
     invoke-virtual {v2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -2630,12 +2630,12 @@
     aput-char v7, v6, v4
 
     .line 9
-    invoke-static {v1, v6, v4, v4}, Lye/r;->x(Ljava/lang/CharSequence;[CZI)Ljava/util/List;
+    invoke-static {v1, v6, v4, v4}, Lye/r;->y(Ljava/lang/CharSequence;[CZI)Ljava/util/List;
 
     move-result-object v1
 
     .line 10
-    invoke-static {v1, v3}, Lje/j;->B(Ljava/util/List;I)Ljava/lang/Object;
+    invoke-static {v1, v3}, Lje/j;->w(Ljava/util/List;I)Ljava/lang/Object;
 
     move-result-object v1
 
@@ -2656,7 +2656,7 @@
     const-string v7, "decodedBytes"
 
     .line 13
-    invoke-static {v1, v7}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, v7}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     sget-object v7, Lye/a;->a:Ljava/nio/charset/Charset;
 
@@ -2699,7 +2699,7 @@
     .line 17
     sget-object v8, Lorg/json/JSONObject;->NULL:Ljava/lang/Object;
 
-    invoke-static {v7, v8}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v7, v8}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v8
 
@@ -2731,7 +2731,7 @@
 
     const-string v9, "Locale.US"
 
-    invoke-static {v8, v9}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v8, v9}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v7, v8}, Ljava/lang/String;->toUpperCase(Ljava/util/Locale;)Ljava/lang/String;
 
@@ -2739,7 +2739,7 @@
 
     const-string v8, "(this as java.lang.String).toUpperCase(locale)"
 
-    invoke-static {v7, v8}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v7, v8}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v8, "data"
 
@@ -2762,7 +2762,7 @@
     .line 22
     sget-object v10, Lorg/json/JSONObject;->NULL:Ljava/lang/Object;
 
-    invoke-static {v9, v10}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v9, v10}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v10
 
@@ -2807,7 +2807,7 @@
     .line 25
     sget-object v10, Lorg/json/JSONObject;->NULL:Ljava/lang/Object;
 
-    invoke-static {v9, v10}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v9, v10}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v10
 
@@ -2861,7 +2861,7 @@
     .line 28
     sget-object v10, Lorg/json/JSONObject;->NULL:Ljava/lang/Object;
 
-    invoke-static {v9, v10}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v9, v10}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v10
 
@@ -2947,7 +2947,7 @@
     .line 33
     sget-object v4, Lorg/json/JSONObject;->NULL:Ljava/lang/Object;
 
-    invoke-static {v3, v4}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v3, v4}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v4
 
@@ -3044,7 +3044,7 @@
     .line 39
     sget-object v3, Lorg/json/JSONObject;->NULL:Ljava/lang/Object;
 
-    invoke-static {v1, v3}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v3}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v3
 
@@ -3115,11 +3115,11 @@
     move-object v15, v1
 
     .line 43
-    new-instance v1, Lvc/n$a;
+    new-instance v1, Lvc/m$a;
 
     move-object v10, v1
 
-    invoke-direct/range {v10 .. v15}, Lvc/n$a;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/util/Date;Ljava/util/Date;Ljava/util/Date;)V
+    invoke-direct/range {v10 .. v15}, Lvc/m$a;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/util/Date;Ljava/util/Date;Ljava/util/Date;)V
 
     .line 44
     invoke-virtual {v7}, Ljava/lang/String;->hashCode()I
@@ -3164,7 +3164,7 @@
     .line 47
     sget-object v4, Lorg/json/JSONObject;->NULL:Ljava/lang/Object;
 
-    invoke-static {v3, v4}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v3, v4}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v4
 
@@ -3215,7 +3215,7 @@
 
     const/4 v5, 0x0
 
-    invoke-static {v5, v4}, Lcom/google/android/play/core/appupdate/c;->c(II)Lve/c;
+    invoke-static {v5, v4}, La5/b0;->l(II)Lve/c;
 
     move-result-object v4
 
@@ -3253,9 +3253,9 @@
     if-eqz v6, :cond_22
 
     .line 54
-    new-instance v7, Lvc/o;
+    new-instance v7, Lvc/n;
 
-    invoke-direct {v7, v6}, Lvc/o;-><init>(Lorg/json/JSONObject;)V
+    invoke-direct {v7, v6}, Lvc/n;-><init>(Lorg/json/JSONObject;)V
 
     goto :goto_f
 
@@ -3303,7 +3303,7 @@
     .line 58
     sget-object v4, Lorg/json/JSONObject;->NULL:Ljava/lang/Object;
 
-    invoke-static {v3, v4}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v3, v4}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v4
 
@@ -3363,7 +3363,7 @@
     .line 63
     sget-object v5, Lorg/json/JSONObject;->NULL:Ljava/lang/Object;
 
-    invoke-static {v4, v5}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v4, v5}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v5
 
@@ -3404,7 +3404,7 @@
 
     .line 66
     :goto_14
-    new-instance v4, Lvc/n$j$e;
+    new-instance v4, Lvc/m$j$e;
 
     move-object/from16 v18, v4
 
@@ -3412,7 +3412,7 @@
 
     move-object/from16 v23, v1
 
-    invoke-direct/range {v18 .. v23}, Lvc/n$j$e;-><init>(Ljava/lang/String;Ljava/util/List;IZLvc/n$a;)V
+    invoke-direct/range {v18 .. v23}, Lvc/m$j$e;-><init>(Ljava/lang/String;Ljava/util/List;IZLvc/m$a;)V
 
     goto/16 :goto_27
 
@@ -3436,7 +3436,7 @@
     .line 69
     sget-object v4, Lorg/json/JSONObject;->NULL:Ljava/lang/Object;
 
-    invoke-static {v3, v4}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v3, v4}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v4
 
@@ -3464,9 +3464,9 @@
     if-eqz v3, :cond_96
 
     .line 71
-    new-instance v4, Lvc/n$j$a;
+    new-instance v4, Lvc/m$j$a;
 
-    invoke-direct {v4, v3, v1}, Lvc/n$j$a;-><init>(Ljava/lang/String;Lvc/n$a;)V
+    invoke-direct {v4, v3, v1}, Lvc/m$j$a;-><init>(Ljava/lang/String;Lvc/m$a;)V
 
     goto/16 :goto_27
 
@@ -3490,7 +3490,7 @@
     .line 74
     sget-object v5, Lorg/json/JSONObject;->NULL:Ljava/lang/Object;
 
-    invoke-static {v3, v5}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v3, v5}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v5
 
@@ -3535,7 +3535,7 @@
     .line 77
     sget-object v4, Lorg/json/JSONObject;->NULL:Ljava/lang/Object;
 
-    invoke-static {v3, v4}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v3, v4}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v4
 
@@ -3578,7 +3578,7 @@
     .line 80
     sget-object v4, Lorg/json/JSONObject;->NULL:Ljava/lang/Object;
 
-    invoke-static {v3, v4}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v3, v4}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v4
 
@@ -3625,7 +3625,7 @@
     .line 83
     sget-object v4, Lorg/json/JSONObject;->NULL:Ljava/lang/Object;
 
-    invoke-static {v3, v4}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v3, v4}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v4
 
@@ -3672,7 +3672,7 @@
     .line 86
     sget-object v4, Lorg/json/JSONObject;->NULL:Ljava/lang/Object;
 
-    invoke-static {v3, v4}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v3, v4}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v4
 
@@ -3700,13 +3700,13 @@
 
     .line 88
     :goto_1e
-    new-instance v3, Lvc/n$j$b;
+    new-instance v3, Lvc/m$j$b;
 
     move-object/from16 v18, v3
 
     move-object/from16 v24, v1
 
-    invoke-direct/range {v18 .. v24}, Lvc/n$j$b;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lvc/n$a;)V
+    invoke-direct/range {v18 .. v24}, Lvc/m$j$b;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lvc/m$a;)V
 
     const/4 v9, 0x0
 
@@ -3746,7 +3746,7 @@
     .line 92
     sget-object v4, Lorg/json/JSONObject;->NULL:Ljava/lang/Object;
 
-    invoke-static {v3, v4}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v3, v4}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v4
 
@@ -3774,9 +3774,9 @@
     if-eqz v3, :cond_96
 
     .line 94
-    new-instance v4, Lvc/n$c;
+    new-instance v4, Lvc/m$c;
 
-    invoke-direct {v4, v3, v1}, Lvc/n$c;-><init>(Ljava/lang/String;Lvc/n$a;)V
+    invoke-direct {v4, v3, v1}, Lvc/m$c;-><init>(Ljava/lang/String;Lvc/m$a;)V
 
     goto/16 :goto_27
 
@@ -3792,7 +3792,7 @@
 
     .line 96
     :try_start_1
-    sget-object v3, Lcom/supercell/id/model/IdSocialAccount;->f:Lcom/supercell/id/model/IdSocialAccount$b;
+    sget-object v3, Lcom/supercell/id/model/IdSocialAccount;->g:Lcom/supercell/id/model/IdSocialAccount$b;
 
     invoke-virtual {v3, v8}, Lcom/supercell/id/model/IdSocialAccount$b;->b(Lorg/json/JSONObject;)Lcom/supercell/id/model/IdSocialAccount;
 
@@ -3801,9 +3801,9 @@
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_5
 
     .line 97
-    new-instance v4, Lvc/n$e;
+    new-instance v4, Lvc/m$e;
 
-    invoke-direct {v4, v3, v1}, Lvc/n$e;-><init>(Lcom/supercell/id/model/IdSocialAccount;Lvc/n$a;)V
+    invoke-direct {v4, v3, v1}, Lvc/m$e;-><init>(Lcom/supercell/id/model/IdSocialAccount;Lvc/m$a;)V
 
     goto/16 :goto_27
 
@@ -3819,9 +3819,9 @@
 
     .line 99
     :try_start_2
-    new-instance v3, Lvc/x;
+    new-instance v3, Lvc/v;
 
-    invoke-direct {v3, v8}, Lvc/x;-><init>(Lorg/json/JSONObject;)V
+    invoke-direct {v3, v8}, Lvc/v;-><init>(Lorg/json/JSONObject;)V
     :try_end_2
     .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_1
 
@@ -3843,7 +3843,7 @@
     .line 101
     sget-object v5, Lorg/json/JSONObject;->NULL:Ljava/lang/Object;
 
-    invoke-static {v4, v5}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v4, v5}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v5
 
@@ -3871,9 +3871,9 @@
     if-eqz v4, :cond_96
 
     .line 103
-    new-instance v5, Lvc/n$j$c;
+    new-instance v5, Lvc/m$j$c;
 
-    invoke-direct {v5, v3, v4, v1}, Lvc/n$j$c;-><init>(Lvc/x;Ljava/lang/String;Lvc/n$a;)V
+    invoke-direct {v5, v3, v4, v1}, Lvc/m$j$c;-><init>(Lvc/v;Ljava/lang/String;Lvc/m$a;)V
 
     goto/16 :goto_28
 
@@ -3899,7 +3899,7 @@
     .line 106
     sget-object v4, Lorg/json/JSONObject;->NULL:Ljava/lang/Object;
 
-    invoke-static {v3, v4}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v3, v4}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v4
 
@@ -3936,7 +3936,7 @@
     .line 109
     sget-object v5, Lorg/json/JSONObject;->NULL:Ljava/lang/Object;
 
-    invoke-static {v4, v5}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v4, v5}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v5
 
@@ -3973,7 +3973,7 @@
     .line 112
     sget-object v6, Lorg/json/JSONObject;->NULL:Ljava/lang/Object;
 
-    invoke-static {v5, v6}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v5, v6}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v6
 
@@ -4009,12 +4009,12 @@
     aput-object v10, v7, v8
 
     .line 114
-    invoke-static {v5, v7, v13, v13}, Lye/r;->z(Ljava/lang/CharSequence;[Ljava/lang/String;II)Ljava/util/List;
+    invoke-static {v5, v7, v13, v13}, Lye/r;->A(Ljava/lang/CharSequence;[Ljava/lang/String;II)Ljava/util/List;
 
     move-result-object v5
 
     .line 115
-    new-instance v7, Lvc/d;
+    new-instance v7, Lvc/c;
 
     invoke-interface {v5, v8}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -4028,7 +4028,7 @@
 
     check-cast v5, Ljava/lang/String;
 
-    invoke-direct {v7, v10, v5}, Lvc/d;-><init>(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {v7, v10, v5}, Lvc/c;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_25
 
@@ -4053,19 +4053,19 @@
     .line 117
     new-instance v3, Lcom/supercell/id/model/IdSocialAccount$AppAccount;
 
-    new-instance v5, Lvc/e;
+    new-instance v5, Lvc/d;
 
-    invoke-direct {v5, v4, v7}, Lvc/e;-><init>(Ljava/lang/String;Lvc/d;)V
+    invoke-direct {v5, v4, v7}, Lvc/d;-><init>(Ljava/lang/String;Lvc/c;)V
 
-    invoke-direct {v3, v5}, Lcom/supercell/id/model/IdSocialAccount$AppAccount;-><init>(Lvc/e;)V
+    invoke-direct {v3, v5}, Lcom/supercell/id/model/IdSocialAccount$AppAccount;-><init>(Lvc/d;)V
 
     move-object v4, v3
 
     .line 118
     :goto_26
-    new-instance v3, Lvc/n$i;
+    new-instance v3, Lvc/m$i;
 
-    invoke-direct {v3, v4, v1}, Lvc/n$i;-><init>(Lcom/supercell/id/model/IdSocialAccount;Lvc/n$a;)V
+    invoke-direct {v3, v4, v1}, Lvc/m$i;-><init>(Lcom/supercell/id/model/IdSocialAccount;Lvc/m$a;)V
 
     move-object v4, v3
 
@@ -4098,7 +4098,7 @@
     .line 121
     sget-object v4, Lorg/json/JSONObject;->NULL:Ljava/lang/Object;
 
-    invoke-static {v3, v4}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v3, v4}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v4
 
@@ -4137,7 +4137,7 @@
     .line 124
     sget-object v5, Lorg/json/JSONObject;->NULL:Ljava/lang/Object;
 
-    invoke-static {v4, v5}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v4, v5}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v5
 
@@ -4165,12 +4165,12 @@
     if-eqz v4, :cond_96
 
     .line 126
-    new-instance v5, Lvc/n$j$h;
+    new-instance v5, Lvc/m$j$h;
 
     const/4 v9, 0x0
 
     .line 127
-    invoke-direct {v5, v4, v3, v1, v9}, Lvc/n$j$h;-><init>(Ljava/lang/String;Ljava/lang/String;Lvc/n$a;Lvc/n$j$h$b;)V
+    invoke-direct {v5, v4, v3, v1, v9}, Lvc/m$j$h;-><init>(Ljava/lang/String;Ljava/lang/String;Lvc/m$a;Lvc/m$j$h$b;)V
 
     goto/16 :goto_32
 
@@ -4188,7 +4188,7 @@
 
     .line 129
     :try_start_3
-    sget-object v3, Lcom/supercell/id/model/IdSocialAccount;->f:Lcom/supercell/id/model/IdSocialAccount$b;
+    sget-object v3, Lcom/supercell/id/model/IdSocialAccount;->g:Lcom/supercell/id/model/IdSocialAccount$b;
 
     invoke-virtual {v3, v8}, Lcom/supercell/id/model/IdSocialAccount$b;->b(Lorg/json/JSONObject;)Lcom/supercell/id/model/IdSocialAccount;
 
@@ -4208,7 +4208,7 @@
     .line 131
     sget-object v4, Lorg/json/JSONObject;->NULL:Ljava/lang/Object;
 
-    invoke-static {v3, v4}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v3, v4}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v4
 
@@ -4253,7 +4253,7 @@
     .line 134
     sget-object v4, Lorg/json/JSONObject;->NULL:Ljava/lang/Object;
 
-    invoke-static {v3, v4}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v3, v4}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v4
 
@@ -4290,7 +4290,7 @@
     .line 137
     sget-object v5, Lorg/json/JSONObject;->NULL:Ljava/lang/Object;
 
-    invoke-static {v4, v5}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v4, v5}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v5
 
@@ -4316,7 +4316,7 @@
 
     .line 139
     :goto_2f
-    new-instance v5, Lvc/n$j$d;
+    new-instance v5, Lvc/m$j$d;
 
     if-eqz v4, :cond_66
 
@@ -4341,7 +4341,7 @@
 
     .line 142
     :cond_67
-    sget-object v4, Lcom/supercell/id/model/ProfileImage$Empty;->g:Lcom/supercell/id/model/ProfileImage$Empty;
+    sget-object v4, Lcom/supercell/id/model/ProfileImage$Empty;->h:Lcom/supercell/id/model/ProfileImage$Empty;
 
     :goto_30
     move-object/from16 v21, v4
@@ -4354,7 +4354,7 @@
     move-object/from16 v22, v1
 
     .line 143
-    invoke-direct/range {v18 .. v23}, Lvc/n$j$d;-><init>(Lcom/supercell/id/model/IdSocialAccount;Ljava/lang/String;Lcom/supercell/id/model/ProfileImage;Lvc/n$a;Lae/m;)V
+    invoke-direct/range {v18 .. v23}, Lvc/m$j$d;-><init>(Lcom/supercell/id/model/IdSocialAccount;Ljava/lang/String;Lcom/supercell/id/model/ProfileImage;Lvc/m$a;Lae/m;)V
 
     goto :goto_32
 
@@ -4372,7 +4372,7 @@
 
     .line 145
     :try_start_4
-    sget-object v3, Lcom/supercell/id/model/IdSocialAccount;->f:Lcom/supercell/id/model/IdSocialAccount$b;
+    sget-object v3, Lcom/supercell/id/model/IdSocialAccount;->g:Lcom/supercell/id/model/IdSocialAccount$b;
 
     invoke-virtual {v3, v8}, Lcom/supercell/id/model/IdSocialAccount$b;->b(Lorg/json/JSONObject;)Lcom/supercell/id/model/IdSocialAccount;
 
@@ -4381,9 +4381,9 @@
     .catch Ljava/lang/Exception; {:try_start_4 .. :try_end_4} :catch_2
 
     .line 146
-    new-instance v5, Lvc/n$h;
+    new-instance v5, Lvc/m$h;
 
-    invoke-direct {v5, v3, v1}, Lvc/n$h;-><init>(Lcom/supercell/id/model/IdSocialAccount;Lvc/n$a;)V
+    invoke-direct {v5, v3, v1}, Lvc/m$h;-><init>(Lcom/supercell/id/model/IdSocialAccount;Lvc/m$a;)V
 
     :goto_32
     const/4 v14, 0x0
@@ -4414,7 +4414,7 @@
     .line 149
     sget-object v7, Lorg/json/JSONObject;->NULL:Ljava/lang/Object;
 
-    invoke-static {v3, v7}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v3, v7}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v7
 
@@ -4450,12 +4450,12 @@
     aput-object v10, v11, v14
 
     .line 151
-    invoke-static {v3, v11, v13, v13}, Lye/r;->z(Ljava/lang/CharSequence;[Ljava/lang/String;II)Ljava/util/List;
+    invoke-static {v3, v11, v13, v13}, Lye/r;->A(Ljava/lang/CharSequence;[Ljava/lang/String;II)Ljava/util/List;
 
     move-result-object v3
 
     .line 152
-    new-instance v10, Lvc/d;
+    new-instance v10, Lvc/c;
 
     invoke-interface {v3, v14}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -4469,7 +4469,7 @@
 
     check-cast v3, Ljava/lang/String;
 
-    invoke-direct {v10, v11, v3}, Lvc/d;-><init>(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {v10, v11, v3}, Lvc/c;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
     const-string v3, "inviterAccountId"
 
@@ -4483,7 +4483,7 @@
     .line 154
     sget-object v7, Lorg/json/JSONObject;->NULL:Ljava/lang/Object;
 
-    invoke-static {v3, v7}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v3, v7}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v7
 
@@ -4520,7 +4520,7 @@
     .line 157
     sget-object v11, Lorg/json/JSONObject;->NULL:Ljava/lang/Object;
 
-    invoke-static {v7, v11}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v7, v11}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v11
 
@@ -4562,11 +4562,11 @@
     .line 160
     new-instance v3, Lcom/supercell/id/model/IdSocialAccount$AppAccount;
 
-    new-instance v11, Lvc/e;
+    new-instance v11, Lvc/d;
 
-    invoke-direct {v11, v7, v10}, Lvc/e;-><init>(Ljava/lang/String;Lvc/d;)V
+    invoke-direct {v11, v7, v10}, Lvc/d;-><init>(Ljava/lang/String;Lvc/c;)V
 
-    invoke-direct {v3, v11}, Lcom/supercell/id/model/IdSocialAccount$AppAccount;-><init>(Lvc/e;)V
+    invoke-direct {v3, v11}, Lcom/supercell/id/model/IdSocialAccount$AppAccount;-><init>(Lvc/d;)V
 
     move-object/from16 v19, v3
 
@@ -4581,7 +4581,7 @@
     .line 162
     sget-object v6, Lorg/json/JSONObject;->NULL:Ljava/lang/Object;
 
-    invoke-static {v3, v6}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v3, v6}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v6
 
@@ -4626,7 +4626,7 @@
     .line 165
     sget-object v5, Lorg/json/JSONObject;->NULL:Ljava/lang/Object;
 
-    invoke-static {v3, v5}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v3, v5}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v5
 
@@ -4671,7 +4671,7 @@
     .line 168
     sget-object v4, Lorg/json/JSONObject;->NULL:Ljava/lang/Object;
 
-    invoke-static {v3, v4}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v3, v4}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v4
 
@@ -4718,7 +4718,7 @@
     .line 171
     sget-object v4, Lorg/json/JSONObject;->NULL:Ljava/lang/Object;
 
-    invoke-static {v3, v4}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v3, v4}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v4
 
@@ -4763,7 +4763,7 @@
     .line 174
     sget-object v4, Lorg/json/JSONObject;->NULL:Ljava/lang/Object;
 
-    invoke-static {v3, v4}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v3, v4}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v4
 
@@ -4800,7 +4800,7 @@
     .line 177
     sget-object v5, Lorg/json/JSONObject;->NULL:Ljava/lang/Object;
 
-    invoke-static {v4, v5}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v4, v5}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v5
 
@@ -4826,7 +4826,7 @@
 
     .line 179
     :goto_40
-    new-instance v5, Lvc/n$j$f;
+    new-instance v5, Lvc/m$j$f;
 
     if-eqz v4, :cond_88
 
@@ -4851,7 +4851,7 @@
 
     .line 182
     :cond_89
-    sget-object v3, Lcom/supercell/id/model/ProfileImage$Empty;->g:Lcom/supercell/id/model/ProfileImage$Empty;
+    sget-object v3, Lcom/supercell/id/model/ProfileImage$Empty;->h:Lcom/supercell/id/model/ProfileImage$Empty;
 
     :goto_41
     move-object/from16 v21, v3
@@ -4864,7 +4864,7 @@
     move-object/from16 v26, v1
 
     .line 183
-    invoke-direct/range {v18 .. v26}, Lvc/n$j$f;-><init>(Lcom/supercell/id/model/IdSocialAccount;Ljava/lang/String;Lcom/supercell/id/model/ProfileImage;Ljava/lang/String;Lvc/d;Ljava/lang/String;Ljava/lang/String;Lvc/n$a;)V
+    invoke-direct/range {v18 .. v26}, Lvc/m$j$f;-><init>(Lcom/supercell/id/model/IdSocialAccount;Ljava/lang/String;Lcom/supercell/id/model/ProfileImage;Ljava/lang/String;Lvc/c;Ljava/lang/String;Ljava/lang/String;Lvc/m$a;)V
 
     goto/16 :goto_4f
 
@@ -4891,7 +4891,7 @@
 
     .line 185
     :try_start_5
-    sget-object v3, Lcom/supercell/id/model/IdSocialAccount;->f:Lcom/supercell/id/model/IdSocialAccount$b;
+    sget-object v3, Lcom/supercell/id/model/IdSocialAccount;->g:Lcom/supercell/id/model/IdSocialAccount$b;
 
     invoke-virtual {v3, v8}, Lcom/supercell/id/model/IdSocialAccount$b;->b(Lorg/json/JSONObject;)Lcom/supercell/id/model/IdSocialAccount;
 
@@ -4900,9 +4900,9 @@
     .catch Ljava/lang/Exception; {:try_start_5 .. :try_end_5} :catch_6
 
     .line 186
-    new-instance v4, Lvc/n$g;
+    new-instance v4, Lvc/m$g;
 
-    invoke-direct {v4, v3, v1}, Lvc/n$g;-><init>(Lcom/supercell/id/model/IdSocialAccount;Lvc/n$a;)V
+    invoke-direct {v4, v3, v1}, Lvc/m$g;-><init>(Lcom/supercell/id/model/IdSocialAccount;Lvc/m$a;)V
 
     goto/16 :goto_4c
 
@@ -4930,7 +4930,7 @@
     .line 189
     sget-object v4, Lorg/json/JSONObject;->NULL:Ljava/lang/Object;
 
-    invoke-static {v3, v4}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v3, v4}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v4
 
@@ -4958,9 +4958,9 @@
     if-eqz v3, :cond_97
 
     .line 191
-    new-instance v4, Lvc/n$d;
+    new-instance v4, Lvc/m$d;
 
-    invoke-direct {v4, v3, v1}, Lvc/n$d;-><init>(Ljava/lang/String;Lvc/n$a;)V
+    invoke-direct {v4, v3, v1}, Lvc/m$d;-><init>(Ljava/lang/String;Lvc/m$a;)V
 
     goto/16 :goto_4c
 
@@ -4980,7 +4980,7 @@
 
     .line 193
     :try_start_6
-    new-instance v3, Lvc/a0;
+    new-instance v3, Lvc/y;
 
     const-string v4, "product"
 
@@ -4990,9 +4990,9 @@
 
     const-string v5, "data.getJSONObject(\"product\")"
 
-    invoke-static {v4, v5}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v4, v5}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-direct {v3, v4}, Lvc/a0;-><init>(Lorg/json/JSONObject;)V
+    invoke-direct {v3, v4}, Lvc/y;-><init>(Lorg/json/JSONObject;)V
     :try_end_6
     .catch Ljava/lang/Exception; {:try_start_6 .. :try_end_6} :catch_3
 
@@ -5016,7 +5016,7 @@
     .line 195
     sget-object v4, Lorg/json/JSONObject;->NULL:Ljava/lang/Object;
 
-    invoke-static {v3, v4}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v3, v4}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v4
 
@@ -5058,7 +5058,7 @@
     .line 198
     :goto_47
     :try_start_7
-    sget-object v3, Lvc/x;->f:Lvc/x$a;
+    sget-object v3, Lvc/v;->f:Lvc/v$a;
 
     const-string v4, "items"
 
@@ -5068,9 +5068,9 @@
 
     const-string v5, "data.getJSONArray(\"items\")"
 
-    invoke-static {v4, v5}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v4, v5}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-virtual {v3, v4}, Lvc/x$a;->a(Lorg/json/JSONArray;)Ljava/util/List;
+    invoke-virtual {v3, v4}, Lvc/v$a;->a(Lorg/json/JSONArray;)Ljava/util/List;
 
     move-result-object v3
     :try_end_7
@@ -5096,7 +5096,7 @@
     .line 200
     sget-object v4, Lorg/json/JSONObject;->NULL:Ljava/lang/Object;
 
-    invoke-static {v3, v4}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v3, v4}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v4
 
@@ -5132,13 +5132,13 @@
     if-eqz v22, :cond_97
 
     .line 202
-    new-instance v3, Lvc/n$j$i;
+    new-instance v3, Lvc/m$j$i;
 
     move-object/from16 v18, v3
 
     move-object/from16 v23, v1
 
-    invoke-direct/range {v18 .. v23}, Lvc/n$j$i;-><init>(Lvc/a0;ILjava/util/List;Ljava/lang/String;Lvc/n$a;)V
+    invoke-direct/range {v18 .. v23}, Lvc/m$j$i;-><init>(Lvc/y;ILjava/util/List;Ljava/lang/String;Lvc/m$a;)V
 
     :goto_4b
     move-object v5, v3
@@ -5169,9 +5169,9 @@
     if-eqz v3, :cond_97
 
     .line 205
-    new-instance v4, Lvc/n$f;
+    new-instance v4, Lvc/m$f;
 
-    invoke-direct {v4, v3, v1}, Lvc/n$f;-><init>(Lcom/supercell/id/IdFriend;Lvc/n$a;)V
+    invoke-direct {v4, v3, v1}, Lvc/m$f;-><init>(Lcom/supercell/id/IdFriend;Lvc/m$a;)V
 
     :goto_4c
     move-object v5, v4
@@ -5194,24 +5194,24 @@
     if-eqz v5, :cond_a5
 
     .line 206
-    instance-of v1, v5, Lvc/n$j$c;
+    instance-of v1, v5, Lvc/m$j$c;
 
     const-string v3, "duplicate"
 
     if-eqz v1, :cond_99
 
     .line 207
-    iget-object v1, v2, Lae/i0;->f:Ljava/util/LinkedHashSet;
+    iget-object v1, v2, Lae/h0;->g:Ljava/util/LinkedHashSet;
 
     move-object v4, v5
 
-    check-cast v4, Lvc/n$j$c;
+    check-cast v4, Lvc/m$j$c;
 
     .line 208
-    iget-object v6, v4, Lvc/n$j$c;->h:Lvc/x;
+    iget-object v6, v4, Lvc/m$j$c;->h:Lvc/v;
 
     .line 209
-    invoke-virtual {v6}, Lvc/x;->a()Lvc/e0;
+    invoke-virtual {v6}, Lvc/v;->a()Lvc/b0;
 
     move-result-object v6
 
@@ -5232,22 +5232,22 @@
     iget-object v1, v1, Lae/u;->p:Lrc/h;
 
     .line 212
-    iget-object v4, v4, Lvc/n$j$c;->i:Ljava/lang/String;
+    iget-object v4, v4, Lvc/m$j$c;->i:Ljava/lang/String;
 
     .line 213
-    invoke-virtual {v1, v3, v4}, Lrc/h;->g(Ljava/lang/String;Ljava/lang/String;)Lze/e0;
+    invoke-virtual {v1, v3, v4}, Lrc/h;->g(Ljava/lang/String;Ljava/lang/String;)Lze/f0;
 
     goto/16 :goto_54
 
     .line 214
     :cond_98
-    iget-object v1, v2, Lae/i0;->f:Ljava/util/LinkedHashSet;
+    iget-object v1, v2, Lae/h0;->g:Ljava/util/LinkedHashSet;
 
     .line 215
-    iget-object v4, v4, Lvc/n$j$c;->h:Lvc/x;
+    iget-object v4, v4, Lvc/m$j$c;->h:Lvc/v;
 
     .line 216
-    invoke-virtual {v4}, Lvc/x;->a()Lvc/e0;
+    invoke-virtual {v4}, Lvc/v;->a()Lvc/b0;
 
     move-result-object v4
 
@@ -5255,7 +5255,7 @@
 
     .line 217
     :cond_99
-    instance-of v1, v5, Lvc/n$j$e;
+    instance-of v1, v5, Lvc/m$j$e;
 
     const/16 v4, 0xa
 
@@ -5264,10 +5264,10 @@
     .line 218
     move-object v1, v5
 
-    check-cast v1, Lvc/n$j$e;
+    check-cast v1, Lvc/m$j$e;
 
     .line 219
-    iget-object v6, v1, Lvc/n$j$e;->i:Ljava/util/List;
+    iget-object v6, v1, Lvc/m$j$e;->i:Ljava/util/List;
 
     .line 220
     instance-of v7, v6, Ljava/util/Collection;
@@ -5299,13 +5299,13 @@
 
     move-result-object v7
 
-    check-cast v7, Lvc/o;
+    check-cast v7, Lvc/n;
 
     .line 222
-    iget-object v8, v2, Lae/i0;->g:Ljava/util/LinkedHashSet;
+    iget-object v8, v2, Lae/h0;->h:Ljava/util/LinkedHashSet;
 
     .line 223
-    iget-object v7, v7, Lvc/o;->a:Ljava/lang/String;
+    iget-object v7, v7, Lvc/n;->a:Ljava/lang/String;
 
     .line 224
     invoke-interface {v8, v7}, Ljava/util/Set;->contains(Ljava/lang/Object;)Z
@@ -5334,24 +5334,24 @@
     iget-object v4, v4, Lae/u;->p:Lrc/h;
 
     .line 227
-    iget-object v1, v1, Lvc/n$j$e;->h:Ljava/lang/String;
+    iget-object v1, v1, Lvc/m$j$e;->h:Ljava/lang/String;
 
     .line 228
-    invoke-virtual {v4, v3, v1}, Lrc/h;->g(Ljava/lang/String;Ljava/lang/String;)Lze/e0;
+    invoke-virtual {v4, v3, v1}, Lrc/h;->g(Ljava/lang/String;Ljava/lang/String;)Lze/f0;
 
     goto :goto_54
 
     .line 229
     :cond_9d
-    iget-object v6, v2, Lae/i0;->g:Ljava/util/LinkedHashSet;
+    iget-object v6, v2, Lae/h0;->h:Ljava/util/LinkedHashSet;
 
     .line 230
-    iget-object v1, v1, Lvc/n$j$e;->i:Ljava/util/List;
+    iget-object v1, v1, Lvc/m$j$e;->i:Ljava/util/List;
 
     .line 231
     new-instance v7, Ljava/util/ArrayList;
 
-    invoke-static {v1, v4}, Lje/f;->q(Ljava/lang/Iterable;I)I
+    invoke-static {v1, v4}, Lje/f;->l(Ljava/lang/Iterable;I)I
 
     move-result v8
 
@@ -5374,10 +5374,10 @@
     move-result-object v8
 
     .line 233
-    check-cast v8, Lvc/o;
+    check-cast v8, Lvc/n;
 
     .line 234
-    iget-object v8, v8, Lvc/o;->a:Ljava/lang/String;
+    iget-object v8, v8, Lvc/n;->a:Ljava/lang/String;
 
     .line 235
     invoke-interface {v7, v8}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
@@ -5389,15 +5389,15 @@
 
     .line 236
     :cond_9f
-    instance-of v1, v5, Lvc/n$j$i;
+    instance-of v1, v5, Lvc/m$j$i;
 
     if-eqz v1, :cond_a4
 
     .line 237
-    check-cast v5, Lvc/n$j$i;
+    check-cast v5, Lvc/m$j$i;
 
     .line 238
-    iget-object v1, v5, Lvc/n$j$i;->j:Ljava/util/List;
+    iget-object v1, v5, Lvc/m$j$i;->j:Ljava/util/List;
 
     .line 239
     new-instance v13, Ljava/util/ArrayList;
@@ -5423,13 +5423,13 @@
 
     move-object v7, v6
 
-    check-cast v7, Lvc/x;
+    check-cast v7, Lvc/v;
 
     .line 241
-    iget-object v8, v2, Lae/i0;->h:Ljava/util/LinkedHashSet;
+    iget-object v8, v2, Lae/h0;->i:Ljava/util/LinkedHashSet;
 
     .line 242
-    iget-object v7, v7, Lvc/x;->a:Ljava/lang/String;
+    iget-object v7, v7, Lvc/v;->a:Ljava/lang/String;
 
     .line 243
     invoke-interface {v8, v7}, Ljava/util/Set;->contains(Ljava/lang/Object;)Z
@@ -5465,10 +5465,10 @@
     iget-object v1, v1, Lae/u;->p:Lrc/h;
 
     .line 247
-    iget-object v4, v5, Lvc/n$j$i;->k:Ljava/lang/String;
+    iget-object v4, v5, Lvc/m$j$i;->k:Ljava/lang/String;
 
     .line 248
-    invoke-virtual {v1, v3, v4}, Lrc/h;->g(Ljava/lang/String;Ljava/lang/String;)Lze/e0;
+    invoke-virtual {v1, v3, v4}, Lrc/h;->g(Ljava/lang/String;Ljava/lang/String;)Lze/f0;
 
     :goto_54
     move-object v5, v9
@@ -5477,12 +5477,12 @@
 
     .line 249
     :cond_a2
-    iget-object v1, v2, Lae/i0;->h:Ljava/util/LinkedHashSet;
+    iget-object v1, v2, Lae/h0;->i:Ljava/util/LinkedHashSet;
 
     .line 250
     new-instance v3, Ljava/util/ArrayList;
 
-    invoke-static {v13, v4}, Lje/f;->q(Ljava/lang/Iterable;I)I
+    invoke-static {v13, v4}, Lje/f;->l(Ljava/lang/Iterable;I)I
 
     move-result v4
 
@@ -5505,10 +5505,10 @@
     move-result-object v6
 
     .line 252
-    check-cast v6, Lvc/x;
+    check-cast v6, Lvc/v;
 
     .line 253
-    iget-object v6, v6, Lvc/x;->a:Ljava/lang/String;
+    iget-object v6, v6, Lvc/v;->a:Ljava/lang/String;
 
     .line 254
     invoke-interface {v3, v6}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
@@ -5519,30 +5519,30 @@
     invoke-interface {v1, v3}, Ljava/util/Set;->addAll(Ljava/util/Collection;)Z
 
     .line 255
-    new-instance v1, Lvc/n$j$i;
+    new-instance v1, Lvc/m$j$i;
 
-    iget-object v11, v5, Lvc/n$j$i;->h:Lvc/a0;
+    iget-object v11, v5, Lvc/m$j$i;->h:Lvc/y;
 
-    iget v12, v5, Lvc/n$j$i;->i:I
+    iget v12, v5, Lvc/m$j$i;->i:I
 
-    iget-object v14, v5, Lvc/n$j$i;->k:Ljava/lang/String;
+    iget-object v14, v5, Lvc/m$j$i;->k:Ljava/lang/String;
 
-    new-instance v3, Lvc/n$a;
+    new-instance v3, Lvc/m$a;
 
     .line 256
-    iget-object v4, v5, Lvc/n;->a:Ljava/lang/String;
+    iget-object v4, v5, Lvc/m;->a:Ljava/lang/String;
 
     .line 257
-    iget-object v6, v5, Lvc/n;->b:Ljava/lang/String;
+    iget-object v6, v5, Lvc/m;->b:Ljava/lang/String;
 
     .line 258
-    iget-object v7, v5, Lvc/n;->c:Ljava/util/Date;
+    iget-object v7, v5, Lvc/m;->c:Ljava/util/Date;
 
     .line 259
-    iget-object v8, v5, Lvc/n;->d:Ljava/util/Date;
+    iget-object v8, v5, Lvc/m;->d:Ljava/util/Date;
 
     .line 260
-    iget-object v5, v5, Lvc/n;->e:Ljava/util/Date;
+    iget-object v5, v5, Lvc/m;->e:Ljava/util/Date;
 
     move-object v15, v3
 
@@ -5557,11 +5557,11 @@
     move-object/from16 v20, v5
 
     .line 261
-    invoke-direct/range {v15 .. v20}, Lvc/n$a;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/util/Date;Ljava/util/Date;Ljava/util/Date;)V
+    invoke-direct/range {v15 .. v20}, Lvc/m$a;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/util/Date;Ljava/util/Date;Ljava/util/Date;)V
 
     move-object v10, v1
 
-    invoke-direct/range {v10 .. v15}, Lvc/n$j$i;-><init>(Lvc/a0;ILjava/util/List;Ljava/lang/String;Lvc/n$a;)V
+    invoke-direct/range {v10 .. v15}, Lvc/m$j$i;-><init>(Lvc/y;ILjava/util/List;Ljava/lang/String;Lvc/m$a;)V
 
     move-object v5, v1
 
@@ -5570,7 +5570,7 @@
     if-eqz v5, :cond_a5
 
     .line 262
-    invoke-virtual {v2, v0, v5}, Lae/i0;->c(Landroid/app/Activity;Lvc/n;)V
+    invoke-virtual {v2, v0, v5}, Lae/h0;->c(Landroid/app/Activity;Lvc/m;)V
 
     :cond_a5
     return-void
@@ -5612,7 +5612,7 @@
 
     const-string v0, "accounts"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     new-instance v0, Ljava/util/ArrayList;
@@ -5678,7 +5678,7 @@
     check-cast v2, Lcom/supercell/id/model/IdSocialAccount;
 
     .line 9
-    invoke-virtual {v2}, Lcom/supercell/id/model/IdSocialAccount;->a()Lvc/e;
+    invoke-virtual {v2}, Lcom/supercell/id/model/IdSocialAccount;->a()Lvc/d;
 
     move-result-object v2
 
@@ -5714,10 +5714,10 @@
 
     move-object v3, v2
 
-    check-cast v3, Lvc/e;
+    check-cast v3, Lvc/d;
 
     .line 13
-    iget-object v3, v3, Lvc/e;->b:Lvc/d;
+    iget-object v3, v3, Lvc/d;->b:Lvc/c;
 
     .line 14
     sget-object v4, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
@@ -5730,11 +5730,11 @@
     iget-object v4, v4, Lae/u;->j:Lcom/supercell/id/IdConfiguration;
 
     .line 16
-    invoke-virtual {v4}, Lcom/supercell/id/IdConfiguration;->getApp()Lvc/d;
+    invoke-virtual {v4}, Lcom/supercell/id/IdConfiguration;->getApp()Lvc/c;
 
     move-result-object v4
 
-    invoke-static {v3, v4}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v3, v4}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v3
 
@@ -5750,7 +5750,7 @@
 
     const/16 v2, 0xa
 
-    invoke-static {p1, v2}, Lje/f;->q(Ljava/lang/Iterable;I)I
+    invoke-static {p1, v2}, Lje/f;->l(Ljava/lang/Iterable;I)I
 
     move-result v2
 
@@ -5773,10 +5773,10 @@
     move-result-object v2
 
     .line 19
-    check-cast v2, Lvc/e;
+    check-cast v2, Lvc/d;
 
     .line 20
-    iget-object v2, v2, Lvc/e;->a:Ljava/lang/String;
+    iget-object v2, v2, Lvc/d;->a:Ljava/lang/String;
 
     .line 21
     invoke-interface {v1, v2}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
@@ -5846,7 +5846,7 @@
 
     const-string v0, "account"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     invoke-virtual {p1}, Lcom/supercell/id/model/IdSocialAccount;->d()Ljava/lang/String;
@@ -5854,7 +5854,7 @@
     move-result-object v0
 
     .line 2
-    invoke-virtual {p1}, Lcom/supercell/id/model/IdSocialAccount;->a()Lvc/e;
+    invoke-virtual {p1}, Lcom/supercell/id/model/IdSocialAccount;->a()Lvc/d;
 
     move-result-object v1
 
@@ -5863,7 +5863,7 @@
     if-eqz v1, :cond_0
 
     .line 3
-    iget-object v3, v1, Lvc/e;->b:Lvc/d;
+    iget-object v3, v1, Lvc/d;->b:Lvc/c;
 
     .line 4
     sget-object v4, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
@@ -5876,11 +5876,11 @@
     iget-object v4, v4, Lae/u;->j:Lcom/supercell/id/IdConfiguration;
 
     .line 6
-    invoke-virtual {v4}, Lcom/supercell/id/IdConfiguration;->getApp()Lvc/d;
+    invoke-virtual {v4}, Lcom/supercell/id/IdConfiguration;->getApp()Lvc/c;
 
     move-result-object v4
 
-    invoke-static {v3, v4}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v3, v4}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v3
 
@@ -5906,14 +5906,14 @@
 
     move-result-object v1
 
-    invoke-virtual {p1}, Lcom/supercell/id/model/IdSocialAccount;->a()Lvc/e;
+    invoke-virtual {p1}, Lcom/supercell/id/model/IdSocialAccount;->a()Lvc/d;
 
     move-result-object p1
 
     if-eqz p1, :cond_2
 
     .line 8
-    iget-object v2, p1, Lvc/e;->a:Ljava/lang/String;
+    iget-object v2, p1, Lvc/d;->a:Ljava/lang/String;
 
     .line 9
     :cond_2
@@ -5937,7 +5937,7 @@
 
     const-string v0, "accounts"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     new-instance v0, Ljava/util/ArrayList;
@@ -6003,7 +6003,7 @@
     check-cast v2, Lcom/supercell/id/model/IdSocialAccount;
 
     .line 9
-    invoke-virtual {v2}, Lcom/supercell/id/model/IdSocialAccount;->a()Lvc/e;
+    invoke-virtual {v2}, Lcom/supercell/id/model/IdSocialAccount;->a()Lvc/d;
 
     move-result-object v2
 
@@ -6039,10 +6039,10 @@
 
     move-object v3, v2
 
-    check-cast v3, Lvc/e;
+    check-cast v3, Lvc/d;
 
     .line 13
-    iget-object v3, v3, Lvc/e;->b:Lvc/d;
+    iget-object v3, v3, Lvc/d;->b:Lvc/c;
 
     .line 14
     sget-object v4, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
@@ -6055,11 +6055,11 @@
     iget-object v4, v4, Lae/u;->j:Lcom/supercell/id/IdConfiguration;
 
     .line 16
-    invoke-virtual {v4}, Lcom/supercell/id/IdConfiguration;->getApp()Lvc/d;
+    invoke-virtual {v4}, Lcom/supercell/id/IdConfiguration;->getApp()Lvc/c;
 
     move-result-object v4
 
-    invoke-static {v3, v4}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v3, v4}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v3
 
@@ -6075,7 +6075,7 @@
 
     const/16 v2, 0xa
 
-    invoke-static {p1, v2}, Lje/f;->q(Ljava/lang/Iterable;I)I
+    invoke-static {p1, v2}, Lje/f;->l(Ljava/lang/Iterable;I)I
 
     move-result v2
 
@@ -6098,10 +6098,10 @@
     move-result-object v2
 
     .line 19
-    check-cast v2, Lvc/e;
+    check-cast v2, Lvc/d;
 
     .line 20
-    iget-object v2, v2, Lvc/e;->a:Ljava/lang/String;
+    iget-object v2, v2, Lvc/d;->a:Ljava/lang/String;
 
     .line 21
     invoke-interface {v1, v2}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
@@ -6283,7 +6283,7 @@
 
     const-string v0, "scidToken"
 
-    invoke-static {v15, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v15, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     invoke-virtual/range {p0 .. p0}, Lcom/supercell/id/SupercellId;->getUseInternalAccountStorage$supercellId_release()Z
@@ -6297,7 +6297,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lae/u;->g()Lae/z0;
+    invoke-virtual {v0}, Lae/u;->g()Lae/y0;
 
     move-result-object v13
 
@@ -6381,9 +6381,9 @@
 
     .line 5
     :cond_6
-    sget-object v0, Lae/z0;->f:Lae/z0$a;
+    sget-object v0, Lae/y0;->f:Lae/y0$a;
 
-    invoke-virtual {v0, v15}, Lae/z0$a;->a(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v0, v15}, Lae/y0$a;->a(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v11
 
@@ -6414,7 +6414,7 @@
 
     .line 7
     :cond_9
-    iget-object v0, v13, Lae/z0;->c:Ljava/util/Map;
+    iget-object v0, v13, Lae/y0;->c:Ljava/util/Map;
 
     invoke-interface {v0, v11}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -6429,7 +6429,7 @@
     if-eqz v14, :cond_a
 
     .line 8
-    iget-object v0, v13, Lae/z0;->c:Ljava/util/Map;
+    iget-object v0, v13, Lae/y0;->c:Ljava/util/Map;
 
     invoke-interface {v0}, Ljava/util/Map;->size()I
 
@@ -6437,7 +6437,7 @@
 
     int-to-long v3, v0
 
-    invoke-virtual {v13}, Lae/z0;->a()J
+    invoke-virtual {v13}, Lae/y0;->a()J
 
     move-result-wide v5
 
@@ -6474,9 +6474,9 @@
 
     invoke-direct/range {v0 .. v7}, Lcom/supercell/id/IdAccount;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)V
 
-    iput-object v12, v13, Lae/z0;->b:Lcom/supercell/id/IdAccount;
+    iput-object v12, v13, Lae/y0;->b:Lcom/supercell/id/IdAccount;
 
-    invoke-virtual {v13, v10, v12}, Lae/z0;->e(ZLcom/supercell/id/IdAccount;)V
+    invoke-virtual {v13, v10, v12}, Lae/y0;->e(ZLcom/supercell/id/IdAccount;)V
 
     move-object v2, v13
 
@@ -6543,14 +6543,14 @@
     move-result-object v3
 
     .line 13
-    iput-object v3, v2, Lae/z0;->b:Lcom/supercell/id/IdAccount;
+    iput-object v3, v2, Lae/y0;->b:Lcom/supercell/id/IdAccount;
 
     .line 14
-    invoke-virtual {v2, v0, v3}, Lae/z0;->e(ZLcom/supercell/id/IdAccount;)V
+    invoke-virtual {v2, v0, v3}, Lae/y0;->e(ZLcom/supercell/id/IdAccount;)V
 
     .line 15
     :goto_b
-    invoke-virtual {v2}, Lae/z0;->d()V
+    invoke-virtual {v2}, Lae/y0;->d()V
 
     .line 16
     :goto_c
@@ -6588,7 +6588,7 @@
 
     const-string v0, "error"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     invoke-virtual {p0}, Lcom/supercell/id/SupercellId;->getUseInternalAccountStorage$supercellId_release()Z
@@ -6602,33 +6602,33 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lae/u;->g()Lae/z0;
+    invoke-virtual {v0}, Lae/u;->g()Lae/y0;
 
     move-result-object v0
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 3
-    iget-object v1, v0, Lae/z0;->b:Lcom/supercell/id/IdAccount;
+    iget-object v1, v0, Lae/y0;->b:Lcom/supercell/id/IdAccount;
 
     if-eqz v1, :cond_2
 
     const/4 v2, 0x0
 
     .line 4
-    iput-object v2, v0, Lae/z0;->b:Lcom/supercell/id/IdAccount;
+    iput-object v2, v0, Lae/y0;->b:Lcom/supercell/id/IdAccount;
 
     const-string v2, "login_error_invalid_token"
 
     .line 5
-    invoke-static {p1, v2}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {p1, v2}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v2
 
     if-eqz v2, :cond_0
 
     .line 6
-    iget-object v2, v0, Lae/z0;->c:Ljava/util/Map;
+    iget-object v2, v0, Lae/y0;->c:Ljava/util/Map;
 
     invoke-virtual {v1}, Lcom/supercell/id/IdAccount;->getSupercellId()Ljava/lang/String;
 
@@ -6641,7 +6641,7 @@
     if-eqz v2, :cond_1
 
     .line 7
-    iget-object v11, v0, Lae/z0;->c:Ljava/util/Map;
+    iget-object v11, v0, Lae/y0;->c:Ljava/util/Map;
 
     invoke-virtual {v1}, Lcom/supercell/id/IdAccount;->getSupercellId()Ljava/lang/String;
 
@@ -6675,11 +6675,11 @@
     invoke-direct {v1, v12, p1}, Lie/d;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
 
     .line 9
-    invoke-static {v11, v1}, Lje/t;->n(Ljava/util/Map;Lie/d;)Ljava/util/Map;
+    invoke-static {v11, v1}, Lje/t;->o(Ljava/util/Map;Lie/d;)Ljava/util/Map;
 
     move-result-object p1
 
-    iput-object p1, v0, Lae/z0;->c:Ljava/util/Map;
+    iput-object p1, v0, Lae/y0;->c:Ljava/util/Map;
 
     goto :goto_0
 
@@ -6687,29 +6687,29 @@
     const-string v2, "login_error_account_not_bound"
 
     .line 10
-    invoke-static {p1, v2}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {p1, v2}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
     if-eqz p1, :cond_1
 
     .line 11
-    iget-object p1, v0, Lae/z0;->c:Ljava/util/Map;
+    iget-object p1, v0, Lae/y0;->c:Ljava/util/Map;
 
     invoke-virtual {v1}, Lcom/supercell/id/IdAccount;->getSupercellId()Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-static {p1, v1}, Lje/t;->l(Ljava/util/Map;Ljava/lang/Object;)Ljava/util/Map;
+    invoke-static {p1, v1}, Lje/t;->m(Ljava/util/Map;Ljava/lang/Object;)Ljava/util/Map;
 
     move-result-object p1
 
-    iput-object p1, v0, Lae/z0;->c:Ljava/util/Map;
+    iput-object p1, v0, Lae/y0;->c:Ljava/util/Map;
 
     .line 12
     :cond_1
     :goto_0
-    invoke-virtual {v0}, Lae/z0;->d()V
+    invoke-virtual {v0}, Lae/y0;->d()V
 
     :cond_2
     return-void
@@ -6730,12 +6730,12 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lae/u;->g()Lae/z0;
+    invoke-virtual {v0}, Lae/u;->g()Lae/y0;
 
     move-result-object v0
 
     .line 3
-    iget-object v1, v0, Lae/z0;->b:Lcom/supercell/id/IdAccount;
+    iget-object v1, v0, Lae/y0;->b:Lcom/supercell/id/IdAccount;
 
     if-eqz v1, :cond_0
 
@@ -6747,26 +6747,26 @@
     if-nez v2, :cond_0
 
     .line 5
-    iget-object v2, v0, Lae/z0;->c:Ljava/util/Map;
+    iget-object v2, v0, Lae/y0;->c:Ljava/util/Map;
 
     invoke-virtual {v1}, Lcom/supercell/id/IdAccount;->getSupercellId()Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-static {v2, v1}, Lje/t;->l(Ljava/util/Map;Ljava/lang/Object;)Ljava/util/Map;
+    invoke-static {v2, v1}, Lje/t;->m(Ljava/util/Map;Ljava/lang/Object;)Ljava/util/Map;
 
     move-result-object v1
 
-    iput-object v1, v0, Lae/z0;->c:Ljava/util/Map;
+    iput-object v1, v0, Lae/y0;->c:Ljava/util/Map;
 
     :cond_0
     const/4 v1, 0x0
 
     .line 6
-    iput-object v1, v0, Lae/z0;->b:Lcom/supercell/id/IdAccount;
+    iput-object v1, v0, Lae/y0;->b:Lcom/supercell/id/IdAccount;
 
     .line 7
-    invoke-virtual {v0}, Lae/z0;->d()V
+    invoke-virtual {v0}, Lae/y0;->d()V
 
     .line 8
     invoke-virtual {p0}, Lcom/supercell/id/SupercellId;->closeAllWindows()V
@@ -6865,17 +6865,17 @@
     move-result-object v0
 
     .line 4
-    iget-object v0, v0, Lae/u;->u:Lud/c0;
+    iget-object v0, v0, Lae/u;->u:Lud/a0;
 
     .line 5
-    sget-object v1, Lcom/supercell/id/SupercellId$j;->f:Lcom/supercell/id/SupercellId$j;
+    sget-object v1, Lcom/supercell/id/SupercellId$j;->g:Lcom/supercell/id/SupercellId$j;
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     const-string v2, "callback"
 
     .line 6
-    invoke-static {v1, v2}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 7
     invoke-static {}, Ljava/util/Calendar;->getInstance()Ljava/util/Calendar;
@@ -6884,14 +6884,14 @@
 
     const-string v3, "Calendar.getInstance()"
 
-    invoke-static {v2, v3}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v2, v3}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v2}, Ljava/util/Calendar;->getTime()Ljava/util/Date;
 
     move-result-object v2
 
     .line 8
-    iget-object v3, v0, Lud/c0;->b:Ljava/util/Date;
+    iget-object v3, v0, Lud/a0;->b:Ljava/util/Date;
 
     const/4 v4, 0x0
 
@@ -6899,7 +6899,7 @@
 
     new-instance v3, Ljava/util/Date;
 
-    iget-object v5, v0, Lud/c0;->b:Ljava/util/Date;
+    iget-object v5, v0, Lud/a0;->b:Ljava/util/Date;
 
     if-eqz v5, :cond_0
 
@@ -6930,13 +6930,13 @@
 
     .line 10
     :cond_0
-    invoke-static {}, Lt3/e;->f()V
+    invoke-static {}, Lt3/h;->j()V
 
     throw v4
 
     .line 11
     :cond_1
-    iput-object v2, v0, Lud/c0;->b:Ljava/util/Date;
+    iput-object v2, v0, Lud/a0;->b:Ljava/util/Date;
 
     .line 12
     new-instance v2, Ljava/lang/StringBuilder;
@@ -6944,7 +6944,7 @@
     invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
 
     .line 13
-    iget-object v3, v0, Lud/c0;->e:Ljava/lang/String;
+    iget-object v3, v0, Lud/a0;->e:Ljava/lang/String;
 
     const/4 v5, 0x1
 
@@ -6956,7 +6956,7 @@
 
     aput-char v7, v5, v6
 
-    invoke-static {v3, v5}, Lye/r;->F(Ljava/lang/String;[C)Ljava/lang/String;
+    invoke-static {v3, v5}, Lye/r;->G(Ljava/lang/String;[C)Ljava/lang/String;
 
     move-result-object v3
 
@@ -6972,35 +6972,35 @@
     move-result-object v2
 
     .line 15
-    sget-object v3, Lze/u0;->f:Lze/u0;
+    sget-object v3, Lze/v0;->g:Lze/v0;
 
     .line 16
-    sget-object v5, Lze/k0;->c:Lbf/e;
+    sget-object v5, Lze/l0;->c:Lbf/e;
 
     .line 17
-    new-instance v6, Lud/z;
+    new-instance v6, Lud/x;
 
-    invoke-direct {v6, v0, v2, v4}, Lud/z;-><init>(Lud/c0;Ljava/lang/String;Lke/d;)V
+    invoke-direct {v6, v0, v2, v4}, Lud/x;-><init>(Lud/a0;Ljava/lang/String;Lke/d;)V
 
     const/4 v2, 0x2
 
-    invoke-static {v3, v5, v6, v2}, La5/g0;->j(Lze/a0;Lke/f;Lre/p;I)Lze/e0;
+    invoke-static {v3, v5, v6, v2}, La5/b0;->b(Lze/a0;Lke/f;Lre/p;I)Lze/f0;
 
     move-result-object v2
 
     .line 18
-    new-instance v3, Lud/a0;
+    new-instance v3, Lud/y;
 
-    invoke-direct {v3, v1}, Lud/a0;-><init>(Lre/l;)V
+    invoke-direct {v3, v1}, Lud/y;-><init>(Lre/l;)V
 
-    invoke-static {v2, v3}, Lae/u1;->l(Lze/e0;Lre/l;)Lze/e0;
+    invoke-static {v2, v3}, Lae/t1;->k(Lze/f0;Lre/l;)Lze/f0;
 
     .line 19
-    new-instance v3, Lud/b0;
+    new-instance v3, Lud/z;
 
-    invoke-direct {v3, v0, v1}, Lud/b0;-><init>(Lud/c0;Lre/l;)V
+    invoke-direct {v3, v0, v1}, Lud/z;-><init>(Lud/a0;Lre/l;)V
 
-    invoke-static {v2, v3}, Lae/u1;->c(Lze/e0;Lre/l;)Lze/e0;
+    invoke-static {v2, v3}, Lae/t1;->b(Lze/f0;Lre/l;)Lze/f0;
 
     :cond_2
     :goto_0
@@ -7033,7 +7033,7 @@
 
     const-string v0, "activity"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/4 v0, 0x0
 
@@ -7065,11 +7065,11 @@
     if-nez v2, :cond_6
 
     .line 2
-    sget-object p3, Lcom/supercell/id/PresentationInfo$Login;->f:Lcom/supercell/id/PresentationInfo$Login;
+    sget-object p3, Lcom/supercell/id/PresentationInfo$Login;->g:Lcom/supercell/id/PresentationInfo$Login;
 
     const-string v0, "login"
 
-    invoke-static {p2, v0}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {p2, v0}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
@@ -7082,11 +7082,11 @@
 
     .line 3
     :cond_2
-    sget-object p3, Lcom/supercell/id/PresentationInfo$AddFriends;->f:Lcom/supercell/id/PresentationInfo$AddFriends;
+    sget-object p3, Lcom/supercell/id/PresentationInfo$AddFriends;->g:Lcom/supercell/id/PresentationInfo$AddFriends;
 
     const-string v0, "add-friends"
 
-    invoke-static {p2, v0}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {p2, v0}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
@@ -7096,11 +7096,11 @@
 
     .line 4
     :cond_3
-    sget-object p3, Lcom/supercell/id/PresentationInfo$FriendRequests;->f:Lcom/supercell/id/PresentationInfo$FriendRequests;
+    sget-object p3, Lcom/supercell/id/PresentationInfo$FriendRequests;->g:Lcom/supercell/id/PresentationInfo$FriendRequests;
 
     const-string v0, "friend-requests"
 
-    invoke-static {p2, v0}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {p2, v0}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
@@ -7110,11 +7110,11 @@
 
     .line 5
     :cond_4
-    sget-object p3, Lcom/supercell/id/PresentationInfo$ProfileSelector;->f:Lcom/supercell/id/PresentationInfo$ProfileSelector;
+    sget-object p3, Lcom/supercell/id/PresentationInfo$ProfileSelector;->g:Lcom/supercell/id/PresentationInfo$ProfileSelector;
 
     const-string v0, "profile-selector"
 
-    invoke-static {p2, v0}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {p2, v0}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p2
 
@@ -7172,7 +7172,7 @@
 
     const/4 v7, 0x0
 
-    sget-object v8, Lcom/supercell/id/model/ProfileImage$Empty;->g:Lcom/supercell/id/model/ProfileImage$Empty;
+    sget-object v8, Lcom/supercell/id/model/ProfileImage$Empty;->h:Lcom/supercell/id/model/ProfileImage$Empty;
 
     move-object v4, p2
 
@@ -7203,13 +7203,13 @@
 
     const-string v0, "activity"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     invoke-virtual {p0}, Lcom/supercell/id/SupercellId;->preload()V
 
     .line 2
-    sget-object v0, Lcom/supercell/id/ui/MainActivity;->t:Lcom/supercell/id/ui/MainActivity$a;
+    sget-object v0, Lcom/supercell/id/ui/MainActivity;->u:Lcom/supercell/id/ui/MainActivity$a;
 
     .line 3
     new-instance v0, Landroid/content/Intent;
@@ -7243,11 +7243,11 @@
 
     const-string v0, "activity"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "feedId"
 
-    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     new-instance v0, Lcom/supercell/id/PresentationInfo$Chat;
 
@@ -7263,15 +7263,15 @@
 
     const-string v0, "activity"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "type"
 
-    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "payload"
 
-    invoke-static {p3, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p3, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     new-instance v0, Lcom/supercell/id/PresentationInfo$InviteToPlay;
 
@@ -7287,15 +7287,15 @@
 
     const-string v0, "activity"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "scid"
 
-    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "appAccount"
 
-    invoke-static {p3, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p3, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     sget-object v0, Lcom/supercell/id/SupercellId;->a:Ljava/lang/ref/WeakReference;
@@ -7360,7 +7360,7 @@
     .line 5
     new-instance p2, Lcom/supercell/id/model/IdSocialAccount$AppAccount;
 
-    new-instance v0, Lvc/e;
+    new-instance v0, Lvc/d;
 
     invoke-virtual {p0}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lae/u;
 
@@ -7370,13 +7370,13 @@
     iget-object v1, v1, Lae/u;->j:Lcom/supercell/id/IdConfiguration;
 
     .line 7
-    invoke-virtual {v1}, Lcom/supercell/id/IdConfiguration;->getApp()Lvc/d;
+    invoke-virtual {v1}, Lcom/supercell/id/IdConfiguration;->getApp()Lvc/c;
 
     move-result-object v1
 
-    invoke-direct {v0, p3, v1}, Lvc/e;-><init>(Ljava/lang/String;Lvc/d;)V
+    invoke-direct {v0, p3, v1}, Lvc/d;-><init>(Ljava/lang/String;Lvc/c;)V
 
-    invoke-direct {p2, v0}, Lcom/supercell/id/model/IdSocialAccount$AppAccount;-><init>(Lvc/e;)V
+    invoke-direct {p2, v0}, Lcom/supercell/id/model/IdSocialAccount$AppAccount;-><init>(Lvc/d;)V
 
     goto :goto_3
 
@@ -7396,7 +7396,7 @@
 
     const/4 v3, 0x0
 
-    sget-object v4, Lcom/supercell/id/model/ProfileImage$Empty;->g:Lcom/supercell/id/model/ProfileImage$Empty;
+    sget-object v4, Lcom/supercell/id/model/ProfileImage$Empty;->h:Lcom/supercell/id/model/ProfileImage$Empty;
 
     const/4 v5, 0x0
 
@@ -7415,7 +7415,7 @@
 
     const-string v0, "shopProducts"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     sget-object v0, Lcom/supercell/id/SupercellId;->b:Lcom/supercell/id/SupercellIdDelegate;
 
@@ -7430,9 +7430,9 @@
 .method public final reloadAssetsToMemoryCache()V
     .locals 1
 
-    sget-object v0, Lcom/supercell/id/SupercellId$k;->f:Lcom/supercell/id/SupercellId$k;
+    sget-object v0, Lcom/supercell/id/SupercellId$k;->g:Lcom/supercell/id/SupercellId$k;
 
-    invoke-static {v0}, Lae/u1;->o(Lre/a;)Lze/e0;
+    invoke-static {v0}, Lae/t1;->n(Lre/a;)Lze/f0;
 
     return-void
 .end method
@@ -7442,7 +7442,7 @@
 
     const-string v0, "listener"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     sget-object v0, Lcom/supercell/id/SupercellId;->e:Ljava/util/WeakHashMap;
@@ -7477,10 +7477,10 @@
 
     const-string v0, "activity"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
-    sget-object v0, Lcom/supercell/id/ui/MainActivity;->t:Lcom/supercell/id/ui/MainActivity$a;
+    sget-object v0, Lcom/supercell/id/ui/MainActivity;->u:Lcom/supercell/id/ui/MainActivity$a;
 
     invoke-virtual {v0}, Lcom/supercell/id/ui/MainActivity$a;->a()Lcom/supercell/id/ui/MainActivity;
 
@@ -7506,14 +7506,14 @@
     if-eqz v0, :cond_2
 
     .line 2
-    sget-object v1, Lcom/supercell/id/SupercellId;->k:Lze/f0;
+    sget-object v1, Lcom/supercell/id/SupercellId;->k:Lze/g0;
 
     if-eqz v1, :cond_0
 
     const/4 v2, 0x0
 
     .line 3
-    invoke-virtual {v1, v2}, Lze/e1;->q(Ljava/util/concurrent/CancellationException;)V
+    invoke-virtual {v1, v2}, Lze/f1;->q(Ljava/util/concurrent/CancellationException;)V
 
     .line 4
     :cond_0
@@ -7543,17 +7543,17 @@
     const-wide/32 v1, 0x493e0
 
     :goto_0
-    invoke-static {v1, v2}, Lae/u1;->g(J)Lze/e0;
+    invoke-static {v1, v2}, Lae/t1;->f(J)Lze/f0;
 
     move-result-object v1
 
-    sget-object v2, Lcom/supercell/id/SupercellId$l;->f:Lcom/supercell/id/SupercellId$l;
+    sget-object v2, Lcom/supercell/id/SupercellId$l;->g:Lcom/supercell/id/SupercellId$l;
 
-    invoke-static {v1, v2}, Lae/u1;->m(Lze/e0;Lre/l;)Lze/e0;
+    invoke-static {v1, v2}, Lae/t1;->l(Lze/f0;Lre/l;)Lze/f0;
 
-    check-cast v1, Lze/f0;
+    check-cast v1, Lze/g0;
 
-    sput-object v1, Lcom/supercell/id/SupercellId;->k:Lze/f0;
+    sput-object v1, Lcom/supercell/id/SupercellId;->k:Lze/g0;
 
     :cond_2
     return v0
@@ -7657,7 +7657,7 @@
     move-object v2, v1
 
     .line 11
-    invoke-static/range {v2 .. v7}, Lrc/f;->e(Lrc/f;Ljava/lang/String;Ljava/util/Map;Ljava/lang/String;ILjava/lang/Object;)Lze/e0;
+    invoke-static/range {v2 .. v7}, Lrc/f;->e(Lrc/f;Ljava/lang/String;Ljava/util/Map;Ljava/lang/String;ILjava/lang/Object;)Lze/f0;
 
     move-result-object v2
 
@@ -7666,14 +7666,14 @@
 
     invoke-direct {v3, v1}, Lrc/u;-><init>(Lrc/c0;)V
 
-    invoke-static {v2, v3}, Lae/u1;->p(Lze/e0;Lre/l;)Lze/e0;
+    invoke-static {v2, v3}, Lae/t1;->o(Lze/f0;Lre/l;)Lze/f0;
 
     move-result-object v1
 
     .line 13
-    sget-object v2, Lrc/v;->g:Lrc/v;
+    sget-object v2, Lrc/v;->h:Lrc/v;
 
-    invoke-static {v1, v2}, Lae/u1;->p(Lze/e0;Lre/l;)Lze/e0;
+    invoke-static {v1, v2}, Lae/t1;->o(Lze/f0;Lre/l;)Lze/f0;
 
     move-result-object v1
 
@@ -7682,14 +7682,14 @@
 
     invoke-direct {v2, v0}, Lcom/supercell/id/SupercellId$m;-><init>(Ljava/lang/String;)V
 
-    invoke-static {v1, v2}, Lae/u1;->m(Lze/e0;Lre/l;)Lze/e0;
+    invoke-static {v1, v2}, Lae/t1;->l(Lze/f0;Lre/l;)Lze/f0;
 
     .line 15
     new-instance v2, Lcom/supercell/id/SupercellId$n;
 
     invoke-direct {v2, v0}, Lcom/supercell/id/SupercellId$n;-><init>(Ljava/lang/String;)V
 
-    invoke-static {v1, v2}, Lae/u1;->d(Lze/e0;Lre/l;)Lze/e0;
+    invoke-static {v1, v2}, Lae/t1;->c(Lze/f0;Lre/l;)Lze/f0;
 
     :cond_5
     return-void
@@ -7699,7 +7699,7 @@
     .locals 3
 
     .line 1
-    sget-object v0, Lae/q1;->b:Lae/q1;
+    sget-object v0, Lae/p1;->b:Lae/p1;
 
     new-instance v0, Lcom/supercell/id/SupercellId$o;
 
@@ -7710,7 +7710,7 @@
     const-string v1, "http"
 
     .line 2
-    invoke-static {p1, v1}, Lye/n;->l(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {p1, v1}, Lye/n;->m(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v1
 
@@ -7719,24 +7719,24 @@
     if-ne v1, v2, :cond_0
 
     .line 3
-    sget-object v1, Lae/b0;->e:Lae/b0;
+    sget-object v1, Lae/a0;->e:Lae/a0;
 
-    invoke-virtual {v1, p1}, Lae/b0;->a(Ljava/lang/String;)Lze/e0;
+    invoke-virtual {v1, p1}, Lae/a0;->a(Ljava/lang/String;)Lze/f0;
 
     move-result-object p1
 
-    new-instance v1, Lae/d1;
+    new-instance v1, Lae/c1;
 
-    invoke-direct {v1, v0}, Lae/d1;-><init>(Lre/r;)V
+    invoke-direct {v1, v0}, Lae/c1;-><init>(Lre/r;)V
 
-    invoke-static {p1, v1}, Lae/u1;->m(Lze/e0;Lre/l;)Lze/e0;
+    invoke-static {p1, v1}, Lae/t1;->l(Lze/f0;Lre/l;)Lze/f0;
 
     .line 4
-    new-instance v1, Lae/f1;
+    new-instance v1, Lae/e1;
 
-    invoke-direct {v1, v0}, Lae/f1;-><init>(Lre/r;)V
+    invoke-direct {v1, v0}, Lae/e1;-><init>(Lre/r;)V
 
-    invoke-static {p1, v1}, Lae/u1;->c(Lze/e0;Lre/l;)Lze/e0;
+    invoke-static {p1, v1}, Lae/t1;->b(Lze/f0;Lre/l;)Lze/f0;
 
     goto :goto_0
 
@@ -7744,15 +7744,15 @@
     :cond_0
     sget-object v1, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
 
-    invoke-virtual {v1}, Lcom/supercell/id/SupercellId;->getRemoteConfigurationPromise$supercellId_release()Lze/e0;
+    invoke-virtual {v1}, Lcom/supercell/id/SupercellId;->getRemoteConfigurationPromise$supercellId_release()Lze/f0;
 
     move-result-object v1
 
-    new-instance v2, Lae/i1;
+    new-instance v2, Lae/h1;
 
-    invoke-direct {v2, p1, v0}, Lae/i1;-><init>(Ljava/lang/String;Lre/r;)V
+    invoke-direct {v2, p1, v0}, Lae/h1;-><init>(Ljava/lang/String;Lre/r;)V
 
-    invoke-static {v1, v2}, Lae/u1;->p(Lze/e0;Lre/l;)Lze/e0;
+    invoke-static {v1, v2}, Lae/t1;->o(Lze/f0;Lre/l;)Lze/f0;
 
     :goto_0
     return-void
@@ -7868,7 +7868,7 @@
     iget-object v6, v2, Lrc/f;->b:Ljava/lang/String;
 
     .line 15
-    invoke-static {v6, v3}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v6, v3}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v6
 
@@ -7892,7 +7892,7 @@
     invoke-direct {v1, v5, v3}, Lie/d;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
 
     .line 17
-    invoke-static {v1}, Lcom/google/android/play/core/assetpacks/o2;->j(Lie/d;)Ljava/util/Map;
+    invoke-static {v1}, Lt3/h;->h(Lie/d;)Ljava/util/Map;
 
     move-result-object v1
 
@@ -7915,23 +7915,23 @@
     move-object v5, v2
 
     .line 18
-    invoke-static/range {v5 .. v10}, Lrc/f;->e(Lrc/f;Ljava/lang/String;Ljava/util/Map;Ljava/lang/String;ILjava/lang/Object;)Lze/e0;
+    invoke-static/range {v5 .. v10}, Lrc/f;->e(Lrc/f;Ljava/lang/String;Ljava/util/Map;Ljava/lang/String;ILjava/lang/Object;)Lze/f0;
 
     move-result-object v1
 
     .line 19
-    new-instance v3, Lrc/p0;
+    new-instance v3, Lrc/o0;
 
-    invoke-direct {v3, v2}, Lrc/p0;-><init>(Lrc/d0;)V
+    invoke-direct {v3, v2}, Lrc/o0;-><init>(Lrc/d0;)V
 
-    invoke-static {v1, v3}, Lae/u1;->p(Lze/e0;Lre/l;)Lze/e0;
+    invoke-static {v1, v3}, Lae/t1;->o(Lze/f0;Lre/l;)Lze/f0;
 
     move-result-object v1
 
     .line 20
-    sget-object v2, Lrc/q0;->g:Lrc/q0;
+    sget-object v2, Lrc/p0;->h:Lrc/p0;
 
-    invoke-static {v1, v2}, Lae/u1;->p(Lze/e0;Lre/l;)Lze/e0;
+    invoke-static {v1, v2}, Lae/t1;->o(Lze/f0;Lre/l;)Lze/f0;
 
     move-result-object v1
 
@@ -7940,21 +7940,21 @@
 
     invoke-direct {v2, v4}, Lbe/s;-><init>(Lbe/r;)V
 
-    invoke-static {v1, v2}, Lae/u1;->l(Lze/e0;Lre/l;)Lze/e0;
+    invoke-static {v1, v2}, Lae/t1;->k(Lze/f0;Lre/l;)Lze/f0;
 
     .line 22
     new-instance v2, Lcom/supercell/id/SupercellId$q;
 
     invoke-direct {v2, v0}, Lcom/supercell/id/SupercellId$q;-><init>(Ljava/lang/String;)V
 
-    invoke-static {v1, v2}, Lae/u1;->m(Lze/e0;Lre/l;)Lze/e0;
+    invoke-static {v1, v2}, Lae/t1;->l(Lze/f0;Lre/l;)Lze/f0;
 
     .line 23
     new-instance v2, Lcom/supercell/id/SupercellId$r;
 
     invoke-direct {v2, v0}, Lcom/supercell/id/SupercellId$r;-><init>(Ljava/lang/String;)V
 
-    invoke-static {v1, v2}, Lae/u1;->d(Lze/e0;Lre/l;)Lze/e0;
+    invoke-static {v1, v2}, Lae/t1;->c(Lze/f0;Lre/l;)Lze/f0;
 
     :cond_6
     return-void
@@ -7973,7 +7973,7 @@
 
     const-string v0, "presences"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     sget-object v0, Lcom/supercell/id/SupercellId;->b:Lcom/supercell/id/SupercellIdDelegate;
@@ -8031,7 +8031,7 @@
 
     const-string v0, "activity"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     sget-object v0, Lcom/supercell/id/SupercellId;->a:Ljava/lang/ref/WeakReference;
@@ -8052,29 +8052,29 @@
     move-result-object v0
 
     .line 3
-    iget-object v0, v0, Lae/u;->x:Lae/i0;
+    iget-object v0, v0, Lae/u;->x:Lae/h0;
 
     .line 4
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 5
-    iget-boolean v1, v0, Lae/i0;->k:Z
+    iget-boolean v1, v0, Lae/h0;->l:Z
 
     if-eq v1, p2, :cond_1
 
     .line 6
-    iput-boolean p2, v0, Lae/i0;->k:Z
+    iput-boolean p2, v0, Lae/h0;->l:Z
 
     if-eqz p2, :cond_0
 
     .line 7
-    invoke-virtual {v0, p1}, Lae/i0;->g(Landroid/app/Activity;)V
+    invoke-virtual {v0, p1}, Lae/h0;->g(Landroid/app/Activity;)V
 
     goto :goto_0
 
     .line 8
     :cond_0
-    invoke-virtual {v0}, Lae/i0;->b()V
+    invoke-virtual {v0}, Lae/h0;->b()V
 
     :cond_1
     :goto_0
@@ -8130,7 +8130,7 @@
     move-result-object p1
 
     .line 9
-    iget-object p1, p1, Lae/u;->v:Lrc/b1;
+    iget-object p1, p1, Lae/u;->v:Lrc/a1;
 
     .line 10
     sget-boolean v0, Lcom/supercell/id/SupercellId;->i:Z
@@ -8159,19 +8159,19 @@
     const/4 v0, 0x0
 
     :goto_0
-    invoke-virtual {p1, v0}, Lrc/b1;->g(Z)V
+    invoke-virtual {p1, v0}, Lrc/a1;->g(Z)V
 
     goto :goto_1
 
     .line 13
     :cond_2
-    invoke-virtual {p0}, Lcom/supercell/id/SupercellId;->getRemoteConfigurationPromise$supercellId_release()Lze/e0;
+    invoke-virtual {p0}, Lcom/supercell/id/SupercellId;->getRemoteConfigurationPromise$supercellId_release()Lze/f0;
 
     move-result-object p1
 
-    sget-object v0, Lcom/supercell/id/SupercellId$s;->f:Lcom/supercell/id/SupercellId$s;
+    sget-object v0, Lcom/supercell/id/SupercellId$s;->g:Lcom/supercell/id/SupercellId$s;
 
-    invoke-static {p1, v0}, Lae/u1;->m(Lze/e0;Lre/l;)Lze/e0;
+    invoke-static {p1, v0}, Lae/t1;->l(Lze/f0;Lre/l;)Lze/f0;
 
     :cond_3
     :goto_1
@@ -8183,7 +8183,7 @@
 
     const-string v0, "email"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {p0}, Lcom/supercell/id/SupercellId;->a()Lcom/supercell/id/SupercellIdAccountStorage;
 
@@ -8199,7 +8199,7 @@
 
     const-string v0, "phone"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {p0}, Lcom/supercell/id/SupercellId;->a()Lcom/supercell/id/SupercellIdAccountStorage;
 
@@ -8215,7 +8215,7 @@
 
     const-string v0, "email"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {p0}, Lcom/supercell/id/SupercellId;->a()Lcom/supercell/id/SupercellIdAccountStorage;
 
@@ -8231,7 +8231,7 @@
 
     const-string v0, "phone"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {p0}, Lcom/supercell/id/SupercellId;->a()Lcom/supercell/id/SupercellIdAccountStorage;
 
@@ -8260,7 +8260,7 @@
 
     const-string v0, "value"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     sput-object p1, Lcom/supercell/id/SupercellId;->g:Lae/i;
@@ -8271,7 +8271,7 @@
     if-eqz v0, :cond_0
 
     .line 3
-    invoke-virtual {v0, p1}, Lze/e1;->G(Ljava/lang/Object;)Z
+    invoke-virtual {v0, p1}, Lze/f1;->G(Ljava/lang/Object;)Z
 
     :cond_0
     const/4 v0, 0x0
@@ -8335,7 +8335,7 @@
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lae/u;->k()Lbe/o0;
+    invoke-virtual {v1}, Lae/u;->k()Lbe/q0;
 
     move-result-object v1
 
@@ -8346,7 +8346,7 @@
     move-result-wide v2
 
     .line 10
-    iput-wide v2, v1, Lbe/o0;->f:J
+    iput-wide v2, v1, Lbe/q0;->f:J
 
     .line 11
     invoke-virtual {p0}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lae/u;
@@ -8436,18 +8436,18 @@
     if-nez p1, :cond_1
 
     .line 2
-    sget-object p1, Lcom/supercell/id/SupercellId;->k:Lze/f0;
+    sget-object p1, Lcom/supercell/id/SupercellId;->k:Lze/g0;
 
     const/4 v0, 0x0
 
     if-eqz p1, :cond_0
 
     .line 3
-    invoke-virtual {p1, v0}, Lze/e1;->q(Ljava/util/concurrent/CancellationException;)V
+    invoke-virtual {p1, v0}, Lze/f1;->q(Ljava/util/concurrent/CancellationException;)V
 
     .line 4
     :cond_0
-    sput-object v0, Lcom/supercell/id/SupercellId;->k:Lze/f0;
+    sput-object v0, Lcom/supercell/id/SupercellId;->k:Lze/g0;
 
     :cond_1
     return-void
@@ -8472,15 +8472,15 @@
 
     const-string v0, "inventory"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "donations"
 
-    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "claims"
 
-    invoke-static {p3, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p3, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     sget-object v0, Lcom/supercell/id/SupercellId;->b:Lcom/supercell/id/SupercellIdDelegate;
@@ -8575,11 +8575,11 @@
 
     const-string v0, "context"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "delegate"
 
-    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     invoke-virtual {p2}, Ljava/lang/Object;->toString()Ljava/lang/String;
@@ -8612,9 +8612,9 @@
     invoke-direct {p2}, Ljava/util/ArrayList;-><init>()V
 
     .line 7
-    new-instance p3, Lud/o0;
+    new-instance p3, Lud/m0;
 
-    invoke-direct {p3}, Lud/o0;-><init>()V
+    invoke-direct {p3}, Lud/m0;-><init>()V
 
     .line 8
     invoke-interface {p2, p3}, Ljava/util/List;->add(Ljava/lang/Object;)Z
@@ -8637,7 +8637,7 @@
     new-instance p3, Lge/e;
 
     .line 14
-    invoke-static {p2}, Lje/j;->Q(Ljava/lang/Iterable;)Ljava/util/List;
+    invoke-static {p2}, Lje/j;->L(Ljava/lang/Iterable;)Ljava/util/List;
 
     move-result-object p2
 
@@ -8656,7 +8656,7 @@
 
     const-string p2, "context.applicationContext"
 
-    invoke-static {p1, p2}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p2}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {p1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -8664,7 +8664,7 @@
 
     const-string p2, "context.applicationContext.resources"
 
-    invoke-static {p1, p2}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p2}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 18
     invoke-virtual {p1}, Landroid/content/res/Resources;->getDisplayMetrics()Landroid/util/DisplayMetrics;
@@ -8678,7 +8678,7 @@
     move-result p1
 
     .line 19
-    sput p1, La5/g0;->a:F
+    sput p1, La5/e0;->g:F
 
     return-void
 .end method
@@ -8688,11 +8688,11 @@
 
     const-string v0, "activity"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "error"
 
-    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     invoke-virtual {p0}, Lcom/supercell/id/SupercellId;->preload()V
@@ -8700,16 +8700,16 @@
     .line 2
     new-instance v0, Led/a;
 
-    sget-object v1, Lcom/supercell/id/util/NormalizedError;->l:Lcom/supercell/id/util/NormalizedError$b;
+    sget-object v1, Lcom/supercell/id/util/NormalizedError;->m:Lcom/supercell/id/util/NormalizedError$b;
 
     .line 3
-    sget-object v1, Lcom/supercell/id/util/NormalizedError;->k:Lye/e;
+    sget-object v1, Lcom/supercell/id/util/NormalizedError;->l:Lye/e;
 
     .line 4
     invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 5
-    iget-object v2, v1, Lye/e;->f:Ljava/util/regex/Pattern;
+    iget-object v2, v1, Lye/e;->g:Ljava/util/regex/Pattern;
 
     invoke-virtual {v2, p2}, Ljava/util/regex/Pattern;->matcher(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
 
@@ -8757,7 +8757,7 @@
     const-string v2, "_heading"
 
     .line 10
-    invoke-static {v1, p2, v2}, Landroid/support/v4/media/f;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v1, p2, v2}, Landroid/support/v4/media/f;->b(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v3
 
@@ -8769,10 +8769,10 @@
     move-result-object v4
 
     .line 12
-    iget-object v4, v4, Lae/u;->s:Lud/j;
+    iget-object v4, v4, Lae/u;->s:Lud/i;
 
     .line 13
-    invoke-virtual {v4, v3}, Lud/j;->g(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v4, v3}, Lud/i;->g(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v3
 
@@ -8790,21 +8790,21 @@
     new-instance v10, Lcom/supercell/id/util/NormalizedError;
 
     .line 15
-    invoke-static {v1, v3, v2}, Landroid/support/v4/media/f;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v1, v3, v2}, Landroid/support/v4/media/f;->b(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v5
 
     const-string v2, "_description"
 
     .line 16
-    invoke-static {v1, v3, v2}, Landroid/support/v4/media/f;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v1, v3, v2}, Landroid/support/v4/media/f;->b(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v6
 
     const-string v2, "_btn"
 
     .line 17
-    invoke-static {v1, v3, v2}, Landroid/support/v4/media/f;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v1, v3, v2}, Landroid/support/v4/media/f;->b(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v7
 
@@ -8833,7 +8833,7 @@
 
     const-string v0, "activity"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     invoke-virtual {p0}, Lcom/supercell/id/SupercellId;->preload()V
@@ -8861,7 +8861,7 @@
 
     const-string v0, "presences"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     sget-object v0, Lcom/supercell/id/SupercellId;->b:Lcom/supercell/id/SupercellIdDelegate;
@@ -8955,7 +8955,7 @@
 
     .line 5
     :goto_1
-    invoke-virtual {v0, v1, v2}, Lae/u;->p(Lcom/supercell/id/IdConfiguration;Lcom/supercell/id/IdAccount;)V
+    invoke-virtual {v0, v1, v2}, Lae/u;->o(Lcom/supercell/id/IdConfiguration;Lcom/supercell/id/IdAccount;)V
 
     return-void
 .end method

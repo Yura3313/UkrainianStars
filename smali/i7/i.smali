@@ -14,15 +14,15 @@
 
 
 # static fields
-.field public static final enum f:Li7/i;
-
 .field public static final enum g:Li7/i;
 
 .field public static final enum h:Li7/i;
 
 .field public static final enum i:Li7/i;
 
-.field public static final synthetic j:[Li7/i;
+.field public static final enum j:Li7/i;
+
+.field public static final synthetic k:[Li7/i;
 
 
 # direct methods
@@ -38,7 +38,7 @@
 
     invoke-direct {v0, v1, v2}, Li7/i;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Li7/i;->f:Li7/i;
+    sput-object v0, Li7/i;->g:Li7/i;
 
     .line 2
     new-instance v1, Li7/i;
@@ -49,7 +49,7 @@
 
     invoke-direct {v1, v3, v4}, Li7/i;-><init>(Ljava/lang/String;I)V
 
-    sput-object v1, Li7/i;->g:Li7/i;
+    sput-object v1, Li7/i;->h:Li7/i;
 
     .line 3
     new-instance v3, Li7/i;
@@ -60,7 +60,7 @@
 
     invoke-direct {v3, v5, v6}, Li7/i;-><init>(Ljava/lang/String;I)V
 
-    sput-object v3, Li7/i;->h:Li7/i;
+    sput-object v3, Li7/i;->i:Li7/i;
 
     .line 4
     new-instance v5, Li7/i;
@@ -71,7 +71,7 @@
 
     invoke-direct {v5, v7, v8}, Li7/i;-><init>(Ljava/lang/String;I)V
 
-    sput-object v5, Li7/i;->i:Li7/i;
+    sput-object v5, Li7/i;->j:Li7/i;
 
     const/4 v7, 0x4
 
@@ -86,7 +86,7 @@
     aput-object v5, v7, v8
 
     .line 5
-    sput-object v7, Li7/i;->j:[Li7/i;
+    sput-object v7, Li7/i;->k:[Li7/i;
 
     return-void
 .end method
@@ -121,7 +121,7 @@
 .method public static values()[Li7/i;
     .locals 1
 
-    sget-object v0, Li7/i;->j:[Li7/i;
+    sget-object v0, Li7/i;->k:[Li7/i;
 
     invoke-virtual {v0}, [Li7/i;->clone()Ljava/lang/Object;
 

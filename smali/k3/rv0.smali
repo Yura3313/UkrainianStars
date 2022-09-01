@@ -1,98 +1,159 @@
 .class public final Lk3/rv0;
 .super Ljava/lang/Object;
-.source "com.google.android.gms:play-services-gass@@19.3.0"
+.source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lk3/ou;
+.implements Lk3/qv0;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<T:",
+        "Ljava/lang/Object;",
+        ">",
+        "Ljava/lang/Object;",
+        "Lk3/qv0<",
+        "TT;>;"
+    }
+.end annotation
+
+
+# static fields
+.field public static final c:Ljava/lang/Object;
 
 
 # instance fields
-.field public final f:Ljava/nio/channels/FileChannel;
+.field public volatile a:Lk3/qv0;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lk3/qv0<",
+            "TT;>;"
+        }
+    .end annotation
+.end field
 
-.field public final g:J
-
-.field public final h:J
+.field public volatile b:Ljava/lang/Object;
 
 
 # direct methods
-.method public constructor <init>(Ljava/nio/channels/FileChannel;JJ)V
-    .locals 0
+.method public static constructor <clinit>()V
+    .locals 1
+
+    new-instance v0, Ljava/lang/Object;
+
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+
+    sput-object v0, Lk3/rv0;->c:Ljava/lang/Object;
+
+    return-void
+.end method
+
+.method public constructor <init>(Lk3/qv0;)V
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lk3/qv0<",
+            "TT;>;)V"
+        }
+    .end annotation
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lk3/rv0;->f:Ljava/nio/channels/FileChannel;
+    sget-object v0, Lk3/rv0;->c:Ljava/lang/Object;
+
+    iput-object v0, p0, Lk3/rv0;->b:Ljava/lang/Object;
 
     .line 3
-    iput-wide p2, p0, Lk3/rv0;->g:J
-
-    .line 4
-    iput-wide p4, p0, Lk3/rv0;->h:J
+    iput-object p1, p0, Lk3/rv0;->a:Lk3/qv0;
 
     return-void
 .end method
 
-
-# virtual methods
-.method public final a([Ljava/security/MessageDigest;JI)V
-    .locals 8
-    .annotation system Ldalvik/annotation/Throws;
+.method public static a(Lk3/qv0;)Lk3/qv0;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
         value = {
-            Ljava/io/IOException;
+            "<P::",
+            "Lk3/qv0<",
+            "TT;>;T:",
+            "Ljava/lang/Object;",
+            ">(TP;)",
+            "Lk3/qv0<",
+            "TT;>;"
         }
     .end annotation
 
     .line 1
-    iget-wide v0, p0, Lk3/rv0;->g:J
+    instance-of v0, p0, Lk3/rv0;
 
-    add-long v4, v0, p2
+    if-nez v0, :cond_1
 
-    .line 2
-    iget-object v2, p0, Lk3/rv0;->f:Ljava/nio/channels/FileChannel;
+    instance-of v0, p0, Lk3/jv0;
 
-    sget-object v3, Ljava/nio/channels/FileChannel$MapMode;->READ_ONLY:Ljava/nio/channels/FileChannel$MapMode;
-
-    int-to-long v6, p4
-
-    .line 3
-    invoke-virtual/range {v2 .. v7}, Ljava/nio/channels/FileChannel;->map(Ljava/nio/channels/FileChannel$MapMode;JJ)Ljava/nio/MappedByteBuffer;
-
-    move-result-object p2
-
-    .line 4
-    invoke-virtual {p2}, Ljava/nio/MappedByteBuffer;->load()Ljava/nio/MappedByteBuffer;
-
-    .line 5
-    array-length p3, p1
-
-    const/4 p4, 0x0
-
-    const/4 v0, 0x0
-
-    :goto_0
-    if-ge v0, p3, :cond_0
-
-    aget-object v1, p1, v0
-
-    .line 6
-    invoke-virtual {p2, p4}, Ljava/nio/Buffer;->position(I)Ljava/nio/Buffer;
-
-    .line 7
-    invoke-virtual {v1, p2}, Ljava/security/MessageDigest;->update(Ljava/nio/ByteBuffer;)V
-
-    add-int/lit8 v0, v0, 0x1
+    if-eqz v0, :cond_0
 
     goto :goto_0
 
+    .line 2
     :cond_0
-    return-void
+    new-instance v0, Lk3/rv0;
+
+    invoke-direct {v0, p0}, Lk3/rv0;-><init>(Lk3/qv0;)V
+
+    return-object v0
+
+    :cond_1
+    :goto_0
+    return-object p0
 .end method
 
-.method public final size()J
+
+# virtual methods
+.method public final get()Ljava/lang/Object;
     .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()TT;"
+        }
+    .end annotation
 
-    iget-wide v0, p0, Lk3/rv0;->h:J
+    .line 1
+    iget-object v0, p0, Lk3/rv0;->b:Ljava/lang/Object;
 
-    return-wide v0
+    .line 2
+    sget-object v1, Lk3/rv0;->c:Ljava/lang/Object;
+
+    if-ne v0, v1, :cond_1
+
+    .line 3
+    iget-object v0, p0, Lk3/rv0;->a:Lk3/qv0;
+
+    if-nez v0, :cond_0
+
+    .line 4
+    iget-object v0, p0, Lk3/rv0;->b:Ljava/lang/Object;
+
+    goto :goto_0
+
+    .line 5
+    :cond_0
+    invoke-interface {v0}, Lk3/qv0;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    .line 6
+    iput-object v0, p0, Lk3/rv0;->b:Ljava/lang/Object;
+
+    const/4 v1, 0x0
+
+    .line 7
+    iput-object v1, p0, Lk3/rv0;->a:Lk3/qv0;
+
+    :cond_1
+    :goto_0
+    return-object v0
 .end method

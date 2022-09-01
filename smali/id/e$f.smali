@@ -1,5 +1,5 @@
 .class public final Lid/e$f;
-.super Lse/h;
+.super Lse/i;
 .source "DonationReceivedDialog.kt"
 
 # interfaces
@@ -18,28 +18,28 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/l<",
         "Landroid/view/View;",
-        "Lie/h;",
+        "Lie/i;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic f:Lid/e;
+.field public final synthetic g:Lid/e;
 
 
 # direct methods
 .method public constructor <init>(Lid/e;)V
     .locals 0
 
-    iput-object p1, p0, Lid/e$f;->f:Lid/e;
+    iput-object p1, p0, Lid/e$f;->g:Lid/e;
 
     const/4 p1, 0x1
 
-    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -62,7 +62,7 @@
     invoke-virtual {p1, v0, v1, v2}, Landroid/view/View;->postDelayed(Ljava/lang/Runnable;J)Z
 
     .line 3
-    sget-object p1, Lie/h;->a:Lie/h;
+    sget-object p1, Lie/i;->a:Lie/i;
 
     return-object p1
 .end method

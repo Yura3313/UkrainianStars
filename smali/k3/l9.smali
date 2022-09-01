@@ -4,7 +4,7 @@
 
 
 # virtual methods
-.method public abstract a()Lk3/em0;
+.method public abstract a()Lk3/hm0;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -12,7 +12,7 @@
             "Ljava/util/Set<",
             "Ljava/lang/String;",
             ">;)",
-            "Lk3/em0<",
+            "Lk3/hm0<",
             "Ljava/util/Map<",
             "Ljava/lang/String;",
             "Ljava/lang/String;",

@@ -19,11 +19,11 @@
 
 
 # instance fields
-.field public final f:Ljava/lang/String;
-
 .field public final g:Ljava/lang/String;
 
-.field public final h:I
+.field public final h:Ljava/lang/String;
+
+.field public final i:I
 
 
 # direct methods
@@ -44,7 +44,7 @@
 
     const-string v0, "parcel"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 2
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
@@ -57,7 +57,7 @@
 
     const-string v2, "parcel.readString()!!"
 
-    invoke-static {v0, v2}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v2}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 3
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
@@ -66,7 +66,7 @@
 
     if-eqz v3, :cond_0
 
-    invoke-static {v3, v2}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v3, v2}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 4
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
@@ -76,23 +76,23 @@
     .line 5
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object v0, p0, Lcom/supercell/id/util/Region;->f:Ljava/lang/String;
+    iput-object v0, p0, Lcom/supercell/id/util/Region;->g:Ljava/lang/String;
 
-    iput-object v3, p0, Lcom/supercell/id/util/Region;->g:Ljava/lang/String;
+    iput-object v3, p0, Lcom/supercell/id/util/Region;->h:Ljava/lang/String;
 
-    iput p1, p0, Lcom/supercell/id/util/Region;->h:I
+    iput p1, p0, Lcom/supercell/id/util/Region;->i:I
 
     return-void
 
     .line 6
     :cond_0
-    invoke-static {}, Lt3/e;->f()V
+    invoke-static {}, Lt3/h;->j()V
 
     throw v1
 
     .line 7
     :cond_1
-    invoke-static {}, Lt3/e;->f()V
+    invoke-static {}, Lt3/h;->j()V
 
     throw v1
 .end method
@@ -102,16 +102,16 @@
 
     const-string v0, "code"
 
-    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lcom/supercell/id/util/Region;->f:Ljava/lang/String;
+    iput-object p1, p0, Lcom/supercell/id/util/Region;->g:Ljava/lang/String;
 
-    iput-object p2, p0, Lcom/supercell/id/util/Region;->g:Ljava/lang/String;
+    iput-object p2, p0, Lcom/supercell/id/util/Region;->h:Ljava/lang/String;
 
-    iput p3, p0, Lcom/supercell/id/util/Region;->h:I
+    iput p3, p0, Lcom/supercell/id/util/Region;->i:I
 
     return-void
 .end method
@@ -122,7 +122,7 @@
     .locals 7
 
     .line 1
-    iget-object v0, p0, Lcom/supercell/id/util/Region;->f:Ljava/lang/String;
+    iget-object v0, p0, Lcom/supercell/id/util/Region;->g:Ljava/lang/String;
 
     if-eqz v0, :cond_1
 
@@ -136,7 +136,7 @@
 
     const-string v3, "(this as java.lang.Strin\u2026ing(startIndex, endIndex)"
 
-    invoke-static {v0, v3}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v3}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/4 v4, 0x4
 
@@ -163,7 +163,7 @@
     aput-object v6, v4, v5
 
     .line 2
-    invoke-static {v4}, Lcom/android/billingclient/api/z;->i([Ljava/lang/Object;)Ljava/util/List;
+    invoke-static {v4}, Lcom/android/billingclient/api/y;->d([Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object v4
 
@@ -198,13 +198,13 @@
 
     const-string v4, "Normalizer.normalize(fir\u2026ter, Normalizer.Form.NFD)"
 
-    invoke-static {v0, v4}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v4}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v0, v1, v2}, Ljava/lang/String;->substring(II)Ljava/lang/String;
 
     move-result-object v0
 
-    invoke-static {v0, v3}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v3}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     :cond_0
     return-object v0
@@ -239,29 +239,29 @@
 
     check-cast p1, Lcom/supercell/id/util/Region;
 
-    iget-object v0, p0, Lcom/supercell/id/util/Region;->f:Ljava/lang/String;
-
-    iget-object v1, p1, Lcom/supercell/id/util/Region;->f:Ljava/lang/String;
-
-    invoke-static {v0, v1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
     iget-object v0, p0, Lcom/supercell/id/util/Region;->g:Ljava/lang/String;
 
     iget-object v1, p1, Lcom/supercell/id/util/Region;->g:Ljava/lang/String;
 
-    invoke-static {v0, v1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    iget v0, p0, Lcom/supercell/id/util/Region;->h:I
+    iget-object v0, p0, Lcom/supercell/id/util/Region;->h:Ljava/lang/String;
 
-    iget p1, p1, Lcom/supercell/id/util/Region;->h:I
+    iget-object v1, p1, Lcom/supercell/id/util/Region;->h:Ljava/lang/String;
+
+    invoke-static {v0, v1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    iget v0, p0, Lcom/supercell/id/util/Region;->i:I
+
+    iget p1, p1, Lcom/supercell/id/util/Region;->i:I
 
     if-ne v0, p1, :cond_0
 
@@ -282,7 +282,7 @@
 .method public final hashCode()I
     .locals 3
 
-    iget-object v0, p0, Lcom/supercell/id/util/Region;->f:Ljava/lang/String;
+    iget-object v0, p0, Lcom/supercell/id/util/Region;->g:Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -300,7 +300,7 @@
     :goto_0
     mul-int/lit8 v0, v0, 0x1f
 
-    iget-object v2, p0, Lcom/supercell/id/util/Region;->g:Ljava/lang/String;
+    iget-object v2, p0, Lcom/supercell/id/util/Region;->h:Ljava/lang/String;
 
     if-eqz v2, :cond_1
 
@@ -313,7 +313,7 @@
 
     mul-int/lit8 v0, v0, 0x1f
 
-    iget v1, p0, Lcom/supercell/id/util/Region;->h:I
+    iget v1, p0, Lcom/supercell/id/util/Region;->i:I
 
     add-int/2addr v0, v1
 
@@ -331,7 +331,7 @@
     move-result-object v0
 
     .line 2
-    iget-object v1, p0, Lcom/supercell/id/util/Region;->f:Ljava/lang/String;
+    iget-object v1, p0, Lcom/supercell/id/util/Region;->g:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -339,7 +339,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lcom/supercell/id/util/Region;->g:Ljava/lang/String;
+    iget-object v1, p0, Lcom/supercell/id/util/Region;->h:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -347,7 +347,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget v1, p0, Lcom/supercell/id/util/Region;->h:I
+    iget v1, p0, Lcom/supercell/id/util/Region;->i:I
 
     const-string v2, ")"
 
@@ -364,20 +364,20 @@
 
     const-string p2, "dest"
 
-    invoke-static {p1, p2}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p2}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
-    iget-object p2, p0, Lcom/supercell/id/util/Region;->f:Ljava/lang/String;
-
-    invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
-
-    .line 2
     iget-object p2, p0, Lcom/supercell/id/util/Region;->g:Ljava/lang/String;
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
+    .line 2
+    iget-object p2, p0, Lcom/supercell/id/util/Region;->h:Ljava/lang/String;
+
+    invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
+
     .line 3
-    iget p2, p0, Lcom/supercell/id/util/Region;->h:I
+    iget p2, p0, Lcom/supercell/id/util/Region;->i:I
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
 

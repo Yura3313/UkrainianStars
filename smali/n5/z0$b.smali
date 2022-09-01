@@ -146,7 +146,7 @@
 .method public static t(Ln5/z0$b;)V
     .locals 1
 
-    sget-object v0, Ln5/w0;->h:Ln5/w0;
+    sget-object v0, Ln5/w0;->i:Ln5/w0;
 
     .line 1
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -359,7 +359,7 @@
     if-nez v0, :cond_0
 
     .line 2
-    sget-object v0, Ln5/f1;->l:Ln5/f1;
+    sget-object v0, Ln5/f1;->m:Ln5/f1;
 
     :cond_0
     return-object v0
@@ -378,7 +378,7 @@
     if-nez v0, :cond_0
 
     .line 2
-    sget-object v0, Ln5/w0;->k:Ln5/w0;
+    sget-object v0, Ln5/w0;->l:Ln5/w0;
 
     :cond_0
     return-object v0

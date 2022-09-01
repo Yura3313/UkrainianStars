@@ -62,7 +62,7 @@
 .method public abstract a(Ljava/lang/String;)Lk3/eo;
 .end method
 
-.method public final b(Lk3/cg;Lk3/oq;)Lk3/eo;
+.method public final b(Lk3/cg;Lk3/nq;)Lk3/eo;
     .locals 12
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -144,7 +144,7 @@
 
     check-cast v0, Ljava/nio/ByteBuffer;
 
-    invoke-static {v0}, Lk3/uw0;->m(Ljava/nio/ByteBuffer;)J
+    invoke-static {v0}, Lk3/yw0;->i(Ljava/nio/ByteBuffer;)J
 
     move-result-wide v0
 
@@ -272,7 +272,7 @@
 
     check-cast v0, Ljava/nio/ByteBuffer;
 
-    invoke-static {v0}, Lk3/uw0;->o(Ljava/nio/ByteBuffer;)J
+    invoke-static {v0}, Lk3/yw0;->k(Ljava/nio/ByteBuffer;)J
 
     move-result-wide v0
 
@@ -288,7 +288,7 @@
     if-nez v5, :cond_4
 
     .line 16
-    iget-object v0, p1, Lk3/cg;->f:Ljava/nio/ByteBuffer;
+    iget-object v0, p1, Lk3/cg;->g:Ljava/nio/ByteBuffer;
 
     invoke-virtual {v0}, Ljava/nio/Buffer;->limit()I
 

@@ -1,5 +1,5 @@
 .class public final Lt3/u;
-.super Lt3/n;
+.super Lt3/o;
 .source "com.google.android.gms:play-services-games@@20.0.1"
 
 
@@ -9,133 +9,58 @@
         "<E:",
         "Ljava/lang/Object;",
         ">",
-        "Lt3/n<",
+        "Lt3/o<",
         "TE;>;"
     }
 .end annotation
 
 
-# static fields
-.field public static final j:Lt3/u;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lt3/n<",
-            "Ljava/lang/Object;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-
-# instance fields
-.field public final transient h:[Ljava/lang/Object;
-
-.field public final transient i:I
-
-
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 3
-
-    new-instance v0, Lt3/u;
-
-    const/4 v1, 0x0
-
-    new-array v2, v1, [Ljava/lang/Object;
-
-    invoke-direct {v0, v2, v1}, Lt3/u;-><init>([Ljava/lang/Object;I)V
-
-    sput-object v0, Lt3/u;->j:Lt3/u;
-
-    return-void
-.end method
-
-.method public constructor <init>([Ljava/lang/Object;I)V
+.method public constructor <init>()V
     .locals 0
 
-    .line 1
-    invoke-direct {p0}, Lt3/n;-><init>()V
-
-    .line 2
-    iput-object p1, p0, Lt3/u;->h:[Ljava/lang/Object;
-
-    .line 3
-    iput p2, p0, Lt3/u;->i:I
+    invoke-direct {p0}, Lt3/o;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final b([Ljava/lang/Object;I)I
+.method public final B(Ljava/lang/Object;)Lb2/z;
     .locals 3
 
     .line 1
-    iget-object v0, p0, Lt3/u;->h:[Ljava/lang/Object;
-
-    iget v1, p0, Lt3/u;->i:I
-
-    const/4 v2, 0x0
-
-    invoke-static {v0, v2, p1, p2, v1}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 2
-    iget p1, p0, Lt3/u;->i:I
+    iget v0, p0, Lt3/o;->h:I
 
-    add-int/2addr p2, p1
+    add-int/lit8 v0, v0, 0x1
 
-    return p2
+    invoke-virtual {p0, v0}, Lt3/o;->G(I)V
+
+    .line 3
+    iget-object v0, p0, Lt3/o;->g:[Ljava/lang/Object;
+
+    iget v1, p0, Lt3/o;->h:I
+
+    add-int/lit8 v2, v1, 0x1
+
+    iput v2, p0, Lt3/o;->h:I
+
+    aput-object p1, v0, v1
+
+    return-object p0
 .end method
 
-.method public final e()[Ljava/lang/Object;
-    .locals 1
-
-    iget-object v0, p0, Lt3/u;->h:[Ljava/lang/Object;
-
-    return-object v0
-.end method
-
-.method public final f()I
-    .locals 1
-
-    const/4 v0, 0x0
-
-    return v0
-.end method
-
-.method public final g()I
-    .locals 1
-
-    iget v0, p0, Lt3/u;->i:I
-
-    return v0
-.end method
-
-.method public final get(I)Ljava/lang/Object;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(I)TE;"
-        }
-    .end annotation
+.method public final q(Ljava/lang/Iterable;)Lb2/z;
+    .locals 0
 
     .line 1
-    iget v0, p0, Lt3/u;->i:I
-
-    invoke-static {p1, v0}, Lt3/j;->a(II)I
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 2
-    iget-object v0, p0, Lt3/u;->h:[Ljava/lang/Object;
+    invoke-super {p0, p1}, Lt3/o;->q(Ljava/lang/Iterable;)Lb2/z;
 
-    aget-object p1, v0, p1
-
-    return-object p1
-.end method
-
-.method public final size()I
-    .locals 1
-
-    iget v0, p0, Lt3/u;->i:I
-
-    return v0
+    return-object p0
 .end method

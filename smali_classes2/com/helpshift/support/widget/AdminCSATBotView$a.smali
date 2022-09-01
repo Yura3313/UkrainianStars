@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field public final synthetic f:Lcom/helpshift/support/widget/AdminCSATBotView;
+.field public final synthetic g:Lcom/helpshift/support/widget/AdminCSATBotView;
 
 
 # direct methods
 .method public constructor <init>(Lcom/helpshift/support/widget/AdminCSATBotView;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/helpshift/support/widget/AdminCSATBotView$a;->f:Lcom/helpshift/support/widget/AdminCSATBotView;
+    iput-object p1, p0, Lcom/helpshift/support/widget/AdminCSATBotView$a;->g:Lcom/helpshift/support/widget/AdminCSATBotView;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -38,15 +38,15 @@
     .locals 5
 
     .line 1
-    iget-object p1, p0, Lcom/helpshift/support/widget/AdminCSATBotView$a;->f:Lcom/helpshift/support/widget/AdminCSATBotView;
+    iget-object p1, p0, Lcom/helpshift/support/widget/AdminCSATBotView$a;->g:Lcom/helpshift/support/widget/AdminCSATBotView;
 
     .line 2
-    iget-object v0, p1, Lcom/helpshift/support/widget/AdminCSATBotView;->h:Lcom/helpshift/support/widget/AdminCSATBotView$b;
+    iget-object v0, p1, Lcom/helpshift/support/widget/AdminCSATBotView;->i:Lcom/helpshift/support/widget/AdminCSATBotView$b;
 
     if-eqz v0, :cond_0
 
     .line 3
-    iget-object p1, p1, Lcom/helpshift/support/widget/AdminCSATBotView;->f:Landroid/widget/RatingBar;
+    iget-object p1, p1, Lcom/helpshift/support/widget/AdminCSATBotView;->g:Landroid/widget/RatingBar;
 
     .line 4
     invoke-virtual {p1}, Landroid/widget/RatingBar;->getRating()F
@@ -72,7 +72,7 @@
     check-cast v1, Lqa/p0;
 
     .line 7
-    iget-object v1, v1, Lqa/p0;->e:Lra/x;
+    iget-object v1, v1, Lqa/p0;->e:Lra/w;
 
     if-eqz v1, :cond_0
 
@@ -80,7 +80,7 @@
     check-cast v1, Lqa/t;
 
     .line 9
-    iget-object v1, v1, Lqa/t;->m0:Lf9/i;
+    iget-object v1, v1, Lqa/t;->n0:Lf9/i;
 
     .line 10
     iget-object v2, v1, Lf9/i;->r:Lf9/q0;

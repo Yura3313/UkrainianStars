@@ -20,14 +20,14 @@
 
 
 # instance fields
-.field public final synthetic f:Lxe/d;
+.field public final synthetic g:Lxe/d;
 
 
 # direct methods
 .method public constructor <init>(Lxe/d;)V
     .locals 0
 
-    iput-object p1, p0, Lxe/i;->f:Lxe/d;
+    iput-object p1, p0, Lxe/i;->g:Lxe/d;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -47,7 +47,7 @@
         }
     .end annotation
 
-    iget-object v0, p0, Lxe/i;->f:Lxe/d;
+    iget-object v0, p0, Lxe/i;->g:Lxe/d;
 
     invoke-interface {v0}, Lxe/d;->iterator()Ljava/util/Iterator;
 

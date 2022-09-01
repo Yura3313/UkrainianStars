@@ -7,7 +7,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/concurrent/atomic/AtomicReference<",
-            "Lcom/helpshift/util/f0;",
+            "La5/w;",
             ">;"
         }
     .end annotation

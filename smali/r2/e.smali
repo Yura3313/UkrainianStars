@@ -342,7 +342,7 @@
     const/16 v1, 0x2e
 
     .line 4
-    invoke-static {p0, v1}, La1/e;->a(Ljava/lang/String;I)I
+    invoke-static {p0, v1}, La1/e;->b(Ljava/lang/String;I)I
 
     move-result v1
 
@@ -351,7 +351,7 @@
     const-string v3, " has already been registered"
 
     .line 5
-    invoke-static {v1, v2, p0, v3}, Landroid/support/v4/media/b;->a(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v1, v2, p0, v3}, Li1/j;->a(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p0
 

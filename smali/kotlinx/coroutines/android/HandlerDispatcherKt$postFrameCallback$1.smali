@@ -40,10 +40,10 @@
     .line 1
     iget-object v0, p0, Lkotlinx/coroutines/android/HandlerDispatcherKt$postFrameCallback$1;->$cont:Lze/f;
 
-    sget-object v1, Lze/k0;->a:Lze/t0;
+    sget-object v1, Lze/l0;->a:Lze/u0;
 
     .line 2
-    sget-object v1, Laf/q;->a:Lze/i1;
+    sget-object v1, Laf/q;->a:Lze/j1;
 
     .line 3
     invoke-static {p1, p2}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;

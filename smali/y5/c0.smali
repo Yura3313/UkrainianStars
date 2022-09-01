@@ -2,46 +2,42 @@
 .super Ljava/lang/Object;
 
 # interfaces
-.implements Lc4/a;
+.implements Ljava/util/concurrent/Executor;
 
 
-# instance fields
-.field public final f:Lcom/google/firebase/iid/FirebaseInstanceId;
-
-.field public final g:Ljava/lang/String;
-
-.field public final h:Ljava/lang/String;
+# static fields
+.field public static final g:Ly5/c0;
 
 
 # direct methods
-.method public constructor <init>(Lcom/google/firebase/iid/FirebaseInstanceId;Ljava/lang/String;Ljava/lang/String;)V
+.method public static constructor <clinit>()V
+    .locals 1
+
+    new-instance v0, Ly5/c0;
+
+    invoke-direct {v0}, Ly5/c0;-><init>()V
+
+    sput-object v0, Ly5/c0;->g:Ly5/c0;
+
+    return-void
+.end method
+
+.method public constructor <init>()V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    iput-object p1, p0, Ly5/c0;->f:Lcom/google/firebase/iid/FirebaseInstanceId;
-
-    iput-object p2, p0, Ly5/c0;->g:Ljava/lang/String;
-
-    iput-object p3, p0, Ly5/c0;->h:Ljava/lang/String;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final d(Lc4/f;)Ljava/lang/Object;
-    .locals 2
+.method public final execute(Ljava/lang/Runnable;)V
+    .locals 1
 
-    iget-object p1, p0, Ly5/c0;->f:Lcom/google/firebase/iid/FirebaseInstanceId;
+    sget v0, Ly5/a0;->a:I
 
-    iget-object v0, p0, Ly5/c0;->g:Ljava/lang/String;
+    invoke-interface {p1}, Ljava/lang/Runnable;->run()V
 
-    iget-object v1, p0, Ly5/c0;->h:Ljava/lang/String;
-
-    invoke-virtual {p1, v0, v1}, Lcom/google/firebase/iid/FirebaseInstanceId;->d(Ljava/lang/String;Ljava/lang/String;)Lc4/f;
-
-    move-result-object p1
-
-    return-object p1
+    return-void
 .end method

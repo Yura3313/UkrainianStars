@@ -1,182 +1,318 @@
-.class public final synthetic Lk3/r8;
+.class public final Lk3/r8;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
-# interfaces
-.implements Lk3/tj0;
+
+# static fields
+.field public static final e:Lk3/o9;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/Comparator<",
+            "[B>;"
+        }
+    .end annotation
+.end field
 
 
 # instance fields
-.field public final synthetic a:I
+.field public final a:Ljava/util/ArrayList;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/List<",
+            "[B>;"
+        }
+    .end annotation
+.end field
 
-.field public final b:Ljava/lang/Object;
+.field public final b:Ljava/util/ArrayList;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/List<",
+            "[B>;"
+        }
+    .end annotation
+.end field
+
+.field public c:I
+
+.field public final d:I
 
 
 # direct methods
-.method public synthetic constructor <init>(Ljava/lang/Object;I)V
-    .locals 0
+.method public static constructor <clinit>()V
+    .locals 1
 
-    iput p2, p0, Lk3/r8;->a:I
+    new-instance v0, Lk3/o9;
 
-    iput-object p1, p0, Lk3/r8;->b:Ljava/lang/Object;
+    invoke-direct {v0}, Lk3/o9;-><init>()V
 
+    sput-object v0, Lk3/r8;->e:Lk3/o9;
+
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .locals 2
+
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    new-instance v0, Ljava/util/ArrayList;
+
+    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
+
+    iput-object v0, p0, Lk3/r8;->a:Ljava/util/ArrayList;
+
+    .line 3
+    new-instance v0, Ljava/util/ArrayList;
+
+    const/16 v1, 0x40
+
+    invoke-direct {v0, v1}, Ljava/util/ArrayList;-><init>(I)V
+
+    iput-object v0, p0, Lk3/r8;->b:Ljava/util/ArrayList;
+
+    const/4 v0, 0x0
+
+    .line 4
+    iput v0, p0, Lk3/r8;->c:I
+
+    const/16 v0, 0x1000
+
+    .line 5
+    iput v0, p0, Lk3/r8;->d:I
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 6
+.method public final declared-synchronized a([B)V
+    .locals 2
 
-    iget v0, p0, Lk3/r8;->a:I
+    monitor-enter p0
 
-    packed-switch v0, :pswitch_data_0
-
-    goto :goto_1
+    if-eqz p1, :cond_2
 
     .line 1
-    :pswitch_0
-    iget-object v0, p0, Lk3/r8;->b:Ljava/lang/Object;
+    :try_start_0
+    array-length v0, p1
 
-    check-cast v0, Lk3/s8;
+    iget v1, p0, Lk3/r8;->d:I
 
-    check-cast p1, Lorg/json/JSONObject;
-
-    .line 2
-    iget-object v1, v0, Lk3/s8;->b:Landroid/content/Context;
-
-    sget-object v2, Lk3/q;->a:Lk3/k;
-
-    .line 3
-    sget-object v2, Lk3/l51;->j:Lk3/l51;
-
-    iget-object v2, v2, Lk3/l51;->e:Lk3/o;
-
-    const/4 v2, 0x0
-
-    const-string v3, "google_ads_flags"
-
-    .line 4
-    invoke-virtual {v1, v3, v2}, Landroid/content/Context;->getSharedPreferences(Ljava/lang/String;I)Landroid/content/SharedPreferences;
-
-    move-result-object v1
-
-    .line 5
-    invoke-interface {v1}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
-
-    move-result-object v1
-
-    .line 6
-    sget-object v2, Lk3/l51;->j:Lk3/l51;
-
-    iget-object v2, v2, Lk3/l51;->d:Lk3/m;
-
-    .line 7
-    iget-object v2, v2, Lk3/m;->a:Ljava/util/ArrayList;
-
-    invoke-virtual {v2}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
-
-    move-result-object v2
-
-    :cond_0
-    :goto_0
-    invoke-interface {v2}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v3
-
-    if-eqz v3, :cond_1
-
-    invoke-interface {v2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v3
-
-    check-cast v3, Lk3/h;
-
-    .line 8
-    iget v4, v3, Lk3/h;->a:I
-
-    const/4 v5, 0x1
-
-    if-ne v4, v5, :cond_0
-
-    .line 9
-    invoke-virtual {v3, p1}, Lk3/h;->h(Lorg/json/JSONObject;)Ljava/lang/Object;
-
-    move-result-object v4
-
-    invoke-virtual {v3, v1, v4}, Lk3/h;->g(Landroid/content/SharedPreferences$Editor;Ljava/lang/Object;)V
+    if-le v0, v1, :cond_0
 
     goto :goto_0
 
+    .line 2
+    :cond_0
+    iget-object v0, p0, Lk3/r8;->a:Ljava/util/ArrayList;
+
+    invoke-virtual {v0, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    .line 3
+    iget-object v0, p0, Lk3/r8;->b:Ljava/util/ArrayList;
+
+    sget-object v1, Lk3/r8;->e:Lk3/o9;
+
+    invoke-static {v0, p1, v1}, Ljava/util/Collections;->binarySearch(Ljava/util/List;Ljava/lang/Object;Ljava/util/Comparator;)I
+
+    move-result v0
+
+    if-gez v0, :cond_1
+
+    neg-int v0, v0
+
+    add-int/lit8 v0, v0, -0x1
+
+    .line 4
     :cond_1
-    if-eqz p1, :cond_2
+    iget-object v1, p0, Lk3/r8;->b:Ljava/util/ArrayList;
 
-    .line 10
-    invoke-virtual {p1}, Lorg/json/JSONObject;->toString()Ljava/lang/String;
+    invoke-virtual {v1, v0, p1}, Ljava/util/ArrayList;->add(ILjava/lang/Object;)V
 
-    move-result-object p1
+    .line 5
+    iget v0, p0, Lk3/r8;->c:I
 
-    const-string v2, "flag_configuration"
+    array-length p1, p1
 
-    invoke-interface {v1, v2, p1}, Landroid/content/SharedPreferences$Editor;->putString(Ljava/lang/String;Ljava/lang/String;)Landroid/content/SharedPreferences$Editor;
+    add-int/2addr v0, p1
 
-    .line 11
+    iput v0, p0, Lk3/r8;->c:I
+
+    .line 6
+    invoke-virtual {p0}, Lk3/r8;->c()V
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 7
+    monitor-exit p0
+
+    return-void
+
+    :catchall_0
+    move-exception p1
+
+    monitor-exit p0
+
+    throw p1
+
+    .line 8
     :cond_2
-    sget-object p1, Lk3/l51;->j:Lk3/l51;
+    :goto_0
+    monitor-exit p0
 
-    iget-object p1, p1, Lk3/l51;->e:Lk3/o;
+    return-void
+.end method
 
-    .line 12
-    invoke-interface {v1}, Landroid/content/SharedPreferences$Editor;->commit()Z
+.method public final declared-synchronized b(I)[B
+    .locals 3
 
-    .line 13
-    iget-object p1, v0, Lk3/s8;->c:Landroid/content/SharedPreferences;
+    monitor-enter p0
 
-    .line 14
-    invoke-interface {p1}, Landroid/content/SharedPreferences;->edit()Landroid/content/SharedPreferences$Editor;
+    const/4 v0, 0x0
 
-    move-result-object p1
+    .line 1
+    :goto_0
+    :try_start_0
+    iget-object v1, p0, Lk3/r8;->b:Ljava/util/ArrayList;
 
-    .line 15
-    sget-object v0, Li1/o;->B:Li1/o;
+    invoke-virtual {v1}, Ljava/util/ArrayList;->size()I
 
-    iget-object v0, v0, Li1/o;->j:Ll2/c;
+    move-result v1
 
-    .line 16
-    invoke-interface {v0}, Ll2/c;->a()J
+    if-ge v0, v1, :cond_1
 
-    move-result-wide v0
+    .line 2
+    iget-object v1, p0, Lk3/r8;->b:Ljava/util/ArrayList;
 
-    const-string v2, "js_last_update"
+    invoke-virtual {v1, v0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
-    invoke-interface {p1, v2, v0, v1}, Landroid/content/SharedPreferences$Editor;->putLong(Ljava/lang/String;J)Landroid/content/SharedPreferences$Editor;
+    move-result-object v1
 
-    move-result-object p1
+    check-cast v1, [B
 
-    .line 17
-    invoke-interface {p1}, Landroid/content/SharedPreferences$Editor;->apply()V
+    .line 3
+    array-length v2, v1
 
-    const/4 p1, 0x0
+    if-lt v2, p1, :cond_0
+
+    .line 4
+    iget p1, p0, Lk3/r8;->c:I
+
+    array-length v2, v1
+
+    sub-int/2addr p1, v2
+
+    iput p1, p0, Lk3/r8;->c:I
+
+    .line 5
+    iget-object p1, p0, Lk3/r8;->b:Ljava/util/ArrayList;
+
+    invoke-virtual {p1, v0}, Ljava/util/ArrayList;->remove(I)Ljava/lang/Object;
+
+    .line 6
+    iget-object p1, p0, Lk3/r8;->a:Ljava/util/ArrayList;
+
+    invoke-virtual {p1, v1}, Ljava/util/ArrayList;->remove(Ljava/lang/Object;)Z
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 7
+    monitor-exit p0
+
+    return-object v1
+
+    :cond_0
+    add-int/lit8 v0, v0, 0x1
+
+    goto :goto_0
+
+    .line 8
+    :cond_1
+    :try_start_1
+    new-array p1, p1, [B
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    monitor-exit p0
 
     return-object p1
 
-    .line 18
+    :catchall_0
+    move-exception p1
+
+    monitor-exit p0
+
+    goto :goto_2
+
     :goto_1
-    iget-object p1, p0, Lk3/r8;->b:Ljava/lang/Object;
+    throw p1
 
-    check-cast p1, Lk3/rm;
+    :goto_2
+    goto :goto_1
+.end method
 
-    .line 19
-    invoke-virtual {p1}, Lk3/rm;->v()Lk3/zm;
+.method public final declared-synchronized c()V
+    .locals 2
 
-    move-result-object p1
+    monitor-enter p0
 
-    return-object p1
+    .line 1
+    :goto_0
+    :try_start_0
+    iget v0, p0, Lk3/r8;->c:I
 
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+    iget v1, p0, Lk3/r8;->d:I
+
+    if-le v0, v1, :cond_0
+
+    .line 2
+    iget-object v0, p0, Lk3/r8;->a:Ljava/util/ArrayList;
+
+    const/4 v1, 0x0
+
+    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->remove(I)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, [B
+
+    .line 3
+    iget-object v1, p0, Lk3/r8;->b:Ljava/util/ArrayList;
+
+    invoke-virtual {v1, v0}, Ljava/util/ArrayList;->remove(Ljava/lang/Object;)Z
+
+    .line 4
+    iget v1, p0, Lk3/r8;->c:I
+
+    array-length v0, v0
+
+    sub-int/2addr v1, v0
+
+    iput v1, p0, Lk3/r8;->c:I
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    goto :goto_0
+
+    .line 5
+    :cond_0
+    monitor-exit p0
+
+    return-void
+
+    :catchall_0
+    move-exception v0
+
+    monitor-exit p0
+
+    goto :goto_2
+
+    :goto_1
+    throw v0
+
+    :goto_2
+    goto :goto_1
 .end method

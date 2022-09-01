@@ -1365,37 +1365,37 @@
 
     .line 2
     :cond_0
-    sget-object v0, Lcom/supercell/websocket/proxy/protocol/notifications/store/IdShopItemStatus$b;->j:Lcom/supercell/websocket/proxy/protocol/notifications/store/IdShopItemStatus$b;
+    sget-object v0, Lcom/supercell/websocket/proxy/protocol/notifications/store/IdShopItemStatus$b;->k:Lcom/supercell/websocket/proxy/protocol/notifications/store/IdShopItemStatus$b;
 
     goto :goto_0
 
     .line 3
     :cond_1
-    sget-object v0, Lcom/supercell/websocket/proxy/protocol/notifications/store/IdShopItemStatus$b;->i:Lcom/supercell/websocket/proxy/protocol/notifications/store/IdShopItemStatus$b;
+    sget-object v0, Lcom/supercell/websocket/proxy/protocol/notifications/store/IdShopItemStatus$b;->j:Lcom/supercell/websocket/proxy/protocol/notifications/store/IdShopItemStatus$b;
 
     goto :goto_0
 
     .line 4
     :cond_2
-    sget-object v0, Lcom/supercell/websocket/proxy/protocol/notifications/store/IdShopItemStatus$b;->h:Lcom/supercell/websocket/proxy/protocol/notifications/store/IdShopItemStatus$b;
+    sget-object v0, Lcom/supercell/websocket/proxy/protocol/notifications/store/IdShopItemStatus$b;->i:Lcom/supercell/websocket/proxy/protocol/notifications/store/IdShopItemStatus$b;
 
     goto :goto_0
 
     .line 5
     :cond_3
-    sget-object v0, Lcom/supercell/websocket/proxy/protocol/notifications/store/IdShopItemStatus$b;->g:Lcom/supercell/websocket/proxy/protocol/notifications/store/IdShopItemStatus$b;
+    sget-object v0, Lcom/supercell/websocket/proxy/protocol/notifications/store/IdShopItemStatus$b;->h:Lcom/supercell/websocket/proxy/protocol/notifications/store/IdShopItemStatus$b;
 
     goto :goto_0
 
     .line 6
     :cond_4
-    sget-object v0, Lcom/supercell/websocket/proxy/protocol/notifications/store/IdShopItemStatus$b;->f:Lcom/supercell/websocket/proxy/protocol/notifications/store/IdShopItemStatus$b;
+    sget-object v0, Lcom/supercell/websocket/proxy/protocol/notifications/store/IdShopItemStatus$b;->g:Lcom/supercell/websocket/proxy/protocol/notifications/store/IdShopItemStatus$b;
 
     goto :goto_0
 
     .line 7
     :cond_5
-    sget-object v0, Lcom/supercell/websocket/proxy/protocol/notifications/store/IdShopItemStatus$b;->k:Lcom/supercell/websocket/proxy/protocol/notifications/store/IdShopItemStatus$b;
+    sget-object v0, Lcom/supercell/websocket/proxy/protocol/notifications/store/IdShopItemStatus$b;->l:Lcom/supercell/websocket/proxy/protocol/notifications/store/IdShopItemStatus$b;
 
     :goto_0
     return-object v0

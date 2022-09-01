@@ -3,30 +3,30 @@
 
 
 # instance fields
-.field public final synthetic g:I
+.field public final synthetic h:I
 
-.field public final synthetic h:Ljava/lang/String;
+.field public final synthetic i:Ljava/lang/String;
 
-.field public final synthetic i:Lcom/google/android/play/core/tasks/i;
+.field public final synthetic j:Lcom/google/android/play/core/tasks/i;
 
-.field public final synthetic j:I
+.field public final synthetic k:I
 
-.field public final synthetic k:Lcom/google/android/play/core/assetpacks/o;
+.field public final synthetic l:Lcom/google/android/play/core/assetpacks/o;
 
 
 # direct methods
 .method public constructor <init>(Lcom/google/android/play/core/assetpacks/o;Lcom/google/android/play/core/tasks/i;ILjava/lang/String;Lcom/google/android/play/core/tasks/i;I)V
     .locals 0
 
-    iput-object p1, p0, Lcom/google/android/play/core/assetpacks/e;->k:Lcom/google/android/play/core/assetpacks/o;
+    iput-object p1, p0, Lcom/google/android/play/core/assetpacks/e;->l:Lcom/google/android/play/core/assetpacks/o;
 
-    iput p3, p0, Lcom/google/android/play/core/assetpacks/e;->g:I
+    iput p3, p0, Lcom/google/android/play/core/assetpacks/e;->h:I
 
-    iput-object p4, p0, Lcom/google/android/play/core/assetpacks/e;->h:Ljava/lang/String;
+    iput-object p4, p0, Lcom/google/android/play/core/assetpacks/e;->i:Ljava/lang/String;
 
-    iput-object p5, p0, Lcom/google/android/play/core/assetpacks/e;->i:Lcom/google/android/play/core/tasks/i;
+    iput-object p5, p0, Lcom/google/android/play/core/assetpacks/e;->j:Lcom/google/android/play/core/tasks/i;
 
-    iput p6, p0, Lcom/google/android/play/core/assetpacks/e;->j:I
+    iput p6, p0, Lcom/google/android/play/core/assetpacks/e;->k:I
 
     invoke-direct {p0, p2}, La5/c;-><init>(Lcom/google/android/play/core/tasks/i;)V
 
@@ -39,7 +39,7 @@
     .locals 11
 
     :try_start_0
-    iget-object v0, p0, Lcom/google/android/play/core/assetpacks/e;->k:Lcom/google/android/play/core/assetpacks/o;
+    iget-object v0, p0, Lcom/google/android/play/core/assetpacks/e;->l:Lcom/google/android/play/core/assetpacks/o;
 
     .line 1
     iget-object v1, v0, Lcom/google/android/play/core/assetpacks/o;->c:La5/l;
@@ -54,9 +54,9 @@
     iget-object v0, v0, Lcom/google/android/play/core/assetpacks/o;->a:Ljava/lang/String;
 
     .line 5
-    iget v2, p0, Lcom/google/android/play/core/assetpacks/e;->g:I
+    iget v2, p0, Lcom/google/android/play/core/assetpacks/e;->h:I
 
-    iget-object v3, p0, Lcom/google/android/play/core/assetpacks/e;->h:Ljava/lang/String;
+    iget-object v3, p0, Lcom/google/android/play/core/assetpacks/e;->i:Ljava/lang/String;
 
     .line 6
     new-instance v4, Landroid/os/Bundle;
@@ -79,15 +79,15 @@
 
     new-instance v3, Lcom/google/android/play/core/assetpacks/n;
 
-    iget-object v6, p0, Lcom/google/android/play/core/assetpacks/e;->k:Lcom/google/android/play/core/assetpacks/o;
+    iget-object v6, p0, Lcom/google/android/play/core/assetpacks/e;->l:Lcom/google/android/play/core/assetpacks/o;
 
-    iget-object v7, p0, Lcom/google/android/play/core/assetpacks/e;->i:Lcom/google/android/play/core/tasks/i;
+    iget-object v7, p0, Lcom/google/android/play/core/assetpacks/e;->j:Lcom/google/android/play/core/tasks/i;
 
-    iget v8, p0, Lcom/google/android/play/core/assetpacks/e;->g:I
+    iget v8, p0, Lcom/google/android/play/core/assetpacks/e;->h:I
 
-    iget-object v9, p0, Lcom/google/android/play/core/assetpacks/e;->h:Ljava/lang/String;
+    iget-object v9, p0, Lcom/google/android/play/core/assetpacks/e;->i:Ljava/lang/String;
 
-    iget v10, p0, Lcom/google/android/play/core/assetpacks/e;->j:I
+    iget v10, p0, Lcom/google/android/play/core/assetpacks/e;->k:I
 
     move-object v5, v3
 

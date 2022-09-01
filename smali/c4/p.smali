@@ -7,18 +7,18 @@
 
 
 # instance fields
-.field public final synthetic f:Lc4/f;
+.field public final synthetic g:Lc4/f;
 
-.field public final synthetic g:Lc4/o;
+.field public final synthetic h:Lc4/o;
 
 
 # direct methods
 .method public constructor <init>(Lc4/o;Lc4/f;)V
     .locals 0
 
-    iput-object p1, p0, Lc4/p;->g:Lc4/o;
+    iput-object p1, p0, Lc4/p;->h:Lc4/o;
 
-    iput-object p2, p0, Lc4/p;->f:Lc4/f;
+    iput-object p2, p0, Lc4/p;->g:Lc4/f;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -31,25 +31,25 @@
     .locals 3
 
     .line 1
-    iget-object v0, p0, Lc4/p;->g:Lc4/o;
+    iget-object v0, p0, Lc4/p;->h:Lc4/o;
 
     .line 2
-    iget-object v0, v0, Lc4/o;->g:Ljava/lang/Object;
+    iget-object v0, v0, Lc4/o;->h:Ljava/lang/Object;
 
     .line 3
     monitor-enter v0
 
     .line 4
     :try_start_0
-    iget-object v1, p0, Lc4/p;->g:Lc4/o;
+    iget-object v1, p0, Lc4/p;->h:Lc4/o;
 
     .line 5
-    iget-object v1, v1, Lc4/o;->h:Lc4/c;
+    iget-object v1, v1, Lc4/o;->i:Lc4/c;
 
     if-eqz v1, :cond_0
 
     .line 6
-    iget-object v2, p0, Lc4/p;->f:Lc4/f;
+    iget-object v2, p0, Lc4/p;->g:Lc4/f;
 
     invoke-interface {v1, v2}, Lc4/c;->a(Lc4/f;)V
 

@@ -7,14 +7,14 @@
 
 
 # instance fields
-.field public final synthetic f:Lid/e$f;
+.field public final synthetic g:Lid/e$f;
 
 
 # direct methods
 .method public constructor <init>(Lid/e$f;)V
     .locals 0
 
-    iput-object p1, p0, Lid/f;->f:Lid/e$f;
+    iput-object p1, p0, Lid/f;->g:Lid/e$f;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

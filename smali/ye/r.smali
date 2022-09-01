@@ -4,7 +4,113 @@
 
 
 # direct methods
-.method public static A(Ljava/lang/CharSequence;[Ljava/lang/String;ZII)Lxe/d;
+.method public static A(Ljava/lang/CharSequence;[Ljava/lang/String;II)Ljava/util/List;
+    .locals 3
+
+    and-int/lit8 p3, p3, 0x4
+
+    const/4 v0, 0x0
+
+    if-eqz p3, :cond_0
+
+    const/4 p2, 0x0
+
+    :cond_0
+    const-string p3, "$this$split"
+
+    .line 1
+    invoke-static {p0, p3}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 2
+    array-length p3, p1
+
+    const/4 v1, 0x1
+
+    if-ne p3, v1, :cond_2
+
+    .line 3
+    aget-object p3, p1, v0
+
+    .line 4
+    invoke-interface {p3}, Ljava/lang/CharSequence;->length()I
+
+    move-result v2
+
+    if-nez v2, :cond_1
+
+    goto :goto_0
+
+    :cond_1
+    const/4 v1, 0x0
+
+    :goto_0
+    if-nez v1, :cond_2
+
+    .line 5
+    invoke-static {p0, p3, v0, p2}, Lye/r;->z(Ljava/lang/CharSequence;Ljava/lang/String;ZI)Ljava/util/List;
+
+    move-result-object p0
+
+    goto :goto_2
+
+    .line 6
+    :cond_2
+    invoke-static {p0, p1, v0, p2}, Lye/r;->w(Ljava/lang/CharSequence;[Ljava/lang/String;ZI)Lxe/d;
+
+    move-result-object p1
+
+    .line 7
+    new-instance p2, Lxe/i;
+
+    invoke-direct {p2, p1}, Lxe/i;-><init>(Lxe/d;)V
+
+    .line 8
+    new-instance p1, Ljava/util/ArrayList;
+
+    const/16 p3, 0xa
+
+    invoke-static {p2, p3}, Lje/f;->l(Ljava/lang/Iterable;I)I
+
+    move-result p3
+
+    invoke-direct {p1, p3}, Ljava/util/ArrayList;-><init>(I)V
+
+    .line 9
+    invoke-virtual {p2}, Lxe/i;->iterator()Ljava/util/Iterator;
+
+    move-result-object p2
+
+    :goto_1
+    invoke-interface {p2}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result p3
+
+    if-eqz p3, :cond_3
+
+    invoke-interface {p2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object p3
+
+    .line 10
+    check-cast p3, Lve/c;
+
+    .line 11
+    invoke-static {p0, p3}, Lye/r;->C(Ljava/lang/CharSequence;Lve/c;)Ljava/lang/String;
+
+    move-result-object p3
+
+    invoke-interface {p1, p3}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
+
+    goto :goto_1
+
+    :cond_3
+    move-object p0, p1
+
+    :goto_2
+    return-object p0
+.end method
+
+.method public static B(Ljava/lang/CharSequence;[Ljava/lang/String;ZII)Lxe/d;
     .locals 2
 
     and-int/lit8 v0, p4, 0x2
@@ -26,10 +132,10 @@
     const-string p4, "$this$splitToSequence"
 
     .line 1
-    invoke-static {p0, p4}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, p4}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 2
-    invoke-static {p0, p1, p2, p3}, Lye/r;->v(Ljava/lang/CharSequence;[Ljava/lang/String;ZI)Lxe/d;
+    invoke-static {p0, p1, p2, p3}, Lye/r;->w(Ljava/lang/CharSequence;[Ljava/lang/String;ZI)Lxe/d;
 
     move-result-object p1
 
@@ -37,26 +143,26 @@
 
     invoke-direct {p2, p0}, Lye/q;-><init>(Ljava/lang/CharSequence;)V
 
-    invoke-static {p1, p2}, Lxe/k;->f(Lxe/d;Lre/l;)Lxe/d;
+    invoke-static {p1, p2}, Lxe/k;->e(Lxe/d;Lre/l;)Lxe/d;
 
     move-result-object p0
 
     return-object p0
 .end method
 
-.method public static final B(Ljava/lang/CharSequence;Lve/c;)Ljava/lang/String;
+.method public static final C(Ljava/lang/CharSequence;Lve/c;)Ljava/lang/String;
     .locals 1
 
     const-string v0, "$this$substring"
 
-    invoke-static {p0, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "range"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
-    iget v0, p1, Lve/a;->f:I
+    iget v0, p1, Lve/a;->g:I
 
     .line 2
     invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -69,7 +175,7 @@
     move-result v0
 
     .line 4
-    iget p1, p1, Lve/a;->g:I
+    iget p1, p1, Lve/a;->h:I
 
     .line 5
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -94,20 +200,20 @@
     return-object p0
 .end method
 
-.method public static C(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+.method public static D(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .locals 2
 
     const-string v0, "delimiter"
 
     .line 1
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/4 v0, 0x6
 
     const/4 v1, 0x0
 
     .line 2
-    invoke-static {p0, p1, v1, v1, v0}, Lye/r;->r(Ljava/lang/CharSequence;Ljava/lang/String;IZI)I
+    invoke-static {p0, p1, v1, v1, v0}, Lye/r;->s(Ljava/lang/CharSequence;Ljava/lang/String;IZI)I
 
     move-result v0
 
@@ -135,26 +241,26 @@
 
     const-string p1, "(this as java.lang.Strin\u2026ing(startIndex, endIndex)"
 
-    invoke-static {p0, p1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, p1}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     :goto_0
     return-object p0
 .end method
 
-.method public static D(Ljava/lang/String;)Ljava/lang/String;
+.method public static E(Ljava/lang/String;)Ljava/lang/String;
     .locals 2
 
     const-string v0, "$this$substringAfterLast"
 
     .line 1
-    invoke-static {p0, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "missingDelimiterValue"
 
-    invoke-static {p0, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 2
-    invoke-static {p0}, Lye/r;->n(Ljava/lang/CharSequence;)I
+    invoke-static {p0}, Lye/r;->o(Ljava/lang/CharSequence;)I
 
     move-result v0
 
@@ -185,13 +291,13 @@
 
     const-string v0, "(this as java.lang.Strin\u2026ing(startIndex, endIndex)"
 
-    invoke-static {p0, v0}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     :goto_0
     return-object p0
 .end method
 
-.method public static final E(Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
+.method public static final F(Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
     .locals 5
 
     .line 1
@@ -226,7 +332,7 @@
     move-result v4
 
     .line 3
-    invoke-static {v4}, Lcom/google/android/play/core/assetpacks/o2;->h(C)Z
+    invoke-static {v4}, Lt3/h;->f(C)Z
 
     move-result v4
 
@@ -265,12 +371,12 @@
     return-object p0
 .end method
 
-.method public static final varargs F(Ljava/lang/String;[C)Ljava/lang/String;
+.method public static final varargs G(Ljava/lang/String;[C)Ljava/lang/String;
     .locals 2
 
     const-string v0, "$this$trimEnd"
 
-    invoke-static {p0, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     invoke-interface {p0}, Ljava/lang/CharSequence;->length()I
@@ -288,7 +394,7 @@
     move-result v1
 
     .line 3
-    invoke-static {p1, v1}, Lje/e;->c([CC)Z
+    invoke-static {p1, v1}, Lje/e;->f([CC)Z
 
     move-result v1
 
@@ -317,12 +423,12 @@
     return-object p0
 .end method
 
-.method public static final varargs G(Ljava/lang/String;[C)Ljava/lang/String;
+.method public static final varargs H(Ljava/lang/String;[C)Ljava/lang/String;
     .locals 3
 
     const-string v0, "$this$trimStart"
 
-    invoke-static {p0, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     invoke-interface {p0}, Ljava/lang/CharSequence;->length()I
@@ -340,7 +446,7 @@
     move-result v2
 
     .line 3
-    invoke-static {p1, v2}, Lje/e;->c([CC)Z
+    invoke-static {p1, v2}, Lje/e;->f([CC)Z
 
     move-result v2
 
@@ -374,16 +480,16 @@
     return-object p0
 .end method
 
-.method public static final m(Ljava/lang/CharSequence;Ljava/lang/CharSequence;Z)Z
+.method public static final n(Ljava/lang/CharSequence;Ljava/lang/CharSequence;Z)Z
     .locals 8
 
     const-string v0, "$this$contains"
 
-    invoke-static {p0, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "other"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     instance-of v0, p1, Ljava/lang/String;
@@ -397,7 +503,7 @@
 
     const/4 v0, 0x2
 
-    invoke-static {p0, p1, v1, p2, v0}, Lye/r;->r(Ljava/lang/CharSequence;Ljava/lang/String;IZI)I
+    invoke-static {p0, p1, v1, p2, v0}, Lye/r;->s(Ljava/lang/CharSequence;Ljava/lang/String;IZI)I
 
     move-result p0
 
@@ -422,7 +528,7 @@
     move v6, p2
 
     .line 4
-    invoke-static/range {v2 .. v7}, Lye/r;->p(Ljava/lang/CharSequence;Ljava/lang/CharSequence;IIZZ)I
+    invoke-static/range {v2 .. v7}, Lye/r;->q(Ljava/lang/CharSequence;Ljava/lang/CharSequence;IIZZ)I
 
     move-result p0
 
@@ -435,12 +541,12 @@
     return v1
 .end method
 
-.method public static final n(Ljava/lang/CharSequence;)I
+.method public static final o(Ljava/lang/CharSequence;)I
     .locals 1
 
     const-string v0, "$this$lastIndex"
 
-    invoke-static {p0, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-interface {p0}, Ljava/lang/CharSequence;->length()I
 
@@ -451,16 +557,16 @@
     return p0
 .end method
 
-.method public static final o(Ljava/lang/CharSequence;Ljava/lang/String;IZ)I
+.method public static final p(Ljava/lang/CharSequence;Ljava/lang/String;IZ)I
     .locals 6
 
     const-string v0, "$this$indexOf"
 
-    invoke-static {p0, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "string"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     if-nez p3, :cond_1
 
@@ -499,7 +605,7 @@
     move v4, p3
 
     .line 4
-    invoke-static/range {v0 .. v5}, Lye/r;->p(Ljava/lang/CharSequence;Ljava/lang/CharSequence;IIZZ)I
+    invoke-static/range {v0 .. v5}, Lye/r;->q(Ljava/lang/CharSequence;Ljava/lang/CharSequence;IIZZ)I
 
     move-result p0
 
@@ -507,7 +613,7 @@
     return p0
 .end method
 
-.method public static final p(Ljava/lang/CharSequence;Ljava/lang/CharSequence;IIZZ)I
+.method public static final q(Ljava/lang/CharSequence;Ljava/lang/CharSequence;IIZZ)I
     .locals 4
 
     const/4 v0, 0x0
@@ -539,7 +645,7 @@
 
     .line 2
     :cond_2
-    invoke-static {p0}, Lye/r;->n(Ljava/lang/CharSequence;)I
+    invoke-static {p0}, Lye/r;->o(Ljava/lang/CharSequence;)I
 
     move-result p5
 
@@ -569,13 +675,13 @@
     if-eqz p2, :cond_7
 
     .line 5
-    iget p2, p5, Lve/a;->f:I
+    iget p2, p5, Lve/a;->g:I
 
     .line 6
-    iget p3, p5, Lve/a;->g:I
+    iget p3, p5, Lve/a;->h:I
 
     .line 7
-    iget p5, p5, Lve/a;->h:I
+    iget p5, p5, Lve/a;->i:I
 
     if-ltz p5, :cond_5
 
@@ -600,7 +706,7 @@
 
     move-result v3
 
-    invoke-static {v0, v2, p2, v3, p4}, Lye/n;->j(Ljava/lang/String;Ljava/lang/String;IIZ)Z
+    invoke-static {v0, v2, p2, v3, p4}, Lye/n;->k(Ljava/lang/String;Ljava/lang/String;IIZ)Z
 
     move-result v0
 
@@ -617,13 +723,13 @@
 
     .line 9
     :cond_7
-    iget p2, p5, Lve/a;->f:I
+    iget p2, p5, Lve/a;->g:I
 
     .line 10
-    iget p3, p5, Lve/a;->g:I
+    iget p3, p5, Lve/a;->h:I
 
     .line 11
-    iget p5, p5, Lve/a;->h:I
+    iget p5, p5, Lve/a;->i:I
 
     if-ltz p5, :cond_8
 
@@ -640,7 +746,7 @@
 
     move-result v0
 
-    invoke-static {p1, p0, p2, v0, p4}, Lye/r;->w(Ljava/lang/CharSequence;Ljava/lang/CharSequence;IIZ)Z
+    invoke-static {p1, p0, p2, v0, p4}, Lye/r;->x(Ljava/lang/CharSequence;Ljava/lang/CharSequence;IIZ)Z
 
     move-result v0
 
@@ -659,7 +765,7 @@
     return v1
 .end method
 
-.method public static q(Ljava/lang/CharSequence;CII)I
+.method public static r(Ljava/lang/CharSequence;CII)I
     .locals 1
 
     and-int/lit8 p3, p3, 0x2
@@ -674,7 +780,7 @@
     const-string p3, "$this$indexOf"
 
     .line 1
-    invoke-static {p0, p3}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, p3}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 2
     instance-of p3, p0, Ljava/lang/String;
@@ -688,7 +794,7 @@
     aput-char p1, p3, v0
 
     .line 3
-    invoke-static {p0, p3, p2, v0}, Lye/r;->s(Ljava/lang/CharSequence;[CIZ)I
+    invoke-static {p0, p3, p2, v0}, Lye/r;->t(Ljava/lang/CharSequence;[CIZ)I
 
     move-result p0
 
@@ -706,7 +812,7 @@
     return p0
 .end method
 
-.method public static synthetic r(Ljava/lang/CharSequence;Ljava/lang/String;IZI)I
+.method public static synthetic s(Ljava/lang/CharSequence;Ljava/lang/String;IZI)I
     .locals 2
 
     and-int/lit8 v0, p4, 0x2
@@ -725,23 +831,23 @@
     const/4 p3, 0x0
 
     :cond_1
-    invoke-static {p0, p1, p2, p3}, Lye/r;->o(Ljava/lang/CharSequence;Ljava/lang/String;IZ)I
+    invoke-static {p0, p1, p2, p3}, Lye/r;->p(Ljava/lang/CharSequence;Ljava/lang/String;IZ)I
 
     move-result p0
 
     return p0
 .end method
 
-.method public static final s(Ljava/lang/CharSequence;[CIZ)I
+.method public static final t(Ljava/lang/CharSequence;[CIZ)I
     .locals 7
 
     const-string v0, "$this$indexOfAny"
 
-    invoke-static {p0, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "chars"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/4 v0, 0x1
 
@@ -757,7 +863,7 @@
     if-eqz v1, :cond_0
 
     .line 2
-    invoke-static {p1}, Lje/e;->i([C)C
+    invoke-static {p1}, Lje/e;->l([C)C
 
     move-result p1
 
@@ -779,7 +885,7 @@
 
     .line 4
     :cond_1
-    invoke-static {p0}, Lye/r;->n(Ljava/lang/CharSequence;)I
+    invoke-static {p0}, Lye/r;->o(Ljava/lang/CharSequence;)I
 
     move-result v2
 
@@ -802,7 +908,7 @@
     aget-char v6, p1, v5
 
     .line 7
-    invoke-static {v6, v3, p3}, Lcom/google/android/play/core/assetpacks/o2;->g(CCZ)Z
+    invoke-static {v6, v3, p3}, Lt3/h;->e(CCZ)Z
 
     move-result v6
 
@@ -838,7 +944,7 @@
     return p0
 .end method
 
-.method public static t(Ljava/lang/CharSequence;Ljava/lang/String;I)I
+.method public static u(Ljava/lang/CharSequence;Ljava/lang/String;I)I
     .locals 6
 
     and-int/lit8 p2, p2, 0x2
@@ -846,7 +952,7 @@
     if-eqz p2, :cond_0
 
     .line 1
-    invoke-static {p0}, Lye/r;->n(Ljava/lang/CharSequence;)I
+    invoke-static {p0}, Lye/r;->o(Ljava/lang/CharSequence;)I
 
     move-result p2
 
@@ -865,11 +971,11 @@
     const-string p2, "$this$lastIndexOf"
 
     .line 2
-    invoke-static {p0, p2}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, p2}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string p2, "string"
 
-    invoke-static {p1, p2}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p2}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 3
     instance-of p2, p0, Ljava/lang/String;
@@ -885,7 +991,7 @@
     move-object v1, p1
 
     .line 4
-    invoke-static/range {v0 .. v5}, Lye/r;->p(Ljava/lang/CharSequence;Ljava/lang/CharSequence;IIZZ)I
+    invoke-static/range {v0 .. v5}, Lye/r;->q(Ljava/lang/CharSequence;Ljava/lang/CharSequence;IIZZ)I
 
     move-result p0
 
@@ -903,7 +1009,7 @@
     return p0
 .end method
 
-.method public static u(Ljava/lang/CharSequence;[CZI)Lxe/d;
+.method public static v(Ljava/lang/CharSequence;[CZI)Lxe/d;
     .locals 3
 
     const/4 v0, 0x0
@@ -962,7 +1068,7 @@
     throw p1
 .end method
 
-.method public static v(Ljava/lang/CharSequence;[Ljava/lang/String;ZI)Lxe/d;
+.method public static w(Ljava/lang/CharSequence;[Ljava/lang/String;ZI)Lxe/d;
     .locals 3
 
     const/4 v0, 0x0
@@ -987,7 +1093,7 @@
     const-string v1, "ArraysUtilJVM.asList(this)"
 
     .line 2
-    invoke-static {p1, v1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v1}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 3
     new-instance v1, Lye/b;
@@ -1031,16 +1137,16 @@
     throw p1
 .end method
 
-.method public static final w(Ljava/lang/CharSequence;Ljava/lang/CharSequence;IIZ)Z
+.method public static final x(Ljava/lang/CharSequence;Ljava/lang/CharSequence;IIZ)Z
     .locals 4
 
     const-string v0, "$this$regionMatchesImpl"
 
-    invoke-static {p0, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "other"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/4 v0, 0x0
 
@@ -1084,7 +1190,7 @@
 
     move-result v3
 
-    invoke-static {v2, v3, p4}, Lcom/google/android/play/core/assetpacks/o2;->g(CCZ)Z
+    invoke-static {v2, v3, p4}, Lt3/h;->e(CCZ)Z
 
     move-result v2
 
@@ -1107,7 +1213,7 @@
     return v0
 .end method
 
-.method public static final x(Ljava/lang/CharSequence;[CZI)Ljava/util/List;
+.method public static final y(Ljava/lang/CharSequence;[CZI)Ljava/util/List;
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -1122,7 +1228,7 @@
 
     const-string v0, "$this$split"
 
-    invoke-static {p0, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     array-length v0, p1
@@ -1140,7 +1246,7 @@
 
     move-result-object p1
 
-    invoke-static {p0, p1, p2, p3}, Lye/r;->y(Ljava/lang/CharSequence;Ljava/lang/String;ZI)Ljava/util/List;
+    invoke-static {p0, p1, p2, p3}, Lye/r;->z(Ljava/lang/CharSequence;Ljava/lang/String;ZI)Ljava/util/List;
 
     move-result-object p0
 
@@ -1148,7 +1254,7 @@
 
     .line 3
     :cond_0
-    invoke-static {p0, p1, p2, p3}, Lye/r;->u(Ljava/lang/CharSequence;[CZI)Lxe/d;
+    invoke-static {p0, p1, p2, p3}, Lye/r;->v(Ljava/lang/CharSequence;[CZI)Lxe/d;
 
     move-result-object p1
 
@@ -1162,7 +1268,7 @@
 
     const/16 p3, 0xa
 
-    invoke-static {p2, p3}, Lje/f;->q(Ljava/lang/Iterable;I)I
+    invoke-static {p2, p3}, Lje/f;->l(Ljava/lang/Iterable;I)I
 
     move-result p3
 
@@ -1188,7 +1294,7 @@
     check-cast p3, Lve/c;
 
     .line 8
-    invoke-static {p0, p3}, Lye/r;->B(Ljava/lang/CharSequence;Lve/c;)Ljava/lang/String;
+    invoke-static {p0, p3}, Lye/r;->C(Ljava/lang/CharSequence;Lve/c;)Ljava/lang/String;
 
     move-result-object p3
 
@@ -1200,7 +1306,7 @@
     return-object p1
 .end method
 
-.method public static final y(Ljava/lang/CharSequence;Ljava/lang/String;ZI)Ljava/util/List;
+.method public static final z(Ljava/lang/CharSequence;Ljava/lang/String;ZI)Ljava/util/List;
     .locals 7
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -1231,7 +1337,7 @@
     if-eqz v2, :cond_8
 
     .line 1
-    invoke-static {p0, p1, v0, p2}, Lye/r;->o(Ljava/lang/CharSequence;Ljava/lang/String;IZ)I
+    invoke-static {p0, p1, v0, p2}, Lye/r;->p(Ljava/lang/CharSequence;Ljava/lang/String;IZ)I
 
     move-result v2
 
@@ -1306,7 +1412,7 @@
 
     .line 6
     :cond_6
-    invoke-static {p0, p1, v0, p2}, Lye/r;->o(Ljava/lang/CharSequence;Ljava/lang/String;IZ)I
+    invoke-static {p0, p1, v0, p2}, Lye/r;->p(Ljava/lang/CharSequence;Ljava/lang/String;IZ)I
 
     move-result v2
 
@@ -1337,7 +1443,7 @@
 
     move-result-object p0
 
-    invoke-static {p0}, Lcom/android/billingclient/api/z;->h(Ljava/lang/Object;)Ljava/util/List;
+    invoke-static {p0}, Lcom/android/billingclient/api/y;->c(Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object p0
 
@@ -1378,110 +1484,4 @@
 
     :goto_6
     goto :goto_5
-.end method
-
-.method public static z(Ljava/lang/CharSequence;[Ljava/lang/String;II)Ljava/util/List;
-    .locals 3
-
-    and-int/lit8 p3, p3, 0x4
-
-    const/4 v0, 0x0
-
-    if-eqz p3, :cond_0
-
-    const/4 p2, 0x0
-
-    :cond_0
-    const-string p3, "$this$split"
-
-    .line 1
-    invoke-static {p0, p3}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 2
-    array-length p3, p1
-
-    const/4 v1, 0x1
-
-    if-ne p3, v1, :cond_2
-
-    .line 3
-    aget-object p3, p1, v0
-
-    .line 4
-    invoke-interface {p3}, Ljava/lang/CharSequence;->length()I
-
-    move-result v2
-
-    if-nez v2, :cond_1
-
-    goto :goto_0
-
-    :cond_1
-    const/4 v1, 0x0
-
-    :goto_0
-    if-nez v1, :cond_2
-
-    .line 5
-    invoke-static {p0, p3, v0, p2}, Lye/r;->y(Ljava/lang/CharSequence;Ljava/lang/String;ZI)Ljava/util/List;
-
-    move-result-object p0
-
-    goto :goto_2
-
-    .line 6
-    :cond_2
-    invoke-static {p0, p1, v0, p2}, Lye/r;->v(Ljava/lang/CharSequence;[Ljava/lang/String;ZI)Lxe/d;
-
-    move-result-object p1
-
-    .line 7
-    new-instance p2, Lxe/i;
-
-    invoke-direct {p2, p1}, Lxe/i;-><init>(Lxe/d;)V
-
-    .line 8
-    new-instance p1, Ljava/util/ArrayList;
-
-    const/16 p3, 0xa
-
-    invoke-static {p2, p3}, Lje/f;->q(Ljava/lang/Iterable;I)I
-
-    move-result p3
-
-    invoke-direct {p1, p3}, Ljava/util/ArrayList;-><init>(I)V
-
-    .line 9
-    invoke-virtual {p2}, Lxe/i;->iterator()Ljava/util/Iterator;
-
-    move-result-object p2
-
-    :goto_1
-    invoke-interface {p2}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result p3
-
-    if-eqz p3, :cond_3
-
-    invoke-interface {p2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object p3
-
-    .line 10
-    check-cast p3, Lve/c;
-
-    .line 11
-    invoke-static {p0, p3}, Lye/r;->B(Ljava/lang/CharSequence;Lve/c;)Ljava/lang/String;
-
-    move-result-object p3
-
-    invoke-interface {p1, p3}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
-
-    goto :goto_1
-
-    :cond_3
-    move-object p0, p1
-
-    :goto_2
-    return-object p0
 .end method

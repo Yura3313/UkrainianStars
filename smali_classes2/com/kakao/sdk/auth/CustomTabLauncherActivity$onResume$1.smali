@@ -1,5 +1,5 @@
 .class final synthetic Lcom/kakao/sdk/auth/CustomTabLauncherActivity$onResume$1;
-.super Lse/i;
+.super Lse/j;
 .source "CustomTabLauncherActivity.kt"
 
 
@@ -7,7 +7,7 @@
 .method public constructor <init>(Lcom/kakao/sdk/auth/CustomTabLauncherActivity;)V
     .locals 0
 
-    invoke-direct {p0, p1}, Lse/i;-><init>(Ljava/lang/Object;)V
+    invoke-direct {p0, p1}, Lse/j;-><init>(Ljava/lang/Object;)V
 
     return-void
 .end method
@@ -17,7 +17,7 @@
 .method public get()Ljava/lang/Object;
     .locals 1
 
-    iget-object v0, p0, Lse/b;->receiver:Ljava/lang/Object;
+    iget-object v0, p0, Lse/c;->receiver:Ljava/lang/Object;
 
     check-cast v0, Lcom/kakao/sdk/auth/CustomTabLauncherActivity;
 
@@ -41,7 +41,7 @@
 
     const-class v0, Lcom/kakao/sdk/auth/CustomTabLauncherActivity;
 
-    invoke-static {v0}, Lse/r;->a(Ljava/lang/Class;)Lwe/c;
+    invoke-static {v0}, Lse/s;->a(Ljava/lang/Class;)Lwe/c;
 
     move-result-object v0
 
@@ -59,7 +59,7 @@
 .method public set(Ljava/lang/Object;)V
     .locals 1
 
-    iget-object v0, p0, Lse/b;->receiver:Ljava/lang/Object;
+    iget-object v0, p0, Lse/c;->receiver:Ljava/lang/Object;
 
     check-cast v0, Lcom/kakao/sdk/auth/CustomTabLauncherActivity;
 

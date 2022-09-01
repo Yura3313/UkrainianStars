@@ -13,11 +13,11 @@
 
 
 # static fields
-.field public static final E:[Ljava/lang/String;
+.field public static final F:[Ljava/lang/String;
 
 
 # instance fields
-.field public D:I
+.field public E:I
 
 
 # direct methods
@@ -40,7 +40,7 @@
 
     aput-object v2, v0, v1
 
-    sput-object v0, Landroidx/transition/Visibility;->E:[Ljava/lang/String;
+    sput-object v0, Landroidx/transition/Visibility;->F:[Ljava/lang/String;
 
     return-void
 .end method
@@ -54,7 +54,7 @@
     const/4 v0, 0x3
 
     .line 2
-    iput v0, p0, Landroidx/transition/Visibility;->D:I
+    iput v0, p0, Landroidx/transition/Visibility;->E:I
 
     return-void
 .end method
@@ -73,7 +73,7 @@
     const/4 v0, 0x3
 
     .line 4
-    iput v0, p0, Landroidx/transition/Visibility;->D:I
+    iput v0, p0, Landroidx/transition/Visibility;->E:I
 
     .line 5
     sget-object v0, Lv0/p;->c:[I
@@ -410,7 +410,7 @@
     if-nez v0, :cond_0
 
     .line 1
-    iput p1, p0, Landroidx/transition/Visibility;->D:I
+    iput p1, p0, Landroidx/transition/Visibility;->E:I
 
     return-void
 
@@ -475,7 +475,7 @@
     if-eqz v1, :cond_4
 
     .line 4
-    iget v0, p0, Landroidx/transition/Visibility;->D:I
+    iget v0, p0, Landroidx/transition/Visibility;->E:I
 
     and-int/2addr v0, v3
 
@@ -536,7 +536,7 @@
     iget v0, v0, Landroidx/transition/Visibility$b;->d:I
 
     .line 12
-    iget v1, p0, Landroidx/transition/Visibility;->D:I
+    iget v1, p0, Landroidx/transition/Visibility;->E:I
 
     const/4 v5, 0x2
 
@@ -850,7 +850,7 @@
 .method public final r()[Ljava/lang/String;
     .locals 1
 
-    sget-object v0, Landroidx/transition/Visibility;->E:[Ljava/lang/String;
+    sget-object v0, Landroidx/transition/Visibility;->F:[Ljava/lang/String;
 
     return-object v0
 .end method

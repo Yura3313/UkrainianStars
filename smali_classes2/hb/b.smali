@@ -23,7 +23,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    sget v0, Lwa/a;->h:I
+    sget v0, Lwa/a;->i:I
 
     .line 3
     sget-object v0, Lwa/a$a;->a:Lwa/a;
@@ -78,7 +78,7 @@
     const-string p2, "addFaqsUnsafe"
 
     .line 4
-    invoke-static {p1, p2, p0, v1}, Landroidx/savedstate/d;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {p1, p2, p0, v1}, Le5/i;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
 
     :cond_0
     return-void
@@ -247,7 +247,7 @@
     invoke-direct {v0}, Landroid/content/ContentValues;-><init>()V
 
     .line 2
-    iget-object v1, p0, Lcom/helpshift/support/Faq;->n:Ljava/lang/String;
+    iget-object v1, p0, Lcom/helpshift/support/Faq;->o:Ljava/lang/String;
 
     const-string v2, "question_id"
 
@@ -255,42 +255,42 @@
     invoke-virtual {v0, v2, v1}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 4
-    iget-object v1, p0, Lcom/helpshift/support/Faq;->g:Ljava/lang/String;
+    iget-object v1, p0, Lcom/helpshift/support/Faq;->h:Ljava/lang/String;
 
     const-string v2, "publish_id"
 
     invoke-virtual {v0, v2, v1}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 5
-    iget-object v1, p0, Lcom/helpshift/support/Faq;->h:Ljava/lang/String;
+    iget-object v1, p0, Lcom/helpshift/support/Faq;->i:Ljava/lang/String;
 
     const-string v2, "language"
 
     invoke-virtual {v0, v2, v1}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 6
-    iget-object v1, p0, Lcom/helpshift/support/Faq;->i:Ljava/lang/String;
+    iget-object v1, p0, Lcom/helpshift/support/Faq;->j:Ljava/lang/String;
 
     const-string v2, "section_id"
 
     invoke-virtual {v0, v2, v1}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 7
-    iget-object v1, p0, Lcom/helpshift/support/Faq;->f:Ljava/lang/String;
+    iget-object v1, p0, Lcom/helpshift/support/Faq;->g:Ljava/lang/String;
 
     const-string v2, "title"
 
     invoke-virtual {v0, v2, v1}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 8
-    iget-object v1, p0, Lcom/helpshift/support/Faq;->j:Ljava/lang/String;
+    iget-object v1, p0, Lcom/helpshift/support/Faq;->k:Ljava/lang/String;
 
     const-string v2, "body"
 
     invoke-virtual {v0, v2, v1}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 9
-    iget v1, p0, Lcom/helpshift/support/Faq;->k:I
+    iget v1, p0, Lcom/helpshift/support/Faq;->l:I
 
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -301,7 +301,7 @@
     invoke-virtual {v0, v2, v1}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
 
     .line 10
-    iget-object v1, p0, Lcom/helpshift/support/Faq;->l:Ljava/lang/Boolean;
+    iget-object v1, p0, Lcom/helpshift/support/Faq;->m:Ljava/lang/Boolean;
 
     const-string v2, "rtl"
 
@@ -650,7 +650,7 @@
     const-string v3, "Error in getFaqsDataForSection"
 
     .line 12
-    invoke-static {v2, v3, p1}, Landroidx/savedstate/d;->g(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v2, v3, p1}, Le5/i;->i(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
     :try_end_4
     .catchall {:try_start_4 .. :try_end_4} :catchall_0
 
@@ -714,7 +714,7 @@
 
     .line 1
     :cond_0
-    iget-object v0, p2, Lla/d;->f:Ljava/lang/String;
+    iget-object v0, p2, Lla/d;->g:Ljava/lang/String;
 
     .line 2
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -809,7 +809,7 @@
     new-instance v2, Ljava/util/ArrayList;
 
     .line 6
-    iget-object v3, p2, Lla/d;->g:[Ljava/lang/String;
+    iget-object v3, p2, Lla/d;->h:[Ljava/lang/String;
 
     .line 7
     invoke-static {v3}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
@@ -867,7 +867,7 @@
     new-instance v2, Ljava/util/ArrayList;
 
     .line 14
-    iget-object v3, p2, Lla/d;->g:[Ljava/lang/String;
+    iget-object v3, p2, Lla/d;->h:[Ljava/lang/String;
 
     .line 15
     invoke-static {v3}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
@@ -928,7 +928,7 @@
     new-instance v2, Ljava/util/ArrayList;
 
     .line 23
-    iget-object v3, p2, Lla/d;->g:[Ljava/lang/String;
+    iget-object v3, p2, Lla/d;->h:[Ljava/lang/String;
 
     .line 24
     invoke-static {v3}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;

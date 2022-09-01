@@ -1,10 +1,10 @@
 .class public Lje/t;
-.super Lcom/google/android/play/core/assetpacks/o2;
+.super Lt3/h;
 .source "_Maps.kt"
 
 
 # direct methods
-.method public static final varargs k([Lie/d;)Ljava/util/Map;
+.method public static final varargs l([Lie/d;)Ljava/util/Map;
     .locals 2
 
     array-length v0, p0
@@ -15,29 +15,29 @@
 
     array-length v1, p0
 
-    invoke-static {v1}, Lcom/google/android/play/core/assetpacks/o2;->i(I)I
+    invoke-static {v1}, Lt3/h;->g(I)I
 
     move-result v1
 
     invoke-direct {v0, v1}, Ljava/util/LinkedHashMap;-><init>(I)V
 
-    invoke-static {p0, v0}, Lje/t;->s([Lie/d;Ljava/util/Map;)Ljava/util/Map;
+    invoke-static {p0, v0}, Lje/t;->t([Lie/d;Ljava/util/Map;)Ljava/util/Map;
 
     goto :goto_0
 
     :cond_0
-    sget-object v0, Lje/m;->f:Lje/m;
+    sget-object v0, Lje/m;->g:Lje/m;
 
     :goto_0
     return-object v0
 .end method
 
-.method public static final l(Ljava/util/Map;Ljava/lang/Object;)Ljava/util/Map;
+.method public static final m(Ljava/util/Map;Ljava/lang/Object;)Ljava/util/Map;
     .locals 1
 
     const-string v0, "$this$minus"
 
-    invoke-static {p0, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     new-instance v0, Ljava/util/LinkedHashMap;
@@ -47,14 +47,14 @@
     .line 2
     invoke-interface {v0, p1}, Ljava/util/Map;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
-    invoke-static {v0}, Lje/t;->m(Ljava/util/Map;)Ljava/util/Map;
+    invoke-static {v0}, Lje/t;->n(Ljava/util/Map;)Ljava/util/Map;
 
     move-result-object p0
 
     return-object p0
 .end method
 
-.method public static final m(Ljava/util/Map;)Ljava/util/Map;
+.method public static final n(Ljava/util/Map;)Ljava/util/Map;
     .locals 2
 
     .line 1
@@ -100,24 +100,24 @@
 
     const-string v0, "java.util.Collections.singletonMap(key, value)"
 
-    invoke-static {p0, v0}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     goto :goto_0
 
     .line 3
     :cond_1
-    sget-object p0, Lje/m;->f:Lje/m;
+    sget-object p0, Lje/m;->g:Lje/m;
 
     :goto_0
     return-object p0
 .end method
 
-.method public static final n(Ljava/util/Map;Lie/d;)Ljava/util/Map;
+.method public static final o(Ljava/util/Map;Lie/d;)Ljava/util/Map;
     .locals 1
 
     const-string v0, "$this$plus"
 
-    invoke-static {p0, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     invoke-interface {p0}, Ljava/util/Map;->isEmpty()Z
@@ -126,7 +126,7 @@
 
     if-eqz v0, :cond_0
 
-    invoke-static {p1}, Lcom/google/android/play/core/assetpacks/o2;->j(Lie/d;)Ljava/util/Map;
+    invoke-static {p1}, Lt3/h;->h(Lie/d;)Ljava/util/Map;
 
     move-result-object p0
 
@@ -138,10 +138,10 @@
     invoke-direct {v0, p0}, Ljava/util/LinkedHashMap;-><init>(Ljava/util/Map;)V
 
     .line 2
-    iget-object p0, p1, Lie/d;->f:Ljava/lang/Object;
+    iget-object p0, p1, Lie/d;->g:Ljava/lang/Object;
 
     .line 3
-    iget-object p1, p1, Lie/d;->g:Ljava/lang/Object;
+    iget-object p1, p1, Lie/d;->h:Ljava/lang/Object;
 
     .line 4
     invoke-virtual {v0, p0, p1}, Ljava/util/AbstractMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
@@ -152,16 +152,16 @@
     return-object p0
 .end method
 
-.method public static final o(Ljava/util/Map;Ljava/util/Map;)Ljava/util/Map;
+.method public static final p(Ljava/util/Map;Ljava/util/Map;)Ljava/util/Map;
     .locals 1
 
     const-string v0, "$this$plus"
 
-    invoke-static {p0, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "map"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     new-instance v0, Ljava/util/LinkedHashMap;
 
@@ -172,7 +172,7 @@
     return-object v0
 .end method
 
-.method public static final p(Ljava/util/Map;Ljava/lang/Iterable;)V
+.method public static final q(Ljava/util/Map;Ljava/lang/Iterable;)V
     .locals 2
 
     .line 1
@@ -194,10 +194,10 @@
     check-cast v0, Lie/d;
 
     .line 2
-    iget-object v1, v0, Lie/d;->f:Ljava/lang/Object;
+    iget-object v1, v0, Lie/d;->g:Ljava/lang/Object;
 
     .line 3
-    iget-object v0, v0, Lie/d;->g:Ljava/lang/Object;
+    iget-object v0, v0, Lie/d;->h:Ljava/lang/Object;
 
     .line 4
     invoke-interface {p0, v1, v0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
@@ -208,7 +208,7 @@
     return-void
 .end method
 
-.method public static final q(Ljava/lang/Iterable;)Ljava/util/Map;
+.method public static final r(Ljava/lang/Iterable;)Ljava/util/Map;
     .locals 3
 
     .line 1
@@ -233,14 +233,14 @@
 
     move-result v0
 
-    invoke-static {v0}, Lcom/google/android/play/core/assetpacks/o2;->i(I)I
+    invoke-static {v0}, Lt3/h;->g(I)I
 
     move-result v0
 
     invoke-direct {v1, v0}, Ljava/util/LinkedHashMap;-><init>(I)V
 
     .line 3
-    invoke-static {v1, p0}, Lje/t;->p(Ljava/util/Map;Ljava/lang/Iterable;)V
+    invoke-static {v1, p0}, Lje/t;->q(Ljava/util/Map;Ljava/lang/Iterable;)V
 
     goto :goto_0
 
@@ -256,7 +256,7 @@
 
     check-cast p0, Lie/d;
 
-    invoke-static {p0}, Lcom/google/android/play/core/assetpacks/o2;->j(Lie/d;)Ljava/util/Map;
+    invoke-static {p0}, Lt3/h;->h(Lie/d;)Ljava/util/Map;
 
     move-result-object v1
 
@@ -264,18 +264,18 @@
 
     .line 5
     :cond_1
-    sget-object v1, Lje/m;->f:Lje/m;
+    sget-object v1, Lje/m;->g:Lje/m;
 
     :goto_0
     return-object v1
 .end method
 
-.method public static final r([Lie/d;)Ljava/util/Map;
+.method public static final s([Lie/d;)Ljava/util/Map;
     .locals 2
 
     const-string v0, "$this$toMap"
 
-    invoke-static {p0, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     array-length v0, p0
@@ -291,13 +291,13 @@
 
     array-length v1, p0
 
-    invoke-static {v1}, Lcom/google/android/play/core/assetpacks/o2;->i(I)I
+    invoke-static {v1}, Lt3/h;->g(I)I
 
     move-result v1
 
     invoke-direct {v0, v1}, Ljava/util/LinkedHashMap;-><init>(I)V
 
-    invoke-static {p0, v0}, Lje/t;->s([Lie/d;Ljava/util/Map;)Ljava/util/Map;
+    invoke-static {p0, v0}, Lje/t;->t([Lie/d;Ljava/util/Map;)Ljava/util/Map;
 
     goto :goto_0
 
@@ -307,7 +307,7 @@
     .line 3
     aget-object p0, p0, v0
 
-    invoke-static {p0}, Lcom/google/android/play/core/assetpacks/o2;->j(Lie/d;)Ljava/util/Map;
+    invoke-static {p0}, Lt3/h;->h(Lie/d;)Ljava/util/Map;
 
     move-result-object v0
 
@@ -315,18 +315,18 @@
 
     .line 4
     :cond_1
-    sget-object v0, Lje/m;->f:Lje/m;
+    sget-object v0, Lje/m;->g:Lje/m;
 
     :goto_0
     return-object v0
 .end method
 
-.method public static final s([Lie/d;Ljava/util/Map;)Ljava/util/Map;
+.method public static final t([Lie/d;Ljava/util/Map;)Ljava/util/Map;
     .locals 4
 
     const-string v0, "$this$toMap"
 
-    invoke-static {p0, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     array-length v0, p0
@@ -339,10 +339,10 @@
     aget-object v2, p0, v1
 
     .line 2
-    iget-object v3, v2, Lie/d;->f:Ljava/lang/Object;
+    iget-object v3, v2, Lie/d;->g:Ljava/lang/Object;
 
     .line 3
-    iget-object v2, v2, Lie/d;->g:Ljava/lang/Object;
+    iget-object v2, v2, Lie/d;->h:Ljava/lang/Object;
 
     .line 4
     invoke-interface {p1, v3, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;

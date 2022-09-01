@@ -22,14 +22,14 @@
         "Lre/p<",
         "Lcom/kakao/sdk/auth/model/OAuthToken;",
         "Ljava/lang/Throwable;",
-        "Lie/h;",
+        "Lie/i;",
         ">;"
     }
 .end annotation
 
 
 # virtual methods
-.method public abstract invoke(Lcom/kakao/sdk/auth/model/OAuthToken;Ljava/lang/Throwable;)Lie/h;
+.method public abstract invoke(Lcom/kakao/sdk/auth/model/OAuthToken;Ljava/lang/Throwable;)Lie/i;
 .end method
 
 .method public bridge abstract synthetic invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;

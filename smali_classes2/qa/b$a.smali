@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field public final synthetic f:Lqa/b;
+.field public final synthetic g:Lqa/b;
 
 
 # direct methods
 .method public constructor <init>(Lqa/b;)V
     .locals 0
 
-    iput-object p1, p0, Lqa/b$a;->f:Lqa/b;
+    iput-object p1, p0, Lqa/b$a;->g:Lqa/b;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -38,7 +38,7 @@
     .locals 5
 
     .line 1
-    iget-object p1, p0, Lqa/b$a;->f:Lqa/b;
+    iget-object p1, p0, Lqa/b$a;->g:Lqa/b;
 
     invoke-virtual {p1}, Lab/i;->y()Landroid/content/Context;
 

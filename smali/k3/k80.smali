@@ -1,27 +1,21 @@
-.class public interface abstract Lk3/k80;
-.super Ljava/lang/Object;
+.class public final Lk3/k80;
+.super Lk3/up0;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "<AdT:",
-        "Ljava/lang/Object;",
-        ">",
-        "Ljava/lang/Object;"
-    }
-.end annotation
+# instance fields
+.field public final h:I
 
 
-# virtual methods
-.method public abstract f()V
-.end method
+# direct methods
+.method public constructor <init>(I)V
+    .locals 0
 
-.method public abstract onSuccess(Ljava/lang/Object;)V
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TAdT;)V"
-        }
-    .end annotation
+    .line 1
+    invoke-direct {p0}, Lk3/up0;-><init>()V
+
+    .line 2
+    iput p1, p0, Lk3/k80;->h:I
+
+    return-void
 .end method

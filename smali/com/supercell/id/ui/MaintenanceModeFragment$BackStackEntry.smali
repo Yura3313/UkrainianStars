@@ -25,7 +25,7 @@
 
 
 # instance fields
-.field public final g:Ljava/lang/Class;
+.field public final h:Ljava/lang/Class;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/lang/Class<",
@@ -59,7 +59,7 @@
     .line 2
     const-class v0, Lcom/supercell/id/ui/MaintenanceModeFragment;
 
-    iput-object v0, p0, Lcom/supercell/id/ui/MaintenanceModeFragment$BackStackEntry;->g:Ljava/lang/Class;
+    iput-object v0, p0, Lcom/supercell/id/ui/MaintenanceModeFragment$BackStackEntry;->h:Ljava/lang/Class;
 
     return-void
 .end method
@@ -71,7 +71,7 @@
 
     const-string v0, "mainActivity"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     sub-int/2addr p2, p3
 
@@ -84,7 +84,7 @@
     int-to-float p2, p2
 
     .line 1
-    sget p4, La5/g0;->a:F
+    sget p4, La5/e0;->g:F
 
     mul-float p2, p2, p4
 
@@ -123,7 +123,7 @@
     .line 3
     :cond_1
     :goto_0
-    invoke-static {p2}, Lcom/android/billingclient/api/z;->n(F)I
+    invoke-static {p2}, Lcom/android/billingclient/api/y;->i(F)I
 
     move-result p1
 
@@ -141,7 +141,7 @@
             ")",
             "Ljava/lang/Class<",
             "+",
-            "Lwc/a1;",
+            "Lwc/b1;",
             ">;"
         }
     .end annotation
@@ -151,14 +151,14 @@
     const-string v1, "mainActivity.resources"
 
     .line 1
-    invoke-static {p1, v0, v1}, Lk3/ax;->e(Lcom/supercell/id/ui/MainActivity;Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {p1, v0, v1}, Lwc/v0;->a(Lcom/supercell/id/ui/MainActivity;Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result p1
 
     if-eqz p1, :cond_0
 
     .line 2
-    const-class p1, Lwc/c1;
+    const-class p1, Lwc/d1;
 
     goto :goto_0
 
@@ -182,7 +182,7 @@
         }
     .end annotation
 
-    iget-object v0, p0, Lcom/supercell/id/ui/MaintenanceModeFragment$BackStackEntry;->g:Ljava/lang/Class;
+    iget-object v0, p0, Lcom/supercell/id/ui/MaintenanceModeFragment$BackStackEntry;->h:Ljava/lang/Class;
 
     return-object v0
 .end method
@@ -225,7 +225,7 @@
 
     const-string v0, "mainActivity"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-class p1, Lcom/supercell/id/ui/MaintenanceModeFragment$a;
 
@@ -237,7 +237,7 @@
 
     const-string v0, "mainActivity"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/4 p1, 0x1
 

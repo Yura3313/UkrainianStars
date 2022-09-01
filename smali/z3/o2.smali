@@ -1,4 +1,4 @@
-.class public final Lz3/o2;
+.class public final synthetic Lz3/o2;
 .super Ljava/lang/Object;
 
 # interfaces
@@ -6,20 +6,24 @@
 
 
 # instance fields
-.field public final synthetic f:Lz3/a3;
+.field public final g:Lz3/l2;
 
-.field public final synthetic g:Ljava/lang/Runnable;
+.field public final h:Lz3/o;
+
+.field public final i:Landroid/app/job/JobParameters;
 
 
 # direct methods
-.method public constructor <init>(Lz3/a3;Ljava/lang/Runnable;)V
+.method public constructor <init>(Lz3/l2;Lz3/o;Landroid/app/job/JobParameters;)V
     .locals 0
 
-    iput-object p1, p0, Lz3/o2;->f:Lz3/a3;
-
-    iput-object p2, p0, Lz3/o2;->g:Ljava/lang/Runnable;
-
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lz3/o2;->g:Lz3/l2;
+
+    iput-object p2, p0, Lz3/o2;->h:Lz3/o;
+
+    iput-object p3, p0, Lz3/o2;->i:Landroid/app/job/JobParameters;
 
     return-void
 .end method
@@ -27,43 +31,30 @@
 
 # virtual methods
 .method public final run()V
-    .locals 3
+    .locals 4
+
+    iget-object v0, p0, Lz3/o2;->g:Lz3/l2;
+
+    iget-object v1, p0, Lz3/o2;->h:Lz3/o;
+
+    iget-object v2, p0, Lz3/o2;->i:Landroid/app/job/JobParameters;
+
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 1
-    iget-object v0, p0, Lz3/o2;->f:Lz3/a3;
+    iget-object v1, v1, Lz3/o;->t:Lz3/q;
 
-    invoke-virtual {v0}, Lz3/a3;->K()V
+    const-string v3, "AppMeasurementJobService processed last upload request."
 
     .line 2
-    iget-object v0, p0, Lz3/o2;->f:Lz3/a3;
-
-    iget-object v1, p0, Lz3/o2;->g:Ljava/lang/Runnable;
+    invoke-virtual {v1, v3}, Lz3/q;->a(Ljava/lang/String;)V
 
     .line 3
-    invoke-virtual {v0}, Lz3/a3;->j()V
+    iget-object v0, v0, Lz3/l2;->a:Landroid/content/Context;
 
-    .line 4
-    iget-object v2, v0, Lz3/a3;->n:Ljava/util/ArrayList;
+    check-cast v0, Lz3/q2;
 
-    if-nez v2, :cond_0
-
-    .line 5
-    new-instance v2, Ljava/util/ArrayList;
-
-    invoke-direct {v2}, Ljava/util/ArrayList;-><init>()V
-
-    iput-object v2, v0, Lz3/a3;->n:Ljava/util/ArrayList;
-
-    .line 6
-    :cond_0
-    iget-object v0, v0, Lz3/a3;->n:Ljava/util/ArrayList;
-
-    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    .line 7
-    iget-object v0, p0, Lz3/o2;->f:Lz3/a3;
-
-    invoke-virtual {v0}, Lz3/a3;->G()V
+    invoke-interface {v0, v2}, Lz3/q2;->b(Landroid/app/job/JobParameters;)V
 
     return-void
 .end method

@@ -1,285 +1,148 @@
 .class public final Lk3/o51;
 .super Ljava/lang/Object;
-.source "com.google.android.gms:play-services-ads@@19.3.0"
+.source "com.google.android.gms:play-services-ads-lite@@19.3.0"
+
+
+# static fields
+.field public static j:Lk3/o51;
 
 
 # instance fields
-.field public final a:I
+.field public final a:Lk3/ad;
 
-.field public final b:[B
+.field public final b:Lk3/h51;
 
-.field public final c:Ljava/util/Map;
+.field public final c:Ljava/lang/String;
+
+.field public final d:Lk3/k;
+
+.field public final e:Lk3/m;
+
+.field public final f:Lk3/l;
+
+.field public final g:Lcom/google/android/gms/internal/ads/zzbbg;
+
+.field public final h:Ljava/util/Random;
+
+.field public final i:Ljava/util/WeakHashMap;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Ljava/util/Map<",
-            "Ljava/lang/String;",
+            "Ljava/util/WeakHashMap<",
+            "Lt5/a;",
             "Ljava/lang/String;",
             ">;"
         }
     .end annotation
 .end field
-
-.field public final d:Ljava/util/List;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/List<",
-            "Lk3/k41;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field public final e:Z
 
 
 # direct methods
-.method public constructor <init>(I[BLjava/util/Map;Ljava/util/List;Z)V
-    .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(I[B",
-            "Ljava/util/Map<",
-            "Ljava/lang/String;",
-            "Ljava/lang/String;",
-            ">;",
-            "Ljava/util/List<",
-            "Lk3/k41;",
-            ">;ZJ)V"
-        }
-    .end annotation
+.method public static constructor <clinit>()V
+    .locals 1
 
-    .line 15
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    new-instance v0, Lk3/o51;
 
-    .line 16
-    iput p1, p0, Lk3/o51;->a:I
+    invoke-direct {v0}, Lk3/o51;-><init>()V
 
-    .line 17
-    iput-object p2, p0, Lk3/o51;->b:[B
-
-    .line 18
-    iput-object p3, p0, Lk3/o51;->c:Ljava/util/Map;
-
-    if-nez p4, :cond_0
-
-    const/4 p1, 0x0
-
-    .line 19
-    iput-object p1, p0, Lk3/o51;->d:Ljava/util/List;
-
-    goto :goto_0
-
-    .line 20
-    :cond_0
-    invoke-static {p4}, Ljava/util/Collections;->unmodifiableList(Ljava/util/List;)Ljava/util/List;
-
-    move-result-object p1
-
-    iput-object p1, p0, Lk3/o51;->d:Ljava/util/List;
-
-    .line 21
-    :goto_0
-    iput-boolean p5, p0, Lk3/o51;->e:Z
+    sput-object v0, Lk3/o51;->j:Lk3/o51;
 
     return-void
 .end method
 
-.method public constructor <init>(I[BLjava/util/Map;ZJ)V
-    .locals 9
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(I[B",
-            "Ljava/util/Map<",
-            "Ljava/lang/String;",
-            "Ljava/lang/String;",
-            ">;ZJ)V"
-        }
-    .end annotation
-
-    .annotation runtime Ljava/lang/Deprecated;
-    .end annotation
-
-    if-nez p3, :cond_1
-
-    const/4 p5, 0x0
-
-    :cond_0
-    :goto_0
-    move-object v7, p5
-
-    goto :goto_2
+.method public constructor <init>()V
+    .locals 10
 
     .line 1
-    :cond_1
-    invoke-interface {p3}, Ljava/util/Map;->isEmpty()Z
+    new-instance v0, Lk3/ad;
 
-    move-result p5
+    invoke-direct {v0}, Lk3/ad;-><init>()V
 
-    if-eqz p5, :cond_2
+    new-instance v1, Lk3/h51;
+
+    new-instance v2, Lk3/z41;
+
+    invoke-direct {v2}, Lk3/z41;-><init>()V
+
+    new-instance v3, Lk3/a51;
+
+    invoke-direct {v3}, Lk3/a51;-><init>()V
+
+    new-instance v4, Lk3/x1;
+
+    invoke-direct {v4}, Lk3/x1;-><init>()V
+
+    new-instance v5, Lk3/p7;
+
+    invoke-direct {v5}, Lk3/p7;-><init>()V
+
+    invoke-direct {v1, v2, v3, v4, v5}, Lk3/h51;-><init>(Lk3/z41;Lk3/a51;Lk3/x1;Lk3/p7;)V
+
+    new-instance v2, Lk3/k;
+
+    invoke-direct {v2}, Lk3/k;-><init>()V
+
+    new-instance v3, Lk3/m;
+
+    invoke-direct {v3}, Lk3/m;-><init>()V
+
+    new-instance v4, Lk3/l;
+
+    invoke-direct {v4}, Lk3/l;-><init>()V
 
     .line 2
-    invoke-static {}, Ljava/util/Collections;->emptyList()Ljava/util/List;
+    invoke-static {}, Lk3/ad;->m()Ljava/lang/String;
 
-    move-result-object p5
-
-    goto :goto_0
+    move-result-object v5
 
     .line 3
-    :cond_2
-    new-instance p5, Ljava/util/ArrayList;
+    new-instance v6, Lcom/google/android/gms/internal/ads/zzbbg;
 
-    invoke-interface {p3}, Ljava/util/Map;->size()I
+    const/4 v7, 0x0
 
-    move-result p6
+    const v8, 0xc0a5df0
 
-    invoke-direct {p5, p6}, Ljava/util/ArrayList;-><init>(I)V
+    const/4 v9, 0x1
+
+    invoke-direct {v6, v7, v8, v9}, Lcom/google/android/gms/internal/ads/zzbbg;-><init>(IIZ)V
 
     .line 4
-    invoke-interface {p3}, Ljava/util/Map;->entrySet()Ljava/util/Set;
+    new-instance v7, Ljava/util/Random;
 
-    move-result-object p6
+    invoke-direct {v7}, Ljava/util/Random;-><init>()V
 
-    invoke-interface {p6}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
+    new-instance v8, Ljava/util/WeakHashMap;
 
-    move-result-object p6
-
-    :goto_1
-    invoke-interface {p6}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    invoke-interface {p6}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Ljava/util/Map$Entry;
+    invoke-direct {v8}, Ljava/util/WeakHashMap;-><init>()V
 
     .line 5
-    new-instance v1, Lk3/k41;
-
-    invoke-interface {v0}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
-
-    move-result-object v2
-
-    check-cast v2, Ljava/lang/String;
-
-    invoke-interface {v0}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Ljava/lang/String;
-
-    invoke-direct {v1, v2, v0}, Lk3/k41;-><init>(Ljava/lang/String;Ljava/lang/String;)V
-
-    invoke-virtual {p5, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    goto :goto_1
-
-    :goto_2
-    move-object v3, p0
-
-    move v4, p1
-
-    move-object v5, p2
-
-    move-object v6, p3
-
-    move v8, p4
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 6
-    invoke-direct/range {v3 .. v8}, Lk3/o51;-><init>(I[BLjava/util/Map;Ljava/util/List;Z)V
-
-    return-void
-.end method
-
-.method public constructor <init>(I[BZJLjava/util/List;)V
-    .locals 8
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(I[BZJ",
-            "Ljava/util/List<",
-            "Lk3/k41;",
-            ">;)V"
-        }
-    .end annotation
-
-    if-nez p6, :cond_1
-
-    const/4 p4, 0x0
-
-    :cond_0
-    :goto_0
-    move-object v5, p4
-
-    goto :goto_2
+    iput-object v0, p0, Lk3/o51;->a:Lk3/ad;
 
     .line 7
-    :cond_1
-    invoke-interface {p6}, Ljava/util/List;->isEmpty()Z
-
-    move-result p4
-
-    if-eqz p4, :cond_2
+    iput-object v1, p0, Lk3/o51;->b:Lk3/h51;
 
     .line 8
-    invoke-static {}, Ljava/util/Collections;->emptyMap()Ljava/util/Map;
-
-    move-result-object p4
-
-    goto :goto_0
+    iput-object v2, p0, Lk3/o51;->d:Lk3/k;
 
     .line 9
-    :cond_2
-    new-instance p4, Ljava/util/TreeMap;
-
-    sget-object p5, Ljava/lang/String;->CASE_INSENSITIVE_ORDER:Ljava/util/Comparator;
-
-    invoke-direct {p4, p5}, Ljava/util/TreeMap;-><init>(Ljava/util/Comparator;)V
+    iput-object v3, p0, Lk3/o51;->e:Lk3/m;
 
     .line 10
-    invoke-interface {p6}, Ljava/util/List;->iterator()Ljava/util/Iterator;
-
-    move-result-object p5
-
-    :goto_1
-    invoke-interface {p5}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    invoke-interface {p5}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Lk3/k41;
+    iput-object v4, p0, Lk3/o51;->f:Lk3/l;
 
     .line 11
-    iget-object v1, v0, Lk3/k41;->a:Ljava/lang/String;
+    iput-object v5, p0, Lk3/o51;->c:Ljava/lang/String;
 
     .line 12
-    iget-object v0, v0, Lk3/k41;->b:Ljava/lang/String;
+    iput-object v6, p0, Lk3/o51;->g:Lcom/google/android/gms/internal/ads/zzbbg;
 
     .line 13
-    invoke-virtual {p4, v1, v0}, Ljava/util/TreeMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    goto :goto_1
-
-    :goto_2
-    move-object v2, p0
-
-    move v3, p1
-
-    move-object v4, p2
-
-    move-object v6, p6
-
-    move v7, p3
+    iput-object v7, p0, Lk3/o51;->h:Ljava/util/Random;
 
     .line 14
-    invoke-direct/range {v2 .. v7}, Lk3/o51;-><init>(I[BLjava/util/Map;Ljava/util/List;Z)V
+    iput-object v8, p0, Lk3/o51;->i:Ljava/util/WeakHashMap;
 
     return-void
 .end method

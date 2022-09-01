@@ -26,12 +26,12 @@
     new-instance v0, Lwa/a;
 
     .line 2
-    sget-object v1, Lcom/helpshift/util/u;->b:Landroid/content/Context;
+    sget-object v1, Lcom/helpshift/util/t;->b:Landroid/content/Context;
 
     .line 3
-    new-instance v2, Lk3/h70;
+    new-instance v2, Lk3/j70;
 
-    invoke-direct {v2}, Lk3/h70;-><init>()V
+    invoke-direct {v2}, Lk3/j70;-><init>()V
 
     invoke-direct {v0, v1, v2}, Lwa/a;-><init>(Landroid/content/Context;Lh9/b;)V
 

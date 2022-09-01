@@ -18,18 +18,18 @@
 
 
 # instance fields
-.field public final synthetic f:Landroid/content/Context;
+.field public final synthetic g:Landroid/content/Context;
 
-.field public final synthetic g:Ljava/lang/Thread$UncaughtExceptionHandler;
+.field public final synthetic h:Ljava/lang/Thread$UncaughtExceptionHandler;
 
 
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Ljava/lang/Thread$UncaughtExceptionHandler;)V
     .locals 0
 
-    iput-object p1, p0, Lu9/a$a;->f:Landroid/content/Context;
+    iput-object p1, p0, Lu9/a$a;->g:Landroid/content/Context;
 
-    iput-object p2, p0, Lu9/a$a;->g:Ljava/lang/Thread$UncaughtExceptionHandler;
+    iput-object p2, p0, Lu9/a$a;->h:Ljava/lang/Thread$UncaughtExceptionHandler;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -66,7 +66,7 @@
     if-eqz v1, :cond_8
 
     .line 3
-    iget-object v1, p0, Lu9/a$a;->f:Landroid/content/Context;
+    iget-object v1, p0, Lu9/a$a;->g:Landroid/content/Context;
 
     const-string v2, "Unknown"
 
@@ -83,7 +83,7 @@
 
     move-result-object v5
 
-    invoke-static {v4, v5}, Lz9/b;->b(Ljava/lang/String;Ljava/lang/String;)Lz9/a;
+    invoke-static {v4, v5}, Lid/h;->c(Ljava/lang/String;Ljava/lang/String;)Lz9/a;
 
     move-result-object v4
 
@@ -128,21 +128,21 @@
     const-string v6, "Exception while getting system connectivity service"
 
     .line 9
-    invoke-static {v5, v6, v1}, Landroidx/savedstate/d;->g(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v5, v6, v1}, Le5/i;->i(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
     :cond_1
     move-object v1, v2
 
     .line 10
     :goto_1
-    invoke-static {v4, v1}, Lz9/b;->b(Ljava/lang/String;Ljava/lang/String;)Lz9/a;
+    invoke-static {v4, v1}, Lid/h;->c(Ljava/lang/String;Ljava/lang/String;)Lz9/a;
 
     move-result-object v1
 
     invoke-virtual {v3, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 11
-    sget-object v1, Ld4/i;->h:La7/a;
+    sget-object v1, Lcom/google/android/gms/ads/r;->a:Ldb/a;
     :try_end_2
     .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_1
 
@@ -157,7 +157,7 @@
     .line 12
     :cond_2
     :try_start_3
-    invoke-virtual {v1}, La7/a;->f()Ljava/lang/String;
+    invoke-virtual {v1}, Ldb/a;->a()Ljava/lang/String;
 
     move-result-object v5
 
@@ -167,7 +167,7 @@
     const-string v6, "funnel"
 
     .line 13
-    invoke-static {v6, v5}, Lz9/b;->b(Ljava/lang/String;Ljava/lang/String;)Lz9/a;
+    invoke-static {v6, v5}, Lid/h;->c(Ljava/lang/String;Ljava/lang/String;)Lz9/a;
 
     move-result-object v5
 
@@ -180,7 +180,7 @@
 
     .line 14
     :cond_4
-    sget-object v1, Lcom/helpshift/util/u;->c:Le7/g;
+    sget-object v1, Lcom/helpshift/util/t;->c:Le7/g;
 
     .line 15
     invoke-virtual {v1}, Le7/g;->c()Lq8/d;
@@ -190,7 +190,7 @@
     if-eqz v1, :cond_5
 
     .line 16
-    iget-object v1, v1, Lq8/d;->h:Ljava/lang/String;
+    iget-object v1, v1, Lq8/d;->i:Ljava/lang/String;
 
     goto :goto_3
 
@@ -202,7 +202,7 @@
 
     .line 17
     :goto_4
-    invoke-static {v4}, Ll2/g;->d(Ljava/lang/CharSequence;)Z
+    invoke-static {v4}, Ll2/p;->h(Ljava/lang/CharSequence;)Z
 
     move-result v1
 
@@ -211,7 +211,7 @@
     const-string v1, "actconvid"
 
     .line 18
-    invoke-static {v1, v4}, Lz9/b;->b(Ljava/lang/String;Ljava/lang/String;)Lz9/a;
+    invoke-static {v1, v4}, Lid/h;->c(Ljava/lang/String;Ljava/lang/String;)Lz9/a;
 
     move-result-object v1
 
@@ -229,7 +229,7 @@
     const-string v1, "thread"
 
     .line 20
-    invoke-static {v1, v2}, Lz9/b;->b(Ljava/lang/String;Ljava/lang/String;)Lz9/a;
+    invoke-static {v1, v2}, Lid/h;->c(Ljava/lang/String;Ljava/lang/String;)Lz9/a;
 
     move-result-object v1
 
@@ -247,7 +247,7 @@
     const-string v4, "Error creating error report"
 
     .line 21
-    invoke-static {v2, v4, v1}, Landroidx/savedstate/d;->g(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v2, v4, v1}, Le5/i;->i(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
     :goto_5
     new-array v0, v0, [Lz9/a;
@@ -264,11 +264,11 @@
     const-string v2, "UNCAUGHT EXCEPTION "
 
     .line 23
-    invoke-static {v1, v2, p2, v0}, Landroidx/savedstate/d;->j(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v1, v2, p2, v0}, Le5/i;->l(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
 
     .line 24
     :cond_8
-    iget-object v0, p0, Lu9/a$a;->g:Ljava/lang/Thread$UncaughtExceptionHandler;
+    iget-object v0, p0, Lu9/a$a;->h:Ljava/lang/Thread$UncaughtExceptionHandler;
 
     if-eqz v0, :cond_9
 

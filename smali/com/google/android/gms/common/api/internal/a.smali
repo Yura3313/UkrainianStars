@@ -3,7 +3,7 @@
 .source "com.google.android.gms:play-services-base@@17.5.0"
 
 # interfaces
-.implements Lb2/d;
+.implements Lb2/c;
 
 
 # annotations
@@ -16,7 +16,7 @@
         ">",
         "Lcom/google/android/gms/common/api/internal/BasePendingResult<",
         "TR;>;",
-        "Lb2/d<",
+        "Lb2/c<",
         "TR;>;"
     }
 .end annotation

@@ -1,5 +1,5 @@
 .class public final Lcom/supercell/id/SupercellId$p;
-.super Lse/h;
+.super Lse/i;
 .source "SupercellId.kt"
 
 # interfaces
@@ -18,31 +18,31 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/l<",
         "Ljava/util/List<",
         "+",
         "Lcom/supercell/id/IdFriend;",
         ">;",
-        "Lie/h;",
+        "Lie/i;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic f:Ljava/lang/String;
+.field public final synthetic g:Ljava/lang/String;
 
 
 # direct methods
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/SupercellId$p;->f:Ljava/lang/String;
+    iput-object p1, p0, Lcom/supercell/id/SupercellId$p;->g:Ljava/lang/String;
 
     const/4 p1, 0x1
 
-    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -58,10 +58,10 @@
     const-string v0, "friends"
 
     .line 2
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 3
-    iget-object v0, p0, Lcom/supercell/id/SupercellId$p;->f:Ljava/lang/String;
+    iget-object v0, p0, Lcom/supercell/id/SupercellId$p;->g:Ljava/lang/String;
 
     sget-object v1, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
 
@@ -76,7 +76,7 @@
     iget-object v2, v2, Lrc/f;->b:Ljava/lang/String;
 
     .line 6
-    invoke-static {v0, v2}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v2}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
@@ -124,7 +124,7 @@
 
     if-nez v5, :cond_1
 
-    invoke-virtual {v4}, Lcom/supercell/id/IdFriend;->getApp()Lvc/d;
+    invoke-virtual {v4}, Lcom/supercell/id/IdFriend;->getApp()Lvc/c;
 
     move-result-object v4
 
@@ -138,11 +138,11 @@
     iget-object v5, v5, Lae/u;->j:Lcom/supercell/id/IdConfiguration;
 
     .line 12
-    invoke-virtual {v5}, Lcom/supercell/id/IdConfiguration;->getApp()Lvc/d;
+    invoke-virtual {v5}, Lcom/supercell/id/IdConfiguration;->getApp()Lvc/c;
 
     move-result-object v5
 
-    invoke-static {v4, v5}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v4, v5}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v4
 
@@ -188,7 +188,7 @@
     .line 16
     :cond_5
     :goto_1
-    sget-object p1, Lie/h;->a:Lie/h;
+    sget-object p1, Lie/i;->a:Lie/i;
 
     return-object p1
 .end method

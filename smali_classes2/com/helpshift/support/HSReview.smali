@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field public f:Ljava/util/List;
+.field public g:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
@@ -29,7 +29,7 @@
 .method public final attachBaseContext(Landroid/content/Context;)V
     .locals 0
 
-    invoke-static {p1}, Lcom/helpshift/util/a0;->b(Landroid/content/Context;)Landroid/content/Context;
+    invoke-static {p1}, Lcom/helpshift/util/z;->b(Landroid/content/Context;)Landroid/content/Context;
 
     invoke-super {p0, p1}, Landroid/app/Activity;->attachBaseContext(Landroid/content/Context;)V
 
@@ -87,15 +87,15 @@
     invoke-virtual {p0, p1}, Landroidx/activity/ComponentActivity;->setContentView(Landroid/view/View;)V
 
     .line 8
-    sget-object p1, Lk/c;->a:Ljava/util/List;
+    sget-object p1, Lr3/r4;->b:Ljava/util/List;
 
     .line 9
-    iput-object p1, p0, Lcom/helpshift/support/HSReview;->f:Ljava/util/List;
+    iput-object p1, p0, Lcom/helpshift/support/HSReview;->g:Ljava/util/List;
 
     const/4 p1, 0x0
 
     .line 10
-    sput-object p1, Lk/c;->a:Ljava/util/List;
+    sput-object p1, Lr3/r4;->b:Ljava/util/List;
 
     .line 11
     invoke-virtual {p0}, Landroidx/fragment/app/FragmentActivity;->getSupportFragmentManager()Landroidx/fragment/app/FragmentManager;
@@ -110,12 +110,12 @@
     const/4 v1, 0x0
 
     .line 13
-    iput-boolean v1, v0, Landroidx/fragment/app/k;->n0:Z
+    iput-boolean v1, v0, Landroidx/fragment/app/k;->o0:Z
 
     const/4 v2, 0x1
 
     .line 14
-    iput-boolean v2, v0, Landroidx/fragment/app/k;->o0:Z
+    iput-boolean v2, v0, Landroidx/fragment/app/k;->p0:Z
 
     .line 15
     new-instance v3, Landroidx/fragment/app/a;
@@ -140,13 +140,13 @@
     invoke-super {p0}, Landroidx/fragment/app/FragmentActivity;->onDestroy()V
 
     .line 2
-    iget-object v0, p0, Lcom/helpshift/support/HSReview;->f:Ljava/util/List;
+    iget-object v0, p0, Lcom/helpshift/support/HSReview;->g:Ljava/util/List;
 
     .line 3
-    sput-object v0, Lk/c;->a:Ljava/util/List;
+    sput-object v0, Lr3/r4;->b:Ljava/util/List;
 
     .line 4
-    invoke-static {}, Lcom/helpshift/util/a0;->c()V
+    invoke-static {}, Lcom/helpshift/util/z;->c()V
 
     return-void
 .end method

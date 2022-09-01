@@ -1,68 +1,67 @@
-.class public abstract Lt3/w;
-.super Lt3/x;
+.class public final Lt3/w;
+.super Lt3/b0;
 .source "com.google.android.gms:play-services-games@@20.0.1"
 
-# interfaces
-.implements Ljava/util/ListIterator;
 
+# instance fields
+.field public g:Z
 
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "<E:",
-        "Ljava/lang/Object;",
-        ">",
-        "Lt3/x<",
-        "TE;>;",
-        "Ljava/util/ListIterator<",
-        "TE;>;"
-    }
-.end annotation
+.field public final synthetic h:Ljava/lang/Object;
 
 
 # direct methods
-.method public constructor <init>()V
+.method public constructor <init>(Ljava/lang/Object;)V
     .locals 0
 
-    invoke-direct {p0}, Lt3/x;-><init>()V
+    iput-object p1, p0, Lt3/w;->h:Ljava/lang/Object;
+
+    invoke-direct {p0}, Lt3/b0;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final add(Ljava/lang/Object;)V
-    .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TE;)V"
-        }
-    .end annotation
+.method public final hasNext()Z
+    .locals 1
 
-    .annotation runtime Ljava/lang/Deprecated;
-    .end annotation
+    iget-boolean v0, p0, Lt3/w;->g:Z
 
-    new-instance p1, Ljava/lang/UnsupportedOperationException;
+    if-nez v0, :cond_0
 
-    invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V
+    const/4 v0, 0x1
 
-    throw p1
+    return v0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    return v0
 .end method
 
-.method public final set(Ljava/lang/Object;)V
-    .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TE;)V"
-        }
-    .end annotation
+.method public final next()Ljava/lang/Object;
+    .locals 1
 
-    .annotation runtime Ljava/lang/Deprecated;
-    .end annotation
+    .line 1
+    iget-boolean v0, p0, Lt3/w;->g:Z
 
-    new-instance p1, Ljava/lang/UnsupportedOperationException;
+    if-nez v0, :cond_0
 
-    invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V
+    const/4 v0, 0x1
 
-    throw p1
+    .line 2
+    iput-boolean v0, p0, Lt3/w;->g:Z
+
+    .line 3
+    iget-object v0, p0, Lt3/w;->h:Ljava/lang/Object;
+
+    return-object v0
+
+    .line 4
+    :cond_0
+    new-instance v0, Ljava/util/NoSuchElementException;
+
+    invoke-direct {v0}, Ljava/util/NoSuchElementException;-><init>()V
+
+    throw v0
 .end method

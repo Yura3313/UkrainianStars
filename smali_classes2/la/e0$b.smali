@@ -40,7 +40,7 @@
     .line 1
     iget-object v0, p0, Lla/e0$b;->a:Lla/r;
 
-    check-cast v0, La5/e0;
+    check-cast v0, Lpe/a;
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 

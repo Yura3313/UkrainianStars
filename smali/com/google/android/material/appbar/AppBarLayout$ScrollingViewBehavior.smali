@@ -179,7 +179,7 @@
     check-cast p3, Lcom/google/android/material/appbar/AppBarLayout;
 
     .line 12
-    iget-boolean p1, p3, Lcom/google/android/material/appbar/AppBarLayout;->p:Z
+    iget-boolean p1, p3, Lcom/google/android/material/appbar/AppBarLayout;->q:Z
 
     if-eqz p1, :cond_1
 

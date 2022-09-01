@@ -46,7 +46,7 @@
 
     iget-object p1, p1, Lbe/h$b$j;->a:Lcom/supercell/id/util/NormalizedError;
 
-    invoke-static {v0, p1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, p1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 

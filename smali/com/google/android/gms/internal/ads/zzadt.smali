@@ -40,7 +40,7 @@
     move-result-object v0
 
     .line 3
-    invoke-static {v0}, Ld2/k0;->a(Landroid/os/Parcel;)Lcom/google/android/gms/dynamic/IObjectWrapper;
+    invoke-static {v0}, Ld2/l0;->a(Landroid/os/Parcel;)Lcom/google/android/gms/dynamic/IObjectWrapper;
 
     move-result-object v0
 

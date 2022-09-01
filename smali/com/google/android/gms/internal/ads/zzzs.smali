@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field public f:Lcom/google/android/gms/internal/ads/zzatt;
+.field public g:Lcom/google/android/gms/internal/ads/zzatt;
 
 
 # direct methods
@@ -50,7 +50,7 @@
         }
     .end annotation
 
-    sget-object p1, Lk3/ad;->b:Lk3/qj0;
+    sget-object p1, Lk3/ad;->b:Lk3/sj0;
 
     new-instance v0, Lk3/qo;
 
@@ -219,7 +219,7 @@
         }
     .end annotation
 
-    iput-object p1, p0, Lcom/google/android/gms/internal/ads/zzzs;->f:Lcom/google/android/gms/internal/ads/zzatt;
+    iput-object p1, p0, Lcom/google/android/gms/internal/ads/zzzs;->g:Lcom/google/android/gms/internal/ads/zzatt;
 
     return-void
 .end method

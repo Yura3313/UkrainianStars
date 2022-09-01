@@ -30,7 +30,7 @@
 
 
 # instance fields
-.field public final g:Ljava/lang/Class;
+.field public final h:Ljava/lang/Class;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/lang/Class<",
@@ -41,13 +41,13 @@
     .end annotation
 .end field
 
-.field public final h:Ljava/lang/String;
-
 .field public final i:Ljava/lang/String;
 
 .field public final j:Ljava/lang/String;
 
-.field public final k:Z
+.field public final k:Ljava/lang/String;
+
+.field public final l:Z
 
 
 # direct methods
@@ -70,23 +70,23 @@
 
     const-string v0, "scidToken"
 
-    invoke-static {p3, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p3, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     invoke-direct {p0}, Lcom/supercell/id/ui/FlowFragment$BackStackEntry;-><init>()V
 
-    iput-object p1, p0, Lcom/supercell/id/ui/tokenlogin/TokenLoginFlowFragment$BackStackEntry;->h:Ljava/lang/String;
+    iput-object p1, p0, Lcom/supercell/id/ui/tokenlogin/TokenLoginFlowFragment$BackStackEntry;->i:Ljava/lang/String;
 
-    iput-object p2, p0, Lcom/supercell/id/ui/tokenlogin/TokenLoginFlowFragment$BackStackEntry;->i:Ljava/lang/String;
+    iput-object p2, p0, Lcom/supercell/id/ui/tokenlogin/TokenLoginFlowFragment$BackStackEntry;->j:Ljava/lang/String;
 
-    iput-object p3, p0, Lcom/supercell/id/ui/tokenlogin/TokenLoginFlowFragment$BackStackEntry;->j:Ljava/lang/String;
+    iput-object p3, p0, Lcom/supercell/id/ui/tokenlogin/TokenLoginFlowFragment$BackStackEntry;->k:Ljava/lang/String;
 
-    iput-boolean p4, p0, Lcom/supercell/id/ui/tokenlogin/TokenLoginFlowFragment$BackStackEntry;->k:Z
+    iput-boolean p4, p0, Lcom/supercell/id/ui/tokenlogin/TokenLoginFlowFragment$BackStackEntry;->l:Z
 
     .line 2
     const-class p1, Lcom/supercell/id/ui/tokenlogin/TokenLoginFlowFragment;
 
-    iput-object p1, p0, Lcom/supercell/id/ui/tokenlogin/TokenLoginFlowFragment$BackStackEntry;->g:Ljava/lang/Class;
+    iput-object p1, p0, Lcom/supercell/id/ui/tokenlogin/TokenLoginFlowFragment$BackStackEntry;->h:Ljava/lang/Class;
 
     return-void
 .end method
@@ -105,7 +105,7 @@
         }
     .end annotation
 
-    iget-object v0, p0, Lcom/supercell/id/ui/tokenlogin/TokenLoginFlowFragment$BackStackEntry;->g:Ljava/lang/Class;
+    iget-object v0, p0, Lcom/supercell/id/ui/tokenlogin/TokenLoginFlowFragment$BackStackEntry;->h:Ljava/lang/Class;
 
     return-object v0
 .end method
@@ -115,10 +115,10 @@
 
     const-string v0, "mainActivity"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
-    const-class v0, Lwc/f1;
+    const-class v0, Lwc/g1;
 
     .line 2
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
@@ -166,21 +166,11 @@
 
     check-cast p1, Lcom/supercell/id/ui/tokenlogin/TokenLoginFlowFragment$BackStackEntry;
 
-    iget-object v0, p0, Lcom/supercell/id/ui/tokenlogin/TokenLoginFlowFragment$BackStackEntry;->h:Ljava/lang/String;
-
-    iget-object v1, p1, Lcom/supercell/id/ui/tokenlogin/TokenLoginFlowFragment$BackStackEntry;->h:Ljava/lang/String;
-
-    invoke-static {v0, v1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
     iget-object v0, p0, Lcom/supercell/id/ui/tokenlogin/TokenLoginFlowFragment$BackStackEntry;->i:Ljava/lang/String;
 
     iget-object v1, p1, Lcom/supercell/id/ui/tokenlogin/TokenLoginFlowFragment$BackStackEntry;->i:Ljava/lang/String;
 
-    invoke-static {v0, v1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
@@ -190,15 +180,25 @@
 
     iget-object v1, p1, Lcom/supercell/id/ui/tokenlogin/TokenLoginFlowFragment$BackStackEntry;->j:Ljava/lang/String;
 
-    invoke-static {v0, v1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    iget-boolean v0, p0, Lcom/supercell/id/ui/tokenlogin/TokenLoginFlowFragment$BackStackEntry;->k:Z
+    iget-object v0, p0, Lcom/supercell/id/ui/tokenlogin/TokenLoginFlowFragment$BackStackEntry;->k:Ljava/lang/String;
 
-    iget-boolean p1, p1, Lcom/supercell/id/ui/tokenlogin/TokenLoginFlowFragment$BackStackEntry;->k:Z
+    iget-object v1, p1, Lcom/supercell/id/ui/tokenlogin/TokenLoginFlowFragment$BackStackEntry;->k:Ljava/lang/String;
+
+    invoke-static {v0, v1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    iget-boolean v0, p0, Lcom/supercell/id/ui/tokenlogin/TokenLoginFlowFragment$BackStackEntry;->l:Z
+
+    iget-boolean p1, p1, Lcom/supercell/id/ui/tokenlogin/TokenLoginFlowFragment$BackStackEntry;->l:Z
 
     if-ne v0, p1, :cond_0
 
@@ -219,7 +219,7 @@
 .method public final hashCode()I
     .locals 3
 
-    iget-object v0, p0, Lcom/supercell/id/ui/tokenlogin/TokenLoginFlowFragment$BackStackEntry;->h:Ljava/lang/String;
+    iget-object v0, p0, Lcom/supercell/id/ui/tokenlogin/TokenLoginFlowFragment$BackStackEntry;->i:Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -237,7 +237,7 @@
     :goto_0
     mul-int/lit8 v0, v0, 0x1f
 
-    iget-object v2, p0, Lcom/supercell/id/ui/tokenlogin/TokenLoginFlowFragment$BackStackEntry;->i:Ljava/lang/String;
+    iget-object v2, p0, Lcom/supercell/id/ui/tokenlogin/TokenLoginFlowFragment$BackStackEntry;->j:Ljava/lang/String;
 
     if-eqz v2, :cond_1
 
@@ -255,7 +255,7 @@
 
     mul-int/lit8 v0, v0, 0x1f
 
-    iget-object v2, p0, Lcom/supercell/id/ui/tokenlogin/TokenLoginFlowFragment$BackStackEntry;->j:Ljava/lang/String;
+    iget-object v2, p0, Lcom/supercell/id/ui/tokenlogin/TokenLoginFlowFragment$BackStackEntry;->k:Ljava/lang/String;
 
     if-eqz v2, :cond_2
 
@@ -268,7 +268,7 @@
 
     mul-int/lit8 v0, v0, 0x1f
 
-    iget-boolean v1, p0, Lcom/supercell/id/ui/tokenlogin/TokenLoginFlowFragment$BackStackEntry;->k:Z
+    iget-boolean v1, p0, Lcom/supercell/id/ui/tokenlogin/TokenLoginFlowFragment$BackStackEntry;->l:Z
 
     if-eqz v1, :cond_3
 
@@ -299,7 +299,7 @@
     move-result-object v0
 
     .line 2
-    iget-object v1, p0, Lcom/supercell/id/ui/tokenlogin/TokenLoginFlowFragment$BackStackEntry;->h:Ljava/lang/String;
+    iget-object v1, p0, Lcom/supercell/id/ui/tokenlogin/TokenLoginFlowFragment$BackStackEntry;->i:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -307,7 +307,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lcom/supercell/id/ui/tokenlogin/TokenLoginFlowFragment$BackStackEntry;->i:Ljava/lang/String;
+    iget-object v1, p0, Lcom/supercell/id/ui/tokenlogin/TokenLoginFlowFragment$BackStackEntry;->j:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -315,7 +315,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lcom/supercell/id/ui/tokenlogin/TokenLoginFlowFragment$BackStackEntry;->j:Ljava/lang/String;
+    iget-object v1, p0, Lcom/supercell/id/ui/tokenlogin/TokenLoginFlowFragment$BackStackEntry;->k:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -323,12 +323,12 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean v1, p0, Lcom/supercell/id/ui/tokenlogin/TokenLoginFlowFragment$BackStackEntry;->k:Z
+    iget-boolean v1, p0, Lcom/supercell/id/ui/tokenlogin/TokenLoginFlowFragment$BackStackEntry;->l:Z
 
     const-string v2, ")"
 
     .line 3
-    invoke-static {v0, v1, v2}, Landroidx/appcompat/app/j;->b(Ljava/lang/StringBuilder;ZLjava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, v1, v2}, Landroidx/appcompat/app/j;->a(Ljava/lang/StringBuilder;ZLjava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -340,25 +340,25 @@
 
     const-string p2, "dest"
 
-    invoke-static {p1, p2}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p2}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
-    iget-object p2, p0, Lcom/supercell/id/ui/tokenlogin/TokenLoginFlowFragment$BackStackEntry;->h:Ljava/lang/String;
-
-    invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
-
-    .line 2
     iget-object p2, p0, Lcom/supercell/id/ui/tokenlogin/TokenLoginFlowFragment$BackStackEntry;->i:Ljava/lang/String;
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
-    .line 3
+    .line 2
     iget-object p2, p0, Lcom/supercell/id/ui/tokenlogin/TokenLoginFlowFragment$BackStackEntry;->j:Ljava/lang/String;
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
+    .line 3
+    iget-object p2, p0, Lcom/supercell/id/ui/tokenlogin/TokenLoginFlowFragment$BackStackEntry;->k:Ljava/lang/String;
+
+    invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
+
     .line 4
-    iget-boolean p2, p0, Lcom/supercell/id/ui/tokenlogin/TokenLoginFlowFragment$BackStackEntry;->k:Z
+    iget-boolean p2, p0, Lcom/supercell/id/ui/tokenlogin/TokenLoginFlowFragment$BackStackEntry;->l:Z
 
     .line 5
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
@@ -382,9 +382,9 @@
 
     const-string v0, "mainActivity"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    const-class p1, Lwc/f1;
+    const-class p1, Lwc/g1;
 
     return-object p1
 .end method
@@ -394,7 +394,7 @@
 
     const-string v0, "mainActivity"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/4 p1, 0x1
 

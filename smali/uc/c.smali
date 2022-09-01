@@ -16,19 +16,19 @@
 
 
 # static fields
-.field public static final k:Luc/c$a;
+.field public static final l:Luc/c$a;
 
 
 # instance fields
-.field public final f:Luc/c$b;
-
-.field public g:I
+.field public final g:Luc/c$b;
 
 .field public h:I
 
 .field public i:I
 
 .field public j:I
+
+.field public k:I
 
 
 # direct methods
@@ -39,7 +39,7 @@
 
     invoke-direct {v0}, Luc/c$a;-><init>()V
 
-    sput-object v0, Luc/c;->k:Luc/c$a;
+    sput-object v0, Luc/c;->l:Luc/c$a;
 
     return-void
 .end method
@@ -51,16 +51,16 @@
     invoke-direct {p0}, Landroid/graphics/drawable/Drawable;-><init>()V
 
     .line 2
-    iput p3, p0, Luc/c;->g:I
+    iput p3, p0, Luc/c;->h:I
 
     .line 3
-    iput p4, p0, Luc/c;->h:I
+    iput p4, p0, Luc/c;->i:I
 
     .line 4
-    iput p5, p0, Luc/c;->i:I
+    iput p5, p0, Luc/c;->j:I
 
     .line 5
-    iput p6, p0, Luc/c;->j:I
+    iput p6, p0, Luc/c;->k:I
 
     .line 6
     new-instance p3, Luc/c$b;
@@ -69,7 +69,7 @@
 
     invoke-direct {p3, p4, p0}, Luc/c$b;-><init>(Luc/c$b;Luc/c;)V
 
-    iput-object p3, p0, Luc/c;->f:Luc/c$b;
+    iput-object p3, p0, Luc/c;->g:Luc/c$b;
 
     .line 7
     iput-object p1, p3, Luc/c$b;->a:Landroid/graphics/drawable/Drawable;
@@ -97,7 +97,7 @@
 
     invoke-direct {v0, p1, p0}, Luc/c$b;-><init>(Luc/c$b;Luc/c;)V
 
-    iput-object v0, p0, Luc/c;->f:Luc/c$b;
+    iput-object v0, p0, Luc/c;->g:Luc/c$b;
 
     return-void
 .end method
@@ -109,10 +109,10 @@
 
     const-string v0, "canvas"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
-    iget-object v0, p0, Luc/c;->f:Luc/c$b;
+    iget-object v0, p0, Luc/c;->g:Luc/c$b;
 
     .line 2
     iget-object v0, v0, Luc/c$b;->a:Landroid/graphics/drawable/Drawable;
@@ -127,7 +127,7 @@
     if-eqz v0, :cond_0
 
     .line 4
-    iget-object v1, p0, Luc/c;->f:Luc/c$b;
+    iget-object v1, p0, Luc/c;->g:Luc/c$b;
 
     .line 5
     iget-object v1, v1, Luc/c$b;->b:Landroid/graphics/drawable/Drawable;
@@ -139,28 +139,28 @@
 
     iget v3, v0, Landroid/graphics/Rect;->left:I
 
-    iget v4, p0, Luc/c;->g:I
+    iget v4, p0, Luc/c;->h:I
 
     sub-int/2addr v3, v4
 
     .line 7
     iget v4, v0, Landroid/graphics/Rect;->top:I
 
-    iget v5, p0, Luc/c;->i:I
+    iget v5, p0, Luc/c;->j:I
 
     sub-int/2addr v4, v5
 
     .line 8
     iget v5, v0, Landroid/graphics/Rect;->right:I
 
-    iget v6, p0, Luc/c;->h:I
+    iget v6, p0, Luc/c;->i:I
 
     add-int/2addr v5, v6
 
     .line 9
     iget v0, v0, Landroid/graphics/Rect;->bottom:I
 
-    iget v6, p0, Luc/c;->j:I
+    iget v6, p0, Luc/c;->k:I
 
     add-int/2addr v0, v6
 
@@ -171,7 +171,7 @@
 
     .line 11
     :cond_0
-    iget-object v0, p0, Luc/c;->f:Luc/c$b;
+    iget-object v0, p0, Luc/c;->g:Luc/c$b;
 
     .line 12
     iget-object v0, v0, Luc/c$b;->b:Landroid/graphics/drawable/Drawable;
@@ -183,7 +183,7 @@
 
     .line 14
     :cond_1
-    iget-object v0, p0, Luc/c;->f:Luc/c$b;
+    iget-object v0, p0, Luc/c;->g:Luc/c$b;
 
     .line 15
     iget-object v0, v0, Luc/c$b;->a:Landroid/graphics/drawable/Drawable;
@@ -206,7 +206,7 @@
     move-result v0
 
     .line 2
-    iget-object v1, p0, Luc/c;->f:Luc/c$b;
+    iget-object v1, p0, Luc/c;->g:Luc/c$b;
 
     .line 3
     iget v2, v1, Luc/c$b;->c:I
@@ -234,7 +234,7 @@
     or-int/2addr v0, v1
 
     .line 6
-    iget-object v1, p0, Luc/c;->f:Luc/c$b;
+    iget-object v1, p0, Luc/c;->g:Luc/c$b;
 
     .line 7
     iget-object v1, v1, Luc/c$b;->b:Landroid/graphics/drawable/Drawable;
@@ -256,7 +256,7 @@
     .locals 4
 
     .line 1
-    iget-object v0, p0, Luc/c;->f:Luc/c$b;
+    iget-object v0, p0, Luc/c;->g:Luc/c$b;
 
     .line 2
     iget-boolean v1, v0, Luc/c$b;->d:Z
@@ -304,7 +304,7 @@
     if-eqz v0, :cond_3
 
     .line 6
-    iget-object v0, p0, Luc/c;->f:Luc/c$b;
+    iget-object v0, p0, Luc/c;->g:Luc/c$b;
 
     invoke-virtual {p0}, Luc/c;->getChangingConfigurations()I
 
@@ -314,7 +314,7 @@
     iput v1, v0, Luc/c$b;->c:I
 
     .line 8
-    iget-object v0, p0, Luc/c;->f:Luc/c$b;
+    iget-object v0, p0, Luc/c;->g:Luc/c$b;
 
     return-object v0
 
@@ -335,7 +335,7 @@
 
     const-string v0, "who"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {p0}, Landroid/graphics/drawable/Drawable;->getCallback()Landroid/graphics/drawable/Drawable$Callback;
 
@@ -353,7 +353,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Luc/c;->f:Luc/c$b;
+    iget-object v0, p0, Luc/c;->g:Luc/c$b;
 
     .line 2
     iget-object v0, v0, Luc/c$b;->a:Landroid/graphics/drawable/Drawable;
@@ -380,7 +380,7 @@
     if-eqz p1, :cond_0
 
     .line 1
-    iget-object v0, p0, Luc/c;->f:Luc/c$b;
+    iget-object v0, p0, Luc/c;->g:Luc/c$b;
 
     .line 2
     iget-object v0, v0, Luc/c$b;->a:Landroid/graphics/drawable/Drawable;
@@ -392,7 +392,7 @@
 
     .line 4
     :cond_0
-    iget-object p1, p0, Luc/c;->f:Luc/c$b;
+    iget-object p1, p0, Luc/c;->g:Luc/c$b;
 
     .line 5
     iget-object p1, p1, Luc/c$b;->a:Landroid/graphics/drawable/Drawable;
@@ -407,7 +407,7 @@
     if-eqz p1, :cond_1
 
     .line 7
-    iget-object v0, p0, Luc/c;->f:Luc/c$b;
+    iget-object v0, p0, Luc/c;->g:Luc/c$b;
 
     .line 8
     iget-object v0, v0, Luc/c$b;->b:Landroid/graphics/drawable/Drawable;
@@ -419,28 +419,28 @@
 
     iget v2, p1, Landroid/graphics/Rect;->left:I
 
-    iget v3, p0, Luc/c;->g:I
+    iget v3, p0, Luc/c;->h:I
 
     sub-int/2addr v2, v3
 
     .line 10
     iget v3, p1, Landroid/graphics/Rect;->top:I
 
-    iget v4, p0, Luc/c;->i:I
+    iget v4, p0, Luc/c;->j:I
 
     sub-int/2addr v3, v4
 
     .line 11
     iget v4, p1, Landroid/graphics/Rect;->right:I
 
-    iget v5, p0, Luc/c;->h:I
+    iget v5, p0, Luc/c;->i:I
 
     add-int/2addr v4, v5
 
     .line 12
     iget p1, p1, Landroid/graphics/Rect;->bottom:I
 
-    iget v5, p0, Luc/c;->j:I
+    iget v5, p0, Luc/c;->k:I
 
     add-int/2addr p1, v5
 
@@ -459,7 +459,7 @@
     if-eqz p1, :cond_1
 
     .line 1
-    iget-object v0, p0, Luc/c;->f:Luc/c$b;
+    iget-object v0, p0, Luc/c;->g:Luc/c$b;
 
     .line 2
     iget-object v0, v0, Luc/c$b;->a:Landroid/graphics/drawable/Drawable;
@@ -501,11 +501,11 @@
 
     const-string v0, "who"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string p1, "what"
 
-    invoke-static {p2, p1}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, p1}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {p0}, Landroid/graphics/drawable/Drawable;->getCallback()Landroid/graphics/drawable/Drawable$Callback;
 
@@ -536,11 +536,11 @@
 
     const-string v0, "who"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string p1, "what"
 
-    invoke-static {p2, p1}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, p1}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {p0}, Landroid/graphics/drawable/Drawable;->getCallback()Landroid/graphics/drawable/Drawable$Callback;
 

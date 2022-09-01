@@ -27,11 +27,11 @@
 
 
 # instance fields
-.field public f:F
-
 .field public g:F
 
-.field public h:Ljava/util/ArrayList;
+.field public h:F
+
+.field public i:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/ArrayList<",
@@ -41,9 +41,9 @@
     .end annotation
 .end field
 
-.field public i:F
+.field public j:F
 
-.field public j:Z
+.field public k:Z
 
 
 # direct methods
@@ -70,21 +70,21 @@
 
     move-result v0
 
-    iput v0, p0, Lcom/google/android/material/slider/BaseSlider$SliderState;->f:F
+    iput v0, p0, Lcom/google/android/material/slider/BaseSlider$SliderState;->g:F
 
     .line 4
     invoke-virtual {p1}, Landroid/os/Parcel;->readFloat()F
 
     move-result v0
 
-    iput v0, p0, Lcom/google/android/material/slider/BaseSlider$SliderState;->g:F
+    iput v0, p0, Lcom/google/android/material/slider/BaseSlider$SliderState;->h:F
 
     .line 5
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/google/android/material/slider/BaseSlider$SliderState;->h:Ljava/util/ArrayList;
+    iput-object v0, p0, Lcom/google/android/material/slider/BaseSlider$SliderState;->i:Ljava/util/ArrayList;
 
     .line 6
     const-class v1, Ljava/lang/Float;
@@ -100,7 +100,7 @@
 
     move-result v0
 
-    iput v0, p0, Lcom/google/android/material/slider/BaseSlider$SliderState;->i:F
+    iput v0, p0, Lcom/google/android/material/slider/BaseSlider$SliderState;->j:F
 
     .line 8
     invoke-virtual {p1}, Landroid/os/Parcel;->createBooleanArray()[Z
@@ -111,7 +111,7 @@
 
     aget-boolean p1, p1, v0
 
-    iput-boolean p1, p0, Lcom/google/android/material/slider/BaseSlider$SliderState;->j:Z
+    iput-boolean p1, p0, Lcom/google/android/material/slider/BaseSlider$SliderState;->k:Z
 
     return-void
 .end method
@@ -134,22 +134,22 @@
     invoke-super {p0, p1, p2}, Landroid/view/View$BaseSavedState;->writeToParcel(Landroid/os/Parcel;I)V
 
     .line 2
-    iget p2, p0, Lcom/google/android/material/slider/BaseSlider$SliderState;->f:F
-
-    invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeFloat(F)V
-
-    .line 3
     iget p2, p0, Lcom/google/android/material/slider/BaseSlider$SliderState;->g:F
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeFloat(F)V
 
+    .line 3
+    iget p2, p0, Lcom/google/android/material/slider/BaseSlider$SliderState;->h:F
+
+    invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeFloat(F)V
+
     .line 4
-    iget-object p2, p0, Lcom/google/android/material/slider/BaseSlider$SliderState;->h:Ljava/util/ArrayList;
+    iget-object p2, p0, Lcom/google/android/material/slider/BaseSlider$SliderState;->i:Ljava/util/ArrayList;
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeList(Ljava/util/List;)V
 
     .line 5
-    iget p2, p0, Lcom/google/android/material/slider/BaseSlider$SliderState;->i:F
+    iget p2, p0, Lcom/google/android/material/slider/BaseSlider$SliderState;->j:F
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeFloat(F)V
 
@@ -158,7 +158,7 @@
     new-array p2, p2, [Z
 
     .line 6
-    iget-boolean v0, p0, Lcom/google/android/material/slider/BaseSlider$SliderState;->j:Z
+    iget-boolean v0, p0, Lcom/google/android/material/slider/BaseSlider$SliderState;->k:Z
 
     const/4 v1, 0x0
 

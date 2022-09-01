@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field public f:Landroid/widget/LinearLayout;
+.field public g:Landroid/widget/LinearLayout;
 
-.field public g:I
+.field public h:I
 
 
 # direct methods
@@ -17,14 +17,14 @@
     invoke-direct {p0}, Landroid/view/animation/Animation;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lr7/a;->f:Landroid/widget/LinearLayout;
+    iput-object p1, p0, Lr7/a;->g:Landroid/widget/LinearLayout;
 
     .line 3
     invoke-virtual {p1}, Landroid/view/View;->getHeight()I
 
     move-result p1
 
-    iput p1, p0, Lr7/a;->g:I
+    iput p1, p0, Lr7/a;->h:I
 
     return-void
 .end method
@@ -35,7 +35,7 @@
     .locals 1
 
     .line 1
-    iget p2, p0, Lr7/a;->g:I
+    iget p2, p0, Lr7/a;->h:I
 
     int-to-float p2, p2
 
@@ -48,7 +48,7 @@
     float-to-int p1, v0
 
     .line 2
-    iget-object p2, p0, Lr7/a;->f:Landroid/widget/LinearLayout;
+    iget-object p2, p0, Lr7/a;->g:Landroid/widget/LinearLayout;
 
     invoke-virtual {p2}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
@@ -57,7 +57,7 @@
     iput p1, p2, Landroid/view/ViewGroup$LayoutParams;->height:I
 
     .line 3
-    iget-object p1, p0, Lr7/a;->f:Landroid/widget/LinearLayout;
+    iget-object p1, p0, Lr7/a;->g:Landroid/widget/LinearLayout;
 
     invoke-virtual {p1}, Landroid/view/View;->requestLayout()V
 

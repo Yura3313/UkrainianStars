@@ -31,7 +31,7 @@
             "(TT;",
             "Lke/d<",
             "-",
-            "Lie/h;",
+            "Lie/i;",
             ">;)",
             "Ljava/lang/Object;"
         }

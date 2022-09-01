@@ -1,5 +1,5 @@
 .class public final Lcom/supercell/id/ui/messages/MessagesFragment$b;
-.super Lse/h;
+.super Lse/i;
 .source "MessagesFragment.kt"
 
 # interfaces
@@ -18,28 +18,28 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/l<",
         "Landroid/view/View;",
-        "Lie/h;",
+        "Lie/i;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic f:Lcom/supercell/id/ui/messages/MessagesFragment;
+.field public final synthetic g:Lcom/supercell/id/ui/messages/MessagesFragment;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/id/ui/messages/MessagesFragment;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/ui/messages/MessagesFragment$b;->f:Lcom/supercell/id/ui/messages/MessagesFragment;
+    iput-object p1, p0, Lcom/supercell/id/ui/messages/MessagesFragment$b;->g:Lcom/supercell/id/ui/messages/MessagesFragment;
 
     const/4 p1, 0x1
 
-    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -53,15 +53,15 @@
     check-cast p1, Landroid/view/View;
 
     .line 2
-    iget-object v0, p0, Lcom/supercell/id/ui/messages/MessagesFragment$b;->f:Lcom/supercell/id/ui/messages/MessagesFragment;
+    iget-object v0, p0, Lcom/supercell/id/ui/messages/MessagesFragment$b;->g:Lcom/supercell/id/ui/messages/MessagesFragment;
 
     .line 3
-    iget-object v0, v0, Lcom/supercell/id/ui/messages/MessagesFragment;->h0:Landroidx/recyclerview/widget/RecyclerView;
+    iget-object v0, v0, Lcom/supercell/id/ui/messages/MessagesFragment;->i0:Landroidx/recyclerview/widget/RecyclerView;
 
     if-eqz v0, :cond_0
 
     .line 4
-    iget-object v0, v0, Landroidx/recyclerview/widget/RecyclerView;->n0:Ljava/util/ArrayList;
+    iget-object v0, v0, Landroidx/recyclerview/widget/RecyclerView;->o0:Ljava/util/ArrayList;
 
     if-eqz v0, :cond_0
 
@@ -70,7 +70,7 @@
 
     .line 6
     :cond_0
-    iget-object v0, p0, Lcom/supercell/id/ui/messages/MessagesFragment$b;->f:Lcom/supercell/id/ui/messages/MessagesFragment;
+    iget-object v0, p0, Lcom/supercell/id/ui/messages/MessagesFragment$b;->g:Lcom/supercell/id/ui/messages/MessagesFragment;
 
     instance-of v1, p1, Landroid/view/ViewGroup;
 
@@ -92,7 +92,7 @@
 
     move-result v3
 
-    invoke-static {v1, v3}, Lcom/google/android/play/core/appupdate/c;->c(II)Lve/c;
+    invoke-static {v1, v3}, La5/b0;->l(II)Lve/c;
 
     move-result-object v1
 
@@ -113,7 +113,7 @@
     check-cast v4, Lve/b;
 
     .line 10
-    iget-boolean v4, v4, Lve/b;->g:Z
+    iget-boolean v4, v4, Lve/b;->h:Z
 
     if-eqz v4, :cond_3
 
@@ -190,10 +190,10 @@
     check-cast v2, Landroidx/recyclerview/widget/RecyclerView;
 
     .line 15
-    iput-object v2, v0, Lcom/supercell/id/ui/messages/MessagesFragment;->h0:Landroidx/recyclerview/widget/RecyclerView;
+    iput-object v2, v0, Lcom/supercell/id/ui/messages/MessagesFragment;->i0:Landroidx/recyclerview/widget/RecyclerView;
 
     .line 16
-    iget-object p1, p0, Lcom/supercell/id/ui/messages/MessagesFragment$b;->f:Lcom/supercell/id/ui/messages/MessagesFragment;
+    iget-object p1, p0, Lcom/supercell/id/ui/messages/MessagesFragment$b;->g:Lcom/supercell/id/ui/messages/MessagesFragment;
 
     const/4 v0, 0x1
 
@@ -201,7 +201,7 @@
     invoke-virtual {p1, v0}, Lcom/supercell/id/ui/BaseFragment;->a1(Z)V
 
     .line 18
-    sget-object p1, Lie/h;->a:Lie/h;
+    sget-object p1, Lie/i;->a:Lie/i;
 
     return-object p1
 .end method

@@ -1,5 +1,5 @@
 .class public final Lae/u$b;
-.super Lse/h;
+.super Lse/i;
 .source "IdServices.kt"
 
 # interfaces
@@ -18,17 +18,17 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/l<",
         "Lbe/w;",
-        "Lie/h;",
+        "Lie/i;",
         ">;"
     }
 .end annotation
 
 
 # static fields
-.field public static final f:Lae/u$b;
+.field public static final g:Lae/u$b;
 
 
 # direct methods
@@ -39,7 +39,7 @@
 
     invoke-direct {v0}, Lae/u$b;-><init>()V
 
-    sput-object v0, Lae/u$b;->f:Lae/u$b;
+    sput-object v0, Lae/u$b;->g:Lae/u$b;
 
     return-void
 .end method
@@ -49,7 +49,7 @@
 
     const/4 v0, 0x1
 
-    invoke-direct {p0, v0}, Lse/h;-><init>(I)V
+    invoke-direct {p0, v0}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -76,7 +76,7 @@
     if-eqz v2, :cond_0
 
     .line 3
-    iget-object v2, v2, Lcom/supercell/id/model/IdProfile;->i:Ljava/lang/String;
+    iget-object v2, v2, Lcom/supercell/id/model/IdProfile;->j:Ljava/lang/String;
 
     goto :goto_0
 
@@ -94,7 +94,7 @@
     if-eqz v3, :cond_1
 
     .line 5
-    iget-object v3, v3, Lcom/supercell/id/model/IdProfile;->l:Ljava/lang/String;
+    iget-object v3, v3, Lcom/supercell/id/model/IdProfile;->m:Ljava/lang/String;
 
     if-eqz v3, :cond_1
 
@@ -113,7 +113,7 @@
     if-eqz v3, :cond_2
 
     .line 7
-    iget-object v1, v3, Lcom/supercell/id/model/IdProfile;->k:Ljava/lang/String;
+    iget-object v1, v3, Lcom/supercell/id/model/IdProfile;->l:Ljava/lang/String;
 
     :cond_2
     :goto_1
@@ -127,7 +127,7 @@
     if-eqz p1, :cond_3
 
     .line 9
-    iget p1, p1, Lcom/supercell/id/model/IdProfile;->w:I
+    iget p1, p1, Lcom/supercell/id/model/IdProfile;->x:I
 
     goto :goto_2
 
@@ -139,7 +139,7 @@
     invoke-virtual {v0, v2, v1, p1}, Lcom/supercell/id/SupercellId;->setProfile$supercellId_release(Ljava/lang/String;Ljava/lang/String;I)V
 
     .line 11
-    sget-object p1, Lie/h;->a:Lie/h;
+    sget-object p1, Lie/i;->a:Lie/i;
 
     return-object p1
 .end method

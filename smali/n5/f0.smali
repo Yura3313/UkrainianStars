@@ -273,7 +273,7 @@
     if-nez v0, :cond_0
 
     .line 2
-    sget-object v0, Ln5/x;->k:Ln5/x;
+    sget-object v0, Ln5/x;->l:Ln5/x;
 
     :cond_0
     return-object v0

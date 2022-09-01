@@ -1,43 +1,42 @@
-.class public abstract Lk3/kn0;
-.super Lk3/cn0;
+.class public interface abstract Lk3/kn0;
+.super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "<KeyProtoT::",
-        "Lk3/ws0;",
-        "PublicKeyProtoT::",
-        "Lk3/ws0;",
+        "<P:",
+        "Ljava/lang/Object;",
         ">",
-        "Lk3/cn0<",
-        "TKeyProtoT;>;"
+        "Ljava/lang/Object;"
     }
 .end annotation
 
 
-# direct methods
-.method public varargs constructor <init>([Lk3/dn0;)V
-    .locals 1
+# virtual methods
+.method public abstract a(Lcom/google/android/gms/internal/ads/v1;)Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Ljava/lang/Class<",
-            "TKeyProtoT;>;",
-            "Ljava/lang/Class<",
-            "TPublicKeyProtoT;>;[",
-            "Lk3/dn0<",
-            "*TKeyProtoT;>;)V"
+            "Lcom/google/android/gms/internal/ads/v1<",
+            "TP;>;)TP;"
         }
     .end annotation
 
-    .annotation runtime Ljava/lang/SafeVarargs;
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/security/GeneralSecurityException;
+        }
     .end annotation
+.end method
 
-    const-class v0, Lcom/google/android/gms/internal/ads/i4;
-
-    invoke-direct {p0, v0, p1}, Lk3/cn0;-><init>(Ljava/lang/Class;[Lk3/dn0;)V
-
-    return-void
+.method public abstract b()Ljava/lang/Class;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/lang/Class<",
+            "TP;>;"
+        }
+    .end annotation
 .end method

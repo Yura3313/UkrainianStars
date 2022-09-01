@@ -25,7 +25,7 @@
 
 
 # instance fields
-.field public final g:Ljava/lang/Class;
+.field public final h:Ljava/lang/Class;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/lang/Class<",
@@ -59,7 +59,7 @@
     .line 2
     const-class v0, Lcom/supercell/id/ui/scancode/ScanCodeFragment;
 
-    iput-object v0, p0, Lcom/supercell/id/ui/scancode/ScanCodeFragment$BackStackEntry;->g:Ljava/lang/Class;
+    iput-object v0, p0, Lcom/supercell/id/ui/scancode/ScanCodeFragment$BackStackEntry;->h:Ljava/lang/Class;
 
     return-void
 .end method
@@ -71,7 +71,7 @@
 
     const-string p2, "mainActivity"
 
-    invoke-static {p1, p2}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p2}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/4 p1, 0x0
 
@@ -83,7 +83,7 @@
 
     const-string p2, "mainActivity"
 
-    invoke-static {p1, p2}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p2}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/4 p1, 0x0
 
@@ -107,14 +107,14 @@
             ")",
             "Ljava/lang/Class<",
             "+",
-            "Lwc/a1;",
+            "Lwc/b1;",
             ">;"
         }
     .end annotation
 
     const-string v0, "mainActivity"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-class p1, Lcom/supercell/id/ui/scancode/ScanCodeFragment$b;
 
@@ -133,7 +133,7 @@
         }
     .end annotation
 
-    iget-object v0, p0, Lcom/supercell/id/ui/scancode/ScanCodeFragment$BackStackEntry;->g:Ljava/lang/Class;
+    iget-object v0, p0, Lcom/supercell/id/ui/scancode/ScanCodeFragment$BackStackEntry;->h:Ljava/lang/Class;
 
     return-object v0
 .end method
@@ -162,14 +162,14 @@
     const-string v1, "mainActivity.resources"
 
     .line 1
-    invoke-static {p1, v0, v1}, Lk3/ax;->e(Lcom/supercell/id/ui/MainActivity;Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {p1, v0, v1}, Lwc/v0;->a(Lcom/supercell/id/ui/MainActivity;Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
     .line 2
-    invoke-static {p1}, Lcom/android/billingclient/api/c0;->d(Lcom/supercell/id/ui/MainActivity;)Z
+    invoke-static {p1}, Lcom/android/billingclient/api/b0;->d(Lcom/supercell/id/ui/MainActivity;)Z
 
     move-result p1
 
@@ -208,9 +208,9 @@
 
     const-string v0, "mainActivity"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    const-class p1, Lwc/d1;
+    const-class p1, Lwc/e1;
 
     return-object p1
 .end method

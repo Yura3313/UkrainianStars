@@ -583,7 +583,7 @@
     int-to-float v2, v2
 
     .line 3
-    invoke-static {v0, p1, v1, v2}, Ltd/c;->h(FFFF)F
+    invoke-static {v0, p1, v1, v2}, Lk3/gj;->c(FFFF)F
 
     move-result p1
 

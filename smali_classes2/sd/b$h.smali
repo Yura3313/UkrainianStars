@@ -1,5 +1,5 @@
 .class public final Lsd/b$h;
-.super Lse/h;
+.super Lse/i;
 .source "FriendsFragment.kt"
 
 # interfaces
@@ -18,31 +18,31 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/a<",
-        "Lae/e2;",
+        "Lae/d2;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic f:Ljava/util/List;
-
 .field public final synthetic g:Ljava/util/List;
+
+.field public final synthetic h:Ljava/util/List;
 
 
 # direct methods
 .method public constructor <init>(Ljava/util/List;Ljava/util/List;)V
     .locals 0
 
-    iput-object p1, p0, Lsd/b$h;->f:Ljava/util/List;
+    iput-object p1, p0, Lsd/b$h;->g:Ljava/util/List;
 
-    iput-object p2, p0, Lsd/b$h;->g:Ljava/util/List;
+    iput-object p2, p0, Lsd/b$h;->h:Ljava/util/List;
 
     const/4 p1, 0x0
 
-    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -53,7 +53,7 @@
     .locals 10
 
     .line 1
-    iget-object v0, p0, Lsd/b$h;->f:Ljava/util/List;
+    iget-object v0, p0, Lsd/b$h;->g:Ljava/util/List;
 
     .line 2
     sget-object v1, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
@@ -74,14 +74,14 @@
 
     invoke-direct {v2, v1}, Lsd/f;-><init>(Ljava/util/Comparator;)V
 
-    invoke-static {v0, v2}, Lje/j;->L(Ljava/lang/Iterable;Ljava/util/Comparator;)Ljava/util/List;
+    invoke-static {v0, v2}, Lje/j;->G(Ljava/lang/Iterable;Ljava/util/Comparator;)Ljava/util/List;
 
     move-result-object v0
 
     .line 5
-    sget-object v1, Lsd/g;->f:Lsd/g;
+    sget-object v1, Lsd/g;->g:Lsd/g;
 
-    invoke-static {v0, v1}, Lje/j;->L(Ljava/lang/Iterable;Ljava/util/Comparator;)Ljava/util/List;
+    invoke-static {v0, v1}, Lje/j;->G(Ljava/lang/Iterable;Ljava/util/Comparator;)Ljava/util/List;
 
     move-result-object v0
 
@@ -177,7 +177,7 @@
     aput-object v1, v3, v0
 
     .line 18
-    invoke-static {v3}, Lcom/android/billingclient/api/z;->k([Ljava/lang/Object;)Ljava/util/List;
+    invoke-static {v3}, Lcom/android/billingclient/api/y;->f([Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object v1
 
@@ -228,7 +228,7 @@
 
     const/16 v5, 0xa
 
-    invoke-static {v3, v5}, Lje/f;->q(Ljava/lang/Iterable;I)I
+    invoke-static {v3, v5}, Lje/f;->l(Ljava/lang/Iterable;I)I
 
     move-result v5
 
@@ -257,7 +257,7 @@
     sget-object v6, Lsd/h;->a:Lae/k;
 
     .line 26
-    invoke-static {v5}, Lje/j;->V(Ljava/lang/Iterable;)Ljava/lang/Iterable;
+    invoke-static {v5}, Lje/j;->Q(Ljava/lang/Iterable;)Ljava/lang/Iterable;
 
     move-result-object v5
 
@@ -300,14 +300,14 @@
     iget-object v7, v7, Lje/p;->b:Ljava/lang/Object;
 
     .line 32
-    invoke-static {v7}, Lcom/android/billingclient/api/z;->h(Ljava/lang/Object;)Ljava/util/List;
+    invoke-static {v7}, Lcom/android/billingclient/api/y;->c(Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object v7
 
     goto :goto_4
 
     :cond_4
-    new-array v8, v2, [Lae/b2;
+    new-array v8, v2, [Lae/a2;
 
     sget-object v9, Lsd/h;->a:Lae/k;
 
@@ -317,17 +317,17 @@
     iget-object v7, v7, Lje/p;->b:Ljava/lang/Object;
 
     .line 34
-    check-cast v7, Lae/b2;
+    check-cast v7, Lae/a2;
 
     aput-object v7, v8, v0
 
-    invoke-static {v8}, Lcom/android/billingclient/api/z;->i([Ljava/lang/Object;)Ljava/util/List;
+    invoke-static {v8}, Lcom/android/billingclient/api/y;->d([Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object v7
 
     .line 35
     :goto_4
-    invoke-static {v6, v7}, Lje/h;->u(Ljava/util/Collection;Ljava/lang/Iterable;)Z
+    invoke-static {v6, v7}, Lje/h;->p(Ljava/util/Collection;Ljava/lang/Iterable;)Z
 
     goto :goto_3
 
@@ -339,17 +339,17 @@
 
     .line 37
     :cond_6
-    invoke-static {v1}, Lje/f;->s(Ljava/lang/Iterable;)Ljava/util/List;
+    invoke-static {v1}, Lje/f;->n(Ljava/lang/Iterable;)Ljava/util/List;
 
     move-result-object v0
 
     .line 38
-    new-instance v1, Lae/e2;
+    new-instance v1, Lae/d2;
 
-    iget-object v2, p0, Lsd/b$h;->g:Ljava/util/List;
+    iget-object v2, p0, Lsd/b$h;->h:Ljava/util/List;
 
     .line 39
-    new-instance v3, Lae/d2;
+    new-instance v3, Lae/c2;
 
     if-eqz v2, :cond_7
 
@@ -359,18 +359,18 @@
 
     .line 40
     :cond_7
-    sget-object v4, Lje/l;->f:Lje/l;
+    sget-object v4, Lje/l;->g:Lje/l;
 
     .line 41
     :goto_5
-    invoke-direct {v3, v4, v0}, Lae/d2;-><init>(Ljava/util/List;Ljava/util/List;)V
+    invoke-direct {v3, v4, v0}, Lae/c2;-><init>(Ljava/util/List;Ljava/util/List;)V
 
     .line 42
     invoke-static {v3}, Landroidx/recyclerview/widget/l;->a(Landroidx/recyclerview/widget/l$b;)Landroidx/recyclerview/widget/l$c;
 
     move-result-object v3
 
-    invoke-direct {v1, v2, v0, v3}, Lae/e2;-><init>(Ljava/util/List;Ljava/util/List;Landroidx/recyclerview/widget/l$c;)V
+    invoke-direct {v1, v2, v0, v3}, Lae/d2;-><init>(Ljava/util/List;Ljava/util/List;Landroidx/recyclerview/widget/l$c;)V
 
     return-object v1
 .end method

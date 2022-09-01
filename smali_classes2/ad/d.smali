@@ -53,7 +53,7 @@
 
     move-result-object p1
 
-    invoke-static {p2, p1}, Lid/h;->b(Ljava/lang/Comparable;Ljava/lang/Comparable;)I
+    invoke-static {p2, p1}, Lae/a1;->a(Ljava/lang/Comparable;Ljava/lang/Comparable;)I
 
     move-result p1
 

@@ -4,210 +4,83 @@
 
 
 # instance fields
-.field public final a:Ljava/util/List;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/List<",
-            "Ljava/lang/String;",
-            ">;"
-        }
-    .end annotation
-.end field
+.field public final a:Z
 
-.field public final b:Ljava/lang/String;
+.field public final b:Z
 
 .field public final c:Ljava/lang/String;
 
 .field public final d:Z
 
-.field public e:Ljava/lang/String;
+.field public final e:Z
 
-.field public final f:I
+.field public final f:Z
 
-.field public final g:Lorg/json/JSONObject;
+.field public final g:Ljava/lang/String;
 
 .field public final h:Ljava/lang/String;
 
+.field public final i:Ljava/lang/String;
+
+.field public final j:I
+
+.field public final k:I
+
+.field public final l:F
+
+.field public final m:I
+
+.field public final n:I
+
 
 # direct methods
-.method public constructor <init>(Lorg/json/JSONObject;)V
-    .locals 4
+.method public constructor <init>(ZZLjava/lang/String;ZZZLjava/lang/String;Ljava/lang/String;Ljava/lang/String;IIFII)V
+    .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    const-string v0, "url"
-
     .line 2
-    invoke-virtual {p1, v0}, Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v0
-
-    iput-object v0, p0, Lk3/l8;->e:Ljava/lang/String;
-
-    const-string v0, "base_uri"
+    iput-boolean p1, p0, Lk3/l8;->a:Z
 
     .line 3
-    invoke-virtual {p1, v0}, Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v0
-
-    iput-object v0, p0, Lk3/l8;->b:Ljava/lang/String;
-
-    const-string v0, "post_parameters"
+    iput-boolean p2, p0, Lk3/l8;->b:Z
 
     .line 4
-    invoke-virtual {p1, v0}, Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v0
-
-    iput-object v0, p0, Lk3/l8;->c:Ljava/lang/String;
-
-    const-string v0, "drt_include"
+    iput-object p3, p0, Lk3/l8;->c:Ljava/lang/String;
 
     .line 5
-    invoke-virtual {p1, v0}, Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v0
-
-    const/4 v1, 0x0
-
-    const/4 v2, 0x1
-
-    if-eqz v0, :cond_1
-
-    const-string v3, "1"
+    iput-boolean p4, p0, Lk3/l8;->d:Z
 
     .line 6
-    invoke-virtual {v0, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v3
-
-    if-nez v3, :cond_0
-
-    const-string v3, "true"
-
-    invoke-virtual {v0, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_1
-
-    :cond_0
-    const/4 v0, 0x1
-
-    goto :goto_0
-
-    :cond_1
-    const/4 v0, 0x0
+    iput-boolean p5, p0, Lk3/l8;->e:Z
 
     .line 7
-    :goto_0
-    iput-boolean v0, p0, Lk3/l8;->d:Z
-
-    const-string v0, "request_id"
+    iput-boolean p6, p0, Lk3/l8;->f:Z
 
     .line 8
-    invoke-virtual {p1, v0}, Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;
-
-    const-string v0, "type"
+    iput-object p7, p0, Lk3/l8;->g:Ljava/lang/String;
 
     .line 9
-    invoke-virtual {p1, v0}, Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;
-
-    const-string v0, "errors"
+    iput-object p8, p0, Lk3/l8;->h:Ljava/lang/String;
 
     .line 10
-    invoke-virtual {p1, v0}, Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v0
-
-    if-nez v0, :cond_2
-
-    const/4 v0, 0x0
-
-    goto :goto_1
-
-    :cond_2
-    const-string v3, ","
+    iput p10, p0, Lk3/l8;->j:I
 
     .line 11
-    invoke-virtual {v0, v3}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-static {v0}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
-
-    move-result-object v0
+    iput p11, p0, Lk3/l8;->k:I
 
     .line 12
-    :goto_1
-    iput-object v0, p0, Lk3/l8;->a:Ljava/util/List;
-
-    const-string v0, "valid"
+    iput p12, p0, Lk3/l8;->l:F
 
     .line 13
-    invoke-virtual {p1, v0, v1}, Lorg/json/JSONObject;->optInt(Ljava/lang/String;I)I
-
-    move-result v0
-
-    if-ne v0, v2, :cond_3
-
-    const/4 v2, -0x2
+    iput p13, p0, Lk3/l8;->m:I
 
     .line 14
-    :cond_3
-    iput v2, p0, Lk3/l8;->f:I
-
-    const-string v0, "fetched_ad"
+    iput p14, p0, Lk3/l8;->n:I
 
     .line 15
-    invoke-virtual {p1, v0}, Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;
-
-    const-string v0, "render_test_ad_label"
-
-    .line 16
-    invoke-virtual {p1, v0}, Lorg/json/JSONObject;->optBoolean(Ljava/lang/String;)Z
-
-    const-string v0, "preprocessor_flags"
-
-    .line 17
-    invoke-virtual {p1, v0}, Lorg/json/JSONObject;->optJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
-
-    move-result-object v0
-
-    if-eqz v0, :cond_4
-
-    goto :goto_2
-
-    .line 18
-    :cond_4
-    new-instance v0, Lorg/json/JSONObject;
-
-    invoke-direct {v0}, Lorg/json/JSONObject;-><init>()V
-
-    .line 19
-    :goto_2
-    iput-object v0, p0, Lk3/l8;->g:Lorg/json/JSONObject;
-
-    const-string v0, "analytics_query_ad_event_id"
-
-    .line 20
-    invoke-virtual {p1, v0}, Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;
-
-    const-string v0, "is_analytics_logging_enabled"
-
-    .line 21
-    invoke-virtual {p1, v0}, Lorg/json/JSONObject;->optBoolean(Ljava/lang/String;)Z
-
-    const-string v0, "pool_key"
-
-    .line 22
-    invoke-virtual {p1, v0}, Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object p1
-
-    iput-object p1, p0, Lk3/l8;->h:Ljava/lang/String;
+    iput-object p9, p0, Lk3/l8;->i:Ljava/lang/String;
 
     return-void
 .end method

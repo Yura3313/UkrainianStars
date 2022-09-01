@@ -43,7 +43,7 @@
     int-to-float v0, v0
 
     .line 1
-    sget v1, La5/g0;->a:F
+    sget v1, La5/e0;->g:F
 
     mul-float v0, v0, v1
 
@@ -78,7 +78,7 @@
     .line 3
     :cond_1
     :goto_0
-    invoke-static {p3}, Lcom/android/billingclient/api/z;->n(F)I
+    invoke-static {p3}, Lcom/android/billingclient/api/y;->i(F)I
 
     move-result p1
 

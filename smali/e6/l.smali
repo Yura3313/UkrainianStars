@@ -36,7 +36,7 @@
 
     iget p1, p1, Le6/l;->b:F
 
-    invoke-static {v0, p0, v1, p1}, Lmd/g;->c(FFFF)F
+    invoke-static {v0, p0, v1, p1}, Lae/v;->c(FFFF)F
 
     move-result p0
 

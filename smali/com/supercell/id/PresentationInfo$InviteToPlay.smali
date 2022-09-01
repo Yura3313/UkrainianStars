@@ -27,9 +27,9 @@
 
 
 # instance fields
-.field public final f:Ljava/lang/String;
-
 .field public final g:Ljava/lang/String;
+
+.field public final h:Ljava/lang/String;
 
 
 # direct methods
@@ -52,19 +52,19 @@
 
     const-string v0, "type"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "payload"
 
-    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     invoke-direct {p0}, Lcom/supercell/id/PresentationInfo;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lcom/supercell/id/PresentationInfo$InviteToPlay;->f:Ljava/lang/String;
+    iput-object p1, p0, Lcom/supercell/id/PresentationInfo$InviteToPlay;->g:Ljava/lang/String;
 
-    iput-object p2, p0, Lcom/supercell/id/PresentationInfo$InviteToPlay;->g:Ljava/lang/String;
+    iput-object p2, p0, Lcom/supercell/id/PresentationInfo$InviteToPlay;->h:Ljava/lang/String;
 
     return-void
 .end method
@@ -76,15 +76,15 @@
 
     const-string p2, "dest"
 
-    invoke-static {p1, p2}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p2}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
-    iget-object p2, p0, Lcom/supercell/id/PresentationInfo$InviteToPlay;->f:Ljava/lang/String;
+    iget-object p2, p0, Lcom/supercell/id/PresentationInfo$InviteToPlay;->g:Ljava/lang/String;
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
     .line 2
-    iget-object p2, p0, Lcom/supercell/id/PresentationInfo$InviteToPlay;->g:Ljava/lang/String;
+    iget-object p2, p0, Lcom/supercell/id/PresentationInfo$InviteToPlay;->h:Ljava/lang/String;
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 

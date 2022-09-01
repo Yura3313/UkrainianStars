@@ -187,7 +187,7 @@
     check-cast v1, Ljava/security/interfaces/RSAPrivateCrtKey;
 
     .line 13
-    new-instance v2, Lr5/e0;
+    new-instance v2, Lr5/g0;
 
     .line 14
     invoke-virtual {p1}, Ln5/j1;->E()Ln5/k1;
@@ -206,7 +206,7 @@
 
     move-result v3
 
-    invoke-direct {v2, v1, v3}, Lr5/e0;-><init>(Ljava/security/interfaces/RSAPrivateCrtKey;I)V
+    invoke-direct {v2, v1, v3}, Lr5/g0;-><init>(Ljava/security/interfaces/RSAPrivateCrtKey;I)V
 
     .line 15
     new-instance v1, Ljava/security/spec/RSAPublicKeySpec;
@@ -255,7 +255,7 @@
     check-cast v0, Ljava/security/interfaces/RSAPublicKey;
 
     .line 19
-    new-instance v1, Lr5/f0;
+    new-instance v1, Lr5/h0;
 
     .line 20
     invoke-virtual {p1}, Ln5/j1;->E()Ln5/k1;
@@ -274,18 +274,18 @@
 
     move-result p1
 
-    invoke-direct {v1, v0, p1}, Lr5/f0;-><init>(Ljava/security/interfaces/RSAPublicKey;I)V
+    invoke-direct {v1, v0, p1}, Lr5/h0;-><init>(Ljava/security/interfaces/RSAPublicKey;I)V
 
     .line 21
     :try_start_0
     sget-object p1, Lp5/g;->d:[B
 
     .line 22
-    invoke-virtual {v2, p1}, Lr5/e0;->a([B)[B
+    invoke-virtual {v2, p1}, Lr5/g0;->a([B)[B
 
     move-result-object v0
 
-    invoke-virtual {v1, v0, p1}, Lr5/f0;->a([B[B)V
+    invoke-virtual {v1, v0, p1}, Lr5/h0;->a([B[B)V
     :try_end_0
     .catch Ljava/security/GeneralSecurityException; {:try_start_0 .. :try_end_0} :catch_0
 

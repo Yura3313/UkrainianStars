@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field public final synthetic f:Ll0/a$d;
+.field public final synthetic g:Ll0/a$d;
 
 
 # direct methods
 .method public constructor <init>(Ll0/a$d;)V
     .locals 0
 
-    iput-object p1, p0, Ll0/a$d$a;->f:Ll0/a$d;
+    iput-object p1, p0, Ll0/a$d$a;->g:Ll0/a$d;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -37,7 +37,7 @@
 .method public final doFrame(J)V
     .locals 0
 
-    iget-object p1, p0, Ll0/a$d$a;->f:Ll0/a$d;
+    iget-object p1, p0, Ll0/a$d$a;->g:Ll0/a$d;
 
     iget-object p1, p1, Ll0/a$c;->a:Ll0/a$a;
 

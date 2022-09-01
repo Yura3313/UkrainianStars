@@ -4,13 +4,13 @@
 
 
 # static fields
-.field public static volatile h:Lh/a;
+.field public static volatile i:Lh/a;
 
 
 # instance fields
-.field public f:Lh/b;
-
 .field public g:Lh/b;
+
+.field public h:Lh/b;
 
 
 # direct methods
@@ -25,10 +25,10 @@
 
     invoke-direct {v0}, Lh/b;-><init>()V
 
-    iput-object v0, p0, Lh/a;->g:Lh/b;
+    iput-object v0, p0, Lh/a;->h:Lh/b;
 
     .line 3
-    iput-object v0, p0, Lh/a;->f:Lh/b;
+    iput-object v0, p0, Lh/a;->g:Lh/b;
 
     return-void
 .end method
@@ -37,12 +37,12 @@
     .locals 2
 
     .line 1
-    sget-object v0, Lh/a;->h:Lh/a;
+    sget-object v0, Lh/a;->i:Lh/a;
 
     if-eqz v0, :cond_0
 
     .line 2
-    sget-object v0, Lh/a;->h:Lh/a;
+    sget-object v0, Lh/a;->i:Lh/a;
 
     return-object v0
 
@@ -54,7 +54,7 @@
 
     .line 4
     :try_start_0
-    sget-object v1, Lh/a;->h:Lh/a;
+    sget-object v1, Lh/a;->i:Lh/a;
 
     if-nez v1, :cond_1
 
@@ -63,7 +63,7 @@
 
     invoke-direct {v1}, Lh/a;-><init>()V
 
-    sput-object v1, Lh/a;->h:Lh/a;
+    sput-object v1, Lh/a;->i:Lh/a;
 
     .line 6
     :cond_1
@@ -72,7 +72,7 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 7
-    sget-object v0, Lh/a;->h:Lh/a;
+    sget-object v0, Lh/a;->i:Lh/a;
 
     return-object v0
 
@@ -94,7 +94,7 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lh/a;->f:Lh/b;
+    iget-object v0, p0, Lh/a;->g:Lh/b;
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -128,21 +128,21 @@
     .locals 3
 
     .line 1
-    iget-object v0, p0, Lh/a;->f:Lh/b;
+    iget-object v0, p0, Lh/a;->g:Lh/b;
 
     .line 2
-    iget-object v1, v0, Lh/b;->h:Landroid/os/Handler;
+    iget-object v1, v0, Lh/b;->i:Landroid/os/Handler;
 
     if-nez v1, :cond_1
 
     .line 3
-    iget-object v1, v0, Lh/b;->f:Ljava/lang/Object;
+    iget-object v1, v0, Lh/b;->g:Ljava/lang/Object;
 
     monitor-enter v1
 
     .line 4
     :try_start_0
-    iget-object v2, v0, Lh/b;->h:Landroid/os/Handler;
+    iget-object v2, v0, Lh/b;->i:Landroid/os/Handler;
 
     if-nez v2, :cond_0
 
@@ -155,7 +155,7 @@
 
     move-result-object v2
 
-    iput-object v2, v0, Lh/b;->h:Landroid/os/Handler;
+    iput-object v2, v0, Lh/b;->i:Landroid/os/Handler;
 
     .line 6
     :cond_0
@@ -175,7 +175,7 @@
     .line 7
     :cond_1
     :goto_0
-    iget-object v0, v0, Lh/b;->h:Landroid/os/Handler;
+    iget-object v0, v0, Lh/b;->i:Landroid/os/Handler;
 
     invoke-virtual {v0, p1}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 

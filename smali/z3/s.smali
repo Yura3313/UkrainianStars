@@ -1,17 +1,17 @@
 .class public final Lz3/s;
-.super Lz3/z2;
+.super Lz3/a3;
 
 
 # instance fields
-.field public final d:Lz3/g3;
+.field public final j:Lz3/h3;
 
 
 # direct methods
-.method public constructor <init>(Lz3/a3;)V
+.method public constructor <init>(Lz3/b3;)V
     .locals 1
 
     .line 1
-    invoke-direct {p0, p1}, Lz3/z2;-><init>(Lz3/a3;)V
+    invoke-direct {p0, p1}, Lz3/a3;-><init>(Lz3/b3;)V
 
     .line 2
     sget p1, Landroid/os/Build$VERSION;->SDK_INT:I
@@ -20,9 +20,9 @@
 
     if-ge p1, v0, :cond_0
 
-    new-instance p1, Lz3/g3;
+    new-instance p1, Lz3/h3;
 
-    invoke-direct {p1}, Lz3/g3;-><init>()V
+    invoke-direct {p1}, Lz3/h3;-><init>()V
 
     goto :goto_0
 
@@ -30,7 +30,7 @@
     const/4 p1, 0x0
 
     :goto_0
-    iput-object p1, p0, Lz3/s;->d:Lz3/g3;
+    iput-object p1, p0, Lz3/s;->j:Lz3/h3;
 
     return-void
 .end method
@@ -127,7 +127,7 @@
     if-eqz v0, :cond_1
 
     .line 3
-    iget-object v0, p0, Lz3/s;->d:Lz3/g3;
+    iget-object v0, p0, Lz3/s;->j:Lz3/h3;
 
     if-eqz v0, :cond_0
 
@@ -187,7 +187,7 @@
     .locals 2
 
     .line 1
-    invoke-virtual {p0}, Lz3/z2;->v()V
+    invoke-virtual {p0}, Lz3/a3;->v()V
 
     .line 2
     invoke-virtual {p0}, Ly3/a;->getContext()Landroid/content/Context;

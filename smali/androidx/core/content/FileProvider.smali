@@ -344,7 +344,7 @@
     const-string v1, "Invalid mode: "
 
     .line 7
-    invoke-static {v1, p0}, Lcom/google/android/gms/ads/e;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v1, p0}, Lf/g;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p0
 
@@ -698,7 +698,7 @@
     const-string v0, "Couldn\'t find meta-data for provider with authority "
 
     .line 42
-    invoke-static {v0, p1}, Lcom/google/android/gms/ads/e;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, p1}, Lf/g;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 

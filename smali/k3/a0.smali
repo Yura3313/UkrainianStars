@@ -9,48 +9,28 @@
 
 
 # instance fields
-.field public final a:Ljava/util/HashMap;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/Map<",
-            "Ljava/lang/String;",
-            "Lk3/b0;",
-            ">;"
-        }
-    .end annotation
-.end field
+.field public final a:J
 
-.field public final b:Lk3/c0;
+.field public final b:Ljava/lang/String;
+
+.field public final c:Lk3/a0;
 
 
 # direct methods
-.method public constructor <init>(Lk3/c0;)V
+.method public constructor <init>(JLjava/lang/String;Lk3/a0;)V
     .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lk3/a0;->b:Lk3/c0;
+    iput-wide p1, p0, Lk3/a0;->a:J
 
     .line 3
-    new-instance p1, Ljava/util/HashMap;
+    iput-object p3, p0, Lk3/a0;->b:Ljava/lang/String;
 
-    invoke-direct {p1}, Ljava/util/HashMap;-><init>()V
-
-    iput-object p1, p0, Lk3/a0;->a:Ljava/util/HashMap;
-
-    return-void
-.end method
-
-
-# virtual methods
-.method public final a(Ljava/lang/String;Lk3/b0;)V
-    .locals 1
-
-    iget-object v0, p0, Lk3/a0;->a:Ljava/util/HashMap;
-
-    invoke-virtual {v0, p1, p2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .line 4
+    iput-object p4, p0, Lk3/a0;->c:Lk3/a0;
 
     return-void
 .end method

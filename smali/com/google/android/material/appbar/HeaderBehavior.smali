@@ -173,7 +173,7 @@
     if-gt p1, p5, :cond_0
 
     .line 2
-    invoke-static {p3, p4, p5}, La0/a;->e(III)I
+    invoke-static {p3, p4, p5}, La0/a;->b(III)I
 
     move-result p2
 

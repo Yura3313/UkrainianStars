@@ -34,10 +34,10 @@
 .method public abstract Q0()Z
 .end method
 
-.method public abstract R0()Lcom/google/android/gms/games/PlayerLevelInfo;
+.method public abstract Q1()Lcom/google/android/gms/games/PlayerRelationshipInfo;
 .end method
 
-.method public abstract R1()Lcom/google/android/gms/games/PlayerRelationshipInfo;
+.method public abstract R0()Lcom/google/android/gms/games/PlayerLevelInfo;
 .end method
 
 .method public abstract S()Z

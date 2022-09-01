@@ -1,5 +1,5 @@
 .class public final Lcom/supercell/id/SharedDataBroadcastReceiver$b;
-.super Lse/h;
+.super Lse/i;
 .source "SharedDataBroadcastReceiver.kt"
 
 # interfaces
@@ -18,28 +18,28 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/l<",
         "Ljava/lang/Exception;",
-        "Lie/h;",
+        "Lie/i;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic f:Landroid/app/PendingIntent;
+.field public final synthetic g:Landroid/app/PendingIntent;
 
 
 # direct methods
 .method public constructor <init>(Landroid/app/PendingIntent;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/SharedDataBroadcastReceiver$b;->f:Landroid/app/PendingIntent;
+    iput-object p1, p0, Lcom/supercell/id/SharedDataBroadcastReceiver$b;->g:Landroid/app/PendingIntent;
 
     const/4 p1, 0x1
 
-    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -55,15 +55,15 @@
     const-string v0, "it"
 
     .line 2
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 3
-    iget-object p1, p0, Lcom/supercell/id/SharedDataBroadcastReceiver$b;->f:Landroid/app/PendingIntent;
+    iget-object p1, p0, Lcom/supercell/id/SharedDataBroadcastReceiver$b;->g:Landroid/app/PendingIntent;
 
     invoke-virtual {p1}, Landroid/app/PendingIntent;->send()V
 
     .line 4
-    sget-object p1, Lie/h;->a:Lie/h;
+    sget-object p1, Lie/i;->a:Lie/i;
 
     return-object p1
 .end method

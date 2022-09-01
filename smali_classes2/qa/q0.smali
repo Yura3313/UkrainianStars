@@ -4,14 +4,14 @@
 
 
 # instance fields
-.field public final synthetic f:Lqa/e1;
+.field public final synthetic g:Lqa/e1;
 
 
 # direct methods
 .method public constructor <init>(Lqa/e1;)V
     .locals 0
 
-    iput-object p1, p0, Lqa/q0;->f:Lqa/e1;
+    iput-object p1, p0, Lqa/q0;->g:Lqa/e1;
 
     invoke-direct {p0}, Lqa/i1;-><init>()V
 
@@ -24,9 +24,9 @@
     .locals 0
 
     .line 1
-    iget-object p2, p0, Lqa/q0;->f:Lqa/e1;
+    iget-object p2, p0, Lqa/q0;->g:Lqa/e1;
 
-    iget-object p2, p2, Lqa/e1;->i0:Lf9/t0;
+    iget-object p2, p2, Lqa/e1;->j0:Lf9/t0;
 
     invoke-interface {p1}, Ljava/lang/CharSequence;->toString()Ljava/lang/String;
 

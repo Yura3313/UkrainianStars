@@ -21,7 +21,7 @@
 .field public final a:Lze/p;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lze/e0<",
+            "Lze/f0<",
             "*>;"
         }
     .end annotation
@@ -36,10 +36,10 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    sget-object v0, Lie/h;->a:Lie/h;
+    sget-object v0, Lie/i;->a:Lie/i;
 
     .line 3
-    invoke-static {v0}, Lbf/g;->b(Ljava/lang/Object;)Lze/o;
+    invoke-static {v0}, Landroidx/lifecycle/b0;->a(Ljava/lang/Object;)Lze/o;
 
     move-result-object v0
 
@@ -52,12 +52,12 @@
 
 
 # virtual methods
-.method public final a()Lze/e0;
+.method public final a()Lze/f0;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lze/e0<",
+            "Lze/f0<",
             "*>;"
         }
     .end annotation

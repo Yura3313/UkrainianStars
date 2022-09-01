@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field public final f:Lk3/va;
+.field public final g:Lk3/va;
 
 
 # direct methods
@@ -26,7 +26,7 @@
 
     invoke-direct {v0, v1}, Lk3/va;-><init>(Landroid/os/Looper;)V
 
-    iput-object v0, p0, Lk3/ld;->f:Lk3/va;
+    iput-object v0, p0, Lk3/ld;->g:Lk3/va;
 
     return-void
 .end method
@@ -63,14 +63,14 @@
     move-exception p1
 
     .line 3
-    sget-object v0, Li1/o;->B:Li1/o;
+    sget-object v0, Li1/p;->B:Li1/p;
 
-    iget-object v0, v0, Li1/o;->c:Lk3/bb;
+    iget-object v0, v0, Li1/p;->c:Lk3/bb;
 
     .line 4
-    sget-object v0, Li1/o;->B:Li1/o;
+    sget-object v0, Li1/p;->B:Li1/p;
 
-    iget-object v0, v0, Li1/o;->g:Lk3/ia;
+    iget-object v0, v0, Li1/p;->g:Lk3/ia;
 
     .line 5
     iget-object v0, v0, Lk3/ia;->e:Landroid/content/Context;
@@ -83,7 +83,7 @@
 
     .line 8
     :cond_0
-    iget-object v0, p0, Lk3/ld;->f:Lk3/va;
+    iget-object v0, p0, Lk3/ld;->g:Lk3/va;
 
     invoke-virtual {v0, p1}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 

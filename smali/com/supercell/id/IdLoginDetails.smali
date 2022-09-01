@@ -19,13 +19,13 @@
 
 
 # instance fields
-.field public final f:Ljava/lang/String;
-
 .field public final g:Ljava/lang/String;
 
-.field public final h:Z
+.field public final h:Ljava/lang/String;
 
 .field public final i:Z
+
+.field public final j:Z
 
 
 # direct methods
@@ -46,7 +46,7 @@
 
     const-string v0, "parcel"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 2
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
@@ -102,13 +102,13 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lcom/supercell/id/IdLoginDetails;->f:Ljava/lang/String;
+    iput-object p1, p0, Lcom/supercell/id/IdLoginDetails;->g:Ljava/lang/String;
 
-    iput-object p2, p0, Lcom/supercell/id/IdLoginDetails;->g:Ljava/lang/String;
+    iput-object p2, p0, Lcom/supercell/id/IdLoginDetails;->h:Ljava/lang/String;
 
-    iput-boolean p3, p0, Lcom/supercell/id/IdLoginDetails;->h:Z
+    iput-boolean p3, p0, Lcom/supercell/id/IdLoginDetails;->i:Z
 
-    iput-boolean p4, p0, Lcom/supercell/id/IdLoginDetails;->i:Z
+    iput-boolean p4, p0, Lcom/supercell/id/IdLoginDetails;->j:Z
 
     return-void
 .end method
@@ -118,7 +118,7 @@
 
     const-string v0, "jsonObject"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "email"
 
@@ -134,7 +134,7 @@
     .line 8
     sget-object v2, Lorg/json/JSONObject;->NULL:Ljava/lang/Object;
 
-    invoke-static {v0, v2}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v2}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v2
 
@@ -171,7 +171,7 @@
     .line 11
     sget-object v3, Lorg/json/JSONObject;->NULL:Ljava/lang/Object;
 
-    invoke-static {v2, v3}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, v3}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v3
 
@@ -208,7 +208,7 @@
     .line 14
     sget-object v4, Lorg/json/JSONObject;->NULL:Ljava/lang/Object;
 
-    invoke-static {v3, v4}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v3, v4}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v4
 
@@ -260,7 +260,7 @@
     .line 18
     sget-object v5, Lorg/json/JSONObject;->NULL:Ljava/lang/Object;
 
-    invoke-static {p1, v5}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {p1, v5}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v5
 
@@ -303,28 +303,28 @@
 
     if-eqz p6, :cond_0
 
-    iget-object p1, p0, Lcom/supercell/id/IdLoginDetails;->f:Ljava/lang/String;
+    iget-object p1, p0, Lcom/supercell/id/IdLoginDetails;->g:Ljava/lang/String;
 
     :cond_0
     and-int/lit8 p6, p5, 0x2
 
     if-eqz p6, :cond_1
 
-    iget-object p2, p0, Lcom/supercell/id/IdLoginDetails;->g:Ljava/lang/String;
+    iget-object p2, p0, Lcom/supercell/id/IdLoginDetails;->h:Ljava/lang/String;
 
     :cond_1
     and-int/lit8 p6, p5, 0x4
 
     if-eqz p6, :cond_2
 
-    iget-boolean p3, p0, Lcom/supercell/id/IdLoginDetails;->h:Z
+    iget-boolean p3, p0, Lcom/supercell/id/IdLoginDetails;->i:Z
 
     :cond_2
     and-int/lit8 p5, p5, 0x8
 
     if-eqz p5, :cond_3
 
-    iget-boolean p4, p0, Lcom/supercell/id/IdLoginDetails;->i:Z
+    iget-boolean p4, p0, Lcom/supercell/id/IdLoginDetails;->j:Z
 
     :cond_3
     invoke-virtual {p0, p1, p2, p3, p4}, Lcom/supercell/id/IdLoginDetails;->copy(Ljava/lang/String;Ljava/lang/String;ZZ)Lcom/supercell/id/IdLoginDetails;
@@ -344,7 +344,7 @@
     const-string v0, "email"
 
     .line 1
-    invoke-static {p0, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 2
     new-instance v0, Lcom/supercell/id/IdLoginDetails;
@@ -368,7 +368,7 @@
     const-string v0, "phone"
 
     .line 1
-    invoke-static {p0, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 2
     new-instance v0, Lcom/supercell/id/IdLoginDetails;
@@ -387,7 +387,7 @@
 .method public final component1()Ljava/lang/String;
     .locals 1
 
-    iget-object v0, p0, Lcom/supercell/id/IdLoginDetails;->f:Ljava/lang/String;
+    iget-object v0, p0, Lcom/supercell/id/IdLoginDetails;->g:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -395,7 +395,7 @@
 .method public final component2()Ljava/lang/String;
     .locals 1
 
-    iget-object v0, p0, Lcom/supercell/id/IdLoginDetails;->g:Ljava/lang/String;
+    iget-object v0, p0, Lcom/supercell/id/IdLoginDetails;->h:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -403,7 +403,7 @@
 .method public final component3()Z
     .locals 1
 
-    iget-boolean v0, p0, Lcom/supercell/id/IdLoginDetails;->h:Z
+    iget-boolean v0, p0, Lcom/supercell/id/IdLoginDetails;->i:Z
 
     return v0
 .end method
@@ -411,7 +411,7 @@
 .method public final component4()Z
     .locals 1
 
-    iget-boolean v0, p0, Lcom/supercell/id/IdLoginDetails;->i:Z
+    iget-boolean v0, p0, Lcom/supercell/id/IdLoginDetails;->j:Z
 
     return v0
 .end method
@@ -445,35 +445,35 @@
 
     check-cast p1, Lcom/supercell/id/IdLoginDetails;
 
-    iget-object v0, p0, Lcom/supercell/id/IdLoginDetails;->f:Ljava/lang/String;
-
-    iget-object v1, p1, Lcom/supercell/id/IdLoginDetails;->f:Ljava/lang/String;
-
-    invoke-static {v0, v1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
     iget-object v0, p0, Lcom/supercell/id/IdLoginDetails;->g:Ljava/lang/String;
 
     iget-object v1, p1, Lcom/supercell/id/IdLoginDetails;->g:Ljava/lang/String;
 
-    invoke-static {v0, v1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    iget-boolean v0, p0, Lcom/supercell/id/IdLoginDetails;->h:Z
+    iget-object v0, p0, Lcom/supercell/id/IdLoginDetails;->h:Ljava/lang/String;
 
-    iget-boolean v1, p1, Lcom/supercell/id/IdLoginDetails;->h:Z
+    iget-object v1, p1, Lcom/supercell/id/IdLoginDetails;->h:Ljava/lang/String;
 
-    if-ne v0, v1, :cond_0
+    invoke-static {v0, v1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
 
     iget-boolean v0, p0, Lcom/supercell/id/IdLoginDetails;->i:Z
 
-    iget-boolean p1, p1, Lcom/supercell/id/IdLoginDetails;->i:Z
+    iget-boolean v1, p1, Lcom/supercell/id/IdLoginDetails;->i:Z
+
+    if-ne v0, v1, :cond_0
+
+    iget-boolean v0, p0, Lcom/supercell/id/IdLoginDetails;->j:Z
+
+    iget-boolean p1, p1, Lcom/supercell/id/IdLoginDetails;->j:Z
 
     if-ne v0, p1, :cond_0
 
@@ -494,7 +494,7 @@
 .method public final getEmail()Ljava/lang/String;
     .locals 1
 
-    iget-object v0, p0, Lcom/supercell/id/IdLoginDetails;->f:Ljava/lang/String;
+    iget-object v0, p0, Lcom/supercell/id/IdLoginDetails;->g:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -502,7 +502,7 @@
 .method public final getLoginRequestSent()Z
     .locals 1
 
-    iget-boolean v0, p0, Lcom/supercell/id/IdLoginDetails;->i:Z
+    iget-boolean v0, p0, Lcom/supercell/id/IdLoginDetails;->j:Z
 
     return v0
 .end method
@@ -510,7 +510,7 @@
 .method public final getPhone()Ljava/lang/String;
     .locals 1
 
-    iget-object v0, p0, Lcom/supercell/id/IdLoginDetails;->g:Ljava/lang/String;
+    iget-object v0, p0, Lcom/supercell/id/IdLoginDetails;->h:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -518,7 +518,7 @@
 .method public final getRemember()Z
     .locals 1
 
-    iget-boolean v0, p0, Lcom/supercell/id/IdLoginDetails;->h:Z
+    iget-boolean v0, p0, Lcom/supercell/id/IdLoginDetails;->i:Z
 
     return v0
 .end method
@@ -526,7 +526,7 @@
 .method public hashCode()I
     .locals 3
 
-    iget-object v0, p0, Lcom/supercell/id/IdLoginDetails;->f:Ljava/lang/String;
+    iget-object v0, p0, Lcom/supercell/id/IdLoginDetails;->g:Ljava/lang/String;
 
     const/4 v1, 0x0
 
@@ -544,7 +544,7 @@
     :goto_0
     mul-int/lit8 v0, v0, 0x1f
 
-    iget-object v2, p0, Lcom/supercell/id/IdLoginDetails;->g:Ljava/lang/String;
+    iget-object v2, p0, Lcom/supercell/id/IdLoginDetails;->h:Ljava/lang/String;
 
     if-eqz v2, :cond_1
 
@@ -557,7 +557,7 @@
 
     mul-int/lit8 v0, v0, 0x1f
 
-    iget-boolean v1, p0, Lcom/supercell/id/IdLoginDetails;->h:Z
+    iget-boolean v1, p0, Lcom/supercell/id/IdLoginDetails;->i:Z
 
     const/4 v2, 0x1
 
@@ -570,7 +570,7 @@
 
     mul-int/lit8 v0, v0, 0x1f
 
-    iget-boolean v1, p0, Lcom/supercell/id/IdLoginDetails;->i:Z
+    iget-boolean v1, p0, Lcom/supercell/id/IdLoginDetails;->j:Z
 
     if-eqz v1, :cond_3
 
@@ -594,28 +594,28 @@
     invoke-direct {v0}, Lorg/json/JSONObject;-><init>()V
 
     .line 2
-    iget-object v1, p0, Lcom/supercell/id/IdLoginDetails;->f:Ljava/lang/String;
+    iget-object v1, p0, Lcom/supercell/id/IdLoginDetails;->g:Ljava/lang/String;
 
     const-string v2, "email"
 
     invoke-virtual {v0, v2, v1}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
     .line 3
-    iget-object v1, p0, Lcom/supercell/id/IdLoginDetails;->g:Ljava/lang/String;
+    iget-object v1, p0, Lcom/supercell/id/IdLoginDetails;->h:Ljava/lang/String;
 
     const-string v2, "phone"
 
     invoke-virtual {v0, v2, v1}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
     .line 4
-    iget-boolean v1, p0, Lcom/supercell/id/IdLoginDetails;->h:Z
+    iget-boolean v1, p0, Lcom/supercell/id/IdLoginDetails;->i:Z
 
     const-string v2, "remember"
 
     invoke-virtual {v0, v2, v1}, Lorg/json/JSONObject;->put(Ljava/lang/String;Z)Lorg/json/JSONObject;
 
     .line 5
-    iget-boolean v1, p0, Lcom/supercell/id/IdLoginDetails;->i:Z
+    iget-boolean v1, p0, Lcom/supercell/id/IdLoginDetails;->j:Z
 
     const-string v2, "loginRequestSent"
 
@@ -635,7 +635,7 @@
     move-result-object v0
 
     .line 2
-    iget-object v1, p0, Lcom/supercell/id/IdLoginDetails;->f:Ljava/lang/String;
+    iget-object v1, p0, Lcom/supercell/id/IdLoginDetails;->g:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -643,7 +643,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lcom/supercell/id/IdLoginDetails;->g:Ljava/lang/String;
+    iget-object v1, p0, Lcom/supercell/id/IdLoginDetails;->h:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -651,7 +651,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean v1, p0, Lcom/supercell/id/IdLoginDetails;->h:Z
+    iget-boolean v1, p0, Lcom/supercell/id/IdLoginDetails;->i:Z
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -659,12 +659,12 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean v1, p0, Lcom/supercell/id/IdLoginDetails;->i:Z
+    iget-boolean v1, p0, Lcom/supercell/id/IdLoginDetails;->j:Z
 
     const-string v2, ")"
 
     .line 3
-    invoke-static {v0, v1, v2}, Landroidx/appcompat/app/j;->b(Ljava/lang/StringBuilder;ZLjava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, v1, v2}, Landroidx/appcompat/app/j;->a(Ljava/lang/StringBuilder;ZLjava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -676,26 +676,26 @@
 
     const-string p2, "parcel"
 
-    invoke-static {p1, p2}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p2}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
-    iget-object p2, p0, Lcom/supercell/id/IdLoginDetails;->f:Ljava/lang/String;
-
-    invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
-
-    .line 2
     iget-object p2, p0, Lcom/supercell/id/IdLoginDetails;->g:Ljava/lang/String;
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
+    .line 2
+    iget-object p2, p0, Lcom/supercell/id/IdLoginDetails;->h:Ljava/lang/String;
+
+    invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
+
     .line 3
-    iget-boolean p2, p0, Lcom/supercell/id/IdLoginDetails;->h:Z
+    iget-boolean p2, p0, Lcom/supercell/id/IdLoginDetails;->i:Z
 
     .line 4
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 5
-    iget-boolean p2, p0, Lcom/supercell/id/IdLoginDetails;->i:Z
+    iget-boolean p2, p0, Lcom/supercell/id/IdLoginDetails;->j:Z
 
     .line 6
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V

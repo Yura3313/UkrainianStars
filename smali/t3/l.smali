@@ -1,13 +1,40 @@
 .class public final Lt3/l;
-.super Lv2/a;
+.super La0/a;
 .source "com.google.android.gms:play-services-games@@20.0.1"
 
 
 # direct methods
-.method public constructor <init>(Landroid/app/Activity;Lv2/b$a;)V
+.method public static f(Ljava/lang/Object;Ljava/lang/Object;)Z
     .locals 0
+    .param p0    # Ljava/lang/Object;
+        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .end annotation
+    .end param
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .end annotation
+    .end param
 
-    invoke-direct {p0, p1, p2}, Lv2/a;-><init>(Landroid/app/Activity;Lv2/b$a;)V
+    if-eq p0, p1, :cond_1
 
-    return-void
+    if-eqz p0, :cond_0
+
+    invoke-virtual {p0, p1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+
+    move-result p0
+
+    if-eqz p0, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    const/4 p0, 0x0
+
+    return p0
+
+    :cond_1
+    :goto_0
+    const/4 p0, 0x1
+
+    return p0
 .end method

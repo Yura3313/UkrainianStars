@@ -51,7 +51,7 @@
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
     .line 2
-    invoke-static {}, Ll2/j;->b()Z
+    invoke-static {}, Ll2/l;->b()Z
 
     move-result v1
 

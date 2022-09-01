@@ -4,13 +4,13 @@
 
 
 # instance fields
-.field public final f:Ljava/lang/String;
-
 .field public final g:Ljava/lang/String;
+
+.field public final h:Ljava/lang/String;
 
 
 # direct methods
-.method public constructor <init>(Lk3/jg0;Ljava/lang/String;)V
+.method public constructor <init>(Lk3/kg0;Ljava/lang/String;)V
     .locals 2
 
     .line 1
@@ -26,10 +26,10 @@
 
     .line 2
     :cond_0
-    iget-object v1, p1, Lk3/jg0;->V:Ljava/lang/String;
+    iget-object v1, p1, Lk3/kg0;->V:Ljava/lang/String;
 
     :goto_0
-    iput-object v1, p0, Lcom/google/android/gms/internal/ads/zzbsp;->g:Ljava/lang/String;
+    iput-object v1, p0, Lcom/google/android/gms/internal/ads/zzbsp;->h:Ljava/lang/String;
 
     const-string v1, "com.google.android.gms.ads.mediation.customevent.CustomEventAdapter"
 
@@ -65,7 +65,7 @@
 
     .line 5
     :try_start_0
-    iget-object p1, p1, Lk3/jg0;->u:Lorg/json/JSONObject;
+    iget-object p1, p1, Lk3/kg0;->u:Lorg/json/JSONObject;
 
     const-string v1, "class_name"
 
@@ -93,7 +93,7 @@
 
     .line 6
     :goto_4
-    iput-object p2, p0, Lcom/google/android/gms/internal/ads/zzbsp;->f:Ljava/lang/String;
+    iput-object p2, p0, Lcom/google/android/gms/internal/ads/zzbsp;->g:Ljava/lang/String;
 
     return-void
 .end method
@@ -103,7 +103,7 @@
 .method public final k()Ljava/lang/String;
     .locals 1
 
-    iget-object v0, p0, Lcom/google/android/gms/internal/ads/zzbsp;->f:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/android/gms/internal/ads/zzbsp;->g:Ljava/lang/String;
 
     return-object v0
 .end method

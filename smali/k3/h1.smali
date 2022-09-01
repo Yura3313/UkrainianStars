@@ -1,64 +1,33 @@
 .class public final Lk3/h1;
 .super Ljava/lang/Object;
-.source "com.google.android.gms:play-services-ads@@19.3.0"
-
-# interfaces
-.implements Ljava/lang/Runnable;
+.source "com.google.android.gms:play-services-ads-lite@@19.3.0"
 
 
-# instance fields
-.field public final synthetic f:Ljava/lang/String;
-
-.field public final synthetic g:J
-
-.field public final synthetic h:Lk3/b;
+# static fields
+.field public static a:Lk3/j0;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lk3/j0<",
+            "Ljava/lang/Boolean;",
+            ">;"
+        }
+    .end annotation
+.end field
 
 
 # direct methods
-.method public constructor <init>(Lk3/b;Ljava/lang/String;J)V
-    .locals 0
+.method public static constructor <clinit>()V
+    .locals 2
 
-    iput-object p1, p0, Lk3/h1;->h:Lk3/b;
+    const-string v0, "gads:video:metric_reporting_enabled"
 
-    iput-object p2, p0, Lk3/h1;->f:Ljava/lang/String;
+    const/4 v1, 0x0
 
-    iput-wide p3, p0, Lk3/h1;->g:J
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    return-void
-.end method
-
-
-# virtual methods
-.method public final run()V
-    .locals 4
-
-    .line 1
-    iget-object v0, p0, Lk3/h1;->h:Lk3/b;
-
-    .line 2
-    iget-object v0, v0, Lk3/b;->f:Lk3/j7$a;
-
-    .line 3
-    iget-object v1, p0, Lk3/h1;->f:Ljava/lang/String;
-
-    iget-wide v2, p0, Lk3/h1;->g:J
-
-    invoke-virtual {v0, v1, v2, v3}, Lk3/j7$a;->a(Ljava/lang/String;J)V
-
-    .line 4
-    iget-object v0, p0, Lk3/h1;->h:Lk3/b;
-
-    .line 5
-    iget-object v1, v0, Lk3/b;->f:Lk3/j7$a;
-
-    .line 6
-    invoke-virtual {v0}, Lk3/b;->toString()Ljava/lang/String;
+    invoke-static {v0, v1}, Lk3/j0;->c(Ljava/lang/String;Z)Lk3/j0;
 
     move-result-object v0
 
-    invoke-virtual {v1, v0}, Lk3/j7$a;->b(Ljava/lang/String;)V
+    sput-object v0, Lk3/h1;->a:Lk3/j0;
 
     return-void
 .end method

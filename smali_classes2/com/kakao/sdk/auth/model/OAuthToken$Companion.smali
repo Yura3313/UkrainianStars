@@ -23,7 +23,7 @@
     return-void
 .end method
 
-.method public synthetic constructor <init>(Lse/e;)V
+.method public synthetic constructor <init>(Lse/f;)V
     .locals 0
 
     invoke-direct {p0}, Lcom/kakao/sdk/auth/model/OAuthToken$Companion;-><init>()V
@@ -55,7 +55,7 @@
 
     const-string v0, "response"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     invoke-virtual {p1}, Lcom/kakao/sdk/auth/model/AccessTokenResponse;->getAccessToken()Ljava/lang/String;
@@ -187,7 +187,7 @@
 
     const/4 v0, 0x6
 
-    invoke-static {p1, p2, v1, v0}, Lye/r;->z(Ljava/lang/CharSequence;[Ljava/lang/String;II)Ljava/util/List;
+    invoke-static {p1, p2, v1, v0}, Lye/r;->A(Ljava/lang/CharSequence;[Ljava/lang/String;II)Ljava/util/List;
 
     move-result-object p1
 

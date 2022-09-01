@@ -1,5 +1,5 @@
 .class public final Lcom/supercell/id/SupercellId$o;
-.super Lse/h;
+.super Lse/i;
 .source "SupercellId.kt"
 
 # interfaces
@@ -18,31 +18,31 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/r<",
         "[B",
         "Ljava/lang/Integer;",
         "Ljava/lang/Integer;",
         "Ljava/lang/Integer;",
-        "Lie/h;",
+        "Lie/i;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic f:Ljava/lang/String;
+.field public final synthetic g:Ljava/lang/String;
 
 
 # direct methods
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/SupercellId$o;->f:Ljava/lang/String;
+    iput-object p1, p0, Lcom/supercell/id/SupercellId$o;->g:Ljava/lang/String;
 
     const/4 p1, 0x4
 
-    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -84,7 +84,7 @@
 
     if-eqz v0, :cond_0
 
-    iget-object v5, p0, Lcom/supercell/id/SupercellId$o;->f:Ljava/lang/String;
+    iget-object v5, p0, Lcom/supercell/id/SupercellId$o;->g:Ljava/lang/String;
 
     invoke-interface/range {v0 .. v5}, Lcom/supercell/id/SupercellIdDelegate;->avatarImageData([BIIILjava/lang/String;)V
 

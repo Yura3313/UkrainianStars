@@ -15,25 +15,25 @@
 
 
 # static fields
-.field public static final l:Landroid/view/animation/LinearInterpolator;
+.field public static final m:Landroid/view/animation/LinearInterpolator;
 
-.field public static final m:Lm0/b;
+.field public static final n:Lm0/b;
 
-.field public static final n:[I
+.field public static final o:[I
 
 
 # instance fields
-.field public final f:Lt0/d$a;
+.field public final g:Lt0/d$a;
 
-.field public g:F
+.field public h:F
 
-.field public h:Landroid/content/res/Resources;
+.field public i:Landroid/content/res/Resources;
 
-.field public i:Landroid/animation/ValueAnimator;
+.field public j:Landroid/animation/ValueAnimator;
 
-.field public j:F
+.field public k:F
 
-.field public k:Z
+.field public l:Z
 
 
 # direct methods
@@ -45,14 +45,14 @@
 
     invoke-direct {v0}, Landroid/view/animation/LinearInterpolator;-><init>()V
 
-    sput-object v0, Lt0/d;->l:Landroid/view/animation/LinearInterpolator;
+    sput-object v0, Lt0/d;->m:Landroid/view/animation/LinearInterpolator;
 
     .line 2
     new-instance v0, Lm0/b;
 
     invoke-direct {v0}, Lm0/b;-><init>()V
 
-    sput-object v0, Lt0/d;->m:Lm0/b;
+    sput-object v0, Lt0/d;->n:Lm0/b;
 
     const/4 v0, 0x1
 
@@ -65,7 +65,7 @@
     aput v2, v0, v1
 
     .line 3
-    sput-object v0, Lt0/d;->n:[I
+    sput-object v0, Lt0/d;->o:[I
 
     return-void
 .end method
@@ -84,17 +84,17 @@
 
     move-result-object p1
 
-    iput-object p1, p0, Lt0/d;->h:Landroid/content/res/Resources;
+    iput-object p1, p0, Lt0/d;->i:Landroid/content/res/Resources;
 
     .line 4
     new-instance p1, Lt0/d$a;
 
     invoke-direct {p1}, Lt0/d$a;-><init>()V
 
-    iput-object p1, p0, Lt0/d;->f:Lt0/d$a;
+    iput-object p1, p0, Lt0/d;->g:Lt0/d$a;
 
     .line 5
-    sget-object v0, Lt0/d;->n:[I
+    sget-object v0, Lt0/d;->o:[I
 
     .line 6
     iput-object v0, p1, Lt0/d$a;->i:[I
@@ -146,7 +146,7 @@
     invoke-virtual {v0, v1}, Landroid/animation/ValueAnimator;->setRepeatMode(I)V
 
     .line 15
-    sget-object v1, Lt0/d;->l:Landroid/view/animation/LinearInterpolator;
+    sget-object v1, Lt0/d;->m:Landroid/view/animation/LinearInterpolator;
 
     invoke-virtual {v0, v1}, Landroid/animation/ValueAnimator;->setInterpolator(Landroid/animation/TimeInterpolator;)V
 
@@ -158,7 +158,7 @@
     invoke-virtual {v0, v1}, Landroid/animation/Animator;->addListener(Landroid/animation/Animator$AnimatorListener;)V
 
     .line 17
-    iput-object v0, p0, Lt0/d;->i:Landroid/animation/ValueAnimator;
+    iput-object v0, p0, Lt0/d;->j:Landroid/animation/ValueAnimator;
 
     return-void
 
@@ -177,7 +177,7 @@
     .locals 7
 
     .line 1
-    iget-boolean v0, p0, Lt0/d;->k:Z
+    iget-boolean v0, p0, Lt0/d;->l:Z
 
     const v1, 0x3c23d70a
 
@@ -229,7 +229,7 @@
     .line 9
     iget v0, p2, Lt0/d$a;->m:F
 
-    invoke-static {p3, v0, p1, v0}, Lo/p;->a(FFFF)F
+    invoke-static {p3, v0, p1, v0}, Lo/o;->a(FFFF)F
 
     move-result p1
 
@@ -265,7 +265,7 @@
     iget v3, p2, Lt0/d$a;->k:F
 
     .line 13
-    sget-object v4, Lt0/d;->m:Lm0/b;
+    sget-object v4, Lt0/d;->n:Lm0/b;
 
     .line 14
     invoke-virtual {v4, v0}, Lm0/d;->getInterpolation(F)F
@@ -291,7 +291,7 @@
     add-float/2addr v3, v2
 
     .line 16
-    sget-object v5, Lt0/d;->m:Lm0/b;
+    sget-object v5, Lt0/d;->n:Lm0/b;
 
     .line 17
     invoke-virtual {v5, v4}, Lm0/d;->getInterpolation(F)F
@@ -322,7 +322,7 @@
     const/high16 p3, 0x43580000    # 216.0f
 
     .line 18
-    iget v2, p0, Lt0/d;->j:F
+    iget v2, p0, Lt0/d;->k:F
 
     add-float/2addr p1, v2
 
@@ -338,7 +338,7 @@
     iput v1, p2, Lt0/d$a;->g:F
 
     .line 22
-    iput p1, p0, Lt0/d;->g:F
+    iput p1, p0, Lt0/d;->h:F
 
     :cond_3
     :goto_1
@@ -349,10 +349,10 @@
     .locals 3
 
     .line 1
-    iget-object v0, p0, Lt0/d;->f:Lt0/d$a;
+    iget-object v0, p0, Lt0/d;->g:Lt0/d$a;
 
     .line 2
-    iget-object v1, p0, Lt0/d;->h:Landroid/content/res/Resources;
+    iget-object v1, p0, Lt0/d;->i:Landroid/content/res/Resources;
 
     invoke-virtual {v1}, Landroid/content/res/Resources;->getDisplayMetrics()Landroid/util/DisplayMetrics;
 
@@ -579,7 +579,7 @@
     invoke-virtual {p1}, Landroid/graphics/Canvas;->save()I
 
     .line 3
-    iget v1, p0, Lt0/d;->g:F
+    iget v1, p0, Lt0/d;->h:F
 
     invoke-virtual {v0}, Landroid/graphics/Rect;->exactCenterX()F
 
@@ -592,7 +592,7 @@
     invoke-virtual {p1, v1, v2, v3}, Landroid/graphics/Canvas;->rotate(FFF)V
 
     .line 4
-    iget-object v1, p0, Lt0/d;->f:Lt0/d$a;
+    iget-object v1, p0, Lt0/d;->g:Lt0/d$a;
 
     .line 5
     iget-object v8, v1, Lt0/d$a;->a:Landroid/graphics/RectF;
@@ -949,7 +949,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lt0/d;->f:Lt0/d$a;
+    iget-object v0, p0, Lt0/d;->g:Lt0/d$a;
 
     .line 2
     iget v0, v0, Lt0/d$a;->t:I
@@ -968,7 +968,7 @@
 .method public final isRunning()Z
     .locals 1
 
-    iget-object v0, p0, Lt0/d;->i:Landroid/animation/ValueAnimator;
+    iget-object v0, p0, Lt0/d;->j:Landroid/animation/ValueAnimator;
 
     invoke-virtual {v0}, Landroid/animation/Animator;->isRunning()Z
 
@@ -981,7 +981,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lt0/d;->f:Lt0/d$a;
+    iget-object v0, p0, Lt0/d;->g:Lt0/d$a;
 
     .line 2
     iput p1, v0, Lt0/d$a;->t:I
@@ -996,7 +996,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lt0/d;->f:Lt0/d$a;
+    iget-object v0, p0, Lt0/d;->g:Lt0/d$a;
 
     .line 2
     iget-object v0, v0, Lt0/d$a;->b:Landroid/graphics/Paint;
@@ -1013,12 +1013,12 @@
     .locals 4
 
     .line 1
-    iget-object v0, p0, Lt0/d;->i:Landroid/animation/ValueAnimator;
+    iget-object v0, p0, Lt0/d;->j:Landroid/animation/ValueAnimator;
 
     invoke-virtual {v0}, Landroid/animation/Animator;->cancel()V
 
     .line 2
-    iget-object v0, p0, Lt0/d;->f:Lt0/d$a;
+    iget-object v0, p0, Lt0/d;->g:Lt0/d$a;
 
     .line 3
     iget v1, v0, Lt0/d$a;->e:F
@@ -1042,17 +1042,17 @@
     const/4 v0, 0x1
 
     .line 6
-    iput-boolean v0, p0, Lt0/d;->k:Z
+    iput-boolean v0, p0, Lt0/d;->l:Z
 
     .line 7
-    iget-object v0, p0, Lt0/d;->i:Landroid/animation/ValueAnimator;
+    iget-object v0, p0, Lt0/d;->j:Landroid/animation/ValueAnimator;
 
     const-wide/16 v1, 0x29a
 
     invoke-virtual {v0, v1, v2}, Landroid/animation/Animator;->setDuration(J)Landroid/animation/Animator;
 
     .line 8
-    iget-object v0, p0, Lt0/d;->i:Landroid/animation/ValueAnimator;
+    iget-object v0, p0, Lt0/d;->j:Landroid/animation/ValueAnimator;
 
     invoke-virtual {v0}, Landroid/animation/Animator;->start()V
 
@@ -1065,7 +1065,7 @@
     invoke-virtual {v0, v1}, Lt0/d$a;->a(I)V
 
     .line 10
-    iget-object v0, p0, Lt0/d;->f:Lt0/d$a;
+    iget-object v0, p0, Lt0/d;->g:Lt0/d$a;
 
     const/4 v1, 0x0
 
@@ -1088,14 +1088,14 @@
     iput v1, v0, Lt0/d$a;->g:F
 
     .line 17
-    iget-object v0, p0, Lt0/d;->i:Landroid/animation/ValueAnimator;
+    iget-object v0, p0, Lt0/d;->j:Landroid/animation/ValueAnimator;
 
     const-wide/16 v1, 0x534
 
     invoke-virtual {v0, v1, v2}, Landroid/animation/Animator;->setDuration(J)Landroid/animation/Animator;
 
     .line 18
-    iget-object v0, p0, Lt0/d;->i:Landroid/animation/ValueAnimator;
+    iget-object v0, p0, Lt0/d;->j:Landroid/animation/ValueAnimator;
 
     invoke-virtual {v0}, Landroid/animation/Animator;->start()V
 
@@ -1107,29 +1107,29 @@
     .locals 3
 
     .line 1
-    iget-object v0, p0, Lt0/d;->i:Landroid/animation/ValueAnimator;
+    iget-object v0, p0, Lt0/d;->j:Landroid/animation/ValueAnimator;
 
     invoke-virtual {v0}, Landroid/animation/Animator;->cancel()V
 
     const/4 v0, 0x0
 
     .line 2
-    iput v0, p0, Lt0/d;->g:F
+    iput v0, p0, Lt0/d;->h:F
 
     .line 3
-    iget-object v1, p0, Lt0/d;->f:Lt0/d$a;
+    iget-object v1, p0, Lt0/d;->g:Lt0/d$a;
 
     const/4 v2, 0x0
 
     invoke-virtual {v1, v2}, Lt0/d$a;->b(Z)V
 
     .line 4
-    iget-object v1, p0, Lt0/d;->f:Lt0/d$a;
+    iget-object v1, p0, Lt0/d;->g:Lt0/d$a;
 
     invoke-virtual {v1, v2}, Lt0/d$a;->a(I)V
 
     .line 5
-    iget-object v1, p0, Lt0/d;->f:Lt0/d$a;
+    iget-object v1, p0, Lt0/d;->g:Lt0/d$a;
 
     .line 6
     iput v0, v1, Lt0/d$a;->k:F

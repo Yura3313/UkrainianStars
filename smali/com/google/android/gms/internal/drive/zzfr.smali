@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field public final f:Landroid/os/ParcelFileDescriptor;
+.field public final g:Landroid/os/ParcelFileDescriptor;
 
 
 # direct methods
@@ -38,7 +38,7 @@
     invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lcom/google/android/gms/internal/drive/zzfr;->f:Landroid/os/ParcelFileDescriptor;
+    iput-object p1, p0, Lcom/google/android/gms/internal/drive/zzfr;->g:Landroid/os/ParcelFileDescriptor;
 
     return-void
 .end method
@@ -60,7 +60,7 @@
     const/4 v1, 0x2
 
     .line 2
-    iget-object v2, p0, Lcom/google/android/gms/internal/drive/zzfr;->f:Landroid/os/ParcelFileDescriptor;
+    iget-object v2, p0, Lcom/google/android/gms/internal/drive/zzfr;->g:Landroid/os/ParcelFileDescriptor;
 
     const/4 v3, 0x0
 

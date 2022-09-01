@@ -3,11 +3,11 @@
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lk3/y2;
+.implements Lk3/x2;
 
 
 # static fields
-.field public static final f:Lk3/l2;
+.field public static final g:Lk3/l2;
 
 
 # direct methods
@@ -18,7 +18,7 @@
 
     invoke-direct {v0}, Lk3/l2;-><init>()V
 
-    sput-object v0, Lk3/l2;->f:Lk3/l2;
+    sput-object v0, Lk3/l2;->g:Lk3/l2;
 
     return-void
 .end method
@@ -34,291 +34,311 @@
 
 # virtual methods
 .method public final c(Ljava/lang/Object;Ljava/util/Map;)V
-    .locals 6
+    .locals 16
 
-    check-cast p1, Lk3/z3;
+    move-object/from16 v0, p1
 
-    sget-object v0, Lk3/h2;->a:Lk3/q2;
+    check-cast v0, Lk3/bi;
 
-    const-string v0, "u"
+    sget-object v1, Lk3/g2;->a:Lk3/p2;
+
+    const-string v1, "openableIntents"
 
     .line 1
-    invoke-interface {p2, v0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-interface {v0}, Lk3/bi;->getContext()Landroid/content/Context;
 
-    move-result-object p2
+    move-result-object v2
 
-    check-cast p2, Ljava/lang/String;
+    invoke-virtual {v2}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
-    if-nez p2, :cond_0
+    move-result-object v2
 
-    goto/16 :goto_2
+    const-string v3, "data"
+
+    move-object/from16 v4, p2
 
     .line 2
-    :cond_0
-    invoke-static {p2}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
+    invoke-interface {v4, v3}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
-    move-result-object v0
+    move-result-object v3
+
+    check-cast v3, Ljava/lang/String;
 
     .line 3
     :try_start_0
-    move-object v1, p1
+    new-instance v4, Lorg/json/JSONObject;
 
-    check-cast v1, Lk3/ii;
+    invoke-direct {v4, v3}, Lorg/json/JSONObject;-><init>(Ljava/lang/String;)V
+    :try_end_0
+    .catch Lorg/json/JSONException; {:try_start_0 .. :try_end_0} :catch_3
 
-    invoke-interface {v1}, Lk3/ii;->l()Lk3/gr0;
-
-    move-result-object v1
-
-    if-eqz v1, :cond_1
+    :try_start_1
+    const-string v3, "intents"
 
     .line 4
-    invoke-virtual {v1, v0}, Lk3/gr0;->d(Landroid/net/Uri;)Z
+    invoke-virtual {v4, v3}, Lorg/json/JSONObject;->getJSONArray(Ljava/lang/String;)Lorg/json/JSONArray;
 
-    move-result v2
-
-    if-eqz v2, :cond_1
+    move-result-object v3
+    :try_end_1
+    .catch Lorg/json/JSONException; {:try_start_1 .. :try_end_1} :catch_2
 
     .line 5
-    move-object v2, p1
+    new-instance v4, Lorg/json/JSONObject;
 
-    check-cast v2, Lk3/bi;
+    invoke-direct {v4}, Lorg/json/JSONObject;-><init>()V
+
+    const/4 v5, 0x0
+
+    const/4 v6, 0x0
 
     .line 6
-    invoke-interface {v2}, Lk3/bi;->getContext()Landroid/content/Context;
+    :goto_0
+    invoke-virtual {v3}, Lorg/json/JSONArray;->length()I
 
-    move-result-object v2
+    move-result v7
 
-    move-object v3, p1
-
-    check-cast v3, Lk3/ki;
-
-    invoke-interface {v3}, Lk3/ki;->getView()Landroid/view/View;
-
-    move-result-object v3
-
-    move-object v4, p1
-
-    check-cast v4, Lk3/bi;
-
-    invoke-interface {v4}, Lk3/bi;->a()Landroid/app/Activity;
-
-    move-result-object v4
+    if-ge v6, v7, :cond_7
 
     .line 7
-    invoke-virtual {v1, v0, v2, v3, v4}, Lk3/gr0;->a(Landroid/net/Uri;Landroid/content/Context;Landroid/view/View;Landroid/app/Activity;)Landroid/net/Uri;
+    :try_start_2
+    invoke-virtual {v3, v6}, Lorg/json/JSONArray;->getJSONObject(I)Lorg/json/JSONObject;
 
-    move-result-object v0
-    :try_end_0
-    .catch Lcom/google/android/gms/internal/ads/zzef; {:try_start_0 .. :try_end_0} :catch_0
+    move-result-object v7
+    :try_end_2
+    .catch Lorg/json/JSONException; {:try_start_2 .. :try_end_2} :catch_1
 
-    goto :goto_0
-
-    :catch_0
-    nop
+    const-string v8, "id"
 
     .line 8
-    invoke-virtual {p2}, Ljava/lang/String;->length()I
+    invoke-virtual {v7, v8}, Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;
 
-    move-result v1
+    move-result-object v8
 
-    if-eqz v1, :cond_1
-
-    const-string v1, "Unable to append parameter to URL: "
-
-    invoke-virtual {v1, p2}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+    const-string v9, "u"
 
     .line 9
-    :cond_1
-    :goto_0
-    move-object p2, p1
+    invoke-virtual {v7, v9}, Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;
 
-    check-cast p2, Lk3/bi;
+    move-result-object v9
 
-    invoke-interface {p2}, Lk3/bi;->getContext()Landroid/content/Context;
-
-    move-result-object v1
+    const-string v10, "i"
 
     .line 10
-    sget-object v2, Li1/o;->B:Li1/o;
+    invoke-virtual {v7, v10}, Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;
 
-    iget-object v2, v2, Li1/o;->x:Lk3/p9;
+    move-result-object v10
+
+    const-string v11, "m"
 
     .line 11
-    invoke-virtual {v2, v1}, Lk3/p9;->h(Landroid/content/Context;)Z
+    invoke-virtual {v7, v11}, Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;
 
-    move-result v2
+    move-result-object v11
 
-    if-nez v2, :cond_2
+    const-string v12, "p"
 
     .line 12
-    invoke-virtual {v0}, Landroid/net/Uri;->toString()Ljava/lang/String;
+    invoke-virtual {v7, v12}, Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;
 
-    move-result-object v0
+    move-result-object v12
 
-    goto :goto_1
+    const-string v13, "c"
 
     .line 13
-    :cond_2
-    sget-object v2, Li1/o;->B:Li1/o;
+    invoke-virtual {v7, v13}, Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;
 
-    iget-object v2, v2, Li1/o;->x:Lk3/p9;
+    move-result-object v13
+
+    const-string v14, "intent_url"
 
     .line 14
-    invoke-virtual {v2, v1}, Lk3/p9;->l(Landroid/content/Context;)Ljava/lang/String;
+    invoke-virtual {v7, v14}, Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;
 
-    move-result-object v2
+    move-result-object v7
 
-    if-nez v2, :cond_3
+    const/4 v14, 0x0
 
     .line 15
-    invoke-virtual {v0}, Landroid/net/Uri;->toString()Ljava/lang/String;
+    invoke-static {v7}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
-    move-result-object v0
+    move-result v15
 
-    goto :goto_1
+    if-nez v15, :cond_0
 
     .line 16
-    :cond_3
-    sget-object v3, Lk3/q;->U:Lk3/g;
+    :try_start_3
+    invoke-static {v7, v5}, Landroid/content/Intent;->parseUri(Ljava/lang/String;I)Landroid/content/Intent;
+
+    move-result-object v14
+    :try_end_3
+    .catch Ljava/net/URISyntaxException; {:try_start_3 .. :try_end_3} :catch_0
+
+    goto :goto_1
 
     .line 17
-    sget-object v4, Lk3/l51;->j:Lk3/l51;
+    :catch_0
+    invoke-static {v7}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
 
-    iget-object v4, v4, Lk3/l51;->f:Lk3/n;
+    move-result-object v7
+
+    invoke-virtual {v7}, Ljava/lang/String;->length()I
+
+    move-result v15
+
+    if-eqz v15, :cond_0
+
+    const-string v15, "Error parsing the url: "
+
+    invoke-virtual {v15, v7}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
+
+    :cond_0
+    :goto_1
+    const/4 v7, 0x1
+
+    if-nez v14, :cond_5
 
     .line 18
-    invoke-virtual {v4, v3}, Lk3/n;->a(Lk3/h;)Ljava/lang/Object;
+    new-instance v14, Landroid/content/Intent;
 
-    move-result-object v3
+    invoke-direct {v14}, Landroid/content/Intent;-><init>()V
 
     .line 19
-    check-cast v3, Ljava/lang/Boolean;
+    invoke-static {v9}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
-    invoke-virtual {v3}, Ljava/lang/Boolean;->booleanValue()Z
+    move-result v15
 
-    move-result v3
-
-    if-eqz v3, :cond_4
+    if-nez v15, :cond_1
 
     .line 20
-    sget-object v3, Lk3/q;->V:Lk3/k;
+    invoke-static {v9}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
+
+    move-result-object v9
+
+    invoke-virtual {v14, v9}, Landroid/content/Intent;->setData(Landroid/net/Uri;)Landroid/content/Intent;
 
     .line 21
-    sget-object v4, Lk3/l51;->j:Lk3/l51;
+    :cond_1
+    invoke-static {v10}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
-    iget-object v4, v4, Lk3/l51;->f:Lk3/n;
+    move-result v9
+
+    if-nez v9, :cond_2
 
     .line 22
-    invoke-virtual {v4, v3}, Lk3/n;->a(Lk3/h;)Ljava/lang/Object;
-
-    move-result-object v3
+    invoke-virtual {v14, v10}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
 
     .line 23
-    check-cast v3, Ljava/lang/String;
+    :cond_2
+    invoke-static {v11}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+
+    move-result v9
+
+    if-nez v9, :cond_3
 
     .line 24
-    invoke-virtual {v0}, Landroid/net/Uri;->toString()Ljava/lang/String;
-
-    move-result-object v4
+    invoke-virtual {v14, v11}, Landroid/content/Intent;->setType(Ljava/lang/String;)Landroid/content/Intent;
 
     .line 25
-    invoke-virtual {v4, v3}, Ljava/lang/String;->contains(Ljava/lang/CharSequence;)Z
+    :cond_3
+    invoke-static {v12}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
-    move-result v5
+    move-result v9
 
-    if-eqz v5, :cond_5
+    if-nez v9, :cond_4
 
     .line 26
-    sget-object v0, Li1/o;->B:Li1/o;
-
-    iget-object v0, v0, Li1/o;->x:Lk3/p9;
+    invoke-virtual {v14, v12}, Landroid/content/Intent;->setPackage(Ljava/lang/String;)Landroid/content/Intent;
 
     .line 27
-    invoke-virtual {v0, v1, v2}, Lk3/p9;->m(Landroid/content/Context;Ljava/lang/String;)V
+    :cond_4
+    invoke-static {v13}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+
+    move-result v9
+
+    if-nez v9, :cond_5
+
+    const/4 v9, 0x2
+
+    const-string v10, "/"
 
     .line 28
-    invoke-static {v4, v1}, Lk3/x9;->b(Ljava/lang/String;Landroid/content/Context;)Ljava/lang/String;
+    invoke-virtual {v13, v10, v9}, Ljava/lang/String;->split(Ljava/lang/String;I)[Ljava/lang/String;
 
-    move-result-object v0
+    move-result-object v10
 
     .line 29
-    invoke-virtual {v0, v3, v2}, Ljava/lang/String;->replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
+    array-length v11, v10
 
-    move-result-object v0
-
-    goto :goto_1
-
-    :cond_4
-    const-string v3, "fbs_aeid"
+    if-ne v11, v9, :cond_5
 
     .line 30
-    invoke-virtual {v0, v3}, Landroid/net/Uri;->getQueryParameter(Ljava/lang/String;)Ljava/lang/String;
+    new-instance v9, Landroid/content/ComponentName;
 
-    move-result-object v4
+    aget-object v11, v10, v5
 
-    invoke-static {v4}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+    aget-object v10, v10, v7
 
-    move-result v4
+    invoke-direct {v9, v11, v10}, Landroid/content/ComponentName;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
-    if-eqz v4, :cond_5
+    invoke-virtual {v14, v9}, Landroid/content/Intent;->setComponent(Landroid/content/ComponentName;)Landroid/content/Intent;
+
+    :cond_5
+    const/high16 v9, 0x10000
 
     .line 31
-    invoke-virtual {v0}, Landroid/net/Uri;->toString()Ljava/lang/String;
+    invoke-virtual {v2, v14, v9}, Landroid/content/pm/PackageManager;->resolveActivity(Landroid/content/Intent;I)Landroid/content/pm/ResolveInfo;
 
-    move-result-object v0
+    move-result-object v9
+
+    if-eqz v9, :cond_6
+
+    goto :goto_2
+
+    :cond_6
+    const/4 v7, 0x0
 
     .line 32
-    invoke-static {v0, v1}, Lk3/x9;->b(Ljava/lang/String;Landroid/content/Context;)Ljava/lang/String;
+    :goto_2
+    :try_start_4
+    invoke-virtual {v4, v8, v7}, Lorg/json/JSONObject;->put(Ljava/lang/String;Z)Lorg/json/JSONObject;
+    :try_end_4
+    .catch Lorg/json/JSONException; {:try_start_4 .. :try_end_4} :catch_1
 
-    move-result-object v0
+    :catch_1
+    add-int/lit8 v6, v6, 0x1
+
+    goto/16 :goto_0
 
     .line 33
-    invoke-static {v0, v3, v2}, Lk3/x9;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Landroid/net/Uri;
+    :cond_7
+    check-cast v0, Lk3/y3;
 
-    move-result-object v0
+    invoke-interface {v0, v1, v4}, Lk3/y3;->i(Ljava/lang/String;Lorg/json/JSONObject;)V
 
-    invoke-virtual {v0}, Landroid/net/Uri;->toString()Ljava/lang/String;
-
-    move-result-object v0
+    goto :goto_3
 
     .line 34
-    sget-object v3, Li1/o;->B:Li1/o;
+    :catch_2
+    check-cast v0, Lk3/y3;
 
-    iget-object v3, v3, Li1/o;->x:Lk3/p9;
+    new-instance v2, Lorg/json/JSONObject;
+
+    invoke-direct {v2}, Lorg/json/JSONObject;-><init>()V
+
+    invoke-interface {v0, v1, v2}, Lk3/y3;->i(Ljava/lang/String;Lorg/json/JSONObject;)V
+
+    goto :goto_3
 
     .line 35
-    invoke-virtual {v3, v1, v2}, Lk3/p9;->m(Landroid/content/Context;Ljava/lang/String;)V
+    :catch_3
+    check-cast v0, Lk3/y3;
 
-    goto :goto_1
+    new-instance v2, Lorg/json/JSONObject;
 
-    .line 36
-    :cond_5
-    invoke-virtual {v0}, Landroid/net/Uri;->toString()Ljava/lang/String;
+    invoke-direct {v2}, Lorg/json/JSONObject;-><init>()V
 
-    move-result-object v0
+    invoke-interface {v0, v1, v2}, Lk3/y3;->i(Ljava/lang/String;Lorg/json/JSONObject;)V
 
-    .line 37
-    :goto_1
-    new-instance v1, Lk3/qc;
-
-    .line 38
-    invoke-interface {p2}, Lk3/bi;->getContext()Landroid/content/Context;
-
-    move-result-object p2
-
-    check-cast p1, Lk3/hi;
-
-    invoke-interface {p1}, Lk3/hi;->b()Lcom/google/android/gms/internal/ads/zzbbg;
-
-    move-result-object p1
-
-    iget-object p1, p1, Lcom/google/android/gms/internal/ads/zzbbg;->f:Ljava/lang/String;
-
-    invoke-direct {v1, p2, p1, v0}, Lk3/qc;-><init>(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 39
-    invoke-virtual {v1}, Lk3/qa;->b()Lk3/em0;
-
-    :goto_2
+    :goto_3
     return-void
 .end method

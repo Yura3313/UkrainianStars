@@ -1,5 +1,5 @@
 .class public final Lbe/v;
-.super Lbe/v0;
+.super Lbe/x0;
 .source "PresenceStorage.kt"
 
 
@@ -12,7 +12,7 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lbe/v0<",
+        "Lbe/x0<",
         "Ljava/util/Map<",
         "Lcom/supercell/id/model/IdSocialAccount;",
         "+",
@@ -26,7 +26,7 @@
 .method public constructor <init>()V
     .locals 0
 
-    invoke-direct {p0}, Lbe/v0;-><init>()V
+    invoke-direct {p0}, Lbe/x0;-><init>()V
 
     return-void
 .end method

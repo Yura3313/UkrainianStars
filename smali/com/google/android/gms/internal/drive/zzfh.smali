@@ -15,9 +15,9 @@
 
 
 # instance fields
-.field public final f:Lcom/google/android/gms/drive/Contents;
+.field public final g:Lcom/google/android/gms/drive/Contents;
 
-.field public final g:Z
+.field public final h:Z
 
 
 # direct methods
@@ -40,10 +40,10 @@
     invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lcom/google/android/gms/internal/drive/zzfh;->f:Lcom/google/android/gms/drive/Contents;
+    iput-object p1, p0, Lcom/google/android/gms/internal/drive/zzfh;->g:Lcom/google/android/gms/drive/Contents;
 
     .line 3
-    iput-boolean p2, p0, Lcom/google/android/gms/internal/drive/zzfh;->g:Z
+    iput-boolean p2, p0, Lcom/google/android/gms/internal/drive/zzfh;->h:Z
 
     return-void
 .end method
@@ -63,7 +63,7 @@
     const/4 v0, 0x2
 
     .line 2
-    iget-object v1, p0, Lcom/google/android/gms/internal/drive/zzfh;->f:Lcom/google/android/gms/drive/Contents;
+    iget-object v1, p0, Lcom/google/android/gms/internal/drive/zzfh;->g:Lcom/google/android/gms/drive/Contents;
 
     const/4 v2, 0x0
 
@@ -72,7 +72,7 @@
     const/4 v2, 0x3
 
     .line 3
-    iget-boolean v4, p0, Lcom/google/android/gms/internal/drive/zzfh;->g:Z
+    iget-boolean v4, p0, Lcom/google/android/gms/internal/drive/zzfh;->h:Z
 
     const/4 v3, 0x4
 

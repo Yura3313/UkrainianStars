@@ -19,7 +19,7 @@
 
 
 # instance fields
-.field public f:La5/u0;
+.field public g:La5/u0;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "La5/u0<",
@@ -48,7 +48,7 @@
         }
     .end annotation
 
-    iget-object v0, p0, La5/s0;->f:La5/u0;
+    iget-object v0, p0, La5/s0;->g:La5/u0;
 
     if-eqz v0, :cond_0
 

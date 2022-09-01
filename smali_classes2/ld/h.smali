@@ -1,5 +1,5 @@
 .class public final Lld/h;
-.super Lse/h;
+.super Lse/i;
 .source "IngameFriendsFragment.kt"
 
 # interfaces
@@ -9,29 +9,29 @@
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/p<",
         "Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment;",
         "Ljava/lang/Exception;",
-        "Lie/h;",
+        "Lie/i;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic f:Lld/c;
+.field public final synthetic g:Lld/c;
 
 
 # direct methods
 .method public constructor <init>(Lld/c;)V
     .locals 0
 
-    iput-object p1, p0, Lld/h;->f:Lld/c;
+    iput-object p1, p0, Lld/h;->g:Lld/c;
 
     const/4 p1, 0x2
 
-    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -49,14 +49,14 @@
     const-string v0, "$receiver"
 
     .line 2
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "it"
 
-    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 3
-    invoke-static {p1}, Lcom/android/billingclient/api/c0;->e(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
+    invoke-static {p1}, Lcom/android/billingclient/api/b0;->f(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
 
     move-result-object v0
 
@@ -64,14 +64,14 @@
 
     if-eqz v0, :cond_0
 
-    sget-object v2, Lcom/supercell/id/ui/MainActivity;->s:Ljava/lang/ref/WeakReference;
+    sget-object v2, Lcom/supercell/id/ui/MainActivity;->t:Ljava/lang/ref/WeakReference;
 
     .line 4
     invoke-virtual {v0, p2, v1}, Lcom/supercell/id/ui/MainActivity;->G(Ljava/lang/Exception;Lre/l;)V
 
     .line 5
     :cond_0
-    iget-object p2, p1, Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment;->j0:Ljava/util/List;
+    iget-object p2, p1, Lcom/supercell/id/ui/invitefriends/friends/IngameFriendsFragment;->k0:Ljava/util/List;
 
     if-eqz p2, :cond_4
 
@@ -98,7 +98,7 @@
     move-result-object v2
 
     .line 8
-    check-cast v2, Lae/b2;
+    check-cast v2, Lae/a2;
 
     .line 9
     instance-of v3, v2, Lld/c;
@@ -119,9 +119,9 @@
 
     .line 11
     :cond_3
-    iget-object p2, p0, Lld/h;->f:Lld/c;
+    iget-object p2, p0, Lld/h;->g:Lld/c;
 
-    invoke-static {v0, p2}, Lje/j;->J(Ljava/util/Collection;Ljava/lang/Object;)Ljava/util/List;
+    invoke-static {v0, p2}, Lje/j;->E(Ljava/util/Collection;Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object p2
 
@@ -130,7 +130,7 @@
 
     .line 13
     :cond_4
-    sget-object p1, Lie/h;->a:Lie/h;
+    sget-object p1, Lie/i;->a:Lie/i;
 
     return-object p1
 .end method

@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field public g0:Lcom/google/android/material/snackbar/Snackbar;
-
 .field public h0:Lcom/google/android/material/snackbar/Snackbar;
+
+.field public i0:Lcom/google/android/material/snackbar/Snackbar;
 
 
 # direct methods
@@ -32,13 +32,13 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/fragment/app/Fragment;->A:Landroidx/fragment/app/Fragment;
+    iget-object v0, p0, Landroidx/fragment/app/Fragment;->B:Landroidx/fragment/app/Fragment;
 
     .line 2
     check-cast v0, Lab/p;
 
     .line 3
-    iget-object v0, v0, Lab/p;->j0:Lpa/b;
+    iget-object v0, v0, Lab/p;->k0:Lpa/b;
 
     return-object v0
 .end method
@@ -56,7 +56,7 @@
     invoke-super {p0, p1}, Landroidx/fragment/app/Fragment;->V(Landroid/os/Bundle;)V
 
     .line 2
-    iget-object p1, p0, Landroidx/fragment/app/Fragment;->A:Landroidx/fragment/app/Fragment;
+    iget-object p1, p0, Landroidx/fragment/app/Fragment;->B:Landroidx/fragment/app/Fragment;
 
     .line 3
     check-cast p1, Lab/p;
@@ -110,13 +110,13 @@
     move-result-object v2
 
     .line 2
-    iget-object v3, p0, Landroidx/fragment/app/Fragment;->M:Landroid/view/View;
+    iget-object v3, p0, Landroidx/fragment/app/Fragment;->N:Landroid/view/View;
 
     .line 3
-    invoke-static {v2, v3}, Lbc/a;->b(Landroid/content/Context;Landroid/view/View;)V
+    invoke-static {v2, v3}, Ll2/g;->a(Landroid/content/Context;Landroid/view/View;)V
 
     .line 4
-    iget-object v2, p0, Landroidx/fragment/app/Fragment;->A:Landroidx/fragment/app/Fragment;
+    iget-object v2, p0, Landroidx/fragment/app/Fragment;->B:Landroidx/fragment/app/Fragment;
 
     const/4 v3, 0x1
 
@@ -132,7 +132,7 @@
     sget v5, Lcom/helpshift/R$string;->hs__permission_rationale_snackbar_action_label:I
 
     .line 6
-    iget-object v6, p0, Landroidx/fragment/app/Fragment;->M:Landroid/view/View;
+    iget-object v6, p0, Landroidx/fragment/app/Fragment;->N:Landroid/view/View;
 
     const-string v7, "Requesting permission : "
 
@@ -153,7 +153,7 @@
     const-string v8, "Helpshift_Permissions"
 
     .line 9
-    invoke-static {v8, v7, v1, v1}, Landroidx/savedstate/d;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v8, v7, v1, v1}, Le5/i;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
 
     aget-object v4, v3, v4
 
@@ -175,14 +175,14 @@
 
     move-result-object v0
 
-    invoke-static {v6, v0, v1}, Lk3/um;->a(Landroid/view/View;Ljava/lang/CharSequence;I)Lcom/google/android/material/snackbar/Snackbar;
+    invoke-static {v6, v0, v1}, Lv6/a;->b(Landroid/view/View;Ljava/lang/CharSequence;I)Lcom/google/android/material/snackbar/Snackbar;
 
     move-result-object v1
 
     .line 12
-    new-instance v0, Lcom/helpshift/util/c0;
+    new-instance v0, Lcom/helpshift/util/b0;
 
-    invoke-direct {v0, v2, v3, p1}, Lcom/helpshift/util/c0;-><init>(Landroidx/fragment/app/Fragment;[Ljava/lang/String;I)V
+    invoke-direct {v0, v2, v3, p1}, Lcom/helpshift/util/b0;-><init>(Landroidx/fragment/app/Fragment;[Ljava/lang/String;I)V
 
     .line 13
     invoke-virtual {v1, v5, v0}, Lcom/google/android/material/snackbar/Snackbar;->j(ILandroid/view/View$OnClickListener;)Lcom/google/android/material/snackbar/Snackbar;
@@ -198,18 +198,18 @@
 
     .line 16
     :goto_1
-    iput-object v1, p0, Lqa/b;->g0:Lcom/google/android/material/snackbar/Snackbar;
+    iput-object v1, p0, Lqa/b;->h0:Lcom/google/android/material/snackbar/Snackbar;
 
     goto :goto_2
 
     .line 17
     :cond_3
-    iget-boolean p1, p0, Landroidx/fragment/app/Fragment;->F:Z
+    iget-boolean p1, p0, Landroidx/fragment/app/Fragment;->G:Z
 
     if-nez p1, :cond_4
 
     .line 18
-    iget-object p1, p0, Landroidx/fragment/app/Fragment;->M:Landroid/view/View;
+    iget-object p1, p0, Landroidx/fragment/app/Fragment;->N:Landroid/view/View;
 
     .line 19
     sget v0, Lcom/helpshift/R$string;->hs__permission_not_granted:I
@@ -227,7 +227,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/fragment/app/Fragment;->M:Landroid/view/View;
+    iget-object v0, p0, Landroidx/fragment/app/Fragment;->N:Landroid/view/View;
 
     .line 2
     invoke-static {v0}, Lib/f;->a(Landroid/view/View;)V
@@ -235,7 +235,7 @@
     const/4 v0, 0x1
 
     .line 3
-    iput-boolean v0, p0, Landroidx/fragment/app/Fragment;->K:Z
+    iput-boolean v0, p0, Landroidx/fragment/app/Fragment;->L:Z
 
     return-void
 .end method
@@ -244,7 +244,7 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lqa/b;->g0:Lcom/google/android/material/snackbar/Snackbar;
+    iget-object v0, p0, Lqa/b;->h0:Lcom/google/android/material/snackbar/Snackbar;
 
     const/4 v1, 0x3
 
@@ -257,14 +257,14 @@
     if-eqz v0, :cond_0
 
     .line 2
-    iget-object v0, p0, Lqa/b;->g0:Lcom/google/android/material/snackbar/Snackbar;
+    iget-object v0, p0, Lqa/b;->h0:Lcom/google/android/material/snackbar/Snackbar;
 
     .line 3
     invoke-virtual {v0, v1}, Lcom/google/android/material/snackbar/BaseTransientBottomBar;->b(I)V
 
     .line 4
     :cond_0
-    iget-object v0, p0, Lqa/b;->h0:Lcom/google/android/material/snackbar/Snackbar;
+    iget-object v0, p0, Lqa/b;->i0:Lcom/google/android/material/snackbar/Snackbar;
 
     if-eqz v0, :cond_1
 
@@ -275,7 +275,7 @@
     if-eqz v0, :cond_1
 
     .line 5
-    iget-object v0, p0, Lqa/b;->h0:Lcom/google/android/material/snackbar/Snackbar;
+    iget-object v0, p0, Lqa/b;->i0:Lcom/google/android/material/snackbar/Snackbar;
 
     .line 6
     invoke-virtual {v0, v1}, Lcom/google/android/material/snackbar/BaseTransientBottomBar;->b(I)V
@@ -335,7 +335,7 @@
     const-string v3, "Helpshift_BaseConvFrag"
 
     .line 3
-    invoke-static {v3, p3, v0, v0}, Landroidx/savedstate/d;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v3, p3, v0, v0}, Le5/i;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
 
     if-eqz v2, :cond_1
 
@@ -346,7 +346,7 @@
 
     .line 5
     :cond_1
-    iget-object p1, p0, Landroidx/fragment/app/Fragment;->M:Landroid/view/View;
+    iget-object p1, p0, Landroidx/fragment/app/Fragment;->N:Landroid/view/View;
 
     .line 6
     sget p3, Lcom/helpshift/R$string;->hs__permission_denied_message:I
@@ -362,12 +362,12 @@
 
     move-result-object p3
 
-    invoke-static {p1, p3, v0}, Lk3/um;->a(Landroid/view/View;Ljava/lang/CharSequence;I)Lcom/google/android/material/snackbar/Snackbar;
+    invoke-static {p1, p3, v0}, Lv6/a;->b(Landroid/view/View;Ljava/lang/CharSequence;I)Lcom/google/android/material/snackbar/Snackbar;
 
     move-result-object p1
 
     .line 8
-    iput-object p1, p0, Lqa/b;->h0:Lcom/google/android/material/snackbar/Snackbar;
+    iput-object p1, p0, Lqa/b;->i0:Lcom/google/android/material/snackbar/Snackbar;
 
     .line 9
     array-length p1, p2
@@ -383,7 +383,7 @@
     if-nez p1, :cond_2
 
     .line 10
-    iget-object p1, p0, Lqa/b;->h0:Lcom/google/android/material/snackbar/Snackbar;
+    iget-object p1, p0, Lqa/b;->i0:Lcom/google/android/material/snackbar/Snackbar;
 
     sget p2, Lcom/helpshift/R$string;->hs__permission_denied_snackbar_action:I
 
@@ -395,7 +395,7 @@
 
     .line 11
     :cond_2
-    iget-object p1, p0, Lqa/b;->h0:Lcom/google/android/material/snackbar/Snackbar;
+    iget-object p1, p0, Lqa/b;->i0:Lcom/google/android/material/snackbar/Snackbar;
 
     invoke-virtual {p1}, Lcom/google/android/material/snackbar/Snackbar;->k()V
 
@@ -409,7 +409,7 @@
     const/4 v0, 0x1
 
     .line 1
-    iput-boolean v0, p0, Landroidx/fragment/app/Fragment;->K:Z
+    iput-boolean v0, p0, Landroidx/fragment/app/Fragment;->L:Z
 
     .line 2
     invoke-virtual {p0}, Lqa/b;->T0()Ljava/lang/String;

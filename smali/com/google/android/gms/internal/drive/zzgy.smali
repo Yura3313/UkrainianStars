@@ -11,7 +11,7 @@
         }
     .end annotation
 
-    sget-object v0, Lcom/google/android/gms/common/api/Status;->k:Lcom/google/android/gms/common/api/Status;
+    sget-object v0, Lcom/google/android/gms/common/api/Status;->l:Lcom/google/android/gms/common/api/Status;
 
     const/4 v0, 0x0
 

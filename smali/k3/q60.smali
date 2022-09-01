@@ -1,135 +1,53 @@
 .class public final Lk3/q60;
-.super Ljava/lang/Object;
+.super Lcom/google/android/gms/internal/ads/zzaoy;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
-
-# interfaces
-.implements Lk3/f40;
-
-
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ljava/lang/Object;",
-        "Lk3/f40<",
-        "Lk3/yg0;",
-        "Lcom/google/android/gms/internal/ads/zzcsn;",
-        ">;"
-    }
-.end annotation
 
 
 # instance fields
-.field public final a:Ljava/util/HashMap;
+.field public g:Lk3/j40;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Ljava/util/Map<",
-            "Ljava/lang/String;",
-            "Lk3/g40<",
-            "Lk3/yg0;",
-            "Lcom/google/android/gms/internal/ads/zzcsn;",
-            ">;>;"
+            "Lk3/j40<",
+            "Lcom/google/android/gms/internal/ads/zzapa;",
+            "Lcom/google/android/gms/internal/ads/zzcso;",
+            ">;"
         }
-    .end annotation
-
-    .annotation build Ljavax/annotation/concurrent/GuardedBy;
-        value = "this"
     .end annotation
 .end field
 
-.field public final b:Lk3/b00;
-
 
 # direct methods
-.method public constructor <init>(Lk3/b00;)V
-    .locals 1
+.method public constructor <init>(Lk3/j40;)V
+    .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Lcom/google/android/gms/internal/ads/zzaoy;-><init>()V
 
     .line 2
-    new-instance v0, Ljava/util/HashMap;
-
-    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
-
-    iput-object v0, p0, Lk3/q60;->a:Ljava/util/HashMap;
-
-    .line 3
-    iput-object p1, p0, Lk3/q60;->b:Lk3/b00;
+    iput-object p1, p0, Lk3/q60;->g:Lk3/j40;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Ljava/lang/String;Lorg/json/JSONObject;)Lk3/g40;
+.method public final p(Ljava/lang/String;)V
     .locals 2
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/lang/String;",
-            "Lorg/json/JSONObject;",
-            ")",
-            "Lk3/g40<",
-            "Lk3/yg0;",
-            "Lcom/google/android/gms/internal/ads/zzcsn;",
-            ">;"
-        }
-    .end annotation
-
     .annotation system Ldalvik/annotation/Throws;
         value = {
-            Lcom/google/android/gms/internal/ads/zzdlr;
+            Landroid/os/RemoteException;
         }
     .end annotation
 
-    .line 1
-    monitor-enter p0
+    iget-object v0, p0, Lk3/q60;->g:Lk3/j40;
 
-    .line 2
-    :try_start_0
-    iget-object v0, p0, Lk3/q60;->a:Ljava/util/HashMap;
+    iget-object v0, v0, Lk3/j40;->c:Lk3/or;
 
-    invoke-virtual {v0, p1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    check-cast v0, Lcom/google/android/gms/internal/ads/zzcso;
 
-    move-result-object v0
+    const/4 v1, 0x0
 
-    check-cast v0, Lk3/g40;
+    invoke-virtual {v0, v1, p1}, Lcom/google/android/gms/internal/ads/zzcso;->j3(ILjava/lang/String;)V
 
-    if-nez v0, :cond_0
-
-    .line 3
-    iget-object v0, p0, Lk3/q60;->b:Lk3/b00;
-
-    invoke-virtual {v0, p1, p2}, Lk3/b00;->a(Ljava/lang/String;Lorg/json/JSONObject;)Lk3/yg0;
-
-    move-result-object p2
-
-    .line 4
-    new-instance v0, Lk3/g40;
-
-    new-instance v1, Lcom/google/android/gms/internal/ads/zzcsn;
-
-    invoke-direct {v1}, Lcom/google/android/gms/internal/ads/zzcsn;-><init>()V
-
-    invoke-direct {v0, p2, v1, p1}, Lk3/g40;-><init>(Ljava/lang/Object;Lk3/qr;Ljava/lang/String;)V
-
-    .line 5
-    iget-object p2, p0, Lk3/q60;->a:Ljava/util/HashMap;
-
-    invoke-virtual {p2, p1, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 6
-    :cond_0
-    monitor-exit p0
-
-    return-object v0
-
-    :catchall_0
-    move-exception p1
-
-    monitor-exit p0
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    throw p1
+    return-void
 .end method

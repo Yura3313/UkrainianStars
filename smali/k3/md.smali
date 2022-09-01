@@ -52,7 +52,7 @@
     const/16 v3, 0x17
 
     .line 2
-    invoke-static {v1, v3}, La1/e;->a(Ljava/lang/String;I)I
+    invoke-static {v1, v3}, La1/e;->b(Ljava/lang/String;I)I
 
     move-result v3
 

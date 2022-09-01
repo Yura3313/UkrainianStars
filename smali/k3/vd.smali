@@ -1,67 +1,42 @@
-.class public Lk3/vd;
+.class public final Lk3/vd;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lk3/yl0;
-
-
-# annotations
-.annotation runtime Ljava/lang/Deprecated;
-.end annotation
+.implements Lk3/am0;
 
 
 # instance fields
-.field public final f:Ljava/lang/Object;
+.field public final synthetic g:I
 
-.field public final g:Ljava/lang/Object;
+.field public final synthetic h:Ljava/lang/Object;
 
 
 # direct methods
-.method public synthetic constructor <init>()V
-    .locals 3
+.method public constructor <init>(Lcom/google/android/gms/internal/ads/zzasj;)V
+    .locals 1
+
+    const/4 v0, 0x1
+
+    iput v0, p0, Lk3/vd;->g:I
 
     .line 1
+    iput-object p1, p0, Lk3/vd;->h:Ljava/lang/Object;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 2
-    new-instance v0, Lk3/pd;
-
-    invoke-direct {v0}, Lk3/pd;-><init>()V
-
-    .line 3
-    iput-object v0, p0, Lk3/vd;->f:Ljava/lang/Object;
-
-    .line 4
-    new-instance v1, Ljava/util/concurrent/atomic/AtomicInteger;
-
-    const/4 v2, 0x0
-
-    invoke-direct {v1, v2}, Ljava/util/concurrent/atomic/AtomicInteger;-><init>(I)V
-
-    iput-object v1, p0, Lk3/vd;->g:Ljava/lang/Object;
-
-    .line 5
-    new-instance v1, Lk3/ud;
-
-    invoke-direct {v1, p0}, Lk3/ud;-><init>(Lk3/vd;)V
-
-    .line 6
-    sget-object v2, Lk3/jd;->f:Lk3/nd;
-
-    .line 7
-    invoke-static {v0, v1, v2}, Lk3/am0;->e(Lk3/em0;Lk3/yl0;Ljava/util/concurrent/Executor;)V
 
     return-void
 .end method
 
-.method public synthetic constructor <init>(Lk3/ro;Lk3/yl0;)V
-    .locals 0
+.method public constructor <init>(Lk3/wd;)V
+    .locals 1
 
-    .line 8
-    iput-object p1, p0, Lk3/vd;->g:Ljava/lang/Object;
+    const/4 v0, 0x0
 
-    iput-object p2, p0, Lk3/vd;->f:Ljava/lang/Object;
+    iput v0, p0, Lk3/vd;->g:I
+
+    .line 2
+    iput-object p1, p0, Lk3/vd;->h:Ljava/lang/Object;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -71,101 +46,170 @@
 
 # virtual methods
 .method public final a(Ljava/lang/Throwable;)V
-    .locals 1
+    .locals 4
+
+    iget v0, p0, Lk3/vd;->g:I
+
+    packed-switch v0, :pswitch_data_0
+
+    goto :goto_0
 
     .line 1
-    iget-object v0, p0, Lk3/vd;->g:Ljava/lang/Object;
+    :pswitch_0
+    iget-object p1, p0, Lk3/vd;->h:Ljava/lang/Object;
 
-    check-cast v0, Lk3/ro;
-
-    invoke-static {v0}, Lk3/ro;->a(Lk3/ro;)V
-
-    .line 2
-    iget-object v0, p0, Lk3/vd;->f:Ljava/lang/Object;
-
-    check-cast v0, Lk3/yl0;
-
-    invoke-interface {v0, p1}, Lk3/yl0;->a(Ljava/lang/Throwable;)V
-
-    return-void
-.end method
-
-.method public final b()I
-    .locals 1
-    .annotation runtime Ljava/lang/Deprecated;
-    .end annotation
-
-    iget-object v0, p0, Lk3/vd;->g:Ljava/lang/Object;
-
-    check-cast v0, Ljava/util/concurrent/atomic/AtomicInteger;
-
-    invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicInteger;->get()I
-
-    move-result v0
-
-    return v0
-.end method
-
-.method public final c()V
-    .locals 2
-    .annotation runtime Ljava/lang/Deprecated;
-    .end annotation
-
-    iget-object v0, p0, Lk3/vd;->f:Ljava/lang/Object;
-
-    check-cast v0, Lk3/pd;
-
-    new-instance v1, Ljava/lang/Exception;
-
-    invoke-direct {v1}, Ljava/lang/Exception;-><init>()V
-
-    invoke-virtual {v0, v1}, Lk3/pd;->b(Ljava/lang/Throwable;)Z
-
-    return-void
-.end method
-
-.method public final d(Lk3/td;Lk3/rd;)V
-    .locals 2
-    .annotation runtime Ljava/lang/Deprecated;
-    .end annotation
-
-    .line 1
-    iget-object v0, p0, Lk3/vd;->f:Ljava/lang/Object;
-
-    check-cast v0, Lk3/pd;
-
-    new-instance v1, Lk3/xd;
-
-    invoke-direct {v1, p1, p2}, Lk3/xd;-><init>(Lk3/td;Lk3/rd;)V
+    check-cast p1, Lk3/wd;
 
     .line 2
-    sget-object p1, Lk3/jd;->f:Lk3/nd;
+    iget-object p1, p1, Lk3/wd;->h:Ljava/lang/Object;
+
+    check-cast p1, Ljava/util/concurrent/atomic/AtomicInteger;
+
+    const/4 v0, -0x1
 
     .line 3
-    invoke-static {v0, v1, p1}, Lk3/am0;->e(Lk3/em0;Lk3/yl0;Ljava/util/concurrent/Executor;)V
+    invoke-virtual {p1, v0}, Ljava/util/concurrent/atomic/AtomicInteger;->set(I)V
 
     return-void
+
+    .line 4
+    :goto_0
+    :try_start_0
+    iget-object v0, p0, Lk3/vd;->h:Ljava/lang/Object;
+
+    check-cast v0, Lcom/google/android/gms/internal/ads/zzasj;
+
+    .line 5
+    invoke-static {p1}, Lcom/google/android/gms/internal/ads/zzcmt;->b(Ljava/lang/Throwable;)Lcom/google/android/gms/internal/ads/zzuw;
+
+    move-result-object v1
+
+    .line 6
+    invoke-virtual {p1}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
+
+    move-result-object v2
+
+    .line 7
+    sget v3, Lk3/zj0;->a:I
+
+    if-eqz v2, :cond_1
+
+    .line 8
+    invoke-virtual {v2}, Ljava/lang/String;->isEmpty()Z
+
+    move-result v2
+
+    if-eqz v2, :cond_0
+
+    goto :goto_1
+
+    :cond_0
+    const/4 v2, 0x0
+
+    goto :goto_2
+
+    :cond_1
+    :goto_1
+    const/4 v2, 0x1
+
+    :goto_2
+    if-eqz v2, :cond_2
+
+    .line 9
+    iget-object p1, v1, Lcom/google/android/gms/internal/ads/zzuw;->h:Ljava/lang/String;
+
+    goto :goto_3
+
+    .line 10
+    :cond_2
+    invoke-virtual {p1}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
+
+    move-result-object p1
+
+    .line 11
+    :goto_3
+    new-instance v2, Lcom/google/android/gms/internal/ads/zzazl;
+
+    iget v1, v1, Lcom/google/android/gms/internal/ads/zzuw;->g:I
+
+    invoke-direct {v2, p1, v1}, Lcom/google/android/gms/internal/ads/zzazl;-><init>(Ljava/lang/String;I)V
+
+    .line 12
+    invoke-interface {v0, v2}, Lcom/google/android/gms/internal/ads/zzasj;->q3(Lcom/google/android/gms/internal/ads/zzazl;)V
+    :try_end_0
+    .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
+
+    goto :goto_4
+
+    .line 13
+    :catch_0
+    invoke-static {}, Lcom/google/android/gms/ads/a;->k()Z
+
+    :goto_4
+    return-void
+
+    nop
+
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method
 
-.method public final synthetic onSuccess(Ljava/lang/Object;)V
+.method public final onSuccess(Ljava/lang/Object;)V
     .locals 1
 
+    iget v0, p0, Lk3/vd;->g:I
+
+    packed-switch v0, :pswitch_data_0
+
+    goto :goto_0
+
     .line 1
-    check-cast p1, Lk3/io;
+    :pswitch_0
+    iget-object p1, p0, Lk3/vd;->h:Ljava/lang/Object;
+
+    check-cast p1, Lk3/wd;
 
     .line 2
-    iget-object v0, p0, Lk3/vd;->g:Ljava/lang/Object;
+    iget-object p1, p1, Lk3/wd;->h:Ljava/lang/Object;
 
-    check-cast v0, Lk3/ro;
+    check-cast p1, Ljava/util/concurrent/atomic/AtomicInteger;
 
-    invoke-static {v0}, Lk3/ro;->a(Lk3/ro;)V
+    const/4 v0, 0x1
 
     .line 3
-    iget-object v0, p0, Lk3/vd;->f:Ljava/lang/Object;
-
-    check-cast v0, Lk3/yl0;
-
-    invoke-interface {v0, p1}, Lk3/yl0;->onSuccess(Ljava/lang/Object;)V
+    invoke-virtual {p1, v0}, Ljava/util/concurrent/atomic/AtomicInteger;->set(I)V
 
     return-void
+
+    .line 4
+    :goto_0
+    check-cast p1, Landroid/os/ParcelFileDescriptor;
+
+    .line 5
+    :try_start_0
+    iget-object v0, p0, Lk3/vd;->h:Ljava/lang/Object;
+
+    check-cast v0, Lcom/google/android/gms/internal/ads/zzasj;
+
+    invoke-interface {v0, p1}, Lcom/google/android/gms/internal/ads/zzasj;->n1(Landroid/os/ParcelFileDescriptor;)V
+    :try_end_0
+    .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
+
+    goto :goto_1
+
+    .line 6
+    :catch_0
+    invoke-static {}, Lcom/google/android/gms/ads/a;->k()Z
+
+    :goto_1
+    return-void
+
+    nop
+
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

@@ -73,7 +73,7 @@
     iget-object p1, p1, Landroidx/lifecycle/k;->b:Landroidx/lifecycle/f$c;
 
     .line 3
-    sget-object p2, Landroidx/lifecycle/f$c;->f:Landroidx/lifecycle/f$c;
+    sget-object p2, Landroidx/lifecycle/f$c;->g:Landroidx/lifecycle/f$c;
 
     if-ne p1, p2, :cond_0
 
@@ -105,7 +105,7 @@
     iget-object p2, p2, Landroidx/lifecycle/k;->b:Landroidx/lifecycle/f$c;
 
     .line 7
-    sget-object v0, Landroidx/lifecycle/f$c;->i:Landroidx/lifecycle/f$c;
+    sget-object v0, Landroidx/lifecycle/f$c;->j:Landroidx/lifecycle/f$c;
 
     invoke-virtual {p2, v0}, Landroidx/lifecycle/f$c;->c(Landroidx/lifecycle/f$c;)Z
 
@@ -186,7 +186,7 @@
     iget-object v0, v0, Landroidx/lifecycle/k;->b:Landroidx/lifecycle/f$c;
 
     .line 3
-    sget-object v1, Landroidx/lifecycle/f$c;->i:Landroidx/lifecycle/f$c;
+    sget-object v1, Landroidx/lifecycle/f$c;->j:Landroidx/lifecycle/f$c;
 
     invoke-virtual {v0, v1}, Landroidx/lifecycle/f$c;->c(Landroidx/lifecycle/f$c;)Z
 

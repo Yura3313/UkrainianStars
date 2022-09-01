@@ -31,13 +31,13 @@
 
     const/4 v1, 0x0
 
-    invoke-direct {v0, v1}, Lcom/kakao/sdk/user/UserApiClient$Companion;-><init>(Lse/e;)V
+    invoke-direct {v0, v1}, Lcom/kakao/sdk/user/UserApiClient$Companion;-><init>(Lse/f;)V
 
     sput-object v0, Lcom/kakao/sdk/user/UserApiClient;->Companion:Lcom/kakao/sdk/user/UserApiClient$Companion;
 
     sget-object v0, Lcom/kakao/sdk/user/UserApiClient$Companion$instance$2;->INSTANCE:Lcom/kakao/sdk/user/UserApiClient$Companion$instance$2;
 
-    invoke-static {v0}, La5/r;->d(Lre/a;)Lie/c;
+    invoke-static {v0}, Ld2/u;->c(Lre/a;)Lie/c;
 
     move-result-object v0
 
@@ -53,7 +53,7 @@
 
     const/4 v1, 0x3
 
-    invoke-direct {p0, v0, v0, v1, v0}, Lcom/kakao/sdk/user/UserApiClient;-><init>(Lcom/kakao/sdk/user/UserApi;Lcom/kakao/sdk/auth/TokenManagerProvider;ILse/e;)V
+    invoke-direct {p0, v0, v0, v1, v0}, Lcom/kakao/sdk/user/UserApiClient;-><init>(Lcom/kakao/sdk/user/UserApi;Lcom/kakao/sdk/auth/TokenManagerProvider;ILse/f;)V
 
     return-void
 .end method
@@ -63,11 +63,11 @@
 
     const-string v0, "userApi"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "tokenManagerProvider"
 
-    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -79,7 +79,7 @@
     return-void
 .end method
 
-.method public synthetic constructor <init>(Lcom/kakao/sdk/user/UserApi;Lcom/kakao/sdk/auth/TokenManagerProvider;ILse/e;)V
+.method public synthetic constructor <init>(Lcom/kakao/sdk/user/UserApi;Lcom/kakao/sdk/auth/TokenManagerProvider;ILse/f;)V
     .locals 0
 
     and-int/lit8 p4, p3, 0x1
@@ -89,19 +89,19 @@
     .line 2
     sget-object p1, Lcom/kakao/sdk/network/ApiFactory;->INSTANCE:Lcom/kakao/sdk/network/ApiFactory;
 
-    invoke-static {p1}, Lcom/kakao/sdk/auth/network/ApiFactoryKt;->getKapiWithOAuth(Lcom/kakao/sdk/network/ApiFactory;)Lef/d0;
+    invoke-static {p1}, Lcom/kakao/sdk/auth/network/ApiFactoryKt;->getKapiWithOAuth(Lcom/kakao/sdk/network/ApiFactory;)Lef/c0;
 
     move-result-object p1
 
     const-class p4, Lcom/kakao/sdk/user/UserApi;
 
-    invoke-virtual {p1, p4}, Lef/d0;->b(Ljava/lang/Class;)Ljava/lang/Object;
+    invoke-virtual {p1, p4}, Lef/c0;->b(Ljava/lang/Class;)Ljava/lang/Object;
 
     move-result-object p1
 
     const-string p4, "ApiFactory.kapiWithOAuth\u2026eate(UserApi::class.java)"
 
-    invoke-static {p1, p4}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p4}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     check-cast p1, Lcom/kakao/sdk/user/UserApi;
 
@@ -325,14 +325,14 @@
             "Lcom/kakao/sdk/user/model/AccessTokenInfo;",
             "-",
             "Ljava/lang/Throwable;",
-            "Lie/h;",
+            "Lie/i;",
             ">;)V"
         }
     .end annotation
 
     const-string v0, "callback"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     iget-object v0, p0, Lcom/kakao/sdk/user/UserApiClient;->userApi:Lcom/kakao/sdk/user/UserApi;
@@ -356,7 +356,7 @@
 
     const-string v0, "context"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     sget-object v0, Lcom/kakao/sdk/auth/AuthCodeClient;->Companion:Lcom/kakao/sdk/auth/AuthCodeClient$Companion;
 
@@ -392,7 +392,7 @@
             "Lcom/kakao/sdk/auth/model/OAuthToken;",
             "-",
             "Ljava/lang/Throwable;",
-            "Lie/h;",
+            "Lie/i;",
             ">;)V"
         }
     .end annotation
@@ -403,11 +403,11 @@
 
     move-object/from16 v3, p1
 
-    invoke-static {v3, v1}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v3, v1}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v1, "callback"
 
-    invoke-static {v0, v1}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     sget-object v1, Lcom/kakao/sdk/auth/AuthCodeClient;->Companion:Lcom/kakao/sdk/auth/AuthCodeClient$Companion;
@@ -468,7 +468,7 @@
             "Lcom/kakao/sdk/auth/model/OAuthToken;",
             "-",
             "Ljava/lang/Throwable;",
-            "Lie/h;",
+            "Lie/i;",
             ">;)V"
         }
     .end annotation
@@ -509,7 +509,7 @@
             "Lcom/kakao/sdk/auth/model/OAuthToken;",
             "-",
             "Ljava/lang/Throwable;",
-            "Lie/h;",
+            "Lie/i;",
             ">;)V"
         }
     .end annotation
@@ -546,7 +546,7 @@
             "Lcom/kakao/sdk/auth/model/OAuthToken;",
             "-",
             "Ljava/lang/Throwable;",
-            "Lie/h;",
+            "Lie/i;",
             ">;)V"
         }
     .end annotation
@@ -590,18 +590,18 @@
             "Lcom/kakao/sdk/auth/model/OAuthToken;",
             "-",
             "Ljava/lang/Throwable;",
-            "Lie/h;",
+            "Lie/i;",
             ">;)V"
         }
     .end annotation
 
     const-string v0, "context"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "callback"
 
-    invoke-static {p5, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p5, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     sget-object v0, Lcom/kakao/sdk/auth/AuthCodeClient;->Companion:Lcom/kakao/sdk/auth/AuthCodeClient$Companion;
@@ -649,7 +649,7 @@
             "Lcom/kakao/sdk/auth/model/OAuthToken;",
             "-",
             "Ljava/lang/Throwable;",
-            "Lie/h;",
+            "Lie/i;",
             ">;)V"
         }
     .end annotation
@@ -687,7 +687,7 @@
             "Lcom/kakao/sdk/auth/model/OAuthToken;",
             "-",
             "Ljava/lang/Throwable;",
-            "Lie/h;",
+            "Lie/i;",
             ">;)V"
         }
     .end annotation
@@ -724,7 +724,7 @@
             "Lcom/kakao/sdk/auth/model/OAuthToken;",
             "-",
             "Ljava/lang/Throwable;",
-            "Lie/h;",
+            "Lie/i;",
             ">;)V"
         }
     .end annotation
@@ -764,22 +764,22 @@
             "Lcom/kakao/sdk/auth/model/OAuthToken;",
             "-",
             "Ljava/lang/Throwable;",
-            "Lie/h;",
+            "Lie/i;",
             ">;)V"
         }
     .end annotation
 
     const-string v0, "context"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "scopes"
 
-    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "callback"
 
-    invoke-static {p3, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p3, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     sget-object v0, Lcom/kakao/sdk/auth/AuthApiClient;->Companion:Lcom/kakao/sdk/auth/AuthApiClient$Companion;
 
@@ -804,14 +804,14 @@
             "Lre/l<",
             "-",
             "Ljava/lang/Throwable;",
-            "Lie/h;",
+            "Lie/i;",
             ">;)V"
         }
     .end annotation
 
     const-string v0, "callback"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     iget-object v0, p0, Lcom/kakao/sdk/user/UserApiClient;->userApi:Lcom/kakao/sdk/user/UserApi;
@@ -840,7 +840,7 @@
             "Lcom/kakao/sdk/user/model/User;",
             "-",
             "Ljava/lang/Throwable;",
-            "Lie/h;",
+            "Lie/i;",
             ">;)V"
         }
     .end annotation
@@ -866,14 +866,14 @@
             "Lcom/kakao/sdk/user/model/User;",
             "-",
             "Ljava/lang/Throwable;",
-            "Lie/h;",
+            "Lie/i;",
             ">;)V"
         }
     .end annotation
 
     const-string v0, "callback"
 
-    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     iget-object v0, p0, Lcom/kakao/sdk/user/UserApiClient;->userApi:Lcom/kakao/sdk/user/UserApi;
@@ -906,14 +906,14 @@
             "Lcom/kakao/sdk/user/model/UserServiceTerms;",
             "-",
             "Ljava/lang/Throwable;",
-            "Lie/h;",
+            "Lie/i;",
             ">;)V"
         }
     .end annotation
 
     const-string v0, "callback"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     iget-object v0, p0, Lcom/kakao/sdk/user/UserApiClient;->userApi:Lcom/kakao/sdk/user/UserApi;
@@ -942,14 +942,14 @@
             "Lcom/kakao/sdk/user/model/UserShippingAddresses;",
             "-",
             "Ljava/lang/Throwable;",
-            "Lie/h;",
+            "Lie/i;",
             ">;)V"
         }
     .end annotation
 
     const-string v0, "callback"
 
-    invoke-static {p3, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p3, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 3
     iget-object v1, p0, Lcom/kakao/sdk/user/UserApiClient;->userApi:Lcom/kakao/sdk/user/UserApi;
@@ -992,14 +992,14 @@
             "Lcom/kakao/sdk/user/model/UserShippingAddresses;",
             "-",
             "Ljava/lang/Throwable;",
-            "Lie/h;",
+            "Lie/i;",
             ">;)V"
         }
     .end annotation
 
     const-string v0, "callback"
 
-    invoke-static {p3, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p3, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     iget-object v1, p0, Lcom/kakao/sdk/user/UserApiClient;->userApi:Lcom/kakao/sdk/user/UserApi;
@@ -1039,7 +1039,7 @@
             "Lcom/kakao/sdk/user/model/UserShippingAddresses;",
             "-",
             "Ljava/lang/Throwable;",
-            "Lie/h;",
+            "Lie/i;",
             ">;)V"
         }
     .end annotation
@@ -1071,7 +1071,7 @@
             "Lcom/kakao/sdk/user/model/UserShippingAddresses;",
             "-",
             "Ljava/lang/Throwable;",
-            "Lie/h;",
+            "Lie/i;",
             ">;)V"
         }
     .end annotation
@@ -1105,14 +1105,14 @@
             "Lre/l<",
             "-",
             "Ljava/lang/Throwable;",
-            "Lie/h;",
+            "Lie/i;",
             ">;)V"
         }
     .end annotation
 
     const-string v0, "callback"
 
-    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     iget-object v0, p0, Lcom/kakao/sdk/user/UserApiClient;->userApi:Lcom/kakao/sdk/user/UserApi;
@@ -1139,14 +1139,14 @@
             "Lre/l<",
             "-",
             "Ljava/lang/Throwable;",
-            "Lie/h;",
+            "Lie/i;",
             ">;)V"
         }
     .end annotation
 
     const-string v0, "callback"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     iget-object v0, p0, Lcom/kakao/sdk/user/UserApiClient;->userApi:Lcom/kakao/sdk/user/UserApi;
@@ -1177,18 +1177,18 @@
             "Lre/l<",
             "-",
             "Ljava/lang/Throwable;",
-            "Lie/h;",
+            "Lie/i;",
             ">;)V"
         }
     .end annotation
 
     const-string v0, "properties"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "callback"
 
-    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     iget-object v0, p0, Lcom/kakao/sdk/user/UserApiClient;->userApi:Lcom/kakao/sdk/user/UserApi;

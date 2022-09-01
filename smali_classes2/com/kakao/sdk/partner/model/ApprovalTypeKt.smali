@@ -9,7 +9,7 @@
 
     const-string v0, "$this$project"
 
-    invoke-static {p0, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     new-instance p0, Lcom/kakao/sdk/partner/model/ProjectApprovalType;
 

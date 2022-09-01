@@ -1,5 +1,5 @@
 .class public final Lke/g;
-.super Lse/h;
+.super Lse/i;
 .source "CoroutineContext.kt"
 
 # interfaces
@@ -9,7 +9,7 @@
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/p<",
         "Lke/f;",
         "Lke/f$a;",
@@ -20,7 +20,7 @@
 
 
 # static fields
-.field public static final f:Lke/g;
+.field public static final g:Lke/g;
 
 
 # direct methods
@@ -31,7 +31,7 @@
 
     invoke-direct {v0}, Lke/g;-><init>()V
 
-    sput-object v0, Lke/g;->f:Lke/g;
+    sput-object v0, Lke/g;->g:Lke/g;
 
     return-void
 .end method
@@ -41,7 +41,7 @@
 
     const/4 v0, 0x2
 
-    invoke-direct {p0, v0}, Lse/h;-><init>(I)V
+    invoke-direct {p0, v0}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -59,11 +59,11 @@
     const-string v0, "acc"
 
     .line 2
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "element"
 
-    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 3
     invoke-interface {p2}, Lke/f$a;->getKey()Lke/f$b;
@@ -75,7 +75,7 @@
     move-result-object p1
 
     .line 4
-    sget-object v0, Lke/h;->f:Lke/h;
+    sget-object v0, Lke/h;->g:Lke/h;
 
     if-ne p1, v0, :cond_0
 
@@ -83,7 +83,7 @@
 
     .line 5
     :cond_0
-    sget v1, Lke/e;->c:I
+    sget v1, Lke/e;->d:I
 
     sget-object v1, Lke/e$a;->a:Lke/e$a;
 

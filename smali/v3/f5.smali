@@ -1,12 +1,12 @@
 .class public final Lv3/f5;
-.super Lv3/w1;
+.super Lv3/v1;
 
 
 # direct methods
 .method public constructor <init>()V
     .locals 0
 
-    invoke-direct {p0}, Lv3/w1;-><init>()V
+    invoke-direct {p0}, Lv3/v1;-><init>()V
 
     return-void
 .end method
@@ -44,7 +44,7 @@
     move-result p0
 
     .line 2
-    sget-object p2, Lv3/b5;->a:Lv3/w1;
+    sget-object p2, Lv3/b5;->a:Lv3/v1;
 
     if-gt p1, v1, :cond_1
 
@@ -81,7 +81,7 @@
 
     move-result p0
 
-    sget-object p2, Lv3/b5;->a:Lv3/w1;
+    sget-object p2, Lv3/b5;->a:Lv3/v1;
 
     if-gt p1, v1, :cond_5
 
@@ -100,7 +100,7 @@
 
     .line 5
     :cond_6
-    sget-object p0, Lv3/b5;->a:Lv3/w1;
+    sget-object p0, Lv3/b5;->a:Lv3/v1;
 
     if-le p1, v1, :cond_7
 

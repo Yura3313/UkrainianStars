@@ -1,5 +1,5 @@
 .class public final Lbe/y$c;
-.super Lse/h;
+.super Lse/i;
 .source "ProfileStorage.kt"
 
 # interfaces
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lbe/y;->g(Ljava/lang/String;)Lze/e0;
+    value = Lbe/y;->g(Ljava/lang/String;)Lze/f0;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,10 +18,10 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/l<",
-        "Lvc/p;",
-        "Lze/e0<",
+        "Lvc/o;",
+        "Lze/f0<",
         "+",
         "Lcom/supercell/id/model/IdProfile;",
         ">;>;"
@@ -30,18 +30,18 @@
 
 
 # instance fields
-.field public final synthetic f:Lbe/y;
+.field public final synthetic g:Lbe/y;
 
 
 # direct methods
 .method public constructor <init>(Lbe/y;)V
     .locals 0
 
-    iput-object p1, p0, Lbe/y$c;->f:Lbe/y;
+    iput-object p1, p0, Lbe/y$c;->g:Lbe/y;
 
     const/4 p1, 0x1
 
-    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -52,17 +52,17 @@
     .locals 1
 
     .line 1
-    check-cast p1, Lvc/p;
+    check-cast p1, Lvc/o;
 
     const-string v0, "it"
 
     .line 2
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 3
-    iget-object p1, p0, Lbe/y$c;->f:Lbe/y;
+    iget-object p1, p0, Lbe/y$c;->g:Lbe/y;
 
-    invoke-virtual {p1}, Lbe/y;->i()Lze/e0;
+    invoke-virtual {p1}, Lbe/y;->i()Lze/f0;
 
     move-result-object p1
 

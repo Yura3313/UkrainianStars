@@ -1,43 +1,14 @@
 .class public final La5/g0;
 .super Ljava/lang/Object;
 
-# interfaces
-.implements La5/x;
-
-
-# static fields
-.field public static a:F
-
-.field public static final b:Lbf/g;
-
 
 # direct methods
-.method static synthetic constructor <clinit>()V
-    .locals 1
-
-    new-instance v0, Lbf/g;
-
-    invoke-direct {v0}, Lbf/g;-><init>()V
-
-    sput-object v0, La5/g0;->b:Lbf/g;
-
-    return-void
-.end method
-
-.method public synthetic constructor <init>()V
-    .locals 0
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    return-void
-.end method
-
-.method public static b(Ljava/lang/Object;Ljava/lang/String;Ljava/lang/Class;)La5/f0;
+.method public static a(Ljava/lang/Object;Ljava/lang/String;Ljava/lang/Class;)La5/f0;
     .locals 1
 
     new-instance v0, La5/f0;
 
-    invoke-static {p0, p1}, La5/g0;->l(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/reflect/Field;
+    invoke-static {p0, p1}, La5/g0;->j(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/reflect/Field;
 
     move-result-object p1
 
@@ -46,7 +17,7 @@
     return-object v0
 .end method
 
-.method public static c(Ljava/lang/Class;Ljava/lang/Object;)Ljava/lang/Object;
+.method public static b(Ljava/lang/Class;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 6
 
     const-class v0, Ljava/lang/Boolean;
@@ -63,7 +34,7 @@
 
     const-string v1, "isDexOptNeeded"
 
-    invoke-static {p0, v1, v3}, La5/g0;->f(Ljava/lang/Class;Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+    invoke-static {p0, v1, v3}, La5/g0;->e(Ljava/lang/Class;Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
 
     move-result-object v3
 
@@ -110,7 +81,7 @@
     throw v0
 .end method
 
-.method public static d(Ljava/lang/Object;Ljava/lang/String;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)Ljava/lang/Object;
+.method public static c(Ljava/lang/Object;Ljava/lang/String;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 3
 
     const/4 v0, 0x1
@@ -126,7 +97,7 @@
 
     move-result-object p3
 
-    invoke-static {p3, p1, v1}, La5/g0;->f(Ljava/lang/Class;Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+    invoke-static {p3, p1, v1}, La5/g0;->e(Ljava/lang/Class;Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
 
     move-result-object p3
 
@@ -176,7 +147,7 @@
     throw p3
 .end method
 
-.method public static e(Ljava/lang/Object;Ljava/lang/String;Ljava/lang/Class;Ljava/lang/Object;Ljava/lang/Class;Ljava/lang/Object;Ljava/lang/Class;Ljava/lang/Object;)Ljava/lang/Object;
+.method public static d(Ljava/lang/Object;Ljava/lang/String;Ljava/lang/Class;Ljava/lang/Object;Ljava/lang/Class;Ljava/lang/Object;Ljava/lang/Class;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 4
 
     const-class v0, [Ljava/lang/Object;
@@ -202,7 +173,7 @@
 
     move-result-object p6
 
-    invoke-static {p6, p1, v2}, La5/g0;->f(Ljava/lang/Class;Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+    invoke-static {p6, p1, v2}, La5/g0;->e(Ljava/lang/Class;Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
 
     move-result-object p6
 
@@ -254,7 +225,7 @@
     throw p5
 .end method
 
-.method public static varargs f(Ljava/lang/Class;Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+.method public static varargs e(Ljava/lang/Class;Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
     .locals 4
 
     move-object v0, p0
@@ -327,7 +298,7 @@
     goto :goto_1
 .end method
 
-.method public static g(Landroid/content/pm/PackageManager;Landroid/content/ComponentName;)V
+.method public static f(Landroid/content/pm/PackageManager;Landroid/content/ComponentName;)V
     .locals 11
 
     invoke-virtual {p0, p1}, Landroid/content/pm/PackageManager;->getComponentEnabledSetting(Landroid/content/ComponentName;)I
@@ -436,7 +407,7 @@
     return-void
 .end method
 
-.method public static h(Ljava/lang/Object;Ljava/lang/String;)V
+.method public static g(Ljava/lang/Object;Ljava/lang/String;)V
     .locals 0
 
     if-eqz p0, :cond_0
@@ -453,16 +424,16 @@
     throw p0
 .end method
 
-.method public static final i(Ljava/lang/Throwable;Ljava/lang/Throwable;)V
+.method public static final h(Ljava/lang/Throwable;Ljava/lang/Throwable;)V
     .locals 1
 
     const-string v0, "$this$addSuppressed"
 
-    invoke-static {p0, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "exception"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     sget-object v0, Lne/b;->a:Lne/a;
 
@@ -471,86 +442,12 @@
     return-void
 .end method
 
-.method public static j(Lze/a0;Lke/f;Lre/p;I)Lze/e0;
-    .locals 4
-
-    and-int/lit8 v0, p3, 0x1
-
-    if-eqz v0, :cond_0
-
-    .line 1
-    sget-object p1, Lke/h;->f:Lke/h;
-
-    :cond_0
-    const/4 v0, 0x2
-
-    and-int/2addr p3, v0
-
-    const/4 v1, 0x0
-
-    const/4 v2, 0x1
-
-    if-eqz p3, :cond_1
-
-    const/4 p3, 0x1
-
-    goto :goto_0
-
-    :cond_1
-    const/4 p3, 0x0
-
-    :goto_0
-    const-string v3, "$this$async"
-
-    .line 2
-    invoke-static {p0, v3}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v3, "context"
-
-    invoke-static {p1, v3}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v3, "start"
-
-    invoke-static {p3, v3}, Lcom/google/android/gms/ads/e;->c(ILjava/lang/String;)V
-
-    .line 3
-    invoke-static {p0, p1}, Lze/v;->a(Lze/a0;Lke/f;)Lke/f;
-
-    move-result-object p0
-
-    if-ne p3, v0, :cond_2
-
-    const/4 v1, 0x1
-
-    :cond_2
-    if-eqz v1, :cond_3
-
-    .line 4
-    new-instance p1, Lze/g1;
-
-    invoke-direct {p1, p0, p2}, Lze/g1;-><init>(Lke/f;Lre/p;)V
-
-    goto :goto_1
-
-    .line 5
-    :cond_3
-    new-instance p1, Lze/f0;
-
-    invoke-direct {p1, p0, v2}, Lze/f0;-><init>(Lke/f;Z)V
-
-    .line 6
-    :goto_1
-    invoke-virtual {p1, p3, p1, p2}, Lze/a;->X(ILjava/lang/Object;Lre/p;)V
-
-    return-object p1
-.end method
-
-.method public static k(Ljava/lang/Object;Ljava/lang/String;Ljava/lang/Class;)La5/f0;
+.method public static i(Ljava/lang/Object;Ljava/lang/String;Ljava/lang/Class;)La5/f0;
     .locals 2
 
     new-instance v0, La5/f0;
 
-    invoke-static {p0, p1}, La5/g0;->l(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/reflect/Field;
+    invoke-static {p0, p1}, La5/g0;->j(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/reflect/Field;
 
     move-result-object p1
 
@@ -561,7 +458,7 @@
     return-object v0
 .end method
 
-.method public static l(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/reflect/Field;
+.method public static j(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/reflect/Field;
     .locals 4
 
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -636,79 +533,107 @@
     goto :goto_1
 .end method
 
-.method public static m(Lke/f;Lre/p;I)Lze/b1;
-    .locals 5
+.method public static final k(Ljava/util/Locale;)Ljava/lang/String;
+    .locals 9
 
-    sget-object v0, Lze/u0;->f:Lze/u0;
+    const-string v0, "$this$acceptLanguage"
 
-    and-int/lit8 v1, p2, 0x1
+    invoke-static {p0, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    if-eqz v1, :cond_0
+    const/4 v0, 0x2
+
+    new-array v0, v0, [Ljava/lang/String;
 
     .line 1
-    sget-object p0, Lke/h;->f:Lke/h;
+    invoke-virtual {p0}, Ljava/util/Locale;->getLanguage()Ljava/lang/String;
 
-    :cond_0
-    const/4 v1, 0x2
-
-    and-int/2addr p2, v1
+    move-result-object v1
 
     const/4 v2, 0x0
 
-    const/4 v3, 0x1
+    aput-object v1, v0, v2
 
-    if-eqz p2, :cond_1
-
-    const/4 p2, 0x1
-
-    goto :goto_0
-
-    :cond_1
-    const/4 p2, 0x0
-
-    :goto_0
-    const-string v4, "context"
-
-    .line 2
-    invoke-static {p0, v4}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v4, "start"
-
-    invoke-static {p2, v4}, Lcom/google/android/gms/ads/e;->c(ILjava/lang/String;)V
-
-    .line 3
-    invoke-static {v0, p0}, Lze/v;->a(Lze/a0;Lke/f;)Lke/f;
+    invoke-virtual {p0}, Ljava/util/Locale;->getCountry()Ljava/lang/String;
 
     move-result-object p0
 
-    if-ne p2, v1, :cond_2
+    const/4 v1, 0x1
 
-    const/4 v2, 0x1
+    aput-object p0, v0, v1
 
-    :cond_2
-    if-eqz v2, :cond_3
+    .line 2
+    new-instance p0, Ljava/util/ArrayList;
+
+    invoke-direct {p0}, Ljava/util/ArrayList;-><init>()V
+
+    invoke-static {v0, p0}, Lje/e;->j([Ljava/lang/Object;Ljava/util/Collection;)Ljava/util/Collection;
+
+    .line 3
+    new-instance v3, Ljava/util/ArrayList;
+
+    invoke-direct {v3}, Ljava/util/ArrayList;-><init>()V
 
     .line 4
-    new-instance v0, Lze/h1;
+    invoke-interface {p0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
-    invoke-direct {v0, p0, p1}, Lze/h1;-><init>(Lke/f;Lre/p;)V
+    move-result-object p0
+
+    :cond_0
+    :goto_0
+    invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_2
+
+    invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v0
+
+    move-object v4, v0
+
+    check-cast v4, Ljava/lang/String;
+
+    .line 5
+    invoke-interface {v4}, Ljava/lang/CharSequence;->length()I
+
+    move-result v4
+
+    if-lez v4, :cond_1
+
+    const/4 v4, 0x1
 
     goto :goto_1
 
-    .line 5
-    :cond_3
-    new-instance v0, Lze/o1;
+    :cond_1
+    const/4 v4, 0x0
 
-    invoke-direct {v0, p0, v3}, Lze/o1;-><init>(Lke/f;Z)V
-
-    .line 6
     :goto_1
-    invoke-virtual {v0, p2, v0, p1}, Lze/a;->X(ILjava/lang/Object;Lre/p;)V
+    if-eqz v4, :cond_0
 
-    return-object v0
+    invoke-interface {v3, v0}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
+
+    goto :goto_0
+
+    :cond_2
+    const/4 v5, 0x0
+
+    const/4 v6, 0x0
+
+    const/4 v7, 0x0
+
+    const/16 v8, 0x3e
+
+    const-string v4, "-"
+
+    invoke-static/range {v3 .. v8}, Lje/j;->z(Ljava/lang/Iterable;Ljava/lang/CharSequence;Ljava/lang/CharSequence;Ljava/lang/CharSequence;Lre/l;I)Ljava/lang/String;
+
+    move-result-object p0
+
+    return-object p0
 .end method
 
-.method public static n(Landroid/content/Intent;)Z
+.method public static l(Landroid/content/Intent;)Z
     .locals 3
 
     const/4 v0, 0x0
@@ -750,7 +675,7 @@
     return p0
 .end method
 
-.method public static o(Ljava/lang/String;Landroid/content/Intent;)V
+.method public static m(Ljava/lang/String;Landroid/content/Intent;)V
     .locals 3
 
     .line 1
@@ -979,24 +904,4 @@
 
     :cond_9
     return-void
-.end method
-
-
-# virtual methods
-.method public a(Ljava/lang/Object;Ljava/util/List;Ljava/util/List;)[Ljava/lang/Object;
-    .locals 2
-
-    const-class p3, [Ljava/lang/Object;
-
-    const-class v0, Ljava/util/List;
-
-    const-string v1, "makePathElements"
-
-    invoke-static {p1, v1, p3, v0, p2}, La5/g0;->d(Ljava/lang/Object;Ljava/lang/String;Ljava/lang/Class;Ljava/lang/Class;Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object p1
-
-    check-cast p1, [Ljava/lang/Object;
-
-    return-object p1
 .end method

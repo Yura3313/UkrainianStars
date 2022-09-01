@@ -14,11 +14,11 @@
 
 
 # static fields
-.field public static final enum f:Lab/f;
-
 .field public static final enum g:Lab/f;
 
-.field public static final synthetic h:[Lab/f;
+.field public static final enum h:Lab/f;
+
+.field public static final synthetic i:[Lab/f;
 
 
 # direct methods
@@ -34,7 +34,7 @@
 
     invoke-direct {v0, v1, v2}, Lab/f;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lab/f;->f:Lab/f;
+    sput-object v0, Lab/f;->g:Lab/f;
 
     .line 2
     new-instance v1, Lab/f;
@@ -45,7 +45,7 @@
 
     invoke-direct {v1, v3, v4}, Lab/f;-><init>(Ljava/lang/String;I)V
 
-    sput-object v1, Lab/f;->g:Lab/f;
+    sput-object v1, Lab/f;->h:Lab/f;
 
     const/4 v3, 0x2
 
@@ -56,7 +56,7 @@
     aput-object v1, v3, v4
 
     .line 3
-    sput-object v3, Lab/f;->h:[Lab/f;
+    sput-object v3, Lab/f;->i:[Lab/f;
 
     return-void
 .end method
@@ -91,7 +91,7 @@
 .method public static values()[Lab/f;
     .locals 1
 
-    sget-object v0, Lab/f;->h:[Lab/f;
+    sget-object v0, Lab/f;->i:[Lab/f;
 
     invoke-virtual {v0}, [Lab/f;->clone()Ljava/lang/Object;
 

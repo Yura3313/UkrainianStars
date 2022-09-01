@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field public final synthetic f:Lab/l;
+.field public final synthetic g:Lab/l;
 
 
 # direct methods
 .method public constructor <init>(Lab/l;)V
     .locals 0
 
-    iput-object p1, p0, Lab/l$a;->f:Lab/l;
+    iput-object p1, p0, Lab/l$a;->g:Lab/l;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -45,9 +45,9 @@
     check-cast p1, Ljava/lang/String;
 
     .line 2
-    iget-object v0, p0, Lab/l$a;->f:Lab/l;
+    iget-object v0, p0, Lab/l$a;->g:Lab/l;
 
-    iget-object v0, v0, Lab/l;->h0:Landroidx/recyclerview/widget/RecyclerView;
+    iget-object v0, v0, Lab/l;->i0:Landroidx/recyclerview/widget/RecyclerView;
 
     invoke-virtual {v0}, Landroidx/recyclerview/widget/RecyclerView;->getAdapter()Landroidx/recyclerview/widget/RecyclerView$e;
 
@@ -81,7 +81,7 @@
     check-cast v2, Lcom/helpshift/support/Faq;
 
     .line 5
-    iget-object v3, v2, Lcom/helpshift/support/Faq;->g:Ljava/lang/String;
+    iget-object v3, v2, Lcom/helpshift/support/Faq;->h:Ljava/lang/String;
 
     invoke-virtual {v3, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -98,7 +98,7 @@
     if-eqz v2, :cond_2
 
     .line 6
-    iget-object v0, v2, Lcom/helpshift/support/Faq;->m:Ljava/util/ArrayList;
+    iget-object v0, v2, Lcom/helpshift/support/Faq;->n:Ljava/util/ArrayList;
 
     goto :goto_1
 
@@ -107,9 +107,9 @@
 
     .line 7
     :goto_1
-    iget-object v2, p0, Lab/l$a;->f:Lab/l;
+    iget-object v2, p0, Lab/l$a;->g:Lab/l;
 
-    iget-object v2, v2, Lab/l;->g0:Loa/e;
+    iget-object v2, v2, Lab/l;->h0:Loa/e;
 
     check-cast v2, Lpa/b;
 
@@ -152,7 +152,7 @@
     move-result-object v2
 
     .line 13
-    invoke-static {p1, v0, v2, v1}, Lj1/q;->m(Landroidx/fragment/app/FragmentManager;ILandroidx/fragment/app/Fragment;Ljava/lang/String;)V
+    invoke-static {p1, v0, v2, v1}, Ls4/e;->q(Landroidx/fragment/app/FragmentManager;ILandroidx/fragment/app/Fragment;Ljava/lang/String;)V
 
     return-void
 .end method

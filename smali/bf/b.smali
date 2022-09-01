@@ -4,9 +4,9 @@
 
 
 # static fields
-.field public static final g:Lbf/e;
+.field public static final h:Lbf/e;
 
-.field public static final h:Lbf/b;
+.field public static final i:Lbf/b;
 
 
 # direct methods
@@ -18,7 +18,7 @@
 
     invoke-direct {v0}, Lbf/b;-><init>()V
 
-    sput-object v0, Lbf/b;->h:Lbf/b;
+    sput-object v0, Lbf/b;->i:Lbf/b;
 
     .line 2
     sget v1, Laf/x;->a:I
@@ -57,7 +57,7 @@
     invoke-direct {v2, v0, v1}, Lbf/e;-><init>(Lbf/c;I)V
 
     .line 5
-    sput-object v2, Lbf/b;->g:Lbf/e;
+    sput-object v2, Lbf/b;->h:Lbf/e;
 
     return-void
 

@@ -31,7 +31,7 @@
     if-eqz v0, :cond_0
 
     .line 2
-    iget-boolean v0, v0, Lcom/supercell/id/ui/login/LoginFlowFragment;->l0:Z
+    iget-boolean v0, v0, Lcom/supercell/id/ui/login/LoginFlowFragment;->m0:Z
 
     goto :goto_0
 
@@ -53,7 +53,7 @@
     if-eqz v0, :cond_0
 
     .line 2
-    iget-object v0, v0, Lcom/supercell/id/ui/login/LoginFlowFragment;->j0:Lcom/supercell/id/IdLoginDetails;
+    iget-object v0, v0, Lcom/supercell/id/ui/login/LoginFlowFragment;->k0:Lcom/supercell/id/IdLoginDetails;
 
     if-eqz v0, :cond_0
 
@@ -82,9 +82,9 @@
     if-eqz v0, :cond_0
 
     .line 2
-    iget-object v0, v0, Lcom/supercell/id/ui/login/LoginFlowFragment;->n0:Lie/f;
+    iget-object v0, v0, Lcom/supercell/id/ui/login/LoginFlowFragment;->o0:Lie/g;
 
-    invoke-virtual {v0}, Lie/f;->getValue()Ljava/lang/Object;
+    invoke-virtual {v0}, Lie/g;->getValue()Ljava/lang/Object;
 
     move-result-object v0
 
@@ -107,7 +107,7 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Landroidx/fragment/app/Fragment;->A:Landroidx/fragment/app/Fragment;
+    iget-object v0, p0, Landroidx/fragment/app/Fragment;->B:Landroidx/fragment/app/Fragment;
 
     .line 2
     instance-of v1, v0, Lcom/supercell/id/ui/login/LoginFlowFragment;
@@ -133,7 +133,7 @@
     if-eqz v0, :cond_0
 
     .line 2
-    iget-object v0, v0, Lcom/supercell/id/ui/login/LoginFlowFragment;->j0:Lcom/supercell/id/IdLoginDetails;
+    iget-object v0, v0, Lcom/supercell/id/ui/login/LoginFlowFragment;->k0:Lcom/supercell/id/IdLoginDetails;
 
     if-eqz v0, :cond_0
 
@@ -162,7 +162,7 @@
     if-eqz v0, :cond_0
 
     .line 2
-    iget-object v0, v0, Lcom/supercell/id/ui/login/LoginFlowFragment;->j0:Lcom/supercell/id/IdLoginDetails;
+    iget-object v0, v0, Lcom/supercell/id/ui/login/LoginFlowFragment;->k0:Lcom/supercell/id/IdLoginDetails;
 
     if-eqz v0, :cond_0
 
@@ -201,7 +201,7 @@
     if-eqz v0, :cond_0
 
     .line 2
-    iget-object v0, v0, Lcom/supercell/id/ui/login/LoginFlowFragment;->m0:Lcom/supercell/id/model/IdConnectedSystem;
+    iget-object v0, v0, Lcom/supercell/id/ui/login/LoginFlowFragment;->n0:Lcom/supercell/id/model/IdConnectedSystem;
 
     goto :goto_0
 
@@ -223,7 +223,7 @@
     if-eqz v0, :cond_0
 
     .line 2
-    iget-object v1, v0, Lcom/supercell/id/ui/login/LoginFlowFragment;->j0:Lcom/supercell/id/IdLoginDetails;
+    iget-object v1, v0, Lcom/supercell/id/ui/login/LoginFlowFragment;->k0:Lcom/supercell/id/IdLoginDetails;
 
     if-eqz v1, :cond_0
 
@@ -267,7 +267,7 @@
     if-eqz v0, :cond_0
 
     .line 2
-    iget-object v1, v0, Lcom/supercell/id/ui/login/LoginFlowFragment;->j0:Lcom/supercell/id/IdLoginDetails;
+    iget-object v1, v0, Lcom/supercell/id/ui/login/LoginFlowFragment;->k0:Lcom/supercell/id/IdLoginDetails;
 
     if-eqz v1, :cond_0
 

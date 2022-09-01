@@ -155,7 +155,7 @@
     check-cast p0, Ld/c;
 
     .line 13
-    iget-object p0, p0, Ld/c;->f:Landroid/graphics/drawable/Drawable;
+    iget-object p0, p0, Ld/c;->g:Landroid/graphics/drawable/Drawable;
 
     .line 14
     invoke-static {p0}, Landroidx/appcompat/widget/q;->a(Landroid/graphics/drawable/Drawable;)Z

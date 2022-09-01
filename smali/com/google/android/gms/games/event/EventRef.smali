@@ -146,9 +146,9 @@
 
     new-instance v0, Lcom/google/android/gms/games/PlayerRef;
 
-    iget-object v1, p0, Lc2/d;->f:Lcom/google/android/gms/common/data/DataHolder;
+    iget-object v1, p0, Lc2/d;->g:Lcom/google/android/gms/common/data/DataHolder;
 
-    iget v2, p0, Lc2/d;->g:I
+    iget v2, p0, Lc2/d;->h:I
 
     invoke-direct {v0, v1, v2}, Lcom/google/android/gms/games/PlayerRef;-><init>(Lcom/google/android/gms/common/data/DataHolder;I)V
 

@@ -15,11 +15,11 @@
 
 
 # instance fields
-.field public final f:Ljava/lang/String;
+.field public final g:Ljava/lang/String;
 
-.field public final g:J
+.field public final h:J
 
-.field public final h:I
+.field public final i:I
 
 
 # direct methods
@@ -42,13 +42,13 @@
     invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lcom/google/android/gms/drive/metadata/internal/zzq;->f:Ljava/lang/String;
+    iput-object p1, p0, Lcom/google/android/gms/drive/metadata/internal/zzq;->g:Ljava/lang/String;
 
     .line 3
-    iput-wide p2, p0, Lcom/google/android/gms/drive/metadata/internal/zzq;->g:J
+    iput-wide p2, p0, Lcom/google/android/gms/drive/metadata/internal/zzq;->h:J
 
     .line 4
-    iput p4, p0, Lcom/google/android/gms/drive/metadata/internal/zzq;->h:I
+    iput p4, p0, Lcom/google/android/gms/drive/metadata/internal/zzq;->i:I
 
     return-void
 .end method
@@ -66,7 +66,7 @@
     move-result v5
 
     .line 2
-    iget-object p2, p0, Lcom/google/android/gms/drive/metadata/internal/zzq;->f:Ljava/lang/String;
+    iget-object p2, p0, Lcom/google/android/gms/drive/metadata/internal/zzq;->g:Ljava/lang/String;
 
     const/4 v0, 0x2
 
@@ -75,7 +75,7 @@
     invoke-static {p1, v0, p2, v1}, Le2/b;->m(Landroid/os/Parcel;ILjava/lang/String;Z)V
 
     .line 3
-    iget-wide v0, p0, Lcom/google/android/gms/drive/metadata/internal/zzq;->g:J
+    iget-wide v0, p0, Lcom/google/android/gms/drive/metadata/internal/zzq;->h:J
 
     const/4 p2, 0x3
 
@@ -88,7 +88,7 @@
     invoke-virtual {p1, v0, v1}, Landroid/os/Parcel;->writeLong(J)V
 
     .line 6
-    iget v3, p0, Lcom/google/android/gms/drive/metadata/internal/zzq;->h:I
+    iget v3, p0, Lcom/google/android/gms/drive/metadata/internal/zzq;->i:I
 
     const/4 v2, 0x4
 

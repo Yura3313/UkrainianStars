@@ -1,61 +1,58 @@
-.class public final synthetic Lk3/qe0;
+.class public final Lk3/qe0;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lk3/zc0;
+.implements Lk3/mv0;
 
 
-# static fields
-.field public static final a:Lk3/qe0;
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Lk3/mv0<",
+        "Landroid/content/pm/ApplicationInfo;",
+        ">;"
+    }
+.end annotation
+
+
+# instance fields
+.field public final a:Lk3/oy0;
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 1
-
-    new-instance v0, Lk3/qe0;
-
-    invoke-direct {v0}, Lk3/qe0;-><init>()V
-
-    sput-object v0, Lk3/qe0;->a:Lk3/qe0;
-
-    return-void
-.end method
-
-.method public constructor <init>()V
+.method public constructor <init>(Lk3/oy0;)V
     .locals 0
 
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    iput-object p1, p0, Lk3/qe0;->a:Lk3/oy0;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final b(Ljava/lang/Object;)V
+.method public final get()Ljava/lang/Object;
     .locals 2
 
     .line 1
-    check-cast p1, Lorg/json/JSONObject;
-
-    :try_start_0
-    const-string v0, "sdk_env"
+    iget-object v0, p0, Lk3/qe0;->a:Lk3/oy0;
 
     .line 2
-    invoke-virtual {p1, v0}, Lorg/json/JSONObject;->getJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
+    iget-object v0, v0, Lk3/oy0;->h:Ljava/lang/Object;
 
-    move-result-object p1
+    check-cast v0, Lcom/google/android/gms/internal/ads/zzasp;
 
-    const-string v0, "container_version"
+    iget-object v0, v0, Lcom/google/android/gms/internal/ads/zzasp;->i:Landroid/content/pm/ApplicationInfo;
 
-    const v1, 0xbdfcc1
+    const-string v1, "Cannot return null from a non-@Nullable @Provides method"
 
     .line 3
-    invoke-virtual {p1, v0, v1}, Lorg/json/JSONObject;->put(Ljava/lang/String;I)Lorg/json/JSONObject;
-    :try_end_0
-    .catch Lorg/json/JSONException; {:try_start_0 .. :try_end_0} :catch_0
+    invoke-static {v0, v1}, Lk3/gj;->f(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
-    :catch_0
-    return-void
+    return-object v0
 .end method

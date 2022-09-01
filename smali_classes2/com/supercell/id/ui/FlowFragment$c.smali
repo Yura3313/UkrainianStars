@@ -48,7 +48,7 @@
     .line 1
     iget-object p3, p0, Lcom/supercell/id/ui/FlowFragment$c;->a:Lcom/supercell/id/ui/FlowFragment;
 
-    sget v0, Lcom/supercell/id/ui/FlowFragment;->i0:I
+    sget v0, Lcom/supercell/id/ui/FlowFragment;->j0:I
 
     .line 2
     invoke-virtual {p3}, Lcom/supercell/id/ui/FlowFragment;->h1()Lcom/supercell/id/ui/FlowFragment$b;

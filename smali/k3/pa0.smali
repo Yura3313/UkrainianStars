@@ -3,83 +3,121 @@
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lk3/zc0;
+.implements Lk3/mv0;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "Lk3/zc0<",
-        "Landroid/os/Bundle;",
+        "Lk3/mv0<",
+        "Lk3/la0;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final a:D
+.field public final a:Lk3/qv0;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lk3/qv0<",
+            "Landroid/content/Context;",
+            ">;"
+        }
+    .end annotation
+.end field
 
-.field public final b:Z
+.field public final b:Lk3/qv0;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lk3/qv0<",
+            "Ljava/util/concurrent/ScheduledExecutorService;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public final c:Lk3/qv0;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lk3/qv0<",
+            "Ljava/util/concurrent/Executor;",
+            ">;"
+        }
+    .end annotation
+.end field
 
 
 # direct methods
-.method public constructor <init>(DZ)V
-    .locals 0
+.method public constructor <init>(Lk3/qv0;Lk3/qv0;)V
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lk3/qv0<",
+            "Landroid/content/Context;",
+            ">;",
+            "Lk3/qv0<",
+            "Ljava/util/concurrent/ScheduledExecutorService;",
+            ">;",
+            "Lk3/qv0<",
+            "Ljava/util/concurrent/Executor;",
+            ">;)V"
+        }
+    .end annotation
+
+    sget-object v0, Lk3/q5;->k:Lk3/ei0;
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-wide p1, p0, Lk3/pa0;->a:D
+    iput-object p1, p0, Lk3/pa0;->a:Lk3/qv0;
 
     .line 3
-    iput-boolean p3, p0, Lk3/pa0;->b:Z
+    iput-object p2, p0, Lk3/pa0;->b:Lk3/qv0;
+
+    .line 4
+    iput-object v0, p0, Lk3/pa0;->c:Lk3/qv0;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final synthetic b(Ljava/lang/Object;)V
+.method public final synthetic get()Ljava/lang/Object;
     .locals 3
 
     .line 1
-    check-cast p1, Landroid/os/Bundle;
+    iget-object v0, p0, Lk3/pa0;->a:Lk3/qv0;
 
-    const-string v0, "device"
-
-    .line 2
-    invoke-static {p1, v0}, Lk3/dp;->b(Landroid/os/Bundle;Ljava/lang/String;)Landroid/os/Bundle;
-
-    move-result-object v1
-
-    .line 3
-    invoke-virtual {p1, v0, v1}, Landroid/os/Bundle;->putBundle(Ljava/lang/String;Landroid/os/Bundle;)V
-
-    const-string p1, "battery"
-
-    .line 4
-    invoke-static {v1, p1}, Lk3/dp;->b(Landroid/os/Bundle;Ljava/lang/String;)Landroid/os/Bundle;
+    invoke-interface {v0}, Lk3/qv0;->get()Ljava/lang/Object;
 
     move-result-object v0
 
-    .line 5
-    invoke-virtual {v1, p1, v0}, Landroid/os/Bundle;->putBundle(Ljava/lang/String;Landroid/os/Bundle;)V
+    check-cast v0, Landroid/content/Context;
 
-    .line 6
-    iget-boolean p1, p0, Lk3/pa0;->b:Z
+    iget-object v0, p0, Lk3/pa0;->b:Lk3/qv0;
 
-    const-string v1, "is_charging"
+    invoke-interface {v0}, Lk3/qv0;->get()Ljava/lang/Object;
 
-    invoke-virtual {v0, v1, p1}, Landroid/os/Bundle;->putBoolean(Ljava/lang/String;Z)V
+    move-result-object v0
 
-    .line 7
-    iget-wide v1, p0, Lk3/pa0;->a:D
+    check-cast v0, Ljava/util/concurrent/ScheduledExecutorService;
 
-    const-string p1, "battery_level"
+    iget-object v1, p0, Lk3/pa0;->c:Lk3/qv0;
 
-    invoke-virtual {v0, p1, v1, v2}, Landroid/os/Bundle;->putDouble(Ljava/lang/String;D)V
+    invoke-interface {v1}, Lk3/qv0;->get()Ljava/lang/Object;
 
-    return-void
+    move-result-object v1
+
+    check-cast v1, Ljava/util/concurrent/Executor;
+
+    .line 2
+    new-instance v2, Lk3/la0;
+
+    invoke-direct {v2, v0, v1}, Lk3/la0;-><init>(Ljava/util/concurrent/ScheduledExecutorService;Ljava/util/concurrent/Executor;)V
+
+    return-object v2
 .end method

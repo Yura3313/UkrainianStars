@@ -1,5 +1,5 @@
 .class public final Lrc/h0;
-.super Lse/h;
+.super Lse/i;
 .source "SocialApiClient.kt"
 
 # interfaces
@@ -9,7 +9,7 @@
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/l<",
         "Ljava/util/List<",
         "+",
@@ -36,7 +36,7 @@
 
 
 # static fields
-.field public static final f:Lrc/h0;
+.field public static final g:Lrc/h0;
 
 
 # direct methods
@@ -47,7 +47,7 @@
 
     invoke-direct {v0}, Lrc/h0;-><init>()V
 
-    sput-object v0, Lrc/h0;->f:Lrc/h0;
+    sput-object v0, Lrc/h0;->g:Lrc/h0;
 
     return-void
 .end method
@@ -57,7 +57,7 @@
 
     const/4 v0, 0x1
 
-    invoke-direct {p0, v0}, Lse/h;-><init>(I)V
+    invoke-direct {p0, v0}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -73,7 +73,7 @@
     const-string v0, "data"
 
     .line 2
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 3
     invoke-interface {p1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
@@ -110,7 +110,7 @@
     check-cast v0, Ljava/util/Map;
 
     .line 8
-    invoke-static {v0, v1}, Lje/t;->o(Ljava/util/Map;Ljava/util/Map;)Ljava/util/Map;
+    invoke-static {v0, v1}, Lje/t;->p(Ljava/util/Map;Ljava/util/Map;)Ljava/util/Map;
 
     move-result-object v0
 

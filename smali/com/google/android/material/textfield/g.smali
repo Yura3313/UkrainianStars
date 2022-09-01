@@ -306,7 +306,7 @@
     .line 5
     sget v2, Lcom/google/android/material/R$attr;->colorControlHighlight:I
 
-    invoke-static {p1, v2}, Lk3/q5;->f(Landroid/view/View;I)I
+    invoke-static {p1, v2}, Lk3/a00;->b(Landroid/view/View;I)I
 
     move-result v2
 
@@ -337,7 +337,7 @@
     .line 6
     sget p0, Lcom/google/android/material/R$attr;->colorSurface:I
 
-    invoke-static {p1, p0}, Lk3/q5;->f(Landroid/view/View;I)I
+    invoke-static {p1, p0}, Lk3/a00;->b(Landroid/view/View;I)I
 
     move-result p0
 
@@ -345,7 +345,7 @@
     new-instance v0, Ls4/g;
 
     .line 8
-    iget-object v7, v1, Ls4/g;->f:Ls4/g$b;
+    iget-object v7, v1, Ls4/g;->g:Ls4/g$b;
 
     iget-object v7, v7, Ls4/g$b;->a:Ls4/k;
 
@@ -353,7 +353,7 @@
     invoke-direct {v0, v7}, Ls4/g;-><init>(Ls4/k;)V
 
     .line 10
-    invoke-static {v2, p0, v6}, Lk3/q5;->g(IIF)I
+    invoke-static {v2, p0, v6}, Lk3/a00;->c(IIF)I
 
     move-result v2
 
@@ -393,7 +393,7 @@
     new-instance v2, Ls4/g;
 
     .line 16
-    iget-object v4, v1, Ls4/g;->f:Ls4/g$b;
+    iget-object v4, v1, Ls4/g;->g:Ls4/g$b;
 
     iget-object v4, v4, Ls4/g$b;->a:Ls4/k;
 
@@ -455,7 +455,7 @@
     move-result p0
 
     .line 25
-    invoke-static {v2, p0, v6}, Lk3/q5;->g(IIF)I
+    invoke-static {v2, p0, v6}, Lk3/a00;->c(IIF)I
 
     move-result v0
 
@@ -493,7 +493,7 @@
     new-instance p0, Ls4/g;
 
     .line 32
-    iget-object v0, v1, Ls4/g;->f:Ls4/g$b;
+    iget-object v0, v1, Ls4/g;->g:Ls4/g$b;
 
     iget-object v0, v0, Ls4/g$b;->a:Ls4/k;
 
@@ -856,7 +856,7 @@
     iget-object p2, p0, Lcom/google/android/material/textfield/k;->b:Landroid/content/Context;
 
     .line 8
-    sget-object v0, Ls4/g;->B:Landroid/graphics/Paint;
+    sget-object v0, Ls4/g;->C:Landroid/graphics/Paint;
 
     .line 9
     sget v0, Lcom/google/android/material/R$attr;->colorSurface:I
@@ -895,7 +895,7 @@
     invoke-virtual {v1, p1}, Ls4/g;->setShapeAppearanceModel(Ls4/k;)V
 
     .line 17
-    iget-object p1, v1, Ls4/g;->f:Ls4/g$b;
+    iget-object p1, v1, Ls4/g;->g:Ls4/g$b;
 
     iget-object p2, p1, Ls4/g$b;->h:Landroid/graphics/Rect;
 
@@ -910,7 +910,7 @@
 
     .line 19
     :cond_0
-    iget-object p1, v1, Ls4/g;->f:Ls4/g$b;
+    iget-object p1, v1, Ls4/g;->g:Ls4/g$b;
 
     iget-object p1, p1, Ls4/g$b;->h:Landroid/graphics/Rect;
 

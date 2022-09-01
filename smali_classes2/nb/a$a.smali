@@ -18,7 +18,7 @@
 
 
 # instance fields
-.field public final f:Ljava/lang/ref/WeakReference;
+.field public final g:Ljava/lang/ref/WeakReference;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/lang/ref/WeakReference<",
@@ -41,7 +41,7 @@
 
     invoke-direct {v0, p1}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
 
-    iput-object v0, p0, Lnb/a$a;->f:Ljava/lang/ref/WeakReference;
+    iput-object v0, p0, Lnb/a$a;->g:Ljava/lang/ref/WeakReference;
 
     return-void
 .end method
@@ -52,7 +52,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lnb/a$a;->f:Ljava/lang/ref/WeakReference;
+    iget-object v0, p0, Lnb/a$a;->g:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v0}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
 

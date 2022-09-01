@@ -28,9 +28,9 @@
 
 
 # instance fields
-.field public f:I
+.field public g:I
 
-.field public final synthetic g:Lje/c;
+.field public final synthetic h:Lje/c;
 
 
 # direct methods
@@ -42,7 +42,7 @@
         }
     .end annotation
 
-    iput-object p1, p0, Lje/c$a;->g:Lje/c;
+    iput-object p1, p0, Lje/c$a;->h:Lje/c;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -55,9 +55,9 @@
     .locals 2
 
     .line 1
-    iget v0, p0, Lje/c$a;->f:I
+    iget v0, p0, Lje/c$a;->g:I
 
-    iget-object v1, p0, Lje/c$a;->g:Lje/c;
+    iget-object v1, p0, Lje/c$a;->h:Lje/c;
 
     .line 2
     invoke-virtual {v1}, Lje/a;->b()I
@@ -93,13 +93,13 @@
     if-eqz v0, :cond_0
 
     .line 2
-    iget-object v0, p0, Lje/c$a;->g:Lje/c;
+    iget-object v0, p0, Lje/c$a;->h:Lje/c;
 
-    iget v1, p0, Lje/c$a;->f:I
+    iget v1, p0, Lje/c$a;->g:I
 
     add-int/lit8 v2, v1, 0x1
 
-    iput v2, p0, Lje/c$a;->f:I
+    iput v2, p0, Lje/c$a;->g:I
 
     invoke-virtual {v0, v1}, Lje/c;->get(I)Ljava/lang/Object;
 

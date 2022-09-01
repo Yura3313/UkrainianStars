@@ -63,7 +63,7 @@
 
     iget-object p1, p1, Lbe/h$b$c;->a:Ljava/util/List;
 
-    invoke-static {v0, p1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, p1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -118,14 +118,14 @@
 
     move-object v1, v0
 
-    check-cast v1, Lvc/j;
+    check-cast v1, Lvc/i;
 
     if-eqz v1, :cond_6
 
     .line 3
     iget-object v0, p0, Lbe/h$b$c;->a:Ljava/util/List;
 
-    invoke-static {v0}, Lje/j;->P(Ljava/lang/Iterable;)Ljava/util/HashSet;
+    invoke-static {v0}, Lje/j;->K(Ljava/lang/Iterable;)Ljava/util/HashSet;
 
     move-result-object v0
 
@@ -148,10 +148,10 @@
     if-eqz v0, :cond_5
 
     .line 4
-    iget-object v2, v1, Lvc/j;->a:Ljava/util/List;
+    iget-object v2, v1, Lvc/i;->a:Ljava/util/List;
 
     .line 5
-    iget-object v3, v1, Lvc/j;->c:Ljava/util/List;
+    iget-object v3, v1, Lvc/i;->c:Ljava/util/List;
 
     .line 6
     new-instance v4, Ljava/util/ArrayList;
@@ -177,10 +177,10 @@
 
     move-object v6, v5
 
-    check-cast v6, Lvc/i;
+    check-cast v6, Lvc/h;
 
     .line 8
-    iget-object v6, v6, Lvc/i;->a:Lcom/supercell/id/model/IdSocialAccount;
+    iget-object v6, v6, Lvc/h;->a:Lcom/supercell/id/model/IdSocialAccount;
 
     .line 9
     invoke-virtual {v0, v6}, Ljava/util/HashSet;->contains(Ljava/lang/Object;)Z
@@ -194,14 +194,14 @@
     goto :goto_1
 
     :cond_2
-    invoke-static {v2, v4}, Lje/j;->I(Ljava/util/Collection;Ljava/lang/Iterable;)Ljava/util/List;
+    invoke-static {v2, v4}, Lje/j;->D(Ljava/util/Collection;Ljava/lang/Iterable;)Ljava/util/List;
 
     move-result-object v2
 
     const/4 v3, 0x0
 
     .line 10
-    iget-object v4, v1, Lvc/j;->c:Ljava/util/List;
+    iget-object v4, v1, Lvc/i;->c:Ljava/util/List;
 
     .line 11
     new-instance v5, Ljava/util/ArrayList;
@@ -227,10 +227,10 @@
 
     move-object v7, v6
 
-    check-cast v7, Lvc/i;
+    check-cast v7, Lvc/h;
 
     .line 13
-    iget-object v7, v7, Lvc/i;->a:Lcom/supercell/id/model/IdSocialAccount;
+    iget-object v7, v7, Lvc/h;->a:Lcom/supercell/id/model/IdSocialAccount;
 
     .line 14
     invoke-virtual {v0, v7}, Ljava/util/HashSet;->contains(Ljava/lang/Object;)Z
@@ -255,7 +255,7 @@
     move-object v5, v0
 
     .line 15
-    invoke-static/range {v1 .. v6}, Lvc/j;->b(Lvc/j;Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/util/List;I)Lvc/j;
+    invoke-static/range {v1 .. v6}, Lvc/i;->b(Lvc/i;Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/util/List;I)Lvc/i;
 
     move-result-object v0
 

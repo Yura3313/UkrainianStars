@@ -50,7 +50,7 @@
 
     const-string v0, "source"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
@@ -77,13 +77,13 @@
     .line 4
     new-instance v0, Lcom/supercell/id/model/IdSocialAccount$AppAccount;
 
-    sget-object v1, Lvc/e;->c:Lvc/e$a;
+    sget-object v1, Lvc/d;->c:Lvc/d$a;
 
-    invoke-virtual {v1, p1}, Lvc/e$a;->a(Ljava/lang/String;)Lvc/e;
+    invoke-virtual {v1, p1}, Lvc/d$a;->a(Ljava/lang/String;)Lvc/d;
 
     move-result-object p1
 
-    invoke-direct {v0, p1}, Lcom/supercell/id/model/IdSocialAccount$AppAccount;-><init>(Lvc/e;)V
+    invoke-direct {v0, p1}, Lcom/supercell/id/model/IdSocialAccount$AppAccount;-><init>(Lvc/d;)V
 
     move-object p1, v0
 

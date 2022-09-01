@@ -1,16 +1,16 @@
 .class public abstract Lxd/d;
-.super Lwc/s1;
+.super Lwc/t1;
 .source "TutorialPageFragment.kt"
 
 
 # static fields
-.field public static final synthetic d0:I
+.field public static final synthetic e0:I
 
 
 # instance fields
-.field public final b0:Lie/f;
+.field public final c0:Lie/g;
 
-.field public c0:Ljava/util/HashMap;
+.field public d0:Ljava/util/HashMap;
 
 
 # direct methods
@@ -18,20 +18,20 @@
     .locals 1
 
     .line 1
-    invoke-direct {p0}, Lwc/s1;-><init>()V
+    invoke-direct {p0}, Lwc/t1;-><init>()V
 
     .line 2
     new-instance v0, Lxd/d$a;
 
     invoke-direct {v0, p0}, Lxd/d$a;-><init>(Lxd/d;)V
 
-    invoke-static {v0}, La5/r;->d(Lre/a;)Lie/c;
+    invoke-static {v0}, Ld2/u;->c(Lre/a;)Lie/c;
 
     move-result-object v0
 
-    check-cast v0, Lie/f;
+    check-cast v0, Lie/g;
 
-    iput-object v0, p0, Lxd/d;->b0:Lie/f;
+    iput-object v0, p0, Lxd/d;->c0:Lie/g;
 
     return-void
 .end method
@@ -41,7 +41,7 @@
 .method public N0()V
     .locals 1
 
-    iget-object v0, p0, Lxd/d;->c0:Ljava/util/HashMap;
+    iget-object v0, p0, Lxd/d;->d0:Ljava/util/HashMap;
 
     if-eqz v0, :cond_0
 
@@ -55,9 +55,9 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lxd/d;->b0:Lie/f;
+    iget-object v0, p0, Lxd/d;->c0:Lie/g;
 
-    invoke-virtual {v0}, Lie/f;->getValue()Ljava/lang/Object;
+    invoke-virtual {v0}, Lie/g;->getValue()Ljava/lang/Object;
 
     move-result-object v0
 
@@ -73,7 +73,7 @@
     move-result-object v0
 
     .line 3
-    iget-object v0, v0, Lae/u;->m:La5/d0;
+    iget-object v0, v0, Lae/u;->m:Lpe/a;
 
     .line 4
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -85,7 +85,7 @@
 .method public T0(I)Landroid/view/View;
     .locals 2
 
-    iget-object v0, p0, Lxd/d;->c0:Ljava/util/HashMap;
+    iget-object v0, p0, Lxd/d;->d0:Ljava/util/HashMap;
 
     if-nez v0, :cond_0
 
@@ -93,10 +93,10 @@
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    iput-object v0, p0, Lxd/d;->c0:Ljava/util/HashMap;
+    iput-object v0, p0, Lxd/d;->d0:Ljava/util/HashMap;
 
     :cond_0
-    iget-object v0, p0, Lxd/d;->c0:Ljava/util/HashMap;
+    iget-object v0, p0, Lxd/d;->d0:Ljava/util/HashMap;
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -111,7 +111,7 @@
     if-nez v0, :cond_2
 
     .line 1
-    iget-object v0, p0, Landroidx/fragment/app/Fragment;->M:Landroid/view/View;
+    iget-object v0, p0, Landroidx/fragment/app/Fragment;->N:Landroid/view/View;
 
     if-nez v0, :cond_1
 
@@ -125,7 +125,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lxd/d;->c0:Ljava/util/HashMap;
+    iget-object v1, p0, Lxd/d;->d0:Ljava/util/HashMap;
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -140,7 +140,7 @@
 .method public synthetic a0()V
     .locals 0
 
-    invoke-super {p0}, Lwc/s1;->a0()V
+    invoke-super {p0}, Lwc/t1;->a0()V
 
     invoke-virtual {p0}, Lxd/d;->N0()V
 
@@ -152,7 +152,7 @@
 
     const-string p2, "view"
 
-    invoke-static {p1, p2}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p2}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     sget p1, Lcom/supercell/id/R$id;->button:I
 

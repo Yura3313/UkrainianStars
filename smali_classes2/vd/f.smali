@@ -1,5 +1,5 @@
 .class public final Lvd/f;
-.super Lse/h;
+.super Lse/i;
 .source "SettingsGeneralTabFragment.kt"
 
 # interfaces
@@ -9,17 +9,17 @@
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/l<",
         "Lwc/g0;",
-        "Lie/h;",
+        "Lie/i;",
         ">;"
     }
 .end annotation
 
 
 # static fields
-.field public static final f:Lvd/f;
+.field public static final g:Lvd/f;
 
 
 # direct methods
@@ -30,7 +30,7 @@
 
     invoke-direct {v0}, Lvd/f;-><init>()V
 
-    sput-object v0, Lvd/f;->f:Lvd/f;
+    sput-object v0, Lvd/f;->g:Lvd/f;
 
     return-void
 .end method
@@ -40,7 +40,7 @@
 
     const/4 v0, 0x1
 
-    invoke-direct {p0, v0}, Lse/h;-><init>(I)V
+    invoke-direct {p0, v0}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -55,7 +55,7 @@
     const-string v0, "it"
 
     .line 1
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 2
     sget-object p1, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
@@ -65,7 +65,7 @@
     move-result-object p1
 
     .line 3
-    iget-object p1, p1, Lae/u;->m:La5/d0;
+    iget-object p1, p1, Lae/u;->m:Lpe/a;
 
     const-string v0, "Settings"
 
@@ -76,10 +76,10 @@
     const/16 v3, 0x8
 
     .line 4
-    invoke-static {p1, v0, v1, v2, v3}, La5/d0;->a(La5/d0;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;I)V
+    invoke-static {p1, v0, v1, v2, v3}, Lpe/a;->e(Lpe/a;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;I)V
 
     .line 5
-    sget-object p1, Lie/h;->a:Lie/h;
+    sget-object p1, Lie/i;->a:Lie/i;
 
     return-object p1
 .end method

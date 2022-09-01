@@ -1,5 +1,5 @@
 .class public final Landroidx/appcompat/app/w$b;
-.super Lcom/google/android/play/core/assetpacks/o2;
+.super Lae/z1;
 .source "WindowDecorActionBar.java"
 
 
@@ -15,16 +15,16 @@
 
 
 # instance fields
-.field public final synthetic c:Landroidx/appcompat/app/w;
+.field public final synthetic a:Landroidx/appcompat/app/w;
 
 
 # direct methods
 .method public constructor <init>(Landroidx/appcompat/app/w;)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/appcompat/app/w$b;->c:Landroidx/appcompat/app/w;
+    iput-object p1, p0, Landroidx/appcompat/app/w$b;->a:Landroidx/appcompat/app/w;
 
-    invoke-direct {p0}, Lcom/google/android/play/core/assetpacks/o2;-><init>()V
+    invoke-direct {p0}, Lae/z1;-><init>()V
 
     return-void
 .end method
@@ -35,11 +35,11 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/app/w$b;->c:Landroidx/appcompat/app/w;
+    iget-object v0, p0, Landroidx/appcompat/app/w$b;->a:Landroidx/appcompat/app/w;
 
     const/4 v1, 0x0
 
-    iput-object v1, v0, Landroidx/appcompat/app/w;->t:Lf/h;
+    iput-object v1, v0, Landroidx/appcompat/app/w;->t:Lf/i;
 
     .line 2
     iget-object v0, v0, Landroidx/appcompat/app/w;->d:Landroidx/appcompat/widget/ActionBarContainer;

@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field public f:Landroidx/fragment/app/FragmentManager;
+.field public g:Landroidx/fragment/app/FragmentManager;
 
 
 # direct methods
@@ -22,7 +22,7 @@
     .locals 10
 
     .line 1
-    iget-object v0, p0, Lcom/helpshift/support/activities/ParentActivity;->f:Landroidx/fragment/app/FragmentManager;
+    iget-object v0, p0, Lcom/helpshift/support/activities/ParentActivity;->g:Landroidx/fragment/app/FragmentManager;
 
     invoke-virtual {v0}, Landroidx/fragment/app/FragmentManager;->K()Ljava/util/List;
 
@@ -133,21 +133,21 @@
     check-cast v7, Lab/c;
 
     .line 11
-    iget v2, v7, Lab/c;->i0:I
+    iget v2, v7, Lab/c;->j0:I
 
     const/4 v5, 0x2
 
     if-ne v2, v5, :cond_9
 
     .line 12
-    sget-object v2, Lcom/helpshift/util/u;->c:Le7/g;
+    sget-object v2, Lcom/helpshift/util/t;->c:Le7/g;
 
     .line 13
     invoke-virtual {v2}, Le7/g;->d()La8/b;
 
     move-result-object v2
 
-    iget-object v5, v7, Lab/c;->g0:Lu8/a;
+    iget-object v5, v7, Lab/c;->h0:Lu8/a;
 
     invoke-virtual {v2, v5}, La8/b;->a(Lu8/a;)V
 
@@ -186,7 +186,7 @@
     check-cast v7, Lqa/t;
 
     .line 19
-    iget-object v2, v7, Lqa/t;->j0:Lqa/e0;
+    iget-object v2, v7, Lqa/t;->k0:Lqa/e0;
 
     .line 20
     iget-object v8, v2, Lqa/e0;->u:Lob/c;
@@ -222,7 +222,7 @@
 
     .line 24
     :cond_6
-    iget-object v2, v7, Lqa/t;->m0:Lf9/i;
+    iget-object v2, v7, Lqa/t;->n0:Lf9/i;
 
     invoke-virtual {v2}, Lf9/i;->r()Z
 
@@ -245,7 +245,7 @@
 
     .line 25
     :cond_8
-    iget-object v2, v7, Lqa/t;->m0:Lf9/i;
+    iget-object v2, v7, Lqa/t;->n0:Lf9/i;
 
     if-eqz v2, :cond_9
 
@@ -300,7 +300,7 @@
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 2
-    sget-object v0, Lcom/helpshift/util/u;->e:Ljava/util/concurrent/atomic/AtomicBoolean;
+    sget-object v0, Lcom/helpshift/util/t;->e:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicBoolean;->get()Z
 
@@ -324,7 +324,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/helpshift/support/activities/ParentActivity;->f:Landroidx/fragment/app/FragmentManager;
+    iput-object v0, p0, Lcom/helpshift/support/activities/ParentActivity;->g:Landroidx/fragment/app/FragmentManager;
 
     if-nez p1, :cond_2
 
@@ -353,7 +353,7 @@
     invoke-virtual {p1, v1, v0}, Landroid/os/Bundle;->putBoolean(Ljava/lang/String;Z)V
 
     .line 9
-    iget-object v0, p0, Lcom/helpshift/support/activities/ParentActivity;->f:Landroidx/fragment/app/FragmentManager;
+    iget-object v0, p0, Lcom/helpshift/support/activities/ParentActivity;->g:Landroidx/fragment/app/FragmentManager;
 
     .line 10
     new-instance v1, Landroidx/fragment/app/a;
@@ -386,7 +386,7 @@
 
     .line 16
     :catch_0
-    sget-object p1, Lcom/helpshift/util/u;->e:Ljava/util/concurrent/atomic/AtomicBoolean;
+    sget-object p1, Lcom/helpshift/util/t;->e:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     invoke-virtual {p1}, Ljava/util/concurrent/atomic/AtomicBoolean;->get()Z
 
@@ -408,7 +408,7 @@
     invoke-super {p0, p1}, Landroidx/fragment/app/FragmentActivity;->onNewIntent(Landroid/content/Intent;)V
 
     .line 2
-    iget-object v0, p0, Lcom/helpshift/support/activities/ParentActivity;->f:Landroidx/fragment/app/FragmentManager;
+    iget-object v0, p0, Lcom/helpshift/support/activities/ParentActivity;->g:Landroidx/fragment/app/FragmentManager;
 
     invoke-virtual {v0}, Landroidx/fragment/app/FragmentManager;->K()Ljava/util/List;
 
@@ -451,12 +451,12 @@
     move-result-object v2
 
     .line 6
-    iget-boolean v3, v1, Lab/p;->g0:Z
+    iget-boolean v3, v1, Lab/p;->h0:Z
 
     if-eqz v3, :cond_2
 
     .line 7
-    iget-object v3, v1, Lab/p;->j0:Lpa/b;
+    iget-object v3, v1, Lab/p;->k0:Lpa/b;
 
     invoke-virtual {v3, v2}, Lpa/b;->e(Landroid/os/Bundle;)V
 
@@ -464,15 +464,15 @@
 
     .line 8
     :cond_2
-    iput-object v2, v1, Lab/p;->A0:Landroid/os/Bundle;
+    iput-object v2, v1, Lab/p;->B0:Landroid/os/Bundle;
 
     .line 9
     :goto_1
-    iget-boolean v2, v1, Lab/p;->g0:Z
+    iget-boolean v2, v1, Lab/p;->h0:Z
 
     xor-int/lit8 v2, v2, 0x1
 
-    iput-boolean v2, v1, Lab/p;->z0:Z
+    iput-boolean v2, v1, Lab/p;->A0:Z
 
     goto :goto_0
 

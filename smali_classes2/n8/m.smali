@@ -130,7 +130,7 @@
     const-string v0, "7.11.0"
 
     .line 12
-    invoke-static {p2, p1, v0}, Landroid/support/v4/media/b;->b(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p2, p1, v0}, Landroid/support/v4/media/b;->a(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 
@@ -185,7 +185,7 @@
     .line 7
     :goto_0
     :try_start_0
-    iget-object v2, p1, Lu7/a;->f:Ljava/lang/String;
+    iget-object v2, p1, Lu7/a;->g:Ljava/lang/String;
 
     const-string v3, "UTF-8"
 
@@ -205,20 +205,20 @@
     const-string v5, "Exception in encoding authToken"
 
     .line 8
-    invoke-static {v3, v5, v2}, Landroidx/savedstate/d;->g(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v3, v5, v2}, Le5/i;->i(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
     .line 9
     :goto_1
-    invoke-static {v4}, Lcom/google/android/play/core/appupdate/g;->b(Ljava/lang/String;)Z
+    invoke-static {v4}, La5/b0;->d(Ljava/lang/String;)Z
 
     move-result v2
 
     if-nez v2, :cond_2
 
-    iget-object v2, p1, Lu7/a;->g:Ljava/lang/String;
+    iget-object v2, p1, Lu7/a;->h:Ljava/lang/String;
 
     .line 10
-    invoke-static {v2}, Lcom/google/android/play/core/appupdate/g;->b(Ljava/lang/String;)Z
+    invoke-static {v2}, La5/b0;->d(Ljava/lang/String;)Z
 
     move-result v2
 
@@ -230,7 +230,7 @@
     :cond_1
     new-instance v2, Ljava/lang/StringBuilder;
 
-    iget-object p1, p1, Lu7/a;->g:Ljava/lang/String;
+    iget-object p1, p1, Lu7/a;->h:Ljava/lang/String;
 
     invoke-direct {v2, p1}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
 
@@ -239,12 +239,12 @@
     const-string v3, "&platform_id="
 
     .line 12
-    invoke-static {v2, p1, v4, v3, v1}, Lk0/a;->a(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v2, p1, v4, v3, v1}, Lcom/kakaogame/session/websocket/a;->b(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     const-string p1, "&domain="
 
     .line 13
-    invoke-static {v2, p1, v0}, Landroid/support/v4/media/b;->b(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2, p1, v0}, Landroid/support/v4/media/b;->a(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 
@@ -307,7 +307,7 @@
     const/4 v2, 0x0
 
     .line 2
-    invoke-static {v1, v0, v2, v2}, Landroidx/savedstate/d;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v1, v0, v2, v2}, Le5/i;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
 
     const/4 v0, 0x0
 

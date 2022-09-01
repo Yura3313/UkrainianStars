@@ -8,7 +8,7 @@
 
 
 # instance fields
-.field public f:Ljava/lang/String;
+.field public g:Ljava/lang/String;
 
 
 # direct methods
@@ -21,7 +21,7 @@
     const-string v0, "CREATE TABLE hs_url_metadata_table ( url TEXT PRIMARY KEY NOT NULL, last_fetch_ts INTEGER, etag TEXT, is_last_fetch_success INTEGER  );"
 
     .line 2
-    iput-object v0, p0, Lo9/b;->f:Ljava/lang/String;
+    iput-object v0, p0, Lo9/b;->g:Ljava/lang/String;
 
     return-void
 .end method
@@ -33,7 +33,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 4
-    iput-object p1, p0, Lo9/b;->f:Ljava/lang/String;
+    iput-object p1, p0, Lo9/b;->g:Ljava/lang/String;
 
     return-void
 .end method
@@ -44,7 +44,7 @@
     .locals 7
 
     .line 1
-    iget-object p2, p0, Lo9/b;->f:Ljava/lang/String;
+    iget-object p2, p0, Lo9/b;->g:Ljava/lang/String;
 
     invoke-virtual {p0, p2, p1}, Lo9/b;->d(Ljava/lang/String;I)Landroid/graphics/Bitmap;
 
@@ -53,7 +53,7 @@
     if-eqz v0, :cond_4
 
     .line 2
-    iget-object p1, p0, Lo9/b;->f:Ljava/lang/String;
+    iget-object p1, p0, Lo9/b;->g:Ljava/lang/String;
 
     const/4 p2, 0x0
 
@@ -124,7 +124,7 @@
     const-string v2, "Exception in getting exif rotation"
 
     .line 7
-    invoke-static {v1, v2, p1}, Landroidx/savedstate/d;->g(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v1, v2, p1}, Le5/i;->i(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
     :cond_2
     :goto_0
@@ -172,7 +172,7 @@
 
     invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object p2, p0, Lo9/b;->f:Ljava/lang/String;
+    iget-object p2, p0, Lo9/b;->g:Ljava/lang/String;
 
     invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -185,7 +185,7 @@
     const-string p3, "Helpshift_FilePthPrvdr"
 
     .line 13
-    invoke-static {p3, p1, p2, p2}, Landroidx/savedstate/d;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {p3, p1, p2, p2}, Le5/i;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
 
     goto :goto_1
 
@@ -198,7 +198,7 @@
     move-result-object p1
 
     .line 15
-    iget-object p2, p0, Lo9/b;->f:Ljava/lang/String;
+    iget-object p2, p0, Lo9/b;->g:Ljava/lang/String;
 
     invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -215,7 +215,7 @@
 .method public final b()Ljava/lang/String;
     .locals 1
 
-    iget-object v0, p0, Lo9/b;->f:Ljava/lang/String;
+    iget-object v0, p0, Lo9/b;->g:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -243,7 +243,7 @@
 .method public d(Ljava/lang/String;I)Landroid/graphics/Bitmap;
     .locals 0
 
-    invoke-static {p1, p2}, Lcom/helpshift/util/x;->b(Ljava/lang/String;I)Landroid/graphics/Bitmap;
+    invoke-static {p1, p2}, Lcom/helpshift/util/w;->b(Ljava/lang/String;I)Landroid/graphics/Bitmap;
 
     move-result-object p1
 

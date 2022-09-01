@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field public j:Landroid/content/Context;
+.field public k:Landroid/content/Context;
 
-.field public k:Lp7/b;
+.field public l:Lp7/b;
 
 
 # direct methods
@@ -17,10 +17,10 @@
     invoke-direct {p0, p2, p4, p5, p6}, Lo7/a;-><init>(Ln7/a;Ln7/b;Ln7/d;Ln7/c;)V
 
     .line 2
-    iput-object p1, p0, Lo7/e;->j:Landroid/content/Context;
+    iput-object p1, p0, Lo7/e;->k:Landroid/content/Context;
 
     .line 3
-    iput-object p3, p0, Lo7/e;->k:Lp7/b;
+    iput-object p3, p0, Lo7/e;->l:Lp7/b;
 
     return-void
 .end method
@@ -36,7 +36,7 @@
     move-result-object v0
 
     .line 2
-    iget-object v1, p0, Lo7/e;->k:Lp7/b;
+    iget-object v1, p0, Lo7/e;->l:Lp7/b;
 
     invoke-virtual {v1}, Lp7/b;->l()V
 
@@ -47,7 +47,7 @@
     .line 3
     :cond_0
     :try_start_0
-    iget-object v1, p0, Lo7/e;->j:Landroid/content/Context;
+    iget-object v1, p0, Lo7/e;->k:Landroid/content/Context;
 
     invoke-virtual {v1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -70,7 +70,7 @@
     const-string v2, "Error when deleting a file via uri"
 
     .line 5
-    invoke-static {v1, v2, v0}, Landroidx/savedstate/d;->g(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v1, v2, v0}, Le5/i;->i(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
     :goto_0
     return-void
@@ -92,7 +92,7 @@
 
     .line 2
     :try_start_0
-    iget-object v4, p0, Lo7/e;->j:Landroid/content/Context;
+    iget-object v4, p0, Lo7/e;->k:Landroid/content/Context;
 
     invoke-virtual {v4}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -141,7 +141,7 @@
     const-string v5, "Exception while getting file size via Uri"
 
     .line 6
-    invoke-static {v4, v5, v0}, Landroidx/savedstate/d;->g(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v4, v5, v0}, Le5/i;->i(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
@@ -228,7 +228,7 @@
 
     invoke-virtual {v5, v10, v11}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
-    iget-object v10, v1, Lo7/a;->f:Ln7/a;
+    iget-object v10, v1, Lo7/a;->g:Ln7/a;
 
     iget-object v10, v10, Ln7/a;->a:Ljava/lang/String;
 
@@ -251,7 +251,7 @@
     move-result-object v5
 
     .line 5
-    iget-object v10, v1, Lo7/a;->f:Ln7/a;
+    iget-object v10, v1, Lo7/a;->g:Ln7/a;
 
     iget-object v10, v10, Ln7/a;->c:Ljava/lang/String;
 
@@ -271,7 +271,7 @@
     invoke-direct {v7}, Landroid/content/ContentValues;-><init>()V
 
     .line 8
-    iget-object v11, v1, Lo7/e;->j:Landroid/content/Context;
+    iget-object v11, v1, Lo7/e;->k:Landroid/content/Context;
 
     invoke-virtual {v11}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -347,7 +347,7 @@
 
     .line 20
     :cond_3
-    iget-object v8, v1, Lo7/e;->k:Lp7/b;
+    iget-object v8, v1, Lo7/e;->l:Lp7/b;
 
     invoke-virtual {v5}, Landroid/net/Uri;->toString()Ljava/lang/String;
 
@@ -362,7 +362,7 @@
 
     .line 22
     :try_start_0
-    iget-object v8, v1, Lo7/e;->j:Landroid/content/Context;
+    iget-object v8, v1, Lo7/e;->k:Landroid/content/Context;
 
     invoke-virtual {v8}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -385,7 +385,7 @@
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     .line 24
-    invoke-static {v8}, La0/a;->f(Landroid/os/ParcelFileDescriptor;)V
+    invoke-static {v8}, Lr3/r4;->b(Landroid/os/ParcelFileDescriptor;)V
 
     return-void
 
@@ -464,12 +464,12 @@
     long-to-int v10, v14
 
     .line 29
-    iget-object v12, v1, Lo7/a;->h:Ln7/d;
+    iget-object v12, v1, Lo7/a;->i:Ln7/d;
 
     if-eqz v12, :cond_5
 
     .line 30
-    iget-object v13, v1, Lo7/a;->f:Ln7/a;
+    iget-object v13, v1, Lo7/a;->g:Ln7/a;
 
     iget-object v13, v13, Ln7/a;->a:Ljava/lang/String;
 
@@ -503,7 +503,7 @@
 
     .line 32
     :cond_8
-    iget-object v3, v1, Lo7/a;->f:Ln7/a;
+    iget-object v3, v1, Lo7/a;->g:Ln7/a;
 
     iget-object v3, v3, Ln7/a;->c:Ljava/lang/String;
 
@@ -552,7 +552,7 @@
 
     .line 38
     :goto_3
-    iget-object v3, v1, Lo7/e;->j:Landroid/content/Context;
+    iget-object v3, v1, Lo7/e;->k:Landroid/content/Context;
 
     invoke-virtual {v3}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -564,7 +564,7 @@
 
     .line 39
     :goto_4
-    iget-object v3, v1, Lo7/e;->k:Lp7/b;
+    iget-object v3, v1, Lo7/e;->l:Lp7/b;
 
     invoke-virtual {v3}, Lp7/b;->l()V
 
@@ -579,7 +579,7 @@
 
     invoke-virtual {v4, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v6, v1, Lo7/a;->f:Ln7/a;
+    iget-object v6, v1, Lo7/a;->g:Ln7/a;
 
     iget-object v6, v6, Ln7/a;->a:Ljava/lang/String;
 
@@ -598,7 +598,7 @@
     const/4 v6, 0x0
 
     .line 41
-    invoke-static {v3, v4, v6, v6}, Landroidx/savedstate/d;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v3, v4, v6, v6}, Le5/i;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
 
     const/4 v3, 0x1
 
@@ -611,7 +611,7 @@
     invoke-virtual {v1, v9}, Lo7/a;->c(Ljava/io/Closeable;)V
 
     .line 44
-    invoke-static {v8}, La0/a;->f(Landroid/os/ParcelFileDescriptor;)V
+    invoke-static {v8}, Lr3/r4;->b(Landroid/os/ParcelFileDescriptor;)V
 
     return-void
 
@@ -625,7 +625,7 @@
     invoke-virtual {v1, v9}, Lo7/a;->c(Ljava/io/Closeable;)V
 
     .line 46
-    invoke-static {v8}, La0/a;->f(Landroid/os/ParcelFileDescriptor;)V
+    invoke-static {v8}, Lr3/r4;->b(Landroid/os/ParcelFileDescriptor;)V
 
     .line 47
     goto :goto_7
@@ -641,7 +641,7 @@
     .locals 4
 
     .line 1
-    iget-object v0, p0, Lo7/e;->k:Lp7/b;
+    iget-object v0, p0, Lo7/e;->l:Lp7/b;
 
     .line 2
     iget-object v1, v0, Lp7/b;->b:Ln7/a;
@@ -665,9 +665,9 @@
 
     .line 4
     :cond_0
-    iget-object v1, p0, Lo7/e;->j:Landroid/content/Context;
+    iget-object v1, p0, Lo7/e;->k:Landroid/content/Context;
 
-    invoke-static {v1, v0}, La0/a;->b(Landroid/content/Context;Ljava/lang/String;)Z
+    invoke-static {v1, v0}, Lr3/r4;->a(Landroid/content/Context;Ljava/lang/String;)Z
 
     move-result v1
 
@@ -694,7 +694,7 @@
     const-string v3, "Error while converting filePath to uri"
 
     .line 6
-    invoke-static {v1, v3, v0}, Landroidx/savedstate/d;->g(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v1, v3, v0}, Le5/i;->i(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
     :goto_0
     move-object v0, v2
@@ -706,7 +706,7 @@
 
     .line 7
     :cond_2
-    iget-object v0, p0, Lo7/e;->k:Lp7/b;
+    iget-object v0, p0, Lo7/e;->l:Lp7/b;
 
     invoke-virtual {v0}, Lp7/b;->l()V
 
@@ -758,7 +758,7 @@
     const-string v2, "Error when check image mime type"
 
     .line 5
-    invoke-static {v0, v2, p1}, Landroidx/savedstate/d;->g(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v0, v2, p1}, Le5/i;->i(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
     :goto_0
     return v1

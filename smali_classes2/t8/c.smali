@@ -31,7 +31,7 @@
     iget-object v0, v0, Lt8/b;->c:Li7/c;
 
     .line 2
-    iget-object v0, v0, Li7/c;->f:Ljava/lang/Long;
+    iget-object v0, v0, Li7/c;->g:Ljava/lang/Long;
 
     .line 3
     invoke-virtual {v0}, Ljava/lang/Long;->longValue()J
@@ -73,14 +73,14 @@
     iget-object v2, v2, Lt8/b;->c:Li7/c;
 
     .line 8
-    iget-object v2, v2, Li7/c;->f:Ljava/lang/Long;
+    iget-object v2, v2, Li7/c;->g:Ljava/lang/Long;
 
     .line 9
     invoke-virtual {v2}, Ljava/lang/Long;->longValue()J
 
     move-result-wide v2
 
-    iput-wide v2, v1, Lq8/d;->x:J
+    iput-wide v2, v1, Lq8/d;->y:J
 
     .line 10
     iget-object v2, p0, Lt8/c;->b:Lt8/b;

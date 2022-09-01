@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field public f:I
+.field public g:I
 
-.field public final synthetic g:Lcom/google/android/material/snackbar/BaseTransientBottomBar;
+.field public final synthetic h:Lcom/google/android/material/snackbar/BaseTransientBottomBar;
 
 
 # direct methods
@@ -17,14 +17,14 @@
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lcom/google/android/material/snackbar/d;->g:Lcom/google/android/material/snackbar/BaseTransientBottomBar;
+    iput-object p1, p0, Lcom/google/android/material/snackbar/d;->h:Lcom/google/android/material/snackbar/BaseTransientBottomBar;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 p1, 0x0
 
     .line 2
-    iput p1, p0, Lcom/google/android/material/snackbar/d;->f:I
+    iput p1, p0, Lcom/google/android/material/snackbar/d;->g:I
 
     return-void
 .end method
@@ -51,11 +51,11 @@
     if-eqz v0, :cond_0
 
     .line 3
-    iget-object v0, p0, Lcom/google/android/material/snackbar/d;->g:Lcom/google/android/material/snackbar/BaseTransientBottomBar;
+    iget-object v0, p0, Lcom/google/android/material/snackbar/d;->h:Lcom/google/android/material/snackbar/BaseTransientBottomBar;
 
     iget-object v0, v0, Lcom/google/android/material/snackbar/BaseTransientBottomBar;->c:Lcom/google/android/material/snackbar/BaseTransientBottomBar$i;
 
-    iget v1, p0, Lcom/google/android/material/snackbar/d;->f:I
+    iget v1, p0, Lcom/google/android/material/snackbar/d;->g:I
 
     sub-int v1, p1, v1
 
@@ -65,7 +65,7 @@
 
     .line 4
     :cond_0
-    iget-object v0, p0, Lcom/google/android/material/snackbar/d;->g:Lcom/google/android/material/snackbar/BaseTransientBottomBar;
+    iget-object v0, p0, Lcom/google/android/material/snackbar/d;->h:Lcom/google/android/material/snackbar/BaseTransientBottomBar;
 
     iget-object v0, v0, Lcom/google/android/material/snackbar/BaseTransientBottomBar;->c:Lcom/google/android/material/snackbar/BaseTransientBottomBar$i;
 
@@ -75,7 +75,7 @@
 
     .line 5
     :goto_0
-    iput p1, p0, Lcom/google/android/material/snackbar/d;->f:I
+    iput p1, p0, Lcom/google/android/material/snackbar/d;->g:I
 
     return-void
 .end method

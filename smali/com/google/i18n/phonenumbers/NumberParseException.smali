@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field public f:I
+.field public g:I
 
-.field public g:Ljava/lang/String;
+.field public h:Ljava/lang/String;
 
 
 # direct methods
@@ -17,10 +17,10 @@
     invoke-direct {p0, p2}, Ljava/lang/Exception;-><init>(Ljava/lang/String;)V
 
     .line 2
-    iput-object p2, p0, Lcom/google/i18n/phonenumbers/NumberParseException;->g:Ljava/lang/String;
+    iput-object p2, p0, Lcom/google/i18n/phonenumbers/NumberParseException;->h:Ljava/lang/String;
 
     .line 3
-    iput p1, p0, Lcom/google/i18n/phonenumbers/NumberParseException;->f:I
+    iput p1, p0, Lcom/google/i18n/phonenumbers/NumberParseException;->g:I
 
     return-void
 .end method
@@ -38,9 +38,9 @@
     move-result-object v0
 
     .line 2
-    iget v1, p0, Lcom/google/i18n/phonenumbers/NumberParseException;->f:I
+    iget v1, p0, Lcom/google/i18n/phonenumbers/NumberParseException;->g:I
 
-    invoke-static {v1}, Lc6/e;->a(I)Ljava/lang/String;
+    invoke-static {v1}, Lc6/e;->c(I)Ljava/lang/String;
 
     move-result-object v1
 
@@ -50,7 +50,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lcom/google/i18n/phonenumbers/NumberParseException;->g:Ljava/lang/String;
+    iget-object v1, p0, Lcom/google/i18n/phonenumbers/NumberParseException;->h:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 

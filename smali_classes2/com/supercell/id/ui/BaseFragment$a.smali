@@ -19,10 +19,10 @@
 
 .field public final b:Z
 
-.field public final c:Lze/e0;
+.field public final c:Lze/f0;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lze/e0<",
+            "Lze/f0<",
             "*>;"
         }
     .end annotation
@@ -30,21 +30,21 @@
 
 
 # direct methods
-.method public constructor <init>(Lcom/supercell/id/ui/BaseFragment$b;ZLze/e0;)V
+.method public constructor <init>(Lcom/supercell/id/ui/BaseFragment$b;ZLze/f0;)V
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Lcom/supercell/id/ui/BaseFragment$b;",
             "Z",
-            "Lze/e0<",
+            "Lze/f0<",
             "*>;)V"
         }
     .end annotation
 
     const-string v0, "startTransition"
 
-    invoke-static {p3, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p3, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -52,7 +52,7 @@
 
     iput-boolean p2, p0, Lcom/supercell/id/ui/BaseFragment$a;->b:Z
 
-    iput-object p3, p0, Lcom/supercell/id/ui/BaseFragment$a;->c:Lze/e0;
+    iput-object p3, p0, Lcom/supercell/id/ui/BaseFragment$a;->c:Lze/f0;
 
     return-void
 .end method
@@ -74,7 +74,7 @@
 
     iget-object v1, p1, Lcom/supercell/id/ui/BaseFragment$a;->a:Lcom/supercell/id/ui/BaseFragment$b;
 
-    invoke-static {v0, v1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
@@ -86,11 +86,11 @@
 
     if-ne v0, v1, :cond_0
 
-    iget-object v0, p0, Lcom/supercell/id/ui/BaseFragment$a;->c:Lze/e0;
+    iget-object v0, p0, Lcom/supercell/id/ui/BaseFragment$a;->c:Lze/f0;
 
-    iget-object p1, p1, Lcom/supercell/id/ui/BaseFragment$a;->c:Lze/e0;
+    iget-object p1, p1, Lcom/supercell/id/ui/BaseFragment$a;->c:Lze/f0;
 
-    invoke-static {v0, p1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, p1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -142,7 +142,7 @@
 
     mul-int/lit8 v0, v0, 0x1f
 
-    iget-object v2, p0, Lcom/supercell/id/ui/BaseFragment$a;->c:Lze/e0;
+    iget-object v2, p0, Lcom/supercell/id/ui/BaseFragment$a;->c:Lze/f0;
 
     if-eqz v2, :cond_2
 
@@ -183,7 +183,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lcom/supercell/id/ui/BaseFragment$a;->c:Lze/e0;
+    iget-object v1, p0, Lcom/supercell/id/ui/BaseFragment$a;->c:Lze/f0;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 

@@ -18,9 +18,9 @@
 
 
 # static fields
-.field public static final enum f:Ld8/c;
+.field public static final enum g:Ld8/c;
 
-.field public static final synthetic g:[Ld8/c;
+.field public static final synthetic h:[Ld8/c;
 
 
 # direct methods
@@ -32,7 +32,7 @@
 
     invoke-direct {v0}, Ld8/c;-><init>()V
 
-    sput-object v0, Ld8/c;->f:Ld8/c;
+    sput-object v0, Ld8/c;->g:Ld8/c;
 
     const/4 v1, 0x1
 
@@ -43,7 +43,7 @@
     aput-object v0, v1, v2
 
     .line 2
-    sput-object v1, Ld8/c;->g:[Ld8/c;
+    sput-object v1, Ld8/c;->h:[Ld8/c;
 
     return-void
 .end method
@@ -82,7 +82,7 @@
 .method public static values()[Ld8/c;
     .locals 1
 
-    sget-object v0, Ld8/c;->g:[Ld8/c;
+    sget-object v0, Ld8/c;->h:[Ld8/c;
 
     invoke-virtual {v0}, [Ld8/c;->clone()Ljava/lang/Object;
 

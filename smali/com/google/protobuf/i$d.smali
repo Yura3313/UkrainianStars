@@ -15,9 +15,9 @@
 
 
 # instance fields
-.field public final j:I
-
 .field public final k:I
+
+.field public final l:I
 
 
 # direct methods
@@ -35,10 +35,10 @@
     invoke-static {p2, v0, p1}, Lcom/google/protobuf/i;->e(III)I
 
     .line 3
-    iput p2, p0, Lcom/google/protobuf/i$d;->j:I
+    iput p2, p0, Lcom/google/protobuf/i$d;->k:I
 
     .line 4
-    iput p3, p0, Lcom/google/protobuf/i$d;->k:I
+    iput p3, p0, Lcom/google/protobuf/i$d;->l:I
 
     return-void
 .end method
@@ -66,15 +66,15 @@
     .locals 2
 
     .line 1
-    iget v0, p0, Lcom/google/protobuf/i$d;->k:I
+    iget v0, p0, Lcom/google/protobuf/i$d;->l:I
 
     .line 2
     invoke-static {p1, v0}, Lcom/google/protobuf/i;->c(II)V
 
     .line 3
-    iget-object v0, p0, Lcom/google/protobuf/i$h;->i:[B
+    iget-object v0, p0, Lcom/google/protobuf/i$h;->j:[B
 
-    iget v1, p0, Lcom/google/protobuf/i$d;->j:I
+    iget v1, p0, Lcom/google/protobuf/i$d;->k:I
 
     add-int/2addr v1, p1
 
@@ -87,10 +87,10 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/google/protobuf/i$h;->i:[B
+    iget-object v0, p0, Lcom/google/protobuf/i$h;->j:[B
 
     .line 2
-    iget v1, p0, Lcom/google/protobuf/i$d;->j:I
+    iget v1, p0, Lcom/google/protobuf/i$d;->k:I
 
     add-int/2addr v1, p2
 
@@ -103,9 +103,9 @@
 .method public final i(I)B
     .locals 2
 
-    iget-object v0, p0, Lcom/google/protobuf/i$h;->i:[B
+    iget-object v0, p0, Lcom/google/protobuf/i$h;->j:[B
 
-    iget v1, p0, Lcom/google/protobuf/i$d;->j:I
+    iget v1, p0, Lcom/google/protobuf/i$d;->k:I
 
     add-int/2addr v1, p1
 
@@ -117,7 +117,7 @@
 .method public final size()I
     .locals 1
 
-    iget v0, p0, Lcom/google/protobuf/i$d;->k:I
+    iget v0, p0, Lcom/google/protobuf/i$d;->l:I
 
     return v0
 .end method
@@ -125,7 +125,7 @@
 .method public final v()I
     .locals 1
 
-    iget v0, p0, Lcom/google/protobuf/i$d;->j:I
+    iget v0, p0, Lcom/google/protobuf/i$d;->k:I
 
     return v0
 .end method

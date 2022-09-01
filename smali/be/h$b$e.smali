@@ -24,7 +24,7 @@
 
     const-string v0, "account"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-direct {p0}, Lbe/h$b;-><init>()V
 
@@ -50,7 +50,7 @@
 
     iget-object p1, p1, Lbe/h$b$e;->a:Lcom/supercell/id/model/IdSocialAccount;
 
-    invoke-static {v0, p1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, p1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -103,12 +103,12 @@
 
     move-result-object v0
 
-    check-cast v0, Lvc/j;
+    check-cast v0, Lvc/i;
 
     if-eqz v0, :cond_8
 
     .line 3
-    iget-object p1, v0, Lvc/j;->a:Ljava/util/List;
+    iget-object p1, v0, Lvc/i;->a:Ljava/util/List;
 
     .line 4
     new-instance v1, Ljava/util/ArrayList;
@@ -134,15 +134,15 @@
 
     move-object v3, v2
 
-    check-cast v3, Lvc/i;
+    check-cast v3, Lvc/h;
 
     .line 6
-    iget-object v3, v3, Lvc/i;->a:Lcom/supercell/id/model/IdSocialAccount;
+    iget-object v3, v3, Lvc/h;->a:Lcom/supercell/id/model/IdSocialAccount;
 
     .line 7
     iget-object v4, p0, Lbe/h$b$e;->a:Lcom/supercell/id/model/IdSocialAccount;
 
-    invoke-static {v3, v4}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v3, v4}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v3
 
@@ -156,7 +156,7 @@
 
     .line 8
     :cond_1
-    iget-object p1, v0, Lvc/j;->b:Ljava/util/List;
+    iget-object p1, v0, Lvc/i;->b:Ljava/util/List;
 
     .line 9
     new-instance v2, Ljava/util/ArrayList;
@@ -182,15 +182,15 @@
 
     move-object v4, v3
 
-    check-cast v4, Lvc/i;
+    check-cast v4, Lvc/h;
 
     .line 11
-    iget-object v4, v4, Lvc/i;->a:Lcom/supercell/id/model/IdSocialAccount;
+    iget-object v4, v4, Lvc/h;->a:Lcom/supercell/id/model/IdSocialAccount;
 
     .line 12
     iget-object v5, p0, Lbe/h$b$e;->a:Lcom/supercell/id/model/IdSocialAccount;
 
-    invoke-static {v4, v5}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v4, v5}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v4
 
@@ -204,7 +204,7 @@
 
     .line 13
     :cond_3
-    iget-object p1, v0, Lvc/j;->c:Ljava/util/List;
+    iget-object p1, v0, Lvc/i;->c:Ljava/util/List;
 
     .line 14
     new-instance v3, Ljava/util/ArrayList;
@@ -230,15 +230,15 @@
 
     move-object v5, v4
 
-    check-cast v5, Lvc/i;
+    check-cast v5, Lvc/h;
 
     .line 16
-    iget-object v5, v5, Lvc/i;->a:Lcom/supercell/id/model/IdSocialAccount;
+    iget-object v5, v5, Lvc/h;->a:Lcom/supercell/id/model/IdSocialAccount;
 
     .line 17
     iget-object v6, p0, Lbe/h$b$e;->a:Lcom/supercell/id/model/IdSocialAccount;
 
-    invoke-static {v5, v6}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v5, v6}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v5
 
@@ -252,7 +252,7 @@
 
     .line 18
     :cond_5
-    iget-object p1, v0, Lvc/j;->d:Ljava/util/List;
+    iget-object p1, v0, Lvc/i;->d:Ljava/util/List;
 
     .line 19
     new-instance v4, Ljava/util/ArrayList;
@@ -278,15 +278,15 @@
 
     move-object v6, v5
 
-    check-cast v6, Lvc/i;
+    check-cast v6, Lvc/h;
 
     .line 21
-    iget-object v6, v6, Lvc/i;->a:Lcom/supercell/id/model/IdSocialAccount;
+    iget-object v6, v6, Lvc/h;->a:Lcom/supercell/id/model/IdSocialAccount;
 
     .line 22
     iget-object v7, p0, Lbe/h$b$e;->a:Lcom/supercell/id/model/IdSocialAccount;
 
-    invoke-static {v6, v7}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v6, v7}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v6
 
@@ -300,7 +300,7 @@
 
     .line 23
     :cond_7
-    invoke-virtual {v0, v1, v2, v3, v4}, Lvc/j;->a(Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/util/List;)Lvc/j;
+    invoke-virtual {v0, v1, v2, v3, v4}, Lvc/i;->a(Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/util/List;)Lvc/i;
 
     move-result-object p1
 

@@ -16,22 +16,22 @@
 
 
 # instance fields
-.field public final f:I
+.field public final g:I
 
-.field public final g:Landroid/accounts/Account;
+.field public final h:Landroid/accounts/Account;
 
-.field public final h:I
+.field public final i:I
 
-.field public final i:Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;
+.field public final j:Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;
 
 
 # direct methods
 .method public static constructor <clinit>()V
     .locals 1
 
-    new-instance v0, Ld2/w;
+    new-instance v0, Ld2/x;
 
-    invoke-direct {v0}, Ld2/w;-><init>()V
+    invoke-direct {v0}, Ld2/x;-><init>()V
 
     sput-object v0, Lcom/google/android/gms/common/internal/zat;->CREATOR:Landroid/os/Parcelable$Creator;
 
@@ -45,16 +45,16 @@
     invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
 
     .line 2
-    iput p1, p0, Lcom/google/android/gms/common/internal/zat;->f:I
+    iput p1, p0, Lcom/google/android/gms/common/internal/zat;->g:I
 
     .line 3
-    iput-object p2, p0, Lcom/google/android/gms/common/internal/zat;->g:Landroid/accounts/Account;
+    iput-object p2, p0, Lcom/google/android/gms/common/internal/zat;->h:Landroid/accounts/Account;
 
     .line 4
-    iput p3, p0, Lcom/google/android/gms/common/internal/zat;->h:I
+    iput p3, p0, Lcom/google/android/gms/common/internal/zat;->i:I
 
     .line 5
-    iput-object p4, p0, Lcom/google/android/gms/common/internal/zat;->i:Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;
+    iput-object p4, p0, Lcom/google/android/gms/common/internal/zat;->j:Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;
 
     return-void
 .end method
@@ -68,16 +68,16 @@
     const/4 v0, 0x2
 
     .line 7
-    iput v0, p0, Lcom/google/android/gms/common/internal/zat;->f:I
+    iput v0, p0, Lcom/google/android/gms/common/internal/zat;->g:I
 
     .line 8
-    iput-object p1, p0, Lcom/google/android/gms/common/internal/zat;->g:Landroid/accounts/Account;
+    iput-object p1, p0, Lcom/google/android/gms/common/internal/zat;->h:Landroid/accounts/Account;
 
     .line 9
-    iput p2, p0, Lcom/google/android/gms/common/internal/zat;->h:I
+    iput p2, p0, Lcom/google/android/gms/common/internal/zat;->i:I
 
     .line 10
-    iput-object p3, p0, Lcom/google/android/gms/common/internal/zat;->i:Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;
+    iput-object p3, p0, Lcom/google/android/gms/common/internal/zat;->j:Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;
 
     return-void
 .end method
@@ -97,7 +97,7 @@
     const/4 v1, 0x1
 
     .line 2
-    iget v2, p0, Lcom/google/android/gms/common/internal/zat;->f:I
+    iget v2, p0, Lcom/google/android/gms/common/internal/zat;->g:I
 
     const/4 v3, 0x4
 
@@ -110,7 +110,7 @@
     const/4 v1, 0x2
 
     .line 5
-    iget-object v2, p0, Lcom/google/android/gms/common/internal/zat;->g:Landroid/accounts/Account;
+    iget-object v2, p0, Lcom/google/android/gms/common/internal/zat;->h:Landroid/accounts/Account;
 
     const/4 v4, 0x0
 
@@ -120,7 +120,7 @@
     const/4 v1, 0x3
 
     .line 7
-    iget v2, p0, Lcom/google/android/gms/common/internal/zat;->h:I
+    iget v2, p0, Lcom/google/android/gms/common/internal/zat;->i:I
 
     .line 8
     invoke-static {p1, v1, v3}, Le2/b;->s(Landroid/os/Parcel;II)V
@@ -129,7 +129,7 @@
     invoke-virtual {p1, v2}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 10
-    iget-object v1, p0, Lcom/google/android/gms/common/internal/zat;->i:Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;
+    iget-object v1, p0, Lcom/google/android/gms/common/internal/zat;->j:Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;
 
     .line 11
     invoke-static {p1, v3, v1, p2, v4}, Le2/b;->l(Landroid/os/Parcel;ILandroid/os/Parcelable;IZ)V

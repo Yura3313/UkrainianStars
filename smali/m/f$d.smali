@@ -30,13 +30,13 @@
 
 
 # instance fields
-.field public f:I
-
 .field public g:I
 
-.field public h:Z
+.field public h:I
 
-.field public final synthetic i:Lm/f;
+.field public i:Z
+
+.field public final synthetic j:Lm/f;
 
 
 # direct methods
@@ -44,14 +44,14 @@
     .locals 1
 
     .line 1
-    iput-object p1, p0, Lm/f$d;->i:Lm/f;
+    iput-object p1, p0, Lm/f$d;->j:Lm/f;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 v0, 0x0
 
     .line 2
-    iput-boolean v0, p0, Lm/f$d;->h:Z
+    iput-boolean v0, p0, Lm/f$d;->i:Z
 
     .line 3
     invoke-virtual {p1}, Lm/f;->d()I
@@ -60,12 +60,12 @@
 
     add-int/lit8 p1, p1, -0x1
 
-    iput p1, p0, Lm/f$d;->f:I
+    iput p1, p0, Lm/f$d;->g:I
 
     const/4 p1, -0x1
 
     .line 4
-    iput p1, p0, Lm/f$d;->g:I
+    iput p1, p0, Lm/f$d;->h:I
 
     return-void
 .end method
@@ -76,7 +76,7 @@
     .locals 4
 
     .line 1
-    iget-boolean v0, p0, Lm/f$d;->h:Z
+    iget-boolean v0, p0, Lm/f$d;->i:Z
 
     if-eqz v0, :cond_2
 
@@ -98,15 +98,15 @@
 
     move-result-object v0
 
-    iget-object v2, p0, Lm/f$d;->i:Lm/f;
+    iget-object v2, p0, Lm/f$d;->j:Lm/f;
 
-    iget v3, p0, Lm/f$d;->g:I
+    iget v3, p0, Lm/f$d;->h:I
 
     invoke-virtual {v2, v3, v1}, Lm/f;->b(II)Ljava/lang/Object;
 
     move-result-object v2
 
-    invoke-static {v0, v2}, Lcom/android/billingclient/api/z;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v2}, Ll2/p;->e(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
@@ -119,15 +119,15 @@
 
     move-result-object p1
 
-    iget-object v0, p0, Lm/f$d;->i:Lm/f;
+    iget-object v0, p0, Lm/f$d;->j:Lm/f;
 
-    iget v3, p0, Lm/f$d;->g:I
+    iget v3, p0, Lm/f$d;->h:I
 
     invoke-virtual {v0, v3, v2}, Lm/f;->b(II)Ljava/lang/Object;
 
     move-result-object v0
 
-    invoke-static {p1, v0}, Lcom/android/billingclient/api/z;->d(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {p1, v0}, Ll2/p;->e(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -158,14 +158,14 @@
     .end annotation
 
     .line 1
-    iget-boolean v0, p0, Lm/f$d;->h:Z
+    iget-boolean v0, p0, Lm/f$d;->i:Z
 
     if-eqz v0, :cond_0
 
     .line 2
-    iget-object v0, p0, Lm/f$d;->i:Lm/f;
+    iget-object v0, p0, Lm/f$d;->j:Lm/f;
 
-    iget v1, p0, Lm/f$d;->g:I
+    iget v1, p0, Lm/f$d;->h:I
 
     const/4 v2, 0x0
 
@@ -195,14 +195,14 @@
     .end annotation
 
     .line 1
-    iget-boolean v0, p0, Lm/f$d;->h:Z
+    iget-boolean v0, p0, Lm/f$d;->i:Z
 
     if-eqz v0, :cond_0
 
     .line 2
-    iget-object v0, p0, Lm/f$d;->i:Lm/f;
+    iget-object v0, p0, Lm/f$d;->j:Lm/f;
 
-    iget v1, p0, Lm/f$d;->g:I
+    iget v1, p0, Lm/f$d;->h:I
 
     const/4 v2, 0x1
 
@@ -226,9 +226,9 @@
 .method public final hasNext()Z
     .locals 2
 
-    iget v0, p0, Lm/f$d;->g:I
+    iget v0, p0, Lm/f$d;->h:I
 
-    iget v1, p0, Lm/f$d;->f:I
+    iget v1, p0, Lm/f$d;->g:I
 
     if-ge v0, v1, :cond_0
 
@@ -247,14 +247,14 @@
     .locals 5
 
     .line 1
-    iget-boolean v0, p0, Lm/f$d;->h:Z
+    iget-boolean v0, p0, Lm/f$d;->i:Z
 
     if-eqz v0, :cond_2
 
     .line 2
-    iget-object v0, p0, Lm/f$d;->i:Lm/f;
+    iget-object v0, p0, Lm/f$d;->j:Lm/f;
 
-    iget v1, p0, Lm/f$d;->g:I
+    iget v1, p0, Lm/f$d;->h:I
 
     const/4 v2, 0x0
 
@@ -263,9 +263,9 @@
     move-result-object v0
 
     .line 3
-    iget-object v1, p0, Lm/f$d;->i:Lm/f;
+    iget-object v1, p0, Lm/f$d;->j:Lm/f;
 
-    iget v3, p0, Lm/f$d;->g:I
+    iget v3, p0, Lm/f$d;->h:I
 
     const/4 v4, 0x1
 
@@ -323,16 +323,16 @@
     if-eqz v0, :cond_0
 
     .line 2
-    iget v0, p0, Lm/f$d;->g:I
+    iget v0, p0, Lm/f$d;->h:I
 
     const/4 v1, 0x1
 
     add-int/2addr v0, v1
 
-    iput v0, p0, Lm/f$d;->g:I
+    iput v0, p0, Lm/f$d;->h:I
 
     .line 3
-    iput-boolean v1, p0, Lm/f$d;->h:Z
+    iput-boolean v1, p0, Lm/f$d;->i:Z
 
     return-object p0
 
@@ -349,35 +349,35 @@
     .locals 2
 
     .line 1
-    iget-boolean v0, p0, Lm/f$d;->h:Z
+    iget-boolean v0, p0, Lm/f$d;->i:Z
 
     if-eqz v0, :cond_0
 
     .line 2
-    iget-object v0, p0, Lm/f$d;->i:Lm/f;
+    iget-object v0, p0, Lm/f$d;->j:Lm/f;
 
-    iget v1, p0, Lm/f$d;->g:I
+    iget v1, p0, Lm/f$d;->h:I
 
     invoke-virtual {v0, v1}, Lm/f;->h(I)V
 
     .line 3
+    iget v0, p0, Lm/f$d;->h:I
+
+    add-int/lit8 v0, v0, -0x1
+
+    iput v0, p0, Lm/f$d;->h:I
+
+    .line 4
     iget v0, p0, Lm/f$d;->g:I
 
     add-int/lit8 v0, v0, -0x1
 
     iput v0, p0, Lm/f$d;->g:I
 
-    .line 4
-    iget v0, p0, Lm/f$d;->f:I
-
-    add-int/lit8 v0, v0, -0x1
-
-    iput v0, p0, Lm/f$d;->f:I
-
     const/4 v0, 0x0
 
     .line 5
-    iput-boolean v0, p0, Lm/f$d;->h:Z
+    iput-boolean v0, p0, Lm/f$d;->i:Z
 
     return-void
 
@@ -399,14 +399,14 @@
     .end annotation
 
     .line 1
-    iget-boolean v0, p0, Lm/f$d;->h:Z
+    iget-boolean v0, p0, Lm/f$d;->i:Z
 
     if-eqz v0, :cond_0
 
     .line 2
-    iget-object v0, p0, Lm/f$d;->i:Lm/f;
+    iget-object v0, p0, Lm/f$d;->j:Lm/f;
 
-    iget v1, p0, Lm/f$d;->g:I
+    iget v1, p0, Lm/f$d;->h:I
 
     invoke-virtual {v0, v1, p1}, Lm/f;->i(ILjava/lang/Object;)Ljava/lang/Object;
 

@@ -27,7 +27,7 @@
         "TR;>;",
         "Lre/l<",
         "TR;",
-        "Lie/h;",
+        "Lie/i;",
         ">;"
     }
 .end annotation

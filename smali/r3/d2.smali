@@ -19,13 +19,13 @@
 
 
 # virtual methods
-.method public abstract A0()Lr3/r4;
+.method public abstract A0()Lr3/s4;
 .end method
 
 .method public abstract N()Z
 .end method
 
-.method public abstract T()Lr3/w4;
+.method public abstract T()Lr3/x4;
 .end method
 
 .method public abstract a()Lr3/h3;

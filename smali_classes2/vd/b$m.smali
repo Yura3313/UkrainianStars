@@ -1,5 +1,5 @@
 .class public final Lvd/b$m;
-.super Lse/h;
+.super Lse/i;
 .source "SettingsGeneralTabFragment.kt"
 
 # interfaces
@@ -18,27 +18,27 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/a<",
-        "Lie/h;",
+        "Lie/i;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic f:Lvd/b;
+.field public final synthetic g:Lvd/b;
 
 
 # direct methods
 .method public constructor <init>(Lvd/b;)V
     .locals 0
 
-    iput-object p1, p0, Lvd/b$m;->f:Lvd/b;
+    iput-object p1, p0, Lvd/b$m;->g:Lvd/b;
 
     const/4 p1, 0x0
 
-    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -49,9 +49,9 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lvd/b$m;->f:Lvd/b;
+    iget-object v0, p0, Lvd/b$m;->g:Lvd/b;
 
-    invoke-static {v0}, Lcom/android/billingclient/api/c0;->e(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
+    invoke-static {v0}, Lcom/android/billingclient/api/b0;->f(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
 
     move-result-object v0
 
@@ -73,12 +73,12 @@
 
     if-eqz v1, :cond_0
 
-    invoke-static {v0, v1}, Lcom/android/billingclient/api/c0;->p(Landroid/app/Activity;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/android/billingclient/api/b0;->q(Landroid/app/Activity;Ljava/lang/String;)V
 
     goto :goto_0
 
     :cond_0
-    invoke-static {}, Lt3/e;->f()V
+    invoke-static {}, Lt3/h;->j()V
 
     const/4 v0, 0x0
 
@@ -87,7 +87,7 @@
     .line 4
     :cond_1
     :goto_0
-    sget-object v0, Lie/h;->a:Lie/h;
+    sget-object v0, Lie/i;->a:Lie/i;
 
     return-object v0
 .end method

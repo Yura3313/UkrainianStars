@@ -3,151 +3,89 @@
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lk3/zc0;
+.implements Lk3/cd0;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "Lk3/zc0<",
-        "Lorg/json/JSONObject;",
+        "Lk3/cd0<",
+        "Lk3/yc0;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final a:Landroid/location/Location;
+.field public a:Lcom/google/android/gms/ads/a;
+
+.field public b:Lk3/jm0;
+
+.field public c:Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/List<",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+.end field
 
 
 # direct methods
-.method public constructor <init>(Landroid/location/Location;)V
+.method public constructor <init>(Lcom/google/android/gms/ads/a;Lk3/jm0;Ljava/util/List;)V
     .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lcom/google/android/gms/ads/a;",
+            "Lk3/jm0;",
+            "Ljava/util/List<",
+            "Ljava/lang/String;",
+            ">;)V"
+        }
+    .end annotation
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lk3/ie0;->a:Landroid/location/Location;
+    iput-object p1, p0, Lk3/ie0;->a:Lcom/google/android/gms/ads/a;
+
+    .line 3
+    iput-object p2, p0, Lk3/ie0;->b:Lk3/jm0;
+
+    .line 4
+    iput-object p3, p0, Lk3/ie0;->c:Ljava/util/List;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final b(Ljava/lang/Object;)V
-    .locals 9
+.method public final a()Lk3/hm0;
+    .locals 3
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lk3/hm0<",
+            "Lk3/yc0;",
+            ">;"
+        }
+    .end annotation
 
-    .line 1
-    check-cast p1, Lorg/json/JSONObject;
+    iget-object v0, p0, Lk3/ie0;->b:Lk3/jm0;
 
-    .line 2
-    :try_start_0
-    iget-object v0, p0, Lk3/ie0;->a:Landroid/location/Location;
+    new-instance v1, Lk3/ke0;
 
-    if-eqz v0, :cond_0
+    const/4 v2, 0x0
 
-    .line 3
-    new-instance v0, Lorg/json/JSONObject;
+    invoke-direct {v1, p0, v2}, Lk3/ke0;-><init>(Ljava/lang/Object;I)V
 
-    invoke-direct {v0}, Lorg/json/JSONObject;-><init>()V
+    invoke-interface {v0, v1}, Lk3/jm0;->c(Ljava/util/concurrent/Callable;)Lk3/hm0;
 
-    .line 4
-    iget-object v1, p0, Lk3/ie0;->a:Landroid/location/Location;
+    move-result-object v0
 
-    invoke-virtual {v1}, Landroid/location/Location;->getAccuracy()F
-
-    move-result v1
-
-    const/high16 v2, 0x447a0000    # 1000.0f
-
-    mul-float v1, v1, v2
-
-    invoke-static {v1}, Ljava/lang/Float;->valueOf(F)Ljava/lang/Float;
-
-    move-result-object v1
-
-    .line 5
-    iget-object v2, p0, Lk3/ie0;->a:Landroid/location/Location;
-
-    invoke-virtual {v2}, Landroid/location/Location;->getTime()J
-
-    move-result-wide v2
-
-    const-wide/16 v4, 0x3e8
-
-    mul-long v2, v2, v4
-
-    invoke-static {v2, v3}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
-
-    move-result-object v2
-
-    .line 6
-    iget-object v3, p0, Lk3/ie0;->a:Landroid/location/Location;
-
-    invoke-virtual {v3}, Landroid/location/Location;->getLatitude()D
-
-    move-result-wide v3
-
-    const-wide v5, 0x416312d000000000L    # 1.0E7
-
-    mul-double v3, v3, v5
-
-    double-to-long v3, v3
-
-    invoke-static {v3, v4}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
-
-    move-result-object v3
-
-    .line 7
-    iget-object v4, p0, Lk3/ie0;->a:Landroid/location/Location;
-
-    invoke-virtual {v4}, Landroid/location/Location;->getLongitude()D
-
-    move-result-wide v7
-
-    mul-double v7, v7, v5
-
-    double-to-long v4, v7
-
-    invoke-static {v4, v5}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
-
-    move-result-object v4
-
-    const-string v5, "radius"
-
-    .line 8
-    invoke-virtual {v0, v5, v1}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
-
-    const-string v1, "lat"
-
-    .line 9
-    invoke-virtual {v0, v1, v3}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
-
-    const-string v1, "long"
-
-    .line 10
-    invoke-virtual {v0, v1, v4}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
-
-    const-string v1, "time"
-
-    .line 11
-    invoke-virtual {v0, v1, v2}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
-
-    const-string v1, "uule"
-
-    .line 12
-    invoke-virtual {p1, v1, v0}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
-    :try_end_0
-    .catch Lorg/json/JSONException; {:try_start_0 .. :try_end_0} :catch_0
-
-    :cond_0
-    return-void
-
-    .line 13
-    :catch_0
-    invoke-static {}, Lk3/j6;->m()Z
-
-    return-void
+    return-object v0
 .end method

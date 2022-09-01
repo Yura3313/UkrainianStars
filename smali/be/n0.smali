@@ -1,96 +1,202 @@
 .class public final Lbe/n0;
-.super Lse/h;
+.super Ljava/lang/Object;
 .source "ShopStorage.kt"
-
-# interfaces
-.implements Lre/l;
-
-
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Lse/h;",
-        "Lre/l<",
-        "Ljava/lang/Exception;",
-        "Lie/h;",
-        ">;"
-    }
-.end annotation
 
 
 # instance fields
-.field public final synthetic f:Lbe/o0$a;
+.field public final a:Lae/m;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lae/m<",
+            "Lvc/x;",
+            "Lcom/supercell/id/util/NormalizedError;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public final b:Ljava/util/Set;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/Set<",
+            "Lbe/e;",
+            ">;"
+        }
+    .end annotation
+.end field
 
 
 # direct methods
-.method public constructor <init>(Lbe/o0$a;)V
+.method public constructor <init>(Lae/m;Ljava/util/Set;)V
     .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lae/m<",
+            "Lvc/x;",
+            "Lcom/supercell/id/util/NormalizedError;",
+            ">;",
+            "Ljava/util/Set<",
+            "Lbe/e;",
+            ">;)V"
+        }
+    .end annotation
 
-    iput-object p1, p0, Lbe/n0;->f:Lbe/o0$a;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    const/4 p1, 0x1
+    iput-object p1, p0, Lbe/n0;->a:Lae/m;
 
-    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
+    iput-object p2, p0, Lbe/n0;->b:Ljava/util/Set;
 
     return-void
 .end method
 
+.method public static a(Lbe/n0;Lae/m;Ljava/util/Set;I)Lbe/n0;
+    .locals 1
+
+    and-int/lit8 v0, p3, 0x1
+
+    if-eqz v0, :cond_0
+
+    iget-object p1, p0, Lbe/n0;->a:Lae/m;
+
+    :cond_0
+    and-int/lit8 p3, p3, 0x2
+
+    if-eqz p3, :cond_1
+
+    iget-object p2, p0, Lbe/n0;->b:Ljava/util/Set;
+
+    :cond_1
+    invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    const-string p0, "shopItems"
+
+    invoke-static {p1, p0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string p0, "donateInProgress"
+
+    invoke-static {p2, p0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    new-instance p0, Lbe/n0;
+
+    invoke-direct {p0, p1, p2}, Lbe/n0;-><init>(Lae/m;Ljava/util/Set;)V
+
+    return-object p0
+.end method
+
 
 # virtual methods
-.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
+.method public final equals(Ljava/lang/Object;)Z
     .locals 2
 
-    .line 1
-    check-cast p1, Ljava/lang/Exception;
+    if-eq p0, p1, :cond_1
 
-    const-string v0, "it"
+    instance-of v0, p1, Lbe/n0;
 
-    .line 2
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    if-eqz v0, :cond_0
 
-    .line 3
-    sget-object v0, Lcom/supercell/id/util/NormalizedError;->l:Lcom/supercell/id/util/NormalizedError$b;
+    check-cast p1, Lbe/n0;
 
-    invoke-virtual {v0, p1}, Lcom/supercell/id/util/NormalizedError$b;->a(Ljava/lang/Exception;)Lcom/supercell/id/util/NormalizedError;
+    iget-object v0, p0, Lbe/n0;->a:Lae/m;
 
-    move-result-object p1
+    iget-object v1, p1, Lbe/n0;->a:Lae/m;
 
-    .line 4
-    iget-object v0, p0, Lbe/n0;->f:Lbe/o0$a;
+    invoke-static {v0, v1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
-    iget-object v0, v0, Lbe/o0$a;->f:Lbe/o0;
+    move-result v0
 
-    new-instance v1, Lbe/o0$b$p;
+    if-eqz v0, :cond_0
 
-    invoke-direct {v1, p1}, Lbe/o0$b$p;-><init>(Lcom/supercell/id/util/NormalizedError;)V
+    iget-object v0, p0, Lbe/n0;->b:Ljava/util/Set;
 
-    invoke-virtual {v0, v1}, Lbe/v0;->a(Lbe/a;)V
+    iget-object p1, p1, Lbe/n0;->b:Ljava/util/Set;
 
-    .line 5
-    iget-object p1, p0, Lbe/n0;->f:Lbe/o0$a;
+    invoke-static {v0, p1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
-    iget-object p1, p1, Lbe/o0$a;->f:Lbe/o0;
-
-    .line 6
-    iget-object p1, p1, Lbe/o0;->e:Lae/r1;
+    move-result p1
 
     if-eqz p1, :cond_0
 
-    .line 7
-    invoke-virtual {p1}, Lae/r1;->a()V
-
-    .line 8
-    sget-object p1, Lie/h;->a:Lie/h;
-
-    return-object p1
+    goto :goto_0
 
     :cond_0
-    const-string p1, "getItemsCache"
-
-    .line 9
-    invoke-static {p1}, Lt3/e;->g(Ljava/lang/String;)V
-
     const/4 p1, 0x0
 
-    throw p1
+    return p1
+
+    :cond_1
+    :goto_0
+    const/4 p1, 0x1
+
+    return p1
+.end method
+
+.method public final hashCode()I
+    .locals 3
+
+    iget-object v0, p0, Lbe/n0;->a:Lae/m;
+
+    const/4 v1, 0x0
+
+    if-eqz v0, :cond_0
+
+    invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
+
+    move-result v0
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    :goto_0
+    mul-int/lit8 v0, v0, 0x1f
+
+    iget-object v2, p0, Lbe/n0;->b:Ljava/util/Set;
+
+    if-eqz v2, :cond_1
+
+    invoke-virtual {v2}, Ljava/lang/Object;->hashCode()I
+
+    move-result v1
+
+    :cond_1
+    add-int/2addr v0, v1
+
+    return v0
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 2
+
+    const-string v0, "ShopData(shopItems="
+
+    .line 1
+    invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    .line 2
+    iget-object v1, p0, Lbe/n0;->a:Lae/m;
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    const-string v1, ", donateInProgress="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    iget-object v1, p0, Lbe/n0;->b:Ljava/util/Set;
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    const-string v1, ")"
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
 .end method

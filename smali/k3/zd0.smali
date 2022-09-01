@@ -1,62 +1,57 @@
-.class public final Lk3/zd0;
+.class public final synthetic Lk3/zd0;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lk3/zc0;
+.implements Lk3/vj0;
 
 
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ljava/lang/Object;",
-        "Lk3/zc0<",
-        "Lorg/json/JSONObject;",
-        ">;"
-    }
-.end annotation
-
-
-# instance fields
-.field public a:Lorg/json/JSONObject;
+# static fields
+.field public static final a:Lk3/zd0;
 
 
 # direct methods
-.method public constructor <init>(Lorg/json/JSONObject;)V
+.method public static constructor <clinit>()V
+    .locals 1
+
+    new-instance v0, Lk3/zd0;
+
+    invoke-direct {v0}, Lk3/zd0;-><init>()V
+
+    sput-object v0, Lk3/zd0;->a:Lk3/zd0;
+
+    return-void
+.end method
+
+.method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 2
-    iput-object p1, p0, Lk3/zd0;->a:Lorg/json/JSONObject;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final b(Ljava/lang/Object;)V
+.method public final a(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 2
 
     .line 1
-    check-cast p1, Lorg/json/JSONObject;
+    check-cast p1, Ljava/lang/String;
 
-    :try_start_0
-    const-string v0, "cache_state"
+    if-nez p1, :cond_0
+
+    const/4 p1, 0x0
+
+    return-object p1
 
     .line 2
-    iget-object v1, p0, Lk3/zd0;->a:Lorg/json/JSONObject;
+    :cond_0
+    new-instance v0, Lk3/jc0;
 
-    invoke-virtual {p1, v0, v1}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
-    :try_end_0
-    .catch Lorg/json/JSONException; {:try_start_0 .. :try_end_0} :catch_0
+    const/4 v1, 0x1
 
-    return-void
+    invoke-direct {v0, p1, v1}, Lk3/jc0;-><init>(Ljava/lang/String;I)V
 
-    .line 3
-    :catch_0
-    invoke-static {}, Lk3/j6;->m()Z
-
-    return-void
+    return-object v0
 .end method

@@ -33,7 +33,7 @@
     iget-object p2, p1, Landroidx/fragment/app/j0$d;->a:Landroidx/fragment/app/j0$d$c;
 
     .line 3
-    sget-object v0, Landroidx/fragment/app/j0$d$c;->g:Landroidx/fragment/app/j0$d$c;
+    sget-object v0, Landroidx/fragment/app/j0$d$c;->h:Landroidx/fragment/app/j0$d$c;
 
     const/4 v1, 0x1
 
@@ -71,7 +71,7 @@
     iget-object p2, p1, Landroidx/fragment/app/j0$d;->c:Landroidx/fragment/app/Fragment;
 
     .line 9
-    iget-object p2, p2, Landroidx/fragment/app/Fragment;->P:Landroidx/fragment/app/Fragment$c;
+    iget-object p2, p2, Landroidx/fragment/app/Fragment;->Q:Landroidx/fragment/app/Fragment$c;
 
     goto :goto_1
 
@@ -80,7 +80,7 @@
     iget-object p2, p1, Landroidx/fragment/app/j0$d;->c:Landroidx/fragment/app/Fragment;
 
     .line 11
-    iget-object p2, p2, Landroidx/fragment/app/Fragment;->P:Landroidx/fragment/app/Fragment$c;
+    iget-object p2, p2, Landroidx/fragment/app/Fragment;->Q:Landroidx/fragment/app/Fragment$c;
 
     .line 12
     :goto_1

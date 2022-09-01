@@ -23,13 +23,13 @@
 
 
 # static fields
-.field public static final enum f:Lcom/supercell/websocket/proxy/protocol/common/IdSocialAccount$b;
-
 .field public static final enum g:Lcom/supercell/websocket/proxy/protocol/common/IdSocialAccount$b;
 
 .field public static final enum h:Lcom/supercell/websocket/proxy/protocol/common/IdSocialAccount$b;
 
-.field public static final synthetic i:[Lcom/supercell/websocket/proxy/protocol/common/IdSocialAccount$b;
+.field public static final enum i:Lcom/supercell/websocket/proxy/protocol/common/IdSocialAccount$b;
+
+.field public static final synthetic j:[Lcom/supercell/websocket/proxy/protocol/common/IdSocialAccount$b;
 
 
 # direct methods
@@ -45,7 +45,7 @@
 
     invoke-direct {v0, v1, v2}, Lcom/supercell/websocket/proxy/protocol/common/IdSocialAccount$b;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/supercell/websocket/proxy/protocol/common/IdSocialAccount$b;->f:Lcom/supercell/websocket/proxy/protocol/common/IdSocialAccount$b;
+    sput-object v0, Lcom/supercell/websocket/proxy/protocol/common/IdSocialAccount$b;->g:Lcom/supercell/websocket/proxy/protocol/common/IdSocialAccount$b;
 
     .line 2
     new-instance v1, Lcom/supercell/websocket/proxy/protocol/common/IdSocialAccount$b;
@@ -56,7 +56,7 @@
 
     invoke-direct {v1, v3, v4}, Lcom/supercell/websocket/proxy/protocol/common/IdSocialAccount$b;-><init>(Ljava/lang/String;I)V
 
-    sput-object v1, Lcom/supercell/websocket/proxy/protocol/common/IdSocialAccount$b;->g:Lcom/supercell/websocket/proxy/protocol/common/IdSocialAccount$b;
+    sput-object v1, Lcom/supercell/websocket/proxy/protocol/common/IdSocialAccount$b;->h:Lcom/supercell/websocket/proxy/protocol/common/IdSocialAccount$b;
 
     .line 3
     new-instance v3, Lcom/supercell/websocket/proxy/protocol/common/IdSocialAccount$b;
@@ -67,7 +67,7 @@
 
     invoke-direct {v3, v5, v6}, Lcom/supercell/websocket/proxy/protocol/common/IdSocialAccount$b;-><init>(Ljava/lang/String;I)V
 
-    sput-object v3, Lcom/supercell/websocket/proxy/protocol/common/IdSocialAccount$b;->h:Lcom/supercell/websocket/proxy/protocol/common/IdSocialAccount$b;
+    sput-object v3, Lcom/supercell/websocket/proxy/protocol/common/IdSocialAccount$b;->i:Lcom/supercell/websocket/proxy/protocol/common/IdSocialAccount$b;
 
     const/4 v5, 0x3
 
@@ -80,7 +80,7 @@
     aput-object v3, v5, v6
 
     .line 4
-    sput-object v5, Lcom/supercell/websocket/proxy/protocol/common/IdSocialAccount$b;->i:[Lcom/supercell/websocket/proxy/protocol/common/IdSocialAccount$b;
+    sput-object v5, Lcom/supercell/websocket/proxy/protocol/common/IdSocialAccount$b;->j:[Lcom/supercell/websocket/proxy/protocol/common/IdSocialAccount$b;
 
     return-void
 .end method
@@ -115,7 +115,7 @@
 .method public static values()[Lcom/supercell/websocket/proxy/protocol/common/IdSocialAccount$b;
     .locals 1
 
-    sget-object v0, Lcom/supercell/websocket/proxy/protocol/common/IdSocialAccount$b;->i:[Lcom/supercell/websocket/proxy/protocol/common/IdSocialAccount$b;
+    sget-object v0, Lcom/supercell/websocket/proxy/protocol/common/IdSocialAccount$b;->j:[Lcom/supercell/websocket/proxy/protocol/common/IdSocialAccount$b;
 
     invoke-virtual {v0}, [Lcom/supercell/websocket/proxy/protocol/common/IdSocialAccount$b;->clone()Ljava/lang/Object;
 

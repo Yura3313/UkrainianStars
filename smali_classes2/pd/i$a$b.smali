@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lpd/i$a;->n(Lae/c2$a;ILae/b2;)V
+    value = Lpd/i$a;->n(Lae/b2$a;ILae/a2;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field public final synthetic f:Lpd/i$a;
+.field public final synthetic g:Lpd/i$a;
 
 
 # direct methods
 .method public constructor <init>(Lpd/i$a;)V
     .locals 0
 
-    iput-object p1, p0, Lpd/i$a$b;->f:Lpd/i$a;
+    iput-object p1, p0, Lpd/i$a$b;->g:Lpd/i$a;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -38,13 +38,13 @@
     .locals 2
 
     .line 1
-    iget-object p1, p0, Lpd/i$a$b;->f:Lpd/i$a;
+    iget-object p1, p0, Lpd/i$a$b;->g:Lpd/i$a;
 
     .line 2
     iget-object p1, p1, Lae/s;->f:Landroidx/fragment/app/Fragment;
 
     .line 3
-    invoke-static {p1}, Lcom/android/billingclient/api/c0;->e(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
+    invoke-static {p1}, Lcom/android/billingclient/api/b0;->f(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
 
     move-result-object p1
 
@@ -54,7 +54,7 @@
 
     invoke-direct {v0}, Lcom/supercell/id/ui/invitefriends/InviteFriendsFragment$BackStackEntry;-><init>()V
 
-    sget-object v1, Lcom/supercell/id/ui/MainActivity;->s:Ljava/lang/ref/WeakReference;
+    sget-object v1, Lcom/supercell/id/ui/MainActivity;->t:Ljava/lang/ref/WeakReference;
 
     const/4 v1, 0x0
 

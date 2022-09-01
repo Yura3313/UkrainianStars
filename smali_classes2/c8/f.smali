@@ -34,7 +34,7 @@
 
     iget-object v1, p1, Lf8/h;->a:Ljava/util/Map;
 
-    invoke-static {v1}, Lmd/g;->b(Ljava/util/Map;)Ljava/util/Map;
+    invoke-static {v1}, Lae/v;->b(Ljava/util/Map;)Ljava/util/Map;
 
     move-result-object v1
 
@@ -118,7 +118,7 @@
     move-exception p1
 
     .line 6
-    sget-object v0, Ld8/b;->q:Ld8/b;
+    sget-object v0, Ld8/b;->r:Ld8/b;
 
     const/4 v1, 0x0
 
@@ -132,7 +132,7 @@
 
     .line 9
     :cond_0
-    invoke-static {v2}, Lcom/google/android/play/core/appupdate/g;->g(Ljava/lang/Iterable;)Ljava/lang/String;
+    invoke-static {v2}, La5/b0;->i(Ljava/lang/Iterable;)Ljava/lang/String;
 
     move-result-object v1
 

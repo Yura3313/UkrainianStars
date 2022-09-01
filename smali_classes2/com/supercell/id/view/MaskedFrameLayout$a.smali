@@ -22,21 +22,21 @@
         "Lre/p<",
         "Landroid/graphics/drawable/Drawable;",
         "Lud/g;",
-        "Lie/h;",
+        "Lie/i;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic f:Ljava/lang/ref/WeakReference;
+.field public final synthetic g:Ljava/lang/ref/WeakReference;
 
 
 # direct methods
 .method public constructor <init>(Ljava/lang/ref/WeakReference;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/view/MaskedFrameLayout$a;->f:Ljava/lang/ref/WeakReference;
+    iput-object p1, p0, Lcom/supercell/id/view/MaskedFrameLayout$a;->g:Ljava/lang/ref/WeakReference;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -56,14 +56,14 @@
     const-string v0, "drawable"
 
     .line 2
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "assetLocation"
 
-    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 3
-    iget-object p2, p0, Lcom/supercell/id/view/MaskedFrameLayout$a;->f:Ljava/lang/ref/WeakReference;
+    iget-object p2, p0, Lcom/supercell/id/view/MaskedFrameLayout$a;->g:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {p2}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
 
@@ -78,7 +78,7 @@
 
     .line 5
     :cond_0
-    sget-object p1, Lie/h;->a:Lie/h;
+    sget-object p1, Lie/i;->a:Lie/i;
 
     return-object p1
 .end method

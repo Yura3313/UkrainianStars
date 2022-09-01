@@ -62,7 +62,7 @@
     const-string v2, "Disconnecting web-socket"
 
     .line 4
-    invoke-static {v0, v2, v1, v1}, Landroidx/savedstate/d;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v0, v2, v1, v1}, Le5/i;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
 
     .line 5
     iget-object v2, p0, Ln8/m$a;->b:Ln8/m;
@@ -81,7 +81,7 @@
     const-string v3, "Exception in disconnecting web-socket"
 
     .line 6
-    invoke-static {v0, v3, v2}, Landroidx/savedstate/d;->g(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v0, v3, v2}, Le5/i;->i(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
     .line 7
     :goto_0

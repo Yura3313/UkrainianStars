@@ -15,14 +15,14 @@
 
 
 # instance fields
-.field public final synthetic f:Lac/c;
+.field public final synthetic g:Lac/c;
 
 
 # direct methods
 .method public constructor <init>(Lac/c;I)V
     .locals 0
 
-    iput-object p1, p0, Lac/c$a;->f:Lac/c;
+    iput-object p1, p0, Lac/c$a;->g:Lac/c;
 
     invoke-direct {p0, p2}, Ljava/io/ByteArrayOutputStream;-><init>(I)V
 
@@ -60,10 +60,10 @@
 
     const/4 v3, 0x0
 
-    iget-object v4, p0, Lac/c$a;->f:Lac/c;
+    iget-object v4, p0, Lac/c$a;->g:Lac/c;
 
     .line 3
-    iget-object v4, v4, Lac/c;->g:Ljava/nio/charset/Charset;
+    iget-object v4, v4, Lac/c;->h:Ljava/nio/charset/Charset;
 
     .line 4
     invoke-virtual {v4}, Ljava/nio/charset/Charset;->name()Ljava/lang/String;

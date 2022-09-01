@@ -94,7 +94,7 @@
     iput-object v0, p0, Landroidx/lifecycle/k;->c:Ljava/lang/ref/WeakReference;
 
     .line 8
-    sget-object p1, Landroidx/lifecycle/f$c;->g:Landroidx/lifecycle/f$c;
+    sget-object p1, Landroidx/lifecycle/f$c;->h:Landroidx/lifecycle/f$c;
 
     iput-object p1, p0, Landroidx/lifecycle/k;->b:Landroidx/lifecycle/f$c;
 
@@ -136,14 +136,14 @@
     .line 2
     iget-object v0, p0, Landroidx/lifecycle/k;->b:Landroidx/lifecycle/f$c;
 
-    sget-object v1, Landroidx/lifecycle/f$c;->f:Landroidx/lifecycle/f$c;
+    sget-object v1, Landroidx/lifecycle/f$c;->g:Landroidx/lifecycle/f$c;
 
     if-ne v0, v1, :cond_0
 
     goto :goto_0
 
     :cond_0
-    sget-object v1, Landroidx/lifecycle/f$c;->g:Landroidx/lifecycle/f$c;
+    sget-object v1, Landroidx/lifecycle/f$c;->h:Landroidx/lifecycle/f$c;
 
     .line 3
     :goto_0
@@ -331,7 +331,7 @@
     if-eqz v1, :cond_0
 
     .line 3
-    iget-object v0, v0, Li/a;->j:Ljava/util/HashMap;
+    iget-object v0, v0, Li/a;->k:Ljava/util/HashMap;
 
     invoke-virtual {v0, p1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -339,7 +339,7 @@
 
     check-cast p1, Li/b$c;
 
-    iget-object p1, p1, Li/b$c;->i:Li/b$c;
+    iget-object p1, p1, Li/b$c;->j:Li/b$c;
 
     goto :goto_0
 
@@ -350,7 +350,7 @@
     if-eqz p1, :cond_1
 
     .line 4
-    iget-object p1, p1, Li/b$c;->g:Ljava/lang/Object;
+    iget-object p1, p1, Li/b$c;->h:Ljava/lang/Object;
 
     .line 5
     check-cast p1, Landroidx/lifecycle/k$a;
@@ -438,7 +438,7 @@
     const-string v2, " must be called on the main thread"
 
     .line 4
-    invoke-static {v1, p1, v2}, Landroid/support/v4/media/f;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v1, p1, v2}, Landroid/support/v4/media/f;->b(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 
@@ -578,7 +578,7 @@
     iget-object v1, p0, Landroidx/lifecycle/k;->a:Li/a;
 
     .line 3
-    iget v2, v1, Li/b;->i:I
+    iget v2, v1, Li/b;->j:I
 
     const/4 v3, 0x1
 
@@ -590,10 +590,10 @@
 
     .line 4
     :cond_1
-    iget-object v2, v1, Li/b;->f:Li/b$c;
+    iget-object v2, v1, Li/b;->g:Li/b$c;
 
     .line 5
-    iget-object v2, v2, Li/b$c;->g:Ljava/lang/Object;
+    iget-object v2, v2, Li/b$c;->h:Ljava/lang/Object;
 
     .line 6
     check-cast v2, Landroidx/lifecycle/k$a;
@@ -601,10 +601,10 @@
     iget-object v2, v2, Landroidx/lifecycle/k$a;->a:Landroidx/lifecycle/f$c;
 
     .line 7
-    iget-object v5, v1, Li/b;->g:Li/b$c;
+    iget-object v5, v1, Li/b;->h:Li/b$c;
 
     .line 8
-    iget-object v5, v5, Li/b$c;->g:Ljava/lang/Object;
+    iget-object v5, v5, Li/b$c;->h:Ljava/lang/Object;
 
     .line 9
     check-cast v5, Landroidx/lifecycle/k$a;
@@ -633,10 +633,10 @@
     iget-object v2, p0, Landroidx/lifecycle/k;->b:Landroidx/lifecycle/f$c;
 
     .line 13
-    iget-object v1, v1, Li/b;->f:Li/b$c;
+    iget-object v1, v1, Li/b;->g:Li/b$c;
 
     .line 14
-    iget-object v1, v1, Li/b$c;->g:Ljava/lang/Object;
+    iget-object v1, v1, Li/b$c;->h:Ljava/lang/Object;
 
     .line 15
     check-cast v1, Landroidx/lifecycle/k$a;
@@ -655,14 +655,14 @@
     .line 17
     new-instance v2, Li/b$b;
 
-    iget-object v3, v1, Li/b;->g:Li/b$c;
+    iget-object v3, v1, Li/b;->h:Li/b$c;
 
-    iget-object v4, v1, Li/b;->f:Li/b$c;
+    iget-object v4, v1, Li/b;->g:Li/b$c;
 
     invoke-direct {v2, v3, v4}, Li/b$b;-><init>(Li/b$c;Li/b$c;)V
 
     .line 18
-    iget-object v1, v1, Li/b;->h:Ljava/util/WeakHashMap;
+    iget-object v1, v1, Li/b;->i:Ljava/util/WeakHashMap;
 
     sget-object v3, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
 
@@ -810,7 +810,7 @@
     iget-object v1, p0, Landroidx/lifecycle/k;->a:Li/a;
 
     .line 36
-    iget-object v1, v1, Li/b;->g:Li/b$c;
+    iget-object v1, v1, Li/b;->h:Li/b$c;
 
     .line 37
     iget-boolean v2, p0, Landroidx/lifecycle/k;->f:Z
@@ -822,7 +822,7 @@
     iget-object v2, p0, Landroidx/lifecycle/k;->b:Landroidx/lifecycle/f$c;
 
     .line 38
-    iget-object v1, v1, Li/b$c;->g:Ljava/lang/Object;
+    iget-object v1, v1, Li/b$c;->h:Ljava/lang/Object;
 
     .line 39
     check-cast v1, Landroidx/lifecycle/k$a;

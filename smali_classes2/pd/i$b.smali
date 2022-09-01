@@ -1,5 +1,5 @@
 .class public final Lpd/i$b;
-.super Lse/h;
+.super Lse/i;
 .source "FriendsFragment.kt"
 
 # interfaces
@@ -18,33 +18,33 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/l<",
         "Lae/m<",
         "+",
-        "Lvc/j;",
+        "Lvc/i;",
         "+",
         "Lcom/supercell/id/util/NormalizedError;",
         ">;",
-        "Lie/h;",
+        "Lie/i;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic f:Lpd/i;
+.field public final synthetic g:Lpd/i;
 
 
 # direct methods
 .method public constructor <init>(Lpd/i;)V
     .locals 0
 
-    iput-object p1, p0, Lpd/i$b;->f:Lpd/i;
+    iput-object p1, p0, Lpd/i$b;->g:Lpd/i;
 
     const/4 p1, 0x1
 
-    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -52,18 +52,32 @@
 
 # virtual methods
 .method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 10
+    .locals 11
 
     .line 1
     check-cast p1, Lae/m;
 
     .line 2
-    iget-object v0, p0, Lpd/i$b;->f:Lpd/i;
+    iget-object v0, p0, Lpd/i$b;->g:Lpd/i;
 
     .line 3
     instance-of v1, p1, Lae/m$a;
 
+    const/4 v2, 0x1
+
+    const/4 v3, 0x0
+
+    const/4 v4, 0x2
+
     if-eqz v1, :cond_8
+
+    sget-object v1, Lae/v2;->b:Lae/v2;
+
+    invoke-static {v1}, Lcom/android/billingclient/api/y;->c(Ljava/lang/Object;)Ljava/util/List;
+
+    move-result-object v1
+
+    iget-object v5, p0, Lpd/i$b;->g:Lpd/i;
 
     check-cast p1, Lae/m$a;
 
@@ -71,104 +85,104 @@
     iget-object p1, p1, Lae/m$a;->a:Ljava/lang/Object;
 
     .line 5
-    check-cast p1, Lvc/j;
+    check-cast p1, Lvc/i;
 
-    sget v1, Lpd/i;->f0:I
+    sget v6, Lpd/i;->g0:I
 
     .line 6
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-virtual {v5}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 7
-    iget-object v1, p1, Lvc/j;->a:Ljava/util/List;
+    iget-object v5, p1, Lvc/i;->a:Ljava/util/List;
 
     .line 8
-    new-instance v2, Ljava/util/ArrayList;
+    new-instance v6, Ljava/util/ArrayList;
 
-    const/16 v3, 0xa
+    const/16 v7, 0xa
 
-    invoke-static {v1, v3}, Lje/f;->q(Ljava/lang/Iterable;I)I
+    invoke-static {v5, v7}, Lje/f;->l(Ljava/lang/Iterable;I)I
 
-    move-result v4
+    move-result v8
 
-    invoke-direct {v2, v4}, Ljava/util/ArrayList;-><init>(I)V
+    invoke-direct {v6, v8}, Ljava/util/ArrayList;-><init>(I)V
 
     .line 9
-    invoke-interface {v1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+    invoke-interface {v5}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
-    move-result-object v1
+    move-result-object v5
 
     :goto_0
-    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
+    invoke-interface {v5}, Ljava/util/Iterator;->hasNext()Z
 
-    move-result v4
+    move-result v8
 
-    if-eqz v4, :cond_0
+    if-eqz v8, :cond_0
 
-    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    invoke-interface {v5}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
-    move-result-object v4
+    move-result-object v8
 
     .line 10
-    check-cast v4, Lvc/i;
+    check-cast v8, Lvc/h;
 
-    new-instance v5, Lpd/h;
+    new-instance v9, Lpd/h;
 
     .line 11
-    invoke-direct {v5, v4}, Lpd/h;-><init>(Lvc/i;)V
+    invoke-direct {v9, v8}, Lpd/h;-><init>(Lvc/h;)V
 
-    invoke-virtual {v2, v5}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v6, v9}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     goto :goto_0
 
     .line 12
     :cond_0
-    sget-object v1, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
+    sget-object v5, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
 
-    invoke-virtual {v1}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lae/u;
+    invoke-virtual {v5}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lae/u;
 
-    move-result-object v1
+    move-result-object v5
 
     .line 13
-    iget-object v1, v1, Lae/u;->j:Lcom/supercell/id/IdConfiguration;
+    iget-object v5, v5, Lae/u;->j:Lcom/supercell/id/IdConfiguration;
 
     .line 14
-    invoke-virtual {v1}, Lcom/supercell/id/IdConfiguration;->getCollator()Ljava/text/Collator;
+    invoke-virtual {v5}, Lcom/supercell/id/IdConfiguration;->getCollator()Ljava/text/Collator;
 
-    move-result-object v1
+    move-result-object v5
 
-    new-instance v4, Lpd/k;
+    new-instance v8, Lpd/k;
 
-    invoke-direct {v4, v1}, Lpd/k;-><init>(Ljava/util/Comparator;)V
+    invoke-direct {v8, v5}, Lpd/k;-><init>(Ljava/util/Comparator;)V
 
-    invoke-static {v2, v4}, Lje/j;->L(Ljava/lang/Iterable;Ljava/util/Comparator;)Ljava/util/List;
+    invoke-static {v6, v8}, Lje/j;->G(Ljava/lang/Iterable;Ljava/util/Comparator;)Ljava/util/List;
 
-    move-result-object v1
+    move-result-object v5
 
     .line 15
-    sget-object v2, Lpd/m;->f:Lpd/m;
+    sget-object v6, Lpd/m;->g:Lpd/m;
 
-    invoke-static {v1, v2}, Lje/j;->L(Ljava/lang/Iterable;Ljava/util/Comparator;)Ljava/util/List;
+    invoke-static {v5, v6}, Lje/j;->G(Ljava/lang/Iterable;Ljava/util/Comparator;)Ljava/util/List;
 
-    move-result-object v1
+    move-result-object v5
 
     .line 16
-    sget-object v2, Lpd/n;->f:Lpd/n;
+    sget-object v6, Lpd/n;->g:Lpd/n;
 
-    invoke-static {v1, v2}, Lje/j;->L(Ljava/lang/Iterable;Ljava/util/Comparator;)Ljava/util/List;
+    invoke-static {v5, v6}, Lje/j;->G(Ljava/lang/Iterable;Ljava/util/Comparator;)Ljava/util/List;
 
-    move-result-object v1
+    move-result-object v5
 
     .line 17
-    iget-object p1, p1, Lvc/j;->b:Ljava/util/List;
+    iget-object p1, p1, Lvc/i;->b:Ljava/util/List;
 
     .line 18
-    new-instance v2, Ljava/util/ArrayList;
+    new-instance v6, Ljava/util/ArrayList;
 
-    invoke-static {p1, v3}, Lje/f;->q(Ljava/lang/Iterable;I)I
+    invoke-static {p1, v7}, Lje/f;->l(Ljava/lang/Iterable;I)I
 
-    move-result v4
+    move-result v8
 
-    invoke-direct {v2, v4}, Ljava/util/ArrayList;-><init>(I)V
+    invoke-direct {v6, v8}, Ljava/util/ArrayList;-><init>(I)V
 
     .line 19
     invoke-interface {p1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
@@ -178,23 +192,23 @@
     :goto_1
     invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
 
-    move-result v4
+    move-result v8
 
-    if-eqz v4, :cond_1
+    if-eqz v8, :cond_1
 
     invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
-    move-result-object v4
+    move-result-object v8
 
     .line 20
-    check-cast v4, Lvc/i;
+    check-cast v8, Lvc/h;
 
-    new-instance v5, Lpd/h;
+    new-instance v9, Lpd/h;
 
     .line 21
-    invoke-direct {v5, v4}, Lpd/h;-><init>(Lvc/i;)V
+    invoke-direct {v9, v8}, Lpd/h;-><init>(Lvc/h;)V
 
-    invoke-virtual {v2, v5}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v6, v9}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     goto :goto_1
 
@@ -214,58 +228,52 @@
 
     move-result-object p1
 
-    new-instance v4, Lpd/l;
+    new-instance v8, Lpd/l;
 
-    invoke-direct {v4, p1}, Lpd/l;-><init>(Ljava/util/Comparator;)V
+    invoke-direct {v8, p1}, Lpd/l;-><init>(Ljava/util/Comparator;)V
 
-    invoke-static {v2, v4}, Lje/j;->L(Ljava/lang/Iterable;Ljava/util/Comparator;)Ljava/util/List;
+    invoke-static {v6, v8}, Lje/j;->G(Ljava/lang/Iterable;Ljava/util/Comparator;)Ljava/util/List;
 
     move-result-object p1
 
     .line 25
-    sget-object v2, Lpd/o;->f:Lpd/o;
+    sget-object v6, Lpd/o;->g:Lpd/o;
 
-    invoke-static {p1, v2}, Lje/j;->L(Ljava/lang/Iterable;Ljava/util/Comparator;)Ljava/util/List;
+    invoke-static {p1, v6}, Lje/j;->G(Ljava/lang/Iterable;Ljava/util/Comparator;)Ljava/util/List;
 
     move-result-object p1
 
-    const/4 v2, 0x2
-
-    new-array v4, v2, [Ljava/util/List;
+    new-array v6, v4, [Ljava/util/List;
 
     .line 26
-    invoke-interface {v1}, Ljava/util/Collection;->size()I
+    invoke-interface {v5}, Ljava/util/Collection;->size()I
 
-    move-result v5
+    move-result v8
 
-    if-lez v5, :cond_2
+    if-lez v8, :cond_2
 
     goto :goto_2
 
     :cond_2
-    sget-object v1, Lpd/a;->b:Lpd/a;
+    sget-object v5, Lpd/a;->b:Lpd/a;
 
-    invoke-static {v1}, Lcom/android/billingclient/api/z;->h(Ljava/lang/Object;)Ljava/util/List;
+    invoke-static {v5}, Lcom/android/billingclient/api/y;->c(Ljava/lang/Object;)Ljava/util/List;
 
-    move-result-object v1
+    move-result-object v5
 
     :goto_2
-    const/4 v5, 0x0
+    aput-object v5, v6, v3
 
-    aput-object v1, v4, v5
+    aput-object p1, v6, v2
 
-    const/4 v1, 0x1
-
-    aput-object p1, v4, v1
-
-    invoke-static {v4}, Lcom/android/billingclient/api/z;->k([Ljava/lang/Object;)Ljava/util/List;
+    invoke-static {v6}, Lcom/android/billingclient/api/y;->f([Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object p1
 
     .line 27
-    new-instance v4, Ljava/util/ArrayList;
+    new-instance v5, Ljava/util/ArrayList;
 
-    invoke-direct {v4}, Ljava/util/ArrayList;-><init>()V
+    invoke-direct {v5}, Ljava/util/ArrayList;-><init>()V
 
     .line 28
     check-cast p1, Ljava/util/ArrayList;
@@ -286,20 +294,20 @@
 
     move-result-object v6
 
-    move-object v7, v6
+    move-object v8, v6
 
-    check-cast v7, Ljava/util/List;
+    check-cast v8, Ljava/util/List;
 
     .line 29
-    invoke-interface {v7}, Ljava/util/Collection;->isEmpty()Z
+    invoke-interface {v8}, Ljava/util/Collection;->isEmpty()Z
 
-    move-result v7
+    move-result v8
 
-    xor-int/2addr v7, v1
+    xor-int/2addr v8, v2
 
-    if-eqz v7, :cond_3
+    if-eqz v8, :cond_3
 
-    invoke-virtual {v4, v6}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    invoke-virtual {v5, v6}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     goto :goto_3
 
@@ -307,144 +315,157 @@
     :cond_4
     new-instance p1, Ljava/util/ArrayList;
 
-    invoke-static {v4, v3}, Lje/f;->q(Ljava/lang/Iterable;I)I
+    invoke-static {v5, v7}, Lje/f;->l(Ljava/lang/Iterable;I)I
 
-    move-result v3
+    move-result v6
 
-    invoke-direct {p1, v3}, Ljava/util/ArrayList;-><init>(I)V
+    invoke-direct {p1, v6}, Ljava/util/ArrayList;-><init>(I)V
 
     .line 31
-    invoke-virtual {v4}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
+    invoke-virtual {v5}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
-    move-result-object v3
+    move-result-object v5
 
     :goto_4
-    invoke-interface {v3}, Ljava/util/Iterator;->hasNext()Z
+    invoke-interface {v5}, Ljava/util/Iterator;->hasNext()Z
 
-    move-result v4
+    move-result v6
 
-    if-eqz v4, :cond_7
+    if-eqz v6, :cond_7
 
-    invoke-interface {v3}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    invoke-interface {v5}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
-    move-result-object v4
+    move-result-object v6
 
     .line 32
-    check-cast v4, Ljava/util/List;
+    check-cast v6, Ljava/util/List;
 
     .line 33
-    sget-object v6, Lpd/r;->a:Lae/k;
+    sget-object v7, Lpd/r;->a:Lae/k;
 
     .line 34
-    invoke-static {v4}, Lje/j;->V(Ljava/lang/Iterable;)Ljava/lang/Iterable;
+    invoke-static {v6}, Lje/j;->Q(Ljava/lang/Iterable;)Ljava/lang/Iterable;
 
-    move-result-object v4
+    move-result-object v6
 
     .line 35
-    new-instance v6, Ljava/util/ArrayList;
+    new-instance v7, Ljava/util/ArrayList;
 
-    invoke-direct {v6}, Ljava/util/ArrayList;-><init>()V
+    invoke-direct {v7}, Ljava/util/ArrayList;-><init>()V
 
     .line 36
-    check-cast v4, Lje/q;
+    check-cast v6, Lje/q;
 
-    invoke-virtual {v4}, Lje/q;->iterator()Ljava/util/Iterator;
+    invoke-virtual {v6}, Lje/q;->iterator()Ljava/util/Iterator;
 
-    move-result-object v4
+    move-result-object v6
 
     :goto_5
-    move-object v7, v4
+    move-object v8, v6
 
-    check-cast v7, Lje/r;
+    check-cast v8, Lje/r;
 
-    invoke-virtual {v7}, Lje/r;->hasNext()Z
+    invoke-virtual {v8}, Lje/r;->hasNext()Z
 
-    move-result v8
+    move-result v9
 
-    if-eqz v8, :cond_6
+    if-eqz v9, :cond_6
 
-    invoke-virtual {v7}, Lje/r;->next()Ljava/lang/Object;
+    invoke-virtual {v8}, Lje/r;->next()Ljava/lang/Object;
 
-    move-result-object v7
+    move-result-object v8
 
     .line 37
-    check-cast v7, Lje/p;
+    check-cast v8, Lje/p;
 
     .line 38
-    iget v8, v7, Lje/p;->a:I
+    iget v9, v8, Lje/p;->a:I
 
-    if-nez v8, :cond_5
+    if-nez v9, :cond_5
 
     .line 39
-    iget-object v7, v7, Lje/p;->b:Ljava/lang/Object;
+    iget-object v8, v8, Lje/p;->b:Ljava/lang/Object;
 
     .line 40
-    invoke-static {v7}, Lcom/android/billingclient/api/z;->h(Ljava/lang/Object;)Ljava/util/List;
+    invoke-static {v8}, Lcom/android/billingclient/api/y;->c(Ljava/lang/Object;)Ljava/util/List;
 
-    move-result-object v7
+    move-result-object v8
 
     goto :goto_6
 
     :cond_5
-    new-array v8, v2, [Lae/b2;
+    new-array v9, v4, [Lae/a2;
 
-    sget-object v9, Lpd/r;->a:Lae/k;
+    sget-object v10, Lpd/r;->a:Lae/k;
 
-    aput-object v9, v8, v5
+    aput-object v10, v9, v3
 
     .line 41
-    iget-object v7, v7, Lje/p;->b:Ljava/lang/Object;
+    iget-object v8, v8, Lje/p;->b:Ljava/lang/Object;
 
     .line 42
-    check-cast v7, Lae/b2;
+    check-cast v8, Lae/a2;
 
-    aput-object v7, v8, v1
+    aput-object v8, v9, v2
 
-    invoke-static {v8}, Lcom/android/billingclient/api/z;->i([Ljava/lang/Object;)Ljava/util/List;
+    invoke-static {v9}, Lcom/android/billingclient/api/y;->d([Ljava/lang/Object;)Ljava/util/List;
 
-    move-result-object v7
+    move-result-object v8
 
     .line 43
     :goto_6
-    invoke-static {v6, v7}, Lje/h;->u(Ljava/util/Collection;Ljava/lang/Iterable;)Z
+    invoke-static {v7, v8}, Lje/h;->p(Ljava/util/Collection;Ljava/lang/Iterable;)Z
 
     goto :goto_5
 
     .line 44
     :cond_6
-    invoke-virtual {p1, v6}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    invoke-virtual {p1, v7}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     goto :goto_4
 
     .line 45
     :cond_7
-    sget-object v1, Lpd/a0;->b:Lpd/a0;
+    sget-object v2, Lpd/a0;->b:Lpd/a0;
 
-    invoke-static {p1, v1}, Lae/y1;->b(Ljava/util/List;Ljava/lang/Object;)Ljava/util/List;
+    invoke-static {p1, v2}, Lae/y1;->b(Ljava/util/List;Ljava/lang/Object;)Ljava/util/List;
+
+    move-result-object p1
+
+    .line 46
+    invoke-static {v1, p1}, Lje/j;->D(Ljava/util/Collection;Ljava/lang/Iterable;)Ljava/util/List;
 
     move-result-object p1
 
     goto :goto_7
 
-    .line 46
+    .line 47
     :cond_8
     instance-of v1, p1, Lae/m$b;
 
     if-eqz v1, :cond_9
 
-    new-instance v1, Lae/q;
+    new-array v1, v4, [Lae/a2;
+
+    sget-object v4, Lae/v2;->b:Lae/v2;
+
+    aput-object v4, v1, v3
+
+    new-instance v3, Lae/q;
 
     check-cast p1, Lae/m$b;
 
-    .line 47
+    .line 48
     iget-object p1, p1, Lae/m$b;->a:Ljava/lang/Object;
 
-    .line 48
+    .line 49
     check-cast p1, Lcom/supercell/id/util/NormalizedError;
 
-    invoke-direct {v1, p1}, Lae/q;-><init>(Lcom/supercell/id/util/NormalizedError;)V
+    invoke-direct {v3, p1}, Lae/q;-><init>(Lcom/supercell/id/util/NormalizedError;)V
 
-    invoke-static {v1}, Lcom/android/billingclient/api/z;->h(Ljava/lang/Object;)Ljava/util/List;
+    aput-object v3, v1, v2
+
+    invoke-static {v1}, Lcom/android/billingclient/api/y;->d([Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object p1
 
@@ -453,15 +474,15 @@
     :cond_9
     const/4 p1, 0x0
 
-    .line 49
-    :goto_7
-    sget v1, Lpd/i;->f0:I
-
     .line 50
-    invoke-virtual {v0, p1}, Lpd/i;->U0(Ljava/util/List;)V
+    :goto_7
+    sget v1, Lpd/i;->g0:I
 
     .line 51
-    sget-object p1, Lie/h;->a:Lie/h;
+    invoke-virtual {v0, p1}, Lpd/i;->U0(Ljava/util/List;)V
+
+    .line 52
+    sget-object p1, Lie/i;->a:Lie/i;
 
     return-object p1
 .end method

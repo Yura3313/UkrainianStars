@@ -19,7 +19,7 @@
 
 
 # instance fields
-.field public final f:J
+.field public final g:J
 
 
 # direct methods
@@ -42,17 +42,17 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-wide p1, p0, Lcom/google/android/material/datepicker/DateValidatorPointBackward;->f:J
+    iput-wide p1, p0, Lcom/google/android/material/datepicker/DateValidatorPointBackward;->g:J
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final K1(J)Z
+.method public final J1(J)Z
     .locals 3
 
-    iget-wide v0, p0, Lcom/google/android/material/datepicker/DateValidatorPointBackward;->f:J
+    iget-wide v0, p0, Lcom/google/android/material/datepicker/DateValidatorPointBackward;->g:J
 
     cmp-long v2, p1, v0
 
@@ -101,9 +101,9 @@
     check-cast p1, Lcom/google/android/material/datepicker/DateValidatorPointBackward;
 
     .line 3
-    iget-wide v3, p0, Lcom/google/android/material/datepicker/DateValidatorPointBackward;->f:J
+    iget-wide v3, p0, Lcom/google/android/material/datepicker/DateValidatorPointBackward;->g:J
 
-    iget-wide v5, p1, Lcom/google/android/material/datepicker/DateValidatorPointBackward;->f:J
+    iget-wide v5, p1, Lcom/google/android/material/datepicker/DateValidatorPointBackward;->g:J
 
     cmp-long p1, v3, v5
 
@@ -126,7 +126,7 @@
     new-array v0, v0, [Ljava/lang/Object;
 
     .line 1
-    iget-wide v1, p0, Lcom/google/android/material/datepicker/DateValidatorPointBackward;->f:J
+    iget-wide v1, p0, Lcom/google/android/material/datepicker/DateValidatorPointBackward;->g:J
 
     invoke-static {v1, v2}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
@@ -147,7 +147,7 @@
 .method public final writeToParcel(Landroid/os/Parcel;I)V
     .locals 2
 
-    iget-wide v0, p0, Lcom/google/android/material/datepicker/DateValidatorPointBackward;->f:J
+    iget-wide v0, p0, Lcom/google/android/material/datepicker/DateValidatorPointBackward;->g:J
 
     invoke-virtual {p1, v0, v1}, Landroid/os/Parcel;->writeLong(J)V
 

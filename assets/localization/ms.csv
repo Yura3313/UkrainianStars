@@ -31,7 +31,7 @@ TID_QUEST_DESC_1_BIG_GAME,MENANG <AMOUNT> PERTEMPURAN
 TID_QUEST_DESC_1_BIG_GAME_SINGLE,MENANG <AMOUNT> PERTEMPURAN
 TID_QUEST_HERO_CONDITION,\nDENGAN <HERO>
 TID_QUEST_MODE_CONDITION,\nDALAM <MODE>
-TID_QUEST_PLAYAGAIN_CONDITION,\nDENGAN RAKAN PASUKAN
+TID_QUEST_PLAYAGAIN_CONDITION,\nBERSAMA RAKAN SEPASUKAN
 TID_QUEST_NEW,BAHARU
 TID_QUEST_PREMIUM,EKSKLUSIF UNTUK BRAWL PASS
 TID_RANK_POPUP_QUESTS,MISI
@@ -1625,7 +1625,7 @@ TID_BARREL_BOT_WEAPON_DESC,Senapang patah berlaras dua milik Darryl ini melepask
 TID_BARREL_BOT_ULTI,HIMPITAN TONG
 TID_BARREL_BOT_ULTI_DESC,"Darryl guling ke depan dalam tongnya, menolak musuh ke belakang, mengurangkan kerosakan yang mara dan melantun dari dinding. Supernya akan mengecas semula apabila masa berlalu!"
 TID_ARTILLERY_DUDE,PENNY
-TID_ARTILLERY_DUDE_DESC,"Pemberontak tanpa matlamat, Penny yang nakal menguasai \qlaut lepas\q. Dia pengembara yang penuh ancaman dan tidak akan berhenti merompak."
+TID_ARTILLERY_DUDE_DESC,"Pemberontak tanpa matlamat, Penny yang nakal menguasai \qlaut lepas.\q Dia pengembara yang penuh ancaman dan tidak akan berhenti merompak."
 TID_ARTILLERY_DUDE_WEAPON,PEMURAS
 TID_ARTILLERY_DUDE_WEAPON_DESC,Menembak sekantung emas tiruan. Kantung itu akan pecah jika terkena musuh dan syiling akan terpelanting terkena target di belakang musuh pertama.
 TID_ARTILLERY_DUDE_ULTI,BEDILAN BERTERUSAN
@@ -1792,7 +1792,7 @@ TID_HINT_1,Anda boleh KETIK <cff9900>kawalan kuning</c> untuk tembak pantas Supe
 TID_HINT_2,Anda boleh SERET <ccc0033>kawalan merah</c> untuk MENYASARKAN tembakan anda.
 TID_HINT_3,Anda boleh SERET <cff9900>kawalan kuning</c> untuk MENYASARKAN Super anda.
 TID_HINT_4,Anda boleh batalkan tembakan yang telah disasarkan dengan menyeret kawan kembali ke tengah.
-TID_HINT_5,"Pemadanan adalah berdasarkan trofi brawler yang anda main, memudahkan untuk mendapat trofi dengan Brawler yang baru dibuka."
+TID_HINT_5,Pemadanan adalah berdasarkan trofi brawler yang anda main. Ini memudahkan anda mendapat trofi dengan brawler yang baru dibuka.
 TID_HINT_6,Mendapat lebih Brawler membuatkannya lebih mudah untuk maju dalam jumlah trofi dan mendapat lebih ganjaran.
 TID_HINT_7,"Semakin jauh tembakan Piper, semakin tinggi kerosakan ditimbul."
 TID_HINT_8,Super Barley terutamanya kuat pada julat dekat sebab botol-botol akan mendarat di dalam satu kawasan kecil.
@@ -1808,7 +1808,7 @@ TID_HINT_17,Menyasarkan tembakan anda adalah bagus bagi menembak ke dalam semak 
 TID_HINT_18,TEMBAKAN BERTURUT-TURUT berguna ke atas musuh yang tidak bergerak.
 TID_HINT_19,TEMBAKAN BERTURUT-TURUT berguna ke atas musuh yang bergerak terus ke arah atau jauhi anda.
 TID_HINT_20,"Apabila anda berada di dalam semak, musuh boleh nampak anda jika anda menyerang atau menerima kerosakan."
-TID_HINT_21,Anda boleh guna semak untuk menyembunyikan diri dari musuh.
+TID_HINT_21,Anda boleh menyembunyikan diri daripada musuh dan menyembuhkan diri di dalam semak.
 TID_HINT_22,"Apabila anda guna TEMBAKAN BERTURUT-TURUT, ia akan menembak walaupun tiada musuh berada di dalam julat."
 TID_VS_TUTORIAL,Kumpul semua <c50d050>KIUB KUASA</c>!
 TID_USE_MANUAL_FIRE_TUTORIAL,SERET <ccc0033>kawalan merah</c> untuk menyasar!
@@ -1863,7 +1863,7 @@ TID_GATCHA_AD_CONTINUE_BUTTON_TITLE,TERUSKAN
 TID_AD_DOUBLER_TITLE,PILIH GANJARAN UNTUK DIGANDAKAN
 TID_AD_DOUBLER_CONTINUE,TERUSKAN
 TID_GATCHA_CONTINUE,SETERUSNYA
-TID_HINT_23,Sesetengah Brawler lebih baik dalam sesetengah peta dan acara berbanding yang lain.
+TID_HINT_23,Sesetengah brawler lebih sesuai dalam sesetengah peta dan acara berbanding yang lain.
 TID_HINT_24,Brawler berjulat jauh secara umumnya adalah lebih baik dalam peta terbuka.
 TID_HINT_25,Brawler berjulat dekat secara umumnya adalah lebih baik dalam peta dengan lebih pengadang dan semak.
 TID_SPEC_ABI_SELF_DESTRUCT,TEMBAKAN TERAKHIR
@@ -1964,9 +1964,9 @@ TID_ADD_FRIEND_ERROR_OWN_AVATAR,Tidak boleh menjemput diri sendiri sebagai rakan
 TID_ADD_FRIEND_ERROR_TOO_MANY_FRIENDS_OTHER,Rakan anda mempunyai terlalu ramai rakan. Sila cuba lagi kemudian.
 TID_ADD_FRIEND_ERROR_TOO_MANY_FRIENDS_YOU,Anda mempunyai terlalu ramai rakan. Keluarkan seorang jika anda ingin menambah rakan baharu.
 TID_HINT_26,Penny boleh lakukan banyak kerosakan dengan serangan percikannya jika targetnya berkumpul.
-TID_HINT_27,Mendapatkan pasukan bersama sebelum perlawanan membolehkan anda merancang sebelum perlawanan dan memilih gabungan Brawler yang baik.
+TID_HINT_27,Membentuk pasukan sebelum perlawanan membolehkan anda merancang sebelum perlawanan dan memilih gabungan brawler yang baik.
 TID_HINT_28,"Cuba bermain pertempuran persahabatan untuk berlatih acara, anjurkan pertandingan persahabatan dan banyak lagi!"
-TID_HINT_29,"Selepas permainan yang baik dengan rakan sepasukan baharu, anda boleh tekan butang ‘Sekali Lagi´ untuk main satu lagi perlawanan bersama mereka!"
+TID_HINT_29,"Selepas permainan yang bagus dengan rakan sepasukan baharu, anda boleh tekan butang ‘Sekali Lagi´ untuk main satu lagi perlawanan bersama mereka!"
 TID_HINT_30,"Di pertempuran persahabatan, anda boleh memilih sebarang acara dan peta. Brawler juga akan dinaik taraf sepenuhnya!"
 TID_HINT_31,"Frank berhenti untuk melakukan serangan dan Supernya, memberi peluang kepada pihak lawannya untuk keluar dari julatnya."
 TID_EXPERIENCE,MATA PENGALAMAN (XP)
@@ -2077,13 +2077,13 @@ TID_PLAYER_MAP_PROPS,Peta pemain daripada:\n<cff8000><CREDIT></c>
 TID_PLAYER_MAP_WINNER_SLOT_PROPS,PEMENANG HARI INI!\n\nKonsep oleh:\n<cff8000><CREDIT></c>
 TID_BATTLE_ROYALE_12,Labirin Panas
 TID_TEAM_INVITE_ALREADY_IN_TEAM,Pemain sudah berada dalam pasukan!
-TID_HINT_38,Bulatan biru berputar di bawah Brawler bermaksud Super mereka sudah bersedia!
+TID_HINT_38,Bulatan berputar di bawah brawler bermaksud Super mereka sudah bersedia!
 TID_HINT_39,Bulatan kuning berputar di bawah Brawler bermaksud mereka sedang menyasarkan Super mereka!
 TID_EVENT_NOT_AVAILABLE,Tiada Acara
 TID_SHOP_OFFER_PURCHASE_AD_NOT_AVAILABLE,Tiada video tersedia. Semak kembali kemudian!
 TID_SHOP_NOT_AVAILABLE,tidak tersedia
 TID_UNDERTAKER_GREASER_SKIN_SHOP,ROCKABILLY\nMORTIS
-TID_HINT_40,Sambung ke Supercell ID dari skrin tetapan untuk memastikan akaun anda selamat dan dimainkan pada berbilang peranti. Anda juga mendapat kulit percuma dengan melakukan ini!
+TID_HINT_40,Sambung kepada Supercell ID dari skrin tetapan untuk memastikan akaun anda selamat dan boleh dimainkan pada berbilang peranti. Anda juga mendapat kulit percuma dengan berbuat demikian!
 TID_GACHA_VIDEO_REWARD_RECEIVED,Ganjaran ekstra ditambah!
 TID_BUTTON_NAVI_SHOP,KEDAI
 TID_BUTTON_NAVI_SOCIAL,SOSIAL
@@ -2099,7 +2099,7 @@ TID_EVENT_MODIFIER_DESC_5,Cendawan penyembuhan muncul secara rawak! Mereka akan 
 TID_EVENT_MODIFIER_DESC_5_SD,Cendawan penyembuhan muncul secara rawak! Berkumpul rapat bersama rakan anda akan menghalang cendawan membesar.
 TID_NINJA,LEON
 TID_ROSA,ROSA
-TID_HINT_42,Brawler anda mula memulih apabila tidak diserang atau mengalami kerosakan untuk seketika.
+TID_HINT_42,Brawler anda mula memulih selepas seketika apabila tidak diserang atau mengalami kerosakan.
 TID_HOOK_SHORT_DESC,SOKONGAN
 TID_HOOK_DESC,Gene menggunakan lampu saktinya untuk menembak peluru pemisah. Supernya ialah tangan ajaib yang meragut dan menarik musuh ke arahnya!
 TID_SPEC_ABI_HOOK,PAF SAKTI
@@ -2762,7 +2762,7 @@ TID_SPEC_SHIELD_ULTI_DESC,"Apabila Super Brock dicas penuh (dan tidak digunakan)
 TID_SPEC_ABI_PET,BEBASKAN BURUNG
 TID_SPEC_ABI_PET_DESC,Burung Dynamike menyertai perjuangan!
 TID_SPEC_ABI_DAMAGE_ULTI,TAMPARAN ROH
-TID_SPEC_ABI_DAMAGE_ULTI_DESC,"Apabila Super Gene dicas penuh, serangannya akan lakukan <c00cc00>+<VALUE1></c> kerosakan."
+TID_SPEC_ABI_DAMAGE_ULTI_DESC,"Apabila Super Gene dicas penuh, serangannya akan melakukan <c00cc00>+<VALUE1></c> kerosakan."
 TID_ARCADE,8-BIT
 TID_ARCADE_DESC,8-Bit berjalan dengan hentakkan kuat seperti arked berkaki. Dia tembak Pancaran Peletus dan Supernya menambah kerosakan Brawler diri dan rakan!
 TID_ARCADE_SHORT_DESC,PEROSAK
@@ -3361,7 +3361,7 @@ TID_SPEC_ABI_DRILLER_1_DESC,"Apabila menerima kerosakan, Jacky membalas serangan
 TID_SPEC_ABI_DRILLER_2,TOPI TAHAN LASAK
 TID_SPEC_ABI_DRILLER_2_DESC,Topi tahan lasak Jacky melindunginya dengan mengurangkan sebarang kerosakan yang diterimanya sebanyak <c00cc00><VALUE1>%</c>.
 TID_ACCESSORY_GROW_BUSH_DESC,Rosa menyuburkan tanah di sekelilingnya dan semak tumbuh serta-merta untuk memberi perlindungan.
-TID_ACCESSORY_CROW_SHIELD_DESC,Crow terlindung sebanyak <c00cc00><VALUE1>%</c> terhadap kerosakan yang mara selama <c00cc00><VALUE2></c> saat.
+TID_ACCESSORY_CROW_SHIELD_DESC,Crow terlindung sebanyak <c00cc00><VALUE1>%</c> terhadap kerosakan mendatang selama <c00cc00><VALUE2></c> saat.
 TID_ACCESSORY_WALLY_HEAL_DESC,Sprout makan semak untuk memulihkan <c00cc00><VALUE1></c> nilai nyawa.
 TID_ACCESSORY_ROCKET_JUMP_DESC,Brock menghancurkan tanah di bawahnya dan melancar ke langit. Letupan itu melakukan <c00cc00><VALUE1></c> kerosakan kepada musuh berdekatan.
 TID_ACCESSORY_RICO_SHOOT_AROUND_DESC,Rico melancarkan gelombang peluru melantun dalam semua arah.
@@ -3388,7 +3388,7 @@ TID_ACCESSORY_TARA_VISION_DESC,Tara dan sekutunya dapat melihat semua musuh bahk
 TID_ACCESSORY_POCO_REGEN_DESC,Poco dan semua sekutu berdekatan memulihkan <c00cc00><VALUE1></c> nilai nyawa setiap saat selama <c00cc00><VALUE2></c> saat.
 TID_ACCESSORY_SNIPER_HANDGUN_DESC,Piper melepaskan tembakan yang melakukan <c00cc00><VALUE2></c> kerosakan ke musuh terdekat yang akan juga menolak musuh ke belakang dan memperlahankan mereka.
 TID_ACCESSORY_SPAWNER_DUDE_PROMOTE_DESC,Mr. P menguatkan porter semasa dengan meningkatkan kerosakannya sebanyak <c00cc00><VALUE1></c> dan nilai nyawa sebanyak <c00cc00><VALUE2></c>.
-TID_ACCESSORY_SANDY_SLEEP_DESC,Sandy masuk tidur selama <c00cc00><VALUE1></c> saat dan nilai nyawanya pulih sepenuhnya.
+TID_ACCESSORY_SANDY_SLEEP_DESC,Sandy tertidur selama <c00cc00><VALUE1></c> saat dan nilai nyawanya pulih sepenuhnya.
 TID_ACCESSORY_BEE_SNIPER_SLOW_DESC,Bea menjatuhkan sarang lebah dengan percikan madu melekit di sekelilingnya. Madu itu memperlahankan musuh yang terpijak padanya.
 TID_ACCESSORY_BULL_HEAL_DESC,Bull segera meremajakan dirinya sebanyak <c00cc00><VALUE1></c> nilai nyawa.
 TID_ACCESSORY_GUNSLINGER_RELOAD_DESC,Colt segera memuat semula <c00cc00><VALUE1></c> peluru.
@@ -4484,9 +4484,9 @@ TID_EMOTE_BUNDLE_BRALWMAS_PACK,PIN CUTI BRAWLER
 TID_MAP_EDITOR_LEGAL_WARNING_TITLE,Notis penting
 TID_MAP_EDITOR_LEGAL_WARNING_DESC,"Terima kasih kerana menggunakan ciri pembuat peta. Sila mematuhi Lesen dan Perjanjian Khidmat Tencent Games dan peraturan lain yang berkaitan ketika menggunakan ciri pembuat peta. Jangan membuat atau menyebarkan kandungan tidak wajar yang bersifat erotik, lucah atau membahayakan perpaduan nasional, kedaulatan, dan keutuhan wilayah, atau melanggar undang-undang dan peraturan lain."
 TID_MAP_EDITOR_LEGAL_WARNING_DESC_YOOZOO,"Terima kasih kerana menggunakan ciri pembuat peta. Sila mematuhi Perjanjian Pengguna dan peraturan lain yang berkaitan ketika menggunakan ciri pembuat peta. Jangan membuat atau menyebarkan kandungan yang tidak wajar yang bersifat erotik, lucah atau membahayakan perpaduan nasional, kedaulatan, dan keutuhan wilayah, atau melanggar undang-undang dan peraturan lain."
-TID_RUFFS,COLONEL\nRUFFS
+TID_RUFFS,RUFFS
 TID_RUFFS_SHORT_DESC,SOKONGAN
-TID_RUFFS_DESC,Ruff menembak laser berganda yang melantun dari dinding. Supernya merupakan bekalan bantuan yang boleh merosakkan lawan dalam zon pendaratan dan meninggalkan item peningkatan kuasa untuk rakan sepasukan.
+TID_RUFFS_DESC,"Colonel Ruffs memekikkan perintah kepada orang bawahannya tetapi dia sebenarnya sangat baik! Ruffs serius dan tenang, dia menyembunyikan sifat anjingnya kecuali apabila ada permainan mengutip!"
 TID_RUFFS_WEAPON,LASER DWILARAS
 TID_RUFFS_WEAPON_DESC,Laser berganda Ruffs melantun dari dinding berbilang kali dan boleh mengenai lawan yang berada di sebalik penghalang.
 TID_RUFFS_ULTI,BEKALAN BANTUAN
@@ -4947,7 +4947,7 @@ TID_SPEC_ABI_ASSAULT_SHOTGUN_1_DESC,"Griff yang berang membaling syiling lebih c
 TID_SPEC_ABI_ASSAULT_SHOTGUN_2,PULANGAN HASIL
 TID_SPEC_ABI_ASSAULT_SHOTGUN_2_DESC,"Setiap <c00cc00><VALUE2></c> saat, Griff mendapat semula sehingga <c00cc00><VALUE1>%</c> nilai nyawanya yang hilang."
 TID_ACCESSORY_ASSAULT_SHOTGUN_BOMB,TABUNG
-TID_ACCESSORY_ASSAULT_SHOTGUN_BOMB_DESC,Griff menjatuhkan tabung yang penuh dengan mercun. Tabung akan meletup selepas sejenak untuk memusnahkan halangan dan menyebabkan <c00cc00><VALUE1></c> kerosakan pada pihak lawan dalam julat.
+TID_ACCESSORY_ASSAULT_SHOTGUN_BOMB_DESC,"Griff menjatuhkan tabung dipenuhi mercun. Tabung akan meletup selepas sejenak, memusnahkan halangan dan menyebabkan <c00cc00><VALUE1></c> kerosakan ke atas pihak lawan dalam julat."
 TID_KNIGHT,ASH
 TID_KNIGHT_SHORT_DESC,TANK
 TID_KNIGHT_DESC,"Ash mudah naik radang melihat sisa yang perlu dibersihkan. Lebih-lebih lagi apabila dia perlu menahan dan menyerap serangan. Keradangan ini membuat dia lebih pantas dan bahaya, tapi akhirnya, dia akan bertenang juga."
@@ -4975,7 +4975,7 @@ TID_MECHA_DUDE_BIG_ULTI_DESC,Robot akan mengayunkan lengan bawah kuat yang akan 
 TID_SPEC_ABI_MECHA_DUDE_1,MEDAN KUASA
 TID_SPEC_ABI_MECHA_DUDE_1_DESC,Meg dilindungi <c00cc00><VALUE1>%</c> pelindung selama <c00cc00><VALUE2></c> saat apabila robotnya dimusnahkan.
 TID_SPEC_ABI_MECHA_DUDE_2,LOGAM BERAT
-TID_SPEC_ABI_MECHA_DUDE_2_DESC,"Apabila tamat tempohnya, robot akan meletup dan melakukan <c00cc00><VALUE1></c> kerosakan ke atas pihak lawan berdekatan dan menolak mereka."
+TID_SPEC_ABI_MECHA_DUDE_2_DESC,"Apabila tamat tempoh, robot akan meletup dan melakukan <c00cc00><VALUE1></c> kerosakan ke atas pihak lawan berdekatan dan menolak mereka."
 TID_ACCESSORY_MECHA_DUDE_HEAL,TENAGA MENGEGAR
 TID_ACCESSORY_MECHA_DUDE_HEAL_DESC,Pulihkan robot sebanyak <c00cc00><VALUE1></c> nilai nyawa setiap saat selama <c00cc00><VALUE2></c> saat.
 TID_FLAMENGO_MIKE_SKIN,MIKE FLAMENGO
@@ -5791,13 +5791,13 @@ TID_TEAM_REQUEST_INVITE_FAIL_NOT_ENOUGH_TICKETS_YOU,Tidak dapat jemput. Anda tid
 TID_TEAM_REQUEST_INVITE_FAIL_NOT_ENOUGH_TICKETS_PLAYER,Tidak dapat jemput. Pemain tidak mempunyai Tiket Kelab yang cukup!
 TID_KICKER_DUDE,FANG
 TID_KICKER_DUDE_SHORT_DESC,PEROSAK
-TID_KICKER_DUDE_DESC,Fang tendang dahulu dan dia tendang dengan laju. Serangan utamanya ialah tendangan kuat yang menerbangkan kasutnya! Super Fang ialah tendangan berkuasa yang akan melakukan serangan berantai terhadap banyak musuh yang rapat.
+TID_KICKER_DUDE_DESC,Fang memiliki tendangan maut selaju kilat. Serangan utamanya ialah tendangan kuat yang menerbangkan kasutnya! Super Fang ialah tendangan berkuasa yang akan melakukan serangan berantai terhadap banyak musuh yang rapat.
 TID_KICKER_DUDE_WEAPON,KUNG FU KASUT
 TID_KICKER_DUDE_WEAPON_DESC,"Fang melakukan tendangan pantas dengan teknik tersembunyi. Jika tendangan tidak kena sasaran, kasut akan tertanggal dari kakinya!"
 TID_KICKER_DUDE_ULTI,SELINAP KE DEPAN
-TID_KICKER_DUDE_ULTI_DESC,Fang terbang lalu melakukan tendangan bahaya yang boleh merantai 3 lagi tendangan berturut-turut kepada musuh berdekatan apabila terkena.
+TID_KICKER_DUDE_ULTI_DESC,Fang terbang lalu melakukan tendangan bahaya yang boleh merantai 3 lagi tendangan berturut-turut ke atas musuh berdekatan apabila terkena.
 TID_SPEC_ABI_KICKER_DUDE_1,TENDANGAN SEGAR
-TID_SPEC_ABI_KICKER_DUDE_1_DESC,"Apabila Fang mengalahkan brawler musuh dengan Super, ia dicas semula serta-merta. Ini membolehkan dia menggunakan Super sekali lagi!"
+TID_SPEC_ABI_KICKER_DUDE_1_DESC,"Apabila Fang mengalahkan brawler musuh dengan Super, ia segera dicas semula, membolehkan dia menggunakan Super sekali lagi!"
 TID_SPEC_ABI_KICKER_DUDE_2,TAPAK KETUHANAN
 TID_SPEC_ABI_KICKER_DUDE_2_DESC,Kurangkan <c00cc00><VALUE2></c> kerosakan daripada serangan yang mara sekali setiap <c00cc00><VALUE1></c> saat. Pengurangan maksimum ialah <c00cc00><VALUE3>%</c> daripada kerosakan yang mara.
 TID_ACCESSORY_KICKER_DUDE_GADGET,KUNG FU JAGUNG
@@ -6168,7 +6168,7 @@ TID_CANNON_GIRL_DESC,"Bonnie dan meriamnya, \qClyde\q yang tidak bergerak selalu
 TID_CANNON_GIRL_WEAPON,GIGI GOYAH
 TID_CANNON_GIRL_WEAPON_DESC,Bonnie menembak gigi BESAR daripada Clyde ke arah musuh.
 TID_CANNON_GIRL_ULTI,PELANCAR BINTANG
-TID_CANNON_GIRL_ULTI_DESC,Clyde melancarkan Bonnie ke udara. Dia boleh melepasi halangan dan melakukan kerosakan terhadap musuh berdekatan semasa mendarat.
+TID_CANNON_GIRL_ULTI_DESC,Clyde melancarkan Bonnie ke udara. Dia boleh melepasi halangan dan melakukan kerosakan ke atas musuh berdekatan semasa mendarat.
 TID_CANNON_GIRL_SMALL_WEAPON,JAKET PENGEBOM
 TID_CANNON_GIRL_SMALL_WEAPON_DESC,Bonnie melempar sekelompok grenad kecil daripada lengan bajunya.
 TID_CANNON_GIRL_SMALL_ULTI,CLYDE
@@ -6275,7 +6275,7 @@ TID_PRE_PICK,PILIH DAHULU
 TID_CANCEL,BATAL
 TID_WANTS_TO_PLAY,INGIN BERMAIN
 TID_WANT_TO_PLAY,INGIN BERMAIN
-TID_WANTS_TO_PLAY_MULTIPLE_TEAMMATES,<num> RAKAN PASUKAN
+TID_WANTS_TO_PLAY_MULTIPLE_TEAMMATES,<num> RAKAN SEPASUKAN
 TID_BRAWL_PASS_SEASON_11,PERTUNJUKAN LAGAK NGERI
 TID_SHOP_STUNTSHOW_SKINS,Kulit pertunjukan lagak ngeri
 TID_SHOP_STUNTSHOW_TITLE,PERTUNJUKAN LAGAK NGERI
@@ -6341,11 +6341,11 @@ TID_ACCESSORY_DRILLER_REBUILD_DESC,Jacky membina semula persekitaran dalam radiu
 TID_ACCESSORY_ASSAULT_SHOTGUN_PROJECTILES,HUJAN SYILING
 TID_ACCESSORY_ASSAULT_SHOTGUN_PROJECTILES_DESC,Lambung Syiling Griff yang seterusnya menembak <c00cc00><VALUE1>%</c> lebih syiling.
 TID_ACCESSORY_FIRE_DUDE_FLAME_SHIELD,TARIAN API
-TID_ACCESSORY_FIRE_DUDE_FLAME_SHIELD_DESC,"Amber mencipta <c00cc00><VALUE2></c> api yang mengorbit di sekelilingnya selama <c00cc00><VALUE1></c> saat, merosakkan <c00cc00><VALUE3></c>kerosakan apabila terkena sasaran."
+TID_ACCESSORY_FIRE_DUDE_FLAME_SHIELD_DESC,"Amber mencipta <c00cc00><VALUE2></c> api yang mengorbit di sekelilingnya selama <c00cc00><VALUE1></c> saat, melakukan <c00cc00><VALUE3></c> kerosakan apabila terkena sasaran."
 TID_ACCESSORY_MECHA_DUDE_TOWER_RELOAD,KOTAK ALAT
 TID_ACCESSORY_MECHA_DUDE_TOWER_RELOAD_DESC,Meg menjatuhkan kotak alat yang meningkatkan kelajuan muat semula untuk sekutu berdekatan sebanyak <c00cc00><VALUE1>%</c> sehingga ia musnah.
 TID_ACCESSORY_ROPE_DUDE_VISION,BEBAYANG SINAR-X
-TID_ACCESSORY_ROPE_DUDE_VISION_DESC,Buzz boleh lihat di sebalik semak selama <c00cc00><VALUE1></c> saat.
+TID_ACCESSORY_ROPE_DUDE_VISION_DESC,Buzz boleh boleh melihat ke dalam semak dalam kawasan pengecasan Super selama <c00cc00><VALUE1></c> saat.
 TID_LOGIN_CALENDAR_ALREADY_HAVE_BRAWLER,Anda sudah memiliki brawler ini.
 TID_LOGIN_CALENDAR_ALREADY_HAVE_GADGET,Anda sudah memiliki alat ini.
 TID_LOGIN_CALENDAR_ALREADY_HAVE_STAR_POWER,Anda sudah memiliki kuasa bintang ini.
@@ -6460,6 +6460,7 @@ TID_ACCESSORY_SILENCER_GADGET_1_DESC,"Tapak sulaiman seterusnya akan kekal di at
 TID_ACCESSORY_SILENCER_GADGET_2,PERCIKAN BESAR
 TID_ACCESSORY_SILENCER_GADGET_2_DESC,"Serangan Otis seterusnya menembak bola dakwat gergasi yang meninggalkan tompokan, melakukan <c00cc00><VALUE1></c> kerosakan apabila masa berlalu selama <c00cc00><VALUE2></c> saat."
 TID_RANDOM_GAME_MODE,MISTERI
+TID_ADVENTURE_GAME_MODE,KEMBARA
 TID_NOTIFICATION_RANDOM,Peta MISTERI baharu tersedia! Masa untuk memenangi ganjaran baharu!
 TID_SKIN_INFO_DEEPSEA,Kulit Brawl Laut Dalam
 TID_EMOTE_BUNDLE_DEEPSEA_PACK,Pin Kulit Brawl Laut Dalam
@@ -6602,6 +6603,146 @@ TID_TRUE_GOLD_EVE_SKIN_SHOP,EVE\nEMAS
 TID_TRUE_SILVER_EVE_SKIN,EVE PERAK
 TID_TRUE_SILVER_EVE_SKIN_SHOP,EVE\nPERAK
 TID_BRAWL_PASS_SEASON_12,BRAWL LAUT DALAM
+TID_TRIPLE_TAKEDOWN,TIGA TERSINGKIR!
+TID_QUAD_TAKEDOWN,EMPAT TERSINGKIR!
+TID_WEAPON_THROWER,SAM
+TID_WEAPON_THROWER_SHORT_DESC,PEROSAK
+TID_WEAPON_THROWER_DESC,Sam Bronson ialah bekas pekerja kilang yang menaruh dendam terhadap SEMUA robot.\n\nDialah ketua dan kekuatan Geng Senjata Emas yang seronok merampas dan menghancurkan robot!
+TID_WEAPON_THROWER_WEAPON,PENUMBUK KENCANG
+TID_WEAPON_THROWER_WEAPON_DESC,Sam mengayunkan tumbukan dua kali kekuatannya. Dia melakukan lebih banyak kerosakan selepas memakai sarung tangan.
+TID_WEAPON_THROWER_ULTI,SARUNG BESI
+TID_WEAPON_THROWER_ULTI_DESC,Sam melemparkan sarung besi dan melakukan kerosakan ke atas semua musuh yang terkena sebelum jatuh ke tanah. Super seterusnya akan mengembalikan sarung besi ke tangannya dan juga melakukan kerosakan.
+TID_SPEC_ABI_WEAPON_THROWER_1,PEMULIHAN SEGERA
+TID_SPEC_ABI_WEAPON_THROWER_1_DESC,"Apabila sarung besinya kembali semula, Sam segera memulihkan <c00cc00><VALUE1>%</c> nilai nyawa."
+TID_SPEC_ABI_WEAPON_THROWER_2,CAS SEMULA JAUH
+TID_SPEC_ABI_WEAPON_THROWER_2_DESC,"Apabila sarung besi berada di atas tanah dan berhampiran musuh, Super Sam akan dicas."
+TID_ACCESSORY_WEAPON_THROWER_GADGET_1,MEDAN MAGNET
+TID_ACCESSORY_WEAPON_THROWER_GADGET_1_DESC,"Ketika sarung besi berada di atas tanah, Sam boleh mengaktifkannya untuk menarik musuh berdekatan."
+TID_ACCESSORY_WEAPON_THROWER_GADGET_2,GELOMBANG TOLAKAN
+TID_ACCESSORY_WEAPON_THROWER_GADGET_2_DESC,"Selepas jatuh ke atas tanah, sarung besi Sam yang dilemparkan seterusnya akan mengeluarkan denyutan elektrik yang menolak musuh."
+TID_ACCESSORY_BLOCKED_MISSING_GAUNTLETS,Sarung besi tiada di atas tanah!
+TID_ACCESSORY_BLOCKED_GAUNTLETS_TOO_FAR,Sarung besi terlalu jauh!
+TID_ACCESSORY_BLOCKED_GAUNTLETS_REQUIRED,Memerlukan sarung besi!
+TID_SOUL_COLLECTOR,GUS
+TID_SOUL_COLLECTOR_SHORT_DESC,SOKONGAN
+TID_SOUL_COLLECTOR_DESC,Gus melepak dalam perjalanan kereta api yang telah lama dilupakan dan ditinggalkan. Dia suka belon dan mahir membentuk haiwan belon untuk meluangkan masa dan menemani dia.
+TID_SOUL_COLLECTOR_WEAPON,BELON LIAR
+TID_SOUL_COLLECTOR_WEAPON_DESC,"Gus menembak belon ke arah musuh. Selepas mengenai musuh berkali-kali, satu roh akan jatuh. Roh yang terkumpul akan memulihkan sedikit nilai nyawa anda atau pasukan anda."
+TID_SOUL_COLLECTOR_ULTI,BUDAK SERAM
+TID_SOUL_COLLECTOR_ULTI_DESC,Gus menggunakan Spooky (Belon ciptaannya yang juga merupakan kawan karibnya) untuk membentuk perisai di kelilingnya atau salah seorang ahli pasukan.
+TID_SPEC_ABI_SOUL_COLLECTOR_1,BONANZA NILAI NYAWA
+TID_SPEC_ABI_SOUL_COLLECTOR_1_DESC,Penyembuhan yang diperoleh daripada Belon Liar meningkat sebanyak <c00cc00><VALUE1>%</c>.
+TID_SPEC_ABI_SOUL_COLLECTOR_2,HAIWAN ROH
+TID_SPEC_ABI_SOUL_COLLECTOR_2_DESC,Spooky meningkatkan kerosakan rakan sepasukan sebanyak <c00cc00><VALUE1>%</c> selama <c00cc00><VALUE2></c> saat.
+TID_ACCESSORY_SOUL_COLLECTOR_GADGET_1,PELETUP BELON
+TID_ACCESSORY_SOUL_COLLECTOR_GADGET_1_DESC,"Meletupkan semua roh yang tidak dikumpul, melakukan <c00cc00><VALUE1></c> kerosakan terhadap musuh berdekatan."
+TID_ACCESSORY_SOUL_COLLECTOR_GADGET_2,PENUKAR JIWA
+TID_ACCESSORY_SOUL_COLLECTOR_GADGET_2_DESC,Gus kehilangan <ccc0000><VALUE1>%</c> nilai nyawa dan segera mendapat <c00cc00><VALUE2>%</c> roh.
+TID_ACCESSORY_BLOCKED_MISSING_SOULS,Tiada roh!
+TID_ACCESSORY_BLOCKED_SPIRIT_ALREADY_FULL,Roh sudah penuh!
+TID_SKIN_INFO_OUTLAW,Kulit Geng Gempar
+TID_EMOJI_SURGE_TEAM,NAVI
+TID_EMOJI_MORTIS_TEAM,SK
+TID_EMOJI_SPIKE_TEAM,INTZ
+TID_EMOJI_PRIMO_TEAM,TQ
+TID_EMOJI_COLT_TEAM,STMN
+TID_EMOJI_NITA_TEAM,OBEY
+TID_EMOJI_LEON_TEAM,QLASH
+TID_EMOJI_JESSIE_TEAM,ZETA
+TID_EMOJI_EMZ_TEAM,TRIBE
+TID_EMOJI_SHELLY_TEAM,TOTEM
+TID_SKIN_INFO_MECHA,Kulit Mecha
+TID_SCID_REQUIRED_DESC,"Disebabkan umur anda, anda perlu menyambungkan permainan anda kepada Supercell ID."
+TID_SCID_REQUIRED_CONNECT,SAMBUNG
+TID_LOGIN_CALENDAR_POPULAR,POPULAR
+TID_TRAIT_SUPER_START,Brawler ini bermula dengan Super yang dicas sepenuhnya
+TID_GAME_MODE_29,HARAPAN TERAKHIR
+TID_GAME_MODE_29_DESC,Robot rosak berpaling tadah terhadap kami! 8-Bit ialah harapan terakhir kami. Dia membawa kod rahsia dan dia tidak boleh tumbang! Melindungi 8-BIT daripada gelombang robot jahat sehingga tamat masa untuk memenangi perlawanan\n\nKumpul syiling Brawl untuk 8-BIT kekal dalam pertempuran!
+TID_GAME_MODE_29_INTRO_TEXT,Melindungi 8-BIT!
+TID_LAST_STAND_1,Penyingkir
+TID_LAST_STAND_2,Hari Hukuman
+TID_LAST_STAND_3,Kebangkitan Robot
+TID_LAST_STAND_4,Penyelamatan
+TID_LAST_STAND_5,Litar Pintas
+TID_LAST_STAND_6,Takdir Gelap
+TID_INBOX_CAPTION_55,Ganjaran penyelesaian misi:
+TID_ESPORTS_OFFER_TITLE,KEJOHANAN
+TID_ESPORTS_OFFER_SUBTITLE_PINS,Set Pin
+TID_ESPORTS_OFFER_SUBTITLE_THUMBNAILS,Ikon Pemain
+TID_ESPORTS_OFFER_SUBTITLE_EACH,SETIAP SATU
+TID_ESPORTS_OFFER_SUBTITLE_ALREADY_OWNED,Sudah dimiliki!
+TID_ESPORTS_OFFER_ITEM_PINS,Pin
+TID_ESPORTS_OFFER_ITEM_THUMBNAILS,Ikon Pemain
+TID_EMOTE_BUNDLE_MORTIS_MECHA_PACK,Pek pin Mortis Mecha
+TID_BRAWL_PASS_SEASON_13,KILANG ROBOT
+TID_TRUE_GOLD_OTIS_SKIN,OTIS EMAS
+TID_TRUE_GOLD_OTIS_SKIN_SHOP,OTIS\nEMAS
+TID_TRUE_SILVER_OTIS_SKIN,OTIS PERAK
+TID_TRUE_SILVER_OTIS_SKIN_SHOP,OTIS\nPERAK
+TID_TRUE_GOLD_SQUEAK_SKIN,SQUEAK EMAS
+TID_TRUE_GOLD_SQUEAK_SKIN_SHOP,SQUEAK\nEMAS
+TID_TRUE_SILVER_SQUEAK_SKIN,SQUEAK PERAK
+TID_TRUE_SILVER_SQUEAK_SKIN_SHOP,SQUEAK\nPERAK
+TID_TRUE_GOLD_BYRON_SKIN,BYRON EMAS
+TID_TRUE_GOLD_BYRON_SKIN_SHOP,BYRON\nEMAS
+TID_TRUE_SILVER_BRYON_SKIN,BYRON PERAK
+TID_TRUE_SILVER_BYRON_SKIN_SHOP,BYRON\nPERAK
+TID_TRUE_GOLD_GRIFF_SKIN,GRIFF EMAS
+TID_TRUE_GOLD_GRIFF_SKIN_SHOP,GRIFF\nEMAS
+TID_TRUE_SILVER_GRIFF_SKIN,GRIFF PERAK
+TID_TRUE_SILVER_GRIFF_SKIN_SHOP,GRIFF\nPERAK
+TID_TRUE_GOLD_EDGAR_SKIN,EDGAR EMAS
+TID_TRUE_GOLD_EDGAR_SKIN_SHOP,EDGAR\nEMAS
+TID_TRUE_SILVER_EDGAR_SKIN,EDGAR PERAK
+TID_TRUE_SILVER_EDGAR_SKIN_SHOP,EDGAR\nPERAK
+TID_CAESAR_BRONSON_SKIN,SAM CAESAR
+TID_CAESAR_BRONSON_SKIN_SHOP,SAM\nCAESAR
+TID_MECHA_MORIS_SKIN,MORTIS MECHA
+TID_MECHA_MORTIS_SKIN_SHOP,MORTIS\nMECHA
+TID_DARK_MECHA_MORTIS_SKIN,MORTIS MECHA KEJAHATAN
+TID_DARK_MECHA_MORTIS_SKIN_SHOP,MORTIS\nMECHA KEJAHATAN
+TID_LIGHT_MECHA_MORTIS_SKIN,MORTIS MECHA CERAH
+TID_LIGHT_MECHA_MORTIS_SKIN_SHOP,MORTIS\nMECHA CERAH
+TID_OUTLAW_LOLA_SKIN,LOLA PEMBERONTAK
+TID_OUTLAW_LOLA_SKIN_SHOP,LOLA\nPEMBERONTAK
+TID_OUTLAW_CROW,CROW TULANG
+TID_OUTLAW_CROW_SKIN_SHOP,CROW\nTULANG
+TID_OUTLAW_POCO_SKIN,POCO PENYAMUN
+TID_OUTLAW_POCO_SKIN_SHOP,POCO\nPENYAMUN
+TID_BROKER_PAM_SKIN,PAM PELABUR
+TID_BROKER_PAM_SKIN_SHOP,PAM\nPELABUR
+TID_MOON_FESTIVAL_SQUEAK_SKIN,SQUEAK ARNAB BULAN
+TID_MOON_FESTIVAL_SQUEAK_SKIN_SHOP,SQUEAK\nARNAB BULAN
+TID_BRAWLOWEEN_LEON_SKIN,LEON HALLOWEEN
+TID_BRAWLOWEEN_LEON_SKIN_SHOP,LEON\nHALLOWEEN
+TID_HINT_45,Pastikan anda menggunakan kod pencipta di kedai.
+TID_HINT_46,Log masuk ke permainan setiap hari untuk kumpul ganjaran harian percuma!
+TID_HINT_47,Kadangkala menghantar bola kepada musuh anda dalam Bola Brawl merupakan cara terbaik untuk membazirkan peluru mereka!
+TID_HINT_48,Guna pin dan semburan dalam permainan untuk menunjukkan emosi anda.
+TID_HINT_49,Pagar serupa dengan dinding kecuali anda boleh menembak menembusinya!
+TID_HINT_50,Kerja berpasukan merealisasikan impian!
+TID_HINT_51,Tidak suka susun atur kawalan anda? Anda boleh menukarnya dengan menggunakan fungsi CUBA.
+TID_HINT_52,"Dalam Bola Brawl, anda boleh menggunakan Super anda untuk melakukan tendangan super!"
+TID_HINT_53,Utamakan pertahanan daripada serangan apabila anda memegang paling banyak permata dalam Rebut Permata.
+TID_HINT_54,"Jika rakan sepasukan anda dikalahkan, tunggu mereka muncul semula sebelum menyerang bersama!"
+TID_HINT_55,Guna Pertempuran Persahabatan untuk berlatih dan meningkatkan kemahiran anda.
+TID_HINT_56,Sesetengah brawler ada ciri tersendiri! Semak butiran mereka di skrin statistik.
+TID_HINT_57,"Dalam Showdown Duo, pastikan rakan sepasukan anda masih hidup sebelum mengutip kiub kuasa."
+TID_HINT_58,Guna ciri \qmencari pasukan\q jika anda bermain cabaran!
+TID_HINT_59,"Sentiasa berhati-hati dengan periuk api Bo, ia boleh ada di mana-mana saja!"
+TID_HINT_60,"Super Lou bagus dalam pengawalan kawasan, gunakannya dengan bijak di lokasi penting dalam peta!"
+TID_HINT_61,Kerosakan Jessie berkurang setiap kali serangannya melantun daripada musuh.
+TID_HINT_62,Colette boleh melakukan kerosakan besar apabila menyerang brawler nilai nyawa tinggi!
+TID_HINT_63,Edgar menyembuuh setiap kali dia melakukan tumbukan!
+TID_HINT_64,Janet menembak lebih jauh apabila anda membidik serangannya lebih lama.
+TID_HINT_65,"Peluru Gene membelah apabila mengenai target, membolehkan dia menyerang musuh dan mengecas super!"
+TID_LAST_STAND_WAVE_1,Robot sedang menghampiri!
+TID_LAST_STAND_WAVE_2,Lebih banyak musuh sedang mara!
+TID_LAST_STAND_SHUTDOWN,<ccc0000>8-BIT akan dimatikan!</c>
+TID_EMOTE_BUNDLE_OUTLAW_PACK,Pek Pin Geng Gempar
+TID_SHOP_OUTLAW_SKINS,Kulit Geng Gempar
+TID_SHOP_OUTLAW_TITLE,GENG GEMPAR
+TID_ACCESSORY_BLOCKED_SOULS_TOO_FAR,Roh terlalu jauh!
 TID_REGION_CUSTOM1,
 TID_REGION_CUSTOM2,
 TID_REGION_CUSTOM3,

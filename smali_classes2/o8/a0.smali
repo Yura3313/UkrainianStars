@@ -1,117 +1,364 @@
-.class public final Lo8/a0;
-.super Lo8/y;
-.source "RequestAppReviewMessageDM.java"
-
-
-# instance fields
-.field public A:Z
-
-.field public z:Z
+.class public final synthetic Lo8/a0;
+.super Ljava/lang/Object;
+.source "R8$$SyntheticClass"
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;JLo8/o;Z)V
-    .locals 8
-
-    const/4 v6, 0x1
-
-    const/4 v7, 0x4
-
-    move-object v0, p0
-
-    move-object v1, p2
-
-    move-object v2, p3
-
-    move-wide v3, p4
-
-    move-object v5, p6
+.method public static a(Ljava/lang/String;)I
+    .locals 6
 
     .line 1
-    invoke-direct/range {v0 .. v7}, Lo8/y;-><init>(Ljava/lang/String;Ljava/lang/String;JLo8/o;ZI)V
+    invoke-static {}, Lo8/a0;->b()[I
+
+    move-result-object v0
+
+    array-length v1, v0
+
+    const/4 v2, 0x0
+
+    const/4 v3, 0x0
+
+    :goto_0
+    if-ge v3, v1, :cond_1
+
+    aget v4, v0, v3
 
     .line 2
-    iput-object p1, p0, Lo8/y;->i:Ljava/lang/String;
+    invoke-static {v4}, Lo8/a0;->c(I)Ljava/lang/String;
+
+    move-result-object v5
 
     .line 3
-    iput-boolean p7, p0, Lo8/a0;->z:Z
+    invoke-virtual {v5, p0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    const/4 p1, 0x1
+    move-result v5
 
-    .line 4
-    iput-boolean p1, p0, Lo8/a0;->A:Z
+    if-eqz v5, :cond_0
 
-    return-void
+    return v4
+
+    :cond_0
+    add-int/lit8 v3, v3, 0x1
+
+    goto :goto_0
+
+    :cond_1
+    return v2
 .end method
 
-.method public constructor <init>(Lo8/a0;)V
+.method public static b()[I
     .locals 1
 
-    .line 5
-    invoke-direct {p0, p1}, Lo8/y;-><init>(Lo8/y;)V
+    const/16 v0, 0x21
 
-    .line 6
-    iget-boolean v0, p1, Lo8/a0;->z:Z
+    invoke-static {v0}, Lp/g;->c(I)[I
 
-    iput-boolean v0, p0, Lo8/a0;->z:Z
-
-    .line 7
-    iget-boolean p1, p1, Lo8/a0;->A:Z
-
-    iput-boolean p1, p0, Lo8/a0;->A:Z
-
-    return-void
-.end method
-
-
-# virtual methods
-.method public final a()Ljava/lang/Object;
-    .locals 1
-
-    new-instance v0, Lo8/a0;
-
-    invoke-direct {v0, p0}, Lo8/a0;-><init>(Lo8/a0;)V
+    move-result-object v0
 
     return-object v0
 .end method
 
-.method public final b()Lo8/y;
-    .locals 1
-
-    new-instance v0, Lo8/a0;
-
-    invoke-direct {v0, p0}, Lo8/a0;-><init>(Lo8/a0;)V
-
-    return-object v0
-.end method
-
-.method public final j()Z
+.method public static synthetic c(I)Ljava/lang/String;
     .locals 1
 
     const/4 v0, 0x1
 
-    return v0
-.end method
+    if-ne p0, v0, :cond_0
 
-.method public final k(Lo8/y;)V
-    .locals 1
+    const-string p0, "mobile_text"
 
-    .line 1
-    invoke-super {p0, p1}, Lo8/y;->k(Lo8/y;)V
-
-    .line 2
-    instance-of v0, p1, Lo8/a0;
-
-    if-eqz v0, :cond_0
-
-    .line 3
-    check-cast p1, Lo8/a0;
-
-    .line 4
-    iget-boolean p1, p1, Lo8/a0;->z:Z
-
-    iput-boolean p1, p0, Lo8/a0;->z:Z
+    return-object p0
 
     :cond_0
-    return-void
+    const/4 v0, 0x2
+
+    if-ne p0, v0, :cond_1
+
+    const-string p0, "admin_text"
+
+    return-object p0
+
+    :cond_1
+    const/4 v0, 0x3
+
+    if-ne p0, v0, :cond_2
+
+    const-string p0, "accepted_app_review"
+
+    return-object p0
+
+    :cond_2
+    const/4 v0, 0x4
+
+    if-ne p0, v0, :cond_3
+
+    const-string p0, "request_app_review"
+
+    return-object p0
+
+    :cond_3
+    const/4 v0, 0x5
+
+    if-ne p0, v0, :cond_4
+
+    const-string p0, "followup_accepted"
+
+    return-object p0
+
+    :cond_4
+    const/4 v0, 0x6
+
+    if-ne p0, v0, :cond_5
+
+    const-string p0, "followup_rejected"
+
+    return-object p0
+
+    :cond_5
+    const/4 v0, 0x7
+
+    if-ne p0, v0, :cond_6
+
+    const-string p0, "confirmation_accepted"
+
+    return-object p0
+
+    :cond_6
+    const/16 v0, 0x8
+
+    if-ne p0, v0, :cond_7
+
+    const-string p0, "confirmation_rejected"
+
+    return-object p0
+
+    :cond_7
+    const/16 v0, 0x9
+
+    if-ne p0, v0, :cond_8
+
+    const-string p0, "screenshot"
+
+    return-object p0
+
+    :cond_8
+    const/16 v0, 0xa
+
+    if-ne p0, v0, :cond_9
+
+    const-string p0, "request_screenshot"
+
+    return-object p0
+
+    :cond_9
+    const/16 v0, 0xb
+
+    if-ne p0, v0, :cond_a
+
+    const-string p0, "admin_attachment"
+
+    return-object p0
+
+    :cond_a
+    const/16 v0, 0xc
+
+    if-ne p0, v0, :cond_b
+
+    const-string p0, "admin_image_attachment"
+
+    return-object p0
+
+    :cond_b
+    const/16 v0, 0xd
+
+    if-ne p0, v0, :cond_c
+
+    const-string p0, "request_for_reopen"
+
+    return-object p0
+
+    :cond_c
+    const/16 v0, 0xe
+
+    if-ne p0, v0, :cond_d
+
+    const-string p0, "admin_text_with_text_input"
+
+    return-object p0
+
+    :cond_d
+    const/16 v0, 0xf
+
+    if-ne p0, v0, :cond_e
+
+    const-string p0, "admin_text_with_option_input"
+
+    return-object p0
+
+    :cond_e
+    const/16 v0, 0x10
+
+    if-ne p0, v0, :cond_f
+
+    const-string p0, "faq_list"
+
+    return-object p0
+
+    :cond_f
+    const/16 v0, 0x11
+
+    if-ne p0, v0, :cond_10
+
+    const-string p0, "faq_list_with_option_input"
+
+    return-object p0
+
+    :cond_10
+    const/16 v0, 0x12
+
+    if-ne p0, v0, :cond_11
+
+    const-string p0, "option_input"
+
+    return-object p0
+
+    :cond_11
+    const/16 v0, 0x13
+
+    if-ne p0, v0, :cond_12
+
+    const-string p0, "unsupported_admin_message_with_input"
+
+    return-object p0
+
+    :cond_12
+    const/16 v0, 0x14
+
+    if-ne p0, v0, :cond_13
+
+    const-string p0, "admin_bot_control"
+
+    return-object p0
+
+    :cond_13
+    const/16 v0, 0x15
+
+    if-ne p0, v0, :cond_14
+
+    const-string p0, "user_bot_control"
+
+    return-object p0
+
+    :cond_14
+    const/16 v0, 0x16
+
+    if-ne p0, v0, :cond_15
+
+    const-string p0, "mobile_response_for_text_input"
+
+    return-object p0
+
+    :cond_15
+    const/16 v0, 0x17
+
+    if-ne p0, v0, :cond_16
+
+    const-string p0, "mobile_response_for_option_input"
+
+    return-object p0
+
+    :cond_16
+    const/16 v0, 0x18
+
+    if-ne p0, v0, :cond_17
+
+    const-string p0, "system_date"
+
+    return-object p0
+
+    :cond_17
+    const/16 v0, 0x19
+
+    if-ne p0, v0, :cond_18
+
+    const-string p0, "system_divider"
+
+    return-object p0
+
+    :cond_18
+    const/16 v0, 0x1a
+
+    if-ne p0, v0, :cond_19
+
+    const-string p0, "system_publish_id"
+
+    return-object p0
+
+    :cond_19
+    const/16 v0, 0x1b
+
+    if-ne p0, v0, :cond_1a
+
+    const-string p0, "system_conv_redacted"
+
+    return-object p0
+
+    :cond_1a
+    const/16 v0, 0x1c
+
+    if-ne p0, v0, :cond_1b
+
+    const-string p0, "user_attachment"
+
+    return-object p0
+
+    :cond_1b
+    const/16 v0, 0x1d
+
+    if-ne p0, v0, :cond_1c
+
+    const-string p0, "admin_action_card"
+
+    return-object p0
+
+    :cond_1c
+    const/16 v0, 0x1e
+
+    if-ne p0, v0, :cond_1d
+
+    const-string p0, "user_smart_intent"
+
+    return-object p0
+
+    :cond_1d
+    const/16 v0, 0x1f
+
+    if-ne p0, v0, :cond_1e
+
+    const-string p0, "resolution_msg_with_option_input"
+
+    return-object p0
+
+    :cond_1e
+    const/16 v0, 0x20
+
+    if-ne p0, v0, :cond_1f
+
+    const-string p0, "csat_feedback_message"
+
+    return-object p0
+
+    :cond_1f
+    const/16 v0, 0x21
+
+    if-ne p0, v0, :cond_20
+
+    const-string p0, "mobile_response_for_csat"
+
+    return-object p0
+
+    :cond_20
+    const/4 p0, 0x0
+
+    throw p0
 .end method

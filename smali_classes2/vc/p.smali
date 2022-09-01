@@ -15,11 +15,11 @@
 
 # direct methods
 .method public constructor <init>(Lorg/json/JSONObject;)V
-    .locals 4
+    .locals 5
 
     const-string v0, "data"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "imageId"
 
@@ -30,7 +30,7 @@
 
     const-string v1, "data.getString(\"imageId\")"
 
-    invoke-static {v0, v1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v1, "processingStatus"
 
@@ -40,7 +40,7 @@
 
     const-string v2, "data.getString(\"processingStatus\")"
 
-    invoke-static {v1, v2}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v2, "actionStatus"
 
@@ -50,19 +50,45 @@
 
     const-string v3, "data.getString(\"actionStatus\")"
 
-    invoke-static {v2, v3}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v2, v3}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v3, "url"
 
-    invoke-virtual {p1, v3}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
+    .line 2
+    invoke-virtual {p1, v3}, Lorg/json/JSONObject;->opt(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object p1
 
-    const-string v3, "data.getString(\"url\")"
+    const/4 v3, 0x0
 
-    invoke-static {p1, v3}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    if-eqz p1, :cond_0
 
-    .line 2
+    .line 3
+    sget-object v4, Lorg/json/JSONObject;->NULL:Ljava/lang/Object;
+
+    invoke-static {p1, v4}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v4
+
+    if-eqz v4, :cond_1
+
+    :cond_0
+    move-object p1, v3
+
+    :cond_1
+    if-eqz p1, :cond_2
+
+    .line 4
+    instance-of v4, p1, Ljava/lang/String;
+
+    if-eqz v4, :cond_2
+
+    check-cast p1, Ljava/lang/String;
+
+    move-object v3, p1
+
+    .line 5
+    :cond_2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-object v0, p0, Lvc/p;->a:Ljava/lang/String;
@@ -71,7 +97,7 @@
 
     iput-object v2, p0, Lvc/p;->c:Ljava/lang/String;
 
-    iput-object p1, p0, Lvc/p;->d:Ljava/lang/String;
+    iput-object v3, p0, Lvc/p;->d:Ljava/lang/String;
 
     return-void
 .end method
@@ -93,7 +119,7 @@
 
     iget-object v1, p1, Lvc/p;->a:Ljava/lang/String;
 
-    invoke-static {v0, v1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
@@ -103,7 +129,7 @@
 
     iget-object v1, p1, Lvc/p;->b:Ljava/lang/String;
 
-    invoke-static {v0, v1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
@@ -113,7 +139,7 @@
 
     iget-object v1, p1, Lvc/p;->c:Ljava/lang/String;
 
-    invoke-static {v0, v1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
@@ -123,7 +149,7 @@
 
     iget-object p1, p1, Lvc/p;->d:Ljava/lang/String;
 
-    invoke-static {v0, p1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, p1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -217,7 +243,7 @@
 .method public final toString()Ljava/lang/String;
     .locals 3
 
-    const-string v0, "IdProfileImageComplete(imageId="
+    const-string v0, "IdProfileImageStatus(imageId="
 
     .line 1
     invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -254,7 +280,7 @@
     const-string v2, ")"
 
     .line 3
-    invoke-static {v0, v1, v2}, Landroid/support/v4/media/b;->b(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, v1, v2}, Landroid/support/v4/media/b;->a(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 

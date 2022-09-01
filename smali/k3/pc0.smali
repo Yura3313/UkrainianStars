@@ -3,107 +3,69 @@
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lk3/zc0;
+.implements Lk3/cd0;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "Lk3/zc0<",
-        "Landroid/os/Bundle;",
+        "Lk3/cd0<",
+        "Lk3/qc0;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final a:Ljava/lang/String;
+.field public final a:Lk3/p9;
 
-.field public final b:Ljava/lang/String;
+.field public final b:Lk3/jm0;
 
-.field public final c:Ljava/lang/String;
-
-.field public final d:Ljava/lang/String;
-
-.field public final e:Ljava/lang/Long;
+.field public final c:Landroid/content/Context;
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;)V
+.method public constructor <init>(Lk3/p9;Lk3/jm0;Landroid/content/Context;)V
     .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lk3/pc0;->a:Ljava/lang/String;
+    iput-object p1, p0, Lk3/pc0;->a:Lk3/p9;
 
     .line 3
-    iput-object p2, p0, Lk3/pc0;->b:Ljava/lang/String;
+    iput-object p2, p0, Lk3/pc0;->b:Lk3/jm0;
 
     .line 4
-    iput-object p3, p0, Lk3/pc0;->c:Ljava/lang/String;
-
-    .line 5
-    iput-object p4, p0, Lk3/pc0;->d:Ljava/lang/String;
-
-    .line 6
-    iput-object p5, p0, Lk3/pc0;->e:Ljava/lang/Long;
+    iput-object p3, p0, Lk3/pc0;->c:Landroid/content/Context;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final synthetic b(Ljava/lang/Object;)V
-    .locals 3
+.method public final a()Lk3/hm0;
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lk3/hm0<",
+            "Lk3/qc0;",
+            ">;"
+        }
+    .end annotation
 
-    .line 1
-    check-cast p1, Landroid/os/Bundle;
+    iget-object v0, p0, Lk3/pc0;->b:Lk3/jm0;
 
-    .line 2
-    iget-object v0, p0, Lk3/pc0;->a:Ljava/lang/String;
+    new-instance v1, Lk3/rc0;
 
-    const-string v1, "gmp_app_id"
+    invoke-direct {v1, p0}, Lk3/rc0;-><init>(Lk3/pc0;)V
 
-    invoke-static {p1, v1, v0}, Lk3/dp;->f(Landroid/os/Bundle;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-interface {v0, v1}, Lk3/jm0;->c(Ljava/util/concurrent/Callable;)Lk3/hm0;
 
-    .line 3
-    iget-object v0, p0, Lk3/pc0;->b:Ljava/lang/String;
+    move-result-object v0
 
-    const-string v1, "fbs_aiid"
-
-    invoke-static {p1, v1, v0}, Lk3/dp;->f(Landroid/os/Bundle;Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 4
-    iget-object v0, p0, Lk3/pc0;->c:Ljava/lang/String;
-
-    const-string v1, "fbs_aeid"
-
-    invoke-static {p1, v1, v0}, Lk3/dp;->f(Landroid/os/Bundle;Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 5
-    iget-object v0, p0, Lk3/pc0;->d:Ljava/lang/String;
-
-    const-string v1, "apm_id_origin"
-
-    invoke-static {p1, v1, v0}, Lk3/dp;->f(Landroid/os/Bundle;Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 6
-    iget-object v0, p0, Lk3/pc0;->e:Ljava/lang/Long;
-
-    if-eqz v0, :cond_0
-
-    .line 7
-    invoke-virtual {v0}, Ljava/lang/Long;->longValue()J
-
-    move-result-wide v0
-
-    const-string v2, "sai_timeout"
-
-    invoke-virtual {p1, v2, v0, v1}, Landroid/os/Bundle;->putLong(Ljava/lang/String;J)V
-
-    :cond_0
-    return-void
+    return-object v0
 .end method

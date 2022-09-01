@@ -1,120 +1,129 @@
-.class public final synthetic Lk3/x00;
+.class public final Lk3/x00;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Ljava/lang/Runnable;
+.implements Lk3/mv0;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Lk3/mv0<",
+        "Lk3/w00;",
+        ">;"
+    }
+.end annotation
 
 
 # instance fields
-.field public final synthetic f:I
+.field public final a:Lk3/qv0;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lk3/qv0<",
+            "Lk3/id;",
+            ">;"
+        }
+    .end annotation
+.end field
 
-.field public final g:Ljava/lang/Object;
+.field public final b:Lk3/qv0;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lk3/qv0<",
+            "Landroid/content/Context;",
+            ">;"
+        }
+    .end annotation
+.end field
 
-.field public final h:Ljava/lang/Object;
+.field public final c:Lk3/qv0;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lk3/qv0<",
+            "Lcom/google/android/gms/internal/ads/zzbbg;",
+            ">;"
+        }
+    .end annotation
+.end field
 
 
 # direct methods
-.method public synthetic constructor <init>(Ljava/lang/Object;Ljava/lang/Object;I)V
+.method public constructor <init>(Lk3/qv0;Lk3/qv0;Lk3/qv0;)V
     .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lk3/qv0<",
+            "Ljava/util/concurrent/Executor;",
+            ">;",
+            "Lk3/qv0<",
+            "Lk3/id;",
+            ">;",
+            "Lk3/qv0<",
+            "Landroid/content/Context;",
+            ">;",
+            "Lk3/qv0<",
+            "Lcom/google/android/gms/internal/ads/zzbbg;",
+            ">;)V"
+        }
+    .end annotation
 
     .line 1
-    iput p3, p0, Lk3/x00;->f:I
-
-    iput-object p1, p0, Lk3/x00;->g:Ljava/lang/Object;
-
-    iput-object p2, p0, Lk3/x00;->h:Ljava/lang/Object;
-
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    return-void
-.end method
-
-.method public constructor <init>(Lk3/xf;Lcom/google/android/gms/internal/ads/zzho;)V
-    .locals 1
-
-    const/4 v0, 0x2
-
-    iput v0, p0, Lk3/x00;->f:I
 
     .line 2
-    iput-object p1, p0, Lk3/x00;->h:Ljava/lang/Object;
+    iput-object p1, p0, Lk3/x00;->a:Lk3/qv0;
 
-    iput-object p2, p0, Lk3/x00;->g:Ljava/lang/Object;
+    .line 3
+    iput-object p2, p0, Lk3/x00;->b:Lk3/qv0;
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    .line 4
+    iput-object p3, p0, Lk3/x00;->c:Lk3/qv0;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final run()V
-    .locals 2
-
-    iget v0, p0, Lk3/x00;->f:I
-
-    packed-switch v0, :pswitch_data_0
-
-    goto :goto_0
+.method public final synthetic get()Ljava/lang/Object;
+    .locals 5
 
     .line 1
-    :pswitch_0
-    iget-object v0, p0, Lk3/x00;->g:Ljava/lang/Object;
+    invoke-static {}, Lk3/ei0;->a()Lk3/jm0;
 
-    check-cast v0, Lk3/ue0;
-
-    iget-object v1, p0, Lk3/x00;->h:Ljava/lang/Object;
-
-    check-cast v1, Lcom/google/android/gms/internal/ads/zzuw;
+    move-result-object v0
 
     .line 2
-    iget-object v0, v0, Lk3/ue0;->h:Lcom/google/android/gms/internal/ads/a1;
+    iget-object v1, p0, Lk3/x00;->a:Lk3/qv0;
+
+    invoke-interface {v1}, Lk3/qv0;->get()Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Lk3/id;
+
+    iget-object v2, p0, Lk3/x00;->b:Lk3/qv0;
+
+    invoke-interface {v2}, Lk3/qv0;->get()Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Landroid/content/Context;
+
+    iget-object v3, p0, Lk3/x00;->c:Lk3/qv0;
+
+    invoke-interface {v3}, Lk3/qv0;->get()Ljava/lang/Object;
+
+    move-result-object v3
+
+    check-cast v3, Lcom/google/android/gms/internal/ads/zzbbg;
 
     .line 3
-    iget-object v0, v0, Lcom/google/android/gms/internal/ads/a1;->d:Lk3/ze0;
+    new-instance v4, Lk3/w00;
 
-    .line 4
-    invoke-virtual {v0, v1}, Lk3/ze0;->y0(Lcom/google/android/gms/internal/ads/zzuw;)V
+    invoke-direct {v4, v0, v1, v2, v3}, Lk3/w00;-><init>(Ljava/util/concurrent/Executor;Lk3/id;Landroid/content/Context;Lcom/google/android/gms/internal/ads/zzbbg;)V
 
-    return-void
-
-    .line 5
-    :pswitch_1
-    iget-object v0, p0, Lk3/x00;->g:Ljava/lang/Object;
-
-    check-cast v0, Lk3/v00;
-
-    iget-object v1, p0, Lk3/x00;->h:Ljava/lang/Object;
-
-    check-cast v1, Ljava/lang/String;
-
-    .line 6
-    iget-object v0, v0, Lk3/v00;->c:Lk3/id;
-
-    invoke-virtual {v0, v1}, Lk3/id;->c(Ljava/lang/String;)V
-
-    return-void
-
-    .line 7
-    :goto_0
-    iget-object v0, p0, Lk3/x00;->h:Ljava/lang/Object;
-
-    check-cast v0, Lk3/xf;
-
-    .line 8
-    iget-object v0, v0, Lk3/xf;->g:Ljava/lang/Object;
-
-    check-cast v0, Lk3/zw0;
-
-    .line 9
-    invoke-interface {v0}, Lk3/zw0;->d()V
-
-    return-void
-
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_1
-        :pswitch_0
-    .end packed-switch
+    return-object v4
 .end method

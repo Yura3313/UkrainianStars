@@ -1,54 +1,106 @@
-.class public final synthetic Lk3/e70;
+.class public final Lk3/e70;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lk3/fi0;
+.implements Lk3/i40;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Lk3/i40<",
+        "Lcom/google/android/gms/internal/ads/zzapa;",
+        "Lcom/google/android/gms/internal/ads/zzcso;",
+        ">;"
+    }
+.end annotation
 
 
 # instance fields
-.field public final f:Lk3/d70;
-
-.field public final g:Lk3/sg0;
-
-.field public final h:Lk3/jg0;
-
-.field public final i:Lk3/g40;
+.field public final a:Lk3/v70;
 
 
 # direct methods
-.method public constructor <init>(Lk3/d70;Lk3/sg0;Lk3/jg0;Lk3/g40;)V
+.method public constructor <init>(Lk3/v70;)V
     .locals 0
 
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lk3/e70;->f:Lk3/d70;
-
-    iput-object p2, p0, Lk3/e70;->g:Lk3/sg0;
-
-    iput-object p3, p0, Lk3/e70;->h:Lk3/jg0;
-
-    iput-object p4, p0, Lk3/e70;->i:Lk3/g40;
+    .line 2
+    iput-object p1, p0, Lk3/e70;->a:Lk3/v70;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final run()V
-    .locals 4
+.method public final a(Ljava/lang/String;Lorg/json/JSONObject;)Lk3/j40;
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/String;",
+            "Lorg/json/JSONObject;",
+            ")",
+            "Lk3/j40<",
+            "Lcom/google/android/gms/internal/ads/zzapa;",
+            "Lcom/google/android/gms/internal/ads/zzcso;",
+            ">;"
+        }
+    .end annotation
 
-    iget-object v0, p0, Lk3/e70;->f:Lk3/d70;
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lcom/google/android/gms/internal/ads/zzdlr;
+        }
+    .end annotation
 
-    iget-object v1, p0, Lk3/e70;->g:Lk3/sg0;
+    .line 1
+    iget-object p2, p0, Lk3/e70;->a:Lk3/v70;
 
-    iget-object v2, p0, Lk3/e70;->h:Lk3/jg0;
+    .line 2
+    iget-object v0, p2, Lk3/v70;->a:Ljava/util/concurrent/ConcurrentHashMap;
 
-    iget-object v3, p0, Lk3/e70;->i:Lk3/g40;
+    invoke-virtual {v0, p1}, Ljava/util/concurrent/ConcurrentHashMap;->containsKey(Ljava/lang/Object;)Z
 
-    iget-object v0, v0, Lk3/d70;->b:Lk3/h40;
+    move-result v0
 
-    invoke-interface {v0, v1, v2, v3}, Lk3/h40;->a(Lk3/sg0;Lk3/jg0;Lk3/g40;)V
+    const/4 v1, 0x0
 
-    return-void
+    if-eqz v0, :cond_0
+
+    .line 3
+    iget-object p2, p2, Lk3/v70;->a:Ljava/util/concurrent/ConcurrentHashMap;
+
+    invoke-virtual {p2, p1}, Ljava/util/concurrent/ConcurrentHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p2
+
+    check-cast p2, Lcom/google/android/gms/internal/ads/zzapa;
+
+    goto :goto_0
+
+    :cond_0
+    move-object p2, v1
+
+    :goto_0
+    if-nez p2, :cond_1
+
+    return-object v1
+
+    .line 4
+    :cond_1
+    new-instance v0, Lcom/google/android/gms/internal/ads/zzcso;
+
+    invoke-direct {v0}, Lcom/google/android/gms/internal/ads/zzcso;-><init>()V
+
+    .line 5
+    new-instance v1, Lk3/j40;
+
+    invoke-direct {v1, p2, v0, p1}, Lk3/j40;-><init>(Ljava/lang/Object;Lk3/or;Ljava/lang/String;)V
+
+    return-object v1
 .end method

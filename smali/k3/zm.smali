@@ -20,13 +20,13 @@
 .method public abstract d(Landroid/view/ViewGroup;Lcom/google/android/gms/internal/ads/zzvj;)V
 .end method
 
-.method public abstract e()Lk3/ig0;
+.method public abstract e()Lk3/jg0;
 .end method
 
 .method public abstract f()Landroid/view/View;
 .end method
 
-.method public abstract g()Lk3/ig0;
+.method public abstract g()Lk3/jg0;
 .end method
 
 .method public abstract h()I

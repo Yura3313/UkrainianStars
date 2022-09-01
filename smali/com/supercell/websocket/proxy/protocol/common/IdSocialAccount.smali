@@ -887,19 +887,19 @@
 
     .line 2
     :cond_0
-    sget-object v0, Lcom/supercell/websocket/proxy/protocol/common/IdSocialAccount$b;->g:Lcom/supercell/websocket/proxy/protocol/common/IdSocialAccount$b;
+    sget-object v0, Lcom/supercell/websocket/proxy/protocol/common/IdSocialAccount$b;->h:Lcom/supercell/websocket/proxy/protocol/common/IdSocialAccount$b;
 
     goto :goto_0
 
     .line 3
     :cond_1
-    sget-object v0, Lcom/supercell/websocket/proxy/protocol/common/IdSocialAccount$b;->f:Lcom/supercell/websocket/proxy/protocol/common/IdSocialAccount$b;
+    sget-object v0, Lcom/supercell/websocket/proxy/protocol/common/IdSocialAccount$b;->g:Lcom/supercell/websocket/proxy/protocol/common/IdSocialAccount$b;
 
     goto :goto_0
 
     .line 4
     :cond_2
-    sget-object v0, Lcom/supercell/websocket/proxy/protocol/common/IdSocialAccount$b;->h:Lcom/supercell/websocket/proxy/protocol/common/IdSocialAccount$b;
+    sget-object v0, Lcom/supercell/websocket/proxy/protocol/common/IdSocialAccount$b;->i:Lcom/supercell/websocket/proxy/protocol/common/IdSocialAccount$b;
 
     :goto_0
     return-object v0

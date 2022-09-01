@@ -25,29 +25,29 @@
 
 
 # instance fields
-.field public final f:Lcom/google/android/gms/games/GameEntity;
-
-.field public final g:Ljava/lang/String;
+.field public final g:Lcom/google/android/gms/games/GameEntity;
 
 .field public final h:Ljava/lang/String;
 
-.field public final i:J
+.field public final i:Ljava/lang/String;
 
-.field public final j:Ljava/lang/String;
+.field public final j:J
 
-.field public final k:J
+.field public final k:Ljava/lang/String;
 
-.field public final l:Ljava/lang/String;
+.field public final l:J
 
-.field public final m:I
+.field public final m:Ljava/lang/String;
 
 .field public final n:I
 
 .field public final o:I
 
-.field public final p:[B
+.field public final p:I
 
-.field public final q:Ljava/util/ArrayList;
+.field public final q:[B
+
+.field public final r:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/ArrayList<",
@@ -57,21 +57,21 @@
     .end annotation
 .end field
 
-.field public final r:Ljava/lang/String;
+.field public final s:Ljava/lang/String;
 
-.field public final s:[B
+.field public final t:[B
 
-.field public final t:I
+.field public final u:I
 
-.field public final u:Landroid/os/Bundle;
+.field public final v:Landroid/os/Bundle;
 
-.field public final v:I
+.field public final w:I
 
-.field public final w:Z
-
-.field public final x:Ljava/lang/String;
+.field public final x:Z
 
 .field public final y:Ljava/lang/String;
+
+.field public final z:Ljava/lang/String;
 
 
 # direct methods
@@ -121,102 +121,102 @@
     move-object v1, p1
 
     .line 30
-    iput-object v1, v0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->f:Lcom/google/android/gms/games/GameEntity;
+    iput-object v1, v0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->g:Lcom/google/android/gms/games/GameEntity;
 
     move-object v1, p2
 
     .line 31
-    iput-object v1, v0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->g:Ljava/lang/String;
+    iput-object v1, v0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->h:Ljava/lang/String;
 
     move-object v1, p3
 
     .line 32
-    iput-object v1, v0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->h:Ljava/lang/String;
+    iput-object v1, v0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->i:Ljava/lang/String;
 
     move-wide v1, p4
 
     .line 33
-    iput-wide v1, v0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->i:J
+    iput-wide v1, v0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->j:J
 
     move-object v1, p6
 
     .line 34
-    iput-object v1, v0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->j:Ljava/lang/String;
+    iput-object v1, v0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->k:Ljava/lang/String;
 
     move-wide v1, p7
 
     .line 35
-    iput-wide v1, v0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->k:J
+    iput-wide v1, v0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->l:J
 
     move-object v1, p9
 
     .line 36
-    iput-object v1, v0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->l:Ljava/lang/String;
+    iput-object v1, v0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->m:Ljava/lang/String;
 
     move v1, p10
 
     .line 37
-    iput v1, v0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->m:I
+    iput v1, v0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->n:I
 
     move/from16 v1, p19
 
     .line 38
-    iput v1, v0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->v:I
+    iput v1, v0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->w:I
 
     move v1, p11
 
     .line 39
-    iput v1, v0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->n:I
+    iput v1, v0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->o:I
 
     move v1, p12
 
     .line 40
-    iput v1, v0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->o:I
+    iput v1, v0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->p:I
 
     move-object/from16 v1, p13
 
     .line 41
-    iput-object v1, v0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->p:[B
+    iput-object v1, v0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->q:[B
 
     move-object/from16 v1, p14
 
     .line 42
-    iput-object v1, v0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->q:Ljava/util/ArrayList;
+    iput-object v1, v0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->r:Ljava/util/ArrayList;
 
     move-object/from16 v1, p15
 
     .line 43
-    iput-object v1, v0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->r:Ljava/lang/String;
+    iput-object v1, v0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->s:Ljava/lang/String;
 
     move-object/from16 v1, p16
 
     .line 44
-    iput-object v1, v0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->s:[B
+    iput-object v1, v0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->t:[B
 
     move/from16 v1, p17
 
     .line 45
-    iput v1, v0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->t:I
+    iput v1, v0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->u:I
 
     move-object/from16 v1, p18
 
     .line 46
-    iput-object v1, v0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->u:Landroid/os/Bundle;
+    iput-object v1, v0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->v:Landroid/os/Bundle;
 
     move/from16 v1, p20
 
     .line 47
-    iput-boolean v1, v0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->w:Z
+    iput-boolean v1, v0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->x:Z
 
     move-object/from16 v1, p21
 
     .line 48
-    iput-object v1, v0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->x:Ljava/lang/String;
+    iput-object v1, v0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->y:Ljava/lang/String;
 
     move-object/from16 v1, p22
 
     .line 49
-    iput-object v1, v0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->y:Ljava/lang/String;
+    iput-object v1, v0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->z:Ljava/lang/String;
 
     return-void
 .end method
@@ -225,7 +225,7 @@
     .locals 6
 
     .line 1
-    invoke-interface {p1}, Ld3/a;->S1()Ljava/util/ArrayList;
+    invoke-interface {p1}, Ld3/a;->R1()Ljava/util/ArrayList;
 
     move-result-object v0
 
@@ -245,119 +245,119 @@
 
     invoke-direct {v1, v2}, Lcom/google/android/gms/games/GameEntity;-><init>(Lcom/google/android/gms/games/Game;)V
 
-    iput-object v1, p0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->f:Lcom/google/android/gms/games/GameEntity;
+    iput-object v1, p0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->g:Lcom/google/android/gms/games/GameEntity;
 
     .line 4
     invoke-interface {p1}, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatch;->X0()Ljava/lang/String;
 
     move-result-object v1
 
-    iput-object v1, p0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->g:Ljava/lang/String;
+    iput-object v1, p0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->h:Ljava/lang/String;
 
     .line 5
     invoke-interface {p1}, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatch;->p()Ljava/lang/String;
 
     move-result-object v1
 
-    iput-object v1, p0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->h:Ljava/lang/String;
+    iput-object v1, p0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->i:Ljava/lang/String;
 
     .line 6
     invoke-interface {p1}, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatch;->f()J
 
     move-result-wide v1
 
-    iput-wide v1, p0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->i:J
+    iput-wide v1, p0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->j:J
 
     .line 7
     invoke-interface {p1}, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatch;->W0()Ljava/lang/String;
 
     move-result-object v1
 
-    iput-object v1, p0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->j:Ljava/lang/String;
+    iput-object v1, p0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->k:Ljava/lang/String;
 
     .line 8
     invoke-interface {p1}, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatch;->D()J
 
     move-result-wide v1
 
-    iput-wide v1, p0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->k:J
+    iput-wide v1, p0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->l:J
 
     .line 9
     invoke-interface {p1}, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatch;->E1()Ljava/lang/String;
 
     move-result-object v1
 
-    iput-object v1, p0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->l:Ljava/lang/String;
+    iput-object v1, p0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->m:Ljava/lang/String;
 
     .line 10
     invoke-interface {p1}, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatch;->getStatus()I
 
     move-result v1
 
-    iput v1, p0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->m:I
+    iput v1, p0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->n:I
 
     .line 11
     invoke-interface {p1}, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatch;->z1()I
 
     move-result v1
 
-    iput v1, p0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->v:I
+    iput v1, p0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->w:I
 
     .line 12
     invoke-interface {p1}, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatch;->g()I
 
     move-result v1
 
-    iput v1, p0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->n:I
+    iput v1, p0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->o:I
 
     .line 13
     invoke-interface {p1}, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatch;->U0()I
 
     move-result v1
 
-    iput v1, p0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->o:I
+    iput v1, p0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->p:I
 
     .line 14
     invoke-interface {p1}, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatch;->Z0()Ljava/lang/String;
 
     move-result-object v1
 
-    iput-object v1, p0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->r:Ljava/lang/String;
+    iput-object v1, p0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->s:Ljava/lang/String;
 
     .line 15
-    invoke-interface {p1}, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatch;->c2()I
+    invoke-interface {p1}, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatch;->b2()I
 
     move-result v1
 
-    iput v1, p0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->t:I
+    iput v1, p0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->u:I
 
     .line 16
     invoke-interface {p1}, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatch;->y()Landroid/os/Bundle;
 
     move-result-object v1
 
-    iput-object v1, p0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->u:Landroid/os/Bundle;
+    iput-object v1, p0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->v:Landroid/os/Bundle;
 
     .line 17
     invoke-interface {p1}, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatch;->h2()Z
 
     move-result v1
 
-    iput-boolean v1, p0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->w:Z
+    iput-boolean v1, p0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->x:Z
 
     .line 18
     invoke-interface {p1}, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatch;->getDescription()Ljava/lang/String;
 
     move-result-object v1
 
-    iput-object v1, p0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->x:Ljava/lang/String;
+    iput-object v1, p0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->y:Ljava/lang/String;
 
     .line 19
-    invoke-interface {p1}, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatch;->J1()Ljava/lang/String;
+    invoke-interface {p1}, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatch;->I1()Ljava/lang/String;
 
     move-result-object v1
 
-    iput-object v1, p0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->y:Ljava/lang/String;
+    iput-object v1, p0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->z:Ljava/lang/String;
 
     .line 20
     invoke-interface {p1}, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatch;->c1()[B
@@ -371,7 +371,7 @@
     if-nez v1, :cond_0
 
     .line 21
-    iput-object v2, p0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->p:[B
+    iput-object v2, p0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->q:[B
 
     goto :goto_0
 
@@ -381,7 +381,7 @@
 
     new-array v4, v4, [B
 
-    iput-object v4, p0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->p:[B
+    iput-object v4, p0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->q:[B
 
     .line 23
     array-length v5, v1
@@ -397,7 +397,7 @@
     if-nez p1, :cond_1
 
     .line 25
-    iput-object v2, p0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->s:[B
+    iput-object v2, p0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->t:[B
 
     goto :goto_1
 
@@ -407,7 +407,7 @@
 
     new-array v1, v1, [B
 
-    iput-object v1, p0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->s:[B
+    iput-object v1, p0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->t:[B
 
     .line 27
     array-length v2, p1
@@ -416,7 +416,7 @@
 
     .line 28
     :goto_1
-    iput-object v0, p0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->q:Ljava/util/ArrayList;
+    iput-object v0, p0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->r:Ljava/util/ArrayList;
 
     return-void
 .end method
@@ -561,7 +561,7 @@
     aput-object v1, v0, v2
 
     .line 13
-    invoke-interface {p0}, Ld3/a;->S1()Ljava/util/ArrayList;
+    invoke-interface {p0}, Ld3/a;->R1()Ljava/util/ArrayList;
 
     move-result-object v1
 
@@ -579,7 +579,7 @@
     aput-object v1, v0, v2
 
     .line 15
-    invoke-interface {p0}, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatch;->c2()I
+    invoke-interface {p0}, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatch;->b2()I
 
     move-result v1
 
@@ -596,7 +596,7 @@
 
     move-result-object v1
 
-    invoke-static {v1}, Lk/c;->a(Landroid/os/Bundle;)I
+    invoke-static {v1}, Le1/c;->a(Landroid/os/Bundle;)I
 
     move-result v1
 
@@ -894,11 +894,11 @@
     if-eqz v2, :cond_2
 
     .line 15
-    invoke-interface {p1}, Ld3/a;->S1()Ljava/util/ArrayList;
+    invoke-interface {p1}, Ld3/a;->R1()Ljava/util/ArrayList;
 
     move-result-object v2
 
-    invoke-interface {p0}, Ld3/a;->S1()Ljava/util/ArrayList;
+    invoke-interface {p0}, Ld3/a;->R1()Ljava/util/ArrayList;
 
     move-result-object v3
 
@@ -924,7 +924,7 @@
     if-eqz v2, :cond_2
 
     .line 17
-    invoke-interface {p1}, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatch;->c2()I
+    invoke-interface {p1}, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatch;->b2()I
 
     move-result v2
 
@@ -932,7 +932,7 @@
 
     move-result-object v2
 
-    invoke-interface {p0}, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatch;->c2()I
+    invoke-interface {p0}, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatch;->b2()I
 
     move-result v3
 
@@ -955,7 +955,7 @@
 
     move-result-object v3
 
-    invoke-static {v2, v3}, Lk/c;->b(Landroid/os/Bundle;Landroid/os/Bundle;)Z
+    invoke-static {v2, v3}, Le1/c;->b(Landroid/os/Bundle;Landroid/os/Bundle;)Z
 
     move-result v2
 
@@ -1163,7 +1163,7 @@
     invoke-virtual {v0, v2, v1}, Ld2/f$a;->a(Ljava/lang/String;Ljava/lang/Object;)Ld2/f$a;
 
     .line 15
-    invoke-interface {p0}, Ld3/a;->S1()Ljava/util/ArrayList;
+    invoke-interface {p0}, Ld3/a;->R1()Ljava/util/ArrayList;
 
     move-result-object v1
 
@@ -1190,7 +1190,7 @@
     invoke-virtual {v0, v2, v1}, Ld2/f$a;->a(Ljava/lang/String;Ljava/lang/Object;)Ld2/f$a;
 
     .line 18
-    invoke-interface {p0}, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatch;->c2()I
+    invoke-interface {p0}, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatch;->b2()I
 
     move-result v1
 
@@ -1238,7 +1238,7 @@
     invoke-virtual {v0, v2, v1}, Ld2/f$a;->a(Ljava/lang/String;Ljava/lang/Object;)Ld2/f$a;
 
     .line 22
-    invoke-interface {p0}, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatch;->J1()Ljava/lang/String;
+    invoke-interface {p0}, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatch;->I1()Ljava/lang/String;
 
     move-result-object p0
 
@@ -1259,7 +1259,7 @@
 .method public final D()J
     .locals 2
 
-    iget-wide v0, p0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->k:J
+    iget-wide v0, p0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->l:J
 
     return-wide v0
 .end method
@@ -1267,7 +1267,7 @@
 .method public final E1()Ljava/lang/String;
     .locals 1
 
-    iget-object v0, p0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->l:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->m:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -1275,20 +1275,20 @@
 .method public final F1()[B
     .locals 1
 
-    iget-object v0, p0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->s:[B
+    iget-object v0, p0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->t:[B
 
     return-object v0
 .end method
 
-.method public final J1()Ljava/lang/String;
+.method public final I1()Ljava/lang/String;
     .locals 1
 
-    iget-object v0, p0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->y:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->z:Ljava/lang/String;
 
     return-object v0
 .end method
 
-.method public final S1()Ljava/util/ArrayList;
+.method public final R1()Ljava/util/ArrayList;
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -1301,7 +1301,7 @@
 
     new-instance v0, Ljava/util/ArrayList;
 
-    iget-object v1, p0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->q:Ljava/util/ArrayList;
+    iget-object v1, p0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->r:Ljava/util/ArrayList;
 
     invoke-direct {v0, v1}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
 
@@ -1311,7 +1311,7 @@
 .method public final U0()I
     .locals 1
 
-    iget v0, p0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->o:I
+    iget v0, p0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->p:I
 
     return v0
 .end method
@@ -1319,7 +1319,7 @@
 .method public final W0()Ljava/lang/String;
     .locals 1
 
-    iget-object v0, p0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->j:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->k:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -1327,7 +1327,7 @@
 .method public final X0()Ljava/lang/String;
     .locals 1
 
-    iget-object v0, p0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->g:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->h:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -1335,31 +1335,31 @@
 .method public final Z0()Ljava/lang/String;
     .locals 1
 
-    iget-object v0, p0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->r:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->s:Ljava/lang/String;
 
     return-object v0
+.end method
+
+.method public final b2()I
+    .locals 1
+
+    iget v0, p0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->u:I
+
+    return v0
 .end method
 
 .method public final c1()[B
     .locals 1
 
-    iget-object v0, p0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->p:[B
+    iget-object v0, p0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->q:[B
 
     return-object v0
-.end method
-
-.method public final c2()I
-    .locals 1
-
-    iget v0, p0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->t:I
-
-    return v0
 .end method
 
 .method public final e()Lcom/google/android/gms/games/Game;
     .locals 1
 
-    iget-object v0, p0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->f:Lcom/google/android/gms/games/GameEntity;
+    iget-object v0, p0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->g:Lcom/google/android/gms/games/GameEntity;
 
     return-object v0
 .end method
@@ -1377,7 +1377,7 @@
 .method public final f()J
     .locals 2
 
-    iget-wide v0, p0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->i:J
+    iget-wide v0, p0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->j:J
 
     return-wide v0
 .end method
@@ -1385,7 +1385,7 @@
 .method public final g()I
     .locals 1
 
-    iget v0, p0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->n:I
+    iget v0, p0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->o:I
 
     return v0
 .end method
@@ -1393,7 +1393,7 @@
 .method public final getDescription()Ljava/lang/String;
     .locals 1
 
-    iget-object v0, p0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->x:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->y:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -1401,7 +1401,7 @@
 .method public final getStatus()I
     .locals 1
 
-    iget v0, p0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->m:I
+    iget v0, p0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->n:I
 
     return v0
 .end method
@@ -1409,7 +1409,7 @@
 .method public final h2()Z
     .locals 1
 
-    iget-boolean v0, p0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->w:Z
+    iget-boolean v0, p0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->x:Z
 
     return v0
 .end method
@@ -1427,7 +1427,7 @@
 .method public final p()Ljava/lang/String;
     .locals 1
 
-    iget-object v0, p0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->h:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->i:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -1453,7 +1453,7 @@
     move-result v0
 
     .line 2
-    iget-object v1, p0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->f:Lcom/google/android/gms/games/GameEntity;
+    iget-object v1, p0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->g:Lcom/google/android/gms/games/GameEntity;
 
     const/4 v2, 0x1
 
@@ -1463,7 +1463,7 @@
     invoke-static {p1, v2, v1, p2, v3}, Le2/b;->l(Landroid/os/Parcel;ILandroid/os/Parcelable;IZ)V
 
     .line 4
-    iget-object p2, p0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->g:Ljava/lang/String;
+    iget-object p2, p0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->h:Ljava/lang/String;
 
     const/4 v1, 0x2
 
@@ -1471,7 +1471,7 @@
     invoke-static {p1, v1, p2, v3}, Le2/b;->m(Landroid/os/Parcel;ILjava/lang/String;Z)V
 
     .line 6
-    iget-object p2, p0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->h:Ljava/lang/String;
+    iget-object p2, p0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->i:Ljava/lang/String;
 
     const/4 v1, 0x3
 
@@ -1479,7 +1479,7 @@
     invoke-static {p1, v1, p2, v3}, Le2/b;->m(Landroid/os/Parcel;ILjava/lang/String;Z)V
 
     .line 8
-    iget-wide v1, p0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->i:J
+    iget-wide v1, p0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->j:J
 
     const/4 p2, 0x4
 
@@ -1492,7 +1492,7 @@
     invoke-virtual {p1, v1, v2}, Landroid/os/Parcel;->writeLong(J)V
 
     .line 11
-    iget-object v1, p0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->j:Ljava/lang/String;
+    iget-object v1, p0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->k:Ljava/lang/String;
 
     const/4 v2, 0x5
 
@@ -1500,7 +1500,7 @@
     invoke-static {p1, v2, v1, v3}, Le2/b;->m(Landroid/os/Parcel;ILjava/lang/String;Z)V
 
     .line 13
-    iget-wide v1, p0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->k:J
+    iget-wide v1, p0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->l:J
 
     const/4 v5, 0x6
 
@@ -1511,7 +1511,7 @@
     invoke-virtual {p1, v1, v2}, Landroid/os/Parcel;->writeLong(J)V
 
     .line 16
-    iget-object v1, p0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->l:Ljava/lang/String;
+    iget-object v1, p0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->m:Ljava/lang/String;
 
     const/4 v2, 0x7
 
@@ -1519,7 +1519,7 @@
     invoke-static {p1, v2, v1, v3}, Le2/b;->m(Landroid/os/Parcel;ILjava/lang/String;Z)V
 
     .line 18
-    iget v1, p0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->m:I
+    iget v1, p0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->n:I
 
     .line 19
     invoke-static {p1, v4, p2}, Le2/b;->s(Landroid/os/Parcel;II)V
@@ -1528,7 +1528,7 @@
     invoke-virtual {p1, v1}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 21
-    iget v1, p0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->n:I
+    iget v1, p0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->o:I
 
     const/16 v2, 0xa
 
@@ -1539,7 +1539,7 @@
     invoke-virtual {p1, v1}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 24
-    iget v1, p0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->o:I
+    iget v1, p0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->p:I
 
     const/16 v2, 0xb
 
@@ -1550,7 +1550,7 @@
     invoke-virtual {p1, v1}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 27
-    iget-object v1, p0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->p:[B
+    iget-object v1, p0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->q:[B
 
     const/16 v2, 0xc
 
@@ -1558,7 +1558,7 @@
     invoke-static {p1, v2, v1, v3}, Le2/b;->e(Landroid/os/Parcel;I[BZ)V
 
     .line 29
-    invoke-virtual {p0}, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->S1()Ljava/util/ArrayList;
+    invoke-virtual {p0}, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->R1()Ljava/util/ArrayList;
 
     move-result-object v1
 
@@ -1568,7 +1568,7 @@
     invoke-static {p1, v2, v1, v3}, Le2/b;->q(Landroid/os/Parcel;ILjava/util/List;Z)V
 
     .line 31
-    iget-object v1, p0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->r:Ljava/lang/String;
+    iget-object v1, p0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->s:Ljava/lang/String;
 
     const/16 v2, 0xe
 
@@ -1576,7 +1576,7 @@
     invoke-static {p1, v2, v1, v3}, Le2/b;->m(Landroid/os/Parcel;ILjava/lang/String;Z)V
 
     .line 33
-    iget-object v1, p0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->s:[B
+    iget-object v1, p0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->t:[B
 
     const/16 v2, 0xf
 
@@ -1584,7 +1584,7 @@
     invoke-static {p1, v2, v1, v3}, Le2/b;->e(Landroid/os/Parcel;I[BZ)V
 
     .line 35
-    iget v1, p0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->t:I
+    iget v1, p0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->u:I
 
     const/16 v2, 0x10
 
@@ -1595,7 +1595,7 @@
     invoke-virtual {p1, v1}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 38
-    iget-object v1, p0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->u:Landroid/os/Bundle;
+    iget-object v1, p0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->v:Landroid/os/Bundle;
 
     const/16 v2, 0x11
 
@@ -1603,7 +1603,7 @@
     invoke-static {p1, v2, v1}, Le2/b;->d(Landroid/os/Parcel;ILandroid/os/Bundle;)V
 
     .line 40
-    iget v1, p0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->v:I
+    iget v1, p0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->w:I
 
     const/16 v2, 0x12
 
@@ -1614,7 +1614,7 @@
     invoke-virtual {p1, v1}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 43
-    iget-boolean v1, p0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->w:Z
+    iget-boolean v1, p0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->x:Z
 
     const/16 v2, 0x13
 
@@ -1625,7 +1625,7 @@
     invoke-virtual {p1, v1}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 46
-    iget-object p2, p0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->x:Ljava/lang/String;
+    iget-object p2, p0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->y:Ljava/lang/String;
 
     const/16 v1, 0x14
 
@@ -1633,7 +1633,7 @@
     invoke-static {p1, v1, p2, v3}, Le2/b;->m(Landroid/os/Parcel;ILjava/lang/String;Z)V
 
     .line 48
-    iget-object p2, p0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->y:Ljava/lang/String;
+    iget-object p2, p0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->z:Ljava/lang/String;
 
     const/16 v1, 0x15
 
@@ -1649,7 +1649,7 @@
 .method public final y()Landroid/os/Bundle;
     .locals 1
 
-    iget-object v0, p0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->u:Landroid/os/Bundle;
+    iget-object v0, p0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->v:Landroid/os/Bundle;
 
     return-object v0
 .end method
@@ -1658,7 +1658,7 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->u:Landroid/os/Bundle;
+    iget-object v0, p0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->v:Landroid/os/Bundle;
 
     if-nez v0, :cond_0
 
@@ -1680,7 +1680,7 @@
 .method public final z1()I
     .locals 1
 
-    iget v0, p0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->v:I
+    iget v0, p0, Lcom/google/android/gms/games/multiplayer/turnbased/TurnBasedMatchEntity;->w:I
 
     return v0
 .end method

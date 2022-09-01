@@ -54,7 +54,7 @@
     return-void
 .end method
 
-.method public final onResponse(Lef/b;Lef/c0;)V
+.method public final onResponse(Lef/b;Lef/b0;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -62,7 +62,7 @@
             "Lef/b<",
             "Ljava/lang/Object;",
             ">;",
-            "Lef/c0<",
+            "Lef/b0<",
             "Ljava/lang/Object;",
             ">;)V"
         }

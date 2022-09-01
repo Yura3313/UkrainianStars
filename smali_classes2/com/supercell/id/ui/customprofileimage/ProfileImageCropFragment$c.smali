@@ -18,18 +18,18 @@
 
 
 # instance fields
-.field public final synthetic f:Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment;
+.field public final synthetic g:Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment;
 
-.field public final synthetic g:Landroid/net/Uri;
+.field public final synthetic h:Landroid/net/Uri;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment;Landroid/net/Uri;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment$c;->f:Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment;
+    iput-object p1, p0, Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment$c;->g:Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment;
 
-    iput-object p2, p0, Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment$c;->g:Landroid/net/Uri;
+    iput-object p2, p0, Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment$c;->h:Landroid/net/Uri;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -42,14 +42,14 @@
     .locals 3
 
     .line 1
-    iget-object v0, p0, Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment$c;->g:Landroid/net/Uri;
+    iget-object v0, p0, Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment$c;->h:Landroid/net/Uri;
 
     invoke-virtual {v0}, Landroid/net/Uri;->getLastPathSegment()Ljava/lang/String;
 
     move-result-object v0
 
     .line 2
-    iget-object v1, p0, Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment$c;->f:Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment;
+    iget-object v1, p0, Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment$c;->g:Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment;
 
     invoke-virtual {v1}, Landroidx/fragment/app/Fragment;->z0()Landroid/content/Context;
 
@@ -59,7 +59,7 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment$c;->g:Landroid/net/Uri;
+    iget-object v2, p0, Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment$c;->h:Landroid/net/Uri;
 
     invoke-virtual {v1, v2}, Landroid/content/ContentResolver;->openInputStream(Landroid/net/Uri;)Ljava/io/InputStream;
 
@@ -76,7 +76,7 @@
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    invoke-static {v1, v2}, Lud/l;->a(Ljava/io/Closeable;Ljava/lang/Throwable;)V
+    invoke-static {v1, v2}, Le0/f;->f(Ljava/io/Closeable;Ljava/lang/Throwable;)V
 
     move-object v2, v0
 
@@ -93,7 +93,7 @@
     :catchall_1
     move-exception v2
 
-    invoke-static {v1, v0}, Lud/l;->a(Ljava/io/Closeable;Ljava/lang/Throwable;)V
+    invoke-static {v1, v0}, Le0/f;->f(Ljava/io/Closeable;Ljava/lang/Throwable;)V
 
     throw v2
 
@@ -104,7 +104,7 @@
 
     invoke-direct {v0, p0, v2}, Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment$c$a;-><init>(Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment$c;Landroid/graphics/drawable/Drawable;)V
 
-    invoke-static {v0}, Lae/v2;->a(Lre/a;)V
+    invoke-static {v0}, Lae/u2;->a(Lre/a;)V
 
     return-void
 .end method

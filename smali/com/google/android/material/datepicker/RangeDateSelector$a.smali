@@ -59,7 +59,7 @@
     check-cast v2, Ljava/lang/Long;
 
     .line 3
-    iput-object v2, v1, Lcom/google/android/material/datepicker/RangeDateSelector;->g:Ljava/lang/Long;
+    iput-object v2, v1, Lcom/google/android/material/datepicker/RangeDateSelector;->h:Ljava/lang/Long;
 
     .line 4
     invoke-virtual {v0}, Ljava/lang/Class;->getClassLoader()Ljava/lang/ClassLoader;
@@ -73,7 +73,7 @@
     check-cast p1, Ljava/lang/Long;
 
     .line 5
-    iput-object p1, v1, Lcom/google/android/material/datepicker/RangeDateSelector;->h:Ljava/lang/Long;
+    iput-object p1, v1, Lcom/google/android/material/datepicker/RangeDateSelector;->i:Ljava/lang/Long;
 
     return-object v1
 .end method

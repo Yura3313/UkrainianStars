@@ -1,5 +1,5 @@
 .class public final Lrc/s;
-.super Lse/h;
+.super Lse/i;
 .source "InventoryApiClient.kt"
 
 # interfaces
@@ -9,7 +9,7 @@
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/l<",
         "Lorg/json/JSONObject;",
         "Lorg/json/JSONArray;",
@@ -19,7 +19,7 @@
 
 
 # static fields
-.field public static final f:Lrc/s;
+.field public static final g:Lrc/s;
 
 
 # direct methods
@@ -30,7 +30,7 @@
 
     invoke-direct {v0}, Lrc/s;-><init>()V
 
-    sput-object v0, Lrc/s;->f:Lrc/s;
+    sput-object v0, Lrc/s;->g:Lrc/s;
 
     return-void
 .end method
@@ -40,7 +40,7 @@
 
     const/4 v0, 0x1
 
-    invoke-direct {p0, v0}, Lse/h;-><init>(I)V
+    invoke-direct {p0, v0}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -56,7 +56,7 @@
     const-string v0, "it"
 
     .line 2
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "items"
 

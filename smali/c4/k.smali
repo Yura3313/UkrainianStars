@@ -29,9 +29,9 @@
 
 
 # instance fields
-.field public final f:Ljava/util/concurrent/Executor;
+.field public final g:Ljava/util/concurrent/Executor;
 
-.field public final g:Lc4/a;
+.field public final h:Lc4/a;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lc4/a<",
@@ -42,7 +42,7 @@
     .end annotation
 .end field
 
-.field public final h:Lc4/y;
+.field public final i:Lc4/y;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lc4/y<",
@@ -72,13 +72,13 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lc4/k;->f:Ljava/util/concurrent/Executor;
+    iput-object p1, p0, Lc4/k;->g:Ljava/util/concurrent/Executor;
 
     .line 3
-    iput-object p2, p0, Lc4/k;->g:Lc4/a;
+    iput-object p2, p0, Lc4/k;->h:Lc4/a;
 
     .line 4
-    iput-object p3, p0, Lc4/k;->h:Lc4/y;
+    iput-object p3, p0, Lc4/k;->i:Lc4/y;
 
     return-void
 .end method
@@ -95,7 +95,7 @@
         }
     .end annotation
 
-    iget-object v0, p0, Lc4/k;->f:Ljava/util/concurrent/Executor;
+    iget-object v0, p0, Lc4/k;->g:Ljava/util/concurrent/Executor;
 
     new-instance v1, Lc4/l;
 
@@ -119,7 +119,7 @@
 .method public final c()V
     .locals 1
 
-    iget-object v0, p0, Lc4/k;->h:Lc4/y;
+    iget-object v0, p0, Lc4/k;->i:Lc4/y;
 
     invoke-virtual {v0}, Lc4/y;->q()Z
 
@@ -129,7 +129,7 @@
 .method public final onFailure(Ljava/lang/Exception;)V
     .locals 1
 
-    iget-object v0, p0, Lc4/k;->h:Lc4/y;
+    iget-object v0, p0, Lc4/k;->i:Lc4/y;
 
     invoke-virtual {v0, p1}, Lc4/y;->o(Ljava/lang/Exception;)V
 
@@ -144,7 +144,7 @@
         }
     .end annotation
 
-    iget-object v0, p0, Lc4/k;->h:Lc4/y;
+    iget-object v0, p0, Lc4/k;->i:Lc4/y;
 
     invoke-virtual {v0, p1}, Lc4/y;->p(Ljava/lang/Object;)V
 

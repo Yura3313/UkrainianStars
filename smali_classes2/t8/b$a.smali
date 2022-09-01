@@ -68,7 +68,7 @@
 
     iget-object v1, p0, Lt8/b$a;->c:Lq8/d;
 
-    iget-object v1, v1, Lq8/d;->g:Ljava/lang/Long;
+    iget-object v1, v1, Lq8/d;->h:Ljava/lang/Long;
 
     invoke-virtual {v0, v1}, Ljava/util/HashMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -98,7 +98,7 @@
 
     iget-object v2, p0, Lt8/b$a;->c:Lq8/d;
 
-    iget-object v2, v2, Lq8/d;->g:Ljava/lang/Long;
+    iget-object v2, v2, Lq8/d;->h:Ljava/lang/Long;
 
     invoke-virtual {v1, v2}, Ljava/util/HashMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 

@@ -16,11 +16,11 @@
 
 
 # instance fields
-.field public final f:I
+.field public final g:I
 
-.field public final g:Lcom/google/android/gms/common/ConnectionResult;
+.field public final h:Lcom/google/android/gms/common/ConnectionResult;
 
-.field public final h:Lcom/google/android/gms/common/internal/zau;
+.field public final i:Lcom/google/android/gms/common/internal/zau;
 
 
 # direct methods
@@ -55,13 +55,13 @@
     const/4 v1, 0x1
 
     .line 8
-    iput v1, p0, Lcom/google/android/gms/signin/internal/zak;->f:I
+    iput v1, p0, Lcom/google/android/gms/signin/internal/zak;->g:I
 
     .line 9
-    iput-object v0, p0, Lcom/google/android/gms/signin/internal/zak;->g:Lcom/google/android/gms/common/ConnectionResult;
+    iput-object v0, p0, Lcom/google/android/gms/signin/internal/zak;->h:Lcom/google/android/gms/common/ConnectionResult;
 
     .line 10
-    iput-object v2, p0, Lcom/google/android/gms/signin/internal/zak;->h:Lcom/google/android/gms/common/internal/zau;
+    iput-object v2, p0, Lcom/google/android/gms/signin/internal/zak;->i:Lcom/google/android/gms/common/internal/zau;
 
     return-void
 .end method
@@ -73,13 +73,13 @@
     invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
 
     .line 2
-    iput p1, p0, Lcom/google/android/gms/signin/internal/zak;->f:I
+    iput p1, p0, Lcom/google/android/gms/signin/internal/zak;->g:I
 
     .line 3
-    iput-object p2, p0, Lcom/google/android/gms/signin/internal/zak;->g:Lcom/google/android/gms/common/ConnectionResult;
+    iput-object p2, p0, Lcom/google/android/gms/signin/internal/zak;->h:Lcom/google/android/gms/common/ConnectionResult;
 
     .line 4
-    iput-object p3, p0, Lcom/google/android/gms/signin/internal/zak;->h:Lcom/google/android/gms/common/internal/zau;
+    iput-object p3, p0, Lcom/google/android/gms/signin/internal/zak;->i:Lcom/google/android/gms/common/internal/zau;
 
     return-void
 .end method
@@ -99,7 +99,7 @@
     const/4 v1, 0x1
 
     .line 2
-    iget v2, p0, Lcom/google/android/gms/signin/internal/zak;->f:I
+    iget v2, p0, Lcom/google/android/gms/signin/internal/zak;->g:I
 
     const/4 v3, 0x4
 
@@ -112,7 +112,7 @@
     const/4 v1, 0x2
 
     .line 5
-    iget-object v2, p0, Lcom/google/android/gms/signin/internal/zak;->g:Lcom/google/android/gms/common/ConnectionResult;
+    iget-object v2, p0, Lcom/google/android/gms/signin/internal/zak;->h:Lcom/google/android/gms/common/ConnectionResult;
 
     const/4 v3, 0x0
 
@@ -122,7 +122,7 @@
     const/4 v1, 0x3
 
     .line 7
-    iget-object v2, p0, Lcom/google/android/gms/signin/internal/zak;->h:Lcom/google/android/gms/common/internal/zau;
+    iget-object v2, p0, Lcom/google/android/gms/signin/internal/zak;->i:Lcom/google/android/gms/common/internal/zau;
 
     .line 8
     invoke-static {p1, v1, v2, p2, v3}, Le2/b;->l(Landroid/os/Parcel;ILandroid/os/Parcelable;IZ)V

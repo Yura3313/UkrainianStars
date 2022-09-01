@@ -141,7 +141,7 @@
     .end annotation
 
     .line 1
-    iget v0, p0, Lm/g;->h:I
+    iget v0, p0, Lm/g;->i:I
 
     :cond_0
     :goto_0

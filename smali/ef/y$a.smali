@@ -1,6 +1,6 @@
 .class public final Lef/y$a;
 .super Lef/y;
-.source "ParameterHandler.java"
+.source "Platform.java"
 
 
 # annotations
@@ -9,152 +9,188 @@
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x19
+    accessFlags = 0x9
     name = "a"
 .end annotation
 
-.annotation system Ldalvik/annotation/Signature;
+.annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        "<T:",
-        "Ljava/lang/Object;",
-        ">",
-        "Lef/y<",
-        "TT;>;"
+        Lef/y$a$a;
     }
 .end annotation
 
 
-# instance fields
-.field public final a:Ljava/lang/reflect/Method;
-
-.field public final b:I
-
-.field public final c:Lef/j;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lef/j<",
-            "TT;",
-            "Lokhttp3/RequestBody;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-
 # direct methods
-.method public constructor <init>(Ljava/lang/reflect/Method;ILef/j;)V
+.method public constructor <init>()V
     .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/lang/reflect/Method;",
-            "I",
-            "Lef/j<",
-            "TT;",
-            "Lokhttp3/RequestBody;",
-            ">;)V"
-        }
-    .end annotation
 
-    .line 1
     invoke-direct {p0}, Lef/y;-><init>()V
-
-    .line 2
-    iput-object p1, p0, Lef/y$a;->a:Ljava/lang/reflect/Method;
-
-    .line 3
-    iput p2, p0, Lef/y$a;->b:I
-
-    .line 4
-    iput-object p3, p0, Lef/y$a;->c:Lef/j;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Lef/a0;Ljava/lang/Object;)V
-    .locals 5
-    .param p2    # Ljava/lang/Object;
+.method public final a(Ljava/util/concurrent/Executor;)Ljava/util/List;
+    .locals 3
+    .param p1    # Ljava/util/concurrent/Executor;
         .annotation runtime Ljavax/annotation/Nullable;
         .end annotation
     .end param
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lef/a0;",
-            "TT;)V"
+            "Ljava/util/concurrent/Executor;",
+            ")",
+            "Ljava/util/List<",
+            "+",
+            "Lef/c$a;",
+            ">;"
         }
     .end annotation
 
-    const/4 v0, 0x0
-
-    if-eqz p2, :cond_0
+    if-eqz p1, :cond_1
 
     .line 1
-    :try_start_0
-    iget-object v1, p0, Lef/y$a;->c:Lef/j;
+    new-instance v0, Lef/l;
 
-    invoke-interface {v1, p2}, Lef/j;->convert(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v1
-
-    check-cast v1, Lokhttp3/RequestBody;
-    :try_end_0
-    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
+    invoke-direct {v0, p1}, Lef/l;-><init>(Ljava/util/concurrent/Executor;)V
 
     .line 2
-    iput-object v1, p1, Lef/a0;->k:Lokhttp3/RequestBody;
+    sget p1, Landroid/os/Build$VERSION;->SDK_INT:I
 
-    return-void
+    const/16 v1, 0x18
 
-    :catch_0
-    move-exception p1
+    if-lt p1, v1, :cond_0
+
+    const/4 p1, 0x2
+
+    new-array p1, p1, [Lef/c$a;
+
+    const/4 v1, 0x0
 
     .line 3
-    iget-object v1, p0, Lef/y$a;->a:Ljava/lang/reflect/Method;
+    sget-object v2, Lef/g;->a:Lef/g;
 
-    iget v2, p0, Lef/y$a;->b:I
+    aput-object v2, p1, v1
 
-    new-instance v3, Ljava/lang/StringBuilder;
+    const/4 v1, 0x1
 
-    invoke-direct {v3}, Ljava/lang/StringBuilder;-><init>()V
+    aput-object v0, p1, v1
 
-    const-string v4, "Unable to convert "
-
-    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v3, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    const-string p2, " to RequestBody"
-
-    invoke-virtual {v3, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p2
-
-    new-array v0, v0, [Ljava/lang/Object;
-
-    invoke-static {v1, p1, v2, p2, v0}, Lef/h0;->m(Ljava/lang/reflect/Method;Ljava/lang/Throwable;ILjava/lang/String;[Ljava/lang/Object;)Ljava/lang/RuntimeException;
+    invoke-static {p1}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object p1
 
-    throw p1
+    goto :goto_0
 
     .line 4
     :cond_0
-    iget-object p1, p0, Lef/y$a;->a:Ljava/lang/reflect/Method;
-
-    iget p2, p0, Lef/y$a;->b:I
-
-    new-array v0, v0, [Ljava/lang/Object;
-
-    const-string v1, "Body parameter value must not be null."
-
-    invoke-static {p1, p2, v1, v0}, Lef/h0;->l(Ljava/lang/reflect/Method;ILjava/lang/String;[Ljava/lang/Object;)Ljava/lang/RuntimeException;
+    invoke-static {v0}, Ljava/util/Collections;->singletonList(Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object p1
 
+    :goto_0
+    return-object p1
+
+    .line 5
+    :cond_1
+    new-instance p1, Ljava/lang/AssertionError;
+
+    invoke-direct {p1}, Ljava/lang/AssertionError;-><init>()V
+
     throw p1
+.end method
+
+.method public final b()Ljava/util/concurrent/Executor;
+    .locals 1
+
+    new-instance v0, Lef/y$a$a;
+
+    invoke-direct {v0}, Lef/y$a$a;-><init>()V
+
+    return-object v0
+.end method
+
+.method public final c()Ljava/util/List;
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/List<",
+            "+",
+            "Lef/j$a;",
+            ">;"
+        }
+    .end annotation
+
+    .line 1
+    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    const/16 v1, 0x18
+
+    if-lt v0, v1, :cond_0
+
+    .line 2
+    sget-object v0, Lef/u;->a:Lef/u;
+
+    invoke-static {v0}, Ljava/util/Collections;->singletonList(Ljava/lang/Object;)Ljava/util/List;
+
+    move-result-object v0
+
+    goto :goto_0
+
+    .line 3
+    :cond_0
+    invoke-static {}, Ljava/util/Collections;->emptyList()Ljava/util/List;
+
+    move-result-object v0
+
+    :goto_0
+    return-object v0
+.end method
+
+.method public final d()I
+    .locals 2
+
+    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    const/16 v1, 0x18
+
+    if-lt v0, v1, :cond_0
+
+    const/4 v0, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    :goto_0
+    return v0
+.end method
+
+.method public final f(Ljava/lang/reflect/Method;)Z
+    .locals 2
+    .annotation build Lorg/codehaus/mojo/animal_sniffer/IgnoreJRERequirement;
+    .end annotation
+
+    .line 1
+    sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
+
+    const/16 v1, 0x18
+
+    if-ge v0, v1, :cond_0
+
+    const/4 p1, 0x0
+
+    return p1
+
+    .line 2
+    :cond_0
+    invoke-virtual {p1}, Ljava/lang/reflect/Method;->isDefault()Z
+
+    move-result p1
+
+    return p1
 .end method

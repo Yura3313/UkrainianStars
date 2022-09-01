@@ -18,9 +18,9 @@
 
 
 # instance fields
-.field public f:[Ljava/io/File;
+.field public g:[Ljava/io/File;
 
-.field public final g:[Ljava/io/InputStream;
+.field public final h:[Ljava/io/InputStream;
 
 
 # direct methods
@@ -31,10 +31,10 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lac/a$e;->f:[Ljava/io/File;
+    iput-object p1, p0, Lac/a$e;->g:[Ljava/io/File;
 
     .line 3
-    iput-object p2, p0, Lac/a$e;->g:[Ljava/io/InputStream;
+    iput-object p2, p0, Lac/a$e;->h:[Ljava/io/InputStream;
 
     return-void
 .end method
@@ -45,7 +45,7 @@
     .locals 4
 
     .line 1
-    iget-object v0, p0, Lac/a$e;->g:[Ljava/io/InputStream;
+    iget-object v0, p0, Lac/a$e;->h:[Ljava/io/InputStream;
 
     array-length v1, v0
 

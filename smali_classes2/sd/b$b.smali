@@ -1,5 +1,5 @@
 .class public final Lsd/b$b;
-.super Lse/h;
+.super Lse/i;
 .source "FriendsFragment.kt"
 
 # interfaces
@@ -18,21 +18,21 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/l<",
         "Lcom/supercell/id/model/IdSocialAccount;",
-        "Lze/e0<",
+        "Lze/f0<",
         "+",
         "Ljava/util/List<",
         "+",
-        "Lvc/i;",
+        "Lvc/h;",
         ">;>;>;"
     }
 .end annotation
 
 
 # static fields
-.field public static final f:Lsd/b$b;
+.field public static final g:Lsd/b$b;
 
 
 # direct methods
@@ -43,7 +43,7 @@
 
     invoke-direct {v0}, Lsd/b$b;-><init>()V
 
-    sput-object v0, Lsd/b$b;->f:Lsd/b$b;
+    sput-object v0, Lsd/b$b;->g:Lsd/b$b;
 
     return-void
 .end method
@@ -53,7 +53,7 @@
 
     const/4 v0, 0x1
 
-    invoke-direct {p0, v0}, Lse/h;-><init>(I)V
+    invoke-direct {p0, v0}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -69,7 +69,7 @@
     const-string v0, "it"
 
     .line 2
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 3
     sget-object v0, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
@@ -105,7 +105,7 @@
     aput-object v3, v1, v2
 
     .line 8
-    invoke-virtual {p1}, Lcom/supercell/id/model/IdSocialAccount;->a()Lvc/e;
+    invoke-virtual {p1}, Lcom/supercell/id/model/IdSocialAccount;->a()Lvc/d;
 
     move-result-object v2
 
@@ -114,7 +114,7 @@
     if-eqz v2, :cond_0
 
     .line 9
-    iget-object v2, v2, Lvc/e;->a:Ljava/lang/String;
+    iget-object v2, v2, Lvc/d;->a:Ljava/lang/String;
 
     goto :goto_0
 
@@ -136,19 +136,19 @@
     const/4 v2, 0x2
 
     .line 11
-    invoke-virtual {p1}, Lcom/supercell/id/model/IdSocialAccount;->a()Lvc/e;
+    invoke-virtual {p1}, Lcom/supercell/id/model/IdSocialAccount;->a()Lvc/d;
 
     move-result-object p1
 
     if-eqz p1, :cond_1
 
     .line 12
-    iget-object p1, p1, Lvc/e;->b:Lvc/d;
+    iget-object p1, p1, Lvc/d;->b:Lvc/c;
 
     if-eqz p1, :cond_1
 
     .line 13
-    invoke-virtual {p1}, Lvc/d;->a()Ljava/lang/String;
+    invoke-virtual {p1}, Lvc/c;->a()Ljava/lang/String;
 
     move-result-object v3
 
@@ -163,7 +163,7 @@
     aput-object p1, v1, v2
 
     .line 15
-    invoke-static {v1}, Lcom/google/android/play/core/appupdate/c;->b([Lie/d;)Ljava/util/Map;
+    invoke-static {v1}, La5/b0;->k([Lie/d;)Ljava/util/Map;
 
     move-result-object v3
 
@@ -178,32 +178,32 @@
     move-object v1, v0
 
     .line 16
-    invoke-static/range {v1 .. v6}, Lrc/f;->e(Lrc/f;Ljava/lang/String;Ljava/util/Map;Ljava/lang/String;ILjava/lang/Object;)Lze/e0;
+    invoke-static/range {v1 .. v6}, Lrc/f;->e(Lrc/f;Ljava/lang/String;Ljava/util/Map;Ljava/lang/String;ILjava/lang/Object;)Lze/f0;
 
     move-result-object p1
 
     .line 17
-    new-instance v1, Lrc/m0;
+    new-instance v1, Lrc/l0;
 
-    invoke-direct {v1, v0}, Lrc/m0;-><init>(Lrc/d0;)V
+    invoke-direct {v1, v0}, Lrc/l0;-><init>(Lrc/d0;)V
 
-    invoke-static {p1, v1}, Lae/u1;->p(Lze/e0;Lre/l;)Lze/e0;
+    invoke-static {p1, v1}, Lae/t1;->o(Lze/f0;Lre/l;)Lze/f0;
 
     move-result-object p1
 
     .line 18
-    sget-object v0, Lrc/n0;->f:Lrc/n0;
+    sget-object v0, Lrc/m0;->g:Lrc/m0;
 
-    invoke-static {p1, v0}, Lae/u1;->p(Lze/e0;Lre/l;)Lze/e0;
+    invoke-static {p1, v0}, Lae/t1;->o(Lze/f0;Lre/l;)Lze/f0;
 
     move-result-object p1
 
     .line 19
-    new-instance v0, Lrc/o0;
+    new-instance v0, Lrc/n0;
 
-    invoke-direct {v0}, Lrc/o0;-><init>()V
+    invoke-direct {v0}, Lrc/n0;-><init>()V
 
-    invoke-static {p1, v0}, Lae/u1;->p(Lze/e0;Lre/l;)Lze/e0;
+    invoke-static {p1, v0}, Lae/t1;->o(Lze/f0;Lre/l;)Lze/f0;
 
     move-result-object p1
 

@@ -3,7 +3,7 @@
 .source "NVWebSocketListenerImpl.java"
 
 # interfaces
-.implements Lpb/i0;
+.implements Lpb/j0;
 
 
 # instance fields
@@ -46,7 +46,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lpb/e0;",
+            "Lpb/f0;",
             "Ljava/lang/String;",
             "Ljava/util/List<",
             "[",
@@ -144,10 +144,10 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lpb/e0;",
+            "Lpb/f0;",
             "Lcom/helpshift/websockets/WebSocketException;",
             "Ljava/util/List<",
-            "Lpb/g0;",
+            "Lpb/h0;",
             ">;)V"
         }
     .end annotation
@@ -216,7 +216,7 @@
     const/4 v3, 0x0
 
     .line 2
-    invoke-static {v1, v2, v3, v3}, Landroidx/savedstate/d;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v1, v2, v3, v3}, Le5/i;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
 
     const/4 v1, 0x0
 
@@ -277,7 +277,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lpb/e0;",
+            "Lpb/f0;",
             "Ljava/util/Map<",
             "Ljava/lang/String;",
             "Ljava/util/List<",
@@ -308,7 +308,7 @@
     const/4 v4, 0x0
 
     .line 2
-    invoke-static {v2, v3, v4, v4}, Landroidx/savedstate/d;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v2, v3, v4, v4}, Le5/i;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
 
     const/4 v3, 0x0
 
@@ -341,7 +341,7 @@
     const-string v3, "Subscribing to conversation topic"
 
     .line 8
-    invoke-static {v2, v3, v4, v4}, Landroidx/savedstate/d;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v2, v3, v4, v4}, Le5/i;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
 
     .line 9
     new-instance v2, Ljava/lang/StringBuilder;

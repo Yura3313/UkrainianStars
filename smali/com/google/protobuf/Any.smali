@@ -80,7 +80,7 @@
     iput-object v0, p0, Lcom/google/protobuf/Any;->typeUrl_:Ljava/lang/String;
 
     .line 3
-    sget-object v0, Lcom/google/protobuf/i;->g:Lcom/google/protobuf/i$h;
+    sget-object v0, Lcom/google/protobuf/i;->h:Lcom/google/protobuf/i$h;
 
     iput-object v0, p0, Lcom/google/protobuf/Any;->value_:Lcom/google/protobuf/i;
 

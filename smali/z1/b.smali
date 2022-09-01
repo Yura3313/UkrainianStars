@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field public f:Landroid/app/Dialog;
+.field public g:Landroid/app/Dialog;
 
-.field public g:Landroid/content/DialogInterface$OnCancelListener;
+.field public h:Landroid/content/DialogInterface$OnCancelListener;
 
-.field public h:Landroid/app/AlertDialog;
+.field public i:Landroid/app/AlertDialog;
 
 
 # direct methods
@@ -50,12 +50,12 @@
     invoke-virtual {p0, v1}, Landroid/app/Dialog;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
 
     .line 5
-    iput-object p0, v0, Lz1/b;->f:Landroid/app/Dialog;
+    iput-object p0, v0, Lz1/b;->g:Landroid/app/Dialog;
 
     if-eqz p1, :cond_0
 
     .line 6
-    iput-object p1, v0, Lz1/b;->g:Landroid/content/DialogInterface$OnCancelListener;
+    iput-object p1, v0, Lz1/b;->h:Landroid/content/DialogInterface$OnCancelListener;
 
     :cond_0
     return-object v0
@@ -71,7 +71,7 @@
     .end param
 
     .line 1
-    iget-object v0, p0, Lz1/b;->g:Landroid/content/DialogInterface$OnCancelListener;
+    iget-object v0, p0, Lz1/b;->h:Landroid/content/DialogInterface$OnCancelListener;
 
     if-eqz v0, :cond_0
 
@@ -86,7 +86,7 @@
     .locals 1
 
     .line 1
-    iget-object p1, p0, Lz1/b;->f:Landroid/app/Dialog;
+    iget-object p1, p0, Lz1/b;->g:Landroid/app/Dialog;
 
     if-nez p1, :cond_1
 
@@ -96,7 +96,7 @@
     invoke-virtual {p0, p1}, Landroid/app/DialogFragment;->setShowsDialog(Z)V
 
     .line 3
-    iget-object p1, p0, Lz1/b;->h:Landroid/app/AlertDialog;
+    iget-object p1, p0, Lz1/b;->i:Landroid/app/AlertDialog;
 
     if-nez p1, :cond_0
 
@@ -113,11 +113,11 @@
 
     move-result-object p1
 
-    iput-object p1, p0, Lz1/b;->h:Landroid/app/AlertDialog;
+    iput-object p1, p0, Lz1/b;->i:Landroid/app/AlertDialog;
 
     .line 5
     :cond_0
-    iget-object p1, p0, Lz1/b;->h:Landroid/app/AlertDialog;
+    iget-object p1, p0, Lz1/b;->i:Landroid/app/AlertDialog;
 
     :cond_1
     return-object p1

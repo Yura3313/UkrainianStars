@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field public final f:Lm/a;
+.field public final g:Lm/a;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lm/a<",
-            "Lb2/b<",
+            "Lb2/a<",
             "*>;",
             "Lcom/google/android/gms/common/ConnectionResult;",
             ">;"
@@ -27,7 +27,7 @@
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     .line 2
-    iget-object v1, p0, Lcom/google/android/gms/common/api/AvailabilityException;->f:Lm/a;
+    iget-object v1, p0, Lcom/google/android/gms/common/api/AvailabilityException;->g:Lm/a;
 
     invoke-virtual {v1}, Lm/a;->keySet()Ljava/util/Set;
 
@@ -52,10 +52,10 @@
 
     move-result-object v3
 
-    check-cast v3, Lb2/b;
+    check-cast v3, Lb2/a;
 
     .line 3
-    iget-object v4, p0, Lcom/google/android/gms/common/api/AvailabilityException;->f:Lm/a;
+    iget-object v4, p0, Lcom/google/android/gms/common/api/AvailabilityException;->g:Lm/a;
 
     const/4 v5, 0x0
 
@@ -84,7 +84,7 @@
 
     .line 7
     :cond_0
-    iget-object v3, v3, Lb2/b;->b:Lcom/google/android/gms/common/api/a;
+    iget-object v3, v3, Lb2/a;->b:Lcom/google/android/gms/common/api/a;
 
     .line 8
     iget-object v3, v3, Lcom/google/android/gms/common/api/a;->c:Ljava/lang/String;
@@ -97,7 +97,7 @@
     const/4 v5, 0x2
 
     .line 10
-    invoke-static {v3, v5}, La1/e;->a(Ljava/lang/String;I)I
+    invoke-static {v3, v5}, La1/e;->b(Ljava/lang/String;I)I
 
     move-result v5
 

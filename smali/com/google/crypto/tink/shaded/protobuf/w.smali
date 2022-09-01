@@ -18,11 +18,11 @@
 
 
 # static fields
-.field public static final g:Lcom/google/crypto/tink/shaded/protobuf/w;
+.field public static final h:Lcom/google/crypto/tink/shaded/protobuf/w;
 
 
 # instance fields
-.field public f:Z
+.field public g:Z
 
 
 # direct methods
@@ -34,12 +34,12 @@
 
     invoke-direct {v0}, Lcom/google/crypto/tink/shaded/protobuf/w;-><init>()V
 
-    sput-object v0, Lcom/google/crypto/tink/shaded/protobuf/w;->g:Lcom/google/crypto/tink/shaded/protobuf/w;
+    sput-object v0, Lcom/google/crypto/tink/shaded/protobuf/w;->h:Lcom/google/crypto/tink/shaded/protobuf/w;
 
     const/4 v1, 0x0
 
     .line 2
-    iput-boolean v1, v0, Lcom/google/crypto/tink/shaded/protobuf/w;->f:Z
+    iput-boolean v1, v0, Lcom/google/crypto/tink/shaded/protobuf/w;->g:Z
 
     return-void
 .end method
@@ -53,7 +53,7 @@
     const/4 v0, 0x1
 
     .line 2
-    iput-boolean v0, p0, Lcom/google/crypto/tink/shaded/protobuf/w;->f:Z
+    iput-boolean v0, p0, Lcom/google/crypto/tink/shaded/protobuf/w;->g:Z
 
     return-void
 .end method
@@ -74,7 +74,7 @@
     const/4 p1, 0x1
 
     .line 4
-    iput-boolean p1, p0, Lcom/google/crypto/tink/shaded/protobuf/w;->f:Z
+    iput-boolean p1, p0, Lcom/google/crypto/tink/shaded/protobuf/w;->g:Z
 
     return-void
 .end method
@@ -159,7 +159,7 @@
     .locals 1
 
     .line 1
-    iget-boolean v0, p0, Lcom/google/crypto/tink/shaded/protobuf/w;->f:Z
+    iget-boolean v0, p0, Lcom/google/crypto/tink/shaded/protobuf/w;->g:Z
 
     if-eqz v0, :cond_0
 

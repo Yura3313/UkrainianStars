@@ -8,28 +8,28 @@
 
 .field public i:Z
 
-.field public final j:Lvc/n$j$d;
+.field public final j:Lvc/m$j$d;
 
 
 # direct methods
-.method public constructor <init>(Lid/w;Lvc/n$j$d;)V
+.method public constructor <init>(Lid/w;Lvc/m$j$d;)V
     .locals 1
 
     const-string v0, "dialog"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "requestCreated"
 
-    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
-    invoke-direct {p0, p1, p2}, Lid/w$a;-><init>(Lid/w;Lvc/n$j;)V
+    invoke-direct {p0, p1, p2}, Lid/w$a;-><init>(Lid/w;Lvc/m$j;)V
 
-    iput-object p2, p0, Lid/o;->j:Lvc/n$j$d;
+    iput-object p2, p0, Lid/o;->j:Lvc/m$j$d;
 
     .line 2
-    iget-object p1, p2, Lvc/n$j$d;->i:Ljava/lang/String;
+    iget-object p1, p2, Lvc/m$j$d;->i:Ljava/lang/String;
 
     const/4 v0, 0x0
 
@@ -39,7 +39,7 @@
 
     .line 3
     :cond_0
-    iget-object p1, p2, Lvc/n$j$d;->h:Lcom/supercell/id/model/IdSocialAccount;
+    iget-object p1, p2, Lvc/m$j$d;->h:Lcom/supercell/id/model/IdSocialAccount;
 
     .line 4
     invoke-virtual {p1}, Lcom/supercell/id/model/IdSocialAccount;->d()Ljava/lang/String;
@@ -48,7 +48,7 @@
 
     if-eqz p1, :cond_1
 
-    invoke-static {p1}, Lae/t;->a(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p1}, Lae/t;->g(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 
@@ -66,17 +66,17 @@
 
     .line 5
     :cond_2
-    iget-object p1, p2, Lvc/n$j$d;->h:Lcom/supercell/id/model/IdSocialAccount;
+    iget-object p1, p2, Lvc/m$j$d;->h:Lcom/supercell/id/model/IdSocialAccount;
 
     .line 6
-    invoke-virtual {p1}, Lcom/supercell/id/model/IdSocialAccount;->a()Lvc/e;
+    invoke-virtual {p1}, Lcom/supercell/id/model/IdSocialAccount;->a()Lvc/d;
 
     move-result-object p1
 
     if-eqz p1, :cond_3
 
     .line 7
-    iget-object v0, p1, Lvc/e;->a:Ljava/lang/String;
+    iget-object v0, p1, Lvc/d;->a:Ljava/lang/String;
 
     :cond_3
     :goto_1
@@ -108,7 +108,7 @@
     invoke-direct {v0, p0}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
 
     .line 3
-    invoke-static {}, Lbf/g;->c()Lze/o;
+    invoke-static {}, Landroidx/lifecycle/b0;->b()Lze/o;
 
     move-result-object v1
 
@@ -138,13 +138,13 @@
 
     move-result-object v0
 
-    iget-object v2, p0, Lid/o;->j:Lvc/n$j$d;
+    iget-object v2, p0, Lid/o;->j:Lvc/m$j$d;
 
     .line 7
-    iget-object v2, v2, Lvc/n$j$d;->h:Lcom/supercell/id/model/IdSocialAccount;
+    iget-object v2, v2, Lvc/m$j$d;->h:Lcom/supercell/id/model/IdSocialAccount;
 
     .line 8
-    invoke-virtual {v0, v2}, Lbe/h;->f(Lcom/supercell/id/model/IdSocialAccount;)Lze/e0;
+    invoke-virtual {v0, v2}, Lbe/h;->f(Lcom/supercell/id/model/IdSocialAccount;)Lze/f0;
 
     move-result-object v0
 
@@ -171,26 +171,26 @@
     move-object v4, p0
 
     .line 11
-    invoke-static/range {v3 .. v8}, Lae/u1;->k(Lze/e0;Ljava/lang/Object;Lre/p;Lre/p;Lre/l;I)Lze/e0;
+    invoke-static/range {v3 .. v8}, Lae/t1;->j(Lze/f0;Ljava/lang/Object;Lre/p;Lre/p;Lre/l;I)Lze/f0;
 
     .line 12
-    iget-object v3, p0, Lid/o;->j:Lvc/n$j$d;
+    iget-object v3, p0, Lid/o;->j:Lvc/m$j$d;
 
     .line 13
     iget-object p0, p0, Lid/w$a;->f:Lid/w;
 
     .line 14
-    iget-object v4, p0, Lid/w;->j:Landroid/app/Activity;
+    iget-object v4, p0, Lid/w;->k:Landroid/app/Activity;
 
     .line 15
     new-instance v5, Lid/m;
 
-    invoke-direct {v5, v1, v3}, Lid/m;-><init>(Lze/o;Lvc/n$j$d;)V
+    invoke-direct {v5, v1, v3}, Lid/m;-><init>(Lze/o;Lvc/m$j$d;)V
 
     .line 16
     new-instance v6, Lid/n;
 
-    invoke-direct {v6, v1, v3}, Lid/n;-><init>(Lze/o;Lvc/n$j$d;)V
+    invoke-direct {v6, v1, v3}, Lid/n;-><init>(Lze/o;Lvc/m$j$d;)V
 
     move-object v3, v0
 
@@ -199,7 +199,7 @@
     move v8, v9
 
     .line 17
-    invoke-static/range {v3 .. v8}, Lae/u1;->k(Lze/e0;Ljava/lang/Object;Lre/p;Lre/p;Lre/l;I)Lze/e0;
+    invoke-static/range {v3 .. v8}, Lae/t1;->j(Lze/f0;Ljava/lang/Object;Lre/p;Lre/p;Lre/l;I)Lze/f0;
 
     return-void
 .end method
@@ -217,7 +217,7 @@
     move-result-object v1
 
     .line 2
-    iget-object v1, v1, Lae/u;->m:La5/d0;
+    iget-object v1, v1, Lae/u;->m:Lpe/a;
 
     const-string v2, "Friend Request Received Notification"
 
@@ -228,7 +228,7 @@
     const/16 v5, 0x18
 
     .line 3
-    invoke-static {v1, v2, v3, v4, v5}, La5/d0;->a(La5/d0;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;I)V
+    invoke-static {v1, v2, v3, v4, v5}, Lpe/a;->e(Lpe/a;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;I)V
 
     .line 4
     iget-object v1, p0, Lid/w$a;->f:Lid/w;
@@ -240,21 +240,21 @@
     iget-object v1, p0, Lid/w$a;->f:Lid/w;
 
     .line 7
-    iget-object v1, v1, Lid/w;->j:Landroid/app/Activity;
+    iget-object v1, v1, Lid/w;->k:Landroid/app/Activity;
 
     .line 8
     new-instance v8, Lcom/supercell/id/PresentationInfo$PublicProfile;
 
-    iget-object v2, p0, Lid/o;->j:Lvc/n$j$d;
+    iget-object v2, p0, Lid/o;->j:Lvc/m$j$d;
 
     .line 9
-    iget-object v4, v2, Lvc/n$j$d;->h:Lcom/supercell/id/model/IdSocialAccount;
+    iget-object v4, v2, Lvc/m$j$d;->h:Lcom/supercell/id/model/IdSocialAccount;
 
     .line 10
-    iget-object v5, v2, Lvc/n$j$d;->i:Ljava/lang/String;
+    iget-object v5, v2, Lvc/m$j$d;->i:Ljava/lang/String;
 
     .line 11
-    iget-object v6, v2, Lvc/n$j$d;->j:Lcom/supercell/id/model/ProfileImage;
+    iget-object v6, v2, Lvc/m$j$d;->j:Lcom/supercell/id/model/ProfileImage;
 
     const/4 v3, 0x0
 
@@ -275,7 +275,7 @@
 
     const-string v0, "inflater"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     sget v0, Lcom/supercell/id/R$layout;->dialog_notification_friend_request_received:I
 
@@ -287,7 +287,7 @@
 
     const-string p2, "inflater.inflate(R.layou\u2026_received, parent, false)"
 
-    invoke-static {p1, p2}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p2}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     return-object p1
 .end method
@@ -303,7 +303,7 @@
     move-result-object v0
 
     .line 2
-    iget-object v0, v0, Lae/u;->m:La5/d0;
+    iget-object v0, v0, Lae/u;->m:Lpe/a;
 
     const-string v1, "Friend Request Received Notification"
 
@@ -314,7 +314,7 @@
     const/16 v4, 0x1c
 
     .line 3
-    invoke-static {v0, v1, v2, v3, v4}, La5/d0;->a(La5/d0;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;I)V
+    invoke-static {v0, v1, v2, v3, v4}, Lpe/a;->e(Lpe/a;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;I)V
 
     return-void
 .end method
@@ -328,7 +328,7 @@
 
     const-string v2, "view"
 
-    invoke-static {v1, v2}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     sget v2, Lcom/supercell/id/R$id;->dialogContainer:I
@@ -343,7 +343,7 @@
 
     const-string v2, "view.dialogContainer"
 
-    invoke-static {v3, v2}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v3, v2}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/4 v4, 0x0
 
@@ -357,7 +357,7 @@
 
     const/16 v9, 0x1f
 
-    invoke-static/range {v3 .. v9}, Luc/d;->a(Landroid/view/View;IFFFLuc/o$b;I)V
+    invoke-static/range {v3 .. v9}, La5/a0;->a(Landroid/view/View;IFFFLuc/n$b;I)V
 
     .line 2
     sget v2, Lcom/supercell/id/R$id;->gameIconView:I
@@ -370,7 +370,7 @@
 
     const-string v3, "view.gameIconView"
 
-    invoke-static {v2, v3}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v2, v3}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     new-instance v3, Ljava/lang/StringBuilder;
 
@@ -407,7 +407,7 @@
     const/4 v5, 0x1
 
     .line 5
-    invoke-static {v2, v3, v5}, Lud/f0;->h(Landroid/widget/ImageView;Ljava/lang/String;Z)V
+    invoke-static {v2, v3, v5}, Lud/d0;->h(Landroid/widget/ImageView;Ljava/lang/String;Z)V
 
     .line 6
     sget v2, Lcom/supercell/id/R$id;->friendImageView:I
@@ -420,15 +420,15 @@
 
     const-string v3, "view.friendImageView"
 
-    invoke-static {v2, v3}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v2, v3}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    iget-object v3, v0, Lid/o;->j:Lvc/n$j$d;
+    iget-object v3, v0, Lid/o;->j:Lvc/m$j$d;
 
     .line 7
-    iget-object v3, v3, Lvc/n$j$d;->j:Lcom/supercell/id/model/ProfileImage;
+    iget-object v3, v3, Lvc/m$j$d;->j:Lcom/supercell/id/model/ProfileImage;
 
     .line 8
-    invoke-static {v2, v3}, Lud/f0;->g(Landroid/widget/ImageView;Lcom/supercell/id/model/ProfileImage;)V
+    invoke-static {v2, v3}, Lud/d0;->g(Landroid/widget/ImageView;Lcom/supercell/id/model/ProfileImage;)V
 
     .line 9
     sget v2, Lcom/supercell/id/R$id;->messageTextView:I
@@ -441,7 +441,7 @@
 
     const-string v6, "view.messageTextView"
 
-    invoke-static {v3, v6}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v3, v6}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     sget v7, Lcom/supercell/id/R$font;->supercell_text_android_md:I
 
@@ -454,7 +454,7 @@
 
     check-cast v3, Landroid/widget/TextView;
 
-    invoke-static {v3, v6}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v3, v6}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     new-array v7, v5, [Lie/d;
 
@@ -528,7 +528,7 @@
     aput-object v12, v10, v5
 
     .line 16
-    invoke-static {v8, v9, v10}, La5/w;->d(Landroid/text/SpannableStringBuilder;Ljava/lang/CharSequence;[Lie/d;)Landroid/text/SpannableStringBuilder;
+    invoke-static {v8, v9, v10}, Lae/t;->f(Landroid/text/SpannableStringBuilder;Ljava/lang/CharSequence;[Lie/d;)Landroid/text/SpannableStringBuilder;
 
     .line 17
     new-instance v5, Lie/d;
@@ -546,7 +546,7 @@
     const/4 v8, 0x0
 
     .line 18
-    invoke-static {v3, v5, v7, v8}, Lud/f0;->k(Landroid/widget/TextView;Ljava/lang/String;[Lie/d;Lre/l;)V
+    invoke-static {v3, v5, v7, v8}, Lud/d0;->k(Landroid/widget/TextView;Ljava/lang/String;[Lie/d;Lre/l;)V
 
     .line 19
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -555,7 +555,7 @@
 
     check-cast v2, Landroid/widget/TextView;
 
-    invoke-static {v2, v6}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v2, v6}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v4}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lae/u;
 
@@ -592,7 +592,7 @@
 
     const-string v4, "view.rejectButton"
 
-    invoke-static {v3, v4}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v3, v4}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-static {v3, v13}, Lae/r;->b(Landroid/widget/TextView;I)V
 
@@ -603,14 +603,14 @@
 
     check-cast v3, Lcom/supercell/id/view/WidthAdjustingMultilineButton;
 
-    invoke-static {v3, v4}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v3, v4}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v5, "ingame_friend_request_received_notification_reject_btn"
 
     const/4 v6, 0x0
 
     .line 24
-    invoke-static {v3, v5, v6}, Lud/f0;->j(Landroid/widget/TextView;Ljava/lang/String;Lre/p;)V
+    invoke-static {v3, v5, v6}, Lud/d0;->j(Landroid/widget/TextView;Ljava/lang/String;Lre/p;)V
 
     .line 25
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -619,9 +619,9 @@
 
     check-cast v3, Lcom/supercell/id/view/WidthAdjustingMultilineButton;
 
-    invoke-static {v3, v4}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v3, v4}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    sget-object v4, Lsc/a$a;->g:Lsc/a$a;
+    sget-object v4, Lsc/a$a;->h:Lsc/a$a;
 
     const/4 v4, 0x0
 
@@ -651,7 +651,7 @@
 
     const-string v4, "view.acceptButton"
 
-    invoke-static {v3, v4}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v3, v4}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-static {v3, v13}, Lae/r;->b(Landroid/widget/TextView;I)V
 
@@ -662,14 +662,14 @@
 
     check-cast v3, Lcom/supercell/id/view/WidthAdjustingMultilineButton;
 
-    invoke-static {v3, v4}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v3, v4}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v5, "ingame_friend_request_received_notification_accept_btn"
 
     const/4 v6, 0x0
 
     .line 29
-    invoke-static {v3, v5, v6}, Lud/f0;->j(Landroid/widget/TextView;Ljava/lang/String;Lre/p;)V
+    invoke-static {v3, v5, v6}, Lud/d0;->j(Landroid/widget/TextView;Ljava/lang/String;Lre/p;)V
 
     .line 30
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -678,7 +678,7 @@
 
     check-cast v3, Lcom/supercell/id/view/WidthAdjustingMultilineButton;
 
-    invoke-static {v3, v4}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v3, v4}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/4 v4, 0x0
 
@@ -708,7 +708,7 @@
 
     const-string v4, "view.okButton"
 
-    invoke-static {v3, v4}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v3, v4}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-static {v3, v13}, Lae/r;->b(Landroid/widget/TextView;I)V
 
@@ -719,14 +719,14 @@
 
     check-cast v3, Lcom/supercell/id/view/WidthAdjustingMultilineButton;
 
-    invoke-static {v3, v4}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v3, v4}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v5, "ingame_friend_request_received_notification_ok_btn"
 
     const/4 v6, 0x0
 
     .line 34
-    invoke-static {v3, v5, v6}, Lud/f0;->j(Landroid/widget/TextView;Ljava/lang/String;Lre/p;)V
+    invoke-static {v3, v5, v6}, Lud/d0;->j(Landroid/widget/TextView;Ljava/lang/String;Lre/p;)V
 
     .line 35
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -735,7 +735,7 @@
 
     check-cast v3, Lcom/supercell/id/view/WidthAdjustingMultilineButton;
 
-    invoke-static {v3, v4}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v3, v4}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/4 v4, 0x0
 
@@ -755,10 +755,10 @@
     invoke-virtual {v2, v3}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 37
-    iget-object v2, v0, Lid/o;->j:Lvc/n$j$d;
+    iget-object v2, v0, Lid/o;->j:Lvc/m$j$d;
 
     .line 38
-    iget-object v2, v2, Lvc/n$j$d;->k:Lae/m;
+    iget-object v2, v2, Lvc/m$j$d;->k:Lae/m;
 
     if-eqz v2, :cond_1
 
@@ -770,7 +770,7 @@
 
     .line 40
     :cond_2
-    invoke-static {}, Lt3/e;->f()V
+    invoke-static {}, Lt3/h;->j()V
 
     const/4 v1, 0x0
 
@@ -784,7 +784,7 @@
             "(",
             "Landroid/view/View;",
             "Lae/m<",
-            "Lvc/t;",
+            "Lvc/s;",
             "+",
             "Ljava/lang/Exception;",
             ">;)V"
@@ -813,7 +813,7 @@
 
     check-cast p2, Landroid/widget/TextView;
 
-    invoke-static {p2, v2}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v2}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/4 v0, 0x1
 
@@ -848,7 +848,7 @@
 
     const-string v10, "ResourcesCompat.getFont(\u2026ercell_text_android_bd)!!"
 
-    invoke-static {v9, v10}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v9, v10}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-direct {v8, v9}, Lae/j;-><init>(Landroid/graphics/Typeface;)V
 
@@ -892,7 +892,7 @@
     aput-object v10, v7, v0
 
     .line 9
-    invoke-static {v5, v6, v7}, La5/w;->d(Landroid/text/SpannableStringBuilder;Ljava/lang/CharSequence;[Lie/d;)Landroid/text/SpannableStringBuilder;
+    invoke-static {v5, v6, v7}, Lae/t;->f(Landroid/text/SpannableStringBuilder;Ljava/lang/CharSequence;[Lie/d;)Landroid/text/SpannableStringBuilder;
 
     .line 10
     new-instance v0, Lie/d;
@@ -906,13 +906,13 @@
     const-string v0, "ingame_friend_request_received_notification_message_accepted"
 
     .line 11
-    invoke-static {p2, v0, v2, v4}, Lud/f0;->k(Landroid/widget/TextView;Ljava/lang/String;[Lie/d;Lre/l;)V
+    invoke-static {p2, v0, v2, v4}, Lud/d0;->k(Landroid/widget/TextView;Ljava/lang/String;[Lie/d;Lre/l;)V
 
     goto :goto_0
 
     .line 12
     :cond_0
-    invoke-static {}, Lt3/e;->f()V
+    invoke-static {}, Lt3/h;->j()V
 
     throw v4
 
@@ -923,7 +923,7 @@
     if-eqz v0, :cond_2
 
     .line 14
-    sget-object v0, Lcom/supercell/id/util/NormalizedError;->l:Lcom/supercell/id/util/NormalizedError$b;
+    sget-object v0, Lcom/supercell/id/util/NormalizedError;->m:Lcom/supercell/id/util/NormalizedError$b;
 
     check-cast p2, Lae/m$b;
 
@@ -946,13 +946,13 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    invoke-static {v0, v2}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v2}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 18
-    iget-object v2, p2, Lcom/supercell/id/util/NormalizedError;->g:Ljava/lang/String;
+    iget-object v2, p2, Lcom/supercell/id/util/NormalizedError;->h:Ljava/lang/String;
 
     .line 19
-    invoke-static {v0, v2, v4}, Lud/f0;->j(Landroid/widget/TextView;Ljava/lang/String;Lre/p;)V
+    invoke-static {v0, v2, v4}, Lud/d0;->j(Landroid/widget/TextView;Ljava/lang/String;Lre/p;)V
 
     .line 20
     sget v0, Lcom/supercell/id/R$id;->okButton:I
@@ -963,13 +963,13 @@
 
     check-cast v0, Lcom/supercell/id/view/WidthAdjustingMultilineButton;
 
-    invoke-static {v0, v1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 21
-    iget-object p2, p2, Lcom/supercell/id/util/NormalizedError;->h:Ljava/lang/String;
+    iget-object p2, p2, Lcom/supercell/id/util/NormalizedError;->i:Ljava/lang/String;
 
     .line 22
-    invoke-static {v0, p2, v4}, Lud/f0;->j(Landroid/widget/TextView;Ljava/lang/String;Lre/p;)V
+    invoke-static {v0, p2, v4}, Lud/d0;->j(Landroid/widget/TextView;Ljava/lang/String;Lre/p;)V
 
     .line 23
     :cond_2
@@ -984,7 +984,7 @@
 
     const-string v0, "view.rejectButton"
 
-    invoke-static {p2, v0}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/4 v0, 0x4
 
@@ -1001,7 +1001,7 @@
 
     const-string v2, "view.acceptButton"
 
-    invoke-static {p2, v2}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v2}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {p2, v0}, Landroid/view/View;->setVisibility(I)V
 
@@ -1014,7 +1014,7 @@
 
     check-cast p2, Lcom/supercell/id/view/WidthAdjustingMultilineButton;
 
-    invoke-static {p2, v1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v1}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {p2, v3}, Landroid/view/View;->setVisibility(I)V
 

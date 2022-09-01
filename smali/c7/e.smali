@@ -88,7 +88,7 @@
     iget-object v5, v0, Lc7/a;->a:Ll6/b;
 
     .line 10
-    iget v6, v5, Ll6/b;->g:I
+    iget v6, v5, Ll6/b;->h:I
 
     .line 11
     invoke-virtual {v3, v5, v6}, Lc7/c;->e(Ll6/b;I)V
@@ -735,25 +735,25 @@
     sget-object v0, Lc7/d;->a:[C
 
     .line 64
-    sget-object v0, Lc7/h;->p:Lc7/h;
+    sget-object v0, Lc7/h;->q:Lc7/h;
 
-    sget-object v3, Lc7/h;->o:Lc7/h;
+    sget-object v3, Lc7/h;->p:Lc7/h;
 
-    sget-object v4, Lc7/h;->m:Lc7/h;
+    sget-object v4, Lc7/h;->n:Lc7/h;
 
-    sget-object v5, Lc7/h;->l:Lc7/h;
+    sget-object v5, Lc7/h;->m:Lc7/h;
 
-    sget-object v6, Lc7/h;->n:Lc7/h;
+    sget-object v6, Lc7/h;->o:Lc7/h;
 
-    sget-object v8, Lc7/h;->k:Lc7/h;
+    sget-object v8, Lc7/h;->l:Lc7/h;
 
-    sget-object v10, Lc7/h;->j:Lc7/h;
+    sget-object v10, Lc7/h;->k:Lc7/h;
 
-    sget-object v11, Lc7/h;->i:Lc7/h;
+    sget-object v11, Lc7/h;->j:Lc7/h;
 
-    sget-object v12, Lc7/h;->h:Lc7/h;
+    sget-object v12, Lc7/h;->i:Lc7/h;
 
-    sget-object v13, Lc7/h;->g:Lc7/h;
+    sget-object v13, Lc7/h;->h:Lc7/h;
 
     new-instance v14, Ll6/c;
 
@@ -1095,7 +1095,7 @@
 
     .line 82
     :goto_1c
-    iget-object v5, v2, Lc7/h;->f:[I
+    iget-object v5, v2, Lc7/h;->g:[I
 
     aget v3, v5, v3
 
@@ -1141,7 +1141,7 @@
 
     .line 86
     :goto_1d
-    iget-object v4, v2, Lc7/h;->f:[I
+    iget-object v4, v2, Lc7/h;->g:[I
 
     aget v3, v4, v3
 

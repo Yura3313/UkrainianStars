@@ -16,15 +16,15 @@
 
 
 # instance fields
-.field public final f:I
-
 .field public final g:I
 
 .field public final h:I
 
-.field public final i:J
+.field public final i:I
 
 .field public final j:J
+
+.field public final k:J
 
 
 # direct methods
@@ -47,19 +47,19 @@
     invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
 
     .line 2
-    iput p1, p0, Lcom/google/android/gms/common/internal/zao;->f:I
+    iput p1, p0, Lcom/google/android/gms/common/internal/zao;->g:I
 
     .line 3
-    iput p2, p0, Lcom/google/android/gms/common/internal/zao;->g:I
+    iput p2, p0, Lcom/google/android/gms/common/internal/zao;->h:I
 
     .line 4
-    iput p3, p0, Lcom/google/android/gms/common/internal/zao;->h:I
+    iput p3, p0, Lcom/google/android/gms/common/internal/zao;->i:I
 
     .line 5
-    iput-wide p4, p0, Lcom/google/android/gms/common/internal/zao;->i:J
+    iput-wide p4, p0, Lcom/google/android/gms/common/internal/zao;->j:J
 
     .line 6
-    iput-wide p6, p0, Lcom/google/android/gms/common/internal/zao;->j:J
+    iput-wide p6, p0, Lcom/google/android/gms/common/internal/zao;->k:J
 
     return-void
 .end method
@@ -77,7 +77,7 @@
     move-result p2
 
     .line 2
-    iget v0, p0, Lcom/google/android/gms/common/internal/zao;->f:I
+    iget v0, p0, Lcom/google/android/gms/common/internal/zao;->g:I
 
     const/4 v1, 0x1
 
@@ -90,7 +90,7 @@
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 5
-    iget v0, p0, Lcom/google/android/gms/common/internal/zao;->g:I
+    iget v0, p0, Lcom/google/android/gms/common/internal/zao;->h:I
 
     const/4 v1, 0x2
 
@@ -101,7 +101,7 @@
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 8
-    iget v0, p0, Lcom/google/android/gms/common/internal/zao;->h:I
+    iget v0, p0, Lcom/google/android/gms/common/internal/zao;->i:I
 
     const/4 v1, 0x3
 
@@ -112,7 +112,7 @@
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 11
-    iget-wide v0, p0, Lcom/google/android/gms/common/internal/zao;->i:J
+    iget-wide v0, p0, Lcom/google/android/gms/common/internal/zao;->j:J
 
     const/16 v3, 0x8
 
@@ -123,7 +123,7 @@
     invoke-virtual {p1, v0, v1}, Landroid/os/Parcel;->writeLong(J)V
 
     .line 14
-    iget-wide v0, p0, Lcom/google/android/gms/common/internal/zao;->j:J
+    iget-wide v0, p0, Lcom/google/android/gms/common/internal/zao;->k:J
 
     const/4 v2, 0x5
 

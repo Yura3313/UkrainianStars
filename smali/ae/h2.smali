@@ -1,78 +1,141 @@
 .class public final Lae/h2;
-.super Lse/h;
+.super Ljava/lang/Object;
 .source "SharedAccountStorage.kt"
 
-# interfaces
-.implements Lre/p;
 
+# instance fields
+.field public a:Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/List<",
+            "Lcom/supercell/id/IdAccount;",
+            ">;"
+        }
+    .end annotation
+.end field
 
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Lse/h;",
-        "Lre/p<",
-        "Lae/i2;",
-        "Ljava/util/List<",
-        "+",
-        "Lcom/supercell/id/IdAccount;",
-        ">;",
-        "Lie/h;",
-        ">;"
-    }
-.end annotation
+.field public final b:Landroid/content/Context;
 
-
-# static fields
-.field public static final f:Lae/h2;
+.field public final c:Ljava/lang/String;
 
 
 # direct methods
-.method public static constructor <clinit>()V
+.method public constructor <init>(Landroid/content/Context;Ljava/lang/String;)V
     .locals 1
 
-    new-instance v0, Lae/h2;
+    const-string v0, "context"
 
-    invoke-direct {v0}, Lae/h2;-><init>()V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    sput-object v0, Lae/h2;->f:Lae/h2;
+    const-string v0, "environment"
 
-    return-void
-.end method
+    invoke-static {p2, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-.method public constructor <init>()V
-    .locals 1
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    const/4 v0, 0x2
+    iput-object p1, p0, Lae/h2;->b:Landroid/content/Context;
 
-    invoke-direct {p0, v0}, Lse/h;-><init>(I)V
+    iput-object p2, p0, Lae/h2;->c:Ljava/lang/String;
+
+    .line 2
+    sget-object p1, Lje/l;->g:Lje/l;
+
+    iput-object p1, p0, Lae/h2;->a:Ljava/util/List;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 1
+.method public final a(Ljava/util/List;)V
+    .locals 4
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/List<",
+            "Lcom/supercell/id/IdAccount;",
+            ">;)V"
+        }
+    .end annotation
 
     .line 1
-    check-cast p1, Lae/i2;
+    sget-object v0, Lae/i2;->b:Lae/i2$a;
 
-    check-cast p2, Ljava/util/List;
+    iget-object v1, p0, Lae/h2;->b:Landroid/content/Context;
 
-    const-string v0, "$receiver"
+    invoke-virtual {v0, v1}, Lae/j2;->a(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Lae/i2;
 
     .line 2
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    iget-object v2, p0, Lae/h2;->c:Ljava/lang/String;
 
-    const-string v0, "it"
+    invoke-virtual {v0, v2}, Lae/i2$a;->b(Ljava/lang/String;)Ljava/lang/String;
 
-    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    move-result-object v0
 
     .line 3
-    iput-object p2, p1, Lae/i2;->a:Ljava/util/List;
+    new-instance v2, Lorg/json/JSONArray;
+
+    invoke-direct {v2}, Lorg/json/JSONArray;-><init>()V
 
     .line 4
-    sget-object p1, Lie/h;->a:Lie/h;
+    invoke-interface {p1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
-    return-object p1
+    move-result-object p1
+
+    :goto_0
+    invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v3
+
+    if-eqz v3, :cond_0
+
+    invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v3
+
+    check-cast v3, Lcom/supercell/id/IdAccount;
+
+    .line 5
+    invoke-virtual {v3}, Lcom/supercell/id/IdAccount;->toJsonObject()Lorg/json/JSONObject;
+
+    move-result-object v3
+
+    invoke-virtual {v2, v3}, Lorg/json/JSONArray;->put(Ljava/lang/Object;)Lorg/json/JSONArray;
+
+    move-result-object v2
+
+    const-string v3, "acc.put(account.toJsonObject())"
+
+    invoke-static {v2, v3}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
+
+    goto :goto_0
+
+    .line 6
+    :cond_0
+    invoke-virtual {v2}, Lorg/json/JSONArray;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    .line 7
+    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    const-string v2, "key"
+
+    .line 8
+    invoke-static {v0, v2}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 9
+    iget-object v1, v1, Lae/i2;->a:Lae/p;
+
+    if-eqz v1, :cond_1
+
+    invoke-virtual {v1, v0, p1}, Lae/p;->b(Ljava/lang/String;Ljava/lang/String;)V
+
+    :cond_1
+    return-void
 .end method

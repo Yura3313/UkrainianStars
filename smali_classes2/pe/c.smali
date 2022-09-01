@@ -41,7 +41,7 @@
 
     const-string v1, "direction"
 
-    invoke-static {v0, v1}, Lcom/google/android/gms/ads/e;->c(ILjava/lang/String;)V
+    invoke-static {v0, v1}, Lt3/g;->a(ILjava/lang/String;)V
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field public final synthetic f:Lio/sentry/android/core/AppLifecycleIntegration;
+.field public final synthetic g:Lio/sentry/android/core/AppLifecycleIntegration;
 
-.field public final synthetic g:Lio/sentry/IHub;
+.field public final synthetic h:Lio/sentry/IHub;
 
 
 # direct methods
@@ -18,9 +18,9 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lio/sentry/android/core/j;->f:Lio/sentry/android/core/AppLifecycleIntegration;
+    iput-object p1, p0, Lio/sentry/android/core/j;->g:Lio/sentry/android/core/AppLifecycleIntegration;
 
-    iput-object p2, p0, Lio/sentry/android/core/j;->g:Lio/sentry/IHub;
+    iput-object p2, p0, Lio/sentry/android/core/j;->h:Lio/sentry/IHub;
 
     return-void
 .end method
@@ -30,9 +30,9 @@
 .method public final run()V
     .locals 2
 
-    iget-object v0, p0, Lio/sentry/android/core/j;->f:Lio/sentry/android/core/AppLifecycleIntegration;
+    iget-object v0, p0, Lio/sentry/android/core/j;->g:Lio/sentry/android/core/AppLifecycleIntegration;
 
-    iget-object v1, p0, Lio/sentry/android/core/j;->g:Lio/sentry/IHub;
+    iget-object v1, p0, Lio/sentry/android/core/j;->h:Lio/sentry/IHub;
 
     invoke-static {v0, v1}, Lio/sentry/android/core/AppLifecycleIntegration;->b(Lio/sentry/android/core/AppLifecycleIntegration;Lio/sentry/IHub;)V
 

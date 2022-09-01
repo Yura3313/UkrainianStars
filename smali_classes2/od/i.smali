@@ -1,82 +1,116 @@
 .class public final Lod/i;
-.super Ljava/lang/Object;
-.source "Comparisons.kt"
-
-# interfaces
-.implements Ljava/util/Comparator;
-
-
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "<T:",
-        "Ljava/lang/Object;",
-        ">",
-        "Ljava/lang/Object;",
-        "Ljava/util/Comparator<",
-        "TT;>;"
-    }
-.end annotation
+.super Lae/w;
+.source "OnboardingInviteFriendsPageFragment.kt"
 
 
 # instance fields
-.field public final synthetic f:Ljava/util/Comparator;
+.field public h:Landroid/graphics/Rect;
+
+.field public final synthetic i:Ljava/lang/ref/WeakReference;
+
+.field public final synthetic j:Lod/s;
 
 
 # direct methods
-.method public constructor <init>(Ljava/util/Comparator;)V
+.method public constructor <init>(Ljava/lang/ref/WeakReference;Lod/s;)V
     .locals 0
 
-    iput-object p1, p0, Lod/i;->f:Ljava/util/Comparator;
+    iput-object p1, p0, Lod/i;->i:Ljava/lang/ref/WeakReference;
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput-object p2, p0, Lod/i;->j:Lod/s;
+
+    invoke-direct {p0}, Lae/w;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final compare(Ljava/lang/Object;Ljava/lang/Object;)I
-    .locals 2
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TT;TT;)I"
-        }
-    .end annotation
+.method public final a(Landroid/graphics/Rect;)V
+    .locals 8
+
+    const-string v0, "systemWindowInsets"
+
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
-    iget-object v0, p0, Lod/i;->f:Ljava/util/Comparator;
+    iget-object v0, p0, Lod/i;->i:Ljava/lang/ref/WeakReference;
 
-    check-cast p1, Lod/c$a;
+    invoke-virtual {v0}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    move-object v2, v0
+
+    check-cast v2, Lod/d;
+
+    if-eqz v2, :cond_2
 
     .line 2
-    iget-object p1, p1, Lod/c$a;->b:Ljava/lang/String;
+    iget-object v0, p0, Lod/i;->h:Landroid/graphics/Rect;
 
-    const-string v1, ""
-
-    if-eqz p1, :cond_0
-
-    goto :goto_0
-
-    :cond_0
-    move-object p1, v1
+    if-eqz v0, :cond_0
 
     .line 3
-    :goto_0
-    check-cast p2, Lod/c$a;
+    iget v1, v0, Landroid/graphics/Rect;->left:I
+
+    iget v3, p1, Landroid/graphics/Rect;->left:I
+
+    if-ne v1, v3, :cond_0
+
+    iget v0, v0, Landroid/graphics/Rect;->right:I
+
+    iget v1, p1, Landroid/graphics/Rect;->right:I
+
+    if-eq v0, v1, :cond_1
 
     .line 4
-    iget-object p2, p2, Lod/c$a;->b:Ljava/lang/String;
+    :cond_0
+    sget v0, Lcom/supercell/id/R$id;->sticky_header_container:I
 
-    if-eqz p2, :cond_1
+    invoke-virtual {v2, v0}, Lod/d;->V0(I)Landroid/view/View;
 
-    move-object v1, p2
+    move-result-object v0
+
+    if-eqz v0, :cond_2
 
     .line 5
+    sget v1, Lcom/supercell/id/R$id;->friends_header_container:I
+
+    invoke-virtual {v2, v1}, Lod/d;->V0(I)Landroid/view/View;
+
+    move-result-object v4
+
+    if-eqz v4, :cond_2
+
+    .line 6
+    sget v1, Lcom/supercell/id/R$id;->end_system_inset_guide:I
+
+    invoke-virtual {v2, v1}, Lod/d;->V0(I)Landroid/view/View;
+
+    move-result-object v1
+
+    move-object v5, v1
+
+    check-cast v5, Landroid/widget/FrameLayout;
+
+    .line 7
+    new-instance v7, Lod/i$a;
+
+    move-object v1, v7
+
+    move-object v3, v0
+
+    move-object v6, p0
+
+    invoke-direct/range {v1 .. v6}, Lod/i$a;-><init>(Lod/d;Landroid/view/View;Landroid/view/View;Landroid/widget/FrameLayout;Lod/i;)V
+
+    invoke-virtual {v0, v7}, Landroid/view/View;->post(Ljava/lang/Runnable;)Z
+
+    .line 8
     :cond_1
-    invoke-interface {v0, p1, v1}, Ljava/util/Comparator;->compare(Ljava/lang/Object;Ljava/lang/Object;)I
+    iput-object p1, p0, Lod/i;->h:Landroid/graphics/Rect;
 
-    move-result p1
-
-    return p1
+    :cond_2
+    return-void
 .end method

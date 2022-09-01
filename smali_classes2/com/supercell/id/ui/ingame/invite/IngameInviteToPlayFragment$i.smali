@@ -1,5 +1,5 @@
 .class public final Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$i;
-.super Lse/h;
+.super Lse/i;
 .source "IngameInviteToPlayFragment.kt"
 
 # interfaces
@@ -18,7 +18,7 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/a<",
         "Ljava/lang/Boolean;",
         ">;"
@@ -27,18 +27,18 @@
 
 
 # instance fields
-.field public final synthetic f:Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment;
+.field public final synthetic g:Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$i;->f:Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment;
+    iput-object p1, p0, Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$i;->g:Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment;
 
     const/4 p1, 0x0
 
-    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -65,10 +65,10 @@
 
     if-eqz v0, :cond_0
 
-    iget-object v2, p0, Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$i;->f:Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment;
+    iget-object v2, p0, Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$i;->g:Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment;
 
     .line 2
-    iget-object v2, v2, Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment;->i0:Ljava/lang/String;
+    iget-object v2, v2, Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment;->j0:Ljava/lang/String;
 
     .line 3
     invoke-interface {v0, v2}, Ljava/util/List;->contains(Ljava/lang/Object;)Z

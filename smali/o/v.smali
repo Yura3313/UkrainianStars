@@ -3,7 +3,7 @@
 .source "TouchResponse.java"
 
 # interfaces
-.implements Landroid/view/View$OnTouchListener;
+.implements Landroidx/core/widget/NestedScrollView$b;
 
 
 # direct methods
@@ -17,10 +17,8 @@
 
 
 # virtual methods
-.method public final onTouch(Landroid/view/View;Landroid/view/MotionEvent;)Z
+.method public final a(Landroidx/core/widget/NestedScrollView;II)V
     .locals 0
 
-    const/4 p1, 0x0
-
-    return p1
+    return-void
 .end method

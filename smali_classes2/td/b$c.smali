@@ -1,5 +1,5 @@
 .class public final synthetic Ltd/b$c;
-.super Lse/g;
+.super Lse/h;
 .source "RegisterEnterContactDetailsPageFragment.kt"
 
 # interfaces
@@ -18,7 +18,7 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/g;",
+        "Lse/h;",
         "Lre/l<",
         "Ljava/lang/Integer;",
         "Ljava/lang/String;",
@@ -28,7 +28,7 @@
 
 
 # static fields
-.field public static final g:Ltd/b$c;
+.field public static final h:Ltd/b$c;
 
 
 # direct methods
@@ -39,7 +39,7 @@
 
     invoke-direct {v0}, Ltd/b$c;-><init>()V
 
-    sput-object v0, Ltd/b$c;->g:Ltd/b$c;
+    sput-object v0, Ltd/b$c;->h:Ltd/b$c;
 
     return-void
 .end method
@@ -49,7 +49,7 @@
 
     const/4 v0, 0x1
 
-    invoke-direct {p0, v0}, Lse/g;-><init>(I)V
+    invoke-direct {p0, v0}, Lse/h;-><init>(I)V
 
     return-void
 .end method
@@ -69,11 +69,11 @@
 
     const-class v0, Ltd/c;
 
-    sget-object v1, Lse/r;->a:Lse/s;
+    sget-object v1, Lse/s;->a:Lse/t;
 
     const-string v2, "supercellId_release"
 
-    invoke-virtual {v1, v0, v2}, Lse/s;->a(Ljava/lang/Class;Ljava/lang/String;)Lwe/d;
+    invoke-virtual {v1, v0, v2}, Lse/t;->a(Ljava/lang/Class;Ljava/lang/String;)Lwe/d;
 
     move-result-object v0
 

@@ -93,7 +93,7 @@
     iget-object v6, p0, Lp/f;->i:Lp/f$b;
 
     .line 5
-    iput-object v5, v6, Lp/f$b;->f:Lp/h;
+    iput-object v5, v6, Lp/f$b;->g:Lp/h;
 
     const/16 v5, 0x8
 
@@ -105,7 +105,7 @@
     if-ltz v5, :cond_3
 
     .line 6
-    iget-object v4, v6, Lp/f$b;->f:Lp/h;
+    iget-object v4, v6, Lp/f$b;->g:Lp/h;
 
     iget-object v4, v4, Lp/h;->h:[F
 
@@ -153,7 +153,7 @@
     aget v8, v8, v5
 
     .line 9
-    iget-object v9, v6, Lp/f$b;->f:Lp/h;
+    iget-object v9, v6, Lp/f$b;->g:Lp/h;
 
     iget-object v9, v9, Lp/h;->h:[F
 
@@ -265,7 +265,7 @@
     iget-object v9, v0, Lp/f;->i:Lp/f$b;
 
     .line 7
-    iput-object v7, v9, Lp/f$b;->f:Lp/h;
+    iput-object v7, v9, Lp/f$b;->g:Lp/h;
 
     .line 8
     iget-boolean v10, v7, Lp/h;->a:Z
@@ -286,7 +286,7 @@
     if-ge v10, v12, :cond_2
 
     .line 9
-    iget-object v15, v9, Lp/f$b;->f:Lp/h;
+    iget-object v15, v9, Lp/f$b;->g:Lp/h;
 
     iget-object v15, v15, Lp/h;->h:[F
 
@@ -315,7 +315,7 @@
     if-gez v5, :cond_1
 
     .line 12
-    iget-object v5, v9, Lp/f$b;->f:Lp/h;
+    iget-object v5, v9, Lp/f$b;->g:Lp/h;
 
     iget-object v5, v5, Lp/h;->h:[F
 
@@ -335,9 +335,9 @@
     if-eqz v14, :cond_3
 
     .line 13
-    iget-object v5, v9, Lp/f$b;->g:Lp/f;
+    iget-object v5, v9, Lp/f$b;->h:Lp/f;
 
-    iget-object v9, v9, Lp/f$b;->f:Lp/h;
+    iget-object v9, v9, Lp/f$b;->g:Lp/h;
 
     .line 14
     invoke-virtual {v5, v9}, Lp/f;->m(Lp/h;)V
@@ -377,7 +377,7 @@
 
     .line 17
     :cond_5
-    iget-object v15, v9, Lp/f$b;->f:Lp/h;
+    iget-object v15, v9, Lp/f$b;->g:Lp/h;
 
     iget-object v15, v15, Lp/h;->h:[F
 
@@ -387,7 +387,7 @@
 
     .line 18
     :cond_6
-    iget-object v10, v9, Lp/f$b;->f:Lp/h;
+    iget-object v10, v9, Lp/f$b;->g:Lp/h;
 
     iget-object v10, v10, Lp/h;->h:[F
 
@@ -627,7 +627,7 @@
     const-string v1, " goal -> ("
 
     .line 1
-    invoke-static {v0, v1}, Lo/g;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v0, v1}, Lcom/supercell/titan/a;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v0
 
@@ -661,7 +661,7 @@
     iget-object v3, p0, Lp/f;->i:Lp/f$b;
 
     .line 6
-    iput-object v2, v3, Lp/f$b;->f:Lp/h;
+    iput-object v2, v3, Lp/f$b;->g:Lp/h;
 
     .line 7
     invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;

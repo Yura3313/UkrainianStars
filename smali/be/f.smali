@@ -1,5 +1,5 @@
 .class public final Lbe/f;
-.super Lse/h;
+.super Lse/i;
 .source "FriendsStorage.kt"
 
 # interfaces
@@ -9,28 +9,28 @@
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/l<",
-        "Lvc/j;",
-        "Lie/h;",
+        "Lvc/i;",
+        "Lie/i;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic f:Lbe/h$a;
+.field public final synthetic g:Lbe/h$a;
 
 
 # direct methods
 .method public constructor <init>(Lbe/h$a;)V
     .locals 0
 
-    iput-object p1, p0, Lbe/f;->f:Lbe/h$a;
+    iput-object p1, p0, Lbe/f;->g:Lbe/h$a;
 
     const/4 p1, 0x1
 
-    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -41,23 +41,23 @@
     .locals 6
 
     .line 1
-    check-cast p1, Lvc/j;
+    check-cast p1, Lvc/i;
 
     const-string v0, "friends"
 
     .line 2
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 3
-    iget-object v0, p0, Lbe/f;->f:Lbe/h$a;
+    iget-object v0, p0, Lbe/f;->g:Lbe/h$a;
 
-    iget-object v0, v0, Lbe/h$a;->f:Lbe/h;
+    iget-object v0, v0, Lbe/h$a;->g:Lbe/h;
 
     new-instance v1, Lbe/h$b$h;
 
-    invoke-direct {v1, p1}, Lbe/h$b$h;-><init>(Lvc/j;)V
+    invoke-direct {v1, p1}, Lbe/h$b$h;-><init>(Lvc/i;)V
 
-    invoke-virtual {v0, v1}, Lbe/v0;->a(Lbe/a;)V
+    invoke-virtual {v0, v1}, Lbe/x0;->a(Lbe/a;)V
 
     .line 4
     sget-object v0, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
@@ -71,7 +71,7 @@
     move-result-object v0
 
     .line 5
-    iget-object v1, p1, Lvc/j;->a:Ljava/util/List;
+    iget-object v1, p1, Lvc/i;->a:Ljava/util/List;
 
     .line 6
     new-instance v2, Ljava/util/ArrayList;
@@ -98,15 +98,15 @@
     move-result-object v3
 
     .line 8
-    check-cast v3, Lvc/i;
+    check-cast v3, Lvc/h;
 
     .line 9
-    iget-object v5, v3, Lvc/i;->d:Lcom/supercell/id/model/IdPresenceStatus;
+    iget-object v5, v3, Lvc/h;->d:Lcom/supercell/id/model/IdPresenceStatus;
 
     if-eqz v5, :cond_1
 
     .line 10
-    iget-object v3, v3, Lvc/i;->a:Lcom/supercell/id/model/IdSocialAccount;
+    iget-object v3, v3, Lvc/h;->a:Lcom/supercell/id/model/IdSocialAccount;
 
     .line 11
     new-instance v4, Lie/d;
@@ -123,7 +123,7 @@
 
     .line 13
     :cond_2
-    invoke-static {v2}, Lje/t;->q(Ljava/lang/Iterable;)Ljava/util/Map;
+    invoke-static {v2}, Lje/t;->r(Ljava/lang/Iterable;)Ljava/util/Map;
 
     move-result-object v1
 
@@ -135,7 +135,7 @@
 
     invoke-direct {v2, v1}, Lbe/v$a$a;-><init>(Ljava/util/Map;)V
 
-    invoke-virtual {v0, v2}, Lbe/v0;->a(Lbe/a;)V
+    invoke-virtual {v0, v2}, Lbe/x0;->a(Lbe/a;)V
 
     .line 16
     sget-object v0, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
@@ -149,7 +149,7 @@
     move-result-object v0
 
     .line 17
-    iget-object p1, p1, Lvc/j;->c:Ljava/util/List;
+    iget-object p1, p1, Lvc/i;->c:Ljava/util/List;
 
     .line 18
     invoke-interface {p1}, Ljava/util/Collection;->size()I
@@ -163,23 +163,23 @@
 
     invoke-direct {v1, p1}, Lbe/u$a$d;-><init>(I)V
 
-    invoke-virtual {v0, v1}, Lbe/v0;->a(Lbe/a;)V
+    invoke-virtual {v0, v1}, Lbe/x0;->a(Lbe/a;)V
 
     .line 20
-    iget-object p1, p0, Lbe/f;->f:Lbe/h$a;
+    iget-object p1, p0, Lbe/f;->g:Lbe/h$a;
 
-    iget-object p1, p1, Lbe/h$a;->f:Lbe/h;
+    iget-object p1, p1, Lbe/h$a;->g:Lbe/h;
 
     .line 21
-    iget-object p1, p1, Lbe/h;->f:Lae/r1;
+    iget-object p1, p1, Lbe/h;->f:Lae/q1;
 
     if-eqz p1, :cond_3
 
     .line 22
-    invoke-virtual {p1}, Lae/r1;->a()V
+    invoke-virtual {p1}, Lae/q1;->a()V
 
     .line 23
-    sget-object p1, Lie/h;->a:Lie/h;
+    sget-object p1, Lie/i;->a:Lie/i;
 
     return-object p1
 
@@ -187,7 +187,7 @@
     const-string p1, "getFriendsCache"
 
     .line 24
-    invoke-static {p1}, Lt3/e;->g(Ljava/lang/String;)V
+    invoke-static {p1}, Lt3/h;->k(Ljava/lang/String;)V
 
     goto :goto_2
 

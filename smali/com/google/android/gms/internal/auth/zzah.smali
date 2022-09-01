@@ -15,11 +15,11 @@
 
 
 # instance fields
-.field public final f:I
+.field public final g:I
 
-.field public final g:Ljava/lang/String;
+.field public final h:Ljava/lang/String;
 
-.field public final h:Landroid/app/PendingIntent;
+.field public final i:Landroid/app/PendingIntent;
 
 
 # direct methods
@@ -44,17 +44,17 @@
     const/4 v0, 0x1
 
     .line 2
-    iput v0, p0, Lcom/google/android/gms/internal/auth/zzah;->f:I
+    iput v0, p0, Lcom/google/android/gms/internal/auth/zzah;->g:I
 
     .line 3
     invoke-static {p1}, Ld2/h;->h(Ljava/lang/Object;)Ljava/lang/Object;
 
-    iput-object p1, p0, Lcom/google/android/gms/internal/auth/zzah;->g:Ljava/lang/String;
+    iput-object p1, p0, Lcom/google/android/gms/internal/auth/zzah;->h:Ljava/lang/String;
 
     .line 4
     invoke-static {p2}, Ld2/h;->h(Ljava/lang/Object;)Ljava/lang/Object;
 
-    iput-object p2, p0, Lcom/google/android/gms/internal/auth/zzah;->h:Landroid/app/PendingIntent;
+    iput-object p2, p0, Lcom/google/android/gms/internal/auth/zzah;->i:Landroid/app/PendingIntent;
 
     return-void
 .end method
@@ -74,7 +74,7 @@
     const/4 v1, 0x1
 
     .line 2
-    iget v2, p0, Lcom/google/android/gms/internal/auth/zzah;->f:I
+    iget v2, p0, Lcom/google/android/gms/internal/auth/zzah;->g:I
 
     const/4 v3, 0x4
 
@@ -87,7 +87,7 @@
     const/4 v1, 0x2
 
     .line 5
-    iget-object v2, p0, Lcom/google/android/gms/internal/auth/zzah;->g:Ljava/lang/String;
+    iget-object v2, p0, Lcom/google/android/gms/internal/auth/zzah;->h:Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -96,7 +96,7 @@
     const/4 v1, 0x3
 
     .line 6
-    iget-object v2, p0, Lcom/google/android/gms/internal/auth/zzah;->h:Landroid/app/PendingIntent;
+    iget-object v2, p0, Lcom/google/android/gms/internal/auth/zzah;->i:Landroid/app/PendingIntent;
 
     invoke-static {p1, v1, v2, p2, v3}, Le2/b;->l(Landroid/os/Parcel;ILandroid/os/Parcelable;IZ)V
 

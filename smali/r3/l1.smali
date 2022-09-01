@@ -57,7 +57,7 @@
 
     move-result v1
 
-    sget-object v2, Lr3/r1;->g:Lr3/t1;
+    sget-object v2, Lr3/r1;->h:Lr3/t1;
 
     .line 2
     new-array v2, v1, [B
@@ -131,7 +131,7 @@
     const-string v6, "ByteString"
 
     .line 11
-    invoke-static {v3, v4, v2, v5, v6}, Lcom/kakaogame/d;->b(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v3, v4, v2, v5, v6}, Lcom/kakaogame/b;->b(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v2
 
@@ -229,7 +229,7 @@
     const-string v6, "byte array"
 
     .line 9
-    invoke-static {v3, v4, v2, v5, v6}, Lcom/kakaogame/d;->b(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v3, v4, v2, v5, v6}, Lcom/kakaogame/b;->b(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v2
 

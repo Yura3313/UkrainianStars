@@ -6,18 +6,18 @@
 
 
 # instance fields
-.field public final synthetic f:Ljava/util/Set;
+.field public final synthetic g:Ljava/util/Set;
 
-.field public final synthetic g:Ld5/a;
+.field public final synthetic h:Ld5/a;
 
 
 # direct methods
 .method public constructor <init>(Ld5/a;Ljava/util/Set;)V
     .locals 0
 
-    iput-object p1, p0, Ld5/p;->g:Ld5/a;
+    iput-object p1, p0, Ld5/p;->h:Ld5/a;
 
-    iput-object p2, p0, Ld5/p;->f:Ljava/util/Set;
+    iput-object p2, p0, Ld5/p;->g:Ljava/util/Set;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,7 +30,7 @@
     .locals 3
 
     :try_start_0
-    iget-object v0, p0, Ld5/p;->f:Ljava/util/Set;
+    iget-object v0, p0, Ld5/p;->g:Ljava/util/Set;
 
     invoke-interface {v0}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
 
@@ -49,7 +49,7 @@
 
     check-cast v1, Ljava/lang/String;
 
-    iget-object v2, p0, Ld5/p;->g:Ld5/a;
+    iget-object v2, p0, Ld5/p;->h:Ld5/a;
 
     .line 1
     iget-object v2, v2, Ld5/a;->a:Ld5/e;

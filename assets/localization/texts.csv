@@ -406,7 +406,7 @@ TID_STAT_HAMMER_DAMAGE,Пошкодження за 0.2 сек
 TID_STAT_DAMAGE_OR_HEAL,Пошкодження / зцілення
 TID_HERO_INFO_MAX_BOUNCES,Максимальне відскакування
 ,Зменшення зцілення
-TID_BATTLE,ГОТОВІ
+TID_BATTLE,ВПЕРЕД
 TID_QUIT,Вийти
 TID_MATCHMAKING_QUIT,Вийти
 TID_MATCHMAKING_HEADING,Пошук гравців
@@ -461,7 +461,7 @@ TID_ERROR_POP_UP_CONNECTION_LOST,"Будь ласка, спробуйте уві
 TID_ERROR_POP_UP_CONNECTION_LOST_BUTTON,Повторити вхід
 TID_TROPHIES,Кубки
 TID_PRACTICE,ПРАКТИКА
-TID_READY,ГОТОВІ
+TID_READY,ВПЕРЕД
 TID_BATTLE_END_TITLE_VICTORY,ВИГРАШ!
 TID_BATTLE_END_TITLE_DEFEAT,ПРОГРАШ
 TID_BATTLE_END_TITLE_DRAW,НІЧИЯ
@@ -709,7 +709,7 @@ TID_SKIN_REWARD_TITLE_1,НАГОРОДА: СКІН
 TID_SKIN_REWARD_INFO_1,Ви відкрили новий скін! Дякуємо за гру в Brawl Stars у 2018 році
 TID_SKIN_REWARD_TITLE_2,НАГОРОДА: СКІН
 TID_SKIN_REWARD_INFO_2,Ви розблокували новий скін як винагороду за підключення свого облікового запису до Supercell ID
-TID_SKIN_REWARD_OK,ПРЕТЕНЗІЯ
+TID_SKIN_REWARD_OK,ОТРИМАТИ
 TID_HERO_REWARD_TITLE_1,ПОВІДОМЛЕННЯ ВІД ПІДТРИМКИ
 TID_HERO_REWARD_INFO_1,Служба підтримки Бравл Старс подарувала вам нового бравлера
 TID_SKIN_REWARD_TITLE_0,ПОВІДОМЛЕННЯ ВІД ПІДТРИМКИ
@@ -1291,7 +1291,7 @@ TID_SHOP_ARCHIVE_SKINS_LAST,ОСТАННІЙ ШАНС!
 TID_SHOP_LEGENDARY_SKINS,ЗОРЯНИЙ МАГАЗИН
 TID_SHOP_STAR_BOXES,ЗОРЯНІ БОКСИ
 TID_SHOP_FREE,БЕЗК.
-TID_SHOP_CLAIM,ПРЕТЕНЗІЯ
+TID_SHOP_CLAIM,ОТРИМАТИ
 TID_SHOP_NEW_DAILY_OFFERS_AVAILABLE_IN,<TIME>
 TID_SHOP_TICKETS_AVAILABLE_FOR,<TIME>
 TID_SHOP_DISCOUNT,-<AMOUNT>%
@@ -1625,7 +1625,7 @@ TID_BARREL_BOT_WEAPON_DESC,"Двоствольні рушниці Дерріла
 TID_BARREL_BOT_ULTI,ПЕРЕВОРОТ
 TID_BARREL_BOT_ULTI_DESC,"Дерріл котиться вперед у своїй бочці, відкидаючи ворогів, зменшуючи вхідну шкоду та відбиваючись від стін. Його Супер заряджається з часом!"
 TID_ARTILLERY_DUDE,ПЕННІ
-TID_ARTILLERY_DUDE_DESC,"Пенні стріляє мішками з монетами, пошкоджуючи ціль і всіх, хто стоїть позаду. Її супер — це гарматна вежа в стилі мінометів!"
+TID_ARTILLERY_DUDE_DESC,"""Бунтівниця без причини, пустотлива Пенні править у \qвідкритому морі.\q Вона є справжньою загрозою, шукає пригод і не зупиниться ні перед чим заради пограбування."""
 TID_ARTILLERY_DUDE_WEAPON,ЗОЛОТИЙ КУЛАК
 TID_ARTILLERY_DUDE_WEAPON_DESC,"Вистрілює мішечок штучного золота. Якщо мішечок потрапить у ворога, він лопне, і монети випадають на цілі за першим ворогом."
 TID_ARTILLERY_DUDE_ULTI,СТАРИЙ ЛОБЕР
@@ -1792,7 +1792,7 @@ TID_HINT_1,"Ви можете НАТИСНУТИ на <cff9900>ЖОВТИЙ ДЖ
 TID_HINT_2,"Ви можете перетягнути <ccc0033>ЧЕРВОНИЙ ДЖОЙСТИК</c>, щоб прицілити свої постріли."
 TID_HINT_3,"Ви можете перетягнути <cff9900>ЖОВТИЙ ДЖОЙСТИК</c>, щоб прицілити свою суператаку."
 TID_HINT_4,"Ви можете скасувати прицільний постріл, перетягнувши джойстик назад до середини."
-TID_HINT_5,"Пошук матчів заснованений на трофеях Бравлера, з яким ви граєте, що дозволяє легко отримувати трофеї за допомогою нещодавно розблокованого Бравлера."
+TID_HINT_5,"""Пошук матчів заснованений на трофеях Бравлера, з яким ви граєте, що дозволяє легко отримувати трофеї за допомогою нещодавно розблокованого Бравлера."""
 TID_HINT_6,"Якщо ви отримаєте більше Бравлерів, вам буде легше збільшити загальну кількість трофеїв і отримати більше нагород."
 TID_HINT_7,"Постріли Пайпер завдають більше шкоди, чим далі вони рухаються."
 TID_HINT_8,"Супер Барлі особливо потужна на короткій дистанції, оскільки пляшки приземляються на невеликій площі."
@@ -1808,7 +1808,7 @@ TID_HINT_17,"Націлювання пострілів добре підходи
 TID_HINT_18,"ШВИДКА АТАКА добре працює на ворогів, які стоять на місці."
 TID_HINT_19,"ШВИДКА АТАКА добре працює на ворогів, які рухаються прямо до вас або від вас."
 TID_HINT_20,"Коли ви перебуваєте в кущі, вороги можуть побачити вас, якщо ви атакуєте або отримуєте пошкодження."
-TID_HINT_21,"Ви можете використовувати кущі, щоб сховатися від ворогів."
+TID_HINT_21,"Ви можете використовувати кущі, щоб сховатися від ворогів, і регенерувати здоров'я"
 TID_HINT_22,"Коли ви використовуєте ШВИДКУ АТАКУ, воно стріляє з вашої зброї, навіть якщо в радіусі немає ворогів."
 TID_VS_TUTORIAL,Зберіть усі <c50d050>ЕНЕРГЕТИКИ</c>!
 TID_USE_MANUAL_FIRE_TUTORIAL,ПОТЯГНИ <ccc0033>ЧЕРВОНИЙ ДЖОЙСТИК</c> щоб прицілитися!
@@ -2077,13 +2077,13 @@ TID_PLAYER_MAP_PROPS,Карта гравця:\n<cff8000><CREDIT></c>
 TID_PLAYER_MAP_WINNER_SLOT_PROPS,ПЕРЕМОЖЕЦЬ ДНЯ!\n\nКонцепт:\n<cff8000><CREDIT></c>
 TID_BATTLE_ROYALE_12,Гарячий лабіринт
 TID_TEAM_INVITE_ALREADY_IN_TEAM,Player is already in a team!
-TID_HINT_38,A rotating blue circle under a Brawler means their Super is ready!
-TID_HINT_39,A rotating yellow circle under a Brawler means they are currently targeting their Super!
+TID_HINT_38,"Коло, що обертається під Бравлером, означає, що їхня супер атака готова!"
+TID_HINT_39,"Жовте коло, що обертається, під Бравлером означає, що вони зараз цілять свою супер атаку!"
 TID_EVENT_NOT_AVAILABLE,No Event
 TID_SHOP_OFFER_PURCHASE_AD_NOT_AVAILABLE,No video available. Check back later!
 TID_SHOP_NOT_AVAILABLE,not available
 TID_UNDERTAKER_GREASER_SKIN_SHOP,ROCKABILLY\nMORTIS
-TID_HINT_40,Connect to Supercell ID from the settings screen to keep your account safe and play with multiple devices. You also get a free skin by doing this!
+TID_HINT_40,"Підключіться до суперселл ІД на екрані налаштувань, щоб захистити свій обліковий запис і грати на кількох пристроях. Зробивши це, ви також отримаєте безкоштовний скін!"
 TID_GACHA_VIDEO_REWARD_RECEIVED,Extra rewards added!
 TID_BUTTON_NAVI_SHOP,МАГАЗИН
 TID_BUTTON_NAVI_SOCIAL,СОЦІАЛ
@@ -2099,7 +2099,7 @@ TID_EVENT_MODIFIER_DESC_5,Healing mushrooms appear randomly! They will heal ever
 TID_EVENT_MODIFIER_DESC_5_SD,Healing mushrooms appear randomly! Gathering close with your friends will prevent the mushrooms from growing.
 TID_NINJA,ЛЕОН
 TID_ROSA,РОЗА
-TID_HINT_42,"When not attacking or taking damage for a while, your Brawler starts to heal up."
+TID_HINT_42,"""Якщо ваш Бравлер не атакує і не отримує пошкоджень, через деякий час починає відновлюватися."""
 TID_HOOK_SHORT_DESC,ПІДТРИМКА
 TID_HOOK_DESC,Gene uses his magic lamp to shoot a splitting projectile. His super is a magical hand that grabs and pulls enemies close!
 TID_SPEC_ABI_HOOK,MAGIC PUFFS
@@ -2543,18 +2543,18 @@ TID_PROFILE_COLOR,COLOR
 TID_POPUP_BRAWLTV_TITLE,БРАВЛ ТВ
 TID_POPUP_BRAWLTV_TEXT,Спостерігайте за гравцями Бравл Старс найвищого рівня з усього світу
 TID_POPUP_BRAWLTV_BUTTON,УПЕРЕД!
-TID_GOLDRUSH_28,Choo Choo
-TID_GOLDRUSH_29,All Aboard
-TID_GOLDRUSH_30,Crazy Train
-TID_GOLDRUSH_31,Minecart Madness
-TID_GOLDRUSH_32,Pain Train
-TID_GOLDRUSH_33,Snake Shop
-TID_GOLDRUSH_34,Conveyor Belts
-TID_ROBO_WARS_10,Straight Shot
-TID_ROBO_WARS_11,Sparring Match
-TID_ROBO_WARS_12,Robo Highway
-TID_ROBO_WARS_13,Junk Park
-TID_ROBO_WARS_14,Danger Zone
+TID_GOLDRUSH_28,Чу Чу
+TID_GOLDRUSH_29,Посадка закінчується
+TID_GOLDRUSH_30,Божевільний поїзд
+TID_GOLDRUSH_31,Божевілля в візку
+TID_GOLDRUSH_32,Потяг болю
+TID_GOLDRUSH_33,Зміїний магазин
+TID_GOLDRUSH_34,Конвеєрні стрічки
+TID_ROBO_WARS_10,Прямий удар
+TID_ROBO_WARS_11,Спаринг
+TID_ROBO_WARS_12,Робо шосе
+TID_ROBO_WARS_13,Джанк Парк
+TID_ROBO_WARS_14,НЕБЕЗПЕЧНА ЗОНА
 TID_BATTLE_ROYALE_29,Золота лихоманка
 TID_BATTLE_ROYALE_30,Пляжна бійка
 TID_BATTLE_ROYALE_31,Королівська злітна смуга
@@ -2581,7 +2581,7 @@ TID_SUPPORT_CREATOR_BTN_SUPPORT,ВВЕСТИ КОД
 TID_SUPPORT_CREATOR_BTN_CHANGE,ЗМІНИТИ
 TID_SUPPORT_CREATOR_BTN_STOP,ПРИПИНИТИ
 TID_SUPPORT_CREATOR_INFO,"Підтримуйте ютубера, коли ви робите покупки в додатку, вводячи його код!"
-TID_SUPPORT_CREATOR_SUPPORTING,зараз підтримуєш: <NAME>
+TID_SUPPORT_CREATOR_SUPPORTING,зараз підтримуєш:
 TID_SUPPORT_CREATOR_NOT_SUPPORTING,Ти не підтримуєш жодного ютубера
 TID_STOP_SUPPORTING_CREATOR_TITLE,Припинити підтримувати
 TID_STOP_SUPPORTING_CREATOR_DESC,Ти хочеш припинити підтримувати <NAME>?
@@ -2762,7 +2762,7 @@ TID_SPEC_SHIELD_ULTI_DESC,When Brock's Super is fully charged (and he doesn't us
 TID_SPEC_ABI_PET,RELEASE THE BIRD
 TID_SPEC_ABI_PET_DESC,Dynamikes bird joins the fight!
 TID_SPEC_ABI_DAMAGE_ULTI,SPIRIT SLAP
-TID_SPEC_ABI_DAMAGE_ULTI_DESC,When Gene's Super is fully charged he does <c00cc00>+<VALUE1></c> damage with his attack.
+TID_SPEC_ABI_DAMAGE_ULTI_DESC,"""When Gene's Super is fully charged he does <c00cc00>+<VALUE1></c> damage with his attack."""
 TID_ARCADE,8-БІТ
 TID_ARCADE_DESC,8-Bit lumbers along like an arcade cabinet on legs. He shoots Blaster Beams and his Super boosts friendlies' damage!
 TID_ARCADE_SHORT_DESC,ВОЇН
@@ -3188,24 +3188,24 @@ TID_HINT_GET_TO_ZONE,Get inside a Hot Zone!
 TID_HERO_INFO_TITLE,BRAWLER STATS
 TID_HERO_UPGRADE_TITLE,UPGRADE BRAWLER?
 TID_HERO_INFO_GENERICS_HEADER,
-TID_HERO_INFO_HERO_SPEED,Movement speed
-TID_HERO_INFO_SPEED_0,VERY SLOW
-TID_HERO_INFO_SPEED_1,SLOW
-TID_HERO_INFO_SPEED_2,NORMAL
-TID_HERO_INFO_SPEED_3,FAST
-TID_HERO_INFO_SPEED_4,VERY FAST
-TID_HERO_INFO_ATTACK_SPEED,Reload speed
-TID_HERO_INFO_ATTACK_RANGE,Range
-TID_HERO_INFO_ATTACK_DAMAGE,Damage
-TID_HERO_INFO_STUN_DURATION,Stun duration
-TID_HERO_INFO_LONG_DASH_DELAY,Long dash delay
-TID_HERO_INFO_RANGE_0,SHORT
-TID_HERO_INFO_RANGE_1,NORMAL
-TID_HERO_INFO_RANGE_2,LONG
-TID_HERO_INFO_RANGE_3,VERY LONG
-TID_HERO_INFO_HEALTH,Health
-TID_HERO_INFO_ATTACK_TYPE,Type
-TID_HERO_INFO_HEAL,Heal
+TID_HERO_INFO_HERO_SPEED,Швидкість руху
+TID_HERO_INFO_SPEED_0,ДУЖЕ ПОВІЛЬНИЙ
+TID_HERO_INFO_SPEED_1,ПОВІЛЬНИЙ
+TID_HERO_INFO_SPEED_2,НОРМАЛЬНИЙ
+TID_HERO_INFO_SPEED_3,ШВИДКИЙ
+TID_HERO_INFO_SPEED_4,ДУЖЕ ШВИДКИЙ
+TID_HERO_INFO_ATTACK_SPEED,Швидкість перезавантаження
+TID_HERO_INFO_ATTACK_RANGE,Діапазон
+TID_HERO_INFO_ATTACK_DAMAGE,Пошкодження
+TID_HERO_INFO_STUN_DURATION,Тривалість оглушення
+TID_HERO_INFO_LONG_DASH_DELAY,Довга затримка тире
+TID_HERO_INFO_RANGE_0,КОРОТКА
+TID_HERO_INFO_RANGE_1,НОРМАЛЬНА
+TID_HERO_INFO_RANGE_2,ДОВГА
+TID_HERO_INFO_RANGE_3,ДУЖЕ ДОВГА
+TID_HERO_INFO_HEALTH,Здоров'я
+TID_HERO_INFO_ATTACK_TYPE,Тип
+TID_HERO_INFO_HEAL,Регенерація
 TID_PROTECT_SCORE_ZONE,Stop enemies entering the Hot Zones!
 TID_8BIT_VIRUS_SKIN,ВІРУСНИЙ 8-БІТ
 TID_8BIT_VIRUS_SKIN_SHOP,ВІРУСНИЙ\n8-БІТ
@@ -4400,8 +4400,8 @@ TID_HERO_INFO_LOCKED_BP_INFO_SHORT,Get Brawl Pass or open Boxes to unlock
 TID_HERO_INFO_LOCKED_BP_INFO,Get Brawl Pass or open Boxes to unlock
 TID_HERO_INFO_LOCKED_BP_TIER_OWNED_INFO_SHORT,Unlock at Season Tier <NUM>
 TID_HERO_INFO_LOCKED_BP_TIER_OWNED_INFO,Unlock at Season Tier <NUM>
-TID_HERO_INFO_LOCKED_BP_FUTURE_SEASON_INFO,Arrives in Season <SEASON>
-TID_HERO_INFO_LOCKED_BP_FUTURE_SEASON_INFO_SHORT,Arrives in Season <SEASON>
+TID_HERO_INFO_LOCKED_BP_FUTURE_SEASON_INFO,Прибуває в сезоні <SEASON>
+TID_HERO_INFO_LOCKED_BP_FUTURE_SEASON_INFO_SHORT,Прибуває в сезоні <SEASON>
 TID_RAID_4,Rumble in the Jungle
 TID_RAID_5,Rope-a-dope
 TID_BRAWLPASS_AUTOCOLLECT_INFO,"This is a friendly reminder that you have unclaimed rewards in Season <NUM>! If you don't claim them soon, the rewards from Season <NUM> will be automatically collected for you. Unclaimed Power Point rewards will be converted to Coins upon the ending of the current Season."
@@ -4493,7 +4493,7 @@ TID_MAP_EDITOR_LEGAL_WARNING_DESC,"Thanks for using Map Maker. Please abide by t
 TID_MAP_EDITOR_LEGAL_WARNING_DESC_YOOZOO,"Thanks for using Map Maker. Please abide by the User Agreement and other related regulations when using Map Maker. Do not make or spread inappropriate content that is erotic, obscene, or endangers national unity, sovereignty, and territorial integrity, or violates laws and other regulations."
 TID_RUFFS,ГЕНЕРАЛ\nРАФС
 TID_RUFFS_SHORT_DESC,ПІДТРИМКА
-TID_RUFFS_DESC,Ruffs fires twin shots of lasers that bounce off walls. His Super is a supply drop that can damage opponents in the drop zone and leaves a power up for your team to use.
+TID_RUFFS_DESC,"""Він може гавкати накази своїм підлеглим, але полковник Раффс дуже хороший хлопчик!\n\nМаючи серйозну та спокійну поведінку, Раффс приховує свої собачі риси, якщо тільки не відбувається гра в апорт!"""
 TID_RUFFS_WEAPON,DOUBLE-BARREL LASER
 TID_RUFFS_WEAPON_DESC,Ruffs' twin-laser bounces off walls multiple times. They can hit opponents behind cover.
 TID_RUFFS_ULTI,SUPPLY DROP
@@ -4534,7 +4534,7 @@ TID_ACCESSORY_ENRAGER_PROTECTION_DESC,Edgar gets a shield that protects him from
 TID_ACCESSORY_MINIGUN_DUDE_AMMO_SINK,SCRAPSUCKER
 TID_ACCESSORY_MINIGUN_DUDE_AMMO_SINK_DESC,Each hit from Pam's next attack removes <c00cc00><VALUE1>%</c> of opposing Brawlers' maximum ammo. Pam reclaims <c00cc00><VALUE2>%</c> of the ammo for herself.
 TID_ACCESSORY_SANDSTORM_STUN_SLEEP,SWEET DREAMS
-TID_ACCESSORY_SANDSTORM_STUN_SLEEP_DESC,Sandy's next attack lulls opponents to sleep for <c00cc00><VALUE1></c> seconds. They will however wake up from any damage.
+TID_ACCESSORY_SANDSTORM_STUN_SLEEP_DESC,"""Наступна атака Сенді присипляє супротивників на <c00cc00><VALUE1></c> секунд. Однак вони прокинуться від будь-якої шкоди."""
 TID_ACCESSORY_CACTUS_COVER,LIFE PLANT
 TID_ACCESSORY_CACTUS_COVER_DESC,"Spike grows a large cactus with <c00cc00><VALUE1></c> health to give cover to friendlies. If destroyed, the cactus bursts, and all nearby friendlies recover <c00cc00><VALUE2></c> health."
 TID_ACCESSORY_BLOWER_STOPPER,TWISTER
@@ -4983,7 +4983,7 @@ TID_MECHA_DUDE_BIG_ULTI_DESC,The Mecha swings a formidable forearm that enemies 
 TID_SPEC_ABI_MECHA_DUDE_1,FORCE FIELD
 TID_SPEC_ABI_MECHA_DUDE_1_DESC,Meg is protected by a <c00cc00><VALUE1>%</c> shield for <c00cc00><VALUE2></c> seconds when her Mecha is destroyed.
 TID_SPEC_ABI_MECHA_DUDE_2,HEAVY METAL
-TID_SPEC_ABI_MECHA_DUDE_2_DESC,"Upon expiring, the Mecha suit explodes dealing <c00cc00><VALUE1></c> damage to nearby opponents and pushing them away."
+TID_SPEC_ABI_MECHA_DUDE_2_DESC,"""Після закінчення терміну дії костюм Меха вибухає, завдаючи <c00cc00><VALUE1></c> шкоди супротивникам поблизу та відштовхуючи їх."""
 TID_ACCESSORY_MECHA_DUDE_HEAL,JOLTING VOLTS
 TID_ACCESSORY_MECHA_DUDE_HEAL_DESC,Heal the Mecha by <c00cc00><VALUE1></c> health per second for <c00cc00><VALUE2></c> seconds.
 TID_FLAMENGO_MIKE_SKIN,ФЛАМЕНГО МАЙК
@@ -5392,8 +5392,8 @@ TID_CLUB_LEAGUE_EVENT_SEASON_COOLDOWN_TITLE,КЛУБОВА ЛІГА
 TID_CLUB_LEAGUE_EVENT_SEASON_NEXT_EVENTS,Заходи наступного сезону
 TID_CLUB_LEAGUE_TICKETS_PER_PLAY,<NUM><cA4B7E0>/ГРУ</c>
 TID_CLUB_LEAGUE_TROPHIES_MAX_PER_WIN,Max/Win
-TID_CLUB_LEAGUE_EVENT_TROPHY_WIN_DESC,Win with Club team:
-TID_CLUB_LEAGUE_TEAM_MEMBERS_NO_TEAM,Not in Club Team
+TID_CLUB_LEAGUE_EVENT_TROPHY_WIN_DESC,Перемога з командою Клубу:
+TID_CLUB_LEAGUE_TEAM_MEMBERS_NO_TEAM,Не в клубній команді
 TID_CLUB_LEAGUE_TEAM_MEMBERS_PARTIAL,<NUM>/<MAX> Club members in Team
 TID_CLUB_LEAGUE_TEAM_MEMBERS_CLUB,In a Club Team
 TID_CLUB_LEAGUE_TEAM_MEMBERS_FULL,Full Club Team
@@ -5505,8 +5505,8 @@ TID_CLUB_LEAGUE_FLOW_NEW_SEASON,Новий тиждень!
 TID_CLUB_LEAGUE_FLOW_SEASON_ENDED,Тиждень закінчився
 TID_CLUB_LEAGUE_FLOW_CLUB_LEAGUE,КЛУБОВА ЛІГА
 TID_CLUB_LEAGUE_FLOW_DAY_NEW,NEW!
-TID_CLUB_LEAGUE_FLOW_EVENT_DAY_STARTED,EVENT DAY <NUM> STARTED!
-TID_CLUB_LEAGUE_FLOW_EVENT_DAY_ENDED,EVENT DAY <NUM> ENDED!
+TID_CLUB_LEAGUE_FLOW_EVENT_DAY_STARTED,ДЕНЬ ПОДІЙ <NUM> ПОЧАТОК!
+TID_CLUB_LEAGUE_FLOW_EVENT_DAY_ENDED,ДЕНЬ ПОДІЙ <NUM> ЗАКІНЧИВСЯ!
 TID_CLUB_LEAGUE_FLOW_BUTTON_GO,ACCEPT
 TID_CLUB_LEAGUE_FLOW_BUTTON_GO_SEASON_START,LET'S GO
 TID_CLUB_LEAGUE_FLOW_BUTTON_GO_SEASON_END,ACCEPT
@@ -5544,7 +5544,7 @@ TID_CLUB_LEAGUE_GOLDEN_TICKET_TUTORIAL,"Looks like you need more tickets to cont
 TID_CLUB_LEAGUE_EVENT_SCHEDULE_BUTTON,EVENT DAYS
 TID_CLUB_LEAGUE_EVENT_DAYS_TITLE,EVENT DAYS
 TID_CLUB_LEAGUE_EVENT_SCHEDULE_DAY_TITLE,EVENT DAY <NUM>
-TID_CLUB_LEAGUE_EVENTS_TITLE,EVENTS
+TID_CLUB_LEAGUE_EVENTS_TITLE,ПОДІЇ
 TID_CLUB_LEAGUE_EVENT_UNLOCKS_AT,Unlocks at
 TID_CLUB_LEAGUE_SHOW_TICKETS_TOGGLE,Show <cFFDA14>max</c> Club trophies available to collect
 TID_CLUB_LEAGUE_INFO_TITLE,CLUB LEAGUE INFO
@@ -5583,7 +5583,7 @@ TID_CLUB_LEAGUE_ONBOARDING_TAP_TO_CONTINUE,Tap to continue
 TID_CLUB_LEAGUE_ONBOARDING_LETS_GO,LET'S GO
 TID_CLUB_LEAGUE_ONBOARDING_EVENT_DAYS,3 Event Days
 TID_CLUB_LEAGUE_ONBOARDING_TEAM_UP,Team Up with your Club!
-TID_CLUB_LEAGUE_ONBOARDING_EVENTS,EVENTS
+TID_CLUB_LEAGUE_ONBOARDING_EVENTS,ПОДІЇ
 TID_CLUB_LEAGUE_ONBOARDING_TICKETS,Cost tickets to play
 TID_CLUB_LEAGUE_ONBOARDING_CLUB_TROPHIES,Earn Club trophies
 TID_CLUB_LEAGUE_ONBOARDING_MORE_TROPHIES_1,More trophies
@@ -5594,7 +5594,7 @@ TID_CLUB_LEAGUE_ONBOARDING_CLUB_SHOP,Spend your Club Coins in the Club Shop!
 TID_CLUB_LEAGUE_ONBOARDING_DAY_1,DAY 1
 TID_CLUB_LEAGUE_ONBOARDING_DAY_2,DAY 2
 TID_CLUB_LEAGUE_ONBOARDING_DAY_3,DAY 3
-TID_CLUB_LEAGUE_SEASON_MAX_REWARD,Max reward:
+TID_CLUB_LEAGUE_SEASON_MAX_REWARD,Максимальна винагорода:
 TID_CLUB_SHOP_TITLE,КЛУБНИЙ МАГАЗИН
 TID_CLUB_SHOP_BUTTON,КЛУБНИЙ МАГАЗИН
 TID_CLUB_SHOP_DESC,Прискорюйте свій прогрес і купуйте ексклюзивні скіни!
@@ -5804,9 +5804,9 @@ TID_KICKER_DUDE_DESC,Fang kicks first and he kicks fast. His main attack is a he
 TID_KICKER_DUDE_WEAPON,WU-SHOE
 TID_KICKER_DUDE_WEAPON_DESC,"Fang unleashes a swift kick with a hidden trick. If the kick misses the target, his shoe will fly off his foot!"
 TID_KICKER_DUDE_ULTI,SNEAK AHEAD
-TID_KICKER_DUDE_ULTI_DESC,"Fang flies into a nasty kick that upon contact, can chain a further 3 consecutive kicks to nearby enemies."
+TID_KICKER_DUDE_ULTI_DESC,"""Фенг наносить неприємний удар ногою, який після контакту може завдати ще 3 послідовних ударів ногою ворогам поблизу."""
 TID_SPEC_ABI_KICKER_DUDE_1,FRESH KICKS
-TID_SPEC_ABI_KICKER_DUDE_1_DESC,"""When Fang defeats an enemy brawler with his Super, it's recharged instantly. Allowing him to use his Super again!"""
+TID_SPEC_ABI_KICKER_DUDE_1_DESC,"""Коли Фанг перемагає ворожого Бравлера своєю супер атакою, він миттєво перезаряджається, що дозволяє йому знову використовувати свій Супер!"""
 TID_SPEC_ABI_KICKER_DUDE_2,DIVINE SOLES
 TID_SPEC_ABI_KICKER_DUDE_2_DESC,Reduce <c00cc00><VALUE2></c> damage from incoming hits once every <c00cc00><VALUE1></c> seconds. Maximum reduction is <c00cc00><VALUE3>%</c> of the incoming damage.
 TID_ACCESSORY_KICKER_DUDE_GADGET,CORN-FU
@@ -5897,10 +5897,10 @@ TID_RANKED_FRIENDLY_TIMER_VERY_LONG,х2
 TID_SHOP_LNY22_SKINS,Lunar Brawl Skins
 TID_SHOP_LNY22_TITLE,LUNAR BRAWL
 TID_SHOP_LNY22_INFO,Skin Set
-TID_CLUB_LEAGUE_TODAYS_TICKETS,TICKETS
+TID_CLUB_LEAGUE_TODAYS_TICKETS,КВИТКИ
 TID_CLUB_LEAGUE_TODAYS_TICKETS_COUNT,x<NUM>
 TID_CLUB_LEAGUE_TODAYS_TICKETS_TIMER,<TIME> left to play
-TID_CLUB_LEAGUE_TODAYS_MAX_POINTS,MAX POINTS
+TID_CLUB_LEAGUE_TODAYS_MAX_POINTS,МАКСИМАЛЬНІ БАЛИ
 TID_CLUB_LEAGUE_TODAYS_MAX_POINTS_EXTRA_PERCENT,+<PERCENT>%
 TID_CLUB_LEAGUE_BONUS_DAY,BONUS DAY
 TID_CLUB_LEAGUE_TROPHY_RESET,Club Trophies reset at the end of each Event Day
@@ -6284,7 +6284,7 @@ TID_PRE_PICK,PRE PICK
 TID_CANCEL,CANCEL
 TID_WANTS_TO_PLAY,WANTS TO PLAY
 TID_WANT_TO_PLAY,WANT TO PLAY
-TID_WANTS_TO_PLAY_MULTIPLE_TEAMMATES,<num> TEAM MATES
+TID_WANTS_TO_PLAY_MULTIPLE_TEAMMATES,<num> НАПАРНИКІВ
 TID_BRAWL_PASS_SEASON_11,ТРЮК-ШОУ
 TID_SHOP_STUNTSHOW_SKINS,The Stunt Show Skins
 TID_SHOP_STUNTSHOW_TITLE,STUNT SHOW
@@ -6354,7 +6354,7 @@ TID_ACCESSORY_FIRE_DUDE_FLAME_SHIELD_DESC,"Amber creates <c00cc00><VALUE3></c> o
 TID_ACCESSORY_MECHA_DUDE_TOWER_RELOAD,TOOLBOX
 TID_ACCESSORY_MECHA_DUDE_TOWER_RELOAD_DESC,"Meg drops her toolbox, which increases the reload speed for nearby allies by <c00cc00><VALUE1>%</c> until it gets destroyed."
 TID_ACCESSORY_ROPE_DUDE_VISION,X-RAY-SHADES
-TID_ACCESSORY_ROPE_DUDE_VISION_DESC,Buzz can see into all bushes for <c00cc00><VALUE1></c> seconds.
+TID_ACCESSORY_ROPE_DUDE_VISION_DESC,Базз може бачити всі кущі в зоні суперзарядки протягом <c00cc00><VALUE1></c> секунд.
 TID_LOGIN_CALENDAR_ALREADY_HAVE_BRAWLER,You already own this Brawler
 TID_LOGIN_CALENDAR_ALREADY_HAVE_GADGET,You already own this Gadget
 TID_LOGIN_CALENDAR_ALREADY_HAVE_STAR_POWER,You already own this Star Power
@@ -6469,6 +6469,7 @@ TID_ACCESSORY_SILENCER_GADGET_1_DESC,"Наступна морська зірка
 TID_ACCESSORY_SILENCER_GADGET_2,РОЗЛИТТЯ ЧОРНИЛА
 TID_ACCESSORY_SILENCER_GADGET_2_DESC,"Наступна атака Отіса стріляє гігантською чорнильною кулею, яка залишає калюжу, завдаючи <c00cc00><VALUE1></c> шкоди протягом <c00cc00><VALUE2></c> секунд."
 TID_RANDOM_GAME_MODE,ЗАГАДКА
+TID_ADVENTURE_GAME_MODE,ПРИГОДА
 TID_NOTIFICATION_RANDOM,Нова карта ЗАГАДКИ вже доступна! Час вигравати нові нагороди!
 TID_SKIN_INFO_DEEPSEA,Скін Глибокого Моря
 TID_EMOTE_BUNDLE_DEEPSEA_PACK,Емозі для скінів Глибокого Моря
@@ -6613,3 +6614,141 @@ TID_TRUE_SILVER_EVE_SKIN_SHOP,СПРАВЖНЯ СРІБНА\nІВЕ
 TID_BRAWL_PASS_SEASON_12,ГЛИБОКЕ МОРЕ
 TID_TRIPLE_TAKEDOWN,ПОТРІЙНЕ ЗНИЩЕННЯ!
 TID_QUAD_TAKEDOWN,ЧЕТВЕРТНЕ ЗНИЩЕННЯ!
+TID_WEAPON_THROWER,СЕМ
+TID_WEAPON_THROWER_SHORT_DESC,ВОЇН
+TID_WEAPON_THROWER_DESC,"Колишній працівник фабрики, Сем Бронсон має вендету проти ВСІХ роботів.\n\nВін головна голова банди Голдарма, завжди радий отримати здобич і дати роботам удар!"
+TID_WEAPON_THROWER_WEAPON,ВАЖКІ СІНОКОСИ
+TID_WEAPON_THROWER_WEAPON_DESC,Сем завдає подвійної дози сильних ударів. У рукавичках він завдає набагато більше шкоди.
+TID_WEAPON_THROWER_ULTI,КАСТЕХИ
+TID_WEAPON_THROWER_ULTI_DESC,"Сем кидає свої рукавички, завдаючи шкоди всім ворогам, перш ніж приземлитися на землю. Його наступний супер поверне їх назад у його руки, а також завдасть шкоди."
+TID_SPEC_ABI_WEAPON_THROWER_1,ДУЖЕ ОЗДОРОВЛЮЧЕ
+TID_SPEC_ABI_WEAPON_THROWER_1_DESC,"Отримавши свої рукавиці, Сем миттєво відновлює <c00cc00><VALUE1>%</c> здоров’я."
+TID_SPEC_ABI_WEAPON_THROWER_2,ДИСТАНЦІЙНЕ ПОПОВНЕННЯ
+TID_SPEC_ABI_WEAPON_THROWER_2_DESC,"Поки рукавиці на землі та поблизу ворогів, вони заряджатимуть супер Сема."
+TID_ACCESSORY_WEAPON_THROWER_GADGET_1,МАГНІТНЕ ПОЛЕ
+TID_ACCESSORY_WEAPON_THROWER_GADGET_1_DESC,"Поки рукавиці на землі, Сем може активувати їх, щоб підтягнути ворогів поблизу."
+TID_ACCESSORY_WEAPON_THROWER_GADGET_2,ВІДКЛЮЧУВАЧ ПУЛЬСУ
+TID_ACCESSORY_WEAPON_THROWER_GADGET_2_DESC,"Приземлившись на землю, наступні рукавиці Сема випускають електричний імпульс, який відкидає ворогів."
+TID_ACCESSORY_BLOCKED_MISSING_GAUNTLETS,Рукавиці не на землі!
+TID_ACCESSORY_BLOCKED_GAUNTLETS_TOO_FAR,Рукавиці надто далеко!
+TID_ACCESSORY_BLOCKED_GAUNTLETS_REQUIRED,Потрібні рукавиці!
+TID_SOUL_COLLECTOR,ГАС
+TID_SOUL_COLLECTOR_SHORT_DESC,ПІДТРИМКА
+TID_SOUL_COLLECTOR_DESC,"Прогулявшись у давно забутому та покинутому поїзді, Гас обожнює повітряні кулі. Він майстер у створенні тварин з повітряних кульок, якими він користується, щоб скоротати час і скласти собі компанію."
+TID_SOUL_COLLECTOR_WEAPON,БЕЗУМНІ ПОВІТРЯНІ КУЛІ
+TID_SOUL_COLLECTOR_WEAPON_DESC,Гас стріляє кульками у ворогів. Після кількох послідовних ударів випаде дух. Зібрані духи відновлять здоров’я вам або вашій команді.
+TID_SOUL_COLLECTOR_ULTI,МОТОРІЙНИЙ ХЛОПЧИК
+TID_SOUL_COLLECTOR_ULTI_DESC,"Гас використовує СТРАШИЛКУ(повітряна куля, а також його найкращий друг), щоб створити щит навколо себе або когось із своїх товаришів по команді."
+TID_SPEC_ABI_SOUL_COLLECTOR_1,БОНАНЦА ЗДОРОВ'Я
+TID_SPEC_ABI_SOUL_COLLECTOR_1_DESC,Зцілення від цих кульок збільшується на <c00cc00><VALUE1>%</c>.
+TID_SPEC_ABI_SOUL_COLLECTOR_2,ДУХ ТВАРИНИ
+TID_SPEC_ABI_SOUL_COLLECTOR_2_DESC,СТРАШИЛКА збільшує потужність шкоди для товариша по команді на <c00cc00><VALUE1>%</c> протягом <c00cc00><VALUE2></c> секунд.
+TID_ACCESSORY_SOUL_COLLECTOR_GADGET_1,КУКІ ПОППЕР
+TID_ACCESSORY_SOUL_COLLECTOR_GADGET_1_DESC,"Вибухайте всіх незібраних духів, завдаючи <c00cc00><VALUE1></c> шкоди ворогам поблизу."
+TID_ACCESSORY_SOUL_COLLECTOR_GADGET_2,ПЕРЕКЛЮЧАТЕЛЬ ДУШ
+TID_ACCESSORY_SOUL_COLLECTOR_GADGET_2_DESC,Гас втрачає <ccc0000><VALUE1>%</c> здоров’я та миттєво отримує <c00cc00><VALUE2>%</c> духу.
+TID_ACCESSORY_BLOCKED_MISSING_SOULS,Зниклий дух!
+TID_ACCESSORY_BLOCKED_SPIRIT_ALREADY_FULL,Дух уже повний!
+TID_SKIN_INFO_OUTLAW,Скін банди лиха
+TID_EMOJI_SURGE_TEAM,NAVI\n(🇺🇦 🇺🇦 🇺🇦)
+TID_EMOJI_MORTIS_TEAM,SK
+TID_EMOJI_SPIKE_TEAM,INTZ
+TID_EMOJI_PRIMO_TEAM,TQ
+TID_EMOJI_COLT_TEAM,STMN
+TID_EMOJI_NITA_TEAM,OBEY
+TID_EMOJI_LEON_TEAM,QLASH
+TID_EMOJI_JESSIE_TEAM,ZETA
+TID_EMOJI_EMZ_TEAM,TRIBE
+TID_EMOJI_SHELLY_TEAM,TOTEM
+TID_SKIN_INFO_MECHA,Mecha skin
+TID_SCID_REQUIRED_DESC,Через ваш вік вам потрібно підключити свою гру до СУПЕРСЕЛЛ ІД
+TID_SCID_REQUIRED_CONNECT,ПІДКЛЮЧИТИ
+TID_LOGIN_CALENDAR_POPULAR,ПОПУЛЯРНО
+TID_TRAIT_SUPER_START,Цей бравлер починається з повністю зарядженою супер
+TID_GAME_MODE_29,ОСТАННІЙ БІЙ
+TID_GAME_MODE_29_DESC,"Зіпсовані роботи обернулися проти нас! 8-біт - наша остання й єдина надія. Він несе секретний код, і дуже важливо, щоб він вижив! Захищайте 8-біт від хвиль злих роботів, доки не закінчиться час, щоб виграти матч.\n\nЗбирайте монети, щоб зберегти 8-біт у битві!"
+TID_GAME_MODE_29_INTRO_TEXT,Захистіть 8-біт!
+TID_LAST_STAND_1,Елімінатор
+TID_LAST_STAND_2,День покарання
+TID_LAST_STAND_3,Повстання роботів
+TID_LAST_STAND_4,Спасіння
+TID_LAST_STAND_5,Смажені схеми
+TID_LAST_STAND_6,Темна доля
+TID_INBOX_CAPTION_55,Нагорода за виконання квесту:
+TID_ESPORTS_OFFER_TITLE,ЧЕМПІОНАТ
+TID_ESPORTS_OFFER_SUBTITLE_PINS,Набір емозі
+TID_ESPORTS_OFFER_SUBTITLE_THUMBNAILS,Значки гравців
+TID_ESPORTS_OFFER_SUBTITLE_EACH,КОЖЕН
+TID_ESPORTS_OFFER_SUBTITLE_ALREADY_OWNED,Вже у власності!
+TID_ESPORTS_OFFER_ITEM_PINS,Емозі
+TID_ESPORTS_OFFER_ITEM_THUMBNAILS,Значок гравця
+TID_EMOTE_BUNDLE_MORTIS_MECHA_PACK,Набір емозі МЕХА МОРТІСА
+TID_BRAWL_PASS_SEASON_13,ФАБРИКА РОБОТІВ
+TID_TRUE_GOLD_OTIS_SKIN,TRUE GOLD OTIS
+TID_TRUE_GOLD_OTIS_SKIN_SHOP,TRUE GOLD\nOTIS
+TID_TRUE_SILVER_OTIS_SKIN,TRUE SILVER OTIS
+TID_TRUE_SILVER_OTIS_SKIN_SHOP,TRUE SILVER\nOTIS
+TID_TRUE_GOLD_SQUEAK_SKIN,TRUE GOLD SQUEAK
+TID_TRUE_GOLD_SQUEAK_SKIN_SHOP,TRUE GOLD\nSQUEAK
+TID_TRUE_SILVER_SQUEAK_SKIN,TRUE SILVER SQUEAK
+TID_TRUE_SILVER_SQUEAK_SKIN_SHOP,TRUE SILVER\nSQUEAK
+TID_TRUE_GOLD_BYRON_SKIN,TRUE GOLD BYRON
+TID_TRUE_GOLD_BYRON_SKIN_SHOP,TRUE GOLD\nBYRON
+TID_TRUE_SILVER_BRYON_SKIN,TRUE SILVER BYRON
+TID_TRUE_SILVER_BYRON_SKIN_SHOP,TRUE SILVER\nBYRON
+TID_TRUE_GOLD_GRIFF_SKIN,TRUE GOLD GRIFF
+TID_TRUE_GOLD_GRIFF_SKIN_SHOP,TRUE GOLD\nGRIFF
+TID_TRUE_SILVER_GRIFF_SKIN,TRUE SILVER GRIFF
+TID_TRUE_SILVER_GRIFF_SKIN_SHOP,TRUE SILVER\nGRIFF
+TID_TRUE_GOLD_EDGAR_SKIN,TRUE GOLD EDGAR
+TID_TRUE_GOLD_EDGAR_SKIN_SHOP,TRUE GOLD\nEDGAR
+TID_TRUE_SILVER_EDGAR_SKIN,TRUE SILVER EDGAR
+TID_TRUE_SILVER_EDGAR_SKIN_SHOP,TRUE SILVER\nEDGAR
+TID_CAESAR_BRONSON_SKIN,ЦЕЗАР СЕМ
+TID_CAESAR_BRONSON_SKIN_SHOP,ЦЕЗАР\nСЕМ
+TID_MECHA_MORIS_SKIN,МЕХА МОРТІС
+TID_MECHA_MORTIS_SKIN_SHOP,МЕХА\nМОРТІС
+TID_DARK_MECHA_MORTIS_SKIN,ТЕМНИЙ МЕХА МОРТИС
+TID_DARK_MECHA_MORTIS_SKIN_SHOP,ТЕМНИЙ\nМЕХА МОРТІС
+TID_LIGHT_MECHA_MORTIS_SKIN,СВІТЛИЙ МЕХА МОРТІС
+TID_LIGHT_MECHA_MORTIS_SKIN_SHOP,ЛЕГКИЙ\nМЕХА МОРТІС
+TID_OUTLAW_LOLA_SKIN,НЕЛЕГАЛЬНА ЛОЛА
+TID_OUTLAW_LOLA_SKIN_SHOP,НЕЛЕГАЛЬНА\nЛОЛА
+TID_OUTLAW_CROW,КІСТКОВИЙ ВОРОН
+TID_OUTLAW_CROW_SKIN_SHOP,КІСТКОВИЙ\nВОРОН
+TID_OUTLAW_POCO_SKIN,ДЕСПЕРАДО ПОКО
+TID_OUTLAW_POCO_SKIN_SHOP,ДЕСПЕРАДО\nПОКО
+TID_BROKER_PAM_SKIN,СТОНКС ПАМ
+TID_BROKER_PAM_SKIN_SHOP,СТОНКС\nПАМ
+TID_MOON_FESTIVAL_SQUEAK_SKIN,МІСЯЧНИЙ ЗАЙЧИК СКВІК
+TID_MOON_FESTIVAL_SQUEAK_SKIN_SHOP,МІСЯЧНИЙ ЗАЙЧИК\nСКВІК
+TID_BRAWLOWEEN_LEON_SKIN,ЛЕОН ХЕЛЛОУ-ВІН
+TID_BRAWLOWEEN_LEON_SKIN_SHOP,ЛЕОН\nХЕЛЛОУ-ВІН
+TID_HINT_45,Обов’язково використовуйте код творця в магазині.
+TID_HINT_46,"Увіходьте в гру щодня, щоб отримати безкоштовні щоденні винагороди!"
+TID_HINT_47,Передача м’яча своїм ворогам у Brawl Ball іноді може бути чудовим способом змусити їх витрачати свої боєприпаси!
+TID_HINT_48,"Використовуйте Піни та Спреї в грі, щоб висловити свої емоції."
+TID_HINT_49,"Паркани схожі на стіни, тільки через них можна стріляти!"
+TID_HINT_50,Командна робота робить мрію успішною!
+TID_HINT_51,"Вам не подобається, як ваш макет елементів керування? Ви можете змінити за допомогою функції TRY."
+TID_HINT_52,"У Brawl Ball ви можете використовувати свій Super, щоб виконати суперудар!"
+TID_HINT_53,"Коли ви тримаєте найбільше дорогоцінних каменів у Gem Grab, віддайте перевагу захисту, а не атаці."
+TID_HINT_54,"Якщо ваші товариші по команді зазнають поразки, зачекайте, доки вони відродяться, перш ніж кинутися разом!"
+TID_HINT_55,"Використовуйте дружні битви, щоб практикувати та вдосконалювати свої навички"
+TID_HINT_56,У деяких скандалістів є особливості! Перевірте їх на екрані Brawl Stats.
+TID_HINT_57,"У Duo Showdown переконайтеся, що ваш товариш по команді живий, перш ніж брати Power Cubes."
+TID_HINT_58,"Використовуйте функцію \qШукати команду\q, якщо граєте в виклики!"
+TID_HINT_59,"Завжди стежте за мінами Бо, вони можуть бути де завгодно!"
+TID_HINT_60,"Lou's Super чудово підходить для контролю території, використовуйте його з розумом у ключових точках карти!"
+TID_HINT_61,"Шкода Джессі зменшується кожного разу, коли її атака відбивається від ворога."
+TID_HINT_62,"Колетт може завдати великої шкоди, атакуючи танкових бешкетників!"
+TID_HINT_63,"Едгар зцілюється щоразу, коли завдає удару!"
+TID_HINT_64,"Джанет стріляє чим далі, чим довше ви прицілюєте її атаку."
+TID_HINT_65,Джин може тицьнути ворога і зарядити його супер своєю роздільною атакою!
+TID_LAST_STAND_WAVE_1,Роботи наближаються!
+TID_LAST_STAND_WAVE_2,Більше ворогів!
+TID_LAST_STAND_SHUTDOWN,<ccc0000>8-розрядне завершення роботи!</c>
+TID_EMOTE_BUNDLE_OUTLAW_PACK,Набір шпильок Calamity Gang
+TID_SHOP_OUTLAW_SKINS,Скін БАНДИ ЛИХА
+TID_SHOP_OUTLAW_TITLE,БАНДА ЛИХА
+TID_ACCESSORY_BLOCKED_SOULS_TOO_FAR,Духи занадто далеко!

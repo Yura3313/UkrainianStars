@@ -1,35 +1,39 @@
 .class public final Lk3/p21;
-.super Landroid/content/BroadcastReceiver;
+.super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
+
+# interfaces
+.implements Ljava/lang/Runnable;
 
 
 # instance fields
-.field public final synthetic a:Lk3/n21;
+.field public final synthetic g:Lk3/l21;
 
 
 # direct methods
-.method public constructor <init>(Lk3/n21;)V
+.method public constructor <init>(Lk3/l21;IJ)V
     .locals 0
 
-    iput-object p1, p0, Lk3/p21;->a:Lk3/n21;
+    iput-object p1, p0, Lk3/p21;->g:Lk3/l21;
 
-    invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final onReceive(Landroid/content/Context;Landroid/content/Intent;)V
-    .locals 0
+.method public final run()V
+    .locals 1
 
     .line 1
-    iget-object p1, p0, Lk3/p21;->a:Lk3/n21;
-
-    const/4 p2, 0x3
+    iget-object v0, p0, Lk3/p21;->g:Lk3/l21;
 
     .line 2
-    invoke-virtual {p1, p2}, Lk3/n21;->c(I)V
+    iget-object v0, v0, Lk3/l21;->b:Lk3/xf;
+
+    .line 3
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     return-void
 .end method

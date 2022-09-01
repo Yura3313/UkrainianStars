@@ -18,22 +18,22 @@
 
 
 # instance fields
-.field public final synthetic f:Lsd/n;
-
-.field public final synthetic g:Ljava/lang/String;
+.field public final synthetic g:Lsd/n;
 
 .field public final synthetic h:Ljava/lang/String;
+
+.field public final synthetic i:Ljava/lang/String;
 
 
 # direct methods
 .method public constructor <init>(Lsd/n;Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
 
-    iput-object p1, p0, Lsd/n$e;->f:Lsd/n;
+    iput-object p1, p0, Lsd/n$e;->g:Lsd/n;
 
-    iput-object p2, p0, Lsd/n$e;->g:Ljava/lang/String;
+    iput-object p2, p0, Lsd/n$e;->h:Ljava/lang/String;
 
-    iput-object p3, p0, Lsd/n$e;->h:Ljava/lang/String;
+    iput-object p3, p0, Lsd/n$e;->i:Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -46,11 +46,11 @@
     .locals 4
 
     .line 1
-    iget-object p1, p0, Lsd/n$e;->g:Ljava/lang/String;
+    iget-object p1, p0, Lsd/n$e;->h:Ljava/lang/String;
 
     if-eqz p1, :cond_1
 
-    iget-object p1, p0, Lsd/n$e;->h:Ljava/lang/String;
+    iget-object p1, p0, Lsd/n$e;->i:Ljava/lang/String;
 
     if-nez p1, :cond_0
 
@@ -65,7 +65,7 @@
     move-result-object p1
 
     .line 3
-    iget-object p1, p1, Lae/u;->m:La5/d0;
+    iget-object p1, p1, Lae/u;->m:Lpe/a;
 
     const/4 v0, 0x0
 
@@ -76,12 +76,12 @@
     const-string v3, "click"
 
     .line 4
-    invoke-static {p1, v2, v3, v0, v1}, La5/d0;->a(La5/d0;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;I)V
+    invoke-static {p1, v2, v3, v0, v1}, Lpe/a;->e(Lpe/a;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;I)V
 
     .line 5
-    iget-object p1, p0, Lsd/n$e;->f:Lsd/n;
+    iget-object p1, p0, Lsd/n$e;->g:Lsd/n;
 
-    invoke-static {p1}, Lcom/android/billingclient/api/c0;->e(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
+    invoke-static {p1}, Lcom/android/billingclient/api/b0;->f(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
 
     move-result-object p1
 
@@ -99,7 +99,7 @@
     invoke-direct {v0, v1, v2, v3}, Lwc/q$a;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     .line 7
-    iget-object v1, p0, Lsd/n$e;->h:Ljava/lang/String;
+    iget-object v1, p0, Lsd/n$e;->i:Ljava/lang/String;
 
     .line 8
     new-instance v2, Lie/d;
@@ -127,10 +127,10 @@
     invoke-direct {v1, p0}, Lsd/n$e$a;-><init>(Lsd/n$e;)V
 
     .line 13
-    iput-object v1, v0, Lwc/q;->w0:Lre/l;
+    iput-object v1, v0, Lwc/q;->x0:Lre/l;
 
     .line 14
-    sget-object v1, Lcom/supercell/id/ui/MainActivity;->s:Ljava/lang/ref/WeakReference;
+    sget-object v1, Lcom/supercell/id/ui/MainActivity;->t:Ljava/lang/ref/WeakReference;
 
     const-string v1, "popupDialog"
 

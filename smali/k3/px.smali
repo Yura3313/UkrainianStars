@@ -1,52 +1,26 @@
-.class public final synthetic Lk3/px;
+.class public final Lk3/px;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
-# interfaces
-.implements Lk3/nl0;
-
 
 # instance fields
-.field public final a:Lk3/em0;
+.field public final a:Ljava/util/concurrent/Executor;
+
+.field public final b:Lk3/gx;
 
 
 # direct methods
-.method public constructor <init>(Lk3/em0;)V
+.method public constructor <init>(Ljava/util/concurrent/Executor;Lk3/gx;)V
     .locals 0
 
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lk3/px;->a:Lk3/em0;
-
-    return-void
-.end method
-
-
-# virtual methods
-.method public final a(Ljava/lang/Object;)Lk3/em0;
-    .locals 2
-
-    .line 1
-    iget-object v0, p0, Lk3/px;->a:Lk3/em0;
-
-    if-eqz p1, :cond_0
-
-    return-object v0
-
     .line 2
-    :cond_0
-    new-instance p1, Lcom/google/android/gms/internal/ads/zzcuh;
-
-    const/4 v0, 0x1
-
-    const-string v1, "Retrieve required value in native ad response failed."
-
-    invoke-direct {p1, v0, v1}, Lcom/google/android/gms/internal/ads/zzcuh;-><init>(ILjava/lang/String;)V
+    iput-object p1, p0, Lk3/px;->a:Ljava/util/concurrent/Executor;
 
     .line 3
-    new-instance v0, Lk3/cm0$a;
+    iput-object p2, p0, Lk3/px;->b:Lk3/gx;
 
-    invoke-direct {v0, p1}, Lk3/cm0$a;-><init>(Ljava/lang/Throwable;)V
-
-    return-object v0
+    return-void
 .end method

@@ -1,5 +1,5 @@
 .class public final Lwc/j;
-.super Lse/h;
+.super Lse/i;
 .source "BaseFragment.kt"
 
 # interfaces
@@ -9,32 +9,32 @@
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/l<",
         "Landroid/view/View;",
-        "Lie/h;",
+        "Lie/i;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic f:Landroid/view/View;
+.field public final synthetic g:Landroid/view/View;
 
-.field public final synthetic g:Lcom/supercell/id/ui/BaseFragment;
+.field public final synthetic h:Lcom/supercell/id/ui/BaseFragment;
 
 
 # direct methods
 .method public constructor <init>(Landroid/view/View;Lcom/supercell/id/ui/BaseFragment;)V
     .locals 0
 
-    iput-object p1, p0, Lwc/j;->f:Landroid/view/View;
+    iput-object p1, p0, Lwc/j;->g:Landroid/view/View;
 
-    iput-object p2, p0, Lwc/j;->g:Lcom/supercell/id/ui/BaseFragment;
+    iput-object p2, p0, Lwc/j;->h:Lcom/supercell/id/ui/BaseFragment;
 
     const/4 p1, 0x1
 
-    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -50,10 +50,10 @@
     const-string v0, "it"
 
     .line 2
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 3
-    iget-object p1, p0, Lwc/j;->g:Lcom/supercell/id/ui/BaseFragment;
+    iget-object p1, p0, Lwc/j;->h:Lcom/supercell/id/ui/BaseFragment;
 
     invoke-virtual {p1}, Landroidx/fragment/app/Fragment;->N()Z
 
@@ -65,7 +65,7 @@
 
     .line 4
     :cond_0
-    iget-object p1, p0, Lwc/j;->f:Landroid/view/View;
+    iget-object p1, p0, Lwc/j;->g:Landroid/view/View;
 
     .line 5
     sget-object v0, Lf0/r;->a:Ljava/util/WeakHashMap;
@@ -98,7 +98,7 @@
 
     .line 7
     :goto_1
-    iget-object v1, p0, Lwc/j;->f:Landroid/view/View;
+    iget-object v1, p0, Lwc/j;->g:Landroid/view/View;
 
     invoke-virtual {v1}, Landroid/view/View;->getTranslationX()F
 
@@ -110,7 +110,7 @@
 
     if-nez v1, :cond_3
 
-    iget-object v1, p0, Lwc/j;->f:Landroid/view/View;
+    iget-object v1, p0, Lwc/j;->g:Landroid/view/View;
 
     const/high16 v3, -0x41000000    # -0.5f
 
@@ -128,12 +128,12 @@
 
     .line 8
     :cond_3
-    iget-object v0, p0, Lwc/j;->f:Landroid/view/View;
+    iget-object v0, p0, Lwc/j;->g:Landroid/view/View;
 
     invoke-virtual {v0, p1}, Landroid/view/View;->setAlpha(F)V
 
     .line 9
-    iget-object p1, p0, Lwc/j;->f:Landroid/view/View;
+    iget-object p1, p0, Lwc/j;->g:Landroid/view/View;
 
     invoke-virtual {p1}, Landroid/view/View;->animate()Landroid/view/ViewPropertyAnimator;
 
@@ -189,7 +189,7 @@
 
     .line 19
     :goto_2
-    sget-object p1, Lie/h;->a:Lie/h;
+    sget-object p1, Lie/i;->a:Lie/i;
 
     return-object p1
 .end method

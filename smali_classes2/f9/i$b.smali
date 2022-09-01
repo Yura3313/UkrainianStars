@@ -5,7 +5,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lf9/i;->t(Lo8/z;Lp8/c$a;Z)V
+    value = Lf9/i;->t(Lo8/b0;Lp8/d$a;Z)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -15,9 +15,9 @@
 
 
 # instance fields
-.field public final synthetic b:Lo8/z;
+.field public final synthetic b:Lo8/b0;
 
-.field public final synthetic c:Lp8/c$a;
+.field public final synthetic c:Lp8/d$a;
 
 .field public final synthetic d:Z
 
@@ -25,14 +25,14 @@
 
 
 # direct methods
-.method public constructor <init>(Lf9/i;Lo8/z;Lp8/c$a;Z)V
+.method public constructor <init>(Lf9/i;Lo8/b0;Lp8/d$a;Z)V
     .locals 0
 
     iput-object p1, p0, Lf9/i$b;->e:Lf9/i;
 
-    iput-object p2, p0, Lf9/i$b;->b:Lo8/z;
+    iput-object p2, p0, Lf9/i$b;->b:Lo8/b0;
 
-    iput-object p3, p0, Lf9/i$b;->c:Lp8/c$a;
+    iput-object p3, p0, Lf9/i$b;->c:Lp8/d$a;
 
     iput-boolean p4, p0, Lf9/i$b;->d:Z
 
@@ -58,13 +58,13 @@
 
     move-result-object v0
 
-    iget-object v2, p0, Lf9/i$b;->b:Lo8/z;
+    iget-object v2, p0, Lf9/i$b;->b:Lo8/b0;
 
-    iget-object v3, p0, Lf9/i$b;->c:Lp8/c$a;
+    iget-object v3, p0, Lf9/i$b;->c:Lp8/d$a;
 
     iget-boolean v4, p0, Lf9/i$b;->d:Z
 
-    invoke-virtual {v1, v0, v2, v3, v4}, Ln8/c;->F(Lq8/d;Lo8/z;Lp8/c$a;Z)V
+    invoke-virtual {v1, v0, v2, v3, v4}, Ln8/c;->F(Lq8/d;Lo8/b0;Lp8/d$a;Z)V
     :try_end_0
     .catch Lcom/helpshift/common/exception/RootAPIException; {:try_start_0 .. :try_end_0} :catch_0
 

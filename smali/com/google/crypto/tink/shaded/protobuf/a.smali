@@ -208,7 +208,7 @@
 
     move-result v1
 
-    sget-object v2, Lo5/d;->g:Lo5/d$f;
+    sget-object v2, Lo5/d;->h:Lo5/d$f;
 
     .line 2
     new-array v2, v1, [B

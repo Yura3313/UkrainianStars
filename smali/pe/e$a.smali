@@ -29,11 +29,11 @@
 
 
 # instance fields
-.field public f:Ljava/lang/String;
+.field public g:Ljava/lang/String;
 
-.field public g:Z
+.field public h:Z
 
-.field public final synthetic h:Lpe/e;
+.field public final synthetic i:Lpe/e;
 
 
 # direct methods
@@ -45,7 +45,7 @@
         }
     .end annotation
 
-    iput-object p1, p0, Lpe/e$a;->h:Lpe/e;
+    iput-object p1, p0, Lpe/e$a;->i:Lpe/e;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -58,18 +58,18 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lpe/e$a;->f:Ljava/lang/String;
+    iget-object v0, p0, Lpe/e$a;->g:Ljava/lang/String;
 
     const/4 v1, 0x1
 
     if-nez v0, :cond_0
 
-    iget-boolean v0, p0, Lpe/e$a;->g:Z
+    iget-boolean v0, p0, Lpe/e$a;->h:Z
 
     if-nez v0, :cond_0
 
     .line 2
-    iget-object v0, p0, Lpe/e$a;->h:Lpe/e;
+    iget-object v0, p0, Lpe/e$a;->i:Lpe/e;
 
     .line 3
     iget-object v0, v0, Lpe/e;->a:Ljava/io/BufferedReader;
@@ -79,16 +79,16 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lpe/e$a;->f:Ljava/lang/String;
+    iput-object v0, p0, Lpe/e$a;->g:Ljava/lang/String;
 
     if-nez v0, :cond_0
 
     .line 5
-    iput-boolean v1, p0, Lpe/e$a;->g:Z
+    iput-boolean v1, p0, Lpe/e$a;->h:Z
 
     .line 6
     :cond_0
-    iget-object v0, p0, Lpe/e$a;->f:Ljava/lang/String;
+    iget-object v0, p0, Lpe/e$a;->g:Ljava/lang/String;
 
     if-eqz v0, :cond_1
 
@@ -112,12 +112,12 @@
     if-eqz v0, :cond_1
 
     .line 2
-    iget-object v0, p0, Lpe/e$a;->f:Ljava/lang/String;
+    iget-object v0, p0, Lpe/e$a;->g:Ljava/lang/String;
 
     const/4 v1, 0x0
 
     .line 3
-    iput-object v1, p0, Lpe/e$a;->f:Ljava/lang/String;
+    iput-object v1, p0, Lpe/e$a;->g:Ljava/lang/String;
 
     if-eqz v0, :cond_0
 
@@ -125,7 +125,7 @@
 
     .line 4
     :cond_0
-    invoke-static {}, Lt3/e;->f()V
+    invoke-static {}, Lt3/h;->j()V
 
     throw v1
 

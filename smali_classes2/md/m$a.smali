@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field public final synthetic f:Lmd/m;
+.field public final synthetic g:Lmd/m;
 
 
 # direct methods
 .method public constructor <init>(Lmd/m;)V
     .locals 0
 
-    iput-object p1, p0, Lmd/m$a;->f:Lmd/m;
+    iput-object p1, p0, Lmd/m$a;->g:Lmd/m;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -37,7 +37,7 @@
 .method public final run()V
     .locals 3
 
-    iget-object v0, p0, Lmd/m$a;->f:Lmd/m;
+    iget-object v0, p0, Lmd/m$a;->g:Lmd/m;
 
     sget v1, Lcom/supercell/id/R$id;->rememberCheckBox:I
 

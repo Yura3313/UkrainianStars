@@ -7,13 +7,13 @@
 
 
 # instance fields
-.field public final f:Lk3/pb;
-
-.field public final g:I
+.field public final g:Lk3/pb;
 
 .field public final h:I
 
 .field public final i:I
+
+.field public final j:I
 
 
 # direct methods
@@ -22,13 +22,13 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lk3/sb;->f:Lk3/pb;
+    iput-object p1, p0, Lk3/sb;->g:Lk3/pb;
 
-    iput p2, p0, Lk3/sb;->g:I
+    iput p2, p0, Lk3/sb;->h:I
 
-    iput p3, p0, Lk3/sb;->h:I
+    iput p3, p0, Lk3/sb;->i:I
 
-    iput p4, p0, Lk3/sb;->i:I
+    iput p4, p0, Lk3/sb;->j:I
 
     return-void
 .end method
@@ -38,13 +38,13 @@
 .method public final onClick(Landroid/content/DialogInterface;I)V
     .locals 4
 
-    iget-object p1, p0, Lk3/sb;->f:Lk3/pb;
+    iget-object p1, p0, Lk3/sb;->g:Lk3/pb;
 
-    iget v0, p0, Lk3/sb;->g:I
+    iget v0, p0, Lk3/sb;->h:I
 
-    iget v1, p0, Lk3/sb;->h:I
+    iget v1, p0, Lk3/sb;->i:I
 
-    iget v2, p0, Lk3/sb;->i:I
+    iget v2, p0, Lk3/sb;->j:I
 
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -98,9 +98,9 @@
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
     .line 7
-    sget-object v1, Li1/o;->B:Li1/o;
+    sget-object v1, Li1/p;->B:Li1/p;
 
-    iget-object v1, v1, Li1/o;->c:Lk3/bb;
+    iget-object v1, v1, Li1/p;->c:Lk3/bb;
 
     .line 8
     invoke-static {p2}, Lk3/bb;->D(Landroid/net/Uri;)Ljava/util/Map;
@@ -203,7 +203,7 @@
     invoke-virtual {v0, p1, v1}, Landroid/app/AlertDialog$Builder;->setPositiveButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     .line 20
-    sget-object p1, Lk3/tb;->f:Lk3/tb;
+    sget-object p1, Lk3/tb;->g:Lk3/tb;
 
     const-string p2, "Close"
 
@@ -225,13 +225,13 @@
     if-ne p2, v1, :cond_4
 
     .line 23
-    sget-object p2, Lk3/jd;->a:Lk3/nd;
+    sget-object p2, Lk3/jd;->a:Lk3/od;
 
     new-instance v1, Lk3/wb;
 
     invoke-direct {v1, p1, v0}, Lk3/wb;-><init>(Ljava/lang/Object;I)V
 
-    invoke-virtual {p2, v1}, Lk3/nd;->execute(Ljava/lang/Runnable;)V
+    invoke-virtual {p2, v1}, Lk3/od;->execute(Ljava/lang/Runnable;)V
 
     goto :goto_2
 
@@ -239,13 +239,13 @@
     if-ne p2, v2, :cond_5
 
     .line 24
-    sget-object p2, Lk3/jd;->a:Lk3/nd;
+    sget-object p2, Lk3/jd;->a:Lk3/od;
 
     new-instance v1, Lk3/vb;
 
     invoke-direct {v1, p1, v0}, Lk3/vb;-><init>(Ljava/lang/Object;I)V
 
-    invoke-virtual {p2, v1}, Lk3/nd;->execute(Ljava/lang/Runnable;)V
+    invoke-virtual {p2, v1}, Lk3/od;->execute(Ljava/lang/Runnable;)V
 
     :cond_5
     :goto_2

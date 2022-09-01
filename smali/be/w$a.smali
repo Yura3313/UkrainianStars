@@ -29,7 +29,7 @@
     const-string v1, "fromPersistentStorage"
 
     .line 1
-    invoke-static {p1, v1}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v1}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 2
     invoke-direct {p0}, Lbe/w;-><init>()V
@@ -73,7 +73,7 @@
 
     iget-object v1, p1, Lbe/w$a;->a:Lcom/supercell/id/model/IdProfile;
 
-    invoke-static {v0, v1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
@@ -83,7 +83,7 @@
 
     iget-object p1, p1, Lbe/w$a;->b:Lcom/supercell/id/model/IdProfile;
 
-    invoke-static {v0, p1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, p1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 

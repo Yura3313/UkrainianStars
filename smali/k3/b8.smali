@@ -1,110 +1,64 @@
 .class public final Lk3/b8;
-.super Li1/c;
-.source "com.google.android.gms:play-services-ads@@19.3.0"
+.super Ljava/lang/Object;
+.source "com.google.android.gms:play-services-ads-lite@@19.3.0"
+
+# interfaces
+.implements Ljava/lang/Thread$UncaughtExceptionHandler;
 
 
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Li1/c<",
-        "Lcom/google/android/gms/internal/ads/zzasc;",
-        ">;"
-    }
-.end annotation
+# instance fields
+.field public final synthetic g:Ljava/lang/Thread$UncaughtExceptionHandler;
+
+.field public final synthetic h:Lk3/x7;
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;Landroid/os/Looper;Lcom/google/android/gms/common/internal/BaseGmsClient$a;Lcom/google/android/gms/common/internal/BaseGmsClient$b;)V
-    .locals 6
+.method public constructor <init>(Lk3/x7;Ljava/lang/Thread$UncaughtExceptionHandler;)V
+    .locals 0
 
-    .line 1
-    invoke-static {p1}, Lk3/x8;->a(Landroid/content/Context;)Landroid/content/Context;
+    iput-object p1, p0, Lk3/b8;->h:Lk3/x7;
 
-    move-result-object v1
+    iput-object p2, p0, Lk3/b8;->g:Ljava/lang/Thread$UncaughtExceptionHandler;
 
-    const/16 v3, 0x8
-
-    move-object v0, p0
-
-    move-object v2, p2
-
-    move-object v4, p3
-
-    move-object v5, p4
-
-    .line 2
-    invoke-direct/range {v0 .. v5}, Li1/c;-><init>(Landroid/content/Context;Landroid/os/Looper;ILcom/google/android/gms/common/internal/BaseGmsClient$a;Lcom/google/android/gms/common/internal/BaseGmsClient$b;)V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final G()Lcom/google/android/gms/internal/ads/zzasc;
+.method public final uncaughtException(Ljava/lang/Thread;Ljava/lang/Throwable;)V
     .locals 1
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Landroid/os/DeadObjectException;
-        }
-    .end annotation
-
-    invoke-virtual {p0}, Lcom/google/android/gms/common/internal/BaseGmsClient;->v()Landroid/os/IInterface;
-
-    move-result-object v0
-
-    check-cast v0, Lcom/google/android/gms/internal/ads/zzasc;
-
-    return-object v0
-.end method
-
-.method public final synthetic p(Landroid/os/IBinder;)Landroid/os/IInterface;
-    .locals 2
-
-    if-nez p1, :cond_0
-
-    const/4 p1, 0x0
-
-    return-object p1
-
-    :cond_0
-    const-string v0, "com.google.android.gms.ads.internal.request.IAdRequestService"
 
     .line 1
-    invoke-interface {p1, v0}, Landroid/os/IBinder;->queryLocalInterface(Ljava/lang/String;)Landroid/os/IInterface;
+    :try_start_0
+    iget-object v0, p0, Lk3/b8;->h:Lk3/x7;
 
-    move-result-object v0
+    invoke-virtual {v0, p2}, Lk3/x7;->b(Ljava/lang/Throwable;)V
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 2
-    instance-of v1, v0, Lcom/google/android/gms/internal/ads/zzasc;
+    iget-object v0, p0, Lk3/b8;->g:Ljava/lang/Thread$UncaughtExceptionHandler;
 
-    if-eqz v1, :cond_1
+    if-eqz v0, :cond_0
 
     .line 3
-    check-cast v0, Lcom/google/android/gms/internal/ads/zzasc;
+    invoke-interface {v0, p1, p2}, Ljava/lang/Thread$UncaughtExceptionHandler;->uncaughtException(Ljava/lang/Thread;Ljava/lang/Throwable;)V
 
-    return-object v0
+    return-void
+
+    :catchall_0
+    nop
 
     .line 4
-    :cond_1
-    new-instance v0, Lcom/google/android/gms/internal/ads/zzase;
+    iget-object v0, p0, Lk3/b8;->g:Ljava/lang/Thread$UncaughtExceptionHandler;
 
-    invoke-direct {v0, p1}, Lcom/google/android/gms/internal/ads/zzase;-><init>(Landroid/os/IBinder;)V
+    if-eqz v0, :cond_0
 
-    return-object v0
-.end method
+    .line 5
+    invoke-interface {v0, p1, p2}, Ljava/lang/Thread$UncaughtExceptionHandler;->uncaughtException(Ljava/lang/Thread;Ljava/lang/Throwable;)V
 
-.method public final w()Ljava/lang/String;
-    .locals 1
-
-    const-string v0, "com.google.android.gms.ads.internal.request.IAdRequestService"
-
-    return-object v0
-.end method
-
-.method public final x()Ljava/lang/String;
-    .locals 1
-
-    const-string v0, "com.google.android.gms.ads.service.START"
-
-    return-object v0
+    :cond_0
+    return-void
 .end method

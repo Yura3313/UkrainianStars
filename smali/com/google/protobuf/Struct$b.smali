@@ -32,9 +32,9 @@
     .locals 4
 
     .line 1
-    sget-object v0, Lcom/google/protobuf/w1$b;->p:Lcom/google/protobuf/w1$b$a;
+    sget-object v0, Lcom/google/protobuf/w1$b;->q:Lcom/google/protobuf/w1$b$a;
 
-    sget-object v1, Lcom/google/protobuf/w1$b;->r:Lcom/google/protobuf/w1$b$c;
+    sget-object v1, Lcom/google/protobuf/w1$b;->s:Lcom/google/protobuf/w1$b$c;
 
     .line 2
     invoke-static {}, Lcom/google/protobuf/Value;->getDefaultInstance()Lcom/google/protobuf/Value;

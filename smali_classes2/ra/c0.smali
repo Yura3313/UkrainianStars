@@ -1,256 +1,111 @@
 .class public final Lra/c0;
-.super Lra/u;
-.source "RequestScreenshotMessageDataBinder.java"
+.super Ljava/lang/Object;
+.source "ScreenshotMessageViewDataBinder.java"
+
+# interfaces
+.implements Landroid/view/View$OnClickListener;
 
 
-# annotations
-.annotation system Ldalvik/annotation/MemberClasses;
-    value = {
-        Lra/c0$a;
-    }
-.end annotation
+# instance fields
+.field public final synthetic g:Lo8/h0;
 
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Lra/u<",
-        "Lra/c0$a;",
-        "Lo8/c0;",
-        ">;"
-    }
-.end annotation
+.field public final synthetic h:Lra/d0;
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;)V
+.method public constructor <init>(Lra/d0;Lo8/h0;)V
     .locals 0
 
-    invoke-direct {p0, p1}, Lra/u;-><init>(Landroid/content/Context;)V
+    iput-object p1, p0, Lra/c0;->h:Lra/d0;
+
+    iput-object p2, p0, Lra/c0;->g:Lo8/h0;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Landroidx/recyclerview/widget/RecyclerView$z;Lo8/y;)V
-    .locals 5
-
-    .line 1
-    check-cast p1, Lra/c0$a;
-
-    check-cast p2, Lo8/c0;
-
-    .line 2
-    iget-object v0, p1, Lra/c0$a;->z:Landroid/widget/TextView;
-
-    iget-object v1, p2, Lo8/y;->j:Ljava/lang/String;
-
-    invoke-virtual {p0, v1}, Lra/u;->c(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
-
-    .line 3
-    iget-object v0, p2, Lo8/c0;->B:Ljava/lang/Boolean;
-
-    const/4 v1, 0x0
-
-    const/4 v2, 0x1
-
-    if-nez v0, :cond_3
-
-    .line 4
-    iget-object v0, p2, Lo8/y;->t:La8/f;
-
-    .line 5
-    iget-object v0, v0, La8/f;->f:Lj8/b;
-
-    .line 6
-    invoke-virtual {v0}, Lj8/b;->l()Ljava/util/List;
-
-    move-result-object v0
-
-    invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
-
-    move-result-object v0
-
-    :cond_0
-    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v3
-
-    if-eqz v3, :cond_2
-
-    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v3
-
-    check-cast v3, Ljava/lang/String;
-
-    const-string v4, "image/"
-
-    .line 7
-    invoke-virtual {v3, v4}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
-
-    move-result v4
-
-    if-nez v4, :cond_1
-
-    const-string v4, "*/*"
-
-    .line 8
-    invoke-virtual {v3, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v3
-
-    if-eqz v3, :cond_0
-
-    :cond_1
-    const/4 v0, 0x1
-
-    goto :goto_0
-
-    :cond_2
-    const/4 v0, 0x0
-
-    .line 9
-    :goto_0
-    invoke-static {v0}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
-
-    move-result-object v0
-
-    iput-object v0, p2, Lo8/c0;->B:Ljava/lang/Boolean;
-
-    .line 10
-    :cond_3
-    iget-boolean v0, p2, Lo8/c0;->z:Z
-
-    if-nez v0, :cond_4
-
-    iget-object v0, p2, Lo8/c0;->B:Ljava/lang/Boolean;
-
-    invoke-virtual {v0}, Ljava/lang/Boolean;->booleanValue()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_4
-
-    const/4 v1, 0x1
-
-    .line 11
-    :cond_4
-    iget-object v0, p1, Lra/c0$a;->A:Landroid/widget/Button;
-
-    invoke-virtual {p0, v0, v1}, Lra/u;->m(Landroid/view/View;Z)V
-
-    .line 12
-    iget-object v0, p2, Lo8/y;->h:Lo8/l0;
-
-    .line 13
-    iget-boolean v1, v0, Lo8/l0;->g:Z
-
-    if-eqz v1, :cond_5
-
-    .line 14
-    sget v1, Lcom/helpshift/R$drawable;->hs__chat_bubble_rounded:I
-
-    goto :goto_1
-
-    :cond_5
-    sget v1, Lcom/helpshift/R$drawable;->hs__chat_bubble_admin:I
-
-    .line 15
-    :goto_1
-    iget-object v2, p1, Lra/c0$a;->C:Landroid/widget/LinearLayout;
-
-    .line 16
-    sget v3, Lcom/helpshift/R$attr;->hs__chatBubbleAdminBackgroundColor:I
-
-    invoke-virtual {p0, v2, v1, v3}, Lra/u;->i(Landroid/view/View;II)V
-
-    .line 17
-    iget-boolean v1, v0, Lo8/l0;->f:Z
-
-    if-eqz v1, :cond_6
-
-    .line 18
-    iget-object v1, p1, Lra/c0$a;->B:Landroid/widget/TextView;
-
-    invoke-virtual {p2}, Lo8/y;->i()Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
-
-    .line 19
-    :cond_6
-    iget-object v1, p1, Lra/c0$a;->B:Landroid/widget/TextView;
-
-    .line 20
-    iget-boolean v0, v0, Lo8/l0;->f:Z
-
-    .line 21
-    invoke-virtual {p0, v1, v0}, Lra/u;->m(Landroid/view/View;Z)V
-
-    .line 22
-    iget-object v0, p1, Lra/c0$a;->A:Landroid/widget/Button;
-
-    new-instance v1, Lra/a0;
-
-    invoke-direct {v1, p0, p2}, Lra/a0;-><init>(Lra/c0;Lo8/c0;)V
-
-    invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
-
-    .line 23
-    iget-object v0, p1, Lra/c0$a;->y:Landroid/view/View;
-
-    invoke-virtual {p0, p2}, Lra/u;->d(Lo8/y;)Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Landroid/view/View;->setContentDescription(Ljava/lang/CharSequence;)V
-
-    .line 24
-    iget-object v0, p1, Lra/c0$a;->z:Landroid/widget/TextView;
-
-    new-instance v1, Lra/b0;
-
-    invoke-direct {v1, p0, p2}, Lra/b0;-><init>(Lra/c0;Lo8/c0;)V
-
-    invoke-virtual {p0, v0, v1}, Lra/u;->e(Landroid/widget/TextView;Lcom/helpshift/util/o$b;)V
-
-    .line 25
-    iget-object p1, p1, Lra/c0$a;->D:Lcom/helpshift/views/CircleImageView;
-
-    invoke-virtual {p0, p2, p1}, Lra/u;->h(Lo8/y;Lcom/helpshift/views/CircleImageView;)V
-
-    return-void
-.end method
-
-.method public final b(Landroid/view/ViewGroup;)Landroidx/recyclerview/widget/RecyclerView$z;
+.method public final onClick(Landroid/view/View;)V
     .locals 3
 
     .line 1
-    invoke-virtual {p1}, Landroid/view/View;->getContext()Landroid/content/Context;
+    iget-object p1, p0, Lra/c0;->h:Lra/d0;
 
-    move-result-object v0
+    iget-object p1, p1, Lra/u;->b:Lra/u$a;
 
-    invoke-static {v0}, Landroid/view/LayoutInflater;->from(Landroid/content/Context;)Landroid/view/LayoutInflater;
+    iget-object v0, p0, Lra/c0;->g:Lo8/h0;
 
-    move-result-object v0
-
-    sget v1, Lcom/helpshift/R$layout;->hs__msg_request_screenshot:I
-
-    const/4 v2, 0x0
-
-    invoke-virtual {v0, v1, p1, v2}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
-
-    move-result-object p1
+    check-cast p1, Lqa/p0;
 
     .line 2
-    new-instance v0, Lra/c0$a;
+    iget-object p1, p1, Lqa/p0;->e:Lra/w;
 
-    invoke-direct {v0, p0, p1}, Lra/c0$a;-><init>(Lra/c0;Landroid/view/View;)V
+    if-eqz p1, :cond_1
 
-    return-object v0
+    .line 3
+    check-cast p1, Lqa/t;
+
+    .line 4
+    iget-object p1, p1, Lqa/t;->n0:Lf9/i;
+
+    .line 5
+    iget-object p1, p1, Lf9/i;->k:Ln8/p;
+
+    .line 6
+    iget-object p1, p1, Ln8/p;->g:Lf9/g;
+
+    .line 7
+    iget v1, v0, Lo8/h0;->L:I
+
+    const/4 v2, 0x4
+
+    if-ne v1, v2, :cond_1
+
+    if-eqz p1, :cond_1
+
+    .line 8
+    invoke-virtual {v0}, Lo8/h0;->r()Ljava/lang/String;
+
+    move-result-object v1
+
+    iget-object v0, v0, Lo8/n;->A:Ljava/lang/String;
+
+    check-cast p1, Lf9/i;
+
+    .line 9
+    iget-object p1, p1, Lf9/i;->n:Ln8/l;
+
+    check-cast p1, Lqa/e0;
+
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 10
+    invoke-static {v1}, Lt5/a;->i(Ljava/lang/String;)Ljava/io/File;
+
+    move-result-object v1
+
+    if-eqz v1, :cond_0
+
+    .line 11
+    iget-object v2, p1, Lqa/e0;->g:Landroid/content/Context;
+
+    invoke-static {v2, v1, v0}, Lcom/helpshift/util/x;->a(Landroid/content/Context;Ljava/io/File;Ljava/lang/String;)Landroid/content/Intent;
+
+    move-result-object v0
+
+    invoke-virtual {p1, v0, v1}, Lqa/e0;->l(Landroid/content/Intent;Ljava/io/File;)V
+
+    goto :goto_0
+
+    .line 12
+    :cond_0
+    sget-object v0, Ld8/d;->h:Ld8/d;
+
+    invoke-virtual {p1, v0}, Lqa/e0;->t(Ld8/a;)V
+
+    :cond_1
+    :goto_0
+    return-void
 .end method

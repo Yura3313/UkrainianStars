@@ -7,14 +7,14 @@
 
 
 # instance fields
-.field public final synthetic f:Lcom/supercell/id/view/RootFrameLayout;
+.field public final synthetic g:Lcom/supercell/id/view/RootFrameLayout;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/id/view/RootFrameLayout;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/view/l;->f:Lcom/supercell/id/view/RootFrameLayout;
+    iput-object p1, p0, Lcom/supercell/id/view/l;->g:Lcom/supercell/id/view/RootFrameLayout;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -27,10 +27,10 @@
     .locals 3
 
     .line 1
-    iget-object v0, p0, Lcom/supercell/id/view/l;->f:Lcom/supercell/id/view/RootFrameLayout;
+    iget-object v0, p0, Lcom/supercell/id/view/l;->g:Lcom/supercell/id/view/RootFrameLayout;
 
     .line 2
-    iget-object v0, v0, Lcom/supercell/id/view/RootFrameLayout;->g:Ljava/util/ArrayList;
+    iget-object v0, v0, Lcom/supercell/id/view/RootFrameLayout;->h:Ljava/util/ArrayList;
 
     .line 3
     invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
@@ -51,7 +51,7 @@
     check-cast v1, Lcom/supercell/id/view/RootFrameLayout$a;
 
     .line 4
-    iget-object v2, p0, Lcom/supercell/id/view/l;->f:Lcom/supercell/id/view/RootFrameLayout;
+    iget-object v2, p0, Lcom/supercell/id/view/l;->g:Lcom/supercell/id/view/RootFrameLayout;
 
     invoke-virtual {v2}, Lcom/supercell/id/view/RootFrameLayout;->getSystemWindowInsets()Landroid/graphics/Rect;
 

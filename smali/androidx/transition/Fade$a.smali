@@ -15,14 +15,14 @@
 
 
 # instance fields
-.field public final synthetic f:Landroid/view/View;
+.field public final synthetic g:Landroid/view/View;
 
 
 # direct methods
 .method public constructor <init>(Landroid/view/View;)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/transition/Fade$a;->f:Landroid/view/View;
+    iput-object p1, p0, Landroidx/transition/Fade$a;->g:Landroid/view/View;
 
     invoke-direct {p0}, Landroidx/transition/d;-><init>()V
 
@@ -35,14 +35,14 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Landroidx/transition/Fade$a;->f:Landroid/view/View;
+    iget-object v0, p0, Landroidx/transition/Fade$a;->g:Landroid/view/View;
 
     const/high16 v1, 0x3f800000    # 1.0f
 
     invoke-static {v0, v1}, Lv0/x;->c(Landroid/view/View;F)V
 
     .line 2
-    iget-object v0, p0, Landroidx/transition/Fade$a;->f:Landroid/view/View;
+    iget-object v0, p0, Landroidx/transition/Fade$a;->g:Landroid/view/View;
 
     .line 3
     sget-object v1, Lv0/x;->a:Lv0/d0;

@@ -18,8 +18,6 @@
 
 
 # instance fields
-.field public final synthetic f:Ljava/lang/String;
-
 .field public final synthetic g:Ljava/lang/String;
 
 .field public final synthetic h:Ljava/lang/String;
@@ -28,28 +26,30 @@
 
 .field public final synthetic j:Ljava/lang/String;
 
-.field public final synthetic k:I
+.field public final synthetic k:Ljava/lang/String;
 
-.field public final synthetic l:Lcom/supercell/titan/GameApp;
+.field public final synthetic l:I
+
+.field public final synthetic m:Lcom/supercell/titan/GameApp;
 
 
 # direct methods
 .method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILcom/supercell/titan/GameApp;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/titan/NativeDialogManager$a;->f:Ljava/lang/String;
+    iput-object p1, p0, Lcom/supercell/titan/NativeDialogManager$a;->g:Ljava/lang/String;
 
-    iput-object p2, p0, Lcom/supercell/titan/NativeDialogManager$a;->g:Ljava/lang/String;
+    iput-object p2, p0, Lcom/supercell/titan/NativeDialogManager$a;->h:Ljava/lang/String;
 
-    iput-object p3, p0, Lcom/supercell/titan/NativeDialogManager$a;->h:Ljava/lang/String;
+    iput-object p3, p0, Lcom/supercell/titan/NativeDialogManager$a;->i:Ljava/lang/String;
 
-    iput-object p4, p0, Lcom/supercell/titan/NativeDialogManager$a;->i:Ljava/lang/String;
+    iput-object p4, p0, Lcom/supercell/titan/NativeDialogManager$a;->j:Ljava/lang/String;
 
-    iput-object p5, p0, Lcom/supercell/titan/NativeDialogManager$a;->j:Ljava/lang/String;
+    iput-object p5, p0, Lcom/supercell/titan/NativeDialogManager$a;->k:Ljava/lang/String;
 
-    iput p6, p0, Lcom/supercell/titan/NativeDialogManager$a;->k:I
+    iput p6, p0, Lcom/supercell/titan/NativeDialogManager$a;->l:I
 
-    iput-object p7, p0, Lcom/supercell/titan/NativeDialogManager$a;->l:Lcom/supercell/titan/GameApp;
+    iput-object p7, p0, Lcom/supercell/titan/NativeDialogManager$a;->m:Lcom/supercell/titan/GameApp;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -79,42 +79,42 @@
     invoke-direct {v1}, Landroid/os/Bundle;-><init>()V
 
     .line 4
-    iget-object v2, p0, Lcom/supercell/titan/NativeDialogManager$a;->f:Ljava/lang/String;
+    iget-object v2, p0, Lcom/supercell/titan/NativeDialogManager$a;->g:Ljava/lang/String;
 
     const-string v3, "title"
 
     invoke-virtual {v1, v3, v2}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 5
-    iget-object v2, p0, Lcom/supercell/titan/NativeDialogManager$a;->g:Ljava/lang/String;
+    iget-object v2, p0, Lcom/supercell/titan/NativeDialogManager$a;->h:Ljava/lang/String;
 
     const-string v3, "message"
 
     invoke-virtual {v1, v3, v2}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 6
-    iget-object v2, p0, Lcom/supercell/titan/NativeDialogManager$a;->h:Ljava/lang/String;
+    iget-object v2, p0, Lcom/supercell/titan/NativeDialogManager$a;->i:Ljava/lang/String;
 
     const-string v3, "button"
 
     invoke-virtual {v1, v3, v2}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 7
-    iget-object v2, p0, Lcom/supercell/titan/NativeDialogManager$a;->i:Ljava/lang/String;
+    iget-object v2, p0, Lcom/supercell/titan/NativeDialogManager$a;->j:Ljava/lang/String;
 
     const-string v3, "button2"
 
     invoke-virtual {v1, v3, v2}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 8
-    iget-object v2, p0, Lcom/supercell/titan/NativeDialogManager$a;->j:Ljava/lang/String;
+    iget-object v2, p0, Lcom/supercell/titan/NativeDialogManager$a;->k:Ljava/lang/String;
 
     const-string v3, "button3"
 
     invoke-virtual {v1, v3, v2}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 9
-    iget v2, p0, Lcom/supercell/titan/NativeDialogManager$a;->k:I
+    iget v2, p0, Lcom/supercell/titan/NativeDialogManager$a;->l:I
 
     const-string v3, "id"
 
@@ -124,7 +124,7 @@
     invoke-virtual {v0, v1}, Landroid/app/Fragment;->setArguments(Landroid/os/Bundle;)V
 
     .line 11
-    iget-object v1, p0, Lcom/supercell/titan/NativeDialogManager$a;->l:Lcom/supercell/titan/GameApp;
+    iget-object v1, p0, Lcom/supercell/titan/NativeDialogManager$a;->m:Lcom/supercell/titan/GameApp;
 
     invoke-virtual {v1}, Landroid/app/Activity;->getFragmentManager()Landroid/app/FragmentManager;
 
@@ -137,7 +137,7 @@
     invoke-virtual {v0, v1, v2}, Landroid/app/DialogFragment;->show(Landroid/app/FragmentManager;Ljava/lang/String;)V
 
     .line 13
-    sput-object v0, Lcom/supercell/titan/NativeDialogManager;->i:Lcom/supercell/titan/NativeDialogManager;
+    sput-object v0, Lcom/supercell/titan/NativeDialogManager;->j:Lcom/supercell/titan/NativeDialogManager;
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 

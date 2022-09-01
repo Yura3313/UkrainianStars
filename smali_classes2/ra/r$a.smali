@@ -17,13 +17,13 @@
 # instance fields
 .field public final A:Landroid/widget/TextView;
 
-.field public final B:Landroid/view/View;
+.field public final B:Landroid/widget/TextView;
 
-.field public final C:Lcom/helpshift/views/CircleImageView;
+.field public final C:Landroid/view/View;
 
-.field public final y:Landroid/view/View;
+.field public final D:Lcom/helpshift/views/CircleImageView;
 
-.field public final z:Landroid/widget/TextView;
+.field public final z:Landroid/view/View;
 
 
 # direct methods
@@ -40,7 +40,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lra/r$a;->y:Landroid/view/View;
+    iput-object v0, p0, Lra/r$a;->z:Landroid/view/View;
 
     .line 3
     sget v0, Lcom/helpshift/R$id;->admin_message_text:I
@@ -51,7 +51,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lra/r$a;->z:Landroid/widget/TextView;
+    iput-object v0, p0, Lra/r$a;->A:Landroid/widget/TextView;
 
     .line 4
     sget v0, Lcom/helpshift/R$id;->admin_date_text:I
@@ -62,7 +62,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lra/r$a;->A:Landroid/widget/TextView;
+    iput-object v0, p0, Lra/r$a;->B:Landroid/widget/TextView;
 
     .line 5
     sget v0, Lcom/helpshift/R$id;->admin_message_container:I
@@ -71,7 +71,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lra/r$a;->B:Landroid/view/View;
+    iput-object v0, p0, Lra/r$a;->C:Landroid/view/View;
 
     .line 6
     sget v0, Lcom/helpshift/R$id;->avatar_image_view:I
@@ -82,7 +82,7 @@
 
     check-cast p1, Lcom/helpshift/views/CircleImageView;
 
-    iput-object p1, p0, Lra/r$a;->C:Lcom/helpshift/views/CircleImageView;
+    iput-object p1, p0, Lra/r$a;->D:Lcom/helpshift/views/CircleImageView;
 
     return-void
 .end method

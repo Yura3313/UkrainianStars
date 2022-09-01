@@ -30,9 +30,9 @@
 
 
 # instance fields
-.field public final g:Z
+.field public final h:Z
 
-.field public final h:Ljava/lang/Class;
+.field public final i:Ljava/lang/Class;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/lang/Class<",
@@ -43,9 +43,9 @@
     .end annotation
 .end field
 
-.field public final i:Lcom/supercell/id/model/IdProfile;
+.field public final j:Lcom/supercell/id/model/IdProfile;
 
-.field public final j:Ljava/lang/String;
+.field public final k:Ljava/lang/String;
 
 
 # direct methods
@@ -69,19 +69,19 @@
     .line 1
     invoke-direct {p0}, Lcom/supercell/id/ui/BackStack$Entry;-><init>()V
 
-    iput-object p1, p0, Lcom/supercell/id/ui/game/GameFragment$BackStackEntry;->i:Lcom/supercell/id/model/IdProfile;
+    iput-object p1, p0, Lcom/supercell/id/ui/game/GameFragment$BackStackEntry;->j:Lcom/supercell/id/model/IdProfile;
 
-    iput-object p2, p0, Lcom/supercell/id/ui/game/GameFragment$BackStackEntry;->j:Ljava/lang/String;
+    iput-object p2, p0, Lcom/supercell/id/ui/game/GameFragment$BackStackEntry;->k:Ljava/lang/String;
 
     const/4 p1, 0x1
 
     .line 2
-    iput-boolean p1, p0, Lcom/supercell/id/ui/game/GameFragment$BackStackEntry;->g:Z
+    iput-boolean p1, p0, Lcom/supercell/id/ui/game/GameFragment$BackStackEntry;->h:Z
 
     .line 3
     const-class p1, Lcom/supercell/id/ui/game/GameFragment;
 
-    iput-object p1, p0, Lcom/supercell/id/ui/game/GameFragment$BackStackEntry;->h:Ljava/lang/Class;
+    iput-object p1, p0, Lcom/supercell/id/ui/game/GameFragment$BackStackEntry;->i:Ljava/lang/Class;
 
     return-void
 .end method
@@ -93,7 +93,7 @@
 
     const-string p2, "mainActivity"
 
-    invoke-static {p1, p2}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p2}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     invoke-virtual {p1}, Landroidx/appcompat/app/AppCompatActivity;->getResources()Landroid/content/res/Resources;
@@ -102,7 +102,7 @@
 
     const-string p2, "mainActivity.resources"
 
-    invoke-static {p1, p2}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p2}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 2
     sget p2, Lcom/supercell/id/R$bool;->isSmallScreen:I
@@ -118,12 +118,12 @@
     int-to-float p1, p1
 
     .line 3
-    sget p2, La5/g0;->a:F
+    sget p2, La5/e0;->g:F
 
     mul-float p1, p1, p2
 
     .line 4
-    invoke-static {p1}, Lcom/android/billingclient/api/z;->n(F)I
+    invoke-static {p1}, Lcom/android/billingclient/api/y;->i(F)I
 
     move-result p1
 
@@ -135,12 +135,12 @@
     int-to-float p1, p1
 
     .line 5
-    sget p2, La5/g0;->a:F
+    sget p2, La5/e0;->g:F
 
     mul-float p1, p1, p2
 
     .line 6
-    invoke-static {p1}, Lcom/android/billingclient/api/z;->n(F)I
+    invoke-static {p1}, Lcom/android/billingclient/api/y;->i(F)I
 
     move-result p1
 
@@ -155,11 +155,11 @@
 
     const-string v0, "mainActivity"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    sget-object p1, Lwc/g1;->p0:Lwc/g1$a;
+    sget-object p1, Lwc/h1;->q0:Lwc/h1$a;
 
-    invoke-virtual {p1, p2, p3, p4}, Lwc/g1$a;->a(III)I
+    invoke-virtual {p1, p2, p3, p4}, Lwc/h1$a;->a(III)I
 
     move-result p1
 
@@ -175,7 +175,7 @@
             ")",
             "Ljava/lang/Class<",
             "+",
-            "Lwc/a1;",
+            "Lwc/b1;",
             ">;"
         }
     .end annotation
@@ -185,7 +185,7 @@
     const-string v1, "mainActivity.resources"
 
     .line 1
-    invoke-static {p1, v0, v1}, Lk3/ax;->e(Lcom/supercell/id/ui/MainActivity;Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {p1, v0, v1}, Lwc/v0;->a(Lcom/supercell/id/ui/MainActivity;Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result p1
 
@@ -216,7 +216,7 @@
         }
     .end annotation
 
-    iget-object v0, p0, Lcom/supercell/id/ui/game/GameFragment$BackStackEntry;->h:Ljava/lang/Class;
+    iget-object v0, p0, Lcom/supercell/id/ui/game/GameFragment$BackStackEntry;->i:Ljava/lang/Class;
 
     return-object v0
 .end method
@@ -240,21 +240,21 @@
 
     check-cast p1, Lcom/supercell/id/ui/game/GameFragment$BackStackEntry;
 
-    iget-object v0, p0, Lcom/supercell/id/ui/game/GameFragment$BackStackEntry;->i:Lcom/supercell/id/model/IdProfile;
+    iget-object v0, p0, Lcom/supercell/id/ui/game/GameFragment$BackStackEntry;->j:Lcom/supercell/id/model/IdProfile;
 
-    iget-object v1, p1, Lcom/supercell/id/ui/game/GameFragment$BackStackEntry;->i:Lcom/supercell/id/model/IdProfile;
+    iget-object v1, p1, Lcom/supercell/id/ui/game/GameFragment$BackStackEntry;->j:Lcom/supercell/id/model/IdProfile;
 
-    invoke-static {v0, v1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/supercell/id/ui/game/GameFragment$BackStackEntry;->j:Ljava/lang/String;
+    iget-object v0, p0, Lcom/supercell/id/ui/game/GameFragment$BackStackEntry;->k:Ljava/lang/String;
 
-    iget-object p1, p1, Lcom/supercell/id/ui/game/GameFragment$BackStackEntry;->j:Ljava/lang/String;
+    iget-object p1, p1, Lcom/supercell/id/ui/game/GameFragment$BackStackEntry;->k:Ljava/lang/String;
 
-    invoke-static {v0, p1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, p1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -277,7 +277,7 @@
 .method public final hashCode()I
     .locals 3
 
-    iget-object v0, p0, Lcom/supercell/id/ui/game/GameFragment$BackStackEntry;->i:Lcom/supercell/id/model/IdProfile;
+    iget-object v0, p0, Lcom/supercell/id/ui/game/GameFragment$BackStackEntry;->j:Lcom/supercell/id/model/IdProfile;
 
     const/4 v1, 0x0
 
@@ -295,7 +295,7 @@
     :goto_0
     mul-int/lit8 v0, v0, 0x1f
 
-    iget-object v2, p0, Lcom/supercell/id/ui/game/GameFragment$BackStackEntry;->j:Ljava/lang/String;
+    iget-object v2, p0, Lcom/supercell/id/ui/game/GameFragment$BackStackEntry;->k:Ljava/lang/String;
 
     if-eqz v2, :cond_1
 
@@ -314,11 +314,11 @@
 
     const-string v0, "mainActivity"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    sget-object p1, Lwc/g1;->p0:Lwc/g1$a;
+    sget-object p1, Lwc/h1;->q0:Lwc/h1$a;
 
-    invoke-virtual {p1, p2, p3, p4}, Lwc/g1$a;->b(III)I
+    invoke-virtual {p1, p2, p3, p4}, Lwc/h1$a;->b(III)I
 
     move-result p1
 
@@ -328,7 +328,7 @@
 .method public final l()Z
     .locals 1
 
-    iget-boolean v0, p0, Lcom/supercell/id/ui/game/GameFragment$BackStackEntry;->g:Z
+    iget-boolean v0, p0, Lcom/supercell/id/ui/game/GameFragment$BackStackEntry;->h:Z
 
     return v0
 .end method
@@ -338,7 +338,7 @@
 
     const-string v0, "mainActivity"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     new-instance v0, Ljava/lang/StringBuilder;
@@ -349,12 +349,12 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lcom/supercell/id/ui/game/GameFragment$BackStackEntry;->j:Ljava/lang/String;
+    iget-object v1, p0, Lcom/supercell/id/ui/game/GameFragment$BackStackEntry;->k:Ljava/lang/String;
 
     const-string v2, ".png"
 
     .line 2
-    invoke-static {v0, v1, v2}, Landroid/support/v4/media/b;->b(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, v1, v2}, Landroid/support/v4/media/b;->a(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -365,9 +365,9 @@
 
     const-string v1, "mainActivity.resources"
 
-    invoke-static {p1, v1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v1}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-static {p1}, Lcom/android/billingclient/api/c0;->k(Landroid/content/res/Resources;)Z
+    invoke-static {p1}, Lcom/android/billingclient/api/b0;->l(Landroid/content/res/Resources;)Z
 
     move-result p1
 
@@ -392,7 +392,7 @@
     const-string v1, "mainActivity.resources"
 
     .line 1
-    invoke-static {p1, v0, v1}, Lk3/ax;->e(Lcom/supercell/id/ui/MainActivity;Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {p1, v0, v1}, Lwc/v0;->a(Lcom/supercell/id/ui/MainActivity;Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result p1
 
@@ -412,7 +412,7 @@
     move-result-object v0
 
     .line 2
-    iget-object v1, p0, Lcom/supercell/id/ui/game/GameFragment$BackStackEntry;->i:Lcom/supercell/id/model/IdProfile;
+    iget-object v1, p0, Lcom/supercell/id/ui/game/GameFragment$BackStackEntry;->j:Lcom/supercell/id/model/IdProfile;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -420,12 +420,12 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lcom/supercell/id/ui/game/GameFragment$BackStackEntry;->j:Ljava/lang/String;
+    iget-object v1, p0, Lcom/supercell/id/ui/game/GameFragment$BackStackEntry;->k:Ljava/lang/String;
 
     const-string v2, ")"
 
     .line 3
-    invoke-static {v0, v1, v2}, Landroid/support/v4/media/b;->b(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, v1, v2}, Landroid/support/v4/media/b;->a(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -437,15 +437,15 @@
 
     const-string v0, "dest"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
-    iget-object v0, p0, Lcom/supercell/id/ui/game/GameFragment$BackStackEntry;->i:Lcom/supercell/id/model/IdProfile;
+    iget-object v0, p0, Lcom/supercell/id/ui/game/GameFragment$BackStackEntry;->j:Lcom/supercell/id/model/IdProfile;
 
     invoke-virtual {p1, v0, p2}, Landroid/os/Parcel;->writeParcelable(Landroid/os/Parcelable;I)V
 
     .line 2
-    iget-object p2, p0, Lcom/supercell/id/ui/game/GameFragment$BackStackEntry;->j:Ljava/lang/String;
+    iget-object p2, p0, Lcom/supercell/id/ui/game/GameFragment$BackStackEntry;->k:Ljava/lang/String;
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
@@ -471,14 +471,14 @@
     const-string v1, "mainActivity.resources"
 
     .line 1
-    invoke-static {p1, v0, v1}, Lk3/ax;->e(Lcom/supercell/id/ui/MainActivity;Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {p1, v0, v1}, Lwc/v0;->a(Lcom/supercell/id/ui/MainActivity;Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result p1
 
     if-eqz p1, :cond_0
 
     .line 2
-    const-class p1, Lwc/g1;
+    const-class p1, Lwc/h1;
 
     goto :goto_0
 

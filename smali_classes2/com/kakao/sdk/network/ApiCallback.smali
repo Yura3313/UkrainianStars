@@ -37,7 +37,7 @@
 
     const/4 v1, 0x0
 
-    invoke-direct {v0, v1}, Lcom/kakao/sdk/network/ApiCallback$Companion;-><init>(Lse/e;)V
+    invoke-direct {v0, v1}, Lcom/kakao/sdk/network/ApiCallback$Companion;-><init>(Lse/f;)V
 
     sput-object v0, Lcom/kakao/sdk/network/ApiCallback;->Companion:Lcom/kakao/sdk/network/ApiCallback$Companion;
 
@@ -78,11 +78,11 @@
 
     const-string v0, "call"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string p1, "t"
 
-    invoke-static {p2, p1}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, p1}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     invoke-static {p2}, Lcom/kakao/sdk/network/ExceptionWrapperKt;->getOrigin(Ljava/lang/Throwable;)Ljava/lang/Throwable;
@@ -102,28 +102,28 @@
     return-void
 .end method
 
-.method public onResponse(Lef/b;Lef/c0;)V
+.method public onResponse(Lef/b;Lef/b0;)V
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Lef/b<",
             "TT;>;",
-            "Lef/c0<",
+            "Lef/b0<",
             "TT;>;)V"
         }
     .end annotation
 
     const-string v0, "call"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "response"
 
-    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
-    iget-object v0, p2, Lef/c0;->b:Ljava/lang/Object;
+    iget-object v0, p2, Lef/b0;->b:Ljava/lang/Object;
 
     if-eqz v0, :cond_0
 
@@ -146,7 +146,7 @@
     .line 5
     new-instance v1, Lretrofit2/HttpException;
 
-    invoke-direct {v1, p2}, Lretrofit2/HttpException;-><init>(Lef/c0;)V
+    invoke-direct {v1, p2}, Lretrofit2/HttpException;-><init>(Lef/b0;)V
 
     .line 6
     invoke-virtual {v0, v1}, Lcom/kakao/sdk/network/ApiCallback$Companion;->translateError(Ljava/lang/Throwable;)Ljava/lang/Throwable;

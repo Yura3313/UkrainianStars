@@ -1,5 +1,5 @@
 .class public final Lpd/x$f;
-.super Lse/h;
+.super Lse/i;
 .source "NewGameTransitionCoordinator.kt"
 
 # interfaces
@@ -18,32 +18,32 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/l<",
         "Lpd/x;",
-        "Lie/h;",
+        "Lie/i;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic f:Ljava/lang/ref/WeakReference;
+.field public final synthetic g:Ljava/lang/ref/WeakReference;
 
-.field public final synthetic g:Lpd/t;
+.field public final synthetic h:Lpd/t;
 
 
 # direct methods
 .method public constructor <init>(Ljava/lang/ref/WeakReference;Lpd/t;)V
     .locals 0
 
-    iput-object p1, p0, Lpd/x$f;->f:Ljava/lang/ref/WeakReference;
+    iput-object p1, p0, Lpd/x$f;->g:Ljava/lang/ref/WeakReference;
 
-    iput-object p2, p0, Lpd/x$f;->g:Lpd/t;
+    iput-object p2, p0, Lpd/x$f;->h:Lpd/t;
 
     const/4 p1, 0x1
 
-    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -59,10 +59,10 @@
     const-string v0, "$receiver"
 
     .line 2
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 3
-    iget-object v0, p0, Lpd/x$f;->f:Ljava/lang/ref/WeakReference;
+    iget-object v0, p0, Lpd/x$f;->g:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v0}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
 
@@ -78,7 +78,7 @@
 
     .line 4
     :cond_0
-    iget-object v0, p0, Lpd/x$f;->g:Lpd/t;
+    iget-object v0, p0, Lpd/x$f;->h:Lpd/t;
 
     new-instance v1, Lpd/y;
 
@@ -90,10 +90,10 @@
     iget-object p1, p1, Lpd/x;->d:Lze/p;
 
     .line 6
-    sget-object v0, Lie/h;->a:Lie/h;
+    sget-object v0, Lie/i;->a:Lie/i;
 
     .line 7
-    invoke-virtual {p1, v0}, Lze/e1;->G(Ljava/lang/Object;)Z
+    invoke-virtual {p1, v0}, Lze/f1;->G(Ljava/lang/Object;)Z
 
     return-object v0
 .end method

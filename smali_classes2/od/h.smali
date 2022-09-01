@@ -1,116 +1,75 @@
 .class public final Lod/h;
-.super Lae/x;
+.super Landroidx/recyclerview/widget/RecyclerView$q;
 .source "OnboardingInviteFriendsPageFragment.kt"
 
 
 # instance fields
-.field public g:Landroid/graphics/Rect;
+.field public final synthetic a:Landroid/view/View;
 
-.field public final synthetic h:Ljava/lang/ref/WeakReference;
+.field public final synthetic b:Landroid/view/View;
 
-.field public final synthetic i:Lod/r;
+.field public final synthetic c:Landroid/widget/FrameLayout;
+
+.field public final synthetic d:Lod/s;
+
+.field public final synthetic e:Lod/d;
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/ref/WeakReference;Lod/r;)V
+.method public constructor <init>(Landroid/view/View;Landroid/view/View;Landroid/widget/FrameLayout;Lod/s;Lod/d;)V
     .locals 0
 
-    iput-object p1, p0, Lod/h;->h:Ljava/lang/ref/WeakReference;
+    iput-object p1, p0, Lod/h;->a:Landroid/view/View;
 
-    iput-object p2, p0, Lod/h;->i:Lod/r;
+    iput-object p2, p0, Lod/h;->b:Landroid/view/View;
 
-    invoke-direct {p0}, Lae/x;-><init>()V
+    iput-object p3, p0, Lod/h;->c:Landroid/widget/FrameLayout;
+
+    iput-object p4, p0, Lod/h;->d:Lod/s;
+
+    iput-object p5, p0, Lod/h;->e:Lod/d;
+
+    invoke-direct {p0}, Landroidx/recyclerview/widget/RecyclerView$q;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Landroid/graphics/Rect;)V
-    .locals 8
+.method public final b(Landroidx/recyclerview/widget/RecyclerView;II)V
+    .locals 7
 
-    const-string v0, "systemWindowInsets"
+    const-string p2, "recyclerView"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p2}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 1
-    iget-object v0, p0, Lod/h;->h:Ljava/lang/ref/WeakReference;
+    iget-object v0, p0, Lod/h;->e:Lod/d;
 
-    invoke-virtual {v0}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
+    iget-object v1, p0, Lod/h;->a:Landroid/view/View;
 
-    move-result-object v0
+    const-string p2, "this@apply"
 
-    move-object v2, v0
+    invoke-static {v1, p2}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    check-cast v2, Lod/c;
+    iget-object v2, p0, Lod/h;->b:Landroid/view/View;
 
-    if-eqz v2, :cond_2
+    const-string p2, "selectAllBackground"
 
-    .line 2
-    iget-object v0, p0, Lod/h;->g:Landroid/graphics/Rect;
+    invoke-static {v2, p2}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    if-eqz v0, :cond_0
+    iget-object v3, p0, Lod/h;->c:Landroid/widget/FrameLayout;
 
-    .line 3
-    iget v1, v0, Landroid/graphics/Rect;->left:I
+    iget-object v4, p0, Lod/h;->d:Lod/s;
 
-    iget v3, p1, Landroid/graphics/Rect;->left:I
+    const/4 p2, 0x0
 
-    if-ne v1, v3, :cond_0
+    invoke-static {p1, p2}, Lae/y1;->a(Landroidx/recyclerview/widget/RecyclerView;I)I
 
-    iget v0, v0, Landroid/graphics/Rect;->right:I
+    move-result v5
 
-    iget v1, p1, Landroid/graphics/Rect;->right:I
+    move v6, p3
 
-    if-eq v0, v1, :cond_1
+    invoke-static/range {v0 .. v6}, Lod/d;->W0(Lod/d;Landroid/view/View;Landroid/view/View;Landroid/view/View;Lod/s;II)V
 
-    .line 4
-    :cond_0
-    sget v0, Lcom/supercell/id/R$id;->sticky_header_container:I
-
-    invoke-virtual {v2, v0}, Lod/c;->V0(I)Landroid/view/View;
-
-    move-result-object v0
-
-    if-eqz v0, :cond_2
-
-    .line 5
-    sget v1, Lcom/supercell/id/R$id;->friends_header_container:I
-
-    invoke-virtual {v2, v1}, Lod/c;->V0(I)Landroid/view/View;
-
-    move-result-object v4
-
-    if-eqz v4, :cond_2
-
-    .line 6
-    sget v1, Lcom/supercell/id/R$id;->end_system_inset_guide:I
-
-    invoke-virtual {v2, v1}, Lod/c;->V0(I)Landroid/view/View;
-
-    move-result-object v1
-
-    move-object v5, v1
-
-    check-cast v5, Landroid/widget/FrameLayout;
-
-    .line 7
-    new-instance v7, Lod/h$a;
-
-    move-object v1, v7
-
-    move-object v3, v0
-
-    move-object v6, p0
-
-    invoke-direct/range {v1 .. v6}, Lod/h$a;-><init>(Lod/c;Landroid/view/View;Landroid/view/View;Landroid/widget/FrameLayout;Lod/h;)V
-
-    invoke-virtual {v0, v7}, Landroid/view/View;->post(Ljava/lang/Runnable;)Z
-
-    .line 8
-    :cond_1
-    iput-object p1, p0, Lod/h;->g:Landroid/graphics/Rect;
-
-    :cond_2
     return-void
 .end method

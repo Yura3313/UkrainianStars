@@ -21,7 +21,7 @@
 
 
 # static fields
-.field public static final f:Lsd/g;
+.field public static final g:Lsd/g;
 
 
 # direct methods
@@ -32,7 +32,7 @@
 
     invoke-direct {v0}, Lsd/g;-><init>()V
 
-    sput-object v0, Lsd/g;->f:Lsd/g;
+    sput-object v0, Lsd/g;->g:Lsd/g;
 
     return-void
 .end method
@@ -61,7 +61,7 @@
     iget-object p2, p2, Lsd/a;->c:Ljava/lang/String;
 
     .line 3
-    invoke-static {p1, p2}, Lcom/google/android/gms/ads/q;->b(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {p1, p2}, Lcom/google/android/gms/ads/r;->a(Ljava/lang/String;Ljava/lang/String;)I
 
     move-result p1
 

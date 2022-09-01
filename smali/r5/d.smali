@@ -98,7 +98,7 @@
     .line 4
     array-length p2, p1
 
-    invoke-static {p2}, Lr5/j0;->a(I)V
+    invoke-static {p2}, Lr5/l0;->a(I)V
 
     .line 5
     new-instance p2, Ljavax/crypto/spec/SecretKeySpec;
@@ -288,7 +288,7 @@
     new-array v9, v0, [B
 
     .line 3
-    invoke-static {v1}, Lr5/d0;->a(I)[B
+    invoke-static {v1}, Lr5/f0;->a(I)[B
 
     move-result-object v3
 

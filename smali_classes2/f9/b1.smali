@@ -171,7 +171,7 @@
 
     .line 18
     :cond_5
-    invoke-static {v2}, Lcom/helpshift/util/r;->b(Ljava/lang/String;)Z
+    invoke-static {v2}, La5/u;->d(Ljava/lang/String;)Z
 
     move-result v2
 
@@ -344,7 +344,7 @@
     const-string v2, "Creating new conversation"
 
     .line 38
-    invoke-static {v0, v2, v1, v1}, Landroidx/savedstate/d;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v0, v2, v1, v1}, Le5/i;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
 
     .line 39
     iget-object v0, p0, Lf9/b1;->c:Lf9/t0;

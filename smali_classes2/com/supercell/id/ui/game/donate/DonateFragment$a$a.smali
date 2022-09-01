@@ -1,5 +1,5 @@
 .class public final Lcom/supercell/id/ui/game/donate/DonateFragment$a$a;
-.super Lse/h;
+.super Lse/i;
 .source "DonateFragment.kt"
 
 # interfaces
@@ -18,23 +18,23 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/p<",
         "Ljava/lang/String;",
         "Lre/l<",
         "-",
         "Landroid/graphics/drawable/Drawable;",
         "+",
-        "Lie/h;",
+        "Lie/i;",
         ">;",
-        "Lie/h;",
+        "Lie/i;",
         ">;"
     }
 .end annotation
 
 
 # static fields
-.field public static final f:Lcom/supercell/id/ui/game/donate/DonateFragment$a$a;
+.field public static final g:Lcom/supercell/id/ui/game/donate/DonateFragment$a$a;
 
 
 # direct methods
@@ -45,7 +45,7 @@
 
     invoke-direct {v0}, Lcom/supercell/id/ui/game/donate/DonateFragment$a$a;-><init>()V
 
-    sput-object v0, Lcom/supercell/id/ui/game/donate/DonateFragment$a$a;->f:Lcom/supercell/id/ui/game/donate/DonateFragment$a$a;
+    sput-object v0, Lcom/supercell/id/ui/game/donate/DonateFragment$a$a;->g:Lcom/supercell/id/ui/game/donate/DonateFragment$a$a;
 
     return-void
 .end method
@@ -55,7 +55,7 @@
 
     const/4 v0, 0x2
 
-    invoke-direct {p0, v0}, Lse/h;-><init>(I)V
+    invoke-direct {p0, v0}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -73,11 +73,11 @@
     const-string v0, "key"
 
     .line 2
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "callback"
 
-    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 3
     sget-object v0, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
@@ -87,17 +87,17 @@
     move-result-object v0
 
     .line 4
-    iget-object v0, v0, Lae/u;->s:Lud/j;
+    iget-object v0, v0, Lae/u;->s:Lud/i;
 
     .line 5
     new-instance v1, Lcom/supercell/id/ui/game/donate/a;
 
     invoke-direct {v1, p2}, Lcom/supercell/id/ui/game/donate/a;-><init>(Lre/l;)V
 
-    invoke-virtual {v0, p1, v1}, Lud/j;->b(Ljava/lang/String;Lre/p;)V
+    invoke-virtual {v0, p1, v1}, Lud/i;->b(Ljava/lang/String;Lre/p;)V
 
     .line 6
-    sget-object p1, Lie/h;->a:Lie/h;
+    sget-object p1, Lie/i;->a:Lie/i;
 
     return-object p1
 .end method

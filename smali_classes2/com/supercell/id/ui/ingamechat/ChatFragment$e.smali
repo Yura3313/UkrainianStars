@@ -19,18 +19,18 @@
 
 .field public final synthetic b:Lcom/supercell/id/ui/ingamechat/ChatFragment;
 
-.field public final synthetic c:Lse/o;
+.field public final synthetic c:Lse/p;
 
 
 # direct methods
-.method public constructor <init>(Lcom/supercell/id/ui/ingamechat/ChatFragment$a;Lcom/supercell/id/ui/ingamechat/ChatFragment;Lse/o;)V
+.method public constructor <init>(Lcom/supercell/id/ui/ingamechat/ChatFragment$a;Lcom/supercell/id/ui/ingamechat/ChatFragment;Lse/p;)V
     .locals 0
 
     iput-object p1, p0, Lcom/supercell/id/ui/ingamechat/ChatFragment$e;->a:Lcom/supercell/id/ui/ingamechat/ChatFragment$a;
 
     iput-object p2, p0, Lcom/supercell/id/ui/ingamechat/ChatFragment$e;->b:Lcom/supercell/id/ui/ingamechat/ChatFragment;
 
-    iput-object p3, p0, Lcom/supercell/id/ui/ingamechat/ChatFragment$e;->c:Lse/o;
+    iput-object p3, p0, Lcom/supercell/id/ui/ingamechat/ChatFragment$e;->c:Lse/p;
 
     invoke-direct {p0}, Landroidx/recyclerview/widget/RecyclerView$g;-><init>()V
 
@@ -43,9 +43,9 @@
     .locals 0
 
     .line 1
-    iget-object p1, p0, Lcom/supercell/id/ui/ingamechat/ChatFragment$e;->c:Lse/o;
+    iget-object p1, p0, Lcom/supercell/id/ui/ingamechat/ChatFragment$e;->c:Lse/p;
 
-    iget-boolean p1, p1, Lse/o;->f:Z
+    iget-boolean p1, p1, Lse/p;->g:Z
 
     if-eqz p1, :cond_0
 
@@ -62,7 +62,7 @@
 
     iget-object p2, p0, Lcom/supercell/id/ui/ingamechat/ChatFragment$e;->a:Lcom/supercell/id/ui/ingamechat/ChatFragment$a;
 
-    invoke-virtual {p2}, Lae/c2;->b()I
+    invoke-virtual {p2}, Lae/b2;->b()I
 
     move-result p2
 

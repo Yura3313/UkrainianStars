@@ -7,11 +7,11 @@
 
 
 # instance fields
-.field public f:Lx9/d;
+.field public g:Lx9/d;
 
-.field public g:Ly9/b;
+.field public h:Ly9/b;
 
-.field public h:Ljava/text/SimpleDateFormat;
+.field public i:Ljava/text/SimpleDateFormat;
 
 
 # direct methods
@@ -22,13 +22,13 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lx9/f;->f:Lx9/d;
+    iput-object p1, p0, Lx9/f;->g:Lx9/d;
 
     .line 3
-    iput-object p2, p0, Lx9/f;->g:Ly9/b;
+    iput-object p2, p0, Lx9/f;->h:Ly9/b;
 
     .line 4
-    iput-object p3, p0, Lx9/f;->h:Ljava/text/SimpleDateFormat;
+    iput-object p3, p0, Lx9/f;->i:Ljava/text/SimpleDateFormat;
 
     return-void
 .end method
@@ -40,28 +40,28 @@
 
     .line 1
     :try_start_0
-    iget-object v0, p0, Lx9/f;->f:Lx9/d;
+    iget-object v0, p0, Lx9/f;->g:Lx9/d;
 
     if-eqz v0, :cond_7
 
     .line 2
     new-instance v0, Ljava/util/Date;
 
-    iget-object v1, p0, Lx9/f;->f:Lx9/d;
+    iget-object v1, p0, Lx9/f;->g:Lx9/d;
 
     iget-wide v1, v1, Lx9/d;->a:J
 
     invoke-direct {v0, v1, v2}, Ljava/util/Date;-><init>(J)V
 
     .line 3
-    iget-object v1, p0, Lx9/f;->h:Ljava/text/SimpleDateFormat;
+    iget-object v1, p0, Lx9/f;->i:Ljava/text/SimpleDateFormat;
 
     invoke-virtual {v1, v0}, Ljava/text/DateFormat;->format(Ljava/util/Date;)Ljava/lang/String;
 
     move-result-object v3
 
     .line 4
-    iget-object v0, p0, Lx9/f;->f:Lx9/d;
+    iget-object v0, p0, Lx9/f;->g:Lx9/d;
 
     iget-object v0, v0, Lx9/d;->b:Ljava/lang/String;
 
@@ -75,7 +75,7 @@
 
     if-nez v0, :cond_0
 
-    iget-object v0, p0, Lx9/f;->f:Lx9/d;
+    iget-object v0, p0, Lx9/f;->g:Lx9/d;
 
     iget-object v0, v0, Lx9/d;->b:Ljava/lang/String;
 
@@ -86,7 +86,7 @@
     if-le v0, v2, :cond_0
 
     .line 5
-    iget-object v0, p0, Lx9/f;->f:Lx9/d;
+    iget-object v0, p0, Lx9/f;->g:Lx9/d;
 
     iget-object v4, v0, Lx9/d;->b:Ljava/lang/String;
 
@@ -100,7 +100,7 @@
     :cond_0
     new-instance v0, Laa/a;
 
-    iget-object v4, p0, Lx9/f;->f:Lx9/d;
+    iget-object v4, p0, Lx9/f;->g:Lx9/d;
 
     iget-object v5, v4, Lx9/d;->d:Ljava/lang/String;
 
@@ -195,7 +195,7 @@
 
     .line 16
     :goto_4
-    iget-object v2, p0, Lx9/f;->f:Lx9/d;
+    iget-object v2, p0, Lx9/f;->g:Lx9/d;
 
     iget-object v8, v2, Lx9/d;->f:Ljava/lang/String;
 
@@ -212,7 +212,7 @@
     invoke-direct/range {v2 .. v8}, Laa/a;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     .line 17
-    iget-object v1, p0, Lx9/f;->g:Ly9/b;
+    iget-object v1, p0, Lx9/f;->h:Ly9/b;
 
     check-cast v1, Ly9/a;
 

@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field public f:Lre/p;
+.field public g:Lre/p;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lre/p<",
@@ -28,7 +28,7 @@
     const-string v1, "context"
 
     .line 1
-    invoke-static {p1, v1}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v1}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 2
     invoke-direct {p0, p1, p2, v0}, Landroid/widget/FrameLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
@@ -42,7 +42,7 @@
     const-string v0, "context"
 
     .line 3
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 4
     invoke-direct {p0, p1, p2, p3}, Landroid/widget/FrameLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
@@ -65,7 +65,7 @@
         }
     .end annotation
 
-    iget-object v0, p0, Lcom/supercell/id/view/TouchInterceptingFrameLayout;->f:Lre/p;
+    iget-object v0, p0, Lcom/supercell/id/view/TouchInterceptingFrameLayout;->g:Lre/p;
 
     return-object v0
 .end method
@@ -74,7 +74,7 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/supercell/id/view/TouchInterceptingFrameLayout;->f:Lre/p;
+    iget-object v0, p0, Lcom/supercell/id/view/TouchInterceptingFrameLayout;->g:Lre/p;
 
     if-eqz v0, :cond_0
 
@@ -118,7 +118,7 @@
         }
     .end annotation
 
-    iput-object p1, p0, Lcom/supercell/id/view/TouchInterceptingFrameLayout;->f:Lre/p;
+    iput-object p1, p0, Lcom/supercell/id/view/TouchInterceptingFrameLayout;->g:Lre/p;
 
     return-void
 .end method

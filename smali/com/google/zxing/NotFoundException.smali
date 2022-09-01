@@ -4,7 +4,7 @@
 
 
 # static fields
-.field public static final h:Lcom/google/zxing/NotFoundException;
+.field public static final i:Lcom/google/zxing/NotFoundException;
 
 
 # direct methods
@@ -17,9 +17,9 @@
     invoke-direct {v0}, Lcom/google/zxing/NotFoundException;-><init>()V
 
     .line 2
-    sput-object v0, Lcom/google/zxing/NotFoundException;->h:Lcom/google/zxing/NotFoundException;
+    sput-object v0, Lcom/google/zxing/NotFoundException;->i:Lcom/google/zxing/NotFoundException;
 
-    sget-object v1, Lcom/google/zxing/ReaderException;->g:[Ljava/lang/StackTraceElement;
+    sget-object v1, Lcom/google/zxing/ReaderException;->h:[Ljava/lang/StackTraceElement;
 
     invoke-virtual {v0, v1}, Ljava/lang/Throwable;->setStackTrace([Ljava/lang/StackTraceElement;)V
 

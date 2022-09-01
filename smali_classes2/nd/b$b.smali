@@ -1,5 +1,5 @@
 .class public final Lnd/b$b;
-.super Lse/h;
+.super Lse/i;
 .source "MessagesTabFriendsFragment.kt"
 
 # interfaces
@@ -18,33 +18,33 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/l<",
         "Lae/m<",
         "+",
-        "Lvc/j;",
+        "Lvc/i;",
         "+",
         "Lcom/supercell/id/util/NormalizedError;",
         ">;",
-        "Lie/h;",
+        "Lie/i;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic f:Lnd/b;
+.field public final synthetic g:Lnd/b;
 
 
 # direct methods
 .method public constructor <init>(Lnd/b;)V
     .locals 0
 
-    iput-object p1, p0, Lnd/b$b;->f:Lnd/b;
+    iput-object p1, p0, Lnd/b$b;->g:Lnd/b;
 
     const/4 p1, 0x1
 
-    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -58,7 +58,7 @@
     check-cast p1, Lae/m;
 
     .line 2
-    iget-object v0, p0, Lnd/b$b;->f:Lnd/b;
+    iget-object v0, p0, Lnd/b$b;->g:Lnd/b;
 
     const/4 v1, 0x0
 
@@ -75,10 +75,10 @@
     iget-object p1, p1, Lae/m$a;->a:Ljava/lang/Object;
 
     .line 5
-    check-cast p1, Lvc/j;
+    check-cast p1, Lvc/i;
 
     .line 6
-    iget-object p1, p1, Lvc/j;->c:Ljava/util/List;
+    iget-object p1, p1, Lvc/i;->c:Ljava/util/List;
 
     .line 7
     new-instance v2, Ljava/util/ArrayList;
@@ -103,10 +103,10 @@
     move-result-object v3
 
     .line 9
-    check-cast v3, Lvc/i;
+    check-cast v3, Lvc/h;
 
     .line 10
-    iget-object v4, v3, Lvc/i;->e:Lcom/supercell/id/model/IdRelationshipStatus;
+    iget-object v4, v3, Lvc/h;->e:Lcom/supercell/id/model/IdRelationshipStatus;
 
     .line 11
     instance-of v5, v4, Lcom/supercell/id/model/IdRelationshipStatus$Acquaintance;
@@ -122,7 +122,7 @@
 
     new-instance v5, Lnd/a;
 
-    invoke-direct {v5, v3, v4}, Lnd/a;-><init>(Lvc/i;Lcom/supercell/id/model/IdRelationshipStatus$Acquaintance;)V
+    invoke-direct {v5, v3, v4}, Lnd/a;-><init>(Lvc/h;Lcom/supercell/id/model/IdRelationshipStatus$Acquaintance;)V
 
     goto :goto_1
 
@@ -143,7 +143,7 @@
 
     invoke-direct {p1}, Lnd/g;-><init>()V
 
-    invoke-static {v2, p1}, Lje/j;->L(Ljava/lang/Iterable;Ljava/util/Comparator;)Ljava/util/List;
+    invoke-static {v2, p1}, Lje/j;->G(Ljava/lang/Iterable;Ljava/util/Comparator;)Ljava/util/List;
 
     move-result-object p1
 
@@ -182,13 +182,13 @@
     .line 18
     :cond_6
     :goto_2
-    iput-object v1, v0, Lnd/b;->c0:Lae/m;
+    iput-object v1, v0, Lnd/b;->d0:Lae/m;
 
     .line 19
     invoke-virtual {v0}, Lnd/b;->W0()V
 
     .line 20
-    sget-object p1, Lie/h;->a:Lie/h;
+    sget-object p1, Lie/i;->a:Lie/i;
 
     return-object p1
 .end method

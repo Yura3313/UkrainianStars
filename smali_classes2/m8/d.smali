@@ -111,7 +111,7 @@
     const/4 v2, 0x0
 
     .line 2
-    invoke-static {v0, v1, v2, v2}, Landroidx/savedstate/d;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v0, v1, v2, v2}, Le5/i;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
 
     .line 3
     iget-object v1, p0, Lm8/d;->b:Lt8/b;
@@ -153,7 +153,7 @@
     .line 6
     iget-object v2, p0, Lm8/d;->d:Lq8/d;
 
-    iget-object v2, v2, Lq8/d;->g:Ljava/lang/Long;
+    iget-object v2, v2, Lq8/d;->h:Ljava/lang/Long;
 
     invoke-virtual {v2}, Ljava/lang/Long;->longValue()J
 
@@ -171,7 +171,7 @@
     const-string v2, "Error filing a pre-issue"
 
     .line 7
-    invoke-static {v0, v2, v1}, Landroidx/savedstate/d;->g(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v0, v2, v1}, Le5/i;->i(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
     .line 8
     iget-object v0, p0, Lm8/d;->e:Ljava/lang/ref/WeakReference;
@@ -188,10 +188,10 @@
     iget-object v2, p0, Lm8/d;->d:Lq8/d;
 
     .line 10
-    iget-object v2, v2, Lq8/d;->i:Ljava/lang/String;
+    iget-object v2, v2, Lq8/d;->j:Ljava/lang/String;
 
     .line 11
-    invoke-static {v2}, Lcom/google/android/play/core/appupdate/g;->b(Ljava/lang/String;)Z
+    invoke-static {v2}, La5/b0;->d(Ljava/lang/String;)Z
 
     move-result v2
 

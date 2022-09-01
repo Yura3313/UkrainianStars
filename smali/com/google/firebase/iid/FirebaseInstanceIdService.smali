@@ -22,12 +22,12 @@
     .locals 0
 
     .line 1
-    invoke-static {}, Ly5/o;->b()Ly5/o;
+    invoke-static {}, Ly5/p;->b()Ly5/p;
 
     move-result-object p1
 
     .line 2
-    iget-object p1, p1, Ly5/o;->d:Ljava/util/ArrayDeque;
+    iget-object p1, p1, Ly5/p;->d:Ljava/util/ArrayDeque;
 
     invoke-virtual {p1}, Ljava/util/ArrayDeque;->poll()Ljava/lang/Object;
 
@@ -140,9 +140,9 @@
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 8
-    sget-object v0, Lcom/google/firebase/iid/FirebaseInstanceId;->j:Ly5/p;
+    sget-object v0, Lcom/google/firebase/iid/FirebaseInstanceId;->j:Ly5/q;
 
-    invoke-virtual {v0}, Ly5/p;->g()V
+    invoke-virtual {v0}, Ly5/q;->g()V
 
     .line 9
     invoke-virtual {p1}, Lcom/google/firebase/iid/FirebaseInstanceId;->b()V

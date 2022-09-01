@@ -40,10 +40,10 @@
     .line 1
     iget-object v0, p0, Lcom/google/android/material/appbar/CollapsingToolbarLayout$b;->a:Lcom/google/android/material/appbar/CollapsingToolbarLayout;
 
-    iput p1, v0, Lcom/google/android/material/appbar/CollapsingToolbarLayout;->A:I
+    iput p1, v0, Lcom/google/android/material/appbar/CollapsingToolbarLayout;->B:I
 
     .line 2
-    iget-object v0, v0, Lcom/google/android/material/appbar/CollapsingToolbarLayout;->B:Lf0/a0;
+    iget-object v0, v0, Lcom/google/android/material/appbar/CollapsingToolbarLayout;->C:Lf0/a0;
 
     const/4 v1, 0x0
 
@@ -132,7 +132,7 @@
 
     move-result v4
 
-    invoke-static {v5, v1, v4}, La0/a;->e(III)I
+    invoke-static {v5, v1, v4}, La0/a;->b(III)I
 
     move-result v4
 
@@ -153,7 +153,7 @@
     .line 13
     iget-object v1, p0, Lcom/google/android/material/appbar/CollapsingToolbarLayout$b;->a:Lcom/google/android/material/appbar/CollapsingToolbarLayout;
 
-    iget-object v2, v1, Lcom/google/android/material/appbar/CollapsingToolbarLayout;->t:Landroid/graphics/drawable/Drawable;
+    iget-object v2, v1, Lcom/google/android/material/appbar/CollapsingToolbarLayout;->u:Landroid/graphics/drawable/Drawable;
 
     if-eqz v2, :cond_4
 
@@ -190,7 +190,7 @@
     .line 19
     iget-object v0, p0, Lcom/google/android/material/appbar/CollapsingToolbarLayout$b;->a:Lcom/google/android/material/appbar/CollapsingToolbarLayout;
 
-    iget-object v0, v0, Lcom/google/android/material/appbar/CollapsingToolbarLayout;->p:Lcom/google/android/material/internal/a;
+    iget-object v0, v0, Lcom/google/android/material/appbar/CollapsingToolbarLayout;->q:Lcom/google/android/material/internal/a;
 
     invoke-static {p1}, Ljava/lang/Math;->abs(I)I
 

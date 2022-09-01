@@ -3,14 +3,14 @@
 .source "ContinuationImpl.kt"
 
 # interfaces
-.implements Lse/f;
+.implements Lse/g;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lme/c;",
-        "Lse/f<",
+        "Lse/g<",
         "Ljava/lang/Object;",
         ">;"
     }
@@ -18,7 +18,7 @@
 
 
 # instance fields
-.field public final i:I
+.field public final j:I
 
 
 # direct methods
@@ -37,7 +37,7 @@
 
     const/4 p1, 0x2
 
-    iput p1, p0, Lme/i;->i:I
+    iput p1, p0, Lme/i;->j:I
 
     return-void
 .end method
@@ -47,7 +47,7 @@
 .method public final getArity()I
     .locals 1
 
-    iget v0, p0, Lme/i;->i:I
+    iget v0, p0, Lme/i;->j:I
 
     return v0
 .end method
@@ -56,21 +56,21 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lme/a;->f:Lke/d;
+    iget-object v0, p0, Lme/a;->g:Lke/d;
 
     if-nez v0, :cond_0
 
     .line 2
-    sget-object v0, Lse/r;->a:Lse/s;
+    sget-object v0, Lse/s;->a:Lse/t;
 
-    invoke-virtual {v0, p0}, Lse/s;->b(Lse/f;)Ljava/lang/String;
+    invoke-virtual {v0, p0}, Lse/t;->b(Lse/g;)Ljava/lang/String;
 
     move-result-object v0
 
     const-string v1, "Reflection.renderLambdaToString(this)"
 
     .line 3
-    invoke-static {v0, v1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     goto :goto_0
 

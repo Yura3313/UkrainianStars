@@ -7,18 +7,18 @@
 
 
 # instance fields
-.field public a:Lq9/b;
+.field public a:Lk3/c20;
 
 
 # direct methods
-.method public constructor <init>(Lq9/b;)V
+.method public constructor <init>(Lk3/c20;)V
     .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lr9/a;->a:Lq9/b;
+    iput-object p1, p0, Lr9/a;->a:Lk3/c20;
 
     return-void
 .end method
@@ -33,7 +33,7 @@
         }
     .end annotation
 
-    iget-object v0, p0, Lr9/a;->a:Lq9/b;
+    iget-object v0, p0, Lr9/a;->a:Lk3/c20;
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 

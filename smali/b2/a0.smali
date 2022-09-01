@@ -1,64 +1,36 @@
-.class public abstract Lb2/a0;
+.class public final Lb2/a0;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-base@@17.5.0"
 
-# interfaces
-.implements Lc2/e;
+
+# instance fields
+.field public final a:Lcom/google/android/gms/common/internal/zao;
+
+.field public final b:I
+
+.field public final c:J
+
+.field public final d:I
 
 
 # direct methods
-.method public synthetic constructor <init>()V
+.method public constructor <init>(Lcom/google/android/gms/common/internal/zao;IJI)V
     .locals 0
 
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    return-void
-.end method
-
-
-# virtual methods
-.method public abstract B(Ljava/lang/Object;)Lb2/a0;
-.end method
-
-.method public abstract a(I)V
-.end method
-
-.method public abstract d(Landroid/graphics/Typeface;Z)V
-.end method
-
-.method public abstract j(I)Z
-.end method
-
-.method public abstract l()V
-.end method
-
-.method public q(Ljava/lang/Iterable;)Lb2/a0;
-    .locals 1
-
-    .line 1
-    invoke-interface {p1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
-
-    move-result-object p1
-
-    :goto_0
-    invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v0
-
     .line 2
-    invoke-virtual {p0, v0}, Lb2/a0;->B(Ljava/lang/Object;)Lb2/a0;
+    iput-object p1, p0, Lb2/a0;->a:Lcom/google/android/gms/common/internal/zao;
 
-    goto :goto_0
+    .line 3
+    iput p2, p0, Lb2/a0;->b:I
 
-    :cond_0
-    return-object p0
-.end method
+    .line 4
+    iput-wide p3, p0, Lb2/a0;->c:J
 
-.method public abstract x(Ljava/lang/Throwable;Ljava/lang/Throwable;)V
+    .line 5
+    iput p5, p0, Lb2/a0;->d:I
+
+    return-void
 .end method

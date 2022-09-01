@@ -14,7 +14,7 @@
     value = {
         "Lra/u<",
         "Lra/p$a;",
-        "Lo8/t;",
+        "Lo8/u;",
         ">;"
     }
 .end annotation
@@ -31,25 +31,25 @@
 
 
 # virtual methods
-.method public final a(Landroidx/recyclerview/widget/RecyclerView$z;Lo8/y;)V
+.method public final a(Landroidx/recyclerview/widget/RecyclerView$z;Lo8/z;)V
     .locals 9
 
     .line 1
     check-cast p1, Lra/p$a;
 
-    check-cast p2, Lo8/t;
+    check-cast p2, Lo8/u;
 
     .line 2
-    iget-object v0, p2, Lo8/y;->j:Ljava/lang/String;
+    iget-object v0, p2, Lo8/z;->k:Ljava/lang/String;
 
-    invoke-static {v0}, Lcom/google/android/play/core/appupdate/g;->b(Ljava/lang/String;)Z
+    invoke-static {v0}, La5/b0;->d(Ljava/lang/String;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
     .line 3
-    iget-object v0, p1, Lra/p$a;->B:Landroid/view/View;
+    iget-object v0, p1, Lra/p$a;->C:Landroid/view/View;
 
     const/16 v1, 0x8
 
@@ -59,16 +59,16 @@
 
     .line 4
     :cond_0
-    iget-object v0, p1, Lra/p$a;->B:Landroid/view/View;
+    iget-object v0, p1, Lra/p$a;->C:Landroid/view/View;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
 
     .line 5
-    iget-object v0, p1, Lra/p$a;->z:Landroid/widget/TextView;
+    iget-object v0, p1, Lra/p$a;->A:Landroid/widget/TextView;
 
-    iget-object v1, p2, Lo8/y;->j:Ljava/lang/String;
+    iget-object v1, p2, Lo8/z;->k:Ljava/lang/String;
 
     invoke-virtual {p0, v1}, Lra/u;->c(Ljava/lang/String;)Ljava/lang/String;
 
@@ -77,10 +77,10 @@
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 6
-    iget-object v0, p2, Lo8/y;->h:Lo8/l0;
+    iget-object v0, p2, Lo8/z;->i:Lo8/n0;
 
     .line 7
-    iget-boolean v0, v0, Lo8/l0;->g:Z
+    iget-boolean v0, v0, Lo8/n0;->h:Z
 
     if-eqz v0, :cond_1
 
@@ -94,43 +94,43 @@
 
     .line 9
     :goto_0
-    iget-object v1, p1, Lra/p$a;->B:Landroid/view/View;
+    iget-object v1, p1, Lra/p$a;->C:Landroid/view/View;
 
     sget v2, Lcom/helpshift/R$attr;->hs__chatBubbleAdminBackgroundColor:I
 
     invoke-virtual {p0, v1, v0, v2}, Lra/u;->i(Landroid/view/View;II)V
 
     .line 10
-    iget-object v0, p1, Lra/p$a;->B:Landroid/view/View;
+    iget-object v0, p1, Lra/p$a;->C:Landroid/view/View;
 
-    invoke-virtual {p0, p2}, Lra/u;->d(Lo8/y;)Ljava/lang/String;
+    invoke-virtual {p0, p2}, Lra/u;->d(Lo8/z;)Ljava/lang/String;
 
     move-result-object v1
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setContentDescription(Ljava/lang/CharSequence;)V
 
     .line 11
-    iget-object v0, p1, Lra/p$a;->z:Landroid/widget/TextView;
+    iget-object v0, p1, Lra/p$a;->A:Landroid/widget/TextView;
 
     new-instance v1, Lra/o;
 
-    invoke-direct {v1, p0, p2}, Lra/o;-><init>(Lra/p;Lo8/y;)V
+    invoke-direct {v1, p0, p2}, Lra/o;-><init>(Lra/p;Lo8/z;)V
 
     invoke-virtual {p0, v0, v1}, Lra/u;->e(Landroid/widget/TextView;Lcom/helpshift/util/o$b;)V
 
     .line 12
-    iget-object v0, p1, Lra/p$a;->D:Lcom/helpshift/views/CircleImageView;
+    iget-object v0, p1, Lra/p$a;->E:Lcom/helpshift/views/CircleImageView;
 
-    invoke-virtual {p0, p2, v0}, Lra/u;->h(Lo8/y;Lcom/helpshift/views/CircleImageView;)V
+    invoke-virtual {p0, p2, v0}, Lra/u;->h(Lo8/z;Lcom/helpshift/views/CircleImageView;)V
 
     .line 13
     :goto_1
-    iget-object v0, p1, Lra/p$a;->y:Landroid/widget/TableLayout;
+    iget-object v0, p1, Lra/p$a;->z:Landroid/widget/TableLayout;
 
     invoke-virtual {v0}, Landroid/view/ViewGroup;->removeAllViews()V
 
     .line 14
-    iget-object v0, p2, Lo8/t;->z:Ljava/util/List;
+    iget-object v0, p2, Lo8/u;->A:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -151,7 +151,7 @@
 
     move-result-object v2
 
-    check-cast v2, Lo8/t$a;
+    check-cast v2, Lo8/u$a;
 
     .line 15
     iget-object v3, p0, Lra/u;->a:Landroid/content/Context;
@@ -177,7 +177,7 @@
     check-cast v4, Landroid/widget/TextView;
 
     .line 18
-    iget-object v5, v2, Lo8/t$a;->f:Ljava/lang/String;
+    iget-object v5, v2, Lo8/u$a;->g:Ljava/lang/String;
 
     invoke-virtual {v4, v5}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
@@ -196,7 +196,7 @@
 
     sget v6, Lcom/helpshift/R$attr;->hs__adminFaqSuggestionArrowColor:I
 
-    invoke-static {v5, v4, v6}, Lcom/helpshift/util/g0;->e(Landroid/content/Context;Landroid/graphics/drawable/Drawable;I)V
+    invoke-static {v5, v4, v6}, Lcom/helpshift/util/e0;->e(Landroid/content/Context;Landroid/graphics/drawable/Drawable;I)V
 
     .line 22
     new-instance v4, Landroid/widget/TableRow;
@@ -233,7 +233,7 @@
     sget v8, Lcom/helpshift/R$attr;->hs__contentSeparatorColor:I
 
     .line 26
-    invoke-static {v7, v8}, Lcom/helpshift/util/g0;->b(Landroid/content/Context;I)I
+    invoke-static {v7, v8}, Lcom/helpshift/util/e0;->b(Landroid/content/Context;I)I
 
     move-result v7
 
@@ -250,19 +250,19 @@
     invoke-virtual {v6, v5}, Landroid/view/ViewGroup;->addView(Landroid/view/View;)V
 
     .line 29
-    iget-object v5, p1, Lra/p$a;->y:Landroid/widget/TableLayout;
+    iget-object v5, p1, Lra/p$a;->z:Landroid/widget/TableLayout;
 
     invoke-virtual {v5, v4}, Landroid/widget/TableLayout;->addView(Landroid/view/View;)V
 
     .line 30
-    iget-object v4, p1, Lra/p$a;->y:Landroid/widget/TableLayout;
+    iget-object v4, p1, Lra/p$a;->z:Landroid/widget/TableLayout;
 
     invoke-virtual {v4, v6}, Landroid/widget/TableLayout;->addView(Landroid/view/View;)V
 
     .line 31
     new-instance v4, Lra/n;
 
-    invoke-direct {v4, p0, p2, v2}, Lra/n;-><init>(Lra/p;Lo8/t;Lo8/t$a;)V
+    invoke-direct {v4, p0, p2, v2}, Lra/n;-><init>(Lra/p;Lo8/u;Lo8/u$a;)V
 
     invoke-virtual {v3, v4}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -272,31 +272,31 @@
 
     .line 32
     :cond_2
-    iget-object v0, p1, Lra/p$a;->y:Landroid/widget/TableLayout;
+    iget-object v0, p1, Lra/p$a;->z:Landroid/widget/TableLayout;
 
     invoke-virtual {v0, v2}, Landroid/view/ViewGroup;->removeView(Landroid/view/View;)V
 
     .line 33
-    iget-object v0, p2, Lo8/y;->h:Lo8/l0;
+    iget-object v0, p2, Lo8/z;->i:Lo8/n0;
 
     .line 34
-    iget-object v1, p1, Lra/p$a;->A:Landroid/widget/TextView;
+    iget-object v1, p1, Lra/p$a;->B:Landroid/widget/TextView;
 
     .line 35
-    iget-boolean v2, v0, Lo8/l0;->f:Z
+    iget-boolean v2, v0, Lo8/n0;->g:Z
 
     .line 36
     invoke-virtual {p0, v1, v2}, Lra/u;->m(Landroid/view/View;Z)V
 
     .line 37
-    iget-boolean v0, v0, Lo8/l0;->f:Z
+    iget-boolean v0, v0, Lo8/n0;->g:Z
 
     if-eqz v0, :cond_3
 
     .line 38
-    iget-object v0, p1, Lra/p$a;->A:Landroid/widget/TextView;
+    iget-object v0, p1, Lra/p$a;->B:Landroid/widget/TextView;
 
-    invoke-virtual {p2}, Lo8/y;->i()Ljava/lang/String;
+    invoke-virtual {p2}, Lo8/z;->i()Ljava/lang/String;
 
     move-result-object v1
 
@@ -304,9 +304,9 @@
 
     .line 39
     :cond_3
-    iget-object p1, p1, Lra/p$a;->C:Landroid/view/View;
+    iget-object p1, p1, Lra/p$a;->D:Landroid/view/View;
 
-    invoke-virtual {p0, p2}, Lra/u;->d(Lo8/y;)Ljava/lang/String;
+    invoke-virtual {p0, p2}, Lra/u;->d(Lo8/z;)Ljava/lang/String;
 
     move-result-object p2
 

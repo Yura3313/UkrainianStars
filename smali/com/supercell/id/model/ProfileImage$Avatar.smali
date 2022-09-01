@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field public final g:Ljava/lang/String;
+.field public final h:Ljava/lang/String;
 
 
 # direct methods
@@ -24,13 +24,13 @@
 
     const-string v0, "avatarImage"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     invoke-direct {p0}, Lcom/supercell/id/model/ProfileImage;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lcom/supercell/id/model/ProfileImage$Avatar;->g:Ljava/lang/String;
+    iput-object p1, p0, Lcom/supercell/id/model/ProfileImage$Avatar;->h:Ljava/lang/String;
 
     return-void
 .end method
@@ -48,11 +48,11 @@
 
     check-cast p1, Lcom/supercell/id/model/ProfileImage$Avatar;
 
-    iget-object v0, p0, Lcom/supercell/id/model/ProfileImage$Avatar;->g:Ljava/lang/String;
+    iget-object v0, p0, Lcom/supercell/id/model/ProfileImage$Avatar;->h:Ljava/lang/String;
 
-    iget-object p1, p1, Lcom/supercell/id/model/ProfileImage$Avatar;->g:Ljava/lang/String;
+    iget-object p1, p1, Lcom/supercell/id/model/ProfileImage$Avatar;->h:Ljava/lang/String;
 
-    invoke-static {v0, p1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, p1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -75,7 +75,7 @@
 .method public final hashCode()I
     .locals 1
 
-    iget-object v0, p0, Lcom/supercell/id/model/ProfileImage$Avatar;->g:Ljava/lang/String;
+    iget-object v0, p0, Lcom/supercell/id/model/ProfileImage$Avatar;->h:Ljava/lang/String;
 
     if-eqz v0, :cond_0
 
@@ -103,12 +103,12 @@
     move-result-object v0
 
     .line 2
-    iget-object v1, p0, Lcom/supercell/id/model/ProfileImage$Avatar;->g:Ljava/lang/String;
+    iget-object v1, p0, Lcom/supercell/id/model/ProfileImage$Avatar;->h:Ljava/lang/String;
 
     const-string v2, ")"
 
     .line 3
-    invoke-static {v0, v1, v2}, Landroid/support/v4/media/b;->b(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, v1, v2}, Landroid/support/v4/media/b;->a(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 

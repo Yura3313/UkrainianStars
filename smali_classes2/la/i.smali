@@ -19,30 +19,30 @@
 
 
 # instance fields
-.field public final synthetic f:Landroid/os/Handler;
+.field public final synthetic g:Landroid/os/Handler;
 
-.field public final synthetic g:Z
+.field public final synthetic h:Z
 
-.field public final synthetic h:Landroid/os/Handler;
+.field public final synthetic i:Landroid/os/Handler;
 
-.field public final synthetic i:Ljava/lang/String;
+.field public final synthetic j:Ljava/lang/String;
 
-.field public final synthetic j:Lla/e;
+.field public final synthetic k:Lla/e;
 
 
 # direct methods
 .method public constructor <init>(Lla/e;Landroid/os/Handler;ZLandroid/os/Handler;Ljava/lang/String;)V
     .locals 0
 
-    iput-object p1, p0, Lla/i;->j:Lla/e;
+    iput-object p1, p0, Lla/i;->k:Lla/e;
 
-    iput-object p2, p0, Lla/i;->f:Landroid/os/Handler;
+    iput-object p2, p0, Lla/i;->g:Landroid/os/Handler;
 
-    iput-boolean p3, p0, Lla/i;->g:Z
+    iput-boolean p3, p0, Lla/i;->h:Z
 
-    iput-object p4, p0, Lla/i;->h:Landroid/os/Handler;
+    iput-object p4, p0, Lla/i;->i:Landroid/os/Handler;
 
-    iput-object p5, p0, Lla/i;->i:Ljava/lang/String;
+    iput-object p5, p0, Lla/i;->j:Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -58,7 +58,7 @@
     check-cast p1, Ljava/lang/Integer;
 
     .line 2
-    iget-object v0, p0, Lla/i;->h:Landroid/os/Handler;
+    iget-object v0, p0, Lla/i;->i:Landroid/os/Handler;
 
     invoke-virtual {v0}, Landroid/os/Handler;->obtainMessage()Landroid/os/Message;
 
@@ -83,16 +83,16 @@
 
     .line 4
     :cond_0
-    iget-boolean v1, p0, Lla/i;->g:Z
+    iget-boolean v1, p0, Lla/i;->h:Z
 
     if-nez v1, :cond_2
 
     .line 5
-    iget-object v1, p0, Lla/i;->j:Lla/e;
+    iget-object v1, p0, Lla/i;->k:Lla/e;
 
     iget-object v1, v1, Lla/e;->c:Lhb/b;
 
-    iget-object v2, p0, Lla/i;->i:Ljava/lang/String;
+    iget-object v2, p0, Lla/i;->j:Ljava/lang/String;
 
     .line 6
     monitor-enter v1
@@ -144,7 +144,7 @@
     const-string v4, "Error in removeFaq"
 
     .line 10
-    invoke-static {v3, v4, v2}, Landroidx/savedstate/d;->g(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v3, v4, v2}, Le5/i;->i(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
@@ -178,7 +178,7 @@
     move-result-object v2
 
     .line 15
-    iget-object v3, p0, Lla/i;->i:Ljava/lang/String;
+    iget-object v3, p0, Lla/i;->j:Ljava/lang/String;
 
     invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -207,7 +207,7 @@
     iput-object v1, v0, Landroid/os/Message;->obj:Ljava/lang/Object;
 
     .line 19
-    iget-object p1, p0, Lla/i;->h:Landroid/os/Handler;
+    iget-object p1, p0, Lla/i;->i:Landroid/os/Handler;
 
     invoke-virtual {p1, v0}, Landroid/os/Handler;->sendMessage(Landroid/os/Message;)Z
 
@@ -221,7 +221,7 @@
     check-cast p1, Lv9/a;
 
     .line 2
-    iget-object v0, p0, Lla/i;->f:Landroid/os/Handler;
+    iget-object v0, p0, Lla/i;->g:Landroid/os/Handler;
 
     invoke-virtual {v0}, Landroid/os/Handler;->obtainMessage()Landroid/os/Message;
 
@@ -230,7 +230,7 @@
     .line 3
     new-instance v1, Lcom/helpshift/support/Faq;
 
-    iget-object v2, p0, Lla/i;->j:Lla/e;
+    iget-object v2, p0, Lla/i;->k:Lla/e;
 
     iget-object v3, p1, Lv9/a;->d:Ljava/lang/String;
 
@@ -261,7 +261,7 @@
     check-cast v7, Lcom/helpshift/support/Section;
 
     .line 7
-    iget-object v8, v7, Lcom/helpshift/support/Section;->f:Ljava/lang/String;
+    iget-object v8, v7, Lcom/helpshift/support/Section;->g:Ljava/lang/String;
 
     .line 8
     invoke-virtual {v8, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -271,7 +271,7 @@
     if-eqz v8, :cond_0
 
     .line 9
-    iget-object v4, v7, Lcom/helpshift/support/Section;->h:Ljava/lang/String;
+    iget-object v4, v7, Lcom/helpshift/support/Section;->i:Ljava/lang/String;
 
     :cond_0
     add-int/lit8 v6, v6, 0x1
@@ -286,12 +286,12 @@
     iput-object v1, v0, Landroid/os/Message;->obj:Ljava/lang/Object;
 
     .line 12
-    iget-object p1, p0, Lla/i;->f:Landroid/os/Handler;
+    iget-object p1, p0, Lla/i;->g:Landroid/os/Handler;
 
     invoke-virtual {p1, v0}, Landroid/os/Handler;->sendMessage(Landroid/os/Message;)Z
 
     .line 13
-    iget-boolean p1, p0, Lla/i;->g:Z
+    iget-boolean p1, p0, Lla/i;->h:Z
 
     const/4 v0, 0x0
 
@@ -300,7 +300,7 @@
     if-eqz p1, :cond_3
 
     .line 14
-    sget-object p1, Lcom/helpshift/util/u;->d:Le8/j;
+    sget-object p1, Lcom/helpshift/util/t;->d:Le8/j;
 
     .line 15
     invoke-virtual {p1}, Le8/j;->f()Ls8/b;
@@ -330,11 +330,11 @@
     new-array v6, v6, [Ljava/lang/String;
 
     .line 19
-    iget-object v7, v1, Lcom/helpshift/support/Faq;->g:Ljava/lang/String;
+    iget-object v7, v1, Lcom/helpshift/support/Faq;->h:Ljava/lang/String;
 
     aput-object v7, v6, v5
 
-    iget-object v1, v1, Lcom/helpshift/support/Faq;->h:Ljava/lang/String;
+    iget-object v1, v1, Lcom/helpshift/support/Faq;->i:Ljava/lang/String;
 
     aput-object v1, v6, v2
     :try_end_0
@@ -384,7 +384,7 @@
     const-string v2, "Error in insertOrUpdateAdminFAQSuggestion"
 
     .line 24
-    invoke-static {v1, v2, v0}, Landroidx/savedstate/d;->g(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v1, v2, v0}, Le5/i;->i(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
@@ -403,7 +403,7 @@
 
     .line 26
     :cond_3
-    iget-object p1, p0, Lla/i;->j:Lla/e;
+    iget-object p1, p0, Lla/i;->k:Lla/e;
 
     iget-object p1, p1, Lla/e;->c:Lhb/b;
 
@@ -421,7 +421,7 @@
     new-array v2, v2, [Ljava/lang/String;
 
     .line 29
-    iget-object v1, v1, Lcom/helpshift/support/Faq;->n:Ljava/lang/String;
+    iget-object v1, v1, Lcom/helpshift/support/Faq;->o:Ljava/lang/String;
 
     aput-object v1, v2, v5
     :try_end_3
@@ -438,7 +438,7 @@
     const-string v5, "faqs"
 
     .line 31
-    invoke-static {v1, v5, v4, v2}, Lj1/b;->h(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Z
+    invoke-static {v1, v5, v4, v2}, Lcom/google/android/material/internal/c;->g(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)Z
 
     move-result v5
 
@@ -471,7 +471,7 @@
     const-string v2, "Error in addFaq"
 
     .line 34
-    invoke-static {v1, v2, v0}, Landroidx/savedstate/d;->g(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v1, v2, v0}, Le5/i;->i(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
     :try_end_5
     .catchall {:try_start_5 .. :try_end_5} :catchall_1
 

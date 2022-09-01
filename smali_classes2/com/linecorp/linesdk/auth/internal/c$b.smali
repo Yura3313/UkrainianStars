@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field public final synthetic f:Lcom/linecorp/linesdk/auth/internal/c;
+.field public final synthetic g:Lcom/linecorp/linesdk/auth/internal/c;
 
 
 # direct methods
 .method public constructor <init>(Lcom/linecorp/linesdk/auth/internal/c;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/linecorp/linesdk/auth/internal/c$b;->f:Lcom/linecorp/linesdk/auth/internal/c;
+    iput-object p1, p0, Lcom/linecorp/linesdk/auth/internal/c$b;->g:Lcom/linecorp/linesdk/auth/internal/c;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -38,13 +38,13 @@
     .locals 3
 
     .line 1
-    iget-object v0, p0, Lcom/linecorp/linesdk/auth/internal/c$b;->f:Lcom/linecorp/linesdk/auth/internal/c;
+    iget-object v0, p0, Lcom/linecorp/linesdk/auth/internal/c$b;->g:Lcom/linecorp/linesdk/auth/internal/c;
 
     .line 2
     iget-object v1, v0, Lcom/linecorp/linesdk/auth/internal/c;->h:Lcom/linecorp/linesdk/auth/internal/d;
 
     .line 3
-    iget v1, v1, Lcom/linecorp/linesdk/auth/internal/d;->i:I
+    iget v1, v1, Lcom/linecorp/linesdk/auth/internal/d;->j:I
 
     const/4 v2, 0x3
 
@@ -64,7 +64,7 @@
 
     .line 6
     :cond_0
-    iget-object v0, p0, Lcom/linecorp/linesdk/auth/internal/c$b;->f:Lcom/linecorp/linesdk/auth/internal/c;
+    iget-object v0, p0, Lcom/linecorp/linesdk/auth/internal/c$b;->g:Lcom/linecorp/linesdk/auth/internal/c;
 
     .line 7
     iget-object v0, v0, Lcom/linecorp/linesdk/auth/internal/c;->a:Lcom/linecorp/linesdk/auth/internal/LineAuthenticationActivity;

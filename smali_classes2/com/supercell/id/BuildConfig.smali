@@ -12,7 +12,7 @@
 
 .field public static final USE_LOCALHOST_FOR_REMOTE_ASSETS:Z = false
 
-.field public static final VERSION_NUMBER:I = 0x1240
+.field public static final VERSION_NUMBER:I = 0x1248
 
 
 # direct methods

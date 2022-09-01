@@ -37,9 +37,9 @@
     .line 2
     new-instance v0, Lq9/a;
 
-    new-instance v1, Lq9/b;
+    new-instance v1, Lk3/c20;
 
-    invoke-direct {v1}, Lq9/b;-><init>()V
+    invoke-direct {v1}, Lk3/c20;-><init>()V
 
     invoke-direct {v0, p1, v1}, Lq9/a;-><init>(Landroid/content/Context;Lh9/b;)V
 
@@ -142,7 +142,7 @@
     const-string v5, "Error in creating user"
 
     .line 4
-    invoke-static {v4, v5, v0}, Landroidx/savedstate/d;->g(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v4, v5, v0}, Le5/i;->i(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
     if-eqz p2, :cond_0
 
@@ -190,34 +190,34 @@
     move-result-object v6
 
     .line 10
-    iget-object v7, v2, Li7/c;->g:Ljava/lang/String;
+    iget-object v7, v2, Li7/c;->h:Ljava/lang/String;
 
     .line 11
-    iget-object v8, v2, Li7/c;->h:Ljava/lang/String;
+    iget-object v8, v2, Li7/c;->i:Ljava/lang/String;
 
     .line 12
-    iget-object v9, v2, Li7/c;->i:Ljava/lang/String;
+    iget-object v9, v2, Li7/c;->j:Ljava/lang/String;
 
     .line 13
-    iget-object v10, v2, Li7/c;->j:Ljava/lang/String;
+    iget-object v10, v2, Li7/c;->k:Ljava/lang/String;
 
     .line 14
-    iget-boolean v11, v2, Li7/c;->k:Z
+    iget-boolean v11, v2, Li7/c;->l:Z
 
     .line 15
-    iget-boolean v12, v2, Li7/c;->l:Z
+    iget-boolean v12, v2, Li7/c;->m:Z
 
     .line 16
-    iget-boolean v13, v2, Li7/c;->m:Z
+    iget-boolean v13, v2, Li7/c;->n:Z
 
     .line 17
-    iget-object v14, v2, Li7/c;->n:Ljava/lang/String;
+    iget-object v14, v2, Li7/c;->o:Ljava/lang/String;
 
     .line 18
-    iget-boolean v15, v2, Li7/c;->o:Z
+    iget-boolean v15, v2, Li7/c;->p:Z
 
     .line 19
-    iget-object v2, v2, Li7/c;->p:Li7/i;
+    iget-object v2, v2, Li7/c;->q:Li7/i;
 
     move-object v5, v0
 
@@ -827,7 +827,7 @@
     const-string v4, "Error in reading user"
 
     .line 5
-    invoke-static {v3, v4, v2}, Landroidx/savedstate/d;->g(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v3, v4, v2}, Le5/i;->i(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
     if-eqz p3, :cond_1
 
@@ -1041,7 +1041,7 @@
 
     .line 1
     :try_start_0
-    iget-object v0, p1, Li7/c;->f:Ljava/lang/Long;
+    iget-object v0, p1, Li7/c;->g:Ljava/lang/Long;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -1077,7 +1077,7 @@
     new-array v6, v0, [Ljava/lang/String;
 
     .line 5
-    iget-object v7, p1, Li7/c;->f:Ljava/lang/Long;
+    iget-object v7, p1, Li7/c;->g:Ljava/lang/Long;
 
     .line 6
     invoke-static {v7}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
@@ -1105,7 +1105,7 @@
     const-string v3, "Error in updating user"
 
     .line 8
-    invoke-static {v2, v3, v0}, Landroidx/savedstate/d;->g(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v2, v3, v0}, Le5/i;->i(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
     if-eqz p2, :cond_1
 
@@ -1149,7 +1149,7 @@
     invoke-direct {v0}, Landroid/content/ContentValues;-><init>()V
 
     .line 2
-    iget-object v1, p1, Li7/c;->f:Ljava/lang/Long;
+    iget-object v1, p1, Li7/c;->g:Ljava/lang/Long;
 
     if-eqz v1, :cond_0
 
@@ -1160,7 +1160,7 @@
 
     .line 4
     :cond_0
-    iget-object v1, p1, Li7/c;->g:Ljava/lang/String;
+    iget-object v1, p1, Li7/c;->h:Ljava/lang/String;
 
     const-string v2, "identifier"
 
@@ -1179,7 +1179,7 @@
 
     .line 7
     :goto_0
-    iget-object v1, p1, Li7/c;->i:Ljava/lang/String;
+    iget-object v1, p1, Li7/c;->j:Ljava/lang/String;
 
     const-string v2, "name"
 
@@ -1196,7 +1196,7 @@
 
     .line 10
     :goto_1
-    iget-object v1, p1, Li7/c;->h:Ljava/lang/String;
+    iget-object v1, p1, Li7/c;->i:Ljava/lang/String;
 
     const-string v2, "email"
 
@@ -1213,7 +1213,7 @@
 
     .line 13
     :goto_2
-    iget-object v1, p1, Li7/c;->j:Ljava/lang/String;
+    iget-object v1, p1, Li7/c;->k:Ljava/lang/String;
 
     const-string v2, "deviceid"
 
@@ -1230,7 +1230,7 @@
 
     .line 16
     :goto_3
-    iget-object v1, p1, Li7/c;->n:Ljava/lang/String;
+    iget-object v1, p1, Li7/c;->o:Ljava/lang/String;
 
     const-string v2, "auth_token"
 
@@ -1247,7 +1247,7 @@
 
     .line 19
     :goto_4
-    iget-boolean v1, p1, Li7/c;->k:Z
+    iget-boolean v1, p1, Li7/c;->l:Z
 
     .line 20
     invoke-static {v1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
@@ -1259,7 +1259,7 @@
     invoke-virtual {v0, v2, v1}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Boolean;)V
 
     .line 21
-    iget-boolean v1, p1, Li7/c;->l:Z
+    iget-boolean v1, p1, Li7/c;->m:Z
 
     .line 22
     invoke-static {v1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
@@ -1271,7 +1271,7 @@
     invoke-virtual {v0, v2, v1}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Boolean;)V
 
     .line 23
-    iget-boolean v1, p1, Li7/c;->o:Z
+    iget-boolean v1, p1, Li7/c;->p:Z
 
     .line 24
     invoke-static {v1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
@@ -1283,7 +1283,7 @@
     invoke-virtual {v0, v2, v1}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Boolean;)V
 
     .line 25
-    iget-boolean v1, p1, Li7/c;->m:Z
+    iget-boolean v1, p1, Li7/c;->n:Z
 
     .line 26
     invoke-static {v1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
@@ -1295,7 +1295,7 @@
     invoke-virtual {v0, v2, v1}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Boolean;)V
 
     .line 27
-    iget-object p1, p1, Li7/c;->p:Li7/i;
+    iget-object p1, p1, Li7/c;->q:Li7/i;
 
     .line 28
     invoke-virtual {p1}, Ljava/lang/Enum;->ordinal()I

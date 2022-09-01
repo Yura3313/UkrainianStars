@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field public final f:Lcom/google/android/gms/common/api/Status;
+.field public final g:Lcom/google/android/gms/common/api/Status;
     .annotation build Landroidx/annotation/RecentlyNonNull;
     .end annotation
 
@@ -22,10 +22,10 @@
     .end param
 
     .line 1
-    iget v0, p1, Lcom/google/android/gms/common/api/Status;->g:I
+    iget v0, p1, Lcom/google/android/gms/common/api/Status;->h:I
 
     .line 2
-    iget-object v1, p1, Lcom/google/android/gms/common/api/Status;->h:Ljava/lang/String;
+    iget-object v1, p1, Lcom/google/android/gms/common/api/Status;->i:Ljava/lang/String;
 
     if-eqz v1, :cond_0
 
@@ -38,7 +38,7 @@
     const/16 v2, 0xd
 
     .line 3
-    invoke-static {v1, v2}, La1/e;->a(Ljava/lang/String;I)I
+    invoke-static {v1, v2}, La1/e;->b(Ljava/lang/String;I)I
 
     move-result v2
 
@@ -63,7 +63,7 @@
     invoke-direct {p0, v0}, Ljava/lang/Exception;-><init>(Ljava/lang/String;)V
 
     .line 6
-    iput-object p1, p0, Lcom/google/android/gms/common/api/ApiException;->f:Lcom/google/android/gms/common/api/Status;
+    iput-object p1, p0, Lcom/google/android/gms/common/api/ApiException;->g:Lcom/google/android/gms/common/api/Status;
 
     return-void
 .end method

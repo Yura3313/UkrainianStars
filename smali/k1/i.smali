@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field public final f:Ljava/lang/Object;
-
 .field public final g:Ljava/lang/Object;
+
+.field public final h:Ljava/lang/Object;
 
 
 # direct methods
@@ -20,7 +20,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 5
-    iput-object p1, p0, Lk1/i;->f:Ljava/lang/Object;
+    iput-object p1, p0, Lk1/i;->g:Ljava/lang/Object;
 
     .line 6
     check-cast p2, Le8/j;
@@ -33,22 +33,22 @@
     invoke-direct {p1}, Le8/k;-><init>()V
 
     .line 8
-    iput-object p1, p0, Lk1/i;->g:Ljava/lang/Object;
+    iput-object p1, p0, Lk1/i;->h:Ljava/lang/Object;
 
     return-void
 .end method
 
-.method public synthetic constructor <init>(Lcom/google/android/gms/ads/a;Landroid/os/Bundle;)V
+.method public synthetic constructor <init>(Lcom/google/android/gms/ads/b;Landroid/os/Bundle;)V
     .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lk1/i;->f:Ljava/lang/Object;
+    iput-object p1, p0, Lk1/i;->g:Ljava/lang/Object;
 
     .line 3
-    iput-object p2, p0, Lk1/i;->g:Ljava/lang/Object;
+    iput-object p2, p0, Lk1/i;->h:Ljava/lang/Object;
 
     return-void
 .end method
@@ -59,7 +59,7 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lk1/i;->f:Ljava/lang/Object;
+    iget-object v0, p0, Lk1/i;->g:Ljava/lang/Object;
 
     check-cast v0, Lc8/j;
 
@@ -75,7 +75,7 @@
     if-ne v0, v1, :cond_1
 
     .line 3
-    iget-object v0, p0, Lk1/i;->g:Ljava/lang/Object;
+    iget-object v0, p0, Lk1/i;->h:Ljava/lang/Object;
 
     check-cast v0, Lf8/j;
 
@@ -100,7 +100,7 @@
 
     .line 5
     :cond_0
-    sget-object p1, Ld8/b;->u:Ld8/b;
+    sget-object p1, Ld8/b;->v:Ld8/b;
 
     const/4 v0, 0x0
 

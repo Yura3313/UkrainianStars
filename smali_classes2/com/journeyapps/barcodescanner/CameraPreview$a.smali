@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field public final synthetic f:Lcom/journeyapps/barcodescanner/CameraPreview;
+.field public final synthetic g:Lcom/journeyapps/barcodescanner/CameraPreview;
 
 
 # direct methods
 .method public constructor <init>(Lcom/journeyapps/barcodescanner/CameraPreview;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/journeyapps/barcodescanner/CameraPreview$a;->f:Lcom/journeyapps/barcodescanner/CameraPreview;
+    iput-object p1, p0, Lcom/journeyapps/barcodescanner/CameraPreview$a;->g:Lcom/journeyapps/barcodescanner/CameraPreview;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -40,20 +40,20 @@
     if-nez p1, :cond_0
 
     .line 1
-    sget p1, Lcom/journeyapps/barcodescanner/CameraPreview;->F:I
+    sget p1, Lcom/journeyapps/barcodescanner/CameraPreview;->G:I
 
     return-void
 
     .line 2
     :cond_0
-    iget-object p1, p0, Lcom/journeyapps/barcodescanner/CameraPreview$a;->f:Lcom/journeyapps/barcodescanner/CameraPreview;
+    iget-object p1, p0, Lcom/journeyapps/barcodescanner/CameraPreview$a;->g:Lcom/journeyapps/barcodescanner/CameraPreview;
 
     new-instance p2, Lrb/o;
 
     invoke-direct {p2, p3, p4}, Lrb/o;-><init>(II)V
 
     .line 3
-    iput-object p2, p1, Lcom/journeyapps/barcodescanner/CameraPreview;->u:Lrb/o;
+    iput-object p2, p1, Lcom/journeyapps/barcodescanner/CameraPreview;->v:Lrb/o;
 
     .line 4
     invoke-virtual {p1}, Lcom/journeyapps/barcodescanner/CameraPreview;->h()V
@@ -71,12 +71,12 @@
     .locals 1
 
     .line 1
-    iget-object p1, p0, Lcom/journeyapps/barcodescanner/CameraPreview$a;->f:Lcom/journeyapps/barcodescanner/CameraPreview;
+    iget-object p1, p0, Lcom/journeyapps/barcodescanner/CameraPreview$a;->g:Lcom/journeyapps/barcodescanner/CameraPreview;
 
     const/4 v0, 0x0
 
     .line 2
-    iput-object v0, p1, Lcom/journeyapps/barcodescanner/CameraPreview;->u:Lrb/o;
+    iput-object v0, p1, Lcom/journeyapps/barcodescanner/CameraPreview;->v:Lrb/o;
 
     return-void
 .end method

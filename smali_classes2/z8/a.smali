@@ -34,10 +34,10 @@
     .end annotation
 .end field
 
-.field public c:Lcom/helpshift/util/h0;
+.field public c:Lcom/helpshift/util/f0;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lcom/helpshift/util/h0<",
+            "Lcom/helpshift/util/f0<",
             "Ljava/lang/String;",
             "Lq8/d;",
             ">;"
@@ -83,7 +83,7 @@
     iput-object p2, p0, Lz8/a;->d:Lb8/a;
 
     .line 5
-    invoke-static {p1}, Lbc/a;->d(Ljava/util/List;)Z
+    invoke-static {p1}, Lt5/a;->g(Ljava/util/List;)Z
 
     move-result p2
 
@@ -115,9 +115,9 @@
     check-cast v0, Lq8/d;
 
     .line 8
-    iget-object v1, v0, Lq8/d;->h:Ljava/lang/String;
+    iget-object v1, v0, Lq8/d;->i:Ljava/lang/String;
 
-    invoke-static {v1}, Lcom/google/android/play/core/appupdate/g;->b(Ljava/lang/String;)Z
+    invoke-static {v1}, La5/b0;->d(Ljava/lang/String;)Z
 
     move-result v1
 
@@ -126,7 +126,7 @@
     .line 9
     iget-object v1, p0, Lz8/a;->b:Ljava/util/HashMap;
 
-    iget-object v2, v0, Lq8/d;->h:Ljava/lang/String;
+    iget-object v2, v0, Lq8/d;->i:Ljava/lang/String;
 
     invoke-virtual {v1, v2, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -134,9 +134,9 @@
 
     .line 10
     :cond_2
-    iget-object v1, v0, Lq8/d;->i:Ljava/lang/String;
+    iget-object v1, v0, Lq8/d;->j:Ljava/lang/String;
 
-    invoke-static {v1}, Lcom/google/android/play/core/appupdate/g;->b(Ljava/lang/String;)Z
+    invoke-static {v1}, La5/b0;->d(Ljava/lang/String;)Z
 
     move-result v1
 
@@ -145,7 +145,7 @@
     .line 11
     iget-object v1, p0, Lz8/a;->a:Ljava/util/HashMap;
 
-    iget-object v2, v0, Lq8/d;->i:Ljava/lang/String;
+    iget-object v2, v0, Lq8/d;->j:Ljava/lang/String;
 
     invoke-virtual {v1, v2, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -177,11 +177,11 @@
     check-cast p1, Lq8/d;
 
     .line 14
-    new-instance v0, Lcom/helpshift/util/h0;
+    new-instance v0, Lcom/helpshift/util/f0;
 
-    invoke-direct {v0, p2, p1}, Lcom/helpshift/util/h0;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-direct {v0, p2, p1}, Lcom/helpshift/util/f0;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
 
-    iput-object v0, p0, Lz8/a;->c:Lcom/helpshift/util/h0;
+    iput-object v0, p0, Lz8/a;->c:Lcom/helpshift/util/f0;
 
     :cond_4
     :goto_1
@@ -190,14 +190,14 @@
 
 
 # virtual methods
-.method public final a(Lq8/d;)Lcom/helpshift/util/h0;
+.method public final a(Lq8/d;)Lcom/helpshift/util/f0;
     .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Lq8/d;",
             ")",
-            "Lcom/helpshift/util/h0<",
+            "Lcom/helpshift/util/f0<",
             "Lz8/a$a;",
             "Lq8/d;",
             ">;"
@@ -205,13 +205,13 @@
     .end annotation
 
     .line 1
-    iget-object v0, p1, Lq8/d;->h:Ljava/lang/String;
+    iget-object v0, p1, Lq8/d;->i:Ljava/lang/String;
 
     .line 2
-    iget-object v1, p1, Lq8/d;->i:Ljava/lang/String;
+    iget-object v1, p1, Lq8/d;->j:Ljava/lang/String;
 
     .line 3
-    iget-object p1, p1, Lq8/d;->z:Ljava/lang/String;
+    iget-object p1, p1, Lq8/d;->A:Ljava/lang/String;
 
     .line 4
     iget-object v2, p0, Lz8/a;->b:Ljava/util/HashMap;
@@ -232,11 +232,11 @@
     check-cast p1, Lq8/d;
 
     .line 6
-    new-instance v0, Lcom/helpshift/util/h0;
+    new-instance v0, Lcom/helpshift/util/f0;
 
-    sget-object v1, Lz8/a$a;->f:Lz8/a$a;
+    sget-object v1, Lz8/a$a;->g:Lz8/a$a;
 
-    invoke-direct {v0, v1, p1}, Lcom/helpshift/util/h0;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-direct {v0, v1, p1}, Lcom/helpshift/util/f0;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
 
     return-object v0
 
@@ -260,27 +260,27 @@
     check-cast p1, Lq8/d;
 
     .line 9
-    new-instance v0, Lcom/helpshift/util/h0;
+    new-instance v0, Lcom/helpshift/util/f0;
 
-    sget-object v1, Lz8/a$a;->g:Lz8/a$a;
+    sget-object v1, Lz8/a$a;->h:Lz8/a$a;
 
-    invoke-direct {v0, v1, p1}, Lcom/helpshift/util/h0;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-direct {v0, v1, p1}, Lcom/helpshift/util/f0;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
 
     return-object v0
 
     .line 10
     :cond_1
-    invoke-static {p1}, Lcom/google/android/play/core/appupdate/g;->b(Ljava/lang/String;)Z
+    invoke-static {p1}, La5/b0;->d(Ljava/lang/String;)Z
 
     move-result v0
 
     if-nez v0, :cond_2
 
-    iget-object v0, p0, Lz8/a;->c:Lcom/helpshift/util/h0;
+    iget-object v0, p0, Lz8/a;->c:Lcom/helpshift/util/f0;
 
     if-eqz v0, :cond_2
 
-    iget-object v0, v0, Lcom/helpshift/util/h0;->a:Ljava/lang/Object;
+    iget-object v0, v0, Lcom/helpshift/util/f0;->a:Ljava/lang/Object;
 
     check-cast v0, Ljava/lang/String;
 
@@ -292,18 +292,18 @@
     if-eqz p1, :cond_2
 
     .line 12
-    iget-object p1, p0, Lz8/a;->c:Lcom/helpshift/util/h0;
+    iget-object p1, p0, Lz8/a;->c:Lcom/helpshift/util/f0;
 
-    iget-object p1, p1, Lcom/helpshift/util/h0;->b:Ljava/lang/Object;
+    iget-object p1, p1, Lcom/helpshift/util/f0;->b:Ljava/lang/Object;
 
     check-cast p1, Lq8/d;
 
     .line 13
-    new-instance v0, Lcom/helpshift/util/h0;
+    new-instance v0, Lcom/helpshift/util/f0;
 
-    sget-object v1, Lz8/a$a;->h:Lz8/a$a;
+    sget-object v1, Lz8/a$a;->i:Lz8/a$a;
 
-    invoke-direct {v0, v1, p1}, Lcom/helpshift/util/h0;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-direct {v0, v1, p1}, Lcom/helpshift/util/f0;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
 
     return-object v0
 

@@ -1,58 +1,126 @@
-.class public final synthetic Lk3/a20;
+.class public final Lk3/a20;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lk3/nl0;
+.implements Lk3/mv0;
 
 
 # instance fields
-.field public final a:Lk3/b20;
+.field public final synthetic a:I
 
-.field public final b:Lcom/google/android/gms/internal/ads/zzasp;
+.field public final b:Lk3/qv0;
 
-.field public final c:I
+.field public final c:Lk3/qv0;
 
 
 # direct methods
-.method public constructor <init>(Lk3/b20;Lcom/google/android/gms/internal/ads/zzasp;I)V
+.method public synthetic constructor <init>(Lk3/qv0;Lk3/qv0;I)V
     .locals 0
 
+    iput p3, p0, Lk3/a20;->a:I
+
+    iput-object p1, p0, Lk3/a20;->b:Lk3/qv0;
+
+    iput-object p2, p0, Lk3/a20;->c:Lk3/qv0;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    iput-object p1, p0, Lk3/a20;->a:Lk3/b20;
-
-    iput-object p2, p0, Lk3/a20;->b:Lcom/google/android/gms/internal/ads/zzasp;
-
-    iput p3, p0, Lk3/a20;->c:I
 
     return-void
 .end method
 
-
-# virtual methods
-.method public final a(Ljava/lang/Object;)Lk3/em0;
+.method public static a(Lk3/qv0;)Lk3/a20;
     .locals 3
 
-    iget-object v0, p0, Lk3/a20;->a:Lk3/b20;
+    sget-object v0, Lk3/q5;->k:Lk3/ei0;
 
-    iget-object v1, p0, Lk3/a20;->b:Lcom/google/android/gms/internal/ads/zzasp;
+    new-instance v1, Lk3/a20;
 
-    iget v2, p0, Lk3/a20;->c:I
+    const/4 v2, 0x0
 
-    check-cast p1, Ljava/lang/Throwable;
+    invoke-direct {v1, p0, v0, v2}, Lk3/a20;-><init>(Lk3/qv0;Lk3/qv0;I)V
 
-    iget-object p1, v0, Lk3/b20;->d:Lk3/ev0;
+    return-object v1
+.end method
 
-    invoke-interface {p1}, Lk3/ev0;->get()Ljava/lang/Object;
+.method public static b(Lk3/qv0;)Lk3/a20;
+    .locals 3
 
-    move-result-object p1
+    sget-object v0, Lk3/q5;->k:Lk3/ei0;
 
-    check-cast p1, Lcom/google/android/gms/internal/ads/zzcpj;
+    new-instance v1, Lk3/a20;
 
-    invoke-virtual {p1, v1, v2}, Lcom/google/android/gms/internal/ads/zzcpj;->z7(Lcom/google/android/gms/internal/ads/zzasp;I)Lk3/em0;
+    const/4 v2, 0x1
 
-    move-result-object p1
+    invoke-direct {v1, v0, p0, v2}, Lk3/a20;-><init>(Lk3/qv0;Lk3/qv0;I)V
 
-    return-object p1
+    return-object v1
+.end method
+
+
+# virtual methods
+.method public final get()Ljava/lang/Object;
+    .locals 3
+
+    iget v0, p0, Lk3/a20;->a:I
+
+    packed-switch v0, :pswitch_data_0
+
+    goto :goto_0
+
+    .line 1
+    :pswitch_0
+    iget-object v0, p0, Lk3/a20;->b:Lk3/qv0;
+
+    invoke-interface {v0}, Lk3/qv0;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    iget-object v1, p0, Lk3/a20;->c:Lk3/qv0;
+
+    invoke-interface {v1}, Lk3/qv0;->get()Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Ljava/util/concurrent/Executor;
+
+    .line 2
+    check-cast v0, Lk3/x20;
+
+    .line 3
+    new-instance v2, Lk3/qt;
+
+    invoke-direct {v2, v0, v1}, Lk3/qt;-><init>(Ljava/lang/Object;Ljava/util/concurrent/Executor;)V
+
+    return-object v2
+
+    .line 4
+    :goto_0
+    iget-object v0, p0, Lk3/a20;->b:Lk3/qv0;
+
+    invoke-interface {v0}, Lk3/qv0;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lk3/jm0;
+
+    iget-object v1, p0, Lk3/a20;->c:Lk3/qv0;
+
+    invoke-interface {v1}, Lk3/qv0;->get()Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Landroid/os/Bundle;
+
+    .line 5
+    new-instance v2, Lk3/ec0;
+
+    invoke-direct {v2, v0, v1}, Lk3/ec0;-><init>(Lk3/jm0;Landroid/os/Bundle;)V
+
+    return-object v2
+
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

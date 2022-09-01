@@ -19,7 +19,7 @@
 
     const-string v1, "(this as java.lang.String).toCharArray()"
 
-    invoke-static {v0, v1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     sput-object v0, Lpc/e;->a:[C
 
@@ -39,7 +39,7 @@
 
     const-string v1, "packageManager"
 
-    invoke-static {p0, v1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v1}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 2
     sget v1, Landroid/os/Build$VERSION;->SDK_INT:I
@@ -59,7 +59,7 @@
 
     const-string p1, "getPackageInfo(packageNa\u2026CERTIFICATES).signingInfo"
 
-    invoke-static {p0, p1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, p1}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {p0}, Landroid/content/pm/SigningInfo;->getApkContentsSigners()[Landroid/content/pm/Signature;
 
@@ -67,7 +67,7 @@
 
     const-string p1, "getPackageInfo(packageNa\u2026ngInfo.apkContentsSigners"
 
-    invoke-static {p0, p1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, p1}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     goto :goto_0
 
@@ -83,7 +83,7 @@
 
     const-string p1, "getPackageInfo(packageNa\u2026ET_SIGNATURES).signatures"
 
-    invoke-static {p0, p1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, p1}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 5
     :goto_0
@@ -113,7 +113,7 @@
 
     const-string v3, "MessageDigest.getInstanc\u20266\").digest(toByteArray())"
 
-    invoke-static {v2, v3}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v2, v3}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 7
     invoke-static {v2}, Lpc/e;->b([B)Ljava/lang/String;
@@ -121,7 +121,7 @@
     move-result-object v2
 
     .line 8
-    invoke-static {v2, p2}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, p2}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v2
     :try_end_0

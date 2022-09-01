@@ -73,10 +73,10 @@
     iget-object v0, v0, Lcom/linecorp/linesdk/auth/internal/c;->h:Lcom/linecorp/linesdk/auth/internal/d;
 
     .line 5
-    iget-object v1, v0, Lcom/linecorp/linesdk/auth/internal/d;->f:Lcom/linecorp/linesdk/a/f;
+    iget-object v1, v0, Lcom/linecorp/linesdk/auth/internal/d;->g:Lcom/linecorp/linesdk/a/f;
 
     .line 6
-    iget-object v0, v0, Lcom/linecorp/linesdk/auth/internal/d;->g:Ljava/lang/String;
+    iget-object v0, v0, Lcom/linecorp/linesdk/auth/internal/d;->h:Ljava/lang/String;
 
     .line 7
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
@@ -317,7 +317,7 @@
     const/4 v2, 0x4
 
     .line 4
-    iput v2, v1, Lcom/linecorp/linesdk/auth/internal/d;->i:I
+    iput v2, v1, Lcom/linecorp/linesdk/auth/internal/d;->j:I
 
     .line 5
     iget-object v0, v0, Lcom/linecorp/linesdk/auth/internal/c;->a:Lcom/linecorp/linesdk/auth/internal/LineAuthenticationActivity;

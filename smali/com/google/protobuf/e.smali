@@ -674,7 +674,7 @@
     if-nez p3, :cond_6
 
     .line 12
-    sget-object p1, Lcom/google/protobuf/i;->g:Lcom/google/protobuf/i$h;
+    sget-object p1, Lcom/google/protobuf/i;->h:Lcom/google/protobuf/i$h;
 
     invoke-virtual {p4, p0, p1}, Lcom/google/protobuf/q1;->e(ILjava/lang/Object;)V
 
@@ -1336,7 +1336,7 @@
     if-nez v0, :cond_0
 
     .line 4
-    sget-object p0, Lcom/google/protobuf/i;->g:Lcom/google/protobuf/i$h;
+    sget-object p0, Lcom/google/protobuf/i;->h:Lcom/google/protobuf/i$h;
 
     iput-object p0, p2, Lcom/google/protobuf/e$a;->c:Ljava/lang/Object;
 
@@ -1409,7 +1409,7 @@
     if-nez v0, :cond_0
 
     .line 4
-    sget-object v0, Lcom/google/protobuf/i;->g:Lcom/google/protobuf/i$h;
+    sget-object v0, Lcom/google/protobuf/i;->h:Lcom/google/protobuf/i$h;
 
     invoke-interface {p4, v0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
@@ -1462,7 +1462,7 @@
     if-nez v0, :cond_2
 
     .line 11
-    sget-object v0, Lcom/google/protobuf/i;->g:Lcom/google/protobuf/i$h;
+    sget-object v0, Lcom/google/protobuf/i;->h:Lcom/google/protobuf/i$h;
 
     invoke-interface {p4, v0}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
@@ -1634,19 +1634,19 @@
     iget-object v1, p5, Lcom/google/protobuf/GeneratedMessageLite$d;->d:Lcom/google/protobuf/GeneratedMessageLite$c;
 
     .line 3
-    iget-boolean v2, v1, Lcom/google/protobuf/GeneratedMessageLite$c;->i:Z
+    iget-boolean v2, v1, Lcom/google/protobuf/GeneratedMessageLite$c;->j:Z
 
     const/4 v3, 0x0
 
     if-eqz v2, :cond_2
 
     .line 4
-    iget-boolean v2, v1, Lcom/google/protobuf/GeneratedMessageLite$c;->j:Z
+    iget-boolean v2, v1, Lcom/google/protobuf/GeneratedMessageLite$c;->k:Z
 
     if-eqz v2, :cond_2
 
     .line 5
-    iget-object p3, v1, Lcom/google/protobuf/GeneratedMessageLite$c;->h:Lcom/google/protobuf/w1$b;
+    iget-object p3, v1, Lcom/google/protobuf/GeneratedMessageLite$c;->i:Lcom/google/protobuf/w1$b;
 
     .line 6
     invoke-virtual {p3}, Ljava/lang/Enum;->ordinal()I
@@ -1736,7 +1736,7 @@
     iget-object p2, p5, Lcom/google/protobuf/GeneratedMessageLite$d;->d:Lcom/google/protobuf/GeneratedMessageLite$c;
 
     .line 21
-    iget-object p2, p2, Lcom/google/protobuf/GeneratedMessageLite$c;->f:Lcom/google/protobuf/a0$d;
+    iget-object p2, p2, Lcom/google/protobuf/GeneratedMessageLite$c;->g:Lcom/google/protobuf/a0$d;
 
     .line 22
     invoke-static {p0, p3, p2, v3, p6}, Lcom/google/protobuf/j1;->y(ILjava/util/List;Lcom/google/protobuf/a0$d;Ljava/lang/Object;Lcom/google/protobuf/p1;)Ljava/lang/Object;
@@ -1886,7 +1886,7 @@
 
     .line 46
     :goto_1
-    iget-object p2, p2, Lcom/google/protobuf/GeneratedMessageLite$c;->h:Lcom/google/protobuf/w1$b;
+    iget-object p2, p2, Lcom/google/protobuf/GeneratedMessageLite$c;->i:Lcom/google/protobuf/w1$b;
 
     .line 47
     invoke-virtual {p1, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
@@ -1901,10 +1901,10 @@
 
     .line 48
     :cond_2
-    iget-object v1, v1, Lcom/google/protobuf/GeneratedMessageLite$c;->h:Lcom/google/protobuf/w1$b;
+    iget-object v1, v1, Lcom/google/protobuf/GeneratedMessageLite$c;->i:Lcom/google/protobuf/w1$b;
 
     .line 49
-    sget-object v2, Lcom/google/protobuf/w1$b;->u:Lcom/google/protobuf/w1$b;
+    sget-object v2, Lcom/google/protobuf/w1$b;->v:Lcom/google/protobuf/w1$b;
 
     if-ne v1, v2, :cond_5
 
@@ -1917,7 +1917,7 @@
     iget-object p1, p5, Lcom/google/protobuf/GeneratedMessageLite$d;->d:Lcom/google/protobuf/GeneratedMessageLite$c;
 
     .line 52
-    iget-object p1, p1, Lcom/google/protobuf/GeneratedMessageLite$c;->f:Lcom/google/protobuf/a0$d;
+    iget-object p1, p1, Lcom/google/protobuf/GeneratedMessageLite$c;->g:Lcom/google/protobuf/a0$d;
 
     .line 53
     iget p3, p7, Lcom/google/protobuf/e$a;->a:I
@@ -2235,7 +2235,7 @@
     :goto_5
     iget-object p0, p5, Lcom/google/protobuf/GeneratedMessageLite$d;->d:Lcom/google/protobuf/GeneratedMessageLite$c;
 
-    iget-boolean p1, p0, Lcom/google/protobuf/GeneratedMessageLite$c;->i:Z
+    iget-boolean p1, p0, Lcom/google/protobuf/GeneratedMessageLite$c;->j:Z
 
     if-eqz p1, :cond_7
 
@@ -2246,7 +2246,7 @@
 
     .line 94
     :cond_7
-    iget-object p0, p0, Lcom/google/protobuf/GeneratedMessageLite$c;->h:Lcom/google/protobuf/w1$b;
+    iget-object p0, p0, Lcom/google/protobuf/GeneratedMessageLite$c;->i:Lcom/google/protobuf/w1$b;
 
     .line 95
     invoke-virtual {p0}, Ljava/lang/Enum;->ordinal()I

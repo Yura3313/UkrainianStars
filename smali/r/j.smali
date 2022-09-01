@@ -329,11 +329,11 @@
 .method public static c(Lq/e$a;Lq/e$a;Lq/e$a;Lq/e$a;)Z
     .locals 5
 
-    sget-object v0, Lq/e$a;->i:Lq/e$a;
+    sget-object v0, Lq/e$a;->j:Lq/e$a;
 
-    sget-object v1, Lq/e$a;->g:Lq/e$a;
+    sget-object v1, Lq/e$a;->h:Lq/e$a;
 
-    sget-object v2, Lq/e$a;->f:Lq/e$a;
+    sget-object v2, Lq/e$a;->g:Lq/e$a;
 
     const/4 v3, 0x0
 

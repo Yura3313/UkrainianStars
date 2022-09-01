@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field public final synthetic f:Lmd/e;
+.field public final synthetic g:Lmd/e;
 
 
 # direct methods
 .method public constructor <init>(Lmd/e;)V
     .locals 0
 
-    iput-object p1, p0, Lmd/e$b;->f:Lmd/e;
+    iput-object p1, p0, Lmd/e$b;->g:Lmd/e;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -38,7 +38,7 @@
     .locals 8
 
     .line 1
-    iget-object p1, p0, Lmd/e$b;->f:Lmd/e;
+    iget-object p1, p0, Lmd/e$b;->g:Lmd/e;
 
     sget v0, Lcom/supercell/id/R$id;->okButton:I
 
@@ -50,14 +50,14 @@
 
     const-string v0, "okButton"
 
-    invoke-static {p1, v0}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/4 v0, 0x0
 
     invoke-virtual {p1, v0}, Landroid/view/View;->setEnabled(Z)V
 
     .line 2
-    iget-object p1, p0, Lmd/e$b;->f:Lmd/e;
+    iget-object p1, p0, Lmd/e$b;->g:Lmd/e;
 
     sget v1, Lcom/supercell/id/R$id;->cancelButton:I
 
@@ -69,12 +69,12 @@
 
     const-string v1, "cancelButton"
 
-    invoke-static {p1, v1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v1}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {p1, v0}, Landroid/view/View;->setEnabled(Z)V
 
     .line 3
-    iget-object v3, p0, Lmd/e$b;->f:Lmd/e;
+    iget-object v3, p0, Lmd/e$b;->g:Lmd/e;
 
     .line 4
     invoke-virtual {v3}, Lmd/u;->V0()Ljava/lang/String;
@@ -94,7 +94,7 @@
     if-eqz v1, :cond_0
 
     .line 7
-    iget-object v1, v1, Lcom/supercell/id/ui/login/LoginFlowFragment;->k0:Ljava/lang/String;
+    iget-object v1, v1, Lcom/supercell/id/ui/login/LoginFlowFragment;->l0:Ljava/lang/String;
 
     if-eqz v1, :cond_0
 
@@ -119,21 +119,21 @@
 
     move-result v4
 
-    invoke-virtual {v2, p1, v0, v1, v4}, Lrc/a;->l(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)Lze/e0;
+    invoke-virtual {v2, p1, v0, v1, v4}, Lrc/a;->l(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Z)Lze/f0;
 
     move-result-object v2
 
-    sget-object v4, Lmd/c;->f:Lmd/c;
+    sget-object v4, Lmd/c;->g:Lmd/c;
 
     .line 11
-    sget-object v5, Lmd/d;->f:Lmd/d;
+    sget-object v5, Lmd/d;->g:Lmd/d;
 
     const/4 v6, 0x0
 
     const/16 v7, 0x8
 
     .line 12
-    invoke-static/range {v2 .. v7}, Lae/u1;->k(Lze/e0;Ljava/lang/Object;Lre/p;Lre/p;Lre/l;I)Lze/e0;
+    invoke-static/range {v2 .. v7}, Lae/t1;->j(Lze/f0;Ljava/lang/Object;Lre/p;Lre/p;Lre/l;I)Lze/f0;
 
     return-void
 .end method

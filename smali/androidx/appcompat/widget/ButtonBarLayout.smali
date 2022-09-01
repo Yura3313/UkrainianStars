@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field public f:Z
+.field public g:Z
 
-.field public g:I
+.field public h:I
 
 
 # direct methods
@@ -19,7 +19,7 @@
     const/4 v0, -0x1
 
     .line 2
-    iput v0, p0, Landroidx/appcompat/widget/ButtonBarLayout;->g:I
+    iput v0, p0, Landroidx/appcompat/widget/ButtonBarLayout;->h:I
 
     .line 3
     sget-object v3, Landroidx/appcompat/R$styleable;->ButtonBarLayout:[I
@@ -50,7 +50,7 @@
 
     move-result p1
 
-    iput-boolean p1, p0, Landroidx/appcompat/widget/ButtonBarLayout;->f:Z
+    iput-boolean p1, p0, Landroidx/appcompat/widget/ButtonBarLayout;->g:Z
 
     .line 6
     invoke-virtual {v0}, Landroid/content/res/TypedArray;->recycle()V
@@ -207,14 +207,14 @@
     move-result v0
 
     .line 2
-    iget-boolean v1, p0, Landroidx/appcompat/widget/ButtonBarLayout;->f:Z
+    iget-boolean v1, p0, Landroidx/appcompat/widget/ButtonBarLayout;->g:Z
 
     const/4 v2, 0x0
 
     if-eqz v1, :cond_1
 
     .line 3
-    iget v1, p0, Landroidx/appcompat/widget/ButtonBarLayout;->g:I
+    iget v1, p0, Landroidx/appcompat/widget/ButtonBarLayout;->h:I
 
     if-le v0, v1, :cond_0
 
@@ -229,7 +229,7 @@
 
     .line 5
     :cond_0
-    iput v0, p0, Landroidx/appcompat/widget/ButtonBarLayout;->g:I
+    iput v0, p0, Landroidx/appcompat/widget/ButtonBarLayout;->h:I
 
     .line 6
     :cond_1
@@ -270,7 +270,7 @@
     invoke-super {p0, v0, p2}, Landroid/widget/LinearLayout;->onMeasure(II)V
 
     .line 9
-    iget-boolean v0, p0, Landroidx/appcompat/widget/ButtonBarLayout;->f:Z
+    iget-boolean v0, p0, Landroidx/appcompat/widget/ButtonBarLayout;->g:Z
 
     if-eqz v0, :cond_4
 
@@ -441,12 +441,12 @@
     .locals 1
 
     .line 1
-    iget-boolean v0, p0, Landroidx/appcompat/widget/ButtonBarLayout;->f:Z
+    iget-boolean v0, p0, Landroidx/appcompat/widget/ButtonBarLayout;->g:Z
 
     if-eq v0, p1, :cond_1
 
     .line 2
-    iput-boolean p1, p0, Landroidx/appcompat/widget/ButtonBarLayout;->f:Z
+    iput-boolean p1, p0, Landroidx/appcompat/widget/ButtonBarLayout;->g:Z
 
     if-nez p1, :cond_0
 

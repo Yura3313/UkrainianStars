@@ -1,11 +1,11 @@
 .class public final Lz3/k;
-.super Lz3/m2;
+.super Lz3/n2;
 
 
 # instance fields
-.field public final c:Lz3/l;
+.field public final i:Lz3/l;
 
-.field public d:Z
+.field public j:Z
 
 
 # direct methods
@@ -13,7 +13,7 @@
     .locals 1
 
     .line 1
-    invoke-direct {p0, p1}, Lz3/m2;-><init>(Lz3/p0;)V
+    invoke-direct {p0, p1}, Lz3/n2;-><init>(Lz3/p0;)V
 
     .line 2
     new-instance p1, Lz3/l;
@@ -25,7 +25,7 @@
     .line 3
     invoke-direct {p1, p0, v0}, Lz3/l;-><init>(Lz3/k;Landroid/content/Context;)V
 
-    iput-object p1, p0, Lz3/k;->c:Lz3/l;
+    iput-object p1, p0, Lz3/k;->i:Lz3/l;
 
     return-void
 .end method
@@ -49,7 +49,7 @@
     .end annotation
 
     .line 1
-    iget-boolean v0, p0, Lz3/k;->d:Z
+    iget-boolean v0, p0, Lz3/k;->j:Z
 
     const/4 v1, 0x0
 
@@ -59,7 +59,7 @@
 
     .line 2
     :cond_0
-    iget-object v0, p0, Lz3/k;->c:Lz3/l;
+    iget-object v0, p0, Lz3/k;->i:Lz3/l;
 
     invoke-virtual {v0}, Lz3/l;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
@@ -70,7 +70,7 @@
     const/4 v0, 0x1
 
     .line 3
-    iput-boolean v0, p0, Lz3/k;->d:Z
+    iput-boolean v0, p0, Lz3/k;->j:Z
 
     return-object v1
 
@@ -86,13 +86,13 @@
     const-string v2, "Error writing entry to local database"
 
     .line 1
-    invoke-virtual/range {p0 .. p0}, Lz3/w1;->o()V
+    invoke-virtual/range {p0 .. p0}, Lz3/x1;->o()V
 
     .line 2
-    invoke-virtual/range {p0 .. p0}, Lz3/w1;->n()V
+    invoke-virtual/range {p0 .. p0}, Lz3/x1;->n()V
 
     .line 3
-    iget-boolean v0, v1, Lz3/k;->d:Z
+    iget-boolean v0, v1, Lz3/k;->j:Z
 
     const/4 v3, 0x0
 
@@ -150,7 +150,7 @@
 
     .line 8
     :try_start_1
-    iput-boolean v9, v1, Lz3/k;->d:Z
+    iput-boolean v9, v1, Lz3/k;->j:Z
     :try_end_1
     .catch Landroid/database/sqlite/SQLiteFullException; {:try_start_1 .. :try_end_1} :catch_1
     .catch Landroid/database/sqlite/SQLiteDatabaseLockedException; {:try_start_1 .. :try_end_1} :catch_6
@@ -253,7 +253,7 @@
     move-result-object v5
 
     .line 15
-    iget-object v5, v5, Lz3/o;->f:Lz3/q;
+    iget-object v5, v5, Lz3/o;->l:Lz3/q;
 
     const-string v8, "Data loss, local db full"
 
@@ -294,7 +294,7 @@
     move-result-object v5
 
     .line 20
-    iget-object v5, v5, Lz3/o;->f:Lz3/q;
+    iget-object v5, v5, Lz3/o;->l:Lz3/q;
 
     const-string v8, "Different delete count than expected in local db. expected, received, difference"
 
@@ -453,7 +453,7 @@
     move-result-object v5
 
     .line 33
-    iget-object v5, v5, Lz3/o;->f:Lz3/q;
+    iget-object v5, v5, Lz3/o;->l:Lz3/q;
 
     .line 34
     invoke-virtual {v5, v2, v0}, Lz3/q;->d(Ljava/lang/String;Ljava/lang/Object;)V
@@ -461,7 +461,7 @@
     const/4 v5, 0x1
 
     .line 35
-    iput-boolean v5, v1, Lz3/k;->d:Z
+    iput-boolean v5, v1, Lz3/k;->j:Z
     :try_end_5
     .catchall {:try_start_5 .. :try_end_5} :catchall_4
 
@@ -533,7 +533,7 @@
     move-result-object v3
 
     .line 42
-    iget-object v3, v3, Lz3/o;->f:Lz3/q;
+    iget-object v3, v3, Lz3/o;->l:Lz3/q;
 
     .line 43
     invoke-virtual {v3, v2, v0}, Lz3/q;->d(Ljava/lang/String;Ljava/lang/Object;)V
@@ -541,7 +541,7 @@
     const/4 v3, 0x1
 
     .line 44
-    iput-boolean v3, v1, Lz3/k;->d:Z
+    iput-boolean v3, v1, Lz3/k;->j:Z
     :try_end_7
     .catchall {:try_start_7 .. :try_end_7} :catchall_0
 
@@ -588,7 +588,7 @@
     move-result-object v0
 
     .line 50
-    iget-object v0, v0, Lz3/o;->i:Lz3/q;
+    iget-object v0, v0, Lz3/o;->o:Lz3/q;
 
     const-string v2, "Failed to write entry to local database"
 

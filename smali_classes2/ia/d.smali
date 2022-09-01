@@ -72,7 +72,7 @@
     iget-object v1, p0, Lia/d;->b:Li7/c;
 
     .line 2
-    iget-object v1, v1, Li7/c;->f:Ljava/lang/Long;
+    iget-object v1, v1, Li7/c;->g:Ljava/lang/Long;
 
     .line 3
     invoke-virtual {v1}, Ljava/lang/Long;->longValue()J
@@ -86,7 +86,7 @@
     if-nez v0, :cond_0
 
     .line 4
-    sget-object v0, Lia/e;->h:Lia/e;
+    sget-object v0, Lia/e;->i:Lia/e;
 
     return-object v0
 
@@ -101,7 +101,7 @@
     .locals 9
 
     .line 1
-    sget-object v0, Lia/e;->h:Lia/e;
+    sget-object v0, Lia/e;->i:Lia/e;
 
     if-ne p2, v0, :cond_0
 
@@ -111,7 +111,7 @@
     iget-object v1, p0, Lia/d;->b:Li7/c;
 
     .line 3
-    iget-object v1, v1, Li7/c;->f:Ljava/lang/Long;
+    iget-object v1, v1, Li7/c;->g:Ljava/lang/Long;
 
     .line 4
     invoke-virtual {v1}, Ljava/lang/Long;->longValue()J
@@ -129,7 +129,7 @@
     iget-object v1, p0, Lia/d;->b:Li7/c;
 
     .line 6
-    iget-object v1, v1, Li7/c;->f:Ljava/lang/Long;
+    iget-object v1, v1, Li7/c;->g:Ljava/lang/Long;
 
     .line 7
     invoke-virtual {v1}, Ljava/lang/Long;->longValue()J
@@ -215,7 +215,7 @@
     const-string v3, "Error in updating redaction status"
 
     .line 15
-    invoke-static {v2, v3, v1}, Landroidx/savedstate/d;->g(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v2, v3, v1}, Le5/i;->i(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 

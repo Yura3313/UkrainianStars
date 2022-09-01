@@ -1,137 +1,50 @@
-.class public final Lk3/ma0;
+.class public final synthetic Lk3/ma0;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lk3/zc0;
+.implements Lk3/pl0;
 
 
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ljava/lang/Object;",
-        "Lk3/zc0<",
-        "Landroid/os/Bundle;",
-        ">;"
-    }
-.end annotation
-
-
-# instance fields
-.field public final a:I
-
-.field public final b:Z
-
-.field public final c:Z
-
-.field public final d:I
-
-.field public final e:I
-
-.field public final f:I
-
-.field public final g:F
-
-.field public final h:Z
+# static fields
+.field public static final a:Lk3/ma0;
 
 
 # direct methods
-.method public constructor <init>(IZZIIIFZ)V
+.method public static constructor <clinit>()V
+    .locals 1
+
+    new-instance v0, Lk3/ma0;
+
+    invoke-direct {v0}, Lk3/ma0;-><init>()V
+
+    sput-object v0, Lk3/ma0;->a:Lk3/ma0;
+
+    return-void
+.end method
+
+.method public constructor <init>()V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 2
-    iput p1, p0, Lk3/ma0;->a:I
-
-    .line 3
-    iput-boolean p2, p0, Lk3/ma0;->b:Z
-
-    .line 4
-    iput-boolean p3, p0, Lk3/ma0;->c:Z
-
-    .line 5
-    iput p4, p0, Lk3/ma0;->d:I
-
-    .line 6
-    iput p5, p0, Lk3/ma0;->e:I
-
-    .line 7
-    iput p6, p0, Lk3/ma0;->f:I
-
-    .line 8
-    iput p7, p0, Lk3/ma0;->g:F
-
-    .line 9
-    iput-boolean p8, p0, Lk3/ma0;->h:Z
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final synthetic b(Ljava/lang/Object;)V
-    .locals 2
+.method public final a(Ljava/lang/Object;)Lk3/hm0;
+    .locals 0
 
     .line 1
-    check-cast p1, Landroid/os/Bundle;
+    check-cast p1, Ljava/lang/Throwable;
+
+    const/4 p1, 0x0
 
     .line 2
-    iget v0, p0, Lk3/ma0;->a:I
+    invoke-static {p1}, Lk3/dm0;->g(Ljava/lang/Object;)Lk3/hm0;
 
-    const-string v1, "am"
+    move-result-object p1
 
-    invoke-virtual {p1, v1, v0}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
-
-    .line 3
-    iget-boolean v0, p0, Lk3/ma0;->b:Z
-
-    const-string v1, "ma"
-
-    invoke-virtual {p1, v1, v0}, Landroid/os/Bundle;->putBoolean(Ljava/lang/String;Z)V
-
-    .line 4
-    iget-boolean v0, p0, Lk3/ma0;->c:Z
-
-    const-string v1, "sp"
-
-    invoke-virtual {p1, v1, v0}, Landroid/os/Bundle;->putBoolean(Ljava/lang/String;Z)V
-
-    .line 5
-    iget v0, p0, Lk3/ma0;->d:I
-
-    const-string v1, "muv"
-
-    invoke-virtual {p1, v1, v0}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
-
-    .line 6
-    iget v0, p0, Lk3/ma0;->e:I
-
-    const-string v1, "rm"
-
-    invoke-virtual {p1, v1, v0}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
-
-    .line 7
-    iget v0, p0, Lk3/ma0;->f:I
-
-    const-string v1, "riv"
-
-    invoke-virtual {p1, v1, v0}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
-
-    .line 8
-    iget v0, p0, Lk3/ma0;->g:F
-
-    const-string v1, "android_app_volume"
-
-    invoke-virtual {p1, v1, v0}, Landroid/os/Bundle;->putFloat(Ljava/lang/String;F)V
-
-    .line 9
-    iget-boolean v0, p0, Lk3/ma0;->h:Z
-
-    const-string v1, "android_app_muted"
-
-    invoke-virtual {p1, v1, v0}, Landroid/os/Bundle;->putBoolean(Ljava/lang/String;Z)V
-
-    return-void
+    return-object p1
 .end method

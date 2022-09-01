@@ -144,7 +144,7 @@
     const-string v2, " on a background thread"
 
     .line 3
-    invoke-static {v1, p0, v2}, Landroid/support/v4/media/f;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v1, p0, v2}, Landroid/support/v4/media/f;->b(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p0
 
@@ -329,7 +329,7 @@
     iget-object v0, v0, Landroidx/lifecycle/k;->b:Landroidx/lifecycle/f$c;
 
     .line 4
-    sget-object v1, Landroidx/lifecycle/f$c;->f:Landroidx/lifecycle/f$c;
+    sget-object v1, Landroidx/lifecycle/f$c;->g:Landroidx/lifecycle/f$c;
 
     if-ne v0, v1, :cond_0
 

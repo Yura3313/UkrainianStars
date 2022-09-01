@@ -1,5 +1,5 @@
 .class public final Lsd/r;
-.super Lse/h;
+.super Lse/i;
 .source "PublicProfileFragment.kt"
 
 # interfaces
@@ -9,28 +9,28 @@
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/l<",
         "Lwc/q;",
-        "Lie/h;",
+        "Lie/i;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic f:Lcom/supercell/id/ui/publicprofile/PublicProfileFragment;
+.field public final synthetic g:Lcom/supercell/id/ui/publicprofile/PublicProfileFragment;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/id/ui/publicprofile/PublicProfileFragment;)V
     .locals 0
 
-    iput-object p1, p0, Lsd/r;->f:Lcom/supercell/id/ui/publicprofile/PublicProfileFragment;
+    iput-object p1, p0, Lsd/r;->g:Lcom/supercell/id/ui/publicprofile/PublicProfileFragment;
 
     const/4 p1, 0x1
 
-    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -46,7 +46,7 @@
     const-string v0, "it"
 
     .line 2
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 3
     sget-object p1, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
@@ -56,7 +56,7 @@
     move-result-object v0
 
     .line 4
-    iget-object v0, v0, Lae/u;->m:La5/d0;
+    iget-object v0, v0, Lae/u;->m:Lpe/a;
 
     const-string v1, "Public Profile - Pending Request Dialog"
 
@@ -67,12 +67,12 @@
     const/16 v4, 0x18
 
     .line 5
-    invoke-static {v0, v1, v2, v3, v4}, La5/d0;->a(La5/d0;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;I)V
+    invoke-static {v0, v1, v2, v3, v4}, Lpe/a;->e(Lpe/a;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;I)V
 
     .line 6
-    iget-object v0, p0, Lsd/r;->f:Lcom/supercell/id/ui/publicprofile/PublicProfileFragment;
+    iget-object v0, p0, Lsd/r;->g:Lcom/supercell/id/ui/publicprofile/PublicProfileFragment;
 
-    sget-object v1, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment;->p0:Lae/l2;
+    sget-object v1, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment;->q0:Lae/k2;
 
     .line 7
     invoke-virtual {v0}, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment;->h1()Lcom/supercell/id/model/IdSocialAccount;
@@ -82,21 +82,21 @@
     if-eqz v1, :cond_0
 
     .line 8
-    iget-object v2, v0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment;->l0:Lsd/m;
+    iget-object v2, v0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment;->m0:Lsd/m;
 
     if-eqz v2, :cond_0
 
     .line 9
     new-instance v3, Lsd/m$c;
 
-    sget-object v4, Lcom/supercell/id/model/IdRelationshipStatus$Strangers;->g:Lcom/supercell/id/model/IdRelationshipStatus$Strangers;
+    sget-object v4, Lcom/supercell/id/model/IdRelationshipStatus$Strangers;->h:Lcom/supercell/id/model/IdRelationshipStatus$Strangers;
 
     invoke-direct {v3, v2, v4}, Lsd/m$c;-><init>(Lsd/m;Lcom/supercell/id/model/IdRelationshipStatus;)V
 
     invoke-virtual {v0, v3}, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment;->k1(Lsd/m;)V
 
     .line 10
-    iget-object v0, v0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment;->k0:Lae/o2;
+    iget-object v0, v0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment;->l0:Lae/n2;
 
     invoke-virtual {p1}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lae/u;
 
@@ -122,7 +122,7 @@
     const-string v3, "v3/friends.cancelRequest"
 
     .line 14
-    invoke-virtual {p1, v1, v3}, Lrc/d0;->t(Lcom/supercell/id/model/IdSocialAccount;Ljava/lang/String;)Lze/e0;
+    invoke-virtual {p1, v1, v3}, Lrc/d0;->t(Lcom/supercell/id/model/IdSocialAccount;Ljava/lang/String;)Lze/f0;
 
     move-result-object p1
 
@@ -131,14 +131,14 @@
 
     invoke-direct {v3, v2, v1}, Lbe/i;-><init>(Lbe/h;Lcom/supercell/id/model/IdSocialAccount;)V
 
-    invoke-static {p1, v3}, Lae/u1;->l(Lze/e0;Lre/l;)Lze/e0;
+    invoke-static {p1, v3}, Lae/t1;->k(Lze/f0;Lre/l;)Lze/f0;
 
     .line 16
-    invoke-virtual {v0, p1}, Lae/o2;->b(Lze/e0;)V
+    invoke-virtual {v0, p1}, Lae/n2;->b(Lze/f0;)V
 
     .line 17
     :cond_0
-    sget-object p1, Lie/h;->a:Lie/h;
+    sget-object p1, Lie/i;->a:Lie/i;
 
     return-object p1
 .end method

@@ -31,7 +31,7 @@
 
 
 # instance fields
-.field public final f:Ljava/lang/Object;
+.field public final g:Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "TK;"
@@ -39,7 +39,7 @@
     .end annotation
 .end field
 
-.field public final g:Ljava/lang/Object;
+.field public final h:Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "TV;"
@@ -47,7 +47,7 @@
     .end annotation
 .end field
 
-.field public h:Li/b$c;
+.field public i:Li/b$c;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Li/b$c<",
@@ -56,7 +56,7 @@
     .end annotation
 .end field
 
-.field public i:Li/b$c;
+.field public j:Li/b$c;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Li/b$c<",
@@ -79,10 +79,10 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object p1, p0, Li/b$c;->f:Ljava/lang/Object;
+    iput-object p1, p0, Li/b$c;->g:Ljava/lang/Object;
 
     .line 3
-    iput-object p2, p0, Li/b$c;->g:Ljava/lang/Object;
+    iput-object p2, p0, Li/b$c;->h:Ljava/lang/Object;
 
     return-void
 .end method
@@ -113,9 +113,9 @@
     check-cast p1, Li/b$c;
 
     .line 3
-    iget-object v1, p0, Li/b$c;->f:Ljava/lang/Object;
+    iget-object v1, p0, Li/b$c;->g:Ljava/lang/Object;
 
-    iget-object v3, p1, Li/b$c;->f:Ljava/lang/Object;
+    iget-object v3, p1, Li/b$c;->g:Ljava/lang/Object;
 
     invoke-virtual {v1, v3}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
@@ -123,9 +123,9 @@
 
     if-eqz v1, :cond_2
 
-    iget-object v1, p0, Li/b$c;->g:Ljava/lang/Object;
+    iget-object v1, p0, Li/b$c;->h:Ljava/lang/Object;
 
-    iget-object p1, p1, Li/b$c;->g:Ljava/lang/Object;
+    iget-object p1, p1, Li/b$c;->h:Ljava/lang/Object;
 
     invoke-virtual {v1, p1}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
@@ -150,7 +150,7 @@
         }
     .end annotation
 
-    iget-object v0, p0, Li/b$c;->f:Ljava/lang/Object;
+    iget-object v0, p0, Li/b$c;->g:Ljava/lang/Object;
 
     return-object v0
 .end method
@@ -163,7 +163,7 @@
         }
     .end annotation
 
-    iget-object v0, p0, Li/b$c;->g:Ljava/lang/Object;
+    iget-object v0, p0, Li/b$c;->h:Ljava/lang/Object;
 
     return-object v0
 .end method
@@ -171,13 +171,13 @@
 .method public final hashCode()I
     .locals 2
 
-    iget-object v0, p0, Li/b$c;->f:Ljava/lang/Object;
+    iget-object v0, p0, Li/b$c;->g:Ljava/lang/Object;
 
     invoke-virtual {v0}, Ljava/lang/Object;->hashCode()I
 
     move-result v0
 
-    iget-object v1, p0, Li/b$c;->g:Ljava/lang/Object;
+    iget-object v1, p0, Li/b$c;->h:Ljava/lang/Object;
 
     invoke-virtual {v1}, Ljava/lang/Object;->hashCode()I
 
@@ -212,7 +212,7 @@
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    iget-object v1, p0, Li/b$c;->f:Ljava/lang/Object;
+    iget-object v1, p0, Li/b$c;->g:Ljava/lang/Object;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -220,7 +220,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Li/b$c;->g:Ljava/lang/Object;
+    iget-object v1, p0, Li/b$c;->h:Ljava/lang/Object;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 

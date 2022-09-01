@@ -16,7 +16,7 @@
     .line 1
     new-instance v0, Lye/e;
 
-    sget-object v1, Lye/h;->g:Lye/h;
+    sget-object v1, Lye/h;->h:Lye/h;
 
     const-string v2, "[\\u0600-\\u06FF]+([\\u0020\\u200c][\\u0600-\\u06FF]+)*"
 
@@ -42,7 +42,7 @@
 
     const-string v0, "$this$applyFixes"
 
-    invoke-static {p0, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     sget-boolean v0, Lae/r;->b:Z
@@ -110,7 +110,7 @@
 
     const-string v0, "$this$applyFont"
 
-    invoke-static {p0, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;

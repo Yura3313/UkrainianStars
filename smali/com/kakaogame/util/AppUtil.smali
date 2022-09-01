@@ -149,7 +149,7 @@
     const-string v2, "AppUtil"
 
     .line 1
-    invoke-static {v1, p1, v2}, Lcom/kakaogame/b;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, p1, v2}, Landroid/support/v4/media/e;->b(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     const/4 v1, 0x0
 

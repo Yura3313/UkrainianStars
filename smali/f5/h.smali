@@ -40,7 +40,7 @@
     invoke-virtual {v1}, Lcom/google/crypto/tink/shaded/protobuf/n$a;->e()V
 
     .line 4
-    iget-object v2, v1, Lcom/google/crypto/tink/shaded/protobuf/n$a;->g:Lcom/google/crypto/tink/shaded/protobuf/n;
+    iget-object v2, v1, Lcom/google/crypto/tink/shaded/protobuf/n$a;->h:Lcom/google/crypto/tink/shaded/protobuf/n;
 
     check-cast v2, Ln5/x0;
 
@@ -59,7 +59,7 @@
     invoke-virtual {v1}, Lcom/google/crypto/tink/shaded/protobuf/n$a;->e()V
 
     .line 7
-    iget-object p1, v1, Lcom/google/crypto/tink/shaded/protobuf/n$a;->g:Lcom/google/crypto/tink/shaded/protobuf/n;
+    iget-object p1, v1, Lcom/google/crypto/tink/shaded/protobuf/n$a;->h:Lcom/google/crypto/tink/shaded/protobuf/n;
 
     check-cast p1, Ln5/x0;
 
@@ -85,7 +85,7 @@
     if-ne p1, p0, :cond_0
 
     .line 9
-    sget-object p0, Ln5/f1;->k:Ln5/f1;
+    sget-object p0, Ln5/f1;->l:Ln5/f1;
 
     goto :goto_0
 
@@ -101,26 +101,26 @@
 
     .line 11
     :cond_1
-    sget-object p0, Ln5/f1;->j:Ln5/f1;
+    sget-object p0, Ln5/f1;->k:Ln5/f1;
 
     goto :goto_0
 
     .line 12
     :cond_2
-    sget-object p0, Ln5/f1;->i:Ln5/f1;
+    sget-object p0, Ln5/f1;->j:Ln5/f1;
 
     goto :goto_0
 
     .line 13
     :cond_3
-    sget-object p0, Ln5/f1;->h:Ln5/f1;
+    sget-object p0, Ln5/f1;->i:Ln5/f1;
 
     .line 14
     :goto_0
     invoke-virtual {v1}, Lcom/google/crypto/tink/shaded/protobuf/n$a;->e()V
 
     .line 15
-    iget-object p1, v1, Lcom/google/crypto/tink/shaded/protobuf/n$a;->g:Lcom/google/crypto/tink/shaded/protobuf/n;
+    iget-object p1, v1, Lcom/google/crypto/tink/shaded/protobuf/n$a;->h:Lcom/google/crypto/tink/shaded/protobuf/n;
 
     check-cast p1, Ln5/x0;
 

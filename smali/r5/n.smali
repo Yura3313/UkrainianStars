@@ -19,7 +19,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    invoke-static {p1}, Lr5/i0;->e(I)Ljava/lang/String;
+    invoke-static {p1}, Lr5/k0;->e(I)Ljava/lang/String;
 
     return-void
 .end method

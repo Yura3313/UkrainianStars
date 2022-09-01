@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/supercell/id/ui/ingame/friendrequests/IngameFriendRequestsFragment$a;->n(Lae/c2$a;ILae/b2;)V
+    value = Lcom/supercell/id/ui/ingame/friendrequests/IngameFriendRequestsFragment$a;->n(Lae/b2$a;ILae/a2;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,7 +18,7 @@
 
 
 # static fields
-.field public static final f:Lcom/supercell/id/ui/ingame/friendrequests/IngameFriendRequestsFragment$a$e;
+.field public static final g:Lcom/supercell/id/ui/ingame/friendrequests/IngameFriendRequestsFragment$a$e;
 
 
 # direct methods
@@ -29,7 +29,7 @@
 
     invoke-direct {v0}, Lcom/supercell/id/ui/ingame/friendrequests/IngameFriendRequestsFragment$a$e;-><init>()V
 
-    sput-object v0, Lcom/supercell/id/ui/ingame/friendrequests/IngameFriendRequestsFragment$a$e;->f:Lcom/supercell/id/ui/ingame/friendrequests/IngameFriendRequestsFragment$a$e;
+    sput-object v0, Lcom/supercell/id/ui/ingame/friendrequests/IngameFriendRequestsFragment$a$e;->g:Lcom/supercell/id/ui/ingame/friendrequests/IngameFriendRequestsFragment$a$e;
 
     return-void
 .end method
@@ -55,7 +55,7 @@
     move-result-object v0
 
     .line 2
-    iget-object v0, v0, Lae/u;->m:La5/d0;
+    iget-object v0, v0, Lae/u;->m:Lpe/a;
 
     const-string v1, "In-Game - Friend Requests"
 
@@ -66,7 +66,7 @@
     const/16 v4, 0x18
 
     .line 3
-    invoke-static {v0, v1, v2, v3, v4}, La5/d0;->a(La5/d0;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;I)V
+    invoke-static {v0, v1, v2, v3, v4}, Lpe/a;->e(Lpe/a;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;I)V
 
     .line 4
     invoke-virtual {p1}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lae/u;
@@ -77,7 +77,7 @@
 
     move-result-object p1
 
-    invoke-virtual {p1}, Lbe/h;->l()Lze/e0;
+    invoke-virtual {p1}, Lbe/h;->l()Lze/f0;
 
     return-void
 .end method

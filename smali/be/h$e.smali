@@ -1,5 +1,5 @@
 .class public final Lbe/h$e;
-.super Lse/h;
+.super Lse/i;
 .source "FriendsStorage.kt"
 
 # interfaces
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lbe/h;->g(Ljava/util/List;)Lze/e0;
+    value = Lbe/h;->g(Ljava/util/List;)Lze/f0;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,40 +18,40 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/l<",
         "Ljava/util/Map<",
         "Lcom/supercell/id/model/IdSocialAccount;",
         "+",
         "Lae/m<",
         "+",
-        "Lvc/t;",
+        "Lvc/s;",
         "+",
         "Ljava/lang/Exception;",
         ">;>;",
-        "Lie/h;",
+        "Lie/i;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic f:Lbe/h;
+.field public final synthetic g:Lbe/h;
 
-.field public final synthetic g:Ljava/util/List;
+.field public final synthetic h:Ljava/util/List;
 
 
 # direct methods
 .method public constructor <init>(Lbe/h;Ljava/util/List;)V
     .locals 0
 
-    iput-object p1, p0, Lbe/h$e;->f:Lbe/h;
+    iput-object p1, p0, Lbe/h$e;->g:Lbe/h;
 
-    iput-object p2, p0, Lbe/h$e;->g:Ljava/util/List;
+    iput-object p2, p0, Lbe/h$e;->h:Ljava/util/List;
 
     const/4 p1, 0x1
 
-    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -67,7 +67,7 @@
     const-string v0, "response"
 
     .line 2
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 3
     new-instance v0, Ljava/util/ArrayList;
@@ -119,7 +119,7 @@
     .line 8
     move-object v3, v2
 
-    check-cast v3, Lvc/t;
+    check-cast v3, Lvc/s;
 
     goto :goto_1
 
@@ -220,13 +220,13 @@
 
     .line 19
     :cond_7
-    iget-object p1, p0, Lbe/h$e;->f:Lbe/h;
+    iget-object p1, p0, Lbe/h$e;->g:Lbe/h;
 
     new-instance v2, Lbe/h$b$a;
 
     invoke-direct {v2, v0, v1}, Lbe/h$b$a;-><init>(Ljava/util/List;Ljava/util/List;)V
 
-    invoke-virtual {p1, v2}, Lbe/v0;->a(Lbe/a;)V
+    invoke-virtual {p1, v2}, Lbe/x0;->a(Lbe/a;)V
 
     .line 20
     sget-object p1, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
@@ -270,10 +270,10 @@
     move-result-object v2
 
     .line 23
-    check-cast v2, Lvc/t;
+    check-cast v2, Lvc/s;
 
     .line 24
-    iget-object v4, v2, Lvc/t;->h:Ljava/util/List;
+    iget-object v4, v2, Lvc/s;->h:Ljava/util/List;
 
     .line 25
     invoke-interface {v4}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
@@ -296,7 +296,7 @@
     check-cast v6, Lcom/supercell/id/model/IdConnectedSystem;
 
     .line 26
-    iget-object v6, v6, Lcom/supercell/id/model/IdConnectedSystem;->f:Ljava/lang/String;
+    iget-object v6, v6, Lcom/supercell/id/model/IdConnectedSystem;->g:Ljava/lang/String;
 
     .line 27
     sget-object v7, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
@@ -313,7 +313,7 @@
 
     move-result-object v7
 
-    invoke-static {v6, v7}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v6, v7}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v6
 
@@ -331,10 +331,10 @@
     new-instance v4, Lcom/supercell/id/IdFriend;
 
     .line 31
-    iget-object v5, v2, Lvc/t;->a:Lcom/supercell/id/model/IdSocialAccount;
+    iget-object v5, v2, Lvc/s;->a:Lcom/supercell/id/model/IdSocialAccount;
 
     .line 32
-    iget-object v6, v2, Lvc/t;->b:Ljava/lang/String;
+    iget-object v6, v2, Lvc/s;->b:Ljava/lang/String;
 
     if-eqz v6, :cond_b
 
@@ -345,7 +345,7 @@
 
     .line 33
     :goto_6
-    iget-object v2, v2, Lvc/t;->c:Lcom/supercell/id/model/ProfileImage;
+    iget-object v2, v2, Lvc/s;->c:Lcom/supercell/id/model/ProfileImage;
 
     .line 34
     invoke-direct {v4, v5, v6, v2}, Lcom/supercell/id/IdFriend;-><init>(Lcom/supercell/id/model/IdSocialAccount;Ljava/lang/String;Lcom/supercell/id/model/ProfileImage;)V
@@ -379,7 +379,7 @@
     if-eqz v3, :cond_f
 
     .line 37
-    iget-object p1, p0, Lbe/h$e;->f:Lbe/h;
+    iget-object p1, p0, Lbe/h$e;->g:Lbe/h;
 
     .line 38
     iget-object p1, p1, Lbe/h;->d:Lbe/r;
@@ -391,16 +391,16 @@
 
     invoke-direct {v1, v3}, Lbe/r$a$a;-><init>(Ljava/util/List;)V
 
-    invoke-virtual {p1, v1}, Lbe/v0;->a(Lbe/a;)V
+    invoke-virtual {p1, v1}, Lbe/x0;->a(Lbe/a;)V
 
     .line 40
     :cond_f
-    iget-object p1, p0, Lbe/h$e;->f:Lbe/h;
+    iget-object p1, p0, Lbe/h$e;->g:Lbe/h;
 
     invoke-static {p1, v0}, Lbe/h;->h(Lbe/h;Ljava/util/List;)V
 
     .line 41
-    sget-object p1, Lie/h;->a:Lie/h;
+    sget-object p1, Lie/i;->a:Lie/i;
 
     return-object p1
 .end method

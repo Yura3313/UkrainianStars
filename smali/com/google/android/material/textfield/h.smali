@@ -7,18 +7,18 @@
 
 
 # instance fields
-.field public final synthetic f:Landroid/widget/AutoCompleteTextView;
+.field public final synthetic g:Landroid/widget/AutoCompleteTextView;
 
-.field public final synthetic g:Lcom/google/android/material/textfield/g;
+.field public final synthetic h:Lcom/google/android/material/textfield/g;
 
 
 # direct methods
 .method public constructor <init>(Lcom/google/android/material/textfield/g;Landroid/widget/AutoCompleteTextView;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/google/android/material/textfield/h;->g:Lcom/google/android/material/textfield/g;
+    iput-object p1, p0, Lcom/google/android/material/textfield/h;->h:Lcom/google/android/material/textfield/g;
 
-    iput-object p2, p0, Lcom/google/android/material/textfield/h;->f:Landroid/widget/AutoCompleteTextView;
+    iput-object p2, p0, Lcom/google/android/material/textfield/h;->g:Landroid/widget/AutoCompleteTextView;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -42,7 +42,7 @@
     if-ne p1, v0, :cond_1
 
     .line 2
-    iget-object p1, p0, Lcom/google/android/material/textfield/h;->g:Lcom/google/android/material/textfield/g;
+    iget-object p1, p0, Lcom/google/android/material/textfield/h;->h:Lcom/google/android/material/textfield/g;
 
     .line 3
     invoke-virtual {p1}, Lcom/google/android/material/textfield/g;->j()Z
@@ -52,16 +52,16 @@
     if-eqz p1, :cond_0
 
     .line 4
-    iget-object p1, p0, Lcom/google/android/material/textfield/h;->g:Lcom/google/android/material/textfield/g;
+    iget-object p1, p0, Lcom/google/android/material/textfield/h;->h:Lcom/google/android/material/textfield/g;
 
     .line 5
     iput-boolean p2, p1, Lcom/google/android/material/textfield/g;->i:Z
 
     .line 6
     :cond_0
-    iget-object p1, p0, Lcom/google/android/material/textfield/h;->g:Lcom/google/android/material/textfield/g;
+    iget-object p1, p0, Lcom/google/android/material/textfield/h;->h:Lcom/google/android/material/textfield/g;
 
-    iget-object v0, p0, Lcom/google/android/material/textfield/h;->f:Landroid/widget/AutoCompleteTextView;
+    iget-object v0, p0, Lcom/google/android/material/textfield/h;->g:Landroid/widget/AutoCompleteTextView;
 
     invoke-static {p1, v0}, Lcom/google/android/material/textfield/g;->f(Lcom/google/android/material/textfield/g;Landroid/widget/AutoCompleteTextView;)V
 

@@ -186,7 +186,7 @@
     return-void
 .end method
 
-.method public final b(Lo/i;Lo/i;F)V
+.method public final b(Lo/h;Lo/h;F)V
     .locals 0
 
     if-nez p1, :cond_0
@@ -199,7 +199,7 @@
     if-nez p1, :cond_1
 
     .line 1
-    invoke-virtual {p1, p3}, Lo/i;->b(F)F
+    invoke-virtual {p1, p3}, Lo/h;->b(F)F
 
     move-result p1
 
@@ -209,7 +209,7 @@
     if-nez p2, :cond_2
 
     .line 2
-    invoke-virtual {p2, p3}, Lo/i;->b(F)F
+    invoke-virtual {p2, p3}, Lo/h;->b(F)F
 
     move-result p1
 

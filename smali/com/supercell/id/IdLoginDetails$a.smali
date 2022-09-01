@@ -43,7 +43,7 @@
     const-string v0, "parcel"
 
     .line 1
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 2
     new-instance v0, Lcom/supercell/id/IdLoginDetails;

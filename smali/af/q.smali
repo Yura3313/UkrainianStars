@@ -4,7 +4,7 @@
 
 
 # static fields
-.field public static final a:Lze/i1;
+.field public static final a:Lze/j1;
 
 
 # direct methods
@@ -14,7 +14,7 @@
     const-string v0, "kotlinx.coroutines.fast.service.loader"
 
     .line 1
-    invoke-static {v0}, Landroidx/lifecycle/b0;->d(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0}, Landroidx/lifecycle/b0;->e(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -46,13 +46,13 @@
 
     const-string v2, "ServiceLoader.load(\n    \u2026             ).iterator()"
 
-    invoke-static {v0, v2}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v2}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-static {v0}, Lxe/h;->d(Ljava/util/Iterator;)Lxe/d;
+    invoke-static {v0}, Lxe/h;->c(Ljava/util/Iterator;)Lxe/d;
 
     move-result-object v0
 
-    invoke-static {v0}, Lxe/k;->g(Lxe/d;)Ljava/util/List;
+    invoke-static {v0}, Lxe/k;->f(Lxe/d;)Ljava/util/List;
 
     move-result-object v0
 
@@ -138,7 +138,7 @@
 
     .line 17
     :try_start_1
-    invoke-interface {v3, v0}, Lkotlinx/coroutines/internal/MainDispatcherFactory;->createDispatcher(Ljava/util/List;)Lze/i1;
+    invoke-interface {v3, v0}, Lkotlinx/coroutines/internal/MainDispatcherFactory;->createDispatcher(Ljava/util/List;)Lze/j1;
 
     move-result-object v0
     :try_end_1
@@ -188,7 +188,7 @@
 
     .line 21
     :goto_2
-    sput-object v0, Laf/q;->a:Lze/i1;
+    sput-object v0, Laf/q;->a:Lze/j1;
 
     return-void
 .end method

@@ -1,374 +1,277 @@
 .class public final Ld2/e0;
-.super Ld2/d;
+.super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-basement@@17.5.0"
 
+# interfaces
+.implements Landroid/os/Parcelable$Creator;
 
-# instance fields
-.field public final c:Ljava/util/HashMap;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/HashMap<",
-            "Ld2/d$a;",
-            "Ld2/g0;",
-            ">;"
-        }
-    .end annotation
 
-    .annotation build Ljavax/annotation/concurrent/GuardedBy;
-        value = "connectionStatus"
-    .end annotation
-.end field
-
-.field public final d:Landroid/content/Context;
-
-.field public final e:Lq3/b;
-
-.field public final f:Lk2/a;
-
-.field public final g:J
-
-.field public final h:J
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Landroid/os/Parcelable$Creator<",
+        "Lcom/google/android/gms/common/internal/GetServiceRequest;",
+        ">;"
+    }
+.end annotation
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;)V
-    .locals 2
+.method public constructor <init>()V
+    .locals 0
 
-    .line 1
-    invoke-direct {p0}, Ld2/d;-><init>()V
-
-    .line 2
-    new-instance v0, Ljava/util/HashMap;
-
-    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
-
-    iput-object v0, p0, Ld2/e0;->c:Ljava/util/HashMap;
-
-    .line 3
-    invoke-virtual {p1}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
-
-    move-result-object v0
-
-    iput-object v0, p0, Ld2/e0;->d:Landroid/content/Context;
-
-    .line 4
-    new-instance v0, Lq3/b;
-
-    invoke-virtual {p1}, Landroid/content/Context;->getMainLooper()Landroid/os/Looper;
-
-    move-result-object p1
-
-    new-instance v1, Ld2/f0;
-
-    invoke-direct {v1, p0}, Ld2/f0;-><init>(Ld2/e0;)V
-
-    invoke-direct {v0, p1, v1}, Lq3/b;-><init>(Landroid/os/Looper;Landroid/os/Handler$Callback;)V
-
-    iput-object v0, p0, Ld2/e0;->e:Lq3/b;
-
-    .line 5
-    invoke-static {}, Lk2/a;->b()Lk2/a;
-
-    move-result-object p1
-
-    iput-object p1, p0, Ld2/e0;->f:Lk2/a;
-
-    const-wide/16 v0, 0x1388
-
-    .line 6
-    iput-wide v0, p0, Ld2/e0;->g:J
-
-    const-wide/32 v0, 0x493e0
-
-    .line 7
-    iput-wide v0, p0, Ld2/e0;->h:J
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final c(Ld2/d$a;Landroid/content/ServiceConnection;Ljava/lang/String;)Z
-    .locals 4
+.method public final createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
+    .locals 19
+
+    move-object/from16 v0, p1
 
     .line 1
-    iget-object v0, p0, Ld2/e0;->c:Ljava/util/HashMap;
+    invoke-static/range {p1 .. p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->x(Landroid/os/Parcel;)I
 
-    monitor-enter v0
+    move-result v1
 
-    .line 2
-    :try_start_0
-    iget-object v1, p0, Ld2/e0;->c:Ljava/util/HashMap;
-
-    invoke-virtual {v1, p1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v1
-
-    check-cast v1, Ld2/g0;
-
-    if-nez v1, :cond_0
-
-    .line 3
-    new-instance v1, Ld2/g0;
-
-    invoke-direct {v1, p0, p1}, Ld2/g0;-><init>(Ld2/e0;Ld2/d$a;)V
-
-    .line 4
-    iget-object v2, v1, Ld2/g0;->a:Ljava/util/HashMap;
-
-    invoke-virtual {v2, p2, p2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 5
-    invoke-virtual {v1, p3}, Ld2/g0;->a(Ljava/lang/String;)V
-
-    .line 6
-    iget-object p2, p0, Ld2/e0;->c:Ljava/util/HashMap;
-
-    invoke-virtual {p2, p1, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    goto :goto_0
-
-    .line 7
-    :cond_0
-    iget-object v2, p0, Ld2/e0;->e:Lq3/b;
+    const/4 v2, 0x0
 
     const/4 v3, 0x0
 
-    invoke-virtual {v2, v3, p1}, Landroid/os/Handler;->removeMessages(ILjava/lang/Object;)V
+    move-object v8, v3
 
-    .line 8
-    iget-object v2, v1, Ld2/g0;->a:Ljava/util/HashMap;
+    move-object v9, v8
 
-    invoke-virtual {v2, p2}, Ljava/util/HashMap;->containsKey(Ljava/lang/Object;)Z
+    move-object v10, v9
 
-    move-result v2
+    move-object v11, v10
 
-    if-nez v2, :cond_3
+    move-object v12, v11
 
-    .line 9
-    iget-object p1, v1, Ld2/g0;->a:Ljava/util/HashMap;
+    move-object v13, v12
 
-    invoke-virtual {p1, p2, p2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    move-object v14, v13
 
-    .line 10
-    iget p1, v1, Ld2/g0;->b:I
+    move-object/from16 v18, v14
 
-    const/4 v2, 0x1
+    const/4 v5, 0x0
 
-    if-eq p1, v2, :cond_2
+    const/4 v6, 0x0
 
-    const/4 p2, 0x2
+    const/4 v7, 0x0
 
-    if-eq p1, p2, :cond_1
+    const/4 v15, 0x0
 
-    goto :goto_0
+    const/16 v16, 0x0
 
-    .line 11
-    :cond_1
-    invoke-virtual {v1, p3}, Ld2/g0;->a(Ljava/lang/String;)V
-
-    goto :goto_0
-
-    .line 12
-    :cond_2
-    iget-object p1, v1, Ld2/g0;->f:Landroid/content/ComponentName;
-
-    .line 13
-    iget-object p3, v1, Ld2/g0;->d:Landroid/os/IBinder;
-
-    .line 14
-    check-cast p2, Lcom/google/android/gms/common/internal/BaseGmsClient$i;
-
-    invoke-virtual {p2, p1, p3}, Lcom/google/android/gms/common/internal/BaseGmsClient$i;->onServiceConnected(Landroid/content/ComponentName;Landroid/os/IBinder;)V
-
-    .line 15
-    :goto_0
-    iget-boolean p1, v1, Ld2/g0;->c:Z
-
-    .line 16
-    monitor-exit v0
-
-    return p1
-
-    .line 17
-    :cond_3
-    new-instance p2, Ljava/lang/IllegalStateException;
-
-    invoke-static {p1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object p1
-
-    invoke-virtual {p1}, Ljava/lang/String;->length()I
-
-    move-result p3
-
-    add-int/lit8 p3, p3, 0x51
-
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    invoke-direct {v1, p3}, Ljava/lang/StringBuilder;-><init>(I)V
-
-    const-string p3, "Trying to bind a GmsServiceConnection that was already connected before.  config="
-
-    invoke-virtual {v1, p3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p1
-
-    invoke-direct {p2, p1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
-    throw p2
-
-    :catchall_0
-    move-exception p1
-
-    .line 18
-    monitor-exit v0
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    throw p1
-.end method
-
-.method public final d(Ld2/d$a;Landroid/content/ServiceConnection;)V
-    .locals 3
-
-    .line 1
-    iget-object v0, p0, Ld2/e0;->c:Ljava/util/HashMap;
-
-    monitor-enter v0
+    const/16 v17, 0x0
 
     .line 2
-    :try_start_0
-    iget-object v1, p0, Ld2/e0;->c:Ljava/util/HashMap;
-
-    invoke-virtual {v1, p1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v1
-
-    check-cast v1, Ld2/g0;
-
-    if-eqz v1, :cond_2
-
-    .line 3
-    iget-object v2, v1, Ld2/g0;->a:Ljava/util/HashMap;
-
-    invoke-virtual {v2, p2}, Ljava/util/HashMap;->containsKey(Ljava/lang/Object;)Z
+    :goto_0
+    invoke-virtual/range {p1 .. p1}, Landroid/os/Parcel;->dataPosition()I
 
     move-result v2
 
-    if-eqz v2, :cond_1
+    if-ge v2, v1, :cond_0
+
+    .line 3
+    invoke-virtual/range {p1 .. p1}, Landroid/os/Parcel;->readInt()I
+
+    move-result v2
+
+    const v3, 0xffff
+
+    and-int/2addr v3, v2
+
+    packed-switch v3, :pswitch_data_0
 
     .line 4
-    iget-object v2, v1, Ld2/g0;->a:Ljava/util/HashMap;
+    :pswitch_0
+    invoke-static {v0, v2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->w(Landroid/os/Parcel;I)V
 
-    invoke-virtual {v2, p2}, Ljava/util/HashMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
+    goto :goto_0
 
     .line 5
-    iget-object p2, v1, Ld2/g0;->a:Ljava/util/HashMap;
+    :pswitch_1
+    invoke-static {v0, v2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->i(Landroid/os/Parcel;I)Ljava/lang/String;
 
-    invoke-virtual {p2}, Ljava/util/HashMap;->isEmpty()Z
+    move-result-object v18
 
-    move-result p2
-
-    if-eqz p2, :cond_0
+    goto :goto_0
 
     .line 6
-    iget-object p2, p0, Ld2/e0;->e:Lq3/b;
+    :pswitch_2
+    invoke-static {v0, v2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->o(Landroid/os/Parcel;I)Z
 
-    const/4 v1, 0x0
+    move-result v17
 
-    invoke-virtual {p2, v1, p1}, Landroid/os/Handler;->obtainMessage(ILjava/lang/Object;)Landroid/os/Message;
-
-    move-result-object p1
+    goto :goto_0
 
     .line 7
-    iget-object p2, p0, Ld2/e0;->e:Lq3/b;
+    :pswitch_3
+    invoke-static {v0, v2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->r(Landroid/os/Parcel;I)I
 
-    iget-wide v1, p0, Ld2/e0;->g:J
+    move-result v16
 
-    invoke-virtual {p2, p1, v1, v2}, Landroid/os/Handler;->sendMessageDelayed(Landroid/os/Message;J)Z
+    goto :goto_0
 
     .line 8
-    :cond_0
-    monitor-exit v0
+    :pswitch_4
+    invoke-static {v0, v2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->o(Landroid/os/Parcel;I)Z
 
-    return-void
+    move-result v15
+
+    goto :goto_0
 
     .line 9
-    :cond_1
-    new-instance p2, Ljava/lang/IllegalStateException;
-
-    invoke-static {p1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object p1
-
-    invoke-virtual {p1}, Ljava/lang/String;->length()I
-
-    move-result v1
-
-    add-int/lit8 v1, v1, 0x4c
-
-    new-instance v2, Ljava/lang/StringBuilder;
-
-    invoke-direct {v2, v1}, Ljava/lang/StringBuilder;-><init>(I)V
-
-    const-string v1, "Trying to unbind a GmsServiceConnection  that was not bound before.  config="
-
-    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p1
-
-    invoke-direct {p2, p1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
-    throw p2
+    :pswitch_5
+    sget-object v3, Lcom/google/android/gms/common/Feature;->CREATOR:Landroid/os/Parcelable$Creator;
 
     .line 10
-    :cond_2
-    new-instance p2, Ljava/lang/IllegalStateException;
+    invoke-static {v0, v2, v3}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->l(Landroid/os/Parcel;ILandroid/os/Parcelable$Creator;)[Ljava/lang/Object;
 
-    invoke-static {p1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+    move-result-object v2
 
-    move-result-object p1
+    move-object v14, v2
 
-    invoke-virtual {p1}, Ljava/lang/String;->length()I
+    check-cast v14, [Lcom/google/android/gms/common/Feature;
 
-    move-result v1
-
-    add-int/lit8 v1, v1, 0x32
-
-    new-instance v2, Ljava/lang/StringBuilder;
-
-    invoke-direct {v2, v1}, Ljava/lang/StringBuilder;-><init>(I)V
-
-    const-string v1, "Nonexistent connection status for service config: "
-
-    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p1
-
-    invoke-direct {p2, p1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
-    throw p2
-
-    :catchall_0
-    move-exception p1
+    goto :goto_0
 
     .line 11
-    monitor-exit v0
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+    :pswitch_6
+    sget-object v3, Lcom/google/android/gms/common/Feature;->CREATOR:Landroid/os/Parcelable$Creator;
 
-    throw p1
+    .line 12
+    invoke-static {v0, v2, v3}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->l(Landroid/os/Parcel;ILandroid/os/Parcelable$Creator;)[Ljava/lang/Object;
+
+    move-result-object v2
+
+    move-object v13, v2
+
+    check-cast v13, [Lcom/google/android/gms/common/Feature;
+
+    goto :goto_0
+
+    .line 13
+    :pswitch_7
+    sget-object v3, Landroid/accounts/Account;->CREATOR:Landroid/os/Parcelable$Creator;
+
+    .line 14
+    invoke-static {v0, v2, v3}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->h(Landroid/os/Parcel;ILandroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
+
+    move-result-object v2
+
+    move-object v12, v2
+
+    check-cast v12, Landroid/accounts/Account;
+
+    goto :goto_0
+
+    .line 15
+    :pswitch_8
+    invoke-static {v0, v2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->d(Landroid/os/Parcel;I)Landroid/os/Bundle;
+
+    move-result-object v11
+
+    goto :goto_0
+
+    .line 16
+    :pswitch_9
+    sget-object v3, Lcom/google/android/gms/common/api/Scope;->CREATOR:Landroid/os/Parcelable$Creator;
+
+    .line 17
+    invoke-static {v0, v2, v3}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->l(Landroid/os/Parcel;ILandroid/os/Parcelable$Creator;)[Ljava/lang/Object;
+
+    move-result-object v2
+
+    move-object v10, v2
+
+    check-cast v10, [Lcom/google/android/gms/common/api/Scope;
+
+    goto :goto_0
+
+    .line 18
+    :pswitch_a
+    invoke-static {v0, v2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->q(Landroid/os/Parcel;I)Landroid/os/IBinder;
+
+    move-result-object v9
+
+    goto :goto_0
+
+    .line 19
+    :pswitch_b
+    invoke-static {v0, v2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->i(Landroid/os/Parcel;I)Ljava/lang/String;
+
+    move-result-object v8
+
+    goto :goto_0
+
+    .line 20
+    :pswitch_c
+    invoke-static {v0, v2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->r(Landroid/os/Parcel;I)I
+
+    move-result v7
+
+    goto :goto_0
+
+    .line 21
+    :pswitch_d
+    invoke-static {v0, v2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->r(Landroid/os/Parcel;I)I
+
+    move-result v6
+
+    goto :goto_0
+
+    .line 22
+    :pswitch_e
+    invoke-static {v0, v2}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->r(Landroid/os/Parcel;I)I
+
+    move-result v5
+
+    goto :goto_0
+
+    .line 23
+    :cond_0
+    invoke-static {v0, v1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->n(Landroid/os/Parcel;I)V
+
+    .line 24
+    new-instance v0, Lcom/google/android/gms/common/internal/GetServiceRequest;
+
+    move-object v4, v0
+
+    invoke-direct/range {v4 .. v18}, Lcom/google/android/gms/common/internal/GetServiceRequest;-><init>(IIILjava/lang/String;Landroid/os/IBinder;[Lcom/google/android/gms/common/api/Scope;Landroid/os/Bundle;Landroid/accounts/Account;[Lcom/google/android/gms/common/Feature;[Lcom/google/android/gms/common/Feature;ZIZLjava/lang/String;)V
+
+    return-object v0
+
+    :pswitch_data_0
+    .packed-switch 0x1
+        :pswitch_e
+        :pswitch_d
+        :pswitch_c
+        :pswitch_b
+        :pswitch_a
+        :pswitch_9
+        :pswitch_8
+        :pswitch_7
+        :pswitch_0
+        :pswitch_6
+        :pswitch_5
+        :pswitch_4
+        :pswitch_3
+        :pswitch_2
+        :pswitch_1
+    .end packed-switch
+.end method
+
+.method public final synthetic newArray(I)[Ljava/lang/Object;
+    .locals 0
+
+    new-array p1, p1, [Lcom/google/android/gms/common/internal/GetServiceRequest;
+
+    return-object p1
 .end method

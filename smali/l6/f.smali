@@ -151,10 +151,10 @@
 
     .line 18
     :cond_1
-    iget v2, v0, Ll6/b;->f:I
+    iget v2, v0, Ll6/b;->g:I
 
     .line 19
-    iget v7, v0, Ll6/b;->g:I
+    iget v7, v0, Ll6/b;->h:I
 
     const/4 v8, 0x0
 
@@ -242,7 +242,7 @@
 
     .line 26
     :cond_6
-    sget-object v0, Lcom/google/zxing/NotFoundException;->h:Lcom/google/zxing/NotFoundException;
+    sget-object v0, Lcom/google/zxing/NotFoundException;->i:Lcom/google/zxing/NotFoundException;
 
     .line 27
     throw v0
@@ -330,7 +330,7 @@
 
     .line 34
     :cond_c
-    sget-object v0, Lcom/google/zxing/NotFoundException;->h:Lcom/google/zxing/NotFoundException;
+    sget-object v0, Lcom/google/zxing/NotFoundException;->i:Lcom/google/zxing/NotFoundException;
 
     .line 35
     throw v0
@@ -373,7 +373,7 @@
 
     .line 38
     :catch_0
-    sget-object v0, Lcom/google/zxing/NotFoundException;->h:Lcom/google/zxing/NotFoundException;
+    sget-object v0, Lcom/google/zxing/NotFoundException;->i:Lcom/google/zxing/NotFoundException;
 
     .line 39
     throw v0
@@ -390,7 +390,7 @@
 
     .line 40
     :cond_11
-    sget-object v0, Lcom/google/zxing/NotFoundException;->h:Lcom/google/zxing/NotFoundException;
+    sget-object v0, Lcom/google/zxing/NotFoundException;->i:Lcom/google/zxing/NotFoundException;
 
     .line 41
     goto :goto_d

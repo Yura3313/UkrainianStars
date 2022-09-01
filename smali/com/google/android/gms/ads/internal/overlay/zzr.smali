@@ -18,15 +18,15 @@
     .locals 0
 
     .line 1
-    invoke-static {}, Lk3/j6;->m()Z
+    invoke-static {}, Lcom/google/android/gms/ads/a;->k()Z
 
     const/4 p1, 0x3
 
     .line 2
-    iput p1, p0, Lcom/google/android/gms/ads/internal/overlay/zzc;->s:I
+    iput p1, p0, Lcom/google/android/gms/ads/internal/overlay/zzc;->t:I
 
     .line 3
-    iget-object p1, p0, Lcom/google/android/gms/ads/internal/overlay/zzc;->g:Landroid/app/Activity;
+    iget-object p1, p0, Lcom/google/android/gms/ads/internal/overlay/zzc;->h:Landroid/app/Activity;
 
     invoke-virtual {p1}, Landroid/app/Activity;->finish()V
 

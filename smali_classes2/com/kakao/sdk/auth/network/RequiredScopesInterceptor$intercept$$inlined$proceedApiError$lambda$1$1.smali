@@ -1,5 +1,5 @@
 .class final Lcom/kakao/sdk/auth/network/RequiredScopesInterceptor$intercept$$inlined$proceedApiError$lambda$1$1;
-.super Lse/h;
+.super Lse/i;
 .source "RequiredScopesInterceptor.kt"
 
 # interfaces
@@ -18,11 +18,11 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/p<",
         "Ljava/lang/String;",
         "Ljava/lang/Throwable;",
-        "Lie/h;",
+        "Lie/i;",
         ">;"
     }
 .end annotation
@@ -44,7 +44,7 @@
 
     const/4 p1, 0x2
 
-    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -61,7 +61,7 @@
 
     invoke-virtual {p0, p1, p2}, Lcom/kakao/sdk/auth/network/RequiredScopesInterceptor$intercept$$inlined$proceedApiError$lambda$1$1;->invoke(Ljava/lang/String;Ljava/lang/Throwable;)V
 
-    sget-object p1, Lie/h;->a:Lie/h;
+    sget-object p1, Lie/i;->a:Lie/i;
 
     return-object p1
 .end method
@@ -74,9 +74,9 @@
     .line 2
     iget-object p1, p0, Lcom/kakao/sdk/auth/network/RequiredScopesInterceptor$intercept$$inlined$proceedApiError$lambda$1$1;->this$0:Lcom/kakao/sdk/auth/network/RequiredScopesInterceptor$intercept$$inlined$proceedApiError$lambda$1;
 
-    iget-object v0, p1, Lcom/kakao/sdk/auth/network/RequiredScopesInterceptor$intercept$$inlined$proceedApiError$lambda$1;->$error:Lse/q;
+    iget-object v0, p1, Lcom/kakao/sdk/auth/network/RequiredScopesInterceptor$intercept$$inlined$proceedApiError$lambda$1;->$error:Lse/r;
 
-    iput-object p2, v0, Lse/q;->f:Ljava/lang/Object;
+    iput-object p2, v0, Lse/r;->g:Ljava/lang/Object;
 
     .line 3
     iget-object p1, p1, Lcom/kakao/sdk/auth/network/RequiredScopesInterceptor$intercept$$inlined$proceedApiError$lambda$1;->$latch:Ljava/util/concurrent/CountDownLatch;
@@ -111,7 +111,7 @@
 
     .line 8
     :cond_1
-    invoke-static {}, Lt3/e;->f()V
+    invoke-static {}, Lt3/h;->j()V
 
     const/4 p1, 0x0
 

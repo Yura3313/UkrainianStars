@@ -22,7 +22,7 @@
 
 
 # instance fields
-.field public final f:Ljava/lang/Object;
+.field public final g:Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "TT;"
@@ -42,7 +42,7 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lie/b;->f:Ljava/lang/Object;
+    iput-object p1, p0, Lie/b;->g:Ljava/lang/Object;
 
     return-void
 .end method
@@ -57,7 +57,7 @@
         }
     .end annotation
 
-    iget-object v0, p0, Lie/b;->f:Ljava/lang/Object;
+    iget-object v0, p0, Lie/b;->g:Ljava/lang/Object;
 
     return-object v0
 .end method
@@ -66,7 +66,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lie/b;->f:Ljava/lang/Object;
+    iget-object v0, p0, Lie/b;->g:Ljava/lang/Object;
 
     .line 2
     invoke-static {v0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;

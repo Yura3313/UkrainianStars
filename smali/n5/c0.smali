@@ -18,19 +18,19 @@
 
 
 # static fields
-.field public static final enum g:Ln5/c0;
-
 .field public static final enum h:Ln5/c0;
 
 .field public static final enum i:Ln5/c0;
 
 .field public static final enum j:Ln5/c0;
 
-.field public static final synthetic k:[Ln5/c0;
+.field public static final enum k:Ln5/c0;
+
+.field public static final synthetic l:[Ln5/c0;
 
 
 # instance fields
-.field public final f:I
+.field public final g:I
 
 
 # direct methods
@@ -46,7 +46,7 @@
 
     invoke-direct {v0, v1, v2, v2}, Ln5/c0;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Ln5/c0;->g:Ln5/c0;
+    sput-object v0, Ln5/c0;->h:Ln5/c0;
 
     .line 2
     new-instance v1, Ln5/c0;
@@ -57,7 +57,7 @@
 
     invoke-direct {v1, v3, v4, v4}, Ln5/c0;-><init>(Ljava/lang/String;II)V
 
-    sput-object v1, Ln5/c0;->h:Ln5/c0;
+    sput-object v1, Ln5/c0;->i:Ln5/c0;
 
     .line 3
     new-instance v3, Ln5/c0;
@@ -68,7 +68,7 @@
 
     invoke-direct {v3, v5, v6, v6}, Ln5/c0;-><init>(Ljava/lang/String;II)V
 
-    sput-object v3, Ln5/c0;->i:Ln5/c0;
+    sput-object v3, Ln5/c0;->j:Ln5/c0;
 
     .line 4
     new-instance v5, Ln5/c0;
@@ -81,7 +81,7 @@
 
     invoke-direct {v5, v7, v8, v9}, Ln5/c0;-><init>(Ljava/lang/String;II)V
 
-    sput-object v5, Ln5/c0;->j:Ln5/c0;
+    sput-object v5, Ln5/c0;->k:Ln5/c0;
 
     const/4 v7, 0x4
 
@@ -96,7 +96,7 @@
     aput-object v5, v7, v8
 
     .line 5
-    sput-object v7, Ln5/c0;->k:[Ln5/c0;
+    sput-object v7, Ln5/c0;->l:[Ln5/c0;
 
     return-void
 .end method
@@ -113,7 +113,7 @@
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 2
-    iput p3, p0, Ln5/c0;->f:I
+    iput p3, p0, Ln5/c0;->g:I
 
     return-void
 .end method
@@ -135,7 +135,7 @@
 .method public static values()[Ln5/c0;
     .locals 1
 
-    sget-object v0, Ln5/c0;->k:[Ln5/c0;
+    sget-object v0, Ln5/c0;->l:[Ln5/c0;
 
     invoke-virtual {v0}, [Ln5/c0;->clone()Ljava/lang/Object;
 
@@ -152,12 +152,12 @@
     .locals 2
 
     .line 1
-    sget-object v0, Ln5/c0;->j:Ln5/c0;
+    sget-object v0, Ln5/c0;->k:Ln5/c0;
 
     if-eq p0, v0, :cond_0
 
     .line 2
-    iget v0, p0, Ln5/c0;->f:I
+    iget v0, p0, Ln5/c0;->g:I
 
     return v0
 

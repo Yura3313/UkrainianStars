@@ -1,75 +1,81 @@
 .class public final Lod/g;
-.super Landroidx/recyclerview/widget/RecyclerView$q;
+.super Ljava/lang/Object;
 .source "OnboardingInviteFriendsPageFragment.kt"
+
+# interfaces
+.implements Landroid/view/View$OnLayoutChangeListener;
 
 
 # instance fields
 .field public final synthetic a:Landroid/view/View;
 
-.field public final synthetic b:Landroid/view/View;
+.field public final synthetic b:I
 
-.field public final synthetic c:Landroid/widget/FrameLayout;
-
-.field public final synthetic d:Lod/r;
-
-.field public final synthetic e:Lod/c;
+.field public final synthetic c:Lod/d;
 
 
 # direct methods
-.method public constructor <init>(Landroid/view/View;Landroid/view/View;Landroid/widget/FrameLayout;Lod/r;Lod/c;)V
+.method public constructor <init>(Landroid/view/View;ILod/d;)V
     .locals 0
 
     iput-object p1, p0, Lod/g;->a:Landroid/view/View;
 
-    iput-object p2, p0, Lod/g;->b:Landroid/view/View;
+    iput p2, p0, Lod/g;->b:I
 
-    iput-object p3, p0, Lod/g;->c:Landroid/widget/FrameLayout;
+    iput-object p3, p0, Lod/g;->c:Lod/d;
 
-    iput-object p4, p0, Lod/g;->d:Lod/r;
-
-    iput-object p5, p0, Lod/g;->e:Lod/c;
-
-    invoke-direct {p0}, Landroidx/recyclerview/widget/RecyclerView$q;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final b(Landroidx/recyclerview/widget/RecyclerView;II)V
-    .locals 7
+.method public final onLayoutChange(Landroid/view/View;IIIIIIII)V
+    .locals 0
 
-    const-string p2, "recyclerView"
+    .line 1
+    iget-object p1, p0, Lod/g;->c:Lod/d;
 
-    invoke-static {p1, p2}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    sget p2, Lcom/supercell/id/R$id;->friends_list:I
 
-    iget-object v0, p0, Lod/g;->e:Lod/c;
+    invoke-virtual {p1, p2}, Lod/d;->V0(I)Landroid/view/View;
 
-    iget-object v1, p0, Lod/g;->a:Landroid/view/View;
+    move-result-object p1
 
-    const-string p2, "this@apply"
+    check-cast p1, Landroidx/recyclerview/widget/RecyclerView;
 
-    invoke-static {v1, p2}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    if-eqz p1, :cond_0
 
-    iget-object v2, p0, Lod/g;->b:Landroid/view/View;
+    .line 2
+    iget-object p2, p0, Lod/g;->a:Landroid/view/View;
 
-    const-string p2, "selectAllBackground"
+    const-string p3, "selectAllBackground"
 
-    invoke-static {v2, p2}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, p3}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    iget-object v3, p0, Lod/g;->c:Landroid/widget/FrameLayout;
+    invoke-virtual {p2}, Landroid/view/View;->getBottom()I
 
-    iget-object v4, p0, Lod/g;->d:Lod/r;
+    move-result p2
 
-    const/4 p2, 0x0
+    iget p3, p0, Lod/g;->b:I
 
-    invoke-static {p1, p2}, Lae/y1;->a(Landroidx/recyclerview/widget/RecyclerView;I)I
+    add-int/2addr p2, p3
 
-    move-result v5
+    .line 3
+    invoke-static {p1}, Lae/z2;->f(Landroid/view/View;)I
 
-    move v6, p3
+    move-result p3
 
-    invoke-static/range {v0 .. v6}, Lod/c;->W0(Lod/c;Landroid/view/View;Landroid/view/View;Landroid/view/View;Lod/r;II)V
+    if-eq p2, p3, :cond_0
 
+    .line 4
+    new-instance p3, Lod/g$a;
+
+    invoke-direct {p3, p1, p2}, Lod/g$a;-><init>(Landroidx/recyclerview/widget/RecyclerView;I)V
+
+    invoke-virtual {p1, p3}, Landroid/view/View;->post(Ljava/lang/Runnable;)Z
+
+    :cond_0
     return-void
 .end method

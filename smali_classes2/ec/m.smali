@@ -7,13 +7,13 @@
 
 
 # instance fields
-.field public final f:Lec/g;
+.field public final g:Lec/g;
 
-.field public final g:Landroid/graphics/Bitmap;
+.field public final h:Landroid/graphics/Bitmap;
 
-.field public final h:Lec/h;
+.field public final i:Lec/h;
 
-.field public final i:Landroid/os/Handler;
+.field public final j:Landroid/os/Handler;
 
 
 # direct methods
@@ -24,16 +24,16 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lec/m;->f:Lec/g;
+    iput-object p1, p0, Lec/m;->g:Lec/g;
 
     .line 3
-    iput-object p2, p0, Lec/m;->g:Landroid/graphics/Bitmap;
+    iput-object p2, p0, Lec/m;->h:Landroid/graphics/Bitmap;
 
     .line 4
-    iput-object p3, p0, Lec/m;->h:Lec/h;
+    iput-object p3, p0, Lec/m;->i:Lec/h;
 
     .line 5
-    iput-object p4, p0, Lec/m;->i:Landroid/os/Handler;
+    iput-object p4, p0, Lec/m;->j:Landroid/os/Handler;
 
     return-void
 .end method
@@ -48,7 +48,7 @@
     new-array v0, v0, [Ljava/lang/Object;
 
     .line 1
-    iget-object v1, p0, Lec/m;->h:Lec/h;
+    iget-object v1, p0, Lec/m;->i:Lec/h;
 
     iget-object v1, v1, Lec/h;->b:Ljava/lang/String;
 
@@ -58,10 +58,10 @@
 
     const-string v1, "PostProcess image before displaying [%s]"
 
-    invoke-static {v1, v0}, Lae/w;->a(Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-static {v1, v0}, Lk3/f4;->a(Ljava/lang/String;[Ljava/lang/Object;)V
 
     .line 2
-    iget-object v0, p0, Lec/m;->h:Lec/h;
+    iget-object v0, p0, Lec/m;->i:Lec/h;
 
     iget-object v0, v0, Lec/h;->e:Lec/c;
 
@@ -76,16 +76,16 @@
     .line 5
     new-instance v1, Lec/b;
 
-    iget-object v2, p0, Lec/m;->h:Lec/h;
+    iget-object v2, p0, Lec/m;->i:Lec/h;
 
-    iget-object v3, p0, Lec/m;->f:Lec/g;
+    iget-object v3, p0, Lec/m;->g:Lec/g;
 
-    sget-object v4, Lfc/e;->h:Lfc/e;
+    sget-object v4, Lfc/e;->i:Lfc/e;
 
     invoke-direct {v1, v0, v2, v3, v4}, Lec/b;-><init>(Landroid/graphics/Bitmap;Lec/h;Lec/g;Lfc/e;)V
 
     .line 6
-    iget-object v0, p0, Lec/m;->h:Lec/h;
+    iget-object v0, p0, Lec/m;->i:Lec/h;
 
     iget-object v0, v0, Lec/h;->e:Lec/c;
 
@@ -93,9 +93,9 @@
     iget-boolean v0, v0, Lec/c;->s:Z
 
     .line 8
-    iget-object v2, p0, Lec/m;->i:Landroid/os/Handler;
+    iget-object v2, p0, Lec/m;->j:Landroid/os/Handler;
 
-    iget-object v3, p0, Lec/m;->f:Lec/g;
+    iget-object v3, p0, Lec/m;->g:Lec/g;
 
     invoke-static {v1, v0, v2, v3}, Lec/l;->j(Ljava/lang/Runnable;ZLandroid/os/Handler;Lec/g;)V
 

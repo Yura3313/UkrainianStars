@@ -18,9 +18,9 @@
 .method public static constructor <clinit>()V
     .locals 1
 
-    new-instance v0, Lt2/k;
+    new-instance v0, Lt2/j;
 
-    invoke-direct {v0}, Lt2/k;-><init>()V
+    invoke-direct {v0}, Lt2/j;-><init>()V
 
     sput-object v0, Lcom/google/android/gms/drive/query/internal/zzt;->CREATOR:Landroid/os/Parcelable$Creator;
 
@@ -37,14 +37,14 @@
 
 
 # virtual methods
-.method public final I1(Lef/t;)Ljava/lang/Object;
+.method public final f2(Lk3/r5;)Ljava/lang/Object;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<F:",
             "Ljava/lang/Object;",
             ">(",
-            "Lef/t;",
+            "Lk3/r5;",
             ")TF;"
         }
     .end annotation

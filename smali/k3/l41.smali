@@ -3,28 +3,22 @@
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lk3/xr0;
+.implements Lcom/google/android/gms/common/internal/BaseGmsClient$b;
 
 
-# static fields
-.field public static final a:Lk3/l41;
+# instance fields
+.field public final synthetic a:Lk3/qd;
+
+.field public final synthetic b:Lk3/g41;
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 1
-
-    new-instance v0, Lk3/l41;
-
-    invoke-direct {v0}, Lk3/l41;-><init>()V
-
-    sput-object v0, Lk3/l41;->a:Lk3/l41;
-
-    return-void
-.end method
-
-.method public constructor <init>()V
+.method public constructor <init>(Lk3/g41;Lk3/qd;)V
     .locals 0
+
+    iput-object p1, p0, Lk3/l41;->b:Lk3/g41;
+
+    iput-object p2, p0, Lk3/l41;->a:Lk3/qd;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -33,34 +27,41 @@
 
 
 # virtual methods
-.method public final a(I)Z
-    .locals 2
+.method public final S0(Lcom/google/android/gms/common/ConnectionResult;)V
+    .locals 3
 
-    const/4 v0, 0x1
+    .line 1
+    iget-object p1, p0, Lk3/l41;->b:Lk3/g41;
 
-    const/4 v1, 0x0
+    .line 2
+    iget-object p1, p1, Lk3/g41;->c:Ljava/lang/Object;
 
-    if-eqz p1, :cond_1
+    .line 3
+    monitor-enter p1
 
-    if-eq p1, v0, :cond_0
+    .line 4
+    :try_start_0
+    iget-object v0, p0, Lk3/l41;->a:Lk3/qd;
 
-    const/4 p1, 0x0
+    new-instance v1, Ljava/lang/RuntimeException;
 
-    goto :goto_0
+    const-string v2, "Connection failed."
 
-    :cond_0
-    const/4 p1, 0x2
+    invoke-direct {v1, v2}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;)V
 
-    goto :goto_0
+    invoke-virtual {v0, v1}, Lk3/qd;->b(Ljava/lang/Throwable;)Z
 
-    :cond_1
-    const/4 p1, 0x1
+    .line 5
+    monitor-exit p1
 
-    :goto_0
-    if-eqz p1, :cond_2
+    return-void
 
-    return v0
+    :catchall_0
+    move-exception v0
 
-    :cond_2
-    return v1
+    monitor-exit p1
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    throw v0
 .end method

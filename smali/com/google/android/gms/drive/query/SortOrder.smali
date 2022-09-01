@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field public final f:Ljava/util/List;
+.field public final g:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
@@ -25,7 +25,7 @@
     .end annotation
 .end field
 
-.field public final g:Z
+.field public final h:Z
 
 
 # direct methods
@@ -56,10 +56,10 @@
     invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lcom/google/android/gms/drive/query/SortOrder;->f:Ljava/util/List;
+    iput-object p1, p0, Lcom/google/android/gms/drive/query/SortOrder;->g:Ljava/util/List;
 
     .line 3
-    iput-boolean p2, p0, Lcom/google/android/gms/drive/query/SortOrder;->g:Z
+    iput-boolean p2, p0, Lcom/google/android/gms/drive/query/SortOrder;->h:Z
 
     return-void
 .end method
@@ -76,7 +76,7 @@
 
     new-array v1, v1, [Ljava/lang/Object;
 
-    iget-object v2, p0, Lcom/google/android/gms/drive/query/SortOrder;->f:Ljava/util/List;
+    iget-object v2, p0, Lcom/google/android/gms/drive/query/SortOrder;->g:Ljava/util/List;
 
     const-string v3, ","
 
@@ -89,7 +89,7 @@
 
     aput-object v2, v1, v3
 
-    iget-boolean v2, p0, Lcom/google/android/gms/drive/query/SortOrder;->g:Z
+    iget-boolean v2, p0, Lcom/google/android/gms/drive/query/SortOrder;->h:Z
 
     invoke-static {v2}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
@@ -120,7 +120,7 @@
     move-result v5
 
     .line 2
-    iget-object p2, p0, Lcom/google/android/gms/drive/query/SortOrder;->f:Ljava/util/List;
+    iget-object p2, p0, Lcom/google/android/gms/drive/query/SortOrder;->g:Ljava/util/List;
 
     const/4 v0, 0x1
 
@@ -129,7 +129,7 @@
     invoke-static {p1, v0, p2, v1}, Le2/b;->q(Landroid/os/Parcel;ILjava/util/List;Z)V
 
     .line 3
-    iget-boolean v3, p0, Lcom/google/android/gms/drive/query/SortOrder;->g:Z
+    iget-boolean v3, p0, Lcom/google/android/gms/drive/query/SortOrder;->h:Z
 
     const/4 v1, 0x2
 

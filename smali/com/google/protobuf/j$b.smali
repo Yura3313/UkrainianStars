@@ -744,7 +744,7 @@
     move-exception p1
 
     .line 8
-    iput-boolean v3, p1, Lcom/google/protobuf/InvalidProtocolBufferException;->f:Z
+    iput-boolean v3, p1, Lcom/google/protobuf/InvalidProtocolBufferException;->g:Z
 
     .line 9
     throw p1
@@ -821,7 +821,7 @@
     move-exception p1
 
     .line 19
-    iput-boolean v3, p1, Lcom/google/protobuf/InvalidProtocolBufferException;->f:Z
+    iput-boolean v3, p1, Lcom/google/protobuf/InvalidProtocolBufferException;->g:Z
 
     .line 20
     throw p1
@@ -1723,7 +1723,7 @@
     move-exception p1
 
     .line 11
-    iput-boolean v1, p1, Lcom/google/protobuf/InvalidProtocolBufferException;->f:Z
+    iput-boolean v1, p1, Lcom/google/protobuf/InvalidProtocolBufferException;->g:Z
 
     .line 12
     throw p1
@@ -2020,7 +2020,7 @@
     move-exception p1
 
     .line 17
-    iput-boolean v5, p1, Lcom/google/protobuf/InvalidProtocolBufferException;->f:Z
+    iput-boolean v5, p1, Lcom/google/protobuf/InvalidProtocolBufferException;->g:Z
 
     .line 18
     throw p1
@@ -2280,7 +2280,7 @@
     if-nez v0, :cond_1
 
     .line 5
-    sget-object v0, Lcom/google/protobuf/i;->g:Lcom/google/protobuf/i$h;
+    sget-object v0, Lcom/google/protobuf/i;->h:Lcom/google/protobuf/i$h;
 
     return-object v0
 
@@ -2295,7 +2295,7 @@
     if-eqz v1, :cond_2
 
     .line 7
-    sget-object v0, Lcom/google/protobuf/i;->g:Lcom/google/protobuf/i$h;
+    sget-object v0, Lcom/google/protobuf/i;->h:Lcom/google/protobuf/i$h;
 
     .line 8
     array-length v0, v1
@@ -2377,7 +2377,7 @@
 
     .line 20
     :cond_3
-    sget-object v1, Lcom/google/protobuf/i;->g:Lcom/google/protobuf/i$h;
+    sget-object v1, Lcom/google/protobuf/i;->h:Lcom/google/protobuf/i$h;
 
     .line 21
     new-instance v1, Lcom/google/protobuf/i$h;

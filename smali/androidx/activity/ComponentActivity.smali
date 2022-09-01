@@ -202,7 +202,7 @@
 
     move-result-object v0
 
-    invoke-static {v0, p0}, Landroidx/lifecycle/a0;->d(Landroid/view/View;Landroidx/lifecycle/j;)V
+    invoke-static {v0, p0}, Landroidx/lifecycle/a0;->a(Landroid/view/View;Landroidx/lifecycle/j;)V
 
     .line 2
     invoke-virtual {p0}, Landroid/app/Activity;->getWindow()Landroid/view/Window;
@@ -213,7 +213,7 @@
 
     move-result-object v0
 
-    invoke-static {v0, p0}, Landroidx/lifecycle/b0;->b(Landroid/view/View;Landroidx/lifecycle/z;)V
+    invoke-static {v0, p0}, Landroidx/lifecycle/b0;->c(Landroid/view/View;Landroidx/lifecycle/z;)V
 
     .line 3
     invoke-virtual {p0}, Landroid/app/Activity;->getWindow()Landroid/view/Window;
@@ -224,7 +224,7 @@
 
     move-result-object v0
 
-    invoke-static {v0, p0}, Landroidx/savedstate/d;->o(Landroid/view/View;Landroidx/savedstate/c;)V
+    invoke-static {v0, p0}, Le5/i;->n(Landroid/view/View;Landroidx/savedstate/c;)V
 
     return-void
 .end method
@@ -806,7 +806,7 @@
     .line 3
     check-cast v0, Landroidx/lifecycle/k;
 
-    sget-object v1, Landroidx/lifecycle/f$c;->h:Landroidx/lifecycle/f$c;
+    sget-object v1, Landroidx/lifecycle/f$c;->i:Landroidx/lifecycle/f$c;
 
     invoke-virtual {v0, v1}, Landroidx/lifecycle/k;->j(Landroidx/lifecycle/f$c;)V
 

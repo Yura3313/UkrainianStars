@@ -49,7 +49,7 @@
     .end annotation
 
     .line 1
-    invoke-static {p1}, Lbc/a;->d(Ljava/util/List;)Z
+    invoke-static {p1}, Lt5/a;->g(Ljava/util/List;)Z
 
     move-result v0
 
@@ -85,7 +85,7 @@
     check-cast v2, Lq8/d;
 
     .line 5
-    iget-object v2, v2, Lq8/d;->o:Lcom/helpshift/util/q;
+    iget-object v2, v2, Lq8/d;->p:Lcom/helpshift/util/q;
 
     invoke-virtual {v2}, Ljava/util/AbstractCollection;->size()I
 

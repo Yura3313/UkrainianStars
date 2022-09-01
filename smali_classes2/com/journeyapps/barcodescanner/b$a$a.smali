@@ -18,18 +18,18 @@
 
 
 # instance fields
-.field public final synthetic f:Lrb/b;
+.field public final synthetic g:Lrb/b;
 
-.field public final synthetic g:Lcom/journeyapps/barcodescanner/b$a;
+.field public final synthetic h:Lcom/journeyapps/barcodescanner/b$a;
 
 
 # direct methods
 .method public constructor <init>(Lcom/journeyapps/barcodescanner/b$a;Lrb/b;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/journeyapps/barcodescanner/b$a$a;->g:Lcom/journeyapps/barcodescanner/b$a;
+    iput-object p1, p0, Lcom/journeyapps/barcodescanner/b$a$a;->h:Lcom/journeyapps/barcodescanner/b$a;
 
-    iput-object p2, p0, Lcom/journeyapps/barcodescanner/b$a$a;->f:Lrb/b;
+    iput-object p2, p0, Lcom/journeyapps/barcodescanner/b$a$a;->g:Lrb/b;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -42,11 +42,11 @@
     .locals 15
 
     .line 1
-    iget-object v0, p0, Lcom/journeyapps/barcodescanner/b$a$a;->g:Lcom/journeyapps/barcodescanner/b$a;
+    iget-object v0, p0, Lcom/journeyapps/barcodescanner/b$a$a;->h:Lcom/journeyapps/barcodescanner/b$a;
 
     iget-object v0, v0, Lcom/journeyapps/barcodescanner/b$a;->a:Lcom/journeyapps/barcodescanner/b;
 
-    iget-object v1, p0, Lcom/journeyapps/barcodescanner/b$a$a;->f:Lrb/b;
+    iget-object v1, p0, Lcom/journeyapps/barcodescanner/b$a$a;->g:Lrb/b;
 
     .line 2
     iget-boolean v2, v0, Lcom/journeyapps/barcodescanner/b;->d:Z
@@ -302,7 +302,7 @@
     if-eqz v1, :cond_8
 
     .line 38
-    sget-object v6, Le6/k;->l:Le6/k;
+    sget-object v6, Le6/k;->m:Le6/k;
 
     invoke-interface {v1, v6}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
 
@@ -326,7 +326,7 @@
 
     .line 41
     :cond_5
-    sget-object v6, Le6/k;->f:Le6/k;
+    sget-object v6, Le6/k;->g:Le6/k;
 
     invoke-interface {v1, v6}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -347,7 +347,7 @@
 
     .line 43
     :cond_6
-    sget-object v6, Le6/k;->h:Le6/k;
+    sget-object v6, Le6/k;->i:Le6/k;
 
     invoke-interface {v1, v6}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -364,7 +364,7 @@
 
     .line 45
     :cond_7
-    sget-object v6, Le6/k;->g:Le6/k;
+    sget-object v6, Le6/k;->h:Le6/k;
 
     invoke-interface {v1, v6}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 

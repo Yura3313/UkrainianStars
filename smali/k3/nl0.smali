@@ -6,9 +6,7 @@
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "<I:",
-        "Ljava/lang/Object;",
-        "O:",
+        "<V:",
         "Ljava/lang/Object;",
         ">",
         "Ljava/lang/Object;"
@@ -17,16 +15,12 @@
 
 
 # virtual methods
-.method public abstract a(Ljava/lang/Object;)Lk3/em0;
-    .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
-        .end annotation
-    .end param
+.method public abstract a()Lk3/hm0;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "(TI;)",
-            "Lk3/em0<",
-            "TO;>;"
+            "()",
+            "Lk3/hm0<",
+            "TV;>;"
         }
     .end annotation
 

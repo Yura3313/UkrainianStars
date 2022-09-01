@@ -79,7 +79,7 @@
     const-string v0, "No stream for image [%s]"
 
     .line 6
-    invoke-static {v3, v6, v0, v2}, Lae/w;->c(ILjava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-static {v3, v6, v0, v2}, Lk3/f4;->d(ILjava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V
 
     return-object v6
 
@@ -158,7 +158,7 @@
     const-string v0, "Image can\'t be decoded [%s]"
 
     .line 19
-    invoke-static {v3, v6, v0, v2}, Lae/w;->c(ILjava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-static {v3, v6, v0, v2}, Lk3/f4;->d(ILjava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V
 
     goto/16 :goto_4
 
@@ -246,7 +246,7 @@
     move/from16 v17, v12
 
     .line 31
-    sget-object v12, Lfc/f;->f:Lfc/f;
+    sget-object v12, Lfc/f;->g:Lfc/f;
 
     if-ne v13, v12, :cond_5
 
@@ -255,7 +255,7 @@
     if-gez v12, :cond_6
 
     :cond_5
-    sget-object v12, Lfc/f;->g:Lfc/f;
+    sget-object v12, Lfc/f;->h:Lfc/f;
 
     if-ne v13, v12, :cond_7
 
@@ -373,7 +373,7 @@
     const-string v3, "Scale subsampled image (%1$s) to %2$s (scale = %3$.5f) [%4$s]"
 
     .line 38
-    invoke-static {v3, v4}, Lae/w;->a(Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-static {v3, v4}, Lk3/f4;->a(Ljava/lang/String;[Ljava/lang/Object;)V
 
     :cond_b
     if-eqz v2, :cond_c
@@ -404,7 +404,7 @@
     const-string v2, "Flip image horizontally [%s]"
 
     .line 42
-    invoke-static {v2, v3}, Lae/w;->a(Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-static {v2, v3}, Lk3/f4;->a(Ljava/lang/String;[Ljava/lang/Object;)V
 
     :cond_c
     if-eqz v6, :cond_d
@@ -441,7 +441,7 @@
     const-string v0, "Rotate image on %1$d\u00b0 [%2$s]"
 
     .line 46
-    invoke-static {v0, v2}, Lae/w;->a(Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-static {v0, v2}, Lk3/f4;->a(Ljava/lang/String;[Ljava/lang/Object;)V
 
     :cond_d
     const/4 v10, 0x0
@@ -534,7 +534,7 @@
 
     move-result-object p2
 
-    sget-object v4, Lic/b$a;->j:Lic/b$a;
+    sget-object v4, Lic/b$a;->k:Lic/b$a;
 
     if-ne p2, v4, :cond_0
 
@@ -552,7 +552,7 @@
     :try_start_0
     new-instance p2, Landroid/media/ExifInterface;
 
-    sget-object v4, Lic/b$a;->j:Lic/b$a;
+    sget-object v4, Lic/b$a;->k:Lic/b$a;
 
     invoke-virtual {v4, p1}, Lic/b$a;->c(Ljava/lang/String;)Ljava/lang/String;
 
@@ -610,7 +610,7 @@
     const-string v1, "Can\'t read EXIF tags from file [%s]"
 
     .line 10
-    invoke-static {p1, v2, v1, p2}, Lae/w;->c(ILjava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-static {p1, v2, v1, p2}, Lk3/f4;->d(ILjava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V
 
     :goto_2
     const/4 v1, 0x0
@@ -933,7 +933,7 @@
     const-string p1, "Subsample original image (%1$s) to %2$s (scale = %3$d) [%4$s]"
 
     .line 35
-    invoke-static {p1, v5}, Lae/w;->a(Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-static {p1, v5}, Lk3/f4;->a(Ljava/lang/String;[Ljava/lang/Object;)V
 
     .line 36
     :cond_b

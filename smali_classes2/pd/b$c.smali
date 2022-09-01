@@ -1,5 +1,5 @@
 .class public final Lpd/b$c;
-.super Lse/h;
+.super Lse/i;
 .source "ConnectedGamesFragment.kt"
 
 # interfaces
@@ -18,28 +18,28 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/l<",
         "Lbe/w;",
-        "Lie/h;",
+        "Lie/i;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic f:Lpd/b;
+.field public final synthetic g:Lpd/b;
 
 
 # direct methods
 .method public constructor <init>(Lpd/b;)V
     .locals 0
 
-    iput-object p1, p0, Lpd/b$c;->f:Lpd/b;
+    iput-object p1, p0, Lpd/b$c;->g:Lpd/b;
 
     const/4 p1, 0x1
 
-    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -57,10 +57,10 @@
 
     invoke-direct {v0, p0, p1}, Lpd/d;-><init>(Lpd/b$c;Lbe/w;)V
 
-    invoke-static {v0}, Lae/v2;->a(Lre/a;)V
+    invoke-static {v0}, Lae/u2;->a(Lre/a;)V
 
     .line 3
-    sget-object p1, Lie/h;->a:Lie/h;
+    sget-object p1, Lie/i;->a:Lie/i;
 
     return-object p1
 .end method

@@ -500,7 +500,7 @@
 
     .line 5
     :try_start_1
-    invoke-static {v0}, Lcom/google/android/play/core/assetpacks/y;->a(Landroid/database/Cursor;)Ljava/util/List;
+    invoke-static {v0}, La0/a;->c(Landroid/database/Cursor;)Ljava/util/List;
 
     move-result-object v2
     :try_end_1

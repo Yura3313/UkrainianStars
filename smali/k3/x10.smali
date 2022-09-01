@@ -1,98 +1,81 @@
 .class public final synthetic Lk3/x10;
 .super Ljava/lang/Object;
-.source "com.google.android.gms:play-services-ads@@19.3.0"
-
-# interfaces
-.implements Ljava/util/concurrent/Callable;
-
-
-# instance fields
-.field public final synthetic a:I
-
-.field public final b:Ljava/lang/Object;
+.source "R8$$SyntheticClass"
 
 
 # direct methods
-.method public synthetic constructor <init>(Ljava/lang/Object;I)V
-    .locals 0
+.method public static a(I)I
+    .locals 2
 
-    iput p2, p0, Lk3/x10;->a:I
+    const/4 v0, 0x1
 
-    iput-object p1, p0, Lk3/x10;->b:Ljava/lang/Object;
+    if-eqz p0, :cond_3
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    const/4 v1, 0x2
 
-    return-void
+    if-eq p0, v0, :cond_2
+
+    const/4 v0, 0x3
+
+    if-eq p0, v1, :cond_1
+
+    if-eq p0, v0, :cond_0
+
+    const/4 p0, 0x0
+
+    return p0
+
+    :cond_0
+    const/4 p0, 0x4
+
+    return p0
+
+    :cond_1
+    return v0
+
+    :cond_2
+    return v1
+
+    :cond_3
+    return v0
 .end method
 
+.method public static synthetic b(I)I
+    .locals 2
 
-# virtual methods
-.method public final call()Ljava/lang/Object;
-    .locals 3
+    const/4 v0, 0x1
 
-    iget v0, p0, Lk3/x10;->a:I
+    if-ne p0, v0, :cond_0
 
-    packed-switch v0, :pswitch_data_0
+    const/4 p0, 0x0
 
-    goto :goto_1
+    return p0
 
-    .line 1
-    :pswitch_0
-    iget-object v0, p0, Lk3/x10;->b:Ljava/lang/Object;
-
-    check-cast v0, Landroid/webkit/CookieManager;
-
-    if-nez v0, :cond_0
-
-    const-string v0, ""
-
-    goto :goto_0
-
-    .line 2
     :cond_0
-    sget-object v1, Lk3/q;->m0:Lk3/k;
+    const/4 v1, 0x2
 
-    .line 3
-    sget-object v2, Lk3/l51;->j:Lk3/l51;
+    if-ne p0, v1, :cond_1
 
-    iget-object v2, v2, Lk3/l51;->f:Lk3/n;
+    return v0
 
-    .line 4
-    invoke-virtual {v2, v1}, Lk3/n;->a(Lk3/h;)Ljava/lang/Object;
+    :cond_1
+    const/4 v0, 0x3
 
-    move-result-object v1
+    if-ne p0, v0, :cond_2
 
-    .line 5
-    check-cast v1, Ljava/lang/String;
+    return v1
 
-    invoke-virtual {v0, v1}, Landroid/webkit/CookieManager;->getCookie(Ljava/lang/String;)Ljava/lang/String;
+    :cond_2
+    const/4 v0, 0x4
 
-    move-result-object v0
+    if-ne p0, v0, :cond_3
 
-    :goto_0
-    return-object v0
+    const/16 p0, 0x3e8
 
-    .line 6
-    :goto_1
-    iget-object v0, p0, Lk3/x10;->b:Ljava/lang/Object;
+    return p0
 
-    check-cast v0, Lk3/cc0;
+    :cond_3
+    const/4 p0, 0x0
 
-    .line 7
-    new-instance v1, Lk3/o90;
-
-    iget-object v0, v0, Lk3/cc0;->b:Landroid/os/Bundle;
-
-    const/4 v2, 0x1
-
-    invoke-direct {v1, v0, v2}, Lk3/o90;-><init>(Ljava/lang/Object;I)V
-
-    return-object v1
-
-    nop
-
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+    throw p0
 .end method

@@ -1,71 +1,67 @@
 .class public final Lk3/xt;
 .super Ljava/lang/Object;
-.source "com.google.android.gms:play-services-gass@@19.3.0"
+.source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lk3/xr0;
+.implements Lk3/ut;
 
 
-# static fields
-.field public static final a:Lk3/xt;
+# instance fields
+.field public final a:Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/List<",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public final b:Lk3/wi0;
+
+.field public c:Z
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 1
-
-    new-instance v0, Lk3/xt;
-
-    invoke-direct {v0}, Lk3/xt;-><init>()V
-
-    sput-object v0, Lk3/xt;->a:Lk3/xt;
-
-    return-void
-.end method
-
-.method public constructor <init>()V
+.method public constructor <init>(Lk3/kg0;Lk3/wi0;)V
     .locals 0
 
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    iget-object p1, p1, Lk3/kg0;->o:Ljava/util/List;
+
+    iput-object p1, p0, Lk3/xt;->a:Ljava/util/List;
+
+    .line 3
+    iput-object p2, p0, Lk3/xt;->b:Lk3/wi0;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(I)Z
-    .locals 3
+.method public final a()V
+    .locals 2
 
-    const/4 v0, 0x2
+    .line 1
+    iget-boolean v0, p0, Lk3/xt;->c:Z
 
-    const/4 v1, 0x1
+    if-nez v0, :cond_0
 
-    const/4 v2, 0x0
+    .line 2
+    iget-object v0, p0, Lk3/xt;->b:Lk3/wi0;
 
-    if-eqz p1, :cond_1
+    iget-object v1, p0, Lk3/xt;->a:Ljava/util/List;
 
-    if-eq p1, v1, :cond_2
+    invoke-virtual {v0, v1}, Lk3/wi0;->e(Ljava/util/List;)V
 
-    if-eq p1, v0, :cond_0
-
-    const/4 v0, 0x0
-
-    goto :goto_0
-
-    :cond_0
-    const/4 v0, 0x3
-
-    goto :goto_0
-
-    :cond_1
     const/4 v0, 0x1
 
-    :cond_2
-    :goto_0
-    if-eqz v0, :cond_3
+    .line 3
+    iput-boolean v0, p0, Lk3/xt;->c:Z
 
-    return v1
-
-    :cond_3
-    return v2
+    :cond_0
+    return-void
 .end method

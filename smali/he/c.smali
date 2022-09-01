@@ -82,11 +82,11 @@
 
     const-string p1, "name"
 
-    invoke-static {p2, p1}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, p1}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string p1, "context"
 
-    invoke-static {p3, p1}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p3, p1}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     :try_start_0
@@ -124,7 +124,7 @@
 
     const-string v3, "clazz.getConstructor(*CONSTRUCTOR_SIGNATURE_2)"
 
-    invoke-static {v1, v3}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, v3}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     new-array v2, v2, [Ljava/lang/Object;
 
@@ -154,7 +154,7 @@
 
     const-string p1, "clazz.getConstructor(*CONSTRUCTOR_SIGNATURE_1)"
 
-    invoke-static {v1, p1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, p1}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     new-array v2, v0, [Landroid/content/Context;
 

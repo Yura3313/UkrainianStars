@@ -1,5 +1,5 @@
 .class public final synthetic Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$e;
-.super Lse/g;
+.super Lse/h;
 .source "PublicProfileFragment.kt"
 
 # interfaces
@@ -18,7 +18,7 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/g;",
+        "Lse/h;",
         "Lre/l<",
         "Ljava/lang/Integer;",
         "Ljava/lang/String;",
@@ -28,12 +28,12 @@
 
 
 # direct methods
-.method public constructor <init>(Lae/m2;)V
+.method public constructor <init>(Lae/l2;)V
     .locals 1
 
     const/4 v0, 0x1
 
-    invoke-direct {p0, v0, p1}, Lse/g;-><init>(ILjava/lang/Object;)V
+    invoke-direct {p0, v0, p1}, Lse/h;-><init>(ILjava/lang/Object;)V
 
     return-void
 .end method
@@ -51,9 +51,9 @@
 .method public final getOwner()Lwe/d;
     .locals 1
 
-    const-class v0, Lae/m2;
+    const-class v0, Lae/l2;
 
-    invoke-static {v0}, Lse/r;->a(Ljava/lang/Class;)Lwe/c;
+    invoke-static {v0}, Lse/s;->a(Ljava/lang/Class;)Lwe/c;
 
     move-result-object v0
 
@@ -79,12 +79,12 @@
     move-result p1
 
     .line 2
-    iget-object v0, p0, Lse/b;->receiver:Ljava/lang/Object;
+    iget-object v0, p0, Lse/c;->receiver:Ljava/lang/Object;
 
-    check-cast v0, Lae/m2;
+    check-cast v0, Lae/l2;
 
     .line 3
-    invoke-virtual {v0, p1}, Lae/m2;->x(I)Ljava/lang/String;
+    invoke-virtual {v0, p1}, Lae/l2;->x(I)Ljava/lang/String;
 
     move-result-object p1
 

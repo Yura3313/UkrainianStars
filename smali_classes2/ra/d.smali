@@ -31,7 +31,7 @@
 
 
 # virtual methods
-.method public final a(Landroidx/recyclerview/widget/RecyclerView$z;Lo8/y;)V
+.method public final a(Landroidx/recyclerview/widget/RecyclerView$z;Lo8/z;)V
     .locals 9
 
     .line 1
@@ -54,7 +54,7 @@
     move-result-object v1
 
     .line 4
-    iget v2, p2, Lo8/e;->H:I
+    iget v2, p2, Lo8/e;->I:I
 
     invoke-static {v2}, Lp/g;->b(I)I
 
@@ -95,7 +95,7 @@
 
     new-array v3, v3, [Ljava/lang/Object;
 
-    iget-object v6, p2, Lo8/n;->A:Ljava/lang/String;
+    iget-object v6, p2, Lo8/n;->B:Ljava/lang/String;
 
     aput-object v6, v3, v4
 
@@ -116,7 +116,7 @@
     move-result-object v1
 
     .line 8
-    invoke-static {v1}, Lcom/google/android/play/core/appupdate/g;->b(Ljava/lang/String;)Z
+    invoke-static {v1}, La5/b0;->d(Ljava/lang/String;)Z
 
     move-result v2
 
@@ -125,7 +125,7 @@
     const-string v2, "/"
 
     .line 9
-    invoke-static {v1, v2}, Lo/g;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v1, v2}, Lcom/supercell/titan/a;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
 
@@ -158,7 +158,7 @@
 
     new-array v7, v7, [Ljava/lang/Object;
 
-    iget-object v8, p2, Lo8/n;->A:Ljava/lang/String;
+    iget-object v8, p2, Lo8/n;->B:Ljava/lang/String;
 
     aput-object v8, v7, v4
 
@@ -195,7 +195,7 @@
 
     new-array v5, v5, [Ljava/lang/Object;
 
-    iget-object v7, p2, Lo8/n;->A:Ljava/lang/String;
+    iget-object v7, p2, Lo8/n;->B:Ljava/lang/String;
 
     aput-object v7, v5, v4
 
@@ -216,39 +216,39 @@
 
     .line 19
     :goto_2
-    iget-object v6, p1, Lra/d$a;->D:Landroid/view/View;
+    iget-object v6, p1, Lra/d$a;->E:Landroid/view/View;
 
     invoke-virtual {p0, v6, v3}, Lra/u;->m(Landroid/view/View;Z)V
 
     .line 20
-    iget-object v3, p1, Lra/d$a;->E:Landroid/widget/ImageView;
+    iget-object v3, p1, Lra/d$a;->F:Landroid/widget/ImageView;
 
     invoke-virtual {p0, v3, v4}, Lra/u;->m(Landroid/view/View;Z)V
 
     .line 21
-    iget-object v3, p1, Lra/d$a;->C:Landroid/widget/ProgressBar;
+    iget-object v3, p1, Lra/d$a;->D:Landroid/widget/ProgressBar;
 
     invoke-virtual {p0, v3, v5}, Lra/u;->m(Landroid/view/View;Z)V
 
     .line 22
-    iget-object v3, p1, Lra/d$a;->z:Landroid/widget/TextView;
+    iget-object v3, p1, Lra/d$a;->A:Landroid/widget/TextView;
 
-    iget-object v4, p2, Lo8/n;->A:Ljava/lang/String;
+    iget-object v4, p2, Lo8/n;->B:Ljava/lang/String;
 
     invoke-virtual {v3, v4}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 23
-    iget-object v3, p1, Lra/d$a;->A:Landroid/widget/TextView;
+    iget-object v3, p1, Lra/d$a;->B:Landroid/widget/TextView;
 
     invoke-virtual {v3, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 24
-    iget-object v1, p1, Lra/d$a;->z:Landroid/widget/TextView;
+    iget-object v1, p1, Lra/d$a;->A:Landroid/widget/TextView;
 
     invoke-virtual {v1, v0}, Landroid/widget/TextView;->setTextColor(I)V
 
     .line 25
-    iget-object v0, p1, Lra/d$a;->B:Landroid/view/View;
+    iget-object v0, p1, Lra/d$a;->C:Landroid/view/View;
 
     new-instance v1, Lra/c;
 
@@ -257,28 +257,28 @@
     invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 26
-    iget-object v0, p1, Lra/d$a;->B:Landroid/view/View;
+    iget-object v0, p1, Lra/d$a;->C:Landroid/view/View;
 
     invoke-virtual {v0, v2}, Landroid/view/View;->setContentDescription(Ljava/lang/CharSequence;)V
 
     .line 27
-    iget-object v0, p1, Lra/d$a;->y:Landroid/view/View;
+    iget-object v0, p1, Lra/d$a;->z:Landroid/view/View;
 
-    invoke-virtual {p0, p2}, Lra/u;->d(Lo8/y;)Ljava/lang/String;
+    invoke-virtual {p0, p2}, Lra/u;->d(Lo8/z;)Ljava/lang/String;
 
     move-result-object v1
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setContentDescription(Ljava/lang/CharSequence;)V
 
     .line 28
-    invoke-virtual {p2}, Lo8/y;->o()Z
+    invoke-virtual {p2}, Lo8/z;->o()Z
 
     move-result p2
 
     if-eqz p2, :cond_4
 
     .line 29
-    iget-object p1, p1, Lra/d$a;->B:Landroid/view/View;
+    iget-object p1, p1, Lra/d$a;->C:Landroid/view/View;
 
     invoke-virtual {p1}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 

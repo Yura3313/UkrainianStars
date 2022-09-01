@@ -79,7 +79,7 @@
     invoke-direct {p0}, Lcom/google/crypto/tink/shaded/protobuf/n;-><init>()V
 
     .line 2
-    sget-object v0, Lo5/d;->g:Lo5/d$f;
+    sget-object v0, Lo5/d;->h:Lo5/d$f;
 
     iput-object v0, p0, Ln5/i0;->hkdfSalt_:Lo5/d;
 
@@ -264,7 +264,7 @@
     if-nez v0, :cond_0
 
     .line 2
-    sget-object v0, Ln5/m0;->l:Ln5/m0;
+    sget-object v0, Ln5/m0;->m:Ln5/m0;
 
     :cond_0
     return-object v0
@@ -283,7 +283,7 @@
     if-nez v0, :cond_0
 
     .line 2
-    sget-object v0, Ln5/o0;->l:Ln5/o0;
+    sget-object v0, Ln5/o0;->m:Ln5/o0;
 
     :cond_0
     return-object v0

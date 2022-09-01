@@ -1,5 +1,5 @@
 .class public final Lrc/d0$e;
-.super Lse/h;
+.super Lse/i;
 .source "SocialApiClient.kt"
 
 # interfaces
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lrc/d0;->g(Ljava/util/List;)Lze/e0;
+    value = Lrc/d0;->g(Ljava/util/List;)Lze/f0;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,7 +18,7 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/l<",
         "Ljava/util/List<",
         "+",
@@ -27,7 +27,7 @@
         "+",
         "Lae/m<",
         "+",
-        "Lvc/t;",
+        "Lvc/s;",
         "+",
         "Ljava/lang/Exception;",
         ">;>;>;",
@@ -36,7 +36,7 @@
         "+",
         "Lae/m<",
         "+",
-        "Lvc/t;",
+        "Lvc/s;",
         "+",
         "Ljava/lang/Exception;",
         ">;>;>;"
@@ -45,7 +45,7 @@
 
 
 # static fields
-.field public static final f:Lrc/d0$e;
+.field public static final g:Lrc/d0$e;
 
 
 # direct methods
@@ -56,7 +56,7 @@
 
     invoke-direct {v0}, Lrc/d0$e;-><init>()V
 
-    sput-object v0, Lrc/d0$e;->f:Lrc/d0$e;
+    sput-object v0, Lrc/d0$e;->g:Lrc/d0$e;
 
     return-void
 .end method
@@ -66,7 +66,7 @@
 
     const/4 v0, 0x1
 
-    invoke-direct {p0, v0}, Lse/h;-><init>(I)V
+    invoke-direct {p0, v0}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -82,7 +82,7 @@
     const-string v0, "data"
 
     .line 2
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 3
     invoke-interface {p1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
@@ -119,7 +119,7 @@
     check-cast v0, Ljava/util/Map;
 
     .line 8
-    invoke-static {v0, v1}, Lje/t;->o(Ljava/util/Map;Ljava/util/Map;)Ljava/util/Map;
+    invoke-static {v0, v1}, Lje/t;->p(Ljava/util/Map;Ljava/util/Map;)Ljava/util/Map;
 
     move-result-object v0
 

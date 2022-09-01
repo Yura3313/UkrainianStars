@@ -2,100 +2,221 @@
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
-# interfaces
-.implements Landroid/content/DialogInterface$OnClickListener;
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lk3/k7$a;
+    }
+.end annotation
 
 
-# instance fields
-.field public final synthetic f:Ljava/lang/String;
+# static fields
+.field public static a:Z
 
-.field public final synthetic g:Ljava/lang/String;
-
-.field public final synthetic h:Lk3/h7;
+.field public static final b:Ljava/lang/String;
 
 
 # direct methods
-.method public constructor <init>(Lk3/h7;Ljava/lang/String;Ljava/lang/String;)V
+.method public static constructor <clinit>()V
+    .locals 2
+
+    const-string v0, "Volley"
+
+    const/4 v1, 0x2
+
+    .line 1
+    invoke-static {v0, v1}, Landroid/util/Log;->isLoggable(Ljava/lang/String;I)Z
+
+    move-result v0
+
+    sput-boolean v0, Lk3/k7;->a:Z
+
+    .line 2
+    const-class v0, Lk3/k7;
+
+    invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
+
+    move-result-object v0
+
+    sput-object v0, Lk3/k7;->b:Ljava/lang/String;
+
+    return-void
+.end method
+
+.method public constructor <init>()V
     .locals 0
-
-    iput-object p1, p0, Lk3/k7;->h:Lk3/h7;
-
-    iput-object p2, p0, Lk3/k7;->f:Ljava/lang/String;
-
-    iput-object p3, p0, Lk3/k7;->g:Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
-
-# virtual methods
-.method public final onClick(Landroid/content/DialogInterface;I)V
-    .locals 2
+.method public static varargs a(Ljava/lang/String;[Ljava/lang/Object;)V
+    .locals 1
 
     .line 1
-    iget-object p1, p0, Lk3/k7;->h:Lk3/h7;
+    sget-boolean v0, Lk3/k7;->a:Z
+
+    if-eqz v0, :cond_0
 
     .line 2
-    iget-object p1, p1, Lk3/h7;->i:Landroid/app/Activity;
+    invoke-static {p0, p1}, Lk3/k7;->b(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
 
-    const-string p2, "download"
+    :cond_0
+    return-void
+.end method
 
-    .line 3
-    invoke-virtual {p1, p2}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+.method public static varargs b(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+    .locals 7
+
+    .line 1
+    sget-object v0, Ljava/util/Locale;->US:Ljava/util/Locale;
+
+    invoke-static {v0, p0, p1}, Ljava/lang/String;->format(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object p0
+
+    .line 2
+    new-instance p1, Ljava/lang/Throwable;
+
+    invoke-direct {p1}, Ljava/lang/Throwable;-><init>()V
+
+    invoke-virtual {p1}, Ljava/lang/Throwable;->fillInStackTrace()Ljava/lang/Throwable;
 
     move-result-object p1
 
-    check-cast p1, Landroid/app/DownloadManager;
+    invoke-virtual {p1}, Ljava/lang/Throwable;->getStackTrace()[Ljava/lang/StackTraceElement;
+
+    move-result-object p1
+
+    const/4 v0, 0x2
+
+    const/4 v1, 0x2
+
+    .line 3
+    :goto_0
+    array-length v2, p1
+
+    const/4 v3, 0x1
+
+    if-ge v1, v2, :cond_1
 
     .line 4
-    :try_start_0
-    iget-object p2, p0, Lk3/k7;->f:Ljava/lang/String;
+    aget-object v2, p1, v1
 
-    iget-object v0, p0, Lk3/k7;->g:Ljava/lang/String;
+    invoke-virtual {v2}, Ljava/lang/StackTraceElement;->getClassName()Ljava/lang/String;
+
+    move-result-object v2
 
     .line 5
-    new-instance v1, Landroid/app/DownloadManager$Request;
+    sget-object v4, Lk3/k7;->b:Ljava/lang/String;
 
-    invoke-static {p2}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
+    invoke-virtual {v2, v4}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    move-result-object p2
+    move-result v2
 
-    invoke-direct {v1, p2}, Landroid/app/DownloadManager$Request;-><init>(Landroid/net/Uri;)V
+    if-nez v2, :cond_0
 
     .line 6
-    sget-object p2, Landroid/os/Environment;->DIRECTORY_PICTURES:Ljava/lang/String;
+    aget-object v2, p1, v1
 
-    invoke-virtual {v1, p2, v0}, Landroid/app/DownloadManager$Request;->setDestinationInExternalPublicDir(Ljava/lang/String;Ljava/lang/String;)Landroid/app/DownloadManager$Request;
+    invoke-virtual {v2}, Ljava/lang/StackTraceElement;->getClassName()Ljava/lang/String;
+
+    move-result-object v2
+
+    const/16 v4, 0x2e
 
     .line 7
-    sget-object p2, Li1/o;->B:Li1/o;
+    invoke-virtual {v2, v4}, Ljava/lang/String;->lastIndexOf(I)I
 
-    iget-object p2, p2, Li1/o;->e:Lk3/eb;
+    move-result v4
+
+    add-int/2addr v4, v3
+
+    invoke-virtual {v2, v4}, Ljava/lang/String;->substring(I)Ljava/lang/String;
+
+    move-result-object v2
+
+    const/16 v4, 0x24
 
     .line 8
-    invoke-virtual {v1}, Landroid/app/DownloadManager$Request;->allowScanningByMediaScanner()V
+    invoke-virtual {v2, v4}, Ljava/lang/String;->lastIndexOf(I)I
 
-    const/4 p2, 0x1
+    move-result v4
+
+    add-int/2addr v4, v3
+
+    invoke-virtual {v2, v4}, Ljava/lang/String;->substring(I)Ljava/lang/String;
+
+    move-result-object v2
 
     .line 9
-    invoke-virtual {v1, p2}, Landroid/app/DownloadManager$Request;->setNotificationVisibility(I)Landroid/app/DownloadManager$Request;
+    aget-object p1, p1, v1
+
+    invoke-virtual {p1}, Ljava/lang/StackTraceElement;->getMethodName()Ljava/lang/String;
+
+    move-result-object p1
 
     .line 10
-    invoke-virtual {p1, v1}, Landroid/app/DownloadManager;->enqueue(Landroid/app/DownloadManager$Request;)J
-    :try_end_0
-    .catch Ljava/lang/IllegalStateException; {:try_start_0 .. :try_end_0} :catch_0
+    invoke-static {v2, v3}, La1/e;->b(Ljava/lang/String;I)I
 
-    return-void
+    move-result v1
+
+    invoke-static {p1, v1}, La1/e;->b(Ljava/lang/String;I)I
+
+    move-result v1
+
+    const-string v4, "."
 
     .line 11
-    :catch_0
-    iget-object p1, p0, Lk3/k7;->h:Lk3/h7;
+    invoke-static {v1, v2, v4, p1}, Li1/j;->a(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
-    const-string p2, "Could not store picture."
+    move-result-object p1
 
-    invoke-virtual {p1, p2}, Lk3/m7;->g(Ljava/lang/String;)V
+    goto :goto_1
 
-    return-void
+    :cond_0
+    add-int/lit8 v1, v1, 0x1
+
+    goto :goto_0
+
+    :cond_1
+    const-string p1, "<unknown>"
+
+    .line 12
+    :goto_1
+    sget-object v1, Ljava/util/Locale;->US:Ljava/util/Locale;
+
+    const/4 v2, 0x3
+
+    new-array v2, v2, [Ljava/lang/Object;
+
+    const/4 v4, 0x0
+
+    invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
+
+    move-result-object v5
+
+    invoke-virtual {v5}, Ljava/lang/Thread;->getId()J
+
+    move-result-wide v5
+
+    invoke-static {v5, v6}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+
+    move-result-object v5
+
+    aput-object v5, v2, v4
+
+    aput-object p1, v2, v3
+
+    aput-object p0, v2, v0
+
+    const-string p0, "[%d] %s: %s"
+
+    invoke-static {v1, p0, v2}, Ljava/lang/String;->format(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object p0
+
+    return-object p0
 .end method

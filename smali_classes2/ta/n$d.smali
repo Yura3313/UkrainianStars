@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field public y:Landroid/widget/TextView;
+.field public z:Landroid/widget/TextView;
 
 
 # direct methods
@@ -34,7 +34,7 @@
 
     check-cast p1, Landroid/widget/TextView;
 
-    iput-object p1, p0, Lta/n$d;->y:Landroid/widget/TextView;
+    iput-object p1, p0, Lta/n$d;->z:Landroid/widget/TextView;
 
     return-void
 .end method
@@ -45,14 +45,14 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lta/n$d;->y:Landroid/widget/TextView;
+    iget-object v0, p0, Lta/n$d;->z:Landroid/widget/TextView;
 
     iget-object v1, p1, Lb9/a;->b:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 2
-    iget-object v0, p0, Landroidx/recyclerview/widget/RecyclerView$z;->f:Landroid/view/View;
+    iget-object v0, p0, Landroidx/recyclerview/widget/RecyclerView$z;->g:Landroid/view/View;
 
     new-instance v1, Lta/n$d$a;
 
@@ -61,7 +61,7 @@
     invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 3
-    iget-object p2, p0, Landroidx/recyclerview/widget/RecyclerView$z;->f:Landroid/view/View;
+    iget-object p2, p0, Landroidx/recyclerview/widget/RecyclerView$z;->g:Landroid/view/View;
 
     iget-object p1, p1, Lb9/a;->b:Ljava/lang/String;
 

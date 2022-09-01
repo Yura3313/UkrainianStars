@@ -1,5 +1,5 @@
 .class public final Lrc/t0;
-.super Lse/h;
+.super Lse/i;
 .source "SocialApiClient.kt"
 
 # interfaces
@@ -9,32 +9,55 @@
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/l<",
-        "Ljava/lang/Exception;",
+        "Ljava/util/List<",
+        "+",
         "Ljava/util/Map<",
         "Lcom/supercell/id/model/IdSocialAccount;",
         "+",
-        "Lae/m$b<",
+        "Lae/m<",
+        "+",
+        "Ljava/lang/Boolean;",
+        "+",
+        "Ljava/lang/Exception;",
+        ">;>;>;",
+        "Ljava/util/Map<",
+        "Lcom/supercell/id/model/IdSocialAccount;",
+        "+",
+        "Lae/m<",
+        "+",
+        "Ljava/lang/Boolean;",
+        "+",
         "Ljava/lang/Exception;",
         ">;>;>;"
     }
 .end annotation
 
 
-# instance fields
-.field public final synthetic f:Ljava/util/List;
+# static fields
+.field public static final g:Lrc/t0;
 
 
 # direct methods
-.method public constructor <init>(Ljava/util/List;)V
-    .locals 0
+.method public static constructor <clinit>()V
+    .locals 1
 
-    iput-object p1, p0, Lrc/t0;->f:Ljava/util/List;
+    new-instance v0, Lrc/t0;
 
-    const/4 p1, 0x1
+    invoke-direct {v0}, Lrc/t0;-><init>()V
 
-    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
+    sput-object v0, Lrc/t0;->g:Lrc/t0;
+
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .locals 1
+
+    const/4 v0, 0x1
+
+    invoke-direct {p0, v0}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -42,71 +65,76 @@
 
 # virtual methods
 .method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 4
+    .locals 2
 
     .line 1
-    check-cast p1, Ljava/lang/Exception;
+    check-cast p1, Ljava/util/List;
 
-    const-string v0, "error"
+    const-string v0, "data"
 
     .line 2
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 3
-    iget-object v0, p0, Lrc/t0;->f:Ljava/util/List;
+    invoke-interface {p1}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+
+    move-result-object p1
 
     .line 4
-    new-instance v1, Ljava/util/LinkedHashMap;
+    invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
 
-    const/16 v2, 0xa
+    move-result v0
 
-    invoke-static {v0, v2}, Lje/f;->q(Ljava/lang/Iterable;I)I
-
-    move-result v2
-
-    invoke-static {v2}, Lcom/google/android/play/core/assetpacks/o2;->i(I)I
-
-    move-result v2
-
-    const/16 v3, 0x10
-
-    if-ge v2, v3, :cond_0
-
-    const/16 v2, 0x10
-
-    :cond_0
-    invoke-direct {v1, v2}, Ljava/util/LinkedHashMap;-><init>(I)V
+    if-eqz v0, :cond_1
 
     .line 5
-    invoke-interface {v0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+    invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v0
 
-    :goto_0
-    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v2
-
-    if-eqz v2, :cond_1
-
-    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v2
-
     .line 6
-    move-object v3, v2
+    :goto_0
+    invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
 
-    check-cast v3, Lcom/supercell/id/model/IdSocialAccount;
+    move-result v1
+
+    if-eqz v1, :cond_0
 
     .line 7
-    new-instance v3, Lae/m$b;
+    invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
-    invoke-direct {v3, p1}, Lae/m$b;-><init>(Ljava/lang/Object;)V
+    move-result-object v1
 
-    invoke-interface {v1, v2, v3}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    check-cast v1, Ljava/util/Map;
+
+    check-cast v0, Ljava/util/Map;
+
+    .line 8
+    invoke-static {v0, v1}, Lje/t;->p(Ljava/util/Map;Ljava/util/Map;)Ljava/util/Map;
+
+    move-result-object v0
 
     goto :goto_0
 
+    .line 9
+    :cond_0
+    check-cast v0, Ljava/util/Map;
+
+    return-object v0
+
+    .line 10
     :cond_1
-    return-object v1
+    new-instance p1, Ljava/lang/UnsupportedOperationException;
+
+    const-string v0, "Empty collection can\'t be reduced."
+
+    invoke-direct {p1, v0}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
+
+    goto :goto_2
+
+    :goto_1
+    throw p1
+
+    :goto_2
+    goto :goto_1
 .end method

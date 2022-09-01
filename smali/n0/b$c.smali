@@ -75,7 +75,7 @@
     iget-object v0, p0, Ln0/b$c;->c:Lm/h;
 
     .line 2
-    iget v0, v0, Lm/h;->h:I
+    iget v0, v0, Lm/h;->i:I
 
     const/4 v1, 0x0
 
@@ -90,7 +90,7 @@
     iget-object v4, p0, Ln0/b$c;->c:Lm/h;
 
     .line 4
-    iget-object v4, v4, Lm/h;->g:[Ljava/lang/Object;
+    iget-object v4, v4, Lm/h;->h:[Ljava/lang/Object;
 
     aget-object v4, v4, v2
 
@@ -177,10 +177,10 @@
     iget-object v0, p0, Ln0/b$c;->c:Lm/h;
 
     .line 23
-    iget v2, v0, Lm/h;->h:I
+    iget v2, v0, Lm/h;->i:I
 
     .line 24
-    iget-object v4, v0, Lm/h;->g:[Ljava/lang/Object;
+    iget-object v4, v0, Lm/h;->h:[Ljava/lang/Object;
 
     const/4 v5, 0x0
 
@@ -196,7 +196,7 @@
 
     .line 26
     :cond_4
-    iput v1, v0, Lm/h;->h:I
+    iput v1, v0, Lm/h;->i:I
 
     return-void
 .end method

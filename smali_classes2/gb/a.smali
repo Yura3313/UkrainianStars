@@ -67,12 +67,12 @@
 
     .line 1
     :cond_0
-    iget-char v3, v1, Lgb/b;->f:C
+    iget-char v3, v1, Lgb/b;->g:C
 
     aput-char v3, v2, p3
 
     .line 2
-    iget-boolean v3, v1, Lgb/b;->g:Z
+    iget-boolean v3, v1, Lgb/b;->h:Z
 
     if-eqz v3, :cond_5
 
@@ -91,7 +91,7 @@
 
     .line 4
     :goto_0
-    iget-object v9, v1, Lgb/b;->h:Landroid/util/SparseArray;
+    iget-object v9, v1, Lgb/b;->i:Landroid/util/SparseArray;
 
     invoke-virtual {v9}, Landroid/util/SparseArray;->size()I
 
@@ -100,7 +100,7 @@
     if-ge v6, v9, :cond_1
 
     .line 5
-    iget-object v9, v1, Lgb/b;->h:Landroid/util/SparseArray;
+    iget-object v9, v1, Lgb/b;->i:Landroid/util/SparseArray;
 
     invoke-virtual {v9, v6}, Landroid/util/SparseArray;->valueAt(I)Ljava/lang/Object;
 
@@ -126,7 +126,7 @@
 
     .line 6
     :cond_1
-    iget-object v6, v1, Lgb/b;->h:Landroid/util/SparseArray;
+    iget-object v6, v1, Lgb/b;->i:Landroid/util/SparseArray;
 
     invoke-virtual {v6}, Landroid/util/SparseArray;->size()I
 
@@ -138,7 +138,7 @@
     invoke-direct {v9}, Ljava/util/HashMap;-><init>()V
 
     .line 8
-    iget-object v10, v1, Lgb/b;->h:Landroid/util/SparseArray;
+    iget-object v10, v1, Lgb/b;->i:Landroid/util/SparseArray;
 
     const/4 v11, -0x1
 
@@ -296,7 +296,7 @@
     const/4 v2, 0x0
 
     .line 17
-    iput-object v2, v1, Lgb/b;->h:Landroid/util/SparseArray;
+    iput-object v2, v1, Lgb/b;->i:Landroid/util/SparseArray;
 
     .line 18
     new-instance v2, Leb/a;
@@ -333,7 +333,7 @@
 
     .line 23
     :cond_5
-    iget-object v2, v1, Lgb/b;->i:Ljava/util/ArrayList;
+    iget-object v2, v1, Lgb/b;->j:Ljava/util/ArrayList;
 
     .line 24
     invoke-virtual {v2}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
@@ -368,7 +368,7 @@
     const/4 v2, 0x0
 
     .line 26
-    iput-object v2, v1, Lgb/b;->i:Ljava/util/ArrayList;
+    iput-object v2, v1, Lgb/b;->j:Ljava/util/ArrayList;
 
     return-void
 .end method

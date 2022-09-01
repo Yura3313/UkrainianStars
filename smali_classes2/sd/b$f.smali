@@ -1,5 +1,5 @@
 .class public final Lsd/b$f;
-.super Lse/h;
+.super Lse/i;
 .source "FriendsFragment.kt"
 
 # interfaces
@@ -18,28 +18,28 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/l<",
-        "Lae/e2;",
-        "Lie/h;",
+        "Lae/d2;",
+        "Lie/i;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic f:Lsd/b;
+.field public final synthetic g:Lsd/b;
 
 
 # direct methods
 .method public constructor <init>(Lsd/b;)V
     .locals 0
 
-    iput-object p1, p0, Lsd/b$f;->f:Lsd/b;
+    iput-object p1, p0, Lsd/b$f;->g:Lsd/b;
 
     const/4 p1, 0x1
 
-    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -50,21 +50,21 @@
     .locals 4
 
     .line 1
-    check-cast p1, Lae/e2;
+    check-cast p1, Lae/d2;
 
     const-string v0, "it"
 
     .line 2
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 3
-    iget-object v0, p0, Lsd/b$f;->f:Lsd/b;
+    iget-object v0, p0, Lsd/b$f;->g:Lsd/b;
 
     .line 4
-    iget-object v1, v0, Lsd/b;->b0:Ljava/util/List;
+    iget-object v1, v0, Lsd/b;->c0:Ljava/util/List;
 
     .line 5
-    iget-object v2, p1, Lae/e2;->a:Ljava/util/List;
+    iget-object v2, p1, Lae/d2;->a:Ljava/util/List;
 
     if-eq v1, v2, :cond_0
 
@@ -72,10 +72,10 @@
 
     .line 6
     :cond_0
-    iget-object v1, p1, Lae/e2;->b:Ljava/util/List;
+    iget-object v1, p1, Lae/d2;->b:Ljava/util/List;
 
     .line 7
-    iput-object v1, v0, Lsd/b;->b0:Ljava/util/List;
+    iput-object v1, v0, Lsd/b;->c0:Ljava/util/List;
 
     const/4 v2, 0x4
 
@@ -98,7 +98,7 @@
 
     .line 9
     :cond_1
-    iget-object v0, p0, Lsd/b$f;->f:Lsd/b;
+    iget-object v0, p0, Lsd/b$f;->g:Lsd/b;
 
     sget v1, Lcom/supercell/id/R$id;->progressBar:I
 
@@ -128,7 +128,7 @@
 
     .line 11
     :cond_3
-    iget-object v0, p0, Lsd/b$f;->f:Lsd/b;
+    iget-object v0, p0, Lsd/b$f;->g:Lsd/b;
 
     sget v1, Lcom/supercell/id/R$id;->progressBar:I
 
@@ -143,7 +143,7 @@
     .line 12
     :cond_4
     :goto_0
-    iget-object v0, p0, Lsd/b$f;->f:Lsd/b;
+    iget-object v0, p0, Lsd/b$f;->g:Lsd/b;
 
     sget v1, Lcom/supercell/id/R$id;->friendsList:I
 
@@ -182,10 +182,10 @@
     if-eqz v1, :cond_8
 
     .line 13
-    iget-object v0, p0, Lsd/b$f;->f:Lsd/b;
+    iget-object v0, p0, Lsd/b$f;->g:Lsd/b;
 
     .line 14
-    iget-object v0, v0, Lsd/b;->b0:Ljava/util/List;
+    iget-object v0, v0, Lsd/b;->c0:Ljava/util/List;
 
     if-eqz v0, :cond_7
 
@@ -193,14 +193,14 @@
 
     .line 15
     :cond_7
-    sget-object v0, Lje/l;->f:Lje/l;
+    sget-object v0, Lje/l;->g:Lje/l;
 
     .line 16
     :goto_3
-    iput-object v0, v1, Lae/c2;->d:Ljava/util/List;
+    iput-object v0, v1, Lae/b2;->d:Ljava/util/List;
 
     .line 17
-    iget-object p1, p1, Lae/e2;->c:Landroidx/recyclerview/widget/l$c;
+    iget-object p1, p1, Lae/d2;->c:Landroidx/recyclerview/widget/l$c;
 
     .line 18
     invoke-virtual {p1, v1}, Landroidx/recyclerview/widget/l$c;->a(Landroidx/recyclerview/widget/RecyclerView$e;)V
@@ -208,7 +208,7 @@
     .line 19
     :cond_8
     :goto_4
-    sget-object p1, Lie/h;->a:Lie/h;
+    sget-object p1, Lie/i;->a:Lie/i;
 
     return-object p1
 .end method

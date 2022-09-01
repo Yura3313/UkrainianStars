@@ -677,7 +677,7 @@
     iget-object v3, v2, Landroidx/fragment/app/j0$d;->c:Landroidx/fragment/app/Fragment;
 
     .line 7
-    iget-object v3, v3, Landroidx/fragment/app/Fragment;->M:Landroid/view/View;
+    iget-object v3, v3, Landroidx/fragment/app/Fragment;->N:Landroid/view/View;
 
     invoke-static {v3}, Landroidx/fragment/app/j0$d$c;->f(Landroid/view/View;)Landroidx/fragment/app/j0$d$c;
 
@@ -687,7 +687,7 @@
     iget-object v4, v2, Landroidx/fragment/app/j0$d;->a:Landroidx/fragment/app/j0$d$c;
 
     .line 9
-    sget-object v5, Landroidx/fragment/app/j0$d$c;->g:Landroidx/fragment/app/j0$d$c;
+    sget-object v5, Landroidx/fragment/app/j0$d$c;->h:Landroidx/fragment/app/j0$d$c;
 
     if-ne v4, v5, :cond_0
 
@@ -761,7 +761,7 @@
     iget-object v2, v1, Landroidx/fragment/app/j0$d;->b:Landroidx/fragment/app/j0$d$b;
 
     .line 3
-    sget-object v3, Landroidx/fragment/app/j0$d$b;->g:Landroidx/fragment/app/j0$d$b;
+    sget-object v3, Landroidx/fragment/app/j0$d$b;->h:Landroidx/fragment/app/j0$d$b;
 
     if-ne v2, v3, :cond_0
 
@@ -783,7 +783,7 @@
     move-result-object v2
 
     .line 7
-    sget-object v3, Landroidx/fragment/app/j0$d$b;->f:Landroidx/fragment/app/j0$d$b;
+    sget-object v3, Landroidx/fragment/app/j0$d$b;->g:Landroidx/fragment/app/j0$d$b;
 
     invoke-virtual {v1, v2, v3}, Landroidx/fragment/app/j0$d;->d(Landroidx/fragment/app/j0$d$c;Landroidx/fragment/app/j0$d$b;)V
 

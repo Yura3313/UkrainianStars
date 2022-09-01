@@ -23,7 +23,17 @@
 
 
 # static fields
-.field public static final A:Ljava/lang/ThreadLocal;
+.field public static final A:[Ljava/lang/Class;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "[",
+            "Ljava/lang/Class<",
+            "*>;"
+        }
+    .end annotation
+.end field
+
+.field public static final B:Ljava/lang/ThreadLocal;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/lang/ThreadLocal<",
@@ -36,7 +46,7 @@
     .end annotation
 .end field
 
-.field public static final B:Landroidx/coordinatorlayout/widget/CoordinatorLayout$g;
+.field public static final C:Landroidx/coordinatorlayout/widget/CoordinatorLayout$g;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Comparator<",
@@ -46,7 +56,7 @@
     .end annotation
 .end field
 
-.field public static final C:Le0/e;
+.field public static final D:Le0/e;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Le0/d;"
@@ -54,21 +64,11 @@
     .end annotation
 .end field
 
-.field public static final y:Ljava/lang/String;
-
-.field public static final z:[Ljava/lang/Class;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "[",
-            "Ljava/lang/Class<",
-            "*>;"
-        }
-    .end annotation
-.end field
+.field public static final z:Ljava/lang/String;
 
 
 # instance fields
-.field public final f:Ljava/util/ArrayList;
+.field public final g:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
@@ -78,20 +78,10 @@
     .end annotation
 .end field
 
-.field public final g:Lt/a;
+.field public final h:Lt/a;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lt/a<",
-            "Landroid/view/View;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field public final h:Ljava/util/ArrayList;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/List<",
             "Landroid/view/View;",
             ">;"
         }
@@ -108,35 +98,45 @@
     .end annotation
 .end field
 
-.field public final j:[I
+.field public final j:Ljava/util/ArrayList;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/List<",
+            "Landroid/view/View;",
+            ">;"
+        }
+    .end annotation
+.end field
 
 .field public final k:[I
 
-.field public l:Z
+.field public final l:[I
 
 .field public m:Z
 
-.field public n:[I
+.field public n:Z
 
-.field public o:Landroid/view/View;
+.field public o:[I
 
 .field public p:Landroid/view/View;
 
-.field public q:Landroidx/coordinatorlayout/widget/CoordinatorLayout$f;
+.field public q:Landroid/view/View;
 
-.field public r:Z
+.field public r:Landroidx/coordinatorlayout/widget/CoordinatorLayout$f;
 
-.field public s:Lf0/a0;
+.field public s:Z
 
-.field public t:Z
+.field public t:Lf0/a0;
 
-.field public u:Landroid/graphics/drawable/Drawable;
+.field public u:Z
 
-.field public v:Landroid/view/ViewGroup$OnHierarchyChangeListener;
+.field public v:Landroid/graphics/drawable/Drawable;
 
-.field public w:Landroidx/coordinatorlayout/widget/CoordinatorLayout$a;
+.field public w:Landroid/view/ViewGroup$OnHierarchyChangeListener;
 
-.field public final x:Lf0/m;
+.field public x:Landroidx/coordinatorlayout/widget/CoordinatorLayout$a;
+
+.field public final y:Lf0/m;
 
 
 # direct methods
@@ -165,7 +165,7 @@
     move-object v0, v1
 
     :goto_0
-    sput-object v0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->y:Ljava/lang/String;
+    sput-object v0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->z:Ljava/lang/String;
 
     .line 3
     sget v0, Landroid/os/Build$VERSION;->SDK_INT:I
@@ -179,13 +179,13 @@
 
     invoke-direct {v0}, Landroidx/coordinatorlayout/widget/CoordinatorLayout$g;-><init>()V
 
-    sput-object v0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->B:Landroidx/coordinatorlayout/widget/CoordinatorLayout$g;
+    sput-object v0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->C:Landroidx/coordinatorlayout/widget/CoordinatorLayout$g;
 
     goto :goto_1
 
     .line 5
     :cond_1
-    sput-object v1, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->B:Landroidx/coordinatorlayout/widget/CoordinatorLayout$g;
+    sput-object v1, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->C:Landroidx/coordinatorlayout/widget/CoordinatorLayout$g;
 
     :goto_1
     const/4 v0, 0x2
@@ -205,14 +205,14 @@
 
     aput-object v2, v0, v1
 
-    sput-object v0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->z:[Ljava/lang/Class;
+    sput-object v0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->A:[Ljava/lang/Class;
 
     .line 7
     new-instance v0, Ljava/lang/ThreadLocal;
 
     invoke-direct {v0}, Ljava/lang/ThreadLocal;-><init>()V
 
-    sput-object v0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->A:Ljava/lang/ThreadLocal;
+    sput-object v0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->B:Ljava/lang/ThreadLocal;
 
     .line 8
     new-instance v0, Le0/e;
@@ -221,7 +221,7 @@
 
     invoke-direct {v0, v1}, Le0/e;-><init>(I)V
 
-    sput-object v0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->C:Le0/e;
+    sput-object v0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->D:Le0/e;
 
     return-void
 .end method
@@ -248,47 +248,47 @@
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->f:Ljava/util/ArrayList;
+    iput-object v0, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->g:Ljava/util/ArrayList;
 
     .line 4
     new-instance v0, Lt/a;
 
     invoke-direct {v0}, Lt/a;-><init>()V
 
-    iput-object v0, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->g:Lt/a;
+    iput-object v0, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->h:Lt/a;
 
     .line 5
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->h:Ljava/util/ArrayList;
+    iput-object v0, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->i:Ljava/util/ArrayList;
 
     .line 6
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->i:Ljava/util/ArrayList;
+    iput-object v0, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->j:Ljava/util/ArrayList;
 
     const/4 v0, 0x2
 
     new-array v1, v0, [I
 
     .line 7
-    iput-object v1, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->j:[I
+    iput-object v1, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->k:[I
 
     new-array v0, v0, [I
 
     .line 8
-    iput-object v0, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->k:[I
+    iput-object v0, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->l:[I
 
     .line 9
     new-instance v0, Lf0/m;
 
     invoke-direct {v0}, Lf0/m;-><init>()V
 
-    iput-object v0, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->x:Lf0/m;
+    iput-object v0, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->y:Lf0/m;
 
     const/4 v0, 0x0
 
@@ -382,7 +382,7 @@
 
     move-result-object p2
 
-    iput-object p2, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->n:[I
+    iput-object p2, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->o:[I
 
     .line 19
     invoke-virtual {p1}, Landroid/content/res/Resources;->getDisplayMetrics()Landroid/util/DisplayMetrics;
@@ -392,7 +392,7 @@
     iget p1, p1, Landroid/util/DisplayMetrics;->density:F
 
     .line 20
-    iget-object p2, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->n:[I
+    iget-object p2, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->o:[I
 
     array-length p2, p2
 
@@ -400,7 +400,7 @@
     if-ge v0, p2, :cond_3
 
     .line 21
-    iget-object p3, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->n:[I
+    iget-object p3, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->o:[I
 
     aget v2, p3, v0
 
@@ -424,7 +424,7 @@
 
     move-result-object p1
 
-    iput-object p1, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->u:Landroid/graphics/drawable/Drawable;
+    iput-object p1, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->v:Landroid/graphics/drawable/Drawable;
 
     .line 23
     invoke-virtual {v1}, Landroid/content/res/TypedArray;->recycle()V
@@ -462,7 +462,7 @@
     .locals 1
 
     .line 1
-    sget-object v0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->C:Le0/e;
+    sget-object v0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->D:Le0/e;
 
     invoke-virtual {v0}, Le0/e;->a()Ljava/lang/Object;
 
@@ -541,7 +541,7 @@
     .locals 4
 
     .line 1
-    iget-object v0, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->s:Lf0/a0;
+    iget-object v0, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->t:Lf0/a0;
 
     invoke-static {v0, p1}, Le0/b;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
@@ -550,7 +550,7 @@
     if-nez v0, :cond_5
 
     .line 2
-    iput-object p1, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->s:Lf0/a0;
+    iput-object p1, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->t:Lf0/a0;
 
     .line 3
     invoke-virtual {p1}, Lf0/a0;->g()I
@@ -571,7 +571,7 @@
     const/4 v0, 0x0
 
     :goto_0
-    iput-boolean v0, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->t:Z
+    iput-boolean v0, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->u:Z
 
     if-nez v0, :cond_1
 
@@ -682,7 +682,7 @@
     if-eqz v0, :cond_2
 
     .line 4
-    iget-object v0, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->w:Landroidx/coordinatorlayout/widget/CoordinatorLayout$a;
+    iget-object v0, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->x:Landroidx/coordinatorlayout/widget/CoordinatorLayout$a;
 
     if-nez v0, :cond_1
 
@@ -691,11 +691,11 @@
 
     invoke-direct {v0, p0}, Landroidx/coordinatorlayout/widget/CoordinatorLayout$a;-><init>(Landroidx/coordinatorlayout/widget/CoordinatorLayout;)V
 
-    iput-object v0, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->w:Landroidx/coordinatorlayout/widget/CoordinatorLayout$a;
+    iput-object v0, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->x:Landroidx/coordinatorlayout/widget/CoordinatorLayout$a;
 
     .line 6
     :cond_1
-    iget-object v0, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->w:Landroidx/coordinatorlayout/widget/CoordinatorLayout$a;
+    iget-object v0, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->x:Landroidx/coordinatorlayout/widget/CoordinatorLayout$a;
 
     invoke-static {p0, v0}, Lf0/r;->K(Landroid/view/View;Lf0/n;)V
 
@@ -779,7 +779,7 @@
     move-result-object v0
 
     .line 3
-    iget-object v1, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->u:Landroid/graphics/drawable/Drawable;
+    iget-object v1, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->v:Landroid/graphics/drawable/Drawable;
 
     const/4 v2, 0x0
 
@@ -904,7 +904,7 @@
     .locals 4
 
     .line 1
-    iget-object v0, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->g:Lt/a;
+    iget-object v0, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->h:Lt/a;
 
     .line 2
     iget-object v0, v0, Lt/a;->b:Lm/g;
@@ -1053,7 +1053,7 @@
     invoke-virtual {p0}, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->y()V
 
     .line 2
-    iget-object v0, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->f:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->g:Ljava/util/ArrayList;
 
     invoke-static {v0}, Ljava/util/Collections;->unmodifiableList(Ljava/util/List;)Ljava/util/List;
 
@@ -1065,7 +1065,7 @@
 .method public final getLastWindowInsets()Lf0/a0;
     .locals 1
 
-    iget-object v0, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->s:Lf0/a0;
+    iget-object v0, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->t:Lf0/a0;
 
     return-object v0
 .end method
@@ -1074,7 +1074,7 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->x:Lf0/m;
+    iget-object v0, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->y:Lf0/m;
 
     .line 2
     iget v1, v0, Lf0/m;->a:I
@@ -1089,7 +1089,7 @@
 .method public getStatusBarBackground()Landroid/graphics/drawable/Drawable;
     .locals 1
 
-    iget-object v0, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->u:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->v:Landroid/graphics/drawable/Drawable;
 
     return-object v0
 .end method
@@ -1215,13 +1215,13 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->g:Lt/a;
+    iget-object v0, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->h:Lt/a;
 
     .line 2
     iget-object v1, v0, Lt/a;->b:Lm/g;
 
     .line 3
-    iget v1, v1, Lm/g;->h:I
+    iget v1, v1, Lm/g;->i:I
 
     const/4 v2, 0x0
 
@@ -1272,20 +1272,20 @@
 
     .line 8
     :cond_2
-    iget-object p1, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->i:Ljava/util/ArrayList;
+    iget-object p1, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->j:Ljava/util/ArrayList;
 
     invoke-interface {p1}, Ljava/util/List;->clear()V
 
     if-eqz v2, :cond_3
 
     .line 9
-    iget-object p1, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->i:Ljava/util/ArrayList;
+    iget-object p1, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->j:Ljava/util/ArrayList;
 
     invoke-interface {p1, v2}, Ljava/util/List;->addAll(Ljava/util/Collection;)Z
 
     .line 10
     :cond_3
-    iget-object p1, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->i:Ljava/util/ArrayList;
+    iget-object p1, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->j:Ljava/util/ArrayList;
 
     return-object p1
 .end method
@@ -1357,7 +1357,7 @@
     if-eqz v1, :cond_4
 
     .line 7
-    iget-object v7, v10, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->j:[I
+    iget-object v7, v10, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->k:[I
 
     aput v12, v7, v12
 
@@ -1388,7 +1388,7 @@
     invoke-virtual/range {v0 .. v9}, Landroidx/coordinatorlayout/widget/CoordinatorLayout$Behavior;->m(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;Landroid/view/View;IIIII[I)V
 
     .line 10
-    iget-object v0, v10, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->j:[I
+    iget-object v0, v10, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->k:[I
 
     if-lez p4, :cond_2
 
@@ -1414,7 +1414,7 @@
     if-lez p5, :cond_3
 
     .line 12
-    iget-object v0, v10, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->j:[I
+    iget-object v0, v10, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->k:[I
 
     const/4 v1, 0x1
 
@@ -1429,7 +1429,7 @@
     :cond_3
     const/4 v1, 0x1
 
-    iget-object v0, v10, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->j:[I
+    iget-object v0, v10, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->k:[I
 
     aget v0, v0, v1
 
@@ -1478,7 +1478,7 @@
 .method public final k(Landroid/view/View;IIIII)V
     .locals 8
 
-    iget-object v7, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->k:[I
+    iget-object v7, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->l:[I
 
     const/4 v6, 0x0
 
@@ -1584,12 +1584,12 @@
     .locals 0
 
     .line 1
-    iget-object p1, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->x:Lf0/m;
+    iget-object p1, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->y:Lf0/m;
 
     invoke-virtual {p1, p3, p4}, Lf0/m;->a(II)V
 
     .line 2
-    iput-object p2, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->p:Landroid/view/View;
+    iput-object p2, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->q:Landroid/view/View;
 
     .line 3
     invoke-virtual {p0}, Landroid/view/ViewGroup;->getChildCount()I
@@ -1628,7 +1628,7 @@
     .locals 6
 
     .line 1
-    iget-object v0, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->x:Lf0/m;
+    iget-object v0, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->y:Lf0/m;
 
     invoke-virtual {v0, p2}, Lf0/m;->b(I)V
 
@@ -1690,7 +1690,7 @@
     const/4 p1, 0x0
 
     .line 10
-    iput-object p1, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->p:Landroid/view/View;
+    iput-object p1, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->q:Landroid/view/View;
 
     return-void
 .end method
@@ -1764,7 +1764,7 @@
     if-eqz v1, :cond_4
 
     .line 7
-    iget-object v6, v8, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->j:[I
+    iget-object v6, v8, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->k:[I
 
     aput v10, v6, v10
 
@@ -1787,7 +1787,7 @@
     invoke-virtual/range {v0 .. v7}, Landroidx/coordinatorlayout/widget/CoordinatorLayout$Behavior;->k(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;Landroid/view/View;II[II)V
 
     .line 10
-    iget-object v0, v8, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->j:[I
+    iget-object v0, v8, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->k:[I
 
     if-lez p2, :cond_2
 
@@ -1811,7 +1811,7 @@
     move v12, v0
 
     .line 12
-    iget-object v0, v8, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->j:[I
+    iget-object v0, v8, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->k:[I
 
     if-lez p3, :cond_3
 
@@ -1870,12 +1870,12 @@
     invoke-virtual {p0, v0}, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->z(Z)V
 
     .line 3
-    iget-boolean v0, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->r:Z
+    iget-boolean v0, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->s:Z
 
     if-eqz v0, :cond_1
 
     .line 4
-    iget-object v0, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->q:Landroidx/coordinatorlayout/widget/CoordinatorLayout$f;
+    iget-object v0, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->r:Landroidx/coordinatorlayout/widget/CoordinatorLayout$f;
 
     if-nez v0, :cond_0
 
@@ -1884,7 +1884,7 @@
 
     invoke-direct {v0, p0}, Landroidx/coordinatorlayout/widget/CoordinatorLayout$f;-><init>(Landroidx/coordinatorlayout/widget/CoordinatorLayout;)V
 
-    iput-object v0, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->q:Landroidx/coordinatorlayout/widget/CoordinatorLayout$f;
+    iput-object v0, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->r:Landroidx/coordinatorlayout/widget/CoordinatorLayout$f;
 
     .line 6
     :cond_0
@@ -1893,13 +1893,13 @@
     move-result-object v0
 
     .line 7
-    iget-object v1, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->q:Landroidx/coordinatorlayout/widget/CoordinatorLayout$f;
+    iget-object v1, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->r:Landroidx/coordinatorlayout/widget/CoordinatorLayout$f;
 
     invoke-virtual {v0, v1}, Landroid/view/ViewTreeObserver;->addOnPreDrawListener(Landroid/view/ViewTreeObserver$OnPreDrawListener;)V
 
     .line 8
     :cond_1
-    iget-object v0, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->s:Lf0/a0;
+    iget-object v0, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->t:Lf0/a0;
 
     if-nez v0, :cond_2
 
@@ -1919,7 +1919,7 @@
     const/4 v0, 0x1
 
     .line 11
-    iput-boolean v0, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->m:Z
+    iput-boolean v0, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->n:Z
 
     return-void
 .end method
@@ -1936,11 +1936,11 @@
     invoke-virtual {p0, v0}, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->z(Z)V
 
     .line 3
-    iget-boolean v1, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->r:Z
+    iget-boolean v1, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->s:Z
 
     if-eqz v1, :cond_0
 
-    iget-object v1, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->q:Landroidx/coordinatorlayout/widget/CoordinatorLayout$f;
+    iget-object v1, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->r:Landroidx/coordinatorlayout/widget/CoordinatorLayout$f;
 
     if-eqz v1, :cond_0
 
@@ -1950,13 +1950,13 @@
     move-result-object v1
 
     .line 5
-    iget-object v2, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->q:Landroidx/coordinatorlayout/widget/CoordinatorLayout$f;
+    iget-object v2, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->r:Landroidx/coordinatorlayout/widget/CoordinatorLayout$f;
 
     invoke-virtual {v1, v2}, Landroid/view/ViewTreeObserver;->removeOnPreDrawListener(Landroid/view/ViewTreeObserver$OnPreDrawListener;)V
 
     .line 6
     :cond_0
-    iget-object v1, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->p:Landroid/view/View;
+    iget-object v1, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->q:Landroid/view/View;
 
     if-eqz v1, :cond_1
 
@@ -1965,7 +1965,7 @@
 
     .line 8
     :cond_1
-    iput-boolean v0, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->m:Z
+    iput-boolean v0, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->n:Z
 
     return-void
 .end method
@@ -1977,16 +1977,16 @@
     invoke-super {p0, p1}, Landroid/view/View;->onDraw(Landroid/graphics/Canvas;)V
 
     .line 2
-    iget-boolean v0, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->t:Z
+    iget-boolean v0, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->u:Z
 
     if-eqz v0, :cond_1
 
-    iget-object v0, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->u:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->v:Landroid/graphics/drawable/Drawable;
 
     if-eqz v0, :cond_1
 
     .line 3
-    iget-object v0, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->s:Lf0/a0;
+    iget-object v0, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->t:Lf0/a0;
 
     const/4 v1, 0x0
 
@@ -2005,7 +2005,7 @@
     if-lez v0, :cond_1
 
     .line 4
-    iget-object v2, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->u:Landroid/graphics/drawable/Drawable;
+    iget-object v2, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->v:Landroid/graphics/drawable/Drawable;
 
     invoke-virtual {p0}, Landroid/view/View;->getWidth()I
 
@@ -2014,7 +2014,7 @@
     invoke-virtual {v2, v1, v1, v3, v0}, Landroid/graphics/drawable/Drawable;->setBounds(IIII)V
 
     .line 5
-    iget-object v0, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->u:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->v:Landroid/graphics/drawable/Drawable;
 
     invoke-virtual {v0, p1}, Landroid/graphics/drawable/Drawable;->draw(Landroid/graphics/Canvas;)V
 
@@ -2071,7 +2071,7 @@
     move-result p1
 
     .line 3
-    iget-object p2, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->f:Ljava/util/ArrayList;
+    iget-object p2, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->g:Ljava/util/ArrayList;
 
     invoke-interface {p2}, Ljava/util/List;->size()I
 
@@ -2083,7 +2083,7 @@
     if-ge p3, p2, :cond_3
 
     .line 4
-    iget-object p4, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->f:Ljava/util/ArrayList;
+    iget-object p4, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->g:Ljava/util/ArrayList;
 
     invoke-interface {p4, p3}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -2164,13 +2164,13 @@
     move-result-object v3
 
     .line 4
-    iget-object v4, v6, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->g:Lt/a;
+    iget-object v4, v6, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->h:Lt/a;
 
     .line 5
     iget-object v5, v4, Lt/a;->b:Lm/g;
 
     .line 6
-    iget v5, v5, Lm/g;->h:I
+    iget v5, v5, Lm/g;->i:I
 
     const/4 v8, 0x0
 
@@ -2224,19 +2224,19 @@
 
     .line 9
     :goto_3
-    iget-boolean v1, v6, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->r:Z
+    iget-boolean v1, v6, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->s:Z
 
     if-eq v0, v1, :cond_8
 
     if-eqz v0, :cond_6
 
     .line 10
-    iget-boolean v0, v6, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->m:Z
+    iget-boolean v0, v6, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->n:Z
 
     if-eqz v0, :cond_5
 
     .line 11
-    iget-object v0, v6, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->q:Landroidx/coordinatorlayout/widget/CoordinatorLayout$f;
+    iget-object v0, v6, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->r:Landroidx/coordinatorlayout/widget/CoordinatorLayout$f;
 
     if-nez v0, :cond_4
 
@@ -2245,7 +2245,7 @@
 
     invoke-direct {v0, v6}, Landroidx/coordinatorlayout/widget/CoordinatorLayout$f;-><init>(Landroidx/coordinatorlayout/widget/CoordinatorLayout;)V
 
-    iput-object v0, v6, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->q:Landroidx/coordinatorlayout/widget/CoordinatorLayout$f;
+    iput-object v0, v6, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->r:Landroidx/coordinatorlayout/widget/CoordinatorLayout$f;
 
     .line 13
     :cond_4
@@ -2254,24 +2254,24 @@
     move-result-object v0
 
     .line 14
-    iget-object v1, v6, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->q:Landroidx/coordinatorlayout/widget/CoordinatorLayout$f;
+    iget-object v1, v6, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->r:Landroidx/coordinatorlayout/widget/CoordinatorLayout$f;
 
     invoke-virtual {v0, v1}, Landroid/view/ViewTreeObserver;->addOnPreDrawListener(Landroid/view/ViewTreeObserver$OnPreDrawListener;)V
 
     .line 15
     :cond_5
-    iput-boolean v2, v6, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->r:Z
+    iput-boolean v2, v6, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->s:Z
 
     goto :goto_4
 
     .line 16
     :cond_6
-    iget-boolean v0, v6, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->m:Z
+    iget-boolean v0, v6, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->n:Z
 
     if-eqz v0, :cond_7
 
     .line 17
-    iget-object v0, v6, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->q:Landroidx/coordinatorlayout/widget/CoordinatorLayout$f;
+    iget-object v0, v6, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->r:Landroidx/coordinatorlayout/widget/CoordinatorLayout$f;
 
     if-eqz v0, :cond_7
 
@@ -2281,13 +2281,13 @@
     move-result-object v0
 
     .line 19
-    iget-object v1, v6, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->q:Landroidx/coordinatorlayout/widget/CoordinatorLayout$f;
+    iget-object v1, v6, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->r:Landroidx/coordinatorlayout/widget/CoordinatorLayout$f;
 
     invoke-virtual {v0, v1}, Landroid/view/ViewTreeObserver;->removeOnPreDrawListener(Landroid/view/ViewTreeObserver$OnPreDrawListener;)V
 
     .line 20
     :cond_7
-    iput-boolean v7, v6, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->r:Z
+    iput-boolean v7, v6, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->s:Z
 
     .line 21
     :cond_8
@@ -2364,7 +2364,7 @@
     move-result v1
 
     .line 33
-    iget-object v3, v6, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->s:Lf0/a0;
+    iget-object v3, v6, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->t:Lf0/a0;
 
     if-eqz v3, :cond_a
 
@@ -2384,7 +2384,7 @@
 
     .line 35
     :goto_6
-    iget-object v2, v6, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->f:Ljava/util/ArrayList;
+    iget-object v2, v6, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->g:Ljava/util/ArrayList;
 
     invoke-interface {v2}, Ljava/util/List;->size()I
 
@@ -2402,7 +2402,7 @@
     if-ge v2, v5, :cond_17
 
     .line 36
-    iget-object v0, v6, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->f:Ljava/util/ArrayList;
+    iget-object v0, v6, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->g:Ljava/util/ArrayList;
 
     invoke-interface {v0, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -2560,13 +2560,13 @@
     if-nez v0, :cond_14
 
     .line 46
-    iget-object v0, v6, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->s:Lf0/a0;
+    iget-object v0, v6, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->t:Lf0/a0;
 
     invoke-virtual {v0}, Lf0/a0;->e()I
 
     move-result v0
 
-    iget-object v1, v6, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->s:Lf0/a0;
+    iget-object v1, v6, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->t:Lf0/a0;
 
     .line 47
     invoke-virtual {v1}, Lf0/a0;->f()I
@@ -2576,13 +2576,13 @@
     add-int/2addr v1, v0
 
     .line 48
-    iget-object v0, v6, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->s:Lf0/a0;
+    iget-object v0, v6, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->t:Lf0/a0;
 
     invoke-virtual {v0}, Lf0/a0;->g()I
 
     move-result v0
 
-    iget-object v2, v6, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->s:Lf0/a0;
+    iget-object v2, v6, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->t:Lf0/a0;
 
     .line 49
     invoke-virtual {v2}, Lf0/a0;->d()I
@@ -2947,7 +2947,7 @@
 .method public final onNestedScroll(Landroid/view/View;IIII)V
     .locals 8
 
-    iget-object v7, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->k:[I
+    iget-object v7, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->l:[I
 
     const/4 v6, 0x0
 
@@ -3003,7 +3003,7 @@
     invoke-super {p0, v0}, Landroid/view/View;->onRestoreInstanceState(Landroid/os/Parcelable;)V
 
     .line 5
-    iget-object p1, p1, Landroidx/coordinatorlayout/widget/CoordinatorLayout$SavedState;->h:Landroid/util/SparseArray;
+    iget-object p1, p1, Landroidx/coordinatorlayout/widget/CoordinatorLayout$SavedState;->i:Landroid/util/SparseArray;
 
     const/4 v0, 0x0
 
@@ -3130,7 +3130,7 @@
 
     .line 10
     :cond_1
-    iput-object v1, v0, Landroidx/coordinatorlayout/widget/CoordinatorLayout$SavedState;->h:Landroid/util/SparseArray;
+    iput-object v1, v0, Landroidx/coordinatorlayout/widget/CoordinatorLayout$SavedState;->i:Landroid/util/SparseArray;
 
     return-object v0
 .end method
@@ -3170,7 +3170,7 @@
     move-result v2
 
     .line 2
-    iget-object v3, v0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->o:Landroid/view/View;
+    iget-object v3, v0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->p:Landroid/view/View;
 
     const/4 v4, 0x1
 
@@ -3191,7 +3191,7 @@
 
     .line 3
     :goto_0
-    iget-object v6, v0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->o:Landroid/view/View;
+    iget-object v6, v0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->p:Landroid/view/View;
 
     invoke-virtual {v6}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
@@ -3205,7 +3205,7 @@
     if-eqz v6, :cond_1
 
     .line 5
-    iget-object v7, v0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->o:Landroid/view/View;
+    iget-object v7, v0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->p:Landroid/view/View;
 
     invoke-virtual {v6, v0, v7, v1}, Landroidx/coordinatorlayout/widget/CoordinatorLayout$Behavior;->s(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Landroid/view/View;Landroid/view/MotionEvent;)Z
 
@@ -3218,7 +3218,7 @@
 
     .line 6
     :goto_1
-    iget-object v7, v0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->o:Landroid/view/View;
+    iget-object v7, v0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->p:Landroid/view/View;
 
     const/4 v8, 0x0
 
@@ -3295,7 +3295,7 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->g:Lt/a;
+    iget-object v0, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->h:Lt/a;
 
     .line 2
     iget-object v0, v0, Lt/a;->b:Lm/g;
@@ -3311,20 +3311,20 @@
     check-cast p1, Ljava/util/List;
 
     .line 5
-    iget-object v0, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->i:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->j:Ljava/util/ArrayList;
 
     invoke-interface {v0}, Ljava/util/List;->clear()V
 
     if-eqz p1, :cond_0
 
     .line 6
-    iget-object v0, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->i:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->j:Ljava/util/ArrayList;
 
     invoke-interface {v0, p1}, Ljava/util/List;->addAll(Ljava/util/Collection;)Z
 
     .line 7
     :cond_0
-    iget-object p1, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->i:Ljava/util/ArrayList;
+    iget-object p1, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->j:Ljava/util/ArrayList;
 
     return-object p1
 .end method
@@ -3487,7 +3487,7 @@
     .locals 3
 
     .line 1
-    iget-object v0, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->n:[I
+    iget-object v0, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->o:[I
 
     const/4 v1, 0x0
 
@@ -3566,7 +3566,7 @@
     if-eqz p1, :cond_0
 
     .line 2
-    iget-boolean p1, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->l:Z
+    iget-boolean p1, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->m:Z
 
     if-nez p1, :cond_0
 
@@ -3578,7 +3578,7 @@
     const/4 p1, 0x1
 
     .line 4
-    iput-boolean p1, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->l:Z
+    iput-boolean p1, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->m:Z
 
     :cond_0
     return-void
@@ -3716,7 +3716,7 @@
 .method public setOnHierarchyChangeListener(Landroid/view/ViewGroup$OnHierarchyChangeListener;)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->v:Landroid/view/ViewGroup$OnHierarchyChangeListener;
+    iput-object p1, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->w:Landroid/view/ViewGroup$OnHierarchyChangeListener;
 
     return-void
 .end method
@@ -3725,7 +3725,7 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->u:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->v:Landroid/graphics/drawable/Drawable;
 
     if-eq v0, p1, :cond_5
 
@@ -3745,7 +3745,7 @@
     move-result-object v1
 
     :cond_1
-    iput-object v1, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->u:Landroid/graphics/drawable/Drawable;
+    iput-object v1, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->v:Landroid/graphics/drawable/Drawable;
 
     if-eqz v1, :cond_4
 
@@ -3757,7 +3757,7 @@
     if-eqz p1, :cond_2
 
     .line 5
-    iget-object p1, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->u:Landroid/graphics/drawable/Drawable;
+    iget-object p1, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->v:Landroid/graphics/drawable/Drawable;
 
     invoke-virtual {p0}, Landroid/view/View;->getDrawableState()[I
 
@@ -3767,7 +3767,7 @@
 
     .line 6
     :cond_2
-    iget-object p1, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->u:Landroid/graphics/drawable/Drawable;
+    iget-object p1, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->v:Landroid/graphics/drawable/Drawable;
 
     .line 7
     sget-object v0, Lf0/r;->a:Ljava/util/WeakHashMap;
@@ -3781,7 +3781,7 @@
     invoke-static {p1, v0}, Ly/a;->l(Landroid/graphics/drawable/Drawable;I)Z
 
     .line 10
-    iget-object p1, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->u:Landroid/graphics/drawable/Drawable;
+    iget-object p1, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->v:Landroid/graphics/drawable/Drawable;
 
     invoke-virtual {p0}, Landroid/view/View;->getVisibility()I
 
@@ -3802,7 +3802,7 @@
     invoke-virtual {p1, v0, v1}, Landroid/graphics/drawable/Drawable;->setVisible(ZZ)Z
 
     .line 11
-    iget-object p1, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->u:Landroid/graphics/drawable/Drawable;
+    iget-object p1, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->v:Landroid/graphics/drawable/Drawable;
 
     invoke-virtual {p1, p0}, Landroid/graphics/drawable/Drawable;->setCallback(Landroid/graphics/drawable/Drawable$Callback;)V
 
@@ -3872,7 +3872,7 @@
 
     .line 2
     :goto_0
-    iget-object v1, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->u:Landroid/graphics/drawable/Drawable;
+    iget-object v1, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->v:Landroid/graphics/drawable/Drawable;
 
     if-eqz v1, :cond_1
 
@@ -3883,7 +3883,7 @@
     if-eq v1, p1, :cond_1
 
     .line 3
-    iget-object v1, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->u:Landroid/graphics/drawable/Drawable;
+    iget-object v1, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->v:Landroid/graphics/drawable/Drawable;
 
     invoke-virtual {v1, p1, v0}, Landroid/graphics/drawable/Drawable;->setVisible(ZZ)Z
 
@@ -3914,7 +3914,7 @@
     invoke-virtual {v0}, Landroid/graphics/Rect;->setEmpty()V
 
     .line 5
-    sget-object p2, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->C:Le0/e;
+    sget-object p2, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->D:Le0/e;
 
     invoke-virtual {p2, v0}, Le0/e;->b(Ljava/lang/Object;)Z
 
@@ -3927,7 +3927,7 @@
     invoke-virtual {v0}, Landroid/graphics/Rect;->setEmpty()V
 
     .line 7
-    sget-object p2, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->C:Le0/e;
+    sget-object p2, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->D:Le0/e;
 
     invoke-virtual {p2, v0}, Le0/e;->b(Ljava/lang/Object;)Z
 
@@ -3951,7 +3951,7 @@
     move-result v9
 
     .line 3
-    iget-object v0, v7, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->f:Ljava/util/ArrayList;
+    iget-object v0, v7, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->g:Ljava/util/ArrayList;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
 
@@ -3982,7 +3982,7 @@
     if-ge v14, v10, :cond_1f
 
     .line 7
-    iget-object v1, v7, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->f:Ljava/util/ArrayList;
+    iget-object v1, v7, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->g:Ljava/util/ArrayList;
 
     invoke-interface {v1, v14}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -4029,7 +4029,7 @@
     if-ge v5, v14, :cond_7
 
     .line 10
-    iget-object v0, v7, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->f:Ljava/util/ArrayList;
+    iget-object v0, v7, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->g:Ljava/util/ArrayList;
 
     invoke-interface {v0, v5}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -4204,7 +4204,7 @@
     invoke-virtual/range {v20 .. v20}, Landroid/graphics/Rect;->setEmpty()V
 
     .line 32
-    sget-object v1, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->C:Le0/e;
+    sget-object v1, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->D:Le0/e;
 
     move-object/from16 v2, v20
 
@@ -4512,7 +4512,7 @@
     invoke-virtual {v5}, Landroid/graphics/Rect;->setEmpty()V
 
     .line 61
-    sget-object v3, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->C:Le0/e;
+    sget-object v3, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->D:Le0/e;
 
     invoke-virtual {v3, v5}, Le0/e;->b(Ljava/lang/Object;)Z
 
@@ -4759,7 +4759,7 @@
     if-ge v14, v1, :cond_1e
 
     .line 89
-    iget-object v3, v7, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->f:Ljava/util/ArrayList;
+    iget-object v3, v7, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->g:Ljava/util/ArrayList;
 
     invoke-interface {v3, v14}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -4850,7 +4850,7 @@
     invoke-virtual {v11}, Landroid/graphics/Rect;->setEmpty()V
 
     .line 99
-    sget-object v0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->C:Le0/e;
+    sget-object v0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->D:Le0/e;
 
     invoke-virtual {v0, v11}, Le0/e;->b(Ljava/lang/Object;)Z
 
@@ -4974,7 +4974,7 @@
     invoke-virtual {v0}, Landroid/graphics/Rect;->setEmpty()V
 
     .line 13
-    sget-object p1, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->C:Le0/e;
+    sget-object p1, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->D:Le0/e;
 
     invoke-virtual {p1, v0}, Le0/e;->b(Ljava/lang/Object;)Z
 
@@ -4993,7 +4993,7 @@
     invoke-virtual {v0}, Landroid/graphics/Rect;->setEmpty()V
 
     .line 17
-    sget-object p2, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->C:Le0/e;
+    sget-object p2, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->D:Le0/e;
 
     invoke-virtual {p2, v0}, Le0/e;->b(Ljava/lang/Object;)Z
 
@@ -5248,7 +5248,7 @@
     invoke-virtual {v7, v1, v2, v3, v4}, Landroid/graphics/Rect;->set(IIII)V
 
     .line 48
-    iget-object v1, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->s:Lf0/a0;
+    iget-object v1, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->t:Lf0/a0;
 
     if-eqz v1, :cond_9
 
@@ -5271,7 +5271,7 @@
     .line 51
     iget v1, v7, Landroid/graphics/Rect;->left:I
 
-    iget-object v2, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->s:Lf0/a0;
+    iget-object v2, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->t:Lf0/a0;
 
     invoke-virtual {v2}, Lf0/a0;->e()I
 
@@ -5284,7 +5284,7 @@
     .line 52
     iget v1, v7, Landroid/graphics/Rect;->top:I
 
-    iget-object v2, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->s:Lf0/a0;
+    iget-object v2, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->t:Lf0/a0;
 
     invoke-virtual {v2}, Lf0/a0;->g()I
 
@@ -5297,7 +5297,7 @@
     .line 53
     iget v1, v7, Landroid/graphics/Rect;->right:I
 
-    iget-object v2, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->s:Lf0/a0;
+    iget-object v2, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->t:Lf0/a0;
 
     invoke-virtual {v2}, Lf0/a0;->f()I
 
@@ -5310,7 +5310,7 @@
     .line 54
     iget v1, v7, Landroid/graphics/Rect;->bottom:I
 
-    iget-object v2, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->s:Lf0/a0;
+    iget-object v2, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->t:Lf0/a0;
 
     invoke-virtual {v2}, Lf0/a0;->d()I
 
@@ -5380,7 +5380,7 @@
     invoke-virtual {v7}, Landroid/graphics/Rect;->setEmpty()V
 
     .line 61
-    sget-object p1, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->C:Le0/e;
+    sget-object p1, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->D:Le0/e;
 
     invoke-virtual {p1, v7}, Le0/e;->b(Ljava/lang/Object;)Z
 
@@ -5413,7 +5413,7 @@
 
     if-nez v0, :cond_1
 
-    iget-object v0, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->u:Landroid/graphics/drawable/Drawable;
+    iget-object v0, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->v:Landroid/graphics/drawable/Drawable;
 
     if-ne p1, v0, :cond_0
 
@@ -5467,7 +5467,7 @@
     move-result v3
 
     .line 2
-    iget-object v4, v0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->h:Ljava/util/ArrayList;
+    iget-object v4, v0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->i:Ljava/util/ArrayList;
 
     .line 3
     invoke-interface {v4}, Ljava/util/List;->clear()V
@@ -5514,7 +5514,7 @@
 
     .line 9
     :cond_1
-    sget-object v5, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->B:Landroidx/coordinatorlayout/widget/CoordinatorLayout$g;
+    sget-object v5, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->C:Landroidx/coordinatorlayout/widget/CoordinatorLayout$g;
 
     if-eqz v5, :cond_2
 
@@ -5638,7 +5638,7 @@
     if-eqz v9, :cond_a
 
     .line 21
-    iput-object v11, v0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->o:Landroid/view/View;
+    iput-object v11, v0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->p:Landroid/view/View;
 
     .line 22
     :cond_a
@@ -5702,18 +5702,18 @@
     .locals 11
 
     .line 1
-    iget-object v0, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->f:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->g:Ljava/util/ArrayList;
 
     invoke-interface {v0}, Ljava/util/List;->clear()V
 
     .line 2
-    iget-object v0, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->g:Lt/a;
+    iget-object v0, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->h:Lt/a;
 
     .line 3
     iget-object v1, v0, Lt/a;->b:Lm/g;
 
     .line 4
-    iget v1, v1, Lm/g;->h:I
+    iget v1, v1, Lm/g;->i:I
 
     const/4 v2, 0x0
 
@@ -5979,7 +5979,7 @@
     .line 37
     :cond_10
     :goto_7
-    iget-object v5, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->g:Lt/a;
+    iget-object v5, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->h:Lt/a;
 
     .line 38
     iget-object v6, v5, Lt/a;->b:Lm/g;
@@ -6090,7 +6090,7 @@
     if-eqz v8, :cond_1a
 
     .line 51
-    iget-object v8, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->g:Lt/a;
+    iget-object v8, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->h:Lt/a;
 
     .line 52
     iget-object v8, v8, Lt/a;->b:Lm/g;
@@ -6102,7 +6102,7 @@
     if-nez v8, :cond_16
 
     .line 53
-    iget-object v8, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->g:Lt/a;
+    iget-object v8, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->h:Lt/a;
 
     .line 54
     iget-object v9, v8, Lt/a;->b:Lm/g;
@@ -6120,7 +6120,7 @@
 
     .line 56
     :cond_16
-    iget-object v8, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->g:Lt/a;
+    iget-object v8, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->h:Lt/a;
 
     .line 57
     iget-object v9, v8, Lt/a;->b:Lm/g;
@@ -6241,9 +6241,9 @@
 
     .line 69
     :cond_1d
-    iget-object v0, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->f:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->g:Ljava/util/ArrayList;
 
-    iget-object v1, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->g:Lt/a;
+    iget-object v1, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->h:Lt/a;
 
     .line 70
     iget-object v3, v1, Lt/a;->c:Ljava/util/ArrayList;
@@ -6259,7 +6259,7 @@
     iget-object v3, v1, Lt/a;->b:Lm/g;
 
     .line 73
-    iget v3, v3, Lm/g;->h:I
+    iget v3, v3, Lm/g;->i:I
 
     :goto_d
     if-ge v2, v3, :cond_1e
@@ -6289,7 +6289,7 @@
     invoke-interface {v0, v1}, Ljava/util/List;->addAll(Ljava/util/Collection;)Z
 
     .line 77
-    iget-object v0, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->f:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->g:Ljava/util/ArrayList;
 
     invoke-static {v0}, Ljava/util/Collections;->reverse(Ljava/util/List;)V
 
@@ -6397,10 +6397,10 @@
     const/4 p1, 0x0
 
     .line 13
-    iput-object p1, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->o:Landroid/view/View;
+    iput-object p1, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->p:Landroid/view/View;
 
     .line 14
-    iput-boolean v1, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->l:Z
+    iput-boolean v1, p0, Landroidx/coordinatorlayout/widget/CoordinatorLayout;->m:Z
 
     return-void
 .end method

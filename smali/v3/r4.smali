@@ -2,11 +2,11 @@
 .super Ljava/lang/Object;
 
 # interfaces
-.implements Lv3/r3;
+.implements Lv3/q3;
 
 
 # virtual methods
-.method public final a()Lv3/t3;
+.method public final a()Lv3/s3;
     .locals 1
 
     new-instance v0, Ljava/lang/NoSuchMethodError;

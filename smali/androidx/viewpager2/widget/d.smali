@@ -36,7 +36,7 @@
 .method public synthetic constructor <init>(Ljava/lang/String;Lfc/d;)V
     .locals 1
 
-    sget-object v0, Lfc/f;->g:Lfc/f;
+    sget-object v0, Lfc/f;->h:Lfc/f;
 
     .line 5
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V

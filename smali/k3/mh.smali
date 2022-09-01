@@ -7,18 +7,18 @@
 
 
 # instance fields
-.field public final synthetic f:Lk3/k9;
+.field public final synthetic g:Lk3/k9;
 
-.field public final synthetic g:Lk3/jh;
+.field public final synthetic h:Lk3/jh;
 
 
 # direct methods
 .method public constructor <init>(Lk3/jh;Lk3/k9;)V
     .locals 0
 
-    iput-object p1, p0, Lk3/mh;->g:Lk3/jh;
+    iput-object p1, p0, Lk3/mh;->h:Lk3/jh;
 
-    iput-object p2, p0, Lk3/mh;->f:Lk3/k9;
+    iput-object p2, p0, Lk3/mh;->g:Lk3/k9;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -31,9 +31,9 @@
     .locals 3
 
     .line 1
-    iget-object v0, p0, Lk3/mh;->g:Lk3/jh;
+    iget-object v0, p0, Lk3/mh;->h:Lk3/jh;
 
-    iget-object v1, p0, Lk3/mh;->f:Lk3/k9;
+    iget-object v1, p0, Lk3/mh;->g:Lk3/k9;
 
     const/16 v2, 0xa
 

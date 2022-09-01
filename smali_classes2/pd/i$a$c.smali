@@ -1,5 +1,5 @@
 .class public final Lpd/i$a$c;
-.super Lse/h;
+.super Lse/i;
 .source "FriendsFragment.kt"
 
 # interfaces
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lpd/i$a;->n(Lae/c2$a;ILae/b2;)V
+    value = Lpd/i$a;->n(Lae/b2$a;ILae/a2;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,28 +18,28 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/l<",
-        "Lvc/j;",
-        "Lie/h;",
+        "Lvc/i;",
+        "Lie/i;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic f:Landroid/view/View;
+.field public final synthetic g:Landroid/view/View;
 
 
 # direct methods
 .method public constructor <init>(Landroid/view/View;)V
     .locals 0
 
-    iput-object p1, p0, Lpd/i$a$c;->f:Landroid/view/View;
+    iput-object p1, p0, Lpd/i$a$c;->g:Landroid/view/View;
 
     const/4 p1, 0x1
 
-    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -50,15 +50,15 @@
     .locals 4
 
     .line 1
-    check-cast p1, Lvc/j;
+    check-cast p1, Lvc/i;
 
     const-string v0, "it"
 
     .line 2
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 3
-    iget-object v0, p0, Lpd/i$a$c;->f:Landroid/view/View;
+    iget-object v0, p0, Lpd/i$a$c;->g:Landroid/view/View;
 
     sget v1, Lcom/supercell/id/R$id;->addFriendsIllustration:I
 
@@ -70,10 +70,10 @@
 
     const-string v1, "containerView.addFriendsIllustration"
 
-    invoke-static {v0, v1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 4
-    iget-object v1, p1, Lvc/j;->b:Ljava/util/List;
+    iget-object v1, p1, Lvc/i;->b:Ljava/util/List;
 
     .line 5
     invoke-interface {v1}, Ljava/util/Collection;->size()I
@@ -97,7 +97,7 @@
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setVisibility(I)V
 
     .line 6
-    iget-object v0, p0, Lpd/i$a$c;->f:Landroid/view/View;
+    iget-object v0, p0, Lpd/i$a$c;->g:Landroid/view/View;
 
     sget v1, Lcom/supercell/id/R$id;->addFriendsSpace:I
 
@@ -109,10 +109,10 @@
 
     const-string v1, "containerView.addFriendsSpace"
 
-    invoke-static {v0, v1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 7
-    iget-object p1, p1, Lvc/j;->b:Ljava/util/List;
+    iget-object p1, p1, Lvc/i;->b:Ljava/util/List;
 
     .line 8
     invoke-interface {p1}, Ljava/util/Collection;->size()I
@@ -130,7 +130,7 @@
     invoke-virtual {v0, v2}, Landroid/view/View;->setVisibility(I)V
 
     .line 9
-    sget-object p1, Lie/h;->a:Lie/h;
+    sget-object p1, Lie/i;->a:Lie/i;
 
     return-object p1
 .end method

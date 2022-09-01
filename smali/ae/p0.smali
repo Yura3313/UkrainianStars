@@ -1,39 +1,34 @@
 .class public final Lae/p0;
-.super Lse/h;
+.super Lse/i;
 .source "NotificationQueue.kt"
 
 # interfaces
 .implements Lre/l;
 
 
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Lse/h;",
-        "Lre/l<",
-        "Ljava/util/List<",
-        "+",
-        "Ljava/lang/Object;",
-        ">;",
-        "Lvc/n$j;",
-        ">;"
-    }
-.end annotation
-
-
-# instance fields
-.field public final synthetic f:Lvc/n$j$h;
+# static fields
+.field public static final g:Lae/p0;
 
 
 # direct methods
-.method public constructor <init>(Lvc/n$j$h;)V
-    .locals 0
+.method public static constructor <clinit>()V
+    .locals 1
 
-    iput-object p1, p0, Lae/p0;->f:Lvc/n$j$h;
+    new-instance v0, Lae/p0;
 
-    const/4 p1, 0x1
+    invoke-direct {v0}, Lae/p0;-><init>()V
 
-    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
+    sput-object v0, Lae/p0;->g:Lae/p0;
+
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .locals 1
+
+    const/4 v0, 0x1
+
+    invoke-direct {p0, v0}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -43,26 +38,13 @@
 .method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
 
-    check-cast p1, Ljava/util/List;
+    check-cast p1, Ljava/lang/Exception;
 
     const-string v0, "it"
 
-    .line 1
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    .line 2
-    iget-object p1, p0, Lae/p0;->f:Lvc/n$j$h;
-
-    if-eqz p1, :cond_0
+    const/4 p1, 0x0
 
     return-object p1
-
-    :cond_0
-    new-instance p1, Lkotlin/TypeCastException;
-
-    const-string v0, "null cannot be cast to non-null type T"
-
-    invoke-direct {p1, v0}, Lkotlin/TypeCastException;-><init>(Ljava/lang/String;)V
-
-    throw p1
 .end method

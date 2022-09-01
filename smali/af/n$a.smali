@@ -50,7 +50,7 @@
     const-string v0, "affected"
 
     .line 2
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/4 v0, 0x0
 
@@ -80,7 +80,7 @@
     if-eqz v2, :cond_5
 
     .line 4
-    sget-object v3, Laf/n;->f:Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
+    sget-object v3, Laf/n;->g:Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;
 
     :cond_2
     invoke-virtual {v3, p1, p0, v2}, Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;->compareAndSet(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)Z
@@ -119,7 +119,7 @@
 
     .line 7
     :cond_4
-    invoke-static {}, Lt3/e;->f()V
+    invoke-static {}, Lt3/h;->j()V
 
     const/4 p1, 0x0
 

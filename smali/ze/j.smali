@@ -3,7 +3,7 @@
 .source "Job.kt"
 
 # interfaces
-.implements Lze/l0;
+.implements Lze/m0;
 
 
 # virtual methods

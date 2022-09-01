@@ -18,7 +18,7 @@
 
 
 # static fields
-.field public static final f:Landroid/os/Handler;
+.field public static final g:Landroid/os/Handler;
 
 
 # direct methods
@@ -33,7 +33,7 @@
 
     invoke-direct {v0, v1}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
 
-    sput-object v0, Lt5/b$c;->f:Landroid/os/Handler;
+    sput-object v0, Lt5/b$c;->g:Landroid/os/Handler;
 
     return-void
 .end method
@@ -51,7 +51,7 @@
 .method public final execute(Ljava/lang/Runnable;)V
     .locals 1
 
-    sget-object v0, Lt5/b$c;->f:Landroid/os/Handler;
+    sget-object v0, Lt5/b$c;->g:Landroid/os/Handler;
 
     invoke-virtual {v0, p1}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 

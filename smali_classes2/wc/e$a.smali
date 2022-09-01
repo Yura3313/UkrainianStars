@@ -15,14 +15,14 @@
 
 
 # instance fields
-.field public final synthetic f:Lwc/e;
+.field public final synthetic g:Lwc/e;
 
 
 # direct methods
 .method public constructor <init>(Lwc/e;)V
     .locals 0
 
-    iput-object p1, p0, Lwc/e$a;->f:Lwc/e;
+    iput-object p1, p0, Lwc/e$a;->g:Lwc/e;
 
     invoke-direct {p0}, Landroid/animation/AnimatorListenerAdapter;-><init>()V
 
@@ -36,7 +36,7 @@
 
     .line 1
     :try_start_0
-    iget-object p1, p0, Lwc/e$a;->f:Lwc/e;
+    iget-object p1, p0, Lwc/e$a;->g:Lwc/e;
 
     const/4 v0, 0x1
 

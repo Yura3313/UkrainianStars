@@ -36,7 +36,7 @@
     move-object v6, p6
 
     .line 1
-    invoke-direct/range {v0 .. v6}, Lcom/google/android/gms/common/internal/a;-><init>(Landroid/content/Context;Landroid/os/Looper;ILd2/c;Lb2/e;Lb2/l;)V
+    invoke-direct/range {v0 .. v6}, Lcom/google/android/gms/common/internal/a;-><init>(Landroid/content/Context;Landroid/os/Looper;ILd2/c;Lb2/d;Lb2/k;)V
 
     .line 2
     new-instance p1, Ls1/a$a$a;
@@ -44,7 +44,7 @@
     if-nez p4, :cond_0
 
     .line 3
-    sget-object p4, Ls1/a$a;->i:Ls1/a$a;
+    sget-object p4, Ls1/a$a;->j:Ls1/a$a;
 
     :cond_0
     invoke-direct {p1, p4}, Ls1/a$a$a;-><init>(Ls1/a$a;)V
@@ -139,21 +139,21 @@
     invoke-direct {v1}, Landroid/os/Bundle;-><init>()V
 
     .line 3
-    iget-object v2, v0, Ls1/a$a;->f:Ljava/lang/String;
+    iget-object v2, v0, Ls1/a$a;->g:Ljava/lang/String;
 
     const-string v3, "consumer_package"
 
     invoke-virtual {v1, v3, v2}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 4
-    iget-boolean v2, v0, Ls1/a$a;->g:Z
+    iget-boolean v2, v0, Ls1/a$a;->h:Z
 
     const-string v3, "force_save_dialog"
 
     invoke-virtual {v1, v3, v2}, Landroid/os/Bundle;->putBoolean(Ljava/lang/String;Z)V
 
     .line 5
-    iget-object v0, v0, Ls1/a$a;->h:Ljava/lang/String;
+    iget-object v0, v0, Ls1/a$a;->i:Ljava/lang/String;
 
     const-string v2, "log_session_id"
 

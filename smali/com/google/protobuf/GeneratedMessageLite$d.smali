@@ -67,10 +67,10 @@
     if-eqz p1, :cond_2
 
     .line 2
-    iget-object v0, p4, Lcom/google/protobuf/GeneratedMessageLite$c;->h:Lcom/google/protobuf/w1$b;
+    iget-object v0, p4, Lcom/google/protobuf/GeneratedMessageLite$c;->i:Lcom/google/protobuf/w1$b;
 
     .line 3
-    sget-object v1, Lcom/google/protobuf/w1$b;->r:Lcom/google/protobuf/w1$b$c;
+    sget-object v1, Lcom/google/protobuf/w1$b;->s:Lcom/google/protobuf/w1$b$c;
 
     if-ne v0, v1, :cond_1
 
@@ -124,18 +124,18 @@
     iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$d;->d:Lcom/google/protobuf/GeneratedMessageLite$c;
 
     .line 2
-    iget-object v1, v0, Lcom/google/protobuf/GeneratedMessageLite$c;->h:Lcom/google/protobuf/w1$b;
+    iget-object v1, v0, Lcom/google/protobuf/GeneratedMessageLite$c;->i:Lcom/google/protobuf/w1$b;
 
     .line 3
-    iget-object v1, v1, Lcom/google/protobuf/w1$b;->f:Lcom/google/protobuf/w1$c;
+    iget-object v1, v1, Lcom/google/protobuf/w1$b;->g:Lcom/google/protobuf/w1$c;
 
     .line 4
-    sget-object v2, Lcom/google/protobuf/w1$c;->n:Lcom/google/protobuf/w1$c;
+    sget-object v2, Lcom/google/protobuf/w1$c;->o:Lcom/google/protobuf/w1$c;
 
     if-ne v1, v2, :cond_0
 
     .line 5
-    iget-object v0, v0, Lcom/google/protobuf/GeneratedMessageLite$c;->f:Lcom/google/protobuf/a0$d;
+    iget-object v0, v0, Lcom/google/protobuf/GeneratedMessageLite$c;->g:Lcom/google/protobuf/a0$d;
 
     check-cast p1, Ljava/lang/Integer;
 
@@ -158,13 +158,13 @@
     iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$d;->d:Lcom/google/protobuf/GeneratedMessageLite$c;
 
     .line 2
-    iget-object v0, v0, Lcom/google/protobuf/GeneratedMessageLite$c;->h:Lcom/google/protobuf/w1$b;
+    iget-object v0, v0, Lcom/google/protobuf/GeneratedMessageLite$c;->i:Lcom/google/protobuf/w1$b;
 
     .line 3
-    iget-object v0, v0, Lcom/google/protobuf/w1$b;->f:Lcom/google/protobuf/w1$c;
+    iget-object v0, v0, Lcom/google/protobuf/w1$b;->g:Lcom/google/protobuf/w1$c;
 
     .line 4
-    sget-object v1, Lcom/google/protobuf/w1$c;->n:Lcom/google/protobuf/w1$c;
+    sget-object v1, Lcom/google/protobuf/w1$c;->o:Lcom/google/protobuf/w1$c;
 
     if-ne v0, v1, :cond_0
 

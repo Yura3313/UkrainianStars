@@ -1,10 +1,24 @@
-.class public interface abstract Lk3/s7;
+.class public final Lk3/s7;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
+# interfaces
+.implements Lk3/t7;
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
 
 # virtual methods
-.method public abstract a()V
+.method public final a()V
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -14,7 +28,12 @@
             ">;)V"
         }
     .end annotation
+
+    return-void
 .end method
 
-.method public abstract b()V
+.method public final b()V
+    .locals 0
+
+    return-void
 .end method

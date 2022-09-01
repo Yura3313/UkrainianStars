@@ -3,7 +3,7 @@
 .source "CancellableContinuationImpl.kt"
 
 # interfaces
-.implements Lze/l1;
+.implements Lze/m1;
 
 
 # direct methods

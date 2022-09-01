@@ -18,25 +18,25 @@
 
 
 # instance fields
-.field public final f:Landroid/content/Context;
+.field public final g:Landroid/content/Context;
 
-.field public final g:Lk3/m21;
+.field public final h:Lk3/s21;
 
-.field public final h:Landroid/os/PowerManager;
+.field public final i:Landroid/os/PowerManager;
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;Lk3/m21;)V
+.method public constructor <init>(Landroid/content/Context;Lk3/s21;)V
     .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lk3/cm;->f:Landroid/content/Context;
+    iput-object p1, p0, Lk3/cm;->g:Landroid/content/Context;
 
     .line 3
-    iput-object p2, p0, Lk3/cm;->g:Lk3/m21;
+    iput-object p2, p0, Lk3/cm;->h:Lk3/s21;
 
     const-string p2, "power"
 
@@ -47,7 +47,7 @@
 
     check-cast p1, Landroid/os/PowerManager;
 
-    iput-object p1, p0, Lk3/cm;->h:Landroid/os/PowerManager;
+    iput-object p1, p0, Lk3/cm;->i:Landroid/os/PowerManager;
 
     return-void
 .end method
@@ -73,7 +73,7 @@
     invoke-direct {v1}, Lorg/json/JSONObject;-><init>()V
 
     .line 3
-    iget-object v2, p1, Lk3/gm;->e:Lk3/o21;
+    iget-object v2, p1, Lk3/gm;->e:Lk3/u21;
 
     if-nez v2, :cond_0
 
@@ -86,15 +86,15 @@
 
     .line 5
     :cond_0
-    iget-object v3, p0, Lk3/cm;->g:Lk3/m21;
+    iget-object v3, p0, Lk3/cm;->h:Lk3/s21;
 
     .line 6
-    iget-object v3, v3, Lk3/m21;->b:Lorg/json/JSONObject;
+    iget-object v3, v3, Lk3/s21;->b:Lorg/json/JSONObject;
 
     if-eqz v3, :cond_5
 
     .line 7
-    iget-boolean v3, v2, Lk3/o21;->a:Z
+    iget-boolean v3, v2, Lk3/u21;->a:Z
 
     .line 8
     new-instance v4, Lorg/json/JSONObject;
@@ -102,10 +102,10 @@
     invoke-direct {v4}, Lorg/json/JSONObject;-><init>()V
 
     .line 9
-    iget-object v5, p0, Lk3/cm;->g:Lk3/m21;
+    iget-object v5, p0, Lk3/cm;->h:Lk3/s21;
 
     .line 10
-    iget-object v5, v5, Lk3/m21;->d:Ljava/lang/String;
+    iget-object v5, v5, Lk3/s21;->d:Ljava/lang/String;
 
     const-string v6, "afmaVersion"
 
@@ -114,10 +114,10 @@
 
     move-result-object v5
 
-    iget-object v6, p0, Lk3/cm;->g:Lk3/m21;
+    iget-object v6, p0, Lk3/cm;->h:Lk3/s21;
 
     .line 12
-    iget-object v6, v6, Lk3/m21;->b:Lorg/json/JSONObject;
+    iget-object v6, v6, Lk3/s21;->b:Lorg/json/JSONObject;
 
     const-string v7, "activeViewJSON"
 
@@ -135,10 +135,10 @@
 
     move-result-object v5
 
-    iget-object v6, p0, Lk3/cm;->g:Lk3/m21;
+    iget-object v6, p0, Lk3/cm;->h:Lk3/s21;
 
     .line 15
-    iget-object v6, v6, Lk3/m21;->a:Ljava/lang/String;
+    iget-object v6, v6, Lk3/s21;->a:Ljava/lang/String;
 
     const-string v7, "adFormat"
 
@@ -147,10 +147,10 @@
 
     move-result-object v5
 
-    iget-object v6, p0, Lk3/cm;->g:Lk3/m21;
+    iget-object v6, p0, Lk3/cm;->h:Lk3/s21;
 
     .line 17
-    iget-object v6, v6, Lk3/m21;->c:Ljava/lang/String;
+    iget-object v6, v6, Lk3/s21;->c:Ljava/lang/String;
 
     const-string v7, "hashCode"
 
@@ -184,10 +184,10 @@
 
     move-result-object v5
 
-    iget-object v6, p0, Lk3/cm;->g:Lk3/m21;
+    iget-object v6, p0, Lk3/cm;->h:Lk3/s21;
 
     .line 22
-    iget-boolean v6, v6, Lk3/m21;->e:Z
+    iget-boolean v6, v6, Lk3/s21;->e:Z
 
     const-string v7, "isNative"
 
@@ -204,7 +204,7 @@
     if-lt v6, v7, :cond_1
 
     .line 25
-    iget-object v6, p0, Lk3/cm;->h:Landroid/os/PowerManager;
+    iget-object v6, p0, Lk3/cm;->i:Landroid/os/PowerManager;
 
     invoke-virtual {v6}, Landroid/os/PowerManager;->isInteractive()Z
 
@@ -214,7 +214,7 @@
 
     .line 26
     :cond_1
-    iget-object v6, p0, Lk3/cm;->h:Landroid/os/PowerManager;
+    iget-object v6, p0, Lk3/cm;->i:Landroid/os/PowerManager;
 
     invoke-virtual {v6}, Landroid/os/PowerManager;->isScreenOn()Z
 
@@ -229,9 +229,9 @@
     move-result-object v5
 
     .line 28
-    sget-object v6, Li1/o;->B:Li1/o;
+    sget-object v6, Li1/p;->B:Li1/p;
 
-    iget-object v6, v6, Li1/o;->h:Lk3/qb;
+    iget-object v6, v6, Li1/p;->h:Lk3/qb;
 
     .line 29
     invoke-virtual {v6}, Lk3/qb;->c()Z
@@ -245,9 +245,9 @@
     move-result-object v5
 
     .line 30
-    sget-object v6, Li1/o;->B:Li1/o;
+    sget-object v6, Li1/p;->B:Li1/p;
 
-    iget-object v6, v6, Li1/o;->h:Lk3/qb;
+    iget-object v6, v6, Li1/p;->h:Lk3/qb;
 
     .line 31
     invoke-virtual {v6}, Lk3/qb;->b()F
@@ -262,7 +262,7 @@
 
     move-result-object v5
 
-    iget-object v6, p0, Lk3/cm;->f:Landroid/content/Context;
+    iget-object v6, p0, Lk3/cm;->g:Landroid/content/Context;
 
     .line 32
     invoke-virtual {v6}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
@@ -285,7 +285,7 @@
     invoke-direct {v5}, Landroid/graphics/Rect;-><init>()V
 
     .line 34
-    iget-object v6, p0, Lk3/cm;->f:Landroid/content/Context;
+    iget-object v6, p0, Lk3/cm;->g:Landroid/content/Context;
 
     const-string v7, "window"
 
@@ -315,7 +315,7 @@
     iput v6, v5, Landroid/graphics/Rect;->bottom:I
 
     .line 38
-    iget-object v5, p0, Lk3/cm;->f:Landroid/content/Context;
+    iget-object v5, p0, Lk3/cm;->g:Landroid/content/Context;
 
     invoke-virtual {v5}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -326,7 +326,7 @@
     move-result-object v5
 
     .line 39
-    iget v6, v2, Lk3/o21;->b:I
+    iget v6, v2, Lk3/u21;->b:I
 
     const-string v7, "windowVisibility"
 
@@ -346,7 +346,7 @@
 
     invoke-direct {v6}, Lorg/json/JSONObject;-><init>()V
 
-    iget-object v7, v2, Lk3/o21;->c:Landroid/graphics/Rect;
+    iget-object v7, v2, Lk3/u21;->c:Landroid/graphics/Rect;
 
     iget v7, v7, Landroid/graphics/Rect;->top:I
 
@@ -357,7 +357,7 @@
 
     move-result-object v6
 
-    iget-object v7, v2, Lk3/o21;->c:Landroid/graphics/Rect;
+    iget-object v7, v2, Lk3/u21;->c:Landroid/graphics/Rect;
 
     iget v7, v7, Landroid/graphics/Rect;->bottom:I
 
@@ -368,7 +368,7 @@
 
     move-result-object v6
 
-    iget-object v7, v2, Lk3/o21;->c:Landroid/graphics/Rect;
+    iget-object v7, v2, Lk3/u21;->c:Landroid/graphics/Rect;
 
     iget v7, v7, Landroid/graphics/Rect;->left:I
 
@@ -379,7 +379,7 @@
 
     move-result-object v6
 
-    iget-object v7, v2, Lk3/o21;->c:Landroid/graphics/Rect;
+    iget-object v7, v2, Lk3/u21;->c:Landroid/graphics/Rect;
 
     iget v7, v7, Landroid/graphics/Rect;->right:I
 
@@ -401,7 +401,7 @@
 
     invoke-direct {v6}, Lorg/json/JSONObject;-><init>()V
 
-    iget-object v7, v2, Lk3/o21;->d:Landroid/graphics/Rect;
+    iget-object v7, v2, Lk3/u21;->d:Landroid/graphics/Rect;
 
     iget v7, v7, Landroid/graphics/Rect;->top:I
 
@@ -410,7 +410,7 @@
 
     move-result-object v6
 
-    iget-object v7, v2, Lk3/o21;->d:Landroid/graphics/Rect;
+    iget-object v7, v2, Lk3/u21;->d:Landroid/graphics/Rect;
 
     iget v7, v7, Landroid/graphics/Rect;->bottom:I
 
@@ -419,7 +419,7 @@
 
     move-result-object v6
 
-    iget-object v7, v2, Lk3/o21;->d:Landroid/graphics/Rect;
+    iget-object v7, v2, Lk3/u21;->d:Landroid/graphics/Rect;
 
     iget v7, v7, Landroid/graphics/Rect;->left:I
 
@@ -428,7 +428,7 @@
 
     move-result-object v6
 
-    iget-object v7, v2, Lk3/o21;->d:Landroid/graphics/Rect;
+    iget-object v7, v2, Lk3/u21;->d:Landroid/graphics/Rect;
 
     iget v7, v7, Landroid/graphics/Rect;->right:I
 
@@ -448,7 +448,7 @@
 
     invoke-direct {v6}, Lorg/json/JSONObject;-><init>()V
 
-    iget-object v7, v2, Lk3/o21;->e:Landroid/graphics/Rect;
+    iget-object v7, v2, Lk3/u21;->e:Landroid/graphics/Rect;
 
     iget v7, v7, Landroid/graphics/Rect;->top:I
 
@@ -457,7 +457,7 @@
 
     move-result-object v6
 
-    iget-object v7, v2, Lk3/o21;->e:Landroid/graphics/Rect;
+    iget-object v7, v2, Lk3/u21;->e:Landroid/graphics/Rect;
 
     iget v7, v7, Landroid/graphics/Rect;->bottom:I
 
@@ -466,7 +466,7 @@
 
     move-result-object v6
 
-    iget-object v7, v2, Lk3/o21;->e:Landroid/graphics/Rect;
+    iget-object v7, v2, Lk3/u21;->e:Landroid/graphics/Rect;
 
     iget v7, v7, Landroid/graphics/Rect;->left:I
 
@@ -475,7 +475,7 @@
 
     move-result-object v6
 
-    iget-object v7, v2, Lk3/o21;->e:Landroid/graphics/Rect;
+    iget-object v7, v2, Lk3/u21;->e:Landroid/graphics/Rect;
 
     iget v7, v7, Landroid/graphics/Rect;->right:I
 
@@ -491,7 +491,7 @@
 
     move-result-object v3
 
-    iget-boolean v6, v2, Lk3/o21;->f:Z
+    iget-boolean v6, v2, Lk3/u21;->f:Z
 
     const-string v7, "globalVisibleBoxVisible"
 
@@ -504,7 +504,7 @@
 
     invoke-direct {v6}, Lorg/json/JSONObject;-><init>()V
 
-    iget-object v7, v2, Lk3/o21;->g:Landroid/graphics/Rect;
+    iget-object v7, v2, Lk3/u21;->g:Landroid/graphics/Rect;
 
     iget v7, v7, Landroid/graphics/Rect;->top:I
 
@@ -513,7 +513,7 @@
 
     move-result-object v6
 
-    iget-object v7, v2, Lk3/o21;->g:Landroid/graphics/Rect;
+    iget-object v7, v2, Lk3/u21;->g:Landroid/graphics/Rect;
 
     iget v7, v7, Landroid/graphics/Rect;->bottom:I
 
@@ -522,7 +522,7 @@
 
     move-result-object v6
 
-    iget-object v7, v2, Lk3/o21;->g:Landroid/graphics/Rect;
+    iget-object v7, v2, Lk3/u21;->g:Landroid/graphics/Rect;
 
     iget v7, v7, Landroid/graphics/Rect;->left:I
 
@@ -531,7 +531,7 @@
 
     move-result-object v6
 
-    iget-object v7, v2, Lk3/o21;->g:Landroid/graphics/Rect;
+    iget-object v7, v2, Lk3/u21;->g:Landroid/graphics/Rect;
 
     iget v7, v7, Landroid/graphics/Rect;->right:I
 
@@ -547,7 +547,7 @@
 
     move-result-object v3
 
-    iget-boolean v6, v2, Lk3/o21;->h:Z
+    iget-boolean v6, v2, Lk3/u21;->h:Z
 
     const-string v7, "localVisibleBoxVisible"
 
@@ -560,7 +560,7 @@
 
     invoke-direct {v6}, Lorg/json/JSONObject;-><init>()V
 
-    iget-object v7, v2, Lk3/o21;->i:Landroid/graphics/Rect;
+    iget-object v7, v2, Lk3/u21;->i:Landroid/graphics/Rect;
 
     iget v7, v7, Landroid/graphics/Rect;->top:I
 
@@ -569,7 +569,7 @@
 
     move-result-object v6
 
-    iget-object v7, v2, Lk3/o21;->i:Landroid/graphics/Rect;
+    iget-object v7, v2, Lk3/u21;->i:Landroid/graphics/Rect;
 
     iget v7, v7, Landroid/graphics/Rect;->bottom:I
 
@@ -578,7 +578,7 @@
 
     move-result-object v6
 
-    iget-object v7, v2, Lk3/o21;->i:Landroid/graphics/Rect;
+    iget-object v7, v2, Lk3/u21;->i:Landroid/graphics/Rect;
 
     iget v7, v7, Landroid/graphics/Rect;->left:I
 
@@ -587,7 +587,7 @@
 
     move-result-object v6
 
-    iget-object v7, v2, Lk3/o21;->i:Landroid/graphics/Rect;
+    iget-object v7, v2, Lk3/u21;->i:Landroid/graphics/Rect;
 
     iget v7, v7, Landroid/graphics/Rect;->right:I
 
@@ -620,15 +620,15 @@
     invoke-virtual {v4, v5, v3}, Lorg/json/JSONObject;->put(Ljava/lang/String;Z)Lorg/json/JSONObject;
 
     .line 71
-    sget-object v3, Lk3/q;->H0:Lk3/g;
+    sget-object v3, Lk3/o;->H0:Lk3/e;
 
     .line 72
-    sget-object v5, Lk3/l51;->j:Lk3/l51;
+    sget-object v5, Lk3/o51;->j:Lk3/o51;
 
-    iget-object v5, v5, Lk3/l51;->f:Lk3/n;
+    iget-object v5, v5, Lk3/o51;->f:Lk3/l;
 
     .line 73
-    invoke-virtual {v5, v3}, Lk3/n;->a(Lk3/h;)Ljava/lang/Object;
+    invoke-virtual {v5, v3}, Lk3/l;->a(Lk3/f;)Ljava/lang/Object;
 
     move-result-object v3
 
@@ -647,7 +647,7 @@
     invoke-direct {v3}, Lorg/json/JSONArray;-><init>()V
 
     .line 76
-    iget-object v2, v2, Lk3/o21;->k:Ljava/util/List;
+    iget-object v2, v2, Lk3/u21;->k:Ljava/util/List;
 
     if-eqz v2, :cond_2
 
@@ -761,7 +761,7 @@
     goto :goto_3
 .end method
 
-.method public final synthetic c(Ljava/lang/Object;)Lorg/json/JSONObject;
+.method public final synthetic b(Ljava/lang/Object;)Lorg/json/JSONObject;
     .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {

@@ -135,7 +135,7 @@
     const-string v1, "unsupported AEAD DEM key type: "
 
     .line 16
-    invoke-static {v1, v0}, Lcom/google/android/gms/ads/e;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v1, v0}, Lf/g;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 

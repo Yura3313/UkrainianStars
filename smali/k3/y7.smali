@@ -1,28 +1,24 @@
-.class public final synthetic Lk3/y7;
+.class public final Lk3/y7;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads-lite@@19.3.0"
 
 # interfaces
-.implements Ljava/lang/Runnable;
+.implements Ljava/lang/Thread$UncaughtExceptionHandler;
 
 
 # instance fields
-.field public final synthetic f:I
+.field public final synthetic g:Ljava/lang/Thread$UncaughtExceptionHandler;
 
-.field public final g:Ljava/lang/Object;
-
-.field public final h:Ljava/lang/Object;
+.field public final synthetic h:Lk3/x7;
 
 
 # direct methods
-.method public synthetic constructor <init>(Ljava/lang/Object;Ljava/lang/Object;I)V
+.method public constructor <init>(Lk3/x7;Ljava/lang/Thread$UncaughtExceptionHandler;)V
     .locals 0
 
-    iput p3, p0, Lk3/y7;->f:I
+    iput-object p1, p0, Lk3/y7;->h:Lk3/x7;
 
-    iput-object p1, p0, Lk3/y7;->g:Ljava/lang/Object;
-
-    iput-object p2, p0, Lk3/y7;->h:Ljava/lang/Object;
+    iput-object p2, p0, Lk3/y7;->g:Ljava/lang/Thread$UncaughtExceptionHandler;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -31,55 +27,38 @@
 
 
 # virtual methods
-.method public final run()V
-    .locals 2
-
-    iget v0, p0, Lk3/y7;->f:I
-
-    packed-switch v0, :pswitch_data_0
-
-    goto :goto_0
+.method public final uncaughtException(Ljava/lang/Thread;Ljava/lang/Throwable;)V
+    .locals 1
 
     .line 1
-    :pswitch_0
-    iget-object v0, p0, Lk3/y7;->g:Ljava/lang/Object;
+    :try_start_0
+    iget-object v0, p0, Lk3/y7;->h:Lk3/x7;
 
-    check-cast v0, Lk3/id;
-
-    iget-object v1, p0, Lk3/y7;->h:Ljava/lang/Object;
-
-    check-cast v1, Ljava/lang/String;
+    invoke-virtual {v0, p2}, Lk3/x7;->b(Ljava/lang/Throwable;)V
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 2
-    invoke-virtual {v0, v1}, Lk3/id;->c(Ljava/lang/String;)V
+    iget-object v0, p0, Lk3/y7;->g:Ljava/lang/Thread$UncaughtExceptionHandler;
 
-    return-void
+    if-eqz v0, :cond_0
 
     .line 3
-    :goto_0
-    iget-object v0, p0, Lk3/y7;->g:Ljava/lang/Object;
-
-    check-cast v0, Lk3/m7;
-
-    iget-object v1, p0, Lk3/y7;->h:Ljava/lang/Object;
-
-    check-cast v1, Lcom/google/android/gms/internal/ads/zzuw;
-
-    .line 4
-    iget-object v0, v0, Lk3/m7;->g:Ljava/lang/Object;
-
-    check-cast v0, Lcom/google/android/gms/internal/ads/zzcxo;
-
-    .line 5
-    iget-object v0, v0, Lcom/google/android/gms/internal/ads/zzcxo;->k:Lk3/zf0;
-
-    .line 6
-    invoke-virtual {v0, v1}, Lk3/zf0;->y0(Lcom/google/android/gms/internal/ads/zzuw;)V
+    invoke-interface {v0, p1, p2}, Ljava/lang/Thread$UncaughtExceptionHandler;->uncaughtException(Ljava/lang/Thread;Ljava/lang/Throwable;)V
 
     return-void
 
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+    :catchall_0
+    nop
+
+    .line 4
+    iget-object v0, p0, Lk3/y7;->g:Ljava/lang/Thread$UncaughtExceptionHandler;
+
+    if-eqz v0, :cond_0
+
+    .line 5
+    invoke-interface {v0, p1, p2}, Ljava/lang/Thread$UncaughtExceptionHandler;->uncaughtException(Ljava/lang/Thread;Ljava/lang/Throwable;)V
+
+    :cond_0
+    return-void
 .end method

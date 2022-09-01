@@ -4,13 +4,13 @@
 
 
 # instance fields
-.field public j:Landroid/animation/AnimatorSet;
-
-.field public final k:Landroid/animation/ObjectAnimator;
+.field public k:Landroid/animation/AnimatorSet;
 
 .field public final l:Landroid/animation/ObjectAnimator;
 
 .field public final m:Landroid/animation/ObjectAnimator;
+
+.field public final n:Landroid/animation/ObjectAnimator;
 
 
 # direct methods
@@ -30,7 +30,7 @@
 
     const-string v0, "context"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/16 v0, 0x8
 
@@ -85,7 +85,7 @@
     const/4 v4, 0x1
 
     .line 10
-    invoke-static {p2, v3, v4}, Lud/f0;->h(Landroid/widget/ImageView;Ljava/lang/String;Z)V
+    invoke-static {p2, v3, v4}, Lud/d0;->h(Landroid/widget/ImageView;Ljava/lang/String;Z)V
 
     .line 11
     invoke-virtual {p0, v0}, Landroid/view/ViewGroup;->addView(Landroid/view/View;)V
@@ -108,13 +108,13 @@
 
     mul-double v7, v7, v5
 
-    invoke-static {v7, v8}, Lcom/android/billingclient/api/z;->m(D)I
+    invoke-static {v7, v8}, Lcom/android/billingclient/api/y;->h(D)I
 
     move-result v3
 
     invoke-static {v5, v6}, Ljava/lang/Double;->isNaN(D)Z
 
-    invoke-static {v7, v8}, Lcom/android/billingclient/api/z;->m(D)I
+    invoke-static {v7, v8}, Lcom/android/billingclient/api/y;->h(D)I
 
     move-result v5
 
@@ -198,7 +198,7 @@
     invoke-virtual {p1, v4}, Landroid/animation/ValueAnimator;->setRepeatMode(I)V
 
     .line 23
-    iput-object p1, p0, Lcom/supercell/id/view/SweepImageView;->k:Landroid/animation/ObjectAnimator;
+    iput-object p1, p0, Lcom/supercell/id/view/SweepImageView;->l:Landroid/animation/ObjectAnimator;
 
     new-array p1, p2, [F
 
@@ -228,7 +228,7 @@
     invoke-virtual {p1, v4}, Landroid/animation/ValueAnimator;->setRepeatMode(I)V
 
     .line 29
-    iput-object p1, p0, Lcom/supercell/id/view/SweepImageView;->l:Landroid/animation/ObjectAnimator;
+    iput-object p1, p0, Lcom/supercell/id/view/SweepImageView;->m:Landroid/animation/ObjectAnimator;
 
     const/4 p1, 0x4
 
@@ -260,7 +260,7 @@
     invoke-virtual {p1, v4}, Landroid/animation/ValueAnimator;->setRepeatMode(I)V
 
     .line 35
-    iput-object p1, p0, Lcom/supercell/id/view/SweepImageView;->m:Landroid/animation/ObjectAnimator;
+    iput-object p1, p0, Lcom/supercell/id/view/SweepImageView;->n:Landroid/animation/ObjectAnimator;
 
     return-void
 
@@ -296,19 +296,19 @@
     new-array v1, v1, [Landroid/animation/Animator;
 
     .line 2
-    iget-object v2, p0, Lcom/supercell/id/view/SweepImageView;->k:Landroid/animation/ObjectAnimator;
+    iget-object v2, p0, Lcom/supercell/id/view/SweepImageView;->l:Landroid/animation/ObjectAnimator;
 
     const/4 v3, 0x0
 
     aput-object v2, v1, v3
 
-    iget-object v2, p0, Lcom/supercell/id/view/SweepImageView;->l:Landroid/animation/ObjectAnimator;
+    iget-object v2, p0, Lcom/supercell/id/view/SweepImageView;->m:Landroid/animation/ObjectAnimator;
 
     const/4 v3, 0x1
 
     aput-object v2, v1, v3
 
-    iget-object v2, p0, Lcom/supercell/id/view/SweepImageView;->m:Landroid/animation/ObjectAnimator;
+    iget-object v2, p0, Lcom/supercell/id/view/SweepImageView;->n:Landroid/animation/ObjectAnimator;
 
     const/4 v3, 0x2
 
@@ -320,7 +320,7 @@
     invoke-virtual {v0}, Landroid/animation/AnimatorSet;->start()V
 
     .line 4
-    iput-object v0, p0, Lcom/supercell/id/view/SweepImageView;->j:Landroid/animation/AnimatorSet;
+    iput-object v0, p0, Lcom/supercell/id/view/SweepImageView;->k:Landroid/animation/AnimatorSet;
 
     return-void
 .end method
@@ -332,7 +332,7 @@
     invoke-super {p0}, Landroid/view/ViewGroup;->onAttachedToWindow()V
 
     .line 2
-    iget-object v0, p0, Lcom/supercell/id/view/SweepImageView;->j:Landroid/animation/AnimatorSet;
+    iget-object v0, p0, Lcom/supercell/id/view/SweepImageView;->k:Landroid/animation/AnimatorSet;
 
     if-nez v0, :cond_0
 
@@ -356,7 +356,7 @@
     invoke-super {p0}, Landroid/view/ViewGroup;->onDetachedFromWindow()V
 
     .line 2
-    iget-object v0, p0, Lcom/supercell/id/view/SweepImageView;->j:Landroid/animation/AnimatorSet;
+    iget-object v0, p0, Lcom/supercell/id/view/SweepImageView;->k:Landroid/animation/AnimatorSet;
 
     if-eqz v0, :cond_0
 
@@ -366,7 +366,7 @@
     const/4 v0, 0x0
 
     .line 3
-    iput-object v0, p0, Lcom/supercell/id/view/SweepImageView;->j:Landroid/animation/AnimatorSet;
+    iput-object v0, p0, Lcom/supercell/id/view/SweepImageView;->k:Landroid/animation/AnimatorSet;
 
     return-void
 .end method
@@ -376,7 +376,7 @@
 
     const-string v0, "changedView"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     invoke-super {p0, p1, p2}, Landroid/view/View;->onVisibilityChanged(Landroid/view/View;I)V
@@ -387,7 +387,7 @@
     move-result p1
 
     .line 3
-    iget-object p2, p0, Lcom/supercell/id/view/SweepImageView;->j:Landroid/animation/AnimatorSet;
+    iget-object p2, p0, Lcom/supercell/id/view/SweepImageView;->k:Landroid/animation/AnimatorSet;
 
     if-eqz p2, :cond_0
 
@@ -418,7 +418,7 @@
     const/4 p1, 0x0
 
     .line 6
-    iput-object p1, p0, Lcom/supercell/id/view/SweepImageView;->j:Landroid/animation/AnimatorSet;
+    iput-object p1, p0, Lcom/supercell/id/view/SweepImageView;->k:Landroid/animation/AnimatorSet;
 
     :cond_3
     :goto_1

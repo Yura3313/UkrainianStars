@@ -31,7 +31,7 @@
 
 
 # virtual methods
-.method public final a(Landroidx/recyclerview/widget/RecyclerView$z;Lo8/y;)V
+.method public final a(Landroidx/recyclerview/widget/RecyclerView$z;Lo8/z;)V
     .locals 13
 
     .line 1
@@ -45,7 +45,7 @@
     move-result-object v0
 
     .line 3
-    iget v1, p2, Lo8/h;->J:I
+    iget v1, p2, Lo8/h;->K:I
 
     invoke-static {v1}, Lp/g;->b(I)I
 
@@ -128,7 +128,7 @@
     move-result-object v1
 
     .line 8
-    invoke-static {v1}, Lcom/google/android/play/core/appupdate/g;->b(Ljava/lang/String;)Z
+    invoke-static {v1}, La5/b0;->d(Ljava/lang/String;)Z
 
     move-result v6
 
@@ -137,7 +137,7 @@
     const-string v6, "/"
 
     .line 9
-    invoke-static {v1, v6}, Lo/g;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v1, v6}, Lcom/supercell/titan/a;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
 
@@ -306,24 +306,24 @@
 
     .line 26
     :goto_5
-    iget-object v10, p1, Lra/i$a;->C:Landroid/view/View;
+    iget-object v10, p1, Lra/i$a;->D:Landroid/view/View;
 
     invoke-virtual {p0, v10, v5}, Lra/u;->m(Landroid/view/View;Z)V
 
     .line 27
-    iget-object v5, p1, Lra/i$a;->A:Landroid/widget/ProgressBar;
+    iget-object v5, p1, Lra/i$a;->B:Landroid/widget/ProgressBar;
 
     invoke-virtual {p0, v5, v6}, Lra/u;->m(Landroid/view/View;Z)V
 
     .line 28
-    iget-object v5, p1, Lra/i$a;->B:Landroid/view/View;
+    iget-object v5, p1, Lra/i$a;->C:Landroid/view/View;
 
     invoke-virtual {p0, v5, v7}, Lra/u;->m(Landroid/view/View;Z)V
 
     if-eqz v8, :cond_6
 
     .line 29
-    iget-object v5, p1, Lra/i$a;->z:Lcom/helpshift/support/views/HSRoundedImageView;
+    iget-object v5, p1, Lra/i$a;->A:Lcom/helpshift/support/views/HSRoundedImageView;
 
     const/high16 v6, 0x3e800000    # 0.25f
 
@@ -333,7 +333,7 @@
 
     .line 30
     :cond_6
-    iget-object v5, p1, Lra/i$a;->z:Lcom/helpshift/support/views/HSRoundedImageView;
+    iget-object v5, p1, Lra/i$a;->A:Lcom/helpshift/support/views/HSRoundedImageView;
 
     const/high16 v6, 0x3f800000    # 1.0f
 
@@ -341,7 +341,7 @@
 
     .line 31
     :goto_6
-    iget-object v5, p1, Lra/i$a;->D:Landroid/widget/TextView;
+    iget-object v5, p1, Lra/i$a;->E:Landroid/widget/TextView;
 
     invoke-virtual {p0, v5, v3}, Lra/u;->m(Landroid/view/View;Z)V
 
@@ -350,7 +350,7 @@
 
     move-result-object v3
 
-    iget-object v5, p1, Lra/i$a;->z:Lcom/helpshift/support/views/HSRoundedImageView;
+    iget-object v5, p1, Lra/i$a;->A:Lcom/helpshift/support/views/HSRoundedImageView;
 
     iget-object v6, p0, Lra/u;->a:Landroid/content/Context;
 
@@ -370,7 +370,7 @@
     invoke-virtual {v3, v0, v5, v6, v4}, Lbb/e;->d(Ljava/lang/String;Landroid/widget/ImageView;Landroid/graphics/drawable/Drawable;Lbb/f;)V
 
     .line 36
-    iget-object v0, p1, Lra/i$a;->D:Landroid/widget/TextView;
+    iget-object v0, p1, Lra/i$a;->E:Landroid/widget/TextView;
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
@@ -382,7 +382,7 @@
     if-eqz v7, :cond_7
 
     .line 38
-    iget-object v1, p1, Lra/i$a;->B:Landroid/view/View;
+    iget-object v1, p1, Lra/i$a;->C:Landroid/view/View;
 
     invoke-virtual {v1, v0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -390,7 +390,7 @@
 
     .line 39
     :cond_7
-    iget-object v1, p1, Lra/i$a;->B:Landroid/view/View;
+    iget-object v1, p1, Lra/i$a;->C:Landroid/view/View;
 
     invoke-virtual {v1, v4}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -398,7 +398,7 @@
     if-eqz v9, :cond_8
 
     .line 40
-    iget-object v1, p1, Lra/i$a;->z:Lcom/helpshift/support/views/HSRoundedImageView;
+    iget-object v1, p1, Lra/i$a;->A:Lcom/helpshift/support/views/HSRoundedImageView;
 
     invoke-virtual {v1, v0}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
@@ -406,34 +406,34 @@
 
     .line 41
     :cond_8
-    iget-object v0, p1, Lra/i$a;->z:Lcom/helpshift/support/views/HSRoundedImageView;
+    iget-object v0, p1, Lra/i$a;->A:Lcom/helpshift/support/views/HSRoundedImageView;
 
     invoke-virtual {v0, v4}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 42
     :goto_8
-    iget-object v0, p1, Lra/i$a;->z:Lcom/helpshift/support/views/HSRoundedImageView;
+    iget-object v0, p1, Lra/i$a;->A:Lcom/helpshift/support/views/HSRoundedImageView;
 
     invoke-virtual {v0, v2}, Landroid/view/View;->setContentDescription(Ljava/lang/CharSequence;)V
 
     .line 43
-    iget-object v0, p1, Lra/i$a;->y:Landroid/view/View;
+    iget-object v0, p1, Lra/i$a;->z:Landroid/view/View;
 
-    invoke-virtual {p0, p2}, Lra/u;->d(Lo8/y;)Ljava/lang/String;
+    invoke-virtual {p0, p2}, Lra/u;->d(Lo8/z;)Ljava/lang/String;
 
     move-result-object v1
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setContentDescription(Ljava/lang/CharSequence;)V
 
     .line 44
-    invoke-virtual {p2}, Lo8/y;->o()Z
+    invoke-virtual {p2}, Lo8/z;->o()Z
 
     move-result p2
 
     if-eqz p2, :cond_9
 
     .line 45
-    iget-object p1, p1, Lra/i$a;->E:Landroid/view/View;
+    iget-object p1, p1, Lra/i$a;->F:Landroid/view/View;
 
     invoke-virtual {p1}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 

@@ -18,7 +18,7 @@
 
     const-string v0, "appCache"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -32,7 +32,7 @@
 
     const-string v0, "appCache.edit()"
 
-    invoke-static {p1, v0}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     iput-object p1, p0, Lcom/kakao/sdk/common/util/SharedPrefsWrapper;->editor:Landroid/content/SharedPreferences$Editor;
 
@@ -74,7 +74,7 @@
 
     const-string v0, "key"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     iget-object v0, p0, Lcom/kakao/sdk/common/util/SharedPrefsWrapper;->appCache:Landroid/content/SharedPreferences;
 
@@ -90,7 +90,7 @@
 
     const-string v0, "key"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     iget-object v0, p0, Lcom/kakao/sdk/common/util/SharedPrefsWrapper;->appCache:Landroid/content/SharedPreferences;
 
@@ -106,7 +106,7 @@
 
     const-string v0, "key"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     iget-object v0, p0, Lcom/kakao/sdk/common/util/SharedPrefsWrapper;->editor:Landroid/content/SharedPreferences$Editor;
 
@@ -120,11 +120,11 @@
 
     const-string v0, "key"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "value"
 
-    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     iget-object v0, p0, Lcom/kakao/sdk/common/util/SharedPrefsWrapper;->editor:Landroid/content/SharedPreferences$Editor;
 
@@ -138,7 +138,7 @@
 
     const-string v0, "key"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     iget-object v0, p0, Lcom/kakao/sdk/common/util/SharedPrefsWrapper;->editor:Landroid/content/SharedPreferences$Editor;
 

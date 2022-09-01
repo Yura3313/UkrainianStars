@@ -1,5 +1,5 @@
 .class public final Lje/a$a;
-.super Lse/h;
+.super Lse/i;
 .source "AbstractCollection.kt"
 
 # interfaces
@@ -18,7 +18,7 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/l<",
         "TE;",
         "Ljava/lang/CharSequence;",
@@ -28,18 +28,18 @@
 
 
 # instance fields
-.field public final synthetic f:Lje/a;
+.field public final synthetic g:Lje/a;
 
 
 # direct methods
 .method public constructor <init>(Lje/a;)V
     .locals 0
 
-    iput-object p1, p0, Lje/a$a;->f:Lje/a;
+    iput-object p1, p0, Lje/a$a;->g:Lje/a;
 
     const/4 p1, 0x1
 
-    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -49,7 +49,7 @@
 .method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
 
-    iget-object v0, p0, Lje/a$a;->f:Lje/a;
+    iget-object v0, p0, Lje/a$a;->g:Lje/a;
 
     if-ne p1, v0, :cond_0
 

@@ -1,256 +1,477 @@
-.class public interface abstract Lpb/i0;
-.super Ljava/lang/Object;
-.source "WebSocketListener.java"
+.class public final Lpb/i0;
+.super Ljava/io/FilterInputStream;
+.source "WebSocketInputStream.java"
+
+
+# direct methods
+.method public constructor <init>(Ljava/io/InputStream;)V
+    .locals 0
+
+    invoke-direct {p0, p1}, Ljava/io/FilterInputStream;-><init>(Ljava/io/InputStream;)V
+
+    return-void
+.end method
 
 
 # virtual methods
-.method public abstract a()V
+.method public final a([BI)V
+    .locals 2
     .annotation system Ldalvik/annotation/Throws;
         value = {
-            Ljava/lang/Exception;
+            Ljava/io/IOException;,
+            Lcom/helpshift/websockets/WebSocketException;
         }
     .end annotation
+
+    const/4 v0, 0x0
+
+    :goto_0
+    if-ge v0, p2, :cond_1
+
+    sub-int v1, p2, v0
+
+    .line 1
+    invoke-virtual {p0, p1, v0, v1}, Ljava/io/InputStream;->read([BII)I
+
+    move-result v1
+
+    if-lez v1, :cond_0
+
+    add-int/2addr v0, v1
+
+    goto :goto_0
+
+    .line 2
+    :cond_0
+    new-instance p1, Lpb/n;
+
+    invoke-direct {p1, v0}, Lpb/n;-><init>(I)V
+
+    throw p1
+
+    :cond_1
+    return-void
 .end method
 
-.method public abstract b()V
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lpb/e0;",
-            "Ljava/lang/String;",
-            "Ljava/util/List<",
-            "[",
-            "Ljava/lang/String;",
-            ">;)V"
-        }
-    .end annotation
-
+.method public final b()Lpb/h0;
+    .locals 17
     .annotation system Ldalvik/annotation/Throws;
         value = {
-            Ljava/lang/Exception;
-        }
-    .end annotation
-.end method
-
-.method public abstract c()V
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/lang/Exception;
-        }
-    .end annotation
-.end method
-
-.method public abstract d()V
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/lang/Exception;
-        }
-    .end annotation
-.end method
-
-.method public abstract e(Lcom/helpshift/websockets/WebSocketException;)V
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/lang/Exception;
-        }
-    .end annotation
-.end method
-
-.method public abstract f()V
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/lang/Exception;
-        }
-    .end annotation
-.end method
-
-.method public abstract g(Lcom/helpshift/websockets/WebSocketException;)V
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/lang/Exception;
-        }
-    .end annotation
-.end method
-
-.method public abstract h()V
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lpb/e0;",
-            "Lcom/helpshift/websockets/WebSocketException;",
-            "Ljava/util/List<",
-            "Lpb/g0;",
-            ">;)V"
+            Ljava/io/IOException;,
+            Lcom/helpshift/websockets/WebSocketException;
         }
     .end annotation
 
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/lang/Exception;
-        }
-    .end annotation
-.end method
+    move-object/from16 v1, p0
 
-.method public abstract i()V
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/lang/Exception;
-        }
-    .end annotation
-.end method
+    const/16 v0, 0x8
 
-.method public abstract j()V
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/lang/Exception;
-        }
-    .end annotation
-.end method
+    new-array v2, v0, [B
 
-.method public abstract k()V
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/lang/Exception;
-        }
-    .end annotation
-.end method
+    const/4 v3, 0x2
 
-.method public abstract l()V
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/lang/Exception;
-        }
-    .end annotation
-.end method
+    .line 1
+    :try_start_0
+    invoke-virtual {v1, v2, v3}, Lpb/i0;->a([BI)V
+    :try_end_0
+    .catch Lpb/n; {:try_start_0 .. :try_end_0} :catch_3
 
-.method public abstract m(Lcom/helpshift/websockets/WebSocketException;)V
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/lang/Exception;
-        }
-    .end annotation
-.end method
+    const/4 v4, 0x0
 
-.method public abstract n()V
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/lang/Exception;
-        }
-    .end annotation
-.end method
+    aget-byte v5, v2, v4
 
-.method public abstract o()V
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/lang/Exception;
-        }
-    .end annotation
-.end method
+    and-int/lit16 v5, v5, 0x80
 
-.method public abstract onConnected()V
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lpb/e0;",
-            "Ljava/util/Map<",
-            "Ljava/lang/String;",
-            "Ljava/util/List<",
-            "Ljava/lang/String;",
-            ">;>;)V"
-        }
-    .end annotation
+    const/4 v6, 0x1
 
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/lang/Exception;
-        }
-    .end annotation
-.end method
+    if-eqz v5, :cond_0
 
-.method public abstract p()V
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/lang/Exception;
-        }
-    .end annotation
-.end method
+    const/4 v5, 0x1
 
-.method public abstract q()V
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/lang/Exception;
-        }
-    .end annotation
-.end method
+    goto :goto_0
 
-.method public abstract r()V
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/lang/Exception;
-        }
-    .end annotation
-.end method
+    :cond_0
+    const/4 v5, 0x0
 
-.method public abstract s(Lcom/helpshift/websockets/WebSocketException;)V
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/lang/Exception;
-        }
-    .end annotation
-.end method
+    :goto_0
+    aget-byte v7, v2, v4
 
-.method public abstract t(Lcom/helpshift/websockets/WebSocketException;)V
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/lang/Exception;
-        }
-    .end annotation
-.end method
+    and-int/lit8 v7, v7, 0x40
 
-.method public abstract u()V
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/lang/Exception;
-        }
-    .end annotation
-.end method
+    if-eqz v7, :cond_1
 
-.method public abstract v()V
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/lang/Exception;
-        }
-    .end annotation
-.end method
+    const/4 v7, 0x1
 
-.method public abstract w()V
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/lang/Exception;
-        }
-    .end annotation
-.end method
+    goto :goto_1
 
-.method public abstract x()V
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/lang/Exception;
-        }
-    .end annotation
-.end method
+    :cond_1
+    const/4 v7, 0x0
 
-.method public abstract y(Ljava/lang/String;)V
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/lang/Exception;
-        }
-    .end annotation
-.end method
+    :goto_1
+    aget-byte v8, v2, v4
 
-.method public abstract z()V
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/lang/Exception;
-        }
-    .end annotation
+    and-int/lit8 v8, v8, 0x20
+
+    if-eqz v8, :cond_2
+
+    const/4 v8, 0x1
+
+    goto :goto_2
+
+    :cond_2
+    const/4 v8, 0x0
+
+    :goto_2
+    aget-byte v9, v2, v4
+
+    and-int/lit8 v9, v9, 0x10
+
+    if-eqz v9, :cond_3
+
+    const/4 v9, 0x1
+
+    goto :goto_3
+
+    :cond_3
+    const/4 v9, 0x0
+
+    :goto_3
+    aget-byte v10, v2, v4
+
+    and-int/lit8 v10, v10, 0xf
+
+    aget-byte v11, v2, v6
+
+    and-int/lit16 v11, v11, 0x80
+
+    if-eqz v11, :cond_4
+
+    const/4 v11, 0x1
+
+    goto :goto_4
+
+    :cond_4
+    const/4 v11, 0x0
+
+    :goto_4
+    aget-byte v6, v2, v6
+
+    and-int/lit8 v6, v6, 0x7f
+
+    int-to-long v12, v6
+
+    const-wide/16 v14, 0x7e
+
+    const/4 v6, 0x4
+
+    cmp-long v16, v12, v14
+
+    if-nez v16, :cond_5
+
+    .line 2
+    invoke-virtual {v1, v2, v3}, Lpb/i0;->a([BI)V
+
+    aget-byte v0, v2, v4
+
+    and-int/lit16 v0, v0, 0xff
+
+    shl-int/lit8 v0, v0, 0x8
+
+    const/4 v3, 0x1
+
+    aget-byte v2, v2, v3
+
+    goto :goto_5
+
+    :cond_5
+    const-wide/16 v14, 0x7f
+
+    cmp-long v16, v12, v14
+
+    if-nez v16, :cond_7
+
+    .line 3
+    invoke-virtual {v1, v2, v0}, Lpb/i0;->a([BI)V
+
+    aget-byte v0, v2, v4
+
+    and-int/lit16 v0, v0, 0x80
+
+    if-nez v0, :cond_6
+
+    aget-byte v0, v2, v4
+
+    and-int/lit16 v0, v0, 0xff
+
+    shl-int/lit8 v0, v0, 0x38
+
+    const/4 v12, 0x1
+
+    aget-byte v12, v2, v12
+
+    and-int/lit16 v12, v12, 0xff
+
+    shl-int/lit8 v12, v12, 0x30
+
+    or-int/2addr v0, v12
+
+    aget-byte v3, v2, v3
+
+    and-int/lit16 v3, v3, 0xff
+
+    shl-int/lit8 v3, v3, 0x28
+
+    or-int/2addr v0, v3
+
+    const/4 v3, 0x3
+
+    aget-byte v3, v2, v3
+
+    and-int/lit16 v3, v3, 0xff
+
+    shl-int/lit8 v3, v3, 0x20
+
+    or-int/2addr v0, v3
+
+    aget-byte v3, v2, v6
+
+    and-int/lit16 v3, v3, 0xff
+
+    shl-int/lit8 v3, v3, 0x18
+
+    or-int/2addr v0, v3
+
+    const/4 v3, 0x5
+
+    aget-byte v3, v2, v3
+
+    and-int/lit16 v3, v3, 0xff
+
+    shl-int/lit8 v3, v3, 0x10
+
+    or-int/2addr v0, v3
+
+    const/4 v3, 0x6
+
+    aget-byte v3, v2, v3
+
+    and-int/lit16 v3, v3, 0xff
+
+    shl-int/lit8 v3, v3, 0x8
+
+    or-int/2addr v0, v3
+
+    const/4 v3, 0x7
+
+    aget-byte v2, v2, v3
+
+    :goto_5
+    and-int/lit16 v2, v2, 0xff
+
+    or-int/2addr v0, v2
+
+    int-to-long v12, v0
+
+    goto :goto_6
+
+    .line 4
+    :cond_6
+    new-instance v0, Lcom/helpshift/websockets/WebSocketException;
+
+    const/16 v2, 0x15
+
+    const-string v3, "The payload length of a frame is invalid."
+
+    invoke-direct {v0, v2, v3}, Lcom/helpshift/websockets/WebSocketException;-><init>(ILjava/lang/String;)V
+
+    throw v0
+
+    :cond_7
+    :goto_6
+    const/4 v0, 0x0
+
+    if-eqz v11, :cond_8
+
+    new-array v2, v6, [B
+
+    .line 5
+    invoke-virtual {v1, v2, v6}, Lpb/i0;->a([BI)V
+
+    goto :goto_7
+
+    :cond_8
+    move-object v2, v0
+
+    :goto_7
+    const-wide/32 v14, 0x7fffffff
+
+    cmp-long v3, v14, v12
+
+    if-ltz v3, :cond_b
+
+    const-wide/16 v14, 0x0
+
+    cmp-long v3, v12, v14
+
+    if-nez v3, :cond_9
+
+    goto :goto_9
+
+    :cond_9
+    long-to-int v0, v12
+
+    .line 6
+    :try_start_1
+    new-array v3, v0, [B
+    :try_end_1
+    .catch Ljava/lang/OutOfMemoryError; {:try_start_1 .. :try_end_1} :catch_0
+
+    .line 7
+    invoke-virtual {v1, v3, v0}, Lpb/i0;->a([BI)V
+
+    if-eqz v11, :cond_a
+
+    if-eqz v2, :cond_a
+
+    .line 8
+    array-length v12, v2
+
+    if-lt v12, v6, :cond_a
+
+    :goto_8
+    if-ge v4, v0, :cond_a
+
+    .line 9
+    aget-byte v6, v3, v4
+
+    rem-int/lit8 v12, v4, 0x4
+
+    aget-byte v12, v2, v12
+
+    xor-int/2addr v6, v12
+
+    int-to-byte v6, v6
+
+    aput-byte v6, v3, v4
+
+    add-int/lit8 v4, v4, 0x1
+
+    goto :goto_8
+
+    :cond_a
+    move-object v0, v3
+
+    .line 10
+    :goto_9
+    new-instance v2, Lpb/h0;
+
+    invoke-direct {v2}, Lpb/h0;-><init>()V
+
+    .line 11
+    iput-boolean v5, v2, Lpb/h0;->a:Z
+
+    .line 12
+    iput-boolean v7, v2, Lpb/h0;->b:Z
+
+    .line 13
+    iput-boolean v8, v2, Lpb/h0;->c:Z
+
+    .line 14
+    iput-boolean v9, v2, Lpb/h0;->d:Z
+
+    .line 15
+    iput v10, v2, Lpb/h0;->e:I
+
+    .line 16
+    iput-boolean v11, v2, Lpb/h0;->f:Z
+
+    .line 17
+    invoke-virtual {v2, v0}, Lpb/h0;->i([B)Lpb/h0;
+
+    return-object v2
+
+    :catch_0
+    move-exception v0
+
+    move-object v2, v0
+
+    .line 18
+    :try_start_2
+    invoke-virtual {v1, v12, v13}, Ljava/io/InputStream;->skip(J)J
+    :try_end_2
+    .catch Ljava/io/IOException; {:try_start_2 .. :try_end_2} :catch_1
+
+    .line 19
+    :catch_1
+    new-instance v0, Lcom/helpshift/websockets/WebSocketException;
+
+    const/16 v3, 0x17
+
+    const-string v4, "OutOfMemoryError occurred during a trial to allocate a memory area for a frame\'s payload: "
+
+    .line 20
+    invoke-static {v4}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v4
+
+    .line 21
+    invoke-virtual {v2}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
+
+    move-result-object v5
+
+    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v4
+
+    invoke-direct {v0, v3, v4, v2}, Lcom/helpshift/websockets/WebSocketException;-><init>(ILjava/lang/String;Ljava/lang/Throwable;)V
+
+    throw v0
+
+    .line 22
+    :cond_b
+    :try_start_3
+    invoke-virtual {v1, v12, v13}, Ljava/io/InputStream;->skip(J)J
+    :try_end_3
+    .catch Ljava/io/IOException; {:try_start_3 .. :try_end_3} :catch_2
+
+    .line 23
+    :catch_2
+    new-instance v0, Lcom/helpshift/websockets/WebSocketException;
+
+    const/16 v2, 0x16
+
+    const-string v3, "The payload length of a frame exceeds the maximum array size in Java."
+
+    invoke-direct {v0, v2, v3}, Lcom/helpshift/websockets/WebSocketException;-><init>(ILjava/lang/String;)V
+
+    throw v0
+
+    :catch_3
+    move-exception v0
+
+    move-object v2, v0
+
+    .line 24
+    iget v0, v2, Lpb/n;->h:I
+
+    if-nez v0, :cond_c
+
+    .line 25
+    new-instance v0, Lpb/q;
+
+    invoke-direct {v0}, Lpb/q;-><init>()V
+
+    throw v0
+
+    .line 26
+    :cond_c
+    goto :goto_b
+
+    :goto_a
+    throw v2
+
+    :goto_b
+    goto :goto_a
 .end method

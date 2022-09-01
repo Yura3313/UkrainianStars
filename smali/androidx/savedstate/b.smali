@@ -50,7 +50,7 @@
     iget-object v1, v1, Landroidx/lifecycle/k;->b:Landroidx/lifecycle/f$c;
 
     .line 4
-    sget-object v2, Landroidx/lifecycle/f$c;->g:Landroidx/lifecycle/f$c;
+    sget-object v2, Landroidx/lifecycle/f$c;->h:Landroidx/lifecycle/f$c;
 
     if-ne v1, v2, :cond_2
 

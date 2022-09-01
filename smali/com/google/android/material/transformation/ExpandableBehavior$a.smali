@@ -18,26 +18,26 @@
 
 
 # instance fields
-.field public final synthetic f:Landroid/view/View;
+.field public final synthetic g:Landroid/view/View;
 
-.field public final synthetic g:I
+.field public final synthetic h:I
 
-.field public final synthetic h:Lm4/a;
+.field public final synthetic i:Lm4/a;
 
-.field public final synthetic i:Lcom/google/android/material/transformation/ExpandableBehavior;
+.field public final synthetic j:Lcom/google/android/material/transformation/ExpandableBehavior;
 
 
 # direct methods
 .method public constructor <init>(Lcom/google/android/material/transformation/ExpandableBehavior;Landroid/view/View;ILm4/a;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/google/android/material/transformation/ExpandableBehavior$a;->i:Lcom/google/android/material/transformation/ExpandableBehavior;
+    iput-object p1, p0, Lcom/google/android/material/transformation/ExpandableBehavior$a;->j:Lcom/google/android/material/transformation/ExpandableBehavior;
 
-    iput-object p2, p0, Lcom/google/android/material/transformation/ExpandableBehavior$a;->f:Landroid/view/View;
+    iput-object p2, p0, Lcom/google/android/material/transformation/ExpandableBehavior$a;->g:Landroid/view/View;
 
-    iput p3, p0, Lcom/google/android/material/transformation/ExpandableBehavior$a;->g:I
+    iput p3, p0, Lcom/google/android/material/transformation/ExpandableBehavior$a;->h:I
 
-    iput-object p4, p0, Lcom/google/android/material/transformation/ExpandableBehavior$a;->h:Lm4/a;
+    iput-object p4, p0, Lcom/google/android/material/transformation/ExpandableBehavior$a;->i:Lm4/a;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -50,7 +50,7 @@
     .locals 5
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/transformation/ExpandableBehavior$a;->f:Landroid/view/View;
+    iget-object v0, p0, Lcom/google/android/material/transformation/ExpandableBehavior$a;->g:Landroid/view/View;
 
     invoke-virtual {v0}, Landroid/view/View;->getViewTreeObserver()Landroid/view/ViewTreeObserver;
 
@@ -59,26 +59,26 @@
     invoke-virtual {v0, p0}, Landroid/view/ViewTreeObserver;->removeOnPreDrawListener(Landroid/view/ViewTreeObserver$OnPreDrawListener;)V
 
     .line 2
-    iget-object v0, p0, Lcom/google/android/material/transformation/ExpandableBehavior$a;->i:Lcom/google/android/material/transformation/ExpandableBehavior;
+    iget-object v0, p0, Lcom/google/android/material/transformation/ExpandableBehavior$a;->j:Lcom/google/android/material/transformation/ExpandableBehavior;
 
     .line 3
     iget v1, v0, Lcom/google/android/material/transformation/ExpandableBehavior;->a:I
 
     .line 4
-    iget v2, p0, Lcom/google/android/material/transformation/ExpandableBehavior$a;->g:I
+    iget v2, p0, Lcom/google/android/material/transformation/ExpandableBehavior$a;->h:I
 
     const/4 v3, 0x0
 
     if-ne v1, v2, :cond_0
 
     .line 5
-    iget-object v1, p0, Lcom/google/android/material/transformation/ExpandableBehavior$a;->h:Lm4/a;
+    iget-object v1, p0, Lcom/google/android/material/transformation/ExpandableBehavior$a;->i:Lm4/a;
 
     move-object v2, v1
 
     check-cast v2, Landroid/view/View;
 
-    iget-object v4, p0, Lcom/google/android/material/transformation/ExpandableBehavior$a;->f:Landroid/view/View;
+    iget-object v4, p0, Lcom/google/android/material/transformation/ExpandableBehavior$a;->g:Landroid/view/View;
 
     invoke-interface {v1}, Lm4/a;->a()Z
 

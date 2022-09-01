@@ -45,7 +45,7 @@
 
     const/4 v1, 0x0
 
-    invoke-static {v1, v0}, Lcom/google/android/play/core/appupdate/c;->c(II)Lve/c;
+    invoke-static {v1, v0}, La5/b0;->l(II)Lve/c;
 
     move-result-object v0
 

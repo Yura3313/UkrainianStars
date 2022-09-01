@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lnd/b$a;->n(Lae/c2$a;ILae/b2;)V
+    value = Lnd/b$a;->n(Lae/b2$a;ILae/a2;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,18 +18,18 @@
 
 
 # instance fields
-.field public final synthetic f:Lnd/b$a;
+.field public final synthetic g:Lnd/b$a;
 
-.field public final synthetic g:Lae/b2;
+.field public final synthetic h:Lae/a2;
 
 
 # direct methods
-.method public constructor <init>(Lnd/b$a;Lae/b2;)V
+.method public constructor <init>(Lnd/b$a;Lae/a2;)V
     .locals 0
 
-    iput-object p1, p0, Lnd/b$a$c;->f:Lnd/b$a;
+    iput-object p1, p0, Lnd/b$a$c;->g:Lnd/b$a;
 
-    iput-object p2, p0, Lnd/b$a$c;->g:Lae/b2;
+    iput-object p2, p0, Lnd/b$a$c;->h:Lae/a2;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -42,13 +42,13 @@
     .locals 11
 
     .line 1
-    iget-object p1, p0, Lnd/b$a$c;->f:Lnd/b$a;
+    iget-object p1, p0, Lnd/b$a$c;->g:Lnd/b$a;
 
     .line 2
     iget-object p1, p1, Lae/s;->f:Landroidx/fragment/app/Fragment;
 
     .line 3
-    invoke-static {p1}, Lcom/android/billingclient/api/c0;->e(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
+    invoke-static {p1}, Lcom/android/billingclient/api/b0;->f(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
 
     move-result-object p1
 
@@ -58,21 +58,21 @@
 
     const/4 v1, 0x0
 
-    iget-object v0, p0, Lnd/b$a$c;->g:Lae/b2;
+    iget-object v0, p0, Lnd/b$a$c;->h:Lae/a2;
 
     check-cast v0, Lnd/a;
 
     .line 4
-    iget-object v2, v0, Lnd/a;->b:Lvc/i;
+    iget-object v2, v0, Lnd/a;->b:Lvc/h;
 
     .line 5
-    iget-object v3, v2, Lvc/i;->a:Lcom/supercell/id/model/IdSocialAccount;
+    iget-object v3, v2, Lvc/h;->a:Lcom/supercell/id/model/IdSocialAccount;
 
     .line 6
-    iget-object v4, v2, Lvc/i;->b:Ljava/lang/String;
+    iget-object v4, v2, Lvc/h;->b:Ljava/lang/String;
 
     .line 7
-    iget-object v5, v2, Lvc/i;->c:Lcom/supercell/id/model/ProfileImage;
+    iget-object v5, v2, Lvc/h;->c:Lcom/supercell/id/model/ProfileImage;
 
     .line 8
     iget-object v6, v0, Lnd/a;->c:Lcom/supercell/id/model/IdRelationshipStatus$Acquaintance;
@@ -80,7 +80,7 @@
     const/4 v7, 0x0
 
     .line 9
-    iget-boolean v8, v2, Lvc/i;->g:Z
+    iget-boolean v8, v2, Lvc/h;->g:Z
 
     const/4 v10, 0x0
 
@@ -103,7 +103,7 @@
     .line 10
     invoke-direct/range {v0 .. v8}, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$BackStackEntry;-><init>(Ljava/lang/String;Lcom/supercell/id/model/IdSocialAccount;Ljava/lang/String;Lcom/supercell/id/model/ProfileImage;Lcom/supercell/id/model/IdRelationshipStatus;Lcom/supercell/id/model/IdPresenceStatus;ZLjava/lang/String;)V
 
-    sget-object v0, Lcom/supercell/id/ui/MainActivity;->s:Ljava/lang/ref/WeakReference;
+    sget-object v0, Lcom/supercell/id/ui/MainActivity;->t:Ljava/lang/ref/WeakReference;
 
     const/4 v0, 0x0
 

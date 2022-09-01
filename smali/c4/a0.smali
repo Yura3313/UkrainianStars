@@ -7,18 +7,18 @@
 
 
 # instance fields
-.field public final synthetic f:Lc4/y;
+.field public final synthetic g:Lc4/y;
 
-.field public final synthetic g:Ljava/util/concurrent/Callable;
+.field public final synthetic h:Ljava/util/concurrent/Callable;
 
 
 # direct methods
 .method public constructor <init>(Lc4/y;Ljava/util/concurrent/Callable;)V
     .locals 0
 
-    iput-object p1, p0, Lc4/a0;->f:Lc4/y;
+    iput-object p1, p0, Lc4/a0;->g:Lc4/y;
 
-    iput-object p2, p0, Lc4/a0;->g:Ljava/util/concurrent/Callable;
+    iput-object p2, p0, Lc4/a0;->h:Ljava/util/concurrent/Callable;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -32,9 +32,9 @@
 
     .line 1
     :try_start_0
-    iget-object v0, p0, Lc4/a0;->f:Lc4/y;
+    iget-object v0, p0, Lc4/a0;->g:Lc4/y;
 
-    iget-object v1, p0, Lc4/a0;->g:Ljava/util/concurrent/Callable;
+    iget-object v1, p0, Lc4/a0;->h:Ljava/util/concurrent/Callable;
 
     invoke-interface {v1}, Ljava/util/concurrent/Callable;->call()Ljava/lang/Object;
 
@@ -51,7 +51,7 @@
     move-exception v0
 
     .line 2
-    iget-object v1, p0, Lc4/a0;->f:Lc4/y;
+    iget-object v1, p0, Lc4/a0;->g:Lc4/y;
 
     new-instance v2, Ljava/lang/RuntimeException;
 
@@ -65,7 +65,7 @@
     move-exception v0
 
     .line 3
-    iget-object v1, p0, Lc4/a0;->f:Lc4/y;
+    iget-object v1, p0, Lc4/a0;->g:Lc4/y;
 
     invoke-virtual {v1, v0}, Lc4/y;->o(Ljava/lang/Exception;)V
 

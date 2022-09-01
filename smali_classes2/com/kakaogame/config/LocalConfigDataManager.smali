@@ -452,7 +452,7 @@
     const-string p2, "decryptConfig: "
 
     .line 6
-    invoke-static {p2, p1, v5}, Lcom/kakaogame/b;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {p2, p1, v5}, Landroid/support/v4/media/e;->b(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     if-nez p1, :cond_1
 

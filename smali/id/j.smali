@@ -7,18 +7,18 @@
 
 
 # instance fields
-.field public final synthetic f:Lze/o;
+.field public final synthetic g:Lze/o;
 
-.field public final synthetic g:Ljava/lang/ref/WeakReference;
+.field public final synthetic h:Ljava/lang/ref/WeakReference;
 
 
 # direct methods
 .method public constructor <init>(Lze/o;Ljava/lang/ref/WeakReference;)V
     .locals 0
 
-    iput-object p1, p0, Lid/j;->f:Lze/o;
+    iput-object p1, p0, Lid/j;->g:Lze/o;
 
-    iput-object p2, p0, Lid/j;->g:Ljava/lang/ref/WeakReference;
+    iput-object p2, p0, Lid/j;->h:Ljava/lang/ref/WeakReference;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -31,7 +31,7 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lid/j;->f:Lze/o;
+    iget-object v0, p0, Lid/j;->g:Lze/o;
 
     new-instance v1, Ljava/util/concurrent/CancellationException;
 
@@ -44,7 +44,7 @@
     if-eqz v0, :cond_0
 
     .line 2
-    iget-object v0, p0, Lid/j;->g:Ljava/lang/ref/WeakReference;
+    iget-object v0, p0, Lid/j;->h:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v0}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
 

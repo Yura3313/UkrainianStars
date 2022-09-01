@@ -23,14 +23,14 @@
 
 
 # instance fields
-.field public final synthetic f:Lcom/google/crypto/tink/shaded/protobuf/g0;
+.field public final synthetic g:Lcom/google/crypto/tink/shaded/protobuf/g0;
 
 
 # direct methods
 .method public constructor <init>(Lcom/google/crypto/tink/shaded/protobuf/g0;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/google/crypto/tink/shaded/protobuf/g0$d;->f:Lcom/google/crypto/tink/shaded/protobuf/g0;
+    iput-object p1, p0, Lcom/google/crypto/tink/shaded/protobuf/g0$d;->g:Lcom/google/crypto/tink/shaded/protobuf/g0;
 
     invoke-direct {p0}, Ljava/util/AbstractSet;-><init>()V
 
@@ -53,7 +53,7 @@
     if-nez v0, :cond_0
 
     .line 3
-    iget-object v0, p0, Lcom/google/crypto/tink/shaded/protobuf/g0$d;->f:Lcom/google/crypto/tink/shaded/protobuf/g0;
+    iget-object v0, p0, Lcom/google/crypto/tink/shaded/protobuf/g0$d;->g:Lcom/google/crypto/tink/shaded/protobuf/g0;
 
     invoke-interface {p1}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
@@ -81,7 +81,7 @@
 .method public final clear()V
     .locals 1
 
-    iget-object v0, p0, Lcom/google/crypto/tink/shaded/protobuf/g0$d;->f:Lcom/google/crypto/tink/shaded/protobuf/g0;
+    iget-object v0, p0, Lcom/google/crypto/tink/shaded/protobuf/g0$d;->g:Lcom/google/crypto/tink/shaded/protobuf/g0;
 
     invoke-virtual {v0}, Lcom/google/crypto/tink/shaded/protobuf/g0;->clear()V
 
@@ -95,7 +95,7 @@
     check-cast p1, Ljava/util/Map$Entry;
 
     .line 2
-    iget-object v0, p0, Lcom/google/crypto/tink/shaded/protobuf/g0$d;->f:Lcom/google/crypto/tink/shaded/protobuf/g0;
+    iget-object v0, p0, Lcom/google/crypto/tink/shaded/protobuf/g0$d;->g:Lcom/google/crypto/tink/shaded/protobuf/g0;
 
     invoke-interface {p1}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
@@ -149,7 +149,7 @@
 
     new-instance v0, Lcom/google/crypto/tink/shaded/protobuf/g0$c;
 
-    iget-object v1, p0, Lcom/google/crypto/tink/shaded/protobuf/g0$d;->f:Lcom/google/crypto/tink/shaded/protobuf/g0;
+    iget-object v1, p0, Lcom/google/crypto/tink/shaded/protobuf/g0$d;->g:Lcom/google/crypto/tink/shaded/protobuf/g0;
 
     invoke-direct {v0, v1}, Lcom/google/crypto/tink/shaded/protobuf/g0$c;-><init>(Lcom/google/crypto/tink/shaded/protobuf/g0;)V
 
@@ -170,7 +170,7 @@
     if-eqz v0, :cond_0
 
     .line 3
-    iget-object v0, p0, Lcom/google/crypto/tink/shaded/protobuf/g0$d;->f:Lcom/google/crypto/tink/shaded/protobuf/g0;
+    iget-object v0, p0, Lcom/google/crypto/tink/shaded/protobuf/g0$d;->g:Lcom/google/crypto/tink/shaded/protobuf/g0;
 
     invoke-interface {p1}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
@@ -191,7 +191,7 @@
 .method public final size()I
     .locals 1
 
-    iget-object v0, p0, Lcom/google/crypto/tink/shaded/protobuf/g0$d;->f:Lcom/google/crypto/tink/shaded/protobuf/g0;
+    iget-object v0, p0, Lcom/google/crypto/tink/shaded/protobuf/g0$d;->g:Lcom/google/crypto/tink/shaded/protobuf/g0;
 
     invoke-virtual {v0}, Lcom/google/crypto/tink/shaded/protobuf/g0;->size()I
 

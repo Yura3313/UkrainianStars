@@ -1,5 +1,5 @@
 .class public final Lbe/y$g;
-.super Lse/h;
+.super Lse/i;
 .source "ProfileStorage.kt"
 
 # interfaces
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lbe/y;->h(Ljava/lang/String;Ljava/lang/String;Z)Lze/e0;
+    value = Lbe/y;->h(Ljava/lang/String;Ljava/lang/String;Z)Lze/f0;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,20 +18,20 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/l<",
-        "Lze/e0<",
+        "Lze/f0<",
         "+",
         "Lcom/supercell/id/model/IdProfile;",
         ">;",
-        "Lie/h;",
+        "Lie/i;",
         ">;"
     }
 .end annotation
 
 
 # static fields
-.field public static final f:Lbe/y$g;
+.field public static final g:Lbe/y$g;
 
 
 # direct methods
@@ -42,7 +42,7 @@
 
     invoke-direct {v0}, Lbe/y$g;-><init>()V
 
-    sput-object v0, Lbe/y$g;->f:Lbe/y$g;
+    sput-object v0, Lbe/y$g;->g:Lbe/y$g;
 
     return-void
 .end method
@@ -52,7 +52,7 @@
 
     const/4 v0, 0x1
 
-    invoke-direct {p0, v0}, Lse/h;-><init>(I)V
+    invoke-direct {p0, v0}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -63,15 +63,15 @@
     .locals 1
 
     .line 1
-    check-cast p1, Lze/e0;
+    check-cast p1, Lze/f0;
 
     const-string v0, "it"
 
     .line 2
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 3
-    sget-object p1, Lie/h;->a:Lie/h;
+    sget-object p1, Lie/i;->a:Lie/i;
 
     return-object p1
 .end method

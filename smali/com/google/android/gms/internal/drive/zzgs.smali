@@ -15,11 +15,11 @@
 
 
 # instance fields
-.field public final f:Lcom/google/android/gms/drive/DriveId;
+.field public final g:Lcom/google/android/gms/drive/DriveId;
 
-.field public final g:I
+.field public final h:I
 
-.field public final h:Lcom/google/android/gms/drive/events/zzt;
+.field public final i:Lcom/google/android/gms/drive/events/zzt;
 
 
 # direct methods
@@ -42,13 +42,13 @@
     invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lcom/google/android/gms/internal/drive/zzgs;->f:Lcom/google/android/gms/drive/DriveId;
+    iput-object p1, p0, Lcom/google/android/gms/internal/drive/zzgs;->g:Lcom/google/android/gms/drive/DriveId;
 
     .line 3
-    iput p2, p0, Lcom/google/android/gms/internal/drive/zzgs;->g:I
+    iput p2, p0, Lcom/google/android/gms/internal/drive/zzgs;->h:I
 
     .line 4
-    iput-object p3, p0, Lcom/google/android/gms/internal/drive/zzgs;->h:Lcom/google/android/gms/drive/events/zzt;
+    iput-object p3, p0, Lcom/google/android/gms/internal/drive/zzgs;->i:Lcom/google/android/gms/drive/events/zzt;
 
     return-void
 .end method
@@ -68,7 +68,7 @@
     const/4 v1, 0x2
 
     .line 2
-    iget-object v2, p0, Lcom/google/android/gms/internal/drive/zzgs;->f:Lcom/google/android/gms/drive/DriveId;
+    iget-object v2, p0, Lcom/google/android/gms/internal/drive/zzgs;->g:Lcom/google/android/gms/drive/DriveId;
 
     const/4 v3, 0x0
 
@@ -77,7 +77,7 @@
     const/4 v1, 0x3
 
     .line 3
-    iget v2, p0, Lcom/google/android/gms/internal/drive/zzgs;->g:I
+    iget v2, p0, Lcom/google/android/gms/internal/drive/zzgs;->h:I
 
     const/4 v4, 0x4
 
@@ -88,7 +88,7 @@
     invoke-virtual {p1, v2}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 6
-    iget-object v1, p0, Lcom/google/android/gms/internal/drive/zzgs;->h:Lcom/google/android/gms/drive/events/zzt;
+    iget-object v1, p0, Lcom/google/android/gms/internal/drive/zzgs;->i:Lcom/google/android/gms/drive/events/zzt;
 
     invoke-static {p1, v4, v1, p2, v3}, Le2/b;->l(Landroid/os/Parcel;ILandroid/os/Parcelable;IZ)V
 

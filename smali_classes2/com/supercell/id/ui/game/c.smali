@@ -1,5 +1,5 @@
 .class public final Lcom/supercell/id/ui/game/c;
-.super Lse/h;
+.super Lse/i;
 .source "GameFragment.kt"
 
 # interfaces
@@ -9,7 +9,7 @@
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/p<",
         "Landroid/widget/TextView;",
         "Ljava/lang/String;",
@@ -20,7 +20,7 @@
 
 
 # static fields
-.field public static final f:Lcom/supercell/id/ui/game/c;
+.field public static final g:Lcom/supercell/id/ui/game/c;
 
 
 # direct methods
@@ -31,7 +31,7 @@
 
     invoke-direct {v0}, Lcom/supercell/id/ui/game/c;-><init>()V
 
-    sput-object v0, Lcom/supercell/id/ui/game/c;->f:Lcom/supercell/id/ui/game/c;
+    sput-object v0, Lcom/supercell/id/ui/game/c;->g:Lcom/supercell/id/ui/game/c;
 
     return-void
 .end method
@@ -41,7 +41,7 @@
 
     const/4 v0, 0x2
 
-    invoke-direct {p0, v0}, Lse/h;-><init>(I)V
+    invoke-direct {p0, v0}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -59,11 +59,11 @@
     const-string v0, "<anonymous parameter 0>"
 
     .line 2
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string p1, "text"
 
-    invoke-static {p2, p1}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, p1}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 3
     sget-object p1, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
@@ -86,7 +86,7 @@
 
     const-string p2, "(this as java.lang.String).toUpperCase(locale)"
 
-    invoke-static {p1, p2}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p2}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     return-object p1
 .end method

@@ -60,17 +60,17 @@
     const-string v2, "result"
 
     .line 2
-    invoke-static {p1, v2}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v2}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 3
-    iget v2, p1, Landroidx/activity/result/ActivityResult;->f:I
+    iget v2, p1, Landroidx/activity/result/ActivityResult;->g:I
 
     const/4 v3, -0x1
 
     if-ne v2, v3, :cond_2
 
     .line 4
-    iget-object p1, p1, Landroidx/activity/result/ActivityResult;->g:Landroid/content/Intent;
+    iget-object p1, p1, Landroidx/activity/result/ActivityResult;->h:Landroid/content/Intent;
 
     if-eqz p1, :cond_0
 

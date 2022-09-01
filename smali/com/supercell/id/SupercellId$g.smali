@@ -1,5 +1,5 @@
 .class public final Lcom/supercell/id/SupercellId$g;
-.super Lse/h;
+.super Lse/i;
 .source "SupercellId.kt"
 
 # interfaces
@@ -18,16 +18,16 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/a<",
-        "Lie/h;",
+        "Lie/i;",
         ">;"
     }
 .end annotation
 
 
 # static fields
-.field public static final f:Lcom/supercell/id/SupercellId$g;
+.field public static final g:Lcom/supercell/id/SupercellId$g;
 
 
 # direct methods
@@ -38,7 +38,7 @@
 
     invoke-direct {v0}, Lcom/supercell/id/SupercellId$g;-><init>()V
 
-    sput-object v0, Lcom/supercell/id/SupercellId$g;->f:Lcom/supercell/id/SupercellId$g;
+    sput-object v0, Lcom/supercell/id/SupercellId$g;->g:Lcom/supercell/id/SupercellId$g;
 
     return-void
 .end method
@@ -48,7 +48,7 @@
 
     const/4 v0, 0x0
 
-    invoke-direct {p0, v0}, Lse/h;-><init>(I)V
+    invoke-direct {p0, v0}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -66,22 +66,22 @@
     move-result-object v0
 
     .line 2
-    iget-object v0, v0, Lae/u;->t:Lud/q0;
+    iget-object v0, v0, Lae/u;->t:Lud/o0;
 
     .line 3
-    iget-object v1, v0, Lud/p0;->a:Landroid/content/Context;
+    iget-object v1, v0, Lud/n0;->a:Landroid/content/Context;
 
-    invoke-virtual {v0, v1}, Lud/p0;->a(Landroid/content/Context;)Ljava/io/File;
+    invoke-virtual {v0, v1}, Lud/n0;->a(Landroid/content/Context;)Ljava/io/File;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
-    invoke-static {v0}, Lpe/d;->g(Ljava/io/File;)Z
+    invoke-static {v0}, Lpe/d;->f(Ljava/io/File;)Z
 
     .line 4
     :cond_0
-    sget-object v0, Lie/h;->a:Lie/h;
+    sget-object v0, Lie/i;->a:Lie/i;
 
     return-object v0
 .end method

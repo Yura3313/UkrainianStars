@@ -53,7 +53,7 @@
     move-exception p0
 
     .line 4
-    invoke-static {p0}, Lae/w;->b(Ljava/lang/Throwable;)V
+    invoke-static {p0}, Lk3/f4;->b(Ljava/lang/Throwable;)V
 
     :cond_0
     const/4 p0, 0x0
@@ -86,7 +86,7 @@
     .locals 3
 
     .line 1
-    sget-object v0, Lfc/f;->g:Lfc/f;
+    sget-object v0, Lfc/f;->h:Lfc/f;
 
     iget-object v1, p0, Ljc/c;->a:Ljava/lang/ref/WeakReference;
 
@@ -135,7 +135,7 @@
 
     .line 3
     :cond_0
-    sget-object v0, Lfc/f;->f:Lfc/f;
+    sget-object v0, Lfc/f;->g:Lfc/f;
 
     :cond_1
     :goto_0

@@ -33,7 +33,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lze/o<",
-            "Lie/h;",
+            "Lie/i;",
             ">;"
         }
     .end annotation
@@ -43,7 +43,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lze/o<",
-            "Lie/h;",
+            "Lie/i;",
             ">;"
         }
     .end annotation
@@ -53,7 +53,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lze/o<",
-            "Lie/h;",
+            "Lie/i;",
             ">;"
         }
     .end annotation
@@ -63,18 +63,18 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lze/o<",
-            "Lie/h;",
+            "Lie/i;",
             ">;"
         }
     .end annotation
 .end field
 
-.field public final e:Lze/f0;
+.field public final e:Lze/g0;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lze/e0<",
+            "Lze/f0<",
             "Ljava/util/List<",
-            "Lie/h;",
+            "Lie/i;",
             ">;>;"
         }
     .end annotation
@@ -124,7 +124,7 @@
     aput-object v2, v1, v5
 
     .line 1
-    invoke-static {v1}, Lcom/android/billingclient/api/z;->i([Ljava/lang/Object;)Ljava/util/List;
+    invoke-static {v1}, Lcom/android/billingclient/api/y;->d([Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object v1
 
@@ -145,7 +145,7 @@
     aput-object v1, v0, v5
 
     .line 2
-    invoke-static {v0}, Lcom/android/billingclient/api/z;->i([Ljava/lang/Object;)Ljava/util/List;
+    invoke-static {v0}, Lcom/android/billingclient/api/y;->d([Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object v0
 
@@ -159,7 +159,7 @@
 
     const-string v0, "game"
 
-    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -169,7 +169,7 @@
     iput-object p2, p0, Lpd/x;->i:Ljava/lang/String;
 
     .line 2
-    invoke-static {}, Lbf/g;->c()Lze/o;
+    invoke-static {}, Landroidx/lifecycle/b0;->b()Lze/o;
 
     move-result-object p1
 
@@ -178,7 +178,7 @@
     iput-object p1, p0, Lpd/x;->a:Lze/p;
 
     .line 3
-    invoke-static {}, Lbf/g;->c()Lze/o;
+    invoke-static {}, Landroidx/lifecycle/b0;->b()Lze/o;
 
     move-result-object p1
 
@@ -189,7 +189,7 @@
     iput-object p2, p0, Lpd/x;->b:Lze/p;
 
     .line 4
-    invoke-static {}, Lbf/g;->c()Lze/o;
+    invoke-static {}, Landroidx/lifecycle/b0;->b()Lze/o;
 
     move-result-object p2
 
@@ -200,7 +200,7 @@
     iput-object v0, p0, Lpd/x;->c:Lze/p;
 
     .line 5
-    invoke-static {}, Lbf/g;->c()Lze/o;
+    invoke-static {}, Landroidx/lifecycle/b0;->b()Lze/o;
 
     move-result-object v0
 
@@ -212,7 +212,7 @@
 
     const/4 v1, 0x3
 
-    new-array v2, v1, [Lze/e0;
+    new-array v2, v1, [Lze/f0;
 
     const/4 v3, 0x0
 
@@ -227,21 +227,21 @@
     aput-object v0, v2, p1
 
     .line 6
-    sget-object p1, Lze/u0;->f:Lze/u0;
+    sget-object p1, Lze/v0;->g:Lze/v0;
 
-    new-instance p2, Lae/s1;
+    new-instance p2, Lae/r1;
 
     const/4 v0, 0x0
 
-    invoke-direct {p2, v2, v0}, Lae/s1;-><init>([Lze/e0;Lke/d;)V
+    invoke-direct {p2, v2, v0}, Lae/r1;-><init>([Lze/f0;Lke/d;)V
 
-    invoke-static {p1, v0, p2, v1}, La5/g0;->j(Lze/a0;Lke/f;Lre/p;I)Lze/e0;
+    invoke-static {p1, v0, p2, v1}, La5/b0;->b(Lze/a0;Lke/f;Lre/p;I)Lze/f0;
 
     move-result-object p1
 
-    check-cast p1, Lze/f0;
+    check-cast p1, Lze/g0;
 
-    iput-object p1, p0, Lpd/x;->e:Lze/f0;
+    iput-object p1, p0, Lpd/x;->e:Lze/g0;
 
     .line 7
     invoke-static {p3}, Lae/z2;->b(Landroid/view/View;)Landroid/graphics/Rect;
@@ -262,7 +262,7 @@
 
 
 # virtual methods
-.method public final a()Lze/e0;
+.method public final a()Lze/f0;
     .locals 1
 
     iget-object v0, p0, Lpd/x;->a:Lze/p;
@@ -276,16 +276,16 @@
     .line 1
     iget-object v0, p0, Lpd/x;->c:Lze/p;
 
-    sget-object v1, Lie/h;->a:Lie/h;
+    sget-object v1, Lie/i;->a:Lie/i;
 
     .line 2
-    invoke-virtual {v0, v1}, Lze/e1;->G(Ljava/lang/Object;)Z
+    invoke-virtual {v0, v1}, Lze/f1;->G(Ljava/lang/Object;)Z
 
     return-void
 .end method
 
 .method public final c(Ljava/util/List;)V
-    .locals 11
+    .locals 12
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -310,9 +310,9 @@
 
     const-string v1, "mainActivity.resources"
 
-    invoke-static {v0, v1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-static {v0}, Lcom/android/billingclient/api/c0;->j(Landroid/content/res/Resources;)Z
+    invoke-static {v0}, Lcom/android/billingclient/api/b0;->k(Landroid/content/res/Resources;)Z
 
     move-result v0
 
@@ -342,48 +342,48 @@
 
     const/16 v4, 0x18
 
-    const/4 v5, 0x0
+    const/4 v8, 0x0
 
     if-eqz v0, :cond_3
 
     invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
-    move-result-object v6
+    move-result-object v5
 
-    move-object v0, v6
+    move-object v0, v5
 
     check-cast v0, Ljava/lang/String;
 
     .line 4
     :try_start_0
-    sget-object v8, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
+    sget-object v6, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
 
-    invoke-virtual {v8}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lae/u;
+    invoke-virtual {v6}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lae/u;
 
-    move-result-object v8
+    move-result-object v6
 
     .line 5
-    iget-object v8, v8, Lae/u;->s:Lud/j;
+    iget-object v6, v6, Lae/u;->s:Lud/i;
 
     .line 6
-    invoke-virtual {v8}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-virtual {v6}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     const-string v9, "key"
 
     .line 7
-    invoke-static {v0, v9}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v9}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 8
-    iget-object v8, v8, Lud/j;->h:Lud/r0;
+    iget-object v6, v6, Lud/i;->h:Lud/p0;
 
-    invoke-virtual {v8, v0}, Lud/p0;->c(Ljava/lang/String;)Ljava/io/File;
+    invoke-virtual {v6, v0}, Lud/n0;->c(Ljava/lang/String;)Ljava/io/File;
 
-    move-result-object v8
+    move-result-object v6
 
-    if-eqz v8, :cond_2
+    if-eqz v6, :cond_2
 
     .line 9
-    invoke-virtual {v8}, Ljava/io/File;->getPath()Ljava/lang/String;
+    invoke-virtual {v6}, Ljava/io/File;->getPath()Ljava/lang/String;
 
     move-result-object v0
 
@@ -395,7 +395,7 @@
 
     .line 10
     :cond_2
-    new-instance v8, Ljava/io/FileNotFoundException;
+    new-instance v6, Ljava/io/FileNotFoundException;
 
     new-instance v9, Ljava/lang/StringBuilder;
 
@@ -415,9 +415,9 @@
 
     move-result-object v0
 
-    invoke-direct {v8, v0}, Ljava/io/FileNotFoundException;-><init>(Ljava/lang/String;)V
+    invoke-direct {v6, v0}, Ljava/io/FileNotFoundException;-><init>(Ljava/lang/String;)V
 
-    throw v8
+    throw v6
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -425,19 +425,19 @@
     move-exception v0
 
     .line 11
-    sget-object v8, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
+    sget-object v6, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
 
-    invoke-virtual {v8}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lae/u;
+    invoke-virtual {v6}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lae/u;
 
-    move-result-object v8
+    move-result-object v6
 
     .line 12
-    iget-object v8, v8, Lae/u;->m:La5/d0;
+    iget-object v6, v6, Lae/u;->m:Lpe/a;
 
     .line 13
     invoke-virtual {v0}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
 
-    invoke-static {v8, v3, v2, v5, v4}, La5/d0;->a(La5/d0;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;I)V
+    invoke-static {v6, v3, v2, v8, v4}, Lpe/a;->e(Lpe/a;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;I)V
 
     .line 14
     invoke-virtual {v7}, Landroid/media/MediaPlayer;->reset()V
@@ -450,11 +450,11 @@
     goto :goto_2
 
     :cond_3
-    move-object v6, v5
+    move-object v5, v8
 
     .line 15
     :goto_2
-    move-object v0, v6
+    move-object v0, v5
 
     check-cast v0, Ljava/lang/String;
 
@@ -468,25 +468,25 @@
     move-result-object v0
 
     .line 17
-    iget-object v0, v0, Lae/u;->m:La5/d0;
+    iget-object v0, v0, Lae/u;->m:Lpe/a;
 
     .line 18
-    invoke-static {v0, v3, v2, v5, v4}, La5/d0;->a(La5/d0;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;I)V
+    invoke-static {v0, v3, v2, v8, v4}, Lpe/a;->e(Lpe/a;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;I)V
 
     .line 19
     iget-object v0, p0, Lpd/x;->a:Lze/p;
 
     .line 20
-    sget-object v1, Lie/h;->a:Lie/h;
+    sget-object v1, Lie/i;->a:Lie/i;
 
     .line 21
-    invoke-virtual {v0, v1}, Lze/e1;->G(Ljava/lang/Object;)Z
+    invoke-virtual {v0, v1}, Lze/f1;->G(Ljava/lang/Object;)Z
 
     .line 22
     iget-object v0, p0, Lpd/x;->d:Lze/p;
 
     .line 23
-    invoke-virtual {v0, v1}, Lze/e1;->G(Ljava/lang/Object;)Z
+    invoke-virtual {v0, v1}, Lze/f1;->G(Ljava/lang/Object;)Z
 
     .line 24
     invoke-virtual {v7}, Landroid/media/MediaPlayer;->release()V
@@ -495,18 +495,18 @@
 
     .line 25
     :cond_4
-    new-instance v8, Lpd/t;
+    new-instance v9, Lpd/t;
 
     iget-object v1, p0, Lpd/x;->h:Lcom/supercell/id/ui/MainActivity;
 
     iget-object v2, p0, Lpd/x;->i:Ljava/lang/String;
 
-    invoke-direct {v8, v1, v7, v2}, Lpd/t;-><init>(Landroid/content/Context;Landroid/media/MediaPlayer;Ljava/lang/String;)V
+    invoke-direct {v9, v1, v7, v2}, Lpd/t;-><init>(Landroid/content/Context;Landroid/media/MediaPlayer;Ljava/lang/String;)V
 
     .line 26
     iget-object v1, p0, Lpd/x;->f:Landroid/graphics/Rect;
 
-    invoke-virtual {v8, v1}, Lpd/t;->setIdLogoFrameOnScreen(Landroid/graphics/Rect;)V
+    invoke-virtual {v9, v1}, Lpd/t;->setIdLogoFrameOnScreen(Landroid/graphics/Rect;)V
 
     .line 27
     new-instance v1, Ljava/util/ArrayList;
@@ -542,7 +542,7 @@
 
     if-nez v4, :cond_6
 
-    move-object v3, v5
+    move-object v3, v8
 
     :cond_6
     check-cast v3, Lcom/supercell/id/ui/game/GameFragment;
@@ -556,7 +556,7 @@
 
     .line 32
     :cond_7
-    invoke-static {v1}, Lje/j;->A(Ljava/util/List;)Ljava/lang/Object;
+    invoke-static {v1}, Lje/j;->v(Ljava/util/List;)Ljava/lang/Object;
 
     move-result-object v1
 
@@ -573,32 +573,32 @@
     if-eqz v1, :cond_9
 
     .line 34
-    iget-object v2, v1, Lcom/supercell/id/ui/game/GameFragment;->v0:Lze/p;
+    iget-object v2, v1, Lcom/supercell/id/ui/game/GameFragment;->w0:Lze/p;
 
     if-eqz v2, :cond_9
 
     .line 35
-    sget-object v3, Lpd/x$a;->f:Lpd/x$a;
+    sget-object v3, Lpd/x$a;->g:Lpd/x$a;
 
-    invoke-static {v2, v8, v3}, Lae/u1;->n(Lze/e0;Ljava/lang/Object;Lre/p;)Lze/e0;
+    invoke-static {v2, v9, v3}, Lae/t1;->m(Lze/f0;Ljava/lang/Object;Lre/p;)Lze/f0;
 
     .line 36
     :cond_9
-    new-instance v9, Ljava/lang/ref/WeakReference;
+    new-instance v10, Ljava/lang/ref/WeakReference;
 
-    invoke-direct {v9, v1}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
+    invoke-direct {v10, v1}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
 
     .line 37
     new-instance v1, Lpd/x$b;
 
-    invoke-direct {v1, p0, v8, v7}, Lpd/x$b;-><init>(Lpd/x;Lpd/t;Landroid/media/MediaPlayer;)V
+    invoke-direct {v1, p0, v9, v7}, Lpd/x$b;-><init>(Lpd/x;Lpd/t;Landroid/media/MediaPlayer;)V
 
     invoke-virtual {v7, v1}, Landroid/media/MediaPlayer;->setOnCompletionListener(Landroid/media/MediaPlayer$OnCompletionListener;)V
 
     .line 38
-    new-instance v10, Lpd/x$c;
+    new-instance v11, Lpd/x$c;
 
-    move-object v1, v10
+    move-object v1, v11
 
     move-object v2, p0
 
@@ -606,16 +606,16 @@
 
     move-object v4, v0
 
-    move-object v5, v9
+    move-object v5, v10
 
-    move-object v6, v8
+    move-object v6, v9
 
     invoke-direct/range {v1 .. v6}, Lpd/x$c;-><init>(Lpd/x;Landroid/media/MediaPlayer;Ljava/lang/String;Ljava/lang/ref/WeakReference;Lpd/t;)V
 
-    invoke-virtual {v7, v10}, Landroid/media/MediaPlayer;->setOnErrorListener(Landroid/media/MediaPlayer$OnErrorListener;)V
+    invoke-virtual {v7, v11}, Landroid/media/MediaPlayer;->setOnErrorListener(Landroid/media/MediaPlayer$OnErrorListener;)V
 
     .line 39
-    invoke-virtual {v8}, Lpd/t;->getVideoReady()Lze/o;
+    invoke-virtual {v9}, Lpd/t;->getVideoReady()Lze/o;
 
     move-result-object v0
 
@@ -623,48 +623,66 @@
 
     invoke-direct {v1, p0}, Lpd/x$d;-><init>(Lpd/x;)V
 
-    invoke-static {v0, v1}, Lae/u1;->m(Lze/e0;Lre/l;)Lze/e0;
+    invoke-static {v0, v1}, Lae/t1;->l(Lze/f0;Lre/l;)Lze/f0;
 
     .line 40
-    invoke-virtual {v8}, Lpd/t;->getAnimationComplete()Lze/o;
+    invoke-virtual {v9}, Lpd/t;->getAnimationComplete()Lze/o;
 
     move-result-object v1
 
     const/4 v3, 0x0
 
-    sget-object v4, Lpd/x$e;->f:Lpd/x$e;
+    sget-object v4, Lpd/x$e;->g:Lpd/x$e;
 
     .line 41
     new-instance v5, Lpd/x$f;
 
-    invoke-direct {v5, v9, v8}, Lpd/x$f;-><init>(Ljava/lang/ref/WeakReference;Lpd/t;)V
+    invoke-direct {v5, v10, v9}, Lpd/x$f;-><init>(Ljava/lang/ref/WeakReference;Lpd/t;)V
 
     const/4 v6, 0x2
 
     .line 42
-    invoke-static/range {v1 .. v6}, Lae/u1;->k(Lze/e0;Ljava/lang/Object;Lre/p;Lre/p;Lre/l;I)Lze/e0;
+    invoke-static/range {v1 .. v6}, Lae/t1;->j(Lze/f0;Ljava/lang/Object;Lre/p;Lre/p;Lre/l;I)Lze/f0;
 
     .line 43
-    iget-object v0, p0, Lpd/x;->e:Lze/f0;
+    iget-object v0, p0, Lpd/x;->e:Lze/g0;
 
     .line 44
     new-instance v1, Lpd/x$g;
 
-    invoke-direct {v1, v7, v9, v8}, Lpd/x$g;-><init>(Landroid/media/MediaPlayer;Ljava/lang/ref/WeakReference;Lpd/t;)V
+    invoke-direct {v1, v7, v10, v9}, Lpd/x$g;-><init>(Landroid/media/MediaPlayer;Ljava/lang/ref/WeakReference;Lpd/t;)V
 
-    invoke-static {v0, v1}, Lae/u1;->d(Lze/e0;Lre/l;)Lze/e0;
+    invoke-static {v0, v1}, Lae/t1;->c(Lze/f0;Lre/l;)Lze/f0;
 
     .line 45
-    iget-object v0, p0, Lpd/x;->e:Lze/f0;
+    iget-object v0, p0, Lpd/x;->e:Lze/g0;
 
     .line 46
     new-instance v1, Lpd/x$h;
 
     invoke-direct {v1, p0}, Lpd/x$h;-><init>(Lpd/x;)V
 
-    invoke-static {v0, v1}, Lae/u1;->b(Lze/e0;Lre/a;)Lze/e0;
+    const-string v2, "$this$alwaysUi"
 
     .line 47
+    invoke-static {v0, v2}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 48
+    sget-object v2, Lze/l0;->a:Lze/u0;
+
+    .line 49
+    sget-object v2, Laf/q;->a:Lze/j1;
+
+    .line 50
+    new-instance v3, Lae/u1;
+
+    invoke-direct {v3, v0, v1, v8}, Lae/u1;-><init>(Lze/f0;Lre/a;Lke/d;)V
+
+    const/4 v0, 0x2
+
+    invoke-static {v2, v3, v0}, La5/b0;->j(Lke/f;Lre/p;I)Lze/c1;
+
+    .line 51
     iget-object v0, p0, Lpd/x;->h:Lcom/supercell/id/ui/MainActivity;
 
     new-instance v1, Landroid/view/ViewGroup$LayoutParams;
@@ -673,20 +691,20 @@
 
     invoke-direct {v1, v2, v2}, Landroid/view/ViewGroup$LayoutParams;-><init>(II)V
 
-    invoke-virtual {v0, v8, v1}, Landroidx/appcompat/app/AppCompatActivity;->addContentView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
+    invoke-virtual {v0, v9, v1}, Landroidx/appcompat/app/AppCompatActivity;->addContentView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
 
-    .line 48
+    .line 52
     sget-object v0, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
 
     invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lae/u;
 
     move-result-object v0
 
-    .line 49
+    .line 53
     iget-object v0, v0, Lae/u;->w:Lsc/a;
 
-    .line 50
-    sget-object v1, Lsc/a$a;->j:Lsc/a$a;
+    .line 54
+    sget-object v1, Lsc/a$a;->k:Lsc/a$a;
 
     invoke-virtual {v0, v1}, Lsc/a;->b(Lsc/a$a;)V
 
@@ -746,10 +764,10 @@
     .line 1
     iget-object v0, p0, Lpd/x;->b:Lze/p;
 
-    sget-object v1, Lie/h;->a:Lie/h;
+    sget-object v1, Lie/i;->a:Lie/i;
 
     .line 2
-    invoke-virtual {v0, v1}, Lze/e1;->G(Ljava/lang/Object;)Z
+    invoke-virtual {v0, v1}, Lze/f1;->G(Ljava/lang/Object;)Z
 
     return-void
 .end method
@@ -758,7 +776,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lpd/x;->e:Lze/f0;
+    iget-object v0, p0, Lpd/x;->e:Lze/g0;
 
     .line 2
     invoke-virtual {v0}, Lze/a;->isActive()Z
@@ -768,19 +786,19 @@
     return v0
 .end method
 
-.method public final f()Lze/e0;
+.method public final f()Lze/f0;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lze/e0<",
+            "Lze/f0<",
             "Ljava/util/List<",
-            "Lie/h;",
+            "Lie/i;",
             ">;>;"
         }
     .end annotation
 
-    iget-object v0, p0, Lpd/x;->e:Lze/f0;
+    iget-object v0, p0, Lpd/x;->e:Lze/g0;
 
     return-object v0
 .end method

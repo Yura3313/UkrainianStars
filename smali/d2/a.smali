@@ -12,7 +12,7 @@
     .end param
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/gms/common/api/Status;->i:Landroid/app/PendingIntent;
+    iget-object v0, p0, Lcom/google/android/gms/common/api/Status;->j:Landroid/app/PendingIntent;
 
     if-eqz v0, :cond_0
 

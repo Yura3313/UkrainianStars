@@ -271,7 +271,7 @@
     .end annotation
 .end field
 
-.field public static a:Lk3/c9;
+.field public static a:Lcom/helpshift/util/a0;
 
 .field public static a0:Lz3/h$a;
     .annotation system Ldalvik/annotation/Signature;
@@ -388,7 +388,7 @@
     .end annotation
 .end field
 
-.field public static final g:Lv3/o1;
+.field public static final g:Lv3/n1;
 
 .field public static g0:Lz3/h$a;
     .annotation system Ldalvik/annotation/Signature;
@@ -705,16 +705,16 @@
     sput-object v0, Lz3/h;->f:Ljava/util/ArrayList;
 
     .line 6
-    new-instance v0, Lv3/o1;
+    new-instance v0, Lv3/n1;
 
     .line 7
-    invoke-static {}, Lk3/q5;->n()Landroid/net/Uri;
+    invoke-static {}, Lcom/helpshift/util/x;->g()Landroid/net/Uri;
 
     move-result-object v1
 
-    invoke-direct {v0, v1}, Lv3/o1;-><init>(Landroid/net/Uri;)V
+    invoke-direct {v0, v1}, Lv3/n1;-><init>(Landroid/net/Uri;)V
 
-    sput-object v0, Lz3/h;->g:Lv3/o1;
+    sput-object v0, Lz3/h;->g:Lv3/n1;
 
     const/4 v0, 0x0
 
@@ -1455,7 +1455,7 @@
     sget-object v0, Lz3/h;->h:Lz3/p0;
 
     .line 3
-    iget-object v0, v0, Lz3/p0;->a:Landroid/content/Context;
+    iget-object v0, v0, Lz3/p0;->g:Landroid/content/Context;
 
     .line 4
     sget-object v1, Lz3/h;->i:Ljava/lang/Boolean;
@@ -1507,7 +1507,7 @@
     move-result-object v0
 
     .line 10
-    iget-object v0, v0, Lz3/o;->f:Lz3/q;
+    iget-object v0, v0, Lz3/o;->l:Lz3/q;
 
     const-string v1, "Got Exception on PhenotypeFlag.get on Play device"
 

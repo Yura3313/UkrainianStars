@@ -182,7 +182,7 @@
     if-eqz p4, :cond_a
 
     .line 21
-    invoke-static {p1}, Ll2/g;->d(Ljava/lang/CharSequence;)Z
+    invoke-static {p1}, Ll2/p;->h(Ljava/lang/CharSequence;)Z
 
     move-result p4
 
@@ -194,7 +194,7 @@
 
     .line 22
     :cond_4
-    invoke-static {p2}, Ll2/g;->d(Ljava/lang/CharSequence;)Z
+    invoke-static {p2}, Ll2/p;->h(Ljava/lang/CharSequence;)Z
 
     move-result p4
 
@@ -211,7 +211,7 @@
 
     .line 23
     :goto_1
-    invoke-static {p3}, Ll2/g;->d(Ljava/lang/CharSequence;)Z
+    invoke-static {p3}, Ll2/p;->h(Ljava/lang/CharSequence;)Z
 
     move-result v0
 
@@ -223,7 +223,7 @@
 
     .line 24
     :cond_6
-    invoke-static {p1}, Ll2/g;->d(Ljava/lang/CharSequence;)Z
+    invoke-static {p1}, Ll2/p;->h(Ljava/lang/CharSequence;)Z
 
     move-result v0
 
@@ -234,7 +234,7 @@
     if-eqz v0, :cond_9
 
     .line 25
-    invoke-static {p4}, Lcom/google/android/play/core/appupdate/g;->b(Ljava/lang/String;)Z
+    invoke-static {p4}, La5/b0;->d(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -243,7 +243,7 @@
     if-eqz v0, :cond_8
 
     .line 26
-    invoke-static {p3}, Lcom/helpshift/util/f0;->a(Ljava/lang/String;)Z
+    invoke-static {p3}, La5/a0;->d(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -291,7 +291,7 @@
     invoke-virtual {v8, v9}, Lmb/b;->a(Ljava/lang/Runnable;)V
 
     .line 30
-    sget-object p0, Lcom/helpshift/util/u;->f:Ljava/util/concurrent/atomic/AtomicBoolean;
+    sget-object p0, Lcom/helpshift/util/t;->f:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     const/4 p1, 0x0
 

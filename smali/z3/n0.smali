@@ -21,13 +21,13 @@
 
 
 # instance fields
-.field public final f:J
+.field public final g:J
 
-.field public final g:Z
+.field public final h:Z
 
-.field public final h:Ljava/lang/String;
+.field public final i:Ljava/lang/String;
 
-.field public final synthetic i:Lz3/l0;
+.field public final synthetic j:Lz3/l0;
 
 
 # direct methods
@@ -35,7 +35,7 @@
     .locals 3
 
     .line 10
-    iput-object p1, p0, Lz3/n0;->i:Lz3/l0;
+    iput-object p1, p0, Lz3/n0;->j:Lz3/l0;
 
     const/4 v0, 0x0
 
@@ -43,22 +43,22 @@
     invoke-direct {p0, p2, v0}, Ljava/util/concurrent/FutureTask;-><init>(Ljava/lang/Runnable;Ljava/lang/Object;)V
 
     .line 12
-    sget-object p2, Lz3/l0;->k:Ljava/util/concurrent/atomic/AtomicLong;
+    sget-object p2, Lz3/l0;->q:Ljava/util/concurrent/atomic/AtomicLong;
 
     .line 13
     invoke-virtual {p2}, Ljava/util/concurrent/atomic/AtomicLong;->getAndIncrement()J
 
     move-result-wide v0
 
-    iput-wide v0, p0, Lz3/n0;->f:J
+    iput-wide v0, p0, Lz3/n0;->g:J
 
     .line 14
-    iput-object p3, p0, Lz3/n0;->h:Ljava/lang/String;
+    iput-object p3, p0, Lz3/n0;->i:Ljava/lang/String;
 
     const/4 p2, 0x0
 
     .line 15
-    iput-boolean p2, p0, Lz3/n0;->g:Z
+    iput-boolean p2, p0, Lz3/n0;->h:Z
 
     const-wide p2, 0x7fffffffffffffffL
 
@@ -72,7 +72,7 @@
     move-result-object p1
 
     .line 17
-    iget-object p1, p1, Lz3/o;->f:Lz3/q;
+    iget-object p1, p1, Lz3/o;->l:Lz3/q;
 
     const-string p2, "Tasks index overflow"
 
@@ -96,28 +96,28 @@
     .end annotation
 
     .line 1
-    iput-object p1, p0, Lz3/n0;->i:Lz3/l0;
+    iput-object p1, p0, Lz3/n0;->j:Lz3/l0;
 
     .line 2
     invoke-direct {p0, p2}, Ljava/util/concurrent/FutureTask;-><init>(Ljava/util/concurrent/Callable;)V
 
     .line 3
-    sget-object p2, Lz3/l0;->k:Ljava/util/concurrent/atomic/AtomicLong;
+    sget-object p2, Lz3/l0;->q:Ljava/util/concurrent/atomic/AtomicLong;
 
     .line 4
     invoke-virtual {p2}, Ljava/util/concurrent/atomic/AtomicLong;->getAndIncrement()J
 
     move-result-wide v0
 
-    iput-wide v0, p0, Lz3/n0;->f:J
+    iput-wide v0, p0, Lz3/n0;->g:J
 
     const-string p2, "Task exception on worker thread"
 
     .line 5
-    iput-object p2, p0, Lz3/n0;->h:Ljava/lang/String;
+    iput-object p2, p0, Lz3/n0;->i:Ljava/lang/String;
 
     .line 6
-    iput-boolean p3, p0, Lz3/n0;->g:Z
+    iput-boolean p3, p0, Lz3/n0;->h:Z
 
     const-wide p2, 0x7fffffffffffffffL
 
@@ -131,7 +131,7 @@
     move-result-object p1
 
     .line 8
-    iget-object p1, p1, Lz3/o;->f:Lz3/q;
+    iget-object p1, p1, Lz3/o;->l:Lz3/q;
 
     const-string p2, "Tasks index overflow"
 
@@ -151,9 +151,9 @@
     check-cast p1, Lz3/n0;
 
     .line 2
-    iget-boolean v0, p0, Lz3/n0;->g:Z
+    iget-boolean v0, p0, Lz3/n0;->h:Z
 
-    iget-boolean v1, p1, Lz3/n0;->g:Z
+    iget-boolean v1, p1, Lz3/n0;->h:Z
 
     const/4 v2, 0x1
 
@@ -170,9 +170,9 @@
 
     .line 3
     :cond_1
-    iget-wide v0, p0, Lz3/n0;->f:J
+    iget-wide v0, p0, Lz3/n0;->g:J
 
-    iget-wide v4, p1, Lz3/n0;->f:J
+    iget-wide v4, p1, Lz3/n0;->g:J
 
     cmp-long p1, v0, v4
 
@@ -189,17 +189,17 @@
 
     .line 4
     :cond_3
-    iget-object p1, p0, Lz3/n0;->i:Lz3/l0;
+    iget-object p1, p0, Lz3/n0;->j:Lz3/l0;
 
     invoke-virtual {p1}, Ly3/a;->e()Lz3/o;
 
     move-result-object p1
 
     .line 5
-    iget-object p1, p1, Lz3/o;->g:Lz3/q;
+    iget-object p1, p1, Lz3/o;->m:Lz3/q;
 
     .line 6
-    iget-wide v0, p0, Lz3/n0;->f:J
+    iget-wide v0, p0, Lz3/n0;->g:J
 
     invoke-static {v0, v1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
@@ -218,17 +218,17 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lz3/n0;->i:Lz3/l0;
+    iget-object v0, p0, Lz3/n0;->j:Lz3/l0;
 
     invoke-virtual {v0}, Ly3/a;->e()Lz3/o;
 
     move-result-object v0
 
     .line 2
-    iget-object v0, v0, Lz3/o;->f:Lz3/q;
+    iget-object v0, v0, Lz3/o;->l:Lz3/q;
 
     .line 3
-    iget-object v1, p0, Lz3/n0;->h:Ljava/lang/String;
+    iget-object v1, p0, Lz3/n0;->i:Ljava/lang/String;
 
     invoke-virtual {v0, v1, p1}, Lz3/q;->d(Ljava/lang/String;Ljava/lang/Object;)V
 

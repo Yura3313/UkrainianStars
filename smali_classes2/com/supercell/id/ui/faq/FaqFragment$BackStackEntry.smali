@@ -30,9 +30,9 @@
 
 
 # instance fields
-.field public final g:Z
+.field public final h:Z
 
-.field public final h:Ljava/lang/Class;
+.field public final i:Ljava/lang/Class;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/lang/Class<",
@@ -43,7 +43,7 @@
     .end annotation
 .end field
 
-.field public final i:Z
+.field public final j:Z
 
 
 # direct methods
@@ -67,17 +67,17 @@
     .line 1
     invoke-direct {p0}, Lcom/supercell/id/ui/BackStack$Entry;-><init>()V
 
-    iput-boolean p1, p0, Lcom/supercell/id/ui/faq/FaqFragment$BackStackEntry;->i:Z
+    iput-boolean p1, p0, Lcom/supercell/id/ui/faq/FaqFragment$BackStackEntry;->j:Z
 
     const/4 p1, 0x1
 
     .line 2
-    iput-boolean p1, p0, Lcom/supercell/id/ui/faq/FaqFragment$BackStackEntry;->g:Z
+    iput-boolean p1, p0, Lcom/supercell/id/ui/faq/FaqFragment$BackStackEntry;->h:Z
 
     .line 3
     const-class p1, Lcom/supercell/id/ui/faq/FaqFragment;
 
-    iput-object p1, p0, Lcom/supercell/id/ui/faq/FaqFragment$BackStackEntry;->h:Ljava/lang/Class;
+    iput-object p1, p0, Lcom/supercell/id/ui/faq/FaqFragment$BackStackEntry;->i:Ljava/lang/Class;
 
     return-void
 .end method
@@ -89,7 +89,7 @@
 
     const-string p2, "mainActivity"
 
-    invoke-static {p1, p2}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p2}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     invoke-virtual {p1}, Landroidx/appcompat/app/AppCompatActivity;->getResources()Landroid/content/res/Resources;
@@ -98,7 +98,7 @@
 
     const-string p2, "mainActivity.resources"
 
-    invoke-static {p1, p2}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p2}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 2
     sget p2, Lcom/supercell/id/R$bool;->isSmallScreen:I
@@ -114,12 +114,12 @@
     int-to-float p1, p1
 
     .line 3
-    sget p2, La5/g0;->a:F
+    sget p2, La5/e0;->g:F
 
     mul-float p1, p1, p2
 
     .line 4
-    invoke-static {p1}, Lcom/android/billingclient/api/z;->n(F)I
+    invoke-static {p1}, Lcom/android/billingclient/api/y;->i(F)I
 
     move-result p1
 
@@ -131,12 +131,12 @@
     int-to-float p1, p1
 
     .line 5
-    sget p2, La5/g0;->a:F
+    sget p2, La5/e0;->g:F
 
     mul-float p1, p1, p2
 
     .line 6
-    invoke-static {p1}, Lcom/android/billingclient/api/z;->n(F)I
+    invoke-static {p1}, Lcom/android/billingclient/api/y;->i(F)I
 
     move-result p1
 
@@ -151,17 +151,17 @@
 
     const-string v0, "mainActivity"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
-    iget-boolean v0, p0, Lcom/supercell/id/ui/faq/FaqFragment$BackStackEntry;->i:Z
+    iget-boolean v0, p0, Lcom/supercell/id/ui/faq/FaqFragment$BackStackEntry;->j:Z
 
     if-eqz v0, :cond_0
 
     .line 2
-    sget-object p1, Lwc/g1;->p0:Lwc/g1$a;
+    sget-object p1, Lwc/h1;->q0:Lwc/h1$a;
 
-    invoke-virtual {p1, p2, p3, p4}, Lwc/g1$a;->a(III)I
+    invoke-virtual {p1, p2, p3, p4}, Lwc/h1$a;->a(III)I
 
     move-result p1
 
@@ -186,7 +186,7 @@
             ")",
             "Ljava/lang/Class<",
             "+",
-            "Lwc/a1;",
+            "Lwc/b1;",
             ">;"
         }
     .end annotation
@@ -196,14 +196,14 @@
     const-string v1, "mainActivity.resources"
 
     .line 1
-    invoke-static {p1, v0, v1}, Lk3/ax;->e(Lcom/supercell/id/ui/MainActivity;Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {p1, v0, v1}, Lwc/v0;->a(Lcom/supercell/id/ui/MainActivity;Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result p1
 
     if-eqz p1, :cond_1
 
     .line 2
-    iget-boolean p1, p0, Lcom/supercell/id/ui/faq/FaqFragment$BackStackEntry;->i:Z
+    iget-boolean p1, p0, Lcom/supercell/id/ui/faq/FaqFragment$BackStackEntry;->j:Z
 
     if-eqz p1, :cond_0
 
@@ -230,7 +230,7 @@
 
     const-string v0, "mainActivity"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-super {p0, p1}, Lcom/supercell/id/ui/BackStack$Entry;->T(Lcom/supercell/id/ui/MainActivity;)Lcom/supercell/id/ui/BaseFragment;
 
@@ -261,7 +261,7 @@
         }
     .end annotation
 
-    iget-object v0, p0, Lcom/supercell/id/ui/faq/FaqFragment$BackStackEntry;->h:Ljava/lang/Class;
+    iget-object v0, p0, Lcom/supercell/id/ui/faq/FaqFragment$BackStackEntry;->i:Ljava/lang/Class;
 
     return-object v0
 .end method
@@ -285,9 +285,9 @@
 
     check-cast p1, Lcom/supercell/id/ui/faq/FaqFragment$BackStackEntry;
 
-    iget-boolean v0, p0, Lcom/supercell/id/ui/faq/FaqFragment$BackStackEntry;->i:Z
+    iget-boolean v0, p0, Lcom/supercell/id/ui/faq/FaqFragment$BackStackEntry;->j:Z
 
-    iget-boolean p1, p1, Lcom/supercell/id/ui/faq/FaqFragment$BackStackEntry;->i:Z
+    iget-boolean p1, p1, Lcom/supercell/id/ui/faq/FaqFragment$BackStackEntry;->j:Z
 
     if-ne v0, p1, :cond_0
 
@@ -308,7 +308,7 @@
 .method public final hashCode()I
     .locals 1
 
-    iget-boolean v0, p0, Lcom/supercell/id/ui/faq/FaqFragment$BackStackEntry;->i:Z
+    iget-boolean v0, p0, Lcom/supercell/id/ui/faq/FaqFragment$BackStackEntry;->j:Z
 
     if-eqz v0, :cond_0
 
@@ -323,17 +323,17 @@
 
     const-string v0, "mainActivity"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
-    iget-boolean p1, p0, Lcom/supercell/id/ui/faq/FaqFragment$BackStackEntry;->i:Z
+    iget-boolean p1, p0, Lcom/supercell/id/ui/faq/FaqFragment$BackStackEntry;->j:Z
 
     if-eqz p1, :cond_0
 
     .line 2
-    sget-object p1, Lwc/g1;->p0:Lwc/g1$a;
+    sget-object p1, Lwc/h1;->q0:Lwc/h1$a;
 
-    invoke-virtual {p1, p2, p3, p4}, Lwc/g1$a;->b(III)I
+    invoke-virtual {p1, p2, p3, p4}, Lwc/h1$a;->b(III)I
 
     move-result p1
 
@@ -349,7 +349,7 @@
 .method public final l()Z
     .locals 1
 
-    iget-boolean v0, p0, Lcom/supercell/id/ui/faq/FaqFragment$BackStackEntry;->g:Z
+    iget-boolean v0, p0, Lcom/supercell/id/ui/faq/FaqFragment$BackStackEntry;->h:Z
 
     return v0
 .end method
@@ -362,14 +362,14 @@
     const-string v1, "mainActivity.resources"
 
     .line 1
-    invoke-static {p1, v0, v1}, Lk3/ax;->e(Lcom/supercell/id/ui/MainActivity;Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {p1, v0, v1}, Lwc/v0;->a(Lcom/supercell/id/ui/MainActivity;Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result p1
 
     if-eqz p1, :cond_1
 
     .line 2
-    iget-boolean p1, p0, Lcom/supercell/id/ui/faq/FaqFragment$BackStackEntry;->i:Z
+    iget-boolean p1, p0, Lcom/supercell/id/ui/faq/FaqFragment$BackStackEntry;->j:Z
 
     if-nez p1, :cond_0
 
@@ -399,12 +399,12 @@
     move-result-object v0
 
     .line 2
-    iget-boolean v1, p0, Lcom/supercell/id/ui/faq/FaqFragment$BackStackEntry;->i:Z
+    iget-boolean v1, p0, Lcom/supercell/id/ui/faq/FaqFragment$BackStackEntry;->j:Z
 
     const-string v2, ")"
 
     .line 3
-    invoke-static {v0, v1, v2}, Landroidx/appcompat/app/j;->b(Ljava/lang/StringBuilder;ZLjava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, v1, v2}, Landroidx/appcompat/app/j;->a(Ljava/lang/StringBuilder;ZLjava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -416,10 +416,10 @@
 
     const-string p2, "dest"
 
-    invoke-static {p1, p2}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p2}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
-    iget-boolean p2, p0, Lcom/supercell/id/ui/faq/FaqFragment$BackStackEntry;->i:Z
+    iget-boolean p2, p0, Lcom/supercell/id/ui/faq/FaqFragment$BackStackEntry;->j:Z
 
     .line 2
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
@@ -446,18 +446,18 @@
     const-string v1, "mainActivity.resources"
 
     .line 1
-    invoke-static {p1, v0, v1}, Lk3/ax;->e(Lcom/supercell/id/ui/MainActivity;Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {p1, v0, v1}, Lwc/v0;->a(Lcom/supercell/id/ui/MainActivity;Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
     .line 2
-    iget-boolean v0, p0, Lcom/supercell/id/ui/faq/FaqFragment$BackStackEntry;->i:Z
+    iget-boolean v0, p0, Lcom/supercell/id/ui/faq/FaqFragment$BackStackEntry;->j:Z
 
     if-eqz v0, :cond_0
 
-    const-class p1, Lwc/g1;
+    const-class p1, Lwc/h1;
 
     goto :goto_0
 
@@ -467,15 +467,15 @@
 
     move-result-object v0
 
-    invoke-static {v0, v1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-static {v0}, Lcom/android/billingclient/api/c0;->k(Landroid/content/res/Resources;)Z
+    invoke-static {v0}, Lcom/android/billingclient/api/b0;->l(Landroid/content/res/Resources;)Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
-    iget-boolean v0, p0, Lcom/supercell/id/ui/faq/FaqFragment$BackStackEntry;->i:Z
+    iget-boolean v0, p0, Lcom/supercell/id/ui/faq/FaqFragment$BackStackEntry;->j:Z
 
     if-nez v0, :cond_1
 
@@ -489,15 +489,15 @@
 
     move-result-object v0
 
-    invoke-static {v0, v1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-static {v0}, Lcom/android/billingclient/api/c0;->m(Landroid/content/res/Resources;)Z
+    invoke-static {v0}, Lcom/android/billingclient/api/b0;->n(Landroid/content/res/Resources;)Z
 
     move-result v0
 
     if-eqz v0, :cond_2
 
-    iget-boolean v0, p0, Lcom/supercell/id/ui/faq/FaqFragment$BackStackEntry;->i:Z
+    iget-boolean v0, p0, Lcom/supercell/id/ui/faq/FaqFragment$BackStackEntry;->j:Z
 
     if-eqz v0, :cond_2
 
@@ -511,15 +511,15 @@
 
     move-result-object p1
 
-    invoke-static {p1, v1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v1}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-static {p1}, Lcom/android/billingclient/api/c0;->m(Landroid/content/res/Resources;)Z
+    invoke-static {p1}, Lcom/android/billingclient/api/b0;->n(Landroid/content/res/Resources;)Z
 
     move-result p1
 
     if-nez p1, :cond_3
 
-    iget-boolean p1, p0, Lcom/supercell/id/ui/faq/FaqFragment$BackStackEntry;->i:Z
+    iget-boolean p1, p0, Lcom/supercell/id/ui/faq/FaqFragment$BackStackEntry;->j:Z
 
     if-eqz p1, :cond_3
 
@@ -529,7 +529,7 @@
 
     .line 6
     :cond_3
-    const-class p1, Lwc/f1;
+    const-class p1, Lwc/g1;
 
     :goto_0
     return-object p1
@@ -543,14 +543,14 @@
     const-string v1, "mainActivity.resources"
 
     .line 1
-    invoke-static {p1, v0, v1}, Lk3/ax;->e(Lcom/supercell/id/ui/MainActivity;Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {p1, v0, v1}, Lwc/v0;->a(Lcom/supercell/id/ui/MainActivity;Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result p1
 
     if-eqz p1, :cond_0
 
     .line 2
-    iget-boolean p1, p0, Lcom/supercell/id/ui/faq/FaqFragment$BackStackEntry;->i:Z
+    iget-boolean p1, p0, Lcom/supercell/id/ui/faq/FaqFragment$BackStackEntry;->j:Z
 
     if-nez p1, :cond_0
 

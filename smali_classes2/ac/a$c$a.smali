@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field public final synthetic f:Lac/a$c;
+.field public final synthetic g:Lac/a$c;
 
 
 # direct methods
@@ -23,7 +23,7 @@
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lac/a$c$a;->f:Lac/a$c;
+    iput-object p1, p0, Lac/a$c$a;->g:Lac/a$c;
 
     .line 2
     invoke-direct {p0, p2}, Ljava/io/FilterOutputStream;-><init>(Ljava/io/OutputStream;)V
@@ -48,7 +48,7 @@
 
     .line 2
     :catch_0
-    iget-object v0, p0, Lac/a$c$a;->f:Lac/a$c;
+    iget-object v0, p0, Lac/a$c$a;->g:Lac/a$c;
 
     const/4 v1, 0x1
 
@@ -74,7 +74,7 @@
 
     .line 2
     :catch_0
-    iget-object v0, p0, Lac/a$c$a;->f:Lac/a$c;
+    iget-object v0, p0, Lac/a$c$a;->g:Lac/a$c;
 
     const/4 v1, 0x1
 
@@ -100,7 +100,7 @@
 
     .line 2
     :catch_0
-    iget-object p1, p0, Lac/a$c$a;->f:Lac/a$c;
+    iget-object p1, p0, Lac/a$c$a;->g:Lac/a$c;
 
     const/4 v0, 0x1
 
@@ -126,7 +126,7 @@
 
     .line 5
     :catch_0
-    iget-object p1, p0, Lac/a$c$a;->f:Lac/a$c;
+    iget-object p1, p0, Lac/a$c$a;->g:Lac/a$c;
 
     const/4 p2, 0x1
 

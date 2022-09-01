@@ -3203,97 +3203,97 @@
 
     .line 2
     :pswitch_0
-    sget-object v0, Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;->t:Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;
+    sget-object v0, Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;->u:Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;
 
     goto :goto_0
 
     .line 3
     :pswitch_1
-    sget-object v0, Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;->s:Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;
+    sget-object v0, Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;->t:Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;
 
     goto :goto_0
 
     .line 4
     :pswitch_2
-    sget-object v0, Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;->r:Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;
+    sget-object v0, Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;->s:Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;
 
     goto :goto_0
 
     .line 5
     :pswitch_3
-    sget-object v0, Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;->q:Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;
+    sget-object v0, Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;->r:Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;
 
     goto :goto_0
 
     .line 6
     :pswitch_4
-    sget-object v0, Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;->p:Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;
+    sget-object v0, Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;->q:Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;
 
     goto :goto_0
 
     .line 7
     :pswitch_5
-    sget-object v0, Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;->o:Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;
+    sget-object v0, Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;->p:Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;
 
     goto :goto_0
 
     .line 8
     :pswitch_6
-    sget-object v0, Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;->n:Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;
+    sget-object v0, Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;->o:Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;
 
     goto :goto_0
 
     .line 9
     :pswitch_7
-    sget-object v0, Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;->m:Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;
+    sget-object v0, Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;->n:Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;
 
     goto :goto_0
 
     .line 10
     :pswitch_8
-    sget-object v0, Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;->l:Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;
+    sget-object v0, Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;->m:Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;
 
     goto :goto_0
 
     .line 11
     :pswitch_9
-    sget-object v0, Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;->k:Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;
+    sget-object v0, Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;->l:Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;
 
     goto :goto_0
 
     .line 12
     :pswitch_a
-    sget-object v0, Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;->j:Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;
+    sget-object v0, Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;->k:Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;
 
     goto :goto_0
 
     .line 13
     :pswitch_b
-    sget-object v0, Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;->i:Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;
+    sget-object v0, Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;->j:Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;
 
     goto :goto_0
 
     .line 14
     :pswitch_c
-    sget-object v0, Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;->h:Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;
+    sget-object v0, Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;->i:Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;
 
     goto :goto_0
 
     .line 15
     :pswitch_d
-    sget-object v0, Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;->g:Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;
+    sget-object v0, Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;->h:Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;
 
     goto :goto_0
 
     .line 16
     :pswitch_e
-    sget-object v0, Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;->f:Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;
+    sget-object v0, Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;->g:Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;
 
     goto :goto_0
 
     .line 17
     :cond_0
-    sget-object v0, Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;->u:Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;
+    sget-object v0, Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;->v:Lcom/supercell/websocket/proxy/protocol/notifications/NotificationMessage$b;
 
     :goto_0
     return-object v0

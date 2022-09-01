@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field public final synthetic a:Lo8/t;
+.field public final synthetic a:Lo8/u;
 
 .field public final synthetic b:Ljava/lang/String;
 
@@ -15,12 +15,12 @@
 
 
 # direct methods
-.method public constructor <init>(Lqa/t;Lo8/t;Ljava/lang/String;)V
+.method public constructor <init>(Lqa/t;Lo8/u;Ljava/lang/String;)V
     .locals 0
 
     iput-object p1, p0, Lqa/h;->c:Lqa/t;
 
-    iput-object p2, p0, Lqa/h;->a:Lo8/t;
+    iput-object p2, p0, Lqa/h;->a:Lo8/u;
 
     iput-object p3, p0, Lqa/h;->b:Ljava/lang/String;
 

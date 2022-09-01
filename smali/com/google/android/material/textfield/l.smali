@@ -759,7 +759,7 @@
     invoke-virtual/range {v0 .. v6}, Lcom/google/android/material/textfield/l;->d(Ljava/util/List;ZLandroid/widget/TextView;III)V
 
     .line 6
-    invoke-static {v12, v13}, Lcom/google/android/gms/ads/h;->c(Landroid/animation/AnimatorSet;Ljava/util/List;)V
+    invoke-static {v12, v13}, Lcom/google/android/gms/ads/i;->d(Landroid/animation/AnimatorSet;Ljava/util/List;)V
 
     .line 7
     invoke-virtual {p0, p1}, Lcom/google/android/material/textfield/l;->f(I)Landroid/widget/TextView;

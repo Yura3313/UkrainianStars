@@ -18,18 +18,18 @@
 
 
 # instance fields
-.field public final synthetic f:Ljava/lang/Runnable;
+.field public final synthetic g:Ljava/lang/Runnable;
 
-.field public final synthetic g:Lmb/b;
+.field public final synthetic h:Lmb/b;
 
 
 # direct methods
 .method public constructor <init>(Lmb/b;Ljava/lang/Runnable;)V
     .locals 0
 
-    iput-object p1, p0, Lmb/b$a;->g:Lmb/b;
+    iput-object p1, p0, Lmb/b$a;->h:Lmb/b;
 
-    iput-object p2, p0, Lmb/b$a;->f:Ljava/lang/Runnable;
+    iput-object p2, p0, Lmb/b$a;->g:Ljava/lang/Runnable;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -41,11 +41,11 @@
 .method public final run()V
     .locals 2
 
-    iget-object v0, p0, Lmb/b$a;->g:Lmb/b;
+    iget-object v0, p0, Lmb/b$a;->h:Lmb/b;
 
     iget-object v0, v0, Lmb/b;->b:Landroid/os/Handler;
 
-    iget-object v1, p0, Lmb/b$a;->f:Ljava/lang/Runnable;
+    iget-object v1, p0, Lmb/b$a;->g:Ljava/lang/Runnable;
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 

@@ -1,5 +1,5 @@
-.class public final synthetic Lrc/d0$f0;
-.super Lse/g;
+.class public final Lrc/d0$f0;
+.super Lse/i;
 .source "SocialApiClient.kt"
 
 # interfaces
@@ -8,97 +8,62 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lrc/d0;->u(Landroid/graphics/Bitmap;)Lze/e0;
+    value = Lrc/d0;->u(Landroid/graphics/Bitmap;)Lze/f0;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
-    accessFlags = 0x1019
+    accessFlags = 0x19
     name = null
 .end annotation
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/g;",
+        "Lse/i;",
         "Lre/l<",
-        "Lorg/json/JSONObject;",
-        "Lvc/r;",
+        "Ljava/util/concurrent/CancellationException;",
+        "Lie/i;",
         ">;"
     }
 .end annotation
 
 
-# static fields
-.field public static final g:Lrc/d0$f0;
+# instance fields
+.field public final synthetic g:Lze/f0;
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 1
+.method public constructor <init>(Lze/f0;)V
+    .locals 0
 
-    new-instance v0, Lrc/d0$f0;
+    iput-object p1, p0, Lrc/d0$f0;->g:Lze/f0;
 
-    invoke-direct {v0}, Lrc/d0$f0;-><init>()V
+    const/4 p1, 0x1
 
-    sput-object v0, Lrc/d0$f0;->g:Lrc/d0$f0;
-
-    return-void
-.end method
-
-.method public constructor <init>()V
-    .locals 1
-
-    const/4 v0, 0x1
-
-    invoke-direct {p0, v0}, Lse/g;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final getName()Ljava/lang/String;
-    .locals 1
-
-    const-string v0, "<init>"
-
-    return-object v0
-.end method
-
-.method public final getOwner()Lwe/d;
-    .locals 1
-
-    const-class v0, Lvc/r;
-
-    invoke-static {v0}, Lse/r;->a(Ljava/lang/Class;)Lwe/c;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public final getSignature()Ljava/lang/String;
-    .locals 1
-
-    const-string v0, "<init>(Lorg/json/JSONObject;)V"
-
-    return-object v0
-.end method
-
 .method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
 
     .line 1
-    check-cast p1, Lorg/json/JSONObject;
+    check-cast p1, Ljava/util/concurrent/CancellationException;
 
-    const-string v0, "p1"
+    const-string v0, "it"
 
     .line 2
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
-
-    new-instance v0, Lvc/r;
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 3
-    invoke-direct {v0, p1}, Lvc/r;-><init>(Lorg/json/JSONObject;)V
+    iget-object v0, p0, Lrc/d0$f0;->g:Lze/f0;
 
-    return-object v0
+    invoke-interface {v0, p1}, Lze/c1;->q(Ljava/util/concurrent/CancellationException;)V
+
+    .line 4
+    sget-object p1, Lie/i;->a:Lie/i;
+
+    return-object p1
 .end method

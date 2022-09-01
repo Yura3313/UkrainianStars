@@ -1,46 +1,91 @@
-.class public final synthetic Lk3/ne0;
+.class public final Lk3/ne0;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lk3/tj0;
+.implements Lk3/ad0;
 
 
-# static fields
-.field public static final a:Lk3/ne0;
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Lk3/ad0<",
+        "Lorg/json/JSONObject;",
+        ">;"
+    }
+.end annotation
+
+
+# instance fields
+.field public a:Landroid/os/Bundle;
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 1
-
-    new-instance v0, Lk3/ne0;
-
-    invoke-direct {v0}, Lk3/ne0;-><init>()V
-
-    sput-object v0, Lk3/ne0;->a:Lk3/ne0;
-
-    return-void
-.end method
-
-.method public constructor <init>()V
+.method public constructor <init>(Landroid/os/Bundle;)V
     .locals 0
 
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    iput-object p1, p0, Lk3/ne0;->a:Landroid/os/Bundle;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 1
+.method public final b(Ljava/lang/Object;)V
+    .locals 3
 
-    new-instance v0, Lk3/me0;
+    .line 1
+    check-cast p1, Lorg/json/JSONObject;
 
-    check-cast p1, Landroid/os/Bundle;
+    .line 2
+    iget-object v0, p0, Lk3/ne0;->a:Landroid/os/Bundle;
 
-    invoke-direct {v0, p1}, Lk3/me0;-><init>(Landroid/os/Bundle;)V
+    if-eqz v0, :cond_0
 
-    return-object v0
+    :try_start_0
+    const-string v0, "device"
+
+    .line 3
+    invoke-static {p1, v0}, Lk3/mc;->j(Lorg/json/JSONObject;Ljava/lang/String;)Lorg/json/JSONObject;
+
+    move-result-object p1
+
+    const-string v0, "play_store"
+
+    .line 4
+    invoke-static {p1, v0}, Lk3/mc;->j(Lorg/json/JSONObject;Ljava/lang/String;)Lorg/json/JSONObject;
+
+    move-result-object p1
+
+    const-string v0, "parental_controls"
+
+    .line 5
+    sget-object v1, Li1/p;->B:Li1/p;
+
+    iget-object v1, v1, Li1/p;->c:Lk3/bb;
+
+    .line 6
+    iget-object v2, p0, Lk3/ne0;->a:Landroid/os/Bundle;
+
+    invoke-virtual {v1, v2}, Lk3/bb;->v(Landroid/os/Bundle;)Lorg/json/JSONObject;
+
+    move-result-object v1
+
+    invoke-virtual {p1, v0, v1}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
+    :try_end_0
+    .catch Lorg/json/JSONException; {:try_start_0 .. :try_end_0} :catch_0
+
+    return-void
+
+    .line 7
+    :catch_0
+    invoke-static {}, Lcom/google/android/gms/ads/a;->k()Z
+
+    :cond_0
+    return-void
 .end method

@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field public final f:Lj1/i;
+.field public final g:Lj1/i;
 
-.field public final g:Landroid/graphics/drawable/Drawable;
+.field public final h:Landroid/graphics/drawable/Drawable;
 
 
 # direct methods
@@ -18,9 +18,9 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lj1/h;->f:Lj1/i;
+    iput-object p1, p0, Lj1/h;->g:Lj1/i;
 
-    iput-object p2, p0, Lj1/h;->g:Landroid/graphics/drawable/Drawable;
+    iput-object p2, p0, Lj1/h;->h:Landroid/graphics/drawable/Drawable;
 
     return-void
 .end method
@@ -31,14 +31,14 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lj1/h;->f:Lj1/i;
+    iget-object v0, p0, Lj1/h;->g:Lj1/i;
 
-    iget-object v1, p0, Lj1/h;->g:Landroid/graphics/drawable/Drawable;
+    iget-object v1, p0, Lj1/h;->h:Landroid/graphics/drawable/Drawable;
 
     .line 2
     iget-object v0, v0, Lj1/i;->b:Lcom/google/android/gms/ads/internal/overlay/zzc;
 
-    iget-object v0, v0, Lcom/google/android/gms/ads/internal/overlay/zzc;->g:Landroid/app/Activity;
+    iget-object v0, v0, Lcom/google/android/gms/ads/internal/overlay/zzc;->h:Landroid/app/Activity;
 
     invoke-virtual {v0}, Landroid/app/Activity;->getWindow()Landroid/view/Window;
 

@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field public final f:J
+.field public final g:J
 
-.field public g:J
+.field public h:J
 
 
 # direct methods
@@ -17,7 +17,7 @@
     invoke-direct {p0, p1}, Ljava/io/FilterInputStream;-><init>(Ljava/io/InputStream;)V
 
     .line 2
-    iput-wide p2, p0, Lk3/lc;->f:J
+    iput-wide p2, p0, Lk3/lc;->g:J
 
     return-void
 .end method
@@ -42,13 +42,13 @@
     if-eq v0, v1, :cond_0
 
     .line 2
-    iget-wide v1, p0, Lk3/lc;->g:J
+    iget-wide v1, p0, Lk3/lc;->h:J
 
     const-wide/16 v3, 0x1
 
     add-long/2addr v1, v3
 
-    iput-wide v1, p0, Lk3/lc;->g:J
+    iput-wide v1, p0, Lk3/lc;->h:J
 
     :cond_0
     return v0
@@ -72,13 +72,13 @@
     if-eq p1, p2, :cond_0
 
     .line 4
-    iget-wide p2, p0, Lk3/lc;->g:J
+    iget-wide p2, p0, Lk3/lc;->h:J
 
     int-to-long v0, p1
 
     add-long/2addr p2, v0
 
-    iput-wide p2, p0, Lk3/lc;->g:J
+    iput-wide p2, p0, Lk3/lc;->h:J
 
     :cond_0
     return p1

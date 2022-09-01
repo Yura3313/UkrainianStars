@@ -18,18 +18,18 @@
 
 
 # instance fields
-.field public final synthetic f:Lid/e;
+.field public final synthetic g:Lid/e;
 
-.field public final synthetic g:Lid/i;
+.field public final synthetic h:Lid/i;
 
 
 # direct methods
 .method public constructor <init>(Lid/e;Lid/i;)V
     .locals 0
 
-    iput-object p1, p0, Lid/i$a;->f:Lid/e;
+    iput-object p1, p0, Lid/i$a;->g:Lid/e;
 
-    iput-object p2, p0, Lid/i$a;->g:Lid/i;
+    iput-object p2, p0, Lid/i$a;->h:Lid/i;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -42,7 +42,7 @@
     .locals 2
 
     .line 1
-    iget-object p1, p0, Lid/i$a;->g:Lid/i;
+    iget-object p1, p0, Lid/i$a;->h:Lid/i;
 
     const/4 v0, 0x0
 
@@ -50,10 +50,10 @@
     iput-object v0, p1, Lid/i;->h:Lid/e;
 
     .line 3
-    iget-object v0, p0, Lid/i$a;->f:Lid/e;
+    iget-object v0, p0, Lid/i$a;->g:Lid/e;
 
     .line 4
-    iget-object v0, v0, Lid/e;->h:Lid/w;
+    iget-object v0, v0, Lid/e;->i:Lid/w;
 
     .line 5
     invoke-virtual {v0, p1}, Lid/w;->c(Lid/w$a;)V
@@ -69,18 +69,18 @@
     iget-object p1, p1, Lae/u;->p:Lrc/h;
 
     .line 8
-    iget-object v0, p0, Lid/i$a;->f:Lid/e;
+    iget-object v0, p0, Lid/i$a;->g:Lid/e;
 
     .line 9
-    iget-object v0, v0, Lid/e;->i:Lvc/n$j$c;
+    iget-object v0, v0, Lid/e;->j:Lvc/m$j$c;
 
     .line 10
-    iget-object v0, v0, Lvc/n$j$c;->i:Ljava/lang/String;
+    iget-object v0, v0, Lvc/m$j$c;->i:Ljava/lang/String;
 
     const-string v1, "dismiss"
 
     .line 11
-    invoke-virtual {p1, v1, v0}, Lrc/h;->g(Ljava/lang/String;Ljava/lang/String;)Lze/e0;
+    invoke-virtual {p1, v1, v0}, Lrc/h;->g(Ljava/lang/String;Ljava/lang/String;)Lze/f0;
 
     return-void
 .end method

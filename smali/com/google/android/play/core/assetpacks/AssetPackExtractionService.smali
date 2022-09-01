@@ -3,17 +3,17 @@
 
 
 # instance fields
-.field public final f:La5/b;
+.field public final g:La5/b;
 
-.field public g:Landroid/content/Context;
+.field public h:Landroid/content/Context;
 
-.field public h:Lcom/google/android/play/core/assetpacks/k2;
+.field public i:Lcom/google/android/play/core/assetpacks/j2;
 
-.field public i:Lcom/google/android/play/core/assetpacks/z;
+.field public j:Lcom/google/android/play/core/assetpacks/y;
 
-.field public j:Lcom/google/android/play/core/assetpacks/x;
+.field public k:Lcom/google/android/play/core/assetpacks/w;
 
-.field public k:Landroid/app/NotificationManager;
+.field public l:Landroid/app/NotificationManager;
 
 
 # direct methods
@@ -28,7 +28,7 @@
 
     invoke-direct {v0, v1}, La5/b;-><init>(Ljava/lang/String;)V
 
-    iput-object v0, p0, Lcom/google/android/play/core/assetpacks/AssetPackExtractionService;->f:La5/b;
+    iput-object v0, p0, Lcom/google/android/play/core/assetpacks/AssetPackExtractionService;->g:La5/b;
 
     return-void
 .end method
@@ -41,7 +41,7 @@
     monitor-enter p0
 
     :try_start_0
-    iget-object v0, p0, Lcom/google/android/play/core/assetpacks/AssetPackExtractionService;->f:La5/b;
+    iget-object v0, p0, Lcom/google/android/play/core/assetpacks/AssetPackExtractionService;->g:La5/b;
 
     const-string v1, "Stopping service."
 
@@ -55,9 +55,9 @@
     invoke-virtual {v0, v4, v1, v3}, La5/b;->a(ILjava/lang/String;[Ljava/lang/Object;)I
 
     .line 2
-    iget-object v0, p0, Lcom/google/android/play/core/assetpacks/AssetPackExtractionService;->h:Lcom/google/android/play/core/assetpacks/k2;
+    iget-object v0, p0, Lcom/google/android/play/core/assetpacks/AssetPackExtractionService;->i:Lcom/google/android/play/core/assetpacks/j2;
 
-    invoke-virtual {v0, v2}, Lcom/google/android/play/core/assetpacks/k2;->a(Z)V
+    invoke-virtual {v0, v2}, Lcom/google/android/play/core/assetpacks/j2;->a(Z)V
 
     const/4 v0, 0x1
 
@@ -119,7 +119,7 @@
 
     new-instance v7, Landroid/app/Notification$Builder;
 
-    iget-object v8, p0, Lcom/google/android/play/core/assetpacks/AssetPackExtractionService;->g:Landroid/content/Context;
+    iget-object v8, p0, Lcom/google/android/play/core/assetpacks/AssetPackExtractionService;->h:Landroid/content/Context;
 
     const-string v9, "playcore-assetpacks-service-notification-channel"
 
@@ -134,7 +134,7 @@
     :cond_0
     new-instance v2, Landroid/app/Notification$Builder;
 
-    iget-object v3, p0, Lcom/google/android/play/core/assetpacks/AssetPackExtractionService;->g:Landroid/content/Context;
+    iget-object v3, p0, Lcom/google/android/play/core/assetpacks/AssetPackExtractionService;->h:Landroid/content/Context;
 
     invoke-direct {v2, v3}, Landroid/app/Notification$Builder;-><init>(Landroid/content/Context;)V
 
@@ -194,7 +194,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/google/android/play/core/assetpacks/AssetPackExtractionService;->f:La5/b;
+    iget-object v1, p0, Lcom/google/android/play/core/assetpacks/AssetPackExtractionService;->g:La5/b;
 
     const-string v2, "Starting foreground service."
 
@@ -206,11 +206,11 @@
     invoke-virtual {v1, v4, v2, v3}, La5/b;->a(ILjava/lang/String;[Ljava/lang/Object;)I
 
     .line 2
-    iget-object v1, p0, Lcom/google/android/play/core/assetpacks/AssetPackExtractionService;->h:Lcom/google/android/play/core/assetpacks/k2;
+    iget-object v1, p0, Lcom/google/android/play/core/assetpacks/AssetPackExtractionService;->i:Lcom/google/android/play/core/assetpacks/j2;
 
     const/4 v2, 0x1
 
-    invoke-virtual {v1, v2}, Lcom/google/android/play/core/assetpacks/k2;->a(Z)V
+    invoke-virtual {v1, v2}, Lcom/google/android/play/core/assetpacks/j2;->a(Z)V
 
     if-lt v5, v6, :cond_3
 
@@ -228,7 +228,7 @@
 
     invoke-direct {v1, v2, p1, v3}, Landroid/app/NotificationChannel;-><init>(Ljava/lang/String;Ljava/lang/CharSequence;I)V
 
-    iget-object p1, p0, Lcom/google/android/play/core/assetpacks/AssetPackExtractionService;->k:Landroid/app/NotificationManager;
+    iget-object p1, p0, Lcom/google/android/play/core/assetpacks/AssetPackExtractionService;->l:Landroid/app/NotificationManager;
 
     invoke-virtual {p1, v1}, Landroid/app/NotificationManager;->createNotificationChannel(Landroid/app/NotificationChannel;)V
 
@@ -254,7 +254,7 @@
 .method public final onBind(Landroid/content/Intent;)Landroid/os/IBinder;
     .locals 0
 
-    iget-object p1, p0, Lcom/google/android/play/core/assetpacks/AssetPackExtractionService;->j:Lcom/google/android/play/core/assetpacks/x;
+    iget-object p1, p0, Lcom/google/android/play/core/assetpacks/AssetPackExtractionService;->k:Lcom/google/android/play/core/assetpacks/w;
 
     return-object p1
 .end method
@@ -264,7 +264,7 @@
 
     invoke-super {p0}, Landroid/app/Service;->onCreate()V
 
-    iget-object v0, p0, Lcom/google/android/play/core/assetpacks/AssetPackExtractionService;->f:La5/b;
+    iget-object v0, p0, Lcom/google/android/play/core/assetpacks/AssetPackExtractionService;->g:La5/b;
 
     const/4 v1, 0x0
 
@@ -282,56 +282,56 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lcom/google/android/play/core/assetpacks/n1;->a(Landroid/content/Context;)Lcom/google/android/play/core/assetpacks/l0;
+    invoke-static {v0}, Lcom/google/android/play/core/assetpacks/m1;->a(Landroid/content/Context;)Lcom/google/android/play/core/assetpacks/k0;
 
     move-result-object v0
 
     .line 3
-    iget-object v1, v0, Lcom/google/android/play/core/assetpacks/l0;->a:Lcom/google/android/play/core/assetpacks/n2;
+    iget-object v1, v0, Lcom/google/android/play/core/assetpacks/k0;->a:Lcom/google/android/play/core/assetpacks/m2;
 
     .line 4
-    iget-object v1, v1, Lcom/google/android/play/core/assetpacks/n2;->a:Landroid/content/Context;
+    iget-object v1, v1, Lcom/google/android/play/core/assetpacks/m2;->a:Landroid/content/Context;
 
     const-string v2, "Cannot return null from a non-@Nullable @Provides method"
 
     .line 5
-    invoke-static {v1, v2}, La5/g0;->h(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, v2}, La5/g0;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 6
-    iput-object v1, p0, Lcom/google/android/play/core/assetpacks/AssetPackExtractionService;->g:Landroid/content/Context;
+    iput-object v1, p0, Lcom/google/android/play/core/assetpacks/AssetPackExtractionService;->h:Landroid/content/Context;
 
-    iget-object v1, v0, Lcom/google/android/play/core/assetpacks/l0;->s:La5/u0;
+    iget-object v1, v0, Lcom/google/android/play/core/assetpacks/k0;->s:La5/u0;
 
     invoke-interface {v1}, La5/u0;->e()Ljava/lang/Object;
 
     move-result-object v1
 
-    check-cast v1, Lcom/google/android/play/core/assetpacks/k2;
+    check-cast v1, Lcom/google/android/play/core/assetpacks/j2;
 
-    iput-object v1, p0, Lcom/google/android/play/core/assetpacks/AssetPackExtractionService;->h:Lcom/google/android/play/core/assetpacks/k2;
+    iput-object v1, p0, Lcom/google/android/play/core/assetpacks/AssetPackExtractionService;->i:Lcom/google/android/play/core/assetpacks/j2;
 
-    iget-object v0, v0, Lcom/google/android/play/core/assetpacks/l0;->d:La5/u0;
+    iget-object v0, v0, Lcom/google/android/play/core/assetpacks/k0;->d:La5/u0;
 
     invoke-interface {v0}, La5/u0;->e()Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lcom/google/android/play/core/assetpacks/z;
+    check-cast v0, Lcom/google/android/play/core/assetpacks/y;
 
-    iput-object v0, p0, Lcom/google/android/play/core/assetpacks/AssetPackExtractionService;->i:Lcom/google/android/play/core/assetpacks/z;
+    iput-object v0, p0, Lcom/google/android/play/core/assetpacks/AssetPackExtractionService;->j:Lcom/google/android/play/core/assetpacks/y;
 
     .line 7
-    new-instance v0, Lcom/google/android/play/core/assetpacks/x;
+    new-instance v0, Lcom/google/android/play/core/assetpacks/w;
 
-    iget-object v1, p0, Lcom/google/android/play/core/assetpacks/AssetPackExtractionService;->g:Landroid/content/Context;
+    iget-object v1, p0, Lcom/google/android/play/core/assetpacks/AssetPackExtractionService;->h:Landroid/content/Context;
 
-    iget-object v2, p0, Lcom/google/android/play/core/assetpacks/AssetPackExtractionService;->i:Lcom/google/android/play/core/assetpacks/z;
+    iget-object v2, p0, Lcom/google/android/play/core/assetpacks/AssetPackExtractionService;->j:Lcom/google/android/play/core/assetpacks/y;
 
-    invoke-direct {v0, v1, p0, v2}, Lcom/google/android/play/core/assetpacks/x;-><init>(Landroid/content/Context;Lcom/google/android/play/core/assetpacks/AssetPackExtractionService;Lcom/google/android/play/core/assetpacks/z;)V
+    invoke-direct {v0, v1, p0, v2}, Lcom/google/android/play/core/assetpacks/w;-><init>(Landroid/content/Context;Lcom/google/android/play/core/assetpacks/AssetPackExtractionService;Lcom/google/android/play/core/assetpacks/y;)V
 
-    iput-object v0, p0, Lcom/google/android/play/core/assetpacks/AssetPackExtractionService;->j:Lcom/google/android/play/core/assetpacks/x;
+    iput-object v0, p0, Lcom/google/android/play/core/assetpacks/AssetPackExtractionService;->k:Lcom/google/android/play/core/assetpacks/w;
 
-    iget-object v0, p0, Lcom/google/android/play/core/assetpacks/AssetPackExtractionService;->g:Landroid/content/Context;
+    iget-object v0, p0, Lcom/google/android/play/core/assetpacks/AssetPackExtractionService;->h:Landroid/content/Context;
 
     const-string v1, "notification"
 
@@ -341,7 +341,7 @@
 
     check-cast v0, Landroid/app/NotificationManager;
 
-    iput-object v0, p0, Lcom/google/android/play/core/assetpacks/AssetPackExtractionService;->k:Landroid/app/NotificationManager;
+    iput-object v0, p0, Lcom/google/android/play/core/assetpacks/AssetPackExtractionService;->l:Landroid/app/NotificationManager;
 
     return-void
 .end method

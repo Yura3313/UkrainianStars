@@ -1808,7 +1808,7 @@ TID_HINT_17,Je aanvallen richten is goed om in de bosjes te schieten om verschol
 TID_HINT_18,SNELVUREN werkt goed op stilstaande vijanden.
 TID_HINT_19,SNELVUREN werkt goed voor vijanden die recht op je afkomen of van je weg rennen.
 TID_HINT_20,"Als je je verschuilt in de bosjes, kunnen vijanden je zien als je aanvalt of schade oploopt."
-TID_HINT_21,Je kunt je in de bosjes verschuilen voor vijanden.
+TID_HINT_21,Je kunt bosjes gebruiken om je te verschuilen voor vijanden en te genezen.
 TID_HINT_22,"Als je SNELVUREN gebruikt, zal je wapen vuren zelfs als er geen vijanden binnen bereik zijn."
 TID_VS_TUTORIAL,Verzamel alle <c50d050>krachtkubussen</c>!
 TID_USE_MANUAL_FIRE_TUTORIAL,Sleep de <ccc0033>rode joystick</c> om te richten.
@@ -1863,7 +1863,7 @@ TID_GATCHA_AD_CONTINUE_BUTTON_TITLE,DOORGAAN
 TID_AD_DOUBLER_TITLE,KIES BELONING OM TE VERDUBBELEN
 TID_AD_DOUBLER_CONTINUE,DOORGAAN
 TID_GATCHA_CONTINUE,DOORGAAN
-TID_HINT_23,Sommige knokkers presteren beter op bepaalde kaarten en bij bepaalde evenementen dan andere.
+TID_HINT_23,Sommige knokkers zijn beter geschikt voor bepaalde kaarten en evenementen dan andere.
 TID_HINT_24,Langeafstandsknokkers doen het over het algemeen beter op kaarten met een open terrein.
 TID_HINT_25,Korteafstandsknokkers doen het over het algemeen beter op kaarten met meer beschutting en bosjes.
 TID_SPEC_ABI_SELF_DESTRUCT,LAATSTE KLAP
@@ -1966,7 +1966,7 @@ TID_ADD_FRIEND_ERROR_TOO_MANY_FRIENDS_YOU,Je hebt te veel vrienden. Verwijder er
 TID_HINT_26,Penny kan veel schade aanrichten met haar gebiedsaanval als haar doelwitten in een rij staan.
 TID_HINT_27,"Door een team samen te stellen voor een gevecht, kun je een strategie bespreken met je teamgenoten en samen knokkers kiezen."
 TID_HINT_28,"Speel vriendschappelijke gevechten om voor evenementen te oefenen, vriendschappelijke toernooien op te zetten en meer!"
-TID_HINT_29,Na een goed gevecht met nieuwe teamgenoten kun je op 'Opnieuw spelen' tikken om nog een gevecht met hen te spelen.
+TID_HINT_29,Na een goed gevecht met nieuwe teamgenoten kun je op 'Opnieuw spelen' tikken om nog een gevecht met hen te spelen!
 TID_HINT_30,Voor vriendschappelijke gevechten kun je alle evenementen en kaarten kiezen. Je speelt bovendien met volledig geüpgradede knokkers.
 TID_HINT_31,Frank stopt om zijn aanval en super uit te voeren. Hierdoor hebben zijn tegenstanders de tijd om buiten zijn bereik te raken.
 TID_EXPERIENCE,ERVARING
@@ -2077,7 +2077,7 @@ TID_PLAYER_MAP_PROPS,Kaart van:\n<cff8000><CREDIT></c>
 TID_PLAYER_MAP_WINNER_SLOT_PROPS,DAGWINNAAR!\n\nConcept van:\n<cff8000><CREDIT></c>
 TID_BATTLE_ROYALE_12,Warmtedoolhof
 TID_TEAM_INVITE_ALREADY_IN_TEAM,Deze speler zit al in een team!
-TID_HINT_38,Een roterende blauwe cirkel onder een knokker betekent dat de super-aanval klaar is!
+TID_HINT_38,Een roterende cirkel onder een knokker betekent dat de superaanval klaar is!
 TID_HINT_39,Een roterende gele cirkel onder een knokker geeft aan dat hij zijn super-aanval richt.
 TID_EVENT_NOT_AVAILABLE,Geen evenement
 TID_SHOP_OFFER_PURCHASE_AD_NOT_AVAILABLE,Geen video beschikbaar. Kom later terug.
@@ -2099,7 +2099,7 @@ TID_EVENT_MODIFIER_DESC_5,Er verschijnen willekeurig genezende champignons! Ze g
 TID_EVENT_MODIFIER_DESC_5_SD,"Er verschijnen willekeurig genezende champignons! Als je met je vrienden dichtbij komt, zullen de champignons niet groeien."
 TID_NINJA,LEON
 TID_ROSA,ROSA
-TID_HINT_42,"Als je een tijdje niet aanvalt of geen schade oploopt, dan begint je knokker te genezen."
+TID_HINT_42,"Wanneer je niet aanvalt en geen schade oploopt, dan begint je knokker na een tijdje te genezen."
 TID_HOOK_SHORT_DESC,HELPER
 TID_HOOK_DESC,Gene gebruikt zijn magische lamp om een projectiel af te vuren dat zich opsplitst. Zijn superaanval is een magische hand die vijanden naar hem toe haalt!
 TID_SPEC_ABI_HOOK,MAGISCHE PUFJES
@@ -4484,9 +4484,9 @@ TID_EMOTE_BUNDLE_BRALWMAS_PACK,KNOKFEESTDAGEN-REACTIES
 TID_MAP_EDITOR_LEGAL_WARNING_TITLE,Belangrijk bericht
 TID_MAP_EDITOR_LEGAL_WARNING_DESC,"Bedankt voor het gebruiken van de kaartenmaker. Zorg ervoor dat je je bij het gebruik van de kaartenmaker aan de licentie- en serviceovereenkomst van Tencent Games en andere gerelateerde voorschriften houdt. Maak of verspreid geen ongepaste content die erotisch of obsceen is, een gevaar vormt voor nationale eenheid, soevereiniteit en territoriale integriteit, of wetten en andere voorschriften schendt."
 TID_MAP_EDITOR_LEGAL_WARNING_DESC_YOOZOO,"Bedankt voor het gebruiken van de kaartenmaker. Zorg ervoor dat je je bij het gebruik van de kaartenmaker aan de gebruikersovereenkomst en andere gerelateerde voorschriften houdt. Maak of verspreid geen ongepaste content die erotisch of obsceen is, een gevaar vormt voor nationale eenheid, soevereiniteit en territoriale integriteit, of wetten en andere voorschriften schendt."
-TID_RUFFS,KOLONEL\nRUFFS
+TID_RUFFS,RUFFS
 TID_RUFFS_SHORT_DESC,HELPER
-TID_RUFFS_DESC,Ruffs vuurt dubbele laserstralen af die tegen muren kaatsen. Met zijn super vraagt hij om luchtbevoorrading die tegenstanders beschadigt bij impact en een boost achterlaat voor teamgenoten.
+TID_RUFFS_DESC,"Ook al blaft hij vaak naar zijn ondergeschikten, Kolonel Ruffs is een brave jongen.\n\nRuffs verbergt zijn hondenkenmerken achter zijn serieuze en kalme gedrag, tenzij er een potje apporteren van start gaat!"
 TID_RUFFS_WEAPON,DUBBELLOOPSE LASER
 TID_RUFFS_WEAPON_DESC,De dubbele laserstralen van Ruffs kaatsen meerdere keren tegen muren en kunnen tegenstanders achter obstakels raken.
 TID_RUFFS_ULTI,LUCHTBEVOORRADING
@@ -6015,7 +6015,7 @@ TID_LOGIN_CALENDAR_REWARD_DESC_GADGET_CHOICE,Kies een gadget voor <VALUE>. Gadge
 TID_LOGIN_CALENDAR_REWARD_DESC_PIN_X2,Deze beloning geeft je 2 NIEUWE REACTIES.
 TID_LOGIN_CALENDAR_REWARD_DESC_STARPOWER_CHOICE,Kies een sterrenkracht voor <VALUE>. Sterrenkrachten zijn extra passieve vaardigheden voor je knokker.
 TID_LOGIN_CALENDAR_ERROR_REWARD_EXPIRED,Beloning is verlopen
-TID_CHINA_PRIVACY_SETTINGS_BUTTON,Privacyinstellingen
+TID_CHINA_PRIVACY_SETTINGS_BUTTON,Privacy-\ninstellingen
 TID_CHINA_PRIVACY_SETTINGS_TITLE,PRIVACYINSTELLINGEN
 TID_CHINA_PRIVACY_HIDE_IN_LEADERBOARDS,VERBERGEN IN KLASSEMENTEN
 TID_ACCESSORY_CROSS_BOMBER_BURST,BOMMENEXPERT
@@ -6164,11 +6164,11 @@ TID_ACCESSORY_JETPACK_GIRL_GADGET_2,BACKSTAGEPAS
 TID_ACCESSORY_JETPACK_GIRL_GADGET_2_DESC,"Janets volgende hoge noot duwt haar naar achteren, waarbij ze zelfs over muren heen kan vliegen. Hoe gerichter haar aanval, hoe verder ze naar achteren gaat."
 TID_CANNON_GIRL,BONNIE
 TID_CANNON_GIRL_SHORT_DESC,HYBRIDE
-TID_CANNON_GIRL_DESC,Bonnie en haar kanon 'Clyde' halen graag kattenkwaad uit. Wie had er gedacht dat zo'n lief klein meisje zoveel chaos kon teweegbrengen?
+TID_CANNON_GIRL_DESC,Bonnie en haar kanon Clyde halen graag kattenkwaad uit. Wie had er gedacht dat zo'n lief klein meisje zoveel chaos kon teweegbrengen?
 TID_CANNON_GIRL_WEAPON,LOSSE TAND
 TID_CANNON_GIRL_WEAPON_DESC,Bonnie vuurt met Clyde een enorme tand af naar haar vijanden.
 TID_CANNON_GIRL_ULTI,KANONSKOGEL
-TID_CANNON_GIRL_ULTI_DESC,Clyde lanceert Bonnie de lucht in. Ze kan zo over obstakels heen gaan en brengt schade toe aan nabije vijanden bij haar landing.
+TID_CANNON_GIRL_ULTI_DESC,Clyde lanceert Bonnie de lucht in. Ze kan zo over obstakels heen vliegen en brengt schade toe aan nabije vijanden bij haar landing.
 TID_CANNON_GIRL_SMALL_WEAPON,BOMBERJACK
 TID_CANNON_GIRL_SMALL_WEAPON_DESC,Bonnie werpt een aantal kleine granaten vanuit haar mouwen.
 TID_CANNON_GIRL_SMALL_ULTI,CLYDE
@@ -6345,7 +6345,7 @@ TID_ACCESSORY_FIRE_DUDE_FLAME_SHIELD_DESC,Amber vuurt <c00cc00><VALUE3></c> vlam
 TID_ACCESSORY_MECHA_DUDE_TOWER_RELOAD,GEREEDSCHAPSKIST
 TID_ACCESSORY_MECHA_DUDE_TOWER_RELOAD_DESC,Meg laat haar gereedschapskist achter waarmee de herlaadsnelheid van haar bondgenoten met <c00cc00><VALUE1>%</c> toeneemt totdat de kist vernietigd wordt.
 TID_ACCESSORY_ROPE_DUDE_VISION,X-RAYZONNEBRIL
-TID_ACCESSORY_ROPE_DUDE_VISION_DESC,Buzz kan in alle struiken kijken gedurende <c00cc00><VALUE1></c> seconden.
+TID_ACCESSORY_ROPE_DUDE_VISION_DESC,Buzz kan gedurende <c00cc00><VALUE1></c> seconden in alle bosjes kijken die zich in het oplaadgebied van zijn super bevinden.
 TID_LOGIN_CALENDAR_ALREADY_HAVE_BRAWLER,Je hebt deze knokker al.
 TID_LOGIN_CALENDAR_ALREADY_HAVE_GADGET,Je hebt deze gadget al.
 TID_LOGIN_CALENDAR_ALREADY_HAVE_STAR_POWER,Je hebt deze sterrenkracht al.
@@ -6460,6 +6460,7 @@ TID_ACCESSORY_SILENCER_GADGET_1_DESC,"Als er geen doelwit wordt geraakt, blijft 
 TID_ACCESSORY_SILENCER_GADGET_2,VET GESPETTER
 TID_ACCESSORY_SILENCER_GADGET_2_DESC,"Otis schiet met zijn volgende aanval een reuzeninktbal af. De inktpoel die achterblijft, brengt geleidelijk aan <c00cc00><VALUE1></c> schade toe gedurende <c00cc00><VALUE2></c> seconden."
 TID_RANDOM_GAME_MODE,MYSTERIE
+TID_ADVENTURE_GAME_MODE,AVONTUUR
 TID_NOTIFICATION_RANDOM,Nieuwe kaart voor MYSTERIE beschikbaar! Tijd om nieuwe beloningen te winnen!
 TID_SKIN_INFO_DEEPSEA,Diepzeeskin
 TID_EMOTE_BUNDLE_DEEPSEA_PACK,Reacties van diepzeeskins
@@ -6553,9 +6554,9 @@ TID_CLUB_EVENTS_CHANGED_CLUB,Je kunt alleen bijdragen aan de club waarin je deze
 TID_CLUB_QUESTS_CURRENT_CLUB_POINTS,Totale aantal punten dat deze week door je club is verzameld
 TID_CLUB_QUESTS_THIS_WEEKS_QUESTS,CLUBOPDRACHTEN VAN DEZE WEEK
 TID_SPEC_ABI_ARTILLERY_DUDE_1,GEVAARLIJK GOUD
-TID_SPEC_ABI_ARTILLERY_DUDE_1_DESC,De goudzakken van Penny barsten met een <c00cc00><VALUE1>%</c> bredere waaier na elke treffer.
+TID_SPEC_ABI_ARTILLERY_DUDE_1_DESC,De goudbuidels van Penny barsten met een <c00cc00><VALUE1>%</c> bredere waaier na elke treffer.
 TID_SPEC_ABI_ARTILLERY_DUDE_2,KNALKANON
-TID_SPEC_ABI_ARTILLERY_DUDE_2_DESC,Penny's kanon brengt <c00cc00><VALUE1></c> schade toe en stoot nabije vijanden terug bij impact.
+TID_SPEC_ABI_ARTILLERY_DUDE_2_DESC,Nabije vijanden worden teruggestoten daar waar Penny haar kanon inzet en lopen <c00cc00><VALUE1></c> schade op.
 TID_ACCESSORY_ARTILLERY_DUDE_GADGET_1,ZOUTVAT
 TID_ACCESSORY_ARTILLERY_DUDE_GADGET_1_DESC,Penny laat een vat met zout vallen dat vijandelijke projectielen blokkeert. Ze kan het ook gebruiken om haar eigen goudzakken te laten barsten.
 TID_ACCESSORY_ARTILLERY_DUDE_GADGET_2,HOUWITSER
@@ -6602,6 +6603,146 @@ TID_TRUE_GOLD_EVE_SKIN_SHOP,MASSIEF GOUDEN\nEVE
 TID_TRUE_SILVER_EVE_SKIN,MASSIEF ZILVEREN EVE
 TID_TRUE_SILVER_EVE_SKIN_SHOP,MASSIEF ZILVEREN\nEVE
 TID_BRAWL_PASS_SEASON_12,DIEPZEEKNOKPARTIJ
+TID_TRIPLE_TAKEDOWN,DRIEDUBBELE UITSCHAKELING!
+TID_QUAD_TAKEDOWN,VIERVOUDIGE UITSCHAKELING!
+TID_WEAPON_THROWER,SAM
+TID_WEAPON_THROWER_SHORT_DESC,BESCHADIGER
+TID_WEAPON_THROWER_DESC,Als voormalige fabriekswerker heeft Sam Bronson een vete tegen ALLE robots.\n\nHij is de spierkracht achter de bende van de gouden arm en eist met plezier de buit op nadat hij robots ervan langs geeft!
+TID_WEAPON_THROWER_WEAPON,HEVIGE HANDEN
+TID_WEAPON_THROWER_WEAPON_DESC,Sam deelt een dubbele dosis harde klappen uit. Met zijn ijzeren handschoenen kan hij meer schade aanbrengen.
+TID_WEAPON_THROWER_ULTI,KNOKBEUGELS
+TID_WEAPON_THROWER_ULTI_DESC,"Sam gooit met zijn knokbeugels, die schade toebrengen aan alle geraakte vijanden voordat ze op de grond landen. De knokbeugels keren terug naar zijn handen bij zijn volgende superaanval, waarbij ze ook schade aanrichten."
+TID_SPEC_ABI_WEAPON_THROWER_1,HARTIG HERSTEL
+TID_SPEC_ABI_WEAPON_THROWER_1_DESC,"Wanneer Sam zijn knokbeugels terugkrijgt, herstelt zijn gezondheid direct met <c00cc00><VALUE1>%</c>."
+TID_SPEC_ABI_WEAPON_THROWER_2,SNELLADER
+TID_SPEC_ABI_WEAPON_THROWER_2_DESC,Sams knokbeugels laden zijn super op wanneer ze zich op de grond en in de buurt van vijanden bevinden.
+TID_ACCESSORY_WEAPON_THROWER_GADGET_1,MAGNETISCH VELD
+TID_ACCESSORY_WEAPON_THROWER_GADGET_1_DESC,"Terwijl Sams knokbeugels op de grond liggen, kan hij ze activeren om nabije vijanden ernaartoe te trekken."
+TID_ACCESSORY_WEAPON_THROWER_GADGET_2,ELEKTRISCH GELADEN
+TID_ACCESSORY_WEAPON_THROWER_GADGET_2_DESC,"De volgende keer dat Sams knokbeugels op de grond landen, geven ze een elektrische puls af die vijanden terugstoot."
+TID_ACCESSORY_BLOCKED_MISSING_GAUNTLETS,Knokbeugels zijn niet op de grond!
+TID_ACCESSORY_BLOCKED_GAUNTLETS_TOO_FAR,Knokbeugels zijn te ver weg!
+TID_ACCESSORY_BLOCKED_GAUNTLETS_REQUIRED,Knokbeugels vereist!
+TID_SOUL_COLLECTOR,GUS
+TID_SOUL_COLLECTOR_SHORT_DESC,HELPER
+TID_SOUL_COLLECTOR_DESC,In een lang vergeten en verlaten treinstel vindt Gus gezelschap in zijn ballonnen. Hij is beste vrienden met de ballondieren die hij maakt om de tijd mee te doden.
+TID_SOUL_COLLECTOR_WEAPON,GEESTIGE BALLONNEN
+TID_SOUL_COLLECTOR_WEAPON_DESC,"Gus bekogelt zijn vijanden met ballonnen. Na enkele succesvolle treffers verschijnt er een geest, die door Gus of een teamgenoot kan worden verzameld om te genezen."
+TID_SOUL_COLLECTOR_ULTI,BESCHERMSPOOK
+TID_SOUL_COLLECTOR_ULTI_DESC,Gus gebruikt zijn zelfgemaakte ballon en beste vriend Spookje om een schild rond zichzelf of een teamgenoot te vormen.
+TID_SPEC_ABI_SOUL_COLLECTOR_1,GEZONDE ZIEL
+TID_SPEC_ABI_SOUL_COLLECTOR_1_DESC,De geesten uit de ballonnen van Gus geven <c00cc00><VALUE1>%</c> meer gezondheid.
+TID_SPEC_ABI_SOUL_COLLECTOR_2,GEESTKRACHT
+TID_SPEC_ABI_SOUL_COLLECTOR_2_DESC,Spookje verhoogt gedurende <c00cc00><VALUE2></c> seconden de aanvalsschade van een teamgenoot met <c00cc00><VALUE1>%</c>.
+TID_ACCESSORY_SOUL_COLLECTOR_GADGET_1,FANTOOMPIJN
+TID_ACCESSORY_SOUL_COLLECTOR_GADGET_1_DESC,"Gus laat alle niet-verzamelde geesten ontploffen, waarmee hij <c00cc00><VALUE1></c> schade aanricht aan nabije vijanden."
+TID_ACCESSORY_SOUL_COLLECTOR_GADGET_2,CONVERSIE
+TID_ACCESSORY_SOUL_COLLECTOR_GADGET_2_DESC,Gus verliest <ccc0000><VALUE1>%</c> van zijn gezondheid en krijgt er <c00cc00><VALUE2>%</c> geestdrift voor terug.
+TID_ACCESSORY_BLOCKED_MISSING_SOULS,Geen geesten!
+TID_ACCESSORY_BLOCKED_SPIRIT_ALREADY_FULL,Geestdrift is al vol!
+TID_SKIN_INFO_OUTLAW,Skin van de onheilsbende
+TID_EMOJI_SURGE_TEAM,NAVI
+TID_EMOJI_MORTIS_TEAM,SK
+TID_EMOJI_SPIKE_TEAM,INTZ
+TID_EMOJI_PRIMO_TEAM,TQ
+TID_EMOJI_COLT_TEAM,STMN
+TID_EMOJI_NITA_TEAM,OBEY
+TID_EMOJI_LEON_TEAM,QLASH
+TID_EMOJI_JESSIE_TEAM,ZETA
+TID_EMOJI_EMZ_TEAM,TRIBE
+TID_EMOJI_SHELLY_TEAM,TOTEM
+TID_SKIN_INFO_MECHA,Mecha-skin
+TID_SCID_REQUIRED_DESC,Vanwege je leeftijd moet je je spel verbinden met Supercell ID.
+TID_SCID_REQUIRED_CONNECT,VERBINDEN
+TID_LOGIN_CALENDAR_POPULAR,POPULAIR
+TID_TRAIT_SUPER_START,Deze knokker start het spel met een volgeladen super.
+TID_GAME_MODE_29,ROBOTGEVECHT
+TID_GAME_MODE_29_DESC,"Gehackte robots hebben zich tegen ons gekeerd! 8-Bit is onze enige en laatste hoop. Hij heeft de geheime code bij zich, dus het is van cruciaal belang dat hij het overleeft! Bescherm 8-Bit tegen golven van wrede robots tot de tijd verstrijkt om te winnen.\n\nVerzamel knokkermunten om 8-Bit in het gevecht te houden!"
+TID_GAME_MODE_29_INTRO_TEXT,Bescherm 8-Bit!
+TID_LAST_STAND_1,Eliminatie
+TID_LAST_STAND_2,Afstraffing
+TID_LAST_STAND_3,Robotopstand
+TID_LAST_STAND_4,Verlossing
+TID_LAST_STAND_5,Kortsluiting
+TID_LAST_STAND_6,Wreed lot
+TID_INBOX_CAPTION_55,Beloning voor voltooide opdracht:
+TID_ESPORTS_OFFER_TITLE,KAMPIOENSCHAP
+TID_ESPORTS_OFFER_SUBTITLE_PINS,Set van reacties
+TID_ESPORTS_OFFER_SUBTITLE_THUMBNAILS,Spelerpictogrammen
+TID_ESPORTS_OFFER_SUBTITLE_EACH,PER STUK
+TID_ESPORTS_OFFER_SUBTITLE_ALREADY_OWNED,Al in bezit!
+TID_ESPORTS_OFFER_ITEM_PINS,Reactie
+TID_ESPORTS_OFFER_ITEM_THUMBNAILS,Spelerpictogram
+TID_EMOTE_BUNDLE_MORTIS_MECHA_PACK,Reactieset van Mecha-Mortis
+TID_BRAWL_PASS_SEASON_13,ROBOTFABRIEK
+TID_TRUE_GOLD_OTIS_SKIN,MASSIEF GOUDEN OTIS
+TID_TRUE_GOLD_OTIS_SKIN_SHOP,MASSIEF GOUDEN\nOTIS
+TID_TRUE_SILVER_OTIS_SKIN,MASSIEF ZILVEREN OTIS
+TID_TRUE_SILVER_OTIS_SKIN_SHOP,MASSIEF ZILVEREN\nOTIS
+TID_TRUE_GOLD_SQUEAK_SKIN,MASSIEF GOUDEN SQUEAK
+TID_TRUE_GOLD_SQUEAK_SKIN_SHOP,MASSIEF GOUDEN\nSQUEAK
+TID_TRUE_SILVER_SQUEAK_SKIN,MASSIEF ZILVEREN SQUEAK
+TID_TRUE_SILVER_SQUEAK_SKIN_SHOP,MASSIEF ZILVEREN\nSQUEAK
+TID_TRUE_GOLD_BYRON_SKIN,MASSIEF GOUDEN BYRON
+TID_TRUE_GOLD_BYRON_SKIN_SHOP,MASSIEF GOUDEN\nBYRON
+TID_TRUE_SILVER_BRYON_SKIN,MASSIEF ZILVEREN BYRON
+TID_TRUE_SILVER_BYRON_SKIN_SHOP,MASSIEF ZILVEREN\nBYRON
+TID_TRUE_GOLD_GRIFF_SKIN,MASSIEF GOUDEN GRIFF
+TID_TRUE_GOLD_GRIFF_SKIN_SHOP,MASSIEF GOUDEN\nGRIFF
+TID_TRUE_SILVER_GRIFF_SKIN,MASSIEF ZILVEREN GRIFF
+TID_TRUE_SILVER_GRIFF_SKIN_SHOP,MASSIEF ZILVEREN\nGRIFF
+TID_TRUE_GOLD_EDGAR_SKIN,MASSIEF GOUDEN EDGAR
+TID_TRUE_GOLD_EDGAR_SKIN_SHOP,MASSIEF GOUDEN\nEDGAR
+TID_TRUE_SILVER_EDGAR_SKIN,MASSIEF ZILVEREN EDGAR
+TID_TRUE_SILVER_EDGAR_SKIN_SHOP,MASSIEF ZILVEREN\nEDGAR
+TID_CAESAR_BRONSON_SKIN,CAESAR-SAM
+TID_CAESAR_BRONSON_SKIN_SHOP,CAESAR-\nSAM
+TID_MECHA_MORIS_SKIN,MECHA-MORTIS
+TID_MECHA_MORTIS_SKIN_SHOP,MECHA-\nMORTIS
+TID_DARK_MECHA_MORTIS_SKIN,DUISTERE MECHA-MORTIS
+TID_DARK_MECHA_MORTIS_SKIN_SHOP,DUISTERE\nMECHA-MORTIS
+TID_LIGHT_MECHA_MORTIS_SKIN,LICHTE MECHA-MORTIS
+TID_LIGHT_MECHA_MORTIS_SKIN_SHOP,LICHTE\nMECHA-MORTIS
+TID_OUTLAW_LOLA_SKIN,LOSBANDIGE LOLA
+TID_OUTLAW_LOLA_SKIN_SHOP,LOSBANDIGE\nLOLA
+TID_OUTLAW_CROW,SCHEDEL-CROW
+TID_OUTLAW_CROW_SKIN_SHOP,SCHEDEL-CROW
+TID_OUTLAW_POCO_SKIN,DESPERADO POCO
+TID_OUTLAW_POCO_SKIN_SHOP,DESPERADO\nPOCO
+TID_BROKER_PAM_SKIN,BELEGGER-PAM
+TID_BROKER_PAM_SKIN_SHOP,BELEGGER-\nPAM
+TID_MOON_FESTIVAL_SQUEAK_SKIN,MAANKONIJN-SQUEAK
+TID_MOON_FESTIVAL_SQUEAK_SKIN_SHOP,MAANKONIJN-\nSQUEAK
+TID_BRAWLOWEEN_LEON_SKIN,GEESTIGE LEON
+TID_BRAWLOWEEN_LEON_SKIN_SHOP,GEESTIGE\nLEON
+TID_HINT_45,Gebruik zeker een contentmakerscode in de winkel.
+TID_HINT_46,Meld je elke dag aan om gratis dagelijkse beloningen te ontvangen!
+TID_HINT_47,"Door de bal te passen naar je vijanden in knokbal, kun je ervoor zorgen dat ze hun munitie verspillen!"
+TID_HINT_48,Gebruik reacties en sprays om je uit te drukken tijdens gevechten.
+TID_HINT_49,"Hekken zijn vergelijkbaar met muren, behalve dat je erdoorheen kunt schieten!"
+TID_HINT_50,Werk samen met je team voor de beste kans op succes!
+TID_HINT_51,"Als je niet tevreden bent met de spelbesturing, kun je deze wijzigen wanneer je een knokker uitprobeert."
+TID_HINT_52,In knokbal kun je je super inzetten voor een superschop!
+TID_HINT_53,Focus op verdedigen wanneer je de meeste edelstenen bij je hebt in edelstenengraai.
+TID_HINT_54,Wacht totdat je teamgenoten terug in het spel zijn voordat je aanvalt!
+TID_HINT_55,Oefen en verbeter je vaardigheden in vriendschappelijke gevechten.
+TID_HINT_56,Bepaalde knokkers hebben unieke kenmerken. Vind ze in hun statistiekenscherm.
+TID_HINT_57,Zorg ervoor dat je teamgenoot nog leeft voor je krachtkubussen verzamelt in duo-showdown.
+TID_HINT_58,Gebruik de functie 'Een team zoeken' als je aan een uitdaging deelneemt!
+TID_HINT_59,Pas op voor de mijnen van Bo: ze kunnen overal liggen!
+TID_HINT_60,De super van Lou leent zich goed om belangrijke punten op de kaart te controleren.
+TID_HINT_61,Jessie richt steeds minder schade aan telkens als haar aanval weerkaatst op een vijand.
+TID_HINT_62,Colette kan enorme schade toebrengen aan knokkers met veel levenspunten.
+TID_HINT_63,Edgar geneest telkens als hij een klap uitdeelt.
+TID_HINT_64,Janet kan verder schieten als je haar aanval langer aanhoudt.
+TID_HINT_65,Gene's hoofdaanval kan zich opsplitsen en zijn super opladen als hij vijanden raakt.
+TID_LAST_STAND_WAVE_1,De robots komen eraan!
+TID_LAST_STAND_WAVE_2,Meer vijanden in aankomst!
+TID_LAST_STAND_SHUTDOWN,<ccc0000>8-Bit is uitgeschakeld!</c>
+TID_EMOTE_BUNDLE_OUTLAW_PACK,Reactiepakket van de onheilsbende
+TID_SHOP_OUTLAW_SKINS,Skin van de onheilsbende
+TID_SHOP_OUTLAW_TITLE,ONHEILSBENDE
+TID_ACCESSORY_BLOCKED_SOULS_TOO_FAR,Geesten zijn te ver weg!
 TID_REGION_CUSTOM1,
 TID_REGION_CUSTOM2,
 TID_REGION_CUSTOM3,

@@ -25,7 +25,7 @@
 
 
 # instance fields
-.field public f:Lcom/google/android/gms/drive/Contents;
+.field public g:Lcom/google/android/gms/drive/Contents;
 
 
 # direct methods
@@ -48,7 +48,7 @@
     invoke-direct {p0}, Lcom/google/android/gms/games/internal/zze;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lcom/google/android/gms/games/snapshot/SnapshotContentsEntity;->f:Lcom/google/android/gms/drive/Contents;
+    iput-object p1, p0, Lcom/google/android/gms/games/snapshot/SnapshotContentsEntity;->g:Lcom/google/android/gms/drive/Contents;
 
     return-void
 .end method
@@ -68,7 +68,7 @@
     const/4 v1, 0x1
 
     .line 2
-    iget-object v2, p0, Lcom/google/android/gms/games/snapshot/SnapshotContentsEntity;->f:Lcom/google/android/gms/drive/Contents;
+    iget-object v2, p0, Lcom/google/android/gms/games/snapshot/SnapshotContentsEntity;->g:Lcom/google/android/gms/drive/Contents;
 
     const/4 v3, 0x0
 

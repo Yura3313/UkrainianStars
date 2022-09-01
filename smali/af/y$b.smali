@@ -1,5 +1,5 @@
 .class public final Laf/y$b;
-.super Lse/h;
+.super Lse/i;
 .source "ThreadContext.kt"
 
 # interfaces
@@ -18,19 +18,19 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/p<",
-        "Lze/p1<",
+        "Lze/q1<",
         "*>;",
         "Lke/f$a;",
-        "Lze/p1<",
+        "Lze/q1<",
         "*>;>;"
     }
 .end annotation
 
 
 # static fields
-.field public static final f:Laf/y$b;
+.field public static final g:Laf/y$b;
 
 
 # direct methods
@@ -41,7 +41,7 @@
 
     invoke-direct {v0}, Laf/y$b;-><init>()V
 
-    sput-object v0, Laf/y$b;->f:Laf/y$b;
+    sput-object v0, Laf/y$b;->g:Laf/y$b;
 
     return-void
 .end method
@@ -51,7 +51,7 @@
 
     const/4 v0, 0x2
 
-    invoke-direct {p0, v0}, Lse/h;-><init>(I)V
+    invoke-direct {p0, v0}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -61,14 +61,14 @@
 .method public final invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
     .locals 1
 
-    check-cast p1, Lze/p1;
+    check-cast p1, Lze/q1;
 
     check-cast p2, Lke/f$a;
 
     const-string v0, "element"
 
     .line 1
-    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     if-eqz p1, :cond_0
 
@@ -76,7 +76,7 @@
 
     .line 2
     :cond_0
-    instance-of p1, p2, Lze/p1;
+    instance-of p1, p2, Lze/q1;
 
     if-nez p1, :cond_1
 
@@ -85,7 +85,7 @@
     :cond_1
     move-object p1, p2
 
-    check-cast p1, Lze/p1;
+    check-cast p1, Lze/q1;
 
     :goto_0
     return-object p1

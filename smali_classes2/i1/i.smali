@@ -4,18 +4,23 @@
 
 
 # direct methods
-.method public static synthetic a(I)Ljava/lang/String;
+.method public static synthetic a(I)I
     .locals 1
 
     const/4 v0, 0x1
 
     if-ne p0, v0, :cond_0
 
-    const-string p0, "five_star"
-
-    return-object p0
+    return v0
 
     :cond_0
+    const/4 v0, 0x2
+
+    if-ne p0, v0, :cond_1
+
+    return v0
+
+    :cond_1
     const/4 p0, 0x0
 
     throw p0
@@ -34,4 +39,39 @@
     invoke-static {p4, p5}, Le2/b;->u(Landroid/os/Parcel;I)V
 
     return-void
+.end method
+
+.method public static synthetic c(I)Ljava/lang/String;
+    .locals 1
+
+    const/4 v0, 0x1
+
+    if-ne p0, v0, :cond_0
+
+    const-string p0, "UNCOMPRESSED"
+
+    return-object p0
+
+    :cond_0
+    const/4 v0, 0x2
+
+    if-ne p0, v0, :cond_1
+
+    const-string p0, "COMPRESSED"
+
+    return-object p0
+
+    :cond_1
+    const/4 v0, 0x3
+
+    if-ne p0, v0, :cond_2
+
+    const-string p0, "DO_NOT_USE_CRUNCHY_UNCOMPRESSED"
+
+    return-object p0
+
+    :cond_2
+    const-string p0, "null"
+
+    return-object p0
 .end method

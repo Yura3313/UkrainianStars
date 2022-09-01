@@ -272,7 +272,7 @@
     invoke-virtual {v4, v3}, Ljava/lang/StringBuilder;->setLength(I)V
 
     .line 5
-    iget v5, v1, Ll6/a;->g:I
+    iget v5, v1, Ll6/a;->h:I
 
     .line 6
     invoke-virtual {v1, v3}, Ll6/a;->b(I)I
@@ -360,7 +360,7 @@
     move-result v6
 
     .line 13
-    iget v7, v1, Ll6/a;->g:I
+    iget v7, v1, Ll6/a;->h:I
 
     .line 14
     :goto_1
@@ -468,7 +468,7 @@
 
     .line 24
     :cond_3
-    sget-object v1, Lcom/google/zxing/NotFoundException;->h:Lcom/google/zxing/NotFoundException;
+    sget-object v1, Lcom/google/zxing/NotFoundException;->i:Lcom/google/zxing/NotFoundException;
 
     .line 25
     throw v1
@@ -597,7 +597,7 @@
 
     aput-object v2, v7, v12
 
-    sget-object v2, Le6/a;->h:Le6/a;
+    sget-object v2, Le6/a;->i:Le6/a;
 
     invoke-direct {v4, v1, v5, v7, v2}, Le6/j;-><init>(Ljava/lang/String;[B[Le6/l;Le6/a;)V
 
@@ -605,7 +605,7 @@
 
     .line 35
     :cond_8
-    sget-object v1, Lcom/google/zxing/NotFoundException;->h:Lcom/google/zxing/NotFoundException;
+    sget-object v1, Lcom/google/zxing/NotFoundException;->i:Lcom/google/zxing/NotFoundException;
 
     .line 36
     throw v1
@@ -626,14 +626,14 @@
 
     .line 37
     :cond_b
-    sget-object v1, Lcom/google/zxing/NotFoundException;->h:Lcom/google/zxing/NotFoundException;
+    sget-object v1, Lcom/google/zxing/NotFoundException;->i:Lcom/google/zxing/NotFoundException;
 
     .line 38
     throw v1
 
     .line 39
     :cond_c
-    sget-object v1, Lcom/google/zxing/NotFoundException;->h:Lcom/google/zxing/NotFoundException;
+    sget-object v1, Lcom/google/zxing/NotFoundException;->i:Lcom/google/zxing/NotFoundException;
 
     .line 40
     throw v1
@@ -683,7 +683,7 @@
 
     .line 46
     :cond_f
-    sget-object v1, Lcom/google/zxing/NotFoundException;->h:Lcom/google/zxing/NotFoundException;
+    sget-object v1, Lcom/google/zxing/NotFoundException;->i:Lcom/google/zxing/NotFoundException;
 
     .line 47
     goto :goto_b

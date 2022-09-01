@@ -7,25 +7,25 @@
 
 
 # static fields
-.field public static final k:[I
+.field public static final l:[I
 
 
 # instance fields
-.field public h:Lre/l;
+.field public i:Lre/l;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lre/l<",
             "-",
             "Ljava/lang/Boolean;",
-            "Lie/h;",
+            "Lie/i;",
             ">;"
         }
     .end annotation
 .end field
 
-.field public i:Z
+.field public j:Z
 
-.field public final j:Lcom/supercell/id/view/c;
+.field public final k:Lcom/supercell/id/view/c;
 
 
 # direct methods
@@ -42,7 +42,7 @@
 
     aput v2, v0, v1
 
-    sput-object v0, Lcom/supercell/id/view/Checkbox;->k:[I
+    sput-object v0, Lcom/supercell/id/view/Checkbox;->l:[I
 
     return-void
 .end method
@@ -63,7 +63,7 @@
 
     const-string v0, "context"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 2
     invoke-direct {p0, p1, p2, p3}, Landroidx/appcompat/widget/AppCompatImageButton;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
@@ -73,7 +73,7 @@
 
     invoke-direct {p2, p1}, Lcom/supercell/id/view/c;-><init>(Landroid/content/Context;)V
 
-    iput-object p2, p0, Lcom/supercell/id/view/Checkbox;->j:Lcom/supercell/id/view/c;
+    iput-object p2, p0, Lcom/supercell/id/view/Checkbox;->k:Lcom/supercell/id/view/c;
 
     .line 4
     new-instance p1, Lcom/supercell/id/view/Checkbox$a;
@@ -96,7 +96,7 @@
     invoke-virtual {p0, p1}, Landroidx/appcompat/widget/AppCompatImageButton;->setBackgroundResource(I)V
 
     .line 8
-    iget-boolean p1, p0, Lcom/supercell/id/view/Checkbox;->i:Z
+    iget-boolean p1, p0, Lcom/supercell/id/view/Checkbox;->j:Z
 
     const/4 p2, 0x0
 
@@ -115,10 +115,10 @@
     .locals 3
 
     .line 1
-    iput-boolean p1, p0, Lcom/supercell/id/view/Checkbox;->i:Z
+    iput-boolean p1, p0, Lcom/supercell/id/view/Checkbox;->j:Z
 
     .line 2
-    iget-object v0, p0, Lcom/supercell/id/view/Checkbox;->j:Lcom/supercell/id/view/c;
+    iget-object v0, p0, Lcom/supercell/id/view/Checkbox;->k:Lcom/supercell/id/view/c;
 
     .line 3
     iget-object v1, v0, Lcom/supercell/id/view/c;->i:Landroid/animation/ValueAnimator;
@@ -250,7 +250,7 @@
     if-eqz p3, :cond_5
 
     .line 24
-    iget-object p2, p0, Lcom/supercell/id/view/Checkbox;->h:Lre/l;
+    iget-object p2, p0, Lcom/supercell/id/view/Checkbox;->i:Lre/l;
 
     if-eqz p2, :cond_4
 
@@ -262,7 +262,7 @@
 
     move-result-object p1
 
-    check-cast p1, Lie/h;
+    check-cast p1, Lie/i;
 
     :cond_4
     const/16 p1, 0x800
@@ -286,7 +286,7 @@
     .locals 1
 
     .line 1
-    iget-boolean v0, p0, Lcom/supercell/id/view/Checkbox;->i:Z
+    iget-boolean v0, p0, Lcom/supercell/id/view/Checkbox;->j:Z
 
     if-eq v0, p1, :cond_0
 
@@ -323,7 +323,7 @@
     if-eqz v1, :cond_1
 
     .line 3
-    iget-object v1, v1, Lcom/supercell/id/view/f;->f:Landroid/graphics/drawable/Drawable;
+    iget-object v1, v1, Lcom/supercell/id/view/f;->g:Landroid/graphics/drawable/Drawable;
 
     if-eqz v1, :cond_1
 
@@ -335,7 +335,7 @@
     const-string v1, "background"
 
     .line 4
-    invoke-static {v0, v1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     :goto_1
     return-object v0
@@ -344,7 +344,7 @@
 .method public final isChecked()Z
     .locals 1
 
-    iget-boolean v0, p0, Lcom/supercell/id/view/Checkbox;->i:Z
+    iget-boolean v0, p0, Lcom/supercell/id/view/Checkbox;->j:Z
 
     return v0
 .end method
@@ -353,12 +353,12 @@
     .locals 1
 
     .line 1
-    iget-boolean v0, p0, Lcom/supercell/id/view/Checkbox;->i:Z
+    iget-boolean v0, p0, Lcom/supercell/id/view/Checkbox;->j:Z
 
     if-eqz v0, :cond_0
 
     .line 2
-    sget-object v0, Lcom/supercell/id/view/Checkbox;->k:[I
+    sget-object v0, Lcom/supercell/id/view/Checkbox;->l:[I
 
     add-int/lit8 p1, p1, 0x1
 
@@ -374,7 +374,7 @@
     const-string v0, "View.mergeDrawableStates\u2026, DRAWABLE_STATE_CHECKED)"
 
     .line 4
-    invoke-static {p1, v0}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     goto :goto_0
 
@@ -386,7 +386,7 @@
 
     const-string v0, "super.onCreateDrawableState(extraSpace)"
 
-    invoke-static {p1, v0}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     :goto_0
     return-object p1
@@ -397,7 +397,7 @@
 
     const-string v0, "parcelable"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     check-cast p1, Landroid/os/Bundle;
@@ -441,7 +441,7 @@
     invoke-direct {v1}, Landroid/os/Bundle;-><init>()V
 
     .line 3
-    iget-boolean v2, p0, Lcom/supercell/id/view/Checkbox;->i:Z
+    iget-boolean v2, p0, Lcom/supercell/id/view/Checkbox;->j:Z
 
     const-string v3, "checked"
 
@@ -519,12 +519,12 @@
             "Lre/l<",
             "-",
             "Ljava/lang/Boolean;",
-            "Lie/h;",
+            "Lie/i;",
             ">;)V"
         }
     .end annotation
 
-    iput-object p1, p0, Lcom/supercell/id/view/Checkbox;->h:Lre/l;
+    iput-object p1, p0, Lcom/supercell/id/view/Checkbox;->i:Lre/l;
 
     return-void
 .end method
@@ -532,7 +532,7 @@
 .method public final toggle()V
     .locals 1
 
-    iget-boolean v0, p0, Lcom/supercell/id/view/Checkbox;->i:Z
+    iget-boolean v0, p0, Lcom/supercell/id/view/Checkbox;->j:Z
 
     xor-int/lit8 v0, v0, 0x1
 

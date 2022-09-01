@@ -36,11 +36,11 @@
     .end annotation
 .end field
 
-.field public m:Lcom/helpshift/util/i0;
+.field public m:Lcom/helpshift/util/g0;
 
 
 # direct methods
-.method public constructor <init>(Le7/a;Lla/p;Lk3/s9;Lh7/a;Le8/a;Lv0/f;Lg7/a;Lcom/helpshift/util/i0;)V
+.method public constructor <init>(Le7/a;Lla/p;Lk3/s9;Lh7/a;Le8/a;Lv0/f;Lg7/a;Lcom/helpshift/util/g0;)V
     .locals 0
 
     .line 1
@@ -77,7 +77,7 @@
     iput-object p7, p0, Lhb/d;->g:Lg7/a;
 
     .line 12
-    iput-object p8, p0, Lhb/d;->m:Lcom/helpshift/util/i0;
+    iput-object p8, p0, Lhb/d;->m:Lcom/helpshift/util/g0;
 
     return-void
 .end method
@@ -88,17 +88,17 @@
     .locals 13
 
     .line 1
-    sget-object v6, Lda/a;->f:Lda/a;
+    sget-object v6, Lda/a;->g:Lda/a;
 
-    iget-object v0, p0, Lhb/d;->m:Lcom/helpshift/util/i0;
+    iget-object v0, p0, Lhb/d;->m:Lcom/helpshift/util/g0;
 
-    new-instance v1, Lcom/helpshift/util/i0;
+    new-instance v1, Lcom/helpshift/util/g0;
 
     const-string v2, "7.0.0"
 
-    invoke-direct {v1, v2}, Lcom/helpshift/util/i0;-><init>(Ljava/lang/String;)V
+    invoke-direct {v1, v2}, Lcom/helpshift/util/g0;-><init>(Ljava/lang/String;)V
 
-    invoke-virtual {v0, v1}, Lcom/helpshift/util/i0;->e(Lcom/helpshift/util/i0;)Z
+    invoke-virtual {v0, v1}, Lcom/helpshift/util/g0;->e(Lcom/helpshift/util/g0;)Z
 
     move-result v0
 
@@ -145,9 +145,9 @@
 
     if-eqz v0, :cond_3
 
-    iget-object v0, v0, Lg7/d;->g:Ljava/lang/String;
+    iget-object v0, v0, Lg7/d;->h:Ljava/lang/String;
 
-    invoke-static {v0}, Lcom/google/android/play/core/appupdate/g;->b(Ljava/lang/String;)Z
+    invoke-static {v0}, La5/b0;->d(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -182,16 +182,16 @@
     new-instance v9, Lea/a;
 
     .line 16
-    iget-object v1, v0, Li7/c;->g:Ljava/lang/String;
+    iget-object v1, v0, Li7/c;->h:Ljava/lang/String;
 
     .line 17
     iget-object v0, p0, Lhb/d;->k:Lg7/d;
 
-    iget-object v2, v0, Lg7/d;->j:Ljava/lang/String;
+    iget-object v2, v0, Lg7/d;->k:Ljava/lang/String;
 
-    iget-object v3, v0, Lg7/d;->i:Ljava/lang/String;
+    iget-object v3, v0, Lg7/d;->j:Ljava/lang/String;
 
-    iget-object v4, v0, Lg7/d;->g:Ljava/lang/String;
+    iget-object v4, v0, Lg7/d;->h:Ljava/lang/String;
 
     move-object v0, v9
 
@@ -205,7 +205,7 @@
     :cond_3
     iget-object v0, p0, Lhb/d;->l:Ljava/util/ArrayList;
 
-    invoke-static {v0}, Lbc/a;->d(Ljava/util/List;)Z
+    invoke-static {v0}, Lt5/a;->g(Ljava/util/List;)Z
 
     move-result v0
 
@@ -234,9 +234,9 @@
     check-cast v10, Lg7/d;
 
     .line 20
-    iget-object v0, v10, Lg7/d;->g:Ljava/lang/String;
+    iget-object v0, v10, Lg7/d;->h:Ljava/lang/String;
 
-    invoke-static {v0}, Lcom/google/android/play/core/appupdate/g;->b(Ljava/lang/String;)Z
+    invoke-static {v0}, La5/b0;->d(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -245,13 +245,13 @@
     .line 21
     new-instance v11, Lea/a;
 
-    iget-object v1, v10, Lg7/d;->h:Ljava/lang/String;
+    iget-object v1, v10, Lg7/d;->i:Ljava/lang/String;
 
-    iget-object v2, v10, Lg7/d;->j:Ljava/lang/String;
+    iget-object v2, v10, Lg7/d;->k:Ljava/lang/String;
 
-    iget-object v3, v10, Lg7/d;->i:Ljava/lang/String;
+    iget-object v3, v10, Lg7/d;->j:Ljava/lang/String;
 
-    iget-object v4, v10, Lg7/d;->g:Ljava/lang/String;
+    iget-object v4, v10, Lg7/d;->h:Ljava/lang/String;
 
     move-object v0, v11
 
@@ -265,9 +265,9 @@
     :cond_4
     new-instance v0, Lf8/b;
 
-    iget-object v1, v10, Lg7/d;->h:Ljava/lang/String;
+    iget-object v1, v10, Lg7/d;->i:Ljava/lang/String;
 
-    iget-object v2, v10, Lg7/d;->k:Ljava/lang/String;
+    iget-object v2, v10, Lg7/d;->l:Ljava/lang/String;
 
     invoke-direct {v0, v1, v2}, Lf8/b;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
@@ -278,7 +278,7 @@
 
     .line 24
     :cond_5
-    invoke-static {v8}, Lbc/a;->d(Ljava/util/List;)Z
+    invoke-static {v8}, Lt5/a;->g(Ljava/util/List;)Z
 
     move-result v0
 
@@ -292,7 +292,7 @@
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 26
-    invoke-static {v8}, Lbc/a;->d(Ljava/util/List;)Z
+    invoke-static {v8}, Lt5/a;->g(Ljava/util/List;)Z
 
     move-result v2
 
@@ -302,7 +302,7 @@
 
     .line 27
     :cond_6
-    iget-object v0, v0, Lv0/f;->g:Ljava/lang/Object;
+    iget-object v0, v0, Lv0/f;->h:Ljava/lang/Object;
 
     check-cast v0, Lg7/e;
 
@@ -405,7 +405,7 @@
     const-string v5, "Error in storing legacy profiles"
 
     .line 36
-    invoke-static {v4, v5, v3}, Landroidx/savedstate/d;->g(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v4, v5, v3}, Le5/i;->i(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_0
 
@@ -420,7 +420,7 @@
     const-string v4, "Error in storing legacy profiles in finally block"
 
     .line 37
-    invoke-static {v3, v4, v2}, Landroidx/savedstate/d;->g(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v3, v4, v2}, Le5/i;->i(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
     :try_end_4
     .catchall {:try_start_4 .. :try_end_4} :catchall_2
 
@@ -459,7 +459,7 @@
     const-string v4, "Error in storing legacy profiles in finally block"
 
     .line 40
-    invoke-static {v3, v4, v1}, Landroidx/savedstate/d;->g(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v3, v4, v1}, Le5/i;->i(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
     .line 41
     :cond_9
@@ -478,7 +478,7 @@
     .line 42
     :cond_a
     :goto_9
-    invoke-static {v7}, Lbc/a;->d(Ljava/util/List;)Z
+    invoke-static {v7}, Lt5/a;->g(Ljava/util/List;)Z
 
     move-result v0
 
@@ -490,7 +490,7 @@
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 44
-    invoke-static {v7}, Lbc/a;->d(Ljava/util/List;)Z
+    invoke-static {v7}, Lt5/a;->g(Ljava/util/List;)Z
 
     move-result v2
 
@@ -528,7 +528,7 @@
     .line 47
     iget-object v5, v4, Lf8/b;->a:Ljava/lang/String;
 
-    invoke-static {v5}, Lcom/google/android/play/core/appupdate/g;->b(Ljava/lang/String;)Z
+    invoke-static {v5}, La5/b0;->d(Ljava/lang/String;)Z
 
     move-result v5
 
@@ -536,7 +536,7 @@
 
     iget-object v5, v4, Lf8/b;->b:Ljava/lang/String;
 
-    invoke-static {v5}, Lcom/google/android/play/core/appupdate/g;->b(Ljava/lang/String;)Z
+    invoke-static {v5}, La5/b0;->d(Ljava/lang/String;)Z
 
     move-result v5
 
@@ -552,7 +552,7 @@
 
     .line 49
     :cond_e
-    iget-object v0, v0, Lg7/a;->f:Ljava/lang/Object;
+    iget-object v0, v0, Lg7/a;->g:Ljava/lang/Object;
 
     check-cast v0, Lg7/e;
 
@@ -655,7 +655,7 @@
     const-string v4, "Error in storing legacy analytics events"
 
     .line 58
-    invoke-static {v2, v4, v1}, Landroidx/savedstate/d;->g(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v2, v4, v1}, Le5/i;->i(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
     :try_end_a
     .catchall {:try_start_a .. :try_end_a} :catchall_3
 
@@ -670,7 +670,7 @@
     const-string v3, "Error in storing legacy analytics events in finally block"
 
     .line 59
-    invoke-static {v2, v3, v1}, Landroidx/savedstate/d;->g(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v2, v3, v1}, Le5/i;->i(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
     :try_end_b
     .catchall {:try_start_b .. :try_end_b} :catchall_5
 
@@ -707,7 +707,7 @@
     const-string v4, "Error in storing legacy analytics events in finally block"
 
     .line 62
-    invoke-static {v3, v4, v1}, Landroidx/savedstate/d;->g(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v3, v4, v1}, Le5/i;->i(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
     .line 63
     :cond_11
@@ -728,7 +728,7 @@
     :goto_13
     iget-object v0, p0, Lhb/d;->i:Ljava/lang/String;
 
-    invoke-static {v0}, Lcom/google/android/play/core/appupdate/g;->b(Ljava/lang/String;)Z
+    invoke-static {v0}, La5/b0;->d(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -794,7 +794,7 @@
     .line 70
     iget-object v2, p0, Lhb/d;->i:Ljava/lang/String;
 
-    iget-object v3, v1, Lg7/d;->h:Ljava/lang/String;
+    iget-object v3, v1, Lg7/d;->i:Ljava/lang/String;
 
     invoke-virtual {v2, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -807,13 +807,13 @@
 
     new-instance v2, Lcom/helpshift/g$a;
 
-    iget-object v3, v1, Lg7/d;->h:Ljava/lang/String;
+    iget-object v3, v1, Lg7/d;->i:Ljava/lang/String;
 
-    iget-object v4, v1, Lg7/d;->j:Ljava/lang/String;
+    iget-object v4, v1, Lg7/d;->k:Ljava/lang/String;
 
     invoke-direct {v2, v3, v4}, Lcom/helpshift/g$a;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
-    iget-object v1, v1, Lg7/d;->j:Ljava/lang/String;
+    iget-object v1, v1, Lg7/d;->k:Ljava/lang/String;
 
     .line 72
     iput-object v1, v2, Lcom/helpshift/g$a;->c:Ljava/lang/String;

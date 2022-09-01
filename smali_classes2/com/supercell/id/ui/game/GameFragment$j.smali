@@ -40,7 +40,7 @@
     const/4 v0, 0x0
 
     .line 1
-    invoke-static {v0, p1}, Lcom/google/android/play/core/appupdate/c;->c(II)Lve/c;
+    invoke-static {v0, p1}, La5/b0;->l(II)Lve/c;
 
     move-result-object p1
 
@@ -49,7 +49,7 @@
 
     const/16 v2, 0xa
 
-    invoke-static {p1, v2}, Lje/f;->q(Ljava/lang/Iterable;I)I
+    invoke-static {p1, v2}, Lje/f;->l(Ljava/lang/Iterable;I)I
 
     move-result v2
 
@@ -141,7 +141,7 @@
 
     invoke-direct {p1}, Lcom/supercell/id/ui/game/GameFragment$j$a;-><init>()V
 
-    invoke-static {v1, p1}, Lje/j;->L(Ljava/lang/Iterable;Ljava/util/Comparator;)Ljava/util/List;
+    invoke-static {v1, p1}, Lje/j;->G(Ljava/lang/Iterable;Ljava/util/Comparator;)Ljava/util/List;
 
     move-result-object p1
 
@@ -153,7 +153,7 @@
     check-cast p1, Lie/d;
 
     .line 9
-    iget-object p1, p1, Lie/d;->f:Ljava/lang/Object;
+    iget-object p1, p1, Lie/d;->g:Ljava/lang/Object;
 
     .line 10
     check-cast p1, Ljava/lang/Number;

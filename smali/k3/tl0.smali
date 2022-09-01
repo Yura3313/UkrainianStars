@@ -1,5 +1,5 @@
-.class public Lk3/tl0;
-.super Lk3/bl0;
+.class public final Lk3/tl0;
+.super Lk3/ll0;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 
@@ -9,173 +9,136 @@
         "<V:",
         "Ljava/lang/Object;",
         ">",
-        "Lk3/bl0<",
+        "Lk3/ll0<",
         "Ljava/lang/Object;",
-        ">;"
+        "TV;>;"
     }
 .end annotation
 
 
-# direct methods
-.method public constructor <init>()V
-    .locals 0
+# instance fields
+.field public v:Lk3/sl0;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lk3/sl0;"
+        }
+    .end annotation
+.end field
 
-    invoke-direct {p0}, Lk3/bl0;-><init>()V
+
+# direct methods
+.method public constructor <init>(Lk3/fk0;ZLjava/util/concurrent/Executor;Ljava/util/concurrent/Callable;)V
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lk3/fk0<",
+            "+",
+            "Lk3/hm0<",
+            "*>;>;Z",
+            "Ljava/util/concurrent/Executor;",
+            "Ljava/util/concurrent/Callable<",
+            "TV;>;)V"
+        }
+    .end annotation
+
+    const/4 v0, 0x0
+
+    .line 1
+    invoke-direct {p0, p1, p2, v0}, Lk3/ll0;-><init>(Lk3/fk0;ZZ)V
+
+    .line 2
+    new-instance p1, Lk3/sl0;
+
+    invoke-direct {p1, p0, p4, p3}, Lk3/sl0;-><init>(Lk3/tl0;Ljava/util/concurrent/Callable;Ljava/util/concurrent/Executor;)V
+
+    iput-object p1, p0, Lk3/tl0;->v:Lk3/sl0;
+
+    .line 3
+    invoke-virtual {p0}, Lk3/ll0;->u()V
 
     return-void
 .end method
 
-.method public static w(Lk3/em0;)Lk3/tl0;
+
+# virtual methods
+.method public final f()V
     .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "<V:",
-            "Ljava/lang/Object;",
-            ">(",
-            "Lk3/em0<",
-            "TV;>;)",
-            "Lk3/tl0<",
-            "TV;>;"
-        }
-    .end annotation
 
     .line 1
-    instance-of v0, p0, Lk3/tl0;
+    iget-object v0, p0, Lk3/tl0;->v:Lk3/sl0;
 
     if-eqz v0, :cond_0
 
     .line 2
-    check-cast p0, Lk3/tl0;
+    invoke-virtual {v0}, Lk3/gm0;->a()V
 
-    return-object p0
-
-    .line 3
     :cond_0
-    new-instance v0, Lk3/vl0;
-
-    invoke-direct {v0, p0}, Lk3/vl0;-><init>(Lk3/em0;)V
-
-    return-object v0
+    return-void
 .end method
 
+.method public final t(Lk3/ll0$a;)V
+    .locals 2
 
-# virtual methods
-.method public final s(JLjava/util/concurrent/TimeUnit;Ljava/util/concurrent/ScheduledExecutorService;)Lk3/tl0;
-    .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(J",
-            "Ljava/util/concurrent/TimeUnit;",
-            "Ljava/util/concurrent/ScheduledExecutorService;",
-            ")",
-            "Lk3/tl0<",
-            "TV;>;"
-        }
-    .end annotation
-
-    invoke-static {p0, p1, p2, p3, p4}, Lk3/am0;->d(Lk3/em0;JLjava/util/concurrent/TimeUnit;Ljava/util/concurrent/ScheduledExecutorService;)Lk3/em0;
-
-    move-result-object p1
-
-    check-cast p1, Lk3/tl0;
-
-    return-object p1
-.end method
-
-.method public final t(Ljava/lang/Class;Lk3/tj0;Ljava/util/concurrent/Executor;)Lk3/tl0;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "<X:",
-            "Ljava/lang/Throwable;",
-            ">(",
-            "Ljava/lang/Class<",
-            "TX;>;",
-            "Lk3/tj0<",
-            "-TX;+TV;>;",
-            "Ljava/util/concurrent/Executor;",
-            ")",
-            "Lk3/tl0<",
-            "TV;>;"
-        }
-    .end annotation
+    const/4 v0, 0x0
 
     .line 1
-    new-instance v0, Lk3/dl0;
-
-    invoke-direct {v0, p0, p1, p2}, Lk3/dl0;-><init>(Lk3/em0;Ljava/lang/Class;Lk3/tj0;)V
+    iput-object v0, p0, Lk3/ll0;->r:Lk3/fk0;
 
     .line 2
-    invoke-static {p3, v0}, Lk3/t5;->a(Ljava/util/concurrent/Executor;Lk3/bl0;)Ljava/util/concurrent/Executor;
+    sget-object v1, Lk3/ll0$a;->g:Lk3/ll0$a;
 
-    move-result-object p1
-
-    invoke-interface {p0, v0, p1}, Lk3/em0;->c(Ljava/lang/Runnable;Ljava/util/concurrent/Executor;)V
-
-    return-object v0
-.end method
-
-.method public final u(Lk3/tj0;Ljava/util/concurrent/Executor;)Lk3/tl0;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "<T:",
-            "Ljava/lang/Object;",
-            ">(",
-            "Lk3/tj0<",
-            "-TV;TT;>;",
-            "Ljava/util/concurrent/Executor;",
-            ")",
-            "Lk3/tl0<",
-            "TT;>;"
-        }
-    .end annotation
-
-    .line 1
-    new-instance v0, Lk3/gl0;
-
-    invoke-direct {v0, p0, p1}, Lk3/gl0;-><init>(Lk3/em0;Lk3/tj0;)V
-
-    .line 2
-    invoke-static {p2, v0}, Lk3/t5;->a(Ljava/util/concurrent/Executor;Lk3/bl0;)Ljava/util/concurrent/Executor;
-
-    move-result-object p1
-
-    invoke-interface {p0, v0, p1}, Lk3/em0;->c(Ljava/lang/Runnable;Ljava/util/concurrent/Executor;)V
-
-    return-object v0
-.end method
-
-.method public final v(Lk3/nl0;Ljava/util/concurrent/Executor;)Lk3/tl0;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "<T:",
-            "Ljava/lang/Object;",
-            ">(",
-            "Lk3/nl0<",
-            "-TV;TT;>;",
-            "Ljava/util/concurrent/Executor;",
-            ")",
-            "Lk3/tl0<",
-            "TT;>;"
-        }
-    .end annotation
-
-    .line 1
-    invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 2
-    new-instance v0, Lk3/hl0;
-
-    invoke-direct {v0, p0, p1}, Lk3/hl0;-><init>(Lk3/em0;Lk3/nl0;)V
+    if-ne p1, v1, :cond_0
 
     .line 3
-    invoke-static {p2, v0}, Lk3/t5;->a(Ljava/util/concurrent/Executor;Lk3/bl0;)Ljava/util/concurrent/Executor;
+    iput-object v0, p0, Lk3/tl0;->v:Lk3/sl0;
 
-    move-result-object p1
+    :cond_0
+    return-void
+.end method
 
-    invoke-interface {p0, v0, p1}, Lk3/em0;->c(Ljava/lang/Runnable;Ljava/util/concurrent/Executor;)V
+.method public final v()V
+    .locals 3
 
-    return-object v0
+    .line 1
+    iget-object v0, p0, Lk3/tl0;->v:Lk3/sl0;
+
+    if-eqz v0, :cond_0
+
+    .line 2
+    :try_start_0
+    iget-object v1, v0, Lk3/sl0;->j:Ljava/util/concurrent/Executor;
+
+    invoke-interface {v1, v0}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
+    :try_end_0
+    .catch Ljava/util/concurrent/RejectedExecutionException; {:try_start_0 .. :try_end_0} :catch_0
+
+    goto :goto_0
+
+    :catch_0
+    move-exception v1
+
+    .line 3
+    iget-boolean v2, v0, Lk3/sl0;->k:Z
+
+    if-eqz v2, :cond_0
+
+    .line 4
+    iget-object v0, v0, Lk3/sl0;->l:Lk3/tl0;
+
+    invoke-virtual {v0, v1}, Lk3/dl0;->j(Ljava/lang/Throwable;)Z
+
+    :cond_0
+    :goto_0
+    return-void
+.end method
+
+.method public final w(ILjava/lang/Object;)V
+    .locals 0
+    .param p2    # Ljava/lang/Object;
+        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .end annotation
+    .end param
+
+    return-void
 .end method

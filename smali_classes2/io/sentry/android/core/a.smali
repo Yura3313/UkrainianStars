@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field public final synthetic f:Lio/sentry/android/core/ANRWatchDog;
+.field public final synthetic g:Lio/sentry/android/core/ANRWatchDog;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lio/sentry/android/core/a;->f:Lio/sentry/android/core/ANRWatchDog;
+    iput-object p1, p0, Lio/sentry/android/core/a;->g:Lio/sentry/android/core/ANRWatchDog;
 
     return-void
 .end method
@@ -26,7 +26,7 @@
 .method public final run()V
     .locals 1
 
-    iget-object v0, p0, Lio/sentry/android/core/a;->f:Lio/sentry/android/core/ANRWatchDog;
+    iget-object v0, p0, Lio/sentry/android/core/a;->g:Lio/sentry/android/core/ANRWatchDog;
 
     invoke-static {v0}, Lio/sentry/android/core/ANRWatchDog;->a(Lio/sentry/android/core/ANRWatchDog;)V
 

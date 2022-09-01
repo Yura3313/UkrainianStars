@@ -84,13 +84,13 @@
     check-cast v0, Lab/e;
 
     .line 3
-    iget-object v0, v0, Landroidx/fragment/app/Fragment;->A:Landroidx/fragment/app/Fragment;
+    iget-object v0, v0, Landroidx/fragment/app/Fragment;->B:Landroidx/fragment/app/Fragment;
 
     .line 4
     check-cast v0, Lab/p;
 
     .line 5
-    iget-object v0, v0, Lab/p;->j0:Lpa/b;
+    iget-object v0, v0, Lab/p;->k0:Lpa/b;
 
     const/4 v1, 0x1
 
@@ -133,7 +133,7 @@
     move-result-object p2
 
     .line 14
-    invoke-static {v3, p1, p2, v2}, Lj1/q;->n(Landroidx/fragment/app/FragmentManager;ILandroidx/fragment/app/Fragment;Z)V
+    invoke-static {v3, p1, p2, v2}, Ls4/e;->r(Landroidx/fragment/app/FragmentManager;ILandroidx/fragment/app/Fragment;Z)V
 
     goto :goto_0
 
@@ -150,7 +150,7 @@
     move-result-object v0
 
     .line 18
-    invoke-static {v3, p1, v0, p2}, Lj1/q;->m(Landroidx/fragment/app/FragmentManager;ILandroidx/fragment/app/Fragment;Ljava/lang/String;)V
+    invoke-static {v3, p1, v0, p2}, Ls4/e;->q(Landroidx/fragment/app/FragmentManager;ILandroidx/fragment/app/Fragment;Ljava/lang/String;)V
 
     :goto_0
     return-void
@@ -189,13 +189,13 @@
     check-cast v0, Lab/e;
 
     .line 4
-    iget-object v0, v0, Landroidx/fragment/app/Fragment;->A:Landroidx/fragment/app/Fragment;
+    iget-object v0, v0, Landroidx/fragment/app/Fragment;->B:Landroidx/fragment/app/Fragment;
 
     .line 5
     check-cast v0, Lab/p;
 
     .line 6
-    iget-object v0, v0, Lab/p;->j0:Lpa/b;
+    iget-object v0, v0, Lab/p;->k0:Lpa/b;
 
     const/4 v1, 0x1
 
@@ -223,7 +223,7 @@
     if-eqz v0, :cond_1
 
     .line 10
-    iget-object v0, v0, Lab/k;->i0:Landroidx/recyclerview/widget/RecyclerView;
+    iget-object v0, v0, Lab/k;->j0:Landroidx/recyclerview/widget/RecyclerView;
 
     const/4 v1, -0x1
 
@@ -270,10 +270,10 @@
     invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 16
-    sget-object v1, Lcom/helpshift/util/u;->b:Landroid/content/Context;
+    sget-object v1, Lcom/helpshift/util/t;->b:Landroid/content/Context;
 
     .line 17
-    invoke-static {v1}, Lk3/tj;->a(Landroid/content/Context;)Z
+    invoke-static {v1}, Lk3/f4;->c(Landroid/content/Context;)Z
 
     move-result v1
 
@@ -287,7 +287,7 @@
     invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 19
-    sget-object v1, Lcom/helpshift/util/u;->c:Le7/g;
+    sget-object v1, Lcom/helpshift/util/t;->c:Le7/g;
 
     .line 20
     iget-object v1, v1, Le7/g;->b:Lk7/a;
@@ -333,7 +333,7 @@
 
     move-result-object v0
 
-    invoke-static {p1, v0}, Lj1/q;->h(Landroidx/fragment/app/FragmentManager;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Ls4/e;->l(Landroidx/fragment/app/FragmentManager;Ljava/lang/String;)V
 
     :cond_0
     const/4 p1, 0x1
@@ -373,7 +373,7 @@
 
     sget v2, Lcom/helpshift/R$id;->list_fragment_container:I
 
-    invoke-static {p1, v2, v1, v0}, Lj1/q;->m(Landroidx/fragment/app/FragmentManager;ILandroidx/fragment/app/Fragment;Ljava/lang/String;)V
+    invoke-static {p1, v2, v1, v0}, Ls4/e;->q(Landroidx/fragment/app/FragmentManager;ILandroidx/fragment/app/Fragment;Ljava/lang/String;)V
 
     :cond_0
     const/4 p1, 0x1

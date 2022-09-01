@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field public final synthetic f:Lxd/d;
+.field public final synthetic g:Lxd/d;
 
 
 # direct methods
 .method public constructor <init>(Lxd/d;)V
     .locals 0
 
-    iput-object p1, p0, Lxd/d$b;->f:Lxd/d;
+    iput-object p1, p0, Lxd/d$b;->g:Lxd/d;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -38,12 +38,12 @@
     .locals 4
 
     .line 1
-    iget-object p1, p0, Lxd/d$b;->f:Lxd/d;
+    iget-object p1, p0, Lxd/d$b;->g:Lxd/d;
 
-    sget v0, Lxd/d;->d0:I
+    sget v0, Lxd/d;->e0:I
 
     .line 2
-    iget-object p1, p1, Landroidx/fragment/app/Fragment;->A:Landroidx/fragment/app/Fragment;
+    iget-object p1, p1, Landroidx/fragment/app/Fragment;->B:Landroidx/fragment/app/Fragment;
 
     .line 3
     instance-of v0, p1, Lcom/supercell/id/ui/tutorial/TutorialFragment;
@@ -103,13 +103,13 @@
 
     .line 8
     :cond_2
-    invoke-static {p1}, Lcom/android/billingclient/api/c0;->e(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
+    invoke-static {p1}, Lcom/android/billingclient/api/b0;->f(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
 
     move-result-object v0
 
     if-eqz v0, :cond_3
 
-    invoke-static {v0}, Lcom/helpshift/util/y;->a(Lcom/supercell/id/ui/MainActivity;)V
+    invoke-static {v0}, Lmd/g;->a(Lcom/supercell/id/ui/MainActivity;)V
 
     .line 9
     :cond_3

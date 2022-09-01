@@ -20,11 +20,11 @@
 
 
 # instance fields
-.field public final f:I
-
 .field public final g:I
 
 .field public final h:I
+
+.field public final i:I
 
 
 # direct methods
@@ -41,7 +41,7 @@
     if-eq p3, v0, :cond_a
 
     .line 2
-    iput p1, p0, Lve/a;->f:I
+    iput p1, p0, Lve/a;->g:I
 
     if-lez p3, :cond_4
 
@@ -134,10 +134,10 @@
 
     .line 5
     :goto_6
-    iput p2, p0, Lve/a;->g:I
+    iput p2, p0, Lve/a;->h:I
 
     .line 6
-    iput p3, p0, Lve/a;->h:I
+    iput p3, p0, Lve/a;->i:I
 
     return-void
 
@@ -198,15 +198,9 @@
     if-nez v0, :cond_1
 
     :cond_0
-    iget v0, p0, Lve/a;->f:I
+    iget v0, p0, Lve/a;->g:I
 
     check-cast p1, Lve/a;
-
-    iget v1, p1, Lve/a;->f:I
-
-    if-ne v0, v1, :cond_2
-
-    iget v0, p0, Lve/a;->g:I
 
     iget v1, p1, Lve/a;->g:I
 
@@ -214,7 +208,13 @@
 
     iget v0, p0, Lve/a;->h:I
 
-    iget p1, p1, Lve/a;->h:I
+    iget v1, p1, Lve/a;->h:I
+
+    if-ne v0, v1, :cond_2
+
+    iget v0, p0, Lve/a;->i:I
+
+    iget p1, p1, Lve/a;->i:I
 
     if-ne v0, p1, :cond_2
 
@@ -244,17 +244,17 @@
     goto :goto_0
 
     :cond_0
-    iget v0, p0, Lve/a;->f:I
+    iget v0, p0, Lve/a;->g:I
 
     mul-int/lit8 v0, v0, 0x1f
 
-    iget v1, p0, Lve/a;->g:I
+    iget v1, p0, Lve/a;->h:I
 
     add-int/2addr v0, v1
 
     mul-int/lit8 v0, v0, 0x1f
 
-    iget v1, p0, Lve/a;->h:I
+    iget v1, p0, Lve/a;->i:I
 
     add-int/2addr v0, v1
 
@@ -265,7 +265,7 @@
 .method public isEmpty()Z
     .locals 4
 
-    iget v0, p0, Lve/a;->h:I
+    iget v0, p0, Lve/a;->i:I
 
     const/4 v1, 0x1
 
@@ -273,18 +273,18 @@
 
     if-lez v0, :cond_0
 
-    iget v0, p0, Lve/a;->f:I
+    iget v0, p0, Lve/a;->g:I
 
-    iget v3, p0, Lve/a;->g:I
+    iget v3, p0, Lve/a;->h:I
 
     if-le v0, v3, :cond_1
 
     goto :goto_0
 
     :cond_0
-    iget v0, p0, Lve/a;->f:I
+    iget v0, p0, Lve/a;->g:I
 
-    iget v3, p0, Lve/a;->g:I
+    iget v3, p0, Lve/a;->h:I
 
     if-ge v0, v3, :cond_1
 
@@ -302,11 +302,11 @@
 
     new-instance v0, Lve/b;
 
-    iget v1, p0, Lve/a;->f:I
+    iget v1, p0, Lve/a;->g:I
 
-    iget v2, p0, Lve/a;->g:I
+    iget v2, p0, Lve/a;->h:I
 
-    iget v3, p0, Lve/a;->h:I
+    iget v3, p0, Lve/a;->i:I
 
     invoke-direct {v0, v1, v2, v3}, Lve/b;-><init>(III)V
 
@@ -316,7 +316,7 @@
 .method public toString()Ljava/lang/String;
     .locals 3
 
-    iget v0, p0, Lve/a;->h:I
+    iget v0, p0, Lve/a;->i:I
 
     const-string v1, " step "
 
@@ -326,7 +326,7 @@
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    iget v2, p0, Lve/a;->f:I
+    iget v2, p0, Lve/a;->g:I
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -334,13 +334,13 @@
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget v2, p0, Lve/a;->g:I
+    iget v2, p0, Lve/a;->h:I
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget v1, p0, Lve/a;->h:I
+    iget v1, p0, Lve/a;->i:I
 
     goto :goto_0
 
@@ -349,7 +349,7 @@
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    iget v2, p0, Lve/a;->f:I
+    iget v2, p0, Lve/a;->g:I
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -357,13 +357,13 @@
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget v2, p0, Lve/a;->g:I
+    iget v2, p0, Lve/a;->h:I
 
     invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget v1, p0, Lve/a;->h:I
+    iget v1, p0, Lve/a;->i:I
 
     neg-int v1, v1
 

@@ -57,7 +57,7 @@
     sput-object v2, Ln2/a;->b:Ljava/lang/Boolean;
 
     .line 5
-    invoke-static {}, Ll2/j;->c()Z
+    invoke-static {}, Ll2/l;->c()Z
 
     move-result v2
 

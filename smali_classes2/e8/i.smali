@@ -87,7 +87,7 @@
     move-exception p1
 
     .line 5
-    sget-object v0, Ld8/c;->f:Ld8/c;
+    sget-object v0, Ld8/c;->g:Ld8/c;
 
     const-string v1, "Exception while calling jsonify on map"
 
@@ -118,16 +118,16 @@
     invoke-direct {v0}, Lorg/json/JSONObject;-><init>()V
 
     .line 2
-    iget-object v1, p1, Ll7/a;->h:Ljava/lang/String;
+    iget-object v1, p1, Ll7/a;->i:Ljava/lang/String;
 
     const-string v2, "ts"
 
     invoke-virtual {v0, v2, v1}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
     .line 3
-    iget v1, p1, Ll7/a;->f:I
+    iget v1, p1, Ll7/a;->g:I
 
-    invoke-static {v1}, Lj7/a;->b(I)Ljava/lang/String;
+    invoke-static {v1}, Lj7/a;->a(I)Ljava/lang/String;
 
     move-result-object v1
 
@@ -136,7 +136,7 @@
     invoke-virtual {v0, v2, v1}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
 
     .line 4
-    iget-object v1, p1, Ll7/a;->g:Ljava/util/Map;
+    iget-object v1, p1, Ll7/a;->h:Ljava/util/Map;
 
     if-eqz v1, :cond_0
 
@@ -149,7 +149,7 @@
     .line 5
     new-instance v1, Ljava/util/HashMap;
 
-    iget-object p1, p1, Ll7/a;->g:Ljava/util/Map;
+    iget-object p1, p1, Ll7/a;->h:Ljava/util/Map;
 
     invoke-direct {v1, p1}, Ljava/util/HashMap;-><init>(Ljava/util/Map;)V
 
@@ -225,7 +225,7 @@
     move-exception p1
 
     .line 5
-    sget-object v0, Ld8/c;->f:Ld8/c;
+    sget-object v0, Ld8/c;->g:Ld8/c;
 
     const-string v1, "Exception while forming analytics string"
 
@@ -284,12 +284,12 @@
     invoke-direct {v2}, Lorg/json/JSONArray;-><init>()V
 
     .line 4
-    iget-object v3, v1, Lw7/a;->g:Ljava/lang/String;
+    iget-object v3, v1, Lw7/a;->h:Ljava/lang/String;
 
     invoke-virtual {v2, v3}, Lorg/json/JSONArray;->put(Ljava/lang/Object;)Lorg/json/JSONArray;
 
     .line 5
-    iget-object v3, v1, Lw7/a;->h:[Ljava/lang/String;
+    iget-object v3, v1, Lw7/a;->i:[Ljava/lang/String;
 
     array-length v4, v3
 
@@ -309,7 +309,7 @@
 
     .line 7
     :cond_0
-    iget-object v1, v1, Lw7/a;->f:Ljava/lang/String;
+    iget-object v1, v1, Lw7/a;->g:Ljava/lang/String;
 
     invoke-virtual {v0, v1, v2}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
     :try_end_0
@@ -321,7 +321,7 @@
     move-exception p1
 
     .line 8
-    sget-object v0, Ld8/c;->f:Ld8/c;
+    sget-object v0, Ld8/c;->g:Ld8/c;
 
     const-string v1, "Exception while forming custom issue field string"
 
@@ -418,7 +418,7 @@
     move-exception p1
 
     .line 10
-    sget-object v0, Ld8/c;->f:Ld8/c;
+    sget-object v0, Ld8/c;->g:Ld8/c;
 
     const-string v1, "Exception while forming debugLog string"
 
@@ -599,7 +599,7 @@
     move-exception p1
 
     .line 12
-    sget-object v0, Ld8/c;->f:Ld8/c;
+    sget-object v0, Ld8/c;->g:Ld8/c;
 
     const-string v1, "Exception while jsonifying LogModelList"
 
@@ -636,7 +636,7 @@
     move-exception p1
 
     .line 3
-    sget-object p2, Ld8/c;->f:Ld8/c;
+    sget-object p2, Ld8/c;->g:Ld8/c;
 
     const-string v0, "Exception while jsonifying single object."
 
@@ -712,7 +712,7 @@
     move-exception p1
 
     .line 4
-    sget-object v0, Ld8/c;->f:Ld8/c;
+    sget-object v0, Ld8/c;->g:Ld8/c;
 
     const-string v1, "Exception while calling jsonify on map"
 

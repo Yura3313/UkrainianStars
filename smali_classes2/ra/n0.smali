@@ -1,20 +1,21 @@
 .class public final Lra/n0;
 .super Lra/u;
-.source "UserResponseCSATMessageViewDataBinder.java"
+.source "UserSelectableOptionViewDataBinder.java"
 
 
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
-        Lra/n0$a;
+        Lra/n0$a;,
+        Lra/n0$b;
     }
 .end annotation
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lra/u<",
-        "Lra/n0$a;",
-        "Lo8/s0;",
+        "Lra/n0$b;",
+        "Lo8/b0;",
         ">;"
     }
 .end annotation
@@ -31,288 +32,486 @@
 
 
 # virtual methods
-.method public final a(Landroidx/recyclerview/widget/RecyclerView$z;Lo8/y;)V
-    .locals 8
+.method public final a(Landroidx/recyclerview/widget/RecyclerView$z;Lo8/z;)V
+    .locals 21
+
+    move-object/from16 v0, p0
 
     .line 1
-    check-cast p1, Lra/n0$a;
+    move-object/from16 v1, p1
 
-    check-cast p2, Lo8/s0;
+    check-cast v1, Lra/n0$b;
+
+    move-object/from16 v2, p2
+
+    check-cast v2, Lo8/b0;
 
     .line 2
-    iget v0, p2, Lo8/r0;->z:I
+    iget-object v3, v1, Lra/n0$b;->A:Landroid/widget/LinearLayout;
+
+    invoke-virtual {v3}, Landroid/view/ViewGroup;->removeAllViews()V
 
     .line 3
-    iget-object v1, p1, Lra/n0$a;->y:Landroid/widget/TextView;
+    iget-object v3, v2, Lo8/b0;->B:Lp8/d;
 
-    iget-object v2, p2, Lo8/y;->j:Ljava/lang/String;
+    iget-object v3, v3, Lp8/c;->i:Ljava/lang/String;
 
-    invoke-virtual {p0, v2}, Lra/u;->c(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v3}, La5/b0;->d(Ljava/lang/String;)Z
 
-    move-result-object v2
+    move-result v3
 
-    invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+    const/16 v4, 0x8
+
+    const/4 v5, 0x0
+
+    if-nez v3, :cond_0
 
     .line 4
-    iget-object v1, p0, Lra/u;->a:Landroid/content/Context;
+    iget-object v3, v1, Lra/n0$b;->B:Landroid/widget/TextView;
 
-    const v2, 0x1010038
-
-    invoke-static {v1, v2}, Lcom/helpshift/util/g0;->b(Landroid/content/Context;I)I
-
-    move-result v1
+    invoke-virtual {v3, v5}, Landroid/view/View;->setVisibility(I)V
 
     .line 5
-    invoke-static {v0}, Lp/g;->b(I)I
+    iget-object v3, v1, Lra/n0$b;->B:Landroid/widget/TextView;
 
-    move-result v0
+    iget-object v6, v2, Lo8/b0;->B:Lp8/d;
 
-    const/4 v2, 0x0
+    iget-object v6, v6, Lp8/c;->i:Ljava/lang/String;
 
-    const/4 v3, 0x1
-
-    const/high16 v4, 0x3f000000    # 0.5f
-
-    const-string v5, ""
-
-    if-eqz v0, :cond_3
-
-    if-eq v0, v3, :cond_2
-
-    const/4 v6, 0x2
-
-    if-eq v0, v6, :cond_1
-
-    const/4 v6, 0x3
-
-    if-eq v0, v6, :cond_0
-
-    move-object v6, v5
-
-    const/4 v0, 0x1
-
-    const/4 v2, 0x1
-
-    const/4 v3, 0x0
-
-    goto :goto_2
-
-    .line 6
-    :cond_0
-    invoke-virtual {p2}, Lo8/y;->i()Ljava/lang/String;
-
-    move-result-object v5
-
-    .line 7
-    iget-object v0, p0, Lra/u;->a:Landroid/content/Context;
-
-    sget v4, Lcom/helpshift/R$string;->hs__user_sent_message_voice_over:I
-
-    new-array v6, v3, [Ljava/lang/Object;
-
-    .line 8
-    invoke-virtual {p2}, Lo8/y;->c()Ljava/lang/String;
-
-    move-result-object v7
-
-    aput-object v7, v6, v2
-
-    invoke-virtual {v0, v4, v6}, Landroid/content/Context;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object v0
-
-    const/high16 v4, 0x3f800000    # 1.0f
+    invoke-virtual {v3, v6}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     goto :goto_0
 
-    .line 9
-    :cond_1
-    iget-object v0, p0, Lra/u;->a:Landroid/content/Context;
+    .line 6
+    :cond_0
+    iget-object v3, v1, Lra/n0$b;->B:Landroid/widget/TextView;
 
-    sget v3, Lcom/helpshift/R$string;->hs__sending_msg:I
+    invoke-virtual {v3, v4}, Landroid/view/View;->setVisibility(I)V
 
-    invoke-virtual {v0, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
-
-    move-result-object v5
-
-    .line 10
-    iget-object v0, p0, Lra/u;->a:Landroid/content/Context;
-
-    sget v3, Lcom/helpshift/R$string;->hs__user_sending_message_voice_over:I
-
-    invoke-virtual {v0, v3}, Landroid/content/Context;->getString(I)Ljava/lang/String;
-
-    move-result-object v0
-
-    move-object v6, v5
-
-    const/4 v3, 0x0
-
-    move-object v5, v0
-
-    const/4 v0, 0x0
-
-    goto :goto_2
-
-    .line 11
-    :cond_2
-    iget-object v0, p0, Lra/u;->a:Landroid/content/Context;
-
-    sget v1, Lcom/helpshift/R$string;->hs__sending_fail_msg:I
-
-    invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
-
-    move-result-object v5
-
-    .line 12
-    iget-object v0, p0, Lra/u;->a:Landroid/content/Context;
-
-    sget v1, Lcom/helpshift/R$string;->hs__user_failed_message_voice_over:I
-
-    invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
-
-    move-result-object v0
-
-    .line 13
-    iget-object v1, p0, Lra/u;->a:Landroid/content/Context;
-
-    sget v6, Lcom/helpshift/R$attr;->hs__errorTextColor:I
-
-    invoke-static {v1, v6}, Lcom/helpshift/util/g0;->b(Landroid/content/Context;I)I
-
-    move-result v1
-
+    .line 7
     :goto_0
-    move-object v6, v5
+    new-instance v3, Lra/n0$a;
 
-    const/4 v2, 0x1
+    iget-object v6, v0, Lra/u;->b:Lra/u$a;
 
-    const/4 v3, 0x0
+    invoke-direct {v3, v1, v6, v2, v5}, Lra/n0$a;-><init>(Lra/n0$b;Lra/u$a;Lo8/b0;Z)V
+
+    .line 8
+    iget-object v6, v0, Lra/u;->a:Landroid/content/Context;
+
+    invoke-static {v6}, Lib/g;->d(Landroid/content/Context;)Z
+
+    move-result v6
+
+    if-eqz v6, :cond_1
+
+    const-wide v6, 0x3fe3333333333334L    # 0.6000000000000001
 
     goto :goto_1
 
-    .line 14
-    :cond_3
-    iget-object v0, p0, Lra/u;->a:Landroid/content/Context;
+    :cond_1
+    const-wide v6, 0x3fe999999999999aL    # 0.8
 
-    sget v1, Lcom/helpshift/R$string;->hs__sending_fail_msg:I
+    .line 9
+    :goto_1
+    iget-object v8, v0, Lra/u;->a:Landroid/content/Context;
 
-    invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+    invoke-virtual {v8}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v8
+
+    sget v9, Lcom/helpshift/R$dimen;->activity_horizontal_margin_medium:I
+
+    invoke-virtual {v8, v9}, Landroid/content/res/Resources;->getDimension(I)F
+
+    move-result v8
+
+    float-to-int v8, v8
+
+    .line 10
+    iget-object v9, v0, Lra/u;->a:Landroid/content/Context;
+
+    iget-object v10, v1, Lra/n0$b;->A:Landroid/widget/LinearLayout;
+
+    sget v11, Lcom/helpshift/R$layout;->hs__msg_user_selectable_option:I
+
+    sget v12, Lcom/helpshift/R$id;->selectable_option_text:I
+
+    sget v13, Lcom/helpshift/R$drawable;->hs__pill:I
+
+    sget v14, Lcom/helpshift/R$attr;->hs__selectableOptionColor:I
+
+    iget-object v15, v2, Lo8/b0;->B:Lp8/d;
+
+    iget-object v15, v15, Lp8/d;->k:Ljava/util/List;
+
+    .line 11
+    new-instance v4, Ljava/util/ArrayList;
+
+    invoke-direct {v4}, Ljava/util/ArrayList;-><init>()V
+
+    .line 12
+    invoke-virtual {v9}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v16
+
+    invoke-virtual/range {v16 .. v16}, Landroid/content/res/Resources;->getDisplayMetrics()Landroid/util/DisplayMetrics;
 
     move-result-object v5
 
-    .line 15
-    iget-object v0, p0, Lra/u;->a:Landroid/content/Context;
+    .line 13
+    iget v0, v5, Landroid/util/DisplayMetrics;->widthPixels:I
 
-    sget v1, Lcom/helpshift/R$string;->hs__user_failed_message_voice_over:I
+    move-object/from16 v16, v1
 
-    invoke-virtual {v0, v1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+    int-to-double v0, v0
 
-    move-result-object v0
+    invoke-static {v0, v1}, Ljava/lang/Double;->isNaN(D)Z
 
-    .line 16
-    iget-object v1, p0, Lra/u;->a:Landroid/content/Context;
+    invoke-static {v0, v1}, Ljava/lang/Double;->isNaN(D)Z
 
-    sget v6, Lcom/helpshift/R$attr;->hs__errorTextColor:I
+    invoke-static {v0, v1}, Ljava/lang/Double;->isNaN(D)Z
 
-    invoke-static {v1, v6}, Lcom/helpshift/util/g0;->b(Landroid/content/Context;I)I
+    invoke-static {v0, v1}, Ljava/lang/Double;->isNaN(D)Z
+
+    mul-double v0, v0, v6
+
+    double-to-int v0, v0
+
+    int-to-float v1, v8
+
+    iget v5, v5, Landroid/util/DisplayMetrics;->density:F
+
+    mul-float v1, v1, v5
+
+    float-to-int v1, v1
+
+    sub-int/2addr v0, v1
+
+    .line 14
+    invoke-interface {v15}, Ljava/util/List;->size()I
 
     move-result v1
 
-    move-object v6, v5
+    const/4 v5, 0x0
 
-    :goto_1
-    move-object v5, v0
+    :goto_2
+    if-ge v5, v1, :cond_6
 
-    const/4 v0, 0x1
+    .line 15
+    new-instance v7, Landroid/widget/LinearLayout;
+
+    invoke-direct {v7, v9}, Landroid/widget/LinearLayout;-><init>(Landroid/content/Context;)V
+
+    const/4 v8, 0x0
+
+    .line 16
+    invoke-virtual {v7, v8}, Landroid/widget/LinearLayout;->setOrientation(I)V
 
     .line 17
-    :goto_2
-    iget-object v7, p1, Lra/n0$a;->C:Landroid/view/View;
+    new-instance v6, Landroid/widget/LinearLayout$LayoutParams;
 
-    invoke-virtual {v7, v5}, Landroid/view/View;->setContentDescription(Ljava/lang/CharSequence;)V
+    const/4 v8, -0x2
+
+    move/from16 v17, v5
+
+    const/4 v5, -0x1
+
+    invoke-direct {v6, v5, v8}, Landroid/widget/LinearLayout$LayoutParams;-><init>(II)V
+
+    invoke-virtual {v7, v6}, Landroid/view/View;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
+
+    const v5, 0x800005
 
     .line 18
-    iget-object v5, p1, Lra/n0$a;->z:Landroid/widget/TextView;
+    invoke-virtual {v7, v5}, Landroid/widget/LinearLayout;->setGravity(I)V
 
-    invoke-virtual {v5, v1}, Landroid/widget/TextView;->setTextColor(I)V
+    move/from16 v5, v17
 
     .line 19
-    iget-object v1, p1, Lra/n0$a;->B:Landroid/widget/RelativeLayout;
+    :cond_2
+    invoke-static {v9}, Landroid/view/LayoutInflater;->from(Landroid/content/Context;)Landroid/view/LayoutInflater;
 
-    invoke-virtual {v1, v4}, Landroid/view/View;->setAlpha(F)V
+    move-result-object v6
 
-    const/4 v1, 0x0
+    const/4 v8, 0x0
 
-    if-eqz v2, :cond_4
+    move-object/from16 v17, v2
+
+    const/4 v2, 0x0
+
+    invoke-virtual {v6, v11, v8, v2}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
+
+    move-result-object v6
 
     .line 20
-    iget-object v2, p1, Lra/n0$a;->y:Landroid/widget/TextView;
+    invoke-virtual {v6, v12}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
-    invoke-virtual {p0, v2, v1}, Lra/u;->e(Landroid/widget/TextView;Lcom/helpshift/util/o$b;)V
+    move-result-object v2
+
+    check-cast v2, Landroid/widget/TextView;
 
     .line 21
-    :cond_4
-    iget-object v2, p1, Lra/n0$a;->y:Landroid/widget/TextView;
+    invoke-virtual {v2}, Landroid/view/View;->getPaddingLeft()I
 
-    invoke-virtual {v2, v0}, Landroid/widget/TextView;->setEnabled(Z)V
+    move-result v8
+
+    move/from16 v18, v11
 
     .line 22
-    iget-object v0, p1, Lra/n0$a;->A:Landroid/widget/ImageView;
+    invoke-virtual {v2}, Landroid/view/View;->getPaddingTop()I
 
-    invoke-virtual {p0, v0, v3}, Lra/u;->m(Landroid/view/View;Z)V
+    move-result v11
+
+    move/from16 v19, v12
 
     .line 23
-    iget-object v0, p2, Lo8/y;->h:Lo8/l0;
+    invoke-virtual {v2}, Landroid/view/View;->getPaddingRight()I
+
+    move-result v12
+
+    move-object/from16 v20, v10
 
     .line 24
-    iget-object v2, p1, Lra/n0$a;->B:Landroid/widget/RelativeLayout;
+    invoke-virtual {v2}, Landroid/view/View;->getPaddingBottom()I
 
-    invoke-virtual {p0, v2, v0}, Lra/u;->j(Landroid/view/View;Lo8/l0;)V
+    move-result v10
 
     .line 25
-    iget-object v2, p1, Lra/n0$a;->z:Landroid/widget/TextView;
-
-    invoke-virtual {p0, v2, v0, v6}, Lra/u;->l(Landroid/widget/TextView;Lo8/l0;Ljava/lang/String;)V
-
-    if-eqz v3, :cond_5
+    invoke-static {v9, v2, v13, v14}, Lcom/helpshift/util/e0;->f(Landroid/content/Context;Landroid/view/View;II)V
 
     .line 26
-    iget-object v0, p1, Lra/n0$a;->A:Landroid/widget/ImageView;
+    invoke-virtual {v2, v8, v11, v12, v10}, Landroid/widget/TextView;->setPadding(IIII)V
 
-    invoke-virtual {v0, p1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    .line 27
+    invoke-virtual {v2, v0}, Landroid/widget/TextView;->setMaxWidth(I)V
+
+    .line 28
+    invoke-interface {v15, v5}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v8
+
+    check-cast v8, Lp8/d$a;
+
+    .line 29
+    invoke-virtual {v2, v8}, Landroid/view/View;->setTag(Ljava/lang/Object;)V
+
+    .line 30
+    iget-object v8, v8, Lp8/d$a;->g:Ljava/lang/String;
+
+    invoke-virtual {v2, v8}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    .line 31
+    invoke-virtual {v2, v3}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+
+    .line 32
+    invoke-virtual {v7, v6}, Landroid/view/ViewGroup;->addView(Landroid/view/View;)V
+
+    const/4 v2, 0x0
+
+    .line 33
+    invoke-virtual {v7, v2, v2}, Landroid/view/View;->measure(II)V
+
+    .line 34
+    invoke-virtual {v7}, Landroid/view/View;->getMeasuredWidth()I
+
+    move-result v2
+
+    if-le v2, v0, :cond_4
+
+    .line 35
+    invoke-virtual {v7}, Landroid/view/ViewGroup;->getChildCount()I
+
+    move-result v2
+
+    const/4 v8, 0x1
+
+    if-ne v2, v8, :cond_3
+
+    add-int/lit8 v5, v5, 0x1
 
     goto :goto_3
 
-    .line 27
-    :cond_5
-    iget-object v0, p1, Lra/n0$a;->A:Landroid/widget/ImageView;
+    .line 36
+    :cond_3
+    invoke-virtual {v7, v6}, Landroid/view/ViewGroup;->removeView(Landroid/view/View;)V
 
-    invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
-
-    .line 28
+    .line 37
     :goto_3
-    iget-object v0, p0, Lra/u;->a:Landroid/content/Context;
+    invoke-virtual {v4, v7}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    iget-object v1, p1, Lra/n0$a;->D:Landroid/widget/RatingBar;
+    move-object/from16 v2, v17
 
-    invoke-virtual {v1}, Landroid/widget/ProgressBar;->getProgressDrawable()Landroid/graphics/drawable/Drawable;
+    move/from16 v11, v18
+
+    move/from16 v12, v19
+
+    move-object/from16 v10, v20
+
+    goto/16 :goto_2
+
+    :cond_4
+    add-int/lit8 v2, v1, -0x1
+
+    if-ne v5, v2, :cond_5
+
+    .line 38
+    invoke-virtual {v4, v7}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    :cond_5
+    add-int/lit8 v5, v5, 0x1
+
+    move-object/from16 v2, v17
+
+    move/from16 v11, v18
+
+    move/from16 v12, v19
+
+    move-object/from16 v10, v20
+
+    if-lt v5, v1, :cond_2
+
+    goto/16 :goto_2
+
+    :cond_6
+    move-object/from16 v17, v2
+
+    move-object/from16 v20, v10
+
+    .line 39
+    invoke-virtual {v4}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
+
+    move-result-object v0
+
+    :goto_4
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_7
+
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v1
 
-    sget v2, Lcom/helpshift/R$attr;->hs__chatBubbleUserText:I
+    check-cast v1, Landroid/widget/LinearLayout;
 
-    invoke-static {v0, v1, v2}, Lcom/helpshift/util/g0;->e(Landroid/content/Context;Landroid/graphics/drawable/Drawable;I)V
+    move-object/from16 v2, v20
 
-    .line 29
-    iget-object p1, p1, Lra/n0$a;->D:Landroid/widget/RatingBar;
+    .line 40
+    invoke-virtual {v2, v1}, Landroid/view/ViewGroup;->addView(Landroid/view/View;)V
 
-    iget p2, p2, Lo8/s0;->E:I
+    goto :goto_4
 
-    int-to-float p2, p2
+    :cond_7
+    move-object/from16 v1, v17
 
-    invoke-virtual {p1, p2}, Landroid/widget/RatingBar;->setRating(F)V
+    .line 41
+    iget-object v0, v1, Lo8/b0;->B:Lp8/d;
 
+    iget-boolean v2, v0, Lp8/c;->h:Z
+
+    if-nez v2, :cond_8
+
+    .line 42
+    iget-object v0, v0, Lp8/c;->j:Ljava/lang/String;
+
+    invoke-static {v0}, La5/b0;->d(Ljava/lang/String;)Z
+
+    move-result v0
+
+    if-nez v0, :cond_8
+
+    move-object/from16 v0, v16
+
+    .line 43
+    iget-object v2, v0, Lra/n0$b;->C:Landroid/widget/TextView;
+
+    invoke-virtual {v2}, Landroid/view/View;->getPaddingLeft()I
+
+    move-result v2
+
+    .line 44
+    iget-object v3, v0, Lra/n0$b;->C:Landroid/widget/TextView;
+
+    invoke-virtual {v3}, Landroid/view/View;->getPaddingTop()I
+
+    move-result v3
+
+    .line 45
+    iget-object v4, v0, Lra/n0$b;->C:Landroid/widget/TextView;
+
+    invoke-virtual {v4}, Landroid/view/View;->getPaddingRight()I
+
+    move-result v4
+
+    .line 46
+    iget-object v5, v0, Lra/n0$b;->C:Landroid/widget/TextView;
+
+    invoke-virtual {v5}, Landroid/view/View;->getPaddingBottom()I
+
+    move-result v5
+
+    .line 47
+    iget-object v6, v0, Lra/n0$b;->C:Landroid/widget/TextView;
+
+    sget v7, Lcom/helpshift/R$drawable;->hs__pill_small:I
+
+    sget v8, Lcom/helpshift/R$attr;->hs__selectableOptionColor:I
+
+    move-object/from16 v9, p0
+
+    invoke-virtual {v9, v6, v7, v8}, Lra/u;->i(Landroid/view/View;II)V
+
+    .line 48
+    iget-object v6, v0, Lra/n0$b;->C:Landroid/widget/TextView;
+
+    invoke-virtual {v6, v2, v3, v4, v5}, Landroid/widget/TextView;->setPadding(IIII)V
+
+    .line 49
+    iget-object v2, v0, Lra/n0$b;->C:Landroid/widget/TextView;
+
+    iget-object v3, v1, Lo8/b0;->B:Lp8/d;
+
+    iget-object v3, v3, Lp8/c;->j:Ljava/lang/String;
+
+    invoke-virtual {v2, v3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    .line 50
+    iget-object v2, v0, Lra/n0$b;->C:Landroid/widget/TextView;
+
+    const/4 v3, 0x0
+
+    invoke-virtual {v2, v3}, Landroid/view/View;->setVisibility(I)V
+
+    .line 51
+    iget-object v2, v0, Lra/n0$b;->C:Landroid/widget/TextView;
+
+    new-instance v3, Lra/n0$a;
+
+    iget-object v4, v9, Lra/u;->b:Lra/u$a;
+
+    const/4 v5, 0x1
+
+    invoke-direct {v3, v0, v4, v1, v5}, Lra/n0$a;-><init>(Lra/n0$b;Lra/u$a;Lo8/b0;Z)V
+
+    invoke-virtual {v2, v3}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+
+    goto :goto_5
+
+    :cond_8
+    move-object/from16 v9, p0
+
+    move-object/from16 v0, v16
+
+    .line 52
+    iget-object v0, v0, Lra/n0$b;->C:Landroid/widget/TextView;
+
+    const/16 v1, 0x8
+
+    invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
+
+    :goto_5
     return-void
 .end method
 
@@ -328,7 +527,7 @@
 
     move-result-object v0
 
-    sget v1, Lcom/helpshift/R$layout;->hs__msg_csat_user_rsp:I
+    sget v1, Lcom/helpshift/R$layout;->hs__msg_user_selectable_options_container:I
 
     const/4 v2, 0x0
 
@@ -337,23 +536,12 @@
     move-result-object p1
 
     .line 2
-    new-instance v0, Lra/n0$a;
+    new-instance v0, Lra/n0$b;
 
-    invoke-direct {v0, p0, p1}, Lra/n0$a;-><init>(Lra/n0;Landroid/view/View;)V
+    invoke-direct {v0, p1}, Lra/n0$b;-><init>(Landroid/view/View;)V
 
     .line 3
-    iget-object p1, v0, Lra/n0$a;->B:Landroid/widget/RelativeLayout;
-
-    invoke-virtual {p1}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
-
-    move-result-object p1
-
-    invoke-virtual {p0, p1}, Lra/u;->k(Landroid/view/ViewGroup$LayoutParams;)V
-
-    .line 4
-    iget-object p1, v0, Lra/n0$a;->y:Landroid/widget/TextView;
-
-    invoke-virtual {p1, v0}, Landroid/view/View;->setOnCreateContextMenuListener(Landroid/view/View$OnCreateContextMenuListener;)V
+    invoke-virtual {v0, v2}, Landroidx/recyclerview/widget/RecyclerView$z;->t(Z)V
 
     return-object v0
 .end method

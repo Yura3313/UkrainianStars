@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field public final synthetic f:Landroid/view/DisplayCutout;
+.field public final synthetic g:Landroid/view/DisplayCutout;
 
 
 # direct methods
 .method public constructor <init>(Landroid/view/DisplayCutout;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/titan/f$a;->f:Landroid/view/DisplayCutout;
+    iput-object p1, p0, Lcom/supercell/titan/f$a;->g:Landroid/view/DisplayCutout;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -38,28 +38,28 @@
     .locals 4
 
     .line 1
-    iget-object v0, p0, Lcom/supercell/titan/f$a;->f:Landroid/view/DisplayCutout;
+    iget-object v0, p0, Lcom/supercell/titan/f$a;->g:Landroid/view/DisplayCutout;
 
     invoke-virtual {v0}, Landroid/view/DisplayCutout;->getSafeInsetBottom()I
 
     move-result v0
 
     .line 2
-    iget-object v1, p0, Lcom/supercell/titan/f$a;->f:Landroid/view/DisplayCutout;
+    iget-object v1, p0, Lcom/supercell/titan/f$a;->g:Landroid/view/DisplayCutout;
 
     invoke-virtual {v1}, Landroid/view/DisplayCutout;->getSafeInsetTop()I
 
     move-result v1
 
     .line 3
-    iget-object v2, p0, Lcom/supercell/titan/f$a;->f:Landroid/view/DisplayCutout;
+    iget-object v2, p0, Lcom/supercell/titan/f$a;->g:Landroid/view/DisplayCutout;
 
     invoke-virtual {v2}, Landroid/view/DisplayCutout;->getSafeInsetLeft()I
 
     move-result v2
 
     .line 4
-    iget-object v3, p0, Lcom/supercell/titan/f$a;->f:Landroid/view/DisplayCutout;
+    iget-object v3, p0, Lcom/supercell/titan/f$a;->g:Landroid/view/DisplayCutout;
 
     invoke-virtual {v3}, Landroid/view/DisplayCutout;->getSafeInsetRight()I
 

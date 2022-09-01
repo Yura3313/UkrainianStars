@@ -15,23 +15,23 @@
 
 
 # static fields
-.field public static final m:Lcom/google/android/material/snackbar/BaseTransientBottomBar$i$a;
+.field public static final n:Lcom/google/android/material/snackbar/BaseTransientBottomBar$i$a;
 
 
 # instance fields
-.field public f:Lcom/google/android/material/snackbar/BaseTransientBottomBar$h;
+.field public g:Lcom/google/android/material/snackbar/BaseTransientBottomBar$h;
 
-.field public g:Lcom/google/android/material/snackbar/BaseTransientBottomBar$g;
+.field public h:Lcom/google/android/material/snackbar/BaseTransientBottomBar$g;
 
-.field public h:I
-
-.field public final i:F
+.field public i:I
 
 .field public final j:F
 
-.field public k:Landroid/content/res/ColorStateList;
+.field public final k:F
 
-.field public l:Landroid/graphics/PorterDuff$Mode;
+.field public l:Landroid/content/res/ColorStateList;
+
+.field public m:Landroid/graphics/PorterDuff$Mode;
 
 
 # direct methods
@@ -42,7 +42,7 @@
 
     invoke-direct {v0}, Lcom/google/android/material/snackbar/BaseTransientBottomBar$i$a;-><init>()V
 
-    sput-object v0, Lcom/google/android/material/snackbar/BaseTransientBottomBar$i;->m:Lcom/google/android/material/snackbar/BaseTransientBottomBar$i$a;
+    sput-object v0, Lcom/google/android/material/snackbar/BaseTransientBottomBar$i;->n:Lcom/google/android/material/snackbar/BaseTransientBottomBar$i$a;
 
     return-void
 .end method
@@ -98,7 +98,7 @@
 
     move-result v1
 
-    iput v1, p0, Lcom/google/android/material/snackbar/BaseTransientBottomBar$i;->h:I
+    iput v1, p0, Lcom/google/android/material/snackbar/BaseTransientBottomBar$i;->i:I
 
     .line 8
     sget v1, Lcom/google/android/material/R$styleable;->SnackbarLayout_backgroundOverlayColorAlpha:I
@@ -110,7 +110,7 @@
 
     move-result v1
 
-    iput v1, p0, Lcom/google/android/material/snackbar/BaseTransientBottomBar$i;->i:F
+    iput v1, p0, Lcom/google/android/material/snackbar/BaseTransientBottomBar$i;->j:F
 
     .line 10
     sget v1, Lcom/google/android/material/R$styleable;->SnackbarLayout_backgroundTint:I
@@ -150,13 +150,13 @@
 
     move-result p1
 
-    iput p1, p0, Lcom/google/android/material/snackbar/BaseTransientBottomBar$i;->j:F
+    iput p1, p0, Lcom/google/android/material/snackbar/BaseTransientBottomBar$i;->k:F
 
     .line 18
     invoke-virtual {p2}, Landroid/content/res/TypedArray;->recycle()V
 
     .line 19
-    sget-object p1, Lcom/google/android/material/snackbar/BaseTransientBottomBar$i;->m:Lcom/google/android/material/snackbar/BaseTransientBottomBar$i$a;
+    sget-object p1, Lcom/google/android/material/snackbar/BaseTransientBottomBar$i;->n:Lcom/google/android/material/snackbar/BaseTransientBottomBar$i$a;
 
     invoke-virtual {p0, p1}, Landroid/view/View;->setOnTouchListener(Landroid/view/View$OnTouchListener;)V
 
@@ -205,17 +205,17 @@
     move-result v1
 
     .line 28
-    invoke-static {p0, p1}, Lk3/q5;->f(Landroid/view/View;I)I
+    invoke-static {p0, p1}, Lk3/a00;->b(Landroid/view/View;I)I
 
     move-result p1
 
     .line 29
-    invoke-static {p0, v0}, Lk3/q5;->f(Landroid/view/View;I)I
+    invoke-static {p0, v0}, Lk3/a00;->b(Landroid/view/View;I)I
 
     move-result v0
 
     .line 30
-    invoke-static {p1, v0, v1}, Lk3/q5;->g(IIF)I
+    invoke-static {p1, v0, v1}, Lk3/a00;->c(IIF)I
 
     move-result p1
 
@@ -223,7 +223,7 @@
     invoke-virtual {p2, p1}, Landroid/graphics/drawable/GradientDrawable;->setColor(I)V
 
     .line 32
-    iget-object p1, p0, Lcom/google/android/material/snackbar/BaseTransientBottomBar$i;->k:Landroid/content/res/ColorStateList;
+    iget-object p1, p0, Lcom/google/android/material/snackbar/BaseTransientBottomBar$i;->l:Landroid/content/res/ColorStateList;
 
     if-eqz p1, :cond_1
 
@@ -233,7 +233,7 @@
     move-result-object p1
 
     .line 34
-    iget-object p2, p0, Lcom/google/android/material/snackbar/BaseTransientBottomBar$i;->k:Landroid/content/res/ColorStateList;
+    iget-object p2, p0, Lcom/google/android/material/snackbar/BaseTransientBottomBar$i;->l:Landroid/content/res/ColorStateList;
 
     invoke-static {p1, p2}, Ly/a;->n(Landroid/graphics/drawable/Drawable;Landroid/content/res/ColorStateList;)V
 
@@ -261,7 +261,7 @@
 .method public getActionTextColorAlpha()F
     .locals 1
 
-    iget v0, p0, Lcom/google/android/material/snackbar/BaseTransientBottomBar$i;->j:F
+    iget v0, p0, Lcom/google/android/material/snackbar/BaseTransientBottomBar$i;->k:F
 
     return v0
 .end method
@@ -269,7 +269,7 @@
 .method public getAnimationMode()I
     .locals 1
 
-    iget v0, p0, Lcom/google/android/material/snackbar/BaseTransientBottomBar$i;->h:I
+    iget v0, p0, Lcom/google/android/material/snackbar/BaseTransientBottomBar$i;->i:I
 
     return v0
 .end method
@@ -277,7 +277,7 @@
 .method public getBackgroundOverlayColorAlpha()F
     .locals 1
 
-    iget v0, p0, Lcom/google/android/material/snackbar/BaseTransientBottomBar$i;->i:F
+    iget v0, p0, Lcom/google/android/material/snackbar/BaseTransientBottomBar$i;->j:F
 
     return v0
 .end method
@@ -289,7 +289,7 @@
     invoke-super {p0}, Landroid/view/ViewGroup;->onAttachedToWindow()V
 
     .line 2
-    iget-object v0, p0, Lcom/google/android/material/snackbar/BaseTransientBottomBar$i;->g:Lcom/google/android/material/snackbar/BaseTransientBottomBar$g;
+    iget-object v0, p0, Lcom/google/android/material/snackbar/BaseTransientBottomBar$i;->h:Lcom/google/android/material/snackbar/BaseTransientBottomBar$g;
 
     if-eqz v0, :cond_0
 
@@ -312,7 +312,7 @@
     invoke-super {p0}, Landroid/view/ViewGroup;->onDetachedFromWindow()V
 
     .line 2
-    iget-object v0, p0, Lcom/google/android/material/snackbar/BaseTransientBottomBar$i;->g:Lcom/google/android/material/snackbar/BaseTransientBottomBar$g;
+    iget-object v0, p0, Lcom/google/android/material/snackbar/BaseTransientBottomBar$i;->h:Lcom/google/android/material/snackbar/BaseTransientBottomBar$g;
 
     if-eqz v0, :cond_2
 
@@ -402,7 +402,7 @@
     invoke-super/range {p0 .. p5}, Landroid/widget/FrameLayout;->onLayout(ZIIII)V
 
     .line 2
-    iget-object p1, p0, Lcom/google/android/material/snackbar/BaseTransientBottomBar$i;->f:Lcom/google/android/material/snackbar/BaseTransientBottomBar$h;
+    iget-object p1, p0, Lcom/google/android/material/snackbar/BaseTransientBottomBar$i;->g:Lcom/google/android/material/snackbar/BaseTransientBottomBar$h;
 
     if-eqz p1, :cond_0
 
@@ -431,7 +431,7 @@
 .method public setAnimationMode(I)V
     .locals 0
 
-    iput p1, p0, Lcom/google/android/material/snackbar/BaseTransientBottomBar$i;->h:I
+    iput p1, p0, Lcom/google/android/material/snackbar/BaseTransientBottomBar$i;->i:I
 
     return-void
 .end method
@@ -450,7 +450,7 @@
     if-eqz p1, :cond_0
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/snackbar/BaseTransientBottomBar$i;->k:Landroid/content/res/ColorStateList;
+    iget-object v0, p0, Lcom/google/android/material/snackbar/BaseTransientBottomBar$i;->l:Landroid/content/res/ColorStateList;
 
     if-eqz v0, :cond_0
 
@@ -464,12 +464,12 @@
     move-result-object p1
 
     .line 3
-    iget-object v0, p0, Lcom/google/android/material/snackbar/BaseTransientBottomBar$i;->k:Landroid/content/res/ColorStateList;
+    iget-object v0, p0, Lcom/google/android/material/snackbar/BaseTransientBottomBar$i;->l:Landroid/content/res/ColorStateList;
 
     invoke-static {p1, v0}, Ly/a;->n(Landroid/graphics/drawable/Drawable;Landroid/content/res/ColorStateList;)V
 
     .line 4
-    iget-object v0, p0, Lcom/google/android/material/snackbar/BaseTransientBottomBar$i;->l:Landroid/graphics/PorterDuff$Mode;
+    iget-object v0, p0, Lcom/google/android/material/snackbar/BaseTransientBottomBar$i;->m:Landroid/graphics/PorterDuff$Mode;
 
     invoke-static {p1, v0}, Ly/a;->o(Landroid/graphics/drawable/Drawable;Landroid/graphics/PorterDuff$Mode;)V
 
@@ -484,7 +484,7 @@
     .locals 1
 
     .line 1
-    iput-object p1, p0, Lcom/google/android/material/snackbar/BaseTransientBottomBar$i;->k:Landroid/content/res/ColorStateList;
+    iput-object p1, p0, Lcom/google/android/material/snackbar/BaseTransientBottomBar$i;->l:Landroid/content/res/ColorStateList;
 
     .line 2
     invoke-virtual {p0}, Landroid/view/View;->getBackground()Landroid/graphics/drawable/Drawable;
@@ -510,7 +510,7 @@
     invoke-static {v0, p1}, Ly/a;->n(Landroid/graphics/drawable/Drawable;Landroid/content/res/ColorStateList;)V
 
     .line 5
-    iget-object p1, p0, Lcom/google/android/material/snackbar/BaseTransientBottomBar$i;->l:Landroid/graphics/PorterDuff$Mode;
+    iget-object p1, p0, Lcom/google/android/material/snackbar/BaseTransientBottomBar$i;->m:Landroid/graphics/PorterDuff$Mode;
 
     invoke-static {v0, p1}, Ly/a;->o(Landroid/graphics/drawable/Drawable;Landroid/graphics/PorterDuff$Mode;)V
 
@@ -532,7 +532,7 @@
     .locals 1
 
     .line 1
-    iput-object p1, p0, Lcom/google/android/material/snackbar/BaseTransientBottomBar$i;->l:Landroid/graphics/PorterDuff$Mode;
+    iput-object p1, p0, Lcom/google/android/material/snackbar/BaseTransientBottomBar$i;->m:Landroid/graphics/PorterDuff$Mode;
 
     .line 2
     invoke-virtual {p0}, Landroid/view/View;->getBackground()Landroid/graphics/drawable/Drawable;
@@ -574,7 +574,7 @@
 .method public setOnAttachStateChangeListener(Lcom/google/android/material/snackbar/BaseTransientBottomBar$g;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/google/android/material/snackbar/BaseTransientBottomBar$i;->g:Lcom/google/android/material/snackbar/BaseTransientBottomBar$g;
+    iput-object p1, p0, Lcom/google/android/material/snackbar/BaseTransientBottomBar$i;->h:Lcom/google/android/material/snackbar/BaseTransientBottomBar$g;
 
     return-void
 .end method
@@ -590,7 +590,7 @@
 
     .line 1
     :cond_0
-    sget-object v0, Lcom/google/android/material/snackbar/BaseTransientBottomBar$i;->m:Lcom/google/android/material/snackbar/BaseTransientBottomBar$i$a;
+    sget-object v0, Lcom/google/android/material/snackbar/BaseTransientBottomBar$i;->n:Lcom/google/android/material/snackbar/BaseTransientBottomBar$i$a;
 
     :goto_0
     invoke-virtual {p0, v0}, Landroid/view/View;->setOnTouchListener(Landroid/view/View$OnTouchListener;)V
@@ -604,7 +604,7 @@
 .method public setOnLayoutChangeListener(Lcom/google/android/material/snackbar/BaseTransientBottomBar$h;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/google/android/material/snackbar/BaseTransientBottomBar$i;->f:Lcom/google/android/material/snackbar/BaseTransientBottomBar$h;
+    iput-object p1, p0, Lcom/google/android/material/snackbar/BaseTransientBottomBar$i;->g:Lcom/google/android/material/snackbar/BaseTransientBottomBar$h;
 
     return-void
 .end method

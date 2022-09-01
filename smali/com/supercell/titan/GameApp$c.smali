@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field public final synthetic f:Lcom/supercell/titan/GameApp;
+.field public final synthetic g:Lcom/supercell/titan/GameApp;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/titan/GameApp;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/titan/GameApp$c;->f:Lcom/supercell/titan/GameApp;
+    iput-object p1, p0, Lcom/supercell/titan/GameApp$c;->g:Lcom/supercell/titan/GameApp;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -43,7 +43,7 @@
     invoke-direct {v0, p0}, Lcom/supercell/titan/GameApp$c$a;-><init>(Lcom/supercell/titan/GameApp$c;)V
 
     .line 2
-    iget-object v1, p0, Lcom/supercell/titan/GameApp$c;->f:Lcom/supercell/titan/GameApp;
+    iget-object v1, p0, Lcom/supercell/titan/GameApp$c;->g:Lcom/supercell/titan/GameApp;
 
     invoke-virtual {v1}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
@@ -56,10 +56,10 @@
     move-result-object v1
 
     .line 3
-    iget-object v2, p0, Lcom/supercell/titan/GameApp$c;->f:Lcom/supercell/titan/GameApp;
+    iget-object v2, p0, Lcom/supercell/titan/GameApp$c;->g:Lcom/supercell/titan/GameApp;
 
     .line 4
-    iget-object v2, v2, Lcom/supercell/titan/GameApp;->s:Ljava/lang/String;
+    iget-object v2, v2, Lcom/supercell/titan/GameApp;->t:Ljava/lang/String;
 
     const-string v3, "{GAME}"
 
@@ -71,7 +71,7 @@
     .line 6
     new-instance v2, Landroid/app/AlertDialog$Builder;
 
-    iget-object v3, p0, Lcom/supercell/titan/GameApp$c;->f:Lcom/supercell/titan/GameApp;
+    iget-object v3, p0, Lcom/supercell/titan/GameApp$c;->g:Lcom/supercell/titan/GameApp;
 
     invoke-direct {v2, v3}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 

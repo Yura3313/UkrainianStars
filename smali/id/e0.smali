@@ -7,17 +7,17 @@
 
 
 # instance fields
-.field public final f:Lid/f0;
-
-.field public g:F
+.field public final g:Lid/f0;
 
 .field public h:F
 
-.field public final i:Lre/a;
+.field public i:F
+
+.field public final j:Lre/a;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lre/a<",
-            "Lie/h;",
+            "Lie/i;",
             ">;"
         }
     .end annotation
@@ -32,10 +32,10 @@
             "(",
             "Landroid/view/View;",
             "Lre/a<",
-            "Lie/h;",
+            "Lie/i;",
             ">;",
             "Lre/a<",
-            "Lie/h;",
+            "Lie/i;",
             ">;)V"
         }
     .end annotation
@@ -43,14 +43,14 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p3, p0, Lid/e0;->i:Lre/a;
+    iput-object p3, p0, Lid/e0;->j:Lre/a;
 
     .line 2
     new-instance p3, Lid/f0;
 
     invoke-direct {p3, p1, p2}, Lid/f0;-><init>(Landroid/view/View;Lre/a;)V
 
-    iput-object p3, p0, Lid/e0;->f:Lid/f0;
+    iput-object p3, p0, Lid/e0;->g:Lid/f0;
 
     return-void
 .end method
@@ -63,7 +63,7 @@
     if-eqz p2, :cond_3
 
     .line 1
-    iget-object v0, p0, Lid/e0;->f:Lid/f0;
+    iget-object v0, p0, Lid/e0;->g:Lid/f0;
 
     invoke-virtual {v0, p1, p2}, Lid/f0;->onTouch(Landroid/view/View;Landroid/view/MotionEvent;)Z
 
@@ -88,7 +88,7 @@
 
     move-result v0
 
-    iget v2, p0, Lid/e0;->g:F
+    iget v2, p0, Lid/e0;->h:F
 
     sub-float/2addr v0, v2
 
@@ -97,7 +97,7 @@
 
     move-result p2
 
-    iget v2, p0, Lid/e0;->h:F
+    iget v2, p0, Lid/e0;->i:F
 
     sub-float/2addr p2, v2
 
@@ -112,7 +112,7 @@
     int-to-float v0, v0
 
     .line 5
-    sget v2, La5/g0;->a:F
+    sget v2, La5/e0;->g:F
 
     mul-float v3, v0, v2
 
@@ -125,7 +125,7 @@
     if-gtz p2, :cond_2
 
     .line 6
-    iget-object p1, p0, Lid/e0;->i:Lre/a;
+    iget-object p1, p0, Lid/e0;->j:Lre/a;
 
     invoke-interface {p1}, Lre/a;->invoke()Ljava/lang/Object;
 
@@ -137,14 +137,14 @@
 
     move-result v0
 
-    iput v0, p0, Lid/e0;->g:F
+    iput v0, p0, Lid/e0;->h:F
 
     .line 8
     invoke-virtual {p2}, Landroid/view/MotionEvent;->getY()F
 
     move-result p2
 
-    iput p2, p0, Lid/e0;->h:F
+    iput p2, p0, Lid/e0;->i:F
 
     :cond_2
     :goto_0

@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field public a:Lk3/sj0;
+.field public a:Lk3/uj0;
 
 
 # direct methods
@@ -23,11 +23,11 @@
 
     .line 1
     :try_start_0
-    new-instance p2, Lk3/sj0;
+    new-instance p2, Lk3/uj0;
 
-    invoke-direct {p2, p1}, Lk3/sj0;-><init>(Landroid/content/Context;)V
+    invoke-direct {p2, p1}, Lk3/uj0;-><init>(Landroid/content/Context;)V
 
-    iput-object p2, p0, Lk3/hu;->a:Lk3/sj0;
+    iput-object p2, p0, Lk3/hu;->a:Lk3/uj0;
     :try_end_0
     .catch Ljava/lang/RuntimeException; {:try_start_0 .. :try_end_0} :catch_0
 

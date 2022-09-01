@@ -1,5 +1,5 @@
 .class public final Lcom/supercell/id/ui/game/GameFragment$i;
-.super Lse/h;
+.super Lse/i;
 .source "GameFragment.kt"
 
 # interfaces
@@ -18,28 +18,28 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/l<",
-        "Lbe/l0;",
-        "Lie/h;",
+        "Lbe/n0;",
+        "Lie/i;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic f:Lcom/supercell/id/ui/game/GameFragment;
+.field public final synthetic g:Lcom/supercell/id/ui/game/GameFragment;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/id/ui/game/GameFragment;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/ui/game/GameFragment$i;->f:Lcom/supercell/id/ui/game/GameFragment;
+    iput-object p1, p0, Lcom/supercell/id/ui/game/GameFragment$i;->g:Lcom/supercell/id/ui/game/GameFragment;
 
     const/4 p1, 0x1
 
-    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -50,10 +50,10 @@
     .locals 3
 
     .line 1
-    check-cast p1, Lbe/l0;
+    check-cast p1, Lbe/n0;
 
     .line 2
-    iget-object v0, p0, Lcom/supercell/id/ui/game/GameFragment$i;->f:Lcom/supercell/id/ui/game/GameFragment;
+    iget-object v0, p0, Lcom/supercell/id/ui/game/GameFragment$i;->g:Lcom/supercell/id/ui/game/GameFragment;
 
     invoke-static {v0}, Lcom/supercell/id/ui/game/GameFragment;->h1(Lcom/supercell/id/ui/game/GameFragment;)Ljava/lang/String;
 
@@ -62,13 +62,13 @@
     if-eqz v0, :cond_3
 
     .line 3
-    iget-object v1, p0, Lcom/supercell/id/ui/game/GameFragment$i;->f:Lcom/supercell/id/ui/game/GameFragment;
+    iget-object v1, p0, Lcom/supercell/id/ui/game/GameFragment$i;->g:Lcom/supercell/id/ui/game/GameFragment;
 
     const/4 v2, 0x0
 
     if-eqz p1, :cond_0
 
-    invoke-static {p1, v0}, Lad/f;->b(Lbe/l0;Ljava/lang/String;)Lbe/l0;
+    invoke-static {p1, v0}, Lad/f;->b(Lbe/n0;Ljava/lang/String;)Lbe/n0;
 
     move-result-object p1
 
@@ -79,7 +79,7 @@
 
     .line 4
     :goto_0
-    iput-object p1, v1, Lcom/supercell/id/ui/game/GameFragment;->o0:Lbe/l0;
+    iput-object p1, v1, Lcom/supercell/id/ui/game/GameFragment;->p0:Lbe/n0;
 
     .line 5
     invoke-virtual {v1}, Lcom/supercell/id/ui/game/GameFragment;->m1()V
@@ -119,11 +119,11 @@
 
     if-eqz v2, :cond_3
 
-    invoke-virtual {v2}, Lae/c2;->m()V
+    invoke-virtual {v2}, Lae/b2;->m()V
 
     .line 7
     :cond_3
-    sget-object p1, Lie/h;->a:Lie/h;
+    sget-object p1, Lie/i;->a:Lie/i;
 
     return-object p1
 .end method

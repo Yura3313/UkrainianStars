@@ -23,7 +23,7 @@
 
 
 # instance fields
-.field public final g:Ljava/util/Date;
+.field public final h:Ljava/util/Date;
 
 
 # direct methods
@@ -34,7 +34,7 @@
     invoke-direct {p0}, Lcom/supercell/id/model/IdRelationshipStatus;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lcom/supercell/id/model/IdRelationshipStatus$Acquaintance;->g:Ljava/util/Date;
+    iput-object p1, p0, Lcom/supercell/id/model/IdRelationshipStatus$Acquaintance;->h:Ljava/util/Date;
 
     return-void
 .end method

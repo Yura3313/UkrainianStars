@@ -1,5 +1,5 @@
 .class public final Lbe/h$g;
-.super Lse/h;
+.super Lse/i;
 .source "FriendsStorage.kt"
 
 # interfaces
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lbe/h;->j(Lcom/supercell/id/model/IdSocialAccount;Ljava/lang/String;)Lze/e0;
+    value = Lbe/h;->j(Lcom/supercell/id/model/IdSocialAccount;Ljava/lang/String;)Lze/f0;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,7 +18,7 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/l<",
         "Ljava/util/Map<",
         "Lcom/supercell/id/model/IdSocialAccount;",
@@ -36,18 +36,18 @@
 
 
 # instance fields
-.field public final synthetic f:Lcom/supercell/id/model/IdSocialAccount;
+.field public final synthetic g:Lcom/supercell/id/model/IdSocialAccount;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/id/model/IdSocialAccount;)V
     .locals 0
 
-    iput-object p1, p0, Lbe/h$g;->f:Lcom/supercell/id/model/IdSocialAccount;
+    iput-object p1, p0, Lbe/h$g;->g:Lcom/supercell/id/model/IdSocialAccount;
 
     const/4 p1, 0x1
 
-    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -63,10 +63,10 @@
     const-string v0, "it"
 
     .line 2
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 3
-    iget-object v0, p0, Lbe/h$g;->f:Lcom/supercell/id/model/IdSocialAccount;
+    iget-object v0, p0, Lbe/h$g;->g:Lcom/supercell/id/model/IdSocialAccount;
 
     invoke-interface {p1, v0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 

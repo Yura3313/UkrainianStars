@@ -18,18 +18,18 @@
 
 
 # instance fields
-.field public final synthetic f:Led/a;
+.field public final synthetic g:Led/a;
 
-.field public final synthetic g:Landroid/view/View;
+.field public final synthetic h:Landroid/view/View;
 
 
 # direct methods
 .method public constructor <init>(Led/a;Landroid/view/View;)V
     .locals 0
 
-    iput-object p1, p0, Led/a$b;->f:Led/a;
+    iput-object p1, p0, Led/a$b;->g:Led/a;
 
-    iput-object p2, p0, Led/a$b;->g:Landroid/view/View;
+    iput-object p2, p0, Led/a$b;->h:Landroid/view/View;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -42,13 +42,13 @@
     .locals 3
 
     .line 1
-    iget-object p1, p0, Led/a$b;->f:Led/a;
+    iget-object p1, p0, Led/a$b;->g:Led/a;
 
-    iget-object v0, p0, Led/a$b;->g:Landroid/view/View;
+    iget-object v0, p0, Led/a$b;->h:Landroid/view/View;
 
     const-string v1, "view"
 
-    invoke-static {v0, v1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 

@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field public final synthetic f:Lmd/m;
+.field public final synthetic g:Lmd/m;
 
 
 # direct methods
 .method public constructor <init>(Lmd/m;)V
     .locals 0
 
-    iput-object p1, p0, Lmd/m$g;->f:Lmd/m;
+    iput-object p1, p0, Lmd/m$g;->g:Lmd/m;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -38,9 +38,9 @@
     .locals 10
 
     .line 1
-    iget-object p1, p0, Lmd/m$g;->f:Lmd/m;
+    iget-object p1, p0, Lmd/m$g;->g:Lmd/m;
 
-    sget v0, Lmd/m;->e0:I
+    sget v0, Lmd/m;->f0:I
 
     .line 2
     invoke-virtual {p1}, Lmd/m;->e1()Lmd/f;
@@ -54,7 +54,7 @@
     if-eqz p1, :cond_0
 
     .line 3
-    iget-boolean p1, p1, Lmd/f;->c0:Z
+    iget-boolean p1, p1, Lmd/f;->d0:Z
 
     if-ne p1, v1, :cond_0
 
@@ -66,7 +66,7 @@
     move-result-object p1
 
     .line 5
-    iget-object p1, p1, Lae/u;->m:La5/d0;
+    iget-object p1, p1, Lae/u;->m:Lpe/a;
 
     const/16 v2, 0x18
 
@@ -75,11 +75,11 @@
     const-string v4, "click"
 
     .line 6
-    invoke-static {p1, v3, v4, v0, v2}, La5/d0;->a(La5/d0;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;I)V
+    invoke-static {p1, v3, v4, v0, v2}, Lpe/a;->e(Lpe/a;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;I)V
 
     .line 7
     :cond_0
-    iget-object p1, p0, Lmd/m$g;->f:Lmd/m;
+    iget-object p1, p0, Lmd/m$g;->g:Lmd/m;
 
     sget v2, Lcom/supercell/id/R$id;->okButton:I
 
@@ -91,14 +91,14 @@
 
     const-string v2, "okButton"
 
-    invoke-static {p1, v2}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v2}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/4 v2, 0x0
 
     invoke-virtual {p1, v2}, Landroid/view/View;->setEnabled(Z)V
 
     .line 8
-    iget-object p1, p0, Lmd/m$g;->f:Lmd/m;
+    iget-object p1, p0, Lmd/m$g;->g:Lmd/m;
 
     sget v3, Lcom/supercell/id/R$id;->cancelButton:I
 
@@ -110,15 +110,15 @@
 
     const-string v3, "cancelButton"
 
-    invoke-static {p1, v3}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v3}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {p1, v2}, Landroid/view/View;->setEnabled(Z)V
 
     .line 9
-    iget-object v5, p0, Lmd/m$g;->f:Lmd/m;
+    iget-object v5, p0, Lmd/m$g;->g:Lmd/m;
 
     .line 10
-    iget-object p1, v5, Lmd/m;->b0:Ljava/lang/String;
+    iget-object p1, v5, Lmd/m;->c0:Ljava/lang/String;
 
     invoke-virtual {p1}, Ljava/lang/String;->length()I
 
@@ -135,13 +135,13 @@
     if-eqz v1, :cond_2
 
     .line 11
-    invoke-static {v5}, Lcom/android/billingclient/api/c0;->e(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
+    invoke-static {v5}, Lcom/android/billingclient/api/b0;->f(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
 
     move-result-object p1
 
     if-eqz p1, :cond_4
 
-    sget-object v1, Lcom/supercell/id/ui/MainActivity;->s:Ljava/lang/ref/WeakReference;
+    sget-object v1, Lcom/supercell/id/ui/MainActivity;->t:Ljava/lang/ref/WeakReference;
 
     const-string v1, "missing_required_data"
 
@@ -152,18 +152,18 @@
 
     .line 13
     :cond_2
-    iget-boolean p1, v5, Lmd/m;->c0:Z
+    iget-boolean p1, v5, Lmd/m;->d0:Z
 
     if-nez p1, :cond_3
 
     .line 14
-    invoke-static {v5}, Lcom/android/billingclient/api/c0;->e(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
+    invoke-static {v5}, Lcom/android/billingclient/api/b0;->f(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
 
     move-result-object p1
 
     if-eqz p1, :cond_4
 
-    sget-object v1, Lcom/supercell/id/ui/MainActivity;->s:Ljava/lang/ref/WeakReference;
+    sget-object v1, Lcom/supercell/id/ui/MainActivity;->t:Ljava/lang/ref/WeakReference;
 
     const-string v1, "invalid_email_address"
 
@@ -174,7 +174,7 @@
 
     .line 16
     :cond_3
-    iget-object p1, v5, Lmd/m;->b0:Ljava/lang/String;
+    iget-object p1, v5, Lmd/m;->c0:Ljava/lang/String;
 
     .line 17
     sget v1, Lcom/supercell/id/R$id;->rememberCheckBox:I
@@ -187,10 +187,10 @@
 
     const-string v2, "rememberCheckBox"
 
-    invoke-static {v1, v2}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 18
-    iget-boolean v1, v1, Lcom/supercell/id/view/Checkbox;->i:Z
+    iget-boolean v1, v1, Lcom/supercell/id/view/Checkbox;->j:Z
 
     .line 19
     sget-object v2, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
@@ -207,7 +207,7 @@
 
     move-result v3
 
-    invoke-virtual {v2, p1, v0, v1, v3}, Lrc/a;->j(Ljava/lang/String;Ljava/lang/String;ZZ)Lze/e0;
+    invoke-virtual {v2, p1, v0, v1, v3}, Lrc/a;->j(Ljava/lang/String;Ljava/lang/String;ZZ)Lze/f0;
 
     move-result-object v4
 
@@ -216,14 +216,14 @@
     invoke-direct {v6, p1, v1}, Lmd/k;-><init>(Ljava/lang/String;Z)V
 
     .line 22
-    sget-object v7, Lmd/l;->f:Lmd/l;
+    sget-object v7, Lmd/l;->g:Lmd/l;
 
     const/4 v8, 0x0
 
     const/16 v9, 0x8
 
     .line 23
-    invoke-static/range {v4 .. v9}, Lae/u1;->k(Lze/e0;Ljava/lang/Object;Lre/p;Lre/p;Lre/l;I)Lze/e0;
+    invoke-static/range {v4 .. v9}, Lae/t1;->j(Lze/f0;Ljava/lang/Object;Lre/p;Lre/p;Lre/l;I)Lze/f0;
 
     :cond_4
     :goto_1

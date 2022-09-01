@@ -25,7 +25,7 @@
     if-lt v0, p2, :cond_6
 
     .line 3
-    invoke-static {p2}, Lr5/j0;->a(I)V
+    invoke-static {p2}, Lr5/l0;->a(I)V
 
     const/16 v0, 0xa
 

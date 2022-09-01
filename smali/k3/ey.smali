@@ -1,45 +1,117 @@
-.class public final synthetic Lk3/ey;
+.class public final Lk3/ey;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lk3/y2;
+.implements Lk3/mv0;
 
 
 # instance fields
-.field public final f:Lk3/ay;
+.field public final synthetic a:I
+
+.field public final b:Lk3/qv0;
+
+.field public final c:Lk3/qv0;
+
+.field public final d:Lk3/qv0;
 
 
 # direct methods
-.method public constructor <init>(Lk3/ay;)V
+.method public synthetic constructor <init>(Lk3/qv0;Lk3/qv0;Lk3/qv0;I)V
     .locals 0
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput p4, p0, Lk3/ey;->a:I
 
-    iput-object p1, p0, Lk3/ey;->f:Lk3/ay;
+    iput-object p1, p0, Lk3/ey;->b:Lk3/qv0;
+
+    iput-object p2, p0, Lk3/ey;->c:Lk3/qv0;
+
+    iput-object p3, p0, Lk3/ey;->d:Lk3/qv0;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final c(Ljava/lang/Object;Ljava/util/Map;)V
-    .locals 0
+.method public final synthetic get()Ljava/lang/Object;
+    .locals 4
 
-    iget-object p2, p0, Lk3/ey;->f:Lk3/ay;
+    iget v0, p0, Lk3/ey;->a:I
 
-    check-cast p1, Lk3/gh;
+    packed-switch v0, :pswitch_data_0
+
+    goto :goto_0
 
     .line 1
-    iget-object p1, p2, Lk3/ay;->b:Lk3/mm;
+    :pswitch_0
+    iget-object v0, p0, Lk3/ey;->b:Lk3/qv0;
 
-    const/4 p2, 0x1
+    invoke-interface {v0}, Lk3/qv0;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Ljava/util/concurrent/Executor;
+
+    iget-object v1, p0, Lk3/ey;->c:Lk3/qv0;
+
+    invoke-interface {v1}, Lk3/qv0;->get()Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Lk3/mm;
+
+    iget-object v2, p0, Lk3/ey;->d:Lk3/qv0;
+
+    invoke-interface {v2}, Lk3/qv0;->get()Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Lk3/pt;
 
     .line 2
-    iput-boolean p2, p1, Lk3/mm;->j:Z
+    new-instance v3, Lk3/zx;
+
+    invoke-direct {v3, v0, v1, v2}, Lk3/zx;-><init>(Ljava/util/concurrent/Executor;Lk3/mm;Lk3/pt;)V
+
+    return-object v3
 
     .line 3
-    invoke-virtual {p1}, Lk3/mm;->g()V
+    :goto_0
+    iget-object v0, p0, Lk3/ey;->b:Lk3/qv0;
 
-    return-void
+    invoke-interface {v0}, Lk3/qv0;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lk3/u7;
+
+    iget-object v1, p0, Lk3/ey;->c:Lk3/qv0;
+
+    invoke-interface {v1}, Lk3/qv0;->get()Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Ljava/util/concurrent/ScheduledExecutorService;
+
+    iget-object v2, p0, Lk3/ey;->d:Lk3/qv0;
+
+    invoke-interface {v2}, Lk3/qv0;->get()Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Landroid/content/Context;
+
+    .line 4
+    new-instance v3, Lk3/pe0;
+
+    invoke-direct {v3, v0, v1, v2}, Lk3/pe0;-><init>(Lk3/u7;Ljava/util/concurrent/ScheduledExecutorService;Landroid/content/Context;)V
+
+    return-object v3
+
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

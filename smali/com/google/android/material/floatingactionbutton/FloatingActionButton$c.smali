@@ -89,7 +89,7 @@
     move-result-object v3
 
     .line 4
-    iget v3, v3, Lcom/google/android/material/bottomappbar/e;->k:F
+    iget v3, v3, Lcom/google/android/material/bottomappbar/e;->n:F
 
     cmpl-float v3, v3, v2
 
@@ -103,13 +103,13 @@
     move-result-object v3
 
     .line 6
-    iput v2, v3, Lcom/google/android/material/bottomappbar/e;->k:F
+    iput v2, v3, Lcom/google/android/material/bottomappbar/e;->n:F
 
     .line 7
     iget-object v2, v0, Lcom/google/android/material/bottomappbar/BottomAppBar$b;->a:Lcom/google/android/material/bottomappbar/BottomAppBar;
 
     .line 8
-    iget-object v2, v2, Lcom/google/android/material/bottomappbar/BottomAppBar;->V:Ls4/g;
+    iget-object v2, v2, Lcom/google/android/material/bottomappbar/BottomAppBar;->W:Ls4/g;
 
     .line 9
     invoke-virtual {v2}, Ls4/g;->invalidateSelf()V
@@ -136,7 +136,7 @@
     move-result-object v4
 
     .line 12
-    iget v4, v4, Lcom/google/android/material/bottomappbar/e;->j:F
+    iget v4, v4, Lcom/google/android/material/bottomappbar/e;->m:F
 
     cmpl-float v4, v4, v2
 
@@ -149,13 +149,13 @@
 
     move-result-object v4
 
-    invoke-virtual {v4, v2}, Lcom/google/android/material/bottomappbar/e;->g(F)V
+    invoke-virtual {v4, v2}, Lcom/google/android/material/bottomappbar/e;->t(F)V
 
     .line 14
     iget-object v2, v0, Lcom/google/android/material/bottomappbar/BottomAppBar$b;->a:Lcom/google/android/material/bottomappbar/BottomAppBar;
 
     .line 15
-    iget-object v2, v2, Lcom/google/android/material/bottomappbar/BottomAppBar;->V:Ls4/g;
+    iget-object v2, v2, Lcom/google/android/material/bottomappbar/BottomAppBar;->W:Ls4/g;
 
     .line 16
     invoke-virtual {v2}, Ls4/g;->invalidateSelf()V
@@ -165,7 +165,7 @@
     iget-object v0, v0, Lcom/google/android/material/bottomappbar/BottomAppBar$b;->a:Lcom/google/android/material/bottomappbar/BottomAppBar;
 
     .line 18
-    iget-object v0, v0, Lcom/google/android/material/bottomappbar/BottomAppBar;->V:Ls4/g;
+    iget-object v0, v0, Lcom/google/android/material/bottomappbar/BottomAppBar;->W:Ls4/g;
 
     .line 19
     invoke-virtual {v1}, Landroid/view/View;->getVisibility()I
@@ -201,7 +201,7 @@
     iget-object v0, v0, Lcom/google/android/material/bottomappbar/BottomAppBar$b;->a:Lcom/google/android/material/bottomappbar/BottomAppBar;
 
     .line 3
-    iget-object v0, v0, Lcom/google/android/material/bottomappbar/BottomAppBar;->V:Ls4/g;
+    iget-object v0, v0, Lcom/google/android/material/bottomappbar/BottomAppBar;->W:Ls4/g;
 
     .line 4
     invoke-virtual {v1}, Landroid/view/View;->getVisibility()I

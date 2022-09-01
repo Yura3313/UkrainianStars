@@ -1,370 +1,284 @@
 .class public final Lk3/h7;
-.super Lk3/m7;
+.super Lk3/n7;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 
 # instance fields
-.field public final h:Ljava/util/Map;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/Map<",
-            "Ljava/lang/String;",
-            "Ljava/lang/String;",
-            ">;"
-        }
-    .end annotation
-.end field
+.field public i:Ljava/lang/String;
 
-.field public final i:Landroid/app/Activity;
+.field public j:Z
+
+.field public k:I
+
+.field public l:I
+
+.field public m:I
+
+.field public n:I
+
+.field public o:I
+
+.field public p:I
+
+.field public final q:Ljava/lang/Object;
+
+.field public final r:Lk3/gh;
+
+.field public final s:Landroid/app/Activity;
+
+.field public t:Lk3/pi;
+
+.field public u:Landroid/widget/ImageView;
+
+.field public v:Landroid/widget/LinearLayout;
+
+.field public w:Lk3/h5;
+
+.field public x:Landroid/widget/PopupWindow;
+
+.field public y:Landroid/widget/RelativeLayout;
+
+.field public z:Landroid/view/ViewGroup;
 
 
 # direct methods
-.method public constructor <init>(Lk3/gh;Ljava/util/Map;)V
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lk3/gh;",
-            "Ljava/util/Map<",
-            "Ljava/lang/String;",
-            "Ljava/lang/String;",
-            ">;)V"
-        }
-    .end annotation
+.method public static constructor <clinit>()V
+    .locals 4
 
-    const-string v0, "storePicture"
+    const/4 v0, 0x7
+
+    new-array v1, v0, [Ljava/lang/String;
+
+    const-string v2, "top-left"
+
+    const/4 v3, 0x0
+
+    aput-object v2, v1, v3
+
+    const/4 v2, 0x1
+
+    const-string v3, "top-right"
+
+    aput-object v3, v1, v2
+
+    const/4 v2, 0x2
+
+    const-string v3, "top-center"
+
+    aput-object v3, v1, v2
+
+    const/4 v2, 0x3
+
+    const-string v3, "center"
+
+    aput-object v3, v1, v2
+
+    const/4 v2, 0x4
+
+    const-string v3, "bottom-left"
+
+    aput-object v3, v1, v2
+
+    const/4 v2, 0x5
+
+    const-string v3, "bottom-right"
+
+    aput-object v3, v1, v2
+
+    const/4 v2, 0x6
+
+    const-string v3, "bottom-center"
+
+    aput-object v3, v1, v2
 
     .line 1
-    invoke-direct {p0, p1, v0}, Lk3/m7;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-static {v0}, Ll2/d;->a(I)Ljava/util/Set;
+
+    move-result-object v0
 
     .line 2
-    iput-object p2, p0, Lk3/h7;->h:Ljava/util/Map;
+    invoke-static {v0, v1}, Ljava/util/Collections;->addAll(Ljava/util/Collection;[Ljava/lang/Object;)Z
 
     .line 3
+    invoke-static {v0}, Ljava/util/Collections;->unmodifiableSet(Ljava/util/Set;)Ljava/util/Set;
+
+    return-void
+.end method
+
+.method public constructor <init>(Lk3/gh;Lk3/h5;)V
+    .locals 2
+
+    const-string v0, "resize"
+
+    .line 1
+    invoke-direct {p0, p1, v0}, Lk3/n7;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+
+    const-string v0, "top-right"
+
+    .line 2
+    iput-object v0, p0, Lk3/h7;->i:Ljava/lang/String;
+
+    const/4 v0, 0x1
+
+    .line 3
+    iput-boolean v0, p0, Lk3/h7;->j:Z
+
+    const/4 v0, 0x0
+
+    .line 4
+    iput v0, p0, Lk3/h7;->k:I
+
+    .line 5
+    iput v0, p0, Lk3/h7;->l:I
+
+    const/4 v1, -0x1
+
+    .line 6
+    iput v1, p0, Lk3/h7;->m:I
+
+    .line 7
+    iput v0, p0, Lk3/h7;->n:I
+
+    .line 8
+    iput v0, p0, Lk3/h7;->o:I
+
+    .line 9
+    iput v1, p0, Lk3/h7;->p:I
+
+    .line 10
+    new-instance v0, Ljava/lang/Object;
+
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+
+    iput-object v0, p0, Lk3/h7;->q:Ljava/lang/Object;
+
+    .line 11
+    iput-object p1, p0, Lk3/h7;->r:Lk3/gh;
+
+    .line 12
     invoke-interface {p1}, Lk3/gh;->a()Landroid/app/Activity;
 
     move-result-object p1
 
-    iput-object p1, p0, Lk3/h7;->i:Landroid/app/Activity;
+    iput-object p1, p0, Lk3/h7;->s:Landroid/app/Activity;
+
+    .line 13
+    iput-object p2, p0, Lk3/h7;->w:Lk3/h5;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final j()V
-    .locals 6
+.method public final j(Z)V
+    .locals 3
 
     .line 1
-    iget-object v0, p0, Lk3/h7;->i:Landroid/app/Activity;
+    iget-object v0, p0, Lk3/h7;->q:Ljava/lang/Object;
 
-    if-nez v0, :cond_0
-
-    const-string v0, "Activity context is not available"
+    monitor-enter v0
 
     .line 2
-    invoke-virtual {p0, v0}, Lk3/m7;->g(Ljava/lang/String;)V
+    :try_start_0
+    iget-object v1, p0, Lk3/h7;->x:Landroid/widget/PopupWindow;
 
-    return-void
+    if-eqz v1, :cond_2
 
     .line 3
-    :cond_0
-    sget-object v1, Li1/o;->B:Li1/o;
-
-    iget-object v1, v1, Li1/o;->c:Lk3/bb;
+    invoke-virtual {v1}, Landroid/widget/PopupWindow;->dismiss()V
 
     .line 4
-    new-instance v1, Lk3/d;
+    iget-object v1, p0, Lk3/h7;->y:Landroid/widget/RelativeLayout;
 
-    invoke-direct {v1}, Lk3/d;-><init>()V
+    iget-object v2, p0, Lk3/h7;->r:Lk3/gh;
 
-    invoke-static {v0, v1}, Lk3/uc;->a(Landroid/content/Context;Ljava/util/concurrent/Callable;)Ljava/lang/Object;
-
-    move-result-object v1
-
-    check-cast v1, Ljava/lang/Boolean;
-
-    invoke-virtual {v1}, Ljava/lang/Boolean;->booleanValue()Z
-
-    move-result v1
-
-    const/4 v2, 0x0
-
-    if-eqz v1, :cond_1
-
-    .line 5
-    invoke-static {v0}, Ln2/c;->a(Landroid/content/Context;)Ln2/b;
-
-    move-result-object v0
-
-    .line 6
-    iget-object v0, v0, Ln2/b;->a:Landroid/content/Context;
-
-    const-string v1, "android.permission.WRITE_EXTERNAL_STORAGE"
-
-    invoke-virtual {v0, v1}, Landroid/content/Context;->checkCallingOrSelfPermission(Ljava/lang/String;)I
-
-    move-result v0
-
-    if-nez v0, :cond_1
-
-    const/4 v0, 0x1
-
-    goto :goto_0
-
-    :cond_1
-    const/4 v0, 0x0
-
-    :goto_0
-    if-nez v0, :cond_2
-
-    const-string v0, "Feature is not supported by the device."
-
-    .line 7
-    invoke-virtual {p0, v0}, Lk3/m7;->g(Ljava/lang/String;)V
-
-    return-void
-
-    .line 8
-    :cond_2
-    iget-object v0, p0, Lk3/h7;->h:Ljava/util/Map;
-
-    const-string v1, "iurl"
-
-    invoke-interface {v0, v1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Ljava/lang/String;
-
-    .line 9
-    invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
-
-    move-result v1
-
-    if-eqz v1, :cond_3
-
-    const-string v0, "Image url cannot be empty."
-
-    .line 10
-    invoke-virtual {p0, v0}, Lk3/m7;->g(Ljava/lang/String;)V
-
-    return-void
-
-    .line 11
-    :cond_3
-    invoke-static {v0}, Landroid/webkit/URLUtil;->isValidUrl(Ljava/lang/String;)Z
-
-    move-result v1
-
-    if-nez v1, :cond_5
-
-    const-string v1, "Invalid image url: "
-
-    .line 12
-    invoke-static {v0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Ljava/lang/String;->length()I
-
-    move-result v2
-
-    if-eqz v2, :cond_4
-
-    invoke-virtual {v1, v0}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v0
-
-    goto :goto_1
-
-    :cond_4
-    new-instance v0, Ljava/lang/String;
-
-    invoke-direct {v0, v1}, Ljava/lang/String;-><init>(Ljava/lang/String;)V
-
-    :goto_1
-    invoke-virtual {p0, v0}, Lk3/m7;->g(Ljava/lang/String;)V
-
-    return-void
-
-    .line 13
-    :cond_5
-    invoke-static {v0}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
-
-    move-result-object v1
-
-    .line 14
-    invoke-virtual {v1}, Landroid/net/Uri;->getLastPathSegment()Ljava/lang/String;
-
-    move-result-object v1
-
-    .line 15
-    sget-object v3, Li1/o;->B:Li1/o;
-
-    iget-object v3, v3, Li1/o;->c:Lk3/bb;
-
-    .line 16
-    invoke-static {v1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
-
-    move-result v3
-
-    if-eqz v3, :cond_6
-
-    goto :goto_2
-
-    :cond_6
-    const-string v2, "([^\\s]+(\\.(?i)(jpg|png|gif|bmp|webp))$)"
-
-    .line 17
-    invoke-virtual {v1, v2}, Ljava/lang/String;->matches(Ljava/lang/String;)Z
-
-    move-result v2
-
-    :goto_2
-    if-nez v2, :cond_8
-
-    const-string v0, "Image type not recognized: "
-
-    .line 18
-    invoke-static {v1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-virtual {v1}, Ljava/lang/String;->length()I
-
-    move-result v2
-
-    if-eqz v2, :cond_7
-
-    invoke-virtual {v0, v1}, Ljava/lang/String;->concat(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v0
-
-    goto :goto_3
-
-    :cond_7
-    new-instance v1, Ljava/lang/String;
-
-    invoke-direct {v1, v0}, Ljava/lang/String;-><init>(Ljava/lang/String;)V
-
-    move-object v0, v1
-
-    :goto_3
-    invoke-virtual {p0, v0}, Lk3/m7;->g(Ljava/lang/String;)V
-
-    return-void
-
-    .line 19
-    :cond_8
-    sget-object v2, Li1/o;->B:Li1/o;
-
-    iget-object v2, v2, Li1/o;->g:Lk3/ia;
-
-    .line 20
-    invoke-virtual {v2}, Lk3/ia;->a()Landroid/content/res/Resources;
+    invoke-interface {v2}, Lk3/gh;->getView()Landroid/view/View;
 
     move-result-object v2
 
-    .line 21
-    sget-object v3, Li1/o;->B:Li1/o;
+    invoke-virtual {v1, v2}, Landroid/view/ViewGroup;->removeView(Landroid/view/View;)V
 
-    iget-object v3, v3, Li1/o;->c:Lk3/bb;
+    .line 5
+    iget-object v1, p0, Lk3/h7;->z:Landroid/view/ViewGroup;
 
-    .line 22
-    iget-object v3, p0, Lk3/h7;->i:Landroid/app/Activity;
+    if-eqz v1, :cond_0
 
-    .line 23
-    new-instance v4, Landroid/app/AlertDialog$Builder;
+    .line 6
+    iget-object v2, p0, Lk3/h7;->u:Landroid/widget/ImageView;
 
-    invoke-direct {v4, v3}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
+    invoke-virtual {v1, v2}, Landroid/view/ViewGroup;->removeView(Landroid/view/View;)V
 
-    if-eqz v2, :cond_9
+    .line 7
+    iget-object v1, p0, Lk3/h7;->z:Landroid/view/ViewGroup;
 
-    .line 24
-    sget v3, Lcom/google/android/gms/ads/impl/R$string;->s1:I
+    iget-object v2, p0, Lk3/h7;->r:Lk3/gh;
 
-    invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+    invoke-interface {v2}, Lk3/gh;->getView()Landroid/view/View;
 
-    move-result-object v3
+    move-result-object v2
 
-    goto :goto_4
+    invoke-virtual {v1, v2}, Landroid/view/ViewGroup;->addView(Landroid/view/View;)V
 
-    :cond_9
-    const-string v3, "Save image"
+    .line 8
+    iget-object v1, p0, Lk3/h7;->r:Lk3/gh;
 
-    :goto_4
-    invoke-virtual {v4, v3}, Landroid/app/AlertDialog$Builder;->setTitle(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
+    iget-object v2, p0, Lk3/h7;->t:Lk3/pi;
 
-    if-eqz v2, :cond_a
+    invoke-interface {v1, v2}, Lk3/gh;->r0(Lk3/pi;)V
 
-    .line 25
-    sget v3, Lcom/google/android/gms/ads/impl/R$string;->s2:I
+    :cond_0
+    if-eqz p1, :cond_1
 
-    invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+    const-string p1, "default"
 
-    move-result-object v3
+    .line 9
+    invoke-virtual {p0, p1}, Lk3/n7;->h(Ljava/lang/String;)V
 
-    goto :goto_5
+    .line 10
+    iget-object p1, p0, Lk3/h7;->w:Lk3/h5;
 
-    :cond_a
-    const-string v3, "Allow Ad to store image in Picture gallery?"
+    if-eqz p1, :cond_1
 
-    .line 26
-    :goto_5
-    invoke-virtual {v4, v3}, Landroid/app/AlertDialog$Builder;->setMessage(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
+    .line 11
+    iget-object p1, p1, Lk3/h5;->g:Ljava/lang/Object;
 
-    if-eqz v2, :cond_b
+    check-cast p1, Lk3/kz;
 
-    .line 27
-    sget v3, Lcom/google/android/gms/ads/impl/R$string;->s3:I
+    .line 12
+    iget-object p1, p1, Lk3/kz;->b:Lk3/lr;
 
-    invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
+    .line 13
+    sget-object v1, Lk3/kc;->g:Lk3/kc;
 
-    move-result-object v3
+    invoke-virtual {p1, v1}, Lk3/ts;->F0(Lk3/vs;)V
 
-    goto :goto_6
+    :cond_1
+    const/4 p1, 0x0
 
-    :cond_b
-    const-string v3, "Accept"
+    .line 14
+    iput-object p1, p0, Lk3/h7;->x:Landroid/widget/PopupWindow;
 
-    :goto_6
-    new-instance v5, Lk3/k7;
+    .line 15
+    iput-object p1, p0, Lk3/h7;->y:Landroid/widget/RelativeLayout;
 
-    invoke-direct {v5, p0, v0, v1}, Lk3/k7;-><init>(Lk3/h7;Ljava/lang/String;Ljava/lang/String;)V
+    .line 16
+    iput-object p1, p0, Lk3/h7;->z:Landroid/view/ViewGroup;
 
-    .line 28
-    invoke-virtual {v4, v3, v5}, Landroid/app/AlertDialog$Builder;->setPositiveButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
+    .line 17
+    iput-object p1, p0, Lk3/h7;->v:Landroid/widget/LinearLayout;
 
-    if-eqz v2, :cond_c
-
-    .line 29
-    sget v0, Lcom/google/android/gms/ads/impl/R$string;->s4:I
-
-    invoke-virtual {v2, v0}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
-
-    move-result-object v0
-
-    goto :goto_7
-
-    :cond_c
-    const-string v0, "Decline"
-
-    :goto_7
-    new-instance v1, Lk3/i7;
-
-    invoke-direct {v1, p0}, Lk3/i7;-><init>(Lk3/h7;)V
-
-    .line 30
-    invoke-virtual {v4, v0, v1}, Landroid/app/AlertDialog$Builder;->setNegativeButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
-
-    .line 31
-    invoke-virtual {v4}, Landroid/app/AlertDialog$Builder;->create()Landroid/app/AlertDialog;
-
-    move-result-object v0
-
-    .line 32
-    invoke-virtual {v0}, Landroid/app/Dialog;->show()V
+    .line 18
+    :cond_2
+    monitor-exit v0
 
     return-void
+
+    :catchall_0
+    move-exception p1
+
+    monitor-exit v0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    throw p1
 .end method

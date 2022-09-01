@@ -104,7 +104,7 @@
     move-result-object p1
 
     .line 8
-    new-instance v1, Lr5/h0;
+    new-instance v1, Lr5/j0;
 
     .line 9
     invoke-virtual {p1}, Ln5/m1;->u()Ln5/o0;
@@ -129,7 +129,7 @@
 
     move-result p1
 
-    invoke-direct {v1, v0, v2, v3, p1}, Lr5/h0;-><init>(Ljava/security/interfaces/RSAPublicKey;III)V
+    invoke-direct {v1, v0, v2, v3, p1}, Lr5/j0;-><init>(Ljava/security/interfaces/RSAPublicKey;III)V
 
     return-object v1
 .end method

@@ -16,20 +16,20 @@
 
 
 # instance fields
-.field public final f:I
+.field public final g:I
 
-.field public g:Lcom/google/android/gms/internal/ads/a0;
+.field public h:Lcom/google/android/gms/internal/ads/a0;
 
-.field public h:[B
+.field public i:[B
 
 
 # direct methods
 .method public static constructor <clinit>()V
     .locals 1
 
-    new-instance v0, Lk3/lj0;
+    new-instance v0, Lk3/nj0;
 
-    invoke-direct {v0}, Lk3/lj0;-><init>()V
+    invoke-direct {v0}, Lk3/nj0;-><init>()V
 
     sput-object v0, Lcom/google/android/gms/internal/ads/zzdrk;->CREATOR:Landroid/os/Parcelable$Creator;
 
@@ -43,15 +43,15 @@
     invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
 
     .line 2
-    iput p1, p0, Lcom/google/android/gms/internal/ads/zzdrk;->f:I
+    iput p1, p0, Lcom/google/android/gms/internal/ads/zzdrk;->g:I
 
     const/4 p1, 0x0
 
     .line 3
-    iput-object p1, p0, Lcom/google/android/gms/internal/ads/zzdrk;->g:Lcom/google/android/gms/internal/ads/a0;
+    iput-object p1, p0, Lcom/google/android/gms/internal/ads/zzdrk;->h:Lcom/google/android/gms/internal/ads/a0;
 
     .line 4
-    iput-object p2, p0, Lcom/google/android/gms/internal/ads/zzdrk;->h:[B
+    iput-object p2, p0, Lcom/google/android/gms/internal/ads/zzdrk;->i:[B
 
     .line 5
     invoke-virtual {p0}, Lcom/google/android/gms/internal/ads/zzdrk;->D2()V
@@ -65,11 +65,11 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/gms/internal/ads/zzdrk;->g:Lcom/google/android/gms/internal/ads/a0;
+    iget-object v0, p0, Lcom/google/android/gms/internal/ads/zzdrk;->h:Lcom/google/android/gms/internal/ads/a0;
 
     if-nez v0, :cond_0
 
-    iget-object v1, p0, Lcom/google/android/gms/internal/ads/zzdrk;->h:[B
+    iget-object v1, p0, Lcom/google/android/gms/internal/ads/zzdrk;->i:[B
 
     if-eqz v1, :cond_0
 
@@ -79,7 +79,7 @@
     if-eqz v0, :cond_1
 
     .line 2
-    iget-object v1, p0, Lcom/google/android/gms/internal/ads/zzdrk;->h:[B
+    iget-object v1, p0, Lcom/google/android/gms/internal/ads/zzdrk;->i:[B
 
     if-nez v1, :cond_1
 
@@ -89,7 +89,7 @@
     if-eqz v0, :cond_3
 
     .line 3
-    iget-object v1, p0, Lcom/google/android/gms/internal/ads/zzdrk;->h:[B
+    iget-object v1, p0, Lcom/google/android/gms/internal/ads/zzdrk;->i:[B
 
     if-nez v1, :cond_2
 
@@ -110,7 +110,7 @@
     if-nez v0, :cond_4
 
     .line 5
-    iget-object v0, p0, Lcom/google/android/gms/internal/ads/zzdrk;->h:[B
+    iget-object v0, p0, Lcom/google/android/gms/internal/ads/zzdrk;->i:[B
 
     if-nez v0, :cond_4
 
@@ -145,7 +145,7 @@
     move-result p2
 
     .line 2
-    iget v0, p0, Lcom/google/android/gms/internal/ads/zzdrk;->f:I
+    iget v0, p0, Lcom/google/android/gms/internal/ads/zzdrk;->g:I
 
     const/4 v1, 0x1
 
@@ -158,7 +158,7 @@
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 5
-    iget-object v0, p0, Lcom/google/android/gms/internal/ads/zzdrk;->h:[B
+    iget-object v0, p0, Lcom/google/android/gms/internal/ads/zzdrk;->i:[B
 
     if-eqz v0, :cond_0
 
@@ -166,9 +166,9 @@
 
     .line 6
     :cond_0
-    iget-object v0, p0, Lcom/google/android/gms/internal/ads/zzdrk;->g:Lcom/google/android/gms/internal/ads/a0;
+    iget-object v0, p0, Lcom/google/android/gms/internal/ads/zzdrk;->h:Lcom/google/android/gms/internal/ads/a0;
 
-    invoke-virtual {v0}, Lk3/lq0;->a()[B
+    invoke-virtual {v0}, Lk3/pq0;->a()[B
 
     move-result-object v0
 

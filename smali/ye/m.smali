@@ -4,7 +4,7 @@
 
 
 # direct methods
-.method public static final g(Ljava/lang/String;)Ljava/lang/Integer;
+.method public static final h(Ljava/lang/String;)Ljava/lang/Integer;
     .locals 9
 
     .line 1

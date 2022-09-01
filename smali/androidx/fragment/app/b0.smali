@@ -85,7 +85,7 @@
     const/4 v0, 0x1
 
     .line 5
-    iput-boolean v0, p1, Landroidx/fragment/app/Fragment;->q:Z
+    iput-boolean v0, p1, Landroidx/fragment/app/Fragment;->r:Z
 
     return-void
 
@@ -225,7 +225,7 @@
     iget-object v1, v1, Landroidx/fragment/app/z;->c:Landroidx/fragment/app/Fragment;
 
     .line 3
-    iget-object v2, v1, Landroidx/fragment/app/Fragment;->k:Ljava/lang/String;
+    iget-object v2, v1, Landroidx/fragment/app/Fragment;->l:Ljava/lang/String;
 
     invoke-virtual {p1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -237,7 +237,7 @@
 
     .line 4
     :cond_1
-    iget-object v1, v1, Landroidx/fragment/app/Fragment;->z:Landroidx/fragment/app/FragmentManager;
+    iget-object v1, v1, Landroidx/fragment/app/Fragment;->A:Landroidx/fragment/app/FragmentManager;
 
     .line 5
     iget-object v1, v1, Landroidx/fragment/app/FragmentManager;->c:Landroidx/fragment/app/b0;
@@ -448,7 +448,7 @@
     iget-object v0, p1, Landroidx/fragment/app/z;->c:Landroidx/fragment/app/Fragment;
 
     .line 2
-    iget-object v1, v0, Landroidx/fragment/app/Fragment;->k:Ljava/lang/String;
+    iget-object v1, v0, Landroidx/fragment/app/Fragment;->l:Ljava/lang/String;
 
     invoke-virtual {p0, v1}, Landroidx/fragment/app/b0;->c(Ljava/lang/String;)Z
 
@@ -462,17 +462,17 @@
     :cond_0
     iget-object v1, p0, Landroidx/fragment/app/b0;->b:Ljava/util/HashMap;
 
-    iget-object v2, v0, Landroidx/fragment/app/Fragment;->k:Ljava/lang/String;
+    iget-object v2, v0, Landroidx/fragment/app/Fragment;->l:Ljava/lang/String;
 
     invoke-virtual {v1, v2, p1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 4
-    iget-boolean p1, v0, Landroidx/fragment/app/Fragment;->H:Z
+    iget-boolean p1, v0, Landroidx/fragment/app/Fragment;->I:Z
 
     if-eqz p1, :cond_2
 
     .line 5
-    iget-boolean p1, v0, Landroidx/fragment/app/Fragment;->G:Z
+    iget-boolean p1, v0, Landroidx/fragment/app/Fragment;->H:Z
 
     if-eqz p1, :cond_1
 
@@ -493,7 +493,7 @@
     const/4 p1, 0x0
 
     .line 8
-    iput-boolean p1, v0, Landroidx/fragment/app/Fragment;->H:Z
+    iput-boolean p1, v0, Landroidx/fragment/app/Fragment;->I:Z
 
     :cond_2
     const/4 p1, 0x2
@@ -519,7 +519,7 @@
     iget-object p1, p1, Landroidx/fragment/app/z;->c:Landroidx/fragment/app/Fragment;
 
     .line 2
-    iget-boolean v0, p1, Landroidx/fragment/app/Fragment;->G:Z
+    iget-boolean v0, p1, Landroidx/fragment/app/Fragment;->H:Z
 
     if-eqz v0, :cond_0
 
@@ -532,7 +532,7 @@
     :cond_0
     iget-object v0, p0, Landroidx/fragment/app/b0;->b:Ljava/util/HashMap;
 
-    iget-object v1, p1, Landroidx/fragment/app/Fragment;->k:Ljava/lang/String;
+    iget-object v1, p1, Landroidx/fragment/app/Fragment;->l:Ljava/lang/String;
 
     const/4 v2, 0x0
 

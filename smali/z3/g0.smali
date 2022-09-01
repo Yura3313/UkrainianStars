@@ -91,7 +91,7 @@
     if-nez p2, :cond_0
 
     .line 3
-    iget-object p1, v7, Lz3/o;->i:Lz3/q;
+    iget-object p1, v7, Lz3/o;->o:Lz3/q;
 
     const-string p2, "Receiver called with null intent"
 
@@ -107,7 +107,7 @@
     move-result-object v0
 
     .line 6
-    iget-object v1, v7, Lz3/o;->n:Lz3/q;
+    iget-object v1, v7, Lz3/o;->t:Lz3/q;
 
     const-string v3, "Local receiver got"
 
@@ -139,7 +139,7 @@
     invoke-virtual {p2, v1}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
 
     .line 12
-    iget-object v0, v7, Lz3/o;->n:Lz3/q;
+    iget-object v0, v7, Lz3/o;->t:Lz3/q;
 
     const-string v1, "Starting wakeful intent."
 
@@ -184,7 +184,7 @@
     move-exception v0
 
     .line 18
-    iget-object v1, v7, Lz3/o;->i:Lz3/q;
+    iget-object v1, v7, Lz3/o;->o:Lz3/q;
 
     const-string v3, "Install Referrer Reporter encountered a problem"
 
@@ -209,7 +209,7 @@
     if-nez v0, :cond_3
 
     .line 22
-    iget-object p1, v7, Lz3/o;->n:Lz3/q;
+    iget-object p1, v7, Lz3/o;->t:Lz3/q;
 
     const-string p2, "Install referrer extras are null"
 
@@ -226,7 +226,7 @@
 
     .line 25
     :cond_3
-    iget-object v1, v7, Lz3/o;->l:Lz3/q;
+    iget-object v1, v7, Lz3/o;->r:Lz3/q;
 
     const-string v3, "Install referrer extras are"
 
@@ -268,18 +268,18 @@
     move-result-object v0
 
     .line 30
-    invoke-virtual {v2}, Lz3/p0;->r()Lz3/f3;
+    invoke-virtual {v2}, Lz3/p0;->r()Lz3/g3;
 
     move-result-object v1
 
-    invoke-virtual {v1, v0}, Lz3/f3;->C(Landroid/net/Uri;)Landroid/os/Bundle;
+    invoke-virtual {v1, v0}, Lz3/g3;->C(Landroid/net/Uri;)Landroid/os/Bundle;
 
     move-result-object v5
 
     if-nez v5, :cond_6
 
     .line 31
-    iget-object p1, v7, Lz3/o;->n:Lz3/q;
+    iget-object p1, v7, Lz3/o;->t:Lz3/q;
 
     const-string p2, "No campaign defined in install referrer broadcast"
 
@@ -312,7 +312,7 @@
     if-nez p2, :cond_7
 
     .line 35
-    iget-object p2, v7, Lz3/o;->i:Lz3/q;
+    iget-object p2, v7, Lz3/o;->o:Lz3/q;
 
     const-string v0, "Install referrer is missing timestamp"
 

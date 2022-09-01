@@ -54,7 +54,7 @@
     move-object v6, p6
 
     .line 1
-    invoke-direct/range {v0 .. v6}, Lcom/google/android/gms/common/internal/a;-><init>(Landroid/content/Context;Landroid/os/Looper;ILd2/c;Lb2/e;Lb2/l;)V
+    invoke-direct/range {v0 .. v6}, Lcom/google/android/gms/common/internal/a;-><init>(Landroid/content/Context;Landroid/os/Looper;ILd2/c;Lb2/d;Lb2/k;)V
 
     .line 2
     new-instance p2, Lz2/i;
@@ -103,7 +103,7 @@
     iput-object p4, p0, Lz2/g;->H:Lv2/b$a;
 
     .line 12
-    iget-boolean p2, p4, Lv2/b$a;->m:Z
+    iget-boolean p2, p4, Lv2/b$a;->n:Z
 
     if-nez p2, :cond_6
 
@@ -119,12 +119,12 @@
 
     .line 15
     :cond_0
-    iget-object p1, p5, Lz2/c;->f:Lz2/g;
+    iget-object p1, p5, Lz2/c;->g:Lz2/g;
 
     invoke-virtual {p1}, Lz2/g;->L()V
 
     .line 16
-    iget-object p1, p5, Lz2/c;->h:Ljava/lang/ref/WeakReference;
+    iget-object p1, p5, Lz2/c;->i:Ljava/lang/ref/WeakReference;
 
     if-eqz p1, :cond_2
 
@@ -136,7 +136,7 @@
     check-cast p1, Landroid/view/View;
 
     .line 18
-    iget-object p3, p5, Lz2/c;->f:Lz2/g;
+    iget-object p3, p5, Lz2/c;->g:Lz2/g;
 
     .line 19
     iget-object p3, p3, Lcom/google/android/gms/common/internal/BaseGmsClient;->c:Landroid/content/Context;
@@ -177,10 +177,10 @@
     const/4 p1, 0x0
 
     .line 25
-    iput-object p1, p5, Lz2/c;->h:Ljava/lang/ref/WeakReference;
+    iput-object p1, p5, Lz2/c;->i:Ljava/lang/ref/WeakReference;
 
     .line 26
-    iget-object p1, p5, Lz2/c;->f:Lz2/g;
+    iget-object p1, p5, Lz2/c;->g:Lz2/g;
 
     .line 27
     iget-object p1, p1, Lcom/google/android/gms/common/internal/BaseGmsClient;->c:Landroid/content/Context;
@@ -248,7 +248,7 @@
 
     invoke-direct {p1, p2}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
 
-    iput-object p1, p5, Lz2/c;->h:Ljava/lang/ref/WeakReference;
+    iput-object p1, p5, Lz2/c;->i:Ljava/lang/ref/WeakReference;
 
     .line 37
     invoke-virtual {p2, p5}, Landroid/view/View;->addOnAttachStateChangeListener(Landroid/view/View$OnAttachStateChangeListener;)V
@@ -499,7 +499,7 @@
     iget-object v2, p0, Lz2/g;->E:Lz2/c;
 
     .line 2
-    iget-object v2, v2, Lz2/c;->g:Lz2/e;
+    iget-object v2, v2, Lz2/c;->h:Lz2/e;
 
     iget-object v3, v2, Lz2/e;->a:Landroid/os/IBinder;
 
@@ -565,7 +565,7 @@
     .line 5
     :cond_0
     :try_start_1
-    iget v2, v0, Lcom/google/android/gms/common/data/DataHolder;->m:I
+    iget v2, v0, Lcom/google/android/gms/common/data/DataHolder;->n:I
 
     :goto_0
     if-lez v2, :cond_1
@@ -749,7 +749,7 @@
 
     move-result-object v0
 
-    check-cast v0, Lt3/g;
+    check-cast v0, Lt3/k;
 
     if-nez v0, :cond_0
 
@@ -837,7 +837,7 @@
 
     move-result-object v1
 
-    check-cast v1, Lt3/g;
+    check-cast v1, Lt3/k;
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_1
 
@@ -854,7 +854,7 @@
     .line 5
     new-instance v2, Lz2/h;
 
-    invoke-direct {v2, v0}, Lz2/h;-><init>(Lb2/d;)V
+    invoke-direct {v2, v0}, Lz2/h;-><init>(Lb2/c;)V
 
     .line 6
     invoke-interface {v1, v2}, Lcom/google/android/gms/games/internal/zzbo;->a1(Lcom/google/android/gms/games/internal/zzbk;)V
@@ -893,9 +893,9 @@
 
     .line 10
     :catch_1
-    check-cast p1, Lb2/w;
+    check-cast p1, Lb2/v;
 
-    invoke-virtual {p1}, Lb2/w;->X0()V
+    invoke-virtual {p1}, Lb2/v;->X0()V
 
     return-void
 .end method
@@ -913,11 +913,11 @@
 
     iget-object v0, p0, Lz2/g;->H:Lv2/b$a;
 
-    iget-object v1, v0, Lv2/b$a;->p:Ljava/lang/String;
+    iget-object v1, v0, Lv2/b$a;->q:Ljava/lang/String;
 
     if-nez v1, :cond_0
 
-    iget-boolean v0, v0, Lv2/b$a;->m:Z
+    iget-boolean v0, v0, Lv2/b$a;->n:Z
 
     if-nez v0, :cond_0
 
@@ -1039,84 +1039,84 @@
     invoke-direct {v2}, Landroid/os/Bundle;-><init>()V
 
     .line 5
-    iget-boolean v3, v1, Lv2/b$a;->f:Z
+    iget-boolean v3, v1, Lv2/b$a;->g:Z
 
     const-string v4, "com.google.android.gms.games.key.isHeadless"
 
     invoke-virtual {v2, v4, v3}, Landroid/os/Bundle;->putBoolean(Ljava/lang/String;Z)V
 
     .line 6
-    iget-boolean v3, v1, Lv2/b$a;->g:Z
+    iget-boolean v3, v1, Lv2/b$a;->h:Z
 
     const-string v4, "com.google.android.gms.games.key.showConnectingPopup"
 
     invoke-virtual {v2, v4, v3}, Landroid/os/Bundle;->putBoolean(Ljava/lang/String;Z)V
 
     .line 7
-    iget v3, v1, Lv2/b$a;->h:I
+    iget v3, v1, Lv2/b$a;->i:I
 
     const-string v4, "com.google.android.gms.games.key.connectingPopupGravity"
 
     invoke-virtual {v2, v4, v3}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
 
     .line 8
-    iget-boolean v3, v1, Lv2/b$a;->i:Z
+    iget-boolean v3, v1, Lv2/b$a;->j:Z
 
     const-string v4, "com.google.android.gms.games.key.retryingSignIn"
 
     invoke-virtual {v2, v4, v3}, Landroid/os/Bundle;->putBoolean(Ljava/lang/String;Z)V
 
     .line 9
-    iget v3, v1, Lv2/b$a;->j:I
+    iget v3, v1, Lv2/b$a;->k:I
 
     const-string v4, "com.google.android.gms.games.key.sdkVariant"
 
     invoke-virtual {v2, v4, v3}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
 
     .line 10
-    iget-object v3, v1, Lv2/b$a;->k:Ljava/lang/String;
+    iget-object v3, v1, Lv2/b$a;->l:Ljava/lang/String;
 
     const-string v4, "com.google.android.gms.games.key.forceResolveAccountKey"
 
     invoke-virtual {v2, v4, v3}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 11
-    iget-object v3, v1, Lv2/b$a;->l:Ljava/util/ArrayList;
+    iget-object v3, v1, Lv2/b$a;->m:Ljava/util/ArrayList;
 
     const-string v4, "com.google.android.gms.games.key.proxyApis"
 
     invoke-virtual {v2, v4, v3}, Landroid/os/Bundle;->putStringArrayList(Ljava/lang/String;Ljava/util/ArrayList;)V
 
     .line 12
-    iget-boolean v3, v1, Lv2/b$a;->m:Z
+    iget-boolean v3, v1, Lv2/b$a;->n:Z
 
     const-string v4, "com.google.android.gms.games.key.unauthenticated"
 
     invoke-virtual {v2, v4, v3}, Landroid/os/Bundle;->putBoolean(Ljava/lang/String;Z)V
 
     .line 13
-    iget-boolean v3, v1, Lv2/b$a;->n:Z
+    iget-boolean v3, v1, Lv2/b$a;->o:Z
 
     const-string v4, "com.google.android.gms.games.key.skipWelcomePopup"
 
     invoke-virtual {v2, v4, v3}, Landroid/os/Bundle;->putBoolean(Ljava/lang/String;Z)V
 
     .line 14
-    iget-object v3, v1, Lv2/b$a;->o:Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;
+    iget-object v3, v1, Lv2/b$a;->p:Lcom/google/android/gms/auth/api/signin/GoogleSignInAccount;
 
     const-string v4, "com.google.android.gms.games.key.googleSignInAccount"
 
     invoke-virtual {v2, v4, v3}, Landroid/os/Bundle;->putParcelable(Ljava/lang/String;Landroid/os/Parcelable;)V
 
     .line 15
-    iget-object v3, v1, Lv2/b$a;->p:Ljava/lang/String;
+    iget-object v3, v1, Lv2/b$a;->q:Ljava/lang/String;
 
     const-string v4, "com.google.android.gms.games.key.realClientPackageName"
 
     invoke-virtual {v2, v4, v3}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 16
-    iget v1, v1, Lv2/b$a;->r:I
+    iget v1, v1, Lv2/b$a;->s:I
 
     const-string v3, "com.google.android.gms.games.key.API_VERSION"
 
@@ -1140,7 +1140,7 @@
     iget-object v1, p0, Lz2/g;->E:Lz2/c;
 
     .line 20
-    iget-object v1, v1, Lz2/c;->g:Lz2/e;
+    iget-object v1, v1, Lz2/c;->h:Lz2/e;
 
     iget-object v1, v1, Lz2/e;->a:Landroid/os/IBinder;
 
@@ -1225,11 +1225,11 @@
     :cond_0
     iget-object v0, p0, Lz2/g;->H:Lv2/b$a;
 
-    iget-boolean v1, v0, Lv2/b$a;->f:Z
+    iget-boolean v1, v0, Lv2/b$a;->g:Z
 
     if-nez v1, :cond_1
 
-    iget-boolean v0, v0, Lv2/b$a;->m:Z
+    iget-boolean v0, v0, Lv2/b$a;->n:Z
 
     if-nez v0, :cond_1
 
@@ -1240,7 +1240,7 @@
     iget-object v1, p0, Lz2/g;->E:Lz2/c;
 
     .line 8
-    iget-object v1, v1, Lz2/c;->g:Lz2/e;
+    iget-object v1, v1, Lz2/c;->h:Lz2/e;
 
     .line 9
     invoke-direct {v0, v1}, Lcom/google/android/gms/games/internal/zzbq;-><init>(Lz2/e;)V

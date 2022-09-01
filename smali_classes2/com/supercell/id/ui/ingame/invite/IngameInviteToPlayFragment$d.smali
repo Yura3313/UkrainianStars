@@ -1,5 +1,5 @@
 .class public final Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$d;
-.super Lse/h;
+.super Lse/i;
 .source "IngameInviteToPlayFragment.kt"
 
 # interfaces
@@ -18,7 +18,7 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/l<",
         "Lae/m<",
         "+",
@@ -28,25 +28,25 @@
         ">;+",
         "Lcom/supercell/id/util/NormalizedError;",
         ">;",
-        "Lie/h;",
+        "Lie/i;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic f:Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment;
+.field public final synthetic g:Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$d;->f:Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment;
+    iput-object p1, p0, Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$d;->g:Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment;
 
     const/4 p1, 0x1
 
-    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -60,7 +60,7 @@
     check-cast p1, Lae/m;
 
     .line 2
-    iget-object v0, p0, Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$d;->f:Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment;
+    iget-object v0, p0, Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$d;->g:Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment;
 
     .line 3
     instance-of v1, p1, Lae/m$a;
@@ -99,7 +99,7 @@
 
     invoke-direct {v1, p1}, Lae/q;-><init>(Lcom/supercell/id/util/NormalizedError;)V
 
-    invoke-static {v1}, Lcom/android/billingclient/api/z;->h(Ljava/lang/Object;)Ljava/util/List;
+    invoke-static {v1}, Lcom/android/billingclient/api/y;->c(Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object p1
 
@@ -110,13 +110,13 @@
 
     .line 9
     :goto_0
-    sget v1, Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment;->r0:I
+    sget v1, Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment;->s0:I
 
     .line 10
     invoke-virtual {v0, p1}, Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment;->i1(Ljava/util/List;)V
 
     .line 11
-    sget-object p1, Lie/h;->a:Lie/h;
+    sget-object p1, Lie/i;->a:Lie/i;
 
     return-object p1
 .end method

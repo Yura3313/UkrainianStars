@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field public final synthetic f:Lcom/google/android/material/bottomsheet/a;
+.field public final synthetic g:Lcom/google/android/material/bottomsheet/a;
 
 
 # direct methods
 .method public constructor <init>(Lcom/google/android/material/bottomsheet/a;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment$g$c;->f:Lcom/google/android/material/bottomsheet/a;
+    iput-object p1, p0, Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment$g$c;->g:Lcom/google/android/material/bottomsheet/a;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -37,7 +37,7 @@
 .method public final onClick(Landroid/view/View;)V
     .locals 0
 
-    iget-object p1, p0, Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment$g$c;->f:Lcom/google/android/material/bottomsheet/a;
+    iget-object p1, p0, Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment$g$c;->g:Lcom/google/android/material/bottomsheet/a;
 
     invoke-virtual {p1}, Landroidx/appcompat/app/p;->dismiss()V
 

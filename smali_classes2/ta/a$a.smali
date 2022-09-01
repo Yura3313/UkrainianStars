@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field public final synthetic f:Lta/a;
+.field public final synthetic g:Lta/a;
 
 
 # direct methods
 .method public constructor <init>(Lta/a;)V
     .locals 0
 
-    iput-object p1, p0, Lta/a$a;->f:Lta/a;
+    iput-object p1, p0, Lta/a$a;->g:Lta/a;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -38,7 +38,7 @@
     .locals 1
 
     .line 1
-    iget-object p1, p0, Lta/a$a;->f:Lta/a;
+    iget-object p1, p0, Lta/a$a;->g:Lta/a;
 
     .line 2
     iget-object v0, p1, Lta/a;->t:Landroidx/recyclerview/widget/RecyclerView;
@@ -50,7 +50,7 @@
     invoke-virtual {v0, p1}, Landroid/view/ViewGroup;->setLayoutAnimation(Landroid/view/animation/LayoutAnimationController;)V
 
     .line 5
-    iget-object p1, p0, Lta/a$a;->f:Lta/a;
+    iget-object p1, p0, Lta/a$a;->g:Lta/a;
 
     .line 6
     iget-object p1, p1, Lta/a;->b:Lta/m;

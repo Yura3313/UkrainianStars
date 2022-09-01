@@ -1,5 +1,5 @@
 .class public final Lpd/u;
-.super Lse/h;
+.super Lse/i;
 .source "NewGameAnimationView.kt"
 
 # interfaces
@@ -9,7 +9,7 @@
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/a<",
         "Landroid/graphics/Bitmap;",
         ">;"
@@ -18,18 +18,18 @@
 
 
 # instance fields
-.field public final synthetic f:Landroid/graphics/Bitmap;
+.field public final synthetic g:Landroid/graphics/Bitmap;
 
 
 # direct methods
 .method public constructor <init>(Landroid/graphics/Bitmap;)V
     .locals 0
 
-    iput-object p1, p0, Lpd/u;->f:Landroid/graphics/Bitmap;
+    iput-object p1, p0, Lpd/u;->g:Landroid/graphics/Bitmap;
 
     const/4 p1, 0x0
 
-    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -40,7 +40,7 @@
     .locals 3
 
     .line 1
-    iget-object v0, p0, Lpd/u;->f:Landroid/graphics/Bitmap;
+    iget-object v0, p0, Lpd/u;->g:Landroid/graphics/Bitmap;
 
     invoke-virtual {v0}, Landroid/graphics/Bitmap;->getWidth()I
 
@@ -51,7 +51,7 @@
     move-result v0
 
     .line 2
-    iget-object v1, p0, Lpd/u;->f:Landroid/graphics/Bitmap;
+    iget-object v1, p0, Lpd/u;->g:Landroid/graphics/Bitmap;
 
     const/4 v2, 0x1
 

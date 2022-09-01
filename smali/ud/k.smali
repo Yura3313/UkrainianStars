@@ -1,88 +1,44 @@
-.class public final synthetic Lud/k;
-.super Lse/g;
-.source "LocalAssets.kt"
+.class public final Lud/k;
+.super Ljava/lang/Object;
+.source "ThreadUtil.kt"
 
 # interfaces
-.implements Lre/l;
+.implements Ljava/lang/Runnable;
 
 
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Lse/g;",
-        "Lre/l<",
-        "Ljava/lang/String;",
-        "Ljava/lang/Boolean;",
-        ">;"
-    }
-.end annotation
+# instance fields
+.field public final synthetic g:Ljava/lang/Object;
+
+.field public final synthetic h:Ljava/lang/String;
 
 
 # direct methods
-.method public constructor <init>(Lud/j;)V
-    .locals 1
+.method public constructor <init>(Ljava/lang/Object;Ljava/lang/String;Ljava/lang/String;)V
+    .locals 0
 
-    const/4 v0, 0x1
+    iput-object p1, p0, Lud/k;->g:Ljava/lang/Object;
 
-    invoke-direct {p0, v0, p1}, Lse/g;-><init>(ILjava/lang/Object;)V
+    iput-object p3, p0, Lud/k;->h:Ljava/lang/String;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final getName()Ljava/lang/String;
-    .locals 1
-
-    const-string v0, "validateImageAssetName"
-
-    return-object v0
-.end method
-
-.method public final getOwner()Lwe/d;
-    .locals 1
-
-    const-class v0, Lud/j;
-
-    invoke-static {v0}, Lse/r;->a(Ljava/lang/Class;)Lwe/c;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public final getSignature()Ljava/lang/String;
-    .locals 1
-
-    const-string v0, "validateImageAssetName(Ljava/lang/String;)Z"
-
-    return-object v0
-.end method
-
-.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 1
+.method public final run()V
+    .locals 2
 
     .line 1
-    check-cast p1, Ljava/lang/String;
+    iget-object v0, p0, Lud/k;->g:Ljava/lang/Object;
 
-    const-string v0, "p1"
+    check-cast v0, Lre/l;
 
     .line 2
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    iget-object v1, p0, Lud/k;->h:Ljava/lang/String;
 
-    iget-object v0, p0, Lse/b;->receiver:Ljava/lang/Object;
+    invoke-interface {v0, v1}, Lre/l;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
-    check-cast v0, Lud/j;
-
-    .line 3
-    invoke-virtual {v0, p1}, Lud/j;->j(Ljava/lang/String;)Z
-
-    move-result p1
-
-    .line 4
-    invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
-
-    move-result-object p1
-
-    return-object p1
+    return-void
 .end method

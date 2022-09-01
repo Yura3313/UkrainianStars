@@ -23,7 +23,7 @@
     return-void
 .end method
 
-.method public synthetic constructor <init>(Lse/e;)V
+.method public synthetic constructor <init>(Lse/f;)V
     .locals 0
 
     invoke-direct {p0}, Lcom/kakao/sdk/network/ApiCallback$Companion;-><init>()V
@@ -38,7 +38,7 @@
 
     const-string v0, "t"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     :try_start_0
@@ -52,14 +52,14 @@
     check-cast v0, Lretrofit2/HttpException;
 
     .line 3
-    iget-object v0, v0, Lretrofit2/HttpException;->g:Lef/c0;
+    iget-object v0, v0, Lretrofit2/HttpException;->h:Lef/b0;
 
     const/4 v1, 0x0
 
     if-eqz v0, :cond_0
 
     .line 4
-    iget-object v0, v0, Lef/c0;->c:Lokhttp3/ResponseBody;
+    iget-object v0, v0, Lef/b0;->c:Lokhttp3/ResponseBody;
 
     if-eqz v0, :cond_0
 
@@ -124,7 +124,7 @@
     check-cast p1, Lretrofit2/HttpException;
 
     .line 15
-    iget p1, p1, Lretrofit2/HttpException;->f:I
+    iget p1, p1, Lretrofit2/HttpException;->g:I
 
     .line 16
     invoke-direct {v2, p1, v1, v0}, Lcom/kakao/sdk/common/model/ApiError;-><init>(ILcom/kakao/sdk/common/model/ApiErrorCause;Lcom/kakao/sdk/common/model/ApiErrorResponse;)V
@@ -133,7 +133,7 @@
 
     .line 17
     :cond_2
-    invoke-static {}, Lt3/e;->f()V
+    invoke-static {}, Lt3/h;->j()V
 
     throw v1
     :try_end_0

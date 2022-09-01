@@ -192,7 +192,7 @@
     aget-object v8, v14, v3
 
     .line 15
-    invoke-static {v7, v8, v13}, Landroid/support/v4/media/b;->b(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v7, v8, v13}, Landroid/support/v4/media/b;->a(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v13
 
@@ -321,9 +321,9 @@
     move-result v6
 
     .line 9
-    new-instance v7, Lcom/helpshift/util/z;
+    new-instance v7, Lcom/helpshift/util/y;
 
-    invoke-direct {v7}, Lcom/helpshift/util/z;-><init>()V
+    invoke-direct {v7}, Lcom/helpshift/util/y;-><init>()V
 
     .line 10
     invoke-virtual {v2, v3}, Ljava/util/regex/Matcher;->group(I)Ljava/lang/String;
@@ -448,19 +448,19 @@
     aget-object v9, v15, v3
 
     .line 19
-    invoke-static {v8, v9, v14}, Landroid/support/v4/media/b;->b(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v8, v9, v14}, Landroid/support/v4/media/b;->a(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v14
 
     .line 20
     :cond_4
-    iput-object v14, v7, Lcom/helpshift/util/z;->a:Ljava/lang/String;
+    iput-object v14, v7, Lcom/helpshift/util/y;->a:Ljava/lang/String;
 
     .line 21
-    iput v5, v7, Lcom/helpshift/util/z;->b:I
+    iput v5, v7, Lcom/helpshift/util/y;->b:I
 
     .line 22
-    iput v6, v7, Lcom/helpshift/util/z;->c:I
+    iput v6, v7, Lcom/helpshift/util/y;->c:I
 
     .line 23
     invoke-virtual {v1, v7}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
@@ -500,33 +500,33 @@
     if-lt v6, v7, :cond_6
 
     .line 29
-    new-instance v6, Lcom/helpshift/util/z;
+    new-instance v6, Lcom/helpshift/util/y;
 
-    invoke-direct {v6}, Lcom/helpshift/util/z;-><init>()V
+    invoke-direct {v6}, Lcom/helpshift/util/y;-><init>()V
 
     const-string v7, "tel:"
 
     .line 30
-    invoke-static {v7, v5}, Lcom/google/android/gms/ads/e;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v7, v5}, Lf/g;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v5
 
     .line 31
-    iput-object v5, v6, Lcom/helpshift/util/z;->a:Ljava/lang/String;
+    iput-object v5, v6, Lcom/helpshift/util/y;->a:Ljava/lang/String;
 
     .line 32
     invoke-virtual {v2}, Ljava/util/regex/Matcher;->start()I
 
     move-result v5
 
-    iput v5, v6, Lcom/helpshift/util/z;->b:I
+    iput v5, v6, Lcom/helpshift/util/y;->b:I
 
     .line 33
     invoke-virtual {v2}, Ljava/util/regex/Matcher;->end()I
 
     move-result v5
 
-    iput v5, v6, Lcom/helpshift/util/z;->c:I
+    iput v5, v6, Lcom/helpshift/util/y;->c:I
 
     .line 34
     invoke-virtual {v1, v6}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
@@ -561,7 +561,7 @@
 
     move-result-object v8
 
-    check-cast v8, Lcom/helpshift/util/z;
+    check-cast v8, Lcom/helpshift/util/y;
 
     add-int/lit8 v9, v5, 0x1
 
@@ -570,21 +570,21 @@
 
     move-result-object v10
 
-    check-cast v10, Lcom/helpshift/util/z;
+    check-cast v10, Lcom/helpshift/util/y;
 
     .line 40
-    iget v11, v8, Lcom/helpshift/util/z;->b:I
+    iget v11, v8, Lcom/helpshift/util/y;->b:I
 
-    iget v12, v10, Lcom/helpshift/util/z;->b:I
+    iget v12, v10, Lcom/helpshift/util/y;->b:I
 
     if-gt v11, v12, :cond_b
 
-    iget v8, v8, Lcom/helpshift/util/z;->c:I
+    iget v8, v8, Lcom/helpshift/util/y;->c:I
 
     if-le v8, v12, :cond_b
 
     .line 41
-    iget v10, v10, Lcom/helpshift/util/z;->c:I
+    iget v10, v10, Lcom/helpshift/util/y;->c:I
 
     if-gt v10, v8, :cond_8
 
@@ -654,10 +654,10 @@
 
     move-result-object v2
 
-    check-cast v2, Lcom/helpshift/util/z;
+    check-cast v2, Lcom/helpshift/util/y;
 
     .line 45
-    iget-object v3, v2, Lcom/helpshift/util/z;->a:Ljava/lang/String;
+    iget-object v3, v2, Lcom/helpshift/util/y;->a:Ljava/lang/String;
 
     .line 46
     new-instance v5, Lcom/helpshift/util/HSLinkify$3;
@@ -667,9 +667,9 @@
     invoke-direct {v5, v3, v6, v3}, Lcom/helpshift/util/HSLinkify$3;-><init>(Ljava/lang/String;Lcom/helpshift/util/o$b;Ljava/lang/String;)V
 
     .line 47
-    iget v3, v2, Lcom/helpshift/util/z;->b:I
+    iget v3, v2, Lcom/helpshift/util/y;->b:I
 
-    iget v2, v2, Lcom/helpshift/util/z;->c:I
+    iget v2, v2, Lcom/helpshift/util/y;->c:I
 
     const/16 v7, 0x21
 

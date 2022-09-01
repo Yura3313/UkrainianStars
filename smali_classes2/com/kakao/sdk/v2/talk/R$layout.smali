@@ -80,25 +80,25 @@
 
 .field public static final custom_dialog:I = 0x7f0d0030
 
-.field public static final notification_action:I = 0x7f0d0168
+.field public static final notification_action:I = 0x7f0d0169
 
-.field public static final notification_action_tombstone:I = 0x7f0d0169
+.field public static final notification_action_tombstone:I = 0x7f0d016a
 
-.field public static final notification_template_custom_big:I = 0x7f0d0170
+.field public static final notification_template_custom_big:I = 0x7f0d0171
 
-.field public static final notification_template_icon_group:I = 0x7f0d0171
+.field public static final notification_template_icon_group:I = 0x7f0d0172
 
-.field public static final notification_template_part_chronometer:I = 0x7f0d0175
+.field public static final notification_template_part_chronometer:I = 0x7f0d0176
 
-.field public static final notification_template_part_time:I = 0x7f0d0176
+.field public static final notification_template_part_time:I = 0x7f0d0177
 
-.field public static final select_dialog_item_material:I = 0x7f0d017c
+.field public static final select_dialog_item_material:I = 0x7f0d017d
 
-.field public static final select_dialog_multichoice_material:I = 0x7f0d017d
+.field public static final select_dialog_multichoice_material:I = 0x7f0d017e
 
-.field public static final select_dialog_singlechoice_material:I = 0x7f0d017e
+.field public static final select_dialog_singlechoice_material:I = 0x7f0d017f
 
-.field public static final support_simple_spinner_dropdown_item:I = 0x7f0d0180
+.field public static final support_simple_spinner_dropdown_item:I = 0x7f0d0181
 
 
 # direct methods

@@ -57,7 +57,7 @@
     iget-object v0, p0, Landroidx/fragment/app/j0$d;->b:Landroidx/fragment/app/j0$d$b;
 
     .line 2
-    sget-object v1, Landroidx/fragment/app/j0$d$b;->g:Landroidx/fragment/app/j0$d$b;
+    sget-object v1, Landroidx/fragment/app/j0$d$b;->h:Landroidx/fragment/app/j0$d$b;
 
     if-ne v0, v1, :cond_4
 
@@ -68,7 +68,7 @@
     iget-object v0, v0, Landroidx/fragment/app/z;->c:Landroidx/fragment/app/Fragment;
 
     .line 5
-    iget-object v1, v0, Landroidx/fragment/app/Fragment;->M:Landroid/view/View;
+    iget-object v1, v0, Landroidx/fragment/app/Fragment;->N:Landroid/view/View;
 
     invoke-virtual {v1}, Landroid/view/View;->findFocus()Landroid/view/View;
 
@@ -142,7 +142,7 @@
 
     .line 16
     :cond_2
-    iget-object v0, v0, Landroidx/fragment/app/Fragment;->P:Landroidx/fragment/app/Fragment$c;
+    iget-object v0, v0, Landroidx/fragment/app/Fragment;->Q:Landroidx/fragment/app/Fragment$c;
 
     if-nez v0, :cond_3
 

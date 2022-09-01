@@ -18,7 +18,7 @@
 .method public constructor <init>()V
     .locals 4
 
-    sget-object v0, Lo5/f0;->l:Lo5/f0;
+    sget-object v0, Lo5/f0;->m:Lo5/f0;
 
     const-string v1, "STRING"
 

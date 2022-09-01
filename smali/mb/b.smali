@@ -104,7 +104,7 @@
     invoke-virtual {v1, v0}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 
     .line 4
-    iget-object v1, v0, Lmb/d;->g:Ljava/lang/Object;
+    iget-object v1, v0, Lmb/d;->h:Ljava/lang/Object;
 
     monitor-enter v1
     :try_end_0
@@ -113,7 +113,7 @@
     .line 5
     :goto_0
     :try_start_1
-    iget-object v2, v0, Lmb/d;->h:Ljava/util/concurrent/atomic/AtomicBoolean;
+    iget-object v2, v0, Lmb/d;->i:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     invoke-virtual {v2}, Ljava/util/concurrent/atomic/AtomicBoolean;->get()Z
 
@@ -122,7 +122,7 @@
     if-nez v2, :cond_0
 
     .line 6
-    iget-object v2, v0, Lmb/d;->g:Ljava/lang/Object;
+    iget-object v2, v0, Lmb/d;->h:Ljava/lang/Object;
 
     invoke-virtual {v2}, Ljava/lang/Object;->wait()V
     :try_end_1
@@ -147,7 +147,7 @@
     const/4 v4, 0x0
 
     .line 7
-    invoke-static {v2, v3, v0, v4}, Landroidx/savedstate/d;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v2, v3, v0, v4}, Le5/i;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
 
     .line 8
     invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;

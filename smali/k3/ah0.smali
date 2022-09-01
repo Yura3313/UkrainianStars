@@ -1,129 +1,176 @@
-.class public final synthetic Lk3/ah0;
+.class public final Lk3/ah0;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 
-# static fields
-.field public static final synthetic a:[I
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<T:",
+        "Ljava/lang/Object;",
+        ">",
+        "Ljava/lang/Object;"
+    }
+.end annotation
+
+
+# instance fields
+.field public final a:Ljava/util/concurrent/LinkedBlockingDeque;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/Deque<",
+            "Lk3/hm0<",
+            "TT;>;>;"
+        }
+    .end annotation
+
+    .annotation build Ljavax/annotation/concurrent/GuardedBy;
+        value = "this"
+    .end annotation
+.end field
+
+.field public final b:Ljava/util/concurrent/Callable;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/concurrent/Callable<",
+            "TT;>;"
+        }
+    .end annotation
+.end field
+
+.field public final c:Lk3/jm0;
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 4
+.method public constructor <init>(Ljava/util/concurrent/Callable;Lk3/jm0;)V
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/concurrent/Callable<",
+            "TT;>;",
+            "Lk3/jm0;",
+            ")V"
+        }
+    .end annotation
 
     .line 1
-    sget-object v0, Lk3/qp0;->i:[I
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    invoke-virtual {v0}, [I->clone()Ljava/lang/Object;
+    .line 2
+    new-instance v0, Ljava/util/concurrent/LinkedBlockingDeque;
+
+    invoke-direct {v0}, Ljava/util/concurrent/LinkedBlockingDeque;-><init>()V
+
+    iput-object v0, p0, Lk3/ah0;->a:Ljava/util/concurrent/LinkedBlockingDeque;
+
+    .line 3
+    iput-object p1, p0, Lk3/ah0;->b:Ljava/util/concurrent/Callable;
+
+    .line 4
+    iput-object p2, p0, Lk3/ah0;->c:Lk3/jm0;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final declared-synchronized a()Lk3/hm0;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lk3/hm0<",
+            "TT;>;"
+        }
+    .end annotation
+
+    monitor-enter p0
+
+    const/4 v0, 0x1
+
+    .line 1
+    :try_start_0
+    invoke-virtual {p0, v0}, Lk3/ah0;->b(I)V
+
+    .line 2
+    iget-object v0, p0, Lk3/ah0;->a:Ljava/util/concurrent/LinkedBlockingDeque;
+
+    invoke-virtual {v0}, Ljava/util/concurrent/LinkedBlockingDeque;->poll()Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, [I
+    check-cast v0, Lk3/hm0;
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    monitor-exit p0
+
+    return-object v0
+
+    :catchall_0
+    move-exception v0
+
+    monitor-exit p0
+
+    throw v0
+.end method
+
+.method public final declared-synchronized b(I)V
+    .locals 4
+
+    monitor-enter p0
+
+    .line 1
+    :try_start_0
+    iget-object v0, p0, Lk3/ah0;->a:Ljava/util/concurrent/LinkedBlockingDeque;
+
+    invoke-virtual {v0}, Ljava/util/concurrent/LinkedBlockingDeque;->size()I
+
+    move-result v0
+
+    sub-int/2addr p1, v0
+
+    const/4 v0, 0x0
+
+    :goto_0
+    if-ge v0, p1, :cond_0
 
     .line 2
-    array-length v0, v0
+    iget-object v1, p0, Lk3/ah0;->a:Ljava/util/concurrent/LinkedBlockingDeque;
 
-    new-array v0, v0, [I
+    iget-object v2, p0, Lk3/ah0;->c:Lk3/jm0;
 
-    sput-object v0, Lk3/ah0;->a:[I
+    iget-object v3, p0, Lk3/ah0;->b:Ljava/util/concurrent/Callable;
 
-    const/4 v1, 0x1
+    invoke-interface {v2, v3}, Lk3/jm0;->c(Ljava/util/concurrent/Callable;)Lk3/hm0;
 
-    :try_start_0
-    aput v1, v0, v1
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, Ljava/util/concurrent/LinkedBlockingDeque;->add(Ljava/lang/Object;)Z
     :try_end_0
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    :catch_0
-    const/4 v0, 0x2
+    add-int/lit8 v0, v0, 0x1
 
-    const/4 v1, 0x4
+    goto :goto_0
 
-    :try_start_1
-    sget-object v2, Lk3/ah0;->a:[I
+    .line 3
+    :cond_0
+    monitor-exit p0
 
-    aput v0, v2, v1
-    :try_end_1
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_1
-
-    :catch_1
-    const/4 v2, 0x3
-
-    :try_start_2
-    sget-object v3, Lk3/ah0;->a:[I
-
-    aput v2, v3, v0
-    :try_end_2
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_2 .. :try_end_2} :catch_2
-
-    :catch_2
-    :try_start_3
-    sget-object v0, Lk3/ah0;->a:[I
-
-    aput v1, v0, v2
-    :try_end_3
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_3 .. :try_end_3} :catch_3
-
-    :catch_3
-    :try_start_4
-    sget-object v0, Lk3/ah0;->a:[I
-
-    const/4 v1, 0x5
-
-    aput v1, v0, v1
-    :try_end_4
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_4 .. :try_end_4} :catch_4
-
-    :catch_4
-    :try_start_5
-    sget-object v0, Lk3/ah0;->a:[I
-
-    const/4 v1, 0x6
-
-    aput v1, v0, v1
-    :try_end_5
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_5 .. :try_end_5} :catch_5
-
-    :catch_5
-    :try_start_6
-    sget-object v0, Lk3/ah0;->a:[I
-
-    const/4 v1, 0x7
-
-    aput v1, v0, v1
-    :try_end_6
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_6 .. :try_end_6} :catch_6
-
-    :catch_6
-    :try_start_7
-    sget-object v0, Lk3/ah0;->a:[I
-
-    const/16 v1, 0x8
-
-    aput v1, v0, v1
-    :try_end_7
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_7 .. :try_end_7} :catch_7
-
-    :catch_7
-    :try_start_8
-    sget-object v0, Lk3/ah0;->a:[I
-
-    const/16 v1, 0x9
-
-    aput v1, v0, v1
-    :try_end_8
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_8 .. :try_end_8} :catch_8
-
-    :catch_8
-    :try_start_9
-    sget-object v0, Lk3/ah0;->a:[I
-
-    const/16 v1, 0xa
-
-    aput v1, v0, v1
-    :try_end_9
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_9 .. :try_end_9} :catch_9
-
-    :catch_9
     return-void
+
+    :catchall_0
+    move-exception p1
+
+    monitor-exit p0
+
+    goto :goto_2
+
+    :goto_1
+    throw p1
+
+    :goto_2
+    goto :goto_1
 .end method

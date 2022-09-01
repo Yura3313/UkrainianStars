@@ -37,10 +37,10 @@
     check-cast p2, Lq8/d;
 
     .line 2
-    iget-wide v0, p1, Lq8/d;->E:J
+    iget-wide v0, p1, Lq8/d;->F:J
 
     .line 3
-    iget-wide p1, p2, Lq8/d;->E:J
+    iget-wide p1, p2, Lq8/d;->F:J
 
     cmp-long v2, v0, p1
 

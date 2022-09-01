@@ -18,17 +18,17 @@
 
 
 # instance fields
-.field public f:Ljava/lang/Object;
+.field public g:Ljava/lang/Object;
 
-.field public g:Landroid/app/Activity;
+.field public h:Landroid/app/Activity;
 
-.field public final h:I
-
-.field public i:Z
+.field public final i:I
 
 .field public j:Z
 
 .field public k:Z
+
+.field public l:Z
 
 
 # direct methods
@@ -41,23 +41,23 @@
     const/4 v0, 0x0
 
     .line 2
-    iput-boolean v0, p0, Lu/b$c;->i:Z
-
-    .line 3
     iput-boolean v0, p0, Lu/b$c;->j:Z
 
-    .line 4
+    .line 3
     iput-boolean v0, p0, Lu/b$c;->k:Z
 
+    .line 4
+    iput-boolean v0, p0, Lu/b$c;->l:Z
+
     .line 5
-    iput-object p1, p0, Lu/b$c;->g:Landroid/app/Activity;
+    iput-object p1, p0, Lu/b$c;->h:Landroid/app/Activity;
 
     .line 6
     invoke-virtual {p1}, Ljava/lang/Object;->hashCode()I
 
     move-result p1
 
-    iput p1, p0, Lu/b$c;->h:I
+    iput p1, p0, Lu/b$c;->i:I
 
     return-void
 .end method
@@ -74,19 +74,19 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lu/b$c;->g:Landroid/app/Activity;
+    iget-object v0, p0, Lu/b$c;->h:Landroid/app/Activity;
 
     if-ne v0, p1, :cond_0
 
     const/4 p1, 0x0
 
     .line 2
-    iput-object p1, p0, Lu/b$c;->g:Landroid/app/Activity;
+    iput-object p1, p0, Lu/b$c;->h:Landroid/app/Activity;
 
     const/4 p1, 0x1
 
     .line 3
-    iput-boolean p1, p0, Lu/b$c;->j:Z
+    iput-boolean p1, p0, Lu/b$c;->k:Z
 
     :cond_0
     return-void
@@ -96,21 +96,21 @@
     .locals 5
 
     .line 1
-    iget-boolean v0, p0, Lu/b$c;->j:Z
+    iget-boolean v0, p0, Lu/b$c;->k:Z
 
     if-eqz v0, :cond_2
 
-    iget-boolean v0, p0, Lu/b$c;->k:Z
+    iget-boolean v0, p0, Lu/b$c;->l:Z
 
     if-nez v0, :cond_2
 
-    iget-boolean v0, p0, Lu/b$c;->i:Z
+    iget-boolean v0, p0, Lu/b$c;->j:Z
 
     if-nez v0, :cond_2
 
-    iget-object v0, p0, Lu/b$c;->f:Ljava/lang/Object;
+    iget-object v0, p0, Lu/b$c;->g:Ljava/lang/Object;
 
-    iget v1, p0, Lu/b$c;->h:I
+    iget v1, p0, Lu/b$c;->i:I
 
     const/4 v2, 0x0
 
@@ -162,12 +162,12 @@
     if-eqz v2, :cond_2
 
     .line 6
-    iput-boolean v3, p0, Lu/b$c;->k:Z
+    iput-boolean v3, p0, Lu/b$c;->l:Z
 
     const/4 p1, 0x0
 
     .line 7
-    iput-object p1, p0, Lu/b$c;->f:Ljava/lang/Object;
+    iput-object p1, p0, Lu/b$c;->g:Ljava/lang/Object;
 
     :cond_2
     return-void
@@ -189,14 +189,14 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lu/b$c;->g:Landroid/app/Activity;
+    iget-object v0, p0, Lu/b$c;->h:Landroid/app/Activity;
 
     if-ne v0, p1, :cond_0
 
     const/4 p1, 0x1
 
     .line 2
-    iput-boolean p1, p0, Lu/b$c;->i:Z
+    iput-boolean p1, p0, Lu/b$c;->j:Z
 
     :cond_0
     return-void

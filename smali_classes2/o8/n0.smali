@@ -1,82 +1,106 @@
 .class public final Lo8/n0;
 .super Ljava/lang/Object;
-.source "UserAttachmentMessageDM.java"
+.source "UIViewState.java"
 
 # interfaces
-.implements Lt9/b;
+.implements Lcom/helpshift/util/l;
 
 
 # instance fields
-.field public final synthetic a:Lo8/p0;
+.field public g:Z
+
+.field public h:Z
 
 
 # direct methods
-.method public constructor <init>(Lo8/p0;)V
+.method public constructor <init>()V
+    .locals 1
+
+    const/4 v0, 0x0
+
+    .line 1
+    invoke-direct {p0, v0, v0}, Lo8/n0;-><init>(ZZ)V
+
+    return-void
+.end method
+
+.method public constructor <init>(Lo8/n0;)V
+    .locals 1
+
+    .line 5
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 6
+    iget-boolean v0, p1, Lo8/n0;->g:Z
+
+    iput-boolean v0, p0, Lo8/n0;->g:Z
+
+    .line 7
+    iget-boolean p1, p1, Lo8/n0;->h:Z
+
+    iput-boolean p1, p0, Lo8/n0;->h:Z
+
+    return-void
+.end method
+
+.method public constructor <init>(ZZ)V
     .locals 0
 
-    iput-object p1, p0, Lo8/n0;->a:Lo8/p0;
-
+    .line 2
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 3
+    iput-boolean p1, p0, Lo8/n0;->g:Z
+
+    .line 4
+    iput-boolean p2, p0, Lo8/n0;->h:Z
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Ljava/lang/String;I)V
-    .locals 0
-
-    iget-object p1, p0, Lo8/n0;->a:Lo8/p0;
-
-    const/4 p2, 0x1
-
-    invoke-virtual {p1, p2}, Lo8/p0;->t(I)V
-
-    return-void
-.end method
-
-.method public final b(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
-    .locals 0
-
-    .line 1
-    iget-object p1, p0, Lo8/n0;->a:Lo8/p0;
-
-    iput-object p2, p1, Lo8/n;->D:Ljava/lang/String;
-
-    .line 2
-    iget-object p1, p1, Lo8/y;->u:Le8/s;
-
-    check-cast p1, Le8/j;
-
-    invoke-virtual {p1}, Le8/j;->c()Le8/b;
-
-    move-result-object p1
-
-    iget-object p2, p0, Lo8/n0;->a:Lo8/p0;
-
-    .line 3
-    invoke-virtual {p1, p2}, Le8/b;->e(Lo8/y;)V
-
-    .line 4
-    iget-object p1, p0, Lo8/n0;->a:Lo8/p0;
-
-    const/4 p2, 0x6
-
-    invoke-virtual {p1, p2}, Lo8/p0;->t(I)V
-
-    return-void
-.end method
-
-.method public final c(I)V
+.method public final a()Ljava/lang/Object;
     .locals 1
 
-    .line 1
-    iget-object v0, p0, Lo8/n0;->a:Lo8/p0;
+    new-instance v0, Lo8/n0;
 
-    iput p1, v0, Lo8/p0;->I:I
+    invoke-direct {v0, p0}, Lo8/n0;-><init>(Lo8/n0;)V
+
+    return-object v0
+.end method
+
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 2
+
+    .line 1
+    check-cast p1, Lo8/n0;
+
+    if-eqz p1, :cond_0
 
     .line 2
-    invoke-virtual {v0}, Lo8/y;->l()V
+    iget-boolean v0, p1, Lo8/n0;->g:Z
 
-    return-void
+    .line 3
+    iget-boolean v1, p0, Lo8/n0;->g:Z
+
+    if-ne v0, v1, :cond_0
+
+    .line 4
+    iget-boolean p1, p1, Lo8/n0;->h:Z
+
+    .line 5
+    iget-boolean v0, p0, Lo8/n0;->h:Z
+
+    if-ne p1, v0, :cond_0
+
+    const/4 p1, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 p1, 0x0
+
+    :goto_0
+    return p1
 .end method

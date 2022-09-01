@@ -7,14 +7,14 @@
 
 
 # instance fields
-.field public final synthetic f:Lcom/google/android/material/datepicker/f;
+.field public final synthetic g:Lcom/google/android/material/datepicker/f;
 
 
 # direct methods
 .method public constructor <init>(Lcom/google/android/material/datepicker/f;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/google/android/material/datepicker/j;->f:Lcom/google/android/material/datepicker/f;
+    iput-object p1, p0, Lcom/google/android/material/datepicker/j;->g:Lcom/google/android/material/datepicker/f;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -27,10 +27,10 @@
     .locals 3
 
     .line 1
-    iget-object p1, p0, Lcom/google/android/material/datepicker/j;->f:Lcom/google/android/material/datepicker/f;
+    iget-object p1, p0, Lcom/google/android/material/datepicker/j;->g:Lcom/google/android/material/datepicker/f;
 
     .line 2
-    iget v0, p1, Lcom/google/android/material/datepicker/f;->f0:I
+    iget v0, p1, Lcom/google/android/material/datepicker/f;->g0:I
 
     const/4 v1, 0x1
 

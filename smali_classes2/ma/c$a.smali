@@ -15,15 +15,15 @@
 
 
 # instance fields
-.field public A:Landroid/widget/Button;
+.field public A:Landroid/widget/TextView;
 
-.field public B:Landroid/widget/TextView;
+.field public B:Landroid/widget/Button;
 
-.field public C:Landroid/view/View;
+.field public C:Landroid/widget/TextView;
 
-.field public y:Landroid/widget/LinearLayout;
+.field public D:Landroid/view/View;
 
-.field public z:Landroid/widget/TextView;
+.field public z:Landroid/widget/LinearLayout;
 
 
 # direct methods
@@ -42,7 +42,7 @@
 
     check-cast v0, Landroid/widget/LinearLayout;
 
-    iput-object v0, p0, Lma/c$a;->y:Landroid/widget/LinearLayout;
+    iput-object v0, p0, Lma/c$a;->z:Landroid/widget/LinearLayout;
 
     .line 3
     sget v0, Lcom/helpshift/R$id;->contact_us_hint_text:I
@@ -53,7 +53,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lma/c$a;->z:Landroid/widget/TextView;
+    iput-object v0, p0, Lma/c$a;->A:Landroid/widget/TextView;
 
     .line 4
     sget v0, Lcom/helpshift/R$id;->report_issue:I
@@ -64,7 +64,7 @@
 
     check-cast v0, Landroid/widget/Button;
 
-    iput-object v0, p0, Lma/c$a;->A:Landroid/widget/Button;
+    iput-object v0, p0, Lma/c$a;->B:Landroid/widget/Button;
 
     .line 5
     sget v0, Lcom/helpshift/R$id;->no_faqs_view:I
@@ -75,7 +75,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lma/c$a;->B:Landroid/widget/TextView;
+    iput-object v0, p0, Lma/c$a;->C:Landroid/widget/TextView;
 
     .line 6
     sget v0, Lcom/helpshift/R$id;->search_list_footer_divider:I
@@ -84,7 +84,7 @@
 
     move-result-object p1
 
-    iput-object p1, p0, Lma/c$a;->C:Landroid/view/View;
+    iput-object p1, p0, Lma/c$a;->D:Landroid/view/View;
 
     return-void
 .end method

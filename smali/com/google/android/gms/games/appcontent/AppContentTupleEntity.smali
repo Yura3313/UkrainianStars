@@ -25,9 +25,9 @@
 
 
 # instance fields
-.field public final f:Ljava/lang/String;
-
 .field public final g:Ljava/lang/String;
+
+.field public final h:Ljava/lang/String;
 
 
 # direct methods
@@ -50,10 +50,10 @@
     invoke-direct {p0}, Lcom/google/android/gms/games/internal/zze;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lcom/google/android/gms/games/appcontent/AppContentTupleEntity;->f:Ljava/lang/String;
+    iput-object p1, p0, Lcom/google/android/gms/games/appcontent/AppContentTupleEntity;->g:Ljava/lang/String;
 
     .line 3
-    iput-object p2, p0, Lcom/google/android/gms/games/appcontent/AppContentTupleEntity;->g:Ljava/lang/String;
+    iput-object p2, p0, Lcom/google/android/gms/games/appcontent/AppContentTupleEntity;->h:Ljava/lang/String;
 
     return-void
 .end method
@@ -84,7 +84,7 @@
     move-result-object v1
 
     .line 4
-    iget-object v2, p0, Lcom/google/android/gms/games/appcontent/AppContentTupleEntity;->f:Ljava/lang/String;
+    iget-object v2, p0, Lcom/google/android/gms/games/appcontent/AppContentTupleEntity;->g:Ljava/lang/String;
 
     .line 5
     invoke-static {v1, v2}, Ld2/f;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
@@ -99,7 +99,7 @@
     move-result-object p1
 
     .line 7
-    iget-object v1, p0, Lcom/google/android/gms/games/appcontent/AppContentTupleEntity;->g:Ljava/lang/String;
+    iget-object v1, p0, Lcom/google/android/gms/games/appcontent/AppContentTupleEntity;->h:Ljava/lang/String;
 
     .line 8
     invoke-static {p1, v1}, Ld2/f;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
@@ -119,7 +119,7 @@
 .method public final getName()Ljava/lang/String;
     .locals 1
 
-    iget-object v0, p0, Lcom/google/android/gms/games/appcontent/AppContentTupleEntity;->f:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/android/gms/games/appcontent/AppContentTupleEntity;->g:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -127,7 +127,7 @@
 .method public final getValue()Ljava/lang/String;
     .locals 1
 
-    iget-object v0, p0, Lcom/google/android/gms/games/appcontent/AppContentTupleEntity;->g:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/android/gms/games/appcontent/AppContentTupleEntity;->h:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -140,7 +140,7 @@
     new-array v0, v0, [Ljava/lang/Object;
 
     .line 1
-    iget-object v1, p0, Lcom/google/android/gms/games/appcontent/AppContentTupleEntity;->f:Ljava/lang/String;
+    iget-object v1, p0, Lcom/google/android/gms/games/appcontent/AppContentTupleEntity;->g:Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -149,7 +149,7 @@
     const/4 v1, 0x1
 
     .line 2
-    iget-object v2, p0, Lcom/google/android/gms/games/appcontent/AppContentTupleEntity;->g:Ljava/lang/String;
+    iget-object v2, p0, Lcom/google/android/gms/games/appcontent/AppContentTupleEntity;->h:Ljava/lang/String;
 
     aput-object v2, v0, v1
 
@@ -170,7 +170,7 @@
     invoke-direct {v0, p0}, Ld2/f$a;-><init>(Ljava/lang/Object;)V
 
     .line 2
-    iget-object v1, p0, Lcom/google/android/gms/games/appcontent/AppContentTupleEntity;->f:Ljava/lang/String;
+    iget-object v1, p0, Lcom/google/android/gms/games/appcontent/AppContentTupleEntity;->g:Ljava/lang/String;
 
     const-string v2, "Name"
 
@@ -178,7 +178,7 @@
     invoke-virtual {v0, v2, v1}, Ld2/f$a;->a(Ljava/lang/String;Ljava/lang/Object;)Ld2/f$a;
 
     .line 4
-    iget-object v1, p0, Lcom/google/android/gms/games/appcontent/AppContentTupleEntity;->g:Ljava/lang/String;
+    iget-object v1, p0, Lcom/google/android/gms/games/appcontent/AppContentTupleEntity;->h:Ljava/lang/String;
 
     const-string v2, "Value"
 
@@ -204,7 +204,7 @@
     move-result p2
 
     .line 2
-    iget-object v0, p0, Lcom/google/android/gms/games/appcontent/AppContentTupleEntity;->f:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/android/gms/games/appcontent/AppContentTupleEntity;->g:Ljava/lang/String;
 
     const/4 v1, 0x1
 
@@ -214,7 +214,7 @@
     invoke-static {p1, v1, v0, v2}, Le2/b;->m(Landroid/os/Parcel;ILjava/lang/String;Z)V
 
     .line 4
-    iget-object v0, p0, Lcom/google/android/gms/games/appcontent/AppContentTupleEntity;->g:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/android/gms/games/appcontent/AppContentTupleEntity;->h:Ljava/lang/String;
 
     const/4 v1, 0x2
 

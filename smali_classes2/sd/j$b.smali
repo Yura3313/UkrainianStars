@@ -1,5 +1,5 @@
 .class public final Lsd/j$b;
-.super Lse/h;
+.super Lse/i;
 .source "GamesFragment.kt"
 
 # interfaces
@@ -18,28 +18,28 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/l<",
-        "Lbe/l0;",
-        "Lie/h;",
+        "Lbe/n0;",
+        "Lie/i;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic f:Lsd/j;
+.field public final synthetic g:Lsd/j;
 
 
 # direct methods
 .method public constructor <init>(Lsd/j;)V
     .locals 0
 
-    iput-object p1, p0, Lsd/j$b;->f:Lsd/j;
+    iput-object p1, p0, Lsd/j$b;->g:Lsd/j;
 
     const/4 p1, 0x1
 
-    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -50,13 +50,13 @@
     .locals 2
 
     .line 1
-    check-cast p1, Lbe/l0;
+    check-cast p1, Lbe/n0;
 
     .line 2
-    iget-object v0, p0, Lsd/j$b;->f:Lsd/j;
+    iget-object v0, p0, Lsd/j$b;->g:Lsd/j;
 
     .line 3
-    iput-object p1, v0, Lsd/j;->c0:Lbe/l0;
+    iput-object p1, v0, Lsd/j;->d0:Lbe/n0;
 
     .line 4
     sget p1, Lcom/supercell/id/R$id;->gamesList:I
@@ -95,11 +95,11 @@
 
     if-eqz v0, :cond_2
 
-    invoke-virtual {v0}, Lae/c2;->m()V
+    invoke-virtual {v0}, Lae/b2;->m()V
 
     .line 5
     :cond_2
-    sget-object p1, Lie/h;->a:Lie/h;
+    sget-object p1, Lie/i;->a:Lie/i;
 
     return-object p1
 .end method

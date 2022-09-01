@@ -12,11 +12,11 @@
 
 
 # static fields
-.field public static final synthetic g:I
+.field public static final synthetic h:I
 
 
 # instance fields
-.field public f:Z
+.field public g:Z
 
 
 # direct methods

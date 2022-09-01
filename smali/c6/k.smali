@@ -7,33 +7,33 @@
 
 
 # instance fields
-.field public f:I
+.field public g:I
 
-.field public g:J
+.field public h:J
 
-.field public h:Z
+.field public i:Z
 
-.field public i:Ljava/lang/String;
-
-.field public j:Z
+.field public j:Ljava/lang/String;
 
 .field public k:Z
 
 .field public l:Z
 
-.field public m:I
+.field public m:Z
 
-.field public n:Z
+.field public n:I
 
-.field public o:Ljava/lang/String;
+.field public o:Z
 
-.field public p:Z
+.field public p:Ljava/lang/String;
 
-.field public q:I
+.field public q:Z
 
-.field public r:Z
+.field public r:I
 
-.field public s:Ljava/lang/String;
+.field public s:Z
+
+.field public t:Ljava/lang/String;
 
 
 # direct methods
@@ -46,36 +46,36 @@
     const/4 v0, 0x0
 
     .line 2
-    iput v0, p0, Lc6/k;->f:I
+    iput v0, p0, Lc6/k;->g:I
 
     const-wide/16 v1, 0x0
 
     .line 3
-    iput-wide v1, p0, Lc6/k;->g:J
+    iput-wide v1, p0, Lc6/k;->h:J
 
     const-string v1, ""
 
     .line 4
-    iput-object v1, p0, Lc6/k;->i:Ljava/lang/String;
+    iput-object v1, p0, Lc6/k;->j:Ljava/lang/String;
 
     .line 5
-    iput-boolean v0, p0, Lc6/k;->k:Z
+    iput-boolean v0, p0, Lc6/k;->l:Z
 
     const/4 v0, 0x1
 
     .line 6
-    iput v0, p0, Lc6/k;->m:I
+    iput v0, p0, Lc6/k;->n:I
 
     .line 7
-    iput-object v1, p0, Lc6/k;->o:Ljava/lang/String;
+    iput-object v1, p0, Lc6/k;->p:Ljava/lang/String;
 
     .line 8
-    iput-object v1, p0, Lc6/k;->s:Ljava/lang/String;
+    iput-object v1, p0, Lc6/k;->t:Ljava/lang/String;
 
     const/4 v0, 0x5
 
     .line 9
-    iput v0, p0, Lc6/k;->q:I
+    iput v0, p0, Lc6/k;->r:I
 
     return-void
 .end method
@@ -107,23 +107,23 @@
 
     .line 2
     :cond_1
-    iget v0, p0, Lc6/k;->f:I
+    iget v0, p0, Lc6/k;->g:I
 
-    iget v3, p1, Lc6/k;->f:I
+    iget v3, p1, Lc6/k;->g:I
 
     if-ne v0, v3, :cond_2
 
-    iget-wide v3, p0, Lc6/k;->g:J
+    iget-wide v3, p0, Lc6/k;->h:J
 
-    iget-wide v5, p1, Lc6/k;->g:J
+    iget-wide v5, p1, Lc6/k;->h:J
 
     cmp-long v0, v3, v5
 
     if-nez v0, :cond_2
 
-    iget-object v0, p0, Lc6/k;->i:Ljava/lang/String;
+    iget-object v0, p0, Lc6/k;->j:Ljava/lang/String;
 
-    iget-object v3, p1, Lc6/k;->i:Ljava/lang/String;
+    iget-object v3, p1, Lc6/k;->j:Ljava/lang/String;
 
     .line 3
     invoke-virtual {v0, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -132,21 +132,21 @@
 
     if-eqz v0, :cond_2
 
-    iget-boolean v0, p0, Lc6/k;->k:Z
+    iget-boolean v0, p0, Lc6/k;->l:Z
 
-    iget-boolean v3, p1, Lc6/k;->k:Z
-
-    if-ne v0, v3, :cond_2
-
-    iget v0, p0, Lc6/k;->m:I
-
-    iget v3, p1, Lc6/k;->m:I
+    iget-boolean v3, p1, Lc6/k;->l:Z
 
     if-ne v0, v3, :cond_2
 
-    iget-object v0, p0, Lc6/k;->o:Ljava/lang/String;
+    iget v0, p0, Lc6/k;->n:I
 
-    iget-object v3, p1, Lc6/k;->o:Ljava/lang/String;
+    iget v3, p1, Lc6/k;->n:I
+
+    if-ne v0, v3, :cond_2
+
+    iget-object v0, p0, Lc6/k;->p:Ljava/lang/String;
+
+    iget-object v3, p1, Lc6/k;->p:Ljava/lang/String;
 
     .line 4
     invoke-virtual {v0, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -155,15 +155,15 @@
 
     if-eqz v0, :cond_2
 
-    iget v0, p0, Lc6/k;->q:I
+    iget v0, p0, Lc6/k;->r:I
 
-    iget v3, p1, Lc6/k;->q:I
+    iget v3, p1, Lc6/k;->r:I
 
     if-ne v0, v3, :cond_2
 
-    iget-object v0, p0, Lc6/k;->s:Ljava/lang/String;
+    iget-object v0, p0, Lc6/k;->t:Ljava/lang/String;
 
-    iget-object v3, p1, Lc6/k;->s:Ljava/lang/String;
+    iget-object v3, p1, Lc6/k;->t:Ljava/lang/String;
 
     .line 5
     invoke-virtual {v0, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -173,9 +173,9 @@
     if-eqz v0, :cond_2
 
     .line 6
-    iget-boolean v0, p0, Lc6/k;->r:Z
+    iget-boolean v0, p0, Lc6/k;->s:Z
 
-    iget-boolean p1, p1, Lc6/k;->r:Z
+    iget-boolean p1, p1, Lc6/k;->s:Z
 
     if-ne v0, p1, :cond_2
 
@@ -204,14 +204,14 @@
     .locals 4
 
     .line 1
-    iget v0, p0, Lc6/k;->f:I
+    iget v0, p0, Lc6/k;->g:I
 
     add-int/lit16 v0, v0, 0x87d
 
     mul-int/lit8 v0, v0, 0x35
 
     .line 2
-    iget-wide v1, p0, Lc6/k;->g:J
+    iget-wide v1, p0, Lc6/k;->h:J
 
     .line 3
     invoke-static {v1, v2}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
@@ -227,7 +227,7 @@
     mul-int/lit8 v1, v1, 0x35
 
     .line 4
-    iget-object v0, p0, Lc6/k;->i:Ljava/lang/String;
+    iget-object v0, p0, Lc6/k;->j:Ljava/lang/String;
 
     .line 5
     invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
@@ -239,7 +239,7 @@
     mul-int/lit8 v0, v0, 0x35
 
     .line 6
-    iget-boolean v1, p0, Lc6/k;->k:Z
+    iget-boolean v1, p0, Lc6/k;->l:Z
 
     const/16 v2, 0x4d5
 
@@ -260,14 +260,14 @@
     mul-int/lit8 v0, v0, 0x35
 
     .line 7
-    iget v1, p0, Lc6/k;->m:I
+    iget v1, p0, Lc6/k;->n:I
 
     add-int/2addr v0, v1
 
     mul-int/lit8 v0, v0, 0x35
 
     .line 8
-    iget-object v1, p0, Lc6/k;->o:Ljava/lang/String;
+    iget-object v1, p0, Lc6/k;->p:Ljava/lang/String;
 
     .line 9
     invoke-virtual {v1}, Ljava/lang/String;->hashCode()I
@@ -279,7 +279,7 @@
     mul-int/lit8 v1, v1, 0x35
 
     .line 10
-    iget v0, p0, Lc6/k;->q:I
+    iget v0, p0, Lc6/k;->r:I
 
     .line 11
     invoke-static {v0}, Lp/g;->b(I)I
@@ -291,7 +291,7 @@
     mul-int/lit8 v0, v0, 0x35
 
     .line 12
-    iget-object v1, p0, Lc6/k;->s:Ljava/lang/String;
+    iget-object v1, p0, Lc6/k;->t:Ljava/lang/String;
 
     .line 13
     invoke-virtual {v1}, Ljava/lang/String;->hashCode()I
@@ -303,7 +303,7 @@
     mul-int/lit8 v1, v1, 0x35
 
     .line 14
-    iget-boolean v0, p0, Lc6/k;->r:Z
+    iget-boolean v0, p0, Lc6/k;->s:Z
 
     if-eqz v0, :cond_1
 
@@ -326,7 +326,7 @@
     move-result-object v0
 
     .line 2
-    iget v1, p0, Lc6/k;->f:I
+    iget v1, p0, Lc6/k;->g:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -335,17 +335,17 @@
     .line 3
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-wide v1, p0, Lc6/k;->g:J
+    iget-wide v1, p0, Lc6/k;->h:J
 
     invoke-virtual {v0, v1, v2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
 
     .line 4
-    iget-boolean v1, p0, Lc6/k;->j:Z
+    iget-boolean v1, p0, Lc6/k;->k:Z
 
     if-eqz v1, :cond_0
 
     .line 5
-    iget-boolean v1, p0, Lc6/k;->k:Z
+    iget-boolean v1, p0, Lc6/k;->l:Z
 
     if-eqz v1, :cond_0
 
@@ -356,7 +356,7 @@
 
     .line 7
     :cond_0
-    iget-boolean v1, p0, Lc6/k;->l:Z
+    iget-boolean v1, p0, Lc6/k;->m:Z
 
     if-eqz v1, :cond_1
 
@@ -365,13 +365,13 @@
     .line 8
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget v1, p0, Lc6/k;->m:I
+    iget v1, p0, Lc6/k;->n:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
     .line 9
     :cond_1
-    iget-boolean v1, p0, Lc6/k;->h:Z
+    iget-boolean v1, p0, Lc6/k;->i:Z
 
     if-eqz v1, :cond_2
 
@@ -380,13 +380,13 @@
     .line 10
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lc6/k;->i:Ljava/lang/String;
+    iget-object v1, p0, Lc6/k;->j:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 11
     :cond_2
-    iget-boolean v1, p0, Lc6/k;->p:Z
+    iget-boolean v1, p0, Lc6/k;->q:Z
 
     if-eqz v1, :cond_3
 
@@ -395,7 +395,7 @@
     .line 12
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget v1, p0, Lc6/k;->q:I
+    iget v1, p0, Lc6/k;->r:I
 
     invoke-static {v1}, Lc6/j;->b(I)Ljava/lang/String;
 
@@ -405,7 +405,7 @@
 
     .line 13
     :cond_3
-    iget-boolean v1, p0, Lc6/k;->r:Z
+    iget-boolean v1, p0, Lc6/k;->s:Z
 
     if-eqz v1, :cond_4
 
@@ -414,7 +414,7 @@
     .line 14
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lc6/k;->s:Ljava/lang/String;
+    iget-object v1, p0, Lc6/k;->t:Ljava/lang/String;
 
     .line 15
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;

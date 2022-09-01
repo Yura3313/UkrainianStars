@@ -7,18 +7,18 @@
 
 
 # instance fields
-.field public final synthetic f:Lcom/android/billingclient/api/e;
+.field public final synthetic g:Lcom/android/billingclient/api/e;
 
-.field public final synthetic g:Lcom/android/billingclient/api/r;
+.field public final synthetic h:Lcom/android/billingclient/api/r;
 
 
 # direct methods
 .method public constructor <init>(Lcom/android/billingclient/api/r;Lcom/android/billingclient/api/e;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/android/billingclient/api/o;->g:Lcom/android/billingclient/api/r;
+    iput-object p1, p0, Lcom/android/billingclient/api/o;->h:Lcom/android/billingclient/api/r;
 
-    iput-object p2, p0, Lcom/android/billingclient/api/o;->f:Lcom/android/billingclient/api/e;
+    iput-object p2, p0, Lcom/android/billingclient/api/o;->g:Lcom/android/billingclient/api/e;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,7 +30,7 @@
 .method public final run()V
     .locals 3
 
-    iget-object v0, p0, Lcom/android/billingclient/api/o;->g:Lcom/android/billingclient/api/r;
+    iget-object v0, p0, Lcom/android/billingclient/api/o;->h:Lcom/android/billingclient/api/r;
 
     .line 1
     iget-object v0, v0, Lcom/android/billingclient/api/r;->a:Ljava/lang/Object;
@@ -39,7 +39,7 @@
     monitor-enter v0
 
     :try_start_0
-    iget-object v1, p0, Lcom/android/billingclient/api/o;->g:Lcom/android/billingclient/api/r;
+    iget-object v1, p0, Lcom/android/billingclient/api/o;->h:Lcom/android/billingclient/api/r;
 
     .line 3
     iget-object v1, v1, Lcom/android/billingclient/api/r;->b:Lcom/android/billingclient/api/c;
@@ -47,7 +47,7 @@
     if-eqz v1, :cond_0
 
     .line 4
-    iget-object v2, p0, Lcom/android/billingclient/api/o;->f:Lcom/android/billingclient/api/e;
+    iget-object v2, p0, Lcom/android/billingclient/api/o;->g:Lcom/android/billingclient/api/e;
 
     .line 5
     check-cast v1, Lcom/supercell/titan/k;

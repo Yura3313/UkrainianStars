@@ -6,176 +6,66 @@
 # instance fields
 .field public final a:I
 
-.field public final b:[J
+.field public final b:I
 
-.field public final c:[I
+.field public final c:J
 
-.field public final d:I
+.field public final d:J
 
-.field public final e:[J
+.field public final e:J
 
-.field public final f:[I
+.field public final f:Lcom/google/android/gms/internal/ads/zzho;
+
+.field public final g:I
+
+.field public final h:[Lk3/hz0;
+
+.field public final i:[J
+
+.field public final j:[J
+
+.field public final k:I
 
 
 # direct methods
-.method public constructor <init>([J[II[J[I)V
-    .locals 4
+.method public constructor <init>(IIJJJLcom/google/android/gms/internal/ads/zzho;I[Lk3/hz0;I[J[J)V
+    .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    array-length v0, p2
-
-    array-length v1, p4
-
-    const/4 v2, 0x0
-
-    const/4 v3, 0x1
-
-    if-ne v0, v1, :cond_0
-
-    const/4 v0, 0x1
-
-    goto :goto_0
-
-    :cond_0
-    const/4 v0, 0x0
-
-    :goto_0
-    invoke-static {v0}, Lk3/j6;->a(Z)V
-
-    .line 3
-    array-length v0, p1
-
-    array-length v1, p4
-
-    if-ne v0, v1, :cond_1
-
-    const/4 v0, 0x1
-
-    goto :goto_1
-
-    :cond_1
-    const/4 v0, 0x0
-
-    :goto_1
-    invoke-static {v0}, Lk3/j6;->a(Z)V
-
-    .line 4
-    array-length v0, p5
-
-    array-length v1, p4
-
-    if-ne v0, v1, :cond_2
-
-    const/4 v2, 0x1
-
-    :cond_2
-    invoke-static {v2}, Lk3/j6;->a(Z)V
-
-    .line 5
-    iput-object p1, p0, Lk3/ez0;->b:[J
-
-    .line 6
-    iput-object p2, p0, Lk3/ez0;->c:[I
-
-    .line 7
-    iput p3, p0, Lk3/ez0;->d:I
-
-    .line 8
-    iput-object p4, p0, Lk3/ez0;->e:[J
-
-    .line 9
-    iput-object p5, p0, Lk3/ez0;->f:[I
-
-    .line 10
-    array-length p1, p1
-
     iput p1, p0, Lk3/ez0;->a:I
 
-    return-void
-.end method
-
-
-# virtual methods
-.method public final a(J)I
-    .locals 2
-
-    .line 1
-    iget-object v0, p0, Lk3/ez0;->e:[J
-
-    const/4 v1, 0x0
-
-    invoke-static {v0, p1, p2, v1}, Lk3/v11;->a([JJZ)I
-
-    move-result p1
-
-    :goto_0
-    if-ltz p1, :cond_1
-
-    .line 2
-    iget-object p2, p0, Lk3/ez0;->f:[I
-
-    aget p2, p2, p1
-
-    and-int/lit8 p2, p2, 0x1
-
-    if-eqz p2, :cond_0
-
-    return p1
-
-    :cond_0
-    add-int/lit8 p1, p1, -0x1
-
-    goto :goto_0
-
-    :cond_1
-    const/4 p1, -0x1
-
-    return p1
-.end method
-
-.method public final b(J)I
-    .locals 3
-
-    .line 1
-    iget-object v0, p0, Lk3/ez0;->e:[J
-
-    const/4 v1, 0x1
-
-    const/4 v2, 0x0
-
-    invoke-static {v0, p1, p2, v1, v2}, Lk3/v11;->e([JJZZ)I
-
-    move-result p1
-
-    .line 2
-    :goto_0
-    iget-object p2, p0, Lk3/ez0;->e:[J
-
-    array-length p2, p2
-
-    if-ge p1, p2, :cond_1
-
     .line 3
-    iget-object p2, p0, Lk3/ez0;->f:[I
+    iput p2, p0, Lk3/ez0;->b:I
 
-    aget p2, p2, p1
+    .line 4
+    iput-wide p3, p0, Lk3/ez0;->c:J
 
-    and-int/2addr p2, v1
+    .line 5
+    iput-wide p5, p0, Lk3/ez0;->d:J
 
-    if-eqz p2, :cond_0
+    .line 6
+    iput-wide p7, p0, Lk3/ez0;->e:J
 
-    return p1
+    .line 7
+    iput-object p9, p0, Lk3/ez0;->f:Lcom/google/android/gms/internal/ads/zzho;
 
-    :cond_0
-    add-int/lit8 p1, p1, 0x1
+    .line 8
+    iput p10, p0, Lk3/ez0;->g:I
 
-    goto :goto_0
+    .line 9
+    iput-object p11, p0, Lk3/ez0;->h:[Lk3/hz0;
 
-    :cond_1
-    const/4 p1, -0x1
+    .line 10
+    iput p12, p0, Lk3/ez0;->k:I
 
-    return p1
+    .line 11
+    iput-object p13, p0, Lk3/ez0;->i:[J
+
+    .line 12
+    iput-object p14, p0, Lk3/ez0;->j:[J
+
+    return-void
 .end method

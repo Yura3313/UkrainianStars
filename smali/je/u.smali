@@ -20,13 +20,13 @@
 
 
 # instance fields
-.field public final f:I
-
-.field public g:I
+.field public final g:I
 
 .field public h:I
 
-.field public final i:[Ljava/lang/Object;
+.field public i:I
+
+.field public final j:[Ljava/lang/Object;
 
 
 # direct methods
@@ -36,7 +36,7 @@
     .line 1
     invoke-direct {p0}, Lje/c;-><init>()V
 
-    iput-object p1, p0, Lje/u;->i:[Ljava/lang/Object;
+    iput-object p1, p0, Lje/u;->j:[Ljava/lang/Object;
 
     const/4 v0, 0x0
 
@@ -65,10 +65,10 @@
     .line 3
     array-length p1, p1
 
-    iput p1, p0, Lje/u;->f:I
+    iput p1, p0, Lje/u;->g:I
 
     .line 4
-    iput p2, p0, Lje/u;->h:I
+    iput p2, p0, Lje/u;->i:I
 
     return-void
 
@@ -78,7 +78,7 @@
     const-string v1, " cannot be larger than the buffer size: "
 
     .line 5
-    invoke-static {v0, p2, v1}, Lcom/supercell/titan/a;->a(Ljava/lang/String;ILjava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v0, p2, v1}, La2/i;->b(Ljava/lang/String;ILjava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object p2
 
@@ -126,7 +126,7 @@
 .method public final b()I
     .locals 1
 
-    iget v0, p0, Lje/u;->h:I
+    iget v0, p0, Lje/u;->i:I
 
     return v0
 .end method
@@ -151,7 +151,7 @@
     if-eqz v2, :cond_5
 
     .line 1
-    iget v2, p0, Lje/u;->h:I
+    iget v2, p0, Lje/u;->i:I
 
     if-gt p1, v2, :cond_1
 
@@ -166,12 +166,12 @@
     if-lez p1, :cond_3
 
     .line 2
-    iget v0, p0, Lje/u;->g:I
+    iget v0, p0, Lje/u;->h:I
 
     add-int v2, v0, p1
 
     .line 3
-    iget v3, p0, Lje/u;->f:I
+    iget v3, p0, Lje/u;->g:I
 
     .line 4
     rem-int/2addr v2, v3
@@ -179,34 +179,34 @@
     if-le v0, v2, :cond_2
 
     .line 5
-    iget-object v4, p0, Lje/u;->i:[Ljava/lang/Object;
+    iget-object v4, p0, Lje/u;->j:[Ljava/lang/Object;
 
-    invoke-static {v4, v0, v3}, Lje/e;->f([Ljava/lang/Object;II)V
+    invoke-static {v4, v0, v3}, Lje/e;->i([Ljava/lang/Object;II)V
 
     .line 6
-    iget-object v0, p0, Lje/u;->i:[Ljava/lang/Object;
+    iget-object v0, p0, Lje/u;->j:[Ljava/lang/Object;
 
-    invoke-static {v0, v1, v2}, Lje/e;->f([Ljava/lang/Object;II)V
+    invoke-static {v0, v1, v2}, Lje/e;->i([Ljava/lang/Object;II)V
 
     goto :goto_2
 
     .line 7
     :cond_2
-    iget-object v1, p0, Lje/u;->i:[Ljava/lang/Object;
+    iget-object v1, p0, Lje/u;->j:[Ljava/lang/Object;
 
-    invoke-static {v1, v0, v2}, Lje/e;->f([Ljava/lang/Object;II)V
+    invoke-static {v1, v0, v2}, Lje/e;->i([Ljava/lang/Object;II)V
 
     .line 8
     :goto_2
-    iput v2, p0, Lje/u;->g:I
+    iput v2, p0, Lje/u;->h:I
 
     .line 9
-    iget v0, p0, Lje/u;->h:I
+    iget v0, p0, Lje/u;->i:I
 
     sub-int/2addr v0, p1
 
     .line 10
-    iput v0, p0, Lje/u;->h:I
+    iput v0, p0, Lje/u;->i:I
 
     :cond_3
     return-void
@@ -217,12 +217,12 @@
     const-string v1, ", size = "
 
     .line 11
-    invoke-static {v0, p1, v1}, Lcom/supercell/titan/a;->a(Ljava/lang/String;ILjava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v0, p1, v1}, La2/i;->b(Ljava/lang/String;ILjava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object p1
 
     .line 12
-    iget v0, p0, Lje/u;->h:I
+    iget v0, p0, Lje/u;->i:I
 
     .line 13
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
@@ -279,14 +279,14 @@
     if-ge p1, v0, :cond_0
 
     .line 2
-    iget-object v0, p0, Lje/u;->i:[Ljava/lang/Object;
+    iget-object v0, p0, Lje/u;->j:[Ljava/lang/Object;
 
-    iget v1, p0, Lje/u;->g:I
+    iget v1, p0, Lje/u;->h:I
 
     add-int/2addr v1, p1
 
     .line 3
-    iget p1, p0, Lje/u;->f:I
+    iget p1, p0, Lje/u;->g:I
 
     .line 4
     rem-int/2addr v1, p1
@@ -371,7 +371,7 @@
 
     const-string v0, "array"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 3
     array-length v0, p1
@@ -394,7 +394,7 @@
 
     const-string v0, "java.util.Arrays.copyOf(this, newSize)"
 
-    invoke-static {p1, v0}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 6
     :cond_0
@@ -403,7 +403,7 @@
     move-result v0
 
     .line 7
-    iget v1, p0, Lje/u;->g:I
+    iget v1, p0, Lje/u;->h:I
 
     const/4 v2, 0x0
 
@@ -413,12 +413,12 @@
     if-ge v3, v0, :cond_1
 
     .line 8
-    iget v4, p0, Lje/u;->f:I
+    iget v4, p0, Lje/u;->g:I
 
     if-ge v1, v4, :cond_1
 
     .line 9
-    iget-object v4, p0, Lje/u;->i:[Ljava/lang/Object;
+    iget-object v4, p0, Lje/u;->j:[Ljava/lang/Object;
 
     aget-object v4, v4, v1
 
@@ -435,7 +435,7 @@
     if-ge v3, v0, :cond_2
 
     .line 10
-    iget-object v1, p0, Lje/u;->i:[Ljava/lang/Object;
+    iget-object v1, p0, Lje/u;->j:[Ljava/lang/Object;
 
     aget-object v1, v1, v2
 

@@ -4,18 +4,18 @@
 
 
 # instance fields
-.field public final f:Lk3/q8;
+.field public final g:Lk3/r8;
 
 
 # direct methods
-.method public constructor <init>(Lk3/q8;I)V
+.method public constructor <init>(Lk3/r8;I)V
     .locals 1
 
     .line 1
     invoke-direct {p0}, Ljava/io/ByteArrayOutputStream;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lk3/dj;->f:Lk3/q8;
+    iput-object p1, p0, Lk3/dj;->g:Lk3/r8;
 
     const/16 v0, 0x100
 
@@ -24,7 +24,7 @@
 
     move-result p2
 
-    invoke-virtual {p1, p2}, Lk3/q8;->b(I)[B
+    invoke-virtual {p1, p2}, Lk3/r8;->b(I)[B
 
     move-result-object p1
 
@@ -53,13 +53,13 @@
 
     .line 2
     :cond_0
-    iget-object v1, p0, Lk3/dj;->f:Lk3/q8;
+    iget-object v1, p0, Lk3/dj;->g:Lk3/r8;
 
     add-int/2addr v0, p1
 
     shl-int/lit8 p1, v0, 0x1
 
-    invoke-virtual {v1, p1}, Lk3/q8;->b(I)[B
+    invoke-virtual {v1, p1}, Lk3/r8;->b(I)[B
 
     move-result-object p1
 
@@ -73,11 +73,11 @@
     invoke-static {v0, v2, p1, v2, v1}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     .line 4
-    iget-object v0, p0, Lk3/dj;->f:Lk3/q8;
+    iget-object v0, p0, Lk3/dj;->g:Lk3/r8;
 
     iget-object v1, p0, Ljava/io/ByteArrayOutputStream;->buf:[B
 
-    invoke-virtual {v0, v1}, Lk3/q8;->a([B)V
+    invoke-virtual {v0, v1}, Lk3/r8;->a([B)V
 
     .line 5
     iput-object p1, p0, Ljava/io/ByteArrayOutputStream;->buf:[B
@@ -94,11 +94,11 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lk3/dj;->f:Lk3/q8;
+    iget-object v0, p0, Lk3/dj;->g:Lk3/r8;
 
     iget-object v1, p0, Ljava/io/ByteArrayOutputStream;->buf:[B
 
-    invoke-virtual {v0, v1}, Lk3/q8;->a([B)V
+    invoke-virtual {v0, v1}, Lk3/r8;->a([B)V
 
     const/4 v0, 0x0
 
@@ -114,11 +114,11 @@
 .method public final finalize()V
     .locals 2
 
-    iget-object v0, p0, Lk3/dj;->f:Lk3/q8;
+    iget-object v0, p0, Lk3/dj;->g:Lk3/r8;
 
     iget-object v1, p0, Ljava/io/ByteArrayOutputStream;->buf:[B
 
-    invoke-virtual {v0, v1}, Lk3/q8;->a([B)V
+    invoke-virtual {v0, v1}, Lk3/r8;->a([B)V
 
     return-void
 .end method

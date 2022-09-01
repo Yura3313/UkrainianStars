@@ -20,7 +20,7 @@
 
 .field public final d:I
 
-.field public final e:Lcom/google/android/gms/ads/p;
+.field public final e:Lcom/google/android/gms/ads/q;
 
 
 # direct methods
@@ -55,10 +55,10 @@
     iput v0, p0, Lf1/b;->d:I
 
     .line 10
-    iget-object p1, p1, Lf1/b$a;->d:Lcom/google/android/gms/ads/p;
+    iget-object p1, p1, Lf1/b$a;->d:Lcom/google/android/gms/ads/q;
 
     .line 11
-    iput-object p1, p0, Lf1/b;->e:Lcom/google/android/gms/ads/p;
+    iput-object p1, p0, Lf1/b;->e:Lcom/google/android/gms/ads/q;
 
     return-void
 .end method

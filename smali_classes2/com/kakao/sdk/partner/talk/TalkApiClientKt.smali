@@ -23,18 +23,18 @@
             "Lcom/kakao/sdk/partner/talk/model/Chats;",
             "-",
             "Ljava/lang/Throwable;",
-            "Lie/h;",
+            "Lie/i;",
             ">;)V"
         }
     .end annotation
 
     const-string v0, "$this$chatList"
 
-    invoke-static {p0, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "callback"
 
-    invoke-static {p6, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p6, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     invoke-static {p0}, Lcom/kakao/sdk/partner/talk/TalkApiClientKt;->getPartnerApi(Lcom/kakao/sdk/talk/TalkApiClient;)Lcom/kakao/sdk/partner/talk/PartnerTalkApi;
@@ -55,7 +55,7 @@
 
     move-object v2, p1
 
-    invoke-static/range {v2 .. v7}, Lje/j;->E(Ljava/lang/Iterable;Ljava/lang/CharSequence;Ljava/lang/CharSequence;Ljava/lang/CharSequence;Lre/l;I)Ljava/lang/String;
+    invoke-static/range {v2 .. v7}, Lje/j;->z(Ljava/lang/Iterable;Ljava/lang/CharSequence;Ljava/lang/CharSequence;Ljava/lang/CharSequence;Lre/l;I)Ljava/lang/String;
 
     move-result-object p0
 
@@ -107,7 +107,7 @@
             "Lcom/kakao/sdk/partner/talk/model/Chats;",
             "-",
             "Ljava/lang/Throwable;",
-            "Lie/h;",
+            "Lie/i;",
             ">;)V"
         }
     .end annotation
@@ -152,7 +152,7 @@
             "Lcom/kakao/sdk/partner/talk/model/Chats;",
             "-",
             "Ljava/lang/Throwable;",
-            "Lie/h;",
+            "Lie/i;",
             ">;)V"
         }
     .end annotation
@@ -196,7 +196,7 @@
             "Lcom/kakao/sdk/partner/talk/model/Chats;",
             "-",
             "Ljava/lang/Throwable;",
-            "Lie/h;",
+            "Lie/i;",
             ">;)V"
         }
     .end annotation
@@ -239,7 +239,7 @@
             "Lcom/kakao/sdk/partner/talk/model/Chats;",
             "-",
             "Ljava/lang/Throwable;",
-            "Lie/h;",
+            "Lie/i;",
             ">;)V"
         }
     .end annotation
@@ -278,7 +278,7 @@
             "Lcom/kakao/sdk/partner/talk/model/Chats;",
             "-",
             "Ljava/lang/Throwable;",
-            "Lie/h;",
+            "Lie/i;",
             ">;)V"
         }
     .end annotation
@@ -400,7 +400,7 @@
             "Lcom/kakao/sdk/partner/talk/model/ChatMembers;",
             "-",
             "Ljava/lang/Throwable;",
-            "Lie/h;",
+            "Lie/i;",
             ">;)V"
         }
     .end annotation
@@ -411,11 +411,11 @@
 
     move-object v2, p0
 
-    invoke-static {p0, v1}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v1}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v1, "callback"
 
-    invoke-static {v0, v1}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     invoke-static {p0}, Lcom/kakao/sdk/partner/talk/TalkApiClientKt;->getPartnerApi(Lcom/kakao/sdk/talk/TalkApiClient;)Lcom/kakao/sdk/partner/talk/PartnerTalkApi;
@@ -467,7 +467,7 @@
             "Lcom/kakao/sdk/partner/talk/model/ChatMembers;",
             "-",
             "Ljava/lang/Throwable;",
-            "Lie/h;",
+            "Lie/i;",
             ">;)V"
         }
     .end annotation
@@ -515,7 +515,7 @@
             "Lcom/kakao/sdk/partner/talk/model/ChatMembers;",
             "-",
             "Ljava/lang/Throwable;",
-            "Lie/h;",
+            "Lie/i;",
             ">;)V"
         }
     .end annotation
@@ -562,7 +562,7 @@
             "Lcom/kakao/sdk/partner/talk/model/ChatMembers;",
             "-",
             "Ljava/lang/Throwable;",
-            "Lie/h;",
+            "Lie/i;",
             ">;)V"
         }
     .end annotation
@@ -608,7 +608,7 @@
             "Lcom/kakao/sdk/partner/talk/model/ChatMembers;",
             "-",
             "Ljava/lang/Throwable;",
-            "Lie/h;",
+            "Lie/i;",
             ">;)V"
         }
     .end annotation
@@ -653,7 +653,7 @@
             "Lcom/kakao/sdk/partner/talk/model/ChatMembers;",
             "-",
             "Ljava/lang/Throwable;",
-            "Lie/h;",
+            "Lie/i;",
             ">;)V"
         }
     .end annotation
@@ -697,7 +697,7 @@
             "Lcom/kakao/sdk/partner/talk/model/ChatMembers;",
             "-",
             "Ljava/lang/Throwable;",
-            "Lie/h;",
+            "Lie/i;",
             ">;)V"
         }
     .end annotation
@@ -842,7 +842,7 @@
             "Lcom/kakao/sdk/partner/talk/model/PartnerFriend;",
             ">;-",
             "Ljava/lang/Throwable;",
-            "Lie/h;",
+            "Lie/i;",
             ">;)V"
         }
     .end annotation
@@ -853,11 +853,11 @@
 
     move-object v2, p0
 
-    invoke-static {p0, v1}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v1}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v1, "callback"
 
-    invoke-static {v0, v1}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     invoke-static {p0}, Lcom/kakao/sdk/partner/talk/TalkApiClientKt;->getPartnerApi(Lcom/kakao/sdk/talk/TalkApiClient;)Lcom/kakao/sdk/partner/talk/PartnerTalkApi;
@@ -878,7 +878,7 @@
 
     move-object/from16 v3, p7
 
-    invoke-static/range {v3 .. v8}, Lje/j;->E(Ljava/lang/Iterable;Ljava/lang/CharSequence;Ljava/lang/CharSequence;Ljava/lang/CharSequence;Lre/l;I)Ljava/lang/String;
+    invoke-static/range {v3 .. v8}, Lje/j;->z(Ljava/lang/Iterable;Ljava/lang/CharSequence;Ljava/lang/CharSequence;Ljava/lang/CharSequence;Lre/l;I)Ljava/lang/String;
 
     move-result-object v1
 
@@ -934,7 +934,7 @@
             "Lcom/kakao/sdk/partner/talk/model/PartnerFriend;",
             ">;-",
             "Ljava/lang/Throwable;",
-            "Lie/h;",
+            "Lie/i;",
             ">;)V"
         }
     .end annotation
@@ -983,7 +983,7 @@
             "Lcom/kakao/sdk/partner/talk/model/PartnerFriend;",
             ">;-",
             "Ljava/lang/Throwable;",
-            "Lie/h;",
+            "Lie/i;",
             ">;)V"
         }
     .end annotation
@@ -1031,7 +1031,7 @@
             "Lcom/kakao/sdk/partner/talk/model/PartnerFriend;",
             ">;-",
             "Ljava/lang/Throwable;",
-            "Lie/h;",
+            "Lie/i;",
             ">;)V"
         }
     .end annotation
@@ -1078,7 +1078,7 @@
             "Lcom/kakao/sdk/partner/talk/model/PartnerFriend;",
             ">;-",
             "Ljava/lang/Throwable;",
-            "Lie/h;",
+            "Lie/i;",
             ">;)V"
         }
     .end annotation
@@ -1124,7 +1124,7 @@
             "Lcom/kakao/sdk/partner/talk/model/PartnerFriend;",
             ">;-",
             "Ljava/lang/Throwable;",
-            "Lie/h;",
+            "Lie/i;",
             ">;)V"
         }
     .end annotation
@@ -1169,7 +1169,7 @@
             "Lcom/kakao/sdk/partner/talk/model/PartnerFriend;",
             ">;-",
             "Ljava/lang/Throwable;",
-            "Lie/h;",
+            "Lie/i;",
             ">;)V"
         }
     .end annotation
@@ -1213,7 +1213,7 @@
             "Lcom/kakao/sdk/partner/talk/model/PartnerFriend;",
             ">;-",
             "Ljava/lang/Throwable;",
-            "Lie/h;",
+            "Lie/i;",
             ">;)V"
         }
     .end annotation
@@ -1348,23 +1348,23 @@
 
     const-string v0, "$this$partnerApi"
 
-    invoke-static {p0, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     sget-object p0, Lcom/kakao/sdk/network/ApiFactory;->INSTANCE:Lcom/kakao/sdk/network/ApiFactory;
 
-    invoke-static {p0}, Lcom/kakao/sdk/auth/network/ApiFactoryKt;->getKapiWithOAuth(Lcom/kakao/sdk/network/ApiFactory;)Lef/d0;
+    invoke-static {p0}, Lcom/kakao/sdk/auth/network/ApiFactoryKt;->getKapiWithOAuth(Lcom/kakao/sdk/network/ApiFactory;)Lef/c0;
 
     move-result-object p0
 
     const-class v0, Lcom/kakao/sdk/partner/talk/PartnerTalkApi;
 
-    invoke-virtual {p0, v0}, Lef/d0;->b(Ljava/lang/Class;)Ljava/lang/Object;
+    invoke-virtual {p0, v0}, Lef/c0;->b(Ljava/lang/Class;)Ljava/lang/Object;
 
     move-result-object p0
 
     const-string v0, "ApiFactory.kapiWithOAuth\u2026rtnerTalkApi::class.java)"
 
-    invoke-static {p0, v0}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     check-cast p0, Lcom/kakao/sdk/partner/talk/PartnerTalkApi;
 
@@ -1389,22 +1389,22 @@
             "Lcom/kakao/sdk/partner/talk/model/PartnerMessageSendResult;",
             "-",
             "Ljava/lang/Throwable;",
-            "Lie/h;",
+            "Lie/i;",
             ">;)V"
         }
     .end annotation
 
     const-string v0, "$this$sendCustomMessageForPartner"
 
-    invoke-static {p0, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "receiverUuids"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "callback"
 
-    invoke-static {p5, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p5, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     invoke-static {p0}, Lcom/kakao/sdk/partner/talk/TalkApiClientKt;->getPartnerApi(Lcom/kakao/sdk/talk/TalkApiClient;)Lcom/kakao/sdk/partner/talk/PartnerTalkApi;
@@ -1451,7 +1451,7 @@
             "Lcom/kakao/sdk/partner/talk/model/PartnerMessageSendResult;",
             "-",
             "Ljava/lang/Throwable;",
-            "Lie/h;",
+            "Lie/i;",
             ">;)V"
         }
     .end annotation
@@ -1518,22 +1518,22 @@
             "Lcom/kakao/sdk/partner/talk/model/PartnerMessageSendResult;",
             "-",
             "Ljava/lang/Throwable;",
-            "Lie/h;",
+            "Lie/i;",
             ">;)V"
         }
     .end annotation
 
     const-string v0, "$this$sendCustomMessageToChats"
 
-    invoke-static {p0, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "receiverChatIds"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "callback"
 
-    invoke-static {p5, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p5, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     invoke-static {p0}, Lcom/kakao/sdk/partner/talk/TalkApiClientKt;->getPartnerApi(Lcom/kakao/sdk/talk/TalkApiClient;)Lcom/kakao/sdk/partner/talk/PartnerTalkApi;
@@ -1580,7 +1580,7 @@
             "Lcom/kakao/sdk/partner/talk/model/PartnerMessageSendResult;",
             "-",
             "Ljava/lang/Throwable;",
-            "Lie/h;",
+            "Lie/i;",
             ">;)V"
         }
     .end annotation
@@ -1644,26 +1644,26 @@
             "Lcom/kakao/sdk/partner/talk/model/PartnerMessageSendResult;",
             "-",
             "Ljava/lang/Throwable;",
-            "Lie/h;",
+            "Lie/i;",
             ">;)V"
         }
     .end annotation
 
     const-string v0, "$this$sendDefaultMessageForPartner"
 
-    invoke-static {p0, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "receiverUuids"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "template"
 
-    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "callback"
 
-    invoke-static {p3, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p3, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     invoke-static {p0}, Lcom/kakao/sdk/partner/talk/TalkApiClientKt;->getPartnerApi(Lcom/kakao/sdk/talk/TalkApiClient;)Lcom/kakao/sdk/partner/talk/PartnerTalkApi;
@@ -1707,26 +1707,26 @@
             "Lcom/kakao/sdk/partner/talk/model/PartnerMessageSendResult;",
             "-",
             "Ljava/lang/Throwable;",
-            "Lie/h;",
+            "Lie/i;",
             ">;)V"
         }
     .end annotation
 
     const-string v0, "$this$sendDefaultMessageToChats"
 
-    invoke-static {p0, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "receiverChatIds"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "template"
 
-    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "callback"
 
-    invoke-static {p3, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p3, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     invoke-static {p0}, Lcom/kakao/sdk/partner/talk/TalkApiClientKt;->getPartnerApi(Lcom/kakao/sdk/talk/TalkApiClient;)Lcom/kakao/sdk/partner/talk/PartnerTalkApi;
@@ -1775,26 +1775,26 @@
             "Lcom/kakao/sdk/partner/talk/model/PartnerMessageSendResult;",
             "-",
             "Ljava/lang/Throwable;",
-            "Lie/h;",
+            "Lie/i;",
             ">;)V"
         }
     .end annotation
 
     const-string v0, "$this$sendScrapMessageForPartner"
 
-    invoke-static {p0, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "receiverUuids"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "requestUrl"
 
-    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "callback"
 
-    invoke-static {p5, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p5, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     invoke-static {p0}, Lcom/kakao/sdk/partner/talk/TalkApiClientKt;->getPartnerApi(Lcom/kakao/sdk/talk/TalkApiClient;)Lcom/kakao/sdk/partner/talk/PartnerTalkApi;
@@ -1845,7 +1845,7 @@
             "Lcom/kakao/sdk/partner/talk/model/PartnerMessageSendResult;",
             "-",
             "Ljava/lang/Throwable;",
-            "Lie/h;",
+            "Lie/i;",
             ">;)V"
         }
     .end annotation
@@ -1886,7 +1886,7 @@
             "Lcom/kakao/sdk/partner/talk/model/PartnerMessageSendResult;",
             "-",
             "Ljava/lang/Throwable;",
-            "Lie/h;",
+            "Lie/i;",
             ">;)V"
         }
     .end annotation
@@ -1974,26 +1974,26 @@
             "Lcom/kakao/sdk/partner/talk/model/PartnerMessageSendResult;",
             "-",
             "Ljava/lang/Throwable;",
-            "Lie/h;",
+            "Lie/i;",
             ">;)V"
         }
     .end annotation
 
     const-string v0, "$this$sendScrapMessageToChats"
 
-    invoke-static {p0, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "receiverChatIds"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "requestUrl"
 
-    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "callback"
 
-    invoke-static {p5, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p5, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     invoke-static {p0}, Lcom/kakao/sdk/partner/talk/TalkApiClientKt;->getPartnerApi(Lcom/kakao/sdk/talk/TalkApiClient;)Lcom/kakao/sdk/partner/talk/PartnerTalkApi;
@@ -2044,7 +2044,7 @@
             "Lcom/kakao/sdk/partner/talk/model/PartnerMessageSendResult;",
             "-",
             "Ljava/lang/Throwable;",
-            "Lie/h;",
+            "Lie/i;",
             ">;)V"
         }
     .end annotation
@@ -2085,7 +2085,7 @@
             "Lcom/kakao/sdk/partner/talk/model/PartnerMessageSendResult;",
             "-",
             "Ljava/lang/Throwable;",
-            "Lie/h;",
+            "Lie/i;",
             ">;)V"
         }
     .end annotation

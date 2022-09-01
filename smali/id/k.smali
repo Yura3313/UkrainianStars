@@ -1,5 +1,5 @@
 .class public final Lid/k;
-.super Lse/h;
+.super Lse/i;
 .source "FriendRequestReceivedNotificationView.kt"
 
 # interfaces
@@ -9,29 +9,29 @@
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/p<",
         "Lid/o;",
-        "Lvc/t;",
-        "Lie/h;",
+        "Lvc/s;",
+        "Lie/i;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic f:Lze/o;
+.field public final synthetic g:Lze/o;
 
 
 # direct methods
 .method public constructor <init>(Lze/o;)V
     .locals 0
 
-    iput-object p1, p0, Lid/k;->f:Lze/o;
+    iput-object p1, p0, Lid/k;->g:Lze/o;
 
     const/4 p1, 0x2
 
-    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -44,19 +44,19 @@
     .line 1
     check-cast p1, Lid/o;
 
-    check-cast p2, Lvc/t;
+    check-cast p2, Lvc/s;
 
     const-string v0, "$receiver"
 
     .line 2
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "it"
 
-    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 3
-    iget-object v0, p0, Lid/k;->f:Lze/o;
+    iget-object v0, p0, Lid/k;->g:Lze/o;
 
     sget-object v1, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
 
@@ -81,7 +81,7 @@
 
     .line 7
     :cond_0
-    sget-object p1, Lie/h;->a:Lie/h;
+    sget-object p1, Lie/i;->a:Lie/i;
 
     return-object p1
 .end method

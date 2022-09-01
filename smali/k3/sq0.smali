@@ -1,84 +1,83 @@
 .class public final Lk3/sq0;
-.super Lk3/uq0;
+.super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads-lite@@19.3.0"
 
 
-# instance fields
-.field public f:I
+# static fields
+.field public static final a:Ljava/lang/Class;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/lang/Class<",
+            "*>;"
+        }
+    .end annotation
+.end field
 
-.field public final g:I
-
-.field public final synthetic h:Lk3/tq0;
+.field public static final b:Z
 
 
 # direct methods
-.method public constructor <init>(Lk3/tq0;)V
-    .locals 1
+.method public static constructor <clinit>()V
+    .locals 2
+
+    const-string v0, "libcore.io.Memory"
+
+    const/4 v1, 0x0
 
     .line 1
-    iput-object p1, p0, Lk3/sq0;->h:Lk3/tq0;
+    :try_start_0
+    invoke-static {v0}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
 
-    invoke-direct {p0}, Lk3/uq0;-><init>()V
+    move-result-object v0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    const/4 v0, 0x0
+    goto :goto_0
+
+    :catchall_0
+    move-object v0, v1
 
     .line 2
-    iput v0, p0, Lk3/sq0;->f:I
+    :goto_0
+    sput-object v0, Lk3/sq0;->a:Ljava/lang/Class;
+
+    const-string v0, "org.robolectric.Robolectric"
 
     .line 3
-    invoke-virtual {p1}, Lk3/tq0;->size()I
+    :try_start_1
+    invoke-static {v0}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
 
-    move-result p1
+    move-result-object v1
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
-    iput p1, p0, Lk3/sq0;->g:I
+    :catchall_1
+    if-eqz v1, :cond_0
+
+    const/4 v0, 0x1
+
+    goto :goto_1
+
+    :cond_0
+    const/4 v0, 0x0
+
+    .line 4
+    :goto_1
+    sput-boolean v0, Lk3/sq0;->b:Z
 
     return-void
 .end method
 
+.method public static a()Z
+    .locals 1
 
-# virtual methods
-.method public final b()B
-    .locals 2
+    sget-object v0, Lk3/sq0;->a:Ljava/lang/Class;
 
-    .line 1
-    iget v0, p0, Lk3/sq0;->f:I
+    if-eqz v0, :cond_0
 
-    .line 2
-    iget v1, p0, Lk3/sq0;->g:I
+    sget-boolean v0, Lk3/sq0;->b:Z
 
-    if-ge v0, v1, :cond_0
-
-    add-int/lit8 v1, v0, 0x1
-
-    .line 3
-    iput v1, p0, Lk3/sq0;->f:I
-
-    .line 4
-    iget-object v1, p0, Lk3/sq0;->h:Lk3/tq0;
-
-    invoke-virtual {v1, v0}, Lk3/tq0;->r(I)B
-
-    move-result v0
-
-    return v0
-
-    .line 5
-    :cond_0
-    new-instance v0, Ljava/util/NoSuchElementException;
-
-    invoke-direct {v0}, Ljava/util/NoSuchElementException;-><init>()V
-
-    throw v0
-.end method
-
-.method public final hasNext()Z
-    .locals 2
-
-    iget v0, p0, Lk3/sq0;->f:I
-
-    iget v1, p0, Lk3/sq0;->g:I
-
-    if-ge v0, v1, :cond_0
+    if-nez v0, :cond_0
 
     const/4 v0, 0x1
 

@@ -17,11 +17,11 @@
     .end annotation
 .end field
 
-.field public static final g:Landroidx/customview/view/AbsSavedState;
+.field public static final h:Landroidx/customview/view/AbsSavedState;
 
 
 # instance fields
-.field public final f:Landroid/os/Parcelable;
+.field public final g:Landroid/os/Parcelable;
 
 
 # direct methods
@@ -33,7 +33,7 @@
 
     invoke-direct {v0}, Landroidx/customview/view/AbsSavedState$1;-><init>()V
 
-    sput-object v0, Landroidx/customview/view/AbsSavedState;->g:Landroidx/customview/view/AbsSavedState;
+    sput-object v0, Landroidx/customview/view/AbsSavedState;->h:Landroidx/customview/view/AbsSavedState;
 
     .line 2
     new-instance v0, Landroidx/customview/view/AbsSavedState$a;
@@ -54,7 +54,7 @@
     const/4 v0, 0x0
 
     .line 2
-    iput-object v0, p0, Landroidx/customview/view/AbsSavedState;->f:Landroid/os/Parcelable;
+    iput-object v0, p0, Landroidx/customview/view/AbsSavedState;->g:Landroid/os/Parcelable;
 
     return-void
 .end method
@@ -76,10 +76,10 @@
 
     .line 8
     :cond_0
-    sget-object p1, Landroidx/customview/view/AbsSavedState;->g:Landroidx/customview/view/AbsSavedState;
+    sget-object p1, Landroidx/customview/view/AbsSavedState;->h:Landroidx/customview/view/AbsSavedState;
 
     :goto_0
-    iput-object p1, p0, Landroidx/customview/view/AbsSavedState;->f:Landroid/os/Parcelable;
+    iput-object p1, p0, Landroidx/customview/view/AbsSavedState;->g:Landroid/os/Parcelable;
 
     return-void
 .end method
@@ -93,7 +93,7 @@
     if-eqz p1, :cond_1
 
     .line 4
-    sget-object v0, Landroidx/customview/view/AbsSavedState;->g:Landroidx/customview/view/AbsSavedState;
+    sget-object v0, Landroidx/customview/view/AbsSavedState;->h:Landroidx/customview/view/AbsSavedState;
 
     if-eq p1, v0, :cond_0
 
@@ -103,7 +103,7 @@
     const/4 p1, 0x0
 
     :goto_0
-    iput-object p1, p0, Landroidx/customview/view/AbsSavedState;->f:Landroid/os/Parcelable;
+    iput-object p1, p0, Landroidx/customview/view/AbsSavedState;->g:Landroid/os/Parcelable;
 
     return-void
 
@@ -123,7 +123,7 @@
 .method public final a()Landroid/os/Parcelable;
     .locals 1
 
-    iget-object v0, p0, Landroidx/customview/view/AbsSavedState;->f:Landroid/os/Parcelable;
+    iget-object v0, p0, Landroidx/customview/view/AbsSavedState;->g:Landroid/os/Parcelable;
 
     return-object v0
 .end method
@@ -139,7 +139,7 @@
 .method public writeToParcel(Landroid/os/Parcel;I)V
     .locals 1
 
-    iget-object v0, p0, Landroidx/customview/view/AbsSavedState;->f:Landroid/os/Parcelable;
+    iget-object v0, p0, Landroidx/customview/view/AbsSavedState;->g:Landroid/os/Parcelable;
 
     invoke-virtual {p1, v0, p2}, Landroid/os/Parcel;->writeParcelable(Landroid/os/Parcelable;I)V
 

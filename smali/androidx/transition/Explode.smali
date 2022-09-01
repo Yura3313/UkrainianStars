@@ -4,13 +4,13 @@
 
 
 # static fields
-.field public static final G:Landroid/view/animation/DecelerateInterpolator;
+.field public static final H:Landroid/view/animation/DecelerateInterpolator;
 
-.field public static final H:Landroid/view/animation/AccelerateInterpolator;
+.field public static final I:Landroid/view/animation/AccelerateInterpolator;
 
 
 # instance fields
-.field public F:[I
+.field public G:[I
 
 
 # direct methods
@@ -22,14 +22,14 @@
 
     invoke-direct {v0}, Landroid/view/animation/DecelerateInterpolator;-><init>()V
 
-    sput-object v0, Landroidx/transition/Explode;->G:Landroid/view/animation/DecelerateInterpolator;
+    sput-object v0, Landroidx/transition/Explode;->H:Landroid/view/animation/DecelerateInterpolator;
 
     .line 2
     new-instance v0, Landroid/view/animation/AccelerateInterpolator;
 
     invoke-direct {v0}, Landroid/view/animation/AccelerateInterpolator;-><init>()V
 
-    sput-object v0, Landroidx/transition/Explode;->H:Landroid/view/animation/AccelerateInterpolator;
+    sput-object v0, Landroidx/transition/Explode;->I:Landroid/view/animation/AccelerateInterpolator;
 
     return-void
 .end method
@@ -45,7 +45,7 @@
     new-array v0, v0, [I
 
     .line 2
-    iput-object v0, p0, Landroidx/transition/Explode;->F:[I
+    iput-object v0, p0, Landroidx/transition/Explode;->G:[I
 
     .line 3
     new-instance v0, Lv0/b;
@@ -53,7 +53,7 @@
     invoke-direct {v0}, Lv0/b;-><init>()V
 
     .line 4
-    iput-object v0, p0, Landroidx/transition/Transition;->x:Landroidx/fragment/app/p;
+    iput-object v0, p0, Landroidx/transition/Transition;->y:Landroidx/fragment/app/p;
 
     return-void
 .end method
@@ -69,7 +69,7 @@
     new-array p1, p1, [I
 
     .line 6
-    iput-object p1, p0, Landroidx/transition/Explode;->F:[I
+    iput-object p1, p0, Landroidx/transition/Explode;->G:[I
 
     .line 7
     new-instance p1, Lv0/b;
@@ -77,7 +77,7 @@
     invoke-direct {p1}, Lv0/b;-><init>()V
 
     .line 8
-    iput-object p1, p0, Landroidx/transition/Transition;->x:Landroidx/fragment/app/p;
+    iput-object p1, p0, Landroidx/transition/Transition;->y:Landroidx/fragment/app/p;
 
     return-void
 .end method
@@ -89,12 +89,12 @@
     iget-object v0, p1, Lv0/s;->b:Landroid/view/View;
 
     .line 2
-    iget-object v1, p0, Landroidx/transition/Explode;->F:[I
+    iget-object v1, p0, Landroidx/transition/Explode;->G:[I
 
     invoke-virtual {v0, v1}, Landroid/view/View;->getLocationOnScreen([I)V
 
     .line 3
-    iget-object v1, p0, Landroidx/transition/Explode;->F:[I
+    iget-object v1, p0, Landroidx/transition/Explode;->G:[I
 
     const/4 v2, 0x0
 
@@ -167,12 +167,12 @@
     move-result v7
 
     .line 4
-    iget-object v0, p0, Landroidx/transition/Explode;->F:[I
+    iget-object v0, p0, Landroidx/transition/Explode;->G:[I
 
     invoke-virtual {p0, p1, p3, v0}, Landroidx/transition/Explode;->Q(Landroid/view/View;Landroid/graphics/Rect;[I)V
 
     .line 5
-    iget-object p1, p0, Landroidx/transition/Explode;->F:[I
+    iget-object p1, p0, Landroidx/transition/Explode;->G:[I
 
     const/4 v0, 0x0
 
@@ -196,7 +196,7 @@
 
     iget v3, p3, Landroid/graphics/Rect;->top:I
 
-    sget-object v8, Landroidx/transition/Explode;->G:Landroid/view/animation/DecelerateInterpolator;
+    sget-object v8, Landroidx/transition/Explode;->H:Landroid/view/animation/DecelerateInterpolator;
 
     move-object v0, p2
 
@@ -303,12 +303,12 @@
 
     .line 10
     :goto_0
-    iget-object v1, p0, Landroidx/transition/Explode;->F:[I
+    iget-object v1, p0, Landroidx/transition/Explode;->G:[I
 
     invoke-virtual {p0, p1, v0, v1}, Landroidx/transition/Explode;->Q(Landroid/view/View;Landroid/graphics/Rect;[I)V
 
     .line 11
-    iget-object p1, p0, Landroidx/transition/Explode;->F:[I
+    iget-object p1, p0, Landroidx/transition/Explode;->G:[I
 
     aget v0, p1, v7
 
@@ -324,7 +324,7 @@
     add-float v8, v9, p1
 
     .line 13
-    sget-object v9, Landroidx/transition/Explode;->H:Landroid/view/animation/AccelerateInterpolator;
+    sget-object v9, Landroidx/transition/Explode;->I:Landroid/view/animation/AccelerateInterpolator;
 
     move-object v1, p2
 
@@ -343,12 +343,12 @@
     .locals 12
 
     .line 1
-    iget-object v0, p0, Landroidx/transition/Explode;->F:[I
+    iget-object v0, p0, Landroidx/transition/Explode;->G:[I
 
     invoke-virtual {p1, v0}, Landroid/view/View;->getLocationOnScreen([I)V
 
     .line 2
-    iget-object v0, p0, Landroidx/transition/Explode;->F:[I
+    iget-object v0, p0, Landroidx/transition/Explode;->G:[I
 
     const/4 v1, 0x0
 

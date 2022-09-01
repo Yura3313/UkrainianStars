@@ -16,18 +16,18 @@
 
 
 # instance fields
-.field public final f:I
-
 .field public final g:I
+
+.field public final h:I
 
 
 # direct methods
 .method public static constructor <clinit>()V
     .locals 1
 
-    new-instance v0, Lk3/y51;
+    new-instance v0, Lk3/b61;
 
-    invoke-direct {v0}, Lk3/y51;-><init>()V
+    invoke-direct {v0}, Lk3/b61;-><init>()V
 
     sput-object v0, Lcom/google/android/gms/internal/ads/zzzw;->CREATOR:Landroid/os/Parcelable$Creator;
 
@@ -41,10 +41,10 @@
     invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
 
     .line 2
-    iput p1, p0, Lcom/google/android/gms/internal/ads/zzzw;->f:I
+    iput p1, p0, Lcom/google/android/gms/internal/ads/zzzw;->g:I
 
     .line 3
-    iput p2, p0, Lcom/google/android/gms/internal/ads/zzzw;->g:I
+    iput p2, p0, Lcom/google/android/gms/internal/ads/zzzw;->h:I
 
     return-void
 .end method
@@ -62,7 +62,7 @@
     move-result v5
 
     .line 2
-    iget p2, p0, Lcom/google/android/gms/internal/ads/zzzw;->f:I
+    iget p2, p0, Lcom/google/android/gms/internal/ads/zzzw;->g:I
 
     const/4 v0, 0x1
 
@@ -75,7 +75,7 @@
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 5
-    iget v3, p0, Lcom/google/android/gms/internal/ads/zzzw;->g:I
+    iget v3, p0, Lcom/google/android/gms/internal/ads/zzzw;->h:I
 
     const/4 v1, 0x2
 

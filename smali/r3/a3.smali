@@ -17,7 +17,7 @@
 
 
 # instance fields
-.field public f:Z
+.field public g:Z
 
 
 # direct methods
@@ -32,7 +32,7 @@
     const/4 v1, 0x0
 
     .line 2
-    iput-boolean v1, v0, Lr3/a3;->f:Z
+    iput-boolean v1, v0, Lr3/a3;->g:Z
 
     return-void
 .end method
@@ -46,7 +46,7 @@
     const/4 v0, 0x1
 
     .line 2
-    iput-boolean v0, p0, Lr3/a3;->f:Z
+    iput-boolean v0, p0, Lr3/a3;->g:Z
 
     return-void
 .end method
@@ -67,7 +67,7 @@
     const/4 p1, 0x1
 
     .line 4
-    iput-boolean p1, p0, Lr3/a3;->f:Z
+    iput-boolean p1, p0, Lr3/a3;->g:Z
 
     return-void
 .end method
@@ -152,7 +152,7 @@
     .locals 1
 
     .line 1
-    iget-boolean v0, p0, Lr3/a3;->f:Z
+    iget-boolean v0, p0, Lr3/a3;->g:Z
 
     if-eqz v0, :cond_0
 

@@ -1,5 +1,5 @@
 .class public final synthetic Lrc/b0;
-.super Lse/g;
+.super Lse/h;
 .source "SettingsApiClient.kt"
 
 # interfaces
@@ -9,10 +9,10 @@
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/g;",
+        "Lse/h;",
         "Lre/l<",
         "Lorg/json/JSONObject;",
-        "Lvc/c0;",
+        "Lvc/z;",
         ">;"
     }
 .end annotation
@@ -22,11 +22,11 @@
 .method public constructor <init>()V
     .locals 2
 
-    sget-object v0, Lvc/c0;->c:Lvc/c0$a;
+    sget-object v0, Lvc/z;->c:Lvc/z$a;
 
     const/4 v1, 0x1
 
-    invoke-direct {p0, v1, v0}, Lse/g;-><init>(ILjava/lang/Object;)V
+    invoke-direct {p0, v1, v0}, Lse/h;-><init>(ILjava/lang/Object;)V
 
     return-void
 .end method
@@ -44,9 +44,9 @@
 .method public final getOwner()Lwe/d;
     .locals 1
 
-    const-class v0, Lvc/c0$a;
+    const-class v0, Lvc/z$a;
 
-    invoke-static {v0}, Lse/r;->a(Ljava/lang/Class;)Lwe/c;
+    invoke-static {v0}, Lse/s;->a(Ljava/lang/Class;)Lwe/c;
 
     move-result-object v0
 
@@ -70,14 +70,14 @@
     const-string v0, "p1"
 
     .line 2
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    iget-object v0, p0, Lse/b;->receiver:Ljava/lang/Object;
+    iget-object v0, p0, Lse/c;->receiver:Ljava/lang/Object;
 
-    check-cast v0, Lvc/c0$a;
+    check-cast v0, Lvc/z$a;
 
     .line 3
-    invoke-virtual {v0, p1}, Lvc/c0$a;->a(Lorg/json/JSONObject;)Lvc/c0;
+    invoke-virtual {v0, p1}, Lvc/z$a;->a(Lorg/json/JSONObject;)Lvc/z;
 
     move-result-object p1
 

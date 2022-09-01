@@ -7,9 +7,7 @@
 
 
 # instance fields
-.field public final f:Ljava/lang/Long;
-
-.field public final g:Ljava/lang/String;
+.field public final g:Ljava/lang/Long;
 
 .field public final h:Ljava/lang/String;
 
@@ -23,7 +21,9 @@
 
 .field public final m:Ljava/lang/String;
 
-.field public final n:Z
+.field public final n:Ljava/lang/String;
+
+.field public final o:Z
 
 
 # direct methods
@@ -34,31 +34,31 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lg7/d;->f:Ljava/lang/Long;
+    iput-object p1, p0, Lg7/d;->g:Ljava/lang/Long;
 
     .line 3
-    iput-object p3, p0, Lg7/d;->g:Ljava/lang/String;
+    iput-object p3, p0, Lg7/d;->h:Ljava/lang/String;
 
     .line 4
-    iput-object p2, p0, Lg7/d;->h:Ljava/lang/String;
+    iput-object p2, p0, Lg7/d;->i:Ljava/lang/String;
 
     .line 5
-    iput-object p4, p0, Lg7/d;->i:Ljava/lang/String;
+    iput-object p4, p0, Lg7/d;->j:Ljava/lang/String;
 
     .line 6
-    iput-object p5, p0, Lg7/d;->j:Ljava/lang/String;
+    iput-object p5, p0, Lg7/d;->k:Ljava/lang/String;
 
     .line 7
-    iput-object p6, p0, Lg7/d;->k:Ljava/lang/String;
+    iput-object p6, p0, Lg7/d;->l:Ljava/lang/String;
 
     .line 8
-    iput-object p7, p0, Lg7/d;->l:Ljava/lang/String;
+    iput-object p7, p0, Lg7/d;->m:Ljava/lang/String;
 
     .line 9
-    iput-object p8, p0, Lg7/d;->m:Ljava/lang/String;
+    iput-object p8, p0, Lg7/d;->n:Ljava/lang/String;
 
     .line 10
-    iput-boolean p9, p0, Lg7/d;->n:Z
+    iput-boolean p9, p0, Lg7/d;->o:Z
 
     return-void
 .end method

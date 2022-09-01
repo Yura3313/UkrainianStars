@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field public final synthetic f:Lid/f;
+.field public final synthetic g:Lid/f;
 
 
 # direct methods
 .method public constructor <init>(Lid/f;)V
     .locals 0
 
-    iput-object p1, p0, Lid/f$a;->f:Lid/f;
+    iput-object p1, p0, Lid/f$a;->g:Lid/f;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -38,11 +38,11 @@
     .locals 4
 
     .line 1
-    iget-object v0, p0, Lid/f$a;->f:Lid/f;
+    iget-object v0, p0, Lid/f$a;->g:Lid/f;
 
-    iget-object v0, v0, Lid/f;->f:Lid/e$f;
+    iget-object v0, v0, Lid/f;->g:Lid/e$f;
 
-    iget-object v0, v0, Lid/e$f;->f:Lid/e;
+    iget-object v0, v0, Lid/e$f;->g:Lid/e;
 
     sget v1, Lcom/supercell/id/R$id;->glow_one:I
 
@@ -58,7 +58,7 @@
 
     if-eqz v0, :cond_1
 
-    invoke-static {p1, v2}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v2}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {p1}, Landroid/animation/ValueAnimator;->getAnimatedValue()Ljava/lang/Object;
 
@@ -86,11 +86,11 @@
     .line 2
     :cond_1
     :goto_0
-    iget-object v0, p0, Lid/f$a;->f:Lid/f;
+    iget-object v0, p0, Lid/f$a;->g:Lid/f;
 
-    iget-object v0, v0, Lid/f;->f:Lid/e$f;
+    iget-object v0, v0, Lid/f;->g:Lid/e$f;
 
-    iget-object v0, v0, Lid/e$f;->f:Lid/e;
+    iget-object v0, v0, Lid/e$f;->g:Lid/e;
 
     sget v3, Lcom/supercell/id/R$id;->glow_two:I
 
@@ -102,7 +102,7 @@
 
     if-eqz v0, :cond_3
 
-    invoke-static {p1, v2}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v2}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {p1}, Landroid/animation/ValueAnimator;->getAnimatedValue()Ljava/lang/Object;
 

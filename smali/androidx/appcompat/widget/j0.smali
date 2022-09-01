@@ -353,7 +353,7 @@
     invoke-virtual {v3}, Landroidx/appcompat/widget/Toolbar;->g()V
 
     .line 45
-    iget-object v3, v3, Landroidx/appcompat/widget/Toolbar;->y:Landroidx/appcompat/widget/z;
+    iget-object v3, v3, Landroidx/appcompat/widget/Toolbar;->z:Landroidx/appcompat/widget/z;
 
     invoke-virtual {v3, p2, v2}, Landroidx/appcompat/widget/z;->a(II)V
 
@@ -375,10 +375,10 @@
     move-result-object v3
 
     .line 48
-    iput p2, v2, Landroidx/appcompat/widget/Toolbar;->q:I
+    iput p2, v2, Landroidx/appcompat/widget/Toolbar;->r:I
 
     .line 49
-    iget-object v2, v2, Landroidx/appcompat/widget/Toolbar;->g:Landroidx/appcompat/widget/AppCompatTextView;
+    iget-object v2, v2, Landroidx/appcompat/widget/Toolbar;->h:Landroidx/appcompat/widget/AppCompatTextView;
 
     if-eqz v2, :cond_c
 
@@ -403,10 +403,10 @@
     move-result-object v3
 
     .line 53
-    iput p2, v2, Landroidx/appcompat/widget/Toolbar;->r:I
+    iput p2, v2, Landroidx/appcompat/widget/Toolbar;->s:I
 
     .line 54
-    iget-object v2, v2, Landroidx/appcompat/widget/Toolbar;->h:Landroidx/appcompat/widget/AppCompatTextView;
+    iget-object v2, v2, Landroidx/appcompat/widget/Toolbar;->i:Landroidx/appcompat/widget/AppCompatTextView;
 
     if-eqz v2, :cond_d
 

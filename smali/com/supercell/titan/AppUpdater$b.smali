@@ -70,11 +70,11 @@
     if-ne v0, v3, :cond_3
 
     .line 4
-    invoke-static {}, Lcom/google/android/play/core/appupdate/d;->c()Lcom/google/android/play/core/appupdate/d;
+    invoke-static {}, Lcom/google/android/play/core/appupdate/c;->c()Lcom/google/android/play/core/appupdate/c;
 
     move-result-object v0
 
-    invoke-virtual {p1, v0}, Lcom/google/android/play/core/appupdate/a;->b(Lcom/google/android/play/core/appupdate/d;)Landroid/app/PendingIntent;
+    invoke-virtual {p1, v0}, Lcom/google/android/play/core/appupdate/a;->b(Lcom/google/android/play/core/appupdate/c;)Landroid/app/PendingIntent;
 
     move-result-object v0
 
@@ -157,21 +157,21 @@
     if-eqz v1, :cond_5
 
     .line 9
-    sget-object v0, Lcom/supercell/titan/AppUpdater;->a:Lcom/google/android/play/core/appupdate/f;
+    sget-object v0, Lcom/supercell/titan/AppUpdater;->a:Lcom/google/android/play/core/appupdate/e;
 
     .line 10
     sget-object v1, Lcom/supercell/titan/AppUpdater;->b:Lcom/supercell/titan/AppUpdater$a;
 
     .line 11
-    invoke-virtual {v0, v1}, Lcom/google/android/play/core/appupdate/f;->a(Ly4/b;)V
+    invoke-virtual {v0, v1}, Lcom/google/android/play/core/appupdate/e;->a(Ly4/b;)V
 
     .line 12
-    sget-object v0, Lcom/supercell/titan/AppUpdater;->a:Lcom/google/android/play/core/appupdate/f;
+    sget-object v0, Lcom/supercell/titan/AppUpdater;->a:Lcom/google/android/play/core/appupdate/e;
 
     .line 13
     iget-object v1, p0, Lcom/supercell/titan/AppUpdater$b;->a:Lcom/supercell/titan/GameApp;
 
-    invoke-virtual {v0, p1, v1}, Lcom/google/android/play/core/appupdate/f;->b(Lcom/google/android/play/core/appupdate/a;Landroid/app/Activity;)Z
+    invoke-virtual {v0, p1, v1}, Lcom/google/android/play/core/appupdate/e;->b(Lcom/google/android/play/core/appupdate/a;Landroid/app/Activity;)Z
 
     .line 14
     iget-object v0, p0, Lcom/supercell/titan/AppUpdater$b;->a:Lcom/supercell/titan/GameApp;
@@ -208,7 +208,7 @@
     if-ne v0, v3, :cond_5
 
     .line 16
-    sget-object v0, Lcom/supercell/titan/AppUpdater;->a:Lcom/google/android/play/core/appupdate/f;
+    sget-object v0, Lcom/supercell/titan/AppUpdater;->a:Lcom/google/android/play/core/appupdate/e;
 
     .line 17
     sget-object v3, Lcom/supercell/titan/AppUpdater;->b:Lcom/supercell/titan/AppUpdater$a;
@@ -217,7 +217,7 @@
     monitor-enter v0
 
     :try_start_3
-    iget-object v4, v0, Lcom/google/android/play/core/appupdate/f;->b:Lcom/google/android/play/core/appupdate/e;
+    iget-object v4, v0, Lcom/google/android/play/core/appupdate/e;->b:Lcom/google/android/play/core/appupdate/d;
 
     .line 19
     monitor-enter v4
@@ -239,7 +239,7 @@
     const-string v5, "Unregistered Play Core listener should not be null."
 
     .line 21
-    invoke-static {v3, v5}, Lcom/google/android/play/core/assetpacks/o2;->e(Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-static {v3, v5}, Lod/a;->b(Ljava/lang/Object;Ljava/lang/Object;)V
 
     iget-object v5, v4, Lb5/c;->d:Ljava/util/HashSet;
 
@@ -258,23 +258,23 @@
     monitor-exit v0
 
     .line 23
-    sget-object v0, Lcom/supercell/titan/AppUpdater;->a:Lcom/google/android/play/core/appupdate/f;
+    sget-object v0, Lcom/supercell/titan/AppUpdater;->a:Lcom/google/android/play/core/appupdate/e;
 
     .line 24
-    iget-object v3, v0, Lcom/google/android/play/core/appupdate/f;->a:Lcom/google/android/play/core/appupdate/m;
+    iget-object v3, v0, Lcom/google/android/play/core/appupdate/e;->a:Lcom/google/android/play/core/appupdate/k;
 
-    iget-object v0, v0, Lcom/google/android/play/core/appupdate/f;->c:Landroid/content/Context;
+    iget-object v0, v0, Lcom/google/android/play/core/appupdate/e;->c:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
 
     move-result-object v0
 
     .line 25
-    iget-object v4, v3, Lcom/google/android/play/core/appupdate/m;->a:La5/l;
+    iget-object v4, v3, Lcom/google/android/play/core/appupdate/k;->a:La5/l;
 
     if-eqz v4, :cond_4
 
-    sget-object v4, Lcom/google/android/play/core/appupdate/m;->e:La5/b;
+    sget-object v4, Lcom/google/android/play/core/appupdate/k;->e:La5/b;
 
     new-array v1, v1, [Ljava/lang/Object;
 
@@ -290,11 +290,11 @@
 
     invoke-direct {v1}, Lcom/google/android/play/core/tasks/i;-><init>()V
 
-    iget-object v2, v3, Lcom/google/android/play/core/appupdate/m;->a:La5/l;
+    iget-object v2, v3, Lcom/google/android/play/core/appupdate/k;->a:La5/l;
 
-    new-instance v4, Lcom/google/android/play/core/appupdate/i;
+    new-instance v4, Lcom/google/android/play/core/appupdate/g;
 
-    invoke-direct {v4, v3, v1, v1, v0}, Lcom/google/android/play/core/appupdate/i;-><init>(Lcom/google/android/play/core/appupdate/m;Lcom/google/android/play/core/tasks/i;Lcom/google/android/play/core/tasks/i;Ljava/lang/String;)V
+    invoke-direct {v4, v3, v1, v1, v0}, Lcom/google/android/play/core/appupdate/g;-><init>(Lcom/google/android/play/core/appupdate/k;Lcom/google/android/play/core/tasks/i;Lcom/google/android/play/core/tasks/i;Ljava/lang/String;)V
 
     invoke-virtual {v2, v4}, La5/l;->b(La5/c;)V
 
@@ -303,7 +303,7 @@
     goto :goto_2
 
     :cond_4
-    invoke-static {}, Lcom/google/android/play/core/appupdate/m;->b()Lcom/google/android/play/core/tasks/Task;
+    invoke-static {}, Lcom/google/android/play/core/appupdate/k;->b()Lcom/google/android/play/core/tasks/Task;
 
     goto :goto_2
 
@@ -338,21 +338,21 @@
 
     .line 30
     :try_start_7
-    sget-object v0, Lcom/supercell/titan/AppUpdater;->a:Lcom/google/android/play/core/appupdate/f;
+    sget-object v0, Lcom/supercell/titan/AppUpdater;->a:Lcom/google/android/play/core/appupdate/e;
 
     .line 31
     sget-object v1, Lcom/supercell/titan/AppUpdater;->b:Lcom/supercell/titan/AppUpdater$a;
 
     .line 32
-    invoke-virtual {v0, v1}, Lcom/google/android/play/core/appupdate/f;->a(Ly4/b;)V
+    invoke-virtual {v0, v1}, Lcom/google/android/play/core/appupdate/e;->a(Ly4/b;)V
 
     .line 33
-    sget-object v0, Lcom/supercell/titan/AppUpdater;->a:Lcom/google/android/play/core/appupdate/f;
+    sget-object v0, Lcom/supercell/titan/AppUpdater;->a:Lcom/google/android/play/core/appupdate/e;
 
     .line 34
     iget-object v1, p0, Lcom/supercell/titan/AppUpdater$b;->a:Lcom/supercell/titan/GameApp;
 
-    invoke-virtual {v0, p1, v1}, Lcom/google/android/play/core/appupdate/f;->b(Lcom/google/android/play/core/appupdate/a;Landroid/app/Activity;)Z
+    invoke-virtual {v0, p1, v1}, Lcom/google/android/play/core/appupdate/e;->b(Lcom/google/android/play/core/appupdate/a;Landroid/app/Activity;)Z
     :try_end_7
     .catch Landroid/content/IntentSender$SendIntentException; {:try_start_7 .. :try_end_7} :catch_2
 

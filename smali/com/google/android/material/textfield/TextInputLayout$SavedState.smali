@@ -27,9 +27,9 @@
 
 
 # instance fields
-.field public h:Ljava/lang/CharSequence;
+.field public i:Ljava/lang/CharSequence;
 
-.field public i:Z
+.field public j:Z
 
 
 # direct methods
@@ -60,7 +60,7 @@
 
     check-cast p2, Ljava/lang/CharSequence;
 
-    iput-object p2, p0, Lcom/google/android/material/textfield/TextInputLayout$SavedState;->h:Ljava/lang/CharSequence;
+    iput-object p2, p0, Lcom/google/android/material/textfield/TextInputLayout$SavedState;->i:Ljava/lang/CharSequence;
 
     .line 4
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
@@ -77,7 +77,7 @@
     const/4 p2, 0x0
 
     :goto_0
-    iput-boolean p2, p0, Lcom/google/android/material/textfield/TextInputLayout$SavedState;->i:Z
+    iput-boolean p2, p0, Lcom/google/android/material/textfield/TextInputLayout$SavedState;->j:Z
 
     return-void
 .end method
@@ -118,7 +118,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lcom/google/android/material/textfield/TextInputLayout$SavedState;->h:Ljava/lang/CharSequence;
+    iget-object v1, p0, Lcom/google/android/material/textfield/TextInputLayout$SavedState;->i:Ljava/lang/CharSequence;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -137,17 +137,17 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/customview/view/AbsSavedState;->f:Landroid/os/Parcelable;
+    iget-object v0, p0, Landroidx/customview/view/AbsSavedState;->g:Landroid/os/Parcelable;
 
     invoke-virtual {p1, v0, p2}, Landroid/os/Parcel;->writeParcelable(Landroid/os/Parcelable;I)V
 
     .line 2
-    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout$SavedState;->h:Ljava/lang/CharSequence;
+    iget-object v0, p0, Lcom/google/android/material/textfield/TextInputLayout$SavedState;->i:Ljava/lang/CharSequence;
 
     invoke-static {v0, p1, p2}, Landroid/text/TextUtils;->writeToParcel(Ljava/lang/CharSequence;Landroid/os/Parcel;I)V
 
     .line 3
-    iget-boolean p2, p0, Lcom/google/android/material/textfield/TextInputLayout$SavedState;->i:Z
+    iget-boolean p2, p0, Lcom/google/android/material/textfield/TextInputLayout$SavedState;->j:Z
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
 

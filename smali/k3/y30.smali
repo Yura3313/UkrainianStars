@@ -1,199 +1,121 @@
 .class public final Lk3/y30;
-.super Ljava/lang/Object;
+.super Landroid/database/sqlite/SQLiteOpenHelper;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
-
-# interfaces
-.implements Lk3/zq;
-.implements Lk3/ur;
-
-
-# static fields
-.field public static final g:Ljava/lang/Object;
-
-.field public static h:I
-
-
-# instance fields
-.field public final f:Lcom/google/android/gms/internal/ads/k0;
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 1
+.method public constructor <init>(Landroid/content/Context;)V
+    .locals 3
 
-    new-instance v0, Ljava/lang/Object;
+    const-string v0, "OfflineUpload.db"
 
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+    const/4 v1, 0x0
 
-    sput-object v0, Lk3/y30;->g:Ljava/lang/Object;
+    const/4 v2, 0x1
 
-    return-void
-.end method
-
-.method public constructor <init>(Lcom/google/android/gms/internal/ads/k0;)V
-    .locals 0
-
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 2
-    iput-object p1, p0, Lk3/y30;->f:Lcom/google/android/gms/internal/ads/k0;
+    invoke-direct {p0, p1, v0, v1, v2}, Landroid/database/sqlite/SQLiteOpenHelper;-><init>(Landroid/content/Context;Ljava/lang/String;Landroid/database/sqlite/SQLiteDatabase$CursorFactory;I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final J()V
-    .locals 1
+.method public final onCreate(Landroid/database/sqlite/SQLiteDatabase;)V
+    .locals 7
 
-    const/4 v0, 0x1
-
-    invoke-virtual {p0, v0}, Lk3/y30;->a(Z)V
-
-    return-void
-.end method
-
-.method public final a(Z)V
-    .locals 5
+    const-string v0, "CREATE TABLE offline_signal_contents (timestamp INTEGER PRIMARY_KEY, serialized_proto_data BLOB)"
 
     .line 1
-    sget-object v0, Lk3/q;->e3:Lk3/g;
+    invoke-virtual {p1, v0}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
+
+    const-string v0, "CREATE TABLE offline_signal_statistics (statistic_name TEXT PRIMARY_KEY, value INTEGER)"
 
     .line 2
-    sget-object v1, Lk3/l51;->j:Lk3/l51;
-
-    iget-object v1, v1, Lk3/l51;->f:Lk3/n;
+    invoke-virtual {p1, v0}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
 
     .line 3
-    invoke-virtual {v1, v0}, Lk3/n;->a(Lk3/h;)Ljava/lang/Object;
+    new-instance v0, Landroid/content/ContentValues;
 
-    move-result-object v0
+    invoke-direct {v0}, Landroid/content/ContentValues;-><init>()V
+
+    const-string v1, "statistic_name"
+
+    const-string v2, "failed_requests"
 
     .line 4
-    check-cast v0, Ljava/lang/Boolean;
+    invoke-virtual {v0, v1, v2}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    invoke-virtual {v0}, Ljava/lang/Boolean;->booleanValue()Z
-
-    move-result v0
-
-    if-nez v0, :cond_0
-
-    return-void
+    const/4 v2, 0x0
 
     .line 5
-    :cond_0
-    sget-object v0, Lk3/y30;->g:Ljava/lang/Object;
+    invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
-    monitor-enter v0
+    move-result-object v2
+
+    const-string v3, "value"
+
+    invoke-virtual {v0, v3, v2}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
+
+    const-string v4, "offline_signal_statistics"
+
+    const/4 v5, 0x0
 
     .line 6
-    :try_start_0
-    sget v1, Lk3/y30;->h:I
-
-    sget-object v2, Lk3/q;->f3:Lk3/j;
+    invoke-virtual {p1, v4, v5, v0}, Landroid/database/sqlite/SQLiteDatabase;->insert(Ljava/lang/String;Ljava/lang/String;Landroid/content/ContentValues;)J
 
     .line 7
-    sget-object v3, Lk3/l51;->j:Lk3/l51;
+    new-instance v0, Landroid/content/ContentValues;
 
-    iget-object v3, v3, Lk3/l51;->f:Lk3/n;
+    invoke-direct {v0}, Landroid/content/ContentValues;-><init>()V
+
+    const-string v6, "total_requests"
 
     .line 8
-    invoke-virtual {v3, v2}, Lk3/n;->a(Lk3/h;)Ljava/lang/Object;
-
-    move-result-object v2
+    invoke-virtual {v0, v1, v6}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 9
-    check-cast v2, Ljava/lang/Integer;
-
-    invoke-virtual {v2}, Ljava/lang/Integer;->intValue()I
-
-    move-result v2
-
-    const/4 v3, 0x1
-
-    if-ge v1, v2, :cond_1
-
-    const/4 v1, 0x1
-
-    goto :goto_0
-
-    :cond_1
-    const/4 v1, 0x0
-
-    :goto_0
-    monitor-exit v0
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_1
-
-    if-nez v1, :cond_2
-
-    return-void
+    invoke-virtual {v0, v3, v2}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
 
     .line 10
-    :cond_2
-    iget-object v1, p0, Lk3/y30;->f:Lcom/google/android/gms/internal/ads/k0;
+    invoke-virtual {p1, v4, v5, v0}, Landroid/database/sqlite/SQLiteDatabase;->insert(Ljava/lang/String;Ljava/lang/String;Landroid/content/ContentValues;)J
 
     .line 11
-    iget-object v2, v1, Lcom/google/android/gms/internal/ads/k0;->b:Lk3/nq;
+    new-instance v0, Landroid/content/ContentValues;
+
+    invoke-direct {v0}, Landroid/content/ContentValues;-><init>()V
+
+    const-string v2, "last_successful_request_time"
 
     .line 12
-    invoke-virtual {v2}, Lk3/nq;->a()Lk3/em0;
+    invoke-virtual {v0, v1, v2}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
 
-    move-result-object v2
-
-    new-instance v4, Lcom/google/android/gms/internal/ads/l0;
-
-    invoke-direct {v4, v1, p1}, Lcom/google/android/gms/internal/ads/l0;-><init>(Lcom/google/android/gms/internal/ads/k0;Z)V
-
-    sget-object p1, Lk3/jd;->f:Lk3/nd;
+    const-wide/16 v1, 0x0
 
     .line 13
-    invoke-static {v2, v4, p1}, Lk3/am0;->e(Lk3/em0;Lk3/yl0;Ljava/util/concurrent/Executor;)V
+    invoke-static {v1, v2}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v3, v1}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Long;)V
 
     .line 14
-    monitor-enter v0
-
-    .line 15
-    :try_start_1
-    sget p1, Lk3/y30;->h:I
-
-    add-int/2addr p1, v3
-
-    sput p1, Lk3/y30;->h:I
-
-    .line 16
-    monitor-exit v0
+    invoke-virtual {p1, v4, v5, v0}, Landroid/database/sqlite/SQLiteDatabase;->insert(Ljava/lang/String;Ljava/lang/String;Landroid/content/ContentValues;)J
 
     return-void
-
-    :catchall_0
-    move-exception p1
-
-    monitor-exit v0
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
-    throw p1
-
-    :catchall_1
-    move-exception p1
-
-    .line 17
-    :try_start_2
-    monitor-exit v0
-    :try_end_2
-    .catchall {:try_start_2 .. :try_end_2} :catchall_1
-
-    throw p1
 .end method
 
-.method public final y0(Lcom/google/android/gms/internal/ads/zzuw;)V
+.method public final onUpgrade(Landroid/database/sqlite/SQLiteDatabase;II)V
     .locals 0
 
-    const/4 p1, 0x0
+    const-string p2, "DROP TABLE IF EXISTS offline_signal_contents"
 
-    invoke-virtual {p0, p1}, Lk3/y30;->a(Z)V
+    .line 1
+    invoke-virtual {p1, p2}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
+
+    const-string p2, "DROP TABLE IF EXISTS offline_signal_statistics"
+
+    .line 2
+    invoke-virtual {p1, p2}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
 
     return-void
 .end method

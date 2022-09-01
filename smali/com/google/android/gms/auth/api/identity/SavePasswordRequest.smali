@@ -16,9 +16,9 @@
 
 
 # instance fields
-.field public final f:Lcom/google/android/gms/auth/api/identity/SignInPassword;
+.field public final g:Lcom/google/android/gms/auth/api/identity/SignInPassword;
 
-.field public final g:Ljava/lang/String;
+.field public final h:Ljava/lang/String;
 
 
 # direct methods
@@ -47,10 +47,10 @@
 
     check-cast v0, Lcom/google/android/gms/auth/api/identity/SignInPassword;
 
-    iput-object p1, p0, Lcom/google/android/gms/auth/api/identity/SavePasswordRequest;->f:Lcom/google/android/gms/auth/api/identity/SignInPassword;
+    iput-object p1, p0, Lcom/google/android/gms/auth/api/identity/SavePasswordRequest;->g:Lcom/google/android/gms/auth/api/identity/SignInPassword;
 
     .line 3
-    iput-object p2, p0, Lcom/google/android/gms/auth/api/identity/SavePasswordRequest;->g:Ljava/lang/String;
+    iput-object p2, p0, Lcom/google/android/gms/auth/api/identity/SavePasswordRequest;->h:Ljava/lang/String;
 
     return-void
 .end method
@@ -74,9 +74,9 @@
     check-cast p1, Lcom/google/android/gms/auth/api/identity/SavePasswordRequest;
 
     .line 3
-    iget-object v0, p0, Lcom/google/android/gms/auth/api/identity/SavePasswordRequest;->f:Lcom/google/android/gms/auth/api/identity/SignInPassword;
+    iget-object v0, p0, Lcom/google/android/gms/auth/api/identity/SavePasswordRequest;->g:Lcom/google/android/gms/auth/api/identity/SignInPassword;
 
-    iget-object v2, p1, Lcom/google/android/gms/auth/api/identity/SavePasswordRequest;->f:Lcom/google/android/gms/auth/api/identity/SignInPassword;
+    iget-object v2, p1, Lcom/google/android/gms/auth/api/identity/SavePasswordRequest;->g:Lcom/google/android/gms/auth/api/identity/SignInPassword;
 
     invoke-static {v0, v2}, Ld2/f;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
@@ -84,9 +84,9 @@
 
     if-eqz v0, :cond_1
 
-    iget-object v0, p0, Lcom/google/android/gms/auth/api/identity/SavePasswordRequest;->g:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/android/gms/auth/api/identity/SavePasswordRequest;->h:Ljava/lang/String;
 
-    iget-object p1, p1, Lcom/google/android/gms/auth/api/identity/SavePasswordRequest;->g:Ljava/lang/String;
+    iget-object p1, p1, Lcom/google/android/gms/auth/api/identity/SavePasswordRequest;->h:Ljava/lang/String;
 
     .line 4
     invoke-static {v0, p1}, Ld2/f;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
@@ -111,13 +111,13 @@
     new-array v0, v0, [Ljava/lang/Object;
 
     .line 1
-    iget-object v1, p0, Lcom/google/android/gms/auth/api/identity/SavePasswordRequest;->f:Lcom/google/android/gms/auth/api/identity/SignInPassword;
+    iget-object v1, p0, Lcom/google/android/gms/auth/api/identity/SavePasswordRequest;->g:Lcom/google/android/gms/auth/api/identity/SignInPassword;
 
     const/4 v2, 0x0
 
     aput-object v1, v0, v2
 
-    iget-object v1, p0, Lcom/google/android/gms/auth/api/identity/SavePasswordRequest;->g:Ljava/lang/String;
+    iget-object v1, p0, Lcom/google/android/gms/auth/api/identity/SavePasswordRequest;->h:Ljava/lang/String;
 
     const/4 v2, 0x1
 
@@ -144,7 +144,7 @@
     const/4 v1, 0x1
 
     .line 2
-    iget-object v2, p0, Lcom/google/android/gms/auth/api/identity/SavePasswordRequest;->f:Lcom/google/android/gms/auth/api/identity/SignInPassword;
+    iget-object v2, p0, Lcom/google/android/gms/auth/api/identity/SavePasswordRequest;->g:Lcom/google/android/gms/auth/api/identity/SignInPassword;
 
     const/4 v3, 0x0
 
@@ -154,7 +154,7 @@
     const/4 p2, 0x2
 
     .line 4
-    iget-object v1, p0, Lcom/google/android/gms/auth/api/identity/SavePasswordRequest;->g:Ljava/lang/String;
+    iget-object v1, p0, Lcom/google/android/gms/auth/api/identity/SavePasswordRequest;->h:Ljava/lang/String;
 
     .line 5
     invoke-static {p1, p2, v1, v3}, Le2/b;->m(Landroid/os/Parcel;ILjava/lang/String;Z)V

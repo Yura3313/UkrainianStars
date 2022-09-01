@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field public f:Ljava/lang/StringBuilder;
+.field public g:Ljava/lang/StringBuilder;
 
 
 # direct methods
@@ -21,7 +21,7 @@
 
     invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(I)V
 
-    iput-object v0, p0, Landroidx/fragment/app/i0;->f:Ljava/lang/StringBuilder;
+    iput-object v0, p0, Landroidx/fragment/app/i0;->g:Ljava/lang/StringBuilder;
 
     return-void
 .end method
@@ -32,7 +32,7 @@
     .locals 3
 
     .line 1
-    iget-object v0, p0, Landroidx/fragment/app/i0;->f:Ljava/lang/StringBuilder;
+    iget-object v0, p0, Landroidx/fragment/app/i0;->g:Ljava/lang/StringBuilder;
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->length()I
 
@@ -41,12 +41,12 @@
     if-lez v0, :cond_0
 
     .line 2
-    iget-object v0, p0, Landroidx/fragment/app/i0;->f:Ljava/lang/StringBuilder;
+    iget-object v0, p0, Landroidx/fragment/app/i0;->g:Ljava/lang/StringBuilder;
 
     invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     .line 3
-    iget-object v0, p0, Landroidx/fragment/app/i0;->f:Ljava/lang/StringBuilder;
+    iget-object v0, p0, Landroidx/fragment/app/i0;->g:Ljava/lang/StringBuilder;
 
     const/4 v1, 0x0
 
@@ -100,7 +100,7 @@
 
     .line 3
     :cond_0
-    iget-object v2, p0, Landroidx/fragment/app/i0;->f:Ljava/lang/StringBuilder;
+    iget-object v2, p0, Landroidx/fragment/app/i0;->g:Ljava/lang/StringBuilder;
 
     invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 

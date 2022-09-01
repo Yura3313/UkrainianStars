@@ -18,17 +18,17 @@
 
 
 # static fields
-.field public static final enum g:Lcom/google/protobuf/n1;
-
 .field public static final enum h:Lcom/google/protobuf/n1;
 
 .field public static final enum i:Lcom/google/protobuf/n1;
 
-.field public static final synthetic j:[Lcom/google/protobuf/n1;
+.field public static final enum j:Lcom/google/protobuf/n1;
+
+.field public static final synthetic k:[Lcom/google/protobuf/n1;
 
 
 # instance fields
-.field public final f:I
+.field public final g:I
 
 
 # direct methods
@@ -44,7 +44,7 @@
 
     invoke-direct {v0, v1, v2, v2}, Lcom/google/protobuf/n1;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lcom/google/protobuf/n1;->g:Lcom/google/protobuf/n1;
+    sput-object v0, Lcom/google/protobuf/n1;->h:Lcom/google/protobuf/n1;
 
     .line 2
     new-instance v1, Lcom/google/protobuf/n1;
@@ -55,7 +55,7 @@
 
     invoke-direct {v1, v3, v4, v4}, Lcom/google/protobuf/n1;-><init>(Ljava/lang/String;II)V
 
-    sput-object v1, Lcom/google/protobuf/n1;->h:Lcom/google/protobuf/n1;
+    sput-object v1, Lcom/google/protobuf/n1;->i:Lcom/google/protobuf/n1;
 
     .line 3
     new-instance v3, Lcom/google/protobuf/n1;
@@ -68,7 +68,7 @@
 
     invoke-direct {v3, v5, v6, v7}, Lcom/google/protobuf/n1;-><init>(Ljava/lang/String;II)V
 
-    sput-object v3, Lcom/google/protobuf/n1;->i:Lcom/google/protobuf/n1;
+    sput-object v3, Lcom/google/protobuf/n1;->j:Lcom/google/protobuf/n1;
 
     const/4 v5, 0x3
 
@@ -81,7 +81,7 @@
     aput-object v3, v5, v6
 
     .line 4
-    sput-object v5, Lcom/google/protobuf/n1;->j:[Lcom/google/protobuf/n1;
+    sput-object v5, Lcom/google/protobuf/n1;->k:[Lcom/google/protobuf/n1;
 
     return-void
 .end method
@@ -98,7 +98,7 @@
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 2
-    iput p3, p0, Lcom/google/protobuf/n1;->f:I
+    iput p3, p0, Lcom/google/protobuf/n1;->g:I
 
     return-void
 .end method
@@ -118,13 +118,13 @@
 
     .line 1
     :cond_0
-    sget-object p0, Lcom/google/protobuf/n1;->h:Lcom/google/protobuf/n1;
+    sget-object p0, Lcom/google/protobuf/n1;->i:Lcom/google/protobuf/n1;
 
     return-object p0
 
     .line 2
     :cond_1
-    sget-object p0, Lcom/google/protobuf/n1;->g:Lcom/google/protobuf/n1;
+    sget-object p0, Lcom/google/protobuf/n1;->h:Lcom/google/protobuf/n1;
 
     return-object p0
 .end method
@@ -146,7 +146,7 @@
 .method public static values()[Lcom/google/protobuf/n1;
     .locals 1
 
-    sget-object v0, Lcom/google/protobuf/n1;->j:[Lcom/google/protobuf/n1;
+    sget-object v0, Lcom/google/protobuf/n1;->k:[Lcom/google/protobuf/n1;
 
     invoke-virtual {v0}, [Lcom/google/protobuf/n1;->clone()Ljava/lang/Object;
 
@@ -163,12 +163,12 @@
     .locals 2
 
     .line 1
-    sget-object v0, Lcom/google/protobuf/n1;->i:Lcom/google/protobuf/n1;
+    sget-object v0, Lcom/google/protobuf/n1;->j:Lcom/google/protobuf/n1;
 
     if-eq p0, v0, :cond_0
 
     .line 2
-    iget v0, p0, Lcom/google/protobuf/n1;->f:I
+    iget v0, p0, Lcom/google/protobuf/n1;->g:I
 
     return v0
 

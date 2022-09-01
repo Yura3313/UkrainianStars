@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field public z:Landroid/widget/TextView;
+.field public A:Landroid/widget/TextView;
 
 
 # direct methods
@@ -34,7 +34,7 @@
 
     check-cast p1, Landroid/widget/TextView;
 
-    iput-object p1, p0, Lta/n$b;->z:Landroid/widget/TextView;
+    iput-object p1, p0, Lta/n$b;->A:Landroid/widget/TextView;
 
     return-void
 .end method
@@ -51,7 +51,7 @@
     check-cast p1, Lb9/e;
 
     .line 3
-    iget-object p2, p0, Lta/n$b;->z:Landroid/widget/TextView;
+    iget-object p2, p0, Lta/n$b;->A:Landroid/widget/TextView;
 
     iget-object v0, p1, Lb9/e;->c:Ljava/lang/String;
 
@@ -79,7 +79,7 @@
     move-result-object p1
 
     .line 5
-    iget-object p2, p0, Landroidx/recyclerview/widget/RecyclerView$z;->f:Landroid/view/View;
+    iget-object p2, p0, Landroidx/recyclerview/widget/RecyclerView$z;->g:Landroid/view/View;
 
     invoke-virtual {p2, p1}, Landroid/view/View;->setContentDescription(Ljava/lang/CharSequence;)V
 

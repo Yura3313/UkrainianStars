@@ -19,7 +19,7 @@
 
     const/4 v3, 0x0
 
-    invoke-direct {v0, v1, v2, v3}, Lae/k;-><init>(IILse/e;)V
+    invoke-direct {v0, v1, v2, v3}, Lae/k;-><init>(IILse/f;)V
 
     sput-object v0, Lsd/l;->a:Lae/k;
 
@@ -31,7 +31,7 @@
 
     const-string v0, "$this$comparableName"
 
-    invoke-static {p0, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     sget-object v0, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
@@ -41,7 +41,7 @@
     move-result-object v0
 
     .line 2
-    iget-object v0, v0, Lae/u;->s:Lud/j;
+    iget-object v0, v0, Lae/u;->s:Lud/i;
 
     const-string v1, "game_name_"
 
@@ -51,7 +51,7 @@
     move-result-object v1
 
     .line 4
-    iget-object p0, p0, Lcom/supercell/id/model/IdConnectedSystem;->f:Ljava/lang/String;
+    iget-object p0, p0, Lcom/supercell/id/model/IdConnectedSystem;->g:Ljava/lang/String;
 
     .line 5
     invoke-virtual {v1, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -60,7 +60,7 @@
 
     move-result-object p0
 
-    invoke-virtual {v0, p0}, Lud/j;->g(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v0, p0}, Lud/i;->g(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p0
 

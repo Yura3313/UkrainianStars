@@ -323,7 +323,7 @@
     iget-object v10, v0, Ld7/e;->a:Ll6/b;
 
     .line 5
-    iget v11, v10, Ll6/b;->g:I
+    iget v11, v10, Ll6/b;->h:I
 
     .line 6
     invoke-virtual/range {p0 .. p0}, Ld7/e;->c()[I
@@ -597,7 +597,7 @@
     iget-object v12, v0, Ld7/e;->a:Ll6/b;
 
     .line 29
-    iget v13, v12, Ll6/b;->f:I
+    iget v13, v12, Ll6/b;->g:I
 
     .line 30
     invoke-virtual/range {p0 .. p0}, Ld7/e;->c()[I
@@ -1009,10 +1009,10 @@
     iget-object v11, v0, Ld7/e;->a:Ll6/b;
 
     .line 61
-    iget v12, v11, Ll6/b;->g:I
+    iget v12, v11, Ll6/b;->h:I
 
     .line 62
-    iget v11, v11, Ll6/b;->f:I
+    iget v11, v11, Ll6/b;->g:I
 
     const/4 v13, 0x1
 

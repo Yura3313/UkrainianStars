@@ -1,5 +1,5 @@
 .class public final Lae/u$c;
-.super Lse/h;
+.super Lse/i;
 .source "IdServices.kt"
 
 # interfaces
@@ -18,32 +18,32 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/l<",
-        "Lbe/l0;",
-        "Lie/h;",
+        "Lbe/n0;",
+        "Lie/i;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic f:Lcom/supercell/id/IdConfiguration;
+.field public final synthetic g:Lcom/supercell/id/IdConfiguration;
 
-.field public final synthetic g:Lbe/u;
+.field public final synthetic h:Lbe/u;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/id/IdConfiguration;Lbe/u;)V
     .locals 0
 
-    iput-object p1, p0, Lae/u$c;->f:Lcom/supercell/id/IdConfiguration;
+    iput-object p1, p0, Lae/u$c;->g:Lcom/supercell/id/IdConfiguration;
 
-    iput-object p2, p0, Lae/u$c;->g:Lbe/u;
+    iput-object p2, p0, Lae/u$c;->h:Lbe/u;
 
     const/4 p1, 0x1
 
-    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -54,12 +54,12 @@
     .locals 13
 
     .line 1
-    check-cast p1, Lbe/l0;
+    check-cast p1, Lbe/n0;
 
     if-eqz p1, :cond_4
 
     .line 2
-    iget-object v0, p1, Lbe/l0;->a:Lae/m;
+    iget-object v0, p1, Lbe/n0;->a:Lae/m;
 
     if-eqz v0, :cond_4
 
@@ -68,12 +68,12 @@
 
     move-result-object v0
 
-    check-cast v0, Lvc/z;
+    check-cast v0, Lvc/x;
 
     if-eqz v0, :cond_4
 
     .line 4
-    iget-object v0, v0, Lvc/z;->b:Ljava/util/List;
+    iget-object v0, v0, Lvc/x;->b:Ljava/util/List;
 
     if-eqz v0, :cond_4
 
@@ -101,13 +101,13 @@
 
     move-object v3, v2
 
-    check-cast v3, Lvc/x;
+    check-cast v3, Lvc/v;
 
     .line 7
-    iget-object v3, v3, Lvc/x;->d:Ljava/util/List;
+    iget-object v3, v3, Lvc/v;->d:Ljava/util/List;
 
     .line 8
-    iget-object v4, p0, Lae/u$c;->f:Lcom/supercell/id/IdConfiguration;
+    iget-object v4, p0, Lae/u$c;->g:Lcom/supercell/id/IdConfiguration;
 
     invoke-virtual {v4}, Lcom/supercell/id/IdConfiguration;->getGame()Ljava/lang/String;
 
@@ -148,10 +148,10 @@
     .line 11
     move-object v3, v2
 
-    check-cast v3, Lvc/x;
+    check-cast v3, Lvc/v;
 
     .line 12
-    iget-object v3, v3, Lvc/x;->b:Ljava/lang/String;
+    iget-object v3, v3, Lvc/v;->b:Ljava/lang/String;
 
     .line 13
     invoke-interface {v0, v3}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -236,7 +236,7 @@
 
     .line 21
     :cond_4
-    sget-object v1, Lje/l;->f:Lje/l;
+    sget-object v1, Lje/l;->g:Lje/l;
 
     :cond_5
     const/4 v0, 0x0
@@ -244,7 +244,7 @@
     if-eqz p1, :cond_b
 
     .line 22
-    iget-object v2, p1, Lbe/l0;->a:Lae/m;
+    iget-object v2, p1, Lbe/n0;->a:Lae/m;
 
     if-eqz v2, :cond_b
 
@@ -253,12 +253,12 @@
 
     move-result-object v2
 
-    check-cast v2, Lvc/z;
+    check-cast v2, Lvc/x;
 
     if-eqz v2, :cond_b
 
     .line 24
-    iget-object v2, v2, Lvc/z;->d:Ljava/util/List;
+    iget-object v2, v2, Lvc/x;->d:Ljava/util/List;
 
     if-eqz v2, :cond_b
 
@@ -286,13 +286,13 @@
 
     move-object v5, v4
 
-    check-cast v5, Lvc/x;
+    check-cast v5, Lvc/v;
 
     .line 27
-    iget-object v5, v5, Lvc/x;->d:Ljava/util/List;
+    iget-object v5, v5, Lvc/v;->d:Ljava/util/List;
 
     .line 28
-    iget-object v6, p0, Lae/u$c;->f:Lcom/supercell/id/IdConfiguration;
+    iget-object v6, p0, Lae/u$c;->g:Lcom/supercell/id/IdConfiguration;
 
     invoke-virtual {v6}, Lcom/supercell/id/IdConfiguration;->getGame()Ljava/lang/String;
 
@@ -332,20 +332,20 @@
     move-result-object v4
 
     .line 31
-    check-cast v4, Lvc/x;
+    check-cast v4, Lvc/v;
 
     .line 32
-    iget-object v5, v4, Lvc/x;->e:Lvc/y;
+    iget-object v5, v4, Lvc/v;->e:Lvc/w;
 
     .line 33
-    instance-of v6, v5, Lvc/y$e;
+    instance-of v6, v5, Lvc/w$e;
 
     if-nez v6, :cond_9
 
     move-object v5, v0
 
     :cond_9
-    check-cast v5, Lvc/y$e;
+    check-cast v5, Lvc/w$e;
 
     if-eqz v5, :cond_a
 
@@ -353,19 +353,19 @@
     new-instance v12, Lcom/supercell/id/IdShopDonation;
 
     .line 35
-    iget-object v7, v4, Lvc/x;->a:Ljava/lang/String;
+    iget-object v7, v4, Lvc/v;->a:Ljava/lang/String;
 
     .line 36
-    iget-object v8, v4, Lvc/x;->b:Ljava/lang/String;
+    iget-object v8, v4, Lvc/v;->b:Ljava/lang/String;
 
     .line 37
-    iget-object v9, v5, Lvc/y$e;->b:Ljava/lang/String;
+    iget-object v9, v5, Lvc/w$e;->b:Ljava/lang/String;
 
     .line 38
-    iget-object v10, v5, Lvc/y$e;->c:Ljava/lang/String;
+    iget-object v10, v5, Lvc/w$e;->c:Ljava/lang/String;
 
     .line 39
-    iget-object v11, v5, Lvc/y$e;->d:Lcom/supercell/id/model/ProfileImage;
+    iget-object v11, v5, Lvc/w$e;->d:Lcom/supercell/id/model/ProfileImage;
 
     move-object v6, v12
 
@@ -387,13 +387,13 @@
 
     .line 42
     :cond_b
-    sget-object v2, Lje/l;->f:Lje/l;
+    sget-object v2, Lje/l;->g:Lje/l;
 
     :cond_c
     if-eqz p1, :cond_12
 
     .line 43
-    iget-object v3, p1, Lbe/l0;->a:Lae/m;
+    iget-object v3, p1, Lbe/n0;->a:Lae/m;
 
     if-eqz v3, :cond_12
 
@@ -402,12 +402,12 @@
 
     move-result-object v3
 
-    check-cast v3, Lvc/z;
+    check-cast v3, Lvc/x;
 
     if-eqz v3, :cond_12
 
     .line 45
-    iget-object v3, v3, Lvc/z;->e:Ljava/util/List;
+    iget-object v3, v3, Lvc/x;->e:Ljava/util/List;
 
     if-eqz v3, :cond_12
 
@@ -435,13 +435,13 @@
 
     move-object v6, v5
 
-    check-cast v6, Lvc/x;
+    check-cast v6, Lvc/v;
 
     .line 48
-    iget-object v6, v6, Lvc/x;->d:Ljava/util/List;
+    iget-object v6, v6, Lvc/v;->d:Ljava/util/List;
 
     .line 49
-    iget-object v7, p0, Lae/u$c;->f:Lcom/supercell/id/IdConfiguration;
+    iget-object v7, p0, Lae/u$c;->g:Lcom/supercell/id/IdConfiguration;
 
     invoke-virtual {v7}, Lcom/supercell/id/IdConfiguration;->getGame()Ljava/lang/String;
 
@@ -481,20 +481,20 @@
     move-result-object v5
 
     .line 52
-    check-cast v5, Lvc/x;
+    check-cast v5, Lvc/v;
 
     .line 53
-    iget-object v6, v5, Lvc/x;->e:Lvc/y;
+    iget-object v6, v5, Lvc/v;->e:Lvc/w;
 
     .line 54
-    instance-of v7, v6, Lvc/y$b;
+    instance-of v7, v6, Lvc/w$b;
 
     if-nez v7, :cond_10
 
     move-object v6, v0
 
     :cond_10
-    check-cast v6, Lvc/y$b;
+    check-cast v6, Lvc/w$b;
 
     if-eqz v6, :cond_11
 
@@ -502,13 +502,13 @@
     new-instance v7, Lcom/supercell/id/IdShopClaimInProgress;
 
     .line 56
-    iget-object v8, v5, Lvc/x;->a:Ljava/lang/String;
+    iget-object v8, v5, Lvc/v;->a:Ljava/lang/String;
 
     .line 57
-    iget-object v5, v5, Lvc/x;->b:Ljava/lang/String;
+    iget-object v5, v5, Lvc/v;->b:Ljava/lang/String;
 
     .line 58
-    iget-object v6, v6, Lvc/y$b;->b:Ljava/lang/String;
+    iget-object v6, v6, Lvc/w$b;->b:Ljava/lang/String;
 
     .line 59
     invoke-direct {v7, v8, v5, v6}, Lcom/supercell/id/IdShopClaimInProgress;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
@@ -528,7 +528,7 @@
 
     .line 61
     :cond_12
-    sget-object v3, Lje/l;->f:Lje/l;
+    sget-object v3, Lje/l;->g:Lje/l;
 
     .line 62
     :cond_13
@@ -537,12 +537,12 @@
     invoke-virtual {v0, v1, v2, v3}, Lcom/supercell/id/SupercellId;->setShopItems$supercellId_release(Ljava/util/List;Ljava/util/List;Ljava/util/List;)V
 
     .line 63
-    iget-object v0, p0, Lae/u$c;->g:Lbe/u;
+    iget-object v0, p0, Lae/u$c;->h:Lbe/u;
 
     if-eqz p1, :cond_14
 
     .line 64
-    iget-object p1, p1, Lbe/l0;->a:Lae/m;
+    iget-object p1, p1, Lbe/n0;->a:Lae/m;
 
     if-eqz p1, :cond_14
 
@@ -551,12 +551,12 @@
 
     move-result-object p1
 
-    check-cast p1, Lvc/z;
+    check-cast p1, Lvc/x;
 
     if-eqz p1, :cond_14
 
     .line 66
-    iget-object p1, p1, Lvc/z;->d:Ljava/util/List;
+    iget-object p1, p1, Lvc/x;->d:Ljava/util/List;
 
     if-eqz p1, :cond_14
 
@@ -578,10 +578,10 @@
 
     invoke-direct {v1, p1}, Lbe/u$a$c;-><init>(I)V
 
-    invoke-virtual {v0, v1}, Lbe/v0;->a(Lbe/a;)V
+    invoke-virtual {v0, v1}, Lbe/x0;->a(Lbe/a;)V
 
     .line 69
-    sget-object p1, Lie/h;->a:Lie/h;
+    sget-object p1, Lie/i;->a:Lie/i;
 
     return-object p1
 .end method

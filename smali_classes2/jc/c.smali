@@ -113,7 +113,7 @@
     const-string v3, "Can\'t set a drawable into view. You should call ImageLoader on UI thread for it."
 
     .line 6
-    invoke-static {v0, v1, v3, p1}, Lae/w;->c(ILjava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-static {v0, v1, v3, p1}, Lk3/f4;->d(ILjava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V
 
     :cond_2
     return v2
@@ -187,7 +187,7 @@
     const-string v3, "Can\'t set a bitmap into view. You should call ImageLoader on UI thread for it."
 
     .line 4
-    invoke-static {v0, v1, v3, p1}, Lae/w;->c(ILjava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-static {v0, v1, v3, p1}, Lk3/f4;->d(ILjava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V
 
     :cond_1
     return v2

@@ -18,21 +18,21 @@
 
 
 # instance fields
-.field public final a:Lvc/d;
+.field public final a:Lvc/c;
 
-.field public final b:Lie/f;
+.field public final b:Lie/g;
 
 .field public final c:Ljava/lang/String;
 
-.field public final d:Lie/f;
+.field public final d:Lie/g;
 
-.field public final e:Lie/f;
+.field public final e:Lie/g;
 
-.field public final f:Lie/f;
+.field public final f:Lie/g;
 
-.field public final g:Lie/f;
+.field public final g:Lie/g;
 
-.field public final h:Lie/f;
+.field public final h:Lie/g;
 
 .field public final i:Ljava/lang/String;
 
@@ -145,31 +145,31 @@
 
     const-string v8, "_gameAccountToken"
 
-    invoke-static {p1, v8}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v8}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v8, "gameAccountNickname"
 
-    invoke-static {p2, v8}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v8}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v8, "gameSeasonName"
 
-    invoke-static {p3, v8}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p3, v8}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v8, "language"
 
-    invoke-static {v4, v8}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v4, v8}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v8, "game"
 
-    invoke-static {v5, v8}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v5, v8}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v8, "environment"
 
-    invoke-static {v6, v8}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v6, v8}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v8, "versionSuffix"
 
-    invoke-static {v7, v8}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v7, v8}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -229,29 +229,29 @@
     iput-boolean v1, v0, Lcom/supercell/id/IdConfiguration;->y:Z
 
     .line 2
-    new-instance v1, Lvc/d;
+    new-instance v1, Lvc/c;
 
-    invoke-direct {v1, v5, v6}, Lvc/d;-><init>(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {v1, v5, v6}, Lvc/c;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
-    iput-object v1, v0, Lcom/supercell/id/IdConfiguration;->a:Lvc/d;
+    iput-object v1, v0, Lcom/supercell/id/IdConfiguration;->a:Lvc/c;
 
     .line 3
     new-instance v1, Lcom/supercell/id/IdConfiguration$g;
 
     invoke-direct {v1, p0}, Lcom/supercell/id/IdConfiguration$g;-><init>(Lcom/supercell/id/IdConfiguration;)V
 
-    invoke-static {v1}, La5/r;->d(Lre/a;)Lie/c;
+    invoke-static {v1}, Ld2/u;->c(Lre/a;)Lie/c;
 
     move-result-object v1
 
-    check-cast v1, Lie/f;
+    check-cast v1, Lie/g;
 
-    iput-object v1, v0, Lcom/supercell/id/IdConfiguration;->b:Lie/f;
+    iput-object v1, v0, Lcom/supercell/id/IdConfiguration;->b:Lie/g;
 
     const-string v1, "game_name_"
 
     .line 4
-    invoke-static {v1, v5}, Lcom/google/android/gms/ads/e;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v1, v5}, Lf/g;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -263,65 +263,65 @@
 
     invoke-direct {v1, p0}, Lcom/supercell/id/IdConfiguration$b;-><init>(Lcom/supercell/id/IdConfiguration;)V
 
-    invoke-static {v1}, La5/r;->d(Lre/a;)Lie/c;
+    invoke-static {v1}, Ld2/u;->c(Lre/a;)Lie/c;
 
     move-result-object v1
 
-    check-cast v1, Lie/f;
+    check-cast v1, Lie/g;
 
-    iput-object v1, v0, Lcom/supercell/id/IdConfiguration;->d:Lie/f;
+    iput-object v1, v0, Lcom/supercell/id/IdConfiguration;->d:Lie/g;
 
     .line 7
     new-instance v1, Lcom/supercell/id/IdConfiguration$f;
 
     invoke-direct {v1, p0}, Lcom/supercell/id/IdConfiguration$f;-><init>(Lcom/supercell/id/IdConfiguration;)V
 
-    invoke-static {v1}, La5/r;->d(Lre/a;)Lie/c;
+    invoke-static {v1}, Ld2/u;->c(Lre/a;)Lie/c;
 
     move-result-object v1
 
-    check-cast v1, Lie/f;
+    check-cast v1, Lie/g;
 
-    iput-object v1, v0, Lcom/supercell/id/IdConfiguration;->e:Lie/f;
+    iput-object v1, v0, Lcom/supercell/id/IdConfiguration;->e:Lie/g;
 
     .line 8
     new-instance v1, Lcom/supercell/id/IdConfiguration$e;
 
     invoke-direct {v1, p0}, Lcom/supercell/id/IdConfiguration$e;-><init>(Lcom/supercell/id/IdConfiguration;)V
 
-    invoke-static {v1}, La5/r;->d(Lre/a;)Lie/c;
+    invoke-static {v1}, Ld2/u;->c(Lre/a;)Lie/c;
 
     move-result-object v1
 
-    check-cast v1, Lie/f;
+    check-cast v1, Lie/g;
 
-    iput-object v1, v0, Lcom/supercell/id/IdConfiguration;->f:Lie/f;
+    iput-object v1, v0, Lcom/supercell/id/IdConfiguration;->f:Lie/g;
 
     .line 9
     new-instance v1, Lcom/supercell/id/IdConfiguration$c;
 
     invoke-direct {v1, p0}, Lcom/supercell/id/IdConfiguration$c;-><init>(Lcom/supercell/id/IdConfiguration;)V
 
-    invoke-static {v1}, La5/r;->d(Lre/a;)Lie/c;
+    invoke-static {v1}, Ld2/u;->c(Lre/a;)Lie/c;
 
     move-result-object v1
 
-    check-cast v1, Lie/f;
+    check-cast v1, Lie/g;
 
-    iput-object v1, v0, Lcom/supercell/id/IdConfiguration;->g:Lie/f;
+    iput-object v1, v0, Lcom/supercell/id/IdConfiguration;->g:Lie/g;
 
     .line 10
     new-instance v1, Lcom/supercell/id/IdConfiguration$d;
 
     invoke-direct {v1, p0}, Lcom/supercell/id/IdConfiguration$d;-><init>(Lcom/supercell/id/IdConfiguration;)V
 
-    invoke-static {v1}, La5/r;->d(Lre/a;)Lie/c;
+    invoke-static {v1}, Ld2/u;->c(Lre/a;)Lie/c;
 
     move-result-object v1
 
-    check-cast v1, Lie/f;
+    check-cast v1, Lie/g;
 
-    iput-object v1, v0, Lcom/supercell/id/IdConfiguration;->h:Lie/f;
+    iput-object v1, v0, Lcom/supercell/id/IdConfiguration;->h:Lie/g;
 
     return-void
 .end method
@@ -777,43 +777,43 @@
 
     move-object/from16 v20, v1
 
-    invoke-static {v1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "gameAccountNickname"
 
     move-object/from16 v1, p2
 
-    invoke-static {v1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "gameSeasonName"
 
     move-object/from16 v1, p3
 
-    invoke-static {v1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "language"
 
     move-object/from16 v1, p10
 
-    invoke-static {v1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "game"
 
     move-object/from16 v1, p11
 
-    invoke-static {v1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "environment"
 
     move-object/from16 v1, p12
 
-    invoke-static {v1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "versionSuffix"
 
     move-object/from16 v1, p17
 
-    invoke-static {v1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     new-instance v21, Lcom/supercell/id/IdConfiguration;
 
@@ -841,7 +841,7 @@
 
     iget-object v1, p1, Lcom/supercell/id/IdConfiguration;->i:Ljava/lang/String;
 
-    invoke-static {v0, v1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
@@ -851,7 +851,7 @@
 
     iget-object v1, p1, Lcom/supercell/id/IdConfiguration;->j:Ljava/lang/String;
 
-    invoke-static {v0, v1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
@@ -861,7 +861,7 @@
 
     iget-object v1, p1, Lcom/supercell/id/IdConfiguration;->k:Ljava/lang/String;
 
-    invoke-static {v0, v1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
@@ -899,7 +899,7 @@
 
     iget-object v1, p1, Lcom/supercell/id/IdConfiguration;->p:Ljava/lang/String;
 
-    invoke-static {v0, v1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
@@ -909,7 +909,7 @@
 
     iget-object v1, p1, Lcom/supercell/id/IdConfiguration;->q:Ljava/lang/String;
 
-    invoke-static {v0, v1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
@@ -919,7 +919,7 @@
 
     iget-object v1, p1, Lcom/supercell/id/IdConfiguration;->r:Ljava/lang/String;
 
-    invoke-static {v0, v1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
@@ -929,7 +929,7 @@
 
     iget-object v1, p1, Lcom/supercell/id/IdConfiguration;->s:Ljava/lang/String;
 
-    invoke-static {v0, v1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
@@ -939,7 +939,7 @@
 
     iget-object v1, p1, Lcom/supercell/id/IdConfiguration;->t:Ljava/lang/String;
 
-    invoke-static {v0, v1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
@@ -961,7 +961,7 @@
 
     iget-object v1, p1, Lcom/supercell/id/IdConfiguration;->w:Ljava/lang/String;
 
-    invoke-static {v0, v1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
@@ -1001,14 +1001,14 @@
             "Lre/l<",
             "-",
             "Ljava/lang/String;",
-            "Lie/h;",
+            "Lie/i;",
             ">;)V"
         }
     .end annotation
 
     const-string v0, "callback"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     sget-object v0, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
@@ -1018,20 +1018,20 @@
     move-result-object v0
 
     .line 2
-    iget-object v0, v0, Lae/u;->s:Lud/j;
+    iget-object v0, v0, Lae/u;->s:Lud/i;
 
     .line 3
     iget-object v1, p0, Lcom/supercell/id/IdConfiguration;->c:Ljava/lang/String;
 
-    invoke-virtual {v0, v1, p1}, Lud/j;->e(Ljava/lang/String;Lre/l;)V
+    invoke-virtual {v0, v1, p1}, Lud/i;->e(Ljava/lang/String;Lre/l;)V
 
     return-void
 .end method
 
-.method public final getApp()Lvc/d;
+.method public final getApp()Lvc/c;
     .locals 1
 
-    iget-object v0, p0, Lcom/supercell/id/IdConfiguration;->a:Lvc/d;
+    iget-object v0, p0, Lcom/supercell/id/IdConfiguration;->a:Lvc/c;
 
     return-object v0
 .end method
@@ -1039,9 +1039,9 @@
 .method public final getCollator()Ljava/text/Collator;
     .locals 1
 
-    iget-object v0, p0, Lcom/supercell/id/IdConfiguration;->d:Lie/f;
+    iget-object v0, p0, Lcom/supercell/id/IdConfiguration;->d:Lie/g;
 
-    invoke-virtual {v0}, Lie/f;->getValue()Ljava/lang/Object;
+    invoke-virtual {v0}, Lie/g;->getValue()Ljava/lang/Object;
 
     move-result-object v0
 
@@ -1077,9 +1077,9 @@
 .method public final getGameAccountPid()Ljava/lang/String;
     .locals 1
 
-    iget-object v0, p0, Lcom/supercell/id/IdConfiguration;->g:Lie/f;
+    iget-object v0, p0, Lcom/supercell/id/IdConfiguration;->g:Lie/g;
 
-    invoke-virtual {v0}, Lie/f;->getValue()Ljava/lang/Object;
+    invoke-virtual {v0}, Lie/g;->getValue()Ljava/lang/Object;
 
     move-result-object v0
 
@@ -1091,9 +1091,9 @@
 .method public final getGameAccountPt()Ljava/lang/String;
     .locals 1
 
-    iget-object v0, p0, Lcom/supercell/id/IdConfiguration;->h:Lie/f;
+    iget-object v0, p0, Lcom/supercell/id/IdConfiguration;->h:Lie/g;
 
-    invoke-virtual {v0}, Lie/f;->getValue()Ljava/lang/Object;
+    invoke-virtual {v0}, Lie/g;->getValue()Ljava/lang/Object;
 
     move-result-object v0
 
@@ -1193,9 +1193,9 @@
 .method public final getHasGameAccountToken()Z
     .locals 1
 
-    iget-object v0, p0, Lcom/supercell/id/IdConfiguration;->f:Lie/f;
+    iget-object v0, p0, Lcom/supercell/id/IdConfiguration;->f:Lie/g;
 
-    invoke-virtual {v0}, Lie/f;->getValue()Ljava/lang/Object;
+    invoke-virtual {v0}, Lie/g;->getValue()Ljava/lang/Object;
 
     move-result-object v0
 
@@ -1219,12 +1219,12 @@
     move-result-object v0
 
     .line 2
-    iget-object v0, v0, Lae/u;->s:Lud/j;
+    iget-object v0, v0, Lae/u;->s:Lud/i;
 
     .line 3
     iget-object v1, p0, Lcom/supercell/id/IdConfiguration;->c:Ljava/lang/String;
 
-    invoke-virtual {v0, v1}, Lud/j;->g(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v0, v1}, Lud/i;->g(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -1250,9 +1250,9 @@
 .method public final getLocale()Ljava/util/Locale;
     .locals 1
 
-    iget-object v0, p0, Lcom/supercell/id/IdConfiguration;->b:Lie/f;
+    iget-object v0, p0, Lcom/supercell/id/IdConfiguration;->b:Lie/g;
 
-    invoke-virtual {v0}, Lie/f;->getValue()Ljava/lang/Object;
+    invoke-virtual {v0}, Lie/g;->getValue()Ljava/lang/Object;
 
     move-result-object v0
 
@@ -1711,9 +1711,9 @@
 .method public final isRTL()Z
     .locals 1
 
-    iget-object v0, p0, Lcom/supercell/id/IdConfiguration;->e:Lie/f;
+    iget-object v0, p0, Lcom/supercell/id/IdConfiguration;->e:Lie/g;
 
-    invoke-virtual {v0}, Lie/f;->getValue()Ljava/lang/Object;
+    invoke-virtual {v0}, Lie/g;->getValue()Ljava/lang/Object;
 
     move-result-object v0
 
@@ -1904,7 +1904,7 @@
     const-string v2, ")"
 
     .line 3
-    invoke-static {v0, v1, v2}, Landroidx/appcompat/app/j;->b(Ljava/lang/StringBuilder;ZLjava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, v1, v2}, Landroidx/appcompat/app/j;->a(Ljava/lang/StringBuilder;ZLjava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 

@@ -30,9 +30,9 @@
 
 
 # instance fields
-.field public final f:Landroid/os/Parcelable;
+.field public final g:Landroid/os/Parcelable;
 
-.field public final g:I
+.field public final h:I
 
 
 # direct methods
@@ -72,14 +72,14 @@
 
     move-result-object p2
 
-    iput-object p2, p0, Landroidx/viewpager/widget/RtlViewPager$SavedState;->f:Landroid/os/Parcelable;
+    iput-object p2, p0, Landroidx/viewpager/widget/RtlViewPager$SavedState;->g:Landroid/os/Parcelable;
 
     .line 4
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result p1
 
-    iput p1, p0, Landroidx/viewpager/widget/RtlViewPager$SavedState;->g:I
+    iput p1, p0, Landroidx/viewpager/widget/RtlViewPager$SavedState;->h:I
 
     return-void
 .end method
@@ -90,10 +90,10 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Landroidx/viewpager/widget/RtlViewPager$SavedState;->f:Landroid/os/Parcelable;
+    iput-object p1, p0, Landroidx/viewpager/widget/RtlViewPager$SavedState;->g:Landroid/os/Parcelable;
 
     .line 2
-    iput p2, p0, Landroidx/viewpager/widget/RtlViewPager$SavedState;->g:I
+    iput p2, p0, Landroidx/viewpager/widget/RtlViewPager$SavedState;->h:I
 
     return-void
 .end method
@@ -113,15 +113,15 @@
 
     const-string v0, "dest"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
-    iget-object v0, p0, Landroidx/viewpager/widget/RtlViewPager$SavedState;->f:Landroid/os/Parcelable;
+    iget-object v0, p0, Landroidx/viewpager/widget/RtlViewPager$SavedState;->g:Landroid/os/Parcelable;
 
     invoke-virtual {p1, v0, p2}, Landroid/os/Parcel;->writeParcelable(Landroid/os/Parcelable;I)V
 
     .line 2
-    iget p2, p0, Landroidx/viewpager/widget/RtlViewPager$SavedState;->g:I
+    iget p2, p0, Landroidx/viewpager/widget/RtlViewPager$SavedState;->h:I
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
 

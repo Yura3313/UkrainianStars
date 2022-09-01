@@ -54,7 +54,7 @@
     return-void
 .end method
 
-.method public final onResponse(Lef/b;Lef/c0;)V
+.method public final onResponse(Lef/b;Lef/b0;)V
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -62,14 +62,14 @@
             "Lef/b<",
             "Ljava/lang/Object;",
             ">;",
-            "Lef/c0<",
+            "Lef/b0<",
             "Ljava/lang/Object;",
             ">;)V"
         }
     .end annotation
 
     .line 1
-    invoke-virtual {p2}, Lef/c0;->b()Z
+    invoke-virtual {p2}, Lef/b0;->b()Z
 
     move-result p1
 
@@ -79,7 +79,7 @@
     iget-object p1, p0, Lef/f;->a:Ljava/util/concurrent/CompletableFuture;
 
     .line 3
-    iget-object p2, p2, Lef/c0;->b:Ljava/lang/Object;
+    iget-object p2, p2, Lef/b0;->b:Ljava/lang/Object;
 
     .line 4
     invoke-virtual {p1, p2}, Ljava/util/concurrent/CompletableFuture;->complete(Ljava/lang/Object;)Z
@@ -92,7 +92,7 @@
 
     new-instance v0, Lretrofit2/HttpException;
 
-    invoke-direct {v0, p2}, Lretrofit2/HttpException;-><init>(Lef/c0;)V
+    invoke-direct {v0, p2}, Lretrofit2/HttpException;-><init>(Lef/b0;)V
 
     invoke-virtual {p1, v0}, Ljava/util/concurrent/CompletableFuture;->completeExceptionally(Ljava/lang/Throwable;)Z
 

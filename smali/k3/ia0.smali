@@ -3,222 +3,140 @@
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lk3/iv0;
+.implements Lk3/cd0;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "Lk3/iv0<",
-        "Lk3/ga0;",
+        "Lk3/cd0<",
+        "Ljava/lang/Object;",
         ">;"
     }
 .end annotation
 
 
+# static fields
+.field public static final f:Ljava/lang/Object;
+
+
 # instance fields
-.field public final a:Lk3/mv0;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lk3/mv0<",
-            "Ljava/lang/String;",
-            ">;"
-        }
-    .end annotation
-.end field
+.field public final a:Ljava/lang/String;
 
-.field public final b:Lk3/mv0;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lk3/mv0<",
-            "Ljava/lang/String;",
-            ">;"
-        }
-    .end annotation
-.end field
+.field public final b:Ljava/lang/String;
 
-.field public final c:Lk3/mv0;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lk3/mv0<",
-            "Lk3/kp;",
-            ">;"
-        }
-    .end annotation
-.end field
+.field public final c:Lk3/kp;
 
-.field public final d:Lk3/mv0;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lk3/mv0<",
-            "Lk3/bh0;",
-            ">;"
-        }
-    .end annotation
-.end field
+.field public final d:Lk3/ch0;
 
-.field public final e:Lk3/mv0;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lk3/mv0<",
-            "Lk3/ug0;",
-            ">;"
-        }
-    .end annotation
-.end field
+.field public final e:Lk3/vg0;
 
 
 # direct methods
-.method public constructor <init>(Lk3/mv0;Lk3/mv0;Lk3/mv0;Lk3/mv0;Lk3/mv0;)V
+.method public static constructor <clinit>()V
+    .locals 1
+
+    new-instance v0, Ljava/lang/Object;
+
+    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+
+    sput-object v0, Lk3/ia0;->f:Ljava/lang/Object;
+
+    return-void
+.end method
+
+.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Lk3/kp;Lk3/ch0;Lk3/vg0;)V
     .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lk3/mv0<",
-            "Ljava/lang/String;",
-            ">;",
-            "Lk3/mv0<",
-            "Ljava/lang/String;",
-            ">;",
-            "Lk3/mv0<",
-            "Lk3/kp;",
-            ">;",
-            "Lk3/mv0<",
-            "Lk3/bh0;",
-            ">;",
-            "Lk3/mv0<",
-            "Lk3/ug0;",
-            ">;)V"
-        }
-    .end annotation
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lk3/ia0;->a:Lk3/mv0;
+    iput-object p1, p0, Lk3/ia0;->a:Ljava/lang/String;
 
     .line 3
-    iput-object p2, p0, Lk3/ia0;->b:Lk3/mv0;
+    iput-object p2, p0, Lk3/ia0;->b:Ljava/lang/String;
 
     .line 4
-    iput-object p3, p0, Lk3/ia0;->c:Lk3/mv0;
+    iput-object p3, p0, Lk3/ia0;->c:Lk3/kp;
 
     .line 5
-    iput-object p4, p0, Lk3/ia0;->d:Lk3/mv0;
+    iput-object p4, p0, Lk3/ia0;->d:Lk3/ch0;
 
     .line 6
-    iput-object p5, p0, Lk3/ia0;->e:Lk3/mv0;
+    iput-object p5, p0, Lk3/ia0;->e:Lk3/vg0;
 
     return-void
 .end method
 
-.method public static a(Lk3/mv0;Lk3/mv0;Lk3/mv0;Lk3/mv0;Lk3/mv0;)Lk3/ia0;
-    .locals 7
+
+# virtual methods
+.method public final a()Lk3/hm0;
+    .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "(",
-            "Lk3/mv0<",
-            "Ljava/lang/String;",
-            ">;",
-            "Lk3/mv0<",
-            "Ljava/lang/String;",
-            ">;",
-            "Lk3/mv0<",
-            "Lk3/kp;",
-            ">;",
-            "Lk3/mv0<",
-            "Lk3/bh0;",
-            ">;",
-            "Lk3/mv0<",
-            "Lk3/ug0;",
-            ">;)",
-            "Lk3/ia0;"
+            "()",
+            "Lk3/hm0<",
+            "Ljava/lang/Object;",
+            ">;"
         }
     .end annotation
 
-    new-instance v6, Lk3/ia0;
-
-    move-object v0, v6
-
-    move-object v1, p0
-
-    move-object v2, p1
-
-    move-object v3, p2
-
-    move-object v4, p3
-
-    move-object v5, p4
-
-    invoke-direct/range {v0 .. v5}, Lk3/ia0;-><init>(Lk3/mv0;Lk3/mv0;Lk3/mv0;Lk3/mv0;Lk3/mv0;)V
-
-    return-object v6
-.end method
-
-
-# virtual methods
-.method public final synthetic get()Ljava/lang/Object;
-    .locals 7
-
     .line 1
-    iget-object v0, p0, Lk3/ia0;->a:Lk3/mv0;
+    new-instance v0, Landroid/os/Bundle;
 
-    invoke-interface {v0}, Lk3/mv0;->get()Ljava/lang/Object;
-
-    move-result-object v0
-
-    move-object v2, v0
-
-    check-cast v2, Ljava/lang/String;
-
-    iget-object v0, p0, Lk3/ia0;->b:Lk3/mv0;
-
-    invoke-interface {v0}, Lk3/mv0;->get()Ljava/lang/Object;
-
-    move-result-object v0
-
-    move-object v3, v0
-
-    check-cast v3, Ljava/lang/String;
-
-    iget-object v0, p0, Lk3/ia0;->c:Lk3/mv0;
-
-    invoke-interface {v0}, Lk3/mv0;->get()Ljava/lang/Object;
-
-    move-result-object v0
-
-    move-object v4, v0
-
-    check-cast v4, Lk3/kp;
-
-    iget-object v0, p0, Lk3/ia0;->d:Lk3/mv0;
-
-    invoke-interface {v0}, Lk3/mv0;->get()Ljava/lang/Object;
-
-    move-result-object v0
-
-    move-object v5, v0
-
-    check-cast v5, Lk3/bh0;
-
-    iget-object v0, p0, Lk3/ia0;->e:Lk3/mv0;
-
-    invoke-interface {v0}, Lk3/mv0;->get()Ljava/lang/Object;
-
-    move-result-object v0
-
-    move-object v6, v0
-
-    check-cast v6, Lk3/ug0;
+    invoke-direct {v0}, Landroid/os/Bundle;-><init>()V
 
     .line 2
-    new-instance v0, Lk3/ga0;
+    sget-object v1, Lk3/o;->E2:Lk3/e;
 
-    move-object v1, v0
+    .line 3
+    sget-object v2, Lk3/o51;->j:Lk3/o51;
 
-    invoke-direct/range {v1 .. v6}, Lk3/ga0;-><init>(Ljava/lang/String;Ljava/lang/String;Lk3/kp;Lk3/bh0;Lk3/ug0;)V
+    iget-object v2, v2, Lk3/o51;->f:Lk3/l;
+
+    .line 4
+    invoke-virtual {v2, v1}, Lk3/l;->a(Lk3/f;)Ljava/lang/Object;
+
+    move-result-object v1
+
+    .line 5
+    check-cast v1, Ljava/lang/Boolean;
+
+    invoke-virtual {v1}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result v1
+
+    if-eqz v1, :cond_0
+
+    .line 6
+    iget-object v1, p0, Lk3/ia0;->c:Lk3/kp;
+
+    iget-object v2, p0, Lk3/ia0;->e:Lk3/vg0;
+
+    iget-object v2, v2, Lk3/vg0;->d:Lcom/google/android/gms/internal/ads/zzvc;
+
+    invoke-virtual {v1, v2}, Lk3/kp;->a(Lcom/google/android/gms/internal/ads/zzvc;)V
+
+    .line 7
+    iget-object v1, p0, Lk3/ia0;->d:Lk3/ch0;
+
+    invoke-virtual {v1}, Lk3/ch0;->a()Landroid/os/Bundle;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Landroid/os/Bundle;->putAll(Landroid/os/Bundle;)V
+
+    .line 8
+    :cond_0
+    new-instance v1, Lk3/ha0;
+
+    invoke-direct {v1, p0, v0}, Lk3/ha0;-><init>(Lk3/ia0;Landroid/os/Bundle;)V
+
+    invoke-static {v1}, Lk3/dm0;->g(Ljava/lang/Object;)Lk3/hm0;
+
+    move-result-object v0
 
     return-object v0
 .end method

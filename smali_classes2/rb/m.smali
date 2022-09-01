@@ -65,7 +65,7 @@
     iget-object v0, p1, Lcom/journeyapps/barcodescanner/CameraPreview$c;->a:Lcom/journeyapps/barcodescanner/CameraPreview;
 
     .line 10
-    iget-object v0, v0, Lcom/journeyapps/barcodescanner/CameraPreview;->h:Landroid/os/Handler;
+    iget-object v0, v0, Lcom/journeyapps/barcodescanner/CameraPreview;->i:Landroid/os/Handler;
 
     .line 11
     new-instance v1, Lcom/journeyapps/barcodescanner/a;

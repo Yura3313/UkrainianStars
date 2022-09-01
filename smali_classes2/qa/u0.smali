@@ -7,14 +7,14 @@
 
 
 # instance fields
-.field public final synthetic f:Lqa/e1;
+.field public final synthetic g:Lqa/e1;
 
 
 # direct methods
 .method public constructor <init>(Lqa/e1;)V
     .locals 0
 
-    iput-object p1, p0, Lqa/u0;->f:Lqa/e1;
+    iput-object p1, p0, Lqa/u0;->g:Lqa/e1;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -27,9 +27,9 @@
     .locals 2
 
     .line 1
-    iget-object p1, p0, Lqa/u0;->f:Lqa/e1;
+    iget-object p1, p0, Lqa/u0;->g:Lqa/e1;
 
-    iget-object p1, p1, Lqa/e1;->i0:Lf9/t0;
+    iget-object p1, p1, Lqa/e1;->j0:Lf9/t0;
 
     .line 2
     iget-object v0, p1, Lf9/t0;->i:Lqb/g;

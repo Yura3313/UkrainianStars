@@ -52,7 +52,7 @@
     move-result-object v3
 
     .line 5
-    invoke-static {v3}, Lcom/google/android/play/core/appupdate/g;->b(Ljava/lang/String;)Z
+    invoke-static {v3}, La5/b0;->d(Ljava/lang/String;)Z
 
     move-result v3
 
@@ -68,7 +68,7 @@
 
     const-string v6, "agentFallbackImageUrl"
 
-    invoke-static {v1, v0, v3, v5, v6}, Lo8/q;->b(Le8/s;La8/f;Lj8/b;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v0, v3, v5, v6}, Lo8/r;->b(Le8/s;La8/f;Lj8/b;Ljava/lang/String;Ljava/lang/String;)V
 
     .line 8
     :cond_0
@@ -81,7 +81,7 @@
     move-result-object v3
 
     .line 9
-    invoke-static {v3}, Lcom/google/android/play/core/appupdate/g;->b(Ljava/lang/String;)Z
+    invoke-static {v3}, La5/b0;->d(Ljava/lang/String;)Z
 
     move-result v3
 
@@ -97,7 +97,7 @@
 
     const-string v5, "botFallbackImageUrl"
 
-    invoke-static {v1, v0, v3, v4, v5}, Lo8/q;->b(Le8/s;La8/f;Lj8/b;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v0, v3, v4, v5}, Lo8/r;->b(Le8/s;La8/f;Lj8/b;Ljava/lang/String;Ljava/lang/String;)V
 
     .line 12
     :cond_1
@@ -105,7 +105,7 @@
 
     move-result-object v2
 
-    invoke-static {v2}, Lcom/google/android/play/core/appupdate/g;->b(Ljava/lang/String;)Z
+    invoke-static {v2}, La5/b0;->d(Ljava/lang/String;)Z
 
     move-result v2
 
@@ -121,7 +121,7 @@
 
     const-string v4, "headerImageUrl"
 
-    invoke-static {v1, v0, v2, v3, v4}, Lo8/q;->b(Le8/s;La8/f;Lj8/b;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v1, v0, v2, v3, v4}, Lo8/r;->b(Le8/s;La8/f;Lj8/b;Ljava/lang/String;Ljava/lang/String;)V
 
     :cond_2
     return-void

@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field public final synthetic f:Lwc/c;
+.field public final synthetic g:Lwc/c;
 
 
 # direct methods
@@ -18,7 +18,7 @@
         }
     .end annotation
 
-    iput-object p1, p0, Lwc/b;->f:Lwc/c;
+    iput-object p1, p0, Lwc/b;->g:Lwc/c;
 
     invoke-direct {p0, p2, p3}, Landroid/app/Dialog;-><init>(Landroid/content/Context;I)V
 
@@ -31,10 +31,10 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lwc/b;->f:Lwc/c;
+    iget-object v0, p0, Lwc/b;->g:Lwc/c;
 
     .line 2
-    iget-object v1, v0, Lwc/c;->u0:Lre/l;
+    iget-object v1, v0, Lwc/c;->v0:Lre/l;
 
     if-eqz v1, :cond_0
 
@@ -43,11 +43,11 @@
 
     move-result-object v0
 
-    check-cast v0, Lie/h;
+    check-cast v0, Lie/i;
 
     .line 4
     :cond_0
-    iget-object v0, p0, Lwc/b;->f:Lwc/c;
+    iget-object v0, p0, Lwc/b;->g:Lwc/c;
 
     invoke-virtual {v0}, Lwc/e;->V0()V
 

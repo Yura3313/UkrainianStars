@@ -38,7 +38,7 @@
     iget-object p1, p0, Lua/c;->a:Lua/d;
 
     .line 4
-    iget-object p1, p1, Lua/d;->i0:Landroid/view/View;
+    iget-object p1, p1, Lua/d;->j0:Landroid/view/View;
 
     const/4 v0, 0x0
 
@@ -51,7 +51,7 @@
     iget-object p1, p0, Lua/c;->a:Lua/d;
 
     .line 6
-    iget-object p1, p1, Lua/d;->i0:Landroid/view/View;
+    iget-object p1, p1, Lua/d;->j0:Landroid/view/View;
 
     const/16 v0, 0x8
 

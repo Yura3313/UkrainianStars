@@ -1,31 +1,42 @@
-.class public final Lk3/q11;
+.class public interface abstract Lk3/q11;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 
-# instance fields
-.field public final a:I
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<S:",
+        "Ljava/lang/Object;",
+        ">",
+        "Ljava/lang/Object;"
+    }
+.end annotation
 
-.field public final b:I
 
-.field public final c:F
+# virtual methods
+.method public abstract X()V
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TS;)V"
+        }
+    .end annotation
+.end method
 
+.method public abstract c(I)V
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TS;I)V"
+        }
+    .end annotation
+.end method
 
-# direct methods
-.method public constructor <init>(IIF)V
-    .locals 0
-
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 2
-    iput p1, p0, Lk3/q11;->a:I
-
-    .line 3
-    iput p2, p0, Lk3/q11;->b:I
-
-    .line 4
-    iput p3, p0, Lk3/q11;->c:F
-
-    return-void
+.method public abstract e(Ljava/lang/Object;)V
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TS;",
+            "Lk3/l11;",
+            ")V"
+        }
+    .end annotation
 .end method

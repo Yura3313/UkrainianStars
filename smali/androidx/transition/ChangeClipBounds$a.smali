@@ -15,14 +15,14 @@
 
 
 # instance fields
-.field public final synthetic f:Landroid/view/View;
+.field public final synthetic g:Landroid/view/View;
 
 
 # direct methods
 .method public constructor <init>(Landroid/view/View;)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/transition/ChangeClipBounds$a;->f:Landroid/view/View;
+    iput-object p1, p0, Landroidx/transition/ChangeClipBounds$a;->g:Landroid/view/View;
 
     invoke-direct {p0}, Landroid/animation/AnimatorListenerAdapter;-><init>()V
 
@@ -35,7 +35,7 @@
     .locals 1
 
     .line 1
-    iget-object p1, p0, Landroidx/transition/ChangeClipBounds$a;->f:Landroid/view/View;
+    iget-object p1, p0, Landroidx/transition/ChangeClipBounds$a;->g:Landroid/view/View;
 
     sget-object v0, Lf0/r;->a:Ljava/util/WeakHashMap;
 

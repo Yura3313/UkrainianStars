@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Ln8/c;->I(Lq8/d;Lo8/f0;Z)V
+    value = Ln8/c;->I(Lq8/d;Lo8/h0;Z)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -55,9 +55,9 @@
     check-cast p1, Lcom/helpshift/common/exception/RootAPIException;
 
     .line 2
-    iget-object p1, p1, Lcom/helpshift/common/exception/RootAPIException;->h:Ld8/a;
+    iget-object p1, p1, Lcom/helpshift/common/exception/RootAPIException;->i:Ld8/a;
 
-    sget-object v0, Ld8/b;->u:Ld8/b;
+    sget-object v0, Ld8/b;->v:Ld8/b;
 
     if-ne p1, v0, :cond_0
 
@@ -72,7 +72,7 @@
 
     .line 4
     :cond_0
-    sget-object v0, Ld8/b;->t:Ld8/b;
+    sget-object v0, Ld8/b;->u:Ld8/b;
 
     if-ne p1, v0, :cond_1
 
@@ -81,7 +81,7 @@
 
     iget-object v0, p0, Ln8/c$i;->a:Lq8/d;
 
-    sget-object v1, Lu8/e;->q:Lu8/e;
+    sget-object v1, Lu8/e;->r:Lu8/e;
 
     invoke-virtual {p1, v0, v1}, Ln8/c;->S(Lq8/d;Lu8/e;)V
 
@@ -99,16 +99,16 @@
     .line 2
     iget-object p1, p0, Ln8/c$i;->a:Lq8/d;
 
-    iget-object v0, p1, Lq8/d;->l:Lu8/e;
+    iget-object v0, p1, Lq8/d;->m:Lu8/e;
 
-    sget-object v1, Lu8/e;->p:Lu8/e;
+    sget-object v1, Lu8/e;->q:Lu8/e;
 
     if-ne v0, v1, :cond_0
 
     .line 3
     iget-object v0, p0, Ln8/c$i;->b:Ln8/c;
 
-    sget-object v1, Lu8/e;->j:Lu8/e;
+    sget-object v1, Lu8/e;->k:Lu8/e;
 
     invoke-virtual {v0, p1, v1}, Ln8/c;->S(Lq8/d;Lu8/e;)V
 

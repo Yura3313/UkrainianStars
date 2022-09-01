@@ -16,342 +16,9 @@
         }
     .end annotation
 
-    const-string v0, "$this$firstOrNull"
-
-    invoke-static {p0, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
-
-    invoke-interface {p0}, Ljava/util/List;->isEmpty()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    const/4 p0, 0x0
-
-    goto :goto_0
-
-    :cond_0
-    const/4 v0, 0x0
-
-    invoke-interface {p0, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
-
-    move-result-object p0
-
-    :goto_0
-    return-object p0
-.end method
-
-.method public static final B(Ljava/util/List;I)Ljava/lang/Object;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "<T:",
-            "Ljava/lang/Object;",
-            ">(",
-            "Ljava/util/List<",
-            "+TT;>;I)TT;"
-        }
-    .end annotation
-
-    const-string v0, "$this$getOrNull"
-
-    invoke-static {p0, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
-
-    if-ltz p1, :cond_0
-
-    invoke-static {p0}, Lcom/android/billingclient/api/z;->e(Ljava/util/List;)I
-
-    move-result v0
-
-    if-gt p1, v0, :cond_0
-
-    invoke-interface {p0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
-
-    move-result-object p0
-
-    goto :goto_0
-
-    :cond_0
-    const/4 p0, 0x0
-
-    :goto_0
-    return-object p0
-.end method
-
-.method public static final C(Ljava/lang/Iterable;Ljava/lang/Iterable;)Ljava/util/Set;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "<T:",
-            "Ljava/lang/Object;",
-            ">(",
-            "Ljava/lang/Iterable<",
-            "+TT;>;",
-            "Ljava/lang/Iterable<",
-            "+TT;>;)",
-            "Ljava/util/Set<",
-            "TT;>;"
-        }
-    .end annotation
-
-    const-string v0, "other"
-
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 1
-    invoke-static {p0}, Lje/j;->T(Ljava/lang/Iterable;)Ljava/util/Set;
-
-    move-result-object p0
-
-    .line 2
-    invoke-static {p1, p0}, Lje/f;->r(Ljava/lang/Iterable;Ljava/lang/Iterable;)Ljava/util/Collection;
-
-    move-result-object p1
-
-    invoke-static {p0}, Lse/t;->a(Ljava/lang/Object;)Ljava/util/Collection;
-
-    move-result-object v0
-
-    invoke-interface {v0, p1}, Ljava/util/Collection;->retainAll(Ljava/util/Collection;)Z
-
-    return-object p0
-.end method
-
-.method public static final D(Ljava/lang/Iterable;Ljava/lang/Appendable;Ljava/lang/CharSequence;Ljava/lang/CharSequence;Ljava/lang/CharSequence;ILjava/lang/CharSequence;Lre/l;)Ljava/lang/Appendable;
-    .locals 2
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "<T:",
-            "Ljava/lang/Object;",
-            "A::",
-            "Ljava/lang/Appendable;",
-            ">(",
-            "Ljava/lang/Iterable<",
-            "+TT;>;TA;",
-            "Ljava/lang/CharSequence;",
-            "Ljava/lang/CharSequence;",
-            "Ljava/lang/CharSequence;",
-            "I",
-            "Ljava/lang/CharSequence;",
-            "Lre/l<",
-            "-TT;+",
-            "Ljava/lang/CharSequence;",
-            ">;)TA;"
-        }
-    .end annotation
-
-    const-string v0, "$this$joinTo"
-
-    invoke-static {p0, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "separator"
-
-    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "prefix"
-
-    invoke-static {p3, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "postfix"
-
-    invoke-static {p4, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "truncated"
-
-    invoke-static {p6, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 1
-    invoke-interface {p1, p3}, Ljava/lang/Appendable;->append(Ljava/lang/CharSequence;)Ljava/lang/Appendable;
-
-    .line 2
-    invoke-interface {p0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
-
-    move-result-object p0
-
-    const/4 p3, 0x0
-
-    :goto_0
-    invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_2
-
-    invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v0
-
-    add-int/lit8 p3, p3, 0x1
-
-    const/4 v1, 0x1
-
-    if-le p3, v1, :cond_0
-
-    .line 3
-    invoke-interface {p1, p2}, Ljava/lang/Appendable;->append(Ljava/lang/CharSequence;)Ljava/lang/Appendable;
-
-    :cond_0
-    if-ltz p5, :cond_1
-
-    if-gt p3, p5, :cond_2
-
-    .line 4
-    :cond_1
-    invoke-static {p1, v0, p7}, Lcom/helpshift/util/r;->a(Ljava/lang/Appendable;Ljava/lang/Object;Lre/l;)V
-
-    goto :goto_0
-
-    :cond_2
-    if-ltz p5, :cond_3
-
-    if-le p3, p5, :cond_3
-
-    .line 5
-    invoke-interface {p1, p6}, Ljava/lang/Appendable;->append(Ljava/lang/CharSequence;)Ljava/lang/Appendable;
-
-    .line 6
-    :cond_3
-    invoke-interface {p1, p4}, Ljava/lang/Appendable;->append(Ljava/lang/CharSequence;)Ljava/lang/Appendable;
-
-    return-object p1
-.end method
-
-.method public static E(Ljava/lang/Iterable;Ljava/lang/CharSequence;Ljava/lang/CharSequence;Ljava/lang/CharSequence;Lre/l;I)Ljava/lang/String;
-    .locals 8
-
-    and-int/lit8 v0, p5, 0x1
-
-    if-eqz v0, :cond_0
-
-    const-string p1, ", "
-
-    :cond_0
-    move-object v2, p1
-
-    and-int/lit8 p1, p5, 0x2
-
-    const-string v0, ""
-
-    if-eqz p1, :cond_1
-
-    move-object v3, v0
-
-    goto :goto_0
-
-    :cond_1
-    move-object v3, p2
-
-    :goto_0
-    and-int/lit8 p1, p5, 0x4
-
-    if-eqz p1, :cond_2
-
-    move-object v4, v0
-
-    goto :goto_1
-
-    :cond_2
-    move-object v4, p3
-
-    :goto_1
-    and-int/lit8 p1, p5, 0x8
-
-    if-eqz p1, :cond_3
-
-    const/4 p1, -0x1
-
-    const/4 v5, -0x1
-
-    goto :goto_2
-
-    :cond_3
-    const/4 p1, 0x0
-
-    const/4 v5, 0x0
-
-    :goto_2
-    and-int/lit8 p1, p5, 0x10
-
-    const/4 p2, 0x0
-
-    if-eqz p1, :cond_4
-
-    const-string p1, "..."
-
-    move-object v6, p1
-
-    goto :goto_3
-
-    :cond_4
-    move-object v6, p2
-
-    :goto_3
-    and-int/lit8 p1, p5, 0x20
-
-    if-eqz p1, :cond_5
-
-    move-object v7, p2
-
-    goto :goto_4
-
-    :cond_5
-    move-object v7, p4
-
-    :goto_4
-    const-string p1, "$this$joinToString"
-
-    .line 1
-    invoke-static {p0, p1}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string p1, "prefix"
-
-    invoke-static {v3, p1}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string p1, "postfix"
-
-    invoke-static {v4, p1}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string p1, "truncated"
-
-    invoke-static {v6, p1}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
-
-    .line 2
-    new-instance p1, Ljava/lang/StringBuilder;
-
-    invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
-
-    move-object v0, p0
-
-    move-object v1, p1
-
-    invoke-static/range {v0 .. v7}, Lje/j;->D(Ljava/lang/Iterable;Ljava/lang/Appendable;Ljava/lang/CharSequence;Ljava/lang/CharSequence;Ljava/lang/CharSequence;ILjava/lang/CharSequence;Lre/l;)Ljava/lang/Appendable;
-
-    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p0
-
-    const-string p1, "joinTo(StringBuilder(), \u2026ed, transform).toString()"
-
-    invoke-static {p0, p1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
-
-    return-object p0
-.end method
-
-.method public static final F(Ljava/util/List;)Ljava/lang/Object;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "<T:",
-            "Ljava/lang/Object;",
-            ">(",
-            "Ljava/util/List<",
-            "+TT;>;)TT;"
-        }
-    .end annotation
-
     const-string v0, "$this$last"
 
-    invoke-static {p0, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     invoke-interface {p0}, Ljava/util/List;->isEmpty()Z
@@ -361,7 +28,7 @@
     if-nez v0, :cond_0
 
     .line 2
-    invoke-static {p0}, Lcom/android/billingclient/api/z;->e(Ljava/util/List;)I
+    invoke-static {p0}, Lcom/android/billingclient/api/y;->b(Ljava/util/List;)I
 
     move-result v0
 
@@ -382,7 +49,7 @@
     throw p0
 .end method
 
-.method public static final G(Ljava/util/List;)Ljava/lang/Object;
+.method public static final B(Ljava/util/List;)Ljava/lang/Object;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -396,7 +63,7 @@
 
     const-string v0, "$this$lastOrNull"
 
-    invoke-static {p0, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-interface {p0}, Ljava/util/List;->isEmpty()Z
 
@@ -423,7 +90,7 @@
     return-object p0
 .end method
 
-.method public static final H(Ljava/lang/Iterable;)Ljava/lang/Comparable;
+.method public static final C(Ljava/lang/Iterable;)Ljava/lang/Comparable;
     .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -490,7 +157,7 @@
     return-object v0
 .end method
 
-.method public static final I(Ljava/util/Collection;Ljava/lang/Iterable;)Ljava/util/List;
+.method public static final D(Ljava/util/Collection;Ljava/lang/Iterable;)Ljava/util/List;
     .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -508,11 +175,11 @@
 
     const-string v0, "$this$plus"
 
-    invoke-static {p0, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "elements"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     instance-of v0, p1, Ljava/util/Collection;
@@ -551,12 +218,12 @@
     invoke-direct {v0, p0}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
 
     .line 6
-    invoke-static {v0, p1}, Lje/h;->u(Ljava/util/Collection;Ljava/lang/Iterable;)Z
+    invoke-static {v0, p1}, Lje/h;->p(Ljava/util/Collection;Ljava/lang/Iterable;)Z
 
     return-object v0
 .end method
 
-.method public static final J(Ljava/util/Collection;Ljava/lang/Object;)Ljava/util/List;
+.method public static final E(Ljava/util/Collection;Ljava/lang/Object;)Ljava/util/List;
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -572,7 +239,7 @@
 
     const-string v0, "$this$plus"
 
-    invoke-static {p0, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     new-instance v0, Ljava/util/ArrayList;
@@ -594,7 +261,7 @@
     return-object v0
 .end method
 
-.method public static final K(Ljava/util/Collection;)Ljava/lang/Object;
+.method public static final F(Ljava/util/Collection;)Ljava/lang/Object;
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -646,7 +313,7 @@
     throw p0
 .end method
 
-.method public static final L(Ljava/lang/Iterable;Ljava/util/Comparator;)Ljava/util/List;
+.method public static final G(Ljava/lang/Iterable;Ljava/util/Comparator;)Ljava/util/List;
     .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -664,7 +331,7 @@
 
     const-string v0, "$this$sortedWith"
 
-    invoke-static {p0, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     instance-of v0, p0, Ljava/util/Collection;
@@ -684,7 +351,7 @@
 
     if-gt v1, v2, :cond_0
 
-    invoke-static {p0}, Lje/j;->Q(Ljava/lang/Iterable;)Ljava/util/List;
+    invoke-static {p0}, Lje/j;->L(Ljava/lang/Iterable;)Ljava/util/List;
 
     move-result-object p0
 
@@ -718,7 +385,7 @@
     const-string p1, "ArraysUtilJVM.asList(this)"
 
     .line 6
-    invoke-static {p0, p1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, p1}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     return-object p0
 
@@ -734,16 +401,16 @@
 
     .line 8
     :cond_3
-    invoke-static {p0}, Lje/j;->R(Ljava/lang/Iterable;)Ljava/util/List;
+    invoke-static {p0}, Lje/j;->M(Ljava/lang/Iterable;)Ljava/util/List;
 
     move-result-object p0
 
-    invoke-static {p0, p1}, Lje/g;->t(Ljava/util/List;Ljava/util/Comparator;)V
+    invoke-static {p0, p1}, Lje/g;->o(Ljava/util/List;Ljava/util/Comparator;)V
 
     return-object p0
 .end method
 
-.method public static final M(Ljava/lang/Iterable;Ljava/lang/Iterable;)Ljava/util/Set;
+.method public static final H(Ljava/lang/Iterable;Ljava/lang/Iterable;)Ljava/util/Set;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -761,23 +428,23 @@
 
     const-string v0, "$this$subtract"
 
-    invoke-static {p0, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "other"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
-    invoke-static {p0}, Lje/j;->T(Ljava/lang/Iterable;)Ljava/util/Set;
+    invoke-static {p0}, Lje/j;->O(Ljava/lang/Iterable;)Ljava/util/Set;
 
     move-result-object p0
 
     .line 2
-    invoke-static {p1, p0}, Lje/f;->r(Ljava/lang/Iterable;Ljava/lang/Iterable;)Ljava/util/Collection;
+    invoke-static {p1, p0}, Lje/f;->m(Ljava/lang/Iterable;Ljava/lang/Iterable;)Ljava/util/Collection;
 
     move-result-object p1
 
-    invoke-static {p0}, Lse/t;->a(Ljava/lang/Object;)Ljava/util/Collection;
+    invoke-static {p0}, Lse/u;->a(Ljava/lang/Object;)Ljava/util/Collection;
 
     move-result-object v0
 
@@ -786,7 +453,7 @@
     return-object p0
 .end method
 
-.method public static final N(Ljava/lang/Iterable;I)Ljava/util/List;
+.method public static final I(Ljava/lang/Iterable;I)Ljava/util/List;
     .locals 4
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -802,7 +469,7 @@
 
     const-string v0, "$this$take"
 
-    invoke-static {p0, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/4 v0, 0x0
 
@@ -823,7 +490,7 @@
     if-nez p1, :cond_1
 
     .line 1
-    sget-object p0, Lje/l;->f:Lje/l;
+    sget-object p0, Lje/l;->g:Lje/l;
 
     return-object p0
 
@@ -844,7 +511,7 @@
 
     if-lt p1, v2, :cond_2
 
-    invoke-static {p0}, Lje/j;->Q(Ljava/lang/Iterable;)Ljava/util/List;
+    invoke-static {p0}, Lje/j;->L(Ljava/lang/Iterable;)Ljava/util/List;
 
     move-result-object p0
 
@@ -854,11 +521,11 @@
     if-ne p1, v1, :cond_3
 
     .line 4
-    invoke-static {p0}, Lje/j;->x(Ljava/lang/Iterable;)Ljava/lang/Object;
+    invoke-static {p0}, Lje/j;->s(Ljava/lang/Iterable;)Ljava/lang/Object;
 
     move-result-object p0
 
-    invoke-static {p0}, Lcom/android/billingclient/api/z;->h(Ljava/lang/Object;)Ljava/util/List;
+    invoke-static {p0}, Lcom/android/billingclient/api/y;->c(Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object p0
 
@@ -895,7 +562,7 @@
 
     .line 8
     :cond_5
-    invoke-static {v2}, Lcom/android/billingclient/api/z;->l(Ljava/util/List;)Ljava/util/List;
+    invoke-static {v2}, Lcom/android/billingclient/api/y;->g(Ljava/util/List;)Ljava/util/List;
 
     move-result-object p0
 
@@ -938,7 +605,7 @@
     goto :goto_1
 .end method
 
-.method public static final O(Ljava/lang/Iterable;Ljava/util/Collection;)Ljava/util/Collection;
+.method public static final J(Ljava/lang/Iterable;Ljava/util/Collection;)Ljava/util/Collection;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -954,7 +621,7 @@
 
     const-string v0, "$this$toCollection"
 
-    invoke-static {p0, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     invoke-interface {p0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
@@ -981,7 +648,7 @@
     return-object p1
 .end method
 
-.method public static final P(Ljava/lang/Iterable;)Ljava/util/HashSet;
+.method public static final K(Ljava/lang/Iterable;)Ljava/util/HashSet;
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -997,23 +664,23 @@
 
     const-string v0, "$this$toHashSet"
 
-    invoke-static {p0, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     new-instance v0, Ljava/util/HashSet;
 
     const/16 v1, 0xc
 
-    invoke-static {p0, v1}, Lje/f;->q(Ljava/lang/Iterable;I)I
+    invoke-static {p0, v1}, Lje/f;->l(Ljava/lang/Iterable;I)I
 
     move-result v1
 
-    invoke-static {v1}, Lcom/google/android/play/core/assetpacks/o2;->i(I)I
+    invoke-static {v1}, Lt3/h;->g(I)I
 
     move-result v1
 
     invoke-direct {v0, v1}, Ljava/util/HashSet;-><init>(I)V
 
-    invoke-static {p0, v0}, Lje/j;->O(Ljava/lang/Iterable;Ljava/util/Collection;)Ljava/util/Collection;
+    invoke-static {p0, v0}, Lje/j;->J(Ljava/lang/Iterable;Ljava/util/Collection;)Ljava/util/Collection;
 
     move-object p0, v0
 
@@ -1022,7 +689,7 @@
     return-object v0
 .end method
 
-.method public static final Q(Ljava/lang/Iterable;)Ljava/util/List;
+.method public static final L(Ljava/lang/Iterable;)Ljava/util/List;
     .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -1038,7 +705,7 @@
 
     const-string v0, "$this$toList"
 
-    invoke-static {p0, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     instance-of v0, p0, Ljava/util/Collection;
@@ -1061,7 +728,7 @@
     if-eq v1, v2, :cond_0
 
     .line 3
-    invoke-static {v0}, Lje/j;->S(Ljava/util/Collection;)Ljava/util/List;
+    invoke-static {v0}, Lje/j;->N(Ljava/util/Collection;)Ljava/util/List;
 
     move-result-object p0
 
@@ -1093,7 +760,7 @@
     move-result-object p0
 
     :goto_0
-    invoke-static {p0}, Lcom/android/billingclient/api/z;->h(Ljava/lang/Object;)Ljava/util/List;
+    invoke-static {p0}, Lcom/android/billingclient/api/y;->c(Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object p0
 
@@ -1101,25 +768,25 @@
 
     .line 5
     :cond_2
-    sget-object p0, Lje/l;->f:Lje/l;
+    sget-object p0, Lje/l;->g:Lje/l;
 
     :goto_1
     return-object p0
 
     .line 6
     :cond_3
-    invoke-static {p0}, Lje/j;->R(Ljava/lang/Iterable;)Ljava/util/List;
+    invoke-static {p0}, Lje/j;->M(Ljava/lang/Iterable;)Ljava/util/List;
 
     move-result-object p0
 
-    invoke-static {p0}, Lcom/android/billingclient/api/z;->l(Ljava/util/List;)Ljava/util/List;
+    invoke-static {p0}, Lcom/android/billingclient/api/y;->g(Ljava/util/List;)Ljava/util/List;
 
     move-result-object p0
 
     return-object p0
 .end method
 
-.method public static final R(Ljava/lang/Iterable;)Ljava/util/List;
+.method public static final M(Ljava/lang/Iterable;)Ljava/util/List;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -1135,7 +802,7 @@
 
     const-string v0, "$this$toMutableList"
 
-    invoke-static {p0, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     instance-of v0, p0, Ljava/util/Collection;
@@ -1145,7 +812,7 @@
     .line 2
     check-cast p0, Ljava/util/Collection;
 
-    invoke-static {p0}, Lje/j;->S(Ljava/util/Collection;)Ljava/util/List;
+    invoke-static {p0}, Lje/j;->N(Ljava/util/Collection;)Ljava/util/List;
 
     move-result-object p0
 
@@ -1157,14 +824,14 @@
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    invoke-static {p0, v0}, Lje/j;->O(Ljava/lang/Iterable;Ljava/util/Collection;)Ljava/util/Collection;
+    invoke-static {p0, v0}, Lje/j;->J(Ljava/lang/Iterable;Ljava/util/Collection;)Ljava/util/Collection;
 
     check-cast v0, Ljava/util/List;
 
     return-object v0
 .end method
 
-.method public static final S(Ljava/util/Collection;)Ljava/util/List;
+.method public static final N(Ljava/util/Collection;)Ljava/util/List;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -1180,7 +847,7 @@
 
     const-string v0, "$this$toMutableList"
 
-    invoke-static {p0, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     new-instance v0, Ljava/util/ArrayList;
 
@@ -1189,7 +856,7 @@
     return-object v0
 .end method
 
-.method public static final T(Ljava/lang/Iterable;)Ljava/util/Set;
+.method public static final O(Ljava/lang/Iterable;)Ljava/util/Set;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -1205,7 +872,7 @@
 
     const-string v0, "$this$toMutableSet"
 
-    invoke-static {p0, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     instance-of v0, p0, Ljava/util/Collection;
@@ -1226,7 +893,7 @@
 
     invoke-direct {v0}, Ljava/util/LinkedHashSet;-><init>()V
 
-    invoke-static {p0, v0}, Lje/j;->O(Ljava/lang/Iterable;Ljava/util/Collection;)Ljava/util/Collection;
+    invoke-static {p0, v0}, Lje/j;->J(Ljava/lang/Iterable;Ljava/util/Collection;)Ljava/util/Collection;
 
     check-cast v0, Ljava/util/Set;
 
@@ -1234,7 +901,7 @@
     return-object v0
 .end method
 
-.method public static final U(Ljava/lang/Iterable;)Ljava/util/Set;
+.method public static final P(Ljava/lang/Iterable;)Ljava/util/Set;
     .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -1250,7 +917,7 @@
 
     const-string v0, "$this$toSet"
 
-    invoke-static {p0, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     instance-of v0, p0, Ljava/util/Collection;
@@ -1279,13 +946,13 @@
 
     move-result v0
 
-    invoke-static {v0}, Lcom/google/android/play/core/assetpacks/o2;->i(I)I
+    invoke-static {v0}, Lt3/h;->g(I)I
 
     move-result v0
 
     invoke-direct {v1, v0}, Ljava/util/LinkedHashSet;-><init>(I)V
 
-    invoke-static {p0, v1}, Lje/j;->O(Ljava/lang/Iterable;Ljava/util/Collection;)Ljava/util/Collection;
+    invoke-static {p0, v1}, Lje/j;->J(Ljava/lang/Iterable;Ljava/util/Collection;)Ljava/util/Collection;
 
     check-cast v1, Ljava/util/Set;
 
@@ -1317,7 +984,7 @@
     move-result-object p0
 
     :goto_0
-    invoke-static {p0}, Lcom/helpshift/util/r;->e(Ljava/lang/Object;)Ljava/util/Set;
+    invoke-static {p0}, La5/u;->f(Ljava/lang/Object;)Ljava/util/Set;
 
     move-result-object v1
 
@@ -1325,7 +992,7 @@
 
     .line 5
     :cond_2
-    sget-object v1, Lje/n;->f:Lje/n;
+    sget-object v1, Lje/n;->g:Lje/n;
 
     :goto_1
     return-object v1
@@ -1336,7 +1003,7 @@
 
     invoke-direct {v0}, Ljava/util/LinkedHashSet;-><init>()V
 
-    invoke-static {p0, v0}, Lje/j;->O(Ljava/lang/Iterable;Ljava/util/Collection;)Ljava/util/Collection;
+    invoke-static {p0, v0}, Lje/j;->J(Ljava/lang/Iterable;Ljava/util/Collection;)Ljava/util/Collection;
 
     check-cast v0, Ljava/util/Set;
 
@@ -1361,7 +1028,7 @@
 
     move-result-object p0
 
-    invoke-static {p0}, Lcom/helpshift/util/r;->e(Ljava/lang/Object;)Ljava/util/Set;
+    invoke-static {p0}, La5/u;->f(Ljava/lang/Object;)Ljava/util/Set;
 
     move-result-object v0
 
@@ -1369,13 +1036,13 @@
 
     .line 9
     :cond_5
-    sget-object v0, Lje/n;->f:Lje/n;
+    sget-object v0, Lje/n;->g:Lje/n;
 
     :goto_2
     return-object v0
 .end method
 
-.method public static final V(Ljava/lang/Iterable;)Ljava/lang/Iterable;
+.method public static final Q(Ljava/lang/Iterable;)Ljava/lang/Iterable;
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -1392,7 +1059,7 @@
 
     const-string v0, "$this$withIndex"
 
-    invoke-static {p0, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     new-instance v0, Lje/q;
 
@@ -1405,7 +1072,7 @@
     return-object v0
 .end method
 
-.method public static final v(Ljava/lang/Iterable;I)Ljava/util/List;
+.method public static final q(Ljava/lang/Iterable;I)Ljava/util/List;
     .locals 8
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -1536,7 +1203,7 @@
     const-string p0, "iterator"
 
     .line 8
-    invoke-static {v4, p0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v4, p0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 9
     invoke-interface {v4}, Ljava/util/Iterator;->hasNext()Z
@@ -1545,7 +1212,7 @@
 
     if-nez p0, :cond_6
 
-    sget-object p0, Lje/k;->f:Lje/k;
+    sget-object p0, Lje/k;->g:Lje/k;
 
     goto :goto_4
 
@@ -1571,12 +1238,12 @@
     invoke-direct {p1}, Lxe/e;-><init>()V
 
     .line 12
-    invoke-static {p0, p1, p1}, Lpe/a;->d(Lre/p;Ljava/lang/Object;Lke/d;)Lke/d;
+    invoke-static {p0, p1, p1}, Lcom/google/android/play/core/assetpacks/n2;->a(Lre/p;Ljava/lang/Object;Lke/d;)Lke/d;
 
     move-result-object p0
 
     .line 13
-    iput-object p0, p1, Lxe/e;->h:Lke/d;
+    iput-object p0, p1, Lxe/e;->i:Lke/d;
 
     move-object p0, p1
 
@@ -1641,7 +1308,7 @@
     goto :goto_6
 .end method
 
-.method public static final w(Ljava/lang/Iterable;I)Ljava/util/List;
+.method public static final r(Ljava/lang/Iterable;I)Ljava/util/List;
     .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -1672,7 +1339,7 @@
     if-nez p1, :cond_1
 
     .line 1
-    invoke-static {p0}, Lje/j;->Q(Ljava/lang/Iterable;)Ljava/util/List;
+    invoke-static {p0}, Lje/j;->L(Ljava/lang/Iterable;)Ljava/util/List;
 
     move-result-object p0
 
@@ -1693,7 +1360,7 @@
     if-gtz v2, :cond_2
 
     .line 3
-    sget-object p0, Lje/l;->f:Lje/l;
+    sget-object p0, Lje/l;->g:Lje/l;
 
     return-object p0
 
@@ -1703,12 +1370,12 @@
     .line 4
     check-cast p0, Ljava/util/List;
 
-    invoke-static {p0}, Lje/j;->F(Ljava/util/List;)Ljava/lang/Object;
+    invoke-static {p0}, Lje/j;->A(Ljava/util/List;)Ljava/lang/Object;
 
     move-result-object p0
 
     .line 5
-    invoke-static {p0}, Lcom/android/billingclient/api/z;->h(Ljava/lang/Object;)Ljava/util/List;
+    invoke-static {p0}, Lcom/android/billingclient/api/y;->c(Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object p0
 
@@ -1783,7 +1450,7 @@
     goto :goto_2
 .end method
 
-.method public static final x(Ljava/lang/Iterable;)Ljava/lang/Object;
+.method public static final s(Ljava/lang/Iterable;)Ljava/lang/Object;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -1797,7 +1464,7 @@
 
     const-string v0, "$this$first"
 
-    invoke-static {p0, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     instance-of v0, p0, Ljava/util/List;
@@ -1806,7 +1473,7 @@
 
     check-cast p0, Ljava/util/List;
 
-    invoke-static {p0}, Lje/j;->y(Ljava/util/List;)Ljava/lang/Object;
+    invoke-static {p0}, Lje/j;->t(Ljava/util/List;)Ljava/lang/Object;
 
     move-result-object p0
 
@@ -1843,7 +1510,7 @@
     throw p0
 .end method
 
-.method public static final y(Ljava/util/List;)Ljava/lang/Object;
+.method public static final t(Ljava/util/List;)Ljava/lang/Object;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -1857,7 +1524,7 @@
 
     const-string v0, "$this$first"
 
-    invoke-static {p0, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     invoke-interface {p0}, Ljava/util/List;->isEmpty()Z
@@ -1886,7 +1553,7 @@
     throw p0
 .end method
 
-.method public static final z(Ljava/lang/Iterable;)Ljava/lang/Object;
+.method public static final u(Ljava/lang/Iterable;)Ljava/lang/Object;
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -1900,7 +1567,7 @@
 
     const-string v0, "$this$firstOrNull"
 
-    invoke-static {p0, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     instance-of v0, p0, Ljava/util/List;
@@ -1950,6 +1617,339 @@
     invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static final v(Ljava/util/List;)Ljava/lang/Object;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Ljava/lang/Object;",
+            ">(",
+            "Ljava/util/List<",
+            "+TT;>;)TT;"
+        }
+    .end annotation
+
+    const-string v0, "$this$firstOrNull"
+
+    invoke-static {p0, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    invoke-interface {p0}, Ljava/util/List;->isEmpty()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    const/4 p0, 0x0
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    invoke-interface {p0, v0}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object p0
+
+    :goto_0
+    return-object p0
+.end method
+
+.method public static final w(Ljava/util/List;I)Ljava/lang/Object;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Ljava/lang/Object;",
+            ">(",
+            "Ljava/util/List<",
+            "+TT;>;I)TT;"
+        }
+    .end annotation
+
+    const-string v0, "$this$getOrNull"
+
+    invoke-static {p0, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    if-ltz p1, :cond_0
+
+    invoke-static {p0}, Lcom/android/billingclient/api/y;->b(Ljava/util/List;)I
+
+    move-result v0
+
+    if-gt p1, v0, :cond_0
+
+    invoke-interface {p0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object p0
+
+    goto :goto_0
+
+    :cond_0
+    const/4 p0, 0x0
+
+    :goto_0
+    return-object p0
+.end method
+
+.method public static final x(Ljava/lang/Iterable;Ljava/lang/Iterable;)Ljava/util/Set;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Ljava/lang/Object;",
+            ">(",
+            "Ljava/lang/Iterable<",
+            "+TT;>;",
+            "Ljava/lang/Iterable<",
+            "+TT;>;)",
+            "Ljava/util/Set<",
+            "TT;>;"
+        }
+    .end annotation
+
+    const-string v0, "other"
+
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 1
+    invoke-static {p0}, Lje/j;->O(Ljava/lang/Iterable;)Ljava/util/Set;
+
+    move-result-object p0
+
+    .line 2
+    invoke-static {p1, p0}, Lje/f;->m(Ljava/lang/Iterable;Ljava/lang/Iterable;)Ljava/util/Collection;
+
+    move-result-object p1
+
+    invoke-static {p0}, Lse/u;->a(Ljava/lang/Object;)Ljava/util/Collection;
+
+    move-result-object v0
+
+    invoke-interface {v0, p1}, Ljava/util/Collection;->retainAll(Ljava/util/Collection;)Z
+
+    return-object p0
+.end method
+
+.method public static final y(Ljava/lang/Iterable;Ljava/lang/Appendable;Ljava/lang/CharSequence;Ljava/lang/CharSequence;Ljava/lang/CharSequence;ILjava/lang/CharSequence;Lre/l;)Ljava/lang/Appendable;
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Ljava/lang/Object;",
+            "A::",
+            "Ljava/lang/Appendable;",
+            ">(",
+            "Ljava/lang/Iterable<",
+            "+TT;>;TA;",
+            "Ljava/lang/CharSequence;",
+            "Ljava/lang/CharSequence;",
+            "Ljava/lang/CharSequence;",
+            "I",
+            "Ljava/lang/CharSequence;",
+            "Lre/l<",
+            "-TT;+",
+            "Ljava/lang/CharSequence;",
+            ">;)TA;"
+        }
+    .end annotation
+
+    const-string v0, "$this$joinTo"
+
+    invoke-static {p0, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "separator"
+
+    invoke-static {p2, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "prefix"
+
+    invoke-static {p3, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "postfix"
+
+    invoke-static {p4, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "truncated"
+
+    invoke-static {p6, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 1
+    invoke-interface {p1, p3}, Ljava/lang/Appendable;->append(Ljava/lang/CharSequence;)Ljava/lang/Appendable;
+
+    .line 2
+    invoke-interface {p0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+
+    move-result-object p0
+
+    const/4 p3, 0x0
+
+    :goto_0
+    invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_2
+
+    invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v0
+
+    add-int/lit8 p3, p3, 0x1
+
+    const/4 v1, 0x1
+
+    if-le p3, v1, :cond_0
+
+    .line 3
+    invoke-interface {p1, p2}, Ljava/lang/Appendable;->append(Ljava/lang/CharSequence;)Ljava/lang/Appendable;
+
+    :cond_0
+    if-ltz p5, :cond_1
+
+    if-gt p3, p5, :cond_2
+
+    .line 4
+    :cond_1
+    invoke-static {p1, v0, p7}, La5/u;->a(Ljava/lang/Appendable;Ljava/lang/Object;Lre/l;)V
+
+    goto :goto_0
+
+    :cond_2
+    if-ltz p5, :cond_3
+
+    if-le p3, p5, :cond_3
+
+    .line 5
+    invoke-interface {p1, p6}, Ljava/lang/Appendable;->append(Ljava/lang/CharSequence;)Ljava/lang/Appendable;
+
+    .line 6
+    :cond_3
+    invoke-interface {p1, p4}, Ljava/lang/Appendable;->append(Ljava/lang/CharSequence;)Ljava/lang/Appendable;
+
+    return-object p1
+.end method
+
+.method public static z(Ljava/lang/Iterable;Ljava/lang/CharSequence;Ljava/lang/CharSequence;Ljava/lang/CharSequence;Lre/l;I)Ljava/lang/String;
+    .locals 8
+
+    and-int/lit8 v0, p5, 0x1
+
+    if-eqz v0, :cond_0
+
+    const-string p1, ", "
+
+    :cond_0
+    move-object v2, p1
+
+    and-int/lit8 p1, p5, 0x2
+
+    const-string v0, ""
+
+    if-eqz p1, :cond_1
+
+    move-object v3, v0
+
+    goto :goto_0
+
+    :cond_1
+    move-object v3, p2
+
+    :goto_0
+    and-int/lit8 p1, p5, 0x4
+
+    if-eqz p1, :cond_2
+
+    move-object v4, v0
+
+    goto :goto_1
+
+    :cond_2
+    move-object v4, p3
+
+    :goto_1
+    and-int/lit8 p1, p5, 0x8
+
+    if-eqz p1, :cond_3
+
+    const/4 p1, -0x1
+
+    const/4 v5, -0x1
+
+    goto :goto_2
+
+    :cond_3
+    const/4 p1, 0x0
+
+    const/4 v5, 0x0
+
+    :goto_2
+    and-int/lit8 p1, p5, 0x10
+
+    const/4 p2, 0x0
+
+    if-eqz p1, :cond_4
+
+    const-string p1, "..."
+
+    move-object v6, p1
+
+    goto :goto_3
+
+    :cond_4
+    move-object v6, p2
+
+    :goto_3
+    and-int/lit8 p1, p5, 0x20
+
+    if-eqz p1, :cond_5
+
+    move-object v7, p2
+
+    goto :goto_4
+
+    :cond_5
+    move-object v7, p4
+
+    :goto_4
+    const-string p1, "$this$joinToString"
+
+    .line 1
+    invoke-static {p0, p1}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string p1, "prefix"
+
+    invoke-static {v3, p1}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string p1, "postfix"
+
+    invoke-static {v4, p1}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string p1, "truncated"
+
+    invoke-static {v6, p1}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 2
+    new-instance p1, Ljava/lang/StringBuilder;
+
+    invoke-direct {p1}, Ljava/lang/StringBuilder;-><init>()V
+
+    move-object v0, p0
+
+    move-object v1, p1
+
+    invoke-static/range {v0 .. v7}, Lje/j;->y(Ljava/lang/Iterable;Ljava/lang/Appendable;Ljava/lang/CharSequence;Ljava/lang/CharSequence;Ljava/lang/CharSequence;ILjava/lang/CharSequence;Lre/l;)Ljava/lang/Appendable;
+
+    invoke-virtual {p1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p0
+
+    const-string p1, "joinTo(StringBuilder(), \u2026ed, transform).toString()"
+
+    invoke-static {p0, p1}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     return-object p0
 .end method

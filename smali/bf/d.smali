@@ -7,7 +7,7 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Laf/o<",
-        "Lbf/h;",
+        "Lbf/g;",
         ">;"
     }
 .end annotation
@@ -24,12 +24,12 @@
 
 
 # virtual methods
-.method public final c(I)Lbf/h;
+.method public final c(I)Lbf/g;
     .locals 11
 
     const-string v0, "mode"
 
-    invoke-static {p1, v0}, Lcom/google/android/gms/ads/e;->c(ILjava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/g;->a(ILjava/lang/String;)V
 
     .line 1
     :goto_0
@@ -123,10 +123,10 @@
     :cond_4
     move-object v5, v9
 
-    check-cast v5, Lbf/h;
+    check-cast v5, Lbf/g;
 
     .line 10
-    invoke-virtual {v5}, Lbf/h;->b()I
+    invoke-virtual {v5}, Lbf/g;->b()I
 
     move-result v5
 
@@ -208,7 +208,7 @@
     if-eq v7, v1, :cond_a
 
     .line 18
-    check-cast v7, Lbf/h;
+    check-cast v7, Lbf/g;
 
     return-object v7
 

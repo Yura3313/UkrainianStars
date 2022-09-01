@@ -264,7 +264,7 @@
 
     move-result-object v2
 
-    invoke-static {v2}, Le5/i;->i([B)[J
+    invoke-static {v2}, Lr5/a0;->b([B)[J
 
     move-result-object v2
 
@@ -275,14 +275,14 @@
 
     move-result-object v2
 
-    invoke-static {v2}, Le5/i;->i([B)[J
+    invoke-static {v2}, Lr5/a0;->b([B)[J
 
     .line 19
     invoke-static {v0}, Lr5/s;->c(Ljava/math/BigInteger;)[B
 
     move-result-object v0
 
-    invoke-static {v0}, Le5/i;->i([B)[J
+    invoke-static {v0}, Lr5/a0;->b([B)[J
 
     new-array v0, v7, [I
 
@@ -570,7 +570,7 @@
 
     move-result-object v1
 
-    invoke-static {v1}, Le5/i;->i([B)[J
+    invoke-static {v1}, Lr5/a0;->b([B)[J
 
     move-result-object v1
 
@@ -593,7 +593,7 @@
 
     move-result-object v3
 
-    invoke-static {v3}, Le5/i;->i([B)[J
+    invoke-static {v3}, Lr5/a0;->b([B)[J
 
     move-result-object v3
 
@@ -623,7 +623,7 @@
 
     move-result-object p0
 
-    invoke-static {p0}, Le5/i;->i([B)[J
+    invoke-static {p0}, Lr5/a0;->b([B)[J
 
     move-result-object p0
 

@@ -43,7 +43,7 @@
 
     iget-object v1, p0, Landroidx/media/MediaBrowserServiceCompat$h;->b:Landroidx/media/MediaBrowserServiceCompat;
 
-    iget-object v1, v1, Landroidx/media/MediaBrowserServiceCompat;->h:Landroidx/media/MediaBrowserServiceCompat$l;
+    iget-object v1, v1, Landroidx/media/MediaBrowserServiceCompat;->i:Landroidx/media/MediaBrowserServiceCompat$l;
 
     invoke-direct {v0, v1}, Landroid/os/Messenger;-><init>(Landroid/os/Handler;)V
 

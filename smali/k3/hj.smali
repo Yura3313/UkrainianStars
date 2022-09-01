@@ -3,7 +3,7 @@
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lk3/iv0;
+.implements Lk3/mv0;
 
 
 # instance fields
@@ -25,16 +25,22 @@
     return-void
 .end method
 
-.method public static a(Lcom/google/android/gms/internal/ads/j;)Lk3/hj;
-    .locals 2
+.method public static a(Lk3/ej;)Landroid/content/Context;
+    .locals 1
 
-    new-instance v0, Lk3/hj;
+    .line 1
+    iget-object p0, p0, Lk3/ej;->b:Landroid/content/Context;
 
-    const/4 v1, 0x1
+    const-string v0, "Cannot return null from a non-@Nullable @Provides method"
 
-    invoke-direct {v0, p0, v1}, Lk3/hj;-><init>(Ljava/lang/Object;I)V
+    .line 2
+    invoke-static {p0, v0}, Lk3/gj;->f(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
-    return-object v0
+    move-object v0, p0
+
+    check-cast v0, Landroid/content/Context;
+
+    return-object p0
 .end method
 
 
@@ -52,23 +58,27 @@
     :pswitch_0
     iget-object v0, p0, Lk3/hj;->b:Ljava/lang/Object;
 
-    check-cast v0, Lcom/google/android/gms/internal/ads/j;
+    check-cast v0, Lk3/yn;
 
     .line 2
-    iget-object v0, v0, Lcom/google/android/gms/internal/ads/j;->e:Lk3/rg0;
-
-    return-object v0
-
-    .line 3
-    :pswitch_1
-    sget-object v0, Li1/o;->B:Li1/o;
-
-    iget-object v0, v0, Li1/o;->g:Lk3/ia;
+    iget-object v0, v0, Lk3/yn;->b:Ljava/lang/Runnable;
 
     const-string v1, "Cannot return null from a non-@Nullable @Provides method"
 
+    .line 3
+    invoke-static {v0, v1}, Lk3/gj;->f(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+
+    return-object v0
+
     .line 4
-    invoke-static {v0, v1}, Ltd/c;->k(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+    :pswitch_1
+    iget-object v0, p0, Lk3/hj;->b:Ljava/lang/Object;
+
+    check-cast v0, Lk3/ej;
+
+    invoke-static {v0}, Lk3/hj;->a(Lk3/ej;)Landroid/content/Context;
+
+    move-result-object v0
 
     return-object v0
 
@@ -79,9 +89,11 @@
     check-cast v0, Lk3/bv;
 
     .line 6
-    iget-object v0, v0, Lk3/bv;->b:Lcom/google/android/gms/internal/ads/zzwl;
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     return-object v0
+
+    nop
 
     :pswitch_data_0
     .packed-switch 0x0

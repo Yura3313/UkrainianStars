@@ -84,7 +84,7 @@
 
     iget-object v0, p0, Landroidx/media/MediaBrowserServiceCompat$b;->d:Landroidx/media/MediaBrowserServiceCompat;
 
-    iget-object v0, v0, Landroidx/media/MediaBrowserServiceCompat;->h:Landroidx/media/MediaBrowserServiceCompat$l;
+    iget-object v0, v0, Landroidx/media/MediaBrowserServiceCompat;->i:Landroidx/media/MediaBrowserServiceCompat$l;
 
     new-instance v1, Landroidx/media/MediaBrowserServiceCompat$b$a;
 

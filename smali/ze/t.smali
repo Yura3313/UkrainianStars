@@ -12,7 +12,7 @@
         "Laf/n;",
         "Lre/l<",
         "Ljava/lang/Throwable;",
-        "Lie/h;",
+        "Lie/i;",
         ">;"
     }
 .end annotation

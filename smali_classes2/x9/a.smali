@@ -174,7 +174,7 @@
     iget-object v6, p0, Lx9/a;->d:Li7/c;
 
     .line 20
-    iget-object v6, v6, Li7/c;->j:Ljava/lang/String;
+    iget-object v6, v6, Li7/c;->k:Ljava/lang/String;
 
     .line 21
     invoke-virtual {v4, v5, v6}, Le8/i;->h(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/Object;
@@ -186,7 +186,7 @@
     .line 22
     iget-object v4, p0, Lx9/a;->e:Ljava/lang/String;
 
-    invoke-static {v4}, Lcom/google/android/play/core/appupdate/g;->b(Ljava/lang/String;)Z
+    invoke-static {v4}, La5/b0;->d(Ljava/lang/String;)Z
 
     move-result v4
 
@@ -236,7 +236,7 @@
     invoke-virtual {v3, v4}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 29
-    invoke-static {v2}, Lcom/google/android/play/core/appupdate/g;->b(Ljava/lang/String;)Z
+    invoke-static {v2}, La5/b0;->d(Ljava/lang/String;)Z
 
     move-result v4
 
@@ -263,7 +263,7 @@
 
     .line 33
     :cond_1
-    invoke-static {v1}, Lcom/google/android/play/core/appupdate/g;->b(Ljava/lang/String;)Z
+    invoke-static {v1}, La5/b0;->d(Ljava/lang/String;)Z
 
     move-result v2
 
@@ -334,7 +334,7 @@
 
     iget-object v3, v3, Lx9/b;->b:Le8/s;
 
-    sget-object v4, Li8/b;->a:Lcom/helpshift/util/s;
+    sget-object v4, Li8/b;->a:Lcom/helpshift/util/r;
 
     .line 44
     new-instance v4, Ljava/util/Date;
@@ -348,9 +348,9 @@
     const-string v3, "ctime"
 
     .line 45
-    sget-object v5, Lcom/helpshift/util/m;->b:Lcom/helpshift/util/s;
+    sget-object v5, Lcom/helpshift/util/m;->b:Lcom/helpshift/util/r;
 
-    invoke-virtual {v5, v4}, Lcom/helpshift/util/s;->a(Ljava/util/Date;)Ljava/lang/String;
+    invoke-virtual {v5, v4}, Lcom/helpshift/util/r;->a(Ljava/util/Date;)Ljava/lang/String;
 
     move-result-object v4
 
@@ -416,13 +416,13 @@
     invoke-direct {v1, v0}, Lc8/e;-><init>(Lc8/j;)V
 
     .line 51
-    new-instance v0, Lk3/m7;
+    new-instance v0, Lk3/n7;
 
     iget-object v3, p0, Lx9/a;->j:Lx9/b;
 
     iget-object v3, v3, Lx9/b;->b:Le8/s;
 
-    invoke-direct {v0, v1, v3}, Lk3/m7;-><init>(Lc8/j;Le8/s;)V
+    invoke-direct {v0, v1, v3}, Lk3/n7;-><init>(Lc8/j;Le8/s;)V
 
     .line 52
     new-instance v1, Ln1/a;

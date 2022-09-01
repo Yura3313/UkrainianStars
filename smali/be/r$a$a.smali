@@ -62,7 +62,7 @@
 
     iget-object p1, p1, Lbe/r$a$a;->a:Ljava/util/List;
 
-    invoke-static {v0, p1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, p1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -118,7 +118,7 @@
 
     const/16 v2, 0xa
 
-    invoke-static {v0, v2}, Lje/f;->q(Ljava/lang/Iterable;I)I
+    invoke-static {v0, v2}, Lje/f;->l(Ljava/lang/Iterable;I)I
 
     move-result v2
 
@@ -202,7 +202,7 @@
     :cond_2
     iget-object p1, p0, Lbe/r$a$a;->a:Ljava/util/List;
 
-    invoke-static {v0, p1}, Lje/j;->I(Ljava/util/Collection;Ljava/lang/Iterable;)Ljava/util/List;
+    invoke-static {v0, p1}, Lje/j;->D(Ljava/util/Collection;Ljava/lang/Iterable;)Ljava/util/List;
 
     move-result-object p1
 

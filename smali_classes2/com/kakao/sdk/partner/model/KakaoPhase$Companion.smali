@@ -23,7 +23,7 @@
     return-void
 .end method
 
-.method public synthetic constructor <init>(Lse/e;)V
+.method public synthetic constructor <init>(Lse/f;)V
     .locals 0
 
     invoke-direct {p0}, Lcom/kakao/sdk/partner/model/KakaoPhase$Companion;-><init>()V
@@ -38,7 +38,7 @@
 
     const-string v0, "value"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     sget-object v0, Lcom/kakao/sdk/common/util/KakaoJson;->INSTANCE:Lcom/kakao/sdk/common/util/KakaoJson;
 

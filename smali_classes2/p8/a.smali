@@ -1,5 +1,5 @@
 .class public final Lp8/a;
-.super Lp8/b;
+.super Lp8/c;
 .source "CSATRatingsInput.java"
 
 # interfaces
@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field public final j:Ljava/util/List;
+.field public final k:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
@@ -25,13 +25,13 @@
     .end annotation
 .end field
 
-.field public final k:I
-
-.field public final l:Ljava/lang/String;
+.field public final l:I
 
 .field public final m:Ljava/lang/String;
 
-.field public final n:Z
+.field public final n:Ljava/lang/String;
+
+.field public final o:Z
 
 
 # direct methods
@@ -56,24 +56,24 @@
     .end annotation
 
     .line 1
-    invoke-direct {p0, p1, p2, p3, p4}, Lp8/b;-><init>(Ljava/lang/String;ZLjava/lang/String;Ljava/lang/String;)V
+    invoke-direct {p0, p1, p2, p3, p4}, Lp8/c;-><init>(Ljava/lang/String;ZLjava/lang/String;Ljava/lang/String;)V
 
     .line 2
-    iput-object p8, p0, Lp8/a;->j:Ljava/util/List;
+    iput-object p8, p0, Lp8/a;->k:Ljava/util/List;
 
     const/4 p1, 0x1
 
     .line 3
-    iput p1, p0, Lp8/a;->k:I
+    iput p1, p0, Lp8/a;->l:I
 
     .line 4
-    iput-object p5, p0, Lp8/a;->l:Ljava/lang/String;
+    iput-object p5, p0, Lp8/a;->m:Ljava/lang/String;
 
     .line 5
-    iput-boolean p6, p0, Lp8/a;->n:Z
+    iput-boolean p6, p0, Lp8/a;->o:Z
 
     .line 6
-    iput-object p7, p0, Lp8/a;->m:Ljava/lang/String;
+    iput-object p7, p0, Lp8/a;->n:Ljava/lang/String;
 
     return-void
 .end method
@@ -82,36 +82,36 @@
     .locals 1
 
     .line 7
-    invoke-direct {p0, p1}, Lp8/b;-><init>(Lp8/b;)V
+    invoke-direct {p0, p1}, Lp8/c;-><init>(Lp8/c;)V
 
     .line 8
-    iget-object v0, p1, Lp8/a;->j:Ljava/util/List;
+    iget-object v0, p1, Lp8/a;->k:Ljava/util/List;
 
     invoke-static {v0}, Lcom/helpshift/util/g;->a(Ljava/util/List;)Ljava/util/ArrayList;
 
     move-result-object v0
 
-    iput-object v0, p0, Lp8/a;->j:Ljava/util/List;
+    iput-object v0, p0, Lp8/a;->k:Ljava/util/List;
 
     .line 9
-    iget v0, p1, Lp8/a;->k:I
+    iget v0, p1, Lp8/a;->l:I
 
-    iput v0, p0, Lp8/a;->k:I
+    iput v0, p0, Lp8/a;->l:I
 
     .line 10
-    iget-object v0, p1, Lp8/a;->l:Ljava/lang/String;
-
-    iput-object v0, p0, Lp8/a;->l:Ljava/lang/String;
-
-    .line 11
     iget-object v0, p1, Lp8/a;->m:Ljava/lang/String;
 
     iput-object v0, p0, Lp8/a;->m:Ljava/lang/String;
 
-    .line 12
-    iget-boolean p1, p1, Lp8/a;->n:Z
+    .line 11
+    iget-object v0, p1, Lp8/a;->n:Ljava/lang/String;
 
-    iput-boolean p1, p0, Lp8/a;->n:Z
+    iput-object v0, p0, Lp8/a;->n:Ljava/lang/String;
+
+    .line 12
+    iget-boolean p1, p1, Lp8/a;->o:Z
+
+    iput-boolean p1, p0, Lp8/a;->o:Z
 
     return-void
 .end method

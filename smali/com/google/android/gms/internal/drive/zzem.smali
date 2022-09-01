@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field public final f:Ljava/util/List;
+.field public final g:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
@@ -25,7 +25,7 @@
     .end annotation
 .end field
 
-.field public final g:I
+.field public final h:I
 
 
 # direct methods
@@ -56,10 +56,10 @@
     invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lcom/google/android/gms/internal/drive/zzem;->f:Ljava/util/List;
+    iput-object p1, p0, Lcom/google/android/gms/internal/drive/zzem;->g:Ljava/util/List;
 
     .line 3
-    iput p2, p0, Lcom/google/android/gms/internal/drive/zzem;->g:I
+    iput p2, p0, Lcom/google/android/gms/internal/drive/zzem;->h:I
 
     return-void
 .end method
@@ -77,7 +77,7 @@
     move-result v5
 
     .line 2
-    iget-object p2, p0, Lcom/google/android/gms/internal/drive/zzem;->f:Ljava/util/List;
+    iget-object p2, p0, Lcom/google/android/gms/internal/drive/zzem;->g:Ljava/util/List;
 
     const/4 v0, 0x2
 
@@ -86,7 +86,7 @@
     invoke-static {p1, v0, p2, v1}, Le2/b;->q(Landroid/os/Parcel;ILjava/util/List;Z)V
 
     .line 3
-    iget v3, p0, Lcom/google/android/gms/internal/drive/zzem;->g:I
+    iget v3, p0, Lcom/google/android/gms/internal/drive/zzem;->h:I
 
     const/4 v1, 0x3
 

@@ -1,131 +1,53 @@
 .class public final Lk3/gx0;
-.super Lk3/ex0;
+.super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
-
-# annotations
-.annotation build Landroid/annotation/TargetApi;
-    value = 0x13
-.end annotation
+# interfaces
+.implements Ljava/lang/Runnable;
 
 
 # instance fields
-.field public final j:Landroid/media/AudioTimestamp;
+.field public final synthetic g:Ljava/lang/String;
 
-.field public k:J
+.field public final synthetic h:J
 
-.field public l:J
+.field public final synthetic i:J
 
-.field public m:J
+.field public final synthetic j:Lk3/yf;
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 1
+.method public constructor <init>(Lk3/yf;Ljava/lang/String;JJ)V
+    .locals 0
 
-    .line 1
-    invoke-direct {p0}, Lk3/ex0;-><init>()V
+    iput-object p1, p0, Lk3/gx0;->j:Lk3/yf;
 
-    .line 2
-    new-instance v0, Landroid/media/AudioTimestamp;
+    iput-object p2, p0, Lk3/gx0;->g:Ljava/lang/String;
 
-    invoke-direct {v0}, Landroid/media/AudioTimestamp;-><init>()V
+    iput-wide p3, p0, Lk3/gx0;->h:J
 
-    iput-object v0, p0, Lk3/gx0;->j:Landroid/media/AudioTimestamp;
+    iput-wide p5, p0, Lk3/gx0;->i:J
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Landroid/media/AudioTrack;Z)V
-    .locals 0
+.method public final run()V
+    .locals 1
 
     .line 1
-    invoke-super {p0, p1, p2}, Lk3/ex0;->a(Landroid/media/AudioTrack;Z)V
-
-    const-wide/16 p1, 0x0
+    iget-object v0, p0, Lk3/gx0;->j:Lk3/yf;
 
     .line 2
-    iput-wide p1, p0, Lk3/gx0;->k:J
+    iget-object v0, v0, Lk3/yf;->h:Ljava/lang/Object;
+
+    check-cast v0, Lk3/ex0;
 
     .line 3
-    iput-wide p1, p0, Lk3/gx0;->l:J
-
-    .line 4
-    iput-wide p1, p0, Lk3/gx0;->m:J
+    invoke-interface {v0}, Lk3/ex0;->T()V
 
     return-void
-.end method
-
-.method public final c()Z
-    .locals 7
-
-    .line 1
-    iget-object v0, p0, Lk3/ex0;->a:Landroid/media/AudioTrack;
-
-    iget-object v1, p0, Lk3/gx0;->j:Landroid/media/AudioTimestamp;
-
-    invoke-virtual {v0, v1}, Landroid/media/AudioTrack;->getTimestamp(Landroid/media/AudioTimestamp;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_1
-
-    .line 2
-    iget-object v1, p0, Lk3/gx0;->j:Landroid/media/AudioTimestamp;
-
-    iget-wide v1, v1, Landroid/media/AudioTimestamp;->framePosition:J
-
-    .line 3
-    iget-wide v3, p0, Lk3/gx0;->l:J
-
-    cmp-long v5, v3, v1
-
-    if-lez v5, :cond_0
-
-    .line 4
-    iget-wide v3, p0, Lk3/gx0;->k:J
-
-    const-wide/16 v5, 0x1
-
-    add-long/2addr v3, v5
-
-    iput-wide v3, p0, Lk3/gx0;->k:J
-
-    .line 5
-    :cond_0
-    iput-wide v1, p0, Lk3/gx0;->l:J
-
-    .line 6
-    iget-wide v3, p0, Lk3/gx0;->k:J
-
-    const/16 v5, 0x20
-
-    shl-long/2addr v3, v5
-
-    add-long/2addr v1, v3
-
-    iput-wide v1, p0, Lk3/gx0;->m:J
-
-    :cond_1
-    return v0
-.end method
-
-.method public final d()J
-    .locals 2
-
-    iget-object v0, p0, Lk3/gx0;->j:Landroid/media/AudioTimestamp;
-
-    iget-wide v0, v0, Landroid/media/AudioTimestamp;->nanoTime:J
-
-    return-wide v0
-.end method
-
-.method public final e()J
-    .locals 2
-
-    iget-wide v0, p0, Lk3/gx0;->m:J
-
-    return-wide v0
 .end method

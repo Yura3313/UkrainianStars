@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field public final f:Lcom/google/android/gms/common/Feature;
+.field public final g:Lcom/google/android/gms/common/Feature;
 
 
 # direct methods
@@ -19,7 +19,7 @@
     invoke-direct {p0}, Ljava/lang/UnsupportedOperationException;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lcom/google/android/gms/common/api/UnsupportedApiCallException;->f:Lcom/google/android/gms/common/Feature;
+    iput-object p1, p0, Lcom/google/android/gms/common/api/UnsupportedApiCallException;->g:Lcom/google/android/gms/common/Feature;
 
     return-void
 .end method
@@ -32,7 +32,7 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/gms/common/api/UnsupportedApiCallException;->f:Lcom/google/android/gms/common/Feature;
+    iget-object v0, p0, Lcom/google/android/gms/common/api/UnsupportedApiCallException;->g:Lcom/google/android/gms/common/Feature;
 
     invoke-static {v0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
 

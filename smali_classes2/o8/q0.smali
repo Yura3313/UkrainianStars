@@ -1,394 +1,431 @@
 .class public final Lo8/q0;
-.super Lo8/p;
-.source "UserBotControlMessageDM.java"
+.super La8/g;
+.source "UserAttachmentMessageDM.java"
 
 
 # instance fields
-.field public A:Ljava/lang/String;
+.field public final synthetic b:Li7/c;
 
-.field public B:Ljava/lang/String;
+.field public final synthetic c:Ln8/j;
 
-.field public C:Ljava/lang/String;
+.field public final synthetic d:Lcom/helpshift/util/f;
 
-.field public D:Ljava/lang/String;
+.field public final synthetic e:Lo8/r0;
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;JLo8/o;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;I)V
-    .locals 9
+.method public constructor <init>(Lo8/r0;Li7/c;Ln8/j;Lcom/helpshift/util/f;)V
+    .locals 0
 
-    move-object v8, p0
+    iput-object p1, p0, Lo8/q0;->e:Lo8/r0;
 
-    const/16 v6, 0x15
+    iput-object p2, p0, Lo8/q0;->b:Li7/c;
 
-    move-object v0, p0
+    iput-object p3, p0, Lo8/q0;->c:Ln8/j;
 
-    move-object v1, p1
+    iput-object p4, p0, Lo8/q0;->d:Lcom/helpshift/util/f;
 
-    move-object v2, p2
-
-    move-wide v3, p3
-
-    move-object v5, p5
-
-    move/from16 v7, p10
-
-    .line 1
-    invoke-direct/range {v0 .. v7}, Lo8/p;-><init>(Ljava/lang/String;Ljava/lang/String;JLo8/o;II)V
-
-    move-object v0, p6
-
-    .line 2
-    iput-object v0, v8, Lo8/q0;->A:Ljava/lang/String;
-
-    move-object/from16 v0, p7
-
-    .line 3
-    iput-object v0, v8, Lo8/q0;->B:Ljava/lang/String;
-
-    move-object/from16 v0, p8
-
-    .line 4
-    iput-object v0, v8, Lo8/q0;->C:Ljava/lang/String;
-
-    move-object/from16 v0, p9
-
-    .line 5
-    iput-object v0, v8, Lo8/q0;->D:Ljava/lang/String;
-
-    return-void
-.end method
-
-.method public constructor <init>(Lo8/q0;)V
-    .locals 1
-
-    .line 6
-    invoke-direct {p0, p1}, Lo8/p;-><init>(Lo8/p;)V
-
-    .line 7
-    iget-object v0, p1, Lo8/q0;->A:Ljava/lang/String;
-
-    iput-object v0, p0, Lo8/q0;->A:Ljava/lang/String;
-
-    .line 8
-    iget-object v0, p1, Lo8/q0;->B:Ljava/lang/String;
-
-    iput-object v0, p0, Lo8/q0;->B:Ljava/lang/String;
-
-    .line 9
-    iget-object v0, p1, Lo8/q0;->C:Ljava/lang/String;
-
-    iput-object v0, p0, Lo8/q0;->C:Ljava/lang/String;
-
-    .line 10
-    iget-object p1, p1, Lo8/q0;->D:Ljava/lang/String;
-
-    iput-object p1, p0, Lo8/q0;->D:Ljava/lang/String;
+    invoke-direct {p0}, La8/g;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a()Ljava/lang/Object;
-    .locals 1
-
-    new-instance v0, Lo8/q0;
-
-    invoke-direct {v0, p0}, Lo8/q0;-><init>(Lo8/q0;)V
-
-    return-object v0
-.end method
-
-.method public final b()Lo8/y;
-    .locals 1
-
-    new-instance v0, Lo8/q0;
-
-    invoke-direct {v0, p0}, Lo8/q0;-><init>(Lo8/q0;)V
-
-    return-object v0
-.end method
-
-.method public final h(Ljava/lang/String;)Lc8/j;
-    .locals 7
+.method public final a()V
+    .locals 14
 
     .line 1
-    new-instance v1, Lc8/l;
+    iget-object v0, p0, Lo8/q0;->e:Lo8/r0;
 
-    iget-object v0, p0, Lo8/y;->t:La8/f;
+    iget-object v1, p0, Lo8/q0;->b:Li7/c;
 
-    iget-object v2, p0, Lo8/y;->u:Le8/s;
+    iget-object v2, p0, Lo8/q0;->c:Ln8/j;
 
-    invoke-direct {v1, p1, v0, v2}, Lc8/l;-><init>(Ljava/lang/String;La8/f;Le8/s;)V
+    iget-object v3, p0, Lo8/q0;->d:Lcom/helpshift/util/f;
+
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 2
-    new-instance v6, Lc8/i;
+    invoke-static {v1}, Lae/v;->g(Li7/c;)Ljava/util/HashMap;
 
-    iget-object v2, p0, Lo8/y;->u:Le8/s;
+    move-result-object v4
+
+    const-string v5, "body"
+
+    const-string v6, "Attachment sent"
 
     .line 3
-    new-instance v3, Lb8/b;
+    invoke-virtual {v4, v5, v6}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    invoke-direct {v3}, Lb8/b;-><init>()V
+    const-string v5, "type"
+
+    const-string v6, "at"
 
     .line 4
-    iget-object v0, p0, Lo8/y;->m:Ljava/lang/Long;
+    invoke-virtual {v4, v5, v6}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 5
-    invoke-static {v0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+    invoke-virtual {v0}, Lo8/r0;->r()Ljava/lang/String;
 
-    move-result-object v5
+    move-result-object v6
 
-    move-object v0, v6
+    const-string v7, "filePath"
 
-    move-object v4, p1
-
-    invoke-direct/range {v0 .. v5}, Lc8/i;-><init>(Lc8/j;Le8/s;Lb2/a0;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v4, v7, v6}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 6
-    new-instance p1, Lk3/m7;
+    iget-object v6, v0, Lo8/n;->B:Ljava/lang/String;
 
-    iget-object v0, p0, Lo8/y;->u:Le8/s;
+    const-string v7, "originalFileName"
 
-    invoke-direct {p1, v6, v0}, Lk3/m7;-><init>(Lc8/j;Le8/s;)V
+    invoke-virtual {v4, v7, v6}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    const/4 v6, 0x0
 
     .line 7
-    new-instance v0, Lk3/s9;
+    :try_start_0
+    invoke-virtual {v0, v2}, Lo8/z;->f(Ln8/j;)Ljava/lang/String;
 
-    invoke-direct {v0, p1}, Lk3/s9;-><init>(Ljava/lang/Object;)V
+    move-result-object v11
 
     .line 8
-    new-instance p1, Lg7/a;
+    new-instance v8, Lc8/n;
 
-    invoke-direct {p1, v0}, Lg7/a;-><init>(Ljava/lang/Object;)V
+    iget-object v7, v0, Lo8/z;->u:La8/f;
+
+    iget-object v9, v0, Lo8/z;->v:Le8/s;
+
+    invoke-direct {v8, v11, v7, v9}, Lc8/n;-><init>(Ljava/lang/String;La8/f;Le8/s;)V
 
     .line 9
-    new-instance v0, Lk1/i;
+    new-instance v13, Lc8/i;
 
-    iget-object v1, p0, Lo8/y;->u:Le8/s;
-
-    invoke-direct {v0, p1, v1}, Lk1/i;-><init>(Lc8/j;Le8/s;)V
+    iget-object v9, v0, Lo8/z;->v:Le8/s;
 
     .line 10
-    new-instance p1, Lk3/bu;
+    new-instance v10, Lb8/b;
 
-    invoke-direct {p1, v0}, Lk3/bu;-><init>(Ljava/lang/Object;)V
+    invoke-direct {v10}, Lb8/b;-><init>()V
 
     .line 11
-    new-instance v0, Lc8/e;
-
-    invoke-direct {v0, p1}, Lc8/e;-><init>(Lc8/j;)V
+    iget-object v7, v0, Lo8/z;->n:Ljava/lang/Long;
 
     .line 12
-    new-instance p1, Ln1/a;
+    invoke-static {v7}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
 
-    invoke-direct {p1, v0}, Ln1/a;-><init>(Ljava/lang/Object;)V
+    move-result-object v12
 
-    return-object p1
-.end method
+    move-object v7, v13
 
-.method public final j()Z
-    .locals 1
+    invoke-direct/range {v7 .. v12}, Lc8/i;-><init>(Lc8/j;Le8/s;Lb2/z;Ljava/lang/String;Ljava/lang/String;)V
 
-    const/4 v0, 0x0
+    .line 13
+    new-instance v7, Lk3/s9;
 
-    return v0
-.end method
+    invoke-direct {v7, v13}, Lk3/s9;-><init>(Ljava/lang/Object;)V
 
-.method public final k(Lo8/y;)V
-    .locals 1
+    .line 14
+    new-instance v8, Lk1/i;
 
-    .line 1
-    invoke-super {p0, p1}, Lo8/p;->k(Lo8/y;)V
+    iget-object v9, v0, Lo8/z;->v:Le8/s;
 
-    .line 2
-    instance-of v0, p1, Lo8/q0;
+    invoke-direct {v8, v7, v9}, Lk1/i;-><init>(Lc8/j;Le8/s;)V
 
-    if-eqz v0, :cond_0
+    .line 15
+    new-instance v7, Lk3/au;
 
-    .line 3
-    check-cast p1, Lo8/q0;
+    invoke-direct {v7, v8}, Lk3/au;-><init>(Ljava/lang/Object;)V
 
-    .line 4
-    iget-object v0, p1, Lo8/q0;->A:Ljava/lang/String;
+    .line 16
+    new-instance v8, Lf8/h;
 
-    iput-object v0, p0, Lo8/q0;->A:Ljava/lang/String;
+    invoke-direct {v8, v4}, Lf8/h;-><init>(Ljava/util/Map;)V
 
-    .line 5
-    iget-object v0, p1, Lo8/q0;->B:Ljava/lang/String;
+    .line 17
+    new-instance v4, Ln1/a;
 
-    iput-object v0, p0, Lo8/q0;->B:Ljava/lang/String;
+    invoke-direct {v4, v7}, Ln1/a;-><init>(Ljava/lang/Object;)V
 
-    .line 6
-    iget-object v0, p1, Lo8/q0;->C:Ljava/lang/String;
+    .line 18
+    invoke-virtual {v4, v8}, Ln1/a;->b(Lf8/h;)Lf8/i;
 
-    iput-object v0, p0, Lo8/q0;->C:Ljava/lang/String;
+    move-result-object v4
 
-    .line 7
-    iget-object p1, p1, Lo8/q0;->D:Ljava/lang/String;
+    .line 19
+    iget-object v7, v0, Lo8/z;->v:Le8/s;
 
-    iput-object p1, p0, Lo8/q0;->D:Ljava/lang/String;
+    .line 20
+    check-cast v7, Le8/j;
+
+    invoke-virtual {v7}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 21
+    new-instance v7, Le8/k;
+
+    invoke-direct {v7}, Le8/k;-><init>()V
+
+    .line 22
+    iget-object v4, v4, Lf8/i;->b:Ljava/lang/String;
+    :try_end_0
+    .catch Lcom/helpshift/common/exception/RootAPIException; {:try_start_0 .. :try_end_0} :catch_1
+
+    .line 23
+    :try_start_1
+    new-instance v8, Lorg/json/JSONObject;
+
+    invoke-direct {v8, v4}, Lorg/json/JSONObject;-><init>(Ljava/lang/String;)V
+
+    .line 24
+    invoke-virtual {v7, v8}, Le8/k;->V(Lorg/json/JSONObject;)Lo8/r0;
+
+    move-result-object v4
+    :try_end_1
+    .catch Lorg/json/JSONException; {:try_start_1 .. :try_end_1} :catch_0
+    .catch Lcom/helpshift/common/exception/RootAPIException; {:try_start_1 .. :try_end_1} :catch_1
+
+    .line 25
+    :try_start_2
+    iget-object v7, v4, Lo8/z;->j:Ljava/lang/String;
+
+    iput-object v7, v0, Lo8/z;->j:Ljava/lang/String;
+
+    .line 26
+    iget-object v7, v4, Lo8/z;->l:Lo8/p;
+
+    iput-object v7, v0, Lo8/z;->l:Lo8/p;
+
+    .line 27
+    invoke-virtual {v0, v4}, Lo8/n;->k(Lo8/z;)V
+
+    const/4 v4, 0x6
+
+    .line 28
+    invoke-virtual {v0, v4}, Lo8/r0;->t(I)V
+
+    .line 29
+    iget-object v4, v0, Lo8/z;->v:Le8/s;
+
+    check-cast v4, Le8/j;
+
+    invoke-virtual {v4}, Le8/j;->c()Le8/b;
+
+    move-result-object v4
+
+    invoke-virtual {v4, v0}, Le8/b;->e(Lo8/z;)V
+
+    .line 30
+    invoke-virtual {v0}, Lo8/z;->l()V
+
+    .line 31
+    new-instance v4, Ljava/util/HashMap;
+
+    invoke-direct {v4}, Ljava/util/HashMap;-><init>()V
+
+    const-string v7, "id"
+
+    .line 32
+    move-object v8, v2
+
+    check-cast v8, Lq8/d;
+
+    .line 33
+    iget-object v8, v8, Lq8/d;->i:Ljava/lang/String;
+
+    .line 34
+    invoke-virtual {v4, v7, v8}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 35
+    move-object v7, v2
+
+    check-cast v7, Lq8/d;
+
+    .line 36
+    iget-object v7, v7, Lq8/d;->J:Ljava/lang/String;
+
+    .line 37
+    invoke-static {v7}, La5/b0;->g(Ljava/lang/String;)Z
+
+    move-result v7
+
+    if-eqz v7, :cond_0
+
+    const-string v7, "acid"
+
+    .line 38
+    check-cast v2, Lq8/d;
+
+    .line 39
+    iget-object v2, v2, Lq8/d;->J:Ljava/lang/String;
+
+    .line 40
+    invoke-virtual {v4, v7, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     :cond_0
-    return-void
-.end method
+    const-string v2, "url"
 
-.method public final q(Li7/c;Ln8/j;)V
-    .locals 3
+    .line 41
+    invoke-virtual {v4, v5, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 1
-    invoke-static {p1}, Lmd/g;->g(Li7/c;)Ljava/util/HashMap;
+    .line 42
+    iget-object v2, v0, Lo8/z;->u:La8/f;
 
-    move-result-object v0
+    .line 43
+    iget-object v2, v2, La8/f;->h:Lk7/a;
 
-    const-string v1, "origin"
+    const/16 v5, 0x10
 
-    const-string v2, "mobile"
+    .line 44
+    invoke-virtual {v2, v5, v4}, Lk7/a;->d(ILjava/util/Map;)V
 
-    .line 2
-    invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .line 45
+    iget-object v2, v0, Lo8/z;->u:La8/f;
 
-    .line 3
-    iget-object v1, p0, Lo8/q0;->A:Ljava/lang/String;
+    .line 46
+    iget-object v2, v2, La8/f;->j:Ls9/h;
 
-    const-string v2, "type"
+    const-string v4, "User sent an attachment"
 
-    invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .line 47
+    invoke-virtual {v2, v4}, Ls9/h;->a(Ljava/lang/String;)V
 
-    .line 4
-    iget-object v1, p0, Lo8/q0;->B:Ljava/lang/String;
+    if-eqz v3, :cond_1
 
-    const-string v2, "chatbot_cancelled_reason"
-
-    invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 5
-    iget-object v1, p0, Lo8/y;->j:Ljava/lang/String;
-
-    const-string v2, "body"
-
-    invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 6
-    iget-object v1, p0, Lo8/q0;->C:Ljava/lang/String;
-
-    const-string v2, "chatbot_info"
-
-    invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 7
-    iget-object v1, p0, Lo8/q0;->D:Ljava/lang/String;
-
-    const-string v2, "refers"
-
-    invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 8
-    check-cast p2, Lq8/d;
-
-    invoke-virtual {p2}, Lq8/d;->b()Z
-
-    move-result v1
-
-    if-eqz v1, :cond_0
-
-    .line 9
-    invoke-virtual {p0, p2}, Lo8/y;->g(Ln8/j;)Ljava/lang/String;
-
-    move-result-object p2
+    .line 48
+    invoke-interface {v3, v6}, Lcom/helpshift/util/f;->onSuccess(Ljava/lang/Object;)V
 
     goto :goto_0
 
-    .line 10
-    :cond_0
-    invoke-virtual {p0, p2}, Lo8/y;->f(Ln8/j;)Ljava/lang/String;
+    :catch_0
+    move-exception v2
 
-    move-result-object p2
+    .line 49
+    sget-object v4, Ld8/c;->g:Ld8/c;
 
-    .line 11
+    const-string v5, "Parsing exception while reading user attachment message"
+
+    invoke-static {v2, v4, v5}, Lcom/helpshift/common/exception/RootAPIException;->b(Ljava/lang/Exception;Ld8/a;Ljava/lang/String;)Lcom/helpshift/common/exception/RootAPIException;
+
+    move-result-object v2
+
+    throw v2
+    :try_end_2
+    .catch Lcom/helpshift/common/exception/RootAPIException; {:try_start_2 .. :try_end_2} :catch_1
+
+    :catch_1
+    move-exception v2
+
+    .line 50
+    iget-object v4, v2, Lcom/helpshift/common/exception/RootAPIException;->i:Ld8/a;
+
+    sget-object v5, Ld8/b;->n:Ld8/b;
+
+    const/4 v7, 0x4
+
+    if-ne v4, v5, :cond_2
+
+    .line 51
+    invoke-virtual {v2}, Lcom/helpshift/common/exception/RootAPIException;->a()I
+
+    move-result v4
+
+    sget-object v5, Lc8/k;->i:Ljava/lang/Integer;
+
+    invoke-virtual {v5}, Ljava/lang/Integer;->intValue()I
+
+    move-result v5
+
+    if-ne v4, v5, :cond_2
+
+    const/4 v1, 0x1
+
+    .line 52
+    iput-boolean v1, v0, Lo8/n;->H:Z
+
+    .line 53
+    invoke-virtual {v0, v7}, Lo8/r0;->t(I)V
+
+    .line 54
+    iget-object v1, v0, Lo8/z;->v:Le8/s;
+
+    check-cast v1, Le8/j;
+
+    invoke-virtual {v1}, Le8/j;->c()Le8/b;
+
+    move-result-object v1
+
+    invoke-virtual {v1, v0}, Le8/b;->e(Lo8/z;)V
+
+    .line 55
+    invoke-virtual {v0}, Lo8/z;->l()V
+
+    :cond_1
     :goto_0
-    :try_start_0
-    invoke-virtual {p0, p2, v0}, Lo8/p;->p(Ljava/lang/String;Ljava/util/Map;)Lf8/i;
-
-    move-result-object p1
-    :try_end_0
-    .catch Lcom/helpshift/common/exception/RootAPIException; {:try_start_0 .. :try_end_0} :catch_0
-
-    .line 12
-    iget-object p2, p0, Lo8/y;->u:Le8/s;
-
-    check-cast p2, Le8/j;
-
-    invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 13
-    new-instance p2, Le8/k;
-
-    invoke-direct {p2}, Le8/k;-><init>()V
-
-    .line 14
-    iget-object p1, p1, Lf8/i;->b:Ljava/lang/String;
-
-    const/4 v0, 0x0
-
-    .line 15
-    invoke-virtual {p2, p1, v0}, Le8/k;->p(Ljava/lang/String;Z)Lo8/y;
-
-    move-result-object p1
-
-    check-cast p1, Lo8/q0;
-
-    .line 16
-    invoke-virtual {p0, p1}, Lo8/q0;->k(Lo8/y;)V
-
-    .line 17
-    iget-object p1, p1, Lo8/y;->i:Ljava/lang/String;
-
-    iput-object p1, p0, Lo8/y;->i:Ljava/lang/String;
-
-    .line 18
-    iget-object p1, p0, Lo8/y;->u:Le8/s;
-
-    check-cast p1, Le8/j;
-
-    invoke-virtual {p1}, Le8/j;->c()Le8/b;
-
-    move-result-object p1
-
-    invoke-virtual {p1, p0}, Le8/b;->e(Lo8/y;)V
-
     return-void
 
-    :catch_0
-    move-exception p2
-
-    .line 19
-    iget-object v0, p2, Lcom/helpshift/common/exception/RootAPIException;->h:Ld8/a;
-
-    sget-object v1, Ld8/b;->y:Ld8/b;
-
-    if-eq v0, v1, :cond_1
-
-    iget-object v0, p2, Lcom/helpshift/common/exception/RootAPIException;->h:Ld8/a;
-
-    sget-object v1, Ld8/b;->x:Ld8/b;
-
-    if-ne v0, v1, :cond_2
-
-    .line 20
-    :cond_1
-    iget-object v0, p0, Lo8/y;->t:La8/f;
-
-    .line 21
-    iget-object v0, v0, La8/f;->t:Lf7/a;
-
-    .line 22
-    iget-object v1, p2, Lcom/helpshift/common/exception/RootAPIException;->h:Ld8/a;
-
-    invoke-virtual {v0, p1, v1}, Lf7/a;->a(Li7/c;Ld8/a;)V
-
-    .line 23
+    .line 56
     :cond_2
-    throw p2
+    iget-object v4, v2, Lcom/helpshift/common/exception/RootAPIException;->i:Ld8/a;
+
+    sget-object v5, Ld8/b;->y:Ld8/b;
+
+    if-eq v4, v5, :cond_3
+
+    sget-object v5, Ld8/b;->z:Ld8/b;
+
+    if-ne v4, v5, :cond_4
+
+    .line 57
+    :cond_3
+    iget-object v5, v0, Lo8/z;->u:La8/f;
+
+    .line 58
+    iget-object v5, v5, La8/f;->t:Lf7/a;
+
+    .line 59
+    invoke-virtual {v5, v1, v4}, Lf7/a;->a(Li7/c;Ld8/a;)V
+
+    .line 60
+    :cond_4
+    iget-object v1, v2, Lcom/helpshift/common/exception/RootAPIException;->i:Ld8/a;
+
+    sget-object v4, Ld8/b;->v:Ld8/b;
+
+    if-ne v1, v4, :cond_5
+
+    .line 61
+    invoke-virtual {v0, v7}, Lo8/r0;->t(I)V
+
+    goto :goto_1
+
+    .line 62
+    :cond_5
+    iget-object v1, v0, Lo8/z;->j:Ljava/lang/String;
+
+    invoke-static {v1}, La5/b0;->d(Ljava/lang/String;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_6
+
+    const/4 v1, 0x3
+
+    .line 63
+    invoke-virtual {v0, v1}, Lo8/r0;->t(I)V
+
+    :cond_6
+    :goto_1
+    if-eqz v3, :cond_7
+
+    .line 64
+    invoke-interface {v3, v2}, Lcom/helpshift/util/f;->a(Ljava/lang/Object;)V
+
+    .line 65
+    :cond_7
+    invoke-static {v2, v6, v6}, Lcom/helpshift/common/exception/RootAPIException;->b(Ljava/lang/Exception;Ld8/a;Ljava/lang/String;)Lcom/helpshift/common/exception/RootAPIException;
+
+    move-result-object v0
+
+    .line 66
+    throw v0
 .end method

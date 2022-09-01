@@ -41,11 +41,11 @@
 
     const-string v0, "host"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "event"
 
-    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     invoke-super {p0, p1, p2}, Lf0/a;->d(Landroid/view/View;Landroid/view/accessibility/AccessibilityEvent;)V
@@ -54,7 +54,7 @@
     iget-object p1, p0, Lcom/supercell/id/view/Checkbox$a;->d:Lcom/supercell/id/view/Checkbox;
 
     .line 3
-    iget-boolean p1, p1, Lcom/supercell/id/view/Checkbox;->i:Z
+    iget-boolean p1, p1, Lcom/supercell/id/view/Checkbox;->j:Z
 
     .line 4
     invoke-virtual {p2, p1}, Landroid/view/accessibility/AccessibilityRecord;->setChecked(Z)V
@@ -67,7 +67,7 @@
 
     const-string v0, "host"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     iget-object v0, p0, Lf0/a;->a:Landroid/view/View$AccessibilityDelegate;
@@ -87,7 +87,7 @@
     iget-object p1, p0, Lcom/supercell/id/view/Checkbox$a;->d:Lcom/supercell/id/view/Checkbox;
 
     .line 6
-    iget-boolean p1, p1, Lcom/supercell/id/view/Checkbox;->i:Z
+    iget-boolean p1, p1, Lcom/supercell/id/view/Checkbox;->j:Z
 
     .line 7
     iget-object p2, p2, Lg0/c;->a:Landroid/view/accessibility/AccessibilityNodeInfo;

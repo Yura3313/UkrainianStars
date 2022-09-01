@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field public final synthetic f:Lpd/t$e$c;
+.field public final synthetic g:Lpd/t$e$c;
 
 
 # direct methods
 .method public constructor <init>(Lpd/t$e$c;)V
     .locals 0
 
-    iput-object p1, p0, Lpd/t$e$c$a;->f:Lpd/t$e$c;
+    iput-object p1, p0, Lpd/t$e$c$a;->g:Lpd/t$e$c;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -38,17 +38,17 @@
     .locals 2
 
     .line 1
-    iget-object p1, p0, Lpd/t$e$c$a;->f:Lpd/t$e$c;
+    iget-object p1, p0, Lpd/t$e$c$a;->g:Lpd/t$e$c;
 
     monitor-enter p1
 
     :try_start_0
-    iget-object v0, p0, Lpd/t$e$c$a;->f:Lpd/t$e$c;
+    iget-object v0, p0, Lpd/t$e$c$a;->g:Lpd/t$e$c;
 
     const/4 v1, 0x0
 
     .line 2
-    iput-boolean v1, v0, Lpd/t$e$c;->s:Z
+    iput-boolean v1, v0, Lpd/t$e$c;->t:Z
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -57,7 +57,7 @@
 
     .line 4
     :try_start_1
-    iget-object p1, v0, Lpd/t$e$c;->E:Landroid/media/MediaPlayer;
+    iget-object p1, v0, Lpd/t$e$c;->F:Landroid/media/MediaPlayer;
 
     .line 5
     invoke-virtual {p1}, Landroid/media/MediaPlayer;->start()V

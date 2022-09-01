@@ -8,13 +8,13 @@
 
 
 # instance fields
-.field public g0:Landroid/widget/ProgressBar;
-
-.field public h0:Landroid/view/View;
+.field public h0:Landroid/widget/ProgressBar;
 
 .field public i0:Landroid/view/View;
 
-.field public j0:Lf9/e;
+.field public j0:Landroid/view/View;
+
+.field public k0:Lf9/e;
 
 
 # direct methods
@@ -54,7 +54,7 @@
     .locals 3
 
     .line 1
-    iget-object v0, p0, Lua/d;->j0:Lf9/e;
+    iget-object v0, p0, Lua/d;->k0:Lf9/e;
 
     const/4 v1, 0x0
 
@@ -79,7 +79,7 @@
     const/4 v0, 0x1
 
     .line 8
-    iput-boolean v0, p0, Landroidx/fragment/app/Fragment;->K:Z
+    iput-boolean v0, p0, Landroidx/fragment/app/Fragment;->L:Z
 
     return-void
 .end method
@@ -88,7 +88,7 @@
     .locals 3
 
     .line 1
-    iget-object v0, p0, Lua/d;->j0:Lf9/e;
+    iget-object v0, p0, Lua/d;->k0:Lf9/e;
 
     .line 2
     iget-object v1, v0, Lf9/e;->g:La8/f;
@@ -106,7 +106,7 @@
     .locals 3
 
     .line 1
-    iget-object v0, p0, Lua/d;->j0:Lf9/e;
+    iget-object v0, p0, Lua/d;->k0:Lf9/e;
 
     .line 2
     iget-object v1, v0, Lf9/e;->a:Lqb/g;
@@ -129,7 +129,7 @@
     iput-object v2, v0, Lqb/c;->b:Lqb/d;
 
     .line 8
-    sget-object v0, Lcom/helpshift/util/u;->b:Landroid/content/Context;
+    sget-object v0, Lcom/helpshift/util/t;->b:Landroid/content/Context;
 
     .line 9
     invoke-static {v0}, Lga/d;->a(Landroid/content/Context;)Lga/d;
@@ -151,16 +151,16 @@
     const/4 v0, 0x1
 
     .line 1
-    iput-boolean v0, p0, Landroidx/fragment/app/Fragment;->K:Z
+    iput-boolean v0, p0, Landroidx/fragment/app/Fragment;->L:Z
 
     .line 2
-    sget-object v0, Lcom/helpshift/util/u;->c:Le7/g;
+    sget-object v0, Lcom/helpshift/util/t;->c:Le7/g;
 
     .line 3
     iget-object v0, v0, Le7/g;->f:La8/f;
 
     .line 4
-    iget-object v1, p0, Lua/d;->j0:Lf9/e;
+    iget-object v1, p0, Lua/d;->k0:Lf9/e;
 
     .line 5
     iget-object v1, v1, Lf9/e;->a:Lqb/g;
@@ -173,7 +173,7 @@
     invoke-virtual {v1, v0, v2}, Lqb/c;->c(La8/f;Lqb/d;)V
 
     .line 7
-    iget-object v1, p0, Lua/d;->j0:Lf9/e;
+    iget-object v1, p0, Lua/d;->k0:Lf9/e;
 
     .line 8
     iget-object v1, v1, Lf9/e;->b:Lqb/g;
@@ -186,7 +186,7 @@
     invoke-virtual {v1, v0, v2}, Lqb/c;->c(La8/f;Lqb/d;)V
 
     .line 10
-    iget-object v1, p0, Lua/d;->j0:Lf9/e;
+    iget-object v1, p0, Lua/d;->k0:Lf9/e;
 
     .line 11
     iget-object v1, v1, Lf9/e;->c:Lqb/g;
@@ -208,7 +208,7 @@
     invoke-virtual {p0, v0}, Lab/i;->P0(Ljava/lang/String;)V
 
     .line 14
-    sget-object v0, Lcom/helpshift/util/u;->b:Landroid/content/Context;
+    sget-object v0, Lcom/helpshift/util/t;->b:Landroid/content/Context;
 
     .line 15
     invoke-static {v0}, Lga/d;->a(Landroid/content/Context;)Lga/d;
@@ -219,7 +219,7 @@
     invoke-virtual {v0, p0}, Lga/d;->c(Lga/e;)V
 
     .line 17
-    iget-object v0, p0, Lua/d;->j0:Lf9/e;
+    iget-object v0, p0, Lua/d;->k0:Lf9/e;
 
     .line 18
     iget-object v1, v0, Lf9/e;->d:Lt8/f;
@@ -240,7 +240,7 @@
     const-string v2, "Conversation setup already complete."
 
     .line 20
-    invoke-static {v1, v2, v3, v3}, Landroidx/savedstate/d;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v1, v2, v3, v3}, Le5/i;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
 
     .line 21
     iget-object v1, v0, Lf9/e;->g:La8/f;
@@ -279,7 +279,7 @@
     const-string v2, "Helpshift_ConvStpFrg"
 
     .line 24
-    invoke-static {v2, v1, v3, v3}, Landroidx/savedstate/d;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v2, v1, v3, v3}, Le5/i;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
 
     .line 25
     iget-object v1, v0, Lt8/f;->d:Lf9/f;
@@ -303,7 +303,7 @@
 
     move-result-object v1
 
-    sget-object v2, Li7/g;->h:Li7/g;
+    sget-object v2, Li7/g;->i:Li7/g;
 
     if-ne v1, v2, :cond_2
 
@@ -334,14 +334,14 @@
 
     check-cast p2, Landroid/widget/ProgressBar;
 
-    iput-object p2, p0, Lua/d;->g0:Landroid/widget/ProgressBar;
+    iput-object p2, p0, Lua/d;->h0:Landroid/widget/ProgressBar;
 
     .line 2
     invoke-virtual {p0}, Lab/i;->y()Landroid/content/Context;
 
     move-result-object p2
 
-    iget-object v0, p0, Lua/d;->g0:Landroid/widget/ProgressBar;
+    iget-object v0, p0, Lua/d;->h0:Landroid/widget/ProgressBar;
 
     invoke-virtual {v0}, Landroid/widget/ProgressBar;->getIndeterminateDrawable()Landroid/graphics/drawable/Drawable;
 
@@ -356,7 +356,7 @@
 
     move-result-object p2
 
-    iput-object p2, p0, Lua/d;->h0:Landroid/view/View;
+    iput-object p2, p0, Lua/d;->i0:Landroid/view/View;
 
     .line 4
     sget p2, Lcom/helpshift/R$id;->offline_error_view:I
@@ -365,7 +365,7 @@
 
     move-result-object p2
 
-    iput-object p2, p0, Lua/d;->i0:Landroid/view/View;
+    iput-object p2, p0, Lua/d;->j0:Landroid/view/View;
 
     .line 5
     sget p2, Lcom/helpshift/R$id;->info_icon:I
@@ -387,10 +387,10 @@
 
     const v0, 0x1010036
 
-    invoke-static {p2, p1, v0}, Lcom/helpshift/util/g0;->e(Landroid/content/Context;Landroid/graphics/drawable/Drawable;I)V
+    invoke-static {p2, p1, v0}, Lcom/helpshift/util/e0;->e(Landroid/content/Context;Landroid/graphics/drawable/Drawable;I)V
 
     .line 7
-    sget-object p1, Lcom/helpshift/util/u;->c:Le7/g;
+    sget-object p1, Lcom/helpshift/util/t;->c:Le7/g;
 
     .line 8
     new-instance p2, Lt8/f;
@@ -422,7 +422,7 @@
     invoke-direct {v0, v1, p1, p2, p0}, Lf9/e;-><init>(Le8/s;La8/f;Lt8/f;Lr8/a;)V
 
     .line 13
-    iput-object v0, p0, Lua/d;->j0:Lf9/e;
+    iput-object v0, p0, Lua/d;->k0:Lf9/e;
 
     return-void
 .end method
@@ -431,7 +431,7 @@
     .locals 3
 
     .line 1
-    iget-object v0, p0, Lua/d;->j0:Lf9/e;
+    iget-object v0, p0, Lua/d;->k0:Lf9/e;
 
     .line 2
     iget-object v1, v0, Lf9/e;->g:La8/f;

@@ -14,13 +14,13 @@
 
 
 # static fields
-.field public static final enum f:Lud/g;
-
 .field public static final enum g:Lud/g;
 
 .field public static final enum h:Lud/g;
 
-.field public static final synthetic i:[Lud/g;
+.field public static final enum i:Lud/g;
+
+.field public static final synthetic j:[Lud/g;
 
 
 # direct methods
@@ -39,7 +39,7 @@
 
     invoke-direct {v1, v2, v3}, Lud/g;-><init>(Ljava/lang/String;I)V
 
-    sput-object v1, Lud/g;->f:Lud/g;
+    sput-object v1, Lud/g;->g:Lud/g;
 
     aput-object v1, v0, v3
 
@@ -51,7 +51,7 @@
 
     invoke-direct {v1, v2, v3}, Lud/g;-><init>(Ljava/lang/String;I)V
 
-    sput-object v1, Lud/g;->g:Lud/g;
+    sput-object v1, Lud/g;->h:Lud/g;
 
     aput-object v1, v0, v3
 
@@ -63,11 +63,11 @@
 
     invoke-direct {v1, v2, v3}, Lud/g;-><init>(Ljava/lang/String;I)V
 
-    sput-object v1, Lud/g;->h:Lud/g;
+    sput-object v1, Lud/g;->i:Lud/g;
 
     aput-object v1, v0, v3
 
-    sput-object v0, Lud/g;->i:[Lud/g;
+    sput-object v0, Lud/g;->j:[Lud/g;
 
     return-void
 .end method
@@ -102,7 +102,7 @@
 .method public static values()[Lud/g;
     .locals 1
 
-    sget-object v0, Lud/g;->i:[Lud/g;
+    sget-object v0, Lud/g;->j:[Lud/g;
 
     invoke-virtual {v0}, [Lud/g;->clone()Ljava/lang/Object;
 

@@ -6,13 +6,13 @@
 
 
 # instance fields
-.field public f:I
+.field public g:I
 
-.field public g:Z
+.field public h:Z
 
-.field public h:Ljava/util/Iterator;
+.field public i:Ljava/util/Iterator;
 
-.field public final synthetic i:Lr3/w3;
+.field public final synthetic j:Lr3/w3;
 
 
 # direct methods
@@ -20,14 +20,14 @@
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lr3/b4;->i:Lr3/w3;
+    iput-object p1, p0, Lr3/b4;->j:Lr3/w3;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const/4 p1, -0x1
 
     .line 2
-    iput p1, p0, Lr3/b4;->f:I
+    iput p1, p0, Lr3/b4;->g:I
 
     return-void
 .end method
@@ -38,15 +38,15 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lr3/b4;->h:Ljava/util/Iterator;
+    iget-object v0, p0, Lr3/b4;->i:Ljava/util/Iterator;
 
     if-nez v0, :cond_0
 
     .line 2
-    iget-object v0, p0, Lr3/b4;->i:Lr3/w3;
+    iget-object v0, p0, Lr3/b4;->j:Lr3/w3;
 
     .line 3
-    iget-object v0, v0, Lr3/w3;->h:Ljava/util/Map;
+    iget-object v0, v0, Lr3/w3;->i:Ljava/util/Map;
 
     .line 4
     invoke-interface {v0}, Ljava/util/Map;->entrySet()Ljava/util/Set;
@@ -57,11 +57,11 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lr3/b4;->h:Ljava/util/Iterator;
+    iput-object v0, p0, Lr3/b4;->i:Ljava/util/Iterator;
 
     .line 5
     :cond_0
-    iget-object v0, p0, Lr3/b4;->h:Ljava/util/Iterator;
+    iget-object v0, p0, Lr3/b4;->i:Ljava/util/Iterator;
 
     return-object v0
 .end method
@@ -70,16 +70,16 @@
     .locals 3
 
     .line 1
-    iget v0, p0, Lr3/b4;->f:I
+    iget v0, p0, Lr3/b4;->g:I
 
     const/4 v1, 0x1
 
     add-int/2addr v0, v1
 
-    iget-object v2, p0, Lr3/b4;->i:Lr3/w3;
+    iget-object v2, p0, Lr3/b4;->j:Lr3/w3;
 
     .line 2
-    iget-object v2, v2, Lr3/w3;->g:Ljava/util/List;
+    iget-object v2, v2, Lr3/w3;->h:Ljava/util/List;
 
     .line 3
     invoke-interface {v2}, Ljava/util/List;->size()I
@@ -88,10 +88,10 @@
 
     if-lt v0, v2, :cond_1
 
-    iget-object v0, p0, Lr3/b4;->i:Lr3/w3;
+    iget-object v0, p0, Lr3/b4;->j:Lr3/w3;
 
     .line 4
-    iget-object v0, v0, Lr3/w3;->h:Ljava/util/Map;
+    iget-object v0, v0, Lr3/w3;->i:Ljava/util/Map;
 
     .line 5
     invoke-interface {v0}, Ljava/util/Map;->isEmpty()Z
@@ -128,19 +128,19 @@
     const/4 v0, 0x1
 
     .line 1
-    iput-boolean v0, p0, Lr3/b4;->g:Z
+    iput-boolean v0, p0, Lr3/b4;->h:Z
 
     .line 2
-    iget v1, p0, Lr3/b4;->f:I
+    iget v1, p0, Lr3/b4;->g:I
 
     add-int/2addr v1, v0
 
-    iput v1, p0, Lr3/b4;->f:I
+    iput v1, p0, Lr3/b4;->g:I
 
-    iget-object v0, p0, Lr3/b4;->i:Lr3/w3;
+    iget-object v0, p0, Lr3/b4;->j:Lr3/w3;
 
     .line 3
-    iget-object v0, v0, Lr3/w3;->g:Ljava/util/List;
+    iget-object v0, v0, Lr3/w3;->h:Ljava/util/List;
 
     .line 4
     invoke-interface {v0}, Ljava/util/List;->size()I
@@ -150,13 +150,13 @@
     if-ge v1, v0, :cond_0
 
     .line 5
-    iget-object v0, p0, Lr3/b4;->i:Lr3/w3;
+    iget-object v0, p0, Lr3/b4;->j:Lr3/w3;
 
     .line 6
-    iget-object v0, v0, Lr3/w3;->g:Ljava/util/List;
+    iget-object v0, v0, Lr3/w3;->h:Ljava/util/List;
 
     .line 7
-    iget v1, p0, Lr3/b4;->f:I
+    iget v1, p0, Lr3/b4;->g:I
 
     invoke-interface {v0, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -185,30 +185,30 @@
     .locals 3
 
     .line 1
-    iget-boolean v0, p0, Lr3/b4;->g:Z
+    iget-boolean v0, p0, Lr3/b4;->h:Z
 
     if-eqz v0, :cond_1
 
     const/4 v0, 0x0
 
     .line 2
-    iput-boolean v0, p0, Lr3/b4;->g:Z
+    iput-boolean v0, p0, Lr3/b4;->h:Z
 
     .line 3
-    iget-object v0, p0, Lr3/b4;->i:Lr3/w3;
+    iget-object v0, p0, Lr3/b4;->j:Lr3/w3;
 
-    sget v1, Lr3/w3;->l:I
+    sget v1, Lr3/w3;->m:I
 
     .line 4
     invoke-virtual {v0}, Lr3/w3;->h()V
 
     .line 5
-    iget v0, p0, Lr3/b4;->f:I
+    iget v0, p0, Lr3/b4;->g:I
 
-    iget-object v1, p0, Lr3/b4;->i:Lr3/w3;
+    iget-object v1, p0, Lr3/b4;->j:Lr3/w3;
 
     .line 6
-    iget-object v1, v1, Lr3/w3;->g:Ljava/util/List;
+    iget-object v1, v1, Lr3/w3;->h:Ljava/util/List;
 
     .line 7
     invoke-interface {v1}, Ljava/util/List;->size()I
@@ -218,13 +218,13 @@
     if-ge v0, v1, :cond_0
 
     .line 8
-    iget-object v0, p0, Lr3/b4;->i:Lr3/w3;
+    iget-object v0, p0, Lr3/b4;->j:Lr3/w3;
 
-    iget v1, p0, Lr3/b4;->f:I
+    iget v1, p0, Lr3/b4;->g:I
 
     add-int/lit8 v2, v1, -0x1
 
-    iput v2, p0, Lr3/b4;->f:I
+    iput v2, p0, Lr3/b4;->g:I
 
     .line 9
     invoke-virtual {v0, v1}, Lr3/w3;->d(I)Ljava/lang/Object;

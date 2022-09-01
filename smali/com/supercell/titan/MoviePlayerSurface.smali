@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field public f:Landroid/view/SurfaceView;
+.field public g:Landroid/view/SurfaceView;
 
-.field public g:Landroid/view/SurfaceHolder$Callback;
+.field public h:Landroid/view/SurfaceHolder$Callback;
 
 
 # direct methods
@@ -26,7 +26,7 @@
 .method public getSurfaceView()Landroid/view/SurfaceView;
     .locals 1
 
-    iget-object v0, p0, Lcom/supercell/titan/MoviePlayerSurface;->f:Landroid/view/SurfaceView;
+    iget-object v0, p0, Lcom/supercell/titan/MoviePlayerSurface;->g:Landroid/view/SurfaceView;
 
     return-object v0
 .end method
@@ -35,7 +35,7 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/supercell/titan/MoviePlayerSurface;->f:Landroid/view/SurfaceView;
+    iget-object v0, p0, Lcom/supercell/titan/MoviePlayerSurface;->g:Landroid/view/SurfaceView;
 
     invoke-virtual {v0}, Landroid/view/SurfaceView;->getHolder()Landroid/view/SurfaceHolder;
 
@@ -44,7 +44,7 @@
     invoke-interface {v0, p0}, Landroid/view/SurfaceHolder;->removeCallback(Landroid/view/SurfaceHolder$Callback;)V
 
     .line 2
-    iget-object v0, p0, Lcom/supercell/titan/MoviePlayerSurface;->f:Landroid/view/SurfaceView;
+    iget-object v0, p0, Lcom/supercell/titan/MoviePlayerSurface;->g:Landroid/view/SurfaceView;
 
     invoke-virtual {v0}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
 
@@ -52,7 +52,7 @@
 
     check-cast v0, Landroid/view/ViewGroup;
 
-    iget-object v1, p0, Lcom/supercell/titan/MoviePlayerSurface;->f:Landroid/view/SurfaceView;
+    iget-object v1, p0, Lcom/supercell/titan/MoviePlayerSurface;->g:Landroid/view/SurfaceView;
 
     invoke-virtual {v0, v1}, Landroid/view/ViewGroup;->removeView(Landroid/view/View;)V
 
@@ -63,7 +63,7 @@
     .locals 2
 
     .line 1
-    iput-object p1, p0, Lcom/supercell/titan/MoviePlayerSurface;->g:Landroid/view/SurfaceHolder$Callback;
+    iput-object p1, p0, Lcom/supercell/titan/MoviePlayerSurface;->h:Landroid/view/SurfaceHolder$Callback;
 
     .line 2
     new-instance p1, Landroid/view/SurfaceView;
@@ -74,7 +74,7 @@
 
     invoke-direct {p1, v0}, Landroid/view/SurfaceView;-><init>(Landroid/content/Context;)V
 
-    iput-object p1, p0, Lcom/supercell/titan/MoviePlayerSurface;->f:Landroid/view/SurfaceView;
+    iput-object p1, p0, Lcom/supercell/titan/MoviePlayerSurface;->g:Landroid/view/SurfaceView;
 
     .line 3
     invoke-virtual {p1}, Landroid/view/SurfaceView;->getHolder()Landroid/view/SurfaceHolder;
@@ -95,7 +95,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/supercell/titan/MoviePlayerSurface;->f:Landroid/view/SurfaceView;
+    iget-object v1, p0, Lcom/supercell/titan/MoviePlayerSurface;->g:Landroid/view/SurfaceView;
 
     invoke-virtual {v0, v1, p1}, Landroid/app/Activity;->addContentView(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
 
@@ -106,7 +106,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/supercell/titan/MoviePlayerSurface;->g:Landroid/view/SurfaceHolder$Callback;
+    iget-object v0, p0, Lcom/supercell/titan/MoviePlayerSurface;->h:Landroid/view/SurfaceHolder$Callback;
 
     if-eqz v0, :cond_0
 
@@ -121,7 +121,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/supercell/titan/MoviePlayerSurface;->g:Landroid/view/SurfaceHolder$Callback;
+    iget-object v0, p0, Lcom/supercell/titan/MoviePlayerSurface;->h:Landroid/view/SurfaceHolder$Callback;
 
     if-eqz v0, :cond_0
 
@@ -136,7 +136,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/supercell/titan/MoviePlayerSurface;->g:Landroid/view/SurfaceHolder$Callback;
+    iget-object v0, p0, Lcom/supercell/titan/MoviePlayerSurface;->h:Landroid/view/SurfaceHolder$Callback;
 
     if-eqz v0, :cond_0
 

@@ -356,7 +356,7 @@
     const/4 v1, 0x1
 
     .line 3
-    iput-boolean v1, v0, Ls4/g;->j:Z
+    iput-boolean v1, v0, Ls4/g;->k:Z
 
     return-object v0
 .end method

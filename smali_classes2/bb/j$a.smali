@@ -68,7 +68,7 @@
     if-lez p2, :cond_1
 
     .line 5
-    sget-object v2, Lcom/helpshift/util/x;->a:Ljava/util/HashSet;
+    sget-object v2, Lcom/helpshift/util/w;->a:Ljava/util/HashSet;
 
     int-to-float v2, p2
 
@@ -83,7 +83,7 @@
     float-to-int v2, v2
 
     .line 6
-    invoke-static {p3, p2, v0, v2}, Lcom/helpshift/util/x;->a(IIII)I
+    invoke-static {p3, p2, v0, v2}, Lcom/helpshift/util/w;->a(IIII)I
 
     move-result p2
 

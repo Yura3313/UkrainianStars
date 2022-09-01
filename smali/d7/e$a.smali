@@ -29,7 +29,7 @@
 
 
 # instance fields
-.field public final f:F
+.field public final g:F
 
 
 # direct methods
@@ -40,7 +40,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput p1, p0, Ld7/e$a;->f:F
+    iput p1, p0, Ld7/e$a;->g:F
 
     return-void
 .end method
@@ -66,7 +66,7 @@
     iget p2, p2, Ld7/d;->c:F
 
     .line 4
-    iget v0, p0, Ld7/e$a;->f:F
+    iget v0, p0, Ld7/e$a;->g:F
 
     sub-float/2addr p2, v0
 
@@ -78,7 +78,7 @@
     iget p1, p1, Ld7/d;->c:F
 
     .line 6
-    iget v0, p0, Ld7/e$a;->f:F
+    iget v0, p0, Ld7/e$a;->g:F
 
     sub-float/2addr p1, v0
 

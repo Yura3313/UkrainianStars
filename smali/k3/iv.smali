@@ -1,53 +1,134 @@
 .class public final Lk3/iv;
 .super Ljava/lang/Object;
-.source "com.google.android.gms:play-services-gass@@19.3.0"
+.source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lk3/xr0;
+.implements Lk3/x2;
 
 
-# static fields
-.field public static final a:Lk3/iv;
+# instance fields
+.field public final synthetic g:I
+
+.field public h:Ljava/lang/Object;
 
 
 # direct methods
-.method public static constructor <clinit>()V
+.method public constructor <init>(Lk3/ev;)V
     .locals 1
 
-    new-instance v0, Lk3/iv;
+    const/4 v0, 0x0
 
-    invoke-direct {v0}, Lk3/iv;-><init>()V
+    iput v0, p0, Lk3/iv;->g:I
 
-    sput-object v0, Lk3/iv;->a:Lk3/iv;
+    .line 2
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 3
+    new-instance v0, Ljava/lang/ref/WeakReference;
+
+    invoke-direct {v0, p1}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
+
+    iput-object v0, p0, Lk3/iv;->h:Ljava/lang/Object;
 
     return-void
 .end method
 
-.method public constructor <init>()V
+.method public synthetic constructor <init>(Lk3/ev;Lk3/kc;)V
     .locals 0
 
+    const/4 p2, 0x0
+
+    iput p2, p0, Lk3/iv;->g:I
+
+    .line 4
+    invoke-direct {p0, p1}, Lk3/iv;-><init>(Lk3/ev;)V
+
+    return-void
+.end method
+
+.method public constructor <init>(Lk3/gw;)V
+    .locals 1
+
+    const/4 v0, 0x1
+
+    iput v0, p0, Lk3/iv;->g:I
+
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lk3/iv;->h:Ljava/lang/Object;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(I)Z
-    .locals 0
+.method public final c(Ljava/lang/Object;Ljava/util/Map;)V
+    .locals 1
 
-    invoke-static {p1}, Lj7/a;->a(I)I
+    iget p2, p0, Lk3/iv;->g:I
 
-    move-result p1
+    packed-switch p2, :pswitch_data_0
 
-    if-eqz p1, :cond_0
+    goto :goto_1
 
-    const/4 p1, 0x1
+    .line 1
+    :pswitch_0
+    iget-object p1, p0, Lk3/iv;->h:Ljava/lang/Object;
 
-    return p1
+    check-cast p1, Ljava/lang/ref/WeakReference;
 
+    invoke-virtual {p1}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Lk3/ev;
+
+    if-nez p1, :cond_0
+
+    goto :goto_0
+
+    .line 2
     :cond_0
-    const/4 p1, 0x0
+    iget-object p1, p1, Lk3/ev;->g:Lk3/fr;
 
-    return p1
+    .line 3
+    invoke-virtual {p1}, Lk3/fr;->O()V
+
+    :goto_0
+    return-void
+
+    .line 4
+    :goto_1
+    iget-object p2, p0, Lk3/iv;->h:Ljava/lang/Object;
+
+    check-cast p2, Lk3/gw;
+
+    check-cast p1, Lk3/gh;
+
+    invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 5
+    invoke-interface {p1}, Lk3/gh;->getView()Landroid/view/View;
+
+    move-result-object p1
+
+    const/4 v0, 0x0
+
+    invoke-virtual {p1, v0}, Landroid/view/View;->setVisibility(I)V
+
+    .line 6
+    iget-object p1, p2, Lk3/gw;->c:Lk3/mm;
+
+    const/4 p2, 0x1
+
+    .line 7
+    iput-boolean p2, p1, Lk3/mm;->l:Z
+
+    return-void
+
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

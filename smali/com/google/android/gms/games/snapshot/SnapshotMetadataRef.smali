@@ -31,7 +31,7 @@
     return-object v0
 .end method
 
-.method public final N1()Lcom/google/android/gms/games/Player;
+.method public final M1()Lcom/google/android/gms/games/Player;
     .locals 1
 
     const/4 v0, 0x0
@@ -51,7 +51,7 @@
     return-wide v0
 .end method
 
-.method public final V1()Z
+.method public final U1()Z
     .locals 1
 
     const-string v0, "pending_change_count"

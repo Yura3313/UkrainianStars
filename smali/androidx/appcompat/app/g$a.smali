@@ -75,7 +75,7 @@
     .line 2
     iget-object v1, p0, Landroidx/appcompat/app/g$a;->a:Landroidx/appcompat/app/AlertController$b;
 
-    iget-object v2, v0, Landroidx/appcompat/app/g;->h:Landroidx/appcompat/app/AlertController;
+    iget-object v2, v0, Landroidx/appcompat/app/g;->i:Landroidx/appcompat/app/AlertController;
 
     .line 3
     iget-object v3, v1, Landroidx/appcompat/app/AlertController$b;->e:Landroid/view/View;

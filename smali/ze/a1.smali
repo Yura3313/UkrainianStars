@@ -7,19 +7,25 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lze/d1<",
-        "Lze/b1;",
+        "Lze/c1;",
         ">;"
     }
 .end annotation
 
 
+# static fields
+.field public static final l:Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;
+
+
 # instance fields
-.field public final j:Lre/l;
+.field private volatile _invoked:I
+
+.field public final k:Lre/l;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lre/l<",
             "Ljava/lang/Throwable;",
-            "Lie/h;",
+            "Lie/i;",
             ">;"
         }
     .end annotation
@@ -27,27 +33,49 @@
 
 
 # direct methods
-.method public constructor <init>(Lze/b1;Lre/l;)V
+.method public static constructor <clinit>()V
+    .locals 2
+
+    const-class v0, Lze/a1;
+
+    const-string v1, "_invoked"
+
+    invoke-static {v0, v1}, Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;->newUpdater(Ljava/lang/Class;Ljava/lang/String;)Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;
+
+    move-result-object v0
+
+    sput-object v0, Lze/a1;->l:Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;
+
+    return-void
+.end method
+
+.method public constructor <init>(Lze/c1;Lre/l;)V
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lze/b1;",
+            "Lze/c1;",
             "Lre/l<",
             "-",
             "Ljava/lang/Throwable;",
-            "Lie/h;",
+            "Lie/i;",
             ">;)V"
         }
     .end annotation
 
     const-string v0, "job"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-direct {p0, p1}, Lze/d1;-><init>(Lze/b1;)V
+    .line 1
+    invoke-direct {p0, p1}, Lze/d1;-><init>(Lze/c1;)V
 
-    iput-object p2, p0, Lze/a1;->j:Lre/l;
+    iput-object p2, p0, Lze/a1;->k:Lre/l;
+
+    const/4 p1, 0x0
+
+    .line 2
+    iput p1, p0, Lze/a1;->_invoked:I
 
     return-void
 .end method
@@ -61,25 +89,38 @@
 
     invoke-virtual {p0, p1}, Lze/a1;->l(Ljava/lang/Throwable;)V
 
-    sget-object p1, Lie/h;->a:Lie/h;
+    sget-object p1, Lie/i;->a:Lie/i;
 
     return-object p1
 .end method
 
 .method public final l(Ljava/lang/Throwable;)V
-    .locals 1
+    .locals 3
 
-    iget-object v0, p0, Lze/a1;->j:Lre/l;
+    sget-object v0, Lze/a1;->l:Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;
+
+    const/4 v1, 0x0
+
+    const/4 v2, 0x1
+
+    invoke-virtual {v0, p0, v1, v2}, Ljava/util/concurrent/atomic/AtomicIntegerFieldUpdater;->compareAndSet(Ljava/lang/Object;II)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    iget-object v0, p0, Lze/a1;->k:Lre/l;
 
     invoke-interface {v0, p1}, Lre/l;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
+    :cond_0
     return-void
 .end method
 
 .method public final toString()Ljava/lang/String;
     .locals 2
 
-    const-string v0, "InvokeOnCompletion["
+    const-string v0, "InvokeOnCancelling["
 
     .line 1
     invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -87,7 +128,7 @@
     move-result-object v0
 
     .line 2
-    invoke-static {p0}, Landroidx/savedstate/d;->k(Ljava/lang/Object;)Ljava/lang/String;
+    invoke-static {p0}, Le0/f;->g(Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -97,7 +138,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 
-    invoke-static {p0}, Landroidx/savedstate/d;->l(Ljava/lang/Object;)Ljava/lang/String;
+    invoke-static {p0}, Le0/f;->h(Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v1
 

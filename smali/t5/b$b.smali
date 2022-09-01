@@ -3,7 +3,7 @@
 .source "com.google.firebase:firebase-common@@16.0.2"
 
 # interfaces
-.implements Lb2/c$a;
+.implements Lb2/b$a;
 
 
 # annotations
@@ -102,10 +102,10 @@
     if-eqz v1, :cond_1
 
     .line 6
-    invoke-static {p0}, Lb2/c;->c(Landroid/app/Application;)V
+    invoke-static {p0}, Lb2/b;->c(Landroid/app/Application;)V
 
     .line 7
-    sget-object p0, Lb2/c;->j:Lb2/c;
+    sget-object p0, Lb2/b;->k:Lb2/b;
 
     .line 8
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -115,7 +115,7 @@
 
     .line 10
     :try_start_0
-    iget-object v1, p0, Lb2/c;->h:Ljava/util/ArrayList;
+    iget-object v1, p0, Lb2/b;->i:Ljava/util/ArrayList;
 
     invoke-virtual {v1, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 

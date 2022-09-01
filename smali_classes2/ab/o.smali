@@ -18,49 +18,49 @@
 
 
 # instance fields
-.field public A0:Lcom/helpshift/support/Faq;
+.field public A0:Ljava/lang/String;
 
-.field public B0:Ljava/lang/String;
+.field public B0:Lcom/helpshift/support/Faq;
 
-.field public g0:Z
+.field public C0:Ljava/lang/String;
 
-.field public h0:I
+.field public h0:Z
 
-.field public i0:Lla/e;
+.field public i0:I
 
-.field public j0:Lcom/helpshift/support/webkit/CustomWebView;
+.field public j0:Lla/e;
 
-.field public k0:Landroid/view/View;
+.field public k0:Lcom/helpshift/support/webkit/CustomWebView;
 
-.field public l0:Landroid/widget/TextView;
+.field public l0:Landroid/view/View;
 
-.field public m0:Landroid/widget/Button;
+.field public m0:Landroid/widget/TextView;
 
 .field public n0:Landroid/widget/Button;
 
 .field public o0:Landroid/widget/Button;
 
-.field public p0:Lcom/helpshift/support/Faq;
+.field public p0:Landroid/widget/Button;
 
-.field public q0:Ljava/lang/String;
+.field public q0:Lcom/helpshift/support/Faq;
 
 .field public r0:Ljava/lang/String;
 
-.field public s0:Z
+.field public s0:Ljava/lang/String;
 
-.field public t0:Landroid/view/View;
+.field public t0:Z
 
-.field public u0:Lpa/b;
+.field public u0:Landroid/view/View;
 
-.field public v0:Z
+.field public v0:Lpa/b;
 
-.field public w0:I
+.field public w0:Z
 
-.field public x0:Z
+.field public x0:I
 
-.field public y0:Lab/o$b;
+.field public y0:Z
 
-.field public z0:Ljava/lang/String;
+.field public z0:Lab/o$b;
 
 
 # direct methods
@@ -73,15 +73,15 @@
     const/4 v0, 0x1
 
     .line 2
-    iput v0, p0, Lab/o;->h0:I
+    iput v0, p0, Lab/o;->i0:I
 
     const/4 v0, 0x0
 
     .line 3
-    iput v0, p0, Lab/o;->w0:I
+    iput v0, p0, Lab/o;->x0:I
 
     .line 4
-    iput-boolean v0, p0, Lab/o;->x0:Z
+    iput-boolean v0, p0, Lab/o;->y0:Z
 
     return-void
 .end method
@@ -98,13 +98,13 @@
     invoke-virtual {v0, p0}, Landroidx/fragment/app/Fragment;->D0(Landroid/os/Bundle;)V
 
     .line 3
-    iput p1, v0, Lab/o;->h0:I
+    iput p1, v0, Lab/o;->i0:I
 
     .line 4
-    iput-boolean p2, v0, Lab/o;->x0:Z
+    iput-boolean p2, v0, Lab/o;->y0:Z
 
     .line 5
-    iput-object p3, v0, Lab/o;->y0:Lab/o$b;
+    iput-object p3, v0, Lab/o;->z0:Lab/o$b;
 
     return-object v0
 .end method
@@ -123,7 +123,7 @@
     .locals 8
 
     .line 1
-    iget-object v0, p0, Lab/o;->p0:Lcom/helpshift/support/Faq;
+    iget-object v0, p0, Lab/o;->q0:Lcom/helpshift/support/Faq;
 
     if-nez v0, :cond_0
 
@@ -131,10 +131,10 @@
 
     .line 2
     :cond_0
-    iget-object v0, v0, Lcom/helpshift/support/Faq;->n:Ljava/lang/String;
+    iget-object v0, v0, Lcom/helpshift/support/Faq;->o:Ljava/lang/String;
 
     .line 3
-    iget-object v1, p0, Lab/o;->i0:Lla/e;
+    iget-object v1, p0, Lab/o;->j0:Lla/e;
 
     .line 4
     iget-object v1, v1, Lla/e;->c:Lhb/b;
@@ -230,7 +230,7 @@
     const-string v4, "Error in setIsHelpful"
 
     .line 12
-    invoke-static {v3, v4, v2}, Landroidx/savedstate/d;->g(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v3, v4, v2}, Le5/i;->i(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_1
 
@@ -240,7 +240,7 @@
 
     .line 14
     :goto_2
-    sget-object v1, Lcom/helpshift/util/u;->c:Le7/g;
+    sget-object v1, Lcom/helpshift/util/t;->c:Le7/g;
 
     .line 15
     invoke-virtual {v1}, Le7/g;->g()Lv9/e;
@@ -326,20 +326,20 @@
 
     invoke-direct {v0, p1}, Lla/e;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lab/o;->i0:Lla/e;
+    iput-object v0, p0, Lab/o;->j0:Lla/e;
 
     .line 3
-    invoke-static {p0}, Lj1/q;->e(Landroidx/fragment/app/Fragment;)Lab/p;
+    invoke-static {p0}, Ls4/e;->h(Landroidx/fragment/app/Fragment;)Lab/p;
 
     move-result-object p1
 
     if-eqz p1, :cond_0
 
     .line 4
-    iget-object p1, p1, Lab/p;->j0:Lpa/b;
+    iget-object p1, p1, Lab/p;->k0:Lpa/b;
 
     .line 5
-    iput-object p1, p0, Lab/o;->u0:Lpa/b;
+    iput-object p1, p0, Lab/o;->v0:Lpa/b;
 
     .line 6
     :cond_0
@@ -357,7 +357,7 @@
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget v0, p0, Lab/o;->h0:I
+    iget v0, p0, Lab/o;->i0:I
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -365,7 +365,7 @@
 
     move-result-object p1
 
-    iput-object p1, p0, Lab/i;->a0:Ljava/lang/String;
+    iput-object p1, p0, Lab/i;->b0:Ljava/lang/String;
 
     :catch_0
     return-void
@@ -380,10 +380,10 @@
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
     .line 2
-    iget-object v1, p0, Lab/o;->p0:Lcom/helpshift/support/Faq;
+    iget-object v1, p0, Lab/o;->q0:Lcom/helpshift/support/Faq;
 
     .line 3
-    iget-object v1, v1, Lcom/helpshift/support/Faq;->n:Ljava/lang/String;
+    iget-object v1, v1, Lcom/helpshift/support/Faq;->o:Ljava/lang/String;
 
     const-string v2, "id"
 
@@ -395,7 +395,7 @@
 
     move-result-object v1
 
-    invoke-static {v1}, Lk3/tj;->a(Landroid/content/Context;)Z
+    invoke-static {v1}, Lk3/f4;->c(Landroid/content/Context;)Z
 
     move-result v1
 
@@ -408,16 +408,16 @@
     invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 6
-    iget-object v1, p0, Lab/o;->B0:Ljava/lang/String;
+    iget-object v1, p0, Lab/o;->C0:Ljava/lang/String;
 
-    invoke-static {v1}, Lcom/google/android/play/core/appupdate/g;->b(Ljava/lang/String;)Z
+    invoke-static {v1}, La5/b0;->d(Ljava/lang/String;)Z
 
     move-result v1
 
     if-nez v1, :cond_0
 
     .line 7
-    iget-object v1, p0, Lab/o;->B0:Ljava/lang/String;
+    iget-object v1, p0, Lab/o;->C0:Ljava/lang/String;
 
     const-string v2, "src"
 
@@ -425,7 +425,7 @@
 
     .line 8
     :cond_0
-    sget-object v1, Lcom/helpshift/util/u;->c:Le7/g;
+    sget-object v1, Lcom/helpshift/util/t;->c:Le7/g;
 
     .line 9
     iget-object v1, v1, Le7/g;->b:Lk7/a;
@@ -436,15 +436,15 @@
     invoke-virtual {v1, v2, v0}, Lk7/a;->d(ILjava/util/Map;)V
 
     .line 11
-    iget-object v0, p0, Lab/o;->y0:Lab/o$b;
+    iget-object v0, p0, Lab/o;->z0:Lab/o$b;
 
     if-eqz v0, :cond_1
 
     .line 12
-    iget-object v1, p0, Lab/o;->p0:Lcom/helpshift/support/Faq;
+    iget-object v1, p0, Lab/o;->q0:Lcom/helpshift/support/Faq;
 
     .line 13
-    iget-object v6, v1, Lcom/helpshift/support/Faq;->n:Ljava/lang/String;
+    iget-object v6, v1, Lcom/helpshift/support/Faq;->o:Ljava/lang/String;
 
     .line 14
     check-cast v0, Lqa/h;
@@ -452,9 +452,9 @@
     .line 15
     iget-object v1, v0, Lqa/h;->c:Lqa/t;
 
-    iget-object v3, v1, Lqa/t;->m0:Lf9/i;
+    iget-object v3, v1, Lqa/t;->n0:Lf9/i;
 
-    iget-object v5, v0, Lqa/h;->a:Lo8/t;
+    iget-object v5, v0, Lqa/h;->a:Lo8/u;
 
     iget-object v7, v0, Lqa/h;->b:Ljava/lang/String;
 
@@ -462,14 +462,14 @@
     invoke-virtual {v3}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 17
-    invoke-static {v7}, Lcom/google/android/play/core/appupdate/g;->b(Ljava/lang/String;)Z
+    invoke-static {v7}, La5/b0;->d(Ljava/lang/String;)Z
 
     move-result v0
 
     if-nez v0, :cond_1
 
     .line 18
-    iget-object v4, v5, Lo8/y;->l:Ljava/lang/Long;
+    iget-object v4, v5, Lo8/z;->m:Ljava/lang/Long;
 
     .line 19
     iget-object v0, v3, Lf9/i;->o:La8/f;
@@ -478,7 +478,7 @@
 
     move-object v2, v1
 
-    invoke-direct/range {v2 .. v7}, Lf9/p;-><init>(Lf9/i;Ljava/lang/Long;Lo8/t;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct/range {v2 .. v7}, Lf9/p;-><init>(Lf9/i;Ljava/lang/Long;Lo8/u;Ljava/lang/String;Ljava/lang/String;)V
 
     invoke-virtual {v0, v1}, La8/f;->h(La8/g;)V
 
@@ -486,7 +486,7 @@
     const/4 v0, 0x1
 
     .line 20
-    iput-boolean v0, p0, Lab/o;->g0:Z
+    iput-boolean v0, p0, Lab/o;->h0:Z
 
     return-void
 .end method
@@ -498,7 +498,7 @@
     invoke-super {p0, p1}, Landroidx/fragment/app/Fragment;->V(Landroid/os/Bundle;)V
 
     .line 2
-    iget-object p1, p0, Landroidx/fragment/app/Fragment;->l:Landroid/os/Bundle;
+    iget-object p1, p0, Landroidx/fragment/app/Fragment;->m:Landroid/os/Bundle;
 
     if-eqz p1, :cond_0
 
@@ -511,7 +511,7 @@
 
     move-result p1
 
-    iput-boolean p1, p0, Lab/o;->v0:Z
+    iput-boolean p1, p0, Lab/o;->w0:Z
 
     :cond_0
     return-void
@@ -523,11 +523,11 @@
     if-eqz p1, :cond_0
 
     .line 1
-    iput p1, p0, Lab/o;->w0:I
+    iput p1, p0, Lab/o;->x0:I
 
     .line 2
     :cond_0
-    iget p1, p0, Lab/o;->h0:I
+    iget p1, p0, Lab/o;->i0:I
 
     const/16 v0, 0x8
 
@@ -536,7 +536,7 @@
     if-ne p1, v1, :cond_1
 
     .line 3
-    iget-object p1, p0, Lab/o;->k0:Landroid/view/View;
+    iget-object p1, p0, Lab/o;->l0:Landroid/view/View;
 
     invoke-virtual {p1, v0}, Landroid/view/View;->setVisibility(I)V
 
@@ -544,7 +544,7 @@
 
     .line 4
     :cond_1
-    iget p1, p0, Lab/o;->w0:I
+    iget p1, p0, Lab/o;->x0:I
 
     const/4 v2, -0x1
 
@@ -562,12 +562,12 @@
 
     .line 5
     :cond_2
-    iget-object p1, p0, Lab/o;->k0:Landroid/view/View;
+    iget-object p1, p0, Lab/o;->l0:Landroid/view/View;
 
     invoke-virtual {p1, v3}, Landroid/view/View;->setVisibility(I)V
 
     .line 6
-    iget-object p1, p0, Lab/o;->l0:Landroid/widget/TextView;
+    iget-object p1, p0, Lab/o;->m0:Landroid/widget/TextView;
 
     invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->I()Landroid/content/res/Resources;
 
@@ -582,24 +582,24 @@
     invoke-virtual {p1, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 7
-    iget-object p1, p0, Lab/o;->l0:Landroid/widget/TextView;
+    iget-object p1, p0, Lab/o;->m0:Landroid/widget/TextView;
 
     const/16 v1, 0x11
 
     invoke-virtual {p1, v1}, Landroid/widget/TextView;->setGravity(I)V
 
     .line 8
-    iget-object p1, p0, Lab/o;->o0:Landroid/widget/Button;
+    iget-object p1, p0, Lab/o;->p0:Landroid/widget/Button;
 
     invoke-virtual {p1, v0}, Landroid/view/View;->setVisibility(I)V
 
     .line 9
-    iget-object p1, p0, Lab/o;->m0:Landroid/widget/Button;
+    iget-object p1, p0, Lab/o;->n0:Landroid/widget/Button;
 
     invoke-virtual {p1, v0}, Landroid/view/View;->setVisibility(I)V
 
     .line 10
-    iget-object p1, p0, Lab/o;->n0:Landroid/widget/Button;
+    iget-object p1, p0, Lab/o;->o0:Landroid/widget/Button;
 
     invoke-virtual {p1, v0}, Landroid/view/View;->setVisibility(I)V
 
@@ -607,12 +607,12 @@
 
     .line 11
     :cond_3
-    iget-object p1, p0, Lab/o;->k0:Landroid/view/View;
+    iget-object p1, p0, Lab/o;->l0:Landroid/view/View;
 
     invoke-virtual {p1, v3}, Landroid/view/View;->setVisibility(I)V
 
     .line 12
-    iget-object p1, p0, Lab/o;->l0:Landroid/widget/TextView;
+    iget-object p1, p0, Lab/o;->m0:Landroid/widget/TextView;
 
     invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->I()Landroid/content/res/Resources;
 
@@ -627,17 +627,17 @@
     invoke-virtual {p1, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 13
-    iget-object p1, p0, Lab/o;->o0:Landroid/widget/Button;
+    iget-object p1, p0, Lab/o;->p0:Landroid/widget/Button;
 
     invoke-virtual {p1, v0}, Landroid/view/View;->setVisibility(I)V
 
     .line 14
-    iget-object p1, p0, Lab/o;->m0:Landroid/widget/Button;
+    iget-object p1, p0, Lab/o;->n0:Landroid/widget/Button;
 
     invoke-virtual {p1, v3}, Landroid/view/View;->setVisibility(I)V
 
     .line 15
-    iget-object p1, p0, Lab/o;->n0:Landroid/widget/Button;
+    iget-object p1, p0, Lab/o;->o0:Landroid/widget/Button;
 
     invoke-virtual {p1, v3}, Landroid/view/View;->setVisibility(I)V
 
@@ -645,12 +645,12 @@
 
     .line 16
     :cond_4
-    iget-object p1, p0, Lab/o;->k0:Landroid/view/View;
+    iget-object p1, p0, Lab/o;->l0:Landroid/view/View;
 
     invoke-virtual {p1, v3}, Landroid/view/View;->setVisibility(I)V
 
     .line 17
-    iget-object p1, p0, Lab/o;->l0:Landroid/widget/TextView;
+    iget-object p1, p0, Lab/o;->m0:Landroid/widget/TextView;
 
     invoke-virtual {p0}, Landroidx/fragment/app/Fragment;->I()Landroid/content/res/Resources;
 
@@ -672,7 +672,7 @@
     if-eqz p1, :cond_5
 
     .line 19
-    iget-object p1, p0, Lab/o;->o0:Landroid/widget/Button;
+    iget-object p1, p0, Lab/o;->p0:Landroid/widget/Button;
 
     invoke-virtual {p1, v3}, Landroid/view/View;->setVisibility(I)V
 
@@ -680,18 +680,18 @@
 
     .line 20
     :cond_5
-    iget-object p1, p0, Lab/o;->o0:Landroid/widget/Button;
+    iget-object p1, p0, Lab/o;->p0:Landroid/widget/Button;
 
     invoke-virtual {p1, v0}, Landroid/view/View;->setVisibility(I)V
 
     .line 21
     :goto_0
-    iget-object p1, p0, Lab/o;->m0:Landroid/widget/Button;
+    iget-object p1, p0, Lab/o;->n0:Landroid/widget/Button;
 
     invoke-virtual {p1, v0}, Landroid/view/View;->setVisibility(I)V
 
     .line 22
-    iget-object p1, p0, Lab/o;->n0:Landroid/widget/Button;
+    iget-object p1, p0, Lab/o;->o0:Landroid/widget/Button;
 
     invoke-virtual {p1, v0}, Landroid/view/View;->setVisibility(I)V
 
@@ -703,10 +703,10 @@
     .locals 13
 
     .line 1
-    iput-object p1, p0, Lab/o;->p0:Lcom/helpshift/support/Faq;
+    iput-object p1, p0, Lab/o;->q0:Lcom/helpshift/support/Faq;
 
     .line 2
-    iget-object v0, p0, Lab/o;->j0:Lcom/helpshift/support/webkit/CustomWebView;
+    iget-object v0, p0, Lab/o;->k0:Lcom/helpshift/support/webkit/CustomWebView;
 
     if-eqz v0, :cond_4
 
@@ -718,23 +718,23 @@
     const v1, 0x1010036
 
     .line 4
-    invoke-static {v0, v1}, Lcom/helpshift/util/g0;->c(Landroid/content/Context;I)Ljava/lang/String;
+    invoke-static {v0, v1}, Lcom/helpshift/util/e0;->c(Landroid/content/Context;I)Ljava/lang/String;
 
     move-result-object v1
 
-    iput-object v1, p0, Lab/o;->q0:Ljava/lang/String;
+    iput-object v1, p0, Lab/o;->r0:Ljava/lang/String;
 
     .line 5
     sget v1, Lcom/helpshift/R$attr;->hs__faqTextColorLink:I
 
-    invoke-static {v0, v1}, Lcom/helpshift/util/g0;->c(Landroid/content/Context;I)Ljava/lang/String;
+    invoke-static {v0, v1}, Lcom/helpshift/util/e0;->c(Landroid/content/Context;I)Ljava/lang/String;
 
     move-result-object v0
 
-    iput-object v0, p0, Lab/o;->r0:Ljava/lang/String;
+    iput-object v0, p0, Lab/o;->s0:Ljava/lang/String;
 
     .line 6
-    iget-object v1, p0, Lab/o;->j0:Lcom/helpshift/support/webkit/CustomWebView;
+    iget-object v1, p0, Lab/o;->k0:Lcom/helpshift/support/webkit/CustomWebView;
 
     const/4 v2, 0x0
 
@@ -753,7 +753,7 @@
     const-string v3, "file:///android_asset/"
 
     .line 9
-    invoke-static {v3, v0}, Lcom/google/android/gms/ads/e;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v3, v0}, Lf/g;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -762,7 +762,7 @@
     const-string v5, "\');}"
 
     .line 10
-    invoke-static {v3, v0, v5}, Landroid/support/v4/media/f;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v3, v0, v5}, Landroid/support/v4/media/f;->b(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -777,10 +777,10 @@
 
     .line 11
     :goto_0
-    iget-object v5, p1, Lcom/helpshift/support/Faq;->j:Ljava/lang/String;
+    iget-object v5, p1, Lcom/helpshift/support/Faq;->k:Ljava/lang/String;
 
     .line 12
-    iget-object v6, p1, Lcom/helpshift/support/Faq;->f:Ljava/lang/String;
+    iget-object v6, p1, Lcom/helpshift/support/Faq;->g:Ljava/lang/String;
 
     .line 13
     invoke-static {v5}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
@@ -823,7 +823,7 @@
 
     .line 19
     :cond_2
-    iget-object p1, p1, Lcom/helpshift/support/Faq;->l:Ljava/lang/Boolean;
+    iget-object p1, p1, Lcom/helpshift/support/Faq;->m:Ljava/lang/Boolean;
 
     invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
 
@@ -856,7 +856,7 @@
     const-string v8, "        img,"
 
     .line 22
-    invoke-static {p1, v4, v7, v0, v8}, Lk0/a;->a(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {p1, v4, v7, v0, v8}, Lcom/kakaogame/session/websocket/a;->b(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     const-string v0, "        object,"
 
@@ -867,7 +867,7 @@
     const-string v8, "        }"
 
     .line 23
-    invoke-static {p1, v0, v4, v7, v8}, Lk0/a;->a(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {p1, v0, v4, v7, v8}, Lcom/kakaogame/session/websocket/a;->b(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     const-string v0, "        a,"
 
@@ -878,21 +878,21 @@
     const-string v9, "        a:hover {"
 
     .line 24
-    invoke-static {p1, v0, v4, v7, v9}, Lk0/a;->a(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {p1, v0, v4, v7, v9}, Lcom/kakaogame/session/websocket/a;->b(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     const-string v0, "            color: "
 
     .line 25
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v4, p0, Lab/o;->r0:Ljava/lang/String;
+    iget-object v4, p0, Lab/o;->s0:Ljava/lang/String;
 
     const-string v7, ";"
 
     const-string v9, "        body {"
 
     .line 26
-    invoke-static {p1, v4, v7, v8, v9}, Lk0/a;->a(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {p1, v4, v7, v8, v9}, Lcom/kakaogame/session/websocket/a;->b(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     const-string v4, "            background-color: transparent;"
 
@@ -903,14 +903,14 @@
     const-string v11, "16px 16px 96px 16px;"
 
     .line 27
-    invoke-static {p1, v4, v9, v10, v11}, Lk0/a;->a(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {p1, v4, v9, v10, v11}, Lcom/kakaogame/session/websocket/a;->b(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     const-string v4, "            font-size: "
 
     const-string v10, "16px"
 
     .line 28
-    invoke-static {p1, v4, v10, v7, v3}, Lk0/a;->a(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {p1, v4, v10, v7, v3}, Lcom/kakaogame/session/websocket/a;->b(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     const-string v10, "            line-height: "
 
@@ -919,7 +919,7 @@
     const-string v12, "            white-space: normal;"
 
     .line 29
-    invoke-static {p1, v10, v11, v7, v12}, Lk0/a;->a(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {p1, v10, v11, v7, v12}, Lcom/kakaogame/session/websocket/a;->b(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     const-string v11, "            word-wrap: break-word;"
 
@@ -929,12 +929,12 @@
     .line 31
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v0, p0, Lab/o;->q0:Ljava/lang/String;
+    iget-object v0, p0, Lab/o;->r0:Ljava/lang/String;
 
     const-string v11, "        .title {"
 
     .line 32
-    invoke-static {p1, v0, v7, v8, v11}, Lk0/a;->a(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {p1, v0, v7, v8, v11}, Lcom/kakaogame/session/websocket/a;->b(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     const-string v0, "            display: block;"
 
@@ -958,19 +958,19 @@
     const-string v9, "24px"
 
     .line 36
-    invoke-static {p1, v0, v4, v9, v7}, Lk0/a;->a(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {p1, v0, v4, v9, v7}, Lcom/kakaogame/session/websocket/a;->b(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     const-string v0, "32px"
 
     .line 37
-    invoke-static {p1, v3, v10, v0, v7}, Lk0/a;->a(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {p1, v3, v10, v0, v7}, Lcom/kakaogame/session/websocket/a;->b(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     const-string v0, "        h1, h2, h3 { "
 
     const-string v3, "            line-height: 1.4; "
 
     .line 38
-    invoke-static {p1, v8, v0, v3, v8}, Lk0/a;->a(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {p1, v8, v0, v3, v8}, Lcom/kakaogame/session/websocket/a;->b(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     const-string v0, "    </style>"
 
@@ -981,7 +981,7 @@
     const-string v9, "        var w = window,"
 
     .line 39
-    invoke-static {p1, v0, v3, v4, v9}, Lk0/a;->a(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {p1, v0, v3, v4, v9}, Lcom/kakaogame/session/websocket/a;->b(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     const-string v0, "            d = document,"
 
@@ -992,7 +992,7 @@
     const-string v9, "            sWidth = Math.min (w.innerWidth || Infinity, e.clientWidth || Infinity, g.clientWidth || Infinity),"
 
     .line 40
-    invoke-static {p1, v0, v3, v4, v9}, Lk0/a;->a(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {p1, v0, v3, v4, v9}, Lcom/kakaogame/session/websocket/a;->b(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     const-string v0, "            sHeight = Math.min (w.innerHeight || Infinity, e.clientHeight || Infinity, g.clientHeight || Infinity);"
 
@@ -1003,7 +1003,7 @@
     const-string v9, "        var padding = "
 
     .line 41
-    invoke-static {p1, v0, v3, v4, v9}, Lk0/a;->a(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {p1, v0, v3, v4, v9}, Lcom/kakaogame/session/websocket/a;->b(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     const/16 v0, 0x20
 
@@ -1031,7 +1031,7 @@
     const-string v7, "                frame.style.width = sWidth - padding;"
 
     .line 45
-    invoke-static {p1, v0, v3, v4, v7}, Lk0/a;->a(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {p1, v0, v3, v4, v7}, Lcom/kakaogame/session/websocket/a;->b(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     const-string v0, "                frame.style.height = ((sWidth - padding) * fh/fw).toString();"
 
@@ -1040,7 +1040,7 @@
     const-string v4, "        document.addEventListener(\'click\', function (event) {"
 
     .line 46
-    invoke-static {p1, v0, v3, v8, v4}, Lk0/a;->a(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {p1, v0, v3, v8, v4}, Lcom/kakaogame/session/websocket/a;->b(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     const-string v0, "            if (event.target instanceof HTMLImageElement) {"
 
@@ -1049,7 +1049,7 @@
     const-string v7, "                event.stopPropagation();"
 
     .line 47
-    invoke-static {p1, v0, v4, v7, v3}, Lk0/a;->a(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {p1, v0, v4, v7, v3}, Lcom/kakaogame/session/websocket/a;->b(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     const-string v0, "        }, false);"
 
@@ -1060,7 +1060,7 @@
     const-string v7, "</head>"
 
     .line 48
-    invoke-static {p1, v0, v3, v4, v7}, Lk0/a;->a(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {p1, v0, v3, v4, v7}, Lcom/kakaogame/session/websocket/a;->b(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     const-string v0, "<body>"
 
@@ -1069,7 +1069,7 @@
     const-string v4, " </strong> "
 
     .line 49
-    invoke-static {p1, v0, v3, v6, v4}, Lk0/a;->a(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {p1, v0, v3, v6, v4}, Lcom/kakaogame/session/websocket/a;->b(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     .line 50
     invoke-virtual {p1, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -1109,7 +1109,7 @@
     sget p3, Lcom/helpshift/R$layout;->hs__single_question_fragment:I
 
     .line 2
-    iget-boolean v0, p0, Lab/o;->x0:Z
+    iget-boolean v0, p0, Lab/o;->y0:Z
 
     if-eqz v0, :cond_0
 
@@ -1131,7 +1131,7 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Landroidx/fragment/app/Fragment;->M:Landroid/view/View;
+    iget-object v0, p0, Landroidx/fragment/app/Fragment;->N:Landroid/view/View;
 
     .line 2
     invoke-static {v0}, Lib/f;->a(Landroid/view/View;)V
@@ -1139,29 +1139,29 @@
     const/4 v0, 0x0
 
     .line 3
-    iput-object v0, p0, Lab/o;->k0:Landroid/view/View;
+    iput-object v0, p0, Lab/o;->l0:Landroid/view/View;
 
     .line 4
-    iget-object v1, p0, Lab/o;->j0:Lcom/helpshift/support/webkit/CustomWebView;
+    iget-object v1, p0, Lab/o;->k0:Lcom/helpshift/support/webkit/CustomWebView;
 
     invoke-virtual {v1, v0}, Landroid/webkit/WebView;->setWebViewClient(Landroid/webkit/WebViewClient;)V
 
     .line 5
-    iput-object v0, p0, Lab/o;->j0:Lcom/helpshift/support/webkit/CustomWebView;
+    iput-object v0, p0, Lab/o;->k0:Lcom/helpshift/support/webkit/CustomWebView;
 
     .line 6
-    iput-object v0, p0, Lab/o;->n0:Landroid/widget/Button;
+    iput-object v0, p0, Lab/o;->o0:Landroid/widget/Button;
 
     .line 7
-    iput-object v0, p0, Lab/o;->m0:Landroid/widget/Button;
+    iput-object v0, p0, Lab/o;->n0:Landroid/widget/Button;
 
     .line 8
-    iput-object v0, p0, Lab/o;->o0:Landroid/widget/Button;
+    iput-object v0, p0, Lab/o;->p0:Landroid/widget/Button;
 
     const/4 v0, 0x1
 
     .line 9
-    iput-boolean v0, p0, Landroidx/fragment/app/Fragment;->K:Z
+    iput-boolean v0, p0, Landroidx/fragment/app/Fragment;->L:Z
 
     return-void
 .end method
@@ -1173,7 +1173,7 @@
     invoke-super {p0}, Lab/i;->e0()V
 
     .line 2
-    iget-object v0, p0, Lab/o;->j0:Lcom/helpshift/support/webkit/CustomWebView;
+    iget-object v0, p0, Lab/o;->k0:Lcom/helpshift/support/webkit/CustomWebView;
 
     invoke-virtual {v0}, Landroid/webkit/WebView;->onPause()V
 
@@ -1186,15 +1186,15 @@
     const/4 v0, 0x1
 
     .line 1
-    iput-boolean v0, p0, Landroidx/fragment/app/Fragment;->K:Z
+    iput-boolean v0, p0, Landroidx/fragment/app/Fragment;->L:Z
 
     .line 2
-    iget-boolean v0, p0, Lab/i;->d0:Z
+    iget-boolean v0, p0, Lab/i;->e0:Z
 
     if-eqz v0, :cond_0
 
     .line 3
-    iget-object v0, p0, Landroidx/fragment/app/Fragment;->A:Landroidx/fragment/app/Fragment;
+    iget-object v0, p0, Landroidx/fragment/app/Fragment;->B:Landroidx/fragment/app/Fragment;
 
     .line 4
     instance-of v1, v0, Lab/e;
@@ -1210,17 +1210,17 @@
 
     .line 6
     :cond_0
-    iget-object v0, p0, Lab/o;->j0:Lcom/helpshift/support/webkit/CustomWebView;
+    iget-object v0, p0, Lab/o;->k0:Lcom/helpshift/support/webkit/CustomWebView;
 
     invoke-virtual {v0}, Landroid/webkit/WebView;->onResume()V
 
     .line 7
-    iget-boolean v0, p0, Lab/o;->v0:Z
+    iget-boolean v0, p0, Lab/o;->w0:Z
 
     if-nez v0, :cond_1
 
     .line 8
-    iget-boolean v0, p0, Lab/i;->d0:Z
+    iget-boolean v0, p0, Lab/i;->e0:Z
 
     if-nez v0, :cond_2
 
@@ -1236,12 +1236,12 @@
 
     .line 10
     :cond_2
-    iget-object v0, p0, Lab/o;->p0:Lcom/helpshift/support/Faq;
+    iget-object v0, p0, Lab/o;->q0:Lcom/helpshift/support/Faq;
 
     if-eqz v0, :cond_3
 
     .line 11
-    iget-object v0, v0, Lcom/helpshift/support/Faq;->n:Ljava/lang/String;
+    iget-object v0, v0, Lcom/helpshift/support/Faq;->o:Ljava/lang/String;
 
     .line 12
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
@@ -1250,7 +1250,7 @@
 
     if-nez v0, :cond_3
 
-    iget-boolean v0, p0, Lab/o;->g0:Z
+    iget-boolean v0, p0, Lab/o;->h0:Z
 
     if-nez v0, :cond_3
 
@@ -1268,14 +1268,14 @@
     invoke-super {p0}, Lab/i;->i0()V
 
     .line 2
-    iget-boolean v0, p0, Lab/i;->c0:Z
+    iget-boolean v0, p0, Lab/i;->d0:Z
 
     if-nez v0, :cond_0
 
     const/4 v0, 0x0
 
     .line 3
-    iput-boolean v0, p0, Lab/o;->g0:Z
+    iput-boolean v0, p0, Lab/o;->h0:Z
 
     :cond_0
     return-void
@@ -1305,7 +1305,7 @@
 
     check-cast v0, Lcom/helpshift/support/webkit/CustomWebView;
 
-    iput-object v0, v1, Lab/o;->j0:Lcom/helpshift/support/webkit/CustomWebView;
+    iput-object v0, v1, Lab/o;->k0:Lcom/helpshift/support/webkit/CustomWebView;
 
     const/4 v3, 0x0
 
@@ -1313,12 +1313,12 @@
     invoke-virtual {v0, v3}, Landroid/view/View;->setBackgroundColor(I)V
 
     .line 3
-    iget-object v0, v1, Lab/o;->j0:Lcom/helpshift/support/webkit/CustomWebView;
+    iget-object v0, v1, Lab/o;->k0:Lcom/helpshift/support/webkit/CustomWebView;
 
     new-instance v4, Lkb/b;
 
     .line 4
-    sget-object v5, Lcom/helpshift/util/u;->b:Landroid/content/Context;
+    sget-object v5, Lcom/helpshift/util/t;->b:Landroid/content/Context;
 
     .line 5
     invoke-direct {v4, v5, v1}, Lkb/b;-><init>(Landroid/content/Context;Lkb/b$a;)V
@@ -1346,7 +1346,7 @@
     move-result-object v4
 
     .line 8
-    iget-object v5, v1, Lab/o;->j0:Lcom/helpshift/support/webkit/CustomWebView;
+    iget-object v5, v1, Lab/o;->k0:Lcom/helpshift/support/webkit/CustomWebView;
 
     new-instance v6, Lkb/a;
 
@@ -1363,7 +1363,7 @@
 
     check-cast v0, Landroid/widget/Button;
 
-    iput-object v0, v1, Lab/o;->m0:Landroid/widget/Button;
+    iput-object v0, v1, Lab/o;->n0:Landroid/widget/Button;
 
     .line 10
     invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
@@ -1377,7 +1377,7 @@
 
     check-cast v0, Landroid/widget/Button;
 
-    iput-object v0, v1, Lab/o;->n0:Landroid/widget/Button;
+    iput-object v0, v1, Lab/o;->o0:Landroid/widget/Button;
 
     .line 12
     invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
@@ -1389,7 +1389,7 @@
 
     move-result-object v0
 
-    iput-object v0, v1, Lab/o;->k0:Landroid/view/View;
+    iput-object v0, v1, Lab/o;->l0:Landroid/view/View;
 
     .line 14
     sget v0, Lcom/helpshift/R$id;->question_footer_message:I
@@ -1400,7 +1400,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, v1, Lab/o;->l0:Landroid/widget/TextView;
+    iput-object v0, v1, Lab/o;->m0:Landroid/widget/TextView;
 
     .line 15
     sget v0, Lcom/helpshift/R$id;->contact_us_button:I
@@ -1411,7 +1411,7 @@
 
     check-cast v0, Landroid/widget/Button;
 
-    iput-object v0, v1, Lab/o;->o0:Landroid/widget/Button;
+    iput-object v0, v1, Lab/o;->p0:Landroid/widget/Button;
 
     .line 16
     invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
@@ -1424,21 +1424,21 @@
     if-lt v0, v4, :cond_0
 
     .line 18
-    iget-object v0, v1, Lab/o;->m0:Landroid/widget/Button;
+    iget-object v0, v1, Lab/o;->n0:Landroid/widget/Button;
 
     sget v4, Lcom/helpshift/R$string;->hs__mark_yes:I
 
     invoke-virtual {v0, v4}, Landroid/widget/TextView;->setText(I)V
 
     .line 19
-    iget-object v0, v1, Lab/o;->n0:Landroid/widget/Button;
+    iget-object v0, v1, Lab/o;->o0:Landroid/widget/Button;
 
     sget v4, Lcom/helpshift/R$string;->hs__mark_no:I
 
     invoke-virtual {v0, v4}, Landroid/widget/TextView;->setText(I)V
 
     .line 20
-    iget-object v0, v1, Lab/o;->o0:Landroid/widget/Button;
+    iget-object v0, v1, Lab/o;->p0:Landroid/widget/Button;
 
     sget v4, Lcom/helpshift/R$string;->hs__contact_us_btn:I
 
@@ -1446,14 +1446,14 @@
 
     .line 21
     :cond_0
-    iget v0, v1, Lab/o;->h0:I
+    iget v0, v1, Lab/o;->i0:I
 
     const/4 v4, 0x2
 
     if-ne v0, v4, :cond_1
 
     .line 22
-    iget-object v0, v1, Lab/o;->o0:Landroid/widget/Button;
+    iget-object v0, v1, Lab/o;->p0:Landroid/widget/Button;
 
     invoke-virtual/range {p0 .. p0}, Landroidx/fragment/app/Fragment;->I()Landroid/content/res/Resources;
 
@@ -1469,7 +1469,7 @@
 
     .line 23
     :cond_1
-    iget-object v0, v1, Landroidx/fragment/app/Fragment;->l:Landroid/os/Bundle;
+    iget-object v0, v1, Landroidx/fragment/app/Fragment;->m:Landroid/os/Bundle;
 
     const-string v5, "questionSource"
 
@@ -1478,7 +1478,7 @@
 
     move-result-object v5
 
-    iput-object v5, v1, Lab/o;->B0:Ljava/lang/String;
+    iput-object v5, v1, Lab/o;->C0:Ljava/lang/String;
 
     const-string v5, "questionPublishId"
 
@@ -1487,7 +1487,7 @@
 
     move-result-object v5
 
-    iput-object v5, v1, Lab/o;->z0:Ljava/lang/String;
+    iput-object v5, v1, Lab/o;->A0:Ljava/lang/String;
 
     const-string v5, "support_mode"
 
@@ -1506,7 +1506,7 @@
     move-result-object v10
 
     .line 28
-    iget v0, v1, Lab/o;->h0:I
+    iget v0, v1, Lab/o;->i0:I
 
     const/4 v6, 0x3
 
@@ -1539,7 +1539,7 @@
 
     .line 29
     :goto_2
-    iget-object v12, v1, Lab/o;->i0:Lla/e;
+    iget-object v12, v1, Lab/o;->j0:Lla/e;
 
     new-instance v13, Lab/o$c;
 
@@ -1549,7 +1549,7 @@
 
     invoke-direct {v15, v1}, Lab/o$a;-><init>(Lab/o;)V
 
-    iget-object v6, v1, Lab/o;->z0:Ljava/lang/String;
+    iget-object v6, v1, Lab/o;->A0:Ljava/lang/String;
 
     invoke-virtual {v12}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -1573,7 +1573,7 @@
     if-eqz v17, :cond_10
 
     .line 32
-    sget-object v0, Lcom/helpshift/util/u;->d:Le8/j;
+    sget-object v0, Lcom/helpshift/util/t;->d:Le8/j;
 
     .line 33
     invoke-virtual {v0}, Le8/j;->f()Ls8/b;
@@ -1590,13 +1590,13 @@
 
     .line 36
     :try_start_0
-    invoke-static {v6}, Lcom/google/android/play/core/appupdate/g;->b(Ljava/lang/String;)Z
+    invoke-static {v6}, La5/b0;->d(Ljava/lang/String;)Z
 
     move-result v0
 
     if-nez v0, :cond_a
 
-    invoke-static {v10}, Lcom/google/android/play/core/appupdate/g;->b(Ljava/lang/String;)Z
+    invoke-static {v10}, La5/b0;->d(Ljava/lang/String;)Z
 
     move-result v0
     :try_end_0
@@ -1685,7 +1685,7 @@
     const-string v8, "Error in getAdminFAQSuggestion"
 
     .line 41
-    invoke-static {v14, v8, v0}, Landroidx/savedstate/d;->g(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v14, v8, v0}, Le5/i;->i(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_1
 
@@ -1843,7 +1843,7 @@
     const-string v7, "Error in getFaq"
 
     .line 54
-    invoke-static {v4, v7, v0}, Landroidx/savedstate/d;->g(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v4, v7, v0}, Le5/i;->i(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
     :try_end_9
     .catchall {:try_start_9 .. :try_end_9} :catchall_3
 
@@ -2012,7 +2012,7 @@
     const-string v8, "Error in getFaq"
 
     .line 69
-    invoke-static {v7, v8, v0}, Landroidx/savedstate/d;->g(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v7, v8, v0}, Le5/i;->i(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
     :try_end_f
     .catchall {:try_start_f .. :try_end_f} :catchall_7
 
@@ -2058,7 +2058,7 @@
 
     .line 75
     :cond_15
-    sget-object v0, Lcom/helpshift/util/u;->c:Le7/g;
+    sget-object v0, Lcom/helpshift/util/t;->c:Le7/g;
 
     .line 76
     invoke-virtual {v0}, Le7/g;->g()Lv9/e;
@@ -2101,7 +2101,7 @@
 
     move-result-object v0
 
-    iput-object v0, v1, Lab/o;->t0:Landroid/view/View;
+    iput-object v0, v1, Lab/o;->u0:Landroid/view/View;
 
     return-void
 
@@ -2152,21 +2152,21 @@
     invoke-virtual {p0, v2}, Lab/o;->V0(I)V
 
     .line 4
-    iget p1, p0, Lab/o;->h0:I
+    iget p1, p0, Lab/o;->i0:I
 
     const/4 v0, 0x2
 
     if-ne p1, v0, :cond_4
 
     .line 5
-    invoke-static {p0}, Lj1/q;->e(Landroidx/fragment/app/Fragment;)Lab/p;
+    invoke-static {p0}, Ls4/e;->h(Landroidx/fragment/app/Fragment;)Lab/p;
 
     move-result-object p1
 
     if-eqz p1, :cond_4
 
     .line 6
-    iget-object p1, p1, Lab/p;->j0:Lpa/b;
+    iget-object p1, p1, Lab/p;->k0:Lpa/b;
 
     .line 7
     invoke-virtual {p1}, Lpa/b;->a()V
@@ -2206,17 +2206,17 @@
     if-ne p1, v0, :cond_4
 
     .line 12
-    iget-object p1, p0, Lab/o;->u0:Lpa/b;
+    iget-object p1, p0, Lab/o;->v0:Lpa/b;
 
     if-eqz p1, :cond_4
 
     .line 13
-    iget p1, p0, Lab/o;->h0:I
+    iget p1, p0, Lab/o;->i0:I
 
     if-ne p1, v2, :cond_3
 
     .line 14
-    iget-object p1, p0, Landroidx/fragment/app/Fragment;->A:Landroidx/fragment/app/Fragment;
+    iget-object p1, p0, Landroidx/fragment/app/Fragment;->B:Landroidx/fragment/app/Fragment;
 
     .line 15
     check-cast p1, Loa/c;
@@ -2253,13 +2253,13 @@
     check-cast p1, Lab/e;
 
     .line 21
-    iget-object p1, p1, Landroidx/fragment/app/Fragment;->A:Landroidx/fragment/app/Fragment;
+    iget-object p1, p1, Landroidx/fragment/app/Fragment;->B:Landroidx/fragment/app/Fragment;
 
     .line 22
     check-cast p1, Lab/p;
 
     .line 23
-    iget-object p1, p1, Lab/p;->j0:Lpa/b;
+    iget-object p1, p1, Lab/p;->k0:Lpa/b;
 
     .line 24
     invoke-virtual {p1, v0}, Lpa/b;->d(Ljava/lang/String;)V
@@ -2268,14 +2268,14 @@
 
     .line 25
     :cond_3
-    invoke-static {p0}, Lj1/q;->e(Landroidx/fragment/app/Fragment;)Lab/p;
+    invoke-static {p0}, Ls4/e;->h(Landroidx/fragment/app/Fragment;)Lab/p;
 
     move-result-object p1
 
     if-eqz p1, :cond_4
 
     .line 26
-    iget-object p1, p1, Lab/p;->j0:Lpa/b;
+    iget-object p1, p1, Lab/p;->k0:Lpa/b;
 
     .line 27
     invoke-virtual {p1}, Lpa/b;->f()V

@@ -20,7 +20,7 @@
 
 
 # virtual methods
-.method public abstract T1()Lcom/google/android/gms/games/appcontent/zzc;
+.method public abstract S1()Lcom/google/android/gms/games/appcontent/zzc;
 .end method
 
 .method public abstract getExtras()Landroid/os/Bundle;

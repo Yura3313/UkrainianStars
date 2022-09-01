@@ -1,122 +1,268 @@
 .class public final Lk3/m31;
-.super Ljava/lang/Object;
+.super Lk3/j31;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
-# interfaces
-.implements Ljava/util/Comparator;
 
-
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ljava/lang/Object;",
-        "Ljava/util/Comparator<",
-        "Lk3/a31;",
-        ">;"
-    }
-.end annotation
+# instance fields
+.field public c:Ljava/security/MessageDigest;
 
 
 # direct methods
 .method public constructor <init>()V
     .locals 0
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Lk3/j31;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final compare(Ljava/lang/Object;Ljava/lang/Object;)I
-    .locals 7
+.method public final b(Ljava/lang/String;)[B
+    .locals 8
+
+    const-string v0, " "
 
     .line 1
-    check-cast p1, Lk3/a31;
+    invoke-virtual {p1, v0}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
 
-    check-cast p2, Lk3/a31;
+    move-result-object p1
 
     .line 2
-    iget v0, p1, Lk3/a31;->b:F
+    array-length v0, p1
 
-    iget v1, p2, Lk3/a31;->b:F
+    const/4 v1, 0x0
 
-    const/4 v2, -0x1
+    const/4 v2, 0x1
 
-    cmpg-float v3, v0, v1
+    const/4 v3, 0x4
 
-    if-gez v3, :cond_0
-
-    return v2
-
-    :cond_0
-    const/4 v3, 0x1
-
-    cmpl-float v4, v0, v1
-
-    if-lez v4, :cond_1
-
-    return v3
+    if-ne v0, v2, :cond_0
 
     .line 3
-    :cond_1
-    iget v4, p1, Lk3/a31;->a:F
+    aget-object p1, p1, v1
 
-    iget v5, p2, Lk3/a31;->a:F
+    invoke-static {p1}, Lk3/n31;->a(Ljava/lang/String;)I
 
-    cmpg-float v6, v4, v5
-
-    if-gez v6, :cond_2
-
-    return v2
-
-    :cond_2
-    cmpl-float v6, v4, v5
-
-    if-lez v6, :cond_3
-
-    return v3
+    move-result p1
 
     .line 4
-    :cond_3
-    iget v6, p1, Lk3/a31;->d:F
+    invoke-static {v3}, Ljava/nio/ByteBuffer;->allocate(I)Ljava/nio/ByteBuffer;
 
-    sub-float/2addr v6, v0
+    move-result-object v0
 
     .line 5
-    iget p1, p1, Lk3/a31;->c:F
+    sget-object v2, Ljava/nio/ByteOrder;->LITTLE_ENDIAN:Ljava/nio/ByteOrder;
 
-    sub-float/2addr p1, v4
-
-    mul-float p1, p1, v6
+    invoke-virtual {v0, v2}, Ljava/nio/ByteBuffer;->order(Ljava/nio/ByteOrder;)Ljava/nio/ByteBuffer;
 
     .line 6
-    iget v0, p2, Lk3/a31;->d:F
-
-    sub-float/2addr v0, v1
+    invoke-virtual {v0, p1}, Ljava/nio/ByteBuffer;->putInt(I)Ljava/nio/ByteBuffer;
 
     .line 7
-    iget p2, p2, Lk3/a31;->c:F
+    invoke-virtual {v0}, Ljava/nio/ByteBuffer;->array()[B
 
-    sub-float/2addr p2, v5
+    move-result-object p1
 
-    mul-float p2, p2, v0
+    goto :goto_2
 
-    cmpl-float v0, p1, p2
+    .line 8
+    :cond_0
+    array-length v0, p1
 
-    if-lez v0, :cond_4
+    const/4 v4, 0x5
 
-    return v2
+    if-ge v0, v4, :cond_1
+
+    .line 9
+    array-length v0, p1
+
+    shl-int/2addr v0, v2
+
+    new-array v0, v0, [B
+
+    const/4 v4, 0x0
+
+    .line 10
+    :goto_0
+    array-length v5, p1
+
+    if-ge v4, v5, :cond_2
+
+    .line 11
+    aget-object v5, p1, v4
+
+    invoke-static {v5}, Lk3/n31;->a(Ljava/lang/String;)I
+
+    move-result v5
+
+    const v6, 0xffff
+
+    and-int/2addr v6, v5
+
+    shr-int/lit8 v5, v5, 0x10
+
+    xor-int/2addr v5, v6
+
+    const/4 v6, 0x2
+
+    new-array v6, v6, [B
+
+    int-to-byte v7, v5
+
+    aput-byte v7, v6, v1
+
+    shr-int/lit8 v5, v5, 0x8
+
+    int-to-byte v5, v5
+
+    aput-byte v5, v6, v2
+
+    shl-int/lit8 v5, v4, 0x1
+
+    aget-byte v7, v6, v1
+
+    .line 12
+    aput-byte v7, v0, v5
+
+    add-int/2addr v5, v2
+
+    aget-byte v6, v6, v2
+
+    .line 13
+    aput-byte v6, v0, v5
+
+    add-int/lit8 v4, v4, 0x1
+
+    goto :goto_0
+
+    .line 14
+    :cond_1
+    array-length v0, p1
+
+    new-array v0, v0, [B
+
+    const/4 v2, 0x0
+
+    .line 15
+    :goto_1
+    array-length v4, p1
+
+    if-ge v2, v4, :cond_2
+
+    .line 16
+    aget-object v4, p1, v2
+
+    invoke-static {v4}, Lk3/n31;->a(Ljava/lang/String;)I
+
+    move-result v4
+
+    and-int/lit16 v5, v4, 0xff
+
+    shr-int/lit8 v6, v4, 0x8
+
+    and-int/lit16 v6, v6, 0xff
+
+    xor-int/2addr v5, v6
+
+    shr-int/lit8 v6, v4, 0x10
+
+    and-int/lit16 v6, v6, 0xff
+
+    xor-int/2addr v5, v6
+
+    shr-int/lit8 v4, v4, 0x18
+
+    xor-int/2addr v4, v5
+
+    int-to-byte v4, v4
+
+    .line 17
+    aput-byte v4, v0, v2
+
+    add-int/lit8 v2, v2, 0x1
+
+    goto :goto_1
+
+    :cond_2
+    move-object p1, v0
+
+    .line 18
+    :goto_2
+    invoke-virtual {p0}, Lk3/j31;->a()Ljava/security/MessageDigest;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lk3/m31;->c:Ljava/security/MessageDigest;
+
+    .line 19
+    iget-object v0, p0, Lk3/j31;->a:Ljava/lang/Object;
+
+    monitor-enter v0
+
+    .line 20
+    :try_start_0
+    iget-object v2, p0, Lk3/m31;->c:Ljava/security/MessageDigest;
+
+    if-nez v2, :cond_3
+
+    new-array p1, v1, [B
+
+    .line 21
+    monitor-exit v0
+
+    return-object p1
+
+    .line 22
+    :cond_3
+    invoke-virtual {v2}, Ljava/security/MessageDigest;->reset()V
+
+    .line 23
+    iget-object v2, p0, Lk3/m31;->c:Ljava/security/MessageDigest;
+
+    invoke-virtual {v2, p1}, Ljava/security/MessageDigest;->update([B)V
+
+    .line 24
+    iget-object p1, p0, Lk3/m31;->c:Ljava/security/MessageDigest;
+
+    invoke-virtual {p1}, Ljava/security/MessageDigest;->digest()[B
+
+    move-result-object p1
+
+    .line 25
+    array-length v2, p1
+
+    if-le v2, v3, :cond_4
+
+    goto :goto_3
 
     :cond_4
-    cmpg-float p1, p1, p2
+    array-length v3, p1
 
-    if-gez p1, :cond_5
+    :goto_3
+    new-array v2, v3, [B
 
-    return v3
+    .line 26
+    invoke-static {p1, v1, v2, v1, v3}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    :cond_5
-    const/4 p1, 0x0
+    .line 27
+    monitor-exit v0
 
-    return p1
+    return-object v2
+
+    :catchall_0
+    move-exception p1
+
+    .line 28
+    monitor-exit v0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    goto :goto_5
+
+    :goto_4
+    throw p1
+
+    :goto_5
+    goto :goto_4
 .end method

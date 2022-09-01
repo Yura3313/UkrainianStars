@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field public final i:Lc3/b;
+.field public final j:Lc3/b;
 
 
 # direct methods
@@ -26,7 +26,7 @@
     invoke-direct {p0, p1, p2}, Lv2/o;-><init>(Lcom/google/android/gms/common/data/DataHolder;I)V
 
     .line 2
-    iput-object p3, p0, Lcom/google/android/gms/games/zzb;->i:Lc3/b;
+    iput-object p3, p0, Lcom/google/android/gms/games/zzb;->j:Lc3/b;
 
     return-void
 .end method
@@ -103,7 +103,7 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/gms/games/zzb;->i:Lc3/b;
+    iget-object v0, p0, Lcom/google/android/gms/games/zzb;->j:Lc3/b;
 
     iget-object v0, v0, Lc3/b;->K:Ljava/lang/String;
 

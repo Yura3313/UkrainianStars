@@ -1,5 +1,5 @@
 .class public final Lcom/supercell/id/ui/BaseFragment$f;
-.super Lse/h;
+.super Lse/i;
 .source "BaseFragment.kt"
 
 # interfaces
@@ -18,28 +18,28 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/l<",
         "Landroid/view/View;",
-        "Lie/h;",
+        "Lie/i;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic f:Lcom/supercell/id/ui/BaseFragment;
+.field public final synthetic g:Lcom/supercell/id/ui/BaseFragment;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/id/ui/BaseFragment;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/ui/BaseFragment$f;->f:Lcom/supercell/id/ui/BaseFragment;
+    iput-object p1, p0, Lcom/supercell/id/ui/BaseFragment$f;->g:Lcom/supercell/id/ui/BaseFragment;
 
     const/4 p1, 0x1
 
-    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -55,10 +55,10 @@
     const-string v0, "it"
 
     .line 2
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 3
-    iget-object p1, p0, Lcom/supercell/id/ui/BaseFragment$f;->f:Lcom/supercell/id/ui/BaseFragment;
+    iget-object p1, p0, Lcom/supercell/id/ui/BaseFragment$f;->g:Lcom/supercell/id/ui/BaseFragment;
 
     invoke-virtual {p1}, Landroidx/fragment/app/Fragment;->N()Z
 
@@ -70,20 +70,20 @@
 
     .line 4
     :cond_0
-    iget-object p1, p0, Lcom/supercell/id/ui/BaseFragment$f;->f:Lcom/supercell/id/ui/BaseFragment;
+    iget-object p1, p0, Lcom/supercell/id/ui/BaseFragment$f;->g:Lcom/supercell/id/ui/BaseFragment;
 
     .line 5
-    iget-object p1, p1, Lcom/supercell/id/ui/BaseFragment;->b0:Lze/p;
+    iget-object p1, p1, Lcom/supercell/id/ui/BaseFragment;->c0:Lze/p;
 
     .line 6
     sget-object v0, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
 
     .line 7
-    invoke-virtual {p1, v0}, Lze/e1;->G(Ljava/lang/Object;)Z
+    invoke-virtual {p1, v0}, Lze/f1;->G(Ljava/lang/Object;)Z
 
     .line 8
     :goto_0
-    sget-object p1, Lie/h;->a:Lie/h;
+    sget-object p1, Lie/i;->a:Lie/i;
 
     return-object p1
 .end method

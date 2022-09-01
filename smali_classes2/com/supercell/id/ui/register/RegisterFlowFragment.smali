@@ -12,13 +12,13 @@
 
 
 # instance fields
-.field public j0:Ljava/lang/String;
-
 .field public k0:Ljava/lang/String;
 
-.field public l0:Z
+.field public l0:Ljava/lang/String;
 
-.field public final m0:[Lre/a;
+.field public m0:Z
+
+.field public final n0:[Lre/a;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "[",
@@ -29,7 +29,7 @@
     .end annotation
 .end field
 
-.field public n0:Ljava/util/HashMap;
+.field public o0:Ljava/util/HashMap;
 
 
 # direct methods
@@ -44,35 +44,35 @@
     new-array v0, v0, [Lre/a;
 
     .line 2
-    sget-object v1, Lcom/supercell/id/ui/register/RegisterFlowFragment$a;->f:Lcom/supercell/id/ui/register/RegisterFlowFragment$a;
+    sget-object v1, Lcom/supercell/id/ui/register/RegisterFlowFragment$a;->g:Lcom/supercell/id/ui/register/RegisterFlowFragment$a;
 
     const/4 v2, 0x0
 
     aput-object v1, v0, v2
 
     .line 3
-    sget-object v1, Lcom/supercell/id/ui/register/RegisterFlowFragment$b;->f:Lcom/supercell/id/ui/register/RegisterFlowFragment$b;
+    sget-object v1, Lcom/supercell/id/ui/register/RegisterFlowFragment$b;->g:Lcom/supercell/id/ui/register/RegisterFlowFragment$b;
 
     const/4 v2, 0x1
 
     aput-object v1, v0, v2
 
     .line 4
-    sget-object v1, Lcom/supercell/id/ui/register/RegisterFlowFragment$c;->f:Lcom/supercell/id/ui/register/RegisterFlowFragment$c;
+    sget-object v1, Lcom/supercell/id/ui/register/RegisterFlowFragment$c;->g:Lcom/supercell/id/ui/register/RegisterFlowFragment$c;
 
     const/4 v2, 0x2
 
     aput-object v1, v0, v2
 
     .line 5
-    sget-object v1, Lcom/supercell/id/ui/register/RegisterFlowFragment$d;->f:Lcom/supercell/id/ui/register/RegisterFlowFragment$d;
+    sget-object v1, Lcom/supercell/id/ui/register/RegisterFlowFragment$d;->g:Lcom/supercell/id/ui/register/RegisterFlowFragment$d;
 
     const/4 v2, 0x3
 
     aput-object v1, v0, v2
 
     .line 6
-    iput-object v0, p0, Lcom/supercell/id/ui/register/RegisterFlowFragment;->m0:[Lre/a;
+    iput-object v0, p0, Lcom/supercell/id/ui/register/RegisterFlowFragment;->n0:[Lre/a;
 
     return-void
 .end method
@@ -82,7 +82,7 @@
 .method public final N0()V
     .locals 1
 
-    iget-object v0, p0, Lcom/supercell/id/ui/register/RegisterFlowFragment;->n0:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/supercell/id/ui/register/RegisterFlowFragment;->o0:Ljava/util/HashMap;
 
     if-eqz v0, :cond_0
 
@@ -101,7 +101,7 @@
     if-nez p1, :cond_7
 
     .line 2
-    iget-object p1, p0, Landroidx/fragment/app/Fragment;->l:Landroid/os/Bundle;
+    iget-object p1, p0, Landroidx/fragment/app/Fragment;->m:Landroid/os/Bundle;
 
     const/4 v0, 0x0
 
@@ -147,7 +147,7 @@
     if-eqz p1, :cond_6
 
     .line 4
-    iget-object p1, p0, Landroidx/fragment/app/Fragment;->l:Landroid/os/Bundle;
+    iget-object p1, p0, Landroidx/fragment/app/Fragment;->m:Landroid/os/Bundle;
 
     if-eqz p1, :cond_3
 
@@ -185,7 +185,7 @@
 
     const-string v0, "flowPager"
 
-    invoke-static {p1, v0}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/4 v0, 0x2
 
@@ -209,7 +209,7 @@
 
     .line 2
     :cond_0
-    iget-object v0, p0, Landroidx/fragment/app/Fragment;->l:Landroid/os/Bundle;
+    iget-object v0, p0, Landroidx/fragment/app/Fragment;->m:Landroid/os/Bundle;
 
     :goto_0
     const/4 v1, 0x0
@@ -229,7 +229,7 @@
     move-object v0, v1
 
     :goto_1
-    iput-object v0, p0, Lcom/supercell/id/ui/register/RegisterFlowFragment;->j0:Ljava/lang/String;
+    iput-object v0, p0, Lcom/supercell/id/ui/register/RegisterFlowFragment;->k0:Ljava/lang/String;
 
     if-eqz p1, :cond_2
 
@@ -239,7 +239,7 @@
 
     .line 4
     :cond_2
-    iget-object v0, p0, Landroidx/fragment/app/Fragment;->l:Landroid/os/Bundle;
+    iget-object v0, p0, Landroidx/fragment/app/Fragment;->m:Landroid/os/Bundle;
 
     :goto_2
     if-eqz v0, :cond_3
@@ -252,7 +252,7 @@
     move-result-object v1
 
     :cond_3
-    iput-object v1, p0, Lcom/supercell/id/ui/register/RegisterFlowFragment;->k0:Ljava/lang/String;
+    iput-object v1, p0, Lcom/supercell/id/ui/register/RegisterFlowFragment;->l0:Ljava/lang/String;
 
     if-eqz p1, :cond_4
 
@@ -260,7 +260,7 @@
 
     .line 6
     :cond_4
-    iget-object p1, p0, Landroidx/fragment/app/Fragment;->l:Landroid/os/Bundle;
+    iget-object p1, p0, Landroidx/fragment/app/Fragment;->m:Landroid/os/Bundle;
 
     :goto_3
     if-eqz p1, :cond_5
@@ -278,7 +278,7 @@
     const/4 p1, 0x0
 
     :goto_4
-    iput-boolean p1, p0, Lcom/supercell/id/ui/register/RegisterFlowFragment;->l0:Z
+    iput-boolean p1, p0, Lcom/supercell/id/ui/register/RegisterFlowFragment;->m0:Z
 
     return-void
 .end method
@@ -296,7 +296,7 @@
 .method public final f1(I)Landroid/view/View;
     .locals 2
 
-    iget-object v0, p0, Lcom/supercell/id/ui/register/RegisterFlowFragment;->n0:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/supercell/id/ui/register/RegisterFlowFragment;->o0:Ljava/util/HashMap;
 
     if-nez v0, :cond_0
 
@@ -304,10 +304,10 @@
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    iput-object v0, p0, Lcom/supercell/id/ui/register/RegisterFlowFragment;->n0:Ljava/util/HashMap;
+    iput-object v0, p0, Lcom/supercell/id/ui/register/RegisterFlowFragment;->o0:Ljava/util/HashMap;
 
     :cond_0
-    iget-object v0, p0, Lcom/supercell/id/ui/register/RegisterFlowFragment;->n0:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/supercell/id/ui/register/RegisterFlowFragment;->o0:Ljava/util/HashMap;
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -322,7 +322,7 @@
     if-nez v0, :cond_2
 
     .line 1
-    iget-object v0, p0, Landroidx/fragment/app/Fragment;->M:Landroid/view/View;
+    iget-object v0, p0, Landroidx/fragment/app/Fragment;->N:Landroid/view/View;
 
     if-nez v0, :cond_1
 
@@ -336,7 +336,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/supercell/id/ui/register/RegisterFlowFragment;->n0:Ljava/util/HashMap;
+    iget-object v1, p0, Lcom/supercell/id/ui/register/RegisterFlowFragment;->o0:Ljava/util/HashMap;
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -359,7 +359,7 @@
         }
     .end annotation
 
-    iget-object v0, p0, Lcom/supercell/id/ui/register/RegisterFlowFragment;->m0:[Lre/a;
+    iget-object v0, p0, Lcom/supercell/id/ui/register/RegisterFlowFragment;->n0:[Lre/a;
 
     return-object v0
 .end method
@@ -368,7 +368,7 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/supercell/id/ui/register/RegisterFlowFragment;->j0:Ljava/lang/String;
+    iget-object v0, p0, Lcom/supercell/id/ui/register/RegisterFlowFragment;->k0:Ljava/lang/String;
 
     if-eqz v0, :cond_0
 
@@ -378,7 +378,7 @@
 
     .line 2
     :cond_0
-    iget-object v0, p0, Lcom/supercell/id/ui/register/RegisterFlowFragment;->k0:Ljava/lang/String;
+    iget-object v0, p0, Lcom/supercell/id/ui/register/RegisterFlowFragment;->l0:Ljava/lang/String;
 
     if-eqz v0, :cond_1
 
@@ -388,7 +388,7 @@
 
     .line 3
     :cond_1
-    iget-boolean v0, p0, Lcom/supercell/id/ui/register/RegisterFlowFragment;->l0:Z
+    iget-boolean v0, p0, Lcom/supercell/id/ui/register/RegisterFlowFragment;->m0:Z
 
     const-string v1, "acceptMarketing"
 

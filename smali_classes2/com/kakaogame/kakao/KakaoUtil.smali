@@ -393,7 +393,7 @@
     const-string v4, " (Kakao Error Code: "
 
     .line 11
-    invoke-static {v1, v4}, Lo/g;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v1, v4}, Lcom/supercell/titan/a;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v1
 

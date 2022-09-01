@@ -1,5 +1,5 @@
 .class public final Landroidx/appcompat/widget/j0$a;
-.super Lcom/google/android/play/core/assetpacks/o2;
+.super Lae/z1;
 .source "ToolbarWidgetWrapper.java"
 
 
@@ -15,11 +15,11 @@
 
 
 # instance fields
-.field public c:Z
+.field public a:Z
 
-.field public final synthetic d:I
+.field public final synthetic b:I
 
-.field public final synthetic e:Landroidx/appcompat/widget/j0;
+.field public final synthetic c:Landroidx/appcompat/widget/j0;
 
 
 # direct methods
@@ -27,16 +27,16 @@
     .locals 0
 
     .line 1
-    iput-object p1, p0, Landroidx/appcompat/widget/j0$a;->e:Landroidx/appcompat/widget/j0;
+    iput-object p1, p0, Landroidx/appcompat/widget/j0$a;->c:Landroidx/appcompat/widget/j0;
 
-    iput p2, p0, Landroidx/appcompat/widget/j0$a;->d:I
+    iput p2, p0, Landroidx/appcompat/widget/j0$a;->b:I
 
-    invoke-direct {p0}, Lcom/google/android/play/core/assetpacks/o2;-><init>()V
+    invoke-direct {p0}, Lae/z1;-><init>()V
 
     const/4 p1, 0x0
 
     .line 2
-    iput-boolean p1, p0, Landroidx/appcompat/widget/j0$a;->c:Z
+    iput-boolean p1, p0, Landroidx/appcompat/widget/j0$a;->a:Z
 
     return-void
 .end method
@@ -47,16 +47,16 @@
     .locals 2
 
     .line 1
-    iget-boolean v0, p0, Landroidx/appcompat/widget/j0$a;->c:Z
+    iget-boolean v0, p0, Landroidx/appcompat/widget/j0$a;->a:Z
 
     if-nez v0, :cond_0
 
     .line 2
-    iget-object v0, p0, Landroidx/appcompat/widget/j0$a;->e:Landroidx/appcompat/widget/j0;
+    iget-object v0, p0, Landroidx/appcompat/widget/j0$a;->c:Landroidx/appcompat/widget/j0;
 
     iget-object v0, v0, Landroidx/appcompat/widget/j0;->a:Landroidx/appcompat/widget/Toolbar;
 
-    iget v1, p0, Landroidx/appcompat/widget/j0$a;->d:I
+    iget v1, p0, Landroidx/appcompat/widget/j0$a;->b:I
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
 
@@ -69,7 +69,7 @@
 
     const/4 p1, 0x1
 
-    iput-boolean p1, p0, Landroidx/appcompat/widget/j0$a;->c:Z
+    iput-boolean p1, p0, Landroidx/appcompat/widget/j0$a;->a:Z
 
     return-void
 .end method
@@ -77,7 +77,7 @@
 .method public final c()V
     .locals 2
 
-    iget-object v0, p0, Landroidx/appcompat/widget/j0$a;->e:Landroidx/appcompat/widget/j0;
+    iget-object v0, p0, Landroidx/appcompat/widget/j0$a;->c:Landroidx/appcompat/widget/j0;
 
     iget-object v0, v0, Landroidx/appcompat/widget/j0;->a:Landroidx/appcompat/widget/Toolbar;
 

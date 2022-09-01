@@ -22,11 +22,11 @@
 
 
 # instance fields
-.field public h:I
-
 .field public i:I
 
-.field public final synthetic j:Lje/u;
+.field public j:I
+
+.field public final synthetic k:Lje/u;
 
 
 # direct methods
@@ -39,7 +39,7 @@
     .end annotation
 
     .line 1
-    iput-object p1, p0, Lje/u$a;->j:Lje/u;
+    iput-object p1, p0, Lje/u$a;->k:Lje/u;
 
     invoke-direct {p0}, Lje/b;-><init>()V
 
@@ -49,13 +49,13 @@
     move-result v0
 
     .line 3
-    iput v0, p0, Lje/u$a;->h:I
+    iput v0, p0, Lje/u$a;->i:I
 
     .line 4
-    iget p1, p1, Lje/u;->g:I
+    iget p1, p1, Lje/u;->h:I
 
     .line 5
-    iput p1, p0, Lje/u$a;->i:I
+    iput p1, p0, Lje/u$a;->j:I
 
     return-void
 .end method
@@ -66,51 +66,51 @@
     .locals 4
 
     .line 1
-    iget v0, p0, Lje/u$a;->h:I
+    iget v0, p0, Lje/u$a;->i:I
 
     if-nez v0, :cond_0
 
     const/4 v0, 0x3
 
     .line 2
-    iput v0, p0, Lje/b;->f:I
+    iput v0, p0, Lje/b;->g:I
 
     goto :goto_0
 
     .line 3
     :cond_0
-    iget-object v1, p0, Lje/u$a;->j:Lje/u;
+    iget-object v1, p0, Lje/u$a;->k:Lje/u;
 
     .line 4
-    iget-object v2, v1, Lje/u;->i:[Ljava/lang/Object;
+    iget-object v2, v1, Lje/u;->j:[Ljava/lang/Object;
 
     .line 5
-    iget v3, p0, Lje/u$a;->i:I
+    iget v3, p0, Lje/u$a;->j:I
 
     aget-object v2, v2, v3
 
     .line 6
-    iput-object v2, p0, Lje/b;->g:Ljava/lang/Object;
+    iput-object v2, p0, Lje/b;->h:Ljava/lang/Object;
 
     const/4 v2, 0x1
 
     .line 7
-    iput v2, p0, Lje/b;->f:I
+    iput v2, p0, Lje/b;->g:I
 
     add-int/2addr v3, v2
 
     .line 8
-    iget v1, v1, Lje/u;->f:I
+    iget v1, v1, Lje/u;->g:I
 
     .line 9
     rem-int/2addr v3, v1
 
-    iput v3, p0, Lje/u$a;->i:I
+    iput v3, p0, Lje/u$a;->j:I
 
     add-int/lit8 v0, v0, -0x1
 
     .line 10
-    iput v0, p0, Lje/u$a;->h:I
+    iput v0, p0, Lje/u$a;->i:I
 
     :goto_0
     return-void

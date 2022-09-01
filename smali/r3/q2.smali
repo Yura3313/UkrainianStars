@@ -64,7 +64,7 @@
     if-nez v0, :cond_2
 
     .line 7
-    sget-object v0, Lr3/r1;->g:Lr3/t1;
+    sget-object v0, Lr3/r1;->h:Lr3/t1;
 
     iput-object v0, p0, Lr3/q2;->b:Lr3/r1;
 
@@ -167,7 +167,7 @@
     iput-object p1, p0, Lr3/q2;->a:Lr3/g3;
 
     .line 6
-    sget-object v0, Lr3/r1;->g:Lr3/t1;
+    sget-object v0, Lr3/r1;->h:Lr3/t1;
 
     iput-object v0, p0, Lr3/q2;->b:Lr3/r1;
     :try_end_1
@@ -182,7 +182,7 @@
     iput-object p1, p0, Lr3/q2;->a:Lr3/g3;
 
     .line 8
-    sget-object p1, Lr3/r1;->g:Lr3/t1;
+    sget-object p1, Lr3/r1;->h:Lr3/t1;
 
     iput-object p1, p0, Lr3/q2;->b:Lr3/r1;
 

@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field public final synthetic f:Landroid/view/GestureDetector;
+.field public final synthetic g:Landroid/view/GestureDetector;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lcom/supercell/titan/o;->f:Landroid/view/GestureDetector;
+    iput-object p1, p0, Lcom/supercell/titan/o;->g:Landroid/view/GestureDetector;
 
     return-void
 .end method
@@ -26,7 +26,7 @@
 .method public final onTouch(Landroid/view/View;Landroid/view/MotionEvent;)Z
     .locals 0
 
-    iget-object p1, p0, Lcom/supercell/titan/o;->f:Landroid/view/GestureDetector;
+    iget-object p1, p0, Lcom/supercell/titan/o;->g:Landroid/view/GestureDetector;
 
     invoke-virtual {p1, p2}, Landroid/view/GestureDetector;->onTouchEvent(Landroid/view/MotionEvent;)Z
 

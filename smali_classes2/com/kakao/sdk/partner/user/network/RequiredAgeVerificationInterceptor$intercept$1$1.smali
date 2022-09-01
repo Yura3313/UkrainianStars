@@ -1,5 +1,5 @@
 .class final Lcom/kakao/sdk/partner/user/network/RequiredAgeVerificationInterceptor$intercept$1$1;
-.super Lse/h;
+.super Lse/i;
 .source "RequiredAgeVerificationInterceptor.kt"
 
 # interfaces
@@ -18,32 +18,32 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/l<",
         "Ljava/lang/Throwable;",
-        "Lie/h;",
+        "Lie/i;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic $error:Lse/q;
+.field public final synthetic $error:Lse/r;
 
 .field public final synthetic $latch:Ljava/util/concurrent/CountDownLatch;
 
 
 # direct methods
-.method public constructor <init>(Lse/q;Ljava/util/concurrent/CountDownLatch;)V
+.method public constructor <init>(Lse/r;Ljava/util/concurrent/CountDownLatch;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/kakao/sdk/partner/user/network/RequiredAgeVerificationInterceptor$intercept$1$1;->$error:Lse/q;
+    iput-object p1, p0, Lcom/kakao/sdk/partner/user/network/RequiredAgeVerificationInterceptor$intercept$1$1;->$error:Lse/r;
 
     iput-object p2, p0, Lcom/kakao/sdk/partner/user/network/RequiredAgeVerificationInterceptor$intercept$1$1;->$latch:Ljava/util/concurrent/CountDownLatch;
 
     const/4 p1, 0x1
 
-    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -58,7 +58,7 @@
 
     invoke-virtual {p0, p1}, Lcom/kakao/sdk/partner/user/network/RequiredAgeVerificationInterceptor$intercept$1$1;->invoke(Ljava/lang/Throwable;)V
 
-    sget-object p1, Lie/h;->a:Lie/h;
+    sget-object p1, Lie/i;->a:Lie/i;
 
     return-object p1
 .end method
@@ -67,9 +67,9 @@
     .locals 1
 
     .line 2
-    iget-object v0, p0, Lcom/kakao/sdk/partner/user/network/RequiredAgeVerificationInterceptor$intercept$1$1;->$error:Lse/q;
+    iget-object v0, p0, Lcom/kakao/sdk/partner/user/network/RequiredAgeVerificationInterceptor$intercept$1$1;->$error:Lse/r;
 
-    iput-object p1, v0, Lse/q;->f:Ljava/lang/Object;
+    iput-object p1, v0, Lse/r;->g:Ljava/lang/Object;
 
     iget-object p1, p0, Lcom/kakao/sdk/partner/user/network/RequiredAgeVerificationInterceptor$intercept$1$1;->$latch:Ljava/util/concurrent/CountDownLatch;
 

@@ -24,7 +24,7 @@
 
 
 # virtual methods
-.method public final synthetic a(Ljava/lang/Object;Lr3/x4;)V
+.method public final synthetic a(Ljava/lang/Object;Lr3/y4;)V
     .locals 0
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -36,12 +36,12 @@
     check-cast p1, Lr3/f4;
 
     .line 2
-    invoke-virtual {p1, p2}, Lr3/f4;->b(Lr3/x4;)V
+    invoke-virtual {p1, p2}, Lr3/f4;->b(Lr3/y4;)V
 
     return-void
 .end method
 
-.method public final b(Ljava/lang/Object;Lr3/x4;)V
+.method public final b(Ljava/lang/Object;Lr3/y4;)V
     .locals 4
     .annotation system Ldalvik/annotation/Throws;
         value = {

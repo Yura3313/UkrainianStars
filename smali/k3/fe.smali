@@ -1,4 +1,4 @@
-.class public final Lk3/fe;
+.class public final synthetic Lk3/fe;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
@@ -7,22 +7,22 @@
 
 
 # instance fields
-.field public final synthetic f:Ljava/lang/String;
+.field public final synthetic g:I
 
-.field public final synthetic g:Ljava/lang/String;
+.field public final h:I
 
-.field public final synthetic h:Lk3/be;
+.field public final i:Ljava/lang/Object;
 
 
 # direct methods
-.method public constructor <init>(Lk3/be;Ljava/lang/String;Ljava/lang/String;)V
+.method public synthetic constructor <init>(Ljava/lang/Object;II)V
     .locals 0
 
-    iput-object p1, p0, Lk3/fe;->h:Lk3/be;
+    iput p3, p0, Lk3/fe;->g:I
 
-    iput-object p2, p0, Lk3/fe;->f:Ljava/lang/String;
+    iput-object p1, p0, Lk3/fe;->i:Ljava/lang/Object;
 
-    iput-object p3, p0, Lk3/fe;->g:Ljava/lang/String;
+    iput p2, p0, Lk3/fe;->h:I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -32,25 +32,53 @@
 
 # virtual methods
 .method public final run()V
-    .locals 3
+    .locals 2
+
+    iget v0, p0, Lk3/fe;->g:I
+
+    packed-switch v0, :pswitch_data_0
+
+    goto :goto_0
 
     .line 1
-    iget-object v0, p0, Lk3/fe;->h:Lk3/be;
+    :pswitch_0
+    iget-object v0, p0, Lk3/fe;->i:Ljava/lang/Object;
+
+    check-cast v0, Lk3/ce;
+
+    iget v1, p0, Lk3/fe;->h:I
 
     .line 2
-    iget-object v0, v0, Lk3/be;->s:Lk3/le;
+    iget-object v0, v0, Lk3/ce;->t:Lk3/me;
 
     if-eqz v0, :cond_0
 
     .line 3
-    iget-object v1, p0, Lk3/fe;->f:Ljava/lang/String;
+    check-cast v0, Lk3/qe;
 
-    iget-object v2, p0, Lk3/fe;->g:Ljava/lang/String;
-
-    check-cast v0, Lk3/pe;
-
-    invoke-virtual {v0, v1, v2}, Lk3/pe;->f(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v0, v1}, Lk3/qe;->onWindowVisibilityChanged(I)V
 
     :cond_0
     return-void
+
+    .line 4
+    :goto_0
+    iget-object v0, p0, Lk3/fe;->i:Ljava/lang/Object;
+
+    check-cast v0, Lk3/yf;
+
+    .line 5
+    iget-object v0, v0, Lk3/yf;->h:Ljava/lang/Object;
+
+    check-cast v0, Lk3/ex0;
+
+    .line 6
+    invoke-interface {v0}, Lk3/ex0;->x()V
+
+    return-void
+
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

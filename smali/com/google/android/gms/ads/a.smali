@@ -1,133 +1,310 @@
-.class public final enum Lcom/google/android/gms/ads/a;
-.super Ljava/lang/Enum;
+.class public Lcom/google/android/gms/ads/a;
+.super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads-lite@@19.3.0"
 
-
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ljava/lang/Enum<",
-        "Lcom/google/android/gms/ads/a;",
-        ">;"
-    }
-.end annotation
+# interfaces
+.implements Lk3/vs;
+.implements Lk3/cr0;
 
 
 # static fields
-.field public static final enum f:Lcom/google/android/gms/ads/a;
-
-.field public static final enum g:Lcom/google/android/gms/ads/a;
-
-.field public static final enum h:Lcom/google/android/gms/ads/a;
-
-.field public static final enum i:Lcom/google/android/gms/ads/a;
-
-.field public static final synthetic j:[Lcom/google/android/gms/ads/a;
+.field public static final g:Lcom/google/android/gms/ads/a;
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 9
+.method static synthetic constructor <clinit>()V
+    .locals 1
 
-    .line 1
     new-instance v0, Lcom/google/android/gms/ads/a;
 
-    const-string v1, "BANNER"
+    invoke-direct {v0}, Lcom/google/android/gms/ads/a;-><init>()V
 
-    const/4 v2, 0x0
+    sput-object v0, Lcom/google/android/gms/ads/a;->g:Lcom/google/android/gms/ads/a;
 
-    invoke-direct {v0, v1, v2}, Lcom/google/android/gms/ads/a;-><init>(Ljava/lang/String;I)V
+    return-void
+.end method
 
-    sput-object v0, Lcom/google/android/gms/ads/a;->f:Lcom/google/android/gms/ads/a;
+.method public synthetic constructor <init>()V
+    .locals 0
 
-    .line 2
-    new-instance v1, Lcom/google/android/gms/ads/a;
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    const-string v3, "INTERSTITIAL"
+    return-void
+.end method
 
-    const/4 v4, 0x1
-
-    invoke-direct {v1, v3, v4}, Lcom/google/android/gms/ads/a;-><init>(Ljava/lang/String;I)V
-
-    sput-object v1, Lcom/google/android/gms/ads/a;->g:Lcom/google/android/gms/ads/a;
+.method public synthetic constructor <init>(ILjava/lang/String;Ljava/lang/String;Lcom/google/android/gms/ads/a;)V
+    .locals 0
 
     .line 3
-    new-instance v3, Lcom/google/android/gms/ads/a;
-
-    const-string v5, "REWARDED"
-
-    const/4 v6, 0x2
-
-    invoke-direct {v3, v5, v6}, Lcom/google/android/gms/ads/a;-><init>(Ljava/lang/String;I)V
-
-    sput-object v3, Lcom/google/android/gms/ads/a;->h:Lcom/google/android/gms/ads/a;
-
-    .line 4
-    new-instance v5, Lcom/google/android/gms/ads/a;
-
-    const-string v7, "NATIVE"
-
-    const/4 v8, 0x3
-
-    invoke-direct {v5, v7, v8}, Lcom/google/android/gms/ads/a;-><init>(Ljava/lang/String;I)V
-
-    sput-object v5, Lcom/google/android/gms/ads/a;->i:Lcom/google/android/gms/ads/a;
-
-    const/4 v7, 0x4
-
-    new-array v7, v7, [Lcom/google/android/gms/ads/a;
-
-    aput-object v0, v7, v2
-
-    aput-object v1, v7, v4
-
-    aput-object v3, v7, v6
-
-    aput-object v5, v7, v8
-
-    .line 5
-    sput-object v7, Lcom/google/android/gms/ads/a;->j:[Lcom/google/android/gms/ads/a;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
-.method public constructor <init>(Ljava/lang/String;I)V
+.method public synthetic constructor <init>(Lk3/xq0;)V
     .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()V"
-        }
-    .end annotation
 
-    invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
+    .line 2
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
-.method public static valueOf(Ljava/lang/String;)Lcom/google/android/gms/ads/a;
-    .locals 1
+.method public static a(Z)V
+    .locals 0
 
-    const-class v0, Lcom/google/android/gms/ads/a;
+    if-eqz p0, :cond_0
 
-    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+    return-void
 
-    move-result-object p0
+    :cond_0
+    new-instance p0, Ljava/lang/IllegalArgumentException;
 
-    check-cast p0, Lcom/google/android/gms/ads/a;
+    invoke-direct {p0}, Ljava/lang/IllegalArgumentException;-><init>()V
 
-    return-object p0
+    throw p0
 .end method
 
-.method public static values()[Lcom/google/android/gms/ads/a;
+.method public static c(ZLjava/lang/Object;)V
+    .locals 0
+
+    if-eqz p0, :cond_0
+
+    return-void
+
+    :cond_0
+    new-instance p0, Ljava/lang/IllegalArgumentException;
+
+    invoke-static {p1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-direct {p0, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
+    throw p0
+.end method
+
+.method public static e(Z)V
+    .locals 0
+
+    if-eqz p0, :cond_0
+
+    return-void
+
+    :cond_0
+    new-instance p0, Ljava/lang/IllegalStateException;
+
+    invoke-direct {p0}, Ljava/lang/IllegalStateException;-><init>()V
+
+    throw p0
+.end method
+
+.method public static f(ZLjava/lang/Object;)V
+    .locals 0
+
+    if-eqz p0, :cond_0
+
+    return-void
+
+    :cond_0
+    new-instance p0, Ljava/lang/IllegalStateException;
+
+    invoke-static {p1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-direct {p0, p1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    throw p0
+.end method
+
+.method public static g(I)Z
     .locals 1
 
-    sget-object v0, Lcom/google/android/gms/ads/a;->j:[Lcom/google/android/gms/ads/a;
+    const/4 v0, 0x5
 
-    invoke-virtual {v0}, [Lcom/google/android/gms/ads/a;->clone()Ljava/lang/Object;
+    if-ge p0, v0, :cond_1
+
+    const-string v0, "Ads"
+
+    invoke-static {v0, p0}, Landroid/util/Log;->isLoggable(Ljava/lang/String;I)Z
+
+    move-result p0
+
+    if-eqz p0, :cond_0
+
+    goto :goto_0
+
+    :cond_0
+    const/4 p0, 0x0
+
+    return p0
+
+    :cond_1
+    :goto_0
+    const/4 p0, 0x1
+
+    return p0
+.end method
+
+.method public static h(II)I
+    .locals 0
+
+    if-ltz p0, :cond_0
+
+    if-ge p0, p1, :cond_0
+
+    return p0
+
+    :cond_0
+    new-instance p0, Ljava/lang/IndexOutOfBoundsException;
+
+    invoke-direct {p0}, Ljava/lang/IndexOutOfBoundsException;-><init>()V
+
+    throw p0
+.end method
+
+.method public static i(Ljava/lang/String;Ljava/lang/Throwable;)V
+    .locals 1
+
+    const/4 v0, 0x5
+
+    .line 1
+    invoke-static {v0}, Lcom/google/android/gms/ads/a;->g(I)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    if-eqz p1, :cond_0
+
+    .line 2
+    invoke-static {p0}, Lcom/google/android/gms/ads/a;->j(Ljava/lang/String;)Ljava/lang/String;
+
+    return-void
+
+    .line 3
+    :cond_0
+    invoke-static {p0}, Lcom/google/android/gms/ads/a;->j(Ljava/lang/String;)Ljava/lang/String;
+
+    :cond_1
+    return-void
+.end method
+
+.method public static j(Ljava/lang/String;)Ljava/lang/String;
+    .locals 3
+
+    .line 1
+    invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
 
     move-result-object v0
 
-    check-cast v0, [Lcom/google/android/gms/ads/a;
+    invoke-virtual {v0}, Ljava/lang/Thread;->getStackTrace()[Ljava/lang/StackTraceElement;
 
-    return-object v0
+    move-result-object v0
+
+    .line 2
+    array-length v1, v0
+
+    const/4 v2, 0x4
+
+    if-lt v1, v2, :cond_0
+
+    const/4 v1, 0x3
+
+    .line 3
+    aget-object v0, v0, v1
+
+    invoke-virtual {v0}, Ljava/lang/StackTraceElement;->getLineNumber()I
+
+    move-result v0
+
+    invoke-virtual {p0}, Ljava/lang/String;->length()I
+
+    move-result v1
+
+    add-int/lit8 v1, v1, 0xd
+
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2, v1}, Ljava/lang/StringBuilder;-><init>(I)V
+
+    invoke-virtual {v2, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string p0, " @"
+
+    invoke-virtual {v2, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object p0
+
+    :cond_0
+    return-object p0
+.end method
+
+.method public static k()Z
+    .locals 1
+
+    const/4 v0, 0x2
+
+    .line 1
+    invoke-static {v0}, Lcom/google/android/gms/ads/a;->g(I)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    .line 2
+    sget-object v0, Lk3/t0;->a:Lk3/j0;
+
+    invoke-virtual {v0}, Lk3/j0;->a()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Ljava/lang/Boolean;
+
+    invoke-virtual {v0}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    const/4 v0, 0x1
+
+    return v0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    return v0
+.end method
+
+
+# virtual methods
+.method public b([BII)[B
+    .locals 0
+
+    add-int/2addr p3, p2
+
+    invoke-static {p1, p2, p3}, Ljava/util/Arrays;->copyOfRange([BII)[B
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public d(Ljava/lang/Object;)V
+    .locals 0
+
+    .line 1
+    check-cast p1, Lk3/js;
+
+    .line 2
+    invoke-interface {p1}, Lk3/js;->V()V
+
+    return-void
 .end method

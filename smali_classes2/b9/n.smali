@@ -28,12 +28,12 @@
         value = {
             "(",
             "Ljava/util/List<",
-            "Lcom/helpshift/util/h0<",
+            "Lcom/helpshift/util/f0<",
             "Ljava/lang/String;",
             "Ljava/lang/Double;",
             ">;>;ID)",
             "Ljava/util/List<",
-            "Lcom/helpshift/util/h0<",
+            "Lcom/helpshift/util/f0<",
             "Ljava/lang/String;",
             "Ljava/lang/Double;",
             ">;>;"
@@ -66,13 +66,13 @@
 
     move-result-object v4
 
-    check-cast v4, Lcom/helpshift/util/h0;
+    check-cast v4, Lcom/helpshift/util/f0;
 
     .line 4
     invoke-virtual {v0, v4}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 5
-    iget-object v4, v4, Lcom/helpshift/util/h0;->b:Ljava/lang/Object;
+    iget-object v4, v4, Lcom/helpshift/util/f0;->b:Ljava/lang/Object;
 
     check-cast v4, Ljava/lang/Double;
 
@@ -317,7 +317,7 @@
             "Ljava/lang/String;",
             ">;)",
             "Ljava/util/List<",
-            "Lcom/helpshift/util/h0<",
+            "Lcom/helpshift/util/f0<",
             "Ljava/lang/String;",
             "Ljava/lang/Double;",
             ">;>;"
@@ -359,7 +359,7 @@
     if-ge v2, v0, :cond_1
 
     .line 5
-    new-instance v3, Lcom/helpshift/util/h0;
+    new-instance v3, Lcom/helpshift/util/f0;
 
     .line 6
     invoke-interface {p2, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
@@ -370,7 +370,7 @@
 
     move-result-object v5
 
-    invoke-direct {v3, v4, v5}, Lcom/helpshift/util/h0;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
+    invoke-direct {v3, v4, v5}, Lcom/helpshift/util/f0;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
 
     .line 7
     invoke-virtual {v1, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z

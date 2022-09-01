@@ -542,22 +542,22 @@
     .line 7
     :cond_1
     :try_start_2
-    iget-object p1, v0, Lm/d;->g:[J
+    iget-object p1, v0, Lm/d;->h:[J
 
-    iget v2, v0, Lm/d;->i:I
+    iget v2, v0, Lm/d;->j:I
 
-    invoke-static {p1, v2, p2, p3}, Lcom/android/billingclient/api/z;->c([JIJ)I
+    invoke-static {p1, v2, p2, p3}, Ll2/p;->b([JIJ)I
 
     move-result p1
 
     if-ltz p1, :cond_2
 
     .line 8
-    iget-object p2, v0, Lm/d;->h:[Ljava/lang/Object;
+    iget-object p2, v0, Lm/d;->i:[Ljava/lang/Object;
 
     aget-object p3, p2, p1
 
-    sget-object v2, Lm/d;->j:Ljava/lang/Object;
+    sget-object v2, Lm/d;->k:Ljava/lang/Object;
 
     if-eq p3, v2, :cond_2
 
@@ -567,7 +567,7 @@
     const/4 p1, 0x1
 
     .line 10
-    iput-boolean p1, v0, Lm/d;->f:Z
+    iput-boolean p1, v0, Lm/d;->g:Z
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 

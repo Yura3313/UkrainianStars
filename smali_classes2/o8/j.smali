@@ -1,10 +1,10 @@
 .class public Lo8/j;
-.super Lo8/y;
+.super Lo8/z;
 .source "AdminMessageDM.java"
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;JLo8/o;)V
+.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;JLo8/p;)V
     .locals 8
 
     const/4 v6, 0x1
@@ -22,15 +22,15 @@
     move-object v5, p6
 
     .line 1
-    invoke-direct/range {v0 .. v7}, Lo8/y;-><init>(Ljava/lang/String;Ljava/lang/String;JLo8/o;ZI)V
+    invoke-direct/range {v0 .. v7}, Lo8/z;-><init>(Ljava/lang/String;Ljava/lang/String;JLo8/p;ZI)V
 
     .line 2
-    iput-object p1, p0, Lo8/y;->i:Ljava/lang/String;
+    iput-object p1, p0, Lo8/z;->j:Ljava/lang/String;
 
     return-void
 .end method
 
-.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;JLo8/o;I)V
+.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;JLo8/p;I)V
     .locals 8
 
     const/4 v6, 0x1
@@ -48,10 +48,10 @@
     move v7, p7
 
     .line 3
-    invoke-direct/range {v0 .. v7}, Lo8/y;-><init>(Ljava/lang/String;Ljava/lang/String;JLo8/o;ZI)V
+    invoke-direct/range {v0 .. v7}, Lo8/z;-><init>(Ljava/lang/String;Ljava/lang/String;JLo8/p;ZI)V
 
     .line 4
-    iput-object p1, p0, Lo8/y;->i:Ljava/lang/String;
+    iput-object p1, p0, Lo8/z;->j:Ljava/lang/String;
 
     return-void
 .end method
@@ -60,7 +60,7 @@
     .locals 0
 
     .line 5
-    invoke-direct {p0, p1}, Lo8/y;-><init>(Lo8/y;)V
+    invoke-direct {p0, p1}, Lo8/z;-><init>(Lo8/z;)V
 
     return-void
 .end method
@@ -77,7 +77,7 @@
     return-object v0
 .end method
 
-.method public bridge synthetic b()Lo8/y;
+.method public bridge synthetic b()Lo8/z;
     .locals 1
 
     invoke-virtual {p0}, Lo8/j;->p()Lo8/j;

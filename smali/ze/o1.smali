@@ -1,43 +1,150 @@
-.class public Lze/o1;
-.super Lze/a;
-.source "Builders.common.kt"
+.class public final Lze/o1;
+.super Lze/e1;
+.source "JobSupport.kt"
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lze/a<",
-        "Lie/h;",
+        "<T:",
+        "Ljava/lang/Object;",
+        ">",
+        "Lze/e1<",
+        "Lze/f1;",
         ">;"
     }
 .end annotation
 
 
+# instance fields
+.field public final k:Lze/g;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lze/g<",
+            "TT;>;"
+        }
+    .end annotation
+.end field
+
+
 # direct methods
-.method public constructor <init>(Lke/f;Z)V
+.method public constructor <init>(Lze/f1;Lze/g;)V
     .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lze/f1;",
+            "Lze/g<",
+            "-TT;>;)V"
+        }
+    .end annotation
 
-    const-string v0, "parentContext"
+    const-string v0, "job"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-direct {p0, p1, p2}, Lze/a;-><init>(Lke/f;Z)V
+    invoke-direct {p0, p1}, Lze/e1;-><init>(Lze/c1;)V
+
+    iput-object p2, p0, Lze/o1;->k:Lze/g;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final B(Ljava/lang/Throwable;)Z
-    .locals 1
+.method public final bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
+
+    check-cast p1, Ljava/lang/Throwable;
+
+    invoke-virtual {p0, p1}, Lze/o1;->l(Ljava/lang/Throwable;)V
+
+    sget-object p1, Lie/i;->a:Lie/i;
+
+    return-object p1
+.end method
+
+.method public final l(Ljava/lang/Throwable;)V
+    .locals 3
 
     .line 1
-    iget-object v0, p0, Lze/a;->g:Lke/f;
+    iget-object p1, p0, Lze/e1;->j:Lze/c1;
+
+    check-cast p1, Lze/f1;
+
+    invoke-virtual {p1}, Lze/f1;->A()Ljava/lang/Object;
+
+    move-result-object p1
 
     .line 2
-    invoke-static {v0, p1}, Le5/i;->j(Lke/f;Ljava/lang/Throwable;)V
+    sget-boolean v0, Lze/c0;->a:Z
 
-    const/4 p1, 0x1
+    .line 3
+    instance-of v0, p1, Lze/q;
 
-    return p1
+    if-eqz v0, :cond_0
+
+    .line 4
+    iget-object v0, p0, Lze/o1;->k:Lze/g;
+
+    check-cast p1, Lze/q;
+
+    iget-object p1, p1, Lze/q;->a:Ljava/lang/Throwable;
+
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    const-string v1, "exception"
+
+    .line 5
+    invoke-static {p1, v1}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 6
+    new-instance v1, Lze/q;
+
+    const/4 v2, 0x0
+
+    invoke-direct {v1, p1}, Lze/q;-><init>(Ljava/lang/Throwable;)V
+
+    invoke-virtual {v0, v1, v2}, Lze/g;->q(Ljava/lang/Object;I)Lze/h;
+
+    goto :goto_0
+
+    .line 7
+    :cond_0
+    iget-object v0, p0, Lze/o1;->k:Lze/g;
+
+    invoke-static {p1}, Lze/g1;->a(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    invoke-virtual {v0, p1}, Lze/g;->c(Ljava/lang/Object;)V
+
+    :goto_0
+    return-void
+.end method
+
+.method public final toString()Ljava/lang/String;
+    .locals 2
+
+    const-string v0, "ResumeAwaitOnCompletion["
+
+    .line 1
+    invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    .line 2
+    iget-object v1, p0, Lze/o1;->k:Lze/g;
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    const/16 v1, 0x5d
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
 .end method

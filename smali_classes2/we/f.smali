@@ -14,7 +14,7 @@
         ">",
         "Ljava/lang/Object;",
         "Lwe/e<",
-        "Lie/h;",
+        "Lie/i;",
         ">;"
     }
 .end annotation

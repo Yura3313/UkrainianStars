@@ -20,11 +20,11 @@
 
 
 # static fields
-.field public static final h:Ljava/lang/Object;
+.field public static final i:Ljava/lang/Object;
 
 
 # instance fields
-.field public volatile f:La5/u0;
+.field public volatile g:La5/u0;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "La5/u0<",
@@ -33,7 +33,7 @@
     .end annotation
 .end field
 
-.field public volatile g:Ljava/lang/Object;
+.field public volatile h:Ljava/lang/Object;
 
 
 # direct methods
@@ -44,7 +44,7 @@
 
     invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
-    sput-object v0, La5/t0;->h:Ljava/lang/Object;
+    sput-object v0, La5/t0;->i:Ljava/lang/Object;
 
     return-void
 .end method
@@ -61,11 +61,11 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    sget-object v0, La5/t0;->h:Ljava/lang/Object;
+    sget-object v0, La5/t0;->i:Ljava/lang/Object;
 
-    iput-object v0, p0, La5/t0;->g:Ljava/lang/Object;
+    iput-object v0, p0, La5/t0;->h:Ljava/lang/Object;
 
-    iput-object p1, p0, La5/t0;->f:La5/u0;
+    iput-object p1, p0, La5/t0;->g:La5/u0;
 
     return-void
 .end method
@@ -142,26 +142,26 @@
         }
     .end annotation
 
-    iget-object v0, p0, La5/t0;->g:Ljava/lang/Object;
+    iget-object v0, p0, La5/t0;->h:Ljava/lang/Object;
 
-    sget-object v1, La5/t0;->h:Ljava/lang/Object;
+    sget-object v1, La5/t0;->i:Ljava/lang/Object;
 
     if-ne v0, v1, :cond_3
 
     monitor-enter p0
 
     :try_start_0
-    iget-object v0, p0, La5/t0;->g:Ljava/lang/Object;
+    iget-object v0, p0, La5/t0;->h:Ljava/lang/Object;
 
     if-ne v0, v1, :cond_2
 
-    iget-object v0, p0, La5/t0;->f:La5/u0;
+    iget-object v0, p0, La5/t0;->g:La5/u0;
 
     invoke-interface {v0}, La5/u0;->e()Ljava/lang/Object;
 
     move-result-object v0
 
-    iget-object v2, p0, La5/t0;->g:Ljava/lang/Object;
+    iget-object v2, p0, La5/t0;->h:Ljava/lang/Object;
 
     if-ne v2, v1, :cond_0
 
@@ -171,11 +171,11 @@
     if-ne v2, v0, :cond_1
 
     :goto_0
-    iput-object v0, p0, La5/t0;->g:Ljava/lang/Object;
+    iput-object v0, p0, La5/t0;->h:Ljava/lang/Object;
 
     const/4 v1, 0x0
 
-    iput-object v1, p0, La5/t0;->f:La5/u0;
+    iput-object v1, p0, La5/t0;->g:La5/u0;
 
     goto :goto_1
 

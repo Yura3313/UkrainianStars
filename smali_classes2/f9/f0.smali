@@ -71,12 +71,12 @@
     iget-object v1, p0, Lf9/f0;->c:Lf9/j0;
 
     .line 4
-    iget-object v1, v1, Lf9/j0;->b:Lo8/z;
+    iget-object v1, v1, Lf9/j0;->b:Lo8/b0;
 
     .line 5
-    iget-object v1, v1, Lo8/z;->A:Lp8/c;
+    iget-object v1, v1, Lo8/b0;->B:Lp8/d;
 
-    iget-object v1, v1, Lp8/c;->j:Ljava/util/List;
+    iget-object v1, v1, Lp8/d;->k:Ljava/util/List;
 
     iget-object v2, p0, Lf9/f0;->b:Ljava/util/List;
 
@@ -161,7 +161,7 @@
 
     move-result-object v2
 
-    check-cast v2, Lp8/c$a;
+    check-cast v2, Lp8/d$a;
 
     .line 15
     iget-object v3, p0, Lf9/f0;->c:Lf9/j0;
@@ -169,7 +169,7 @@
     iget-object v4, p0, Lf9/f0;->b:Ljava/util/List;
 
     .line 16
-    invoke-virtual {v3, v2, v4}, Lf9/j0;->a(Lp8/c$a;Ljava/util/List;)Lf9/f1;
+    invoke-virtual {v3, v2, v4}, Lf9/j0;->a(Lp8/d$a;Ljava/util/List;)Lf9/f1;
 
     move-result-object v2
 

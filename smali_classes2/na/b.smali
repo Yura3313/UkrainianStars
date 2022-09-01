@@ -71,7 +71,7 @@
     check-cast p1, Lcom/helpshift/support/Section;
 
     .line 2
-    iget-object p1, p1, Lcom/helpshift/support/Section;->g:Ljava/lang/String;
+    iget-object p1, p1, Lcom/helpshift/support/Section;->h:Ljava/lang/String;
 
     return-object p1
 .end method
@@ -95,7 +95,7 @@
     const-string v0, "Exception in restoreState: "
 
     .line 2
-    invoke-static {p2, v0, p1}, Landroidx/savedstate/d;->g(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {p2, v0, p1}, Le5/i;->i(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
     :goto_0
     return-void

@@ -79,7 +79,7 @@
     invoke-virtual {v0, p1}, Lab/o;->W0(Lcom/helpshift/support/Faq;)V
 
     .line 5
-    iget-object v1, p1, Lcom/helpshift/support/Faq;->n:Ljava/lang/String;
+    iget-object v1, p1, Lcom/helpshift/support/Faq;->o:Ljava/lang/String;
 
     const-string v2, "FAQ question loaded : "
 
@@ -89,7 +89,7 @@
     move-result-object v2
 
     .line 7
-    iget-object p1, p1, Lcom/helpshift/support/Faq;->f:Ljava/lang/String;
+    iget-object p1, p1, Lcom/helpshift/support/Faq;->g:Ljava/lang/String;
 
     invoke-virtual {v2, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -102,10 +102,10 @@
     const-string v3, "Helpshift_SingleQstn"
 
     .line 8
-    invoke-static {v3, p1, v2, v2}, Landroidx/savedstate/d;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v3, p1, v2, v2}, Le5/i;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
 
     .line 9
-    iget-boolean p1, v0, Lab/o;->g0:Z
+    iget-boolean p1, v0, Lab/o;->h0:Z
 
     if-nez p1, :cond_2
 

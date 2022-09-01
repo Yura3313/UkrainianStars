@@ -2,52 +2,57 @@
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
-# interfaces
-.implements Lk3/yl0;
-
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Ljava/lang/Object;",
-        "Lk3/yl0<",
-        "Ljava/lang/Void;",
-        ">;"
+        "<AdT:",
+        "Lk3/io;",
+        ">",
+        "Ljava/lang/Object;"
     }
 .end annotation
 
 
+# instance fields
+.field public final a:Lk3/qh0;
+
+.field public final b:Lcom/google/android/gms/internal/ads/zzasp;
+
+.field public final c:Lk3/nh0;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lk3/nh0<",
+            "TAdT;>;"
+        }
+    .end annotation
+.end field
+
+
 # direct methods
-.method public constructor <init>()V
+.method public constructor <init>(Lk3/qh0;Lcom/google/android/gms/internal/ads/zzasp;Lk3/nh0;)V
     .locals 0
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    return-void
-.end method
-
-
-# virtual methods
-.method public final a(Ljava/lang/Throwable;)V
-    .locals 0
-
-    invoke-static {}, Lk3/j6;->m()Z
-
-    return-void
-.end method
-
-.method public final onSuccess(Ljava/lang/Object;)V
-    .locals 0
-    .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
-        .end annotation
-    .end param
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lk3/qh0;",
+            "Lcom/google/android/gms/internal/ads/zzasp;",
+            "Lk3/nh0<",
+            "TAdT;>;)V"
+        }
+    .end annotation
 
     .line 1
-    check-cast p1, Ljava/lang/Void;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    invoke-static {}, Lk3/j6;->m()Z
+    iput-object p1, p0, Lk3/kf0;->a:Lk3/qh0;
+
+    .line 3
+    iput-object p2, p0, Lk3/kf0;->b:Lcom/google/android/gms/internal/ads/zzasp;
+
+    .line 4
+    iput-object p3, p0, Lk3/kf0;->c:Lk3/nh0;
 
     return-void
 .end method

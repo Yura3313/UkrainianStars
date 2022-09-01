@@ -44,7 +44,7 @@
     .line 2
     iget-object p1, p0, Le8/e$a;->a:Le8/e;
 
-    iget-object p1, p1, Le8/e;->f:Le8/f;
+    iget-object p1, p1, Le8/e;->g:Le8/f;
 
     iget-object p1, p1, Le8/f;->a:Lla/e;
 
@@ -70,7 +70,7 @@
     invoke-virtual {v0}, Ljava/lang/Thread;->start()V
 
     .line 6
-    invoke-static {}, Lib/e;->a()V
+    invoke-static {}, Lib/e;->c()V
 
     :cond_0
     return-void

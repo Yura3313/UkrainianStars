@@ -1,188 +1,128 @@
 .class public final Lra/z;
-.super Lra/u;
-.source "RequestAppReviewMessageDataBinder.java"
+.super Ljava/lang/Object;
+.source "RequestScreenshotMessageDataBinder.java"
+
+# interfaces
+.implements Landroid/view/View$OnClickListener;
 
 
-# annotations
-.annotation system Ldalvik/annotation/MemberClasses;
-    value = {
-        Lra/z$a;
-    }
-.end annotation
+# instance fields
+.field public final synthetic g:Lo8/e0;
 
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Lra/u<",
-        "Lra/z$a;",
-        "Lo8/a0;",
-        ">;"
-    }
-.end annotation
+.field public final synthetic h:Lra/b0;
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;)V
+.method public constructor <init>(Lra/b0;Lo8/e0;)V
     .locals 0
 
-    invoke-direct {p0, p1}, Lra/u;-><init>(Landroid/content/Context;)V
+    iput-object p1, p0, Lra/z;->h:Lra/b0;
+
+    iput-object p2, p0, Lra/z;->g:Lo8/e0;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Landroidx/recyclerview/widget/RecyclerView$z;Lo8/y;)V
-    .locals 4
-
-    .line 1
-    check-cast p1, Lra/z$a;
-
-    check-cast p2, Lo8/a0;
-
-    .line 2
-    iget-object v0, p1, Lra/z$a;->z:Landroid/widget/TextView;
-
-    sget v1, Lcom/helpshift/R$string;->hs__review_request_message:I
-
-    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
-
-    .line 3
-    iget-boolean v0, p2, Lo8/a0;->z:Z
-
-    if-eqz v0, :cond_0
-
-    .line 4
-    iget-object v0, p1, Lra/z$a;->A:Landroid/widget/Button;
-
-    const/16 v1, 0x8
-
-    invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
-
-    goto :goto_0
-
-    .line 5
-    :cond_0
-    iget-object v0, p1, Lra/z$a;->A:Landroid/widget/Button;
-
-    const/4 v1, 0x0
-
-    invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
-
-    .line 6
-    :goto_0
-    iget-object v0, p2, Lo8/y;->h:Lo8/l0;
-
-    .line 7
-    iget-boolean v1, v0, Lo8/l0;->g:Z
-
-    if-eqz v1, :cond_1
-
-    .line 8
-    sget v1, Lcom/helpshift/R$drawable;->hs__chat_bubble_rounded:I
-
-    goto :goto_1
-
-    :cond_1
-    sget v1, Lcom/helpshift/R$drawable;->hs__chat_bubble_admin:I
-
-    .line 9
-    :goto_1
-    iget-object v2, p1, Lra/z$a;->C:Landroid/view/View;
-
-    sget v3, Lcom/helpshift/R$attr;->hs__chatBubbleAdminBackgroundColor:I
-
-    invoke-virtual {p0, v2, v1, v3}, Lra/u;->i(Landroid/view/View;II)V
-
-    .line 10
-    iget-boolean v1, v0, Lo8/l0;->f:Z
-
-    if-eqz v1, :cond_2
-
-    .line 11
-    iget-object v1, p1, Lra/z$a;->B:Landroid/widget/TextView;
-
-    invoke-virtual {p2}, Lo8/y;->i()Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-virtual {v1, v2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
-
-    .line 12
-    :cond_2
-    iget-object v1, p1, Lra/z$a;->B:Landroid/widget/TextView;
-
-    .line 13
-    iget-boolean v0, v0, Lo8/l0;->f:Z
-
-    .line 14
-    invoke-virtual {p0, v1, v0}, Lra/u;->m(Landroid/view/View;Z)V
-
-    .line 15
-    iget-boolean v0, p2, Lo8/a0;->A:Z
-
-    if-eqz v0, :cond_3
-
-    .line 16
-    iget-object v0, p1, Lra/z$a;->A:Landroid/widget/Button;
-
-    new-instance v1, Lra/y;
-
-    invoke-direct {v1, p0, p2}, Lra/y;-><init>(Lra/z;Lo8/a0;)V
-
-    invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
-
-    goto :goto_2
-
-    .line 17
-    :cond_3
-    iget-object v0, p1, Lra/z$a;->A:Landroid/widget/Button;
-
-    const/4 v1, 0x0
-
-    invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
-
-    .line 18
-    :goto_2
-    iget-object v0, p1, Lra/z$a;->y:Landroid/view/View;
-
-    invoke-virtual {p0, p2}, Lra/u;->d(Lo8/y;)Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Landroid/view/View;->setContentDescription(Ljava/lang/CharSequence;)V
-
-    .line 19
-    iget-object p1, p1, Lra/z$a;->D:Lcom/helpshift/views/CircleImageView;
-
-    invoke-virtual {p0, p2, p1}, Lra/u;->h(Lo8/y;Lcom/helpshift/views/CircleImageView;)V
-
-    return-void
-.end method
-
-.method public final b(Landroid/view/ViewGroup;)Landroidx/recyclerview/widget/RecyclerView$z;
+.method public final onClick(Landroid/view/View;)V
     .locals 3
 
     .line 1
-    invoke-virtual {p1}, Landroid/view/View;->getContext()Landroid/content/Context;
-
-    move-result-object v0
-
-    invoke-static {v0}, Landroid/view/LayoutInflater;->from(Landroid/content/Context;)Landroid/view/LayoutInflater;
-
-    move-result-object v0
-
-    sget v1, Lcom/helpshift/R$layout;->hs__msg_review_request:I
-
-    const/4 v2, 0x0
-
-    invoke-virtual {v0, v1, p1, v2}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
-
-    move-result-object p1
+    iget-object p1, p0, Lra/z;->g:Lo8/e0;
 
     .line 2
-    new-instance v0, Lra/z$a;
+    iget-boolean v0, p1, Lo8/e0;->A:Z
 
-    invoke-direct {v0, p1}, Lra/z$a;-><init>(Landroid/view/View;)V
+    const/4 v1, 0x1
 
-    return-object v0
+    if-nez v0, :cond_0
+
+    iget-boolean v0, p1, Lo8/e0;->B:Z
+
+    if-eqz v0, :cond_0
+
+    const/4 v0, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    :goto_0
+    if-eqz v0, :cond_1
+
+    .line 3
+    iget-object v0, p0, Lra/z;->h:Lra/b0;
+
+    iget-object v0, v0, Lra/u;->b:Lra/u$a;
+
+    if-eqz v0, :cond_1
+
+    .line 4
+    check-cast v0, Lqa/p0;
+
+    .line 5
+    iget-object v0, v0, Lqa/p0;->e:Lra/w;
+
+    if-eqz v0, :cond_1
+
+    .line 6
+    check-cast v0, Lqa/t;
+
+    .line 7
+    iget-object p1, p1, Lo8/z;->j:Ljava/lang/String;
+
+    iput-object p1, v0, Lqa/t;->o0:Ljava/lang/String;
+
+    .line 8
+    iput v1, v0, Lqa/t;->p0:I
+
+    .line 9
+    iget-object p1, v0, Lqa/t;->n0:Lf9/i;
+
+    .line 10
+    iget-object p1, p1, Lf9/i;->l:Lt8/b;
+
+    invoke-virtual {p1, v1}, Lt8/b;->G(Z)V
+
+    .line 11
+    new-instance p1, Landroid/os/Bundle;
+
+    invoke-direct {p1}, Landroid/os/Bundle;-><init>()V
+
+    const/4 v1, 0x3
+
+    const-string v2, "key_attachment_mode"
+
+    .line 12
+    invoke-virtual {p1, v2, v1}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
+
+    .line 13
+    iget-object v1, v0, Lqa/t;->o0:Ljava/lang/String;
+
+    const-string v2, "key_refers_id"
+
+    invoke-virtual {p1, v2, v1}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 14
+    iget v1, v0, Lqa/t;->p0:I
+
+    const-string v2, "key_attachment_type"
+
+    invoke-virtual {p1, v2, v1}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
+
+    .line 15
+    iget-object v0, v0, Landroidx/fragment/app/Fragment;->B:Landroidx/fragment/app/Fragment;
+
+    .line 16
+    check-cast v0, Lab/p;
+
+    .line 17
+    invoke-virtual {v0, p1}, Lab/p;->Y0(Landroid/os/Bundle;)V
+
+    :cond_1
+    return-void
 .end method

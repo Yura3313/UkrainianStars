@@ -3,174 +3,112 @@
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "<T:",
-        "Ljava/lang/Object;",
-        ">",
-        "Ljava/lang/Object;"
-    }
-.end annotation
-
-
 # instance fields
-.field public final a:Ljava/util/concurrent/LinkedBlockingDeque;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/Deque<",
-            "Lk3/em0<",
-            "TT;>;>;"
-        }
-    .end annotation
-
-    .annotation build Ljavax/annotation/concurrent/GuardedBy;
-        value = "this"
-    .end annotation
-.end field
-
-.field public final b:Ljava/util/concurrent/Callable;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/concurrent/Callable<",
-            "TT;>;"
-        }
-    .end annotation
-.end field
-
-.field public final c:Lk3/gm0;
+.field public final a:Lcom/google/android/gms/internal/ads/zzamv;
 
 
 # direct methods
-.method public constructor <init>(Ljava/util/concurrent/Callable;Lk3/gm0;)V
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/util/concurrent/Callable<",
-            "TT;>;",
-            "Lk3/gm0;",
-            ")V"
-        }
-    .end annotation
+.method public constructor <init>(Lcom/google/android/gms/internal/ads/zzamv;)V
+    .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    new-instance v0, Ljava/util/concurrent/LinkedBlockingDeque;
-
-    invoke-direct {v0}, Ljava/util/concurrent/LinkedBlockingDeque;-><init>()V
-
-    iput-object v0, p0, Lk3/zg0;->a:Ljava/util/concurrent/LinkedBlockingDeque;
-
-    .line 3
-    iput-object p1, p0, Lk3/zg0;->b:Ljava/util/concurrent/Callable;
-
-    .line 4
-    iput-object p2, p0, Lk3/zg0;->c:Lk3/gm0;
+    iput-object p1, p0, Lk3/zg0;->a:Lcom/google/android/gms/internal/ads/zzamv;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final declared-synchronized a()Lk3/em0;
+.method public final a(Z)V
     .locals 1
-    .annotation system Ldalvik/annotation/Signature;
+    .annotation system Ldalvik/annotation/Throws;
         value = {
-            "()",
-            "Lk3/em0<",
-            "TT;>;"
+            Lcom/google/android/gms/internal/ads/zzdlr;
         }
     .end annotation
 
-    monitor-enter p0
-
-    const/4 v0, 0x1
-
     .line 1
     :try_start_0
-    invoke-virtual {p0, v0}, Lk3/zg0;->b(I)V
+    iget-object v0, p0, Lk3/zg0;->a:Lcom/google/android/gms/internal/ads/zzamv;
 
-    .line 2
-    iget-object v0, p0, Lk3/zg0;->a:Ljava/util/concurrent/LinkedBlockingDeque;
-
-    invoke-virtual {v0}, Ljava/util/concurrent/LinkedBlockingDeque;->poll()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Lk3/em0;
+    invoke-interface {v0, p1}, Lcom/google/android/gms/internal/ads/zzamv;->N(Z)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    monitor-exit p0
-
-    return-object v0
-
-    :catchall_0
-    move-exception v0
-
-    monitor-exit p0
-
-    throw v0
-.end method
-
-.method public final declared-synchronized b(I)V
-    .locals 4
-
-    monitor-enter p0
-
-    .line 1
-    :try_start_0
-    iget-object v0, p0, Lk3/zg0;->a:Ljava/util/concurrent/LinkedBlockingDeque;
-
-    invoke-virtual {v0}, Ljava/util/concurrent/LinkedBlockingDeque;->size()I
-
-    move-result v0
-
-    sub-int/2addr p1, v0
-
-    const/4 v0, 0x0
-
-    :goto_0
-    if-ge v0, p1, :cond_0
-
-    .line 2
-    iget-object v1, p0, Lk3/zg0;->a:Ljava/util/concurrent/LinkedBlockingDeque;
-
-    iget-object v2, p0, Lk3/zg0;->c:Lk3/gm0;
-
-    iget-object v3, p0, Lk3/zg0;->b:Ljava/util/concurrent/Callable;
-
-    invoke-interface {v2, v3}, Lk3/gm0;->c(Ljava/util/concurrent/Callable;)Lk3/em0;
-
-    move-result-object v2
-
-    invoke-virtual {v1, v2}, Ljava/util/concurrent/LinkedBlockingDeque;->add(Ljava/lang/Object;)Z
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    add-int/lit8 v0, v0, 0x1
-
-    goto :goto_0
-
-    .line 3
-    :cond_0
-    monitor-exit p0
 
     return-void
 
     :catchall_0
     move-exception p1
 
-    monitor-exit p0
+    .line 2
+    new-instance v0, Lcom/google/android/gms/internal/ads/zzdlr;
 
-    goto :goto_2
+    invoke-direct {v0, p1}, Lcom/google/android/gms/internal/ads/zzdlr;-><init>(Ljava/lang/Throwable;)V
 
-    :goto_1
-    throw p1
+    throw v0
+.end method
 
-    :goto_2
-    goto :goto_1
+.method public final b()Lcom/google/android/gms/internal/ads/zzapo;
+    .locals 2
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lcom/google/android/gms/internal/ads/zzdlr;
+        }
+    .end annotation
+
+    .line 1
+    :try_start_0
+    iget-object v0, p0, Lk3/zg0;->a:Lcom/google/android/gms/internal/ads/zzamv;
+
+    invoke-interface {v0}, Lcom/google/android/gms/internal/ads/zzamv;->H()Lcom/google/android/gms/internal/ads/zzapo;
+
+    move-result-object v0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    return-object v0
+
+    :catchall_0
+    move-exception v0
+
+    .line 2
+    new-instance v1, Lcom/google/android/gms/internal/ads/zzdlr;
+
+    invoke-direct {v1, v0}, Lcom/google/android/gms/internal/ads/zzdlr;-><init>(Ljava/lang/Throwable;)V
+
+    throw v1
+.end method
+
+.method public final c()Lcom/google/android/gms/internal/ads/zzapo;
+    .locals 2
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lcom/google/android/gms/internal/ads/zzdlr;
+        }
+    .end annotation
+
+    .line 1
+    :try_start_0
+    iget-object v0, p0, Lk3/zg0;->a:Lcom/google/android/gms/internal/ads/zzamv;
+
+    invoke-interface {v0}, Lcom/google/android/gms/internal/ads/zzamv;->u0()Lcom/google/android/gms/internal/ads/zzapo;
+
+    move-result-object v0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    return-object v0
+
+    :catchall_0
+    move-exception v0
+
+    .line 2
+    new-instance v1, Lcom/google/android/gms/internal/ads/zzdlr;
+
+    invoke-direct {v1, v0}, Lcom/google/android/gms/internal/ads/zzdlr;-><init>(Ljava/lang/Throwable;)V
+
+    throw v1
 .end method

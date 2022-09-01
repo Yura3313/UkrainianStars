@@ -3,4 +3,4 @@
 .source "ConversationalFragmentRouter.java"
 
 # interfaces
-.implements Lra/x;
+.implements Lra/w;

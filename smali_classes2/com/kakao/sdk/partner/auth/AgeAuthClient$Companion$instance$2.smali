@@ -1,5 +1,5 @@
 .class final Lcom/kakao/sdk/partner/auth/AgeAuthClient$Companion$instance$2;
-.super Lse/h;
+.super Lse/i;
 .source "AgeAuthClient.kt"
 
 # interfaces
@@ -18,7 +18,7 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/a<",
         "Lcom/kakao/sdk/partner/auth/AgeAuthClient;",
         ">;"
@@ -48,7 +48,7 @@
 
     const/4 v0, 0x0
 
-    invoke-direct {p0, v0}, Lse/h;-><init>(I)V
+    invoke-direct {p0, v0}, Lse/i;-><init>(I)V
 
     return-void
 .end method

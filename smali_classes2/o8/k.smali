@@ -4,13 +4,13 @@
 
 
 # instance fields
-.field public A:I
+.field public A:Lp8/d;
 
-.field public z:Lp8/c;
+.field public B:I
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;JLo8/o;Ljava/lang/String;ZLjava/lang/String;Ljava/lang/String;Ljava/util/List;I)V
+.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;JLo8/p;Ljava/lang/String;ZLjava/lang/String;Ljava/lang/String;Ljava/util/List;I)V
     .locals 8
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -19,13 +19,13 @@
             "Ljava/lang/String;",
             "Ljava/lang/String;",
             "J",
-            "Lo8/o;",
+            "Lo8/p;",
             "Ljava/lang/String;",
             "Z",
             "Ljava/lang/String;",
             "Ljava/lang/String;",
             "Ljava/util/List<",
-            "Lp8/c$a;",
+            "Lp8/d$a;",
             ">;",
             "Ljava/lang/Object;",
             ")V"
@@ -47,10 +47,10 @@
     move-object v6, p6
 
     .line 1
-    invoke-direct/range {v0 .. v7}, Lo8/j;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;JLo8/o;I)V
+    invoke-direct/range {v0 .. v7}, Lo8/j;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;JLo8/p;I)V
 
     .line 2
-    new-instance v7, Lp8/c;
+    new-instance v7, Lp8/d;
 
     move-object v0, v7
 
@@ -66,11 +66,11 @@
 
     move/from16 v6, p12
 
-    invoke-direct/range {v0 .. v6}, Lp8/c;-><init>(Ljava/lang/String;ZLjava/lang/String;Ljava/lang/String;Ljava/util/List;I)V
+    invoke-direct/range {v0 .. v6}, Lp8/d;-><init>(Ljava/lang/String;ZLjava/lang/String;Ljava/lang/String;Ljava/util/List;I)V
 
     move-object v0, p0
 
-    iput-object v7, v0, Lo8/k;->z:Lp8/c;
+    iput-object v7, v0, Lo8/k;->A:Lp8/d;
 
     return-void
 .end method
@@ -82,20 +82,20 @@
     invoke-direct {p0, p1}, Lo8/j;-><init>(Lo8/j;)V
 
     .line 4
-    iget-object v0, p1, Lo8/k;->z:Lp8/c;
+    iget-object v0, p1, Lo8/k;->A:Lp8/d;
 
     .line 5
-    new-instance v1, Lp8/c;
+    new-instance v1, Lp8/d;
 
-    invoke-direct {v1, v0}, Lp8/c;-><init>(Lp8/c;)V
+    invoke-direct {v1, v0}, Lp8/d;-><init>(Lp8/d;)V
 
     .line 6
-    iput-object v1, p0, Lo8/k;->z:Lp8/c;
+    iput-object v1, p0, Lo8/k;->A:Lp8/d;
 
     .line 7
-    iget p1, p1, Lo8/k;->A:I
+    iget p1, p1, Lo8/k;->B:I
 
-    iput p1, p0, Lo8/k;->A:I
+    iput p1, p0, Lo8/k;->B:I
 
     return-void
 .end method
@@ -112,7 +112,7 @@
     return-object v0
 .end method
 
-.method public final b()Lo8/y;
+.method public final b()Lo8/z;
     .locals 1
 
     new-instance v0, Lo8/k;
@@ -122,11 +122,11 @@
     return-object v0
 .end method
 
-.method public final k(Lo8/y;)V
+.method public final k(Lo8/z;)V
     .locals 1
 
     .line 1
-    invoke-super {p0, p1}, Lo8/y;->k(Lo8/y;)V
+    invoke-super {p0, p1}, Lo8/z;->k(Lo8/z;)V
 
     .line 2
     instance-of v0, p1, Lo8/k;
@@ -137,14 +137,14 @@
     check-cast p1, Lo8/k;
 
     .line 4
-    iget-object v0, p1, Lo8/k;->z:Lp8/c;
+    iget-object v0, p1, Lo8/k;->A:Lp8/d;
 
-    iput-object v0, p0, Lo8/k;->z:Lp8/c;
+    iput-object v0, p0, Lo8/k;->A:Lp8/d;
 
     .line 5
-    iget p1, p1, Lo8/k;->A:I
+    iget p1, p1, Lo8/k;->B:I
 
-    iput p1, p0, Lo8/k;->A:I
+    iput p1, p0, Lo8/k;->B:I
 
     :cond_0
     return-void

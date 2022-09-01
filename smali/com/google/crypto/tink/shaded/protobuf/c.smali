@@ -21,7 +21,7 @@
 
 
 # instance fields
-.field public f:Z
+.field public g:Z
 
 
 # direct methods
@@ -34,7 +34,7 @@
     const/4 v0, 0x1
 
     .line 2
-    iput-boolean v0, p0, Lcom/google/crypto/tink/shaded/protobuf/c;->f:Z
+    iput-boolean v0, p0, Lcom/google/crypto/tink/shaded/protobuf/c;->g:Z
 
     return-void
 .end method
@@ -44,7 +44,7 @@
 .method public final N()Z
     .locals 1
 
-    iget-boolean v0, p0, Lcom/google/crypto/tink/shaded/protobuf/c;->f:Z
+    iget-boolean v0, p0, Lcom/google/crypto/tink/shaded/protobuf/c;->g:Z
 
     return v0
 .end method
@@ -114,7 +114,7 @@
     .locals 1
 
     .line 1
-    iget-boolean v0, p0, Lcom/google/crypto/tink/shaded/protobuf/c;->f:Z
+    iget-boolean v0, p0, Lcom/google/crypto/tink/shaded/protobuf/c;->g:Z
 
     if-eqz v0, :cond_0
 
@@ -146,7 +146,7 @@
 
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/google/crypto/tink/shaded/protobuf/c;->f:Z
+    iput-boolean v0, p0, Lcom/google/crypto/tink/shaded/protobuf/c;->g:Z
 
     return-void
 .end method

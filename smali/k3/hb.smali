@@ -61,15 +61,15 @@
     .locals 4
 
     .line 1
-    sget-object v0, Lk3/q;->w1:Lk3/g;
+    sget-object v0, Lk3/o;->w1:Lk3/e;
 
     .line 2
-    sget-object v1, Lk3/l51;->j:Lk3/l51;
+    sget-object v1, Lk3/o51;->j:Lk3/o51;
 
-    iget-object v1, v1, Lk3/l51;->f:Lk3/n;
+    iget-object v1, v1, Lk3/o51;->f:Lk3/l;
 
     .line 3
-    invoke-virtual {v1, v0}, Lk3/n;->a(Lk3/h;)Ljava/lang/Object;
+    invoke-virtual {v1, v0}, Lk3/l;->a(Lk3/f;)Ljava/lang/Object;
 
     move-result-object v0
 

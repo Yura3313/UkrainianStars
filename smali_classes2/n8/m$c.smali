@@ -142,7 +142,7 @@
     const-string v3, "Connecting web-socket"
 
     .line 14
-    invoke-static {v2, v3, v1, v1}, Landroidx/savedstate/d;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v2, v3, v1, v1}, Le5/i;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
 
     .line 15
     :try_start_0
@@ -202,7 +202,7 @@
     if-eqz v4, :cond_4
 
     .line 23
-    invoke-static {v0}, Lcom/google/android/play/core/appupdate/g;->b(Ljava/lang/String;)Z
+    invoke-static {v0}, La5/b0;->d(Ljava/lang/String;)Z
 
     move-result v5
 
@@ -243,9 +243,9 @@
 
     .line 30
     :try_start_1
-    iget-object v1, v0, Lg8/a;->a:Lpb/e0;
+    iget-object v1, v0, Lg8/a;->a:Lpb/f0;
 
-    invoke-virtual {v1}, Lpb/e0;->b()Lpb/e0;
+    invoke-virtual {v1}, Lpb/f0;->b()Lpb/f0;
     :try_end_1
     .catch Lcom/helpshift/websockets/WebSocketException; {:try_start_1 .. :try_end_1} :catch_0
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_1
@@ -277,7 +277,7 @@
     const-string v1, "Exception in connecting web-socket"
 
     .line 32
-    invoke-static {v2, v1, v0}, Landroidx/savedstate/d;->g(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v2, v1, v0}, Le5/i;->i(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
     .line 33
     iget-object v0, p0, Ln8/m$c;->c:Ln8/m;

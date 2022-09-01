@@ -1,178 +1,98 @@
 .class public final Lk3/vv0;
-.super Lk3/d60;
-.source "com.google.android.gms:play-services-ads@@19.3.0"
+.super Ljava/lang/Object;
+.source "com.google.android.gms:play-services-gass@@19.3.0"
 
-
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Lk3/d60<",
-        "Ljava/lang/Integer;",
-        "Ljava/lang/Long;",
-        ">;"
-    }
-.end annotation
+# interfaces
+.implements Lk3/ou;
 
 
 # instance fields
-.field public a:Ljava/lang/Long;
+.field public final g:Ljava/nio/channels/FileChannel;
 
-.field public b:Ljava/lang/Long;
+.field public final h:J
 
-.field public c:Ljava/lang/Long;
-
-.field public d:Ljava/lang/Long;
+.field public final i:J
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;)V
+.method public constructor <init>(Ljava/nio/channels/FileChannel;JJ)V
     .locals 0
 
     .line 1
-    invoke-direct {p0}, Lk3/d60;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    invoke-virtual {p0, p1}, Lk3/vv0;->c(Ljava/lang/String;)V
+    iput-object p1, p0, Lk3/vv0;->g:Ljava/nio/channels/FileChannel;
+
+    .line 3
+    iput-wide p2, p0, Lk3/vv0;->h:J
+
+    .line 4
+    iput-wide p4, p0, Lk3/vv0;->i:J
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final b()Ljava/util/HashMap;
-    .locals 3
-    .annotation system Ldalvik/annotation/Signature;
+.method public final a([Ljava/security/MessageDigest;JI)V
+    .locals 8
+    .annotation system Ldalvik/annotation/Throws;
         value = {
-            "()",
-            "Ljava/util/HashMap<",
-            "Ljava/lang/Integer;",
-            "Ljava/lang/Long;",
-            ">;"
+            Ljava/io/IOException;
         }
     .end annotation
 
     .line 1
-    new-instance v0, Ljava/util/HashMap;
+    iget-wide v0, p0, Lk3/vv0;->h:J
 
-    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
-
-    const/4 v1, 0x0
+    add-long v4, v0, p2
 
     .line 2
-    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    iget-object v2, p0, Lk3/vv0;->g:Ljava/nio/channels/FileChannel;
 
-    move-result-object v1
+    sget-object v3, Ljava/nio/channels/FileChannel$MapMode;->READ_ONLY:Ljava/nio/channels/FileChannel$MapMode;
 
-    iget-object v2, p0, Lk3/vv0;->a:Ljava/lang/Long;
-
-    invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    const/4 v1, 0x1
+    int-to-long v6, p4
 
     .line 3
-    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    invoke-virtual/range {v2 .. v7}, Ljava/nio/channels/FileChannel;->map(Ljava/nio/channels/FileChannel$MapMode;JJ)Ljava/nio/MappedByteBuffer;
 
-    move-result-object v1
-
-    iget-object v2, p0, Lk3/vv0;->b:Ljava/lang/Long;
-
-    invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    const/4 v1, 0x2
+    move-result-object p2
 
     .line 4
-    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v1
-
-    iget-object v2, p0, Lk3/vv0;->c:Ljava/lang/Long;
-
-    invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    const/4 v1, 0x3
+    invoke-virtual {p2}, Ljava/nio/MappedByteBuffer;->load()Ljava/nio/MappedByteBuffer;
 
     .line 5
-    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    array-length p3, p1
 
-    move-result-object v1
-
-    iget-object v2, p0, Lk3/vv0;->d:Ljava/lang/Long;
-
-    invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    return-object v0
-.end method
-
-.method public final c(Ljava/lang/String;)V
-    .locals 1
-
-    .line 1
-    invoke-static {p1}, Lk3/d60;->a(Ljava/lang/String;)Ljava/util/HashMap;
-
-    move-result-object p1
-
-    if-eqz p1, :cond_0
+    const/4 p4, 0x0
 
     const/4 v0, 0x0
 
-    .line 2
-    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    :goto_0
+    if-ge v0, p3, :cond_0
 
-    move-result-object v0
+    aget-object v1, p1, v0
 
-    invoke-virtual {p1, v0}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    .line 6
+    invoke-virtual {p2, p4}, Ljava/nio/Buffer;->position(I)Ljava/nio/Buffer;
 
-    move-result-object v0
+    .line 7
+    invoke-virtual {v1, p2}, Ljava/security/MessageDigest;->update(Ljava/nio/ByteBuffer;)V
 
-    check-cast v0, Ljava/lang/Long;
+    add-int/lit8 v0, v0, 0x1
 
-    iput-object v0, p0, Lk3/vv0;->a:Ljava/lang/Long;
-
-    const/4 v0, 0x1
-
-    .line 3
-    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v0
-
-    invoke-virtual {p1, v0}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Ljava/lang/Long;
-
-    iput-object v0, p0, Lk3/vv0;->b:Ljava/lang/Long;
-
-    const/4 v0, 0x2
-
-    .line 4
-    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v0
-
-    invoke-virtual {p1, v0}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Ljava/lang/Long;
-
-    iput-object v0, p0, Lk3/vv0;->c:Ljava/lang/Long;
-
-    const/4 v0, 0x3
-
-    .line 5
-    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v0
-
-    invoke-virtual {p1, v0}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object p1
-
-    check-cast p1, Ljava/lang/Long;
-
-    iput-object p1, p0, Lk3/vv0;->d:Ljava/lang/Long;
+    goto :goto_0
 
     :cond_0
     return-void
+.end method
+
+.method public final size()J
+    .locals 2
+
+    iget-wide v0, p0, Lk3/vv0;->i:J
+
+    return-wide v0
 .end method

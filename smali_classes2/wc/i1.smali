@@ -1,69 +1,86 @@
 .class public final Lwc/i1;
-.super Lse/h;
+.super Lse/i;
 .source "ProfileLandscapeHeadFragment.kt"
 
 # interfaces
-.implements Lre/l;
+.implements Lre/p;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
-        "Lre/l<",
-        "Lcom/supercell/id/view/WidthAdjustingMultilineTextView;",
-        "Lie/h;",
+        "Lse/i;",
+        "Lre/p<",
+        "Lwc/h1;",
+        "Landroid/graphics/Bitmap;",
+        "Lie/i;",
         ">;"
     }
 .end annotation
 
 
-# instance fields
-.field public final synthetic f:Lcom/supercell/id/view/WidthAdjustingMultilineTextView;
-
-.field public final synthetic g:Landroid/graphics/drawable/BitmapDrawable;
+# static fields
+.field public static final g:Lwc/i1;
 
 
 # direct methods
-.method public constructor <init>(Lcom/supercell/id/view/WidthAdjustingMultilineTextView;Landroid/graphics/drawable/BitmapDrawable;)V
-    .locals 0
+.method public static constructor <clinit>()V
+    .locals 1
 
-    iput-object p1, p0, Lwc/i1;->f:Lcom/supercell/id/view/WidthAdjustingMultilineTextView;
+    new-instance v0, Lwc/i1;
 
-    iput-object p2, p0, Lwc/i1;->g:Landroid/graphics/drawable/BitmapDrawable;
+    invoke-direct {v0}, Lwc/i1;-><init>()V
 
-    const/4 p1, 0x1
+    sput-object v0, Lwc/i1;->g:Lwc/i1;
 
-    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .locals 1
+
+    const/4 v0, 0x2
+
+    invoke-direct {p0, v0}, Lse/i;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 2
+.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 1
 
     .line 1
-    check-cast p1, Lcom/supercell/id/view/WidthAdjustingMultilineTextView;
+    check-cast p1, Lwc/h1;
+
+    check-cast p2, Landroid/graphics/Bitmap;
+
+    const-string v0, "$receiver"
+
+    .line 2
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "it"
 
-    .line 2
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 3
-    iget-object p1, p0, Lwc/i1;->f:Lcom/supercell/id/view/WidthAdjustingMultilineTextView;
+    sget v0, Lcom/supercell/id/R$id;->head_qr_code:I
 
-    iget-object v0, p0, Lwc/i1;->g:Landroid/graphics/drawable/BitmapDrawable;
+    invoke-virtual {p1, v0}, Lwc/h1;->f1(I)Landroid/view/View;
 
-    const/4 v1, 0x0
+    move-result-object p1
+
+    check-cast p1, Landroid/widget/ImageView;
+
+    if-eqz p1, :cond_0
+
+    invoke-virtual {p1, p2}, Landroid/widget/ImageView;->setImageBitmap(Landroid/graphics/Bitmap;)V
 
     .line 4
-    invoke-virtual {p1, v0, v1, v1, v1}, Landroidx/appcompat/widget/AppCompatTextView;->setCompoundDrawablesRelative(Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)V
-
-    .line 5
-    sget-object p1, Lie/h;->a:Lie/h;
+    :cond_0
+    sget-object p1, Lie/i;->a:Lie/i;
 
     return-object p1
 .end method

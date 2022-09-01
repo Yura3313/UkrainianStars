@@ -2,98 +2,106 @@
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
+# interfaces
+.implements Lk3/mv0;
+
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "<K:",
-        "Ljava/lang/Object;",
-        "V:",
+        "<T:",
         "Ljava/lang/Object;",
         ">",
-        "Ljava/lang/Object;"
+        "Ljava/lang/Object;",
+        "Lk3/mv0<",
+        "TT;>;"
     }
 .end annotation
 
 
 # instance fields
-.field public final a:Ljava/util/LinkedHashMap;
+.field public a:Lk3/qv0;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Ljava/util/LinkedHashMap<",
-            "Ljava/lang/Object;",
-            "Lk3/mv0<",
-            "Ljava/lang/Object;",
-            ">;>;"
+            "Lk3/qv0<",
+            "TT;>;"
         }
     .end annotation
 .end field
 
 
 # direct methods
-.method public constructor <init>(I)V
-    .locals 1
+.method public constructor <init>()V
+    .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 2
-    new-instance v0, Ljava/util/LinkedHashMap;
-
-    invoke-static {p1}, La0/a;->j(I)I
-
-    move-result p1
-
-    invoke-direct {v0, p1}, Ljava/util/LinkedHashMap;-><init>(I)V
-
-    .line 3
-    iput-object v0, p0, Lk3/kv0;->a:Ljava/util/LinkedHashMap;
 
     return-void
 .end method
 
-
-# virtual methods
-.method public final a(Ljava/lang/Object;Lk3/mv0;)Lk3/kv0;
+.method public static a(Lk3/qv0;Lk3/qv0;)V
     .locals 1
-
-    .line 1
-    iget-object v0, p0, Lk3/kv0;->a:Ljava/util/LinkedHashMap;
-
-    if-eqz p2, :cond_0
-
-    invoke-virtual {v0, p1, p2}, Ljava/util/AbstractMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    return-object p0
-
-    .line 2
-    :cond_0
-    new-instance p1, Ljava/lang/NullPointerException;
-
-    const-string p2, "provider"
-
-    invoke-direct {p1, p2}, Ljava/lang/NullPointerException;-><init>(Ljava/lang/String;)V
-
-    throw p1
-.end method
-
-.method public final b()Lk3/jv0;
-    .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "()",
-            "Lk3/jv0<",
-            "TK;TV;>;"
+            "<T:",
+            "Ljava/lang/Object;",
+            ">(",
+            "Lk3/qv0<",
+            "TT;>;",
+            "Lk3/qv0<",
+            "TT;>;)V"
         }
     .end annotation
 
-    new-instance v0, Lk3/jv0;
+    .line 1
+    check-cast p0, Lk3/kv0;
 
-    iget-object v1, p0, Lk3/kv0;->a:Ljava/util/LinkedHashMap;
+    .line 2
+    iget-object v0, p0, Lk3/kv0;->a:Lk3/qv0;
 
-    const/4 v2, 0x0
+    if-nez v0, :cond_0
 
-    invoke-direct {v0, v1, v2}, Lk3/jv0;-><init>(Ljava/util/Map;Ld4/i;)V
+    .line 3
+    iput-object p1, p0, Lk3/kv0;->a:Lk3/qv0;
+
+    return-void
+
+    .line 4
+    :cond_0
+    new-instance p0, Ljava/lang/IllegalStateException;
+
+    invoke-direct {p0}, Ljava/lang/IllegalStateException;-><init>()V
+
+    throw p0
+.end method
+
+
+# virtual methods
+.method public final get()Ljava/lang/Object;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()TT;"
+        }
+    .end annotation
+
+    .line 1
+    iget-object v0, p0, Lk3/kv0;->a:Lk3/qv0;
+
+    if-eqz v0, :cond_0
+
+    .line 2
+    invoke-interface {v0}, Lk3/qv0;->get()Ljava/lang/Object;
+
+    move-result-object v0
 
     return-object v0
+
+    .line 3
+    :cond_0
+    new-instance v0, Ljava/lang/IllegalStateException;
+
+    invoke-direct {v0}, Ljava/lang/IllegalStateException;-><init>()V
+
+    throw v0
 .end method

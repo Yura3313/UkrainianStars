@@ -8,7 +8,7 @@
 
 .field public final b:Lk3/gh;
 
-.field public final c:Lk3/ig0;
+.field public final c:Lk3/jg0;
 
 .field public final d:I
 
@@ -18,7 +18,7 @@
 
 
 # direct methods
-.method public constructor <init>(Landroid/view/View;Lk3/gh;Lk3/ig0;IZZ)V
+.method public constructor <init>(Landroid/view/View;Lk3/gh;Lk3/jg0;IZZ)V
     .locals 0
 
     .line 1
@@ -31,7 +31,7 @@
     iput-object p2, p0, Lk3/qm;->b:Lk3/gh;
 
     .line 4
-    iput-object p3, p0, Lk3/qm;->c:Lk3/ig0;
+    iput-object p3, p0, Lk3/qm;->c:Lk3/jg0;
 
     .line 5
     iput p4, p0, Lk3/qm;->d:I

@@ -1,5 +1,5 @@
 .class public final Lrc/d0$w;
-.super Lse/h;
+.super Lse/i;
 .source "SocialApiClient.kt"
 
 # interfaces
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lrc/d0;->p(Ljava/util/List;Ljava/lang/String;Ljava/lang/String;Lre/l;)Lze/e0;
+    value = Lrc/d0;->q(Ljava/util/List;Ljava/lang/String;Ljava/lang/String;Lre/l;)Lze/f0;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,7 +18,7 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/l<",
         "Lorg/json/JSONObject;",
         "Lorg/json/JSONArray;",
@@ -28,7 +28,7 @@
 
 
 # static fields
-.field public static final f:Lrc/d0$w;
+.field public static final g:Lrc/d0$w;
 
 
 # direct methods
@@ -39,7 +39,7 @@
 
     invoke-direct {v0}, Lrc/d0$w;-><init>()V
 
-    sput-object v0, Lrc/d0$w;->f:Lrc/d0$w;
+    sput-object v0, Lrc/d0$w;->g:Lrc/d0$w;
 
     return-void
 .end method
@@ -49,7 +49,7 @@
 
     const/4 v0, 0x1
 
-    invoke-direct {p0, v0}, Lse/h;-><init>(I)V
+    invoke-direct {p0, v0}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -65,7 +65,7 @@
     const-string v0, "it"
 
     .line 2
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "profiles"
 

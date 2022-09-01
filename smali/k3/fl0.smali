@@ -1,147 +1,79 @@
-.class public abstract Lk3/fl0;
-.super Ljava/util/concurrent/AbstractExecutorService;
+.class public final Lk3/fl0;
+.super Lk3/cl0;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
-# interfaces
-.implements Lk3/gm0;
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<V:",
+        "Ljava/lang/Object;",
+        "X:",
+        "Ljava/lang/Throwable;",
+        ">",
+        "Lk3/cl0<",
+        "TV;TX;",
+        "Lk3/vj0<",
+        "-TX;+TV;>;TV;>;"
+    }
+.end annotation
 
 
 # direct methods
-.method public constructor <init>()V
+.method public constructor <init>(Lk3/hm0;Ljava/lang/Class;Lk3/vj0;)V
     .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lk3/hm0<",
+            "+TV;>;",
+            "Ljava/lang/Class<",
+            "TX;>;",
+            "Lk3/vj0<",
+            "-TX;+TV;>;)V"
+        }
+    .end annotation
 
-    invoke-direct {p0}, Ljava/util/concurrent/AbstractExecutorService;-><init>()V
+    invoke-direct {p0, p1, p2, p3}, Lk3/cl0;-><init>(Lk3/hm0;Ljava/lang/Class;Ljava/lang/Object;)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Ljava/lang/Runnable;)Lk3/em0;
+.method public final x(Ljava/lang/Object;)V
     .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/lang/Runnable;",
-            ")",
-            "Lk3/em0<",
-            "*>;"
-        }
-    .end annotation
-
-    invoke-super {p0, p1}, Ljava/util/concurrent/AbstractExecutorService;->submit(Ljava/lang/Runnable;)Ljava/util/concurrent/Future;
-
-    move-result-object p1
-
-    check-cast p1, Lk3/em0;
-
-    return-object p1
-.end method
-
-.method public final c(Ljava/util/concurrent/Callable;)Lk3/em0;
-    .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "<T:",
-            "Ljava/lang/Object;",
-            ">(",
-            "Ljava/util/concurrent/Callable<",
-            "TT;>;)",
-            "Lk3/em0<",
-            "TT;>;"
-        }
-    .end annotation
-
-    invoke-super {p0, p1}, Ljava/util/concurrent/AbstractExecutorService;->submit(Ljava/util/concurrent/Callable;)Ljava/util/concurrent/Future;
-
-    move-result-object p1
-
-    check-cast p1, Lk3/em0;
-
-    return-object p1
-.end method
-
-.method public final newTaskFor(Ljava/lang/Runnable;Ljava/lang/Object;)Ljava/util/concurrent/RunnableFuture;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "<T:",
-            "Ljava/lang/Object;",
-            ">(",
-            "Ljava/lang/Runnable;",
-            "TT;)",
-            "Ljava/util/concurrent/RunnableFuture<",
-            "TT;>;"
-        }
-    .end annotation
-
-    .line 2
-    new-instance v0, Lk3/qm0;
-
-    invoke-static {p1, p2}, Ljava/util/concurrent/Executors;->callable(Ljava/lang/Runnable;Ljava/lang/Object;)Ljava/util/concurrent/Callable;
-
-    move-result-object p1
-
-    invoke-direct {v0, p1}, Lk3/qm0;-><init>(Ljava/util/concurrent/Callable;)V
-
-    return-object v0
-.end method
-
-.method public final newTaskFor(Ljava/util/concurrent/Callable;)Ljava/util/concurrent/RunnableFuture;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "<T:",
-            "Ljava/lang/Object;",
-            ">(",
-            "Ljava/util/concurrent/Callable<",
-            "TT;>;)",
-            "Ljava/util/concurrent/RunnableFuture<",
-            "TT;>;"
-        }
-    .end annotation
-
-    .line 1
-    new-instance v0, Lk3/qm0;
-
-    invoke-direct {v0, p1}, Lk3/qm0;-><init>(Ljava/util/concurrent/Callable;)V
-
-    return-object v0
-.end method
-
-.method public final synthetic submit(Ljava/lang/Runnable;)Ljava/util/concurrent/Future;
-    .locals 0
-
-    .line 3
-    invoke-virtual {p0, p1}, Lk3/fl0;->a(Ljava/lang/Runnable;)Lk3/em0;
-
-    move-result-object p1
-
-    return-object p1
-.end method
-
-.method public final synthetic submit(Ljava/lang/Runnable;Ljava/lang/Object;)Ljava/util/concurrent/Future;
-    .locals 0
-    .param p2    # Ljava/lang/Object;
+    .param p1    # Ljava/lang/Object;
         .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
         .end annotation
     .end param
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TV;)V"
+        }
+    .end annotation
 
-    .line 2
-    invoke-super {p0, p1, p2}, Ljava/util/concurrent/AbstractExecutorService;->submit(Ljava/lang/Runnable;Ljava/lang/Object;)Ljava/util/concurrent/Future;
+    invoke-virtual {p0, p1}, Lk3/dl0;->i(Ljava/lang/Object;)Z
 
-    move-result-object p1
-
-    check-cast p1, Lk3/em0;
-
-    return-object p1
+    return-void
 .end method
 
-.method public final synthetic submit(Ljava/util/concurrent/Callable;)Ljava/util/concurrent/Future;
+.method public final synthetic y(Ljava/lang/Object;Ljava/lang/Throwable;)Ljava/lang/Object;
     .locals 0
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/Exception;
+        }
+    .end annotation
+
+    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+    .end annotation
 
     .line 1
-    invoke-virtual {p0, p1}, Lk3/fl0;->c(Ljava/util/concurrent/Callable;)Lk3/em0;
+    check-cast p1, Lk3/vj0;
+
+    .line 2
+    invoke-interface {p1, p2}, Lk3/vj0;->a(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
 

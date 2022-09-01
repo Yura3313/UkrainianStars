@@ -69,7 +69,7 @@
 
     .line 4
     :cond_0
-    iget v1, v0, Lcom/google/android/gms/ads/internal/overlay/AdOverlayInfoParcel;->p:I
+    iget v1, v0, Lcom/google/android/gms/ads/internal/overlay/AdOverlayInfoParcel;->q:I
 
     const/4 v2, 0x1
 

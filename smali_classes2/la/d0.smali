@@ -36,7 +36,7 @@
     .locals 13
 
     .line 1
-    invoke-static {}, Lcom/helpshift/util/u;->b()Z
+    invoke-static {}, Lcom/helpshift/util/t;->b()Z
 
     move-result v0
 
@@ -48,7 +48,7 @@
     const/4 v0, 0x1
 
     .line 2
-    sput-boolean v0, Lcom/helpshift/util/y;->a:Z
+    sput-boolean v0, Lmd/g;->a:Z
 
     .line 3
     iget-object v1, p0, Lla/d0;->a:Lla/e;
@@ -136,7 +136,7 @@
     invoke-virtual {v8, v2}, Lla/p;->h(I)V
 
     .line 13
-    sget-object v2, Lcom/helpshift/util/u;->c:Le7/g;
+    sget-object v2, Lcom/helpshift/util/t;->c:Le7/g;
 
     .line 14
     iget-object v2, v2, Le7/g;->a:Lj8/b;
@@ -189,7 +189,7 @@
     invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 23
-    sget-object v2, Lcom/helpshift/util/u;->c:Le7/g;
+    sget-object v2, Lcom/helpshift/util/t;->c:Le7/g;
 
     .line 24
     iget-object v2, v2, Le7/g;->a:Lj8/b;
@@ -328,15 +328,15 @@
 
     .line 38
     :try_start_0
-    invoke-static {p1}, Lcom/android/billingclient/api/c0;->h(Landroid/content/Context;)Z
+    invoke-static {p1}, Lcom/android/billingclient/api/b0;->i(Landroid/content/Context;)Z
 
     move-result v3
 
     .line 39
-    sget-object v4, Lcom/helpshift/util/u;->c:Le7/g;
+    sget-object v4, Lcom/helpshift/util/t;->c:Le7/g;
 
     .line 40
-    sget-object v8, Lcom/helpshift/util/u;->d:Le8/j;
+    sget-object v8, Lcom/helpshift/util/t;->d:Le8/j;
 
     .line 41
     invoke-virtual {v8}, Le8/j;->a()Lf8/d;
@@ -361,13 +361,13 @@
     const-string v3, "/config/"
 
     .line 45
-    check-cast v8, Lk3/v8;
+    check-cast v8, Lk3/w8;
 
-    invoke-virtual {v8, v3}, Lk3/v8;->d(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v8, v3}, Lk3/w8;->d(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v3
 
-    invoke-static {v3}, Lcom/google/android/play/core/appupdate/g;->b(Ljava/lang/String;)Z
+    invoke-static {v3}, La5/b0;->d(Ljava/lang/String;)Z
 
     move-result v3
 
@@ -459,11 +459,11 @@
     const-string v6, "Exception while fetching config"
 
     .line 54
-    invoke-static {v4, v6, v3}, Landroidx/savedstate/d;->g(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v4, v6, v3}, Le5/i;->i(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
     .line 55
     :goto_3
-    sget-object v3, Lcom/helpshift/util/u;->c:Le7/g;
+    sget-object v3, Lcom/helpshift/util/t;->c:Le7/g;
 
     .line 56
     invoke-virtual {v3}, Le7/g;->g()Lv9/e;
@@ -498,56 +498,56 @@
     :cond_d
     iget-object v4, v3, Lx7/d;->h:Ljava/util/Set;
 
-    sget-object v6, Lx7/d$b;->f:Lx7/d$b;
+    sget-object v6, Lx7/d$b;->g:Lx7/d$b;
 
     invoke-interface {v4, v6}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
 
     .line 64
     iget-object v4, v3, Lx7/d;->h:Ljava/util/Set;
 
-    sget-object v6, Lx7/d$b;->g:Lx7/d$b;
+    sget-object v6, Lx7/d$b;->h:Lx7/d$b;
 
     invoke-interface {v4, v6}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
 
     .line 65
     iget-object v4, v3, Lx7/d;->h:Ljava/util/Set;
 
-    sget-object v6, Lx7/d$b;->h:Lx7/d$b;
+    sget-object v6, Lx7/d$b;->i:Lx7/d$b;
 
     invoke-interface {v4, v6}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
 
     .line 66
     iget-object v4, v3, Lx7/d;->h:Ljava/util/Set;
 
-    sget-object v6, Lx7/d$b;->i:Lx7/d$b;
+    sget-object v6, Lx7/d$b;->j:Lx7/d$b;
 
     invoke-interface {v4, v6}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
 
     .line 67
     iget-object v4, v3, Lx7/d;->h:Ljava/util/Set;
 
-    sget-object v6, Lx7/d$b;->j:Lx7/d$b;
+    sget-object v6, Lx7/d$b;->k:Lx7/d$b;
 
     invoke-interface {v4, v6}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
 
     .line 68
     iget-object v4, v3, Lx7/d;->h:Ljava/util/Set;
 
-    sget-object v6, Lx7/d$b;->k:Lx7/d$b;
+    sget-object v6, Lx7/d$b;->l:Lx7/d$b;
 
     invoke-interface {v4, v6}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
 
     .line 69
     iget-object v4, v3, Lx7/d;->h:Ljava/util/Set;
 
-    sget-object v6, Lx7/d$b;->l:Lx7/d$b;
+    sget-object v6, Lx7/d$b;->m:Lx7/d$b;
 
     invoke-interface {v4, v6}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
 
     .line 70
     iget-object v4, v3, Lx7/d;->h:Ljava/util/Set;
 
-    sget-object v6, Lx7/d$b;->m:Lx7/d$b;
+    sget-object v6, Lx7/d$b;->n:Lx7/d$b;
 
     invoke-interface {v4, v6}, Ljava/util/Set;->add(Ljava/lang/Object;)Z
 
@@ -562,7 +562,7 @@
 
     .line 72
     :goto_4
-    sget-object v3, Lcom/helpshift/util/u;->c:Le7/g;
+    sget-object v3, Lcom/helpshift/util/t;->c:Le7/g;
 
     .line 73
     invoke-virtual {v3}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -586,7 +586,7 @@
     invoke-virtual {v6}, La8/d$a;->a()V
 
     .line 78
-    sget-object v3, Lcom/helpshift/util/u;->c:Le7/g;
+    sget-object v3, Lcom/helpshift/util/t;->c:Le7/g;
 
     .line 79
     iget-object v3, v3, Le7/g;->f:La8/f;
@@ -610,7 +610,7 @@
     move-result-object v4
 
     .line 85
-    invoke-static {v4}, Lbc/a;->d(Ljava/util/List;)Z
+    invoke-static {v4}, Lt5/a;->g(Ljava/util/List;)Z
 
     move-result v6
     :try_end_1
@@ -666,7 +666,7 @@
 
     .line 91
     :goto_6
-    invoke-static {p1}, Lk3/tj;->a(Landroid/content/Context;)Z
+    invoke-static {p1}, Lk3/f4;->c(Landroid/content/Context;)Z
 
     move-result p1
 
@@ -677,7 +677,7 @@
 
     .line 93
     :try_start_3
-    sget-boolean p1, Lid/h;->a:Z
+    sget-boolean p1, Lae/a1;->a:Z
 
     if-eqz p1, :cond_13
 
@@ -703,7 +703,7 @@
     move-result-wide v1
 
     .line 97
-    sget-object p1, Lcom/helpshift/util/u;->d:Le8/j;
+    sget-object p1, Lcom/helpshift/util/t;->d:Le8/j;
 
     .line 98
     invoke-static {p1}, Li8/b;->d(Le8/s;)J
@@ -727,7 +727,7 @@
     if-eqz v0, :cond_13
 
     .line 99
-    sget-object p1, Landroidx/savedstate/d;->f:Lx9/c;
+    sget-object p1, Le5/i;->g:Lx9/c;
 
     if-nez p1, :cond_12
 
@@ -797,7 +797,7 @@
     .locals 2
 
     .line 1
-    invoke-static {}, Lcom/helpshift/util/u;->b()Z
+    invoke-static {}, Lcom/helpshift/util/t;->b()Z
 
     move-result p1
 
@@ -809,10 +809,10 @@
     const/4 p1, 0x0
 
     .line 2
-    sput-boolean p1, Lcom/helpshift/util/y;->a:Z
+    sput-boolean p1, Lmd/g;->a:Z
 
     .line 3
-    sget-object p1, Lcom/helpshift/util/u;->c:Le7/g;
+    sget-object p1, Lcom/helpshift/util/t;->c:Le7/g;
 
     .line 4
     invoke-virtual {p1}, Le7/g;->f()Lm8/a;
@@ -822,7 +822,7 @@
     invoke-virtual {p1}, Lm8/a;->d()V
 
     .line 5
-    sget-object p1, Lcom/helpshift/util/u;->c:Le7/g;
+    sget-object p1, Lcom/helpshift/util/t;->c:Le7/g;
 
     .line 6
     iget-object v0, p1, Le7/g;->f:La8/f;

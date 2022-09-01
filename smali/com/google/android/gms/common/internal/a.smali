@@ -36,7 +36,7 @@
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;Landroid/os/Looper;ILd2/c;Lb2/e;Lb2/l;)V
+.method public constructor <init>(Landroid/content/Context;Landroid/os/Looper;ILd2/c;Lb2/d;Lb2/k;)V
     .locals 9
     .param p1    # Landroid/content/Context;
         .annotation build Landroidx/annotation/RecentlyNonNull;
@@ -50,11 +50,11 @@
         .annotation build Landroidx/annotation/RecentlyNonNull;
         .end annotation
     .end param
-    .param p5    # Lb2/e;
+    .param p5    # Lb2/d;
         .annotation build Landroidx/annotation/RecentlyNonNull;
         .end annotation
     .end param
-    .param p6    # Lb2/l;
+    .param p6    # Lb2/k;
         .annotation build Landroidx/annotation/RecentlyNonNull;
         .end annotation
     .end param
@@ -78,12 +78,12 @@
     .line 5
     new-instance v6, Lcom/google/android/gms/common/internal/b;
 
-    invoke-direct {v6, p5}, Lcom/google/android/gms/common/internal/b;-><init>(Lb2/e;)V
+    invoke-direct {v6, p5}, Lcom/google/android/gms/common/internal/b;-><init>(Lb2/d;)V
 
     .line 6
     new-instance v7, Lcom/google/android/gms/common/internal/c;
 
-    invoke-direct {v7, p6}, Lcom/google/android/gms/common/internal/c;-><init>(Lb2/l;)V
+    invoke-direct {v7, p6}, Lcom/google/android/gms/common/internal/c;-><init>(Lb2/k;)V
 
     .line 7
     iget-object v8, p4, Ld2/c;->h:Ljava/lang/String;

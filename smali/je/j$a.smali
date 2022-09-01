@@ -1,5 +1,5 @@
 .class public final Lje/j$a;
-.super Lse/h;
+.super Lse/i;
 .source "_Collections.kt"
 
 # interfaces
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lje/j;->V(Ljava/lang/Iterable;)Ljava/lang/Iterable;
+    value = Lje/j;->Q(Ljava/lang/Iterable;)Ljava/lang/Iterable;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,7 +18,7 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/a<",
         "Ljava/util/Iterator<",
         "+TT;>;>;"
@@ -27,18 +27,18 @@
 
 
 # instance fields
-.field public final synthetic f:Ljava/lang/Iterable;
+.field public final synthetic g:Ljava/lang/Iterable;
 
 
 # direct methods
 .method public constructor <init>(Ljava/lang/Iterable;)V
     .locals 0
 
-    iput-object p1, p0, Lje/j$a;->f:Ljava/lang/Iterable;
+    iput-object p1, p0, Lje/j$a;->g:Ljava/lang/Iterable;
 
     const/4 p1, 0x0
 
-    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -48,7 +48,7 @@
 .method public final invoke()Ljava/lang/Object;
     .locals 1
 
-    iget-object v0, p0, Lje/j$a;->f:Ljava/lang/Iterable;
+    iget-object v0, p0, Lje/j$a;->g:Ljava/lang/Iterable;
 
     invoke-interface {v0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 

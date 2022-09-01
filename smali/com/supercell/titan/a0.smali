@@ -7,15 +7,15 @@
 
 
 # instance fields
-.field public final synthetic f:Lcom/supercell/titan/TitanWebView;
-
-.field public final synthetic g:I
+.field public final synthetic g:Lcom/supercell/titan/TitanWebView;
 
 .field public final synthetic h:I
 
 .field public final synthetic i:I
 
 .field public final synthetic j:I
+
+.field public final synthetic k:I
 
 
 # direct methods
@@ -24,15 +24,15 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lcom/supercell/titan/a0;->f:Lcom/supercell/titan/TitanWebView;
+    iput-object p1, p0, Lcom/supercell/titan/a0;->g:Lcom/supercell/titan/TitanWebView;
 
-    iput p2, p0, Lcom/supercell/titan/a0;->g:I
+    iput p2, p0, Lcom/supercell/titan/a0;->h:I
 
-    iput p3, p0, Lcom/supercell/titan/a0;->h:I
+    iput p3, p0, Lcom/supercell/titan/a0;->i:I
 
-    iput p4, p0, Lcom/supercell/titan/a0;->i:I
+    iput p4, p0, Lcom/supercell/titan/a0;->j:I
 
-    iput p5, p0, Lcom/supercell/titan/a0;->j:I
+    iput p5, p0, Lcom/supercell/titan/a0;->k:I
 
     return-void
 .end method
@@ -42,15 +42,15 @@
 .method public final run()V
     .locals 9
 
-    iget-object v0, p0, Lcom/supercell/titan/a0;->f:Lcom/supercell/titan/TitanWebView;
+    iget-object v0, p0, Lcom/supercell/titan/a0;->g:Lcom/supercell/titan/TitanWebView;
 
-    iget v1, p0, Lcom/supercell/titan/a0;->g:I
+    iget v1, p0, Lcom/supercell/titan/a0;->h:I
 
-    iget v2, p0, Lcom/supercell/titan/a0;->h:I
+    iget v2, p0, Lcom/supercell/titan/a0;->i:I
 
-    iget v3, p0, Lcom/supercell/titan/a0;->i:I
+    iget v3, p0, Lcom/supercell/titan/a0;->j:I
 
-    iget v4, p0, Lcom/supercell/titan/a0;->j:I
+    iget v4, p0, Lcom/supercell/titan/a0;->k:I
 
     .line 1
     iget-object v5, v0, Lcom/supercell/titan/TitanWebView;->g:Landroid/webkit/WebView;

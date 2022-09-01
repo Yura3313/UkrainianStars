@@ -40,7 +40,7 @@
             "Lre/p<",
             "Lae/d;",
             "Lcom/supercell/id/view/AvatarEditView$b;",
-            "Lie/h;",
+            "Lie/i;",
             ">;"
         }
     .end annotation
@@ -59,7 +59,7 @@
             "Lae/d;",
             "-",
             "Lcom/supercell/id/view/AvatarEditView$b;",
-            "Lie/h;",
+            "Lie/i;",
             ">;)V"
         }
     .end annotation
@@ -72,7 +72,7 @@
     iput-object p2, p0, Lqd/a;->f:Lre/p;
 
     .line 2
-    sget-object p1, Lje/l;->f:Lje/l;
+    sget-object p1, Lje/l;->g:Lje/l;
 
     iput-object p1, p0, Lqd/a;->c:Ljava/util/List;
 
@@ -142,7 +142,7 @@
     invoke-virtual {v2, v4}, Landroid/graphics/drawable/GradientDrawable;->setShape(I)V
 
     .line 7
-    iget-object v1, p1, Lqd/a$a;->y:Landroid/view/View;
+    iget-object v1, p1, Lqd/a$a;->z:Landroid/view/View;
 
     .line 8
     sget v4, Lcom/supercell/id/R$id;->background_image:I
@@ -170,9 +170,9 @@
     if-ne v1, p2, :cond_0
 
     .line 11
-    iget-object p2, p1, Landroidx/recyclerview/widget/RecyclerView$z;->f:Landroid/view/View;
+    iget-object p2, p1, Landroidx/recyclerview/widget/RecyclerView$z;->g:Landroid/view/View;
 
-    invoke-static {p2, v5}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v5}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     sget v1, Lcom/supercell/id/R$id;->background_selected:I
 
@@ -182,14 +182,14 @@
 
     check-cast p2, Landroid/widget/ImageView;
 
-    invoke-static {p2, v4}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v4}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {p2, v3}, Landroid/widget/ImageView;->setVisibility(I)V
 
     .line 12
-    iget-object p2, p1, Landroidx/recyclerview/widget/RecyclerView$z;->f:Landroid/view/View;
+    iget-object p2, p1, Landroidx/recyclerview/widget/RecyclerView$z;->g:Landroid/view/View;
 
-    invoke-static {p2, v5}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v5}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {p2, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -208,9 +208,9 @@
     invoke-virtual {p2, v1}, Landroid/view/View;->startAnimation(Landroid/view/animation/Animation;)V
 
     .line 13
-    iget-object p2, p1, Landroidx/recyclerview/widget/RecyclerView$z;->f:Landroid/view/View;
+    iget-object p2, p1, Landroidx/recyclerview/widget/RecyclerView$z;->g:Landroid/view/View;
 
-    invoke-static {p2, v5}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v5}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     sget v1, Lcom/supercell/id/R$id;->background_outer_circle:I
 
@@ -220,7 +220,7 @@
 
     check-cast p2, Landroid/widget/ImageView;
 
-    invoke-static {p2, v2}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v2}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {p2, v3}, Landroid/widget/ImageView;->setVisibility(I)V
 
@@ -228,9 +228,9 @@
 
     .line 14
     :cond_0
-    iget-object p2, p1, Landroidx/recyclerview/widget/RecyclerView$z;->f:Landroid/view/View;
+    iget-object p2, p1, Landroidx/recyclerview/widget/RecyclerView$z;->g:Landroid/view/View;
 
-    invoke-static {p2, v5}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v5}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     sget v1, Lcom/supercell/id/R$id;->background_selected:I
 
@@ -243,9 +243,9 @@
     invoke-virtual {p2}, Landroid/view/View;->clearAnimation()V
 
     .line 15
-    iget-object p2, p1, Landroidx/recyclerview/widget/RecyclerView$z;->f:Landroid/view/View;
+    iget-object p2, p1, Landroidx/recyclerview/widget/RecyclerView$z;->g:Landroid/view/View;
 
-    invoke-static {p2, v5}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v5}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {p2, v1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 
@@ -253,16 +253,16 @@
 
     check-cast p2, Landroid/widget/ImageView;
 
-    invoke-static {p2, v4}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v4}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/4 v1, 0x4
 
     invoke-virtual {p2, v1}, Landroid/widget/ImageView;->setVisibility(I)V
 
     .line 16
-    iget-object p2, p1, Landroidx/recyclerview/widget/RecyclerView$z;->f:Landroid/view/View;
+    iget-object p2, p1, Landroidx/recyclerview/widget/RecyclerView$z;->g:Landroid/view/View;
 
-    invoke-static {p2, v5}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v5}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     sget v3, Lcom/supercell/id/R$id;->background_outer_circle:I
 
@@ -272,13 +272,13 @@
 
     check-cast p2, Landroid/widget/ImageView;
 
-    invoke-static {p2, v2}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v2}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {p2, v1}, Landroid/widget/ImageView;->setVisibility(I)V
 
     .line 17
     :goto_0
-    iget-object p2, p1, Landroidx/recyclerview/widget/RecyclerView$z;->f:Landroid/view/View;
+    iget-object p2, p1, Landroidx/recyclerview/widget/RecyclerView$z;->g:Landroid/view/View;
 
     new-instance v1, Lqd/b;
 
@@ -295,7 +295,7 @@
     const-string p2, "parent"
 
     .line 1
-    invoke-static {p1, p2}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p2}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 2
     new-instance p2, Lqd/a$a;
@@ -318,7 +318,7 @@
 
     const-string v0, "LayoutInflater.from(pare\u2026ound_item, parent, false)"
 
-    invoke-static {p1, v0}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-direct {p2, p1}, Lqd/a$a;-><init>(Landroid/view/View;)V
 

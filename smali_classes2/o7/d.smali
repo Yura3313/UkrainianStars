@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field public k:Landroid/content/Context;
+.field public l:Landroid/content/Context;
 
 
 # direct methods
@@ -27,7 +27,7 @@
     invoke-direct/range {v0 .. v5}, Lo7/g;-><init>(Ln7/a;Lp7/b;Ln7/b;Ln7/d;Ln7/c;)V
 
     .line 2
-    iput-object p1, p0, Lo7/d;->k:Landroid/content/Context;
+    iput-object p1, p0, Lo7/d;->l:Landroid/content/Context;
 
     return-void
 .end method
@@ -37,7 +37,7 @@
 .method public final i()Ljava/io/File;
     .locals 1
 
-    iget-object v0, p0, Lo7/d;->k:Landroid/content/Context;
+    iget-object v0, p0, Lo7/d;->l:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getFilesDir()Ljava/io/File;
 

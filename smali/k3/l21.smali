@@ -2,198 +2,71 @@
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
-# interfaces
-.implements Ljava/lang/Runnable;
-
 
 # instance fields
-.field public final synthetic f:I
+.field public final a:Landroid/os/Handler;
 
-.field public final g:Ljava/lang/Object;
-
-.field public final h:Ljava/lang/Object;
+.field public final b:Lk3/xf;
 
 
 # direct methods
-.method public constructor <init>(Lk3/dw;Landroid/view/ViewGroup;)V
-    .locals 1
-
-    const/4 v0, 0x1
-
-    iput v0, p0, Lk3/l21;->f:I
+.method public constructor <init>(Landroid/os/Handler;Lk3/xf;)V
+    .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lk3/l21;->g:Ljava/lang/Object;
-
-    iput-object p2, p0, Lk3/l21;->h:Ljava/lang/Object;
-
-    return-void
-.end method
-
-.method public constructor <init>(Lk3/f21;Landroid/view/Surface;)V
-    .locals 1
-
-    const/4 v0, 0x0
-
-    iput v0, p0, Lk3/l21;->f:I
+    if-eqz p2, :cond_0
 
     .line 2
-    iput-object p1, p0, Lk3/l21;->h:Ljava/lang/Object;
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    iput-object p2, p0, Lk3/l21;->g:Ljava/lang/Object;
+    goto :goto_0
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    :cond_0
+    const/4 p1, 0x0
+
+    .line 3
+    :goto_0
+    iput-object p1, p0, Lk3/l21;->a:Landroid/os/Handler;
+
+    .line 4
+    iput-object p2, p0, Lk3/l21;->b:Lk3/xf;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final run()V
-    .locals 5
-
-    iget v0, p0, Lk3/l21;->f:I
-
-    packed-switch v0, :pswitch_data_0
-
-    goto :goto_0
+.method public final a(IIIF)V
+    .locals 8
 
     .line 1
-    :pswitch_0
-    iget-object v0, p0, Lk3/l21;->h:Ljava/lang/Object;
+    iget-object v0, p0, Lk3/l21;->b:Lk3/xf;
 
-    check-cast v0, Lk3/f21;
+    if-eqz v0, :cond_0
 
     .line 2
-    iget-object v0, v0, Lk3/f21;->b:Lk3/wf;
+    iget-object v0, p0, Lk3/l21;->a:Landroid/os/Handler;
 
-    .line 3
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    new-instance v7, Lk3/o21;
 
-    return-void
+    move-object v1, v7
 
-    .line 4
-    :goto_0
-    iget-object v0, p0, Lk3/l21;->g:Ljava/lang/Object;
+    move-object v2, p0
 
-    check-cast v0, Lk3/dw;
+    move v3, p1
 
-    iget-object v1, p0, Lk3/l21;->h:Ljava/lang/Object;
+    move v4, p2
 
-    check-cast v1, Landroid/view/ViewGroup;
+    move v5, p3
 
-    const/4 v2, 0x1
+    move v6, p4
 
-    if-eqz v1, :cond_0
+    invoke-direct/range {v1 .. v6}, Lk3/o21;-><init>(Lk3/l21;IIIF)V
 
-    const/4 v1, 0x1
-
-    goto :goto_1
+    invoke-virtual {v0, v7}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
 
     :cond_0
-    const/4 v1, 0x0
-
-    .line 5
-    :goto_1
-    iget-object v3, v0, Lk3/dw;->d:Lk3/sv;
-
-    invoke-virtual {v3}, Lk3/sv;->n()Landroid/view/View;
-
-    move-result-object v3
-
-    if-eqz v3, :cond_3
-
-    const/4 v3, 0x2
-
-    .line 6
-    iget-object v4, v0, Lk3/dw;->d:Lk3/sv;
-
-    invoke-virtual {v4}, Lk3/sv;->k()I
-
-    move-result v4
-
-    if-eq v3, v4, :cond_2
-
-    iget-object v3, v0, Lk3/dw;->d:Lk3/sv;
-
-    .line 7
-    invoke-virtual {v3}, Lk3/sv;->k()I
-
-    move-result v3
-
-    if-ne v2, v3, :cond_1
-
-    goto :goto_2
-
-    :cond_1
-    const/4 v2, 0x6
-
-    .line 8
-    iget-object v3, v0, Lk3/dw;->d:Lk3/sv;
-
-    invoke-virtual {v3}, Lk3/sv;->k()I
-
-    move-result v3
-
-    if-ne v2, v3, :cond_3
-
-    .line 9
-    iget-object v2, v0, Lk3/dw;->a:Lk3/ua;
-
-    iget-object v3, v0, Lk3/dw;->b:Lk3/ug0;
-
-    iget-object v3, v3, Lk3/ug0;->f:Ljava/lang/String;
-
-    const-string v4, "2"
-
-    .line 10
-    invoke-interface {v2, v3, v4, v1}, Lk3/ua;->d(Ljava/lang/String;Ljava/lang/String;Z)V
-
-    .line 11
-    iget-object v2, v0, Lk3/dw;->a:Lk3/ua;
-
-    iget-object v0, v0, Lk3/dw;->b:Lk3/ug0;
-
-    iget-object v0, v0, Lk3/ug0;->f:Ljava/lang/String;
-
-    const-string v3, "1"
-
-    .line 12
-    invoke-interface {v2, v0, v3, v1}, Lk3/ua;->d(Ljava/lang/String;Ljava/lang/String;Z)V
-
-    goto :goto_3
-
-    .line 13
-    :cond_2
-    :goto_2
-    iget-object v2, v0, Lk3/dw;->a:Lk3/ua;
-
-    iget-object v3, v0, Lk3/dw;->b:Lk3/ug0;
-
-    iget-object v3, v3, Lk3/ug0;->f:Ljava/lang/String;
-
-    iget-object v0, v0, Lk3/dw;->d:Lk3/sv;
-
-    .line 14
-    invoke-virtual {v0}, Lk3/sv;->k()I
-
-    move-result v0
-
-    invoke-static {v0}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
-
-    move-result-object v0
-
-    .line 15
-    invoke-interface {v2, v3, v0, v1}, Lk3/ua;->d(Ljava/lang/String;Ljava/lang/String;Z)V
-
-    :cond_3
-    :goto_3
     return-void
-
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
 .end method

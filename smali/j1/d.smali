@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field public f:Ljava/lang/Object;
+.field public g:Ljava/lang/Object;
 
 
 # direct methods
@@ -24,23 +24,23 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lj1/d;->f:Ljava/lang/Object;
+    iput-object p1, p0, Lj1/d;->g:Ljava/lang/Object;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final c(Z)V
+.method public final b(Z)V
     .locals 0
 
     .line 1
-    iget-object p1, p0, Lj1/d;->f:Ljava/lang/Object;
+    iget-object p1, p0, Lj1/d;->g:Ljava/lang/Object;
 
     check-cast p1, Lcom/google/android/gms/ads/internal/overlay/zzc;
 
     .line 2
-    iget-object p1, p1, Lcom/google/android/gms/ads/internal/overlay/zzc;->i:Lk3/gh;
+    iget-object p1, p1, Lcom/google/android/gms/ads/internal/overlay/zzc;->j:Lk3/gh;
 
     if-eqz p1, :cond_0
 

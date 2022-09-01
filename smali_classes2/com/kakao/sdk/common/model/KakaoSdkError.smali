@@ -19,7 +19,7 @@
     return-void
 .end method
 
-.method public synthetic constructor <init>(Ljava/lang/String;Lse/e;)V
+.method public synthetic constructor <init>(Ljava/lang/String;Lse/f;)V
     .locals 0
 
     .line 2

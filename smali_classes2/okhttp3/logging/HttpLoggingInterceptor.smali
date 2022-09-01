@@ -440,7 +440,7 @@
     if-eqz v5, :cond_6
 
     .line 14
-    invoke-static {v7, v10}, Lo/g;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v7, v10}, Lcom/supercell/titan/a;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v7
 
@@ -927,7 +927,7 @@
     const-string v6, " body"
 
     .line 66
-    invoke-static {v5, v13, v6}, Landroid/support/v4/media/f;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v5, v13, v6}, Landroid/support/v4/media/f;->b(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v5
 

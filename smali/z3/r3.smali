@@ -1,442 +1,467 @@
 .class public final Lz3/r3;
-.super Ljava/lang/Object;
+.super Landroid/database/sqlite/SQLiteOpenHelper;
+
+
+# instance fields
+.field public final synthetic g:Lz3/p3;
 
 
 # direct methods
-.method public static a(Lz3/o;Landroid/database/sqlite/SQLiteDatabase;)V
-    .locals 3
-
-    if-eqz p0, :cond_4
+.method public constructor <init>(Lz3/p3;Landroid/content/Context;)V
+    .locals 2
 
     .line 1
-    new-instance v0, Ljava/io/File;
+    iput-object p1, p0, Lz3/r3;->g:Lz3/p3;
 
-    invoke-virtual {p1}, Landroid/database/sqlite/SQLiteDatabase;->getPath()Ljava/lang/String;
+    const-string p1, "google_app_measurement.db"
 
-    move-result-object p1
+    const/4 v0, 0x0
 
-    invoke-direct {v0, p1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
-
-    const/4 p1, 0x0
+    const/4 v1, 0x1
 
     .line 2
-    invoke-virtual {v0, p1, p1}, Ljava/io/File;->setReadable(ZZ)Z
+    invoke-direct {p0, p2, p1, v0, v1}, Landroid/database/sqlite/SQLiteOpenHelper;-><init>(Landroid/content/Context;Ljava/lang/String;Landroid/database/sqlite/SQLiteDatabase$CursorFactory;I)V
 
-    move-result v1
+    return-void
+.end method
 
-    if-nez v1, :cond_0
+
+# virtual methods
+.method public final getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
+    .locals 8
+
+    .line 1
+    iget-object v0, p0, Lz3/r3;->g:Lz3/p3;
+
+    .line 2
+    iget-object v0, v0, Lz3/p3;->k:Lz3/x2;
 
     .line 3
-    iget-object v1, p0, Lz3/o;->i:Lz3/q;
+    iget-wide v1, v0, Lz3/x2;->b:J
 
-    const-string v2, "Failed to turn off database read permission"
+    const/4 v3, 0x1
+
+    const-wide/16 v4, 0x0
+
+    cmp-long v6, v1, v4
+
+    if-nez v6, :cond_0
+
+    goto :goto_0
 
     .line 4
-    invoke-virtual {v1, v2}, Lz3/q;->a(Ljava/lang/String;)V
-
-    .line 5
     :cond_0
-    invoke-virtual {v0, p1, p1}, Ljava/io/File;->setWritable(ZZ)Z
+    iget-object v1, v0, Lz3/x2;->a:Ll2/c;
 
-    move-result p1
+    invoke-interface {v1}, Ll2/c;->b()J
 
-    if-nez p1, :cond_1
+    move-result-wide v1
 
-    .line 6
-    iget-object p1, p0, Lz3/o;->i:Lz3/q;
+    iget-wide v6, v0, Lz3/x2;->b:J
 
-    const-string v1, "Failed to turn off database write permission"
+    sub-long/2addr v1, v6
 
-    .line 7
-    invoke-virtual {p1, v1}, Lz3/q;->a(Ljava/lang/String;)V
+    const-wide/32 v6, 0x36ee80
+
+    cmp-long v0, v1, v6
+
+    if-ltz v0, :cond_1
+
+    goto :goto_0
 
     :cond_1
-    const/4 p1, 0x1
+    const/4 v3, 0x0
+
+    :goto_0
+    if-eqz v3, :cond_3
+
+    .line 5
+    :try_start_0
+    invoke-super {p0}, Landroid/database/sqlite/SQLiteOpenHelper;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
+
+    move-result-object v0
+    :try_end_0
+    .catch Landroid/database/sqlite/SQLiteException; {:try_start_0 .. :try_end_0} :catch_0
+
+    return-object v0
+
+    .line 6
+    :catch_0
+    iget-object v0, p0, Lz3/r3;->g:Lz3/p3;
+
+    .line 7
+    iget-object v0, v0, Lz3/p3;->k:Lz3/x2;
 
     .line 8
-    invoke-virtual {v0, p1, p1}, Ljava/io/File;->setReadable(ZZ)Z
+    iget-object v1, v0, Lz3/x2;->a:Ll2/c;
+
+    invoke-interface {v1}, Ll2/c;->b()J
+
+    move-result-wide v1
+
+    iput-wide v1, v0, Lz3/x2;->b:J
+
+    .line 9
+    iget-object v0, p0, Lz3/r3;->g:Lz3/p3;
+
+    invoke-virtual {v0}, Ly3/a;->e()Lz3/o;
+
+    move-result-object v0
+
+    .line 10
+    iget-object v0, v0, Lz3/o;->l:Lz3/q;
+
+    const-string v1, "Opening the database failed, dropping and recreating it"
+
+    .line 11
+    invoke-virtual {v0, v1}, Lz3/q;->a(Ljava/lang/String;)V
+
+    const-string v0, "google_app_measurement.db"
+
+    .line 12
+    iget-object v1, p0, Lz3/r3;->g:Lz3/p3;
+
+    invoke-virtual {v1}, Ly3/a;->getContext()Landroid/content/Context;
+
+    move-result-object v1
+
+    invoke-virtual {v1, v0}, Landroid/content/Context;->getDatabasePath(Ljava/lang/String;)Ljava/io/File;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/io/File;->delete()Z
 
     move-result v1
 
     if-nez v1, :cond_2
 
-    .line 9
-    iget-object v1, p0, Lz3/o;->i:Lz3/q;
-
-    const-string v2, "Failed to turn on database read permission for owner"
-
-    .line 10
-    invoke-virtual {v1, v2}, Lz3/q;->a(Ljava/lang/String;)V
-
-    .line 11
-    :cond_2
-    invoke-virtual {v0, p1, p1}, Ljava/io/File;->setWritable(ZZ)Z
-
-    move-result p1
-
-    if-nez p1, :cond_3
-
-    .line 12
-    iget-object p0, p0, Lz3/o;->i:Lz3/q;
-
-    const-string p1, "Failed to turn on database write permission for owner"
-
     .line 13
-    invoke-virtual {p0, p1}, Lz3/q;->a(Ljava/lang/String;)V
+    iget-object v1, p0, Lz3/r3;->g:Lz3/p3;
 
-    :cond_3
-    return-void
+    invoke-virtual {v1}, Ly3/a;->e()Lz3/o;
+
+    move-result-object v1
 
     .line 14
-    :cond_4
-    new-instance p0, Ljava/lang/IllegalArgumentException;
+    iget-object v1, v1, Lz3/o;->l:Lz3/q;
 
-    const-string p1, "Monitor must not be null"
+    const-string v2, "Failed to delete corrupted db file"
 
-    invoke-direct {p0, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+    .line 15
+    invoke-virtual {v1, v2, v0}, Lz3/q;->d(Ljava/lang/String;Ljava/lang/Object;)V
 
-    throw p0
-.end method
-
-.method public static b(Lz3/o;Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)V
-    .locals 10
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Landroid/database/sqlite/SQLiteException;
-        }
-    .end annotation
-
-    if-eqz p0, :cond_8
-
-    const/4 v0, 0x0
-
-    const/4 v1, 0x0
-
-    :try_start_0
-    const-string v3, "SQLITE_MASTER"
-
-    const/4 v2, 0x1
-
-    new-array v4, v2, [Ljava/lang/String;
-
-    const-string v5, "name"
-
-    aput-object v5, v4, v1
-
-    const-string v5, "name=?"
-
-    new-array v6, v2, [Ljava/lang/String;
-
-    aput-object p2, v6, v1
-
-    const/4 v7, 0x0
-
-    const/4 v8, 0x0
-
-    const/4 v9, 0x0
-
-    move-object v2, p1
-
-    .line 1
-    invoke-virtual/range {v2 .. v9}, Landroid/database/sqlite/SQLiteDatabase;->query(Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Landroid/database/Cursor;
+    .line 16
+    :cond_2
+    :try_start_1
+    invoke-super {p0}, Landroid/database/sqlite/SQLiteOpenHelper;->getWritableDatabase()Landroid/database/sqlite/SQLiteDatabase;
 
     move-result-object v0
 
-    .line 2
-    invoke-interface {v0}, Landroid/database/Cursor;->moveToFirst()Z
-
-    move-result v2
-    :try_end_0
-    .catch Landroid/database/sqlite/SQLiteException; {:try_start_0 .. :try_end_0} :catch_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    .line 3
-    invoke-interface {v0}, Landroid/database/Cursor;->close()V
-
-    goto :goto_0
-
-    :catchall_0
-    move-exception p0
-
-    goto/16 :goto_3
-
-    :catch_0
-    move-exception v2
-
-    .line 4
-    :try_start_1
-    iget-object v3, p0, Lz3/o;->i:Lz3/q;
-
-    const-string v4, "Error querying for table"
-
-    .line 5
-    invoke-virtual {v3, v4, p2, v2}, Lz3/q;->c(Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
-    if-eqz v0, :cond_0
-
-    .line 6
-    invoke-interface {v0}, Landroid/database/Cursor;->close()V
-
-    :cond_0
-    const/4 v2, 0x0
-
-    :goto_0
-    if-nez v2, :cond_1
-
-    .line 7
-    invoke-virtual {p1, p3}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
-
-    .line 8
-    :cond_1
-    :try_start_2
-    invoke-static {p1, p2}, Lz3/r3;->c(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;)Ljava/util/Set;
-
-    move-result-object p3
-
-    const-string v0, ","
-
-    .line 9
-    invoke-virtual {p4, v0}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
-
-    move-result-object p4
-
-    array-length v0, p4
-
-    const/4 v2, 0x0
-
-    :goto_1
-    if-ge v2, v0, :cond_3
-
-    aget-object v3, p4, v2
-
-    .line 10
-    move-object v4, p3
-
-    check-cast v4, Ljava/util/HashSet;
-
-    invoke-virtual {v4, v3}, Ljava/util/HashSet;->remove(Ljava/lang/Object;)Z
-
-    move-result v4
-
-    if-eqz v4, :cond_2
-
-    add-int/lit8 v2, v2, 0x1
-
-    goto :goto_1
-
-    .line 11
-    :cond_2
-    new-instance p1, Landroid/database/sqlite/SQLiteException;
-
-    invoke-virtual {p2}, Ljava/lang/String;->length()I
-
-    move-result p3
-
-    add-int/lit8 p3, p3, 0x23
-
-    invoke-static {v3}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object p4
-
-    invoke-virtual {p4}, Ljava/lang/String;->length()I
-
-    move-result p4
-
-    add-int/2addr p3, p4
-
-    new-instance p4, Ljava/lang/StringBuilder;
-
-    invoke-direct {p4, p3}, Ljava/lang/StringBuilder;-><init>(I)V
-
-    const-string p3, "Table "
-
-    invoke-virtual {p4, p3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p4, p2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string p3, " is missing required column: "
-
-    invoke-virtual {p4, p3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p4, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {p4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p3
-
-    invoke-direct {p1, p3}, Landroid/database/sqlite/SQLiteException;-><init>(Ljava/lang/String;)V
-
-    throw p1
-
-    :cond_3
-    if-eqz p5, :cond_5
-
-    .line 12
-    :goto_2
-    array-length p4, p5
-
-    if-ge v1, p4, :cond_5
-
-    .line 13
-    aget-object p4, p5, v1
-
-    move-object v0, p3
-
-    check-cast v0, Ljava/util/HashSet;
-
-    invoke-virtual {v0, p4}, Ljava/util/HashSet;->remove(Ljava/lang/Object;)Z
-
-    move-result p4
-
-    if-nez p4, :cond_4
-
-    add-int/lit8 p4, v1, 0x1
-
-    .line 14
-    aget-object p4, p5, p4
-
-    invoke-virtual {p1, p4}, Landroid/database/sqlite/SQLiteDatabase;->execSQL(Ljava/lang/String;)V
-
-    :cond_4
-    add-int/lit8 v1, v1, 0x2
-
-    goto :goto_2
-
-    .line 15
-    :cond_5
-    move-object p1, p3
-
-    check-cast p1, Ljava/util/HashSet;
-
-    invoke-virtual {p1}, Ljava/util/HashSet;->isEmpty()Z
-
-    move-result p1
-
-    if-nez p1, :cond_6
-
-    .line 16
-    iget-object p1, p0, Lz3/o;->i:Lz3/q;
-
-    const-string p4, "Table has extra columns. table, columns"
-
-    const-string p5, ", "
-
     .line 17
-    invoke-static {p5, p3}, Landroid/text/TextUtils;->join(Ljava/lang/CharSequence;Ljava/lang/Iterable;)Ljava/lang/String;
-
-    move-result-object p3
-
-    invoke-virtual {p1, p4, p2, p3}, Lz3/q;->c(Ljava/lang/String;Ljava/lang/Object;Ljava/lang/Object;)V
-    :try_end_2
-    .catch Landroid/database/sqlite/SQLiteException; {:try_start_2 .. :try_end_2} :catch_1
-
-    :cond_6
-    return-void
-
-    :catch_1
-    move-exception p1
+    iget-object v1, p0, Lz3/r3;->g:Lz3/p3;
 
     .line 18
-    iget-object p0, p0, Lz3/o;->f:Lz3/q;
-
-    const-string p3, "Failed to verify columns on table that was just created"
+    iget-object v1, v1, Lz3/p3;->k:Lz3/x2;
 
     .line 19
-    invoke-virtual {p0, p3, p2}, Lz3/q;->d(Ljava/lang/String;Ljava/lang/Object;)V
-
-    .line 20
-    throw p1
-
-    :goto_3
-    if-eqz v0, :cond_7
-
-    .line 21
-    invoke-interface {v0}, Landroid/database/Cursor;->close()V
-
-    :cond_7
-    throw p0
-
-    .line 22
-    :cond_8
-    new-instance p0, Ljava/lang/IllegalArgumentException;
-
-    const-string p1, "Monitor must not be null"
-
-    invoke-direct {p0, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
-
-    goto :goto_5
-
-    :goto_4
-    throw p0
-
-    :goto_5
-    goto :goto_4
-.end method
-
-.method public static c(Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;)Ljava/util/Set;
-    .locals 4
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Landroid/database/sqlite/SQLiteDatabase;",
-            "Ljava/lang/String;",
-            ")",
-            "Ljava/util/Set<",
-            "Ljava/lang/String;",
-            ">;"
-        }
-    .end annotation
-
-    .line 1
-    new-instance v0, Ljava/util/HashSet;
-
-    invoke-direct {v0}, Ljava/util/HashSet;-><init>()V
-
-    .line 2
-    invoke-virtual {p1}, Ljava/lang/String;->length()I
-
-    move-result v1
-
-    add-int/lit8 v1, v1, 0x16
-
-    const-string v2, "SELECT * FROM "
-
-    const-string v3, " LIMIT 0"
-
-    .line 3
-    invoke-static {v1, v2, p1, v3}, Landroid/support/v4/media/b;->a(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object p1
-
-    const/4 v1, 0x0
-
-    .line 4
-    invoke-virtual {p0, p1, v1}, Landroid/database/sqlite/SQLiteDatabase;->rawQuery(Ljava/lang/String;[Ljava/lang/String;)Landroid/database/Cursor;
-
-    move-result-object p0
-
-    .line 5
-    :try_start_0
-    invoke-interface {p0}, Landroid/database/Cursor;->getColumnNames()[Ljava/lang/String;
-
-    move-result-object p1
-
-    invoke-static {v0, p1}, Ljava/util/Collections;->addAll(Ljava/util/Collection;[Ljava/lang/Object;)Z
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    .line 6
-    invoke-interface {p0}, Landroid/database/Cursor;->close()V
+    iput-wide v4, v1, Lz3/x2;->b:J
+    :try_end_1
+    .catch Landroid/database/sqlite/SQLiteException; {:try_start_1 .. :try_end_1} :catch_1
 
     return-object v0
 
-    :catchall_0
-    move-exception p1
+    :catch_1
+    move-exception v0
+
+    .line 20
+    iget-object v1, p0, Lz3/r3;->g:Lz3/p3;
+
+    invoke-virtual {v1}, Ly3/a;->e()Lz3/o;
+
+    move-result-object v1
+
+    .line 21
+    iget-object v1, v1, Lz3/o;->l:Lz3/q;
+
+    const-string v2, "Failed to open freshly created database"
+
+    .line 22
+    invoke-virtual {v1, v2, v0}, Lz3/q;->d(Ljava/lang/String;Ljava/lang/Object;)V
+
+    .line 23
+    throw v0
+
+    .line 24
+    :cond_3
+    new-instance v0, Landroid/database/sqlite/SQLiteException;
+
+    const-string v1, "Database open failed"
+
+    invoke-direct {v0, v1}, Landroid/database/sqlite/SQLiteException;-><init>(Ljava/lang/String;)V
+
+    throw v0
+.end method
+
+.method public final onCreate(Landroid/database/sqlite/SQLiteDatabase;)V
+    .locals 1
+
+    iget-object v0, p0, Lz3/r3;->g:Lz3/p3;
+
+    invoke-virtual {v0}, Ly3/a;->e()Lz3/o;
+
+    move-result-object v0
+
+    invoke-static {v0, p1}, Lz3/s3;->a(Lz3/o;Landroid/database/sqlite/SQLiteDatabase;)V
+
+    return-void
+.end method
+
+.method public final onDowngrade(Landroid/database/sqlite/SQLiteDatabase;II)V
+    .locals 0
+
+    return-void
+.end method
+
+.method public final onOpen(Landroid/database/sqlite/SQLiteDatabase;)V
+    .locals 7
+
+    .line 1
+    iget-object v0, p0, Lz3/r3;->g:Lz3/p3;
+
+    .line 2
+    invoke-virtual {v0}, Ly3/a;->e()Lz3/o;
+
+    move-result-object v1
+
+    .line 3
+    sget-object v6, Lz3/p3;->l:[Ljava/lang/String;
+
+    const-string v3, "events"
+
+    const-string v4, "CREATE TABLE IF NOT EXISTS events ( app_id TEXT NOT NULL, name TEXT NOT NULL, lifetime_count INTEGER NOT NULL, current_bundle_count INTEGER NOT NULL, last_fire_timestamp INTEGER NOT NULL, PRIMARY KEY (app_id, name)) ;"
+
+    const-string v5, "app_id,name,lifetime_count,current_bundle_count,last_fire_timestamp"
+
+    move-object v2, p1
+
+    .line 4
+    invoke-static/range {v1 .. v6}, Lz3/s3;->b(Lz3/o;Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)V
+
+    .line 5
+    iget-object v0, p0, Lz3/r3;->g:Lz3/p3;
+
+    .line 6
+    invoke-virtual {v0}, Ly3/a;->e()Lz3/o;
+
+    move-result-object v1
+
+    const-string v3, "conditional_properties"
+
+    const-string v4, "CREATE TABLE IF NOT EXISTS conditional_properties ( app_id TEXT NOT NULL, origin TEXT NOT NULL, name TEXT NOT NULL, value BLOB NOT NULL, creation_timestamp INTEGER NOT NULL, active INTEGER NOT NULL, trigger_event_name TEXT, trigger_timeout INTEGER NOT NULL, timed_out_event BLOB,triggered_event BLOB, triggered_timestamp INTEGER NOT NULL, time_to_live INTEGER NOT NULL, expired_event BLOB, PRIMARY KEY (app_id, name)) ;"
+
+    const-string v5, "app_id,origin,name,value,active,trigger_event_name,trigger_timeout,creation_timestamp,timed_out_event,triggered_event,triggered_timestamp,time_to_live,expired_event"
+
+    const/4 v6, 0x0
 
     .line 7
-    invoke-interface {p0}, Landroid/database/Cursor;->close()V
+    invoke-static/range {v1 .. v6}, Lz3/s3;->b(Lz3/o;Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)V
 
-    throw p1
+    .line 8
+    iget-object v0, p0, Lz3/r3;->g:Lz3/p3;
+
+    .line 9
+    invoke-virtual {v0}, Ly3/a;->e()Lz3/o;
+
+    move-result-object v1
+
+    .line 10
+    sget-object v6, Lz3/p3;->m:[Ljava/lang/String;
+
+    const-string v3, "user_attributes"
+
+    const-string v4, "CREATE TABLE IF NOT EXISTS user_attributes ( app_id TEXT NOT NULL, name TEXT NOT NULL, set_timestamp INTEGER NOT NULL, value BLOB NOT NULL, PRIMARY KEY (app_id, name)) ;"
+
+    const-string v5, "app_id,name,set_timestamp,value"
+
+    .line 11
+    invoke-static/range {v1 .. v6}, Lz3/s3;->b(Lz3/o;Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)V
+
+    .line 12
+    iget-object v0, p0, Lz3/r3;->g:Lz3/p3;
+
+    .line 13
+    invoke-virtual {v0}, Ly3/a;->e()Lz3/o;
+
+    move-result-object v1
+
+    .line 14
+    sget-object v6, Lz3/p3;->n:[Ljava/lang/String;
+
+    const-string v3, "apps"
+
+    const-string v4, "CREATE TABLE IF NOT EXISTS apps ( app_id TEXT NOT NULL, app_instance_id TEXT, gmp_app_id TEXT, resettable_device_id_hash TEXT, last_bundle_index INTEGER NOT NULL, last_bundle_end_timestamp INTEGER NOT NULL, PRIMARY KEY (app_id)) ;"
+
+    const-string v5, "app_id,app_instance_id,gmp_app_id,resettable_device_id_hash,last_bundle_index,last_bundle_end_timestamp"
+
+    .line 15
+    invoke-static/range {v1 .. v6}, Lz3/s3;->b(Lz3/o;Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)V
+
+    .line 16
+    iget-object v0, p0, Lz3/r3;->g:Lz3/p3;
+
+    .line 17
+    invoke-virtual {v0}, Ly3/a;->e()Lz3/o;
+
+    move-result-object v1
+
+    .line 18
+    sget-object v6, Lz3/p3;->p:[Ljava/lang/String;
+
+    const-string v3, "queue"
+
+    const-string v4, "CREATE TABLE IF NOT EXISTS queue ( app_id TEXT NOT NULL, bundle_end_timestamp INTEGER NOT NULL, data BLOB NOT NULL);"
+
+    const-string v5, "app_id,bundle_end_timestamp,data"
+
+    .line 19
+    invoke-static/range {v1 .. v6}, Lz3/s3;->b(Lz3/o;Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)V
+
+    .line 20
+    iget-object v0, p0, Lz3/r3;->g:Lz3/p3;
+
+    .line 21
+    invoke-virtual {v0}, Ly3/a;->e()Lz3/o;
+
+    move-result-object v1
+
+    const-string v3, "raw_events_metadata"
+
+    const-string v4, "CREATE TABLE IF NOT EXISTS raw_events_metadata ( app_id TEXT NOT NULL, metadata_fingerprint INTEGER NOT NULL, metadata BLOB NOT NULL, PRIMARY KEY (app_id, metadata_fingerprint));"
+
+    const-string v5, "app_id,metadata_fingerprint,metadata"
+
+    const/4 v6, 0x0
+
+    .line 22
+    invoke-static/range {v1 .. v6}, Lz3/s3;->b(Lz3/o;Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)V
+
+    .line 23
+    iget-object v0, p0, Lz3/r3;->g:Lz3/p3;
+
+    .line 24
+    invoke-virtual {v0}, Ly3/a;->e()Lz3/o;
+
+    move-result-object v1
+
+    .line 25
+    sget-object v6, Lz3/p3;->o:[Ljava/lang/String;
+
+    const-string v3, "raw_events"
+
+    const-string v4, "CREATE TABLE IF NOT EXISTS raw_events ( app_id TEXT NOT NULL, name TEXT NOT NULL, timestamp INTEGER NOT NULL, metadata_fingerprint INTEGER NOT NULL, data BLOB NOT NULL);"
+
+    const-string v5, "app_id,name,timestamp,metadata_fingerprint,data"
+
+    .line 26
+    invoke-static/range {v1 .. v6}, Lz3/s3;->b(Lz3/o;Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)V
+
+    .line 27
+    iget-object v0, p0, Lz3/r3;->g:Lz3/p3;
+
+    .line 28
+    invoke-virtual {v0}, Ly3/a;->e()Lz3/o;
+
+    move-result-object v1
+
+    const-string v3, "event_filters"
+
+    const-string v4, "CREATE TABLE IF NOT EXISTS event_filters ( app_id TEXT NOT NULL, audience_id INTEGER NOT NULL, filter_id INTEGER NOT NULL, event_name TEXT NOT NULL, data BLOB NOT NULL, PRIMARY KEY (app_id, event_name, audience_id, filter_id));"
+
+    const-string v5, "app_id,audience_id,filter_id,event_name,data"
+
+    const/4 v6, 0x0
+
+    .line 29
+    invoke-static/range {v1 .. v6}, Lz3/s3;->b(Lz3/o;Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)V
+
+    .line 30
+    iget-object v0, p0, Lz3/r3;->g:Lz3/p3;
+
+    .line 31
+    invoke-virtual {v0}, Ly3/a;->e()Lz3/o;
+
+    move-result-object v1
+
+    const-string v3, "property_filters"
+
+    const-string v4, "CREATE TABLE IF NOT EXISTS property_filters ( app_id TEXT NOT NULL, audience_id INTEGER NOT NULL, filter_id INTEGER NOT NULL, property_name TEXT NOT NULL, data BLOB NOT NULL, PRIMARY KEY (app_id, property_name, audience_id, filter_id));"
+
+    const-string v5, "app_id,audience_id,filter_id,property_name,data"
+
+    .line 32
+    invoke-static/range {v1 .. v6}, Lz3/s3;->b(Lz3/o;Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)V
+
+    .line 33
+    iget-object v0, p0, Lz3/r3;->g:Lz3/p3;
+
+    .line 34
+    invoke-virtual {v0}, Ly3/a;->e()Lz3/o;
+
+    move-result-object v1
+
+    const-string v3, "audience_filter_values"
+
+    const-string v4, "CREATE TABLE IF NOT EXISTS audience_filter_values ( app_id TEXT NOT NULL, audience_id INTEGER NOT NULL, current_results BLOB, PRIMARY KEY (app_id, audience_id));"
+
+    const-string v5, "app_id,audience_id,current_results"
+
+    .line 35
+    invoke-static/range {v1 .. v6}, Lz3/s3;->b(Lz3/o;Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)V
+
+    .line 36
+    iget-object v0, p0, Lz3/r3;->g:Lz3/p3;
+
+    .line 37
+    invoke-virtual {v0}, Ly3/a;->e()Lz3/o;
+
+    move-result-object v1
+
+    .line 38
+    sget-object v6, Lz3/p3;->q:[Ljava/lang/String;
+
+    const-string v3, "app2"
+
+    const-string v4, "CREATE TABLE IF NOT EXISTS app2 ( app_id TEXT NOT NULL, first_open_count INTEGER NOT NULL, PRIMARY KEY (app_id));"
+
+    const-string v5, "app_id,first_open_count"
+
+    .line 39
+    invoke-static/range {v1 .. v6}, Lz3/s3;->b(Lz3/o;Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)V
+
+    .line 40
+    iget-object v0, p0, Lz3/r3;->g:Lz3/p3;
+
+    .line 41
+    invoke-virtual {v0}, Ly3/a;->e()Lz3/o;
+
+    move-result-object v1
+
+    const-string v3, "main_event_params"
+
+    const-string v4, "CREATE TABLE IF NOT EXISTS main_event_params ( app_id TEXT NOT NULL, event_id TEXT NOT NULL, children_to_process INTEGER NOT NULL, main_event BLOB NOT NULL, PRIMARY KEY (app_id));"
+
+    const-string v5, "app_id,event_id,children_to_process,main_event"
+
+    const/4 v6, 0x0
+
+    .line 42
+    invoke-static/range {v1 .. v6}, Lz3/s3;->b(Lz3/o;Landroid/database/sqlite/SQLiteDatabase;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;[Ljava/lang/String;)V
+
+    return-void
+.end method
+
+.method public final onUpgrade(Landroid/database/sqlite/SQLiteDatabase;II)V
+    .locals 0
+
+    return-void
 .end method

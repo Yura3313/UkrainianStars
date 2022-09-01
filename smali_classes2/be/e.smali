@@ -6,32 +6,32 @@
 # instance fields
 .field public final a:Ljava/lang/String;
 
-.field public final b:Lvc/x$b;
+.field public final b:Lvc/v$b;
 
 .field public final c:Ljava/lang/String;
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;Lvc/x$b;Ljava/lang/String;)V
+.method public constructor <init>(Ljava/lang/String;Lvc/v$b;Ljava/lang/String;)V
     .locals 1
 
     const-string v0, "game"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "type"
 
-    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "scid"
 
-    invoke-static {p3, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p3, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     iput-object p1, p0, Lbe/e;->a:Ljava/lang/String;
 
-    iput-object p2, p0, Lbe/e;->b:Lvc/x$b;
+    iput-object p2, p0, Lbe/e;->b:Lvc/v$b;
 
     iput-object p3, p0, Lbe/e;->c:Ljava/lang/String;
 
@@ -55,17 +55,17 @@
 
     iget-object v1, p1, Lbe/e;->a:Ljava/lang/String;
 
-    invoke-static {v0, v1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lbe/e;->b:Lvc/x$b;
+    iget-object v0, p0, Lbe/e;->b:Lvc/v$b;
 
-    iget-object v1, p1, Lbe/e;->b:Lvc/x$b;
+    iget-object v1, p1, Lbe/e;->b:Lvc/v$b;
 
-    invoke-static {v0, v1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
@@ -75,7 +75,7 @@
 
     iget-object p1, p1, Lbe/e;->c:Ljava/lang/String;
 
-    invoke-static {v0, p1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, p1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -116,7 +116,7 @@
     :goto_0
     mul-int/lit8 v0, v0, 0x1f
 
-    iget-object v2, p0, Lbe/e;->b:Lvc/x$b;
+    iget-object v2, p0, Lbe/e;->b:Lvc/v$b;
 
     if-eqz v2, :cond_1
 
@@ -167,7 +167,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lbe/e;->b:Lvc/x$b;
+    iget-object v1, p0, Lbe/e;->b:Lvc/v$b;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -180,7 +180,7 @@
     const-string v2, ")"
 
     .line 3
-    invoke-static {v0, v1, v2}, Landroid/support/v4/media/b;->b(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, v1, v2}, Landroid/support/v4/media/b;->a(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 

@@ -19,7 +19,7 @@
 
 
 # instance fields
-.field public final f:Ljava/util/ArrayList;
+.field public final g:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/ArrayList<",
@@ -29,9 +29,9 @@
     .end annotation
 .end field
 
-.field public g:Landroid/widget/TabHost$OnTabChangeListener;
+.field public h:Landroid/widget/TabHost$OnTabChangeListener;
 
-.field public h:Z
+.field public i:Z
 
 
 # direct methods
@@ -48,7 +48,7 @@
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Landroidx/fragment/app/FragmentTabHost;->f:Ljava/util/ArrayList;
+    iput-object v0, p0, Landroidx/fragment/app/FragmentTabHost;->g:Ljava/util/ArrayList;
 
     const/4 v0, 0x1
 
@@ -83,7 +83,7 @@
     .locals 3
 
     .line 1
-    iget-object v0, p0, Landroidx/fragment/app/FragmentTabHost;->f:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroidx/fragment/app/FragmentTabHost;->g:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -97,7 +97,7 @@
 
     .line 2
     :cond_0
-    iget-object v0, p0, Landroidx/fragment/app/FragmentTabHost;->f:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroidx/fragment/app/FragmentTabHost;->g:Ljava/util/ArrayList;
 
     const/4 v2, 0x0
 
@@ -125,7 +125,7 @@
     invoke-virtual {p0}, Landroid/widget/TabHost;->getCurrentTabTag()Ljava/lang/String;
 
     .line 3
-    iget-object v0, p0, Landroidx/fragment/app/FragmentTabHost;->f:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroidx/fragment/app/FragmentTabHost;->g:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -136,7 +136,7 @@
     const/4 v0, 0x1
 
     .line 4
-    iput-boolean v0, p0, Landroidx/fragment/app/FragmentTabHost;->h:Z
+    iput-boolean v0, p0, Landroidx/fragment/app/FragmentTabHost;->i:Z
 
     .line 5
     invoke-virtual {p0}, Landroidx/fragment/app/FragmentTabHost;->a()Landroidx/fragment/app/c0;
@@ -145,7 +145,7 @@
 
     .line 6
     :cond_0
-    iget-object v0, p0, Landroidx/fragment/app/FragmentTabHost;->f:Ljava/util/ArrayList;
+    iget-object v0, p0, Landroidx/fragment/app/FragmentTabHost;->g:Ljava/util/ArrayList;
 
     const/4 v1, 0x0
 
@@ -174,7 +174,7 @@
     const/4 v0, 0x0
 
     .line 2
-    iput-boolean v0, p0, Landroidx/fragment/app/FragmentTabHost;->h:Z
+    iput-boolean v0, p0, Landroidx/fragment/app/FragmentTabHost;->i:Z
 
     return-void
 .end method
@@ -213,7 +213,7 @@
     invoke-super {p0, v0}, Landroid/view/View;->onRestoreInstanceState(Landroid/os/Parcelable;)V
 
     .line 5
-    iget-object p1, p1, Landroidx/fragment/app/FragmentTabHost$SavedState;->f:Ljava/lang/String;
+    iget-object p1, p1, Landroidx/fragment/app/FragmentTabHost$SavedState;->g:Ljava/lang/String;
 
     invoke-virtual {p0, p1}, Landroid/widget/TabHost;->setCurrentTabByTag(Ljava/lang/String;)V
 
@@ -240,7 +240,7 @@
 
     move-result-object v0
 
-    iput-object v0, v1, Landroidx/fragment/app/FragmentTabHost$SavedState;->f:Ljava/lang/String;
+    iput-object v0, v1, Landroidx/fragment/app/FragmentTabHost$SavedState;->g:Ljava/lang/String;
 
     return-object v1
 .end method
@@ -251,7 +251,7 @@
     .end annotation
 
     .line 1
-    iget-boolean v0, p0, Landroidx/fragment/app/FragmentTabHost;->h:Z
+    iget-boolean v0, p0, Landroidx/fragment/app/FragmentTabHost;->i:Z
 
     if-eqz v0, :cond_0
 
@@ -260,7 +260,7 @@
 
     .line 3
     :cond_0
-    iget-object v0, p0, Landroidx/fragment/app/FragmentTabHost;->g:Landroid/widget/TabHost$OnTabChangeListener;
+    iget-object v0, p0, Landroidx/fragment/app/FragmentTabHost;->h:Landroid/widget/TabHost$OnTabChangeListener;
 
     if-eqz v0, :cond_1
 
@@ -276,7 +276,7 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 
-    iput-object p1, p0, Landroidx/fragment/app/FragmentTabHost;->g:Landroid/widget/TabHost$OnTabChangeListener;
+    iput-object p1, p0, Landroidx/fragment/app/FragmentTabHost;->h:Landroid/widget/TabHost$OnTabChangeListener;
 
     return-void
 .end method

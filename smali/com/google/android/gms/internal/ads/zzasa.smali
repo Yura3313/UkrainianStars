@@ -21,9 +21,9 @@
 
 
 # instance fields
-.field public final f:Z
+.field public final g:Z
 
-.field public final g:Ljava/util/List;
+.field public final h:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
@@ -38,9 +38,9 @@
 .method public static constructor <clinit>()V
     .locals 1
 
-    new-instance v0, Lk3/f8;
+    new-instance v0, Lk3/g8;
 
-    invoke-direct {v0}, Lk3/f8;-><init>()V
+    invoke-direct {v0}, Lk3/g8;-><init>()V
 
     sput-object v0, Lcom/google/android/gms/internal/ads/zzasa;->CREATOR:Landroid/os/Parcelable$Creator;
 
@@ -61,10 +61,10 @@
     const/4 v1, 0x0
 
     .line 3
-    iput-boolean v1, p0, Lcom/google/android/gms/internal/ads/zzasa;->f:Z
+    iput-boolean v1, p0, Lcom/google/android/gms/internal/ads/zzasa;->g:Z
 
     .line 4
-    iput-object v0, p0, Lcom/google/android/gms/internal/ads/zzasa;->g:Ljava/util/List;
+    iput-object v0, p0, Lcom/google/android/gms/internal/ads/zzasa;->h:Ljava/util/List;
 
     return-void
 .end method
@@ -84,10 +84,10 @@
     invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
 
     .line 6
-    iput-boolean p1, p0, Lcom/google/android/gms/internal/ads/zzasa;->f:Z
+    iput-boolean p1, p0, Lcom/google/android/gms/internal/ads/zzasa;->g:Z
 
     .line 7
-    iput-object p2, p0, Lcom/google/android/gms/internal/ads/zzasa;->g:Ljava/util/List;
+    iput-object p2, p0, Lcom/google/android/gms/internal/ads/zzasa;->h:Ljava/util/List;
 
     return-void
 .end method
@@ -105,7 +105,7 @@
     move-result p2
 
     .line 2
-    iget-boolean v0, p0, Lcom/google/android/gms/internal/ads/zzasa;->f:Z
+    iget-boolean v0, p0, Lcom/google/android/gms/internal/ads/zzasa;->g:Z
 
     const/4 v1, 0x2
 
@@ -118,7 +118,7 @@
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 5
-    iget-object v0, p0, Lcom/google/android/gms/internal/ads/zzasa;->g:Ljava/util/List;
+    iget-object v0, p0, Lcom/google/android/gms/internal/ads/zzasa;->h:Ljava/util/List;
 
     const/4 v1, 0x3
 

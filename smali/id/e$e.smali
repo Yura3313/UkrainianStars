@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field public final synthetic f:Lid/e;
+.field public final synthetic g:Lid/e;
 
 
 # direct methods
 .method public constructor <init>(Lid/e;)V
     .locals 0
 
-    iput-object p1, p0, Lid/e$e;->f:Lid/e;
+    iput-object p1, p0, Lid/e$e;->g:Lid/e;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -45,7 +45,7 @@
     move-result-object p1
 
     .line 2
-    iget-object p1, p1, Lae/u;->m:La5/d0;
+    iget-object p1, p1, Lae/u;->m:Lpe/a;
 
     const-string v0, "Donation Received Popup"
 
@@ -56,10 +56,10 @@
     const/16 v3, 0x18
 
     .line 3
-    invoke-static {p1, v0, v1, v2, v3}, La5/d0;->a(La5/d0;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;I)V
+    invoke-static {p1, v0, v1, v2, v3}, Lpe/a;->e(Lpe/a;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;I)V
 
     .line 4
-    iget-object p1, p0, Lid/e$e;->f:Lid/e;
+    iget-object p1, p0, Lid/e$e;->g:Lid/e;
 
     invoke-virtual {p1}, Lid/e;->a()V
 

@@ -4,18 +4,18 @@
 
 
 # instance fields
-.field public final a:Lpb/e0;
+.field public final a:Lpb/f0;
 
 
 # direct methods
-.method public constructor <init>(Lpb/e0;)V
+.method public constructor <init>(Lpb/f0;)V
     .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lpb/l;->a:Lpb/e0;
+    iput-object p1, p0, Lpb/l;->a:Lpb/f0;
 
     return-void
 .end method

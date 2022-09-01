@@ -1,5 +1,5 @@
 .class public final Lbe/r;
-.super Lbe/v0;
+.super Lbe/x0;
 .source "IdFriendsStorage.kt"
 
 
@@ -12,7 +12,7 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lbe/v0<",
+        "Lbe/x0<",
         "Lbe/q;",
         ">;"
     }
@@ -25,7 +25,7 @@
         value = {
             "Lre/l<",
             "Lbe/q;",
-            "Lie/h;",
+            "Lie/i;",
             ">;"
         }
     .end annotation
@@ -43,13 +43,13 @@
             "Ljava/util/List<",
             "Lcom/supercell/id/IdFriend;",
             ">;",
-            "Lie/h;",
+            "Lie/i;",
             ">;)V"
         }
     .end annotation
 
     .line 1
-    invoke-direct {p0}, Lbe/v0;-><init>()V
+    invoke-direct {p0}, Lbe/x0;-><init>()V
 
     .line 2
     new-instance v0, Lbe/r$b;
@@ -59,7 +59,7 @@
     iput-object v0, p0, Lbe/r;->d:Lbe/r$b;
 
     .line 3
-    invoke-virtual {p0, v0}, Lbe/v0;->b(Lre/l;)V
+    invoke-virtual {p0, v0}, Lbe/x0;->b(Lre/l;)V
 
     return-void
 .end method

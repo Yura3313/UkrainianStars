@@ -1,53 +1,80 @@
 .class public final Lk3/q50;
-.super Lcom/google/android/gms/internal/ads/zzaos;
-.source "com.google.android.gms:play-services-ads@@19.3.0"
+.super Ljava/lang/Object;
+.source "com.google.android.gms:play-services-gass@@19.3.0"
+
+# interfaces
+.implements Lk3/cs0;
 
 
-# instance fields
-.field public f:Lk3/g40;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lk3/g40<",
-            "Lcom/google/android/gms/internal/ads/zzapa;",
-            "Lcom/google/android/gms/internal/ads/zzcso;",
-            ">;"
-        }
-    .end annotation
-.end field
+# static fields
+.field public static final a:Lk3/q50;
 
 
 # direct methods
-.method public constructor <init>(Lk3/g40;)V
+.method public static constructor <clinit>()V
+    .locals 1
+
+    new-instance v0, Lk3/q50;
+
+    invoke-direct {v0}, Lk3/q50;-><init>()V
+
+    sput-object v0, Lk3/q50;->a:Lk3/q50;
+
+    return-void
+.end method
+
+.method public constructor <init>()V
     .locals 0
 
-    .line 1
-    invoke-direct {p0}, Lcom/google/android/gms/internal/ads/zzaos;-><init>()V
-
-    .line 2
-    iput-object p1, p0, Lk3/q50;->f:Lk3/g40;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final p(Ljava/lang/String;)V
-    .locals 2
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Landroid/os/RemoteException;
-        }
-    .end annotation
+.method public final a(I)Z
+    .locals 4
 
-    iget-object v0, p0, Lk3/q50;->f:Lk3/g40;
+    const/4 v0, 0x3
 
-    iget-object v0, v0, Lk3/g40;->c:Lk3/qr;
+    const/4 v1, 0x2
 
-    check-cast v0, Lcom/google/android/gms/internal/ads/zzcso;
+    const/4 v2, 0x1
 
-    const/4 v1, 0x0
+    const/4 v3, 0x0
 
-    invoke-virtual {v0, v1, p1}, Lcom/google/android/gms/internal/ads/zzcso;->j3(ILjava/lang/String;)V
+    if-eqz p1, :cond_2
 
-    return-void
+    if-eq p1, v2, :cond_1
+
+    if-eq p1, v1, :cond_3
+
+    if-eq p1, v0, :cond_0
+
+    const/4 v0, 0x0
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v0, 0x4
+
+    goto :goto_0
+
+    :cond_1
+    const/4 v0, 0x2
+
+    goto :goto_0
+
+    :cond_2
+    const/4 v0, 0x1
+
+    :cond_3
+    :goto_0
+    if-eqz v0, :cond_4
+
+    return v2
+
+    :cond_4
+    return v3
 .end method

@@ -70,7 +70,7 @@
 
     .line 3
     :goto_0
-    iget-object v1, v0, Landroidx/appcompat/widget/b0;->q:Landroidx/appcompat/widget/SearchView;
+    iget-object v1, v0, Landroidx/appcompat/widget/b0;->r:Landroidx/appcompat/widget/SearchView;
 
     invoke-virtual {v1}, Landroid/view/View;->getVisibility()I
 
@@ -80,7 +80,7 @@
 
     if-nez v1, :cond_2
 
-    iget-object v1, v0, Landroidx/appcompat/widget/b0;->q:Landroidx/appcompat/widget/SearchView;
+    iget-object v1, v0, Landroidx/appcompat/widget/b0;->r:Landroidx/appcompat/widget/SearchView;
 
     .line 4
     invoke-virtual {v1}, Landroid/view/View;->getWindowVisibility()I
@@ -94,7 +94,7 @@
     .line 5
     :cond_1
     :try_start_0
-    iget-object v1, v0, Landroidx/appcompat/widget/b0;->r:Landroid/app/SearchableInfo;
+    iget-object v1, v0, Landroidx/appcompat/widget/b0;->s:Landroid/app/SearchableInfo;
 
     invoke-virtual {v0, v1, p1}, Landroidx/appcompat/widget/b0;->h(Landroid/app/SearchableInfo;Ljava/lang/String;)Landroid/database/Cursor;
 
@@ -158,7 +158,7 @@
     check-cast v0, Li0/a;
 
     .line 2
-    iget-object v0, v0, Li0/a;->h:Landroid/database/Cursor;
+    iget-object v0, v0, Li0/a;->i:Landroid/database/Cursor;
 
     .line 3
     iget-object p2, p2, Landroid/widget/Filter$FilterResults;->values:Ljava/lang/Object;

@@ -1,5 +1,5 @@
 .class public final Landroidx/appcompat/app/w$a;
-.super Lcom/google/android/play/core/assetpacks/o2;
+.super Lae/z1;
 .source "WindowDecorActionBar.java"
 
 
@@ -15,16 +15,16 @@
 
 
 # instance fields
-.field public final synthetic c:Landroidx/appcompat/app/w;
+.field public final synthetic a:Landroidx/appcompat/app/w;
 
 
 # direct methods
 .method public constructor <init>(Landroidx/appcompat/app/w;)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/appcompat/app/w$a;->c:Landroidx/appcompat/app/w;
+    iput-object p1, p0, Landroidx/appcompat/app/w$a;->a:Landroidx/appcompat/app/w;
 
-    invoke-direct {p0}, Lcom/google/android/play/core/assetpacks/o2;-><init>()V
+    invoke-direct {p0}, Lae/z1;-><init>()V
 
     return-void
 .end method
@@ -35,7 +35,7 @@
     .locals 4
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/app/w$a;->c:Landroidx/appcompat/app/w;
+    iget-object v0, p0, Landroidx/appcompat/app/w$a;->a:Landroidx/appcompat/app/w;
 
     iget-boolean v1, v0, Landroidx/appcompat/app/w;->p:Z
 
@@ -51,7 +51,7 @@
     invoke-virtual {v0, v1}, Landroid/view/View;->setTranslationY(F)V
 
     .line 3
-    iget-object v0, p0, Landroidx/appcompat/app/w$a;->c:Landroidx/appcompat/app/w;
+    iget-object v0, p0, Landroidx/appcompat/app/w$a;->a:Landroidx/appcompat/app/w;
 
     iget-object v0, v0, Landroidx/appcompat/app/w;->d:Landroidx/appcompat/widget/ActionBarContainer;
 
@@ -59,7 +59,7 @@
 
     .line 4
     :cond_0
-    iget-object v0, p0, Landroidx/appcompat/app/w$a;->c:Landroidx/appcompat/app/w;
+    iget-object v0, p0, Landroidx/appcompat/app/w$a;->a:Landroidx/appcompat/app/w;
 
     iget-object v0, v0, Landroidx/appcompat/app/w;->d:Landroidx/appcompat/widget/ActionBarContainer;
 
@@ -68,7 +68,7 @@
     invoke-virtual {v0, v1}, Landroidx/appcompat/widget/ActionBarContainer;->setVisibility(I)V
 
     .line 5
-    iget-object v0, p0, Landroidx/appcompat/app/w$a;->c:Landroidx/appcompat/app/w;
+    iget-object v0, p0, Landroidx/appcompat/app/w$a;->a:Landroidx/appcompat/app/w;
 
     iget-object v0, v0, Landroidx/appcompat/app/w;->d:Landroidx/appcompat/widget/ActionBarContainer;
 
@@ -77,11 +77,11 @@
     invoke-virtual {v0, v1}, Landroidx/appcompat/widget/ActionBarContainer;->setTransitioning(Z)V
 
     .line 6
-    iget-object v0, p0, Landroidx/appcompat/app/w$a;->c:Landroidx/appcompat/app/w;
+    iget-object v0, p0, Landroidx/appcompat/app/w$a;->a:Landroidx/appcompat/app/w;
 
     const/4 v1, 0x0
 
-    iput-object v1, v0, Landroidx/appcompat/app/w;->t:Lf/h;
+    iput-object v1, v0, Landroidx/appcompat/app/w;->t:Lf/i;
 
     .line 7
     iget-object v2, v0, Landroidx/appcompat/app/w;->k:Lf/b$a;
@@ -101,7 +101,7 @@
 
     .line 11
     :cond_1
-    iget-object v0, p0, Landroidx/appcompat/app/w$a;->c:Landroidx/appcompat/app/w;
+    iget-object v0, p0, Landroidx/appcompat/app/w$a;->a:Landroidx/appcompat/app/w;
 
     iget-object v0, v0, Landroidx/appcompat/app/w;->c:Landroidx/appcompat/widget/ActionBarOverlayLayout;
 

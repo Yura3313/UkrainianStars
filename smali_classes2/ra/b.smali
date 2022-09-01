@@ -31,7 +31,7 @@
 
 
 # virtual methods
-.method public final a(Landroidx/recyclerview/widget/RecyclerView$z;Lo8/y;)V
+.method public final a(Landroidx/recyclerview/widget/RecyclerView$z;Lo8/z;)V
     .locals 8
 
     .line 1
@@ -40,23 +40,23 @@
     check-cast p2, Lo8/c;
 
     .line 2
-    iget-object v0, p2, Lo8/c;->A:Lq8/b;
+    iget-object v0, p2, Lo8/c;->B:Lq8/b;
 
-    iget-object v0, v0, Lq8/b;->g:Ljava/lang/String;
+    iget-object v0, v0, Lq8/b;->h:Ljava/lang/String;
 
-    invoke-static {v0}, Lcom/google/android/play/core/appupdate/g;->e(Ljava/lang/String;)Z
+    invoke-static {v0}, La5/b0;->g(Ljava/lang/String;)Z
 
     move-result v0
 
     .line 3
-    iget-object v1, p1, Lra/b$a;->C:Landroid/widget/ImageView;
+    iget-object v1, p1, Lra/b$a;->D:Landroid/widget/ImageView;
 
     sget v2, Lcom/helpshift/R$drawable;->hs__placeholder_image:I
 
     invoke-virtual {v1, v2}, Landroid/widget/ImageView;->setImageResource(I)V
 
     .line 4
-    iget v1, p2, Lo8/c;->B:I
+    iget v1, p2, Lo8/c;->C:I
 
     invoke-static {v1}, Lp/g;->b(I)I
 
@@ -82,11 +82,11 @@
 
     move-result-object v1
 
-    iget-object v5, p2, Lo8/c;->A:Lq8/b;
+    iget-object v5, p2, Lo8/c;->B:Lq8/b;
 
-    iget-object v5, v5, Lq8/b;->k:Ljava/lang/String;
+    iget-object v5, v5, Lq8/b;->l:Ljava/lang/String;
 
-    iget-object v6, p1, Lra/b$a;->C:Landroid/widget/ImageView;
+    iget-object v6, p1, Lra/b$a;->D:Landroid/widget/ImageView;
 
     iget-object v7, p0, Lra/u;->a:Landroid/content/Context;
 
@@ -120,27 +120,27 @@
 
     .line 8
     :goto_2
-    iget-object v1, p1, Lra/b$a;->D:Landroid/view/View;
+    iget-object v1, p1, Lra/b$a;->E:Landroid/view/View;
 
     invoke-virtual {p0, v1, v3}, Lra/u;->m(Landroid/view/View;Z)V
 
     .line 9
-    iget-object v1, p1, Lra/b$a;->y:Landroid/widget/TextView;
+    iget-object v1, p1, Lra/b$a;->z:Landroid/widget/TextView;
 
     invoke-virtual {p0, v1, v0}, Lra/u;->m(Landroid/view/View;Z)V
 
     .line 10
-    iget-object v1, p1, Lra/b$a;->E:Landroid/view/View;
+    iget-object v1, p1, Lra/b$a;->F:Landroid/view/View;
 
     invoke-virtual {p0, v1, v0}, Lra/u;->m(Landroid/view/View;Z)V
 
     .line 11
-    iget-object v1, p1, Lra/b$a;->B:Landroid/widget/ProgressBar;
+    iget-object v1, p1, Lra/b$a;->C:Landroid/widget/ProgressBar;
 
     invoke-virtual {p0, v1, v4}, Lra/u;->m(Landroid/view/View;Z)V
 
     .line 12
-    iget-object v1, p1, Lra/b$a;->A:Landroid/widget/TextView;
+    iget-object v1, p1, Lra/b$a;->B:Landroid/widget/TextView;
 
     new-instance v2, Lra/a;
 
@@ -151,76 +151,76 @@
     if-eqz v0, :cond_3
 
     .line 13
-    iget-object v0, p1, Lra/b$a;->y:Landroid/widget/TextView;
+    iget-object v0, p1, Lra/b$a;->z:Landroid/widget/TextView;
 
-    iget-object v1, p2, Lo8/c;->A:Lq8/b;
+    iget-object v1, p2, Lo8/c;->B:Lq8/b;
 
-    iget-object v1, v1, Lq8/b;->g:Ljava/lang/String;
+    iget-object v1, v1, Lq8/b;->h:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 14
-    iget-object v0, p1, Lra/b$a;->y:Landroid/widget/TextView;
+    iget-object v0, p1, Lra/b$a;->z:Landroid/widget/TextView;
 
-    iget-object v1, p2, Lo8/c;->A:Lq8/b;
+    iget-object v1, p2, Lo8/c;->B:Lq8/b;
 
-    iget-object v1, v1, Lq8/b;->g:Ljava/lang/String;
+    iget-object v1, v1, Lq8/b;->h:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setContentDescription(Ljava/lang/CharSequence;)V
 
     .line 15
     :cond_3
-    iget-object v0, p2, Lo8/y;->h:Lo8/l0;
+    iget-object v0, p2, Lo8/z;->i:Lo8/n0;
 
     .line 16
-    iget-object v1, p1, Lra/b$a;->z:Landroid/widget/TextView;
+    iget-object v1, p1, Lra/b$a;->A:Landroid/widget/TextView;
 
-    invoke-virtual {p2}, Lo8/y;->i()Ljava/lang/String;
+    invoke-virtual {p2}, Lo8/z;->i()Ljava/lang/String;
 
     move-result-object v2
 
-    invoke-virtual {p0, v1, v0, v2}, Lra/u;->g(Landroid/widget/TextView;Lo8/l0;Ljava/lang/String;)V
+    invoke-virtual {p0, v1, v0, v2}, Lra/u;->g(Landroid/widget/TextView;Lo8/n0;Ljava/lang/String;)V
 
     .line 17
-    iget-object v0, p1, Lra/b$a;->A:Landroid/widget/TextView;
+    iget-object v0, p1, Lra/b$a;->B:Landroid/widget/TextView;
 
-    iget-object v1, p2, Lo8/c;->A:Lq8/b;
+    iget-object v1, p2, Lo8/c;->B:Lq8/b;
 
-    iget-object v1, v1, Lq8/b;->j:Lq8/a;
+    iget-object v1, v1, Lq8/b;->k:Lq8/a;
 
-    iget-object v1, v1, Lq8/a;->h:Ljava/lang/String;
+    iget-object v1, v1, Lq8/a;->i:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 18
-    iget-object v0, p1, Lra/b$a;->A:Landroid/widget/TextView;
+    iget-object v0, p1, Lra/b$a;->B:Landroid/widget/TextView;
 
-    iget-object v1, p2, Lo8/c;->A:Lq8/b;
+    iget-object v1, p2, Lo8/c;->B:Lq8/b;
 
-    iget-object v1, v1, Lq8/b;->j:Lq8/a;
+    iget-object v1, v1, Lq8/b;->k:Lq8/a;
 
-    iget-object v1, v1, Lq8/a;->h:Ljava/lang/String;
+    iget-object v1, v1, Lq8/a;->i:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setContentDescription(Ljava/lang/CharSequence;)V
 
     .line 19
-    iget-object v0, p1, Lra/b$a;->F:Landroid/view/View;
+    iget-object v0, p1, Lra/b$a;->G:Landroid/view/View;
 
-    invoke-virtual {p0, p2}, Lra/u;->d(Lo8/y;)Ljava/lang/String;
+    invoke-virtual {p0, p2}, Lra/u;->d(Lo8/z;)Ljava/lang/String;
 
     move-result-object v1
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setContentDescription(Ljava/lang/CharSequence;)V
 
     .line 20
-    invoke-virtual {p2}, Lo8/y;->o()Z
+    invoke-virtual {p2}, Lo8/z;->o()Z
 
     move-result p2
 
     if-eqz p2, :cond_4
 
     .line 21
-    iget-object p1, p1, Lra/b$a;->G:Landroid/view/View;
+    iget-object p1, p1, Lra/b$a;->H:Landroid/view/View;
 
     invoke-virtual {p1}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 

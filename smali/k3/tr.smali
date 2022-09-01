@@ -1,81 +1,89 @@
 .class public final Lk3/tr;
-.super Lk3/vs;
+.super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lk3/d2;
-
-
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Lk3/vs<",
-        "Lp1/a;",
-        ">;",
-        "Lk3/d2;"
-    }
-.end annotation
+.implements Lk3/mv0;
 
 
 # instance fields
-.field public g:Landroid/os/Bundle;
+.field public final synthetic a:I
+
+.field public final b:Lk3/qv0;
 
 
 # direct methods
-.method public constructor <init>(Ljava/util/Set;)V
+.method public synthetic constructor <init>(Lk3/qv0;I)V
     .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/util/Set<",
-            "Lk3/rt<",
-            "Lp1/a;",
-            ">;>;)V"
-        }
-    .end annotation
 
-    .line 1
-    invoke-direct {p0, p1}, Lk3/vs;-><init>(Ljava/util/Set;)V
+    iput p2, p0, Lk3/tr;->a:I
 
-    .line 2
-    new-instance p1, Landroid/os/Bundle;
+    iput-object p1, p0, Lk3/tr;->b:Lk3/qv0;
 
-    invoke-direct {p1}, Landroid/os/Bundle;-><init>()V
-
-    iput-object p1, p0, Lk3/tr;->g:Landroid/os/Bundle;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
+.method public static a(Lk3/qv0;)Lk3/tr;
+    .locals 2
+
+    new-instance v0, Lk3/tr;
+
+    const/4 v1, 0x0
+
+    invoke-direct {v0, p0, v1}, Lk3/tr;-><init>(Lk3/qv0;I)V
+
+    return-object v0
+.end method
+
 
 # virtual methods
-.method public final declared-synchronized u(Ljava/lang/String;Landroid/os/Bundle;)V
-    .locals 0
+.method public final synthetic get()Ljava/lang/Object;
+    .locals 2
 
-    monitor-enter p0
+    iget v0, p0, Lk3/tr;->a:I
+
+    packed-switch v0, :pswitch_data_0
+
+    goto :goto_0
 
     .line 1
-    :try_start_0
-    iget-object p1, p0, Lk3/tr;->g:Landroid/os/Bundle;
+    :pswitch_0
+    iget-object v0, p0, Lk3/tr;->b:Lk3/qv0;
 
-    invoke-virtual {p1, p2}, Landroid/os/Bundle;->putAll(Landroid/os/Bundle;)V
+    invoke-interface {v0}, Lk3/qv0;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Ljava/util/Set;
 
     .line 2
-    sget-object p1, Lk3/a;->g:Lk3/a;
+    new-instance v1, Lk3/rr;
 
-    invoke-virtual {p0, p1}, Lk3/vs;->F0(Lk3/xs;)V
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+    invoke-direct {v1, v0}, Lk3/rr;-><init>(Ljava/util/Set;)V
+
+    return-object v1
 
     .line 3
-    monitor-exit p0
+    :goto_0
+    iget-object v0, p0, Lk3/tr;->b:Lk3/qv0;
 
-    return-void
+    invoke-interface {v0}, Lk3/qv0;->get()Ljava/lang/Object;
 
-    :catchall_0
-    move-exception p1
+    move-result-object v0
 
-    monitor-exit p0
+    check-cast v0, Lk3/yz;
 
-    throw p1
+    .line 4
+    new-instance v1, Lk3/c00;
+
+    invoke-direct {v1, v0}, Lk3/c00;-><init>(Lk3/yz;)V
+
+    return-object v1
+
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

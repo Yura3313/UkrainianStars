@@ -3,7 +3,7 @@
 
 
 # static fields
-.field public static final k:Ljava/util/ArrayDeque;
+.field public static final l:Ljava/util/ArrayDeque;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Queue<",
@@ -24,7 +24,7 @@
 
     invoke-direct {v0, v1}, Ljava/util/ArrayDeque;-><init>(I)V
 
-    sput-object v0, Lcom/google/firebase/messaging/FirebaseMessagingService;->k:Ljava/util/ArrayDeque;
+    sput-object v0, Lcom/google/firebase/messaging/FirebaseMessagingService;->l:Ljava/util/ArrayDeque;
 
     return-void
 .end method
@@ -43,12 +43,12 @@
     .locals 0
 
     .line 1
-    invoke-static {}, Ly5/o;->b()Ly5/o;
+    invoke-static {}, Ly5/p;->b()Ly5/p;
 
     move-result-object p1
 
     .line 2
-    iget-object p1, p1, Ly5/o;->e:Ljava/util/ArrayDeque;
+    iget-object p1, p1, Ly5/p;->e:Ljava/util/ArrayDeque;
 
     invoke-interface {p1}, Ljava/util/Queue;->poll()Ljava/lang/Object;
 
@@ -130,7 +130,7 @@
     .line 4
     :cond_0
     :goto_0
-    invoke-static {p1}, La5/g0;->n(Landroid/content/Intent;)Z
+    invoke-static {p1}, La5/g0;->l(Landroid/content/Intent;)Z
 
     move-result v0
 
@@ -210,7 +210,7 @@
     const-string v0, "_no"
 
     .line 15
-    invoke-static {v0, p1}, La5/g0;->o(Ljava/lang/String;Landroid/content/Intent;)V
+    invoke-static {v0, p1}, La5/g0;->m(Ljava/lang/String;Landroid/content/Intent;)V
 
     :cond_2
     const/4 p1, 0x1
@@ -261,7 +261,7 @@
     if-eqz v1, :cond_1
 
     .line 4
-    invoke-static {p1}, La5/g0;->n(Landroid/content/Intent;)Z
+    invoke-static {p1}, La5/g0;->l(Landroid/content/Intent;)Z
 
     move-result v0
 
@@ -270,7 +270,7 @@
     const-string v0, "_nd"
 
     .line 5
-    invoke-static {v0, p1}, La5/g0;->o(Ljava/lang/String;Landroid/content/Intent;)V
+    invoke-static {v0, p1}, La5/g0;->m(Ljava/lang/String;Landroid/content/Intent;)V
 
     return-void
 
@@ -402,7 +402,7 @@
 
     .line 20
     :cond_6
-    sget-object v2, Lcom/google/firebase/messaging/FirebaseMessagingService;->k:Ljava/util/ArrayDeque;
+    sget-object v2, Lcom/google/firebase/messaging/FirebaseMessagingService;->l:Ljava/util/ArrayDeque;
 
     invoke-interface {v2, v0}, Ljava/util/Collection;->contains(Ljava/lang/Object;)Z
 
@@ -617,7 +617,7 @@
 
     .line 35
     :cond_12
-    invoke-static {p1}, La5/g0;->n(Landroid/content/Intent;)Z
+    invoke-static {p1}, La5/g0;->l(Landroid/content/Intent;)Z
 
     move-result v0
 
@@ -626,7 +626,7 @@
     const-string v0, "_nr"
 
     .line 36
-    invoke-static {v0, p1}, La5/g0;->o(Ljava/lang/String;Landroid/content/Intent;)V
+    invoke-static {v0, p1}, La5/g0;->m(Ljava/lang/String;Landroid/content/Intent;)V
 
     .line 37
     :cond_13
@@ -666,7 +666,7 @@
     if-nez v2, :cond_17
 
     .line 42
-    invoke-static {p1}, La5/g0;->n(Landroid/content/Intent;)Z
+    invoke-static {p1}, La5/g0;->l(Landroid/content/Intent;)Z
 
     move-result v2
 
@@ -675,7 +675,7 @@
     const-string v2, "_nf"
 
     .line 43
-    invoke-static {v2, p1}, La5/g0;->o(Ljava/lang/String;Landroid/content/Intent;)V
+    invoke-static {v2, p1}, La5/g0;->m(Ljava/lang/String;Landroid/content/Intent;)V
 
     .line 44
     :cond_15

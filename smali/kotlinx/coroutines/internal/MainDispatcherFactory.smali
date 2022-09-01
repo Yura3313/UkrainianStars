@@ -4,7 +4,7 @@
 
 
 # virtual methods
-.method public abstract createDispatcher(Ljava/util/List;)Lze/i1;
+.method public abstract createDispatcher(Ljava/util/List;)Lze/j1;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
@@ -12,7 +12,7 @@
             "+",
             "Lkotlinx/coroutines/internal/MainDispatcherFactory;",
             ">;)",
-            "Lze/i1;"
+            "Lze/j1;"
         }
     .end annotation
 .end method

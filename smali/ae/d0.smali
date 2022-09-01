@@ -1,5 +1,5 @@
 .class public final Lae/d0;
-.super Lse/h;
+.super Lse/i;
 .source "NetworkUtil.kt"
 
 # interfaces
@@ -9,17 +9,17 @@
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/l<",
-        "Ljava/lang/Exception;",
-        "Lie/h;",
+        "Ljava/io/InputStream;",
+        "Landroid/graphics/Bitmap;",
         ">;"
     }
 .end annotation
 
 
 # static fields
-.field public static final f:Lae/d0;
+.field public static final g:Lae/d0;
 
 
 # direct methods
@@ -30,7 +30,7 @@
 
     invoke-direct {v0}, Lae/d0;-><init>()V
 
-    sput-object v0, Lae/d0;->f:Lae/d0;
+    sput-object v0, Lae/d0;->g:Lae/d0;
 
     return-void
 .end method
@@ -40,7 +40,7 @@
 
     const/4 v0, 0x1
 
-    invoke-direct {p0, v0}, Lse/h;-><init>(I)V
+    invoke-direct {p0, v0}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -48,27 +48,42 @@
 
 # virtual methods
 .method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 1
+    .locals 2
 
     .line 1
-    check-cast p1, Ljava/lang/Exception;
+    check-cast p1, Ljava/io/InputStream;
 
     const-string v0, "it"
 
     .line 2
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 3
-    sget-object v0, Lae/b0;->e:Lae/b0;
+    new-instance v0, Landroid/graphics/BitmapFactory$Options;
 
-    sget-object v0, Lae/b0;->a:Ljava/lang/String;
+    invoke-direct {v0}, Landroid/graphics/BitmapFactory$Options;-><init>()V
 
-    sget-object v0, Lae/b0;->a:Ljava/lang/String;
-
-    invoke-virtual {p1}, Ljava/lang/Throwable;->getLocalizedMessage()Ljava/lang/String;
+    const/16 v1, 0x140
 
     .line 4
-    sget-object p1, Lie/h;->a:Lie/h;
+    iput v1, v0, Landroid/graphics/BitmapFactory$Options;->inDensity:I
+
+    const/4 v1, 0x0
+
+    .line 5
+    iput-boolean v1, v0, Landroid/graphics/BitmapFactory$Options;->inScaled:Z
+
+    .line 6
+    sget-object v1, Landroid/graphics/Bitmap$Config;->ARGB_4444:Landroid/graphics/Bitmap$Config;
+
+    iput-object v1, v0, Landroid/graphics/BitmapFactory$Options;->inPreferredConfig:Landroid/graphics/Bitmap$Config;
+
+    const/4 v1, 0x0
+
+    .line 7
+    invoke-static {p1, v1, v0}, Landroid/graphics/BitmapFactory;->decodeStream(Ljava/io/InputStream;Landroid/graphics/Rect;Landroid/graphics/BitmapFactory$Options;)Landroid/graphics/Bitmap;
+
+    move-result-object p1
 
     return-object p1
 .end method

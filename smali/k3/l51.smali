@@ -1,148 +1,128 @@
 .class public final Lk3/l51;
-.super Ljava/lang/Object;
+.super Lk3/p51;
 .source "com.google.android.gms:play-services-ads-lite@@19.3.0"
 
 
-# static fields
-.field public static j:Lk3/l51;
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lk3/p51<",
+        "Lcom/google/android/gms/internal/ads/zzwu;",
+        ">;"
+    }
+.end annotation
 
 
 # instance fields
-.field public final a:Lk3/ad;
+.field public final synthetic b:Landroid/content/Context;
 
-.field public final b:Lk3/e51;
+.field public final synthetic c:Lcom/google/android/gms/internal/ads/zzvj;
 
-.field public final c:Ljava/lang/String;
+.field public final synthetic d:Ljava/lang/String;
 
-.field public final d:Lk3/m;
+.field public final synthetic e:Lcom/google/android/gms/internal/ads/zzamu;
 
-.field public final e:Lk3/o;
-
-.field public final f:Lk3/n;
-
-.field public final g:Lcom/google/android/gms/internal/ads/zzbbg;
-
-.field public final h:Ljava/util/Random;
-
-.field public final i:Ljava/util/WeakHashMap;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/WeakHashMap<",
-            "Lk3/sp;",
-            "Ljava/lang/String;",
-            ">;"
-        }
-    .end annotation
-.end field
+.field public final synthetic f:Lk3/h51;
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 1
+.method public constructor <init>(Lk3/h51;Landroid/content/Context;Lcom/google/android/gms/internal/ads/zzvj;Ljava/lang/String;Lcom/google/android/gms/internal/ads/zzamu;)V
+    .locals 0
 
-    new-instance v0, Lk3/l51;
+    iput-object p1, p0, Lk3/l51;->f:Lk3/h51;
 
-    invoke-direct {v0}, Lk3/l51;-><init>()V
+    iput-object p2, p0, Lk3/l51;->b:Landroid/content/Context;
 
-    sput-object v0, Lk3/l51;->j:Lk3/l51;
+    iput-object p3, p0, Lk3/l51;->c:Lcom/google/android/gms/internal/ads/zzvj;
+
+    iput-object p4, p0, Lk3/l51;->d:Ljava/lang/String;
+
+    iput-object p5, p0, Lk3/l51;->e:Lcom/google/android/gms/internal/ads/zzamu;
+
+    invoke-direct {p0}, Lk3/p51;-><init>()V
 
     return-void
 .end method
 
-.method public constructor <init>()V
-    .locals 10
+
+# virtual methods
+.method public final a(Lcom/google/android/gms/internal/ads/zzxh;)Ljava/lang/Object;
+    .locals 4
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Landroid/os/RemoteException;
+        }
+    .end annotation
 
     .line 1
-    new-instance v0, Lk3/ad;
-
-    invoke-direct {v0}, Lk3/ad;-><init>()V
-
-    new-instance v1, Lk3/e51;
-
-    new-instance v2, Lk3/w41;
-
-    invoke-direct {v2}, Lk3/w41;-><init>()V
-
-    new-instance v3, Lk3/x41;
-
-    invoke-direct {v3}, Lk3/x41;-><init>()V
-
-    new-instance v4, Lk3/y1;
-
-    invoke-direct {v4}, Lk3/y1;-><init>()V
-
-    new-instance v5, Lk3/o7;
-
-    invoke-direct {v5}, Lk3/o7;-><init>()V
-
-    invoke-direct {v1, v2, v3, v4, v5}, Lk3/e51;-><init>(Lk3/w41;Lk3/x41;Lk3/y1;Lk3/o7;)V
-
-    new-instance v2, Lk3/m;
-
-    invoke-direct {v2}, Lk3/m;-><init>()V
-
-    new-instance v3, Lk3/o;
-
-    invoke-direct {v3}, Lk3/o;-><init>()V
-
-    new-instance v4, Lk3/n;
-
-    invoke-direct {v4}, Lk3/n;-><init>()V
+    iget-object v0, p0, Lk3/l51;->b:Landroid/content/Context;
 
     .line 2
-    invoke-static {}, Lk3/ad;->m()Ljava/lang/String;
+    new-instance v1, Lcom/google/android/gms/dynamic/ObjectWrapper;
 
-    move-result-object v5
+    invoke-direct {v1, v0}, Lcom/google/android/gms/dynamic/ObjectWrapper;-><init>(Ljava/lang/Object;)V
 
     .line 3
-    new-instance v6, Lcom/google/android/gms/internal/ads/zzbbg;
+    iget-object v0, p0, Lk3/l51;->c:Lcom/google/android/gms/internal/ads/zzvj;
 
-    const/4 v7, 0x0
+    iget-object v2, p0, Lk3/l51;->d:Ljava/lang/String;
 
-    const v8, 0xc0a5df0
-
-    const/4 v9, 0x1
-
-    invoke-direct {v6, v7, v8, v9}, Lcom/google/android/gms/internal/ads/zzbbg;-><init>(IIZ)V
+    iget-object v3, p0, Lk3/l51;->e:Lcom/google/android/gms/internal/ads/zzamu;
 
     .line 4
-    new-instance v7, Ljava/util/Random;
+    invoke-interface {p1, v1, v0, v2, v3}, Lcom/google/android/gms/internal/ads/zzxh;->C5(Lcom/google/android/gms/dynamic/IObjectWrapper;Lcom/google/android/gms/internal/ads/zzvj;Ljava/lang/String;Lcom/google/android/gms/internal/ads/zzamu;)Lcom/google/android/gms/internal/ads/zzwu;
 
-    invoke-direct {v7}, Ljava/util/Random;-><init>()V
+    move-result-object p1
 
-    new-instance v8, Ljava/util/WeakHashMap;
+    return-object p1
+.end method
 
-    invoke-direct {v8}, Ljava/util/WeakHashMap;-><init>()V
+.method public final synthetic c()Ljava/lang/Object;
+    .locals 2
 
-    .line 5
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    .line 1
+    iget-object v0, p0, Lk3/l51;->b:Landroid/content/Context;
 
-    .line 6
-    iput-object v0, p0, Lk3/l51;->a:Lk3/ad;
+    const-string v1, "interstitial"
 
-    .line 7
-    iput-object v1, p0, Lk3/l51;->b:Lk3/e51;
+    invoke-static {v0, v1}, Lk3/h51;->a(Landroid/content/Context;Ljava/lang/String;)V
 
-    .line 8
-    iput-object v2, p0, Lk3/l51;->d:Lk3/m;
+    .line 2
+    new-instance v0, Lcom/google/android/gms/internal/ads/zzzk;
 
-    .line 9
-    iput-object v3, p0, Lk3/l51;->e:Lk3/o;
+    invoke-direct {v0}, Lcom/google/android/gms/internal/ads/zzzk;-><init>()V
 
-    .line 10
-    iput-object v4, p0, Lk3/l51;->f:Lk3/n;
+    return-object v0
+.end method
 
-    .line 11
-    iput-object v5, p0, Lk3/l51;->c:Ljava/lang/String;
+.method public final synthetic d()Ljava/lang/Object;
+    .locals 7
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Landroid/os/RemoteException;
+        }
+    .end annotation
 
-    .line 12
-    iput-object v6, p0, Lk3/l51;->g:Lcom/google/android/gms/internal/ads/zzbbg;
+    .line 1
+    iget-object v0, p0, Lk3/l51;->f:Lk3/h51;
 
-    .line 13
-    iput-object v7, p0, Lk3/l51;->h:Ljava/util/Random;
+    .line 2
+    iget-object v1, v0, Lk3/h51;->a:Lk3/z41;
 
-    .line 14
-    iput-object v8, p0, Lk3/l51;->i:Ljava/util/WeakHashMap;
+    .line 3
+    iget-object v2, p0, Lk3/l51;->b:Landroid/content/Context;
 
-    return-void
+    iget-object v3, p0, Lk3/l51;->c:Lcom/google/android/gms/internal/ads/zzvj;
+
+    iget-object v4, p0, Lk3/l51;->d:Ljava/lang/String;
+
+    iget-object v5, p0, Lk3/l51;->e:Lcom/google/android/gms/internal/ads/zzamu;
+
+    const/4 v6, 0x2
+
+    invoke-virtual/range {v1 .. v6}, Lk3/z41;->c(Landroid/content/Context;Lcom/google/android/gms/internal/ads/zzvj;Ljava/lang/String;Lcom/google/android/gms/internal/ads/zzamu;I)Lcom/google/android/gms/internal/ads/zzwu;
+
+    move-result-object v0
+
+    return-object v0
 .end method

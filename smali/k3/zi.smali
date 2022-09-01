@@ -44,7 +44,7 @@
 
     .line 2
     :cond_1
-    invoke-static {}, Lk3/j6;->m()Z
+    invoke-static {}, Lcom/google/android/gms/ads/a;->k()Z
 
     .line 3
     new-instance p1, Lk3/yi;
@@ -83,7 +83,7 @@
 
     .line 6
     :try_start_0
-    invoke-static {}, Lk3/j6;->m()Z
+    invoke-static {}, Lcom/google/android/gms/ads/a;->k()Z
 
     .line 7
     invoke-virtual {p1}, Lk3/aj;->t0()V

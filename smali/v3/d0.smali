@@ -1,100 +1,63 @@
-.class public final synthetic Lv3/d0;
+.class public final Lv3/d0;
 .super Ljava/lang/Object;
+
+# interfaces
+.implements Lv3/w2;
 
 
 # static fields
-.field public static final synthetic a:[I
+.field public static final a:Lv3/d0;
 
 
 # direct methods
 .method public static constructor <clinit>()V
-    .locals 5
+    .locals 1
 
-    .line 1
-    sget-object v0, Lv3/t2$e;->a:[I
+    new-instance v0, Lv3/d0;
 
-    invoke-virtual {v0}, [I->clone()Ljava/lang/Object;
+    invoke-direct {v0}, Lv3/d0;-><init>()V
 
-    move-result-object v0
+    sput-object v0, Lv3/d0;->a:Lv3/d0;
 
-    check-cast v0, [I
+    return-void
+.end method
 
-    .line 2
-    array-length v0, v0
+.method public constructor <init>()V
+    .locals 0
 
-    new-array v0, v0, [I
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    sput-object v0, Lv3/d0;->a:[I
+    return-void
+.end method
+
+
+# virtual methods
+.method public final v0(I)Z
+    .locals 3
+
+    const/4 v0, 0x2
 
     const/4 v1, 0x1
 
-    const/4 v2, 0x3
+    const/4 v2, 0x0
 
-    :try_start_0
-    aput v1, v0, v2
-    :try_end_0
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
+    if-eq p1, v1, :cond_0
 
-    :catch_0
-    const/4 v0, 0x2
+    if-eq p1, v0, :cond_1
 
-    const/4 v3, 0x4
+    const/4 v0, 0x0
 
-    :try_start_1
-    sget-object v4, Lv3/d0;->a:[I
+    goto :goto_0
 
-    aput v0, v4, v3
-    :try_end_1
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_1
+    :cond_0
+    const/4 v0, 0x1
 
-    :catch_1
-    :try_start_2
-    sget-object v4, Lv3/d0;->a:[I
+    :cond_1
+    :goto_0
+    if-eqz v0, :cond_2
 
-    aput v2, v4, v0
-    :try_end_2
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_2 .. :try_end_2} :catch_2
+    return v1
 
-    :catch_2
-    const/4 v0, 0x5
-
-    :try_start_3
-    sget-object v2, Lv3/d0;->a:[I
-
-    aput v3, v2, v0
-    :try_end_3
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_3 .. :try_end_3} :catch_3
-
-    :catch_3
-    const/4 v2, 0x6
-
-    :try_start_4
-    sget-object v3, Lv3/d0;->a:[I
-
-    aput v0, v3, v2
-    :try_end_4
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_4 .. :try_end_4} :catch_4
-
-    :catch_4
-    :try_start_5
-    sget-object v0, Lv3/d0;->a:[I
-
-    const/4 v3, 0x0
-
-    aput v2, v0, v3
-    :try_end_5
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_5 .. :try_end_5} :catch_5
-
-    :catch_5
-    :try_start_6
-    sget-object v0, Lv3/d0;->a:[I
-
-    const/4 v2, 0x7
-
-    aput v2, v0, v1
-    :try_end_6
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_6 .. :try_end_6} :catch_6
-
-    :catch_6
-    return-void
+    :cond_2
+    return v2
 .end method

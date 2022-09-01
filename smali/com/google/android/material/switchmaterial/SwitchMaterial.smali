@@ -4,19 +4,19 @@
 
 
 # static fields
-.field public static final a0:I
+.field public static final b0:I
 
-.field public static final b0:[[I
+.field public static final c0:[[I
 
 
 # instance fields
-.field public final T:Ll4/a;
-
-.field public U:Landroid/content/res/ColorStateList;
+.field public final U:Ll4/a;
 
 .field public V:Landroid/content/res/ColorStateList;
 
-.field public W:Z
+.field public W:Landroid/content/res/ColorStateList;
+
+.field public a0:Z
 
 
 # direct methods
@@ -26,7 +26,7 @@
     .line 1
     sget v0, Lcom/google/android/material/R$style;->Widget_MaterialComponents_CompoundButton_Switch:I
 
-    sput v0, Lcom/google/android/material/switchmaterial/SwitchMaterial;->a0:I
+    sput v0, Lcom/google/android/material/switchmaterial/SwitchMaterial;->b0:I
 
     const/4 v0, 0x4
 
@@ -65,7 +65,7 @@
 
     aput-object v1, v0, v2
 
-    sput-object v0, Lcom/google/android/material/switchmaterial/SwitchMaterial;->b0:[[I
+    sput-object v0, Lcom/google/android/material/switchmaterial/SwitchMaterial;->c0:[[I
 
     return-void
 
@@ -109,7 +109,7 @@
     .locals 6
 
     .line 2
-    sget v4, Lcom/google/android/material/switchmaterial/SwitchMaterial;->a0:I
+    sget v4, Lcom/google/android/material/switchmaterial/SwitchMaterial;->b0:I
 
     invoke-static {p1, p2, p3, v4}, Lu4/a;->a(Landroid/content/Context;Landroid/util/AttributeSet;II)Landroid/content/Context;
 
@@ -127,7 +127,7 @@
 
     invoke-direct {p1, v0}, Ll4/a;-><init>(Landroid/content/Context;)V
 
-    iput-object p1, p0, Lcom/google/android/material/switchmaterial/SwitchMaterial;->T:Ll4/a;
+    iput-object p1, p0, Lcom/google/android/material/switchmaterial/SwitchMaterial;->U:Ll4/a;
 
     .line 5
     sget-object v2, Lcom/google/android/material/R$styleable;->SwitchMaterial:[I
@@ -153,7 +153,7 @@
 
     move-result p1
 
-    iput-boolean p1, p0, Lcom/google/android/material/switchmaterial/SwitchMaterial;->W:Z
+    iput-boolean p1, p0, Lcom/google/android/material/switchmaterial/SwitchMaterial;->a0:Z
 
     .line 9
     invoke-virtual {p2}, Landroid/content/res/TypedArray;->recycle()V
@@ -165,21 +165,21 @@
     .locals 7
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/switchmaterial/SwitchMaterial;->U:Landroid/content/res/ColorStateList;
+    iget-object v0, p0, Lcom/google/android/material/switchmaterial/SwitchMaterial;->V:Landroid/content/res/ColorStateList;
 
     if-nez v0, :cond_1
 
     .line 2
     sget v0, Lcom/google/android/material/R$attr;->colorSurface:I
 
-    invoke-static {p0, v0}, Lk3/q5;->f(Landroid/view/View;I)I
+    invoke-static {p0, v0}, Lk3/a00;->b(Landroid/view/View;I)I
 
     move-result v0
 
     .line 3
     sget v1, Lcom/google/android/material/R$attr;->colorControlActivated:I
 
-    invoke-static {p0, v1}, Lk3/q5;->f(Landroid/view/View;I)I
+    invoke-static {p0, v1}, Lk3/a00;->b(Landroid/view/View;I)I
 
     move-result v1
 
@@ -195,7 +195,7 @@
     move-result v2
 
     .line 5
-    iget-object v3, p0, Lcom/google/android/material/switchmaterial/SwitchMaterial;->T:Ll4/a;
+    iget-object v3, p0, Lcom/google/android/material/switchmaterial/SwitchMaterial;->U:Ll4/a;
 
     .line 6
     iget-boolean v3, v3, Ll4/a;->a:Z
@@ -211,7 +211,7 @@
 
     .line 8
     :cond_0
-    iget-object v3, p0, Lcom/google/android/material/switchmaterial/SwitchMaterial;->T:Ll4/a;
+    iget-object v3, p0, Lcom/google/android/material/switchmaterial/SwitchMaterial;->U:Ll4/a;
 
     .line 9
     invoke-virtual {v3, v0, v2}, Ll4/a;->a(IF)I
@@ -219,7 +219,7 @@
     move-result v2
 
     .line 10
-    sget-object v3, Lcom/google/android/material/switchmaterial/SwitchMaterial;->b0:[[I
+    sget-object v3, Lcom/google/android/material/switchmaterial/SwitchMaterial;->c0:[[I
 
     const/4 v4, 0x4
 
@@ -230,7 +230,7 @@
     const/high16 v6, 0x3f800000    # 1.0f
 
     .line 11
-    invoke-static {v0, v1, v6}, Lk3/q5;->g(IIF)I
+    invoke-static {v0, v1, v6}, Lk3/a00;->c(IIF)I
 
     move-result v6
 
@@ -245,7 +245,7 @@
     const v6, 0x3ec28f5c
 
     .line 12
-    invoke-static {v0, v1, v6}, Lk3/q5;->g(IIF)I
+    invoke-static {v0, v1, v6}, Lk3/a00;->c(IIF)I
 
     move-result v0
 
@@ -260,11 +260,11 @@
 
     invoke-direct {v0, v3, v4}, Landroid/content/res/ColorStateList;-><init>([[I[I)V
 
-    iput-object v0, p0, Lcom/google/android/material/switchmaterial/SwitchMaterial;->U:Landroid/content/res/ColorStateList;
+    iput-object v0, p0, Lcom/google/android/material/switchmaterial/SwitchMaterial;->V:Landroid/content/res/ColorStateList;
 
     .line 14
     :cond_1
-    iget-object v0, p0, Lcom/google/android/material/switchmaterial/SwitchMaterial;->U:Landroid/content/res/ColorStateList;
+    iget-object v0, p0, Lcom/google/android/material/switchmaterial/SwitchMaterial;->V:Landroid/content/res/ColorStateList;
 
     return-object v0
 .end method
@@ -273,12 +273,12 @@
     .locals 7
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/switchmaterial/SwitchMaterial;->V:Landroid/content/res/ColorStateList;
+    iget-object v0, p0, Lcom/google/android/material/switchmaterial/SwitchMaterial;->W:Landroid/content/res/ColorStateList;
 
     if-nez v0, :cond_0
 
     .line 2
-    sget-object v0, Lcom/google/android/material/switchmaterial/SwitchMaterial;->b0:[[I
+    sget-object v0, Lcom/google/android/material/switchmaterial/SwitchMaterial;->c0:[[I
 
     const/4 v1, 0x4
 
@@ -287,21 +287,21 @@
     .line 3
     sget v2, Lcom/google/android/material/R$attr;->colorSurface:I
 
-    invoke-static {p0, v2}, Lk3/q5;->f(Landroid/view/View;I)I
+    invoke-static {p0, v2}, Lk3/a00;->b(Landroid/view/View;I)I
 
     move-result v2
 
     .line 4
     sget v3, Lcom/google/android/material/R$attr;->colorControlActivated:I
 
-    invoke-static {p0, v3}, Lk3/q5;->f(Landroid/view/View;I)I
+    invoke-static {p0, v3}, Lk3/a00;->b(Landroid/view/View;I)I
 
     move-result v3
 
     .line 5
     sget v4, Lcom/google/android/material/R$attr;->colorOnSurface:I
 
-    invoke-static {p0, v4}, Lk3/q5;->f(Landroid/view/View;I)I
+    invoke-static {p0, v4}, Lk3/a00;->b(Landroid/view/View;I)I
 
     move-result v4
 
@@ -310,7 +310,7 @@
     const v6, 0x3f0a3d71
 
     .line 6
-    invoke-static {v2, v3, v6}, Lk3/q5;->g(IIF)I
+    invoke-static {v2, v3, v6}, Lk3/a00;->c(IIF)I
 
     move-result v6
 
@@ -321,7 +321,7 @@
     const v6, 0x3ea3d70a
 
     .line 7
-    invoke-static {v2, v4, v6}, Lk3/q5;->g(IIF)I
+    invoke-static {v2, v4, v6}, Lk3/a00;->c(IIF)I
 
     move-result v6
 
@@ -332,7 +332,7 @@
     const v6, 0x3df5c28f
 
     .line 8
-    invoke-static {v2, v3, v6}, Lk3/q5;->g(IIF)I
+    invoke-static {v2, v3, v6}, Lk3/a00;->c(IIF)I
 
     move-result v3
 
@@ -341,7 +341,7 @@
     const/4 v3, 0x3
 
     .line 9
-    invoke-static {v2, v4, v6}, Lk3/q5;->g(IIF)I
+    invoke-static {v2, v4, v6}, Lk3/a00;->c(IIF)I
 
     move-result v2
 
@@ -352,11 +352,11 @@
 
     invoke-direct {v2, v0, v1}, Landroid/content/res/ColorStateList;-><init>([[I[I)V
 
-    iput-object v2, p0, Lcom/google/android/material/switchmaterial/SwitchMaterial;->V:Landroid/content/res/ColorStateList;
+    iput-object v2, p0, Lcom/google/android/material/switchmaterial/SwitchMaterial;->W:Landroid/content/res/ColorStateList;
 
     .line 11
     :cond_0
-    iget-object v0, p0, Lcom/google/android/material/switchmaterial/SwitchMaterial;->V:Landroid/content/res/ColorStateList;
+    iget-object v0, p0, Lcom/google/android/material/switchmaterial/SwitchMaterial;->W:Landroid/content/res/ColorStateList;
 
     return-object v0
 .end method
@@ -370,7 +370,7 @@
     invoke-super {p0}, Landroid/widget/TextView;->onAttachedToWindow()V
 
     .line 2
-    iget-boolean v0, p0, Lcom/google/android/material/switchmaterial/SwitchMaterial;->W:Z
+    iget-boolean v0, p0, Lcom/google/android/material/switchmaterial/SwitchMaterial;->a0:Z
 
     if-eqz v0, :cond_0
 
@@ -389,7 +389,7 @@
 
     .line 4
     :cond_0
-    iget-boolean v0, p0, Lcom/google/android/material/switchmaterial/SwitchMaterial;->W:Z
+    iget-boolean v0, p0, Lcom/google/android/material/switchmaterial/SwitchMaterial;->a0:Z
 
     if-eqz v0, :cond_1
 
@@ -414,7 +414,7 @@
     .locals 0
 
     .line 1
-    iput-boolean p1, p0, Lcom/google/android/material/switchmaterial/SwitchMaterial;->W:Z
+    iput-boolean p1, p0, Lcom/google/android/material/switchmaterial/SwitchMaterial;->a0:Z
 
     if-eqz p1, :cond_0
 

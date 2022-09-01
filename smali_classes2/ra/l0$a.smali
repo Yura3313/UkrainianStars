@@ -1,10 +1,9 @@
 .class public final Lra/l0$a;
 .super Landroidx/recyclerview/widget/RecyclerView$z;
-.source "UserMessageViewDataBinder.java"
+.source "UserRedactedMessageDataBinder.java"
 
 # interfaces
 .implements Landroid/view/View$OnCreateContextMenuListener;
-.implements Landroid/view/View$OnClickListener;
 
 
 # annotations
@@ -19,15 +18,13 @@
 
 
 # instance fields
-.field public final A:Landroid/widget/ImageView;
+.field public final A:Landroid/widget/TextView;
 
 .field public final B:Landroid/widget/FrameLayout;
 
 .field public final C:Landroid/view/View;
 
 .field public final synthetic D:Lra/l0;
-
-.field public final y:Landroid/widget/TextView;
 
 .field public final z:Landroid/widget/TextView;
 
@@ -51,7 +48,7 @@
 
     check-cast p1, Landroid/widget/TextView;
 
-    iput-object p1, p0, Lra/l0$a;->y:Landroid/widget/TextView;
+    iput-object p1, p0, Lra/l0$a;->z:Landroid/widget/TextView;
 
     .line 4
     sget p1, Lcom/helpshift/R$id;->user_date_text:I
@@ -62,7 +59,7 @@
 
     check-cast p1, Landroid/widget/TextView;
 
-    iput-object p1, p0, Lra/l0$a;->z:Landroid/widget/TextView;
+    iput-object p1, p0, Lra/l0$a;->A:Landroid/widget/TextView;
 
     .line 5
     sget p1, Lcom/helpshift/R$id;->user_message_container:I
@@ -76,17 +73,6 @@
     iput-object p1, p0, Lra/l0$a;->B:Landroid/widget/FrameLayout;
 
     .line 6
-    sget p1, Lcom/helpshift/R$id;->user_message_retry_button:I
-
-    invoke-virtual {p2, p1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
-
-    move-result-object p1
-
-    check-cast p1, Landroid/widget/ImageView;
-
-    iput-object p1, p0, Lra/l0$a;->A:Landroid/widget/ImageView;
-
-    .line 7
     sget p1, Lcom/helpshift/R$id;->user_text_message_layout:I
 
     invoke-virtual {p2, p1}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -100,29 +86,6 @@
 
 
 # virtual methods
-.method public final onClick(Landroid/view/View;)V
-    .locals 1
-
-    .line 1
-    iget-object p1, p0, Lra/l0$a;->D:Lra/l0;
-
-    iget-object p1, p1, Lra/u;->b:Lra/u$a;
-
-    if-eqz p1, :cond_0
-
-    .line 2
-    invoke-virtual {p0}, Landroidx/recyclerview/widget/RecyclerView$z;->e()I
-
-    move-result v0
-
-    check-cast p1, Lqa/p0;
-
-    invoke-virtual {p1, v0}, Lqa/p0;->s(I)V
-
-    :cond_0
-    return-void
-.end method
-
 .method public final onCreateContextMenu(Landroid/view/ContextMenu;Landroid/view/View;Landroid/view/ContextMenu$ContextMenuInfo;)V
     .locals 0
 

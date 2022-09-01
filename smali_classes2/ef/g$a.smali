@@ -65,9 +65,9 @@
 
     invoke-direct {v1, v0}, Lef/f;-><init>(Ljava/util/concurrent/CompletableFuture;)V
 
-    check-cast p1, Lef/u;
+    check-cast p1, Lef/t;
 
-    invoke-virtual {p1, v1}, Lef/u;->x(Lef/d;)V
+    invoke-virtual {p1, v1}, Lef/t;->x(Lef/d;)V
 
     return-object v0
 .end method

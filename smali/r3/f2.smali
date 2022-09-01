@@ -26,7 +26,7 @@
     const/4 v1, 0x1
 
     :try_start_0
-    sget-object v2, Lr3/m2;->o:Lr3/m2;
+    sget-object v2, Lr3/m2;->p:Lr3/m2;
 
     invoke-virtual {v2}, Ljava/lang/Enum;->ordinal()I
 
@@ -42,7 +42,7 @@
     :try_start_1
     sget-object v2, Lr3/f2;->b:[I
 
-    sget-object v3, Lr3/m2;->q:Lr3/m2;
+    sget-object v3, Lr3/m2;->r:Lr3/m2;
 
     invoke-virtual {v3}, Ljava/lang/Enum;->ordinal()I
 
@@ -58,7 +58,7 @@
     :try_start_2
     sget-object v3, Lr3/f2;->b:[I
 
-    sget-object v4, Lr3/m2;->n:Lr3/m2;
+    sget-object v4, Lr3/m2;->o:Lr3/m2;
 
     const/4 v4, 0x6
 

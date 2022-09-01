@@ -3,14 +3,14 @@
 .source "ConversationPredicates.java"
 
 # interfaces
-.implements Lcom/helpshift/util/d0;
+.implements Lcom/helpshift/util/c0;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "Lcom/helpshift/util/d0<",
+        "Lcom/helpshift/util/c0<",
         "Lq8/d;",
         ">;"
     }
@@ -49,7 +49,7 @@
     iget-object v0, v0, Ln8/c;->c:Li7/c;
 
     .line 4
-    iget-object v0, v0, Li7/c;->f:Ljava/lang/Long;
+    iget-object v0, v0, Li7/c;->g:Ljava/lang/Long;
 
     .line 5
     invoke-virtual {v0}, Ljava/lang/Long;->longValue()J
@@ -61,7 +61,7 @@
     move-result-object v0
 
     .line 6
-    invoke-static {v0}, Lcom/google/android/play/core/appupdate/g;->b(Ljava/lang/String;)Z
+    invoke-static {v0}, La5/b0;->d(Ljava/lang/String;)Z
 
     move-result v1
 
@@ -72,7 +72,7 @@
     if-nez v1, :cond_1
 
     .line 7
-    iget-object v1, p1, Lq8/d;->o:Lcom/helpshift/util/q;
+    iget-object v1, p1, Lq8/d;->p:Lcom/helpshift/util/q;
 
     .line 8
     invoke-static {v0}, Li8/b;->b(Ljava/lang/String;)J
@@ -85,12 +85,12 @@
     invoke-direct {v0, v4, v5}, Le9/b;-><init>(J)V
 
     .line 10
-    invoke-static {v1, v0}, Lmd/g;->e(Ljava/util/List;Lcom/helpshift/util/d0;)Ljava/util/List;
+    invoke-static {v1, v0}, Ltd/c;->b(Ljava/util/List;Lcom/helpshift/util/c0;)Ljava/util/List;
 
     move-result-object v0
 
     .line 11
-    iget-object v1, p1, Lq8/d;->o:Lcom/helpshift/util/q;
+    iget-object v1, p1, Lq8/d;->p:Lcom/helpshift/util/q;
 
     invoke-virtual {v1}, Ljava/util/AbstractCollection;->size()I
 

@@ -211,7 +211,7 @@
 
     move-result-object v0
 
-    sget-object v1, Ln5/x;->g:Ln5/x;
+    sget-object v1, Ln5/x;->h:Ln5/x;
 
     if-eq v0, v1, :cond_0
 

@@ -6,18 +6,18 @@
 # instance fields
 .field public a:Landroid/content/Context;
 
-.field public final b:Lb2/a0;
+.field public final b:Lb2/z;
 
 
 # direct methods
-.method public constructor <init>(Lb2/a0;)V
+.method public constructor <init>(Lb2/z;)V
     .locals 0
 
     .line 1
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lcom/google/android/gms/common/api/internal/zabk;->b:Lb2/a0;
+    iput-object p1, p0, Lcom/google/android/gms/common/api/internal/zabk;->b:Lb2/z;
 
     return-void
 .end method
@@ -92,9 +92,9 @@
     if-eqz p1, :cond_2
 
     .line 4
-    iget-object p1, p0, Lcom/google/android/gms/common/api/internal/zabk;->b:Lb2/a0;
+    iget-object p1, p0, Lcom/google/android/gms/common/api/internal/zabk;->b:Lb2/z;
 
-    invoke-virtual {p1}, Lb2/a0;->l()V
+    invoke-virtual {p1}, Lb2/z;->l()V
 
     .line 5
     monitor-enter p0

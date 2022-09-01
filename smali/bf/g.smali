@@ -1,87 +1,63 @@
-.class public final Lbf/g;
+.class public abstract Lbf/g;
 .super Ljava/lang/Object;
 .source "Tasks.kt"
 
 # interfaces
-.implements Lbf/i;
-.implements La5/u0;
+.implements Ljava/lang/Runnable;
 
 
-# static fields
-.field public static final f:Lbf/g;
+# instance fields
+.field public g:J
+
+.field public h:Lbf/h;
 
 
 # direct methods
-.method static synthetic constructor <clinit>()V
-    .locals 1
-
-    new-instance v0, Lbf/g;
-
-    invoke-direct {v0}, Lbf/g;-><init>()V
-
-    sput-object v0, Lbf/g;->f:Lbf/g;
-
-    return-void
-.end method
-
-.method public synthetic constructor <init>()V
-    .locals 0
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    return-void
-.end method
-
-.method public static final b(Ljava/lang/Object;)Lze/o;
-    .locals 2
-
-    .line 1
-    new-instance v0, Lze/p;
-
-    const/4 v1, 0x0
-
-    invoke-direct {v0, v1}, Lze/p;-><init>(Lze/b1;)V
+.method public constructor <init>()V
+    .locals 3
 
     .line 2
-    invoke-virtual {v0, p0}, Lze/e1;->G(Ljava/lang/Object;)Z
+    sget-object v0, La5/c0;->g:La5/c0;
 
-    return-object v0
+    .line 3
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    const-wide/16 v1, 0x0
+
+    iput-wide v1, p0, Lbf/g;->g:J
+
+    iput-object v0, p0, Lbf/g;->h:Lbf/h;
+
+    return-void
 .end method
 
-.method public static c()Lze/o;
-    .locals 2
+.method public constructor <init>(JLbf/h;)V
+    .locals 1
 
-    const/4 v0, 0x0
+    const-string v0, "taskContext"
 
-    new-instance v1, Lze/p;
+    invoke-static {p3, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-direct {v1, v0}, Lze/p;-><init>(Lze/b1;)V
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    return-object v1
+    iput-wide p1, p0, Lbf/g;->g:J
+
+    iput-object p3, p0, Lbf/g;->h:Lbf/h;
+
+    return-void
 .end method
 
 
 # virtual methods
-.method public a()I
+.method public final b()I
     .locals 1
 
-    const/4 v0, 0x1
+    iget-object v0, p0, Lbf/g;->h:Lbf/h;
+
+    invoke-interface {v0}, Lbf/h;->a()I
+
+    move-result v0
 
     return v0
-.end method
-
-.method public e()Ljava/lang/Object;
-    .locals 1
-
-    new-instance v0, Lcom/google/android/play/core/assetpacks/s0;
-
-    invoke-direct {v0}, Lcom/google/android/play/core/assetpacks/s0;-><init>()V
-
-    return-object v0
-.end method
-
-.method public g()V
-    .locals 0
-
-    return-void
 .end method

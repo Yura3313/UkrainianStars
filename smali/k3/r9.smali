@@ -7,11 +7,11 @@
 
 
 # instance fields
-.field public final f:Lk3/p9;
+.field public final g:Lk3/p9;
 
-.field public final g:Lk3/y9;
+.field public final h:Lk3/y9;
 
-.field public final h:Ljava/lang/String;
+.field public final i:Ljava/lang/String;
 
 
 # direct methods
@@ -20,11 +20,11 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lk3/r9;->f:Lk3/p9;
+    iput-object p1, p0, Lk3/r9;->g:Lk3/p9;
 
-    iput-object p2, p0, Lk3/r9;->g:Lk3/y9;
+    iput-object p2, p0, Lk3/r9;->h:Lk3/y9;
 
-    iput-object p3, p0, Lk3/r9;->h:Ljava/lang/String;
+    iput-object p3, p0, Lk3/r9;->i:Ljava/lang/String;
 
     return-void
 .end method
@@ -34,11 +34,11 @@
 .method public final run()V
     .locals 4
 
-    iget-object v0, p0, Lk3/r9;->f:Lk3/p9;
+    iget-object v0, p0, Lk3/r9;->g:Lk3/p9;
 
-    iget-object v1, p0, Lk3/r9;->g:Lk3/y9;
+    iget-object v1, p0, Lk3/r9;->h:Lk3/y9;
 
-    iget-object v2, p0, Lk3/r9;->h:Ljava/lang/String;
+    iget-object v2, p0, Lk3/r9;->i:Ljava/lang/String;
 
     .line 1
     iget-object v3, v0, Lk3/p9;->j:Ljava/util/concurrent/atomic/AtomicReference;

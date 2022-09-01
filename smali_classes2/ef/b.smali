@@ -32,11 +32,11 @@
     .end annotation
 .end method
 
-.method public abstract execute()Lef/c0;
+.method public abstract execute()Lef/b0;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lef/c0<",
+            "Lef/b0<",
             "TT;>;"
         }
     .end annotation

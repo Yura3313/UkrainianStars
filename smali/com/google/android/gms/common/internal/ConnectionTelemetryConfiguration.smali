@@ -19,24 +19,24 @@
 
 
 # instance fields
-.field public final f:Lcom/google/android/gms/common/internal/RootTelemetryConfiguration;
-
-.field public final g:Z
+.field public final g:Lcom/google/android/gms/common/internal/RootTelemetryConfiguration;
 
 .field public final h:Z
 
-.field public final i:[I
+.field public final i:Z
 
-.field public final j:I
+.field public final j:[I
+
+.field public final k:I
 
 
 # direct methods
 .method public static constructor <clinit>()V
     .locals 1
 
-    new-instance v0, Ld2/c0;
+    new-instance v0, Ld2/d0;
 
-    invoke-direct {v0}, Ld2/c0;-><init>()V
+    invoke-direct {v0}, Ld2/d0;-><init>()V
 
     sput-object v0, Lcom/google/android/gms/common/internal/ConnectionTelemetryConfiguration;->CREATOR:Landroid/os/Parcelable$Creator;
 
@@ -54,19 +54,19 @@
     invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lcom/google/android/gms/common/internal/ConnectionTelemetryConfiguration;->f:Lcom/google/android/gms/common/internal/RootTelemetryConfiguration;
+    iput-object p1, p0, Lcom/google/android/gms/common/internal/ConnectionTelemetryConfiguration;->g:Lcom/google/android/gms/common/internal/RootTelemetryConfiguration;
 
     .line 3
-    iput-boolean p2, p0, Lcom/google/android/gms/common/internal/ConnectionTelemetryConfiguration;->g:Z
+    iput-boolean p2, p0, Lcom/google/android/gms/common/internal/ConnectionTelemetryConfiguration;->h:Z
 
     .line 4
-    iput-boolean p3, p0, Lcom/google/android/gms/common/internal/ConnectionTelemetryConfiguration;->h:Z
+    iput-boolean p3, p0, Lcom/google/android/gms/common/internal/ConnectionTelemetryConfiguration;->i:Z
 
     .line 5
-    iput-object p4, p0, Lcom/google/android/gms/common/internal/ConnectionTelemetryConfiguration;->i:[I
+    iput-object p4, p0, Lcom/google/android/gms/common/internal/ConnectionTelemetryConfiguration;->j:[I
 
     .line 6
-    iput p5, p0, Lcom/google/android/gms/common/internal/ConnectionTelemetryConfiguration;->j:I
+    iput p5, p0, Lcom/google/android/gms/common/internal/ConnectionTelemetryConfiguration;->k:I
 
     return-void
 .end method
@@ -86,7 +86,7 @@
     move-result v0
 
     .line 2
-    iget-object v1, p0, Lcom/google/android/gms/common/internal/ConnectionTelemetryConfiguration;->f:Lcom/google/android/gms/common/internal/RootTelemetryConfiguration;
+    iget-object v1, p0, Lcom/google/android/gms/common/internal/ConnectionTelemetryConfiguration;->g:Lcom/google/android/gms/common/internal/RootTelemetryConfiguration;
 
     const/4 v2, 0x1
 
@@ -96,7 +96,7 @@
     invoke-static {p1, v2, v1, p2, v3}, Le2/b;->l(Landroid/os/Parcel;ILandroid/os/Parcelable;IZ)V
 
     .line 4
-    iget-boolean p2, p0, Lcom/google/android/gms/common/internal/ConnectionTelemetryConfiguration;->g:Z
+    iget-boolean p2, p0, Lcom/google/android/gms/common/internal/ConnectionTelemetryConfiguration;->h:Z
 
     const/4 v1, 0x2
 
@@ -104,7 +104,7 @@
     invoke-static {p1, v1, p2}, Le2/b;->c(Landroid/os/Parcel;IZ)V
 
     .line 6
-    iget-boolean p2, p0, Lcom/google/android/gms/common/internal/ConnectionTelemetryConfiguration;->h:Z
+    iget-boolean p2, p0, Lcom/google/android/gms/common/internal/ConnectionTelemetryConfiguration;->i:Z
 
     const/4 v1, 0x3
 
@@ -112,13 +112,13 @@
     invoke-static {p1, v1, p2}, Le2/b;->c(Landroid/os/Parcel;IZ)V
 
     .line 8
-    iget-object p2, p0, Lcom/google/android/gms/common/internal/ConnectionTelemetryConfiguration;->i:[I
+    iget-object p2, p0, Lcom/google/android/gms/common/internal/ConnectionTelemetryConfiguration;->j:[I
 
     .line 9
     invoke-static {p1, p2}, Le2/b;->h(Landroid/os/Parcel;[I)V
 
     .line 10
-    iget p2, p0, Lcom/google/android/gms/common/internal/ConnectionTelemetryConfiguration;->j:I
+    iget p2, p0, Lcom/google/android/gms/common/internal/ConnectionTelemetryConfiguration;->k:I
 
     const/4 v1, 0x5
 

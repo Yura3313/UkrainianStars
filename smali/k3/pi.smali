@@ -46,7 +46,7 @@
     .locals 2
 
     .line 1
-    iget-boolean v0, p0, Lcom/google/android/gms/internal/ads/zzvj;->i:Z
+    iget-boolean v0, p0, Lcom/google/android/gms/internal/ads/zzvj;->j:Z
 
     const/4 v1, 0x0
 
@@ -63,7 +63,7 @@
 
     .line 3
     :cond_0
-    iget-boolean v0, p0, Lcom/google/android/gms/internal/ads/zzvj;->n:Z
+    iget-boolean v0, p0, Lcom/google/android/gms/internal/ads/zzvj;->o:Z
 
     if-eqz v0, :cond_1
 
@@ -78,7 +78,7 @@
 
     .line 5
     :cond_1
-    iget-boolean v0, p0, Lcom/google/android/gms/internal/ads/zzvj;->m:Z
+    iget-boolean v0, p0, Lcom/google/android/gms/internal/ads/zzvj;->n:Z
 
     if-eqz v0, :cond_2
 
@@ -91,9 +91,9 @@
 
     .line 7
     :cond_2
-    iget v0, p0, Lcom/google/android/gms/internal/ads/zzvj;->k:I
+    iget v0, p0, Lcom/google/android/gms/internal/ads/zzvj;->l:I
 
-    iget p0, p0, Lcom/google/android/gms/internal/ads/zzvj;->h:I
+    iget p0, p0, Lcom/google/android/gms/internal/ads/zzvj;->i:I
 
     invoke-static {v0, p0}, Lk3/pi;->d(II)Lk3/pi;
 

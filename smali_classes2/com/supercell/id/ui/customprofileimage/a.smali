@@ -31,13 +31,13 @@
     .line 1
     iget-object p1, p0, Lcom/supercell/id/ui/customprofileimage/a;->a:Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment$g;
 
-    iget-object p1, p1, Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment$g;->f:Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment;
+    iget-object p1, p1, Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment$g;->g:Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment;
 
     .line 2
-    iget-object v0, p1, Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment;->i0:Landroid/graphics/Matrix;
+    iget-object v0, p1, Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment;->j0:Landroid/graphics/Matrix;
 
     .line 3
-    iget-object p1, p1, Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment;->h0:Landroid/graphics/Matrix;
+    iget-object p1, p1, Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment;->i0:Landroid/graphics/Matrix;
 
     .line 4
     invoke-virtual {v0, p1}, Landroid/graphics/Matrix;->set(Landroid/graphics/Matrix;)V
@@ -53,10 +53,10 @@
     .line 1
     iget-object p1, p0, Lcom/supercell/id/ui/customprofileimage/a;->a:Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment$g;
 
-    iget-object p1, p1, Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment$g;->f:Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment;
+    iget-object p1, p1, Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment$g;->g:Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment;
 
     .line 2
-    iget-object p1, p1, Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment;->i0:Landroid/graphics/Matrix;
+    iget-object p1, p1, Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment;->j0:Landroid/graphics/Matrix;
 
     neg-float p2, p3
 
@@ -68,13 +68,13 @@
     .line 4
     iget-object p1, p0, Lcom/supercell/id/ui/customprofileimage/a;->a:Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment$g;
 
-    iget-object p1, p1, Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment$g;->f:Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment;
+    iget-object p1, p1, Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment$g;->g:Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment;
 
     .line 5
-    iget-object p2, p1, Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment;->h0:Landroid/graphics/Matrix;
+    iget-object p2, p1, Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment;->i0:Landroid/graphics/Matrix;
 
     .line 6
-    iget-object p1, p1, Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment;->i0:Landroid/graphics/Matrix;
+    iget-object p1, p1, Lcom/supercell/id/ui/customprofileimage/ProfileImageCropFragment;->j0:Landroid/graphics/Matrix;
 
     .line 7
     invoke-virtual {p2, p1}, Landroid/graphics/Matrix;->set(Landroid/graphics/Matrix;)V

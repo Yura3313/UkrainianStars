@@ -103,7 +103,7 @@
     const/4 v2, 0x0
 
     .line 9
-    invoke-static {v1, v0, v2, v2}, Landroidx/savedstate/d;->h(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v1, v0, v2, v2}, Le5/i;->j(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Throwable;[Lz9/a;)V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
@@ -251,7 +251,7 @@
     .line 3
     iget v8, v2, Lf8/g;->a:I
 
-    invoke-static {v8}, Lf8/c;->a(I)Ljava/lang/String;
+    invoke-static {v8}, Lf8/c;->b(I)Ljava/lang/String;
 
     move-result-object v8
 
@@ -419,7 +419,7 @@
     check-cast v13, Ljava/lang/String;
 
     .line 21
-    invoke-static {v13}, Lcom/google/android/play/core/appupdate/g;->b(Ljava/lang/String;)Z
+    invoke-static {v13}, La5/b0;->d(Ljava/lang/String;)Z
 
     move-result v15
 
@@ -534,7 +534,7 @@
     .catchall {:try_start_2 .. :try_end_2} :catchall_1
 
     .line 31
-    invoke-static {v9}, Lcom/helpshift/util/w;->b(Ljava/io/Closeable;)V
+    invoke-static {v9}, Lcom/helpshift/util/v;->a(Ljava/io/Closeable;)V
 
     .line 32
     :try_start_3
@@ -553,7 +553,7 @@
     move-object v2, v0
 
     .line 34
-    invoke-static {v4, v3, v2}, Landroidx/savedstate/d;->g(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v4, v3, v2}, Le5/i;->i(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
     :goto_5
     return-object v6
@@ -599,7 +599,7 @@
     move-result-object v6
 
     .line 37
-    invoke-static {v6}, Landroidx/savedstate/d;->d(Ljava/lang/String;)V
+    invoke-static {v6}, Le5/i;->g(Ljava/lang/String;)V
 
     .line 38
     invoke-virtual {v7}, Ljava/net/HttpURLConnection;->getErrorStream()Ljava/io/InputStream;
@@ -634,10 +634,10 @@
     .catchall {:try_start_5 .. :try_end_5} :catchall_0
 
     .line 41
-    invoke-static {v6}, Lcom/helpshift/util/w;->b(Ljava/io/Closeable;)V
+    invoke-static {v6}, Lcom/helpshift/util/v;->a(Ljava/io/Closeable;)V
 
     .line 42
-    invoke-static {v9}, Lcom/helpshift/util/w;->b(Ljava/io/Closeable;)V
+    invoke-static {v9}, Lcom/helpshift/util/v;->a(Ljava/io/Closeable;)V
 
     .line 43
     :try_start_6
@@ -656,7 +656,7 @@
     move-object v2, v0
 
     .line 45
-    invoke-static {v4, v3, v2}, Landroidx/savedstate/d;->g(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v4, v3, v2}, Le5/i;->i(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
     :goto_6
     return-object v12
@@ -882,12 +882,12 @@
     .line 46
     :goto_15
     :try_start_7
-    sget-object v8, Ld8/b;->h:Ld8/b;
+    sget-object v8, Ld8/b;->i:Ld8/b;
 
     .line 47
     iget-object v2, v2, Lf8/g;->b:Ljava/lang/String;
 
-    iput-object v2, v8, Ld8/b;->g:Ljava/lang/String;
+    iput-object v2, v8, Ld8/b;->h:Ljava/lang/String;
 
     .line 48
     invoke-static {v7, v8, v5}, Lcom/helpshift/common/exception/RootAPIException;->b(Ljava/lang/Exception;Ld8/a;Ljava/lang/String;)Lcom/helpshift/common/exception/RootAPIException;
@@ -909,12 +909,12 @@
 
     .line 49
     :goto_16
-    sget-object v8, Ld8/b;->l:Ld8/b;
+    sget-object v8, Ld8/b;->m:Ld8/b;
 
     .line 50
     iget-object v2, v2, Lf8/g;->b:Ljava/lang/String;
 
-    iput-object v2, v8, Ld8/b;->g:Ljava/lang/String;
+    iput-object v2, v8, Ld8/b;->h:Ljava/lang/String;
 
     .line 51
     invoke-static {v7, v8, v5}, Lcom/helpshift/common/exception/RootAPIException;->b(Ljava/lang/Exception;Ld8/a;Ljava/lang/String;)Lcom/helpshift/common/exception/RootAPIException;
@@ -936,12 +936,12 @@
 
     .line 52
     :goto_17
-    sget-object v8, Ld8/b;->k:Ld8/b;
+    sget-object v8, Ld8/b;->l:Ld8/b;
 
     .line 53
     iget-object v2, v2, Lf8/g;->b:Ljava/lang/String;
 
-    iput-object v2, v8, Ld8/b;->g:Ljava/lang/String;
+    iput-object v2, v8, Ld8/b;->h:Ljava/lang/String;
 
     .line 54
     invoke-static {v7, v8, v5}, Lcom/helpshift/common/exception/RootAPIException;->b(Ljava/lang/Exception;Ld8/a;Ljava/lang/String;)Lcom/helpshift/common/exception/RootAPIException;
@@ -964,12 +964,12 @@
 
     .line 55
     :goto_19
-    sget-object v8, Ld8/b;->i:Ld8/b;
+    sget-object v8, Ld8/b;->j:Ld8/b;
 
     .line 56
     iget-object v2, v2, Lf8/g;->b:Ljava/lang/String;
 
-    iput-object v2, v8, Ld8/b;->g:Ljava/lang/String;
+    iput-object v2, v8, Ld8/b;->h:Ljava/lang/String;
 
     .line 57
     invoke-static {v7, v8, v5}, Lcom/helpshift/common/exception/RootAPIException;->b(Ljava/lang/Exception;Ld8/a;Ljava/lang/String;)Lcom/helpshift/common/exception/RootAPIException;
@@ -991,12 +991,12 @@
 
     .line 58
     :goto_1a
-    sget-object v8, Ld8/b;->j:Ld8/b;
+    sget-object v8, Ld8/b;->k:Ld8/b;
 
     .line 59
     iget-object v2, v2, Lf8/g;->b:Ljava/lang/String;
 
-    iput-object v2, v8, Ld8/b;->g:Ljava/lang/String;
+    iput-object v2, v8, Ld8/b;->h:Ljava/lang/String;
 
     .line 60
     invoke-static {v7, v8, v5}, Lcom/helpshift/common/exception/RootAPIException;->b(Ljava/lang/Exception;Ld8/a;Ljava/lang/String;)Lcom/helpshift/common/exception/RootAPIException;
@@ -1018,10 +1018,10 @@
 
     .line 61
     :goto_1b
-    invoke-static {v6}, Lcom/helpshift/util/w;->b(Ljava/io/Closeable;)V
+    invoke-static {v6}, Lcom/helpshift/util/v;->a(Ljava/io/Closeable;)V
 
     .line 62
-    invoke-static {v9}, Lcom/helpshift/util/w;->b(Ljava/io/Closeable;)V
+    invoke-static {v9}, Lcom/helpshift/util/v;->a(Ljava/io/Closeable;)V
 
     .line 63
     :try_start_8
@@ -1048,7 +1048,7 @@
     move-object v5, v0
 
     .line 66
-    invoke-static {v4, v3, v5}, Landroidx/savedstate/d;->g(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v4, v3, v5}, Le5/i;->i(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
     .line 67
     :cond_9
@@ -1186,7 +1186,7 @@
     .line 7
     iget v11, v2, Lf8/g;->a:I
 
-    invoke-static {v11}, Lf8/c;->a(I)Ljava/lang/String;
+    invoke-static {v11}, Lf8/c;->b(I)Ljava/lang/String;
 
     move-result-object v11
 
@@ -2200,13 +2200,13 @@
     .catchall {:try_start_11 .. :try_end_11} :catchall_3
 
     .line 51
-    invoke-static {v12}, Lcom/helpshift/util/w;->b(Ljava/io/Closeable;)V
+    invoke-static {v12}, Lcom/helpshift/util/v;->a(Ljava/io/Closeable;)V
 
     .line 52
-    invoke-static {v11}, Lcom/helpshift/util/w;->b(Ljava/io/Closeable;)V
+    invoke-static {v11}, Lcom/helpshift/util/v;->a(Ljava/io/Closeable;)V
 
     .line 53
-    invoke-static {v6}, Lcom/helpshift/util/w;->b(Ljava/io/Closeable;)V
+    invoke-static {v6}, Lcom/helpshift/util/v;->a(Ljava/io/Closeable;)V
 
     .line 54
     :try_start_12
@@ -2222,7 +2222,7 @@
     move-object v2, v0
 
     .line 55
-    invoke-static {v5, v4, v2}, Landroidx/savedstate/d;->g(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v5, v4, v2}, Le5/i;->i(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
     :goto_18
     return-object v9
@@ -2273,13 +2273,13 @@
     .catchall {:try_start_15 .. :try_end_15} :catchall_4
 
     .line 59
-    invoke-static {v12}, Lcom/helpshift/util/w;->b(Ljava/io/Closeable;)V
+    invoke-static {v12}, Lcom/helpshift/util/v;->a(Ljava/io/Closeable;)V
 
     .line 60
-    invoke-static {v11}, Lcom/helpshift/util/w;->b(Ljava/io/Closeable;)V
+    invoke-static {v11}, Lcom/helpshift/util/v;->a(Ljava/io/Closeable;)V
 
     .line 61
-    invoke-static {v6}, Lcom/helpshift/util/w;->b(Ljava/io/Closeable;)V
+    invoke-static {v6}, Lcom/helpshift/util/v;->a(Ljava/io/Closeable;)V
 
     .line 62
     :try_start_16
@@ -2295,7 +2295,7 @@
     move-object v2, v0
 
     .line 63
-    invoke-static {v5, v4, v2}, Landroidx/savedstate/d;->g(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v5, v4, v2}, Le5/i;->i(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
     :goto_19
     return-object v9
@@ -2870,12 +2870,12 @@
     .line 64
     :goto_39
     :try_start_17
-    sget-object v6, Ld8/b;->h:Ld8/b;
+    sget-object v6, Ld8/b;->i:Ld8/b;
 
     .line 65
     iget-object v2, v2, Lf8/g;->b:Ljava/lang/String;
 
-    iput-object v2, v6, Ld8/b;->g:Ljava/lang/String;
+    iput-object v2, v6, Ld8/b;->h:Ljava/lang/String;
 
     move-object/from16 v8, v17
 
@@ -2905,12 +2905,12 @@
 
     .line 67
     :goto_3a
-    sget-object v6, Ld8/b;->l:Ld8/b;
+    sget-object v6, Ld8/b;->m:Ld8/b;
 
     .line 68
     iget-object v2, v2, Lf8/g;->b:Ljava/lang/String;
 
-    iput-object v2, v6, Ld8/b;->g:Ljava/lang/String;
+    iput-object v2, v6, Ld8/b;->h:Ljava/lang/String;
 
     .line 69
     invoke-static {v3, v6, v8}, Lcom/helpshift/common/exception/RootAPIException;->b(Ljava/lang/Exception;Ld8/a;Ljava/lang/String;)Lcom/helpshift/common/exception/RootAPIException;
@@ -2938,12 +2938,12 @@
 
     .line 70
     :goto_3b
-    sget-object v6, Ld8/b;->k:Ld8/b;
+    sget-object v6, Ld8/b;->l:Ld8/b;
 
     .line 71
     iget-object v2, v2, Lf8/g;->b:Ljava/lang/String;
 
-    iput-object v2, v6, Ld8/b;->g:Ljava/lang/String;
+    iput-object v2, v6, Ld8/b;->h:Ljava/lang/String;
 
     .line 72
     invoke-static {v3, v6, v8}, Lcom/helpshift/common/exception/RootAPIException;->b(Ljava/lang/Exception;Ld8/a;Ljava/lang/String;)Lcom/helpshift/common/exception/RootAPIException;
@@ -2977,12 +2977,12 @@
 
     .line 73
     :goto_3d
-    sget-object v6, Ld8/b;->i:Ld8/b;
+    sget-object v6, Ld8/b;->j:Ld8/b;
 
     .line 74
     iget-object v2, v2, Lf8/g;->b:Ljava/lang/String;
 
-    iput-object v2, v6, Ld8/b;->g:Ljava/lang/String;
+    iput-object v2, v6, Ld8/b;->h:Ljava/lang/String;
 
     .line 75
     invoke-static {v3, v6, v8}, Lcom/helpshift/common/exception/RootAPIException;->b(Ljava/lang/Exception;Ld8/a;Ljava/lang/String;)Lcom/helpshift/common/exception/RootAPIException;
@@ -3010,12 +3010,12 @@
 
     .line 76
     :goto_3e
-    sget-object v6, Ld8/b;->j:Ld8/b;
+    sget-object v6, Ld8/b;->k:Ld8/b;
 
     .line 77
     iget-object v2, v2, Lf8/g;->b:Ljava/lang/String;
 
-    iput-object v2, v6, Ld8/b;->g:Ljava/lang/String;
+    iput-object v2, v6, Ld8/b;->h:Ljava/lang/String;
 
     .line 78
     invoke-static {v3, v6, v8}, Lcom/helpshift/common/exception/RootAPIException;->b(Ljava/lang/Exception;Ld8/a;Ljava/lang/String;)Lcom/helpshift/common/exception/RootAPIException;
@@ -3038,16 +3038,16 @@
 
     .line 79
     :goto_40
-    invoke-static {v7}, Lcom/helpshift/util/w;->b(Ljava/io/Closeable;)V
+    invoke-static {v7}, Lcom/helpshift/util/v;->a(Ljava/io/Closeable;)V
 
     .line 80
-    invoke-static {v11}, Lcom/helpshift/util/w;->b(Ljava/io/Closeable;)V
+    invoke-static {v11}, Lcom/helpshift/util/v;->a(Ljava/io/Closeable;)V
 
     .line 81
-    invoke-static {v10}, Lcom/helpshift/util/w;->b(Ljava/io/Closeable;)V
+    invoke-static {v10}, Lcom/helpshift/util/v;->a(Ljava/io/Closeable;)V
 
     .line 82
-    invoke-static/range {v16 .. v16}, Lcom/helpshift/util/w;->b(Ljava/io/Closeable;)V
+    invoke-static/range {v16 .. v16}, Lcom/helpshift/util/v;->a(Ljava/io/Closeable;)V
 
     if-eqz v8, :cond_8
 
@@ -3065,7 +3065,7 @@
     move-object v3, v0
 
     .line 84
-    invoke-static {v5, v4, v3}, Landroidx/savedstate/d;->g(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v5, v4, v3}, Le5/i;->i(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
     .line 85
     :cond_8

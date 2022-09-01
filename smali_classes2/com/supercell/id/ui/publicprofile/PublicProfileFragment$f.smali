@@ -1,5 +1,5 @@
 .class public final Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$f;
-.super Lse/h;
+.super Lse/i;
 .source "PublicProfileFragment.kt"
 
 # interfaces
@@ -18,28 +18,28 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/l<",
         "Lcom/google/android/material/imageview/ShapeableImageView;",
-        "Lie/h;",
+        "Lie/i;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic f:Lcom/supercell/id/ui/publicprofile/PublicProfileFragment;
+.field public final synthetic g:Lcom/supercell/id/ui/publicprofile/PublicProfileFragment;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/id/ui/publicprofile/PublicProfileFragment;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$f;->f:Lcom/supercell/id/ui/publicprofile/PublicProfileFragment;
+    iput-object p1, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$f;->g:Lcom/supercell/id/ui/publicprofile/PublicProfileFragment;
 
     const/4 p1, 0x1
 
-    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -53,7 +53,7 @@
     check-cast p1, Lcom/google/android/material/imageview/ShapeableImageView;
 
     .line 2
-    iget-object v0, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$f;->f:Lcom/supercell/id/ui/publicprofile/PublicProfileFragment;
+    iget-object v0, p0, Lcom/supercell/id/ui/publicprofile/PublicProfileFragment$f;->g:Lcom/supercell/id/ui/publicprofile/PublicProfileFragment;
 
     sget v1, Lcom/supercell/id/R$id;->online_status_indicator:I
 
@@ -67,13 +67,13 @@
 
     const-string v1, "imageView"
 
-    invoke-static {p1, v1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v1}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-static {v0, p1}, Lae/w;->d(Landroid/view/View;Landroid/view/View;)V
+    invoke-static {v0, p1}, Lae/v;->j(Landroid/view/View;Landroid/view/View;)V
 
     .line 3
     :cond_0
-    sget-object p1, Lie/h;->a:Lie/h;
+    sget-object p1, Lie/i;->a:Lie/i;
 
     return-object p1
 .end method

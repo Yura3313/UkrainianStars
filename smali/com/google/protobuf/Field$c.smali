@@ -27,9 +27,9 @@
 
 
 # static fields
-.field public static final synthetic A:[Lcom/google/protobuf/Field$c;
+.field public static final enum A:Lcom/google/protobuf/Field$c;
 
-.field public static final enum g:Lcom/google/protobuf/Field$c;
+.field public static final synthetic B:[Lcom/google/protobuf/Field$c;
 
 .field public static final enum h:Lcom/google/protobuf/Field$c;
 
@@ -71,7 +71,7 @@
 
 
 # instance fields
-.field public final f:I
+.field public final g:I
 
 
 # direct methods
@@ -87,7 +87,7 @@
 
     invoke-direct {v0, v1, v2, v2}, Lcom/google/protobuf/Field$c;-><init>(Ljava/lang/String;II)V
 
-    sput-object v0, Lcom/google/protobuf/Field$c;->g:Lcom/google/protobuf/Field$c;
+    sput-object v0, Lcom/google/protobuf/Field$c;->h:Lcom/google/protobuf/Field$c;
 
     .line 2
     new-instance v1, Lcom/google/protobuf/Field$c;
@@ -98,7 +98,7 @@
 
     invoke-direct {v1, v3, v4, v4}, Lcom/google/protobuf/Field$c;-><init>(Ljava/lang/String;II)V
 
-    sput-object v1, Lcom/google/protobuf/Field$c;->h:Lcom/google/protobuf/Field$c;
+    sput-object v1, Lcom/google/protobuf/Field$c;->i:Lcom/google/protobuf/Field$c;
 
     .line 3
     new-instance v3, Lcom/google/protobuf/Field$c;
@@ -109,7 +109,7 @@
 
     invoke-direct {v3, v5, v6, v6}, Lcom/google/protobuf/Field$c;-><init>(Ljava/lang/String;II)V
 
-    sput-object v3, Lcom/google/protobuf/Field$c;->i:Lcom/google/protobuf/Field$c;
+    sput-object v3, Lcom/google/protobuf/Field$c;->j:Lcom/google/protobuf/Field$c;
 
     .line 4
     new-instance v5, Lcom/google/protobuf/Field$c;
@@ -120,7 +120,7 @@
 
     invoke-direct {v5, v7, v8, v8}, Lcom/google/protobuf/Field$c;-><init>(Ljava/lang/String;II)V
 
-    sput-object v5, Lcom/google/protobuf/Field$c;->j:Lcom/google/protobuf/Field$c;
+    sput-object v5, Lcom/google/protobuf/Field$c;->k:Lcom/google/protobuf/Field$c;
 
     .line 5
     new-instance v7, Lcom/google/protobuf/Field$c;
@@ -131,7 +131,7 @@
 
     invoke-direct {v7, v9, v10, v10}, Lcom/google/protobuf/Field$c;-><init>(Ljava/lang/String;II)V
 
-    sput-object v7, Lcom/google/protobuf/Field$c;->k:Lcom/google/protobuf/Field$c;
+    sput-object v7, Lcom/google/protobuf/Field$c;->l:Lcom/google/protobuf/Field$c;
 
     .line 6
     new-instance v9, Lcom/google/protobuf/Field$c;
@@ -142,7 +142,7 @@
 
     invoke-direct {v9, v11, v12, v12}, Lcom/google/protobuf/Field$c;-><init>(Ljava/lang/String;II)V
 
-    sput-object v9, Lcom/google/protobuf/Field$c;->l:Lcom/google/protobuf/Field$c;
+    sput-object v9, Lcom/google/protobuf/Field$c;->m:Lcom/google/protobuf/Field$c;
 
     .line 7
     new-instance v11, Lcom/google/protobuf/Field$c;
@@ -153,7 +153,7 @@
 
     invoke-direct {v11, v13, v14, v14}, Lcom/google/protobuf/Field$c;-><init>(Ljava/lang/String;II)V
 
-    sput-object v11, Lcom/google/protobuf/Field$c;->m:Lcom/google/protobuf/Field$c;
+    sput-object v11, Lcom/google/protobuf/Field$c;->n:Lcom/google/protobuf/Field$c;
 
     .line 8
     new-instance v13, Lcom/google/protobuf/Field$c;
@@ -164,7 +164,7 @@
 
     invoke-direct {v13, v15, v14, v14}, Lcom/google/protobuf/Field$c;-><init>(Ljava/lang/String;II)V
 
-    sput-object v13, Lcom/google/protobuf/Field$c;->n:Lcom/google/protobuf/Field$c;
+    sput-object v13, Lcom/google/protobuf/Field$c;->o:Lcom/google/protobuf/Field$c;
 
     .line 9
     new-instance v15, Lcom/google/protobuf/Field$c;
@@ -175,7 +175,7 @@
 
     invoke-direct {v15, v14, v12, v12}, Lcom/google/protobuf/Field$c;-><init>(Ljava/lang/String;II)V
 
-    sput-object v15, Lcom/google/protobuf/Field$c;->o:Lcom/google/protobuf/Field$c;
+    sput-object v15, Lcom/google/protobuf/Field$c;->p:Lcom/google/protobuf/Field$c;
 
     .line 10
     new-instance v14, Lcom/google/protobuf/Field$c;
@@ -186,7 +186,7 @@
 
     invoke-direct {v14, v12, v10, v10}, Lcom/google/protobuf/Field$c;-><init>(Ljava/lang/String;II)V
 
-    sput-object v14, Lcom/google/protobuf/Field$c;->p:Lcom/google/protobuf/Field$c;
+    sput-object v14, Lcom/google/protobuf/Field$c;->q:Lcom/google/protobuf/Field$c;
 
     .line 11
     new-instance v12, Lcom/google/protobuf/Field$c;
@@ -197,7 +197,7 @@
 
     invoke-direct {v12, v10, v8, v8}, Lcom/google/protobuf/Field$c;-><init>(Ljava/lang/String;II)V
 
-    sput-object v12, Lcom/google/protobuf/Field$c;->q:Lcom/google/protobuf/Field$c;
+    sput-object v12, Lcom/google/protobuf/Field$c;->r:Lcom/google/protobuf/Field$c;
 
     .line 12
     new-instance v10, Lcom/google/protobuf/Field$c;
@@ -208,7 +208,7 @@
 
     invoke-direct {v10, v8, v6, v6}, Lcom/google/protobuf/Field$c;-><init>(Ljava/lang/String;II)V
 
-    sput-object v10, Lcom/google/protobuf/Field$c;->r:Lcom/google/protobuf/Field$c;
+    sput-object v10, Lcom/google/protobuf/Field$c;->s:Lcom/google/protobuf/Field$c;
 
     .line 13
     new-instance v8, Lcom/google/protobuf/Field$c;
@@ -219,7 +219,7 @@
 
     invoke-direct {v8, v6, v4, v4}, Lcom/google/protobuf/Field$c;-><init>(Ljava/lang/String;II)V
 
-    sput-object v8, Lcom/google/protobuf/Field$c;->s:Lcom/google/protobuf/Field$c;
+    sput-object v8, Lcom/google/protobuf/Field$c;->t:Lcom/google/protobuf/Field$c;
 
     .line 14
     new-instance v6, Lcom/google/protobuf/Field$c;
@@ -230,7 +230,7 @@
 
     invoke-direct {v6, v4, v2, v2}, Lcom/google/protobuf/Field$c;-><init>(Ljava/lang/String;II)V
 
-    sput-object v6, Lcom/google/protobuf/Field$c;->t:Lcom/google/protobuf/Field$c;
+    sput-object v6, Lcom/google/protobuf/Field$c;->u:Lcom/google/protobuf/Field$c;
 
     .line 15
     new-instance v4, Lcom/google/protobuf/Field$c;
@@ -243,7 +243,7 @@
 
     invoke-direct {v4, v2, v6, v6}, Lcom/google/protobuf/Field$c;-><init>(Ljava/lang/String;II)V
 
-    sput-object v4, Lcom/google/protobuf/Field$c;->u:Lcom/google/protobuf/Field$c;
+    sput-object v4, Lcom/google/protobuf/Field$c;->v:Lcom/google/protobuf/Field$c;
 
     .line 16
     new-instance v2, Lcom/google/protobuf/Field$c;
@@ -256,7 +256,7 @@
 
     invoke-direct {v2, v6, v4, v4}, Lcom/google/protobuf/Field$c;-><init>(Ljava/lang/String;II)V
 
-    sput-object v2, Lcom/google/protobuf/Field$c;->v:Lcom/google/protobuf/Field$c;
+    sput-object v2, Lcom/google/protobuf/Field$c;->w:Lcom/google/protobuf/Field$c;
 
     .line 17
     new-instance v6, Lcom/google/protobuf/Field$c;
@@ -269,7 +269,7 @@
 
     invoke-direct {v6, v4, v2, v2}, Lcom/google/protobuf/Field$c;-><init>(Ljava/lang/String;II)V
 
-    sput-object v6, Lcom/google/protobuf/Field$c;->w:Lcom/google/protobuf/Field$c;
+    sput-object v6, Lcom/google/protobuf/Field$c;->x:Lcom/google/protobuf/Field$c;
 
     .line 18
     new-instance v4, Lcom/google/protobuf/Field$c;
@@ -282,7 +282,7 @@
 
     invoke-direct {v4, v2, v6, v6}, Lcom/google/protobuf/Field$c;-><init>(Ljava/lang/String;II)V
 
-    sput-object v4, Lcom/google/protobuf/Field$c;->x:Lcom/google/protobuf/Field$c;
+    sput-object v4, Lcom/google/protobuf/Field$c;->y:Lcom/google/protobuf/Field$c;
 
     .line 19
     new-instance v2, Lcom/google/protobuf/Field$c;
@@ -295,7 +295,7 @@
 
     invoke-direct {v2, v6, v4, v4}, Lcom/google/protobuf/Field$c;-><init>(Ljava/lang/String;II)V
 
-    sput-object v2, Lcom/google/protobuf/Field$c;->y:Lcom/google/protobuf/Field$c;
+    sput-object v2, Lcom/google/protobuf/Field$c;->z:Lcom/google/protobuf/Field$c;
 
     .line 20
     new-instance v6, Lcom/google/protobuf/Field$c;
@@ -312,7 +312,7 @@
 
     invoke-direct {v6, v4, v2, v8}, Lcom/google/protobuf/Field$c;-><init>(Ljava/lang/String;II)V
 
-    sput-object v6, Lcom/google/protobuf/Field$c;->z:Lcom/google/protobuf/Field$c;
+    sput-object v6, Lcom/google/protobuf/Field$c;->A:Lcom/google/protobuf/Field$c;
 
     const/16 v4, 0x14
 
@@ -397,7 +397,7 @@
     aput-object v6, v4, v2
 
     .line 21
-    sput-object v4, Lcom/google/protobuf/Field$c;->A:[Lcom/google/protobuf/Field$c;
+    sput-object v4, Lcom/google/protobuf/Field$c;->B:[Lcom/google/protobuf/Field$c;
 
     return-void
 .end method
@@ -414,7 +414,7 @@
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 2
-    iput p3, p0, Lcom/google/protobuf/Field$c;->f:I
+    iput p3, p0, Lcom/google/protobuf/Field$c;->g:I
 
     return-void
 .end method
@@ -430,115 +430,115 @@
 
     .line 1
     :pswitch_0
-    sget-object p0, Lcom/google/protobuf/Field$c;->y:Lcom/google/protobuf/Field$c;
+    sget-object p0, Lcom/google/protobuf/Field$c;->z:Lcom/google/protobuf/Field$c;
 
     return-object p0
 
     .line 2
     :pswitch_1
-    sget-object p0, Lcom/google/protobuf/Field$c;->x:Lcom/google/protobuf/Field$c;
+    sget-object p0, Lcom/google/protobuf/Field$c;->y:Lcom/google/protobuf/Field$c;
 
     return-object p0
 
     .line 3
     :pswitch_2
-    sget-object p0, Lcom/google/protobuf/Field$c;->w:Lcom/google/protobuf/Field$c;
+    sget-object p0, Lcom/google/protobuf/Field$c;->x:Lcom/google/protobuf/Field$c;
 
     return-object p0
 
     .line 4
     :pswitch_3
-    sget-object p0, Lcom/google/protobuf/Field$c;->v:Lcom/google/protobuf/Field$c;
+    sget-object p0, Lcom/google/protobuf/Field$c;->w:Lcom/google/protobuf/Field$c;
 
     return-object p0
 
     .line 5
     :pswitch_4
-    sget-object p0, Lcom/google/protobuf/Field$c;->u:Lcom/google/protobuf/Field$c;
+    sget-object p0, Lcom/google/protobuf/Field$c;->v:Lcom/google/protobuf/Field$c;
 
     return-object p0
 
     .line 6
     :pswitch_5
-    sget-object p0, Lcom/google/protobuf/Field$c;->t:Lcom/google/protobuf/Field$c;
+    sget-object p0, Lcom/google/protobuf/Field$c;->u:Lcom/google/protobuf/Field$c;
 
     return-object p0
 
     .line 7
     :pswitch_6
-    sget-object p0, Lcom/google/protobuf/Field$c;->s:Lcom/google/protobuf/Field$c;
+    sget-object p0, Lcom/google/protobuf/Field$c;->t:Lcom/google/protobuf/Field$c;
 
     return-object p0
 
     .line 8
     :pswitch_7
-    sget-object p0, Lcom/google/protobuf/Field$c;->r:Lcom/google/protobuf/Field$c;
+    sget-object p0, Lcom/google/protobuf/Field$c;->s:Lcom/google/protobuf/Field$c;
 
     return-object p0
 
     .line 9
     :pswitch_8
-    sget-object p0, Lcom/google/protobuf/Field$c;->q:Lcom/google/protobuf/Field$c;
+    sget-object p0, Lcom/google/protobuf/Field$c;->r:Lcom/google/protobuf/Field$c;
 
     return-object p0
 
     .line 10
     :pswitch_9
-    sget-object p0, Lcom/google/protobuf/Field$c;->p:Lcom/google/protobuf/Field$c;
+    sget-object p0, Lcom/google/protobuf/Field$c;->q:Lcom/google/protobuf/Field$c;
 
     return-object p0
 
     .line 11
     :pswitch_a
-    sget-object p0, Lcom/google/protobuf/Field$c;->o:Lcom/google/protobuf/Field$c;
+    sget-object p0, Lcom/google/protobuf/Field$c;->p:Lcom/google/protobuf/Field$c;
 
     return-object p0
 
     .line 12
     :pswitch_b
-    sget-object p0, Lcom/google/protobuf/Field$c;->n:Lcom/google/protobuf/Field$c;
+    sget-object p0, Lcom/google/protobuf/Field$c;->o:Lcom/google/protobuf/Field$c;
 
     return-object p0
 
     .line 13
     :pswitch_c
-    sget-object p0, Lcom/google/protobuf/Field$c;->m:Lcom/google/protobuf/Field$c;
+    sget-object p0, Lcom/google/protobuf/Field$c;->n:Lcom/google/protobuf/Field$c;
 
     return-object p0
 
     .line 14
     :pswitch_d
-    sget-object p0, Lcom/google/protobuf/Field$c;->l:Lcom/google/protobuf/Field$c;
+    sget-object p0, Lcom/google/protobuf/Field$c;->m:Lcom/google/protobuf/Field$c;
 
     return-object p0
 
     .line 15
     :pswitch_e
-    sget-object p0, Lcom/google/protobuf/Field$c;->k:Lcom/google/protobuf/Field$c;
+    sget-object p0, Lcom/google/protobuf/Field$c;->l:Lcom/google/protobuf/Field$c;
 
     return-object p0
 
     .line 16
     :pswitch_f
-    sget-object p0, Lcom/google/protobuf/Field$c;->j:Lcom/google/protobuf/Field$c;
+    sget-object p0, Lcom/google/protobuf/Field$c;->k:Lcom/google/protobuf/Field$c;
 
     return-object p0
 
     .line 17
     :pswitch_10
-    sget-object p0, Lcom/google/protobuf/Field$c;->i:Lcom/google/protobuf/Field$c;
+    sget-object p0, Lcom/google/protobuf/Field$c;->j:Lcom/google/protobuf/Field$c;
 
     return-object p0
 
     .line 18
     :pswitch_11
-    sget-object p0, Lcom/google/protobuf/Field$c;->h:Lcom/google/protobuf/Field$c;
+    sget-object p0, Lcom/google/protobuf/Field$c;->i:Lcom/google/protobuf/Field$c;
 
     return-object p0
 
     .line 19
     :pswitch_12
-    sget-object p0, Lcom/google/protobuf/Field$c;->g:Lcom/google/protobuf/Field$c;
+    sget-object p0, Lcom/google/protobuf/Field$c;->h:Lcom/google/protobuf/Field$c;
 
     return-object p0
 
@@ -583,7 +583,7 @@
 .method public static values()[Lcom/google/protobuf/Field$c;
     .locals 1
 
-    sget-object v0, Lcom/google/protobuf/Field$c;->A:[Lcom/google/protobuf/Field$c;
+    sget-object v0, Lcom/google/protobuf/Field$c;->B:[Lcom/google/protobuf/Field$c;
 
     invoke-virtual {v0}, [Lcom/google/protobuf/Field$c;->clone()Ljava/lang/Object;
 
@@ -600,12 +600,12 @@
     .locals 2
 
     .line 1
-    sget-object v0, Lcom/google/protobuf/Field$c;->z:Lcom/google/protobuf/Field$c;
+    sget-object v0, Lcom/google/protobuf/Field$c;->A:Lcom/google/protobuf/Field$c;
 
     if-eq p0, v0, :cond_0
 
     .line 2
-    iget v0, p0, Lcom/google/protobuf/Field$c;->f:I
+    iget v0, p0, Lcom/google/protobuf/Field$c;->g:I
 
     return v0
 

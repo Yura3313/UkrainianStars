@@ -1,79 +1,150 @@
 .class public final Lk3/sv0;
-.super Ljava/lang/Object;
+.super Lk3/g60;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
-# interfaces
-.implements Ljava/util/concurrent/ThreadFactory;
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lk3/g60<",
+        "Ljava/lang/Integer;",
+        "Ljava/lang/Object;",
+        ">;"
+    }
+.end annotation
 
 
 # instance fields
-.field public final a:Ljava/util/concurrent/ThreadFactory;
+.field public a:Ljava/lang/Long;
 
-.field public final b:Ljava/util/concurrent/atomic/AtomicInteger;
+.field public b:Ljava/lang/Boolean;
+
+.field public c:Ljava/lang/Boolean;
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 2
+.method public constructor <init>(Ljava/lang/String;)V
+    .locals 0
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0}, Lk3/g60;-><init>()V
 
     .line 2
-    invoke-static {}, Ljava/util/concurrent/Executors;->defaultThreadFactory()Ljava/util/concurrent/ThreadFactory;
-
-    move-result-object v0
-
-    iput-object v0, p0, Lk3/sv0;->a:Ljava/util/concurrent/ThreadFactory;
-
-    .line 3
-    new-instance v0, Ljava/util/concurrent/atomic/AtomicInteger;
-
-    const/4 v1, 0x1
-
-    invoke-direct {v0, v1}, Ljava/util/concurrent/atomic/AtomicInteger;-><init>(I)V
-
-    iput-object v0, p0, Lk3/sv0;->b:Ljava/util/concurrent/atomic/AtomicInteger;
+    invoke-virtual {p0, p1}, Lk3/sv0;->c(Ljava/lang/String;)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final newThread(Ljava/lang/Runnable;)Ljava/lang/Thread;
+.method public final b()Ljava/util/HashMap;
     .locals 3
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/HashMap<",
+            "Ljava/lang/Integer;",
+            "Ljava/lang/Object;",
+            ">;"
+        }
+    .end annotation
 
     .line 1
-    iget-object v0, p0, Lk3/sv0;->a:Ljava/util/concurrent/ThreadFactory;
+    new-instance v0, Ljava/util/HashMap;
 
-    invoke-interface {v0, p1}, Ljava/util/concurrent/ThreadFactory;->newThread(Ljava/lang/Runnable;)Ljava/lang/Thread;
+    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
+
+    const/4 v1, 0x0
+
+    .line 2
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    iget-object v2, p0, Lk3/sv0;->a:Ljava/lang/Long;
+
+    invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    const/4 v1, 0x1
+
+    .line 3
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    iget-object v2, p0, Lk3/sv0;->b:Ljava/lang/Boolean;
+
+    invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    const/4 v1, 0x2
+
+    .line 4
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    iget-object v2, p0, Lk3/sv0;->c:Ljava/lang/Boolean;
+
+    invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    return-object v0
+.end method
+
+.method public final c(Ljava/lang/String;)V
+    .locals 1
+
+    .line 1
+    invoke-static {p1}, Lk3/g60;->a(Ljava/lang/String;)Ljava/util/HashMap;
 
     move-result-object p1
 
+    if-eqz p1, :cond_0
+
+    const/4 v0, 0x0
+
     .line 2
-    iget-object v0, p0, Lk3/sv0;->b:Ljava/util/concurrent/atomic/AtomicInteger;
-
-    invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicInteger;->getAndIncrement()I
-
-    move-result v0
-
-    new-instance v1, Ljava/lang/StringBuilder;
-
-    const/16 v2, 0x10
-
-    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(I)V
-
-    const-string v2, "gads-"
-
-    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v0
 
-    invoke-virtual {p1, v0}, Ljava/lang/Thread;->setName(Ljava/lang/String;)V
+    invoke-virtual {p1, v0}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
-    return-object p1
+    move-result-object v0
+
+    check-cast v0, Ljava/lang/Long;
+
+    iput-object v0, p0, Lk3/sv0;->a:Ljava/lang/Long;
+
+    const/4 v0, 0x1
+
+    .line 3
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v0
+
+    invoke-virtual {p1, v0}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Ljava/lang/Boolean;
+
+    iput-object v0, p0, Lk3/sv0;->b:Ljava/lang/Boolean;
+
+    const/4 v0, 0x2
+
+    .line 4
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v0
+
+    invoke-virtual {p1, v0}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Ljava/lang/Boolean;
+
+    iput-object p1, p0, Lk3/sv0;->c:Ljava/lang/Boolean;
+
+    :cond_0
+    return-void
 .end method

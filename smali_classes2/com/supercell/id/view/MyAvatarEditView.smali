@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field public final f:Lie/f;
+.field public final g:Lie/g;
 
-.field public final g:Lie/f;
+.field public final h:Lie/g;
 
 
 # direct methods
@@ -15,7 +15,7 @@
 
     const-string v0, "context"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     invoke-direct {p0, p1, p2}, Landroid/widget/FrameLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
@@ -30,26 +30,26 @@
 
     invoke-direct {p1, p0}, Lcom/supercell/id/view/MyAvatarEditView$a;-><init>(Lcom/supercell/id/view/MyAvatarEditView;)V
 
-    invoke-static {p1}, La5/r;->d(Lre/a;)Lie/c;
+    invoke-static {p1}, Ld2/u;->c(Lre/a;)Lie/c;
 
     move-result-object p1
 
-    check-cast p1, Lie/f;
+    check-cast p1, Lie/g;
 
-    iput-object p1, p0, Lcom/supercell/id/view/MyAvatarEditView;->f:Lie/f;
+    iput-object p1, p0, Lcom/supercell/id/view/MyAvatarEditView;->g:Lie/g;
 
     .line 4
     new-instance p1, Lcom/supercell/id/view/MyAvatarEditView$b;
 
     invoke-direct {p1, p0}, Lcom/supercell/id/view/MyAvatarEditView$b;-><init>(Lcom/supercell/id/view/MyAvatarEditView;)V
 
-    invoke-static {p1}, La5/r;->d(Lre/a;)Lie/c;
+    invoke-static {p1}, Ld2/u;->c(Lre/a;)Lie/c;
 
     move-result-object p1
 
-    check-cast p1, Lie/f;
+    check-cast p1, Lie/g;
 
-    iput-object p1, p0, Lcom/supercell/id/view/MyAvatarEditView;->g:Lie/f;
+    iput-object p1, p0, Lcom/supercell/id/view/MyAvatarEditView;->h:Lie/g;
 
     return-void
 .end method
@@ -57,9 +57,9 @@
 .method private final getImageView()Lcom/supercell/id/view/AvatarEditView;
     .locals 1
 
-    iget-object v0, p0, Lcom/supercell/id/view/MyAvatarEditView;->f:Lie/f;
+    iget-object v0, p0, Lcom/supercell/id/view/MyAvatarEditView;->g:Lie/g;
 
-    invoke-virtual {v0}, Lie/f;->getValue()Ljava/lang/Object;
+    invoke-virtual {v0}, Lie/g;->getValue()Ljava/lang/Object;
 
     move-result-object v0
 
@@ -71,9 +71,9 @@
 .method private final getUnderReviewView()Landroid/view/ViewGroup;
     .locals 1
 
-    iget-object v0, p0, Lcom/supercell/id/view/MyAvatarEditView;->g:Lie/f;
+    iget-object v0, p0, Lcom/supercell/id/view/MyAvatarEditView;->h:Lie/g;
 
-    invoke-virtual {v0}, Lie/f;->getValue()Ljava/lang/Object;
+    invoke-virtual {v0}, Lie/g;->getValue()Ljava/lang/Object;
 
     move-result-object v0
 
@@ -89,11 +89,11 @@
 
     const-string v0, "avatarName"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "imageAnimation"
 
-    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     invoke-direct {p0}, Lcom/supercell/id/view/MyAvatarEditView;->getImageView()Lcom/supercell/id/view/AvatarEditView;
@@ -115,7 +115,7 @@
 
     const-string v0, "bgAnimation"
 
-    invoke-static {p3, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p3, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     invoke-direct {p0}, Lcom/supercell/id/view/MyAvatarEditView;->getImageView()Lcom/supercell/id/view/AvatarEditView;
@@ -137,7 +137,7 @@
 
     const-string v0, "imageUrl"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     invoke-direct {p0}, Lcom/supercell/id/view/MyAvatarEditView;->getImageView()Lcom/supercell/id/view/AvatarEditView;
@@ -161,7 +161,7 @@
 
     const-string v1, "underReviewView"
 
-    invoke-static {v0, v1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     if-eqz p1, :cond_0
 

@@ -46,13 +46,13 @@
     check-cast v0, Lua/d;
 
     .line 4
-    iget-object v0, v0, Landroidx/fragment/app/Fragment;->A:Landroidx/fragment/app/Fragment;
+    iget-object v0, v0, Landroidx/fragment/app/Fragment;->B:Landroidx/fragment/app/Fragment;
 
     .line 5
     check-cast v0, Lab/p;
 
     .line 6
-    iget-object v0, v0, Lab/p;->j0:Lpa/b;
+    iget-object v0, v0, Lab/p;->k0:Lpa/b;
 
     .line 7
     invoke-virtual {v0}, Lpa/b;->c()V

@@ -127,7 +127,7 @@
 
     const/4 v1, 0x0
 
-    invoke-direct {v0, v1}, Lcom/kakao/sdk/partner/model/KakaoPhase$Companion;-><init>(Lse/e;)V
+    invoke-direct {v0, v1}, Lcom/kakao/sdk/partner/model/KakaoPhase$Companion;-><init>(Lse/f;)V
 
     sput-object v0, Lcom/kakao/sdk/partner/model/KakaoPhase;->Companion:Lcom/kakao/sdk/partner/model/KakaoPhase$Companion;
 

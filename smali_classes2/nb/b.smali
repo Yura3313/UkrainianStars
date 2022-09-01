@@ -8,10 +8,10 @@
     .locals 1
 
     .line 1
-    sget-object v0, Lcom/helpshift/util/u;->b:Landroid/content/Context;
+    sget-object v0, Lcom/helpshift/util/t;->b:Landroid/content/Context;
 
     .line 2
-    invoke-static {v0}, Lcom/android/billingclient/api/c0;->o(Landroid/content/Context;)Z
+    invoke-static {v0}, Lcom/android/billingclient/api/b0;->p(Landroid/content/Context;)Z
 
     move-result v0
 
@@ -38,10 +38,10 @@
     .locals 1
 
     .line 1
-    sget-object v0, Lcom/helpshift/util/u;->b:Landroid/content/Context;
+    sget-object v0, Lcom/helpshift/util/t;->b:Landroid/content/Context;
 
     .line 2
-    invoke-static {v0}, Lcom/android/billingclient/api/c0;->o(Landroid/content/Context;)Z
+    invoke-static {v0}, Lcom/android/billingclient/api/b0;->p(Landroid/content/Context;)Z
 
     move-result v0
 
@@ -79,10 +79,10 @@
     .end annotation
 
     .line 1
-    sget-object v0, Lcom/helpshift/util/u;->b:Landroid/content/Context;
+    sget-object v0, Lcom/helpshift/util/t;->b:Landroid/content/Context;
 
     .line 2
-    invoke-static {v0}, Lcom/android/billingclient/api/c0;->o(Landroid/content/Context;)Z
+    invoke-static {v0}, Lcom/android/billingclient/api/b0;->p(Landroid/content/Context;)Z
 
     move-result v0
 
@@ -104,7 +104,7 @@
     const-string v2, "Exception thrown while calling MenuItem#setOnActionExpandListener: "
 
     .line 4
-    invoke-static {v1, v2, v0}, Landroidx/savedstate/d;->g(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v1, v2, v0}, Le5/i;->i(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
     .line 5
     check-cast p1, Lf0/g$a;

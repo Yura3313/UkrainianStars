@@ -75,7 +75,7 @@
     move-result-object v2
 
     .line 4
-    sget-boolean v0, Lze/b0;->a:Z
+    sget-boolean v0, Lze/c0;->a:Z
 
     .line 5
     sget-object v3, Laf/c;->a:Ljava/util/concurrent/atomic/AtomicReferenceFieldUpdater;

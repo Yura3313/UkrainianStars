@@ -3,7 +3,7 @@
 
 
 # instance fields
-.field public final f:La5/l0;
+.field public final g:La5/l0;
 
 
 # direct methods
@@ -16,7 +16,7 @@
 
     invoke-direct {v0}, La5/l0;-><init>()V
 
-    iput-object v0, p0, La5/n0;->f:La5/l0;
+    iput-object v0, p0, La5/n0;->g:La5/l0;
 
     return-void
 .end method
@@ -30,7 +30,7 @@
 
     if-eqz p2, :cond_3
 
-    iget-object v0, p0, La5/n0;->f:La5/l0;
+    iget-object v0, p0, La5/n0;->g:La5/l0;
 
     .line 1
     :goto_0

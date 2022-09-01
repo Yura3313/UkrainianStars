@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field public final g:I
+.field public final h:I
 
 
 # direct methods
@@ -19,7 +19,7 @@
     invoke-direct {p0, v0, v1}, Lcom/helpshift/websockets/WebSocketException;-><init>(ILjava/lang/String;)V
 
     .line 2
-    iput p1, p0, Lpb/n;->g:I
+    iput p1, p0, Lpb/n;->h:I
 
     return-void
 .end method

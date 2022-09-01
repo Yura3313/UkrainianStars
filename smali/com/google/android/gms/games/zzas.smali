@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field public final i:Lc3/b;
+.field public final j:Lc3/b;
 
 
 # direct methods
@@ -26,7 +26,7 @@
     invoke-direct {p0, p1, p2}, Lv2/o;-><init>(Lcom/google/android/gms/common/data/DataHolder;I)V
 
     .line 2
-    iput-object p3, p0, Lcom/google/android/gms/games/zzas;->i:Lc3/b;
+    iput-object p3, p0, Lcom/google/android/gms/games/zzas;->j:Lc3/b;
 
     return-void
 .end method
@@ -36,7 +36,7 @@
 .method public final I()Ljava/lang/String;
     .locals 1
 
-    iget-object v0, p0, Lcom/google/android/gms/games/zzas;->i:Lc3/b;
+    iget-object v0, p0, Lcom/google/android/gms/games/zzas;->j:Lc3/b;
 
     iget-object v0, v0, Lc3/b;->H:Ljava/lang/String;
 
@@ -50,7 +50,7 @@
 .method public final d0()Ljava/lang/String;
     .locals 1
 
-    iget-object v0, p0, Lcom/google/android/gms/games/zzas;->i:Lc3/b;
+    iget-object v0, p0, Lcom/google/android/gms/games/zzas;->j:Lc3/b;
 
     iget-object v0, v0, Lc3/b;->I:Ljava/lang/String;
 
@@ -102,7 +102,7 @@
 .method public final l0()Ljava/lang/String;
     .locals 1
 
-    iget-object v0, p0, Lcom/google/android/gms/games/zzas;->i:Lc3/b;
+    iget-object v0, p0, Lcom/google/android/gms/games/zzas;->j:Lc3/b;
 
     iget-object v0, v0, Lc3/b;->J:Ljava/lang/String;
 
@@ -117,7 +117,7 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/gms/games/zzas;->i:Lc3/b;
+    iget-object v0, p0, Lcom/google/android/gms/games/zzas;->j:Lc3/b;
 
     iget-object v0, v0, Lc3/b;->G:Ljava/lang/String;
 

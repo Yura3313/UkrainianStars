@@ -38,7 +38,7 @@
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lbe/h;->l()Lze/e0;
+    invoke-virtual {v0}, Lbe/h;->l()Lze/f0;
 
     return-void
 .end method

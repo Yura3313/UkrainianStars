@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field public final f:Ljava/lang/String;
+.field public final g:Ljava/lang/String;
 
-.field public final g:Landroid/os/Bundle;
+.field public final h:Landroid/os/Bundle;
 
 
 # direct methods
@@ -18,9 +18,9 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lk3/q9;->f:Ljava/lang/String;
+    iput-object p1, p0, Lk3/q9;->g:Ljava/lang/String;
 
-    iput-object p2, p0, Lk3/q9;->g:Landroid/os/Bundle;
+    iput-object p2, p0, Lk3/q9;->h:Landroid/os/Bundle;
 
     return-void
 .end method
@@ -31,9 +31,9 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lk3/q9;->f:Ljava/lang/String;
+    iget-object v0, p0, Lk3/q9;->g:Ljava/lang/String;
 
-    iget-object v1, p0, Lk3/q9;->g:Landroid/os/Bundle;
+    iget-object v1, p0, Lk3/q9;->h:Landroid/os/Bundle;
 
     .line 2
     invoke-interface {p1, v0, v1}, Lcom/google/android/gms/internal/ads/zzbib;->h0(Ljava/lang/String;Landroid/os/Bundle;)V

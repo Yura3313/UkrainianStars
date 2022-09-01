@@ -31,7 +31,7 @@
     if-eqz v0, :cond_0
 
     .line 2
-    iget-object v0, v0, Lcom/supercell/id/ui/youngplayer/register/YoungPlayerRegisterFlowFragment;->j0:Ljava/lang/String;
+    iget-object v0, v0, Lcom/supercell/id/ui/youngplayer/register/YoungPlayerRegisterFlowFragment;->k0:Ljava/lang/String;
 
     goto :goto_0
 
@@ -46,7 +46,7 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Landroidx/fragment/app/Fragment;->A:Landroidx/fragment/app/Fragment;
+    iget-object v0, p0, Landroidx/fragment/app/Fragment;->B:Landroidx/fragment/app/Fragment;
 
     .line 2
     instance-of v1, v0, Lcom/supercell/id/ui/youngplayer/register/YoungPlayerRegisterFlowFragment;

@@ -824,7 +824,7 @@
     if-le v0, v1, :cond_0
 
     .line 2
-    sget-object v0, Lio/sentry/cache/a;->f:Lio/sentry/cache/a;
+    sget-object v0, Lio/sentry/cache/a;->g:Lio/sentry/cache/a;
 
     invoke-static {p1, v0}, Ljava/util/Arrays;->sort([Ljava/lang/Object;Ljava/util/Comparator;)V
 

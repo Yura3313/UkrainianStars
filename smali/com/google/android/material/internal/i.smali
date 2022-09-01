@@ -154,9 +154,9 @@
     .line 7
     new-instance v2, Lp4/e;
 
-    invoke-direct {v2, p1, v0, v1}, Lp4/e;-><init>(Lp4/d;Landroid/text/TextPaint;Lb2/a0;)V
+    invoke-direct {v2, p1, v0, v1}, Lp4/e;-><init>(Lp4/d;Landroid/text/TextPaint;Lb2/z;)V
 
-    invoke-virtual {p1, p2, v2}, Lp4/d;->b(Landroid/content/Context;Lb2/a0;)V
+    invoke-virtual {p1, p2, v2}, Lp4/d;->b(Landroid/content/Context;Lb2/z;)V
 
     .line 8
     iget-object v0, p0, Lcom/google/android/material/internal/i;->e:Ljava/lang/ref/WeakReference;
@@ -184,7 +184,7 @@
 
     iget-object v1, p0, Lcom/google/android/material/internal/i;->b:Lcom/google/android/material/internal/i$a;
 
-    invoke-virtual {p1, p2, v0, v1}, Lp4/d;->c(Landroid/content/Context;Landroid/text/TextPaint;Lb2/a0;)V
+    invoke-virtual {p1, p2, v0, v1}, Lp4/d;->c(Landroid/content/Context;Landroid/text/TextPaint;Lb2/z;)V
 
     const/4 p1, 0x1
 

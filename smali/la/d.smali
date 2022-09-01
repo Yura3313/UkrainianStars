@@ -15,9 +15,9 @@
 
 
 # instance fields
-.field public f:Ljava/lang/String;
+.field public g:Ljava/lang/String;
 
-.field public g:[Ljava/lang/String;
+.field public h:[Ljava/lang/String;
 
 
 # direct methods
@@ -30,7 +30,7 @@
     const-string v0, "undefined"
 
     .line 2
-    iput-object v0, p0, Lla/d;->f:Ljava/lang/String;
+    iput-object v0, p0, Lla/d;->g:Ljava/lang/String;
 
     .line 3
     sget-object v0, Lla/d$a;->a:Ljava/util/HashSet;
@@ -42,11 +42,11 @@
     if-eqz v0, :cond_0
 
     .line 4
-    iput-object p1, p0, Lla/d;->f:Ljava/lang/String;
+    iput-object p1, p0, Lla/d;->g:Ljava/lang/String;
 
     .line 5
     :cond_0
-    iput-object p2, p0, Lla/d;->g:[Ljava/lang/String;
+    iput-object p2, p0, Lla/d;->h:[Ljava/lang/String;
 
     return-void
 .end method
@@ -61,11 +61,11 @@
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lla/d;->f:Ljava/lang/String;
+    iget-object v0, p0, Lla/d;->g:Ljava/lang/String;
 
     check-cast p1, Lla/d;
 
-    iget-object v1, p1, Lla/d;->f:Ljava/lang/String;
+    iget-object v1, p1, Lla/d;->g:Ljava/lang/String;
 
     .line 2
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -74,9 +74,9 @@
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lla/d;->g:[Ljava/lang/String;
+    iget-object v0, p0, Lla/d;->h:[Ljava/lang/String;
 
-    iget-object p1, p1, Lla/d;->g:[Ljava/lang/String;
+    iget-object p1, p1, Lla/d;->h:[Ljava/lang/String;
 
     .line 3
     invoke-static {v0, p1}, Ljava/util/Arrays;->equals([Ljava/lang/Object;[Ljava/lang/Object;)Z

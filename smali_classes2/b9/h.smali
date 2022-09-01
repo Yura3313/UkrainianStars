@@ -48,7 +48,7 @@
     const-string v3, "/models/"
 
     .line 3
-    invoke-static {v1, v2, v3}, Landroid/support/v4/media/b;->b(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v1, v2, v3}, Landroid/support/v4/media/b;->a(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -79,7 +79,7 @@
     invoke-direct {v3, v1, v5, v4}, Lc8/f;-><init>(Ljava/lang/String;La8/f;Le8/s;)V
 
     .line 10
-    new-instance v1, Lk3/m7;
+    new-instance v1, Lk3/n7;
 
     iget-object v4, p0, Lb9/h;->d:Lb9/i;
 
@@ -87,10 +87,10 @@
     iget-object v4, v4, Lb9/i;->b:Le8/s;
 
     .line 12
-    invoke-direct {v1, v3, v4}, Lk3/m7;-><init>(Lc8/j;Le8/s;)V
+    invoke-direct {v1, v3, v4}, Lk3/n7;-><init>(Lc8/j;Le8/s;)V
 
     .line 13
-    new-instance v3, Lk3/fw;
+    new-instance v3, Lk3/dw;
 
     iget-object v4, p0, Lb9/h;->d:Lb9/i;
 
@@ -98,7 +98,7 @@
     iget-object v4, v4, Lb9/i;->b:Le8/s;
 
     .line 15
-    invoke-direct {v3, v1, v4, v2}, Lk3/fw;-><init>(Lc8/j;Le8/s;Ljava/lang/String;)V
+    invoke-direct {v3, v1, v4, v2}, Lk3/dw;-><init>(Lc8/j;Le8/s;Ljava/lang/String;)V
 
     .line 16
     new-instance v1, Ln1/a;
@@ -258,7 +258,7 @@
     const-string v2, "Generic error while fetching smart intent model : "
 
     .line 41
-    invoke-static {v0, v2, v1}, Landroidx/savedstate/d;->g(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v0, v2, v1}, Le5/i;->i(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
     .line 42
     iget-object v0, p0, Lb9/h;->d:Lb9/i;
@@ -297,7 +297,7 @@
 
     .line 48
     :cond_2
-    iget-object v2, v1, Lcom/helpshift/common/exception/RootAPIException;->h:Ld8/a;
+    iget-object v2, v1, Lcom/helpshift/common/exception/RootAPIException;->i:Ld8/a;
 
     instance-of v3, v2, Ld8/b;
     :try_end_2
@@ -312,7 +312,7 @@
     check-cast v2, Ld8/b;
 
     .line 50
-    iget v3, v2, Ld8/b;->f:I
+    iget v3, v2, Ld8/b;->g:I
 
     sget-object v5, Lc8/k;->c:Ljava/lang/Integer;
 
@@ -345,7 +345,7 @@
 
     .line 54
     :cond_3
-    iget v3, v2, Ld8/b;->f:I
+    iget v3, v2, Ld8/b;->g:I
 
     sget-object v5, Lc8/k;->f:Ljava/lang/Integer;
 
@@ -355,7 +355,7 @@
 
     if-eq v3, v5, :cond_5
 
-    iget v2, v2, Ld8/b;->f:I
+    iget v2, v2, Ld8/b;->g:I
 
     sget-object v3, Lc8/k;->g:Ljava/lang/Integer;
 
@@ -370,7 +370,7 @@
 
     .line 56
     :cond_4
-    invoke-static {v0, v4, v1}, Landroidx/savedstate/d;->g(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v0, v4, v1}, Le5/i;->i(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
     .line 57
     iget-object v0, p0, Lb9/h;->d:Lb9/i;
@@ -388,7 +388,7 @@
     const-string v2, "Error smart intent model not exist or cached tree is not latest: "
 
     .line 58
-    invoke-static {v0, v2, v1}, Landroidx/savedstate/d;->g(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v0, v2, v1}, Le5/i;->i(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
     .line 59
     iget-object v0, p0, Lb9/h;->d:Lb9/i;
@@ -404,7 +404,7 @@
 
     .line 61
     :cond_6
-    invoke-static {v0, v4, v1}, Landroidx/savedstate/d;->g(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v0, v4, v1}, Le5/i;->i(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
     .line 62
     iget-object v0, p0, Lb9/h;->d:Lb9/i;
@@ -421,7 +421,7 @@
 
     .line 63
     :goto_2
-    iget-object v1, v1, Li7/c;->f:Ljava/lang/Long;
+    iget-object v1, v1, Li7/c;->g:Ljava/lang/Long;
 
     .line 64
     invoke-interface {v0, v1}, Ljava/util/Set;->remove(Ljava/lang/Object;)Z
@@ -438,7 +438,7 @@
     iget-object v2, p0, Lb9/h;->c:Li7/c;
 
     .line 67
-    iget-object v2, v2, Li7/c;->f:Ljava/lang/Long;
+    iget-object v2, v2, Li7/c;->g:Ljava/lang/Long;
 
     .line 68
     invoke-interface {v1, v2}, Ljava/util/Set;->remove(Ljava/lang/Object;)Z

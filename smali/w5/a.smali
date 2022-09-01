@@ -186,9 +186,9 @@
     invoke-static {v0, p2}, Ljava/util/Collections;->addAll(Ljava/util/Collection;[Ljava/lang/Object;)Z
 
     .line 8
-    new-instance v6, Lw5/e;
+    new-instance v6, Lk3/d4;
 
-    invoke-direct {v6, p0}, Lw5/e;-><init>(Ljava/lang/Object;)V
+    invoke-direct {v6, p0}, Lk3/d4;-><init>(Ljava/lang/Object;)V
 
     .line 9
     new-instance p0, Lw5/a;

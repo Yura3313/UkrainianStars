@@ -4,9 +4,9 @@
 
 
 # static fields
-.field public static final f:Z
+.field public static final g:Z
 
-.field public static final g:[Ljava/lang/StackTraceElement;
+.field public static final h:[Ljava/lang/StackTraceElement;
 
 
 # direct methods
@@ -32,12 +32,12 @@
     const/4 v0, 0x0
 
     :goto_0
-    sput-boolean v0, Lcom/google/zxing/ReaderException;->f:Z
+    sput-boolean v0, Lcom/google/zxing/ReaderException;->g:Z
 
     new-array v0, v1, [Ljava/lang/StackTraceElement;
 
     .line 2
-    sput-object v0, Lcom/google/zxing/ReaderException;->g:[Ljava/lang/StackTraceElement;
+    sput-object v0, Lcom/google/zxing/ReaderException;->h:[Ljava/lang/StackTraceElement;
 
     return-void
 .end method

@@ -23,11 +23,11 @@
 
 
 # static fields
-.field public static final enum f:Lcom/supercell/titan/NativeHTTPConnection$Method;
-
 .field public static final enum g:Lcom/supercell/titan/NativeHTTPConnection$Method;
 
-.field public static final synthetic h:[Lcom/supercell/titan/NativeHTTPConnection$Method;
+.field public static final enum h:Lcom/supercell/titan/NativeHTTPConnection$Method;
+
+.field public static final synthetic i:[Lcom/supercell/titan/NativeHTTPConnection$Method;
 
 
 # direct methods
@@ -43,7 +43,7 @@
 
     invoke-direct {v0, v1, v2}, Lcom/supercell/titan/NativeHTTPConnection$Method;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/supercell/titan/NativeHTTPConnection$Method;->f:Lcom/supercell/titan/NativeHTTPConnection$Method;
+    sput-object v0, Lcom/supercell/titan/NativeHTTPConnection$Method;->g:Lcom/supercell/titan/NativeHTTPConnection$Method;
 
     new-instance v1, Lcom/supercell/titan/NativeHTTPConnection$Method;
 
@@ -53,7 +53,7 @@
 
     invoke-direct {v1, v3, v4}, Lcom/supercell/titan/NativeHTTPConnection$Method;-><init>(Ljava/lang/String;I)V
 
-    sput-object v1, Lcom/supercell/titan/NativeHTTPConnection$Method;->g:Lcom/supercell/titan/NativeHTTPConnection$Method;
+    sput-object v1, Lcom/supercell/titan/NativeHTTPConnection$Method;->h:Lcom/supercell/titan/NativeHTTPConnection$Method;
 
     const/4 v3, 0x2
 
@@ -64,7 +64,7 @@
     aput-object v1, v3, v4
 
     .line 2
-    sput-object v3, Lcom/supercell/titan/NativeHTTPConnection$Method;->h:[Lcom/supercell/titan/NativeHTTPConnection$Method;
+    sput-object v3, Lcom/supercell/titan/NativeHTTPConnection$Method;->i:[Lcom/supercell/titan/NativeHTTPConnection$Method;
 
     return-void
 .end method
@@ -99,7 +99,7 @@
 .method public static values()[Lcom/supercell/titan/NativeHTTPConnection$Method;
     .locals 1
 
-    sget-object v0, Lcom/supercell/titan/NativeHTTPConnection$Method;->h:[Lcom/supercell/titan/NativeHTTPConnection$Method;
+    sget-object v0, Lcom/supercell/titan/NativeHTTPConnection$Method;->i:[Lcom/supercell/titan/NativeHTTPConnection$Method;
 
     invoke-virtual {v0}, [Lcom/supercell/titan/NativeHTTPConnection$Method;->clone()Ljava/lang/Object;
 

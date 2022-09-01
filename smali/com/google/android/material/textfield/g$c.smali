@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field public final synthetic f:Lcom/google/android/material/textfield/g;
+.field public final synthetic g:Lcom/google/android/material/textfield/g;
 
 
 # direct methods
 .method public constructor <init>(Lcom/google/android/material/textfield/g;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/google/android/material/textfield/g$c;->f:Lcom/google/android/material/textfield/g;
+    iput-object p1, p0, Lcom/google/android/material/textfield/g$c;->g:Lcom/google/android/material/textfield/g;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -38,7 +38,7 @@
     .locals 0
 
     .line 1
-    iget-object p1, p0, Lcom/google/android/material/textfield/g$c;->f:Lcom/google/android/material/textfield/g;
+    iget-object p1, p0, Lcom/google/android/material/textfield/g$c;->g:Lcom/google/android/material/textfield/g;
 
     iget-object p1, p1, Lcom/google/android/material/textfield/k;->a:Lcom/google/android/material/textfield/TextInputLayout;
 
@@ -47,14 +47,14 @@
     if-nez p2, :cond_0
 
     .line 2
-    iget-object p1, p0, Lcom/google/android/material/textfield/g$c;->f:Lcom/google/android/material/textfield/g;
+    iget-object p1, p0, Lcom/google/android/material/textfield/g$c;->g:Lcom/google/android/material/textfield/g;
 
     const/4 p2, 0x0
 
     invoke-static {p1, p2}, Lcom/google/android/material/textfield/g;->e(Lcom/google/android/material/textfield/g;Z)V
 
     .line 3
-    iget-object p1, p0, Lcom/google/android/material/textfield/g$c;->f:Lcom/google/android/material/textfield/g;
+    iget-object p1, p0, Lcom/google/android/material/textfield/g$c;->g:Lcom/google/android/material/textfield/g;
 
     .line 4
     iput-boolean p2, p1, Lcom/google/android/material/textfield/g;->i:Z

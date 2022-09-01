@@ -16,7 +16,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
-            "Lcom/helpshift/util/h0<",
+            "Lcom/helpshift/util/f0<",
             "Ljava/lang/String;",
             "Ljava/lang/Double;",
             ">;>;"
@@ -35,7 +35,7 @@
             "Ljava/lang/Integer;",
             "Ljava/lang/Integer;",
             "Ljava/util/List<",
-            "Lcom/helpshift/util/h0<",
+            "Lcom/helpshift/util/f0<",
             "Ljava/lang/String;",
             "Ljava/lang/Double;",
             ">;>;)V"

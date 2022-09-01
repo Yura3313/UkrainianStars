@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field public final synthetic f:Lcom/supercell/titan/KeyboardDialog;
+.field public final synthetic g:Lcom/supercell/titan/KeyboardDialog;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/titan/KeyboardDialog;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/titan/KeyboardDialog$a;->f:Lcom/supercell/titan/KeyboardDialog;
+    iput-object p1, p0, Lcom/supercell/titan/KeyboardDialog$a;->g:Lcom/supercell/titan/KeyboardDialog;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -49,10 +49,10 @@
     invoke-virtual {p2, p1, v0}, Landroid/view/MotionEvent;->setLocation(FF)V
 
     .line 2
-    iget-object p1, p0, Lcom/supercell/titan/KeyboardDialog$a;->f:Lcom/supercell/titan/KeyboardDialog;
+    iget-object p1, p0, Lcom/supercell/titan/KeyboardDialog$a;->g:Lcom/supercell/titan/KeyboardDialog;
 
     .line 3
-    iget-object p1, p1, Lcom/supercell/titan/KeyboardDialog;->f:Lcom/supercell/titan/GameApp;
+    iget-object p1, p1, Lcom/supercell/titan/KeyboardDialog;->g:Lcom/supercell/titan/GameApp;
 
     .line 4
     invoke-virtual {p1}, Lcom/supercell/titan/GameApp;->getView()Lcom/supercell/titan/GL2JNISurfaceView;

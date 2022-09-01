@@ -1384,7 +1384,7 @@
     if-nez v0, :cond_1
 
     .line 6
-    sget-object v0, Lcom/google/protobuf/i;->g:Lcom/google/protobuf/i$h;
+    sget-object v0, Lcom/google/protobuf/i;->h:Lcom/google/protobuf/i$h;
 
     return-object v0
 
@@ -1424,7 +1424,7 @@
 
     .line 11
     :goto_0
-    sget-object v1, Lcom/google/protobuf/i;->g:Lcom/google/protobuf/i$h;
+    sget-object v1, Lcom/google/protobuf/i;->h:Lcom/google/protobuf/i$h;
 
     .line 12
     new-instance v1, Lcom/google/protobuf/i$h;

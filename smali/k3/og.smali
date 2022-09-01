@@ -7,42 +7,42 @@
 
 
 # instance fields
-.field public final synthetic f:Ljava/lang/String;
-
 .field public final synthetic g:Ljava/lang/String;
 
-.field public final synthetic h:J
+.field public final synthetic h:Ljava/lang/String;
 
 .field public final synthetic i:J
 
-.field public final synthetic j:Z
+.field public final synthetic j:J
 
-.field public final synthetic k:I
+.field public final synthetic k:Z
 
 .field public final synthetic l:I
 
-.field public final synthetic m:Lk3/mg;
+.field public final synthetic m:I
+
+.field public final synthetic n:Lk3/mg;
 
 
 # direct methods
 .method public constructor <init>(Lk3/mg;Ljava/lang/String;Ljava/lang/String;JJZII)V
     .locals 0
 
-    iput-object p1, p0, Lk3/og;->m:Lk3/mg;
+    iput-object p1, p0, Lk3/og;->n:Lk3/mg;
 
-    iput-object p2, p0, Lk3/og;->f:Ljava/lang/String;
+    iput-object p2, p0, Lk3/og;->g:Ljava/lang/String;
 
-    iput-object p3, p0, Lk3/og;->g:Ljava/lang/String;
+    iput-object p3, p0, Lk3/og;->h:Ljava/lang/String;
 
-    iput-wide p4, p0, Lk3/og;->h:J
+    iput-wide p4, p0, Lk3/og;->i:J
 
-    iput-wide p6, p0, Lk3/og;->i:J
+    iput-wide p6, p0, Lk3/og;->j:J
 
-    iput-boolean p8, p0, Lk3/og;->j:Z
+    iput-boolean p8, p0, Lk3/og;->k:Z
 
-    iput p9, p0, Lk3/og;->k:I
+    iput p9, p0, Lk3/og;->l:I
 
-    iput p10, p0, Lk3/og;->l:I
+    iput p10, p0, Lk3/og;->m:I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -67,21 +67,21 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 3
-    iget-object v1, p0, Lk3/og;->f:Ljava/lang/String;
+    iget-object v1, p0, Lk3/og;->g:Ljava/lang/String;
 
     const-string v2, "src"
 
     invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 4
-    iget-object v1, p0, Lk3/og;->g:Ljava/lang/String;
+    iget-object v1, p0, Lk3/og;->h:Ljava/lang/String;
 
     const-string v2, "cachedSrc"
 
     invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 5
-    iget-wide v1, p0, Lk3/og;->h:J
+    iget-wide v1, p0, Lk3/og;->i:J
 
     invoke-static {v1, v2}, Ljava/lang/Long;->toString(J)Ljava/lang/String;
 
@@ -92,7 +92,7 @@
     invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 6
-    iget-wide v1, p0, Lk3/og;->i:J
+    iget-wide v1, p0, Lk3/og;->j:J
 
     invoke-static {v1, v2}, Ljava/lang/Long;->toString(J)Ljava/lang/String;
 
@@ -103,7 +103,7 @@
     invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 7
-    iget-boolean v1, p0, Lk3/og;->j:Z
+    iget-boolean v1, p0, Lk3/og;->k:Z
 
     if-eqz v1, :cond_0
 
@@ -120,7 +120,7 @@
     invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 8
-    iget v1, p0, Lk3/og;->k:I
+    iget v1, p0, Lk3/og;->l:I
 
     invoke-static {v1}, Ljava/lang/Integer;->toString(I)Ljava/lang/String;
 
@@ -131,7 +131,7 @@
     invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 9
-    iget v1, p0, Lk3/og;->l:I
+    iget v1, p0, Lk3/og;->m:I
 
     invoke-static {v1}, Ljava/lang/Integer;->toString(I)Ljava/lang/String;
 
@@ -142,7 +142,7 @@
     invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 10
-    iget-object v1, p0, Lk3/og;->m:Lk3/mg;
+    iget-object v1, p0, Lk3/og;->n:Lk3/mg;
 
     invoke-static {v1, v0}, Lk3/mg;->j(Lk3/mg;Ljava/util/Map;)V
 

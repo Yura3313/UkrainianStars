@@ -1,165 +1,61 @@
-.class public final synthetic Lk3/u70;
-.super Ljava/lang/Object;
+.class public final Lk3/u70;
+.super Lk3/lu;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
-
-# interfaces
-.implements Ljava/lang/Runnable;
-
-
-# instance fields
-.field public final synthetic f:I
-
-.field public final g:Ljava/lang/Object;
 
 
 # direct methods
-.method public synthetic constructor <init>(Ljava/lang/Object;I)V
-    .locals 0
+.method public constructor <init>()V
+    .locals 2
 
-    iput p2, p0, Lk3/u70;->f:I
+    sget-object v0, Lk3/lp0;->h:Lk3/lp0;
 
-    iput-object p1, p0, Lk3/u70;->g:Ljava/lang/Object;
+    const/4 v1, 0x0
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0, v0, v1}, Lk3/lu;-><init>(Lk3/xu;Lk3/gh;)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final run()V
-    .locals 4
+.method public final d(Lk3/hq;)Ljava/util/Set;
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lk3/hq;",
+            ")",
+            "Ljava/util/Set<",
+            "Lk3/qt<",
+            "Lk3/vq;",
+            ">;>;"
+        }
+    .end annotation
 
-    iget v0, p0, Lk3/u70;->f:I
+    invoke-static {}, Ljava/util/Collections;->emptySet()Ljava/util/Set;
 
-    packed-switch v0, :pswitch_data_0
+    move-result-object p1
 
-    goto :goto_0
+    return-object p1
+.end method
 
-    .line 1
-    :pswitch_0
-    iget-object v0, p0, Lk3/u70;->g:Ljava/lang/Object;
+.method public final e(Lk3/hq;)Ljava/util/Set;
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lk3/hq;",
+            ")",
+            "Ljava/util/Set<",
+            "Lk3/qt<",
+            "Lk3/ht;",
+            ">;>;"
+        }
+    .end annotation
 
-    check-cast v0, Lk3/v70;
+    invoke-static {}, Ljava/util/Collections;->emptySet()Ljava/util/Set;
 
-    .line 2
-    iget-object v1, v0, Lk3/v70;->c:Ljava/util/concurrent/Executor;
+    move-result-object p1
 
-    new-instance v2, Lk3/a5;
-
-    const/4 v3, 0x2
-
-    invoke-direct {v2, v0, v3}, Lk3/a5;-><init>(Ljava/lang/Object;I)V
-
-    invoke-interface {v1, v2}, Ljava/util/concurrent/Executor;->execute(Ljava/lang/Runnable;)V
-
-    return-void
-
-    .line 3
-    :goto_0
-    iget-object v0, p0, Lk3/u70;->g:Ljava/lang/Object;
-
-    check-cast v0, Lk3/u21;
-
-    .line 4
-    iget-object v0, v0, Lk3/u21;->h:Ljava/lang/Object;
-
-    .line 5
-    monitor-enter v0
-
-    .line 6
-    :try_start_0
-    iget-object v1, p0, Lk3/u70;->g:Ljava/lang/Object;
-
-    move-object v2, v1
-
-    check-cast v2, Lk3/u21;
-
-    .line 7
-    iget-boolean v2, v2, Lk3/u21;->i:Z
-
-    if-eqz v2, :cond_0
-
-    .line 8
-    move-object v2, v1
-
-    check-cast v2, Lk3/u21;
-
-    .line 9
-    iget-boolean v2, v2, Lk3/u21;->j:Z
-
-    if-eqz v2, :cond_0
-
-    .line 10
-    move-object v2, v1
-
-    check-cast v2, Lk3/u21;
-
-    const/4 v3, 0x0
-
-    .line 11
-    iput-boolean v3, v2, Lk3/u21;->i:Z
-
-    .line 12
-    check-cast v1, Lk3/u21;
-
-    .line 13
-    iget-object v1, v1, Lk3/u21;->k:Ljava/util/ArrayList;
-
-    .line 14
-    invoke-virtual {v1}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
-
-    move-result-object v1
-
-    :catch_0
-    :goto_1
-    invoke-interface {v1}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v2
-
-    if-eqz v2, :cond_0
-
-    invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v2
-
-    check-cast v2, Lk3/w21;
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    .line 15
-    :try_start_1
-    invoke-interface {v2, v3}, Lk3/w21;->a(Z)V
-    :try_end_1
-    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_0
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
-    goto :goto_1
-
-    .line 16
-    :cond_0
-    :try_start_2
-    monitor-exit v0
-
-    return-void
-
-    :catchall_0
-    move-exception v1
-
-    monitor-exit v0
-    :try_end_2
-    .catchall {:try_start_2 .. :try_end_2} :catchall_0
-
-    goto :goto_3
-
-    :goto_2
-    throw v1
-
-    :goto_3
-    goto :goto_2
-
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+    return-object p1
 .end method

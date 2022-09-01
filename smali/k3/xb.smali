@@ -7,26 +7,26 @@
 
 
 # instance fields
-.field public final synthetic f:Landroid/content/Context;
+.field public final synthetic g:Landroid/content/Context;
 
-.field public final synthetic g:Ljava/lang/String;
-
-.field public final synthetic h:Z
+.field public final synthetic h:Ljava/lang/String;
 
 .field public final synthetic i:Z
+
+.field public final synthetic j:Z
 
 
 # direct methods
 .method public constructor <init>(Landroid/content/Context;Ljava/lang/String;ZZ)V
     .locals 0
 
-    iput-object p1, p0, Lk3/xb;->f:Landroid/content/Context;
+    iput-object p1, p0, Lk3/xb;->g:Landroid/content/Context;
 
-    iput-object p2, p0, Lk3/xb;->g:Ljava/lang/String;
+    iput-object p2, p0, Lk3/xb;->h:Ljava/lang/String;
 
-    iput-boolean p3, p0, Lk3/xb;->h:Z
+    iput-boolean p3, p0, Lk3/xb;->i:Z
 
-    iput-boolean p4, p0, Lk3/xb;->i:Z
+    iput-boolean p4, p0, Lk3/xb;->j:Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -41,17 +41,17 @@
     .line 1
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
-    iget-object v1, p0, Lk3/xb;->f:Landroid/content/Context;
+    iget-object v1, p0, Lk3/xb;->g:Landroid/content/Context;
 
     invoke-direct {v0, v1}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
     .line 2
-    iget-object v1, p0, Lk3/xb;->g:Ljava/lang/String;
+    iget-object v1, p0, Lk3/xb;->h:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog$Builder;->setMessage(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
 
     .line 3
-    iget-boolean v1, p0, Lk3/xb;->h:Z
+    iget-boolean v1, p0, Lk3/xb;->i:Z
 
     if-eqz v1, :cond_0
 
@@ -70,7 +70,7 @@
 
     .line 6
     :goto_0
-    iget-boolean v1, p0, Lk3/xb;->i:Z
+    iget-boolean v1, p0, Lk3/xb;->j:Z
 
     const/4 v2, 0x0
 

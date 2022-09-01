@@ -1,40 +1,41 @@
-.class public interface abstract Lb2/n;
-.super Ljava/lang/Object;
+.class public final Lb2/n;
+.super Lcom/google/android/gms/common/api/internal/BasePendingResult;
 .source "com.google.android.gms:play-services-base@@17.5.0"
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "<T:",
-        "Ljava/lang/Object;",
-        "U:",
-        "Ljava/lang/Object;",
-        ">",
-        "Ljava/lang/Object;"
+        "Lcom/google/android/gms/common/api/internal/BasePendingResult<",
+        "Lcom/google/android/gms/common/api/Status;",
+        ">;"
     }
 .end annotation
 
 
+# direct methods
+.method public constructor <init>(Lcom/google/android/gms/common/api/c;)V
+    .locals 0
+    .param p1    # Lcom/google/android/gms/common/api/c;
+        .annotation build Landroidx/annotation/RecentlyNonNull;
+        .end annotation
+    .end param
+
+    invoke-direct {p0, p1}, Lcom/google/android/gms/common/api/internal/BasePendingResult;-><init>(Lcom/google/android/gms/common/api/c;)V
+
+    return-void
+.end method
+
+
 # virtual methods
-.method public abstract a(Ljava/lang/Object;Ljava/lang/Object;)V
-    .param p1    # Ljava/lang/Object;
+.method public final synthetic d(Lcom/google/android/gms/common/api/Status;)La2/g;
+    .locals 0
+    .param p1    # Lcom/google/android/gms/common/api/Status;
         .annotation build Landroidx/annotation/RecentlyNonNull;
         .end annotation
     .end param
-    .param p2    # Ljava/lang/Object;
-        .annotation build Landroidx/annotation/RecentlyNonNull;
-        .end annotation
-    .end param
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TT;TU;)V"
-        }
+    .annotation build Landroidx/annotation/RecentlyNonNull;
     .end annotation
 
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Landroid/os/RemoteException;
-        }
-    .end annotation
+    return-object p1
 .end method

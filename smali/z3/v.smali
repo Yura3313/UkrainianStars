@@ -6,22 +6,22 @@
 
 
 # instance fields
-.field public final synthetic f:Ljava/lang/String;
+.field public final synthetic g:Ljava/lang/String;
 
-.field public final synthetic g:J
+.field public final synthetic h:J
 
-.field public final synthetic h:Lz3/a;
+.field public final synthetic i:Lz3/a;
 
 
 # direct methods
 .method public constructor <init>(Lz3/a;Ljava/lang/String;J)V
     .locals 0
 
-    iput-object p1, p0, Lz3/v;->h:Lz3/a;
+    iput-object p1, p0, Lz3/v;->i:Lz3/a;
 
-    iput-object p2, p0, Lz3/v;->f:Ljava/lang/String;
+    iput-object p2, p0, Lz3/v;->g:Ljava/lang/String;
 
-    iput-wide p3, p0, Lz3/v;->g:J
+    iput-wide p3, p0, Lz3/v;->h:J
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -34,23 +34,23 @@
     .locals 8
 
     .line 1
-    iget-object v0, p0, Lz3/v;->h:Lz3/a;
+    iget-object v0, p0, Lz3/v;->i:Lz3/a;
 
-    iget-object v1, p0, Lz3/v;->f:Ljava/lang/String;
+    iget-object v1, p0, Lz3/v;->g:Ljava/lang/String;
 
-    iget-wide v2, p0, Lz3/v;->g:J
+    iget-wide v2, p0, Lz3/v;->h:J
 
     .line 2
-    invoke-virtual {v0}, Lz3/w1;->o()V
+    invoke-virtual {v0}, Lz3/x1;->o()V
 
     .line 3
-    invoke-virtual {v0}, Lz3/w1;->n()V
+    invoke-virtual {v0}, Lz3/x1;->n()V
 
     .line 4
     invoke-static {v1}, Ld2/h;->e(Ljava/lang/String;)Ljava/lang/String;
 
     .line 5
-    iget-object v4, v0, Lz3/a;->c:Lm/a;
+    iget-object v4, v0, Lz3/a;->i:Lm/a;
 
     invoke-virtual {v4}, Lm/g;->isEmpty()Z
 
@@ -59,11 +59,11 @@
     if-eqz v4, :cond_0
 
     .line 6
-    iput-wide v2, v0, Lz3/a;->d:J
+    iput-wide v2, v0, Lz3/a;->j:J
 
     .line 7
     :cond_0
-    iget-object v4, v0, Lz3/a;->c:Lm/a;
+    iget-object v4, v0, Lz3/a;->i:Lm/a;
 
     const/4 v5, 0x0
 
@@ -80,7 +80,7 @@
     if-eqz v4, :cond_1
 
     .line 10
-    iget-object v0, v0, Lz3/a;->c:Lm/a;
+    iget-object v0, v0, Lz3/a;->i:Lm/a;
 
     invoke-virtual {v4}, Ljava/lang/Integer;->intValue()I
 
@@ -98,10 +98,10 @@
 
     .line 11
     :cond_1
-    iget-object v4, v0, Lz3/a;->c:Lm/a;
+    iget-object v4, v0, Lz3/a;->i:Lm/a;
 
     .line 12
-    iget v6, v4, Lm/g;->h:I
+    iget v6, v4, Lm/g;->i:I
 
     const/16 v7, 0x64
 
@@ -113,7 +113,7 @@
     move-result-object v0
 
     .line 14
-    iget-object v0, v0, Lz3/o;->i:Lz3/q;
+    iget-object v0, v0, Lz3/o;->o:Lz3/q;
 
     const-string v1, "Too many ads visible"
 
@@ -131,7 +131,7 @@
     invoke-virtual {v4, v1, v5}, Lm/g;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 17
-    iget-object v0, v0, Lz3/a;->b:Lm/a;
+    iget-object v0, v0, Lz3/a;->h:Lm/a;
 
     invoke-static {v2, v3}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 

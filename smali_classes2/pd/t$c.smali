@@ -1,5 +1,5 @@
 .class public final Lpd/t$c;
-.super Lse/h;
+.super Lse/i;
 .source "NewGameAnimationView.kt"
 
 # interfaces
@@ -18,27 +18,27 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/a<",
-        "Lie/h;",
+        "Lie/i;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic f:Lpd/t;
+.field public final synthetic g:Lpd/t;
 
 
 # direct methods
 .method public constructor <init>(Lpd/t;)V
     .locals 0
 
-    iput-object p1, p0, Lpd/t$c;->f:Lpd/t;
+    iput-object p1, p0, Lpd/t$c;->g:Lpd/t;
 
     const/4 p1, 0x0
 
-    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -49,13 +49,13 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lpd/t$c;->f:Lpd/t;
+    iget-object v0, p0, Lpd/t$c;->g:Lpd/t;
 
     invoke-virtual {v0}, Lpd/t;->getAnimationComplete()Lze/o;
 
     move-result-object v0
 
-    sget-object v1, Lie/h;->a:Lie/h;
+    sget-object v1, Lie/i;->a:Lie/i;
 
     .line 2
     invoke-interface {v0, v1}, Lze/o;->m(Ljava/lang/Object;)Z

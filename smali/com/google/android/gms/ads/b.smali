@@ -1,75 +1,133 @@
-.class public Lcom/google/android/gms/ads/b;
-.super Ljava/lang/Object;
+.class public final enum Lcom/google/android/gms/ads/b;
+.super Ljava/lang/Enum;
 .source "com.google.android.gms:play-services-ads-lite@@19.3.0"
 
 
-# direct methods
-.method public constructor <init>()V
-    .locals 0
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Enum<",
+        "Lcom/google/android/gms/ads/b;",
+        ">;"
+    }
+.end annotation
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+# static fields
+.field public static final enum g:Lcom/google/android/gms/ads/b;
+
+.field public static final enum h:Lcom/google/android/gms/ads/b;
+
+.field public static final enum i:Lcom/google/android/gms/ads/b;
+
+.field public static final enum j:Lcom/google/android/gms/ads/b;
+
+.field public static final synthetic k:[Lcom/google/android/gms/ads/b;
+
+
+# direct methods
+.method public static constructor <clinit>()V
+    .locals 9
+
+    .line 1
+    new-instance v0, Lcom/google/android/gms/ads/b;
+
+    const-string v1, "BANNER"
+
+    const/4 v2, 0x0
+
+    invoke-direct {v0, v1, v2}, Lcom/google/android/gms/ads/b;-><init>(Ljava/lang/String;I)V
+
+    sput-object v0, Lcom/google/android/gms/ads/b;->g:Lcom/google/android/gms/ads/b;
+
+    .line 2
+    new-instance v1, Lcom/google/android/gms/ads/b;
+
+    const-string v3, "INTERSTITIAL"
+
+    const/4 v4, 0x1
+
+    invoke-direct {v1, v3, v4}, Lcom/google/android/gms/ads/b;-><init>(Ljava/lang/String;I)V
+
+    sput-object v1, Lcom/google/android/gms/ads/b;->h:Lcom/google/android/gms/ads/b;
+
+    .line 3
+    new-instance v3, Lcom/google/android/gms/ads/b;
+
+    const-string v5, "REWARDED"
+
+    const/4 v6, 0x2
+
+    invoke-direct {v3, v5, v6}, Lcom/google/android/gms/ads/b;-><init>(Ljava/lang/String;I)V
+
+    sput-object v3, Lcom/google/android/gms/ads/b;->i:Lcom/google/android/gms/ads/b;
+
+    .line 4
+    new-instance v5, Lcom/google/android/gms/ads/b;
+
+    const-string v7, "NATIVE"
+
+    const/4 v8, 0x3
+
+    invoke-direct {v5, v7, v8}, Lcom/google/android/gms/ads/b;-><init>(Ljava/lang/String;I)V
+
+    sput-object v5, Lcom/google/android/gms/ads/b;->j:Lcom/google/android/gms/ads/b;
+
+    const/4 v7, 0x4
+
+    new-array v7, v7, [Lcom/google/android/gms/ads/b;
+
+    aput-object v0, v7, v2
+
+    aput-object v1, v7, v4
+
+    aput-object v3, v7, v6
+
+    aput-object v5, v7, v8
+
+    .line 5
+    sput-object v7, Lcom/google/android/gms/ads/b;->k:[Lcom/google/android/gms/ads/b;
 
     return-void
 .end method
 
-
-# virtual methods
-.method public a()V
+.method public constructor <init>(Ljava/lang/String;I)V
     .locals 0
-
-    const/4 p0, 0x0
-
-    throw p0
-.end method
-
-.method public b(I)V
-    .locals 0
-    .annotation runtime Ljava/lang/Deprecated;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()V"
+        }
     .end annotation
 
-    const/4 p0, 0x0
-
-    throw p0
-.end method
-
-.method public c(Lcom/google/android/gms/ads/j;)V
-    .locals 0
+    invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void
 .end method
 
-.method public d()V
-    .locals 0
+.method public static valueOf(Ljava/lang/String;)Lcom/google/android/gms/ads/b;
+    .locals 1
 
-    return-void
+    const-class v0, Lcom/google/android/gms/ads/b;
+
+    invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
+
+    move-result-object p0
+
+    check-cast p0, Lcom/google/android/gms/ads/b;
+
+    return-object p0
 .end method
 
-.method public e()V
-    .locals 0
+.method public static values()[Lcom/google/android/gms/ads/b;
+    .locals 1
 
-    const/4 p0, 0x0
+    sget-object v0, Lcom/google/android/gms/ads/b;->k:[Lcom/google/android/gms/ads/b;
 
-    throw p0
-.end method
+    invoke-virtual {v0}, [Lcom/google/android/gms/ads/b;->clone()Ljava/lang/Object;
 
-.method public f()V
-    .locals 0
+    move-result-object v0
 
-    const/4 p0, 0x0
+    check-cast v0, [Lcom/google/android/gms/ads/b;
 
-    throw p0
-.end method
-
-.method public g()V
-    .locals 0
-
-    const/4 p0, 0x0
-
-    throw p0
-.end method
-
-.method public q()V
-    .locals 0
-
-    return-void
+    return-object v0
 .end method

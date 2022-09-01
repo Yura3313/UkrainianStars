@@ -1,25 +1,27 @@
 .class public interface abstract Lv3/s3;
 .super Ljava/lang/Object;
 
+# interfaces
+.implements Lv3/u3;
+
 
 # virtual methods
-.method public abstract a(Ljava/lang/Class;)Lv3/r3;
-    .annotation system Ldalvik/annotation/Signature;
+.method public abstract H()Lv3/w1;
+.end method
+
+.method public abstract a()Lv3/t3;
+.end method
+
+.method public abstract b(Lcom/google/android/gms/internal/measurement/zztv;)V
+    .annotation system Ldalvik/annotation/Throws;
         value = {
-            "(",
-            "Ljava/lang/Class<",
-            "*>;)",
-            "Lv3/r3;"
+            Ljava/io/IOException;
         }
     .end annotation
 .end method
 
-.method public abstract b(Ljava/lang/Class;)Z
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/lang/Class<",
-            "*>;)Z"
-        }
-    .end annotation
+.method public abstract c()I
+.end method
+
+.method public abstract d()Lv3/t3;
 .end method

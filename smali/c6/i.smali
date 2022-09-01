@@ -7,19 +7,9 @@
 
 
 # instance fields
-.field public f:Z
+.field public g:Z
 
-.field public g:Ljava/lang/String;
-
-.field public h:Ljava/util/ArrayList;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/List<",
-            "Ljava/lang/Integer;",
-            ">;"
-        }
-    .end annotation
-.end field
+.field public h:Ljava/lang/String;
 
 .field public i:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
@@ -31,9 +21,19 @@
     .end annotation
 .end field
 
-.field public j:Z
+.field public j:Ljava/util/ArrayList;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/List<",
+            "Ljava/lang/Integer;",
+            ">;"
+        }
+    .end annotation
+.end field
 
-.field public k:Ljava/lang/String;
+.field public k:Z
+
+.field public l:Ljava/lang/String;
 
 
 # direct methods
@@ -46,24 +46,24 @@
     const-string v0, ""
 
     .line 2
-    iput-object v0, p0, Lc6/i;->g:Ljava/lang/String;
+    iput-object v0, p0, Lc6/i;->h:Ljava/lang/String;
 
     .line 3
     new-instance v1, Ljava/util/ArrayList;
 
     invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v1, p0, Lc6/i;->h:Ljava/util/ArrayList;
+    iput-object v1, p0, Lc6/i;->i:Ljava/util/ArrayList;
 
     .line 4
     new-instance v1, Ljava/util/ArrayList;
 
     invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v1, p0, Lc6/i;->i:Ljava/util/ArrayList;
+    iput-object v1, p0, Lc6/i;->j:Ljava/util/ArrayList;
 
     .line 5
-    iput-object v0, p0, Lc6/i;->k:Ljava/lang/String;
+    iput-object v0, p0, Lc6/i;->l:Ljava/lang/String;
 
     return-void
 .end method
@@ -93,10 +93,10 @@
     move-result-object v0
 
     .line 3
-    iput-boolean v1, p0, Lc6/i;->f:Z
+    iput-boolean v1, p0, Lc6/i;->g:Z
 
     .line 4
-    iput-object v0, p0, Lc6/i;->g:Ljava/lang/String;
+    iput-object v0, p0, Lc6/i;->h:Ljava/lang/String;
 
     .line 5
     :cond_0
@@ -112,7 +112,7 @@
     if-ge v3, v0, :cond_1
 
     .line 6
-    iget-object v4, p0, Lc6/i;->h:Ljava/util/ArrayList;
+    iget-object v4, p0, Lc6/i;->i:Ljava/util/ArrayList;
 
     invoke-interface {p1}, Ljava/io/DataInput;->readInt()I
 
@@ -138,7 +138,7 @@
     if-ge v2, v0, :cond_2
 
     .line 8
-    iget-object v3, p0, Lc6/i;->i:Ljava/util/ArrayList;
+    iget-object v3, p0, Lc6/i;->j:Ljava/util/ArrayList;
 
     invoke-interface {p1}, Ljava/io/DataInput;->readInt()I
 
@@ -168,10 +168,10 @@
     move-result-object p1
 
     .line 11
-    iput-boolean v1, p0, Lc6/i;->j:Z
+    iput-boolean v1, p0, Lc6/i;->k:Z
 
     .line 12
-    iput-object p1, p0, Lc6/i;->k:Ljava/lang/String;
+    iput-object p1, p0, Lc6/i;->l:Ljava/lang/String;
 
     :cond_3
     return-void
@@ -186,23 +186,23 @@
     .end annotation
 
     .line 1
-    iget-boolean v0, p0, Lc6/i;->f:Z
+    iget-boolean v0, p0, Lc6/i;->g:Z
 
     invoke-interface {p1, v0}, Ljava/io/DataOutput;->writeBoolean(Z)V
 
     .line 2
-    iget-boolean v0, p0, Lc6/i;->f:Z
+    iget-boolean v0, p0, Lc6/i;->g:Z
 
     if-eqz v0, :cond_0
 
     .line 3
-    iget-object v0, p0, Lc6/i;->g:Ljava/lang/String;
+    iget-object v0, p0, Lc6/i;->h:Ljava/lang/String;
 
     invoke-interface {p1, v0}, Ljava/io/DataOutput;->writeUTF(Ljava/lang/String;)V
 
     .line 4
     :cond_0
-    iget-object v0, p0, Lc6/i;->h:Ljava/util/ArrayList;
+    iget-object v0, p0, Lc6/i;->i:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -219,7 +219,7 @@
     if-ge v2, v0, :cond_1
 
     .line 6
-    iget-object v3, p0, Lc6/i;->h:Ljava/util/ArrayList;
+    iget-object v3, p0, Lc6/i;->i:Ljava/util/ArrayList;
 
     invoke-virtual {v3, v2}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -239,7 +239,7 @@
 
     .line 7
     :cond_1
-    iget-object v0, p0, Lc6/i;->i:Ljava/util/ArrayList;
+    iget-object v0, p0, Lc6/i;->j:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -252,7 +252,7 @@
     if-ge v1, v0, :cond_2
 
     .line 9
-    iget-object v2, p0, Lc6/i;->i:Ljava/util/ArrayList;
+    iget-object v2, p0, Lc6/i;->j:Ljava/util/ArrayList;
 
     invoke-virtual {v2, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -272,17 +272,17 @@
 
     .line 10
     :cond_2
-    iget-boolean v0, p0, Lc6/i;->j:Z
+    iget-boolean v0, p0, Lc6/i;->k:Z
 
     invoke-interface {p1, v0}, Ljava/io/DataOutput;->writeBoolean(Z)V
 
     .line 11
-    iget-boolean v0, p0, Lc6/i;->j:Z
+    iget-boolean v0, p0, Lc6/i;->k:Z
 
     if-eqz v0, :cond_3
 
     .line 12
-    iget-object v0, p0, Lc6/i;->k:Ljava/lang/String;
+    iget-object v0, p0, Lc6/i;->l:Ljava/lang/String;
 
     invoke-interface {p1, v0}, Ljava/io/DataOutput;->writeUTF(Ljava/lang/String;)V
 

@@ -28,14 +28,14 @@
 
 
 # instance fields
-.field public final synthetic f:Lla/e;
+.field public final synthetic g:Lla/e;
 
 
 # direct methods
 .method public constructor <init>(Lla/e;)V
     .locals 0
 
-    iput-object p1, p0, Lla/e$b;->f:Lla/e;
+    iput-object p1, p0, Lla/e$b;->g:Lla/e;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -51,7 +51,7 @@
     check-cast p1, Ljava/lang/Void;
 
     .line 2
-    sget-object p1, Lcom/helpshift/util/u;->d:Le8/j;
+    sget-object p1, Lcom/helpshift/util/t;->d:Le8/j;
 
     .line 3
     invoke-static {p1}, Li8/b;->d(Le8/s;)J
@@ -59,7 +59,7 @@
     move-result-wide v0
 
     .line 4
-    iget-object p1, p0, Lla/e$b;->f:Lla/e;
+    iget-object p1, p0, Lla/e$b;->g:Lla/e;
 
     iget-object p1, p1, Lla/e;->a:Lla/p;
 
@@ -83,7 +83,7 @@
     check-cast p1, Lf8/i;
 
     .line 2
-    sget-object p1, Landroidx/savedstate/d;->f:Lx9/c;
+    sget-object p1, Le5/i;->g:Lx9/c;
 
     if-nez p1, :cond_0
 

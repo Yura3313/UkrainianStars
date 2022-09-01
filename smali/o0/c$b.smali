@@ -55,7 +55,7 @@
     .line 1
     iget-object v0, p0, Lo0/c$b;->b:Lo0/c;
 
-    iget-object v0, v0, Lo0/c;->j:Ljava/util/concurrent/atomic/AtomicBoolean;
+    iget-object v0, v0, Lo0/c;->k:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     const/4 v1, 0x1
 
@@ -95,7 +95,7 @@
     :try_start_1
     iget-object v3, p0, Lo0/c$b;->b:Lo0/c;
 
-    iget-object v3, v3, Lo0/c;->i:Ljava/util/concurrent/atomic/AtomicBoolean;
+    iget-object v3, v3, Lo0/c;->j:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     invoke-virtual {v3, v1}, Ljava/util/concurrent/atomic/AtomicBoolean;->set(Z)V
 

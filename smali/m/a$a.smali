@@ -53,7 +53,7 @@
 
     iget-object v0, p0, Lm/a$a;->d:Lm/a;
 
-    iget-object v0, v0, Lm/g;->g:[Ljava/lang/Object;
+    iget-object v0, v0, Lm/g;->h:[Ljava/lang/Object;
 
     shl-int/lit8 p1, p1, 0x1
 
@@ -84,7 +84,7 @@
 
     iget-object v0, p0, Lm/a$a;->d:Lm/a;
 
-    iget v0, v0, Lm/g;->h:I
+    iget v0, v0, Lm/g;->i:I
 
     return v0
 .end method

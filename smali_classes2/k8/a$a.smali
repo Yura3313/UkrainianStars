@@ -84,7 +84,7 @@
 
     const/4 v4, 0x0
 
-    invoke-static {p1, v3, v2, v4}, Lcom/helpshift/util/b0;->c(Ljava/util/Map;Ljava/lang/String;Ljava/lang/Class;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p1, v3, v2, v4}, Lcom/helpshift/util/a0;->b(Ljava/util/Map;Ljava/lang/String;Ljava/lang/Class;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v2
 
@@ -172,7 +172,7 @@
     :goto_2
     iget-object v3, p0, Lk8/a$a;->a:Ljava/lang/Boolean;
 
-    invoke-static {p1, v2, v1, v3}, Lcom/helpshift/util/b0;->c(Ljava/util/Map;Ljava/lang/String;Ljava/lang/Class;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p1, v2, v1, v3}, Lcom/helpshift/util/a0;->b(Ljava/util/Map;Ljava/lang/String;Ljava/lang/Class;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v2
 
@@ -185,7 +185,7 @@
 
     const-string v3, "requireEmail"
 
-    invoke-static {p1, v3, v1, v2}, Lcom/helpshift/util/b0;->c(Ljava/util/Map;Ljava/lang/String;Ljava/lang/Class;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p1, v3, v1, v2}, Lcom/helpshift/util/a0;->b(Ljava/util/Map;Ljava/lang/String;Ljava/lang/Class;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v2
 
@@ -198,7 +198,7 @@
 
     const-string v3, "hideNameAndEmail"
 
-    invoke-static {p1, v3, v1, v2}, Lcom/helpshift/util/b0;->c(Ljava/util/Map;Ljava/lang/String;Ljava/lang/Class;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p1, v3, v1, v2}, Lcom/helpshift/util/a0;->b(Ljava/util/Map;Ljava/lang/String;Ljava/lang/Class;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v2
 
@@ -211,7 +211,7 @@
 
     const-string v3, "enableFullPrivacy"
 
-    invoke-static {p1, v3, v1, v2}, Lcom/helpshift/util/b0;->c(Ljava/util/Map;Ljava/lang/String;Ljava/lang/Class;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p1, v3, v1, v2}, Lcom/helpshift/util/a0;->b(Ljava/util/Map;Ljava/lang/String;Ljava/lang/Class;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v2
 
@@ -224,7 +224,7 @@
 
     const-string v3, "showSearchOnNewConversation"
 
-    invoke-static {p1, v3, v1, v2}, Lcom/helpshift/util/b0;->c(Ljava/util/Map;Ljava/lang/String;Ljava/lang/Class;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p1, v3, v1, v2}, Lcom/helpshift/util/a0;->b(Ljava/util/Map;Ljava/lang/String;Ljava/lang/Class;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v2
 
@@ -237,7 +237,7 @@
 
     const-string v3, "showConversationResolutionQuestion"
 
-    invoke-static {p1, v3, v1, v2}, Lcom/helpshift/util/b0;->c(Ljava/util/Map;Ljava/lang/String;Ljava/lang/Class;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p1, v3, v1, v2}, Lcom/helpshift/util/a0;->b(Ljava/util/Map;Ljava/lang/String;Ljava/lang/Class;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v2
 
@@ -250,7 +250,7 @@
 
     const-string v3, "conversationPrefillText"
 
-    invoke-static {p1, v3, v0, v2}, Lcom/helpshift/util/b0;->c(Ljava/util/Map;Ljava/lang/String;Ljava/lang/Class;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p1, v3, v0, v2}, Lcom/helpshift/util/a0;->b(Ljava/util/Map;Ljava/lang/String;Ljava/lang/Class;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v2
 
@@ -259,7 +259,7 @@
     iput-object v2, p0, Lk8/a$a;->h:Ljava/lang/String;
 
     .line 16
-    invoke-static {v2}, Lcom/google/android/play/core/appupdate/g;->b(Ljava/lang/String;)Z
+    invoke-static {v2}, La5/b0;->d(Ljava/lang/String;)Z
 
     move-result v2
 
@@ -274,7 +274,7 @@
 
     const-string v3, "showConversationInfoScreen"
 
-    invoke-static {p1, v3, v1, v2}, Lcom/helpshift/util/b0;->c(Ljava/util/Map;Ljava/lang/String;Ljava/lang/Class;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p1, v3, v1, v2}, Lcom/helpshift/util/a0;->b(Ljava/util/Map;Ljava/lang/String;Ljava/lang/Class;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v2
 
@@ -287,7 +287,7 @@
 
     const-string v3, "enableTypingIndicator"
 
-    invoke-static {p1, v3, v1, v2}, Lcom/helpshift/util/b0;->c(Ljava/util/Map;Ljava/lang/String;Ljava/lang/Class;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p1, v3, v1, v2}, Lcom/helpshift/util/a0;->b(Ljava/util/Map;Ljava/lang/String;Ljava/lang/Class;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v2
 
@@ -300,7 +300,7 @@
 
     const-string v3, "enableDefaultConversationalFiling"
 
-    invoke-static {p1, v3, v1, v2}, Lcom/helpshift/util/b0;->c(Ljava/util/Map;Ljava/lang/String;Ljava/lang/Class;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p1, v3, v1, v2}, Lcom/helpshift/util/a0;->b(Ljava/util/Map;Ljava/lang/String;Ljava/lang/Class;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v1
 
@@ -313,7 +313,7 @@
 
     const-string v2, "initialUserMessage"
 
-    invoke-static {p1, v2, v0, v1}, Lcom/helpshift/util/b0;->c(Ljava/util/Map;Ljava/lang/String;Ljava/lang/Class;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-static {p1, v2, v0, v1}, Lcom/helpshift/util/a0;->b(Ljava/util/Map;Ljava/lang/String;Ljava/lang/Class;Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object p1
 
@@ -329,7 +329,7 @@
     iput-object p1, p0, Lk8/a$a;->l:Ljava/lang/String;
 
     .line 23
-    invoke-static {p1}, Lcom/google/android/play/core/appupdate/g;->b(Ljava/lang/String;)Z
+    invoke-static {p1}, La5/b0;->d(Ljava/lang/String;)Z
 
     move-result p1
 

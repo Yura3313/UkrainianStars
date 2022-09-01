@@ -18,11 +18,11 @@
 
 
 # instance fields
-.field public final f:Landroidx/lifecycle/k;
+.field public final g:Landroidx/lifecycle/k;
 
-.field public final g:Landroidx/lifecycle/f$b;
+.field public final h:Landroidx/lifecycle/f$b;
 
-.field public h:Z
+.field public i:Z
 
 
 # direct methods
@@ -35,13 +35,13 @@
     const/4 v0, 0x0
 
     .line 2
-    iput-boolean v0, p0, Landroidx/lifecycle/v$a;->h:Z
+    iput-boolean v0, p0, Landroidx/lifecycle/v$a;->i:Z
 
     .line 3
-    iput-object p1, p0, Landroidx/lifecycle/v$a;->f:Landroidx/lifecycle/k;
+    iput-object p1, p0, Landroidx/lifecycle/v$a;->g:Landroidx/lifecycle/k;
 
     .line 4
-    iput-object p2, p0, Landroidx/lifecycle/v$a;->g:Landroidx/lifecycle/f$b;
+    iput-object p2, p0, Landroidx/lifecycle/v$a;->h:Landroidx/lifecycle/f$b;
 
     return-void
 .end method
@@ -52,21 +52,21 @@
     .locals 2
 
     .line 1
-    iget-boolean v0, p0, Landroidx/lifecycle/v$a;->h:Z
+    iget-boolean v0, p0, Landroidx/lifecycle/v$a;->i:Z
 
     if-nez v0, :cond_0
 
     .line 2
-    iget-object v0, p0, Landroidx/lifecycle/v$a;->f:Landroidx/lifecycle/k;
+    iget-object v0, p0, Landroidx/lifecycle/v$a;->g:Landroidx/lifecycle/k;
 
-    iget-object v1, p0, Landroidx/lifecycle/v$a;->g:Landroidx/lifecycle/f$b;
+    iget-object v1, p0, Landroidx/lifecycle/v$a;->h:Landroidx/lifecycle/f$b;
 
     invoke-virtual {v0, v1}, Landroidx/lifecycle/k;->e(Landroidx/lifecycle/f$b;)V
 
     const/4 v0, 0x1
 
     .line 3
-    iput-boolean v0, p0, Landroidx/lifecycle/v$a;->h:Z
+    iput-boolean v0, p0, Landroidx/lifecycle/v$a;->i:Z
 
     :cond_0
     return-void

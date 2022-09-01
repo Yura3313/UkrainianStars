@@ -1,5 +1,5 @@
 .class public final Lvd/e;
-.super Lse/h;
+.super Lse/i;
 .source "SettingsGeneralTabFragment.kt"
 
 # interfaces
@@ -9,29 +9,29 @@
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/a<",
-        "Lze/e0<",
+        "Lze/f0<",
         "+",
-        "Lvc/v;",
+        "Lvc/u;",
         ">;>;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic f:Z
+.field public final synthetic g:Z
 
 
 # direct methods
 .method public constructor <init>(Z)V
     .locals 0
 
-    iput-boolean p1, p0, Lvd/e;->f:Z
+    iput-boolean p1, p0, Lvd/e;->g:Z
 
     const/4 p1, 0x0
 
-    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -51,7 +51,7 @@
 
     move-result-object v1
 
-    iget-boolean v0, p0, Lvd/e;->f:Z
+    iget-boolean v0, p0, Lvd/e;->g:Z
 
     xor-int/lit8 v0, v0, 0x1
 
@@ -67,7 +67,7 @@
 
     const/4 v6, 0x7
 
-    invoke-static/range {v1 .. v6}, Lbe/y;->j(Lbe/y;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/Boolean;I)Lze/e0;
+    invoke-static/range {v1 .. v6}, Lbe/y;->j(Lbe/y;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/Boolean;I)Lze/f0;
 
     move-result-object v0
 

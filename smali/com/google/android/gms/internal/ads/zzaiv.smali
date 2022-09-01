@@ -44,7 +44,7 @@
 
     move-result-object v1
 
-    sget v2, Lcom/google/android/gms/internal/ads/zzadu;->f:I
+    sget v2, Lcom/google/android/gms/internal/ads/zzadu;->g:I
 
     if-nez v1, :cond_0
 
@@ -136,7 +136,7 @@
     move-result-object v0
 
     .line 2
-    invoke-static {v0, p1}, Lk3/cw0;->b(Landroid/os/Parcel;Landroid/os/IInterface;)V
+    invoke-static {v0, p1}, Lk3/gw0;->b(Landroid/os/Parcel;Landroid/os/IInterface;)V
 
     const/4 p1, 0x6
 

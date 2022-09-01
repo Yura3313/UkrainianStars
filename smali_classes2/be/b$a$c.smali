@@ -24,7 +24,7 @@
 
     const-string v0, "seenGame"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-direct {p0}, Lbe/b$a;-><init>()V
 
@@ -50,7 +50,7 @@
 
     iget-object p1, p1, Lbe/b$a$c;->a:Ljava/lang/String;
 
-    invoke-static {v0, p1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, p1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -108,7 +108,7 @@
     .line 3
     iget-object v3, p0, Lbe/b$a$c;->a:Ljava/lang/String;
 
-    invoke-static {v2, v3}, Lje/v;->h(Ljava/util/Set;Ljava/lang/Object;)Ljava/util/Set;
+    invoke-static {v2, v3}, Lje/v;->i(Ljava/util/Set;Ljava/lang/Object;)Ljava/util/Set;
 
     move-result-object v2
 
@@ -124,7 +124,7 @@
 
     iget-object v2, p0, Lbe/b$a$c;->a:Ljava/lang/String;
 
-    invoke-static {v2}, Lcom/helpshift/util/r;->e(Ljava/lang/Object;)Ljava/util/Set;
+    invoke-static {v2}, La5/u;->f(Ljava/lang/Object;)Ljava/util/Set;
 
     move-result-object v2
 
@@ -150,7 +150,7 @@
     const-string v2, ")"
 
     .line 3
-    invoke-static {v0, v1, v2}, Landroid/support/v4/media/b;->b(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, v1, v2}, Landroid/support/v4/media/b;->a(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 

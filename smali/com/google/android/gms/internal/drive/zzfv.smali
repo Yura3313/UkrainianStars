@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field public final g:Lcom/google/android/gms/common/data/DataHolder;
+.field public final h:Lcom/google/android/gms/common/data/DataHolder;
 
 
 # direct methods
@@ -38,7 +38,7 @@
     invoke-direct {p0}, Lcom/google/android/gms/drive/zzu;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lcom/google/android/gms/internal/drive/zzfv;->g:Lcom/google/android/gms/common/data/DataHolder;
+    iput-object p1, p0, Lcom/google/android/gms/internal/drive/zzfv;->h:Lcom/google/android/gms/common/data/DataHolder;
 
     return-void
 .end method
@@ -58,7 +58,7 @@
     const/4 v1, 0x2
 
     .line 2
-    iget-object v2, p0, Lcom/google/android/gms/internal/drive/zzfv;->g:Lcom/google/android/gms/common/data/DataHolder;
+    iget-object v2, p0, Lcom/google/android/gms/internal/drive/zzfv;->h:Lcom/google/android/gms/common/data/DataHolder;
 
     const/4 v3, 0x0
 

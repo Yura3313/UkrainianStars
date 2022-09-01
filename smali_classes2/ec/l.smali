@@ -16,39 +16,39 @@
 
 
 # instance fields
-.field public final f:Lec/g;
+.field public final g:Lec/g;
 
-.field public final g:Lec/h;
+.field public final h:Lec/h;
 
-.field public final h:Landroid/os/Handler;
+.field public final i:Landroid/os/Handler;
 
-.field public final i:Lec/e;
+.field public final j:Lec/e;
 
-.field public final j:Lic/a;
+.field public final k:Lic/a;
 
-.field public final k:Lec/e$b;
+.field public final l:Lec/e$b;
 
-.field public final l:Lec/e$c;
+.field public final m:Lec/e$c;
 
-.field public final m:Lhc/a;
-
-.field public final n:Ljava/lang/String;
+.field public final n:Lhc/a;
 
 .field public final o:Ljava/lang/String;
 
-.field public final p:Ljc/a;
+.field public final p:Ljava/lang/String;
 
-.field public final q:Lfc/d;
+.field public final q:Ljc/a;
 
-.field public final r:Lec/c;
+.field public final r:Lfc/d;
 
-.field public final s:Lkc/a;
+.field public final s:Lec/c;
 
-.field public final t:Lkc/b;
+.field public final t:Lkc/a;
 
-.field public final u:Z
+.field public final u:Lkc/b;
 
-.field public v:Lfc/e;
+.field public final v:Z
+
+.field public w:Lfc/e;
 
 
 # direct methods
@@ -59,84 +59,84 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    sget-object v0, Lfc/e;->f:Lfc/e;
+    sget-object v0, Lfc/e;->g:Lfc/e;
 
-    iput-object v0, p0, Lec/l;->v:Lfc/e;
+    iput-object v0, p0, Lec/l;->w:Lfc/e;
 
     .line 3
-    iput-object p1, p0, Lec/l;->f:Lec/g;
+    iput-object p1, p0, Lec/l;->g:Lec/g;
 
     .line 4
-    iput-object p2, p0, Lec/l;->g:Lec/h;
+    iput-object p2, p0, Lec/l;->h:Lec/h;
 
     .line 5
-    iput-object p3, p0, Lec/l;->h:Landroid/os/Handler;
+    iput-object p3, p0, Lec/l;->i:Landroid/os/Handler;
 
     .line 6
     iget-object p1, p1, Lec/g;->a:Lec/e;
 
-    iput-object p1, p0, Lec/l;->i:Lec/e;
+    iput-object p1, p0, Lec/l;->j:Lec/e;
 
     .line 7
     iget-object p3, p1, Lec/e;->k:Lic/a;
 
-    iput-object p3, p0, Lec/l;->j:Lic/a;
+    iput-object p3, p0, Lec/l;->k:Lic/a;
 
     .line 8
     iget-object p3, p1, Lec/e;->n:Lec/e$b;
 
-    iput-object p3, p0, Lec/l;->k:Lec/e$b;
+    iput-object p3, p0, Lec/l;->l:Lec/e$b;
 
     .line 9
     iget-object p3, p1, Lec/e;->o:Lec/e$c;
 
-    iput-object p3, p0, Lec/l;->l:Lec/e$c;
+    iput-object p3, p0, Lec/l;->m:Lec/e$c;
 
     .line 10
     iget-object p1, p1, Lec/e;->l:Lhc/a;
 
-    iput-object p1, p0, Lec/l;->m:Lhc/a;
+    iput-object p1, p0, Lec/l;->n:Lhc/a;
 
     .line 11
     iget-object p1, p2, Lec/h;->a:Ljava/lang/String;
 
-    iput-object p1, p0, Lec/l;->n:Ljava/lang/String;
+    iput-object p1, p0, Lec/l;->o:Ljava/lang/String;
 
     .line 12
     iget-object p1, p2, Lec/h;->b:Ljava/lang/String;
 
-    iput-object p1, p0, Lec/l;->o:Ljava/lang/String;
+    iput-object p1, p0, Lec/l;->p:Ljava/lang/String;
 
     .line 13
     iget-object p1, p2, Lec/h;->c:Ljc/a;
 
-    iput-object p1, p0, Lec/l;->p:Ljc/a;
+    iput-object p1, p0, Lec/l;->q:Ljc/a;
 
     .line 14
     iget-object p1, p2, Lec/h;->d:Lfc/d;
 
-    iput-object p1, p0, Lec/l;->q:Lfc/d;
+    iput-object p1, p0, Lec/l;->r:Lfc/d;
 
     .line 15
     iget-object p1, p2, Lec/h;->e:Lec/c;
 
-    iput-object p1, p0, Lec/l;->r:Lec/c;
+    iput-object p1, p0, Lec/l;->s:Lec/c;
 
     .line 16
     iget-object p3, p2, Lec/h;->f:Lkc/a;
 
-    iput-object p3, p0, Lec/l;->s:Lkc/a;
+    iput-object p3, p0, Lec/l;->t:Lkc/a;
 
     .line 17
     iget-object p2, p2, Lec/h;->g:Lkc/b;
 
-    iput-object p2, p0, Lec/l;->t:Lkc/b;
+    iput-object p2, p0, Lec/l;->u:Lkc/b;
 
     .line 18
     iget-boolean p1, p1, Lec/c;->s:Z
 
     .line 19
-    iput-boolean p1, p0, Lec/l;->u:Z
+    iput-boolean p1, p0, Lec/l;->v:Z
 
     return-void
 .end method
@@ -221,7 +221,7 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lec/l;->p:Ljc/a;
+    iget-object v0, p0, Lec/l;->q:Ljc/a;
 
     invoke-interface {v0}, Ljc/a;->d()Lfc/f;
 
@@ -230,15 +230,15 @@
     .line 2
     new-instance v0, Lhc/b;
 
-    iget-object v2, p0, Lec/l;->o:Ljava/lang/String;
+    iget-object v2, p0, Lec/l;->p:Ljava/lang/String;
 
-    iget-object v4, p0, Lec/l;->q:Lfc/d;
+    iget-object v4, p0, Lec/l;->r:Lfc/d;
 
     invoke-virtual {p0}, Lec/l;->e()Lic/b;
 
     move-result-object v6
 
-    iget-object v7, p0, Lec/l;->r:Lec/c;
+    iget-object v7, p0, Lec/l;->s:Lec/c;
 
     move-object v1, v0
 
@@ -247,7 +247,7 @@
     invoke-direct/range {v1 .. v7}, Lhc/b;-><init>(Ljava/lang/String;Ljava/lang/String;Lfc/d;Lfc/f;Lic/b;Lec/c;)V
 
     .line 3
-    iget-object p1, p0, Lec/l;->m:Lhc/a;
+    iget-object p1, p0, Lec/l;->n:Lhc/a;
 
     invoke-virtual {p1, v0}, Lhc/a;->a(Lhc/b;)Landroid/graphics/Bitmap;
 
@@ -269,9 +269,9 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lec/l;->n:Ljava/lang/String;
+    iget-object v1, p0, Lec/l;->o:Ljava/lang/String;
 
-    iget-object v2, p0, Lec/l;->r:Lec/c;
+    iget-object v2, p0, Lec/l;->s:Lec/c;
 
     .line 2
     iget-object v2, v2, Lec/c;->n:Ljava/lang/Object;
@@ -288,7 +288,7 @@
     new-array v0, v0, [Ljava/lang/Object;
 
     .line 4
-    iget-object v1, p0, Lec/l;->o:Ljava/lang/String;
+    iget-object v1, p0, Lec/l;->p:Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -301,18 +301,18 @@
     const-string v4, "No stream for image [%s]"
 
     .line 5
-    invoke-static {v1, v3, v4, v0}, Lae/w;->c(ILjava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-static {v1, v3, v4, v0}, Lk3/f4;->d(ILjava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V
 
     return v2
 
     .line 6
     :cond_0
     :try_start_0
-    iget-object v1, p0, Lec/l;->i:Lec/e;
+    iget-object v1, p0, Lec/l;->j:Lec/e;
 
     iget-object v1, v1, Lec/e;->j:Lyb/a;
 
-    iget-object v2, p0, Lec/l;->n:Ljava/lang/String;
+    iget-object v2, p0, Lec/l;->o:Ljava/lang/String;
 
     invoke-interface {v1, v2, v0, p0}, Lyb/a;->b(Ljava/lang/String;Ljava/io/InputStream;Lmc/b$a;)Z
 
@@ -337,7 +337,7 @@
     .locals 2
 
     .line 1
-    iget-boolean v0, p0, Lec/l;->u:Z
+    iget-boolean v0, p0, Lec/l;->v:Z
 
     if-nez v0, :cond_1
 
@@ -364,9 +364,9 @@
     const/4 p1, 0x0
 
     .line 3
-    iget-object p2, p0, Lec/l;->h:Landroid/os/Handler;
+    iget-object p2, p0, Lec/l;->i:Landroid/os/Handler;
 
-    iget-object v1, p0, Lec/l;->f:Lec/g;
+    iget-object v1, p0, Lec/l;->g:Lec/g;
 
     invoke-static {v0, p1, p2, v1}, Lec/l;->j(Ljava/lang/Runnable;ZLandroid/os/Handler;Lec/g;)V
 
@@ -379,7 +379,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lec/l;->f:Lec/g;
+    iget-object v0, p0, Lec/l;->g:Lec/g;
 
     .line 2
     iget-object v0, v0, Lec/g;->h:Ljava/util/concurrent/atomic/AtomicBoolean;
@@ -391,13 +391,13 @@
     if-eqz v0, :cond_0
 
     .line 3
-    iget-object v0, p0, Lec/l;->k:Lec/e$b;
+    iget-object v0, p0, Lec/l;->l:Lec/e$b;
 
     goto :goto_0
 
     .line 4
     :cond_0
-    iget-object v0, p0, Lec/l;->f:Lec/g;
+    iget-object v0, p0, Lec/l;->g:Lec/g;
 
     .line 5
     iget-object v0, v0, Lec/g;->i:Ljava/util/concurrent/atomic/AtomicBoolean;
@@ -409,13 +409,13 @@
     if-eqz v0, :cond_1
 
     .line 6
-    iget-object v0, p0, Lec/l;->l:Lec/e$c;
+    iget-object v0, p0, Lec/l;->m:Lec/e$c;
 
     goto :goto_0
 
     .line 7
     :cond_1
-    iget-object v0, p0, Lec/l;->j:Lic/a;
+    iget-object v0, p0, Lec/l;->k:Lic/a;
 
     :goto_0
     return-object v0
@@ -438,13 +438,13 @@
     new-array v2, v0, [Ljava/lang/Object;
 
     .line 2
-    iget-object v3, p0, Lec/l;->o:Ljava/lang/String;
+    iget-object v3, p0, Lec/l;->p:Ljava/lang/String;
 
     aput-object v3, v2, v1
 
     const-string v1, "Task was interrupted [%s]"
 
-    invoke-static {v1, v2}, Lae/w;->a(Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-static {v1, v2}, Lk3/f4;->a(Ljava/lang/String;[Ljava/lang/Object;)V
 
     return v0
 
@@ -486,7 +486,7 @@
     .locals 4
 
     .line 1
-    iget-object v0, p0, Lec/l;->p:Ljc/a;
+    iget-object v0, p0, Lec/l;->q:Ljc/a;
 
     invoke-interface {v0}, Ljc/a;->c()Z
 
@@ -501,13 +501,13 @@
     new-array v2, v0, [Ljava/lang/Object;
 
     .line 2
-    iget-object v3, p0, Lec/l;->o:Ljava/lang/String;
+    iget-object v3, p0, Lec/l;->p:Ljava/lang/String;
 
     aput-object v3, v2, v1
 
     const-string v1, "ImageAware was collected by GC. Task is cancelled. [%s]"
 
-    invoke-static {v1, v2}, Lae/w;->a(Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-static {v1, v2}, Lk3/f4;->a(Ljava/lang/String;[Ljava/lang/Object;)V
 
     return v0
 
@@ -519,9 +519,9 @@
     .locals 4
 
     .line 1
-    iget-object v0, p0, Lec/l;->f:Lec/g;
+    iget-object v0, p0, Lec/l;->g:Lec/g;
 
-    iget-object v1, p0, Lec/l;->p:Ljc/a;
+    iget-object v1, p0, Lec/l;->q:Ljc/a;
 
     .line 2
     iget-object v0, v0, Lec/g;->e:Ljava/util/Map;
@@ -541,7 +541,7 @@
     check-cast v0, Ljava/lang/String;
 
     .line 3
-    iget-object v1, p0, Lec/l;->o:Ljava/lang/String;
+    iget-object v1, p0, Lec/l;->p:Ljava/lang/String;
 
     invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -558,13 +558,13 @@
     new-array v0, v1, [Ljava/lang/Object;
 
     .line 4
-    iget-object v3, p0, Lec/l;->o:Ljava/lang/String;
+    iget-object v3, p0, Lec/l;->p:Ljava/lang/String;
 
     aput-object v3, v0, v2
 
     const-string v2, "ImageAware is reused for another image. Task is cancelled. [%s]"
 
-    invoke-static {v2, v0}, Lae/w;->a(Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-static {v2, v0}, Lk3/f4;->a(Ljava/lang/String;[Ljava/lang/Object;)V
 
     return v1
 
@@ -585,7 +585,7 @@
     new-array v0, v0, [Ljava/lang/Object;
 
     .line 1
-    iget-object v1, p0, Lec/l;->o:Ljava/lang/String;
+    iget-object v1, p0, Lec/l;->p:Ljava/lang/String;
 
     const/4 v2, 0x0
 
@@ -593,7 +593,7 @@
 
     const-string v1, "Cache image on disk [%s]"
 
-    invoke-static {v1, v0}, Lae/w;->a(Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-static {v1, v0}, Lk3/f4;->a(Ljava/lang/String;[Ljava/lang/Object;)V
 
     .line 2
     :try_start_0
@@ -604,12 +604,12 @@
     if-eqz v0, :cond_0
 
     .line 3
-    iget-object v1, p0, Lec/l;->i:Lec/e;
+    iget-object v1, p0, Lec/l;->j:Lec/e;
 
     invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 4
-    iget-object v1, p0, Lec/l;->i:Lec/e;
+    iget-object v1, p0, Lec/l;->j:Lec/e;
 
     invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
     :try_end_0
@@ -624,7 +624,7 @@
     move-exception v0
 
     .line 5
-    invoke-static {v0}, Lae/w;->b(Ljava/lang/Throwable;)V
+    invoke-static {v0}, Lk3/f4;->b(Ljava/lang/Throwable;)V
 
     :goto_0
     return v2
@@ -644,11 +644,11 @@
 
     .line 1
     :try_start_0
-    iget-object v2, p0, Lec/l;->i:Lec/e;
+    iget-object v2, p0, Lec/l;->j:Lec/e;
 
     iget-object v2, v2, Lec/e;->j:Lyb/a;
 
-    iget-object v3, p0, Lec/l;->n:Ljava/lang/String;
+    iget-object v3, p0, Lec/l;->o:Ljava/lang/String;
 
     invoke-interface {v2, v3}, Lyb/a;->a(Ljava/lang/String;)Ljava/io/File;
 
@@ -680,22 +680,22 @@
     new-array v5, v0, [Ljava/lang/Object;
 
     .line 3
-    iget-object v6, p0, Lec/l;->o:Ljava/lang/String;
+    iget-object v6, p0, Lec/l;->p:Ljava/lang/String;
 
     aput-object v6, v5, v3
 
-    invoke-static {v4, v5}, Lae/w;->a(Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-static {v4, v5}, Lk3/f4;->a(Ljava/lang/String;[Ljava/lang/Object;)V
 
     .line 4
-    sget-object v4, Lfc/e;->g:Lfc/e;
+    sget-object v4, Lfc/e;->h:Lfc/e;
 
-    iput-object v4, p0, Lec/l;->v:Lfc/e;
+    iput-object v4, p0, Lec/l;->w:Lfc/e;
 
     .line 5
     invoke-virtual {p0}, Lec/l;->a()V
 
     .line 6
-    sget-object v4, Lic/b$a;->j:Lic/b$a;
+    sget-object v4, Lic/b$a;->k:Lic/b$a;
 
     invoke-virtual {v2}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
@@ -743,22 +743,22 @@
     new-array v5, v0, [Ljava/lang/Object;
 
     .line 8
-    iget-object v6, p0, Lec/l;->o:Ljava/lang/String;
+    iget-object v6, p0, Lec/l;->p:Ljava/lang/String;
 
     aput-object v6, v5, v3
 
-    invoke-static {v4, v5}, Lae/w;->a(Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-static {v4, v5}, Lk3/f4;->a(Ljava/lang/String;[Ljava/lang/Object;)V
 
     .line 9
-    sget-object v3, Lfc/e;->f:Lfc/e;
+    sget-object v3, Lfc/e;->g:Lfc/e;
 
-    iput-object v3, p0, Lec/l;->v:Lfc/e;
+    iput-object v3, p0, Lec/l;->w:Lfc/e;
 
     .line 10
-    iget-object v3, p0, Lec/l;->n:Ljava/lang/String;
+    iget-object v3, p0, Lec/l;->o:Ljava/lang/String;
 
     .line 11
-    iget-object v4, p0, Lec/l;->r:Lec/c;
+    iget-object v4, p0, Lec/l;->s:Lec/c;
 
     .line 12
     iget-boolean v4, v4, Lec/c;->i:Z
@@ -773,11 +773,11 @@
     if-eqz v4, :cond_2
 
     .line 14
-    iget-object v4, p0, Lec/l;->i:Lec/e;
+    iget-object v4, p0, Lec/l;->j:Lec/e;
 
     iget-object v4, v4, Lec/e;->j:Lyb/a;
 
-    iget-object v5, p0, Lec/l;->n:Ljava/lang/String;
+    iget-object v5, p0, Lec/l;->o:Ljava/lang/String;
 
     invoke-interface {v4, v5}, Lyb/a;->a(Ljava/lang/String;)Ljava/io/File;
 
@@ -786,7 +786,7 @@
     if-eqz v4, :cond_2
 
     .line 15
-    sget-object v3, Lic/b$a;->j:Lic/b$a;
+    sget-object v3, Lic/b$a;->k:Lic/b$a;
 
     invoke-virtual {v4}, Ljava/io/File;->getAbsolutePath()Ljava/lang/String;
 
@@ -858,7 +858,7 @@
 
     .line 20
     :goto_1
-    invoke-static {v0}, Lae/w;->b(Ljava/lang/Throwable;)V
+    invoke-static {v0}, Lk3/f4;->b(Ljava/lang/Throwable;)V
 
     const/4 v2, 0x5
 
@@ -872,7 +872,7 @@
 
     .line 22
     :goto_2
-    invoke-static {v0}, Lae/w;->b(Ljava/lang/Throwable;)V
+    invoke-static {v0}, Lk3/f4;->b(Ljava/lang/Throwable;)V
 
     const/4 v2, 0x4
 
@@ -895,7 +895,7 @@
 
     .line 24
     :goto_4
-    invoke-static {v1}, Lae/w;->b(Ljava/lang/Throwable;)V
+    invoke-static {v1}, Lk3/f4;->b(Ljava/lang/Throwable;)V
 
     .line 25
     invoke-virtual {p0, v0, v1}, Lec/l;->d(ILjava/lang/Throwable;)V
@@ -926,7 +926,7 @@
     .locals 9
 
     .line 1
-    iget-object v0, p0, Lec/l;->f:Lec/g;
+    iget-object v0, p0, Lec/l;->g:Lec/g;
 
     .line 2
     iget-object v0, v0, Lec/g;->g:Ljava/util/concurrent/atomic/AtomicBoolean;
@@ -947,7 +947,7 @@
     if-eqz v1, :cond_1
 
     .line 4
-    iget-object v1, p0, Lec/l;->f:Lec/g;
+    iget-object v1, p0, Lec/l;->g:Lec/g;
 
     .line 5
     iget-object v1, v1, Lec/g;->j:Ljava/lang/Object;
@@ -968,17 +968,17 @@
     new-array v6, v3, [Ljava/lang/Object;
 
     .line 8
-    iget-object v7, p0, Lec/l;->o:Ljava/lang/String;
+    iget-object v7, p0, Lec/l;->p:Ljava/lang/String;
 
     aput-object v7, v6, v2
 
-    invoke-static {v0, v6}, Lae/w;->a(Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-static {v0, v6}, Lk3/f4;->a(Ljava/lang/String;[Ljava/lang/Object;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 9
     :try_start_1
-    iget-object v0, p0, Lec/l;->f:Lec/g;
+    iget-object v0, p0, Lec/l;->g:Lec/g;
 
     .line 10
     iget-object v0, v0, Lec/g;->j:Ljava/lang/Object;
@@ -995,11 +995,11 @@
     new-array v6, v3, [Ljava/lang/Object;
 
     .line 12
-    iget-object v7, p0, Lec/l;->o:Ljava/lang/String;
+    iget-object v7, p0, Lec/l;->p:Ljava/lang/String;
 
     aput-object v7, v6, v2
 
-    invoke-static {v0, v6}, Lae/w;->a(Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-static {v0, v6}, Lk3/f4;->a(Ljava/lang/String;[Ljava/lang/Object;)V
 
     goto :goto_0
 
@@ -1009,12 +1009,12 @@
     new-array v6, v3, [Ljava/lang/Object;
 
     .line 13
-    iget-object v7, p0, Lec/l;->o:Ljava/lang/String;
+    iget-object v7, p0, Lec/l;->p:Ljava/lang/String;
 
     aput-object v7, v6, v2
 
     .line 14
-    invoke-static {v5, v4, v0, v6}, Lae/w;->c(ILjava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-static {v5, v4, v0, v6}, Lk3/f4;->d(ILjava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V
 
     .line 15
     monitor-exit v1
@@ -1053,7 +1053,7 @@
 
     .line 18
     :cond_2
-    iget-object v0, p0, Lec/l;->r:Lec/c;
+    iget-object v0, p0, Lec/l;->s:Lec/c;
 
     .line 19
     iget v0, v0, Lec/c;->l:I
@@ -1081,17 +1081,17 @@
 
     aput-object v0, v1, v2
 
-    iget-object v0, p0, Lec/l;->o:Ljava/lang/String;
+    iget-object v0, p0, Lec/l;->p:Ljava/lang/String;
 
     aput-object v0, v1, v3
 
     const-string v0, "Delay %d ms before loading...  [%s]"
 
-    invoke-static {v0, v1}, Lae/w;->a(Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-static {v0, v1}, Lk3/f4;->a(Ljava/lang/String;[Ljava/lang/Object;)V
 
     .line 21
     :try_start_3
-    iget-object v0, p0, Lec/l;->r:Lec/c;
+    iget-object v0, p0, Lec/l;->s:Lec/c;
 
     .line 22
     iget v0, v0, Lec/c;->l:I
@@ -1114,14 +1114,14 @@
     new-array v0, v3, [Ljava/lang/Object;
 
     .line 25
-    iget-object v1, p0, Lec/l;->o:Ljava/lang/String;
+    iget-object v1, p0, Lec/l;->p:Ljava/lang/String;
 
     aput-object v1, v0, v2
 
     const-string v1, "Task was interrupted [%s]"
 
     .line 26
-    invoke-static {v5, v4, v1, v0}, Lae/w;->c(ILjava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-static {v5, v4, v1, v0}, Lk3/f4;->d(ILjava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V
 
     const/4 v0, 0x1
 
@@ -1137,7 +1137,7 @@
 
     .line 27
     :cond_5
-    iget-object v0, p0, Lec/l;->g:Lec/h;
+    iget-object v0, p0, Lec/l;->h:Lec/h;
 
     iget-object v0, v0, Lec/h;->h:Ljava/util/concurrent/locks/ReentrantLock;
 
@@ -1146,11 +1146,11 @@
     new-array v6, v3, [Ljava/lang/Object;
 
     .line 28
-    iget-object v7, p0, Lec/l;->o:Ljava/lang/String;
+    iget-object v7, p0, Lec/l;->p:Ljava/lang/String;
 
     aput-object v7, v6, v2
 
-    invoke-static {v1, v6}, Lae/w;->a(Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-static {v1, v6}, Lk3/f4;->a(Ljava/lang/String;[Ljava/lang/Object;)V
 
     .line 29
     invoke-virtual {v0}, Ljava/util/concurrent/locks/ReentrantLock;->isLocked()Z
@@ -1164,11 +1164,11 @@
     new-array v6, v3, [Ljava/lang/Object;
 
     .line 30
-    iget-object v7, p0, Lec/l;->o:Ljava/lang/String;
+    iget-object v7, p0, Lec/l;->p:Ljava/lang/String;
 
     aput-object v7, v6, v2
 
-    invoke-static {v1, v6}, Lae/w;->a(Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-static {v1, v6}, Lk3/f4;->a(Ljava/lang/String;[Ljava/lang/Object;)V
 
     .line 31
     :cond_6
@@ -1179,11 +1179,11 @@
     invoke-virtual {p0}, Lec/l;->a()V
 
     .line 33
-    iget-object v1, p0, Lec/l;->i:Lec/e;
+    iget-object v1, p0, Lec/l;->j:Lec/e;
 
     iget-object v1, v1, Lec/e;->i:Lcc/b;
 
-    iget-object v6, p0, Lec/l;->o:Ljava/lang/String;
+    iget-object v6, p0, Lec/l;->p:Ljava/lang/String;
 
     invoke-interface {v1, v6}, Lcc/b;->a(Ljava/lang/String;)Landroid/graphics/Bitmap;
 
@@ -1202,20 +1202,20 @@
 
     .line 35
     :cond_7
-    sget-object v6, Lfc/e;->h:Lfc/e;
+    sget-object v6, Lfc/e;->i:Lfc/e;
 
-    iput-object v6, p0, Lec/l;->v:Lfc/e;
+    iput-object v6, p0, Lec/l;->w:Lfc/e;
 
     const-string v6, "...Get cached bitmap from memory after waiting. [%s]"
 
     new-array v7, v3, [Ljava/lang/Object;
 
     .line 36
-    iget-object v8, p0, Lec/l;->o:Ljava/lang/String;
+    iget-object v8, p0, Lec/l;->p:Ljava/lang/String;
 
     aput-object v8, v7, v2
 
-    invoke-static {v6, v7}, Lae/w;->a(Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-static {v6, v7}, Lk3/f4;->a(Ljava/lang/String;[Ljava/lang/Object;)V
 
     goto :goto_7
 
@@ -1249,7 +1249,7 @@
     if-nez v6, :cond_10
 
     .line 41
-    iget-object v6, p0, Lec/l;->r:Lec/c;
+    iget-object v6, p0, Lec/l;->s:Lec/c;
 
     .line 42
     iget-object v6, v6, Lec/c;->o:Llc/a;
@@ -1271,14 +1271,14 @@
     new-array v6, v3, [Ljava/lang/Object;
 
     .line 43
-    iget-object v7, p0, Lec/l;->o:Ljava/lang/String;
+    iget-object v7, p0, Lec/l;->p:Ljava/lang/String;
 
     aput-object v7, v6, v2
 
-    invoke-static {v1, v6}, Lae/w;->a(Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-static {v1, v6}, Lk3/f4;->a(Ljava/lang/String;[Ljava/lang/Object;)V
 
     .line 44
-    iget-object v1, p0, Lec/l;->r:Lec/c;
+    iget-object v1, p0, Lec/l;->s:Lec/c;
 
     .line 45
     iget-object v1, v1, Lec/c;->o:Llc/a;
@@ -1295,18 +1295,18 @@
     new-array v7, v3, [Ljava/lang/Object;
 
     .line 47
-    iget-object v8, p0, Lec/l;->o:Ljava/lang/String;
+    iget-object v8, p0, Lec/l;->p:Ljava/lang/String;
 
     aput-object v8, v7, v2
 
     .line 48
-    invoke-static {v5, v4, v6, v7}, Lae/w;->c(ILjava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-static {v5, v4, v6, v7}, Lk3/f4;->d(ILjava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V
 
     :cond_b
     if-eqz v1, :cond_c
 
     .line 49
-    iget-object v6, p0, Lec/l;->r:Lec/c;
+    iget-object v6, p0, Lec/l;->s:Lec/c;
 
     .line 50
     iget-boolean v6, v6, Lec/c;->h:Z
@@ -1318,27 +1318,27 @@
     new-array v7, v3, [Ljava/lang/Object;
 
     .line 51
-    iget-object v8, p0, Lec/l;->o:Ljava/lang/String;
+    iget-object v8, p0, Lec/l;->p:Ljava/lang/String;
 
     aput-object v8, v7, v2
 
-    invoke-static {v6, v7}, Lae/w;->a(Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-static {v6, v7}, Lk3/f4;->a(Ljava/lang/String;[Ljava/lang/Object;)V
 
     .line 52
-    iget-object v6, p0, Lec/l;->i:Lec/e;
+    iget-object v6, p0, Lec/l;->j:Lec/e;
 
     iget-object v6, v6, Lec/e;->i:Lcc/b;
 
-    iget-object v7, p0, Lec/l;->o:Ljava/lang/String;
+    iget-object v7, p0, Lec/l;->p:Ljava/lang/String;
 
-    invoke-interface {v6, v7, v1}, Lcc/b;->e(Ljava/lang/String;Landroid/graphics/Bitmap;)Z
+    invoke-interface {v6, v7, v1}, Lcc/b;->d(Ljava/lang/String;Landroid/graphics/Bitmap;)Z
 
     :cond_c
     :goto_7
     if-eqz v1, :cond_e
 
     .line 53
-    iget-object v6, p0, Lec/l;->r:Lec/c;
+    iget-object v6, p0, Lec/l;->s:Lec/c;
 
     .line 54
     iget-object v6, v6, Lec/c;->p:Llc/a;
@@ -1360,14 +1360,14 @@
     new-array v6, v3, [Ljava/lang/Object;
 
     .line 55
-    iget-object v7, p0, Lec/l;->o:Ljava/lang/String;
+    iget-object v7, p0, Lec/l;->p:Ljava/lang/String;
 
     aput-object v7, v6, v2
 
-    invoke-static {v1, v6}, Lae/w;->a(Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-static {v1, v6}, Lk3/f4;->a(Ljava/lang/String;[Ljava/lang/Object;)V
 
     .line 56
-    iget-object v1, p0, Lec/l;->r:Lec/c;
+    iget-object v1, p0, Lec/l;->s:Lec/c;
 
     .line 57
     iget-object v1, v1, Lec/c;->p:Llc/a;
@@ -1384,12 +1384,12 @@
     new-array v3, v3, [Ljava/lang/Object;
 
     .line 59
-    iget-object v7, p0, Lec/l;->o:Ljava/lang/String;
+    iget-object v7, p0, Lec/l;->p:Ljava/lang/String;
 
     aput-object v7, v3, v2
 
     .line 60
-    invoke-static {v5, v4, v6, v3}, Lae/w;->c(ILjava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V
+    invoke-static {v5, v4, v6, v3}, Lk3/f4;->d(ILjava/lang/Throwable;Ljava/lang/String;[Ljava/lang/Object;)V
 
     .line 61
     :cond_e
@@ -1411,20 +1411,20 @@
     .line 64
     new-instance v0, Lec/b;
 
-    iget-object v2, p0, Lec/l;->g:Lec/h;
+    iget-object v2, p0, Lec/l;->h:Lec/h;
 
-    iget-object v3, p0, Lec/l;->f:Lec/g;
+    iget-object v3, p0, Lec/l;->g:Lec/g;
 
-    iget-object v4, p0, Lec/l;->v:Lfc/e;
+    iget-object v4, p0, Lec/l;->w:Lfc/e;
 
     invoke-direct {v0, v1, v2, v3, v4}, Lec/b;-><init>(Landroid/graphics/Bitmap;Lec/h;Lec/g;Lfc/e;)V
 
     .line 65
-    iget-boolean v1, p0, Lec/l;->u:Z
+    iget-boolean v1, p0, Lec/l;->v:Z
 
-    iget-object v2, p0, Lec/l;->h:Landroid/os/Handler;
+    iget-object v2, p0, Lec/l;->i:Landroid/os/Handler;
 
-    iget-object v3, p0, Lec/l;->f:Lec/g;
+    iget-object v3, p0, Lec/l;->g:Lec/g;
 
     invoke-static {v0, v1, v2, v3}, Lec/l;->j(Ljava/lang/Runnable;ZLandroid/os/Handler;Lec/g;)V
 
@@ -1458,7 +1458,7 @@
     .line 68
     :catch_2
     :try_start_7
-    iget-boolean v1, p0, Lec/l;->u:Z
+    iget-boolean v1, p0, Lec/l;->v:Z
 
     if-nez v1, :cond_12
 
@@ -1477,9 +1477,9 @@
     invoke-direct {v1, p0}, Lec/k;-><init>(Lec/l;)V
 
     .line 70
-    iget-object v3, p0, Lec/l;->h:Landroid/os/Handler;
+    iget-object v3, p0, Lec/l;->i:Landroid/os/Handler;
 
-    iget-object v4, p0, Lec/l;->f:Lec/g;
+    iget-object v4, p0, Lec/l;->g:Lec/g;
 
     invoke-static {v1, v2, v3, v4}, Lec/l;->j(Ljava/lang/Runnable;ZLandroid/os/Handler;Lec/g;)V
     :try_end_7

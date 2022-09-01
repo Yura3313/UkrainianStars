@@ -23,10 +23,10 @@
 
 
 # instance fields
-.field public a:Lv3/i1;
+.field public a:Lv3/h1;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lv3/i1<",
+            "Lv3/h1<",
             "TV;>;"
         }
     .end annotation
@@ -225,13 +225,13 @@
 
     .line 2
     :try_start_0
-    invoke-static {}, Lk3/c9;->a()Z
+    invoke-static {}, Lcom/helpshift/util/a0;->c()Z
 
     move-result v1
 
     if-nez v1, :cond_5
 
-    sget-object v1, Lz3/h;->a:Lk3/c9;
+    sget-object v1, Lz3/h;->a:Lcom/helpshift/util/a0;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -257,9 +257,9 @@
     check-cast v2, Lz3/h$a;
 
     .line 4
-    iget-object v3, v2, Lz3/h$a;->a:Lv3/i1;
+    iget-object v3, v2, Lz3/h$a;->a:Lv3/h1;
 
-    invoke-virtual {v3}, Lv3/i1;->a()Ljava/lang/Object;
+    invoke-virtual {v3}, Lv3/h1;->a()Ljava/lang/Object;
 
     move-result-object v3
 
@@ -289,9 +289,9 @@
     check-cast v2, Lz3/h$a;
 
     .line 6
-    iget-object v3, v2, Lz3/h$a;->a:Lv3/i1;
+    iget-object v3, v2, Lz3/h$a;->a:Lv3/h1;
 
-    invoke-virtual {v3}, Lv3/i1;->a()Ljava/lang/Object;
+    invoke-virtual {v3}, Lv3/h1;->a()Ljava/lang/Object;
 
     move-result-object v3
 
@@ -321,9 +321,9 @@
     check-cast v2, Lz3/h$a;
 
     .line 8
-    iget-object v3, v2, Lz3/h$a;->a:Lv3/i1;
+    iget-object v3, v2, Lz3/h$a;->a:Lv3/h1;
 
-    invoke-virtual {v3}, Lv3/i1;->a()Ljava/lang/Object;
+    invoke-virtual {v3}, Lv3/h1;->a()Ljava/lang/Object;
 
     move-result-object v3
 
@@ -353,9 +353,9 @@
     check-cast v2, Lz3/h$a;
 
     .line 10
-    iget-object v3, v2, Lz3/h$a;->a:Lv3/i1;
+    iget-object v3, v2, Lz3/h$a;->a:Lv3/h1;
 
-    invoke-virtual {v3}, Lv3/i1;->a()Ljava/lang/Object;
+    invoke-virtual {v3}, Lv3/h1;->a()Ljava/lang/Object;
 
     move-result-object v3
 
@@ -385,9 +385,9 @@
     check-cast v2, Lz3/h$a;
 
     .line 12
-    iget-object v3, v2, Lz3/h$a;->a:Lv3/i1;
+    iget-object v3, v2, Lz3/h$a;->a:Lv3/h1;
 
-    invoke-virtual {v3}, Lv3/i1;->a()Ljava/lang/Object;
+    invoke-virtual {v3}, Lv3/h1;->a()Ljava/lang/Object;
 
     move-result-object v3
 
@@ -449,7 +449,7 @@
     .end annotation
 
     .line 1
-    sget-object v0, Lz3/h;->a:Lk3/c9;
+    sget-object v0, Lz3/h;->a:Lcom/helpshift/util/a0;
 
     if-nez v0, :cond_0
 
@@ -460,7 +460,7 @@
 
     .line 3
     :cond_0
-    invoke-static {}, Lk3/c9;->a()Z
+    invoke-static {}, Lcom/helpshift/util/a0;->c()Z
 
     move-result v0
 
@@ -486,9 +486,9 @@
 
     .line 6
     :try_start_0
-    iget-object v0, p0, Lz3/h$a;->a:Lv3/i1;
+    iget-object v0, p0, Lz3/h$a;->a:Lv3/h1;
 
-    invoke-virtual {v0}, Lv3/i1;->a()Ljava/lang/Object;
+    invoke-virtual {v0}, Lv3/h1;->a()Ljava/lang/Object;
 
     move-result-object v0
     :try_end_0
@@ -503,10 +503,10 @@
     invoke-static {v0}, Lz3/h;->a(Ljava/lang/Exception;)V
 
     .line 8
-    iget-object v0, p0, Lz3/h$a;->a:Lv3/i1;
+    iget-object v0, p0, Lz3/h$a;->a:Lv3/h1;
 
     .line 9
-    iget-object v0, v0, Lv3/i1;->c:Ljava/lang/Object;
+    iget-object v0, v0, Lv3/h1;->c:Ljava/lang/Object;
 
     return-object v0
 .end method
@@ -525,7 +525,7 @@
 
     .line 1
     :cond_0
-    sget-object p1, Lz3/h;->a:Lk3/c9;
+    sget-object p1, Lz3/h;->a:Lcom/helpshift/util/a0;
 
     if-nez p1, :cond_1
 
@@ -536,7 +536,7 @@
 
     .line 3
     :cond_1
-    invoke-static {}, Lk3/c9;->a()Z
+    invoke-static {}, Lcom/helpshift/util/a0;->c()Z
 
     move-result p1
 
@@ -562,9 +562,9 @@
 
     .line 6
     :try_start_0
-    iget-object p1, p0, Lz3/h$a;->a:Lv3/i1;
+    iget-object p1, p0, Lz3/h$a;->a:Lv3/h1;
 
-    invoke-virtual {p1}, Lv3/i1;->a()Ljava/lang/Object;
+    invoke-virtual {p1}, Lv3/h1;->a()Ljava/lang/Object;
 
     move-result-object p1
     :try_end_0
@@ -579,10 +579,10 @@
     invoke-static {p1}, Lz3/h;->a(Ljava/lang/Exception;)V
 
     .line 8
-    iget-object p1, p0, Lz3/h$a;->a:Lv3/i1;
+    iget-object p1, p0, Lz3/h$a;->a:Lv3/h1;
 
     .line 9
-    iget-object p1, p1, Lv3/i1;->c:Ljava/lang/Object;
+    iget-object p1, p1, Lv3/h1;->c:Ljava/lang/Object;
 
     return-object p1
 .end method

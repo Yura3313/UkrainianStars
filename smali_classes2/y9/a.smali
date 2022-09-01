@@ -155,7 +155,7 @@
     const-string v4, "LOG_MESSAGES"
 
     .line 11
-    invoke-static {p1}, Lcom/google/android/play/core/assetpacks/y;->c(Laa/a;)Landroid/content/ContentValues;
+    invoke-static {p1}, La0/a;->e(Laa/a;)Landroid/content/ContentValues;
 
     move-result-object p1
 

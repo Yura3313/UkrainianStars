@@ -14,7 +14,7 @@
 
 
 # static fields
-.field public static final h:Ljava/util/HashMap;
+.field public static final i:Ljava/util/HashMap;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Map<",
@@ -25,7 +25,7 @@
     .end annotation
 .end field
 
-.field public static final i:Ljava/util/HashMap;
+.field public static final j:Ljava/util/HashMap;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Map<",
@@ -36,13 +36,13 @@
     .end annotation
 .end field
 
-.field public static final synthetic j:[Ll6/d;
+.field public static final synthetic k:[Ll6/d;
 
 
 # instance fields
-.field public final f:[I
+.field public final g:[I
 
-.field public final g:[Ljava/lang/String;
+.field public final h:[Ljava/lang/String;
 
 
 # direct methods
@@ -722,21 +722,21 @@
     aput-object v3, v1, v0
 
     .line 29
-    sput-object v1, Ll6/d;->j:[Ll6/d;
+    sput-object v1, Ll6/d;->k:[Ll6/d;
 
     .line 30
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    sput-object v0, Ll6/d;->h:Ljava/util/HashMap;
+    sput-object v0, Ll6/d;->i:Ljava/util/HashMap;
 
     .line 31
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    sput-object v0, Ll6/d;->i:Ljava/util/HashMap;
+    sput-object v0, Ll6/d;->j:Ljava/util/HashMap;
 
     .line 32
     invoke-static {}, Ll6/d;->values()[Ll6/d;
@@ -753,7 +753,7 @@
     aget-object v3, v0, v2
 
     .line 33
-    iget-object v4, v3, Ll6/d;->f:[I
+    iget-object v4, v3, Ll6/d;->g:[I
 
     array-length v5, v4
 
@@ -765,7 +765,7 @@
     aget v7, v4, v6
 
     .line 34
-    sget-object v8, Ll6/d;->h:Ljava/util/HashMap;
+    sget-object v8, Ll6/d;->i:Ljava/util/HashMap;
 
     invoke-static {v7}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -779,7 +779,7 @@
 
     .line 35
     :cond_0
-    sget-object v4, Ll6/d;->i:Ljava/util/HashMap;
+    sget-object v4, Ll6/d;->j:Ljava/util/HashMap;
 
     invoke-virtual {v3}, Ljava/lang/Enum;->name()Ljava/lang/String;
 
@@ -788,7 +788,7 @@
     invoke-virtual {v4, v5, v3}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 36
-    iget-object v4, v3, Ll6/d;->g:[Ljava/lang/String;
+    iget-object v4, v3, Ll6/d;->h:[Ljava/lang/String;
 
     array-length v5, v4
 
@@ -800,7 +800,7 @@
     aget-object v7, v4, v6
 
     .line 37
-    sget-object v8, Ll6/d;->i:Ljava/util/HashMap;
+    sget-object v8, Ll6/d;->j:Ljava/util/HashMap;
 
     invoke-virtual {v8, v7, v3}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -859,10 +859,10 @@
     aput p3, p1, p2
 
     .line 2
-    iput-object p1, p0, Ll6/d;->f:[I
+    iput-object p1, p0, Ll6/d;->g:[I
 
     .line 3
-    iput-object p4, p0, Ll6/d;->g:[Ljava/lang/String;
+    iput-object p4, p0, Ll6/d;->h:[Ljava/lang/String;
 
     return-void
 .end method
@@ -881,10 +881,10 @@
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 5
-    iput-object p3, p0, Ll6/d;->f:[I
+    iput-object p3, p0, Ll6/d;->g:[I
 
     .line 6
-    iput-object p4, p0, Ll6/d;->g:[Ljava/lang/String;
+    iput-object p4, p0, Ll6/d;->h:[Ljava/lang/String;
 
     return-void
 .end method
@@ -904,7 +904,7 @@
     if-ge p0, v0, :cond_0
 
     .line 1
-    sget-object v0, Ll6/d;->h:Ljava/util/HashMap;
+    sget-object v0, Ll6/d;->i:Ljava/util/HashMap;
 
     invoke-static {p0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -944,7 +944,7 @@
 .method public static values()[Ll6/d;
     .locals 1
 
-    sget-object v0, Ll6/d;->j:[Ll6/d;
+    sget-object v0, Ll6/d;->k:[Ll6/d;
 
     invoke-virtual {v0}, [Ll6/d;->clone()Ljava/lang/Object;
 

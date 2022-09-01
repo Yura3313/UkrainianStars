@@ -287,7 +287,7 @@
     :cond_0
     sget-object p3, Ld4/a;->a:Landroid/view/animation/LinearInterpolator;
 
-    invoke-static {p1, p0, p2, p0}, Lo/p;->a(FFFF)F
+    invoke-static {p1, p0, p2, p0}, Lo/o;->a(FFFF)F
 
     move-result p0
 
@@ -340,7 +340,7 @@
     if-eqz v0, :cond_0
 
     .line 2
-    iput-boolean v1, v0, Lp4/a;->h:Z
+    iput-boolean v1, v0, Lp4/a;->i:Z
 
     .line 3
     :cond_0
@@ -367,7 +367,7 @@
     if-eqz v3, :cond_2
 
     .line 6
-    iput-boolean v1, v3, Lp4/a;->h:Z
+    iput-boolean v1, v3, Lp4/a;->i:Z
 
     .line 7
     :cond_2
@@ -2050,7 +2050,7 @@
     const/4 v1, 0x1
 
     .line 12
-    iput-boolean v1, p1, Lp4/a;->h:Z
+    iput-boolean v1, p1, Lp4/a;->i:Z
 
     .line 13
     :cond_3
@@ -2080,7 +2080,7 @@
 
     iget-object v1, p0, Lcom/google/android/material/internal/a;->w:Lp4/a;
 
-    invoke-virtual {v0, p1, v1}, Lp4/d;->b(Landroid/content/Context;Lb2/a0;)V
+    invoke-virtual {v0, p1, v1}, Lp4/d;->b(Landroid/content/Context;Lb2/z;)V
 
     .line 18
     invoke-virtual {p0}, Lcom/google/android/material/internal/a;->m()V
@@ -2135,7 +2135,7 @@
     if-eqz v0, :cond_0
 
     .line 2
-    iput-boolean v1, v0, Lp4/a;->h:Z
+    iput-boolean v1, v0, Lp4/a;->i:Z
 
     .line 3
     :cond_0
@@ -2277,7 +2277,7 @@
     const/4 v1, 0x1
 
     .line 12
-    iput-boolean v1, p1, Lp4/a;->h:Z
+    iput-boolean v1, p1, Lp4/a;->i:Z
 
     .line 13
     :cond_3
@@ -2307,7 +2307,7 @@
 
     iget-object v1, p0, Lcom/google/android/material/internal/a;->v:Lp4/a;
 
-    invoke-virtual {v0, p1, v1}, Lp4/d;->b(Landroid/content/Context;Lb2/a0;)V
+    invoke-virtual {v0, p1, v1}, Lp4/d;->b(Landroid/content/Context;Lb2/z;)V
 
     .line 18
     invoke-virtual {p0}, Lcom/google/android/material/internal/a;->m()V
@@ -2362,7 +2362,7 @@
     if-eqz v0, :cond_0
 
     .line 2
-    iput-boolean v1, v0, Lp4/a;->h:Z
+    iput-boolean v1, v0, Lp4/a;->i:Z
 
     .line 3
     :cond_0
@@ -2396,7 +2396,7 @@
     const/high16 v1, 0x3f800000    # 1.0f
 
     .line 1
-    invoke-static {p1, v0, v1}, La0/a;->c(FFF)F
+    invoke-static {p1, v0, v1}, La0/a;->a(FFF)F
 
     move-result p1
 

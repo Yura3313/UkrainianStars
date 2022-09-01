@@ -3,15 +3,15 @@
 
 
 # static fields
-.field public static final k:Ljava/util/concurrent/atomic/AtomicLong;
+.field public static final q:Ljava/util/concurrent/atomic/AtomicLong;
 
 
 # instance fields
-.field public c:Lz3/o0;
+.field public i:Lz3/o0;
 
-.field public d:Lz3/o0;
+.field public j:Lz3/o0;
 
-.field public final e:Ljava/util/concurrent/PriorityBlockingQueue;
+.field public final k:Ljava/util/concurrent/PriorityBlockingQueue;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/concurrent/PriorityBlockingQueue<",
@@ -21,7 +21,7 @@
     .end annotation
 .end field
 
-.field public final f:Ljava/util/concurrent/LinkedBlockingQueue;
+.field public final l:Ljava/util/concurrent/LinkedBlockingQueue;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/concurrent/BlockingQueue<",
@@ -31,13 +31,13 @@
     .end annotation
 .end field
 
-.field public final g:Lz3/m0;
+.field public final m:Lz3/m0;
 
-.field public final h:Lz3/m0;
+.field public final n:Lz3/m0;
 
-.field public final i:Ljava/lang/Object;
+.field public final o:Ljava/lang/Object;
 
-.field public final j:Ljava/util/concurrent/Semaphore;
+.field public final p:Ljava/util/concurrent/Semaphore;
 
 
 # direct methods
@@ -50,7 +50,7 @@
 
     invoke-direct {v0, v1, v2}, Ljava/util/concurrent/atomic/AtomicLong;-><init>(J)V
 
-    sput-object v0, Lz3/l0;->k:Ljava/util/concurrent/atomic/AtomicLong;
+    sput-object v0, Lz3/l0;->q:Ljava/util/concurrent/atomic/AtomicLong;
 
     return-void
 .end method
@@ -66,7 +66,7 @@
 
     invoke-direct {p1}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lz3/l0;->i:Ljava/lang/Object;
+    iput-object p1, p0, Lz3/l0;->o:Ljava/lang/Object;
 
     .line 3
     new-instance p1, Ljava/util/concurrent/Semaphore;
@@ -75,21 +75,21 @@
 
     invoke-direct {p1, v0}, Ljava/util/concurrent/Semaphore;-><init>(I)V
 
-    iput-object p1, p0, Lz3/l0;->j:Ljava/util/concurrent/Semaphore;
+    iput-object p1, p0, Lz3/l0;->p:Ljava/util/concurrent/Semaphore;
 
     .line 4
     new-instance p1, Ljava/util/concurrent/PriorityBlockingQueue;
 
     invoke-direct {p1}, Ljava/util/concurrent/PriorityBlockingQueue;-><init>()V
 
-    iput-object p1, p0, Lz3/l0;->e:Ljava/util/concurrent/PriorityBlockingQueue;
+    iput-object p1, p0, Lz3/l0;->k:Ljava/util/concurrent/PriorityBlockingQueue;
 
     .line 5
     new-instance p1, Ljava/util/concurrent/LinkedBlockingQueue;
 
     invoke-direct {p1}, Ljava/util/concurrent/LinkedBlockingQueue;-><init>()V
 
-    iput-object p1, p0, Lz3/l0;->f:Ljava/util/concurrent/LinkedBlockingQueue;
+    iput-object p1, p0, Lz3/l0;->l:Ljava/util/concurrent/LinkedBlockingQueue;
 
     .line 6
     new-instance p1, Lz3/m0;
@@ -98,7 +98,7 @@
 
     invoke-direct {p1, p0, v0}, Lz3/m0;-><init>(Lz3/l0;Ljava/lang/String;)V
 
-    iput-object p1, p0, Lz3/l0;->g:Lz3/m0;
+    iput-object p1, p0, Lz3/l0;->m:Lz3/m0;
 
     .line 7
     new-instance p1, Lz3/m0;
@@ -107,7 +107,7 @@
 
     invoke-direct {p1, p0, v0}, Lz3/m0;-><init>(Lz3/l0;Ljava/lang/String;)V
 
-    iput-object p1, p0, Lz3/l0;->h:Lz3/m0;
+    iput-object p1, p0, Lz3/l0;->n:Lz3/m0;
 
     return-void
 .end method
@@ -125,18 +125,18 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lz3/l0;->i:Ljava/lang/Object;
+    iget-object v0, p0, Lz3/l0;->o:Ljava/lang/Object;
 
     monitor-enter v0
 
     .line 2
     :try_start_0
-    iget-object v1, p0, Lz3/l0;->e:Ljava/util/concurrent/PriorityBlockingQueue;
+    iget-object v1, p0, Lz3/l0;->k:Ljava/util/concurrent/PriorityBlockingQueue;
 
     invoke-virtual {v1, p1}, Ljava/util/concurrent/PriorityBlockingQueue;->add(Ljava/lang/Object;)Z
 
     .line 3
-    iget-object p1, p0, Lz3/l0;->c:Lz3/o0;
+    iget-object p1, p0, Lz3/l0;->i:Lz3/o0;
 
     if-nez p1, :cond_0
 
@@ -145,19 +145,19 @@
 
     const-string v1, "Measurement Worker"
 
-    iget-object v2, p0, Lz3/l0;->e:Ljava/util/concurrent/PriorityBlockingQueue;
+    iget-object v2, p0, Lz3/l0;->k:Ljava/util/concurrent/PriorityBlockingQueue;
 
     invoke-direct {p1, p0, v1, v2}, Lz3/o0;-><init>(Lz3/l0;Ljava/lang/String;Ljava/util/concurrent/BlockingQueue;)V
 
-    iput-object p1, p0, Lz3/l0;->c:Lz3/o0;
+    iput-object p1, p0, Lz3/l0;->i:Lz3/o0;
 
     .line 5
-    iget-object v1, p0, Lz3/l0;->g:Lz3/m0;
+    iget-object v1, p0, Lz3/l0;->m:Lz3/m0;
 
     invoke-virtual {p1, v1}, Ljava/lang/Thread;->setUncaughtExceptionHandler(Ljava/lang/Thread$UncaughtExceptionHandler;)V
 
     .line 6
-    iget-object p1, p0, Lz3/l0;->c:Lz3/o0;
+    iget-object p1, p0, Lz3/l0;->i:Lz3/o0;
 
     invoke-virtual {p1}, Ljava/lang/Thread;->start()V
 
@@ -165,7 +165,7 @@
 
     .line 7
     :cond_0
-    iget-object v1, p1, Lz3/o0;->f:Ljava/lang/Object;
+    iget-object v1, p1, Lz3/o0;->g:Ljava/lang/Object;
 
     monitor-enter v1
     :try_end_0
@@ -173,7 +173,7 @@
 
     .line 8
     :try_start_1
-    iget-object p1, p1, Lz3/o0;->f:Ljava/lang/Object;
+    iget-object p1, p1, Lz3/o0;->g:Ljava/lang/Object;
 
     invoke-virtual {p1}, Ljava/lang/Object;->notifyAll()V
 
@@ -249,12 +249,12 @@
 
     move-result-object p1
 
-    iget-object v1, p0, Lz3/l0;->c:Lz3/o0;
+    iget-object v1, p0, Lz3/l0;->i:Lz3/o0;
 
     if-ne p1, v1, :cond_1
 
     .line 4
-    iget-object p1, p0, Lz3/l0;->e:Ljava/util/concurrent/PriorityBlockingQueue;
+    iget-object p1, p0, Lz3/l0;->k:Ljava/util/concurrent/PriorityBlockingQueue;
 
     invoke-virtual {p1}, Ljava/util/AbstractCollection;->isEmpty()Z
 
@@ -268,7 +268,7 @@
     move-result-object p1
 
     .line 6
-    iget-object p1, p1, Lz3/o;->i:Lz3/q;
+    iget-object p1, p1, Lz3/o;->o:Lz3/q;
 
     const-string v1, "Callable skipped the worker queue."
 
@@ -334,18 +334,18 @@
     invoke-direct {v0, p0, p1, v1}, Lz3/n0;-><init>(Lz3/l0;Ljava/lang/Runnable;Ljava/lang/String;)V
 
     .line 3
-    iget-object p1, p0, Lz3/l0;->i:Ljava/lang/Object;
+    iget-object p1, p0, Lz3/l0;->o:Ljava/lang/Object;
 
     monitor-enter p1
 
     .line 4
     :try_start_0
-    iget-object v1, p0, Lz3/l0;->f:Ljava/util/concurrent/LinkedBlockingQueue;
+    iget-object v1, p0, Lz3/l0;->l:Ljava/util/concurrent/LinkedBlockingQueue;
 
     invoke-interface {v1, v0}, Ljava/util/concurrent/BlockingQueue;->add(Ljava/lang/Object;)Z
 
     .line 5
-    iget-object v0, p0, Lz3/l0;->d:Lz3/o0;
+    iget-object v0, p0, Lz3/l0;->j:Lz3/o0;
 
     if-nez v0, :cond_0
 
@@ -354,19 +354,19 @@
 
     const-string v1, "Measurement Network"
 
-    iget-object v2, p0, Lz3/l0;->f:Ljava/util/concurrent/LinkedBlockingQueue;
+    iget-object v2, p0, Lz3/l0;->l:Ljava/util/concurrent/LinkedBlockingQueue;
 
     invoke-direct {v0, p0, v1, v2}, Lz3/o0;-><init>(Lz3/l0;Ljava/lang/String;Ljava/util/concurrent/BlockingQueue;)V
 
-    iput-object v0, p0, Lz3/l0;->d:Lz3/o0;
+    iput-object v0, p0, Lz3/l0;->j:Lz3/o0;
 
     .line 7
-    iget-object v1, p0, Lz3/l0;->h:Lz3/m0;
+    iget-object v1, p0, Lz3/l0;->n:Lz3/m0;
 
     invoke-virtual {v0, v1}, Ljava/lang/Thread;->setUncaughtExceptionHandler(Ljava/lang/Thread$UncaughtExceptionHandler;)V
 
     .line 8
-    iget-object v0, p0, Lz3/l0;->d:Lz3/o0;
+    iget-object v0, p0, Lz3/l0;->j:Lz3/o0;
 
     invoke-virtual {v0}, Ljava/lang/Thread;->start()V
 
@@ -374,7 +374,7 @@
 
     .line 9
     :cond_0
-    iget-object v1, v0, Lz3/o0;->f:Ljava/lang/Object;
+    iget-object v1, v0, Lz3/o0;->g:Ljava/lang/Object;
 
     monitor-enter v1
     :try_end_0
@@ -382,7 +382,7 @@
 
     .line 10
     :try_start_1
-    iget-object v0, v0, Lz3/o0;->f:Ljava/lang/Object;
+    iget-object v0, v0, Lz3/o0;->g:Ljava/lang/Object;
 
     invoke-virtual {v0}, Ljava/lang/Object;->notifyAll()V
 
@@ -430,7 +430,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lz3/l0;->c:Lz3/o0;
+    iget-object v1, p0, Lz3/l0;->i:Lz3/o0;
 
     if-ne v0, v1, :cond_0
 
@@ -452,7 +452,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lz3/l0;->c:Lz3/o0;
+    iget-object v1, p0, Lz3/l0;->i:Lz3/o0;
 
     if-ne v0, v1, :cond_0
 
@@ -477,7 +477,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lz3/l0;->d:Lz3/o0;
+    iget-object v1, p0, Lz3/l0;->j:Lz3/o0;
 
     if-ne v0, v1, :cond_0
 

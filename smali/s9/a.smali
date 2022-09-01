@@ -14,11 +14,11 @@
 
 
 # static fields
-.field public static final enum f:Ls9/a;
-
 .field public static final enum g:Ls9/a;
 
-.field public static final synthetic h:[Ls9/a;
+.field public static final enum h:Ls9/a;
+
+.field public static final synthetic i:[Ls9/a;
 
 
 # direct methods
@@ -34,7 +34,7 @@
 
     invoke-direct {v0, v1, v2}, Ls9/a;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Ls9/a;->f:Ls9/a;
+    sput-object v0, Ls9/a;->g:Ls9/a;
 
     .line 2
     new-instance v1, Ls9/a;
@@ -45,7 +45,7 @@
 
     invoke-direct {v1, v3, v4}, Ls9/a;-><init>(Ljava/lang/String;I)V
 
-    sput-object v1, Ls9/a;->g:Ls9/a;
+    sput-object v1, Ls9/a;->h:Ls9/a;
 
     const/4 v3, 0x2
 
@@ -56,7 +56,7 @@
     aput-object v1, v3, v4
 
     .line 3
-    sput-object v3, Ls9/a;->h:[Ls9/a;
+    sput-object v3, Ls9/a;->i:[Ls9/a;
 
     return-void
 .end method
@@ -91,7 +91,7 @@
 .method public static values()[Ls9/a;
     .locals 1
 
-    sget-object v0, Ls9/a;->h:[Ls9/a;
+    sget-object v0, Ls9/a;->i:[Ls9/a;
 
     invoke-virtual {v0}, [Ls9/a;->clone()Ljava/lang/Object;
 

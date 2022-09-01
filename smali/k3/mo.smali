@@ -15,13 +15,13 @@
 
 
 # virtual methods
-.method public abstract a(ILjava/lang/String;)Lk3/e40;
+.method public abstract a(ILjava/lang/String;)Lk3/h40;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
             "Ljava/lang/String;",
             ")",
-            "Lk3/e40<",
+            "Lk3/h40<",
             "TAdT;>;"
         }
     .end annotation

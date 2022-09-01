@@ -7,32 +7,20 @@
 
 
 # instance fields
-.field public final f:Lk3/h10;
+.field public final synthetic g:I
 
-.field public final g:Lk3/yg0;
-
-.field public final h:Lcom/google/android/gms/internal/ads/zzaih;
-
-.field public final i:Ljava/util/List;
-
-.field public final j:Ljava/lang/String;
+.field public final h:Ljava/lang/Object;
 
 
 # direct methods
-.method public constructor <init>(Lk3/h10;Lk3/yg0;Lcom/google/android/gms/internal/ads/zzaih;Ljava/util/List;Ljava/lang/String;)V
+.method public synthetic constructor <init>(Ljava/lang/Object;I)V
     .locals 0
 
+    iput p2, p0, Lk3/l10;->g:I
+
+    iput-object p1, p0, Lk3/l10;->h:Ljava/lang/Object;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    iput-object p1, p0, Lk3/l10;->f:Lk3/h10;
-
-    iput-object p2, p0, Lk3/l10;->g:Lk3/yg0;
-
-    iput-object p3, p0, Lk3/l10;->h:Lcom/google/android/gms/internal/ads/zzaih;
-
-    iput-object p4, p0, Lk3/l10;->i:Ljava/util/List;
-
-    iput-object p5, p0, Lk3/l10;->j:Ljava/lang/String;
 
     return-void
 .end method
@@ -40,109 +28,123 @@
 
 # virtual methods
 .method public final run()V
-    .locals 6
+    .locals 8
 
-    iget-object v0, p0, Lk3/l10;->f:Lk3/h10;
+    iget v0, p0, Lk3/l10;->g:I
 
-    iget-object v1, p0, Lk3/l10;->g:Lk3/yg0;
-
-    iget-object v2, p0, Lk3/l10;->h:Lcom/google/android/gms/internal/ads/zzaih;
-
-    iget-object v3, p0, Lk3/l10;->i:Ljava/util/List;
-
-    iget-object v4, p0, Lk3/l10;->j:Ljava/lang/String;
-
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 1
-    :try_start_0
-    iget-object v5, v0, Lk3/h10;->f:Ljava/lang/ref/WeakReference;
-
-    invoke-virtual {v5}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
-
-    move-result-object v5
-
-    check-cast v5, Landroid/content/Context;
-
-    if-eqz v5, :cond_0
-
-    goto :goto_0
-
-    .line 2
-    :cond_0
-    iget-object v5, v0, Lk3/h10;->e:Landroid/content/Context;
-
-    .line 3
-    :goto_0
-    invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-    :try_end_0
-    .catch Lcom/google/android/gms/internal/ads/zzdlr; {:try_start_0 .. :try_end_0} :catch_0
-
-    .line 4
-    :try_start_1
-    iget-object v0, v1, Lk3/yg0;->a:Lcom/google/android/gms/internal/ads/zzamv;
-
-    .line 5
-    new-instance v1, Lcom/google/android/gms/dynamic/ObjectWrapper;
-
-    invoke-direct {v1, v5}, Lcom/google/android/gms/dynamic/ObjectWrapper;-><init>(Ljava/lang/Object;)V
-
-    .line 6
-    invoke-interface {v0, v1, v2, v3}, Lcom/google/android/gms/internal/ads/zzamv;->E6(Lcom/google/android/gms/dynamic/IObjectWrapper;Lcom/google/android/gms/internal/ads/zzaih;Ljava/util/List;)V
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+    packed-switch v0, :pswitch_data_0
 
     goto :goto_1
 
-    :catchall_0
-    move-exception v0
+    .line 1
+    :pswitch_0
+    iget-object v0, p0, Lk3/l10;->h:Ljava/lang/Object;
+
+    check-cast v0, Lk3/w20;
+
+    .line 2
+    invoke-virtual {v0}, Lk3/u20;->b()V
+
+    return-void
+
+    .line 3
+    :pswitch_1
+    iget-object v0, p0, Lk3/l10;->h:Ljava/lang/Object;
+
+    check-cast v0, Lk3/i10;
+
+    .line 4
+    monitor-enter v0
+
+    .line 5
+    :try_start_0
+    iget-boolean v1, v0, Lk3/i10;->b:Z
+
+    if-eqz v1, :cond_0
+
+    .line 6
+    monitor-exit v0
+
+    goto :goto_0
+
+    :cond_0
+    const-string v1, "com.google.android.gms.ads.MobileAds"
+
+    const/4 v2, 0x0
+
+    const-string v3, "Timeout."
 
     .line 7
-    :try_start_2
-    new-instance v1, Lcom/google/android/gms/internal/ads/zzdlr;
+    sget-object v4, Li1/p;->B:Li1/p;
 
-    invoke-direct {v1, v0}, Lcom/google/android/gms/internal/ads/zzdlr;-><init>(Ljava/lang/Throwable;)V
-
-    throw v1
-    :try_end_2
-    .catch Lcom/google/android/gms/internal/ads/zzdlr; {:try_start_2 .. :try_end_2} :catch_0
+    iget-object v4, v4, Li1/p;->j:Ll2/c;
 
     .line 8
-    :catch_0
-    :try_start_3
-    invoke-static {v4}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+    invoke-interface {v4}, Ll2/c;->b()J
 
-    move-result-object v0
+    move-result-wide v4
 
-    invoke-virtual {v0}, Ljava/lang/String;->length()I
+    iget-wide v6, v0, Lk3/i10;->c:J
 
-    move-result v0
+    sub-long/2addr v4, v6
 
-    add-int/lit8 v0, v0, 0x4a
+    long-to-int v5, v4
 
-    new-instance v1, Ljava/lang/StringBuilder;
+    .line 9
+    invoke-virtual {v0, v1, v2, v3, v5}, Lk3/i10;->a(Ljava/lang/String;ZLjava/lang/String;I)V
 
-    invoke-direct {v1, v0}, Ljava/lang/StringBuilder;-><init>(I)V
+    .line 10
+    iget-object v1, v0, Lk3/i10;->d:Lk3/qd;
 
-    const-string v0, "Failed to initialize adapter. "
+    new-instance v2, Ljava/lang/Exception;
 
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-direct {v2}, Ljava/lang/Exception;-><init>()V
 
-    invoke-virtual {v1, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-virtual {v1, v2}, Lk3/qd;->b(Ljava/lang/Throwable;)Z
 
-    const-string v0, " does not implement the initialize() method."
+    .line 11
+    monitor-exit v0
 
-    invoke-virtual {v1, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-interface {v2, v0}, Lcom/google/android/gms/internal/ads/zzaih;->N2(Ljava/lang/String;)V
-    :try_end_3
-    .catch Landroid/os/RemoteException; {:try_start_3 .. :try_end_3} :catch_1
-
-    :catch_1
-    :goto_1
+    :goto_0
     return-void
+
+    :catchall_0
+    move-exception v1
+
+    monitor-exit v0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    throw v1
+
+    .line 12
+    :goto_1
+    iget-object v0, p0, Lk3/l10;->h:Ljava/lang/Object;
+
+    check-cast v0, Lcom/google/android/gms/internal/ads/zzzm;
+
+    .line 13
+    iget-object v0, v0, Lcom/google/android/gms/internal/ads/zzzm;->g:Lcom/google/android/gms/internal/ads/zzaim;
+
+    if-eqz v0, :cond_1
+
+    .line 14
+    :try_start_1
+    invoke-static {}, Ljava/util/Collections;->emptyList()Ljava/util/List;
+
+    move-result-object v1
+
+    invoke-interface {v0, v1}, Lcom/google/android/gms/internal/ads/zzaim;->B6(Ljava/util/List;)V
+    :try_end_1
+    .catch Landroid/os/RemoteException; {:try_start_1 .. :try_end_1} :catch_0
+
+    :catch_0
+    :cond_1
+    return-void
+
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
 .end method

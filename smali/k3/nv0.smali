@@ -1,159 +1,118 @@
 .class public final Lk3/nv0;
-.super Ljava/lang/Object;
+.super Lk3/hv0;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
-
-# interfaces
-.implements Lk3/mv0;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "<T:",
+        "<K:",
+        "Ljava/lang/Object;",
+        "V:",
         "Ljava/lang/Object;",
         ">",
-        "Ljava/lang/Object;",
-        "Lk3/mv0<",
-        "TT;>;"
+        "Lk3/hv0<",
+        "TK;TV;TV;>;"
     }
 .end annotation
 
 
 # static fields
-.field public static final c:Ljava/lang/Object;
-
-
-# instance fields
-.field public volatile a:Lk3/mv0;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lk3/mv0<",
-            "TT;>;"
-        }
-    .end annotation
-.end field
-
-.field public volatile b:Ljava/lang/Object;
+.field public static final synthetic b:I
 
 
 # direct methods
 .method public static constructor <clinit>()V
     .locals 1
 
-    new-instance v0, Ljava/lang/Object;
+    invoke-static {}, Ljava/util/Collections;->emptyMap()Ljava/util/Map;
 
-    invoke-direct {v0}, Ljava/lang/Object;-><init>()V
+    move-result-object v0
 
-    sput-object v0, Lk3/nv0;->c:Ljava/lang/Object;
-
-    return-void
-.end method
-
-.method public constructor <init>(Lk3/mv0;)V
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lk3/mv0<",
-            "TT;>;)V"
-        }
-    .end annotation
-
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 2
-    sget-object v0, Lk3/nv0;->c:Ljava/lang/Object;
-
-    iput-object v0, p0, Lk3/nv0;->b:Ljava/lang/Object;
-
-    .line 3
-    iput-object p1, p0, Lk3/nv0;->a:Lk3/mv0;
+    invoke-static {v0}, Lk3/lv0;->a(Ljava/lang/Object;)Lk3/mv0;
 
     return-void
 .end method
 
-.method public static a(Lk3/mv0;)Lk3/mv0;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "<P::",
-            "Lk3/mv0<",
-            "TT;>;T:",
-            "Ljava/lang/Object;",
-            ">(TP;)",
-            "Lk3/mv0<",
-            "TT;>;"
-        }
-    .end annotation
+.method public constructor <init>(Ljava/util/Map;Lk3/dp;)V
+    .locals 0
 
-    .line 1
-    instance-of v0, p0, Lk3/nv0;
+    invoke-direct {p0, p1}, Lk3/hv0;-><init>(Ljava/util/Map;)V
 
-    if-nez v0, :cond_1
-
-    instance-of v0, p0, Lk3/fv0;
-
-    if-eqz v0, :cond_0
-
-    goto :goto_0
-
-    .line 2
-    :cond_0
-    new-instance v0, Lk3/nv0;
-
-    invoke-direct {v0, p0}, Lk3/nv0;-><init>(Lk3/mv0;)V
-
-    return-object v0
-
-    :cond_1
-    :goto_0
-    return-object p0
+    return-void
 .end method
 
 
 # virtual methods
 .method public final get()Ljava/lang/Object;
-    .locals 2
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()TT;"
-        }
-    .end annotation
+    .locals 4
 
     .line 1
-    iget-object v0, p0, Lk3/nv0;->b:Ljava/lang/Object;
+    iget-object v0, p0, Lk3/hv0;->a:Ljava/util/Map;
 
     .line 2
-    sget-object v1, Lk3/nv0;->c:Ljava/lang/Object;
+    invoke-interface {v0}, Ljava/util/Map;->size()I
 
-    if-ne v0, v1, :cond_1
+    move-result v0
 
     .line 3
-    iget-object v0, p0, Lk3/nv0;->a:Lk3/mv0;
+    new-instance v1, Ljava/util/LinkedHashMap;
 
-    if-nez v0, :cond_0
+    invoke-static {v0}, Lcom/helpshift/util/a0;->f(I)I
+
+    move-result v0
+
+    invoke-direct {v1, v0}, Ljava/util/LinkedHashMap;-><init>(I)V
 
     .line 4
-    iget-object v0, p0, Lk3/nv0;->b:Ljava/lang/Object;
-
-    goto :goto_0
+    iget-object v0, p0, Lk3/hv0;->a:Ljava/util/Map;
 
     .line 5
-    :cond_0
-    invoke-interface {v0}, Lk3/mv0;->get()Ljava/lang/Object;
+    invoke-interface {v0}, Ljava/util/Map;->entrySet()Ljava/util/Set;
 
     move-result-object v0
 
-    .line 6
-    iput-object v0, p0, Lk3/nv0;->b:Ljava/lang/Object;
+    invoke-interface {v0}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
 
-    const/4 v1, 0x0
+    move-result-object v0
+
+    :goto_0
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v2
+
+    if-eqz v2, :cond_0
+
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Ljava/util/Map$Entry;
+
+    .line 6
+    invoke-interface {v2}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
+
+    move-result-object v3
+
+    invoke-interface {v2}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Lk3/qv0;
+
+    invoke-interface {v2}, Lk3/qv0;->get()Ljava/lang/Object;
+
+    move-result-object v2
+
+    invoke-interface {v1, v3, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    goto :goto_0
 
     .line 7
-    iput-object v1, p0, Lk3/nv0;->a:Lk3/mv0;
+    :cond_0
+    invoke-static {v1}, Ljava/util/Collections;->unmodifiableMap(Ljava/util/Map;)Ljava/util/Map;
 
-    :cond_1
-    :goto_0
+    move-result-object v0
+
     return-object v0
 .end method

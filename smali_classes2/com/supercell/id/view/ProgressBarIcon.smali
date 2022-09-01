@@ -4,11 +4,9 @@
 
 
 # instance fields
-.field public final f:Landroid/widget/ImageView;
+.field public final g:Landroid/widget/ImageView;
 
-.field public final g:Lcom/supercell/id/view/ProgressBarIconShadow;
-
-.field public final h:Landroid/animation/ObjectAnimator;
+.field public final h:Lcom/supercell/id/view/ProgressBarIconShadow;
 
 .field public final i:Landroid/animation/ObjectAnimator;
 
@@ -22,17 +20,19 @@
 
 .field public final n:Landroid/animation/ObjectAnimator;
 
-.field public final o:Landroid/animation/AnimatorSet;
+.field public final o:Landroid/animation/ObjectAnimator;
 
 .field public final p:Landroid/animation/AnimatorSet;
 
 .field public final q:Landroid/animation/AnimatorSet;
 
-.field public r:Landroid/graphics/drawable/Drawable;
+.field public final r:Landroid/animation/AnimatorSet;
 
-.field public s:F
+.field public s:Landroid/graphics/drawable/Drawable;
 
 .field public t:F
+
+.field public u:F
 
 
 # direct methods
@@ -52,7 +52,7 @@
 
     const-string v0, "context"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 2
     invoke-direct {p0, p1, p2, p3}, Landroid/widget/FrameLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
@@ -62,14 +62,14 @@
 
     invoke-direct {v0, p1, p2, p3}, Landroid/widget/ImageView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
-    iput-object v0, p0, Lcom/supercell/id/view/ProgressBarIcon;->f:Landroid/widget/ImageView;
+    iput-object v0, p0, Lcom/supercell/id/view/ProgressBarIcon;->g:Landroid/widget/ImageView;
 
     .line 4
     new-instance v1, Lcom/supercell/id/view/ProgressBarIconShadow;
 
     invoke-direct {v1, p1, p2, p3}, Lcom/supercell/id/view/ProgressBarIconShadow;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
-    iput-object v1, p0, Lcom/supercell/id/view/ProgressBarIcon;->g:Lcom/supercell/id/view/ProgressBarIconShadow;
+    iput-object v1, p0, Lcom/supercell/id/view/ProgressBarIcon;->h:Lcom/supercell/id/view/ProgressBarIconShadow;
 
     const/4 p1, 0x0
 
@@ -127,7 +127,7 @@
     invoke-virtual {p3, v6}, Landroid/animation/ValueAnimator;->addUpdateListener(Landroid/animation/ValueAnimator$AnimatorUpdateListener;)V
 
     .line 12
-    iput-object p3, p0, Lcom/supercell/id/view/ProgressBarIcon;->h:Landroid/animation/ObjectAnimator;
+    iput-object p3, p0, Lcom/supercell/id/view/ProgressBarIcon;->i:Landroid/animation/ObjectAnimator;
 
     new-array v6, p2, [F
 
@@ -168,7 +168,7 @@
     invoke-virtual {v6, v7}, Landroid/animation/ValueAnimator;->addUpdateListener(Landroid/animation/ValueAnimator$AnimatorUpdateListener;)V
 
     .line 17
-    iput-object v6, p0, Lcom/supercell/id/view/ProgressBarIcon;->i:Landroid/animation/ObjectAnimator;
+    iput-object v6, p0, Lcom/supercell/id/view/ProgressBarIcon;->j:Landroid/animation/ObjectAnimator;
 
     new-array v7, p2, [F
 
@@ -207,7 +207,7 @@
     invoke-virtual {v1, p1}, Landroid/animation/ValueAnimator;->addUpdateListener(Landroid/animation/ValueAnimator$AnimatorUpdateListener;)V
 
     .line 22
-    iput-object v1, p0, Lcom/supercell/id/view/ProgressBarIcon;->j:Landroid/animation/ObjectAnimator;
+    iput-object v1, p0, Lcom/supercell/id/view/ProgressBarIcon;->k:Landroid/animation/ObjectAnimator;
 
     .line 23
     new-instance p1, Landroid/animation/AnimatorSet;
@@ -230,7 +230,7 @@
     invoke-virtual {p1, v3}, Landroid/animation/AnimatorSet;->playSequentially([Landroid/animation/Animator;)V
 
     .line 25
-    iput-object p1, p0, Lcom/supercell/id/view/ProgressBarIcon;->o:Landroid/animation/AnimatorSet;
+    iput-object p1, p0, Lcom/supercell/id/view/ProgressBarIcon;->p:Landroid/animation/AnimatorSet;
 
     new-array p1, p2, [F
 
@@ -257,7 +257,7 @@
     invoke-virtual {p1, v4, v5}, Landroid/animation/ObjectAnimator;->setDuration(J)Landroid/animation/ObjectAnimator;
 
     .line 30
-    iput-object p1, p0, Lcom/supercell/id/view/ProgressBarIcon;->k:Landroid/animation/ObjectAnimator;
+    iput-object p1, p0, Lcom/supercell/id/view/ProgressBarIcon;->l:Landroid/animation/ObjectAnimator;
 
     new-array v6, p2, [F
 
@@ -277,7 +277,7 @@
     invoke-virtual {v1, v4, v5}, Landroid/animation/ObjectAnimator;->setDuration(J)Landroid/animation/ObjectAnimator;
 
     .line 34
-    iput-object v1, p0, Lcom/supercell/id/view/ProgressBarIcon;->l:Landroid/animation/ObjectAnimator;
+    iput-object v1, p0, Lcom/supercell/id/view/ProgressBarIcon;->m:Landroid/animation/ObjectAnimator;
 
     new-array v6, p2, [F
 
@@ -301,7 +301,7 @@
     invoke-virtual {v6, v4, v5}, Landroid/animation/ObjectAnimator;->setDuration(J)Landroid/animation/ObjectAnimator;
 
     .line 38
-    iput-object v6, p0, Lcom/supercell/id/view/ProgressBarIcon;->m:Landroid/animation/ObjectAnimator;
+    iput-object v6, p0, Lcom/supercell/id/view/ProgressBarIcon;->n:Landroid/animation/ObjectAnimator;
 
     new-array v9, p2, [F
 
@@ -319,7 +319,7 @@
     invoke-virtual {v0, v4, v5}, Landroid/animation/ObjectAnimator;->setDuration(J)Landroid/animation/ObjectAnimator;
 
     .line 42
-    iput-object v0, p0, Lcom/supercell/id/view/ProgressBarIcon;->n:Landroid/animation/ObjectAnimator;
+    iput-object v0, p0, Lcom/supercell/id/view/ProgressBarIcon;->o:Landroid/animation/ObjectAnimator;
 
     .line 43
     new-instance v3, Landroid/animation/AnimatorSet;
@@ -336,7 +336,7 @@
     invoke-virtual {v3, v4}, Landroid/animation/AnimatorSet;->playSequentially([Landroid/animation/Animator;)V
 
     .line 45
-    iput-object v3, p0, Lcom/supercell/id/view/ProgressBarIcon;->p:Landroid/animation/AnimatorSet;
+    iput-object v3, p0, Lcom/supercell/id/view/ProgressBarIcon;->q:Landroid/animation/AnimatorSet;
 
     .line 46
     new-instance p1, Landroid/animation/AnimatorSet;
@@ -353,12 +353,12 @@
     invoke-virtual {p1, p3}, Landroid/animation/AnimatorSet;->playSequentially([Landroid/animation/Animator;)V
 
     .line 48
-    iput-object p1, p0, Lcom/supercell/id/view/ProgressBarIcon;->q:Landroid/animation/AnimatorSet;
+    iput-object p1, p0, Lcom/supercell/id/view/ProgressBarIcon;->r:Landroid/animation/AnimatorSet;
 
     const/high16 p1, 0x41700000    # 15.0f
 
     .line 49
-    iput p1, p0, Lcom/supercell/id/view/ProgressBarIcon;->t:F
+    iput p1, p0, Lcom/supercell/id/view/ProgressBarIcon;->u:F
 
     return-void
 .end method
@@ -367,22 +367,22 @@
     .locals 4
 
     .line 1
-    iget-object v0, p0, Lcom/supercell/id/view/ProgressBarIcon;->f:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/supercell/id/view/ProgressBarIcon;->g:Landroid/widget/ImageView;
 
     invoke-virtual {v0}, Landroid/view/View;->getTranslationY()F
 
     move-result v0
 
-    iget v1, p0, Lcom/supercell/id/view/ProgressBarIcon;->s:F
+    iget v1, p0, Lcom/supercell/id/view/ProgressBarIcon;->t:F
 
     sub-float/2addr v0, v1
 
     neg-float v0, v0
 
     .line 2
-    iget-object v1, p0, Lcom/supercell/id/view/ProgressBarIcon;->g:Lcom/supercell/id/view/ProgressBarIconShadow;
+    iget-object v1, p0, Lcom/supercell/id/view/ProgressBarIcon;->h:Lcom/supercell/id/view/ProgressBarIconShadow;
 
-    iget p0, p0, Lcom/supercell/id/view/ProgressBarIcon;->t:F
+    iget p0, p0, Lcom/supercell/id/view/ProgressBarIcon;->u:F
 
     div-float/2addr v0, p0
 
@@ -499,22 +499,22 @@
     sub-float/2addr v0, v2
 
     .line 6
-    iput v0, p0, Lcom/supercell/id/view/ProgressBarIcon;->s:F
+    iput v0, p0, Lcom/supercell/id/view/ProgressBarIcon;->t:F
 
     const/high16 v3, 0x3f000000    # 0.5f
 
     mul-float v3, v3, v1
 
     .line 7
-    iput v3, p0, Lcom/supercell/id/view/ProgressBarIcon;->t:F
+    iput v3, p0, Lcom/supercell/id/view/ProgressBarIcon;->u:F
 
     .line 8
-    iget-object v3, p0, Lcom/supercell/id/view/ProgressBarIcon;->f:Landroid/widget/ImageView;
+    iget-object v3, p0, Lcom/supercell/id/view/ProgressBarIcon;->g:Landroid/widget/ImageView;
 
     invoke-virtual {v3, v0}, Landroid/view/View;->setTranslationY(F)V
 
     .line 9
-    iget-object v3, p0, Lcom/supercell/id/view/ProgressBarIcon;->h:Landroid/animation/ObjectAnimator;
+    iget-object v3, p0, Lcom/supercell/id/view/ProgressBarIcon;->i:Landroid/animation/ObjectAnimator;
 
     const/4 v4, 0x2
 
@@ -537,7 +537,7 @@
     invoke-virtual {v3, v5}, Landroid/animation/ObjectAnimator;->setFloatValues([F)V
 
     .line 10
-    iget-object v3, p0, Lcom/supercell/id/view/ProgressBarIcon;->i:Landroid/animation/ObjectAnimator;
+    iget-object v3, p0, Lcom/supercell/id/view/ProgressBarIcon;->j:Landroid/animation/ObjectAnimator;
 
     new-array v5, v4, [F
 
@@ -552,7 +552,7 @@
     invoke-virtual {v3, v5}, Landroid/animation/ObjectAnimator;->setFloatValues([F)V
 
     .line 11
-    iget-object v3, p0, Lcom/supercell/id/view/ProgressBarIcon;->j:Landroid/animation/ObjectAnimator;
+    iget-object v3, p0, Lcom/supercell/id/view/ProgressBarIcon;->k:Landroid/animation/ObjectAnimator;
 
     new-array v5, v4, [F
 
@@ -563,14 +563,14 @@
     invoke-virtual {v3, v5}, Landroid/animation/ObjectAnimator;->setFloatValues([F)V
 
     .line 12
-    iget-object v0, p0, Lcom/supercell/id/view/ProgressBarIcon;->f:Landroid/widget/ImageView;
+    iget-object v0, p0, Lcom/supercell/id/view/ProgressBarIcon;->g:Landroid/widget/ImageView;
 
     const/high16 v2, 0x3f800000    # 1.0f
 
     invoke-virtual {v0, v2}, Landroid/view/View;->setScaleX(F)V
 
     .line 13
-    iget-object v0, p0, Lcom/supercell/id/view/ProgressBarIcon;->k:Landroid/animation/ObjectAnimator;
+    iget-object v0, p0, Lcom/supercell/id/view/ProgressBarIcon;->l:Landroid/animation/ObjectAnimator;
 
     new-array v3, v4, [F
 
@@ -589,7 +589,7 @@
     invoke-virtual {v0, v3}, Landroid/animation/ObjectAnimator;->setFloatValues([F)V
 
     .line 14
-    iget-object v0, p0, Lcom/supercell/id/view/ProgressBarIcon;->l:Landroid/animation/ObjectAnimator;
+    iget-object v0, p0, Lcom/supercell/id/view/ProgressBarIcon;->m:Landroid/animation/ObjectAnimator;
 
     new-array v3, v4, [F
 
@@ -608,12 +608,12 @@
     invoke-virtual {v0, v3}, Landroid/animation/ObjectAnimator;->setFloatValues([F)V
 
     .line 15
-    iget-object p1, p0, Lcom/supercell/id/view/ProgressBarIcon;->f:Landroid/widget/ImageView;
+    iget-object p1, p0, Lcom/supercell/id/view/ProgressBarIcon;->g:Landroid/widget/ImageView;
 
     invoke-virtual {p1, v2}, Landroid/view/View;->setScaleY(F)V
 
     .line 16
-    iget-object p1, p0, Lcom/supercell/id/view/ProgressBarIcon;->m:Landroid/animation/ObjectAnimator;
+    iget-object p1, p0, Lcom/supercell/id/view/ProgressBarIcon;->n:Landroid/animation/ObjectAnimator;
 
     new-array v0, v4, [F
 
@@ -626,7 +626,7 @@
     invoke-virtual {p1, v0}, Landroid/animation/ObjectAnimator;->setFloatValues([F)V
 
     .line 17
-    iget-object p1, p0, Lcom/supercell/id/view/ProgressBarIcon;->n:Landroid/animation/ObjectAnimator;
+    iget-object p1, p0, Lcom/supercell/id/view/ProgressBarIcon;->o:Landroid/animation/ObjectAnimator;
 
     new-array v0, v4, [F
 

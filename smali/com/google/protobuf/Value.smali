@@ -1152,43 +1152,43 @@
 
     .line 2
     :pswitch_0
-    sget-object v0, Lcom/google/protobuf/Value$b;->k:Lcom/google/protobuf/Value$b;
+    sget-object v0, Lcom/google/protobuf/Value$b;->l:Lcom/google/protobuf/Value$b;
 
     goto :goto_0
 
     .line 3
     :pswitch_1
-    sget-object v0, Lcom/google/protobuf/Value$b;->j:Lcom/google/protobuf/Value$b;
+    sget-object v0, Lcom/google/protobuf/Value$b;->k:Lcom/google/protobuf/Value$b;
 
     goto :goto_0
 
     .line 4
     :pswitch_2
-    sget-object v0, Lcom/google/protobuf/Value$b;->i:Lcom/google/protobuf/Value$b;
+    sget-object v0, Lcom/google/protobuf/Value$b;->j:Lcom/google/protobuf/Value$b;
 
     goto :goto_0
 
     .line 5
     :pswitch_3
-    sget-object v0, Lcom/google/protobuf/Value$b;->h:Lcom/google/protobuf/Value$b;
+    sget-object v0, Lcom/google/protobuf/Value$b;->i:Lcom/google/protobuf/Value$b;
 
     goto :goto_0
 
     .line 6
     :pswitch_4
-    sget-object v0, Lcom/google/protobuf/Value$b;->g:Lcom/google/protobuf/Value$b;
+    sget-object v0, Lcom/google/protobuf/Value$b;->h:Lcom/google/protobuf/Value$b;
 
     goto :goto_0
 
     .line 7
     :pswitch_5
-    sget-object v0, Lcom/google/protobuf/Value$b;->f:Lcom/google/protobuf/Value$b;
+    sget-object v0, Lcom/google/protobuf/Value$b;->g:Lcom/google/protobuf/Value$b;
 
     goto :goto_0
 
     .line 8
     :pswitch_6
-    sget-object v0, Lcom/google/protobuf/Value$b;->l:Lcom/google/protobuf/Value$b;
+    sget-object v0, Lcom/google/protobuf/Value$b;->m:Lcom/google/protobuf/Value$b;
 
     :goto_0
     return-object v0
@@ -1235,7 +1235,7 @@
     .locals 3
 
     .line 1
-    sget-object v0, Lcom/google/protobuf/a1;->g:Lcom/google/protobuf/a1;
+    sget-object v0, Lcom/google/protobuf/a1;->h:Lcom/google/protobuf/a1;
 
     iget v1, p0, Lcom/google/protobuf/Value;->kindCase_:I
 
@@ -1260,7 +1260,7 @@
     if-nez v0, :cond_1
 
     .line 3
-    sget-object v0, Lcom/google/protobuf/a1;->h:Lcom/google/protobuf/a1;
+    sget-object v0, Lcom/google/protobuf/a1;->i:Lcom/google/protobuf/a1;
 
     :cond_1
     return-object v0

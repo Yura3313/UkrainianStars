@@ -84,7 +84,7 @@
     .locals 4
 
     .line 1
-    invoke-static {p0}, Lcom/google/android/play/core/appupdate/g;->b(Ljava/lang/String;)Z
+    invoke-static {p0}, La5/b0;->d(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -189,7 +189,7 @@
     const-string v2, "openConnection() Exception :"
 
     .line 3
-    invoke-static {v0, v2, p0, v1}, Landroidx/savedstate/d;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v0, v2, p0, v1}, Le5/i;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
     :try_end_2
     .catch Ljava/net/MalformedURLException; {:try_start_2 .. :try_end_2} :catch_1
 
@@ -202,7 +202,7 @@
     const-string v2, "error in getting mimeType :"
 
     .line 4
-    invoke-static {v0, v2, p0, v1}, Landroidx/savedstate/d;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v0, v2, p0, v1}, Le5/i;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
 
     return-object v1
 .end method

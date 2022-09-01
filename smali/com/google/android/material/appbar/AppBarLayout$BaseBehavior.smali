@@ -113,7 +113,7 @@
     invoke-virtual {p0, p1, p2}, Lcom/google/android/material/appbar/AppBarLayout$BaseBehavior;->I(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Lcom/google/android/material/appbar/AppBarLayout;)V
 
     .line 3
-    iget-boolean v0, p2, Lcom/google/android/material/appbar/AppBarLayout;->p:Z
+    iget-boolean v0, p2, Lcom/google/android/material/appbar/AppBarLayout;->q:Z
 
     if-eqz v0, :cond_0
 
@@ -152,14 +152,14 @@
     if-gt v0, p5, :cond_6
 
     .line 3
-    invoke-static {p3, p4, p5}, La0/a;->e(III)I
+    invoke-static {p3, p4, p5}, La0/a;->b(III)I
 
     move-result v3
 
     if-eq v0, v3, :cond_7
 
     .line 4
-    iget-boolean p3, p2, Lcom/google/android/material/appbar/AppBarLayout;->j:Z
+    iget-boolean p3, p2, Lcom/google/android/material/appbar/AppBarLayout;->k:Z
 
     if-eqz p3, :cond_3
 
@@ -329,7 +329,7 @@
     if-nez p3, :cond_4
 
     .line 24
-    iget-boolean p3, p2, Lcom/google/android/material/appbar/AppBarLayout;->j:Z
+    iget-boolean p3, p2, Lcom/google/android/material/appbar/AppBarLayout;->k:Z
 
     if-eqz p3, :cond_4
 
@@ -676,7 +676,7 @@
 
     .line 5
     :cond_1
-    iget-boolean p1, p2, Lcom/google/android/material/appbar/AppBarLayout;->p:Z
+    iget-boolean p1, p2, Lcom/google/android/material/appbar/AppBarLayout;->q:Z
 
     if-eqz p1, :cond_2
 
@@ -923,7 +923,7 @@
 
     neg-int v0, v0
 
-    invoke-static {v8, v0, v2}, La0/a;->e(III)I
+    invoke-static {v8, v0, v2}, La0/a;->b(III)I
 
     move-result v0
 
@@ -1225,7 +1225,7 @@
 
     .line 11
     :goto_3
-    iget-boolean p4, p2, Lcom/google/android/material/appbar/AppBarLayout;->p:Z
+    iget-boolean p4, p2, Lcom/google/android/material/appbar/AppBarLayout;->q:Z
 
     if-eqz p4, :cond_4
 
@@ -1458,7 +1458,7 @@
     .line 17
     :cond_6
     :goto_2
-    iput v1, p2, Lcom/google/android/material/appbar/AppBarLayout;->k:I
+    iput v1, p2, Lcom/google/android/material/appbar/AppBarLayout;->l:I
 
     const/4 p3, -0x1
 
@@ -1476,7 +1476,7 @@
 
     neg-int v0, v0
 
-    invoke-static {p3, v0, v1}, La0/a;->e(III)I
+    invoke-static {p3, v0, v1}, La0/a;->b(III)I
 
     move-result p3
 
@@ -1630,17 +1630,17 @@
     check-cast p2, Lcom/google/android/material/appbar/AppBarLayout$BaseBehavior$SavedState;
 
     .line 4
-    iget p1, p2, Lcom/google/android/material/appbar/AppBarLayout$BaseBehavior$SavedState;->h:I
+    iget p1, p2, Lcom/google/android/material/appbar/AppBarLayout$BaseBehavior$SavedState;->i:I
 
     iput p1, p0, Lcom/google/android/material/appbar/AppBarLayout$BaseBehavior;->m:I
 
     .line 5
-    iget p1, p2, Lcom/google/android/material/appbar/AppBarLayout$BaseBehavior$SavedState;->i:F
+    iget p1, p2, Lcom/google/android/material/appbar/AppBarLayout$BaseBehavior$SavedState;->j:F
 
     iput p1, p0, Lcom/google/android/material/appbar/AppBarLayout$BaseBehavior;->o:F
 
     .line 6
-    iget-boolean p1, p2, Lcom/google/android/material/appbar/AppBarLayout$BaseBehavior$SavedState;->j:Z
+    iget-boolean p1, p2, Lcom/google/android/material/appbar/AppBarLayout$BaseBehavior$SavedState;->k:Z
 
     iput-boolean p1, p0, Lcom/google/android/material/appbar/AppBarLayout$BaseBehavior;->n:Z
 
@@ -1711,7 +1711,7 @@
     invoke-direct {v1, v0}, Lcom/google/android/material/appbar/AppBarLayout$BaseBehavior$SavedState;-><init>(Landroid/os/Parcelable;)V
 
     .line 9
-    iput v4, v1, Lcom/google/android/material/appbar/AppBarLayout$BaseBehavior$SavedState;->h:I
+    iput v4, v1, Lcom/google/android/material/appbar/AppBarLayout$BaseBehavior$SavedState;->i:I
 
     .line 10
     sget-object v0, Lf0/r;->a:Ljava/util/WeakHashMap;
@@ -1733,7 +1733,7 @@
     const/4 v3, 0x1
 
     :cond_0
-    iput-boolean v3, v1, Lcom/google/android/material/appbar/AppBarLayout$BaseBehavior$SavedState;->j:Z
+    iput-boolean v3, v1, Lcom/google/android/material/appbar/AppBarLayout$BaseBehavior$SavedState;->k:Z
 
     int-to-float p1, v6
 
@@ -1746,7 +1746,7 @@
 
     div-float/2addr p1, v0
 
-    iput p1, v1, Lcom/google/android/material/appbar/AppBarLayout$BaseBehavior$SavedState;->i:F
+    iput p1, v1, Lcom/google/android/material/appbar/AppBarLayout$BaseBehavior$SavedState;->j:F
 
     move-object v0, v1
 
@@ -1777,7 +1777,7 @@
     if-eqz p4, :cond_2
 
     .line 2
-    iget-boolean p4, p2, Lcom/google/android/material/appbar/AppBarLayout;->p:Z
+    iget-boolean p4, p2, Lcom/google/android/material/appbar/AppBarLayout;->q:Z
 
     if-nez p4, :cond_3
 
@@ -1874,7 +1874,7 @@
     invoke-virtual {p0, p1, p2}, Lcom/google/android/material/appbar/AppBarLayout$BaseBehavior;->I(Landroidx/coordinatorlayout/widget/CoordinatorLayout;Lcom/google/android/material/appbar/AppBarLayout;)V
 
     .line 4
-    iget-boolean p1, p2, Lcom/google/android/material/appbar/AppBarLayout;->p:Z
+    iget-boolean p1, p2, Lcom/google/android/material/appbar/AppBarLayout;->q:Z
 
     if-eqz p1, :cond_1
 

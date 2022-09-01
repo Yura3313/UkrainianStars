@@ -11,7 +11,7 @@
 
 
 # static fields
-.field public static final a:Lb2/a0;
+.field public static final a:Lb2/z;
 
 
 # direct methods
@@ -165,7 +165,7 @@
 
     .line 16
     :goto_1
-    sput-object v1, Ls3/b;->a:Lb2/a0;
+    sput-object v1, Ls3/b;->a:Lb2/z;
 
     if-nez v0, :cond_2
 
@@ -182,9 +182,9 @@
 .method public static a(Ljava/lang/Throwable;Ljava/lang/Throwable;)V
     .locals 1
 
-    sget-object v0, Ls3/b;->a:Lb2/a0;
+    sget-object v0, Ls3/b;->a:Lb2/z;
 
-    invoke-virtual {v0, p0, p1}, Lb2/a0;->x(Ljava/lang/Throwable;Ljava/lang/Throwable;)V
+    invoke-virtual {v0, p0, p1}, Lb2/z;->x(Ljava/lang/Throwable;Ljava/lang/Throwable;)V
 
     return-void
 .end method

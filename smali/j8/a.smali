@@ -69,7 +69,7 @@
     iget-object p1, p1, La8/f;->o:Lx7/d;
 
     .line 11
-    sget-object p2, Lx7/d$b;->m:Lx7/d$b;
+    sget-object p2, Lx7/d$b;->n:Lx7/d$b;
 
     invoke-virtual {p1, p2, p0}, Lx7/d;->a(Lx7/d$b;Lx7/a;)V
 
@@ -143,7 +143,7 @@
     const-string v1, "Config fetch already in progress, skipping."
 
     .line 2
-    invoke-static {v0, v1, p1, p1}, Landroidx/savedstate/d;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v0, v1, p1, p1}, Le5/i;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
 
     return-void
 
@@ -164,7 +164,7 @@
     .locals 2
 
     .line 1
-    sget-object v0, Lx7/d$b;->m:Lx7/d$b;
+    sget-object v0, Lx7/d$b;->n:Lx7/d$b;
 
     if-ne p1, v0, :cond_0
 
@@ -185,15 +185,15 @@
 
     move-result-object p1
 
-    check-cast p1, Lk3/v8;
+    check-cast p1, Lk3/w8;
 
     const-string v0, "/config/"
 
-    invoke-virtual {p1, v0}, Lk3/v8;->d(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p1, v0}, Lk3/w8;->d(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 
-    invoke-static {p1}, Lcom/google/android/play/core/appupdate/g;->b(Ljava/lang/String;)Z
+    invoke-static {p1}, La5/b0;->d(Ljava/lang/String;)Z
 
     move-result p1
 
@@ -220,7 +220,7 @@
     const-string v1, "Helpshift_CnfgFtch"
 
     .line 5
-    invoke-static {v1, p1, v0, v0}, Landroidx/savedstate/d;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v1, p1, v0, v0}, Le5/i;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
 
     .line 6
     invoke-virtual {p0}, Lj8/a;->d()V
@@ -248,7 +248,7 @@
     const/4 v4, 0x0
 
     .line 2
-    invoke-static {v0, v3, v4, v4}, Landroidx/savedstate/d;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v0, v3, v4, v4}, Le5/i;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
 
     .line 3
     iget-object v0, v1, Lj8/a;->b:La8/f;
@@ -278,18 +278,18 @@
     invoke-direct {v7, v6}, Lc8/e;-><init>(Lc8/j;)V
 
     .line 8
-    new-instance v6, Lk3/m7;
+    new-instance v6, Lk3/n7;
 
     iget-object v8, v1, Lj8/a;->a:Le8/s;
 
-    invoke-direct {v6, v7, v8}, Lk3/m7;-><init>(Lc8/j;Le8/s;)V
+    invoke-direct {v6, v7, v8}, Lk3/n7;-><init>(Lc8/j;Le8/s;)V
 
     .line 9
-    new-instance v7, Lk3/fw;
+    new-instance v7, Lk3/dw;
 
     iget-object v8, v1, Lj8/a;->a:Le8/s;
 
-    invoke-direct {v7, v6, v8, v5}, Lk3/fw;-><init>(Lc8/j;Le8/s;Ljava/lang/String;)V
+    invoke-direct {v7, v6, v8, v5}, Lk3/dw;-><init>(Lc8/j;Le8/s;Ljava/lang/String;)V
 
     .line 10
     new-instance v5, Ln1/a;
@@ -299,7 +299,7 @@
     .line 11
     new-instance v6, Lf8/h;
 
-    invoke-static {v3}, Lmd/g;->g(Li7/c;)Ljava/util/HashMap;
+    invoke-static {v3}, Lae/v;->g(Li7/c;)Ljava/util/HashMap;
 
     move-result-object v7
 
@@ -320,7 +320,7 @@
     const-string v10, "SDK config fetched successfully"
 
     .line 13
-    invoke-static {v6, v10, v4, v4}, Landroidx/savedstate/d;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v6, v10, v4, v4}, Le5/i;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
 
     .line 14
     iget-object v6, v1, Lj8/a;->d:Le8/k;
@@ -376,7 +376,7 @@
     const-string v6, "SDK config data updated successfully"
 
     .line 21
-    invoke-static {v0, v6, v4, v4}, Landroidx/savedstate/d;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v0, v6, v4, v4}, Le5/i;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
 
     .line 22
     invoke-virtual {v1, v2}, Lj8/a;->a(Z)V
@@ -404,7 +404,7 @@
     .line 23
     :goto_0
     :try_start_2
-    iget-object v6, v0, Lcom/helpshift/common/exception/RootAPIException;->h:Ld8/a;
+    iget-object v6, v0, Lcom/helpshift/common/exception/RootAPIException;->i:Ld8/a;
 
     instance-of v10, v6, Ld8/b;
 
@@ -412,7 +412,7 @@
 
     check-cast v6, Ld8/b;
 
-    iget v6, v6, Ld8/b;->f:I
+    iget v6, v6, Ld8/b;->g:I
 
     sget-object v10, Lc8/k;->c:Ljava/lang/Integer;
 
@@ -428,7 +428,7 @@
     const-string v6, "SDK config fetched successfully, content unchanged"
 
     .line 25
-    invoke-static {v0, v6, v4, v4}, Landroidx/savedstate/d;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v0, v6, v4, v4}, Le5/i;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
 
     .line 26
     iget-object v0, v1, Lj8/a;->c:Lj8/b;
@@ -458,9 +458,9 @@
 
     .line 30
     :cond_0
-    iget-object v6, v0, Lcom/helpshift/common/exception/RootAPIException;->h:Ld8/a;
+    iget-object v6, v0, Lcom/helpshift/common/exception/RootAPIException;->i:Ld8/a;
 
-    sget-object v8, Ld8/b;->s:Ld8/b;
+    sget-object v8, Ld8/b;->t:Ld8/b;
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
@@ -502,7 +502,7 @@
     iget-object v10, v8, Lt8/b;->c:Li7/c;
 
     .line 37
-    iget-object v10, v10, Li7/c;->f:Ljava/lang/Long;
+    iget-object v10, v10, Li7/c;->g:Ljava/lang/Long;
 
     .line 38
     invoke-virtual {v10}, Ljava/lang/Long;->longValue()J
@@ -577,7 +577,7 @@
     const-class v11, Ljava/lang/Long;
 
     .line 46
-    invoke-static {v10, v0, v11}, Lj1/b;->p(Landroid/database/Cursor;Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;
+    invoke-static {v10, v0, v11}, Lcom/google/android/material/internal/c;->p(Landroid/database/Cursor;Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -610,7 +610,7 @@
     const-string v13, "Error in getting latest conversation created_at time"
 
     .line 47
-    invoke-static {v11, v13, v0}, Landroidx/savedstate/d;->g(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v11, v13, v0}, Le5/i;->i(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
     :try_end_6
     .catchall {:try_start_6 .. :try_end_6} :catchall_2
 
@@ -682,7 +682,7 @@
     iget-object v9, v8, Lt8/b;->c:Li7/c;
 
     .line 53
-    iget-object v9, v9, Li7/c;->f:Ljava/lang/Long;
+    iget-object v9, v9, Li7/c;->g:Ljava/lang/Long;
 
     .line 54
     invoke-virtual {v9}, Ljava/lang/Long;->longValue()J
@@ -756,7 +756,7 @@
     iget-object v4, v8, Lt8/b;->c:Li7/c;
 
     .line 61
-    iget-object v4, v4, Li7/c;->f:Ljava/lang/Long;
+    iget-object v4, v4, Li7/c;->g:Ljava/lang/Long;
 
     .line 62
     invoke-virtual {v4}, Ljava/lang/Long;->longValue()J

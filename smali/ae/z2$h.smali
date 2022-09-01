@@ -18,22 +18,22 @@
 
 
 # instance fields
-.field public final synthetic f:Landroidx/core/widget/NestedScrollView;
+.field public final synthetic g:Landroidx/core/widget/NestedScrollView;
 
-.field public final synthetic g:Landroid/view/View;
+.field public final synthetic h:Landroid/view/View;
 
-.field public final synthetic h:I
+.field public final synthetic i:I
 
 
 # direct methods
 .method public constructor <init>(Landroidx/core/widget/NestedScrollView;Landroid/view/View;I)V
     .locals 0
 
-    iput-object p1, p0, Lae/z2$h;->f:Landroidx/core/widget/NestedScrollView;
+    iput-object p1, p0, Lae/z2$h;->g:Landroidx/core/widget/NestedScrollView;
 
-    iput-object p2, p0, Lae/z2$h;->g:Landroid/view/View;
+    iput-object p2, p0, Lae/z2$h;->h:Landroid/view/View;
 
-    iput p3, p0, Lae/z2$h;->h:I
+    iput p3, p0, Lae/z2$h;->i:I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -50,7 +50,7 @@
     new-array v0, v0, [I
 
     .line 1
-    iget-object v1, p0, Lae/z2$h;->g:Landroid/view/View;
+    iget-object v1, p0, Lae/z2$h;->h:Landroid/view/View;
 
     invoke-virtual {v1, v0}, Landroid/view/View;->getLocationInWindow([I)V
 
@@ -59,7 +59,7 @@
     aget v2, v0, v1
 
     .line 2
-    iget-object v3, p0, Lae/z2$h;->g:Landroid/view/View;
+    iget-object v3, p0, Lae/z2$h;->h:Landroid/view/View;
 
     invoke-virtual {v3}, Landroid/view/View;->getHeight()I
 
@@ -68,14 +68,14 @@
     add-int/2addr v3, v2
 
     .line 3
-    iget-object v2, p0, Lae/z2$h;->f:Landroidx/core/widget/NestedScrollView;
+    iget-object v2, p0, Lae/z2$h;->g:Landroidx/core/widget/NestedScrollView;
 
     invoke-virtual {v2, v0}, Landroid/view/View;->getLocationInWindow([I)V
 
     aget v0, v0, v1
 
     .line 4
-    iget-object v1, p0, Lae/z2$h;->f:Landroidx/core/widget/NestedScrollView;
+    iget-object v1, p0, Lae/z2$h;->g:Landroidx/core/widget/NestedScrollView;
 
     invoke-virtual {v1}, Landroid/view/View;->getHeight()I
 
@@ -83,7 +83,7 @@
 
     add-int/2addr v1, v0
 
-    iget-object v0, p0, Lae/z2$h;->f:Landroidx/core/widget/NestedScrollView;
+    iget-object v0, p0, Lae/z2$h;->g:Landroidx/core/widget/NestedScrollView;
 
     invoke-virtual {v0}, Landroid/view/View;->getPaddingBottom()I
 
@@ -91,7 +91,7 @@
 
     sub-int/2addr v1, v0
 
-    iget v0, p0, Lae/z2$h;->h:I
+    iget v0, p0, Lae/z2$h;->i:I
 
     sub-int/2addr v1, v0
 
@@ -100,7 +100,7 @@
     int-to-float v0, v0
 
     .line 5
-    sget v2, La5/g0;->a:F
+    sget v2, La5/e0;->g:F
 
     mul-float v0, v0, v2
 
@@ -111,7 +111,7 @@
     if-le v3, v1, :cond_0
 
     .line 6
-    iget-object v0, p0, Lae/z2$h;->f:Landroidx/core/widget/NestedScrollView;
+    iget-object v0, p0, Lae/z2$h;->g:Landroidx/core/widget/NestedScrollView;
 
     sub-int/2addr v3, v1
 

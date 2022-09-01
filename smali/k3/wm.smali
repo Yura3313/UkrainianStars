@@ -16,11 +16,11 @@
 
 .field public m:Lcom/google/android/gms/internal/ads/zzsj;
 
-.field public final n:Lk3/t01;
+.field public final n:Lk3/z01;
 
 
 # direct methods
-.method public constructor <init>(Lk3/ko;Landroid/view/View;Lk3/gh;Lk3/ig0;IZZLk3/t01;)V
+.method public constructor <init>(Lk3/ko;Landroid/view/View;Lk3/gh;Lk3/jg0;IZZLk3/z01;)V
     .locals 0
 
     .line 1
@@ -42,7 +42,7 @@
     iput-boolean p7, p0, Lk3/wm;->l:Z
 
     .line 7
-    iput-object p8, p0, Lk3/wm;->n:Lk3/t01;
+    iput-object p8, p0, Lk3/wm;->n:Lk3/z01;
 
     return-void
 .end method

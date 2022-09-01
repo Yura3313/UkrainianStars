@@ -1,103 +1,26 @@
-.class public final Lk3/mm0;
-.super Lk3/zl0;
+.class public interface abstract Lk3/mm0;
+.super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
-
-# interfaces
-.implements Ljava/util/concurrent/ScheduledFuture;
-
-
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "<V:",
-        "Ljava/lang/Object;",
-        ">",
-        "Lk3/zl0<",
-        "TV;>;",
-        "Ljava/util/concurrent/ScheduledFuture<",
-        "TV;>;"
-    }
-.end annotation
-
-
-# instance fields
-.field public final g:Ljava/util/concurrent/ScheduledFuture;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/concurrent/ScheduledFuture<",
-            "*>;"
-        }
-    .end annotation
-.end field
-
-
-# direct methods
-.method public constructor <init>(Lk3/em0;Ljava/util/concurrent/ScheduledFuture;)V
-    .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lk3/em0<",
-            "TV;>;",
-            "Ljava/util/concurrent/ScheduledFuture<",
-            "*>;)V"
-        }
-    .end annotation
-
-    .line 1
-    invoke-direct {p0, p1}, Lk3/zl0;-><init>(Lk3/em0;)V
-
-    .line 2
-    iput-object p2, p0, Lk3/mm0;->g:Ljava/util/concurrent/ScheduledFuture;
-
-    return-void
-.end method
 
 
 # virtual methods
-.method public final cancel(Z)Z
-    .locals 2
-
-    .line 1
-    invoke-super {p0, p1}, Lk3/xl0;->cancel(Z)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    .line 2
-    iget-object v1, p0, Lk3/mm0;->g:Ljava/util/concurrent/ScheduledFuture;
-
-    invoke-interface {v1, p1}, Ljava/util/concurrent/Future;->cancel(Z)Z
-
-    :cond_0
-    return v0
+.method public abstract a(Landroid/content/Context;Ljava/lang/String;Landroid/view/View;)Ljava/lang/String;
 .end method
 
-.method public final synthetic compareTo(Ljava/lang/Object;)I
-    .locals 1
-
-    .line 1
-    check-cast p1, Ljava/util/concurrent/Delayed;
-
-    .line 2
-    iget-object v0, p0, Lk3/mm0;->g:Ljava/util/concurrent/ScheduledFuture;
-
-    invoke-interface {v0, p1}, Ljava/lang/Comparable;->compareTo(Ljava/lang/Object;)I
-
-    move-result p1
-
-    return p1
+.method public abstract b(Landroid/view/View;)V
 .end method
 
-.method public final getDelay(Ljava/util/concurrent/TimeUnit;)J
-    .locals 2
+.method public abstract c(III)V
+.end method
 
-    iget-object v0, p0, Lk3/mm0;->g:Ljava/util/concurrent/ScheduledFuture;
+.method public abstract d(Landroid/content/Context;)Ljava/lang/String;
+.end method
 
-    invoke-interface {v0, p1}, Ljava/util/concurrent/Delayed;->getDelay(Ljava/util/concurrent/TimeUnit;)J
+.method public abstract e(Landroid/content/Context;Landroid/view/View;Landroid/app/Activity;)Ljava/lang/String;
+.end method
 
-    move-result-wide v0
+.method public abstract f(Landroid/view/MotionEvent;)V
+.end method
 
-    return-wide v0
+.method public abstract g(Landroid/content/Context;Ljava/lang/String;Landroid/view/View;Landroid/app/Activity;)Ljava/lang/String;
 .end method

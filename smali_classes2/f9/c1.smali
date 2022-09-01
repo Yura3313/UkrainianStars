@@ -60,7 +60,7 @@
     check-cast v1, Lf9/s0;
 
     .line 5
-    iget-object v0, v0, Lcom/helpshift/common/exception/RootAPIException;->h:Ld8/a;
+    iget-object v0, v0, Lcom/helpshift/common/exception/RootAPIException;->i:Ld8/a;
 
     invoke-interface {v1, v0}, Lf9/s0;->c(Ld8/a;)V
 

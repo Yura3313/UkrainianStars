@@ -175,7 +175,7 @@
     const-string v1, "timestamp is not ISO format "
 
     .line 4
-    invoke-static {v1, p0}, Lcom/google/android/gms/ads/e;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v1, p0}, Lf/g;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p0
 
@@ -232,7 +232,7 @@
     const-string v1, "timestamp is not millis format "
 
     .line 5
-    invoke-static {v1, p0}, Lcom/google/android/gms/ads/e;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v1, p0}, Lf/g;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p0
 

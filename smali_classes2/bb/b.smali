@@ -86,7 +86,7 @@
     const-string v2, "Helpshift_BtmpLruCache"
 
     .line 2
-    invoke-static {v2, v1, v0, v0}, Landroidx/savedstate/d;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v2, v1, v0, v0}, Le5/i;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
 
     .line 3
     iget-object v0, p0, Lbb/b;->a:Lbb/b$a;

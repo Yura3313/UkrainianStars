@@ -1,72 +1,69 @@
 .class public final Lwc/j1;
-.super Ljava/lang/Object;
+.super Lse/i;
 .source "ProfileLandscapeHeadFragment.kt"
 
 # interfaces
-.implements Landroid/animation/ValueAnimator$AnimatorUpdateListener;
+.implements Lre/l;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lse/i;",
+        "Lre/l<",
+        "Lcom/supercell/id/view/WidthAdjustingMultilineTextView;",
+        "Lie/i;",
+        ">;"
+    }
+.end annotation
 
 
 # instance fields
-.field public final synthetic f:Landroid/view/ViewGroup$MarginLayoutParams;
+.field public final synthetic g:Lcom/supercell/id/view/WidthAdjustingMultilineTextView;
 
-.field public final synthetic g:Landroid/widget/Space;
+.field public final synthetic h:Landroid/graphics/drawable/BitmapDrawable;
 
 
 # direct methods
-.method public constructor <init>(Landroid/view/ViewGroup$MarginLayoutParams;Landroid/widget/Space;)V
+.method public constructor <init>(Lcom/supercell/id/view/WidthAdjustingMultilineTextView;Landroid/graphics/drawable/BitmapDrawable;)V
     .locals 0
 
-    iput-object p1, p0, Lwc/j1;->f:Landroid/view/ViewGroup$MarginLayoutParams;
+    iput-object p1, p0, Lwc/j1;->g:Lcom/supercell/id/view/WidthAdjustingMultilineTextView;
 
-    iput-object p2, p0, Lwc/j1;->g:Landroid/widget/Space;
+    iput-object p2, p0, Lwc/j1;->h:Landroid/graphics/drawable/BitmapDrawable;
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    const/4 p1, 0x1
+
+    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final onAnimationUpdate(Landroid/animation/ValueAnimator;)V
+.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lwc/j1;->f:Landroid/view/ViewGroup$MarginLayoutParams;
+    check-cast p1, Lcom/supercell/id/view/WidthAdjustingMultilineTextView;
 
-    const-string v1, "it"
-
-    invoke-static {p1, v1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
-
-    invoke-virtual {p1}, Landroid/animation/ValueAnimator;->getAnimatedValue()Ljava/lang/Object;
-
-    move-result-object p1
-
-    if-eqz p1, :cond_0
-
-    check-cast p1, Ljava/lang/Integer;
-
-    invoke-virtual {p1}, Ljava/lang/Integer;->intValue()I
-
-    move-result p1
-
-    iput p1, v0, Landroid/view/ViewGroup$MarginLayoutParams;->topMargin:I
+    const-string v0, "it"
 
     .line 2
-    iget-object p1, p0, Lwc/j1;->g:Landroid/widget/Space;
-
-    iget-object v0, p0, Lwc/j1;->f:Landroid/view/ViewGroup$MarginLayoutParams;
-
-    invoke-virtual {p1, v0}, Landroid/view/View;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
-
-    return-void
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 3
-    :cond_0
-    new-instance p1, Lkotlin/TypeCastException;
+    iget-object p1, p0, Lwc/j1;->g:Lcom/supercell/id/view/WidthAdjustingMultilineTextView;
 
-    const-string v0, "null cannot be cast to non-null type kotlin.Int"
+    iget-object v0, p0, Lwc/j1;->h:Landroid/graphics/drawable/BitmapDrawable;
 
-    invoke-direct {p1, v0}, Lkotlin/TypeCastException;-><init>(Ljava/lang/String;)V
+    const/4 v1, 0x0
 
-    throw p1
+    .line 4
+    invoke-virtual {p1, v0, v1, v1, v1}, Landroidx/appcompat/widget/AppCompatTextView;->setCompoundDrawablesRelative(Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;Landroid/graphics/drawable/Drawable;)V
+
+    .line 5
+    sget-object p1, Lie/i;->a:Lie/i;
+
+    return-object p1
 .end method

@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field public final f:Landroidx/appcompat/widget/i;
+.field public final g:Landroidx/appcompat/widget/i;
 
 
 # direct methods
@@ -37,7 +37,7 @@
 
     invoke-direct {p1, p0}, Landroidx/appcompat/widget/i;-><init>(Landroid/widget/ProgressBar;)V
 
-    iput-object p1, p0, Landroidx/appcompat/widget/AppCompatRatingBar;->f:Landroidx/appcompat/widget/i;
+    iput-object p1, p0, Landroidx/appcompat/widget/AppCompatRatingBar;->g:Landroidx/appcompat/widget/i;
 
     .line 5
     invoke-virtual {p1, p2, p3}, Landroidx/appcompat/widget/i;->a(Landroid/util/AttributeSet;I)V
@@ -57,7 +57,7 @@
     invoke-super {p0, p1, p2}, Landroid/widget/RatingBar;->onMeasure(II)V
 
     .line 2
-    iget-object p2, p0, Landroidx/appcompat/widget/AppCompatRatingBar;->f:Landroidx/appcompat/widget/i;
+    iget-object p2, p0, Landroidx/appcompat/widget/AppCompatRatingBar;->g:Landroidx/appcompat/widget/i;
 
     .line 3
     iget-object p2, p2, Landroidx/appcompat/widget/i;->b:Landroid/graphics/Bitmap;

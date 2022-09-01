@@ -15,14 +15,14 @@
 
 
 # instance fields
-.field public final synthetic f:Lpb/z;
+.field public final synthetic g:Lpb/z;
 
 
 # direct methods
 .method public constructor <init>(Lpb/z;)V
     .locals 0
 
-    iput-object p1, p0, Lpb/z$a;->f:Lpb/z;
+    iput-object p1, p0, Lpb/z$a;->g:Lpb/z;
 
     invoke-direct {p0}, Ljava/util/TimerTask;-><init>()V
 
@@ -36,12 +36,12 @@
 
     .line 1
     :try_start_0
-    iget-object v0, p0, Lpb/z$a;->f:Lpb/z;
+    iget-object v0, p0, Lpb/z$a;->g:Lpb/z;
 
-    iget-object v0, v0, Lpb/l0;->f:Lpb/e0;
+    iget-object v0, v0, Lpb/m0;->g:Lpb/f0;
 
     .line 2
-    iget-object v0, v0, Lpb/e0;->a:Lpb/a0;
+    iget-object v0, v0, Lpb/f0;->a:Lpb/a0;
 
     .line 3
     iget-object v0, v0, Lpb/a0;->g:Ljava/net/Socket;

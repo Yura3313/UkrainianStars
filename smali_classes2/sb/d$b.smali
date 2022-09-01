@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field public final synthetic f:Lsb/d;
+.field public final synthetic g:Lsb/d;
 
 
 # direct methods
 .method public constructor <init>(Lsb/d;)V
     .locals 0
 
-    iput-object p1, p0, Lsb/d$b;->f:Lsb/d;
+    iput-object p1, p0, Lsb/d$b;->g:Lsb/d;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -42,7 +42,7 @@
     sget v0, Lsb/d;->n:I
 
     .line 2
-    iget-object v0, p0, Lsb/d$b;->f:Lsb/d;
+    iget-object v0, p0, Lsb/d$b;->g:Lsb/d;
 
     .line 3
     iget-object v0, v0, Lsb/d;->c:Lsb/e;
@@ -51,7 +51,7 @@
     invoke-virtual {v0}, Lsb/e;->a()V
 
     .line 5
-    iget-object v0, p0, Lsb/d$b;->f:Lsb/d;
+    iget-object v0, p0, Lsb/d$b;->g:Lsb/d;
 
     .line 6
     iget-object v1, v0, Lsb/d;->d:Landroid/os/Handler;
@@ -87,9 +87,9 @@
     .line 12
     new-instance v3, Lrb/o;
 
-    iget v4, v0, Lrb/o;->g:I
+    iget v4, v0, Lrb/o;->h:I
 
-    iget v0, v0, Lrb/o;->f:I
+    iget v0, v0, Lrb/o;->g:I
 
     invoke-direct {v3, v4, v0}, Lrb/o;-><init>(II)V
 
@@ -117,7 +117,7 @@
     move-exception v0
 
     .line 15
-    iget-object v1, p0, Lsb/d$b;->f:Lsb/d;
+    iget-object v1, p0, Lsb/d$b;->g:Lsb/d;
 
     invoke-static {v1, v0}, Lsb/d;->a(Lsb/d;Ljava/lang/Exception;)V
 

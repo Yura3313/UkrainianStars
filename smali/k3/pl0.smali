@@ -1,40 +1,38 @@
-.class public final Lk3/pl0;
-.super Lk3/ml0;
+.class public interface abstract Lk3/pl0;
+.super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "<V:",
+        "<I:",
+        "Ljava/lang/Object;",
+        "O:",
         "Ljava/lang/Object;",
         ">",
-        "Lk3/ml0<",
-        "TV;",
-        "Ljava/util/List<",
-        "TV;>;>;"
+        "Ljava/lang/Object;"
     }
 .end annotation
 
 
-# direct methods
-.method public constructor <init>(Lk3/dk0;)V
-    .locals 0
+# virtual methods
+.method public abstract a(Ljava/lang/Object;)Lk3/hm0;
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .end annotation
+    .end param
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "(",
-            "Lk3/dk0<",
-            "+",
-            "Lk3/em0<",
-            "+TV;>;>;Z)V"
+            "(TI;)",
+            "Lk3/hm0<",
+            "TO;>;"
         }
     .end annotation
 
-    .line 1
-    invoke-direct {p0, p1}, Lk3/ml0;-><init>(Lk3/dk0;)V
-
-    .line 2
-    invoke-virtual {p0}, Lk3/jl0;->u()V
-
-    return-void
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/Exception;
+        }
+    .end annotation
 .end method

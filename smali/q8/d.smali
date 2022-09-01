@@ -9,25 +9,27 @@
 
 
 # instance fields
-.field public A:Z
+.field public A:Ljava/lang/String;
 
 .field public B:Z
 
 .field public C:Z
 
-.field public D:Ljava/lang/String;
+.field public D:Z
 
-.field public E:J
+.field public E:Ljava/lang/String;
 
-.field public F:Z
+.field public F:J
 
-.field public G:Ln8/b;
+.field public G:Z
 
-.field public H:Z
+.field public H:Ln8/b;
 
-.field public I:Ljava/lang/String;
+.field public I:Z
 
-.field public J:Ljava/util/List;
+.field public J:Ljava/lang/String;
+
+.field public K:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
@@ -37,32 +39,30 @@
     .end annotation
 .end field
 
-.field public K:Ljava/lang/String;
-
 .field public L:Ljava/lang/String;
 
-.field public M:Ljava/lang/Long;
+.field public M:Ljava/lang/String;
 
 .field public N:Ljava/lang/Long;
 
-.field public O:Z
+.field public O:Ljava/lang/Long;
 
 .field public P:Z
 
-.field public final f:Ljava/util/HashMap;
+.field public Q:Z
+
+.field public final g:Ljava/util/HashMap;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Map<",
             "Ljava/lang/String;",
-            "Lo8/b0;",
+            "Lo8/d0;",
             ">;"
         }
     .end annotation
 .end field
 
-.field public g:Ljava/lang/Long;
-
-.field public h:Ljava/lang/String;
+.field public h:Ljava/lang/Long;
 
 .field public i:Ljava/lang/String;
 
@@ -70,43 +70,43 @@
 
 .field public k:Ljava/lang/String;
 
-.field public l:Lu8/e;
+.field public l:Ljava/lang/String;
 
-.field public m:Ljava/lang/String;
+.field public m:Lu8/e;
 
 .field public n:Ljava/lang/String;
 
-.field public o:Lcom/helpshift/util/q;
+.field public o:Ljava/lang/String;
+
+.field public p:Lcom/helpshift/util/q;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lcom/helpshift/util/q<",
-            "Lo8/y;",
+            "Lo8/z;",
             ">;"
         }
     .end annotation
 .end field
 
-.field public p:Ljava/lang/String;
-
 .field public q:Ljava/lang/String;
 
-.field public r:Z
+.field public r:Ljava/lang/String;
 
 .field public s:Z
 
-.field public t:I
+.field public t:Z
 
 .field public u:I
 
-.field public v:Ljava/lang/String;
+.field public v:I
 
-.field public w:Z
+.field public w:Ljava/lang/String;
 
-.field public x:J
+.field public x:Z
 
 .field public y:J
 
-.field public z:Ljava/lang/String;
+.field public z:J
 
 
 # direct methods
@@ -121,46 +121,46 @@
 
     invoke-direct {v0}, Lcom/helpshift/util/q;-><init>()V
 
-    iput-object v0, p0, Lq8/d;->o:Lcom/helpshift/util/q;
+    iput-object v0, p0, Lq8/d;->p:Lcom/helpshift/util/q;
 
     const/4 v0, 0x1
 
     .line 3
-    iput v0, p0, Lq8/d;->t:I
+    iput v0, p0, Lq8/d;->u:I
 
     .line 4
-    iput-object p1, p0, Lq8/d;->k:Ljava/lang/String;
+    iput-object p1, p0, Lq8/d;->l:Ljava/lang/String;
 
     .line 5
-    iput-object p3, p0, Lq8/d;->D:Ljava/lang/String;
+    iput-object p3, p0, Lq8/d;->E:Ljava/lang/String;
 
     .line 6
-    iput-wide p4, p0, Lq8/d;->E:J
+    iput-wide p4, p0, Lq8/d;->F:J
 
     .line 7
-    iput-object p6, p0, Lq8/d;->n:Ljava/lang/String;
+    iput-object p6, p0, Lq8/d;->o:Ljava/lang/String;
 
     .line 8
-    iput-object p7, p0, Lq8/d;->p:Ljava/lang/String;
+    iput-object p7, p0, Lq8/d;->q:Ljava/lang/String;
 
     .line 9
-    iput-object p8, p0, Lq8/d;->q:Ljava/lang/String;
+    iput-object p8, p0, Lq8/d;->r:Ljava/lang/String;
 
     .line 10
-    iput-object p2, p0, Lq8/d;->l:Lu8/e;
+    iput-object p2, p0, Lq8/d;->m:Lu8/e;
 
     .line 11
-    iput-object p9, p0, Lq8/d;->m:Ljava/lang/String;
+    iput-object p9, p0, Lq8/d;->n:Ljava/lang/String;
 
     .line 12
-    iput-object p10, p0, Lq8/d;->I:Ljava/lang/String;
+    iput-object p10, p0, Lq8/d;->J:Ljava/lang/String;
 
     .line 13
     new-instance p1, Ljava/util/HashMap;
 
     invoke-direct {p1}, Ljava/util/HashMap;-><init>()V
 
-    iput-object p1, p0, Lq8/d;->f:Ljava/util/HashMap;
+    iput-object p1, p0, Lq8/d;->g:Ljava/util/HashMap;
 
     return-void
 .end method
@@ -176,170 +176,170 @@
 
     invoke-direct {v0}, Lcom/helpshift/util/q;-><init>()V
 
-    iput-object v0, p0, Lq8/d;->o:Lcom/helpshift/util/q;
+    iput-object v0, p0, Lq8/d;->p:Lcom/helpshift/util/q;
 
     const/4 v0, 0x1
 
     .line 16
-    iput v0, p0, Lq8/d;->t:I
+    iput v0, p0, Lq8/d;->u:I
 
     .line 17
-    iget-object v0, p1, Lq8/d;->g:Ljava/lang/Long;
+    iget-object v0, p1, Lq8/d;->h:Ljava/lang/Long;
 
-    iput-object v0, p0, Lq8/d;->g:Ljava/lang/Long;
+    iput-object v0, p0, Lq8/d;->h:Ljava/lang/Long;
 
     .line 18
-    iget-object v0, p1, Lq8/d;->h:Ljava/lang/String;
-
-    iput-object v0, p0, Lq8/d;->h:Ljava/lang/String;
-
-    .line 19
     iget-object v0, p1, Lq8/d;->i:Ljava/lang/String;
 
     iput-object v0, p0, Lq8/d;->i:Ljava/lang/String;
 
-    .line 20
+    .line 19
     iget-object v0, p1, Lq8/d;->j:Ljava/lang/String;
 
     iput-object v0, p0, Lq8/d;->j:Ljava/lang/String;
 
-    .line 21
+    .line 20
     iget-object v0, p1, Lq8/d;->k:Ljava/lang/String;
 
     iput-object v0, p0, Lq8/d;->k:Ljava/lang/String;
 
-    .line 22
-    iget-object v0, p1, Lq8/d;->l:Lu8/e;
+    .line 21
+    iget-object v0, p1, Lq8/d;->l:Ljava/lang/String;
 
-    iput-object v0, p0, Lq8/d;->l:Lu8/e;
+    iput-object v0, p0, Lq8/d;->l:Ljava/lang/String;
+
+    .line 22
+    iget-object v0, p1, Lq8/d;->m:Lu8/e;
+
+    iput-object v0, p0, Lq8/d;->m:Lu8/e;
 
     .line 23
-    iget-object v0, p1, Lq8/d;->m:Ljava/lang/String;
-
-    iput-object v0, p0, Lq8/d;->m:Ljava/lang/String;
-
-    .line 24
-    iget-object v0, p1, Lq8/d;->I:Ljava/lang/String;
-
-    iput-object v0, p0, Lq8/d;->I:Ljava/lang/String;
-
-    .line 25
-    iget-object v0, p1, Lq8/d;->J:Ljava/util/List;
-
-    iput-object v0, p0, Lq8/d;->J:Ljava/util/List;
-
-    .line 26
-    iget-object v0, p1, Lq8/d;->K:Ljava/lang/String;
-
-    iput-object v0, p0, Lq8/d;->K:Ljava/lang/String;
-
-    .line 27
-    iget-object v0, p1, Lq8/d;->L:Ljava/lang/String;
-
-    iput-object v0, p0, Lq8/d;->L:Ljava/lang/String;
-
-    .line 28
     iget-object v0, p1, Lq8/d;->n:Ljava/lang/String;
 
     iput-object v0, p0, Lq8/d;->n:Ljava/lang/String;
 
+    .line 24
+    iget-object v0, p1, Lq8/d;->J:Ljava/lang/String;
+
+    iput-object v0, p0, Lq8/d;->J:Ljava/lang/String;
+
+    .line 25
+    iget-object v0, p1, Lq8/d;->K:Ljava/util/List;
+
+    iput-object v0, p0, Lq8/d;->K:Ljava/util/List;
+
+    .line 26
+    iget-object v0, p1, Lq8/d;->L:Ljava/lang/String;
+
+    iput-object v0, p0, Lq8/d;->L:Ljava/lang/String;
+
+    .line 27
+    iget-object v0, p1, Lq8/d;->M:Ljava/lang/String;
+
+    iput-object v0, p0, Lq8/d;->M:Ljava/lang/String;
+
+    .line 28
+    iget-object v0, p1, Lq8/d;->o:Ljava/lang/String;
+
+    iput-object v0, p0, Lq8/d;->o:Ljava/lang/String;
+
     .line 29
-    iget-object v0, p1, Lq8/d;->p:Ljava/lang/String;
-
-    iput-object v0, p0, Lq8/d;->p:Ljava/lang/String;
-
-    .line 30
     iget-object v0, p1, Lq8/d;->q:Ljava/lang/String;
 
     iput-object v0, p0, Lq8/d;->q:Ljava/lang/String;
 
+    .line 30
+    iget-object v0, p1, Lq8/d;->r:Ljava/lang/String;
+
+    iput-object v0, p0, Lq8/d;->r:Ljava/lang/String;
+
     .line 31
-    iget-boolean v0, p1, Lq8/d;->r:Z
-
-    iput-boolean v0, p0, Lq8/d;->r:Z
-
-    .line 32
     iget-boolean v0, p1, Lq8/d;->s:Z
 
     iput-boolean v0, p0, Lq8/d;->s:Z
 
+    .line 32
+    iget-boolean v0, p1, Lq8/d;->t:Z
+
+    iput-boolean v0, p0, Lq8/d;->t:Z
+
     .line 33
-    iget v0, p1, Lq8/d;->t:I
-
-    iput v0, p0, Lq8/d;->t:I
-
-    .line 34
     iget v0, p1, Lq8/d;->u:I
 
     iput v0, p0, Lq8/d;->u:I
 
-    .line 35
-    iget-object v0, p1, Lq8/d;->v:Ljava/lang/String;
+    .line 34
+    iget v0, p1, Lq8/d;->v:I
 
-    iput-object v0, p0, Lq8/d;->v:Ljava/lang/String;
+    iput v0, p0, Lq8/d;->v:I
+
+    .line 35
+    iget-object v0, p1, Lq8/d;->w:Ljava/lang/String;
+
+    iput-object v0, p0, Lq8/d;->w:Ljava/lang/String;
 
     .line 36
-    iget-boolean v0, p1, Lq8/d;->w:Z
+    iget-boolean v0, p1, Lq8/d;->x:Z
 
-    iput-boolean v0, p0, Lq8/d;->w:Z
+    iput-boolean v0, p0, Lq8/d;->x:Z
 
     .line 37
-    iget-wide v0, p1, Lq8/d;->x:J
-
-    iput-wide v0, p0, Lq8/d;->x:J
-
-    .line 38
     iget-wide v0, p1, Lq8/d;->y:J
 
     iput-wide v0, p0, Lq8/d;->y:J
 
-    .line 39
-    iget-object v0, p1, Lq8/d;->z:Ljava/lang/String;
+    .line 38
+    iget-wide v0, p1, Lq8/d;->z:J
 
-    iput-object v0, p0, Lq8/d;->z:Ljava/lang/String;
+    iput-wide v0, p0, Lq8/d;->z:J
+
+    .line 39
+    iget-object v0, p1, Lq8/d;->A:Ljava/lang/String;
+
+    iput-object v0, p0, Lq8/d;->A:Ljava/lang/String;
 
     .line 40
-    iget-boolean v0, p1, Lq8/d;->A:Z
-
-    iput-boolean v0, p0, Lq8/d;->A:Z
-
-    .line 41
     iget-boolean v0, p1, Lq8/d;->B:Z
 
     iput-boolean v0, p0, Lq8/d;->B:Z
 
-    .line 42
+    .line 41
     iget-boolean v0, p1, Lq8/d;->C:Z
 
     iput-boolean v0, p0, Lq8/d;->C:Z
 
-    .line 43
-    iget-object v0, p1, Lq8/d;->D:Ljava/lang/String;
+    .line 42
+    iget-boolean v0, p1, Lq8/d;->D:Z
 
-    iput-object v0, p0, Lq8/d;->D:Ljava/lang/String;
+    iput-boolean v0, p0, Lq8/d;->D:Z
+
+    .line 43
+    iget-object v0, p1, Lq8/d;->E:Ljava/lang/String;
+
+    iput-object v0, p0, Lq8/d;->E:Ljava/lang/String;
 
     .line 44
-    iget-wide v0, p1, Lq8/d;->E:J
+    iget-wide v0, p1, Lq8/d;->F:J
 
-    iput-wide v0, p0, Lq8/d;->E:J
+    iput-wide v0, p0, Lq8/d;->F:J
 
     .line 45
-    iget-boolean v0, p1, Lq8/d;->F:Z
+    iget-boolean v0, p1, Lq8/d;->G:Z
 
-    iput-boolean v0, p0, Lq8/d;->F:Z
+    iput-boolean v0, p0, Lq8/d;->G:Z
 
     .line 46
-    iget-object v0, p1, Lq8/d;->G:Ln8/b;
+    iget-object v0, p1, Lq8/d;->H:Ln8/b;
 
-    iput-object v0, p0, Lq8/d;->G:Ln8/b;
+    iput-object v0, p0, Lq8/d;->H:Ln8/b;
 
     .line 47
-    iget-boolean v0, p1, Lq8/d;->H:Z
+    iget-boolean v0, p1, Lq8/d;->I:Z
 
-    iput-boolean v0, p0, Lq8/d;->H:Z
+    iput-boolean v0, p0, Lq8/d;->I:Z
 
     .line 48
-    iget-object v0, p1, Lq8/d;->f:Ljava/util/HashMap;
+    iget-object v0, p1, Lq8/d;->g:Ljava/util/HashMap;
 
     const/4 v1, 0x0
 
@@ -401,20 +401,20 @@
     .line 52
     :cond_1
     :goto_1
-    iput-object v2, p0, Lq8/d;->f:Ljava/util/HashMap;
+    iput-object v2, p0, Lq8/d;->g:Ljava/util/HashMap;
 
     .line 53
-    iget-object v0, p1, Lq8/d;->M:Ljava/lang/Long;
-
-    iput-object v0, p0, Lq8/d;->M:Ljava/lang/Long;
-
-    .line 54
     iget-object v0, p1, Lq8/d;->N:Ljava/lang/Long;
 
     iput-object v0, p0, Lq8/d;->N:Ljava/lang/Long;
 
+    .line 54
+    iget-object v0, p1, Lq8/d;->O:Ljava/lang/Long;
+
+    iput-object v0, p0, Lq8/d;->O:Ljava/lang/Long;
+
     .line 55
-    iget-object v0, p1, Lq8/d;->o:Lcom/helpshift/util/q;
+    iget-object v0, p1, Lq8/d;->p:Lcom/helpshift/util/q;
 
     if-nez v0, :cond_2
 
@@ -458,17 +458,17 @@
     .line 59
     :cond_3
     :goto_3
-    iput-object v1, p0, Lq8/d;->o:Lcom/helpshift/util/q;
+    iput-object v1, p0, Lq8/d;->p:Lcom/helpshift/util/q;
 
     .line 60
-    iget-boolean v0, p1, Lq8/d;->O:Z
+    iget-boolean v0, p1, Lq8/d;->P:Z
 
-    iput-boolean v0, p0, Lq8/d;->O:Z
+    iput-boolean v0, p0, Lq8/d;->P:Z
 
     .line 61
-    iget-boolean p1, p1, Lq8/d;->P:Z
+    iget-boolean p1, p1, Lq8/d;->Q:Z
 
-    iput-boolean p1, p0, Lq8/d;->P:Z
+    iput-boolean p1, p0, Lq8/d;->Q:Z
 
     return-void
 .end method
@@ -488,7 +488,7 @@
 .method public final b()Z
     .locals 2
 
-    iget-object v0, p0, Lq8/d;->m:Ljava/lang/String;
+    iget-object v0, p0, Lq8/d;->n:Ljava/lang/String;
 
     const-string v1, "preissue"
 
@@ -502,7 +502,7 @@
 .method public final c()Z
     .locals 1
 
-    iget-object v0, p0, Lq8/d;->l:Lu8/e;
+    iget-object v0, p0, Lq8/d;->m:Lu8/e;
 
     invoke-static {v0}, Lm8/c;->d(Lu8/e;)Z
 
@@ -515,7 +515,7 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lq8/d;->o:Lcom/helpshift/util/q;
+    iget-object v0, p0, Lq8/d;->p:Lcom/helpshift/util/q;
 
     invoke-virtual {v0}, Ljava/util/AbstractCollection;->iterator()Ljava/util/Iterator;
 
@@ -532,7 +532,7 @@
 
     move-result-object v1
 
-    check-cast v1, Lo8/y;
+    check-cast v1, Lo8/z;
 
     .line 2
     invoke-virtual {v1, p0}, Ljava/util/Observable;->addObserver(Ljava/util/Observer;)V
@@ -551,10 +551,10 @@
 
     move-result-object p1
 
-    iput-object p1, p0, Lq8/d;->g:Ljava/lang/Long;
+    iput-object p1, p0, Lq8/d;->h:Ljava/lang/Long;
 
     .line 2
-    iget-object p1, p0, Lq8/d;->o:Lcom/helpshift/util/q;
+    iget-object p1, p0, Lq8/d;->p:Lcom/helpshift/util/q;
 
     invoke-virtual {p1}, Ljava/util/AbstractCollection;->iterator()Ljava/util/Iterator;
 
@@ -571,12 +571,12 @@
 
     move-result-object p2
 
-    check-cast p2, Lo8/y;
+    check-cast p2, Lo8/z;
 
     .line 3
-    iget-object v0, p0, Lq8/d;->g:Ljava/lang/Long;
+    iget-object v0, p0, Lq8/d;->h:Ljava/lang/Long;
 
-    iput-object v0, p2, Lo8/y;->l:Ljava/lang/Long;
+    iput-object v0, p2, Lo8/z;->m:Ljava/lang/Long;
 
     goto :goto_0
 
@@ -590,7 +590,7 @@
         value = {
             "(",
             "Ljava/util/List<",
-            "Lo8/y;",
+            "Lo8/z;",
             ">;)V"
         }
     .end annotation
@@ -600,12 +600,12 @@
 
     invoke-direct {v0, p1}, Lcom/helpshift/util/q;-><init>(Ljava/util/List;)V
 
-    iput-object v0, p0, Lq8/d;->o:Lcom/helpshift/util/q;
+    iput-object v0, p0, Lq8/d;->p:Lcom/helpshift/util/q;
 
     .line 2
-    iget-object p1, p0, Lq8/d;->l:Lu8/e;
+    iget-object p1, p0, Lq8/d;->m:Lu8/e;
 
-    sget-object v1, Lu8/e;->k:Lu8/e;
+    sget-object v1, Lu8/e;->l:Lu8/e;
 
     if-ne p1, v1, :cond_3
 
@@ -617,7 +617,7 @@
     if-lez p1, :cond_3
 
     .line 4
-    iget-object p1, p0, Lq8/d;->o:Lcom/helpshift/util/q;
+    iget-object p1, p0, Lq8/d;->p:Lcom/helpshift/util/q;
 
     invoke-virtual {p1}, Ljava/util/AbstractCollection;->size()I
 
@@ -631,20 +631,20 @@
     if-ltz p1, :cond_1
 
     .line 5
-    iget-object v0, p0, Lq8/d;->o:Lcom/helpshift/util/q;
+    iget-object v0, p0, Lq8/d;->p:Lcom/helpshift/util/q;
 
     .line 6
     invoke-virtual {v0, p1}, Ljava/util/AbstractList;->get(I)Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Lo8/y;
+    check-cast v0, Lo8/z;
 
-    instance-of v1, v0, Lo8/w;
+    instance-of v1, v0, Lo8/x;
 
     if-nez v1, :cond_0
 
-    instance-of v1, v0, Lo8/b0;
+    instance-of v1, v0, Lo8/d0;
 
     if-eqz v1, :cond_1
 
@@ -655,27 +655,27 @@
 
     .line 7
     :cond_1
-    instance-of p1, v0, Lo8/r;
+    instance-of p1, v0, Lo8/s;
 
     if-eqz p1, :cond_2
 
     .line 8
-    sget-object p1, Lu8/e;->o:Lu8/e;
+    sget-object p1, Lu8/e;->p:Lu8/e;
 
-    iput-object p1, p0, Lq8/d;->l:Lu8/e;
+    iput-object p1, p0, Lq8/d;->m:Lu8/e;
 
     goto :goto_1
 
     .line 9
     :cond_2
-    instance-of p1, v0, Lo8/s;
+    instance-of p1, v0, Lo8/t;
 
     if-eqz p1, :cond_3
 
     .line 10
-    sget-object p1, Lu8/e;->p:Lu8/e;
+    sget-object p1, Lu8/e;->q:Lu8/e;
 
-    iput-object p1, p0, Lq8/d;->l:Lu8/e;
+    iput-object p1, p0, Lq8/d;->m:Lu8/e;
 
     :cond_3
     :goto_1
@@ -686,22 +686,22 @@
     .locals 3
 
     .line 1
-    instance-of p2, p1, Lo8/y;
+    instance-of p2, p1, Lo8/z;
 
     if-eqz p2, :cond_2
 
     .line 2
-    check-cast p1, Lo8/y;
+    check-cast p1, Lo8/z;
 
     .line 3
-    iget-object p2, p0, Lq8/d;->o:Lcom/helpshift/util/q;
+    iget-object p2, p0, Lq8/d;->p:Lcom/helpshift/util/q;
 
     invoke-virtual {p2, p1}, Ljava/util/AbstractList;->indexOf(Ljava/lang/Object;)I
 
     move-result p2
 
     .line 4
-    iget-object v0, p0, Lq8/d;->o:Lcom/helpshift/util/q;
+    iget-object v0, p0, Lq8/d;->p:Lcom/helpshift/util/q;
 
     .line 5
     invoke-virtual {v0, p2, p1}, Ljava/util/ArrayList;->set(ILjava/lang/Object;)Ljava/lang/Object;
@@ -711,7 +711,7 @@
     if-eqz p2, :cond_2
 
     .line 6
-    iget-object p2, v0, Lcom/helpshift/util/q;->f:Lf9/g;
+    iget-object p2, v0, Lcom/helpshift/util/q;->g:Lf9/g;
 
     if-eqz p2, :cond_2
 
@@ -738,7 +738,7 @@
     const-string v2, "Helpshift_ConvsatnlVM"
 
     .line 9
-    invoke-static {v2, v0, v1, v1}, Landroidx/savedstate/d;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v2, v0, v1, v1}, Le5/i;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
 
     .line 10
     invoke-virtual {p2}, Lf9/i;->a0()V
@@ -754,7 +754,7 @@
     if-eqz p1, :cond_2
 
     .line 12
-    invoke-virtual {p1}, Lo8/y;->j()Z
+    invoke-virtual {p1}, Lo8/z;->j()Z
 
     move-result v0
 
@@ -768,7 +768,7 @@
 
     new-instance v1, Lf9/n0;
 
-    invoke-direct {v1, p2, p1}, Lf9/n0;-><init>(Lf9/q0;Lo8/y;)V
+    invoke-direct {v1, p2, p1}, Lf9/n0;-><init>(Lf9/q0;Lo8/z;)V
 
     invoke-virtual {v0, v1}, La8/f;->g(La8/g;)V
 

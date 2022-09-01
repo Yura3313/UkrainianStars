@@ -19,20 +19,20 @@
 
 
 # instance fields
-.field public f:Landroidx/appcompat/app/g;
+.field public g:Landroidx/appcompat/app/g;
 
-.field public g:Landroid/widget/ListAdapter;
+.field public h:Landroid/widget/ListAdapter;
 
-.field public h:Ljava/lang/CharSequence;
+.field public i:Ljava/lang/CharSequence;
 
-.field public final synthetic i:Landroidx/appcompat/widget/AppCompatSpinner;
+.field public final synthetic j:Landroidx/appcompat/widget/AppCompatSpinner;
 
 
 # direct methods
 .method public constructor <init>(Landroidx/appcompat/widget/AppCompatSpinner;)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/appcompat/widget/AppCompatSpinner$b;->i:Landroidx/appcompat/widget/AppCompatSpinner;
+    iput-object p1, p0, Landroidx/appcompat/widget/AppCompatSpinner$b;->j:Landroidx/appcompat/widget/AppCompatSpinner;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -44,7 +44,7 @@
 .method public final a()Z
     .locals 1
 
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatSpinner$b;->f:Landroidx/appcompat/app/g;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatSpinner$b;->g:Landroidx/appcompat/app/g;
 
     if-eqz v0, :cond_0
 
@@ -79,7 +79,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatSpinner$b;->f:Landroidx/appcompat/app/g;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatSpinner$b;->g:Landroidx/appcompat/app/g;
 
     if-eqz v0, :cond_0
 
@@ -89,7 +89,7 @@
     const/4 v0, 0x0
 
     .line 3
-    iput-object v0, p0, Landroidx/appcompat/widget/AppCompatSpinner$b;->f:Landroidx/appcompat/app/g;
+    iput-object v0, p0, Landroidx/appcompat/widget/AppCompatSpinner$b;->g:Landroidx/appcompat/app/g;
 
     :cond_0
     return-void
@@ -98,7 +98,7 @@
 .method public final e()Ljava/lang/CharSequence;
     .locals 1
 
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatSpinner$b;->h:Ljava/lang/CharSequence;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatSpinner$b;->i:Ljava/lang/CharSequence;
 
     return-object v0
 .end method
@@ -114,7 +114,7 @@
 .method public final h(Ljava/lang/CharSequence;)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/appcompat/widget/AppCompatSpinner$b;->h:Ljava/lang/CharSequence;
+    iput-object p1, p0, Landroidx/appcompat/widget/AppCompatSpinner$b;->i:Ljava/lang/CharSequence;
 
     return-void
 .end method
@@ -141,7 +141,7 @@
     .locals 4
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatSpinner$b;->g:Landroid/widget/ListAdapter;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatSpinner$b;->h:Landroid/widget/ListAdapter;
 
     if-nez v0, :cond_0
 
@@ -151,7 +151,7 @@
     :cond_0
     new-instance v0, Landroidx/appcompat/app/g$a;
 
-    iget-object v1, p0, Landroidx/appcompat/widget/AppCompatSpinner$b;->i:Landroidx/appcompat/widget/AppCompatSpinner;
+    iget-object v1, p0, Landroidx/appcompat/widget/AppCompatSpinner$b;->j:Landroidx/appcompat/widget/AppCompatSpinner;
 
     invoke-virtual {v1}, Landroidx/appcompat/widget/AppCompatSpinner;->getPopupContext()Landroid/content/Context;
 
@@ -160,7 +160,7 @@
     invoke-direct {v0, v1}, Landroidx/appcompat/app/g$a;-><init>(Landroid/content/Context;)V
 
     .line 3
-    iget-object v1, p0, Landroidx/appcompat/widget/AppCompatSpinner$b;->h:Ljava/lang/CharSequence;
+    iget-object v1, p0, Landroidx/appcompat/widget/AppCompatSpinner$b;->i:Ljava/lang/CharSequence;
 
     if-eqz v1, :cond_1
 
@@ -171,9 +171,9 @@
 
     .line 5
     :cond_1
-    iget-object v1, p0, Landroidx/appcompat/widget/AppCompatSpinner$b;->g:Landroid/widget/ListAdapter;
+    iget-object v1, p0, Landroidx/appcompat/widget/AppCompatSpinner$b;->h:Landroid/widget/ListAdapter;
 
-    iget-object v2, p0, Landroidx/appcompat/widget/AppCompatSpinner$b;->i:Landroidx/appcompat/widget/AppCompatSpinner;
+    iget-object v2, p0, Landroidx/appcompat/widget/AppCompatSpinner$b;->j:Landroidx/appcompat/widget/AppCompatSpinner;
 
     .line 6
     invoke-virtual {v2}, Landroid/widget/AdapterView;->getSelectedItemPosition()I
@@ -201,10 +201,10 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Landroidx/appcompat/widget/AppCompatSpinner$b;->f:Landroidx/appcompat/app/g;
+    iput-object v0, p0, Landroidx/appcompat/widget/AppCompatSpinner$b;->g:Landroidx/appcompat/app/g;
 
     .line 12
-    iget-object v0, v0, Landroidx/appcompat/app/g;->h:Landroidx/appcompat/app/AlertController;
+    iget-object v0, v0, Landroidx/appcompat/app/g;->i:Landroidx/appcompat/app/AlertController;
 
     .line 13
     iget-object v0, v0, Landroidx/appcompat/app/AlertController;->g:Landroidx/appcompat/app/AlertController$RecycleListView;
@@ -216,7 +216,7 @@
     invoke-virtual {v0, p2}, Landroid/view/View;->setTextAlignment(I)V
 
     .line 16
-    iget-object p1, p0, Landroidx/appcompat/widget/AppCompatSpinner$b;->f:Landroidx/appcompat/app/g;
+    iget-object p1, p0, Landroidx/appcompat/widget/AppCompatSpinner$b;->g:Landroidx/appcompat/app/g;
 
     invoke-virtual {p1}, Landroid/app/Dialog;->show()V
 
@@ -234,7 +234,7 @@
 .method public final o(Landroid/widget/ListAdapter;)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/appcompat/widget/AppCompatSpinner$b;->g:Landroid/widget/ListAdapter;
+    iput-object p1, p0, Landroidx/appcompat/widget/AppCompatSpinner$b;->h:Landroid/widget/ListAdapter;
 
     return-void
 .end method
@@ -243,12 +243,12 @@
     .locals 3
 
     .line 1
-    iget-object p1, p0, Landroidx/appcompat/widget/AppCompatSpinner$b;->i:Landroidx/appcompat/widget/AppCompatSpinner;
+    iget-object p1, p0, Landroidx/appcompat/widget/AppCompatSpinner$b;->j:Landroidx/appcompat/widget/AppCompatSpinner;
 
     invoke-virtual {p1, p2}, Landroid/widget/AdapterView;->setSelection(I)V
 
     .line 2
-    iget-object p1, p0, Landroidx/appcompat/widget/AppCompatSpinner$b;->i:Landroidx/appcompat/widget/AppCompatSpinner;
+    iget-object p1, p0, Landroidx/appcompat/widget/AppCompatSpinner$b;->j:Landroidx/appcompat/widget/AppCompatSpinner;
 
     invoke-virtual {p1}, Landroid/widget/AdapterView;->getOnItemClickListener()Landroid/widget/AdapterView$OnItemClickListener;
 
@@ -259,9 +259,9 @@
     if-eqz p1, :cond_0
 
     .line 3
-    iget-object p1, p0, Landroidx/appcompat/widget/AppCompatSpinner$b;->i:Landroidx/appcompat/widget/AppCompatSpinner;
+    iget-object p1, p0, Landroidx/appcompat/widget/AppCompatSpinner$b;->j:Landroidx/appcompat/widget/AppCompatSpinner;
 
-    iget-object v1, p0, Landroidx/appcompat/widget/AppCompatSpinner$b;->g:Landroid/widget/ListAdapter;
+    iget-object v1, p0, Landroidx/appcompat/widget/AppCompatSpinner$b;->h:Landroid/widget/ListAdapter;
 
     invoke-interface {v1, p2}, Landroid/widget/Adapter;->getItemId(I)J
 
@@ -271,7 +271,7 @@
 
     .line 4
     :cond_0
-    iget-object p1, p0, Landroidx/appcompat/widget/AppCompatSpinner$b;->f:Landroidx/appcompat/app/g;
+    iget-object p1, p0, Landroidx/appcompat/widget/AppCompatSpinner$b;->g:Landroidx/appcompat/app/g;
 
     if-eqz p1, :cond_1
 
@@ -279,7 +279,7 @@
     invoke-virtual {p1}, Landroidx/appcompat/app/p;->dismiss()V
 
     .line 6
-    iput-object v0, p0, Landroidx/appcompat/widget/AppCompatSpinner$b;->f:Landroidx/appcompat/app/g;
+    iput-object v0, p0, Landroidx/appcompat/widget/AppCompatSpinner$b;->g:Landroidx/appcompat/app/g;
 
     :cond_1
     return-void

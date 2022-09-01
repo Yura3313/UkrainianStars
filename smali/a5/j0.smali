@@ -3,11 +3,11 @@
 
 
 # instance fields
-.field public final f:La5/i0;
-
-.field public final g:J
+.field public final g:La5/i0;
 
 .field public final h:J
+
+.field public final i:J
 
 
 # direct methods
@@ -16,13 +16,13 @@
 
     invoke-direct {p0}, La5/i0;-><init>()V
 
-    iput-object p1, p0, La5/j0;->f:La5/i0;
+    iput-object p1, p0, La5/j0;->g:La5/i0;
 
     invoke-virtual {p0, p2, p3}, La5/j0;->d(J)J
 
     move-result-wide p1
 
-    iput-wide p1, p0, La5/j0;->g:J
+    iput-wide p1, p0, La5/j0;->h:J
 
     add-long/2addr p1, p4
 
@@ -30,7 +30,7 @@
 
     move-result-wide p1
 
-    iput-wide p1, p0, La5/j0;->h:J
+    iput-wide p1, p0, La5/j0;->i:J
 
     return-void
 .end method
@@ -40,9 +40,9 @@
 .method public final a()J
     .locals 4
 
-    iget-wide v0, p0, La5/j0;->h:J
+    iget-wide v0, p0, La5/j0;->i:J
 
-    iget-wide v2, p0, La5/j0;->g:J
+    iget-wide v2, p0, La5/j0;->h:J
 
     sub-long/2addr v0, v2
 
@@ -57,7 +57,7 @@
         }
     .end annotation
 
-    iget-wide v0, p0, La5/j0;->g:J
+    iget-wide v0, p0, La5/j0;->h:J
 
     add-long/2addr v0, p1
 
@@ -71,7 +71,7 @@
 
     move-result-wide p3
 
-    iget-object v0, p0, La5/j0;->f:La5/i0;
+    iget-object v0, p0, La5/j0;->g:La5/i0;
 
     sub-long/2addr p3, p1
 
@@ -102,7 +102,7 @@
 
     if-ltz v2, :cond_1
 
-    iget-object v0, p0, La5/j0;->f:La5/i0;
+    iget-object v0, p0, La5/j0;->g:La5/i0;
 
     invoke-virtual {v0}, La5/i0;->a()J
 
@@ -112,7 +112,7 @@
 
     if-lez v2, :cond_0
 
-    iget-object p1, p0, La5/j0;->f:La5/i0;
+    iget-object p1, p0, La5/j0;->g:La5/i0;
 
     invoke-virtual {p1}, La5/i0;->a()J
 

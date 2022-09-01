@@ -198,7 +198,7 @@
     long-to-int v6, v4
 
     .line 3
-    sget-boolean v1, Lze/b0;->a:Z
+    sget-boolean v1, Lze/c0;->a:Z
 
     const-wide/high16 v4, 0x1000000000000000L
 
@@ -264,7 +264,7 @@
 
     const-string v0, "element"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     :cond_0

@@ -58,7 +58,7 @@
     iget-object v0, v0, Lcom/journeyapps/barcodescanner/b;->b:Lcom/journeyapps/barcodescanner/DecoratedBarcodeView;
 
     .line 3
-    iget-object v0, v0, Lcom/journeyapps/barcodescanner/DecoratedBarcodeView;->f:Lcom/journeyapps/barcodescanner/BarcodeView;
+    iget-object v0, v0, Lcom/journeyapps/barcodescanner/DecoratedBarcodeView;->g:Lcom/journeyapps/barcodescanner/BarcodeView;
 
     invoke-virtual {v0}, Lcom/journeyapps/barcodescanner/BarcodeView;->d()V
 

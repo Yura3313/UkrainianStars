@@ -31,24 +31,24 @@
 
 
 # instance fields
-.field public j:Lze/a0;
-
 .field public k:Lze/a0;
 
-.field public l:I
+.field public l:Lze/a0;
 
-.field public final synthetic m:Lze/e0;
+.field public m:I
 
-.field public final synthetic n:J
+.field public final synthetic n:Lze/f0;
+
+.field public final synthetic o:J
 
 
 # direct methods
-.method public constructor <init>(Lze/e0;JLke/d;)V
+.method public constructor <init>(Lze/f0;JLke/d;)V
     .locals 0
 
-    iput-object p1, p0, Lae/w1;->m:Lze/e0;
+    iput-object p1, p0, Lae/w1;->n:Lze/f0;
 
-    iput-wide p2, p0, Lae/w1;->n:J
+    iput-wide p2, p0, Lae/w1;->o:J
 
     invoke-direct {p0, p4}, Lme/i;-><init>(Lke/d;)V
 
@@ -66,26 +66,26 @@
             "Lke/d<",
             "*>;)",
             "Lke/d<",
-            "Lie/h;",
+            "Lie/i;",
             ">;"
         }
     .end annotation
 
     const-string v0, "completion"
 
-    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     new-instance v0, Lae/w1;
 
-    iget-object v1, p0, Lae/w1;->m:Lze/e0;
+    iget-object v1, p0, Lae/w1;->n:Lze/f0;
 
-    iget-wide v2, p0, Lae/w1;->n:J
+    iget-wide v2, p0, Lae/w1;->o:J
 
-    invoke-direct {v0, v1, v2, v3, p2}, Lae/w1;-><init>(Lze/e0;JLke/d;)V
+    invoke-direct {v0, v1, v2, v3, p2}, Lae/w1;-><init>(Lze/f0;JLke/d;)V
 
     check-cast p1, Lze/a0;
 
-    iput-object p1, v0, Lae/w1;->j:Lze/a0;
+    iput-object p1, v0, Lae/w1;->k:Lze/a0;
 
     return-object v0
 .end method
@@ -93,10 +93,10 @@
 .method public final d(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 6
 
-    sget-object v0, Lle/a;->f:Lle/a;
+    sget-object v0, Lle/a;->g:Lle/a;
 
     .line 1
-    iget v1, p0, Lae/w1;->l:I
+    iget v1, p0, Lae/w1;->m:I
 
     const/4 v2, 0x1
 
@@ -104,7 +104,7 @@
 
     if-ne v1, v2, :cond_0
 
-    invoke-static {p1}, Le5/i;->q(Ljava/lang/Object;)V
+    invoke-static {p1}, Lie/f;->d(Ljava/lang/Object;)V
 
     goto :goto_0
 
@@ -120,12 +120,12 @@
 
     .line 3
     :cond_1
-    invoke-static {p1}, Le5/i;->q(Ljava/lang/Object;)V
+    invoke-static {p1}, Lie/f;->d(Ljava/lang/Object;)V
 
-    iget-object p1, p0, Lae/w1;->j:Lze/a0;
+    iget-object p1, p0, Lae/w1;->k:Lze/a0;
 
     .line 4
-    iget-wide v3, p0, Lae/w1;->n:J
+    iget-wide v3, p0, Lae/w1;->o:J
 
     new-instance v1, Lae/w1$a;
 
@@ -133,11 +133,11 @@
 
     invoke-direct {v1, p0, v5}, Lae/w1$a;-><init>(Lae/w1;Lke/d;)V
 
-    iput-object p1, p0, Lae/w1;->k:Lze/a0;
+    iput-object p1, p0, Lae/w1;->l:Lze/a0;
 
-    iput v2, p0, Lae/w1;->l:I
+    iput v2, p0, Lae/w1;->m:I
 
-    invoke-static {v3, v4, v1, p0}, Lze/s1;->b(JLre/p;Lke/d;)Ljava/lang/Object;
+    invoke-static {v3, v4, v1, p0}, Lze/t1;->b(JLre/p;Lke/d;)Ljava/lang/Object;
 
     move-result-object p1
 
@@ -158,22 +158,22 @@
     const-string v0, "completion"
 
     .line 1
-    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     new-instance v0, Lae/w1;
 
-    iget-object v1, p0, Lae/w1;->m:Lze/e0;
+    iget-object v1, p0, Lae/w1;->n:Lze/f0;
 
-    iget-wide v2, p0, Lae/w1;->n:J
+    iget-wide v2, p0, Lae/w1;->o:J
 
-    invoke-direct {v0, v1, v2, v3, p2}, Lae/w1;-><init>(Lze/e0;JLke/d;)V
+    invoke-direct {v0, v1, v2, v3, p2}, Lae/w1;-><init>(Lze/f0;JLke/d;)V
 
     check-cast p1, Lze/a0;
 
-    iput-object p1, v0, Lae/w1;->j:Lze/a0;
+    iput-object p1, v0, Lae/w1;->k:Lze/a0;
 
     .line 2
-    sget-object p1, Lie/h;->a:Lie/h;
+    sget-object p1, Lie/i;->a:Lie/i;
 
     invoke-virtual {v0, p1}, Lae/w1;->d(Ljava/lang/Object;)Ljava/lang/Object;
 

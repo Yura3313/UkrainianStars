@@ -1,5 +1,5 @@
 .class public final Laf/y$a;
-.super Lse/h;
+.super Lse/i;
 .source "ThreadContext.kt"
 
 # interfaces
@@ -18,7 +18,7 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/p<",
         "Ljava/lang/Object;",
         "Lke/f$a;",
@@ -29,7 +29,7 @@
 
 
 # static fields
-.field public static final f:Laf/y$a;
+.field public static final g:Laf/y$a;
 
 
 # direct methods
@@ -40,7 +40,7 @@
 
     invoke-direct {v0}, Laf/y$a;-><init>()V
 
-    sput-object v0, Laf/y$a;->f:Laf/y$a;
+    sput-object v0, Laf/y$a;->g:Laf/y$a;
 
     return-void
 .end method
@@ -50,7 +50,7 @@
 
     const/4 v0, 0x2
 
-    invoke-direct {p0, v0}, Lse/h;-><init>(I)V
+    invoke-direct {p0, v0}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -65,10 +65,10 @@
     const-string v0, "element"
 
     .line 1
-    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 2
-    instance-of v0, p2, Lze/p1;
+    instance-of v0, p2, Lze/q1;
 
     if-eqz v0, :cond_3
 

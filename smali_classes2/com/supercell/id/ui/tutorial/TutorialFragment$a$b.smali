@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field public final synthetic f:Lcom/supercell/id/ui/tutorial/TutorialFragment$a;
+.field public final synthetic g:Lcom/supercell/id/ui/tutorial/TutorialFragment$a;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/id/ui/tutorial/TutorialFragment$a;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/ui/tutorial/TutorialFragment$a$b;->f:Lcom/supercell/id/ui/tutorial/TutorialFragment$a;
+    iput-object p1, p0, Lcom/supercell/id/ui/tutorial/TutorialFragment$a$b;->g:Lcom/supercell/id/ui/tutorial/TutorialFragment$a;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -45,7 +45,7 @@
     move-result-object p1
 
     .line 2
-    iget-object p1, p1, Lae/u;->m:La5/d0;
+    iget-object p1, p1, Lae/u;->m:Lpe/a;
 
     const-string v0, "Intro"
 
@@ -56,18 +56,18 @@
     const/16 v3, 0x18
 
     .line 3
-    invoke-static {p1, v0, v1, v2, v3}, La5/d0;->a(La5/d0;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;I)V
+    invoke-static {p1, v0, v1, v2, v3}, Lpe/a;->e(Lpe/a;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;I)V
 
     .line 4
-    iget-object p1, p0, Lcom/supercell/id/ui/tutorial/TutorialFragment$a$b;->f:Lcom/supercell/id/ui/tutorial/TutorialFragment$a;
+    iget-object p1, p0, Lcom/supercell/id/ui/tutorial/TutorialFragment$a$b;->g:Lcom/supercell/id/ui/tutorial/TutorialFragment$a;
 
-    invoke-static {p1}, Lcom/android/billingclient/api/c0;->e(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
+    invoke-static {p1}, Lcom/android/billingclient/api/b0;->f(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
 
     move-result-object p1
 
     if-eqz p1, :cond_0
 
-    invoke-static {p1}, Lcom/helpshift/util/y;->a(Lcom/supercell/id/ui/MainActivity;)V
+    invoke-static {p1}, Lmd/g;->a(Lcom/supercell/id/ui/MainActivity;)V
 
     :cond_0
     return-void

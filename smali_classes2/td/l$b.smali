@@ -18,7 +18,7 @@
 
 
 # instance fields
-.field public final synthetic f:Ltd/l;
+.field public final synthetic g:Ltd/l;
 
 
 # direct methods
@@ -30,7 +30,7 @@
         }
     .end annotation
 
-    iput-object p1, p0, Ltd/l$b;->f:Ltd/l;
+    iput-object p1, p0, Ltd/l$b;->g:Ltd/l;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -44,12 +44,12 @@
 
     const-string v0, "s"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
-    iget-object p1, p0, Ltd/l$b;->f:Ltd/l;
+    iget-object p1, p0, Ltd/l$b;->g:Ltd/l;
 
-    sget v0, Ltd/l;->g0:I
+    sget v0, Ltd/l;->h0:I
 
     .line 2
     invoke-virtual {p1}, Ltd/l;->a1()V
@@ -62,7 +62,7 @@
 
     const-string p2, "s"
 
-    invoke-static {p1, p2}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p2}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     return-void
 .end method
@@ -72,7 +72,7 @@
 
     const-string p2, "s"
 
-    invoke-static {p1, p2}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p2}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     return-void
 .end method

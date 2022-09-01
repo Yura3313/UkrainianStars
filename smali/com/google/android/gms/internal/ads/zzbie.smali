@@ -33,10 +33,10 @@
     move-result-object v0
 
     .line 2
-    invoke-static {v0, p1}, Lk3/cw0;->b(Landroid/os/Parcel;Landroid/os/IInterface;)V
+    invoke-static {v0, p1}, Lk3/gw0;->b(Landroid/os/Parcel;Landroid/os/IInterface;)V
 
     .line 3
-    invoke-static {v0, p2}, Lk3/cw0;->b(Landroid/os/Parcel;Landroid/os/IInterface;)V
+    invoke-static {v0, p2}, Lk3/gw0;->b(Landroid/os/Parcel;Landroid/os/IInterface;)V
 
     const/4 p1, 0x2
 

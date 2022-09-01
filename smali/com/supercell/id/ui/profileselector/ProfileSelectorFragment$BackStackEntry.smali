@@ -30,9 +30,9 @@
 
 
 # instance fields
-.field public final g:Z
+.field public final h:Z
 
-.field public final h:Ljava/lang/Class;
+.field public final i:Ljava/lang/Class;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/lang/Class<",
@@ -43,7 +43,7 @@
     .end annotation
 .end field
 
-.field public final i:Z
+.field public final j:Z
 
 
 # direct methods
@@ -70,7 +70,7 @@
 
     const/4 v2, 0x0
 
-    invoke-direct {p0, v0, v1, v2}, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$BackStackEntry;-><init>(ZILse/e;)V
+    invoke-direct {p0, v0, v1, v2}, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$BackStackEntry;-><init>(ZILse/f;)V
 
     return-void
 .end method
@@ -81,22 +81,22 @@
     .line 1
     invoke-direct {p0}, Lcom/supercell/id/ui/BackStack$Entry;-><init>()V
 
-    iput-boolean p1, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$BackStackEntry;->i:Z
+    iput-boolean p1, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$BackStackEntry;->j:Z
 
     const/4 p1, 0x1
 
     .line 2
-    iput-boolean p1, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$BackStackEntry;->g:Z
+    iput-boolean p1, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$BackStackEntry;->h:Z
 
     .line 3
     const-class p1, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;
 
-    iput-object p1, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$BackStackEntry;->h:Ljava/lang/Class;
+    iput-object p1, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$BackStackEntry;->i:Ljava/lang/Class;
 
     return-void
 .end method
 
-.method public synthetic constructor <init>(ZILse/e;)V
+.method public synthetic constructor <init>(ZILse/f;)V
     .locals 0
 
     const/4 p1, 0x0
@@ -114,7 +114,7 @@
 
     const-string p3, "mainActivity"
 
-    invoke-static {p1, p3}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p3}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     mul-int/lit8 p2, p2, 0x1
 
@@ -126,7 +126,7 @@
 .method public final P()Z
     .locals 1
 
-    iget-boolean v0, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$BackStackEntry;->g:Z
+    iget-boolean v0, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$BackStackEntry;->h:Z
 
     return v0
 .end method
@@ -143,7 +143,7 @@
         }
     .end annotation
 
-    iget-object v0, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$BackStackEntry;->h:Ljava/lang/Class;
+    iget-object v0, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$BackStackEntry;->i:Ljava/lang/Class;
 
     return-object v0
 .end method
@@ -167,9 +167,9 @@
 
     check-cast p1, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$BackStackEntry;
 
-    iget-boolean v0, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$BackStackEntry;->i:Z
+    iget-boolean v0, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$BackStackEntry;->j:Z
 
-    iget-boolean p1, p1, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$BackStackEntry;->i:Z
+    iget-boolean p1, p1, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$BackStackEntry;->j:Z
 
     if-ne v0, p1, :cond_0
 
@@ -190,7 +190,7 @@
 .method public final hashCode()I
     .locals 1
 
-    iget-boolean v0, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$BackStackEntry;->i:Z
+    iget-boolean v0, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$BackStackEntry;->j:Z
 
     if-eqz v0, :cond_0
 
@@ -219,12 +219,12 @@
     move-result-object v0
 
     .line 2
-    iget-boolean v1, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$BackStackEntry;->i:Z
+    iget-boolean v1, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$BackStackEntry;->j:Z
 
     const-string v2, ")"
 
     .line 3
-    invoke-static {v0, v1, v2}, Landroidx/appcompat/app/j;->b(Ljava/lang/StringBuilder;ZLjava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, v1, v2}, Landroidx/appcompat/app/j;->a(Ljava/lang/StringBuilder;ZLjava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -236,10 +236,10 @@
 
     const-string p2, "dest"
 
-    invoke-static {p1, p2}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p2}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
-    iget-boolean p2, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$BackStackEntry;->i:Z
+    iget-boolean p2, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$BackStackEntry;->j:Z
 
     .line 2
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
@@ -263,7 +263,7 @@
 
     const-string v0, "mainActivity"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-class p1, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$c;
 
@@ -275,7 +275,7 @@
 
     const-string v0, "mainActivity"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/4 p1, 0x1
 

@@ -72,7 +72,7 @@
     move-result-object v5
 
     .line 12
-    sget-object v1, La4/a;->f:La4/a;
+    sget-object v1, La4/a;->g:La4/a;
 
     .line 13
     sget-object v6, La4/c;->c:Lcom/google/android/gms/common/api/a;
@@ -123,7 +123,7 @@
     move-object/from16 v13, p4
 
     .line 17
-    invoke-direct/range {v7 .. v13}, Lcom/google/android/gms/common/internal/a;-><init>(Landroid/content/Context;Landroid/os/Looper;ILd2/c;Lb2/e;Lb2/l;)V
+    invoke-direct/range {v7 .. v13}, Lcom/google/android/gms/common/internal/a;-><init>(Landroid/content/Context;Landroid/os/Looper;ILd2/c;Lb2/d;Lb2/k;)V
 
     return-void
 .end method

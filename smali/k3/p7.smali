@@ -1,42 +1,63 @@
 .class public final Lk3/p7;
-.super Ljava/lang/Object;
-.source "com.google.android.gms:play-services-ads@@19.3.0"
+.super Lcom/google/android/gms/dynamic/RemoteCreator;
+.source "com.google.android.gms:play-services-ads-lite@@19.3.0"
 
-# interfaces
-.implements Lk3/t7;
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lcom/google/android/gms/dynamic/RemoteCreator<",
+        "Lcom/google/android/gms/internal/ads/zzaqm;",
+        ">;"
+    }
+.end annotation
 
 
 # direct methods
 .method public constructor <init>()V
-    .locals 0
+    .locals 1
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    const-string v0, "com.google.android.gms.ads.AdOverlayCreatorImpl"
+
+    invoke-direct {p0, v0}, Lcom/google/android/gms/dynamic/RemoteCreator;-><init>(Ljava/lang/String;)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final B()Lk3/em0;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Landroid/content/Context;",
-            ")",
-            "Lk3/em0<",
-            "Landroid/os/Bundle;",
-            ">;"
-        }
-    .end annotation
+.method public final synthetic a(Landroid/os/IBinder;)Ljava/lang/Object;
+    .locals 2
 
-    new-instance v0, Landroid/os/Bundle;
+    if-nez p1, :cond_0
 
-    invoke-direct {v0}, Landroid/os/Bundle;-><init>()V
+    const/4 p1, 0x0
 
-    invoke-static {v0}, Lk3/am0;->f(Ljava/lang/Object;)Lk3/em0;
+    return-object p1
+
+    :cond_0
+    const-string v0, "com.google.android.gms.ads.internal.overlay.client.IAdOverlayCreator"
+
+    .line 1
+    invoke-interface {p1, v0}, Landroid/os/IBinder;->queryLocalInterface(Ljava/lang/String;)Landroid/os/IInterface;
 
     move-result-object v0
+
+    .line 2
+    instance-of v1, v0, Lcom/google/android/gms/internal/ads/zzaqm;
+
+    if-eqz v1, :cond_1
+
+    .line 3
+    check-cast v0, Lcom/google/android/gms/internal/ads/zzaqm;
+
+    return-object v0
+
+    .line 4
+    :cond_1
+    new-instance v0, Lcom/google/android/gms/internal/ads/zzaqp;
+
+    invoke-direct {v0, p1}, Lcom/google/android/gms/internal/ads/zzaqp;-><init>(Landroid/os/IBinder;)V
 
     return-object v0
 .end method

@@ -1,5 +1,5 @@
 .class public final synthetic Lrc/d0$e0;
-.super Lse/g;
+.super Lse/h;
 .source "SocialApiClient.kt"
 
 # interfaces
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lrc/d0;->u(Landroid/graphics/Bitmap;)Lze/e0;
+    value = Lrc/d0;->u(Landroid/graphics/Bitmap;)Lze/f0;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,22 +18,38 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/g;",
+        "Lse/h;",
         "Lre/l<",
         "Lorg/json/JSONObject;",
-        "Lorg/json/JSONObject;",
+        "Lvc/q;",
         ">;"
     }
 .end annotation
 
 
+# static fields
+.field public static final h:Lrc/d0$e0;
+
+
 # direct methods
-.method public constructor <init>(Lrc/d0;)V
+.method public static constructor <clinit>()V
+    .locals 1
+
+    new-instance v0, Lrc/d0$e0;
+
+    invoke-direct {v0}, Lrc/d0$e0;-><init>()V
+
+    sput-object v0, Lrc/d0$e0;->h:Lrc/d0$e0;
+
+    return-void
+.end method
+
+.method public constructor <init>()V
     .locals 1
 
     const/4 v0, 0x1
 
-    invoke-direct {p0, v0, p1}, Lse/g;-><init>(ILjava/lang/Object;)V
+    invoke-direct {p0, v0}, Lse/h;-><init>(I)V
 
     return-void
 .end method
@@ -43,7 +59,7 @@
 .method public final getName()Ljava/lang/String;
     .locals 1
 
-    const-string v0, "handleResponseData"
+    const-string v0, "<init>"
 
     return-object v0
 .end method
@@ -51,9 +67,9 @@
 .method public final getOwner()Lwe/d;
     .locals 1
 
-    const-class v0, Lrc/d0;
+    const-class v0, Lvc/q;
 
-    invoke-static {v0}, Lse/r;->a(Ljava/lang/Class;)Lwe/c;
+    invoke-static {v0}, Lse/s;->a(Ljava/lang/Class;)Lwe/c;
 
     move-result-object v0
 
@@ -63,7 +79,7 @@
 .method public final getSignature()Ljava/lang/String;
     .locals 1
 
-    const-string v0, "handleResponseData(Lorg/json/JSONObject;)Lorg/json/JSONObject;"
+    const-string v0, "<init>(Lorg/json/JSONObject;)V"
 
     return-object v0
 .end method
@@ -77,16 +93,12 @@
     const-string v0, "p1"
 
     .line 2
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    iget-object v0, p0, Lse/b;->receiver:Ljava/lang/Object;
-
-    check-cast v0, Lrc/d0;
+    new-instance v0, Lvc/q;
 
     .line 3
-    invoke-virtual {v0, p1}, Lrc/f;->c(Lorg/json/JSONObject;)Lorg/json/JSONObject;
+    invoke-direct {v0, p1}, Lvc/q;-><init>(Lorg/json/JSONObject;)V
 
-    move-result-object p1
-
-    return-object p1
+    return-object v0
 .end method

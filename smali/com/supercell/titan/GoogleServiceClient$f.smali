@@ -27,14 +27,14 @@
 
 
 # instance fields
-.field public final synthetic f:Landroid/app/Activity;
+.field public final synthetic g:Landroid/app/Activity;
 
 
 # direct methods
 .method public constructor <init>(Landroid/app/Activity;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/titan/GoogleServiceClient$f;->f:Landroid/app/Activity;
+    iput-object p1, p0, Lcom/supercell/titan/GoogleServiceClient$f;->g:Landroid/app/Activity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -50,7 +50,7 @@
     check-cast p1, Landroid/content/Intent;
 
     .line 2
-    iget-object v0, p0, Lcom/supercell/titan/GoogleServiceClient$f;->f:Landroid/app/Activity;
+    iget-object v0, p0, Lcom/supercell/titan/GoogleServiceClient$f;->g:Landroid/app/Activity;
 
     const v1, 0x10c90b
 

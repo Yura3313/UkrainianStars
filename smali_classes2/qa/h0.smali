@@ -4,14 +4,14 @@
 
 
 # instance fields
-.field public final synthetic f:Lqa/e0;
+.field public final synthetic g:Lqa/e0;
 
 
 # direct methods
 .method public constructor <init>(Lqa/e0;)V
     .locals 0
 
-    iput-object p1, p0, Lqa/h0;->f:Lqa/e0;
+    iput-object p1, p0, Lqa/h0;->g:Lqa/e0;
 
     invoke-direct {p0}, Lqa/i1;-><init>()V
 
@@ -26,7 +26,7 @@
     if-eqz p1, :cond_5
 
     .line 1
-    iget-object p2, p0, Lqa/h0;->f:Lqa/e0;
+    iget-object p2, p0, Lqa/h0;->g:Lqa/e0;
 
     iget-object p2, p2, Lqa/e0;->c:Lqa/n0;
 
@@ -37,7 +37,7 @@
     check-cast p2, Lqa/t;
 
     .line 2
-    iget-object p2, p2, Lqa/t;->m0:Lf9/i;
+    iget-object p2, p2, Lqa/t;->n0:Lf9/i;
 
     .line 3
     iget-object p2, p2, Lf9/i;->g:Lf9/j0;
@@ -45,7 +45,7 @@
     if-eqz p2, :cond_5
 
     .line 4
-    invoke-static {p1}, Lcom/google/android/play/core/appupdate/g;->b(Ljava/lang/String;)Z
+    invoke-static {p1}, La5/b0;->d(Ljava/lang/String;)Z
 
     move-result p3
 

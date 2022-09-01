@@ -31,7 +31,7 @@
     .locals 2
 
     .line 1
-    iget-boolean v0, p0, Lcom/google/crypto/tink/shaded/protobuf/g0;->i:Z
+    iget-boolean v0, p0, Lcom/google/crypto/tink/shaded/protobuf/g0;->j:Z
 
     if-nez v0, :cond_1
 

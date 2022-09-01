@@ -18,7 +18,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Comparator<",
-            "Lo8/y;",
+            "Lo8/z;",
             ">;"
         }
     .end annotation
@@ -56,13 +56,13 @@
 
     new-array v2, v1, [Lu8/e;
 
-    sget-object v3, Lu8/e;->k:Lu8/e;
+    sget-object v3, Lu8/e;->l:Lu8/e;
 
     const/4 v4, 0x0
 
     aput-object v3, v2, v4
 
-    sget-object v3, Lu8/e;->p:Lu8/e;
+    sget-object v3, Lu8/e;->q:Lu8/e;
 
     const/4 v5, 0x1
 
@@ -84,13 +84,13 @@
 
     new-array v2, v2, [Lu8/e;
 
-    sget-object v6, Lu8/e;->o:Lu8/e;
+    sget-object v6, Lu8/e;->p:Lu8/e;
 
     aput-object v6, v2, v4
 
     aput-object v3, v2, v5
 
-    sget-object v3, Lu8/e;->s:Lu8/e;
+    sget-object v3, Lu8/e;->t:Lu8/e;
 
     aput-object v3, v2, v1
 
@@ -222,7 +222,7 @@
     .locals 4
 
     .line 1
-    iget-boolean v0, p1, Lq8/d;->O:Z
+    iget-boolean v0, p1, Lq8/d;->P:Z
 
     const/4 v1, 0x0
 
@@ -232,7 +232,7 @@
 
     .line 2
     :cond_0
-    iget v0, p1, Lq8/d;->t:I
+    iget v0, p1, Lq8/d;->u:I
 
     const/4 v2, 0x3
 
@@ -244,7 +244,7 @@
     :cond_1
     sget-object v0, Lm8/c;->d:Ljava/util/HashSet;
 
-    iget-object v2, p1, Lq8/d;->l:Lu8/e;
+    iget-object v2, p1, Lq8/d;->m:Lu8/e;
 
     invoke-virtual {v0, v2}, Ljava/util/HashSet;->contains(Ljava/lang/Object;)Z
 
@@ -256,7 +256,7 @@
 
     .line 4
     :cond_2
-    iget-object v0, p1, Lq8/d;->N:Ljava/lang/Long;
+    iget-object v0, p1, Lq8/d;->O:Ljava/lang/Long;
 
     if-eqz v0, :cond_3
 
@@ -266,7 +266,7 @@
     move-result-wide v2
 
     .line 6
-    iget-object p0, p1, Lq8/d;->N:Ljava/lang/Long;
+    iget-object p0, p1, Lq8/d;->O:Ljava/lang/Long;
 
     invoke-virtual {p0}, Ljava/lang/Long;->longValue()J
 
@@ -285,10 +285,6 @@
 .method public static d(Lu8/e;)Z
     .locals 1
 
-    sget-object v0, Lu8/e;->g:Lu8/e;
-
-    if-eq p0, v0, :cond_1
-
     sget-object v0, Lu8/e;->h:Lu8/e;
 
     if-eq p0, v0, :cond_1
@@ -301,11 +297,15 @@
 
     if-eq p0, v0, :cond_1
 
-    sget-object v0, Lu8/e;->m:Lu8/e;
+    sget-object v0, Lu8/e;->k:Lu8/e;
 
     if-eq p0, v0, :cond_1
 
     sget-object v0, Lu8/e;->n:Lu8/e;
+
+    if-eq p0, v0, :cond_1
+
+    sget-object v0, Lu8/e;->o:Lu8/e;
 
     if-ne p0, v0, :cond_0
 
@@ -328,7 +328,7 @@
     .locals 6
 
     .line 1
-    iget-boolean v0, p1, Lq8/d;->O:Z
+    iget-boolean v0, p1, Lq8/d;->P:Z
 
     const/4 v1, 0x0
 
@@ -338,9 +338,9 @@
 
     .line 2
     :cond_0
-    iget-object v0, p1, Lq8/d;->l:Lu8/e;
+    iget-object v0, p1, Lq8/d;->m:Lu8/e;
 
-    sget-object v2, Lu8/e;->s:Lu8/e;
+    sget-object v2, Lu8/e;->t:Lu8/e;
 
     const/4 v3, 0x1
 
@@ -362,7 +362,7 @@
 
     .line 4
     :cond_2
-    iget-object v0, p1, Lq8/d;->M:Ljava/lang/Long;
+    iget-object v0, p1, Lq8/d;->N:Ljava/lang/Long;
 
     if-eqz v0, :cond_3
 
@@ -372,7 +372,7 @@
     move-result-wide v4
 
     .line 6
-    iget-object p0, p1, Lq8/d;->M:Ljava/lang/Long;
+    iget-object p0, p1, Lq8/d;->N:Ljava/lang/Long;
 
     invoke-virtual {p0}, Ljava/lang/Long;->longValue()J
 
@@ -400,7 +400,7 @@
     .end annotation
 
     .line 1
-    invoke-static {p0}, Lbc/a;->d(Ljava/util/List;)Z
+    invoke-static {p0}, Lt5/a;->g(Ljava/util/List;)Z
 
     move-result v0
 
@@ -436,13 +436,13 @@
 
     if-nez v2, :cond_2
 
-    iget-object v2, v0, Lq8/d;->l:Lu8/e;
+    iget-object v2, v0, Lq8/d;->m:Lu8/e;
 
-    sget-object v3, Lu8/e;->k:Lu8/e;
+    sget-object v3, Lu8/e;->l:Lu8/e;
 
     if-ne v2, v3, :cond_1
 
-    iget-boolean v0, v0, Lq8/d;->O:Z
+    iget-boolean v0, v0, Lq8/d;->P:Z
 
     if-eqz v0, :cond_1
 
@@ -509,7 +509,7 @@
         value = {
             "(",
             "Ljava/util/List<",
-            "Lo8/y;",
+            "Lo8/z;",
             ">;)V"
         }
     .end annotation

@@ -37,7 +37,7 @@
     check-cast p1, Lcom/google/android/gms/internal/ads/zzvd;
 
     .line 2
-    iget-object p1, p1, Lcom/google/android/gms/internal/ads/zzvd;->f:Lp1/a;
+    iget-object p1, p1, Lcom/google/android/gms/internal/ads/zzvd;->g:Lp1/a;
 
     if-eqz p1, :cond_0
 

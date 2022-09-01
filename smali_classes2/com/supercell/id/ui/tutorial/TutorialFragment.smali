@@ -16,7 +16,7 @@
 
 
 # instance fields
-.field public h0:Ljava/util/HashMap;
+.field public i0:Ljava/util/HashMap;
 
 
 # direct methods
@@ -33,7 +33,7 @@
 .method public final N0()V
     .locals 1
 
-    iget-object v0, p0, Lcom/supercell/id/ui/tutorial/TutorialFragment;->h0:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/supercell/id/ui/tutorial/TutorialFragment;->i0:Ljava/util/HashMap;
 
     if-eqz v0, :cond_0
 
@@ -48,7 +48,7 @@
 
     const-string p3, "inflater"
 
-    invoke-static {p1, p3}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p3}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     sget p3, Lcom/supercell/id/R$layout;->fragment_tutorial:I
 
@@ -66,7 +66,7 @@
 
     invoke-super {p0}, Lcom/supercell/id/ui/BaseFragment;->a0()V
 
-    iget-object v0, p0, Lcom/supercell/id/ui/tutorial/TutorialFragment;->h0:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/supercell/id/ui/tutorial/TutorialFragment;->i0:Ljava/util/HashMap;
 
     if-eqz v0, :cond_0
 
@@ -79,7 +79,7 @@
 .method public final f1(I)Landroid/view/View;
     .locals 2
 
-    iget-object v0, p0, Lcom/supercell/id/ui/tutorial/TutorialFragment;->h0:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/supercell/id/ui/tutorial/TutorialFragment;->i0:Ljava/util/HashMap;
 
     if-nez v0, :cond_0
 
@@ -87,10 +87,10 @@
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    iput-object v0, p0, Lcom/supercell/id/ui/tutorial/TutorialFragment;->h0:Ljava/util/HashMap;
+    iput-object v0, p0, Lcom/supercell/id/ui/tutorial/TutorialFragment;->i0:Ljava/util/HashMap;
 
     :cond_0
-    iget-object v0, p0, Lcom/supercell/id/ui/tutorial/TutorialFragment;->h0:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/supercell/id/ui/tutorial/TutorialFragment;->i0:Ljava/util/HashMap;
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -105,7 +105,7 @@
     if-nez v0, :cond_2
 
     .line 1
-    iget-object v0, p0, Landroidx/fragment/app/Fragment;->M:Landroid/view/View;
+    iget-object v0, p0, Landroidx/fragment/app/Fragment;->N:Landroid/view/View;
 
     if-nez v0, :cond_1
 
@@ -119,7 +119,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/supercell/id/ui/tutorial/TutorialFragment;->h0:Ljava/util/HashMap;
+    iget-object v1, p0, Lcom/supercell/id/ui/tutorial/TutorialFragment;->i0:Ljava/util/HashMap;
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -136,7 +136,7 @@
 
     const-string v0, "view"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     invoke-super {p0, p1, p2}, Lcom/supercell/id/ui/BaseFragment;->k0(Landroid/view/View;Landroid/os/Bundle;)V
@@ -153,7 +153,7 @@
     if-eqz p1, :cond_0
 
     .line 3
-    iget-boolean p1, p1, Lcom/supercell/id/ui/tutorial/TutorialFragment$BackStackEntry;->h:Z
+    iget-boolean p1, p1, Lcom/supercell/id/ui/tutorial/TutorialFragment$BackStackEntry;->i:Z
 
     goto :goto_0
 
@@ -233,7 +233,7 @@
 
     const-string v0, "childFragmentManager"
 
-    invoke-static {p2, v0}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-direct {p1, p2}, Lcom/supercell/id/ui/tutorial/TutorialFragment$d;-><init>(Landroidx/fragment/app/FragmentManager;)V
 
@@ -248,7 +248,7 @@
 
     const-string v2, "pager"
 
-    invoke-static {v1, v2}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v1, p1}, Landroidx/viewpager/widget/RtlViewPager;->setAdapter(Ly0/b;)V
 
@@ -328,7 +328,7 @@
 
     move-result-object v1
 
-    invoke-static {v1, v0}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, v0}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-direct {p2, v1}, Lcom/supercell/id/ui/tutorial/TutorialFragment$c;-><init>(Landroidx/fragment/app/FragmentManager;)V
 

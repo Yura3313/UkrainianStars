@@ -189,7 +189,7 @@
     .line 1
     iget-object v0, p0, Landroidx/core/app/ComponentActivity;->mLifecycleRegistry:Landroidx/lifecycle/k;
 
-    sget-object v1, Landroidx/lifecycle/f$c;->h:Landroidx/lifecycle/f$c;
+    sget-object v1, Landroidx/lifecycle/f$c;->i:Landroidx/lifecycle/f$c;
 
     const-string v2, "markState"
 

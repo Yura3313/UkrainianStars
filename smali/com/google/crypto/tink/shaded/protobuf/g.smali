@@ -806,7 +806,7 @@
 
     .line 6
     :cond_3
-    sget p1, Lcom/google/crypto/tink/shaded/protobuf/InvalidProtocolBufferException;->f:I
+    sget p1, Lcom/google/crypto/tink/shaded/protobuf/InvalidProtocolBufferException;->g:I
 
     .line 7
     new-instance p1, Lcom/google/crypto/tink/shaded/protobuf/InvalidProtocolBufferException$InvalidWireTypeException;
@@ -1008,7 +1008,7 @@
 
     .line 6
     :cond_3
-    sget p1, Lcom/google/crypto/tink/shaded/protobuf/InvalidProtocolBufferException;->f:I
+    sget p1, Lcom/google/crypto/tink/shaded/protobuf/InvalidProtocolBufferException;->g:I
 
     .line 7
     new-instance p1, Lcom/google/crypto/tink/shaded/protobuf/InvalidProtocolBufferException$InvalidWireTypeException;

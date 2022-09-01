@@ -2,38 +2,25 @@
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
-# interfaces
-.implements Lk3/iv0;
 
+# instance fields
+.field public final a:Lk3/ny0;
 
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ljava/lang/Object;",
-        "Lk3/iv0<",
-        "Lk3/rg0;",
-        ">;"
-    }
-.end annotation
+.field public final b:Lk3/rg0;
 
 
 # direct methods
-.method public constructor <init>()V
+.method public constructor <init>(Lk3/ny0;Lk3/rg0;)V
     .locals 0
 
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    .line 2
+    iput-object p1, p0, Lk3/tg0;->a:Lk3/ny0;
+
+    .line 3
+    iput-object p2, p0, Lk3/tg0;->b:Lk3/rg0;
+
     return-void
-.end method
-
-
-# virtual methods
-.method public final synthetic get()Ljava/lang/Object;
-    .locals 1
-
-    new-instance v0, Lk3/rg0;
-
-    invoke-direct {v0}, Lk3/rg0;-><init>()V
-
-    return-object v0
 .end method

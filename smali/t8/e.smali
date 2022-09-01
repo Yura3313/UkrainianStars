@@ -69,7 +69,7 @@
     iget-object v2, p0, Lt8/e;->d:Ljava/util/HashMap;
 
     .line 3
-    iget-object v3, v1, Li7/c;->f:Ljava/lang/Long;
+    iget-object v3, v1, Li7/c;->g:Ljava/lang/Long;
 
     .line 4
     invoke-virtual {v2, v3}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -109,7 +109,7 @@
     iget-object v2, p0, Lt8/e;->d:Ljava/util/HashMap;
 
     .line 9
-    iget-object v1, v1, Li7/c;->f:Ljava/lang/Long;
+    iget-object v1, v1, Li7/c;->g:Ljava/lang/Long;
 
     .line 10
     invoke-virtual {v2, v1, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
@@ -145,7 +145,7 @@
     const-string v3, "Exception while setting up active conversation controller"
 
     .line 11
-    invoke-static {v1, v3, v0}, Landroidx/savedstate/d;->g(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v1, v3, v0}, Le5/i;->i(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
     .line 12
     iget-object v0, p0, Lt8/e;->b:La8/f;
@@ -190,7 +190,7 @@
     iget-object v0, p0, Lt8/e;->d:Ljava/util/HashMap;
 
     .line 3
-    iget-object v1, p1, Li7/c;->f:Ljava/lang/Long;
+    iget-object v1, p1, Li7/c;->g:Ljava/lang/Long;
 
     .line 4
     invoke-virtual {v0, v1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;

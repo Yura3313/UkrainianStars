@@ -94,7 +94,7 @@
 
     check-cast v1, Ljava/lang/String;
 
-    invoke-static {v1}, Lcom/google/android/play/core/appupdate/g;->b(Ljava/lang/String;)Z
+    invoke-static {v1}, La5/b0;->d(Ljava/lang/String;)Z
 
     move-result v1
 
@@ -108,7 +108,7 @@
     invoke-interface {p2, v2, v1}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 3
-    invoke-static {p1}, Lf8/c;->a(I)Ljava/lang/String;
+    invoke-static {p1}, Lf8/c;->b(I)Ljava/lang/String;
 
     move-result-object p1
 
@@ -120,9 +120,9 @@
     iget-object p1, p0, Lc8/a;->d:Lf8/d;
 
     .line 5
-    check-cast p1, Lk3/v8;
+    check-cast p1, Lk3/w8;
 
-    invoke-virtual {p1}, Lk3/v8;->a()F
+    invoke-virtual {p1}, Lk3/w8;->a()F
 
     move-result p1
 
@@ -179,7 +179,7 @@
     .line 10
     iget-object p1, p0, Lc8/a;->e:Le8/i;
 
-    invoke-static {}, Lmd/g;->f()Ljava/util/Map;
+    invoke-static {}, Lae/v;->f()Ljava/util/Map;
 
     move-result-object v2
 
@@ -257,7 +257,7 @@
     const-string v4, "="
 
     .line 18
-    invoke-static {v3, v4}, Lo/g;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v3, v4}, Lcom/supercell/titan/a;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object v4
 
@@ -282,7 +282,7 @@
     :cond_1
     iget-object p1, p0, Lc8/a;->c:Lg9/a;
 
-    invoke-static {v2}, Lcom/google/android/play/core/appupdate/g;->g(Ljava/lang/Iterable;)Ljava/lang/String;
+    invoke-static {v2}, La5/b0;->i(Ljava/lang/Iterable;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -291,7 +291,7 @@
     const/4 v4, 0x0
 
     .line 21
-    invoke-virtual {p1, v2, v3, v4}, Lg9/a;->a(Ljava/lang/String;Ljava/lang/String;I)Ljava/lang/String;
+    invoke-virtual {p1, v2, v3, v4}, Lg9/a;->b(Ljava/lang/String;Ljava/lang/String;I)Ljava/lang/String;
 
     move-result-object p1
 

@@ -14,17 +14,17 @@
 
 
 # static fields
-.field public static final enum g:Lo5/h;
-
 .field public static final enum h:Lo5/h;
 
-.field public static final i:[Lo5/h;
+.field public static final enum i:Lo5/h;
 
-.field public static final synthetic j:[Lo5/h;
+.field public static final j:[Lo5/h;
+
+.field public static final synthetic k:[Lo5/h;
 
 
 # instance fields
-.field public final f:I
+.field public final g:I
 
 
 # direct methods
@@ -34,7 +34,7 @@
     .line 1
     new-instance v6, Lo5/h;
 
-    sget-object v7, Lo5/j;->l:Lo5/j;
+    sget-object v7, Lo5/j;->m:Lo5/j;
 
     const-string v1, "DOUBLE"
 
@@ -53,7 +53,7 @@
     .line 2
     new-instance v14, Lo5/h;
 
-    sget-object v15, Lo5/j;->k:Lo5/j;
+    sget-object v15, Lo5/j;->l:Lo5/j;
 
     const-string v9, "FLOAT"
 
@@ -72,7 +72,7 @@
     .line 3
     new-instance v8, Lo5/h;
 
-    sget-object v9, Lo5/j;->j:Lo5/j;
+    sget-object v9, Lo5/j;->k:Lo5/j;
 
     const-string v1, "INT64"
 
@@ -102,7 +102,7 @@
     .line 5
     new-instance v11, Lo5/h;
 
-    sget-object v12, Lo5/j;->i:Lo5/j;
+    sget-object v12, Lo5/j;->j:Lo5/j;
 
     const-string v17, "INT32"
 
@@ -149,7 +149,7 @@
     .line 8
     new-instance v23, Lo5/h;
 
-    sget-object v24, Lo5/j;->m:Lo5/j;
+    sget-object v24, Lo5/j;->n:Lo5/j;
 
     const-string v18, "BOOL"
 
@@ -168,7 +168,7 @@
     .line 9
     new-instance v17, Lo5/h;
 
-    sget-object v18, Lo5/j;->n:Lo5/j;
+    sget-object v18, Lo5/j;->o:Lo5/j;
 
     const-string v1, "STRING"
 
@@ -185,7 +185,7 @@
     .line 10
     new-instance v19, Lo5/h;
 
-    sget-object v20, Lo5/j;->q:Lo5/j;
+    sget-object v20, Lo5/j;->r:Lo5/j;
 
     const-string v26, "MESSAGE"
 
@@ -204,7 +204,7 @@
     .line 11
     new-instance v21, Lo5/h;
 
-    sget-object v22, Lo5/j;->o:Lo5/j;
+    sget-object v22, Lo5/j;->p:Lo5/j;
 
     const-string v1, "BYTES"
 
@@ -236,7 +236,7 @@
     .line 13
     new-instance v32, Lo5/h;
 
-    sget-object v33, Lo5/j;->p:Lo5/j;
+    sget-object v33, Lo5/j;->q:Lo5/j;
 
     const-string v27, "ENUM"
 
@@ -597,7 +597,7 @@
 
     invoke-direct/range {v0 .. v5}, Lo5/h;-><init>(Ljava/lang/String;IIILo5/j;)V
 
-    sput-object v48, Lo5/h;->g:Lo5/h;
+    sput-object v48, Lo5/h;->h:Lo5/h;
 
     .line 37
     new-instance v7, Lo5/h;
@@ -792,7 +792,7 @@
 
     invoke-direct/range {v0 .. v5}, Lo5/h;-><init>(Ljava/lang/String;IIILo5/j;)V
 
-    sput-object v12, Lo5/h;->h:Lo5/h;
+    sput-object v12, Lo5/h;->i:Lo5/h;
 
     .line 50
     new-instance v9, Lo5/h;
@@ -814,7 +814,7 @@
     .line 51
     new-instance v0, Lo5/h;
 
-    sget-object v62, Lo5/j;->h:Lo5/j;
+    sget-object v62, Lo5/j;->i:Lo5/j;
 
     const-string v58, "MAP"
 
@@ -1037,7 +1037,7 @@
     aput-object v0, v1, v3
 
     .line 52
-    sput-object v1, Lo5/h;->j:[Lo5/h;
+    sput-object v1, Lo5/h;->k:[Lo5/h;
 
     .line 53
     invoke-static {}, Lo5/h;->values()[Lo5/h;
@@ -1049,7 +1049,7 @@
 
     new-array v1, v1, [Lo5/h;
 
-    sput-object v1, Lo5/h;->i:[Lo5/h;
+    sput-object v1, Lo5/h;->j:[Lo5/h;
 
     .line 55
     array-length v1, v0
@@ -1060,9 +1060,9 @@
     aget-object v3, v0, v2
 
     .line 56
-    sget-object v4, Lo5/h;->i:[Lo5/h;
+    sget-object v4, Lo5/h;->j:[Lo5/h;
 
-    iget v5, v3, Lo5/h;->f:I
+    iget v5, v3, Lo5/h;->g:I
 
     aput-object v3, v4, v5
 
@@ -1089,7 +1089,7 @@
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 2
-    iput p3, p0, Lo5/h;->f:I
+    iput p3, p0, Lo5/h;->g:I
 
     if-eqz p4, :cond_3
 
@@ -1148,7 +1148,7 @@
 .method public static values()[Lo5/h;
     .locals 1
 
-    sget-object v0, Lo5/h;->j:[Lo5/h;
+    sget-object v0, Lo5/h;->k:[Lo5/h;
 
     invoke-virtual {v0}, [Lo5/h;->clone()Ljava/lang/Object;
 

@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field public final f:Ljava/net/HttpURLConnection;
+.field public final g:Ljava/net/HttpURLConnection;
 
 
 # direct methods
@@ -32,7 +32,7 @@
     invoke-direct {p0, v0}, Ljava/io/FilterInputStream;-><init>(Ljava/io/InputStream;)V
 
     .line 4
-    iput-object p1, p0, Lk3/ph;->f:Ljava/net/HttpURLConnection;
+    iput-object p1, p0, Lk3/ph;->g:Ljava/net/HttpURLConnection;
 
     return-void
 .end method
@@ -51,7 +51,7 @@
     invoke-super {p0}, Ljava/io/FilterInputStream;->close()V
 
     .line 2
-    iget-object v0, p0, Lk3/ph;->f:Ljava/net/HttpURLConnection;
+    iget-object v0, p0, Lk3/ph;->g:Ljava/net/HttpURLConnection;
 
     invoke-virtual {v0}, Ljava/net/HttpURLConnection;->disconnect()V
 

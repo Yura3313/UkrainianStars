@@ -1,65 +1,53 @@
 .class public final Lk3/d4;
-.super Lk3/zi;
+.super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
+
+# interfaces
+.implements Lk3/sd;
+.implements Lw5/b;
 
 
 # instance fields
-.field public final synthetic b:Lk3/y3;
+.field public g:Ljava/lang/Object;
 
 
 # direct methods
-.method public constructor <init>(Lk3/y3;)V
+.method public synthetic constructor <init>(Ljava/lang/Object;)V
     .locals 0
 
-    iput-object p1, p0, Lk3/d4;->b:Lk3/y3;
+    iput-object p1, p0, Lk3/d4;->g:Ljava/lang/Object;
 
-    invoke-direct {p0}, Lk3/zi;-><init>()V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final p()V
-    .locals 1
+.method public a(Landroidx/fragment/app/p;)Ljava/lang/Object;
+    .locals 0
+
+    iget-object p1, p0, Lk3/d4;->g:Ljava/lang/Object;
+
+    return-object p1
+.end method
+
+.method public run()V
+    .locals 3
 
     .line 1
-    iget-object v0, p0, Lk3/d4;->b:Lk3/y3;
+    iget-object v0, p0, Lk3/d4;->g:Ljava/lang/Object;
+
+    check-cast v0, Lk3/qd;
 
     .line 2
-    iget-object v0, v0, Lk3/y3;->i:Lk3/u4;
+    new-instance v1, Lcom/google/android/gms/internal/ads/zzalj;
 
-    if-eqz v0, :cond_0
+    const-string v2, "Cannot get Javascript Engine"
 
-    .line 3
-    invoke-virtual {v0}, Lk3/u4;->b()V
+    invoke-direct {v1, v2}, Lcom/google/android/gms/internal/ads/zzalj;-><init>(Ljava/lang/String;)V
 
-    :cond_0
-    return-void
-.end method
-
-.method public final q(Lk3/yi;)V
-    .locals 1
-
-    iget-object v0, p0, Lk3/d4;->b:Lk3/y3;
-
-    iget-object p1, p1, Lk3/yi;->b:Landroid/net/Uri;
-
-    invoke-virtual {v0, p1}, Lk3/h4;->m(Landroid/net/Uri;)Z
+    invoke-virtual {v0, v1}, Lk3/qd;->b(Ljava/lang/Throwable;)Z
 
     return-void
-.end method
-
-.method public final r(Lk3/yi;)Z
-    .locals 1
-
-    iget-object v0, p0, Lk3/d4;->b:Lk3/y3;
-
-    iget-object p1, p1, Lk3/yi;->b:Landroid/net/Uri;
-
-    invoke-virtual {v0, p1}, Lk3/h4;->m(Landroid/net/Uri;)Z
-
-    move-result p1
-
-    return p1
 .end method

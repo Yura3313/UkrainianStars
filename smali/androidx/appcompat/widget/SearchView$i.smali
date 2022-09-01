@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field public final synthetic f:Landroidx/appcompat/widget/SearchView;
+.field public final synthetic g:Landroidx/appcompat/widget/SearchView;
 
 
 # direct methods
 .method public constructor <init>(Landroidx/appcompat/widget/SearchView;)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/appcompat/widget/SearchView$i;->f:Landroidx/appcompat/widget/SearchView;
+    iput-object p1, p0, Landroidx/appcompat/widget/SearchView$i;->g:Landroidx/appcompat/widget/SearchView;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -46,7 +46,7 @@
         }
     .end annotation
 
-    iget-object p1, p0, Landroidx/appcompat/widget/SearchView$i;->f:Landroidx/appcompat/widget/SearchView;
+    iget-object p1, p0, Landroidx/appcompat/widget/SearchView$i;->g:Landroidx/appcompat/widget/SearchView;
 
     invoke-virtual {p1, p3}, Landroidx/appcompat/widget/SearchView;->p(I)Z
 

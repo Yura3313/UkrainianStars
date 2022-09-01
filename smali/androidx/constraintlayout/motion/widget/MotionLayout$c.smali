@@ -252,7 +252,7 @@
 
 
 # virtual methods
-.method public final a(Landroid/graphics/Canvas;IILo/q;)V
+.method public final a(Landroid/graphics/Canvas;IILo/p;)V
     .locals 21
 
     move-object/from16 v6, p0
@@ -342,7 +342,7 @@
     invoke-virtual {v7, v0, v1}, Landroid/graphics/Canvas;->drawLines([FLandroid/graphics/Paint;)V
 
     .line 9
-    iget-object v0, v9, Lo/q;->a:Landroid/view/View;
+    iget-object v0, v9, Lo/p;->a:Landroid/view/View;
 
     if-eqz v0, :cond_7
 
@@ -352,7 +352,7 @@
     move-result v0
 
     .line 11
-    iget-object v1, v9, Lo/q;->a:Landroid/view/View;
+    iget-object v1, v9, Lo/p;->a:Landroid/view/View;
 
     invoke-virtual {v1}, Landroid/view/View;->getHeight()I
 
@@ -448,13 +448,13 @@
     add-int/lit8 v0, v5, -0x1
 
     .line 21
-    iget-object v1, v9, Lo/q;->s:Ljava/util/ArrayList;
+    iget-object v1, v9, Lo/p;->s:Ljava/util/ArrayList;
 
     invoke-virtual {v1, v0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
     move-result-object v1
 
-    check-cast v1, Lo/s;
+    check-cast v1, Lo/r;
 
     const/16 v17, 0x0
 

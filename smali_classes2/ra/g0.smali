@@ -1,6 +1,6 @@
 .class public final Lra/g0;
 .super Lra/u;
-.source "SystemDividerMessageDataBinder.java"
+.source "SystemPublishIdMessageDataBinder.java"
 
 
 # annotations
@@ -14,7 +14,7 @@
     value = {
         "Lra/u<",
         "Lra/g0$a;",
-        "Lo8/h0;",
+        "Lo8/l0;",
         ">;"
     }
 .end annotation
@@ -31,54 +31,96 @@
 
 
 # virtual methods
-.method public final a(Landroidx/recyclerview/widget/RecyclerView$z;Lo8/y;)V
-    .locals 1
+.method public final a(Landroidx/recyclerview/widget/RecyclerView$z;Lo8/z;)V
+    .locals 7
 
     .line 1
     check-cast p1, Lra/g0$a;
 
-    check-cast p2, Lo8/h0;
+    check-cast p2, Lo8/l0;
 
     .line 2
-    iget-boolean p2, p2, Lo8/h0;->z:Z
+    iget-object v0, p1, Landroidx/recyclerview/widget/RecyclerView$z;->g:Landroid/view/View;
 
-    if-eqz p2, :cond_0
+    invoke-virtual {v0}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
+
+    move-result-object v0
+
+    check-cast v0, Landroidx/recyclerview/widget/RecyclerView$LayoutParams;
 
     .line 3
-    iget-object p2, p1, Lra/g0$a;->y:Landroid/widget/TextView;
+    iget-boolean v1, p2, Lo8/l0;->A:Z
 
-    const/4 v0, 0x0
+    const/4 v2, 0x0
+
+    if-eqz v1, :cond_0
 
     .line 4
-    invoke-virtual {p2, v0}, Landroid/view/View;->setVisibility(I)V
+    iget-object v1, p0, Lra/u;->a:Landroid/content/Context;
 
-    const-string p2, ""
+    const/high16 v3, 0x41900000    # 18.0f
+
+    invoke-static {v1, v3}, Lcom/helpshift/util/e0;->a(Landroid/content/Context;F)F
+
+    move-result v1
+
+    float-to-int v1, v1
+
+    iput v1, v0, Landroid/view/ViewGroup$MarginLayoutParams;->topMargin:I
 
     goto :goto_0
 
     .line 5
     :cond_0
-    iget-object p2, p1, Lra/g0$a;->y:Landroid/widget/TextView;
-
-    const/16 v0, 0x8
+    iput v2, v0, Landroid/view/ViewGroup$MarginLayoutParams;->topMargin:I
 
     .line 6
-    invoke-virtual {p2, v0}, Landroid/view/View;->setVisibility(I)V
+    :goto_0
+    iget-object v1, p1, Landroidx/recyclerview/widget/RecyclerView$z;->g:Landroid/view/View;
+
+    invoke-virtual {v1, v0}, Landroid/view/View;->setLayoutParams(Landroid/view/ViewGroup$LayoutParams;)V
 
     .line 7
-    iget-object p2, p0, Lra/u;->a:Landroid/content/Context;
+    iget-object v0, p1, Lra/g0$a;->z:Landroid/widget/TextView;
 
-    sget v0, Lcom/helpshift/R$string;->hs__conversations_divider_voice_over:I
+    .line 8
+    iget-object v1, p0, Lra/u;->a:Landroid/content/Context;
 
-    invoke-virtual {p2, v0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+    sget v3, Lcom/helpshift/R$string;->hs__conversation_issue_id_header:I
+
+    const/4 v4, 0x1
+
+    new-array v5, v4, [Ljava/lang/Object;
+
+    iget-object v6, p2, Lo8/z;->k:Ljava/lang/String;
+
+    aput-object v6, v5, v2
+
+    invoke-virtual {v1, v3, v5}, Landroid/content/Context;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
+
+    .line 9
+    iget-object v0, p0, Lra/u;->a:Landroid/content/Context;
+
+    sget v1, Lcom/helpshift/R$string;->hs__conversation_publish_id_voice_over:I
+
+    new-array v3, v4, [Ljava/lang/Object;
+
+    iget-object p2, p2, Lo8/z;->k:Ljava/lang/String;
+
+    aput-object p2, v3, v2
+
+    invoke-virtual {v0, v1, v3}, Landroid/content/Context;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object p2
 
-    .line 8
-    :goto_0
-    iget-object p1, p1, Lra/g0$a;->z:Landroid/view/View;
+    .line 10
+    iget-object p1, p1, Lra/g0$a;->z:Landroid/widget/TextView;
 
-    .line 9
+    .line 11
     invoke-virtual {p1, p2}, Landroid/view/View;->setContentDescription(Ljava/lang/CharSequence;)V
 
     return-void
@@ -96,7 +138,7 @@
 
     move-result-object v0
 
-    sget v1, Lcom/helpshift/R$layout;->hs__msg_system_divider_layout:I
+    sget v1, Lcom/helpshift/R$layout;->hs__msg_publish_id_layout:I
 
     const/4 v2, 0x0
 
@@ -107,7 +149,12 @@
     .line 2
     new-instance v0, Lra/g0$a;
 
-    invoke-direct {v0, p1}, Lra/g0$a;-><init>(Landroid/view/View;)V
+    invoke-direct {v0, p0, p1}, Lra/g0$a;-><init>(Lra/g0;Landroid/view/View;)V
+
+    .line 3
+    iget-object p1, v0, Lra/g0$a;->z:Landroid/widget/TextView;
+
+    invoke-virtual {p1, v0}, Landroid/view/View;->setOnCreateContextMenuListener(Landroid/view/View$OnCreateContextMenuListener;)V
 
     return-object v0
 .end method

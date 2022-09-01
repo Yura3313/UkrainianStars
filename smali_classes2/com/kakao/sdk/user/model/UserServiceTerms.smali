@@ -144,7 +144,7 @@
 
     iget-object p1, p1, Lcom/kakao/sdk/user/model/UserServiceTerms;->allowedServiceTerms:Ljava/util/List;
 
-    invoke-static {v1, p1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, p1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 

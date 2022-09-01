@@ -24,7 +24,7 @@
 
 
 # static fields
-.field public static final f:Lcom/supercell/id/ui/BackStack$Entry$a;
+.field public static final g:Lcom/supercell/id/ui/BackStack$Entry$a;
 
 
 # direct methods
@@ -35,7 +35,7 @@
 
     invoke-direct {v0}, Lcom/supercell/id/ui/BackStack$Entry$a;-><init>()V
 
-    sput-object v0, Lcom/supercell/id/ui/BackStack$Entry;->f:Lcom/supercell/id/ui/BackStack$Entry$a;
+    sput-object v0, Lcom/supercell/id/ui/BackStack$Entry;->g:Lcom/supercell/id/ui/BackStack$Entry$a;
 
     return-void
 .end method
@@ -55,7 +55,7 @@
 
     const-string v0, "mainActivity"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {p0, p1}, Lcom/supercell/id/ui/BackStack$Entry;->x(Lcom/supercell/id/ui/MainActivity;)Ljava/lang/Class;
 
@@ -76,9 +76,9 @@
 
     const-string v0, "mainActivity"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    sget-object p1, Lcom/supercell/id/ui/BackStack$Entry;->f:Lcom/supercell/id/ui/BackStack$Entry$a;
+    sget-object p1, Lcom/supercell/id/ui/BackStack$Entry;->g:Lcom/supercell/id/ui/BackStack$Entry$a;
 
     invoke-virtual {p1, p2, p3, p4}, Lcom/supercell/id/ui/BackStack$Entry$a;->a(III)I
 
@@ -112,16 +112,16 @@
             ")",
             "Ljava/lang/Class<",
             "+",
-            "Lwc/a1;",
+            "Lwc/b1;",
             ">;"
         }
     .end annotation
 
     const-string v0, "mainActivity"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    const-class p1, Lwc/c1;
+    const-class p1, Lwc/d1;
 
     return-object p1
 .end method
@@ -131,7 +131,7 @@
 
     const-string v0, "mainActivity"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     invoke-virtual {p0}, Lcom/supercell/id/ui/BackStack$Entry;->a()Ljava/lang/Class;
@@ -181,7 +181,7 @@
 
     const-string v0, "mainActivity"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     invoke-virtual {p0, p1}, Lcom/supercell/id/ui/BackStack$Entry;->x(Lcom/supercell/id/ui/MainActivity;)Ljava/lang/Class;
@@ -228,12 +228,12 @@
     return-object v0
 .end method
 
-.method public final h0(Lcom/supercell/id/ui/MainActivity;)Lwc/a1;
+.method public final h0(Lcom/supercell/id/ui/MainActivity;)Lwc/b1;
     .locals 1
 
     const-string v0, "mainActivity"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     invoke-virtual {p0, p1}, Lcom/supercell/id/ui/BackStack$Entry;->Q(Lcom/supercell/id/ui/MainActivity;)Ljava/lang/Class;
@@ -252,7 +252,7 @@
     if-eqz p1, :cond_0
 
     .line 3
-    check-cast p1, Lwc/a1;
+    check-cast p1, Lwc/b1;
 
     return-object p1
 
@@ -279,7 +279,7 @@
 
     const-string p2, "mainActivity"
 
-    invoke-static {p1, p2}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p2}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/4 p1, 0x0
 
@@ -294,7 +294,7 @@
 
     const-string p2, "mainActivity"
 
-    invoke-static {p1, p2}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p2}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/4 p1, 0x0
 
@@ -306,7 +306,7 @@
 
     const-string v0, "mainActivity"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/4 p1, 0x0
 
@@ -318,7 +318,7 @@
 
     const-string v0, "mainActivity"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/4 p1, 0x1
 
@@ -344,7 +344,7 @@
 
     const-string v0, "mainActivity"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/4 p1, 0x0
 

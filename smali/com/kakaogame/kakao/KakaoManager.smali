@@ -26,10 +26,10 @@
     return-void
 .end method
 
-.method public static synthetic a(Lcom/kakaogame/util/MutexLock;Lcom/kakao/sdk/user/model/UserServiceTerms;Ljava/lang/Throwable;)Lie/h;
+.method public static synthetic a(Lcom/kakaogame/util/MutexLock;Lcom/kakao/sdk/user/model/UserServiceTerms;Ljava/lang/Throwable;)Lie/i;
     .locals 0
 
-    invoke-static {p0, p1, p2}, Lcom/kakaogame/kakao/KakaoManager;->lambda$getKakaoSyncAgreement$0(Lcom/kakaogame/util/MutexLock;Lcom/kakao/sdk/user/model/UserServiceTerms;Ljava/lang/Throwable;)Lie/h;
+    invoke-static {p0, p1, p2}, Lcom/kakaogame/kakao/KakaoManager;->lambda$getKakaoSyncAgreement$0(Lcom/kakaogame/util/MutexLock;Lcom/kakao/sdk/user/model/UserServiceTerms;Ljava/lang/Throwable;)Lie/i;
 
     move-result-object p0
 
@@ -363,7 +363,7 @@
     const/16 v2, 0xfa1
 
     .line 6
-    invoke-static {v1, v0, v1, v2}, Lcom/kakaogame/c;->a(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
+    invoke-static {v1, v0, v1, v2}, Landroid/support/v4/media/f;->a(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
 
     move-result-object v0
 
@@ -473,7 +473,7 @@
     return v0
 .end method
 
-.method private static synthetic lambda$getKakaoSyncAgreement$0(Lcom/kakaogame/util/MutexLock;Lcom/kakao/sdk/user/model/UserServiceTerms;Ljava/lang/Throwable;)Lie/h;
+.method private static synthetic lambda$getKakaoSyncAgreement$0(Lcom/kakaogame/util/MutexLock;Lcom/kakao/sdk/user/model/UserServiceTerms;Ljava/lang/Throwable;)Lie/i;
     .locals 0
 
     if-eqz p2, :cond_0
@@ -522,7 +522,7 @@
 
     .line 8
     :goto_0
-    sget-object p0, Lie/h;->a:Lie/h;
+    sget-object p0, Lie/i;->a:Lie/i;
 
     return-object p0
 .end method
@@ -730,7 +730,7 @@
     const/16 v2, 0xfa1
 
     .line 6
-    invoke-static {v1, v0, v1, v2}, Lcom/kakaogame/c;->a(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
+    invoke-static {v1, v0, v1, v2}, Landroid/support/v4/media/f;->a(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
 
     move-result-object v0
 
@@ -1319,7 +1319,7 @@
     const/16 p1, 0xfa1
 
     .line 18
-    invoke-static {p0, v0, p0, p1}, Lcom/kakaogame/c;->a(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
+    invoke-static {p0, v0, p0, p1}, Landroid/support/v4/media/f;->a(Ljava/lang/Exception;Ljava/lang/String;Ljava/lang/Exception;I)Lcom/kakaogame/KGResult;
 
     move-result-object p0
 

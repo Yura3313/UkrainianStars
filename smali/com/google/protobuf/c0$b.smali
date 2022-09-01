@@ -31,7 +31,7 @@
 
 
 # instance fields
-.field public f:Ljava/util/Map$Entry;
+.field public g:Ljava/util/Map$Entry;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Map$Entry<",
@@ -51,7 +51,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lcom/google/protobuf/c0$b;->f:Ljava/util/Map$Entry;
+    iput-object p1, p0, Lcom/google/protobuf/c0$b;->g:Ljava/util/Map$Entry;
 
     return-void
 .end method
@@ -66,7 +66,7 @@
         }
     .end annotation
 
-    iget-object v0, p0, Lcom/google/protobuf/c0$b;->f:Ljava/util/Map$Entry;
+    iget-object v0, p0, Lcom/google/protobuf/c0$b;->g:Ljava/util/Map$Entry;
 
     invoke-interface {v0}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
@@ -79,7 +79,7 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/google/protobuf/c0$b;->f:Ljava/util/Map$Entry;
+    iget-object v0, p0, Lcom/google/protobuf/c0$b;->g:Ljava/util/Map$Entry;
 
     invoke-interface {v0}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
@@ -111,7 +111,7 @@
     if-eqz v0, :cond_0
 
     .line 2
-    iget-object v0, p0, Lcom/google/protobuf/c0$b;->f:Ljava/util/Map$Entry;
+    iget-object v0, p0, Lcom/google/protobuf/c0$b;->g:Ljava/util/Map$Entry;
 
     invoke-interface {v0}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 

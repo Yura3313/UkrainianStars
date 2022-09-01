@@ -1,5 +1,5 @@
 .class public final Lae/u$d;
-.super Lse/h;
+.super Lse/i;
 .source "IdServices.kt"
 
 # interfaces
@@ -18,36 +18,36 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/l<",
         "Ljava/util/Map<",
         "Lcom/supercell/id/model/IdSocialAccount;",
         "+",
         "Lcom/supercell/id/model/IdPresenceStatus;",
         ">;",
-        "Lie/h;",
+        "Lie/i;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic f:Lcom/supercell/id/IdConfiguration;
+.field public final synthetic g:Lcom/supercell/id/IdConfiguration;
 
-.field public final synthetic g:Lse/q;
+.field public final synthetic h:Lse/r;
 
 
 # direct methods
-.method public constructor <init>(Lcom/supercell/id/IdConfiguration;Lse/q;)V
+.method public constructor <init>(Lcom/supercell/id/IdConfiguration;Lse/r;)V
     .locals 0
 
-    iput-object p1, p0, Lae/u$d;->f:Lcom/supercell/id/IdConfiguration;
+    iput-object p1, p0, Lae/u$d;->g:Lcom/supercell/id/IdConfiguration;
 
-    iput-object p2, p0, Lae/u$d;->g:Lse/q;
+    iput-object p2, p0, Lae/u$d;->h:Lse/r;
 
     const/4 p1, 0x1
 
-    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -110,14 +110,14 @@
 
     if-nez v6, :cond_3
 
-    invoke-virtual {v5}, Lcom/supercell/id/model/IdSocialAccount;->a()Lvc/e;
+    invoke-virtual {v5}, Lcom/supercell/id/model/IdSocialAccount;->a()Lvc/d;
 
     move-result-object v5
 
     if-eqz v5, :cond_1
 
     .line 6
-    iget-object v5, v5, Lvc/e;->b:Lvc/d;
+    iget-object v5, v5, Lvc/d;->b:Lvc/c;
 
     goto :goto_1
 
@@ -126,13 +126,13 @@
 
     .line 7
     :goto_1
-    iget-object v6, p0, Lae/u$d;->f:Lcom/supercell/id/IdConfiguration;
+    iget-object v6, p0, Lae/u$d;->g:Lcom/supercell/id/IdConfiguration;
 
-    invoke-virtual {v6}, Lcom/supercell/id/IdConfiguration;->getApp()Lvc/d;
+    invoke-virtual {v6}, Lcom/supercell/id/IdConfiguration;->getApp()Lvc/c;
 
     move-result-object v6
 
-    invoke-static {v5, v6}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v5, v6}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v5
 
@@ -170,14 +170,14 @@
 
     .line 9
     :cond_5
-    iget-object p1, p0, Lae/u$d;->g:Lse/q;
+    iget-object p1, p0, Lae/u$d;->h:Lse/r;
 
-    iget-object v4, p1, Lse/q;->f:Ljava/lang/Object;
+    iget-object v4, p1, Lse/r;->g:Ljava/lang/Object;
 
     check-cast v4, Ljava/util/Map;
 
     .line 10
-    iput-object v3, p1, Lse/q;->f:Ljava/lang/Object;
+    iput-object v3, p1, Lse/r;->g:Ljava/lang/Object;
 
     if-nez v4, :cond_8
 
@@ -189,7 +189,7 @@
     goto :goto_4
 
     :cond_6
-    sget-object v3, Lje/m;->f:Lje/m;
+    sget-object v3, Lje/m;->g:Lje/m;
 
     .line 12
     :goto_4
@@ -239,7 +239,7 @@
     check-cast v2, Lcom/supercell/id/model/IdPresenceStatus;
 
     .line 15
-    iget-object v2, v2, Lcom/supercell/id/model/IdPresenceStatus;->f:Ljava/lang/String;
+    iget-object v2, v2, Lcom/supercell/id/model/IdPresenceStatus;->g:Ljava/lang/String;
 
     .line 16
     invoke-direct {v3, v4, v2}, Lcom/supercell/id/IdPresence;-><init>(Lcom/supercell/id/model/IdSocialAccount;Ljava/lang/String;)V
@@ -301,7 +301,7 @@
 
     check-cast v8, Lcom/supercell/id/model/IdPresenceStatus;
 
-    invoke-static {v7, v8}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v7, v8}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v7
 
@@ -324,7 +324,7 @@
 
     .line 21
     :cond_a
-    sget-object p1, Lje/m;->f:Lje/m;
+    sget-object p1, Lje/m;->g:Lje/m;
 
     .line 22
     :cond_b
@@ -447,7 +447,7 @@
     check-cast v3, Lcom/supercell/id/model/IdPresenceStatus;
 
     .line 29
-    iget-object v3, v3, Lcom/supercell/id/model/IdPresenceStatus;->f:Ljava/lang/String;
+    iget-object v3, v3, Lcom/supercell/id/model/IdPresenceStatus;->g:Ljava/lang/String;
 
     .line 30
     invoke-direct {v4, v6, v3}, Lcom/supercell/id/IdPresence;-><init>(Lcom/supercell/id/model/IdSocialAccount;Ljava/lang/String;)V
@@ -505,7 +505,7 @@
 
     .line 34
     :cond_11
-    invoke-static {v1, p1}, Lje/j;->I(Ljava/util/Collection;Ljava/lang/Iterable;)Ljava/util/List;
+    invoke-static {v1, p1}, Lje/j;->D(Ljava/util/Collection;Ljava/lang/Iterable;)Ljava/util/List;
 
     move-result-object p1
 
@@ -526,7 +526,7 @@
     .line 37
     :cond_12
     :goto_c
-    sget-object p1, Lie/h;->a:Lie/h;
+    sget-object p1, Lie/i;->a:Lie/i;
 
     return-object p1
 .end method

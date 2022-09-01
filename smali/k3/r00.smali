@@ -2,39 +2,38 @@
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
+# interfaces
+.implements Lk3/mv0;
 
-# instance fields
-.field public a:Ljava/util/concurrent/ConcurrentHashMap;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/concurrent/ConcurrentHashMap<",
-            "Ljava/lang/String;",
-            "Ljava/lang/String;",
-            ">;"
-        }
-    .end annotation
-.end field
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Lk3/mv0<",
+        "Lk3/u00;",
+        ">;"
+    }
+.end annotation
 
 
 # direct methods
-.method public constructor <init>(Lk3/v00;)V
-    .locals 1
+.method public constructor <init>()V
+    .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 3
-    new-instance v0, Ljava/util/concurrent/ConcurrentHashMap;
-
-    iget-object p1, p1, Lk3/v00;->d:Ljava/util/HashMap;
-
-    invoke-direct {v0, p1}, Ljava/util/concurrent/ConcurrentHashMap;-><init>(Ljava/util/Map;)V
-
-    .line 4
-    iput-object v0, p0, Lk3/r00;->a:Ljava/util/concurrent/ConcurrentHashMap;
-
     return-void
+.end method
+
+
+# virtual methods
+.method public final get()Ljava/lang/Object;
+    .locals 1
+
+    new-instance v0, Lk3/u00;
+
+    invoke-direct {v0}, Lk3/u00;-><init>()V
+
+    return-object v0
 .end method

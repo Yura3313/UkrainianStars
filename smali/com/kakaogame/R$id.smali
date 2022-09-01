@@ -114,297 +114,297 @@
 
 .field public static final icon_group:I = 0x7f0a023a
 
-.field public static final image:I = 0x7f0a0240
+.field public static final image:I = 0x7f0a0241
 
-.field public static final info:I = 0x7f0a024a
+.field public static final info:I = 0x7f0a024b
 
-.field public static final italic:I = 0x7f0a026a
+.field public static final italic:I = 0x7f0a026b
 
-.field public static final kakao_game_coppa_button:I = 0x7f0a026e
+.field public static final kakao_game_coppa_button:I = 0x7f0a026f
 
-.field public static final kakao_game_coppa_datePicker:I = 0x7f0a026f
+.field public static final kakao_game_coppa_datePicker:I = 0x7f0a0270
 
-.field public static final kakao_game_coppa_desc:I = 0x7f0a0270
+.field public static final kakao_game_coppa_desc:I = 0x7f0a0271
 
-.field public static final kakao_game_coppa_title:I = 0x7f0a0271
+.field public static final kakao_game_coppa_title:I = 0x7f0a0272
 
-.field public static final kakao_game_login_bottom_space:I = 0x7f0a0272
+.field public static final kakao_game_login_bottom_space:I = 0x7f0a0273
 
-.field public static final kakao_game_login_close:I = 0x7f0a0273
+.field public static final kakao_game_login_close:I = 0x7f0a0274
 
-.field public static final kakao_game_login_idp_item:I = 0x7f0a0274
+.field public static final kakao_game_login_idp_item:I = 0x7f0a0275
 
-.field public static final kakao_game_login_idp_item_icon:I = 0x7f0a0275
+.field public static final kakao_game_login_idp_item_icon:I = 0x7f0a0276
 
-.field public static final kakao_game_login_idp_item_name:I = 0x7f0a0276
+.field public static final kakao_game_login_idp_item_name:I = 0x7f0a0277
 
-.field public static final kakao_game_login_idp_item_space:I = 0x7f0a0277
+.field public static final kakao_game_login_idp_item_space:I = 0x7f0a0278
 
-.field public static final kakao_game_login_idp_list:I = 0x7f0a0278
+.field public static final kakao_game_login_idp_list:I = 0x7f0a0279
 
-.field public static final kakao_game_login_idp_list1:I = 0x7f0a0279
+.field public static final kakao_game_login_idp_list1:I = 0x7f0a027a
 
-.field public static final kakao_game_login_idp_list2:I = 0x7f0a027a
+.field public static final kakao_game_login_idp_list2:I = 0x7f0a027b
 
-.field public static final kakao_game_login_idp_list_multi:I = 0x7f0a027b
+.field public static final kakao_game_login_idp_list_multi:I = 0x7f0a027c
 
-.field public static final kakao_game_login_img:I = 0x7f0a027c
+.field public static final kakao_game_login_img:I = 0x7f0a027d
 
-.field public static final kakao_game_login_layout:I = 0x7f0a027d
+.field public static final kakao_game_login_layout:I = 0x7f0a027e
 
-.field public static final kakao_game_login_title:I = 0x7f0a027e
+.field public static final kakao_game_login_title:I = 0x7f0a027f
 
-.field public static final kakao_game_sdk_bound:I = 0x7f0a027f
+.field public static final kakao_game_sdk_bound:I = 0x7f0a0280
 
-.field public static final kakao_game_sdk_bound_bottomn_right:I = 0x7f0a0280
+.field public static final kakao_game_sdk_bound_bottomn_right:I = 0x7f0a0281
 
-.field public static final kakao_game_sdk_bound_top_left:I = 0x7f0a0281
+.field public static final kakao_game_sdk_bound_top_left:I = 0x7f0a0282
 
-.field public static final kakao_game_sdk_dialog_topbar_close:I = 0x7f0a0282
+.field public static final kakao_game_sdk_dialog_topbar_close:I = 0x7f0a0283
 
-.field public static final kakao_game_sdk_logout_btn_cancel:I = 0x7f0a0283
+.field public static final kakao_game_sdk_logout_btn_cancel:I = 0x7f0a0284
 
-.field public static final kakao_game_sdk_logout_btn_ok:I = 0x7f0a0284
+.field public static final kakao_game_sdk_logout_btn_ok:I = 0x7f0a0285
 
-.field public static final kakao_game_sdk_logout_desc:I = 0x7f0a0285
+.field public static final kakao_game_sdk_logout_desc:I = 0x7f0a0286
 
-.field public static final kakao_game_sdk_logout_idp:I = 0x7f0a0286
+.field public static final kakao_game_sdk_logout_idp:I = 0x7f0a0287
 
-.field public static final kakao_game_sdk_logout_idp_desc:I = 0x7f0a0287
+.field public static final kakao_game_sdk_logout_idp_desc:I = 0x7f0a0288
 
-.field public static final kakao_game_sdk_logout_idp_icon:I = 0x7f0a0288
+.field public static final kakao_game_sdk_logout_idp_icon:I = 0x7f0a0289
 
-.field public static final kakao_game_sdk_logout_idp_line:I = 0x7f0a0289
+.field public static final kakao_game_sdk_logout_idp_line:I = 0x7f0a028a
 
-.field public static final kakao_game_sdk_logout_title:I = 0x7f0a028a
+.field public static final kakao_game_sdk_logout_title:I = 0x7f0a028b
 
-.field public static final kakao_game_sdk_screenshot_camera:I = 0x7f0a028b
+.field public static final kakao_game_sdk_screenshot_camera:I = 0x7f0a028c
 
-.field public static final kakao_game_sdk_screenshot_crop:I = 0x7f0a028c
+.field public static final kakao_game_sdk_screenshot_crop:I = 0x7f0a028d
 
-.field public static final kakao_game_sdk_screenshot_crop_type:I = 0x7f0a028d
+.field public static final kakao_game_sdk_screenshot_crop_type:I = 0x7f0a028e
 
-.field public static final kakao_game_sdk_screenshot_layout:I = 0x7f0a028e
+.field public static final kakao_game_sdk_screenshot_layout:I = 0x7f0a028f
 
-.field public static final kakao_game_sdk_screenshot_result_image:I = 0x7f0a028f
+.field public static final kakao_game_sdk_screenshot_result_image:I = 0x7f0a0290
 
-.field public static final kakao_game_sdk_screenshot_watermark:I = 0x7f0a0290
+.field public static final kakao_game_sdk_screenshot_watermark:I = 0x7f0a0291
 
-.field public static final kakao_game_sdk_screenshot_watermark_button:I = 0x7f0a0291
+.field public static final kakao_game_sdk_screenshot_watermark_button:I = 0x7f0a0292
 
-.field public static final kakao_game_sdk_screenshot_watermark_crop_image:I = 0x7f0a0292
+.field public static final kakao_game_sdk_screenshot_watermark_crop_image:I = 0x7f0a0293
 
-.field public static final kakao_game_sdk_screenshot_watermark_image:I = 0x7f0a0293
+.field public static final kakao_game_sdk_screenshot_watermark_image:I = 0x7f0a0294
 
-.field public static final left:I = 0x7f0a0299
+.field public static final left:I = 0x7f0a029a
 
-.field public static final line1:I = 0x7f0a029c
+.field public static final line1:I = 0x7f0a029d
 
-.field public static final line3:I = 0x7f0a029d
+.field public static final line3:I = 0x7f0a029e
 
-.field public static final listMode:I = 0x7f0a02a1
+.field public static final listMode:I = 0x7f0a02a2
 
-.field public static final list_item:I = 0x7f0a02a3
+.field public static final list_item:I = 0x7f0a02a4
 
-.field public static final media_actions:I = 0x7f0a02c2
+.field public static final media_actions:I = 0x7f0a02c3
 
-.field public static final message:I = 0x7f0a02c3
+.field public static final message:I = 0x7f0a02c4
 
-.field public static final multiply:I = 0x7f0a02e9
+.field public static final multiply:I = 0x7f0a02ea
 
-.field public static final none:I = 0x7f0a0309
+.field public static final none:I = 0x7f0a030a
 
-.field public static final normal:I = 0x7f0a030a
+.field public static final normal:I = 0x7f0a030b
 
-.field public static final notification_background:I = 0x7f0a030d
+.field public static final notification_background:I = 0x7f0a030e
 
-.field public static final notification_main_column:I = 0x7f0a030e
+.field public static final notification_main_column:I = 0x7f0a030f
 
-.field public static final notification_main_column_container:I = 0x7f0a030f
+.field public static final notification_main_column_container:I = 0x7f0a0310
 
-.field public static final parentPanel:I = 0x7f0a0330
+.field public static final parentPanel:I = 0x7f0a0331
 
-.field public static final progress_circular:I = 0x7f0a0374
+.field public static final progress_circular:I = 0x7f0a0375
 
-.field public static final progress_horizontal:I = 0x7f0a0376
+.field public static final progress_horizontal:I = 0x7f0a0377
 
-.field public static final radio:I = 0x7f0a0386
+.field public static final radio:I = 0x7f0a0387
 
-.field public static final right:I = 0x7f0a03ae
+.field public static final right:I = 0x7f0a03af
 
-.field public static final right_icon:I = 0x7f0a03af
+.field public static final right_icon:I = 0x7f0a03b0
 
-.field public static final right_side:I = 0x7f0a03b0
+.field public static final right_side:I = 0x7f0a03b1
 
-.field public static final screen:I = 0x7f0a03c5
+.field public static final screen:I = 0x7f0a03c6
 
-.field public static final scrollIndicatorDown:I = 0x7f0a03ca
+.field public static final scrollIndicatorDown:I = 0x7f0a03cb
 
-.field public static final scrollIndicatorUp:I = 0x7f0a03cb
+.field public static final scrollIndicatorUp:I = 0x7f0a03cc
 
-.field public static final scrollView:I = 0x7f0a03cc
+.field public static final scrollView:I = 0x7f0a03cd
 
-.field public static final search_badge:I = 0x7f0a03d1
+.field public static final search_badge:I = 0x7f0a03d2
 
-.field public static final search_bar:I = 0x7f0a03d2
+.field public static final search_bar:I = 0x7f0a03d3
 
-.field public static final search_button:I = 0x7f0a03d3
+.field public static final search_button:I = 0x7f0a03d4
 
-.field public static final search_close_btn:I = 0x7f0a03d4
+.field public static final search_close_btn:I = 0x7f0a03d5
 
-.field public static final search_edit_frame:I = 0x7f0a03d5
+.field public static final search_edit_frame:I = 0x7f0a03d6
 
-.field public static final search_go_btn:I = 0x7f0a03d6
+.field public static final search_go_btn:I = 0x7f0a03d7
 
-.field public static final search_mag_icon:I = 0x7f0a03d9
+.field public static final search_mag_icon:I = 0x7f0a03da
 
-.field public static final search_plate:I = 0x7f0a03da
+.field public static final search_plate:I = 0x7f0a03db
 
-.field public static final search_src_text:I = 0x7f0a03dd
+.field public static final search_src_text:I = 0x7f0a03de
 
-.field public static final search_voice_btn:I = 0x7f0a03de
+.field public static final search_voice_btn:I = 0x7f0a03df
 
-.field public static final select_dialog_listview:I = 0x7f0a03ea
+.field public static final select_dialog_listview:I = 0x7f0a03eb
 
-.field public static final shortcut:I = 0x7f0a0405
+.field public static final shortcut:I = 0x7f0a0407
 
-.field public static final spacer:I = 0x7f0a0419
+.field public static final spacer:I = 0x7f0a041b
 
-.field public static final split_action_bar:I = 0x7f0a041c
+.field public static final split_action_bar:I = 0x7f0a041e
 
-.field public static final src_atop:I = 0x7f0a0420
+.field public static final src_atop:I = 0x7f0a0422
 
-.field public static final src_in:I = 0x7f0a0421
+.field public static final src_in:I = 0x7f0a0423
 
-.field public static final src_over:I = 0x7f0a0422
+.field public static final src_over:I = 0x7f0a0424
 
-.field public static final start:I = 0x7f0a0425
+.field public static final start:I = 0x7f0a0427
 
-.field public static final status_bar_latest_event_content:I = 0x7f0a042c
+.field public static final status_bar_latest_event_content:I = 0x7f0a042e
 
-.field public static final submenuarrow:I = 0x7f0a0430
+.field public static final submenuarrow:I = 0x7f0a0432
 
-.field public static final submit_area:I = 0x7f0a0432
+.field public static final submit_area:I = 0x7f0a0434
 
-.field public static final tabMode:I = 0x7f0a0441
+.field public static final tabMode:I = 0x7f0a0443
 
-.field public static final tag_transition_group:I = 0x7f0a0453
+.field public static final tag_transition_group:I = 0x7f0a0454
 
-.field public static final tag_unhandled_key_event_manager:I = 0x7f0a0454
+.field public static final tag_unhandled_key_event_manager:I = 0x7f0a0455
 
-.field public static final tag_unhandled_key_listeners:I = 0x7f0a0455
+.field public static final tag_unhandled_key_listeners:I = 0x7f0a0456
 
-.field public static final text:I = 0x7f0a045c
+.field public static final text:I = 0x7f0a045d
 
-.field public static final text2:I = 0x7f0a045d
+.field public static final text2:I = 0x7f0a045e
 
-.field public static final textSpacerNoButtons:I = 0x7f0a0461
+.field public static final textSpacerNoButtons:I = 0x7f0a0462
 
-.field public static final textSpacerNoTitle:I = 0x7f0a0462
+.field public static final textSpacerNoTitle:I = 0x7f0a0463
 
-.field public static final time:I = 0x7f0a046e
+.field public static final time:I = 0x7f0a046f
 
-.field public static final title:I = 0x7f0a0470
+.field public static final title:I = 0x7f0a0471
 
-.field public static final titleDividerNoCustom:I = 0x7f0a0472
+.field public static final titleDividerNoCustom:I = 0x7f0a0473
 
-.field public static final title_template:I = 0x7f0a0476
+.field public static final title_template:I = 0x7f0a0477
 
-.field public static final top:I = 0x7f0a0486
+.field public static final top:I = 0x7f0a0487
 
-.field public static final topPanel:I = 0x7f0a048a
+.field public static final topPanel:I = 0x7f0a048b
 
-.field public static final uniform:I = 0x7f0a049e
+.field public static final uniform:I = 0x7f0a049f
 
-.field public static final up:I = 0x7f0a04a2
+.field public static final up:I = 0x7f0a04a3
 
-.field public static final wrap_content:I = 0x7f0a04c6
+.field public static final wrap_content:I = 0x7f0a04c7
 
-.field public static final zinny_sdk_agreement_image_back:I = 0x7f0a04ca
+.field public static final zinny_sdk_agreement_image_back:I = 0x7f0a04cb
 
-.field public static final zinny_sdk_agreement_kakao:I = 0x7f0a04cb
+.field public static final zinny_sdk_agreement_kakao:I = 0x7f0a04cc
 
-.field public static final zinny_sdk_agreement_kakao_topbar_title:I = 0x7f0a04cc
+.field public static final zinny_sdk_agreement_kakao_topbar_title:I = 0x7f0a04cd
 
-.field public static final zinny_sdk_agreement_kakao_webview:I = 0x7f0a04cd
+.field public static final zinny_sdk_agreement_kakao_webview:I = 0x7f0a04ce
 
-.field public static final zinny_sdk_coupon_input_cancel:I = 0x7f0a04d2
+.field public static final zinny_sdk_coupon_input_cancel:I = 0x7f0a04d3
 
-.field public static final zinny_sdk_coupon_input_submit:I = 0x7f0a04d3
+.field public static final zinny_sdk_coupon_input_submit:I = 0x7f0a04d4
 
-.field public static final zinny_sdk_coupon_input_text:I = 0x7f0a04d4
+.field public static final zinny_sdk_coupon_input_text:I = 0x7f0a04d5
 
-.field public static final zinny_sdk_dialog_cafe_logo:I = 0x7f0a04d5
+.field public static final zinny_sdk_dialog_cafe_logo:I = 0x7f0a04d6
 
-.field public static final zinny_sdk_dialog_web:I = 0x7f0a04d6
+.field public static final zinny_sdk_dialog_web:I = 0x7f0a04d7
 
-.field public static final zinny_sdk_dialog_web_container:I = 0x7f0a04d7
+.field public static final zinny_sdk_dialog_web_container:I = 0x7f0a04d8
 
-.field public static final zinny_sdk_dialog_web_content:I = 0x7f0a04d8
+.field public static final zinny_sdk_dialog_web_content:I = 0x7f0a04d9
 
-.field public static final zinny_sdk_dialog_web_custom_container:I = 0x7f0a04d9
+.field public static final zinny_sdk_dialog_web_custom_container:I = 0x7f0a04da
 
-.field public static final zinny_sdk_dialog_web_layout:I = 0x7f0a04da
+.field public static final zinny_sdk_dialog_web_layout:I = 0x7f0a04db
 
-.field public static final zinny_sdk_dialog_web_main:I = 0x7f0a04db
+.field public static final zinny_sdk_dialog_web_main:I = 0x7f0a04dc
 
-.field public static final zinny_sdk_dialog_web_topbar:I = 0x7f0a04dc
+.field public static final zinny_sdk_dialog_web_topbar:I = 0x7f0a04dd
 
-.field public static final zinny_sdk_dialog_web_topbar_back:I = 0x7f0a04dd
+.field public static final zinny_sdk_dialog_web_topbar_back:I = 0x7f0a04de
 
-.field public static final zinny_sdk_dialog_web_topbar_close:I = 0x7f0a04de
+.field public static final zinny_sdk_dialog_web_topbar_close:I = 0x7f0a04df
 
-.field public static final zinny_sdk_dialog_web_topbar_close_image:I = 0x7f0a04df
+.field public static final zinny_sdk_dialog_web_topbar_close_image:I = 0x7f0a04e0
 
-.field public static final zinny_sdk_dialog_web_topbar_previous_image:I = 0x7f0a04e0
+.field public static final zinny_sdk_dialog_web_topbar_previous_image:I = 0x7f0a04e1
 
-.field public static final zinny_sdk_dialog_web_topbar_title:I = 0x7f0a04e1
+.field public static final zinny_sdk_dialog_web_topbar_title:I = 0x7f0a04e2
 
-.field public static final zinny_sdk_notification:I = 0x7f0a04e2
+.field public static final zinny_sdk_notification:I = 0x7f0a04e3
 
-.field public static final zinny_sdk_notification_content:I = 0x7f0a04e3
+.field public static final zinny_sdk_notification_content:I = 0x7f0a04e4
 
-.field public static final zinny_sdk_notification_icon:I = 0x7f0a04e4
+.field public static final zinny_sdk_notification_icon:I = 0x7f0a04e5
 
-.field public static final zinny_sdk_notification_time:I = 0x7f0a04e5
+.field public static final zinny_sdk_notification_time:I = 0x7f0a04e6
 
-.field public static final zinny_sdk_notification_title:I = 0x7f0a04e6
+.field public static final zinny_sdk_notification_title:I = 0x7f0a04e7
 
-.field public static final zinny_sdk_notification_top:I = 0x7f0a04e7
+.field public static final zinny_sdk_notification_top:I = 0x7f0a04e8
 
-.field public static final zinny_sdk_permission_noti_content:I = 0x7f0a04e8
+.field public static final zinny_sdk_permission_noti_content:I = 0x7f0a04e9
 
-.field public static final zinny_sdk_permission_noti_icon:I = 0x7f0a04e9
+.field public static final zinny_sdk_permission_noti_icon:I = 0x7f0a04ea
 
-.field public static final zinny_sdk_permission_noti_scrollview:I = 0x7f0a04ea
+.field public static final zinny_sdk_permission_noti_scrollview:I = 0x7f0a04eb
 
-.field public static final zinny_sdk_permission_noti_title:I = 0x7f0a04eb
+.field public static final zinny_sdk_permission_noti_title:I = 0x7f0a04ec
 
-.field public static final zinny_sdk_progress_view:I = 0x7f0a04ec
+.field public static final zinny_sdk_progress_view:I = 0x7f0a04ed
 
-.field public static final zinny_sdk_promotion_ending_popup_cancel:I = 0x7f0a04ed
+.field public static final zinny_sdk_promotion_ending_popup_cancel:I = 0x7f0a04ee
 
-.field public static final zinny_sdk_promotion_ending_popup_content:I = 0x7f0a04ee
+.field public static final zinny_sdk_promotion_ending_popup_content:I = 0x7f0a04ef
 
-.field public static final zinny_sdk_promotion_ending_popup_image:I = 0x7f0a04ef
+.field public static final zinny_sdk_promotion_ending_popup_image:I = 0x7f0a04f0
 
-.field public static final zinny_sdk_promotion_ending_popup_ok:I = 0x7f0a04f0
+.field public static final zinny_sdk_promotion_ending_popup_ok:I = 0x7f0a04f1
 
-.field public static final zinny_sdk_promotion_ending_popup_progress:I = 0x7f0a04f1
+.field public static final zinny_sdk_promotion_ending_popup_progress:I = 0x7f0a04f2
 
-.field public static final zinny_sdk_promotion_start_popup_bottom:I = 0x7f0a04f2
+.field public static final zinny_sdk_promotion_start_popup_bottom:I = 0x7f0a04f3
 
-.field public static final zinny_sdk_promotion_start_popup_check:I = 0x7f0a04f3
+.field public static final zinny_sdk_promotion_start_popup_check:I = 0x7f0a04f4
 
-.field public static final zinny_sdk_promotion_start_popup_check_image:I = 0x7f0a04f4
+.field public static final zinny_sdk_promotion_start_popup_check_image:I = 0x7f0a04f5
 
-.field public static final zinny_sdk_promotion_start_popup_close:I = 0x7f0a04f5
+.field public static final zinny_sdk_promotion_start_popup_close:I = 0x7f0a04f6
 
-.field public static final zinny_sdk_promotion_start_popup_image:I = 0x7f0a04f6
+.field public static final zinny_sdk_promotion_start_popup_image:I = 0x7f0a04f7
 
-.field public static final zinny_sdk_promotion_start_popup_progress:I = 0x7f0a04f7
+.field public static final zinny_sdk_promotion_start_popup_progress:I = 0x7f0a04f8
 
-.field public static final zzinny_sdk_agreement_kakao_topbar_back:I = 0x7f0a0519
+.field public static final zzinny_sdk_agreement_kakao_topbar_back:I = 0x7f0a051a
 
 
 # direct methods

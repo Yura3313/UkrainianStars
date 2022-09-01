@@ -7,11 +7,9 @@
 
 
 # instance fields
-.field public final synthetic f:Lcom/supercell/titan/TitanWebView;
+.field public final synthetic g:Lcom/supercell/titan/TitanWebView;
 
-.field public final synthetic g:Z
-
-.field public final synthetic h:F
+.field public final synthetic h:Z
 
 .field public final synthetic i:F
 
@@ -21,6 +19,8 @@
 
 .field public final synthetic l:F
 
+.field public final synthetic m:F
+
 
 # direct methods
 .method public synthetic constructor <init>(Lcom/supercell/titan/TitanWebView;ZFFFFF)V
@@ -28,19 +28,19 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lcom/supercell/titan/t;->f:Lcom/supercell/titan/TitanWebView;
+    iput-object p1, p0, Lcom/supercell/titan/t;->g:Lcom/supercell/titan/TitanWebView;
 
-    iput-boolean p2, p0, Lcom/supercell/titan/t;->g:Z
+    iput-boolean p2, p0, Lcom/supercell/titan/t;->h:Z
 
-    iput p3, p0, Lcom/supercell/titan/t;->h:F
+    iput p3, p0, Lcom/supercell/titan/t;->i:F
 
-    iput p4, p0, Lcom/supercell/titan/t;->i:F
+    iput p4, p0, Lcom/supercell/titan/t;->j:F
 
-    iput p5, p0, Lcom/supercell/titan/t;->j:F
+    iput p5, p0, Lcom/supercell/titan/t;->k:F
 
-    iput p6, p0, Lcom/supercell/titan/t;->k:F
+    iput p6, p0, Lcom/supercell/titan/t;->l:F
 
-    iput p7, p0, Lcom/supercell/titan/t;->l:F
+    iput p7, p0, Lcom/supercell/titan/t;->m:F
 
     return-void
 .end method
@@ -50,19 +50,19 @@
 .method public final run()V
     .locals 8
 
-    iget-object v0, p0, Lcom/supercell/titan/t;->f:Lcom/supercell/titan/TitanWebView;
+    iget-object v0, p0, Lcom/supercell/titan/t;->g:Lcom/supercell/titan/TitanWebView;
 
-    iget-boolean v1, p0, Lcom/supercell/titan/t;->g:Z
+    iget-boolean v1, p0, Lcom/supercell/titan/t;->h:Z
 
-    iget v2, p0, Lcom/supercell/titan/t;->h:F
+    iget v2, p0, Lcom/supercell/titan/t;->i:F
 
-    iget v3, p0, Lcom/supercell/titan/t;->i:F
+    iget v3, p0, Lcom/supercell/titan/t;->j:F
 
-    iget v4, p0, Lcom/supercell/titan/t;->j:F
+    iget v4, p0, Lcom/supercell/titan/t;->k:F
 
-    iget v5, p0, Lcom/supercell/titan/t;->k:F
+    iget v5, p0, Lcom/supercell/titan/t;->l:F
 
-    iget v6, p0, Lcom/supercell/titan/t;->l:F
+    iget v6, p0, Lcom/supercell/titan/t;->m:F
 
     .line 1
     iget-boolean v7, v0, Lcom/supercell/titan/TitanWebView;->k:Z

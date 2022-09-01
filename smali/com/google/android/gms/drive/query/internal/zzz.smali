@@ -37,14 +37,14 @@
 
 
 # virtual methods
-.method public final I1(Lef/t;)Ljava/lang/Object;
+.method public final f2(Lk3/r5;)Ljava/lang/Object;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<F:",
             "Ljava/lang/Object;",
             ">(",
-            "Lef/t;",
+            "Lk3/r5;",
             ")TF;"
         }
     .end annotation

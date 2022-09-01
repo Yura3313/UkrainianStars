@@ -10,23 +10,13 @@
     value = {
         "Ljava/lang/Object;",
         "La5/u0<",
-        "Ljava/lang/Object;",
+        "Lcom/google/android/play/core/assetpacks/t2;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final f:La5/u0;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "La5/u0<",
-            "Lcom/google/android/play/core/assetpacks/k2;",
-            ">;"
-        }
-    .end annotation
-.end field
-
 .field public final g:La5/u0;
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -37,91 +27,104 @@
     .end annotation
 .end field
 
+.field public final h:La5/u0;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "La5/u0<",
+            "Lcom/google/android/play/core/assetpacks/o;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public final i:La5/u0;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "La5/u0<",
+            "Lcom/google/android/play/core/assetpacks/k1;",
+            ">;"
+        }
+    .end annotation
+.end field
+
 
 # direct methods
-.method public constructor <init>(La5/u0;La5/u0;)V
+.method public constructor <init>(La5/u0;La5/u0;La5/u0;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "La5/u0<",
-            "Lcom/google/android/play/core/assetpacks/k2;",
+            "Landroid/content/Context;",
             ">;",
             "La5/u0<",
-            "Landroid/content/Context;",
+            "Lcom/google/android/play/core/assetpacks/o;",
+            ">;",
+            "La5/u0<",
+            "Lcom/google/android/play/core/assetpacks/k1;",
             ">;)V"
         }
     .end annotation
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lcom/google/android/play/core/assetpacks/p2;->f:La5/u0;
+    iput-object p1, p0, Lcom/google/android/play/core/assetpacks/p2;->g:La5/u0;
 
-    iput-object p2, p0, Lcom/google/android/play/core/assetpacks/p2;->g:La5/u0;
+    iput-object p2, p0, Lcom/google/android/play/core/assetpacks/p2;->h:La5/u0;
+
+    iput-object p3, p0, Lcom/google/android/play/core/assetpacks/p2;->i:La5/u0;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final e()Ljava/lang/Object;
-    .locals 6
+.method public final bridge synthetic e()Ljava/lang/Object;
+    .locals 3
 
-    iget-object v0, p0, Lcom/google/android/play/core/assetpacks/p2;->f:La5/u0;
+    iget-object v0, p0, Lcom/google/android/play/core/assetpacks/p2;->g:La5/u0;
 
-    invoke-interface {v0}, La5/u0;->e()Ljava/lang/Object;
+    check-cast v0, Lcom/google/android/play/core/assetpacks/q2;
+
+    invoke-virtual {v0}, Lcom/google/android/play/core/assetpacks/q2;->a()Landroid/content/Context;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/google/android/play/core/assetpacks/p2;->g:La5/u0;
+    iget-object v1, p0, Lcom/google/android/play/core/assetpacks/p2;->h:La5/u0;
 
-    check-cast v1, Lcom/google/android/play/core/assetpacks/r2;
-
-    invoke-virtual {v1}, Lcom/google/android/play/core/assetpacks/r2;->a()Landroid/content/Context;
+    invoke-static {v1}, La5/t0;->b(La5/u0;)La5/r0;
 
     move-result-object v1
 
-    check-cast v0, Lcom/google/android/play/core/assetpacks/k2;
+    iget-object v2, p0, Lcom/google/android/play/core/assetpacks/p2;->i:La5/u0;
 
-    invoke-virtual {v1}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
-
-    move-result-object v2
-
-    new-instance v3, Landroid/content/ComponentName;
-
-    invoke-virtual {v1}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
-
-    move-result-object v4
-
-    const-string v5, "com.google.android.play.core.assetpacks.AssetPackExtractionService"
-
-    invoke-direct {v3, v4, v5}, Landroid/content/ComponentName;-><init>(Ljava/lang/String;Ljava/lang/String;)V
-
-    invoke-static {v2, v3}, La5/g0;->g(Landroid/content/pm/PackageManager;Landroid/content/ComponentName;)V
-
-    sget v2, Lcom/google/android/play/core/common/PlayCoreDialogWrapperActivity;->g:I
-
-    .line 1
-    invoke-virtual {v1}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
+    invoke-static {v2}, La5/t0;->b(La5/u0;)La5/r0;
 
     move-result-object v2
 
-    new-instance v3, Landroid/content/ComponentName;
+    invoke-static {v0}, Lcom/google/android/play/core/assetpacks/m2;->a(Landroid/content/Context;)Ljava/lang/String;
 
-    invoke-virtual {v1}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
+    move-result-object v0
 
-    move-result-object v1
+    if-nez v0, :cond_0
 
-    const-string v4, "com.google.android.play.core.common.PlayCoreDialogWrapperActivity"
+    invoke-interface {v1}, La5/r0;->e()Ljava/lang/Object;
 
-    invoke-direct {v3, v1, v4}, Landroid/content/ComponentName;-><init>(Ljava/lang/String;Ljava/lang/String;)V
+    move-result-object v0
 
-    invoke-static {v2, v3}, La5/g0;->g(Landroid/content/pm/PackageManager;Landroid/content/ComponentName;)V
+    goto :goto_0
+
+    :cond_0
+    invoke-interface {v2}, La5/r0;->e()Ljava/lang/Object;
+
+    move-result-object v0
+
+    :goto_0
+    check-cast v0, Lcom/google/android/play/core/assetpacks/t2;
 
     const-string v1, "Cannot return null from a non-@Nullable @Provides method"
 
-    .line 2
-    invoke-static {v0, v1}, La5/g0;->h(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v1}, La5/g0;->g(Ljava/lang/Object;Ljava/lang/String;)V
 
     return-object v0
 .end method

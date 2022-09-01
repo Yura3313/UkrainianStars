@@ -49,7 +49,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lr3/x4;",
+            "Lr3/y4;",
             "Ljava/util/Map$Entry<",
             "**>;)V"
         }

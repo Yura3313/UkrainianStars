@@ -83,7 +83,7 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lcom/google/android/play/core/appupdate/g;->b(Ljava/lang/String;)Z
+    invoke-static {v0}, La5/b0;->d(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -117,7 +117,7 @@
 
     iget-object v1, p0, Lf9/b1$a;->b:Lq8/d;
 
-    iget-object v1, v1, Lq8/d;->g:Ljava/lang/Long;
+    iget-object v1, v1, Lq8/d;->h:Ljava/lang/Long;
 
     invoke-virtual {v1}, Ljava/lang/Long;->longValue()J
 

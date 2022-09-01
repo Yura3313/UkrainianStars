@@ -1,246 +1,534 @@
-.class public final synthetic Lra/v;
+.class public final Lra/v;
 .super Ljava/lang/Object;
-.source "R8$$SyntheticClass"
+.source "MessageViewTypeConverter.java"
+
+
+# instance fields
+.field public a:Landroid/util/SparseArray;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Landroid/util/SparseArray<",
+            "Lra/u;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public b:Lra/s;
+
+.field public c:Lra/q;
+
+.field public d:Lra/t;
+
+.field public final e:Landroid/content/Context;
 
 
 # direct methods
-.method public static a()[I
+.method public constructor <init>(Landroid/content/Context;)V
     .locals 1
 
-    const/16 v0, 0x19
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    invoke-static {v0}, Lp/g;->c(I)[I
+    .line 2
+    iput-object p1, p0, Lra/v;->e:Landroid/content/Context;
+
+    .line 3
+    new-instance v0, Landroid/util/SparseArray;
+
+    invoke-direct {v0}, Landroid/util/SparseArray;-><init>()V
+
+    iput-object v0, p0, Lra/v;->a:Landroid/util/SparseArray;
+
+    .line 4
+    new-instance v0, Lra/s;
+
+    invoke-direct {v0, p1}, Lra/s;-><init>(Landroid/content/Context;)V
+
+    iput-object v0, p0, Lra/v;->b:Lra/s;
+
+    .line 5
+    new-instance v0, Lra/q;
+
+    invoke-direct {v0, p1}, Lra/q;-><init>(Landroid/content/Context;)V
+
+    iput-object v0, p0, Lra/v;->c:Lra/q;
+
+    .line 6
+    new-instance v0, Lra/t;
+
+    invoke-direct {v0, p1}, Lra/t;-><init>(Landroid/content/Context;)V
+
+    iput-object v0, p0, Lra/v;->d:Lra/t;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a(I)Lra/u;
+    .locals 6
+
+    .line 1
+    iget-object v0, p0, Lra/v;->a:Landroid/util/SparseArray;
+
+    invoke-virtual {v0, p1}, Landroid/util/SparseArray;->get(I)Ljava/lang/Object;
 
     move-result-object v0
 
+    check-cast v0, Lra/u;
+
+    if-eqz v0, :cond_0
+
     return-object v0
-.end method
 
-.method public static synthetic b(I)I
-    .locals 3
-
-    const/16 v0, 0xa
-
-    const/4 v1, 0x1
-
-    if-ne p0, v1, :cond_0
-
-    return v0
-
+    .line 2
     :cond_0
-    const/4 v1, 0x2
+    invoke-static {}, Lp8/b;->a()[I
 
-    const/16 v2, 0x14
+    move-result-object v0
 
-    if-ne p0, v1, :cond_1
+    array-length v1, v0
 
-    return v2
+    const/4 v2, 0x0
+
+    const/4 v3, 0x0
+
+    :goto_0
+    if-ge v3, v1, :cond_2
+
+    aget v4, v0, v3
+
+    .line 3
+    invoke-static {v4}, Lp8/b;->b(I)I
+
+    move-result v5
+
+    if-ne v5, p1, :cond_1
+
+    move v2, v4
+
+    goto :goto_1
 
     :cond_1
-    const/4 v1, 0x3
+    add-int/lit8 v3, v3, 0x1
 
-    if-ne p0, v1, :cond_2
-
-    const/16 p0, 0x1e
-
-    return p0
+    goto :goto_0
 
     :cond_2
-    const/4 v1, 0x4
+    :goto_1
+    if-nez v2, :cond_3
 
-    if-ne p0, v1, :cond_3
+    .line 4
+    new-instance p1, Lra/k;
 
-    const/16 p0, 0x28
+    iget-object v0, p0, Lra/v;->e:Landroid/content/Context;
 
-    return p0
+    invoke-direct {p1, v0}, Lra/k;-><init>(Landroid/content/Context;)V
 
+    return-object p1
+
+    .line 5
     :cond_3
-    const/4 v1, 0x5
+    invoke-static {v2}, Lp/g;->b(I)I
 
-    if-ne p0, v1, :cond_4
+    move-result v0
 
-    const/16 p0, 0x32
+    packed-switch v0, :pswitch_data_0
 
-    return p0
+    :pswitch_0
+    goto/16 :goto_2
 
-    :cond_4
-    const/4 v1, 0x6
+    .line 6
+    :pswitch_1
+    iget-object v0, p0, Lra/v;->a:Landroid/util/SparseArray;
 
-    if-ne p0, v1, :cond_5
+    const/16 v1, 0xfa
 
-    const/16 p0, 0x3c
+    new-instance v2, Lra/m0;
 
-    return p0
+    iget-object v3, p0, Lra/v;->e:Landroid/content/Context;
 
-    :cond_5
-    const/4 v1, 0x7
+    invoke-direct {v2, v3}, Lra/m0;-><init>(Landroid/content/Context;)V
 
-    if-ne p0, v1, :cond_6
+    invoke-virtual {v0, v1, v2}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
 
-    const/16 p0, 0x46
+    goto/16 :goto_2
 
-    return p0
+    .line 7
+    :pswitch_2
+    iget-object v0, p0, Lra/v;->a:Landroid/util/SparseArray;
 
-    :cond_6
-    const/16 v1, 0x8
+    const/16 v1, 0xf0
 
-    if-ne p0, v1, :cond_7
+    new-instance v2, Lra/g;
 
-    const/16 p0, 0x50
+    iget-object v3, p0, Lra/v;->e:Landroid/content/Context;
 
-    return p0
+    invoke-direct {v2, v3}, Lra/g;-><init>(Landroid/content/Context;)V
 
-    :cond_7
-    const/16 v1, 0x9
+    invoke-virtual {v0, v1, v2}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
 
-    if-ne p0, v1, :cond_8
+    goto/16 :goto_2
 
-    const/16 p0, 0x5a
+    .line 8
+    :pswitch_3
+    iget-object v0, p0, Lra/v;->a:Landroid/util/SparseArray;
 
-    return p0
+    const/16 v1, 0xe6
 
-    :cond_8
-    if-ne p0, v0, :cond_9
+    new-instance v2, Lra/o0;
 
-    const/16 p0, 0x64
+    iget-object v3, p0, Lra/v;->e:Landroid/content/Context;
 
-    return p0
+    invoke-direct {v2, v3}, Lra/o0;-><init>(Landroid/content/Context;)V
 
-    :cond_9
-    const/16 v0, 0xb
+    .line 9
+    invoke-virtual {v0, v1, v2}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
 
-    if-ne p0, v0, :cond_a
+    goto/16 :goto_2
 
-    const/16 p0, 0x6e
+    .line 10
+    :pswitch_4
+    iget-object v0, p0, Lra/v;->a:Landroid/util/SparseArray;
 
-    return p0
+    const/16 v1, 0xdc
 
-    :cond_a
-    const/16 v0, 0xc
+    new-instance v2, Lra/b;
 
-    if-ne p0, v0, :cond_b
+    iget-object v3, p0, Lra/v;->e:Landroid/content/Context;
 
-    const/16 p0, 0x78
+    invoke-direct {v2, v3}, Lra/b;-><init>(Landroid/content/Context;)V
 
-    return p0
+    invoke-virtual {v0, v1, v2}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
 
-    :cond_b
-    const/16 v0, 0xd
+    goto/16 :goto_2
 
-    if-ne p0, v0, :cond_c
+    .line 11
+    :pswitch_5
+    iget-object v0, p0, Lra/v;->a:Landroid/util/SparseArray;
 
-    const/16 p0, 0x82
+    const/16 v1, 0xd2
 
-    return p0
+    new-instance v2, Lra/j0;
 
-    :cond_c
-    const/16 v0, 0xe
+    iget-object v3, p0, Lra/v;->e:Landroid/content/Context;
 
-    if-ne p0, v0, :cond_d
+    invoke-direct {v2, v3}, Lra/j0;-><init>(Landroid/content/Context;)V
 
-    const/16 p0, 0x8c
+    invoke-virtual {v0, v1, v2}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
 
-    return p0
+    goto/16 :goto_2
 
-    :cond_d
-    const/16 v0, 0xf
+    .line 12
+    :pswitch_6
+    iget-object v0, p0, Lra/v;->a:Landroid/util/SparseArray;
 
-    if-ne p0, v0, :cond_e
+    const/16 v1, 0xc8
 
-    const/16 p0, 0x96
+    new-instance v2, Lra/l0;
 
-    return p0
+    iget-object v3, p0, Lra/v;->e:Landroid/content/Context;
 
-    :cond_e
-    const/16 v0, 0x10
+    invoke-direct {v2, v3}, Lra/l0;-><init>(Landroid/content/Context;)V
 
-    if-ne p0, v0, :cond_f
+    invoke-virtual {v0, v1, v2}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
 
-    const/16 p0, 0xa0
+    goto/16 :goto_2
 
-    return p0
+    .line 13
+    :pswitch_7
+    iget-object v0, p0, Lra/v;->a:Landroid/util/SparseArray;
 
-    :cond_f
-    const/16 v0, 0x11
+    const/16 v1, 0xbe
 
-    if-ne p0, v0, :cond_10
+    new-instance v2, Lra/m;
 
-    const/16 p0, 0xaa
+    iget-object v3, p0, Lra/v;->e:Landroid/content/Context;
 
-    return p0
+    invoke-direct {v2, v3}, Lra/m;-><init>(Landroid/content/Context;)V
 
-    :cond_10
-    const/16 v0, 0x12
+    invoke-virtual {v0, v1, v2}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
 
-    if-ne p0, v0, :cond_11
+    goto/16 :goto_2
 
-    const/16 p0, 0xb4
+    .line 14
+    :pswitch_8
+    iget-object v0, p0, Lra/v;->a:Landroid/util/SparseArray;
 
-    return p0
+    const/16 v1, 0xaa
 
-    :cond_11
-    const/16 v0, 0x13
+    new-instance v2, Lra/h0;
 
-    if-ne p0, v0, :cond_12
+    iget-object v3, p0, Lra/v;->e:Landroid/content/Context;
 
-    const/16 p0, 0xbe
+    invoke-direct {v2, v3}, Lra/h0;-><init>(Landroid/content/Context;)V
 
-    return p0
+    .line 15
+    invoke-virtual {v0, v1, v2}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
 
-    :cond_12
-    if-ne p0, v2, :cond_13
+    goto/16 :goto_2
 
-    const/16 p0, 0xc8
+    .line 16
+    :pswitch_9
+    iget-object v0, p0, Lra/v;->a:Landroid/util/SparseArray;
 
-    return p0
+    const/16 v1, 0xa0
 
-    :cond_13
-    const/16 v0, 0x15
+    new-instance v2, Lra/g0;
 
-    if-ne p0, v0, :cond_14
+    iget-object v3, p0, Lra/v;->e:Landroid/content/Context;
 
-    const/16 p0, 0xd2
+    invoke-direct {v2, v3}, Lra/g0;-><init>(Landroid/content/Context;)V
 
-    return p0
+    invoke-virtual {v0, v1, v2}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
 
-    :cond_14
-    const/16 v0, 0x16
+    goto/16 :goto_2
 
-    if-ne p0, v0, :cond_15
+    .line 17
+    :pswitch_a
+    iget-object v0, p0, Lra/v;->a:Landroid/util/SparseArray;
 
-    const/16 p0, 0xdc
+    const/16 v1, 0x96
 
-    return p0
+    new-instance v2, Lra/p;
 
-    :cond_15
-    const/16 v0, 0x17
+    iget-object v3, p0, Lra/v;->e:Landroid/content/Context;
 
-    if-ne p0, v0, :cond_16
+    invoke-direct {v2, v3}, Lra/p;-><init>(Landroid/content/Context;)V
 
-    const/16 p0, 0xe6
+    invoke-virtual {v0, v1, v2}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
 
-    return p0
+    goto/16 :goto_2
 
-    :cond_16
-    const/16 v0, 0x18
+    .line 18
+    :pswitch_b
+    iget-object v0, p0, Lra/v;->a:Landroid/util/SparseArray;
 
-    if-ne p0, v0, :cond_17
+    const/16 v1, 0x8c
 
-    const/16 p0, 0xf0
+    new-instance v2, Lra/n0;
 
-    return p0
+    iget-object v3, p0, Lra/v;->e:Landroid/content/Context;
 
-    :cond_17
-    const/16 v0, 0x19
+    invoke-direct {v2, v3}, Lra/n0;-><init>(Landroid/content/Context;)V
 
-    if-ne p0, v0, :cond_18
+    invoke-virtual {v0, v1, v2}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
 
-    const/16 p0, 0xfa
+    goto/16 :goto_2
 
-    return p0
+    .line 19
+    :pswitch_c
+    iget-object v0, p0, Lra/v;->a:Landroid/util/SparseArray;
 
-    :cond_18
-    const/4 p0, 0x0
+    const/16 v1, 0x82
 
-    throw p0
+    new-instance v2, Lra/f0;
+
+    iget-object v3, p0, Lra/v;->e:Landroid/content/Context;
+
+    invoke-direct {v2, v3}, Lra/f0;-><init>(Landroid/content/Context;)V
+
+    invoke-virtual {v0, v1, v2}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
+
+    goto/16 :goto_2
+
+    .line 20
+    :pswitch_d
+    iget-object v0, p0, Lra/v;->a:Landroid/util/SparseArray;
+
+    const/16 v1, 0x78
+
+    new-instance v2, Lra/e0;
+
+    iget-object v3, p0, Lra/v;->e:Landroid/content/Context;
+
+    invoke-direct {v2, v3}, Lra/e0;-><init>(Landroid/content/Context;)V
+
+    invoke-virtual {v0, v1, v2}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
+
+    goto/16 :goto_2
+
+    .line 21
+    :pswitch_e
+    iget-object v0, p0, Lra/v;->a:Landroid/util/SparseArray;
+
+    const/16 v1, 0x5a
+
+    new-instance v2, Lra/r;
+
+    iget-object v3, p0, Lra/v;->e:Landroid/content/Context;
+
+    invoke-direct {v2, v3}, Lra/r;-><init>(Landroid/content/Context;)V
+
+    invoke-virtual {v0, v1, v2}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
+
+    goto/16 :goto_2
+
+    .line 22
+    :pswitch_f
+    iget-object v0, p0, Lra/v;->a:Landroid/util/SparseArray;
+
+    const/16 v1, 0x50
+
+    new-instance v2, Lra/k;
+
+    iget-object v3, p0, Lra/v;->e:Landroid/content/Context;
+
+    invoke-direct {v2, v3}, Lra/k;-><init>(Landroid/content/Context;)V
+
+    invoke-virtual {v0, v1, v2}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
+
+    goto :goto_2
+
+    .line 23
+    :pswitch_10
+    iget-object v0, p0, Lra/v;->a:Landroid/util/SparseArray;
+
+    const/16 v1, 0x46
+
+    new-instance v2, Lra/y;
+
+    iget-object v3, p0, Lra/v;->e:Landroid/content/Context;
+
+    invoke-direct {v2, v3}, Lra/y;-><init>(Landroid/content/Context;)V
+
+    invoke-virtual {v0, v1, v2}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
+
+    goto :goto_2
+
+    .line 24
+    :pswitch_11
+    iget-object v0, p0, Lra/v;->a:Landroid/util/SparseArray;
+
+    const/16 v1, 0x3c
+
+    new-instance v2, Lra/b0;
+
+    iget-object v3, p0, Lra/v;->e:Landroid/content/Context;
+
+    invoke-direct {v2, v3}, Lra/b0;-><init>(Landroid/content/Context;)V
+
+    invoke-virtual {v0, v1, v2}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
+
+    goto :goto_2
+
+    .line 25
+    :pswitch_12
+    iget-object v0, p0, Lra/v;->a:Landroid/util/SparseArray;
+
+    const/16 v1, 0x32
+
+    new-instance v2, Lra/d;
+
+    iget-object v3, p0, Lra/v;->e:Landroid/content/Context;
+
+    invoke-direct {v2, v3}, Lra/d;-><init>(Landroid/content/Context;)V
+
+    invoke-virtual {v0, v1, v2}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
+
+    goto :goto_2
+
+    .line 26
+    :pswitch_13
+    iget-object v0, p0, Lra/v;->a:Landroid/util/SparseArray;
+
+    const/16 v1, 0x28
+
+    new-instance v2, Lra/i;
+
+    iget-object v3, p0, Lra/v;->e:Landroid/content/Context;
+
+    invoke-direct {v2, v3}, Lra/i;-><init>(Landroid/content/Context;)V
+
+    invoke-virtual {v0, v1, v2}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
+
+    goto :goto_2
+
+    .line 27
+    :pswitch_14
+    iget-object v0, p0, Lra/v;->a:Landroid/util/SparseArray;
+
+    const/16 v1, 0x1e
+
+    new-instance v2, Lra/d0;
+
+    iget-object v3, p0, Lra/v;->e:Landroid/content/Context;
+
+    invoke-direct {v2, v3}, Lra/d0;-><init>(Landroid/content/Context;)V
+
+    invoke-virtual {v0, v1, v2}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
+
+    goto :goto_2
+
+    .line 28
+    :pswitch_15
+    iget-object v0, p0, Lra/v;->a:Landroid/util/SparseArray;
+
+    const/16 v1, 0x14
+
+    new-instance v2, Lra/k;
+
+    iget-object v3, p0, Lra/v;->e:Landroid/content/Context;
+
+    invoke-direct {v2, v3}, Lra/k;-><init>(Landroid/content/Context;)V
+
+    invoke-virtual {v0, v1, v2}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
+
+    goto :goto_2
+
+    .line 29
+    :pswitch_16
+    iget-object v0, p0, Lra/v;->a:Landroid/util/SparseArray;
+
+    const/16 v1, 0xa
+
+    new-instance v2, Lra/k0;
+
+    iget-object v3, p0, Lra/v;->e:Landroid/content/Context;
+
+    invoke-direct {v2, v3}, Lra/k0;-><init>(Landroid/content/Context;)V
+
+    invoke-virtual {v0, v1, v2}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
+
+    .line 30
+    :goto_2
+    iget-object v0, p0, Lra/v;->a:Landroid/util/SparseArray;
+
+    invoke-virtual {v0, p1}, Landroid/util/SparseArray;->get(I)Ljava/lang/Object;
+
+    move-result-object p1
+
+    check-cast p1, Lra/u;
+
+    return-object p1
+
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_16
+        :pswitch_15
+        :pswitch_14
+        :pswitch_13
+        :pswitch_12
+        :pswitch_11
+        :pswitch_10
+        :pswitch_f
+        :pswitch_e
+        :pswitch_0
+        :pswitch_0
+        :pswitch_d
+        :pswitch_c
+        :pswitch_b
+        :pswitch_a
+        :pswitch_9
+        :pswitch_8
+        :pswitch_0
+        :pswitch_7
+        :pswitch_6
+        :pswitch_5
+        :pswitch_4
+        :pswitch_3
+        :pswitch_2
+        :pswitch_1
+    .end packed-switch
 .end method

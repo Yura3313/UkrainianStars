@@ -32,10 +32,10 @@
 .method public abstract I0()Z
 .end method
 
-.method public abstract X()Z
+.method public abstract W1()Z
 .end method
 
-.method public abstract X1()Z
+.method public abstract X()Z
 .end method
 
 .method public abstract a1()Ljava/lang/String;

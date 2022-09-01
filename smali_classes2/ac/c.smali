@@ -7,15 +7,15 @@
 
 
 # instance fields
-.field public final f:Ljava/io/InputStream;
+.field public final g:Ljava/io/InputStream;
 
-.field public final g:Ljava/nio/charset/Charset;
+.field public final h:Ljava/nio/charset/Charset;
 
-.field public h:[B
-
-.field public i:I
+.field public i:[B
 
 .field public j:I
+
+.field public k:I
 
 
 # direct methods
@@ -39,17 +39,17 @@
     if-eqz v0, :cond_0
 
     .line 3
-    iput-object p1, p0, Lac/c;->f:Ljava/io/InputStream;
+    iput-object p1, p0, Lac/c;->g:Ljava/io/InputStream;
 
     .line 4
-    iput-object p2, p0, Lac/c;->g:Ljava/nio/charset/Charset;
+    iput-object p2, p0, Lac/c;->h:Ljava/nio/charset/Charset;
 
     const/16 p1, 0x2000
 
     new-array p1, p1, [B
 
     .line 5
-    iput-object p1, p0, Lac/c;->h:[B
+    iput-object p1, p0, Lac/c;->i:[B
 
     return-void
 
@@ -81,9 +81,9 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lac/c;->f:Ljava/io/InputStream;
+    iget-object v0, p0, Lac/c;->g:Ljava/io/InputStream;
 
-    iget-object v1, p0, Lac/c;->h:[B
+    iget-object v1, p0, Lac/c;->i:[B
 
     array-length v2, v1
 
@@ -98,10 +98,10 @@
     if-eq v0, v1, :cond_0
 
     .line 2
-    iput v3, p0, Lac/c;->i:I
+    iput v3, p0, Lac/c;->j:I
 
     .line 3
-    iput v0, p0, Lac/c;->j:I
+    iput v0, p0, Lac/c;->k:I
 
     return-void
 
@@ -123,20 +123,20 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lac/c;->f:Ljava/io/InputStream;
+    iget-object v0, p0, Lac/c;->g:Ljava/io/InputStream;
 
     monitor-enter v0
 
     .line 2
     :try_start_0
-    iget-object v1, p0, Lac/c;->h:[B
+    iget-object v1, p0, Lac/c;->i:[B
 
     if-eqz v1, :cond_7
 
     .line 3
-    iget v1, p0, Lac/c;->i:I
+    iget v1, p0, Lac/c;->j:I
 
-    iget v2, p0, Lac/c;->j:I
+    iget v2, p0, Lac/c;->k:I
 
     if-lt v1, v2, :cond_0
 
@@ -145,24 +145,24 @@
 
     .line 5
     :cond_0
-    iget v1, p0, Lac/c;->i:I
+    iget v1, p0, Lac/c;->j:I
 
     :goto_0
-    iget v2, p0, Lac/c;->j:I
+    iget v2, p0, Lac/c;->k:I
 
     const/16 v3, 0xa
 
     if-eq v1, v2, :cond_3
 
     .line 6
-    iget-object v2, p0, Lac/c;->h:[B
+    iget-object v2, p0, Lac/c;->i:[B
 
     aget-byte v4, v2, v1
 
     if-ne v4, v3, :cond_2
 
     .line 7
-    iget v3, p0, Lac/c;->i:I
+    iget v3, p0, Lac/c;->j:I
 
     if-eq v1, v3, :cond_1
 
@@ -185,7 +185,7 @@
 
     sub-int/2addr v4, v3
 
-    iget-object v6, p0, Lac/c;->g:Ljava/nio/charset/Charset;
+    iget-object v6, p0, Lac/c;->h:Ljava/nio/charset/Charset;
 
     invoke-virtual {v6}, Ljava/nio/charset/Charset;->name()Ljava/lang/String;
 
@@ -196,7 +196,7 @@
     add-int/lit8 v1, v1, 0x1
 
     .line 9
-    iput v1, p0, Lac/c;->i:I
+    iput v1, p0, Lac/c;->j:I
 
     .line 10
     monitor-exit v0
@@ -212,9 +212,9 @@
     :cond_3
     new-instance v1, Lac/c$a;
 
-    iget v2, p0, Lac/c;->j:I
+    iget v2, p0, Lac/c;->k:I
 
-    iget v4, p0, Lac/c;->i:I
+    iget v4, p0, Lac/c;->j:I
 
     sub-int/2addr v2, v4
 
@@ -224,11 +224,11 @@
 
     .line 12
     :cond_4
-    iget-object v2, p0, Lac/c;->h:[B
+    iget-object v2, p0, Lac/c;->i:[B
 
-    iget v4, p0, Lac/c;->i:I
+    iget v4, p0, Lac/c;->j:I
 
-    iget v5, p0, Lac/c;->j:I
+    iget v5, p0, Lac/c;->k:I
 
     sub-int/2addr v5, v4
 
@@ -237,28 +237,28 @@
     const/4 v2, -0x1
 
     .line 13
-    iput v2, p0, Lac/c;->j:I
+    iput v2, p0, Lac/c;->k:I
 
     .line 14
     invoke-virtual {p0}, Lac/c;->a()V
 
     .line 15
-    iget v2, p0, Lac/c;->i:I
+    iget v2, p0, Lac/c;->j:I
 
     :goto_2
-    iget v4, p0, Lac/c;->j:I
+    iget v4, p0, Lac/c;->k:I
 
     if-eq v2, v4, :cond_4
 
     .line 16
-    iget-object v4, p0, Lac/c;->h:[B
+    iget-object v4, p0, Lac/c;->i:[B
 
     aget-byte v5, v4, v2
 
     if-ne v5, v3, :cond_6
 
     .line 17
-    iget v3, p0, Lac/c;->i:I
+    iget v3, p0, Lac/c;->j:I
 
     if-eq v2, v3, :cond_5
 
@@ -271,7 +271,7 @@
     add-int/lit8 v2, v2, 0x1
 
     .line 19
-    iput v2, p0, Lac/c;->i:I
+    iput v2, p0, Lac/c;->j:I
 
     .line 20
     invoke-virtual {v1}, Lac/c$a;->toString()Ljava/lang/String;
@@ -323,23 +323,23 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lac/c;->f:Ljava/io/InputStream;
+    iget-object v0, p0, Lac/c;->g:Ljava/io/InputStream;
 
     monitor-enter v0
 
     .line 2
     :try_start_0
-    iget-object v1, p0, Lac/c;->h:[B
+    iget-object v1, p0, Lac/c;->i:[B
 
     if-eqz v1, :cond_0
 
     const/4 v1, 0x0
 
     .line 3
-    iput-object v1, p0, Lac/c;->h:[B
+    iput-object v1, p0, Lac/c;->i:[B
 
     .line 4
-    iget-object v1, p0, Lac/c;->f:Ljava/io/InputStream;
+    iget-object v1, p0, Lac/c;->g:Ljava/io/InputStream;
 
     invoke-virtual {v1}, Ljava/io/InputStream;->close()V
 

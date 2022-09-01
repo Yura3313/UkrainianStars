@@ -240,7 +240,7 @@
 
     .line 6
     :try_start_1
-    sget-object v3, Li7/i;->f:Li7/i;
+    sget-object v3, Li7/i;->g:Li7/i;
 
     invoke-virtual {v0, v2, v3}, Li7/e;->q(Li7/c;Li7/i;)V
     :try_end_1
@@ -482,7 +482,7 @@
     const-string v2, "clear PII should not be called after starting a Helpshift session"
 
     .line 25
-    invoke-static {v1, v2, v3, v3}, Landroidx/savedstate/d;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v1, v2, v3, v3}, Le5/i;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
 
     goto :goto_0
 
@@ -496,10 +496,10 @@
     move-result-object v4
 
     .line 28
-    iget-object v5, v4, Li7/c;->g:Ljava/lang/String;
+    iget-object v5, v4, Li7/c;->h:Ljava/lang/String;
 
     .line 29
-    invoke-static {v5}, Lcom/google/android/play/core/appupdate/g;->b(Ljava/lang/String;)Z
+    invoke-static {v5}, La5/b0;->d(Ljava/lang/String;)Z
 
     move-result v5
 
@@ -524,31 +524,31 @@
 
     .line 33
     :cond_2
-    iget-object v6, v4, Li7/c;->f:Ljava/lang/Long;
+    iget-object v6, v4, Li7/c;->g:Ljava/lang/Long;
 
     .line 34
-    iget-object v7, v4, Li7/c;->g:Ljava/lang/String;
+    iget-object v7, v4, Li7/c;->h:Ljava/lang/String;
 
     .line 35
-    iget-object v10, v4, Li7/c;->j:Ljava/lang/String;
+    iget-object v10, v4, Li7/c;->k:Ljava/lang/String;
 
     .line 36
-    iget-boolean v11, v4, Li7/c;->k:Z
+    iget-boolean v11, v4, Li7/c;->l:Z
 
     .line 37
-    iget-boolean v12, v4, Li7/c;->l:Z
+    iget-boolean v12, v4, Li7/c;->m:Z
 
     .line 38
-    iget-boolean v13, v4, Li7/c;->m:Z
+    iget-boolean v13, v4, Li7/c;->n:Z
 
     .line 39
-    iget-object v14, v4, Li7/c;->n:Ljava/lang/String;
+    iget-object v14, v4, Li7/c;->o:Ljava/lang/String;
 
     .line 40
-    iget-boolean v15, v4, Li7/c;->o:Z
+    iget-boolean v15, v4, Li7/c;->p:Z
 
     .line 41
-    iget-object v9, v4, Li7/c;->p:Li7/i;
+    iget-object v9, v4, Li7/c;->q:Li7/i;
 
     const/4 v8, 0x0
 

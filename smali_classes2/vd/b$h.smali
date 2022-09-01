@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field public final synthetic f:Lvd/b;
+.field public final synthetic g:Lvd/b;
 
 
 # direct methods
 .method public constructor <init>(Lvd/b;)V
     .locals 0
 
-    iput-object p1, p0, Lvd/b$h;->f:Lvd/b;
+    iput-object p1, p0, Lvd/b$h;->g:Lvd/b;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -45,7 +45,7 @@
     move-result-object p1
 
     .line 2
-    iget-object p1, p1, Lae/u;->m:La5/d0;
+    iget-object p1, p1, Lae/u;->m:Lpe/a;
 
     const-string v0, "Settings"
 
@@ -56,12 +56,12 @@
     const/16 v3, 0x18
 
     .line 3
-    invoke-static {p1, v0, v1, v2, v3}, La5/d0;->a(La5/d0;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;I)V
+    invoke-static {p1, v0, v1, v2, v3}, Lpe/a;->e(Lpe/a;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;I)V
 
     .line 4
-    iget-object p1, p0, Lvd/b$h;->f:Lvd/b;
+    iget-object p1, p0, Lvd/b$h;->g:Lvd/b;
 
-    invoke-static {p1}, Lcom/android/billingclient/api/c0;->e(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
+    invoke-static {p1}, Lcom/android/billingclient/api/b0;->f(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
 
     move-result-object p1
 
@@ -73,7 +73,7 @@
 
     invoke-direct {v0, v1}, Lcom/supercell/id/ui/faq/FaqFragment$BackStackEntry;-><init>(Z)V
 
-    sget-object v1, Lcom/supercell/id/ui/MainActivity;->s:Ljava/lang/ref/WeakReference;
+    sget-object v1, Lcom/supercell/id/ui/MainActivity;->t:Ljava/lang/ref/WeakReference;
 
     .line 5
     invoke-virtual {p1, v0, v2}, Lcom/supercell/id/ui/MainActivity;->z(Lcom/supercell/id/ui/BackStack$Entry;Lcom/supercell/id/ui/BackStack$b;)V

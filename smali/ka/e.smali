@@ -25,7 +25,7 @@
     new-instance v0, Lka/d;
 
     .line 4
-    sget-object v1, Lcom/helpshift/util/u;->b:Landroid/content/Context;
+    sget-object v1, Lcom/helpshift/util/t;->b:Landroid/content/Context;
 
     .line 5
     invoke-direct {v0, v1}, Lka/d;-><init>(Landroid/content/Context;)V
@@ -200,7 +200,7 @@
     const-string v3, "Error in activating user in finally block"
 
     .line 19
-    invoke-static {v0, v3, p1}, Landroidx/savedstate/d;->g(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v0, v3, p1}, Le5/i;->i(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_1
 
@@ -223,7 +223,7 @@
     const-string v4, "Error in activating user"
 
     .line 20
-    invoke-static {v2, v4, p1}, Landroidx/savedstate/d;->g(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v2, v4, p1}, Le5/i;->i(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
     :try_end_4
     .catchall {:try_start_4 .. :try_end_4} :catchall_0
 
@@ -247,7 +247,7 @@
     const-string v3, "Error in activating user in finally block"
 
     .line 22
-    invoke-static {v2, v3, p1}, Landroidx/savedstate/d;->g(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v2, v3, p1}, Le5/i;->i(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
     :try_end_6
     .catchall {:try_start_6 .. :try_end_6} :catchall_1
 
@@ -279,7 +279,7 @@
     const-string v3, "Error in activating user in finally block"
 
     .line 25
-    invoke-static {v2, v3, v0}, Landroidx/savedstate/d;->g(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v2, v3, v0}, Le5/i;->i(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
     .line 26
     :cond_4
@@ -474,7 +474,7 @@
     const-string v5, "Error in reading all users"
 
     .line 9
-    invoke-static {v4, v5, v3}, Landroidx/savedstate/d;->g(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v4, v5, v3}, Le5/i;->i(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 

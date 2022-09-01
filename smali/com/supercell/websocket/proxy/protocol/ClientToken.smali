@@ -1286,25 +1286,25 @@
 
     .line 2
     :cond_0
-    sget-object v0, Lce/a;->i:Lce/a;
+    sget-object v0, Lce/a;->j:Lce/a;
 
     goto :goto_0
 
     .line 3
     :cond_1
-    sget-object v0, Lce/a;->h:Lce/a;
+    sget-object v0, Lce/a;->i:Lce/a;
 
     goto :goto_0
 
     .line 4
     :cond_2
-    sget-object v0, Lce/a;->g:Lce/a;
+    sget-object v0, Lce/a;->h:Lce/a;
 
     :goto_0
     if-nez v0, :cond_3
 
     .line 5
-    sget-object v0, Lce/a;->j:Lce/a;
+    sget-object v0, Lce/a;->k:Lce/a;
 
     :cond_3
     return-object v0

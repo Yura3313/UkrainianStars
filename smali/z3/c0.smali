@@ -40,7 +40,7 @@
     .line 1
     iget-object v0, p0, Lz3/c0;->c:Ljava/lang/String;
 
-    invoke-static {p1, v0}, Lz3/f3;->o0(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {p1, v0}, Lz3/g3;->o0(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v0
 

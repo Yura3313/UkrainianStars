@@ -7,7 +7,7 @@
 
 
 # static fields
-.field public static final synthetic f:I
+.field public static final synthetic g:I
 
 
 # direct methods
@@ -50,7 +50,7 @@
     check-cast p1, Lz1/l;
 
     .line 2
-    iget p1, p1, Lz1/l;->g:I
+    iget p1, p1, Lz1/l;->h:I
 
     .line 3
     invoke-virtual {p3}, Landroid/os/Parcel;->writeNoException()V

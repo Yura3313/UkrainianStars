@@ -14,14 +14,14 @@
         ">",
         "Ljava/lang/Object;",
         "Ljava/util/Comparator<",
-        "Lvc/k;",
+        "Lvc/j;",
         ">;"
     }
 .end annotation
 
 
 # static fields
-.field public static final f:Lpd/f;
+.field public static final g:Lpd/f;
 
 
 # direct methods
@@ -32,7 +32,7 @@
 
     invoke-direct {v0}, Lpd/f;-><init>()V
 
-    sput-object v0, Lpd/f;->f:Lpd/f;
+    sput-object v0, Lpd/f;->g:Lpd/f;
 
     return-void
 .end method
@@ -51,25 +51,25 @@
     .locals 4
 
     .line 1
-    check-cast p1, Lvc/k;
+    check-cast p1, Lvc/j;
 
-    check-cast p2, Lvc/k;
+    check-cast p2, Lvc/j;
 
     .line 2
-    invoke-virtual {p1}, Lvc/k;->c()Z
+    invoke-virtual {p1}, Lvc/j;->c()Z
 
     move-result v0
 
     .line 3
-    invoke-virtual {p2}, Lvc/k;->c()Z
+    invoke-virtual {p2}, Lvc/j;->c()Z
 
     move-result v1
 
     .line 4
-    iget-boolean v2, p1, Lvc/k;->a:Z
+    iget-boolean v2, p1, Lvc/j;->a:Z
 
     .line 5
-    iget-boolean v3, p2, Lvc/k;->a:Z
+    iget-boolean v3, p2, Lvc/j;->a:Z
 
     if-eqz v0, :cond_0
 
@@ -106,11 +106,11 @@
 
     .line 6
     :cond_3
-    invoke-virtual {p1}, Lvc/k;->b()Ljava/lang/String;
+    invoke-virtual {p1}, Lvc/j;->b()Ljava/lang/String;
 
     move-result-object p1
 
-    invoke-virtual {p2}, Lvc/k;->b()Ljava/lang/String;
+    invoke-virtual {p2}, Lvc/j;->b()Ljava/lang/String;
 
     move-result-object p2
 

@@ -14,17 +14,17 @@
 
 
 # static fields
-.field public static final enum g:Lcom/google/protobuf/w;
-
 .field public static final enum h:Lcom/google/protobuf/w;
 
-.field public static final i:[Lcom/google/protobuf/w;
+.field public static final enum i:Lcom/google/protobuf/w;
 
-.field public static final synthetic j:[Lcom/google/protobuf/w;
+.field public static final j:[Lcom/google/protobuf/w;
+
+.field public static final synthetic k:[Lcom/google/protobuf/w;
 
 
 # instance fields
-.field public final f:I
+.field public final g:I
 
 
 # direct methods
@@ -34,7 +34,7 @@
     .line 1
     new-instance v6, Lcom/google/protobuf/w;
 
-    sget-object v7, Lcom/google/protobuf/b0;->l:Lcom/google/protobuf/b0;
+    sget-object v7, Lcom/google/protobuf/b0;->m:Lcom/google/protobuf/b0;
 
     const-string v1, "DOUBLE"
 
@@ -53,7 +53,7 @@
     .line 2
     new-instance v14, Lcom/google/protobuf/w;
 
-    sget-object v15, Lcom/google/protobuf/b0;->k:Lcom/google/protobuf/b0;
+    sget-object v15, Lcom/google/protobuf/b0;->l:Lcom/google/protobuf/b0;
 
     const-string v9, "FLOAT"
 
@@ -72,7 +72,7 @@
     .line 3
     new-instance v8, Lcom/google/protobuf/w;
 
-    sget-object v9, Lcom/google/protobuf/b0;->j:Lcom/google/protobuf/b0;
+    sget-object v9, Lcom/google/protobuf/b0;->k:Lcom/google/protobuf/b0;
 
     const-string v1, "INT64"
 
@@ -102,7 +102,7 @@
     .line 5
     new-instance v11, Lcom/google/protobuf/w;
 
-    sget-object v12, Lcom/google/protobuf/b0;->i:Lcom/google/protobuf/b0;
+    sget-object v12, Lcom/google/protobuf/b0;->j:Lcom/google/protobuf/b0;
 
     const-string v17, "INT32"
 
@@ -149,7 +149,7 @@
     .line 8
     new-instance v23, Lcom/google/protobuf/w;
 
-    sget-object v24, Lcom/google/protobuf/b0;->m:Lcom/google/protobuf/b0;
+    sget-object v24, Lcom/google/protobuf/b0;->n:Lcom/google/protobuf/b0;
 
     const-string v18, "BOOL"
 
@@ -168,7 +168,7 @@
     .line 9
     new-instance v17, Lcom/google/protobuf/w;
 
-    sget-object v18, Lcom/google/protobuf/b0;->n:Lcom/google/protobuf/b0;
+    sget-object v18, Lcom/google/protobuf/b0;->o:Lcom/google/protobuf/b0;
 
     const-string v1, "STRING"
 
@@ -185,7 +185,7 @@
     .line 10
     new-instance v19, Lcom/google/protobuf/w;
 
-    sget-object v20, Lcom/google/protobuf/b0;->q:Lcom/google/protobuf/b0;
+    sget-object v20, Lcom/google/protobuf/b0;->r:Lcom/google/protobuf/b0;
 
     const-string v26, "MESSAGE"
 
@@ -204,7 +204,7 @@
     .line 11
     new-instance v21, Lcom/google/protobuf/w;
 
-    sget-object v22, Lcom/google/protobuf/b0;->o:Lcom/google/protobuf/b0;
+    sget-object v22, Lcom/google/protobuf/b0;->p:Lcom/google/protobuf/b0;
 
     const-string v1, "BYTES"
 
@@ -236,7 +236,7 @@
     .line 13
     new-instance v32, Lcom/google/protobuf/w;
 
-    sget-object v33, Lcom/google/protobuf/b0;->p:Lcom/google/protobuf/b0;
+    sget-object v33, Lcom/google/protobuf/b0;->q:Lcom/google/protobuf/b0;
 
     const-string v27, "ENUM"
 
@@ -597,7 +597,7 @@
 
     invoke-direct/range {v0 .. v5}, Lcom/google/protobuf/w;-><init>(Ljava/lang/String;IIILcom/google/protobuf/b0;)V
 
-    sput-object v48, Lcom/google/protobuf/w;->g:Lcom/google/protobuf/w;
+    sput-object v48, Lcom/google/protobuf/w;->h:Lcom/google/protobuf/w;
 
     .line 37
     new-instance v7, Lcom/google/protobuf/w;
@@ -792,7 +792,7 @@
 
     invoke-direct/range {v0 .. v5}, Lcom/google/protobuf/w;-><init>(Ljava/lang/String;IIILcom/google/protobuf/b0;)V
 
-    sput-object v12, Lcom/google/protobuf/w;->h:Lcom/google/protobuf/w;
+    sput-object v12, Lcom/google/protobuf/w;->i:Lcom/google/protobuf/w;
 
     .line 50
     new-instance v9, Lcom/google/protobuf/w;
@@ -814,7 +814,7 @@
     .line 51
     new-instance v0, Lcom/google/protobuf/w;
 
-    sget-object v62, Lcom/google/protobuf/b0;->h:Lcom/google/protobuf/b0;
+    sget-object v62, Lcom/google/protobuf/b0;->i:Lcom/google/protobuf/b0;
 
     const-string v58, "MAP"
 
@@ -1037,7 +1037,7 @@
     aput-object v0, v1, v3
 
     .line 52
-    sput-object v1, Lcom/google/protobuf/w;->j:[Lcom/google/protobuf/w;
+    sput-object v1, Lcom/google/protobuf/w;->k:[Lcom/google/protobuf/w;
 
     .line 53
     invoke-static {}, Lcom/google/protobuf/w;->values()[Lcom/google/protobuf/w;
@@ -1049,7 +1049,7 @@
 
     new-array v1, v1, [Lcom/google/protobuf/w;
 
-    sput-object v1, Lcom/google/protobuf/w;->i:[Lcom/google/protobuf/w;
+    sput-object v1, Lcom/google/protobuf/w;->j:[Lcom/google/protobuf/w;
 
     .line 55
     array-length v1, v0
@@ -1060,9 +1060,9 @@
     aget-object v3, v0, v2
 
     .line 56
-    sget-object v4, Lcom/google/protobuf/w;->i:[Lcom/google/protobuf/w;
+    sget-object v4, Lcom/google/protobuf/w;->j:[Lcom/google/protobuf/w;
 
-    iget v5, v3, Lcom/google/protobuf/w;->f:I
+    iget v5, v3, Lcom/google/protobuf/w;->g:I
 
     aput-object v3, v4, v5
 
@@ -1089,7 +1089,7 @@
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 2
-    iput p3, p0, Lcom/google/protobuf/w;->f:I
+    iput p3, p0, Lcom/google/protobuf/w;->g:I
 
     if-eqz p4, :cond_3
 
@@ -1148,7 +1148,7 @@
 .method public static values()[Lcom/google/protobuf/w;
     .locals 1
 
-    sget-object v0, Lcom/google/protobuf/w;->j:[Lcom/google/protobuf/w;
+    sget-object v0, Lcom/google/protobuf/w;->k:[Lcom/google/protobuf/w;
 
     invoke-virtual {v0}, [Lcom/google/protobuf/w;->clone()Ljava/lang/Object;
 

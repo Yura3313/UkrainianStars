@@ -4,13 +4,13 @@
 
 
 # instance fields
-.field public final a:Lpb/e0;
+.field public final a:Lpb/f0;
 
 .field public final b:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
-            "Lpb/i0;",
+            "Lpb/j0;",
             ">;"
         }
     .end annotation
@@ -22,7 +22,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
-            "Lpb/i0;",
+            "Lpb/j0;",
             ">;"
         }
     .end annotation
@@ -30,7 +30,7 @@
 
 
 # direct methods
-.method public constructor <init>(Lpb/e0;)V
+.method public constructor <init>(Lpb/f0;)V
     .locals 1
 
     .line 1
@@ -49,7 +49,7 @@
     iput-boolean v0, p0, Lpb/o;->c:Z
 
     .line 4
-    iput-object p1, p0, Lpb/o;->a:Lpb/e0;
+    iput-object p1, p0, Lpb/o;->a:Lpb/f0;
 
     return-void
 .end method
@@ -81,11 +81,11 @@
 
     move-result-object v1
 
-    check-cast v1, Lpb/i0;
+    check-cast v1, Lpb/j0;
 
     .line 2
     :try_start_0
-    invoke-interface {v1, p1}, Lpb/i0;->m(Lcom/helpshift/websockets/WebSocketException;)V
+    invoke-interface {v1, p1}, Lpb/j0;->m(Lcom/helpshift/websockets/WebSocketException;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -94,7 +94,7 @@
     .line 3
     :catchall_0
     :try_start_1
-    invoke-interface {v1}, Lpb/i0;->k()V
+    invoke-interface {v1}, Lpb/j0;->k()V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
@@ -109,7 +109,7 @@
     return-void
 .end method
 
-.method public final b(Lcom/helpshift/websockets/WebSocketException;Lpb/g0;)V
+.method public final b(Lcom/helpshift/websockets/WebSocketException;Lpb/h0;)V
     .locals 1
 
     .line 1
@@ -134,11 +134,11 @@
 
     move-result-object v0
 
-    check-cast v0, Lpb/i0;
+    check-cast v0, Lpb/j0;
 
     .line 2
     :try_start_0
-    invoke-interface {v0, p1}, Lpb/i0;->s(Lcom/helpshift/websockets/WebSocketException;)V
+    invoke-interface {v0, p1}, Lpb/j0;->s(Lcom/helpshift/websockets/WebSocketException;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -147,7 +147,7 @@
     .line 3
     :catchall_0
     :try_start_1
-    invoke-interface {v0}, Lpb/i0;->k()V
+    invoke-interface {v0}, Lpb/j0;->k()V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
@@ -162,7 +162,7 @@
     return-void
 .end method
 
-.method public final c(Lpb/k0;)V
+.method public final c(Lpb/l0;)V
     .locals 1
 
     .line 1
@@ -187,11 +187,11 @@
 
     move-result-object v0
 
-    check-cast v0, Lpb/i0;
+    check-cast v0, Lpb/j0;
 
     .line 2
     :try_start_0
-    invoke-interface {v0}, Lpb/i0;->z()V
+    invoke-interface {v0}, Lpb/j0;->z()V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -200,7 +200,7 @@
     .line 3
     :catchall_0
     :try_start_1
-    invoke-interface {v0}, Lpb/i0;->k()V
+    invoke-interface {v0}, Lpb/j0;->k()V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
@@ -240,11 +240,11 @@
 
     move-result-object v1
 
-    check-cast v1, Lpb/i0;
+    check-cast v1, Lpb/j0;
 
     .line 2
     :try_start_0
-    invoke-interface {v1, p1}, Lpb/i0;->t(Lcom/helpshift/websockets/WebSocketException;)V
+    invoke-interface {v1, p1}, Lpb/j0;->t(Lcom/helpshift/websockets/WebSocketException;)V
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -253,7 +253,7 @@
     .line 3
     :catchall_0
     :try_start_1
-    invoke-interface {v1}, Lpb/i0;->k()V
+    invoke-interface {v1}, Lpb/j0;->k()V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
@@ -274,7 +274,7 @@
         value = {
             "()",
             "Ljava/util/List<",
-            "Lpb/i0;",
+            "Lpb/j0;",
             ">;"
         }
     .end annotation
@@ -328,7 +328,7 @@
 
     move-result-object v3
 
-    check-cast v3, Lpb/i0;
+    check-cast v3, Lpb/j0;
 
     .line 7
     invoke-virtual {v1, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z

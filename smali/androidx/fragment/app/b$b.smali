@@ -66,7 +66,7 @@
     iget-object v0, v0, Landroidx/fragment/app/j0$d;->a:Landroidx/fragment/app/j0$d$c;
 
     .line 6
-    sget-object v2, Landroidx/fragment/app/j0$d$c;->g:Landroidx/fragment/app/j0$d$c;
+    sget-object v2, Landroidx/fragment/app/j0$d$c;->h:Landroidx/fragment/app/j0$d$c;
 
     const/4 v3, 0x1
 

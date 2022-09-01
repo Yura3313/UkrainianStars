@@ -23,9 +23,9 @@
 
 
 # instance fields
-.field public f:Landroid/os/Bundle;
+.field public g:Landroid/os/Bundle;
 
-.field public g:Lm/a;
+.field public h:Lm/a;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Map<",
@@ -36,7 +36,7 @@
     .end annotation
 .end field
 
-.field public h:Lcom/google/firebase/messaging/RemoteMessage$a;
+.field public i:Lcom/google/firebase/messaging/RemoteMessage$a;
 
 
 # direct methods
@@ -59,7 +59,7 @@
     invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lcom/google/firebase/messaging/RemoteMessage;->f:Landroid/os/Bundle;
+    iput-object p1, p0, Lcom/google/firebase/messaging/RemoteMessage;->g:Landroid/os/Bundle;
 
     return-void
 .end method
@@ -70,11 +70,11 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/google/firebase/messaging/RemoteMessage;->h:Lcom/google/firebase/messaging/RemoteMessage$a;
+    iget-object v0, p0, Lcom/google/firebase/messaging/RemoteMessage;->i:Lcom/google/firebase/messaging/RemoteMessage$a;
 
     if-nez v0, :cond_0
 
-    iget-object v0, p0, Lcom/google/firebase/messaging/RemoteMessage;->f:Landroid/os/Bundle;
+    iget-object v0, p0, Lcom/google/firebase/messaging/RemoteMessage;->g:Landroid/os/Bundle;
 
     invoke-static {v0}, Lb6/b;->h(Landroid/os/Bundle;)Z
 
@@ -85,15 +85,15 @@
     .line 2
     new-instance v0, Lcom/google/firebase/messaging/RemoteMessage$a;
 
-    iget-object v1, p0, Lcom/google/firebase/messaging/RemoteMessage;->f:Landroid/os/Bundle;
+    iget-object v1, p0, Lcom/google/firebase/messaging/RemoteMessage;->g:Landroid/os/Bundle;
 
     invoke-direct {v0, v1}, Lcom/google/firebase/messaging/RemoteMessage$a;-><init>(Landroid/os/Bundle;)V
 
-    iput-object v0, p0, Lcom/google/firebase/messaging/RemoteMessage;->h:Lcom/google/firebase/messaging/RemoteMessage$a;
+    iput-object v0, p0, Lcom/google/firebase/messaging/RemoteMessage;->i:Lcom/google/firebase/messaging/RemoteMessage$a;
 
     .line 3
     :cond_0
-    iget-object v0, p0, Lcom/google/firebase/messaging/RemoteMessage;->h:Lcom/google/firebase/messaging/RemoteMessage$a;
+    iget-object v0, p0, Lcom/google/firebase/messaging/RemoteMessage;->i:Lcom/google/firebase/messaging/RemoteMessage$a;
 
     return-object v0
 .end method
@@ -107,7 +107,7 @@
     move-result p2
 
     .line 2
-    iget-object v0, p0, Lcom/google/firebase/messaging/RemoteMessage;->f:Landroid/os/Bundle;
+    iget-object v0, p0, Lcom/google/firebase/messaging/RemoteMessage;->g:Landroid/os/Bundle;
 
     const/4 v1, 0x2
 

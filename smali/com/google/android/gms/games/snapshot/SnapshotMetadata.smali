@@ -26,13 +26,13 @@
 .method public abstract B1()Landroid/net/Uri;
 .end method
 
-.method public abstract N1()Lcom/google/android/gms/games/Player;
+.method public abstract M1()Lcom/google/android/gms/games/Player;
 .end method
 
 .method public abstract S0()J
 .end method
 
-.method public abstract V1()Z
+.method public abstract U1()Z
 .end method
 
 .method public abstract e()Lcom/google/android/gms/games/Game;

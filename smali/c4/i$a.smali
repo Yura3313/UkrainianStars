@@ -20,7 +20,7 @@
 
 
 # instance fields
-.field public final f:Ljava/util/concurrent/CountDownLatch;
+.field public final g:Ljava/util/concurrent/CountDownLatch;
 
 
 # direct methods
@@ -37,7 +37,7 @@
 
     invoke-direct {v0, v1}, Ljava/util/concurrent/CountDownLatch;-><init>(I)V
 
-    iput-object v0, p0, Lc4/i$a;->f:Ljava/util/concurrent/CountDownLatch;
+    iput-object v0, p0, Lc4/i$a;->g:Ljava/util/concurrent/CountDownLatch;
 
     return-void
 .end method
@@ -47,7 +47,7 @@
 .method public final c()V
     .locals 1
 
-    iget-object v0, p0, Lc4/i$a;->f:Ljava/util/concurrent/CountDownLatch;
+    iget-object v0, p0, Lc4/i$a;->g:Ljava/util/concurrent/CountDownLatch;
 
     invoke-virtual {v0}, Ljava/util/concurrent/CountDownLatch;->countDown()V
 
@@ -57,7 +57,7 @@
 .method public final onFailure(Ljava/lang/Exception;)V
     .locals 0
 
-    iget-object p1, p0, Lc4/i$a;->f:Ljava/util/concurrent/CountDownLatch;
+    iget-object p1, p0, Lc4/i$a;->g:Ljava/util/concurrent/CountDownLatch;
 
     invoke-virtual {p1}, Ljava/util/concurrent/CountDownLatch;->countDown()V
 
@@ -67,7 +67,7 @@
 .method public final onSuccess(Ljava/lang/Object;)V
     .locals 0
 
-    iget-object p1, p0, Lc4/i$a;->f:Ljava/util/concurrent/CountDownLatch;
+    iget-object p1, p0, Lc4/i$a;->g:Ljava/util/concurrent/CountDownLatch;
 
     invoke-virtual {p1}, Ljava/util/concurrent/CountDownLatch;->countDown()V
 

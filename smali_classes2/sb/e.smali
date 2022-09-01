@@ -581,9 +581,9 @@
     .line 26
     new-instance v6, Lrb/o;
 
-    iget v8, v7, Lrb/o;->g:I
+    iget v8, v7, Lrb/o;->h:I
 
-    iget v7, v7, Lrb/o;->f:I
+    iget v7, v7, Lrb/o;->g:I
 
     invoke-direct {v6, v8, v7}, Lrb/o;-><init>(II)V
 
@@ -626,9 +626,9 @@
     iput-object p1, p0, Lsb/e;->i:Lrb/o;
 
     .line 33
-    iget v1, p1, Lrb/o;->f:I
+    iget v1, p1, Lrb/o;->g:I
 
-    iget p1, p1, Lrb/o;->g:I
+    iget p1, p1, Lrb/o;->h:I
 
     invoke-virtual {v0, v1, p1}, Landroid/hardware/Camera$Parameters;->setPreviewSize(II)V
 

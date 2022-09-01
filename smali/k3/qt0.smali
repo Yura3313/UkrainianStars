@@ -1,358 +1,121 @@
-.class public final Lk3/qt0;
+.class public interface abstract Lk3/qt0;
 .super Ljava/lang/Object;
-.source "com.google.android.gms:play-services-ads@@19.3.0"
-
-# interfaces
-.implements Landroid/app/Application$ActivityLifecycleCallbacks;
+.source "com.google.android.gms:play-services-ads-lite@@19.3.0"
 
 
-# instance fields
-.field public final f:Landroid/app/Application;
-
-.field public final g:Ljava/lang/ref/WeakReference;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/lang/ref/WeakReference<",
-            "Landroid/app/Application$ActivityLifecycleCallbacks;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field public h:Z
-
-
-# direct methods
-.method public constructor <init>(Landroid/app/Application;Landroid/app/Application$ActivityLifecycleCallbacks;)V
-    .locals 1
-
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    const/4 v0, 0x0
-
-    .line 2
-    iput-boolean v0, p0, Lk3/qt0;->h:Z
-
-    .line 3
-    new-instance v0, Ljava/lang/ref/WeakReference;
-
-    invoke-direct {v0, p2}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
-
-    iput-object v0, p0, Lk3/qt0;->g:Ljava/lang/ref/WeakReference;
-
-    .line 4
-    iput-object p1, p0, Lk3/qt0;->f:Landroid/app/Application;
-
-    return-void
-.end method
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<T:",
+        "Ljava/lang/Object;",
+        ">",
+        "Ljava/lang/Object;"
+    }
+.end annotation
 
 
 # virtual methods
-.method public final onActivityCreated(Landroid/app/Activity;Landroid/os/Bundle;)V
-    .locals 1
-
-    .line 1
-    :try_start_0
-    iget-object v0, p0, Lk3/qt0;->g:Ljava/lang/ref/WeakReference;
-
-    invoke-virtual {v0}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Landroid/app/Application$ActivityLifecycleCallbacks;
-
-    if-eqz v0, :cond_0
-
-    .line 2
-    invoke-interface {v0, p1, p2}, Landroid/app/Application$ActivityLifecycleCallbacks;->onActivityCreated(Landroid/app/Activity;Landroid/os/Bundle;)V
-
-    goto :goto_0
-
-    .line 3
-    :cond_0
-    iget-boolean p1, p0, Lk3/qt0;->h:Z
-
-    if-nez p1, :cond_1
-
-    .line 4
-    iget-object p1, p0, Lk3/qt0;->f:Landroid/app/Application;
-
-    invoke-virtual {p1, p0}, Landroid/app/Application;->unregisterActivityLifecycleCallbacks(Landroid/app/Application$ActivityLifecycleCallbacks;)V
-
-    const/4 p1, 0x1
-
-    .line 5
-    iput-boolean p1, p0, Lk3/qt0;->h:Z
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
-
-    :catch_0
-    :cond_1
-    :goto_0
-    return-void
+.method public abstract a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;TT;)Z"
+        }
+    .end annotation
 .end method
 
-.method public final onActivityDestroyed(Landroid/app/Activity;)V
-    .locals 1
-
-    .line 1
-    :try_start_0
-    iget-object v0, p0, Lk3/qt0;->g:Ljava/lang/ref/WeakReference;
-
-    invoke-virtual {v0}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Landroid/app/Application$ActivityLifecycleCallbacks;
-
-    if-eqz v0, :cond_0
-
-    .line 2
-    invoke-interface {v0, p1}, Landroid/app/Application$ActivityLifecycleCallbacks;->onActivityDestroyed(Landroid/app/Activity;)V
-
-    goto :goto_0
-
-    .line 3
-    :cond_0
-    iget-boolean p1, p0, Lk3/qt0;->h:Z
-
-    if-nez p1, :cond_1
-
-    .line 4
-    iget-object p1, p0, Lk3/qt0;->f:Landroid/app/Application;
-
-    invoke-virtual {p1, p0}, Landroid/app/Application;->unregisterActivityLifecycleCallbacks(Landroid/app/Application$ActivityLifecycleCallbacks;)V
-
-    const/4 p1, 0x1
-
-    .line 5
-    iput-boolean p1, p0, Lk3/qt0;->h:Z
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
-
-    :catch_0
-    :cond_1
-    :goto_0
-    return-void
+.method public abstract b(Ljava/lang/Object;)I
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;)I"
+        }
+    .end annotation
 .end method
 
-.method public final onActivityPaused(Landroid/app/Activity;)V
-    .locals 1
-
-    .line 1
-    :try_start_0
-    iget-object v0, p0, Lk3/qt0;->g:Ljava/lang/ref/WeakReference;
-
-    invoke-virtual {v0}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Landroid/app/Application$ActivityLifecycleCallbacks;
-
-    if-eqz v0, :cond_0
-
-    .line 2
-    invoke-interface {v0, p1}, Landroid/app/Application$ActivityLifecycleCallbacks;->onActivityPaused(Landroid/app/Activity;)V
-
-    goto :goto_0
-
-    .line 3
-    :cond_0
-    iget-boolean p1, p0, Lk3/qt0;->h:Z
-
-    if-nez p1, :cond_1
-
-    .line 4
-    iget-object p1, p0, Lk3/qt0;->f:Landroid/app/Application;
-
-    invoke-virtual {p1, p0}, Landroid/app/Application;->unregisterActivityLifecycleCallbacks(Landroid/app/Application$ActivityLifecycleCallbacks;)V
-
-    const/4 p1, 0x1
-
-    .line 5
-    iput-boolean p1, p0, Lk3/qt0;->h:Z
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
-
-    :catch_0
-    :cond_1
-    :goto_0
-    return-void
+.method public abstract c(Ljava/lang/Object;)V
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;)V"
+        }
+    .end annotation
 .end method
 
-.method public final onActivityResumed(Landroid/app/Activity;)V
-    .locals 1
-
-    .line 1
-    :try_start_0
-    iget-object v0, p0, Lk3/qt0;->g:Ljava/lang/ref/WeakReference;
-
-    invoke-virtual {v0}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Landroid/app/Application$ActivityLifecycleCallbacks;
-
-    if-eqz v0, :cond_0
-
-    .line 2
-    invoke-interface {v0, p1}, Landroid/app/Application$ActivityLifecycleCallbacks;->onActivityResumed(Landroid/app/Activity;)V
-
-    goto :goto_0
-
-    .line 3
-    :cond_0
-    iget-boolean p1, p0, Lk3/qt0;->h:Z
-
-    if-nez p1, :cond_1
-
-    .line 4
-    iget-object p1, p0, Lk3/qt0;->f:Landroid/app/Application;
-
-    invoke-virtual {p1, p0}, Landroid/app/Application;->unregisterActivityLifecycleCallbacks(Landroid/app/Application$ActivityLifecycleCallbacks;)V
-
-    const/4 p1, 0x1
-
-    .line 5
-    iput-boolean p1, p0, Lk3/qt0;->h:Z
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
-
-    :catch_0
-    :cond_1
-    :goto_0
-    return-void
+.method public abstract d()Ljava/lang/Object;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()TT;"
+        }
+    .end annotation
 .end method
 
-.method public final onActivitySaveInstanceState(Landroid/app/Activity;Landroid/os/Bundle;)V
-    .locals 1
+.method public abstract e(Ljava/lang/Object;[BIILk3/uq0;)V
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;[BII",
+            "Lk3/uq0;",
+            ")V"
+        }
+    .end annotation
 
-    .line 1
-    :try_start_0
-    iget-object v0, p0, Lk3/qt0;->g:Ljava/lang/ref/WeakReference;
-
-    invoke-virtual {v0}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Landroid/app/Application$ActivityLifecycleCallbacks;
-
-    if-eqz v0, :cond_0
-
-    .line 2
-    invoke-interface {v0, p1, p2}, Landroid/app/Application$ActivityLifecycleCallbacks;->onActivitySaveInstanceState(Landroid/app/Activity;Landroid/os/Bundle;)V
-
-    goto :goto_0
-
-    .line 3
-    :cond_0
-    iget-boolean p1, p0, Lk3/qt0;->h:Z
-
-    if-nez p1, :cond_1
-
-    .line 4
-    iget-object p1, p0, Lk3/qt0;->f:Landroid/app/Application;
-
-    invoke-virtual {p1, p0}, Landroid/app/Application;->unregisterActivityLifecycleCallbacks(Landroid/app/Application$ActivityLifecycleCallbacks;)V
-
-    const/4 p1, 0x1
-
-    .line 5
-    iput-boolean p1, p0, Lk3/qt0;->h:Z
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
-
-    :catch_0
-    :cond_1
-    :goto_0
-    return-void
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
 .end method
 
-.method public final onActivityStarted(Landroid/app/Activity;)V
-    .locals 1
+.method public abstract f(Ljava/lang/Object;Lk3/kr0;Lcom/google/android/gms/internal/ads/t5;)V
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;",
+            "Lk3/kr0;",
+            "Lcom/google/android/gms/internal/ads/t5;",
+            ")V"
+        }
+    .end annotation
 
-    .line 1
-    :try_start_0
-    iget-object v0, p0, Lk3/qt0;->g:Ljava/lang/ref/WeakReference;
-
-    invoke-virtual {v0}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Landroid/app/Application$ActivityLifecycleCallbacks;
-
-    if-eqz v0, :cond_0
-
-    .line 2
-    invoke-interface {v0, p1}, Landroid/app/Application$ActivityLifecycleCallbacks;->onActivityStarted(Landroid/app/Activity;)V
-
-    goto :goto_0
-
-    .line 3
-    :cond_0
-    iget-boolean p1, p0, Lk3/qt0;->h:Z
-
-    if-nez p1, :cond_1
-
-    .line 4
-    iget-object p1, p0, Lk3/qt0;->f:Landroid/app/Application;
-
-    invoke-virtual {p1, p0}, Landroid/app/Application;->unregisterActivityLifecycleCallbacks(Landroid/app/Application$ActivityLifecycleCallbacks;)V
-
-    const/4 p1, 0x1
-
-    .line 5
-    iput-boolean p1, p0, Lk3/qt0;->h:Z
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
-
-    :catch_0
-    :cond_1
-    :goto_0
-    return-void
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
 .end method
 
-.method public final onActivityStopped(Landroid/app/Activity;)V
-    .locals 1
+.method public abstract g(Ljava/lang/Object;Ljava/lang/Object;)V
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;TT;)V"
+        }
+    .end annotation
+.end method
 
-    .line 1
-    :try_start_0
-    iget-object v0, p0, Lk3/qt0;->g:Ljava/lang/ref/WeakReference;
+.method public abstract h(Ljava/lang/Object;)I
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;)I"
+        }
+    .end annotation
+.end method
 
-    invoke-virtual {v0}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
+.method public abstract i(Ljava/lang/Object;Lk3/wu0;)V
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;",
+            "Lk3/wu0;",
+            ")V"
+        }
+    .end annotation
 
-    move-result-object v0
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+.end method
 
-    check-cast v0, Landroid/app/Application$ActivityLifecycleCallbacks;
-
-    if-eqz v0, :cond_0
-
-    .line 2
-    invoke-interface {v0, p1}, Landroid/app/Application$ActivityLifecycleCallbacks;->onActivityStopped(Landroid/app/Activity;)V
-
-    goto :goto_0
-
-    .line 3
-    :cond_0
-    iget-boolean p1, p0, Lk3/qt0;->h:Z
-
-    if-nez p1, :cond_1
-
-    .line 4
-    iget-object p1, p0, Lk3/qt0;->f:Landroid/app/Application;
-
-    invoke-virtual {p1, p0}, Landroid/app/Application;->unregisterActivityLifecycleCallbacks(Landroid/app/Application$ActivityLifecycleCallbacks;)V
-
-    const/4 p1, 0x1
-
-    .line 5
-    iput-boolean p1, p0, Lk3/qt0;->h:Z
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
-
-    :catch_0
-    :cond_1
-    :goto_0
-    return-void
+.method public abstract j(Ljava/lang/Object;)Z
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;)Z"
+        }
+    .end annotation
 .end method

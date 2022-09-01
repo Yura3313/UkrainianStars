@@ -3,14 +3,14 @@
 
 
 # instance fields
-.field public final synthetic f:Lr3/w3;
+.field public final synthetic g:Lr3/w3;
 
 
 # direct methods
 .method public constructor <init>(Lr3/w3;)V
     .locals 0
 
-    iput-object p1, p0, Lr3/c4;->f:Lr3/w3;
+    iput-object p1, p0, Lr3/c4;->g:Lr3/w3;
 
     invoke-direct {p0}, Ljava/util/AbstractSet;-><init>()V
 
@@ -33,7 +33,7 @@
     if-nez v0, :cond_0
 
     .line 3
-    iget-object v0, p0, Lr3/c4;->f:Lr3/w3;
+    iget-object v0, p0, Lr3/c4;->g:Lr3/w3;
 
     invoke-interface {p1}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
@@ -60,7 +60,7 @@
 .method public final clear()V
     .locals 1
 
-    iget-object v0, p0, Lr3/c4;->f:Lr3/w3;
+    iget-object v0, p0, Lr3/c4;->g:Lr3/w3;
 
     invoke-virtual {v0}, Lr3/w3;->clear()V
 
@@ -74,7 +74,7 @@
     check-cast p1, Ljava/util/Map$Entry;
 
     .line 2
-    iget-object v0, p0, Lr3/c4;->f:Lr3/w3;
+    iget-object v0, p0, Lr3/c4;->g:Lr3/w3;
 
     invoke-interface {p1}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
@@ -119,7 +119,7 @@
 
     new-instance v0, Lr3/b4;
 
-    iget-object v1, p0, Lr3/c4;->f:Lr3/w3;
+    iget-object v1, p0, Lr3/c4;->g:Lr3/w3;
 
     invoke-direct {v0, v1}, Lr3/b4;-><init>(Lr3/w3;)V
 
@@ -140,7 +140,7 @@
     if-eqz v0, :cond_0
 
     .line 3
-    iget-object v0, p0, Lr3/c4;->f:Lr3/w3;
+    iget-object v0, p0, Lr3/c4;->g:Lr3/w3;
 
     invoke-interface {p1}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
@@ -161,7 +161,7 @@
 .method public final size()I
     .locals 1
 
-    iget-object v0, p0, Lr3/c4;->f:Lr3/w3;
+    iget-object v0, p0, Lr3/c4;->g:Lr3/w3;
 
     invoke-virtual {v0}, Lr3/w3;->size()I
 

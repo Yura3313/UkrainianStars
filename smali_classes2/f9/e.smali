@@ -104,7 +104,7 @@
     const-string p4, "Helpshift_ConvStpFrg"
 
     .line 13
-    invoke-static {p4, p1, p2, p2}, Landroidx/savedstate/d;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {p4, p1, p2, p2}, Le5/i;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
 
     .line 14
     iget-object p1, p3, Lt8/f;->a:Li7/f;

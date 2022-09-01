@@ -4,14 +4,14 @@
 
 
 # instance fields
-.field public final synthetic f:Lcom/supercell/id/ui/authentication/b;
+.field public final synthetic g:Lcom/supercell/id/ui/authentication/b;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/id/ui/authentication/b;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/ui/authentication/a;->f:Lcom/supercell/id/ui/authentication/b;
+    iput-object p1, p0, Lcom/supercell/id/ui/authentication/a;->g:Lcom/supercell/id/ui/authentication/b;
 
     invoke-direct {p0}, Landroid/text/style/ClickableSpan;-><init>()V
 
@@ -25,7 +25,7 @@
 
     const-string v0, "widget"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     sget-object p1, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
@@ -38,25 +38,25 @@
     iget-object p1, p1, Lae/u;->w:Lsc/a;
 
     .line 3
-    sget-object v0, Lsc/a$a;->g:Lsc/a$a;
+    sget-object v0, Lsc/a$a;->h:Lsc/a$a;
 
     invoke-virtual {p1, v0}, Lsc/a;->b(Lsc/a$a;)V
 
     .line 4
-    iget-object p1, p0, Lcom/supercell/id/ui/authentication/a;->f:Lcom/supercell/id/ui/authentication/b;
+    iget-object p1, p0, Lcom/supercell/id/ui/authentication/a;->g:Lcom/supercell/id/ui/authentication/b;
 
-    iget-object p1, p1, Lcom/supercell/id/ui/authentication/b;->f:Lcom/supercell/id/ui/authentication/AuthenticationFragment$d;
+    iget-object p1, p1, Lcom/supercell/id/ui/authentication/b;->g:Lcom/supercell/id/ui/authentication/AuthenticationFragment$d;
 
-    iget-object p1, p1, Lcom/supercell/id/ui/authentication/AuthenticationFragment$d;->f:Lcom/supercell/id/ui/authentication/AuthenticationFragment;
+    iget-object p1, p1, Lcom/supercell/id/ui/authentication/AuthenticationFragment$d;->g:Lcom/supercell/id/ui/authentication/AuthenticationFragment;
 
-    invoke-static {p1}, Lcom/android/billingclient/api/c0;->e(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
+    invoke-static {p1}, Lcom/android/billingclient/api/b0;->f(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
 
     move-result-object p1
 
     if-eqz p1, :cond_0
 
     .line 5
-    sget-object v0, Lcom/supercell/id/ui/MainActivity;->s:Ljava/lang/ref/WeakReference;
+    sget-object v0, Lcom/supercell/id/ui/MainActivity;->t:Ljava/lang/ref/WeakReference;
 
     const/4 v0, 0x0
 
@@ -77,7 +77,7 @@
 
     const-string v0, "ds"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     return-void
 .end method

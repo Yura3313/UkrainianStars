@@ -42,7 +42,7 @@
     .line 1
     iget-object p2, p0, Lcom/google/android/material/tabs/TabLayout$b;->b:Lcom/google/android/material/tabs/TabLayout;
 
-    iget-object v0, p2, Lcom/google/android/material/tabs/TabLayout;->M:Landroidx/viewpager/widget/ViewPager;
+    iget-object v0, p2, Lcom/google/android/material/tabs/TabLayout;->N:Landroidx/viewpager/widget/ViewPager;
 
     if-ne v0, p1, :cond_0
 

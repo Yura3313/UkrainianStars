@@ -14,14 +14,14 @@
 
 
 # instance fields
-.field public final synthetic f:Lef/b;
+.field public final synthetic g:Lef/b;
 
 
 # direct methods
 .method public constructor <init>(Lef/b;)V
     .locals 0
 
-    iput-object p1, p0, Lef/e;->f:Lef/b;
+    iput-object p1, p0, Lef/e;->g:Lef/b;
 
     invoke-direct {p0}, Ljava/util/concurrent/CompletableFuture;-><init>()V
 
@@ -36,7 +36,7 @@
     if-eqz p1, :cond_0
 
     .line 1
-    iget-object v0, p0, Lef/e;->f:Lef/b;
+    iget-object v0, p0, Lef/e;->g:Lef/b;
 
     invoke-interface {v0}, Lef/b;->cancel()V
 

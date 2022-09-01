@@ -446,11 +446,11 @@
     .locals 7
 
     .line 1
-    sget-object v0, Lq/d$a;->m:Lq/d$a;
+    sget-object v0, Lq/d$a;->n:Lq/d$a;
 
-    sget-object v1, Lq/d$a;->l:Lq/d$a;
+    sget-object v1, Lq/d$a;->m:Lq/d$a;
 
-    sget-object v2, Lq/d$a;->j:Lq/d$a;
+    sget-object v2, Lq/d$a;->k:Lq/d$a;
 
     const/4 v3, 0x0
 
@@ -528,11 +528,11 @@
 
     .line 10
     :pswitch_1
-    sget-object v1, Lq/d$a;->g:Lq/d$a;
+    sget-object v1, Lq/d$a;->h:Lq/d$a;
 
     if-eq v4, v1, :cond_6
 
-    sget-object v1, Lq/d$a;->i:Lq/d$a;
+    sget-object v1, Lq/d$a;->j:Lq/d$a;
 
     if-ne v4, v1, :cond_5
 
@@ -571,11 +571,11 @@
 
     .line 13
     :pswitch_2
-    sget-object v0, Lq/d$a;->f:Lq/d$a;
+    sget-object v0, Lq/d$a;->g:Lq/d$a;
 
     if-eq v4, v0, :cond_b
 
-    sget-object v0, Lq/d$a;->h:Lq/d$a;
+    sget-object v0, Lq/d$a;->i:Lq/d$a;
 
     if-ne v4, v0, :cond_a
 

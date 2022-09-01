@@ -18,18 +18,18 @@
 
 
 # instance fields
-.field public final synthetic f:Landroid/content/Intent;
+.field public final synthetic g:Landroid/content/Intent;
 
-.field public final synthetic g:I
+.field public final synthetic h:I
 
 
 # direct methods
 .method public constructor <init>(Landroid/content/Intent;I)V
     .locals 0
 
-    iput-object p1, p0, Lcom/linecorp/nova/android/NovaNative$a;->f:Landroid/content/Intent;
+    iput-object p1, p0, Lcom/linecorp/nova/android/NovaNative$a;->g:Landroid/content/Intent;
 
-    iput p2, p0, Lcom/linecorp/nova/android/NovaNative$a;->g:I
+    iput p2, p0, Lcom/linecorp/nova/android/NovaNative$a;->h:I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -45,9 +45,9 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/linecorp/nova/android/NovaNative$a;->f:Landroid/content/Intent;
+    iget-object v1, p0, Lcom/linecorp/nova/android/NovaNative$a;->g:Landroid/content/Intent;
 
-    iget v2, p0, Lcom/linecorp/nova/android/NovaNative$a;->g:I
+    iget v2, p0, Lcom/linecorp/nova/android/NovaNative$a;->h:I
 
     invoke-virtual {v0, v1, v2}, Landroid/app/Activity;->startActivityForResult(Landroid/content/Intent;I)V
 

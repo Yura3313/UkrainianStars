@@ -91,7 +91,7 @@
     if-ne p2, v3, :cond_0
 
     .line 2
-    sget-object p2, Lic/b$a;->m:Lic/b$a;
+    sget-object p2, Lic/b$a;->n:Lic/b$a;
 
     invoke-virtual {p2, p1}, Lic/b$a;->c(Ljava/lang/String;)Ljava/lang/String;
 
@@ -135,7 +135,7 @@
 
     .line 6
     :cond_1
-    sget-object p2, Lic/b$a;->l:Lic/b$a;
+    sget-object p2, Lic/b$a;->m:Lic/b$a;
 
     invoke-virtual {p2, p1}, Lic/b$a;->c(Ljava/lang/String;)Ljava/lang/String;
 
@@ -273,7 +273,7 @@
 
     .line 21
     :cond_6
-    sget-object p2, Lic/b$a;->j:Lic/b$a;
+    sget-object p2, Lic/b$a;->k:Lic/b$a;
 
     invoke-virtual {p2, p1}, Lic/b$a;->c(Ljava/lang/String;)Ljava/lang/String;
 

@@ -34,7 +34,7 @@
     invoke-static {v0, p1}, Lr5/v;->a(Ljava/security/spec/ECPoint;Ljava/security/spec/EllipticCurve;)V
 
     .line 3
-    invoke-static {p2}, Lr5/i0;->e(I)Ljava/lang/String;
+    invoke-static {p2}, Lr5/k0;->e(I)Ljava/lang/String;
 
     return-void
 .end method

@@ -59,7 +59,7 @@
     int-to-float v1, v1
 
     .line 2
-    sget v2, La5/g0;->a:F
+    sget v2, La5/e0;->g:F
 
     mul-float v1, v1, v2
 
@@ -164,7 +164,7 @@
     if-ne v3, v6, :cond_4
 
     .line 11
-    invoke-static {v5, v7}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v5, v7}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     sget v6, Lcom/supercell/id/R$id;->image:I
 
@@ -208,7 +208,7 @@
 
     .line 14
     :cond_4
-    invoke-static {v5, v7}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v5, v7}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     sget v6, Lcom/supercell/id/R$id;->image:I
 

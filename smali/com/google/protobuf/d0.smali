@@ -61,7 +61,7 @@
     iput-object p1, p0, Lcom/google/protobuf/d0;->a:Lcom/google/protobuf/q0;
 
     .line 6
-    sget-object v0, Lcom/google/protobuf/i;->g:Lcom/google/protobuf/i$h;
+    sget-object v0, Lcom/google/protobuf/i;->h:Lcom/google/protobuf/i$h;
 
     iput-object v0, p0, Lcom/google/protobuf/d0;->b:Lcom/google/protobuf/i;
     :try_end_1
@@ -76,7 +76,7 @@
     iput-object p1, p0, Lcom/google/protobuf/d0;->a:Lcom/google/protobuf/q0;
 
     .line 8
-    sget-object p1, Lcom/google/protobuf/i;->g:Lcom/google/protobuf/i$h;
+    sget-object p1, Lcom/google/protobuf/i;->h:Lcom/google/protobuf/i$h;
 
     iput-object p1, p0, Lcom/google/protobuf/d0;->b:Lcom/google/protobuf/i;
 
@@ -141,7 +141,7 @@
     if-nez v0, :cond_2
 
     .line 7
-    sget-object v0, Lcom/google/protobuf/i;->g:Lcom/google/protobuf/i$h;
+    sget-object v0, Lcom/google/protobuf/i;->h:Lcom/google/protobuf/i$h;
 
     iput-object v0, p0, Lcom/google/protobuf/d0;->b:Lcom/google/protobuf/i;
 

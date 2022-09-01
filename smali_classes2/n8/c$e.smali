@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field public final synthetic b:Lo8/s;
+.field public final synthetic b:Lo8/t;
 
 .field public final synthetic c:Lq8/d;
 
@@ -23,12 +23,12 @@
 
 
 # direct methods
-.method public constructor <init>(Ln8/c;Lo8/s;Lq8/d;)V
+.method public constructor <init>(Ln8/c;Lo8/t;Lq8/d;)V
     .locals 0
 
     iput-object p1, p0, Ln8/c$e;->d:Ln8/c;
 
-    iput-object p2, p0, Ln8/c$e;->b:Lo8/s;
+    iput-object p2, p0, Ln8/c$e;->b:Lo8/t;
 
     iput-object p3, p0, Ln8/c$e;->c:Lq8/d;
 
@@ -44,7 +44,7 @@
 
     .line 1
     :try_start_0
-    iget-object v0, p0, Ln8/c$e;->b:Lo8/s;
+    iget-object v0, p0, Ln8/c$e;->b:Lo8/t;
 
     iget-object v1, p0, Ln8/c$e;->d:Ln8/c;
 
@@ -52,7 +52,7 @@
 
     iget-object v2, p0, Ln8/c$e;->c:Lq8/d;
 
-    invoke-virtual {v0, v1, v2}, Lo8/s;->q(Li7/c;Ln8/j;)V
+    invoke-virtual {v0, v1, v2}, Lo8/t;->q(Li7/c;Ln8/j;)V
     :try_end_0
     .catch Lcom/helpshift/common/exception/RootAPIException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -62,9 +62,9 @@
     move-exception v0
 
     .line 2
-    iget-object v1, v0, Lcom/helpshift/common/exception/RootAPIException;->h:Ld8/a;
+    iget-object v1, v0, Lcom/helpshift/common/exception/RootAPIException;->i:Ld8/a;
 
-    sget-object v2, Ld8/b;->t:Ld8/b;
+    sget-object v2, Ld8/b;->u:Ld8/b;
 
     if-ne v1, v2, :cond_0
 
@@ -73,7 +73,7 @@
 
     iget-object v1, p0, Ln8/c$e;->c:Lq8/d;
 
-    sget-object v2, Lu8/e;->q:Lu8/e;
+    sget-object v2, Lu8/e;->r:Lu8/e;
 
     invoke-virtual {v0, v1, v2}, Ln8/c;->S(Lq8/d;Lu8/e;)V
 
@@ -81,7 +81,7 @@
 
     .line 4
     :cond_0
-    sget-object v2, Ld8/b;->u:Ld8/b;
+    sget-object v2, Ld8/b;->v:Ld8/b;
 
     if-ne v1, v2, :cond_1
 

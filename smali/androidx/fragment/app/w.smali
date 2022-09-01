@@ -142,7 +142,7 @@
     :cond_0
     iget-object v0, p0, Landroidx/fragment/app/w;->c:Ljava/util/HashMap;
 
-    iget-object v1, p1, Landroidx/fragment/app/Fragment;->k:Ljava/lang/String;
+    iget-object v1, p1, Landroidx/fragment/app/Fragment;->l:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/util/HashMap;->containsKey(Ljava/lang/Object;)Z
 
@@ -156,7 +156,7 @@
     :cond_1
     iget-object v0, p0, Landroidx/fragment/app/w;->c:Ljava/util/HashMap;
 
-    iget-object v1, p1, Landroidx/fragment/app/Fragment;->k:Ljava/lang/String;
+    iget-object v1, p1, Landroidx/fragment/app/Fragment;->l:Ljava/lang/String;
 
     invoke-virtual {v0, v1, p1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -190,7 +190,7 @@
     :cond_0
     iget-object v0, p0, Landroidx/fragment/app/w;->c:Ljava/util/HashMap;
 
-    iget-object v1, p1, Landroidx/fragment/app/Fragment;->k:Ljava/lang/String;
+    iget-object v1, p1, Landroidx/fragment/app/Fragment;->l:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/util/HashMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 

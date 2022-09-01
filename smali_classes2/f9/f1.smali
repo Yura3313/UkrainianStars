@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field public final a:Lp8/c$a;
+.field public final a:Lp8/d$a;
 
 .field public final b:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
@@ -18,12 +18,12 @@
 
 
 # direct methods
-.method public constructor <init>(Lp8/c$a;Ljava/util/List;)V
+.method public constructor <init>(Lp8/d$a;Ljava/util/List;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lp8/c$a;",
+            "Lp8/d$a;",
             "Ljava/util/List<",
             "Lf9/e0;",
             ">;)V"
@@ -34,7 +34,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lf9/f1;->a:Lp8/c$a;
+    iput-object p1, p0, Lf9/f1;->a:Lp8/d$a;
 
     .line 3
     iput-object p2, p0, Lf9/f1;->b:Ljava/util/List;

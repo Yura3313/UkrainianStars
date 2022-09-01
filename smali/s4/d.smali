@@ -1,5 +1,5 @@
 .class public final Ls4/d;
-.super Lj1/q;
+.super Lcom/helpshift/util/v;
 .source "CutCornerTreatment.java"
 
 
@@ -7,7 +7,7 @@
 .method public constructor <init>()V
     .locals 0
 
-    invoke-direct {p0}, Lj1/q;-><init>()V
+    invoke-direct {p0}, Lcom/helpshift/util/v;-><init>()V
 
     return-void
 .end method

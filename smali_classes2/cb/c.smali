@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field public final f:Ljava/lang/String;
+.field public final g:Ljava/lang/String;
 
-.field public final g:I
+.field public final h:I
 
 
 # direct methods
@@ -20,10 +20,10 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lcb/c;->f:Ljava/lang/String;
+    iput-object p1, p0, Lcb/c;->g:Ljava/lang/String;
 
     .line 3
-    iput p2, p0, Lcb/c;->g:I
+    iput p2, p0, Lcb/c;->h:I
 
     return-void
 .end method
@@ -41,7 +41,7 @@
     move-result-object v0
 
     .line 2
-    iget-object v1, p0, Lcb/c;->f:Ljava/lang/String;
+    iget-object v1, p0, Lcb/c;->g:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -49,7 +49,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget v1, p0, Lcb/c;->g:I
+    iget v1, p0, Lcb/c;->h:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 

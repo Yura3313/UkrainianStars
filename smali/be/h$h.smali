@@ -1,5 +1,5 @@
 .class public final Lbe/h$h;
-.super Lse/h;
+.super Lse/i;
 .source "FriendsStorage.kt"
 
 # interfaces
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lbe/h;->k(Ljava/util/List;Ljava/lang/String;)Lze/e0;
+    value = Lbe/h;->k(Ljava/util/List;Ljava/lang/String;)Lze/f0;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,7 +18,7 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/l<",
         "Ljava/util/Map<",
         "Lcom/supercell/id/model/IdSocialAccount;",
@@ -29,25 +29,25 @@
         "+",
         "Ljava/lang/Exception;",
         ">;>;",
-        "Lie/h;",
+        "Lie/i;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic f:Lbe/h;
+.field public final synthetic g:Lbe/h;
 
 
 # direct methods
 .method public constructor <init>(Lbe/h;)V
     .locals 0
 
-    iput-object p1, p0, Lbe/h$h;->f:Lbe/h;
+    iput-object p1, p0, Lbe/h$h;->g:Lbe/h;
 
     const/4 p1, 0x1
 
-    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -63,10 +63,10 @@
     const-string v0, "it"
 
     .line 2
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 3
-    iget-object v0, p0, Lbe/h$h;->f:Lbe/h;
+    iget-object v0, p0, Lbe/h$h;->g:Lbe/h;
 
     const-wide/16 v1, 0x0
 
@@ -152,7 +152,7 @@
     invoke-virtual {v0, v1, p1}, Lbe/h;->n(Ljava/util/List;Lcom/supercell/id/model/IdRelationshipStatus;)V
 
     .line 12
-    sget-object p1, Lie/h;->a:Lie/h;
+    sget-object p1, Lie/i;->a:Lie/i;
 
     return-object p1
 .end method

@@ -14,15 +14,15 @@
 
 
 # static fields
-.field public static final enum g:Lq8/c;
-
 .field public static final enum h:Lq8/c;
 
-.field public static final synthetic i:[Lq8/c;
+.field public static final enum i:Lq8/c;
+
+.field public static final synthetic j:[Lq8/c;
 
 
 # instance fields
-.field public f:Ljava/lang/String;
+.field public g:Ljava/lang/String;
 
 
 # direct methods
@@ -40,7 +40,7 @@
 
     invoke-direct {v0, v1, v2, v3}, Lq8/c;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v0, Lq8/c;->g:Lq8/c;
+    sput-object v0, Lq8/c;->h:Lq8/c;
 
     .line 2
     new-instance v1, Lq8/c;
@@ -53,7 +53,7 @@
 
     invoke-direct {v1, v3, v4, v5}, Lq8/c;-><init>(Ljava/lang/String;ILjava/lang/String;)V
 
-    sput-object v1, Lq8/c;->h:Lq8/c;
+    sput-object v1, Lq8/c;->i:Lq8/c;
 
     const/4 v3, 0x2
 
@@ -64,7 +64,7 @@
     aput-object v1, v3, v4
 
     .line 3
-    sput-object v3, Lq8/c;->i:[Lq8/c;
+    sput-object v3, Lq8/c;->j:[Lq8/c;
 
     return-void
 .end method
@@ -83,7 +83,7 @@
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 2
-    iput-object p3, p0, Lq8/c;->f:Ljava/lang/String;
+    iput-object p3, p0, Lq8/c;->g:Ljava/lang/String;
 
     return-void
 .end method
@@ -106,7 +106,7 @@
     aget-object v3, v0, v2
 
     .line 2
-    iget-object v4, v3, Lq8/c;->f:Ljava/lang/String;
+    iget-object v4, v3, Lq8/c;->g:Ljava/lang/String;
 
     .line 3
     invoke-virtual {v4, p0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -145,7 +145,7 @@
 .method public static values()[Lq8/c;
     .locals 1
 
-    sget-object v0, Lq8/c;->i:[Lq8/c;
+    sget-object v0, Lq8/c;->j:[Lq8/c;
 
     invoke-virtual {v0}, [Lq8/c;->clone()Ljava/lang/Object;
 

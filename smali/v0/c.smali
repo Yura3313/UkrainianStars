@@ -68,7 +68,7 @@
     .line 6
     aget v3, p3, v1
 
-    invoke-static {v3, v2, p1, v2}, Lo/p;->a(FFFF)F
+    invoke-static {v3, v2, p1, v2}, Lo/o;->a(FFFF)F
 
     move-result v2
 

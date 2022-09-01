@@ -25,7 +25,7 @@
     new-instance v0, Lr3/c;
 
     .line 2
-    iget-object p1, p1, Lcom/google/android/gms/internal/drive/zzfh;->f:Lcom/google/android/gms/drive/Contents;
+    iget-object p1, p1, Lcom/google/android/gms/internal/drive/zzfh;->g:Lcom/google/android/gms/drive/Contents;
 
     .line 3
     invoke-direct {v0, p1}, Lr3/c;-><init>(Lcom/google/android/gms/drive/Contents;)V

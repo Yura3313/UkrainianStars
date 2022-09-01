@@ -27,7 +27,7 @@
 
 
 # instance fields
-.field public final f:Lx0/b;
+.field public final g:Lx0/b;
 
 
 # direct methods
@@ -58,7 +58,7 @@
 
     move-result-object p1
 
-    iput-object p1, p0, Landroidx/versionedparcelable/ParcelImpl;->f:Lx0/b;
+    iput-object p1, p0, Landroidx/versionedparcelable/ParcelImpl;->g:Lx0/b;
 
     return-void
 .end method
@@ -82,7 +82,7 @@
     invoke-direct {p2, p1}, Lx0/a;-><init>(Landroid/os/Parcel;)V
 
     .line 2
-    iget-object p1, p0, Landroidx/versionedparcelable/ParcelImpl;->f:Lx0/b;
+    iget-object p1, p0, Landroidx/versionedparcelable/ParcelImpl;->g:Lx0/b;
 
     invoke-virtual {p2, p1}, Landroidx/versionedparcelable/VersionedParcel;->y(Lx0/b;)V
 

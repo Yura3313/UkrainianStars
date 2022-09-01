@@ -24,7 +24,7 @@
     .locals 7
 
     .line 1
-    sget-object v0, Lq/e$a;->i:Lq/e$a;
+    sget-object v0, Lq/e$a;->j:Lq/e$a;
 
     const/4 v1, -0x1
 
@@ -40,7 +40,7 @@
 
     aget-object v1, v1, v2
 
-    sget-object v3, Lq/e$a;->g:Lq/e$a;
+    sget-object v3, Lq/e$a;->h:Lq/e$a;
 
     const/4 v4, 0x2
 

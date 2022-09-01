@@ -21,11 +21,6 @@
     .end annotation
 .end field
 
-.field public static final k:Lcom/google/android/gms/common/api/Status;
-    .annotation build Landroidx/annotation/RecentlyNonNull;
-    .end annotation
-.end field
-
 .field public static final l:Lcom/google/android/gms/common/api/Status;
     .annotation build Landroidx/annotation/RecentlyNonNull;
     .end annotation
@@ -46,17 +41,22 @@
     .end annotation
 .end field
 
+.field public static final p:Lcom/google/android/gms/common/api/Status;
+    .annotation build Landroidx/annotation/RecentlyNonNull;
+    .end annotation
+.end field
+
 
 # instance fields
-.field public final f:I
-
 .field public final g:I
 
-.field public final h:Ljava/lang/String;
+.field public final h:I
 
-.field public final i:Landroid/app/PendingIntent;
+.field public final i:Ljava/lang/String;
 
-.field public final j:Lcom/google/android/gms/common/ConnectionResult;
+.field public final j:Landroid/app/PendingIntent;
+
+.field public final k:Lcom/google/android/gms/common/ConnectionResult;
 
 
 # direct methods
@@ -74,7 +74,7 @@
     invoke-direct {v0, v1, v2}, Lcom/google/android/gms/common/api/Status;-><init>(ILjava/lang/String;)V
 
     .line 3
-    sput-object v0, Lcom/google/android/gms/common/api/Status;->k:Lcom/google/android/gms/common/api/Status;
+    sput-object v0, Lcom/google/android/gms/common/api/Status;->l:Lcom/google/android/gms/common/api/Status;
 
     .line 4
     new-instance v0, Lcom/google/android/gms/common/api/Status;
@@ -85,7 +85,7 @@
     invoke-direct {v0, v1, v2}, Lcom/google/android/gms/common/api/Status;-><init>(ILjava/lang/String;)V
 
     .line 6
-    sput-object v0, Lcom/google/android/gms/common/api/Status;->l:Lcom/google/android/gms/common/api/Status;
+    sput-object v0, Lcom/google/android/gms/common/api/Status;->m:Lcom/google/android/gms/common/api/Status;
 
     .line 7
     new-instance v0, Lcom/google/android/gms/common/api/Status;
@@ -96,7 +96,7 @@
     invoke-direct {v0, v1, v2}, Lcom/google/android/gms/common/api/Status;-><init>(ILjava/lang/String;)V
 
     .line 9
-    sput-object v0, Lcom/google/android/gms/common/api/Status;->m:Lcom/google/android/gms/common/api/Status;
+    sput-object v0, Lcom/google/android/gms/common/api/Status;->n:Lcom/google/android/gms/common/api/Status;
 
     .line 10
     new-instance v0, Lcom/google/android/gms/common/api/Status;
@@ -107,7 +107,7 @@
     invoke-direct {v0, v1, v2}, Lcom/google/android/gms/common/api/Status;-><init>(ILjava/lang/String;)V
 
     .line 12
-    sput-object v0, Lcom/google/android/gms/common/api/Status;->n:Lcom/google/android/gms/common/api/Status;
+    sput-object v0, Lcom/google/android/gms/common/api/Status;->o:Lcom/google/android/gms/common/api/Status;
 
     .line 13
     new-instance v0, Lcom/google/android/gms/common/api/Status;
@@ -118,7 +118,7 @@
     invoke-direct {v0, v1, v2}, Lcom/google/android/gms/common/api/Status;-><init>(ILjava/lang/String;)V
 
     .line 15
-    sput-object v0, Lcom/google/android/gms/common/api/Status;->o:Lcom/google/android/gms/common/api/Status;
+    sput-object v0, Lcom/google/android/gms/common/api/Status;->p:Lcom/google/android/gms/common/api/Status;
 
     .line 16
     new-instance v0, Lcom/google/android/gms/common/api/Status;
@@ -153,19 +153,19 @@
     invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
 
     .line 4
-    iput p1, p0, Lcom/google/android/gms/common/api/Status;->f:I
+    iput p1, p0, Lcom/google/android/gms/common/api/Status;->g:I
 
     .line 5
-    iput p2, p0, Lcom/google/android/gms/common/api/Status;->g:I
+    iput p2, p0, Lcom/google/android/gms/common/api/Status;->h:I
 
     .line 6
-    iput-object p3, p0, Lcom/google/android/gms/common/api/Status;->h:Ljava/lang/String;
+    iput-object p3, p0, Lcom/google/android/gms/common/api/Status;->i:Ljava/lang/String;
 
     .line 7
-    iput-object p4, p0, Lcom/google/android/gms/common/api/Status;->i:Landroid/app/PendingIntent;
+    iput-object p4, p0, Lcom/google/android/gms/common/api/Status;->j:Landroid/app/PendingIntent;
 
     .line 8
-    iput-object p5, p0, Lcom/google/android/gms/common/api/Status;->j:Lcom/google/android/gms/common/ConnectionResult;
+    iput-object p5, p0, Lcom/google/android/gms/common/api/Status;->k:Lcom/google/android/gms/common/ConnectionResult;
 
     return-void
 .end method
@@ -217,7 +217,7 @@
 .method public final D2()Z
     .locals 1
 
-    iget v0, p0, Lcom/google/android/gms/common/api/Status;->g:I
+    iget v0, p0, Lcom/google/android/gms/common/api/Status;->h:I
 
     if-gtz v0, :cond_0
 
@@ -248,21 +248,21 @@
     check-cast p1, Lcom/google/android/gms/common/api/Status;
 
     .line 3
-    iget v0, p0, Lcom/google/android/gms/common/api/Status;->f:I
-
-    iget v2, p1, Lcom/google/android/gms/common/api/Status;->f:I
-
-    if-ne v0, v2, :cond_1
-
     iget v0, p0, Lcom/google/android/gms/common/api/Status;->g:I
 
     iget v2, p1, Lcom/google/android/gms/common/api/Status;->g:I
 
     if-ne v0, v2, :cond_1
 
-    iget-object v0, p0, Lcom/google/android/gms/common/api/Status;->h:Ljava/lang/String;
+    iget v0, p0, Lcom/google/android/gms/common/api/Status;->h:I
 
-    iget-object v2, p1, Lcom/google/android/gms/common/api/Status;->h:Ljava/lang/String;
+    iget v2, p1, Lcom/google/android/gms/common/api/Status;->h:I
+
+    if-ne v0, v2, :cond_1
+
+    iget-object v0, p0, Lcom/google/android/gms/common/api/Status;->i:Ljava/lang/String;
+
+    iget-object v2, p1, Lcom/google/android/gms/common/api/Status;->i:Ljava/lang/String;
 
     .line 4
     invoke-static {v0, v2}, Ld2/f;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
@@ -271,9 +271,9 @@
 
     if-eqz v0, :cond_1
 
-    iget-object v0, p0, Lcom/google/android/gms/common/api/Status;->i:Landroid/app/PendingIntent;
+    iget-object v0, p0, Lcom/google/android/gms/common/api/Status;->j:Landroid/app/PendingIntent;
 
-    iget-object v2, p1, Lcom/google/android/gms/common/api/Status;->i:Landroid/app/PendingIntent;
+    iget-object v2, p1, Lcom/google/android/gms/common/api/Status;->j:Landroid/app/PendingIntent;
 
     .line 5
     invoke-static {v0, v2}, Ld2/f;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
@@ -282,9 +282,9 @@
 
     if-eqz v0, :cond_1
 
-    iget-object v0, p0, Lcom/google/android/gms/common/api/Status;->j:Lcom/google/android/gms/common/ConnectionResult;
+    iget-object v0, p0, Lcom/google/android/gms/common/api/Status;->k:Lcom/google/android/gms/common/ConnectionResult;
 
-    iget-object p1, p1, Lcom/google/android/gms/common/api/Status;->j:Lcom/google/android/gms/common/ConnectionResult;
+    iget-object p1, p1, Lcom/google/android/gms/common/api/Status;->k:Lcom/google/android/gms/common/ConnectionResult;
 
     .line 6
     invoke-static {v0, p1}, Ld2/f;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
@@ -317,7 +317,7 @@
     new-array v0, v0, [Ljava/lang/Object;
 
     .line 1
-    iget v1, p0, Lcom/google/android/gms/common/api/Status;->f:I
+    iget v1, p0, Lcom/google/android/gms/common/api/Status;->g:I
 
     .line 2
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
@@ -328,7 +328,7 @@
 
     aput-object v1, v0, v2
 
-    iget v1, p0, Lcom/google/android/gms/common/api/Status;->g:I
+    iget v1, p0, Lcom/google/android/gms/common/api/Status;->h:I
 
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -338,19 +338,19 @@
 
     aput-object v1, v0, v2
 
-    iget-object v1, p0, Lcom/google/android/gms/common/api/Status;->h:Ljava/lang/String;
+    iget-object v1, p0, Lcom/google/android/gms/common/api/Status;->i:Ljava/lang/String;
 
     const/4 v2, 0x2
 
     aput-object v1, v0, v2
 
-    iget-object v1, p0, Lcom/google/android/gms/common/api/Status;->i:Landroid/app/PendingIntent;
+    iget-object v1, p0, Lcom/google/android/gms/common/api/Status;->j:Landroid/app/PendingIntent;
 
     const/4 v2, 0x3
 
     aput-object v1, v0, v2
 
-    iget-object v1, p0, Lcom/google/android/gms/common/api/Status;->j:Lcom/google/android/gms/common/ConnectionResult;
+    iget-object v1, p0, Lcom/google/android/gms/common/api/Status;->k:Lcom/google/android/gms/common/ConnectionResult;
 
     const/4 v2, 0x4
 
@@ -375,7 +375,7 @@
     invoke-direct {v0, p0}, Ld2/f$a;-><init>(Ljava/lang/Object;)V
 
     .line 2
-    iget-object v1, p0, Lcom/google/android/gms/common/api/Status;->h:Ljava/lang/String;
+    iget-object v1, p0, Lcom/google/android/gms/common/api/Status;->i:Ljava/lang/String;
 
     if-eqz v1, :cond_0
 
@@ -383,7 +383,7 @@
 
     .line 3
     :cond_0
-    iget v1, p0, Lcom/google/android/gms/common/api/Status;->g:I
+    iget v1, p0, Lcom/google/android/gms/common/api/Status;->h:I
 
     invoke-static {v1}, La2/a;->a(I)Ljava/lang/String;
 
@@ -395,7 +395,7 @@
     .line 4
     invoke-virtual {v0, v2, v1}, Ld2/f$a;->a(Ljava/lang/String;Ljava/lang/Object;)Ld2/f$a;
 
-    iget-object v1, p0, Lcom/google/android/gms/common/api/Status;->i:Landroid/app/PendingIntent;
+    iget-object v1, p0, Lcom/google/android/gms/common/api/Status;->j:Landroid/app/PendingIntent;
 
     const-string v2, "resolution"
 
@@ -423,7 +423,7 @@
     move-result v0
 
     .line 2
-    iget v1, p0, Lcom/google/android/gms/common/api/Status;->g:I
+    iget v1, p0, Lcom/google/android/gms/common/api/Status;->h:I
 
     const/4 v2, 0x1
 
@@ -433,7 +433,7 @@
     const/4 v1, 0x2
 
     .line 4
-    iget-object v2, p0, Lcom/google/android/gms/common/api/Status;->h:Ljava/lang/String;
+    iget-object v2, p0, Lcom/google/android/gms/common/api/Status;->i:Ljava/lang/String;
 
     const/4 v3, 0x0
 
@@ -443,7 +443,7 @@
     const/4 v1, 0x3
 
     .line 6
-    iget-object v2, p0, Lcom/google/android/gms/common/api/Status;->i:Landroid/app/PendingIntent;
+    iget-object v2, p0, Lcom/google/android/gms/common/api/Status;->j:Landroid/app/PendingIntent;
 
     .line 7
     invoke-static {p1, v1, v2, p2, v3}, Le2/b;->l(Landroid/os/Parcel;ILandroid/os/Parcelable;IZ)V
@@ -451,7 +451,7 @@
     const/4 v1, 0x4
 
     .line 8
-    iget-object v2, p0, Lcom/google/android/gms/common/api/Status;->j:Lcom/google/android/gms/common/ConnectionResult;
+    iget-object v2, p0, Lcom/google/android/gms/common/api/Status;->k:Lcom/google/android/gms/common/ConnectionResult;
 
     .line 9
     invoke-static {p1, v1, v2, p2, v3}, Le2/b;->l(Landroid/os/Parcel;ILandroid/os/Parcelable;IZ)V
@@ -459,7 +459,7 @@
     const/16 p2, 0x3e8
 
     .line 10
-    iget v1, p0, Lcom/google/android/gms/common/api/Status;->f:I
+    iget v1, p0, Lcom/google/android/gms/common/api/Status;->g:I
 
     invoke-static {p1, p2, v1}, Le2/b;->g(Landroid/os/Parcel;II)V
 

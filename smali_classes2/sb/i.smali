@@ -18,11 +18,11 @@
     .locals 7
 
     .line 1
-    iget v0, p1, Lrb/o;->f:I
+    iget v0, p1, Lrb/o;->g:I
 
     if-lez v0, :cond_2
 
-    iget v0, p1, Lrb/o;->g:I
+    iget v0, p1, Lrb/o;->h:I
 
     if-gtz v0, :cond_0
 
@@ -35,7 +35,7 @@
     move-result-object v0
 
     .line 3
-    iget v1, v0, Lrb/o;->f:I
+    iget v1, v0, Lrb/o;->g:I
 
     int-to-float v1, v1
 
@@ -43,7 +43,7 @@
 
     mul-float v1, v1, v2
 
-    iget p1, p1, Lrb/o;->f:I
+    iget p1, p1, Lrb/o;->g:I
 
     int-to-float p1, p1
 
@@ -68,25 +68,25 @@
 
     .line 5
     :cond_1
-    iget p1, v0, Lrb/o;->f:I
+    iget p1, v0, Lrb/o;->g:I
 
     int-to-float p1, p1
 
     mul-float p1, p1, v2
 
-    iget v3, p2, Lrb/o;->f:I
+    iget v3, p2, Lrb/o;->g:I
 
     int-to-float v3, v3
 
     div-float/2addr p1, v3
 
-    iget v0, v0, Lrb/o;->g:I
+    iget v0, v0, Lrb/o;->h:I
 
     int-to-float v0, v0
 
     mul-float v0, v0, v2
 
-    iget p2, p2, Lrb/o;->g:I
+    iget p2, p2, Lrb/o;->h:I
 
     int-to-float p2, p2
 
@@ -125,18 +125,18 @@
     invoke-virtual {p2}, Lrb/o;->toString()Ljava/lang/String;
 
     .line 3
-    iget p1, v0, Lrb/o;->f:I
+    iget p1, v0, Lrb/o;->g:I
 
-    iget v1, p2, Lrb/o;->f:I
+    iget v1, p2, Lrb/o;->g:I
 
     sub-int/2addr p1, v1
 
     div-int/lit8 p1, p1, 0x2
 
     .line 4
-    iget v1, v0, Lrb/o;->g:I
+    iget v1, v0, Lrb/o;->h:I
 
-    iget p2, p2, Lrb/o;->g:I
+    iget p2, p2, Lrb/o;->h:I
 
     sub-int/2addr v1, p2
 
@@ -149,11 +149,11 @@
 
     neg-int v3, v1
 
-    iget v4, v0, Lrb/o;->f:I
+    iget v4, v0, Lrb/o;->g:I
 
     sub-int/2addr v4, p1
 
-    iget p1, v0, Lrb/o;->g:I
+    iget p1, v0, Lrb/o;->h:I
 
     sub-int/2addr p1, v1
 

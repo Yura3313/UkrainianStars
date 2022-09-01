@@ -30,7 +30,7 @@
 
 
 # instance fields
-.field public final f:Ljava/lang/Comparable;
+.field public final g:Ljava/lang/Comparable;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "TK;"
@@ -38,7 +38,7 @@
     .end annotation
 .end field
 
-.field public g:Ljava/lang/Object;
+.field public h:Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "TV;"
@@ -46,7 +46,7 @@
     .end annotation
 .end field
 
-.field public final synthetic h:Lcom/google/protobuf/l1;
+.field public final synthetic i:Lcom/google/protobuf/l1;
 
 
 # direct methods
@@ -59,15 +59,15 @@
     .end annotation
 
     .line 5
-    iput-object p1, p0, Lcom/google/protobuf/l1$b;->h:Lcom/google/protobuf/l1;
+    iput-object p1, p0, Lcom/google/protobuf/l1$b;->i:Lcom/google/protobuf/l1;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 6
-    iput-object p2, p0, Lcom/google/protobuf/l1$b;->f:Ljava/lang/Comparable;
+    iput-object p2, p0, Lcom/google/protobuf/l1$b;->g:Ljava/lang/Comparable;
 
     .line 7
-    iput-object p3, p0, Lcom/google/protobuf/l1$b;->g:Ljava/lang/Object;
+    iput-object p3, p0, Lcom/google/protobuf/l1$b;->h:Ljava/lang/Object;
 
     return-void
 .end method
@@ -94,15 +94,15 @@
     move-result-object p2
 
     .line 2
-    iput-object p1, p0, Lcom/google/protobuf/l1$b;->h:Lcom/google/protobuf/l1;
+    iput-object p1, p0, Lcom/google/protobuf/l1$b;->i:Lcom/google/protobuf/l1;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 3
-    iput-object v0, p0, Lcom/google/protobuf/l1$b;->f:Ljava/lang/Comparable;
+    iput-object v0, p0, Lcom/google/protobuf/l1$b;->g:Ljava/lang/Comparable;
 
     .line 4
-    iput-object p2, p0, Lcom/google/protobuf/l1$b;->g:Ljava/lang/Object;
+    iput-object p2, p0, Lcom/google/protobuf/l1$b;->h:Ljava/lang/Object;
 
     return-void
 .end method
@@ -116,9 +116,9 @@
     check-cast p1, Lcom/google/protobuf/l1$b;
 
     .line 2
-    iget-object v0, p0, Lcom/google/protobuf/l1$b;->f:Ljava/lang/Comparable;
+    iget-object v0, p0, Lcom/google/protobuf/l1$b;->g:Ljava/lang/Comparable;
 
-    iget-object p1, p1, Lcom/google/protobuf/l1$b;->f:Ljava/lang/Comparable;
+    iget-object p1, p1, Lcom/google/protobuf/l1$b;->g:Ljava/lang/Comparable;
 
     .line 3
     invoke-interface {v0, p1}, Ljava/lang/Comparable;->compareTo(Ljava/lang/Object;)I
@@ -152,7 +152,7 @@
     check-cast p1, Ljava/util/Map$Entry;
 
     .line 3
-    iget-object v1, p0, Lcom/google/protobuf/l1$b;->f:Ljava/lang/Comparable;
+    iget-object v1, p0, Lcom/google/protobuf/l1$b;->g:Ljava/lang/Comparable;
 
     invoke-interface {p1}, Ljava/util/Map$Entry;->getKey()Ljava/lang/Object;
 
@@ -181,7 +181,7 @@
     if-eqz v1, :cond_6
 
     .line 5
-    iget-object v1, p0, Lcom/google/protobuf/l1$b;->g:Ljava/lang/Object;
+    iget-object v1, p0, Lcom/google/protobuf/l1$b;->h:Ljava/lang/Object;
 
     invoke-interface {p1}, Ljava/util/Map$Entry;->getValue()Ljava/lang/Object;
 
@@ -221,7 +221,7 @@
 .method public final getKey()Ljava/lang/Object;
     .locals 1
 
-    iget-object v0, p0, Lcom/google/protobuf/l1$b;->f:Ljava/lang/Comparable;
+    iget-object v0, p0, Lcom/google/protobuf/l1$b;->g:Ljava/lang/Comparable;
 
     return-object v0
 .end method
@@ -234,7 +234,7 @@
         }
     .end annotation
 
-    iget-object v0, p0, Lcom/google/protobuf/l1$b;->g:Ljava/lang/Object;
+    iget-object v0, p0, Lcom/google/protobuf/l1$b;->h:Ljava/lang/Object;
 
     return-object v0
 .end method
@@ -242,7 +242,7 @@
 .method public final hashCode()I
     .locals 3
 
-    iget-object v0, p0, Lcom/google/protobuf/l1$b;->f:Ljava/lang/Comparable;
+    iget-object v0, p0, Lcom/google/protobuf/l1$b;->g:Ljava/lang/Comparable;
 
     const/4 v1, 0x0
 
@@ -258,7 +258,7 @@
     move-result v0
 
     :goto_0
-    iget-object v2, p0, Lcom/google/protobuf/l1$b;->g:Ljava/lang/Object;
+    iget-object v2, p0, Lcom/google/protobuf/l1$b;->h:Ljava/lang/Object;
 
     if-nez v2, :cond_1
 
@@ -284,18 +284,18 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lcom/google/protobuf/l1$b;->h:Lcom/google/protobuf/l1;
+    iget-object v0, p0, Lcom/google/protobuf/l1$b;->i:Lcom/google/protobuf/l1;
 
-    sget v1, Lcom/google/protobuf/l1;->l:I
+    sget v1, Lcom/google/protobuf/l1;->m:I
 
     .line 2
     invoke-virtual {v0}, Lcom/google/protobuf/l1;->b()V
 
     .line 3
-    iget-object v0, p0, Lcom/google/protobuf/l1$b;->g:Ljava/lang/Object;
+    iget-object v0, p0, Lcom/google/protobuf/l1$b;->h:Ljava/lang/Object;
 
     .line 4
-    iput-object p1, p0, Lcom/google/protobuf/l1$b;->g:Ljava/lang/Object;
+    iput-object p1, p0, Lcom/google/protobuf/l1$b;->h:Ljava/lang/Object;
 
     return-object v0
 .end method
@@ -307,7 +307,7 @@
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
 
-    iget-object v1, p0, Lcom/google/protobuf/l1$b;->f:Ljava/lang/Comparable;
+    iget-object v1, p0, Lcom/google/protobuf/l1$b;->g:Ljava/lang/Comparable;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
@@ -315,7 +315,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lcom/google/protobuf/l1$b;->g:Ljava/lang/Object;
+    iget-object v1, p0, Lcom/google/protobuf/l1$b;->h:Ljava/lang/Object;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 

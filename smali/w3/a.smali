@@ -205,7 +205,7 @@
             "Ljava/lang/String;",
             "Ljava/lang/String;",
             "Ljava/util/ArrayList<",
-            "Lcom/android/billingclient/api/y;",
+            "Lcom/android/billingclient/api/x;",
             ">;)",
             "Landroid/os/Bundle;"
         }
@@ -263,7 +263,7 @@
     move-result-object v3
 
     .line 5
-    check-cast v3, Lcom/android/billingclient/api/y;
+    check-cast v3, Lcom/android/billingclient/api/x;
 
     const/4 v3, 0x0
 

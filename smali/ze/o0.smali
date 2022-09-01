@@ -1,48 +1,61 @@
 .class public final Lze/o0;
-.super Ljava/lang/Object;
+.super Lze/e1;
 .source "JobSupport.kt"
 
-# interfaces
-.implements Lze/w0;
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lze/e1<",
+        "Lze/c1;",
+        ">;"
+    }
+.end annotation
 
 
 # instance fields
-.field public final f:Z
+.field public final k:Lze/m0;
 
 
 # direct methods
-.method public constructor <init>(Z)V
+.method public constructor <init>(Lze/c1;Lze/m0;)V
     .locals 0
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0, p1}, Lze/e1;-><init>(Lze/c1;)V
 
-    iput-boolean p1, p0, Lze/o0;->f:Z
+    iput-object p2, p0, Lze/o0;->k:Lze/m0;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a()Lze/j1;
-    .locals 1
+.method public final bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
 
-    const/4 v0, 0x0
+    check-cast p1, Ljava/lang/Throwable;
 
-    return-object v0
+    invoke-virtual {p0, p1}, Lze/o0;->l(Ljava/lang/Throwable;)V
+
+    sget-object p1, Lie/i;->a:Lie/i;
+
+    return-object p1
 .end method
 
-.method public final isActive()Z
-    .locals 1
+.method public final l(Ljava/lang/Throwable;)V
+    .locals 0
 
-    iget-boolean v0, p0, Lze/o0;->f:Z
+    iget-object p1, p0, Lze/o0;->k:Lze/m0;
 
-    return v0
+    invoke-interface {p1}, Lze/m0;->dispose()V
+
+    return-void
 .end method
 
 .method public final toString()Ljava/lang/String;
     .locals 2
 
-    const-string v0, "Empty{"
+    const-string v0, "DisposeOnCompletion["
 
     .line 1
     invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -50,22 +63,11 @@
     move-result-object v0
 
     .line 2
-    iget-boolean v1, p0, Lze/o0;->f:Z
+    iget-object v1, p0, Lze/o0;->k:Lze/m0;
 
-    if-eqz v1, :cond_0
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    const-string v1, "Active"
-
-    goto :goto_0
-
-    :cond_0
-    const-string v1, "New"
-
-    .line 3
-    :goto_0
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const/16 v1, 0x7d
+    const/16 v1, 0x5d
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
 

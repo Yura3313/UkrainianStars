@@ -50,7 +50,7 @@
             "Ljava/lang/reflect/Type;",
             "[",
             "Ljava/lang/annotation/Annotation;",
-            "Lef/d0;",
+            "Lef/c0;",
             ")",
             "Lef/c<",
             "**>;"
@@ -61,7 +61,7 @@
     .end annotation
 
     .line 1
-    invoke-static {p1}, Lef/h0;->g(Ljava/lang/reflect/Type;)Ljava/lang/Class;
+    invoke-static {p1}, Lef/g0;->g(Ljava/lang/reflect/Type;)Ljava/lang/Class;
 
     move-result-object p2
 
@@ -86,17 +86,17 @@
     const/4 p2, 0x0
 
     .line 5
-    invoke-static {p2, p1}, Lef/h0;->f(ILjava/lang/reflect/ParameterizedType;)Ljava/lang/reflect/Type;
+    invoke-static {p2, p1}, Lef/g0;->f(ILjava/lang/reflect/ParameterizedType;)Ljava/lang/reflect/Type;
 
     move-result-object p1
 
     .line 6
-    invoke-static {p1}, Lef/h0;->g(Ljava/lang/reflect/Type;)Ljava/lang/Class;
+    invoke-static {p1}, Lef/g0;->g(Ljava/lang/reflect/Type;)Ljava/lang/Class;
 
     move-result-object v0
 
     .line 7
-    const-class v1, Lef/c0;
+    const-class v1, Lef/b0;
 
     if-eq v0, v1, :cond_1
 
@@ -117,7 +117,7 @@
     check-cast p1, Ljava/lang/reflect/ParameterizedType;
 
     .line 11
-    invoke-static {p2, p1}, Lef/h0;->f(ILjava/lang/reflect/ParameterizedType;)Ljava/lang/reflect/Type;
+    invoke-static {p2, p1}, Lef/g0;->f(ILjava/lang/reflect/ParameterizedType;)Ljava/lang/reflect/Type;
 
     move-result-object p1
 

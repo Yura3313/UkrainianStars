@@ -15,14 +15,14 @@
 
 
 # instance fields
-.field public final synthetic a:Lse/o;
+.field public final synthetic a:Lse/p;
 
 
 # direct methods
-.method public constructor <init>(Lse/o;)V
+.method public constructor <init>(Lse/p;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/ui/ingamechat/ChatFragment$f;->a:Lse/o;
+    iput-object p1, p0, Lcom/supercell/id/ui/ingamechat/ChatFragment$f;->a:Lse/p;
 
     invoke-direct {p0}, Landroidx/recyclerview/widget/RecyclerView$q;-><init>()V
 
@@ -36,9 +36,9 @@
 
     const-string p2, "recyclerView"
 
-    invoke-static {p1, p2}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p2}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    iget-object p2, p0, Lcom/supercell/id/ui/ingamechat/ChatFragment$f;->a:Lse/o;
+    iget-object p2, p0, Lcom/supercell/id/ui/ingamechat/ChatFragment$f;->a:Lse/p;
 
     const/4 v0, 0x1
 
@@ -48,7 +48,7 @@
 
     xor-int/2addr p1, v0
 
-    iput-boolean p1, p2, Lse/o;->f:Z
+    iput-boolean p1, p2, Lse/p;->g:Z
 
     return-void
 .end method

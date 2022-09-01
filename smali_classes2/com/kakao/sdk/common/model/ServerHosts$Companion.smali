@@ -23,7 +23,7 @@
     return-void
 .end method
 
-.method public synthetic constructor <init>(Lse/e;)V
+.method public synthetic constructor <init>(Lse/f;)V
     .locals 0
 
     invoke-direct {p0}, Lcom/kakao/sdk/common/model/ServerHosts$Companion;-><init>()V

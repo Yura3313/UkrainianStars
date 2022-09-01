@@ -4,16 +4,16 @@
 
 
 # instance fields
-.field public f:Z
+.field public g:Z
 
-.field public final synthetic g:Landroid/view/View;
+.field public final synthetic h:Landroid/view/View;
 
 
 # direct methods
 .method public constructor <init>(Landroid/view/View;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/view/o;->g:Landroid/view/View;
+    iput-object p1, p0, Lcom/supercell/id/view/o;->h:Landroid/view/View;
 
     invoke-direct {p0}, Landroid/animation/AnimatorListenerAdapter;-><init>()V
 
@@ -27,7 +27,7 @@
 
     const/4 p1, 0x1
 
-    iput-boolean p1, p0, Lcom/supercell/id/view/o;->f:Z
+    iput-boolean p1, p0, Lcom/supercell/id/view/o;->g:Z
 
     return-void
 .end method
@@ -37,19 +37,19 @@
 
     const-string v0, "animation"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
-    iget-boolean p1, p0, Lcom/supercell/id/view/o;->f:Z
+    iget-boolean p1, p0, Lcom/supercell/id/view/o;->g:Z
 
     if-nez p1, :cond_0
 
     .line 2
-    iget-object p1, p0, Lcom/supercell/id/view/o;->g:Landroid/view/View;
+    iget-object p1, p0, Lcom/supercell/id/view/o;->h:Landroid/view/View;
 
     const-string v0, "child"
 
-    invoke-static {p1, v0}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/16 v0, 0x8
 

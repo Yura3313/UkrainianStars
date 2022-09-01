@@ -22,7 +22,7 @@
     .end annotation
 
     .line 1
-    iget-object p1, p1, Lcom/google/android/gms/internal/drive/zzga;->f:Lcom/google/android/gms/internal/drive/zzgo;
+    iget-object p1, p1, Lcom/google/android/gms/internal/drive/zzga;->g:Lcom/google/android/gms/internal/drive/zzgo;
 
     const/4 p1, 0x0
 
@@ -39,10 +39,10 @@
     .end annotation
 
     .line 1
-    iget-object p1, p1, Lcom/google/android/gms/internal/drive/zzfj;->f:Lcom/google/android/gms/internal/drive/zzei;
+    iget-object p1, p1, Lcom/google/android/gms/internal/drive/zzfj;->g:Lcom/google/android/gms/internal/drive/zzei;
 
     .line 2
-    iget v0, p1, Lcom/google/android/gms/internal/drive/zzei;->f:I
+    iget v0, p1, Lcom/google/android/gms/internal/drive/zzei;->g:I
 
     const/4 v1, 0x1
 
@@ -52,10 +52,10 @@
 
     .line 3
     :cond_0
-    iget-boolean v0, p1, Lcom/google/android/gms/internal/drive/zzei;->h:Z
+    iget-boolean v0, p1, Lcom/google/android/gms/internal/drive/zzei;->i:Z
 
     .line 4
-    iget p1, p1, Lcom/google/android/gms/internal/drive/zzei;->g:I
+    iget p1, p1, Lcom/google/android/gms/internal/drive/zzei;->h:I
 
     const/16 v0, 0x100
 

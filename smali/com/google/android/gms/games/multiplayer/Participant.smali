@@ -20,7 +20,7 @@
 
 
 # virtual methods
-.method public abstract L1()Ljava/lang/String;
+.method public abstract K1()Ljava/lang/String;
 .end method
 
 .method public abstract Y()Ljava/lang/String;

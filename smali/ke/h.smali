@@ -8,7 +8,7 @@
 
 
 # static fields
-.field public static final f:Lke/h;
+.field public static final g:Lke/h;
 
 
 # direct methods
@@ -19,7 +19,7 @@
 
     invoke-direct {v0}, Lke/h;-><init>()V
 
-    sput-object v0, Lke/h;->f:Lke/h;
+    sput-object v0, Lke/h;->g:Lke/h;
 
     return-void
 .end method
@@ -35,7 +35,7 @@
 .method private final readResolve()Ljava/lang/Object;
     .locals 1
 
-    sget-object v0, Lke/h;->f:Lke/h;
+    sget-object v0, Lke/h;->g:Lke/h;
 
     return-object v0
 .end method
@@ -58,7 +58,7 @@
 
     const-string v0, "operation"
 
-    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     return-object p1
 .end method
@@ -77,7 +77,7 @@
 
     const-string v0, "key"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/4 p1, 0x0
 
@@ -105,7 +105,7 @@
 
     const-string v0, "key"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     return-object p0
 .end method
@@ -115,7 +115,7 @@
 
     const-string v0, "context"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     return-object p1
 .end method

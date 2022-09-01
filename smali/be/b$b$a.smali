@@ -1,5 +1,5 @@
 .class public final Lbe/b$b$a;
-.super Lse/h;
+.super Lse/i;
 .source "ClientStateStorage.kt"
 
 # interfaces
@@ -18,7 +18,7 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/a<",
         "Ljava/lang/Object;",
         ">;"
@@ -27,18 +27,18 @@
 
 
 # instance fields
-.field public final synthetic f:Landroid/content/Context;
+.field public final synthetic g:Landroid/content/Context;
 
 
 # direct methods
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 0
 
-    iput-object p1, p0, Lbe/b$b$a;->f:Landroid/content/Context;
+    iput-object p1, p0, Lbe/b$b$a;->g:Landroid/content/Context;
 
     const/4 p1, 0x0
 
-    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -58,7 +58,7 @@
     if-lt v0, v2, :cond_0
 
     .line 2
-    iget-object v0, p0, Lbe/b$b$a;->f:Landroid/content/Context;
+    iget-object v0, p0, Lbe/b$b$a;->g:Landroid/content/Context;
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->deleteSharedPreferences(Ljava/lang/String;)Z
 
@@ -72,7 +72,7 @@
 
     .line 3
     :cond_0
-    iget-object v0, p0, Lbe/b$b$a;->f:Landroid/content/Context;
+    iget-object v0, p0, Lbe/b$b$a;->g:Landroid/content/Context;
 
     const/4 v2, 0x0
 

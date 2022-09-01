@@ -58,7 +58,7 @@
     .line 4
     iget-object v0, p1, Lta/a;->f:Landroid/view/View;
 
-    invoke-static {v0}, Lcom/helpshift/util/t;->a(Landroid/view/View;)Z
+    invoke-static {v0}, Lcom/helpshift/util/s;->a(Landroid/view/View;)Z
 
     move-result v0
 
@@ -67,7 +67,7 @@
     iget-object v0, p1, Lta/a;->j:Landroid/view/View;
 
     .line 5
-    invoke-static {v0}, Lcom/helpshift/util/t;->c(Landroid/view/View;)Z
+    invoke-static {v0}, Lcom/helpshift/util/s;->c(Landroid/view/View;)Z
 
     move-result v0
 
@@ -92,7 +92,7 @@
     iget-object v1, p1, Lta/a;->j:Landroid/view/View;
 
     .line 9
-    invoke-static {v1}, Lcom/helpshift/util/t;->b(Landroid/view/View;)Z
+    invoke-static {v1}, Lcom/helpshift/util/s;->b(Landroid/view/View;)Z
 
     move-result v1
 
@@ -160,7 +160,7 @@
     check-cast p1, Lqa/t;
 
     .line 4
-    iget-object p1, p1, Lqa/t;->m0:Lf9/i;
+    iget-object p1, p1, Lqa/t;->n0:Lf9/i;
 
     .line 5
     iget-object p1, p1, Lf9/i;->i:Lf9/i1;
@@ -174,7 +174,7 @@
     const-string v1, "Smart intent bottom sheet state changed to collapsed mode"
 
     .line 6
-    invoke-static {v0, v1, p2, p2}, Landroidx/savedstate/d;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v0, v1, p2, p2}, Le5/i;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
 
     .line 7
     iget-object p2, p1, Lf9/i1;->n:Lo/e;
@@ -213,7 +213,7 @@
     check-cast p1, Lqa/t;
 
     .line 12
-    iget-object p1, p1, Lqa/t;->m0:Lf9/i;
+    iget-object p1, p1, Lqa/t;->n0:Lf9/i;
 
     .line 13
     iget-object p1, p1, Lf9/i;->i:Lf9/i1;

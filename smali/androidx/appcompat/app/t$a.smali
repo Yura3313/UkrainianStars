@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field public final synthetic f:Landroidx/appcompat/app/t;
+.field public final synthetic g:Landroidx/appcompat/app/t;
 
 
 # direct methods
 .method public constructor <init>(Landroidx/appcompat/app/t;)V
     .locals 0
 
-    iput-object p1, p0, Landroidx/appcompat/app/t$a;->f:Landroidx/appcompat/app/t;
+    iput-object p1, p0, Landroidx/appcompat/app/t$a;->g:Landroidx/appcompat/app/t;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -38,7 +38,7 @@
     .locals 6
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/app/t$a;->f:Landroidx/appcompat/app/t;
+    iget-object v0, p0, Landroidx/appcompat/app/t$a;->g:Landroidx/appcompat/app/t;
 
     .line 2
     invoke-virtual {v0}, Landroidx/appcompat/app/t;->s()Landroid/view/Menu;
@@ -77,7 +77,7 @@
 
     const/4 v5, 0x0
 
-    invoke-virtual {v4, v5, v1}, Lf/i;->onCreatePanelMenu(ILandroid/view/Menu;)Z
+    invoke-virtual {v4, v5, v1}, Lf/j;->onCreatePanelMenu(ILandroid/view/Menu;)Z
 
     move-result v4
 

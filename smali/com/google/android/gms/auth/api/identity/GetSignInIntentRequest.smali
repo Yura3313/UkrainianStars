@@ -16,11 +16,11 @@
 
 
 # instance fields
-.field public final f:Ljava/lang/String;
-
 .field public final g:Ljava/lang/String;
 
-.field public h:Ljava/lang/String;
+.field public final h:Ljava/lang/String;
+
+.field public i:Ljava/lang/String;
 
 
 # direct methods
@@ -46,13 +46,13 @@
     invoke-static {p1}, Ld2/h;->h(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 3
-    iput-object p1, p0, Lcom/google/android/gms/auth/api/identity/GetSignInIntentRequest;->f:Ljava/lang/String;
+    iput-object p1, p0, Lcom/google/android/gms/auth/api/identity/GetSignInIntentRequest;->g:Ljava/lang/String;
 
     .line 4
-    iput-object p2, p0, Lcom/google/android/gms/auth/api/identity/GetSignInIntentRequest;->g:Ljava/lang/String;
+    iput-object p2, p0, Lcom/google/android/gms/auth/api/identity/GetSignInIntentRequest;->h:Ljava/lang/String;
 
     .line 5
-    iput-object p3, p0, Lcom/google/android/gms/auth/api/identity/GetSignInIntentRequest;->h:Ljava/lang/String;
+    iput-object p3, p0, Lcom/google/android/gms/auth/api/identity/GetSignInIntentRequest;->i:Ljava/lang/String;
 
     return-void
 .end method
@@ -76,21 +76,10 @@
     check-cast p1, Lcom/google/android/gms/auth/api/identity/GetSignInIntentRequest;
 
     .line 3
-    iget-object v0, p0, Lcom/google/android/gms/auth/api/identity/GetSignInIntentRequest;->f:Ljava/lang/String;
-
-    iget-object v2, p1, Lcom/google/android/gms/auth/api/identity/GetSignInIntentRequest;->f:Ljava/lang/String;
-
-    invoke-static {v0, v2}, Ld2/f;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_1
-
     iget-object v0, p0, Lcom/google/android/gms/auth/api/identity/GetSignInIntentRequest;->g:Ljava/lang/String;
 
     iget-object v2, p1, Lcom/google/android/gms/auth/api/identity/GetSignInIntentRequest;->g:Ljava/lang/String;
 
-    .line 4
     invoke-static {v0, v2}, Ld2/f;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
@@ -99,7 +88,18 @@
 
     iget-object v0, p0, Lcom/google/android/gms/auth/api/identity/GetSignInIntentRequest;->h:Ljava/lang/String;
 
-    iget-object p1, p1, Lcom/google/android/gms/auth/api/identity/GetSignInIntentRequest;->h:Ljava/lang/String;
+    iget-object v2, p1, Lcom/google/android/gms/auth/api/identity/GetSignInIntentRequest;->h:Ljava/lang/String;
+
+    .line 4
+    invoke-static {v0, v2}, Ld2/f;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    iget-object v0, p0, Lcom/google/android/gms/auth/api/identity/GetSignInIntentRequest;->i:Ljava/lang/String;
+
+    iget-object p1, p1, Lcom/google/android/gms/auth/api/identity/GetSignInIntentRequest;->i:Ljava/lang/String;
 
     .line 5
     invoke-static {v0, p1}, Ld2/f;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
@@ -124,19 +124,19 @@
     new-array v0, v0, [Ljava/lang/Object;
 
     .line 1
-    iget-object v1, p0, Lcom/google/android/gms/auth/api/identity/GetSignInIntentRequest;->f:Ljava/lang/String;
+    iget-object v1, p0, Lcom/google/android/gms/auth/api/identity/GetSignInIntentRequest;->g:Ljava/lang/String;
 
     const/4 v2, 0x0
 
     aput-object v1, v0, v2
 
-    iget-object v1, p0, Lcom/google/android/gms/auth/api/identity/GetSignInIntentRequest;->g:Ljava/lang/String;
+    iget-object v1, p0, Lcom/google/android/gms/auth/api/identity/GetSignInIntentRequest;->h:Ljava/lang/String;
 
     const/4 v2, 0x1
 
     aput-object v1, v0, v2
 
-    iget-object v1, p0, Lcom/google/android/gms/auth/api/identity/GetSignInIntentRequest;->h:Ljava/lang/String;
+    iget-object v1, p0, Lcom/google/android/gms/auth/api/identity/GetSignInIntentRequest;->i:Ljava/lang/String;
 
     const/4 v2, 0x2
 
@@ -161,7 +161,7 @@
     move-result p2
 
     .line 2
-    iget-object v0, p0, Lcom/google/android/gms/auth/api/identity/GetSignInIntentRequest;->f:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/android/gms/auth/api/identity/GetSignInIntentRequest;->g:Ljava/lang/String;
 
     const/4 v1, 0x1
 
@@ -171,7 +171,7 @@
     invoke-static {p1, v1, v0, v2}, Le2/b;->m(Landroid/os/Parcel;ILjava/lang/String;Z)V
 
     .line 4
-    iget-object v0, p0, Lcom/google/android/gms/auth/api/identity/GetSignInIntentRequest;->g:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/android/gms/auth/api/identity/GetSignInIntentRequest;->h:Ljava/lang/String;
 
     const/4 v1, 0x2
 
@@ -179,7 +179,7 @@
     invoke-static {p1, v1, v0, v2}, Le2/b;->m(Landroid/os/Parcel;ILjava/lang/String;Z)V
 
     .line 6
-    iget-object v0, p0, Lcom/google/android/gms/auth/api/identity/GetSignInIntentRequest;->h:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/android/gms/auth/api/identity/GetSignInIntentRequest;->i:Ljava/lang/String;
 
     const/4 v1, 0x3
 

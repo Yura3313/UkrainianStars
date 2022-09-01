@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field public final synthetic f:Lwc/q;
+.field public final synthetic g:Lwc/q;
 
 
 # direct methods
 .method public constructor <init>(Lwc/q;)V
     .locals 0
 
-    iput-object p1, p0, Lwc/q$b;->f:Lwc/q;
+    iput-object p1, p0, Lwc/q$b;->g:Lwc/q;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -38,7 +38,7 @@
     .locals 1
 
     .line 1
-    iget-object p1, p0, Lwc/q$b;->f:Lwc/q;
+    iget-object p1, p0, Lwc/q$b;->g:Lwc/q;
 
     sget v0, Lcom/supercell/id/R$id;->okButton:I
 
@@ -50,17 +50,17 @@
 
     const-string v0, "okButton"
 
-    invoke-static {p1, v0}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/4 v0, 0x0
 
     invoke-virtual {p1, v0}, Landroid/view/View;->setEnabled(Z)V
 
     .line 2
-    iget-object p1, p0, Lwc/q$b;->f:Lwc/q;
+    iget-object p1, p0, Lwc/q$b;->g:Lwc/q;
 
     .line 3
-    iget-object v0, p1, Lwc/q;->w0:Lre/l;
+    iget-object v0, p1, Lwc/q;->x0:Lre/l;
 
     if-eqz v0, :cond_0
 
@@ -69,11 +69,11 @@
 
     move-result-object p1
 
-    check-cast p1, Lie/h;
+    check-cast p1, Lie/i;
 
     .line 5
     :cond_0
-    iget-object p1, p0, Lwc/q$b;->f:Lwc/q;
+    iget-object p1, p0, Lwc/q$b;->g:Lwc/q;
 
     invoke-virtual {p1}, Lwc/e;->V0()V
 

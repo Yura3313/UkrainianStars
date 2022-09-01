@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field public final synthetic j:Landroid/os/Bundle;
+.field public final synthetic k:Landroid/os/Bundle;
 
-.field public final synthetic k:Lv3/s4;
+.field public final synthetic l:Lv3/s4;
 
 
 # direct methods
@@ -14,9 +14,9 @@
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lv3/q;->k:Lv3/s4;
+    iput-object p1, p0, Lv3/q;->l:Lv3/s4;
 
-    iput-object p2, p0, Lv3/q;->j:Landroid/os/Bundle;
+    iput-object p2, p0, Lv3/q;->k:Landroid/os/Bundle;
 
     const/4 p2, 0x1
 
@@ -37,15 +37,15 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lv3/q;->k:Lv3/s4;
+    iget-object v0, p0, Lv3/q;->l:Lv3/s4;
 
     .line 2
     iget-object v0, v0, Lv3/s4;->f:Lcom/google/android/gms/internal/measurement/zzm;
 
     .line 3
-    iget-object v1, p0, Lv3/q;->j:Landroid/os/Bundle;
+    iget-object v1, p0, Lv3/q;->k:Landroid/os/Bundle;
 
-    iget-wide v2, p0, Lv3/s4$a;->f:J
+    iget-wide v2, p0, Lv3/s4$a;->g:J
 
     invoke-interface {v0, v1, v2, v3}, Lcom/google/android/gms/internal/measurement/zzm;->setConditionalUserProperty(Landroid/os/Bundle;J)V
 

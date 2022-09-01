@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field public final i:Lc3/b;
+.field public final j:Lc3/b;
 
 
 # direct methods
@@ -18,7 +18,7 @@
     invoke-direct {p0, p1, p2}, Lc2/d;-><init>(Lcom/google/android/gms/common/data/DataHolder;I)V
 
     .line 2
-    iput-object p3, p0, Lcom/google/android/gms/games/internal/player/zzd;->i:Lc3/b;
+    iput-object p3, p0, Lcom/google/android/gms/games/internal/player/zzd;->j:Lc3/b;
 
     return-void
 .end method
@@ -28,7 +28,7 @@
 .method public final C()J
     .locals 2
 
-    iget-object v0, p0, Lcom/google/android/gms/games/internal/player/zzd;->i:Lc3/b;
+    iget-object v0, p0, Lcom/google/android/gms/games/internal/player/zzd;->j:Lc3/b;
 
     iget-object v0, v0, Lc3/b;->u:Ljava/lang/String;
 
@@ -42,7 +42,7 @@
 .method public final J0()Landroid/net/Uri;
     .locals 1
 
-    iget-object v0, p0, Lcom/google/android/gms/games/internal/player/zzd;->i:Lc3/b;
+    iget-object v0, p0, Lcom/google/android/gms/games/internal/player/zzd;->j:Lc3/b;
 
     iget-object v0, v0, Lc3/b;->v:Ljava/lang/String;
 
@@ -56,7 +56,7 @@
 .method public final b1()Landroid/net/Uri;
     .locals 1
 
-    iget-object v0, p0, Lcom/google/android/gms/games/internal/player/zzd;->i:Lc3/b;
+    iget-object v0, p0, Lcom/google/android/gms/games/internal/player/zzd;->j:Lc3/b;
 
     iget-object v0, v0, Lc3/b;->w:Ljava/lang/String;
 
@@ -78,7 +78,7 @@
 .method public final e0()Landroid/net/Uri;
     .locals 1
 
-    iget-object v0, p0, Lcom/google/android/gms/games/internal/player/zzd;->i:Lc3/b;
+    iget-object v0, p0, Lcom/google/android/gms/games/internal/player/zzd;->j:Lc3/b;
 
     iget-object v0, v0, Lc3/b;->x:Ljava/lang/String;
 
@@ -122,7 +122,7 @@
 .method public final q1()Ljava/lang/String;
     .locals 1
 
-    iget-object v0, p0, Lcom/google/android/gms/games/internal/player/zzd;->i:Lc3/b;
+    iget-object v0, p0, Lcom/google/android/gms/games/internal/player/zzd;->j:Lc3/b;
 
     iget-object v0, v0, Lc3/b;->t:Ljava/lang/String;
 
@@ -136,7 +136,7 @@
 .method public final q2()Ljava/lang/String;
     .locals 1
 
-    iget-object v0, p0, Lcom/google/android/gms/games/internal/player/zzd;->i:Lc3/b;
+    iget-object v0, p0, Lcom/google/android/gms/games/internal/player/zzd;->j:Lc3/b;
 
     iget-object v0, v0, Lc3/b;->s:Ljava/lang/String;
 

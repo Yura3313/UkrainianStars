@@ -7,39 +7,39 @@
 
 
 # instance fields
-.field public final f:I
-
 .field public final g:I
 
 .field public final h:I
 
-.field public i:I
+.field public final i:I
 
 .field public j:I
 
-.field public k:F
+.field public k:I
 
 .field public l:F
 
-.field public m:Z
+.field public m:F
 
-.field public n:I
+.field public n:Z
 
-.field public o:Z
+.field public o:I
 
-.field public p:Landroid/view/VelocityTracker;
+.field public p:Z
 
-.field public q:F
+.field public q:Landroid/view/VelocityTracker;
 
 .field public r:F
 
-.field public final s:Landroid/view/View;
+.field public s:F
 
-.field public final t:Lre/a;
+.field public final t:Landroid/view/View;
+
+.field public final u:Lre/a;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lre/a<",
-            "Lie/h;",
+            "Lie/i;",
             ">;"
         }
     .end annotation
@@ -54,7 +54,7 @@
             "(",
             "Landroid/view/View;",
             "Lre/a<",
-            "Lie/h;",
+            "Lie/i;",
             ">;)V"
         }
     .end annotation
@@ -62,9 +62,9 @@
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lid/f0;->s:Landroid/view/View;
+    iput-object p1, p0, Lid/f0;->t:Landroid/view/View;
 
-    iput-object p2, p0, Lid/f0;->t:Lre/a;
+    iput-object p2, p0, Lid/f0;->u:Lre/a;
 
     .line 2
     invoke-virtual {p1}, Landroid/view/View;->getContext()Landroid/content/Context;
@@ -78,13 +78,13 @@
     const-string p2, "vc"
 
     .line 3
-    invoke-static {p1, p2}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p2}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {p1}, Landroid/view/ViewConfiguration;->getScaledTouchSlop()I
 
     move-result p2
 
-    iput p2, p0, Lid/f0;->f:I
+    iput p2, p0, Lid/f0;->g:I
 
     .line 4
     invoke-virtual {p1}, Landroid/view/ViewConfiguration;->getScaledMinimumFlingVelocity()I
@@ -93,14 +93,14 @@
 
     mul-int/lit8 p2, p2, 0x10
 
-    iput p2, p0, Lid/f0;->g:I
+    iput p2, p0, Lid/f0;->h:I
 
     .line 5
     invoke-virtual {p1}, Landroid/view/ViewConfiguration;->getScaledMaximumFlingVelocity()I
 
     move-result p1
 
-    iput p1, p0, Lid/f0;->h:I
+    iput p1, p0, Lid/f0;->i:I
 
     return-void
 .end method
@@ -116,24 +116,24 @@
 
     const-string v2, "motionEvent"
 
-    invoke-static {v1, v2}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
-    iget v2, v0, Lid/f0;->q:F
+    iget v2, v0, Lid/f0;->r:F
 
-    iget v3, v0, Lid/f0;->r:F
+    iget v3, v0, Lid/f0;->s:F
 
     invoke-virtual {v1, v2, v3}, Landroid/view/MotionEvent;->offsetLocation(FF)V
 
     .line 2
-    iget v2, v0, Lid/f0;->j:I
+    iget v2, v0, Lid/f0;->k:I
 
     const/4 v3, 0x2
 
     if-nez v2, :cond_0
 
     .line 3
-    iget-object v2, v0, Lid/f0;->s:Landroid/view/View;
+    iget-object v2, v0, Lid/f0;->t:Landroid/view/View;
 
     invoke-virtual {v2}, Landroid/view/View;->getRootView()Landroid/view/View;
 
@@ -142,7 +142,7 @@
     const-string v4, "root"
 
     .line 4
-    invoke-static {v2, v4}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v2, v4}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v2}, Landroid/view/View;->getWidth()I
 
@@ -177,16 +177,16 @@
     add-int/2addr v2, v4
 
     .line 5
-    iput v2, v0, Lid/f0;->j:I
+    iput v2, v0, Lid/f0;->k:I
 
     .line 6
     :cond_0
-    iget v2, v0, Lid/f0;->i:I
+    iget v2, v0, Lid/f0;->j:I
 
     if-nez v2, :cond_1
 
     .line 7
-    iget-object v2, v0, Lid/f0;->s:Landroid/view/View;
+    iget-object v2, v0, Lid/f0;->t:Landroid/view/View;
 
     invoke-static {v2}, Lae/z2;->c(Landroid/view/View;)Landroid/graphics/Rect;
 
@@ -194,7 +194,7 @@
 
     iget v2, v2, Landroid/graphics/Rect;->bottom:I
 
-    iput v2, v0, Lid/f0;->i:I
+    iput v2, v0, Lid/f0;->j:I
 
     .line 8
     :cond_1
@@ -226,12 +226,12 @@
 
     .line 9
     :cond_2
-    iget-object v1, v0, Lid/f0;->p:Landroid/view/VelocityTracker;
+    iget-object v1, v0, Lid/f0;->q:Landroid/view/VelocityTracker;
 
     if-eqz v1, :cond_3
 
     .line 10
-    iget-object v2, v0, Lid/f0;->s:Landroid/view/View;
+    iget-object v2, v0, Lid/f0;->t:Landroid/view/View;
 
     invoke-virtual {v2}, Landroid/view/View;->animate()Landroid/view/ViewPropertyAnimator;
 
@@ -267,28 +267,28 @@
     invoke-virtual {v1}, Landroid/view/VelocityTracker;->recycle()V
 
     .line 18
-    iput-object v4, v0, Lid/f0;->p:Landroid/view/VelocityTracker;
+    iput-object v4, v0, Lid/f0;->q:Landroid/view/VelocityTracker;
 
     .line 19
-    iput v9, v0, Lid/f0;->q:F
-
-    .line 20
     iput v9, v0, Lid/f0;->r:F
 
-    .line 21
-    iput v9, v0, Lid/f0;->k:F
+    .line 20
+    iput v9, v0, Lid/f0;->s:F
 
-    .line 22
+    .line 21
     iput v9, v0, Lid/f0;->l:F
 
+    .line 22
+    iput v9, v0, Lid/f0;->m:F
+
     .line 23
-    iput-boolean v10, v0, Lid/f0;->m:Z
+    iput-boolean v10, v0, Lid/f0;->n:Z
 
     .line 24
-    iput v10, v0, Lid/f0;->n:I
+    iput v10, v0, Lid/f0;->o:I
 
     .line 25
-    iput-boolean v10, v0, Lid/f0;->o:Z
+    iput-boolean v10, v0, Lid/f0;->p:Z
 
     goto/16 :goto_7
 
@@ -297,7 +297,7 @@
 
     .line 26
     :cond_4
-    iget-object v2, v0, Lid/f0;->p:Landroid/view/VelocityTracker;
+    iget-object v2, v0, Lid/f0;->q:Landroid/view/VelocityTracker;
 
     if-eqz v2, :cond_a
 
@@ -309,7 +309,7 @@
 
     move-result v2
 
-    iget v4, v0, Lid/f0;->k:F
+    iget v4, v0, Lid/f0;->l:F
 
     sub-float/2addr v2, v4
 
@@ -318,7 +318,7 @@
 
     move-result v4
 
-    iget v7, v0, Lid/f0;->l:F
+    iget v7, v0, Lid/f0;->m:F
 
     sub-float/2addr v4, v7
 
@@ -327,7 +327,7 @@
     move-result v4
 
     .line 30
-    iget-boolean v7, v0, Lid/f0;->o:Z
+    iget-boolean v7, v0, Lid/f0;->p:Z
 
     const-string v8, "cancelEvent"
 
@@ -337,7 +337,7 @@
 
     move-result v7
 
-    iget v11, v0, Lid/f0;->f:I
+    iget v11, v0, Lid/f0;->g:I
 
     int-to-float v11, v11
 
@@ -362,10 +362,10 @@
     if-gez v7, :cond_5
 
     .line 31
-    iput-boolean v5, v0, Lid/f0;->m:Z
+    iput-boolean v5, v0, Lid/f0;->n:Z
 
     .line 32
-    iget-object v7, v0, Lid/f0;->s:Landroid/view/View;
+    iget-object v7, v0, Lid/f0;->t:Landroid/view/View;
 
     invoke-virtual {v7}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
 
@@ -379,7 +379,7 @@
     move-result-object v7
 
     .line 34
-    invoke-static {v7, v8}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v7, v8}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 35
     invoke-virtual/range {p2 .. p2}, Landroid/view/MotionEvent;->getActionIndex()I
@@ -394,7 +394,7 @@
     invoke-virtual {v7, v11}, Landroid/view/MotionEvent;->setAction(I)V
 
     .line 37
-    iget-object v11, v0, Lid/f0;->s:Landroid/view/View;
+    iget-object v11, v0, Lid/f0;->t:Landroid/view/View;
 
     invoke-virtual {v11, v7}, Landroid/view/View;->onTouchEvent(Landroid/view/MotionEvent;)Z
 
@@ -403,11 +403,11 @@
 
     .line 39
     :cond_5
-    iget-boolean v7, v0, Lid/f0;->m:Z
+    iget-boolean v7, v0, Lid/f0;->n:Z
 
     if-nez v7, :cond_6
 
-    iget v7, v0, Lid/f0;->f:I
+    iget v7, v0, Lid/f0;->g:I
 
     neg-int v7, v7
 
@@ -434,10 +434,10 @@
     if-gez v3, :cond_6
 
     .line 40
-    iput-boolean v5, v0, Lid/f0;->o:Z
+    iput-boolean v5, v0, Lid/f0;->p:Z
 
     .line 41
-    iget-object v3, v0, Lid/f0;->s:Landroid/view/View;
+    iget-object v3, v0, Lid/f0;->t:Landroid/view/View;
 
     invoke-virtual {v3}, Landroid/view/View;->getParent()Landroid/view/ViewParent;
 
@@ -451,7 +451,7 @@
     move-result-object v3
 
     .line 43
-    invoke-static {v3, v8}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v3, v8}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 44
     invoke-virtual/range {p2 .. p2}, Landroid/view/MotionEvent;->getActionIndex()I
@@ -466,7 +466,7 @@
     invoke-virtual {v3, v1}, Landroid/view/MotionEvent;->setAction(I)V
 
     .line 46
-    iget-object v1, v0, Lid/f0;->s:Landroid/view/View;
+    iget-object v1, v0, Lid/f0;->t:Landroid/view/View;
 
     invoke-virtual {v1, v3}, Landroid/view/View;->onTouchEvent(Landroid/view/MotionEvent;)Z
 
@@ -475,12 +475,12 @@
 
     .line 48
     :cond_6
-    iget-boolean v1, v0, Lid/f0;->m:Z
+    iget-boolean v1, v0, Lid/f0;->n:Z
 
     if-eqz v1, :cond_9
 
     .line 49
-    iget v1, v0, Lid/f0;->n:I
+    iget v1, v0, Lid/f0;->o:I
 
     if-nez v1, :cond_8
 
@@ -491,26 +491,26 @@
     if-gez v1, :cond_7
 
     .line 50
-    iget v1, v0, Lid/f0;->f:I
+    iget v1, v0, Lid/f0;->g:I
 
     goto :goto_0
 
     :cond_7
-    iget v1, v0, Lid/f0;->f:I
+    iget v1, v0, Lid/f0;->g:I
 
     neg-int v1, v1
 
     :goto_0
-    iput v1, v0, Lid/f0;->n:I
+    iput v1, v0, Lid/f0;->o:I
 
     .line 51
     :cond_8
-    iput v2, v0, Lid/f0;->q:F
+    iput v2, v0, Lid/f0;->r:F
 
     .line 52
-    iget-object v1, v0, Lid/f0;->s:Landroid/view/View;
+    iget-object v1, v0, Lid/f0;->t:Landroid/view/View;
 
-    iget v3, v0, Lid/f0;->n:I
+    iget v3, v0, Lid/f0;->o:I
 
     int-to-float v3, v3
 
@@ -522,17 +522,17 @@
 
     .line 53
     :cond_9
-    iget-boolean v1, v0, Lid/f0;->o:Z
+    iget-boolean v1, v0, Lid/f0;->p:Z
 
     if-eqz v1, :cond_17
 
     .line 54
-    iput v4, v0, Lid/f0;->r:F
+    iput v4, v0, Lid/f0;->s:F
 
     .line 55
-    iget-object v1, v0, Lid/f0;->s:Landroid/view/View;
+    iget-object v1, v0, Lid/f0;->t:Landroid/view/View;
 
-    iget v2, v0, Lid/f0;->f:I
+    iget v2, v0, Lid/f0;->g:I
 
     int-to-float v2, v2
 
@@ -551,7 +551,7 @@
 
     .line 56
     :cond_b
-    iget-object v2, v0, Lid/f0;->p:Landroid/view/VelocityTracker;
+    iget-object v2, v0, Lid/f0;->q:Landroid/view/VelocityTracker;
 
     if-eqz v2, :cond_17
 
@@ -560,7 +560,7 @@
 
     move-result v11
 
-    iget v12, v0, Lid/f0;->k:F
+    iget v12, v0, Lid/f0;->l:F
 
     sub-float/2addr v11, v12
 
@@ -569,7 +569,7 @@
 
     move-result v12
 
-    iget v13, v0, Lid/f0;->l:F
+    iget v13, v0, Lid/f0;->m:F
 
     sub-float/2addr v12, v13
 
@@ -606,12 +606,12 @@
     move-result v16
 
     .line 65
-    iget-boolean v3, v0, Lid/f0;->m:Z
+    iget-boolean v3, v0, Lid/f0;->n:Z
 
     if-eqz v3, :cond_12
 
     .line 66
-    iget v3, v0, Lid/f0;->g:I
+    iget v3, v0, Lid/f0;->h:I
 
     int-to-float v3, v3
 
@@ -619,7 +619,7 @@
 
     if-gtz v3, :cond_c
 
-    iget v3, v0, Lid/f0;->h:I
+    iget v3, v0, Lid/f0;->i:I
 
     int-to-float v3, v3
 
@@ -648,7 +648,7 @@
     if-gez v3, :cond_d
 
     .line 67
-    iget-object v3, v0, Lid/f0;->s:Landroid/view/View;
+    iget-object v3, v0, Lid/f0;->t:Landroid/view/View;
 
     invoke-virtual {v3}, Landroid/view/View;->getTranslationX()F
 
@@ -657,7 +657,7 @@
     goto :goto_2
 
     :cond_d
-    iget-object v3, v0, Lid/f0;->s:Landroid/view/View;
+    iget-object v3, v0, Lid/f0;->t:Landroid/view/View;
 
     invoke-virtual {v3}, Landroid/view/View;->getTranslationX()F
 
@@ -666,7 +666,7 @@
     neg-float v3, v3
 
     :goto_2
-    iget v4, v0, Lid/f0;->j:I
+    iget v4, v0, Lid/f0;->k:I
 
     int-to-float v4, v4
 
@@ -685,7 +685,7 @@
     float-to-long v3, v3
 
     .line 68
-    iget-object v1, v0, Lid/f0;->s:Landroid/view/View;
+    iget-object v1, v0, Lid/f0;->t:Landroid/view/View;
 
     invoke-virtual {v1}, Landroid/view/View;->animate()Landroid/view/ViewPropertyAnimator;
 
@@ -696,14 +696,14 @@
     if-gez v2, :cond_e
 
     .line 69
-    iget v2, v0, Lid/f0;->j:I
+    iget v2, v0, Lid/f0;->k:I
 
     neg-int v2, v2
 
     goto :goto_3
 
     :cond_e
-    iget v2, v0, Lid/f0;->j:I
+    iget v2, v0, Lid/f0;->k:I
 
     :goto_3
     int-to-float v2, v2
@@ -745,7 +745,7 @@
 
     move-result v1
 
-    iget v3, v0, Lid/f0;->j:I
+    iget v3, v0, Lid/f0;->k:I
 
     div-int/2addr v3, v6
 
@@ -756,7 +756,7 @@
     if-lez v1, :cond_11
 
     .line 76
-    iget-object v1, v0, Lid/f0;->s:Landroid/view/View;
+    iget-object v1, v0, Lid/f0;->t:Landroid/view/View;
 
     invoke-virtual {v1}, Landroid/view/View;->animate()Landroid/view/ViewPropertyAnimator;
 
@@ -769,14 +769,14 @@
     if-gez v2, :cond_10
 
     .line 77
-    iget v2, v0, Lid/f0;->j:I
+    iget v2, v0, Lid/f0;->k:I
 
     neg-int v2, v2
 
     goto :goto_4
 
     :cond_10
-    iget v2, v0, Lid/f0;->j:I
+    iget v2, v0, Lid/f0;->k:I
 
     :goto_4
     int-to-float v2, v2
@@ -814,7 +814,7 @@
 
     .line 83
     :cond_11
-    iget-object v1, v0, Lid/f0;->s:Landroid/view/View;
+    iget-object v1, v0, Lid/f0;->t:Landroid/view/View;
 
     invoke-virtual {v1}, Landroid/view/View;->animate()Landroid/view/ViewPropertyAnimator;
 
@@ -850,12 +850,12 @@
 
     .line 90
     :cond_12
-    iget-boolean v3, v0, Lid/f0;->o:Z
+    iget-boolean v3, v0, Lid/f0;->p:Z
 
     if-eqz v3, :cond_16
 
     .line 91
-    iget v3, v0, Lid/f0;->g:I
+    iget v3, v0, Lid/f0;->h:I
 
     int-to-float v3, v3
 
@@ -863,7 +863,7 @@
 
     if-gtz v3, :cond_13
 
-    iget v3, v0, Lid/f0;->h:I
+    iget v3, v0, Lid/f0;->i:I
 
     int-to-float v3, v3
 
@@ -892,13 +892,13 @@
     if-gez v3, :cond_14
 
     .line 92
-    iget-object v2, v0, Lid/f0;->s:Landroid/view/View;
+    iget-object v2, v0, Lid/f0;->t:Landroid/view/View;
 
     invoke-virtual {v2}, Landroid/view/View;->getTranslationY()F
 
     move-result v2
 
-    iget v3, v0, Lid/f0;->i:I
+    iget v3, v0, Lid/f0;->j:I
 
     int-to-float v3, v3
 
@@ -917,7 +917,7 @@
     float-to-long v1, v2
 
     .line 93
-    iget-object v3, v0, Lid/f0;->s:Landroid/view/View;
+    iget-object v3, v0, Lid/f0;->t:Landroid/view/View;
 
     invoke-virtual {v3}, Landroid/view/View;->animate()Landroid/view/ViewPropertyAnimator;
 
@@ -929,7 +929,7 @@
     move-result-object v3
 
     .line 95
-    iget v4, v0, Lid/f0;->i:I
+    iget v4, v0, Lid/f0;->j:I
 
     neg-int v4, v4
 
@@ -973,7 +973,7 @@
 
     move-result v1
 
-    iget v3, v0, Lid/f0;->i:I
+    iget v3, v0, Lid/f0;->j:I
 
     const/4 v6, 0x2
 
@@ -986,7 +986,7 @@
     if-lez v1, :cond_15
 
     .line 101
-    iget-object v1, v0, Lid/f0;->s:Landroid/view/View;
+    iget-object v1, v0, Lid/f0;->t:Landroid/view/View;
 
     invoke-virtual {v1}, Landroid/view/View;->animate()Landroid/view/ViewPropertyAnimator;
 
@@ -998,7 +998,7 @@
     move-result-object v1
 
     .line 103
-    iget v2, v0, Lid/f0;->i:I
+    iget v2, v0, Lid/f0;->j:I
 
     neg-int v2, v2
 
@@ -1032,7 +1032,7 @@
 
     .line 108
     :cond_15
-    iget-object v1, v0, Lid/f0;->s:Landroid/view/View;
+    iget-object v1, v0, Lid/f0;->t:Landroid/view/View;
 
     invoke-virtual {v1}, Landroid/view/View;->animate()Landroid/view/ViewPropertyAnimator;
 
@@ -1070,28 +1070,28 @@
     invoke-virtual {v2}, Landroid/view/VelocityTracker;->recycle()V
 
     .line 116
-    iput-object v4, v0, Lid/f0;->p:Landroid/view/VelocityTracker;
+    iput-object v4, v0, Lid/f0;->q:Landroid/view/VelocityTracker;
 
     .line 117
-    iput v9, v0, Lid/f0;->q:F
-
-    .line 118
     iput v9, v0, Lid/f0;->r:F
 
-    .line 119
-    iput v9, v0, Lid/f0;->k:F
+    .line 118
+    iput v9, v0, Lid/f0;->s:F
 
-    .line 120
+    .line 119
     iput v9, v0, Lid/f0;->l:F
 
+    .line 120
+    iput v9, v0, Lid/f0;->m:F
+
     .line 121
-    iput-boolean v10, v0, Lid/f0;->m:Z
+    iput-boolean v10, v0, Lid/f0;->n:Z
 
     .line 122
-    iput v10, v0, Lid/f0;->n:I
+    iput v10, v0, Lid/f0;->o:I
 
     .line 123
-    iput-boolean v10, v0, Lid/f0;->o:Z
+    iput-boolean v10, v0, Lid/f0;->p:Z
 
     :cond_17
     :goto_7
@@ -1103,21 +1103,21 @@
 
     move-result v2
 
-    iput v2, v0, Lid/f0;->k:F
+    iput v2, v0, Lid/f0;->l:F
 
     .line 125
     invoke-virtual/range {p2 .. p2}, Landroid/view/MotionEvent;->getRawY()F
 
     move-result v2
 
-    iput v2, v0, Lid/f0;->l:F
+    iput v2, v0, Lid/f0;->m:F
 
     .line 126
     invoke-static {}, Landroid/view/VelocityTracker;->obtain()Landroid/view/VelocityTracker;
 
     move-result-object v2
 
-    iput-object v2, v0, Lid/f0;->p:Landroid/view/VelocityTracker;
+    iput-object v2, v0, Lid/f0;->q:Landroid/view/VelocityTracker;
 
     if-eqz v2, :cond_19
 
@@ -1127,7 +1127,7 @@
     return v5
 
     :cond_19
-    invoke-static {}, Lt3/e;->f()V
+    invoke-static {}, Lt3/h;->j()V
 
     throw v4
 .end method

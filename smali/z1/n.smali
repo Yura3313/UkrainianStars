@@ -4,7 +4,7 @@
 
 
 # static fields
-.field public static final i:Ljava/lang/ref/WeakReference;
+.field public static final j:Ljava/lang/ref/WeakReference;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/lang/ref/WeakReference<",
@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field public h:Ljava/lang/ref/WeakReference;
+.field public i:Ljava/lang/ref/WeakReference;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/lang/ref/WeakReference<",
@@ -35,7 +35,7 @@
 
     invoke-direct {v0, v1}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
 
-    sput-object v0, Lz1/n;->i:Ljava/lang/ref/WeakReference;
+    sput-object v0, Lz1/n;->j:Ljava/lang/ref/WeakReference;
 
     return-void
 .end method
@@ -47,9 +47,9 @@
     invoke-direct {p0, p1}, Lz1/l;-><init>([B)V
 
     .line 2
-    sget-object p1, Lz1/n;->i:Ljava/lang/ref/WeakReference;
+    sget-object p1, Lz1/n;->j:Ljava/lang/ref/WeakReference;
 
-    iput-object p1, p0, Lz1/n;->h:Ljava/lang/ref/WeakReference;
+    iput-object p1, p0, Lz1/n;->i:Ljava/lang/ref/WeakReference;
 
     return-void
 .end method
@@ -64,7 +64,7 @@
 
     .line 2
     :try_start_0
-    iget-object v0, p0, Lz1/n;->h:Ljava/lang/ref/WeakReference;
+    iget-object v0, p0, Lz1/n;->i:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v0}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
 
@@ -84,7 +84,7 @@
 
     invoke-direct {v1, v0}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
 
-    iput-object v1, p0, Lz1/n;->h:Ljava/lang/ref/WeakReference;
+    iput-object v1, p0, Lz1/n;->i:Ljava/lang/ref/WeakReference;
 
     .line 5
     :cond_0

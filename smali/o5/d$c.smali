@@ -15,9 +15,9 @@
 
 
 # instance fields
-.field public final j:I
-
 .field public final k:I
+
+.field public final l:I
 
 
 # direct methods
@@ -35,10 +35,10 @@
     invoke-static {p2, v0, p1}, Lo5/d;->c(III)I
 
     .line 3
-    iput p2, p0, Lo5/d$c;->j:I
+    iput p2, p0, Lo5/d$c;->k:I
 
     .line 4
-    iput p3, p0, Lo5/d$c;->k:I
+    iput p3, p0, Lo5/d$c;->l:I
 
     return-void
 .end method
@@ -66,7 +66,7 @@
     .locals 4
 
     .line 1
-    iget v0, p0, Lo5/d$c;->k:I
+    iget v0, p0, Lo5/d$c;->l:I
 
     add-int/lit8 v1, p1, 0x1
 
@@ -123,9 +123,9 @@
 
     .line 6
     :cond_1
-    iget-object v0, p0, Lo5/d$f;->i:[B
+    iget-object v0, p0, Lo5/d$f;->j:[B
 
-    iget v1, p0, Lo5/d$c;->j:I
+    iget v1, p0, Lo5/d$c;->k:I
 
     add-int/2addr v1, p1
 
@@ -138,10 +138,10 @@
     .locals 3
 
     .line 1
-    iget-object v0, p0, Lo5/d$f;->i:[B
+    iget-object v0, p0, Lo5/d$f;->j:[B
 
     .line 2
-    iget v1, p0, Lo5/d$c;->j:I
+    iget v1, p0, Lo5/d$c;->k:I
 
     const/4 v2, 0x0
 
@@ -156,9 +156,9 @@
 .method public final h(I)B
     .locals 2
 
-    iget-object v0, p0, Lo5/d$f;->i:[B
+    iget-object v0, p0, Lo5/d$f;->j:[B
 
-    iget v1, p0, Lo5/d$c;->j:I
+    iget v1, p0, Lo5/d$c;->k:I
 
     add-int/2addr v1, p1
 
@@ -170,7 +170,7 @@
 .method public final r()I
     .locals 1
 
-    iget v0, p0, Lo5/d$c;->j:I
+    iget v0, p0, Lo5/d$c;->k:I
 
     return v0
 .end method
@@ -178,7 +178,7 @@
 .method public final size()I
     .locals 1
 
-    iget v0, p0, Lo5/d$c;->k:I
+    iget v0, p0, Lo5/d$c;->l:I
 
     return v0
 .end method

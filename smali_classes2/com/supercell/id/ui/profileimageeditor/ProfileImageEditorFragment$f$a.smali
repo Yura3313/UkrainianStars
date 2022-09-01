@@ -1,5 +1,5 @@
 .class public final Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment$f$a;
-.super Lse/h;
+.super Lse/i;
 .source "ProfileImageEditorFragment.kt"
 
 # interfaces
@@ -18,29 +18,29 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/p<",
         "Lwc/t;",
         "Lwc/s;",
-        "Lie/h;",
+        "Lie/i;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic f:Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment$f;
+.field public final synthetic g:Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment$f;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment$f;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment$f$a;->f:Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment$f;
+    iput-object p1, p0, Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment$f$a;->g:Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment$f;
 
     const/4 p1, 0x2
 
-    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -58,11 +58,11 @@
     const-string v0, "<anonymous parameter 0>"
 
     .line 2
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string p1, "decision"
 
-    invoke-static {p2, p1}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, p1}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 3
     invoke-virtual {p2}, Ljava/lang/Enum;->ordinal()I
@@ -75,15 +75,15 @@
 
     .line 4
     :cond_0
-    iget-object p1, p0, Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment$f$a;->f:Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment$f;
+    iget-object p1, p0, Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment$f$a;->g:Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment$f;
 
-    iget-object p1, p1, Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment$f;->f:Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment;
+    iget-object p1, p1, Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment$f;->g:Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment;
 
     .line 5
-    iget-object p2, p1, Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment;->i0:Lcom/supercell/id/model/MyProfileImage;
+    iget-object p2, p1, Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment;->j0:Lcom/supercell/id/model/MyProfileImage;
 
     .line 6
-    iget-object v0, p1, Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment;->h0:Lcom/supercell/id/model/MyProfileImage;
+    iget-object v0, p1, Lcom/supercell/id/ui/profileimageeditor/ProfileImageEditorFragment;->i0:Lcom/supercell/id/model/MyProfileImage;
 
     .line 7
     instance-of v1, p2, Lcom/supercell/id/model/MyProfileImage$UnderReviewImage;
@@ -98,7 +98,7 @@
 
     .line 8
     :cond_1
-    sget-object v0, Lcom/supercell/id/model/MyProfileImage$Empty;->f:Lcom/supercell/id/model/MyProfileImage$Empty;
+    sget-object v0, Lcom/supercell/id/model/MyProfileImage$Empty;->g:Lcom/supercell/id/model/MyProfileImage$Empty;
 
     .line 9
     :goto_0
@@ -123,7 +123,7 @@
     .line 13
     :cond_3
     :goto_1
-    sget-object p1, Lie/h;->a:Lie/h;
+    sget-object p1, Lie/i;->a:Lie/i;
 
     return-object p1
 .end method

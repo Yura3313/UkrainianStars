@@ -1,139 +1,91 @@
-.class public final Lk3/f50;
+.class public final synthetic Lk3/f50;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lk3/e40;
-
-
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ljava/lang/Object;",
-        "Lk3/e40<",
-        "Lk3/iu;",
-        ">;"
-    }
-.end annotation
+.implements Ljava/util/concurrent/Callable;
 
 
 # instance fields
-.field public final a:Landroid/content/Context;
+.field public final a:Lk3/e50;
 
-.field public final b:Lk3/jz;
+.field public final b:Lk3/tg0;
 
-.field public final c:Lk3/uu;
-
-.field public final d:Lk3/ug0;
-
-.field public final e:Ljava/util/concurrent/Executor;
-
-.field public final f:Lcom/google/android/gms/internal/ads/zzbbg;
+.field public final c:Lk3/kg0;
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;Lcom/google/android/gms/internal/ads/zzbbg;Lk3/ug0;Ljava/util/concurrent/Executor;Lk3/uu;Lk3/jz;)V
+.method public constructor <init>(Lk3/e50;Lk3/tg0;Lk3/kg0;)V
     .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
-    iput-object p1, p0, Lk3/f50;->a:Landroid/content/Context;
+    iput-object p1, p0, Lk3/f50;->a:Lk3/e50;
 
-    .line 3
-    iput-object p3, p0, Lk3/f50;->d:Lk3/ug0;
+    iput-object p2, p0, Lk3/f50;->b:Lk3/tg0;
 
-    .line 4
-    iput-object p5, p0, Lk3/f50;->c:Lk3/uu;
-
-    .line 5
-    iput-object p4, p0, Lk3/f50;->e:Ljava/util/concurrent/Executor;
-
-    .line 6
-    iput-object p2, p0, Lk3/f50;->f:Lcom/google/android/gms/internal/ads/zzbbg;
-
-    .line 7
-    iput-object p6, p0, Lk3/f50;->b:Lk3/jz;
+    iput-object p3, p0, Lk3/f50;->c:Lk3/kg0;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Lk3/sg0;Lk3/jg0;)Lk3/em0;
-    .locals 3
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lk3/sg0;",
-            "Lk3/jg0;",
-            ")",
-            "Lk3/em0<",
-            "Lk3/iu;",
-            ">;"
-        }
-    .end annotation
+.method public final call()Ljava/lang/Object;
+    .locals 8
+
+    iget-object v0, p0, Lk3/f50;->a:Lk3/e50;
+
+    iget-object v1, p0, Lk3/f50;->b:Lk3/tg0;
+
+    iget-object v2, p0, Lk3/f50;->c:Lk3/kg0;
 
     .line 1
-    new-instance v0, Lk3/vz;
+    iget-object v3, v0, Lk3/e50;->a:Lk3/un;
 
-    invoke-direct {v0}, Lk3/vz;-><init>()V
+    new-instance v4, Lk3/uo;
 
-    const/4 v1, 0x0
+    const/4 v5, 0x0
+
+    invoke-direct {v4, v1, v2, v5}, Lk3/uo;-><init>(Lk3/tg0;Lk3/kg0;Ljava/lang/String;)V
+
+    new-instance v5, Lk3/yn;
+
+    iget-object v6, v1, Lk3/tg0;->a:Lk3/ny0;
+
+    iget-object v6, v6, Lk3/ny0;->g:Ljava/lang/Object;
+
+    check-cast v6, Lk3/vg0;
 
     .line 2
-    invoke-static {v1}, Lk3/am0;->f(Ljava/lang/Object;)Lk3/em0;
+    invoke-virtual {v6}, Lk3/vg0;->a()Lcom/google/android/gms/internal/ads/zzafq;
 
-    move-result-object v1
+    move-result-object v6
 
-    new-instance v2, Lk3/e50;
+    new-instance v7, Lk3/b2;
 
-    invoke-direct {v2, p0, p2, v0, p1}, Lk3/e50;-><init>(Lk3/f50;Lk3/jg0;Lk3/vz;Lk3/sg0;)V
+    invoke-direct {v7, v0, v1, v2}, Lk3/b2;-><init>(Lk3/e50;Lk3/tg0;Lk3/kg0;)V
 
-    iget-object p1, p0, Lk3/f50;->e:Ljava/util/concurrent/Executor;
+    invoke-direct {v5, v6, v7}, Lk3/yn;-><init>(Lcom/google/android/gms/internal/ads/zzafq;Ljava/lang/Runnable;)V
 
     .line 3
-    invoke-static {v1, v2, p1}, Lk3/am0;->j(Lk3/em0;Lk3/nl0;Ljava/util/concurrent/Executor;)Lk3/em0;
+    invoke-virtual {v3, v4, v5}, Lk3/un;->a(Lk3/uo;Lk3/yn;)Lk3/kk;
 
-    move-result-object p1
+    move-result-object v0
 
     .line 4
-    new-instance p2, Lk3/h50;
+    iget-object v0, v0, Lk3/kk;->m:Lk3/qv0;
 
-    const/4 v1, 0x0
+    invoke-interface {v0}, Lk3/qv0;->get()Ljava/lang/Object;
 
-    invoke-direct {p2, v0, v1}, Lk3/h50;-><init>(Lk3/vz;I)V
+    move-result-object v0
+
+    check-cast v0, Lk3/xn;
+
+    const-string v1, "Cannot return null from a non-@Nullable @Provides method"
 
     .line 5
-    iget-object v0, p0, Lk3/f50;->e:Ljava/util/concurrent/Executor;
+    invoke-static {v0, v1}, Lk3/gj;->f(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
-    move-object v1, p1
-
-    check-cast v1, Lk3/bl0;
-
-    invoke-virtual {v1, p2, v0}, Lk3/bl0;->c(Ljava/lang/Runnable;Ljava/util/concurrent/Executor;)V
-
-    return-object p1
-.end method
-
-.method public final b(Lk3/sg0;Lk3/jg0;)Z
-    .locals 0
-
-    iget-object p1, p2, Lk3/jg0;->r:Lk3/ng0;
-
-    if-eqz p1, :cond_0
-
-    iget-object p1, p1, Lk3/ng0;->a:Ljava/lang/String;
-
-    if-eqz p1, :cond_0
-
-    const/4 p1, 0x1
-
-    return p1
-
-    :cond_0
-    const/4 p1, 0x0
-
-    return p1
+    return-object v0
 .end method

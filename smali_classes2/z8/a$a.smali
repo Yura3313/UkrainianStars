@@ -23,13 +23,13 @@
 
 
 # static fields
-.field public static final enum f:Lz8/a$a;
-
 .field public static final enum g:Lz8/a$a;
 
 .field public static final enum h:Lz8/a$a;
 
-.field public static final synthetic i:[Lz8/a$a;
+.field public static final enum i:Lz8/a$a;
+
+.field public static final synthetic j:[Lz8/a$a;
 
 
 # direct methods
@@ -45,7 +45,7 @@
 
     invoke-direct {v0, v1, v2}, Lz8/a$a;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lz8/a$a;->f:Lz8/a$a;
+    sput-object v0, Lz8/a$a;->g:Lz8/a$a;
 
     .line 2
     new-instance v1, Lz8/a$a;
@@ -56,7 +56,7 @@
 
     invoke-direct {v1, v3, v4}, Lz8/a$a;-><init>(Ljava/lang/String;I)V
 
-    sput-object v1, Lz8/a$a;->g:Lz8/a$a;
+    sput-object v1, Lz8/a$a;->h:Lz8/a$a;
 
     .line 3
     new-instance v3, Lz8/a$a;
@@ -67,7 +67,7 @@
 
     invoke-direct {v3, v5, v6}, Lz8/a$a;-><init>(Ljava/lang/String;I)V
 
-    sput-object v3, Lz8/a$a;->h:Lz8/a$a;
+    sput-object v3, Lz8/a$a;->i:Lz8/a$a;
 
     const/4 v5, 0x3
 
@@ -80,7 +80,7 @@
     aput-object v3, v5, v6
 
     .line 4
-    sput-object v5, Lz8/a$a;->i:[Lz8/a$a;
+    sput-object v5, Lz8/a$a;->j:[Lz8/a$a;
 
     return-void
 .end method
@@ -115,7 +115,7 @@
 .method public static values()[Lz8/a$a;
     .locals 1
 
-    sget-object v0, Lz8/a$a;->i:[Lz8/a$a;
+    sget-object v0, Lz8/a$a;->j:[Lz8/a$a;
 
     invoke-virtual {v0}, [Lz8/a$a;->clone()Ljava/lang/Object;
 

@@ -757,7 +757,7 @@
     .line 62
     iget v15, v0, Lw0/h$b;->i:F
 
-    sget-object v17, Lw0/h;->o:Landroid/graphics/PorterDuff$Mode;
+    sget-object v17, Lw0/h;->p:Landroid/graphics/PorterDuff$Mode;
 
     .line 63
     invoke-static {v2}, Landroid/graphics/Color;->alpha(I)I
@@ -927,7 +927,7 @@
     .line 88
     iget v4, v0, Lw0/h$b;->h:F
 
-    sget-object v12, Lw0/h;->o:Landroid/graphics/PorterDuff$Mode;
+    sget-object v12, Lw0/h;->p:Landroid/graphics/PorterDuff$Mode;
 
     .line 89
     invoke-static {v2}, Landroid/graphics/Color;->alpha(I)I

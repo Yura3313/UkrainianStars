@@ -31,7 +31,7 @@
         value = {
             "Ljava/util/Map<",
             "Ljava/lang/String;",
-            "Lk3/h6;",
+            "Lk3/i6;",
             ">;"
         }
     .end annotation
@@ -225,9 +225,9 @@
     if-eqz p3, :cond_3
 
     .line 24
-    new-instance v1, Lk3/h6;
+    new-instance v1, Lk3/i6;
 
-    invoke-direct {v1, p3}, Lk3/h6;-><init>(Lorg/json/JSONObject;)V
+    invoke-direct {v1, p3}, Lk3/i6;-><init>(Lorg/json/JSONObject;)V
 
     .line 25
     iget-object p3, p0, Lk3/ja;->d:Ljava/util/HashMap;
@@ -284,9 +284,9 @@
     move-exception p1
 
     .line 31
-    sget-object p2, Li1/o;->B:Li1/o;
+    sget-object p2, Li1/p;->B:Li1/p;
 
-    iget-object p2, p2, Li1/o;->g:Lk3/ia;
+    iget-object p2, p2, Li1/p;->g:Lk3/ia;
 
     const-string p3, "AppSettings.parseAppSettingsJson"
 

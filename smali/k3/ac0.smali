@@ -3,155 +3,114 @@
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lk3/zc0;
-.implements Lk3/bd0;
+.implements Lk3/cd0;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
+        "<S::",
+        "Lk3/ad0<",
+        "*>;>",
         "Ljava/lang/Object;",
-        "Lk3/zc0<",
-        "Landroid/os/Bundle;",
-        ">;",
-        "Lk3/bd0<",
-        "Lk3/zc0<",
-        "Landroid/os/Bundle;",
-        ">;>;"
+        "Lk3/cd0<",
+        "TS;>;"
     }
 .end annotation
 
 
 # instance fields
-.field public final a:Landroid/content/pm/ApplicationInfo;
+.field public final a:Lk3/cd0;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lk3/cd0<",
+            "TS;>;"
+        }
+    .end annotation
+.end field
 
-.field public final b:Landroid/content/pm/PackageInfo;
+.field public final b:J
+
+.field public final c:Ljava/util/concurrent/ScheduledExecutorService;
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/pm/ApplicationInfo;Landroid/content/pm/PackageInfo;)V
+.method public constructor <init>(Lk3/cd0;JLjava/util/concurrent/ScheduledExecutorService;)V
     .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lk3/cd0<",
+            "TS;>;J",
+            "Ljava/util/concurrent/ScheduledExecutorService;",
+            ")V"
+        }
+    .end annotation
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lk3/ac0;->a:Landroid/content/pm/ApplicationInfo;
+    iput-object p1, p0, Lk3/ac0;->a:Lk3/cd0;
 
     .line 3
-    iput-object p2, p0, Lk3/ac0;->b:Landroid/content/pm/PackageInfo;
+    iput-wide p2, p0, Lk3/ac0;->b:J
+
+    .line 4
+    iput-object p4, p0, Lk3/ac0;->c:Ljava/util/concurrent/ScheduledExecutorService;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a()Lk3/em0;
-    .locals 1
+.method public final a()Lk3/hm0;
+    .locals 6
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lk3/em0<",
-            "Lk3/zc0<",
-            "Landroid/os/Bundle;",
-            ">;>;"
+            "Lk3/hm0<",
+            "TS;>;"
         }
     .end annotation
 
-    invoke-static {p0}, Lk3/am0;->f(Ljava/lang/Object;)Lk3/em0;
+    .line 1
+    iget-object v0, p0, Lk3/ac0;->a:Lk3/cd0;
+
+    invoke-interface {v0}, Lk3/cd0;->a()Lk3/hm0;
+
+    move-result-object v0
+
+    .line 2
+    iget-wide v1, p0, Lk3/ac0;->b:J
+
+    const-wide/16 v3, 0x0
+
+    cmp-long v5, v1, v3
+
+    if-lez v5, :cond_0
+
+    .line 3
+    sget-object v3, Ljava/util/concurrent/TimeUnit;->MILLISECONDS:Ljava/util/concurrent/TimeUnit;
+
+    iget-object v4, p0, Lk3/ac0;->c:Ljava/util/concurrent/ScheduledExecutorService;
+
+    .line 4
+    invoke-static {v0, v1, v2, v3, v4}, Lk3/dm0;->e(Lk3/hm0;JLjava/util/concurrent/TimeUnit;Ljava/util/concurrent/ScheduledExecutorService;)Lk3/hm0;
+
+    move-result-object v0
+
+    .line 5
+    :cond_0
+    const-class v1, Ljava/lang/Throwable;
+
+    sget-object v2, Lk3/dc0;->a:Lk3/dc0;
+
+    sget-object v3, Lk3/jd;->f:Lk3/od;
+
+    invoke-static {v0, v1, v2, v3}, Lk3/dm0;->i(Lk3/hm0;Ljava/lang/Class;Lk3/pl0;Ljava/util/concurrent/Executor;)Lk3/hm0;
 
     move-result-object v0
 
     return-object v0
-.end method
-
-.method public final b(Ljava/lang/Object;)V
-    .locals 4
-
-    .line 1
-    check-cast p1, Landroid/os/Bundle;
-
-    .line 2
-    iget-object v0, p0, Lk3/ac0;->a:Landroid/content/pm/ApplicationInfo;
-
-    iget-object v0, v0, Landroid/content/pm/ApplicationInfo;->packageName:Ljava/lang/String;
-
-    .line 3
-    iget-object v1, p0, Lk3/ac0;->b:Landroid/content/pm/PackageInfo;
-
-    const/4 v2, 0x0
-
-    if-nez v1, :cond_0
-
-    move-object v1, v2
-
-    goto :goto_0
-
-    :cond_0
-    iget v1, v1, Landroid/content/pm/PackageInfo;->versionCode:I
-
-    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v1
-
-    :goto_0
-    const-string v3, "pn"
-
-    .line 4
-    invoke-virtual {p1, v3, v0}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
-
-    if-eqz v1, :cond_1
-
-    .line 5
-    invoke-virtual {v1}, Ljava/lang/Integer;->intValue()I
-
-    move-result v0
-
-    const-string v1, "vc"
-
-    invoke-virtual {p1, v1, v0}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
-
-    .line 6
-    :cond_1
-    sget-object v0, Lk3/q;->R2:Lk3/g;
-
-    .line 7
-    sget-object v1, Lk3/l51;->j:Lk3/l51;
-
-    iget-object v1, v1, Lk3/l51;->f:Lk3/n;
-
-    .line 8
-    invoke-virtual {v1, v0}, Lk3/n;->a(Lk3/h;)Ljava/lang/Object;
-
-    move-result-object v0
-
-    .line 9
-    check-cast v0, Ljava/lang/Boolean;
-
-    invoke-virtual {v0}, Ljava/lang/Boolean;->booleanValue()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_3
-
-    .line 10
-    iget-object v0, p0, Lk3/ac0;->b:Landroid/content/pm/PackageInfo;
-
-    if-nez v0, :cond_2
-
-    goto :goto_1
-
-    :cond_2
-    iget-object v2, v0, Landroid/content/pm/PackageInfo;->versionName:Ljava/lang/String;
-
-    :goto_1
-    if-eqz v2, :cond_3
-
-    const-string v0, "vnm"
-
-    .line 11
-    invoke-virtual {p1, v0, v2}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
-
-    :cond_3
-    return-void
 .end method

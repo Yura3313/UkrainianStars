@@ -1,5 +1,5 @@
 .class public final Lwc/x$b;
-.super Lse/h;
+.super Lse/i;
 .source "InfoDialogFragment.kt"
 
 # interfaces
@@ -18,40 +18,40 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/l<",
         "Landroid/widget/FrameLayout;",
-        "Lie/h;",
+        "Lie/i;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic f:Lwc/x;
+.field public final synthetic g:Lwc/x;
 
-.field public final synthetic g:Z
+.field public final synthetic h:Z
 
-.field public final synthetic h:Landroid/view/View;
+.field public final synthetic i:Landroid/view/View;
 
-.field public final synthetic i:Landroid/graphics/Rect;
+.field public final synthetic j:Landroid/graphics/Rect;
 
 
 # direct methods
 .method public constructor <init>(Lwc/x;ZLandroid/view/View;Landroid/graphics/Rect;)V
     .locals 0
 
-    iput-object p1, p0, Lwc/x$b;->f:Lwc/x;
+    iput-object p1, p0, Lwc/x$b;->g:Lwc/x;
 
-    iput-boolean p2, p0, Lwc/x$b;->g:Z
+    iput-boolean p2, p0, Lwc/x$b;->h:Z
 
-    iput-object p3, p0, Lwc/x$b;->h:Landroid/view/View;
+    iput-object p3, p0, Lwc/x$b;->i:Landroid/view/View;
 
-    iput-object p4, p0, Lwc/x$b;->i:Landroid/graphics/Rect;
+    iput-object p4, p0, Lwc/x$b;->j:Landroid/graphics/Rect;
 
     const/4 p1, 0x1
 
-    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -65,7 +65,7 @@
     check-cast p1, Landroid/widget/FrameLayout;
 
     .line 2
-    iget-object v0, p0, Lwc/x$b;->f:Lwc/x;
+    iget-object v0, p0, Lwc/x$b;->g:Lwc/x;
 
     invoke-virtual {v0}, Landroidx/fragment/app/Fragment;->N()Z
 
@@ -79,7 +79,7 @@
     const-string v0, "it"
 
     .line 3
-    invoke-static {p1, v0}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {p1}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
@@ -119,7 +119,7 @@
 
     .line 6
     :goto_0
-    iget-boolean v4, p0, Lwc/x$b;->g:Z
+    iget-boolean v4, p0, Lwc/x$b;->h:Z
 
     xor-int/2addr v4, v1
 
@@ -140,7 +140,7 @@
 
     .line 8
     :cond_4
-    iget-object v0, p0, Lwc/x$b;->f:Lwc/x;
+    iget-object v0, p0, Lwc/x$b;->g:Lwc/x;
 
     sget v3, Lcom/supercell/id/R$id;->dialogTailStart:I
 
@@ -152,9 +152,9 @@
 
     const-string v4, "dialogTailStart"
 
-    invoke-static {v0, v4}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v4}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    iget-boolean v4, p0, Lwc/x$b;->g:Z
+    iget-boolean v4, p0, Lwc/x$b;->h:Z
 
     const/16 v5, 0x8
 
@@ -171,7 +171,7 @@
     invoke-virtual {v0, v4}, Landroid/widget/ImageView;->setVisibility(I)V
 
     .line 9
-    iget-object v0, p0, Lwc/x$b;->f:Lwc/x;
+    iget-object v0, p0, Lwc/x$b;->g:Lwc/x;
 
     sget v4, Lcom/supercell/id/R$id;->dialogTail:I
 
@@ -183,9 +183,9 @@
 
     const-string v6, "dialogTail"
 
-    invoke-static {v0, v6}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v6}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    iget-boolean v6, p0, Lwc/x$b;->g:Z
+    iget-boolean v6, p0, Lwc/x$b;->h:Z
 
     if-eqz v6, :cond_6
 
@@ -198,12 +198,12 @@
     invoke-virtual {v0, v5}, Landroid/widget/ImageView;->setVisibility(I)V
 
     .line 10
-    iget-object v0, p0, Lwc/x$b;->h:Landroid/view/View;
+    iget-object v0, p0, Lwc/x$b;->i:Landroid/view/View;
 
     invoke-static {v0}, Lae/z2;->h(Landroid/view/View;)V
 
     .line 11
-    iget-object v0, p0, Lwc/x$b;->h:Landroid/view/View;
+    iget-object v0, p0, Lwc/x$b;->i:Landroid/view/View;
 
     invoke-static {v0}, Lae/z2;->b(Landroid/view/View;)Landroid/graphics/Rect;
 
@@ -233,14 +233,14 @@
 
     .line 15
     :goto_4
-    iget-boolean v7, p0, Lwc/x$b;->g:Z
+    iget-boolean v7, p0, Lwc/x$b;->h:Z
 
     xor-int/2addr v7, v1
 
     if-ne v6, v7, :cond_8
 
     .line 16
-    iget-object v6, p0, Lwc/x$b;->i:Landroid/graphics/Rect;
+    iget-object v6, p0, Lwc/x$b;->j:Landroid/graphics/Rect;
 
     iget v6, v6, Landroid/graphics/Rect;->right:I
 
@@ -275,7 +275,7 @@
     :cond_8
     iget v6, v5, Landroid/graphics/Rect;->right:I
 
-    iget-object v7, p0, Lwc/x$b;->i:Landroid/graphics/Rect;
+    iget-object v7, p0, Lwc/x$b;->j:Landroid/graphics/Rect;
 
     iget v7, v7, Landroid/graphics/Rect;->left:I
 
@@ -304,7 +304,7 @@
 
     .line 20
     :goto_5
-    iget-object v7, p0, Lwc/x$b;->h:Landroid/view/View;
+    iget-object v7, p0, Lwc/x$b;->i:Landroid/view/View;
 
     invoke-static {v7}, Lae/z2;->h(Landroid/view/View;)V
 
@@ -319,7 +319,7 @@
 
     .line 22
     :cond_9
-    iget-boolean v7, p0, Lwc/x$b;->g:Z
+    iget-boolean v7, p0, Lwc/x$b;->h:Z
 
     xor-int/2addr v1, v7
 
@@ -356,7 +356,7 @@
     invoke-virtual {p1, v1}, Landroid/view/View;->setPivotY(F)V
 
     .line 25
-    iget-object v1, p0, Lwc/x$b;->i:Landroid/graphics/Rect;
+    iget-object v1, p0, Lwc/x$b;->j:Landroid/graphics/Rect;
 
     invoke-virtual {v1}, Landroid/graphics/Rect;->exactCenterY()F
 
@@ -413,7 +413,7 @@
     invoke-virtual {p1, v5}, Landroid/view/View;->setTranslationY(F)V
 
     .line 29
-    iget-object v0, p0, Lwc/x$b;->f:Lwc/x;
+    iget-object v0, p0, Lwc/x$b;->g:Lwc/x;
 
     invoke-virtual {v0, v4}, Lwc/x;->Y0(I)Landroid/view/View;
 
@@ -433,7 +433,7 @@
 
     .line 30
     :cond_d
-    iget-object v0, p0, Lwc/x$b;->f:Lwc/x;
+    iget-object v0, p0, Lwc/x$b;->g:Lwc/x;
 
     invoke-virtual {v0, v3}, Lwc/x;->Y0(I)Landroid/view/View;
 
@@ -475,7 +475,7 @@
     const-string v4, "spring"
 
     .line 35
-    invoke-static {v1, v4}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, v4}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v1, v2}, Ll0/e;->a(F)Ll0/e;
 
@@ -483,7 +483,7 @@
     iget-object v1, v0, Ll0/d;->q:Ll0/e;
 
     .line 37
-    invoke-static {v1, v4}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, v4}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/high16 v5, 0x44160000    # 600.0f
 
@@ -503,7 +503,7 @@
     iget-object v1, v0, Ll0/d;->q:Ll0/e;
 
     .line 41
-    invoke-static {v1, v4}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, v4}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v1, v2}, Ll0/e;->a(F)Ll0/e;
 
@@ -511,7 +511,7 @@
     iget-object v1, v0, Ll0/d;->q:Ll0/e;
 
     .line 43
-    invoke-static {v1, v4}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, v4}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v1, v5}, Ll0/e;->b(F)Ll0/e;
 
@@ -523,7 +523,7 @@
 
     .line 46
     :goto_8
-    sget-object p1, Lie/h;->a:Lie/h;
+    sget-object p1, Lie/i;->a:Lie/i;
 
     return-object p1
 .end method

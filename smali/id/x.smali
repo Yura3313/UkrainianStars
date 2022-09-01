@@ -7,14 +7,14 @@
 
 
 # instance fields
-.field public final synthetic f:Lid/w$b;
+.field public final synthetic g:Lid/w$b;
 
 
 # direct methods
 .method public constructor <init>(Lid/w$b;)V
     .locals 0
 
-    iput-object p1, p0, Lid/x;->f:Lid/w$b;
+    iput-object p1, p0, Lid/x;->g:Lid/w$b;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -27,16 +27,16 @@
     .locals 3
 
     .line 1
-    iget-object v0, p0, Lid/x;->f:Lid/w$b;
+    iget-object v0, p0, Lid/x;->g:Lid/w$b;
 
-    iget-object v1, v0, Lid/w$b;->h:Lid/w$a;
+    iget-object v1, v0, Lid/w$b;->i:Lid/w$a;
 
-    iget-object v0, v0, Lid/w$b;->i:Landroid/view/View;
+    iget-object v0, v0, Lid/w$b;->j:Landroid/view/View;
 
     .line 2
     iget-object v2, v1, Lid/w$a;->e:Landroid/view/View;
 
-    invoke-static {v2, v0}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, v0}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v2
 

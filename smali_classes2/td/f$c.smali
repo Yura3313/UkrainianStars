@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field public final synthetic f:Ltd/f;
+.field public final synthetic g:Ltd/f;
 
 
 # direct methods
 .method public constructor <init>(Ltd/f;)V
     .locals 0
 
-    iput-object p1, p0, Ltd/f$c;->f:Ltd/f;
+    iput-object p1, p0, Ltd/f$c;->g:Ltd/f;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -40,7 +40,7 @@
     if-eqz p2, :cond_0
 
     .line 1
-    iget-object p2, p0, Ltd/f$c;->f:Ltd/f;
+    iget-object p2, p0, Ltd/f$c;->g:Ltd/f;
 
     sget v0, Lcom/supercell/id/R$id;->registerEnterEmailScrollView:I
 
@@ -52,11 +52,11 @@
 
     const-string v0, "registerEnterEmailScrollView"
 
-    invoke-static {p2, v0}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "v"
 
-    invoke-static {p1, v0}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-static {p2, p1}, Lae/z2;->t(Landroid/widget/ScrollView;Landroid/view/View;)V
 

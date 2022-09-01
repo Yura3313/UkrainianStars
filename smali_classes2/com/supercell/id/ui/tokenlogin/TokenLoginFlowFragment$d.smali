@@ -1,5 +1,5 @@
 .class public final Lcom/supercell/id/ui/tokenlogin/TokenLoginFlowFragment$d;
-.super Lse/h;
+.super Lse/i;
 .source "TokenLoginFlow.kt"
 
 # interfaces
@@ -18,18 +18,18 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/p<",
         "Lcom/supercell/id/ui/tokenlogin/TokenLoginFlowFragment;",
-        "Lvc/m;",
-        "Lie/h;",
+        "Lvc/l;",
+        "Lie/i;",
         ">;"
     }
 .end annotation
 
 
 # static fields
-.field public static final f:Lcom/supercell/id/ui/tokenlogin/TokenLoginFlowFragment$d;
+.field public static final g:Lcom/supercell/id/ui/tokenlogin/TokenLoginFlowFragment$d;
 
 
 # direct methods
@@ -40,7 +40,7 @@
 
     invoke-direct {v0}, Lcom/supercell/id/ui/tokenlogin/TokenLoginFlowFragment$d;-><init>()V
 
-    sput-object v0, Lcom/supercell/id/ui/tokenlogin/TokenLoginFlowFragment$d;->f:Lcom/supercell/id/ui/tokenlogin/TokenLoginFlowFragment$d;
+    sput-object v0, Lcom/supercell/id/ui/tokenlogin/TokenLoginFlowFragment$d;->g:Lcom/supercell/id/ui/tokenlogin/TokenLoginFlowFragment$d;
 
     return-void
 .end method
@@ -50,7 +50,7 @@
 
     const/4 v0, 0x2
 
-    invoke-direct {p0, v0}, Lse/h;-><init>(I)V
+    invoke-direct {p0, v0}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -63,37 +63,37 @@
     .line 1
     check-cast p1, Lcom/supercell/id/ui/tokenlogin/TokenLoginFlowFragment;
 
-    check-cast p2, Lvc/m;
+    check-cast p2, Lvc/l;
 
     const-string v0, "$receiver"
 
     .line 2
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "it"
 
-    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 3
-    iget-boolean v0, p2, Lvc/m;->a:Z
+    iget-boolean v0, p2, Lvc/l;->a:Z
 
     .line 4
-    iput-boolean v0, p1, Lcom/supercell/id/ui/tokenlogin/TokenLoginFlowFragment;->n0:Z
+    iput-boolean v0, p1, Lcom/supercell/id/ui/tokenlogin/TokenLoginFlowFragment;->o0:Z
 
     .line 5
-    iget-object p2, p2, Lvc/m;->b:Lcom/supercell/id/model/IdConnectedSystem;
+    iget-object p2, p2, Lvc/l;->b:Lcom/supercell/id/model/IdConnectedSystem;
 
     .line 6
-    iput-object p2, p1, Lcom/supercell/id/ui/tokenlogin/TokenLoginFlowFragment;->o0:Lcom/supercell/id/model/IdConnectedSystem;
+    iput-object p2, p1, Lcom/supercell/id/ui/tokenlogin/TokenLoginFlowFragment;->p0:Lcom/supercell/id/model/IdConnectedSystem;
 
     .line 7
-    iget-object p1, p1, Lcom/supercell/id/ui/tokenlogin/TokenLoginFlowFragment;->p0:Lcom/supercell/id/ui/tokenlogin/TokenLoginFlowFragment$a;
+    iget-object p1, p1, Lcom/supercell/id/ui/tokenlogin/TokenLoginFlowFragment;->q0:Lcom/supercell/id/ui/tokenlogin/TokenLoginFlowFragment$a;
 
     .line 8
     invoke-virtual {p1}, Lcom/supercell/id/ui/tokenlogin/TokenLoginFlowFragment$a;->notifyObservers()V
 
     .line 9
-    sget-object p1, Lie/h;->a:Lie/h;
+    sget-object p1, Lie/i;->a:Lie/i;
 
     return-object p1
 .end method

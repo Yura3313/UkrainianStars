@@ -1,5 +1,5 @@
 .class public final Lae/x2$a;
-.super Lse/h;
+.super Lse/i;
 .source "VariantCache.kt"
 
 # interfaces
@@ -18,40 +18,40 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/l<",
         "TT;",
-        "Lie/h;",
+        "Lie/i;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic f:Ljava/lang/ref/WeakReference;
+.field public final synthetic g:Ljava/lang/ref/WeakReference;
 
-.field public final synthetic g:Lae/x2;
+.field public final synthetic h:Lae/x2;
 
-.field public final synthetic h:Ljava/lang/String;
+.field public final synthetic i:Ljava/lang/String;
 
-.field public final synthetic i:Lre/l;
+.field public final synthetic j:Lre/l;
 
 
 # direct methods
 .method public constructor <init>(Ljava/lang/ref/WeakReference;Lae/x2;Ljava/lang/String;Lre/l;)V
     .locals 0
 
-    iput-object p1, p0, Lae/x2$a;->f:Ljava/lang/ref/WeakReference;
+    iput-object p1, p0, Lae/x2$a;->g:Ljava/lang/ref/WeakReference;
 
-    iput-object p2, p0, Lae/x2$a;->g:Lae/x2;
+    iput-object p2, p0, Lae/x2$a;->h:Lae/x2;
 
-    iput-object p3, p0, Lae/x2$a;->h:Ljava/lang/String;
+    iput-object p3, p0, Lae/x2$a;->i:Ljava/lang/String;
 
-    iput-object p4, p0, Lae/x2$a;->i:Lre/l;
+    iput-object p4, p0, Lae/x2$a;->j:Lre/l;
 
     const/4 p1, 0x1
 
-    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -62,7 +62,7 @@
     .locals 3
 
     .line 1
-    iget-object v0, p0, Lae/x2$a;->f:Ljava/lang/ref/WeakReference;
+    iget-object v0, p0, Lae/x2$a;->g:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v0}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
 
@@ -72,7 +72,7 @@
 
     if-eqz v0, :cond_0
 
-    iget-object v1, p0, Lae/x2$a;->h:Ljava/lang/String;
+    iget-object v1, p0, Lae/x2$a;->i:Ljava/lang/String;
 
     new-instance v2, Ljava/lang/ref/SoftReference;
 
@@ -90,10 +90,10 @@
 
     invoke-direct {v0, p0, p1}, Lae/w2;-><init>(Lae/x2$a;Ljava/lang/Object;)V
 
-    invoke-static {v0}, Lae/v2;->a(Lre/a;)V
+    invoke-static {v0}, Lae/u2;->a(Lre/a;)V
 
     .line 3
-    sget-object p1, Lie/h;->a:Lie/h;
+    sget-object p1, Lie/i;->a:Lie/i;
 
     return-object p1
 .end method

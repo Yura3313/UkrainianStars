@@ -1,5 +1,5 @@
 .class public final Lcom/supercell/id/ui/login/LoginFlowFragment$a;
-.super Lse/h;
+.super Lse/i;
 .source "LoginFlow.kt"
 
 # interfaces
@@ -18,7 +18,7 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/a<",
         "Ljava/lang/Boolean;",
         ">;"
@@ -27,18 +27,18 @@
 
 
 # instance fields
-.field public final synthetic f:Lcom/supercell/id/ui/login/LoginFlowFragment;
+.field public final synthetic g:Lcom/supercell/id/ui/login/LoginFlowFragment;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/id/ui/login/LoginFlowFragment;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/ui/login/LoginFlowFragment$a;->f:Lcom/supercell/id/ui/login/LoginFlowFragment;
+    iput-object p1, p0, Lcom/supercell/id/ui/login/LoginFlowFragment$a;->g:Lcom/supercell/id/ui/login/LoginFlowFragment;
 
     const/4 p1, 0x0
 
-    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -49,7 +49,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/supercell/id/ui/login/LoginFlowFragment$a;->f:Lcom/supercell/id/ui/login/LoginFlowFragment;
+    iget-object v0, p0, Lcom/supercell/id/ui/login/LoginFlowFragment$a;->g:Lcom/supercell/id/ui/login/LoginFlowFragment;
 
     invoke-static {v0}, La2/j;->g(Lcom/supercell/id/ui/BaseFragment;)Lcom/supercell/id/ui/BackStack$Entry;
 
@@ -60,7 +60,7 @@
     if-eqz v0, :cond_0
 
     .line 2
-    iget-boolean v0, v0, Lcom/supercell/id/ui/login/LoginFlowFragment$BackStackEntry;->i:Z
+    iget-boolean v0, v0, Lcom/supercell/id/ui/login/LoginFlowFragment$BackStackEntry;->j:Z
 
     goto :goto_0
 

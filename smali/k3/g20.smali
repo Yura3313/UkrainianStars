@@ -1,59 +1,128 @@
-.class public final synthetic Lk3/g20;
+.class public final Lk3/g20;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lk3/nl0;
+.implements Lk3/mv0;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Lk3/mv0<",
+        "Lk3/e20;",
+        ">;"
+    }
+.end annotation
 
 
 # instance fields
-.field public final a:Lk3/e20;
+.field public final a:Lk3/qv0;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lk3/qv0<",
+            "Ljava/util/concurrent/ScheduledExecutorService;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public final b:Lk3/qv0;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lk3/qv0<",
+            "Lk3/v20;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public final c:Lk3/qv0;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lk3/qv0<",
+            "Lcom/google/android/gms/internal/ads/zzcpj;",
+            ">;"
+        }
+    .end annotation
+.end field
 
 
 # direct methods
-.method public constructor <init>(Lk3/e20;)V
+.method public constructor <init>(Lk3/qv0;Lk3/qv0;Lk3/qv0;)V
     .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lk3/qv0<",
+            "Ljava/util/concurrent/ScheduledExecutorService;",
+            ">;",
+            "Lk3/qv0<",
+            "Lk3/jm0;",
+            ">;",
+            "Lk3/qv0<",
+            "Lk3/v20;",
+            ">;",
+            "Lk3/qv0<",
+            "Lcom/google/android/gms/internal/ads/zzcpj;",
+            ">;)V"
+        }
+    .end annotation
 
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lk3/g20;->a:Lk3/e20;
+    .line 2
+    iput-object p1, p0, Lk3/g20;->a:Lk3/qv0;
+
+    .line 3
+    iput-object p2, p0, Lk3/g20;->b:Lk3/qv0;
+
+    .line 4
+    iput-object p3, p0, Lk3/g20;->c:Lk3/qv0;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Ljava/lang/Object;)Lk3/em0;
-    .locals 3
-
-    iget-object v0, p0, Lk3/g20;->a:Lk3/e20;
-
-    check-cast p1, Ljava/io/InputStream;
+.method public final synthetic get()Ljava/lang/Object;
+    .locals 5
 
     .line 1
-    new-instance v1, Lk3/sg0;
+    iget-object v0, p0, Lk3/g20;->a:Lk3/qv0;
 
-    new-instance v2, Lk3/iy0;
+    invoke-interface {v0}, Lk3/qv0;->get()Ljava/lang/Object;
 
-    iget-object v0, v0, Lk3/e20;->d:Lk3/ug0;
+    move-result-object v0
 
-    invoke-direct {v2, v0}, Lk3/iy0;-><init>(Ljava/lang/Object;)V
-
-    new-instance v0, Ljava/io/InputStreamReader;
-
-    invoke-direct {v0, p1}, Ljava/io/InputStreamReader;-><init>(Ljava/io/InputStream;)V
+    check-cast v0, Ljava/util/concurrent/ScheduledExecutorService;
 
     .line 2
-    invoke-static {v0}, Lk3/qg0;->a(Ljava/io/Reader;)Lk3/qg0;
+    invoke-static {}, Lk3/ei0;->a()Lk3/jm0;
 
-    move-result-object p1
-
-    invoke-direct {v1, v2, p1}, Lk3/sg0;-><init>(Lk3/iy0;Lk3/qg0;)V
+    move-result-object v1
 
     .line 3
-    invoke-static {v1}, Lk3/am0;->f(Ljava/lang/Object;)Lk3/em0;
+    iget-object v2, p0, Lk3/g20;->b:Lk3/qv0;
 
-    move-result-object p1
+    invoke-interface {v2}, Lk3/qv0;->get()Ljava/lang/Object;
 
-    return-object p1
+    move-result-object v2
+
+    check-cast v2, Lk3/v20;
+
+    iget-object v3, p0, Lk3/g20;->c:Lk3/qv0;
+
+    invoke-static {v3}, Lk3/jv0;->b(Lk3/qv0;)Lk3/iv0;
+
+    move-result-object v3
+
+    .line 4
+    new-instance v4, Lk3/e20;
+
+    invoke-direct {v4, v0, v1, v2, v3}, Lk3/e20;-><init>(Ljava/util/concurrent/ScheduledExecutorService;Lk3/jm0;Lk3/v20;Lk3/iv0;)V
+
+    return-object v4
 .end method

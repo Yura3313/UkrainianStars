@@ -25,16 +25,16 @@
             "Ljava/util/concurrent/ConcurrentMap<",
             "Ljava/lang/String;",
             "Ljava/util/List<",
-            "Lk3/jn0<",
+            "Lk3/ln0<",
             "TP;>;>;>;"
         }
     .end annotation
 .end field
 
-.field public b:Lk3/jn0;
+.field public b:Lk3/ln0;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lk3/jn0<",
+            "Lk3/ln0<",
             "TP;>;"
         }
     .end annotation
@@ -75,7 +75,7 @@
         }
     .end annotation
 
-    const-class v0, Lk3/zm0;
+    const-class v0, Lk3/bn0;
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V

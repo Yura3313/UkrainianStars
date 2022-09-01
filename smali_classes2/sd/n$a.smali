@@ -1,5 +1,5 @@
 .class public final Lsd/n$a;
-.super Lse/h;
+.super Lse/i;
 .source "ProfileActionsDropDownFragment.kt"
 
 # interfaces
@@ -18,36 +18,36 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/l<",
         "Landroid/widget/FrameLayout;",
-        "Lie/h;",
+        "Lie/i;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic f:Lsd/n;
+.field public final synthetic g:Lsd/n;
 
-.field public final synthetic g:Landroid/view/View;
+.field public final synthetic h:Landroid/view/View;
 
-.field public final synthetic h:Landroid/graphics/Rect;
+.field public final synthetic i:Landroid/graphics/Rect;
 
 
 # direct methods
 .method public constructor <init>(Lsd/n;Landroid/view/View;Landroid/graphics/Rect;)V
     .locals 0
 
-    iput-object p1, p0, Lsd/n$a;->f:Lsd/n;
+    iput-object p1, p0, Lsd/n$a;->g:Lsd/n;
 
-    iput-object p2, p0, Lsd/n$a;->g:Landroid/view/View;
+    iput-object p2, p0, Lsd/n$a;->h:Landroid/view/View;
 
-    iput-object p3, p0, Lsd/n$a;->h:Landroid/graphics/Rect;
+    iput-object p3, p0, Lsd/n$a;->i:Landroid/graphics/Rect;
 
     const/4 p1, 0x1
 
-    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -61,7 +61,7 @@
     check-cast p1, Landroid/widget/FrameLayout;
 
     .line 2
-    iget-object v0, p0, Lsd/n$a;->f:Lsd/n;
+    iget-object v0, p0, Lsd/n$a;->g:Lsd/n;
 
     invoke-virtual {v0}, Landroidx/fragment/app/Fragment;->N()Z
 
@@ -75,7 +75,7 @@
     const-string v0, "it"
 
     .line 3
-    invoke-static {p1, v0}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {p1}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
 
@@ -98,7 +98,7 @@
 
     .line 4
     :cond_2
-    iget-object v0, p0, Lsd/n$a;->g:Landroid/view/View;
+    iget-object v0, p0, Lsd/n$a;->h:Landroid/view/View;
 
     invoke-static {v0}, Lae/z2;->h(Landroid/view/View;)V
 
@@ -121,7 +121,7 @@
     invoke-virtual {p1, v0}, Landroid/view/View;->setPivotY(F)V
 
     .line 7
-    iget-object v0, p0, Lsd/n$a;->h:Landroid/graphics/Rect;
+    iget-object v0, p0, Lsd/n$a;->i:Landroid/graphics/Rect;
 
     invoke-virtual {v0}, Landroid/graphics/Rect;->exactCenterX()F
 
@@ -140,7 +140,7 @@
     invoke-virtual {p1, v0}, Landroid/view/View;->setTranslationX(F)V
 
     .line 8
-    iget-object v0, p0, Lsd/n$a;->h:Landroid/graphics/Rect;
+    iget-object v0, p0, Lsd/n$a;->i:Landroid/graphics/Rect;
 
     iget v0, v0, Landroid/graphics/Rect;->bottom:I
 
@@ -159,7 +159,7 @@
     int-to-float v2, v2
 
     .line 9
-    sget v3, La5/g0;->a:F
+    sget v3, La5/e0;->g:F
 
     mul-float v2, v2, v3
 
@@ -191,7 +191,7 @@
     const-string v4, "spring"
 
     .line 15
-    invoke-static {v2, v4}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v2, v4}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v2, v1}, Ll0/e;->a(F)Ll0/e;
 
@@ -199,7 +199,7 @@
     iget-object v2, v0, Ll0/d;->q:Ll0/e;
 
     .line 17
-    invoke-static {v2, v4}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v2, v4}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/high16 v5, 0x44160000    # 600.0f
 
@@ -219,7 +219,7 @@
     iget-object v2, v0, Ll0/d;->q:Ll0/e;
 
     .line 21
-    invoke-static {v2, v4}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v2, v4}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v2, v1}, Ll0/e;->a(F)Ll0/e;
 
@@ -227,7 +227,7 @@
     iget-object v1, v0, Ll0/d;->q:Ll0/e;
 
     .line 23
-    invoke-static {v1, v4}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, v4}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v1, v5}, Ll0/e;->b(F)Ll0/e;
 
@@ -239,7 +239,7 @@
 
     .line 26
     :goto_0
-    sget-object p1, Lie/h;->a:Lie/h;
+    sget-object p1, Lie/i;->a:Lie/i;
 
     return-object p1
 .end method

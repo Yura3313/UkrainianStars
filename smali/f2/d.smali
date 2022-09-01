@@ -25,7 +25,7 @@
 
 
 # virtual methods
-.method public final synthetic a(Landroid/content/Context;Landroid/os/Looper;Ld2/c;Ljava/lang/Object;Lb2/e;Lb2/l;)Lcom/google/android/gms/common/api/a$f;
+.method public final synthetic a(Landroid/content/Context;Landroid/os/Looper;Ld2/c;Ljava/lang/Object;Lb2/d;Lb2/k;)Lcom/google/android/gms/common/api/a$f;
     .locals 6
 
     .line 1
@@ -46,7 +46,7 @@
 
     move-object v5, p6
 
-    invoke-direct/range {v0 .. v5}, Lf2/c;-><init>(Landroid/content/Context;Landroid/os/Looper;Ld2/c;Lb2/e;Lb2/l;)V
+    invoke-direct/range {v0 .. v5}, Lf2/c;-><init>(Landroid/content/Context;Landroid/os/Looper;Ld2/c;Lb2/d;Lb2/k;)V
 
     return-object p4
 .end method

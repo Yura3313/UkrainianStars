@@ -27,7 +27,7 @@
 
 
 # instance fields
-.field public final f:Lcom/google/protobuf/a0$d;
+.field public final g:Lcom/google/protobuf/a0$d;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lcom/google/protobuf/a0$d<",
@@ -36,13 +36,13 @@
     .end annotation
 .end field
 
-.field public final g:I
+.field public final h:I
 
-.field public final h:Lcom/google/protobuf/w1$b;
-
-.field public final i:Z
+.field public final i:Lcom/google/protobuf/w1$b;
 
 .field public final j:Z
+
+.field public final k:Z
 
 
 # direct methods
@@ -62,19 +62,19 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lcom/google/protobuf/GeneratedMessageLite$c;->f:Lcom/google/protobuf/a0$d;
+    iput-object p1, p0, Lcom/google/protobuf/GeneratedMessageLite$c;->g:Lcom/google/protobuf/a0$d;
 
     .line 3
-    iput p2, p0, Lcom/google/protobuf/GeneratedMessageLite$c;->g:I
+    iput p2, p0, Lcom/google/protobuf/GeneratedMessageLite$c;->h:I
 
     .line 4
-    iput-object p3, p0, Lcom/google/protobuf/GeneratedMessageLite$c;->h:Lcom/google/protobuf/w1$b;
+    iput-object p3, p0, Lcom/google/protobuf/GeneratedMessageLite$c;->i:Lcom/google/protobuf/w1$b;
 
     .line 5
-    iput-boolean p4, p0, Lcom/google/protobuf/GeneratedMessageLite$c;->i:Z
+    iput-boolean p4, p0, Lcom/google/protobuf/GeneratedMessageLite$c;->j:Z
 
     .line 6
-    iput-boolean p5, p0, Lcom/google/protobuf/GeneratedMessageLite$c;->j:Z
+    iput-boolean p5, p0, Lcom/google/protobuf/GeneratedMessageLite$c;->k:Z
 
     return-void
 .end method
@@ -85,10 +85,10 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$c;->h:Lcom/google/protobuf/w1$b;
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$c;->i:Lcom/google/protobuf/w1$b;
 
     .line 2
-    iget-object v0, v0, Lcom/google/protobuf/w1$b;->f:Lcom/google/protobuf/w1$c;
+    iget-object v0, v0, Lcom/google/protobuf/w1$b;->g:Lcom/google/protobuf/w1$c;
 
     return-object v0
 .end method
@@ -96,7 +96,7 @@
 .method public final G()Z
     .locals 1
 
-    iget-boolean v0, p0, Lcom/google/protobuf/GeneratedMessageLite$c;->j:Z
+    iget-boolean v0, p0, Lcom/google/protobuf/GeneratedMessageLite$c;->k:Z
 
     return v0
 .end method
@@ -120,9 +120,9 @@
     check-cast p1, Lcom/google/protobuf/GeneratedMessageLite$c;
 
     .line 2
-    iget v0, p0, Lcom/google/protobuf/GeneratedMessageLite$c;->g:I
+    iget v0, p0, Lcom/google/protobuf/GeneratedMessageLite$c;->h:I
 
-    iget p1, p1, Lcom/google/protobuf/GeneratedMessageLite$c;->g:I
+    iget p1, p1, Lcom/google/protobuf/GeneratedMessageLite$c;->h:I
 
     sub-int/2addr v0, p1
 
@@ -132,7 +132,7 @@
 .method public final d()I
     .locals 1
 
-    iget v0, p0, Lcom/google/protobuf/GeneratedMessageLite$c;->g:I
+    iget v0, p0, Lcom/google/protobuf/GeneratedMessageLite$c;->h:I
 
     return v0
 .end method
@@ -140,7 +140,7 @@
 .method public final l()Z
     .locals 1
 
-    iget-boolean v0, p0, Lcom/google/protobuf/GeneratedMessageLite$c;->i:Z
+    iget-boolean v0, p0, Lcom/google/protobuf/GeneratedMessageLite$c;->j:Z
 
     return v0
 .end method
@@ -148,7 +148,7 @@
 .method public final q()Lcom/google/protobuf/w1$b;
     .locals 1
 
-    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$c;->h:Lcom/google/protobuf/w1$b;
+    iget-object v0, p0, Lcom/google/protobuf/GeneratedMessageLite$c;->i:Lcom/google/protobuf/w1$b;
 
     return-object v0
 .end method

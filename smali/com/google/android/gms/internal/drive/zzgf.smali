@@ -15,11 +15,11 @@
 
 
 # instance fields
-.field public final f:Landroid/os/ParcelFileDescriptor;
+.field public final g:Landroid/os/ParcelFileDescriptor;
 
-.field public final g:Landroid/os/IBinder;
+.field public final h:Landroid/os/IBinder;
 
-.field public final h:Ljava/lang/String;
+.field public final i:Ljava/lang/String;
 
 
 # direct methods
@@ -42,13 +42,13 @@
     invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lcom/google/android/gms/internal/drive/zzgf;->f:Landroid/os/ParcelFileDescriptor;
+    iput-object p1, p0, Lcom/google/android/gms/internal/drive/zzgf;->g:Landroid/os/ParcelFileDescriptor;
 
     .line 3
-    iput-object p2, p0, Lcom/google/android/gms/internal/drive/zzgf;->g:Landroid/os/IBinder;
+    iput-object p2, p0, Lcom/google/android/gms/internal/drive/zzgf;->h:Landroid/os/IBinder;
 
     .line 4
-    iput-object p3, p0, Lcom/google/android/gms/internal/drive/zzgf;->h:Ljava/lang/String;
+    iput-object p3, p0, Lcom/google/android/gms/internal/drive/zzgf;->i:Ljava/lang/String;
 
     return-void
 .end method
@@ -68,7 +68,7 @@
     move-result v0
 
     .line 2
-    iget-object v1, p0, Lcom/google/android/gms/internal/drive/zzgf;->f:Landroid/os/ParcelFileDescriptor;
+    iget-object v1, p0, Lcom/google/android/gms/internal/drive/zzgf;->g:Landroid/os/ParcelFileDescriptor;
 
     const/4 v2, 0x2
 
@@ -77,14 +77,14 @@
     invoke-static {p1, v2, v1, p2, v3}, Le2/b;->l(Landroid/os/Parcel;ILandroid/os/Parcelable;IZ)V
 
     .line 3
-    iget-object p2, p0, Lcom/google/android/gms/internal/drive/zzgf;->g:Landroid/os/IBinder;
+    iget-object p2, p0, Lcom/google/android/gms/internal/drive/zzgf;->h:Landroid/os/IBinder;
 
     const/4 v1, 0x3
 
     invoke-static {p1, v1, p2}, Le2/b;->f(Landroid/os/Parcel;ILandroid/os/IBinder;)V
 
     .line 4
-    iget-object p2, p0, Lcom/google/android/gms/internal/drive/zzgf;->h:Ljava/lang/String;
+    iget-object p2, p0, Lcom/google/android/gms/internal/drive/zzgf;->i:Ljava/lang/String;
 
     const/4 v1, 0x4
 

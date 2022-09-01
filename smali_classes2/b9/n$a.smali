@@ -20,7 +20,7 @@
     value = {
         "Ljava/lang/Object;",
         "Ljava/util/Comparator<",
-        "Lcom/helpshift/util/h0<",
+        "Lcom/helpshift/util/f0<",
         "Ljava/lang/String;",
         "Ljava/lang/Double;",
         ">;>;"
@@ -43,16 +43,16 @@
     .locals 3
 
     .line 1
-    check-cast p1, Lcom/helpshift/util/h0;
+    check-cast p1, Lcom/helpshift/util/f0;
 
-    check-cast p2, Lcom/helpshift/util/h0;
+    check-cast p2, Lcom/helpshift/util/f0;
 
     .line 2
-    iget-object v0, p1, Lcom/helpshift/util/h0;->b:Ljava/lang/Object;
+    iget-object v0, p1, Lcom/helpshift/util/f0;->b:Ljava/lang/Object;
 
     check-cast v0, Ljava/lang/Double;
 
-    iget-object v1, p2, Lcom/helpshift/util/h0;->b:Ljava/lang/Object;
+    iget-object v1, p2, Lcom/helpshift/util/f0;->b:Ljava/lang/Object;
 
     invoke-virtual {v0, v1}, Ljava/lang/Double;->equals(Ljava/lang/Object;)Z
 
@@ -66,7 +66,7 @@
 
     .line 3
     :cond_0
-    iget-object p1, p1, Lcom/helpshift/util/h0;->b:Ljava/lang/Object;
+    iget-object p1, p1, Lcom/helpshift/util/f0;->b:Ljava/lang/Object;
 
     check-cast p1, Ljava/lang/Double;
 
@@ -74,7 +74,7 @@
 
     move-result-wide v0
 
-    iget-object p1, p2, Lcom/helpshift/util/h0;->b:Ljava/lang/Object;
+    iget-object p1, p2, Lcom/helpshift/util/f0;->b:Ljava/lang/Object;
 
     check-cast p1, Ljava/lang/Double;
 

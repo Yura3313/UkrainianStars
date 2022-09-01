@@ -14,7 +14,7 @@
 
 
 # direct methods
-.method public synthetic constructor <init>(Landroid/view/View;Lk3/gh;Lk3/jo;Lk3/ig0;)V
+.method public synthetic constructor <init>(Landroid/view/View;Lk3/gh;Lk3/jo;Lk3/jg0;)V
     .locals 0
 
     .line 1
@@ -58,12 +58,12 @@
 
 
 # virtual methods
-.method public a(Ljava/util/Set;)Lk3/sr;
+.method public a(Ljava/util/Set;)Lk3/qr;
     .locals 1
 
-    new-instance v0, Lk3/sr;
+    new-instance v0, Lk3/qr;
 
-    invoke-direct {v0, p1}, Lk3/sr;-><init>(Ljava/util/Set;)V
+    invoke-direct {v0, p1}, Lk3/qr;-><init>(Ljava/util/Set;)V
 
     return-object v0
 .end method

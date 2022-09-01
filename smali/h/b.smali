@@ -4,11 +4,11 @@
 
 
 # instance fields
-.field public final f:Ljava/lang/Object;
+.field public final g:Ljava/lang/Object;
 
-.field public final g:Ljava/util/concurrent/ExecutorService;
+.field public final h:Ljava/util/concurrent/ExecutorService;
 
-.field public volatile h:Landroid/os/Handler;
+.field public volatile i:Landroid/os/Handler;
 
 
 # direct methods
@@ -23,7 +23,7 @@
 
     invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
-    iput-object v0, p0, Lh/b;->f:Ljava/lang/Object;
+    iput-object v0, p0, Lh/b;->g:Ljava/lang/Object;
 
     .line 3
     new-instance v0, Lh/b$a;
@@ -36,7 +36,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lh/b;->g:Ljava/util/concurrent/ExecutorService;
+    iput-object v0, p0, Lh/b;->h:Ljava/util/concurrent/ExecutorService;
 
     return-void
 .end method

@@ -24,7 +24,7 @@
     move-object/from16 v11, p2
 
     .line 1
-    sget-object v12, Lq/e$a;->h:Lq/e$a;
+    sget-object v12, Lq/e$a;->i:Lq/e$a;
 
     const/4 v13, 0x2
 
@@ -536,7 +536,7 @@
 
     aget-object v4, v4, p3
 
-    sget-object v5, Lq/e$a;->g:Lq/e$a;
+    sget-object v5, Lq/e$a;->h:Lq/e$a;
 
     if-ne v4, v5, :cond_19
 

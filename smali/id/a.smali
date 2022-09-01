@@ -8,25 +8,25 @@
 
 .field public final i:Z
 
-.field public final j:Lvc/n$j$a;
+.field public final j:Lvc/m$j$a;
 
 
 # direct methods
-.method public constructor <init>(Lid/w;Lvc/n$j$a;)V
+.method public constructor <init>(Lid/w;Lvc/m$j$a;)V
     .locals 6
 
     const-string v0, "dialog"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "addIngameFriends"
 
-    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
-    invoke-direct {p0, p1, p2}, Lid/w$a;-><init>(Lid/w;Lvc/n$j;)V
+    invoke-direct {p0, p1, p2}, Lid/w$a;-><init>(Lid/w;Lvc/m$j;)V
 
-    iput-object p2, p0, Lid/a;->j:Lvc/n$j$a;
+    iput-object p2, p0, Lid/a;->j:Lvc/m$j$a;
 
     .line 2
     sget-object p1, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
@@ -68,7 +68,7 @@
     move-result-object p2
 
     .line 5
-    iget-object p2, p2, Lbe/v0;->a:Ljava/lang/Object;
+    iget-object p2, p2, Lbe/x0;->a:Ljava/lang/Object;
 
     .line 6
     check-cast p2, Lae/m;
@@ -79,7 +79,7 @@
 
     move-result-object p2
 
-    check-cast p2, Lvc/j;
+    check-cast p2, Lvc/i;
 
     goto :goto_0
 
@@ -95,13 +95,13 @@
     if-eqz p2, :cond_4
 
     .line 8
-    iget-object v2, p2, Lvc/j;->a:Ljava/util/List;
+    iget-object v2, p2, Lvc/i;->a:Ljava/util/List;
 
     .line 9
-    iget-object p2, p2, Lvc/j;->b:Ljava/util/List;
+    iget-object p2, p2, Lvc/i;->b:Ljava/util/List;
 
     .line 10
-    invoke-static {v2, p2}, Lje/j;->I(Ljava/util/Collection;Ljava/lang/Iterable;)Ljava/util/List;
+    invoke-static {v2, p2}, Lje/j;->D(Ljava/util/Collection;Ljava/lang/Iterable;)Ljava/util/List;
 
     move-result-object p2
 
@@ -110,7 +110,7 @@
 
     const/16 v3, 0xa
 
-    invoke-static {p2, v3}, Lje/f;->q(Ljava/lang/Iterable;I)I
+    invoke-static {p2, v3}, Lje/f;->l(Ljava/lang/Iterable;I)I
 
     move-result v3
 
@@ -133,10 +133,10 @@
     move-result-object v3
 
     .line 13
-    check-cast v3, Lvc/i;
+    check-cast v3, Lvc/h;
 
     .line 14
-    iget-object v3, v3, Lvc/i;->a:Lcom/supercell/id/model/IdSocialAccount;
+    iget-object v3, v3, Lvc/h;->a:Lcom/supercell/id/model/IdSocialAccount;
 
     .line 15
     invoke-interface {v2, v3}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
@@ -144,7 +144,7 @@
     goto :goto_1
 
     :cond_1
-    invoke-static {v2}, Lje/j;->U(Ljava/lang/Iterable;)Ljava/util/Set;
+    invoke-static {v2}, Lje/j;->P(Ljava/lang/Iterable;)Ljava/util/Set;
 
     move-result-object p2
 
@@ -242,7 +242,7 @@
 
     const-string v0, "inflater"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     iget-boolean v0, p0, Lid/a;->h:Z
 
@@ -272,7 +272,7 @@
 
     const-string p2, "inflater.inflate(if (log\u2026e_friends, parent, false)"
 
-    invoke-static {p1, p2}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p2}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     return-object p1
 .end method
@@ -288,7 +288,7 @@
     move-result-object v0
 
     .line 2
-    iget-object v0, v0, Lae/u;->m:La5/d0;
+    iget-object v0, v0, Lae/u;->m:Lpe/a;
 
     const-string v1, "Add In-game Friends Notification"
 
@@ -299,7 +299,7 @@
     const/16 v4, 0x1c
 
     .line 3
-    invoke-static {v0, v1, v2, v3, v4}, La5/d0;->a(La5/d0;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;I)V
+    invoke-static {v0, v1, v2, v3, v4}, Lpe/a;->e(Lpe/a;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;I)V
 
     return-void
 .end method
@@ -309,7 +309,7 @@
 
     const-string v0, "view"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     sget v0, Lcom/supercell/id/R$id;->dialogContainer:I
@@ -324,7 +324,7 @@
 
     const-string v0, "view.dialogContainer"
 
-    invoke-static {v1, v0}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, v0}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/4 v2, 0x0
 
@@ -338,7 +338,7 @@
 
     const/16 v7, 0x1f
 
-    invoke-static/range {v1 .. v7}, Luc/d;->a(Landroid/view/View;IFFFLuc/o$b;I)V
+    invoke-static/range {v1 .. v7}, La5/a0;->a(Landroid/view/View;IFFFLuc/n$b;I)V
 
     .line 2
     sget v0, Lcom/supercell/id/R$id;->gameIconView:I
@@ -351,14 +351,14 @@
 
     const-string v1, "view.gameIconView"
 
-    invoke-static {v0, v1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v1, "id_logo_big.png"
 
     const/4 v2, 0x1
 
     .line 3
-    invoke-static {v0, v1, v2}, Lud/f0;->h(Landroid/widget/ImageView;Ljava/lang/String;Z)V
+    invoke-static {v0, v1, v2}, Lud/d0;->h(Landroid/widget/ImageView;Ljava/lang/String;Z)V
 
     .line 4
     sget v0, Lcom/supercell/id/R$id;->logoImageView:I
@@ -371,12 +371,12 @@
 
     const-string v1, "view.logoImageView"
 
-    invoke-static {v0, v1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v1, "add_friends_deco.png"
 
     .line 5
-    invoke-static {v0, v1, v2}, Lud/f0;->h(Landroid/widget/ImageView;Ljava/lang/String;Z)V
+    invoke-static {v0, v1, v2}, Lud/d0;->h(Landroid/widget/ImageView;Ljava/lang/String;Z)V
 
     .line 6
     sget-object v0, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
@@ -461,13 +461,13 @@
 
     .line 16
     :goto_4
-    iget-object v3, v2, Lie/d;->f:Ljava/lang/Object;
+    iget-object v3, v2, Lie/d;->g:Ljava/lang/Object;
 
     .line 17
     check-cast v3, Ljava/lang/String;
 
     .line 18
-    iget-object v2, v2, Lie/d;->g:Ljava/lang/Object;
+    iget-object v2, v2, Lie/d;->h:Ljava/lang/Object;
 
     .line 19
     check-cast v2, Ljava/lang/String;
@@ -483,12 +483,12 @@
 
     const-string v6, "view.titleTextView"
 
-    invoke-static {v5, v6}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v5, v6}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/4 v7, 0x0
 
     .line 21
-    invoke-static {v5, v3, v7}, Lud/f0;->j(Landroid/widget/TextView;Ljava/lang/String;Lre/p;)V
+    invoke-static {v5, v3, v7}, Lud/d0;->j(Landroid/widget/TextView;Ljava/lang/String;Lre/p;)V
 
     .line 22
     invoke-virtual {p1, v4}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -539,10 +539,10 @@
 
     const-string v10, "view.messageTextView"
 
-    invoke-static {v9, v10}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v9, v10}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 26
-    invoke-static {v9, v2, v7}, Lud/f0;->j(Landroid/widget/TextView;Ljava/lang/String;Lre/p;)V
+    invoke-static {v9, v2, v7}, Lud/d0;->j(Landroid/widget/TextView;Ljava/lang/String;Lre/p;)V
 
     .line 27
     invoke-virtual {p1, v3}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -551,7 +551,7 @@
 
     check-cast v2, Landroid/widget/TextView;
 
-    invoke-static {v2, v10}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v2, v10}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lae/u;
 
@@ -603,7 +603,7 @@
     move-result-object v1
 
     .line 31
-    invoke-static {v9, v1, v7}, Lud/f0;->j(Landroid/widget/TextView;Ljava/lang/String;Lre/p;)V
+    invoke-static {v9, v1, v7}, Lud/d0;->j(Landroid/widget/TextView;Ljava/lang/String;Lre/p;)V
 
     .line 32
     :cond_8
@@ -686,7 +686,7 @@
 
     const-string v2, "view.button"
 
-    invoke-static {v1, v2}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     sget v5, Lcom/supercell/id/R$font;->supercell_text_android_bd:I
 
@@ -704,7 +704,7 @@
 
     check-cast v1, Landroid/widget/TextView;
 
-    invoke-static {v1, v6}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, v6}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-static {v1, v5}, Lae/r;->b(Landroid/widget/TextView;I)V
 
@@ -715,7 +715,7 @@
 
     check-cast v1, Landroid/widget/TextView;
 
-    invoke-static {v1, v10}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, v10}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-static {v1, v5}, Lae/r;->b(Landroid/widget/TextView;I)V
 
@@ -726,12 +726,12 @@
 
     check-cast v1, Lcom/supercell/id/view/WidthAdjustingMultilineButton;
 
-    invoke-static {v1, v2}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v3, "ingame_add_ingame_friends_notification_add_btn"
 
     .line 42
-    invoke-static {v1, v3, v7}, Lud/f0;->j(Landroid/widget/TextView;Ljava/lang/String;Lre/p;)V
+    invoke-static {v1, v3, v7}, Lud/d0;->j(Landroid/widget/TextView;Ljava/lang/String;Lre/p;)V
 
     goto :goto_8
 
@@ -743,7 +743,7 @@
 
     check-cast v1, Landroid/widget/TextView;
 
-    invoke-static {v1, v6}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, v6}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-static {v1, v5}, Lae/r;->b(Landroid/widget/TextView;I)V
 
@@ -754,7 +754,7 @@
 
     check-cast v1, Landroid/widget/TextView;
 
-    invoke-static {v1, v10}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, v10}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     sget v3, Lcom/supercell/id/R$font;->supercell_text_android_md:I
 
@@ -767,12 +767,12 @@
 
     check-cast v1, Lcom/supercell/id/view/WidthAdjustingMultilineButton;
 
-    invoke-static {v1, v2}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v3, "ingame_add_ingame_friends_notification_connect_btn"
 
     .line 46
-    invoke-static {v1, v3, v7}, Lud/f0;->j(Landroid/widget/TextView;Ljava/lang/String;Lre/p;)V
+    invoke-static {v1, v3, v7}, Lud/d0;->j(Landroid/widget/TextView;Ljava/lang/String;Lre/p;)V
 
     .line 47
     :goto_8
@@ -782,9 +782,9 @@
 
     check-cast v1, Lcom/supercell/id/view/WidthAdjustingMultilineButton;
 
-    invoke-static {v1, v2}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    sget-object v2, Lsc/a$a;->g:Lsc/a$a;
+    sget-object v2, Lsc/a$a;->h:Lsc/a$a;
 
     invoke-static {v1, v9, v9}, Lae/z2;->r(Landroid/view/View;II)V
 

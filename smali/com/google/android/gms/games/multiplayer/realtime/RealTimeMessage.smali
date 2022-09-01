@@ -19,11 +19,11 @@
 
 
 # instance fields
-.field public final f:Ljava/lang/String;
+.field public final g:Ljava/lang/String;
 
-.field public final g:[B
+.field public final h:[B
 
-.field public final h:I
+.field public final i:I
 
 
 # direct methods
@@ -61,7 +61,7 @@
     .line 3
     invoke-static {v0}, Ld2/h;->h(Ljava/lang/Object;)Ljava/lang/Object;
 
-    iput-object v0, p0, Lcom/google/android/gms/games/multiplayer/realtime/RealTimeMessage;->f:Ljava/lang/String;
+    iput-object v0, p0, Lcom/google/android/gms/games/multiplayer/realtime/RealTimeMessage;->g:Ljava/lang/String;
 
     .line 4
     invoke-static {v1}, Ld2/h;->h(Ljava/lang/Object;)Ljava/lang/Object;
@@ -72,10 +72,10 @@
 
     check-cast v0, [B
 
-    iput-object v0, p0, Lcom/google/android/gms/games/multiplayer/realtime/RealTimeMessage;->g:[B
+    iput-object v0, p0, Lcom/google/android/gms/games/multiplayer/realtime/RealTimeMessage;->h:[B
 
     .line 5
-    iput p1, p0, Lcom/google/android/gms/games/multiplayer/realtime/RealTimeMessage;->h:I
+    iput p1, p0, Lcom/google/android/gms/games/multiplayer/realtime/RealTimeMessage;->i:I
 
     return-void
 .end method
@@ -94,17 +94,17 @@
     .locals 0
 
     .line 1
-    iget-object p2, p0, Lcom/google/android/gms/games/multiplayer/realtime/RealTimeMessage;->f:Ljava/lang/String;
+    iget-object p2, p0, Lcom/google/android/gms/games/multiplayer/realtime/RealTimeMessage;->g:Ljava/lang/String;
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
     .line 2
-    iget-object p2, p0, Lcom/google/android/gms/games/multiplayer/realtime/RealTimeMessage;->g:[B
+    iget-object p2, p0, Lcom/google/android/gms/games/multiplayer/realtime/RealTimeMessage;->h:[B
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeByteArray([B)V
 
     .line 3
-    iget p2, p0, Lcom/google/android/gms/games/multiplayer/realtime/RealTimeMessage;->h:I
+    iget p2, p0, Lcom/google/android/gms/games/multiplayer/realtime/RealTimeMessage;->i:I
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
 

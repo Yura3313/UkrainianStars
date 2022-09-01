@@ -383,7 +383,7 @@
     iget-object v1, p0, Lg/b;->b:Lm/g;
 
     .line 3
-    iget v2, v1, Lm/g;->h:I
+    iget v2, v1, Lm/g;->i:I
 
     if-ge v0, v2, :cond_2
 
@@ -440,7 +440,7 @@
     iget-object v1, p0, Lg/b;->b:Lm/g;
 
     .line 3
-    iget v2, v1, Lm/g;->h:I
+    iget v2, v1, Lm/g;->i:I
 
     if-ge v0, v2, :cond_2
 

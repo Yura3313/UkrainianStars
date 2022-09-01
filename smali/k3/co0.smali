@@ -1,14 +1,13 @@
 .class public final Lk3/co0;
-.super Lk3/dn0;
+.super Lk3/en0;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lk3/dn0<",
-        "Lk3/zm0;",
-        "Lcom/google/android/gms/internal/ads/j4;",
+        "Lk3/en0<",
+        "Lcom/google/android/gms/internal/ads/o5;",
         ">;"
     }
 .end annotation
@@ -16,19 +15,63 @@
 
 # direct methods
 .method public constructor <init>()V
-    .locals 1
+    .locals 4
 
-    const-class v0, Lk3/zm0;
+    const-class v0, Lcom/google/android/gms/internal/ads/o5;
 
-    invoke-direct {p0, v0}, Lk3/dn0;-><init>(Ljava/lang/Class;)V
+    const/4 v1, 0x1
+
+    new-array v1, v1, [Lk3/fn0;
+
+    new-instance v2, Lk3/bo0;
+
+    invoke-direct {v2}, Lk3/bo0;-><init>()V
+
+    const/4 v3, 0x0
+
+    aput-object v2, v1, v3
+
+    invoke-direct {p0, v0, v1}, Lk3/en0;-><init>(Ljava/lang/Class;[Lk3/fn0;)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 8
+.method public final a()Ljava/lang/String;
+    .locals 1
+
+    const-string v0, "type.googleapis.com/google.crypto.tink.XChaCha20Poly1305Key"
+
+    return-object v0
+.end method
+
+.method public final c()I
+    .locals 1
+
+    const/4 v0, 0x2
+
+    return v0
+.end method
+
+.method public final e()Lk3/de;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lk3/de;"
+        }
+    .end annotation
+
+    new-instance v0, Lcom/google/android/gms/internal/ads/q2;
+
+    invoke-direct {v0}, Lcom/google/android/gms/internal/ads/q2;-><init>()V
+
+    return-object v0
+.end method
+
+.method public final synthetic f(Lk3/at0;)V
+    .locals 1
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Ljava/security/GeneralSecurityException;
@@ -36,146 +79,56 @@
     .end annotation
 
     .line 1
-    check-cast p1, Lcom/google/android/gms/internal/ads/j4;
+    check-cast p1, Lcom/google/android/gms/internal/ads/o5;
 
     .line 2
-    invoke-virtual {p1}, Lcom/google/android/gms/internal/ads/j4;->A()Lcom/google/android/gms/internal/ads/f4;
-
-    move-result-object v0
-
-    .line 3
-    invoke-virtual {v0}, Lcom/google/android/gms/internal/ads/f4;->w()Lcom/google/android/gms/internal/ads/m4;
-
-    move-result-object v1
-
-    .line 4
-    invoke-virtual {v1}, Lcom/google/android/gms/internal/ads/m4;->w()I
-
-    move-result v2
-
-    invoke-static {v2}, Lk3/lo0;->a(I)I
-
-    move-result v2
-
-    .line 5
-    invoke-virtual {p1}, Lcom/google/android/gms/internal/ads/j4;->C()Lk3/tq0;
-
-    move-result-object v3
-
-    invoke-virtual {v3}, Lk3/tq0;->b()[B
-
-    move-result-object v3
-
-    .line 6
-    invoke-virtual {p1}, Lcom/google/android/gms/internal/ads/j4;->D()Lk3/tq0;
-
-    move-result-object p1
-
-    invoke-virtual {p1}, Lk3/tq0;->b()[B
-
-    move-result-object p1
-
-    .line 7
-    invoke-static {v2}, Lk3/q5;->i(I)Ljava/security/spec/ECParameterSpec;
-
-    move-result-object v2
-
-    .line 8
-    new-instance v4, Ljava/math/BigInteger;
-
-    const/4 v5, 0x1
-
-    invoke-direct {v4, v5, v3}, Ljava/math/BigInteger;-><init>(I[B)V
-
-    .line 9
-    new-instance v3, Ljava/math/BigInteger;
-
-    invoke-direct {v3, v5, p1}, Ljava/math/BigInteger;-><init>(I[B)V
-
-    .line 10
-    new-instance p1, Ljava/security/spec/ECPoint;
-
-    invoke-direct {p1, v4, v3}, Ljava/security/spec/ECPoint;-><init>(Ljava/math/BigInteger;Ljava/math/BigInteger;)V
-
-    .line 11
-    invoke-virtual {v2}, Ljava/security/spec/ECParameterSpec;->getCurve()Ljava/security/spec/EllipticCurve;
-
-    move-result-object v3
-
-    invoke-static {p1, v3}, Lk3/q5;->k(Ljava/security/spec/ECPoint;Ljava/security/spec/EllipticCurve;)V
-
-    .line 12
-    new-instance v3, Ljava/security/spec/ECPublicKeySpec;
-
-    invoke-direct {v3, p1, v2}, Ljava/security/spec/ECPublicKeySpec;-><init>(Ljava/security/spec/ECPoint;Ljava/security/spec/ECParameterSpec;)V
-
-    .line 13
-    sget-object p1, Lk3/op0;->i:Lk3/op0;
-
-    const-string v2, "EC"
-
-    invoke-virtual {p1, v2}, Lk3/op0;->a(Ljava/lang/String;)Ljava/lang/Object;
-
-    move-result-object p1
-
-    check-cast p1, Ljava/security/KeyFactory;
-
-    .line 14
-    invoke-virtual {p1, v3}, Ljava/security/KeyFactory;->generatePublic(Ljava/security/spec/KeySpec;)Ljava/security/PublicKey;
-
-    move-result-object p1
-
-    move-object v3, p1
-
-    check-cast v3, Ljava/security/interfaces/ECPublicKey;
-
-    .line 15
-    new-instance v7, Lcom/google/android/gms/internal/ads/t2;
-
-    .line 16
-    invoke-virtual {v0}, Lcom/google/android/gms/internal/ads/f4;->x()Lcom/google/android/gms/internal/ads/b4;
-
-    move-result-object p1
-
-    invoke-virtual {p1}, Lcom/google/android/gms/internal/ads/b4;->w()Lcom/google/android/gms/internal/ads/v4;
-
-    move-result-object p1
-
-    invoke-direct {v7, p1}, Lcom/google/android/gms/internal/ads/t2;-><init>(Lcom/google/android/gms/internal/ads/v4;)V
-
-    .line 17
-    new-instance p1, Lk3/kp0;
-
-    .line 18
-    invoke-virtual {v1}, Lcom/google/android/gms/internal/ads/m4;->y()Lk3/tq0;
-
-    move-result-object v2
-
-    invoke-virtual {v2}, Lk3/tq0;->b()[B
-
-    move-result-object v4
-
-    .line 19
-    invoke-virtual {v1}, Lcom/google/android/gms/internal/ads/m4;->x()I
-
-    move-result v1
-
-    invoke-static {v1}, Lk3/lo0;->b(I)Ljava/lang/String;
-
-    move-result-object v5
-
-    .line 20
-    invoke-virtual {v0}, Lcom/google/android/gms/internal/ads/f4;->y()I
+    invoke-virtual {p1}, Lcom/google/android/gms/internal/ads/o5;->w()I
 
     move-result v0
 
-    invoke-static {v0}, Lk3/lo0;->d(I)I
+    invoke-static {v0}, Lk3/fq0;->b(I)V
 
-    move-result v6
+    .line 3
+    invoke-virtual {p1}, Lcom/google/android/gms/internal/ads/o5;->z()Lk3/yq0;
 
-    move-object v2, p1
+    move-result-object p1
 
-    invoke-direct/range {v2 .. v7}, Lk3/kp0;-><init>(Ljava/security/interfaces/ECPublicKey;[BLjava/lang/String;ILk3/jp0;)V
+    invoke-virtual {p1}, Lk3/yq0;->size()I
+
+    move-result p1
+
+    const/16 v0, 0x20
+
+    if-ne p1, v0, :cond_0
+
+    return-void
+
+    .line 4
+    :cond_0
+    new-instance p1, Ljava/security/GeneralSecurityException;
+
+    const-string v0, "invalid XChaCha20Poly1305Key: incorrect key length"
+
+    invoke-direct {p1, v0}, Ljava/security/GeneralSecurityException;-><init>(Ljava/lang/String;)V
+
+    throw p1
+.end method
+
+.method public final synthetic g(Lk3/yq0;)Lk3/at0;
+    .locals 1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lcom/google/android/gms/internal/ads/zzegz;
+        }
+    .end annotation
+
+    invoke-static {}, Lcom/google/android/gms/internal/ads/t5;->a()Lcom/google/android/gms/internal/ads/t5;
+
+    move-result-object v0
+
+    invoke-static {p1, v0}, Lcom/google/android/gms/internal/ads/o5;->C(Lk3/yq0;Lcom/google/android/gms/internal/ads/t5;)Lcom/google/android/gms/internal/ads/o5;
+
+    move-result-object p1
 
     return-object p1
 .end method

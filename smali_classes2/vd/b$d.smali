@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field public final synthetic f:Lvd/b;
+.field public final synthetic g:Lvd/b;
 
 
 # direct methods
 .method public constructor <init>(Lvd/b;)V
     .locals 0
 
-    iput-object p1, p0, Lvd/b$d;->f:Lvd/b;
+    iput-object p1, p0, Lvd/b$d;->g:Lvd/b;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -45,12 +45,12 @@
     move-result-object v0
 
     .line 2
-    iget-object v0, v0, Lae/u;->s:Lud/j;
+    iget-object v0, v0, Lae/u;->s:Lud/i;
 
     const-string v1, "account_settings_info_pp_url"
 
     .line 3
-    invoke-virtual {v0, v1}, Lud/j;->g(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {v0, v1}, Lud/i;->g(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -62,7 +62,7 @@
     move-result-object p1
 
     .line 5
-    iget-object p1, p1, Lae/u;->m:La5/d0;
+    iget-object p1, p1, Lae/u;->m:Lpe/a;
 
     const/4 v1, 0x0
 
@@ -73,18 +73,18 @@
     const-string v4, "click"
 
     .line 6
-    invoke-static {p1, v3, v4, v1, v2}, La5/d0;->a(La5/d0;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;I)V
+    invoke-static {p1, v3, v4, v1, v2}, Lpe/a;->e(Lpe/a;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;I)V
 
     .line 7
-    iget-object p1, p0, Lvd/b$d;->f:Lvd/b;
+    iget-object p1, p0, Lvd/b$d;->g:Lvd/b;
 
-    invoke-static {p1}, Lcom/android/billingclient/api/c0;->e(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
+    invoke-static {p1}, Lcom/android/billingclient/api/b0;->f(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
 
     move-result-object p1
 
     if-eqz p1, :cond_0
 
-    invoke-static {p1, v0}, Lcom/android/billingclient/api/c0;->p(Landroid/app/Activity;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lcom/android/billingclient/api/b0;->q(Landroid/app/Activity;Ljava/lang/String;)V
 
     :cond_0
     return-void

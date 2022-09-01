@@ -1,5 +1,5 @@
 .class public final Ljd/c$h;
-.super Lse/h;
+.super Lse/i;
 .source "EmbeddedIngameChatDialog.kt"
 
 # interfaces
@@ -18,33 +18,33 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/l<",
         "Lae/m<",
         "+",
-        "Lvc/h;",
+        "Lvc/g;",
         "+",
         "Lcom/supercell/id/util/NormalizedError;",
         ">;",
-        "Lie/h;",
+        "Lie/i;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic f:Ljd/c;
+.field public final synthetic g:Ljd/c;
 
 
 # direct methods
 .method public constructor <init>(Ljd/c;)V
     .locals 0
 
-    iput-object p1, p0, Ljd/c$h;->f:Ljd/c;
+    iput-object p1, p0, Ljd/c$h;->g:Ljd/c;
 
     const/4 p1, 0x1
 
-    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -58,7 +58,7 @@
     check-cast p1, Lae/m;
 
     .line 2
-    iget-object v0, p0, Ljd/c$h;->f:Ljd/c;
+    iget-object v0, p0, Ljd/c$h;->g:Ljd/c;
 
     const/4 v1, 0x0
 
@@ -75,10 +75,10 @@
     iget-object p1, p1, Lae/m$a;->a:Ljava/lang/Object;
 
     .line 5
-    check-cast p1, Lvc/h;
+    check-cast p1, Lvc/g;
 
     .line 6
-    iget-object v2, p1, Lvc/h;->b:Ljava/util/List;
+    iget-object v2, p1, Lvc/g;->b:Ljava/util/List;
 
     .line 7
     new-instance v3, Ljava/util/ArrayList;
@@ -103,10 +103,10 @@
     move-result-object v4
 
     .line 9
-    check-cast v4, Lvc/g;
+    check-cast v4, Lvc/f;
 
     .line 10
-    iget-object v5, p1, Lvc/h;->a:Ljava/util/List;
+    iget-object v5, p1, Lvc/g;->a:Ljava/util/List;
 
     .line 11
     invoke-interface {v5}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
@@ -126,16 +126,16 @@
 
     move-object v7, v6
 
-    check-cast v7, Lvc/f;
+    check-cast v7, Lvc/e;
 
     .line 12
-    iget-object v7, v7, Lvc/f;->a:Ljava/lang/String;
+    iget-object v7, v7, Lvc/e;->a:Ljava/lang/String;
 
     .line 13
-    iget-object v8, v4, Lvc/g;->a:Ljava/lang/String;
+    iget-object v8, v4, Lvc/f;->a:Ljava/lang/String;
 
     .line 14
-    invoke-static {v7, v8}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v7, v8}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v7
 
@@ -147,14 +147,14 @@
     move-object v6, v1
 
     :goto_1
-    check-cast v6, Lvc/f;
+    check-cast v6, Lvc/e;
 
     if-eqz v6, :cond_3
 
     .line 15
     new-instance v5, Ljd/b;
 
-    invoke-direct {v5, v4, v6}, Ljd/b;-><init>(Lvc/g;Lvc/f;)V
+    invoke-direct {v5, v4, v6}, Ljd/b;-><init>(Lvc/f;Lvc/e;)V
 
     goto :goto_2
 
@@ -237,7 +237,7 @@
 
     invoke-direct {v3, p1}, Lae/q;-><init>(Lcom/supercell/id/util/NormalizedError;)V
 
-    invoke-static {v3}, Lcom/android/billingclient/api/z;->h(Ljava/lang/Object;)Ljava/util/List;
+    invoke-static {v3}, Lcom/android/billingclient/api/y;->c(Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object p1
 
@@ -274,7 +274,7 @@
     goto :goto_5
 
     :cond_b
-    sget-object p1, Lje/l;->f:Lje/l;
+    sget-object p1, Lje/l;->g:Lje/l;
 
     .line 26
     :goto_5
@@ -285,13 +285,13 @@
     if-eqz v4, :cond_c
 
     .line 27
-    new-instance p1, Lae/y;
+    new-instance p1, Lae/x;
 
     const-string v3, "account_messages_no_new_messages"
 
-    invoke-direct {p1, v3}, Lae/y;-><init>(Ljava/lang/String;)V
+    invoke-direct {p1, v3}, Lae/x;-><init>(Ljava/lang/String;)V
 
-    invoke-static {p1}, Lcom/android/billingclient/api/z;->h(Ljava/lang/Object;)Ljava/util/List;
+    invoke-static {p1}, Lcom/android/billingclient/api/y;->c(Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object p1
 
@@ -302,7 +302,7 @@
     sget-object v4, Ljd/g;->a:Lae/k;
 
     .line 29
-    invoke-static {p1}, Lje/j;->V(Ljava/lang/Iterable;)Ljava/lang/Iterable;
+    invoke-static {p1}, Lje/j;->Q(Ljava/lang/Iterable;)Ljava/lang/Iterable;
 
     move-result-object v4
 
@@ -360,7 +360,7 @@
 
     move-result-object v8
 
-    invoke-static {v7, v8}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v7, v8}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v7
 
@@ -368,7 +368,7 @@
 
     const/4 v7, 0x2
 
-    new-array v7, v7, [Lae/b2;
+    new-array v7, v7, [Lae/a2;
 
     .line 37
     sget-object v8, Ljd/g;->a:Lae/k;
@@ -379,11 +379,11 @@
     iget-object v6, v6, Lje/p;->b:Ljava/lang/Object;
 
     .line 39
-    check-cast v6, Lae/b2;
+    check-cast v6, Lae/a2;
 
     aput-object v6, v7, v3
 
-    invoke-static {v7}, Lcom/android/billingclient/api/z;->i([Ljava/lang/Object;)Ljava/util/List;
+    invoke-static {v7}, Lcom/android/billingclient/api/y;->d([Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object v6
 
@@ -394,13 +394,13 @@
     iget-object v6, v6, Lje/p;->b:Ljava/lang/Object;
 
     .line 41
-    invoke-static {v6}, Lcom/android/billingclient/api/z;->h(Ljava/lang/Object;)Ljava/util/List;
+    invoke-static {v6}, Lcom/android/billingclient/api/y;->c(Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object v6
 
     .line 42
     :goto_7
-    invoke-static {v5, v6}, Lje/h;->u(Ljava/util/Collection;Ljava/lang/Iterable;)Z
+    invoke-static {v5, v6}, Lje/h;->p(Ljava/util/Collection;Ljava/lang/Iterable;)Z
 
     goto :goto_6
 
@@ -409,7 +409,7 @@
 
     .line 43
     :goto_8
-    iput-object p1, v0, Ljd/c;->h:Ljava/util/List;
+    iput-object p1, v0, Ljd/c;->i:Ljava/util/List;
 
     const/4 v3, 0x4
 
@@ -510,24 +510,24 @@
     if-eqz v1, :cond_15
 
     .line 49
-    iget-object v0, v1, Lae/c2;->d:Ljava/util/List;
+    iget-object v0, v1, Lae/b2;->d:Ljava/util/List;
 
     .line 50
-    iget-object v1, v1, Ljd/c$a;->e:Lae/o2;
+    iget-object v1, v1, Ljd/c$a;->e:Lae/n2;
 
     new-instance v2, Ljd/f;
 
     invoke-direct {v2, v0, p1}, Ljd/f;-><init>(Ljava/util/List;Ljava/util/List;)V
 
-    invoke-static {v2}, Lae/u1;->o(Lre/a;)Lze/e0;
+    invoke-static {v2}, Lae/t1;->n(Lre/a;)Lze/f0;
 
     move-result-object p1
 
-    invoke-virtual {v1, p1}, Lae/o2;->b(Lze/e0;)V
+    invoke-virtual {v1, p1}, Lae/n2;->b(Lze/f0;)V
 
     .line 51
     :cond_15
-    sget-object p1, Lie/h;->a:Lie/h;
+    sget-object p1, Lie/i;->a:Lie/i;
 
     return-object p1
 .end method

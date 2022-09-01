@@ -1,25 +1,27 @@
 .class public final Lk3/g;
-.super Lk3/h;
+.super Lk3/f;
 .source "com.google.android.gms:play-services-ads-lite@@19.3.0"
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lk3/h<",
-        "Ljava/lang/Boolean;",
+        "Lk3/f<",
+        "Ljava/lang/Long;",
         ">;"
     }
 .end annotation
 
 
 # direct methods
-.method public constructor <init>(ILjava/lang/String;Ljava/lang/Boolean;)V
-    .locals 1
+.method public constructor <init>(Ljava/lang/String;Ljava/lang/Long;)V
+    .locals 2
 
-    const/4 v0, 0x0
+    const/4 v0, 0x1
 
-    invoke-direct {p0, p1, p2, p3, v0}, Lk3/h;-><init>(ILjava/lang/String;Ljava/lang/Object;Lk3/g;)V
+    const/4 v1, 0x0
+
+    invoke-direct {p0, v0, p1, p2, v1}, Lk3/f;-><init>(ILjava/lang/String;Ljava/lang/Object;Lk3/e;)V
 
     return-void
 .end method
@@ -27,26 +29,26 @@
 
 # virtual methods
 .method public final a(Landroid/content/SharedPreferences;)Ljava/lang/Object;
-    .locals 2
+    .locals 3
 
     .line 1
-    iget-object v0, p0, Lk3/h;->b:Ljava/lang/String;
+    iget-object v0, p0, Lk3/f;->b:Ljava/lang/String;
 
     .line 2
-    iget-object v1, p0, Lk3/h;->c:Ljava/lang/Object;
+    iget-object v1, p0, Lk3/f;->c:Ljava/lang/Object;
 
     .line 3
-    check-cast v1, Ljava/lang/Boolean;
+    check-cast v1, Ljava/lang/Long;
 
-    invoke-virtual {v1}, Ljava/lang/Boolean;->booleanValue()Z
+    invoke-virtual {v1}, Ljava/lang/Long;->longValue()J
 
-    move-result v1
+    move-result-wide v1
 
-    invoke-interface {p1, v0, v1}, Landroid/content/SharedPreferences;->getBoolean(Ljava/lang/String;Z)Z
+    invoke-interface {p1, v0, v1, v2}, Landroid/content/SharedPreferences;->getLong(Ljava/lang/String;J)J
 
-    move-result p1
+    move-result-wide v0
 
-    invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+    invoke-static {v0, v1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     move-result-object p1
 
@@ -57,7 +59,7 @@
     .locals 3
 
     .line 1
-    iget-object v0, p0, Lk3/h;->b:Ljava/lang/String;
+    iget-object v0, p0, Lk3/f;->b:Ljava/lang/String;
 
     .line 2
     invoke-static {v0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
@@ -91,7 +93,7 @@
     if-eqz v0, :cond_2
 
     .line 3
-    iget-object v0, p0, Lk3/h;->b:Ljava/lang/String;
+    iget-object v0, p0, Lk3/f;->b:Ljava/lang/String;
 
     .line 4
     invoke-static {v0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
@@ -116,11 +118,11 @@
     invoke-direct {v0, v2}, Ljava/lang/String;-><init>(Ljava/lang/String;)V
 
     :goto_1
-    invoke-virtual {p1, v0}, Landroid/os/Bundle;->getBoolean(Ljava/lang/String;)Z
+    invoke-virtual {p1, v0}, Landroid/os/Bundle;->getLong(Ljava/lang/String;)J
 
-    move-result p1
+    move-result-wide v0
 
-    invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+    invoke-static {v0, v1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     move-result-object p1
 
@@ -128,54 +130,54 @@
 
     .line 5
     :cond_2
-    iget-object p1, p0, Lk3/h;->c:Ljava/lang/Object;
+    iget-object p1, p0, Lk3/f;->c:Ljava/lang/Object;
 
     .line 6
-    check-cast p1, Ljava/lang/Boolean;
+    check-cast p1, Ljava/lang/Long;
 
     return-object p1
 .end method
 
 .method public final g(Landroid/content/SharedPreferences$Editor;Ljava/lang/Object;)V
-    .locals 1
+    .locals 3
 
     .line 1
-    check-cast p2, Ljava/lang/Boolean;
+    check-cast p2, Ljava/lang/Long;
 
     .line 2
-    iget-object v0, p0, Lk3/h;->b:Ljava/lang/String;
+    iget-object v0, p0, Lk3/f;->b:Ljava/lang/String;
 
     .line 3
-    invoke-virtual {p2}, Ljava/lang/Boolean;->booleanValue()Z
+    invoke-virtual {p2}, Ljava/lang/Long;->longValue()J
 
-    move-result p2
+    move-result-wide v1
 
-    invoke-interface {p1, v0, p2}, Landroid/content/SharedPreferences$Editor;->putBoolean(Ljava/lang/String;Z)Landroid/content/SharedPreferences$Editor;
+    invoke-interface {p1, v0, v1, v2}, Landroid/content/SharedPreferences$Editor;->putLong(Ljava/lang/String;J)Landroid/content/SharedPreferences$Editor;
 
     return-void
 .end method
 
 .method public final h(Lorg/json/JSONObject;)Ljava/lang/Object;
-    .locals 2
+    .locals 3
 
     .line 1
-    iget-object v0, p0, Lk3/h;->b:Ljava/lang/String;
+    iget-object v0, p0, Lk3/f;->b:Ljava/lang/String;
 
     .line 2
-    iget-object v1, p0, Lk3/h;->c:Ljava/lang/Object;
+    iget-object v1, p0, Lk3/f;->c:Ljava/lang/Object;
 
     .line 3
-    check-cast v1, Ljava/lang/Boolean;
+    check-cast v1, Ljava/lang/Long;
 
-    invoke-virtual {v1}, Ljava/lang/Boolean;->booleanValue()Z
+    invoke-virtual {v1}, Ljava/lang/Long;->longValue()J
 
-    move-result v1
+    move-result-wide v1
 
-    invoke-virtual {p1, v0, v1}, Lorg/json/JSONObject;->optBoolean(Ljava/lang/String;Z)Z
+    invoke-virtual {p1, v0, v1, v2}, Lorg/json/JSONObject;->optLong(Ljava/lang/String;J)J
 
-    move-result p1
+    move-result-wide v0
 
-    invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
+    invoke-static {v0, v1}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
 
     move-result-object p1
 

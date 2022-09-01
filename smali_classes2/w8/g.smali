@@ -88,7 +88,7 @@
     iget-object v3, p0, Lw8/g;->e:Li7/c;
 
     .line 6
-    iget-object v3, v3, Li7/c;->f:Ljava/lang/Long;
+    iget-object v3, v3, Li7/c;->g:Ljava/lang/Long;
 
     .line 7
     invoke-virtual {v3}, Ljava/lang/Long;->longValue()J
@@ -106,7 +106,7 @@
     check-cast v0, Ljava/util/List;
 
     .line 10
-    invoke-static {v0}, Lbc/a;->d(Ljava/util/List;)Z
+    invoke-static {v0}, Lt5/a;->g(Ljava/util/List;)Z
 
     move-result v3
 
@@ -133,7 +133,7 @@
     check-cast v6, Lq8/d;
 
     .line 12
-    iget-object v7, v6, Lq8/d;->g:Ljava/lang/Long;
+    iget-object v7, v6, Lq8/d;->h:Ljava/lang/Long;
 
     iget-object v8, p0, Lw8/g;->f:Ljava/lang/Long;
 
@@ -144,7 +144,7 @@
     if-eqz v7, :cond_2
 
     .line 13
-    iget-wide v3, v6, Lq8/d;->E:J
+    iget-wide v3, v6, Lq8/d;->F:J
 
     .line 14
     :cond_3
@@ -166,7 +166,7 @@
     check-cast v5, Lq8/d;
 
     .line 15
-    iget-object v6, v5, Lq8/d;->g:Ljava/lang/Long;
+    iget-object v6, v5, Lq8/d;->h:Ljava/lang/Long;
 
     iget-object v7, p0, Lw8/g;->f:Ljava/lang/Long;
 
@@ -177,7 +177,7 @@
     if-nez v6, :cond_4
 
     .line 16
-    iget-wide v5, v5, Lq8/d;->E:J
+    iget-wide v5, v5, Lq8/d;->F:J
 
     cmp-long v7, v3, v5
 

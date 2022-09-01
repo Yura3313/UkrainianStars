@@ -16,7 +16,7 @@
 
 
 # instance fields
-.field public final f:Ljava/util/HashSet;
+.field public final g:Ljava/util/HashSet;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Set<",
@@ -41,7 +41,7 @@
 
     invoke-direct {p1, v0}, Ljava/util/HashSet;-><init>(I)V
 
-    iput-object p1, p0, Lcom/supercell/titan/GL2JNISurfaceView;->f:Ljava/util/HashSet;
+    iput-object p1, p0, Lcom/supercell/titan/GL2JNISurfaceView;->g:Ljava/util/HashSet;
 
     .line 3
     sget p1, Lcom/supercell/titan/R$id;->stage:I
@@ -61,7 +61,7 @@
     if-ge p1, v0, :cond_0
 
     .line 5
-    iget-object v1, p0, Lcom/supercell/titan/GL2JNISurfaceView;->f:Ljava/util/HashSet;
+    iget-object v1, p0, Lcom/supercell/titan/GL2JNISurfaceView;->g:Ljava/util/HashSet;
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 

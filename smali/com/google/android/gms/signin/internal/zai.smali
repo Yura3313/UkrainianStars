@@ -19,7 +19,7 @@
 
 
 # instance fields
-.field public final f:Ljava/util/List;
+.field public final g:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
@@ -29,7 +29,7 @@
     .end annotation
 .end field
 
-.field public final g:Ljava/lang/String;
+.field public final h:Ljava/lang/String;
 
 
 # direct methods
@@ -62,10 +62,10 @@
     invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lcom/google/android/gms/signin/internal/zai;->f:Ljava/util/List;
+    iput-object p1, p0, Lcom/google/android/gms/signin/internal/zai;->g:Ljava/util/List;
 
     .line 3
-    iput-object p2, p0, Lcom/google/android/gms/signin/internal/zai;->g:Ljava/lang/String;
+    iput-object p2, p0, Lcom/google/android/gms/signin/internal/zai;->h:Ljava/lang/String;
 
     return-void
 .end method
@@ -76,18 +76,18 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/gms/signin/internal/zai;->g:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/android/gms/signin/internal/zai;->h:Ljava/lang/String;
 
     if-eqz v0, :cond_0
 
     .line 2
-    sget-object v0, Lcom/google/android/gms/common/api/Status;->k:Lcom/google/android/gms/common/api/Status;
+    sget-object v0, Lcom/google/android/gms/common/api/Status;->l:Lcom/google/android/gms/common/api/Status;
 
     return-object v0
 
     .line 3
     :cond_0
-    sget-object v0, Lcom/google/android/gms/common/api/Status;->o:Lcom/google/android/gms/common/api/Status;
+    sget-object v0, Lcom/google/android/gms/common/api/Status;->p:Lcom/google/android/gms/common/api/Status;
 
     return-object v0
 .end method
@@ -103,7 +103,7 @@
     move-result p2
 
     .line 2
-    iget-object v0, p0, Lcom/google/android/gms/signin/internal/zai;->f:Ljava/util/List;
+    iget-object v0, p0, Lcom/google/android/gms/signin/internal/zai;->g:Ljava/util/List;
 
     const/4 v1, 0x1
 
@@ -111,7 +111,7 @@
     invoke-static {p1, v1, v0}, Le2/b;->o(Landroid/os/Parcel;ILjava/util/List;)V
 
     .line 4
-    iget-object v0, p0, Lcom/google/android/gms/signin/internal/zai;->g:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/android/gms/signin/internal/zai;->h:Ljava/lang/String;
 
     const/4 v1, 0x2
 

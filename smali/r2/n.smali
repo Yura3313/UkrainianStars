@@ -28,7 +28,7 @@
     .locals 2
 
     .line 1
-    iget-object v0, p1, Lcom/google/android/gms/common/data/DataHolder;->k:Landroid/os/Bundle;
+    iget-object v0, p1, Lcom/google/android/gms/common/data/DataHolder;->l:Landroid/os/Bundle;
 
     if-nez v0, :cond_0
 

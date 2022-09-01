@@ -135,7 +135,7 @@
     if-eqz p1, :cond_1
 
     .line 6
-    sget-object v1, Le6/d;->h:Le6/d;
+    sget-object v1, Le6/d;->i:Le6/d;
 
     invoke-virtual {v0, v1, p1}, Ljava/util/EnumMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -146,7 +146,7 @@
     if-eqz p1, :cond_2
 
     .line 8
-    sget-object v1, Le6/d;->j:Le6/d;
+    sget-object v1, Le6/d;->k:Le6/d;
 
     invoke-virtual {v0, v1, p1}, Ljava/util/EnumMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 

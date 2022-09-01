@@ -1,126 +1,162 @@
 .class public final Lae/h1;
-.super Lse/h;
+.super Lse/i;
 .source "ProfileUtil.kt"
 
 # interfaces
-.implements Lre/p;
+.implements Lre/l;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
-        "Lre/p<",
-        "Landroid/graphics/drawable/Drawable;",
-        "Lud/g;",
-        "Lie/h;",
+        "Lse/i;",
+        "Lre/l<",
+        "Lae/i;",
+        "Lie/i;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic f:Lae/i1;
+.field public final synthetic g:Ljava/lang/String;
+
+.field public final synthetic h:Lre/r;
 
 
 # direct methods
-.method public constructor <init>(Lae/i1;)V
+.method public constructor <init>(Ljava/lang/String;Lre/r;)V
     .locals 0
 
-    iput-object p1, p0, Lae/h1;->f:Lae/i1;
+    iput-object p1, p0, Lae/h1;->g:Ljava/lang/String;
 
-    const/4 p1, 0x2
+    iput-object p2, p0, Lae/h1;->h:Lre/r;
 
-    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
+    const/4 p1, 0x1
+
+    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 3
+.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 4
 
     .line 1
-    check-cast p1, Landroid/graphics/drawable/Drawable;
+    check-cast p1, Lae/i;
 
-    check-cast p2, Lud/g;
-
-    const-string v0, "drawable"
+    const-string v0, "conf"
 
     .line 2
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
-
-    const-string v0, "<anonymous parameter 1>"
-
-    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 3
-    instance-of p2, p1, Landroid/graphics/drawable/BitmapDrawable;
+    iget-object v0, p0, Lae/h1;->g:Ljava/lang/String;
 
-    const/4 v0, 0x0
+    const/4 v1, 0x0
 
-    if-nez p2, :cond_0
+    if-eqz v0, :cond_0
 
-    move-object p1, v0
+    sget-object v2, Lae/e;->e:Lae/e$a;
 
-    :cond_0
-    check-cast p1, Landroid/graphics/drawable/BitmapDrawable;
+    invoke-virtual {v2, v0}, Lae/e$a;->a(Ljava/lang/String;)Lae/e;
 
-    if-eqz p1, :cond_1
-
-    .line 4
-    invoke-virtual {p1}, Landroid/graphics/drawable/BitmapDrawable;->getBitmap()Landroid/graphics/Bitmap;
-
-    move-result-object p1
-
-    const-string p2, "it.bitmap"
-
-    invoke-static {p1, p2}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
-
-    sget-object p2, Lae/e;->e:Lae/e$a;
-
-    .line 5
-    sget-object p2, Lae/e;->c:Lae/d;
-
-    sget-object p2, Lae/e;->c:Lae/d;
-
-    .line 6
-    iget-object p2, p0, Lae/h1;->f:Lae/i1;
-
-    iget-object p2, p2, Lae/i1;->g:Lre/r;
-
-    const v0, -0x161617
-
-    invoke-static {p1, v0, v0, p2}, Lae/l;->d(Landroid/graphics/Bitmap;IILre/r;)V
+    move-result-object v0
 
     goto :goto_0
 
-    .line 7
-    :cond_1
-    iget-object p1, p0, Lae/h1;->f:Lae/i1;
+    :cond_0
+    move-object v0, v1
 
-    iget-object p1, p1, Lae/i1;->g:Lre/r;
+    :goto_0
+    if-eqz v0, :cond_2
 
-    const/4 p2, 0x0
+    .line 4
+    iget-object v2, v0, Lae/e;->a:Ljava/lang/String;
 
-    invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    if-eqz v2, :cond_2
+
+    const/16 v3, 0x12
+
+    .line 5
+    invoke-virtual {p1, v3}, Lae/i;->d(I)Ljava/util/List;
+
+    move-result-object p1
+
+    if-eqz p1, :cond_1
+
+    invoke-interface {p1, v2}, Ljava/util/List;->indexOf(Ljava/lang/Object;)I
+
+    move-result p1
+
+    invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1
 
-    invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    :cond_1
+    if-eqz v1, :cond_2
 
-    move-result-object v2
+    .line 6
+    invoke-virtual {v1}, Ljava/lang/Integer;->intValue()I
 
-    invoke-static {p2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    move-result p1
 
-    move-result-object p2
+    goto :goto_1
 
-    invoke-interface {p1, v0, v1, v2, p2}, Lre/r;->i(Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
+    :cond_2
+    const/4 p1, -0x1
+
+    :goto_1
+    if-eqz v0, :cond_3
+
+    if-ltz p1, :cond_3
+
+    .line 7
+    sget-object v1, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
+
+    invoke-virtual {v1}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lae/u;
+
+    move-result-object v1
 
     .line 8
-    :goto_0
-    sget-object p1, Lie/h;->a:Lie/h;
+    iget-object v1, v1, Lae/u;->s:Lud/i;
+
+    .line 9
+    new-instance v2, Lae/f1;
+
+    invoke-direct {v2, p0, p1, v0}, Lae/f1;-><init>(Lae/h1;ILae/e;)V
+
+    const-string p1, "portraits.png"
+
+    invoke-virtual {v1, p1, v2}, Lud/i;->b(Ljava/lang/String;Lre/p;)V
+
+    goto :goto_2
+
+    .line 10
+    :cond_3
+    sget-object p1, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
+
+    invoke-virtual {p1}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lae/u;
+
+    move-result-object p1
+
+    .line 11
+    iget-object p1, p1, Lae/u;->s:Lud/i;
+
+    .line 12
+    new-instance v0, Lae/g1;
+
+    invoke-direct {v0, p0}, Lae/g1;-><init>(Lae/h1;)V
+
+    const-string v1, "unknown_user.png"
+
+    invoke-virtual {p1, v1, v0}, Lud/i;->b(Ljava/lang/String;Lre/p;)V
+
+    .line 13
+    :goto_2
+    sget-object p1, Lie/i;->a:Lie/i;
 
     return-object p1
 .end method

@@ -17,35 +17,35 @@
 
 
 # static fields
-.field public static final v:Ljava/util/regex/Pattern;
+.field public static final w:Ljava/util/regex/Pattern;
 
-.field public static final w:Lac/a$b;
+.field public static final x:Lac/a$b;
 
 
 # instance fields
-.field public final f:Ljava/io/File;
-
 .field public final g:Ljava/io/File;
 
 .field public final h:Ljava/io/File;
 
 .field public final i:Ljava/io/File;
 
-.field public final j:I
+.field public final j:Ljava/io/File;
 
-.field public k:J
+.field public final k:I
 
-.field public l:I
+.field public l:J
 
-.field public final m:I
+.field public m:I
 
-.field public n:J
+.field public final n:I
 
-.field public o:I
+.field public o:J
 
-.field public p:Ljava/io/BufferedWriter;
+.field public p:I
 
-.field public final q:Ljava/util/LinkedHashMap;
+.field public q:Ljava/io/BufferedWriter;
+
+.field public final r:Ljava/util/LinkedHashMap;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/LinkedHashMap<",
@@ -56,13 +56,13 @@
     .end annotation
 .end field
 
-.field public r:I
+.field public s:I
 
-.field public s:J
+.field public t:J
 
-.field public final t:Ljava/util/concurrent/ThreadPoolExecutor;
+.field public final u:Ljava/util/concurrent/ThreadPoolExecutor;
 
-.field public final u:Lac/a$a;
+.field public final v:Lac/a$a;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/concurrent/Callable<",
@@ -84,14 +84,14 @@
 
     move-result-object v0
 
-    sput-object v0, Lac/a;->v:Ljava/util/regex/Pattern;
+    sput-object v0, Lac/a;->w:Ljava/util/regex/Pattern;
 
     .line 2
     new-instance v0, Lac/a$b;
 
     invoke-direct {v0}, Lac/a$b;-><init>()V
 
-    sput-object v0, Lac/a;->w:Lac/a$b;
+    sput-object v0, Lac/a;->x:Lac/a$b;
 
     return-void
 .end method
@@ -109,12 +109,12 @@
     const-wide/16 v2, 0x0
 
     .line 2
-    iput-wide v2, v0, Lac/a;->n:J
+    iput-wide v2, v0, Lac/a;->o:J
 
     const/4 v4, 0x0
 
     .line 3
-    iput v4, v0, Lac/a;->o:I
+    iput v4, v0, Lac/a;->p:I
 
     .line 4
     new-instance v5, Ljava/util/LinkedHashMap;
@@ -125,10 +125,10 @@
 
     invoke-direct {v5, v4, v6, v7}, Ljava/util/LinkedHashMap;-><init>(IFZ)V
 
-    iput-object v5, v0, Lac/a;->q:Ljava/util/LinkedHashMap;
+    iput-object v5, v0, Lac/a;->r:Ljava/util/LinkedHashMap;
 
     .line 5
-    iput-wide v2, v0, Lac/a;->s:J
+    iput-wide v2, v0, Lac/a;->t:J
 
     .line 6
     new-instance v2, Ljava/util/concurrent/ThreadPoolExecutor;
@@ -149,20 +149,20 @@
 
     invoke-direct/range {v8 .. v14}, Ljava/util/concurrent/ThreadPoolExecutor;-><init>(IIJLjava/util/concurrent/TimeUnit;Ljava/util/concurrent/BlockingQueue;)V
 
-    iput-object v2, v0, Lac/a;->t:Ljava/util/concurrent/ThreadPoolExecutor;
+    iput-object v2, v0, Lac/a;->u:Ljava/util/concurrent/ThreadPoolExecutor;
 
     .line 7
     new-instance v2, Lac/a$a;
 
     invoke-direct {v2, p0}, Lac/a$a;-><init>(Lac/a;)V
 
-    iput-object v2, v0, Lac/a;->u:Lac/a$a;
+    iput-object v2, v0, Lac/a;->v:Lac/a$a;
 
     .line 8
-    iput-object v1, v0, Lac/a;->f:Ljava/io/File;
+    iput-object v1, v0, Lac/a;->g:Ljava/io/File;
 
     .line 9
-    iput v7, v0, Lac/a;->j:I
+    iput v7, v0, Lac/a;->k:I
 
     .line 10
     new-instance v2, Ljava/io/File;
@@ -171,7 +171,7 @@
 
     invoke-direct {v2, v1, v3}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
 
-    iput-object v2, v0, Lac/a;->g:Ljava/io/File;
+    iput-object v2, v0, Lac/a;->h:Ljava/io/File;
 
     .line 11
     new-instance v2, Ljava/io/File;
@@ -180,7 +180,7 @@
 
     invoke-direct {v2, v1, v3}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
 
-    iput-object v2, v0, Lac/a;->h:Ljava/io/File;
+    iput-object v2, v0, Lac/a;->i:Ljava/io/File;
 
     .line 12
     new-instance v2, Ljava/io/File;
@@ -189,20 +189,20 @@
 
     invoke-direct {v2, v1, v3}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
 
-    iput-object v2, v0, Lac/a;->i:Ljava/io/File;
+    iput-object v2, v0, Lac/a;->j:Ljava/io/File;
 
     .line 13
-    iput v7, v0, Lac/a;->m:I
+    iput v7, v0, Lac/a;->n:I
 
     move-wide/from16 v1, p2
 
     .line 14
-    iput-wide v1, v0, Lac/a;->k:J
+    iput-wide v1, v0, Lac/a;->l:J
 
     move/from16 v1, p4
 
     .line 15
-    iput v1, v0, Lac/a;->l:I
+    iput v1, v0, Lac/a;->m:I
 
     return-void
 .end method
@@ -240,7 +240,7 @@
 
     .line 5
     :goto_0
-    iget v3, p0, Lac/a;->m:I
+    iget v3, p0, Lac/a;->n:I
 
     if-ge v2, v3, :cond_2
 
@@ -307,7 +307,7 @@
     .line 13
     :cond_2
     :goto_1
-    iget p1, p0, Lac/a;->m:I
+    iget p1, p0, Lac/a;->n:I
 
     const/4 v2, 0x1
 
@@ -353,20 +353,20 @@
     aput-wide v6, p1, v1
 
     .line 23
-    iget-wide v8, p0, Lac/a;->n:J
+    iget-wide v8, p0, Lac/a;->o:J
 
     sub-long/2addr v8, v4
 
     add-long/2addr v8, v6
 
-    iput-wide v8, p0, Lac/a;->n:J
+    iput-wide v8, p0, Lac/a;->o:J
 
     .line 24
-    iget p1, p0, Lac/a;->o:I
+    iget p1, p0, Lac/a;->p:I
 
     add-int/2addr p1, v2
 
-    iput p1, p0, Lac/a;->o:I
+    iput p1, p0, Lac/a;->p:I
 
     goto :goto_2
 
@@ -382,11 +382,11 @@
 
     .line 26
     :cond_5
-    iget p1, p0, Lac/a;->r:I
+    iget p1, p0, Lac/a;->s:I
 
     add-int/2addr p1, v2
 
-    iput p1, p0, Lac/a;->r:I
+    iput p1, p0, Lac/a;->s:I
 
     const/4 p1, 0x0
 
@@ -406,7 +406,7 @@
     iput-boolean v2, v0, Lac/a$d;->c:Z
 
     .line 30
-    iget-object p1, p0, Lac/a;->p:Ljava/io/BufferedWriter;
+    iget-object p1, p0, Lac/a;->q:Ljava/io/BufferedWriter;
 
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -439,13 +439,13 @@
     if-eqz p2, :cond_7
 
     .line 33
-    iget-wide p1, p0, Lac/a;->s:J
+    iget-wide p1, p0, Lac/a;->t:J
 
     const-wide/16 v1, 0x1
 
     add-long/2addr v1, p1
 
-    iput-wide v1, p0, Lac/a;->s:J
+    iput-wide v1, p0, Lac/a;->t:J
 
     .line 34
     iput-wide p1, v0, Lac/a$d;->e:J
@@ -454,7 +454,7 @@
 
     .line 35
     :cond_6
-    iget-object p1, p0, Lac/a;->q:Ljava/util/LinkedHashMap;
+    iget-object p1, p0, Lac/a;->r:Ljava/util/LinkedHashMap;
 
     .line 36
     iget-object p2, v0, Lac/a$d;->a:Ljava/lang/String;
@@ -463,7 +463,7 @@
     invoke-virtual {p1, p2}, Ljava/util/AbstractMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 38
-    iget-object p1, p0, Lac/a;->p:Ljava/io/BufferedWriter;
+    iget-object p1, p0, Lac/a;->q:Ljava/io/BufferedWriter;
 
     new-instance p2, Ljava/lang/StringBuilder;
 
@@ -490,22 +490,22 @@
     .line 41
     :cond_7
     :goto_3
-    iget-object p1, p0, Lac/a;->p:Ljava/io/BufferedWriter;
+    iget-object p1, p0, Lac/a;->q:Ljava/io/BufferedWriter;
 
     invoke-virtual {p1}, Ljava/io/Writer;->flush()V
 
     .line 42
-    iget-wide p1, p0, Lac/a;->n:J
+    iget-wide p1, p0, Lac/a;->o:J
 
-    iget-wide v0, p0, Lac/a;->k:J
+    iget-wide v0, p0, Lac/a;->l:J
 
     cmp-long v2, p1, v0
 
     if-gtz v2, :cond_8
 
-    iget p1, p0, Lac/a;->o:I
+    iget p1, p0, Lac/a;->p:I
 
-    iget p2, p0, Lac/a;->l:I
+    iget p2, p0, Lac/a;->m:I
 
     if-gt p1, p2, :cond_8
 
@@ -517,9 +517,9 @@
 
     .line 43
     :cond_8
-    iget-object p1, p0, Lac/a;->t:Ljava/util/concurrent/ThreadPoolExecutor;
+    iget-object p1, p0, Lac/a;->u:Ljava/util/concurrent/ThreadPoolExecutor;
 
-    iget-object p2, p0, Lac/a;->u:Lac/a$a;
+    iget-object p2, p0, Lac/a;->v:Lac/a$a;
 
     invoke-virtual {p1, p2}, Ljava/util/concurrent/AbstractExecutorService;->submit(Ljava/util/concurrent/Callable;)Ljava/util/concurrent/Future;
     :try_end_1
@@ -656,7 +656,7 @@
     invoke-direct {v0, p0, p1, p2, p3}, Lac/a;-><init>(Ljava/io/File;JI)V
 
     .line 8
-    iget-object v1, v0, Lac/a;->g:Ljava/io/File;
+    iget-object v1, v0, Lac/a;->h:Ljava/io/File;
 
     invoke-virtual {v1}, Ljava/io/File;->exists()Z
 
@@ -678,7 +678,7 @@
 
     new-instance v3, Ljava/io/FileOutputStream;
 
-    iget-object v4, v0, Lac/a;->g:Ljava/io/File;
+    iget-object v4, v0, Lac/a;->h:Ljava/io/File;
 
     const/4 v5, 0x1
 
@@ -694,7 +694,7 @@
 
     invoke-direct {v1, v2}, Ljava/io/BufferedWriter;-><init>(Ljava/io/Writer;)V
 
-    iput-object v1, v0, Lac/a;->p:Ljava/io/BufferedWriter;
+    iput-object v1, v0, Lac/a;->q:Ljava/io/BufferedWriter;
     :try_end_0
     .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -740,7 +740,7 @@
     invoke-virtual {v0}, Lac/a;->close()V
 
     .line 14
-    iget-object v0, v0, Lac/a;->f:Ljava/io/File;
+    iget-object v0, v0, Lac/a;->g:Ljava/io/File;
 
     invoke-static {v0}, Lac/d;->b(Ljava/io/File;)V
 
@@ -817,7 +817,7 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lac/a;->p:Ljava/io/BufferedWriter;
+    iget-object v0, p0, Lac/a;->q:Ljava/io/BufferedWriter;
 
     if-eqz v0, :cond_0
 
@@ -846,7 +846,7 @@
 
     .line 1
     :try_start_0
-    iget-object v0, p0, Lac/a;->p:Ljava/io/BufferedWriter;
+    iget-object v0, p0, Lac/a;->q:Ljava/io/BufferedWriter;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -862,7 +862,7 @@
     :try_start_1
     new-instance v0, Ljava/util/ArrayList;
 
-    iget-object v1, p0, Lac/a;->q:Ljava/util/LinkedHashMap;
+    iget-object v1, p0, Lac/a;->r:Ljava/util/LinkedHashMap;
 
     invoke-virtual {v1}, Ljava/util/LinkedHashMap;->values()Ljava/util/Collection;
 
@@ -906,14 +906,14 @@
     invoke-virtual {p0}, Lac/a;->n()V
 
     .line 8
-    iget-object v0, p0, Lac/a;->p:Ljava/io/BufferedWriter;
+    iget-object v0, p0, Lac/a;->q:Ljava/io/BufferedWriter;
 
     invoke-virtual {v0}, Ljava/io/Writer;->close()V
 
     const/4 v0, 0x0
 
     .line 9
-    iput-object v0, p0, Lac/a;->p:Ljava/io/BufferedWriter;
+    iput-object v0, p0, Lac/a;->q:Ljava/io/BufferedWriter;
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
@@ -955,7 +955,7 @@
     invoke-virtual {p0, p1}, Lac/a;->p(Ljava/lang/String;)V
 
     .line 4
-    iget-object v0, p0, Lac/a;->q:Ljava/util/LinkedHashMap;
+    iget-object v0, p0, Lac/a;->r:Ljava/util/LinkedHashMap;
 
     invoke-virtual {v0, p1}, Ljava/util/LinkedHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -973,7 +973,7 @@
     invoke-direct {v0, p0, p1}, Lac/a$d;-><init>(Lac/a;Ljava/lang/String;)V
 
     .line 6
-    iget-object v1, p0, Lac/a;->q:Ljava/util/LinkedHashMap;
+    iget-object v1, p0, Lac/a;->r:Ljava/util/LinkedHashMap;
 
     invoke-virtual {v1, p1, v0}, Ljava/util/AbstractMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -1004,7 +1004,7 @@
     iput-object v1, v0, Lac/a$d;->d:Lac/a$c;
 
     .line 11
-    iget-object v0, p0, Lac/a;->p:Ljava/io/BufferedWriter;
+    iget-object v0, p0, Lac/a;->q:Ljava/io/BufferedWriter;
 
     new-instance v2, Ljava/lang/StringBuilder;
 
@@ -1027,7 +1027,7 @@
     invoke-virtual {v0, p1}, Ljava/io/Writer;->write(Ljava/lang/String;)V
 
     .line 12
-    iget-object p1, p0, Lac/a;->p:Ljava/io/BufferedWriter;
+    iget-object p1, p0, Lac/a;->q:Ljava/io/BufferedWriter;
 
     invoke-virtual {p1}, Ljava/io/Writer;->flush()V
     :try_end_1
@@ -1065,7 +1065,7 @@
     invoke-virtual {p0, p1}, Lac/a;->p(Ljava/lang/String;)V
 
     .line 3
-    iget-object v0, p0, Lac/a;->q:Ljava/util/LinkedHashMap;
+    iget-object v0, p0, Lac/a;->r:Ljava/util/LinkedHashMap;
 
     invoke-virtual {v0, p1}, Ljava/util/LinkedHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -1101,7 +1101,7 @@
     .line 7
     :cond_1
     :try_start_2
-    iget v2, p0, Lac/a;->m:I
+    iget v2, p0, Lac/a;->n:I
 
     new-array v3, v2, [Ljava/io/File;
 
@@ -1117,7 +1117,7 @@
     .line 9
     :goto_0
     :try_start_3
-    iget v6, p0, Lac/a;->m:I
+    iget v6, p0, Lac/a;->n:I
 
     if-ge v5, v6, :cond_2
 
@@ -1150,14 +1150,14 @@
     .line 13
     :cond_2
     :try_start_4
-    iget v0, p0, Lac/a;->r:I
+    iget v0, p0, Lac/a;->s:I
 
     add-int/lit8 v0, v0, 0x1
 
-    iput v0, p0, Lac/a;->r:I
+    iput v0, p0, Lac/a;->s:I
 
     .line 14
-    iget-object v0, p0, Lac/a;->p:Ljava/io/BufferedWriter;
+    iget-object v0, p0, Lac/a;->q:Ljava/io/BufferedWriter;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -1187,9 +1187,9 @@
     if-eqz p1, :cond_3
 
     .line 16
-    iget-object p1, p0, Lac/a;->t:Ljava/util/concurrent/ThreadPoolExecutor;
+    iget-object p1, p0, Lac/a;->u:Ljava/util/concurrent/ThreadPoolExecutor;
 
-    iget-object v0, p0, Lac/a;->u:Lac/a$a;
+    iget-object v0, p0, Lac/a;->v:Lac/a$a;
 
     invoke-virtual {p1, v0}, Ljava/util/concurrent/AbstractExecutorService;->submit(Ljava/util/concurrent/Callable;)Ljava/util/concurrent/Future;
 
@@ -1209,7 +1209,7 @@
     :catch_0
     :goto_1
     :try_start_5
-    iget p1, p0, Lac/a;->m:I
+    iget p1, p0, Lac/a;->n:I
 
     if-ge v4, p1, :cond_4
 
@@ -1252,13 +1252,13 @@
 .method public final f()Z
     .locals 2
 
-    iget v0, p0, Lac/a;->r:I
+    iget v0, p0, Lac/a;->s:I
 
     const/16 v1, 0x7d0
 
     if-lt v0, v1, :cond_0
 
-    iget-object v1, p0, Lac/a;->q:Ljava/util/LinkedHashMap;
+    iget-object v1, p0, Lac/a;->r:Ljava/util/LinkedHashMap;
 
     invoke-virtual {v1}, Ljava/util/AbstractMap;->size()I
 
@@ -1286,12 +1286,12 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lac/a;->h:Ljava/io/File;
+    iget-object v0, p0, Lac/a;->i:Ljava/io/File;
 
     invoke-static {v0}, Lac/a;->c(Ljava/io/File;)V
 
     .line 2
-    iget-object v0, p0, Lac/a;->q:Ljava/util/LinkedHashMap;
+    iget-object v0, p0, Lac/a;->r:Ljava/util/LinkedHashMap;
 
     invoke-virtual {v0}, Ljava/util/LinkedHashMap;->values()Ljava/util/Collection;
 
@@ -1325,12 +1325,12 @@
 
     .line 5
     :goto_1
-    iget v2, p0, Lac/a;->m:I
+    iget v2, p0, Lac/a;->n:I
 
     if-ge v3, v2, :cond_0
 
     .line 6
-    iget-wide v4, p0, Lac/a;->n:J
+    iget-wide v4, p0, Lac/a;->o:J
 
     .line 7
     iget-object v2, v1, Lac/a$d;->b:[J
@@ -1340,14 +1340,14 @@
 
     add-long/2addr v4, v6
 
-    iput-wide v4, p0, Lac/a;->n:J
+    iput-wide v4, p0, Lac/a;->o:J
 
     .line 9
-    iget v2, p0, Lac/a;->o:I
+    iget v2, p0, Lac/a;->p:I
 
     add-int/lit8 v2, v2, 0x1
 
-    iput v2, p0, Lac/a;->o:I
+    iput v2, p0, Lac/a;->p:I
 
     add-int/lit8 v3, v3, 0x1
 
@@ -1361,7 +1361,7 @@
 
     .line 11
     :goto_2
-    iget v2, p0, Lac/a;->m:I
+    iget v2, p0, Lac/a;->n:I
 
     if-ge v3, v2, :cond_2
 
@@ -1408,7 +1408,7 @@
 
     new-instance v2, Ljava/io/FileInputStream;
 
-    iget-object v3, p0, Lac/a;->g:Ljava/io/File;
+    iget-object v3, p0, Lac/a;->h:Ljava/io/File;
 
     invoke-direct {v2, v3}, Ljava/io/FileInputStream;-><init>(Ljava/io/File;)V
 
@@ -1463,7 +1463,7 @@
 
     if-eqz v7, :cond_0
 
-    iget v7, p0, Lac/a;->j:I
+    iget v7, p0, Lac/a;->k:I
 
     invoke-static {v7}, Ljava/lang/Integer;->toString(I)Ljava/lang/String;
 
@@ -1475,7 +1475,7 @@
 
     if-eqz v4, :cond_0
 
-    iget v4, p0, Lac/a;->m:I
+    iget v4, p0, Lac/a;->n:I
 
     invoke-static {v4}, Ljava/lang/Integer;->toString(I)Ljava/lang/String;
 
@@ -1518,7 +1518,7 @@
     .line 9
     :catch_0
     :try_start_2
-    iget-object v2, p0, Lac/a;->q:Ljava/util/LinkedHashMap;
+    iget-object v2, p0, Lac/a;->r:Ljava/util/LinkedHashMap;
 
     invoke-virtual {v2}, Ljava/util/AbstractMap;->size()I
 
@@ -1526,7 +1526,7 @@
 
     sub-int/2addr v0, v2
 
-    iput v0, p0, Lac/a;->r:I
+    iput v0, p0, Lac/a;->s:I
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
@@ -1640,7 +1640,7 @@
     if-eqz v5, :cond_1
 
     .line 5
-    iget-object p1, p0, Lac/a;->q:Ljava/util/LinkedHashMap;
+    iget-object p1, p0, Lac/a;->r:Ljava/util/LinkedHashMap;
 
     invoke-virtual {p1, v4}, Ljava/util/AbstractMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -1654,7 +1654,7 @@
 
     .line 7
     :cond_1
-    iget-object v5, p0, Lac/a;->q:Ljava/util/LinkedHashMap;
+    iget-object v5, p0, Lac/a;->r:Ljava/util/LinkedHashMap;
 
     invoke-virtual {v5, v4}, Ljava/util/LinkedHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -1670,7 +1670,7 @@
     invoke-direct {v5, p0, v4}, Lac/a$d;-><init>(Lac/a;Ljava/lang/String;)V
 
     .line 9
-    iget-object v6, p0, Lac/a;->q:Ljava/util/LinkedHashMap;
+    iget-object v6, p0, Lac/a;->r:Ljava/util/LinkedHashMap;
 
     invoke-virtual {v6, v4, v5}, Ljava/util/AbstractMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -1719,7 +1719,7 @@
     iget-object v2, v5, Lac/a$d;->f:Lac/a;
 
     .line 15
-    iget v2, v2, Lac/a;->m:I
+    iget v2, v2, Lac/a;->n:I
 
     if-ne v1, v2, :cond_3
 
@@ -1810,7 +1810,7 @@
     new-instance v0, Ljava/io/IOException;
 
     .line 25
-    invoke-static {v2, p1}, Lcom/google/android/gms/ads/e;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2, p1}, Lf/g;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 
@@ -1824,7 +1824,7 @@
     new-instance v0, Ljava/io/IOException;
 
     .line 28
-    invoke-static {v2, p1}, Lcom/google/android/gms/ads/e;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2, p1}, Lf/g;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 
@@ -1852,7 +1852,7 @@
 
     .line 1
     :try_start_0
-    iget-object v0, p0, Lac/a;->p:Ljava/io/BufferedWriter;
+    iget-object v0, p0, Lac/a;->q:Ljava/io/BufferedWriter;
 
     if-eqz v0, :cond_0
 
@@ -1867,7 +1867,7 @@
 
     new-instance v2, Ljava/io/FileOutputStream;
 
-    iget-object v3, p0, Lac/a;->h:Ljava/io/File;
+    iget-object v3, p0, Lac/a;->i:Ljava/io/File;
 
     invoke-direct {v2, v3}, Ljava/io/FileOutputStream;-><init>(Ljava/io/File;)V
 
@@ -1905,7 +1905,7 @@
     invoke-virtual {v0, v1}, Ljava/io/Writer;->write(Ljava/lang/String;)V
 
     .line 8
-    iget v1, p0, Lac/a;->j:I
+    iget v1, p0, Lac/a;->k:I
 
     invoke-static {v1}, Ljava/lang/Integer;->toString(I)Ljava/lang/String;
 
@@ -1919,7 +1919,7 @@
     invoke-virtual {v0, v1}, Ljava/io/Writer;->write(Ljava/lang/String;)V
 
     .line 10
-    iget v1, p0, Lac/a;->m:I
+    iget v1, p0, Lac/a;->n:I
 
     invoke-static {v1}, Ljava/lang/Integer;->toString(I)Ljava/lang/String;
 
@@ -1938,7 +1938,7 @@
     invoke-virtual {v0, v1}, Ljava/io/Writer;->write(Ljava/lang/String;)V
 
     .line 13
-    iget-object v1, p0, Lac/a;->q:Ljava/util/LinkedHashMap;
+    iget-object v1, p0, Lac/a;->r:Ljava/util/LinkedHashMap;
 
     invoke-virtual {v1}, Ljava/util/LinkedHashMap;->values()Ljava/util/Collection;
 
@@ -2033,7 +2033,7 @@
     invoke-virtual {v0}, Ljava/io/Writer;->close()V
 
     .line 22
-    iget-object v0, p0, Lac/a;->g:Ljava/io/File;
+    iget-object v0, p0, Lac/a;->h:Ljava/io/File;
 
     invoke-virtual {v0}, Ljava/io/File;->exists()Z
 
@@ -2044,24 +2044,24 @@
     if-eqz v0, :cond_3
 
     .line 23
-    iget-object v0, p0, Lac/a;->g:Ljava/io/File;
+    iget-object v0, p0, Lac/a;->h:Ljava/io/File;
 
-    iget-object v2, p0, Lac/a;->i:Ljava/io/File;
+    iget-object v2, p0, Lac/a;->j:Ljava/io/File;
 
     invoke-static {v0, v2, v1}, Lac/a;->m(Ljava/io/File;Ljava/io/File;Z)V
 
     .line 24
     :cond_3
-    iget-object v0, p0, Lac/a;->h:Ljava/io/File;
+    iget-object v0, p0, Lac/a;->i:Ljava/io/File;
 
-    iget-object v2, p0, Lac/a;->g:Ljava/io/File;
+    iget-object v2, p0, Lac/a;->h:Ljava/io/File;
 
     const/4 v3, 0x0
 
     invoke-static {v0, v2, v3}, Lac/a;->m(Ljava/io/File;Ljava/io/File;Z)V
 
     .line 25
-    iget-object v0, p0, Lac/a;->i:Ljava/io/File;
+    iget-object v0, p0, Lac/a;->j:Ljava/io/File;
 
     invoke-virtual {v0}, Ljava/io/File;->delete()Z
 
@@ -2072,7 +2072,7 @@
 
     new-instance v3, Ljava/io/FileOutputStream;
 
-    iget-object v4, p0, Lac/a;->g:Ljava/io/File;
+    iget-object v4, p0, Lac/a;->h:Ljava/io/File;
 
     invoke-direct {v3, v4, v1}, Ljava/io/FileOutputStream;-><init>(Ljava/io/File;Z)V
 
@@ -2086,7 +2086,7 @@
 
     invoke-direct {v0, v2}, Ljava/io/BufferedWriter;-><init>(Ljava/io/Writer;)V
 
-    iput-object v0, p0, Lac/a;->p:Ljava/io/BufferedWriter;
+    iput-object v0, p0, Lac/a;->q:Ljava/io/BufferedWriter;
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_1
 
@@ -2138,7 +2138,7 @@
     invoke-virtual {p0, p1}, Lac/a;->p(Ljava/lang/String;)V
 
     .line 3
-    iget-object v0, p0, Lac/a;->q:Ljava/util/LinkedHashMap;
+    iget-object v0, p0, Lac/a;->r:Ljava/util/LinkedHashMap;
 
     invoke-virtual {v0, p1}, Ljava/util/LinkedHashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -2160,7 +2160,7 @@
     .line 5
     :cond_0
     :goto_0
-    iget v2, p0, Lac/a;->m:I
+    iget v2, p0, Lac/a;->n:I
 
     const/4 v3, 0x1
 
@@ -2211,7 +2211,7 @@
     .line 9
     :cond_2
     :goto_1
-    iget-wide v4, p0, Lac/a;->n:J
+    iget-wide v4, p0, Lac/a;->o:J
 
     .line 10
     iget-object v2, v0, Lac/a$d;->b:[J
@@ -2221,14 +2221,14 @@
 
     sub-long/2addr v4, v6
 
-    iput-wide v4, p0, Lac/a;->n:J
+    iput-wide v4, p0, Lac/a;->o:J
 
     .line 12
-    iget v4, p0, Lac/a;->o:I
+    iget v4, p0, Lac/a;->p:I
 
     sub-int/2addr v4, v3
 
-    iput v4, p0, Lac/a;->o:I
+    iput v4, p0, Lac/a;->p:I
 
     const-wide/16 v3, 0x0
 
@@ -2241,14 +2241,14 @@
 
     .line 14
     :cond_3
-    iget v0, p0, Lac/a;->r:I
+    iget v0, p0, Lac/a;->s:I
 
     add-int/2addr v0, v3
 
-    iput v0, p0, Lac/a;->r:I
+    iput v0, p0, Lac/a;->s:I
 
     .line 15
-    iget-object v0, p0, Lac/a;->p:Ljava/io/BufferedWriter;
+    iget-object v0, p0, Lac/a;->q:Ljava/io/BufferedWriter;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -2271,7 +2271,7 @@
     invoke-virtual {v0, v1}, Ljava/io/Writer;->append(Ljava/lang/CharSequence;)Ljava/io/Writer;
 
     .line 16
-    iget-object v0, p0, Lac/a;->q:Ljava/util/LinkedHashMap;
+    iget-object v0, p0, Lac/a;->r:Ljava/util/LinkedHashMap;
 
     invoke-virtual {v0, p1}, Ljava/util/AbstractMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -2283,9 +2283,9 @@
     if-eqz p1, :cond_4
 
     .line 18
-    iget-object p1, p0, Lac/a;->t:Ljava/util/concurrent/ThreadPoolExecutor;
+    iget-object p1, p0, Lac/a;->u:Ljava/util/concurrent/ThreadPoolExecutor;
 
-    iget-object v0, p0, Lac/a;->u:Lac/a$a;
+    iget-object v0, p0, Lac/a;->v:Lac/a$a;
 
     invoke-virtual {p1, v0}, Ljava/util/concurrent/AbstractExecutorService;->submit(Ljava/util/concurrent/Callable;)Ljava/util/concurrent/Future;
     :try_end_0
@@ -2328,14 +2328,14 @@
 
     .line 1
     :goto_0
-    iget v0, p0, Lac/a;->o:I
+    iget v0, p0, Lac/a;->p:I
 
-    iget v1, p0, Lac/a;->l:I
+    iget v1, p0, Lac/a;->m:I
 
     if-le v0, v1, :cond_0
 
     .line 2
-    iget-object v0, p0, Lac/a;->q:Ljava/util/LinkedHashMap;
+    iget-object v0, p0, Lac/a;->r:Ljava/util/LinkedHashMap;
 
     invoke-virtual {v0}, Ljava/util/LinkedHashMap;->entrySet()Ljava/util/Set;
 
@@ -2376,16 +2376,16 @@
 
     .line 1
     :goto_0
-    iget-wide v0, p0, Lac/a;->n:J
+    iget-wide v0, p0, Lac/a;->o:J
 
-    iget-wide v2, p0, Lac/a;->k:J
+    iget-wide v2, p0, Lac/a;->l:J
 
     cmp-long v4, v0, v2
 
     if-lez v4, :cond_0
 
     .line 2
-    iget-object v0, p0, Lac/a;->q:Ljava/util/LinkedHashMap;
+    iget-object v0, p0, Lac/a;->r:Ljava/util/LinkedHashMap;
 
     invoke-virtual {v0}, Ljava/util/LinkedHashMap;->entrySet()Ljava/util/Set;
 
@@ -2420,7 +2420,7 @@
     .locals 3
 
     .line 1
-    sget-object v0, Lac/a;->v:Ljava/util/regex/Pattern;
+    sget-object v0, Lac/a;->w:Ljava/util/regex/Pattern;
 
     invoke-virtual {v0, p1}, Ljava/util/regex/Pattern;->matcher(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
 
@@ -2444,7 +2444,7 @@
     const-string v2, "\""
 
     .line 4
-    invoke-static {v1, p1, v2}, Landroid/support/v4/media/f;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v1, p1, v2}, Landroid/support/v4/media/f;->b(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 

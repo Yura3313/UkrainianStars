@@ -14,13 +14,13 @@
 
 
 # static fields
-.field public static final enum g:Lye/h;
+.field public static final enum h:Lye/h;
 
-.field public static final synthetic h:[Lye/h;
+.field public static final synthetic i:[Lye/h;
 
 
 # instance fields
-.field public final f:I
+.field public final g:I
 
 
 # direct methods
@@ -42,7 +42,7 @@
     .line 1
     invoke-direct {v1, v2, v3, v4}, Lye/h;-><init>(Ljava/lang/String;II)V
 
-    sput-object v1, Lye/h;->g:Lye/h;
+    sput-object v1, Lye/h;->h:Lye/h;
 
     aput-object v1, v0, v3
 
@@ -118,7 +118,7 @@
 
     aput-object v1, v0, v3
 
-    sput-object v0, Lye/h;->h:[Lye/h;
+    sput-object v0, Lye/h;->i:[Lye/h;
 
     return-void
 .end method
@@ -128,7 +128,7 @@
 
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
-    iput p3, p0, Lye/h;->f:I
+    iput p3, p0, Lye/h;->g:I
 
     return-void
 .end method
@@ -150,7 +150,7 @@
 .method public static values()[Lye/h;
     .locals 1
 
-    sget-object v0, Lye/h;->h:[Lye/h;
+    sget-object v0, Lye/h;->i:[Lye/h;
 
     invoke-virtual {v0}, [Lye/h;->clone()Ljava/lang/Object;
 

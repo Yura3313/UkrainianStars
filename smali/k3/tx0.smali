@@ -1,43 +1,58 @@
-.class public interface abstract Lk3/tx0;
+.class public final Lk3/tx0;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 
 # annotations
 .annotation build Landroid/annotation/TargetApi;
-    value = 0x10
-.end annotation
-
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "<T::",
-        "Lk3/vx0;",
-        ">",
-        "Ljava/lang/Object;"
-    }
+    value = 0x18
 .end annotation
 
 
-# virtual methods
-.method public abstract a()Lk3/sx0;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Landroid/os/Looper;",
-            "Lcom/google/android/gms/internal/ads/zzjn;",
-            ")",
-            "Lk3/sx0<",
-            "TT;>;"
-        }
-    .end annotation
+# instance fields
+.field public final a:Landroid/media/MediaCodec$CryptoInfo;
+
+.field public final b:Landroid/media/MediaCodec$CryptoInfo$Pattern;
+
+
+# direct methods
+.method public constructor <init>(Landroid/media/MediaCodec$CryptoInfo;)V
+    .locals 1
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    iput-object p1, p0, Lk3/tx0;->a:Landroid/media/MediaCodec$CryptoInfo;
+
+    .line 3
+    new-instance p1, Landroid/media/MediaCodec$CryptoInfo$Pattern;
+
+    const/4 v0, 0x0
+
+    invoke-direct {p1, v0, v0}, Landroid/media/MediaCodec$CryptoInfo$Pattern;-><init>(II)V
+
+    iput-object p1, p0, Lk3/tx0;->b:Landroid/media/MediaCodec$CryptoInfo$Pattern;
+
+    return-void
 .end method
 
-.method public abstract a()V
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lk3/sx0<",
-            "TT;>;)V"
-        }
-    .end annotation
+.method public static a(Lk3/tx0;)V
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Lk3/tx0;->b:Landroid/media/MediaCodec$CryptoInfo$Pattern;
+
+    const/4 v1, 0x0
+
+    invoke-virtual {v0, v1, v1}, Landroid/media/MediaCodec$CryptoInfo$Pattern;->set(II)V
+
+    .line 2
+    iget-object v0, p0, Lk3/tx0;->a:Landroid/media/MediaCodec$CryptoInfo;
+
+    iget-object p0, p0, Lk3/tx0;->b:Landroid/media/MediaCodec$CryptoInfo$Pattern;
+
+    invoke-virtual {v0, p0}, Landroid/media/MediaCodec$CryptoInfo;->setPattern(Landroid/media/MediaCodec$CryptoInfo$Pattern;)V
+
+    return-void
 .end method

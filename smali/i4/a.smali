@@ -4,14 +4,14 @@
 
 
 # instance fields
-.field public final synthetic f:Lcom/google/android/material/circularreveal/c;
+.field public final synthetic g:Lcom/google/android/material/circularreveal/c;
 
 
 # direct methods
 .method public constructor <init>(Lcom/google/android/material/circularreveal/c;)V
     .locals 0
 
-    iput-object p1, p0, Li4/a;->f:Lcom/google/android/material/circularreveal/c;
+    iput-object p1, p0, Li4/a;->g:Lcom/google/android/material/circularreveal/c;
 
     invoke-direct {p0}, Landroid/animation/AnimatorListenerAdapter;-><init>()V
 
@@ -23,7 +23,7 @@
 .method public final onAnimationEnd(Landroid/animation/Animator;)V
     .locals 0
 
-    iget-object p1, p0, Li4/a;->f:Lcom/google/android/material/circularreveal/c;
+    iget-object p1, p0, Li4/a;->g:Lcom/google/android/material/circularreveal/c;
 
     invoke-interface {p1}, Lcom/google/android/material/circularreveal/c;->b()V
 
@@ -33,7 +33,7 @@
 .method public final onAnimationStart(Landroid/animation/Animator;)V
     .locals 0
 
-    iget-object p1, p0, Li4/a;->f:Lcom/google/android/material/circularreveal/c;
+    iget-object p1, p0, Li4/a;->g:Lcom/google/android/material/circularreveal/c;
 
     invoke-interface {p1}, Lcom/google/android/material/circularreveal/c;->a()V
 

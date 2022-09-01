@@ -142,7 +142,7 @@
     .line 10
     iget-object v2, v1, Landroidx/fragment/app/FragmentManager;->c:Landroidx/fragment/app/b0;
 
-    iget-object v3, p3, Landroidx/fragment/app/Fragment;->k:Ljava/lang/String;
+    iget-object v3, p3, Landroidx/fragment/app/Fragment;->l:Ljava/lang/String;
 
     invoke-virtual {v2, v3}, Landroidx/fragment/app/b0;->h(Ljava/lang/String;)Landroidx/fragment/app/z;
 
@@ -176,7 +176,7 @@
     const-string v2, " is not currently in the FragmentManager"
 
     .line 15
-    invoke-static {p2, p3, v2}, Landroidx/fragment/app/l;->a(Ljava/lang/String;Landroidx/fragment/app/Fragment;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p2, p3, v2}, Landroidx/fragment/app/l;->d(Ljava/lang/String;Landroidx/fragment/app/Fragment;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p2
 
@@ -333,7 +333,7 @@
     check-cast v2, Lcom/helpshift/support/Section;
 
     .line 10
-    iget-object v2, v2, Lcom/helpshift/support/Section;->h:Ljava/lang/String;
+    iget-object v2, v2, Lcom/helpshift/support/Section;->i:Ljava/lang/String;
 
     const-string v3, "sectionPublishId"
 
@@ -375,12 +375,12 @@
     if-eqz v1, :cond_4
 
     .line 16
-    iget-object v3, v0, Landroidx/fragment/app/Fragment;->x:Landroidx/fragment/app/FragmentManager;
+    iget-object v3, v0, Landroidx/fragment/app/Fragment;->y:Landroidx/fragment/app/FragmentManager;
 
     if-nez v3, :cond_3
 
     .line 17
-    iget-object v1, v1, Landroidx/fragment/app/Fragment$SavedState;->f:Landroid/os/Bundle;
+    iget-object v1, v1, Landroidx/fragment/app/Fragment$SavedState;->g:Landroid/os/Bundle;
 
     if-eqz v1, :cond_2
 
@@ -391,7 +391,7 @@
 
     .line 18
     :goto_0
-    iput-object v1, v0, Landroidx/fragment/app/Fragment;->g:Landroid/os/Bundle;
+    iput-object v1, v0, Landroidx/fragment/app/Fragment;->h:Landroid/os/Bundle;
 
     goto :goto_1
 
@@ -463,7 +463,7 @@
     .line 29
     iget-object p1, p0, Landroidx/fragment/app/a0;->e:Landroidx/fragment/app/a;
 
-    sget-object p2, Landroidx/lifecycle/f$c;->i:Landroidx/lifecycle/f$c;
+    sget-object p2, Landroidx/lifecycle/f$c;->j:Landroidx/lifecycle/f$c;
 
     invoke-virtual {p1, v0, p2}, Landroidx/fragment/app/a;->q(Landroidx/fragment/app/Fragment;Landroidx/lifecycle/f$c;)Landroidx/fragment/app/c0;
 
@@ -478,7 +478,7 @@
     check-cast p2, Landroidx/fragment/app/Fragment;
 
     .line 2
-    iget-object p2, p2, Landroidx/fragment/app/Fragment;->M:Landroid/view/View;
+    iget-object p2, p2, Landroidx/fragment/app/Fragment;->N:Landroid/view/View;
 
     if-ne p2, p1, :cond_0
 
@@ -777,12 +777,12 @@
     invoke-virtual {v5}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 12
-    iget-object v6, v3, Landroidx/fragment/app/Fragment;->x:Landroidx/fragment/app/FragmentManager;
+    iget-object v6, v3, Landroidx/fragment/app/Fragment;->y:Landroidx/fragment/app/FragmentManager;
 
     if-ne v6, v5, :cond_2
 
     .line 13
-    iget-object v3, v3, Landroidx/fragment/app/Fragment;->k:Ljava/lang/String;
+    iget-object v3, v3, Landroidx/fragment/app/Fragment;->l:Ljava/lang/String;
 
     invoke-virtual {v0, v4, v3}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
@@ -797,7 +797,7 @@
     const-string v4, " is not currently in the FragmentManager"
 
     .line 15
-    invoke-static {v2, v3, v4}, Landroidx/fragment/app/l;->a(Ljava/lang/String;Landroidx/fragment/app/Fragment;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2, v3, v4}, Landroidx/fragment/app/l;->d(Ljava/lang/String;Landroidx/fragment/app/Fragment;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -865,7 +865,7 @@
 
     iget-object v0, p0, Landroidx/fragment/app/a0;->h:Landroidx/fragment/app/Fragment;
 
-    sget-object v1, Landroidx/lifecycle/f$c;->i:Landroidx/lifecycle/f$c;
+    sget-object v1, Landroidx/lifecycle/f$c;->j:Landroidx/lifecycle/f$c;
 
     invoke-virtual {p1, v0, v1}, Landroidx/fragment/app/a;->q(Landroidx/fragment/app/Fragment;Landroidx/lifecycle/f$c;)Landroidx/fragment/app/c0;
 
@@ -907,7 +907,7 @@
     :cond_3
     iget-object p1, p0, Landroidx/fragment/app/a0;->e:Landroidx/fragment/app/a;
 
-    sget-object p2, Landroidx/lifecycle/f$c;->j:Landroidx/lifecycle/f$c;
+    sget-object p2, Landroidx/lifecycle/f$c;->k:Landroidx/lifecycle/f$c;
 
     invoke-virtual {p1, p3, p2}, Landroidx/fragment/app/a;->q(Landroidx/fragment/app/Fragment;Landroidx/lifecycle/f$c;)Landroidx/fragment/app/c0;
 

@@ -3,54 +3,33 @@
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lk3/iv0;
+.implements Lk3/mv0;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Lk3/mv0<",
+        "Lorg/json/JSONObject;",
+        ">;"
+    }
+.end annotation
 
 
 # instance fields
-.field public final synthetic a:I
-
-.field public final b:Lk3/mv0;
-
-.field public final c:Ljava/lang/Object;
+.field public final a:Lk3/k31;
 
 
 # direct methods
-.method public constructor <init>(Lk3/e31;Lk3/mv0;)V
-    .locals 1
-
-    const/4 v0, 0x0
-
-    iput v0, p0, Lk3/kv;->a:I
-
-    .line 4
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 5
-    iput-object p1, p0, Lk3/kv;->c:Ljava/lang/Object;
-
-    .line 6
-    iput-object p2, p0, Lk3/kv;->b:Lk3/mv0;
-
-    return-void
-.end method
-
-.method public constructor <init>(Lk3/mv0;)V
-    .locals 2
-
-    sget-object v0, Lk3/lo0;->c:Lk3/di0;
-
-    const/4 v1, 0x1
-
-    iput v1, p0, Lk3/kv;->a:I
+.method public constructor <init>(Lk3/k31;)V
+    .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object v0, p0, Lk3/kv;->b:Lk3/mv0;
-
-    .line 3
-    iput-object p1, p0, Lk3/kv;->c:Ljava/lang/Object;
+    iput-object p1, p0, Lk3/kv;->a:Lk3/k31;
 
     return-void
 .end method
@@ -58,62 +37,24 @@
 
 # virtual methods
 .method public final get()Ljava/lang/Object;
-    .locals 3
-
-    iget v0, p0, Lk3/kv;->a:I
-
-    packed-switch v0, :pswitch_data_0
-
-    goto :goto_0
+    .locals 2
 
     .line 1
-    :pswitch_0
-    iget-object v0, p0, Lk3/kv;->b:Lk3/mv0;
-
-    invoke-interface {v0}, Lk3/mv0;->get()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Lk3/uv;
+    iget-object v0, p0, Lk3/kv;->a:Lk3/k31;
 
     .line 2
-    invoke-virtual {v0}, Lk3/uv;->b()Lorg/json/JSONObject;
+    iget-object v0, v0, Lk3/k31;->h:Ljava/lang/Object;
 
-    move-result-object v0
+    check-cast v0, Lorg/json/JSONObject;
 
-    return-object v0
+    const-string v1, "Cannot return null from a non-@Nullable @Provides method"
 
     .line 3
-    :goto_0
-    iget-object v0, p0, Lk3/kv;->b:Lk3/mv0;
+    invoke-static {v0, v1}, Lk3/gj;->f(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
 
-    invoke-interface {v0}, Lk3/mv0;->get()Ljava/lang/Object;
+    move-object v1, v0
 
-    move-result-object v0
+    check-cast v1, Lorg/json/JSONObject;
 
-    check-cast v0, Lk3/gm0;
-
-    iget-object v1, p0, Lk3/kv;->c:Ljava/lang/Object;
-
-    check-cast v1, Lk3/mv0;
-
-    invoke-interface {v1}, Lk3/mv0;->get()Ljava/lang/Object;
-
-    move-result-object v1
-
-    check-cast v1, Landroid/content/Context;
-
-    .line 4
-    new-instance v2, Lk3/wc0;
-
-    invoke-direct {v2, v0, v1}, Lk3/wc0;-><init>(Lk3/gm0;Landroid/content/Context;)V
-
-    return-object v2
-
-    nop
-
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+    return-object v0
 .end method

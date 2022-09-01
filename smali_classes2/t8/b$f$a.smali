@@ -101,7 +101,7 @@
     iget-object v4, v1, Lt8/b;->c:Li7/c;
 
     .line 11
-    iget-object v4, v4, Li7/c;->f:Ljava/lang/Long;
+    iget-object v4, v4, Li7/c;->g:Ljava/lang/Long;
 
     .line 12
     invoke-virtual {v4}, Ljava/lang/Long;->longValue()J
@@ -172,7 +172,7 @@
 
     iget-object v3, v1, Lt8/b;->c:Li7/c;
 
-    iget-object v6, v7, Lq8/d;->g:Ljava/lang/Long;
+    iget-object v6, v7, Lq8/d;->h:Ljava/lang/Long;
 
     iget-object v8, v1, Lt8/b;->t:Lw8/e;
 
@@ -243,7 +243,7 @@
     iget-object v2, v1, Lt8/b;->c:Li7/c;
 
     .line 36
-    iget-object v2, v2, Li7/c;->f:Ljava/lang/Long;
+    iget-object v2, v2, Li7/c;->g:Ljava/lang/Long;
 
     .line 37
     invoke-virtual {v2}, Ljava/lang/Long;->longValue()J
@@ -278,7 +278,7 @@
 
     check-cast v0, Lt8/b$h;
 
-    iget-object v1, v7, Lq8/d;->g:Ljava/lang/Long;
+    iget-object v1, v7, Lq8/d;->h:Ljava/lang/Long;
 
     invoke-virtual {v1}, Ljava/lang/Long;->longValue()J
 

@@ -18,16 +18,16 @@
 
 
 # instance fields
-.field public f:Z
+.field public g:Z
 
-.field public final synthetic g:Landroid/widget/TextView;
+.field public final synthetic h:Landroid/widget/TextView;
 
 
 # direct methods
 .method public constructor <init>(Landroid/widget/TextView;)V
     .locals 0
 
-    iput-object p1, p0, Lae/r$a;->g:Landroid/widget/TextView;
+    iput-object p1, p0, Lae/r$a;->h:Landroid/widget/TextView;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -59,7 +59,7 @@
 
     const-string v1, "s.getSpans(0, s.length, Annotation::class.java)"
 
-    invoke-static {v0, v1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 2
     array-length v1, v0
@@ -80,13 +80,13 @@
     const-string v7, "it"
 
     .line 3
-    invoke-static {v6, v7}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v6, v7}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v6}, Landroid/text/Annotation;->getKey()Ljava/lang/String;
 
     move-result-object v6
 
-    invoke-static {v6, v4}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v6, v4}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v6
 
@@ -126,7 +126,7 @@
     invoke-interface {p1, v0, v2, v1, v3}, Landroid/text/Spannable;->setSpan(Ljava/lang/Object;III)V
 
     .line 5
-    iget-boolean v0, p0, Lae/r$a;->f:Z
+    iget-boolean v0, p0, Lae/r$a;->g:Z
 
     if-eqz v0, :cond_5
 
@@ -157,14 +157,14 @@
 
     const-string v1, "(this as java.lang.String).toUpperCase(locale)"
 
-    invoke-static {v0, v1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 9
     invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-static {v1, v0}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v0}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
@@ -237,7 +237,7 @@
     move-result-object v4
 
     .line 18
-    iget v4, v4, Lve/a;->f:I
+    iget v4, v4, Lve/a;->g:I
 
     .line 19
     invoke-interface {v0}, Lye/c;->b()Lve/c;
@@ -245,7 +245,7 @@
     move-result-object v0
 
     .line 20
-    iget v0, v0, Lve/a;->g:I
+    iget v0, v0, Lve/a;->h:I
 
     add-int/2addr v0, v5
 
@@ -276,7 +276,7 @@
     invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 3
-    iget-object p2, p2, Lye/e;->f:Ljava/util/regex/Pattern;
+    iget-object p2, p2, Lye/e;->g:Ljava/util/regex/Pattern;
 
     invoke-virtual {p2, p1}, Ljava/util/regex/Pattern;->matcher(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
 
@@ -289,16 +289,16 @@
     if-eqz p1, :cond_0
 
     .line 4
-    iget-object p1, p0, Lae/r$a;->g:Landroid/widget/TextView;
+    iget-object p1, p0, Lae/r$a;->h:Landroid/widget/TextView;
 
-    invoke-static {p1}, Lae/t2;->a(Landroid/widget/TextView;)Z
+    invoke-static {p1}, Lae/s2;->a(Landroid/widget/TextView;)Z
 
     move-result p1
 
     if-eqz p1, :cond_0
 
     .line 5
-    iget-object p1, p0, Lae/r$a;->g:Landroid/widget/TextView;
+    iget-object p1, p0, Lae/r$a;->h:Landroid/widget/TextView;
 
     const/4 p2, 0x0
 
@@ -307,7 +307,7 @@
     const/4 p1, 0x1
 
     .line 6
-    iput-boolean p1, p0, Lae/r$a;->f:Z
+    iput-boolean p1, p0, Lae/r$a;->g:Z
 
     :cond_0
     return-void

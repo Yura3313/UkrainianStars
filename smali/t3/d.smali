@@ -1,30 +1,58 @@
-.class public final Lt3/d;
-.super Lv2/f;
+.class public final synthetic Lt3/d;
+.super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-games@@20.0.1"
+
+# interfaces
+.implements Lb2/m;
+
+
+# instance fields
+.field public final a:Lb2/m;
 
 
 # direct methods
-.method public constructor <init>(Landroid/app/Activity;Lv2/b$a;)V
+.method public constructor <init>(Lb2/m;)V
     .locals 0
 
-    invoke-direct {p0, p1, p2}, Lv2/f;-><init>(Landroid/app/Activity;Lv2/b$a;)V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    iput-object p1, p0, Lt3/d;->a:Lb2/m;
 
     return-void
 .end method
 
-.method public static final synthetic g(Lz2/g;Lc4/g;)V
-    .locals 0
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Landroid/os/RemoteException;
-        }
-    .end annotation
 
-    invoke-virtual {p0}, Lz2/g;->J()Lcom/google/android/gms/games/Player;
+# virtual methods
+.method public final a(Ljava/lang/Object;Ljava/lang/Object;)V
+    .locals 1
 
-    move-result-object p0
+    .line 1
+    iget-object v0, p0, Lt3/d;->a:Lb2/m;
 
-    invoke-virtual {p1, p0}, Lc4/g;->b(Ljava/lang/Object;)V
+    check-cast p1, Lz2/g;
+
+    check-cast p2, Lc4/g;
+
+    .line 2
+    :try_start_0
+    invoke-interface {v0, p1, p2}, Lb2/m;->a(Ljava/lang/Object;Ljava/lang/Object;)V
+    :try_end_0
+    .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_1
+    .catch Ljava/lang/SecurityException; {:try_start_0 .. :try_end_0} :catch_0
+
+    return-void
+
+    :catch_0
+    move-exception p1
+
+    goto :goto_0
+
+    :catch_1
+    move-exception p1
+
+    .line 3
+    :goto_0
+    invoke-virtual {p2, p1}, Lc4/g;->c(Ljava/lang/Exception;)Z
 
     return-void
 .end method

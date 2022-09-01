@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field public h:Ljava/lang/Float;
+.field public i:Ljava/lang/Float;
 
 
 # direct methods
@@ -24,7 +24,7 @@
 
     const-string v0, "context"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 2
     invoke-direct {p0, p1, p2, p3}, Landroidx/appcompat/widget/AppCompatButton;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
@@ -66,7 +66,7 @@
     int-to-float v3, v3
 
     .line 5
-    sget v4, La5/g0;->a:F
+    sget v4, La5/e0;->g:F
 
     mul-float v3, v3, v4
 
@@ -92,7 +92,7 @@
 
     if-eqz v4, :cond_0
 
-    invoke-static {v4}, Lcom/supercell/id/view/p;->a(Landroid/text/Layout;)Z
+    invoke-static {v4}, Lcom/google/protobuf/o1;->a(Landroid/text/Layout;)Z
 
     move-result v4
 
@@ -130,7 +130,7 @@
     if-eqz v0, :cond_1
 
     .line 11
-    invoke-static {v0}, Lcom/supercell/id/view/p;->b(Landroid/text/Layout;)F
+    invoke-static {v0}, Lcom/google/protobuf/o1;->b(Landroid/text/Layout;)F
 
     move-result v0
 
@@ -175,7 +175,7 @@
     invoke-super {p0, p1, p2}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;Landroid/widget/TextView$BufferType;)V
 
     .line 2
-    iget-object p1, p0, Lcom/supercell/id/view/WidthAdjustingMultilineButton;->h:Ljava/lang/Float;
+    iget-object p1, p0, Lcom/supercell/id/view/WidthAdjustingMultilineButton;->i:Ljava/lang/Float;
 
     if-eqz p1, :cond_0
 
@@ -199,7 +199,7 @@
     invoke-super {p0, p1, p2}, Landroidx/appcompat/widget/AppCompatButton;->setTextSize(IF)V
 
     .line 2
-    iget-object p1, p0, Lcom/supercell/id/view/WidthAdjustingMultilineButton;->h:Ljava/lang/Float;
+    iget-object p1, p0, Lcom/supercell/id/view/WidthAdjustingMultilineButton;->i:Ljava/lang/Float;
 
     if-nez p1, :cond_0
 
@@ -212,7 +212,7 @@
 
     move-result-object p1
 
-    iput-object p1, p0, Lcom/supercell/id/view/WidthAdjustingMultilineButton;->h:Ljava/lang/Float;
+    iput-object p1, p0, Lcom/supercell/id/view/WidthAdjustingMultilineButton;->i:Ljava/lang/Float;
 
     :cond_0
     return-void

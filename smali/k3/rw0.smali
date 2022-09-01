@@ -1,100 +1,36 @@
-.class public interface abstract Lk3/rw0;
+.class public final Lk3/rw0;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
-# interfaces
-.implements Lk3/fw0;
+
+# instance fields
+.field public final a:I
+
+.field public final b:J
+
+.field public volatile c:J
+
+.field public volatile d:J
 
 
-# virtual methods
-.method public abstract a()Z
-.end method
+# direct methods
+.method public constructor <init>(IJ)V
+    .locals 0
 
-.method public abstract b()V
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
-.end method
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-.method public abstract c(I)V
-.end method
+    .line 2
+    iput p1, p0, Lk3/rw0;->a:I
 
-.method public abstract d()Z
-.end method
+    .line 3
+    iput-wide p2, p0, Lk3/rw0;->b:J
 
-.method public abstract e()Lk3/m11;
-.end method
+    .line 4
+    iput-wide p2, p0, Lk3/rw0;->c:J
 
-.method public abstract g()Lk3/vz0;
-.end method
+    .line 5
+    iput-wide p2, p0, Lk3/rw0;->d:J
 
-.method public abstract getState()I
-.end method
-
-.method public abstract h(JJ)V
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Lcom/google/android/gms/internal/ads/zzhd;
-        }
-    .end annotation
-.end method
-
-.method public abstract j()Z
-.end method
-
-.method public abstract k()V
-.end method
-
-.method public abstract l()Lk3/ew0;
-.end method
-
-.method public abstract m(Lk3/tw0;[Lcom/google/android/gms/internal/ads/zzho;Lk3/vz0;JZJ)V
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Lcom/google/android/gms/internal/ads/zzhd;
-        }
-    .end annotation
-.end method
-
-.method public abstract n([Lcom/google/android/gms/internal/ads/zzho;Lk3/vz0;J)V
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Lcom/google/android/gms/internal/ads/zzhd;
-        }
-    .end annotation
-.end method
-
-.method public abstract o()V
-.end method
-
-.method public abstract q(J)V
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Lcom/google/android/gms/internal/ads/zzhd;
-        }
-    .end annotation
-.end method
-
-.method public abstract s()I
-.end method
-
-.method public abstract start()V
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Lcom/google/android/gms/internal/ads/zzhd;
-        }
-    .end annotation
-.end method
-
-.method public abstract stop()V
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Lcom/google/android/gms/internal/ads/zzhd;
-        }
-    .end annotation
-.end method
-
-.method public abstract x0()Z
+    return-void
 .end method

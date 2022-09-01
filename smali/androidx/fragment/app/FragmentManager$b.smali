@@ -143,10 +143,10 @@
 
     .line 9
     :cond_2
-    iget-object v2, v1, Landroidx/fragment/app/FragmentManager$LaunchedFragmentInfo;->f:Ljava/lang/String;
+    iget-object v2, v1, Landroidx/fragment/app/FragmentManager$LaunchedFragmentInfo;->g:Ljava/lang/String;
 
     .line 10
-    iget v1, v1, Landroidx/fragment/app/FragmentManager$LaunchedFragmentInfo;->g:I
+    iget v1, v1, Landroidx/fragment/app/FragmentManager$LaunchedFragmentInfo;->h:I
 
     .line 11
     iget-object v3, p0, Landroidx/fragment/app/FragmentManager$b;->a:Landroidx/fragment/app/FragmentManager;

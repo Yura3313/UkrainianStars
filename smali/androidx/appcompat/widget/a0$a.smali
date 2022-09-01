@@ -15,16 +15,16 @@
 
 
 # instance fields
-.field public f:Landroidx/appcompat/app/ActionBar$b;
+.field public g:Landroidx/appcompat/app/ActionBar$b;
 
-.field public final synthetic g:Landroidx/appcompat/widget/a0;
+.field public final synthetic h:Landroidx/appcompat/widget/a0;
 
 
 # virtual methods
 .method public final a()Landroidx/appcompat/app/ActionBar$b;
     .locals 1
 
-    iget-object v0, p0, Landroidx/appcompat/widget/a0$a;->f:Landroidx/appcompat/app/ActionBar$b;
+    iget-object v0, p0, Landroidx/appcompat/widget/a0$a;->g:Landroidx/appcompat/app/ActionBar$b;
 
     return-object v0
 .end method
@@ -64,7 +64,7 @@
     invoke-super {p0, p1, p2}, Landroid/widget/LinearLayout;->onMeasure(II)V
 
     .line 2
-    iget-object p1, p0, Landroidx/appcompat/widget/a0$a;->g:Landroidx/appcompat/widget/a0;
+    iget-object p1, p0, Landroidx/appcompat/widget/a0$a;->h:Landroidx/appcompat/widget/a0;
 
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 

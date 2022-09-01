@@ -12,11 +12,11 @@
 
 
 # static fields
-.field public static final w0:Lvd/a$a;
+.field public static final x0:Lvd/a$a;
 
 
 # instance fields
-.field public u0:Lre/q;
+.field public v0:Lre/q;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lre/q<",
@@ -26,13 +26,13 @@
             "Lwc/s;",
             "-",
             "Ljava/lang/String;",
-            "Lie/h;",
+            "Lie/i;",
             ">;"
         }
     .end annotation
 .end field
 
-.field public v0:Ljava/util/HashMap;
+.field public w0:Ljava/util/HashMap;
 
 
 # direct methods
@@ -43,7 +43,7 @@
 
     invoke-direct {v0}, Lvd/a$a;-><init>()V
 
-    sput-object v0, Lvd/a;->w0:Lvd/a$a;
+    sput-object v0, Lvd/a;->x0:Lvd/a$a;
 
     return-void
 .end method
@@ -61,7 +61,7 @@
 .method public final U0()V
     .locals 1
 
-    iget-object v0, p0, Lvd/a;->v0:Ljava/util/HashMap;
+    iget-object v0, p0, Lvd/a;->w0:Ljava/util/HashMap;
 
     if-eqz v0, :cond_0
 
@@ -76,7 +76,7 @@
 
     const-string p3, "inflater"
 
-    invoke-static {p1, p3}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p3}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     sget p3, Lcom/supercell/id/R$layout;->fragment_edit_nickname_dialog:I
 
@@ -92,7 +92,7 @@
 .method public final Y0(I)Landroid/view/View;
     .locals 2
 
-    iget-object v0, p0, Lvd/a;->v0:Ljava/util/HashMap;
+    iget-object v0, p0, Lvd/a;->w0:Ljava/util/HashMap;
 
     if-nez v0, :cond_0
 
@@ -100,10 +100,10 @@
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    iput-object v0, p0, Lvd/a;->v0:Ljava/util/HashMap;
+    iput-object v0, p0, Lvd/a;->w0:Ljava/util/HashMap;
 
     :cond_0
-    iget-object v0, p0, Lvd/a;->v0:Ljava/util/HashMap;
+    iget-object v0, p0, Lvd/a;->w0:Ljava/util/HashMap;
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -118,7 +118,7 @@
     if-nez v0, :cond_2
 
     .line 1
-    iget-object v0, p0, Landroidx/fragment/app/Fragment;->M:Landroid/view/View;
+    iget-object v0, p0, Landroidx/fragment/app/Fragment;->N:Landroid/view/View;
 
     if-nez v0, :cond_1
 
@@ -132,7 +132,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lvd/a;->v0:Ljava/util/HashMap;
+    iget-object v1, p0, Lvd/a;->w0:Ljava/util/HashMap;
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -149,7 +149,7 @@
 
     invoke-super {p0}, Lwc/e;->a0()V
 
-    iget-object v0, p0, Lvd/a;->v0:Ljava/util/HashMap;
+    iget-object v0, p0, Lvd/a;->w0:Ljava/util/HashMap;
 
     if-eqz v0, :cond_0
 
@@ -164,13 +164,13 @@
 
     const-string p2, "view"
 
-    invoke-static {p1, p2}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p2}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
-    sget-object p1, Lae/q1;->b:Lae/q1;
+    sget-object p1, Lae/p1;->b:Lae/p1;
 
     .line 2
-    sget-object p2, Lae/q1;->a:Ljava/lang/Integer;
+    sget-object p2, Lae/p1;->a:Ljava/lang/Integer;
 
     const/4 v0, 0x1
 
@@ -194,7 +194,7 @@
 
     check-cast v3, Landroid/widget/EditText;
 
-    invoke-static {v3, v2}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v3, v2}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v3}, Landroid/widget/TextView;->getFilters()[Landroid/text/InputFilter;
 
@@ -208,7 +208,7 @@
 
     aput-object v6, v5, v1
 
-    invoke-static {v4, v5}, Lje/e;->h([Ljava/lang/Object;[Ljava/lang/Object;)[Ljava/lang/Object;
+    invoke-static {v4, v5}, Lje/e;->k([Ljava/lang/Object;[Ljava/lang/Object;)[Ljava/lang/Object;
 
     move-result-object p2
 
@@ -218,7 +218,7 @@
 
     .line 5
     :cond_0
-    iget-object p2, p0, Landroidx/fragment/app/Fragment;->l:Landroid/os/Bundle;
+    iget-object p2, p0, Landroidx/fragment/app/Fragment;->m:Landroid/os/Bundle;
 
     if-eqz p2, :cond_1
 
@@ -261,7 +261,7 @@
 
     check-cast v3, Landroid/widget/EditText;
 
-    invoke-static {v3, v2}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v3, v2}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v3}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
 
@@ -298,7 +298,7 @@
 
     check-cast v4, Landroid/widget/EditText;
 
-    invoke-static {v4, v2}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v4, v2}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v4}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
 
@@ -319,15 +319,15 @@
 
     const-string v6, "continue_button"
 
-    invoke-static {v5, v6}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v5, v6}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-static {v2, p2}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v2, p2}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v6
 
     if-nez v6, :cond_4
 
-    invoke-virtual {p1, v2}, Lae/q1;->c(Ljava/lang/String;)Lcom/supercell/id/api/ApiError;
+    invoke-virtual {p1, v2}, Lae/p1;->c(Ljava/lang/String;)Lcom/supercell/id/api/ApiError;
 
     move-result-object p1
 
@@ -380,7 +380,7 @@
     const-string p2, "it"
 
     .line 15
-    invoke-static {p1, p2}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p2}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     const p2, 0x3f4ccccd
 
@@ -402,7 +402,7 @@
     const-string v1, "spring"
 
     .line 19
-    invoke-static {v0, v1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     const v2, 0x3e99999a
 
@@ -412,7 +412,7 @@
     iget-object v0, p2, Ll0/d;->q:Ll0/e;
 
     .line 21
-    invoke-static {v0, v1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/high16 v3, 0x43c80000    # 400.0f
 
@@ -432,7 +432,7 @@
     iget-object p1, p2, Ll0/d;->q:Ll0/e;
 
     .line 25
-    invoke-static {p1, v1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v1}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {p1, v2}, Ll0/e;->a(F)Ll0/e;
 
@@ -440,7 +440,7 @@
     iget-object p1, p2, Ll0/d;->q:Ll0/e;
 
     .line 27
-    invoke-static {p1, v1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v1}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {p1, v3}, Ll0/e;->b(F)Ll0/e;
 

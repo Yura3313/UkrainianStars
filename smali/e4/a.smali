@@ -7,14 +7,14 @@
 
 
 # instance fields
-.field public final synthetic f:Lcom/google/android/material/bottomsheet/BottomSheetBehavior;
+.field public final synthetic g:Lcom/google/android/material/bottomsheet/BottomSheetBehavior;
 
 
 # direct methods
 .method public constructor <init>(Lcom/google/android/material/bottomsheet/BottomSheetBehavior;)V
     .locals 0
 
-    iput-object p1, p0, Le4/a;->f:Lcom/google/android/material/bottomsheet/BottomSheetBehavior;
+    iput-object p1, p0, Le4/a;->g:Lcom/google/android/material/bottomsheet/BottomSheetBehavior;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -38,7 +38,7 @@
     move-result p1
 
     .line 2
-    iget-object v0, p0, Le4/a;->f:Lcom/google/android/material/bottomsheet/BottomSheetBehavior;
+    iget-object v0, p0, Le4/a;->g:Lcom/google/android/material/bottomsheet/BottomSheetBehavior;
 
     .line 3
     iget-object v0, v0, Lcom/google/android/material/bottomsheet/BottomSheetBehavior;->i:Ls4/g;

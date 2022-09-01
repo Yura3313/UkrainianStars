@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field public final g:Ljava/util/ArrayList;
+.field public final h:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
@@ -28,23 +28,23 @@
 
 
 # direct methods
-.method public constructor <init>(Lb2/i;)V
+.method public constructor <init>(Lb2/h;)V
     .locals 1
 
     .line 1
-    invoke-direct {p0, p1}, Lcom/google/android/gms/common/api/internal/LifecycleCallback;-><init>(Lb2/i;)V
+    invoke-direct {p0, p1}, Lcom/google/android/gms/common/api/internal/LifecycleCallback;-><init>(Lb2/h;)V
 
     .line 2
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lc4/y$a;->g:Ljava/util/ArrayList;
+    iput-object v0, p0, Lc4/y$a;->h:Ljava/util/ArrayList;
 
     const-string v0, "TaskOnStopCallback"
 
     .line 3
-    invoke-interface {p1, v0, p0}, Lb2/i;->c(Ljava/lang/String;Lcom/google/android/gms/common/api/internal/LifecycleCallback;)V
+    invoke-interface {p1, v0, p0}, Lb2/h;->c(Ljava/lang/String;Lcom/google/android/gms/common/api/internal/LifecycleCallback;)V
 
     return-void
 .end method
@@ -55,13 +55,13 @@
     .locals 3
 
     .line 1
-    iget-object v0, p0, Lc4/y$a;->g:Ljava/util/ArrayList;
+    iget-object v0, p0, Lc4/y$a;->h:Ljava/util/ArrayList;
 
     monitor-enter v0
 
     .line 2
     :try_start_0
-    iget-object v1, p0, Lc4/y$a;->g:Ljava/util/ArrayList;
+    iget-object v1, p0, Lc4/y$a;->h:Ljava/util/ArrayList;
 
     invoke-interface {v1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -97,7 +97,7 @@
 
     .line 5
     :cond_1
-    iget-object v1, p0, Lc4/y$a;->g:Ljava/util/ArrayList;
+    iget-object v1, p0, Lc4/y$a;->h:Ljava/util/ArrayList;
 
     invoke-interface {v1}, Ljava/util/List;->clear()V
 

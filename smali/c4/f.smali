@@ -195,7 +195,7 @@
 .method public abstract m()Z
 .end method
 
-.method public n(Ljava/util/concurrent/Executor;Ly5/e0;)Lc4/f;
+.method public n(Ljava/util/concurrent/Executor;Ly5/g0;)Lc4/f;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -203,7 +203,7 @@
             "Ljava/lang/Object;",
             ">(",
             "Ljava/util/concurrent/Executor;",
-            "Ly5/e0;",
+            "Ly5/g0;",
             ")",
             "Lc4/f<",
             "TTContinuationResult;>;"

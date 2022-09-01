@@ -14,7 +14,7 @@
 
 
 # static fields
-.field public static final enum h:Lo5/e0;
+.field public static final synthetic A:[Lo5/e0;
 
 .field public static final enum i:Lo5/e0;
 
@@ -30,15 +30,15 @@
 
 .field public static final enum o:Lo5/e0;
 
-.field public static final enum p:Lo5/e0$a;
+.field public static final enum p:Lo5/e0;
 
-.field public static final enum q:Lo5/e0$b;
+.field public static final enum q:Lo5/e0$a;
 
-.field public static final enum r:Lo5/e0$c;
+.field public static final enum r:Lo5/e0$b;
 
-.field public static final enum s:Lo5/e0$d;
+.field public static final enum s:Lo5/e0$c;
 
-.field public static final enum t:Lo5/e0;
+.field public static final enum t:Lo5/e0$d;
 
 .field public static final enum u:Lo5/e0;
 
@@ -50,13 +50,13 @@
 
 .field public static final enum y:Lo5/e0;
 
-.field public static final synthetic z:[Lo5/e0;
+.field public static final enum z:Lo5/e0;
 
 
 # instance fields
-.field public final f:Lo5/f0;
+.field public final g:Lo5/f0;
 
-.field public final g:I
+.field public final h:I
 
 
 # direct methods
@@ -66,7 +66,7 @@
     .line 1
     new-instance v0, Lo5/e0;
 
-    sget-object v1, Lo5/f0;->j:Lo5/f0;
+    sget-object v1, Lo5/f0;->k:Lo5/f0;
 
     const-string v2, "DOUBLE"
 
@@ -76,12 +76,12 @@
 
     invoke-direct {v0, v2, v3, v1, v4}, Lo5/e0;-><init>(Ljava/lang/String;ILo5/f0;I)V
 
-    sput-object v0, Lo5/e0;->h:Lo5/e0;
+    sput-object v0, Lo5/e0;->i:Lo5/e0;
 
     .line 2
     new-instance v1, Lo5/e0;
 
-    sget-object v2, Lo5/f0;->i:Lo5/f0;
+    sget-object v2, Lo5/f0;->j:Lo5/f0;
 
     const-string v5, "FLOAT"
 
@@ -89,12 +89,12 @@
 
     invoke-direct {v1, v5, v4, v2, v6}, Lo5/e0;-><init>(Ljava/lang/String;ILo5/f0;I)V
 
-    sput-object v1, Lo5/e0;->i:Lo5/e0;
+    sput-object v1, Lo5/e0;->j:Lo5/e0;
 
     .line 3
     new-instance v2, Lo5/e0;
 
-    sget-object v5, Lo5/f0;->h:Lo5/f0;
+    sget-object v5, Lo5/f0;->i:Lo5/f0;
 
     const-string v7, "INT64"
 
@@ -102,7 +102,7 @@
 
     invoke-direct {v2, v7, v8, v5, v3}, Lo5/e0;-><init>(Ljava/lang/String;ILo5/f0;I)V
 
-    sput-object v2, Lo5/e0;->j:Lo5/e0;
+    sput-object v2, Lo5/e0;->k:Lo5/e0;
 
     .line 4
     new-instance v7, Lo5/e0;
@@ -113,12 +113,12 @@
 
     invoke-direct {v7, v9, v10, v5, v3}, Lo5/e0;-><init>(Ljava/lang/String;ILo5/f0;I)V
 
-    sput-object v7, Lo5/e0;->k:Lo5/e0;
+    sput-object v7, Lo5/e0;->l:Lo5/e0;
 
     .line 5
     new-instance v9, Lo5/e0;
 
-    sget-object v11, Lo5/f0;->g:Lo5/f0;
+    sget-object v11, Lo5/f0;->h:Lo5/f0;
 
     const-string v12, "INT32"
 
@@ -126,7 +126,7 @@
 
     invoke-direct {v9, v12, v13, v11, v3}, Lo5/e0;-><init>(Ljava/lang/String;ILo5/f0;I)V
 
-    sput-object v9, Lo5/e0;->l:Lo5/e0;
+    sput-object v9, Lo5/e0;->m:Lo5/e0;
 
     .line 6
     new-instance v12, Lo5/e0;
@@ -135,7 +135,7 @@
 
     invoke-direct {v12, v14, v6, v5, v4}, Lo5/e0;-><init>(Ljava/lang/String;ILo5/f0;I)V
 
-    sput-object v12, Lo5/e0;->m:Lo5/e0;
+    sput-object v12, Lo5/e0;->n:Lo5/e0;
 
     .line 7
     new-instance v14, Lo5/e0;
@@ -146,12 +146,12 @@
 
     invoke-direct {v14, v15, v13, v11, v6}, Lo5/e0;-><init>(Ljava/lang/String;ILo5/f0;I)V
 
-    sput-object v14, Lo5/e0;->n:Lo5/e0;
+    sput-object v14, Lo5/e0;->o:Lo5/e0;
 
     .line 8
     new-instance v15, Lo5/e0;
 
-    sget-object v13, Lo5/f0;->k:Lo5/f0;
+    sget-object v13, Lo5/f0;->l:Lo5/f0;
 
     const-string v10, "BOOL"
 
@@ -159,41 +159,41 @@
 
     invoke-direct {v15, v10, v8, v13, v3}, Lo5/e0;-><init>(Ljava/lang/String;ILo5/f0;I)V
 
-    sput-object v15, Lo5/e0;->o:Lo5/e0;
+    sput-object v15, Lo5/e0;->p:Lo5/e0;
 
     .line 9
     new-instance v10, Lo5/e0$a;
 
-    sget-object v13, Lo5/f0;->l:Lo5/f0;
+    sget-object v13, Lo5/f0;->m:Lo5/f0;
 
     invoke-direct {v10}, Lo5/e0$a;-><init>()V
 
-    sput-object v10, Lo5/e0;->p:Lo5/e0$a;
+    sput-object v10, Lo5/e0;->q:Lo5/e0$a;
 
     .line 10
     new-instance v13, Lo5/e0$b;
 
-    sget-object v8, Lo5/f0;->o:Lo5/f0;
+    sget-object v8, Lo5/f0;->p:Lo5/f0;
 
     invoke-direct {v13, v8}, Lo5/e0$b;-><init>(Lo5/f0;)V
 
-    sput-object v13, Lo5/e0;->q:Lo5/e0$b;
+    sput-object v13, Lo5/e0;->r:Lo5/e0$b;
 
     .line 11
     new-instance v4, Lo5/e0$c;
 
     invoke-direct {v4, v8}, Lo5/e0$c;-><init>(Lo5/f0;)V
 
-    sput-object v4, Lo5/e0;->r:Lo5/e0$c;
+    sput-object v4, Lo5/e0;->s:Lo5/e0$c;
 
     .line 12
     new-instance v8, Lo5/e0$d;
 
-    sget-object v6, Lo5/f0;->m:Lo5/f0;
+    sget-object v6, Lo5/f0;->n:Lo5/f0;
 
     invoke-direct {v8, v6}, Lo5/e0$d;-><init>(Lo5/f0;)V
 
-    sput-object v8, Lo5/e0;->s:Lo5/e0$d;
+    sput-object v8, Lo5/e0;->t:Lo5/e0$d;
 
     .line 13
     new-instance v6, Lo5/e0;
@@ -208,12 +208,12 @@
 
     invoke-direct {v6, v8, v4, v11, v3}, Lo5/e0;-><init>(Ljava/lang/String;ILo5/f0;I)V
 
-    sput-object v6, Lo5/e0;->t:Lo5/e0;
+    sput-object v6, Lo5/e0;->u:Lo5/e0;
 
     .line 14
     new-instance v8, Lo5/e0;
 
-    sget-object v4, Lo5/f0;->n:Lo5/f0;
+    sget-object v4, Lo5/f0;->o:Lo5/f0;
 
     move-object/from16 v18, v6
 
@@ -225,7 +225,7 @@
 
     invoke-direct {v8, v6, v13, v4, v3}, Lo5/e0;-><init>(Ljava/lang/String;ILo5/f0;I)V
 
-    sput-object v8, Lo5/e0;->u:Lo5/e0;
+    sput-object v8, Lo5/e0;->v:Lo5/e0;
 
     .line 15
     new-instance v4, Lo5/e0;
@@ -238,7 +238,7 @@
 
     invoke-direct {v4, v6, v13, v11, v3}, Lo5/e0;-><init>(Ljava/lang/String;ILo5/f0;I)V
 
-    sput-object v4, Lo5/e0;->v:Lo5/e0;
+    sput-object v4, Lo5/e0;->w:Lo5/e0;
 
     .line 16
     new-instance v3, Lo5/e0;
@@ -253,7 +253,7 @@
 
     invoke-direct {v3, v6, v13, v5, v4}, Lo5/e0;-><init>(Ljava/lang/String;ILo5/f0;I)V
 
-    sput-object v3, Lo5/e0;->w:Lo5/e0;
+    sput-object v3, Lo5/e0;->x:Lo5/e0;
 
     .line 17
     new-instance v4, Lo5/e0;
@@ -268,7 +268,7 @@
 
     invoke-direct {v4, v6, v13, v11, v3}, Lo5/e0;-><init>(Ljava/lang/String;ILo5/f0;I)V
 
-    sput-object v4, Lo5/e0;->x:Lo5/e0;
+    sput-object v4, Lo5/e0;->y:Lo5/e0;
 
     .line 18
     new-instance v6, Lo5/e0;
@@ -279,7 +279,7 @@
 
     invoke-direct {v6, v13, v11, v5, v3}, Lo5/e0;-><init>(Ljava/lang/String;ILo5/f0;I)V
 
-    sput-object v6, Lo5/e0;->y:Lo5/e0;
+    sput-object v6, Lo5/e0;->z:Lo5/e0;
 
     const/16 v5, 0x12
 
@@ -354,7 +354,7 @@
     aput-object v6, v5, v11
 
     .line 19
-    sput-object v5, Lo5/e0;->z:[Lo5/e0;
+    sput-object v5, Lo5/e0;->A:[Lo5/e0;
 
     return-void
 .end method
@@ -373,10 +373,10 @@
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     .line 2
-    iput-object p3, p0, Lo5/e0;->f:Lo5/f0;
+    iput-object p3, p0, Lo5/e0;->g:Lo5/f0;
 
     .line 3
-    iput p4, p0, Lo5/e0;->g:I
+    iput p4, p0, Lo5/e0;->h:I
 
     return-void
 .end method
@@ -398,7 +398,7 @@
 .method public static values()[Lo5/e0;
     .locals 1
 
-    sget-object v0, Lo5/e0;->z:[Lo5/e0;
+    sget-object v0, Lo5/e0;->A:[Lo5/e0;
 
     invoke-virtual {v0}, [Lo5/e0;->clone()Ljava/lang/Object;
 

@@ -41,7 +41,7 @@
     iput-object p2, p0, Lac/a$d;->a:Ljava/lang/String;
 
     .line 3
-    iget p1, p1, Lac/a;->m:I
+    iget p1, p1, Lac/a;->n:I
 
     .line 4
     new-array p1, p1, [J
@@ -62,7 +62,7 @@
     iget-object v1, p0, Lac/a$d;->f:Lac/a;
 
     .line 2
-    iget-object v1, v1, Lac/a;->f:Ljava/io/File;
+    iget-object v1, v1, Lac/a;->g:Ljava/io/File;
 
     .line 3
     new-instance v2, Ljava/lang/StringBuilder;
@@ -97,7 +97,7 @@
     iget-object v1, p0, Lac/a$d;->f:Lac/a;
 
     .line 2
-    iget-object v1, v1, Lac/a;->f:Ljava/io/File;
+    iget-object v1, v1, Lac/a;->g:Ljava/io/File;
 
     .line 3
     new-instance v2, Ljava/lang/StringBuilder;

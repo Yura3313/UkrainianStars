@@ -3,94 +3,68 @@
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lk3/zm0;
+.implements Ljava/lang/Runnable;
 
 
 # instance fields
-.field public final a:Lcom/google/android/gms/internal/ads/v1;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lcom/google/android/gms/internal/ads/v1<",
-            "Lk3/zm0;",
-            ">;"
-        }
-    .end annotation
-.end field
+.field public final synthetic g:Landroid/content/Context;
+
+.field public final synthetic h:Landroid/view/View;
+
+.field public final synthetic i:Landroid/app/Activity;
 
 
 # direct methods
-.method public constructor <init>(Lcom/google/android/gms/internal/ads/v1;)V
+.method public constructor <init>(Landroid/content/Context;Landroid/view/View;)V
     .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lcom/google/android/gms/internal/ads/v1<",
-            "Lk3/zm0;",
-            ">;)V"
-        }
-    .end annotation
 
-    .line 1
+    iput-object p1, p0, Lk3/io0;->g:Landroid/content/Context;
+
+    iput-object p2, p0, Lk3/io0;->h:Landroid/view/View;
+
+    const/4 p1, 0x0
+
+    iput-object p1, p0, Lk3/io0;->i:Landroid/app/Activity;
+
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 2
-    iput-object p1, p0, Lk3/io0;->a:Lcom/google/android/gms/internal/ads/v1;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a([B[B)[B
-    .locals 3
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/security/GeneralSecurityException;
-        }
-    .end annotation
-
-    const/4 v0, 0x2
-
-    new-array v0, v0, [[B
+.method public final run()V
+    .locals 5
 
     .line 1
-    iget-object v1, p0, Lk3/io0;->a:Lcom/google/android/gms/internal/ads/v1;
+    :try_start_0
+    sget-object v0, Lcom/google/android/gms/internal/ads/h2;->E:Lk3/pi0;
 
     .line 2
-    iget-object v1, v1, Lcom/google/android/gms/internal/ads/v1;->b:Lk3/jn0;
+    iget-object v1, p0, Lk3/io0;->g:Landroid/content/Context;
+
+    iget-object v2, p0, Lk3/io0;->h:Landroid/view/View;
+
+    iget-object v3, p0, Lk3/io0;->i:Landroid/app/Activity;
+
+    invoke-virtual {v0, v1, v2, v3}, Lk3/pi0;->e(Landroid/content/Context;Landroid/view/View;Landroid/app/Activity;)Ljava/lang/String;
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    return-void
+
+    :catch_0
+    move-exception v0
 
     .line 3
-    invoke-virtual {v1}, Lk3/jn0;->a()[B
+    sget-object v1, Lcom/google/android/gms/internal/ads/h2;->G:Lcom/google/android/gms/internal/ads/e1;
 
-    move-result-object v1
+    const/16 v2, 0x7e4
 
-    const/4 v2, 0x0
-
-    aput-object v1, v0, v2
-
-    iget-object v1, p0, Lk3/io0;->a:Lcom/google/android/gms/internal/ads/v1;
+    const-wide/16 v3, -0x1
 
     .line 4
-    iget-object v1, v1, Lcom/google/android/gms/internal/ads/v1;->b:Lk3/jn0;
+    invoke-virtual {v1, v2, v3, v4, v0}, Lcom/google/android/gms/internal/ads/e1;->a(IJLjava/lang/Exception;)Lc4/f;
 
-    .line 5
-    iget-object v1, v1, Lk3/jn0;->a:Ljava/lang/Object;
-
-    .line 6
-    check-cast v1, Lk3/zm0;
-
-    invoke-interface {v1, p1, p2}, Lk3/zm0;->a([B[B)[B
-
-    move-result-object p1
-
-    const/4 p2, 0x1
-
-    aput-object p1, v0, p2
-
-    .line 7
-    invoke-static {v0}, Lk3/ep0;->c([[B)[B
-
-    move-result-object p1
-
-    return-object p1
+    return-void
 .end method

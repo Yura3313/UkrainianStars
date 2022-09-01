@@ -18,18 +18,18 @@
 
 
 # instance fields
-.field public final synthetic f:Lid/b0;
+.field public final synthetic g:Lid/b0;
 
-.field public final synthetic g:Lid/c0;
+.field public final synthetic h:Lid/c0;
 
 
 # direct methods
 .method public constructor <init>(Lid/b0;Lid/c0;)V
     .locals 0
 
-    iput-object p1, p0, Lid/c0$a;->f:Lid/b0;
+    iput-object p1, p0, Lid/c0$a;->g:Lid/b0;
 
-    iput-object p2, p0, Lid/c0$a;->g:Lid/c0;
+    iput-object p2, p0, Lid/c0$a;->h:Lid/c0;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -42,7 +42,7 @@
     .locals 5
 
     .line 1
-    iget-object p1, p0, Lid/c0$a;->g:Lid/c0;
+    iget-object p1, p0, Lid/c0$a;->h:Lid/c0;
 
     const/4 v0, 0x0
 
@@ -56,13 +56,13 @@
     invoke-virtual {v1, p1}, Lid/w;->c(Lid/w$a;)V
 
     .line 5
-    iget-object p1, p0, Lid/c0$a;->f:Lid/b0;
+    iget-object p1, p0, Lid/c0$a;->g:Lid/b0;
 
     .line 6
-    iget-object p1, p1, Lid/b0;->h:Lvc/n$j$i;
+    iget-object p1, p1, Lid/b0;->i:Lvc/m$j$i;
 
     .line 7
-    iget-object p1, p1, Lvc/n$j$i;->j:Ljava/util/List;
+    iget-object p1, p1, Lvc/m$j$i;->j:Ljava/util/List;
 
     .line 8
     new-instance v1, Ljava/util/ArrayList;
@@ -88,10 +88,10 @@
 
     move-object v3, v2
 
-    check-cast v3, Lvc/x;
+    check-cast v3, Lvc/v;
 
     .line 10
-    iget-object v3, v3, Lvc/x;->d:Ljava/util/List;
+    iget-object v3, v3, Lvc/v;->d:Ljava/util/List;
 
     .line 11
     sget-object v4, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
@@ -157,10 +157,10 @@
     .line 17
     move-object v2, v1
 
-    check-cast v2, Lvc/x;
+    check-cast v2, Lvc/v;
 
     .line 18
-    iget-object v2, v2, Lvc/x;->b:Ljava/lang/String;
+    iget-object v2, v2, Lvc/v;->b:Ljava/lang/String;
 
     .line 19
     invoke-interface {p1, v2}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -287,18 +287,18 @@
     iget-object p1, p1, Lae/u;->p:Lrc/h;
 
     .line 32
-    iget-object v0, p0, Lid/c0$a;->f:Lid/b0;
+    iget-object v0, p0, Lid/c0$a;->g:Lid/b0;
 
     .line 33
-    iget-object v0, v0, Lid/b0;->h:Lvc/n$j$i;
+    iget-object v0, v0, Lid/b0;->i:Lvc/m$j$i;
 
     .line 34
-    iget-object v0, v0, Lvc/n$j$i;->k:Ljava/lang/String;
+    iget-object v0, v0, Lvc/m$j$i;->k:Ljava/lang/String;
 
     const-string v1, "dismiss"
 
     .line 35
-    invoke-virtual {p1, v1, v0}, Lrc/h;->g(Ljava/lang/String;Ljava/lang/String;)Lze/e0;
+    invoke-virtual {p1, v1, v0}, Lrc/h;->g(Ljava/lang/String;Ljava/lang/String;)Lze/f0;
 
     return-void
 .end method

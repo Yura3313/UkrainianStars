@@ -7,18 +7,18 @@
 
 
 # instance fields
-.field public final synthetic f:Lo8/h;
+.field public final synthetic g:Lo8/h;
 
-.field public final synthetic g:Lra/i;
+.field public final synthetic h:Lra/i;
 
 
 # direct methods
 .method public constructor <init>(Lra/i;Lo8/h;)V
     .locals 0
 
-    iput-object p1, p0, Lra/h;->g:Lra/i;
+    iput-object p1, p0, Lra/h;->h:Lra/i;
 
-    iput-object p2, p0, Lra/h;->f:Lo8/h;
+    iput-object p2, p0, Lra/h;->g:Lo8/h;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -31,19 +31,19 @@
     .locals 2
 
     .line 1
-    iget-object p1, p0, Lra/h;->g:Lra/i;
+    iget-object p1, p0, Lra/h;->h:Lra/i;
 
     iget-object p1, p1, Lra/u;->b:Lra/u$a;
 
     if-eqz p1, :cond_0
 
     .line 2
-    iget-object v0, p0, Lra/h;->f:Lo8/h;
+    iget-object v0, p0, Lra/h;->g:Lo8/h;
 
     check-cast p1, Lqa/p0;
 
     .line 3
-    iget-object p1, p1, Lqa/p0;->e:Lra/x;
+    iget-object p1, p1, Lqa/p0;->e:Lra/w;
 
     if-eqz p1, :cond_0
 

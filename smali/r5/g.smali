@@ -394,7 +394,7 @@
 
     if-nez v0, :cond_0
 
-    invoke-static {}, Lr5/i0;->b()Z
+    invoke-static {}, Lr5/k0;->b()Z
 
     move-result p1
 
@@ -507,7 +507,7 @@
 
     .line 7
     :goto_1
-    invoke-static {v0}, Ll2/g;->c([B)[B
+    invoke-static {v0}, Ll2/p;->d([B)[B
 
     move-result-object v0
 
@@ -596,11 +596,11 @@
 
     .line 16
     :cond_4
-    invoke-static {p1}, Ll2/g;->b([B)[B
+    invoke-static {p1}, Ll2/p;->c([B)[B
 
     move-result-object p1
 
-    invoke-static {v0}, Ll2/g;->c([B)[B
+    invoke-static {v0}, Ll2/p;->d([B)[B
 
     move-result-object v0
 

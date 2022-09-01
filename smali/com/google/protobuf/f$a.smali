@@ -937,7 +937,7 @@
 
     .line 7
     :cond_2
-    sget p1, Lcom/google/protobuf/InvalidProtocolBufferException;->g:I
+    sget p1, Lcom/google/protobuf/InvalidProtocolBufferException;->h:I
 
     .line 8
     new-instance p1, Lcom/google/protobuf/InvalidProtocolBufferException$InvalidWireTypeException;
@@ -1060,7 +1060,7 @@
 
     .line 7
     :cond_2
-    sget p1, Lcom/google/protobuf/InvalidProtocolBufferException;->g:I
+    sget p1, Lcom/google/protobuf/InvalidProtocolBufferException;->h:I
 
     .line 8
     new-instance p1, Lcom/google/protobuf/InvalidProtocolBufferException$InvalidWireTypeException;
@@ -5571,7 +5571,7 @@
     if-nez v0, :cond_0
 
     .line 3
-    sget-object v0, Lcom/google/protobuf/i;->g:Lcom/google/protobuf/i$h;
+    sget-object v0, Lcom/google/protobuf/i;->h:Lcom/google/protobuf/i$h;
 
     return-object v0
 
@@ -5589,7 +5589,7 @@
     iget v2, p0, Lcom/google/protobuf/f$a;->c:I
 
     .line 6
-    sget-object v3, Lcom/google/protobuf/i;->g:Lcom/google/protobuf/i$h;
+    sget-object v3, Lcom/google/protobuf/i;->h:Lcom/google/protobuf/i$h;
 
     .line 7
     new-instance v3, Lcom/google/protobuf/i$d;

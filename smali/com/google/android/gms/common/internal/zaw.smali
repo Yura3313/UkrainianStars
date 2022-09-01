@@ -16,13 +16,13 @@
 
 
 # instance fields
-.field public final f:I
-
 .field public final g:I
 
 .field public final h:I
 
-.field public final i:[Lcom/google/android/gms/common/api/Scope;
+.field public final i:I
+
+.field public final j:[Lcom/google/android/gms/common/api/Scope;
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 .end field
@@ -32,9 +32,9 @@
 .method public static constructor <clinit>()V
     .locals 1
 
-    new-instance v0, Ld2/z;
+    new-instance v0, Ld2/a0;
 
-    invoke-direct {v0}, Ld2/z;-><init>()V
+    invoke-direct {v0}, Ld2/a0;-><init>()V
 
     sput-object v0, Lcom/google/android/gms/common/internal/zaw;->CREATOR:Landroid/os/Parcelable$Creator;
 
@@ -50,18 +50,18 @@
     const/4 v0, 0x1
 
     .line 2
-    iput v0, p0, Lcom/google/android/gms/common/internal/zaw;->f:I
+    iput v0, p0, Lcom/google/android/gms/common/internal/zaw;->g:I
 
     .line 3
-    iput p1, p0, Lcom/google/android/gms/common/internal/zaw;->g:I
+    iput p1, p0, Lcom/google/android/gms/common/internal/zaw;->h:I
 
     .line 4
-    iput p2, p0, Lcom/google/android/gms/common/internal/zaw;->h:I
+    iput p2, p0, Lcom/google/android/gms/common/internal/zaw;->i:I
 
     const/4 p1, 0x0
 
     .line 5
-    iput-object p1, p0, Lcom/google/android/gms/common/internal/zaw;->i:[Lcom/google/android/gms/common/api/Scope;
+    iput-object p1, p0, Lcom/google/android/gms/common/internal/zaw;->j:[Lcom/google/android/gms/common/api/Scope;
 
     return-void
 .end method
@@ -73,16 +73,16 @@
     invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
 
     .line 7
-    iput p1, p0, Lcom/google/android/gms/common/internal/zaw;->f:I
+    iput p1, p0, Lcom/google/android/gms/common/internal/zaw;->g:I
 
     .line 8
-    iput p2, p0, Lcom/google/android/gms/common/internal/zaw;->g:I
+    iput p2, p0, Lcom/google/android/gms/common/internal/zaw;->h:I
 
     .line 9
-    iput p3, p0, Lcom/google/android/gms/common/internal/zaw;->h:I
+    iput p3, p0, Lcom/google/android/gms/common/internal/zaw;->i:I
 
     .line 10
-    iput-object p4, p0, Lcom/google/android/gms/common/internal/zaw;->i:[Lcom/google/android/gms/common/api/Scope;
+    iput-object p4, p0, Lcom/google/android/gms/common/internal/zaw;->j:[Lcom/google/android/gms/common/api/Scope;
 
     return-void
 .end method
@@ -100,7 +100,7 @@
     move-result v0
 
     .line 2
-    iget v1, p0, Lcom/google/android/gms/common/internal/zaw;->f:I
+    iget v1, p0, Lcom/google/android/gms/common/internal/zaw;->g:I
 
     const/4 v2, 0x1
 
@@ -113,7 +113,7 @@
     invoke-virtual {p1, v1}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 5
-    iget v1, p0, Lcom/google/android/gms/common/internal/zaw;->g:I
+    iget v1, p0, Lcom/google/android/gms/common/internal/zaw;->h:I
 
     const/4 v2, 0x2
 
@@ -124,7 +124,7 @@
     invoke-virtual {p1, v1}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 8
-    iget v1, p0, Lcom/google/android/gms/common/internal/zaw;->h:I
+    iget v1, p0, Lcom/google/android/gms/common/internal/zaw;->i:I
 
     const/4 v2, 0x3
 
@@ -135,7 +135,7 @@
     invoke-virtual {p1, v1}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 11
-    iget-object v1, p0, Lcom/google/android/gms/common/internal/zaw;->i:[Lcom/google/android/gms/common/api/Scope;
+    iget-object v1, p0, Lcom/google/android/gms/common/internal/zaw;->j:[Lcom/google/android/gms/common/api/Scope;
 
     .line 12
     invoke-static {p1, v3, v1, p2}, Le2/b;->p(Landroid/os/Parcel;I[Landroid/os/Parcelable;I)V

@@ -264,7 +264,7 @@
 
     move-result-object p1
 
-    invoke-static {v1, p1}, La5/v;->c([B[B)[B
+    invoke-static {v1, p1}, Lae/l;->a([B[B)[B
 
     move-result-object p1
 
@@ -409,7 +409,7 @@
     move-result-object p2
 
     .line 13
-    invoke-static {v3, p2}, La5/v;->c([B[B)[B
+    invoke-static {v3, p2}, Lae/l;->a([B[B)[B
 
     move-result-object p2
 

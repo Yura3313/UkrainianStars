@@ -150,7 +150,7 @@
 .method public static c(Landroid/view/View;Landroid/util/AttributeSet;I)V
     .locals 8
 
-    sget v4, Lcom/google/android/material/appbar/AppBarLayout;->v:I
+    sget v4, Lcom/google/android/material/appbar/AppBarLayout;->w:I
 
     .line 1
     invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;

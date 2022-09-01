@@ -4,14 +4,14 @@
 
 
 # instance fields
-.field public final synthetic f:Ly1/h;
+.field public final synthetic g:Ly1/h;
 
 
 # direct methods
 .method public constructor <init>(Ly1/h;)V
     .locals 0
 
-    iput-object p1, p0, Ly1/k;->f:Ly1/h;
+    iput-object p1, p0, Ly1/k;->g:Ly1/h;
 
     invoke-direct {p0}, Lcom/google/android/gms/auth/api/signin/internal/zzc;-><init>()V
 
@@ -31,7 +31,7 @@
     if-eqz p1, :cond_0
 
     .line 1
-    iget-object v0, p0, Ly1/k;->f:Ly1/h;
+    iget-object v0, p0, Ly1/k;->g:Ly1/h;
 
     iget-object v0, v0, Ly1/h;->l:Landroid/content/Context;
 
@@ -39,7 +39,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Ly1/k;->f:Ly1/h;
+    iget-object v1, p0, Ly1/k;->g:Ly1/h;
 
     iget-object v1, v1, Ly1/h;->m:Lcom/google/android/gms/auth/api/signin/GoogleSignInOptions;
 
@@ -75,7 +75,7 @@
     .line 7
     :cond_0
     :goto_0
-    iget-object v0, p0, Ly1/k;->f:Ly1/h;
+    iget-object v0, p0, Ly1/k;->g:Ly1/h;
 
     new-instance v1, Lx1/b;
 

@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field public final h0:Lie/f;
+.field public final i0:Lie/g;
 
 
 # direct methods
@@ -30,13 +30,13 @@
 
     invoke-direct {v0, p0}, Lcom/supercell/id/ui/game/GameFragment$b$a;-><init>(Lcom/supercell/id/ui/game/GameFragment$b;)V
 
-    invoke-static {v0}, La5/r;->d(Lre/a;)Lie/c;
+    invoke-static {v0}, Ld2/u;->c(Lre/a;)Lie/c;
 
     move-result-object v0
 
-    check-cast v0, Lie/f;
+    check-cast v0, Lie/g;
 
-    iput-object v0, p0, Lcom/supercell/id/ui/game/GameFragment$b;->h0:Lie/f;
+    iput-object v0, p0, Lcom/supercell/id/ui/game/GameFragment$b;->i0:Lie/g;
 
     return-void
 .end method
@@ -54,7 +54,7 @@
 
     const-string p3, "inflater"
 
-    invoke-static {p1, p3}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p3}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     sget p3, Lcom/supercell/id/R$layout;->fragment_game_head:I
 
@@ -80,7 +80,7 @@
 
     const-string v0, "view"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     invoke-super {p0, p1, p2}, Lcom/supercell/id/ui/BaseFragment;->k0(Landroid/view/View;Landroid/os/Bundle;)V
@@ -96,7 +96,7 @@
 
     const-string p2, "view.head_logo"
 
-    invoke-static {p1, p2}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p2}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     new-instance p2, Ljava/lang/StringBuilder;
 
@@ -107,9 +107,9 @@
     invoke-virtual {p2, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     .line 3
-    iget-object v0, p0, Lcom/supercell/id/ui/game/GameFragment$b;->h0:Lie/f;
+    iget-object v0, p0, Lcom/supercell/id/ui/game/GameFragment$b;->i0:Lie/g;
 
-    invoke-virtual {v0}, Lie/f;->getValue()Ljava/lang/Object;
+    invoke-virtual {v0}, Lie/g;->getValue()Ljava/lang/Object;
 
     move-result-object v0
 
@@ -129,7 +129,7 @@
     const/4 v0, 0x1
 
     .line 5
-    invoke-static {p1, p2, v0}, Lud/f0;->h(Landroid/widget/ImageView;Ljava/lang/String;Z)V
+    invoke-static {p1, p2, v0}, Lud/d0;->h(Landroid/widget/ImageView;Ljava/lang/String;Z)V
 
     return-void
 .end method

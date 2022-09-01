@@ -1,5 +1,5 @@
 .class public final Lid/e$b;
-.super Lse/h;
+.super Lse/i;
 .source "DonationReceivedDialog.kt"
 
 # interfaces
@@ -18,7 +18,7 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/l<",
         "Ljava/lang/String;",
         "Landroid/text/SpannableStringBuilder;",
@@ -28,18 +28,18 @@
 
 
 # instance fields
-.field public final synthetic f:Landroid/view/View;
+.field public final synthetic g:Landroid/view/View;
 
 
 # direct methods
 .method public constructor <init>(Landroid/view/View;)V
     .locals 0
 
-    iput-object p1, p0, Lid/e$b;->f:Landroid/view/View;
+    iput-object p1, p0, Lid/e$b;->g:Landroid/view/View;
 
     const/4 p1, 0x1
 
-    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -55,7 +55,7 @@
     const-string v0, "text"
 
     .line 2
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 3
     new-instance v0, Landroid/text/SpannableStringBuilder;
@@ -70,11 +70,11 @@
     new-instance v2, Lae/j;
 
     .line 5
-    iget-object v3, p0, Lid/e$b;->f:Landroid/view/View;
+    iget-object v3, p0, Lid/e$b;->g:Landroid/view/View;
 
     const-string v4, "view"
 
-    invoke-static {v3, v4}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v3, v4}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v3}, Landroid/view/View;->getContext()Landroid/content/Context;
 
@@ -115,9 +115,9 @@
     new-instance v5, Landroid/text/style/ForegroundColorSpan;
 
     .line 12
-    iget-object v6, p0, Lid/e$b;->f:Landroid/view/View;
+    iget-object v6, p0, Lid/e$b;->g:Landroid/view/View;
 
-    invoke-static {v6, v4}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v6, v4}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v6}, Landroid/view/View;->getContext()Landroid/content/Context;
 
@@ -147,13 +147,13 @@
     aput-object v4, v1, v2
 
     .line 18
-    invoke-static {v0, p1, v1}, La5/w;->d(Landroid/text/SpannableStringBuilder;Ljava/lang/CharSequence;[Lie/d;)Landroid/text/SpannableStringBuilder;
+    invoke-static {v0, p1, v1}, Lae/t;->f(Landroid/text/SpannableStringBuilder;Ljava/lang/CharSequence;[Lie/d;)Landroid/text/SpannableStringBuilder;
 
     return-object v0
 
     .line 19
     :cond_0
-    invoke-static {}, Lt3/e;->f()V
+    invoke-static {}, Lt3/h;->j()V
 
     const/4 p1, 0x0
 

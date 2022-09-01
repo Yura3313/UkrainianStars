@@ -1,5 +1,5 @@
 .class public abstract Lpb/s;
-.super Lpb/f0;
+.super Lpb/g0;
 .source "PerMessageCompressionExtension.java"
 
 
@@ -7,7 +7,7 @@
 .method public constructor <init>(Ljava/lang/String;)V
     .locals 0
 
-    invoke-direct {p0, p1}, Lpb/f0;-><init>(Ljava/lang/String;)V
+    invoke-direct {p0, p1}, Lpb/g0;-><init>(Ljava/lang/String;)V
 
     return-void
 .end method

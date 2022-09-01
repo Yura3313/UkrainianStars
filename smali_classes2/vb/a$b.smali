@@ -52,7 +52,7 @@
     .line 2
     new-instance p1, Ljava/util/ArrayList;
 
-    iget-object v0, p0, Lvb/a$a;->f:Ljavax/net/ssl/SSLSocket;
+    iget-object v0, p0, Lvb/a$a;->g:Ljavax/net/ssl/SSLSocket;
 
     invoke-virtual {v0}, Ljavax/net/ssl/SSLSocket;->getEnabledProtocols()[Ljava/lang/String;
 

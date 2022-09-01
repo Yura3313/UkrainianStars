@@ -7,14 +7,14 @@
 
 
 # instance fields
-.field public final synthetic f:Lob/c;
+.field public final synthetic g:Lob/c;
 
 
 # direct methods
 .method public constructor <init>(Lob/c;)V
     .locals 0
 
-    iput-object p1, p0, Lob/a;->f:Lob/c;
+    iput-object p1, p0, Lob/a;->g:Lob/c;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -26,7 +26,7 @@
 .method public final run()V
     .locals 1
 
-    iget-object v0, p0, Lob/a;->f:Lob/c;
+    iget-object v0, p0, Lob/a;->g:Lob/c;
 
     invoke-virtual {v0}, Lob/c;->c()V
 

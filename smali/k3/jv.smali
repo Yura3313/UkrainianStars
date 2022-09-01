@@ -3,129 +3,114 @@
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lk3/y2;
+.implements Lk3/mv0;
 
 
 # instance fields
-.field public final synthetic f:I
+.field public final synthetic a:I
 
-.field public g:Ljava/lang/Object;
+.field public final b:Lk3/qv0;
+
+.field public final c:Ljava/lang/Object;
 
 
 # direct methods
-.method public constructor <init>(Lk3/fv;)V
+.method public constructor <init>(Lk3/k31;Lk3/qv0;)V
     .locals 1
 
     const/4 v0, 0x0
 
-    iput v0, p0, Lk3/jv;->f:I
-
-    .line 2
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 3
-    new-instance v0, Ljava/lang/ref/WeakReference;
-
-    invoke-direct {v0, p1}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
-
-    iput-object v0, p0, Lk3/jv;->g:Ljava/lang/Object;
-
-    return-void
-.end method
-
-.method public synthetic constructor <init>(Lk3/fv;Lk3/kc;)V
-    .locals 0
-
-    const/4 p2, 0x0
-
-    iput p2, p0, Lk3/jv;->f:I
+    iput v0, p0, Lk3/jv;->a:I
 
     .line 4
-    invoke-direct {p0, p1}, Lk3/jv;-><init>(Lk3/fv;)V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 5
+    iput-object p1, p0, Lk3/jv;->c:Ljava/lang/Object;
+
+    .line 6
+    iput-object p2, p0, Lk3/jv;->b:Lk3/qv0;
 
     return-void
 .end method
 
-.method public constructor <init>(Lk3/iw;)V
-    .locals 1
+.method public constructor <init>(Lk3/qv0;)V
+    .locals 2
 
-    const/4 v0, 0x1
+    sget-object v0, Lk3/q5;->k:Lk3/ei0;
 
-    iput v0, p0, Lk3/jv;->f:I
+    const/4 v1, 0x1
+
+    iput v1, p0, Lk3/jv;->a:I
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lk3/jv;->g:Ljava/lang/Object;
+    .line 2
+    iput-object v0, p0, Lk3/jv;->b:Lk3/qv0;
+
+    .line 3
+    iput-object p1, p0, Lk3/jv;->c:Ljava/lang/Object;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final c(Ljava/lang/Object;Ljava/util/Map;)V
-    .locals 1
+.method public final get()Ljava/lang/Object;
+    .locals 3
 
-    iget p2, p0, Lk3/jv;->f:I
+    iget v0, p0, Lk3/jv;->a:I
 
-    packed-switch p2, :pswitch_data_0
-
-    goto :goto_1
-
-    .line 1
-    :pswitch_0
-    iget-object p1, p0, Lk3/jv;->g:Ljava/lang/Object;
-
-    check-cast p1, Ljava/lang/ref/WeakReference;
-
-    invoke-virtual {p1}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
-
-    move-result-object p1
-
-    check-cast p1, Lk3/fv;
-
-    if-nez p1, :cond_0
+    packed-switch v0, :pswitch_data_0
 
     goto :goto_0
 
+    .line 1
+    :pswitch_0
+    iget-object v0, p0, Lk3/jv;->b:Lk3/qv0;
+
+    invoke-interface {v0}, Lk3/qv0;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lk3/tv;
+
     .line 2
-    :cond_0
-    iget-object p1, p1, Lk3/fv;->g:Lk3/hr;
+    invoke-virtual {v0}, Lk3/tv;->b()Lorg/json/JSONObject;
+
+    move-result-object v0
+
+    return-object v0
 
     .line 3
-    invoke-virtual {p1}, Lk3/hr;->O()V
-
     :goto_0
-    return-void
+    iget-object v0, p0, Lk3/jv;->b:Lk3/qv0;
+
+    invoke-interface {v0}, Lk3/qv0;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lk3/jm0;
+
+    iget-object v1, p0, Lk3/jv;->c:Ljava/lang/Object;
+
+    check-cast v1, Lk3/qv0;
+
+    invoke-interface {v1}, Lk3/qv0;->get()Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Landroid/content/Context;
 
     .line 4
-    :goto_1
-    iget-object p2, p0, Lk3/jv;->g:Ljava/lang/Object;
+    new-instance v2, Lk3/xc0;
 
-    check-cast p2, Lk3/iw;
+    invoke-direct {v2, v0, v1}, Lk3/xc0;-><init>(Lk3/jm0;Landroid/content/Context;)V
 
-    check-cast p1, Lk3/gh;
+    return-object v2
 
-    invoke-virtual {p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    .line 5
-    invoke-interface {p1}, Lk3/gh;->getView()Landroid/view/View;
-
-    move-result-object p1
-
-    const/4 v0, 0x0
-
-    invoke-virtual {p1, v0}, Landroid/view/View;->setVisibility(I)V
-
-    .line 6
-    iget-object p1, p2, Lk3/iw;->c:Lk3/mm;
-
-    const/4 p2, 0x1
-
-    .line 7
-    iput-boolean p2, p1, Lk3/mm;->k:Z
-
-    return-void
+    nop
 
     :pswitch_data_0
     .packed-switch 0x0

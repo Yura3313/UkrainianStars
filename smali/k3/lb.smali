@@ -24,9 +24,9 @@
     .locals 1
 
     .line 1
-    sget-object v0, Li1/o;->B:Li1/o;
+    sget-object v0, Li1/p;->B:Li1/p;
 
-    iget-object v0, v0, Li1/o;->c:Lk3/bb;
+    iget-object v0, v0, Li1/p;->c:Lk3/bb;
 
     const-string v0, "android.permission.ACCESS_NETWORK_STATE"
 

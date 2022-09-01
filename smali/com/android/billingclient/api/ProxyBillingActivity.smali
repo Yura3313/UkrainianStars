@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field public f:Landroid/os/ResultReceiver;
+.field public g:Landroid/os/ResultReceiver;
 
-.field public g:Z
+.field public h:Z
 
 
 # direct methods
@@ -85,7 +85,7 @@
     sget p2, Lw3/a;->a:I
 
     :goto_1
-    iget-object p2, p0, Lcom/android/billingclient/api/ProxyBillingActivity;->f:Landroid/os/ResultReceiver;
+    iget-object p2, p0, Lcom/android/billingclient/api/ProxyBillingActivity;->g:Landroid/os/ResultReceiver;
 
     if-eqz p2, :cond_3
 
@@ -133,7 +133,7 @@
 
     .line 10
     :goto_3
-    iput-boolean v0, p0, Lcom/android/billingclient/api/ProxyBillingActivity;->g:Z
+    iput-boolean v0, p0, Lcom/android/billingclient/api/ProxyBillingActivity;->h:Z
 
     .line 11
     invoke-virtual {p0}, Landroid/app/Activity;->finish()V
@@ -220,7 +220,7 @@
 
     check-cast v1, Landroid/os/ResultReceiver;
 
-    iput-object v1, p0, Lcom/android/billingclient/api/ProxyBillingActivity;->f:Landroid/os/ResultReceiver;
+    iput-object v1, p0, Lcom/android/billingclient/api/ProxyBillingActivity;->g:Landroid/os/ResultReceiver;
 
     goto :goto_0
 
@@ -232,7 +232,7 @@
 
     .line 8
     :try_start_0
-    iput-boolean v1, p0, Lcom/android/billingclient/api/ProxyBillingActivity;->g:Z
+    iput-boolean v1, p0, Lcom/android/billingclient/api/ProxyBillingActivity;->h:Z
 
     .line 9
     invoke-virtual {p1}, Landroid/app/PendingIntent;->getIntentSender()Landroid/content/IntentSender;
@@ -280,7 +280,7 @@
 
     sget p1, Lw3/a;->a:I
 
-    iget-object p1, p0, Lcom/android/billingclient/api/ProxyBillingActivity;->f:Landroid/os/ResultReceiver;
+    iget-object p1, p0, Lcom/android/billingclient/api/ProxyBillingActivity;->g:Landroid/os/ResultReceiver;
 
     const/4 v1, 0x6
 
@@ -314,7 +314,7 @@
 
     .line 17
     :goto_1
-    iput-boolean v0, p0, Lcom/android/billingclient/api/ProxyBillingActivity;->g:Z
+    iput-boolean v0, p0, Lcom/android/billingclient/api/ProxyBillingActivity;->h:Z
 
     .line 18
     invoke-virtual {p0}, Landroid/app/Activity;->finish()V
@@ -332,7 +332,7 @@
 
     move-result v0
 
-    iput-boolean v0, p0, Lcom/android/billingclient/api/ProxyBillingActivity;->g:Z
+    iput-boolean v0, p0, Lcom/android/billingclient/api/ProxyBillingActivity;->h:Z
 
     .line 21
     invoke-virtual {p1, v1}, Landroid/os/Bundle;->containsKey(Ljava/lang/String;)Z
@@ -348,7 +348,7 @@
 
     check-cast p1, Landroid/os/ResultReceiver;
 
-    iput-object p1, p0, Lcom/android/billingclient/api/ProxyBillingActivity;->f:Landroid/os/ResultReceiver;
+    iput-object p1, p0, Lcom/android/billingclient/api/ProxyBillingActivity;->g:Landroid/os/ResultReceiver;
 
     :cond_4
     return-void
@@ -370,7 +370,7 @@
     return-void
 
     :cond_0
-    iget-boolean v0, p0, Lcom/android/billingclient/api/ProxyBillingActivity;->g:Z
+    iget-boolean v0, p0, Lcom/android/billingclient/api/ProxyBillingActivity;->h:Z
 
     if-nez v0, :cond_1
 
@@ -405,7 +405,7 @@
 .method public final onSaveInstanceState(Landroid/os/Bundle;)V
     .locals 2
 
-    iget-object v0, p0, Lcom/android/billingclient/api/ProxyBillingActivity;->f:Landroid/os/ResultReceiver;
+    iget-object v0, p0, Lcom/android/billingclient/api/ProxyBillingActivity;->g:Landroid/os/ResultReceiver;
 
     if-eqz v0, :cond_0
 
@@ -415,7 +415,7 @@
     invoke-virtual {p1, v1, v0}, Landroid/os/Bundle;->putParcelable(Ljava/lang/String;Landroid/os/Parcelable;)V
 
     :cond_0
-    iget-boolean v0, p0, Lcom/android/billingclient/api/ProxyBillingActivity;->g:Z
+    iget-boolean v0, p0, Lcom/android/billingclient/api/ProxyBillingActivity;->h:Z
 
     const-string v1, "send_cancelled_broadcast_if_finished"
 

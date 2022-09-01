@@ -16,7 +16,7 @@
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lf5/i$b<",
-        "Lr5/a0;",
+        "Lr5/c0;",
         "Ln5/i;",
         ">;"
     }
@@ -27,7 +27,7 @@
 .method public constructor <init>()V
     .locals 1
 
-    const-class v0, Lr5/a0;
+    const-class v0, Lr5/c0;
 
     invoke-direct {p0, v0}, Lf5/i$b;-><init>(Ljava/lang/Class;)V
 

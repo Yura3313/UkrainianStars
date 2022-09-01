@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field public final synthetic f:Lid/p;
+.field public final synthetic g:Lid/p;
 
 
 # direct methods
 .method public constructor <init>(Lid/p;)V
     .locals 0
 
-    iput-object p1, p0, Lid/p$a;->f:Lid/p;
+    iput-object p1, p0, Lid/p$a;->g:Lid/p;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -38,9 +38,9 @@
     .locals 3
 
     .line 1
-    iget-object v0, p0, Lid/p$a;->f:Lid/p;
+    iget-object v0, p0, Lid/p$a;->g:Lid/p;
 
-    iget-object v0, v0, Lid/p;->f:Ljava/lang/ref/WeakReference;
+    iget-object v0, v0, Lid/p;->g:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {v0}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
 
@@ -58,14 +58,14 @@
     move-result-object v1
 
     .line 3
-    iget-object v1, v1, Lae/u;->x:Lae/i0;
+    iget-object v1, v1, Lae/u;->x:Lae/h0;
 
     .line 4
-    iget-object v2, p0, Lid/p$a;->f:Lid/p;
+    iget-object v2, p0, Lid/p$a;->g:Lid/p;
 
-    iget-object v2, v2, Lid/p;->g:Lvc/n;
+    iget-object v2, v2, Lid/p;->h:Lvc/m;
 
-    invoke-virtual {v1, v0, v2}, Lae/i0;->c(Landroid/app/Activity;Lvc/n;)V
+    invoke-virtual {v1, v0, v2}, Lae/h0;->c(Landroid/app/Activity;Lvc/m;)V
 
     :cond_0
     return-void

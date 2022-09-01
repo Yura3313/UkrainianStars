@@ -54,7 +54,7 @@
 
     iget-object v1, p1, Lbe/h$b$g;->a:Lcom/supercell/id/model/IdSocialAccount;
 
-    invoke-static {v0, v1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
@@ -64,7 +64,7 @@
 
     iget-object v1, p1, Lbe/h$b$g;->b:Ljava/lang/String;
 
-    invoke-static {v0, v1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
@@ -74,7 +74,7 @@
 
     iget-object p1, p1, Lbe/h$b$g;->c:Lcom/supercell/id/model/ProfileImage;
 
-    invoke-static {v0, p1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, p1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -166,7 +166,7 @@
 
     move-object v3, v2
 
-    check-cast v3, Lvc/j;
+    check-cast v3, Lvc/i;
 
     if-eqz v3, :cond_2
 
@@ -175,7 +175,7 @@
     const/4 v5, 0x0
 
     .line 3
-    iget-object v1, v3, Lvc/j;->c:Ljava/util/List;
+    iget-object v1, v3, Lvc/i;->c:Ljava/util/List;
 
     .line 4
     new-instance v2, Ljava/util/ArrayList;
@@ -201,15 +201,15 @@
 
     move-object v7, v6
 
-    check-cast v7, Lvc/i;
+    check-cast v7, Lvc/h;
 
     .line 6
-    iget-object v7, v7, Lvc/i;->a:Lcom/supercell/id/model/IdSocialAccount;
+    iget-object v7, v7, Lvc/h;->a:Lcom/supercell/id/model/IdSocialAccount;
 
     .line 7
     iget-object v8, v0, Lbe/h$b$g;->a:Lcom/supercell/id/model/IdSocialAccount;
 
-    invoke-static {v7, v8}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v7, v8}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v7
 
@@ -222,7 +222,7 @@
     goto :goto_0
 
     :cond_1
-    new-instance v1, Lvc/i;
+    new-instance v1, Lvc/h;
 
     iget-object v9, v0, Lbe/h$b$g;->a:Lcom/supercell/id/model/IdSocialAccount;
 
@@ -244,13 +244,13 @@
 
     const/4 v15, 0x0
 
-    sget-object v16, Lje/l;->f:Lje/l;
+    sget-object v16, Lje/l;->g:Lje/l;
 
     move-object v8, v1
 
-    invoke-direct/range {v8 .. v16}, Lvc/i;-><init>(Lcom/supercell/id/model/IdSocialAccount;Ljava/lang/String;Lcom/supercell/id/model/ProfileImage;Lcom/supercell/id/model/IdPresenceStatus;Lcom/supercell/id/model/IdRelationshipStatus;IZLjava/util/List;)V
+    invoke-direct/range {v8 .. v16}, Lvc/h;-><init>(Lcom/supercell/id/model/IdSocialAccount;Ljava/lang/String;Lcom/supercell/id/model/ProfileImage;Lcom/supercell/id/model/IdPresenceStatus;Lcom/supercell/id/model/IdRelationshipStatus;IZLjava/util/List;)V
 
-    invoke-static {v2, v1}, Lje/j;->J(Ljava/util/Collection;Ljava/lang/Object;)Ljava/util/List;
+    invoke-static {v2, v1}, Lje/j;->E(Ljava/util/Collection;Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object v6
 
@@ -258,7 +258,7 @@
 
     const/16 v8, 0xb
 
-    invoke-static/range {v3 .. v8}, Lvc/j;->b(Lvc/j;Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/util/List;I)Lvc/j;
+    invoke-static/range {v3 .. v8}, Lvc/i;->b(Lvc/i;Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/util/List;I)Lvc/i;
 
     move-result-object v1
 

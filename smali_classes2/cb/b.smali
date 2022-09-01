@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field public final f:Ljava/lang/String;
-
 .field public final g:Ljava/lang/String;
+
+.field public final h:Ljava/lang/String;
 
 
 # direct methods
@@ -20,10 +20,10 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lcb/b;->f:Ljava/lang/String;
+    iput-object p1, p0, Lcb/b;->g:Ljava/lang/String;
 
     .line 3
-    iput-object p2, p0, Lcb/b;->g:Ljava/lang/String;
+    iput-object p2, p0, Lcb/b;->h:Ljava/lang/String;
 
     return-void
 .end method
@@ -56,18 +56,18 @@
     check-cast p1, Lcb/b;
 
     .line 3
-    iget-object v2, p0, Lcb/b;->f:Ljava/lang/String;
+    iget-object v2, p0, Lcb/b;->g:Ljava/lang/String;
 
     if-nez v2, :cond_2
 
-    iget-object v2, p1, Lcb/b;->f:Ljava/lang/String;
+    iget-object v2, p1, Lcb/b;->g:Ljava/lang/String;
 
     if-eqz v2, :cond_3
 
     goto :goto_0
 
     :cond_2
-    iget-object v3, p1, Lcb/b;->f:Ljava/lang/String;
+    iget-object v3, p1, Lcb/b;->g:Ljava/lang/String;
 
     invoke-virtual {v2, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -80,9 +80,9 @@
 
     .line 4
     :cond_3
-    iget-object v2, p0, Lcb/b;->g:Ljava/lang/String;
+    iget-object v2, p0, Lcb/b;->h:Ljava/lang/String;
 
-    iget-object p1, p1, Lcb/b;->g:Ljava/lang/String;
+    iget-object p1, p1, Lcb/b;->h:Ljava/lang/String;
 
     if-nez v2, :cond_5
 

@@ -1,195 +1,102 @@
 .class public final Lie/f;
 .super Ljava/lang/Object;
-.source "LazyJVM.kt"
-
-# interfaces
-.implements Lie/c;
-.implements Ljava/io/Serializable;
-
-
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "<T:",
-        "Ljava/lang/Object;",
-        ">",
-        "Ljava/lang/Object;",
-        "Lie/c<",
-        "TT;>;",
-        "Ljava/io/Serializable;"
-    }
-.end annotation
-
-
-# instance fields
-.field public f:Lre/a;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lre/a<",
-            "+TT;>;"
-        }
-    .end annotation
-.end field
-
-.field public volatile g:Ljava/lang/Object;
-
-.field public final h:Ljava/lang/Object;
+.source "Result.kt"
 
 
 # direct methods
-.method public constructor <init>(Lre/a;)V
+.method public static final a(Ljava/lang/Throwable;)Ljava/lang/Object;
     .locals 1
 
-    const-string v0, "initializer"
+    const-string v0, "exception"
+
+    invoke-static {p0, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    new-instance v0, Lie/e$a;
+
+    invoke-direct {v0, p0}, Lie/e$a;-><init>(Ljava/lang/Throwable;)V
+
+    return-object v0
+.end method
+
+.method public static final b(Lke/f;Ljava/lang/Throwable;)V
+    .locals 1
+
+    const-string v0, "context"
+
+    invoke-static {p0, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    :try_start_0
+    sget-object v0, Lkotlinx/coroutines/CoroutineExceptionHandler$a;->a:Lkotlinx/coroutines/CoroutineExceptionHandler$a;
+
+    invoke-interface {p0, v0}, Lke/f;->get(Lke/f$b;)Lke/f$a;
+
+    move-result-object v0
+
+    check-cast v0, Lkotlinx/coroutines/CoroutineExceptionHandler;
+
+    if-eqz v0, :cond_0
 
     .line 2
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-interface {v0, p0, p1}, Lkotlinx/coroutines/CoroutineExceptionHandler;->handleException(Lke/f;Ljava/lang/Throwable;)V
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    return-void
 
     .line 3
-    iput-object p1, p0, Lie/f;->f:Lre/a;
+    :cond_0
+    invoke-static {p0, p1}, Lze/x;->a(Lke/f;Ljava/lang/Throwable;)V
+
+    return-void
+
+    :catchall_0
+    move-exception v0
 
     .line 4
-    sget-object p1, La5/r;->b:La5/r;
+    invoke-static {p1, v0}, Lie/f;->c(Ljava/lang/Throwable;Ljava/lang/Throwable;)Ljava/lang/Throwable;
 
-    iput-object p1, p0, Lie/f;->g:Ljava/lang/Object;
+    move-result-object p1
 
-    .line 5
-    iput-object p0, p0, Lie/f;->h:Ljava/lang/Object;
+    invoke-static {p0, p1}, Lze/x;->a(Lke/f;Ljava/lang/Throwable;)V
 
     return-void
 .end method
 
-.method private final writeReplace()Ljava/lang/Object;
+.method public static final c(Ljava/lang/Throwable;Ljava/lang/Throwable;)Ljava/lang/Throwable;
     .locals 2
 
-    new-instance v0, Lie/b;
+    if-ne p0, p1, :cond_0
 
-    invoke-virtual {p0}, Lie/f;->getValue()Ljava/lang/Object;
+    return-object p0
 
-    move-result-object v1
+    .line 1
+    :cond_0
+    new-instance v0, Ljava/lang/RuntimeException;
 
-    invoke-direct {v0, v1}, Lie/b;-><init>(Ljava/lang/Object;)V
+    const-string v1, "Exception while trying to handle coroutine exception"
+
+    invoke-direct {v0, v1, p1}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
+
+    .line 2
+    invoke-static {v0, p0}, La5/g0;->h(Ljava/lang/Throwable;Ljava/lang/Throwable;)V
 
     return-object v0
 .end method
 
+.method public static final d(Ljava/lang/Object;)V
+    .locals 1
 
-# virtual methods
-.method public final getValue()Ljava/lang/Object;
-    .locals 3
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()TT;"
-        }
-    .end annotation
+    instance-of v0, p0, Lie/e$a;
 
-    .line 1
-    iget-object v0, p0, Lie/f;->g:Ljava/lang/Object;
+    if-nez v0, :cond_0
 
-    .line 2
-    sget-object v1, La5/r;->b:La5/r;
-
-    if-eq v0, v1, :cond_0
-
-    return-object v0
-
-    .line 3
-    :cond_0
-    iget-object v0, p0, Lie/f;->h:Ljava/lang/Object;
-
-    monitor-enter v0
-
-    .line 4
-    :try_start_0
-    iget-object v2, p0, Lie/f;->g:Ljava/lang/Object;
-
-    if-eq v2, v1, :cond_1
-
-    goto :goto_0
-
-    .line 5
-    :cond_1
-    iget-object v1, p0, Lie/f;->f:Lre/a;
-
-    const/4 v2, 0x0
-
-    if-eqz v1, :cond_2
-
-    invoke-interface {v1}, Lre/a;->invoke()Ljava/lang/Object;
-
-    move-result-object v1
-
-    .line 6
-    iput-object v1, p0, Lie/f;->g:Ljava/lang/Object;
-
-    .line 7
-    iput-object v2, p0, Lie/f;->f:Lre/a;
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    move-object v2, v1
-
-    .line 8
-    :goto_0
-    monitor-exit v0
-
-    return-object v2
-
-    .line 9
-    :cond_2
-    :try_start_1
-    invoke-static {}, Lt3/e;->f()V
-
-    throw v2
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
-    :catchall_0
-    move-exception v1
-
-    .line 10
-    monitor-exit v0
-
-    throw v1
-.end method
-
-.method public final toString()Ljava/lang/String;
-    .locals 2
-
-    .line 1
-    iget-object v0, p0, Lie/f;->g:Ljava/lang/Object;
-
-    sget-object v1, La5/r;->b:La5/r;
-
-    if-eq v0, v1, :cond_0
-
-    const/4 v0, 0x1
-
-    goto :goto_0
+    return-void
 
     :cond_0
-    const/4 v0, 0x0
+    check-cast p0, Lie/e$a;
 
-    :goto_0
-    if-eqz v0, :cond_1
+    iget-object p0, p0, Lie/e$a;->g:Ljava/lang/Throwable;
 
-    .line 2
-    invoke-virtual {p0}, Lie/f;->getValue()Ljava/lang/Object;
-
-    move-result-object v0
-
-    invoke-static {v0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object v0
-
-    goto :goto_1
-
-    :cond_1
-    const-string v0, "Lazy value not initialized yet."
-
-    :goto_1
-    return-object v0
+    throw p0
 .end method

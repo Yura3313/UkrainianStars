@@ -1,94 +1,90 @@
 .class public final Lv3/l1;
-.super Lv3/i1;
+.super Lv3/h1;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lv3/i1<",
-        "Ljava/lang/Boolean;",
+        "Lv3/h1<",
+        "Ljava/lang/Double;",
         ">;"
     }
 .end annotation
 
 
 # direct methods
-.method public constructor <init>(Lv3/o1;Ljava/lang/String;Ljava/lang/Boolean;)V
+.method public constructor <init>(Lv3/n1;Ljava/lang/String;Ljava/lang/Double;)V
     .locals 1
 
     const/4 v0, 0x0
 
-    invoke-direct {p0, p1, p2, p3, v0}, Lv3/i1;-><init>(Lv3/o1;Ljava/lang/String;Ljava/lang/Object;Lv3/j1;)V
+    invoke-direct {p0, p1, p2, p3, v0}, Lv3/h1;-><init>(Lv3/n1;Ljava/lang/String;Ljava/lang/Object;Lv3/i1;)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final synthetic c(Ljava/lang/Object;)Ljava/lang/Object;
+.method public final c(Ljava/lang/Object;)Ljava/lang/Object;
     .locals 2
 
     .line 1
-    instance-of v0, p1, Ljava/lang/Boolean;
+    instance-of v0, p1, Ljava/lang/Double;
 
     if-eqz v0, :cond_0
 
     .line 2
-    check-cast p1, Ljava/lang/Boolean;
+    check-cast p1, Ljava/lang/Double;
 
-    return-object p1
+    goto :goto_0
 
     .line 3
     :cond_0
+    instance-of v0, p1, Ljava/lang/Float;
+
+    if-eqz v0, :cond_1
+
+    .line 4
+    check-cast p1, Ljava/lang/Float;
+
+    invoke-virtual {p1}, Ljava/lang/Float;->doubleValue()D
+
+    move-result-wide v0
+
+    invoke-static {v0, v1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
+
+    move-result-object p1
+
+    goto :goto_0
+
+    .line 5
+    :cond_1
     instance-of v0, p1, Ljava/lang/String;
 
     if-eqz v0, :cond_2
 
-    .line 4
+    .line 6
+    :try_start_0
     move-object v0, p1
 
     check-cast v0, Ljava/lang/String;
 
-    .line 5
-    sget-object v1, Lv3/x0;->c:Ljava/util/regex/Pattern;
+    invoke-static {v0}, Ljava/lang/Double;->parseDouble(Ljava/lang/String;)D
 
-    invoke-virtual {v1, v0}, Ljava/util/regex/Pattern;->matcher(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
+    move-result-wide v0
 
-    move-result-object v1
+    invoke-static {v0, v1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
 
-    invoke-virtual {v1}, Ljava/util/regex/Matcher;->matches()Z
+    move-result-object p1
+    :try_end_0
+    .catch Ljava/lang/NumberFormatException; {:try_start_0 .. :try_end_0} :catch_0
 
-    move-result v1
-
-    if-eqz v1, :cond_1
-
-    .line 6
-    sget-object p1, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
-
-    return-object p1
+    goto :goto_0
 
     .line 7
-    :cond_1
-    sget-object v1, Lv3/x0;->d:Ljava/util/regex/Pattern;
-
-    invoke-virtual {v1, v0}, Ljava/util/regex/Pattern;->matcher(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
-
-    move-result-object v0
-
-    invoke-virtual {v0}, Ljava/util/regex/Matcher;->matches()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_2
-
-    .line 8
-    sget-object p1, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
-
-    return-object p1
-
-    .line 9
+    :catch_0
     :cond_2
-    invoke-virtual {p0}, Lv3/i1;->e()Ljava/lang/String;
+    invoke-virtual {p0}, Lv3/h1;->e()Ljava/lang/String;
 
     move-result-object v0
 
@@ -96,14 +92,14 @@
 
     move-result-object p1
 
-    const/16 v1, 0x1c
+    const/16 v1, 0x1b
 
-    .line 10
-    invoke-static {v0, v1}, La1/e;->a(Ljava/lang/String;I)I
+    .line 8
+    invoke-static {v0, v1}, La1/e;->b(Ljava/lang/String;I)I
 
     move-result v0
 
-    .line 11
+    .line 9
     invoke-virtual {p1}, Ljava/lang/String;->length()I
 
     move-result p1
@@ -116,5 +112,6 @@
 
     const/4 p1, 0x0
 
+    :goto_0
     return-object p1
 .end method

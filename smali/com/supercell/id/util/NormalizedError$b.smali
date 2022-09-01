@@ -30,7 +30,7 @@
 
     const-string v0, "exception"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     instance-of v0, p1, Lcom/supercell/id/api/ApiServerException;
@@ -42,7 +42,7 @@
     check-cast p1, Lcom/supercell/id/api/ApiServerException;
 
     .line 2
-    iget v1, p1, Lcom/supercell/id/api/ApiServerException;->f:I
+    iget v1, p1, Lcom/supercell/id/api/ApiServerException;->g:I
 
     .line 3
     invoke-static {v1}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
@@ -64,7 +64,7 @@
     move-result-object v1
 
     .line 6
-    iget p1, p1, Lcom/supercell/id/api/ApiServerException;->f:I
+    iget p1, p1, Lcom/supercell/id/api/ApiServerException;->g:I
 
     .line 7
     invoke-virtual {v1, p1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
@@ -94,7 +94,7 @@
     check-cast p1, Lcom/supercell/id/api/ApiError;
 
     .line 9
-    iget-object p1, p1, Lcom/supercell/id/api/ApiError;->f:Ljava/lang/String;
+    iget-object p1, p1, Lcom/supercell/id/api/ApiError;->g:Ljava/lang/String;
 
     .line 10
     invoke-virtual {p0, p1}, Lcom/supercell/id/util/NormalizedError$b;->b(Ljava/lang/String;)Lcom/supercell/id/util/NormalizedError;
@@ -120,10 +120,10 @@
 
     const-string v0, "error"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
-    invoke-static {p1}, Lye/n;->i(Ljava/lang/CharSequence;)Z
+    invoke-static {p1}, Lye/n;->j(Ljava/lang/CharSequence;)Z
 
     move-result v0
 
@@ -147,7 +147,7 @@
     move-result-object v0
 
     .line 3
-    iget-object v0, v0, Lae/u;->m:La5/d0;
+    iget-object v0, v0, Lae/u;->m:Lpe/a;
 
     const/4 v2, 0x0
 
@@ -156,7 +156,7 @@
     const-string v4, "Error"
 
     .line 4
-    invoke-static {v0, v4, v7, v2, v3}, La5/d0;->a(La5/d0;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;I)V
+    invoke-static {v0, v4, v7, v2, v3}, Lpe/a;->e(Lpe/a;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;I)V
 
     .line 5
     new-instance v0, Ljava/lang/StringBuilder;
@@ -183,10 +183,10 @@
     move-result-object p1
 
     .line 7
-    iget-object p1, p1, Lae/u;->s:Lud/j;
+    iget-object p1, p1, Lae/u;->s:Lud/i;
 
     .line 8
-    invoke-virtual {p1, v0}, Lud/j;->g(Ljava/lang/String;)Ljava/lang/String;
+    invoke-virtual {p1, v0}, Lud/i;->g(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 
@@ -202,21 +202,21 @@
     new-instance p1, Lcom/supercell/id/util/NormalizedError;
 
     .line 10
-    invoke-static {v2, v1, v3}, Landroid/support/v4/media/f;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2, v1, v3}, Landroid/support/v4/media/f;->b(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v3
 
     const-string v0, "_description"
 
     .line 11
-    invoke-static {v2, v1, v0}, Landroid/support/v4/media/f;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2, v1, v0}, Landroid/support/v4/media/f;->b(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v4
 
     const-string v0, "_btn"
 
     .line 12
-    invoke-static {v2, v1, v0}, Landroid/support/v4/media/f;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2, v1, v0}, Landroid/support/v4/media/f;->b(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v5
 

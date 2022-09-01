@@ -26,7 +26,7 @@
 .method public constructor <init>(Landroid/content/Context;)V
     .locals 4
 
-    sget-object v0, Le5/j;->f:Le5/j;
+    sget-object v0, Le5/j;->g:Le5/j;
 
     new-instance v1, La5/b;
 
@@ -71,7 +71,7 @@
 
     new-instance v1, Le5/e;
 
-    sget-object v2, Le5/j;->f:Le5/j;
+    sget-object v2, Le5/j;->g:Le5/j;
 
     invoke-direct {v1, p0}, Le5/e;-><init>(Landroid/content/Context;)V
 
@@ -208,7 +208,7 @@
     invoke-virtual {v3}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 5
-    sget-object v3, Le5/j;->g:Ljava/util/concurrent/atomic/AtomicReference;
+    sget-object v3, Le5/j;->h:Ljava/util/concurrent/atomic/AtomicReference;
 
     invoke-virtual {v3}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
 

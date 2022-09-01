@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field public final synthetic f:Lcom/supercell/id/ui/ingamechat/ChatFragment;
+.field public final synthetic g:Lcom/supercell/id/ui/ingamechat/ChatFragment;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/id/ui/ingamechat/ChatFragment;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/ui/ingamechat/ChatFragment$g;->f:Lcom/supercell/id/ui/ingamechat/ChatFragment;
+    iput-object p1, p0, Lcom/supercell/id/ui/ingamechat/ChatFragment$g;->g:Lcom/supercell/id/ui/ingamechat/ChatFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -38,7 +38,7 @@
     .locals 4
 
     .line 1
-    iget-object p1, p0, Lcom/supercell/id/ui/ingamechat/ChatFragment$g;->f:Lcom/supercell/id/ui/ingamechat/ChatFragment;
+    iget-object p1, p0, Lcom/supercell/id/ui/ingamechat/ChatFragment$g;->g:Lcom/supercell/id/ui/ingamechat/ChatFragment;
 
     sget v0, Lcom/supercell/id/R$id;->editMessageView:I
 
@@ -50,7 +50,7 @@
 
     const-string v1, "editMessageView"
 
-    invoke-static {p1, v1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v1}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {p1}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
 
@@ -62,7 +62,7 @@
 
     if-eqz p1, :cond_3
 
-    invoke-static {p1}, Lye/r;->E(Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
+    invoke-static {p1}, Lye/r;->F(Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
 
     move-result-object p1
 
@@ -98,18 +98,18 @@
     iget-object v2, v2, Lae/u;->o:Lrc/d0;
 
     .line 5
-    iget-object v3, p0, Lcom/supercell/id/ui/ingamechat/ChatFragment$g;->f:Lcom/supercell/id/ui/ingamechat/ChatFragment;
+    iget-object v3, p0, Lcom/supercell/id/ui/ingamechat/ChatFragment$g;->g:Lcom/supercell/id/ui/ingamechat/ChatFragment;
 
     .line 6
-    iget-object v3, v3, Lcom/supercell/id/ui/ingamechat/ChatFragment;->j0:Ljava/lang/String;
+    iget-object v3, v3, Lcom/supercell/id/ui/ingamechat/ChatFragment;->k0:Ljava/lang/String;
 
     if-eqz v3, :cond_1
 
     .line 7
-    invoke-virtual {v2, p1, v3}, Lrc/d0;->r(Ljava/lang/String;Ljava/lang/String;)Lze/e0;
+    invoke-virtual {v2, p1, v3}, Lrc/d0;->r(Ljava/lang/String;Ljava/lang/String;)Lze/f0;
 
     .line 8
-    iget-object p1, p0, Lcom/supercell/id/ui/ingamechat/ChatFragment$g;->f:Lcom/supercell/id/ui/ingamechat/ChatFragment;
+    iget-object p1, p0, Lcom/supercell/id/ui/ingamechat/ChatFragment$g;->g:Lcom/supercell/id/ui/ingamechat/ChatFragment;
 
     invoke-virtual {p1, v0}, Lcom/supercell/id/ui/ingamechat/ChatFragment;->f1(I)Landroid/view/View;
 
@@ -117,7 +117,7 @@
 
     check-cast p1, Landroid/widget/EditText;
 
-    invoke-static {p1, v1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v1}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {p1}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
 
@@ -131,7 +131,7 @@
     const-string p1, "feedId"
 
     .line 9
-    invoke-static {p1}, Lt3/e;->g(Ljava/lang/String;)V
+    invoke-static {p1}, Lt3/h;->k(Ljava/lang/String;)V
 
     const/4 p1, 0x0
 

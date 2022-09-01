@@ -1,101 +1,81 @@
 .class public final Lk3/rr;
-.super Ljava/lang/Object;
+.super Lk3/ts;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lk3/iv0;
+.implements Lk3/c2;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lk3/ts<",
+        "Lp1/a;",
+        ">;",
+        "Lk3/c2;"
+    }
+.end annotation
 
 
 # instance fields
-.field public final synthetic a:I
-
-.field public final b:Lk3/mv0;
+.field public h:Landroid/os/Bundle;
 
 
 # direct methods
-.method public synthetic constructor <init>(Lk3/mv0;I)V
+.method public constructor <init>(Ljava/util/Set;)V
     .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/Set<",
+            "Lk3/qt<",
+            "Lp1/a;",
+            ">;>;)V"
+        }
+    .end annotation
 
-    iput p2, p0, Lk3/rr;->a:I
+    .line 1
+    invoke-direct {p0, p1}, Lk3/ts;-><init>(Ljava/util/Set;)V
 
-    iput-object p1, p0, Lk3/rr;->b:Lk3/mv0;
+    .line 2
+    new-instance p1, Landroid/os/Bundle;
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p1}, Landroid/os/Bundle;-><init>()V
+
+    iput-object p1, p0, Lk3/rr;->h:Landroid/os/Bundle;
 
     return-void
 .end method
 
-.method public static a(Lk3/mv0;)Lk3/rr;
-    .locals 2
-
-    new-instance v0, Lk3/rr;
-
-    const/4 v1, 0x1
-
-    invoke-direct {v0, p0, v1}, Lk3/rr;-><init>(Lk3/mv0;I)V
-
-    return-object v0
-.end method
-
-.method public static b(Lk3/mv0;)Lk3/rr;
-    .locals 2
-
-    new-instance v0, Lk3/rr;
-
-    const/4 v1, 0x0
-
-    invoke-direct {v0, p0, v1}, Lk3/rr;-><init>(Lk3/mv0;I)V
-
-    return-object v0
-.end method
-
 
 # virtual methods
-.method public final synthetic get()Ljava/lang/Object;
-    .locals 2
+.method public final declared-synchronized u(Ljava/lang/String;Landroid/os/Bundle;)V
+    .locals 0
 
-    iget v0, p0, Lk3/rr;->a:I
-
-    packed-switch v0, :pswitch_data_0
-
-    goto :goto_0
+    monitor-enter p0
 
     .line 1
-    :pswitch_0
-    iget-object v0, p0, Lk3/rr;->b:Lk3/mv0;
+    :try_start_0
+    iget-object p1, p0, Lk3/rr;->h:Landroid/os/Bundle;
 
-    invoke-interface {v0}, Lk3/mv0;->get()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Ljava/util/Set;
+    invoke-virtual {p1, p2}, Landroid/os/Bundle;->putAll(Landroid/os/Bundle;)V
 
     .line 2
-    new-instance v1, Lk3/nr;
+    sget-object p1, Lk3/r5;->g:Lk3/r5;
 
-    invoke-direct {v1, v0}, Lk3/nr;-><init>(Ljava/util/Set;)V
-
-    return-object v1
+    invoke-virtual {p0, p1}, Lk3/ts;->F0(Lk3/vs;)V
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 3
-    :goto_0
-    iget-object v0, p0, Lk3/rr;->b:Lk3/mv0;
+    monitor-exit p0
 
-    invoke-interface {v0}, Lk3/mv0;->get()Ljava/lang/Object;
+    return-void
 
-    move-result-object v0
+    :catchall_0
+    move-exception p1
 
-    check-cast v0, Lk3/v00;
+    monitor-exit p0
 
-    .line 4
-    new-instance v1, Lk3/r00;
-
-    invoke-direct {v1, v0}, Lk3/r00;-><init>(Lk3/v00;)V
-
-    return-object v1
-
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+    throw p1
 .end method

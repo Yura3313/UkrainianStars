@@ -59,7 +59,7 @@
     iput-object v0, p0, Lrb/h;->j:Lrb/h$b;
 
     .line 6
-    invoke-static {}, La0/a;->h()V
+    invoke-static {}, Lr3/r4;->e()V
 
     .line 7
     iput-object p1, p0, Lrb/h;->a:Lsb/d;

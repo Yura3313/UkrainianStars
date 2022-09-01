@@ -1,6 +1,9 @@
-.class public interface abstract Lk3/yl0;
-.super Ljava/lang/Object;
+.class public Lk3/yl0;
+.super Lk3/vl0;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
+
+# interfaces
+.implements Lk3/dl0$g;
 
 
 # annotations
@@ -9,23 +12,46 @@
         "<V:",
         "Ljava/lang/Object;",
         ">",
-        "Ljava/lang/Object;"
+        "Lk3/vl0<",
+        "TV;>;",
+        "Lk3/dl0$g<",
+        "TV;>;"
     }
 .end annotation
 
 
-# virtual methods
-.method public abstract a(Ljava/lang/Throwable;)V
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Lk3/vl0;-><init>()V
+
+    return-void
 .end method
 
-.method public abstract onSuccess(Ljava/lang/Object;)V
-    .param p1    # Ljava/lang/Object;
-        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
-        .end annotation
-    .end param
+
+# virtual methods
+.method public final get(JLjava/util/concurrent/TimeUnit;)Ljava/lang/Object;
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "(TV;)V"
+            "(J",
+            "Ljava/util/concurrent/TimeUnit;",
+            ")TV;"
         }
     .end annotation
+
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/lang/InterruptedException;,
+            Ljava/util/concurrent/ExecutionException;,
+            Ljava/util/concurrent/TimeoutException;
+        }
+    .end annotation
+
+    invoke-super {p0, p1, p2, p3}, Lk3/dl0;->get(JLjava/util/concurrent/TimeUnit;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    return-object p1
 .end method

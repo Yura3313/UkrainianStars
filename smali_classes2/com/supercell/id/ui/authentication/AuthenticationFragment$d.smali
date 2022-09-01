@@ -1,5 +1,5 @@
 .class public final Lcom/supercell/id/ui/authentication/AuthenticationFragment$d;
-.super Lse/h;
+.super Lse/i;
 .source "AuthenticationFragment.kt"
 
 # interfaces
@@ -18,32 +18,32 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/l<",
         "Ljava/lang/String;",
-        "Lie/h;",
+        "Lie/i;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic f:Lcom/supercell/id/ui/authentication/AuthenticationFragment;
+.field public final synthetic g:Lcom/supercell/id/ui/authentication/AuthenticationFragment;
 
-.field public final synthetic g:Ljava/lang/ref/WeakReference;
+.field public final synthetic h:Ljava/lang/ref/WeakReference;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/id/ui/authentication/AuthenticationFragment;Ljava/lang/ref/WeakReference;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/ui/authentication/AuthenticationFragment$d;->f:Lcom/supercell/id/ui/authentication/AuthenticationFragment;
+    iput-object p1, p0, Lcom/supercell/id/ui/authentication/AuthenticationFragment$d;->g:Lcom/supercell/id/ui/authentication/AuthenticationFragment;
 
-    iput-object p2, p0, Lcom/supercell/id/ui/authentication/AuthenticationFragment$d;->g:Ljava/lang/ref/WeakReference;
+    iput-object p2, p0, Lcom/supercell/id/ui/authentication/AuthenticationFragment$d;->h:Ljava/lang/ref/WeakReference;
 
     const/4 p1, 0x1
 
-    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -59,7 +59,7 @@
     const-string v0, "descriptionText"
 
     .line 2
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 3
     sget-object v0, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
@@ -69,7 +69,7 @@
     move-result-object v0
 
     .line 4
-    iget-object v0, v0, Lae/u;->s:Lud/j;
+    iget-object v0, v0, Lae/u;->s:Lud/i;
 
     .line 5
     new-instance v1, Lcom/supercell/id/ui/authentication/b;
@@ -78,10 +78,10 @@
 
     const-string p1, "start_register_btn"
 
-    invoke-virtual {v0, p1, v1}, Lud/j;->e(Ljava/lang/String;Lre/l;)V
+    invoke-virtual {v0, p1, v1}, Lud/i;->e(Ljava/lang/String;Lre/l;)V
 
     .line 6
-    sget-object p1, Lie/h;->a:Lie/h;
+    sget-object p1, Lie/i;->a:Lie/i;
 
     return-object p1
 .end method

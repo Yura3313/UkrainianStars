@@ -19,9 +19,9 @@
 
 
 # instance fields
-.field public final f:Ljava/lang/String;
-
 .field public final g:Ljava/lang/String;
+
+.field public final h:Ljava/lang/String;
 
 
 # direct methods
@@ -68,10 +68,10 @@
     invoke-static {v0, v1}, Ld2/h;->b(ZLjava/lang/Object;)V
 
     .line 6
-    iput-object p1, p0, Lcom/google/android/gms/auth/api/credentials/IdToken;->f:Ljava/lang/String;
+    iput-object p1, p0, Lcom/google/android/gms/auth/api/credentials/IdToken;->g:Ljava/lang/String;
 
     .line 7
-    iput-object p2, p0, Lcom/google/android/gms/auth/api/credentials/IdToken;->g:Ljava/lang/String;
+    iput-object p2, p0, Lcom/google/android/gms/auth/api/credentials/IdToken;->h:Ljava/lang/String;
 
     return-void
 .end method
@@ -102,9 +102,9 @@
     check-cast p1, Lcom/google/android/gms/auth/api/credentials/IdToken;
 
     .line 3
-    iget-object v1, p0, Lcom/google/android/gms/auth/api/credentials/IdToken;->f:Ljava/lang/String;
+    iget-object v1, p0, Lcom/google/android/gms/auth/api/credentials/IdToken;->g:Ljava/lang/String;
 
-    iget-object v3, p1, Lcom/google/android/gms/auth/api/credentials/IdToken;->f:Ljava/lang/String;
+    iget-object v3, p1, Lcom/google/android/gms/auth/api/credentials/IdToken;->g:Ljava/lang/String;
 
     invoke-static {v1, v3}, Ld2/f;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
@@ -112,9 +112,9 @@
 
     if-eqz v1, :cond_2
 
-    iget-object v1, p0, Lcom/google/android/gms/auth/api/credentials/IdToken;->g:Ljava/lang/String;
+    iget-object v1, p0, Lcom/google/android/gms/auth/api/credentials/IdToken;->h:Ljava/lang/String;
 
-    iget-object p1, p1, Lcom/google/android/gms/auth/api/credentials/IdToken;->g:Ljava/lang/String;
+    iget-object p1, p1, Lcom/google/android/gms/auth/api/credentials/IdToken;->h:Ljava/lang/String;
 
     .line 4
     invoke-static {v1, p1}, Ld2/f;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
@@ -140,7 +140,7 @@
     move-result p2
 
     .line 2
-    iget-object v0, p0, Lcom/google/android/gms/auth/api/credentials/IdToken;->f:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/android/gms/auth/api/credentials/IdToken;->g:Ljava/lang/String;
 
     const/4 v1, 0x1
 
@@ -150,7 +150,7 @@
     invoke-static {p1, v1, v0, v2}, Le2/b;->m(Landroid/os/Parcel;ILjava/lang/String;Z)V
 
     .line 4
-    iget-object v0, p0, Lcom/google/android/gms/auth/api/credentials/IdToken;->g:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/android/gms/auth/api/credentials/IdToken;->h:Ljava/lang/String;
 
     const/4 v1, 0x2
 

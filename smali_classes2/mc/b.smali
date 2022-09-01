@@ -107,7 +107,7 @@
     check-cast p0, Lec/l;
 
     .line 2
-    iget-boolean v1, p0, Lec/l;->u:Z
+    iget-boolean v1, p0, Lec/l;->v:Z
 
     const/4 v2, 0x1
 
@@ -130,7 +130,7 @@
 
     .line 4
     :cond_0
-    iget-object v1, p0, Lec/l;->t:Lkc/b;
+    iget-object v1, p0, Lec/l;->u:Lkc/b;
 
     if-eqz v1, :cond_1
 
@@ -140,9 +140,9 @@
     invoke-direct {v1, p0, p1, p2}, Lec/i;-><init>(Lec/l;II)V
 
     .line 6
-    iget-object v3, p0, Lec/l;->h:Landroid/os/Handler;
+    iget-object v3, p0, Lec/l;->i:Landroid/os/Handler;
 
-    iget-object p0, p0, Lec/l;->f:Lec/g;
+    iget-object p0, p0, Lec/l;->g:Lec/g;
 
     invoke-static {v1, v0, v3, p0}, Lec/l;->j(Ljava/lang/Runnable;ZLandroid/os/Handler;Lec/g;)V
 

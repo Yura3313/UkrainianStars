@@ -18,7 +18,7 @@
     .locals 1
 
     .line 1
-    sget-object v0, Lcom/helpshift/util/u;->e:Ljava/util/concurrent/atomic/AtomicBoolean;
+    sget-object v0, Lcom/helpshift/util/t;->e:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicBoolean;->get()Z
 
@@ -27,7 +27,7 @@
     if-eqz v0, :cond_0
 
     .line 2
-    invoke-static {p1}, Lcom/helpshift/util/a0;->a(Landroid/content/Context;)Landroid/content/Context;
+    invoke-static {p1}, Lcom/helpshift/util/z;->a(Landroid/content/Context;)Landroid/content/Context;
 
     move-result-object p1
 
@@ -45,7 +45,7 @@
     invoke-super {p0, p1}, Landroidx/appcompat/app/AppCompatActivity;->onCreate(Landroid/os/Bundle;)V
 
     .line 2
-    sget-object p1, Lcom/helpshift/util/u;->e:Ljava/util/concurrent/atomic/AtomicBoolean;
+    sget-object p1, Lcom/helpshift/util/t;->e:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     invoke-virtual {p1}, Ljava/util/concurrent/atomic/AtomicBoolean;->get()Z
 
@@ -54,7 +54,7 @@
     if-nez p1, :cond_1
 
     .line 3
-    invoke-static {}, Lcom/helpshift/util/u;->b()Z
+    invoke-static {}, Lcom/helpshift/util/t;->b()Z
 
     move-result p1
 
@@ -71,7 +71,7 @@
     invoke-virtual {p1, v0}, Lmb/b;->c(Ljava/lang/Runnable;)V
 
     .line 6
-    sget-object p1, Lcom/helpshift/util/u;->e:Ljava/util/concurrent/atomic/AtomicBoolean;
+    sget-object p1, Lcom/helpshift/util/t;->e:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     invoke-virtual {p1}, Ljava/util/concurrent/atomic/AtomicBoolean;->get()Z
 
@@ -172,7 +172,7 @@
     const-string v1, "Helpshift_MainActvty"
 
     .line 16
-    invoke-static {v1, p1, v0, v0}, Landroidx/savedstate/d;->h(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v1, p1, v0, v0}, Le5/i;->j(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Throwable;[Lz9/a;)V
 
     .line 17
     :cond_3

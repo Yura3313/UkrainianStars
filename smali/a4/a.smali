@@ -7,7 +7,7 @@
 
 
 # static fields
-.field public static final f:La4/a;
+.field public static final g:La4/a;
     .annotation build Landroidx/annotation/RecentlyNonNull;
     .end annotation
 .end field
@@ -24,7 +24,7 @@
     invoke-direct {v0}, La4/a;-><init>()V
 
     .line 3
-    sput-object v0, La4/a;->f:La4/a;
+    sput-object v0, La4/a;->g:La4/a;
 
     return-void
 .end method

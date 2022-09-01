@@ -28,7 +28,7 @@
 
 
 # instance fields
-.field public final f:Ljava/util/Iterator;
+.field public final g:Ljava/util/Iterator;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Iterator<",
@@ -37,9 +37,9 @@
     .end annotation
 .end field
 
-.field public g:I
+.field public h:I
 
-.field public h:Ljava/lang/Object;
+.field public i:Ljava/lang/Object;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "TT;"
@@ -47,7 +47,7 @@
     .end annotation
 .end field
 
-.field public final synthetic i:Lxe/b;
+.field public final synthetic j:Lxe/b;
 
 
 # direct methods
@@ -60,7 +60,7 @@
     .end annotation
 
     .line 1
-    iput-object p1, p0, Lxe/b$a;->i:Lxe/b;
+    iput-object p1, p0, Lxe/b$a;->j:Lxe/b;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -72,12 +72,12 @@
 
     move-result-object p1
 
-    iput-object p1, p0, Lxe/b$a;->f:Ljava/util/Iterator;
+    iput-object p1, p0, Lxe/b$a;->g:Ljava/util/Iterator;
 
     const/4 p1, -0x1
 
     .line 4
-    iput p1, p0, Lxe/b$a;->g:I
+    iput p1, p0, Lxe/b$a;->h:I
 
     return-void
 .end method
@@ -89,7 +89,7 @@
 
     .line 1
     :cond_0
-    iget-object v0, p0, Lxe/b$a;->f:Ljava/util/Iterator;
+    iget-object v0, p0, Lxe/b$a;->g:Ljava/util/Iterator;
 
     invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
 
@@ -98,14 +98,14 @@
     if-eqz v0, :cond_1
 
     .line 2
-    iget-object v0, p0, Lxe/b$a;->f:Ljava/util/Iterator;
+    iget-object v0, p0, Lxe/b$a;->g:Ljava/util/Iterator;
 
     invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
     move-result-object v0
 
     .line 3
-    iget-object v1, p0, Lxe/b$a;->i:Lxe/b;
+    iget-object v1, p0, Lxe/b$a;->j:Lxe/b;
 
     .line 4
     iget-object v1, v1, Lxe/b;->c:Lre/l;
@@ -121,7 +121,7 @@
 
     move-result v1
 
-    iget-object v2, p0, Lxe/b$a;->i:Lxe/b;
+    iget-object v2, p0, Lxe/b$a;->j:Lxe/b;
 
     .line 6
     iget-boolean v2, v2, Lxe/b;->b:Z
@@ -129,12 +129,12 @@
     if-ne v1, v2, :cond_0
 
     .line 7
-    iput-object v0, p0, Lxe/b$a;->h:Ljava/lang/Object;
+    iput-object v0, p0, Lxe/b$a;->i:Ljava/lang/Object;
 
     const/4 v0, 0x1
 
     .line 8
-    iput v0, p0, Lxe/b$a;->g:I
+    iput v0, p0, Lxe/b$a;->h:I
 
     return-void
 
@@ -142,7 +142,7 @@
     const/4 v0, 0x0
 
     .line 9
-    iput v0, p0, Lxe/b$a;->g:I
+    iput v0, p0, Lxe/b$a;->h:I
 
     return-void
 .end method
@@ -151,7 +151,7 @@
     .locals 2
 
     .line 1
-    iget v0, p0, Lxe/b$a;->g:I
+    iget v0, p0, Lxe/b$a;->h:I
 
     const/4 v1, -0x1
 
@@ -162,7 +162,7 @@
 
     .line 3
     :cond_0
-    iget v0, p0, Lxe/b$a;->g:I
+    iget v0, p0, Lxe/b$a;->h:I
 
     const/4 v1, 0x1
 
@@ -186,7 +186,7 @@
     .end annotation
 
     .line 1
-    iget v0, p0, Lxe/b$a;->g:I
+    iget v0, p0, Lxe/b$a;->h:I
 
     const/4 v1, -0x1
 
@@ -197,20 +197,20 @@
 
     .line 3
     :cond_0
-    iget v0, p0, Lxe/b$a;->g:I
+    iget v0, p0, Lxe/b$a;->h:I
 
     if-eqz v0, :cond_1
 
     .line 4
-    iget-object v0, p0, Lxe/b$a;->h:Ljava/lang/Object;
+    iget-object v0, p0, Lxe/b$a;->i:Ljava/lang/Object;
 
     const/4 v2, 0x0
 
     .line 5
-    iput-object v2, p0, Lxe/b$a;->h:Ljava/lang/Object;
+    iput-object v2, p0, Lxe/b$a;->i:Ljava/lang/Object;
 
     .line 6
-    iput v1, p0, Lxe/b$a;->g:I
+    iput v1, p0, Lxe/b$a;->h:I
 
     return-object v0
 

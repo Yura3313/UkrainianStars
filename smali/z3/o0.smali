@@ -3,9 +3,9 @@
 
 
 # instance fields
-.field public final f:Ljava/lang/Object;
+.field public final g:Ljava/lang/Object;
 
-.field public final g:Ljava/util/concurrent/BlockingQueue;
+.field public final h:Ljava/util/concurrent/BlockingQueue;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/concurrent/BlockingQueue<",
@@ -15,7 +15,7 @@
     .end annotation
 .end field
 
-.field public final synthetic h:Lz3/l0;
+.field public final synthetic i:Lz3/l0;
 
 
 # direct methods
@@ -32,7 +32,7 @@
     .end annotation
 
     .line 1
-    iput-object p1, p0, Lz3/o0;->h:Lz3/l0;
+    iput-object p1, p0, Lz3/o0;->i:Lz3/l0;
 
     invoke-direct {p0}, Ljava/lang/Thread;-><init>()V
 
@@ -44,10 +44,10 @@
 
     invoke-direct {p1}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lz3/o0;->f:Ljava/lang/Object;
+    iput-object p1, p0, Lz3/o0;->g:Ljava/lang/Object;
 
     .line 4
-    iput-object p3, p0, Lz3/o0;->g:Ljava/util/concurrent/BlockingQueue;
+    iput-object p3, p0, Lz3/o0;->h:Ljava/util/concurrent/BlockingQueue;
 
     .line 5
     invoke-virtual {p0, p2}, Ljava/lang/Thread;->setName(Ljava/lang/String;)V
@@ -61,14 +61,14 @@
     .locals 3
 
     .line 1
-    iget-object v0, p0, Lz3/o0;->h:Lz3/l0;
+    iget-object v0, p0, Lz3/o0;->i:Lz3/l0;
 
     invoke-virtual {v0}, Ly3/a;->e()Lz3/o;
 
     move-result-object v0
 
     .line 2
-    iget-object v0, v0, Lz3/o;->i:Lz3/q;
+    iget-object v0, v0, Lz3/o;->o:Lz3/q;
 
     .line 3
     invoke-virtual {p0}, Ljava/lang/Thread;->getName()Ljava/lang/String;
@@ -100,10 +100,10 @@
 
     .line 1
     :try_start_0
-    iget-object v1, p0, Lz3/o0;->h:Lz3/l0;
+    iget-object v1, p0, Lz3/o0;->i:Lz3/l0;
 
     .line 2
-    iget-object v1, v1, Lz3/l0;->j:Ljava/util/concurrent/Semaphore;
+    iget-object v1, v1, Lz3/l0;->p:Ljava/util/concurrent/Semaphore;
 
     .line 3
     invoke-virtual {v1}, Ljava/util/concurrent/Semaphore;->acquire()V
@@ -137,7 +137,7 @@
 
     .line 6
     :goto_1
-    iget-object v2, p0, Lz3/o0;->g:Ljava/util/concurrent/BlockingQueue;
+    iget-object v2, p0, Lz3/o0;->h:Ljava/util/concurrent/BlockingQueue;
 
     invoke-interface {v2}, Ljava/util/Queue;->poll()Ljava/lang/Object;
 
@@ -148,7 +148,7 @@
     if-eqz v2, :cond_2
 
     .line 7
-    iget-boolean v3, v2, Lz3/n0;->g:Z
+    iget-boolean v3, v2, Lz3/n0;->h:Z
 
     if-eqz v3, :cond_1
 
@@ -170,7 +170,7 @@
 
     .line 10
     :cond_2
-    iget-object v2, p0, Lz3/o0;->f:Ljava/lang/Object;
+    iget-object v2, p0, Lz3/o0;->g:Ljava/lang/Object;
 
     monitor-enter v2
     :try_end_1
@@ -178,7 +178,7 @@
 
     .line 11
     :try_start_2
-    iget-object v3, p0, Lz3/o0;->g:Ljava/util/concurrent/BlockingQueue;
+    iget-object v3, p0, Lz3/o0;->h:Ljava/util/concurrent/BlockingQueue;
 
     invoke-interface {v3}, Ljava/util/Queue;->peek()Ljava/lang/Object;
 
@@ -187,7 +187,7 @@
     if-nez v3, :cond_3
 
     .line 12
-    iget-object v3, p0, Lz3/o0;->h:Lz3/l0;
+    iget-object v3, p0, Lz3/o0;->i:Lz3/l0;
 
     .line 13
     invoke-virtual {v3}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -196,7 +196,7 @@
 
     .line 14
     :try_start_3
-    iget-object v3, p0, Lz3/o0;->f:Ljava/lang/Object;
+    iget-object v3, p0, Lz3/o0;->g:Ljava/lang/Object;
 
     const-wide/16 v4, 0x7530
 
@@ -223,10 +223,10 @@
 
     .line 17
     :try_start_5
-    iget-object v2, p0, Lz3/o0;->h:Lz3/l0;
+    iget-object v2, p0, Lz3/o0;->i:Lz3/l0;
 
     .line 18
-    iget-object v2, v2, Lz3/l0;->i:Ljava/lang/Object;
+    iget-object v2, v2, Lz3/l0;->o:Ljava/lang/Object;
 
     .line 19
     monitor-enter v2
@@ -235,7 +235,7 @@
 
     .line 20
     :try_start_6
-    iget-object v3, p0, Lz3/o0;->g:Ljava/util/concurrent/BlockingQueue;
+    iget-object v3, p0, Lz3/o0;->h:Ljava/util/concurrent/BlockingQueue;
 
     invoke-interface {v3}, Ljava/util/Queue;->peek()Ljava/lang/Object;
 
@@ -249,54 +249,54 @@
     .catchall {:try_start_6 .. :try_end_6} :catchall_1
 
     .line 22
-    iget-object v1, p0, Lz3/o0;->h:Lz3/l0;
+    iget-object v1, p0, Lz3/o0;->i:Lz3/l0;
 
     .line 23
-    iget-object v1, v1, Lz3/l0;->i:Ljava/lang/Object;
+    iget-object v1, v1, Lz3/l0;->o:Ljava/lang/Object;
 
     .line 24
     monitor-enter v1
 
     .line 25
     :try_start_7
-    iget-object v2, p0, Lz3/o0;->h:Lz3/l0;
+    iget-object v2, p0, Lz3/o0;->i:Lz3/l0;
 
     .line 26
-    iget-object v2, v2, Lz3/l0;->j:Ljava/util/concurrent/Semaphore;
+    iget-object v2, v2, Lz3/l0;->p:Ljava/util/concurrent/Semaphore;
 
     .line 27
     invoke-virtual {v2}, Ljava/util/concurrent/Semaphore;->release()V
 
     .line 28
-    iget-object v2, p0, Lz3/o0;->h:Lz3/l0;
+    iget-object v2, p0, Lz3/o0;->i:Lz3/l0;
 
     .line 29
-    iget-object v2, v2, Lz3/l0;->i:Ljava/lang/Object;
+    iget-object v2, v2, Lz3/l0;->o:Ljava/lang/Object;
 
     .line 30
     invoke-virtual {v2}, Ljava/lang/Object;->notifyAll()V
 
     .line 31
-    iget-object v2, p0, Lz3/o0;->h:Lz3/l0;
+    iget-object v2, p0, Lz3/o0;->i:Lz3/l0;
 
     .line 32
-    iget-object v3, v2, Lz3/l0;->c:Lz3/o0;
+    iget-object v3, v2, Lz3/l0;->i:Lz3/o0;
 
     if-ne p0, v3, :cond_4
 
     .line 33
-    iput-object v0, v2, Lz3/l0;->c:Lz3/o0;
+    iput-object v0, v2, Lz3/l0;->i:Lz3/o0;
 
     goto :goto_4
 
     .line 34
     :cond_4
-    iget-object v3, v2, Lz3/l0;->d:Lz3/o0;
+    iget-object v3, v2, Lz3/l0;->j:Lz3/o0;
 
     if-ne p0, v3, :cond_5
 
     .line 35
-    iput-object v0, v2, Lz3/l0;->d:Lz3/o0;
+    iput-object v0, v2, Lz3/l0;->j:Lz3/o0;
 
     goto :goto_4
 
@@ -307,7 +307,7 @@
     move-result-object v0
 
     .line 37
-    iget-object v0, v0, Lz3/o;->f:Lz3/q;
+    iget-object v0, v0, Lz3/o;->l:Lz3/q;
 
     const-string v2, "Current scheduler thread is neither worker nor network"
 
@@ -366,48 +366,48 @@
     move-exception v1
 
     .line 42
-    iget-object v2, p0, Lz3/o0;->h:Lz3/l0;
+    iget-object v2, p0, Lz3/o0;->i:Lz3/l0;
 
     .line 43
-    iget-object v2, v2, Lz3/l0;->i:Ljava/lang/Object;
+    iget-object v2, v2, Lz3/l0;->o:Ljava/lang/Object;
 
     .line 44
     monitor-enter v2
 
     .line 45
     :try_start_c
-    iget-object v3, p0, Lz3/o0;->h:Lz3/l0;
+    iget-object v3, p0, Lz3/o0;->i:Lz3/l0;
 
     .line 46
-    iget-object v3, v3, Lz3/l0;->j:Ljava/util/concurrent/Semaphore;
+    iget-object v3, v3, Lz3/l0;->p:Ljava/util/concurrent/Semaphore;
 
     .line 47
     invoke-virtual {v3}, Ljava/util/concurrent/Semaphore;->release()V
 
     .line 48
-    iget-object v3, p0, Lz3/o0;->h:Lz3/l0;
+    iget-object v3, p0, Lz3/o0;->i:Lz3/l0;
 
     .line 49
-    iget-object v3, v3, Lz3/l0;->i:Ljava/lang/Object;
+    iget-object v3, v3, Lz3/l0;->o:Ljava/lang/Object;
 
     .line 50
     invoke-virtual {v3}, Ljava/lang/Object;->notifyAll()V
 
     .line 51
-    iget-object v3, p0, Lz3/o0;->h:Lz3/l0;
+    iget-object v3, p0, Lz3/o0;->i:Lz3/l0;
 
     .line 52
-    iget-object v4, v3, Lz3/l0;->c:Lz3/o0;
+    iget-object v4, v3, Lz3/l0;->i:Lz3/o0;
 
     if-eq p0, v4, :cond_8
 
     .line 53
-    iget-object v4, v3, Lz3/l0;->d:Lz3/o0;
+    iget-object v4, v3, Lz3/l0;->j:Lz3/o0;
 
     if-ne p0, v4, :cond_7
 
     .line 54
-    iput-object v0, v3, Lz3/l0;->d:Lz3/o0;
+    iput-object v0, v3, Lz3/l0;->j:Lz3/o0;
 
     goto :goto_5
 
@@ -418,7 +418,7 @@
     move-result-object v0
 
     .line 56
-    iget-object v0, v0, Lz3/o;->f:Lz3/q;
+    iget-object v0, v0, Lz3/o;->l:Lz3/q;
 
     const-string v3, "Current scheduler thread is neither worker nor network"
 
@@ -429,7 +429,7 @@
 
     .line 58
     :cond_8
-    iput-object v0, v3, Lz3/l0;->c:Lz3/o0;
+    iput-object v0, v3, Lz3/l0;->i:Lz3/o0;
 
     .line 59
     :goto_5

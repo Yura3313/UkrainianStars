@@ -27,11 +27,11 @@
 
 
 # instance fields
-.field public final f:I
+.field public final g:I
 
-.field public final g:Ljava/lang/String;
+.field public final h:Ljava/lang/String;
 
-.field public final h:I
+.field public final i:I
 
 
 # direct methods
@@ -54,13 +54,13 @@
     invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
 
     .line 2
-    iput p1, p0, Lcom/google/android/gms/common/server/converter/StringToIntConverter$zaa;->f:I
+    iput p1, p0, Lcom/google/android/gms/common/server/converter/StringToIntConverter$zaa;->g:I
 
     .line 3
-    iput-object p2, p0, Lcom/google/android/gms/common/server/converter/StringToIntConverter$zaa;->g:Ljava/lang/String;
+    iput-object p2, p0, Lcom/google/android/gms/common/server/converter/StringToIntConverter$zaa;->h:Ljava/lang/String;
 
     .line 4
-    iput p3, p0, Lcom/google/android/gms/common/server/converter/StringToIntConverter$zaa;->h:I
+    iput p3, p0, Lcom/google/android/gms/common/server/converter/StringToIntConverter$zaa;->i:I
 
     return-void
 .end method
@@ -74,13 +74,13 @@
     const/4 v0, 0x1
 
     .line 6
-    iput v0, p0, Lcom/google/android/gms/common/server/converter/StringToIntConverter$zaa;->f:I
+    iput v0, p0, Lcom/google/android/gms/common/server/converter/StringToIntConverter$zaa;->g:I
 
     .line 7
-    iput-object p1, p0, Lcom/google/android/gms/common/server/converter/StringToIntConverter$zaa;->g:Ljava/lang/String;
+    iput-object p1, p0, Lcom/google/android/gms/common/server/converter/StringToIntConverter$zaa;->h:Ljava/lang/String;
 
     .line 8
-    iput p2, p0, Lcom/google/android/gms/common/server/converter/StringToIntConverter$zaa;->h:I
+    iput p2, p0, Lcom/google/android/gms/common/server/converter/StringToIntConverter$zaa;->i:I
 
     return-void
 .end method
@@ -98,7 +98,7 @@
     move-result v5
 
     .line 2
-    iget p2, p0, Lcom/google/android/gms/common/server/converter/StringToIntConverter$zaa;->f:I
+    iget p2, p0, Lcom/google/android/gms/common/server/converter/StringToIntConverter$zaa;->g:I
 
     const/4 v0, 0x1
 
@@ -111,7 +111,7 @@
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 5
-    iget-object p2, p0, Lcom/google/android/gms/common/server/converter/StringToIntConverter$zaa;->g:Ljava/lang/String;
+    iget-object p2, p0, Lcom/google/android/gms/common/server/converter/StringToIntConverter$zaa;->h:Ljava/lang/String;
 
     const/4 v0, 0x2
 
@@ -120,7 +120,7 @@
     invoke-static {p1, v0, p2, v1}, Le2/b;->m(Landroid/os/Parcel;ILjava/lang/String;Z)V
 
     .line 6
-    iget v3, p0, Lcom/google/android/gms/common/server/converter/StringToIntConverter$zaa;->h:I
+    iget v3, p0, Lcom/google/android/gms/common/server/converter/StringToIntConverter$zaa;->i:I
 
     const/4 v1, 0x3
 

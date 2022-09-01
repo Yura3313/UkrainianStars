@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field public final synthetic f:Lw0/b;
+.field public final synthetic g:Lw0/b;
 
 
 # direct methods
 .method public constructor <init>(Lw0/b;)V
     .locals 0
 
-    iput-object p1, p0, Lw0/b$a;->f:Lw0/b;
+    iput-object p1, p0, Lw0/b$a;->g:Lw0/b;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -37,7 +37,7 @@
 .method public final invalidateDrawable(Landroid/graphics/drawable/Drawable;)V
     .locals 0
 
-    iget-object p1, p0, Lw0/b$a;->f:Lw0/b;
+    iget-object p1, p0, Lw0/b$a;->g:Lw0/b;
 
     invoke-virtual {p1}, Landroid/graphics/drawable/Drawable;->invalidateSelf()V
 
@@ -47,7 +47,7 @@
 .method public final scheduleDrawable(Landroid/graphics/drawable/Drawable;Ljava/lang/Runnable;J)V
     .locals 0
 
-    iget-object p1, p0, Lw0/b$a;->f:Lw0/b;
+    iget-object p1, p0, Lw0/b$a;->g:Lw0/b;
 
     invoke-virtual {p1, p2, p3, p4}, Landroid/graphics/drawable/Drawable;->scheduleSelf(Ljava/lang/Runnable;J)V
 
@@ -57,7 +57,7 @@
 .method public final unscheduleDrawable(Landroid/graphics/drawable/Drawable;Ljava/lang/Runnable;)V
     .locals 0
 
-    iget-object p1, p0, Lw0/b$a;->f:Lw0/b;
+    iget-object p1, p0, Lw0/b$a;->g:Lw0/b;
 
     invoke-virtual {p1, p2}, Landroid/graphics/drawable/Drawable;->unscheduleSelf(Ljava/lang/Runnable;)V
 

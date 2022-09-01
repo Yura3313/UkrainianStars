@@ -28,7 +28,7 @@
 .method public abstract b0()I
 .end method
 
-.method public abstract d2()I
+.method public abstract c2()I
 .end method
 
 .method public abstract g2()Lcom/google/android/gms/games/internal/player/StockProfileImage;

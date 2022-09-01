@@ -1,5 +1,5 @@
 .class public final Lbe/h$i;
-.super Lse/h;
+.super Lse/i;
 .source "FriendsStorage.kt"
 
 # interfaces
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lbe/h;->m(Lcom/supercell/id/model/IdSocialAccount;)Lze/e0;
+    value = Lbe/h;->m(Lcom/supercell/id/model/IdSocialAccount;)Lze/f0;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,32 +18,32 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/l<",
         "Ljava/lang/Boolean;",
-        "Lie/h;",
+        "Lie/i;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic f:Lbe/h;
+.field public final synthetic g:Lbe/h;
 
-.field public final synthetic g:Lcom/supercell/id/model/IdSocialAccount;
+.field public final synthetic h:Lcom/supercell/id/model/IdSocialAccount;
 
 
 # direct methods
 .method public constructor <init>(Lbe/h;Lcom/supercell/id/model/IdSocialAccount;)V
     .locals 0
 
-    iput-object p1, p0, Lbe/h$i;->f:Lbe/h;
+    iput-object p1, p0, Lbe/h$i;->g:Lbe/h;
 
-    iput-object p2, p0, Lbe/h$i;->g:Lcom/supercell/id/model/IdSocialAccount;
+    iput-object p2, p0, Lbe/h$i;->h:Lcom/supercell/id/model/IdSocialAccount;
 
     const/4 p1, 0x1
 
-    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -59,15 +59,15 @@
     invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
 
     .line 2
-    iget-object p1, p0, Lbe/h$i;->f:Lbe/h;
+    iget-object p1, p0, Lbe/h$i;->g:Lbe/h;
 
     new-instance v0, Lbe/h$b$e;
 
-    iget-object v1, p0, Lbe/h$i;->g:Lcom/supercell/id/model/IdSocialAccount;
+    iget-object v1, p0, Lbe/h$i;->h:Lcom/supercell/id/model/IdSocialAccount;
 
     invoke-direct {v0, v1}, Lbe/h$b$e;-><init>(Lcom/supercell/id/model/IdSocialAccount;)V
 
-    invoke-virtual {p1, v0}, Lbe/v0;->a(Lbe/a;)V
+    invoke-virtual {p1, v0}, Lbe/x0;->a(Lbe/a;)V
 
     .line 3
     sget-object p1, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
@@ -85,21 +85,21 @@
     invoke-virtual {p1, v0}, Lbe/u;->f(I)V
 
     .line 4
-    iget-object p1, p0, Lbe/h$i;->f:Lbe/h;
+    iget-object p1, p0, Lbe/h$i;->g:Lbe/h;
 
-    iget-object v0, p0, Lbe/h$i;->g:Lcom/supercell/id/model/IdSocialAccount;
+    iget-object v0, p0, Lbe/h$i;->h:Lcom/supercell/id/model/IdSocialAccount;
 
-    invoke-static {v0}, Lcom/android/billingclient/api/z;->h(Ljava/lang/Object;)Ljava/util/List;
+    invoke-static {v0}, Lcom/android/billingclient/api/y;->c(Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object v0
 
-    sget-object v1, Lcom/supercell/id/model/IdRelationshipStatus$Strangers;->g:Lcom/supercell/id/model/IdRelationshipStatus$Strangers;
+    sget-object v1, Lcom/supercell/id/model/IdRelationshipStatus$Strangers;->h:Lcom/supercell/id/model/IdRelationshipStatus$Strangers;
 
     .line 5
     invoke-virtual {p1, v0, v1}, Lbe/h;->n(Ljava/util/List;Lcom/supercell/id/model/IdRelationshipStatus;)V
 
     .line 6
-    sget-object p1, Lie/h;->a:Lie/h;
+    sget-object p1, Lie/i;->a:Lie/i;
 
     return-object p1
 .end method

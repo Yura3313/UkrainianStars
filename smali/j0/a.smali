@@ -1409,7 +1409,7 @@
     invoke-virtual {v2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 32
-    iget v2, v4, Lm/h;->h:I
+    iget v2, v4, Lm/h;->i:I
 
     .line 33
     new-instance v7, Landroid/graphics/Rect;
@@ -1424,7 +1424,7 @@
     if-ge v8, v2, :cond_15
 
     .line 34
-    iget-object v11, v4, Lm/h;->g:[Ljava/lang/Object;
+    iget-object v11, v4, Lm/h;->h:[Ljava/lang/Object;
 
     aget-object v11, v11, v8
 
@@ -1577,7 +1577,7 @@
     invoke-virtual {v6}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 51
-    iget v6, v4, Lm/h;->h:I
+    iget v6, v4, Lm/h;->i:I
 
     .line 52
     new-instance v11, Ljava/util/ArrayList;
@@ -1590,7 +1590,7 @@
     if-ge v12, v6, :cond_18
 
     .line 53
-    iget-object v13, v4, Lm/h;->g:[Ljava/lang/Object;
+    iget-object v13, v4, Lm/h;->h:[Ljava/lang/Object;
 
     aget-object v13, v13, v12
 
@@ -1705,12 +1705,12 @@
     .line 66
     :cond_1e
     :goto_11
-    iget v2, v4, Lm/h;->h:I
+    iget v2, v4, Lm/h;->i:I
 
     if-ge v5, v2, :cond_20
 
     .line 67
-    iget-object v2, v4, Lm/h;->g:[Ljava/lang/Object;
+    iget-object v2, v4, Lm/h;->h:[Ljava/lang/Object;
 
     aget-object v2, v2, v5
 
@@ -1728,7 +1728,7 @@
     .line 68
     :cond_20
     :goto_12
-    iget-object v1, v4, Lm/h;->f:[I
+    iget-object v1, v4, Lm/h;->g:[I
 
     aget v6, v1, v9
 

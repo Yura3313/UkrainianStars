@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field public final f:Lk3/pb;
+.field public final g:Lk3/pb;
 
-.field public final g:Ljava/lang/String;
+.field public final h:Ljava/lang/String;
 
 
 # direct methods
@@ -18,9 +18,9 @@
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lk3/ub;->f:Lk3/pb;
+    iput-object p1, p0, Lk3/ub;->g:Lk3/pb;
 
-    iput-object p2, p0, Lk3/ub;->g:Ljava/lang/String;
+    iput-object p2, p0, Lk3/ub;->h:Ljava/lang/String;
 
     return-void
 .end method
@@ -30,16 +30,16 @@
 .method public final onClick(Landroid/content/DialogInterface;I)V
     .locals 2
 
-    iget-object p1, p0, Lk3/ub;->f:Lk3/pb;
+    iget-object p1, p0, Lk3/ub;->g:Lk3/pb;
 
-    iget-object p2, p0, Lk3/ub;->g:Ljava/lang/String;
+    iget-object p2, p0, Lk3/ub;->h:Ljava/lang/String;
 
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 1
-    sget-object v0, Li1/o;->B:Li1/o;
+    sget-object v0, Li1/p;->B:Li1/p;
 
-    iget-object v0, v0, Li1/o;->c:Lk3/bb;
+    iget-object v0, v0, Li1/p;->c:Lk3/bb;
 
     .line 2
     iget-object p1, p1, Lk3/pb;->a:Landroid/content/Context;

@@ -41,13 +41,13 @@
 
     const/4 v1, 0x0
 
-    invoke-direct {v0, v1}, Lcom/kakao/sdk/common/util/IntentResolveClient$Companion;-><init>(Lse/e;)V
+    invoke-direct {v0, v1}, Lcom/kakao/sdk/common/util/IntentResolveClient$Companion;-><init>(Lse/f;)V
 
     sput-object v0, Lcom/kakao/sdk/common/util/IntentResolveClient;->Companion:Lcom/kakao/sdk/common/util/IntentResolveClient$Companion;
 
     sget-object v0, Lcom/kakao/sdk/common/util/IntentResolveClient$Companion$instance$2;->INSTANCE:Lcom/kakao/sdk/common/util/IntentResolveClient$Companion$instance$2;
 
-    invoke-static {v0}, La5/r;->d(Lre/a;)Lie/c;
+    invoke-static {v0}, Ld2/u;->c(Lre/a;)Lie/c;
 
     move-result-object v0
 
@@ -151,7 +151,7 @@
     .line 3
     iget-object v4, p0, Lcom/kakao/sdk/common/util/IntentResolveClient;->ALLOWED_SIGNATURES:[Ljava/lang/String;
 
-    invoke-static {v4, v3}, Lje/e;->d([Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v4, v3}, Lje/e;->g([Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v3
 
@@ -177,11 +177,11 @@
 
     const-string v0, "context"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "intent"
 
-    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     invoke-virtual {p1}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
@@ -250,7 +250,7 @@
     const-string v10, "packageInfo"
 
     .line 10
-    invoke-static {v9, v10}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v9, v10}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-direct {p0, v9}, Lcom/kakao/sdk/common/util/IntentResolveClient;->validateTalkSignature(Landroid/content/pm/PackageInfo;)Z
 

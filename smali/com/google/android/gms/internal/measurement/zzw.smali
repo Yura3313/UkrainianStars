@@ -32,7 +32,7 @@
     move-result-object v0
 
     .line 2
-    invoke-static {v0, p1}, Lv3/c1;->b(Landroid/os/Parcel;Landroid/os/Parcelable;)V
+    invoke-static {v0, p1}, Lv3/b1;->b(Landroid/os/Parcel;Landroid/os/Parcelable;)V
 
     const/4 p1, 0x1
 
@@ -44,7 +44,7 @@
     .line 4
     sget-object v0, Landroid/os/Bundle;->CREATOR:Landroid/os/Parcelable$Creator;
 
-    invoke-static {p1, v0}, Lv3/c1;->a(Landroid/os/Parcel;Landroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
+    invoke-static {p1, v0}, Lv3/b1;->a(Landroid/os/Parcel;Landroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
 
     move-result-object v0
 

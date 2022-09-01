@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field public final h:[B
+.field public final i:[B
 
 
 # direct methods
@@ -23,7 +23,7 @@
     invoke-direct {p0, v0}, Lz1/l;-><init>([B)V
 
     .line 2
-    iput-object p1, p0, Lz1/o;->h:[B
+    iput-object p1, p0, Lz1/o;->i:[B
 
     return-void
 .end method
@@ -33,7 +33,7 @@
 .method public final S0()[B
     .locals 1
 
-    iget-object v0, p0, Lz1/o;->h:[B
+    iget-object v0, p0, Lz1/o;->i:[B
 
     return-object v0
 .end method

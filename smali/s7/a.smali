@@ -4,9 +4,9 @@
 
 
 # instance fields
-.field public f:Landroid/content/Context;
+.field public g:Landroid/content/Context;
 
-.field public g:Ls7/d;
+.field public h:Ls7/d;
 
 
 # direct methods
@@ -17,7 +17,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object p1, p0, Ls7/a;->f:Landroid/content/Context;
+    iput-object p1, p0, Ls7/a;->g:Landroid/content/Context;
 
     return-void
 .end method

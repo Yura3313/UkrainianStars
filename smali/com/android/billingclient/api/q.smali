@@ -7,14 +7,14 @@
 
 
 # instance fields
-.field public final synthetic f:Lcom/android/billingclient/api/r;
+.field public final synthetic g:Lcom/android/billingclient/api/r;
 
 
 # direct methods
 .method public constructor <init>(Lcom/android/billingclient/api/r;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/android/billingclient/api/q;->f:Lcom/android/billingclient/api/r;
+    iput-object p1, p0, Lcom/android/billingclient/api/q;->g:Lcom/android/billingclient/api/r;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -26,7 +26,7 @@
 .method public final run()V
     .locals 3
 
-    iget-object v0, p0, Lcom/android/billingclient/api/q;->f:Lcom/android/billingclient/api/r;
+    iget-object v0, p0, Lcom/android/billingclient/api/q;->g:Lcom/android/billingclient/api/r;
 
     iget-object v1, v0, Lcom/android/billingclient/api/r;->c:Lcom/android/billingclient/api/b;
 

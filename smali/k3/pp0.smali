@@ -1,114 +1,93 @@
-.class public final Lk3/pp0;
+.class public final synthetic Lk3/pp0;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
-# interfaces
-.implements Lk3/xm0;
 
+# static fields
+.field public static final synthetic a:[I
 
-# instance fields
-.field public final a:Lk3/xp0;
-
-.field public final b:Lk3/gn0;
+.field public static final synthetic b:[I
 
 
 # direct methods
-.method public constructor <init>(Lk3/xp0;Lk3/gn0;)V
-    .locals 0
+.method public static constructor <clinit>()V
+    .locals 5
+
+    const/4 v0, 0x3
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-static {v0}, Lp/g;->c(I)[I
+
+    move-result-object v1
 
     .line 2
-    iput-object p1, p0, Lk3/pp0;->a:Lk3/xp0;
+    array-length v1, v1
+
+    new-array v1, v1, [I
+
+    sput-object v1, Lk3/pp0;->b:[I
+
+    const/4 v2, 0x0
+
+    const/4 v3, 0x1
+
+    :try_start_0
+    aput v3, v1, v2
+    :try_end_0
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
+
+    :catch_0
+    const/4 v1, 0x2
+
+    :try_start_1
+    sget-object v4, Lk3/pp0;->b:[I
+
+    aput v1, v4, v3
+    :try_end_1
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_1
+
+    :catch_1
+    :try_start_2
+    sget-object v4, Lk3/pp0;->b:[I
+
+    aput v0, v4, v1
+    :try_end_2
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_2 .. :try_end_2} :catch_2
 
     .line 3
-    iput-object p2, p0, Lk3/pp0;->b:Lk3/gn0;
+    :catch_2
+    invoke-static {v0}, Lp/g;->c(I)[I
 
-    return-void
-.end method
-
-
-# virtual methods
-.method public final a([B[B)[B
-    .locals 6
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/security/GeneralSecurityException;
-        }
-    .end annotation
-
-    .line 1
-    iget-object v0, p0, Lk3/pp0;->a:Lk3/xp0;
-
-    invoke-interface {v0, p1}, Lk3/xp0;->a([B)[B
-
-    move-result-object p1
-
-    const/16 v0, 0x8
-
-    .line 2
-    invoke-static {v0}, Ljava/nio/ByteBuffer;->allocate(I)Ljava/nio/ByteBuffer;
-
-    move-result-object v1
-
-    const-wide/16 v2, 0x8
-
-    array-length v4, p2
-
-    int-to-long v4, v4
-
-    mul-long v4, v4, v2
-
-    invoke-virtual {v1, v4, v5}, Ljava/nio/ByteBuffer;->putLong(J)Ljava/nio/ByteBuffer;
-
-    move-result-object v1
-
-    invoke-virtual {v1}, Ljava/nio/ByteBuffer;->array()[B
-
-    move-result-object v1
-
-    invoke-static {v1, v0}, Ljava/util/Arrays;->copyOf([BI)[B
-
-    move-result-object v0
-
-    .line 3
-    iget-object v1, p0, Lk3/pp0;->b:Lk3/gn0;
-
-    const/4 v2, 0x3
-
-    new-array v2, v2, [[B
-
-    const/4 v3, 0x0
-
-    aput-object p2, v2, v3
-
-    const/4 p2, 0x1
-
-    aput-object p1, v2, p2
-
-    const/4 v4, 0x2
-
-    aput-object v0, v2, v4
-
-    invoke-static {v2}, Lk3/ep0;->c([[B)[B
-
-    move-result-object v0
-
-    invoke-interface {v1, v0}, Lk3/gn0;->a([B)[B
-
-    move-result-object v0
-
-    new-array v1, v4, [[B
-
-    aput-object p1, v1, v3
-
-    aput-object v0, v1, p2
+    move-result-object v4
 
     .line 4
-    invoke-static {v1}, Lk3/ep0;->c([[B)[B
+    array-length v4, v4
 
-    move-result-object p1
+    new-array v4, v4, [I
 
-    return-object p1
+    sput-object v4, Lk3/pp0;->a:[I
+
+    :try_start_3
+    aput v3, v4, v2
+    :try_end_3
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_3 .. :try_end_3} :catch_3
+
+    :catch_3
+    :try_start_4
+    sget-object v2, Lk3/pp0;->a:[I
+
+    aput v1, v2, v1
+    :try_end_4
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_4 .. :try_end_4} :catch_4
+
+    :catch_4
+    :try_start_5
+    sget-object v1, Lk3/pp0;->a:[I
+
+    aput v0, v1, v3
+    :try_end_5
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_5 .. :try_end_5} :catch_5
+
+    :catch_5
+    return-void
 .end method

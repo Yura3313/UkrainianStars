@@ -18,9 +18,9 @@
 
 
 # instance fields
-.field public f:Ljava/lang/String;
+.field public g:Ljava/lang/String;
 
-.field public final synthetic g:Lcom/supercell/titan/n;
+.field public final synthetic h:Lcom/supercell/titan/n;
 
 
 # direct methods
@@ -28,14 +28,14 @@
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lcom/supercell/titan/n$c;->g:Lcom/supercell/titan/n;
+    iput-object p1, p0, Lcom/supercell/titan/n$c;->h:Lcom/supercell/titan/n;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     const-string p1, ""
 
     .line 2
-    iput-object p1, p0, Lcom/supercell/titan/n$c;->f:Ljava/lang/String;
+    iput-object p1, p0, Lcom/supercell/titan/n$c;->g:Ljava/lang/String;
 
     return-void
 .end method
@@ -51,7 +51,7 @@
     move-result-object p1
 
     .line 2
-    iget-object v0, p0, Lcom/supercell/titan/n$c;->f:Ljava/lang/String;
+    iget-object v0, p0, Lcom/supercell/titan/n$c;->g:Ljava/lang/String;
 
     invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -63,10 +63,10 @@
 
     .line 3
     :cond_0
-    iget-object v0, p0, Lcom/supercell/titan/n$c;->g:Lcom/supercell/titan/n;
+    iget-object v0, p0, Lcom/supercell/titan/n$c;->h:Lcom/supercell/titan/n;
 
     .line 4
-    iget-boolean v0, v0, Lcom/supercell/titan/n;->f:Z
+    iget-boolean v0, v0, Lcom/supercell/titan/n;->g:Z
 
     if-nez v0, :cond_1
 
@@ -93,7 +93,7 @@
 
     move-result-object p1
 
-    iput-object p1, p0, Lcom/supercell/titan/n$c;->f:Ljava/lang/String;
+    iput-object p1, p0, Lcom/supercell/titan/n$c;->g:Ljava/lang/String;
 
     return-void
 .end method

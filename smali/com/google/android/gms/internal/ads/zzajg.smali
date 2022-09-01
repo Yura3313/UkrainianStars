@@ -15,7 +15,7 @@
 .method public final Z2(Lcom/google/android/gms/internal/ads/zzuw;)V
     .locals 0
 
-    invoke-virtual {p1}, Lcom/google/android/gms/internal/ads/zzuw;->D2()Lcom/google/android/gms/ads/j;
+    invoke-virtual {p1}, Lcom/google/android/gms/internal/ads/zzuw;->D2()Lcom/google/android/gms/ads/k;
 
     const/4 p1, 0x0
 
@@ -25,9 +25,9 @@
 .method public final q2(Lcom/google/android/gms/internal/ads/zzait;)V
     .locals 1
 
-    new-instance v0, Lk3/x3;
+    new-instance v0, Lk3/w3;
 
-    invoke-direct {v0, p1}, Lk3/x3;-><init>(Lcom/google/android/gms/internal/ads/zzait;)V
+    invoke-direct {v0, p1}, Lk3/w3;-><init>(Lcom/google/android/gms/internal/ads/zzait;)V
 
     const/4 p1, 0x0
 

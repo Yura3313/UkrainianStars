@@ -82,7 +82,7 @@
     if-nez p1, :cond_1
 
     .line 1
-    sget-object v1, Lcom/helpshift/util/u;->b:Landroid/content/Context;
+    sget-object v1, Lcom/helpshift/util/t;->b:Landroid/content/Context;
 
     goto :goto_0
 
@@ -150,7 +150,7 @@
 
     .line 2
     :cond_0
-    sget-object v0, Lcom/helpshift/util/u;->b:Landroid/content/Context;
+    sget-object v0, Lcom/helpshift/util/t;->b:Landroid/content/Context;
 
     .line 3
     invoke-virtual {v0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
@@ -186,7 +186,7 @@
     if-eqz p0, :cond_1
 
     .line 2
-    invoke-static {p0, p1, p2}, Lk3/um;->a(Landroid/view/View;Ljava/lang/CharSequence;I)Lcom/google/android/material/snackbar/Snackbar;
+    invoke-static {p0, p1, p2}, Lv6/a;->b(Landroid/view/View;Ljava/lang/CharSequence;I)Lcom/google/android/material/snackbar/Snackbar;
 
     move-result-object p1
 
@@ -214,7 +214,7 @@
 
     .line 5
     :goto_0
-    sget-object p2, Lcom/helpshift/util/u;->b:Landroid/content/Context;
+    sget-object p2, Lcom/helpshift/util/t;->b:Landroid/content/Context;
 
     .line 6
     invoke-static {p2, p1, p0}, Landroid/widget/Toast;->makeText(Landroid/content/Context;Ljava/lang/CharSequence;I)Landroid/widget/Toast;
@@ -235,7 +235,7 @@
     if-nez p1, :cond_0
 
     .line 1
-    sget-object v0, Lcom/helpshift/util/u;->b:Landroid/content/Context;
+    sget-object v0, Lcom/helpshift/util/t;->b:Landroid/content/Context;
 
     goto :goto_0
 
@@ -247,7 +247,7 @@
 
     .line 3
     :goto_0
-    sget-object v1, Ld8/b;->i:Ld8/b;
+    sget-object v1, Ld8/b;->j:Ld8/b;
 
     if-ne p0, v1, :cond_1
 
@@ -258,7 +258,7 @@
 
     .line 5
     :cond_1
-    sget-object v1, Ld8/b;->j:Ld8/b;
+    sget-object v1, Ld8/b;->k:Ld8/b;
 
     if-ne p0, v1, :cond_2
 
@@ -269,7 +269,7 @@
 
     .line 7
     :cond_2
-    sget-object v1, Ld8/b;->k:Ld8/b;
+    sget-object v1, Ld8/b;->l:Ld8/b;
 
     if-ne p0, v1, :cond_3
 
@@ -280,7 +280,7 @@
 
     .line 9
     :cond_3
-    sget-object v1, Ld8/b;->l:Ld8/b;
+    sget-object v1, Ld8/b;->m:Ld8/b;
 
     if-ne p0, v1, :cond_4
 
@@ -291,7 +291,7 @@
 
     .line 11
     :cond_4
-    sget-object v1, Ld8/b;->p:Ld8/b;
+    sget-object v1, Ld8/b;->q:Ld8/b;
 
     if-ne p0, v1, :cond_5
 
@@ -302,7 +302,7 @@
 
     .line 13
     :cond_5
-    sget-object v1, Ld8/b;->w:Ld8/b;
+    sget-object v1, Ld8/b;->x:Ld8/b;
 
     if-ne p0, v1, :cond_6
 
@@ -313,7 +313,7 @@
 
     .line 15
     :cond_6
-    sget-object v1, Ld8/d;->f:Ld8/d;
+    sget-object v1, Ld8/d;->g:Ld8/d;
 
     if-ne p0, v1, :cond_7
 
@@ -324,7 +324,7 @@
 
     .line 17
     :cond_7
-    sget-object v1, Ld8/d;->g:Ld8/d;
+    sget-object v1, Ld8/d;->h:Ld8/d;
 
     if-ne p0, v1, :cond_8
 

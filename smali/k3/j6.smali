@@ -2,146 +2,121 @@
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
-# interfaces
-.implements Lk3/xs;
+
+# annotations
+.annotation runtime Ljavax/annotation/ParametersAreNonnullByDefault;
+.end annotation
 
 
-# static fields
-.field public static final f:Lk3/pj;
+# instance fields
+.field public final a:Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/List<",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+.end field
 
-.field public static final g:Lk3/j6;
+.field public final b:Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/List<",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public final c:Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/List<",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public final d:Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/List<",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public final e:Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/List<",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public final f:Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/List<",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public final g:Ljava/lang/String;
+
+.field public final h:Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/List<",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public final i:Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/List<",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public final j:Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/List<",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public final k:Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/List<",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public final l:Ljava/lang/String;
 
 
 # direct methods
-.method static synthetic constructor <clinit>()V
-    .locals 2
-
-    .line 1
-    new-instance v0, Lk3/pj;
-
-    const/4 v1, 0x0
-
-    invoke-direct {v0, v1}, Lk3/pj;-><init>(I)V
-
-    sput-object v0, Lk3/j6;->f:Lk3/pj;
-
-    .line 2
-    new-instance v0, Lk3/j6;
-
-    invoke-direct {v0}, Lk3/j6;-><init>()V
-
-    sput-object v0, Lk3/j6;->g:Lk3/j6;
-
-    return-void
-.end method
-
-.method public synthetic constructor <init>()V
-    .locals 0
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    return-void
-.end method
-
-.method public static a(Z)V
-    .locals 0
-
-    if-eqz p0, :cond_0
-
-    return-void
-
-    :cond_0
-    new-instance p0, Ljava/lang/IllegalArgumentException;
-
-    invoke-direct {p0}, Ljava/lang/IllegalArgumentException;-><init>()V
-
-    throw p0
-.end method
-
-.method public static b(ZLjava/lang/Object;)V
-    .locals 0
-
-    if-eqz p0, :cond_0
-
-    return-void
-
-    :cond_0
-    new-instance p0, Ljava/lang/IllegalArgumentException;
-
-    invoke-static {p1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object p1
-
-    invoke-direct {p0, p1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
-
-    throw p0
-.end method
-
-.method public static c(Z)V
-    .locals 0
-
-    if-eqz p0, :cond_0
-
-    return-void
-
-    :cond_0
-    new-instance p0, Ljava/lang/IllegalStateException;
-
-    invoke-direct {p0}, Ljava/lang/IllegalStateException;-><init>()V
-
-    throw p0
-.end method
-
-.method public static e(ZLjava/lang/Object;)V
-    .locals 0
-
-    if-eqz p0, :cond_0
-
-    return-void
-
-    :cond_0
-    new-instance p0, Ljava/lang/IllegalStateException;
-
-    invoke-static {p1}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object p1
-
-    invoke-direct {p0, p1}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
-
-    throw p0
-.end method
-
-.method public static f(I)Z
-    .locals 1
-
-    const/4 v0, 0x5
-
-    if-ge p0, v0, :cond_1
-
-    const-string v0, "Ads"
-
-    invoke-static {v0, p0}, Landroid/util/Log;->isLoggable(Ljava/lang/String;I)Z
-
-    move-result p0
-
-    if-eqz p0, :cond_0
-
-    goto :goto_0
-
-    :cond_0
-    const/4 p0, 0x0
-
-    return p0
-
-    :cond_1
-    :goto_0
-    const/4 p0, 0x1
-
-    return p0
-.end method
-
-.method public static g(Lorg/json/JSONObject;Ljava/lang/String;)Ljava/util/List;
-    .locals 2
+.method public constructor <init>(Lorg/json/JSONObject;)V
+    .locals 4
     .annotation system Ldalvik/annotation/Throws;
         value = {
             Lorg/json/JSONException;
@@ -149,260 +124,305 @@
     .end annotation
 
     .line 1
-    invoke-virtual {p0, p1}, Lorg/json/JSONObject;->optJSONArray(Ljava/lang/String;)Lorg/json/JSONArray;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    move-result-object p0
-
-    if-eqz p0, :cond_1
+    const-string v0, "id"
 
     .line 2
-    new-instance p1, Ljava/util/ArrayList;
+    invoke-virtual {p1, v0}, Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;
 
-    invoke-virtual {p0}, Lorg/json/JSONArray;->length()I
-
-    move-result v0
-
-    invoke-direct {p1, v0}, Ljava/util/ArrayList;-><init>(I)V
-
-    const/4 v0, 0x0
+    const-string v0, "adapters"
 
     .line 3
-    :goto_0
-    invoke-virtual {p0}, Lorg/json/JSONArray;->length()I
+    invoke-virtual {p1, v0}, Lorg/json/JSONObject;->getJSONArray(Ljava/lang/String;)Lorg/json/JSONArray;
 
-    move-result v1
-
-    if-ge v0, v1, :cond_0
+    move-result-object v0
 
     .line 4
-    invoke-virtual {p0, v0}, Lorg/json/JSONArray;->getString(I)Ljava/lang/String;
+    new-instance v1, Ljava/util/ArrayList;
 
-    move-result-object v1
+    invoke-virtual {v0}, Lorg/json/JSONArray;->length()I
 
-    invoke-virtual {p1, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    move-result v2
 
-    add-int/lit8 v0, v0, 0x1
+    invoke-direct {v1, v2}, Ljava/util/ArrayList;-><init>(I)V
+
+    const/4 v2, 0x0
+
+    .line 5
+    :goto_0
+    invoke-virtual {v0}, Lorg/json/JSONArray;->length()I
+
+    move-result v3
+
+    if-ge v2, v3, :cond_0
+
+    .line 6
+    invoke-virtual {v0, v2}, Lorg/json/JSONArray;->getString(I)Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-virtual {v1, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    add-int/lit8 v2, v2, 0x1
 
     goto :goto_0
 
-    .line 5
+    .line 7
     :cond_0
-    invoke-static {p1}, Ljava/util/Collections;->unmodifiableList(Ljava/util/List;)Ljava/util/List;
+    invoke-static {v1}, Ljava/util/Collections;->unmodifiableList(Ljava/util/List;)Ljava/util/List;
 
-    move-result-object p0
+    move-result-object v0
 
-    return-object p0
+    iput-object v0, p0, Lk3/j6;->a:Ljava/util/List;
 
-    :cond_1
-    const/4 p0, 0x0
+    const-string v0, "allocation_id"
 
-    return-object p0
-.end method
+    const/4 v1, 0x0
 
-.method public static h(ILjava/lang/Throwable;Ljava/lang/String;)V
-    .locals 1
+    .line 8
+    invoke-virtual {p1, v0, v1}, Lorg/json/JSONObject;->optString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
-    .line 1
-    invoke-static {}, Lk3/j6;->m()Z
+    .line 9
+    sget-object v0, Li1/p;->B:Li1/p;
 
-    const/4 v0, 0x3
+    iget-object v0, v0, Li1/p;->t:Lk3/k6;
 
-    if-ne p0, v0, :cond_0
+    const-string v0, "clickurl"
 
-    return-void
+    .line 10
+    invoke-static {p1, v0}, Lk3/k6;->a(Lorg/json/JSONObject;Ljava/lang/String;)Ljava/util/List;
 
-    .line 2
-    :cond_0
-    sget-object p0, Li1/o;->B:Li1/o;
+    move-result-object v0
 
-    iget-object p0, p0, Li1/o;->g:Lk3/ia;
+    iput-object v0, p0, Lk3/j6;->b:Ljava/util/List;
 
-    .line 3
-    invoke-virtual {p0, p1, p2}, Lk3/ia;->c(Ljava/lang/Throwable;Ljava/lang/String;)V
+    .line 11
+    sget-object v0, Li1/p;->B:Li1/p;
 
-    return-void
-.end method
+    iget-object v0, v0, Li1/p;->t:Lk3/k6;
 
-.method public static i(II)I
-    .locals 0
+    const-string v0, "imp_urls"
 
-    if-ltz p0, :cond_0
+    .line 12
+    invoke-static {p1, v0}, Lk3/k6;->a(Lorg/json/JSONObject;Ljava/lang/String;)Ljava/util/List;
 
-    if-ge p0, p1, :cond_0
+    move-result-object v0
 
-    return p0
+    iput-object v0, p0, Lk3/j6;->c:Ljava/util/List;
 
-    :cond_0
-    new-instance p0, Ljava/lang/IndexOutOfBoundsException;
+    .line 13
+    sget-object v0, Li1/p;->B:Li1/p;
 
-    invoke-direct {p0}, Ljava/lang/IndexOutOfBoundsException;-><init>()V
+    iget-object v0, v0, Li1/p;->t:Lk3/k6;
 
-    throw p0
-.end method
+    const-string v0, "downloaded_imp_urls"
 
-.method public static j(Landroid/content/Context;Z)V
-    .locals 0
+    .line 14
+    invoke-static {p1, v0}, Lk3/k6;->a(Lorg/json/JSONObject;Ljava/lang/String;)Ljava/util/List;
 
-    if-eqz p1, :cond_0
+    move-result-object v0
 
-    return-void
+    iput-object v0, p0, Lk3/j6;->d:Ljava/util/List;
 
-    .line 1
-    :cond_0
-    sget-object p1, Lk3/l51;->j:Lk3/l51;
+    .line 15
+    sget-object v0, Li1/p;->B:Li1/p;
 
-    iget-object p1, p1, Lk3/l51;->a:Lk3/ad;
+    iget-object v0, v0, Li1/p;->t:Lk3/k6;
 
-    .line 2
-    invoke-static {p0}, Lk3/ad;->f(Landroid/content/Context;)Ljava/lang/String;
+    const-string v0, "fill_urls"
 
-    move-result-object p0
+    .line 16
+    invoke-static {p1, v0}, Lk3/k6;->a(Lorg/json/JSONObject;Ljava/lang/String;)Ljava/util/List;
 
-    invoke-static {p0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+    move-result-object v0
 
-    move-result-object p0
+    iput-object v0, p0, Lk3/j6;->f:Ljava/util/List;
 
-    invoke-virtual {p0}, Ljava/lang/String;->length()I
+    .line 17
+    sget-object v0, Li1/p;->B:Li1/p;
 
-    move-result p0
+    iget-object v0, v0, Li1/p;->t:Lk3/k6;
 
-    add-int/lit8 p0, p0, 0x65
+    const-string v0, "video_start_urls"
 
-    new-instance p1, Ljava/lang/StringBuilder;
+    .line 18
+    invoke-static {p1, v0}, Lk3/k6;->a(Lorg/json/JSONObject;Ljava/lang/String;)Ljava/util/List;
 
-    invoke-direct {p1, p0}, Ljava/lang/StringBuilder;-><init>(I)V
+    move-result-object v0
 
-    return-void
-.end method
+    iput-object v0, p0, Lk3/j6;->h:Ljava/util/List;
 
-.method public static k(Ljava/lang/String;Ljava/lang/Throwable;)V
-    .locals 1
+    .line 19
+    sget-object v0, Li1/p;->B:Li1/p;
 
-    const/4 v0, 0x5
+    iget-object v0, v0, Li1/p;->t:Lk3/k6;
 
-    .line 1
-    invoke-static {v0}, Lk3/j6;->f(I)Z
+    const-string v0, "video_complete_urls"
 
-    move-result v0
+    .line 20
+    invoke-static {p1, v0}, Lk3/k6;->a(Lorg/json/JSONObject;Ljava/lang/String;)Ljava/util/List;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lk3/j6;->j:Ljava/util/List;
+
+    .line 21
+    sget-object v0, Li1/p;->B:Li1/p;
+
+    iget-object v0, v0, Li1/p;->t:Lk3/k6;
+
+    const-string v0, "video_reward_urls"
+
+    .line 22
+    invoke-static {p1, v0}, Lk3/k6;->a(Lorg/json/JSONObject;Ljava/lang/String;)Ljava/util/List;
+
+    move-result-object v0
+
+    .line 23
+    iput-object v0, p0, Lk3/j6;->i:Ljava/util/List;
+
+    const-string v0, "transaction_id"
+
+    .line 24
+    invoke-virtual {p1, v0}, Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;
+
+    const-string v0, "valid_from_timestamp"
+
+    .line 25
+    invoke-virtual {p1, v0}, Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;
+
+    const-string v0, "ad"
+
+    .line 26
+    invoke-virtual {p1, v0}, Lorg/json/JSONObject;->optJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
+
+    move-result-object v0
 
     if-eqz v0, :cond_1
 
-    if-eqz p1, :cond_0
+    .line 27
+    sget-object v2, Li1/p;->B:Li1/p;
 
-    .line 2
-    invoke-static {p0}, Lk3/j6;->l(Ljava/lang/String;)Ljava/lang/String;
+    iget-object v2, v2, Li1/p;->t:Lk3/k6;
 
-    return-void
+    const-string v2, "manual_impression_urls"
 
-    .line 3
-    :cond_0
-    invoke-static {p0}, Lk3/j6;->l(Ljava/lang/String;)Ljava/lang/String;
+    .line 28
+    invoke-static {v0, v2}, Lk3/k6;->a(Lorg/json/JSONObject;Ljava/lang/String;)Ljava/util/List;
+
+    move-result-object v2
+
+    goto :goto_1
 
     :cond_1
-    return-void
-.end method
+    move-object v2, v1
 
-.method public static l(Ljava/lang/String;)Ljava/lang/String;
-    .locals 3
+    .line 29
+    :goto_1
+    iput-object v2, p0, Lk3/j6;->e:Ljava/util/List;
 
-    .line 1
-    invoke-static {}, Ljava/lang/Thread;->currentThread()Ljava/lang/Thread;
+    if-eqz v0, :cond_2
 
-    move-result-object v0
+    .line 30
+    invoke-virtual {v0}, Lorg/json/JSONObject;->toString()Ljava/lang/String;
 
-    invoke-virtual {v0}, Ljava/lang/Thread;->getStackTrace()[Ljava/lang/StackTraceElement;
+    :cond_2
+    const-string v0, "data"
 
-    move-result-object v0
-
-    .line 2
-    array-length v1, v0
-
-    const/4 v2, 0x4
-
-    if-lt v1, v2, :cond_0
-
-    const/4 v1, 0x3
-
-    .line 3
-    aget-object v0, v0, v1
-
-    invoke-virtual {v0}, Ljava/lang/StackTraceElement;->getLineNumber()I
-
-    move-result v0
-
-    invoke-virtual {p0}, Ljava/lang/String;->length()I
-
-    move-result v1
-
-    add-int/lit8 v1, v1, 0xd
-
-    new-instance v2, Ljava/lang/StringBuilder;
-
-    invoke-direct {v2, v1}, Ljava/lang/StringBuilder;-><init>(I)V
-
-    invoke-virtual {v2, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string p0, " @"
-
-    invoke-virtual {v2, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p0
-
-    :cond_0
-    return-object p0
-.end method
-
-.method public static m()Z
-    .locals 1
-
-    const/4 v0, 0x2
-
-    .line 1
-    invoke-static {v0}, Lk3/j6;->f(I)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    .line 2
-    sget-object v0, Lk3/u0;->a:Lk3/k0;
-
-    invoke-virtual {v0}, Lk3/k0;->a()Ljava/lang/Object;
+    .line 31
+    invoke-virtual {p1, v0}, Lorg/json/JSONObject;->optJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
 
     move-result-object v0
 
-    check-cast v0, Ljava/lang/Boolean;
+    if-eqz v0, :cond_3
 
-    invoke-virtual {v0}, Ljava/lang/Boolean;->booleanValue()Z
+    .line 32
+    invoke-virtual {v0}, Lorg/json/JSONObject;->toString()Ljava/lang/String;
 
-    move-result v0
+    move-result-object v2
 
-    if-eqz v0, :cond_0
+    goto :goto_2
 
-    const/4 v0, 0x1
+    :cond_3
+    move-object v2, v1
 
-    return v0
+    :goto_2
+    iput-object v2, p0, Lk3/j6;->g:Ljava/lang/String;
 
-    :cond_0
-    const/4 v0, 0x0
+    if-eqz v0, :cond_4
 
-    return v0
-.end method
+    const-string v2, "class_name"
 
+    .line 33
+    invoke-virtual {v0, v2}, Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;
 
-# virtual methods
-.method public d(Ljava/lang/Object;)V
-    .locals 0
+    :cond_4
+    const-string v0, "html_template"
 
-    .line 1
-    check-cast p1, Lj1/l;
+    .line 34
+    invoke-virtual {p1, v0, v1}, Lorg/json/JSONObject;->optString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
-    .line 2
-    invoke-interface {p1}, Lj1/l;->onPause()V
+    const-string v0, "ad_base_url"
+
+    .line 35
+    invoke-virtual {p1, v0, v1}, Lorg/json/JSONObject;->optString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    const-string v0, "assets"
+
+    .line 36
+    invoke-virtual {p1, v0}, Lorg/json/JSONObject;->optJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_5
+
+    .line 37
+    invoke-virtual {v0}, Lorg/json/JSONObject;->toString()Ljava/lang/String;
+
+    .line 38
+    :cond_5
+    sget-object v0, Li1/p;->B:Li1/p;
+
+    iget-object v0, v0, Li1/p;->t:Lk3/k6;
+
+    const-string v0, "template_ids"
+
+    .line 39
+    invoke-static {p1, v0}, Lk3/k6;->a(Lorg/json/JSONObject;Ljava/lang/String;)Ljava/util/List;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lk3/j6;->k:Ljava/util/List;
+
+    const-string v0, "ad_loader_options"
+
+    .line 40
+    invoke-virtual {p1, v0}, Lorg/json/JSONObject;->optJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_6
+
+    .line 41
+    invoke-virtual {v0}, Lorg/json/JSONObject;->toString()Ljava/lang/String;
+
+    :cond_6
+    const-string v0, "response_type"
+
+    .line 42
+    invoke-virtual {p1, v0, v1}, Lorg/json/JSONObject;->optString(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
+
+    iput-object v0, p0, Lk3/j6;->l:Ljava/lang/String;
+
+    const-wide/16 v0, -0x1
+
+    const-string v2, "ad_network_timeout_millis"
+
+    .line 43
+    invoke-virtual {p1, v2, v0, v1}, Lorg/json/JSONObject;->optLong(Ljava/lang/String;J)J
 
     return-void
 .end method

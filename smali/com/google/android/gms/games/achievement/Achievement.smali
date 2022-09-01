@@ -35,7 +35,7 @@
 .method public abstract Z()Ljava/lang/String;
 .end method
 
-.method public abstract f2()I
+.method public abstract e2()I
 .end method
 
 .method public abstract getDescription()Ljava/lang/String;

@@ -3,70 +3,58 @@
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lk3/mi;
+.implements Lk3/x21;
 
 
 # instance fields
-.field public final f:Lk3/wx;
-
 .field public final g:Lk3/gh;
-
-.field public final h:Lk3/qd;
 
 
 # direct methods
-.method public constructor <init>(Lk3/wx;Lk3/gh;Lk3/qd;)V
+.method public constructor <init>(Lk3/gh;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lk3/by;->f:Lk3/wx;
-
-    iput-object p2, p0, Lk3/by;->g:Lk3/gh;
-
-    iput-object p3, p0, Lk3/by;->h:Lk3/qd;
+    iput-object p1, p0, Lk3/by;->g:Lk3/gh;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final c(Z)V
+.method public final g0(Lk3/u21;)V
     .locals 3
 
-    iget-object p1, p0, Lk3/by;->f:Lk3/wx;
-
+    .line 1
     iget-object v0, p0, Lk3/by;->g:Lk3/gh;
 
-    iget-object v1, p0, Lk3/by;->h:Lk3/qd;
-
-    .line 1
-    iget-object v2, p1, Lk3/wx;->a:Lk3/ug0;
-
-    iget-object v2, v2, Lk3/ug0;->b:Lcom/google/android/gms/internal/ads/zzaac;
-
-    if-eqz v2, :cond_0
-
-    invoke-interface {v0}, Lk3/gh;->h()Lcom/google/android/gms/internal/ads/zzbgk;
-
-    move-result-object v2
-
-    if-eqz v2, :cond_0
-
     .line 2
-    invoke-interface {v0}, Lk3/gh;->h()Lcom/google/android/gms/internal/ads/zzbgk;
+    new-instance v1, Ljava/util/HashMap;
 
-    move-result-object v0
-
-    iget-object p1, p1, Lk3/wx;->a:Lk3/ug0;
-
-    iget-object p1, p1, Lk3/ug0;->b:Lcom/google/android/gms/internal/ads/zzaac;
-
-    invoke-virtual {v0, p1}, Lcom/google/android/gms/internal/ads/zzbgk;->w7(Lcom/google/android/gms/internal/ads/zzaac;)V
+    invoke-direct {v1}, Ljava/util/HashMap;-><init>()V
 
     .line 3
+    iget-boolean p1, p1, Lk3/u21;->j:Z
+
+    if-eqz p1, :cond_0
+
+    const-string p1, "1"
+
+    goto :goto_0
+
     :cond_0
-    invoke-virtual {v1}, Lk3/qd;->d()V
+    const-string p1, "0"
+
+    :goto_0
+    const-string v2, "isVisible"
+
+    invoke-virtual {v1, v2, p1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    const-string p1, "onAdVisibilityChanged"
+
+    .line 4
+    invoke-interface {v0, p1, v1}, Lk3/y3;->q(Ljava/lang/String;Ljava/util/Map;)V
 
     return-void
 .end method

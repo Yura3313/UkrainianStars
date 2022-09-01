@@ -89,16 +89,16 @@
     check-cast p2, Lcom/helpshift/support/Faq;
 
     .line 3
-    iget-object v0, p1, Lma/b$a;->y:Landroid/widget/TextView;
+    iget-object v0, p1, Lma/b$a;->z:Landroid/widget/TextView;
 
-    iget-object v1, p2, Lcom/helpshift/support/Faq;->f:Ljava/lang/String;
+    iget-object v1, p2, Lcom/helpshift/support/Faq;->g:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 4
-    iget-object p1, p1, Lma/b$a;->y:Landroid/widget/TextView;
+    iget-object p1, p1, Lma/b$a;->z:Landroid/widget/TextView;
 
-    iget-object p2, p2, Lcom/helpshift/support/Faq;->g:Ljava/lang/String;
+    iget-object p2, p2, Lcom/helpshift/support/Faq;->h:Ljava/lang/String;
 
     invoke-virtual {p1, p2}, Landroid/view/View;->setTag(Ljava/lang/Object;)V
 

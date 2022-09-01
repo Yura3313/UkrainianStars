@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field public final f:Ljava/util/List;
+.field public final g:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
@@ -54,7 +54,7 @@
     invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lcom/google/android/gms/internal/drive/zzgz;->f:Ljava/util/List;
+    iput-object p1, p0, Lcom/google/android/gms/internal/drive/zzgz;->g:Ljava/util/List;
 
     return-void
 .end method
@@ -72,7 +72,7 @@
     move-result p2
 
     .line 2
-    iget-object v0, p0, Lcom/google/android/gms/internal/drive/zzgz;->f:Ljava/util/List;
+    iget-object v0, p0, Lcom/google/android/gms/internal/drive/zzgz;->g:Ljava/util/List;
 
     const/4 v1, 0x2
 

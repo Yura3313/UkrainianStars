@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field public final synthetic f:Ltd/l;
+.field public final synthetic g:Ltd/l;
 
 
 # direct methods
 .method public constructor <init>(Ltd/l;)V
     .locals 0
 
-    iput-object p1, p0, Ltd/l$c;->f:Ltd/l;
+    iput-object p1, p0, Ltd/l$c;->g:Ltd/l;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -40,9 +40,9 @@
     if-eqz p2, :cond_0
 
     .line 1
-    iget-object p2, p0, Ltd/l$c;->f:Ltd/l;
+    iget-object p2, p0, Ltd/l$c;->g:Ltd/l;
 
-    sget v0, Ltd/l;->g0:I
+    sget v0, Ltd/l;->h0:I
 
     .line 2
     invoke-virtual {p2}, Ltd/l;->Y0()Ltd/b;
@@ -60,7 +60,7 @@
 
     const-string v0, "v"
 
-    invoke-static {p1, v0}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-static {p2, p1}, Lae/z2;->u(Landroidx/core/widget/NestedScrollView;Landroid/view/View;)V
 

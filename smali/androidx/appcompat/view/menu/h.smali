@@ -369,7 +369,7 @@
     invoke-direct {p4, v1, v2, p1, p2}, Landroid/graphics/Rect;-><init>(IIII)V
 
     .line 12
-    iput-object p4, v0, Lg/d;->f:Landroid/graphics/Rect;
+    iput-object p4, v0, Lg/d;->g:Landroid/graphics/Rect;
 
     .line 13
     :cond_1

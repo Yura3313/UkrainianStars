@@ -33,13 +33,13 @@
 
 
 # static fields
-.field public static final g:Lcom/google/protobuf/i$h;
+.field public static final h:Lcom/google/protobuf/i$h;
 
-.field public static final h:Lcom/google/protobuf/i$e;
+.field public static final i:Lcom/google/protobuf/i$e;
 
 
 # instance fields
-.field public f:I
+.field public g:I
 
 
 # direct methods
@@ -53,7 +53,7 @@
 
     invoke-direct {v0, v1}, Lcom/google/protobuf/i$h;-><init>([B)V
 
-    sput-object v0, Lcom/google/protobuf/i;->g:Lcom/google/protobuf/i$h;
+    sput-object v0, Lcom/google/protobuf/i;->h:Lcom/google/protobuf/i$h;
 
     .line 2
     invoke-static {}, Lcom/google/protobuf/d;->a()Z
@@ -74,7 +74,7 @@
     invoke-direct {v0}, Lcom/google/protobuf/i$c;-><init>()V
 
     :goto_0
-    sput-object v0, Lcom/google/protobuf/i;->h:Lcom/google/protobuf/i$e;
+    sput-object v0, Lcom/google/protobuf/i;->i:Lcom/google/protobuf/i$e;
 
     return-void
 .end method
@@ -88,7 +88,7 @@
     const/4 v0, 0x0
 
     .line 2
-    iput v0, p0, Lcom/google/protobuf/i;->f:I
+    iput v0, p0, Lcom/google/protobuf/i;->g:I
 
     return-void
 .end method
@@ -270,7 +270,7 @@
     .line 2
     new-instance v0, Lcom/google/protobuf/i$h;
 
-    sget-object v1, Lcom/google/protobuf/i;->h:Lcom/google/protobuf/i$e;
+    sget-object v1, Lcom/google/protobuf/i;->i:Lcom/google/protobuf/i$e;
 
     invoke-interface {v1, p0, p1, p2}, Lcom/google/protobuf/i$e;->a([BII)[B
 
@@ -312,7 +312,7 @@
     .locals 2
 
     .line 1
-    iget v0, p0, Lcom/google/protobuf/i;->f:I
+    iget v0, p0, Lcom/google/protobuf/i;->g:I
 
     if-nez v0, :cond_1
 
@@ -334,7 +334,7 @@
 
     .line 4
     :cond_0
-    iput v0, p0, Lcom/google/protobuf/i;->f:I
+    iput v0, p0, Lcom/google/protobuf/i;->g:I
 
     :cond_1
     return v0
@@ -487,7 +487,7 @@
 
     if-gt v2, v4, :cond_0
 
-    invoke-static {p0}, Lcom/google/protobuf/o1;->a(Lcom/google/protobuf/i;)Ljava/lang/String;
+    invoke-static {p0}, Lcom/google/protobuf/o1;->c(Lcom/google/protobuf/i;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -504,7 +504,7 @@
 
     move-result-object v3
 
-    invoke-static {v3}, Lcom/google/protobuf/o1;->a(Lcom/google/protobuf/i;)Ljava/lang/String;
+    invoke-static {v3}, Lcom/google/protobuf/o1;->c(Lcom/google/protobuf/i;)Ljava/lang/String;
 
     move-result-object v3
 

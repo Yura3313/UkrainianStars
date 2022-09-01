@@ -1,5 +1,5 @@
 .class public final Lae/w2;
-.super Lse/h;
+.super Lse/i;
 .source "VariantCache.kt"
 
 # interfaces
@@ -9,31 +9,31 @@
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/a<",
-        "Lie/h;",
+        "Lie/i;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic f:Lae/x2$a;
+.field public final synthetic g:Lae/x2$a;
 
-.field public final synthetic g:Ljava/lang/Object;
+.field public final synthetic h:Ljava/lang/Object;
 
 
 # direct methods
 .method public constructor <init>(Lae/x2$a;Ljava/lang/Object;)V
     .locals 0
 
-    iput-object p1, p0, Lae/w2;->f:Lae/x2$a;
+    iput-object p1, p0, Lae/w2;->g:Lae/x2$a;
 
-    iput-object p2, p0, Lae/w2;->g:Ljava/lang/Object;
+    iput-object p2, p0, Lae/w2;->h:Ljava/lang/Object;
 
     const/4 p1, 0x0
 
-    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -44,13 +44,13 @@
     .locals 6
 
     .line 1
-    iget-object v0, p0, Lae/w2;->f:Lae/x2$a;
+    iget-object v0, p0, Lae/w2;->g:Lae/x2$a;
 
-    iget-object v1, v0, Lae/x2$a;->g:Lae/x2;
+    iget-object v1, v0, Lae/x2$a;->h:Lae/x2;
 
-    iget-object v0, v0, Lae/x2$a;->h:Ljava/lang/String;
+    iget-object v0, v0, Lae/x2$a;->i:Ljava/lang/String;
 
-    iget-object v2, p0, Lae/w2;->g:Ljava/lang/Object;
+    iget-object v2, p0, Lae/w2;->h:Ljava/lang/Object;
 
     .line 2
     iget-object v3, v1, Lae/x2;->b:Ljava/util/LinkedHashMap;
@@ -108,7 +108,7 @@
     monitor-exit v3
 
     .line 8
-    sget-object v0, Lie/h;->a:Lie/h;
+    sget-object v0, Lie/i;->a:Lie/i;
 
     return-object v0
 

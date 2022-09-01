@@ -4,7 +4,7 @@
 
 
 # direct methods
-.method public static final t(Ljava/util/List;Ljava/util/Comparator;)V
+.method public static final o(Ljava/util/List;Ljava/util/Comparator;)V
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {

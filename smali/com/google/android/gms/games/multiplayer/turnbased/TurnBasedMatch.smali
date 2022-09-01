@@ -31,7 +31,7 @@
 .method public abstract F1()[B
 .end method
 
-.method public abstract J1()Ljava/lang/String;
+.method public abstract I1()Ljava/lang/String;
 .end method
 
 .method public abstract U0()I
@@ -46,10 +46,10 @@
 .method public abstract Z0()Ljava/lang/String;
 .end method
 
-.method public abstract c1()[B
+.method public abstract b2()I
 .end method
 
-.method public abstract c2()I
+.method public abstract c1()[B
 .end method
 
 .method public abstract e()Lcom/google/android/gms/games/Game;

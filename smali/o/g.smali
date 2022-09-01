@@ -1,23 +1,62 @@
-.class public final synthetic Lo/g;
+.class public final Lo/g;
 .super Ljava/lang/Object;
-.source "R8$$SyntheticClass"
+.source "KeyCycleOscillator.java"
+
+# interfaces
+.implements Ljava/util/Comparator;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Ljava/util/Comparator<",
+        "Lo/h$o;",
+        ">;"
+    }
+.end annotation
 
 
 # direct methods
-.method public static a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
-    .locals 1
+.method public constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final compare(Ljava/lang/Object;Ljava/lang/Object;)I
+    .locals 0
 
     .line 1
-    new-instance v0, Ljava/lang/StringBuilder;
+    check-cast p1, Lo/h$o;
+
+    check-cast p2, Lo/h$o;
 
     .line 2
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+    iget p1, p1, Lo/h$o;->a:I
 
-    .line 3
-    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    iget p2, p2, Lo/h$o;->a:I
 
-    .line 4
-    invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    if-ne p1, p2, :cond_0
 
-    return-object v0
+    const/4 p1, 0x0
+
+    goto :goto_0
+
+    :cond_0
+    if-ge p1, p2, :cond_1
+
+    const/4 p1, -0x1
+
+    goto :goto_0
+
+    :cond_1
+    const/4 p1, 0x1
+
+    :goto_0
+    return p1
 .end method

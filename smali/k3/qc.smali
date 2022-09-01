@@ -14,9 +14,9 @@
     .locals 1
 
     .line 1
-    sget-object v0, Li1/o;->B:Li1/o;
+    sget-object v0, Li1/p;->B:Li1/p;
 
-    iget-object v0, v0, Li1/o;->c:Lk3/bb;
+    iget-object v0, v0, Li1/p;->c:Lk3/bb;
 
     .line 2
     invoke-virtual {v0, p1, p2}, Lk3/bb;->H(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;

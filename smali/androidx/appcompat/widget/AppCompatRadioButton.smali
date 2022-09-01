@@ -8,11 +8,11 @@
 
 
 # instance fields
-.field public final f:Landroidx/appcompat/widget/e;
+.field public final g:Landroidx/appcompat/widget/e;
 
-.field public final g:Landroidx/appcompat/widget/d;
+.field public final h:Landroidx/appcompat/widget/d;
 
-.field public final h:Landroidx/appcompat/widget/m;
+.field public final i:Landroidx/appcompat/widget/m;
 
 
 # direct methods
@@ -49,7 +49,7 @@
 
     invoke-direct {p1, p0}, Landroidx/appcompat/widget/e;-><init>(Landroid/widget/CompoundButton;)V
 
-    iput-object p1, p0, Landroidx/appcompat/widget/AppCompatRadioButton;->f:Landroidx/appcompat/widget/e;
+    iput-object p1, p0, Landroidx/appcompat/widget/AppCompatRadioButton;->g:Landroidx/appcompat/widget/e;
 
     .line 5
     invoke-virtual {p1, p2, p3}, Landroidx/appcompat/widget/e;->b(Landroid/util/AttributeSet;I)V
@@ -59,7 +59,7 @@
 
     invoke-direct {p1, p0}, Landroidx/appcompat/widget/d;-><init>(Landroid/view/View;)V
 
-    iput-object p1, p0, Landroidx/appcompat/widget/AppCompatRadioButton;->g:Landroidx/appcompat/widget/d;
+    iput-object p1, p0, Landroidx/appcompat/widget/AppCompatRadioButton;->h:Landroidx/appcompat/widget/d;
 
     .line 7
     invoke-virtual {p1, p2, p3}, Landroidx/appcompat/widget/d;->d(Landroid/util/AttributeSet;I)V
@@ -69,7 +69,7 @@
 
     invoke-direct {p1, p0}, Landroidx/appcompat/widget/m;-><init>(Landroid/widget/TextView;)V
 
-    iput-object p1, p0, Landroidx/appcompat/widget/AppCompatRadioButton;->h:Landroidx/appcompat/widget/m;
+    iput-object p1, p0, Landroidx/appcompat/widget/AppCompatRadioButton;->i:Landroidx/appcompat/widget/m;
 
     .line 9
     invoke-virtual {p1, p2, p3}, Landroidx/appcompat/widget/m;->f(Landroid/util/AttributeSet;I)V
@@ -86,7 +86,7 @@
     invoke-super {p0}, Landroid/widget/CompoundButton;->drawableStateChanged()V
 
     .line 2
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatRadioButton;->g:Landroidx/appcompat/widget/d;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatRadioButton;->h:Landroidx/appcompat/widget/d;
 
     if-eqz v0, :cond_0
 
@@ -95,7 +95,7 @@
 
     .line 4
     :cond_0
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatRadioButton;->h:Landroidx/appcompat/widget/m;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatRadioButton;->i:Landroidx/appcompat/widget/m;
 
     if-eqz v0, :cond_1
 
@@ -115,7 +115,7 @@
     move-result v0
 
     .line 2
-    iget-object v1, p0, Landroidx/appcompat/widget/AppCompatRadioButton;->f:Landroidx/appcompat/widget/e;
+    iget-object v1, p0, Landroidx/appcompat/widget/AppCompatRadioButton;->g:Landroidx/appcompat/widget/e;
 
     if-eqz v1, :cond_0
 
@@ -130,7 +130,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatRadioButton;->g:Landroidx/appcompat/widget/d;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatRadioButton;->h:Landroidx/appcompat/widget/d;
 
     if-eqz v0, :cond_0
 
@@ -152,7 +152,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatRadioButton;->g:Landroidx/appcompat/widget/d;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatRadioButton;->h:Landroidx/appcompat/widget/d;
 
     if-eqz v0, :cond_0
 
@@ -174,7 +174,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatRadioButton;->f:Landroidx/appcompat/widget/e;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatRadioButton;->g:Landroidx/appcompat/widget/e;
 
     if-eqz v0, :cond_0
 
@@ -194,7 +194,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatRadioButton;->f:Landroidx/appcompat/widget/e;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatRadioButton;->g:Landroidx/appcompat/widget/e;
 
     if-eqz v0, :cond_0
 
@@ -217,7 +217,7 @@
     invoke-super {p0, p1}, Landroid/view/View;->setBackgroundDrawable(Landroid/graphics/drawable/Drawable;)V
 
     .line 2
-    iget-object p1, p0, Landroidx/appcompat/widget/AppCompatRadioButton;->g:Landroidx/appcompat/widget/d;
+    iget-object p1, p0, Landroidx/appcompat/widget/AppCompatRadioButton;->h:Landroidx/appcompat/widget/d;
 
     if-eqz p1, :cond_0
 
@@ -235,7 +235,7 @@
     invoke-super {p0, p1}, Landroid/view/View;->setBackgroundResource(I)V
 
     .line 2
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatRadioButton;->g:Landroidx/appcompat/widget/d;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatRadioButton;->h:Landroidx/appcompat/widget/d;
 
     if-eqz v0, :cond_0
 
@@ -270,7 +270,7 @@
     invoke-super {p0, p1}, Landroid/widget/CompoundButton;->setButtonDrawable(Landroid/graphics/drawable/Drawable;)V
 
     .line 2
-    iget-object p1, p0, Landroidx/appcompat/widget/AppCompatRadioButton;->f:Landroidx/appcompat/widget/e;
+    iget-object p1, p0, Landroidx/appcompat/widget/AppCompatRadioButton;->g:Landroidx/appcompat/widget/e;
 
     if-eqz p1, :cond_1
 
@@ -304,7 +304,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatRadioButton;->g:Landroidx/appcompat/widget/d;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatRadioButton;->h:Landroidx/appcompat/widget/d;
 
     if-eqz v0, :cond_0
 
@@ -319,7 +319,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatRadioButton;->g:Landroidx/appcompat/widget/d;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatRadioButton;->h:Landroidx/appcompat/widget/d;
 
     if-eqz v0, :cond_0
 
@@ -334,7 +334,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatRadioButton;->f:Landroidx/appcompat/widget/e;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatRadioButton;->g:Landroidx/appcompat/widget/e;
 
     if-eqz v0, :cond_0
 
@@ -357,7 +357,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatRadioButton;->f:Landroidx/appcompat/widget/e;
+    iget-object v0, p0, Landroidx/appcompat/widget/AppCompatRadioButton;->g:Landroidx/appcompat/widget/e;
 
     if-eqz v0, :cond_0
 

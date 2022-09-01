@@ -65,7 +65,7 @@
     iget-object p1, p0, Lcom/google/android/material/internal/CheckableImageButton$a;->d:Lcom/google/android/material/internal/CheckableImageButton;
 
     .line 5
-    iget-boolean p1, p1, Lcom/google/android/material/internal/CheckableImageButton;->i:Z
+    iget-boolean p1, p1, Lcom/google/android/material/internal/CheckableImageButton;->j:Z
 
     .line 6
     invoke-virtual {p2, p1}, Lg0/c;->D(Z)V

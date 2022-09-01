@@ -18,9 +18,9 @@
 
 
 # instance fields
-.field public final synthetic f:Lvd/a;
+.field public final synthetic g:Lvd/a;
 
-.field public final synthetic g:Ljava/lang/String;
+.field public final synthetic h:Ljava/lang/String;
 
 
 # direct methods
@@ -34,9 +34,9 @@
         }
     .end annotation
 
-    iput-object p1, p0, Lvd/a$d;->f:Lvd/a;
+    iput-object p1, p0, Lvd/a$d;->g:Lvd/a;
 
-    iput-object p2, p0, Lvd/a$d;->g:Ljava/lang/String;
+    iput-object p2, p0, Lvd/a$d;->h:Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -57,7 +57,7 @@
 
     if-eqz p1, :cond_0
 
-    invoke-static {p1}, Lye/r;->E(Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
+    invoke-static {p1}, Lye/r;->F(Ljava/lang/CharSequence;)Ljava/lang/CharSequence;
 
     move-result-object p1
 
@@ -72,7 +72,7 @@
 
     .line 2
     :goto_0
-    iget-object v0, p0, Lvd/a$d;->f:Lvd/a;
+    iget-object v0, p0, Lvd/a$d;->g:Lvd/a;
 
     sget v1, Lcom/supercell/id/R$id;->continue_button:I
 
@@ -84,21 +84,21 @@
 
     const-string v1, "continue_button"
 
-    invoke-static {v0, v1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     if-eqz p1, :cond_2
 
-    iget-object v1, p0, Lvd/a$d;->g:Ljava/lang/String;
+    iget-object v1, p0, Lvd/a$d;->h:Ljava/lang/String;
 
-    invoke-static {p1, v1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {p1, v1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v1
 
     if-nez v1, :cond_2
 
-    sget-object v1, Lae/q1;->b:Lae/q1;
+    sget-object v1, Lae/p1;->b:Lae/p1;
 
-    invoke-virtual {v1, p1}, Lae/q1;->c(Ljava/lang/String;)Lcom/supercell/id/api/ApiError;
+    invoke-virtual {v1, p1}, Lae/p1;->c(Ljava/lang/String;)Lcom/supercell/id/api/ApiError;
 
     move-result-object p1
 

@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field public final synthetic f:Lab/p;
+.field public final synthetic g:Lab/p;
 
 
 # direct methods
 .method public constructor <init>(Lab/p;)V
     .locals 0
 
-    iput-object p1, p0, Lab/p$a;->f:Lab/p;
+    iput-object p1, p0, Lab/p$a;->g:Lab/p;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -37,9 +37,9 @@
 .method public final onClick(Landroid/view/View;)V
     .locals 1
 
-    iget-object p1, p0, Lab/p$a;->f:Lab/p;
+    iget-object p1, p0, Lab/p$a;->g:Lab/p;
 
-    iget-object v0, p1, Lab/p;->i0:Landroid/view/MenuItem;
+    iget-object v0, p1, Lab/p;->j0:Landroid/view/MenuItem;
 
     invoke-virtual {p1, v0}, Lab/p;->onMenuItemClick(Landroid/view/MenuItem;)Z
 

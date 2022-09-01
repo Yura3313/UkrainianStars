@@ -1,5 +1,5 @@
 .class public final Lae/p$a;
-.super Lse/h;
+.super Lse/i;
 .source "EncryptedStorage.kt"
 
 # interfaces
@@ -18,7 +18,7 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/a<",
         "Landroid/content/SharedPreferences;",
         ">;"
@@ -27,18 +27,18 @@
 
 
 # instance fields
-.field public final synthetic f:Lae/p;
+.field public final synthetic g:Lae/p;
 
 
 # direct methods
 .method public constructor <init>(Lae/p;)V
     .locals 0
 
-    iput-object p1, p0, Lae/p$a;->f:Lae/p;
+    iput-object p1, p0, Lae/p$a;->g:Lae/p;
 
     const/4 p1, 0x0
 
-    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -56,7 +56,7 @@
     if-lt v0, v1, :cond_0
 
     .line 2
-    iget-object v0, p0, Lae/p$a;->f:Lae/p;
+    iget-object v0, p0, Lae/p$a;->g:Lae/p;
 
     .line 3
     iget-object v1, v0, Lae/p;->c:Landroid/content/Context;
@@ -82,7 +82,7 @@
 
     .line 7
     :try_start_0
-    iget-object v0, p0, Lae/p$a;->f:Lae/p;
+    iget-object v0, p0, Lae/p$a;->g:Lae/p;
 
     .line 8
     iget-object v3, v0, Lae/p;->c:Landroid/content/Context;
@@ -104,10 +104,10 @@
     move-result-object v4
 
     .line 13
-    sget-object v5, Ls0/a$b;->g:Ls0/a$b;
+    sget-object v5, Ls0/a$b;->h:Ls0/a$b;
 
     .line 14
-    sget-object v6, Ls0/a$c;->g:Ls0/a$c;
+    sget-object v6, Ls0/a$c;->h:Ls0/a$c;
 
     .line 15
     invoke-static {v3, v0, v4, v5, v6}, Ls0/a;->a(Landroid/content/Context;Ljava/lang/String;Ls0/c;Ls0/a$b;Ls0/a$c;)Landroid/content/SharedPreferences;
@@ -120,7 +120,7 @@
 
     .line 16
     :catch_0
-    iget-object v0, p0, Lae/p$a;->f:Lae/p;
+    iget-object v0, p0, Lae/p$a;->g:Lae/p;
 
     .line 17
     iget-object v3, v0, Lae/p;->c:Landroid/content/Context;

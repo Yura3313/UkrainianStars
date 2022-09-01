@@ -1250,12 +1250,12 @@
     iget-object p3, p0, Lcom/google/android/material/bottomsheet/BottomSheetBehavior;->n:Lcom/google/android/material/bottomsheet/BottomSheetBehavior$e;
 
     .line 9
-    iget-boolean p4, p3, Lcom/google/android/material/bottomsheet/BottomSheetBehavior$e;->g:Z
+    iget-boolean p4, p3, Lcom/google/android/material/bottomsheet/BottomSheetBehavior$e;->h:Z
 
     if-nez p4, :cond_3
 
     .line 10
-    iput p2, p3, Lcom/google/android/material/bottomsheet/BottomSheetBehavior$e;->h:I
+    iput p2, p3, Lcom/google/android/material/bottomsheet/BottomSheetBehavior$e;->i:I
 
     .line 11
     sget-object p2, Lf0/r;->a:Ljava/util/WeakHashMap;
@@ -1267,13 +1267,13 @@
     iget-object p1, p0, Lcom/google/android/material/bottomsheet/BottomSheetBehavior;->n:Lcom/google/android/material/bottomsheet/BottomSheetBehavior$e;
 
     .line 14
-    iput-boolean v1, p1, Lcom/google/android/material/bottomsheet/BottomSheetBehavior$e;->g:Z
+    iput-boolean v1, p1, Lcom/google/android/material/bottomsheet/BottomSheetBehavior$e;->h:Z
 
     goto :goto_2
 
     .line 15
     :cond_3
-    iput p2, p3, Lcom/google/android/material/bottomsheet/BottomSheetBehavior$e;->h:I
+    iput p2, p3, Lcom/google/android/material/bottomsheet/BottomSheetBehavior$e;->i:I
 
     goto :goto_2
 
@@ -2596,7 +2596,7 @@
 
     .line 3
     :cond_1
-    iget v4, p2, Lcom/google/android/material/bottomsheet/BottomSheetBehavior$SavedState;->i:I
+    iget v4, p2, Lcom/google/android/material/bottomsheet/BottomSheetBehavior$SavedState;->j:I
 
     iput v4, p0, Lcom/google/android/material/bottomsheet/BottomSheetBehavior;->d:I
 
@@ -2609,7 +2609,7 @@
 
     .line 4
     :cond_3
-    iget-boolean v4, p2, Lcom/google/android/material/bottomsheet/BottomSheetBehavior$SavedState;->j:Z
+    iget-boolean v4, p2, Lcom/google/android/material/bottomsheet/BottomSheetBehavior$SavedState;->k:Z
 
     iput-boolean v4, p0, Lcom/google/android/material/bottomsheet/BottomSheetBehavior;->b:Z
 
@@ -2622,7 +2622,7 @@
 
     .line 5
     :cond_5
-    iget-boolean v4, p2, Lcom/google/android/material/bottomsheet/BottomSheetBehavior$SavedState;->k:Z
+    iget-boolean v4, p2, Lcom/google/android/material/bottomsheet/BottomSheetBehavior$SavedState;->l:Z
 
     iput-boolean v4, p0, Lcom/google/android/material/bottomsheet/BottomSheetBehavior;->v:Z
 
@@ -2637,14 +2637,14 @@
 
     .line 6
     :cond_7
-    iget-boolean p1, p2, Lcom/google/android/material/bottomsheet/BottomSheetBehavior$SavedState;->l:Z
+    iget-boolean p1, p2, Lcom/google/android/material/bottomsheet/BottomSheetBehavior$SavedState;->m:Z
 
     iput-boolean p1, p0, Lcom/google/android/material/bottomsheet/BottomSheetBehavior;->w:Z
 
     .line 7
     :cond_8
     :goto_0
-    iget p1, p2, Lcom/google/android/material/bottomsheet/BottomSheetBehavior$SavedState;->h:I
+    iget p1, p2, Lcom/google/android/material/bottomsheet/BottomSheetBehavior$SavedState;->i:I
 
     if-eq p1, v0, :cond_a
 

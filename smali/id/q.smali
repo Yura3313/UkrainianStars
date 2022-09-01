@@ -6,28 +6,28 @@
 # instance fields
 .field public final h:Ljava/lang/String;
 
-.field public final i:Lvc/n$j$e;
+.field public final i:Lvc/m$j$e;
 
 
 # direct methods
-.method public constructor <init>(Lid/w;Lvc/n$j$e;)V
+.method public constructor <init>(Lid/w;Lvc/m$j$e;)V
     .locals 1
 
     const-string v0, "dialog"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "friendRequestsPending"
 
-    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
-    invoke-direct {p0, p1, p2}, Lid/w$a;-><init>(Lid/w;Lvc/n$j;)V
+    invoke-direct {p0, p1, p2}, Lid/w$a;-><init>(Lid/w;Lvc/m$j;)V
 
-    iput-object p2, p0, Lid/q;->i:Lvc/n$j$e;
+    iput-object p2, p0, Lid/q;->i:Lvc/m$j$e;
 
     .line 2
-    iget-boolean p1, p2, Lvc/n$j$e;->k:Z
+    iget-boolean p1, p2, Lvc/m$j$e;->k:Z
 
     if-eqz p1, :cond_0
 
@@ -61,15 +61,15 @@
     iget-object v1, v1, Lae/u;->p:Lrc/h;
 
     .line 3
-    iget-object v2, p0, Lid/q;->i:Lvc/n$j$e;
+    iget-object v2, p0, Lid/q;->i:Lvc/m$j$e;
 
     .line 4
-    iget-object v2, v2, Lvc/n$j$e;->h:Ljava/lang/String;
+    iget-object v2, v2, Lvc/m$j$e;->h:Ljava/lang/String;
 
     const-string v3, "connect"
 
     .line 5
-    invoke-virtual {v1, v3, v2}, Lrc/h;->g(Ljava/lang/String;Ljava/lang/String;)Lze/e0;
+    invoke-virtual {v1, v3, v2}, Lrc/h;->g(Ljava/lang/String;Ljava/lang/String;)Lze/f0;
 
     .line 6
     invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lae/u;
@@ -77,7 +77,7 @@
     move-result-object v1
 
     .line 7
-    iget-object v1, v1, Lae/u;->m:La5/d0;
+    iget-object v1, v1, Lae/u;->m:Lpe/a;
 
     .line 8
     iget-object v2, p0, Lid/q;->h:Ljava/lang/String;
@@ -88,7 +88,7 @@
 
     const/16 v5, 0x18
 
-    invoke-static {v1, v2, v3, v4, v5}, La5/d0;->a(La5/d0;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;I)V
+    invoke-static {v1, v2, v3, v4, v5}, Lpe/a;->e(Lpe/a;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;I)V
 
     .line 9
     iget-object v1, p0, Lid/w$a;->f:Lid/w;
@@ -100,10 +100,10 @@
     iget-object v1, p0, Lid/w$a;->f:Lid/w;
 
     .line 12
-    iget-object v1, v1, Lid/w;->j:Landroid/app/Activity;
+    iget-object v1, v1, Lid/w;->k:Landroid/app/Activity;
 
     .line 13
-    sget-object v2, Lcom/supercell/id/PresentationInfo$Connect;->f:Lcom/supercell/id/PresentationInfo$Connect;
+    sget-object v2, Lcom/supercell/id/PresentationInfo$Connect;->g:Lcom/supercell/id/PresentationInfo$Connect;
 
     invoke-virtual {v0, v1, v2}, Lcom/supercell/id/SupercellId;->present$supercellId_release(Landroid/app/Activity;Lcom/supercell/id/PresentationInfo;)V
 
@@ -115,7 +115,7 @@
 
     const-string v0, "inflater"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     sget v0, Lcom/supercell/id/R$layout;->dialog_notification_friend_requests_pending:I
 
@@ -127,7 +127,7 @@
 
     const-string p2, "inflater.inflate(R.layou\u2026s_pending, parent, false)"
 
-    invoke-static {p1, p2}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p2}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     return-object p1
 .end method
@@ -146,15 +146,15 @@
     iget-object v1, v1, Lae/u;->p:Lrc/h;
 
     .line 3
-    iget-object v2, p0, Lid/q;->i:Lvc/n$j$e;
+    iget-object v2, p0, Lid/q;->i:Lvc/m$j$e;
 
     .line 4
-    iget-object v2, v2, Lvc/n$j$e;->h:Ljava/lang/String;
+    iget-object v2, v2, Lvc/m$j$e;->h:Ljava/lang/String;
 
     const-string v3, "dismiss"
 
     .line 5
-    invoke-virtual {v1, v3, v2}, Lrc/h;->g(Ljava/lang/String;Ljava/lang/String;)Lze/e0;
+    invoke-virtual {v1, v3, v2}, Lrc/h;->g(Ljava/lang/String;Ljava/lang/String;)Lze/f0;
 
     .line 6
     invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lae/u;
@@ -162,7 +162,7 @@
     move-result-object v0
 
     .line 7
-    iget-object v0, v0, Lae/u;->m:La5/d0;
+    iget-object v0, v0, Lae/u;->m:Lpe/a;
 
     .line 8
     iget-object v1, p0, Lid/q;->h:Ljava/lang/String;
@@ -171,7 +171,7 @@
 
     const/16 v4, 0x1c
 
-    invoke-static {v0, v1, v3, v2, v4}, La5/d0;->a(La5/d0;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;I)V
+    invoke-static {v0, v1, v3, v2, v4}, Lpe/a;->e(Lpe/a;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;I)V
 
     return-void
 .end method
@@ -187,7 +187,7 @@
     move-result-object v0
 
     .line 2
-    iget-object v0, v0, Lae/u;->m:La5/d0;
+    iget-object v0, v0, Lae/u;->m:Lpe/a;
 
     .line 3
     iget-object v1, p0, Lid/q;->h:Ljava/lang/String;
@@ -198,7 +198,7 @@
 
     const/16 v4, 0x1c
 
-    invoke-static {v0, v1, v2, v3, v4}, La5/d0;->a(La5/d0;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;I)V
+    invoke-static {v0, v1, v2, v3, v4}, Lpe/a;->e(Lpe/a;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;I)V
 
     return-void
 .end method
@@ -212,7 +212,7 @@
 
     const-string v2, "view"
 
-    invoke-static {v1, v2}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     sget v2, Lcom/supercell/id/R$id;->dialogContainer:I
@@ -227,7 +227,7 @@
 
     const-string v2, "view.dialogContainer"
 
-    invoke-static {v3, v2}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v3, v2}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/4 v4, 0x0
 
@@ -241,7 +241,7 @@
 
     const/16 v9, 0x1f
 
-    invoke-static/range {v3 .. v9}, Luc/d;->a(Landroid/view/View;IFFFLuc/o$b;I)V
+    invoke-static/range {v3 .. v9}, La5/a0;->a(Landroid/view/View;IFFFLuc/n$b;I)V
 
     .line 2
     sget v2, Lcom/supercell/id/R$id;->gameIconView:I
@@ -254,7 +254,7 @@
 
     const-string v3, "view.gameIconView"
 
-    invoke-static {v2, v3}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v2, v3}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     new-instance v3, Ljava/lang/StringBuilder;
 
@@ -291,7 +291,7 @@
     const/4 v4, 0x1
 
     .line 5
-    invoke-static {v2, v3, v4}, Lud/f0;->h(Landroid/widget/ImageView;Ljava/lang/String;Z)V
+    invoke-static {v2, v3, v4}, Lud/d0;->h(Landroid/widget/ImageView;Ljava/lang/String;Z)V
 
     .line 6
     sget v2, Lcom/supercell/id/R$id;->logoImageView:I
@@ -304,12 +304,12 @@
 
     const-string v3, "view.logoImageView"
 
-    invoke-static {v2, v3}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v2, v3}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v3, "AccountIconBig.png"
 
     .line 7
-    invoke-static {v2, v3, v4}, Lud/f0;->h(Landroid/widget/ImageView;Ljava/lang/String;Z)V
+    invoke-static {v2, v3, v4}, Lud/d0;->h(Landroid/widget/ImageView;Ljava/lang/String;Z)V
 
     .line 8
     sget v2, Lcom/supercell/id/R$id;->messageTextView:I
@@ -322,7 +322,7 @@
 
     const-string v5, "view.messageTextView"
 
-    invoke-static {v3, v5}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v3, v5}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     sget v6, Lcom/supercell/id/R$font;->supercell_text_android_md:I
 
@@ -335,18 +335,18 @@
 
     check-cast v2, Landroid/widget/TextView;
 
-    invoke-static {v2, v5}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v2, v5}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 10
-    iget-object v3, v0, Lid/q;->i:Lvc/n$j$e;
+    iget-object v3, v0, Lid/q;->i:Lvc/m$j$e;
 
     .line 11
-    iget-boolean v6, v3, Lvc/n$j$e;->k:Z
+    iget-boolean v6, v3, Lvc/m$j$e;->k:Z
 
     if-eqz v6, :cond_1
 
     .line 12
-    iget v6, v3, Lvc/n$j$e;->j:I
+    iget v6, v3, Lvc/m$j$e;->j:I
 
     if-le v6, v4, :cond_0
 
@@ -361,7 +361,7 @@
 
     .line 13
     :cond_1
-    iget v6, v3, Lvc/n$j$e;->j:I
+    iget v6, v3, Lvc/m$j$e;->j:I
 
     if-le v6, v4, :cond_2
 
@@ -376,7 +376,7 @@
     move-object v8, v6
 
     .line 14
-    iget v3, v3, Lvc/n$j$e;->j:I
+    iget v3, v3, Lvc/m$j$e;->j:I
 
     .line 15
     invoke-static {v3}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
@@ -391,15 +391,15 @@
     invoke-direct {v6, v7, v3}, Lie/d;-><init>(Ljava/lang/Object;Ljava/lang/Object;)V
 
     .line 17
-    invoke-static {v6}, Lcom/google/android/play/core/assetpacks/o2;->j(Lie/d;)Ljava/util/Map;
+    invoke-static {v6}, Lt3/h;->h(Lie/d;)Ljava/util/Map;
 
     move-result-object v10
 
     .line 18
-    iget-object v3, v0, Lid/q;->i:Lvc/n$j$e;
+    iget-object v3, v0, Lid/q;->i:Lvc/m$j$e;
 
     .line 19
-    iget v3, v3, Lvc/n$j$e;->j:I
+    iget v3, v3, Lvc/m$j$e;->j:I
 
     const/4 v6, 0x3
 
@@ -437,17 +437,17 @@
     invoke-direct {v11}, Ljava/util/LinkedHashMap;-><init>()V
 
     .line 21
-    iget-object v3, v0, Lid/q;->i:Lvc/n$j$e;
+    iget-object v3, v0, Lid/q;->i:Lvc/m$j$e;
 
     .line 22
-    iget-object v3, v3, Lvc/n$j$e;->i:Ljava/util/List;
+    iget-object v3, v3, Lvc/m$j$e;->i:Ljava/util/List;
 
     .line 23
     new-instance v6, Ljava/util/ArrayList;
 
     const/16 v7, 0xa
 
-    invoke-static {v3, v7}, Lje/f;->q(Ljava/lang/Iterable;I)I
+    invoke-static {v3, v7}, Lje/f;->l(Ljava/lang/Iterable;I)I
 
     move-result v7
 
@@ -478,7 +478,7 @@
     if-ltz v7, :cond_7
 
     .line 25
-    check-cast v9, Lvc/o;
+    check-cast v9, Lvc/n;
 
     const-string v7, "name"
 
@@ -493,7 +493,7 @@
     invoke-direct {v15}, Landroid/text/SpannableStringBuilder;-><init>()V
 
     .line 28
-    iget-object v9, v9, Lvc/o;->b:Ljava/lang/String;
+    iget-object v9, v9, Lvc/n;->b:Ljava/lang/String;
 
     if-eqz v9, :cond_6
 
@@ -537,7 +537,7 @@
     aput-object v14, v4, v3
 
     .line 31
-    invoke-static {v15, v13, v4}, La5/w;->d(Landroid/text/SpannableStringBuilder;Ljava/lang/CharSequence;[Lie/d;)Landroid/text/SpannableStringBuilder;
+    invoke-static {v15, v13, v4}, Lae/t;->f(Landroid/text/SpannableStringBuilder;Ljava/lang/CharSequence;[Lie/d;)Landroid/text/SpannableStringBuilder;
 
     .line 32
     new-instance v3, Lie/d;
@@ -557,7 +557,7 @@
 
     .line 34
     :cond_7
-    invoke-static {}, Lcom/android/billingclient/api/z;->p()V
+    invoke-static {}, Lcom/android/billingclient/api/y;->k()V
 
     const/4 v1, 0x0
 
@@ -565,13 +565,13 @@
 
     .line 35
     :cond_8
-    invoke-static {v11, v6}, Lje/t;->p(Ljava/util/Map;Ljava/lang/Iterable;)V
+    invoke-static {v11, v6}, Lje/t;->q(Ljava/util/Map;Ljava/lang/Iterable;)V
 
     .line 36
-    iget-object v3, v0, Lid/q;->i:Lvc/n$j$e;
+    iget-object v3, v0, Lid/q;->i:Lvc/m$j$e;
 
     .line 37
-    iget v3, v3, Lvc/n$j$e;->j:I
+    iget v3, v3, Lvc/m$j$e;->j:I
 
     const/4 v4, 0x3
 
@@ -587,13 +587,13 @@
     invoke-interface {v11, v6, v3}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 39
-    iget-object v3, v0, Lid/q;->i:Lvc/n$j$e;
+    iget-object v3, v0, Lid/q;->i:Lvc/m$j$e;
 
     .line 40
-    iget-object v3, v3, Lvc/n$j$e;->i:Ljava/util/List;
+    iget-object v3, v3, Lvc/m$j$e;->i:Ljava/util/List;
 
     .line 41
-    invoke-static {v3, v4}, Lje/j;->N(Ljava/lang/Iterable;I)Ljava/util/List;
+    invoke-static {v3, v4}, Lje/j;->I(Ljava/lang/Iterable;I)Ljava/util/List;
 
     move-result-object v3
 
@@ -602,7 +602,7 @@
 
     const/16 v6, 0xa
 
-    invoke-static {v3, v6}, Lje/f;->q(Ljava/lang/Iterable;I)I
+    invoke-static {v3, v6}, Lje/f;->l(Ljava/lang/Iterable;I)I
 
     move-result v6
 
@@ -625,10 +625,10 @@
     move-result-object v6
 
     .line 44
-    check-cast v6, Lvc/o;
+    check-cast v6, Lvc/n;
 
     .line 45
-    iget-object v6, v6, Lvc/o;->c:Lcom/supercell/id/model/ProfileImage;
+    iget-object v6, v6, Lvc/n;->c:Lcom/supercell/id/model/ProfileImage;
 
     .line 46
     invoke-interface {v4, v6}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
@@ -642,7 +642,7 @@
     invoke-direct {v9, v2}, Ljava/lang/ref/WeakReference;-><init>(Ljava/lang/Object;)V
 
     .line 48
-    sget-object v3, Lae/q1;->b:Lae/q1;
+    sget-object v3, Lae/p1;->b:Lae/p1;
 
     invoke-virtual {v2}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
 
@@ -650,7 +650,7 @@
 
     const-string v3, "resources"
 
-    invoke-static {v2, v3}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v2, v3}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     new-instance v3, Lid/t;
 
@@ -731,14 +731,14 @@
 
     .line 57
     :cond_b
-    new-instance v8, Lae/o1;
+    new-instance v8, Lae/n1;
 
-    invoke-direct {v8, v7, v6, v3, v2}, Lae/o1;-><init>([Landroid/graphics/drawable/Drawable;[ZLre/l;Landroid/content/res/Resources;)V
+    invoke-direct {v8, v7, v6, v3, v2}, Lae/n1;-><init>([Landroid/graphics/drawable/Drawable;[ZLre/l;Landroid/content/res/Resources;)V
 
     .line 58
-    new-instance v3, Lae/n1;
+    new-instance v3, Lae/m1;
 
-    invoke-direct {v3, v2, v8}, Lae/n1;-><init>(Landroid/content/res/Resources;Lre/p;)V
+    invoke-direct {v3, v2, v8}, Lae/m1;-><init>(Landroid/content/res/Resources;Lre/p;)V
 
     .line 59
     invoke-interface {v4}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
@@ -770,28 +770,28 @@
     if-eqz v10, :cond_c
 
     .line 61
-    sget-object v10, Lae/b0;->e:Lae/b0;
+    sget-object v10, Lae/a0;->e:Lae/a0;
 
     check-cast v7, Lcom/supercell/id/model/ProfileImage$Image;
 
     .line 62
-    iget-object v7, v7, Lcom/supercell/id/model/ProfileImage$Image;->g:Ljava/lang/String;
+    iget-object v7, v7, Lcom/supercell/id/model/ProfileImage$Image;->h:Ljava/lang/String;
 
     .line 63
-    invoke-virtual {v10, v7}, Lae/b0;->a(Ljava/lang/String;)Lze/e0;
+    invoke-virtual {v10, v7}, Lae/a0;->a(Ljava/lang/String;)Lze/f0;
 
     move-result-object v14
 
-    sget-object v15, Lae/q1;->b:Lae/q1;
+    sget-object v15, Lae/p1;->b:Lae/p1;
 
-    new-instance v7, Lae/j1;
+    new-instance v7, Lae/i1;
 
-    invoke-direct {v7, v6, v2, v8, v3}, Lae/j1;-><init>(ILandroid/content/res/Resources;Lre/p;Lre/p;)V
+    invoke-direct {v7, v6, v2, v8, v3}, Lae/i1;-><init>(ILandroid/content/res/Resources;Lre/p;Lre/p;)V
 
     .line 64
-    new-instance v10, Lae/k1;
+    new-instance v10, Lae/j1;
 
-    invoke-direct {v10, v6, v8, v3}, Lae/k1;-><init>(ILre/p;Lre/p;)V
+    invoke-direct {v10, v6, v8, v3}, Lae/j1;-><init>(ILre/p;Lre/p;)V
 
     const/16 v18, 0x0
 
@@ -802,7 +802,7 @@
     move-object/from16 v17, v10
 
     .line 65
-    invoke-static/range {v14 .. v19}, Lae/u1;->k(Lze/e0;Ljava/lang/Object;Lre/p;Lre/p;Lre/l;I)Lze/e0;
+    invoke-static/range {v14 .. v19}, Lae/t1;->j(Lze/f0;Ljava/lang/Object;Lre/p;Lre/p;Lre/l;I)Lze/f0;
 
     goto :goto_7
 
@@ -819,10 +819,10 @@
     check-cast v7, Lcom/supercell/id/model/ProfileImage$Avatar;
 
     .line 67
-    iget-object v7, v7, Lcom/supercell/id/model/ProfileImage$Avatar;->g:Ljava/lang/String;
+    iget-object v7, v7, Lcom/supercell/id/model/ProfileImage$Avatar;->h:Ljava/lang/String;
 
     .line 68
-    invoke-virtual {v3, v6, v7}, Lae/n1;->invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v3, v6, v7}, Lae/m1;->invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     goto :goto_7
 
@@ -832,7 +832,7 @@
 
     move-result-object v6
 
-    invoke-virtual {v3, v6, v13}, Lae/n1;->invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    invoke-virtual {v3, v6, v13}, Lae/m1;->invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     :goto_7
     move v6, v9
@@ -841,7 +841,7 @@
 
     .line 70
     :cond_e
-    invoke-static {}, Lcom/android/billingclient/api/z;->p()V
+    invoke-static {}, Lcom/android/billingclient/api/y;->k()V
 
     const/4 v1, 0x0
 
@@ -857,7 +857,7 @@
 
     check-cast v2, Landroid/widget/TextView;
 
-    invoke-static {v2, v5}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v2, v5}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     sget-object v3, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
 
@@ -896,7 +896,7 @@
 
     const-string v4, "view.connectButton"
 
-    invoke-static {v3, v4}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v3, v4}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     sget v5, Lcom/supercell/id/R$font;->supercell_text_android_bd:I
 
@@ -909,14 +909,14 @@
 
     check-cast v3, Lcom/supercell/id/view/WidthAdjustingMultilineButton;
 
-    invoke-static {v3, v4}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v3, v4}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v5, "ingame_friend_requests_notification_connect_btn"
 
     const/4 v6, 0x0
 
     .line 76
-    invoke-static {v3, v5, v6}, Lud/f0;->j(Landroid/widget/TextView;Ljava/lang/String;Lre/p;)V
+    invoke-static {v3, v5, v6}, Lud/d0;->j(Landroid/widget/TextView;Ljava/lang/String;Lre/p;)V
 
     .line 77
     invoke-virtual {v1, v2}, Landroid/view/View;->findViewById(I)Landroid/view/View;
@@ -925,9 +925,9 @@
 
     check-cast v3, Lcom/supercell/id/view/WidthAdjustingMultilineButton;
 
-    invoke-static {v3, v4}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v3, v4}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    sget-object v4, Lsc/a$a;->g:Lsc/a$a;
+    sget-object v4, Lsc/a$a;->h:Lsc/a$a;
 
     const/4 v4, 0x0
 

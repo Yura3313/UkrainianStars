@@ -15,11 +15,11 @@
 
 
 # instance fields
-.field public final f:I
+.field public final g:I
 
-.field public final g:Ljava/lang/String;
+.field public final h:Ljava/lang/String;
 
-.field public final h:[B
+.field public final i:[B
 
 
 # direct methods
@@ -44,17 +44,17 @@
     const/4 v0, 0x1
 
     .line 2
-    iput v0, p0, Lcom/google/android/gms/internal/auth/zzaf;->f:I
+    iput v0, p0, Lcom/google/android/gms/internal/auth/zzaf;->g:I
 
     .line 3
     invoke-static {p1}, Ld2/h;->h(Ljava/lang/Object;)Ljava/lang/Object;
 
-    iput-object p1, p0, Lcom/google/android/gms/internal/auth/zzaf;->g:Ljava/lang/String;
+    iput-object p1, p0, Lcom/google/android/gms/internal/auth/zzaf;->h:Ljava/lang/String;
 
     .line 4
     invoke-static {p2}, Ld2/h;->h(Ljava/lang/Object;)Ljava/lang/Object;
 
-    iput-object p2, p0, Lcom/google/android/gms/internal/auth/zzaf;->h:[B
+    iput-object p2, p0, Lcom/google/android/gms/internal/auth/zzaf;->i:[B
 
     return-void
 .end method
@@ -72,7 +72,7 @@
     move-result p2
 
     .line 2
-    iget v0, p0, Lcom/google/android/gms/internal/auth/zzaf;->f:I
+    iget v0, p0, Lcom/google/android/gms/internal/auth/zzaf;->g:I
 
     const/4 v1, 0x1
 
@@ -85,7 +85,7 @@
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 5
-    iget-object v0, p0, Lcom/google/android/gms/internal/auth/zzaf;->g:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/android/gms/internal/auth/zzaf;->h:Ljava/lang/String;
 
     const/4 v1, 0x2
 
@@ -94,7 +94,7 @@
     invoke-static {p1, v1, v0, v2}, Le2/b;->m(Landroid/os/Parcel;ILjava/lang/String;Z)V
 
     .line 6
-    iget-object v0, p0, Lcom/google/android/gms/internal/auth/zzaf;->h:[B
+    iget-object v0, p0, Lcom/google/android/gms/internal/auth/zzaf;->i:[B
 
     const/4 v1, 0x3
 

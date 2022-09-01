@@ -15,12 +15,12 @@
     return-void
 .end method
 
-.method public static a(Lb2/i;Landroid/content/Intent;)Ld2/o;
+.method public static a(Lb2/h;Landroid/content/Intent;)Ld2/o;
     .locals 1
 
     new-instance v0, Ld2/r;
 
-    invoke-direct {v0, p1, p0}, Ld2/r;-><init>(Landroid/content/Intent;Lb2/i;)V
+    invoke-direct {v0, p1, p0}, Ld2/r;-><init>(Landroid/content/Intent;Lb2/h;)V
 
     return-object v0
 .end method

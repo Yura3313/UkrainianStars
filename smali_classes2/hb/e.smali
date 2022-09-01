@@ -25,7 +25,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    sget v0, Lwa/a;->h:I
+    sget v0, Lwa/a;->i:I
 
     .line 3
     sget-object v0, Lwa/a$a;->a:Lwa/a;
@@ -226,7 +226,7 @@
     const-string v4, "Error in getAllSections"
 
     .line 10
-    invoke-static {v3, v4, v2}, Landroidx/savedstate/d;->g(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v3, v4, v2}, Le5/i;->i(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_0
 
@@ -321,7 +321,7 @@
     iget-object v3, p0, Lhb/e;->b:Lhb/b;
 
     .line 5
-    iget-object v4, v2, Lcom/helpshift/support/Section;->h:Ljava/lang/String;
+    iget-object v4, v2, Lcom/helpshift/support/Section;->i:Ljava/lang/String;
 
     .line 6
     invoke-virtual {v3, v4}, Lhb/b;->e(Ljava/lang/String;)Ljava/util/List;
@@ -454,7 +454,7 @@
     const-string v3, "Error in getSection"
 
     .line 7
-    invoke-static {v2, v3, v1}, Landroidx/savedstate/d;->g(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v2, v3, v1}, Le5/i;->i(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_1
 

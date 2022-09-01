@@ -155,7 +155,7 @@
     const-string v1, "Helpshift_CIF_DM"
 
     .line 9
-    invoke-static {v1, v0, v2, v2}, Landroidx/savedstate/d;->h(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v1, v0, v2, v2}, Le5/i;->j(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Throwable;[Lz9/a;)V
 
     :cond_2
     :goto_1

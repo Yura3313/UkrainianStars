@@ -383,7 +383,7 @@
     const-string v1, "WebViewContainer"
 
     .line 1
-    invoke-static {v0, p1, v1}, Lcom/kakaogame/b;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, p1, v1}, Landroid/support/v4/media/e;->b(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     const/4 v0, 0x0
 
@@ -556,7 +556,7 @@
     const-string v1, "WebViewContainer"
 
     .line 1
-    invoke-static {v0, p2, v1}, Lcom/kakaogame/b;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v0, p2, v1}, Landroid/support/v4/media/e;->b(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     .line 2
     iget-object v0, p0, Lcom/kakaogame/web/WebViewContainer;->webAppHandlerManager:Lcom/kakaogame/web/WebAppHandlerManager;
@@ -1353,7 +1353,7 @@
     const-string v3, "csEmail: "
 
     .line 26
-    invoke-static {v3, v2, v1}, Lcom/kakaogame/b;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v3, v2, v1}, Landroid/support/v4/media/e;->b(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 
     if-eqz v2, :cond_7
 

@@ -37,7 +37,7 @@
 
     new-instance v0, Ljava/lang/Thread;
 
-    const-string v1, "AssetPackBackgroundExecutor"
+    const-string v1, "UpdateListenerExecutor"
 
     invoke-direct {v0, p1, v1}, Ljava/lang/Thread;-><init>(Ljava/lang/Runnable;Ljava/lang/String;)V
 

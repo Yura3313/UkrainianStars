@@ -1,31 +1,19 @@
-.class public interface abstract Lze/e0;
+.class public final Lze/e0;
 .super Ljava/lang/Object;
-.source "Deferred.kt"
-
-# interfaces
-.implements Lze/b1;
+.source "DefaultExecutor.kt"
 
 
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "<T:",
-        "Ljava/lang/Object;",
-        ">",
-        "Ljava/lang/Object;",
-        "Lze/b1;"
-    }
-.end annotation
+# static fields
+.field public static final a:Lze/d0;
 
 
-# virtual methods
-.method public abstract p(Lke/d;)Ljava/lang/Object;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lke/d<",
-            "-TT;>;)",
-            "Ljava/lang/Object;"
-        }
-    .end annotation
+# direct methods
+.method public static constructor <clinit>()V
+    .locals 1
+
+    sget-object v0, Lze/d0;->m:Lze/d0;
+
+    sput-object v0, Lze/e0;->a:Lze/d0;
+
+    return-void
 .end method

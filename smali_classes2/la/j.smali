@@ -7,14 +7,14 @@
 
 
 # instance fields
-.field public final synthetic f:Lla/m;
+.field public final synthetic g:Lla/m;
 
 
 # direct methods
 .method public constructor <init>(Lla/m;)V
     .locals 0
 
-    iput-object p1, p0, Lla/j;->f:Lla/m;
+    iput-object p1, p0, Lla/j;->g:Lla/m;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -27,9 +27,9 @@
     .locals 4
 
     .line 1
-    iget-object p1, p0, Lla/j;->f:Lla/m;
+    iget-object p1, p0, Lla/j;->g:Lla/m;
 
-    iget-object p1, p1, Lla/m;->q0:Ljava/lang/String;
+    iget-object p1, p1, Lla/m;->r0:Ljava/lang/String;
 
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -38,10 +38,10 @@
     if-eqz p1, :cond_0
 
     .line 2
-    iget-object p1, p0, Lla/j;->f:Lla/m;
+    iget-object p1, p0, Lla/j;->g:Lla/m;
 
     .line 3
-    sget-object p2, Lcom/helpshift/util/u;->c:Le7/g;
+    sget-object p2, Lcom/helpshift/util/t;->c:Le7/g;
 
     .line 4
     iget-object p2, p2, Le7/g;->a:Lj8/b;
@@ -53,24 +53,24 @@
 
     move-result-object p2
 
-    iput-object p2, p1, Lla/m;->q0:Ljava/lang/String;
+    iput-object p2, p1, Lla/m;->r0:Ljava/lang/String;
 
     .line 6
     :cond_0
-    iget-object p1, p0, Lla/j;->f:Lla/m;
+    iget-object p1, p0, Lla/j;->g:Lla/m;
 
-    iget-object p2, p1, Lla/m;->q0:Ljava/lang/String;
+    iget-object p2, p1, Lla/m;->r0:Ljava/lang/String;
 
     invoke-virtual {p2}, Ljava/lang/String;->trim()Ljava/lang/String;
 
     move-result-object p2
 
-    iput-object p2, p1, Lla/m;->q0:Ljava/lang/String;
+    iput-object p2, p1, Lla/m;->r0:Ljava/lang/String;
 
     .line 7
-    iget-object p1, p0, Lla/j;->f:Lla/m;
+    iget-object p1, p0, Lla/j;->g:Lla/m;
 
-    iget-object p1, p1, Lla/m;->q0:Ljava/lang/String;
+    iget-object p1, p1, Lla/m;->r0:Ljava/lang/String;
 
     invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -81,9 +81,9 @@
     if-nez p1, :cond_1
 
     .line 8
-    iget-object p1, p0, Lla/j;->f:Lla/m;
+    iget-object p1, p0, Lla/j;->g:Lla/m;
 
-    iget-object v0, p1, Lla/m;->q0:Ljava/lang/String;
+    iget-object v0, p1, Lla/m;->r0:Ljava/lang/String;
 
     .line 9
     invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
@@ -132,7 +132,7 @@
     const-string v3, "Unable to resolve activity"
 
     .line 13
-    invoke-static {v2, v3, v0, v1}, Landroidx/savedstate/d;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v2, v3, v0, v1}, Le5/i;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
 
     .line 14
     invoke-virtual {p1}, Landroidx/fragment/app/Fragment;->y()Landroid/content/Context;
@@ -161,14 +161,14 @@
     .line 18
     :cond_1
     :goto_0
-    iget-object p1, p0, Lla/j;->f:Lla/m;
+    iget-object p1, p0, Lla/j;->g:Lla/m;
 
     const-string p2, "reviewed"
 
     invoke-virtual {p1, p2}, Lla/m;->U0(Ljava/lang/String;)V
 
     .line 19
-    iget-object p1, p0, Lla/j;->f:Lla/m;
+    iget-object p1, p0, Lla/j;->g:Lla/m;
 
     invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 

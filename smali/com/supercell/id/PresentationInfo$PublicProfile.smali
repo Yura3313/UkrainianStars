@@ -27,15 +27,15 @@
 
 
 # instance fields
-.field public final f:Ljava/lang/String;
+.field public final g:Ljava/lang/String;
 
-.field public final g:Lcom/supercell/id/model/IdSocialAccount;
+.field public final h:Lcom/supercell/id/model/IdSocialAccount;
 
-.field public final h:Ljava/lang/String;
+.field public final i:Ljava/lang/String;
 
-.field public final i:Lcom/supercell/id/model/ProfileImage;
+.field public final j:Lcom/supercell/id/model/ProfileImage;
 
-.field public final j:Ljava/lang/String;
+.field public final k:Ljava/lang/String;
 
 
 # direct methods
@@ -58,21 +58,21 @@
 
     const-string v0, "image"
 
-    invoke-static {p4, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p4, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     invoke-direct {p0}, Lcom/supercell/id/PresentationInfo;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lcom/supercell/id/PresentationInfo$PublicProfile;->f:Ljava/lang/String;
+    iput-object p1, p0, Lcom/supercell/id/PresentationInfo$PublicProfile;->g:Ljava/lang/String;
 
-    iput-object p2, p0, Lcom/supercell/id/PresentationInfo$PublicProfile;->g:Lcom/supercell/id/model/IdSocialAccount;
+    iput-object p2, p0, Lcom/supercell/id/PresentationInfo$PublicProfile;->h:Lcom/supercell/id/model/IdSocialAccount;
 
-    iput-object p3, p0, Lcom/supercell/id/PresentationInfo$PublicProfile;->h:Ljava/lang/String;
+    iput-object p3, p0, Lcom/supercell/id/PresentationInfo$PublicProfile;->i:Ljava/lang/String;
 
-    iput-object p4, p0, Lcom/supercell/id/PresentationInfo$PublicProfile;->i:Lcom/supercell/id/model/ProfileImage;
+    iput-object p4, p0, Lcom/supercell/id/PresentationInfo$PublicProfile;->j:Lcom/supercell/id/model/ProfileImage;
 
-    iput-object p5, p0, Lcom/supercell/id/PresentationInfo$PublicProfile;->j:Ljava/lang/String;
+    iput-object p5, p0, Lcom/supercell/id/PresentationInfo$PublicProfile;->k:Ljava/lang/String;
 
     return-void
 .end method
@@ -84,30 +84,30 @@
 
     const-string v0, "dest"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
-    iget-object v0, p0, Lcom/supercell/id/PresentationInfo$PublicProfile;->f:Ljava/lang/String;
+    iget-object v0, p0, Lcom/supercell/id/PresentationInfo$PublicProfile;->g:Ljava/lang/String;
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
     .line 2
-    iget-object v0, p0, Lcom/supercell/id/PresentationInfo$PublicProfile;->g:Lcom/supercell/id/model/IdSocialAccount;
+    iget-object v0, p0, Lcom/supercell/id/PresentationInfo$PublicProfile;->h:Lcom/supercell/id/model/IdSocialAccount;
 
-    invoke-static {p1, v0}, Lvc/b0;->b(Landroid/os/Parcel;Lcom/supercell/id/model/IdSocialAccount;)V
+    invoke-static {p1, v0}, Landroidx/appcompat/widget/g;->e(Landroid/os/Parcel;Lcom/supercell/id/model/IdSocialAccount;)V
 
     .line 3
-    iget-object v0, p0, Lcom/supercell/id/PresentationInfo$PublicProfile;->h:Ljava/lang/String;
+    iget-object v0, p0, Lcom/supercell/id/PresentationInfo$PublicProfile;->i:Ljava/lang/String;
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
     .line 4
-    iget-object v0, p0, Lcom/supercell/id/PresentationInfo$PublicProfile;->i:Lcom/supercell/id/model/ProfileImage;
+    iget-object v0, p0, Lcom/supercell/id/PresentationInfo$PublicProfile;->j:Lcom/supercell/id/model/ProfileImage;
 
     invoke-virtual {p1, v0, p2}, Landroid/os/Parcel;->writeParcelable(Landroid/os/Parcelable;I)V
 
     .line 5
-    iget-object p2, p0, Lcom/supercell/id/PresentationInfo$PublicProfile;->j:Ljava/lang/String;
+    iget-object p2, p0, Lcom/supercell/id/PresentationInfo$PublicProfile;->k:Ljava/lang/String;
 
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 

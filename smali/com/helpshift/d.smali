@@ -7,18 +7,18 @@
 
 
 # instance fields
-.field public final synthetic f:Ljava/lang/String;
+.field public final synthetic g:Ljava/lang/String;
 
-.field public final synthetic g:Landroid/content/Context;
+.field public final synthetic h:Landroid/content/Context;
 
 
 # direct methods
 .method public constructor <init>(Ljava/lang/String;Landroid/content/Context;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/helpshift/d;->f:Ljava/lang/String;
+    iput-object p1, p0, Lcom/helpshift/d;->g:Ljava/lang/String;
 
-    iput-object p2, p0, Lcom/helpshift/d;->g:Landroid/content/Context;
+    iput-object p2, p0, Lcom/helpshift/d;->h:Landroid/content/Context;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -38,7 +38,7 @@
     move-result-object v0
 
     .line 2
-    iget-object v1, p0, Lcom/helpshift/d;->f:Ljava/lang/String;
+    iget-object v1, p0, Lcom/helpshift/d;->g:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -51,14 +51,14 @@
     const-string v2, "Helpshift_CoreInternal"
 
     .line 3
-    invoke-static {v2, v0, v1, v1}, Landroidx/savedstate/d;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v2, v0, v1, v1}, Le5/i;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
 
     .line 4
     sget-object v0, Lcom/helpshift/CoreInternal;->a:Lcom/helpshift/a$a;
 
-    iget-object v1, p0, Lcom/helpshift/d;->g:Landroid/content/Context;
+    iget-object v1, p0, Lcom/helpshift/d;->h:Landroid/content/Context;
 
-    iget-object v2, p0, Lcom/helpshift/d;->f:Ljava/lang/String;
+    iget-object v2, p0, Lcom/helpshift/d;->g:Ljava/lang/String;
 
     check-cast v0, Lla/c0;
 

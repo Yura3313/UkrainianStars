@@ -22,13 +22,13 @@
 
 
 # static fields
-.field public static final i:Lcom/google/protobuf/m;
+.field public static final j:Lcom/google/protobuf/m;
 
 
 # instance fields
-.field public g:[D
+.field public h:[D
 
-.field public h:I
+.field public i:I
 
 
 # direct methods
@@ -44,10 +44,10 @@
 
     invoke-direct {v0, v2, v1}, Lcom/google/protobuf/m;-><init>([DI)V
 
-    sput-object v0, Lcom/google/protobuf/m;->i:Lcom/google/protobuf/m;
+    sput-object v0, Lcom/google/protobuf/m;->j:Lcom/google/protobuf/m;
 
     .line 2
-    iput-boolean v1, v0, Lcom/google/protobuf/c;->f:Z
+    iput-boolean v1, v0, Lcom/google/protobuf/c;->g:Z
 
     return-void
 .end method
@@ -74,10 +74,10 @@
     invoke-direct {p0}, Lcom/google/protobuf/c;-><init>()V
 
     .line 3
-    iput-object p1, p0, Lcom/google/protobuf/m;->g:[D
+    iput-object p1, p0, Lcom/google/protobuf/m;->h:[D
 
     .line 4
-    iput p2, p0, Lcom/google/protobuf/m;->h:I
+    iput p2, p0, Lcom/google/protobuf/m;->i:I
 
     return-void
 .end method
@@ -101,12 +101,12 @@
     if-ltz p1, :cond_1
 
     .line 4
-    iget p2, p0, Lcom/google/protobuf/m;->h:I
+    iget p2, p0, Lcom/google/protobuf/m;->i:I
 
     if-gt p1, p2, :cond_1
 
     .line 5
-    iget-object v2, p0, Lcom/google/protobuf/m;->g:[D
+    iget-object v2, p0, Lcom/google/protobuf/m;->h:[D
 
     array-length v3, v2
 
@@ -129,7 +129,7 @@
     const/4 v5, 0x1
 
     .line 7
-    invoke-static {p2, v3, v4, v5}, Landroid/support/v4/media/c;->a(IIII)I
+    invoke-static {p2, v3, v4, v5}, Lk3/vq0;->a(IIII)I
 
     move-result p2
 
@@ -142,31 +142,31 @@
     invoke-static {v2, v3, p2, v3, p1}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     .line 10
-    iget-object v2, p0, Lcom/google/protobuf/m;->g:[D
+    iget-object v2, p0, Lcom/google/protobuf/m;->h:[D
 
     add-int/lit8 v3, p1, 0x1
 
-    iget v4, p0, Lcom/google/protobuf/m;->h:I
+    iget v4, p0, Lcom/google/protobuf/m;->i:I
 
     sub-int/2addr v4, p1
 
     invoke-static {v2, p1, p2, v3, v4}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     .line 11
-    iput-object p2, p0, Lcom/google/protobuf/m;->g:[D
+    iput-object p2, p0, Lcom/google/protobuf/m;->h:[D
 
     .line 12
     :goto_0
-    iget-object p2, p0, Lcom/google/protobuf/m;->g:[D
+    iget-object p2, p0, Lcom/google/protobuf/m;->h:[D
 
     aput-wide v0, p2, p1
 
     .line 13
-    iget p1, p0, Lcom/google/protobuf/m;->h:I
+    iget p1, p0, Lcom/google/protobuf/m;->i:I
 
     add-int/lit8 p1, p1, 0x1
 
-    iput p1, p0, Lcom/google/protobuf/m;->h:I
+    iput p1, p0, Lcom/google/protobuf/m;->i:I
 
     .line 14
     iget p1, p0, Ljava/util/AbstractList;->modCount:I
@@ -246,7 +246,7 @@
     check-cast p1, Lcom/google/protobuf/m;
 
     .line 7
-    iget v0, p1, Lcom/google/protobuf/m;->h:I
+    iget v0, p1, Lcom/google/protobuf/m;->i:I
 
     const/4 v1, 0x0
 
@@ -258,7 +258,7 @@
     const v2, 0x7fffffff
 
     .line 8
-    iget v3, p0, Lcom/google/protobuf/m;->h:I
+    iget v3, p0, Lcom/google/protobuf/m;->i:I
 
     sub-int/2addr v2, v3
 
@@ -267,7 +267,7 @@
     add-int/2addr v3, v0
 
     .line 9
-    iget-object v0, p0, Lcom/google/protobuf/m;->g:[D
+    iget-object v0, p0, Lcom/google/protobuf/m;->h:[D
 
     array-length v2, v0
 
@@ -278,22 +278,22 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/google/protobuf/m;->g:[D
+    iput-object v0, p0, Lcom/google/protobuf/m;->h:[D
 
     .line 11
     :cond_2
-    iget-object v0, p1, Lcom/google/protobuf/m;->g:[D
+    iget-object v0, p1, Lcom/google/protobuf/m;->h:[D
 
-    iget-object v2, p0, Lcom/google/protobuf/m;->g:[D
+    iget-object v2, p0, Lcom/google/protobuf/m;->h:[D
 
-    iget v4, p0, Lcom/google/protobuf/m;->h:I
+    iget v4, p0, Lcom/google/protobuf/m;->i:I
 
-    iget p1, p1, Lcom/google/protobuf/m;->h:I
+    iget p1, p1, Lcom/google/protobuf/m;->i:I
 
     invoke-static {v0, v1, v2, v4, p1}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     .line 12
-    iput v3, p0, Lcom/google/protobuf/m;->h:I
+    iput v3, p0, Lcom/google/protobuf/m;->i:I
 
     .line 13
     iget p1, p0, Ljava/util/AbstractList;->modCount:I
@@ -322,9 +322,9 @@
     invoke-virtual {p0}, Lcom/google/protobuf/c;->b()V
 
     .line 2
-    iget v0, p0, Lcom/google/protobuf/m;->h:I
+    iget v0, p0, Lcom/google/protobuf/m;->i:I
 
-    iget-object v1, p0, Lcom/google/protobuf/m;->g:[D
+    iget-object v1, p0, Lcom/google/protobuf/m;->h:[D
 
     array-length v2, v1
 
@@ -337,7 +337,7 @@
     const/4 v4, 0x1
 
     .line 3
-    invoke-static {v0, v2, v3, v4}, Landroid/support/v4/media/c;->a(IIII)I
+    invoke-static {v0, v2, v3, v4}, Lk3/vq0;->a(IIII)I
 
     move-result v2
 
@@ -350,17 +350,17 @@
     invoke-static {v1, v3, v2, v3, v0}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     .line 6
-    iput-object v2, p0, Lcom/google/protobuf/m;->g:[D
+    iput-object v2, p0, Lcom/google/protobuf/m;->h:[D
 
     .line 7
     :cond_0
-    iget-object v0, p0, Lcom/google/protobuf/m;->g:[D
+    iget-object v0, p0, Lcom/google/protobuf/m;->h:[D
 
-    iget v1, p0, Lcom/google/protobuf/m;->h:I
+    iget v1, p0, Lcom/google/protobuf/m;->i:I
 
     add-int/lit8 v2, v1, 0x1
 
-    iput v2, p0, Lcom/google/protobuf/m;->h:I
+    iput v2, p0, Lcom/google/protobuf/m;->i:I
 
     aput-wide p1, v0, v1
 
@@ -395,7 +395,7 @@
     if-ltz p1, :cond_0
 
     .line 1
-    iget v0, p0, Lcom/google/protobuf/m;->h:I
+    iget v0, p0, Lcom/google/protobuf/m;->i:I
 
     if-ge p1, v0, :cond_0
 
@@ -441,9 +441,9 @@
     check-cast p1, Lcom/google/protobuf/m;
 
     .line 4
-    iget v1, p0, Lcom/google/protobuf/m;->h:I
+    iget v1, p0, Lcom/google/protobuf/m;->i:I
 
-    iget v2, p1, Lcom/google/protobuf/m;->h:I
+    iget v2, p1, Lcom/google/protobuf/m;->i:I
 
     const/4 v3, 0x0
 
@@ -453,18 +453,18 @@
 
     .line 5
     :cond_2
-    iget-object p1, p1, Lcom/google/protobuf/m;->g:[D
+    iget-object p1, p1, Lcom/google/protobuf/m;->h:[D
 
     const/4 v1, 0x0
 
     .line 6
     :goto_0
-    iget v2, p0, Lcom/google/protobuf/m;->h:I
+    iget v2, p0, Lcom/google/protobuf/m;->i:I
 
     if-ge v1, v2, :cond_4
 
     .line 7
-    iget-object v2, p0, Lcom/google/protobuf/m;->g:[D
+    iget-object v2, p0, Lcom/google/protobuf/m;->h:[D
 
     aget-wide v4, v2, v1
 
@@ -501,12 +501,12 @@
     const-string v1, ", Size:"
 
     .line 1
-    invoke-static {v0, p1, v1}, Lcom/supercell/titan/a;->a(Ljava/lang/String;ILjava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v0, p1, v1}, La2/i;->b(Ljava/lang/String;ILjava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object p1
 
     .line 2
-    iget v0, p0, Lcom/google/protobuf/m;->h:I
+    iget v0, p0, Lcom/google/protobuf/m;->i:I
 
     invoke-virtual {p1, v0}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -521,20 +521,20 @@
     .locals 2
 
     .line 1
-    iget v0, p0, Lcom/google/protobuf/m;->h:I
+    iget v0, p0, Lcom/google/protobuf/m;->i:I
 
     if-lt p1, v0, :cond_0
 
     .line 2
     new-instance v0, Lcom/google/protobuf/m;
 
-    iget-object v1, p0, Lcom/google/protobuf/m;->g:[D
+    iget-object v1, p0, Lcom/google/protobuf/m;->h:[D
 
     invoke-static {v1, p1}, Ljava/util/Arrays;->copyOf([DI)[D
 
     move-result-object p1
 
-    iget v1, p0, Lcom/google/protobuf/m;->h:I
+    iget v1, p0, Lcom/google/protobuf/m;->i:I
 
     invoke-direct {v0, p1, v1}, Lcom/google/protobuf/m;-><init>([DI)V
 
@@ -556,7 +556,7 @@
     invoke-virtual {p0, p1}, Lcom/google/protobuf/m;->e(I)V
 
     .line 2
-    iget-object v0, p0, Lcom/google/protobuf/m;->g:[D
+    iget-object v0, p0, Lcom/google/protobuf/m;->h:[D
 
     aget-wide v1, v0, p1
 
@@ -577,12 +577,12 @@
 
     .line 1
     :goto_0
-    iget v2, p0, Lcom/google/protobuf/m;->h:I
+    iget v2, p0, Lcom/google/protobuf/m;->i:I
 
     if-ge v1, v2, :cond_0
 
     .line 2
-    iget-object v2, p0, Lcom/google/protobuf/m;->g:[D
+    iget-object v2, p0, Lcom/google/protobuf/m;->h:[D
 
     aget-wide v3, v2, v1
 
@@ -628,7 +628,7 @@
     move-result-wide v2
 
     .line 3
-    iget p1, p0, Lcom/google/protobuf/m;->h:I
+    iget p1, p0, Lcom/google/protobuf/m;->i:I
 
     const/4 v0, 0x0
 
@@ -636,7 +636,7 @@
     if-ge v0, p1, :cond_2
 
     .line 4
-    iget-object v4, p0, Lcom/google/protobuf/m;->g:[D
+    iget-object v4, p0, Lcom/google/protobuf/m;->h:[D
 
     aget-wide v5, v4, v0
 
@@ -675,12 +675,12 @@
     invoke-virtual {p0, p1}, Lcom/google/protobuf/m;->e(I)V
 
     .line 3
-    iget-object v0, p0, Lcom/google/protobuf/m;->g:[D
+    iget-object v0, p0, Lcom/google/protobuf/m;->h:[D
 
     aget-wide v1, v0, p1
 
     .line 4
-    iget v3, p0, Lcom/google/protobuf/m;->h:I
+    iget v3, p0, Lcom/google/protobuf/m;->i:I
 
     add-int/lit8 v4, v3, -0x1
 
@@ -697,11 +697,11 @@
 
     .line 6
     :cond_0
-    iget p1, p0, Lcom/google/protobuf/m;->h:I
+    iget p1, p0, Lcom/google/protobuf/m;->i:I
 
     add-int/lit8 p1, p1, -0x1
 
-    iput p1, p0, Lcom/google/protobuf/m;->h:I
+    iput p1, p0, Lcom/google/protobuf/m;->i:I
 
     .line 7
     iget p1, p0, Ljava/util/AbstractList;->modCount:I
@@ -727,22 +727,22 @@
     if-lt p2, p1, :cond_0
 
     .line 2
-    iget-object v0, p0, Lcom/google/protobuf/m;->g:[D
+    iget-object v0, p0, Lcom/google/protobuf/m;->h:[D
 
-    iget v1, p0, Lcom/google/protobuf/m;->h:I
+    iget v1, p0, Lcom/google/protobuf/m;->i:I
 
     sub-int/2addr v1, p2
 
     invoke-static {v0, p2, v0, p1, v1}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
     .line 3
-    iget v0, p0, Lcom/google/protobuf/m;->h:I
+    iget v0, p0, Lcom/google/protobuf/m;->i:I
 
     sub-int/2addr p2, p1
 
     sub-int/2addr v0, p2
 
-    iput v0, p0, Lcom/google/protobuf/m;->h:I
+    iput v0, p0, Lcom/google/protobuf/m;->i:I
 
     .line 4
     iget p1, p0, Ljava/util/AbstractList;->modCount:I
@@ -782,7 +782,7 @@
     invoke-virtual {p0, p1}, Lcom/google/protobuf/m;->e(I)V
 
     .line 5
-    iget-object p2, p0, Lcom/google/protobuf/m;->g:[D
+    iget-object p2, p0, Lcom/google/protobuf/m;->h:[D
 
     aget-wide v2, p2, p1
 
@@ -800,7 +800,7 @@
 .method public final size()I
     .locals 1
 
-    iget v0, p0, Lcom/google/protobuf/m;->h:I
+    iget v0, p0, Lcom/google/protobuf/m;->i:I
 
     return v0
 .end method

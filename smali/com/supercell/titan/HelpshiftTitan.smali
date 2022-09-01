@@ -145,12 +145,12 @@
     .locals 3
 
     .line 1
-    new-instance v0, La5/e0;
+    new-instance v0, Lpe/a;
 
-    invoke-direct {v0}, La5/e0;-><init>()V
+    invoke-direct {v0}, Lpe/a;-><init>()V
 
     .line 2
-    invoke-static {}, Lcom/helpshift/util/u;->b()Z
+    invoke-static {}, Lcom/helpshift/util/t;->b()Z
 
     move-result v1
 
@@ -355,7 +355,7 @@
     invoke-static {}, Lcom/supercell/titan/HelpshiftTitan;->callInit()V
 
     .line 2
-    invoke-static {}, Lcom/helpshift/util/u;->b()Z
+    invoke-static {}, Lcom/helpshift/util/t;->b()Z
 
     move-result v0
 

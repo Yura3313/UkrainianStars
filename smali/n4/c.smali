@@ -4,16 +4,16 @@
 
 
 # instance fields
-.field public f:Z
+.field public g:Z
 
-.field public final synthetic g:Ln4/g;
+.field public final synthetic h:Ln4/g;
 
 
 # direct methods
 .method public constructor <init>(Ln4/g;)V
     .locals 0
 
-    iput-object p1, p0, Ln4/c;->g:Ln4/g;
+    iput-object p1, p0, Ln4/c;->h:Ln4/g;
 
     invoke-direct {p0}, Landroid/animation/AnimatorListenerAdapter;-><init>()V
 
@@ -28,10 +28,10 @@
     const/4 p1, 0x1
 
     .line 1
-    iput-boolean p1, p0, Ln4/c;->f:Z
+    iput-boolean p1, p0, Ln4/c;->g:Z
 
     .line 2
-    iget-object p1, p0, Ln4/c;->g:Ln4/g;
+    iget-object p1, p0, Ln4/c;->h:Ln4/g;
 
     invoke-interface {p1}, Ln4/g;->b()V
 
@@ -42,17 +42,17 @@
     .locals 0
 
     .line 1
-    iget-object p1, p0, Ln4/c;->g:Ln4/g;
+    iget-object p1, p0, Ln4/c;->h:Ln4/g;
 
     invoke-interface {p1}, Ln4/g;->a()V
 
     .line 2
-    iget-boolean p1, p0, Ln4/c;->f:Z
+    iget-boolean p1, p0, Ln4/c;->g:Z
 
     if-nez p1, :cond_0
 
     .line 3
-    iget-object p1, p0, Ln4/c;->g:Ln4/g;
+    iget-object p1, p0, Ln4/c;->h:Ln4/g;
 
     invoke-interface {p1}, Ln4/g;->e()V
 
@@ -64,14 +64,14 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Ln4/c;->g:Ln4/g;
+    iget-object v0, p0, Ln4/c;->h:Ln4/g;
 
     invoke-interface {v0, p1}, Ln4/g;->onAnimationStart(Landroid/animation/Animator;)V
 
     const/4 p1, 0x0
 
     .line 2
-    iput-boolean p1, p0, Ln4/c;->f:Z
+    iput-boolean p1, p0, Ln4/c;->g:Z
 
     return-void
 .end method

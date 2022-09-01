@@ -371,7 +371,7 @@
     array-length v0, p1
 
     .line 2
-    sget-object v1, Lcom/google/crypto/tink/shaded/protobuf/n$f;->i:Lcom/google/crypto/tink/shaded/protobuf/n$f;
+    sget-object v1, Lcom/google/crypto/tink/shaded/protobuf/n$f;->j:Lcom/google/crypto/tink/shaded/protobuf/n$f;
 
     .line 3
     invoke-virtual {p0, v1}, Lcom/google/crypto/tink/shaded/protobuf/n;->i(Lcom/google/crypto/tink/shaded/protobuf/n$f;)Ljava/lang/Object;
@@ -497,7 +497,7 @@
     .end annotation
 
     .line 1
-    sget-object v0, Lcom/google/crypto/tink/shaded/protobuf/n$f;->i:Lcom/google/crypto/tink/shaded/protobuf/n$f;
+    sget-object v0, Lcom/google/crypto/tink/shaded/protobuf/n$f;->j:Lcom/google/crypto/tink/shaded/protobuf/n$f;
 
     .line 2
     invoke-virtual {p0, v0}, Lcom/google/crypto/tink/shaded/protobuf/n;->i(Lcom/google/crypto/tink/shaded/protobuf/n$f;)Ljava/lang/Object;
@@ -797,7 +797,7 @@
     .end annotation
 
     .line 1
-    sget-object v0, Lcom/google/crypto/tink/shaded/protobuf/n$f;->j:Lcom/google/crypto/tink/shaded/protobuf/n$f;
+    sget-object v0, Lcom/google/crypto/tink/shaded/protobuf/n$f;->k:Lcom/google/crypto/tink/shaded/protobuf/n$f;
 
     .line 2
     invoke-virtual {p0, v0}, Lcom/google/crypto/tink/shaded/protobuf/n;->i(Lcom/google/crypto/tink/shaded/protobuf/n$f;)Ljava/lang/Object;
@@ -853,7 +853,7 @@
     .locals 2
 
     .line 1
-    sget-object v0, Lcom/google/crypto/tink/shaded/protobuf/n$f;->f:Lcom/google/crypto/tink/shaded/protobuf/n$f;
+    sget-object v0, Lcom/google/crypto/tink/shaded/protobuf/n$f;->g:Lcom/google/crypto/tink/shaded/protobuf/n$f;
 
     .line 2
     invoke-virtual {p0, v0}, Lcom/google/crypto/tink/shaded/protobuf/n;->i(Lcom/google/crypto/tink/shaded/protobuf/n$f;)Ljava/lang/Object;
@@ -902,7 +902,7 @@
     move-result v1
 
     .line 8
-    sget-object v0, Lcom/google/crypto/tink/shaded/protobuf/n$f;->g:Lcom/google/crypto/tink/shaded/protobuf/n$f;
+    sget-object v0, Lcom/google/crypto/tink/shaded/protobuf/n$f;->h:Lcom/google/crypto/tink/shaded/protobuf/n$f;
 
     .line 9
     invoke-virtual {p0, v0}, Lcom/google/crypto/tink/shaded/protobuf/n;->i(Lcom/google/crypto/tink/shaded/protobuf/n$f;)Ljava/lang/Object;
@@ -920,7 +920,7 @@
     .end annotation
 
     .line 1
-    sget-object v0, Lcom/google/crypto/tink/shaded/protobuf/n$f;->k:Lcom/google/crypto/tink/shaded/protobuf/n$f;
+    sget-object v0, Lcom/google/crypto/tink/shaded/protobuf/n$f;->l:Lcom/google/crypto/tink/shaded/protobuf/n$f;
 
     .line 2
     invoke-virtual {p0, v0}, Lcom/google/crypto/tink/shaded/protobuf/n;->i(Lcom/google/crypto/tink/shaded/protobuf/n$f;)Ljava/lang/Object;
@@ -937,7 +937,7 @@
     .locals 1
 
     .line 1
-    sget-object v0, Lcom/google/crypto/tink/shaded/protobuf/n$f;->j:Lcom/google/crypto/tink/shaded/protobuf/n$f;
+    sget-object v0, Lcom/google/crypto/tink/shaded/protobuf/n$f;->k:Lcom/google/crypto/tink/shaded/protobuf/n$f;
 
     .line 2
     invoke-virtual {p0, v0}, Lcom/google/crypto/tink/shaded/protobuf/n;->i(Lcom/google/crypto/tink/shaded/protobuf/n$f;)Ljava/lang/Object;
@@ -954,7 +954,7 @@
     .locals 1
 
     .line 1
-    sget-object v0, Lcom/google/crypto/tink/shaded/protobuf/n$f;->j:Lcom/google/crypto/tink/shaded/protobuf/n$f;
+    sget-object v0, Lcom/google/crypto/tink/shaded/protobuf/n$f;->k:Lcom/google/crypto/tink/shaded/protobuf/n$f;
 
     .line 2
     invoke-virtual {p0, v0}, Lcom/google/crypto/tink/shaded/protobuf/n;->i(Lcom/google/crypto/tink/shaded/protobuf/n$f;)Ljava/lang/Object;

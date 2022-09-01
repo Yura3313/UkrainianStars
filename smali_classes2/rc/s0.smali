@@ -1,5 +1,5 @@
-.class public final synthetic Lrc/s0;
-.super Lse/g;
+.class public final Lrc/s0;
+.super Lse/i;
 .source "SocialApiClient.kt"
 
 # interfaces
@@ -9,75 +9,104 @@
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/g;",
+        "Lse/i;",
         "Lre/l<",
-        "Lorg/json/JSONObject;",
-        "Lorg/json/JSONObject;",
-        ">;"
+        "Ljava/lang/Exception;",
+        "Ljava/util/Map<",
+        "Lcom/supercell/id/model/IdSocialAccount;",
+        "+",
+        "Lae/m$b<",
+        "Ljava/lang/Exception;",
+        ">;>;>;"
     }
 .end annotation
 
 
+# instance fields
+.field public final synthetic g:Ljava/util/List;
+
+
 # direct methods
-.method public constructor <init>(Lrc/d0;)V
-    .locals 1
+.method public constructor <init>(Ljava/util/List;)V
+    .locals 0
 
-    const/4 v0, 0x1
+    iput-object p1, p0, Lrc/s0;->g:Ljava/util/List;
 
-    invoke-direct {p0, v0, p1}, Lse/g;-><init>(ILjava/lang/Object;)V
+    const/4 p1, 0x1
+
+    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final getName()Ljava/lang/String;
-    .locals 1
+.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 4
 
-    const-string v0, "handleResponseData"
+    .line 1
+    check-cast p1, Ljava/lang/Exception;
 
-    return-object v0
-.end method
+    const-string v0, "error"
 
-.method public final getOwner()Lwe/d;
-    .locals 1
+    .line 2
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    const-class v0, Lrc/d0;
+    .line 3
+    iget-object v0, p0, Lrc/s0;->g:Ljava/util/List;
 
-    invoke-static {v0}, Lse/r;->a(Ljava/lang/Class;)Lwe/c;
+    .line 4
+    new-instance v1, Ljava/util/LinkedHashMap;
+
+    const/16 v2, 0xa
+
+    invoke-static {v0, v2}, Lje/f;->l(Ljava/lang/Iterable;I)I
+
+    move-result v2
+
+    invoke-static {v2}, Lt3/h;->g(I)I
+
+    move-result v2
+
+    const/16 v3, 0x10
+
+    if-ge v2, v3, :cond_0
+
+    const/16 v2, 0x10
+
+    :cond_0
+    invoke-direct {v1, v2}, Ljava/util/LinkedHashMap;-><init>(I)V
+
+    .line 5
+    invoke-interface {v0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
 
     move-result-object v0
 
-    return-object v0
-.end method
+    :goto_0
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
 
-.method public final getSignature()Ljava/lang/String;
-    .locals 1
+    move-result v2
 
-    const-string v0, "handleResponseData(Lorg/json/JSONObject;)Lorg/json/JSONObject;"
+    if-eqz v2, :cond_1
 
-    return-object v0
-.end method
+    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 
-.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
-    .locals 1
+    move-result-object v2
 
-    .line 1
-    check-cast p1, Lorg/json/JSONObject;
+    .line 6
+    move-object v3, v2
 
-    const-string v0, "p1"
+    check-cast v3, Lcom/supercell/id/model/IdSocialAccount;
 
-    .line 2
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    .line 7
+    new-instance v3, Lae/m$b;
 
-    iget-object v0, p0, Lse/b;->receiver:Ljava/lang/Object;
+    invoke-direct {v3, p1}, Lae/m$b;-><init>(Ljava/lang/Object;)V
 
-    check-cast v0, Lrc/d0;
+    invoke-interface {v1, v2, v3}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 3
-    invoke-virtual {v0, p1}, Lrc/f;->c(Lorg/json/JSONObject;)Lorg/json/JSONObject;
+    goto :goto_0
 
-    move-result-object p1
-
-    return-object p1
+    :cond_1
+    return-object v1
 .end method

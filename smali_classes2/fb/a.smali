@@ -26,12 +26,12 @@
     new-instance v0, Ll9/a;
 
     .line 3
-    sget-object v1, Lcom/helpshift/util/u;->b:Landroid/content/Context;
+    sget-object v1, Lcom/helpshift/util/t;->b:Landroid/content/Context;
 
     .line 4
-    new-instance v2, Lk3/d0;
+    new-instance v2, Lk3/c0;
 
-    invoke-direct {v2}, Lk3/d0;-><init>()V
+    invoke-direct {v2}, Lk3/c0;-><init>()V
 
     invoke-direct {v0, v1, v2}, Ll9/a;-><init>(Landroid/content/Context;Lh9/b;)V
 
@@ -410,7 +410,7 @@
     const-string v3, "Error occurred when calling save method"
 
     .line 24
-    invoke-static {v2, v3, v0}, Landroidx/savedstate/d;->g(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v2, v3, v0}, Le5/i;->i(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
     :try_end_4
     .catchall {:try_start_4 .. :try_end_4} :catchall_1
 
@@ -442,7 +442,7 @@
 
     .line 27
     :goto_6
-    invoke-static {v1, v2, v0}, Landroidx/savedstate/d;->g(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v1, v2, v0}, Le5/i;->i(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
     .line 28
     :cond_5
@@ -484,7 +484,7 @@
     const-string v3, "Error occurred when calling save method inside finally block"
 
     .line 31
-    invoke-static {v2, v3, v1}, Landroidx/savedstate/d;->g(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v2, v3, v1}, Le5/i;->i(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
     .line 32
     :cond_6

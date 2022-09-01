@@ -3,11 +3,11 @@
 
 
 # instance fields
-.field public c:J
+.field public i:J
 
-.field public d:Ljava/lang/String;
+.field public j:Ljava/lang/String;
 
-.field public e:Ljava/lang/Boolean;
+.field public k:Ljava/lang/Boolean;
 
 
 # direct methods
@@ -28,7 +28,7 @@
     invoke-virtual {p0}, Lz3/f1;->w()V
 
     .line 2
-    iget-wide v0, p0, Lz3/b;->c:J
+    iget-wide v0, p0, Lz3/b;->i:J
 
     return-wide v0
 .end method
@@ -40,7 +40,7 @@
     invoke-virtual {p0}, Lz3/f1;->w()V
 
     .line 2
-    iget-object v0, p0, Lz3/b;->d:Ljava/lang/String;
+    iget-object v0, p0, Lz3/b;->j:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -49,17 +49,17 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lz3/b;->e:Ljava/lang/Boolean;
+    iget-object v0, p0, Lz3/b;->k:Ljava/lang/Boolean;
 
     if-nez v0, :cond_0
 
     .line 2
-    invoke-virtual {p0}, Ly3/a;->a()Lk3/c9;
+    invoke-virtual {p0}, Ly3/a;->a()Lcom/helpshift/util/a0;
 
     .line 3
     sget-object v0, Ljava/lang/Boolean;->FALSE:Ljava/lang/Boolean;
 
-    iput-object v0, p0, Lz3/b;->e:Ljava/lang/Boolean;
+    iput-object v0, p0, Lz3/b;->k:Ljava/lang/Boolean;
 
     .line 4
     :try_start_0
@@ -79,14 +79,14 @@
     .line 6
     sget-object p1, Ljava/lang/Boolean;->TRUE:Ljava/lang/Boolean;
 
-    iput-object p1, p0, Lz3/b;->e:Ljava/lang/Boolean;
+    iput-object p1, p0, Lz3/b;->k:Ljava/lang/Boolean;
     :try_end_0
     .catch Landroid/content/pm/PackageManager$NameNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 7
     :catch_0
     :cond_0
-    iget-object p1, p0, Lz3/b;->e:Ljava/lang/Boolean;
+    iget-object p1, p0, Lz3/b;->k:Ljava/lang/Boolean;
 
     invoke-virtual {p1}, Ljava/lang/Boolean;->booleanValue()Z
 
@@ -130,7 +130,7 @@
 
     move-result-wide v0
 
-    iput-wide v0, p0, Lz3/b;->c:J
+    iput-wide v0, p0, Lz3/b;->i:J
 
     .line 5
     invoke-static {}, Ljava/util/Locale;->getDefault()Ljava/util/Locale;
@@ -160,23 +160,23 @@
     const/4 v2, 0x1
 
     .line 8
-    invoke-static {v1, v2}, La1/e;->a(Ljava/lang/String;I)I
+    invoke-static {v1, v2}, La1/e;->b(Ljava/lang/String;I)I
 
     move-result v2
 
-    invoke-static {v0, v2}, La1/e;->a(Ljava/lang/String;I)I
+    invoke-static {v0, v2}, La1/e;->b(Ljava/lang/String;I)I
 
     move-result v2
 
     const-string v3, "-"
 
     .line 9
-    invoke-static {v2, v1, v3, v0}, Landroid/support/v4/media/b;->a(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2, v1, v3, v0}, Li1/j;->a(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
     .line 10
-    iput-object v0, p0, Lz3/b;->d:Ljava/lang/String;
+    iput-object v0, p0, Lz3/b;->j:Ljava/lang/String;
 
     const/4 v0, 0x0
 

@@ -2,227 +2,326 @@
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
+# interfaces
+.implements Lk3/x2;
 
-# static fields
-.field public static final a:Lk3/q2;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lk3/y2<",
-            "Lk3/gh;",
-            ">;"
-        }
-    .end annotation
-.end field
 
-.field public static final b:Lk3/p2;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lk3/y2<",
-            "Lk3/gh;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field public static final c:Lk3/t2;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lk3/y2<",
-            "Ljava/lang/Object;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field public static final d:Lk3/r2;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lk3/y2<",
-            "Lk3/gh;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field public static final e:Lk3/v2;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lk3/y2<",
-            "Lk3/gh;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field public static final f:Lk3/u2;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lk3/y2<",
-            "Lk3/gh;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field public static final g:Lk3/gg;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lk3/y2<",
-            "Lk3/df;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field public static final h:Lk3/jg;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lk3/y2<",
-            "Lk3/df;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field public static final i:Lk3/i2;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lk3/y2<",
-            "Lk3/gh;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field public static final j:Lk3/d3;
-
-.field public static final k:Lk3/x2;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lk3/y2<",
-            "Lk3/gh;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field public static final l:Lk3/w2;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lk3/y2<",
-            "Lk3/gh;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field public static final m:Lk3/z2;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lk3/y2<",
-            "Lk3/gh;",
-            ">;"
-        }
-    .end annotation
-.end field
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Lk3/x2<",
+        "Lk3/gh;",
+        ">;"
+    }
+.end annotation
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 2
+.method public constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final c(Ljava/lang/Object;Ljava/util/Map;)V
+    .locals 8
 
     .line 1
-    new-instance v0, Lk3/q2;
+    check-cast p1, Lk3/gh;
 
-    invoke-direct {v0}, Lk3/q2;-><init>()V
-
-    sput-object v0, Lk3/h2;->a:Lk3/q2;
+    const-string v0, "action"
 
     .line 2
-    new-instance v0, Lk3/p2;
+    invoke-interface {p2, v0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
-    invoke-direct {v0}, Lk3/p2;-><init>()V
+    move-result-object v0
 
-    sput-object v0, Lk3/h2;->b:Lk3/p2;
+    check-cast v0, Ljava/lang/String;
+
+    const-string v1, "tick"
 
     .line 3
-    new-instance v0, Lk3/t2;
+    invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    invoke-direct {v0}, Lk3/t2;-><init>()V
+    move-result v1
 
-    sput-object v0, Lk3/h2;->c:Lk3/t2;
+    if-eqz v1, :cond_7
+
+    const-string v0, "label"
 
     .line 4
-    new-instance v0, Lk3/r2;
+    invoke-interface {p2, v0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
-    invoke-direct {v0}, Lk3/r2;-><init>()V
+    move-result-object v0
 
-    sput-object v0, Lk3/h2;->d:Lk3/r2;
+    check-cast v0, Ljava/lang/String;
+
+    const-string v1, "start_label"
 
     .line 5
-    new-instance v0, Lk3/v2;
+    invoke-interface {p2, v1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
-    invoke-direct {v0}, Lk3/v2;-><init>()V
+    move-result-object v1
 
-    sput-object v0, Lk3/h2;->e:Lk3/v2;
+    check-cast v1, Ljava/lang/String;
+
+    const-string v2, "timestamp"
 
     .line 6
-    new-instance v0, Lk3/u2;
+    invoke-interface {p2, v2}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p2
+
+    check-cast p2, Ljava/lang/String;
+
+    .line 7
+    invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_0
+
+    return-void
+
+    .line 8
+    :cond_0
+    invoke-static {p2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_1
+
+    return-void
+
+    .line 9
+    :cond_1
+    :try_start_0
+    invoke-static {p2}, Ljava/lang/Long;->parseLong(Ljava/lang/String;)J
+
+    move-result-wide v2
+
+    .line 10
+    sget-object p2, Li1/p;->B:Li1/p;
+
+    iget-object p2, p2, Li1/p;->j:Ll2/c;
+
+    .line 11
+    invoke-interface {p2}, Ll2/c;->a()J
+
+    move-result-wide v4
+
+    .line 12
+    sget-object p2, Li1/p;->B:Li1/p;
+
+    iget-object p2, p2, Li1/p;->j:Ll2/c;
+
+    .line 13
+    invoke-interface {p2}, Ll2/c;->b()J
+
+    move-result-wide v6
+    :try_end_0
+    .catch Ljava/lang/NumberFormatException; {:try_start_0 .. :try_end_0} :catch_0
+
+    sub-long/2addr v2, v4
+
+    add-long/2addr v2, v6
+
+    .line 14
+    invoke-static {v1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+
+    move-result p2
+
+    if-eqz p2, :cond_2
+
+    const-string v1, "native:view_load"
+
+    .line 15
+    :cond_2
+    invoke-interface {p1}, Lk3/gh;->o()Lk3/z;
+
+    move-result-object p1
+
+    .line 16
+    iget-object p2, p1, Lk3/z;->b:Lk3/b0;
+
+    iget-object v4, p1, Lk3/z;->a:Ljava/util/HashMap;
+
+    invoke-virtual {v4, v1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Lk3/a0;
+
+    const/4 v4, 0x1
+
+    new-array v4, v4, [Ljava/lang/String;
+
+    const/4 v5, 0x0
+
+    aput-object v0, v4, v5
+
+    if-eqz p2, :cond_4
+
+    if-nez v1, :cond_3
+
+    goto :goto_0
+
+    .line 17
+    :cond_3
+    invoke-virtual {p2, v1, v2, v3, v4}, Lk3/b0;->a(Lk3/a0;J[Ljava/lang/String;)V
+
+    .line 18
+    :cond_4
+    :goto_0
+    iget-object p2, p1, Lk3/z;->a:Ljava/util/HashMap;
+
+    iget-object p1, p1, Lk3/z;->b:Lk3/b0;
 
     const/4 v1, 0x0
 
-    invoke-direct {v0, v1}, Lk3/u2;-><init>(I)V
+    if-nez p1, :cond_5
 
-    sput-object v0, Lk3/h2;->f:Lk3/u2;
+    goto :goto_1
 
-    .line 7
-    new-instance v0, Lk3/gg;
+    .line 19
+    :cond_5
+    iget-boolean p1, p1, Lk3/b0;->a:Z
 
-    invoke-direct {v0}, Lk3/gg;-><init>()V
+    if-nez p1, :cond_6
 
-    sput-object v0, Lk3/h2;->g:Lk3/gg;
+    goto :goto_1
 
-    .line 8
-    new-instance v0, Lk3/jg;
+    .line 20
+    :cond_6
+    new-instance p1, Lk3/a0;
 
-    invoke-direct {v0}, Lk3/jg;-><init>()V
+    invoke-direct {p1, v2, v3, v1, v1}, Lk3/a0;-><init>(JLjava/lang/String;Lk3/a0;)V
 
-    sput-object v0, Lk3/h2;->h:Lk3/jg;
+    move-object v1, p1
 
-    .line 9
-    new-instance v0, Lk3/i2;
+    .line 21
+    :goto_1
+    invoke-virtual {p2, v0, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    invoke-direct {v0}, Lk3/i2;-><init>()V
+    :catch_0
+    return-void
 
-    sput-object v0, Lk3/h2;->i:Lk3/i2;
+    :cond_7
+    const-string v1, "experiment"
 
-    .line 10
-    new-instance v0, Lk3/d3;
+    .line 22
+    invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    invoke-direct {v0}, Lk3/d3;-><init>()V
+    move-result v1
 
-    sput-object v0, Lk3/h2;->j:Lk3/d3;
+    const-string v2, "value"
 
-    .line 11
-    new-instance v0, Lk3/x2;
+    if-eqz v1, :cond_a
 
-    invoke-direct {v0}, Lk3/x2;-><init>()V
+    .line 23
+    invoke-interface {p2, v2}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
-    sput-object v0, Lk3/h2;->k:Lk3/x2;
+    move-result-object p2
 
-    .line 12
-    new-instance v0, Lk3/w2;
+    check-cast p2, Ljava/lang/String;
 
-    invoke-direct {v0}, Lk3/w2;-><init>()V
+    .line 24
+    invoke-static {p2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
-    sput-object v0, Lk3/h2;->l:Lk3/w2;
+    move-result v0
 
-    .line 13
-    new-instance v0, Lk3/z2;
+    if-eqz v0, :cond_8
 
-    invoke-direct {v0}, Lk3/z2;-><init>()V
+    return-void
 
-    sput-object v0, Lk3/h2;->m:Lk3/z2;
+    .line 25
+    :cond_8
+    invoke-interface {p1}, Lk3/gh;->o()Lk3/z;
 
+    move-result-object p1
+
+    .line 26
+    iget-object p1, p1, Lk3/z;->b:Lk3/b0;
+
+    if-nez p1, :cond_9
+
+    return-void
+
+    :cond_9
+    const-string v0, "e"
+
+    .line 27
+    invoke-virtual {p1, v0, p2}, Lk3/b0;->b(Ljava/lang/String;Ljava/lang/String;)V
+
+    return-void
+
+    :cond_a
+    const-string v1, "extra"
+
+    .line 28
+    invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_e
+
+    const-string v0, "name"
+
+    .line 29
+    invoke-interface {p2, v0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Ljava/lang/String;
+
+    .line 30
+    invoke-interface {p2, v2}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p2
+
+    check-cast p2, Ljava/lang/String;
+
+    .line 31
+    invoke-static {p2}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_b
+
+    return-void
+
+    .line 32
+    :cond_b
+    invoke-static {v0}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_c
+
+    return-void
+
+    .line 33
+    :cond_c
+    invoke-interface {p1}, Lk3/gh;->o()Lk3/z;
+
+    move-result-object p1
+
+    .line 34
+    iget-object p1, p1, Lk3/z;->b:Lk3/b0;
+
+    if-nez p1, :cond_d
+
+    return-void
+
+    .line 35
+    :cond_d
+    invoke-virtual {p1, v0, p2}, Lk3/b0;->b(Ljava/lang/String;Ljava/lang/String;)V
+
+    :cond_e
     return-void
 .end method

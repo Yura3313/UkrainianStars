@@ -17,17 +17,17 @@
 # instance fields
 .field public final A:Landroid/widget/TextView;
 
-.field public final B:Landroid/view/View;
+.field public final B:Landroid/widget/TextView;
 
-.field public final C:Landroid/widget/ProgressBar;
+.field public final C:Landroid/view/View;
 
-.field public final D:Landroid/view/View;
+.field public final D:Landroid/widget/ProgressBar;
 
-.field public final E:Landroid/widget/ImageView;
+.field public final E:Landroid/view/View;
 
-.field public final y:Landroid/view/View;
+.field public final F:Landroid/widget/ImageView;
 
-.field public final z:Landroid/widget/TextView;
+.field public final z:Landroid/view/View;
 
 
 # direct methods
@@ -44,7 +44,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lra/d$a;->y:Landroid/view/View;
+    iput-object v0, p0, Lra/d$a;->z:Landroid/view/View;
 
     .line 3
     sget v0, Lcom/helpshift/R$id;->attachment_file_name:I
@@ -55,7 +55,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lra/d$a;->z:Landroid/widget/TextView;
+    iput-object v0, p0, Lra/d$a;->A:Landroid/widget/TextView;
 
     .line 4
     sget v0, Lcom/helpshift/R$id;->attachment_file_size:I
@@ -66,7 +66,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lra/d$a;->A:Landroid/widget/TextView;
+    iput-object v0, p0, Lra/d$a;->B:Landroid/widget/TextView;
 
     .line 5
     sget v0, Lcom/helpshift/R$id;->admin_message:I
@@ -75,7 +75,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lra/d$a;->B:Landroid/view/View;
+    iput-object v0, p0, Lra/d$a;->C:Landroid/view/View;
 
     .line 6
     sget v1, Lcom/helpshift/R$id;->download_button:I
@@ -84,7 +84,7 @@
 
     move-result-object v1
 
-    iput-object v1, p0, Lra/d$a;->D:Landroid/view/View;
+    iput-object v1, p0, Lra/d$a;->E:Landroid/view/View;
 
     .line 7
     sget v1, Lcom/helpshift/R$id;->progress:I
@@ -95,7 +95,7 @@
 
     check-cast v1, Landroid/widget/ProgressBar;
 
-    iput-object v1, p0, Lra/d$a;->C:Landroid/widget/ProgressBar;
+    iput-object v1, p0, Lra/d$a;->D:Landroid/widget/ProgressBar;
 
     .line 8
     sget v2, Lcom/helpshift/R$id;->attachment_icon:I
@@ -106,7 +106,7 @@
 
     check-cast v2, Landroid/widget/ImageView;
 
-    iput-object v2, p0, Lra/d$a;->E:Landroid/widget/ImageView;
+    iput-object v2, p0, Lra/d$a;->F:Landroid/widget/ImageView;
 
     .line 9
     sget v3, Lcom/helpshift/R$id;->hs_download_foreground_view:I
@@ -128,7 +128,7 @@
     sget v4, Lcom/helpshift/R$attr;->hs__chatBubbleMediaBackgroundColor:I
 
     .line 12
-    invoke-static {v3, p2, v4}, Lcom/helpshift/util/g0;->e(Landroid/content/Context;Landroid/graphics/drawable/Drawable;I)V
+    invoke-static {v3, p2, v4}, Lcom/helpshift/util/e0;->e(Landroid/content/Context;Landroid/graphics/drawable/Drawable;I)V
 
     .line 13
     iget-object p2, p1, Lra/u;->a:Landroid/content/Context;
@@ -139,7 +139,7 @@
     move-result-object v0
 
     .line 15
-    invoke-static {p2, v0, v4}, Lcom/helpshift/util/g0;->e(Landroid/content/Context;Landroid/graphics/drawable/Drawable;I)V
+    invoke-static {p2, v0, v4}, Lcom/helpshift/util/e0;->e(Landroid/content/Context;Landroid/graphics/drawable/Drawable;I)V
 
     .line 16
     iget-object p2, p1, Lra/u;->a:Landroid/content/Context;

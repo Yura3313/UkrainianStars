@@ -80,7 +80,7 @@
     move-result-object v0
 
     .line 3
-    sget-object v1, Lk3/cw0;->a:Ljava/lang/ClassLoader;
+    sget-object v1, Lk3/gw0;->a:Ljava/lang/ClassLoader;
 
     invoke-virtual {v0, v1}, Landroid/os/Parcel;->readArrayList(Ljava/lang/ClassLoader;)Ljava/util/ArrayList;
 

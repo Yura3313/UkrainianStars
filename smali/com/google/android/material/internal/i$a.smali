@@ -1,5 +1,5 @@
 .class public final Lcom/google/android/material/internal/i$a;
-.super Lb2/a0;
+.super Lb2/z;
 .source "TextDrawableHelper.java"
 
 
@@ -15,16 +15,16 @@
 
 
 # instance fields
-.field public final synthetic f:Lcom/google/android/material/internal/i;
+.field public final synthetic g:Lcom/google/android/material/internal/i;
 
 
 # direct methods
 .method public constructor <init>(Lcom/google/android/material/internal/i;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/google/android/material/internal/i$a;->f:Lcom/google/android/material/internal/i;
+    iput-object p1, p0, Lcom/google/android/material/internal/i$a;->g:Lcom/google/android/material/internal/i;
 
-    invoke-direct {p0}, Lb2/a0;-><init>()V
+    invoke-direct {p0}, Lb2/z;-><init>()V
 
     return-void
 .end method
@@ -35,7 +35,7 @@
     .locals 1
 
     .line 1
-    iget-object p1, p0, Lcom/google/android/material/internal/i$a;->f:Lcom/google/android/material/internal/i;
+    iget-object p1, p0, Lcom/google/android/material/internal/i$a;->g:Lcom/google/android/material/internal/i;
 
     const/4 v0, 0x1
 
@@ -70,7 +70,7 @@
 
     .line 1
     :cond_0
-    iget-object p1, p0, Lcom/google/android/material/internal/i$a;->f:Lcom/google/android/material/internal/i;
+    iget-object p1, p0, Lcom/google/android/material/internal/i$a;->g:Lcom/google/android/material/internal/i;
 
     const/4 p2, 0x1
 

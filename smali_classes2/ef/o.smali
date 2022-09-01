@@ -1,5 +1,5 @@
 .class public final Lef/o;
-.super Lse/h;
+.super Lse/i;
 .source "KotlinExtensions.kt"
 
 # interfaces
@@ -9,28 +9,28 @@
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/l<",
         "Ljava/lang/Throwable;",
-        "Lie/h;",
+        "Lie/i;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic f:Lef/b;
+.field public final synthetic g:Lef/b;
 
 
 # direct methods
 .method public constructor <init>(Lef/b;)V
     .locals 0
 
-    iput-object p1, p0, Lef/o;->f:Lef/b;
+    iput-object p1, p0, Lef/o;->g:Lef/b;
 
     const/4 p1, 0x1
 
-    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -43,12 +43,12 @@
     check-cast p1, Ljava/lang/Throwable;
 
     .line 1
-    iget-object p1, p0, Lef/o;->f:Lef/b;
+    iget-object p1, p0, Lef/o;->g:Lef/b;
 
     invoke-interface {p1}, Lef/b;->cancel()V
 
     .line 2
-    sget-object p1, Lie/h;->a:Lie/h;
+    sget-object p1, Lie/i;->a:Lie/i;
 
     return-object p1
 .end method

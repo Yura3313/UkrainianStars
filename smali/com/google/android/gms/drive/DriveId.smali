@@ -18,15 +18,15 @@
 
 
 # instance fields
-.field public final f:Ljava/lang/String;
-
-.field public final g:J
+.field public final g:Ljava/lang/String;
 
 .field public final h:J
 
-.field public final i:I
+.field public final i:J
 
-.field public volatile j:Ljava/lang/String;
+.field public final j:I
+
+.field public volatile k:Ljava/lang/String;
 
 
 # direct methods
@@ -51,10 +51,10 @@
     const/4 v0, 0x0
 
     .line 2
-    iput-object v0, p0, Lcom/google/android/gms/drive/DriveId;->j:Ljava/lang/String;
+    iput-object v0, p0, Lcom/google/android/gms/drive/DriveId;->k:Ljava/lang/String;
 
     .line 3
-    iput-object p1, p0, Lcom/google/android/gms/drive/DriveId;->f:Ljava/lang/String;
+    iput-object p1, p0, Lcom/google/android/gms/drive/DriveId;->g:Ljava/lang/String;
 
     const-string v0, ""
 
@@ -88,13 +88,13 @@
     invoke-static {v1}, Ld2/h;->a(Z)V
 
     .line 6
-    iput-wide p2, p0, Lcom/google/android/gms/drive/DriveId;->g:J
+    iput-wide p2, p0, Lcom/google/android/gms/drive/DriveId;->h:J
 
     .line 7
-    iput-wide p4, p0, Lcom/google/android/gms/drive/DriveId;->h:J
+    iput-wide p4, p0, Lcom/google/android/gms/drive/DriveId;->i:J
 
     .line 8
-    iput p6, p0, Lcom/google/android/gms/drive/DriveId;->i:I
+    iput p6, p0, Lcom/google/android/gms/drive/DriveId;->j:I
 
     return-void
 .end method
@@ -124,9 +124,9 @@
     check-cast p1, Lcom/google/android/gms/drive/DriveId;
 
     .line 3
-    iget-wide v1, p1, Lcom/google/android/gms/drive/DriveId;->h:J
+    iget-wide v1, p1, Lcom/google/android/gms/drive/DriveId;->i:J
 
-    iget-wide v3, p0, Lcom/google/android/gms/drive/DriveId;->h:J
+    iget-wide v3, p0, Lcom/google/android/gms/drive/DriveId;->i:J
 
     cmp-long v5, v1, v3
 
@@ -136,7 +136,7 @@
 
     .line 4
     :cond_1
-    iget-wide v1, p1, Lcom/google/android/gms/drive/DriveId;->g:J
+    iget-wide v1, p1, Lcom/google/android/gms/drive/DriveId;->h:J
 
     const-wide/16 v3, -0x1
 
@@ -144,16 +144,16 @@
 
     if-nez v5, :cond_2
 
-    iget-wide v5, p0, Lcom/google/android/gms/drive/DriveId;->g:J
+    iget-wide v5, p0, Lcom/google/android/gms/drive/DriveId;->h:J
 
     cmp-long v7, v5, v3
 
     if-nez v7, :cond_2
 
     .line 5
-    iget-object p1, p1, Lcom/google/android/gms/drive/DriveId;->f:Ljava/lang/String;
+    iget-object p1, p1, Lcom/google/android/gms/drive/DriveId;->g:Ljava/lang/String;
 
-    iget-object v0, p0, Lcom/google/android/gms/drive/DriveId;->f:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/android/gms/drive/DriveId;->g:Ljava/lang/String;
 
     invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -163,13 +163,13 @@
 
     .line 6
     :cond_2
-    iget-object v3, p0, Lcom/google/android/gms/drive/DriveId;->f:Ljava/lang/String;
+    iget-object v3, p0, Lcom/google/android/gms/drive/DriveId;->g:Ljava/lang/String;
 
     const/4 v4, 0x1
 
     if-eqz v3, :cond_5
 
-    iget-object p1, p1, Lcom/google/android/gms/drive/DriveId;->f:Ljava/lang/String;
+    iget-object p1, p1, Lcom/google/android/gms/drive/DriveId;->g:Ljava/lang/String;
 
     if-nez p1, :cond_3
 
@@ -177,7 +177,7 @@
 
     .line 7
     :cond_3
-    iget-wide v5, p0, Lcom/google/android/gms/drive/DriveId;->g:J
+    iget-wide v5, p0, Lcom/google/android/gms/drive/DriveId;->h:J
 
     cmp-long v7, v1, v5
 
@@ -197,7 +197,7 @@
     .line 8
     :cond_5
     :goto_0
-    iget-wide v5, p0, Lcom/google/android/gms/drive/DriveId;->g:J
+    iget-wide v5, p0, Lcom/google/android/gms/drive/DriveId;->h:J
 
     cmp-long p1, v1, v5
 
@@ -214,7 +214,7 @@
     .locals 5
 
     .line 1
-    iget-wide v0, p0, Lcom/google/android/gms/drive/DriveId;->g:J
+    iget-wide v0, p0, Lcom/google/android/gms/drive/DriveId;->h:J
 
     const-wide/16 v2, -0x1
 
@@ -223,7 +223,7 @@
     if-nez v4, :cond_0
 
     .line 2
-    iget-object v0, p0, Lcom/google/android/gms/drive/DriveId;->f:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/android/gms/drive/DriveId;->g:Ljava/lang/String;
 
     invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
 
@@ -233,7 +233,7 @@
 
     .line 3
     :cond_0
-    iget-wide v0, p0, Lcom/google/android/gms/drive/DriveId;->h:J
+    iget-wide v0, p0, Lcom/google/android/gms/drive/DriveId;->i:J
 
     invoke-static {v0, v1}, Ljava/lang/String;->valueOf(J)Ljava/lang/String;
 
@@ -243,7 +243,7 @@
 
     move-result-object v0
 
-    iget-wide v1, p0, Lcom/google/android/gms/drive/DriveId;->g:J
+    iget-wide v1, p0, Lcom/google/android/gms/drive/DriveId;->h:J
 
     invoke-static {v1, v2}, Ljava/lang/String;->valueOf(J)Ljava/lang/String;
 
@@ -284,7 +284,7 @@
     .locals 4
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/gms/drive/DriveId;->j:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/android/gms/drive/DriveId;->k:Ljava/lang/String;
 
     if-nez v0, :cond_2
 
@@ -297,14 +297,14 @@
     invoke-virtual {v0}, Lr3/h2$a;->e()V
 
     .line 4
-    iget-object v1, v0, Lr3/h2$a;->g:Lr3/h2;
+    iget-object v1, v0, Lr3/h2$a;->h:Lr3/h2;
 
     check-cast v1, Lr3/l;
 
     invoke-static {v1}, Lr3/l;->j(Lr3/l;)V
 
     .line 5
-    iget-object v1, p0, Lcom/google/android/gms/drive/DriveId;->f:Ljava/lang/String;
+    iget-object v1, p0, Lcom/google/android/gms/drive/DriveId;->g:Ljava/lang/String;
 
     if-nez v1, :cond_0
 
@@ -315,46 +315,46 @@
     invoke-virtual {v0}, Lr3/h2$a;->e()V
 
     .line 7
-    iget-object v2, v0, Lr3/h2$a;->g:Lr3/h2;
+    iget-object v2, v0, Lr3/h2$a;->h:Lr3/h2;
 
     check-cast v2, Lr3/l;
 
     invoke-static {v2, v1}, Lr3/l;->l(Lr3/l;Ljava/lang/String;)V
 
     .line 8
-    iget-wide v1, p0, Lcom/google/android/gms/drive/DriveId;->g:J
+    iget-wide v1, p0, Lcom/google/android/gms/drive/DriveId;->h:J
 
     .line 9
     invoke-virtual {v0}, Lr3/h2$a;->e()V
 
     .line 10
-    iget-object v3, v0, Lr3/h2$a;->g:Lr3/h2;
+    iget-object v3, v0, Lr3/h2$a;->h:Lr3/h2;
 
     check-cast v3, Lr3/l;
 
     invoke-static {v3, v1, v2}, Lr3/l;->k(Lr3/l;J)V
 
     .line 11
-    iget-wide v1, p0, Lcom/google/android/gms/drive/DriveId;->h:J
+    iget-wide v1, p0, Lcom/google/android/gms/drive/DriveId;->i:J
 
     .line 12
     invoke-virtual {v0}, Lr3/h2$a;->e()V
 
     .line 13
-    iget-object v3, v0, Lr3/h2$a;->g:Lr3/h2;
+    iget-object v3, v0, Lr3/h2$a;->h:Lr3/h2;
 
     check-cast v3, Lr3/l;
 
     invoke-static {v3, v1, v2}, Lr3/l;->p(Lr3/l;J)V
 
     .line 14
-    iget v1, p0, Lcom/google/android/gms/drive/DriveId;->i:I
+    iget v1, p0, Lcom/google/android/gms/drive/DriveId;->j:I
 
     .line 15
     invoke-virtual {v0}, Lr3/h2$a;->e()V
 
     .line 16
-    iget-object v2, v0, Lr3/h2$a;->g:Lr3/h2;
+    iget-object v2, v0, Lr3/h2$a;->h:Lr3/h2;
 
     check-cast v2, Lr3/l;
 
@@ -406,11 +406,11 @@
     invoke-direct {v0, v1}, Ljava/lang/String;-><init>(Ljava/lang/String;)V
 
     :goto_0
-    iput-object v0, p0, Lcom/google/android/gms/drive/DriveId;->j:Ljava/lang/String;
+    iput-object v0, p0, Lcom/google/android/gms/drive/DriveId;->k:Ljava/lang/String;
 
     .line 21
     :cond_2
-    iget-object v0, p0, Lcom/google/android/gms/drive/DriveId;->j:Ljava/lang/String;
+    iget-object v0, p0, Lcom/google/android/gms/drive/DriveId;->k:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -426,7 +426,7 @@
     move-result v5
 
     .line 2
-    iget-object p2, p0, Lcom/google/android/gms/drive/DriveId;->f:Ljava/lang/String;
+    iget-object p2, p0, Lcom/google/android/gms/drive/DriveId;->g:Ljava/lang/String;
 
     const/4 v0, 0x2
 
@@ -435,7 +435,7 @@
     invoke-static {p1, v0, p2, v1}, Le2/b;->m(Landroid/os/Parcel;ILjava/lang/String;Z)V
 
     .line 3
-    iget-wide v0, p0, Lcom/google/android/gms/drive/DriveId;->g:J
+    iget-wide v0, p0, Lcom/google/android/gms/drive/DriveId;->h:J
 
     const/4 p2, 0x3
 
@@ -448,7 +448,7 @@
     invoke-virtual {p1, v0, v1}, Landroid/os/Parcel;->writeLong(J)V
 
     .line 6
-    iget-wide v0, p0, Lcom/google/android/gms/drive/DriveId;->h:J
+    iget-wide v0, p0, Lcom/google/android/gms/drive/DriveId;->i:J
 
     const/4 p2, 0x4
 
@@ -459,7 +459,7 @@
     invoke-virtual {p1, v0, v1}, Landroid/os/Parcel;->writeLong(J)V
 
     .line 9
-    iget v3, p0, Lcom/google/android/gms/drive/DriveId;->i:I
+    iget v3, p0, Lcom/google/android/gms/drive/DriveId;->j:I
 
     const/4 v1, 0x5
 

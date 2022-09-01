@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field public final synthetic f:Lyd/e;
+.field public final synthetic g:Lyd/e;
 
 
 # direct methods
 .method public constructor <init>(Lyd/e;)V
     .locals 0
 
-    iput-object p1, p0, Lyd/e$a;->f:Lyd/e;
+    iput-object p1, p0, Lyd/e$a;->g:Lyd/e;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -38,7 +38,7 @@
     .locals 2
 
     .line 1
-    iget-object p1, p0, Lyd/e$a;->f:Lyd/e;
+    iget-object p1, p0, Lyd/e$a;->g:Lyd/e;
 
     sget v0, Lcom/supercell/id/R$id;->okButton:I
 
@@ -50,14 +50,14 @@
 
     const-string v0, "okButton"
 
-    invoke-static {p1, v0}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/4 v0, 0x0
 
     invoke-virtual {p1, v0}, Landroid/view/View;->setEnabled(Z)V
 
     .line 2
-    iget-object p1, p0, Lyd/e$a;->f:Lyd/e;
+    iget-object p1, p0, Lyd/e$a;->g:Lyd/e;
 
     sget v1, Lcom/supercell/id/R$id;->cancelButton:I
 
@@ -69,7 +69,7 @@
 
     const-string v1, "cancelButton"
 
-    invoke-static {p1, v1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v1}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {p1, v0}, Landroid/view/View;->setEnabled(Z)V
 
@@ -79,9 +79,9 @@
     invoke-virtual {p1}, Lcom/supercell/id/SupercellId;->clearPendingLogin$supercellId_release()V
 
     .line 4
-    iget-object p1, p0, Lyd/e$a;->f:Lyd/e;
+    iget-object p1, p0, Lyd/e$a;->g:Lyd/e;
 
-    invoke-static {p1}, Lcom/android/billingclient/api/c0;->e(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
+    invoke-static {p1}, Lcom/android/billingclient/api/b0;->f(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
 
     move-result-object p1
 

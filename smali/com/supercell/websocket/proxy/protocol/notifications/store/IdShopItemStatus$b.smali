@@ -23,8 +23,6 @@
 
 
 # static fields
-.field public static final enum f:Lcom/supercell/websocket/proxy/protocol/notifications/store/IdShopItemStatus$b;
-
 .field public static final enum g:Lcom/supercell/websocket/proxy/protocol/notifications/store/IdShopItemStatus$b;
 
 .field public static final enum h:Lcom/supercell/websocket/proxy/protocol/notifications/store/IdShopItemStatus$b;
@@ -35,7 +33,9 @@
 
 .field public static final enum k:Lcom/supercell/websocket/proxy/protocol/notifications/store/IdShopItemStatus$b;
 
-.field public static final synthetic l:[Lcom/supercell/websocket/proxy/protocol/notifications/store/IdShopItemStatus$b;
+.field public static final enum l:Lcom/supercell/websocket/proxy/protocol/notifications/store/IdShopItemStatus$b;
+
+.field public static final synthetic m:[Lcom/supercell/websocket/proxy/protocol/notifications/store/IdShopItemStatus$b;
 
 
 # direct methods
@@ -51,7 +51,7 @@
 
     invoke-direct {v0, v1, v2}, Lcom/supercell/websocket/proxy/protocol/notifications/store/IdShopItemStatus$b;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/supercell/websocket/proxy/protocol/notifications/store/IdShopItemStatus$b;->f:Lcom/supercell/websocket/proxy/protocol/notifications/store/IdShopItemStatus$b;
+    sput-object v0, Lcom/supercell/websocket/proxy/protocol/notifications/store/IdShopItemStatus$b;->g:Lcom/supercell/websocket/proxy/protocol/notifications/store/IdShopItemStatus$b;
 
     .line 2
     new-instance v1, Lcom/supercell/websocket/proxy/protocol/notifications/store/IdShopItemStatus$b;
@@ -62,7 +62,7 @@
 
     invoke-direct {v1, v3, v4}, Lcom/supercell/websocket/proxy/protocol/notifications/store/IdShopItemStatus$b;-><init>(Ljava/lang/String;I)V
 
-    sput-object v1, Lcom/supercell/websocket/proxy/protocol/notifications/store/IdShopItemStatus$b;->g:Lcom/supercell/websocket/proxy/protocol/notifications/store/IdShopItemStatus$b;
+    sput-object v1, Lcom/supercell/websocket/proxy/protocol/notifications/store/IdShopItemStatus$b;->h:Lcom/supercell/websocket/proxy/protocol/notifications/store/IdShopItemStatus$b;
 
     .line 3
     new-instance v3, Lcom/supercell/websocket/proxy/protocol/notifications/store/IdShopItemStatus$b;
@@ -73,7 +73,7 @@
 
     invoke-direct {v3, v5, v6}, Lcom/supercell/websocket/proxy/protocol/notifications/store/IdShopItemStatus$b;-><init>(Ljava/lang/String;I)V
 
-    sput-object v3, Lcom/supercell/websocket/proxy/protocol/notifications/store/IdShopItemStatus$b;->h:Lcom/supercell/websocket/proxy/protocol/notifications/store/IdShopItemStatus$b;
+    sput-object v3, Lcom/supercell/websocket/proxy/protocol/notifications/store/IdShopItemStatus$b;->i:Lcom/supercell/websocket/proxy/protocol/notifications/store/IdShopItemStatus$b;
 
     .line 4
     new-instance v5, Lcom/supercell/websocket/proxy/protocol/notifications/store/IdShopItemStatus$b;
@@ -84,7 +84,7 @@
 
     invoke-direct {v5, v7, v8}, Lcom/supercell/websocket/proxy/protocol/notifications/store/IdShopItemStatus$b;-><init>(Ljava/lang/String;I)V
 
-    sput-object v5, Lcom/supercell/websocket/proxy/protocol/notifications/store/IdShopItemStatus$b;->i:Lcom/supercell/websocket/proxy/protocol/notifications/store/IdShopItemStatus$b;
+    sput-object v5, Lcom/supercell/websocket/proxy/protocol/notifications/store/IdShopItemStatus$b;->j:Lcom/supercell/websocket/proxy/protocol/notifications/store/IdShopItemStatus$b;
 
     .line 5
     new-instance v7, Lcom/supercell/websocket/proxy/protocol/notifications/store/IdShopItemStatus$b;
@@ -95,7 +95,7 @@
 
     invoke-direct {v7, v9, v10}, Lcom/supercell/websocket/proxy/protocol/notifications/store/IdShopItemStatus$b;-><init>(Ljava/lang/String;I)V
 
-    sput-object v7, Lcom/supercell/websocket/proxy/protocol/notifications/store/IdShopItemStatus$b;->j:Lcom/supercell/websocket/proxy/protocol/notifications/store/IdShopItemStatus$b;
+    sput-object v7, Lcom/supercell/websocket/proxy/protocol/notifications/store/IdShopItemStatus$b;->k:Lcom/supercell/websocket/proxy/protocol/notifications/store/IdShopItemStatus$b;
 
     .line 6
     new-instance v9, Lcom/supercell/websocket/proxy/protocol/notifications/store/IdShopItemStatus$b;
@@ -106,7 +106,7 @@
 
     invoke-direct {v9, v11, v12}, Lcom/supercell/websocket/proxy/protocol/notifications/store/IdShopItemStatus$b;-><init>(Ljava/lang/String;I)V
 
-    sput-object v9, Lcom/supercell/websocket/proxy/protocol/notifications/store/IdShopItemStatus$b;->k:Lcom/supercell/websocket/proxy/protocol/notifications/store/IdShopItemStatus$b;
+    sput-object v9, Lcom/supercell/websocket/proxy/protocol/notifications/store/IdShopItemStatus$b;->l:Lcom/supercell/websocket/proxy/protocol/notifications/store/IdShopItemStatus$b;
 
     const/4 v11, 0x6
 
@@ -125,7 +125,7 @@
     aput-object v9, v11, v12
 
     .line 7
-    sput-object v11, Lcom/supercell/websocket/proxy/protocol/notifications/store/IdShopItemStatus$b;->l:[Lcom/supercell/websocket/proxy/protocol/notifications/store/IdShopItemStatus$b;
+    sput-object v11, Lcom/supercell/websocket/proxy/protocol/notifications/store/IdShopItemStatus$b;->m:[Lcom/supercell/websocket/proxy/protocol/notifications/store/IdShopItemStatus$b;
 
     return-void
 .end method
@@ -160,7 +160,7 @@
 .method public static values()[Lcom/supercell/websocket/proxy/protocol/notifications/store/IdShopItemStatus$b;
     .locals 1
 
-    sget-object v0, Lcom/supercell/websocket/proxy/protocol/notifications/store/IdShopItemStatus$b;->l:[Lcom/supercell/websocket/proxy/protocol/notifications/store/IdShopItemStatus$b;
+    sget-object v0, Lcom/supercell/websocket/proxy/protocol/notifications/store/IdShopItemStatus$b;->m:[Lcom/supercell/websocket/proxy/protocol/notifications/store/IdShopItemStatus$b;
 
     invoke-virtual {v0}, [Lcom/supercell/websocket/proxy/protocol/notifications/store/IdShopItemStatus$b;->clone()Ljava/lang/Object;
 

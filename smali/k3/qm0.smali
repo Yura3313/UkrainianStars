@@ -1,9 +1,6 @@
 .class public final Lk3/qm0;
-.super Lk3/wl0;
+.super Lk3/yl0;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
-
-# interfaces
-.implements Ljava/util/concurrent/RunnableFuture;
 
 
 # annotations
@@ -12,68 +9,57 @@
         "<V:",
         "Ljava/lang/Object;",
         ">",
-        "Lk3/wl0<",
-        "TV;>;",
-        "Ljava/util/concurrent/RunnableFuture<",
+        "Lk3/yl0<",
         "TV;>;"
     }
 .end annotation
 
 
 # instance fields
-.field public volatile m:Lk3/dm0;
+.field public n:Lk3/hm0;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lk3/dm0<",
+            "Lk3/hm0<",
+            "TV;>;"
+        }
+    .end annotation
+
+    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+    .end annotation
+.end field
+
+.field public o:Ljava/util/concurrent/ScheduledFuture;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/concurrent/ScheduledFuture<",
             "*>;"
         }
+    .end annotation
+
+    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
     .end annotation
 .end field
 
 
 # direct methods
-.method public constructor <init>(Ljava/util/concurrent/Callable;)V
-    .locals 1
+.method public constructor <init>(Lk3/hm0;)V
+    .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Ljava/util/concurrent/Callable<",
+            "Lk3/hm0<",
             "TV;>;)V"
         }
     .end annotation
 
     .line 1
-    invoke-direct {p0}, Lk3/wl0;-><init>()V
+    invoke-direct {p0}, Lk3/yl0;-><init>()V
 
     .line 2
-    new-instance v0, Lk3/sm0;
-
-    invoke-direct {v0, p0, p1}, Lk3/sm0;-><init>(Lk3/qm0;Ljava/util/concurrent/Callable;)V
-
-    iput-object v0, p0, Lk3/qm0;->m:Lk3/dm0;
-
-    return-void
-.end method
-
-.method public constructor <init>(Lk3/ll0;)V
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lk3/ll0<",
-            "TV;>;)V"
-        }
-    .end annotation
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 3
-    invoke-direct {p0}, Lk3/wl0;-><init>()V
-
-    .line 4
-    new-instance v0, Lk3/tm0;
-
-    invoke-direct {v0, p0, p1}, Lk3/tm0;-><init>(Lk3/qm0;Lk3/ll0;)V
-
-    iput-object v0, p0, Lk3/qm0;->m:Lk3/dm0;
+    iput-object p1, p0, Lk3/qm0;->n:Lk3/hm0;
 
     return-void
 .end method
@@ -81,87 +67,117 @@
 
 # virtual methods
 .method public final b()V
-    .locals 1
+    .locals 2
 
     .line 1
-    invoke-virtual {p0}, Lk3/bl0;->l()Z
+    iget-object v0, p0, Lk3/qm0;->n:Lk3/hm0;
 
-    move-result v0
-
-    if-eqz v0, :cond_0
+    invoke-virtual {p0, v0}, Lk3/dl0;->g(Ljava/util/concurrent/Future;)V
 
     .line 2
-    iget-object v0, p0, Lk3/qm0;->m:Lk3/dm0;
+    iget-object v0, p0, Lk3/qm0;->o:Ljava/util/concurrent/ScheduledFuture;
 
     if-eqz v0, :cond_0
 
+    const/4 v1, 0x0
+
     .line 3
-    invoke-virtual {v0}, Lk3/dm0;->a()V
+    invoke-interface {v0, v1}, Ljava/util/concurrent/Future;->cancel(Z)Z
 
     :cond_0
     const/4 v0, 0x0
 
     .line 4
-    iput-object v0, p0, Lk3/qm0;->m:Lk3/dm0;
+    iput-object v0, p0, Lk3/qm0;->n:Lk3/hm0;
+
+    .line 5
+    iput-object v0, p0, Lk3/qm0;->o:Ljava/util/concurrent/ScheduledFuture;
 
     return-void
 .end method
 
 .method public final h()Ljava/lang/String;
-    .locals 4
+    .locals 6
 
     .line 1
-    iget-object v0, p0, Lk3/qm0;->m:Lk3/dm0;
-
-    if-eqz v0, :cond_0
+    iget-object v0, p0, Lk3/qm0;->n:Lk3/hm0;
 
     .line 2
+    iget-object v1, p0, Lk3/qm0;->o:Ljava/util/concurrent/ScheduledFuture;
+
+    if-eqz v0, :cond_1
+
+    .line 3
     invoke-static {v0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v0
 
     invoke-virtual {v0}, Ljava/lang/String;->length()I
 
-    move-result v1
+    move-result v2
 
-    add-int/lit8 v1, v1, 0x7
+    add-int/lit8 v2, v2, 0xe
 
-    const-string v2, "task=["
+    const-string v3, "inputFuture=["
 
-    const-string v3, "]"
-
-    .line 3
-    invoke-static {v1, v2, v0, v3}, Landroid/support/v4/media/b;->a(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v0
-
-    return-object v0
+    const-string v4, "]"
 
     .line 4
-    :cond_0
-    invoke-super {p0}, Lk3/bl0;->h()Ljava/lang/String;
+    invoke-static {v2, v3, v0, v4}, Li1/j;->a(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
-    return-object v0
-.end method
+    if-eqz v1, :cond_0
 
-.method public final run()V
-    .locals 1
+    .line 5
+    sget-object v2, Ljava/util/concurrent/TimeUnit;->MILLISECONDS:Ljava/util/concurrent/TimeUnit;
 
-    .line 1
-    iget-object v0, p0, Lk3/qm0;->m:Lk3/dm0;
+    invoke-interface {v1, v2}, Ljava/util/concurrent/Delayed;->getDelay(Ljava/util/concurrent/TimeUnit;)J
 
-    if-eqz v0, :cond_0
+    move-result-wide v1
 
-    .line 2
-    invoke-virtual {v0}, Lk3/dm0;->run()V
+    const-wide/16 v3, 0x0
+
+    cmp-long v5, v1, v3
+
+    if-lez v5, :cond_0
+
+    .line 6
+    invoke-static {v0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/String;->length()I
+
+    move-result v3
+
+    add-int/lit8 v3, v3, 0x2b
+
+    new-instance v4, Ljava/lang/StringBuilder;
+
+    invoke-direct {v4, v3}, Ljava/lang/StringBuilder;-><init>(I)V
+
+    invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v0, ", remaining delay=["
+
+    invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v4, v1, v2}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
+    const-string v0, " ms]"
+
+    invoke-virtual {v4, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
 
     :cond_0
+    return-object v0
+
+    :cond_1
     const/4 v0, 0x0
 
-    .line 3
-    iput-object v0, p0, Lk3/qm0;->m:Lk3/dm0;
-
-    return-void
+    return-object v0
 .end method

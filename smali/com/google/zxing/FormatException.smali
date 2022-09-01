@@ -4,7 +4,7 @@
 
 
 # static fields
-.field public static final h:Lcom/google/zxing/FormatException;
+.field public static final i:Lcom/google/zxing/FormatException;
 
 
 # direct methods
@@ -17,9 +17,9 @@
     invoke-direct {v0}, Lcom/google/zxing/FormatException;-><init>()V
 
     .line 2
-    sput-object v0, Lcom/google/zxing/FormatException;->h:Lcom/google/zxing/FormatException;
+    sput-object v0, Lcom/google/zxing/FormatException;->i:Lcom/google/zxing/FormatException;
 
-    sget-object v1, Lcom/google/zxing/ReaderException;->g:[Ljava/lang/StackTraceElement;
+    sget-object v1, Lcom/google/zxing/ReaderException;->h:[Ljava/lang/StackTraceElement;
 
     invoke-virtual {v0, v1}, Ljava/lang/Throwable;->setStackTrace([Ljava/lang/StackTraceElement;)V
 
@@ -47,7 +47,7 @@
 .method public static a()Lcom/google/zxing/FormatException;
     .locals 1
 
-    sget-boolean v0, Lcom/google/zxing/ReaderException;->f:Z
+    sget-boolean v0, Lcom/google/zxing/ReaderException;->g:Z
 
     if-eqz v0, :cond_0
 
@@ -58,7 +58,7 @@
     return-object v0
 
     :cond_0
-    sget-object v0, Lcom/google/zxing/FormatException;->h:Lcom/google/zxing/FormatException;
+    sget-object v0, Lcom/google/zxing/FormatException;->i:Lcom/google/zxing/FormatException;
 
     return-object v0
 .end method

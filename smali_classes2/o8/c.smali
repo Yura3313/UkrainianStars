@@ -4,17 +4,17 @@
 
 
 # instance fields
-.field public A:Lq8/b;
+.field public final A:Ljava/lang/String;
 
-.field public B:I
+.field public B:Lq8/b;
 
 .field public C:I
 
-.field public final z:Ljava/lang/String;
+.field public D:I
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;JLo8/o;Ljava/lang/String;Lq8/b;)V
+.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;JLo8/p;Ljava/lang/String;Lq8/b;)V
     .locals 10
 
     move-object v8, p0
@@ -36,25 +36,25 @@
     move-object/from16 v6, p6
 
     .line 1
-    invoke-direct/range {v0 .. v7}, Lo8/j;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;JLo8/o;I)V
+    invoke-direct/range {v0 .. v7}, Lo8/j;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;JLo8/p;I)V
 
     .line 2
-    iput-object v9, v8, Lo8/c;->A:Lq8/b;
+    iput-object v9, v8, Lo8/c;->B:Lq8/b;
 
     move-object/from16 v0, p7
 
     .line 3
-    iput-object v0, v8, Lo8/c;->z:Ljava/lang/String;
+    iput-object v0, v8, Lo8/c;->A:Ljava/lang/String;
 
     const/4 v0, 0x0
 
     .line 4
-    iput v0, v8, Lo8/c;->C:I
+    iput v0, v8, Lo8/c;->D:I
 
     .line 5
-    iget-object v0, v9, Lq8/b;->h:Ljava/lang/String;
+    iget-object v0, v9, Lq8/b;->i:Ljava/lang/String;
 
-    invoke-static {v0}, Lcom/google/android/play/core/appupdate/g;->b(Ljava/lang/String;)Z
+    invoke-static {v0}, La5/b0;->d(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -63,17 +63,17 @@
     const/4 v0, 0x4
 
     .line 6
-    iput v0, v8, Lo8/c;->B:I
+    iput v0, v8, Lo8/c;->C:I
 
     goto :goto_0
 
     .line 7
     :cond_0
-    iget-object v0, v8, Lo8/c;->A:Lq8/b;
+    iget-object v0, v8, Lo8/c;->B:Lq8/b;
 
-    iget-object v0, v0, Lq8/b;->k:Ljava/lang/String;
+    iget-object v0, v0, Lq8/b;->l:Ljava/lang/String;
 
-    invoke-static {v0}, Lk3/sp;->f(Ljava/lang/String;)Z
+    invoke-static {v0}, Lt5/a;->f(Ljava/lang/String;)Z
 
     move-result v0
 
@@ -82,7 +82,7 @@
     const/4 v0, 0x3
 
     .line 8
-    iput v0, v8, Lo8/c;->B:I
+    iput v0, v8, Lo8/c;->C:I
 
     goto :goto_0
 
@@ -90,7 +90,7 @@
     const/4 v0, 0x1
 
     .line 9
-    iput v0, v8, Lo8/c;->B:I
+    iput v0, v8, Lo8/c;->C:I
 
     :goto_0
     return-void
@@ -103,7 +103,7 @@
     invoke-direct {p0, p1}, Lo8/j;-><init>(Lo8/j;)V
 
     .line 11
-    iget-object v0, p1, Lo8/c;->A:Lq8/b;
+    iget-object v0, p1, Lo8/c;->B:Lq8/b;
 
     .line 12
     new-instance v1, Lq8/b;
@@ -111,22 +111,22 @@
     invoke-direct {v1, v0}, Lq8/b;-><init>(Lq8/b;)V
 
     .line 13
-    iput-object v1, p0, Lo8/c;->A:Lq8/b;
+    iput-object v1, p0, Lo8/c;->B:Lq8/b;
 
     .line 14
-    iget v0, p1, Lo8/c;->B:I
-
-    iput v0, p0, Lo8/c;->B:I
-
-    .line 15
     iget v0, p1, Lo8/c;->C:I
 
     iput v0, p0, Lo8/c;->C:I
 
-    .line 16
-    iget-object p1, p1, Lo8/c;->z:Ljava/lang/String;
+    .line 15
+    iget v0, p1, Lo8/c;->D:I
 
-    iput-object p1, p0, Lo8/c;->z:Ljava/lang/String;
+    iput v0, p0, Lo8/c;->D:I
+
+    .line 16
+    iget-object p1, p1, Lo8/c;->A:Ljava/lang/String;
+
+    iput-object p1, p0, Lo8/c;->A:Ljava/lang/String;
 
     return-void
 .end method
@@ -143,7 +143,7 @@
     return-object v0
 .end method
 
-.method public final b()Lo8/y;
+.method public final b()Lo8/z;
     .locals 1
 
     new-instance v0, Lo8/c;
@@ -153,11 +153,11 @@
     return-object v0
 .end method
 
-.method public final k(Lo8/y;)V
+.method public final k(Lo8/z;)V
     .locals 1
 
     .line 1
-    invoke-super {p0, p1}, Lo8/y;->k(Lo8/y;)V
+    invoke-super {p0, p1}, Lo8/z;->k(Lo8/z;)V
 
     .line 2
     instance-of v0, p1, Lo8/c;
@@ -168,9 +168,9 @@
     check-cast p1, Lo8/c;
 
     .line 4
-    iget-object p1, p1, Lo8/c;->A:Lq8/b;
+    iget-object p1, p1, Lo8/c;->B:Lq8/b;
 
-    iput-object p1, p0, Lo8/c;->A:Lq8/b;
+    iput-object p1, p0, Lo8/c;->B:Lq8/b;
 
     :cond_0
     return-void
@@ -190,7 +190,7 @@
     .locals 6
 
     .line 1
-    iget v0, p0, Lo8/c;->C:I
+    iget v0, p0, Lo8/c;->D:I
 
     const/4 v1, 0x3
 
@@ -200,7 +200,7 @@
 
     .line 2
     :cond_0
-    iget v1, p0, Lo8/c;->B:I
+    iget v1, p0, Lo8/c;->C:I
 
     const/4 v2, 0x1
 
@@ -209,7 +209,7 @@
     add-int/2addr v0, v2
 
     .line 3
-    iput v0, p0, Lo8/c;->C:I
+    iput v0, p0, Lo8/c;->D:I
 
     const/4 v0, 0x2
 
@@ -219,11 +219,11 @@
     .line 5
     new-instance v0, Lt9/a;
 
-    iget-object v1, p0, Lo8/c;->A:Lq8/b;
+    iget-object v1, p0, Lo8/c;->B:Lq8/b;
 
-    iget-object v3, v1, Lq8/b;->h:Ljava/lang/String;
+    iget-object v3, v1, Lq8/b;->i:Ljava/lang/String;
 
-    iget-boolean v1, v1, Lq8/b;->i:Z
+    iget-boolean v1, v1, Lq8/b;->j:Z
 
     const/4 v4, 0x0
 
@@ -238,11 +238,11 @@
 
     new-instance v3, Lc8/a;
 
-    iget-object v4, p0, Lo8/y;->t:La8/f;
+    iget-object v4, p0, Lo8/z;->u:La8/f;
 
-    iget-object v5, p0, Lo8/c;->A:Lq8/b;
+    iget-object v5, p0, Lo8/c;->B:Lq8/b;
 
-    iget-object v5, v5, Lq8/b;->h:Ljava/lang/String;
+    iget-object v5, v5, Lq8/b;->i:Ljava/lang/String;
 
     invoke-direct {v3, v4, p1}, Lc8/a;-><init>(La8/f;Le8/s;)V
 
@@ -263,10 +263,10 @@
     .locals 0
 
     .line 1
-    iput p1, p0, Lo8/c;->B:I
+    iput p1, p0, Lo8/c;->C:I
 
     .line 2
-    invoke-virtual {p0}, Lo8/y;->l()V
+    invoke-virtual {p0}, Lo8/z;->l()V
 
     return-void
 .end method

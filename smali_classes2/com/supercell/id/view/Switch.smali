@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field public T:Landroid/widget/CompoundButton$OnCheckedChangeListener;
+.field public U:Landroid/widget/CompoundButton$OnCheckedChangeListener;
 
 
 # direct methods
@@ -28,7 +28,7 @@
 
     const-string v2, "context"
 
-    invoke-static {v1, v2}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 2
     invoke-direct/range {p0 .. p3}, Landroidx/appcompat/widget/SwitchCompat;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
@@ -95,7 +95,7 @@
     aput v6, v3, v4
 
     .line 12
-    sget-object v13, Luc/m;->b:Luc/m;
+    sget-object v13, Luc/l;->b:Luc/l;
 
     invoke-virtual/range {p0 .. p0}, Landroid/view/View;->getResources()Landroid/content/res/Resources;
 
@@ -103,12 +103,12 @@
 
     const-string v14, "resources"
 
-    invoke-static {v7, v14}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v7, v14}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     int-to-float v15, v4
 
     .line 13
-    sget v6, La5/g0;->a:F
+    sget v6, La5/e0;->g:F
 
     mul-float v9, v15, v6
 
@@ -131,7 +131,7 @@
     move/from16 v12, v16
 
     .line 14
-    invoke-virtual/range {v6 .. v12}, Luc/m;->a(Landroid/content/res/Resources;IFFFF)Landroid/graphics/drawable/Drawable;
+    invoke-virtual/range {v6 .. v12}, Luc/l;->a(Landroid/content/res/Resources;IFFFF)Landroid/graphics/drawable/Drawable;
 
     move-result-object v6
 
@@ -144,10 +144,10 @@
 
     move-result-object v4
 
-    invoke-static {v4, v14}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v4, v14}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 16
-    sget v3, La5/g0;->a:F
+    sget v3, La5/e0;->g:F
 
     mul-float v6, v15, v3
 
@@ -160,7 +160,7 @@
     move v7, v8
 
     .line 17
-    invoke-virtual/range {v3 .. v9}, Luc/m;->a(Landroid/content/res/Resources;IFFFF)Landroid/graphics/drawable/Drawable;
+    invoke-virtual/range {v3 .. v9}, Luc/l;->a(Landroid/content/res/Resources;IFFFF)Landroid/graphics/drawable/Drawable;
 
     move-result-object v2
 
@@ -191,7 +191,7 @@
     :try_start_0
     const-class p1, Landroidx/appcompat/widget/SwitchCompat;
 
-    const-string p2, "D"
+    const-string p2, "E"
 
     invoke-virtual {p1, p2}, Ljava/lang/Class;->getDeclaredField(Ljava/lang/String;)Ljava/lang/reflect/Field;
 
@@ -199,7 +199,7 @@
 
     const-string p2, "SwitchCompat::class.java\u2026aredField(\"mSwitchWidth\")"
 
-    invoke-static {p1, p2}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p2}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/4 p2, 0x1
 
@@ -239,7 +239,7 @@
 .method public setOnCheckedChangeListener(Landroid/widget/CompoundButton$OnCheckedChangeListener;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/view/Switch;->T:Landroid/widget/CompoundButton$OnCheckedChangeListener;
+    iput-object p1, p0, Lcom/supercell/id/view/Switch;->U:Landroid/widget/CompoundButton$OnCheckedChangeListener;
 
     return-void
 .end method

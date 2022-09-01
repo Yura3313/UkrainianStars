@@ -29,11 +29,11 @@
     .end annotation
 .end field
 
-.field public static final g:Lcom/google/android/gms/drive/metadata/internal/AppVisibleCustomProperties;
+.field public static final h:Lcom/google/android/gms/drive/metadata/internal/AppVisibleCustomProperties;
 
 
 # instance fields
-.field public final f:Ljava/util/ArrayList;
+.field public final g:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
@@ -70,7 +70,7 @@
     invoke-direct {v1, v0}, Lcom/google/android/gms/drive/metadata/internal/AppVisibleCustomProperties;-><init>(Ljava/util/Collection;)V
 
     .line 4
-    sput-object v1, Lcom/google/android/gms/drive/metadata/internal/AppVisibleCustomProperties;->g:Lcom/google/android/gms/drive/metadata/internal/AppVisibleCustomProperties;
+    sput-object v1, Lcom/google/android/gms/drive/metadata/internal/AppVisibleCustomProperties;->h:Lcom/google/android/gms/drive/metadata/internal/AppVisibleCustomProperties;
 
     return-void
 .end method
@@ -97,7 +97,7 @@
 
     invoke-direct {v0, p1}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
 
-    iput-object v0, p0, Lcom/google/android/gms/drive/metadata/internal/AppVisibleCustomProperties;->f:Ljava/util/ArrayList;
+    iput-object v0, p0, Lcom/google/android/gms/drive/metadata/internal/AppVisibleCustomProperties;->g:Ljava/util/ArrayList;
 
     return-void
 .end method
@@ -119,7 +119,7 @@
     .line 1
     new-instance v0, Ljava/util/HashMap;
 
-    iget-object v1, p0, Lcom/google/android/gms/drive/metadata/internal/AppVisibleCustomProperties;->f:Ljava/util/ArrayList;
+    iget-object v1, p0, Lcom/google/android/gms/drive/metadata/internal/AppVisibleCustomProperties;->g:Ljava/util/ArrayList;
 
     invoke-virtual {v1}, Ljava/util/ArrayList;->size()I
 
@@ -128,7 +128,7 @@
     invoke-direct {v0, v1}, Ljava/util/HashMap;-><init>(I)V
 
     .line 2
-    iget-object v1, p0, Lcom/google/android/gms/drive/metadata/internal/AppVisibleCustomProperties;->f:Ljava/util/ArrayList;
+    iget-object v1, p0, Lcom/google/android/gms/drive/metadata/internal/AppVisibleCustomProperties;->g:Ljava/util/ArrayList;
 
     invoke-virtual {v1}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
@@ -148,10 +148,10 @@
     check-cast v2, Lcom/google/android/gms/drive/metadata/internal/zzc;
 
     .line 3
-    iget-object v3, v2, Lcom/google/android/gms/drive/metadata/internal/zzc;->f:Lcom/google/android/gms/drive/metadata/CustomPropertyKey;
+    iget-object v3, v2, Lcom/google/android/gms/drive/metadata/internal/zzc;->g:Lcom/google/android/gms/drive/metadata/CustomPropertyKey;
 
     .line 4
-    iget-object v2, v2, Lcom/google/android/gms/drive/metadata/internal/zzc;->g:Ljava/lang/String;
+    iget-object v2, v2, Lcom/google/android/gms/drive/metadata/internal/zzc;->h:Ljava/lang/String;
 
     .line 5
     invoke-virtual {v0, v3, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
@@ -223,7 +223,7 @@
     new-array v0, v0, [Ljava/lang/Object;
 
     .line 1
-    iget-object v1, p0, Lcom/google/android/gms/drive/metadata/internal/AppVisibleCustomProperties;->f:Ljava/util/ArrayList;
+    iget-object v1, p0, Lcom/google/android/gms/drive/metadata/internal/AppVisibleCustomProperties;->g:Ljava/util/ArrayList;
 
     const/4 v2, 0x0
 
@@ -248,7 +248,7 @@
         }
     .end annotation
 
-    iget-object v0, p0, Lcom/google/android/gms/drive/metadata/internal/AppVisibleCustomProperties;->f:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/google/android/gms/drive/metadata/internal/AppVisibleCustomProperties;->g:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
 
@@ -268,7 +268,7 @@
     move-result p2
 
     .line 2
-    iget-object v0, p0, Lcom/google/android/gms/drive/metadata/internal/AppVisibleCustomProperties;->f:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/google/android/gms/drive/metadata/internal/AppVisibleCustomProperties;->g:Ljava/util/ArrayList;
 
     const/4 v1, 0x2
 

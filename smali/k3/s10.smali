@@ -1,135 +1,244 @@
-.class public final synthetic Lk3/s10;
+.class public final Lk3/s10;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Ljava/util/concurrent/Callable;
+.implements Lk3/mv0;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Lk3/mv0<",
+        "Lk3/i10;",
+        ">;"
+    }
+.end annotation
 
 
 # instance fields
-.field public final a:Lk3/t10;
+.field public final a:Lk3/qv0;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lk3/qv0<",
+            "Ljava/util/concurrent/Executor;",
+            ">;"
+        }
+    .end annotation
+.end field
 
-.field public final b:Lcom/google/android/gms/internal/ads/zzasp;
+.field public final b:Lk3/qv0;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lk3/qv0<",
+            "Landroid/content/Context;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public final c:Lk3/qv0;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lk3/qv0<",
+            "Ljava/lang/ref/WeakReference<",
+            "Landroid/content/Context;",
+            ">;>;"
+        }
+    .end annotation
+.end field
+
+.field public final d:Lk3/qv0;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lk3/qv0<",
+            "Lk3/c00;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public final e:Lk3/qv0;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lk3/qv0<",
+            "Ljava/util/concurrent/ScheduledExecutorService;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public final f:Lk3/qv0;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lk3/qv0<",
+            "Lk3/a10;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public final g:Lk3/qv0;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lk3/qv0<",
+            "Lcom/google/android/gms/internal/ads/zzbbg;",
+            ">;"
+        }
+    .end annotation
+.end field
 
 
 # direct methods
-.method public constructor <init>(Lk3/t10;Lcom/google/android/gms/internal/ads/zzasp;)V
+.method public constructor <init>(Lk3/qv0;Lk3/qv0;Lk3/qv0;Lk3/qv0;Lk3/qv0;Lk3/qv0;Lk3/qv0;)V
     .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lk3/qv0<",
+            "Ljava/util/concurrent/Executor;",
+            ">;",
+            "Lk3/qv0<",
+            "Landroid/content/Context;",
+            ">;",
+            "Lk3/qv0<",
+            "Ljava/lang/ref/WeakReference<",
+            "Landroid/content/Context;",
+            ">;>;",
+            "Lk3/qv0<",
+            "Ljava/util/concurrent/Executor;",
+            ">;",
+            "Lk3/qv0<",
+            "Lk3/c00;",
+            ">;",
+            "Lk3/qv0<",
+            "Ljava/util/concurrent/ScheduledExecutorService;",
+            ">;",
+            "Lk3/qv0<",
+            "Lk3/a10;",
+            ">;",
+            "Lk3/qv0<",
+            "Lcom/google/android/gms/internal/ads/zzbbg;",
+            ">;)V"
+        }
+    .end annotation
 
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lk3/s10;->a:Lk3/t10;
+    .line 2
+    iput-object p1, p0, Lk3/s10;->a:Lk3/qv0;
 
-    iput-object p2, p0, Lk3/s10;->b:Lcom/google/android/gms/internal/ads/zzasp;
+    .line 3
+    iput-object p2, p0, Lk3/s10;->b:Lk3/qv0;
+
+    .line 4
+    iput-object p3, p0, Lk3/s10;->c:Lk3/qv0;
+
+    .line 5
+    iput-object p4, p0, Lk3/s10;->d:Lk3/qv0;
+
+    .line 6
+    iput-object p5, p0, Lk3/s10;->e:Lk3/qv0;
+
+    .line 7
+    iput-object p6, p0, Lk3/s10;->f:Lk3/qv0;
+
+    .line 8
+    iput-object p7, p0, Lk3/s10;->g:Lk3/qv0;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final call()Ljava/lang/Object;
-    .locals 5
-
-    iget-object v0, p0, Lk3/s10;->a:Lk3/t10;
-
-    iget-object v1, p0, Lk3/s10;->b:Lcom/google/android/gms/internal/ads/zzasp;
+.method public final synthetic get()Ljava/lang/Object;
+    .locals 10
 
     .line 1
-    iget-object v0, v0, Lk3/t10;->c:Lk3/p20;
+    iget-object v0, p0, Lk3/s10;->a:Lk3/qv0;
 
-    .line 2
-    iget-object v2, v0, Lk3/r20;->b:Ljava/lang/Object;
-
-    monitor-enter v2
-
-    .line 3
-    :try_start_0
-    iget-boolean v3, v0, Lk3/r20;->c:Z
-
-    if-eqz v3, :cond_0
-
-    .line 4
-    iget-object v0, v0, Lk3/r20;->a:Lk3/pd;
-
-    monitor-exit v2
-
-    goto :goto_0
-
-    :cond_0
-    const/4 v3, 0x1
-
-    .line 5
-    iput-boolean v3, v0, Lk3/r20;->c:Z
-
-    .line 6
-    iput-object v1, v0, Lk3/r20;->e:Lcom/google/android/gms/internal/ads/zzasp;
-
-    .line 7
-    iget-object v1, v0, Lk3/r20;->f:Lk3/b8;
-
-    invoke-virtual {v1}, Lcom/google/android/gms/common/internal/BaseGmsClient;->o()V
-
-    .line 8
-    iget-object v1, v0, Lk3/r20;->a:Lk3/pd;
-
-    new-instance v4, Lk3/a5;
-
-    invoke-direct {v4, v0, v3}, Lk3/a5;-><init>(Ljava/lang/Object;I)V
-
-    .line 9
-    sget-object v3, Lk3/jd;->f:Lk3/nd;
-
-    .line 10
-    invoke-virtual {v1, v4, v3}, Lk3/pd;->c(Ljava/lang/Runnable;Ljava/util/concurrent/Executor;)V
-
-    .line 11
-    iget-object v0, v0, Lk3/r20;->a:Lk3/pd;
-
-    monitor-exit v2
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    .line 12
-    :goto_0
-    sget-object v1, Lk3/q;->B2:Lk3/j;
-
-    .line 13
-    sget-object v2, Lk3/l51;->j:Lk3/l51;
-
-    iget-object v2, v2, Lk3/l51;->f:Lk3/n;
-
-    .line 14
-    invoke-virtual {v2, v1}, Lk3/n;->a(Lk3/h;)Ljava/lang/Object;
-
-    move-result-object v1
-
-    .line 15
-    check-cast v1, Ljava/lang/Integer;
-
-    invoke-virtual {v1}, Ljava/lang/Integer;->intValue()I
-
-    move-result v1
-
-    int-to-long v1, v1
-
-    sget-object v3, Ljava/util/concurrent/TimeUnit;->SECONDS:Ljava/util/concurrent/TimeUnit;
-
-    invoke-virtual {v0, v1, v2, v3}, Lk3/pd;->get(JLjava/util/concurrent/TimeUnit;)Ljava/lang/Object;
+    invoke-interface {v0}, Lk3/qv0;->get()Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, Ljava/io/InputStream;
+    move-object v2, v0
+
+    check-cast v2, Ljava/util/concurrent/Executor;
+
+    iget-object v0, p0, Lk3/s10;->b:Lk3/qv0;
+
+    invoke-interface {v0}, Lk3/qv0;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    move-object v3, v0
+
+    check-cast v3, Landroid/content/Context;
+
+    iget-object v0, p0, Lk3/s10;->c:Lk3/qv0;
+
+    invoke-interface {v0}, Lk3/qv0;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    move-object v4, v0
+
+    check-cast v4, Ljava/lang/ref/WeakReference;
+
+    .line 2
+    invoke-static {}, Lk3/ei0;->a()Lk3/jm0;
+
+    move-result-object v5
+
+    .line 3
+    iget-object v0, p0, Lk3/s10;->d:Lk3/qv0;
+
+    invoke-interface {v0}, Lk3/qv0;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    move-object v6, v0
+
+    check-cast v6, Lk3/c00;
+
+    iget-object v0, p0, Lk3/s10;->e:Lk3/qv0;
+
+    invoke-interface {v0}, Lk3/qv0;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    move-object v7, v0
+
+    check-cast v7, Ljava/util/concurrent/ScheduledExecutorService;
+
+    iget-object v0, p0, Lk3/s10;->f:Lk3/qv0;
+
+    invoke-interface {v0}, Lk3/qv0;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    move-object v8, v0
+
+    check-cast v8, Lk3/a10;
+
+    iget-object v0, p0, Lk3/s10;->g:Lk3/qv0;
+
+    invoke-interface {v0}, Lk3/qv0;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    move-object v9, v0
+
+    check-cast v9, Lcom/google/android/gms/internal/ads/zzbbg;
+
+    .line 4
+    new-instance v0, Lk3/i10;
+
+    move-object v1, v0
+
+    invoke-direct/range {v1 .. v9}, Lk3/i10;-><init>(Ljava/util/concurrent/Executor;Landroid/content/Context;Ljava/lang/ref/WeakReference;Ljava/util/concurrent/Executor;Lk3/c00;Ljava/util/concurrent/ScheduledExecutorService;Lk3/a10;Lcom/google/android/gms/internal/ads/zzbbg;)V
 
     return-object v0
-
-    :catchall_0
-    move-exception v0
-
-    .line 16
-    :try_start_1
-    monitor-exit v2
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
-
-    throw v0
 .end method

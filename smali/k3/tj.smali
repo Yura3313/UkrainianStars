@@ -3,181 +3,155 @@
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lk3/xs;
+.implements Lk3/mv0;
 
 
-# static fields
-.field public static final f:Lk3/rj;
+# instance fields
+.field public final synthetic a:I
 
-.field public static final g:Lcom/google/android/gms/internal/ads/i;
-
-.field public static final h:Lk3/tj;
-
-.field public static final i:Lk3/gl;
-
-.field public static final j:Lk3/el;
+.field public final b:Ljava/lang/Object;
 
 
 # direct methods
-.method static synthetic constructor <clinit>()V
-    .locals 2
-
-    .line 1
-    new-instance v0, Lk3/rj;
-
-    const/4 v1, 0x0
-
-    invoke-direct {v0, v1}, Lk3/rj;-><init>(I)V
-
-    sput-object v0, Lk3/tj;->f:Lk3/rj;
-
-    .line 2
-    new-instance v0, Lcom/google/android/gms/internal/ads/i;
-
-    invoke-direct {v0}, Lcom/google/android/gms/internal/ads/i;-><init>()V
-
-    sput-object v0, Lk3/tj;->g:Lcom/google/android/gms/internal/ads/i;
-
-    .line 3
-    new-instance v0, Lk3/tj;
-
-    invoke-direct {v0}, Lk3/tj;-><init>()V
-
-    sput-object v0, Lk3/tj;->h:Lk3/tj;
-
-    .line 4
-    new-instance v0, Lk3/gl;
-
-    const/4 v1, 0x2
-
-    invoke-direct {v0, v1}, Lk3/gl;-><init>(I)V
-
-    sput-object v0, Lk3/tj;->i:Lk3/gl;
-
-    .line 5
-    new-instance v0, Lk3/el;
-
-    const/4 v1, 0x2
-
-    invoke-direct {v0, v1}, Lk3/el;-><init>(I)V
-
-    sput-object v0, Lk3/tj;->j:Lk3/el;
-
-    return-void
-.end method
-
-.method public synthetic constructor <init>()V
+.method public synthetic constructor <init>(Ljava/lang/Object;I)V
     .locals 0
+
+    iput p2, p0, Lk3/tj;->a:I
+
+    iput-object p1, p0, Lk3/tj;->b:Ljava/lang/Object;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
-.method public static a(Landroid/content/Context;)Z
-    .locals 3
+.method public static a(Lk3/qv0;)Lk3/tj;
+    .locals 2
 
-    const/4 v0, 0x0
+    new-instance v0, Lk3/tj;
 
-    :try_start_0
-    const-string v1, "connectivity"
+    const/4 v1, 0x2
 
-    .line 1
-    invoke-virtual {p0, v1}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-direct {v0, p0, v1}, Lk3/tj;-><init>(Ljava/lang/Object;I)V
 
-    move-result-object p0
-
-    check-cast p0, Landroid/net/ConnectivityManager;
-
-    .line 2
-    invoke-virtual {p0}, Landroid/net/ConnectivityManager;->getActiveNetworkInfo()Landroid/net/NetworkInfo;
-
-    move-result-object p0
-
-    if-eqz p0, :cond_0
-
-    .line 3
-    invoke-virtual {p0}, Landroid/net/NetworkInfo;->isConnected()Z
-
-    move-result p0
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
-
-    if-eqz p0, :cond_0
-
-    const/4 p0, 0x1
-
-    const/4 v0, 0x1
-
-    goto :goto_0
-
-    :catch_0
-    move-exception p0
-
-    const-string v1, "Helpshift_ConnectUtil"
-
-    const-string v2, "Exception while getting system connectivity service"
-
-    .line 4
-    invoke-static {v1, v2, p0}, Landroidx/savedstate/d;->g(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
-
-    :cond_0
-    :goto_0
-    return v0
+    return-object v0
 .end method
 
-.method public static final b(Lcom/supercell/id/ui/MainActivity;Landroid/view/View;)V
-    .locals 4
+.method public static b(Lk3/qv0;)Lk3/tj;
+    .locals 2
 
-    const-string v0, "view"
+    new-instance v0, Lk3/tj;
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    const/4 v1, 0x1
 
-    .line 1
-    sget-object v0, Lwc/x;->x0:Lwc/x$a;
+    invoke-direct {v0, p0, v1}, Lk3/tj;-><init>(Ljava/lang/Object;I)V
 
-    invoke-static {p1}, Lae/z2;->b(Landroid/view/View;)Landroid/graphics/Rect;
-
-    move-result-object p1
-
-    sget v1, Lcom/supercell/id/R$layout;->my_code_info_dialog_content:I
-
-    invoke-virtual {p0}, Landroidx/appcompat/app/AppCompatActivity;->getResources()Landroid/content/res/Resources;
-
-    move-result-object v2
-
-    const-string v3, "resources"
-
-    invoke-static {v2, v3}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
-
-    invoke-static {v2}, Lcom/android/billingclient/api/c0;->k(Landroid/content/res/Resources;)Z
-
-    move-result v2
-
-    invoke-virtual {v0, p1, v1, v2}, Lwc/x$a;->a(Landroid/graphics/Rect;IZ)Lwc/x;
-
-    move-result-object p1
-
-    sget-object v0, Lcom/supercell/id/ui/MainActivity;->s:Ljava/lang/ref/WeakReference;
-
-    const-string v0, "popupDialog"
-
-    .line 2
-    invoke-virtual {p0, p1, v0}, Lcom/supercell/id/ui/MainActivity;->J(Lwc/e;Ljava/lang/String;)V
-
-    return-void
+    return-object v0
 .end method
 
 
 # virtual methods
-.method public d(Ljava/lang/Object;)V
-    .locals 0
+.method public final get()Ljava/lang/Object;
+    .locals 3
+
+    iget v0, p0, Lk3/tj;->a:I
+
+    packed-switch v0, :pswitch_data_0
+
+    goto :goto_0
 
     .line 1
-    check-cast p1, Lj1/l;
+    :pswitch_0
+    iget-object v0, p0, Lk3/tj;->b:Ljava/lang/Object;
+
+    check-cast v0, Lk3/qv0;
+
+    invoke-interface {v0}, Lk3/qv0;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lk3/vg0;
 
     .line 2
-    invoke-interface {p1}, Lj1/l;->I()V
+    new-instance v1, Lk3/n90;
 
-    return-void
+    invoke-direct {v1, v0}, Lk3/n90;-><init>(Lk3/vg0;)V
+
+    return-object v1
+
+    .line 3
+    :pswitch_1
+    iget-object v0, p0, Lk3/tj;->b:Ljava/lang/Object;
+
+    check-cast v0, Lk3/qv0;
+
+    invoke-interface {v0}, Lk3/qv0;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Ljava/util/Set;
+
+    .line 4
+    new-instance v1, Lk3/cr;
+
+    invoke-direct {v1, v0}, Lk3/cr;-><init>(Ljava/util/Set;)V
+
+    return-object v1
+
+    .line 5
+    :pswitch_2
+    iget-object v0, p0, Lk3/tj;->b:Ljava/lang/Object;
+
+    check-cast v0, Lk3/qv0;
+
+    invoke-interface {v0}, Lk3/qv0;->get()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/content/Context;
+
+    .line 6
+    new-instance v1, Lk3/w8;
+
+    invoke-direct {v1, v0}, Lk3/w8;-><init>(Landroid/content/Context;)V
+
+    .line 7
+    new-instance v2, Lk3/t8;
+
+    .line 8
+    iget-object v1, v1, Lk3/w8;->h:Ljava/lang/Object;
+
+    check-cast v1, Lk3/t5;
+
+    .line 9
+    invoke-direct {v2, v0, v1}, Lk3/t8;-><init>(Landroid/content/Context;Lk3/t5;)V
+
+    return-object v2
+
+    .line 10
+    :goto_0
+    iget-object v0, p0, Lk3/tj;->b:Ljava/lang/Object;
+
+    check-cast v0, Lk3/k31;
+
+    .line 11
+    iget-object v0, v0, Lk3/k31;->i:Ljava/lang/Object;
+
+    check-cast v0, Lk3/ny;
+
+    const-string v1, "Cannot return null from a non-@Nullable @Provides method"
+
+    .line 12
+    invoke-static {v0, v1}, Lk3/gj;->f(Ljava/lang/Object;Ljava/lang/String;)Ljava/lang/Object;
+
+    return-object v0
+
+    nop
+
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_2
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
 .end method

@@ -7,18 +7,18 @@
 
 
 # instance fields
-.field public final synthetic f:Lcom/supercell/titan/LocationService;
-
 .field public final synthetic g:Lcom/supercell/titan/LocationService;
+
+.field public final synthetic h:Lcom/supercell/titan/LocationService;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/titan/LocationService;Lcom/supercell/titan/LocationService;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/titan/j;->g:Lcom/supercell/titan/LocationService;
+    iput-object p1, p0, Lcom/supercell/titan/j;->h:Lcom/supercell/titan/LocationService;
 
-    iput-object p2, p0, Lcom/supercell/titan/j;->f:Lcom/supercell/titan/LocationService;
+    iput-object p2, p0, Lcom/supercell/titan/j;->g:Lcom/supercell/titan/LocationService;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -32,7 +32,7 @@
 
     .line 1
     :try_start_0
-    iget-object v0, p0, Lcom/supercell/titan/j;->g:Lcom/supercell/titan/LocationService;
+    iget-object v0, p0, Lcom/supercell/titan/j;->h:Lcom/supercell/titan/LocationService;
 
     .line 2
     iget-object v1, v0, Lcom/supercell/titan/LocationService;->b:Landroid/location/LocationManager;
@@ -87,7 +87,7 @@
     invoke-virtual {v0}, Ljava/lang/Object;->toString()Ljava/lang/String;
 
     .line 10
-    iget-object v1, p0, Lcom/supercell/titan/j;->g:Lcom/supercell/titan/LocationService;
+    iget-object v1, p0, Lcom/supercell/titan/j;->h:Lcom/supercell/titan/LocationService;
 
     invoke-virtual {v1, v0}, Lcom/supercell/titan/LocationService;->onLocationChanged(Landroid/location/Location;)V
 
@@ -103,7 +103,7 @@
     invoke-virtual {v0, v1}, Landroid/location/Criteria;->setAccuracy(I)V
 
     .line 13
-    iget-object v2, p0, Lcom/supercell/titan/j;->g:Lcom/supercell/titan/LocationService;
+    iget-object v2, p0, Lcom/supercell/titan/j;->h:Lcom/supercell/titan/LocationService;
 
     .line 14
     iget-object v3, v2, Lcom/supercell/titan/LocationService;->b:Landroid/location/LocationManager;
@@ -117,7 +117,7 @@
     iput-object v0, v2, Lcom/supercell/titan/LocationService;->e:Ljava/lang/String;
 
     .line 17
-    iget-object v0, p0, Lcom/supercell/titan/j;->g:Lcom/supercell/titan/LocationService;
+    iget-object v0, p0, Lcom/supercell/titan/j;->h:Lcom/supercell/titan/LocationService;
 
     .line 18
     iget-object v2, v0, Lcom/supercell/titan/LocationService;->e:Ljava/lang/String;
@@ -135,7 +135,7 @@
     const/high16 v5, 0x41200000    # 10.0f
 
     .line 20
-    iget-object v6, p0, Lcom/supercell/titan/j;->f:Lcom/supercell/titan/LocationService;
+    iget-object v6, p0, Lcom/supercell/titan/j;->g:Lcom/supercell/titan/LocationService;
 
     invoke-virtual/range {v1 .. v6}, Landroid/location/LocationManager;->requestLocationUpdates(Ljava/lang/String;JFLandroid/location/LocationListener;)V
     :try_end_0

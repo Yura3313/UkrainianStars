@@ -27,7 +27,7 @@
 
     const/4 v1, 0x0
 
-    invoke-direct {v0, v1}, Lcom/kakao/sdk/common/model/ApprovalType$Companion;-><init>(Lse/e;)V
+    invoke-direct {v0, v1}, Lcom/kakao/sdk/common/model/ApprovalType$Companion;-><init>(Lse/f;)V
 
     sput-object v0, Lcom/kakao/sdk/common/model/ApprovalType;->Companion:Lcom/kakao/sdk/common/model/ApprovalType$Companion;
 

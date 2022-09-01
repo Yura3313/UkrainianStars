@@ -202,7 +202,7 @@
     const-string v6, "Error in getFaqsDataForSection"
 
     .line 11
-    invoke-static {v5, v6, v4}, Landroidx/savedstate/d;->g(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v5, v6, v4}, Le5/i;->i(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_1
 
@@ -242,12 +242,12 @@
     const-string v4, "/"
 
     .line 15
-    invoke-static {v2, v1, v4}, Landroid/support/v4/media/f;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2, v1, v4}, Landroid/support/v4/media/f;->b(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v1
 
     .line 16
-    sget-object v2, Lcom/helpshift/util/u;->d:Le8/j;
+    sget-object v2, Lcom/helpshift/util/t;->d:Le8/j;
 
     .line 17
     invoke-virtual {v2}, Le8/j;->a()Lf8/d;
@@ -256,9 +256,9 @@
 
     const-string v4, ""
 
-    check-cast v2, Lk3/v8;
+    check-cast v2, Lk3/w8;
 
-    invoke-virtual {v2, v1, v4}, Lk3/v8;->g(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v2, v1, v4}, Lk3/w8;->g(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 18
     sget-object v2, Lfa/b$a;->a:Lfa/b;
@@ -272,7 +272,7 @@
 
     .line 20
     :cond_2
-    sget-object v0, Lcom/helpshift/util/u;->d:Le8/j;
+    sget-object v0, Lcom/helpshift/util/t;->d:Le8/j;
 
     .line 21
     invoke-virtual {v0}, Le8/j;->a()Lf8/d;
@@ -281,9 +281,9 @@
 
     const-string v1, "/faqs/"
 
-    check-cast v0, Lk3/v8;
+    check-cast v0, Lk3/w8;
 
-    invoke-virtual {v0, v1, v3}, Lk3/v8;->g(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {v0, v1, v3}, Lk3/w8;->g(Ljava/lang/String;Ljava/lang/String;)V
 
     return-void
 
@@ -323,7 +323,7 @@
     .locals 2
 
     .line 1
-    sget-object v0, Lcom/helpshift/util/u;->c:Le7/g;
+    sget-object v0, Lcom/helpshift/util/t;->c:Le7/g;
 
     .line 2
     invoke-virtual {v0}, Le7/g;->g()Lv9/e;
@@ -398,7 +398,7 @@
     const-string v1, "Database exception in getting faqs for section"
 
     .line 6
-    invoke-static {p2, v1, p1}, Landroidx/savedstate/d;->g(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {p2, v1, p1}, Le5/i;->i(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
     :goto_0
     return-object v0
@@ -444,7 +444,7 @@
     const-string v3, "Database exception in getting sections data "
 
     .line 3
-    invoke-static {v2, v3, v1}, Landroidx/savedstate/d;->g(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v2, v3, v1}, Le5/i;->i(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
     :goto_0
     return-object v0
@@ -475,7 +475,7 @@
     const-string v2, "Database exception in getting sections data "
 
     .line 2
-    invoke-static {v1, v2, v0}, Landroidx/savedstate/d;->g(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v1, v2, v0}, Le5/i;->i(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
     const/4 v0, 0x0
 
@@ -574,7 +574,7 @@
     check-cast v5, Lcom/helpshift/support/Faq;
 
     .line 4
-    iput-object v4, v5, Lcom/helpshift/support/Faq;->m:Ljava/util/ArrayList;
+    iput-object v4, v5, Lcom/helpshift/support/Faq;->n:Ljava/util/ArrayList;
 
     goto :goto_0
 
@@ -642,7 +642,7 @@
     if-eqz v5, :cond_3
 
     .line 14
-    iget-object v5, v5, Lcb/a;->f:Ljava/util/Map;
+    iget-object v5, v5, Lcb/a;->g:Ljava/util/Map;
 
     goto :goto_3
 
@@ -777,7 +777,7 @@
     check-cast v4, Lcb/c;
 
     .line 29
-    iget v14, v4, Lcb/c;->g:I
+    iget v14, v4, Lcb/c;->h:I
 
     if-ne v0, v8, :cond_7
 
@@ -860,10 +860,10 @@
     check-cast v11, Lcb/c;
 
     .line 36
-    iget-object v12, v11, Lcb/c;->f:Ljava/lang/String;
+    iget-object v12, v11, Lcb/c;->g:Ljava/lang/String;
 
     .line 37
-    iget v13, v11, Lcb/c;->g:I
+    iget v13, v11, Lcb/c;->h:I
 
     .line 38
     iget-object v14, v4, Lfb/a;->a:Ll9/a;
@@ -1051,7 +1051,7 @@
     const-string v7, "Error occurred when calling get method"
 
     .line 48
-    invoke-static {v4, v7, v0}, Landroidx/savedstate/d;->g(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v4, v7, v0}, Le5/i;->i(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
     :try_end_4
     .catchall {:try_start_4 .. :try_end_4} :catchall_1
 
@@ -1081,7 +1081,7 @@
     .line 51
     iget v0, v4, Leb/a;->b:I
 
-    iget v7, v11, Lcb/c;->g:I
+    iget v7, v11, Lcb/c;->h:I
 
     const/16 v8, 0x32
 
@@ -2246,7 +2246,7 @@
     check-cast v2, Lcb/b;
 
     .line 137
-    iget-object v3, v2, Lcb/b;->f:Ljava/lang/String;
+    iget-object v3, v2, Lcb/b;->g:Ljava/lang/String;
 
     .line 138
     invoke-virtual {v3}, Ljava/lang/String;->trim()Ljava/lang/String;
@@ -2551,7 +2551,7 @@
     if-lez v0, :cond_2e
 
     .line 153
-    iget-object v0, v2, Lcb/b;->g:Ljava/lang/String;
+    iget-object v0, v2, Lcb/b;->h:Ljava/lang/String;
 
     move-object/from16 v2, v23
 
@@ -2901,7 +2901,7 @@
     check-cast v0, Lcom/helpshift/support/Faq;
 
     .line 179
-    iget-object v1, v0, Lcom/helpshift/support/Faq;->f:Ljava/lang/String;
+    iget-object v1, v0, Lcom/helpshift/support/Faq;->g:Ljava/lang/String;
 
     invoke-virtual {v1}, Ljava/lang/String;->toLowerCase()Ljava/lang/String;
 
@@ -2976,7 +2976,7 @@
 
     .line 2
     :cond_0
-    sget-object v0, Lcom/helpshift/util/u;->c:Le7/g;
+    sget-object v0, Lcom/helpshift/util/t;->c:Le7/g;
 
     .line 3
     iget-object v0, v0, Le7/g;->f:La8/f;
@@ -3016,7 +3016,7 @@
     invoke-direct {v0, p0}, Lla/e$b;-><init>(Lla/e;)V
 
     .line 9
-    sget-object v2, Lcom/helpshift/util/u;->c:Le7/g;
+    sget-object v2, Lcom/helpshift/util/t;->c:Le7/g;
 
     .line 10
     iget-object v2, v2, Le7/g;->g:Li7/e;
@@ -3117,7 +3117,7 @@
     const-string v2, "storeFile"
 
     .line 8
-    invoke-static {v1, v2, p1, v0}, Landroidx/savedstate/d;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v1, v2, p1, v0}, Le5/i;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
 
     :goto_0
     return-void
@@ -3154,7 +3154,7 @@
     check-cast v3, Lcom/helpshift/support/Section;
 
     .line 5
-    iget-object v3, v3, Lcom/helpshift/support/Section;->h:Ljava/lang/String;
+    iget-object v3, v3, Lcom/helpshift/support/Section;->i:Ljava/lang/String;
 
     .line 6
     new-instance v4, Ljava/util/ArrayList;
@@ -3185,7 +3185,7 @@
     const-string v6, "Database exception in getting faqs for section"
 
     .line 8
-    invoke-static {v5, v6, v3}, Landroidx/savedstate/d;->g(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v5, v6, v3}, Le5/i;->i(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
     .line 9
     :goto_1
@@ -3246,7 +3246,7 @@
     const/4 v3, 0x0
 
     .line 2
-    invoke-static {v1, v2, v3, v3}, Landroidx/savedstate/d;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v1, v2, v3, v3}, Le5/i;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
 
     .line 3
     iget-object v1, p0, Lla/e;->a:Lla/p;
@@ -3280,7 +3280,7 @@
     const-string v2, "Search index update finished."
 
     .line 7
-    invoke-static {v1, v2, v3, v3}, Landroidx/savedstate/d;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v1, v2, v3, v3}, Le5/i;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
 
     .line 8
     monitor-exit v0

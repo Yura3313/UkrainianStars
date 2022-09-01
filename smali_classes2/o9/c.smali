@@ -3,15 +3,15 @@
 .source "HSNetworkMetadataDB.java"
 
 # interfaces
-.implements Lk3/xf0;
+.implements Lk3/yf0;
 
 
 # static fields
-.field public static g:Lo9/c;
+.field public static h:Lo9/c;
 
 
 # instance fields
-.field public final f:Ljava/lang/Object;
+.field public final g:Ljava/lang/Object;
 
 
 # direct methods
@@ -30,7 +30,7 @@
 
     invoke-direct {v0, p1, v1}, Lo9/a;-><init>(Landroid/content/Context;Lh9/b;)V
 
-    iput-object v0, p0, Lo9/c;->f:Ljava/lang/Object;
+    iput-object v0, p0, Lo9/c;->g:Ljava/lang/Object;
 
     return-void
 .end method
@@ -39,7 +39,7 @@
     .locals 0
 
     .line 1
-    iput-object p1, p0, Lo9/c;->f:Ljava/lang/Object;
+    iput-object p1, p0, Lo9/c;->g:Ljava/lang/Object;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -98,7 +98,7 @@
     const-string v3, "is_last_fetch_success"
 
     .line 5
-    invoke-static {p1, v3}, Lj1/b;->o(Landroid/database/Cursor;Ljava/lang/String;)Z
+    invoke-static {p1, v3}, Lcom/google/android/material/internal/c;->o(Landroid/database/Cursor;Ljava/lang/String;)Z
 
     move-result p1
 
@@ -132,7 +132,7 @@
 
     .line 1
     :try_start_1
-    iget-object v0, p0, Lo9/c;->f:Ljava/lang/Object;
+    iget-object v0, p0, Lo9/c;->g:Ljava/lang/Object;
 
     check-cast v0, Lo9/a;
 
@@ -191,7 +191,7 @@
     const-string v2, "error in reading the metadata of url"
 
     .line 5
-    invoke-static {v1, v2, p1, p1}, Landroidx/savedstate/d;->h(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v1, v2, p1, p1}, Le5/i;->j(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Throwable;[Lz9/a;)V
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_1
 
@@ -261,7 +261,7 @@
 
     .line 1
     :try_start_1
-    iget-object p1, p0, Lo9/c;->f:Ljava/lang/Object;
+    iget-object p1, p0, Lo9/c;->g:Ljava/lang/Object;
 
     check-cast p1, Lo9/a;
 
@@ -290,7 +290,7 @@
     const/4 v0, 0x0
 
     .line 3
-    invoke-static {p1, p2, v0, v0}, Landroidx/savedstate/d;->h(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {p1, p2, v0, v0}, Le5/i;->j(Ljava/lang/String;Ljava/lang/String;[Ljava/lang/Throwable;[Lz9/a;)V
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
@@ -318,14 +318,14 @@
     throw p1
 .end method
 
-.method public final g(Lk3/uf0;)Lk3/rq;
+.method public final g(Lk3/vf0;)Lk3/qq;
     .locals 1
 
-    iget-object v0, p0, Lo9/c;->f:Ljava/lang/Object;
+    iget-object v0, p0, Lo9/c;->g:Ljava/lang/Object;
 
     check-cast v0, Lcom/google/android/gms/internal/ads/c1;
 
-    invoke-virtual {v0, p1}, Lcom/google/android/gms/internal/ads/c1;->b(Lk3/uf0;)Lk3/ok;
+    invoke-virtual {v0, p1}, Lcom/google/android/gms/internal/ads/c1;->b(Lk3/vf0;)Lk3/ok;
 
     move-result-object p1
 

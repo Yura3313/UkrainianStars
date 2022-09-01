@@ -39,7 +39,7 @@
     .line 1
     iget-object v0, p0, Lcom/google/android/material/chip/Chip$b;->q:Lcom/google/android/material/chip/Chip;
 
-    sget v1, Lcom/google/android/material/chip/Chip;->y:I
+    sget v1, Lcom/google/android/material/chip/Chip;->z:I
 
     .line 2
     invoke-virtual {v0}, Lcom/google/android/material/chip/Chip;->e()Z
@@ -97,7 +97,7 @@
     .line 2
     iget-object v1, p0, Lcom/google/android/material/chip/Chip$b;->q:Lcom/google/android/material/chip/Chip;
 
-    sget v2, Lcom/google/android/material/chip/Chip;->y:I
+    sget v2, Lcom/google/android/material/chip/Chip;->z:I
 
     .line 3
     invoke-virtual {v1}, Lcom/google/android/material/chip/Chip;->e()Z
@@ -110,14 +110,14 @@
     iget-object v1, p0, Lcom/google/android/material/chip/Chip$b;->q:Lcom/google/android/material/chip/Chip;
 
     .line 5
-    iget-object v2, v1, Lcom/google/android/material/chip/Chip;->i:Lcom/google/android/material/chip/a;
+    iget-object v2, v1, Lcom/google/android/material/chip/Chip;->j:Lcom/google/android/material/chip/a;
 
     const/4 v3, 0x1
 
     if-eqz v2, :cond_0
 
     .line 6
-    iget-boolean v2, v2, Lcom/google/android/material/chip/a;->P:Z
+    iget-boolean v2, v2, Lcom/google/android/material/chip/a;->Q:Z
 
     if-eqz v2, :cond_0
 
@@ -127,7 +127,7 @@
     if-eqz v0, :cond_1
 
     .line 7
-    iget-object v0, v1, Lcom/google/android/material/chip/Chip;->l:Landroid/view/View$OnClickListener;
+    iget-object v0, v1, Lcom/google/android/material/chip/Chip;->m:Landroid/view/View$OnClickListener;
 
     if-eqz v0, :cond_1
 
@@ -174,7 +174,7 @@
     invoke-virtual {p1, p3}, Landroid/view/View;->playSoundEffect(I)V
 
     .line 4
-    iget-object v0, p1, Lcom/google/android/material/chip/Chip;->l:Landroid/view/View$OnClickListener;
+    iget-object v0, p1, Lcom/google/android/material/chip/Chip;->m:Landroid/view/View$OnClickListener;
 
     if-eqz v0, :cond_1
 
@@ -185,7 +185,7 @@
 
     .line 6
     :cond_1
-    iget-object p1, p1, Lcom/google/android/material/chip/Chip;->u:Lcom/google/android/material/chip/Chip$b;
+    iget-object p1, p1, Lcom/google/android/material/chip/Chip;->v:Lcom/google/android/material/chip/Chip$b;
 
     invoke-virtual {p1, p2, p2}, Lj0/a;->z(II)Z
 
@@ -393,7 +393,7 @@
     invoke-virtual {p2, v0}, Lg0/c;->I(Ljava/lang/CharSequence;)V
 
     .line 14
-    sget-object p1, Lcom/google/android/material/chip/Chip;->z:Landroid/graphics/Rect;
+    sget-object p1, Lcom/google/android/material/chip/Chip;->A:Landroid/graphics/Rect;
 
     .line 15
     invoke-virtual {p2, p1}, Lg0/c;->A(Landroid/graphics/Rect;)V
@@ -413,7 +413,7 @@
     iget-object p1, p0, Lcom/google/android/material/chip/Chip$b;->q:Lcom/google/android/material/chip/Chip;
 
     .line 2
-    iput-boolean p2, p1, Lcom/google/android/material/chip/Chip;->q:Z
+    iput-boolean p2, p1, Lcom/google/android/material/chip/Chip;->r:Z
 
     .line 3
     invoke-virtual {p1}, Landroid/view/View;->refreshDrawableState()V

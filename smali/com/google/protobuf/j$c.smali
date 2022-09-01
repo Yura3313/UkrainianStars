@@ -1513,7 +1513,7 @@
     iput-wide v2, p0, Lcom/google/protobuf/j$c;->i:J
 
     .line 6
-    sget-object v0, Lcom/google/protobuf/i;->g:Lcom/google/protobuf/i$h;
+    sget-object v0, Lcom/google/protobuf/i;->h:Lcom/google/protobuf/i$h;
 
     .line 7
     new-instance v0, Lcom/google/protobuf/i$h;
@@ -1526,7 +1526,7 @@
     if-nez v0, :cond_1
 
     .line 8
-    sget-object v0, Lcom/google/protobuf/i;->g:Lcom/google/protobuf/i$h;
+    sget-object v0, Lcom/google/protobuf/i;->h:Lcom/google/protobuf/i$h;
 
     return-object v0
 

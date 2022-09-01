@@ -7,14 +7,14 @@
 
 
 # instance fields
-.field public final synthetic f:Landroid/view/View;
+.field public final synthetic g:Landroid/view/View;
 
 
 # direct methods
 .method public constructor <init>(Landroid/view/View;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/google/android/material/transformation/a;->f:Landroid/view/View;
+    iput-object p1, p0, Lcom/google/android/material/transformation/a;->g:Landroid/view/View;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -26,7 +26,7 @@
 .method public final onAnimationUpdate(Landroid/animation/ValueAnimator;)V
     .locals 0
 
-    iget-object p1, p0, Lcom/google/android/material/transformation/a;->f:Landroid/view/View;
+    iget-object p1, p0, Lcom/google/android/material/transformation/a;->g:Landroid/view/View;
 
     invoke-virtual {p1}, Landroid/view/View;->invalidate()V
 

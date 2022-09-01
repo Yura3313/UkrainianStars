@@ -1,5 +1,5 @@
 .class public final Lid/u$a;
-.super Lse/h;
+.super Lse/i;
 .source "InviteToPlayNotificationView.kt"
 
 # interfaces
@@ -18,7 +18,7 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/l<",
         "Ljava/lang/String;",
         "Landroid/text/SpannableStringBuilder;",
@@ -28,22 +28,22 @@
 
 
 # instance fields
-.field public final synthetic f:Landroid/graphics/Typeface;
+.field public final synthetic g:Landroid/graphics/Typeface;
 
-.field public final synthetic g:I
+.field public final synthetic h:I
 
 
 # direct methods
 .method public constructor <init>(Landroid/graphics/Typeface;I)V
     .locals 0
 
-    iput-object p1, p0, Lid/u$a;->f:Landroid/graphics/Typeface;
+    iput-object p1, p0, Lid/u$a;->g:Landroid/graphics/Typeface;
 
-    iput p2, p0, Lid/u$a;->g:I
+    iput p2, p0, Lid/u$a;->h:I
 
     const/4 p1, 0x1
 
-    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -59,22 +59,22 @@
     const-string v0, "text"
 
     .line 2
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 3
     new-instance v0, Landroid/text/SpannableStringBuilder;
 
     invoke-direct {v0}, Landroid/text/SpannableStringBuilder;-><init>()V
 
-    iget-object v1, p0, Lid/u$a;->f:Landroid/graphics/Typeface;
+    iget-object v1, p0, Lid/u$a;->g:Landroid/graphics/Typeface;
 
-    iget v2, p0, Lid/u$a;->g:I
+    iget v2, p0, Lid/u$a;->h:I
 
     invoke-static {v2}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v2
 
-    invoke-static {v0, p1, v1, v2}, La5/w;->b(Landroid/text/SpannableStringBuilder;Ljava/lang/CharSequence;Landroid/graphics/Typeface;Ljava/lang/Integer;)Landroid/text/SpannableStringBuilder;
+    invoke-static {v0, p1, v1, v2}, Lae/t;->d(Landroid/text/SpannableStringBuilder;Ljava/lang/CharSequence;Landroid/graphics/Typeface;Ljava/lang/Integer;)Landroid/text/SpannableStringBuilder;
 
     return-object v0
 .end method

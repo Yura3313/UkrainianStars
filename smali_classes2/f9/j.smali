@@ -4,18 +4,18 @@
 
 
 # instance fields
-.field public final synthetic b:Lo8/y;
+.field public final synthetic b:Lo8/z;
 
 .field public final synthetic c:Lf9/i;
 
 
 # direct methods
-.method public constructor <init>(Lf9/i;Lo8/y;)V
+.method public constructor <init>(Lf9/i;Lo8/z;)V
     .locals 0
 
     iput-object p1, p0, Lf9/j;->c:Lf9/i;
 
-    iput-object p2, p0, Lf9/j;->b:Lo8/y;
+    iput-object p2, p0, Lf9/j;->b:Lo8/z;
 
     invoke-direct {p0}, La8/g;-><init>()V
 
@@ -28,7 +28,7 @@
     .locals 5
 
     .line 1
-    iget-object v0, p0, Lf9/j;->b:Lo8/y;
+    iget-object v0, p0, Lf9/j;->b:Lo8/z;
 
     check-cast v0, Lo8/l;
 
@@ -44,9 +44,9 @@
 
     move-result-object v1
 
-    iget-object v3, v0, Lo8/l;->A:Lp8/e;
+    iget-object v3, v0, Lo8/l;->B:Lp8/f;
 
-    iget-object v3, v3, Lp8/b;->i:Ljava/lang/String;
+    iget-object v3, v3, Lp8/c;->j:Ljava/lang/String;
 
     const/4 v4, 0x1
 

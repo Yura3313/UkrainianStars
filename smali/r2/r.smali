@@ -99,7 +99,7 @@
     const/4 v0, 0x1
 
     .line 1
-    invoke-static {p0, v0}, La1/e;->a(Ljava/lang/String;I)I
+    invoke-static {p0, v0}, La1/e;->b(Ljava/lang/String;I)I
 
     move-result v0
 
@@ -113,7 +113,7 @@
     const-string v0, "."
 
     .line 3
-    invoke-static {v1, p0, v0, p1}, Landroid/support/v4/media/b;->a(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v1, p0, v0, p1}, Li1/j;->a(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p0
 

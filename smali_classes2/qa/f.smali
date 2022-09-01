@@ -32,7 +32,7 @@
     .line 2
     iget-object v0, p0, Lqa/f;->a:Lqa/t;
 
-    iget-object v0, v0, Lqa/t;->j0:Lqa/e0;
+    iget-object v0, v0, Lqa/t;->k0:Lqa/e0;
 
     .line 3
     iget-boolean p1, p1, Lqb/a;->d:Z
@@ -79,7 +79,7 @@
 
     const v3, 0x1010036
 
-    invoke-static {v1, v2, v3}, Lcom/helpshift/util/g0;->e(Landroid/content/Context;Landroid/graphics/drawable/Drawable;I)V
+    invoke-static {v1, v2, v3}, Lcom/helpshift/util/e0;->e(Landroid/content/Context;Landroid/graphics/drawable/Drawable;I)V
 
     .line 7
     :cond_2

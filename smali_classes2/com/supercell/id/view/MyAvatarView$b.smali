@@ -1,5 +1,5 @@
 .class public final Lcom/supercell/id/view/MyAvatarView$b;
-.super Lse/h;
+.super Lse/i;
 .source "MyAvatarView.kt"
 
 # interfaces
@@ -18,7 +18,7 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/a<",
         "Landroid/view/ViewGroup;",
         ">;"
@@ -27,18 +27,18 @@
 
 
 # instance fields
-.field public final synthetic f:Lcom/supercell/id/view/MyAvatarView;
+.field public final synthetic g:Lcom/supercell/id/view/MyAvatarView;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/id/view/MyAvatarView;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/view/MyAvatarView$b;->f:Lcom/supercell/id/view/MyAvatarView;
+    iput-object p1, p0, Lcom/supercell/id/view/MyAvatarView$b;->g:Lcom/supercell/id/view/MyAvatarView;
 
     const/4 p1, 0x0
 
-    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -48,7 +48,7 @@
 .method public final invoke()Ljava/lang/Object;
     .locals 2
 
-    iget-object v0, p0, Lcom/supercell/id/view/MyAvatarView$b;->f:Lcom/supercell/id/view/MyAvatarView;
+    iget-object v0, p0, Lcom/supercell/id/view/MyAvatarView$b;->g:Lcom/supercell/id/view/MyAvatarView;
 
     sget v1, Lcom/supercell/id/R$id;->under_review:I
 

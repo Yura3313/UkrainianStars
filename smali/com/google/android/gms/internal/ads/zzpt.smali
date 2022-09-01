@@ -10,26 +10,26 @@
 
 
 # static fields
-.field public static h:Z
-
 .field public static i:Z
+
+.field public static j:Z
 
 
 # instance fields
-.field public final f:Lk3/y11;
+.field public final g:Lk3/e21;
 
-.field public g:Z
+.field public h:Z
 
 
 # direct methods
-.method public constructor <init>(Lk3/y11;Landroid/graphics/SurfaceTexture;)V
+.method public constructor <init>(Lk3/e21;Landroid/graphics/SurfaceTexture;)V
     .locals 0
 
     .line 1
     invoke-direct {p0, p2}, Landroid/view/Surface;-><init>(Landroid/graphics/SurfaceTexture;)V
 
     .line 2
-    iput-object p1, p0, Lcom/google/android/gms/internal/ads/zzpt;->f:Lk3/y11;
+    iput-object p1, p0, Lcom/google/android/gms/internal/ads/zzpt;->g:Lk3/e21;
 
     return-void
 .end method
@@ -38,7 +38,7 @@
     .locals 4
 
     .line 1
-    sget v0, Lk3/v11;->a:I
+    sget v0, Lk3/b21;->a:I
 
     const/16 v1, 0x11
 
@@ -69,12 +69,12 @@
     const/4 p0, 0x1
 
     :goto_1
-    invoke-static {p0}, Lk3/j6;->c(Z)V
+    invoke-static {p0}, Lcom/google/android/gms/ads/a;->e(Z)V
 
     .line 3
-    new-instance p0, Lk3/y11;
+    new-instance p0, Lk3/e21;
 
-    invoke-direct {p0}, Lk3/y11;-><init>()V
+    invoke-direct {p0}, Lk3/e21;-><init>()V
 
     .line 4
     invoke-virtual {p0}, Ljava/lang/Thread;->start()V
@@ -88,14 +88,14 @@
 
     invoke-direct {v2, v3, p0}, Landroid/os/Handler;-><init>(Landroid/os/Looper;Landroid/os/Handler$Callback;)V
 
-    iput-object v2, p0, Lk3/y11;->g:Landroid/os/Handler;
+    iput-object v2, p0, Lk3/e21;->h:Landroid/os/Handler;
 
     .line 6
     monitor-enter p0
 
     .line 7
     :try_start_0
-    iget-object v2, p0, Lk3/y11;->g:Landroid/os/Handler;
+    iget-object v2, p0, Lk3/e21;->h:Landroid/os/Handler;
 
     if-eqz p1, :cond_2
 
@@ -115,15 +115,15 @@
 
     .line 8
     :goto_3
-    iget-object p1, p0, Lk3/y11;->k:Lcom/google/android/gms/internal/ads/zzpt;
+    iget-object p1, p0, Lk3/e21;->l:Lcom/google/android/gms/internal/ads/zzpt;
 
     if-nez p1, :cond_3
 
-    iget-object p1, p0, Lk3/y11;->j:Ljava/lang/RuntimeException;
+    iget-object p1, p0, Lk3/e21;->k:Ljava/lang/RuntimeException;
 
     if-nez p1, :cond_3
 
-    iget-object p1, p0, Lk3/y11;->i:Ljava/lang/Error;
+    iget-object p1, p0, Lk3/e21;->j:Ljava/lang/Error;
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -161,17 +161,17 @@
 
     .line 12
     :cond_4
-    iget-object p1, p0, Lk3/y11;->j:Ljava/lang/RuntimeException;
+    iget-object p1, p0, Lk3/e21;->k:Ljava/lang/RuntimeException;
 
     if-nez p1, :cond_6
 
     .line 13
-    iget-object p1, p0, Lk3/y11;->i:Ljava/lang/Error;
+    iget-object p1, p0, Lk3/e21;->j:Ljava/lang/Error;
 
     if-nez p1, :cond_5
 
     .line 14
-    iget-object p0, p0, Lk3/y11;->k:Lcom/google/android/gms/internal/ads/zzpt;
+    iget-object p0, p0, Lk3/e21;->l:Lcom/google/android/gms/internal/ads/zzpt;
 
     return-object p0
 
@@ -220,12 +220,12 @@
 
     .line 1
     :try_start_0
-    sget-boolean v1, Lcom/google/android/gms/internal/ads/zzpt;->i:Z
+    sget-boolean v1, Lcom/google/android/gms/internal/ads/zzpt;->j:Z
 
     if-nez v1, :cond_4
 
     .line 2
-    sget v1, Lk3/v11;->a:I
+    sget v1, Lk3/b21;->a:I
 
     const/16 v2, 0x11
 
@@ -263,7 +263,7 @@
     if-ne v1, v4, :cond_1
 
     .line 6
-    sget-object v1, Lk3/v11;->d:Ljava/lang/String;
+    sget-object v1, Lk3/b21;->d:Ljava/lang/String;
 
     const-string v4, "SM-G950"
 
@@ -311,15 +311,15 @@
 
     .line 10
     :cond_2
-    sput-boolean v2, Lcom/google/android/gms/internal/ads/zzpt;->h:Z
+    sput-boolean v2, Lcom/google/android/gms/internal/ads/zzpt;->i:Z
 
     .line 11
     :cond_3
-    sput-boolean v3, Lcom/google/android/gms/internal/ads/zzpt;->i:Z
+    sput-boolean v3, Lcom/google/android/gms/internal/ads/zzpt;->j:Z
 
     .line 12
     :cond_4
-    sget-boolean p0, Lcom/google/android/gms/internal/ads/zzpt;->h:Z
+    sget-boolean p0, Lcom/google/android/gms/internal/ads/zzpt;->i:Z
     :try_end_0
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
@@ -344,21 +344,21 @@
     invoke-super {p0}, Landroid/view/Surface;->release()V
 
     .line 2
-    iget-object v0, p0, Lcom/google/android/gms/internal/ads/zzpt;->f:Lk3/y11;
+    iget-object v0, p0, Lcom/google/android/gms/internal/ads/zzpt;->g:Lk3/e21;
 
     monitor-enter v0
 
     .line 3
     :try_start_0
-    iget-boolean v1, p0, Lcom/google/android/gms/internal/ads/zzpt;->g:Z
+    iget-boolean v1, p0, Lcom/google/android/gms/internal/ads/zzpt;->h:Z
 
     if-nez v1, :cond_0
 
     .line 4
-    iget-object v1, p0, Lcom/google/android/gms/internal/ads/zzpt;->f:Lk3/y11;
+    iget-object v1, p0, Lcom/google/android/gms/internal/ads/zzpt;->g:Lk3/e21;
 
     .line 5
-    iget-object v1, v1, Lk3/y11;->g:Landroid/os/Handler;
+    iget-object v1, v1, Lk3/e21;->h:Landroid/os/Handler;
 
     const/4 v2, 0x3
 
@@ -367,7 +367,7 @@
     const/4 v1, 0x1
 
     .line 6
-    iput-boolean v1, p0, Lcom/google/android/gms/internal/ads/zzpt;->g:Z
+    iput-boolean v1, p0, Lcom/google/android/gms/internal/ads/zzpt;->h:Z
 
     .line 7
     :cond_0

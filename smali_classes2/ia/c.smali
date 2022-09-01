@@ -70,7 +70,7 @@
     iget-object v0, v0, Lt8/b;->c:Li7/c;
 
     .line 13
-    iget-object v0, v0, Li7/c;->f:Ljava/lang/Long;
+    iget-object v0, v0, Li7/c;->g:Ljava/lang/Long;
 
     .line 14
     invoke-virtual {v0}, Ljava/lang/Long;->longValue()J
@@ -125,7 +125,7 @@
 
     .line 25
     :try_start_1
-    sget-object v2, Li7/i;->f:Li7/i;
+    sget-object v2, Li7/i;->g:Li7/i;
 
     invoke-virtual {v1, v0, v2}, Li7/e;->q(Li7/c;Li7/i;)V
     :try_end_1
@@ -137,9 +137,9 @@
     .line 27
     iget-object v0, p0, Lia/c;->b:Lia/d;
 
-    sget-object v1, Lia/e;->g:Lia/e;
+    sget-object v1, Lia/e;->h:Lia/e;
 
-    sget-object v2, Lia/e;->h:Lia/e;
+    sget-object v2, Lia/e;->i:Lia/e;
 
     .line 28
     invoke-virtual {v0, v1, v2}, Lia/d;->b(Lia/e;Lia/e;)V

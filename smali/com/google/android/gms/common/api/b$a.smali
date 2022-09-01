@@ -22,7 +22,7 @@
 
 
 # instance fields
-.field public final a:Lb2/a;
+.field public final a:Lae/t;
     .annotation build Landroidx/annotation/RecentlyNonNull;
     .end annotation
 .end field
@@ -38,9 +38,9 @@
     .locals 3
 
     .line 1
-    new-instance v0, Lb2/a;
+    new-instance v0, Lae/t;
 
-    invoke-direct {v0}, Lb2/a;-><init>()V
+    invoke-direct {v0}, Lae/t;-><init>()V
 
     .line 2
     invoke-static {}, Landroid/os/Looper;->getMainLooper()Landroid/os/Looper;
@@ -50,7 +50,7 @@
     .line 3
     new-instance v2, Lcom/google/android/gms/common/api/b$a;
 
-    invoke-direct {v2, v0, v1}, Lcom/google/android/gms/common/api/b$a;-><init>(Lb2/a;Landroid/os/Looper;)V
+    invoke-direct {v2, v0, v1}, Lcom/google/android/gms/common/api/b$a;-><init>(Lae/t;Landroid/os/Looper;)V
 
     .line 4
     sput-object v2, Lcom/google/android/gms/common/api/b$a;->c:Lcom/google/android/gms/common/api/b$a;
@@ -58,14 +58,14 @@
     return-void
 .end method
 
-.method public constructor <init>(Lb2/a;Landroid/os/Looper;)V
+.method public constructor <init>(Lae/t;Landroid/os/Looper;)V
     .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lcom/google/android/gms/common/api/b$a;->a:Lb2/a;
+    iput-object p1, p0, Lcom/google/android/gms/common/api/b$a;->a:Lae/t;
 
     .line 3
     iput-object p2, p0, Lcom/google/android/gms/common/api/b$a;->b:Landroid/os/Looper;

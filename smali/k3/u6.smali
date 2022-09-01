@@ -1,37 +1,141 @@
-.class public Lk3/u6;
+.class public final synthetic Lk3/u6;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads-lite@@19.3.0"
 
 
-# annotations
-.annotation build Landroid/annotation/TargetApi;
-    value = 0x15
-.end annotation
-
-
 # static fields
-.field public static final a:Lk3/pj;
+.field public static final synthetic a:[I
+
+.field public static final synthetic b:[I
 
 
 # direct methods
-.method static synthetic constructor <clinit>()V
-    .locals 2
+.method public static constructor <clinit>()V
+    .locals 6
 
-    new-instance v0, Lk3/pj;
+    .line 1
+    invoke-static {}, Lcom/google/ads/AdRequest$ErrorCode;->values()[Lcom/google/ads/AdRequest$ErrorCode;
 
-    const/4 v1, 0x2
+    move-result-object v0
 
-    invoke-direct {v0, v1}, Lk3/pj;-><init>(I)V
+    array-length v0, v0
 
-    sput-object v0, Lk3/u6;->a:Lk3/pj;
+    new-array v0, v0, [I
 
-    return-void
-.end method
+    sput-object v0, Lk3/u6;->b:[I
 
-.method public synthetic constructor <init>()V
-    .locals 0
+    const/4 v1, 0x1
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    :try_start_0
+    sget-object v2, Lcom/google/ads/AdRequest$ErrorCode;->INTERNAL_ERROR:Lcom/google/ads/AdRequest$ErrorCode;
 
+    invoke-virtual {v2}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v2
+
+    aput v1, v0, v2
+    :try_end_0
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
+
+    :catch_0
+    const/4 v0, 0x2
+
+    :try_start_1
+    sget-object v2, Lk3/u6;->b:[I
+
+    sget-object v3, Lcom/google/ads/AdRequest$ErrorCode;->INVALID_REQUEST:Lcom/google/ads/AdRequest$ErrorCode;
+
+    invoke-virtual {v3}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v3
+
+    aput v0, v2, v3
+    :try_end_1
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_1
+
+    :catch_1
+    const/4 v2, 0x3
+
+    :try_start_2
+    sget-object v3, Lk3/u6;->b:[I
+
+    sget-object v4, Lcom/google/ads/AdRequest$ErrorCode;->NETWORK_ERROR:Lcom/google/ads/AdRequest$ErrorCode;
+
+    invoke-virtual {v4}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v4
+
+    aput v2, v3, v4
+    :try_end_2
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_2 .. :try_end_2} :catch_2
+
+    :catch_2
+    :try_start_3
+    sget-object v3, Lk3/u6;->b:[I
+
+    sget-object v4, Lcom/google/ads/AdRequest$ErrorCode;->NO_FILL:Lcom/google/ads/AdRequest$ErrorCode;
+
+    invoke-virtual {v4}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v4
+
+    const/4 v5, 0x4
+
+    aput v5, v3, v4
+    :try_end_3
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_3 .. :try_end_3} :catch_3
+
+    .line 2
+    :catch_3
+    invoke-static {}, Lcom/google/ads/AdRequest$Gender;->values()[Lcom/google/ads/AdRequest$Gender;
+
+    move-result-object v3
+
+    array-length v3, v3
+
+    new-array v3, v3, [I
+
+    sput-object v3, Lk3/u6;->a:[I
+
+    :try_start_4
+    sget-object v4, Lcom/google/ads/AdRequest$Gender;->FEMALE:Lcom/google/ads/AdRequest$Gender;
+
+    invoke-virtual {v4}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v4
+
+    aput v1, v3, v4
+    :try_end_4
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_4 .. :try_end_4} :catch_4
+
+    :catch_4
+    :try_start_5
+    sget-object v1, Lk3/u6;->a:[I
+
+    sget-object v3, Lcom/google/ads/AdRequest$Gender;->MALE:Lcom/google/ads/AdRequest$Gender;
+
+    invoke-virtual {v3}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v3
+
+    aput v0, v1, v3
+    :try_end_5
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_5 .. :try_end_5} :catch_5
+
+    :catch_5
+    :try_start_6
+    sget-object v0, Lk3/u6;->a:[I
+
+    sget-object v1, Lcom/google/ads/AdRequest$Gender;->UNKNOWN:Lcom/google/ads/AdRequest$Gender;
+
+    invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
+
+    move-result v1
+
+    aput v2, v0, v1
+    :try_end_6
+    .catch Ljava/lang/NoSuchFieldError; {:try_start_6 .. :try_end_6} :catch_6
+
+    :catch_6
     return-void
 .end method

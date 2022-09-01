@@ -112,7 +112,7 @@
 
     sget v0, Lcom/helpshift/R$attr;->colorAccent:I
 
-    invoke-static {p0, p1, v0}, Lcom/helpshift/util/g0;->e(Landroid/content/Context;Landroid/graphics/drawable/Drawable;I)V
+    invoke-static {p0, p1, v0}, Lcom/helpshift/util/e0;->e(Landroid/content/Context;Landroid/graphics/drawable/Drawable;I)V
 
     return-void
 .end method
@@ -132,7 +132,7 @@
 
     .line 2
     :goto_0
-    invoke-static {p0, p1, p2}, Lcom/helpshift/util/g0;->e(Landroid/content/Context;Landroid/graphics/drawable/Drawable;I)V
+    invoke-static {p0, p1, p2}, Lcom/helpshift/util/e0;->e(Landroid/content/Context;Landroid/graphics/drawable/Drawable;I)V
 
     return-void
 .end method

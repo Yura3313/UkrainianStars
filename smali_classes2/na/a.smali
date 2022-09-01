@@ -16,13 +16,13 @@
 
 
 # instance fields
-.field public g0:I
+.field public h0:I
 
-.field public h0:Z
+.field public i0:Z
 
-.field public i0:Lla/d;
+.field public j0:Lla/d;
 
-.field public j0:Lla/e;
+.field public k0:Lla/e;
 
 
 # direct methods
@@ -35,7 +35,7 @@
     const/4 v0, 0x0
 
     .line 2
-    iput v0, p0, Lna/a;->g0:I
+    iput v0, p0, Lna/a;->h0:I
 
     return-void
 .end method
@@ -54,7 +54,7 @@
     .locals 4
 
     .line 1
-    iget-object v0, p0, Landroidx/fragment/app/Fragment;->A:Landroidx/fragment/app/Fragment;
+    iget-object v0, p0, Landroidx/fragment/app/Fragment;->B:Landroidx/fragment/app/Fragment;
 
     .line 2
     check-cast v0, Lab/e;
@@ -64,7 +64,7 @@
     if-eqz v0, :cond_0
 
     .line 3
-    iget-object v1, v0, Landroidx/fragment/app/Fragment;->A:Landroidx/fragment/app/Fragment;
+    iget-object v1, v0, Landroidx/fragment/app/Fragment;->B:Landroidx/fragment/app/Fragment;
 
     .line 4
     check-cast v1, Lab/p;
@@ -95,19 +95,19 @@
 
     .line 9
     :goto_0
-    iget-object v0, v1, Lab/p;->k0:Landroid/view/View;
+    iget-object v0, v1, Lab/p;->l0:Landroid/view/View;
 
     const/16 v2, 0x8
 
     invoke-virtual {v0, v2}, Landroid/view/View;->setVisibility(I)V
 
     .line 10
-    iget-object v0, v1, Lab/p;->l0:Landroid/view/View;
+    iget-object v0, v1, Lab/p;->m0:Landroid/view/View;
 
     invoke-virtual {v0, v2}, Landroid/view/View;->setVisibility(I)V
 
     .line 11
-    iget-object v0, v1, Lab/p;->m0:Landroid/view/View;
+    iget-object v0, v1, Lab/p;->n0:Landroid/view/View;
 
     invoke-virtual {v0, v2}, Landroid/view/View;->setVisibility(I)V
 
@@ -125,7 +125,7 @@
 
     .line 12
     :cond_2
-    iget-object p1, v1, Lab/p;->m0:Landroid/view/View;
+    iget-object p1, v1, Lab/p;->n0:Landroid/view/View;
 
     invoke-virtual {p1, v3}, Landroid/view/View;->setVisibility(I)V
 
@@ -133,7 +133,7 @@
 
     .line 13
     :cond_3
-    iget-object p1, v1, Lab/p;->k0:Landroid/view/View;
+    iget-object p1, v1, Lab/p;->l0:Landroid/view/View;
 
     invoke-virtual {p1, v3}, Landroid/view/View;->setVisibility(I)V
 
@@ -141,7 +141,7 @@
 
     .line 14
     :cond_4
-    iget-object p1, v1, Lab/p;->l0:Landroid/view/View;
+    iget-object p1, v1, Lab/p;->m0:Landroid/view/View;
 
     invoke-virtual {p1, v3}, Landroid/view/View;->setVisibility(I)V
 
@@ -163,7 +163,7 @@
     .end annotation
 
     .line 1
-    invoke-static {p0}, Lj1/q;->e(Landroidx/fragment/app/Fragment;)Lab/p;
+    invoke-static {p0}, Ls4/e;->h(Landroidx/fragment/app/Fragment;)Lab/p;
 
     move-result-object v0
 
@@ -188,7 +188,7 @@
     if-eqz v0, :cond_1
 
     .line 5
-    iget-boolean v0, p0, Lna/a;->h0:Z
+    iget-boolean v0, p0, Lna/a;->i0:Z
 
     if-nez v0, :cond_1
 
@@ -196,9 +196,9 @@
 
     .line 6
     :cond_1
-    iget-object v0, p1, Lna/a;->j0:Lla/e;
+    iget-object v0, p1, Lna/a;->k0:Lla/e;
 
-    iget-object v1, p1, Lna/a;->i0:Lla/d;
+    iget-object v1, p1, Lna/a;->j0:Lla/d;
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -227,7 +227,7 @@
     check-cast v5, Lcom/helpshift/support/Section;
 
     .line 10
-    iget-object v5, v5, Lcom/helpshift/support/Section;->h:Ljava/lang/String;
+    iget-object v5, v5, Lcom/helpshift/support/Section;->i:Ljava/lang/String;
 
     .line 11
     invoke-virtual {v0, v5, v1}, Lla/e;->c(Ljava/lang/String;Lla/d;)Ljava/util/ArrayList;
@@ -278,7 +278,7 @@
     check-cast v1, Lcom/helpshift/support/Section;
 
     .line 17
-    iget-object v1, v1, Lcom/helpshift/support/Section;->h:Ljava/lang/String;
+    iget-object v1, v1, Lcom/helpshift/support/Section;->i:Ljava/lang/String;
 
     const-string v2, "sectionPublishId"
 
@@ -286,7 +286,7 @@
     invoke-virtual {p2, v2, v1}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 19
-    iget-object v1, p0, Landroidx/fragment/app/Fragment;->l:Landroid/os/Bundle;
+    iget-object v1, p0, Landroidx/fragment/app/Fragment;->m:Landroid/os/Bundle;
 
     .line 20
     invoke-virtual {v1, v0}, Landroid/os/Bundle;->getSerializable(Ljava/lang/String;)Ljava/io/Serializable;
@@ -314,13 +314,13 @@
 
     const/4 v9, 0x0
 
-    iget-boolean v10, p0, Lna/a;->h0:Z
+    iget-boolean v10, p0, Lna/a;->i0:Z
 
     .line 23
-    invoke-static/range {v4 .. v10}, Lj1/q;->g(Landroidx/fragment/app/FragmentManager;ILandroidx/fragment/app/Fragment;Ljava/lang/String;Ljava/lang/String;ZZ)V
+    invoke-static/range {v4 .. v10}, Ls4/e;->k(Landroidx/fragment/app/FragmentManager;ILandroidx/fragment/app/Fragment;Ljava/lang/String;Ljava/lang/String;ZZ)V
 
     .line 24
-    iput-boolean v3, p0, Lna/a;->h0:Z
+    iput-boolean v3, p0, Lna/a;->i0:Z
     :try_end_0
     .catch Ljava/lang/IllegalStateException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -338,7 +338,7 @@
     invoke-virtual {p2, v1, v2}, Landroid/os/Bundle;->putParcelableArrayList(Ljava/lang/String;Ljava/util/ArrayList;)V
 
     .line 27
-    iget-object v1, p0, Landroidx/fragment/app/Fragment;->l:Landroid/os/Bundle;
+    iget-object v1, p0, Landroidx/fragment/app/Fragment;->m:Landroid/os/Bundle;
 
     .line 28
     invoke-virtual {v1, v0}, Landroid/os/Bundle;->getSerializable(Ljava/lang/String;)Ljava/io/Serializable;
@@ -369,13 +369,13 @@
 
     const/4 v9, 0x0
 
-    iget-boolean v10, p0, Lna/a;->h0:Z
+    iget-boolean v10, p0, Lna/a;->i0:Z
 
     .line 32
-    invoke-static/range {v4 .. v10}, Lj1/q;->g(Landroidx/fragment/app/FragmentManager;ILandroidx/fragment/app/Fragment;Ljava/lang/String;Ljava/lang/String;ZZ)V
+    invoke-static/range {v4 .. v10}, Ls4/e;->k(Landroidx/fragment/app/FragmentManager;ILandroidx/fragment/app/Fragment;Ljava/lang/String;Ljava/lang/String;ZZ)V
 
     .line 33
-    iput-boolean v3, p0, Lna/a;->h0:Z
+    iput-boolean v3, p0, Lna/a;->i0:Z
     :try_end_1
     .catch Ljava/lang/IllegalStateException; {:try_start_1 .. :try_end_1} :catch_0
 
@@ -398,7 +398,7 @@
 
     invoke-direct {v0, p1}, Lla/e;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lna/a;->j0:Lla/e;
+    iput-object v0, p0, Lna/a;->k0:Lla/e;
 
     :catch_0
     return-void
@@ -411,7 +411,7 @@
     invoke-super {p0, p1}, Landroidx/fragment/app/Fragment;->V(Landroid/os/Bundle;)V
 
     .line 2
-    iget-object p1, p0, Landroidx/fragment/app/Fragment;->l:Landroid/os/Bundle;
+    iget-object p1, p0, Landroidx/fragment/app/Fragment;->m:Landroid/os/Bundle;
 
     if-eqz p1, :cond_0
 
@@ -424,7 +424,7 @@
 
     check-cast p1, Lla/d;
 
-    iput-object p1, p0, Lna/a;->i0:Lla/d;
+    iput-object p1, p0, Lna/a;->j0:Lla/d;
 
     :cond_0
     return-void
@@ -448,7 +448,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/fragment/app/Fragment;->M:Landroid/view/View;
+    iget-object v0, p0, Landroidx/fragment/app/Fragment;->N:Landroid/view/View;
 
     .line 2
     invoke-static {v0}, Lib/f;->a(Landroid/view/View;)V
@@ -456,7 +456,7 @@
     const/4 v0, 0x1
 
     .line 3
-    iput-boolean v0, p0, Landroidx/fragment/app/Fragment;->K:Z
+    iput-boolean v0, p0, Landroidx/fragment/app/Fragment;->L:Z
 
     return-void
 .end method
@@ -467,7 +467,7 @@
     const/4 v0, 0x1
 
     .line 1
-    iput-boolean v0, p0, Landroidx/fragment/app/Fragment;->K:Z
+    iput-boolean v0, p0, Landroidx/fragment/app/Fragment;->L:Z
 
     .line 2
     sget v0, Lcom/helpshift/R$string;->hs__help_header:I
@@ -479,7 +479,7 @@
     invoke-virtual {p0, v0}, Lab/i;->P0(Ljava/lang/String;)V
 
     .line 3
-    iget v0, p0, Lna/a;->g0:I
+    iget v0, p0, Lna/a;->h0:I
 
     if-nez v0, :cond_0
 
@@ -490,7 +490,7 @@
 
     .line 5
     :cond_0
-    iget-object v0, p0, Lna/a;->j0:Lla/e;
+    iget-object v0, p0, Lna/a;->k0:Lla/e;
 
     new-instance v1, Lna/a$b;
 
@@ -500,17 +500,17 @@
 
     invoke-direct {v2, p0}, Lna/a$a;-><init>(Lna/a;)V
 
-    iget-object v3, p0, Lna/a;->i0:Lla/d;
+    iget-object v3, p0, Lna/a;->j0:Lla/d;
 
     invoke-virtual {v0, v1, v2, v3}, Lla/e;->e(Landroid/os/Handler;Landroid/os/Handler;Lla/d;)V
 
     .line 6
-    iget-boolean v0, p0, Lab/i;->c0:Z
+    iget-boolean v0, p0, Lab/i;->d0:Z
 
     if-nez v0, :cond_1
 
     .line 7
-    sget-object v0, Lcom/helpshift/util/u;->c:Le7/g;
+    sget-object v0, Lcom/helpshift/util/t;->c:Le7/g;
 
     .line 8
     iget-object v0, v0, Le7/g;->b:Lk7/a;
@@ -542,7 +542,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Landroidx/fragment/app/Fragment;->A:Landroidx/fragment/app/Fragment;
+    iget-object v0, p0, Landroidx/fragment/app/Fragment;->B:Landroidx/fragment/app/Fragment;
 
     .line 2
     check-cast v0, Loa/c;

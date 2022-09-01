@@ -40,7 +40,7 @@
     const-string v2, "Preissue creation success. Handling on UI."
 
     .line 2
-    invoke-static {v1, v2, v0, v0}, Landroidx/savedstate/d;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v1, v2, v0, v0}, Le5/i;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
 
     .line 3
     iget-object v0, p0, Lf9/m;->b:Lf9/i;
@@ -112,7 +112,7 @@
 
     move-result-object v0
 
-    iget-object v0, v0, Lq8/d;->m:Ljava/lang/String;
+    iget-object v0, v0, Lq8/d;->n:Ljava/lang/String;
 
     const-string v1, "issue"
 

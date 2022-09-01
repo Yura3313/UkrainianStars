@@ -53,9 +53,9 @@
 
     .line 10
     :cond_0
-    sget-object v1, Li1/o;->B:Li1/o;
+    sget-object v1, Li1/p;->B:Li1/p;
 
-    iget-object v1, v1, Li1/o;->e:Lk3/eb;
+    iget-object v1, v1, Li1/p;->e:Lk3/eb;
 
     .line 11
     invoke-virtual {p0}, Landroid/view/View;->getContext()Landroid/content/Context;
@@ -126,9 +126,9 @@
 
     .line 2
     :goto_0
-    sget-object v0, Li1/o;->B:Li1/o;
+    sget-object v0, Li1/p;->B:Li1/p;
 
-    iget-object v0, v0, Li1/o;->g:Lk3/ia;
+    iget-object v0, v0, Li1/p;->g:Lk3/ia;
 
     const-string v1, "CoreWebView.loadUrl"
 
@@ -138,7 +138,7 @@
     const-string v0, "#007 Could not call remote method."
 
     .line 4
-    invoke-static {v0, p1}, Lk3/j6;->k(Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v0, p1}, Lcom/google/android/gms/ads/a;->i(Ljava/lang/String;Ljava/lang/Throwable;)V
 
     return-void
 .end method

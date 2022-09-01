@@ -15,20 +15,20 @@
 
 
 # instance fields
-.field public final a:Lvc/j;
+.field public final a:Lvc/i;
 
 
 # direct methods
-.method public constructor <init>(Lvc/j;)V
+.method public constructor <init>(Lvc/i;)V
     .locals 1
 
     const-string v0, "friends"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-direct {p0}, Lbe/h$b;-><init>()V
 
-    iput-object p1, p0, Lbe/h$b$h;->a:Lvc/j;
+    iput-object p1, p0, Lbe/h$b$h;->a:Lvc/i;
 
     return-void
 .end method
@@ -46,11 +46,11 @@
 
     check-cast p1, Lbe/h$b$h;
 
-    iget-object v0, p0, Lbe/h$b$h;->a:Lvc/j;
+    iget-object v0, p0, Lbe/h$b$h;->a:Lvc/i;
 
-    iget-object p1, p1, Lbe/h$b$h;->a:Lvc/j;
+    iget-object p1, p1, Lbe/h$b$h;->a:Lvc/i;
 
-    invoke-static {v0, p1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, p1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -73,11 +73,11 @@
 .method public final hashCode()I
     .locals 1
 
-    iget-object v0, p0, Lbe/h$b$h;->a:Lvc/j;
+    iget-object v0, p0, Lbe/h$b$h;->a:Lvc/i;
 
     if-eqz v0, :cond_0
 
-    invoke-virtual {v0}, Lvc/j;->hashCode()I
+    invoke-virtual {v0}, Lvc/i;->hashCode()I
 
     move-result v0
 
@@ -99,7 +99,7 @@
     .line 2
     new-instance p1, Lae/m$a;
 
-    iget-object v0, p0, Lbe/h$b$h;->a:Lvc/j;
+    iget-object v0, p0, Lbe/h$b$h;->a:Lvc/i;
 
     invoke-direct {p1, v0}, Lae/m$a;-><init>(Ljava/lang/Object;)V
 
@@ -117,7 +117,7 @@
     move-result-object v0
 
     .line 2
-    iget-object v1, p0, Lbe/h$b$h;->a:Lvc/j;
+    iget-object v1, p0, Lbe/h$b$h;->a:Lvc/i;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 

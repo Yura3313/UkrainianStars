@@ -14,14 +14,14 @@
 
 
 # instance fields
-.field public final synthetic f:Lcom/google/android/gms/drive/events/DriveEventService;
+.field public final synthetic g:Lcom/google/android/gms/drive/events/DriveEventService;
 
 
 # direct methods
 .method public constructor <init>(Lcom/google/android/gms/drive/events/DriveEventService;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/google/android/gms/drive/events/DriveEventService$b;->f:Lcom/google/android/gms/drive/events/DriveEventService;
+    iput-object p1, p0, Lcom/google/android/gms/drive/events/DriveEventService$b;->g:Lcom/google/android/gms/drive/events/DriveEventService;
 
     invoke-direct {p0}, Lcom/google/android/gms/internal/drive/zzet;-><init>()V
 
@@ -39,15 +39,15 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/gms/drive/events/DriveEventService$b;->f:Lcom/google/android/gms/drive/events/DriveEventService;
+    iget-object v0, p0, Lcom/google/android/gms/drive/events/DriveEventService$b;->g:Lcom/google/android/gms/drive/events/DriveEventService;
 
     monitor-enter v0
 
     .line 2
     :try_start_0
-    iget-object v1, p0, Lcom/google/android/gms/drive/events/DriveEventService$b;->f:Lcom/google/android/gms/drive/events/DriveEventService;
+    iget-object v1, p0, Lcom/google/android/gms/drive/events/DriveEventService$b;->g:Lcom/google/android/gms/drive/events/DriveEventService;
 
-    sget-object v2, Lcom/google/android/gms/drive/events/DriveEventService;->k:Ld2/e;
+    sget-object v2, Lcom/google/android/gms/drive/events/DriveEventService;->l:Ld2/e;
 
     .line 3
     invoke-virtual {v1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -58,7 +58,7 @@
     move-result v2
 
     .line 5
-    iget v3, v1, Lcom/google/android/gms/drive/events/DriveEventService;->j:I
+    iget v3, v1, Lcom/google/android/gms/drive/events/DriveEventService;->k:I
 
     if-ne v2, v3, :cond_0
 
@@ -66,20 +66,20 @@
 
     .line 6
     :cond_0
-    invoke-static {v1, v2}, Ll2/m;->a(Landroid/content/Context;I)Z
+    invoke-static {v1, v2}, Ll2/o;->a(Landroid/content/Context;I)Z
 
     move-result v3
 
     if-eqz v3, :cond_2
 
     .line 7
-    iput v2, v1, Lcom/google/android/gms/drive/events/DriveEventService;->j:I
+    iput v2, v1, Lcom/google/android/gms/drive/events/DriveEventService;->k:I
 
     .line 8
     :goto_0
-    iget-object v1, p0, Lcom/google/android/gms/drive/events/DriveEventService$b;->f:Lcom/google/android/gms/drive/events/DriveEventService;
+    iget-object v1, p0, Lcom/google/android/gms/drive/events/DriveEventService$b;->g:Lcom/google/android/gms/drive/events/DriveEventService;
 
-    iget-object v1, v1, Lcom/google/android/gms/drive/events/DriveEventService;->h:Lcom/google/android/gms/drive/events/DriveEventService$a;
+    iget-object v1, v1, Lcom/google/android/gms/drive/events/DriveEventService;->i:Lcom/google/android/gms/drive/events/DriveEventService$a;
 
     if-eqz v1, :cond_1
 
@@ -94,9 +94,9 @@
     move-result-object p1
 
     .line 11
-    iget-object v1, p0, Lcom/google/android/gms/drive/events/DriveEventService$b;->f:Lcom/google/android/gms/drive/events/DriveEventService;
+    iget-object v1, p0, Lcom/google/android/gms/drive/events/DriveEventService$b;->g:Lcom/google/android/gms/drive/events/DriveEventService;
 
-    iget-object v1, v1, Lcom/google/android/gms/drive/events/DriveEventService;->h:Lcom/google/android/gms/drive/events/DriveEventService$a;
+    iget-object v1, v1, Lcom/google/android/gms/drive/events/DriveEventService;->i:Lcom/google/android/gms/drive/events/DriveEventService$a;
 
     invoke-virtual {v1, p1}, Landroid/os/Handler;->sendMessage(Landroid/os/Message;)Z
 
@@ -104,7 +104,7 @@
 
     .line 12
     :cond_1
-    sget-object p1, Lcom/google/android/gms/drive/events/DriveEventService;->k:Ld2/e;
+    sget-object p1, Lcom/google/android/gms/drive/events/DriveEventService;->l:Ld2/e;
 
     const-string v1, "Receiving event before initialize is completed."
 

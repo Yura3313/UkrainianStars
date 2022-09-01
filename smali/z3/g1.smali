@@ -3,7 +3,7 @@
 
 
 # virtual methods
-.method public abstract a()Lk3/c9;
+.method public abstract a()Lcom/helpshift/util/a0;
 .end method
 
 .method public abstract b()Lz3/l0;

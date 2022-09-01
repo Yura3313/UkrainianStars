@@ -18,18 +18,18 @@
 
 
 # instance fields
-.field public final synthetic f:Lid/o;
+.field public final synthetic g:Lid/o;
 
-.field public final synthetic g:Landroid/view/View;
+.field public final synthetic h:Landroid/view/View;
 
 
 # direct methods
 .method public constructor <init>(Lid/o;Landroid/view/View;)V
     .locals 0
 
-    iput-object p1, p0, Lid/o$a;->f:Lid/o;
+    iput-object p1, p0, Lid/o$a;->g:Lid/o;
 
-    iput-object p2, p0, Lid/o$a;->g:Landroid/view/View;
+    iput-object p2, p0, Lid/o$a;->h:Landroid/view/View;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -42,7 +42,7 @@
     .locals 5
 
     .line 1
-    iget-object p1, p0, Lid/o$a;->g:Landroid/view/View;
+    iget-object p1, p0, Lid/o$a;->h:Landroid/view/View;
 
     sget v0, Lcom/supercell/id/R$id;->rejectButton:I
 
@@ -54,14 +54,14 @@
 
     const-string v0, "view.rejectButton"
 
-    invoke-static {p1, v0}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/4 v0, 0x0
 
     invoke-virtual {p1, v0}, Landroid/view/View;->setEnabled(Z)V
 
     .line 2
-    iget-object p1, p0, Lid/o$a;->g:Landroid/view/View;
+    iget-object p1, p0, Lid/o$a;->h:Landroid/view/View;
 
     sget v1, Lcom/supercell/id/R$id;->acceptButton:I
 
@@ -73,7 +73,7 @@
 
     const-string v1, "view.acceptButton"
 
-    invoke-static {p1, v1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v1}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {p1, v0}, Landroid/view/View;->setEnabled(Z)V
 
@@ -85,7 +85,7 @@
     move-result-object v0
 
     .line 4
-    iget-object v0, v0, Lae/u;->m:La5/d0;
+    iget-object v0, v0, Lae/u;->m:Lpe/a;
 
     const-string v1, "Friend Request Received Notification"
 
@@ -96,10 +96,10 @@
     const/16 v4, 0x18
 
     .line 5
-    invoke-static {v0, v1, v2, v3, v4}, La5/d0;->a(La5/d0;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;I)V
+    invoke-static {v0, v1, v2, v3, v4}, Lpe/a;->e(Lpe/a;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;I)V
 
     .line 6
-    iget-object v0, p0, Lid/o$a;->f:Lid/o;
+    iget-object v0, p0, Lid/o$a;->g:Lid/o;
 
     .line 7
     iget-object v1, v0, Lid/w$a;->f:Lid/w;
@@ -116,16 +116,16 @@
 
     move-result-object p1
 
-    iget-object v0, p0, Lid/o$a;->f:Lid/o;
+    iget-object v0, p0, Lid/o$a;->g:Lid/o;
 
     .line 10
-    iget-object v0, v0, Lid/o;->j:Lvc/n$j$d;
+    iget-object v0, v0, Lid/o;->j:Lvc/m$j$d;
 
     .line 11
-    iget-object v0, v0, Lvc/n$j$d;->h:Lcom/supercell/id/model/IdSocialAccount;
+    iget-object v0, v0, Lvc/m$j$d;->h:Lcom/supercell/id/model/IdSocialAccount;
 
     .line 12
-    invoke-virtual {p1, v0}, Lbe/h;->m(Lcom/supercell/id/model/IdSocialAccount;)Lze/e0;
+    invoke-virtual {p1, v0}, Lbe/h;->m(Lcom/supercell/id/model/IdSocialAccount;)Lze/f0;
 
     return-void
 .end method

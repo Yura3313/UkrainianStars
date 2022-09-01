@@ -1,10 +1,10 @@
 .class public Lxe/h;
-.super La5/e0;
+.super Lcom/google/android/play/core/assetpacks/n2;
 .source "_SequencesJvm.kt"
 
 
 # direct methods
-.method public static final d(Ljava/util/Iterator;)Lxe/d;
+.method public static final c(Ljava/util/Iterator;)Lxe/d;
     .locals 1
 
     .line 1

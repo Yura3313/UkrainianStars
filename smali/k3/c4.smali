@@ -1,46 +1,65 @@
-.class public final synthetic Lk3/c4;
-.super Ljava/lang/Object;
+.class public final Lk3/c4;
+.super Lk3/zi;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
-
-# interfaces
-.implements Ljava/lang/Runnable;
 
 
 # instance fields
-.field public final f:Lk3/y3;
-
-.field public final g:Ljava/lang/String;
+.field public final synthetic b:Lk3/x3;
 
 
 # direct methods
-.method public constructor <init>(Lk3/y3;Ljava/lang/String;)V
+.method public constructor <init>(Lk3/x3;)V
     .locals 0
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    iput-object p1, p0, Lk3/c4;->b:Lk3/x3;
 
-    iput-object p1, p0, Lk3/c4;->f:Lk3/y3;
-
-    iput-object p2, p0, Lk3/c4;->g:Ljava/lang/String;
+    invoke-direct {p0}, Lk3/zi;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final run()V
-    .locals 2
-
-    iget-object v0, p0, Lk3/c4;->f:Lk3/y3;
-
-    iget-object v1, p0, Lk3/c4;->g:Ljava/lang/String;
+.method public final p()V
+    .locals 1
 
     .line 1
-    iget-object v0, v0, Lk3/y3;->h:Lk3/aj;
-
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    iget-object v0, p0, Lk3/c4;->b:Lk3/x3;
 
     .line 2
-    invoke-static {v0, v1}, Lk3/cj;->a(Landroid/webkit/WebView;Ljava/lang/String;)V
+    iget-object v0, v0, Lk3/x3;->j:Lk3/u4;
+
+    if-eqz v0, :cond_0
+
+    .line 3
+    invoke-virtual {v0}, Lk3/u4;->b()V
+
+    :cond_0
+    return-void
+.end method
+
+.method public final q(Lk3/yi;)V
+    .locals 1
+
+    iget-object v0, p0, Lk3/c4;->b:Lk3/x3;
+
+    iget-object p1, p1, Lk3/yi;->b:Landroid/net/Uri;
+
+    invoke-virtual {v0, p1}, Lk3/h4;->m(Landroid/net/Uri;)Z
 
     return-void
+.end method
+
+.method public final r(Lk3/yi;)Z
+    .locals 1
+
+    iget-object v0, p0, Lk3/c4;->b:Lk3/x3;
+
+    iget-object p1, p1, Lk3/yi;->b:Landroid/net/Uri;
+
+    invoke-virtual {v0, p1}, Lk3/h4;->m(Landroid/net/Uri;)Z
+
+    move-result p1
+
+    return p1
 .end method

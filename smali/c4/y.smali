@@ -207,7 +207,7 @@
     invoke-virtual {p2, v0}, Lc4/v;->b(Lc4/w;)V
 
     .line 4
-    invoke-static {p1}, Lcom/google/android/gms/common/api/internal/LifecycleCallback;->b(Landroid/app/Activity;)Lb2/i;
+    invoke-static {p1}, Lcom/google/android/gms/common/api/internal/LifecycleCallback;->b(Landroid/app/Activity;)Lb2/h;
 
     move-result-object p1
 
@@ -216,7 +216,7 @@
 
     const-string v1, "TaskOnStopCallback"
 
-    invoke-interface {p1, v1, p2}, Lb2/i;->h(Ljava/lang/String;Ljava/lang/Class;)Lcom/google/android/gms/common/api/internal/LifecycleCallback;
+    invoke-interface {p1, v1, p2}, Lb2/h;->h(Ljava/lang/String;Ljava/lang/Class;)Lcom/google/android/gms/common/api/internal/LifecycleCallback;
 
     move-result-object p2
 
@@ -227,17 +227,17 @@
     .line 6
     new-instance p2, Lc4/y$a;
 
-    invoke-direct {p2, p1}, Lc4/y$a;-><init>(Lb2/i;)V
+    invoke-direct {p2, p1}, Lc4/y$a;-><init>(Lb2/h;)V
 
     .line 7
     :cond_0
-    iget-object p1, p2, Lc4/y$a;->g:Ljava/util/ArrayList;
+    iget-object p1, p2, Lc4/y$a;->h:Ljava/util/ArrayList;
 
     monitor-enter p1
 
     .line 8
     :try_start_0
-    iget-object p2, p2, Lc4/y$a;->g:Ljava/util/ArrayList;
+    iget-object p2, p2, Lc4/y$a;->h:Ljava/util/ArrayList;
 
     new-instance v1, Ljava/lang/ref/WeakReference;
 
@@ -654,7 +654,7 @@
     throw v1
 .end method
 
-.method public final n(Ljava/util/concurrent/Executor;Ly5/e0;)Lc4/f;
+.method public final n(Ljava/util/concurrent/Executor;Ly5/g0;)Lc4/f;
     .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -662,7 +662,7 @@
             "Ljava/lang/Object;",
             ">(",
             "Ljava/util/concurrent/Executor;",
-            "Ly5/e0;",
+            "Ly5/g0;",
             ")",
             "Lc4/f<",
             "TTContinuationResult;>;"
@@ -680,7 +680,7 @@
     new-instance v2, Lc4/u;
 
     .line 3
-    invoke-direct {v2, p1, p2, v0}, Lc4/u;-><init>(Ljava/util/concurrent/Executor;Ly5/e0;Lc4/y;)V
+    invoke-direct {v2, p1, p2, v0}, Lc4/u;-><init>(Ljava/util/concurrent/Executor;Ly5/g0;Lc4/y;)V
 
     .line 4
     invoke-virtual {v1, v2}, Lc4/v;->b(Lc4/w;)V
@@ -855,7 +855,7 @@
     if-eqz v0, :cond_5
 
     .line 2
-    sget v0, Lcom/google/android/gms/tasks/DuplicateTaskCompletionException;->f:I
+    sget v0, Lcom/google/android/gms/tasks/DuplicateTaskCompletionException;->g:I
 
     .line 3
     invoke-virtual {p0}, Lc4/y;->l()Z

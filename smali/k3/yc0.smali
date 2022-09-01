@@ -2,60 +2,88 @@
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
+# interfaces
+.implements Lk3/ad0;
 
-# static fields
-.field public static final synthetic a:[I
+
+# instance fields
+.field public final synthetic a:I
+
+.field public b:Ljava/lang/Object;
 
 
 # direct methods
-.method public static constructor <clinit>()V
+.method public synthetic constructor <init>(Ljava/lang/Object;I)V
+    .locals 0
+
+    iput p2, p0, Lk3/yc0;->a:I
+
+    iput-object p1, p0, Lk3/yc0;->b:Ljava/lang/Object;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final b(Ljava/lang/Object;)V
     .locals 3
 
+    iget v0, p0, Lk3/yc0;->a:I
+
+    packed-switch v0, :pswitch_data_0
+
+    goto :goto_0
+
     .line 1
-    sget-object v0, Lk3/ho0;->c:[I
+    :pswitch_0
+    iget-object v0, p0, Lk3/yc0;->b:Ljava/lang/Object;
 
-    invoke-virtual {v0}, [I->clone()Ljava/lang/Object;
+    check-cast v0, Landroid/os/Bundle;
 
-    move-result-object v0
+    check-cast p1, Landroid/os/Bundle;
 
-    check-cast v0, [I
+    const-string v1, "shared_pref"
 
     .line 2
-    array-length v0, v0
+    invoke-virtual {p1, v1, v0}, Landroid/os/Bundle;->putBundle(Ljava/lang/String;Landroid/os/Bundle;)V
 
-    new-array v0, v0, [I
+    return-void
 
-    sput-object v0, Lk3/yc0;->a:[I
-
-    const/4 v1, 0x0
-
-    const/4 v2, 0x1
+    .line 3
+    :goto_0
+    check-cast p1, Lorg/json/JSONObject;
 
     :try_start_0
-    aput v2, v0, v1
+    const-string v0, "eid"
+
+    const-string v1, ","
+
+    .line 4
+    iget-object v2, p0, Lk3/yc0;->b:Ljava/lang/Object;
+
+    check-cast v2, Ljava/util/List;
+
+    invoke-static {v1, v2}, Landroid/text/TextUtils;->join(Ljava/lang/CharSequence;Ljava/lang/Iterable;)Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {p1, v0, v1}, Lorg/json/JSONObject;->put(Ljava/lang/String;Ljava/lang/Object;)Lorg/json/JSONObject;
     :try_end_0
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
+    .catch Lorg/json/JSONException; {:try_start_0 .. :try_end_0} :catch_0
 
+    goto :goto_1
+
+    .line 5
     :catch_0
-    const/4 v0, 0x2
+    invoke-static {}, Lcom/google/android/gms/ads/a;->k()Z
 
-    :try_start_1
-    sget-object v1, Lk3/yc0;->a:[I
-
-    aput v0, v1, v2
-    :try_end_1
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_1
-
-    :catch_1
-    :try_start_2
-    sget-object v1, Lk3/yc0;->a:[I
-
-    const/4 v2, 0x3
-
-    aput v2, v1, v0
-    :try_end_2
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_2 .. :try_end_2} :catch_2
-
-    :catch_2
+    :goto_1
     return-void
+
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

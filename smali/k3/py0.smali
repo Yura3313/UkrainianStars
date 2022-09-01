@@ -4,186 +4,207 @@
 
 
 # instance fields
-.field public final a:I
+.field public A:F
+
+.field public B:F
+
+.field public C:F
+
+.field public D:F
+
+.field public E:F
+
+.field public F:F
+
+.field public G:I
+
+.field public H:I
+
+.field public I:I
+
+.field public J:J
+
+.field public K:J
+
+.field public L:Z
+
+.field public M:Z
+
+.field public N:Ljava/lang/String;
+
+.field public O:Lk3/l01;
+
+.field public P:I
+
+.field public a:Ljava/lang/String;
 
 .field public b:I
 
 .field public c:I
 
-.field public d:J
+.field public d:I
 
-.field public final e:Z
+.field public e:Z
 
-.field public final f:Lk3/s11;
+.field public f:[B
 
-.field public final g:Lk3/s11;
+.field public g:Lk3/ky0;
 
-.field public h:I
+.field public h:[B
 
-.field public i:I
+.field public i:Lcom/google/android/gms/internal/ads/zzjn;
+
+.field public j:I
+
+.field public k:I
+
+.field public l:I
+
+.field public m:I
+
+.field public n:I
+
+.field public o:[B
+
+.field public p:I
+
+.field public q:Z
+
+.field public r:I
+
+.field public s:I
+
+.field public t:I
+
+.field public u:I
+
+.field public v:I
+
+.field public w:F
+
+.field public x:F
+
+.field public y:F
+
+.field public z:F
 
 
 # direct methods
-.method public constructor <init>(Lk3/s11;Lk3/s11;Z)V
-    .locals 0
+.method public constructor <init>()V
+    .locals 4
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    const/4 v0, -0x1
+
     .line 2
-    iput-object p1, p0, Lk3/py0;->g:Lk3/s11;
+    iput v0, p0, Lk3/py0;->j:I
 
     .line 3
-    iput-object p2, p0, Lk3/py0;->f:Lk3/s11;
+    iput v0, p0, Lk3/py0;->k:I
 
     .line 4
-    iput-boolean p3, p0, Lk3/py0;->e:Z
-
-    const/16 p3, 0xc
+    iput v0, p0, Lk3/py0;->l:I
 
     .line 5
-    invoke-virtual {p2, p3}, Lk3/s11;->h(I)V
+    iput v0, p0, Lk3/py0;->m:I
+
+    const/4 v1, 0x0
 
     .line 6
-    invoke-virtual {p2}, Lk3/s11;->n()I
+    iput v1, p0, Lk3/py0;->n:I
 
-    move-result p2
-
-    iput p2, p0, Lk3/py0;->a:I
+    const/4 v2, 0x0
 
     .line 7
-    invoke-virtual {p1, p3}, Lk3/s11;->h(I)V
+    iput-object v2, p0, Lk3/py0;->o:[B
 
     .line 8
-    invoke-virtual {p1}, Lk3/s11;->n()I
-
-    move-result p2
-
-    iput p2, p0, Lk3/py0;->i:I
+    iput v0, p0, Lk3/py0;->p:I
 
     .line 9
-    invoke-virtual {p1}, Lk3/s11;->b()I
-
-    move-result p1
-
-    const/4 p2, 0x1
-
-    if-ne p1, p2, :cond_0
-
-    goto :goto_0
-
-    :cond_0
-    const/4 p2, 0x0
-
-    :goto_0
-    const-string p1, "first_chunk must be 1"
-
-    invoke-static {p2, p1}, Lk3/j6;->e(ZLjava/lang/Object;)V
-
-    const/4 p1, -0x1
+    iput-boolean v1, p0, Lk3/py0;->q:Z
 
     .line 10
-    iput p1, p0, Lk3/py0;->b:I
+    iput v0, p0, Lk3/py0;->r:I
 
-    return-void
-.end method
+    .line 11
+    iput v0, p0, Lk3/py0;->s:I
 
+    .line 12
+    iput v0, p0, Lk3/py0;->t:I
 
-# virtual methods
-.method public final a()Z
-    .locals 4
+    const/16 v1, 0x3e8
 
-    .line 1
-    iget v0, p0, Lk3/py0;->b:I
+    .line 13
+    iput v1, p0, Lk3/py0;->u:I
+
+    const/16 v1, 0xc8
+
+    .line 14
+    iput v1, p0, Lk3/py0;->v:I
+
+    const/high16 v1, -0x40800000    # -1.0f
+
+    .line 15
+    iput v1, p0, Lk3/py0;->w:F
+
+    .line 16
+    iput v1, p0, Lk3/py0;->x:F
+
+    .line 17
+    iput v1, p0, Lk3/py0;->y:F
+
+    .line 18
+    iput v1, p0, Lk3/py0;->z:F
+
+    .line 19
+    iput v1, p0, Lk3/py0;->A:F
+
+    .line 20
+    iput v1, p0, Lk3/py0;->B:F
+
+    .line 21
+    iput v1, p0, Lk3/py0;->C:F
+
+    .line 22
+    iput v1, p0, Lk3/py0;->D:F
+
+    .line 23
+    iput v1, p0, Lk3/py0;->E:F
+
+    .line 24
+    iput v1, p0, Lk3/py0;->F:F
 
     const/4 v1, 0x1
 
-    add-int/2addr v0, v1
+    .line 25
+    iput v1, p0, Lk3/py0;->G:I
 
-    iput v0, p0, Lk3/py0;->b:I
+    .line 26
+    iput v0, p0, Lk3/py0;->H:I
 
-    iget v2, p0, Lk3/py0;->a:I
+    const/16 v0, 0x1f40
 
-    if-ne v0, v2, :cond_0
+    .line 27
+    iput v0, p0, Lk3/py0;->I:I
 
-    const/4 v0, 0x0
+    const-wide/16 v2, 0x0
 
-    return v0
+    .line 28
+    iput-wide v2, p0, Lk3/py0;->J:J
 
-    .line 2
-    :cond_0
-    iget-boolean v0, p0, Lk3/py0;->e:Z
+    .line 29
+    iput-wide v2, p0, Lk3/py0;->K:J
 
-    if-eqz v0, :cond_1
+    .line 30
+    iput-boolean v1, p0, Lk3/py0;->M:Z
 
-    iget-object v0, p0, Lk3/py0;->f:Lk3/s11;
+    const-string v0, "eng"
 
-    invoke-virtual {v0}, Lk3/s11;->o()J
+    .line 31
+    iput-object v0, p0, Lk3/py0;->N:Ljava/lang/String;
 
-    move-result-wide v2
-
-    goto :goto_0
-
-    .line 3
-    :cond_1
-    iget-object v0, p0, Lk3/py0;->f:Lk3/s11;
-
-    invoke-virtual {v0}, Lk3/s11;->m()J
-
-    move-result-wide v2
-
-    :goto_0
-    iput-wide v2, p0, Lk3/py0;->d:J
-
-    .line 4
-    iget v0, p0, Lk3/py0;->b:I
-
-    iget v2, p0, Lk3/py0;->h:I
-
-    if-ne v0, v2, :cond_3
-
-    .line 5
-    iget-object v0, p0, Lk3/py0;->g:Lk3/s11;
-
-    invoke-virtual {v0}, Lk3/s11;->n()I
-
-    move-result v0
-
-    iput v0, p0, Lk3/py0;->c:I
-
-    .line 6
-    iget-object v0, p0, Lk3/py0;->g:Lk3/s11;
-
-    const/4 v2, 0x4
-
-    invoke-virtual {v0, v2}, Lk3/s11;->i(I)V
-
-    .line 7
-    iget v0, p0, Lk3/py0;->i:I
-
-    sub-int/2addr v0, v1
-
-    iput v0, p0, Lk3/py0;->i:I
-
-    if-lez v0, :cond_2
-
-    .line 8
-    iget-object v0, p0, Lk3/py0;->g:Lk3/s11;
-
-    invoke-virtual {v0}, Lk3/s11;->n()I
-
-    move-result v0
-
-    sub-int/2addr v0, v1
-
-    goto :goto_1
-
-    :cond_2
-    const/4 v0, -0x1
-
-    :goto_1
-    iput v0, p0, Lk3/py0;->h:I
-
-    :cond_3
-    return v1
+    return-void
 .end method

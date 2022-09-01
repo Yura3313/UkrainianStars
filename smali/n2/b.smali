@@ -150,7 +150,7 @@
 
     .line 3
     :cond_0
-    invoke-static {}, Ll2/j;->c()Z
+    invoke-static {}, Ll2/l;->c()Z
 
     move-result v0
 
@@ -203,7 +203,7 @@
     .end annotation
 
     .line 1
-    invoke-static {}, Ll2/j;->a()Z
+    invoke-static {}, Ll2/l;->a()Z
 
     move-result v0
 

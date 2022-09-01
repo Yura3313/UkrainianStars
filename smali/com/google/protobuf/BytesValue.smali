@@ -71,7 +71,7 @@
     invoke-direct {p0}, Lcom/google/protobuf/GeneratedMessageLite;-><init>()V
 
     .line 2
-    sget-object v0, Lcom/google/protobuf/i;->g:Lcom/google/protobuf/i$h;
+    sget-object v0, Lcom/google/protobuf/i;->h:Lcom/google/protobuf/i$h;
 
     iput-object v0, p0, Lcom/google/protobuf/BytesValue;->value_:Lcom/google/protobuf/i;
 
@@ -168,7 +168,7 @@
     invoke-virtual {v0}, Lcom/google/protobuf/GeneratedMessageLite$a;->d()V
 
     .line 3
-    iget-object v1, v0, Lcom/google/protobuf/GeneratedMessageLite$a;->g:Lcom/google/protobuf/GeneratedMessageLite;
+    iget-object v1, v0, Lcom/google/protobuf/GeneratedMessageLite$a;->h:Lcom/google/protobuf/GeneratedMessageLite;
 
     check-cast v1, Lcom/google/protobuf/BytesValue;
 

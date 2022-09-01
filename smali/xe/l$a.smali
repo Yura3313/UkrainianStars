@@ -28,7 +28,7 @@
 
 
 # instance fields
-.field public final f:Ljava/util/Iterator;
+.field public final g:Ljava/util/Iterator;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Iterator<",
@@ -37,7 +37,7 @@
     .end annotation
 .end field
 
-.field public final synthetic g:Lxe/l;
+.field public final synthetic h:Lxe/l;
 
 
 # direct methods
@@ -50,7 +50,7 @@
     .end annotation
 
     .line 1
-    iput-object p1, p0, Lxe/l$a;->g:Lxe/l;
+    iput-object p1, p0, Lxe/l$a;->h:Lxe/l;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -62,7 +62,7 @@
 
     move-result-object p1
 
-    iput-object p1, p0, Lxe/l$a;->f:Ljava/util/Iterator;
+    iput-object p1, p0, Lxe/l$a;->g:Ljava/util/Iterator;
 
     return-void
 .end method
@@ -72,7 +72,7 @@
 .method public final hasNext()Z
     .locals 1
 
-    iget-object v0, p0, Lxe/l$a;->f:Ljava/util/Iterator;
+    iget-object v0, p0, Lxe/l$a;->g:Ljava/util/Iterator;
 
     invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
 
@@ -90,13 +90,13 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lxe/l$a;->g:Lxe/l;
+    iget-object v0, p0, Lxe/l$a;->h:Lxe/l;
 
     .line 2
     iget-object v0, v0, Lxe/l;->b:Lre/l;
 
     .line 3
-    iget-object v1, p0, Lxe/l$a;->f:Ljava/util/Iterator;
+    iget-object v1, p0, Lxe/l$a;->g:Ljava/util/Iterator;
 
     invoke-interface {v1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
 

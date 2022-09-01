@@ -49,7 +49,7 @@
     invoke-virtual {p1}, Lcom/google/android/gms/auth/api/signin/internal/zzv;->S0()V
 
     .line 3
-    iget-object p1, p1, Lcom/google/android/gms/auth/api/signin/internal/zzv;->f:Landroid/content/Context;
+    iget-object p1, p1, Lcom/google/android/gms/auth/api/signin/internal/zzv;->g:Landroid/content/Context;
 
     invoke-static {p1}, Ly1/p;->b(Landroid/content/Context;)Ly1/p;
 
@@ -69,7 +69,7 @@
     invoke-virtual {p1}, Lcom/google/android/gms/auth/api/signin/internal/zzv;->S0()V
 
     .line 6
-    iget-object v0, p1, Lcom/google/android/gms/auth/api/signin/internal/zzv;->f:Landroid/content/Context;
+    iget-object v0, p1, Lcom/google/android/gms/auth/api/signin/internal/zzv;->g:Landroid/content/Context;
 
     invoke-static {v0}, Ly1/b;->a(Landroid/content/Context;)Ly1/b;
 
@@ -81,7 +81,7 @@
     move-result-object v1
 
     .line 8
-    sget-object v2, Lcom/google/android/gms/auth/api/signin/GoogleSignInOptions;->s:Lcom/google/android/gms/auth/api/signin/GoogleSignInOptions;
+    sget-object v2, Lcom/google/android/gms/auth/api/signin/GoogleSignInOptions;->t:Lcom/google/android/gms/auth/api/signin/GoogleSignInOptions;
 
     if-eqz v1, :cond_2
 
@@ -92,7 +92,7 @@
 
     .line 10
     :cond_2
-    iget-object p1, p1, Lcom/google/android/gms/auth/api/signin/internal/zzv;->f:Landroid/content/Context;
+    iget-object p1, p1, Lcom/google/android/gms/auth/api/signin/internal/zzv;->g:Landroid/content/Context;
 
     .line 11
     new-instance v0, Lx1/a;
@@ -104,7 +104,7 @@
     if-eqz v1, :cond_4
 
     .line 12
-    iget-object p1, v0, Lcom/google/android/gms/common/api/b;->h:Lb2/z;
+    iget-object p1, v0, Lcom/google/android/gms/common/api/b;->h:Lb2/y;
 
     .line 13
     iget-object v1, v0, Lcom/google/android/gms/common/api/b;->a:Landroid/content/Context;

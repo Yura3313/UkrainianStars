@@ -1,5 +1,5 @@
 !!brut.androlib.meta.MetaInfo
-apkFileName: bs_v44.226_for_mods.apk
+apkFileName: BS_v45.202_for_modders.apk
 compressionType: false
 doNotCompress:
 - resources.arsc
@@ -604,7 +604,7 @@ usesFramework:
   ids:
   - 1
   tag: null
-version: 2.5.0
+version: 2.6.1
 versionInfo:
-  versionCode: '44226'
-  versionName: '44.226'
+  versionCode: '45198'
+  versionName: '45.198'

@@ -22,14 +22,14 @@
 
 
 # virtual methods
-.method public final a()Lk3/em0;
+.method public final a()Lk3/hm0;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Ljava/lang/String;",
             ")",
-            "Lk3/em0<",
+            "Lk3/hm0<",
             "Ljava/lang/String;",
             ">;"
         }
@@ -37,21 +37,21 @@
 
     const/4 v0, 0x0
 
-    invoke-static {v0}, Lk3/am0;->f(Ljava/lang/Object;)Lk3/em0;
+    invoke-static {v0}, Lk3/dm0;->g(Ljava/lang/Object;)Lk3/hm0;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public final b()Lk3/em0;
+.method public final b()Lk3/hm0;
     .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Ljava/lang/String;",
             ")",
-            "Lk3/em0<",
+            "Lk3/hm0<",
             "Ljava/lang/String;",
             ">;"
         }
@@ -59,7 +59,7 @@
 
     const/4 v0, 0x0
 
-    invoke-static {v0}, Lk3/am0;->f(Ljava/lang/Object;)Lk3/em0;
+    invoke-static {v0}, Lk3/dm0;->g(Ljava/lang/Object;)Lk3/hm0;
 
     move-result-object v0
 

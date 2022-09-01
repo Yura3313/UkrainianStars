@@ -57,7 +57,7 @@
     throw v0
 .end method
 
-.method public final b2()I
+.method public final a2()I
     .locals 1
 
     new-instance v0, Ljava/lang/NoSuchMethodError;

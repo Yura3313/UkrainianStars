@@ -1,61 +1,137 @@
-.class public final synthetic Lk3/j90;
+.class public final Lk3/j90;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
+# interfaces
+.implements Lk3/mv0;
 
-# static fields
-.field public static final synthetic a:[I
+
+# instance fields
+.field public final synthetic a:I
+
+.field public final b:Lk3/qv0;
+
+.field public final c:Lk3/qv0;
+
+.field public final d:Lk3/qv0;
+
+.field public final e:Lk3/qv0;
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 3
+.method public synthetic constructor <init>(Lk3/qv0;Lk3/qv0;Lk3/qv0;Lk3/qv0;I)V
+    .locals 0
+
+    iput p5, p0, Lk3/j90;->a:I
+
+    iput-object p1, p0, Lk3/j90;->b:Lk3/qv0;
+
+    iput-object p2, p0, Lk3/j90;->c:Lk3/qv0;
+
+    iput-object p3, p0, Lk3/j90;->d:Lk3/qv0;
+
+    iput-object p4, p0, Lk3/j90;->e:Lk3/qv0;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final synthetic get()Ljava/lang/Object;
+    .locals 5
+
+    iget v0, p0, Lk3/j90;->a:I
+
+    packed-switch v0, :pswitch_data_0
+
+    goto :goto_0
 
     .line 1
-    sget-object v0, Lk3/c9;->i:[I
+    :pswitch_0
+    iget-object v0, p0, Lk3/j90;->b:Lk3/qv0;
 
-    invoke-virtual {v0}, [I->clone()Ljava/lang/Object;
+    invoke-interface {v0}, Lk3/qv0;->get()Ljava/lang/Object;
 
     move-result-object v0
 
-    check-cast v0, [I
+    check-cast v0, Lk3/jm0;
+
+    iget-object v1, p0, Lk3/j90;->c:Lk3/qv0;
+
+    invoke-interface {v1}, Lk3/qv0;->get()Ljava/lang/Object;
+
+    move-result-object v1
+
+    check-cast v1, Landroid/content/Context;
+
+    iget-object v2, p0, Lk3/j90;->d:Lk3/qv0;
+
+    invoke-interface {v2}, Lk3/qv0;->get()Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Lk3/vg0;
+
+    iget-object v3, p0, Lk3/j90;->e:Lk3/qv0;
+
+    invoke-interface {v3}, Lk3/qv0;->get()Ljava/lang/Object;
+
+    move-result-object v3
+
+    check-cast v3, Landroid/view/ViewGroup;
 
     .line 2
-    array-length v0, v0
+    new-instance v4, Lk3/h90;
 
-    new-array v0, v0, [I
+    invoke-direct {v4, v0, v1, v2, v3}, Lk3/h90;-><init>(Lk3/jm0;Landroid/content/Context;Lk3/vg0;Landroid/view/ViewGroup;)V
 
-    sput-object v0, Lk3/j90;->a:[I
+    return-object v4
 
-    const/4 v1, 0x1
+    .line 3
+    :goto_0
+    iget-object v0, p0, Lk3/j90;->b:Lk3/qv0;
 
-    :try_start_0
-    aput v1, v0, v1
-    :try_end_0
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_0 .. :try_end_0} :catch_0
+    invoke-interface {v0}, Lk3/qv0;->get()Ljava/lang/Object;
 
-    :catch_0
-    :try_start_1
-    sget-object v0, Lk3/j90;->a:[I
+    move-result-object v0
 
-    const/4 v1, 0x2
+    check-cast v0, Lk3/jm0;
 
-    aput v1, v0, v1
-    :try_end_1
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_1 .. :try_end_1} :catch_1
+    iget-object v1, p0, Lk3/j90;->c:Lk3/qv0;
 
-    :catch_1
-    :try_start_2
-    sget-object v0, Lk3/j90;->a:[I
+    invoke-interface {v1}, Lk3/qv0;->get()Ljava/lang/Object;
 
-    const/4 v1, 0x0
+    move-result-object v1
 
-    const/4 v2, 0x3
+    check-cast v1, Lk3/vg0;
 
-    aput v2, v0, v1
-    :try_end_2
-    .catch Ljava/lang/NoSuchFieldError; {:try_start_2 .. :try_end_2} :catch_2
+    iget-object v2, p0, Lk3/j90;->d:Lk3/qv0;
 
-    :catch_2
-    return-void
+    invoke-interface {v2}, Lk3/qv0;->get()Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, Landroid/content/pm/PackageInfo;
+
+    iget-object v3, p0, Lk3/j90;->e:Lk3/qv0;
+
+    invoke-interface {v3}, Lk3/qv0;->get()Ljava/lang/Object;
+
+    move-result-object v3
+
+    check-cast v3, Lk3/ua;
+
+    .line 4
+    new-instance v4, Lk3/tb0;
+
+    invoke-direct {v4, v0, v1, v2, v3}, Lk3/tb0;-><init>(Lk3/jm0;Lk3/vg0;Landroid/content/pm/PackageInfo;Lk3/ua;)V
+
+    return-object v4
+
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_0
+    .end packed-switch
 .end method

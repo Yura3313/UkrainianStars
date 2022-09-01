@@ -1,6 +1,6 @@
 .class public final Lvc/s;
 .super Ljava/lang/Object;
-.source "IdProfileInfo.kt"
+.source "IdPublicProfile.kt"
 
 
 # instance fields
@@ -8,914 +8,632 @@
 
 .field public final b:Ljava/lang/String;
 
-.field public final c:Ljava/util/Date;
+.field public final c:Lcom/supercell/id/model/ProfileImage;
 
 .field public final d:Ljava/lang/String;
 
 .field public final e:Ljava/lang/String;
 
-.field public final f:Ljava/lang/String;
+.field public final f:Lcom/supercell/id/model/IdRelationshipStatus;
 
-.field public final g:Ljava/util/Date;
-
-.field public final h:Ljava/lang/String;
-
-.field public final i:Ljava/lang/String;
-
-.field public final j:Ljava/lang/String;
-
-.field public final k:Ljava/lang/String;
-
-.field public final l:Z
-
-.field public final m:Z
-
-.field public final n:Ljava/util/List;
+.field public final g:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
-            "Lcom/supercell/id/IdFriend;",
+            "Lcom/supercell/id/model/IdSystem;",
             ">;"
         }
     .end annotation
 .end field
 
-.field public final o:I
-
-.field public final p:Ljava/util/List;
+.field public final h:Ljava/util/List;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
-            "Lvc/x;",
+            "Lcom/supercell/id/model/IdConnectedSystem;",
             ">;"
         }
     .end annotation
 .end field
 
-.field public final q:I
+.field public final i:Lcom/supercell/id/model/IdPresenceStatus;
+
+.field public final j:Z
 
 
 # direct methods
-.method public constructor <init>(Lorg/json/JSONObject;)V
-    .locals 22
+.method public constructor <init>(Lcom/supercell/id/model/IdSocialAccount;Ljava/lang/String;Lcom/supercell/id/model/ProfileImage;Ljava/lang/String;Ljava/lang/String;Lcom/supercell/id/model/IdRelationshipStatus;Ljava/util/List;Ljava/util/List;Lcom/supercell/id/model/IdPresenceStatus;Z)V
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lcom/supercell/id/model/IdSocialAccount;",
+            "Ljava/lang/String;",
+            "Lcom/supercell/id/model/ProfileImage;",
+            "Ljava/lang/String;",
+            "Ljava/lang/String;",
+            "Lcom/supercell/id/model/IdRelationshipStatus;",
+            "Ljava/util/List<",
+            "Lcom/supercell/id/model/IdSystem;",
+            ">;",
+            "Ljava/util/List<",
+            "Lcom/supercell/id/model/IdConnectedSystem;",
+            ">;",
+            "Lcom/supercell/id/model/IdPresenceStatus;",
+            "Z)V"
+        }
+    .end annotation
 
-    move-object/from16 v0, p0
+    const-string v0, "account"
 
-    move-object/from16 v1, p1
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    const-string v2, "data"
+    const-string v0, "image"
 
-    invoke-static {v1, v2}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p3, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "relationship"
+
+    invoke-static {p6, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "availableSystems"
+
+    invoke-static {p7, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "connectedSystems"
+
+    invoke-static {p8, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
-    sget-object v2, Lcom/supercell/id/model/IdSocialAccount;->f:Lcom/supercell/id/model/IdSocialAccount$b;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    invoke-virtual {v2, v1}, Lcom/supercell/id/model/IdSocialAccount$b;->b(Lorg/json/JSONObject;)Lcom/supercell/id/model/IdSocialAccount;
+    iput-object p1, p0, Lvc/s;->a:Lcom/supercell/id/model/IdSocialAccount;
 
-    move-result-object v2
+    iput-object p2, p0, Lvc/s;->b:Ljava/lang/String;
 
-    const-string v3, "name"
+    iput-object p3, p0, Lvc/s;->c:Lcom/supercell/id/model/ProfileImage;
+
+    iput-object p4, p0, Lvc/s;->d:Ljava/lang/String;
+
+    iput-object p5, p0, Lvc/s;->e:Ljava/lang/String;
+
+    iput-object p6, p0, Lvc/s;->f:Lcom/supercell/id/model/IdRelationshipStatus;
+
+    iput-object p7, p0, Lvc/s;->g:Ljava/util/List;
+
+    iput-object p8, p0, Lvc/s;->h:Ljava/util/List;
+
+    iput-object p9, p0, Lvc/s;->i:Lcom/supercell/id/model/IdPresenceStatus;
+
+    iput-boolean p10, p0, Lvc/s;->j:Z
+
+    return-void
+.end method
+
+.method public constructor <init>(Lorg/json/JSONObject;)V
+    .locals 14
+
+    const-string v0, "data"
+
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 2
-    invoke-virtual {v1, v3}, Lorg/json/JSONObject;->optJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
+    sget-object v1, Lcom/supercell/id/model/IdSocialAccount;->g:Lcom/supercell/id/model/IdSocialAccount$b;
 
-    move-result-object v4
+    invoke-virtual {v1, p1}, Lcom/supercell/id/model/IdSocialAccount$b;->b(Lorg/json/JSONObject;)Lcom/supercell/id/model/IdSocialAccount;
 
-    if-eqz v4, :cond_2
+    move-result-object v3
+
+    const-string v1, "name"
 
     .line 3
-    invoke-virtual {v4, v3}, Lorg/json/JSONObject;->opt(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p1, v1}, Lorg/json/JSONObject;->opt(Ljava/lang/String;)Ljava/lang/Object;
 
-    move-result-object v4
+    move-result-object v1
 
-    if-eqz v4, :cond_0
+    const/4 v2, 0x0
+
+    if-eqz v1, :cond_0
 
     .line 4
-    sget-object v6, Lorg/json/JSONObject;->NULL:Ljava/lang/Object;
+    sget-object v4, Lorg/json/JSONObject;->NULL:Ljava/lang/Object;
 
-    invoke-static {v4, v6}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v4}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
-    move-result v6
+    move-result v4
 
-    if-eqz v6, :cond_1
+    if-eqz v4, :cond_1
 
     :cond_0
-    const/4 v4, 0x0
+    move-object v1, v2
 
     :cond_1
-    if-eqz v4, :cond_2
+    if-eqz v1, :cond_3
 
     .line 5
-    instance-of v6, v4, Ljava/lang/String;
+    instance-of v4, v1, Ljava/lang/String;
 
-    if-eqz v6, :cond_2
+    if-eqz v4, :cond_2
 
-    check-cast v4, Ljava/lang/String;
+    check-cast v1, Ljava/lang/String;
 
     goto :goto_0
 
     :cond_2
-    const/4 v4, 0x0
+    move-object v1, v2
 
-    .line 6
     :goto_0
-    invoke-virtual {v1, v3}, Lorg/json/JSONObject;->optJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
+    move-object v4, v1
 
-    move-result-object v3
-
-    const-string v6, "changeAllowed"
-
-    if-eqz v3, :cond_7
-
-    .line 7
-    invoke-virtual {v3, v6}, Lorg/json/JSONObject;->opt(Ljava/lang/String;)Ljava/lang/Object;
-
-    move-result-object v3
-
-    if-eqz v3, :cond_3
-
-    .line 8
-    sget-object v7, Lorg/json/JSONObject;->NULL:Ljava/lang/Object;
-
-    invoke-static {v3, v7}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result v7
-
-    if-eqz v7, :cond_4
+    goto :goto_1
 
     :cond_3
-    const/4 v3, 0x0
-
-    :cond_4
-    if-eqz v3, :cond_6
-
-    .line 9
-    instance-of v7, v3, Ljava/lang/Integer;
-
-    if-eqz v7, :cond_5
-
-    check-cast v3, Ljava/lang/Number;
-
-    invoke-virtual {v3}, Ljava/lang/Number;->intValue()I
-
-    move-result v3
-
-    int-to-long v7, v3
-
-    invoke-static {v7, v8}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
-
-    move-result-object v3
-
-    goto :goto_1
-
-    .line 10
-    :cond_5
-    instance-of v7, v3, Ljava/lang/Long;
-
-    if-eqz v7, :cond_6
-
-    check-cast v3, Ljava/lang/Long;
-
-    goto :goto_1
-
-    :cond_6
-    const/4 v3, 0x0
+    move-object v4, v2
 
     :goto_1
-    if-eqz v3, :cond_7
+    const-string v1, "avatarImage"
 
-    .line 11
-    invoke-virtual {v3}, Ljava/lang/Number;->longValue()J
-
-    move-result-wide v7
-
-    .line 12
-    new-instance v3, Ljava/util/Date;
-
-    invoke-direct {v3, v7, v8}, Ljava/util/Date;-><init>(J)V
-
-    goto :goto_2
-
-    .line 13
-    :cond_7
-    new-instance v3, Ljava/util/Date;
-
-    invoke-direct {v3}, Ljava/util/Date;-><init>()V
-
-    :goto_2
-    const-string v7, "avatarImage"
-
-    .line 14
-    invoke-virtual {v1, v7}, Lorg/json/JSONObject;->optJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
-
-    move-result-object v7
-
-    if-eqz v7, :cond_a
-
-    const-string v8, "image"
-
-    .line 15
-    invoke-virtual {v7, v8}, Lorg/json/JSONObject;->opt(Ljava/lang/String;)Ljava/lang/Object;
-
-    move-result-object v7
-
-    if-eqz v7, :cond_8
-
-    .line 16
-    sget-object v8, Lorg/json/JSONObject;->NULL:Ljava/lang/Object;
-
-    invoke-static {v7, v8}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result v8
-
-    if-eqz v8, :cond_9
-
-    :cond_8
-    const/4 v7, 0x0
-
-    :cond_9
-    if-eqz v7, :cond_a
-
-    .line 17
-    instance-of v8, v7, Ljava/lang/String;
-
-    if-eqz v8, :cond_a
-
-    check-cast v7, Ljava/lang/String;
-
-    goto :goto_3
-
-    :cond_a
-    const/4 v7, 0x0
-
-    :goto_3
-    const-string v8, "imageURL"
-
-    .line 18
-    invoke-virtual {v1, v8}, Lorg/json/JSONObject;->optJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
-
-    move-result-object v9
-
-    const-string v10, "URL"
-
-    if-eqz v9, :cond_d
-
-    .line 19
-    invoke-virtual {v9, v10}, Lorg/json/JSONObject;->opt(Ljava/lang/String;)Ljava/lang/Object;
-
-    move-result-object v9
-
-    if-eqz v9, :cond_b
-
-    .line 20
-    sget-object v11, Lorg/json/JSONObject;->NULL:Ljava/lang/Object;
-
-    invoke-static {v9, v11}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result v11
-
-    if-eqz v11, :cond_c
-
-    :cond_b
-    const/4 v9, 0x0
-
-    :cond_c
-    if-eqz v9, :cond_d
-
-    .line 21
-    instance-of v11, v9, Ljava/lang/String;
-
-    if-eqz v11, :cond_d
-
-    check-cast v9, Ljava/lang/String;
-
-    goto :goto_4
-
-    :cond_d
-    const/4 v9, 0x0
-
-    .line 22
-    :goto_4
-    invoke-virtual {v1, v8}, Lorg/json/JSONObject;->optJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
-
-    move-result-object v11
-
-    const-string v12, "imageId"
-
-    if-eqz v11, :cond_10
-
-    .line 23
-    invoke-virtual {v11, v12}, Lorg/json/JSONObject;->opt(Ljava/lang/String;)Ljava/lang/Object;
-
-    move-result-object v11
-
-    if-eqz v11, :cond_e
-
-    .line 24
-    sget-object v13, Lorg/json/JSONObject;->NULL:Ljava/lang/Object;
-
-    invoke-static {v11, v13}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result v13
-
-    if-eqz v13, :cond_f
-
-    :cond_e
-    const/4 v11, 0x0
-
-    :cond_f
-    if-eqz v11, :cond_10
-
-    .line 25
-    instance-of v13, v11, Ljava/lang/String;
-
-    if-eqz v13, :cond_10
-
-    check-cast v11, Ljava/lang/String;
-
-    goto :goto_5
-
-    :cond_10
-    const/4 v11, 0x0
-
-    .line 26
-    :goto_5
-    invoke-virtual {v1, v8}, Lorg/json/JSONObject;->optJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
-
-    move-result-object v8
-
-    if-eqz v8, :cond_15
-
-    .line 27
-    invoke-virtual {v8, v6}, Lorg/json/JSONObject;->opt(Ljava/lang/String;)Ljava/lang/Object;
-
-    move-result-object v6
-
-    if-eqz v6, :cond_11
-
-    .line 28
-    sget-object v8, Lorg/json/JSONObject;->NULL:Ljava/lang/Object;
-
-    invoke-static {v6, v8}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result v8
-
-    if-eqz v8, :cond_12
-
-    :cond_11
-    const/4 v6, 0x0
-
-    :cond_12
-    if-eqz v6, :cond_14
-
-    .line 29
-    instance-of v8, v6, Ljava/lang/Integer;
-
-    if-eqz v8, :cond_13
-
-    check-cast v6, Ljava/lang/Number;
-
-    invoke-virtual {v6}, Ljava/lang/Number;->intValue()I
-
-    move-result v6
-
-    int-to-long v13, v6
-
-    invoke-static {v13, v14}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
-
-    move-result-object v6
-
-    goto :goto_6
-
-    .line 30
-    :cond_13
-    instance-of v8, v6, Ljava/lang/Long;
-
-    if-eqz v8, :cond_14
-
-    check-cast v6, Ljava/lang/Long;
-
-    goto :goto_6
-
-    :cond_14
-    const/4 v6, 0x0
-
-    :goto_6
-    if-eqz v6, :cond_15
-
-    .line 31
-    invoke-virtual {v6}, Ljava/lang/Number;->longValue()J
-
-    move-result-wide v13
-
-    .line 32
-    new-instance v6, Ljava/util/Date;
-
-    invoke-direct {v6, v13, v14}, Ljava/util/Date;-><init>(J)V
-
-    goto :goto_7
-
-    .line 33
-    :cond_15
-    new-instance v6, Ljava/util/Date;
-
-    invoke-direct {v6}, Ljava/util/Date;-><init>()V
-
-    :goto_7
-    const-string v8, "underReviewImageURL"
-
-    .line 34
-    invoke-virtual {v1, v8}, Lorg/json/JSONObject;->optJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
-
-    move-result-object v13
-
-    if-eqz v13, :cond_18
-
-    .line 35
-    invoke-virtual {v13, v10}, Lorg/json/JSONObject;->opt(Ljava/lang/String;)Ljava/lang/Object;
-
-    move-result-object v10
-
-    if-eqz v10, :cond_16
-
-    .line 36
-    sget-object v13, Lorg/json/JSONObject;->NULL:Ljava/lang/Object;
-
-    invoke-static {v10, v13}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result v13
-
-    if-eqz v13, :cond_17
-
-    :cond_16
-    const/4 v10, 0x0
-
-    :cond_17
-    if-eqz v10, :cond_18
-
-    .line 37
-    instance-of v13, v10, Ljava/lang/String;
-
-    if-eqz v13, :cond_18
-
-    check-cast v10, Ljava/lang/String;
-
-    goto :goto_8
-
-    :cond_18
-    const/4 v10, 0x0
-
-    .line 38
-    :goto_8
-    invoke-virtual {v1, v8}, Lorg/json/JSONObject;->optJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
-
-    move-result-object v8
-
-    if-eqz v8, :cond_1b
-
-    .line 39
-    invoke-virtual {v8, v12}, Lorg/json/JSONObject;->opt(Ljava/lang/String;)Ljava/lang/Object;
-
-    move-result-object v8
-
-    if-eqz v8, :cond_19
-
-    .line 40
-    sget-object v12, Lorg/json/JSONObject;->NULL:Ljava/lang/Object;
-
-    invoke-static {v8, v12}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result v12
-
-    if-eqz v12, :cond_1a
-
-    :cond_19
-    const/4 v8, 0x0
-
-    :cond_1a
-    if-eqz v8, :cond_1b
-
-    .line 41
-    instance-of v12, v8, Ljava/lang/String;
-
-    if-eqz v12, :cond_1b
-
-    check-cast v8, Ljava/lang/String;
-
-    goto :goto_9
-
-    :cond_1b
-    const/4 v8, 0x0
-
-    :goto_9
-    const-string v12, "qrCodeURL"
-
-    .line 42
-    invoke-virtual {v1, v12}, Lorg/json/JSONObject;->opt(Ljava/lang/String;)Ljava/lang/Object;
-
-    move-result-object v12
-
-    if-eqz v12, :cond_1c
-
-    .line 43
-    sget-object v13, Lorg/json/JSONObject;->NULL:Ljava/lang/Object;
-
-    invoke-static {v12, v13}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result v13
-
-    if-eqz v13, :cond_1d
-
-    :cond_1c
-    const/4 v12, 0x0
-
-    :cond_1d
-    if-eqz v12, :cond_1e
-
-    .line 44
-    instance-of v13, v12, Ljava/lang/String;
-
-    if-eqz v13, :cond_1e
-
-    check-cast v12, Ljava/lang/String;
-
-    goto :goto_a
-
-    :cond_1e
-    const/4 v12, 0x0
-
-    :goto_a
-    const-string v13, "universalLink"
-
-    .line 45
-    invoke-virtual {v1, v13}, Lorg/json/JSONObject;->opt(Ljava/lang/String;)Ljava/lang/Object;
-
-    move-result-object v13
-
-    if-eqz v13, :cond_1f
-
-    .line 46
-    sget-object v14, Lorg/json/JSONObject;->NULL:Ljava/lang/Object;
-
-    invoke-static {v13, v14}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result v14
-
-    if-eqz v14, :cond_20
-
-    :cond_1f
-    const/4 v13, 0x0
-
-    :cond_20
-    if-eqz v13, :cond_21
-
-    .line 47
-    instance-of v14, v13, Ljava/lang/String;
-
-    if-eqz v14, :cond_21
-
-    check-cast v13, Ljava/lang/String;
-
-    goto :goto_b
-
-    :cond_21
-    const/4 v13, 0x0
-
-    :goto_b
-    const-string v14, "forcedOfflineStatus"
-
-    .line 48
-    invoke-virtual {v1, v14}, Lorg/json/JSONObject;->getBoolean(Ljava/lang/String;)Z
-
-    move-result v14
-
-    const-string v15, "blockIncomingFriendRequests"
-
-    .line 49
-    invoke-virtual {v1, v15}, Lorg/json/JSONObject;->opt(Ljava/lang/String;)Ljava/lang/Object;
-
-    move-result-object v15
-
-    if-eqz v15, :cond_22
-
-    .line 50
-    sget-object v5, Lorg/json/JSONObject;->NULL:Ljava/lang/Object;
-
-    invoke-static {v15, v5}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result v5
-
-    if-eqz v5, :cond_23
-
-    :cond_22
-    const/4 v15, 0x0
-
-    :cond_23
-    if-eqz v15, :cond_24
-
-    .line 51
-    instance-of v5, v15, Ljava/lang/Boolean;
-
-    if-eqz v5, :cond_24
-
-    check-cast v15, Ljava/lang/Boolean;
-
-    goto :goto_c
-
-    :cond_24
-    const/4 v15, 0x0
-
-    :goto_c
-    if-eqz v15, :cond_25
-
-    .line 52
-    invoke-virtual {v15}, Ljava/lang/Boolean;->booleanValue()Z
-
-    move-result v15
-
-    goto :goto_d
-
-    :cond_25
-    const/4 v15, 0x0
-
-    :goto_d
-    const-string v5, "friends"
-
-    .line 53
-    invoke-virtual {v1, v5}, Lorg/json/JSONObject;->optJSONArray(Ljava/lang/String;)Lorg/json/JSONArray;
-
-    move-result-object v5
-
-    if-eqz v5, :cond_28
-
-    .line 54
-    sget-object v18, Lcom/supercell/id/IdFriend;->Companion:Lcom/supercell/id/IdFriend$a;
-
-    invoke-virtual/range {v18 .. v18}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    move/from16 v18, v15
-
-    .line 55
-    invoke-virtual {v5}, Lorg/json/JSONArray;->length()I
-
-    move-result v15
-
-    move/from16 v19, v14
-
-    const/4 v14, 0x0
-
-    invoke-static {v14, v15}, Lcom/google/android/play/core/appupdate/c;->c(II)Lve/c;
-
-    move-result-object v15
-
-    .line 56
-    new-instance v14, Ljava/util/ArrayList;
-
-    invoke-direct {v14}, Ljava/util/ArrayList;-><init>()V
-
-    .line 57
-    invoke-virtual {v15}, Lve/a;->iterator()Ljava/util/Iterator;
-
-    move-result-object v15
-
-    :goto_e
-    invoke-interface {v15}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v20
-
-    if-eqz v20, :cond_29
-
-    move-object/from16 v20, v15
-
-    check-cast v20, Lje/s;
-
-    move-object/from16 v21, v15
-
-    invoke-virtual/range {v20 .. v20}, Lje/s;->a()I
-
-    move-result v15
-
-    .line 58
-    invoke-virtual {v5, v15}, Lorg/json/JSONArray;->optJSONObject(I)Lorg/json/JSONObject;
-
-    move-result-object v15
-
-    if-eqz v15, :cond_26
-
-    move-object/from16 v20, v5
-
-    sget-object v5, Lcom/supercell/id/IdFriend;->Companion:Lcom/supercell/id/IdFriend$a;
-
-    .line 59
-    invoke-virtual {v5, v15}, Lcom/supercell/id/IdFriend$a;->b(Lorg/json/JSONObject;)Lcom/supercell/id/IdFriend;
-
-    move-result-object v5
-
-    goto :goto_f
-
-    :cond_26
-    move-object/from16 v20, v5
-
-    const/4 v5, 0x0
-
-    :goto_f
-    if-eqz v5, :cond_27
-
-    .line 60
-    invoke-interface {v14, v5}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
-
-    :cond_27
-    move-object/from16 v5, v20
-
-    move-object/from16 v15, v21
-
-    goto :goto_e
-
-    :cond_28
-    move/from16 v19, v14
-
-    move/from16 v18, v15
-
-    .line 61
-    sget-object v14, Lje/l;->f:Lje/l;
-
-    :cond_29
-    const-string v5, "incomingFriendRequestsCount"
-
-    .line 62
-    invoke-virtual {v1, v5}, Lorg/json/JSONObject;->opt(Ljava/lang/String;)Ljava/lang/Object;
-
-    move-result-object v5
-
-    if-eqz v5, :cond_2a
-
-    .line 63
-    sget-object v15, Lorg/json/JSONObject;->NULL:Ljava/lang/Object;
-
-    invoke-static {v5, v15}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result v15
-
-    if-eqz v15, :cond_2b
-
-    :cond_2a
-    const/4 v5, 0x0
-
-    :cond_2b
-    if-eqz v5, :cond_2c
-
-    .line 64
-    instance-of v15, v5, Ljava/lang/Integer;
-
-    if-eqz v15, :cond_2c
-
-    check-cast v5, Ljava/lang/Integer;
-
-    goto :goto_10
-
-    :cond_2c
-    const/4 v5, 0x0
-
-    :goto_10
-    if-eqz v5, :cond_2d
-
-    .line 65
-    invoke-virtual {v5}, Ljava/lang/Integer;->intValue()I
-
-    move-result v5
-
-    goto :goto_11
-
-    :cond_2d
-    const/4 v5, 0x0
-
-    :goto_11
-    const-string v15, "items"
-
-    .line 66
-    invoke-virtual {v1, v15}, Lorg/json/JSONObject;->optJSONArray(Ljava/lang/String;)Lorg/json/JSONArray;
-
-    move-result-object v15
-
-    if-eqz v15, :cond_2e
-
-    move/from16 v17, v5
-
-    .line 67
-    sget-object v5, Lvc/x;->f:Lvc/x$a;
-
-    invoke-virtual {v5, v15}, Lvc/x$a;->a(Lorg/json/JSONArray;)Ljava/util/List;
-
-    move-result-object v5
-
-    goto :goto_12
-
-    :cond_2e
-    move/from16 v17, v5
-
-    const/4 v5, 0x0
-
-    :goto_12
-    const-string v15, "supportTier"
-
-    .line 68
-    invoke-virtual {v1, v15}, Lorg/json/JSONObject;->opt(Ljava/lang/String;)Ljava/lang/Object;
+    .line 6
+    invoke-virtual {p1, v1}, Lorg/json/JSONObject;->opt(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v1
 
-    if-eqz v1, :cond_2f
+    if-eqz v1, :cond_4
 
-    .line 69
-    sget-object v15, Lorg/json/JSONObject;->NULL:Ljava/lang/Object;
+    .line 7
+    sget-object v5, Lorg/json/JSONObject;->NULL:Ljava/lang/Object;
 
-    invoke-static {v1, v15}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v1, v5}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
-    move-result v15
+    move-result v5
 
-    if-eqz v15, :cond_30
+    if-eqz v5, :cond_5
 
-    :cond_2f
-    const/4 v1, 0x0
+    :cond_4
+    move-object v1, v2
 
-    :cond_30
-    if-eqz v1, :cond_31
+    :cond_5
+    if-eqz v1, :cond_6
 
-    .line 70
-    instance-of v15, v1, Ljava/lang/Integer;
+    .line 8
+    instance-of v5, v1, Ljava/lang/String;
 
-    if-eqz v15, :cond_31
+    if-eqz v5, :cond_6
 
-    check-cast v1, Ljava/lang/Integer;
+    check-cast v1, Ljava/lang/String;
 
-    move-object/from16 v16, v1
+    goto :goto_2
 
-    goto :goto_13
+    :cond_6
+    move-object v1, v2
 
-    :cond_31
-    const/16 v16, 0x0
+    :goto_2
+    const-string v5, "imageURL"
 
-    :goto_13
-    if-eqz v16, :cond_32
+    .line 9
+    invoke-virtual {p1, v5}, Lorg/json/JSONObject;->opt(Ljava/lang/String;)Ljava/lang/Object;
 
-    .line 71
-    invoke-virtual/range {v16 .. v16}, Ljava/lang/Integer;->intValue()I
+    move-result-object v5
 
-    move-result v1
+    if-eqz v5, :cond_7
 
-    goto :goto_14
+    .line 10
+    sget-object v6, Lorg/json/JSONObject;->NULL:Ljava/lang/Object;
 
-    :cond_32
-    const/4 v1, 0x1
+    invoke-static {v5, v6}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
-    .line 72
-    :goto_14
-    invoke-direct/range {p0 .. p0}, Ljava/lang/Object;-><init>()V
+    move-result v6
 
-    iput-object v2, v0, Lvc/s;->a:Lcom/supercell/id/model/IdSocialAccount;
+    if-eqz v6, :cond_8
 
-    iput-object v4, v0, Lvc/s;->b:Ljava/lang/String;
+    :cond_7
+    move-object v5, v2
 
-    iput-object v3, v0, Lvc/s;->c:Ljava/util/Date;
+    :cond_8
+    if-eqz v5, :cond_9
 
-    iput-object v7, v0, Lvc/s;->d:Ljava/lang/String;
+    .line 11
+    instance-of v6, v5, Ljava/lang/String;
 
-    iput-object v9, v0, Lvc/s;->e:Ljava/lang/String;
+    if-eqz v6, :cond_9
 
-    iput-object v11, v0, Lvc/s;->f:Ljava/lang/String;
+    check-cast v5, Ljava/lang/String;
 
-    iput-object v6, v0, Lvc/s;->g:Ljava/util/Date;
+    goto :goto_3
 
-    iput-object v10, v0, Lvc/s;->h:Ljava/lang/String;
+    :cond_9
+    move-object v5, v2
 
-    iput-object v8, v0, Lvc/s;->i:Ljava/lang/String;
+    :goto_3
+    if-eqz v5, :cond_a
 
-    iput-object v12, v0, Lvc/s;->j:Ljava/lang/String;
+    .line 12
+    new-instance v1, Lcom/supercell/id/model/ProfileImage$Image;
 
-    iput-object v13, v0, Lvc/s;->k:Ljava/lang/String;
+    invoke-direct {v1, v5}, Lcom/supercell/id/model/ProfileImage$Image;-><init>(Ljava/lang/String;)V
 
-    move/from16 v2, v19
+    :goto_4
+    move-object v5, v1
 
-    iput-boolean v2, v0, Lvc/s;->l:Z
+    goto :goto_5
 
-    move/from16 v15, v18
+    :cond_a
+    if-eqz v1, :cond_b
 
-    iput-boolean v15, v0, Lvc/s;->m:Z
+    .line 13
+    new-instance v5, Lcom/supercell/id/model/ProfileImage$Avatar;
 
-    iput-object v14, v0, Lvc/s;->n:Ljava/util/List;
+    invoke-direct {v5, v1}, Lcom/supercell/id/model/ProfileImage$Avatar;-><init>(Ljava/lang/String;)V
 
-    move/from16 v2, v17
+    goto :goto_5
 
-    iput v2, v0, Lvc/s;->o:I
+    .line 14
+    :cond_b
+    sget-object v1, Lcom/supercell/id/model/ProfileImage$Empty;->h:Lcom/supercell/id/model/ProfileImage$Empty;
 
-    iput-object v5, v0, Lvc/s;->p:Ljava/util/List;
+    goto :goto_4
 
-    iput v1, v0, Lvc/s;->q:I
+    :goto_5
+    const-string v1, "qrCodeURL"
+
+    .line 15
+    invoke-virtual {p1, v1}, Lorg/json/JSONObject;->opt(Ljava/lang/String;)Ljava/lang/Object;
+
+    move-result-object v1
+
+    if-eqz v1, :cond_c
+
+    .line 16
+    sget-object v6, Lorg/json/JSONObject;->NULL:Ljava/lang/Object;
+
+    invoke-static {v1, v6}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v6
+
+    if-eqz v6, :cond_d
+
+    :cond_c
+    move-object v1, v2
+
+    :cond_d
+    if-eqz v1, :cond_f
+
+    .line 17
+    instance-of v6, v1, Ljava/lang/String;
+
+    if-eqz v6, :cond_e
+
+    check-cast v1, Ljava/lang/String;
+
+    goto :goto_6
+
+    :cond_e
+    move-object v1, v2
+
+    :goto_6
+    move-object v6, v1
+
+    goto :goto_7
+
+    :cond_f
+    move-object v6, v2
+
+    :goto_7
+    const-string v1, "universalLink"
+
+    .line 18
+    invoke-virtual {p1, v1}, Lorg/json/JSONObject;->opt(Ljava/lang/String;)Ljava/lang/Object;
+
+    move-result-object v1
+
+    if-eqz v1, :cond_10
+
+    .line 19
+    sget-object v7, Lorg/json/JSONObject;->NULL:Ljava/lang/Object;
+
+    invoke-static {v1, v7}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v7
+
+    if-eqz v7, :cond_11
+
+    :cond_10
+    move-object v1, v2
+
+    :cond_11
+    if-eqz v1, :cond_13
+
+    .line 20
+    instance-of v7, v1, Ljava/lang/String;
+
+    if-eqz v7, :cond_12
+
+    check-cast v1, Ljava/lang/String;
+
+    goto :goto_8
+
+    :cond_12
+    move-object v1, v2
+
+    :goto_8
+    move-object v7, v1
+
+    goto :goto_9
+
+    :cond_13
+    move-object v7, v2
+
+    :goto_9
+    const-string v1, "relationship"
+
+    .line 21
+    invoke-virtual {p1, v1}, Lorg/json/JSONObject;->optJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
+
+    move-result-object v1
+
+    if-eqz v1, :cond_14
+
+    .line 22
+    sget-object v8, Lcom/supercell/id/model/IdRelationshipStatus;->g:Lcom/supercell/id/model/IdRelationshipStatus$b;
+
+    invoke-virtual {v8, v1}, Lcom/supercell/id/model/IdRelationshipStatus$b;->a(Lorg/json/JSONObject;)Lcom/supercell/id/model/IdRelationshipStatus;
+
+    move-result-object v1
+
+    goto :goto_a
+
+    .line 23
+    :cond_14
+    sget-object v1, Lcom/supercell/id/model/IdRelationshipStatus$Strangers;->h:Lcom/supercell/id/model/IdRelationshipStatus$Strangers;
+
+    :goto_a
+    move-object v8, v1
+
+    const-string v1, "availableSystems"
+
+    .line 24
+    invoke-virtual {p1, v1}, Lorg/json/JSONObject;->getJSONArray(Ljava/lang/String;)Lorg/json/JSONArray;
+
+    move-result-object v1
+
+    .line 25
+    invoke-static {v1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 26
+    invoke-virtual {v1}, Lorg/json/JSONArray;->length()I
+
+    move-result v9
+
+    const/4 v10, 0x0
+
+    invoke-static {v10, v9}, La5/b0;->l(II)Lve/c;
+
+    move-result-object v9
+
+    .line 27
+    new-instance v11, Ljava/util/ArrayList;
+
+    invoke-direct {v11}, Ljava/util/ArrayList;-><init>()V
+
+    .line 28
+    invoke-interface {v9}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+
+    move-result-object v9
+
+    :cond_15
+    :goto_b
+    invoke-interface {v9}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v12
+
+    if-eqz v12, :cond_17
+
+    move-object v12, v9
+
+    check-cast v12, Lje/s;
+
+    invoke-virtual {v12}, Lje/s;->a()I
+
+    move-result v12
+
+    .line 29
+    invoke-virtual {v1, v12}, Lorg/json/JSONArray;->optJSONObject(I)Lorg/json/JSONObject;
+
+    move-result-object v12
+
+    if-eqz v12, :cond_16
+
+    .line 30
+    new-instance v13, Lcom/supercell/id/model/IdSystem;
+
+    invoke-direct {v13, v12}, Lcom/supercell/id/model/IdSystem;-><init>(Lorg/json/JSONObject;)V
+
+    goto :goto_c
+
+    :cond_16
+    move-object v13, v2
+
+    :goto_c
+    if-eqz v13, :cond_15
+
+    .line 31
+    invoke-interface {v11, v13}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
+
+    goto :goto_b
+
+    :cond_17
+    const-string v1, "connectedSystems"
+
+    .line 32
+    invoke-virtual {p1, v1}, Lorg/json/JSONObject;->getJSONArray(Ljava/lang/String;)Lorg/json/JSONArray;
+
+    move-result-object v1
+
+    .line 33
+    invoke-static {v1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 34
+    invoke-virtual {v1}, Lorg/json/JSONArray;->length()I
+
+    move-result v0
+
+    invoke-static {v10, v0}, La5/b0;->l(II)Lve/c;
+
+    move-result-object v0
+
+    .line 35
+    new-instance v12, Ljava/util/ArrayList;
+
+    invoke-direct {v12}, Ljava/util/ArrayList;-><init>()V
+
+    .line 36
+    invoke-interface {v0}, Ljava/lang/Iterable;->iterator()Ljava/util/Iterator;
+
+    move-result-object v0
+
+    :cond_18
+    :goto_d
+    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v9
+
+    if-eqz v9, :cond_1a
+
+    move-object v9, v0
+
+    check-cast v9, Lje/s;
+
+    invoke-virtual {v9}, Lje/s;->a()I
+
+    move-result v9
+
+    .line 37
+    invoke-virtual {v1, v9}, Lorg/json/JSONArray;->optJSONObject(I)Lorg/json/JSONObject;
+
+    move-result-object v9
+
+    if-eqz v9, :cond_19
+
+    .line 38
+    new-instance v13, Lcom/supercell/id/model/IdConnectedSystem;
+
+    invoke-direct {v13, v9}, Lcom/supercell/id/model/IdConnectedSystem;-><init>(Lorg/json/JSONObject;)V
+
+    goto :goto_e
+
+    :cond_19
+    move-object v13, v2
+
+    :goto_e
+    if-eqz v13, :cond_18
+
+    .line 39
+    invoke-interface {v12, v13}, Ljava/util/Collection;->add(Ljava/lang/Object;)Z
+
+    goto :goto_d
+
+    :cond_1a
+    const-string v0, "presence"
+
+    .line 40
+    invoke-virtual {p1, v0}, Lorg/json/JSONObject;->optJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_1b
+
+    .line 41
+    new-instance v1, Lcom/supercell/id/model/IdPresenceStatus;
+
+    invoke-direct {v1, v0}, Lcom/supercell/id/model/IdPresenceStatus;-><init>(Lorg/json/JSONObject;)V
+
+    goto :goto_f
+
+    :cond_1b
+    move-object v1, v2
+
+    :goto_f
+    const-string v0, "blockIncomingFriendRequests"
+
+    .line 42
+    invoke-virtual {p1, v0}, Lorg/json/JSONObject;->opt(Ljava/lang/String;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    if-eqz p1, :cond_1c
+
+    .line 43
+    sget-object v0, Lorg/json/JSONObject;->NULL:Ljava/lang/Object;
+
+    invoke-static {p1, v0}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1d
+
+    :cond_1c
+    move-object p1, v2
+
+    :cond_1d
+    if-eqz p1, :cond_1e
+
+    .line 44
+    instance-of v0, p1, Ljava/lang/Boolean;
+
+    if-eqz v0, :cond_1e
+
+    check-cast p1, Ljava/lang/Boolean;
+
+    move-object v2, p1
+
+    :cond_1e
+    if-eqz v2, :cond_1f
+
+    .line 45
+    invoke-virtual {v2}, Ljava/lang/Boolean;->booleanValue()Z
+
+    move-result p1
+
+    goto :goto_10
+
+    :cond_1f
+    const/4 p1, 0x0
+
+    :goto_10
+    move-object v2, p0
+
+    move-object v9, v11
+
+    move-object v10, v12
+
+    move-object v11, v1
+
+    move v12, p1
+
+    .line 46
+    invoke-direct/range {v2 .. v12}, Lvc/s;-><init>(Lcom/supercell/id/model/IdSocialAccount;Ljava/lang/String;Lcom/supercell/id/model/ProfileImage;Ljava/lang/String;Ljava/lang/String;Lcom/supercell/id/model/IdRelationshipStatus;Ljava/util/List;Ljava/util/List;Lcom/supercell/id/model/IdPresenceStatus;Z)V
 
     return-void
 .end method
 
 
 # virtual methods
+.method public final a()Lcom/supercell/id/model/IdSocialAccount;
+    .locals 1
+
+    iget-object v0, p0, Lvc/s;->a:Lcom/supercell/id/model/IdSocialAccount;
+
+    return-object v0
+.end method
+
+.method public final b()Lcom/supercell/id/model/IdRelationshipStatus;
+    .locals 1
+
+    iget-object v0, p0, Lvc/s;->f:Lcom/supercell/id/model/IdRelationshipStatus;
+
+    return-object v0
+.end method
+
 .method public final equals(Ljava/lang/Object;)Z
     .locals 2
 
@@ -931,7 +649,7 @@
 
     iget-object v1, p1, Lvc/s;->a:Lcom/supercell/id/model/IdSocialAccount;
 
-    invoke-static {v0, v1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
@@ -941,17 +659,17 @@
 
     iget-object v1, p1, Lvc/s;->b:Ljava/lang/String;
 
-    invoke-static {v0, v1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lvc/s;->c:Ljava/util/Date;
+    iget-object v0, p0, Lvc/s;->c:Lcom/supercell/id/model/ProfileImage;
 
-    iget-object v1, p1, Lvc/s;->c:Ljava/util/Date;
+    iget-object v1, p1, Lvc/s;->c:Lcom/supercell/id/model/ProfileImage;
 
-    invoke-static {v0, v1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
@@ -961,7 +679,7 @@
 
     iget-object v1, p1, Lvc/s;->d:Ljava/lang/String;
 
-    invoke-static {v0, v1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
@@ -971,113 +689,55 @@
 
     iget-object v1, p1, Lvc/s;->e:Ljava/lang/String;
 
-    invoke-static {v0, v1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lvc/s;->f:Ljava/lang/String;
+    iget-object v0, p0, Lvc/s;->f:Lcom/supercell/id/model/IdRelationshipStatus;
 
-    iget-object v1, p1, Lvc/s;->f:Ljava/lang/String;
+    iget-object v1, p1, Lvc/s;->f:Lcom/supercell/id/model/IdRelationshipStatus;
 
-    invoke-static {v0, v1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    iget-object v0, p0, Lvc/s;->g:Ljava/util/Date;
-
-    iget-object v1, p1, Lvc/s;->g:Ljava/util/Date;
-
-    invoke-static {v0, v1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lvc/s;->h:Ljava/lang/String;
+    iget-object v0, p0, Lvc/s;->g:Ljava/util/List;
 
-    iget-object v1, p1, Lvc/s;->h:Ljava/lang/String;
+    iget-object v1, p1, Lvc/s;->g:Ljava/util/List;
 
-    invoke-static {v0, v1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    iget-object v0, p0, Lvc/s;->i:Ljava/lang/String;
-
-    iget-object v1, p1, Lvc/s;->i:Ljava/lang/String;
-
-    invoke-static {v0, v1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lvc/s;->j:Ljava/lang/String;
+    iget-object v0, p0, Lvc/s;->h:Ljava/util/List;
 
-    iget-object v1, p1, Lvc/s;->j:Ljava/lang/String;
+    iget-object v1, p1, Lvc/s;->h:Ljava/util/List;
 
-    invoke-static {v0, v1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    iget-object v0, p0, Lvc/s;->k:Ljava/lang/String;
-
-    iget-object v1, p1, Lvc/s;->k:Ljava/lang/String;
-
-    invoke-static {v0, v1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    iget-boolean v0, p0, Lvc/s;->l:Z
+    iget-object v0, p0, Lvc/s;->i:Lcom/supercell/id/model/IdPresenceStatus;
 
-    iget-boolean v1, p1, Lvc/s;->l:Z
+    iget-object v1, p1, Lvc/s;->i:Lcom/supercell/id/model/IdPresenceStatus;
 
-    if-ne v0, v1, :cond_0
-
-    iget-boolean v0, p0, Lvc/s;->m:Z
-
-    iget-boolean v1, p1, Lvc/s;->m:Z
-
-    if-ne v0, v1, :cond_0
-
-    iget-object v0, p0, Lvc/s;->n:Ljava/util/List;
-
-    iget-object v1, p1, Lvc/s;->n:Ljava/util/List;
-
-    invoke-static {v0, v1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    iget v0, p0, Lvc/s;->o:I
+    iget-boolean v0, p0, Lvc/s;->j:Z
 
-    iget v1, p1, Lvc/s;->o:I
-
-    if-ne v0, v1, :cond_0
-
-    iget-object v0, p0, Lvc/s;->p:Ljava/util/List;
-
-    iget-object v1, p1, Lvc/s;->p:Ljava/util/List;
-
-    invoke-static {v0, v1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    iget v0, p0, Lvc/s;->q:I
-
-    iget p1, p1, Lvc/s;->q:I
+    iget-boolean p1, p1, Lvc/s;->j:Z
 
     if-ne v0, p1, :cond_0
 
@@ -1096,7 +756,7 @@
 .end method
 
 .method public final hashCode()I
-    .locals 4
+    .locals 3
 
     iget-object v0, p0, Lvc/s;->a:Lcom/supercell/id/model/IdSocialAccount;
 
@@ -1134,7 +794,7 @@
 
     mul-int/lit8 v0, v0, 0x1f
 
-    iget-object v2, p0, Lvc/s;->c:Ljava/util/Date;
+    iget-object v2, p0, Lvc/s;->c:Lcom/supercell/id/model/ProfileImage;
 
     if-eqz v2, :cond_2
 
@@ -1188,7 +848,7 @@
 
     mul-int/lit8 v0, v0, 0x1f
 
-    iget-object v2, p0, Lvc/s;->f:Ljava/lang/String;
+    iget-object v2, p0, Lvc/s;->f:Lcom/supercell/id/model/IdRelationshipStatus;
 
     if-eqz v2, :cond_5
 
@@ -1206,7 +866,7 @@
 
     mul-int/lit8 v0, v0, 0x1f
 
-    iget-object v2, p0, Lvc/s;->g:Ljava/util/Date;
+    iget-object v2, p0, Lvc/s;->g:Ljava/util/List;
 
     if-eqz v2, :cond_6
 
@@ -1224,7 +884,7 @@
 
     mul-int/lit8 v0, v0, 0x1f
 
-    iget-object v2, p0, Lvc/s;->h:Ljava/lang/String;
+    iget-object v2, p0, Lvc/s;->h:Ljava/util/List;
 
     if-eqz v2, :cond_7
 
@@ -1242,126 +902,26 @@
 
     mul-int/lit8 v0, v0, 0x1f
 
-    iget-object v2, p0, Lvc/s;->i:Ljava/lang/String;
+    iget-object v2, p0, Lvc/s;->i:Lcom/supercell/id/model/IdPresenceStatus;
 
     if-eqz v2, :cond_8
 
-    invoke-virtual {v2}, Ljava/lang/Object;->hashCode()I
-
-    move-result v2
-
-    goto :goto_8
-
-    :cond_8
-    const/4 v2, 0x0
-
-    :goto_8
-    add-int/2addr v0, v2
-
-    mul-int/lit8 v0, v0, 0x1f
-
-    iget-object v2, p0, Lvc/s;->j:Ljava/lang/String;
-
-    if-eqz v2, :cond_9
-
-    invoke-virtual {v2}, Ljava/lang/Object;->hashCode()I
-
-    move-result v2
-
-    goto :goto_9
-
-    :cond_9
-    const/4 v2, 0x0
-
-    :goto_9
-    add-int/2addr v0, v2
-
-    mul-int/lit8 v0, v0, 0x1f
-
-    iget-object v2, p0, Lvc/s;->k:Ljava/lang/String;
-
-    if-eqz v2, :cond_a
-
-    invoke-virtual {v2}, Ljava/lang/Object;->hashCode()I
-
-    move-result v2
-
-    goto :goto_a
-
-    :cond_a
-    const/4 v2, 0x0
-
-    :goto_a
-    add-int/2addr v0, v2
-
-    mul-int/lit8 v0, v0, 0x1f
-
-    iget-boolean v2, p0, Lvc/s;->l:Z
-
-    const/4 v3, 0x1
-
-    if-eqz v2, :cond_b
-
-    const/4 v2, 0x1
-
-    :cond_b
-    add-int/2addr v0, v2
-
-    mul-int/lit8 v0, v0, 0x1f
-
-    iget-boolean v2, p0, Lvc/s;->m:Z
-
-    if-eqz v2, :cond_c
-
-    goto :goto_b
-
-    :cond_c
-    move v3, v2
-
-    :goto_b
-    add-int/2addr v0, v3
-
-    mul-int/lit8 v0, v0, 0x1f
-
-    iget-object v2, p0, Lvc/s;->n:Ljava/util/List;
-
-    if-eqz v2, :cond_d
-
-    invoke-virtual {v2}, Ljava/lang/Object;->hashCode()I
-
-    move-result v2
-
-    goto :goto_c
-
-    :cond_d
-    const/4 v2, 0x0
-
-    :goto_c
-    add-int/2addr v0, v2
-
-    mul-int/lit8 v0, v0, 0x1f
-
-    iget v2, p0, Lvc/s;->o:I
-
-    add-int/2addr v0, v2
-
-    mul-int/lit8 v0, v0, 0x1f
-
-    iget-object v2, p0, Lvc/s;->p:Ljava/util/List;
-
-    if-eqz v2, :cond_e
-
-    invoke-virtual {v2}, Ljava/lang/Object;->hashCode()I
+    invoke-virtual {v2}, Lcom/supercell/id/model/IdPresenceStatus;->hashCode()I
 
     move-result v1
 
-    :cond_e
+    :cond_8
     add-int/2addr v0, v1
 
     mul-int/lit8 v0, v0, 0x1f
 
-    iget v1, p0, Lvc/s;->q:I
+    iget-boolean v1, p0, Lvc/s;->j:Z
 
+    if-eqz v1, :cond_9
+
+    const/4 v1, 0x1
+
+    :cond_9
     add-int/2addr v0, v1
 
     return v0
@@ -1370,7 +930,7 @@
 .method public final toString()Ljava/lang/String;
     .locals 3
 
-    const-string v0, "IdProfileInfo(account="
+    const-string v0, "IdPublicProfile(account="
 
     .line 1
     invoke-static {v0}, Landroid/support/v4/media/e;->a(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -1390,15 +950,15 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string v1, ", nameChangeAllowed="
+    const-string v1, ", image="
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lvc/s;->c:Ljava/util/Date;
+    iget-object v1, p0, Lvc/s;->c:Lcom/supercell/id/model/ProfileImage;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    const-string v1, ", avatarImage="
+    const-string v1, ", qrCodeUrl="
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -1406,7 +966,7 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string v1, ", imageURL="
+    const-string v1, ", universalLink="
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -1414,104 +974,48 @@
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string v1, ", imageId="
+    const-string v1, ", relationship="
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lvc/s;->f:Ljava/lang/String;
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string v1, ", imageChangeAllowed="
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget-object v1, p0, Lvc/s;->g:Ljava/util/Date;
+    iget-object v1, p0, Lvc/s;->f:Lcom/supercell/id/model/IdRelationshipStatus;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
-    const-string v1, ", underReviewImageURL="
+    const-string v1, ", availableSystems="
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lvc/s;->h:Ljava/lang/String;
+    iget-object v1, p0, Lvc/s;->g:Ljava/util/List;
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    const-string v1, ", connectedSystems="
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    const-string v1, ", underReviewImageId="
+    iget-object v1, p0, Lvc/s;->h:Ljava/util/List;
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    const-string v1, ", presence="
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-object v1, p0, Lvc/s;->i:Ljava/lang/String;
+    iget-object v1, p0, Lvc/s;->i:Lcom/supercell/id/model/IdPresenceStatus;
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string v1, ", qrCodeURL="
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget-object v1, p0, Lvc/s;->j:Ljava/lang/String;
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string v1, ", universalLink="
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget-object v1, p0, Lvc/s;->k:Ljava/lang/String;
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    const-string v1, ", forcedOfflineStatus="
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget-boolean v1, p0, Lvc/s;->l:Z
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 
     const-string v1, ", blockIncomingFriendRequests="
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
-    iget-boolean v1, p0, Lvc/s;->m:Z
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
-
-    const-string v1, ", friends="
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget-object v1, p0, Lvc/s;->n:Ljava/util/List;
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    const-string v1, ", receivedInvitesCount="
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget v1, p0, Lvc/s;->o:I
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    const-string v1, ", shopItems="
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget-object v1, p0, Lvc/s;->p:Ljava/util/List;
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    const-string v1, ", supportTier="
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    iget v1, p0, Lvc/s;->q:I
+    iget-boolean v1, p0, Lvc/s;->j:Z
 
     const-string v2, ")"
 
     .line 3
-    invoke-static {v0, v1, v2}, Landroid/support/v4/media/d;->a(Ljava/lang/StringBuilder;ILjava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, v1, v2}, Landroidx/appcompat/app/j;->a(Ljava/lang/StringBuilder;ZLjava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 

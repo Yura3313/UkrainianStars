@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field public final synthetic f:Lsd/n;
+.field public final synthetic g:Lsd/n;
 
 
 # direct methods
 .method public constructor <init>(Lsd/n;)V
     .locals 0
 
-    iput-object p1, p0, Lsd/n$b;->f:Lsd/n;
+    iput-object p1, p0, Lsd/n$b;->g:Lsd/n;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -37,7 +37,7 @@
 .method public final onClick(Landroid/view/View;)V
     .locals 0
 
-    iget-object p1, p0, Lsd/n$b;->f:Lsd/n;
+    iget-object p1, p0, Lsd/n$b;->g:Lsd/n;
 
     invoke-virtual {p1}, Lsd/n;->V0()V
 

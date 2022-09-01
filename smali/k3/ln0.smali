@@ -2,81 +2,91 @@
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
-# interfaces
-.implements Lk3/in0;
-
 
 # annotations
-.annotation system Ldalvik/annotation/MemberClasses;
+.annotation system Ldalvik/annotation/Signature;
     value = {
-        Lk3/ln0$a;
+        "<P:",
+        "Ljava/lang/Object;",
+        ">",
+        "Ljava/lang/Object;"
     }
 .end annotation
 
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ljava/lang/Object;",
-        "Lk3/in0<",
-        "Lk3/xm0;",
-        ">;"
-    }
-.end annotation
+
+# instance fields
+.field public final a:Ljava/lang/Object;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "TP;"
+        }
+    .end annotation
+.end field
+
+.field public final b:[B
+
+.field public final c:I
+
+.field public final d:I
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 1
-
-    const-class v0, Lk3/ln0;
-
-    invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-static {v0}, Ljava/util/logging/Logger;->getLogger(Ljava/lang/String;)Ljava/util/logging/Logger;
-
-    return-void
-.end method
-
-.method public constructor <init>()V
+.method public constructor <init>(Ljava/lang/Object;[BII)V
     .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TP;[B",
+            "Ljava/lang/Object;",
+            "Ljava/lang/Object;",
+            "I)V"
+        }
+    .end annotation
 
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    iput-object p1, p0, Lk3/ln0;->a:Ljava/lang/Object;
+
+    .line 3
+    array-length p1, p2
+
+    invoke-static {p2, p1}, Ljava/util/Arrays;->copyOf([BI)[B
+
+    move-result-object p1
+
+    iput-object p1, p0, Lk3/ln0;->b:[B
+
+    .line 4
+    iput p3, p0, Lk3/ln0;->c:I
+
+    .line 5
+    iput p4, p0, Lk3/ln0;->d:I
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final synthetic a(Lcom/google/android/gms/internal/ads/v1;)Ljava/lang/Object;
+.method public final a()[B
     .locals 2
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/security/GeneralSecurityException;
-        }
-    .end annotation
 
-    new-instance v0, Lk3/ln0$a;
+    .line 1
+    iget-object v0, p0, Lk3/ln0;->b:[B
 
-    const/4 v1, 0x0
+    if-nez v0, :cond_0
 
-    invoke-direct {v0, p1, v1}, Lk3/ln0$a;-><init>(Lcom/google/android/gms/internal/ads/v1;Lk3/s60;)V
+    const/4 v0, 0x0
 
     return-object v0
-.end method
 
-.method public final b()Ljava/lang/Class;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Ljava/lang/Class<",
-            "Lk3/xm0;",
-            ">;"
-        }
-    .end annotation
+    .line 2
+    :cond_0
+    array-length v1, v0
 
-    const-class v0, Lk3/xm0;
+    invoke-static {v0, v1}, Ljava/util/Arrays;->copyOf([BI)[B
+
+    move-result-object v0
 
     return-object v0
 .end method

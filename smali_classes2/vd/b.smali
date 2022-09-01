@@ -1,41 +1,41 @@
 .class public final Lvd/b;
-.super Lwc/s1;
+.super Lwc/t1;
 .source "SettingsGeneralTabFragment.kt"
 
 
 # instance fields
-.field public final b0:Lvd/b$n;
+.field public final c0:Lvd/b$n;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Lre/l<",
             "Lbe/w;",
-            "Lie/h;",
+            "Lie/i;",
             ">;"
         }
     .end annotation
 .end field
 
-.field public final c0:Lae/o2;
+.field public final d0:Lae/n2;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lae/o2<",
-            "Lvc/v;",
+            "Lae/n2<",
+            "Lvc/u;",
             ">;"
         }
     .end annotation
 .end field
 
-.field public final d0:Lae/o2;
+.field public final e0:Lae/n2;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lae/o2<",
-            "Lvc/v;",
+            "Lae/n2<",
+            "Lvc/u;",
             ">;"
         }
     .end annotation
 .end field
 
-.field public e0:Ljava/util/HashMap;
+.field public f0:Ljava/util/HashMap;
 
 
 # direct methods
@@ -43,40 +43,40 @@
     .locals 3
 
     .line 1
-    invoke-direct {p0}, Lwc/s1;-><init>()V
+    invoke-direct {p0}, Lwc/t1;-><init>()V
 
     .line 2
     new-instance v0, Lvd/b$n;
 
     invoke-direct {v0, p0}, Lvd/b$n;-><init>(Lvd/b;)V
 
-    iput-object v0, p0, Lvd/b;->b0:Lvd/b$n;
+    iput-object v0, p0, Lvd/b;->c0:Lvd/b$n;
 
     .line 3
-    new-instance v0, Lae/o2;
+    new-instance v0, Lae/n2;
 
-    sget-object v1, Lvd/b$o;->f:Lvd/b$o;
+    sget-object v1, Lvd/b$o;->g:Lvd/b$o;
 
     new-instance v2, Lvd/b$p;
 
     invoke-direct {v2, p0}, Lvd/b$p;-><init>(Lvd/b;)V
 
-    invoke-direct {v0, v1, v2}, Lae/o2;-><init>(Lre/l;Lre/l;)V
+    invoke-direct {v0, v1, v2}, Lae/n2;-><init>(Lre/l;Lre/l;)V
 
-    iput-object v0, p0, Lvd/b;->c0:Lae/o2;
+    iput-object v0, p0, Lvd/b;->d0:Lae/n2;
 
     .line 4
-    new-instance v0, Lae/o2;
+    new-instance v0, Lae/n2;
 
-    sget-object v1, Lvd/b$q;->f:Lvd/b$q;
+    sget-object v1, Lvd/b$q;->g:Lvd/b$q;
 
     new-instance v2, Lvd/b$r;
 
     invoke-direct {v2, p0}, Lvd/b$r;-><init>(Lvd/b;)V
 
-    invoke-direct {v0, v1, v2}, Lae/o2;-><init>(Lre/l;Lre/l;)V
+    invoke-direct {v0, v1, v2}, Lae/n2;-><init>(Lre/l;Lre/l;)V
 
-    iput-object v0, p0, Lvd/b;->d0:Lae/o2;
+    iput-object v0, p0, Lvd/b;->e0:Lae/n2;
 
     return-void
 .end method
@@ -86,7 +86,7 @@
 .method public final N0()V
     .locals 1
 
-    iget-object v0, p0, Lvd/b;->e0:Ljava/util/HashMap;
+    iget-object v0, p0, Lvd/b;->f0:Ljava/util/HashMap;
 
     if-eqz v0, :cond_0
 
@@ -107,7 +107,7 @@
     move-result-object v0
 
     .line 2
-    iget-object v0, v0, Lae/u;->m:La5/d0;
+    iget-object v0, v0, Lae/u;->m:Lpe/a;
 
     .line 3
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -118,7 +118,7 @@
 .method public final T0(I)Landroid/view/View;
     .locals 2
 
-    iget-object v0, p0, Lvd/b;->e0:Ljava/util/HashMap;
+    iget-object v0, p0, Lvd/b;->f0:Ljava/util/HashMap;
 
     if-nez v0, :cond_0
 
@@ -126,10 +126,10 @@
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    iput-object v0, p0, Lvd/b;->e0:Ljava/util/HashMap;
+    iput-object v0, p0, Lvd/b;->f0:Ljava/util/HashMap;
 
     :cond_0
-    iget-object v0, p0, Lvd/b;->e0:Ljava/util/HashMap;
+    iget-object v0, p0, Lvd/b;->f0:Ljava/util/HashMap;
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -144,7 +144,7 @@
     if-nez v0, :cond_2
 
     .line 1
-    iget-object v0, p0, Landroidx/fragment/app/Fragment;->M:Landroid/view/View;
+    iget-object v0, p0, Landroidx/fragment/app/Fragment;->N:Landroid/view/View;
 
     if-nez v0, :cond_1
 
@@ -158,7 +158,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lvd/b;->e0:Ljava/util/HashMap;
+    iget-object v1, p0, Lvd/b;->f0:Ljava/util/HashMap;
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -175,7 +175,7 @@
 
     const-string p3, "inflater"
 
-    invoke-static {p1, p3}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p3}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     sget p3, Lcom/supercell/id/R$layout;->fragment_settings_general_page:I
 
@@ -191,9 +191,9 @@
 .method public final a0()V
     .locals 1
 
-    invoke-super {p0}, Lwc/s1;->a0()V
+    invoke-super {p0}, Lwc/t1;->a0()V
 
-    iget-object v0, p0, Lvd/b;->e0:Ljava/util/HashMap;
+    iget-object v0, p0, Lvd/b;->f0:Ljava/util/HashMap;
 
     if-eqz v0, :cond_0
 
@@ -217,14 +217,14 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lvd/b;->b0:Lvd/b$n;
+    iget-object v1, p0, Lvd/b;->c0:Lvd/b$n;
 
-    invoke-virtual {v0, v1}, Lbe/v0;->e(Lre/l;)V
+    invoke-virtual {v0, v1}, Lbe/x0;->e(Lre/l;)V
 
     const/4 v0, 0x1
 
     .line 2
-    iput-boolean v0, p0, Landroidx/fragment/app/Fragment;->K:Z
+    iput-boolean v0, p0, Landroidx/fragment/app/Fragment;->L:Z
 
     return-void
 .end method
@@ -233,7 +233,7 @@
     .locals 4
 
     .line 1
-    invoke-super {p0}, Lwc/s1;->g0()V
+    invoke-super {p0}, Lwc/t1;->g0()V
 
     .line 2
     sget-object v0, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
@@ -246,9 +246,9 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lvd/b;->b0:Lvd/b$n;
+    iget-object v2, p0, Lvd/b;->c0:Lvd/b$n;
 
-    invoke-virtual {v1, v2}, Lbe/v0;->b(Lre/l;)V
+    invoke-virtual {v1, v2}, Lbe/x0;->b(Lre/l;)V
 
     .line 3
     invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lae/u;
@@ -260,7 +260,7 @@
     move-result-object v0
 
     .line 4
-    iget-object v0, v0, Lbe/v0;->a:Ljava/lang/Object;
+    iget-object v0, v0, Lbe/x0;->a:Ljava/lang/Object;
 
     .line 5
     check-cast v0, Lbe/w;
@@ -274,12 +274,12 @@
     if-eqz v0, :cond_0
 
     .line 6
-    iget-boolean v1, v0, Lcom/supercell/id/model/IdProfile;->s:Z
+    iget-boolean v1, v0, Lcom/supercell/id/model/IdProfile;->t:Z
 
     xor-int/lit8 v1, v1, 0x1
 
     .line 7
-    iget-boolean v0, v0, Lcom/supercell/id/model/IdProfile;->t:Z
+    iget-boolean v0, v0, Lcom/supercell/id/model/IdProfile;->u:Z
 
     xor-int/lit8 v0, v0, 0x1
 
@@ -294,7 +294,7 @@
 
     const-string v3, "onlineStatusSwitch"
 
-    invoke-static {v2, v3}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v2, v3}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v2, v1}, Landroidx/appcompat/widget/SwitchCompat;->setChecked(Z)V
 
@@ -309,7 +309,7 @@
 
     const-string v2, "receiveFriendRequestsSwitch"
 
-    invoke-static {v1, v2}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v1, v2}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v1, v0}, Landroidx/appcompat/widget/SwitchCompat;->setChecked(Z)V
 
@@ -322,7 +322,7 @@
 
     const-string p2, "view"
 
-    invoke-static {p1, p2}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p2}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     sget p1, Lcom/supercell/id/R$id;->versionLabel:I
@@ -335,7 +335,7 @@
 
     const-string p2, "versionLabel"
 
-    invoke-static {p1, p2}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p2}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     new-instance p2, Ljava/lang/StringBuilder;
 
@@ -388,7 +388,7 @@
 
     const-string p2, "contact_detail_label"
 
-    invoke-static {p1, p2}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p2}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {v0}, Lcom/supercell/id/SupercellId;->getSharedServices$supercellId_release()Lae/u;
 

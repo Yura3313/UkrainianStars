@@ -1793,22 +1793,22 @@ TID_HINT_2,Faites glisser le <ccc0033>joystick rouge</c> pour viser avant de tir
 TID_HINT_3,Faites glisser le <cff9900>joystick jaune</c> pour viser avec votre super.
 TID_HINT_4,Vous pouvez annuler un tir pour lequel vous visiez en ramenant le joystick vers le centre.
 TID_HINT_5,La recherche d'adversaires est déterminée par les trophées du brawler avec lequel vous jouez. Gagner des trophées est donc plus facile avec un brawler que vous venez de débloquer.
-TID_HINT_6,Débloquer plus de brawlers vous permettra d'augmenter votre nombre total de trophées plus facilement et de gagner plus de récompenses.
+TID_HINT_6,Débloquer plus de brawlers permet de gagner des trophées plus rapidementpour gagner plus de trophées et de récompenses.
 TID_HINT_7,"Plus Polly tire de loin, plus elle inflige de dégâts."
-TID_HINT_8,Le super de Bartaba est très puissant à bout portant car les bouteilles atterrissent dans une zone proche.
+TID_HINT_8,"Le super de Bartaba est très puissant à bout portant, car les bouteilles explosent dans une zone proche."
 TID_HINT_9,Les balles de Ricochet rebondissent pour aller encore plus loin.
 TID_HINT_10,Vous pouvez activer le <ccc0033>joystick rouge</c> n'importe où du côté droit de l'écran pour tirer.
 TID_HINT_11,Votre attaque principale et votre super ont deux modes de tir : appuyer pour activer le tir rapide ou viser en faisant glisser le doigt sur l'écran.
-TID_HINT_12,Visez pour mieux toucher une cible mouvante.
+TID_HINT_12,Visez pour mieux toucher une cible en mouvement.
 TID_HINT_13,Le tir rapide est plus adapté quand vous n'avez pas le temps de viser.
-TID_HINT_14,Le tir rapide est plus adapté pour les ennemis proches de vous.
+TID_HINT_14,Le tir rapide est plus adapté contre les ennemis proches de vous.
 TID_HINT_15,"Quand vous vous cachez dans les buissons, les ennemis peuvent vous voir s'ils sont assez près de vous."
-TID_HINT_16,Le tir rapide tire directement sur l'ennemi le plus proche sans prendre en compte ses déplacements.
+TID_HINT_16,Le tir rapide vise automatiquement l'ennemi le plus proche sans prendre en compte ses déplacements.
 TID_HINT_17,Viser vous permet de tirer dans les buissons pour vérifier si des ennemis s'y cachent.
-TID_HINT_18,Le tir rapide est plus adapté pour les ennemis immobiles.
-TID_HINT_19,Le tir rapide est plus adapté pour les ennemis qui viennent droit sur vous ou essaient de s'échapper.
+TID_HINT_18,Le tir rapide est plus adapté contre les ennemis immobiles.
+TID_HINT_19,Le tir rapide est plus adapté contre les ennemis qui viennent droit sur vous ou essaient de s'échapper.
 TID_HINT_20,"Quand vous vous cachez dans les buissons, les ennemis peuvent vous voir si vous attaquez ou subissez des dégâts."
-TID_HINT_21,Vous pouvez vous cacher de vos ennemis dans les buissons.
+TID_HINT_21,Vous pouvez vous cacher de vos ennemis dans les buissons pour vous soigner.
 TID_HINT_22,"Utiliser le tir rapide fera feu avec votre arme, même si vos ennemis ne sont pas à portée."
 TID_VS_TUTORIAL,Récupérez tous les <c50d050>cubes de pouvoir</c> !
 TID_USE_MANUAL_FIRE_TUTORIAL,Faites glisser le <ccc0033>joystick rouge</c> pour viser.
@@ -1965,16 +1965,16 @@ TID_ADD_FRIEND_ERROR_TOO_MANY_FRIENDS_OTHER,Votre ami a trop d'amis. Veuillez r�
 TID_ADD_FRIEND_ERROR_TOO_MANY_FRIENDS_YOU,Vous avez trop d'amis. Retirez un ami de votre liste pour en ajouter de nouveaux.
 TID_HINT_26,Penny peut infliger beaucoup de dégâts avec son attaque si ses ennemis sont alignés.
 TID_HINT_27,Créer une équipe avant un combat vous permet de mettre au point votre stratégie et de choisir une bonne combinaison de brawlers.
-TID_HINT_28,"En jouant dans des combats amicaux, vous pouvez vous entraîner pour les événements, créer des compétitions amicales et plus encore !"
-TID_HINT_29,"Après un bon combat entre nouveaux équipiers, vous pouvez appuyer sur Rejouer pour relancer une partie avec eux !"
+TID_HINT_28,"Avec les combats amicaux, vous pouvez vous entraîner pour les événements, créer des compétitions amicales et plus encore !"
+TID_HINT_29,"Après un bon combat, vous pouvez appuyer sur Rejouer pour relancer une partie avec les mêmes coéquipiers !"
 TID_HINT_30,Les combats amicaux vous permettent de choisir n'importe quel événement ou carte. Les brawlers seront au niveau maximum !
 TID_HINT_31,"Frank doit marquer un arrêt avant d'utiliser son attaque ou son super, vous laissant une chance de vous mettre hors de portée."
 TID_EXPERIENCE,EXPÉRIENCE
 TID_HINT_32,"Vous ne recevez pas de trophées dans les événements spéciaux, mais vous pouvez gagner des jetons pour le Pass Brawl."
-TID_HINT_33,Vous pouvez inviter des membres du club à devenir des amis à partir de la liste des membres du club.
-TID_HINT_34,Vous pouvez demander aux joueurs de votre équipe de devenir vos amis.
-TID_HINT_35,"Après quelques combats avec un équipier, vous pouvez lui demander de devenir votre ami depuis la liste de suggestions d'amis."
-TID_HINT_36,Vous pouvez demander aux joueurs de votre équipe de devenir vos amis.
+TID_HINT_33,Vous pouvez inviter des membres du club en ami à partir de la liste des membres du club.
+TID_HINT_34,Vous pouvez inviter les joueurs de votre équipe en ami.
+TID_HINT_35,"Après quelques combats avec un équipier, vous pouvez l'inviter en ami depuis la liste de suggestions d'amis."
+TID_HINT_36,Vous pouvez inviter les joueurs de votre équipe en ami.
 TID_HINT_37,Vous pouvez utiliser le bouton pour publier votre équipe auprès de vos amis et membres du club.
 TID_COOP_GENERATED,Arène des robots
 TID_MECHANIC_KNIGHT_SKIN,JESSIE CHEVALIER DRAGON
@@ -2077,13 +2077,13 @@ TID_PLAYER_MAP_PROPS,Carte de :\n<cff8000><CREDIT></c>
 TID_PLAYER_MAP_WINNER_SLOT_PROPS,Gagnante du jour !\n\nConcept de :\n<cff8000><CREDIT></c>
 TID_BATTLE_ROYALE_12,Labyrinthe
 TID_TEAM_INVITE_ALREADY_IN_TEAM,Ce joueur est déjà dans une équipe.
-TID_HINT_38,Un cercle bleu qui tourne aux pieds d'un brawler montre que leur super est prêt.
-TID_HINT_39,Un cercle jaune qui tourne aux pieds d'un brawler montre qu'il est en train de viser avec son super.
+TID_HINT_38,"Quand le super d'un brawler est prêt, un cercle bleu apparaît sous lui !"
+TID_HINT_39,"Quand un brawler viser avec son super, un cercle jaune apparaît sous lui !"
 TID_EVENT_NOT_AVAILABLE,Pas d'événement
 TID_SHOP_OFFER_PURCHASE_AD_NOT_AVAILABLE,Aucune vidéo disponible. Veuillez réessayer plus tard.
 TID_SHOP_NOT_AVAILABLE,non disponible
 TID_UNDERTAKER_GREASER_SKIN_SHOP,MORTIS\nROCKABILLY
-TID_HINT_40,Connectez-vous à Supercell ID dans les Paramètres pour sécuriser votre compte et jouer sur plusieurs appareils. Vous recevrez un skin gratuit !
+TID_HINT_40,Connectez-vous à Supercell ID dans les Paramètres pour sécuriser votre compte et jouer sur plusieurs appareils. Vous recevrez un skin gratuit !
 TID_GACHA_VIDEO_REWARD_RECEIVED,Récompenses supplémentaires !
 TID_BUTTON_NAVI_SHOP,MAGASIN
 TID_BUTTON_NAVI_SOCIAL,SOCIAL
@@ -2099,7 +2099,7 @@ TID_EVENT_MODIFIER_DESC_5,Les champignons de soin poussent de partout. Ils soign
 TID_EVENT_MODIFIER_DESC_5_SD,Les champignons de soin poussent de partout. Vous regrouper avec vos amis les empêche de pousser.
 TID_NINJA,LÉON
 TID_ROSA,ROSA
-TID_HINT_42,"Quand votre brawler n'attaque pas ou subit des dégâts, il ou elle peut régénérer sa santé."
+TID_HINT_42,"Quand votre brawler n'attaque pas et ne subit pas de dégâts, il récupère des PV."
 TID_HOOK_SHORT_DESC,RENFORT
 TID_HOOK_DESC,D'jinn tire un projectile avec sa lampe magique. Son super est une main magique qui attrape les ennemis à proximité !
 TID_SPEC_ABI_HOOK,TOUR DE MAGIE
@@ -2762,7 +2762,7 @@ TID_SPEC_SHIELD_ULTI_DESC,"Lorsque le super de Brock est entièrement chargé (e
 TID_SPEC_ABI_PET,TÊTE DE PIAF
 TID_SPEC_ABI_PET_DESC,L'oiseau de Dynamike se lance dans la bataille !
 TID_SPEC_ABI_DAMAGE_ULTI,ESPRIT GIFLEUR
-TID_SPEC_ABI_DAMAGE_ULTI_DESC,"Lorsque le super de D'jinn est chargé, il inflige <c00cc00><VALUE1></c> points de dégâts supplémentaires lorsqu'il attaque."
+TID_SPEC_ABI_DAMAGE_ULTI_DESC,"Lorsque le super de D'jinn est chargé, il inflige <c00cc00>+<VALUE1></c> points de dégâts lorsqu'il attaque."
 TID_ARCADE,A.R.K.A.D.
 TID_ARCADE_DESC,"A.R.K.A.D. se traîne un peu, mais après tout, c'est une borne d'arcade avec des jambes. Il tire des rayons laser et son super amplifie les dégâts de ses équipiers."
 TID_ARCADE_SHORT_DESC,DÉGÂTS BRUTS
@@ -3261,28 +3261,28 @@ TID_HERO_SCREEN_ITEM,GADGET
 TID_HERO_SCREEN_STAR_POWER,POUVOIR STAR
 TID_TYPE_AGE_GATE_EXT_URL_TITLE,INFORMATION
 TID_TYPE_AGE_GATE_EXT_URL_TEXT,Vous allez être redirigé(e) en dehors de Brawl Stars.
-TID_NOTIFICATION_CC_STARTED,Le défi du championnat va commencer.
+TID_NOTIFICATION_CC_STARTED,Le défi du championnat a commencé !
 TID_NOTIFICATION_CC_ENDING,Le défi du championnat se termine bientôt. Vous avez encore une chance !
-TID_NOTIFICATION_PSG_STARTED,La Coupe PSG a commencé. Réussissez-la pour gagner un skin gratuit.
+TID_NOTIFICATION_PSG_STARTED,La Coupe PSG a commencé. Réussissez-la pour gagner un skin gratuit !
 TID_NOTIFICATION_PSG_ENDING,La Coupe PSG va bientôt se terminer. Vous avez encore de le temps de gagner !
 TID_NOTIFICATION_CHALLENGE_STARTED,<CHALLENGE> a commencé !
-TID_NOTIFICATION_CHALLENGE_ENDING,<CHALLENGE> va bientôt se terminer. Vous avez encore le temps de gagner !
-TID_NOTIFICATION_COIN_RUSH,Nouvelle carte Razzia de gemmes. Allez gagner des récompenses !
-TID_NOTIFICATION_ATTACK_DEFEND,Braquage est disponible. Vous pouvez gagner des récompenses !
-TID_NOTIFICATION_BOUNTY_HUNTER,Prime est disponible. Vous pouvez gagner des récompenses !
-TID_NOTIFICATION_LASER_BALL,Nouvelle carte Brawlball. Vous pouvez gagner des récompenses !
-TID_NOTIFICATION_BATTLE_ROYAL,Nouvelle carte Survivant. Serez-vous le dernier en jeu ?
-TID_NOTIFICATION_BOSS,Combat de géant est disponible avec de super récompenses à la clé.
-TID_NOTIFICATION_COOP,Robots à gogo a commencé. Battez les robots et gagnez des récompenses.
-TID_NOTIFICATION_RAID_BOSS,C'est le retour de Combat de boss. Combien de temps tiendrez-vous bon ?
-TID_NOTIFICATION_ROBO_WARS,Siège est disponible. Vous pouvez gagner des récompenses !
-TID_NOTIFICATION_BOSS_RACE,Nouvelle carte pour Ciblage. Vous pouvez gagner des récompenses !
-TID_NOTIFICATION_LONE_STAR,Nouvelle carte Chasseur d'étoiles. Vous pouvez gagner des récompenses !
-TID_NOTIFICATION_CTF,Nouvelle carte Ruée sur les cadeaux. Vous pouvez gagner des récompenses !
-TID_NOTIFICATION_KING_OF_HILL,Nouvelle carte pour zone réservée. Vous pouvez gagner des récompenses !
-TID_NOTIFICATION_TOWN_CRUSHER,C'est le retour de Combat de boss. Combien de temps tiendrez-vous ?
-TID_NOTIFICATION_MULTIPLE_MODES,"<PARAM> nouvelles cartes disponibles, pleines de récompenses à gagner !"
-TID_NOTIFICATION_CLUB_LEAGUE_EVENT_DAY_STARTED,Nouveau jour de la ligue des clubs : venez vite jouer !
+TID_NOTIFICATION_CHALLENGE_ENDING,<CHALLENGE> se termine bientôt. Vous avez encore une chance !
+TID_NOTIFICATION_COIN_RUSH,Nouvelle carte en mode Razzia de gemmes. Gagnez des récompenses !
+TID_NOTIFICATION_ATTACK_DEFEND,Mode Braquage disponible. Gagnez des récompenses !
+TID_NOTIFICATION_BOUNTY_HUNTER,Mode Prime disponible. Gagnez des récompenses !
+TID_NOTIFICATION_LASER_BALL,Nouvelle carte en mode Brawlball. Gagnez des récompenses !
+TID_NOTIFICATION_BATTLE_ROYAL,Nouvelle carte en mode Survivant. Serez-vous le dernier en jeu ?
+TID_NOTIFICATION_BOSS,Mode Combat de géant disponible. Gagnez des récompenses !
+TID_NOTIFICATION_COOP,Mode Robots à gogo disponible. Battez les robots et gagnez des récompenses !
+TID_NOTIFICATION_RAID_BOSS,Retour du mode Combat de boss. Combien de temps tiendrez-vous ?
+TID_NOTIFICATION_ROBO_WARS,Mode Siège disponible. Gagnez des récompenses !
+TID_NOTIFICATION_BOSS_RACE,Nouvelle carte en mode Ciblage. Gagnez des récompenses !
+TID_NOTIFICATION_LONE_STAR,Nouvelle carte en mode Chasseur d'étoiles. Gagnez des récompenses !
+TID_NOTIFICATION_CTF,Ruée sur les cadeaux disponible. Gagnez des récompenses !
+TID_NOTIFICATION_KING_OF_HILL,Nouvelle carte en mode Zone réservée. Gagnez des récompenses !
+TID_NOTIFICATION_TOWN_CRUSHER,Retour du mode Combat de boss. Combien de temps tiendrez-vous ?
+TID_NOTIFICATION_MULTIPLE_MODES,Nouvelles cartes en mode <PARAM>. Gagnez des récompenses !
+TID_NOTIFICATION_CLUB_LEAGUE_EVENT_DAY_STARTED,Ligue des clubs : un nouveau jour d'événement commence !
 TID_FREE_BOX_AVAILABLE_0,Votre récompense gratuite vous attend !
 TID_FREE_BOX_AVAILABLE_1,Récupérez votre récompense gratuite !
 TID_FREE_BOX_AVAILABLE_2,Récupérez votre récompense gratuite avant qu'elle ne disparaisse !
@@ -3293,10 +3293,10 @@ TID_KEY_BAR_FULL,"<PARAM> jetons disponibles. Vite, au combat !"
 TID_COME_BACK_NOTIFICATION_SMALL,Encore un combat ?
 TID_COME_BACK_NOTIFICATION_MEDIUM,Encore un combat ?
 TID_COME_BACK_NOTIFICATION_LARGE,Encore un combat ?
-TID_POWER_PLAY_NOTIFICATION,Carte <PARAM> disponible pour le marathon star.
+TID_POWER_PLAY_NOTIFICATION,Carte <PARAM> disponible en mode Marathon star !
 TID_NOTIFICATION_NEW_BRAWLER,<PARAM> est arrivé ! Allez voir ça !
 TID_NOTIFICATION_DOUBLE_TOKENS_STARTED,L'événement double jeton a commencé !
-TID_NOTIFICATION_DOUBLE_COINS_STARTED,L'événement pluie de pièces a commencé. Combattez pour gagner des pièces !
+TID_NOTIFICATION_DOUBLE_COINS_STARTED,La pluie de pièces a commencé. Combattez pour gagner des pièces !
 TID_A_OUT_OF_B,<VALUE_A>/<VALUE_B>
 TID_ENTER_AGE_PROMPT,Quel âge avez-vous ?
 TID_ENTER_AGE_CONTINUE,CONFIRMER
@@ -4484,9 +4484,9 @@ TID_EMOTE_BUNDLE_BRALWMAS_PACK,ÉMOTICÔNES DES FÊTES BRAWL
 TID_MAP_EDITOR_LEGAL_WARNING_TITLE,Annonce importante
 TID_MAP_EDITOR_LEGAL_WARNING_DESC,"Nous espérons que vous vous amusez bien avec la création de carte ! Lorsque vous utilisez la création de carte, veuillez respecter la licence de jeu et le contrat de service des jeux Tencent, ainsi que les autres règles associées. Nous vous prions de ne pas créer ou partager de contenu érotique, obscène, susceptible de mettre en danger l'unité nationale, la souveraineté et l'intégrité territoriale, ou en infraction avec les lois et autres régulations en vigueur."
 TID_MAP_EDITOR_LEGAL_WARNING_DESC_YOOZOO,"Nous espérons que vous vous amusez bien avec la création de carte ! Lorsque vous utilisez la création de carte, veuillez respecter le contrat d'utilisation, ainsi que les autres règles associées. Nous vous prions de ne pas créer ou partager de contenu érotique, obscène, susceptible de mettre en danger l'unité nationale, la souveraineté et l'intégrité territoriale, ou en infraction avec les lois et autres régulations en vigueur."
-TID_RUFFS,COLONEL\nMÉDOR
+TID_RUFFS,MÉDOR
 TID_RUFFS_SHORT_DESC,SOUTIEN
-TID_RUFFS_DESC,Le colonel tire des doubles lasers qui rebondissent contre les murs. Son super lui permet d'ordonner un largage aérien qui blesse les adversaires dans la zone et offre un boost à son équipe.
+TID_RUFFS_DESC,"Quand il n'aboie pas ses ordres à ses subalternes, Colonel Médor est un très bon chien !\n\nIl dissimule son côté canin sous un comportement calme et sérieux, mais risque de ne pas résister s'il voit une baballe..."
 TID_RUFFS_WEAPON,DOUBLE LASER
 TID_RUFFS_WEAPON_DESC,Le double laser du colonel rebondit contre les murs plusieurs fois et peut atteindre les adversaires abrités derrière des obstacles.
 TID_RUFFS_ULTI,LARGAGE AÉRIEN
@@ -4511,7 +4511,7 @@ TID_ACCESSORY_FRANK_PULL_DESC,La prochaine attaque de Frank inflige <c00cc00><VA
 TID_ACCESSORY_GENE_HOMING,GANTS CHERCHEURS
 TID_ACCESSORY_GENE_HOMING_DESC,"D'jinn tire un projectile guidé sur chaque adversaire visible dans une large zone, infligeant jusqu'à <c00cc00><VALUE2></c> points de dégâts selon la distance."
 TID_ACCESSORY_CONTROLLER_BOUNCE_BACK,FORMULAIRE DE RETOUR
-TID_ACCESSORY_CONTROLLER_BOUNCE_BACK_DESC,"Pendant <c00cc00><VALUE1></c> seconde(s), la première fois que Nani subit des dégâts, <c00cc00><VALUE2></c> % de ces dégâts sont retournés à l'ennemi."
+TID_ACCESSORY_CONTROLLER_BOUNCE_BACK_DESC,"Pendant <c00cc00><VALUE2></c> seconde(s), la première fois que Nani subit des dégâts, <c00cc00><VALUE1></c> % de ces dégâts sont retournés à l'ennemi."
 TID_ACCESSORY_TICK_EXPLOSION,EXPLOSIF ULTIME
 TID_ACCESSORY_TICK_EXPLOSION_DESC,"Tick gagne un bouclier de <c00cc00><VALUE3> %</c> pendant <c00cc00><VALUE1></c> seconde(s). Lorsque le bouclier expire, il explose et inflige <c00cc00><VALUE2></c> points de dégâts."
 TID_ACCESSORY_TARA_SHADOWS,SORT D'INVOCATION
@@ -4813,8 +4813,8 @@ TID_RANKED_COOLDOWN_WARNING,Suspension : <TIME>
 TID_RANKED_ENEMY_P1,N°1 rouge
 TID_RANKED_ENEMY_P2,N°2 rouge
 TID_RANKED_ENEMY_P3,N°3 rouge
-TID_NOTIFICATION_RANKED_SEASON_STARTED,Une nouvelle saison de la Coupe star a commencé !
-TID_NOTIFICATION_RANKED_SEASON_ENDING,La saison de la Coupe star se termine bientôt. Il est temps de tout donner !
+TID_NOTIFICATION_RANKED_SEASON_STARTED,Une nouvelle saison de Coupe star a commencé !
+TID_NOTIFICATION_RANKED_SEASON_ENDING,La saison de Coupe star se termine bientôt. Il est temps de tout donner !
 TID_POWER_LEAGUE_SEASON,COUPE STAR
 TID_STARTING_SOON,Prochainement...
 TID_RANKED_TEAM_SELECT_HINT_PICK,Choisissez votre brawler.
@@ -4850,7 +4850,7 @@ TID_KNOCKOUT_TIEBREAK_BAR,Jeu décisif
 TID_HOMESCREEN_INFO_RANKED_SOLO,Remportez des victoires en Coupe star pour monter dans les rangs et obtenir de meilleures récompenses.\n\nRang actuel en solo :\n<RANK>
 TID_HOMESCREEN_INFO_RANKED_TEAM,Remportez des victoires en Coupe star pour monter dans les rangs et obtenir de meilleures récompenses.\n\nRang actuel en équipe :\n<RANK>
 TID_NAME_TECHNICAL_ERROR_TRY_AGAIN,La vérification du nom a échoué en raison d'un problème technique. Veuillez réessayez plus tard.
-TID_NOTIFICATION_KNOCKOUT,Nouvelle carte de hors-jeu. Vous pouvez gagner des récompenses !
+TID_NOTIFICATION_KNOCKOUT,Nouvelle carte en mode Hors-jeu. Gagnez des récompenses !
 TID_HERO_AND_SKIN_PREVIEW_BP_HERO,BRAWLER DU PASS BRAWL
 TID_HERO_AND_SKIN_PREVIEW_BP_SKIN,SKIN EXCLUSIF DU PASS BRAWL
 TID_HERO_AND_SKIN_PREVIEW_TR_HERO,BRAWLER DES TROPHÉES
@@ -5287,7 +5287,7 @@ TID_GEAR_VISION_TITLE,VISION
 TID_GEAR_SHIELD_TITLE,BOUCLIER
 TID_GEAR_FOREST_SPEED_INFO,Augmente la vitesse de déplacement dans les buissons de <NUM> %.
 TID_GEAR_STANDING_HEAL_INFO,Régénère la santé <NUM> % plus vite.
-TID_GEAR_LOW_HEALTH_DAMAGE_INFO,Inflige <NUM> points de dégâts supplémentaires lorsque la santé est inférieure à 50 %.
+TID_GEAR_LOW_HEALTH_DAMAGE_INFO,Inflige <NUM> % de dégâts supplémentaires lorsque la santé est inférieure à 50 %.
 TID_GEAR_VISION_INFO,Révèle les adversaires pendant <NUM> secondes après leur avoir infligé des dégâts.
 TID_GEAR_SHIELD_INFO,Offre <NUM> points de santé sous la forme d'un bouclier. Le bouclier est régénéré en 10 secondes lorsque la santé est au maximum.
 TID_GEAR_FOREST_SPEED_UPGRADE_INFO,Augmente la vitesse de déplacement dans les buissons.
@@ -5541,7 +5541,7 @@ TID_CLUB_LEAGUE_SHOW_TICKETS_TOGGLE,Afficher le nombre <cFFDA14>maximum</c> de t
 TID_CLUB_LEAGUE_INFO_TITLE,INFOS DE LIGUE DES CLUBS
 TID_CLUB_LEAGUE_INFO_PAGE_1_MARKER,Bienvenue !
 TID_CLUB_LEAGUE_INFO_PAGE_1_TITLE,<cFCBC22>Bienvenue dans les jeux de club</c>
-TID_CLUB_LEAGUE_INFO_PAGE_1_DESC,"Jouez avec votre club et achetez des récompenses dans le<cFCBC22>magasin du club</c> chaque semaine !\n\nToutes les semaines, un jeu de club sera disponible :\n<cFCBC22>SEMAINE DE LIGUE DES CLUBS</c> - Affrontez d'autres clubs pour grimper au classement et dans les ligues.\n<cFCBC22>QUÊTES DU CLUB</c> - Terminez trois quêtes pour gagner des points de club. Plus votre club termine de quêtes dans la semaine, plus les récompenses sont importantes !"
+TID_CLUB_LEAGUE_INFO_PAGE_1_DESC,"Jouez avec votre club et achetez des récompenses dans le <cFCBC22>magasin du club</c> chaque semaine !\n\nToutes les semaines, un jeu de club sera disponible :\n<cFCBC22>SEMAINE DE LIGUE DES CLUBS</c> - Affrontez d'autres clubs pour grimper au classement et dans les ligues.\n<cFCBC22>QUÊTES DU CLUB</c> - Terminez trois quêtes pour gagner des points de club. Plus votre club termine de quêtes dans la semaine, plus les récompenses sont importantes !"
 TID_CLUB_LEAGUE_INFO_PAGE_2_MARKER,Ligue des clubs
 TID_CLUB_LEAGUE_INFO_PAGE_2_TITLE,<cFCBC22>SEMAINE DE LIGUE DES CLUBS</c>
 TID_CLUB_LEAGUE_INFO_PAGE_2_DESC,"Pendant la semaine de ligue des clubs, affrontez 7 autres clubs de votre ligue. Participez aux événements sur <cFCBC22>trois jours différents</c>, et tentez d'atteindre <cFCBC22>le rang le plus élevé</c>. Pour participer aux matchs de la ligue des clubs, vous aurez besoin de <cFCBC22>tickets</c>.\n\nLes meilleurs clubs de la semaine remportent les meilleures récompenses. Les <cFCBC22>promotions</c> et les <cFCBC22>relégations</c> auront lieu à la fin de chaque semaine.\n\nBonus : jouez avec d'autres membres de votre club pour gagner des <cFCBC22>trophées supplémentaires</c> !"
@@ -5804,7 +5804,7 @@ TID_ACCESSORY_KICKER_DUDE_GADGET,POP-CORN-FU
 TID_ACCESSORY_KICKER_DUDE_GADGET_DESC,Fang lance une poignée de maïs en l'air pour faire pleuvoir du pop-corn ! Chaque grain inflige <c00cc00><VALUE1></c> points de dégâts.
 TID_GAME_MODE_24,DUELS
 TID_GAME_MODE_24_DESC,"Assemblez une équipe de 3 brawlers pour affronter une équipe adverse en duel éliminatoire. Chaque round est un combat en 1c1 et se termine lorsqu'un brawler est vaincu. Gagnez 3 rounds pour remporter le match !\n\nPour mettre toutes les chances de votre côté, sélectionnez une équipe efficace de brawlers dans le bon ordre."
-TID_NOTIFICATION_TAG_TEAM,Une nouvelle carte de duels est disponible ! À vous les récompenses !
+TID_NOTIFICATION_TAG_TEAM,Nouvelle carte en mode Duels. Gagnez des récompenses !
 TID_TAG_TEAM_INTRO_TEXT,Battez tous les brawlers ennemis !
 TID_REWARD_INFO_RESOURCE_CLUBCOINS,<AMOUNT> pièces de club récupérées
 TID_REWARD_INFO_RESOURCE_GEARSCRAP,<AMOUNT> unités de ferraille récupérées
@@ -5972,18 +5972,18 @@ TID_ACCESSORY_BLOCKED_MISSING_EGO,Impossible d'activer sans l'ego.
 TID_GAME_MODE_25,CHASSE OUVERTE
 TID_GAME_MODE_25_DESC,Récupérez des points en éliminant les ennemis. La première équipe à atteindre <MAX_SCORE> points remporte le match.
 TID_DEATHMATCH_INTRO_TEXT,Éliminez vos adversaires !
-TID_NOTIFICATION_DEATHMATCH,Nouvelle carte de chasse ouverte. Récompenses à gagner !
+TID_NOTIFICATION_DEATHMATCH,Nouvelle carte en mode Chasse ouverte. Gagnez des récompenses !
 TID_GAME_MODE_26,CARGAISON
 TID_GAME_MODE_26_DESC,"Poussez le wagon de votre équipe en vous tenant près de lui ! La première équipe à amener le wagon jusqu'au but gagne le match. En vous tenant près du wagon de l'équipe adverse, vous pouvez le ralentir. Si le temps est écoulé, l'équipe qui est allée le plus loin l'emporte."
 TID_PAYLOAD_INTRO_TEXT,Poussez le wagon !
-TID_NOTIFICATION_PAYLOAD,Nouvelle carte de cargaison. Récompenses à gagner !
+TID_NOTIFICATION_PAYLOAD,Nouvelle carte en mode Cargaison. Gagnez des récompenses !
 TID_ACCESSORY_PERCENTER_LIFESTEAL,POIGNÉE DE PV
 TID_ACCESSORY_PERCENTER_LIFESTEAL_DESC,Les tirs de Colette lui permettent de se soigner pendant <c00cc00><VALUE1></c> secondes à hauteur de <c00cc00><VALUE2> %</c> des dégâts infligés.
 TID_ACCESSORY_BASEBALL_STICKY,SUPER GLUE
 TID_ACCESSORY_BASEBALL_STICKY_DESC,La prochaine chewing-balle de Billie ralentit les ennemis touchés pendant <c00cc00><VALUE1></c> secondes.
 TID_ACCESSORY_MUMMY_ACID,ACIDE EN SPRAY
 TID_ACCESSORY_MUMMY_ACID_DESC,"Le spray d'Eliz@ traverse les murs, mais inflige <ccc0000><VALUE1> %</c> de dégâts en moins."
-TID_FIRST_BLOOD,Première élimination - <name> !
+TID_FIRST_BLOOD,Première élimination\n<name> !
 TID_KILL_NUMBER_OWN,Encore 4 éliminations !
 TID_KILL_NUMBER_OPPONENT,Encore 4 éliminations pour vos adversaires !
 TID_ONE_POINT_FROM_VICTORY,Encore 1 élimination avant la victoire !
@@ -6191,7 +6191,7 @@ TID_ACCESSORY_POWER_LEVELER_SHIELD_DESC,"Pendant <c00cc00><VALUE1></c> secondes
 TID_GAME_MODE_27,ASSAUT DE BOTS
 TID_GAME_MODE_27_DESC,Repoussez l'invasion des robots et détruisez-les pour récupérer des boulons ! La première équipe avec <MAX_SCORE> boulons remporte le match.
 TID_INVASION_INTRO_TEXT,Détruisez les robots !
-TID_NOTIFICATION_INVASION,Nouvelle carte d'assaut de bots. Récompenses à gagner !
+TID_NOTIFICATION_INVASION,Nouvelle carte en mode Assaut de bots. Gagnez des récompenses !
 TID_INVASION_1,Dévolution
 TID_INVASION_2,Division
 TID_INVASION_3,Pays imaginaire
@@ -6275,7 +6275,7 @@ TID_PRE_PICK,PRÉSÉLECTION
 TID_CANCEL,ANNULER
 TID_WANTS_TO_PLAY,VEUT JOUER
 TID_WANT_TO_PLAY,VEULENT JOUER
-TID_WANTS_TO_PLAY_MULTIPLE_TEAMMATES,<num> COÉQUIPIERS
+TID_WANTS_TO_PLAY_MULTIPLE_TEAMMATES,<num> COÉQUIPIERS
 TID_BRAWL_PASS_SEASON_11,LE BAL DES CASCADEURS
 TID_SHOP_STUNTSHOW_SKINS,Skins du bal des cascadeurs
 TID_SHOP_STUNTSHOW_TITLE,BAL DES CASCADEURS
@@ -6345,7 +6345,7 @@ TID_ACCESSORY_FIRE_DUDE_FLAME_SHIELD_DESC,"Ambre allume <c00cc00><VALUE3></c> f
 TID_ACCESSORY_MECHA_DUDE_TOWER_RELOAD,BOÎTE À OUTILS
 TID_ACCESSORY_MECHA_DUDE_TOWER_RELOAD_DESC,"Meg pose sa boîte à outils, augmentant ainsi la vitesse de rechargement de ses équipiers de <c00cc00><VALUE1> %</c> jusqu'à ce que la boîte soit détruite."
 TID_ACCESSORY_ROPE_DUDE_VISION,LUNETTES À RAYONS X
-TID_ACCESSORY_ROPE_DUDE_VISION_DESC,Buzz peut voir dans tous les buissons pendant <c00cc00><VALUE1></c> secondes.
+TID_ACCESSORY_ROPE_DUDE_VISION_DESC,Buzz peut voir dans les buissons se trouvant dans la zone de chargement de son super pendant <c00cc00><VALUE1></c> secondes.
 TID_LOGIN_CALENDAR_ALREADY_HAVE_BRAWLER,Vous possédez déjà ce brawler.
 TID_LOGIN_CALENDAR_ALREADY_HAVE_GADGET,Vous possédez déjà ce gadget.
 TID_LOGIN_CALENDAR_ALREADY_HAVE_STAR_POWER,Vous possédez déjà ce pouvoir star.
@@ -6460,7 +6460,8 @@ TID_ACCESSORY_SILENCER_GADGET_1_DESC,"Si la prochaine étoile de mer ne touche a
 TID_ACCESSORY_SILENCER_GADGET_2,BOMBE À ENCRE
 TID_ACCESSORY_SILENCER_GADGET_2_DESC,La prochaine attaque d'Otis projette une bombe à encre géante qui laisse une flaque et inflige <c00cc00><VALUE1></c> points de dégâts continus pendant <c00cc00><VALUE2></c> secondes.
 TID_RANDOM_GAME_MODE,MYSTÈRE
-TID_NOTIFICATION_RANDOM,Nouvelle carte en mode mystère disponible. Récompenses à gagner !
+TID_ADVENTURE_GAME_MODE,AVENTURE
+TID_NOTIFICATION_RANDOM,Nouvelle carte en mode Mystère. Gagnez des récompenses !
 TID_SKIN_INFO_DEEPSEA,Skin brawl des profondeurs
 TID_EMOTE_BUNDLE_DEEPSEA_PACK,Émoticône de skin brawl des profondeurs
 TID_SUGGEST,SUGGÉRER
@@ -6541,7 +6542,7 @@ TID_CLUB_EVENTS_ACTIVE_FOR,Actif pendant :
 TID_GAME_MODE_28,CHASSEURS
 TID_GAME_MODE_28_DESC,La saison de chasse est ouverte !\n\nGagnez des points en pourchassant et en éliminant les ennemis. Le premier à atteindre <MAX_SCORE> points l'emporte !
 TID_DEATHMATCH_FFA_INTRO_TEXT,Éliminez vos adversaires !
-TID_NOTIFICATION_DEATHMATCH_FFA,Nouvelle carte en mode Chasseurs disponible. À vous les récompenses !
+TID_NOTIFICATION_DEATHMATCH_FFA,Nouvelle carte en mode Chasseurs. Gagnez des récompenses !
 TID_DEATHMATCH_FFA_1,Tribulations
 TID_DEATHMATCH_FFA_2,Saison de chasse
 TID_DEATHMATCH_FFA_3,La proie
@@ -6602,6 +6603,146 @@ TID_TRUE_GOLD_EVE_SKIN_SHOP,EVE\nOR MASSIF
 TID_TRUE_SILVER_EVE_SKIN,EVE ARGENT MASSIF
 TID_TRUE_SILVER_EVE_SKIN_SHOP,EVE\nARGENT MASSIF
 TID_BRAWL_PASS_SEASON_12,BRAWL DES PROFONDEURS
+TID_TRIPLE_TAKEDOWN,TRIPLÉ !
+TID_QUAD_TAKEDOWN,QUADRUPLÉ !
+TID_WEAPON_THROWER,SAM
+TID_WEAPON_THROWER_SHORT_DESC,DÉGÂTS BRUTS
+TID_WEAPON_THROWER_DESC,"Ancien ouvrier de la fabrique de robots, Sam Bronson les déteste de tout son être.\n\nDans le gang du bras d'or, il est là pour agir, pas pour réfléchir. Et il ne se fait jamais prier pour aller botter les fesses à un robot !"
+TID_WEAPON_THROWER_WEAPON,SALADE DE PHALANGES
+TID_WEAPON_THROWER_WEAPON_DESC,Sam se déchaîne dans un déluge de coups de poing. Ses poings d'acier rendent ses attaques encore plus destructrices.
+TID_WEAPON_THROWER_ULTI,POINGS EXPLOSIFS
+TID_WEAPON_THROWER_ULTI_DESC,"Sam lance ses poings explosifs, qui infligent des dégâts à tous les ennemis sur leur trajectoire. À la prochaine activation de son super, Sam récupère ses poings et inflige une nouvelle fois des dégâts."
+TID_SPEC_ABI_WEAPON_THROWER_1,ROBUSTESSE
+TID_SPEC_ABI_WEAPON_THROWER_1_DESC,Sam récupère <c00cc00><VALUE1> %</c>de santé dès qu'il récupère ses poings d'acier.
+TID_SPEC_ABI_WEAPON_THROWER_2,CHARGEMENT À DISTANCE
+TID_SPEC_ABI_WEAPON_THROWER_2_DESC,"Tant qu'ils se trouvent sur le sol à proximité d'ennemis, les poings explosifs de Sam rechargent son super."
+TID_ACCESSORY_WEAPON_THROWER_GADGET_1,CHAMP MAGNÉTIQUE
+TID_ACCESSORY_WEAPON_THROWER_GADGET_1_DESC,"Tant que les poings explosifs se trouvent sur le sol, Sam peut les activer pour attirer vers eux les ennemis à proximité."
+TID_ACCESSORY_WEAPON_THROWER_GADGET_2,RÉPULSION ÉLECTRIQUE
+TID_ACCESSORY_WEAPON_THROWER_GADGET_2_DESC,"La prochaine fois que Sam lance ses poings explosifs, ces derniers repoussent les ennemis proches en atterrissant sur le sol."
+TID_ACCESSORY_BLOCKED_MISSING_GAUNTLETS,Les poings explosifs ne sont pas sur le sol !
+TID_ACCESSORY_BLOCKED_GAUNTLETS_TOO_FAR,Les poings explosifs sont trop loin !
+TID_ACCESSORY_BLOCKED_GAUNTLETS_REQUIRED,Poings explosifs requis !
+TID_SOUL_COLLECTOR,GUS
+TID_SOUL_COLLECTOR_SHORT_DESC,SOUTIEN
+TID_SOUL_COLLECTOR_DESC,"Gus vit dans un wagon de train abandonné et oublié depuis bien longtemps. Il adore les ballons, et il est passé maître dans l'art de les transformer en animaux pour passer le temps et se sentir moins seul."
+TID_SOUL_COLLECTOR_WEAPON,BALLONS BARJOTS
+TID_SOUL_COLLECTOR_WEAPON_DESC,"Gus lance des ballons sur ses ennemis. Après plusieurs attaques réussies, un ballon barjot apparaît. Gus et son équipe peuvent les collecter pour récupérer des points de santé."
+TID_SOUL_COLLECTOR_ULTI,MON AMI SPOOKY
+TID_SOUL_COLLECTOR_ULTI_DESC,"Gus utilise Spooky, son meilleur ami qu'il a lui-même fabriqué, pour créer un bouclier qui le protège lui ou un allié."
+TID_SPEC_ABI_SOUL_COLLECTOR_1,GUÉRISON SPIRITUELLE
+TID_SPEC_ABI_SOUL_COLLECTOR_1_DESC,Les soins procurés par les ballons barjots augmentent de <c00cc00><VALUE1> %</c>.
+TID_SPEC_ABI_SOUL_COLLECTOR_2,RENFORT SPECTRAL
+TID_SPEC_ABI_SOUL_COLLECTOR_2_DESC,Spooky augmente les dégâts infligés par un allié de <c00cc00><VALUE1> %</c> pendant <c00cc00><VALUE2></c> secondes.
+TID_ACCESSORY_SOUL_COLLECTOR_GADGET_1,AIGUILLE CRUELLE
+TID_ACCESSORY_SOUL_COLLECTOR_GADGET_1_DESC,"Tous les ballons barjots présents sur la carte explosent, infligeant <c00cc00><VALUE1></c> points de dégâts aux ennemis à proximité."
+TID_ACCESSORY_SOUL_COLLECTOR_GADGET_2,COMMUTATEUR D'ÂME
+TID_ACCESSORY_SOUL_COLLECTOR_GADGET_2_DESC,Gus sacrifie <ccc0000><VALUE1> %</c> de santé pour recharger ses ballons barjots à <c00cc00><VALUE2> %</c>.
+TID_ACCESSORY_BLOCKED_MISSING_SOULS,Aucun ballon à exploser !
+TID_ACCESSORY_BLOCKED_SPIRIT_ALREADY_FULL,Ballon barjot déjà chargé !
+TID_SKIN_INFO_OUTLAW,Skin du gang des calamités
+TID_EMOJI_SURGE_TEAM,NAVI
+TID_EMOJI_MORTIS_TEAM,SK
+TID_EMOJI_SPIKE_TEAM,INTZ
+TID_EMOJI_PRIMO_TEAM,TQ
+TID_EMOJI_COLT_TEAM,STMN
+TID_EMOJI_NITA_TEAM,OBEY
+TID_EMOJI_LEON_TEAM,QLASH
+TID_EMOJI_JESSIE_TEAM,ZETA
+TID_EMOJI_EMZ_TEAM,TRIBE
+TID_EMOJI_SHELLY_TEAM,TOTEM
+TID_SKIN_INFO_MECHA,Skin mécha
+TID_SCID_REQUIRED_DESC,"En raison de votre âge, vous devez vous connecter à Supercell ID."
+TID_SCID_REQUIRED_CONNECT,SE CONNECTER
+TID_LOGIN_CALENDAR_POPULAR,POPULAIRE
+TID_TRAIT_SUPER_START,Ce brawler commence la partie avec un super chargé.
+TID_GAME_MODE_29,BAROUD D'HONNEUR
+TID_GAME_MODE_29_DESC,"Des robots corrompus se retournent contre nous ! A.R.K.A.D. est notre seul espoir. C'est lui qui possède le code secret, il doit absolument survivre ! Protégez-le contre des vagues de robots maléfiques jusqu'à la fin du chrono.\n\nRamassez les pièces pour garder A.R.K.A.D. dans la partie !"
+TID_GAME_MODE_29_INTRO_TEXT,Protégez A.R.K.A.D. !
+TID_LAST_STAND_1,L'exterminateur
+TID_LAST_STAND_2,Jour du châtiment
+TID_LAST_STAND_3,Ascension des robots
+TID_LAST_STAND_4,Rédemption
+TID_LAST_STAND_5,Circuits grillés
+TID_LAST_STAND_6,Sombre destinée
+TID_INBOX_CAPTION_55,Récompense de quête :
+TID_ESPORTS_OFFER_TITLE,CHAMPIONNAT
+TID_ESPORTS_OFFER_SUBTITLE_PINS,Ensemble d'émoticônes
+TID_ESPORTS_OFFER_SUBTITLE_THUMBNAILS,Icônes de joueur
+TID_ESPORTS_OFFER_SUBTITLE_EACH,UNITÉ
+TID_ESPORTS_OFFER_SUBTITLE_ALREADY_OWNED,Déjà débloqué !
+TID_ESPORTS_OFFER_ITEM_PINS,Émoticône
+TID_ESPORTS_OFFER_ITEM_THUMBNAILS,Icône de joueur
+TID_EMOTE_BUNDLE_MORTIS_MECHA_PACK,Pack d'émoticônes Mortis mécha
+TID_BRAWL_PASS_SEASON_13,FABRIQUE DE ROBOTS
+TID_TRUE_GOLD_OTIS_SKIN,OTIS OR MASSIF
+TID_TRUE_GOLD_OTIS_SKIN_SHOP,OTIS\nOR MASSIF
+TID_TRUE_SILVER_OTIS_SKIN,OTIS ARGENT MASSIF
+TID_TRUE_SILVER_OTIS_SKIN_SHOP,OTIS\nARGENT MASSIF
+TID_TRUE_GOLD_SQUEAK_SKIN,SQUEAK OR MASSIF
+TID_TRUE_GOLD_SQUEAK_SKIN_SHOP,SQUEAK\nOR MASSIF
+TID_TRUE_SILVER_SQUEAK_SKIN,SQUEAK ARGENT MASSIF
+TID_TRUE_SILVER_SQUEAK_SKIN_SHOP,SQUEAK\nARGENT MASSIF
+TID_TRUE_GOLD_BYRON_SKIN,BYRON OR MASSIF
+TID_TRUE_GOLD_BYRON_SKIN_SHOP,BYRON\nOR MASSIF
+TID_TRUE_SILVER_BRYON_SKIN,BYRON ARGENT MASSIF
+TID_TRUE_SILVER_BYRON_SKIN_SHOP,BYRON\nARGENT MASSIF
+TID_TRUE_GOLD_GRIFF_SKIN,GRIFF OR MASSIF
+TID_TRUE_GOLD_GRIFF_SKIN_SHOP,GRIFF\nOR MASSIF
+TID_TRUE_SILVER_GRIFF_SKIN,GRIFF ARGENT MASSIF
+TID_TRUE_SILVER_GRIFF_SKIN_SHOP,GRIFF\nARGENT MASSIF
+TID_TRUE_GOLD_EDGAR_SKIN,EDGAR OR MASSIF
+TID_TRUE_GOLD_EDGAR_SKIN_SHOP,EDGAR\nOR MASSIF
+TID_TRUE_SILVER_EDGAR_SKIN,EDGAR ARGENT MASSIF
+TID_TRUE_SILVER_EDGAR_SKIN_SHOP,EDGAR\nARGENT MASSIF
+TID_CAESAR_BRONSON_SKIN,SAM CÉSAR
+TID_CAESAR_BRONSON_SKIN_SHOP,SAM\nCÉSAR
+TID_MECHA_MORIS_SKIN,MORTIS MÉCHA
+TID_MECHA_MORTIS_SKIN_SHOP,MORTIS\nMÉCHA
+TID_DARK_MECHA_MORTIS_SKIN,MORTIS MÉCHA DE L'OMBRE
+TID_DARK_MECHA_MORTIS_SKIN_SHOP,MORTIS\nMÉCHA DE L'OMBRE
+TID_LIGHT_MECHA_MORTIS_SKIN,MORTIS MÉCHA DE LUMIÈRE
+TID_LIGHT_MECHA_MORTIS_SKIN_SHOP,MORTIS\nMÉCHA DE LUMIÈRE
+TID_OUTLAW_LOLA_SKIN,LOLA DE L'OUEST
+TID_OUTLAW_LOLA_SKIN_SHOP,LOLA\nDE L'OUEST
+TID_OUTLAW_CROW,CORBAC LE CORROMPU
+TID_OUTLAW_CROW_SKIN_SHOP,CORBAC LE CORROMPU
+TID_OUTLAW_POCO_SKIN,POCO DESPERADO
+TID_OUTLAW_POCO_SKIN_SHOP,POCO\nDESPERADO
+TID_BROKER_PAM_SKIN,PAM NÉGOCIATRICE
+TID_BROKER_PAM_SKIN_SHOP,PAM\nNÉGOCIATRICE
+TID_MOON_FESTIVAL_SQUEAK_SKIN,SQUEAK LAPIN LUNAIRE
+TID_MOON_FESTIVAL_SQUEAK_SKIN_SHOP,SQUEAK LAPIN\nLUNAIRE
+TID_BRAWLOWEEN_LEON_SKIN,LÉON FANTÔME
+TID_BRAWLOWEEN_LEON_SKIN_SHOP,LÉON\nFANTÔME
+TID_HINT_45,Utilisez un code de créateur dans le magasin.
+TID_HINT_46,Connectez-vous chaque jour pour recevoir des récompenses !
+TID_HINT_47,"En passant le ballon à vos ennemis en mode Brawlball, vous pouvez leur faire gâcher leurs attaques !"
+TID_HINT_48,Utilisez des émoticônes et des sprays pour vous exprimer pendant les combats.
+TID_HINT_49,"Les clôtures sont comme des murs, mais vous pouvez tirer à travers."
+TID_HINT_50,Le travail d'équipe est la clé de la réussite !
+TID_HINT_51,"Si vous n'aimez pas la disposition des contrôles, vous pouvez les modifier en utilisant la fonction Essayer."
+TID_HINT_52,"En mode Brawlball, vous pouvez utiliser votre super pour lancer le ballon plus fort !"
+TID_HINT_53,"Quand c'est vous qui portez le plus de gemmes en mode Razzia de gemmes, privilégiez la défense à l'attaque."
+TID_HINT_54,"Si vos équipiers se font éliminer, attendez qu'ils reviennent pour attaquer en même temps !"
+TID_HINT_55,Lancez des combats amicaux pour vous entraîner et vous améliorer.
+TID_HINT_56,Certains brawlers ont des spécificités ! Vous pouvez les voir sur leur page de stats.
+TID_HINT_57,"En mode Survivant en duo, assurez-vous que votre coéquipier soit en vie avant de ramasser des cubes de pouvoir."
+TID_HINT_58,Utilisez l'option \qChercher une équipe\q quand vous participez aux défis !
+TID_HINT_59,"Faites attention aux mines de Bo, elles peuvent être n'importe où !"
+TID_HINT_60,"Le super de Lou est très efficace pour contrôler une zone, utilisez-le à des endroits stratégiques de la carte !"
+TID_HINT_61,Les dégâts infligés par Jessie diminuent à chaque fois que son attaque rebondit sur un ennemi.
+TID_HINT_62,Colette peut infliger d'importants dégâts aux tanks !
+TID_HINT_63,Edgar se soigne à chaque fois qu'il porte un coup à un ennemi !
+TID_HINT_64,"Plus vous chargez son attaque, plus Janet tire loin."
+TID_HINT_65,D'jinn peut harceler ses adversaires et charger son super grâce à son attaque qui se divise !
+TID_LAST_STAND_WAVE_1,Robots en approche !
+TID_LAST_STAND_WAVE_2,Les renforts arrivent !
+TID_LAST_STAND_SHUTDOWN,<ccc0000>A.R.K.A.D. s'éteint !</c>
+TID_EMOTE_BUNDLE_OUTLAW_PACK,Pack d´émoticônes du gang des calamités
+TID_SHOP_OUTLAW_SKINS,Skin du gang des calamités
+TID_SHOP_OUTLAW_TITLE,GANG DES CALAMITÉS
+TID_ACCESSORY_BLOCKED_SOULS_TOO_FAR,Les ballons barjots sont trop loin !
 TID_REGION_CUSTOM1,
 TID_REGION_CUSTOM2,
 TID_REGION_CUSTOM3,

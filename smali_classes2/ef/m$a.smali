@@ -38,12 +38,12 @@
 
 
 # direct methods
-.method public constructor <init>(Lef/b0;Lokhttp3/Call$Factory;Lef/j;Lef/c;)V
+.method public constructor <init>(Lef/a0;Lokhttp3/Call$Factory;Lef/j;Lef/c;)V
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lef/b0;",
+            "Lef/a0;",
             "Lokhttp3/Call$Factory;",
             "Lef/j<",
             "Lokhttp3/ResponseBody;",
@@ -54,7 +54,7 @@
     .end annotation
 
     .line 1
-    invoke-direct {p0, p1, p2, p3}, Lef/m;-><init>(Lef/b0;Lokhttp3/Call$Factory;Lef/j;)V
+    invoke-direct {p0, p1, p2, p3}, Lef/m;-><init>(Lef/a0;Lokhttp3/Call$Factory;Lef/j;)V
 
     .line 2
     iput-object p4, p0, Lef/m$a;->d:Lef/c;

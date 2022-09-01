@@ -53,7 +53,7 @@
     iput-object v0, p0, Lw0/h$g;->c:Landroid/content/res/ColorStateList;
 
     .line 15
-    sget-object v0, Lw0/h;->o:Landroid/graphics/PorterDuff$Mode;
+    sget-object v0, Lw0/h;->p:Landroid/graphics/PorterDuff$Mode;
 
     iput-object v0, p0, Lw0/h$g;->d:Landroid/graphics/PorterDuff$Mode;
 
@@ -79,7 +79,7 @@
     iput-object v0, p0, Lw0/h$g;->c:Landroid/content/res/ColorStateList;
 
     .line 3
-    sget-object v0, Lw0/h;->o:Landroid/graphics/PorterDuff$Mode;
+    sget-object v0, Lw0/h;->p:Landroid/graphics/PorterDuff$Mode;
 
     iput-object v0, p0, Lw0/h$g;->d:Landroid/graphics/PorterDuff$Mode;
 

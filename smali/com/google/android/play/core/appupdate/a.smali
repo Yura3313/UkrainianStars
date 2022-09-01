@@ -42,11 +42,11 @@
 
     move-object/from16 v18, p17
 
-    new-instance v19, Lcom/google/android/play/core/appupdate/n;
+    new-instance v19, Lcom/google/android/play/core/appupdate/l;
 
     move-object/from16 v0, v19
 
-    invoke-direct/range {v0 .. v18}, Lcom/google/android/play/core/appupdate/n;-><init>(Ljava/lang/String;IIILjava/lang/Integer;IJJJJLandroid/app/PendingIntent;Landroid/app/PendingIntent;Landroid/app/PendingIntent;Landroid/app/PendingIntent;)V
+    invoke-direct/range {v0 .. v18}, Lcom/google/android/play/core/appupdate/l;-><init>(Ljava/lang/String;IIILjava/lang/Integer;IJJJJLandroid/app/PendingIntent;Landroid/app/PendingIntent;Landroid/app/PendingIntent;Landroid/app/PendingIntent;)V
 
     return-object v19
 .end method
@@ -56,15 +56,15 @@
 .method public abstract a()J
 .end method
 
-.method public final b(Lcom/google/android/play/core/appupdate/d;)Landroid/app/PendingIntent;
+.method public final b(Lcom/google/android/play/core/appupdate/c;)Landroid/app/PendingIntent;
     .locals 3
 
     move-object v0, p1
 
-    check-cast v0, Lcom/google/android/play/core/appupdate/o;
+    check-cast v0, Lcom/google/android/play/core/appupdate/m;
 
     .line 1
-    iget v0, v0, Lcom/google/android/play/core/appupdate/o;->a:I
+    iget v0, v0, Lcom/google/android/play/core/appupdate/m;->a:I
 
     const/4 v1, 0x0
 
@@ -84,7 +84,7 @@
     return-object p1
 
     :cond_0
-    invoke-virtual {p0, p1}, Lcom/google/android/play/core/appupdate/a;->f(Lcom/google/android/play/core/appupdate/d;)Z
+    invoke-virtual {p0, p1}, Lcom/google/android/play/core/appupdate/a;->f(Lcom/google/android/play/core/appupdate/c;)Z
 
     move-result p1
 
@@ -117,7 +117,7 @@
     return-object p1
 
     :cond_3
-    invoke-virtual {p0, p1}, Lcom/google/android/play/core/appupdate/a;->f(Lcom/google/android/play/core/appupdate/d;)Z
+    invoke-virtual {p0, p1}, Lcom/google/android/play/core/appupdate/a;->f(Lcom/google/android/play/core/appupdate/c;)Z
 
     move-result p1
 
@@ -139,13 +139,13 @@
 .method public abstract e()J
 .end method
 
-.method public final f(Lcom/google/android/play/core/appupdate/d;)Z
+.method public final f(Lcom/google/android/play/core/appupdate/c;)Z
     .locals 4
 
-    check-cast p1, Lcom/google/android/play/core/appupdate/o;
+    check-cast p1, Lcom/google/android/play/core/appupdate/m;
 
     .line 1
-    iget-boolean p1, p1, Lcom/google/android/play/core/appupdate/o;->b:Z
+    iget-boolean p1, p1, Lcom/google/android/play/core/appupdate/m;->b:Z
 
     if-eqz p1, :cond_0
 

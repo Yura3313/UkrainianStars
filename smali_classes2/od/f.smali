@@ -1,81 +1,145 @@
 .class public final Lod/f;
-.super Ljava/lang/Object;
+.super Lse/i;
 .source "OnboardingInviteFriendsPageFragment.kt"
 
 # interfaces
-.implements Landroid/view/View$OnLayoutChangeListener;
+.implements Lre/p;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lse/i;",
+        "Lre/p<",
+        "Landroid/graphics/drawable/Drawable;",
+        "Lud/g;",
+        "Lie/i;",
+        ">;"
+    }
+.end annotation
 
 
 # instance fields
-.field public final synthetic a:Landroid/view/View;
+.field public final synthetic g:Lod/d$b$e;
 
-.field public final synthetic b:I
-
-.field public final synthetic c:Lod/c;
+.field public final synthetic h:Lre/l;
 
 
 # direct methods
-.method public constructor <init>(Landroid/view/View;ILod/c;)V
+.method public constructor <init>(Lod/d$b$e;Lre/l;)V
     .locals 0
 
-    iput-object p1, p0, Lod/f;->a:Landroid/view/View;
+    iput-object p1, p0, Lod/f;->g:Lod/d$b$e;
 
-    iput p2, p0, Lod/f;->b:I
+    iput-object p2, p0, Lod/f;->h:Lre/l;
 
-    iput-object p3, p0, Lod/f;->c:Lod/c;
+    const/4 p1, 0x2
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final onLayoutChange(Landroid/view/View;IIIIIIII)V
-    .locals 0
+.method public final invoke(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 2
 
     .line 1
-    iget-object p1, p0, Lod/f;->c:Lod/c;
+    check-cast p1, Landroid/graphics/drawable/Drawable;
 
-    sget p2, Lcom/supercell/id/R$id;->friends_list:I
+    check-cast p2, Lud/g;
 
-    invoke-virtual {p1, p2}, Lod/c;->V0(I)Landroid/view/View;
+    const-string v0, "drawable"
+
+    .line 2
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const-string v0, "<anonymous parameter 1>"
+
+    invoke-static {p2, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 3
+    iget-object p2, p0, Lod/f;->g:Lod/d$b$e;
+
+    iget-object p2, p2, Lod/d$b$e;->g:Lod/d$b;
+
+    .line 4
+    iget-object p2, p2, Lod/d$b;->g:Ljava/lang/ref/WeakReference;
+
+    .line 5
+    invoke-virtual {p2}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
+
+    move-result-object p2
+
+    check-cast p2, Landroid/content/Context;
+
+    if-eqz p2, :cond_3
+
+    .line 6
+    instance-of v0, p1, Landroid/graphics/drawable/BitmapDrawable;
+
+    const/4 v1, 0x0
+
+    if-nez v0, :cond_0
+
+    move-object p1, v1
+
+    :cond_0
+    check-cast p1, Landroid/graphics/drawable/BitmapDrawable;
+
+    if-eqz p1, :cond_1
+
+    new-instance v1, Landroid/graphics/drawable/BitmapDrawable;
+
+    invoke-virtual {p2}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
+
+    move-result-object v0
+
+    invoke-virtual {p1}, Landroid/graphics/drawable/BitmapDrawable;->getBitmap()Landroid/graphics/Bitmap;
 
     move-result-object p1
 
-    check-cast p1, Landroidx/recyclerview/widget/RecyclerView;
+    invoke-direct {v1, v0, p1}, Landroid/graphics/drawable/BitmapDrawable;-><init>(Landroid/content/res/Resources;Landroid/graphics/Bitmap;)V
 
-    if-eqz p1, :cond_0
+    .line 7
+    :cond_1
+    invoke-virtual {p2}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
-    .line 2
-    iget-object p2, p0, Lod/f;->a:Landroid/view/View;
+    move-result-object p1
 
-    const-string p3, "selectAllBackground"
+    sget p2, Lcom/supercell/id/R$dimen;->friend_list_game_icon_size:I
 
-    invoke-static {p2, p3}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-virtual {p1, p2}, Landroid/content/res/Resources;->getDimensionPixelSize(I)I
 
-    invoke-virtual {p2}, Landroid/view/View;->getBottom()I
+    move-result p1
 
-    move-result p2
+    if-eqz v1, :cond_2
 
-    iget p3, p0, Lod/f;->b:I
+    .line 8
+    new-instance p2, Landroid/graphics/Rect;
 
-    add-int/2addr p2, p3
+    const/4 v0, 0x0
 
-    .line 3
-    invoke-static {p1}, Lae/z2;->f(Landroid/view/View;)I
+    invoke-direct {p2, v0, v0, p1, p1}, Landroid/graphics/Rect;-><init>(IIII)V
 
-    move-result p3
+    invoke-virtual {v1, p2}, Landroid/graphics/drawable/Drawable;->setBounds(Landroid/graphics/Rect;)V
 
-    if-eq p2, p3, :cond_0
+    :cond_2
+    if-eqz v1, :cond_3
 
-    .line 4
-    new-instance p3, Lod/f$a;
+    .line 9
+    iget-object p1, p0, Lod/f;->h:Lre/l;
 
-    invoke-direct {p3, p1, p2}, Lod/f$a;-><init>(Landroidx/recyclerview/widget/RecyclerView;I)V
+    invoke-interface {p1, v1}, Lre/l;->invoke(Ljava/lang/Object;)Ljava/lang/Object;
 
-    invoke-virtual {p1, p3}, Landroid/view/View;->post(Ljava/lang/Runnable;)Z
+    move-result-object p1
 
-    :cond_0
-    return-void
+    check-cast p1, Lie/i;
+
+    .line 10
+    :cond_3
+    sget-object p1, Lie/i;->a:Lie/i;
+
+    return-object p1
 .end method

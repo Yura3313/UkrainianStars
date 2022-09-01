@@ -4,7 +4,7 @@
 
 
 # instance fields
-.field public g:I
+.field public h:I
 
 
 # direct methods
@@ -36,7 +36,7 @@
 
     move-result p1
 
-    iput p1, p0, Lz1/l;->g:I
+    iput p1, p0, Lz1/l;->h:I
 
     return-void
 .end method
@@ -75,7 +75,7 @@
 .method public final b()I
     .locals 1
 
-    iget v0, p0, Lz1/l;->g:I
+    iget v0, p0, Lz1/l;->h:I
 
     return v0
 .end method
@@ -121,7 +121,7 @@
     move-result v1
 
     .line 4
-    iget v2, p0, Lz1/l;->g:I
+    iget v2, p0, Lz1/l;->h:I
 
     if-eq v1, v2, :cond_1
 
@@ -167,7 +167,7 @@
 .method public final hashCode()I
     .locals 1
 
-    iget v0, p0, Lz1/l;->g:I
+    iget v0, p0, Lz1/l;->h:I
 
     return v0
 .end method

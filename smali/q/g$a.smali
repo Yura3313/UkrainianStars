@@ -152,7 +152,7 @@
     .locals 7
 
     .line 1
-    sget-object v0, Lq/e$a;->h:Lq/e$a;
+    sget-object v0, Lq/e$a;->i:Lq/e$a;
 
     iget v1, p0, Lq/g$a;->a:I
 
@@ -1347,9 +1347,9 @@
     .locals 11
 
     .line 1
-    sget-object v6, Lq/e$a;->f:Lq/e$a;
+    sget-object v6, Lq/e$a;->g:Lq/e$a;
 
-    sget-object v7, Lq/e$a;->h:Lq/e$a;
+    sget-object v7, Lq/e$a;->i:Lq/e$a;
 
     iget v0, p0, Lq/g$a;->p:I
 

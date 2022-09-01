@@ -7,18 +7,18 @@
 
 
 # instance fields
-.field public final a:Lk3/hg0;
+.field public final a:Lk3/ig0;
 
 
 # direct methods
-.method public constructor <init>(Lk3/hg0;)V
+.method public constructor <init>(Lk3/ig0;)V
     .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lk3/ql;->a:Lk3/hg0;
+    iput-object p1, p0, Lk3/ql;->a:Lk3/ig0;
 
     return-void
 .end method
@@ -55,7 +55,7 @@
 
     .line 3
     :try_start_0
-    iget-object v0, p0, Lk3/ql;->a:Lk3/hg0;
+    iget-object v0, p0, Lk3/ql;->a:Lk3/ig0;
 
     invoke-static {p1}, Ljava/lang/Boolean;->parseBoolean(Ljava/lang/String;)Z
 
@@ -68,13 +68,13 @@
     if-eqz p1, :cond_0
 
     .line 4
-    invoke-virtual {v0, v1, v2}, Lk3/hg0;->b(II)V
+    invoke-virtual {v0, v1, v2}, Lk3/ig0;->b(II)V
 
     goto :goto_0
 
     .line 5
     :cond_0
-    invoke-virtual {v0, v2, v1}, Lk3/hg0;->b(II)V
+    invoke-virtual {v0, v2, v1}, Lk3/ig0;->b(II)V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 

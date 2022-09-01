@@ -35,11 +35,11 @@
     .locals 4
 
     .line 1
-    iget v0, p1, Lrb/o;->f:I
+    iget v0, p1, Lrb/o;->g:I
 
     if-lez v0, :cond_1
 
-    iget v1, p1, Lrb/o;->g:I
+    iget v1, p1, Lrb/o;->h:I
 
     if-gtz v1, :cond_0
 
@@ -53,7 +53,7 @@
     mul-float v0, v0, v1
 
     .line 2
-    iget v2, p2, Lrb/o;->f:I
+    iget v2, p2, Lrb/o;->g:I
 
     int-to-float v2, v2
 
@@ -64,13 +64,13 @@
     move-result v0
 
     .line 3
-    iget v2, p1, Lrb/o;->g:I
+    iget v2, p1, Lrb/o;->h:I
 
     int-to-float v2, v2
 
     mul-float v2, v2, v1
 
-    iget v3, p2, Lrb/o;->g:I
+    iget v3, p2, Lrb/o;->h:I
 
     int-to-float v3, v3
 
@@ -85,25 +85,25 @@
     div-float/2addr v0, v2
 
     .line 4
-    iget v2, p1, Lrb/o;->f:I
+    iget v2, p1, Lrb/o;->g:I
 
     int-to-float v2, v2
 
     mul-float v2, v2, v1
 
-    iget p1, p1, Lrb/o;->g:I
+    iget p1, p1, Lrb/o;->h:I
 
     int-to-float p1, p1
 
     div-float/2addr v2, p1
 
-    iget p1, p2, Lrb/o;->f:I
+    iget p1, p2, Lrb/o;->g:I
 
     int-to-float p1, p1
 
     mul-float p1, p1, v1
 
-    iget p2, p2, Lrb/o;->g:I
+    iget p2, p2, Lrb/o;->h:I
 
     int-to-float p2, p2
 
@@ -137,9 +137,9 @@
 
     new-instance p1, Landroid/graphics/Rect;
 
-    iget v0, p2, Lrb/o;->f:I
+    iget v0, p2, Lrb/o;->g:I
 
-    iget p2, p2, Lrb/o;->g:I
+    iget p2, p2, Lrb/o;->h:I
 
     const/4 v1, 0x0
 

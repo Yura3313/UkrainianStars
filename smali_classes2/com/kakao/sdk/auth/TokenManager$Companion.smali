@@ -26,11 +26,11 @@
 
     new-array v0, v0, [Lwe/h;
 
-    new-instance v1, Lse/m;
+    new-instance v1, Lse/n;
 
     const-class v2, Lcom/kakao/sdk/auth/TokenManager$Companion;
 
-    invoke-static {v2}, Lse/r;->a(Ljava/lang/Class;)Lwe/c;
+    invoke-static {v2}, Lse/s;->a(Ljava/lang/Class;)Lwe/c;
 
     move-result-object v2
 
@@ -38,10 +38,10 @@
 
     const-string v4, "getInstance()Lcom/kakao/sdk/auth/TokenManager;"
 
-    invoke-direct {v1, v2, v3, v4}, Lse/m;-><init>(Lwe/d;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {v1, v2, v3, v4}, Lse/n;-><init>(Lwe/d;Ljava/lang/String;Ljava/lang/String;)V
 
     .line 1
-    sget-object v2, Lse/r;->a:Lse/s;
+    sget-object v2, Lse/s;->a:Lse/t;
 
     invoke-virtual {v2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -63,7 +63,7 @@
     return-void
 .end method
 
-.method public synthetic constructor <init>(Lse/e;)V
+.method public synthetic constructor <init>(Lse/f;)V
     .locals 0
 
     invoke-direct {p0}, Lcom/kakao/sdk/auth/TokenManager$Companion;-><init>()V

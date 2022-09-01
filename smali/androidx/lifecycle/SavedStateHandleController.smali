@@ -117,11 +117,11 @@
     iget-object v0, v0, Landroidx/lifecycle/k;->b:Landroidx/lifecycle/f$c;
 
     .line 3
-    sget-object v1, Landroidx/lifecycle/f$c;->g:Landroidx/lifecycle/f$c;
+    sget-object v1, Landroidx/lifecycle/f$c;->h:Landroidx/lifecycle/f$c;
 
     if-eq v0, v1, :cond_1
 
-    sget-object v1, Landroidx/lifecycle/f$c;->i:Landroidx/lifecycle/f$c;
+    sget-object v1, Landroidx/lifecycle/f$c;->j:Landroidx/lifecycle/f$c;
 
     invoke-virtual {v0, v1}, Landroidx/lifecycle/f$c;->c(Landroidx/lifecycle/f$c;)Z
 

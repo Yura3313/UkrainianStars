@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field public y:Landroid/widget/LinearLayout;
+.field public z:Landroid/widget/LinearLayout;
 
 
 # direct methods
@@ -34,7 +34,7 @@
 
     check-cast p1, Landroid/widget/LinearLayout;
 
-    iput-object p1, p0, Lra/q$a;->y:Landroid/widget/LinearLayout;
+    iput-object p1, p0, Lra/q$a;->z:Landroid/widget/LinearLayout;
 
     return-void
 .end method

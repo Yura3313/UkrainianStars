@@ -26,7 +26,7 @@
     iput-object v0, p0, Ly/i;->c:Landroid/content/res/ColorStateList;
 
     .line 3
-    sget-object v0, Ly/g;->l:Landroid/graphics/PorterDuff$Mode;
+    sget-object v0, Ly/g;->m:Landroid/graphics/PorterDuff$Mode;
 
     iput-object v0, p0, Ly/i;->d:Landroid/graphics/PorterDuff$Mode;
 

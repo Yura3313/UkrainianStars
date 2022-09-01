@@ -1,57 +1,54 @@
-.class public final Lk3/x40;
-.super Lcom/google/android/gms/internal/ads/zzaon;
+.class public final synthetic Lk3/x40;
+.super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
+
+# interfaces
+.implements Lk3/jo;
 
 
 # instance fields
-.field public f:Lk3/g40;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lk3/g40<",
-            "Lcom/google/android/gms/internal/ads/zzapa;",
-            "Lcom/google/android/gms/internal/ads/zzcso;",
-            ">;"
-        }
-    .end annotation
-.end field
-
-.field public final synthetic g:Lk3/w40;
+.field public final a:Lk3/zg0;
 
 
 # direct methods
-.method public constructor <init>(Lk3/w40;Lk3/g40;Lx6/a;)V
+.method public constructor <init>(Lk3/zg0;)V
     .locals 0
 
-    .line 1
-    iput-object p1, p0, Lk3/x40;->g:Lk3/w40;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    invoke-direct {p0}, Lcom/google/android/gms/internal/ads/zzaon;-><init>()V
-
-    .line 2
-    iput-object p2, p0, Lk3/x40;->f:Lk3/g40;
+    iput-object p1, p0, Lk3/x40;->a:Lk3/zg0;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final p(Ljava/lang/String;)V
+.method public final getVideoController()Lcom/google/android/gms/internal/ads/zzyg;
     .locals 2
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Landroid/os/RemoteException;
-        }
-    .end annotation
 
-    iget-object v0, p0, Lk3/x40;->f:Lk3/g40;
+    iget-object v0, p0, Lk3/x40;->a:Lk3/zg0;
 
-    iget-object v0, v0, Lk3/g40;->c:Lk3/qr;
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    check-cast v0, Lcom/google/android/gms/internal/ads/zzcso;
+    .line 1
+    :try_start_0
+    iget-object v0, v0, Lk3/zg0;->a:Lcom/google/android/gms/internal/ads/zzamv;
 
-    const/4 v1, 0x0
+    invoke-interface {v0}, Lcom/google/android/gms/internal/ads/zzamv;->getVideoController()Lcom/google/android/gms/internal/ads/zzyg;
 
-    invoke-virtual {v0, v1, p1}, Lcom/google/android/gms/internal/ads/zzcso;->j3(ILjava/lang/String;)V
+    move-result-object v0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    return-void
+    return-object v0
+
+    :catchall_0
+    move-exception v0
+
+    .line 2
+    new-instance v1, Lcom/google/android/gms/internal/ads/zzdlr;
+
+    invoke-direct {v1, v0}, Lcom/google/android/gms/internal/ads/zzdlr;-><init>(Ljava/lang/Throwable;)V
+
+    throw v1
 .end method

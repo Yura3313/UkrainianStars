@@ -30,7 +30,7 @@
 
 
 # instance fields
-.field public final g:Ljava/lang/Class;
+.field public final h:Ljava/lang/Class;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/lang/Class<",
@@ -41,7 +41,7 @@
     .end annotation
 .end field
 
-.field public final h:Z
+.field public final i:Z
 
 
 # direct methods
@@ -65,12 +65,12 @@
     .line 1
     invoke-direct {p0}, Lcom/supercell/id/ui/BackStack$Entry;-><init>()V
 
-    iput-boolean p1, p0, Lcom/supercell/id/ui/tutorial/TutorialFragment$BackStackEntry;->h:Z
+    iput-boolean p1, p0, Lcom/supercell/id/ui/tutorial/TutorialFragment$BackStackEntry;->i:Z
 
     .line 2
     const-class p1, Lcom/supercell/id/ui/tutorial/TutorialFragment;
 
-    iput-object p1, p0, Lcom/supercell/id/ui/tutorial/TutorialFragment$BackStackEntry;->g:Ljava/lang/Class;
+    iput-object p1, p0, Lcom/supercell/id/ui/tutorial/TutorialFragment$BackStackEntry;->h:Ljava/lang/Class;
 
     return-void
 .end method
@@ -82,7 +82,7 @@
 
     const-string p2, "mainActivity"
 
-    invoke-static {p1, p2}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p2}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/4 p1, 0x0
 
@@ -94,7 +94,7 @@
 
     const-string p2, "mainActivity"
 
-    invoke-static {p1, p2}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p2}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/4 p1, 0x0
 
@@ -110,7 +110,7 @@
             ")",
             "Ljava/lang/Class<",
             "+",
-            "Lwc/a1;",
+            "Lwc/b1;",
             ">;"
         }
     .end annotation
@@ -120,18 +120,18 @@
     const-string v1, "mainActivity.resources"
 
     .line 1
-    invoke-static {p1, v0, v1}, Lk3/ax;->e(Lcom/supercell/id/ui/MainActivity;Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {p1, v0, v1}, Lwc/v0;->a(Lcom/supercell/id/ui/MainActivity;Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result p1
 
     if-eqz p1, :cond_1
 
     .line 2
-    iget-boolean p1, p0, Lcom/supercell/id/ui/tutorial/TutorialFragment$BackStackEntry;->h:Z
+    iget-boolean p1, p0, Lcom/supercell/id/ui/tutorial/TutorialFragment$BackStackEntry;->i:Z
 
     if-eqz p1, :cond_0
 
-    const-class p1, Lwc/e1;
+    const-class p1, Lwc/f1;
 
     goto :goto_0
 
@@ -142,7 +142,7 @@
 
     .line 3
     :cond_1
-    iget-boolean p1, p0, Lcom/supercell/id/ui/tutorial/TutorialFragment$BackStackEntry;->h:Z
+    iget-boolean p1, p0, Lcom/supercell/id/ui/tutorial/TutorialFragment$BackStackEntry;->i:Z
 
     if-eqz p1, :cond_2
 
@@ -169,7 +169,7 @@
         }
     .end annotation
 
-    iget-object v0, p0, Lcom/supercell/id/ui/tutorial/TutorialFragment$BackStackEntry;->g:Ljava/lang/Class;
+    iget-object v0, p0, Lcom/supercell/id/ui/tutorial/TutorialFragment$BackStackEntry;->h:Ljava/lang/Class;
 
     return-object v0
 .end method
@@ -193,9 +193,9 @@
 
     check-cast p1, Lcom/supercell/id/ui/tutorial/TutorialFragment$BackStackEntry;
 
-    iget-boolean v0, p0, Lcom/supercell/id/ui/tutorial/TutorialFragment$BackStackEntry;->h:Z
+    iget-boolean v0, p0, Lcom/supercell/id/ui/tutorial/TutorialFragment$BackStackEntry;->i:Z
 
-    iget-boolean p1, p1, Lcom/supercell/id/ui/tutorial/TutorialFragment$BackStackEntry;->h:Z
+    iget-boolean p1, p1, Lcom/supercell/id/ui/tutorial/TutorialFragment$BackStackEntry;->i:Z
 
     if-ne v0, p1, :cond_0
 
@@ -216,7 +216,7 @@
 .method public final hashCode()I
     .locals 1
 
-    iget-boolean v0, p0, Lcom/supercell/id/ui/tutorial/TutorialFragment$BackStackEntry;->h:Z
+    iget-boolean v0, p0, Lcom/supercell/id/ui/tutorial/TutorialFragment$BackStackEntry;->i:Z
 
     if-eqz v0, :cond_0
 
@@ -229,7 +229,7 @@
 .method public final l()Z
     .locals 1
 
-    iget-boolean v0, p0, Lcom/supercell/id/ui/tutorial/TutorialFragment$BackStackEntry;->h:Z
+    iget-boolean v0, p0, Lcom/supercell/id/ui/tutorial/TutorialFragment$BackStackEntry;->i:Z
 
     xor-int/lit8 v0, v0, 0x1
 
@@ -244,14 +244,14 @@
     const-string v1, "mainActivity.resources"
 
     .line 1
-    invoke-static {p1, v0, v1}, Lk3/ax;->e(Lcom/supercell/id/ui/MainActivity;Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {p1, v0, v1}, Lwc/v0;->a(Lcom/supercell/id/ui/MainActivity;Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result p1
 
     if-eqz p1, :cond_1
 
     .line 2
-    iget-boolean p1, p0, Lcom/supercell/id/ui/tutorial/TutorialFragment$BackStackEntry;->h:Z
+    iget-boolean p1, p0, Lcom/supercell/id/ui/tutorial/TutorialFragment$BackStackEntry;->i:Z
 
     if-eqz p1, :cond_0
 
@@ -281,12 +281,12 @@
     move-result-object v0
 
     .line 2
-    iget-boolean v1, p0, Lcom/supercell/id/ui/tutorial/TutorialFragment$BackStackEntry;->h:Z
+    iget-boolean v1, p0, Lcom/supercell/id/ui/tutorial/TutorialFragment$BackStackEntry;->i:Z
 
     const-string v2, ")"
 
     .line 3
-    invoke-static {v0, v1, v2}, Landroidx/appcompat/app/j;->b(Ljava/lang/StringBuilder;ZLjava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, v1, v2}, Landroidx/appcompat/app/j;->a(Ljava/lang/StringBuilder;ZLjava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -298,10 +298,10 @@
 
     const-string p2, "dest"
 
-    invoke-static {p1, p2}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p2}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
-    iget-boolean p2, p0, Lcom/supercell/id/ui/tutorial/TutorialFragment$BackStackEntry;->h:Z
+    iget-boolean p2, p0, Lcom/supercell/id/ui/tutorial/TutorialFragment$BackStackEntry;->i:Z
 
     .line 2
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
@@ -325,9 +325,9 @@
 
     const-string v0, "mainActivity"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    const-class p1, Lwc/d1;
+    const-class p1, Lwc/e1;
 
     return-object p1
 .end method

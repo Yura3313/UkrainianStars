@@ -75,19 +75,19 @@
     move-object/from16 v0, p1
 
     .line 1
-    iget-object v1, v0, Lcom/google/firebase/messaging/RemoteMessage;->f:Landroid/os/Bundle;
+    iget-object v1, v0, Lcom/google/firebase/messaging/RemoteMessage;->g:Landroid/os/Bundle;
 
     const-string v2, "from"
 
     invoke-virtual {v1, v2}, Landroid/os/Bundle;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     .line 2
-    iget-object v1, v0, Lcom/google/firebase/messaging/RemoteMessage;->g:Lm/a;
+    iget-object v1, v0, Lcom/google/firebase/messaging/RemoteMessage;->h:Lm/a;
 
     if-nez v1, :cond_2
 
     .line 3
-    iget-object v1, v0, Lcom/google/firebase/messaging/RemoteMessage;->f:Landroid/os/Bundle;
+    iget-object v1, v0, Lcom/google/firebase/messaging/RemoteMessage;->g:Landroid/os/Bundle;
 
     .line 4
     new-instance v3, Lm/a;
@@ -180,11 +180,11 @@
 
     .line 15
     :cond_1
-    iput-object v3, v0, Lcom/google/firebase/messaging/RemoteMessage;->g:Lm/a;
+    iput-object v3, v0, Lcom/google/firebase/messaging/RemoteMessage;->h:Lm/a;
 
     .line 16
     :cond_2
-    iget-object v1, v0, Lcom/google/firebase/messaging/RemoteMessage;->g:Lm/a;
+    iget-object v1, v0, Lcom/google/firebase/messaging/RemoteMessage;->h:Lm/a;
 
     const-string v2, "origin"
 
@@ -282,7 +282,7 @@
     move-object/from16 v3, p0
 
     .line 28
-    iget v2, v1, Lm/g;->h:I
+    iget v2, v1, Lm/g;->i:I
 
     if-lez v2, :cond_5
 

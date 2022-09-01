@@ -48,7 +48,7 @@
 
     move-result-object v0
 
-    check-cast v0, Lo8/y;
+    check-cast v0, Lo8/z;
 
     .line 3
     iget-object v2, p0, Lf9/o0;->b:Lf9/q0;
@@ -57,7 +57,7 @@
     invoke-virtual {v2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 5
-    instance-of v2, v0, Lo8/i0;
+    instance-of v2, v0, Lo8/k0;
 
     if-eqz v2, :cond_1
 
@@ -87,12 +87,12 @@
     const/4 v5, 0x1
 
     .line 10
-    invoke-virtual {v3, v4, v0, v5, v2}, Lf9/q0;->b(Lo8/y;Lo8/y;ZZ)Ljava/util/List;
+    invoke-virtual {v3, v4, v0, v5, v2}, Lf9/q0;->b(Lo8/z;Lo8/z;ZZ)Ljava/util/List;
 
     move-result-object v0
 
     .line 11
-    invoke-static {v0}, Lbc/a;->d(Ljava/util/List;)Z
+    invoke-static {v0}, Lt5/a;->g(Ljava/util/List;)Z
 
     move-result v2
 

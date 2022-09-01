@@ -168,7 +168,7 @@
     const-string v3, "Error occurred when calling clear method"
 
     .line 6
-    invoke-static {v1, v3, v0}, Landroidx/savedstate/d;->g(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v1, v3, v0}, Le5/i;->i(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
 
     .line 7
     :goto_0
@@ -305,10 +305,10 @@
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
     .line 5
-    invoke-static {v1}, Lcom/helpshift/util/w;->b(Ljava/io/Closeable;)V
+    invoke-static {v1}, Lcom/helpshift/util/v;->a(Ljava/io/Closeable;)V
 
     .line 6
-    invoke-static {v2}, Lcom/helpshift/util/w;->b(Ljava/io/Closeable;)V
+    invoke-static {v2}, Lcom/helpshift/util/v;->a(Ljava/io/Closeable;)V
 
     return-void
 
@@ -339,10 +339,10 @@
 
     .line 7
     :goto_0
-    invoke-static {v1}, Lcom/helpshift/util/w;->b(Ljava/io/Closeable;)V
+    invoke-static {v1}, Lcom/helpshift/util/v;->a(Ljava/io/Closeable;)V
 
     .line 8
-    invoke-static {v2}, Lcom/helpshift/util/w;->b(Ljava/io/Closeable;)V
+    invoke-static {v2}, Lcom/helpshift/util/v;->a(Ljava/io/Closeable;)V
 
     .line 9
     throw v0
@@ -574,16 +574,16 @@
     const-string v4, "store index"
 
     .line 9
-    invoke-static {v3, v4, p1, v0}, Landroidx/savedstate/d;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v3, v4, p1, v0}, Le5/i;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_2
 
     .line 10
     :goto_1
-    invoke-static {v1}, Lcom/helpshift/util/w;->b(Ljava/io/Closeable;)V
+    invoke-static {v1}, Lcom/helpshift/util/v;->a(Ljava/io/Closeable;)V
 
     .line 11
-    invoke-static {v2}, Lcom/helpshift/util/w;->b(Ljava/io/Closeable;)V
+    invoke-static {v2}, Lcom/helpshift/util/v;->a(Ljava/io/Closeable;)V
 
     return-void
 
@@ -601,10 +601,10 @@
 
     .line 12
     :goto_3
-    invoke-static {v0}, Lcom/helpshift/util/w;->b(Ljava/io/Closeable;)V
+    invoke-static {v0}, Lcom/helpshift/util/v;->a(Ljava/io/Closeable;)V
 
     .line 13
-    invoke-static {v1}, Lcom/helpshift/util/w;->b(Ljava/io/Closeable;)V
+    invoke-static {v1}, Lcom/helpshift/util/v;->a(Ljava/io/Closeable;)V
 
     .line 14
     throw p1

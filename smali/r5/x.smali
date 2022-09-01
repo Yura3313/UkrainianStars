@@ -134,7 +134,7 @@
     sput-object v0, Lr5/x;->c:Ljava/util/logging/Logger;
 
     .line 2
-    invoke-static {}, Lr5/i0;->b()Z
+    invoke-static {}, Lr5/k0;->b()Z
 
     move-result v0
 

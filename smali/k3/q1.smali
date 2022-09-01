@@ -1,167 +1,404 @@
 .class public final Lk3/q1;
-.super Lf1/a$a;
-.source "com.google.android.gms:play-services-ads-lite@@19.3.0"
+.super Ljava/lang/Object;
+.source "com.google.android.gms:play-services-ads@@19.3.0"
 
 
 # instance fields
-.field public final a:Lcom/google/android/gms/internal/ads/zzadw;
+.field public final a:Ljava/util/concurrent/atomic/AtomicInteger;
 
-.field public final b:Landroid/graphics/drawable/Drawable;
+.field public final b:Ljava/util/HashSet;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/Set<",
+            "Lk3/a<",
+            "*>;>;"
+        }
+    .end annotation
+.end field
 
-.field public final c:Landroid/net/Uri;
+.field public final c:Ljava/util/concurrent/PriorityBlockingQueue;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/concurrent/PriorityBlockingQueue<",
+            "Lk3/a<",
+            "*>;>;"
+        }
+    .end annotation
+.end field
 
-.field public final d:D
+.field public final d:Ljava/util/concurrent/PriorityBlockingQueue;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/concurrent/PriorityBlockingQueue<",
+            "Lk3/a<",
+            "*>;>;"
+        }
+    .end annotation
+.end field
 
-.field public final e:I
+.field public final e:Lk3/fy0;
 
-.field public final f:I
+.field public final f:Lk3/q51;
+
+.field public final g:Lk3/h30;
+
+.field public final h:[Lk3/m51;
+
+.field public i:Lk3/oz0;
+
+.field public final j:Ljava/util/ArrayList;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/List<",
+            "Lk3/w1;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public final k:Ljava/util/ArrayList;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/List<",
+            "Lk3/r2;",
+            ">;"
+        }
+    .end annotation
+.end field
 
 
 # direct methods
-.method public constructor <init>(Lcom/google/android/gms/internal/ads/zzadw;)V
-    .locals 2
+.method public constructor <init>(Lk3/fy0;Lk3/q51;)V
+    .locals 3
 
     .line 1
-    invoke-direct {p0}, Lf1/a$a;-><init>()V
+    new-instance v0, Lk3/h30;
+
+    new-instance v1, Landroid/os/Handler;
 
     .line 2
-    iput-object p1, p0, Lk3/q1;->a:Lcom/google/android/gms/internal/ads/zzadw;
+    invoke-static {}, Landroid/os/Looper;->getMainLooper()Landroid/os/Looper;
 
-    const/4 v0, 0x0
+    move-result-object v2
+
+    invoke-direct {v1, v2}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
+
+    invoke-direct {v0, v1}, Lk3/h30;-><init>(Landroid/os/Handler;)V
 
     .line 3
-    :try_start_0
-    invoke-interface {p1}, Lcom/google/android/gms/internal/ads/zzadw;->F2()Lcom/google/android/gms/dynamic/IObjectWrapper;
-
-    move-result-object p1
-
-    if-eqz p1, :cond_0
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 4
-    invoke-static {p1}, Lcom/google/android/gms/dynamic/ObjectWrapper;->c2(Lcom/google/android/gms/dynamic/IObjectWrapper;)Ljava/lang/Object;
+    new-instance v1, Ljava/util/concurrent/atomic/AtomicInteger;
 
-    move-result-object p1
+    invoke-direct {v1}, Ljava/util/concurrent/atomic/AtomicInteger;-><init>()V
 
-    check-cast p1, Landroid/graphics/drawable/Drawable;
-    :try_end_0
-    .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
-
-    goto :goto_0
-
-    :catch_0
-    :cond_0
-    move-object p1, v0
+    iput-object v1, p0, Lk3/q1;->a:Ljava/util/concurrent/atomic/AtomicInteger;
 
     .line 5
-    :goto_0
-    iput-object p1, p0, Lk3/q1;->b:Landroid/graphics/drawable/Drawable;
+    new-instance v1, Ljava/util/HashSet;
+
+    invoke-direct {v1}, Ljava/util/HashSet;-><init>()V
+
+    iput-object v1, p0, Lk3/q1;->b:Ljava/util/HashSet;
 
     .line 6
-    :try_start_1
-    iget-object p1, p0, Lk3/q1;->a:Lcom/google/android/gms/internal/ads/zzadw;
+    new-instance v1, Ljava/util/concurrent/PriorityBlockingQueue;
 
-    invoke-interface {p1}, Lcom/google/android/gms/internal/ads/zzadw;->W0()Landroid/net/Uri;
+    invoke-direct {v1}, Ljava/util/concurrent/PriorityBlockingQueue;-><init>()V
 
-    move-result-object v0
-    :try_end_1
-    .catch Landroid/os/RemoteException; {:try_start_1 .. :try_end_1} :catch_1
+    iput-object v1, p0, Lk3/q1;->c:Ljava/util/concurrent/PriorityBlockingQueue;
 
     .line 7
-    :catch_1
-    iput-object v0, p0, Lk3/q1;->c:Landroid/net/Uri;
+    new-instance v1, Ljava/util/concurrent/PriorityBlockingQueue;
 
-    const-wide/high16 v0, 0x3ff0000000000000L    # 1.0
+    invoke-direct {v1}, Ljava/util/concurrent/PriorityBlockingQueue;-><init>()V
+
+    iput-object v1, p0, Lk3/q1;->d:Ljava/util/concurrent/PriorityBlockingQueue;
 
     .line 8
-    :try_start_2
-    iget-object p1, p0, Lk3/q1;->a:Lcom/google/android/gms/internal/ads/zzadw;
+    new-instance v1, Ljava/util/ArrayList;
 
-    invoke-interface {p1}, Lcom/google/android/gms/internal/ads/zzadw;->B4()D
+    invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
 
-    move-result-wide v0
-    :try_end_2
-    .catch Landroid/os/RemoteException; {:try_start_2 .. :try_end_2} :catch_2
+    iput-object v1, p0, Lk3/q1;->j:Ljava/util/ArrayList;
 
     .line 9
-    :catch_2
-    iput-wide v0, p0, Lk3/q1;->d:D
+    new-instance v1, Ljava/util/ArrayList;
 
-    const/4 p1, -0x1
+    invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
+
+    iput-object v1, p0, Lk3/q1;->k:Ljava/util/ArrayList;
 
     .line 10
-    :try_start_3
-    iget-object v0, p0, Lk3/q1;->a:Lcom/google/android/gms/internal/ads/zzadw;
-
-    invoke-interface {v0}, Lcom/google/android/gms/internal/ads/zzadw;->getWidth()I
-
-    move-result v0
-    :try_end_3
-    .catch Landroid/os/RemoteException; {:try_start_3 .. :try_end_3} :catch_3
-
-    goto :goto_1
-
-    :catch_3
-    const/4 v0, -0x1
+    iput-object p1, p0, Lk3/q1;->e:Lk3/fy0;
 
     .line 11
-    :goto_1
-    iput v0, p0, Lk3/q1;->e:I
+    iput-object p2, p0, Lk3/q1;->f:Lk3/q51;
+
+    const/4 p1, 0x4
+
+    new-array p1, p1, [Lk3/m51;
 
     .line 12
-    :try_start_4
-    iget-object v0, p0, Lk3/q1;->a:Lcom/google/android/gms/internal/ads/zzadw;
-
-    invoke-interface {v0}, Lcom/google/android/gms/internal/ads/zzadw;->getHeight()I
-
-    move-result p1
-    :try_end_4
-    .catch Landroid/os/RemoteException; {:try_start_4 .. :try_end_4} :catch_4
+    iput-object p1, p0, Lk3/q1;->h:[Lk3/m51;
 
     .line 13
-    :catch_4
-    iput p1, p0, Lk3/q1;->f:I
+    iput-object v0, p0, Lk3/q1;->g:Lk3/h30;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a()Landroid/graphics/drawable/Drawable;
-    .locals 1
+.method public final a()V
+    .locals 6
 
-    iget-object v0, p0, Lk3/q1;->b:Landroid/graphics/drawable/Drawable;
+    .line 1
+    iget-object v0, p0, Lk3/q1;->i:Lk3/oz0;
 
-    return-object v0
+    const/4 v1, 0x1
+
+    if-eqz v0, :cond_0
+
+    .line 2
+    iput-boolean v1, v0, Lk3/oz0;->k:Z
+
+    .line 3
+    invoke-virtual {v0}, Ljava/lang/Thread;->interrupt()V
+
+    .line 4
+    :cond_0
+    iget-object v0, p0, Lk3/q1;->h:[Lk3/m51;
+
+    array-length v2, v0
+
+    const/4 v3, 0x0
+
+    const/4 v4, 0x0
+
+    :goto_0
+    if-ge v4, v2, :cond_2
+
+    aget-object v5, v0, v4
+
+    if-eqz v5, :cond_1
+
+    .line 5
+    iput-boolean v1, v5, Lk3/m51;->k:Z
+
+    .line 6
+    invoke-virtual {v5}, Ljava/lang/Thread;->interrupt()V
+
+    :cond_1
+    add-int/lit8 v4, v4, 0x1
+
+    goto :goto_0
+
+    .line 7
+    :cond_2
+    new-instance v0, Lk3/oz0;
+
+    iget-object v1, p0, Lk3/q1;->c:Ljava/util/concurrent/PriorityBlockingQueue;
+
+    iget-object v2, p0, Lk3/q1;->d:Ljava/util/concurrent/PriorityBlockingQueue;
+
+    iget-object v4, p0, Lk3/q1;->e:Lk3/fy0;
+
+    iget-object v5, p0, Lk3/q1;->g:Lk3/h30;
+
+    invoke-direct {v0, v1, v2, v4, v5}, Lk3/oz0;-><init>(Ljava/util/concurrent/BlockingQueue;Ljava/util/concurrent/BlockingQueue;Lk3/fy0;Lk3/h30;)V
+
+    iput-object v0, p0, Lk3/q1;->i:Lk3/oz0;
+
+    .line 8
+    invoke-virtual {v0}, Ljava/lang/Thread;->start()V
+
+    .line 9
+    :goto_1
+    iget-object v0, p0, Lk3/q1;->h:[Lk3/m51;
+
+    array-length v0, v0
+
+    if-ge v3, v0, :cond_3
+
+    .line 10
+    new-instance v0, Lk3/m51;
+
+    iget-object v1, p0, Lk3/q1;->d:Ljava/util/concurrent/PriorityBlockingQueue;
+
+    iget-object v2, p0, Lk3/q1;->f:Lk3/q51;
+
+    iget-object v4, p0, Lk3/q1;->e:Lk3/fy0;
+
+    iget-object v5, p0, Lk3/q1;->g:Lk3/h30;
+
+    invoke-direct {v0, v1, v2, v4, v5}, Lk3/m51;-><init>(Ljava/util/concurrent/BlockingQueue;Lk3/q51;Lk3/fy0;Lk3/h30;)V
+
+    .line 11
+    iget-object v1, p0, Lk3/q1;->h:[Lk3/m51;
+
+    aput-object v0, v1, v3
+
+    .line 12
+    invoke-virtual {v0}, Ljava/lang/Thread;->start()V
+
+    add-int/lit8 v3, v3, 0x1
+
+    goto :goto_1
+
+    :cond_3
+    return-void
 .end method
 
-.method public final b()I
+.method public final b(Lk3/a;I)V
     .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lk3/a<",
+            "*>;I)V"
+        }
+    .end annotation
 
-    iget v0, p0, Lk3/q1;->f:I
+    .line 1
+    iget-object p1, p0, Lk3/q1;->k:Ljava/util/ArrayList;
 
-    return v0
+    monitor-enter p1
+
+    .line 2
+    :try_start_0
+    iget-object p2, p0, Lk3/q1;->k:Ljava/util/ArrayList;
+
+    invoke-virtual {p2}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
+
+    move-result-object p2
+
+    :goto_0
+    invoke-interface {p2}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    invoke-interface {p2}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lk3/r2;
+
+    .line 3
+    invoke-interface {v0}, Lk3/r2;->d()V
+
+    goto :goto_0
+
+    .line 4
+    :cond_0
+    monitor-exit p1
+
+    return-void
+
+    :catchall_0
+    move-exception p2
+
+    monitor-exit p1
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    goto :goto_2
+
+    :goto_1
+    throw p2
+
+    :goto_2
+    goto :goto_1
 .end method
 
-.method public final c()D
+.method public final c(Lk3/a;)Lk3/a;
     .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Ljava/lang/Object;",
+            ">(",
+            "Lk3/a<",
+            "TT;>;)",
+            "Lk3/a<",
+            "TT;>;"
+        }
+    .end annotation
 
-    iget-wide v0, p0, Lk3/q1;->d:D
+    .line 1
+    iput-object p0, p1, Lk3/a;->n:Lk3/q1;
 
-    return-wide v0
-.end method
+    .line 2
+    iget-object v0, p0, Lk3/q1;->b:Ljava/util/HashSet;
 
-.method public final d()Landroid/net/Uri;
-    .locals 1
+    monitor-enter v0
 
-    iget-object v0, p0, Lk3/q1;->c:Landroid/net/Uri;
+    .line 3
+    :try_start_0
+    iget-object v1, p0, Lk3/q1;->b:Ljava/util/HashSet;
 
-    return-object v0
-.end method
+    invoke-virtual {v1, p1}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
-.method public final e()I
-    .locals 1
+    .line 4
+    monitor-exit v0
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
-    iget v0, p0, Lk3/q1;->e:I
+    .line 5
+    iget-object v0, p0, Lk3/q1;->a:Ljava/util/concurrent/atomic/AtomicInteger;
 
-    return v0
+    invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicInteger;->incrementAndGet()I
+
+    move-result v0
+
+    .line 6
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v0
+
+    iput-object v0, p1, Lk3/a;->m:Ljava/lang/Integer;
+
+    const-string v0, "add-to-queue"
+
+    .line 7
+    invoke-virtual {p1, v0}, Lk3/a;->i(Ljava/lang/String;)V
+
+    const/4 v0, 0x0
+
+    .line 8
+    invoke-virtual {p0, p1, v0}, Lk3/q1;->b(Lk3/a;I)V
+
+    .line 9
+    iget-boolean v0, p1, Lk3/a;->o:Z
+
+    if-nez v0, :cond_0
+
+    .line 10
+    iget-object v0, p0, Lk3/q1;->d:Ljava/util/concurrent/PriorityBlockingQueue;
+
+    invoke-virtual {v0, p1}, Ljava/util/concurrent/PriorityBlockingQueue;->add(Ljava/lang/Object;)Z
+
+    return-object p1
+
+    .line 11
+    :cond_0
+    iget-object v0, p0, Lk3/q1;->c:Ljava/util/concurrent/PriorityBlockingQueue;
+
+    invoke-virtual {v0, p1}, Ljava/util/concurrent/PriorityBlockingQueue;->add(Ljava/lang/Object;)Z
+
+    return-object p1
+
+    :catchall_0
+    move-exception p1
+
+    .line 12
+    :try_start_1
+    monitor-exit v0
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    throw p1
 .end method

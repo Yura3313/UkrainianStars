@@ -4,18 +4,18 @@
 
 
 # instance fields
-.field public final synthetic f:Landroid/widget/ImageView;
+.field public final synthetic g:Landroid/view/View;
 
-.field public final synthetic g:I
+.field public final synthetic h:I
 
 
 # direct methods
-.method public constructor <init>(Landroid/widget/ImageView;I)V
+.method public constructor <init>(Landroid/view/View;I)V
     .locals 0
 
-    iput-object p1, p0, Lwc/l1;->f:Landroid/widget/ImageView;
+    iput-object p1, p0, Lwc/l1;->g:Landroid/view/View;
 
-    iput p2, p0, Lwc/l1;->g:I
+    iput p2, p0, Lwc/l1;->h:I
 
     invoke-direct {p0}, Landroid/animation/AnimatorListenerAdapter;-><init>()V
 
@@ -35,13 +35,13 @@
 
     const-string v0, "animation"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
-    iget-object p1, p0, Lwc/l1;->f:Landroid/widget/ImageView;
+    iget-object p1, p0, Lwc/l1;->g:Landroid/view/View;
 
-    iget v0, p0, Lwc/l1;->g:I
+    iget v0, p0, Lwc/l1;->h:I
 
-    invoke-virtual {p1, v0}, Landroid/widget/ImageView;->setVisibility(I)V
+    invoke-virtual {p1, v0}, Landroid/view/View;->setVisibility(I)V
 
     return-void
 .end method

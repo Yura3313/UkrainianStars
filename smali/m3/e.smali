@@ -1,12 +1,23 @@
 .class public final Lm3/e;
 .super Ljava/lang/Object;
 
-# interfaces
-.implements La5/s;
+
+# static fields
+.field public static final synthetic a:I
 
 
 # direct methods
-.method public synthetic constructor <init>()V
+.method public static constructor <clinit>()V
+    .locals 1
+
+    const-class v0, Lm3/e;
+
+    invoke-virtual {v0}, Ljava/lang/Class;->getClassLoader()Ljava/lang/ClassLoader;
+
+    return-void
+.end method
+
+.method public constructor <init>()V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -14,91 +25,37 @@
     return-void
 .end method
 
-
-# virtual methods
-.method public final a(Ljava/lang/Object;Ljava/io/File;Ljava/io/File;)Z
-    .locals 7
-
-    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
-
-    move-result-object p1
-
-    const-class v0, Ljava/lang/String;
-
-    const-class v1, Ljava/io/File;
-
-    const-class v2, Ljava/io/File;
-
-    const/4 v3, 0x2
-
-    new-array v4, v3, [Ljava/lang/Class;
-
-    const/4 v5, 0x0
-
-    aput-object v1, v4, v5
-
-    const/4 v1, 0x1
-
-    aput-object v2, v4, v1
-
-    const-string v2, "optimizedPathFor"
+.method public static a(Landroid/os/Parcel;Landroid/os/Parcelable$Creator;)Landroid/os/Parcelable;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T::",
+            "Landroid/os/Parcelable;",
+            ">(",
+            "Landroid/os/Parcel;",
+            "Landroid/os/Parcelable$Creator<",
+            "TT;>;)TT;"
+        }
+    .end annotation
 
     .line 1
-    invoke-static {p1, v2, v4}, La5/g0;->f(Ljava/lang/Class;Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
+    invoke-virtual {p0}, Landroid/os/Parcel;->readInt()I
 
-    move-result-object v4
+    move-result v0
 
-    :try_start_0
-    new-array v6, v3, [Ljava/lang/Object;
+    if-nez v0, :cond_0
 
-    aput-object p2, v6, v5
+    const/4 p0, 0x0
 
-    aput-object p3, v6, v1
-
-    const/4 p2, 0x0
-
-    invoke-virtual {v4, p2, v6}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object p2
-
-    invoke-virtual {v0, p2}, Ljava/lang/Class;->cast(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object p1
-    :try_end_0
-    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+    return-object p0
 
     .line 2
-    check-cast p1, Ljava/lang/String;
+    :cond_0
+    invoke-interface {p1, p0}, Landroid/os/Parcelable$Creator;->createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
 
-    new-instance p2, Ljava/io/File;
+    move-result-object p0
 
-    invoke-direct {p2, p1}, Ljava/io/File;-><init>(Ljava/lang/String;)V
+    check-cast p0, Landroid/os/Parcelable;
 
-    invoke-virtual {p2}, Ljava/io/File;->exists()Z
-
-    move-result p1
-
-    return p1
-
-    :catch_0
-    move-exception p2
-
-    .line 3
-    new-instance p3, Lcom/google/android/play/core/internal/bm;
-
-    new-array v0, v3, [Ljava/lang/Object;
-
-    aput-object v2, v0, v5
-
-    aput-object p1, v0, v1
-
-    const-string p1, "Failed to invoke static method %s on type %s"
-
-    invoke-static {p1, v0}, Ljava/lang/String;->format(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object p1
-
-    invoke-direct {p3, p1, p2}, Lcom/google/android/play/core/internal/bm;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
-
-    throw p3
+    return-object p0
 .end method

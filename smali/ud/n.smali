@@ -1,5 +1,5 @@
 .class public final Lud/n;
-.super Lse/h;
+.super Lse/i;
 .source "AssetCache.kt"
 
 # interfaces
@@ -9,9 +9,9 @@
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/l<",
-        "Ljava/lang/String;",
+        "Lye/c;",
         "Ljava/lang/Boolean;",
         ">;"
     }
@@ -19,7 +19,7 @@
 
 
 # static fields
-.field public static final f:Lud/n;
+.field public static final g:Lud/n;
 
 
 # direct methods
@@ -30,7 +30,7 @@
 
     invoke-direct {v0}, Lud/n;-><init>()V
 
-    sput-object v0, Lud/n;->f:Lud/n;
+    sput-object v0, Lud/n;->g:Lud/n;
 
     return-void
 .end method
@@ -40,7 +40,7 @@
 
     const/4 v0, 0x1
 
-    invoke-direct {p0, v0}, Lse/h;-><init>(I)V
+    invoke-direct {p0, v0}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -51,21 +51,35 @@
     .locals 1
 
     .line 1
-    check-cast p1, Ljava/lang/String;
+    check-cast p1, Lye/c;
 
     const-string v0, "it"
 
     .line 2
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 3
-    invoke-static {p1}, Lye/n;->i(Ljava/lang/CharSequence;)Z
+    invoke-interface {p1}, Lye/c;->a()Ljava/util/List;
+
+    move-result-object p1
+
+    invoke-interface {p1}, Ljava/util/List;->size()I
 
     move-result p1
 
-    xor-int/lit8 p1, p1, 0x1
+    const/4 v0, 0x3
+
+    if-ne p1, v0, :cond_0
+
+    const/4 p1, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 p1, 0x0
 
     .line 4
+    :goto_0
     invoke-static {p1}, Ljava/lang/Boolean;->valueOf(Z)Ljava/lang/Boolean;
 
     move-result-object p1

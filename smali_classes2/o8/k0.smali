@@ -1,33 +1,36 @@
-.class public final Lo8/k0;
-.super Lo8/i0;
-.source "SystemRedactedConversationMessageDM.java"
-
-
-# instance fields
-.field public z:I
+.class public Lo8/k0;
+.super Lo8/z;
+.source "SystemMessageDM.java"
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;J)V
-    .locals 6
+.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;JI)V
+    .locals 8
+
+    .line 1
+    new-instance v5, Lo8/p;
+
+    const-string v0, "mobile"
 
     const-string v1, ""
 
-    const/16 v5, 0x1b
+    const/4 v2, 0x3
+
+    invoke-direct {v5, v0, v1, v2}, Lo8/p;-><init>(Ljava/lang/String;Ljava/lang/String;I)V
+
+    const/4 v6, 0x0
 
     move-object v0, p0
 
-    move-object v2, p1
+    move-object v1, p1
 
-    move-wide v3, p2
+    move-object v2, p2
 
-    .line 1
-    invoke-direct/range {v0 .. v5}, Lo8/i0;-><init>(Ljava/lang/String;Ljava/lang/String;JI)V
+    move-wide v3, p3
 
-    const/4 p1, 0x1
+    move v7, p5
 
-    .line 2
-    iput p1, p0, Lo8/k0;->z:I
+    invoke-direct/range {v0 .. v7}, Lo8/z;-><init>(Ljava/lang/String;Ljava/lang/String;JLo8/p;ZI)V
 
     return-void
 .end method
@@ -35,35 +38,18 @@
 .method public constructor <init>(Lo8/k0;)V
     .locals 0
 
-    .line 3
-    invoke-direct {p0, p1}, Lo8/i0;-><init>(Lo8/i0;)V
-
-    .line 4
-    iget p1, p1, Lo8/k0;->z:I
-
-    iput p1, p0, Lo8/k0;->z:I
+    .line 2
+    invoke-direct {p0, p1}, Lo8/z;-><init>(Lo8/z;)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a()Ljava/lang/Object;
+.method public final j()Z
     .locals 1
 
-    new-instance v0, Lo8/k0;
+    const/4 v0, 0x1
 
-    invoke-direct {v0, p0}, Lo8/k0;-><init>(Lo8/k0;)V
-
-    return-object v0
-.end method
-
-.method public final b()Lo8/y;
-    .locals 1
-
-    new-instance v0, Lo8/k0;
-
-    invoke-direct {v0, p0}, Lo8/k0;-><init>(Lo8/k0;)V
-
-    return-object v0
+    return v0
 .end method

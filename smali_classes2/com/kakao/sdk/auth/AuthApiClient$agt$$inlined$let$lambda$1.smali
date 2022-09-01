@@ -62,11 +62,11 @@
 
     const-string v0, "call"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string p1, "t"
 
-    invoke-static {p2, p1}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, p1}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     iget-object p1, p0, Lcom/kakao/sdk/auth/AuthApiClient$agt$$inlined$let$lambda$1;->$callback$inlined:Lre/p;
 
@@ -77,7 +77,7 @@
     return-void
 .end method
 
-.method public onResponse(Lef/b;Lef/c0;)V
+.method public onResponse(Lef/b;Lef/b0;)V
     .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -85,7 +85,7 @@
             "Lef/b<",
             "Lcom/kakao/sdk/auth/model/AgtResponse;",
             ">;",
-            "Lef/c0<",
+            "Lef/b0<",
             "Lcom/kakao/sdk/auth/model/AgtResponse;",
             ">;)V"
         }
@@ -93,14 +93,14 @@
 
     const-string v0, "call"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string p1, "response"
 
-    invoke-static {p2, p1}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, p1}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
-    iget-object p1, p2, Lef/c0;->b:Ljava/lang/Object;
+    iget-object p1, p2, Lef/b0;->b:Ljava/lang/Object;
 
     .line 2
     check-cast p1, Lcom/kakao/sdk/auth/model/AgtResponse;
@@ -128,7 +128,7 @@
 
     new-instance v2, Lretrofit2/HttpException;
 
-    invoke-direct {v2, p2}, Lretrofit2/HttpException;-><init>(Lef/c0;)V
+    invoke-direct {v2, p2}, Lretrofit2/HttpException;-><init>(Lef/b0;)V
 
     invoke-virtual {v1, v2}, Lcom/kakao/sdk/auth/AuthApiClient$Companion;->translateError(Ljava/lang/Throwable;)Ljava/lang/Throwable;
 

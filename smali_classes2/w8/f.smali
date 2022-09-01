@@ -83,7 +83,7 @@
     invoke-virtual {p1, p2}, Lq8/d;->f(Ljava/util/List;)V
 
     .line 8
-    iget-object p2, p1, Lq8/d;->o:Lcom/helpshift/util/q;
+    iget-object p2, p1, Lq8/d;->p:Lcom/helpshift/util/q;
 
     invoke-static {p2}, Lm8/c;->h(Ljava/util/List;)V
 

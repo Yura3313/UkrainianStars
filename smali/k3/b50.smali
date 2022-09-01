@@ -3,110 +3,161 @@
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lk3/e40;
+.implements Lk3/h40;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
-        "Lk3/e40<",
-        "Lk3/zm;",
+        "Lk3/h40<",
+        "Lk3/iu;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final a:Lk3/un;
+.field public final a:Landroid/content/Context;
 
-.field public final b:Lk3/m40;
+.field public final b:Lk3/uu;
 
-.field public final c:Lk3/gm0;
+.field public final c:Ljava/util/concurrent/Executor;
 
-.field public final d:Lk3/xq;
-
-.field public final e:Ljava/util/concurrent/ScheduledExecutorService;
+.field public final d:Lk3/ig0;
 
 
 # direct methods
-.method public constructor <init>(Lk3/un;Lk3/m40;Lk3/xq;Ljava/util/concurrent/ScheduledExecutorService;Lk3/gm0;)V
+.method public constructor <init>(Landroid/content/Context;Ljava/util/concurrent/Executor;Lk3/uu;Lk3/ig0;)V
     .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lk3/b50;->a:Lk3/un;
+    iput-object p1, p0, Lk3/b50;->a:Landroid/content/Context;
 
     .line 3
-    iput-object p2, p0, Lk3/b50;->b:Lk3/m40;
+    iput-object p3, p0, Lk3/b50;->b:Lk3/uu;
 
     .line 4
-    iput-object p3, p0, Lk3/b50;->d:Lk3/xq;
+    iput-object p2, p0, Lk3/b50;->c:Ljava/util/concurrent/Executor;
 
     .line 5
-    iput-object p4, p0, Lk3/b50;->e:Ljava/util/concurrent/ScheduledExecutorService;
-
-    .line 6
-    iput-object p5, p0, Lk3/b50;->c:Lk3/gm0;
+    iput-object p4, p0, Lk3/b50;->d:Lk3/ig0;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Lk3/sg0;Lk3/jg0;)Lk3/em0;
-    .locals 2
+.method public final a(Lk3/tg0;Lk3/kg0;)Lk3/hm0;
+    .locals 3
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
-            "Lk3/sg0;",
-            "Lk3/jg0;",
+            "Lk3/tg0;",
+            "Lk3/kg0;",
             ")",
-            "Lk3/em0<",
-            "Lk3/zm;",
+            "Lk3/hm0<",
+            "Lk3/iu;",
             ">;"
         }
     .end annotation
 
-    iget-object v0, p0, Lk3/b50;->c:Lk3/gm0;
+    const/4 v0, 0x0
 
-    new-instance v1, Lk3/c50;
+    .line 1
+    :try_start_0
+    iget-object v1, p2, Lk3/kg0;->u:Lorg/json/JSONObject;
 
-    invoke-direct {v1, p0, p1, p2}, Lk3/c50;-><init>(Lk3/b50;Lk3/sg0;Lk3/jg0;)V
+    const-string v2, "tab_url"
 
-    invoke-interface {v0, v1}, Lk3/gm0;->c(Ljava/util/concurrent/Callable;)Lk3/em0;
+    invoke-virtual {v1, v2}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v1
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    goto :goto_0
+
+    :catch_0
+    move-object v1, v0
+
+    :goto_0
+    if-eqz v1, :cond_0
+
+    .line 2
+    invoke-static {v1}, Landroid/net/Uri;->parse(Ljava/lang/String;)Landroid/net/Uri;
+
+    move-result-object v1
+
+    goto :goto_1
+
+    :cond_0
+    move-object v1, v0
+
+    .line 3
+    :goto_1
+    invoke-static {v0}, Lk3/dm0;->g(Ljava/lang/Object;)Lk3/hm0;
+
+    move-result-object v0
+
+    new-instance v2, Lk3/d50;
+
+    invoke-direct {v2, p0, v1, p1, p2}, Lk3/d50;-><init>(Lk3/b50;Landroid/net/Uri;Lk3/tg0;Lk3/kg0;)V
+
+    iget-object p1, p0, Lk3/b50;->c:Ljava/util/concurrent/Executor;
+
+    .line 4
+    invoke-static {v0, v2, p1}, Lk3/dm0;->k(Lk3/hm0;Lk3/pl0;Ljava/util/concurrent/Executor;)Lk3/hm0;
 
     move-result-object p1
 
     return-object p1
 .end method
 
-.method public final b(Lk3/sg0;Lk3/jg0;)Z
+.method public final b(Lk3/tg0;Lk3/kg0;)Z
     .locals 1
 
     .line 1
-    iget-object v0, p1, Lk3/sg0;->a:Lk3/iy0;
+    iget-object p1, p0, Lk3/b50;->a:Landroid/content/Context;
 
-    iget-object v0, v0, Lk3/iy0;->f:Ljava/lang/Object;
-
-    check-cast v0, Lk3/ug0;
-
-    invoke-virtual {v0}, Lk3/ug0;->a()Lcom/google/android/gms/internal/ads/zzafq;
-
-    move-result-object v0
+    instance-of v0, p1, Landroid/app/Activity;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lk3/b50;->b:Lk3/m40;
-
     .line 2
-    invoke-virtual {v0, p1, p2}, Lk3/m40;->b(Lk3/sg0;Lk3/jg0;)Z
+    invoke-static {p1}, Lk3/e0;->a(Landroid/content/Context;)Z
 
     move-result p1
 
     if-eqz p1, :cond_0
+
+    .line 3
+    :try_start_0
+    iget-object p1, p2, Lk3/kg0;->u:Lorg/json/JSONObject;
+
+    const-string p2, "tab_url"
+
+    invoke-virtual {p1, p2}, Lorg/json/JSONObject;->getString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object p1
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    goto :goto_0
+
+    :catch_0
+    const/4 p1, 0x0
+
+    .line 4
+    :goto_0
+    invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+
+    move-result p1
+
+    if-nez p1, :cond_0
 
     const/4 p1, 0x1
 

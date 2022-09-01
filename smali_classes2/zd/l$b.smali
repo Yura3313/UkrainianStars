@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field public final synthetic f:Lzd/l;
+.field public final synthetic g:Lzd/l;
 
 
 # direct methods
 .method public constructor <init>(Lzd/l;)V
     .locals 0
 
-    iput-object p1, p0, Lzd/l$b;->f:Lzd/l;
+    iput-object p1, p0, Lzd/l$b;->g:Lzd/l;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -38,7 +38,7 @@
     .locals 2
 
     .line 1
-    iget-object p1, p0, Lzd/l$b;->f:Lzd/l;
+    iget-object p1, p0, Lzd/l$b;->g:Lzd/l;
 
     sget v0, Lcom/supercell/id/R$id;->okButton:I
 
@@ -50,14 +50,14 @@
 
     const-string v0, "okButton"
 
-    invoke-static {p1, v0}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/4 v0, 0x0
 
     invoke-virtual {p1, v0}, Landroid/view/View;->setEnabled(Z)V
 
     .line 2
-    iget-object p1, p0, Lzd/l$b;->f:Lzd/l;
+    iget-object p1, p0, Lzd/l$b;->g:Lzd/l;
 
     sget v1, Lcom/supercell/id/R$id;->cancelButton:I
 
@@ -69,12 +69,12 @@
 
     const-string v1, "cancelButton"
 
-    invoke-static {p1, v1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v1}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-virtual {p1, v0}, Landroid/view/View;->setEnabled(Z)V
 
     .line 3
-    iget-object p1, p0, Lzd/l$b;->f:Lzd/l;
+    iget-object p1, p0, Lzd/l$b;->g:Lzd/l;
 
     invoke-virtual {p1}, Lzd/k;->V0()Lcom/supercell/id/ui/youngplayer/register/YoungPlayerRegisterFlowFragment;
 

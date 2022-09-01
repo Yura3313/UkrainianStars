@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field public final y:Landroid/view/View;
+.field public final z:Landroid/view/View;
 
 
 # direct methods
@@ -24,7 +24,7 @@
 
     invoke-direct {p0, p1}, Landroidx/recyclerview/widget/RecyclerView$z;-><init>(Landroid/view/View;)V
 
-    iput-object p1, p0, Lqd/c$a;->y:Landroid/view/View;
+    iput-object p1, p0, Lqd/c$a;->z:Landroid/view/View;
 
     return-void
 .end method

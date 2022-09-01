@@ -28,7 +28,7 @@
 .method public constructor <init>(Ljava/lang/String;[B[Le6/l;)V
     .locals 1
 
-    sget-object v0, Le6/a;->f:Le6/a;
+    sget-object v0, Le6/a;->g:Le6/a;
 
     .line 8
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V

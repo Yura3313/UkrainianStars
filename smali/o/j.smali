@@ -1,453 +1,377 @@
 .class public final Lo/j;
-.super Ljava/lang/Object;
-.source "KeyFrames.java"
+.super Lo/k;
+.source "KeyPosition.java"
 
 
-# static fields
-.field public static b:Ljava/util/HashMap;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/HashMap<",
-            "Ljava/lang/String;",
-            "Ljava/lang/reflect/Constructor<",
-            "+",
-            "Lo/c;",
-            ">;>;"
-        }
-    .end annotation
-.end field
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lo/j$a;
+    }
+.end annotation
 
 
 # instance fields
-.field public a:Ljava/util/HashMap;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/HashMap<",
-            "Ljava/lang/Integer;",
-            "Ljava/util/ArrayList<",
-            "Lo/c;",
-            ">;>;"
-        }
-    .end annotation
-.end field
+.field public f:Ljava/lang/String;
+
+.field public g:I
+
+.field public h:I
+
+.field public i:F
+
+.field public j:F
+
+.field public k:F
+
+.field public l:F
+
+.field public m:I
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 5
+.method public constructor <init>()V
+    .locals 2
 
     .line 1
-    new-instance v0, Ljava/util/HashMap;
+    invoke-direct {p0}, Lo/k;-><init>()V
 
-    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
-
-    sput-object v0, Lo/j;->b:Ljava/util/HashMap;
-
-    :try_start_0
-    const-string v1, "KeyAttribute"
+    const/4 v0, 0x0
 
     .line 2
-    const-class v2, Lo/d;
+    iput-object v0, p0, Lo/j;->f:Ljava/lang/String;
 
-    const/4 v3, 0x0
-
-    new-array v4, v3, [Ljava/lang/Class;
-
-    invoke-virtual {v2, v4}, Ljava/lang/Class;->getConstructor([Ljava/lang/Class;)Ljava/lang/reflect/Constructor;
-
-    move-result-object v2
-
-    invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    const/4 v0, -0x1
 
     .line 3
-    sget-object v0, Lo/j;->b:Ljava/util/HashMap;
+    iput v0, p0, Lo/j;->g:I
 
-    const-string v1, "KeyPosition"
-
-    const-class v2, Lo/k;
-
-    new-array v4, v3, [Ljava/lang/Class;
-
-    invoke-virtual {v2, v4}, Ljava/lang/Class;->getConstructor([Ljava/lang/Class;)Ljava/lang/reflect/Constructor;
-
-    move-result-object v2
-
-    invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    const/4 v0, 0x0
 
     .line 4
-    sget-object v0, Lo/j;->b:Ljava/util/HashMap;
+    iput v0, p0, Lo/j;->h:I
 
-    const-string v1, "KeyCycle"
-
-    const-class v2, Lo/f;
-
-    new-array v4, v3, [Ljava/lang/Class;
-
-    invoke-virtual {v2, v4}, Ljava/lang/Class;->getConstructor([Ljava/lang/Class;)Ljava/lang/reflect/Constructor;
-
-    move-result-object v2
-
-    invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    const/high16 v1, 0x7fc00000    # Float.NaN
 
     .line 5
-    sget-object v0, Lo/j;->b:Ljava/util/HashMap;
-
-    const-string v1, "KeyTimeCycle"
-
-    const-class v2, Lo/m;
-
-    new-array v4, v3, [Ljava/lang/Class;
-
-    invoke-virtual {v2, v4}, Ljava/lang/Class;->getConstructor([Ljava/lang/Class;)Ljava/lang/reflect/Constructor;
-
-    move-result-object v2
-
-    invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    iput v1, p0, Lo/j;->i:F
 
     .line 6
-    sget-object v0, Lo/j;->b:Ljava/util/HashMap;
-
-    const-string v1, "KeyTrigger"
-
-    const-class v2, Lo/n;
-
-    new-array v3, v3, [Ljava/lang/Class;
-
-    invoke-virtual {v2, v3}, Ljava/lang/Class;->getConstructor([Ljava/lang/Class;)Ljava/lang/reflect/Constructor;
-
-    move-result-object v2
-
-    invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-    :try_end_0
-    .catch Ljava/lang/NoSuchMethodException; {:try_start_0 .. :try_end_0} :catch_0
-
-    :catch_0
-    return-void
-.end method
-
-.method public constructor <init>(Landroid/content/Context;Lorg/xmlpull/v1/XmlPullParser;)V
-    .locals 3
-
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 2
-    new-instance v0, Ljava/util/HashMap;
-
-    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
-
-    iput-object v0, p0, Lo/j;->a:Ljava/util/HashMap;
-
-    .line 3
-    :try_start_0
-    invoke-interface {p2}, Lorg/xmlpull/v1/XmlPullParser;->getEventType()I
-
-    move-result v0
-
-    const/4 v1, 0x0
-
-    :goto_0
-    const/4 v2, 0x1
-
-    if-eq v0, v2, :cond_4
-
-    const/4 v2, 0x2
-
-    if-eq v0, v2, :cond_1
-
-    const/4 v2, 0x3
-
-    if-eq v0, v2, :cond_0
-
-    goto :goto_1
-
-    :cond_0
-    const-string v0, "KeyFrameSet"
-
-    .line 4
-    invoke-interface {p2}, Lorg/xmlpull/v1/XmlPullParser;->getName()Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-virtual {v0, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_3
-
-    return-void
-
-    .line 5
-    :cond_1
-    invoke-interface {p2}, Lorg/xmlpull/v1/XmlPullParser;->getName()Ljava/lang/String;
-
-    move-result-object v0
-
-    .line 6
-    sget-object v2, Lo/j;->b:Ljava/util/HashMap;
-
-    invoke-virtual {v2, v0}, Ljava/util/HashMap;->containsKey(Ljava/lang/Object;)Z
-
-    move-result v2
-    :try_end_0
-    .catch Lorg/xmlpull/v1/XmlPullParserException; {:try_start_0 .. :try_end_0} :catch_3
-    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_2
-
-    if-eqz v2, :cond_2
+    iput v1, p0, Lo/j;->j:F
 
     .line 7
-    :try_start_1
-    sget-object v2, Lo/j;->b:Ljava/util/HashMap;
-
-    invoke-virtual {v2, v0}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Ljava/lang/reflect/Constructor;
-
-    const/4 v2, 0x0
-
-    new-array v2, v2, [Ljava/lang/Object;
-
-    invoke-virtual {v0, v2}, Ljava/lang/reflect/Constructor;->newInstance([Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Lo/c;
-    :try_end_1
-    .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_1
+    iput v1, p0, Lo/j;->k:F
 
     .line 8
-    :try_start_2
-    invoke-static {p2}, Landroid/util/Xml;->asAttributeSet(Lorg/xmlpull/v1/XmlPullParser;)Landroid/util/AttributeSet;
-
-    move-result-object v1
-
-    invoke-virtual {v0, p1, v1}, Lo/c;->c(Landroid/content/Context;Landroid/util/AttributeSet;)V
+    iput v1, p0, Lo/j;->l:F
 
     .line 9
-    invoke-virtual {p0, v0}, Lo/j;->b(Lo/c;)V
-    :try_end_2
-    .catch Ljava/lang/Exception; {:try_start_2 .. :try_end_2} :catch_0
+    iput v0, p0, Lo/j;->m:I
 
-    :catch_0
-    move-object v1, v0
-
-    goto :goto_1
-
-    :cond_2
-    :try_start_3
-    const-string v2, "CustomAttribute"
-
-    .line 10
-    invoke-virtual {v0, v2}, Ljava/lang/String;->equalsIgnoreCase(Ljava/lang/String;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_3
-
-    if-eqz v1, :cond_3
-
-    .line 11
-    iget-object v0, v1, Lo/c;->d:Ljava/util/HashMap;
-
-    if-eqz v0, :cond_3
-
-    .line 12
-    invoke-static {p1, p2, v0}, Ls/a;->e(Landroid/content/Context;Lorg/xmlpull/v1/XmlPullParser;Ljava/util/HashMap;)V
-
-    .line 13
-    :catch_1
-    :cond_3
-    :goto_1
-    invoke-interface {p2}, Lorg/xmlpull/v1/XmlPullParser;->next()I
-
-    move-result v0
-    :try_end_3
-    .catch Lorg/xmlpull/v1/XmlPullParserException; {:try_start_3 .. :try_end_3} :catch_3
-    .catch Ljava/io/IOException; {:try_start_3 .. :try_end_3} :catch_2
-
-    goto :goto_0
-
-    :catch_2
-    move-exception p1
-
-    .line 14
-    invoke-virtual {p1}, Ljava/lang/Throwable;->printStackTrace()V
-
-    goto :goto_2
-
-    :catch_3
-    move-exception p1
-
-    .line 15
-    invoke-virtual {p1}, Lorg/xmlpull/v1/XmlPullParserException;->printStackTrace()V
-
-    :cond_4
-    :goto_2
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Lo/q;)V
-    .locals 4
+.method public final a(Ljava/util/HashMap;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/HashMap<",
+            "Ljava/lang/String;",
+            "Lo/s;",
+            ">;)V"
+        }
+    .end annotation
 
-    .line 1
-    iget-object v0, p0, Lo/j;->a:Ljava/util/HashMap;
-
-    iget v1, p1, Lo/q;->b:I
-
-    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Ljava/util/ArrayList;
-
-    if-eqz v0, :cond_0
-
-    .line 2
-    iget-object v1, p1, Lo/q;->u:Ljava/util/ArrayList;
-
-    invoke-virtual {v1, v0}, Ljava/util/ArrayList;->addAll(Ljava/util/Collection;)Z
-
-    .line 3
-    :cond_0
-    iget-object v0, p0, Lo/j;->a:Ljava/util/HashMap;
-
-    const/4 v1, -0x1
-
-    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Ljava/util/ArrayList;
-
-    if-eqz v0, :cond_4
-
-    .line 4
-    invoke-virtual {v0}, Ljava/util/ArrayList;->iterator()Ljava/util/Iterator;
-
-    move-result-object v0
-
-    :cond_1
-    :goto_0
-    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
-
-    move-result v1
-
-    if-eqz v1, :cond_4
-
-    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
-
-    move-result-object v1
-
-    check-cast v1, Lo/c;
-
-    .line 5
-    iget-object v2, p1, Lo/q;->a:Landroid/view/View;
-
-    invoke-virtual {v2}, Landroid/view/View;->getLayoutParams()Landroid/view/ViewGroup$LayoutParams;
-
-    move-result-object v2
-
-    check-cast v2, Landroidx/constraintlayout/widget/ConstraintLayout$LayoutParams;
-
-    iget-object v2, v2, Landroidx/constraintlayout/widget/ConstraintLayout$LayoutParams;->U:Ljava/lang/String;
-
-    .line 6
-    iget-object v3, v1, Lo/c;->c:Ljava/lang/String;
-
-    if-eqz v3, :cond_3
-
-    if-nez v2, :cond_2
-
-    goto :goto_1
-
-    .line 7
-    :cond_2
-    invoke-virtual {v2, v3}, Ljava/lang/String;->matches(Ljava/lang/String;)Z
-
-    move-result v2
-
-    goto :goto_2
-
-    :cond_3
-    :goto_1
-    const/4 v2, 0x0
-
-    :goto_2
-    if-eqz v2, :cond_1
-
-    .line 8
-    iget-object v2, p1, Lo/q;->u:Ljava/util/ArrayList;
-
-    invoke-virtual {v2, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    goto :goto_0
-
-    :cond_4
     return-void
 .end method
 
-.method public final b(Lo/c;)V
-    .locals 3
+.method public final c(Landroid/content/Context;Landroid/util/AttributeSet;)V
+    .locals 5
 
     .line 1
-    iget-object v0, p0, Lo/j;->a:Ljava/util/HashMap;
+    sget-object v0, Landroidx/constraintlayout/widget/R$styleable;->KeyPosition:[I
 
-    iget v1, p1, Lo/c;->b:I
+    invoke-virtual {p1, p2, v0}, Landroid/content/Context;->obtainStyledAttributes(Landroid/util/AttributeSet;[I)Landroid/content/res/TypedArray;
 
-    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Ljava/util/HashMap;->containsKey(Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-nez v0, :cond_0
+    move-result-object p1
 
     .line 2
-    iget-object v0, p0, Lo/j;->a:Ljava/util/HashMap;
-
-    iget v1, p1, Lo/c;->b:I
-
-    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v1
-
-    new-instance v2, Ljava/util/ArrayList;
-
-    invoke-direct {v2}, Ljava/util/ArrayList;-><init>()V
-
-    invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    sget-object p2, Lo/j$a;->a:Landroid/util/SparseIntArray;
 
     .line 3
+    invoke-virtual {p1}, Landroid/content/res/TypedArray;->getIndexCount()I
+
+    move-result p2
+
+    const/4 v0, 0x0
+
+    const/4 v1, 0x0
+
+    :goto_0
+    if-ge v1, p2, :cond_4
+
+    .line 4
+    invoke-virtual {p1, v1}, Landroid/content/res/TypedArray;->getIndex(I)I
+
+    move-result v2
+
+    .line 5
+    sget-object v3, Lo/j$a;->a:Landroid/util/SparseIntArray;
+
+    invoke-virtual {v3, v2}, Landroid/util/SparseIntArray;->get(I)I
+
+    move-result v3
+
+    const/4 v4, 0x3
+
+    packed-switch v3, :pswitch_data_0
+
+    .line 6
+    invoke-static {v2}, Ljava/lang/Integer;->toHexString(I)Ljava/lang/String;
+
+    sget-object v3, Lo/j$a;->a:Landroid/util/SparseIntArray;
+
+    invoke-virtual {v3, v2}, Landroid/util/SparseIntArray;->get(I)I
+
+    goto/16 :goto_1
+
+    .line 7
+    :pswitch_0
+    iget v3, p0, Lo/j;->j:F
+
+    invoke-virtual {p1, v2, v3}, Landroid/content/res/TypedArray;->getFloat(IF)F
+
+    move-result v2
+
+    iput v2, p0, Lo/j;->j:F
+
+    goto/16 :goto_1
+
+    .line 8
+    :pswitch_1
+    iget v3, p0, Lo/j;->i:F
+
+    invoke-virtual {p1, v2, v3}, Landroid/content/res/TypedArray;->getFloat(IF)F
+
+    move-result v2
+
+    iput v2, p0, Lo/j;->i:F
+
+    goto/16 :goto_1
+
+    .line 9
+    :pswitch_2
+    iget v3, p0, Lo/j;->g:I
+
+    invoke-virtual {p1, v2, v3}, Landroid/content/res/TypedArray;->getInt(II)I
+
+    move-result v2
+
+    iput v2, p0, Lo/j;->g:I
+
+    goto/16 :goto_1
+
+    .line 10
+    :pswitch_3
+    iget v3, p0, Lo/j;->m:I
+
+    invoke-virtual {p1, v2, v3}, Landroid/content/res/TypedArray;->getInt(II)I
+
+    move-result v2
+
+    iput v2, p0, Lo/j;->m:I
+
+    goto/16 :goto_1
+
+    .line 11
+    :pswitch_4
+    iget v3, p0, Lo/j;->j:F
+
+    invoke-virtual {p1, v2, v3}, Landroid/content/res/TypedArray;->getFloat(IF)F
+
+    move-result v2
+
+    iput v2, p0, Lo/j;->i:F
+
+    iput v2, p0, Lo/j;->j:F
+
+    goto/16 :goto_1
+
+    .line 12
+    :pswitch_5
+    iget v3, p0, Lo/j;->l:F
+
+    invoke-virtual {p1, v2, v3}, Landroid/content/res/TypedArray;->getFloat(IF)F
+
+    move-result v2
+
+    iput v2, p0, Lo/j;->l:F
+
+    goto/16 :goto_1
+
+    .line 13
+    :pswitch_6
+    iget v3, p0, Lo/j;->k:F
+
+    invoke-virtual {p1, v2, v3}, Landroid/content/res/TypedArray;->getFloat(IF)F
+
+    move-result v2
+
+    iput v2, p0, Lo/j;->k:F
+
+    goto :goto_1
+
+    .line 14
+    :pswitch_7
+    iget v3, p0, Lo/j;->h:I
+
+    invoke-virtual {p1, v2, v3}, Landroid/content/res/TypedArray;->getInt(II)I
+
+    move-result v2
+
+    iput v2, p0, Lo/j;->h:I
+
+    goto :goto_1
+
+    .line 15
+    :pswitch_8
+    iget v3, p0, Lo/k;->e:I
+
+    invoke-virtual {p1, v2, v3}, Landroid/content/res/TypedArray;->getInteger(II)I
+
+    move-result v2
+
+    iput v2, p0, Lo/k;->e:I
+
+    goto :goto_1
+
+    .line 16
+    :pswitch_9
+    invoke-virtual {p1, v2}, Landroid/content/res/TypedArray;->peekValue(I)Landroid/util/TypedValue;
+
+    move-result-object v3
+
+    iget v3, v3, Landroid/util/TypedValue;->type:I
+
+    if-ne v3, v4, :cond_0
+
+    .line 17
+    invoke-virtual {p1, v2}, Landroid/content/res/TypedArray;->getString(I)Ljava/lang/String;
+
+    move-result-object v2
+
+    iput-object v2, p0, Lo/j;->f:Ljava/lang/String;
+
+    goto :goto_1
+
+    .line 18
     :cond_0
-    iget-object v0, p0, Lo/j;->a:Ljava/util/HashMap;
+    sget-object v3, Ln/c;->c:[Ljava/lang/String;
 
-    iget v1, p1, Lo/c;->b:I
+    invoke-virtual {p1, v2, v0}, Landroid/content/res/TypedArray;->getInteger(II)I
 
-    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+    move-result v2
 
-    move-result-object v1
+    aget-object v2, v3, v2
 
-    invoke-virtual {v0, v1}, Ljava/util/HashMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
+    iput-object v2, p0, Lo/j;->f:Ljava/lang/String;
 
-    move-result-object v0
+    goto :goto_1
 
-    check-cast v0, Ljava/util/ArrayList;
+    .line 19
+    :pswitch_a
+    iget v3, p0, Lo/c;->a:I
 
-    invoke-virtual {v0, p1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+    invoke-virtual {p1, v2, v3}, Landroid/content/res/TypedArray;->getInt(II)I
 
+    move-result v2
+
+    iput v2, p0, Lo/c;->a:I
+
+    goto :goto_1
+
+    .line 20
+    :pswitch_b
+    sget-boolean v3, Landroidx/constraintlayout/motion/widget/MotionLayout;->I0:Z
+
+    if-eqz v3, :cond_1
+
+    .line 21
+    iget v3, p0, Lo/c;->b:I
+
+    invoke-virtual {p1, v2, v3}, Landroid/content/res/TypedArray;->getResourceId(II)I
+
+    move-result v3
+
+    iput v3, p0, Lo/c;->b:I
+
+    const/4 v4, -0x1
+
+    if-ne v3, v4, :cond_3
+
+    .line 22
+    invoke-virtual {p1, v2}, Landroid/content/res/TypedArray;->getString(I)Ljava/lang/String;
+
+    move-result-object v2
+
+    iput-object v2, p0, Lo/c;->c:Ljava/lang/String;
+
+    goto :goto_1
+
+    .line 23
+    :cond_1
+    invoke-virtual {p1, v2}, Landroid/content/res/TypedArray;->peekValue(I)Landroid/util/TypedValue;
+
+    move-result-object v3
+
+    iget v3, v3, Landroid/util/TypedValue;->type:I
+
+    if-ne v3, v4, :cond_2
+
+    .line 24
+    invoke-virtual {p1, v2}, Landroid/content/res/TypedArray;->getString(I)Ljava/lang/String;
+
+    move-result-object v2
+
+    iput-object v2, p0, Lo/c;->c:Ljava/lang/String;
+
+    goto :goto_1
+
+    .line 25
+    :cond_2
+    iget v3, p0, Lo/c;->b:I
+
+    invoke-virtual {p1, v2, v3}, Landroid/content/res/TypedArray;->getResourceId(II)I
+
+    move-result v2
+
+    iput v2, p0, Lo/c;->b:I
+
+    :cond_3
+    :goto_1
+    add-int/lit8 v1, v1, 0x1
+
+    goto/16 :goto_0
+
+    :cond_4
     return-void
+
+    :pswitch_data_0
+    .packed-switch 0x1
+        :pswitch_b
+        :pswitch_a
+        :pswitch_9
+        :pswitch_8
+        :pswitch_7
+        :pswitch_6
+        :pswitch_5
+        :pswitch_4
+        :pswitch_3
+        :pswitch_2
+        :pswitch_1
+        :pswitch_0
+    .end packed-switch
 .end method

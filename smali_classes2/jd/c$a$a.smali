@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Ljd/c$a;->n(Lae/c2$a;ILae/b2;)V
+    value = Ljd/c$a;->n(Lae/b2$a;ILae/a2;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field public final synthetic f:Ljd/c$a;
+.field public final synthetic g:Ljd/c$a;
 
 
 # direct methods
 .method public constructor <init>(Ljd/c$a;)V
     .locals 0
 
-    iput-object p1, p0, Ljd/c$a$a;->f:Ljd/c$a;
+    iput-object p1, p0, Ljd/c$a$a;->g:Ljd/c$a;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -45,7 +45,7 @@
     move-result-object p1
 
     .line 2
-    iget-object p1, p1, Lae/u;->m:La5/d0;
+    iget-object p1, p1, Lae/u;->m:Lpe/a;
 
     const-string v0, "Chat - Messages"
 
@@ -56,10 +56,10 @@
     const/16 v3, 0x18
 
     .line 3
-    invoke-static {p1, v0, v1, v2, v3}, La5/d0;->a(La5/d0;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;I)V
+    invoke-static {p1, v0, v1, v2, v3}, Lpe/a;->e(Lpe/a;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;I)V
 
     .line 4
-    iget-object p1, p0, Ljd/c$a$a;->f:Ljd/c$a;
+    iget-object p1, p0, Ljd/c$a$a;->g:Ljd/c$a;
 
     .line 5
     iget-object p1, p1, Ljd/c$a;->f:Ljd/c;

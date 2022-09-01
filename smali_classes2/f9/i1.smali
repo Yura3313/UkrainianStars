@@ -291,7 +291,7 @@
     .line 18
     iget-object v0, p0, Lf9/i1;->q:Lq8/d;
 
-    iget-object v0, v0, Lq8/d;->I:Ljava/lang/String;
+    iget-object v0, v0, Lq8/d;->J:Ljava/lang/String;
 
     const-string v1, "acid"
 
@@ -305,7 +305,7 @@
     invoke-virtual {p2, v1, v0}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 20
-    invoke-static {p1}, Lbc/a;->e(Ljava/util/List;)Z
+    invoke-static {p1}, Lt5/a;->h(Ljava/util/List;)Z
 
     move-result v0
 
@@ -558,7 +558,7 @@
     .line 2
     iget-object v1, p0, Lf9/i1;->q:Lq8/d;
 
-    iget-object v1, v1, Lq8/d;->I:Ljava/lang/String;
+    iget-object v1, v1, Lq8/d;->J:Ljava/lang/String;
 
     const-string v2, "acid"
 
@@ -683,10 +683,10 @@
 
     move-result-object v4
 
-    check-cast v4, Lcom/helpshift/util/h0;
+    check-cast v4, Lcom/helpshift/util/f0;
 
     .line 16
-    iget-object v4, v4, Lcom/helpshift/util/h0;->a:Ljava/lang/Object;
+    iget-object v4, v4, Lcom/helpshift/util/f0;->a:Ljava/lang/Object;
 
     invoke-interface {v1, v4}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -695,7 +695,7 @@
     check-cast v4, Ljava/util/List;
 
     .line 17
-    invoke-static {v4}, Lbc/a;->e(Ljava/util/List;)Z
+    invoke-static {v4}, Lt5/a;->h(Ljava/util/List;)Z
 
     move-result v5
 
@@ -927,7 +927,7 @@
     const/4 v2, 0x0
 
     .line 1
-    invoke-static {v0, v1, v2, v2}, Landroidx/savedstate/d;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v0, v1, v2, v2}, Le5/i;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
 
     .line 2
     iget-object v0, p0, Lf9/i1;->n:Lo/e;
@@ -1035,7 +1035,7 @@
     .line 2
     iget-object v1, p0, Lf9/i1;->q:Lq8/d;
 
-    iget-object v1, v1, Lq8/d;->I:Ljava/lang/String;
+    iget-object v1, v1, Lq8/d;->J:Ljava/lang/String;
 
     const-string v2, "acid"
 
@@ -1237,7 +1237,7 @@
     const/4 v8, 0x0
 
     .line 12
-    invoke-static {v7, v6, v8, v8}, Landroidx/savedstate/d;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v7, v6, v8, v8}, Le5/i;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
 
     .line 13
     iget-object v2, v2, Lf9/i;->n:Ln8/l;
@@ -1531,7 +1531,7 @@
     .line 50
     iget-object v7, v2, Lta/a;->j:Landroid/view/View;
 
-    invoke-static {v7}, Lcom/helpshift/util/t;->b(Landroid/view/View;)Z
+    invoke-static {v7}, Lcom/helpshift/util/s;->b(Landroid/view/View;)Z
 
     move-result v7
 
@@ -1593,7 +1593,7 @@
     sget-object v11, Landroid/graphics/drawable/GradientDrawable$Orientation;->BOTTOM_TOP:Landroid/graphics/drawable/GradientDrawable$Orientation;
 
     .line 59
-    invoke-static {v7, v9, v11}, Lcom/helpshift/util/g0;->g(Landroid/view/View;ILandroid/graphics/drawable/GradientDrawable$Orientation;)V
+    invoke-static {v7, v9, v11}, Lcom/helpshift/util/e0;->g(Landroid/view/View;ILandroid/graphics/drawable/GradientDrawable$Orientation;)V
 
     .line 60
     iget-object v7, v2, Lta/a;->k:Landroid/view/View;
@@ -1608,7 +1608,7 @@
     sget-object v10, Landroid/graphics/drawable/GradientDrawable$Orientation;->TOP_BOTTOM:Landroid/graphics/drawable/GradientDrawable$Orientation;
 
     .line 62
-    invoke-static {v7, v9, v10}, Lcom/helpshift/util/g0;->g(Landroid/view/View;ILandroid/graphics/drawable/GradientDrawable$Orientation;)V
+    invoke-static {v7, v9, v10}, Lcom/helpshift/util/e0;->g(Landroid/view/View;ILandroid/graphics/drawable/GradientDrawable$Orientation;)V
 
     .line 63
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
@@ -1624,7 +1624,7 @@
 
     int-to-float v0, v0
 
-    invoke-static {v7, v0}, Lcom/helpshift/util/g0;->a(Landroid/content/Context;F)F
+    invoke-static {v7, v0}, Lcom/helpshift/util/e0;->a(Landroid/content/Context;F)F
 
     move-result v0
 
@@ -1680,7 +1680,7 @@
     check-cast v7, Lqa/t;
 
     .line 74
-    iget-object v7, v7, Landroidx/fragment/app/Fragment;->A:Landroidx/fragment/app/Fragment;
+    iget-object v7, v7, Landroidx/fragment/app/Fragment;->B:Landroidx/fragment/app/Fragment;
 
     .line 75
     check-cast v7, Lab/p;
@@ -1695,7 +1695,7 @@
     const-string v0, "showBottomSheetViewContainer called with invalid data"
 
     .line 77
-    invoke-static {v9, v0, v8, v8}, Landroidx/savedstate/d;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v9, v0, v8, v8}, Le5/i;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
 
     goto :goto_1
 
@@ -1703,25 +1703,25 @@
     const-string v10, "showBottomSheetViewContainer called"
 
     .line 78
-    invoke-static {v9, v10, v8, v8}, Landroidx/savedstate/d;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v9, v10, v8, v8}, Le5/i;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
 
     .line 79
-    iget-object v8, v7, Lab/p;->F0:Landroid/widget/FrameLayout;
+    iget-object v8, v7, Lab/p;->G0:Landroid/widget/FrameLayout;
 
     invoke-virtual {v8}, Landroid/view/ViewGroup;->removeAllViews()V
 
     .line 80
-    iget-object v8, v7, Lab/p;->F0:Landroid/widget/FrameLayout;
+    iget-object v8, v7, Lab/p;->G0:Landroid/widget/FrameLayout;
 
     invoke-virtual {v8, v6}, Landroid/view/ViewGroup;->addView(Landroid/view/View;)V
 
     .line 81
-    iget-object v8, v7, Lab/p;->F0:Landroid/widget/FrameLayout;
+    iget-object v8, v7, Lab/p;->G0:Landroid/widget/FrameLayout;
 
     invoke-virtual {v8, v3}, Landroid/view/View;->setVisibility(I)V
 
     .line 82
-    iget-object v8, v7, Lab/p;->G0:Landroid/widget/LinearLayout;
+    iget-object v8, v7, Lab/p;->H0:Landroid/widget/LinearLayout;
 
     const/16 v9, 0x12c
 
@@ -1736,7 +1736,7 @@
     invoke-virtual {v10, v8, v9}, Landroid/view/animation/Animation;->setDuration(J)V
 
     .line 85
-    iget-object v0, v7, Lab/p;->G0:Landroid/widget/LinearLayout;
+    iget-object v0, v7, Lab/p;->H0:Landroid/widget/LinearLayout;
 
     invoke-virtual {v0, v10}, Landroid/view/View;->startAnimation(Landroid/view/animation/Animation;)V
 
@@ -1909,7 +1909,7 @@
 
     const v2, 0x1010036
 
-    invoke-static {v0, v1, v2}, Lcom/helpshift/util/g0;->e(Landroid/content/Context;Landroid/graphics/drawable/Drawable;I)V
+    invoke-static {v0, v1, v2}, Lcom/helpshift/util/e0;->e(Landroid/content/Context;Landroid/graphics/drawable/Drawable;I)V
 
     .line 106
     :cond_3

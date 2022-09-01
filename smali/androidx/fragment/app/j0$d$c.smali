@@ -23,15 +23,15 @@
 
 
 # static fields
-.field public static final enum f:Landroidx/fragment/app/j0$d$c;
-
 .field public static final enum g:Landroidx/fragment/app/j0$d$c;
 
 .field public static final enum h:Landroidx/fragment/app/j0$d$c;
 
 .field public static final enum i:Landroidx/fragment/app/j0$d$c;
 
-.field public static final synthetic j:[Landroidx/fragment/app/j0$d$c;
+.field public static final enum j:Landroidx/fragment/app/j0$d$c;
+
+.field public static final synthetic k:[Landroidx/fragment/app/j0$d$c;
 
 
 # direct methods
@@ -47,7 +47,7 @@
 
     invoke-direct {v0, v1, v2}, Landroidx/fragment/app/j0$d$c;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Landroidx/fragment/app/j0$d$c;->f:Landroidx/fragment/app/j0$d$c;
+    sput-object v0, Landroidx/fragment/app/j0$d$c;->g:Landroidx/fragment/app/j0$d$c;
 
     .line 2
     new-instance v1, Landroidx/fragment/app/j0$d$c;
@@ -58,7 +58,7 @@
 
     invoke-direct {v1, v3, v4}, Landroidx/fragment/app/j0$d$c;-><init>(Ljava/lang/String;I)V
 
-    sput-object v1, Landroidx/fragment/app/j0$d$c;->g:Landroidx/fragment/app/j0$d$c;
+    sput-object v1, Landroidx/fragment/app/j0$d$c;->h:Landroidx/fragment/app/j0$d$c;
 
     .line 3
     new-instance v3, Landroidx/fragment/app/j0$d$c;
@@ -69,7 +69,7 @@
 
     invoke-direct {v3, v5, v6}, Landroidx/fragment/app/j0$d$c;-><init>(Ljava/lang/String;I)V
 
-    sput-object v3, Landroidx/fragment/app/j0$d$c;->h:Landroidx/fragment/app/j0$d$c;
+    sput-object v3, Landroidx/fragment/app/j0$d$c;->i:Landroidx/fragment/app/j0$d$c;
 
     .line 4
     new-instance v5, Landroidx/fragment/app/j0$d$c;
@@ -80,7 +80,7 @@
 
     invoke-direct {v5, v7, v8}, Landroidx/fragment/app/j0$d$c;-><init>(Ljava/lang/String;I)V
 
-    sput-object v5, Landroidx/fragment/app/j0$d$c;->i:Landroidx/fragment/app/j0$d$c;
+    sput-object v5, Landroidx/fragment/app/j0$d$c;->j:Landroidx/fragment/app/j0$d$c;
 
     const/4 v7, 0x4
 
@@ -95,7 +95,7 @@
     aput-object v5, v7, v8
 
     .line 5
-    sput-object v7, Landroidx/fragment/app/j0$d$c;->j:[Landroidx/fragment/app/j0$d$c;
+    sput-object v7, Landroidx/fragment/app/j0$d$c;->k:[Landroidx/fragment/app/j0$d$c;
 
     return-void
 .end method
@@ -127,7 +127,7 @@
     if-ne p0, v0, :cond_0
 
     .line 1
-    sget-object p0, Landroidx/fragment/app/j0$d$c;->h:Landroidx/fragment/app/j0$d$c;
+    sget-object p0, Landroidx/fragment/app/j0$d$c;->i:Landroidx/fragment/app/j0$d$c;
 
     return-object p0
 
@@ -149,13 +149,13 @@
 
     .line 5
     :cond_1
-    sget-object p0, Landroidx/fragment/app/j0$d$c;->i:Landroidx/fragment/app/j0$d$c;
+    sget-object p0, Landroidx/fragment/app/j0$d$c;->j:Landroidx/fragment/app/j0$d$c;
 
     return-object p0
 
     .line 6
     :cond_2
-    sget-object p0, Landroidx/fragment/app/j0$d$c;->g:Landroidx/fragment/app/j0$d$c;
+    sget-object p0, Landroidx/fragment/app/j0$d$c;->h:Landroidx/fragment/app/j0$d$c;
 
     return-object p0
 .end method
@@ -181,7 +181,7 @@
     if-nez v0, :cond_0
 
     .line 2
-    sget-object p0, Landroidx/fragment/app/j0$d$c;->i:Landroidx/fragment/app/j0$d$c;
+    sget-object p0, Landroidx/fragment/app/j0$d$c;->j:Landroidx/fragment/app/j0$d$c;
 
     return-object p0
 
@@ -215,7 +215,7 @@
 .method public static values()[Landroidx/fragment/app/j0$d$c;
     .locals 1
 
-    sget-object v0, Landroidx/fragment/app/j0$d$c;->j:[Landroidx/fragment/app/j0$d$c;
+    sget-object v0, Landroidx/fragment/app/j0$d$c;->k:[Landroidx/fragment/app/j0$d$c;
 
     invoke-virtual {v0}, [Landroidx/fragment/app/j0$d$c;->clone()Ljava/lang/Object;
 

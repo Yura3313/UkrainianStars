@@ -24,7 +24,7 @@
     .locals 1
 
     .line 1
-    iget-object p0, p0, Landroidx/transition/Transition;->j:Ljava/util/ArrayList;
+    iget-object p0, p0, Landroidx/transition/Transition;->k:Ljava/util/ArrayList;
 
     .line 2
     invoke-static {p0}, Landroidx/fragment/app/g0;->h(Ljava/util/List;)Z
@@ -112,7 +112,7 @@
     check-cast p1, Landroidx/transition/TransitionSet;
 
     .line 4
-    iget-object v0, p1, Landroidx/transition/TransitionSet;->D:Ljava/util/ArrayList;
+    iget-object v0, p1, Landroidx/transition/TransitionSet;->E:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -142,7 +142,7 @@
     if-nez v0, :cond_2
 
     .line 8
-    iget-object v0, p1, Landroidx/transition/Transition;->k:Ljava/util/ArrayList;
+    iget-object v0, p1, Landroidx/transition/Transition;->l:Ljava/util/ArrayList;
 
     .line 9
     invoke-static {v0}, Landroidx/fragment/app/g0;->h(Ljava/util/List;)Z
@@ -464,7 +464,7 @@
     check-cast p1, Landroidx/transition/TransitionSet;
 
     .line 2
-    iget-object v0, p1, Landroidx/transition/Transition;->k:Ljava/util/ArrayList;
+    iget-object v0, p1, Landroidx/transition/Transition;->l:Ljava/util/ArrayList;
 
     .line 3
     invoke-interface {v0}, Ljava/util/List;->clear()V
@@ -527,13 +527,13 @@
     if-eqz p1, :cond_0
 
     .line 2
-    iget-object v0, p1, Landroidx/transition/Transition;->k:Ljava/util/ArrayList;
+    iget-object v0, p1, Landroidx/transition/Transition;->l:Ljava/util/ArrayList;
 
     .line 3
     invoke-interface {v0}, Ljava/util/List;->clear()V
 
     .line 4
-    iget-object v0, p1, Landroidx/transition/Transition;->k:Ljava/util/ArrayList;
+    iget-object v0, p1, Landroidx/transition/Transition;->l:Ljava/util/ArrayList;
 
     .line 5
     invoke-interface {v0, p3}, Ljava/util/List;->addAll(Ljava/util/Collection;)Z
@@ -597,7 +597,7 @@
     check-cast p1, Landroidx/transition/TransitionSet;
 
     .line 4
-    iget-object v0, p1, Landroidx/transition/TransitionSet;->D:Ljava/util/ArrayList;
+    iget-object v0, p1, Landroidx/transition/TransitionSet;->E:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -627,7 +627,7 @@
     if-nez v0, :cond_3
 
     .line 8
-    iget-object v0, p1, Landroidx/transition/Transition;->k:Ljava/util/ArrayList;
+    iget-object v0, p1, Landroidx/transition/Transition;->l:Ljava/util/ArrayList;
 
     .line 9
     invoke-interface {v0}, Ljava/util/List;->size()I

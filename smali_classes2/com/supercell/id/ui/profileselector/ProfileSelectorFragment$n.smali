@@ -1,14 +1,14 @@
 .class public final Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$n;
-.super Lse/h;
-.source "ProfileSelectorFragment.kt"
+.super Ljava/lang/Object;
+.source "Comparisons.kt"
 
 # interfaces
-.implements Lre/a;
+.implements Ljava/util/Comparator;
 
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->i1()V
+    value = Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment;->k1(Ljava/util/List;Ljava/util/List;Ljava/util/Map;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,84 +18,91 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
-        "Lre/a<",
-        "Lae/e2;",
-        ">;"
+        "<T:",
+        "Ljava/lang/Object;",
+        ">",
+        "Ljava/lang/Object;",
+        "Ljava/util/Comparator<",
+        "TT;>;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic f:Ljava/util/List;
+.field public final synthetic g:Ljava/util/Comparator;
 
-.field public final synthetic g:Lse/q;
+.field public final synthetic h:Ljava/util/Comparator;
 
 
 # direct methods
-.method public constructor <init>(Ljava/util/List;Lse/q;)V
+.method public constructor <init>(Ljava/util/Comparator;Ljava/util/Comparator;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$n;->f:Ljava/util/List;
+    iput-object p1, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$n;->g:Ljava/util/Comparator;
 
-    iput-object p2, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$n;->g:Lse/q;
+    iput-object p2, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$n;->h:Ljava/util/Comparator;
 
-    const/4 p1, 0x0
-
-    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final invoke()Ljava/lang/Object;
-    .locals 6
+.method public final compare(Ljava/lang/Object;Ljava/lang/Object;)I
+    .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(TT;TT;)I"
+        }
+    .end annotation
 
     .line 1
-    new-instance v0, Lae/e2;
+    iget-object v0, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$n;->g:Ljava/util/Comparator;
 
-    iget-object v1, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$n;->f:Ljava/util/List;
+    invoke-interface {v0, p1, p2}, Ljava/util/Comparator;->compare(Ljava/lang/Object;Ljava/lang/Object;)I
 
-    iget-object v2, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$n;->g:Lse/q;
+    move-result v0
 
-    iget-object v2, v2, Lse/q;->f:Ljava/lang/Object;
-
-    check-cast v2, Ljava/util/List;
-
-    .line 2
-    new-instance v3, Lae/d2;
-
-    if-eqz v1, :cond_0
-
-    move-object v4, v1
-
-    goto :goto_0
-
-    .line 3
-    :cond_0
-    sget-object v4, Lje/l;->f:Lje/l;
-
-    :goto_0
-    if-eqz v2, :cond_1
-
-    move-object v5, v2
+    if-eqz v0, :cond_0
 
     goto :goto_1
 
+    .line 2
+    :cond_0
+    iget-object v0, p0, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$n;->h:Ljava/util/Comparator;
+
+    check-cast p1, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$f;
+
+    .line 3
+    iget-object p1, p1, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$f;->e:Ljava/lang/String;
+
+    const-string v1, ""
+
+    if-eqz p1, :cond_1
+
+    goto :goto_0
+
     :cond_1
-    sget-object v5, Lje/l;->f:Lje/l;
+    move-object p1, v1
 
     .line 4
-    :goto_1
-    invoke-direct {v3, v4, v5}, Lae/d2;-><init>(Ljava/util/List;Ljava/util/List;)V
+    :goto_0
+    check-cast p2, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$f;
 
     .line 5
-    invoke-static {v3}, Landroidx/recyclerview/widget/l;->a(Landroidx/recyclerview/widget/l$b;)Landroidx/recyclerview/widget/l$c;
+    iget-object p2, p2, Lcom/supercell/id/ui/profileselector/ProfileSelectorFragment$f;->e:Ljava/lang/String;
 
-    move-result-object v3
+    if-eqz p2, :cond_2
 
-    invoke-direct {v0, v1, v2, v3}, Lae/e2;-><init>(Ljava/util/List;Ljava/util/List;Landroidx/recyclerview/widget/l$c;)V
+    move-object v1, p2
 
-    return-object v0
+    .line 6
+    :cond_2
+    invoke-interface {v0, p1, v1}, Ljava/util/Comparator;->compare(Ljava/lang/Object;Ljava/lang/Object;)I
+
+    move-result v0
+
+    :goto_1
+    return v0
 .end method

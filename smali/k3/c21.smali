@@ -3,174 +3,227 @@
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 
-# annotations
-.annotation build Landroid/annotation/TargetApi;
-    value = 0x10
-.end annotation
-
-
 # instance fields
-.field public final a:Lk3/e21;
+.field public final a:Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/List<",
+            "[B>;"
+        }
+    .end annotation
+.end field
 
-.field public final b:Z
+.field public final b:I
 
-.field public final c:J
-
-.field public final d:J
-
-.field public e:J
-
-.field public f:J
-
-.field public g:J
-
-.field public h:Z
-
-.field public i:J
-
-.field public j:J
-
-.field public k:J
+.field public final c:F
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;)V
-    .locals 5
-
-    const-string v0, "window"
+.method public constructor <init>(Ljava/util/List;IF)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/util/List<",
+            "[B>;IIIF)V"
+        }
+    .end annotation
 
     .line 1
-    invoke-virtual {p1, v0}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
-
-    move-result-object p1
-
-    check-cast p1, Landroid/view/WindowManager;
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    invoke-interface {p1}, Landroid/view/WindowManager;->getDefaultDisplay()Landroid/view/Display;
+    iput-object p1, p0, Lk3/c21;->a:Ljava/util/List;
 
-    move-result-object v0
+    .line 3
+    iput p2, p0, Lk3/c21;->b:I
 
-    const-wide/high16 v1, -0x4010000000000000L    # -1.0
+    .line 4
+    iput p3, p0, Lk3/c21;->c:F
 
-    if-eqz v0, :cond_0
+    return-void
+.end method
 
-    invoke-interface {p1}, Landroid/view/WindowManager;->getDefaultDisplay()Landroid/view/Display;
+.method public static a(Lk3/y11;)Lk3/c21;
+    .locals 7
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lcom/google/android/gms/internal/ads/zzhv;
+        }
+    .end annotation
 
-    move-result-object p1
+    const/4 v0, 0x4
 
-    invoke-virtual {p1}, Landroid/view/Display;->getRefreshRate()F
+    .line 1
+    :try_start_0
+    invoke-virtual {p0, v0}, Lk3/y11;->i(I)V
 
-    move-result p1
+    .line 2
+    invoke-virtual {p0}, Lk3/y11;->d()I
 
-    float-to-double v3, p1
+    move-result v0
+
+    const/4 v1, 0x3
+
+    and-int/2addr v0, v1
+
+    add-int/lit8 v0, v0, 0x1
+
+    if-eq v0, v1, :cond_3
+
+    .line 3
+    new-instance v1, Ljava/util/ArrayList;
+
+    invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
+
+    .line 4
+    invoke-virtual {p0}, Lk3/y11;->d()I
+
+    move-result v2
+
+    and-int/lit8 v2, v2, 0x1f
+
+    const/4 v3, 0x0
+
+    const/4 v4, 0x0
+
+    :goto_0
+    if-ge v4, v2, :cond_0
+
+    .line 5
+    invoke-static {p0}, Lk3/c21;->b(Lk3/y11;)[B
+
+    move-result-object v5
+
+    invoke-virtual {v1, v5}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    add-int/lit8 v4, v4, 0x1
 
     goto :goto_0
 
+    .line 6
     :cond_0
-    move-wide v3, v1
+    invoke-virtual {p0}, Lk3/y11;->d()I
 
-    .line 3
-    :goto_0
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    move-result v4
 
-    cmpl-double p1, v3, v1
+    const/4 v5, 0x0
 
-    if-eqz p1, :cond_1
+    :goto_1
+    if-ge v5, v4, :cond_1
 
-    const/4 p1, 0x1
+    .line 7
+    invoke-static {p0}, Lk3/c21;->b(Lk3/y11;)[B
+
+    move-result-object v6
+
+    invoke-virtual {v1, v6}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    add-int/lit8 v5, v5, 0x1
 
     goto :goto_1
 
     :cond_1
-    const/4 p1, 0x0
-
-    .line 4
-    :goto_1
-    iput-boolean p1, p0, Lk3/c21;->b:Z
-
-    if-eqz p1, :cond_2
-
-    .line 5
-    sget-object p1, Lk3/e21;->j:Lk3/e21;
-
-    .line 6
-    iput-object p1, p0, Lk3/c21;->a:Lk3/e21;
-
-    const-wide v0, 0x41cdcd6500000000L    # 1.0E9
-
-    div-double/2addr v0, v3
-
-    double-to-long v0, v0
-
-    .line 7
-    iput-wide v0, p0, Lk3/c21;->c:J
-
-    const-wide/16 v2, 0x50
-
-    mul-long v0, v0, v2
-
-    const-wide/16 v2, 0x64
+    if-lez v2, :cond_2
 
     .line 8
-    div-long/2addr v0, v2
+    invoke-virtual {v1, v3}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
-    iput-wide v0, p0, Lk3/c21;->d:J
+    move-result-object p0
+
+    check-cast p0, [B
+
+    .line 9
+    invoke-virtual {v1, v3}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+
+    move-result-object v2
+
+    check-cast v2, [B
+
+    array-length p0, p0
+
+    invoke-static {v2, v0, p0}, Lk3/u11;->a([BII)Lk3/w11;
+
+    move-result-object p0
+
+    .line 10
+    iget p0, p0, Lk3/w11;->c:F
 
     goto :goto_2
 
     :cond_2
-    const/4 p1, 0x0
-
-    .line 9
-    iput-object p1, p0, Lk3/c21;->a:Lk3/e21;
-
-    const-wide/16 v0, -0x1
-
-    .line 10
-    iput-wide v0, p0, Lk3/c21;->c:J
+    const/high16 p0, 0x3f800000    # 1.0f
 
     .line 11
-    iput-wide v0, p0, Lk3/c21;->d:J
-
     :goto_2
-    return-void
+    new-instance v2, Lk3/c21;
+
+    invoke-direct {v2, v1, v0, p0}, Lk3/c21;-><init>(Ljava/util/List;IF)V
+
+    return-object v2
+
+    .line 12
+    :cond_3
+    new-instance p0, Ljava/lang/IllegalStateException;
+
+    invoke-direct {p0}, Ljava/lang/IllegalStateException;-><init>()V
+
+    throw p0
+    :try_end_0
+    .catch Ljava/lang/ArrayIndexOutOfBoundsException; {:try_start_0 .. :try_end_0} :catch_0
+
+    :catch_0
+    move-exception p0
+
+    .line 13
+    new-instance v0, Lcom/google/android/gms/internal/ads/zzhv;
+
+    const-string v1, "Error parsing AVC config"
+
+    invoke-direct {v0, v1, p0}, Lcom/google/android/gms/internal/ads/zzhv;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
+
+    goto :goto_4
+
+    :goto_3
+    throw v0
+
+    :goto_4
+    goto :goto_3
 .end method
 
-
-# virtual methods
-.method public final a(JJ)Z
-    .locals 2
+.method public static b(Lk3/y11;)[B
+    .locals 6
 
     .line 1
-    iget-wide v0, p0, Lk3/c21;->j:J
+    invoke-virtual {p0}, Lk3/y11;->e()I
 
-    sub-long/2addr p1, v0
+    move-result v0
 
     .line 2
-    iget-wide v0, p0, Lk3/c21;->i:J
-
-    sub-long/2addr p3, v0
-
-    sub-long/2addr p3, p1
+    iget v1, p0, Lk3/y11;->b:I
 
     .line 3
-    invoke-static {p3, p4}, Ljava/lang/Math;->abs(J)J
+    invoke-virtual {p0, v0}, Lk3/y11;->i(I)V
 
-    move-result-wide p1
+    .line 4
+    iget-object p0, p0, Lk3/y11;->a:[B
 
-    const-wide/32 p3, 0x1312d00
+    .line 5
+    sget-object v2, Lk3/k6;->j:[B
 
-    cmp-long v0, p1, p3
+    add-int/lit8 v3, v0, 0x4
 
-    if-lez v0, :cond_0
+    new-array v3, v3, [B
 
-    const/4 p1, 0x1
+    const/4 v4, 0x0
 
-    return p1
+    const/4 v5, 0x4
 
-    :cond_0
-    const/4 p1, 0x0
+    .line 6
+    invoke-static {v2, v4, v3, v4, v5}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
 
-    return p1
+    .line 7
+    invoke-static {p0, v1, v3, v5, v0}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+
+    return-object v3
 .end method

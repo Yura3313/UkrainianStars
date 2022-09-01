@@ -39,35 +39,35 @@
     new-array p1, p1, [Lre/a;
 
     .line 2
-    sget-object v0, Lcom/supercell/id/ui/tutorial/TutorialFragment$d$a;->f:Lcom/supercell/id/ui/tutorial/TutorialFragment$d$a;
+    sget-object v0, Lcom/supercell/id/ui/tutorial/TutorialFragment$d$a;->g:Lcom/supercell/id/ui/tutorial/TutorialFragment$d$a;
 
     const/4 v1, 0x0
 
     aput-object v0, p1, v1
 
     .line 3
-    sget-object v0, Lcom/supercell/id/ui/tutorial/TutorialFragment$d$b;->f:Lcom/supercell/id/ui/tutorial/TutorialFragment$d$b;
+    sget-object v0, Lcom/supercell/id/ui/tutorial/TutorialFragment$d$b;->g:Lcom/supercell/id/ui/tutorial/TutorialFragment$d$b;
 
     const/4 v1, 0x1
 
     aput-object v0, p1, v1
 
     .line 4
-    sget-object v0, Lcom/supercell/id/ui/tutorial/TutorialFragment$d$c;->f:Lcom/supercell/id/ui/tutorial/TutorialFragment$d$c;
+    sget-object v0, Lcom/supercell/id/ui/tutorial/TutorialFragment$d$c;->g:Lcom/supercell/id/ui/tutorial/TutorialFragment$d$c;
 
     const/4 v1, 0x2
 
     aput-object v0, p1, v1
 
     .line 5
-    sget-object v0, Lcom/supercell/id/ui/tutorial/TutorialFragment$d$d;->f:Lcom/supercell/id/ui/tutorial/TutorialFragment$d$d;
+    sget-object v0, Lcom/supercell/id/ui/tutorial/TutorialFragment$d$d;->g:Lcom/supercell/id/ui/tutorial/TutorialFragment$d$d;
 
     const/4 v1, 0x3
 
     aput-object v0, p1, v1
 
     .line 6
-    sget-object v0, Lcom/supercell/id/ui/tutorial/TutorialFragment$d$e;->f:Lcom/supercell/id/ui/tutorial/TutorialFragment$d$e;
+    sget-object v0, Lcom/supercell/id/ui/tutorial/TutorialFragment$d$e;->g:Lcom/supercell/id/ui/tutorial/TutorialFragment$d$e;
 
     const/4 v1, 0x4
 

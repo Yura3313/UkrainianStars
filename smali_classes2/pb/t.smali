@@ -418,7 +418,7 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lpb/f0;->b:Ljava/util/LinkedHashMap;
+    iget-object v0, p0, Lpb/g0;->b:Ljava/util/LinkedHashMap;
 
     .line 2
     invoke-virtual {v0}, Ljava/util/LinkedHashMap;->entrySet()Ljava/util/Set;
@@ -530,7 +530,7 @@
     const-string v3, "permessage-deflate extension contains an unsupported parameter: "
 
     .line 12
-    invoke-static {v3, v2}, Lcom/google/android/gms/ads/e;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v3, v2}, Lf/g;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 

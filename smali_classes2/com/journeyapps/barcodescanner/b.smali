@@ -85,7 +85,7 @@
     move-result-object p2
 
     .line 12
-    iget-object p2, p2, Lcom/journeyapps/barcodescanner/CameraPreview;->o:Ljava/util/ArrayList;
+    iget-object p2, p2, Lcom/journeyapps/barcodescanner/CameraPreview;->p:Ljava/util/ArrayList;
 
     invoke-virtual {p2, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
@@ -140,7 +140,7 @@
     move-result-object v0
 
     .line 2
-    iget-object v0, v0, Lcom/journeyapps/barcodescanner/CameraPreview;->f:Lsb/d;
+    iget-object v0, v0, Lcom/journeyapps/barcodescanner/CameraPreview;->g:Lsb/d;
 
     const/4 v1, 0x1
 
@@ -181,7 +181,7 @@
     iget-object v0, p0, Lcom/journeyapps/barcodescanner/b;->b:Lcom/journeyapps/barcodescanner/DecoratedBarcodeView;
 
     .line 7
-    iget-object v0, v0, Lcom/journeyapps/barcodescanner/DecoratedBarcodeView;->f:Lcom/journeyapps/barcodescanner/BarcodeView;
+    iget-object v0, v0, Lcom/journeyapps/barcodescanner/DecoratedBarcodeView;->g:Lcom/journeyapps/barcodescanner/BarcodeView;
 
     invoke-virtual {v0}, Lcom/journeyapps/barcodescanner/BarcodeView;->d()V
 

@@ -4,14 +4,14 @@
 
 
 # instance fields
-.field public final synthetic f:Lcom/google/android/material/bottomappbar/BottomAppBar;
+.field public final synthetic g:Lcom/google/android/material/bottomappbar/BottomAppBar;
 
 
 # direct methods
 .method public constructor <init>(Lcom/google/android/material/bottomappbar/BottomAppBar;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/google/android/material/bottomappbar/d;->f:Lcom/google/android/material/bottomappbar/BottomAppBar;
+    iput-object p1, p0, Lcom/google/android/material/bottomappbar/d;->g:Lcom/google/android/material/bottomappbar/BottomAppBar;
 
     invoke-direct {p0}, Landroid/animation/AnimatorListenerAdapter;-><init>()V
 
@@ -24,14 +24,14 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/android/material/bottomappbar/d;->f:Lcom/google/android/material/bottomappbar/BottomAppBar;
+    iget-object v0, p0, Lcom/google/android/material/bottomappbar/d;->g:Lcom/google/android/material/bottomappbar/BottomAppBar;
 
-    iget-object v0, v0, Lcom/google/android/material/bottomappbar/BottomAppBar;->m0:Lcom/google/android/material/bottomappbar/BottomAppBar$a;
+    iget-object v0, v0, Lcom/google/android/material/bottomappbar/BottomAppBar;->n0:Lcom/google/android/material/bottomappbar/BottomAppBar$a;
 
     invoke-virtual {v0, p1}, Lcom/google/android/material/bottomappbar/BottomAppBar$a;->onAnimationStart(Landroid/animation/Animator;)V
 
     .line 2
-    iget-object p1, p0, Lcom/google/android/material/bottomappbar/d;->f:Lcom/google/android/material/bottomappbar/BottomAppBar;
+    iget-object p1, p0, Lcom/google/android/material/bottomappbar/d;->g:Lcom/google/android/material/bottomappbar/BottomAppBar;
 
     .line 3
     invoke-virtual {p1}, Lcom/google/android/material/bottomappbar/BottomAppBar;->J()Lcom/google/android/material/floatingactionbutton/FloatingActionButton;
@@ -41,7 +41,7 @@
     if-eqz p1, :cond_0
 
     .line 4
-    iget-object v0, p0, Lcom/google/android/material/bottomappbar/d;->f:Lcom/google/android/material/bottomappbar/BottomAppBar;
+    iget-object v0, p0, Lcom/google/android/material/bottomappbar/d;->g:Lcom/google/android/material/bottomappbar/BottomAppBar;
 
     invoke-static {v0}, Lcom/google/android/material/bottomappbar/BottomAppBar;->E(Lcom/google/android/material/bottomappbar/BottomAppBar;)F
 

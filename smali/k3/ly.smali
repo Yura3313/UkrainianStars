@@ -1,100 +1,121 @@
 .class public final Lk3/ly;
 .super Ljava/lang/Object;
-.source "com.google.android.gms:play-services-gass@@19.3.0"
+.source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lk3/xr0;
+.implements Lk3/mv0;
 
 
-# static fields
-.field public static final a:Lk3/ly;
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Lk3/mv0<",
+        "Lcom/google/android/gms/internal/ads/zzcgx;",
+        ">;"
+    }
+.end annotation
+
+
+# instance fields
+.field public final a:Lk3/qv0;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lk3/qv0<",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public final b:Lk3/qv0;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lk3/qv0<",
+            "Lk3/mv;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public final c:Lk3/qv0;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lk3/qv0<",
+            "Lk3/rv;",
+            ">;"
+        }
+    .end annotation
+.end field
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 1
-
-    new-instance v0, Lk3/ly;
-
-    invoke-direct {v0}, Lk3/ly;-><init>()V
-
-    sput-object v0, Lk3/ly;->a:Lk3/ly;
-
-    return-void
-.end method
-
-.method public constructor <init>()V
+.method public constructor <init>(Lk3/qv0;Lk3/qv0;Lk3/qv0;)V
     .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lk3/qv0<",
+            "Ljava/lang/String;",
+            ">;",
+            "Lk3/qv0<",
+            "Lk3/mv;",
+            ">;",
+            "Lk3/qv0<",
+            "Lk3/rv;",
+            ">;)V"
+        }
+    .end annotation
 
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    iput-object p1, p0, Lk3/ly;->a:Lk3/qv0;
+
+    .line 3
+    iput-object p2, p0, Lk3/ly;->b:Lk3/qv0;
+
+    .line 4
+    iput-object p3, p0, Lk3/ly;->c:Lk3/qv0;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(I)Z
-    .locals 2
+.method public final synthetic get()Ljava/lang/Object;
+    .locals 4
 
-    const/4 v0, 0x1
+    .line 1
+    iget-object v0, p0, Lk3/ly;->a:Lk3/qv0;
 
-    const/4 v1, 0x0
+    invoke-interface {v0}, Lk3/qv0;->get()Ljava/lang/Object;
 
-    packed-switch p1, :pswitch_data_0
+    move-result-object v0
 
-    const/4 p1, 0x0
+    check-cast v0, Ljava/lang/String;
 
-    goto :goto_0
+    iget-object v1, p0, Lk3/ly;->b:Lk3/qv0;
 
-    :pswitch_0
-    const/4 p1, 0x7
+    invoke-interface {v1}, Lk3/qv0;->get()Ljava/lang/Object;
 
-    goto :goto_0
+    move-result-object v1
 
-    :pswitch_1
-    const/4 p1, 0x6
+    check-cast v1, Lk3/mv;
 
-    goto :goto_0
+    iget-object v2, p0, Lk3/ly;->c:Lk3/qv0;
 
-    :pswitch_2
-    const/4 p1, 0x5
+    invoke-interface {v2}, Lk3/qv0;->get()Ljava/lang/Object;
 
-    goto :goto_0
+    move-result-object v2
 
-    :pswitch_3
-    const/4 p1, 0x4
+    check-cast v2, Lk3/rv;
 
-    goto :goto_0
+    .line 2
+    new-instance v3, Lcom/google/android/gms/internal/ads/zzcgx;
 
-    :pswitch_4
-    const/4 p1, 0x3
+    invoke-direct {v3, v0, v1, v2}, Lcom/google/android/gms/internal/ads/zzcgx;-><init>(Ljava/lang/String;Lk3/mv;Lk3/rv;)V
 
-    goto :goto_0
-
-    :pswitch_5
-    const/4 p1, 0x2
-
-    goto :goto_0
-
-    :pswitch_6
-    const/4 p1, 0x1
-
-    :goto_0
-    if-eqz p1, :cond_0
-
-    return v0
-
-    :cond_0
-    return v1
-
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_6
-        :pswitch_5
-        :pswitch_4
-        :pswitch_3
-        :pswitch_2
-        :pswitch_1
-        :pswitch_0
-    .end packed-switch
+    return-object v3
 .end method

@@ -30,7 +30,7 @@
     iget-object p1, p0, Lh4/a;->a:Lcom/google/android/material/chip/Chip;
 
     .line 2
-    iget-object p1, p1, Lcom/google/android/material/chip/Chip;->i:Lcom/google/android/material/chip/a;
+    iget-object p1, p1, Lcom/google/android/material/chip/Chip;->j:Lcom/google/android/material/chip/a;
 
     if-eqz p1, :cond_0
 

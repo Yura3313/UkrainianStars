@@ -1,154 +1,45 @@
-.class public final Lk3/va0;
+.class public final synthetic Lk3/va0;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lk3/bd0;
-
-
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "<S::",
-        "Lk3/zc0<",
-        "*>;>",
-        "Ljava/lang/Object;",
-        "Lk3/bd0<",
-        "TS;>;"
-    }
-.end annotation
+.implements Lk3/ad0;
 
 
 # instance fields
-.field public final a:Ljava/util/concurrent/atomic/AtomicReference;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/concurrent/atomic/AtomicReference<",
-            "Lk3/ua0<",
-            "TS;>;>;"
-        }
-    .end annotation
-.end field
-
-.field public final b:Ll2/c;
-
-.field public final c:Lk3/bd0;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Lk3/bd0<",
-            "TS;>;"
-        }
-    .end annotation
-.end field
-
-.field public final d:J
+.field public final a:Lk3/ua0;
 
 
 # direct methods
-.method public constructor <init>(Lk3/bd0;JLl2/c;)V
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Lk3/bd0<",
-            "TS;>;J",
-            "Ll2/c;",
-            ")V"
-        }
-    .end annotation
+.method public constructor <init>(Lk3/ua0;)V
+    .locals 0
 
-    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 2
-    new-instance v0, Ljava/util/concurrent/atomic/AtomicReference;
-
-    invoke-direct {v0}, Ljava/util/concurrent/atomic/AtomicReference;-><init>()V
-
-    iput-object v0, p0, Lk3/va0;->a:Ljava/util/concurrent/atomic/AtomicReference;
-
-    .line 3
-    iput-object p4, p0, Lk3/va0;->b:Ll2/c;
-
-    .line 4
-    iput-object p1, p0, Lk3/va0;->c:Lk3/bd0;
-
-    .line 5
-    iput-wide p2, p0, Lk3/va0;->d:J
+    iput-object p1, p0, Lk3/va0;->a:Lk3/ua0;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a()Lk3/em0;
-    .locals 6
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Lk3/em0<",
-            "TS;>;"
-        }
-    .end annotation
+.method public final b(Ljava/lang/Object;)V
+    .locals 2
+
+    iget-object v0, p0, Lk3/va0;->a:Lk3/ua0;
+
+    check-cast p1, Landroid/os/Bundle;
 
     .line 1
-    iget-object v0, p0, Lk3/va0;->a:Ljava/util/concurrent/atomic/AtomicReference;
-
-    invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicReference;->get()Ljava/lang/Object;
-
-    move-result-object v0
-
-    check-cast v0, Lk3/ua0;
-
-    if-eqz v0, :cond_1
+    iget-object v0, v0, Lk3/ua0;->a:Lk3/hf0;
 
     .line 2
-    iget-wide v1, v0, Lk3/ua0;->b:J
+    iget-object v0, v0, Lk3/hf0;->a:Ljava/lang/String;
 
-    iget-object v3, v0, Lk3/ua0;->c:Ll2/c;
-
-    invoke-interface {v3}, Ll2/c;->b()J
-
-    move-result-wide v3
-
-    cmp-long v5, v1, v3
-
-    if-gez v5, :cond_0
-
-    const/4 v1, 0x1
-
-    goto :goto_0
-
-    :cond_0
-    const/4 v1, 0x0
-
-    :goto_0
-    if-eqz v1, :cond_2
+    const-string v1, "key_schema"
 
     .line 3
-    :cond_1
-    new-instance v0, Lk3/ua0;
+    invoke-virtual {p1, v1, v0}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
-    iget-object v1, p0, Lk3/va0;->c:Lk3/bd0;
-
-    invoke-interface {v1}, Lk3/bd0;->a()Lk3/em0;
-
-    move-result-object v1
-
-    iget-wide v2, p0, Lk3/va0;->d:J
-
-    iget-object v4, p0, Lk3/va0;->b:Ll2/c;
-
-    invoke-direct {v0, v1, v2, v3, v4}, Lk3/ua0;-><init>(Lk3/em0;JLl2/c;)V
-
-    .line 4
-    iget-object v1, p0, Lk3/va0;->a:Ljava/util/concurrent/atomic/AtomicReference;
-
-    invoke-virtual {v1, v0}, Ljava/util/concurrent/atomic/AtomicReference;->set(Ljava/lang/Object;)V
-
-    .line 5
-    :cond_2
-    iget-object v0, v0, Lk3/ua0;->a:Lk3/em0;
-
-    return-object v0
+    return-void
 .end method

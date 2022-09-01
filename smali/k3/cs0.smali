@@ -1,39 +1,8 @@
-.class public final Lk3/cs0;
-.super Lk3/gs0;
+.class public interface abstract Lk3/cs0;
+.super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads-lite@@19.3.0"
 
 
-# static fields
-.field public static final synthetic c:I
-
-
 # virtual methods
-.method public final equals(Ljava/lang/Object;)Z
-    .locals 0
-
-    new-instance p1, Ljava/lang/NoSuchMethodError;
-
-    invoke-direct {p1}, Ljava/lang/NoSuchMethodError;-><init>()V
-
-    throw p1
-.end method
-
-.method public final hashCode()I
-    .locals 1
-
-    new-instance v0, Ljava/lang/NoSuchMethodError;
-
-    invoke-direct {v0}, Ljava/lang/NoSuchMethodError;-><init>()V
-
-    throw v0
-.end method
-
-.method public final toString()Ljava/lang/String;
-    .locals 1
-
-    new-instance v0, Ljava/lang/NoSuchMethodError;
-
-    invoke-direct {v0}, Ljava/lang/NoSuchMethodError;-><init>()V
-
-    throw v0
+.method public abstract a(I)Z
 .end method

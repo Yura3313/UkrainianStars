@@ -7,18 +7,18 @@
 
 
 # instance fields
-.field public final synthetic f:Ljava/lang/Object;
-
 .field public final synthetic g:Ljava/lang/Object;
+
+.field public final synthetic h:Ljava/lang/Object;
 
 
 # direct methods
 .method public constructor <init>(Ljava/lang/Object;Ljava/lang/Object;)V
     .locals 0
 
-    iput-object p1, p0, Lu/c;->f:Ljava/lang/Object;
+    iput-object p1, p0, Lu/c;->g:Ljava/lang/Object;
 
-    iput-object p2, p0, Lu/c;->g:Ljava/lang/Object;
+    iput-object p2, p0, Lu/c;->h:Ljava/lang/Object;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -43,13 +43,13 @@
     if-eqz v0, :cond_0
 
     .line 2
-    iget-object v4, p0, Lu/c;->f:Ljava/lang/Object;
+    iget-object v4, p0, Lu/c;->g:Ljava/lang/Object;
 
     const/4 v5, 0x3
 
     new-array v5, v5, [Ljava/lang/Object;
 
-    iget-object v6, p0, Lu/c;->g:Ljava/lang/Object;
+    iget-object v6, p0, Lu/c;->h:Ljava/lang/Object;
 
     aput-object v6, v5, v2
 
@@ -71,11 +71,11 @@
     :cond_0
     sget-object v0, Lu/b;->e:Ljava/lang/reflect/Method;
 
-    iget-object v4, p0, Lu/c;->f:Ljava/lang/Object;
+    iget-object v4, p0, Lu/c;->g:Ljava/lang/Object;
 
     new-array v3, v3, [Ljava/lang/Object;
 
-    iget-object v5, p0, Lu/c;->g:Ljava/lang/Object;
+    iget-object v5, p0, Lu/c;->h:Ljava/lang/Object;
 
     aput-object v5, v3, v2
 

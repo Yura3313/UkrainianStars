@@ -15,17 +15,17 @@
 
 
 # instance fields
-.field public final f:[B
+.field public final g:[B
 
-.field public g:Ljavax/crypto/Mac;
+.field public h:Ljavax/crypto/Mac;
 
-.field public h:[B
+.field public i:[B
 
-.field public i:Ljava/nio/ByteBuffer;
+.field public j:Ljava/nio/ByteBuffer;
 
-.field public j:I
+.field public k:I
 
-.field public final synthetic k:Ls5/a;
+.field public final synthetic l:Ls5/a;
 
 
 # direct methods
@@ -33,14 +33,14 @@
     .locals 0
 
     .line 1
-    iput-object p1, p0, Ls5/a$a;->k:Ls5/a;
+    iput-object p1, p0, Ls5/a$a;->l:Ls5/a;
 
     invoke-direct {p0}, Ljava/io/InputStream;-><init>()V
 
     const/4 p1, -0x1
 
     .line 2
-    iput p1, p0, Ls5/a$a;->j:I
+    iput p1, p0, Ls5/a$a;->k:I
 
     .line 3
     array-length p1, p2
@@ -49,7 +49,7 @@
 
     move-result-object p1
 
-    iput-object p1, p0, Ls5/a$a;->f:[B
+    iput-object p1, p0, Ls5/a$a;->g:[B
 
     return-void
 .end method
@@ -69,7 +69,7 @@
     :try_start_0
     sget-object v0, Lr5/x;->f:Lr5/x;
 
-    iget-object v1, p0, Ls5/a$a;->k:Ls5/a;
+    iget-object v1, p0, Ls5/a$a;->l:Ls5/a;
 
     .line 2
     iget v1, v1, Ls5/a;->a:I
@@ -85,12 +85,12 @@
 
     check-cast v0, Ljavax/crypto/Mac;
 
-    iput-object v0, p0, Ls5/a$a;->g:Ljavax/crypto/Mac;
+    iput-object v0, p0, Ls5/a$a;->h:Ljavax/crypto/Mac;
     :try_end_0
     .catch Ljava/security/GeneralSecurityException; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 4
-    iget-object v1, p0, Ls5/a$a;->k:Ls5/a;
+    iget-object v1, p0, Ls5/a$a;->l:Ls5/a;
 
     .line 5
     iget-object v1, v1, Ls5/a;->c:[B
@@ -108,7 +108,7 @@
     :cond_0
     new-instance v1, Ljavax/crypto/spec/SecretKeySpec;
 
-    iget-object v2, p0, Ls5/a$a;->k:Ls5/a;
+    iget-object v2, p0, Ls5/a$a;->l:Ls5/a;
 
     .line 8
     iget-object v3, v2, Ls5/a;->c:[B
@@ -132,7 +132,7 @@
     :goto_0
     new-instance v1, Ljavax/crypto/spec/SecretKeySpec;
 
-    iget-object v2, p0, Ls5/a$a;->g:Ljavax/crypto/Mac;
+    iget-object v2, p0, Ls5/a$a;->h:Ljavax/crypto/Mac;
 
     invoke-virtual {v2}, Ljavax/crypto/Mac;->getMacLength()I
 
@@ -140,7 +140,7 @@
 
     new-array v2, v2, [B
 
-    iget-object v3, p0, Ls5/a$a;->k:Ls5/a;
+    iget-object v3, p0, Ls5/a$a;->l:Ls5/a;
 
     .line 12
     iget v3, v3, Ls5/a;->a:I
@@ -156,9 +156,9 @@
 
     .line 14
     :goto_1
-    iget-object v0, p0, Ls5/a$a;->g:Ljavax/crypto/Mac;
+    iget-object v0, p0, Ls5/a$a;->h:Ljavax/crypto/Mac;
 
-    iget-object v1, p0, Ls5/a$a;->k:Ls5/a;
+    iget-object v1, p0, Ls5/a$a;->l:Ls5/a;
 
     .line 15
     iget-object v1, v1, Ls5/a;->b:[B
@@ -167,13 +167,13 @@
     invoke-virtual {v0, v1}, Ljavax/crypto/Mac;->update([B)V
 
     .line 17
-    iget-object v0, p0, Ls5/a$a;->g:Ljavax/crypto/Mac;
+    iget-object v0, p0, Ls5/a$a;->h:Ljavax/crypto/Mac;
 
     invoke-virtual {v0}, Ljavax/crypto/Mac;->doFinal()[B
 
     move-result-object v0
 
-    iput-object v0, p0, Ls5/a$a;->h:[B
+    iput-object v0, p0, Ls5/a$a;->i:[B
 
     const/4 v0, 0x0
 
@@ -182,13 +182,13 @@
 
     move-result-object v1
 
-    iput-object v1, p0, Ls5/a$a;->i:Ljava/nio/ByteBuffer;
+    iput-object v1, p0, Ls5/a$a;->j:Ljava/nio/ByteBuffer;
 
     .line 19
     invoke-virtual {v1}, Ljava/nio/ByteBuffer;->mark()Ljava/nio/Buffer;
 
     .line 20
-    iput v0, p0, Ls5/a$a;->j:I
+    iput v0, p0, Ls5/a$a;->k:I
 
     return-void
 
@@ -215,13 +215,13 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Ls5/a$a;->g:Ljavax/crypto/Mac;
+    iget-object v0, p0, Ls5/a$a;->h:Ljavax/crypto/Mac;
 
     new-instance v1, Ljavax/crypto/spec/SecretKeySpec;
 
-    iget-object v2, p0, Ls5/a$a;->h:[B
+    iget-object v2, p0, Ls5/a$a;->i:[B
 
-    iget-object v3, p0, Ls5/a$a;->k:Ls5/a;
+    iget-object v3, p0, Ls5/a$a;->l:Ls5/a;
 
     .line 2
     iget v3, v3, Ls5/a;->a:I
@@ -236,40 +236,40 @@
     invoke-virtual {v0, v1}, Ljavax/crypto/Mac;->init(Ljava/security/Key;)V
 
     .line 4
-    iget-object v0, p0, Ls5/a$a;->i:Ljava/nio/ByteBuffer;
+    iget-object v0, p0, Ls5/a$a;->j:Ljava/nio/ByteBuffer;
 
     invoke-virtual {v0}, Ljava/nio/ByteBuffer;->reset()Ljava/nio/Buffer;
 
     .line 5
-    iget-object v0, p0, Ls5/a$a;->g:Ljavax/crypto/Mac;
+    iget-object v0, p0, Ls5/a$a;->h:Ljavax/crypto/Mac;
 
-    iget-object v1, p0, Ls5/a$a;->i:Ljava/nio/ByteBuffer;
+    iget-object v1, p0, Ls5/a$a;->j:Ljava/nio/ByteBuffer;
 
     invoke-virtual {v0, v1}, Ljavax/crypto/Mac;->update(Ljava/nio/ByteBuffer;)V
 
     .line 6
-    iget-object v0, p0, Ls5/a$a;->g:Ljavax/crypto/Mac;
+    iget-object v0, p0, Ls5/a$a;->h:Ljavax/crypto/Mac;
 
-    iget-object v1, p0, Ls5/a$a;->f:[B
+    iget-object v1, p0, Ls5/a$a;->g:[B
 
     invoke-virtual {v0, v1}, Ljavax/crypto/Mac;->update([B)V
 
     .line 7
-    iget v0, p0, Ls5/a$a;->j:I
+    iget v0, p0, Ls5/a$a;->k:I
 
     add-int/lit8 v0, v0, 0x1
 
-    iput v0, p0, Ls5/a$a;->j:I
+    iput v0, p0, Ls5/a$a;->k:I
 
     .line 8
-    iget-object v1, p0, Ls5/a$a;->g:Ljavax/crypto/Mac;
+    iget-object v1, p0, Ls5/a$a;->h:Ljavax/crypto/Mac;
 
     int-to-byte v0, v0
 
     invoke-virtual {v1, v0}, Ljavax/crypto/Mac;->update(B)V
 
     .line 9
-    iget-object v0, p0, Ls5/a$a;->g:Ljavax/crypto/Mac;
+    iget-object v0, p0, Ls5/a$a;->h:Ljavax/crypto/Mac;
 
     invoke-virtual {v0}, Ljavax/crypto/Mac;->doFinal()[B
 
@@ -279,7 +279,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Ls5/a$a;->i:Ljava/nio/ByteBuffer;
+    iput-object v0, p0, Ls5/a$a;->j:Ljava/nio/ByteBuffer;
 
     .line 10
     invoke-virtual {v0}, Ljava/nio/ByteBuffer;->mark()Ljava/nio/Buffer;
@@ -362,7 +362,7 @@
 
     .line 4
     :try_start_0
-    iget v0, p0, Ls5/a$a;->j:I
+    iget v0, p0, Ls5/a$a;->k:I
 
     const/4 v1, -0x1
 
@@ -378,7 +378,7 @@
     if-ge v0, p3, :cond_3
 
     .line 6
-    iget-object v1, p0, Ls5/a$a;->i:Ljava/nio/ByteBuffer;
+    iget-object v1, p0, Ls5/a$a;->j:Ljava/nio/ByteBuffer;
 
     invoke-virtual {v1}, Ljava/nio/Buffer;->hasRemaining()Z
 
@@ -387,7 +387,7 @@
     if-nez v1, :cond_2
 
     .line 7
-    iget v1, p0, Ls5/a$a;->j:I
+    iget v1, p0, Ls5/a$a;->k:I
 
     const/16 v2, 0xff
 
@@ -403,7 +403,7 @@
     sub-int v1, p3, v0
 
     .line 9
-    iget-object v2, p0, Ls5/a$a;->i:Ljava/nio/ByteBuffer;
+    iget-object v2, p0, Ls5/a$a;->j:Ljava/nio/ByteBuffer;
 
     invoke-virtual {v2}, Ljava/nio/Buffer;->remaining()I
 
@@ -414,7 +414,7 @@
     move-result v1
 
     .line 10
-    iget-object v2, p0, Ls5/a$a;->i:Ljava/nio/ByteBuffer;
+    iget-object v2, p0, Ls5/a$a;->j:Ljava/nio/ByteBuffer;
 
     invoke-virtual {v2, p1, p2, v1}, Ljava/nio/ByteBuffer;->get([BII)Ljava/nio/ByteBuffer;
     :try_end_0
@@ -435,7 +435,7 @@
     const/4 p2, 0x0
 
     .line 11
-    iput-object p2, p0, Ls5/a$a;->g:Ljavax/crypto/Mac;
+    iput-object p2, p0, Ls5/a$a;->h:Ljavax/crypto/Mac;
 
     .line 12
     new-instance p2, Ljava/io/IOException;

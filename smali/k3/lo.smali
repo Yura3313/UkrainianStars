@@ -25,7 +25,7 @@
         value = {
             "Ljava/util/Map<",
             "Ljava/lang/String;",
-            "Lk3/e40<",
+            "Lk3/h40<",
             "TAdT;>;>;"
         }
     .end annotation
@@ -40,7 +40,7 @@
             "(",
             "Ljava/util/Map<",
             "Ljava/lang/String;",
-            "Lk3/e40<",
+            "Lk3/h40<",
             "TAdT;>;>;)V"
         }
     .end annotation
@@ -56,14 +56,14 @@
 
 
 # virtual methods
-.method public final a(ILjava/lang/String;)Lk3/e40;
+.method public final a(ILjava/lang/String;)Lk3/h40;
     .locals 0
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(I",
             "Ljava/lang/String;",
             ")",
-            "Lk3/e40<",
+            "Lk3/h40<",
             "TAdT;>;"
         }
     .end annotation
@@ -74,7 +74,7 @@
 
     move-result-object p1
 
-    check-cast p1, Lk3/e40;
+    check-cast p1, Lk3/h40;
 
     return-object p1
 .end method

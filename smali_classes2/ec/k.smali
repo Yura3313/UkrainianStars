@@ -7,14 +7,14 @@
 
 
 # instance fields
-.field public final synthetic f:Lec/l;
+.field public final synthetic g:Lec/l;
 
 
 # direct methods
 .method public constructor <init>(Lec/l;)V
     .locals 0
 
-    iput-object p1, p0, Lec/k;->f:Lec/l;
+    iput-object p1, p0, Lec/k;->g:Lec/l;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -26,13 +26,13 @@
 .method public final run()V
     .locals 3
 
-    iget-object v0, p0, Lec/k;->f:Lec/l;
+    iget-object v0, p0, Lec/k;->g:Lec/l;
 
-    iget-object v1, v0, Lec/l;->s:Lkc/a;
+    iget-object v1, v0, Lec/l;->t:Lkc/a;
 
-    iget-object v2, v0, Lec/l;->n:Ljava/lang/String;
+    iget-object v2, v0, Lec/l;->o:Ljava/lang/String;
 
-    iget-object v0, v0, Lec/l;->p:Ljc/a;
+    iget-object v0, v0, Lec/l;->q:Ljc/a;
 
     invoke-interface {v0}, Ljc/a;->b()Landroid/view/View;
 

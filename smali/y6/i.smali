@@ -34,7 +34,7 @@
 
     .line 2
     :goto_0
-    sget-object v2, Lx6/a;->b:[I
+    sget-object v2, Lk3/u5;->l:[I
 
     const/16 v3, 0xae3
 

@@ -7,7 +7,7 @@
 
 
 # instance fields
-.field public final f:Ljava/nio/ByteBuffer;
+.field public final g:Ljava/nio/ByteBuffer;
 
 
 # direct methods
@@ -22,7 +22,7 @@
 
     move-result-object p1
 
-    iput-object p1, p0, Lk3/cg;->f:Ljava/nio/ByteBuffer;
+    iput-object p1, p0, Lk3/cg;->g:Ljava/nio/ByteBuffer;
 
     return-void
 .end method
@@ -37,7 +37,7 @@
         }
     .end annotation
 
-    iget-object v0, p0, Lk3/cg;->f:Ljava/nio/ByteBuffer;
+    iget-object v0, p0, Lk3/cg;->g:Ljava/nio/ByteBuffer;
 
     invoke-virtual {v0}, Ljava/nio/Buffer;->position()I
 
@@ -56,7 +56,7 @@
         }
     .end annotation
 
-    iget-object v0, p0, Lk3/cg;->f:Ljava/nio/ByteBuffer;
+    iget-object v0, p0, Lk3/cg;->g:Ljava/nio/ByteBuffer;
 
     long-to-int p2, p1
 
@@ -74,21 +74,21 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lk3/cg;->f:Ljava/nio/ByteBuffer;
+    iget-object v0, p0, Lk3/cg;->g:Ljava/nio/ByteBuffer;
 
     invoke-virtual {v0}, Ljava/nio/Buffer;->position()I
 
     move-result v0
 
     .line 2
-    iget-object v1, p0, Lk3/cg;->f:Ljava/nio/ByteBuffer;
+    iget-object v1, p0, Lk3/cg;->g:Ljava/nio/ByteBuffer;
 
     long-to-int p2, p1
 
     invoke-virtual {v1, p2}, Ljava/nio/ByteBuffer;->position(I)Ljava/nio/Buffer;
 
     .line 3
-    iget-object p1, p0, Lk3/cg;->f:Ljava/nio/ByteBuffer;
+    iget-object p1, p0, Lk3/cg;->g:Ljava/nio/ByteBuffer;
 
     invoke-virtual {p1}, Ljava/nio/ByteBuffer;->slice()Ljava/nio/ByteBuffer;
 
@@ -100,7 +100,7 @@
     invoke-virtual {p1, p2}, Ljava/nio/ByteBuffer;->limit(I)Ljava/nio/Buffer;
 
     .line 5
-    iget-object p2, p0, Lk3/cg;->f:Ljava/nio/ByteBuffer;
+    iget-object p2, p0, Lk3/cg;->g:Ljava/nio/ByteBuffer;
 
     invoke-virtual {p2, v0}, Ljava/nio/ByteBuffer;->position(I)Ljava/nio/Buffer;
 
@@ -127,7 +127,7 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lk3/cg;->f:Ljava/nio/ByteBuffer;
+    iget-object v0, p0, Lk3/cg;->g:Ljava/nio/ByteBuffer;
 
     invoke-virtual {v0}, Ljava/nio/Buffer;->remaining()I
 
@@ -151,7 +151,7 @@
 
     move-result v0
 
-    iget-object v1, p0, Lk3/cg;->f:Ljava/nio/ByteBuffer;
+    iget-object v1, p0, Lk3/cg;->g:Ljava/nio/ByteBuffer;
 
     invoke-virtual {v1}, Ljava/nio/Buffer;->remaining()I
 
@@ -165,7 +165,7 @@
     new-array v1, v0, [B
 
     .line 4
-    iget-object v2, p0, Lk3/cg;->f:Ljava/nio/ByteBuffer;
+    iget-object v2, p0, Lk3/cg;->g:Ljava/nio/ByteBuffer;
 
     invoke-virtual {v2, v1}, Ljava/nio/ByteBuffer;->get([B)Ljava/nio/ByteBuffer;
 

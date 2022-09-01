@@ -1,5 +1,5 @@
 .class public final Lrc/g;
-.super Lse/h;
+.super Lse/i;
 .source "BaseApiClient.kt"
 
 # interfaces
@@ -9,7 +9,7 @@
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/l<",
         "Ljava/util/Map$Entry<",
         "+",
@@ -24,7 +24,7 @@
 
 
 # static fields
-.field public static final f:Lrc/g;
+.field public static final g:Lrc/g;
 
 
 # direct methods
@@ -35,7 +35,7 @@
 
     invoke-direct {v0}, Lrc/g;-><init>()V
 
-    sput-object v0, Lrc/g;->f:Lrc/g;
+    sput-object v0, Lrc/g;->g:Lrc/g;
 
     return-void
 .end method
@@ -45,7 +45,7 @@
 
     const/4 v0, 0x1
 
-    invoke-direct {p0, v0}, Lse/h;-><init>(I)V
+    invoke-direct {p0, v0}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -61,7 +61,7 @@
     const-string v0, "entry"
 
     .line 2
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 3
     new-instance v0, Ljava/lang/StringBuilder;

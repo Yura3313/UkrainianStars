@@ -60,7 +60,7 @@
     if-eqz v0, :cond_8
 
     .line 2
-    iget-boolean v1, v0, Landroidx/fragment/app/Fragment;->F:Z
+    iget-boolean v1, v0, Landroidx/fragment/app/Fragment;->G:Z
 
     if-eqz v1, :cond_0
 
@@ -78,7 +78,7 @@
     check-cast p1, Lcom/helpshift/support/Section;
 
     .line 5
-    iget-object v2, v0, Lab/j;->k0:Landroidx/recyclerview/widget/RecyclerView;
+    iget-object v2, v0, Lab/j;->l0:Landroidx/recyclerview/widget/RecyclerView;
 
     if-nez v2, :cond_1
 
@@ -86,13 +86,13 @@
 
     .line 6
     :cond_1
-    iget-object v2, v0, Lab/j;->g0:Lla/e;
+    iget-object v2, v0, Lab/j;->h0:Lla/e;
 
     .line 7
-    iget-object v3, p1, Lcom/helpshift/support/Section;->h:Ljava/lang/String;
+    iget-object v3, p1, Lcom/helpshift/support/Section;->i:Ljava/lang/String;
 
     .line 8
-    iget-object v4, v0, Lab/j;->h0:Lla/d;
+    iget-object v4, v0, Lab/j;->i0:Lla/d;
 
     invoke-virtual {v2, v3, v4}, Lla/e;->c(Ljava/lang/String;Lla/d;)Ljava/util/ArrayList;
 
@@ -106,12 +106,12 @@
     if-eqz v3, :cond_2
 
     .line 10
-    iget-boolean v2, v0, Landroidx/fragment/app/Fragment;->F:Z
+    iget-boolean v2, v0, Landroidx/fragment/app/Fragment;->G:Z
 
     if-nez v2, :cond_5
 
     .line 11
-    iget-object v0, v0, Landroidx/fragment/app/Fragment;->M:Landroid/view/View;
+    iget-object v0, v0, Landroidx/fragment/app/Fragment;->N:Landroid/view/View;
 
     .line 12
     invoke-static {v1, v0}, Lib/f;->b(ILandroid/view/View;)V
@@ -120,18 +120,18 @@
 
     .line 13
     :cond_2
-    iget-object v1, v0, Lab/j;->k0:Landroidx/recyclerview/widget/RecyclerView;
+    iget-object v1, v0, Lab/j;->l0:Landroidx/recyclerview/widget/RecyclerView;
 
     new-instance v3, Lma/b;
 
-    iget-object v4, v0, Lab/j;->l0:Lab/j$a;
+    iget-object v4, v0, Lab/j;->m0:Lab/j$a;
 
     invoke-direct {v3, v2, v4}, Lma/b;-><init>(Ljava/util/List;Landroid/view/View$OnClickListener;)V
 
     invoke-virtual {v1, v3}, Landroidx/recyclerview/widget/RecyclerView;->setAdapter(Landroidx/recyclerview/widget/RecyclerView$e;)V
 
     .line 14
-    invoke-static {v0}, Lj1/q;->e(Landroidx/fragment/app/Fragment;)Lab/p;
+    invoke-static {v0}, Ls4/e;->h(Landroidx/fragment/app/Fragment;)Lab/p;
 
     move-result-object v1
 
@@ -142,7 +142,7 @@
 
     .line 16
     :cond_3
-    iget-object v1, v0, Lab/j;->j0:Ljava/lang/String;
+    iget-object v1, v0, Lab/j;->k0:Ljava/lang/String;
 
     invoke-static {v1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
 
@@ -151,7 +151,7 @@
     if-eqz v1, :cond_4
 
     .line 17
-    iget-object v1, v0, Landroidx/fragment/app/Fragment;->l:Landroid/os/Bundle;
+    iget-object v1, v0, Landroidx/fragment/app/Fragment;->m:Landroid/os/Bundle;
 
     const-string v2, "sectionPublishId"
 
@@ -161,7 +161,7 @@
     move-result-object v1
 
     .line 19
-    iget-object v2, v0, Lab/j;->g0:Lla/e;
+    iget-object v2, v0, Lab/j;->h0:Lla/e;
 
     .line 20
     iget-object v2, v2, Lla/e;->b:Lhb/e;
@@ -173,10 +173,10 @@
     if-eqz v1, :cond_4
 
     .line 21
-    iget-object v1, v1, Lcom/helpshift/support/Section;->f:Ljava/lang/String;
+    iget-object v1, v1, Lcom/helpshift/support/Section;->g:Ljava/lang/String;
 
     .line 22
-    iput-object v1, v0, Lab/j;->j0:Ljava/lang/String;
+    iput-object v1, v0, Lab/j;->k0:Ljava/lang/String;
 
     .line 23
     :cond_4
@@ -192,7 +192,7 @@
     move-result-object v0
 
     .line 25
-    iget-object p1, p1, Lcom/helpshift/support/Section;->g:Ljava/lang/String;
+    iget-object p1, p1, Lcom/helpshift/support/Section;->h:Ljava/lang/String;
 
     .line 26
     invoke-virtual {v0, p1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -206,13 +206,13 @@
     const-string v1, "Helpshift_QstnListFrag"
 
     .line 27
-    invoke-static {v1, p1, v0, v0}, Landroidx/savedstate/d;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v1, p1, v0, v0}, Le5/i;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
 
     goto :goto_1
 
     .line 28
     :cond_6
-    iget-object p1, v0, Lab/j;->k0:Landroidx/recyclerview/widget/RecyclerView;
+    iget-object p1, v0, Lab/j;->l0:Landroidx/recyclerview/widget/RecyclerView;
 
     if-eqz p1, :cond_7
 
@@ -236,7 +236,7 @@
 
     .line 31
     :cond_7
-    iget-object p1, v0, Landroidx/fragment/app/Fragment;->M:Landroid/view/View;
+    iget-object p1, v0, Landroidx/fragment/app/Fragment;->N:Landroid/view/View;
 
     .line 32
     invoke-static {v1, p1}, Lib/f;->b(ILandroid/view/View;)V

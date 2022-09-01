@@ -1,55 +1,58 @@
-.class public final synthetic Lk3/k20;
+.class public final Lk3/k20;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lk3/nl0;
-
-
-# static fields
-.field public static final a:Lk3/k20;
+.implements Lk3/mv0;
 
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 1
+.method public static a(Lk3/ds;Lk3/vg0;Lk3/u10;Lk3/jm0;Ljava/util/concurrent/ScheduledExecutorService;Lk3/c40;)Lk3/h20;
+    .locals 8
 
-    new-instance v0, Lk3/k20;
+    new-instance v7, Lk3/h20;
 
-    invoke-direct {v0}, Lk3/k20;-><init>()V
+    move-object v0, v7
 
-    sput-object v0, Lk3/k20;->a:Lk3/k20;
+    move-object v1, p0
 
-    return-void
+    move-object v2, p1
+
+    move-object v3, p2
+
+    move-object v4, p3
+
+    move-object v5, p4
+
+    move-object v6, p5
+
+    invoke-direct/range {v0 .. v6}, Lk3/h20;-><init>(Lk3/ds;Lk3/vg0;Lk3/u10;Lk3/jm0;Ljava/util/concurrent/ScheduledExecutorService;Lk3/c40;)V
+
+    return-object v7
 .end method
 
-.method public constructor <init>()V
-    .locals 0
+.method public static b(Lk3/si0;Lk3/h60;Lk3/wq;Lk3/wi0;Lk3/mo;Ljava/util/concurrent/Executor;Ljava/util/concurrent/ScheduledExecutorService;)Lk3/m60;
+    .locals 9
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    new-instance v8, Lk3/m60;
 
-    return-void
-.end method
+    move-object v0, v8
 
+    move-object v1, p0
 
-# virtual methods
-.method public final a(Ljava/lang/Object;)Lk3/em0;
-    .locals 1
+    move-object v2, p1
 
-    .line 1
-    check-cast p1, Ljava/util/concurrent/TimeoutException;
+    move-object v3, p2
 
-    .line 2
-    new-instance p1, Lcom/google/android/gms/internal/ads/zzcmt;
+    move-object v4, p3
 
-    const/4 v0, 0x5
+    move-object v5, p4
 
-    invoke-direct {p1, v0}, Lcom/google/android/gms/internal/ads/zzcmt;-><init>(I)V
+    move-object v6, p5
 
-    .line 3
-    new-instance v0, Lk3/cm0$a;
+    move-object v7, p6
 
-    invoke-direct {v0, p1}, Lk3/cm0$a;-><init>(Ljava/lang/Throwable;)V
+    invoke-direct/range {v0 .. v7}, Lk3/m60;-><init>(Lk3/si0;Lk3/h60;Lk3/wq;Lk3/wi0;Lk3/mo;Ljava/util/concurrent/Executor;Ljava/util/concurrent/ScheduledExecutorService;)V
 
-    return-object v0
+    return-object v8
 .end method

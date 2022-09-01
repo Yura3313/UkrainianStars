@@ -3,25 +3,25 @@
 .source "IngameFriendRequestsFragment.kt"
 
 # interfaces
-.implements Lae/b2;
+.implements Lae/a2;
 
 
 # instance fields
 .field public final a:I
 
-.field public final b:Lvc/i;
+.field public final b:Lvc/h;
 
 .field public final c:Lcom/supercell/id/model/IdRelationshipStatus$Acquaintance;
 
 
 # direct methods
-.method public constructor <init>(Lvc/i;Lcom/supercell/id/model/IdRelationshipStatus$Acquaintance;)V
+.method public constructor <init>(Lvc/h;Lcom/supercell/id/model/IdRelationshipStatus$Acquaintance;)V
     .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    iput-object p1, p0, Lcd/a;->b:Lvc/i;
+    iput-object p1, p0, Lcd/a;->b:Lvc/h;
 
     iput-object p2, p0, Lcd/a;->c:Lcom/supercell/id/model/IdRelationshipStatus$Acquaintance;
 
@@ -35,12 +35,12 @@
 
 
 # virtual methods
-.method public final a(Lae/b2;)Z
+.method public final a(Lae/a2;)Z
     .locals 3
 
     const-string v0, "other"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     instance-of v0, p1, Lcd/a;
@@ -53,41 +53,41 @@
 
     .line 2
     :cond_0
-    iget-object v0, p0, Lcd/a;->b:Lvc/i;
+    iget-object v0, p0, Lcd/a;->b:Lvc/h;
 
     .line 3
-    iget-object v0, v0, Lvc/i;->b:Ljava/lang/String;
+    iget-object v0, v0, Lvc/h;->b:Ljava/lang/String;
 
     .line 4
     check-cast p1, Lcd/a;
 
     .line 5
-    iget-object v2, p1, Lcd/a;->b:Lvc/i;
+    iget-object v2, p1, Lcd/a;->b:Lvc/h;
 
     .line 6
-    iget-object v2, v2, Lvc/i;->b:Ljava/lang/String;
+    iget-object v2, v2, Lvc/h;->b:Ljava/lang/String;
 
     .line 7
-    invoke-static {v0, v2}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v2}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
     .line 8
-    iget-object v0, p0, Lcd/a;->b:Lvc/i;
+    iget-object v0, p0, Lcd/a;->b:Lvc/h;
 
     .line 9
-    iget-object v0, v0, Lvc/i;->c:Lcom/supercell/id/model/ProfileImage;
+    iget-object v0, v0, Lvc/h;->c:Lcom/supercell/id/model/ProfileImage;
 
     .line 10
-    iget-object v2, p1, Lcd/a;->b:Lvc/i;
+    iget-object v2, p1, Lcd/a;->b:Lvc/h;
 
     .line 11
-    iget-object v2, v2, Lvc/i;->c:Lcom/supercell/id/model/ProfileImage;
+    iget-object v2, v2, Lvc/h;->c:Lcom/supercell/id/model/ProfileImage;
 
     .line 12
-    invoke-static {v0, v2}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v2}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
@@ -97,16 +97,16 @@
     iget-object v0, p0, Lcd/a;->c:Lcom/supercell/id/model/IdRelationshipStatus$Acquaintance;
 
     .line 14
-    iget-object v0, v0, Lcom/supercell/id/model/IdRelationshipStatus$Acquaintance;->g:Ljava/util/Date;
+    iget-object v0, v0, Lcom/supercell/id/model/IdRelationshipStatus$Acquaintance;->h:Ljava/util/Date;
 
     .line 15
     iget-object p1, p1, Lcd/a;->c:Lcom/supercell/id/model/IdRelationshipStatus$Acquaintance;
 
     .line 16
-    iget-object p1, p1, Lcom/supercell/id/model/IdRelationshipStatus$Acquaintance;->g:Ljava/util/Date;
+    iget-object p1, p1, Lcom/supercell/id/model/IdRelationshipStatus$Acquaintance;->h:Ljava/util/Date;
 
     .line 17
-    invoke-static {v0, p1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, p1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -126,12 +126,12 @@
     return v0
 .end method
 
-.method public final d(Lae/b2;)Z
+.method public final d(Lae/a2;)Z
     .locals 1
 
     const-string v0, "other"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     instance-of v0, p1, Lcd/a;
@@ -141,19 +141,19 @@
     check-cast p1, Lcd/a;
 
     .line 2
-    iget-object p1, p1, Lcd/a;->b:Lvc/i;
+    iget-object p1, p1, Lcd/a;->b:Lvc/h;
 
     .line 3
-    iget-object p1, p1, Lvc/i;->a:Lcom/supercell/id/model/IdSocialAccount;
+    iget-object p1, p1, Lvc/h;->a:Lcom/supercell/id/model/IdSocialAccount;
 
     .line 4
-    iget-object v0, p0, Lcd/a;->b:Lvc/i;
+    iget-object v0, p0, Lcd/a;->b:Lvc/h;
 
     .line 5
-    iget-object v0, v0, Lvc/i;->a:Lcom/supercell/id/model/IdSocialAccount;
+    iget-object v0, v0, Lvc/h;->a:Lcom/supercell/id/model/IdSocialAccount;
 
     .line 6
-    invoke-static {p1, v0}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {p1, v0}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -181,11 +181,11 @@
 
     check-cast p1, Lcd/a;
 
-    iget-object v0, p0, Lcd/a;->b:Lvc/i;
+    iget-object v0, p0, Lcd/a;->b:Lvc/h;
 
-    iget-object v1, p1, Lcd/a;->b:Lvc/i;
+    iget-object v1, p1, Lcd/a;->b:Lvc/h;
 
-    invoke-static {v0, v1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
@@ -195,7 +195,7 @@
 
     iget-object p1, p1, Lcd/a;->c:Lcom/supercell/id/model/IdRelationshipStatus$Acquaintance;
 
-    invoke-static {v0, p1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, p1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -218,13 +218,13 @@
 .method public final hashCode()I
     .locals 3
 
-    iget-object v0, p0, Lcd/a;->b:Lvc/i;
+    iget-object v0, p0, Lcd/a;->b:Lvc/h;
 
     const/4 v1, 0x0
 
     if-eqz v0, :cond_0
 
-    invoke-virtual {v0}, Lvc/i;->hashCode()I
+    invoke-virtual {v0}, Lvc/h;->hashCode()I
 
     move-result v0
 
@@ -261,7 +261,7 @@
     move-result-object v0
 
     .line 2
-    iget-object v1, p0, Lcd/a;->b:Lvc/i;
+    iget-object v1, p0, Lcd/a;->b:Lvc/h;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 

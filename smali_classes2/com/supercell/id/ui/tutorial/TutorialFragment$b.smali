@@ -1,5 +1,5 @@
 .class public final Lcom/supercell/id/ui/tutorial/TutorialFragment$b;
-.super Lwc/a1;
+.super Lwc/b1;
 .source "TutorialFragment.kt"
 
 
@@ -15,7 +15,7 @@
 
 
 # instance fields
-.field public n0:Ljava/util/HashMap;
+.field public o0:Ljava/util/HashMap;
 
 
 # direct methods
@@ -46,7 +46,7 @@
 
     aput-object v1, v0, v2
 
-    invoke-static {v0}, Lcom/helpshift/util/r;->f([Ljava/lang/Object;)Ljava/util/Set;
+    invoke-static {v0}, La5/u;->g([Ljava/lang/Object;)Ljava/util/Set;
 
     return-void
 .end method
@@ -54,7 +54,7 @@
 .method public constructor <init>()V
     .locals 0
 
-    invoke-direct {p0}, Lwc/a1;-><init>()V
+    invoke-direct {p0}, Lwc/b1;-><init>()V
 
     return-void
 .end method
@@ -64,7 +64,7 @@
 .method public final N0()V
     .locals 1
 
-    iget-object v0, p0, Lcom/supercell/id/ui/tutorial/TutorialFragment$b;->n0:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/supercell/id/ui/tutorial/TutorialFragment$b;->o0:Ljava/util/HashMap;
 
     if-eqz v0, :cond_0
 
@@ -79,7 +79,7 @@
 
     const-string p3, "inflater"
 
-    invoke-static {p1, p3}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p3}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     sget p3, Lcom/supercell/id/R$layout;->fragment_tutorial_navigation:I
 
@@ -95,7 +95,7 @@
 .method public final synthetic a0()V
     .locals 0
 
-    invoke-super {p0}, Lwc/a1;->a0()V
+    invoke-super {p0}, Lwc/b1;->a0()V
 
     invoke-virtual {p0}, Lcom/supercell/id/ui/tutorial/TutorialFragment$b;->N0()V
 
@@ -135,7 +135,7 @@
 
     const-string v0, "view"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     invoke-virtual {p0}, Lcom/supercell/id/ui/tutorial/TutorialFragment$b;->h1()Landroid/view/View;
@@ -188,15 +188,15 @@
 
     aput-object v2, v0, v1
 
-    invoke-static {v0}, Lcom/android/billingclient/api/z;->k([Ljava/lang/Object;)Ljava/util/List;
+    invoke-static {v0}, Lcom/android/billingclient/api/y;->f([Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object v0
 
     .line 4
-    iput-object v0, p0, Lwc/a1;->l0:Ljava/util/Collection;
+    iput-object v0, p0, Lwc/b1;->m0:Ljava/util/Collection;
 
     .line 5
-    invoke-super {p0, p1, p2}, Lwc/a1;->k0(Landroid/view/View;Landroid/os/Bundle;)V
+    invoke-super {p0, p1, p2}, Lwc/b1;->k0(Landroid/view/View;Landroid/os/Bundle;)V
 
     return-void
 .end method
@@ -204,7 +204,7 @@
 .method public final l1(I)Landroid/view/View;
     .locals 2
 
-    iget-object v0, p0, Lcom/supercell/id/ui/tutorial/TutorialFragment$b;->n0:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/supercell/id/ui/tutorial/TutorialFragment$b;->o0:Ljava/util/HashMap;
 
     if-nez v0, :cond_0
 
@@ -212,10 +212,10 @@
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    iput-object v0, p0, Lcom/supercell/id/ui/tutorial/TutorialFragment$b;->n0:Ljava/util/HashMap;
+    iput-object v0, p0, Lcom/supercell/id/ui/tutorial/TutorialFragment$b;->o0:Ljava/util/HashMap;
 
     :cond_0
-    iget-object v0, p0, Lcom/supercell/id/ui/tutorial/TutorialFragment$b;->n0:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/supercell/id/ui/tutorial/TutorialFragment$b;->o0:Ljava/util/HashMap;
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
@@ -230,7 +230,7 @@
     if-nez v0, :cond_2
 
     .line 1
-    iget-object v0, p0, Landroidx/fragment/app/Fragment;->M:Landroid/view/View;
+    iget-object v0, p0, Landroidx/fragment/app/Fragment;->N:Landroid/view/View;
 
     if-nez v0, :cond_1
 
@@ -244,7 +244,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/supercell/id/ui/tutorial/TutorialFragment$b;->n0:Ljava/util/HashMap;
+    iget-object v1, p0, Lcom/supercell/id/ui/tutorial/TutorialFragment$b;->o0:Ljava/util/HashMap;
 
     invoke-static {p1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 

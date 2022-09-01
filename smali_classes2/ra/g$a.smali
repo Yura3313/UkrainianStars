@@ -17,7 +17,7 @@
 # instance fields
 .field public final A:Lcom/helpshift/views/HSButton;
 
-.field public final B:Lcom/helpshift/views/HSTextView;
+.field public final B:Lcom/helpshift/views/HSButton;
 
 .field public final C:Lcom/helpshift/views/HSTextView;
 
@@ -25,11 +25,11 @@
 
 .field public final E:Lcom/helpshift/views/HSTextView;
 
-.field public final F:Landroid/widget/LinearLayout;
+.field public final F:Lcom/helpshift/views/HSTextView;
 
-.field public final y:Lcom/helpshift/support/widget/AdminCSATBotView;
+.field public final G:Landroid/widget/LinearLayout;
 
-.field public final z:Lcom/helpshift/views/HSButton;
+.field public final z:Lcom/helpshift/support/widget/AdminCSATBotView;
 
 
 # direct methods
@@ -48,7 +48,7 @@
 
     check-cast v0, Lcom/helpshift/support/widget/AdminCSATBotView;
 
-    iput-object v0, p0, Lra/g$a;->y:Lcom/helpshift/support/widget/AdminCSATBotView;
+    iput-object v0, p0, Lra/g$a;->z:Lcom/helpshift/support/widget/AdminCSATBotView;
 
     .line 3
     sget v0, Lcom/helpshift/R$id;->hs__csat_new_conversation_btn:I
@@ -59,7 +59,7 @@
 
     check-cast v0, Lcom/helpshift/views/HSButton;
 
-    iput-object v0, p0, Lra/g$a;->z:Lcom/helpshift/views/HSButton;
+    iput-object v0, p0, Lra/g$a;->A:Lcom/helpshift/views/HSButton;
 
     .line 4
     sget v0, Lcom/helpshift/R$id;->csat_sendfeedback_btn:I
@@ -70,7 +70,7 @@
 
     check-cast v0, Lcom/helpshift/views/HSButton;
 
-    iput-object v0, p0, Lra/g$a;->A:Lcom/helpshift/views/HSButton;
+    iput-object v0, p0, Lra/g$a;->B:Lcom/helpshift/views/HSButton;
 
     .line 5
     sget v1, Lcom/helpshift/R$id;->csat_bot_message:I
@@ -81,7 +81,7 @@
 
     check-cast v1, Lcom/helpshift/views/HSTextView;
 
-    iput-object v1, p0, Lra/g$a;->B:Lcom/helpshift/views/HSTextView;
+    iput-object v1, p0, Lra/g$a;->C:Lcom/helpshift/views/HSTextView;
 
     .line 6
     sget v1, Lcom/helpshift/R$id;->csat_bot_dislike_msg:I
@@ -92,7 +92,7 @@
 
     check-cast v1, Lcom/helpshift/views/HSTextView;
 
-    iput-object v1, p0, Lra/g$a;->C:Lcom/helpshift/views/HSTextView;
+    iput-object v1, p0, Lra/g$a;->D:Lcom/helpshift/views/HSTextView;
 
     .line 7
     sget v1, Lcom/helpshift/R$id;->csat_bot_like_msg:I
@@ -103,7 +103,7 @@
 
     check-cast v1, Lcom/helpshift/views/HSTextView;
 
-    iput-object v1, p0, Lra/g$a;->D:Lcom/helpshift/views/HSTextView;
+    iput-object v1, p0, Lra/g$a;->E:Lcom/helpshift/views/HSTextView;
 
     .line 8
     sget v1, Lcom/helpshift/R$id;->csat_selected_rating_msg:I
@@ -114,7 +114,7 @@
 
     check-cast v1, Lcom/helpshift/views/HSTextView;
 
-    iput-object v1, p0, Lra/g$a;->E:Lcom/helpshift/views/HSTextView;
+    iput-object v1, p0, Lra/g$a;->F:Lcom/helpshift/views/HSTextView;
 
     .line 9
     sget v1, Lcom/helpshift/R$id;->csat_bottom_separator:I
@@ -125,7 +125,7 @@
 
     check-cast p2, Landroid/widget/LinearLayout;
 
-    iput-object p2, p0, Lra/g$a;->F:Landroid/widget/LinearLayout;
+    iput-object p2, p0, Lra/g$a;->G:Landroid/widget/LinearLayout;
 
     .line 10
     iget-object p2, p1, Lra/g;->c:Landroid/content/Context;
@@ -152,7 +152,7 @@
     const/high16 v1, 0x3f800000    # 1.0f
 
     .line 13
-    invoke-static {p2, v1}, Lcom/helpshift/util/g0;->a(Landroid/content/Context;F)F
+    invoke-static {p2, v1}, Lcom/helpshift/util/e0;->a(Landroid/content/Context;F)F
 
     move-result p2
 
@@ -164,7 +164,7 @@
     .line 15
     sget v3, Lcom/helpshift/R$attr;->colorAccent:I
 
-    invoke-static {v1, v3}, Lcom/helpshift/util/g0;->b(Landroid/content/Context;I)I
+    invoke-static {v1, v3}, Lcom/helpshift/util/e0;->b(Landroid/content/Context;I)I
 
     move-result v1
 
@@ -176,7 +176,7 @@
     .line 17
     sget v1, Lcom/helpshift/R$attr;->hs__footerPromptBackground:I
 
-    invoke-static {p2, v1}, Lcom/helpshift/util/g0;->b(Landroid/content/Context;I)I
+    invoke-static {p2, v1}, Lcom/helpshift/util/e0;->b(Landroid/content/Context;I)I
 
     move-result p2
 
@@ -188,7 +188,7 @@
     const/high16 v1, 0x40800000    # 4.0f
 
     .line 19
-    invoke-static {p2, v1}, Lcom/helpshift/util/g0;->a(Landroid/content/Context;F)F
+    invoke-static {p2, v1}, Lcom/helpshift/util/e0;->a(Landroid/content/Context;F)F
 
     move-result p2
 
@@ -200,7 +200,7 @@
     const/high16 p2, 0x40c00000    # 6.0f
 
     .line 21
-    invoke-static {p1, p2}, Lcom/helpshift/util/g0;->a(Landroid/content/Context;F)F
+    invoke-static {p1, p2}, Lcom/helpshift/util/e0;->a(Landroid/content/Context;F)F
 
     move-result p1
 

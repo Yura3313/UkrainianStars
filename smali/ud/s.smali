@@ -1,82 +1,98 @@
-.class public final Lud/s;
+.class public final synthetic Lud/s;
 .super Lse/h;
-.source "AssetCache.kt"
+.source "RemoteAssetClient.kt"
 
 # interfaces
-.implements Lre/a;
+.implements Lre/l;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Lse/h;",
-        "Lre/a<",
-        "Ljava/io/FileInputStream;",
-        ">;"
+        "Lre/l<",
+        "Ljava/io/InputStream;",
+        "[B>;"
     }
 .end annotation
 
 
-# instance fields
-.field public final synthetic f:Lud/q$c;
+# static fields
+.field public static final h:Lud/s;
 
 
 # direct methods
-.method public constructor <init>(Lud/q$c;)V
-    .locals 0
+.method public static constructor <clinit>()V
+    .locals 1
 
-    iput-object p1, p0, Lud/s;->f:Lud/q$c;
+    new-instance v0, Lud/s;
 
-    const/4 p1, 0x0
+    invoke-direct {v0}, Lud/s;-><init>()V
 
-    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
+    sput-object v0, Lud/s;->h:Lud/s;
+
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .locals 1
+
+    const/4 v0, 0x1
+
+    invoke-direct {p0, v0}, Lse/h;-><init>(I)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final invoke()Ljava/lang/Object;
+.method public final getName()Ljava/lang/String;
+    .locals 1
+
+    const-string v0, "readBytes"
+
+    return-object v0
+.end method
+
+.method public final getOwner()Lwe/d;
     .locals 3
 
-    .line 1
-    iget-object v0, p0, Lud/s;->f:Lud/q$c;
+    const-class v0, Lpe/a;
 
-    iget-object v1, v0, Lud/q$c;->f:Lud/q;
+    sget-object v1, Lse/s;->a:Lse/t;
 
-    iget-object v0, v0, Lud/q$c;->h:Ljava/lang/String;
+    const-string v2, "supercellId_release"
 
-    sget-object v2, Lud/q;->g:Lye/e;
-
-    .line 2
-    invoke-virtual {v1, v0}, Lud/q;->a(Ljava/lang/String;)Ljava/io/File;
+    invoke-virtual {v1, v0, v2}, Lse/t;->a(Ljava/lang/Class;Ljava/lang/String;)Lwe/d;
 
     move-result-object v0
 
-    const/4 v1, 0x0
+    return-object v0
+.end method
 
-    if-eqz v0, :cond_1
+.method public final getSignature()Ljava/lang/String;
+    .locals 1
+
+    const-string v0, "readBytes(Ljava/io/InputStream;)[B"
+
+    return-object v0
+.end method
+
+.method public final invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 1
+
+    .line 1
+    check-cast p1, Ljava/io/InputStream;
+
+    const-string v0, "p1"
+
+    .line 2
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 3
-    invoke-virtual {v0}, Ljava/io/File;->isFile()Z
+    invoke-static {p1}, Lpe/a;->d(Ljava/io/InputStream;)[B
 
-    move-result v2
+    move-result-object p1
 
-    if-nez v2, :cond_0
-
-    goto :goto_0
-
-    .line 4
-    :cond_0
-    new-instance v1, Ljava/io/FileInputStream;
-
-    invoke-direct {v1, v0}, Ljava/io/FileInputStream;-><init>(Ljava/io/File;)V
-
-    invoke-static {v1, v0}, Lio/sentry/instrumentation/file/SentryFileInputStream$Factory;->create(Ljava/io/FileInputStream;Ljava/io/File;)Ljava/io/FileInputStream;
-
-    move-result-object v1
-
-    :cond_1
-    :goto_0
-    return-object v1
+    return-object p1
 .end method

@@ -1,9 +1,9 @@
 .class public final Ls3/d;
-.super Lb2/a0;
+.super Lb2/z;
 
 
 # instance fields
-.field public final f:Lk3/xf;
+.field public final g:Lk3/yf;
 
 
 # direct methods
@@ -11,14 +11,14 @@
     .locals 1
 
     .line 1
-    invoke-direct {p0}, Lb2/a0;-><init>()V
+    invoke-direct {p0}, Lb2/z;-><init>()V
 
     .line 2
-    new-instance v0, Lk3/xf;
+    new-instance v0, Lk3/yf;
 
-    invoke-direct {v0}, Lk3/xf;-><init>()V
+    invoke-direct {v0}, Lk3/yf;-><init>()V
 
-    iput-object v0, p0, Ls3/d;->f:Lk3/xf;
+    iput-object v0, p0, Ls3/d;->g:Lk3/yf;
 
     return-void
 .end method
@@ -31,10 +31,10 @@
     if-eq p2, p1, :cond_3
 
     .line 1
-    iget-object v0, p0, Ls3/d;->f:Lk3/xf;
+    iget-object v0, p0, Ls3/d;->g:Lk3/yf;
 
     .line 2
-    iget-object v1, v0, Lk3/xf;->g:Ljava/lang/Object;
+    iget-object v1, v0, Lk3/yf;->h:Ljava/lang/Object;
 
     check-cast v1, Ljava/lang/ref/ReferenceQueue;
 
@@ -46,14 +46,14 @@
     if-eqz v1, :cond_0
 
     .line 3
-    iget-object v2, v0, Lk3/xf;->f:Ljava/lang/Object;
+    iget-object v2, v0, Lk3/yf;->g:Ljava/lang/Object;
 
     check-cast v2, Ljava/util/concurrent/ConcurrentHashMap;
 
     invoke-virtual {v2, v1}, Ljava/util/concurrent/ConcurrentHashMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 4
-    iget-object v1, v0, Lk3/xf;->g:Ljava/lang/Object;
+    iget-object v1, v0, Lk3/yf;->h:Ljava/lang/Object;
 
     check-cast v1, Ljava/lang/ref/ReferenceQueue;
 
@@ -72,7 +72,7 @@
     invoke-direct {v1, p1, v2}, Ls3/c;-><init>(Ljava/lang/Throwable;Ljava/lang/ref/ReferenceQueue;)V
 
     .line 6
-    iget-object v2, v0, Lk3/xf;->f:Ljava/lang/Object;
+    iget-object v2, v0, Lk3/yf;->g:Ljava/lang/Object;
 
     check-cast v2, Ljava/util/concurrent/ConcurrentHashMap;
 
@@ -95,13 +95,13 @@
     invoke-direct {v1, v2}, Ljava/util/Vector;-><init>(I)V
 
     .line 8
-    iget-object v2, v0, Lk3/xf;->f:Ljava/lang/Object;
+    iget-object v2, v0, Lk3/yf;->g:Ljava/lang/Object;
 
     check-cast v2, Ljava/util/concurrent/ConcurrentHashMap;
 
     new-instance v3, Ls3/c;
 
-    iget-object v0, v0, Lk3/xf;->g:Ljava/lang/Object;
+    iget-object v0, v0, Lk3/yf;->h:Ljava/lang/Object;
 
     check-cast v0, Ljava/lang/ref/ReferenceQueue;
 

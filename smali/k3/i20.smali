@@ -1,9 +1,9 @@
-.class public final Lk3/i20;
+.class public final synthetic Lk3/i20;
 .super Ljava/lang/Object;
-.source "com.google.android.gms:play-services-gass@@19.3.0"
+.source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lk3/xr0;
+.implements Lk3/pl0;
 
 
 # static fields
@@ -33,66 +33,25 @@
 
 
 # virtual methods
-.method public final a(I)Z
-    .locals 6
+.method public final a(Ljava/lang/Object;)Lk3/hm0;
+    .locals 2
+
+    .line 1
+    check-cast p1, Ljava/util/concurrent/TimeoutException;
+
+    .line 2
+    new-instance p1, Lcom/google/android/gms/internal/ads/zzcmt;
 
     const/4 v0, 0x5
 
-    const/4 v1, 0x4
+    const-string v1, "Timed out waiting for ad response."
 
-    const/4 v2, 0x3
+    invoke-direct {p1, v0, v1}, Lcom/google/android/gms/internal/ads/zzcmt;-><init>(ILjava/lang/String;)V
 
-    const/4 v3, 0x2
+    .line 3
+    new-instance v0, Lk3/fm0$a;
 
-    const/4 v4, 0x1
+    invoke-direct {v0, p1}, Lk3/fm0$a;-><init>(Ljava/lang/Throwable;)V
 
-    const/4 v5, 0x0
-
-    if-eqz p1, :cond_4
-
-    if-eq p1, v4, :cond_3
-
-    if-eq p1, v3, :cond_2
-
-    if-eq p1, v2, :cond_1
-
-    if-eq p1, v1, :cond_5
-
-    if-eq p1, v0, :cond_0
-
-    const/4 v0, 0x0
-
-    goto :goto_0
-
-    :cond_0
-    const/4 v0, 0x6
-
-    goto :goto_0
-
-    :cond_1
-    const/4 v0, 0x4
-
-    goto :goto_0
-
-    :cond_2
-    const/4 v0, 0x3
-
-    goto :goto_0
-
-    :cond_3
-    const/4 v0, 0x2
-
-    goto :goto_0
-
-    :cond_4
-    const/4 v0, 0x1
-
-    :cond_5
-    :goto_0
-    if-eqz v0, :cond_6
-
-    return v4
-
-    :cond_6
-    return v5
+    return-object v0
 .end method

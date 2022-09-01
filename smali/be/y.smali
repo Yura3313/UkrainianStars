@@ -1,5 +1,5 @@
 .class public final Lbe/y;
-.super Lbe/v0;
+.super Lbe/x0;
 .source "ProfileStorage.kt"
 
 
@@ -13,7 +13,7 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lbe/v0<",
+        "Lbe/x0<",
         "Lbe/w;",
         ">;"
     }
@@ -21,7 +21,18 @@
 
 
 # static fields
-.field public static final f:Lbe/y$b;
+.field public static final f:Ljava/util/concurrent/ConcurrentHashMap;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/concurrent/ConcurrentHashMap<",
+            "Ljava/lang/String;",
+            "Lvc/s;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public static final g:Lbe/y$b;
 
 
 # instance fields
@@ -38,7 +49,13 @@
 
     invoke-direct {v0}, Lbe/y$b;-><init>()V
 
-    sput-object v0, Lbe/y;->f:Lbe/y$b;
+    sput-object v0, Lbe/y;->g:Lbe/y$b;
+
+    new-instance v0, Ljava/util/concurrent/ConcurrentHashMap;
+
+    invoke-direct {v0}, Ljava/util/concurrent/ConcurrentHashMap;-><init>()V
+
+    sput-object v0, Lbe/y;->f:Ljava/util/concurrent/ConcurrentHashMap;
 
     return-void
 .end method
@@ -48,10 +65,10 @@
 
     const-string v0, "context"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
-    invoke-direct {p0}, Lbe/v0;-><init>()V
+    invoke-direct {p0}, Lbe/x0;-><init>()V
 
     iput-object p1, p0, Lbe/y;->d:Landroid/content/Context;
 
@@ -84,30 +101,30 @@
 
     .line 3
     :cond_2
-    new-instance p1, Lbe/e0;
+    new-instance p1, Lbe/g0;
 
-    invoke-direct {p1, p0}, Lbe/e0;-><init>(Lbe/y;)V
+    invoke-direct {p1, p0}, Lbe/g0;-><init>(Lbe/y;)V
 
-    invoke-static {p1}, Lae/u1;->o(Lre/a;)Lze/e0;
+    invoke-static {p1}, Lae/t1;->n(Lre/a;)Lze/f0;
 
     :goto_2
     return-void
 .end method
 
-.method public static final f(Lbe/y;Ljava/lang/String;)Lze/e0;
+.method public static final f(Lbe/y;Ljava/lang/String;)Lze/f0;
     .locals 3
 
     .line 1
     invoke-virtual {p0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 2
-    new-instance v0, Lse/q;
+    new-instance v0, Lse/r;
 
-    invoke-direct {v0}, Lse/q;-><init>()V
+    invoke-direct {v0}, Lse/r;-><init>()V
 
     const/4 v1, 0x0
 
-    iput-object v1, v0, Lse/q;->f:Ljava/lang/Object;
+    iput-object v1, v0, Lse/r;->g:Ljava/lang/Object;
 
     .line 3
     sget-object v1, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
@@ -120,30 +137,30 @@
     iget-object v1, v1, Lae/u;->o:Lrc/d0;
 
     .line 5
-    invoke-virtual {v1, p1}, Lrc/d0;->m(Ljava/lang/String;)Lze/e0;
+    invoke-virtual {v1, p1}, Lrc/d0;->m(Ljava/lang/String;)Lze/f0;
 
     move-result-object v1
 
     .line 6
-    new-instance v2, Lbe/c0;
+    new-instance v2, Lbe/e0;
 
-    invoke-direct {v2, p0, p1, v0}, Lbe/c0;-><init>(Lbe/y;Ljava/lang/String;Lse/q;)V
+    invoke-direct {v2, p0, p1, v0}, Lbe/e0;-><init>(Lbe/y;Ljava/lang/String;Lse/r;)V
 
-    invoke-static {v1, v2}, Lae/u1;->q(Lze/e0;Lre/l;)Lze/e0;
+    invoke-static {v1, v2}, Lae/t1;->p(Lze/f0;Lre/l;)Lze/f0;
 
     move-result-object p0
 
     .line 7
-    new-instance p1, Lbe/d0;
+    new-instance p1, Lbe/f0;
 
-    invoke-direct {p1, v0, v1}, Lbe/d0;-><init>(Lse/q;Lze/e0;)V
+    invoke-direct {p1, v0, v1}, Lbe/f0;-><init>(Lse/r;Lze/f0;)V
 
-    invoke-static {p0, p1}, Lae/u1;->h(Lze/e0;Lre/l;)Lze/e0;
+    invoke-static {p0, p1}, Lae/t1;->g(Lze/f0;Lre/l;)Lze/f0;
 
     return-object p0
 .end method
 
-.method public static j(Lbe/y;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/Boolean;I)Lze/e0;
+.method public static j(Lbe/y;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/Boolean;I)Lze/f0;
     .locals 16
 
     move-object/from16 v0, p0
@@ -224,7 +241,7 @@
 
     invoke-direct/range {v3 .. v12}, Lbe/y$a$f;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/Boolean;I)V
 
-    invoke-virtual {v0, v15}, Lbe/v0;->a(Lbe/a;)V
+    invoke-virtual {v0, v15}, Lbe/x0;->a(Lbe/a;)V
 
     .line 3
     sget-object v3, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
@@ -237,23 +254,23 @@
     iget-object v3, v3, Lae/u;->o:Lrc/d0;
 
     .line 5
-    invoke-virtual {v3, v1, v13, v14, v2}, Lrc/d0;->s(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/Boolean;)Lze/e0;
+    invoke-virtual {v3, v1, v13, v14, v2}, Lrc/d0;->s(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/Boolean;)Lze/f0;
 
     move-result-object v1
 
     .line 6
-    new-instance v2, Lbe/g0;
+    new-instance v2, Lbe/i0;
 
-    invoke-direct {v2, v0}, Lbe/g0;-><init>(Lbe/y;)V
+    invoke-direct {v2, v0}, Lbe/i0;-><init>(Lbe/y;)V
 
-    invoke-static {v1, v2}, Lae/u1;->l(Lze/e0;Lre/l;)Lze/e0;
+    invoke-static {v1, v2}, Lae/t1;->k(Lze/f0;Lre/l;)Lze/f0;
 
     .line 7
-    new-instance v2, Lbe/h0;
+    new-instance v2, Lbe/j0;
 
-    invoke-direct {v2, v0}, Lbe/h0;-><init>(Lbe/y;)V
+    invoke-direct {v2, v0}, Lbe/j0;-><init>(Lbe/y;)V
 
-    invoke-static {v1, v2}, Lae/u1;->c(Lze/e0;Lre/l;)Lze/e0;
+    invoke-static {v1, v2}, Lae/t1;->b(Lze/f0;Lre/l;)Lze/f0;
 
     return-object v1
 .end method
@@ -292,7 +309,7 @@
 
     .line 4
     :cond_1
-    invoke-static {p1, v0}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {p1, v0}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -332,38 +349,38 @@
 
     .line 6
     :cond_5
-    new-instance p1, Lbe/f0;
+    new-instance p1, Lbe/h0;
 
-    invoke-direct {p1, p0, v0}, Lbe/f0;-><init>(Lbe/y;Lcom/supercell/id/model/IdProfile;)V
+    invoke-direct {p1, p0, v0}, Lbe/h0;-><init>(Lbe/y;Lcom/supercell/id/model/IdProfile;)V
 
-    invoke-static {p1}, Lae/u1;->o(Lre/a;)Lze/e0;
+    invoke-static {p1}, Lae/t1;->n(Lre/a;)Lze/f0;
 
     :cond_6
     :goto_3
     return-void
 .end method
 
-.method public final g(Ljava/lang/String;)Lze/e0;
+.method public final g(Ljava/lang/String;)Lze/f0;
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "(",
             "Ljava/lang/String;",
             ")",
-            "Lze/e0<",
-            "Lie/h;",
+            "Lze/f0<",
+            "Lie/i;",
             ">;"
         }
     .end annotation
 
     const-string v0, "imageId"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     sget-object v0, Lbe/y$a$a;->a:Lbe/y$a$a;
 
-    invoke-virtual {p0, v0}, Lbe/v0;->a(Lbe/a;)V
+    invoke-virtual {p0, v0}, Lbe/x0;->a(Lbe/a;)V
 
     .line 2
     sget-object v0, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
@@ -378,7 +395,7 @@
     const/4 v1, 0x0
 
     .line 4
-    invoke-virtual {v0, p1, v1}, Lrc/d0;->h(Ljava/lang/String;Z)Lze/e0;
+    invoke-virtual {v0, p1, v1}, Lrc/d0;->h(Ljava/lang/String;Z)Lze/f0;
 
     move-result-object p1
 
@@ -387,14 +404,14 @@
 
     invoke-direct {v0, p0}, Lbe/y$c;-><init>(Lbe/y;)V
 
-    invoke-static {p1, v0}, Lae/u1;->p(Lze/e0;Lre/l;)Lze/e0;
+    invoke-static {p1, v0}, Lae/t1;->o(Lze/f0;Lre/l;)Lze/f0;
 
     move-result-object p1
 
     .line 6
-    sget-object v0, Lbe/y$d;->f:Lbe/y$d;
+    sget-object v0, Lbe/y$d;->g:Lbe/y$d;
 
-    invoke-static {p1, v0}, Lae/u1;->p(Lze/e0;Lre/l;)Lze/e0;
+    invoke-static {p1, v0}, Lae/t1;->o(Lze/f0;Lre/l;)Lze/f0;
 
     move-result-object p1
 
@@ -403,12 +420,12 @@
 
     invoke-direct {v0, p0}, Lbe/y$e;-><init>(Lbe/y;)V
 
-    invoke-static {p1, v0}, Lae/u1;->c(Lze/e0;Lre/l;)Lze/e0;
+    invoke-static {p1, v0}, Lae/t1;->b(Lze/f0;Lre/l;)Lze/f0;
 
     return-object p1
 .end method
 
-.method public final h(Ljava/lang/String;Ljava/lang/String;Z)Lze/e0;
+.method public final h(Ljava/lang/String;Ljava/lang/String;Z)Lze/f0;
     .locals 14
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -416,8 +433,8 @@
             "Ljava/lang/String;",
             "Ljava/lang/String;",
             "Z)",
-            "Lze/e0<",
-            "Lie/h;",
+            "Lze/f0<",
+            "Lie/i;",
             ">;"
         }
     .end annotation
@@ -428,13 +445,13 @@
 
     const-string v1, "imageId"
 
-    invoke-static {p1, v1}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v1}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v1, "imageUrl"
 
     move-object/from16 v6, p2
 
-    invoke-static {v6, v1}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v6, v1}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     if-eqz p3, :cond_0
 
@@ -463,7 +480,7 @@
 
     invoke-direct/range {v1 .. v10}, Lbe/y$a$f;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/Boolean;I)V
 
-    invoke-virtual {p0, v12}, Lbe/v0;->a(Lbe/a;)V
+    invoke-virtual {p0, v12}, Lbe/x0;->a(Lbe/a;)V
 
     goto :goto_0
 
@@ -503,7 +520,7 @@
 
     invoke-direct/range {v1 .. v10}, Lbe/y$a$f;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Boolean;Ljava/lang/Boolean;I)V
 
-    invoke-virtual {p0, v12}, Lbe/v0;->a(Lbe/a;)V
+    invoke-virtual {p0, v12}, Lbe/x0;->a(Lbe/a;)V
 
     .line 3
     :goto_0
@@ -519,7 +536,7 @@
     const/4 v2, 0x1
 
     .line 5
-    invoke-virtual {v1, p1, v2}, Lrc/d0;->h(Ljava/lang/String;Z)Lze/e0;
+    invoke-virtual {v1, p1, v2}, Lrc/d0;->h(Ljava/lang/String;Z)Lze/f0;
 
     move-result-object v1
 
@@ -528,14 +545,14 @@
 
     invoke-direct {v2, p0}, Lbe/y$f;-><init>(Lbe/y;)V
 
-    invoke-static {v1, v2}, Lae/u1;->p(Lze/e0;Lre/l;)Lze/e0;
+    invoke-static {v1, v2}, Lae/t1;->o(Lze/f0;Lre/l;)Lze/f0;
 
     move-result-object v1
 
     .line 7
-    sget-object v2, Lbe/y$g;->f:Lbe/y$g;
+    sget-object v2, Lbe/y$g;->g:Lbe/y$g;
 
-    invoke-static {v1, v2}, Lae/u1;->p(Lze/e0;Lre/l;)Lze/e0;
+    invoke-static {v1, v2}, Lae/t1;->o(Lze/f0;Lre/l;)Lze/f0;
 
     move-result-object v1
 
@@ -544,17 +561,17 @@
 
     invoke-direct {v2, p0}, Lbe/y$h;-><init>(Lbe/y;)V
 
-    invoke-static {v1, v2}, Lae/u1;->c(Lze/e0;Lre/l;)Lze/e0;
+    invoke-static {v1, v2}, Lae/t1;->b(Lze/f0;Lre/l;)Lze/f0;
 
     return-object v1
 .end method
 
-.method public final i()Lze/e0;
+.method public final i()Lze/f0;
     .locals 2
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "()",
-            "Lze/e0<",
+            "Lze/f0<",
             "Lcom/supercell/id/model/IdProfile;",
             ">;"
         }
@@ -571,7 +588,7 @@
     iget-object v0, v0, Lae/u;->o:Lrc/d0;
 
     .line 3
-    invoke-virtual {v0}, Lrc/d0;->k()Lze/e0;
+    invoke-virtual {v0}, Lrc/d0;->k()Lze/f0;
 
     move-result-object v0
 
@@ -580,7 +597,7 @@
 
     invoke-direct {v1, p0}, Lbe/y$i;-><init>(Lbe/y;)V
 
-    invoke-static {v0, v1}, Lae/u1;->l(Lze/e0;Lre/l;)Lze/e0;
+    invoke-static {v0, v1}, Lae/t1;->k(Lze/f0;Lre/l;)Lze/f0;
 
     return-object v0
 .end method

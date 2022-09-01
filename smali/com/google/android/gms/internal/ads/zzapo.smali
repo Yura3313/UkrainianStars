@@ -21,20 +21,20 @@
 
 
 # instance fields
-.field public final f:I
-
 .field public final g:I
 
 .field public final h:I
+
+.field public final i:I
 
 
 # direct methods
 .method public static constructor <clinit>()V
     .locals 1
 
-    new-instance v0, Lk3/z6;
+    new-instance v0, Lk3/a7;
 
-    invoke-direct {v0}, Lk3/z6;-><init>()V
+    invoke-direct {v0}, Lk3/a7;-><init>()V
 
     sput-object v0, Lcom/google/android/gms/internal/ads/zzapo;->CREATOR:Landroid/os/Parcelable$Creator;
 
@@ -48,13 +48,13 @@
     invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
 
     .line 2
-    iput p1, p0, Lcom/google/android/gms/internal/ads/zzapo;->f:I
+    iput p1, p0, Lcom/google/android/gms/internal/ads/zzapo;->g:I
 
     .line 3
-    iput p2, p0, Lcom/google/android/gms/internal/ads/zzapo;->g:I
+    iput p2, p0, Lcom/google/android/gms/internal/ads/zzapo;->h:I
 
     .line 4
-    iput p3, p0, Lcom/google/android/gms/internal/ads/zzapo;->h:I
+    iput p3, p0, Lcom/google/android/gms/internal/ads/zzapo;->i:I
 
     return-void
 .end method
@@ -80,21 +80,21 @@
     check-cast p1, Lcom/google/android/gms/internal/ads/zzapo;
 
     .line 3
+    iget v1, p1, Lcom/google/android/gms/internal/ads/zzapo;->i:I
+
+    iget v2, p0, Lcom/google/android/gms/internal/ads/zzapo;->i:I
+
+    if-ne v1, v2, :cond_1
+
     iget v1, p1, Lcom/google/android/gms/internal/ads/zzapo;->h:I
 
     iget v2, p0, Lcom/google/android/gms/internal/ads/zzapo;->h:I
 
     if-ne v1, v2, :cond_1
 
-    iget v1, p1, Lcom/google/android/gms/internal/ads/zzapo;->g:I
+    iget p1, p1, Lcom/google/android/gms/internal/ads/zzapo;->g:I
 
-    iget v2, p0, Lcom/google/android/gms/internal/ads/zzapo;->g:I
-
-    if-ne v1, v2, :cond_1
-
-    iget p1, p1, Lcom/google/android/gms/internal/ads/zzapo;->f:I
-
-    iget v1, p0, Lcom/google/android/gms/internal/ads/zzapo;->f:I
+    iget v1, p0, Lcom/google/android/gms/internal/ads/zzapo;->g:I
 
     if-ne p1, v1, :cond_1
 
@@ -114,19 +114,19 @@
     new-array v0, v0, [I
 
     .line 1
-    iget v1, p0, Lcom/google/android/gms/internal/ads/zzapo;->f:I
+    iget v1, p0, Lcom/google/android/gms/internal/ads/zzapo;->g:I
 
     const/4 v2, 0x0
 
     aput v1, v0, v2
 
-    iget v1, p0, Lcom/google/android/gms/internal/ads/zzapo;->g:I
+    iget v1, p0, Lcom/google/android/gms/internal/ads/zzapo;->h:I
 
     const/4 v2, 0x1
 
     aput v1, v0, v2
 
-    iget v1, p0, Lcom/google/android/gms/internal/ads/zzapo;->h:I
+    iget v1, p0, Lcom/google/android/gms/internal/ads/zzapo;->i:I
 
     const/4 v2, 0x2
 
@@ -143,11 +143,11 @@
 .method public final toString()Ljava/lang/String;
     .locals 5
 
-    iget v0, p0, Lcom/google/android/gms/internal/ads/zzapo;->f:I
+    iget v0, p0, Lcom/google/android/gms/internal/ads/zzapo;->g:I
 
-    iget v1, p0, Lcom/google/android/gms/internal/ads/zzapo;->g:I
+    iget v1, p0, Lcom/google/android/gms/internal/ads/zzapo;->h:I
 
-    iget v2, p0, Lcom/google/android/gms/internal/ads/zzapo;->h:I
+    iget v2, p0, Lcom/google/android/gms/internal/ads/zzapo;->i:I
 
     new-instance v3, Ljava/lang/StringBuilder;
 
@@ -185,7 +185,7 @@
     move-result v5
 
     .line 2
-    iget p2, p0, Lcom/google/android/gms/internal/ads/zzapo;->f:I
+    iget p2, p0, Lcom/google/android/gms/internal/ads/zzapo;->g:I
 
     const/4 v0, 0x1
 
@@ -198,7 +198,7 @@
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 5
-    iget p2, p0, Lcom/google/android/gms/internal/ads/zzapo;->g:I
+    iget p2, p0, Lcom/google/android/gms/internal/ads/zzapo;->h:I
 
     const/4 v0, 0x2
 
@@ -209,7 +209,7 @@
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 8
-    iget v3, p0, Lcom/google/android/gms/internal/ads/zzapo;->h:I
+    iget v3, p0, Lcom/google/android/gms/internal/ads/zzapo;->i:I
 
     const/4 v1, 0x3
 

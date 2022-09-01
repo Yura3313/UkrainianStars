@@ -1,142 +1,146 @@
 .class public final Ld2/z;
-.super Ljava/lang/Object;
+.super Lcom/google/android/gms/dynamic/RemoteCreator;
 .source "com.google.android.gms:play-services-base@@17.5.0"
-
-# interfaces
-.implements Landroid/os/Parcelable$Creator;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Ljava/lang/Object;",
-        "Landroid/os/Parcelable$Creator<",
-        "Lcom/google/android/gms/common/internal/zaw;",
+        "Lcom/google/android/gms/dynamic/RemoteCreator<",
+        "Lcom/google/android/gms/common/internal/zam;",
         ">;"
     }
 .end annotation
 
 
-# direct methods
-.method public constructor <init>()V
-    .locals 0
+# static fields
+.field public static final c:Ld2/z;
 
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+# direct methods
+.method public static constructor <clinit>()V
+    .locals 1
+
+    new-instance v0, Ld2/z;
+
+    invoke-direct {v0}, Ld2/z;-><init>()V
+
+    sput-object v0, Ld2/z;->c:Ld2/z;
 
     return-void
 .end method
 
+.method public constructor <init>()V
+    .locals 1
 
-# virtual methods
-.method public final createFromParcel(Landroid/os/Parcel;)Ljava/lang/Object;
-    .locals 8
+    const-string v0, "com.google.android.gms.common.ui.SignInButtonCreatorImpl"
 
-    .line 1
-    invoke-static {p1}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->x(Landroid/os/Parcel;)I
+    invoke-direct {p0, v0}, Lcom/google/android/gms/dynamic/RemoteCreator;-><init>(Ljava/lang/String;)V
 
-    move-result v0
-
-    const/4 v1, 0x0
-
-    const/4 v2, 0x0
-
-    move-object v4, v2
-
-    const/4 v2, 0x0
-
-    const/4 v3, 0x0
-
-    .line 2
-    :goto_0
-    invoke-virtual {p1}, Landroid/os/Parcel;->dataPosition()I
-
-    move-result v5
-
-    if-ge v5, v0, :cond_4
-
-    .line 3
-    invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
-
-    move-result v5
-
-    const v6, 0xffff
-
-    and-int/2addr v6, v5
-
-    const/4 v7, 0x1
-
-    if-eq v6, v7, :cond_3
-
-    const/4 v7, 0x2
-
-    if-eq v6, v7, :cond_2
-
-    const/4 v7, 0x3
-
-    if-eq v6, v7, :cond_1
-
-    const/4 v7, 0x4
-
-    if-eq v6, v7, :cond_0
-
-    .line 4
-    invoke-static {p1, v5}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->w(Landroid/os/Parcel;I)V
-
-    goto :goto_0
-
-    .line 5
-    :cond_0
-    sget-object v4, Lcom/google/android/gms/common/api/Scope;->CREATOR:Landroid/os/Parcelable$Creator;
-
-    .line 6
-    invoke-static {p1, v5, v4}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->l(Landroid/os/Parcel;ILandroid/os/Parcelable$Creator;)[Ljava/lang/Object;
-
-    move-result-object v4
-
-    check-cast v4, [Lcom/google/android/gms/common/api/Scope;
-
-    goto :goto_0
-
-    .line 7
-    :cond_1
-    invoke-static {p1, v5}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->r(Landroid/os/Parcel;I)I
-
-    move-result v3
-
-    goto :goto_0
-
-    .line 8
-    :cond_2
-    invoke-static {p1, v5}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->r(Landroid/os/Parcel;I)I
-
-    move-result v2
-
-    goto :goto_0
-
-    .line 9
-    :cond_3
-    invoke-static {p1, v5}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->r(Landroid/os/Parcel;I)I
-
-    move-result v1
-
-    goto :goto_0
-
-    .line 10
-    :cond_4
-    invoke-static {p1, v0}, Lcom/google/android/gms/common/internal/safeparcel/SafeParcelReader;->n(Landroid/os/Parcel;I)V
-
-    .line 11
-    new-instance p1, Lcom/google/android/gms/common/internal/zaw;
-
-    invoke-direct {p1, v1, v2, v3, v4}, Lcom/google/android/gms/common/internal/zaw;-><init>(III[Lcom/google/android/gms/common/api/Scope;)V
-
-    return-object p1
+    return-void
 .end method
 
-.method public final synthetic newArray(I)[Ljava/lang/Object;
-    .locals 0
+.method public static c(Landroid/content/Context;II)Landroid/view/View;
+    .locals 4
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Lcom/google/android/gms/dynamic/RemoteCreator$RemoteCreatorException;
+        }
+    .end annotation
 
-    new-array p1, p1, [Lcom/google/android/gms/common/internal/zaw;
+    .line 1
+    sget-object v0, Ld2/z;->c:Ld2/z;
+
+    .line 2
+    :try_start_0
+    new-instance v1, Lcom/google/android/gms/common/internal/zaw;
+
+    invoke-direct {v1, p1, p2}, Lcom/google/android/gms/common/internal/zaw;-><init>(II)V
+
+    .line 3
+    new-instance v2, Lcom/google/android/gms/dynamic/ObjectWrapper;
+
+    invoke-direct {v2, p0}, Lcom/google/android/gms/dynamic/ObjectWrapper;-><init>(Ljava/lang/Object;)V
+
+    .line 4
+    invoke-virtual {v0, p0}, Lcom/google/android/gms/dynamic/RemoteCreator;->b(Landroid/content/Context;)Ljava/lang/Object;
+
+    move-result-object p0
+
+    check-cast p0, Lcom/google/android/gms/common/internal/zam;
+
+    invoke-interface {p0, v2, v1}, Lcom/google/android/gms/common/internal/zam;->p6(Lcom/google/android/gms/dynamic/IObjectWrapper;Lcom/google/android/gms/common/internal/zaw;)Lcom/google/android/gms/dynamic/IObjectWrapper;
+
+    move-result-object p0
+
+    .line 5
+    invoke-static {p0}, Lcom/google/android/gms/dynamic/ObjectWrapper;->c2(Lcom/google/android/gms/dynamic/IObjectWrapper;)Ljava/lang/Object;
+
+    move-result-object p0
+
+    check-cast p0, Landroid/view/View;
+    :try_end_0
+    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
+
+    return-object p0
+
+    :catch_0
+    move-exception p0
+
+    .line 6
+    new-instance v0, Lcom/google/android/gms/dynamic/RemoteCreator$RemoteCreatorException;
+
+    const/16 v1, 0x40
+
+    const-string v2, "Could not get button with size "
+
+    const-string v3, " and color "
+
+    .line 7
+    invoke-static {v1, v2, p1, v3, p2}, Le2/a;->a(ILjava/lang/String;ILjava/lang/String;I)Ljava/lang/String;
+
+    move-result-object p1
+
+    .line 8
+    invoke-direct {v0, p1, p0}, Lcom/google/android/gms/dynamic/RemoteCreator$RemoteCreatorException;-><init>(Ljava/lang/String;Ljava/lang/Throwable;)V
+
+    throw v0
+.end method
+
+
+# virtual methods
+.method public final synthetic a(Landroid/os/IBinder;)Ljava/lang/Object;
+    .locals 2
+
+    if-nez p1, :cond_0
+
+    const/4 p1, 0x0
 
     return-object p1
+
+    :cond_0
+    const-string v0, "com.google.android.gms.common.internal.ISignInButtonCreator"
+
+    .line 1
+    invoke-interface {p1, v0}, Landroid/os/IBinder;->queryLocalInterface(Ljava/lang/String;)Landroid/os/IInterface;
+
+    move-result-object v0
+
+    .line 2
+    instance-of v1, v0, Lcom/google/android/gms/common/internal/zam;
+
+    if-eqz v1, :cond_1
+
+    .line 3
+    check-cast v0, Lcom/google/android/gms/common/internal/zam;
+
+    return-object v0
+
+    .line 4
+    :cond_1
+    new-instance v0, Lcom/google/android/gms/common/internal/zal;
+
+    invoke-direct {v0, p1}, Lcom/google/android/gms/common/internal/zal;-><init>(Landroid/os/IBinder;)V
+
+    return-object v0
 .end method

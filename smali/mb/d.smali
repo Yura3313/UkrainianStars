@@ -7,11 +7,11 @@
 
 
 # instance fields
-.field public final f:Ljava/lang/Runnable;
+.field public final g:Ljava/lang/Runnable;
 
-.field public final g:Ljava/lang/Object;
+.field public final h:Ljava/lang/Object;
 
-.field public h:Ljava/util/concurrent/atomic/AtomicBoolean;
+.field public i:Ljava/util/concurrent/atomic/AtomicBoolean;
 
 
 # direct methods
@@ -26,7 +26,7 @@
 
     invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
-    iput-object v0, p0, Lmb/d;->g:Ljava/lang/Object;
+    iput-object v0, p0, Lmb/d;->h:Ljava/lang/Object;
 
     .line 3
     new-instance v0, Ljava/util/concurrent/atomic/AtomicBoolean;
@@ -35,10 +35,10 @@
 
     invoke-direct {v0, v1}, Ljava/util/concurrent/atomic/AtomicBoolean;-><init>(Z)V
 
-    iput-object v0, p0, Lmb/d;->h:Ljava/util/concurrent/atomic/AtomicBoolean;
+    iput-object v0, p0, Lmb/d;->i:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     .line 4
-    iput-object p1, p0, Lmb/d;->f:Ljava/lang/Runnable;
+    iput-object p1, p0, Lmb/d;->g:Ljava/lang/Runnable;
 
     return-void
 .end method
@@ -49,7 +49,7 @@
     .locals 4
 
     .line 1
-    iget-object v0, p0, Lmb/d;->g:Ljava/lang/Object;
+    iget-object v0, p0, Lmb/d;->h:Ljava/lang/Object;
 
     monitor-enter v0
 
@@ -57,7 +57,7 @@
 
     .line 2
     :try_start_0
-    iget-object v2, p0, Lmb/d;->f:Ljava/lang/Runnable;
+    iget-object v2, p0, Lmb/d;->g:Ljava/lang/Runnable;
 
     invoke-interface {v2}, Ljava/lang/Runnable;->run()V
     :try_end_0
@@ -65,12 +65,12 @@
 
     .line 3
     :try_start_1
-    iget-object v2, p0, Lmb/d;->h:Ljava/util/concurrent/atomic/AtomicBoolean;
+    iget-object v2, p0, Lmb/d;->i:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     invoke-virtual {v2, v1}, Ljava/util/concurrent/atomic/AtomicBoolean;->set(Z)V
 
     .line 4
-    iget-object v1, p0, Lmb/d;->g:Ljava/lang/Object;
+    iget-object v1, p0, Lmb/d;->h:Ljava/lang/Object;
 
     invoke-virtual {v1}, Ljava/lang/Object;->notifyAll()V
 
@@ -83,12 +83,12 @@
     move-exception v2
 
     .line 6
-    iget-object v3, p0, Lmb/d;->h:Ljava/util/concurrent/atomic/AtomicBoolean;
+    iget-object v3, p0, Lmb/d;->i:Ljava/util/concurrent/atomic/AtomicBoolean;
 
     invoke-virtual {v3, v1}, Ljava/util/concurrent/atomic/AtomicBoolean;->set(Z)V
 
     .line 7
-    iget-object v1, p0, Lmb/d;->g:Ljava/lang/Object;
+    iget-object v1, p0, Lmb/d;->h:Ljava/lang/Object;
 
     invoke-virtual {v1}, Ljava/lang/Object;->notifyAll()V
 

@@ -27,7 +27,7 @@
     .end annotation
 .end field
 
-.field public static final f:Lcom/supercell/id/model/IdSocialAccount$b;
+.field public static final g:Lcom/supercell/id/model/IdSocialAccount$b;
 
 
 # direct methods
@@ -38,7 +38,7 @@
 
     invoke-direct {v0}, Lcom/supercell/id/model/IdSocialAccount$b;-><init>()V
 
-    sput-object v0, Lcom/supercell/id/model/IdSocialAccount;->f:Lcom/supercell/id/model/IdSocialAccount$b;
+    sput-object v0, Lcom/supercell/id/model/IdSocialAccount;->g:Lcom/supercell/id/model/IdSocialAccount$b;
 
     .line 1
     new-instance v0, Lcom/supercell/id/model/IdSocialAccount$a;
@@ -61,7 +61,7 @@
 
 
 # virtual methods
-.method public final a()Lvc/e;
+.method public final a()Lvc/d;
     .locals 1
 
     .line 1
@@ -74,7 +74,7 @@
     check-cast v0, Lcom/supercell/id/model/IdSocialAccount$AppAccount;
 
     .line 2
-    iget-object v0, v0, Lcom/supercell/id/model/IdSocialAccount$AppAccount;->g:Lvc/e;
+    iget-object v0, v0, Lcom/supercell/id/model/IdSocialAccount$AppAccount;->h:Lvc/d;
 
     goto :goto_0
 
@@ -98,7 +98,7 @@
     check-cast v0, Lcom/supercell/id/model/IdSocialAccount$Scid;
 
     .line 2
-    iget-object v0, v0, Lcom/supercell/id/model/IdSocialAccount$Scid;->g:Ljava/lang/String;
+    iget-object v0, v0, Lcom/supercell/id/model/IdSocialAccount$Scid;->h:Ljava/lang/String;
 
     goto :goto_0
 
@@ -122,7 +122,7 @@
 
     const-string p2, "dest"
 
-    invoke-static {p1, p2}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, p2}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     invoke-virtual {p0}, Lcom/supercell/id/model/IdSocialAccount;->d()Ljava/lang/String;
@@ -132,13 +132,13 @@
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
     .line 2
-    invoke-virtual {p0}, Lcom/supercell/id/model/IdSocialAccount;->a()Lvc/e;
+    invoke-virtual {p0}, Lcom/supercell/id/model/IdSocialAccount;->a()Lvc/d;
 
     move-result-object p2
 
     if-eqz p2, :cond_0
 
-    invoke-virtual {p2}, Lvc/e;->a()Ljava/lang/String;
+    invoke-virtual {p2}, Lvc/d;->a()Ljava/lang/String;
 
     move-result-object p2
 

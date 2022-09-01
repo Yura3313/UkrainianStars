@@ -32,7 +32,7 @@
 
     const-string v0, "allFactories"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 2
     new-instance p1, Lkotlinx/coroutines/android/HandlerContext;
@@ -43,7 +43,7 @@
 
     const-string v1, "Looper.getMainLooper()"
 
-    invoke-static {v0, v1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     const/4 v1, 0x1
 
@@ -58,7 +58,7 @@
     return-object p1
 .end method
 
-.method public bridge synthetic createDispatcher(Ljava/util/List;)Lze/i1;
+.method public bridge synthetic createDispatcher(Ljava/util/List;)Lze/j1;
     .locals 0
 
     .line 1

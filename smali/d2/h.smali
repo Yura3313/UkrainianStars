@@ -97,11 +97,11 @@
     const/16 v2, 0x24
 
     .line 6
-    invoke-static {p0, v2}, La1/e;->a(Ljava/lang/String;I)I
+    invoke-static {p0, v2}, La1/e;->b(Ljava/lang/String;I)I
 
     move-result v2
 
-    invoke-static {v0, v2}, La1/e;->a(Ljava/lang/String;I)I
+    invoke-static {v0, v2}, La1/e;->b(Ljava/lang/String;I)I
 
     move-result v2
 
@@ -110,7 +110,7 @@
     const-string v4, " thread, but got "
 
     .line 7
-    invoke-static {v2, v3, p0, v4, v0}, Lcom/kakaogame/d;->b(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
+    invoke-static {v2, v3, p0, v4, v0}, Lcom/kakaogame/b;->b(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
 
     move-result-object p0
 

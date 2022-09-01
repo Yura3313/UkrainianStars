@@ -270,7 +270,7 @@
     return-void
 .end method
 
-.method public final b(Landroid/content/Context;Lb2/a0;)V
+.method public final b(Landroid/content/Context;Lb2/z;)V
     .locals 7
 
     .line 1
@@ -295,7 +295,7 @@
     .line 5
     iget-object p1, p0, Lp4/d;->l:Landroid/graphics/Typeface;
 
-    invoke-virtual {p2, p1, v6}, Lb2/a0;->d(Landroid/graphics/Typeface;Z)V
+    invoke-virtual {p2, p1, v6}, Lb2/z;->d(Landroid/graphics/Typeface;Z)V
 
     return-void
 
@@ -304,7 +304,7 @@
     :try_start_0
     new-instance v4, Lp4/d$a;
 
-    invoke-direct {v4, p0, p2}, Lp4/d$a;-><init>(Lp4/d;Lb2/a0;)V
+    invoke-direct {v4, p0, p2}, Lp4/d$a;-><init>(Lp4/d;Lb2/z;)V
 
     const/4 v0, 0x0
 
@@ -348,7 +348,7 @@
     const/4 p1, -0x3
 
     .line 11
-    invoke-virtual {p2, p1}, Lb2/a0;->a(I)V
+    invoke-virtual {p2, p1}, Lb2/z;->a(I)V
 
     goto :goto_0
 
@@ -357,13 +357,13 @@
     iput-boolean v6, p0, Lp4/d;->k:Z
 
     .line 13
-    invoke-virtual {p2, v6}, Lb2/a0;->a(I)V
+    invoke-virtual {p2, v6}, Lb2/z;->a(I)V
 
     :goto_0
     return-void
 .end method
 
-.method public final c(Landroid/content/Context;Landroid/text/TextPaint;Lb2/a0;)V
+.method public final c(Landroid/content/Context;Landroid/text/TextPaint;Lb2/z;)V
     .locals 4
 
     .line 1
@@ -378,9 +378,9 @@
     .line 4
     new-instance v0, Lp4/e;
 
-    invoke-direct {v0, p0, p2, p3}, Lp4/e;-><init>(Lp4/d;Landroid/text/TextPaint;Lb2/a0;)V
+    invoke-direct {v0, p0, p2, p3}, Lp4/e;-><init>(Lp4/d;Landroid/text/TextPaint;Lb2/z;)V
 
-    invoke-virtual {p0, p1, v0}, Lp4/d;->b(Landroid/content/Context;Lb2/a0;)V
+    invoke-virtual {p0, p1, v0}, Lp4/d;->b(Landroid/content/Context;Lb2/z;)V
 
     .line 5
     iget-object p1, p0, Lp4/d;->b:Landroid/content/res/ColorStateList;

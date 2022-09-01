@@ -4,16 +4,23 @@
 
 
 # direct methods
-.method public static a(IIII)I
+.method public static a(Lcom/kakaogame/KGResult;Ljava/util/LinkedHashMap;Ljava/lang/String;Ljava/util/LinkedHashMap;)Lcom/kakaogame/KGResult;
     .locals 0
 
-    mul-int p0, p0, p1
+    .line 1
+    invoke-virtual {p0}, Lcom/kakaogame/KGResult;->getContent()Ljava/lang/Object;
 
-    div-int/2addr p0, p2
+    move-result-object p0
 
-    add-int/2addr p0, p3
+    .line 2
+    invoke-interface {p1, p2, p0}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    return p0
+    .line 3
+    invoke-static {p3}, Lcom/kakaogame/KGResult;->getSuccessResult(Ljava/lang/Object;)Lcom/kakaogame/KGResult;
+
+    move-result-object p0
+
+    return-object p0
 .end method
 
 .method public static b(Ljava/lang/String;I)Ljava/lang/String;

@@ -1,5 +1,5 @@
 .class public final Ltd/m;
-.super Lse/h;
+.super Lse/i;
 .source "RegisterEnterPinPageFragment.kt"
 
 # interfaces
@@ -9,18 +9,18 @@
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/p<",
         "Ltd/q;",
         "Ljava/lang/String;",
-        "Lie/h;",
+        "Lie/i;",
         ">;"
     }
 .end annotation
 
 
 # static fields
-.field public static final f:Ltd/m;
+.field public static final g:Ltd/m;
 
 
 # direct methods
@@ -31,7 +31,7 @@
 
     invoke-direct {v0}, Ltd/m;-><init>()V
 
-    sput-object v0, Ltd/m;->f:Ltd/m;
+    sput-object v0, Ltd/m;->g:Ltd/m;
 
     return-void
 .end method
@@ -41,7 +41,7 @@
 
     const/4 v0, 0x2
 
-    invoke-direct {p0, v0}, Lse/h;-><init>(I)V
+    invoke-direct {p0, v0}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -59,11 +59,11 @@
     const-string v0, "$receiver"
 
     .line 2
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "it"
 
-    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 3
     sget-object p2, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
@@ -78,7 +78,7 @@
 
     move-result-object p2
 
-    invoke-virtual {p2}, Lae/u;->m()Lze/e0;
+    invoke-virtual {p2}, Lae/u;->m()Lze/f0;
 
     .line 6
     invoke-virtual {p1}, Ltd/s;->W0()Lcom/supercell/id/ui/register/RegisterFlowFragment;
@@ -91,7 +91,7 @@
 
     .line 7
     :cond_0
-    sget-object p1, Lie/h;->a:Lie/h;
+    sget-object p1, Lie/i;->a:Lie/i;
 
     return-object p1
 .end method

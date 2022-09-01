@@ -166,7 +166,7 @@
     .end annotation
 
     .line 1
-    instance-of v0, p2, Ld2/i0;
+    instance-of v0, p2, Ld2/j0;
 
     xor-int/lit8 v0, v0, 0x1
 
@@ -314,7 +314,7 @@
 
     .line 6
     :cond_2
-    instance-of v0, p4, Ld2/i0;
+    instance-of v0, p4, Ld2/j0;
 
     xor-int/2addr v0, v2
 

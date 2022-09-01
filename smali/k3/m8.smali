@@ -2,212 +2,212 @@
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
-# interfaces
-.implements Lk3/hd;
-.implements Lk3/f30;
-.implements Lk3/lf0;
-
 
 # instance fields
-.field public f:Ljava/lang/Object;
+.field public final a:Ljava/util/List;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/List<",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public final b:Ljava/lang/String;
+
+.field public final c:Ljava/lang/String;
+
+.field public final d:Z
+
+.field public e:Ljava/lang/String;
+
+.field public final f:I
+
+.field public final g:Lorg/json/JSONObject;
+
+.field public final h:Ljava/lang/String;
 
 
 # direct methods
-.method public synthetic constructor <init>()V
-    .locals 1
-
-    .line 2
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    .line 3
-    new-instance v0, Ljava/util/WeakHashMap;
-
-    invoke-direct {v0}, Ljava/util/WeakHashMap;-><init>()V
-
-    iput-object v0, p0, Lk3/m8;->f:Ljava/lang/Object;
-
-    return-void
-.end method
-
-.method public synthetic constructor <init>(Ljava/lang/Object;)V
-    .locals 0
+.method public constructor <init>(Lorg/json/JSONObject;)V
+    .locals 4
 
     .line 1
-    iput-object p1, p0, Lk3/m8;->f:Ljava/lang/Object;
-
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    return-void
-.end method
-
-
-# virtual methods
-.method public final a(Lcom/google/android/gms/internal/ads/zzasp;)Lk3/em0;
-    .locals 6
-
-    iget-object v0, p0, Lk3/m8;->f:Ljava/lang/Object;
-
-    check-cast v0, Lk3/y20;
-
-    .line 1
-    iget-object v0, v0, Lk3/y20;->b:Lk3/t20;
-
-    iget-object p1, p1, Lcom/google/android/gms/internal/ads/zzasp;->p:Ljava/lang/String;
+    const-string v0, "url"
 
     .line 2
-    iget-object v1, v0, Lk3/r20;->b:Ljava/lang/Object;
+    invoke-virtual {p1, v0}, Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;
 
-    monitor-enter v1
+    move-result-object v0
+
+    iput-object v0, p0, Lk3/m8;->e:Ljava/lang/String;
+
+    const-string v0, "base_uri"
 
     .line 3
-    :try_start_0
-    iget v2, v0, Lk3/t20;->h:I
+    invoke-virtual {p1, v0}, Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;
 
-    const/4 v3, 0x2
+    move-result-object v0
 
-    const/4 v4, 0x3
+    iput-object v0, p0, Lk3/m8;->b:Ljava/lang/String;
 
-    const/4 v5, 0x1
-
-    if-eq v2, v5, :cond_0
-
-    if-eq v2, v4, :cond_0
+    const-string v0, "post_parameters"
 
     .line 4
-    new-instance p1, Lcom/google/android/gms/internal/ads/zzcpa;
+    invoke-virtual {p1, v0}, Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;
 
-    invoke-direct {p1, v3}, Lcom/google/android/gms/internal/ads/zzcpa;-><init>(I)V
+    move-result-object v0
+
+    iput-object v0, p0, Lk3/m8;->c:Ljava/lang/String;
+
+    const-string v0, "drt_include"
 
     .line 5
-    new-instance v0, Lk3/cm0$a;
+    invoke-virtual {p1, v0}, Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;
 
-    invoke-direct {v0, p1}, Lk3/cm0$a;-><init>(Ljava/lang/Throwable;)V
+    move-result-object v0
+
+    const/4 v1, 0x0
+
+    const/4 v2, 0x1
+
+    if-eqz v0, :cond_1
+
+    const-string v3, "1"
 
     .line 6
-    monitor-exit v1
+    invoke-virtual {v0, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    goto :goto_0
+    move-result v3
 
-    .line 7
-    :cond_0
-    iget-boolean v2, v0, Lk3/r20;->c:Z
+    if-nez v3, :cond_0
 
-    if-eqz v2, :cond_1
+    const-string v3, "true"
 
-    .line 8
-    iget-object v0, v0, Lk3/r20;->a:Lk3/pd;
-
-    monitor-exit v1
-
-    goto :goto_0
-
-    .line 9
-    :cond_1
-    iput v4, v0, Lk3/t20;->h:I
-
-    .line 10
-    iput-boolean v5, v0, Lk3/r20;->c:Z
-
-    .line 11
-    iput-object p1, v0, Lk3/t20;->g:Ljava/lang/String;
-
-    .line 12
-    iget-object p1, v0, Lk3/r20;->f:Lk3/b8;
-
-    invoke-virtual {p1}, Lcom/google/android/gms/common/internal/BaseGmsClient;->o()V
-
-    .line 13
-    iget-object p1, v0, Lk3/r20;->a:Lk3/pd;
-
-    new-instance v2, Lk3/ih;
-
-    invoke-direct {v2, v0, v3}, Lk3/ih;-><init>(Ljava/lang/Object;I)V
-
-    .line 14
-    sget-object v3, Lk3/jd;->f:Lk3/nd;
-
-    .line 15
-    invoke-virtual {p1, v2, v3}, Lk3/pd;->c(Ljava/lang/Runnable;Ljava/util/concurrent/Executor;)V
-
-    .line 16
-    iget-object v0, v0, Lk3/r20;->a:Lk3/pd;
-
-    monitor-exit v1
-
-    :goto_0
-    return-object v0
-
-    :catchall_0
-    move-exception p1
-
-    .line 17
-    monitor-exit v1
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    throw p1
-.end method
-
-.method public final b(Landroid/util/JsonWriter;)V
-    .locals 2
-
-    iget-object v0, p0, Lk3/m8;->f:Ljava/lang/Object;
-
-    check-cast v0, Ljava/lang/String;
-
-    sget-object v1, Lk3/ed;->b:Ljava/lang/Object;
-
-    const-string v1, "params"
-
-    .line 1
-    invoke-virtual {p1, v1}, Landroid/util/JsonWriter;->name(Ljava/lang/String;)Landroid/util/JsonWriter;
-
-    move-result-object v1
-
-    invoke-virtual {v1}, Landroid/util/JsonWriter;->beginObject()Landroid/util/JsonWriter;
-
-    if-eqz v0, :cond_0
-
-    const-string v1, "error_description"
-
-    .line 2
-    invoke-virtual {p1, v1}, Landroid/util/JsonWriter;->name(Ljava/lang/String;)Landroid/util/JsonWriter;
-
-    move-result-object v1
-
-    invoke-virtual {v1, v0}, Landroid/util/JsonWriter;->value(Ljava/lang/String;)Landroid/util/JsonWriter;
-
-    .line 3
-    :cond_0
-    invoke-virtual {p1}, Landroid/util/JsonWriter;->endObject()Landroid/util/JsonWriter;
-
-    return-void
-.end method
-
-.method public final m(Ljava/lang/Object;)V
-    .locals 3
-
-    .line 1
-    iget-object v0, p0, Lk3/m8;->f:Ljava/lang/Object;
-
-    check-cast v0, Lcom/google/android/gms/internal/ads/zzatj;
-
-    check-cast p1, Lcom/google/android/gms/internal/ads/zzaum;
-
-    .line 2
-    new-instance v1, Lcom/google/android/gms/internal/ads/zzavh;
-
-    invoke-interface {v0}, Lcom/google/android/gms/internal/ads/zzatj;->getType()Ljava/lang/String;
-
-    move-result-object v2
-
-    invoke-interface {v0}, Lcom/google/android/gms/internal/ads/zzatj;->C0()I
+    invoke-virtual {v0, v3}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
     move-result v0
 
-    invoke-direct {v1, v2, v0}, Lcom/google/android/gms/internal/ads/zzavh;-><init>(Ljava/lang/String;I)V
+    if-eqz v0, :cond_1
 
-    invoke-interface {p1, v1}, Lcom/google/android/gms/internal/ads/zzaum;->e0(Lcom/google/android/gms/internal/ads/zzaug;)V
+    :cond_0
+    const/4 v0, 0x1
+
+    goto :goto_0
+
+    :cond_1
+    const/4 v0, 0x0
+
+    .line 7
+    :goto_0
+    iput-boolean v0, p0, Lk3/m8;->d:Z
+
+    const-string v0, "request_id"
+
+    .line 8
+    invoke-virtual {p1, v0}, Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;
+
+    const-string v0, "type"
+
+    .line 9
+    invoke-virtual {p1, v0}, Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;
+
+    const-string v0, "errors"
+
+    .line 10
+    invoke-virtual {p1, v0}, Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
+
+    if-nez v0, :cond_2
+
+    const/4 v0, 0x0
+
+    goto :goto_1
+
+    :cond_2
+    const-string v3, ","
+
+    .line 11
+    invoke-virtual {v0, v3}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {v0}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
+
+    move-result-object v0
+
+    .line 12
+    :goto_1
+    iput-object v0, p0, Lk3/m8;->a:Ljava/util/List;
+
+    const-string v0, "valid"
+
+    .line 13
+    invoke-virtual {p1, v0, v1}, Lorg/json/JSONObject;->optInt(Ljava/lang/String;I)I
+
+    move-result v0
+
+    if-ne v0, v2, :cond_3
+
+    const/4 v2, -0x2
+
+    .line 14
+    :cond_3
+    iput v2, p0, Lk3/m8;->f:I
+
+    const-string v0, "fetched_ad"
+
+    .line 15
+    invoke-virtual {p1, v0}, Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;
+
+    const-string v0, "render_test_ad_label"
+
+    .line 16
+    invoke-virtual {p1, v0}, Lorg/json/JSONObject;->optBoolean(Ljava/lang/String;)Z
+
+    const-string v0, "preprocessor_flags"
+
+    .line 17
+    invoke-virtual {p1, v0}, Lorg/json/JSONObject;->optJSONObject(Ljava/lang/String;)Lorg/json/JSONObject;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_4
+
+    goto :goto_2
+
+    .line 18
+    :cond_4
+    new-instance v0, Lorg/json/JSONObject;
+
+    invoke-direct {v0}, Lorg/json/JSONObject;-><init>()V
+
+    .line 19
+    :goto_2
+    iput-object v0, p0, Lk3/m8;->g:Lorg/json/JSONObject;
+
+    const-string v0, "analytics_query_ad_event_id"
+
+    .line 20
+    invoke-virtual {p1, v0}, Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;
+
+    const-string v0, "is_analytics_logging_enabled"
+
+    .line 21
+    invoke-virtual {p1, v0}, Lorg/json/JSONObject;->optBoolean(Ljava/lang/String;)Z
+
+    const-string v0, "pool_key"
+
+    .line 22
+    invoke-virtual {p1, v0}, Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object p1
+
+    iput-object p1, p0, Lk3/m8;->h:Ljava/lang/String;
 
     return-void
 .end method

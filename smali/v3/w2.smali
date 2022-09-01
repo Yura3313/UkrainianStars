@@ -3,5 +3,5 @@
 
 
 # virtual methods
-.method public abstract b()I
+.method public abstract v0(I)Z
 .end method

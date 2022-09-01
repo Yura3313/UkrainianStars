@@ -1,135 +1,39 @@
-.class public Lk3/kc;
+.class public final Lk3/kc;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-gass@@19.3.0"
 
 # interfaces
-.implements Lk3/an0;
-.implements Lk3/xs;
+.implements Lk3/sd;
+.implements Lk3/vs;
 
 
 # static fields
-.field public static final f:Lk3/kc;
+.field public static final g:Lk3/kc;
 
-.field public static final g:Lk3/a00;
-
-.field public static final h:Lk3/st0;
-
-.field public static final i:Lk3/ut0;
-
-.field public static final j:[B
-
-.field public static final k:[I
-
-.field public static final l:[I
+.field public static final h:Lk3/jt;
 
 
 # direct methods
 .method static synthetic constructor <clinit>()V
-    .locals 1
+    .locals 2
 
     .line 1
     new-instance v0, Lk3/kc;
 
     invoke-direct {v0}, Lk3/kc;-><init>()V
 
-    sput-object v0, Lk3/kc;->f:Lk3/kc;
+    sput-object v0, Lk3/kc;->g:Lk3/kc;
 
     .line 2
-    new-instance v0, Lk3/a00;
+    new-instance v0, Lk3/jt;
 
-    invoke-direct {v0}, Lk3/a00;-><init>()V
+    const/4 v1, 0x1
 
-    sput-object v0, Lk3/kc;->g:Lk3/a00;
+    invoke-direct {v0, v1}, Lk3/jt;-><init>(I)V
 
-    .line 3
-    new-instance v0, Lk3/st0;
-
-    invoke-direct {v0}, Lk3/st0;-><init>()V
-
-    sput-object v0, Lk3/kc;->h:Lk3/st0;
-
-    .line 4
-    new-instance v0, Lk3/ut0;
-
-    invoke-direct {v0}, Lk3/ut0;-><init>()V
-
-    sput-object v0, Lk3/kc;->i:Lk3/ut0;
-
-    const/4 v0, 0x4
-
-    new-array v0, v0, [B
-
-    .line 5
-    fill-array-data v0, :array_0
-
-    sput-object v0, Lk3/kc;->j:[B
-
-    const/16 v0, 0xd
-
-    new-array v0, v0, [I
-
-    .line 6
-    fill-array-data v0, :array_1
-
-    sput-object v0, Lk3/kc;->k:[I
-
-    const/16 v0, 0x10
-
-    new-array v0, v0, [I
-
-    .line 7
-    fill-array-data v0, :array_2
-
-    sput-object v0, Lk3/kc;->l:[I
+    sput-object v0, Lk3/kc;->h:Lk3/jt;
 
     return-void
-
-    nop
-
-    :array_0
-    .array-data 1
-        0x0t
-        0x0t
-        0x0t
-        0x1t
-    .end array-data
-
-    :array_1
-    .array-data 4
-        0x17700
-        0x15888
-        0xfa00
-        0xbb80
-        0xac44
-        0x7d00
-        0x5dc0
-        0x5622
-        0x3e80
-        0x2ee0
-        0x2b11
-        0x1f40
-        0x1cb6
-    .end array-data
-
-    :array_2
-    .array-data 4
-        0x0
-        0x1
-        0x2
-        0x3
-        0x4
-        0x5
-        0x6
-        0x8
-        -0x1
-        -0x1
-        -0x1
-        0x7
-        0x8
-        -0x1
-        0x8
-        -0x1
-    .end array-data
 .end method
 
 .method public synthetic constructor <init>()V
@@ -303,7 +207,7 @@
     const-string v2, "Remaining buffer too short to contain length of length-prefixed field. Remaining: "
 
     .line 12
-    invoke-static {v1, v2, p0}, Lcom/google/android/gms/ads/e;->a(ILjava/lang/String;I)Ljava/lang/String;
+    invoke-static {v1, v2, p0}, Lcom/google/android/gms/ads/f;->a(ILjava/lang/String;I)Ljava/lang/String;
 
     move-result-object p0
 
@@ -503,7 +407,7 @@
     move-result-object v1
 
     .line 3
-    invoke-static/range {p0 .. p0}, Lk3/kc;->m(Ljava/nio/ByteBuffer;)[B
+    invoke-static/range {p0 .. p0}, Lk3/kc;->l(Ljava/nio/ByteBuffer;)[B
 
     move-result-object v2
 
@@ -701,7 +605,7 @@
 
     .line 15
     :cond_9
-    invoke-static {v8}, Lk3/kc;->m(Ljava/nio/ByteBuffer;)[B
+    invoke-static {v8}, Lk3/kc;->l(Ljava/nio/ByteBuffer;)[B
 
     move-result-object v7
 
@@ -739,7 +643,7 @@
     const-string v3, "Failed to parse signature record #"
 
     .line 18
-    invoke-static {v2, v3, v6}, Lcom/google/android/gms/ads/e;->a(ILjava/lang/String;I)Ljava/lang/String;
+    invoke-static {v2, v3, v6}, Lcom/google/android/gms/ads/f;->a(ILjava/lang/String;I)Ljava/lang/String;
 
     move-result-object v2
 
@@ -1105,7 +1009,7 @@
     if-ne v10, v5, :cond_16
 
     .line 51
-    invoke-static {v8}, Lk3/kc;->m(Ljava/nio/ByteBuffer;)[B
+    invoke-static {v8}, Lk3/kc;->l(Ljava/nio/ByteBuffer;)[B
 
     move-result-object v6
 
@@ -1141,7 +1045,7 @@
     const-string v3, "Failed to parse digest record #"
 
     .line 54
-    invoke-static {v2, v3, v7}, Lcom/google/android/gms/ads/e;->a(ILjava/lang/String;I)Ljava/lang/String;
+    invoke-static {v2, v3, v7}, Lcom/google/android/gms/ads/f;->a(ILjava/lang/String;I)Ljava/lang/String;
 
     move-result-object v2
 
@@ -1192,7 +1096,7 @@
     new-instance v0, Ljava/lang/SecurityException;
 
     .line 61
-    invoke-static {v1}, Lk3/kc;->l(I)Ljava/lang/String;
+    invoke-static {v1}, Lk3/kc;->k(I)Ljava/lang/String;
 
     move-result-object v1
 
@@ -1231,7 +1135,7 @@
     add-int/2addr v3, v13
 
     .line 65
-    invoke-static {v0}, Lk3/kc;->m(Ljava/nio/ByteBuffer;)[B
+    invoke-static {v0}, Lk3/kc;->l(Ljava/nio/ByteBuffer;)[B
 
     move-result-object v4
 
@@ -1253,9 +1157,9 @@
     .catch Ljava/security/cert/CertificateException; {:try_start_4 .. :try_end_4} :catch_4
 
     .line 68
-    new-instance v7, Lk3/aw0;
+    new-instance v7, Lk3/ew0;
 
-    invoke-direct {v7, v5, v4}, Lk3/aw0;-><init>(Ljava/security/cert/X509Certificate;[B)V
+    invoke-direct {v7, v5, v4}, Lk3/ew0;-><init>(Ljava/security/cert/X509Certificate;[B)V
 
     .line 69
     invoke-virtual {v1, v7}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
@@ -1273,7 +1177,7 @@
     const-string v4, "Failed to decode certificate #"
 
     .line 71
-    invoke-static {v2, v4, v3}, Lcom/google/android/gms/ads/e;->a(ILjava/lang/String;I)Ljava/lang/String;
+    invoke-static {v2, v4, v3}, Lcom/google/android/gms/ads/f;->a(ILjava/lang/String;I)Ljava/lang/String;
 
     move-result-object v2
 
@@ -1408,7 +1312,7 @@
     const/16 v2, 0x1b
 
     .line 83
-    invoke-static {v8, v2}, La1/e;->a(Ljava/lang/String;I)I
+    invoke-static {v8, v2}, La1/e;->b(Ljava/lang/String;I)I
 
     move-result v2
 
@@ -1417,7 +1321,7 @@
     const-string v4, " signature"
 
     .line 84
-    invoke-static {v2, v3, v8, v4}, Landroid/support/v4/media/b;->a(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2, v3, v8, v4}, Li1/j;->a(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -1537,7 +1441,7 @@
     aget v8, v0, v7
 
     .line 7
-    invoke-static {v8}, Lk3/kc;->n(I)I
+    invoke-static {v8}, Lk3/kc;->m(I)I
 
     move-result v8
 
@@ -1589,7 +1493,7 @@
     aget v10, v0, v9
 
     .line 15
-    invoke-static {v10}, Lk3/kc;->l(I)Ljava/lang/String;
+    invoke-static {v10}, Lk3/kc;->k(I)Ljava/lang/String;
 
     move-result-object v10
 
@@ -1704,7 +1608,7 @@
     aget-object v2, v6, v1
 
     .line 27
-    invoke-static {v3}, Lk3/kc;->n(I)I
+    invoke-static {v3}, Lk3/kc;->m(I)I
 
     move-result v3
 
@@ -1748,7 +1652,7 @@
     const/16 v3, 0x2e
 
     .line 32
-    invoke-static {v1, v3}, La1/e;->a(Ljava/lang/String;I)I
+    invoke-static {v1, v3}, La1/e;->b(Ljava/lang/String;I)I
 
     move-result v3
 
@@ -1864,7 +1768,7 @@
     aget-object v4, v6, v2
 
     .line 41
-    invoke-static {v3}, Lk3/kc;->l(I)Ljava/lang/String;
+    invoke-static {v3}, Lk3/kc;->k(I)Ljava/lang/String;
 
     move-result-object v3
 
@@ -1977,7 +1881,7 @@
 
     .line 3
     :cond_0
-    invoke-static {v1, v0}, Lk3/uw0;->d(Ljava/io/RandomAccessFile;I)Landroid/util/Pair;
+    invoke-static {v1, v0}, Lk3/yw0;->c(Ljava/io/RandomAccessFile;I)Landroid/util/Pair;
 
     move-result-object v2
 
@@ -1989,7 +1893,7 @@
     const v2, 0xffff
 
     .line 4
-    invoke-static {v1, v2}, Lk3/uw0;->d(Ljava/io/RandomAccessFile;I)Landroid/util/Pair;
+    invoke-static {v1, v2}, Lk3/yw0;->c(Ljava/io/RandomAccessFile;I)Landroid/util/Pair;
 
     move-result-object v2
 
@@ -2045,7 +1949,7 @@
     if-nez v2, :cond_10
 
     .line 9
-    invoke-static {v12}, Lk3/uw0;->l(Ljava/nio/ByteBuffer;)V
+    invoke-static {v12}, Lk3/yw0;->h(Ljava/nio/ByteBuffer;)V
 
     .line 10
     invoke-virtual {v12}, Ljava/nio/Buffer;->position()I
@@ -2072,7 +1976,7 @@
     if-gez v2, :cond_f
 
     .line 12
-    invoke-static {v12}, Lk3/uw0;->l(Ljava/nio/ByteBuffer;)V
+    invoke-static {v12}, Lk3/yw0;->h(Ljava/nio/ByteBuffer;)V
 
     .line 13
     invoke-virtual {v12}, Ljava/nio/Buffer;->position()I
@@ -2360,7 +2264,7 @@
     move-result-object v5
 
     .line 40
-    new-instance v0, Lk3/ro0;
+    new-instance v0, Lk3/to0;
 
     move-wide/from16 v13, v18
 
@@ -2370,14 +2274,14 @@
 
     move-wide v8, v13
 
-    invoke-direct/range {v4 .. v12}, Lk3/ro0;-><init>(Ljava/nio/ByteBuffer;JJJLjava/nio/ByteBuffer;)V
+    invoke-direct/range {v4 .. v12}, Lk3/to0;-><init>(Ljava/nio/ByteBuffer;JJJLjava/nio/ByteBuffer;)V
 
     .line 41
     invoke-virtual {v1}, Ljava/io/RandomAccessFile;->getChannel()Ljava/nio/channels/FileChannel;
 
     move-result-object v2
 
-    invoke-static {v2, v0}, Lk3/kc;->i(Ljava/nio/channels/FileChannel;Lk3/ro0;)[[Ljava/security/cert/X509Certificate;
+    invoke-static {v2, v0}, Lk3/kc;->i(Ljava/nio/channels/FileChannel;Lk3/to0;)[[Ljava/security/cert/X509Certificate;
 
     move-result-object v0
 
@@ -2734,7 +2638,7 @@
     goto :goto_3
 .end method
 
-.method public static i(Ljava/nio/channels/FileChannel;Lk3/ro0;)[[Ljava/security/cert/X509Certificate;
+.method public static i(Ljava/nio/channels/FileChannel;Lk3/to0;)[[Ljava/security/cert/X509Certificate;
     .locals 18
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -2766,7 +2670,7 @@
 
     .line 4
     :try_start_1
-    iget-object v4, v0, Lk3/ro0;->a:Ljava/nio/ByteBuffer;
+    iget-object v4, v0, Lk3/to0;->a:Ljava/nio/ByteBuffer;
 
     .line 5
     invoke-static {v4}, Lk3/kc;->b(Ljava/nio/ByteBuffer;)Ljava/nio/ByteBuffer;
@@ -2861,16 +2765,16 @@
     if-nez v3, :cond_6
 
     .line 12
-    iget-wide v3, v0, Lk3/ro0;->b:J
+    iget-wide v3, v0, Lk3/to0;->b:J
 
     .line 13
-    iget-wide v12, v0, Lk3/ro0;->c:J
+    iget-wide v12, v0, Lk3/to0;->c:J
 
     .line 14
-    iget-wide v14, v0, Lk3/ro0;->d:J
+    iget-wide v14, v0, Lk3/to0;->d:J
 
     .line 15
-    iget-object v0, v0, Lk3/ro0;->e:Ljava/nio/ByteBuffer;
+    iget-object v0, v0, Lk3/to0;->e:Ljava/nio/ByteBuffer;
 
     .line 16
     invoke-virtual {v1}, Ljava/util/HashMap;->isEmpty()Z
@@ -2880,7 +2784,7 @@
     if-nez v6, :cond_5
 
     .line 17
-    new-instance v16, Lk3/rv0;
+    new-instance v16, Lk3/vv0;
 
     const-wide/16 v8, 0x0
 
@@ -2890,10 +2794,10 @@
 
     move-wide v10, v3
 
-    invoke-direct/range {v6 .. v11}, Lk3/rv0;-><init>(Ljava/nio/channels/FileChannel;JJ)V
+    invoke-direct/range {v6 .. v11}, Lk3/vv0;-><init>(Ljava/nio/channels/FileChannel;JJ)V
 
     .line 18
-    new-instance v17, Lk3/rv0;
+    new-instance v17, Lk3/vv0;
 
     sub-long v10, v14, v12
 
@@ -2901,7 +2805,7 @@
 
     move-wide v8, v12
 
-    invoke-direct/range {v6 .. v11}, Lk3/rv0;-><init>(Ljava/nio/channels/FileChannel;JJ)V
+    invoke-direct/range {v6 .. v11}, Lk3/vv0;-><init>(Ljava/nio/channels/FileChannel;JJ)V
 
     .line 19
     invoke-virtual {v0}, Ljava/nio/ByteBuffer;->duplicate()Ljava/nio/ByteBuffer;
@@ -2914,7 +2818,7 @@
     invoke-virtual {v0, v6}, Ljava/nio/ByteBuffer;->order(Ljava/nio/ByteOrder;)Ljava/nio/ByteBuffer;
 
     .line 21
-    invoke-static {v0}, Lk3/uw0;->l(Ljava/nio/ByteBuffer;)V
+    invoke-static {v0}, Lk3/yw0;->h(Ljava/nio/ByteBuffer;)V
 
     .line 22
     invoke-virtual {v0}, Ljava/nio/Buffer;->position()I
@@ -2947,9 +2851,9 @@
     invoke-virtual {v0, v7, v4}, Ljava/nio/ByteBuffer;->putInt(II)Ljava/nio/ByteBuffer;
 
     .line 24
-    new-instance v3, Lk3/v90;
+    new-instance v3, Lk3/x90;
 
-    invoke-direct {v3, v0}, Lk3/v90;-><init>(Ljava/nio/ByteBuffer;)V
+    invoke-direct {v3, v0}, Lk3/x90;-><init>(Ljava/nio/ByteBuffer;)V
 
     .line 25
     invoke-virtual {v1}, Ljava/util/HashMap;->size()I
@@ -3052,7 +2956,7 @@
     new-instance v0, Ljava/lang/SecurityException;
 
     .line 34
-    invoke-static {v6}, Lk3/kc;->l(I)Ljava/lang/String;
+    invoke-static {v6}, Lk3/kc;->k(I)Ljava/lang/String;
 
     move-result-object v1
 
@@ -3257,7 +3161,7 @@
     const-string v1, "size: "
 
     .line 12
-    invoke-static {v0, v1, p1}, Lcom/google/android/gms/ads/e;->a(ILjava/lang/String;I)Ljava/lang/String;
+    invoke-static {v0, v1, p1}, Lcom/google/android/gms/ads/f;->a(ILjava/lang/String;I)Ljava/lang/String;
 
     move-result-object p1
 
@@ -3267,55 +3171,7 @@
     throw p0
 .end method
 
-.method public static k(Lk3/p11;)I
-    .locals 2
-
-    const/4 v0, 0x4
-
-    .line 1
-    invoke-virtual {p0, v0}, Lk3/p11;->a(I)I
-
-    move-result v0
-
-    const/16 v1, 0xf
-
-    if-ne v0, v1, :cond_0
-
-    const/16 v0, 0x18
-
-    .line 2
-    invoke-virtual {p0, v0}, Lk3/p11;->a(I)I
-
-    move-result p0
-
-    goto :goto_1
-
-    :cond_0
-    const/16 p0, 0xd
-
-    if-ge v0, p0, :cond_1
-
-    const/4 p0, 0x1
-
-    goto :goto_0
-
-    :cond_1
-    const/4 p0, 0x0
-
-    .line 3
-    :goto_0
-    invoke-static {p0}, Lk3/j6;->a(Z)V
-
-    .line 4
-    sget-object p0, Lk3/kc;->k:[I
-
-    aget p0, p0, v0
-
-    :goto_1
-    return p0
-.end method
-
-.method public static l(I)Ljava/lang/String;
+.method public static k(I)Ljava/lang/String;
     .locals 3
 
     const/4 v0, 0x1
@@ -3339,7 +3195,7 @@
     const-string v2, "Unknown content digest algorthm: "
 
     .line 2
-    invoke-static {v1, v2, p0}, Lcom/google/android/gms/ads/e;->a(ILjava/lang/String;I)Ljava/lang/String;
+    invoke-static {v1, v2, p0}, Lcom/google/android/gms/ads/f;->a(ILjava/lang/String;I)Ljava/lang/String;
 
     move-result-object p0
 
@@ -3354,7 +3210,7 @@
     return-object p0
 .end method
 
-.method public static m(Ljava/nio/ByteBuffer;)[B
+.method public static l(Ljava/nio/ByteBuffer;)[B
     .locals 5
     .annotation system Ldalvik/annotation/Throws;
         value = {
@@ -3420,7 +3276,7 @@
     throw p0
 .end method
 
-.method public static n(I)I
+.method public static m(I)I
     .locals 3
 
     const/4 v0, 0x1
@@ -3444,7 +3300,7 @@
     const-string v2, "Unknown content digest algorthm: "
 
     .line 2
-    invoke-static {v1, v2, p0}, Lcom/google/android/gms/ads/e;->a(ILjava/lang/String;I)Ljava/lang/String;
+    invoke-static {v1, v2, p0}, Lcom/google/android/gms/ads/f;->a(ILjava/lang/String;I)Ljava/lang/String;
 
     move-result-object p0
 
@@ -3457,6 +3313,54 @@
     const/16 p0, 0x20
 
     return p0
+.end method
+
+.method public static n(Ljava/util/Set;)I
+    .locals 3
+
+    .line 1
+    invoke-interface {p0}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
+
+    move-result-object p0
+
+    const/4 v0, 0x0
+
+    const/4 v1, 0x0
+
+    :goto_0
+    invoke-interface {p0}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v2
+
+    if-eqz v2, :cond_1
+
+    invoke-interface {p0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v2
+
+    if-eqz v2, :cond_0
+
+    .line 2
+    invoke-virtual {v2}, Ljava/lang/Object;->hashCode()I
+
+    move-result v2
+
+    goto :goto_1
+
+    :cond_0
+    const/4 v2, 0x0
+
+    :goto_1
+    add-int/2addr v1, v2
+
+    xor-int/lit8 v1, v1, -0x1
+
+    xor-int/lit8 v1, v1, -0x1
+
+    goto :goto_0
+
+    :cond_1
+    return v1
 .end method
 
 .method public static o(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)Lcom/google/android/gms/internal/ads/a0;
@@ -3506,10 +3410,16 @@
     .locals 0
 
     .line 1
-    check-cast p1, Lk3/it;
+    check-cast p1, Lk3/vq;
 
     .line 2
-    invoke-interface {p1}, Lk3/it;->b()V
+    invoke-interface {p1}, Lk3/vq;->U()V
+
+    return-void
+.end method
+
+.method public run()V
+    .locals 0
 
     return-void
 .end method

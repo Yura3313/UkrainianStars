@@ -3,7 +3,7 @@
 
 
 # instance fields
-.field public volatile transient f:Z
+.field public volatile transient g:Z
 
 
 # direct methods
@@ -16,7 +16,7 @@
     const/4 v0, 0x0
 
     .line 2
-    iput-boolean v0, p0, Lcom/google/android/gms/drive/zzu;->f:Z
+    iput-boolean v0, p0, Lcom/google/android/gms/drive/zzu;->g:Z
 
     return-void
 .end method
@@ -30,7 +30,7 @@
     .locals 2
 
     .line 1
-    iget-boolean v0, p0, Lcom/google/android/gms/drive/zzu;->f:Z
+    iget-boolean v0, p0, Lcom/google/android/gms/drive/zzu;->g:Z
 
     const/4 v1, 0x1
 
@@ -40,7 +40,7 @@
     invoke-static {v0}, Ld2/h;->j(Z)V
 
     .line 3
-    iput-boolean v1, p0, Lcom/google/android/gms/drive/zzu;->f:Z
+    iput-boolean v1, p0, Lcom/google/android/gms/drive/zzu;->g:Z
 
     .line 4
     invoke-virtual {p0, p1, p2}, Lcom/google/android/gms/drive/zzu;->D2(Landroid/os/Parcel;I)V

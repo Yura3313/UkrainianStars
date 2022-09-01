@@ -1,5 +1,5 @@
 .class public final Lpd/x$g;
-.super Lse/h;
+.super Lse/i;
 .source "NewGameTransitionCoordinator.kt"
 
 # interfaces
@@ -18,36 +18,36 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/l<",
         "Ljava/lang/Exception;",
-        "Lie/h;",
+        "Lie/i;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic f:Landroid/media/MediaPlayer;
+.field public final synthetic g:Landroid/media/MediaPlayer;
 
-.field public final synthetic g:Ljava/lang/ref/WeakReference;
+.field public final synthetic h:Ljava/lang/ref/WeakReference;
 
-.field public final synthetic h:Lpd/t;
+.field public final synthetic i:Lpd/t;
 
 
 # direct methods
 .method public constructor <init>(Landroid/media/MediaPlayer;Ljava/lang/ref/WeakReference;Lpd/t;)V
     .locals 0
 
-    iput-object p1, p0, Lpd/x$g;->f:Landroid/media/MediaPlayer;
+    iput-object p1, p0, Lpd/x$g;->g:Landroid/media/MediaPlayer;
 
-    iput-object p2, p0, Lpd/x$g;->g:Ljava/lang/ref/WeakReference;
+    iput-object p2, p0, Lpd/x$g;->h:Ljava/lang/ref/WeakReference;
 
-    iput-object p3, p0, Lpd/x$g;->h:Lpd/t;
+    iput-object p3, p0, Lpd/x$g;->i:Lpd/t;
 
     const/4 p1, 0x1
 
-    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -63,15 +63,15 @@
     const-string v0, "it"
 
     .line 2
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 3
-    iget-object p1, p0, Lpd/x$g;->f:Landroid/media/MediaPlayer;
+    iget-object p1, p0, Lpd/x$g;->g:Landroid/media/MediaPlayer;
 
     invoke-virtual {p1}, Landroid/media/MediaPlayer;->release()V
 
     .line 4
-    iget-object p1, p0, Lpd/x$g;->g:Ljava/lang/ref/WeakReference;
+    iget-object p1, p0, Lpd/x$g;->h:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {p1}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
 
@@ -87,7 +87,7 @@
 
     .line 5
     :cond_0
-    iget-object p1, p0, Lpd/x$g;->h:Lpd/t;
+    iget-object p1, p0, Lpd/x$g;->i:Lpd/t;
 
     new-instance v0, Lpd/z;
 
@@ -96,7 +96,7 @@
     invoke-virtual {p1, v0}, Landroid/view/View;->post(Ljava/lang/Runnable;)Z
 
     .line 6
-    sget-object p1, Lie/h;->a:Lie/h;
+    sget-object p1, Lie/i;->a:Lie/i;
 
     return-object p1
 .end method

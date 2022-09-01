@@ -38,7 +38,7 @@
     const-string v2, "Handling setup complete."
 
     .line 3
-    invoke-static {v1, v2, v0, v0}, Landroidx/savedstate/d;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v1, v2, v0, v0}, Le5/i;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
 
     .line 4
     iget-object v0, p0, Lf9/b;->b:Lf9/e;
@@ -50,13 +50,13 @@
     check-cast v0, Lua/d;
 
     .line 7
-    iget-object v0, v0, Landroidx/fragment/app/Fragment;->A:Landroidx/fragment/app/Fragment;
+    iget-object v0, v0, Landroidx/fragment/app/Fragment;->B:Landroidx/fragment/app/Fragment;
 
     .line 8
     check-cast v0, Lab/p;
 
     .line 9
-    iget-object v0, v0, Lab/p;->j0:Lpa/b;
+    iget-object v0, v0, Lab/p;->k0:Lpa/b;
 
     .line 10
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;

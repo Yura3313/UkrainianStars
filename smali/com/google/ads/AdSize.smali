@@ -33,7 +33,7 @@
 
 
 # instance fields
-.field private final zzdt:Lcom/google/android/gms/ads/f;
+.field private final zzdt:Lcom/google/android/gms/ads/g;
 
 
 # direct methods
@@ -117,11 +117,11 @@
     .locals 1
 
     .line 3
-    new-instance v0, Lcom/google/android/gms/ads/f;
+    new-instance v0, Lcom/google/android/gms/ads/g;
 
-    invoke-direct {v0, p1, p2}, Lcom/google/android/gms/ads/f;-><init>(II)V
+    invoke-direct {v0, p1, p2}, Lcom/google/android/gms/ads/g;-><init>(II)V
 
-    invoke-direct {p0, v0}, Lcom/google/ads/AdSize;-><init>(Lcom/google/android/gms/ads/f;)V
+    invoke-direct {p0, v0}, Lcom/google/ads/AdSize;-><init>(Lcom/google/android/gms/ads/g;)V
 
     return-void
 .end method
@@ -130,23 +130,23 @@
     .locals 0
 
     .line 4
-    new-instance p3, Lcom/google/android/gms/ads/f;
+    new-instance p3, Lcom/google/android/gms/ads/g;
 
-    invoke-direct {p3, p1, p2}, Lcom/google/android/gms/ads/f;-><init>(II)V
+    invoke-direct {p3, p1, p2}, Lcom/google/android/gms/ads/g;-><init>(II)V
 
-    invoke-direct {p0, p3}, Lcom/google/ads/AdSize;-><init>(Lcom/google/android/gms/ads/f;)V
+    invoke-direct {p0, p3}, Lcom/google/ads/AdSize;-><init>(Lcom/google/android/gms/ads/g;)V
 
     return-void
 .end method
 
-.method public constructor <init>(Lcom/google/android/gms/ads/f;)V
+.method public constructor <init>(Lcom/google/android/gms/ads/g;)V
     .locals 0
 
     .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lcom/google/ads/AdSize;->zzdt:Lcom/google/android/gms/ads/f;
+    iput-object p1, p0, Lcom/google/ads/AdSize;->zzdt:Lcom/google/android/gms/ads/g;
 
     return-void
 .end method
@@ -170,11 +170,11 @@
     check-cast p1, Lcom/google/ads/AdSize;
 
     .line 3
-    iget-object v0, p0, Lcom/google/ads/AdSize;->zzdt:Lcom/google/android/gms/ads/f;
+    iget-object v0, p0, Lcom/google/ads/AdSize;->zzdt:Lcom/google/android/gms/ads/g;
 
-    iget-object p1, p1, Lcom/google/ads/AdSize;->zzdt:Lcom/google/android/gms/ads/f;
+    iget-object p1, p1, Lcom/google/ads/AdSize;->zzdt:Lcom/google/android/gms/ads/g;
 
-    invoke-virtual {v0, p1}, Lcom/google/android/gms/ads/f;->equals(Ljava/lang/Object;)Z
+    invoke-virtual {v0, p1}, Lcom/google/android/gms/ads/g;->equals(Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -270,10 +270,10 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/ads/AdSize;->zzdt:Lcom/google/android/gms/ads/f;
+    iget-object v0, p0, Lcom/google/ads/AdSize;->zzdt:Lcom/google/android/gms/ads/g;
 
     .line 2
-    iget v0, v0, Lcom/google/android/gms/ads/f;->b:I
+    iget v0, v0, Lcom/google/android/gms/ads/g;->b:I
 
     return v0
 .end method
@@ -281,9 +281,9 @@
 .method public final getHeightInPixels(Landroid/content/Context;)I
     .locals 1
 
-    iget-object v0, p0, Lcom/google/ads/AdSize;->zzdt:Lcom/google/android/gms/ads/f;
+    iget-object v0, p0, Lcom/google/ads/AdSize;->zzdt:Lcom/google/android/gms/ads/g;
 
-    invoke-virtual {v0, p1}, Lcom/google/android/gms/ads/f;->a(Landroid/content/Context;)I
+    invoke-virtual {v0, p1}, Lcom/google/android/gms/ads/g;->a(Landroid/content/Context;)I
 
     move-result p1
 
@@ -294,10 +294,10 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/ads/AdSize;->zzdt:Lcom/google/android/gms/ads/f;
+    iget-object v0, p0, Lcom/google/ads/AdSize;->zzdt:Lcom/google/android/gms/ads/g;
 
     .line 2
-    iget v0, v0, Lcom/google/android/gms/ads/f;->a:I
+    iget v0, v0, Lcom/google/android/gms/ads/g;->a:I
 
     return v0
 .end method
@@ -305,9 +305,9 @@
 .method public final getWidthInPixels(Landroid/content/Context;)I
     .locals 1
 
-    iget-object v0, p0, Lcom/google/ads/AdSize;->zzdt:Lcom/google/android/gms/ads/f;
+    iget-object v0, p0, Lcom/google/ads/AdSize;->zzdt:Lcom/google/android/gms/ads/g;
 
-    invoke-virtual {v0, p1}, Lcom/google/android/gms/ads/f;->b(Landroid/content/Context;)I
+    invoke-virtual {v0, p1}, Lcom/google/android/gms/ads/g;->b(Landroid/content/Context;)I
 
     move-result p1
 
@@ -317,9 +317,9 @@
 .method public final hashCode()I
     .locals 1
 
-    iget-object v0, p0, Lcom/google/ads/AdSize;->zzdt:Lcom/google/android/gms/ads/f;
+    iget-object v0, p0, Lcom/google/ads/AdSize;->zzdt:Lcom/google/android/gms/ads/g;
 
-    invoke-virtual {v0}, Lcom/google/android/gms/ads/f;->hashCode()I
+    invoke-virtual {v0}, Lcom/google/android/gms/ads/g;->hashCode()I
 
     move-result v0
 
@@ -330,10 +330,10 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/google/ads/AdSize;->zzdt:Lcom/google/android/gms/ads/f;
+    iget-object v0, p0, Lcom/google/ads/AdSize;->zzdt:Lcom/google/android/gms/ads/g;
 
     .line 2
-    iget v0, v0, Lcom/google/android/gms/ads/f;->b:I
+    iget v0, v0, Lcom/google/android/gms/ads/g;->b:I
 
     const/4 v1, -0x2
 
@@ -362,10 +362,10 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lcom/google/ads/AdSize;->zzdt:Lcom/google/android/gms/ads/f;
+    iget-object v0, p0, Lcom/google/ads/AdSize;->zzdt:Lcom/google/android/gms/ads/g;
 
     .line 2
-    iget v0, v0, Lcom/google/android/gms/ads/f;->a:I
+    iget v0, v0, Lcom/google/android/gms/ads/g;->a:I
 
     const/4 v1, -0x1
 
@@ -445,10 +445,10 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lcom/google/ads/AdSize;->zzdt:Lcom/google/android/gms/ads/f;
+    iget-object v0, p0, Lcom/google/ads/AdSize;->zzdt:Lcom/google/android/gms/ads/g;
 
     .line 2
-    iget-object v0, v0, Lcom/google/android/gms/ads/f;->c:Ljava/lang/String;
+    iget-object v0, v0, Lcom/google/android/gms/ads/g;->c:Ljava/lang/String;
 
     return-object v0
 .end method

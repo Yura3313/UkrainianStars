@@ -58,7 +58,7 @@
 
     move-result-object v2
 
-    check-cast v2, Lo8/y;
+    check-cast v2, Lo8/z;
 
     .line 2
     iget-object v3, p0, Lf9/q0$a;->c:Lf9/q0;
@@ -97,7 +97,7 @@
 
     add-int/lit8 v2, v2, 0x1
 
-    invoke-virtual {v1, v4, v3, v2}, Lf9/q0;->e(Ljava/util/List;II)Lcom/helpshift/util/h0;
+    invoke-virtual {v1, v4, v3, v2}, Lf9/q0;->e(Ljava/util/List;II)Lcom/helpshift/util/f0;
 
     const/4 v1, 0x1
 

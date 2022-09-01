@@ -1,14 +1,14 @@
 .class public final Lo8/a;
-.super Lo8/p;
+.super Lo8/q;
 .source "AcceptedAppReviewMessageDM.java"
 
 
 # instance fields
-.field public A:Ljava/lang/String;
+.field public B:Ljava/lang/String;
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;JLo8/o;Ljava/lang/String;I)V
+.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;JLo8/p;Ljava/lang/String;I)V
     .locals 8
 
     const/4 v6, 0x3
@@ -26,10 +26,10 @@
     move v7, p7
 
     .line 1
-    invoke-direct/range {v0 .. v7}, Lo8/p;-><init>(Ljava/lang/String;Ljava/lang/String;JLo8/o;II)V
+    invoke-direct/range {v0 .. v7}, Lo8/q;-><init>(Ljava/lang/String;Ljava/lang/String;JLo8/p;II)V
 
     .line 2
-    iput-object p6, p0, Lo8/a;->A:Ljava/lang/String;
+    iput-object p6, p0, Lo8/a;->B:Ljava/lang/String;
 
     return-void
 .end method
@@ -38,12 +38,12 @@
     .locals 0
 
     .line 3
-    invoke-direct {p0, p1}, Lo8/p;-><init>(Lo8/p;)V
+    invoke-direct {p0, p1}, Lo8/q;-><init>(Lo8/q;)V
 
     .line 4
-    iget-object p1, p1, Lo8/a;->A:Ljava/lang/String;
+    iget-object p1, p1, Lo8/a;->B:Ljava/lang/String;
 
-    iput-object p1, p0, Lo8/a;->A:Ljava/lang/String;
+    iput-object p1, p0, Lo8/a;->B:Ljava/lang/String;
 
     return-void
 .end method
@@ -60,7 +60,7 @@
     return-object v0
 .end method
 
-.method public final b()Lo8/y;
+.method public final b()Lo8/z;
     .locals 1
 
     new-instance v0, Lo8/a;
@@ -78,11 +78,11 @@
     return v0
 .end method
 
-.method public final k(Lo8/y;)V
+.method public final k(Lo8/z;)V
     .locals 1
 
     .line 1
-    invoke-super {p0, p1}, Lo8/p;->k(Lo8/y;)V
+    invoke-super {p0, p1}, Lo8/q;->k(Lo8/z;)V
 
     .line 2
     instance-of v0, p1, Lo8/a;
@@ -93,9 +93,9 @@
     check-cast p1, Lo8/a;
 
     .line 4
-    iget-object p1, p1, Lo8/a;->A:Ljava/lang/String;
+    iget-object p1, p1, Lo8/a;->B:Ljava/lang/String;
 
-    iput-object p1, p0, Lo8/a;->A:Ljava/lang/String;
+    iput-object p1, p0, Lo8/a;->B:Ljava/lang/String;
 
     :cond_0
     return-void
@@ -115,22 +115,22 @@
     check-cast v0, Lq8/d;
 
     .line 2
-    iget-object v0, v0, Lq8/d;->h:Ljava/lang/String;
+    iget-object v0, v0, Lq8/d;->i:Ljava/lang/String;
 
     .line 3
-    invoke-static {v0}, Lcom/google/android/play/core/appupdate/g;->b(Ljava/lang/String;)Z
+    invoke-static {v0}, La5/b0;->d(Ljava/lang/String;)Z
 
     move-result v0
 
     if-nez v0, :cond_2
 
     .line 4
-    invoke-static {p1}, Lmd/g;->g(Li7/c;)Ljava/util/HashMap;
+    invoke-static {p1}, Lae/v;->g(Li7/c;)Ljava/util/HashMap;
 
     move-result-object v0
 
     .line 5
-    iget-object v1, p0, Lo8/y;->j:Ljava/lang/String;
+    iget-object v1, p0, Lo8/z;->k:Ljava/lang/String;
 
     const-string v2, "body"
 
@@ -144,7 +144,7 @@
     invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
     .line 7
-    iget-object v1, p0, Lo8/a;->A:Ljava/lang/String;
+    iget-object v1, p0, Lo8/a;->B:Ljava/lang/String;
 
     const-string v2, "refers"
 
@@ -152,16 +152,16 @@
 
     .line 8
     :try_start_0
-    invoke-virtual {p0, p2}, Lo8/y;->f(Ln8/j;)Ljava/lang/String;
+    invoke-virtual {p0, p2}, Lo8/z;->f(Ln8/j;)Ljava/lang/String;
 
     move-result-object p2
 
-    invoke-virtual {p0, p2, v0}, Lo8/p;->p(Ljava/lang/String;Ljava/util/Map;)Lf8/i;
+    invoke-virtual {p0, p2, v0}, Lo8/q;->p(Ljava/lang/String;Ljava/util/Map;)Lf8/i;
 
     move-result-object p2
 
     .line 9
-    iget-object v0, p0, Lo8/y;->u:Le8/s;
+    iget-object v0, p0, Lo8/z;->v:Le8/s;
 
     check-cast v0, Le8/j;
 
@@ -181,15 +181,15 @@
     move-result-object p2
 
     .line 13
-    invoke-virtual {p0, p2}, Lo8/a;->k(Lo8/y;)V
+    invoke-virtual {p0, p2}, Lo8/a;->k(Lo8/z;)V
 
     .line 14
-    iget-object p2, p2, Lo8/y;->i:Ljava/lang/String;
+    iget-object p2, p2, Lo8/z;->j:Ljava/lang/String;
 
-    iput-object p2, p0, Lo8/y;->i:Ljava/lang/String;
+    iput-object p2, p0, Lo8/z;->j:Ljava/lang/String;
 
     .line 15
-    iget-object p2, p0, Lo8/y;->u:Le8/s;
+    iget-object p2, p0, Lo8/z;->v:Le8/s;
 
     check-cast p2, Le8/j;
 
@@ -197,7 +197,7 @@
 
     move-result-object p2
 
-    invoke-virtual {p2, p0}, Le8/b;->e(Lo8/y;)V
+    invoke-virtual {p2, p0}, Le8/b;->e(Lo8/z;)V
     :try_end_0
     .catch Lcom/helpshift/common/exception/RootAPIException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -207,19 +207,19 @@
     move-exception p2
 
     .line 16
-    iget-object v0, p2, Lcom/helpshift/common/exception/RootAPIException;->h:Ld8/a;
+    iget-object v0, p2, Lcom/helpshift/common/exception/RootAPIException;->i:Ld8/a;
 
-    sget-object v1, Ld8/b;->x:Ld8/b;
+    sget-object v1, Ld8/b;->y:Ld8/b;
 
     if-eq v0, v1, :cond_0
 
-    sget-object v1, Ld8/b;->y:Ld8/b;
+    sget-object v1, Ld8/b;->z:Ld8/b;
 
     if-ne v0, v1, :cond_1
 
     .line 17
     :cond_0
-    iget-object v1, p0, Lo8/y;->t:La8/f;
+    iget-object v1, p0, Lo8/z;->u:La8/f;
 
     .line 18
     iget-object v1, v1, La8/f;->t:Lf7/a;

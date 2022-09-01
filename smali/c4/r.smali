@@ -20,11 +20,11 @@
 
 
 # instance fields
-.field public final f:Ljava/util/concurrent/Executor;
+.field public final g:Ljava/util/concurrent/Executor;
 
-.field public final g:Ljava/lang/Object;
+.field public final h:Ljava/lang/Object;
 
-.field public h:Lc4/d;
+.field public i:Lc4/d;
     .annotation runtime Ljavax/annotation/Nullable;
     .end annotation
 
@@ -46,13 +46,13 @@
 
     invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
-    iput-object v0, p0, Lc4/r;->g:Ljava/lang/Object;
+    iput-object v0, p0, Lc4/r;->h:Ljava/lang/Object;
 
     .line 3
-    iput-object p1, p0, Lc4/r;->f:Ljava/util/concurrent/Executor;
+    iput-object p1, p0, Lc4/r;->g:Ljava/util/concurrent/Executor;
 
     .line 4
-    iput-object p2, p0, Lc4/r;->h:Lc4/d;
+    iput-object p2, p0, Lc4/r;->i:Lc4/d;
 
     return-void
 .end method
@@ -83,13 +83,13 @@
     if-nez v0, :cond_1
 
     .line 2
-    iget-object v0, p0, Lc4/r;->g:Ljava/lang/Object;
+    iget-object v0, p0, Lc4/r;->h:Ljava/lang/Object;
 
     monitor-enter v0
 
     .line 3
     :try_start_0
-    iget-object v1, p0, Lc4/r;->h:Lc4/d;
+    iget-object v1, p0, Lc4/r;->i:Lc4/d;
 
     if-nez v1, :cond_0
 
@@ -105,7 +105,7 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 6
-    iget-object v0, p0, Lc4/r;->f:Ljava/util/concurrent/Executor;
+    iget-object v0, p0, Lc4/r;->g:Ljava/util/concurrent/Executor;
 
     new-instance v1, Lc4/q;
 
@@ -135,7 +135,7 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lc4/r;->g:Ljava/lang/Object;
+    iget-object v0, p0, Lc4/r;->h:Ljava/lang/Object;
 
     monitor-enter v0
 
@@ -143,7 +143,7 @@
 
     .line 2
     :try_start_0
-    iput-object v1, p0, Lc4/r;->h:Lc4/d;
+    iput-object v1, p0, Lc4/r;->i:Lc4/d;
 
     .line 3
     monitor-exit v0

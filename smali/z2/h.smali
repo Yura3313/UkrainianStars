@@ -14,10 +14,10 @@
 
 
 # direct methods
-.method public constructor <init>(Lb2/d;)V
+.method public constructor <init>(Lb2/c;)V
     .locals 0
 
-    invoke-direct {p0, p1}, Lz2/g$a;-><init>(Lb2/d;)V
+    invoke-direct {p0, p1}, Lz2/g$a;-><init>(Lb2/c;)V
 
     return-void
 .end method
@@ -39,9 +39,9 @@
     invoke-direct {v0, v1, v2}, Lcom/google/android/gms/common/api/Status;-><init>(ILjava/lang/String;)V
 
     .line 2
-    iget-object v1, p0, Lz2/g$a;->f:Lb2/d;
+    iget-object v1, p0, Lz2/g$a;->g:Lb2/c;
 
-    invoke-interface {v1, v0}, Lb2/d;->a(Ljava/lang/Object;)V
+    invoke-interface {v1, v0}, Lb2/c;->a(Ljava/lang/Object;)V
 
     return-void
 .end method

@@ -1,5 +1,5 @@
 .class public final Lpd/t$e$b$a;
-.super Lse/h;
+.super Lse/i;
 .source "NewGameAnimationView.kt"
 
 # interfaces
@@ -18,29 +18,29 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/p<",
         "Landroid/graphics/drawable/Drawable;",
         "Lud/g;",
-        "Lie/h;",
+        "Lie/i;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic f:Lpd/t$e$b;
+.field public final synthetic g:Lpd/t$e$b;
 
 
 # direct methods
 .method public constructor <init>(Lpd/t$e$b;)V
     .locals 0
 
-    iput-object p1, p0, Lpd/t$e$b$a;->f:Lpd/t$e$b;
+    iput-object p1, p0, Lpd/t$e$b$a;->g:Lpd/t$e$b;
 
     const/4 p1, 0x2
 
-    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -58,11 +58,11 @@
     const-string v0, "drawable"
 
     .line 2
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "<anonymous parameter 1>"
 
-    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 3
     instance-of p2, p1, Landroid/graphics/drawable/BitmapDrawable;
@@ -87,20 +87,20 @@
 
     invoke-direct {p2, p1}, Lpd/u;-><init>(Landroid/graphics/Bitmap;)V
 
-    invoke-static {p2}, Lae/u1;->o(Lre/a;)Lze/e0;
+    invoke-static {p2}, Lae/t1;->n(Lre/a;)Lze/f0;
 
     move-result-object p1
 
     .line 5
-    iget-object p2, p0, Lpd/t$e$b$a;->f:Lpd/t$e$b;
+    iget-object p2, p0, Lpd/t$e$b$a;->g:Lpd/t$e$b;
 
-    sget-object v0, Lpd/v;->f:Lpd/v;
+    sget-object v0, Lpd/v;->g:Lpd/v;
 
-    invoke-static {p1, p2, v0}, Lae/u1;->n(Lze/e0;Ljava/lang/Object;Lre/p;)Lze/e0;
+    invoke-static {p1, p2, v0}, Lae/t1;->m(Lze/f0;Ljava/lang/Object;Lre/p;)Lze/f0;
 
     .line 6
     :cond_1
-    sget-object p1, Lie/h;->a:Lie/h;
+    sget-object p1, Lie/i;->a:Lie/i;
 
     return-object p1
 .end method

@@ -109,7 +109,7 @@
     check-cast p0, Lr3/h2$a;
 
     .line 3
-    iget-object v0, p0, Lr3/h2$a;->f:Lr3/h2;
+    iget-object v0, p0, Lr3/h2$a;->g:Lr3/h2;
 
     .line 4
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;

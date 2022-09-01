@@ -4,12 +4,12 @@
 
 
 # direct methods
-.method public static final u(Ljava/util/Collection;Ljava/lang/Iterable;)Z
+.method public static final p(Ljava/util/Collection;Ljava/lang/Iterable;)Z
     .locals 2
 
     const-string v0, "elements"
 
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     instance-of v0, p1, Ljava/util/Collection;

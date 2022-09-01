@@ -1,52 +1,59 @@
-.class public interface abstract Lb2/i;
+.class public final Lb2/i;
 .super Ljava/lang/Object;
-.source "com.google.android.gms:play-services-basement@@17.5.0"
+.source "com.google.android.gms:play-services-base@@17.5.0"
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<",
+        "L:Ljava/lang/Object;",
+        ">",
+        "Ljava/lang/Object;"
+    }
+.end annotation
 
 
 # virtual methods
-.method public abstract c(Ljava/lang/String;Lcom/google/android/gms/common/api/internal/LifecycleCallback;)V
-    .param p1    # Ljava/lang/String;
-        .annotation build Landroidx/annotation/RecentlyNonNull;
-        .end annotation
-    .end param
-    .param p2    # Lcom/google/android/gms/common/api/internal/LifecycleCallback;
-        .annotation build Landroidx/annotation/RecentlyNonNull;
-        .end annotation
-    .end param
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 1
+
+    if-ne p0, p1, :cond_0
+
+    const/4 p1, 0x1
+
+    return p1
+
+    .line 1
+    :cond_0
+    instance-of v0, p1, Lb2/i;
+
+    if-nez v0, :cond_1
+
+    const/4 p1, 0x0
+
+    return p1
+
+    .line 2
+    :cond_1
+    check-cast p1, Lb2/i;
+
+    .line 3
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    const/4 p1, 0x0
+
+    throw p1
 .end method
 
-.method public abstract h(Ljava/lang/String;Ljava/lang/Class;)Lcom/google/android/gms/common/api/internal/LifecycleCallback;
-    .param p1    # Ljava/lang/String;
-        .annotation build Landroidx/annotation/RecentlyNonNull;
-        .end annotation
-    .end param
-    .param p2    # Ljava/lang/Class;
-        .annotation build Landroidx/annotation/RecentlyNonNull;
-        .end annotation
-    .end param
-    .annotation build Landroidx/annotation/RecentlyNullable;
-    .end annotation
+.method public final hashCode()I
+    .locals 1
 
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "<T:",
-            "Lcom/google/android/gms/common/api/internal/LifecycleCallback;",
-            ">(",
-            "Ljava/lang/String;",
-            "Ljava/lang/Class<",
-            "TT;>;)TT;"
-        }
-    .end annotation
-.end method
+    const/4 v0, 0x0
 
-.method public abstract i()Landroid/app/Activity;
-    .annotation build Landroidx/annotation/RecentlyNonNull;
-    .end annotation
-.end method
+    .line 1
+    invoke-static {v0}, Ljava/lang/System;->identityHashCode(Ljava/lang/Object;)I
 
-.method public abstract startActivityForResult(Landroid/content/Intent;I)V
-    .param p1    # Landroid/content/Intent;
-        .annotation build Landroidx/annotation/RecentlyNonNull;
-        .end annotation
-    .end param
+    .line 2
+    throw v0
 .end method

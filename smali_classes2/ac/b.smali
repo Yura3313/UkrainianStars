@@ -152,7 +152,7 @@
 
     .line 2
     :try_start_1
-    iget-object v2, p1, Lac/a$e;->f:[Ljava/io/File;
+    iget-object v2, p1, Lac/a$e;->g:[Ljava/io/File;
 
     aget-object v0, v2, v1
     :try_end_1
@@ -188,7 +188,7 @@
     .line 4
     :goto_1
     :try_start_2
-    invoke-static {v1}, Lae/w;->b(Ljava/lang/Throwable;)V
+    invoke-static {v1}, Lk3/f4;->b(Ljava/lang/Throwable;)V
     :try_end_2
     .catchall {:try_start_2 .. :try_end_2} :catchall_1
 
@@ -336,7 +336,7 @@
     move-exception p1
 
     .line 2
-    invoke-static {p1}, Lae/w;->b(Ljava/lang/Throwable;)V
+    invoke-static {p1}, Lk3/f4;->b(Ljava/lang/Throwable;)V
 
     if-eqz p2, :cond_0
 

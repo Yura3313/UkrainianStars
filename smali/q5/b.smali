@@ -49,14 +49,14 @@
 
     move-result v0
 
-    invoke-static {v0}, Lr5/j0;->a(I)V
+    invoke-static {v0}, Lr5/l0;->a(I)V
 
     .line 2
     invoke-virtual {p0}, Ln5/q;->u()Ln5/o0;
 
     move-result-object v0
 
-    sget-object v1, Ln5/o0;->g:Ln5/o0;
+    sget-object v1, Ln5/o0;->h:Ln5/o0;
 
     if-eq v0, v1, :cond_1
 
@@ -133,7 +133,7 @@
 .method public final d()Ln5/v0$b;
     .locals 1
 
-    sget-object v0, Ln5/v0$b;->h:Ln5/v0$b;
+    sget-object v0, Ln5/v0$b;->i:Ln5/v0$b;
 
     return-object v0
 .end method
@@ -173,7 +173,7 @@
 
     move-result v0
 
-    invoke-static {v0}, Lr5/j0;->e(I)V
+    invoke-static {v0}, Lr5/l0;->e(I)V
 
     .line 3
     invoke-virtual {p1}, Ln5/o;->v()Ln5/q;

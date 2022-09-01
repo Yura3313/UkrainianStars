@@ -1,5 +1,5 @@
 .class public final Lrc/d0$k;
-.super Lse/h;
+.super Lse/i;
 .source "SocialApiClient.kt"
 
 # interfaces
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lrc/d0;->j(Ljava/util/List;)Lze/e0;
+    value = Lrc/d0;->j(Ljava/util/List;)Lze/f0;
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,7 +18,7 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/l<",
         "Ljava/util/List<",
         "+",
@@ -26,25 +26,25 @@
         ">;",
         "Ljava/util/List<",
         "+",
-        "Lvc/l;",
+        "Lvc/k;",
         ">;>;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic f:Ljava/util/List;
+.field public final synthetic g:Ljava/util/List;
 
 
 # direct methods
 .method public constructor <init>(Ljava/util/List;)V
     .locals 0
 
-    iput-object p1, p0, Lrc/d0$k;->f:Ljava/util/List;
+    iput-object p1, p0, Lrc/d0$k;->g:Ljava/util/List;
 
     const/4 p1, 0x1
 
-    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -62,7 +62,7 @@
     const-string v1, "data"
 
     .line 2
-    invoke-static {v0, v1}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 3
     new-instance v2, Ljava/util/ArrayList;
@@ -91,7 +91,7 @@
     check-cast v4, Lorg/json/JSONArray;
 
     .line 6
-    invoke-static {v4, v1}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v4, v1}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 7
     invoke-virtual {v4}, Lorg/json/JSONArray;->length()I
@@ -100,7 +100,7 @@
 
     const/4 v5, 0x0
 
-    invoke-static {v5, v0}, Lcom/google/android/play/core/appupdate/c;->c(II)Lve/c;
+    invoke-static {v5, v0}, La5/b0;->l(II)Lve/c;
 
     move-result-object v0
 
@@ -145,9 +145,9 @@
     if-eqz v0, :cond_1
 
     .line 11
-    new-instance v8, Lvc/u;
+    new-instance v8, Lvc/t;
 
-    invoke-direct {v8, v0}, Lvc/u;-><init>(Lorg/json/JSONObject;)V
+    invoke-direct {v8, v0}, Lvc/t;-><init>(Lorg/json/JSONObject;)V
     :try_end_0
     .catch Lorg/json/JSONException; {:try_start_0 .. :try_end_0} :catch_1
     .catch Ljava/text/ParseException; {:try_start_0 .. :try_end_0} :catch_0
@@ -181,7 +181,7 @@
 
     .line 15
     :cond_2
-    invoke-static {v2, v5}, Lje/h;->u(Ljava/util/Collection;Ljava/lang/Iterable;)Z
+    invoke-static {v2, v5}, Lje/h;->p(Ljava/util/Collection;Ljava/lang/Iterable;)Z
 
     goto :goto_0
 
@@ -189,11 +189,11 @@
     const/16 v0, 0xa
 
     .line 16
-    invoke-static {v2, v0}, Lje/f;->q(Ljava/lang/Iterable;I)I
+    invoke-static {v2, v0}, Lje/f;->l(Ljava/lang/Iterable;I)I
 
     move-result v1
 
-    invoke-static {v1}, Lcom/google/android/play/core/assetpacks/o2;->i(I)I
+    invoke-static {v1}, Lt3/h;->g(I)I
 
     move-result v1
 
@@ -228,10 +228,10 @@
     .line 19
     move-object v4, v2
 
-    check-cast v4, Lvc/u;
+    check-cast v4, Lvc/t;
 
     .line 20
-    iget-object v4, v4, Lvc/u;->a:Lcom/supercell/id/model/IdSocialAccount;
+    iget-object v4, v4, Lvc/t;->a:Lcom/supercell/id/model/IdSocialAccount;
 
     .line 21
     invoke-interface {v3, v4, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
@@ -242,12 +242,12 @@
     move-object/from16 v2, p0
 
     .line 22
-    iget-object v1, v2, Lrc/d0$k;->f:Ljava/util/List;
+    iget-object v1, v2, Lrc/d0$k;->g:Ljava/util/List;
 
     .line 23
     new-instance v4, Ljava/util/ArrayList;
 
-    invoke-static {v1, v0}, Lje/f;->q(Ljava/lang/Iterable;I)I
+    invoke-static {v1, v0}, Lje/f;->l(Ljava/lang/Iterable;I)I
 
     move-result v0
 
@@ -273,7 +273,7 @@
     check-cast v1, Lcom/supercell/id/IdIngameFriend;
 
     .line 26
-    new-instance v12, Lvc/l;
+    new-instance v12, Lvc/k;
 
     .line 27
     invoke-virtual {v1}, Lcom/supercell/id/IdIngameFriend;->getAppAccount()Ljava/lang/String;
@@ -309,14 +309,14 @@
 
     move-result-object v5
 
-    check-cast v5, Lvc/u;
+    check-cast v5, Lvc/t;
 
     if-eqz v5, :cond_6
 
     goto :goto_5
 
     :cond_6
-    new-instance v5, Lvc/u;
+    new-instance v5, Lvc/t;
 
     invoke-virtual {v1}, Lcom/supercell/id/IdIngameFriend;->getAccount()Lcom/supercell/id/model/IdSocialAccount;
 
@@ -325,13 +325,13 @@
     const-string v1, "account"
 
     .line 33
-    invoke-static {v14, v1}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v14, v1}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 34
-    sget-object v16, Lcom/supercell/id/model/ProfileImage$Empty;->g:Lcom/supercell/id/model/ProfileImage$Empty;
+    sget-object v16, Lcom/supercell/id/model/ProfileImage$Empty;->h:Lcom/supercell/id/model/ProfileImage$Empty;
 
     .line 35
-    sget-object v17, Lcom/supercell/id/model/IdRelationshipStatus$Strangers;->g:Lcom/supercell/id/model/IdRelationshipStatus$Strangers;
+    sget-object v17, Lcom/supercell/id/model/IdRelationshipStatus$Strangers;->h:Lcom/supercell/id/model/IdRelationshipStatus$Strangers;
 
     const/4 v15, 0x0
 
@@ -340,7 +340,7 @@
     move-object v13, v5
 
     .line 36
-    invoke-direct/range {v13 .. v18}, Lvc/u;-><init>(Lcom/supercell/id/model/IdSocialAccount;Ljava/lang/String;Lcom/supercell/id/model/ProfileImage;Lcom/supercell/id/model/IdRelationshipStatus;Z)V
+    invoke-direct/range {v13 .. v18}, Lvc/t;-><init>(Lcom/supercell/id/model/IdSocialAccount;Ljava/lang/String;Lcom/supercell/id/model/ProfileImage;Lcom/supercell/id/model/IdRelationshipStatus;Z)V
 
     :goto_5
     move-object v11, v5
@@ -348,7 +348,7 @@
     move-object v5, v12
 
     .line 37
-    invoke-direct/range {v5 .. v11}, Lvc/l;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLvc/u;)V
+    invoke-direct/range {v5 .. v11}, Lvc/k;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZLvc/t;)V
 
     .line 38
     invoke-virtual {v4, v12}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z

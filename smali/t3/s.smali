@@ -1,67 +1,146 @@
 .class public final Lt3/s;
-.super Lt3/x;
+.super Lt3/r;
 .source "com.google.android.gms:play-services-games@@20.0.1"
 
 
 # instance fields
-.field public f:Z
+.field public final transient i:I
 
-.field public final synthetic g:Ljava/lang/Object;
+.field public final transient j:I
+
+.field public final synthetic k:Lt3/r;
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/Object;)V
+.method public constructor <init>(Lt3/r;II)V
     .locals 0
 
-    iput-object p1, p0, Lt3/s;->g:Ljava/lang/Object;
+    .line 1
+    iput-object p1, p0, Lt3/s;->k:Lt3/r;
 
-    invoke-direct {p0}, Lt3/x;-><init>()V
+    invoke-direct {p0}, Lt3/r;-><init>()V
+
+    .line 2
+    iput p2, p0, Lt3/s;->i:I
+
+    .line 3
+    iput p3, p0, Lt3/s;->j:I
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final hasNext()Z
+.method public final e()[Ljava/lang/Object;
     .locals 1
 
-    iget-boolean v0, p0, Lt3/s;->f:Z
+    iget-object v0, p0, Lt3/s;->k:Lt3/r;
 
-    if-nez v0, :cond_0
+    invoke-virtual {v0}, Lt3/q;->e()[Ljava/lang/Object;
 
-    const/4 v0, 0x1
+    move-result-object v0
 
-    return v0
+    return-object v0
+.end method
 
-    :cond_0
-    const/4 v0, 0x0
+.method public final f()I
+    .locals 2
+
+    iget-object v0, p0, Lt3/s;->k:Lt3/r;
+
+    invoke-virtual {v0}, Lt3/q;->f()I
+
+    move-result v0
+
+    iget v1, p0, Lt3/s;->i:I
+
+    add-int/2addr v0, v1
 
     return v0
 .end method
 
-.method public final next()Ljava/lang/Object;
-    .locals 1
+.method public final g()I
+    .locals 2
+
+    iget-object v0, p0, Lt3/s;->k:Lt3/r;
+
+    invoke-virtual {v0}, Lt3/q;->f()I
+
+    move-result v0
+
+    iget v1, p0, Lt3/s;->i:I
+
+    add-int/2addr v0, v1
+
+    iget v1, p0, Lt3/s;->j:I
+
+    add-int/2addr v0, v1
+
+    return v0
+.end method
+
+.method public final get(I)Ljava/lang/Object;
+    .locals 2
 
     .line 1
-    iget-boolean v0, p0, Lt3/s;->f:Z
+    iget v0, p0, Lt3/s;->j:I
 
-    if-nez v0, :cond_0
-
-    const/4 v0, 0x1
+    invoke-static {p1, v0}, Lt3/n;->a(II)I
 
     .line 2
-    iput-boolean v0, p0, Lt3/s;->f:Z
+    iget-object v0, p0, Lt3/s;->k:Lt3/r;
 
-    .line 3
-    iget-object v0, p0, Lt3/s;->g:Ljava/lang/Object;
+    iget v1, p0, Lt3/s;->i:I
 
-    return-object v0
+    add-int/2addr p1, v1
 
-    .line 4
-    :cond_0
-    new-instance v0, Ljava/util/NoSuchElementException;
+    invoke-interface {v0, p1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
-    invoke-direct {v0}, Ljava/util/NoSuchElementException;-><init>()V
+    move-result-object p1
 
-    throw v0
+    return-object p1
+.end method
+
+.method public final i(II)Lt3/r;
+    .locals 2
+
+    .line 1
+    iget v0, p0, Lt3/s;->j:I
+
+    invoke-static {p1, p2, v0}, Lt3/n;->b(III)V
+
+    .line 2
+    iget-object v0, p0, Lt3/s;->k:Lt3/r;
+
+    iget v1, p0, Lt3/s;->i:I
+
+    add-int/2addr p1, v1
+
+    add-int/2addr p2, v1
+
+    invoke-virtual {v0, p1, p2}, Lt3/r;->subList(II)Ljava/util/List;
+
+    move-result-object p1
+
+    check-cast p1, Lt3/r;
+
+    return-object p1
+.end method
+
+.method public final size()I
+    .locals 1
+
+    iget v0, p0, Lt3/s;->j:I
+
+    return v0
+.end method
+
+.method public final synthetic subList(II)Ljava/util/List;
+    .locals 0
+
+    invoke-virtual {p0, p1, p2}, Lt3/s;->i(II)Lt3/r;
+
+    move-result-object p1
+
+    return-object p1
 .end method

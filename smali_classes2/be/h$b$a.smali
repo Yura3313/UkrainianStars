@@ -19,7 +19,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
-            "Lvc/t;",
+            "Lvc/s;",
             ">;"
         }
     .end annotation
@@ -43,7 +43,7 @@
         value = {
             "(",
             "Ljava/util/List<",
-            "Lvc/t;",
+            "Lvc/s;",
             ">;",
             "Ljava/util/List<",
             "+",
@@ -54,7 +54,7 @@
 
     const-string v0, "failedRequests"
 
-    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-direct {p0}, Lbe/h$b;-><init>()V
 
@@ -82,7 +82,7 @@
 
     iget-object v1, p1, Lbe/h$b$a;->a:Ljava/util/List;
 
-    invoke-static {v0, v1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, v1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result v0
 
@@ -92,7 +92,7 @@
 
     iget-object p1, p1, Lbe/h$b$a;->b:Ljava/util/List;
 
-    invoke-static {v0, p1}, Lt3/e;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
+    invoke-static {v0, p1}, Lt3/h;->a(Ljava/lang/Object;Ljava/lang/Object;)Z
 
     move-result p1
 
@@ -186,7 +186,7 @@
 
     move-object v3, v2
 
-    check-cast v3, Lvc/j;
+    check-cast v3, Lvc/i;
 
     if-eqz v3, :cond_b
 
@@ -198,7 +198,7 @@
 
     const/16 v4, 0xa
 
-    invoke-static {v1, v4}, Lje/f;->q(Ljava/lang/Iterable;I)I
+    invoke-static {v1, v4}, Lje/f;->l(Ljava/lang/Iterable;I)I
 
     move-result v5
 
@@ -221,10 +221,10 @@
     move-result-object v5
 
     .line 7
-    check-cast v5, Lvc/t;
+    check-cast v5, Lvc/s;
 
     .line 8
-    iget-object v5, v5, Lvc/t;->a:Lcom/supercell/id/model/IdSocialAccount;
+    iget-object v5, v5, Lvc/s;->a:Lcom/supercell/id/model/IdSocialAccount;
 
     .line 9
     invoke-virtual {v2, v5}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
@@ -232,7 +232,7 @@
     goto :goto_0
 
     :cond_1
-    invoke-static {v2}, Lje/j;->P(Ljava/lang/Iterable;)Ljava/util/HashSet;
+    invoke-static {v2}, Lje/j;->K(Ljava/lang/Iterable;)Ljava/util/HashSet;
 
     move-result-object v1
 
@@ -242,7 +242,7 @@
     .line 11
     new-instance v5, Ljava/util/ArrayList;
 
-    invoke-static {v2, v4}, Lje/f;->q(Ljava/lang/Iterable;I)I
+    invoke-static {v2, v4}, Lje/f;->l(Ljava/lang/Iterable;I)I
 
     move-result v6
 
@@ -265,40 +265,40 @@
     move-result-object v6
 
     .line 13
-    check-cast v6, Lvc/t;
+    check-cast v6, Lvc/s;
 
-    new-instance v15, Lvc/i;
+    new-instance v15, Lvc/h;
 
     const-string v7, "data"
 
     .line 14
-    invoke-static {v6, v7}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v6, v7}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 15
-    iget-object v8, v6, Lvc/t;->a:Lcom/supercell/id/model/IdSocialAccount;
+    iget-object v8, v6, Lvc/s;->a:Lcom/supercell/id/model/IdSocialAccount;
 
     .line 16
-    iget-object v9, v6, Lvc/t;->b:Ljava/lang/String;
+    iget-object v9, v6, Lvc/s;->b:Ljava/lang/String;
 
     .line 17
-    iget-object v10, v6, Lvc/t;->c:Lcom/supercell/id/model/ProfileImage;
+    iget-object v10, v6, Lvc/s;->c:Lcom/supercell/id/model/ProfileImage;
 
     .line 18
-    iget-object v11, v6, Lvc/t;->i:Lcom/supercell/id/model/IdPresenceStatus;
+    iget-object v11, v6, Lvc/s;->i:Lcom/supercell/id/model/IdPresenceStatus;
 
     .line 19
-    iget-object v12, v6, Lvc/t;->f:Lcom/supercell/id/model/IdRelationshipStatus;
+    iget-object v12, v6, Lvc/s;->f:Lcom/supercell/id/model/IdRelationshipStatus;
 
     .line 20
-    iget-boolean v14, v6, Lvc/t;->j:Z
+    iget-boolean v14, v6, Lvc/s;->j:Z
 
     .line 21
-    iget-object v6, v6, Lvc/t;->h:Ljava/util/List;
+    iget-object v6, v6, Lvc/s;->h:Ljava/util/List;
 
     .line 22
     new-instance v13, Ljava/util/ArrayList;
 
-    invoke-static {v6, v4}, Lje/f;->q(Ljava/lang/Iterable;I)I
+    invoke-static {v6, v4}, Lje/f;->l(Ljava/lang/Iterable;I)I
 
     move-result v7
 
@@ -324,7 +324,7 @@
     check-cast v7, Lcom/supercell/id/model/IdConnectedSystem;
 
     .line 25
-    iget-object v7, v7, Lcom/supercell/id/model/IdConnectedSystem;->f:Ljava/lang/String;
+    iget-object v7, v7, Lcom/supercell/id/model/IdConnectedSystem;->g:Ljava/lang/String;
 
     .line 26
     invoke-virtual {v13, v7}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
@@ -345,7 +345,7 @@
     move-object/from16 v15, v16
 
     .line 27
-    invoke-direct/range {v7 .. v15}, Lvc/i;-><init>(Lcom/supercell/id/model/IdSocialAccount;Ljava/lang/String;Lcom/supercell/id/model/ProfileImage;Lcom/supercell/id/model/IdPresenceStatus;Lcom/supercell/id/model/IdRelationshipStatus;IZLjava/util/List;)V
+    invoke-direct/range {v7 .. v15}, Lvc/h;-><init>(Lcom/supercell/id/model/IdSocialAccount;Ljava/lang/String;Lcom/supercell/id/model/ProfileImage;Lcom/supercell/id/model/IdPresenceStatus;Lcom/supercell/id/model/IdRelationshipStatus;IZLjava/util/List;)V
 
     .line 28
     invoke-virtual {v5, v6}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
@@ -354,7 +354,7 @@
 
     .line 29
     :cond_3
-    iget-object v2, v3, Lvc/j;->a:Ljava/util/List;
+    iget-object v2, v3, Lvc/i;->a:Ljava/util/List;
 
     .line 30
     new-instance v4, Ljava/util/ArrayList;
@@ -382,10 +382,10 @@
 
     move-object v8, v6
 
-    check-cast v8, Lvc/i;
+    check-cast v8, Lvc/h;
 
     .line 32
-    iget-object v9, v8, Lvc/i;->a:Lcom/supercell/id/model/IdSocialAccount;
+    iget-object v9, v8, Lvc/h;->a:Lcom/supercell/id/model/IdSocialAccount;
 
     .line 33
     invoke-virtual {v1, v9}, Ljava/util/HashSet;->contains(Ljava/lang/Object;)Z
@@ -397,7 +397,7 @@
     iget-object v9, v0, Lbe/h$b$a;->b:Ljava/util/List;
 
     .line 34
-    iget-object v8, v8, Lvc/i;->a:Lcom/supercell/id/model/IdSocialAccount;
+    iget-object v8, v8, Lvc/h;->a:Lcom/supercell/id/model/IdSocialAccount;
 
     .line 35
     invoke-interface {v9, v8}, Ljava/util/List;->contains(Ljava/lang/Object;)Z
@@ -419,14 +419,14 @@
     goto :goto_3
 
     :cond_6
-    invoke-static {v4, v5}, Lje/j;->I(Ljava/util/Collection;Ljava/lang/Iterable;)Ljava/util/List;
+    invoke-static {v4, v5}, Lje/j;->D(Ljava/util/Collection;Ljava/lang/Iterable;)Ljava/util/List;
 
     move-result-object v4
 
     const/4 v5, 0x0
 
     .line 36
-    iget-object v2, v3, Lvc/j;->c:Ljava/util/List;
+    iget-object v2, v3, Lvc/i;->c:Ljava/util/List;
 
     .line 37
     new-instance v6, Ljava/util/ArrayList;
@@ -452,10 +452,10 @@
 
     move-object v9, v8
 
-    check-cast v9, Lvc/i;
+    check-cast v9, Lvc/h;
 
     .line 39
-    iget-object v9, v9, Lvc/i;->a:Lcom/supercell/id/model/IdSocialAccount;
+    iget-object v9, v9, Lvc/h;->a:Lcom/supercell/id/model/IdSocialAccount;
 
     .line 40
     invoke-virtual {v1, v9}, Ljava/util/HashSet;->contains(Ljava/lang/Object;)Z
@@ -472,7 +472,7 @@
 
     .line 41
     :cond_8
-    iget-object v1, v3, Lvc/j;->a:Ljava/util/List;
+    iget-object v1, v3, Lvc/i;->a:Ljava/util/List;
 
     .line 42
     new-instance v2, Ljava/util/ArrayList;
@@ -498,13 +498,13 @@
 
     move-object v8, v7
 
-    check-cast v8, Lvc/i;
+    check-cast v8, Lvc/h;
 
     .line 44
     iget-object v9, v0, Lbe/h$b$a;->b:Ljava/util/List;
 
     .line 45
-    iget-object v8, v8, Lvc/i;->a:Lcom/supercell/id/model/IdSocialAccount;
+    iget-object v8, v8, Lvc/h;->a:Lcom/supercell/id/model/IdSocialAccount;
 
     .line 46
     invoke-interface {v9, v8}, Ljava/util/List;->contains(Ljava/lang/Object;)Z
@@ -518,7 +518,7 @@
     goto :goto_6
 
     :cond_a
-    invoke-static {v6, v2}, Lje/j;->I(Ljava/util/Collection;Ljava/lang/Iterable;)Ljava/util/List;
+    invoke-static {v6, v2}, Lje/j;->D(Ljava/util/Collection;Ljava/lang/Iterable;)Ljava/util/List;
 
     move-result-object v6
 
@@ -527,7 +527,7 @@
     const/16 v8, 0xa
 
     .line 47
-    invoke-static/range {v3 .. v8}, Lvc/j;->b(Lvc/j;Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/util/List;I)Lvc/j;
+    invoke-static/range {v3 .. v8}, Lvc/i;->b(Lvc/i;Ljava/util/List;Ljava/util/List;Ljava/util/List;Ljava/util/List;I)Lvc/i;
 
     move-result-object v1
 

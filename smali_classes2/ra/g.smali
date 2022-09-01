@@ -46,7 +46,7 @@
 
 
 # virtual methods
-.method public final a(Landroidx/recyclerview/widget/RecyclerView$z;Lo8/y;)V
+.method public final a(Landroidx/recyclerview/widget/RecyclerView$z;Lo8/z;)V
     .locals 5
 
     .line 1
@@ -57,7 +57,7 @@
     .line 2
     iget-object v0, p0, Lra/g;->d:Ljava/lang/String;
 
-    iget-object v1, p2, Lo8/y;->i:Ljava/lang/String;
+    iget-object v1, p2, Lo8/z;->j:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
@@ -69,56 +69,56 @@
 
     .line 3
     :cond_0
-    iget-object v0, p2, Lo8/y;->i:Ljava/lang/String;
+    iget-object v0, p2, Lo8/z;->j:Ljava/lang/String;
 
     iput-object v0, p0, Lra/g;->d:Ljava/lang/String;
 
     .line 4
-    iget-object v0, p1, Lra/g$a;->y:Lcom/helpshift/support/widget/AdminCSATBotView;
+    iget-object v0, p1, Lra/g$a;->z:Lcom/helpshift/support/widget/AdminCSATBotView;
 
     .line 5
-    iget-object v1, v0, Lcom/helpshift/support/widget/AdminCSATBotView;->g:Lcom/helpshift/views/HSButton;
+    iget-object v1, v0, Lcom/helpshift/support/widget/AdminCSATBotView;->h:Lcom/helpshift/views/HSButton;
 
     const/16 v2, 0x8
 
     invoke-virtual {v1, v2}, Landroid/view/View;->setVisibility(I)V
 
     .line 6
-    iget-object v0, v0, Lcom/helpshift/support/widget/AdminCSATBotView;->f:Landroid/widget/RatingBar;
+    iget-object v0, v0, Lcom/helpshift/support/widget/AdminCSATBotView;->g:Landroid/widget/RatingBar;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Landroid/widget/RatingBar;->setRating(F)V
 
     .line 7
-    iget-object v0, p1, Lra/g$a;->D:Lcom/helpshift/views/HSTextView;
+    iget-object v0, p1, Lra/g$a;->E:Lcom/helpshift/views/HSTextView;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
 
     .line 8
-    iget-object v0, p1, Lra/g$a;->C:Lcom/helpshift/views/HSTextView;
+    iget-object v0, p1, Lra/g$a;->D:Lcom/helpshift/views/HSTextView;
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setVisibility(I)V
 
     .line 9
-    iget-object v0, p1, Lra/g$a;->E:Lcom/helpshift/views/HSTextView;
+    iget-object v0, p1, Lra/g$a;->F:Lcom/helpshift/views/HSTextView;
 
     invoke-virtual {v0, v2}, Landroid/view/View;->setVisibility(I)V
 
     .line 10
-    iget-object v0, p1, Lra/g$a;->B:Lcom/helpshift/views/HSTextView;
+    iget-object v0, p1, Lra/g$a;->C:Lcom/helpshift/views/HSTextView;
 
-    iget-object v3, p2, Lo8/y;->j:Ljava/lang/String;
+    iget-object v3, p2, Lo8/z;->k:Ljava/lang/String;
 
     invoke-virtual {v0, v3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 11
-    iget-object v0, p2, Lo8/g;->z:Lp8/a;
+    iget-object v0, p2, Lo8/g;->A:Lp8/a;
 
     .line 12
-    iget-object v3, v0, Lp8/a;->j:Ljava/util/List;
+    iget-object v3, v0, Lp8/a;->k:Ljava/util/List;
 
     .line 13
     invoke-interface {v3}, Ljava/util/List;->size()I
@@ -134,7 +134,7 @@
 
     check-cast v1, Lp8/a$a;
 
-    iget-object v1, v1, Lp8/a$a;->f:Ljava/lang/String;
+    iget-object v1, v1, Lp8/a$a;->g:Ljava/lang/String;
 
     add-int/lit8 v4, v4, -0x1
 
@@ -145,30 +145,30 @@
 
     check-cast v3, Lp8/a$a;
 
-    iget-object v3, v3, Lp8/a$a;->f:Ljava/lang/String;
+    iget-object v3, v3, Lp8/a$a;->g:Ljava/lang/String;
 
     .line 16
-    iget-object v4, p1, Lra/g$a;->C:Lcom/helpshift/views/HSTextView;
+    iget-object v4, p1, Lra/g$a;->D:Lcom/helpshift/views/HSTextView;
 
     invoke-virtual {v4, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 17
-    iget-object v1, p1, Lra/g$a;->D:Lcom/helpshift/views/HSTextView;
+    iget-object v1, p1, Lra/g$a;->E:Lcom/helpshift/views/HSTextView;
 
     invoke-virtual {v1, v3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 18
     :cond_1
-    iget-object v1, p1, Lra/g$a;->A:Lcom/helpshift/views/HSButton;
+    iget-object v1, p1, Lra/g$a;->B:Lcom/helpshift/views/HSButton;
 
-    iget-object v3, v0, Lp8/a;->l:Ljava/lang/String;
+    iget-object v3, v0, Lp8/a;->m:Ljava/lang/String;
 
     invoke-virtual {v1, v3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 19
-    iget-object v1, p1, Lra/g$a;->z:Lcom/helpshift/views/HSButton;
+    iget-object v1, p1, Lra/g$a;->A:Lcom/helpshift/views/HSButton;
 
-    iget-object v3, v0, Lp8/a;->m:Ljava/lang/String;
+    iget-object v3, v0, Lp8/a;->n:Ljava/lang/String;
 
     invoke-virtual {v1, v3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
@@ -178,12 +178,12 @@
     invoke-direct {v1, p0, p1, v0, p2}, Lra/e;-><init>(Lra/g;Lra/g$a;Lp8/a;Lo8/g;)V
 
     .line 21
-    iget-object v0, p1, Lra/g$a;->y:Lcom/helpshift/support/widget/AdminCSATBotView;
+    iget-object v0, p1, Lra/g$a;->z:Lcom/helpshift/support/widget/AdminCSATBotView;
 
     invoke-virtual {v0, v1}, Lcom/helpshift/support/widget/AdminCSATBotView;->setAdminCSATBotListener(Lcom/helpshift/support/widget/AdminCSATBotView$b;)V
 
     .line 22
-    iget-object v0, p1, Lra/g$a;->z:Lcom/helpshift/views/HSButton;
+    iget-object v0, p1, Lra/g$a;->A:Lcom/helpshift/views/HSButton;
 
     new-instance v1, Lra/f;
 
@@ -192,19 +192,19 @@
     invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 23
-    iget-object p2, p2, Lo8/g;->z:Lp8/a;
+    iget-object p2, p2, Lo8/g;->A:Lp8/a;
 
-    iget-boolean p2, p2, Lp8/a;->n:Z
+    iget-boolean p2, p2, Lp8/a;->o:Z
 
     if-nez p2, :cond_2
 
     .line 24
-    iget-object p2, p1, Lra/g$a;->F:Landroid/widget/LinearLayout;
+    iget-object p2, p1, Lra/g$a;->G:Landroid/widget/LinearLayout;
 
     invoke-virtual {p2, v2}, Landroid/view/View;->setVisibility(I)V
 
     .line 25
-    iget-object p1, p1, Lra/g$a;->z:Lcom/helpshift/views/HSButton;
+    iget-object p1, p1, Lra/g$a;->A:Lcom/helpshift/views/HSButton;
 
     invoke-virtual {p1, v2}, Landroid/view/View;->setVisibility(I)V
 

@@ -45,10 +45,10 @@
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
     .line 6
-    invoke-static {v2}, Lcom/helpshift/util/w;->b(Ljava/io/Closeable;)V
+    invoke-static {v2}, Lcom/helpshift/util/v;->a(Ljava/io/Closeable;)V
 
     .line 7
-    invoke-static {v1}, Lcom/helpshift/util/w;->b(Ljava/io/Closeable;)V
+    invoke-static {v1}, Lcom/helpshift/util/v;->a(Ljava/io/Closeable;)V
 
     return-object p0
 
@@ -71,10 +71,10 @@
 
     .line 8
     :goto_0
-    invoke-static {v0}, Lcom/helpshift/util/w;->b(Ljava/io/Closeable;)V
+    invoke-static {v0}, Lcom/helpshift/util/v;->a(Ljava/io/Closeable;)V
 
     .line 9
-    invoke-static {v1}, Lcom/helpshift/util/w;->b(Ljava/io/Closeable;)V
+    invoke-static {v1}, Lcom/helpshift/util/v;->a(Ljava/io/Closeable;)V
 
     .line 10
     throw p0
@@ -116,10 +116,10 @@
     .catchall {:try_start_2 .. :try_end_2} :catchall_0
 
     .line 4
-    invoke-static {v1}, Lcom/helpshift/util/w;->b(Ljava/io/Closeable;)V
+    invoke-static {v1}, Lcom/helpshift/util/v;->a(Ljava/io/Closeable;)V
 
     .line 5
-    invoke-static {p0}, Lcom/helpshift/util/w;->b(Ljava/io/Closeable;)V
+    invoke-static {p0}, Lcom/helpshift/util/v;->a(Ljava/io/Closeable;)V
 
     return-object v0
 
@@ -150,10 +150,10 @@
 
     .line 6
     :goto_0
-    invoke-static {v1}, Lcom/helpshift/util/w;->b(Ljava/io/Closeable;)V
+    invoke-static {v1}, Lcom/helpshift/util/v;->a(Ljava/io/Closeable;)V
 
     .line 7
-    invoke-static {p0}, Lcom/helpshift/util/w;->b(Ljava/io/Closeable;)V
+    invoke-static {p0}, Lcom/helpshift/util/v;->a(Ljava/io/Closeable;)V
 
     .line 8
     throw v0

@@ -37,9 +37,9 @@
     check-cast p1, Lcom/google/android/gms/internal/ads/zzuv;
 
     .line 2
-    iget-object p1, p1, Lcom/google/android/gms/internal/ads/zzuv;->f:Lk3/s41;
+    iget-object p1, p1, Lcom/google/android/gms/internal/ads/zzuv;->g:Lk3/v41;
 
-    invoke-interface {p1}, Lk3/s41;->q()V
+    invoke-interface {p1}, Lk3/v41;->q()V
 
     .line 3
     invoke-virtual {p3}, Landroid/os/Parcel;->writeNoException()V

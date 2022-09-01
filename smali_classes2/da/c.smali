@@ -72,15 +72,15 @@
     .locals 3
 
     .line 1
-    sget-object v0, Lda/a;->h:Lda/a;
+    sget-object v0, Lda/a;->i:Lda/a;
 
     iget-object v1, p0, Lda/c;->c:Li7/c;
 
     .line 2
-    iget-object v1, v1, Li7/c;->g:Ljava/lang/String;
+    iget-object v1, v1, Li7/c;->h:Ljava/lang/String;
 
     .line 3
-    invoke-static {v1}, Lcom/google/android/play/core/appupdate/g;->b(Ljava/lang/String;)Z
+    invoke-static {v1}, La5/b0;->d(Ljava/lang/String;)Z
 
     move-result v1
 
@@ -95,7 +95,7 @@
     iget-object v2, p0, Lda/c;->c:Li7/c;
 
     .line 5
-    iget-object v2, v2, Li7/c;->g:Ljava/lang/String;
+    iget-object v2, v2, Li7/c;->h:Ljava/lang/String;
 
     .line 6
     invoke-virtual {v1, v2}, Lv0/f;->e(Ljava/lang/String;)Lea/a;
@@ -117,9 +117,9 @@
     .locals 9
 
     .line 1
-    sget-object v0, Lda/a;->i:Lda/a;
+    sget-object v0, Lda/a;->j:Lda/a;
 
-    sget-object v1, Lda/a;->h:Lda/a;
+    sget-object v1, Lda/a;->i:Lda/a;
 
     invoke-virtual {p0}, Lda/c;->a()Lda/a;
 
@@ -128,7 +128,7 @@
     if-eq v2, v1, :cond_8
 
     .line 2
-    sget-object v3, Lda/a;->g:Lda/a;
+    sget-object v3, Lda/a;->h:Lda/a;
 
     if-ne v2, v3, :cond_0
 
@@ -141,7 +141,7 @@
     iget-object v4, p0, Lda/c;->c:Li7/c;
 
     .line 4
-    iget-object v4, v4, Li7/c;->g:Ljava/lang/String;
+    iget-object v4, v4, Li7/c;->h:Ljava/lang/String;
 
     .line 5
     invoke-virtual {v2, v4}, Lv0/f;->e(Ljava/lang/String;)Lea/a;
@@ -157,7 +157,7 @@
     iget-object v4, v2, Lea/a;->e:Lda/a;
 
     .line 7
-    sget-object v5, Lda/a;->f:Lda/a;
+    sget-object v5, Lda/a;->g:Lda/a;
 
     if-eq v4, v5, :cond_2
 
@@ -176,11 +176,11 @@
     invoke-direct {v5, v8, v6, v7}, Lc8/l;-><init>(Ljava/lang/String;La8/f;Le8/s;)V
 
     .line 9
-    new-instance v6, Lk3/m7;
+    new-instance v6, Lk3/n7;
 
     iget-object v7, p0, Lda/c;->a:Le8/s;
 
-    invoke-direct {v6, v5, v7}, Lk3/m7;-><init>(Lc8/j;Le8/s;)V
+    invoke-direct {v6, v5, v7}, Lk3/n7;-><init>(Lc8/j;Le8/s;)V
 
     .line 10
     new-instance v5, Lg7/a;
@@ -188,9 +188,9 @@
     invoke-direct {v5, v6}, Lg7/a;-><init>(Ljava/lang/Object;)V
 
     .line 11
-    new-instance v6, Lk3/zb0;
+    new-instance v6, Lk3/bc0;
 
-    invoke-direct {v6, v5}, Lk3/zb0;-><init>(Ljava/lang/Object;)V
+    invoke-direct {v6, v5}, Lk3/bc0;-><init>(Ljava/lang/Object;)V
 
     .line 12
     new-instance v5, Lc8/e;
@@ -218,7 +218,7 @@
     iget-object v2, p0, Lda/c;->c:Li7/c;
 
     .line 17
-    iget-object v2, v2, Li7/c;->j:Ljava/lang/String;
+    iget-object v2, v2, Li7/c;->k:Ljava/lang/String;
 
     const-string v7, "did"
 
@@ -229,10 +229,10 @@
     iget-object v2, p0, Lda/c;->c:Li7/c;
 
     .line 20
-    iget-object v2, v2, Li7/c;->g:Ljava/lang/String;
+    iget-object v2, v2, Li7/c;->h:Ljava/lang/String;
 
     .line 21
-    invoke-static {v2}, Lcom/google/android/play/core/appupdate/g;->b(Ljava/lang/String;)Z
+    invoke-static {v2}, La5/b0;->d(Ljava/lang/String;)Z
 
     move-result v2
 
@@ -242,7 +242,7 @@
     iget-object v2, p0, Lda/c;->c:Li7/c;
 
     .line 23
-    iget-object v2, v2, Li7/c;->g:Ljava/lang/String;
+    iget-object v2, v2, Li7/c;->h:Ljava/lang/String;
 
     const-string v7, "uid"
 
@@ -254,10 +254,10 @@
     iget-object v2, p0, Lda/c;->c:Li7/c;
 
     .line 26
-    iget-object v2, v2, Li7/c;->h:Ljava/lang/String;
+    iget-object v2, v2, Li7/c;->i:Ljava/lang/String;
 
     .line 27
-    invoke-static {v2}, Lcom/google/android/play/core/appupdate/g;->b(Ljava/lang/String;)Z
+    invoke-static {v2}, La5/b0;->d(Ljava/lang/String;)Z
 
     move-result v2
 
@@ -267,7 +267,7 @@
     iget-object v2, p0, Lda/c;->c:Li7/c;
 
     .line 29
-    iget-object v2, v2, Li7/c;->h:Ljava/lang/String;
+    iget-object v2, v2, Li7/c;->i:Ljava/lang/String;
 
     const-string v7, "email"
 
@@ -297,13 +297,13 @@
     move-exception v2
 
     .line 34
-    iget-object v3, v2, Lcom/helpshift/common/exception/RootAPIException;->h:Ld8/a;
+    iget-object v3, v2, Lcom/helpshift/common/exception/RootAPIException;->i:Ld8/a;
 
-    sget-object v5, Ld8/b;->z:Ld8/b;
+    sget-object v5, Ld8/b;->A:Ld8/b;
 
     if-eq v3, v5, :cond_7
 
-    sget-object v5, Ld8/b;->A:Ld8/b;
+    sget-object v5, Ld8/b;->B:Ld8/b;
 
     if-ne v3, v5, :cond_5
 
@@ -311,7 +311,7 @@
 
     .line 35
     :cond_5
-    sget-object v5, Ld8/b;->s:Ld8/b;
+    sget-object v5, Ld8/b;->t:Ld8/b;
 
     if-ne v3, v5, :cond_6
 
@@ -341,7 +341,7 @@
     .locals 8
 
     .line 1
-    sget-object v0, Lda/a;->h:Lda/a;
+    sget-object v0, Lda/a;->i:Lda/a;
 
     const/4 v1, 0x1
 
@@ -355,7 +355,7 @@
     iget-object v3, p0, Lda/c;->c:Li7/c;
 
     .line 3
-    iget-object v3, v3, Li7/c;->g:Ljava/lang/String;
+    iget-object v3, v3, Li7/c;->h:Ljava/lang/String;
 
     .line 4
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -366,7 +366,7 @@
 
     .line 5
     :cond_0
-    iget-object v0, v0, Lv0/f;->g:Ljava/lang/Object;
+    iget-object v0, v0, Lv0/f;->h:Ljava/lang/Object;
 
     check-cast v0, Lg7/e;
 
@@ -411,7 +411,7 @@
     const-string v3, "Error in deleting legacy profile"
 
     .line 9
-    invoke-static {v2, v3, v1}, Landroidx/savedstate/d;->g(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v2, v3, v1}, Le5/i;->i(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
@@ -433,7 +433,7 @@
     iget-object v3, p0, Lda/c;->c:Li7/c;
 
     .line 12
-    iget-object v3, v3, Li7/c;->g:Ljava/lang/String;
+    iget-object v3, v3, Li7/c;->h:Ljava/lang/String;
 
     .line 13
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -441,7 +441,7 @@
     if-eqz v3, :cond_2
 
     .line 14
-    iget-object v0, v0, Lv0/f;->g:Ljava/lang/Object;
+    iget-object v0, v0, Lv0/f;->h:Ljava/lang/Object;
 
     check-cast v0, Lg7/e;
 
@@ -504,7 +504,7 @@
     const-string v3, "Error in updating user migration sync status"
 
     .line 20
-    invoke-static {v2, v3, v1}, Landroidx/savedstate/d;->g(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
+    invoke-static {v2, v3, v1}, Le5/i;->i(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)V
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_1
 

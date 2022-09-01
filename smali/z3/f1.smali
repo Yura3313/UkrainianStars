@@ -3,7 +3,7 @@
 
 
 # instance fields
-.field public b:Z
+.field public h:Z
 
 
 # direct methods
@@ -14,16 +14,16 @@
     invoke-direct {p0, p1}, Ly3/a;-><init>(Lz3/p0;)V
 
     .line 2
-    iget-object p1, p0, Ly3/a;->a:Ljava/lang/Object;
+    iget-object p1, p0, Ly3/a;->g:Ljava/lang/Object;
 
     check-cast p1, Lz3/p0;
 
     .line 3
-    iget v0, p1, Lz3/p0;->D:I
+    iget v0, p1, Lz3/p0;->J:I
 
     add-int/lit8 v0, v0, 0x1
 
-    iput v0, p1, Lz3/p0;->D:I
+    iput v0, p1, Lz3/p0;->J:I
 
     return-void
 .end method
@@ -34,7 +34,7 @@
     .locals 2
 
     .line 1
-    iget-boolean v0, p0, Lz3/f1;->b:Z
+    iget-boolean v0, p0, Lz3/f1;->h:Z
 
     if-nez v0, :cond_1
 
@@ -46,7 +46,7 @@
     if-nez v0, :cond_0
 
     .line 3
-    iget-object v0, p0, Ly3/a;->a:Ljava/lang/Object;
+    iget-object v0, p0, Ly3/a;->g:Ljava/lang/Object;
 
     check-cast v0, Lz3/p0;
 
@@ -55,7 +55,7 @@
     const/4 v0, 0x1
 
     .line 4
-    iput-boolean v0, p0, Lz3/f1;->b:Z
+    iput-boolean v0, p0, Lz3/f1;->h:Z
 
     :cond_0
     return-void
@@ -74,7 +74,7 @@
 .method public final v()Z
     .locals 1
 
-    iget-boolean v0, p0, Lz3/f1;->b:Z
+    iget-boolean v0, p0, Lz3/f1;->h:Z
 
     if-eqz v0, :cond_0
 
@@ -115,7 +115,7 @@
     .locals 2
 
     .line 1
-    iget-boolean v0, p0, Lz3/f1;->b:Z
+    iget-boolean v0, p0, Lz3/f1;->h:Z
 
     if-nez v0, :cond_0
 
@@ -123,7 +123,7 @@
     invoke-virtual {p0}, Lz3/f1;->z()V
 
     .line 3
-    iget-object v0, p0, Ly3/a;->a:Ljava/lang/Object;
+    iget-object v0, p0, Ly3/a;->g:Ljava/lang/Object;
 
     check-cast v0, Lz3/p0;
 
@@ -132,7 +132,7 @@
     const/4 v0, 0x1
 
     .line 4
-    iput-boolean v0, p0, Lz3/f1;->b:Z
+    iput-boolean v0, p0, Lz3/f1;->h:Z
 
     return-void
 

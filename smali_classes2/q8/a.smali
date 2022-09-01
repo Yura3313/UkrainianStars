@@ -7,13 +7,13 @@
 
 
 # instance fields
-.field public f:Ljava/lang/Long;
-
-.field public final g:Ljava/lang/String;
+.field public g:Ljava/lang/Long;
 
 .field public final h:Ljava/lang/String;
 
-.field public final i:Ljava/util/Map;
+.field public final i:Ljava/lang/String;
+
+.field public final j:Ljava/util/Map;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/Map<",
@@ -24,7 +24,7 @@
     .end annotation
 .end field
 
-.field public final j:Lq8/c;
+.field public final k:Lq8/c;
 
 
 # direct methods
@@ -47,16 +47,16 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object p2, p0, Lq8/a;->g:Ljava/lang/String;
+    iput-object p2, p0, Lq8/a;->h:Ljava/lang/String;
 
     .line 3
-    iput-object p1, p0, Lq8/a;->h:Ljava/lang/String;
+    iput-object p1, p0, Lq8/a;->i:Ljava/lang/String;
 
     .line 4
-    iput-object p4, p0, Lq8/a;->i:Ljava/util/Map;
+    iput-object p4, p0, Lq8/a;->j:Ljava/util/Map;
 
     .line 5
-    iput-object p3, p0, Lq8/a;->j:Lq8/c;
+    iput-object p3, p0, Lq8/a;->k:Lq8/c;
 
     return-void
 .end method
@@ -68,33 +68,33 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 7
-    iget-object v0, p1, Lq8/a;->g:Ljava/lang/String;
-
-    iput-object v0, p0, Lq8/a;->g:Ljava/lang/String;
-
-    .line 8
     iget-object v0, p1, Lq8/a;->h:Ljava/lang/String;
 
     iput-object v0, p0, Lq8/a;->h:Ljava/lang/String;
 
+    .line 8
+    iget-object v0, p1, Lq8/a;->i:Ljava/lang/String;
+
+    iput-object v0, p0, Lq8/a;->i:Ljava/lang/String;
+
     .line 9
     new-instance v0, Ljava/util/HashMap;
 
-    iget-object v1, p1, Lq8/a;->i:Ljava/util/Map;
+    iget-object v1, p1, Lq8/a;->j:Ljava/util/Map;
 
     invoke-direct {v0, v1}, Ljava/util/HashMap;-><init>(Ljava/util/Map;)V
 
-    iput-object v0, p0, Lq8/a;->i:Ljava/util/Map;
+    iput-object v0, p0, Lq8/a;->j:Ljava/util/Map;
 
     .line 10
-    iget-object v0, p1, Lq8/a;->j:Lq8/c;
+    iget-object v0, p1, Lq8/a;->k:Lq8/c;
 
-    iput-object v0, p0, Lq8/a;->j:Lq8/c;
+    iput-object v0, p0, Lq8/a;->k:Lq8/c;
 
     .line 11
-    iget-object p1, p1, Lq8/a;->f:Ljava/lang/Long;
+    iget-object p1, p1, Lq8/a;->g:Ljava/lang/Long;
 
-    iput-object p1, p0, Lq8/a;->f:Ljava/lang/Long;
+    iput-object p1, p0, Lq8/a;->g:Ljava/lang/Long;
 
     return-void
 .end method
@@ -135,9 +135,9 @@
     check-cast p1, Lq8/a;
 
     .line 3
-    iget-object p1, p1, Lq8/a;->g:Ljava/lang/String;
+    iget-object p1, p1, Lq8/a;->h:Ljava/lang/String;
 
-    iget-object v0, p0, Lq8/a;->g:Ljava/lang/String;
+    iget-object v0, p0, Lq8/a;->h:Ljava/lang/String;
 
     invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 

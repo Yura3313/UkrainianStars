@@ -14,7 +14,7 @@
 # static fields
 .field public static final a:Ljava/lang/Object;
 
-.field public static b:Ld2/e0;
+.field public static b:Ld2/f0;
 
 
 # direct methods
@@ -54,20 +54,20 @@
 
     .line 2
     :try_start_0
-    sget-object v1, Ld2/d;->b:Ld2/e0;
+    sget-object v1, Ld2/d;->b:Ld2/f0;
 
     if-nez v1, :cond_0
 
     .line 3
-    new-instance v1, Ld2/e0;
+    new-instance v1, Ld2/f0;
 
     invoke-virtual {p0}, Landroid/content/Context;->getApplicationContext()Landroid/content/Context;
 
     move-result-object p0
 
-    invoke-direct {v1, p0}, Ld2/e0;-><init>(Landroid/content/Context;)V
+    invoke-direct {v1, p0}, Ld2/f0;-><init>(Landroid/content/Context;)V
 
-    sput-object v1, Ld2/d;->b:Ld2/e0;
+    sput-object v1, Ld2/d;->b:Ld2/f0;
 
     goto :goto_0
 
@@ -84,7 +84,7 @@
     .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     .line 5
-    sget-object p0, Ld2/d;->b:Ld2/e0;
+    sget-object p0, Ld2/d;->b:Ld2/f0;
 
     return-object p0
 

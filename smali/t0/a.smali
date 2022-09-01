@@ -12,9 +12,9 @@
 
 
 # instance fields
-.field public f:Landroid/view/animation/Animation$AnimationListener;
+.field public g:Landroid/view/animation/Animation$AnimationListener;
 
-.field public g:I
+.field public h:I
 
 
 # direct methods
@@ -58,7 +58,7 @@
     float-to-int v2, v2
 
     .line 3
-    iput v2, p0, Lt0/a;->g:I
+    iput v2, p0, Lt0/a;->h:I
 
     .line 4
     sget v2, Landroid/os/Build$VERSION;->SDK_INT:I
@@ -101,7 +101,7 @@
     :cond_1
     new-instance p1, Lt0/a$a;
 
-    iget v2, p0, Lt0/a;->g:I
+    iget v2, p0, Lt0/a;->h:I
 
     invoke-direct {p1, p0, v2}, Lt0/a$a;-><init>(Lt0/a;I)V
 
@@ -122,7 +122,7 @@
 
     move-result-object p1
 
-    iget v3, p0, Lt0/a;->g:I
+    iget v3, p0, Lt0/a;->h:I
 
     int-to-float v3, v3
 
@@ -135,7 +135,7 @@
     invoke-virtual {p1, v3, v1, v0, v4}, Landroid/graphics/Paint;->setShadowLayer(FFFI)V
 
     .line 11
-    iget p1, p0, Lt0/a;->g:I
+    iget p1, p0, Lt0/a;->h:I
 
     .line 12
     invoke-virtual {p0, p1, p1, p1, p1}, Landroid/view/View;->setPadding(IIII)V
@@ -170,7 +170,7 @@
     invoke-super {p0}, Landroid/view/View;->onAnimationEnd()V
 
     .line 2
-    iget-object v0, p0, Lt0/a;->f:Landroid/view/animation/Animation$AnimationListener;
+    iget-object v0, p0, Lt0/a;->g:Landroid/view/animation/Animation$AnimationListener;
 
     if-eqz v0, :cond_0
 
@@ -192,7 +192,7 @@
     invoke-super {p0}, Landroid/view/View;->onAnimationStart()V
 
     .line 2
-    iget-object v0, p0, Lt0/a;->f:Landroid/view/animation/Animation$AnimationListener;
+    iget-object v0, p0, Lt0/a;->g:Landroid/view/animation/Animation$AnimationListener;
 
     if-eqz v0, :cond_0
 
@@ -235,7 +235,7 @@
 
     move-result p1
 
-    iget p2, p0, Lt0/a;->g:I
+    iget p2, p0, Lt0/a;->h:I
 
     mul-int/lit8 p2, p2, 0x2
 
@@ -245,7 +245,7 @@
 
     move-result p1
 
-    iget v0, p0, Lt0/a;->g:I
+    iget v0, p0, Lt0/a;->h:I
 
     mul-int/lit8 v0, v0, 0x2
 

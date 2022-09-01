@@ -32,7 +32,7 @@
     .line 2
     iget-object v0, p0, Lqa/g;->a:Lqa/t;
 
-    iget-object v0, v0, Lqa/t;->j0:Lqa/e0;
+    iget-object v0, v0, Lqa/t;->k0:Lqa/e0;
 
     .line 3
     iget-object p1, p1, Lqb/p;->c:Ljava/lang/String;
@@ -64,7 +64,7 @@
     move-result-object v1
 
     .line 7
-    invoke-static {p1, v1}, Lcom/google/android/play/core/appupdate/g;->d(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-static {p1, v1}, La5/b0;->f(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v1
 

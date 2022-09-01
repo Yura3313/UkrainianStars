@@ -1,386 +1,726 @@
 .class public final Lv3/e2;
-.super Ljava/lang/Object;
+.super Lv3/s1;
 
 # interfaces
-.implements Lv3/m5;
+.implements Lv3/d4;
+.implements Ljava/util/RandomAccess;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lv3/s1<",
+        "Ljava/lang/Double;",
+        ">;",
+        "Lv3/d4;",
+        "Ljava/util/RandomAccess;"
+    }
+.end annotation
 
 
 # instance fields
-.field public final a:Lcom/google/android/gms/internal/measurement/zztv;
+.field public h:[D
+
+.field public i:I
 
 
 # direct methods
-.method public constructor <init>(Lcom/google/android/gms/internal/measurement/zztv;)V
-    .locals 1
+.method public static constructor <clinit>()V
+    .locals 2
 
     .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    new-instance v0, Lv3/e2;
+
+    invoke-direct {v0}, Lv3/e2;-><init>()V
+
+    const/4 v1, 0x0
 
     .line 2
-    sget-object v0, Lv3/v2;->a:Ljava/nio/charset/Charset;
-
-    if-eqz p1, :cond_0
-
-    iput-object p1, p0, Lv3/e2;->a:Lcom/google/android/gms/internal/measurement/zztv;
-
-    .line 3
-    iput-object p0, p1, Lcom/google/android/gms/internal/measurement/zztv;->a:Lv3/e2;
+    iput-boolean v1, v0, Lv3/s1;->g:Z
 
     return-void
+.end method
+
+.method public constructor <init>()V
+    .locals 1
+
+    const/16 v0, 0xa
+
+    new-array v0, v0, [D
+
+    .line 1
+    invoke-direct {p0}, Lv3/s1;-><init>()V
+
+    .line 2
+    iput-object v0, p0, Lv3/e2;->h:[D
+
+    const/4 v0, 0x0
+
+    .line 3
+    iput v0, p0, Lv3/e2;->i:I
+
+    return-void
+.end method
+
+.method public constructor <init>([DI)V
+    .locals 0
 
     .line 4
-    :cond_0
-    new-instance p1, Ljava/lang/NullPointerException;
+    invoke-direct {p0}, Lv3/s1;-><init>()V
 
-    const-string v0, "output"
+    .line 5
+    iput-object p1, p0, Lv3/e2;->h:[D
 
-    invoke-direct {p1, v0}, Ljava/lang/NullPointerException;-><init>(Ljava/lang/String;)V
+    .line 6
+    iput p2, p0, Lv3/e2;->i:I
 
-    throw p1
+    return-void
 .end method
 
 
 # virtual methods
-.method public final a(ID)V
-    .locals 1
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
+.method public final synthetic add(ILjava/lang/Object;)V
+    .locals 2
 
     .line 1
-    iget-object v0, p0, Lv3/e2;->a:Lcom/google/android/gms/internal/measurement/zztv;
-
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    check-cast p2, Ljava/lang/Double;
 
     .line 2
-    invoke-static {p2, p3}, Ljava/lang/Double;->doubleToRawLongBits(D)J
+    invoke-virtual {p2}, Ljava/lang/Double;->doubleValue()D
 
-    move-result-wide p2
+    move-result-wide v0
 
-    invoke-virtual {v0, p1, p2, p3}, Lcom/google/android/gms/internal/measurement/zztv;->O(IJ)V
+    invoke-virtual {p0, p1, v0, v1}, Lv3/e2;->f(ID)V
 
     return-void
 .end method
 
-.method public final b(IF)V
-    .locals 1
-    .annotation system Ldalvik/annotation/Throws;
+.method public final addAll(Ljava/util/Collection;)Z
+    .locals 5
+    .annotation system Ldalvik/annotation/Signature;
         value = {
-            Ljava/io/IOException;
+            "(",
+            "Ljava/util/Collection<",
+            "+",
+            "Ljava/lang/Double;",
+            ">;)Z"
         }
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lv3/e2;->a:Lcom/google/android/gms/internal/measurement/zztv;
-
-    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+    invoke-virtual {p0}, Lv3/s1;->b()V
 
     .line 2
-    invoke-static {p2}, Ljava/lang/Float;->floatToRawIntBits(F)I
+    sget-object v0, Lv3/u2;->a:Ljava/nio/charset/Charset;
 
-    move-result p2
+    .line 3
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
-    invoke-virtual {v0, p1, p2}, Lcom/google/android/gms/internal/measurement/zztv;->V(II)V
+    .line 4
+    instance-of v0, p1, Lv3/e2;
 
-    return-void
+    if-nez v0, :cond_0
+
+    .line 5
+    invoke-super {p0, p1}, Lv3/s1;->addAll(Ljava/util/Collection;)Z
+
+    move-result p1
+
+    return p1
+
+    .line 6
+    :cond_0
+    check-cast p1, Lv3/e2;
+
+    .line 7
+    iget v0, p1, Lv3/e2;->i:I
+
+    const/4 v1, 0x0
+
+    if-nez v0, :cond_1
+
+    return v1
+
+    :cond_1
+    const v2, 0x7fffffff
+
+    .line 8
+    iget v3, p0, Lv3/e2;->i:I
+
+    sub-int/2addr v2, v3
+
+    if-lt v2, v0, :cond_3
+
+    add-int/2addr v3, v0
+
+    .line 9
+    iget-object v0, p0, Lv3/e2;->h:[D
+
+    array-length v2, v0
+
+    if-le v3, v2, :cond_2
+
+    .line 10
+    invoke-static {v0, v3}, Ljava/util/Arrays;->copyOf([DI)[D
+
+    move-result-object v0
+
+    iput-object v0, p0, Lv3/e2;->h:[D
+
+    .line 11
+    :cond_2
+    iget-object v0, p1, Lv3/e2;->h:[D
+
+    iget-object v2, p0, Lv3/e2;->h:[D
+
+    iget v4, p0, Lv3/e2;->i:I
+
+    iget p1, p1, Lv3/e2;->i:I
+
+    invoke-static {v0, v1, v2, v4, p1}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+
+    .line 12
+    iput v3, p0, Lv3/e2;->i:I
+
+    .line 13
+    iget p1, p0, Ljava/util/AbstractList;->modCount:I
+
+    const/4 v0, 0x1
+
+    add-int/2addr p1, v0
+
+    iput p1, p0, Ljava/util/AbstractList;->modCount:I
+
+    return v0
+
+    .line 14
+    :cond_3
+    new-instance p1, Ljava/lang/OutOfMemoryError;
+
+    invoke-direct {p1}, Ljava/lang/OutOfMemoryError;-><init>()V
+
+    throw p1
 .end method
 
-.method public final c(IJ)V
+.method public final c(I)V
     .locals 1
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
 
-    iget-object v0, p0, Lv3/e2;->a:Lcom/google/android/gms/internal/measurement/zztv;
-
-    invoke-virtual {v0, p1, p2, p3}, Lcom/google/android/gms/internal/measurement/zztv;->j(IJ)V
-
-    return-void
-.end method
-
-.method public final d(ILjava/lang/Object;)V
-    .locals 1
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
+    if-ltz p1, :cond_0
 
     .line 1
-    instance-of v0, p2, Lv3/x1;
+    iget v0, p0, Lv3/e2;->i:I
 
-    if-eqz v0, :cond_0
-
-    .line 2
-    iget-object v0, p0, Lv3/e2;->a:Lcom/google/android/gms/internal/measurement/zztv;
-
-    check-cast p2, Lv3/x1;
-
-    invoke-virtual {v0, p1, p2}, Lcom/google/android/gms/internal/measurement/zztv;->x(ILv3/x1;)V
+    if-ge p1, v0, :cond_0
 
     return-void
+
+    .line 2
+    :cond_0
+    new-instance v0, Ljava/lang/IndexOutOfBoundsException;
+
+    invoke-virtual {p0, p1}, Lv3/e2;->e(I)Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-direct {v0, p1}, Ljava/lang/IndexOutOfBoundsException;-><init>(Ljava/lang/String;)V
+
+    throw v0
+.end method
+
+.method public final e(I)Ljava/lang/String;
+    .locals 4
+
+    .line 1
+    iget v0, p0, Lv3/e2;->i:I
+
+    const/16 v1, 0x23
+
+    const-string v2, "Index:"
+
+    const-string v3, ", Size:"
+
+    .line 2
+    invoke-static {v1, v2, p1, v3, v0}, Le2/a;->a(ILjava/lang/String;ILjava/lang/String;I)Ljava/lang/String;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 8
+
+    const/4 v0, 0x1
+
+    if-ne p0, p1, :cond_0
+
+    return v0
+
+    .line 1
+    :cond_0
+    instance-of v1, p1, Lv3/e2;
+
+    if-nez v1, :cond_1
+
+    .line 2
+    invoke-super {p0, p1}, Lv3/s1;->equals(Ljava/lang/Object;)Z
+
+    move-result p1
+
+    return p1
+
+    .line 3
+    :cond_1
+    check-cast p1, Lv3/e2;
+
+    .line 4
+    iget v1, p0, Lv3/e2;->i:I
+
+    iget v2, p1, Lv3/e2;->i:I
+
+    const/4 v3, 0x0
+
+    if-eq v1, v2, :cond_2
+
+    return v3
+
+    .line 5
+    :cond_2
+    iget-object p1, p1, Lv3/e2;->h:[D
+
+    const/4 v1, 0x0
+
+    .line 6
+    :goto_0
+    iget v2, p0, Lv3/e2;->i:I
+
+    if-ge v1, v2, :cond_4
+
+    .line 7
+    iget-object v2, p0, Lv3/e2;->h:[D
+
+    aget-wide v4, v2, v1
+
+    invoke-static {v4, v5}, Ljava/lang/Double;->doubleToLongBits(D)J
+
+    move-result-wide v4
+
+    aget-wide v6, p1, v1
+
+    invoke-static {v6, v7}, Ljava/lang/Double;->doubleToLongBits(D)J
+
+    move-result-wide v6
+
+    cmp-long v2, v4, v6
+
+    if-eqz v2, :cond_3
+
+    return v3
+
+    :cond_3
+    add-int/lit8 v1, v1, 0x1
+
+    goto :goto_0
+
+    :cond_4
+    return v0
+.end method
+
+.method public final f(ID)V
+    .locals 5
+
+    .line 1
+    invoke-virtual {p0}, Lv3/s1;->b()V
+
+    if-ltz p1, :cond_1
+
+    .line 2
+    iget v0, p0, Lv3/e2;->i:I
+
+    if-gt p1, v0, :cond_1
+
+    .line 3
+    iget-object v1, p0, Lv3/e2;->h:[D
+
+    array-length v2, v1
+
+    if-ge v0, v2, :cond_0
+
+    add-int/lit8 v2, p1, 0x1
+
+    sub-int/2addr v0, p1
+
+    .line 4
+    invoke-static {v1, p1, v1, v2, v0}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v2, 0x3
+
+    const/4 v3, 0x2
+
+    const/4 v4, 0x1
+
+    .line 5
+    invoke-static {v0, v2, v3, v4}, Lk3/vq0;->a(IIII)I
+
+    move-result v0
+
+    .line 6
+    new-array v0, v0, [D
+
+    const/4 v2, 0x0
+
+    .line 7
+    invoke-static {v1, v2, v0, v2, p1}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+
+    .line 8
+    iget-object v1, p0, Lv3/e2;->h:[D
+
+    add-int/lit8 v2, p1, 0x1
+
+    iget v3, p0, Lv3/e2;->i:I
+
+    sub-int/2addr v3, p1
+
+    invoke-static {v1, p1, v0, v2, v3}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+
+    .line 9
+    iput-object v0, p0, Lv3/e2;->h:[D
+
+    .line 10
+    :goto_0
+    iget-object v0, p0, Lv3/e2;->h:[D
+
+    aput-wide p2, v0, p1
+
+    .line 11
+    iget p1, p0, Lv3/e2;->i:I
+
+    add-int/lit8 p1, p1, 0x1
+
+    iput p1, p0, Lv3/e2;->i:I
+
+    .line 12
+    iget p1, p0, Ljava/util/AbstractList;->modCount:I
+
+    add-int/lit8 p1, p1, 0x1
+
+    iput p1, p0, Ljava/util/AbstractList;->modCount:I
+
+    return-void
+
+    .line 13
+    :cond_1
+    new-instance p2, Ljava/lang/IndexOutOfBoundsException;
+
+    invoke-virtual {p0, p1}, Lv3/e2;->e(I)Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-direct {p2, p1}, Ljava/lang/IndexOutOfBoundsException;-><init>(Ljava/lang/String;)V
+
+    throw p2
+.end method
+
+.method public final synthetic get(I)Ljava/lang/Object;
+    .locals 3
+
+    .line 1
+    invoke-virtual {p0, p1}, Lv3/e2;->c(I)V
+
+    .line 2
+    iget-object v0, p0, Lv3/e2;->h:[D
+
+    aget-wide v1, v0, p1
+
+    .line 3
+    invoke-static {v1, v2}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public final synthetic h0(I)Lv3/x2;
+    .locals 2
+
+    .line 1
+    iget v0, p0, Lv3/e2;->i:I
+
+    if-lt p1, v0, :cond_0
+
+    .line 2
+    new-instance v0, Lv3/e2;
+
+    iget-object v1, p0, Lv3/e2;->h:[D
+
+    invoke-static {v1, p1}, Ljava/util/Arrays;->copyOf([DI)[D
+
+    move-result-object p1
+
+    iget v1, p0, Lv3/e2;->i:I
+
+    invoke-direct {v0, p1, v1}, Lv3/e2;-><init>([DI)V
+
+    return-object v0
 
     .line 3
     :cond_0
-    iget-object v0, p0, Lv3/e2;->a:Lcom/google/android/gms/internal/measurement/zztv;
+    new-instance p1, Ljava/lang/IllegalArgumentException;
 
-    check-cast p2, Lv3/t3;
+    invoke-direct {p1}, Ljava/lang/IllegalArgumentException;-><init>()V
 
-    invoke-virtual {v0, p1, p2}, Lcom/google/android/gms/internal/measurement/zztv;->y(ILv3/t3;)V
-
-    return-void
+    throw p1
 .end method
 
-.method public final e(ILjava/lang/Object;Lv3/i4;)V
-    .locals 1
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
+.method public final hashCode()I
+    .locals 5
 
-    iget-object v0, p0, Lv3/e2;->a:Lcom/google/android/gms/internal/measurement/zztv;
+    const/4 v0, 0x1
 
-    check-cast p2, Lv3/t3;
-
-    invoke-virtual {v0, p1, p2, p3}, Lcom/google/android/gms/internal/measurement/zztv;->m(ILv3/t3;Lv3/i4;)V
-
-    return-void
-.end method
-
-.method public final f(ILv3/x1;)V
-    .locals 1
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
-
-    iget-object v0, p0, Lv3/e2;->a:Lcom/google/android/gms/internal/measurement/zztv;
-
-    invoke-virtual {v0, p1, p2}, Lcom/google/android/gms/internal/measurement/zztv;->k(ILv3/x1;)V
-
-    return-void
-.end method
-
-.method public final g(IJ)V
-    .locals 1
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
+    const/4 v1, 0x0
 
     .line 1
-    iget-object v0, p0, Lv3/e2;->a:Lcom/google/android/gms/internal/measurement/zztv;
+    :goto_0
+    iget v2, p0, Lv3/e2;->i:I
+
+    if-ge v1, v2, :cond_0
 
     .line 2
-    invoke-static {p2, p3}, Lcom/google/android/gms/internal/measurement/zztv;->C(J)J
+    iget-object v2, p0, Lv3/e2;->h:[D
 
-    move-result-wide p2
+    aget-wide v3, v2, v1
 
-    invoke-virtual {v0, p1, p2, p3}, Lcom/google/android/gms/internal/measurement/zztv;->j(IJ)V
+    invoke-static {v3, v4}, Ljava/lang/Double;->doubleToLongBits(D)J
 
-    return-void
-.end method
+    move-result-wide v2
 
-.method public final h(ILjava/lang/Object;Lv3/i4;)V
-    .locals 2
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
-
-    .line 1
-    iget-object v0, p0, Lv3/e2;->a:Lcom/google/android/gms/internal/measurement/zztv;
-
-    check-cast p2, Lv3/t3;
-
-    const/4 v1, 0x3
-
-    .line 2
-    invoke-virtual {v0, p1, v1}, Lcom/google/android/gms/internal/measurement/zztv;->N(II)V
+    mul-int/lit8 v0, v0, 0x1f
 
     .line 3
-    iget-object v1, v0, Lcom/google/android/gms/internal/measurement/zztv;->a:Lv3/e2;
+    invoke-static {v2, v3}, Lv3/u2;->b(J)I
 
-    invoke-interface {p3, p2, v1}, Lv3/i4;->h(Ljava/lang/Object;Lv3/m5;)V
+    move-result v2
 
-    const/4 p2, 0x4
+    add-int/2addr v0, v2
+
+    add-int/lit8 v1, v1, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    return v0
+.end method
+
+.method public final synthetic remove(I)Ljava/lang/Object;
+    .locals 5
+
+    .line 7
+    invoke-virtual {p0}, Lv3/s1;->b()V
+
+    .line 8
+    invoke-virtual {p0, p1}, Lv3/e2;->c(I)V
+
+    .line 9
+    iget-object v0, p0, Lv3/e2;->h:[D
+
+    aget-wide v1, v0, p1
+
+    .line 10
+    iget v3, p0, Lv3/e2;->i:I
+
+    add-int/lit8 v4, v3, -0x1
+
+    if-ge p1, v4, :cond_0
+
+    add-int/lit8 v4, p1, 0x1
+
+    sub-int/2addr v3, p1
+
+    add-int/lit8 v3, v3, -0x1
+
+    .line 11
+    invoke-static {v0, v4, v0, p1, v3}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+
+    .line 12
+    :cond_0
+    iget p1, p0, Lv3/e2;->i:I
+
+    add-int/lit8 p1, p1, -0x1
+
+    iput p1, p0, Lv3/e2;->i:I
+
+    .line 13
+    iget p1, p0, Ljava/util/AbstractList;->modCount:I
+
+    add-int/lit8 p1, p1, 0x1
+
+    iput p1, p0, Ljava/util/AbstractList;->modCount:I
+
+    .line 14
+    invoke-static {v1, v2}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public final remove(Ljava/lang/Object;)Z
+    .locals 5
+
+    .line 1
+    invoke-virtual {p0}, Lv3/s1;->b()V
+
+    const/4 v0, 0x0
+
+    const/4 v1, 0x0
+
+    .line 2
+    :goto_0
+    iget v2, p0, Lv3/e2;->i:I
+
+    if-ge v1, v2, :cond_1
+
+    .line 3
+    iget-object v2, p0, Lv3/e2;->h:[D
+
+    aget-wide v3, v2, v1
+
+    invoke-static {v3, v4}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
+
+    move-result-object v2
+
+    invoke-virtual {p1, v2}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_0
 
     .line 4
-    invoke-virtual {v0, p1, p2}, Lcom/google/android/gms/internal/measurement/zztv;->N(II)V
+    iget-object p1, p0, Lv3/e2;->h:[D
 
-    return-void
+    add-int/lit8 v0, v1, 0x1
+
+    iget v2, p0, Lv3/e2;->i:I
+
+    sub-int/2addr v2, v1
+
+    const/4 v3, 0x1
+
+    sub-int/2addr v2, v3
+
+    invoke-static {p1, v0, p1, v1, v2}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+
+    .line 5
+    iget p1, p0, Lv3/e2;->i:I
+
+    sub-int/2addr p1, v3
+
+    iput p1, p0, Lv3/e2;->i:I
+
+    .line 6
+    iget p1, p0, Ljava/util/AbstractList;->modCount:I
+
+    add-int/2addr p1, v3
+
+    iput p1, p0, Ljava/util/AbstractList;->modCount:I
+
+    return v3
+
+    :cond_0
+    add-int/lit8 v1, v1, 0x1
+
+    goto :goto_0
+
+    :cond_1
+    return v0
 .end method
 
-.method public final i(IZ)V
-    .locals 1
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
-
-    iget-object v0, p0, Lv3/e2;->a:Lcom/google/android/gms/internal/measurement/zztv;
-
-    invoke-virtual {v0, p1, p2}, Lcom/google/android/gms/internal/measurement/zztv;->z(IZ)V
-
-    return-void
-.end method
-
-.method public final j(IJ)V
-    .locals 1
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
-
-    iget-object v0, p0, Lv3/e2;->a:Lcom/google/android/gms/internal/measurement/zztv;
-
-    invoke-virtual {v0, p1, p2, p3}, Lcom/google/android/gms/internal/measurement/zztv;->O(IJ)V
-
-    return-void
-.end method
-
-.method public final k(II)V
-    .locals 1
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
-
-    iget-object v0, p0, Lv3/e2;->a:Lcom/google/android/gms/internal/measurement/zztv;
-
-    invoke-virtual {v0, p1, p2}, Lcom/google/android/gms/internal/measurement/zztv;->Q(II)V
-
-    return-void
-.end method
-
-.method public final l(II)V
-    .locals 1
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
-
-    iget-object v0, p0, Lv3/e2;->a:Lcom/google/android/gms/internal/measurement/zztv;
-
-    invoke-virtual {v0, p1, p2}, Lcom/google/android/gms/internal/measurement/zztv;->S(II)V
-
-    return-void
-.end method
-
-.method public final m(II)V
+.method public final removeRange(II)V
     .locals 2
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
 
     .line 1
-    iget-object v0, p0, Lv3/e2;->a:Lcom/google/android/gms/internal/measurement/zztv;
+    invoke-virtual {p0}, Lv3/s1;->b()V
 
-    shl-int/lit8 v1, p2, 0x1
-
-    shr-int/lit8 p2, p2, 0x1f
-
-    xor-int/2addr p2, v1
+    if-lt p2, p1, :cond_0
 
     .line 2
-    invoke-virtual {v0, p1, p2}, Lcom/google/android/gms/internal/measurement/zztv;->S(II)V
+    iget-object v0, p0, Lv3/e2;->h:[D
+
+    iget v1, p0, Lv3/e2;->i:I
+
+    sub-int/2addr v1, p2
+
+    invoke-static {v0, p2, v0, p1, v1}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+
+    .line 3
+    iget v0, p0, Lv3/e2;->i:I
+
+    sub-int/2addr p2, p1
+
+    sub-int/2addr v0, p2
+
+    iput v0, p0, Lv3/e2;->i:I
+
+    .line 4
+    iget p1, p0, Ljava/util/AbstractList;->modCount:I
+
+    add-int/lit8 p1, p1, 0x1
+
+    iput p1, p0, Ljava/util/AbstractList;->modCount:I
 
     return-void
+
+    .line 5
+    :cond_0
+    new-instance p1, Ljava/lang/IndexOutOfBoundsException;
+
+    const-string p2, "toIndex < fromIndex"
+
+    invoke-direct {p1, p2}, Ljava/lang/IndexOutOfBoundsException;-><init>(Ljava/lang/String;)V
+
+    throw p1
 .end method
 
-.method public final n(II)V
-    .locals 1
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
-
-    iget-object v0, p0, Lv3/e2;->a:Lcom/google/android/gms/internal/measurement/zztv;
-
-    invoke-virtual {v0, p1, p2}, Lcom/google/android/gms/internal/measurement/zztv;->V(II)V
-
-    return-void
-.end method
-
-.method public final o(IJ)V
-    .locals 1
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
+.method public final synthetic set(ILjava/lang/Object;)Ljava/lang/Object;
+    .locals 4
 
     .line 1
-    iget-object v0, p0, Lv3/e2;->a:Lcom/google/android/gms/internal/measurement/zztv;
+    check-cast p2, Ljava/lang/Double;
 
     .line 2
-    invoke-virtual {v0, p1, p2, p3}, Lcom/google/android/gms/internal/measurement/zztv;->j(IJ)V
+    invoke-virtual {p2}, Ljava/lang/Double;->doubleValue()D
 
-    return-void
+    move-result-wide v0
+
+    .line 3
+    invoke-virtual {p0}, Lv3/s1;->b()V
+
+    .line 4
+    invoke-virtual {p0, p1}, Lv3/e2;->c(I)V
+
+    .line 5
+    iget-object p2, p0, Lv3/e2;->h:[D
+
+    aget-wide v2, p2, p1
+
+    .line 6
+    aput-wide v0, p2, p1
+
+    .line 7
+    invoke-static {v2, v3}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
+
+    move-result-object p1
+
+    return-object p1
 .end method
 
-.method public final p(IJ)V
+.method public final size()I
     .locals 1
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
 
-    .line 1
-    iget-object v0, p0, Lv3/e2;->a:Lcom/google/android/gms/internal/measurement/zztv;
+    iget v0, p0, Lv3/e2;->i:I
 
-    .line 2
-    invoke-virtual {v0, p1, p2, p3}, Lcom/google/android/gms/internal/measurement/zztv;->O(IJ)V
-
-    return-void
-.end method
-
-.method public final q(II)V
-    .locals 1
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
-
-    .line 1
-    iget-object v0, p0, Lv3/e2;->a:Lcom/google/android/gms/internal/measurement/zztv;
-
-    .line 2
-    invoke-virtual {v0, p1, p2}, Lcom/google/android/gms/internal/measurement/zztv;->V(II)V
-
-    return-void
-.end method
-
-.method public final r(II)V
-    .locals 1
-    .annotation system Ldalvik/annotation/Throws;
-        value = {
-            Ljava/io/IOException;
-        }
-    .end annotation
-
-    .line 1
-    iget-object v0, p0, Lv3/e2;->a:Lcom/google/android/gms/internal/measurement/zztv;
-
-    .line 2
-    invoke-virtual {v0, p1, p2}, Lcom/google/android/gms/internal/measurement/zztv;->Q(II)V
-
-    return-void
+    return v0
 .end method

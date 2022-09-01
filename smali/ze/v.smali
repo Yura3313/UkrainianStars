@@ -14,7 +14,7 @@
     const-string v0, "kotlinx.coroutines.scheduler"
 
     .line 1
-    invoke-static {v0}, Landroidx/lifecycle/b0;->d(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0}, Landroidx/lifecycle/b0;->e(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -115,7 +115,7 @@
 
     const-string v0, "$this$newCoroutineContext"
 
-    invoke-static {p0, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p0, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 1
     invoke-interface {p0}, Lze/a0;->e()Lke/f;
@@ -127,7 +127,7 @@
     move-result-object p0
 
     .line 2
-    sget-boolean p1, Lze/b0;->a:Z
+    sget-boolean p1, Lze/c0;->a:Z
 
     if-eqz p1, :cond_0
 
@@ -135,7 +135,7 @@
     new-instance p1, Lze/y;
 
     .line 4
-    sget-object v0, Lze/b0;->c:Ljava/util/concurrent/atomic/AtomicLong;
+    sget-object v0, Lze/c0;->c:Ljava/util/concurrent/atomic/AtomicLong;
 
     .line 5
     invoke-virtual {v0}, Ljava/util/concurrent/atomic/AtomicLong;->incrementAndGet()J
@@ -155,7 +155,7 @@
 
     .line 6
     :goto_0
-    sget-object v0, Lze/k0;->a:Lze/t0;
+    sget-object v0, Lze/l0;->a:Lze/u0;
 
     if-eq p0, v0, :cond_1
 

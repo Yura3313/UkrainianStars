@@ -1,5 +1,5 @@
 .class public final Lcom/supercell/id/ui/tutorial/TutorialFragment$d$e;
-.super Lse/h;
+.super Lse/i;
 .source "TutorialFragment.kt"
 
 # interfaces
@@ -18,7 +18,7 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/a<",
         "Lxd/a;",
         ">;"
@@ -27,7 +27,7 @@
 
 
 # static fields
-.field public static final f:Lcom/supercell/id/ui/tutorial/TutorialFragment$d$e;
+.field public static final g:Lcom/supercell/id/ui/tutorial/TutorialFragment$d$e;
 
 
 # direct methods
@@ -38,7 +38,7 @@
 
     invoke-direct {v0}, Lcom/supercell/id/ui/tutorial/TutorialFragment$d$e;-><init>()V
 
-    sput-object v0, Lcom/supercell/id/ui/tutorial/TutorialFragment$d$e;->f:Lcom/supercell/id/ui/tutorial/TutorialFragment$d$e;
+    sput-object v0, Lcom/supercell/id/ui/tutorial/TutorialFragment$d$e;->g:Lcom/supercell/id/ui/tutorial/TutorialFragment$d$e;
 
     return-void
 .end method
@@ -48,7 +48,7 @@
 
     const/4 v0, 0x0
 
-    invoke-direct {p0, v0}, Lse/h;-><init>(I)V
+    invoke-direct {p0, v0}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -58,7 +58,7 @@
 .method public final invoke()Ljava/lang/Object;
     .locals 6
 
-    sget-object v0, Lxd/a;->f0:Lxd/a$a;
+    sget-object v0, Lxd/a;->g0:Lxd/a$a;
 
     const-string v1, "tutorial_5.png"
 

@@ -23,15 +23,15 @@
 
 
 # static fields
-.field public static final enum f:Lcom/supercell/websocket/proxy/protocol/ServerMessage$b;
-
 .field public static final enum g:Lcom/supercell/websocket/proxy/protocol/ServerMessage$b;
 
 .field public static final enum h:Lcom/supercell/websocket/proxy/protocol/ServerMessage$b;
 
 .field public static final enum i:Lcom/supercell/websocket/proxy/protocol/ServerMessage$b;
 
-.field public static final synthetic j:[Lcom/supercell/websocket/proxy/protocol/ServerMessage$b;
+.field public static final enum j:Lcom/supercell/websocket/proxy/protocol/ServerMessage$b;
+
+.field public static final synthetic k:[Lcom/supercell/websocket/proxy/protocol/ServerMessage$b;
 
 
 # direct methods
@@ -47,7 +47,7 @@
 
     invoke-direct {v0, v1, v2}, Lcom/supercell/websocket/proxy/protocol/ServerMessage$b;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Lcom/supercell/websocket/proxy/protocol/ServerMessage$b;->f:Lcom/supercell/websocket/proxy/protocol/ServerMessage$b;
+    sput-object v0, Lcom/supercell/websocket/proxy/protocol/ServerMessage$b;->g:Lcom/supercell/websocket/proxy/protocol/ServerMessage$b;
 
     .line 2
     new-instance v1, Lcom/supercell/websocket/proxy/protocol/ServerMessage$b;
@@ -58,7 +58,7 @@
 
     invoke-direct {v1, v3, v4}, Lcom/supercell/websocket/proxy/protocol/ServerMessage$b;-><init>(Ljava/lang/String;I)V
 
-    sput-object v1, Lcom/supercell/websocket/proxy/protocol/ServerMessage$b;->g:Lcom/supercell/websocket/proxy/protocol/ServerMessage$b;
+    sput-object v1, Lcom/supercell/websocket/proxy/protocol/ServerMessage$b;->h:Lcom/supercell/websocket/proxy/protocol/ServerMessage$b;
 
     .line 3
     new-instance v3, Lcom/supercell/websocket/proxy/protocol/ServerMessage$b;
@@ -69,7 +69,7 @@
 
     invoke-direct {v3, v5, v6}, Lcom/supercell/websocket/proxy/protocol/ServerMessage$b;-><init>(Ljava/lang/String;I)V
 
-    sput-object v3, Lcom/supercell/websocket/proxy/protocol/ServerMessage$b;->h:Lcom/supercell/websocket/proxy/protocol/ServerMessage$b;
+    sput-object v3, Lcom/supercell/websocket/proxy/protocol/ServerMessage$b;->i:Lcom/supercell/websocket/proxy/protocol/ServerMessage$b;
 
     .line 4
     new-instance v5, Lcom/supercell/websocket/proxy/protocol/ServerMessage$b;
@@ -80,7 +80,7 @@
 
     invoke-direct {v5, v7, v8}, Lcom/supercell/websocket/proxy/protocol/ServerMessage$b;-><init>(Ljava/lang/String;I)V
 
-    sput-object v5, Lcom/supercell/websocket/proxy/protocol/ServerMessage$b;->i:Lcom/supercell/websocket/proxy/protocol/ServerMessage$b;
+    sput-object v5, Lcom/supercell/websocket/proxy/protocol/ServerMessage$b;->j:Lcom/supercell/websocket/proxy/protocol/ServerMessage$b;
 
     const/4 v7, 0x4
 
@@ -95,7 +95,7 @@
     aput-object v5, v7, v8
 
     .line 5
-    sput-object v7, Lcom/supercell/websocket/proxy/protocol/ServerMessage$b;->j:[Lcom/supercell/websocket/proxy/protocol/ServerMessage$b;
+    sput-object v7, Lcom/supercell/websocket/proxy/protocol/ServerMessage$b;->k:[Lcom/supercell/websocket/proxy/protocol/ServerMessage$b;
 
     return-void
 .end method
@@ -130,7 +130,7 @@
 .method public static values()[Lcom/supercell/websocket/proxy/protocol/ServerMessage$b;
     .locals 1
 
-    sget-object v0, Lcom/supercell/websocket/proxy/protocol/ServerMessage$b;->j:[Lcom/supercell/websocket/proxy/protocol/ServerMessage$b;
+    sget-object v0, Lcom/supercell/websocket/proxy/protocol/ServerMessage$b;->k:[Lcom/supercell/websocket/proxy/protocol/ServerMessage$b;
 
     invoke-virtual {v0}, [Lcom/supercell/websocket/proxy/protocol/ServerMessage$b;->clone()Ljava/lang/Object;
 

@@ -77,7 +77,7 @@
     .line 7
     iget-object v3, p1, Landroidx/cardview/widget/CardView$a;->b:Landroidx/cardview/widget/CardView;
 
-    iget v4, v3, Landroidx/cardview/widget/CardView;->h:I
+    iget v4, v3, Landroidx/cardview/widget/CardView;->i:I
 
     if-le v1, v4, :cond_0
 
@@ -88,7 +88,7 @@
     :cond_0
     iget-object v1, p1, Landroidx/cardview/widget/CardView$a;->b:Landroidx/cardview/widget/CardView;
 
-    iget v3, v1, Landroidx/cardview/widget/CardView;->i:I
+    iget v3, v1, Landroidx/cardview/widget/CardView;->j:I
 
     if-le v2, v3, :cond_1
 

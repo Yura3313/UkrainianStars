@@ -1,5 +1,5 @@
 .class public final Lnd/j;
-.super Lse/h;
+.super Lse/i;
 .source "MessagesTabFriendsFragment.kt"
 
 # interfaces
@@ -9,33 +9,33 @@
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/p<",
         "Ljava/lang/String;",
         "Landroid/text/SpannableStringBuilder;",
-        "Lie/h;",
+        "Lie/i;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic f:Lnd/k$a;
+.field public final synthetic g:Lnd/k$a;
 
-.field public final synthetic g:Landroid/widget/TextView;
+.field public final synthetic h:Landroid/widget/TextView;
 
 
 # direct methods
 .method public constructor <init>(Lnd/k$a;Landroid/widget/TextView;)V
     .locals 0
 
-    iput-object p1, p0, Lnd/j;->f:Lnd/k$a;
+    iput-object p1, p0, Lnd/j;->g:Lnd/k$a;
 
-    iput-object p2, p0, Lnd/j;->g:Landroid/widget/TextView;
+    iput-object p2, p0, Lnd/j;->h:Landroid/widget/TextView;
 
     const/4 p1, 0x2
 
-    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -52,11 +52,11 @@
     const-string v0, "text"
 
     .line 1
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "result"
 
-    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 2
     new-instance v0, Landroid/text/SpannableStringBuilder;
@@ -64,9 +64,9 @@
     invoke-direct {v0}, Landroid/text/SpannableStringBuilder;-><init>()V
 
     .line 3
-    iget-object v1, p0, Lnd/j;->f:Lnd/k$a;
+    iget-object v1, p0, Lnd/j;->g:Lnd/k$a;
 
-    iget-object v1, v1, Lnd/k$a;->f:Landroid/graphics/drawable/BitmapDrawable;
+    iget-object v1, v1, Lnd/k$a;->g:Landroid/graphics/drawable/BitmapDrawable;
 
     const-string v2, "\u00a0"
 
@@ -85,7 +85,7 @@
 
     invoke-direct {v6, v1}, Lae/h;-><init>(Landroid/graphics/drawable/Drawable;)V
 
-    invoke-static {v5, v3, v6, v4}, La5/w;->c(Landroid/text/SpannableStringBuilder;Ljava/lang/CharSequence;Ljava/lang/Object;I)Landroid/text/SpannableStringBuilder;
+    invoke-static {v5, v3, v6, v4}, Lae/t;->e(Landroid/text/SpannableStringBuilder;Ljava/lang/CharSequence;Ljava/lang/Object;I)Landroid/text/SpannableStringBuilder;
 
     invoke-virtual {v5, v2}, Landroid/text/SpannableStringBuilder;->append(Ljava/lang/CharSequence;)Landroid/text/SpannableStringBuilder;
 
@@ -106,7 +106,7 @@
 
     const-string v1, "SpannableStringBuilder()\u2026                 } ?: \"\")"
 
-    invoke-static {v0, v1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 6
     sget-object v1, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
@@ -129,9 +129,9 @@
 
     const-string v1, "(this as java.lang.String).toUpperCase(locale)"
 
-    invoke-static {p1, v1}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v1}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
-    invoke-static {p1, v3, v2}, Lye/n;->k(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p1, v3, v2}, Lye/n;->l(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p1
 
@@ -144,7 +144,7 @@
     .line 9
     new-instance v3, Landroid/text/style/ForegroundColorSpan;
 
-    iget-object v5, p0, Lnd/j;->g:Landroid/widget/TextView;
+    iget-object v5, p0, Lnd/j;->h:Landroid/widget/TextView;
 
     invoke-virtual {v5}, Landroid/view/View;->getContext()Landroid/content/Context;
 
@@ -170,13 +170,13 @@
     aput-object v5, v1, v2
 
     .line 11
-    invoke-static {v0, p1, v1}, La5/w;->d(Landroid/text/SpannableStringBuilder;Ljava/lang/CharSequence;[Lie/d;)Landroid/text/SpannableStringBuilder;
+    invoke-static {v0, p1, v1}, Lae/t;->f(Landroid/text/SpannableStringBuilder;Ljava/lang/CharSequence;[Lie/d;)Landroid/text/SpannableStringBuilder;
 
     .line 12
     invoke-virtual {p2, v0}, Landroid/text/SpannableStringBuilder;->append(Ljava/lang/CharSequence;)Landroid/text/SpannableStringBuilder;
 
     .line 13
-    sget-object p1, Lie/h;->a:Lie/h;
+    sget-object p1, Lie/i;->a:Lie/i;
 
     return-object p1
 .end method

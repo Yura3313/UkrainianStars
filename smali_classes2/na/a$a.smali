@@ -67,7 +67,7 @@
     if-eqz v1, :cond_4
 
     .line 3
-    iget-boolean v1, v0, Landroidx/fragment/app/Fragment;->F:Z
+    iget-boolean v1, v0, Landroidx/fragment/app/Fragment;->G:Z
 
     if-eqz v1, :cond_0
 
@@ -93,7 +93,7 @@
 
     .line 7
     :cond_1
-    iget p1, v0, Lna/a;->g0:I
+    iget p1, v0, Lna/a;->h0:I
 
     if-nez p1, :cond_3
 
@@ -115,7 +115,7 @@
     invoke-virtual {v0, p1}, Lna/a;->R0(I)V
 
     .line 10
-    iget-object p1, v0, Landroidx/fragment/app/Fragment;->M:Landroid/view/View;
+    iget-object p1, v0, Landroidx/fragment/app/Fragment;->N:Landroid/view/View;
 
     .line 11
     invoke-static {v1, p1}, Lib/f;->e(Ld8/a;Landroid/view/View;)V

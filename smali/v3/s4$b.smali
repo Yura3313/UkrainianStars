@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field public final synthetic f:Lv3/s4;
+.field public final synthetic g:Lv3/s4;
 
 
 # direct methods
 .method public constructor <init>(Lv3/s4;)V
     .locals 0
 
-    iput-object p1, p0, Lv3/s4$b;->f:Lv3/s4;
+    iput-object p1, p0, Lv3/s4$b;->g:Lv3/s4;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -38,7 +38,7 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lv3/s4$b;->f:Lv3/s4;
+    iget-object v0, p0, Lv3/s4$b;->g:Lv3/s4;
 
     new-instance v1, Lv3/r;
 
@@ -54,7 +54,7 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lv3/s4$b;->f:Lv3/s4;
+    iget-object v0, p0, Lv3/s4$b;->g:Lv3/s4;
 
     new-instance v1, Lv3/w;
 
@@ -70,7 +70,7 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lv3/s4$b;->f:Lv3/s4;
+    iget-object v0, p0, Lv3/s4$b;->g:Lv3/s4;
 
     new-instance v1, Lv3/v;
 
@@ -86,7 +86,7 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lv3/s4$b;->f:Lv3/s4;
+    iget-object v0, p0, Lv3/s4$b;->g:Lv3/s4;
 
     new-instance v1, Lv3/s;
 
@@ -107,7 +107,7 @@
     invoke-direct {v0}, Lcom/google/android/gms/internal/measurement/zzk;-><init>()V
 
     .line 2
-    iget-object v1, p0, Lv3/s4$b;->f:Lv3/s4;
+    iget-object v1, p0, Lv3/s4$b;->g:Lv3/s4;
 
     new-instance v2, Lv3/x;
 
@@ -136,7 +136,7 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lv3/s4$b;->f:Lv3/s4;
+    iget-object v0, p0, Lv3/s4$b;->g:Lv3/s4;
 
     new-instance v1, Lv3/t;
 
@@ -152,7 +152,7 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lv3/s4$b;->f:Lv3/s4;
+    iget-object v0, p0, Lv3/s4$b;->g:Lv3/s4;
 
     new-instance v1, Lv3/u;
 

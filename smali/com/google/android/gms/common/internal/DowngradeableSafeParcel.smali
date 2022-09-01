@@ -7,7 +7,7 @@
 
 
 # static fields
-.field public static final f:Ljava/lang/Object;
+.field public static final g:Ljava/lang/Object;
 
 
 # direct methods
@@ -18,7 +18,7 @@
 
     invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
-    sput-object v0, Lcom/google/android/gms/common/internal/DowngradeableSafeParcel;->f:Ljava/lang/Object;
+    sput-object v0, Lcom/google/android/gms/common/internal/DowngradeableSafeParcel;->g:Ljava/lang/Object;
 
     return-void
 .end method
@@ -35,7 +35,7 @@
     .locals 2
 
     .line 1
-    sget-object v0, Lcom/google/android/gms/common/internal/DowngradeableSafeParcel;->f:Ljava/lang/Object;
+    sget-object v0, Lcom/google/android/gms/common/internal/DowngradeableSafeParcel;->g:Ljava/lang/Object;
 
     monitor-enter v0
 
@@ -62,7 +62,7 @@
     .end annotation
 
     .line 1
-    sget-object v0, Lcom/google/android/gms/common/internal/DowngradeableSafeParcel;->f:Ljava/lang/Object;
+    sget-object v0, Lcom/google/android/gms/common/internal/DowngradeableSafeParcel;->g:Ljava/lang/Object;
 
     monitor-enter v0
 

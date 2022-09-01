@@ -1,9 +1,10 @@
 .class public abstract Lt3/r;
-.super Lt3/m;
+.super Lt3/q;
 .source "com.google.android.gms:play-services-games@@20.0.1"
 
 # interfaces
-.implements Ljava/util/Set;
+.implements Ljava/util/List;
+.implements Ljava/util/RandomAccess;
 
 
 # annotations
@@ -12,301 +13,198 @@
         "<E:",
         "Ljava/lang/Object;",
         ">",
-        "Lt3/m<",
+        "Lt3/q<",
         "TE;>;",
-        "Ljava/util/Set<",
-        "TE;>;"
+        "Ljava/util/List<",
+        "TE;>;",
+        "Ljava/util/RandomAccess;"
     }
 .end annotation
 
 
 # static fields
-.field public static final synthetic h:I
-
-
-# instance fields
-.field public transient g:Lt3/n;
+.field public static final h:Lt3/t;
     .annotation system Ldalvik/annotation/Signature;
         value = {
-            "Lt3/n<",
-            "TE;>;"
+            "Lt3/a0<",
+            "Ljava/lang/Object;",
+            ">;"
         }
-    .end annotation
-
-    .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
     .end annotation
 .end field
 
 
 # direct methods
-.method public constructor <init>()V
-    .locals 0
+.method public static constructor <clinit>()V
+    .locals 3
 
-    invoke-direct {p0}, Lt3/m;-><init>()V
+    new-instance v0, Lt3/t;
+
+    sget-object v1, Lt3/y;->k:Lt3/y;
+
+    const/4 v2, 0x0
+
+    invoke-direct {v0, v1, v2}, Lt3/t;-><init>(Lt3/r;I)V
+
+    sput-object v0, Lt3/r;->h:Lt3/t;
 
     return-void
 .end method
 
-.method public static varargs h(I[Ljava/lang/Object;)Lt3/r;
-    .locals 13
+.method public constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Lt3/q;-><init>()V
+
+    return-void
+.end method
+
+.method public static h([Ljava/lang/Object;I)Lt3/r;
+    .locals 1
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "<E:",
             "Ljava/lang/Object;",
-            ">(I[",
+            ">([",
             "Ljava/lang/Object;",
-            ")",
+            "I)",
             "Lt3/r<",
             "TE;>;"
         }
     .end annotation
 
-    :goto_0
-    if-eqz p0, :cond_7
-
-    const/4 v0, 0x0
-
-    const/4 v1, 0x1
-
-    if-eq p0, v1, :cond_6
+    if-nez p1, :cond_0
 
     .line 1
-    invoke-static {p0}, Lt3/r;->j(I)I
-
-    move-result v2
-
-    .line 2
-    new-array v6, v2, [Ljava/lang/Object;
-
-    add-int/lit8 v7, v2, -0x1
-
-    const/4 v3, 0x0
-
-    const/4 v5, 0x0
-
-    const/4 v8, 0x0
-
-    :goto_1
-    if-ge v3, p0, :cond_2
-
-    .line 3
-    aget-object v4, p1, v3
-
-    invoke-static {v4, v3}, Lcom/google/android/gms/ads/q;->e(Ljava/lang/Object;I)Ljava/lang/Object;
-
-    .line 4
-    invoke-virtual {v4}, Ljava/lang/Object;->hashCode()I
-
-    move-result v9
-
-    .line 5
-    invoke-static {v9}, Lk/c;->c(I)I
-
-    move-result v10
-
-    :goto_2
-    and-int v11, v10, v7
-
-    .line 6
-    aget-object v12, v6, v11
-
-    if-nez v12, :cond_0
-
-    add-int/lit8 v10, v8, 0x1
-
-    .line 7
-    aput-object v4, p1, v8
-
-    .line 8
-    aput-object v4, v6, v11
-
-    add-int/2addr v5, v9
-
-    move v8, v10
-
-    goto :goto_3
-
-    .line 9
-    :cond_0
-    invoke-virtual {v12, v4}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
-
-    move-result v11
-
-    if-nez v11, :cond_1
-
-    add-int/lit8 v10, v10, 0x1
-
-    goto :goto_2
-
-    :cond_1
-    :goto_3
-    add-int/lit8 v3, v3, 0x1
-
-    goto :goto_1
-
-    :cond_2
-    const/4 v3, 0x0
-
-    .line 10
-    invoke-static {p1, v8, p0, v3}, Ljava/util/Arrays;->fill([Ljava/lang/Object;IILjava/lang/Object;)V
-
-    if-ne v8, v1, :cond_3
-
-    .line 11
-    aget-object p0, p1, v0
-
-    .line 12
-    new-instance p1, Lt3/v;
-
-    invoke-direct {p1, p0, v5}, Lt3/v;-><init>(Ljava/lang/Object;I)V
-
-    return-object p1
-
-    .line 13
-    :cond_3
-    invoke-static {v8}, Lt3/r;->j(I)I
-
-    move-result p0
-
-    div-int/lit8 v2, v2, 0x2
-
-    if-ge p0, v2, :cond_4
-
-    move p0, v8
-
-    goto :goto_0
-
-    .line 14
-    :cond_4
-    array-length p0, p1
-
-    shr-int/lit8 v0, p0, 0x1
-
-    shr-int/lit8 p0, p0, 0x2
-
-    add-int/2addr v0, p0
-
-    if-ge v8, v0, :cond_5
-
-    .line 15
-    invoke-static {p1, v8}, Ljava/util/Arrays;->copyOf([Ljava/lang/Object;I)[Ljava/lang/Object;
-
-    move-result-object p1
-
-    :cond_5
-    move-object v4, p1
-
-    .line 16
-    new-instance p0, Lt3/t;
-
-    move-object v3, p0
-
-    invoke-direct/range {v3 .. v8}, Lt3/t;-><init>([Ljava/lang/Object;I[Ljava/lang/Object;II)V
+    sget-object p0, Lt3/y;->k:Lt3/y;
 
     return-object p0
 
-    .line 17
-    :cond_6
-    aget-object p0, p1, v0
-
-    .line 18
-    new-instance p1, Lt3/v;
-
-    invoke-direct {p1, p0}, Lt3/v;-><init>(Ljava/lang/Object;)V
-
-    return-object p1
-
-    .line 19
-    :cond_7
-    sget-object p0, Lt3/t;->n:Lt3/t;
-
-    return-object p0
-.end method
-
-.method public static j(I)I
-    .locals 6
-
-    const/4 v0, 0x2
-
-    .line 1
-    invoke-static {p0, v0}, Ljava/lang/Math;->max(II)I
-
-    move-result p0
-
-    const/4 v0, 0x1
-
-    const v1, 0x2ccccccc
-
-    if-ge p0, v1, :cond_1
-
-    add-int/lit8 v1, p0, -0x1
-
     .line 2
-    invoke-static {v1}, Ljava/lang/Integer;->highestOneBit(I)I
-
-    move-result v1
-
-    shl-int/lit8 v0, v1, 0x1
-
-    :goto_0
-    int-to-double v1, v0
-
-    const-wide v3, 0x3fe6666666666666L    # 0.7
-
-    .line 3
-    invoke-static {v1, v2}, Ljava/lang/Double;->isNaN(D)Z
-
-    mul-double v1, v1, v3
-
-    int-to-double v3, p0
-
-    cmpg-double v5, v1, v3
-
-    if-gez v5, :cond_0
-
-    shl-int/lit8 v0, v0, 0x1
-
-    goto :goto_0
-
     :cond_0
-    return v0
+    new-instance v0, Lt3/y;
 
-    :cond_1
-    const/high16 v1, 0x40000000    # 2.0f
+    invoke-direct {v0, p0, p1}, Lt3/y;-><init>([Ljava/lang/Object;I)V
 
-    if-ge p0, v1, :cond_2
-
-    goto :goto_1
-
-    :cond_2
-    const/4 v0, 0x0
-
-    :goto_1
-    if-eqz v0, :cond_3
-
-    return v1
-
-    .line 4
-    :cond_3
-    new-instance p0, Ljava/lang/IllegalArgumentException;
-
-    const-string v0, "collection too large"
-
-    invoke-direct {p0, v0}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
-
-    goto :goto_3
-
-    :goto_2
-    throw p0
-
-    :goto_3
-    goto :goto_2
+    return-object v0
 .end method
 
 
 # virtual methods
-.method public final equals(Ljava/lang/Object;)Z
+.method public final add(ILjava/lang/Object;)V
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(ITE;)V"
+        }
+    .end annotation
+
+    .annotation runtime Ljava/lang/Deprecated;
+    .end annotation
+
+    new-instance p1, Ljava/lang/UnsupportedOperationException;
+
+    invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V
+
+    throw p1
+.end method
+
+.method public final addAll(ILjava/util/Collection;)Z
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(I",
+            "Ljava/util/Collection<",
+            "+TE;>;)Z"
+        }
+    .end annotation
+
+    .annotation runtime Ljava/lang/Deprecated;
+    .end annotation
+
+    new-instance p1, Ljava/lang/UnsupportedOperationException;
+
+    invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V
+
+    throw p1
+.end method
+
+.method public b([Ljava/lang/Object;I)I
     .locals 4
+
+    .line 1
+    invoke-virtual {p0}, Ljava/util/AbstractCollection;->size()I
+
+    move-result v0
+
+    const/4 v1, 0x0
+
+    :goto_0
+    if-ge v1, v0, :cond_0
+
+    add-int v2, p2, v1
+
+    .line 2
+    invoke-interface {p0, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v3
+
+    aput-object v3, p1, v2
+
+    add-int/lit8 v1, v1, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    add-int/2addr p2, v0
+
+    return p2
+.end method
+
+.method public final c()Lt3/b0;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Lt3/b0<",
+            "TE;>;"
+        }
+    .end annotation
+
+    invoke-virtual {p0}, Lt3/r;->listIterator()Ljava/util/ListIterator;
+
+    move-result-object v0
+
+    check-cast v0, Lt3/a0;
+
+    return-object v0
+.end method
+
+.method public final contains(Ljava/lang/Object;)Z
+    .locals 0
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .end annotation
+    .end param
+
+    invoke-virtual {p0, p1}, Lt3/r;->indexOf(Ljava/lang/Object;)I
+
+    move-result p1
+
+    if-ltz p1, :cond_0
+
+    const/4 p1, 0x1
+
+    return p1
+
+    :cond_0
+    const/4 p1, 0x0
+
+    return p1
+.end method
+
+.method public final equals(Ljava/lang/Object;)Z
+    .locals 6
     .param p1    # Ljava/lang/Object;
         .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
         .end annotation
@@ -320,150 +218,407 @@
 
     .line 1
     :cond_0
-    instance-of v1, p1, Lt3/r;
+    instance-of v1, p1, Ljava/util/List;
 
     const/4 v2, 0x0
 
-    if-eqz v1, :cond_1
+    if-eqz v1, :cond_4
 
     .line 2
-    invoke-virtual {p0}, Lt3/r;->i()Z
-
-    move-result v1
-
-    if-eqz v1, :cond_1
-
-    move-object v1, p1
-
-    check-cast v1, Lt3/r;
+    check-cast p1, Ljava/util/List;
 
     .line 3
-    invoke-virtual {v1}, Lt3/r;->i()Z
+    invoke-interface {p0}, Ljava/util/List;->size()I
 
     move-result v1
-
-    if-eqz v1, :cond_1
 
     .line 4
-    invoke-virtual {p0}, Lt3/r;->hashCode()I
-
-    move-result v1
-
-    invoke-virtual {p1}, Ljava/lang/Object;->hashCode()I
+    invoke-interface {p1}, Ljava/util/List;->size()I
 
     move-result v3
 
-    if-eq v1, v3, :cond_1
-
-    return v2
-
-    :cond_1
-    if-ne p0, p1, :cond_2
-
-    goto :goto_0
+    if-ne v1, v3, :cond_4
 
     .line 5
-    :cond_2
-    instance-of v1, p1, Ljava/util/Set;
+    instance-of v3, p1, Ljava/util/RandomAccess;
 
-    if-eqz v1, :cond_3
+    if-eqz v3, :cond_2
+
+    const/4 v3, 0x0
+
+    :goto_0
+    if-ge v3, v1, :cond_1
 
     .line 6
-    check-cast p1, Ljava/util/Set;
+    invoke-interface {p0, v3}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
-    .line 7
-    :try_start_0
-    invoke-interface {p0}, Ljava/util/Set;->size()I
+    move-result-object v4
 
-    move-result v1
+    invoke-interface {p1, v3}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
-    invoke-interface {p1}, Ljava/util/Set;->size()I
+    move-result-object v5
 
-    move-result v3
+    invoke-static {v4, v5}, Lt3/l;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
 
-    if-ne v1, v3, :cond_3
+    move-result v4
 
-    invoke-interface {p0, p1}, Ljava/util/Set;->containsAll(Ljava/util/Collection;)Z
+    if-eqz v4, :cond_4
 
-    move-result p1
-    :try_end_0
-    .catch Ljava/lang/NullPointerException; {:try_start_0 .. :try_end_0} :catch_0
-    .catch Ljava/lang/ClassCastException; {:try_start_0 .. :try_end_0} :catch_0
-
-    if-eqz p1, :cond_3
+    add-int/lit8 v3, v3, 0x1
 
     goto :goto_0
 
-    :catch_0
-    :cond_3
-    const/4 v0, 0x0
-
-    :goto_0
+    :cond_1
     return v0
+
+    .line 7
+    :cond_2
+    invoke-virtual {p0}, Ljava/util/AbstractCollection;->size()I
+
+    move-result v1
+
+    invoke-interface {p1}, Ljava/util/List;->iterator()Ljava/util/Iterator;
+
+    move-result-object p1
+
+    const/4 v3, 0x0
+
+    :goto_1
+    if-ge v3, v1, :cond_3
+
+    .line 8
+    invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result v4
+
+    if-eqz v4, :cond_4
+
+    .line 9
+    invoke-interface {p0, v3}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v4
+
+    add-int/lit8 v3, v3, 0x1
+
+    .line 10
+    invoke-interface {p1}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+
+    move-result-object v5
+
+    .line 11
+    invoke-static {v4, v5}, Lt3/l;->f(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v4
+
+    if-eqz v4, :cond_4
+
+    goto :goto_1
+
+    .line 12
+    :cond_3
+    invoke-interface {p1}, Ljava/util/Iterator;->hasNext()Z
+
+    move-result p1
+
+    if-nez p1, :cond_4
+
+    return v0
+
+    :cond_4
+    return v2
 .end method
 
-.method public hashCode()I
+.method public final hashCode()I
     .locals 4
 
     .line 1
-    invoke-interface {p0}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
+    invoke-virtual {p0}, Ljava/util/AbstractCollection;->size()I
 
-    move-result-object v0
+    move-result v0
 
-    const/4 v1, 0x0
+    const/4 v1, 0x1
 
     const/4 v2, 0x0
 
     :goto_0
-    invoke-interface {v0}, Ljava/util/Iterator;->hasNext()Z
+    if-ge v2, v0, :cond_0
+
+    mul-int/lit8 v1, v1, 0x1f
+
+    .line 2
+    invoke-interface {p0, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v3
+
+    invoke-virtual {v3}, Ljava/lang/Object;->hashCode()I
+
+    move-result v3
+
+    add-int/2addr v3, v1
+
+    xor-int/lit8 v1, v3, -0x1
+
+    xor-int/lit8 v1, v1, -0x1
+
+    add-int/lit8 v2, v2, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    return v1
+.end method
+
+.method public i(II)Lt3/r;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(II)",
+            "Lt3/r<",
+            "TE;>;"
+        }
+    .end annotation
+
+    .line 1
+    invoke-virtual {p0}, Ljava/util/AbstractCollection;->size()I
+
+    move-result v0
+
+    invoke-static {p1, p2, v0}, Lt3/n;->b(III)V
+
+    sub-int/2addr p2, p1
+
+    .line 2
+    invoke-virtual {p0}, Ljava/util/AbstractCollection;->size()I
+
+    move-result v0
+
+    if-ne p2, v0, :cond_0
+
+    return-object p0
+
+    :cond_0
+    if-nez p2, :cond_1
+
+    .line 3
+    sget-object p1, Lt3/y;->k:Lt3/y;
+
+    return-object p1
+
+    .line 4
+    :cond_1
+    new-instance v0, Lt3/s;
+
+    invoke-direct {v0, p0, p1, p2}, Lt3/s;-><init>(Lt3/r;II)V
+
+    return-object v0
+.end method
+
+.method public final indexOf(Ljava/lang/Object;)I
+    .locals 4
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .end annotation
+    .end param
+
+    const/4 v0, -0x1
+
+    if-nez p1, :cond_0
+
+    return v0
+
+    .line 1
+    :cond_0
+    invoke-interface {p0}, Ljava/util/List;->size()I
+
+    move-result v1
+
+    const/4 v2, 0x0
+
+    :goto_0
+    if-ge v2, v1, :cond_2
+
+    .line 2
+    invoke-interface {p0, v2}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v3
+
+    invoke-virtual {p1, v3}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
 
     move-result v3
 
     if-eqz v3, :cond_1
 
-    invoke-interface {v0}, Ljava/util/Iterator;->next()Ljava/lang/Object;
+    return v2
 
-    move-result-object v3
-
-    if-eqz v3, :cond_0
-
-    .line 2
-    invoke-virtual {v3}, Ljava/lang/Object;->hashCode()I
-
-    move-result v3
-
-    goto :goto_1
-
-    :cond_0
-    const/4 v3, 0x0
-
-    :goto_1
-    add-int/2addr v2, v3
-
-    xor-int/lit8 v2, v2, -0x1
-
-    xor-int/lit8 v2, v2, -0x1
+    :cond_1
+    add-int/lit8 v2, v2, 0x1
 
     goto :goto_0
 
-    :cond_1
-    return v2
+    :cond_2
+    return v0
 .end method
 
-.method public i()Z
-    .locals 0
-
-    instance-of p0, p0, Lt3/t;
-
-    return p0
-.end method
-
-.method public synthetic iterator()Ljava/util/Iterator;
+.method public final synthetic iterator()Ljava/util/Iterator;
     .locals 1
 
-    invoke-virtual {p0}, Lt3/m;->c()Lt3/x;
+    invoke-virtual {p0}, Lt3/r;->c()Lt3/b0;
 
     move-result-object v0
 
     return-object v0
+.end method
+
+.method public final lastIndexOf(Ljava/lang/Object;)I
+    .locals 3
+    .param p1    # Ljava/lang/Object;
+        .annotation runtime Lorg/checkerframework/checker/nullness/compatqual/NullableDecl;
+        .end annotation
+    .end param
+
+    const/4 v0, -0x1
+
+    if-nez p1, :cond_0
+
+    return v0
+
+    .line 1
+    :cond_0
+    invoke-interface {p0}, Ljava/util/List;->size()I
+
+    move-result v1
+
+    add-int/2addr v1, v0
+
+    :goto_0
+    if-ltz v1, :cond_2
+
+    .line 2
+    invoke-interface {p0, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object v2
+
+    invoke-virtual {p1, v2}, Ljava/lang/Object;->equals(Ljava/lang/Object;)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_1
+
+    return v1
+
+    :cond_1
+    add-int/lit8 v1, v1, -0x1
+
+    goto :goto_0
+
+    :cond_2
+    return v0
+.end method
+
+.method public final synthetic listIterator()Ljava/util/ListIterator;
+    .locals 1
+
+    const/4 v0, 0x0
+
+    .line 6
+    invoke-virtual {p0, v0}, Lt3/r;->listIterator(I)Ljava/util/ListIterator;
+
+    move-result-object v0
+
+    check-cast v0, Lt3/a0;
+
+    return-object v0
+.end method
+
+.method public final listIterator(I)Ljava/util/ListIterator;
+    .locals 3
+
+    .line 1
+    invoke-virtual {p0}, Ljava/util/AbstractCollection;->size()I
+
+    move-result v0
+
+    if-ltz p1, :cond_1
+
+    if-gt p1, v0, :cond_1
+
+    .line 2
+    invoke-virtual {p0}, Ljava/util/AbstractCollection;->isEmpty()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    .line 3
+    sget-object p1, Lt3/r;->h:Lt3/t;
+
+    return-object p1
+
+    .line 4
+    :cond_0
+    new-instance v0, Lt3/t;
+
+    invoke-direct {v0, p0, p1}, Lt3/t;-><init>(Lt3/r;I)V
+
+    return-object v0
+
+    .line 5
+    :cond_1
+    new-instance v1, Ljava/lang/IndexOutOfBoundsException;
+
+    const-string v2, "index"
+
+    invoke-static {p1, v0, v2}, Lt3/n;->c(IILjava/lang/String;)Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-direct {v1, p1}, Ljava/lang/IndexOutOfBoundsException;-><init>(Ljava/lang/String;)V
+
+    throw v1
+.end method
+
+.method public final remove(I)Ljava/lang/Object;
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(I)TE;"
+        }
+    .end annotation
+
+    .annotation runtime Ljava/lang/Deprecated;
+    .end annotation
+
+    new-instance p1, Ljava/lang/UnsupportedOperationException;
+
+    invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V
+
+    throw p1
+.end method
+
+.method public final set(ILjava/lang/Object;)Ljava/lang/Object;
+    .locals 0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(ITE;)TE;"
+        }
+    .end annotation
+
+    .annotation runtime Ljava/lang/Deprecated;
+    .end annotation
+
+    new-instance p1, Ljava/lang/UnsupportedOperationException;
+
+    invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V
+
+    throw p1
+.end method
+
+.method public synthetic subList(II)Ljava/util/List;
+    .locals 0
+
+    invoke-virtual {p0, p1, p2}, Lt3/r;->i(II)Lt3/r;
+
+    move-result-object p1
+
+    return-object p1
 .end method

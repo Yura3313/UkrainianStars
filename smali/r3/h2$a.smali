@@ -26,7 +26,7 @@
 
 
 # instance fields
-.field public final f:Lr3/h2;
+.field public final g:Lr3/h2;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "TMessageType;"
@@ -34,7 +34,7 @@
     .end annotation
 .end field
 
-.field public g:Lr3/h2;
+.field public h:Lr3/h2;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "TMessageType;"
@@ -42,7 +42,7 @@
     .end annotation
 .end field
 
-.field public h:Z
+.field public i:Z
 
 
 # direct methods
@@ -58,7 +58,7 @@
     invoke-direct {p0}, Lr3/m1;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lr3/h2$a;->f:Lr3/h2;
+    iput-object p1, p0, Lr3/h2$a;->g:Lr3/h2;
 
     const/4 v0, 0x4
 
@@ -72,12 +72,12 @@
     .line 4
     check-cast p1, Lr3/h2;
 
-    iput-object p1, p0, Lr3/h2$a;->g:Lr3/h2;
+    iput-object p1, p0, Lr3/h2$a;->h:Lr3/h2;
 
     const/4 p1, 0x0
 
     .line 5
-    iput-boolean p1, p0, Lr3/h2$a;->h:Z
+    iput-boolean p1, p0, Lr3/h2$a;->i:Z
 
     return-void
 .end method
@@ -125,7 +125,7 @@
     invoke-virtual {p0}, Lr3/h2$a;->e()V
 
     .line 2
-    iget-object v0, p0, Lr3/h2$a;->g:Lr3/h2;
+    iget-object v0, p0, Lr3/h2$a;->h:Lr3/h2;
 
     invoke-static {v0, p1}, Lr3/h2$a;->d(Lr3/h2;Lr3/h2;)V
 
@@ -141,7 +141,7 @@
     .end annotation
 
     .line 1
-    iget-object v0, p0, Lr3/h2$a;->f:Lr3/h2;
+    iget-object v0, p0, Lr3/h2$a;->g:Lr3/h2;
 
     const/4 v1, 0x5
 
@@ -171,12 +171,12 @@
     .locals 4
 
     .line 1
-    iget-boolean v0, p0, Lr3/h2$a;->h:Z
+    iget-boolean v0, p0, Lr3/h2$a;->i:Z
 
     if-eqz v0, :cond_0
 
     .line 2
-    iget-object v0, p0, Lr3/h2$a;->g:Lr3/h2;
+    iget-object v0, p0, Lr3/h2$a;->h:Lr3/h2;
 
     const/4 v1, 0x4
 
@@ -191,7 +191,7 @@
     check-cast v0, Lr3/h2;
 
     .line 5
-    iget-object v1, p0, Lr3/h2$a;->g:Lr3/h2;
+    iget-object v1, p0, Lr3/h2$a;->h:Lr3/h2;
 
     .line 6
     sget-object v2, Lr3/s3;->c:Lr3/s3;
@@ -212,12 +212,12 @@
     invoke-interface {v2, v0, v1}, Lr3/u3;->c(Ljava/lang/Object;Ljava/lang/Object;)V
 
     .line 10
-    iput-object v0, p0, Lr3/h2$a;->g:Lr3/h2;
+    iput-object v0, p0, Lr3/h2$a;->h:Lr3/h2;
 
     const/4 v0, 0x0
 
     .line 11
-    iput-boolean v0, p0, Lr3/h2$a;->h:Z
+    iput-boolean v0, p0, Lr3/h2$a;->i:Z
 
     :cond_0
     return-void
@@ -227,18 +227,18 @@
     .locals 3
 
     .line 1
-    iget-boolean v0, p0, Lr3/h2$a;->h:Z
+    iget-boolean v0, p0, Lr3/h2$a;->i:Z
 
     if-eqz v0, :cond_0
 
     .line 2
-    iget-object v0, p0, Lr3/h2$a;->g:Lr3/h2;
+    iget-object v0, p0, Lr3/h2$a;->h:Lr3/h2;
 
     goto :goto_0
 
     .line 3
     :cond_0
-    iget-object v0, p0, Lr3/h2$a;->g:Lr3/h2;
+    iget-object v0, p0, Lr3/h2$a;->h:Lr3/h2;
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -263,10 +263,10 @@
     const/4 v0, 0x1
 
     .line 8
-    iput-boolean v0, p0, Lr3/h2$a;->h:Z
+    iput-boolean v0, p0, Lr3/h2$a;->i:Z
 
     .line 9
-    iget-object v0, p0, Lr3/h2$a;->g:Lr3/h2;
+    iget-object v0, p0, Lr3/h2$a;->h:Lr3/h2;
 
     :goto_0
     return-object v0
@@ -304,7 +304,7 @@
 .method public final synthetic r()Lr3/g3;
     .locals 1
 
-    iget-object v0, p0, Lr3/h2$a;->f:Lr3/h2;
+    iget-object v0, p0, Lr3/h2$a;->g:Lr3/h2;
 
     return-object v0
 .end method

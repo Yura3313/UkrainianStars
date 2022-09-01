@@ -259,13 +259,13 @@
 
     .line 13
     :try_start_2
-    iget-object v3, v2, Lcom/helpshift/common/exception/RootAPIException;->h:Ld8/a;
+    iget-object v3, v2, Lcom/helpshift/common/exception/RootAPIException;->i:Ld8/a;
 
-    sget-object v4, Ld8/b;->x:Ld8/b;
+    sget-object v4, Ld8/b;->y:Ld8/b;
 
     if-eq v3, v4, :cond_7
 
-    sget-object v4, Ld8/b;->y:Ld8/b;
+    sget-object v4, Ld8/b;->z:Ld8/b;
 
     if-ne v3, v4, :cond_6
 

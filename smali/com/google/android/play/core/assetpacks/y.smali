@@ -1,344 +1,836 @@
-.class public synthetic Lcom/google/android/play/core/assetpacks/y;
+.class public final Lcom/google/android/play/core/assetpacks/y;
 .super Ljava/lang/Object;
-
-# interfaces
-.implements Lcom/google/android/play/core/assetpacks/w;
-.implements Lk3/xs;
 
 
 # static fields
-.field public static final f:Lcom/google/android/play/core/assetpacks/y;
+.field public static final c:La5/b;
 
-.field public static final g:Lk3/fl;
 
-.field public static final h:Lcom/google/android/play/core/assetpacks/y;
+# instance fields
+.field public final a:Landroid/content/Context;
+
+.field public final b:Lcom/google/android/play/core/assetpacks/u1;
 
 
 # direct methods
-.method static synthetic constructor <clinit>()V
-    .locals 1
+.method public static constructor <clinit>()V
+    .locals 3
 
-    .line 1
-    new-instance v0, Lcom/google/android/play/core/assetpacks/y;
+    new-instance v0, La5/b;
 
-    invoke-direct {v0}, Lcom/google/android/play/core/assetpacks/y;-><init>()V
+    const-string v1, "AssetPackStorage"
 
-    sput-object v0, Lcom/google/android/play/core/assetpacks/y;->f:Lcom/google/android/play/core/assetpacks/y;
+    invoke-direct {v0, v1}, La5/b;-><init>(Ljava/lang/String;)V
 
-    .line 2
-    new-instance v0, Lk3/fl;
+    sput-object v0, Lcom/google/android/play/core/assetpacks/y;->c:La5/b;
 
-    invoke-direct {v0}, Lk3/fl;-><init>()V
+    sget-object v0, Ljava/util/concurrent/TimeUnit;->DAYS:Ljava/util/concurrent/TimeUnit;
 
-    sput-object v0, Lcom/google/android/play/core/assetpacks/y;->g:Lk3/fl;
+    const-wide/16 v1, 0xe
 
-    .line 3
-    new-instance v0, Lcom/google/android/play/core/assetpacks/y;
+    invoke-virtual {v0, v1, v2}, Ljava/util/concurrent/TimeUnit;->toMillis(J)J
 
-    invoke-direct {v0}, Lcom/google/android/play/core/assetpacks/y;-><init>()V
+    const-wide/16 v1, 0x1c
 
-    sput-object v0, Lcom/google/android/play/core/assetpacks/y;->h:Lcom/google/android/play/core/assetpacks/y;
+    invoke-virtual {v0, v1, v2}, Ljava/util/concurrent/TimeUnit;->toMillis(J)J
 
     return-void
 .end method
 
-.method public synthetic constructor <init>()V
+.method public constructor <init>(Landroid/content/Context;Lcom/google/android/play/core/assetpacks/u1;)V
     .locals 0
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
+    iput-object p1, p0, Lcom/google/android/play/core/assetpacks/y;->a:Landroid/content/Context;
+
+    iput-object p2, p0, Lcom/google/android/play/core/assetpacks/y;->b:Lcom/google/android/play/core/assetpacks/u1;
+
     return-void
 .end method
 
-.method public static a(Landroid/database/Cursor;)Ljava/util/List;
-    .locals 9
+.method public static c(Ljava/io/File;)V
+    .locals 7
 
-    .line 1
+    invoke-virtual {p0}, Ljava/io/File;->listFiles()[Ljava/io/File;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_2
+
+    invoke-virtual {p0}, Ljava/io/File;->listFiles()[Ljava/io/File;
+
+    move-result-object v0
+
+    array-length v0, v0
+
+    const/4 v1, 0x1
+
+    if-le v0, v1, :cond_2
+
+    invoke-static {p0}, Lcom/google/android/play/core/assetpacks/y;->e(Ljava/io/File;)J
+
+    move-result-wide v0
+
+    invoke-virtual {p0}, Ljava/io/File;->listFiles()[Ljava/io/File;
+
+    move-result-object p0
+
+    array-length v2, p0
+
+    const/4 v3, 0x0
+
+    :goto_0
+    if-ge v3, v2, :cond_2
+
+    aget-object v4, p0, v3
+
+    invoke-virtual {v4}, Ljava/io/File;->getName()Ljava/lang/String;
+
+    move-result-object v5
+
+    invoke-static {v0, v1}, Ljava/lang/String;->valueOf(J)Ljava/lang/String;
+
+    move-result-object v6
+
+    invoke-virtual {v5, v6}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v5
+
+    if-nez v5, :cond_1
+
+    invoke-virtual {v4}, Ljava/io/File;->getName()Ljava/lang/String;
+
+    move-result-object v5
+
+    const-string v6, "stale.tmp"
+
+    invoke-virtual {v5, v6}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v5
+
+    if-eqz v5, :cond_0
+
+    goto :goto_1
+
+    :cond_0
+    invoke-static {v4}, Lcom/google/android/play/core/assetpacks/y;->i(Ljava/io/File;)Z
+
+    :cond_1
+    :goto_1
+    add-int/lit8 v3, v3, 0x1
+
+    goto :goto_0
+
+    :cond_2
+    return-void
+.end method
+
+.method public static e(Ljava/io/File;)J
+    .locals 7
+
+    invoke-virtual {p0}, Ljava/io/File;->exists()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_2
+
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    if-eqz p0, :cond_0
+    const/4 v1, 0x0
 
-    .line 2
-    invoke-interface {p0}, Landroid/database/Cursor;->moveToFirst()Z
+    :try_start_0
+    invoke-virtual {p0}, Ljava/io/File;->listFiles()[Ljava/io/File;
 
-    move-result v1
+    move-result-object p0
 
-    if-eqz v1, :cond_0
+    array-length v2, p0
 
-    .line 3
+    const/4 v3, 0x0
+
     :goto_0
-    invoke-interface {p0}, Landroid/database/Cursor;->isAfterLast()Z
+    if-ge v3, v2, :cond_1
 
-    move-result v1
+    aget-object v4, p0, v3
 
-    if-nez v1, :cond_0
-
-    const-string v1, "TIMESTAMP"
-
-    .line 4
-    invoke-interface {p0, v1}, Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;)I
-
-    move-result v1
-
-    invoke-interface {p0, v1}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
-
-    move-result-object v3
-
-    const-string v1, "MESSAGE"
-
-    .line 5
-    invoke-interface {p0, v1}, Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;)I
-
-    move-result v1
-
-    invoke-interface {p0, v1}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
+    invoke-virtual {v4}, Ljava/io/File;->getName()Ljava/lang/String;
 
     move-result-object v5
 
-    const-string v1, "LEVEL"
+    const-string v6, "stale.tmp"
 
-    .line 6
-    invoke-interface {p0, v1}, Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;)I
+    invoke-virtual {v5, v6}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 
-    move-result v1
+    move-result v5
 
-    invoke-interface {p0, v1}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
+    if-nez v5, :cond_0
+
+    invoke-virtual {v4}, Ljava/io/File;->getName()Ljava/lang/String;
 
     move-result-object v4
 
-    const-string v1, "STACKTRACE"
+    invoke-static {v4}, Ljava/lang/Long;->valueOf(Ljava/lang/String;)Ljava/lang/Long;
 
-    .line 7
-    invoke-interface {p0, v1}, Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;)I
+    move-result-object v4
 
-    move-result v1
+    invoke-interface {v0, v4}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    :try_end_0
+    .catch Ljava/lang/NumberFormatException; {:try_start_0 .. :try_end_0} :catch_0
 
-    invoke-interface {p0, v1}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
-
-    move-result-object v6
-
-    const-string v1, "EXTRAS"
-
-    .line 8
-    invoke-interface {p0, v1}, Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;)I
-
-    move-result v1
-
-    invoke-interface {p0, v1}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
-
-    move-result-object v7
-
-    const-string v1, "SDK_VERSION"
-
-    .line 9
-    invoke-interface {p0, v1}, Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;)I
-
-    move-result v1
-
-    invoke-interface {p0, v1}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
-
-    move-result-object v8
-
-    .line 10
-    new-instance v1, Laa/a;
-
-    move-object v2, v1
-
-    invoke-direct/range {v2 .. v8}, Laa/a;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 11
-    invoke-virtual {v0, v1}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    .line 12
-    invoke-interface {p0}, Landroid/database/Cursor;->moveToNext()Z
+    :cond_0
+    add-int/lit8 v3, v3, 0x1
 
     goto :goto_0
 
-    :cond_0
-    return-object v0
+    :catch_0
+    sget-object p0, Lcom/google/android/play/core/assetpacks/y;->c:La5/b;
+
+    new-array v1, v1, [Ljava/lang/Object;
+
+    const-string v2, "Corrupt asset pack directories."
+
+    invoke-virtual {p0, v2, v1}, La5/b;->c(Ljava/lang/String;[Ljava/lang/Object;)V
+
+    :cond_1
+    invoke-interface {v0}, Ljava/util/List;->isEmpty()Z
+
+    move-result p0
+
+    if-nez p0, :cond_2
+
+    invoke-static {v0}, Ljava/util/Collections;->sort(Ljava/util/List;)V
+
+    invoke-interface {v0}, Ljava/util/List;->size()I
+
+    move-result p0
+
+    add-int/lit8 p0, p0, -0x1
+
+    invoke-interface {v0, p0}, Ljava/util/List;->get(I)Ljava/lang/Object;
+
+    move-result-object p0
+
+    check-cast p0, Ljava/lang/Long;
+
+    invoke-virtual {p0}, Ljava/lang/Long;->longValue()J
+
+    move-result-wide v0
+
+    return-wide v0
+
+    :cond_2
+    const-wide/16 v0, -0x1
+
+    return-wide v0
 .end method
 
-.method public static b(D)Ljava/lang/String;
+.method public static i(Ljava/io/File;)Z
     .locals 6
 
-    const-string v0, " MB"
+    invoke-virtual {p0}, Ljava/io/File;->listFiles()[Ljava/io/File;
 
-    const-wide/high16 v1, 0x4090000000000000L    # 1024.0
+    move-result-object v0
 
-    cmpg-double v3, p0, v1
+    const/4 v1, 0x1
 
-    if-gez v3, :cond_0
+    const/4 v2, 0x0
 
-    const-string v1, " B"
+    if-eqz v0, :cond_1
 
-    goto :goto_0
+    array-length v3, v0
+
+    const/4 v4, 0x0
+
+    :goto_0
+    if-ge v4, v3, :cond_1
+
+    aget-object v5, v0, v4
+
+    invoke-static {v5}, Lcom/google/android/play/core/assetpacks/y;->i(Ljava/io/File;)Z
+
+    move-result v5
+
+    if-eqz v5, :cond_0
+
+    goto :goto_1
 
     :cond_0
-    const-wide/high16 v3, 0x4130000000000000L    # 1048576.0
+    const/4 v1, 0x0
 
-    cmpg-double v5, p0, v3
-
-    if-gez v5, :cond_1
-
-    div-double/2addr p0, v1
-
-    const-string v1, " KB"
+    :goto_1
+    add-int/lit8 v4, v4, 0x1
 
     goto :goto_0
 
     :cond_1
-    div-double/2addr p0, v3
+    invoke-virtual {p0}, Ljava/io/File;->delete()Z
 
-    move-object v1, v0
+    move-result p0
 
-    .line 1
-    :goto_0
-    invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    if-eqz p0, :cond_2
+
+    return v1
+
+    :cond_2
+    return v2
+.end method
+
+.method public static k(Ljava/io/File;)J
+    .locals 6
+
+    invoke-virtual {p0}, Ljava/io/File;->isDirectory()Z
 
     move-result v0
 
-    const/4 v2, 0x0
+    if-nez v0, :cond_0
 
-    const/4 v3, 0x1
+    invoke-virtual {p0}, Ljava/io/File;->length()J
 
-    if-eqz v0, :cond_2
+    move-result-wide v0
 
-    .line 2
-    new-instance v0, Ljava/lang/StringBuilder;
+    return-wide v0
 
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
-
-    sget-object v4, Ljava/util/Locale;->US:Ljava/util/Locale;
-
-    new-array v3, v3, [Ljava/lang/Object;
-
-    invoke-static {p0, p1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
+    :cond_0
+    invoke-virtual {p0}, Ljava/io/File;->listFiles()[Ljava/io/File;
 
     move-result-object p0
 
-    aput-object p0, v3, v2
+    const-wide/16 v0, 0x0
 
-    const-string p0, "%.1f"
+    if-eqz p0, :cond_1
 
-    invoke-static {v4, p0, v3}, Ljava/lang/String;->format(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+    array-length v2, p0
 
-    move-result-object p0
+    const/4 v3, 0x0
 
-    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    :goto_0
+    if-ge v3, v2, :cond_1
 
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+    aget-object v4, p0, v3
 
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+    invoke-static {v4}, Lcom/google/android/play/core/assetpacks/y;->k(Ljava/io/File;)J
 
-    move-result-object p0
+    move-result-wide v4
 
-    goto :goto_1
+    add-long/2addr v0, v4
 
-    .line 3
-    :cond_2
-    new-instance v0, Ljava/lang/StringBuilder;
+    add-int/lit8 v3, v3, 0x1
 
-    invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
+    goto :goto_0
 
-    sget-object v4, Ljava/util/Locale;->US:Ljava/util/Locale;
-
-    new-array v3, v3, [Ljava/lang/Object;
-
-    invoke-static {p0, p1}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
-
-    move-result-object p0
-
-    aput-object p0, v3, v2
-
-    const-string p0, "%.0f"
-
-    invoke-static {v4, p0, v3}, Ljava/lang/String;->format(Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
-
-    move-result-object p0
-
-    invoke-virtual {v0, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object p0
-
-    :goto_1
-    return-object p0
-.end method
-
-.method public static c(Laa/a;)Landroid/content/ContentValues;
-    .locals 3
-
-    .line 1
-    new-instance v0, Landroid/content/ContentValues;
-
-    invoke-direct {v0}, Landroid/content/ContentValues;-><init>()V
-
-    .line 2
-    iget-object v1, p0, Laa/a;->a:Ljava/lang/String;
-
-    const-string v2, "TIMESTAMP"
-
-    invoke-virtual {v0, v2, v1}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 3
-    iget-object v1, p0, Laa/a;->b:Ljava/lang/String;
-
-    const-string v2, "MESSAGE"
-
-    invoke-virtual {v0, v2, v1}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 4
-    iget-object v1, p0, Laa/a;->d:Ljava/lang/String;
-
-    const-string v2, "LEVEL"
-
-    invoke-virtual {v0, v2, v1}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 5
-    iget-object v1, p0, Laa/a;->e:Ljava/lang/String;
-
-    const-string v2, "EXTRAS"
-
-    invoke-virtual {v0, v2, v1}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 6
-    iget-object v1, p0, Laa/a;->c:Ljava/lang/String;
-
-    const-string v2, "STACKTRACE"
-
-    invoke-virtual {v0, v2, v1}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
-
-    .line 7
-    iget-object p0, p0, Laa/a;->f:Ljava/lang/String;
-
-    const-string v1, "SDK_VERSION"
-
-    invoke-virtual {v0, v1, p0}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/String;)V
-
-    return-object v0
+    :cond_1
+    return-wide v0
 .end method
 
 
 # virtual methods
-.method public K(I)I
-    .locals 0
+.method public final a(Ljava/lang/String;IJ)Ljava/io/File;
+    .locals 2
+
+    new-instance v0, Ljava/io/File;
+
+    .line 1
+    new-instance v1, Ljava/io/File;
+
+    invoke-virtual {p0, p1}, Lcom/google/android/play/core/assetpacks/y;->n(Ljava/lang/String;)Ljava/io/File;
+
+    move-result-object p1
+
+    invoke-static {p2}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
+
+    move-result-object p2
+
+    invoke-direct {v1, p1, p2}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
+
+    .line 2
+    invoke-static {p3, p4}, Ljava/lang/String;->valueOf(J)Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-direct {v0, v1, p1}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
+
+    return-object v0
+.end method
+
+.method public final b(Ljava/lang/String;IJLjava/lang/String;)Ljava/io/File;
+    .locals 3
+
+    new-instance v0, Ljava/io/File;
+
+    new-instance v1, Ljava/io/File;
+
+    new-instance v2, Ljava/io/File;
+
+    invoke-virtual {p0, p1, p2, p3, p4}, Lcom/google/android/play/core/assetpacks/y;->p(Ljava/lang/String;IJ)Ljava/io/File;
+
+    move-result-object p1
+
+    const-string p2, "_slices"
+
+    invoke-direct {v2, p1, p2}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
+
+    const-string p1, "_unverified"
+
+    invoke-direct {v1, v2, p1}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
+
+    invoke-direct {v0, v1, p5}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
+
+    return-object v0
+.end method
+
+.method public final d(Ljava/lang/String;IJI)V
+    .locals 1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    .line 1
+    new-instance v0, Ljava/io/File;
+
+    invoke-virtual {p0, p1, p2, p3, p4}, Lcom/google/android/play/core/assetpacks/y;->g(Ljava/lang/String;IJ)Ljava/io/File;
+
+    move-result-object p1
+
+    const-string p2, "merge.tmp"
+
+    invoke-direct {v0, p1, p2}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
+
+    .line 2
+    new-instance p1, Ljava/util/Properties;
+
+    invoke-direct {p1}, Ljava/util/Properties;-><init>()V
+
+    invoke-static {p5}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
+
+    move-result-object p2
+
+    const-string p3, "numberOfMerges"
+
+    invoke-virtual {p1, p3, p2}, Ljava/util/Dictionary;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    invoke-virtual {v0}, Ljava/io/File;->getParentFile()Ljava/io/File;
+
+    move-result-object p2
+
+    invoke-virtual {p2}, Ljava/io/File;->mkdirs()Z
+
+    invoke-virtual {v0}, Ljava/io/File;->createNewFile()Z
+
+    new-instance p2, Ljava/io/FileOutputStream;
+
+    invoke-direct {p2, v0}, Ljava/io/FileOutputStream;-><init>(Ljava/io/File;)V
+
+    invoke-static {p2, v0}, Lio/sentry/instrumentation/file/SentryFileOutputStream$Factory;->create(Ljava/io/FileOutputStream;Ljava/io/File;)Ljava/io/FileOutputStream;
+
+    move-result-object p2
+
+    const/4 p3, 0x0
+
+    invoke-virtual {p1, p2, p3}, Ljava/util/Properties;->store(Ljava/io/OutputStream;Ljava/lang/String;)V
+
+    invoke-virtual {p2}, Ljava/io/OutputStream;->close()V
+
+    return-void
+.end method
+
+.method public final f(Ljava/lang/String;IJLjava/lang/String;)Ljava/io/File;
+    .locals 3
+
+    new-instance v0, Ljava/io/File;
+
+    new-instance v1, Ljava/io/File;
+
+    new-instance v2, Ljava/io/File;
+
+    invoke-virtual {p0, p1, p2, p3, p4}, Lcom/google/android/play/core/assetpacks/y;->p(Ljava/lang/String;IJ)Ljava/io/File;
+
+    move-result-object p1
+
+    const-string p2, "_slices"
+
+    invoke-direct {v2, p1, p2}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
+
+    const-string p1, "_verified"
+
+    invoke-direct {v1, v2, p1}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
+
+    invoke-direct {v0, v1, p5}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
+
+    return-object v0
+.end method
+
+.method public final g(Ljava/lang/String;IJ)Ljava/io/File;
+    .locals 1
+
+    new-instance v0, Ljava/io/File;
+
+    invoke-virtual {p0, p1, p2, p3, p4}, Lcom/google/android/play/core/assetpacks/y;->p(Ljava/lang/String;IJ)Ljava/io/File;
+
+    move-result-object p1
+
+    const-string p2, "_packs"
+
+    invoke-direct {v0, p1, p2}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
+
+    return-object v0
+.end method
+
+.method public final h(Ljava/lang/String;IJLjava/lang/String;)Ljava/io/File;
+    .locals 1
+
+    new-instance v0, Ljava/io/File;
+
+    invoke-virtual/range {p0 .. p5}, Lcom/google/android/play/core/assetpacks/y;->m(Ljava/lang/String;IJLjava/lang/String;)Ljava/io/File;
+
+    move-result-object p1
+
+    const-string p2, "checkpoint.dat"
+
+    invoke-direct {v0, p1, p2}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
+
+    return-object v0
+.end method
+
+.method public final j(Ljava/lang/String;IJ)I
+    .locals 1
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;
+        }
+    .end annotation
+
+    .line 1
+    new-instance v0, Ljava/io/File;
+
+    invoke-virtual {p0, p1, p2, p3, p4}, Lcom/google/android/play/core/assetpacks/y;->g(Ljava/lang/String;IJ)Ljava/io/File;
+
+    move-result-object p1
+
+    const-string p2, "merge.tmp"
+
+    invoke-direct {v0, p1, p2}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
+
+    .line 2
+    invoke-virtual {v0}, Ljava/io/File;->exists()Z
+
+    move-result p1
+
+    if-eqz p1, :cond_1
+
+    new-instance p1, Ljava/util/Properties;
+
+    invoke-direct {p1}, Ljava/util/Properties;-><init>()V
+
+    new-instance p2, Ljava/io/FileInputStream;
+
+    invoke-direct {p2, v0}, Ljava/io/FileInputStream;-><init>(Ljava/io/File;)V
+
+    invoke-static {p2, v0}, Lio/sentry/instrumentation/file/SentryFileInputStream$Factory;->create(Ljava/io/FileInputStream;Ljava/io/File;)Ljava/io/FileInputStream;
+
+    move-result-object p2
+
+    :try_start_0
+    invoke-virtual {p1, p2}, Ljava/util/Properties;->load(Ljava/io/InputStream;)V
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    invoke-virtual {p2}, Ljava/io/InputStream;->close()V
+
+    const-string p2, "numberOfMerges"
+
+    invoke-virtual {p1, p2}, Ljava/util/Properties;->getProperty(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object p3
+
+    const-string p4, "Merge checkpoint file corrupt."
+
+    if-eqz p3, :cond_0
+
+    :try_start_1
+    invoke-virtual {p1, p2}, Ljava/util/Properties;->getProperty(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-static {p1}, Ljava/lang/Integer;->parseInt(Ljava/lang/String;)I
+
+    move-result p1
+    :try_end_1
+    .catch Ljava/lang/NumberFormatException; {:try_start_1 .. :try_end_1} :catch_0
+
+    return p1
+
+    :catch_0
+    move-exception p1
+
+    new-instance p2, Lcom/google/android/play/core/assetpacks/o0;
+
+    invoke-direct {p2, p4, p1}, Lcom/google/android/play/core/assetpacks/o0;-><init>(Ljava/lang/String;Ljava/lang/Exception;)V
+
+    throw p2
+
+    :cond_0
+    new-instance p1, Lcom/google/android/play/core/assetpacks/o0;
+
+    invoke-direct {p1, p4}, Lcom/google/android/play/core/assetpacks/o0;-><init>(Ljava/lang/String;)V
+
+    throw p1
+
+    :catchall_0
+    move-exception p1
+
+    :try_start_2
+    invoke-virtual {p2}, Ljava/io/InputStream;->close()V
+    :try_end_2
+    .catchall {:try_start_2 .. :try_end_2} :catchall_1
+
+    goto :goto_0
+
+    :catchall_1
+    move-exception p2
+
+    invoke-static {p1, p2}, La5/q0;->a(Ljava/lang/Throwable;Ljava/lang/Throwable;)V
+
+    :goto_0
+    throw p1
+
+    :cond_1
+    const/4 p1, 0x0
 
     return p1
 .end method
 
-.method public d(Ljava/lang/Object;)V
-    .locals 0
+.method public final l(Ljava/lang/String;IJLjava/lang/String;)Ljava/io/File;
+    .locals 1
+
+    new-instance v0, Ljava/io/File;
+
+    invoke-virtual/range {p0 .. p5}, Lcom/google/android/play/core/assetpacks/y;->m(Ljava/lang/String;IJLjava/lang/String;)Ljava/io/File;
+
+    move-result-object p1
+
+    const-string p2, "slice.zip"
+
+    invoke-direct {v0, p1, p2}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
+
+    return-object v0
+.end method
+
+.method public final m(Ljava/lang/String;IJLjava/lang/String;)Ljava/io/File;
+    .locals 3
+
+    new-instance v0, Ljava/io/File;
 
     .line 1
-    check-cast p1, Lk3/ur;
+    new-instance v1, Ljava/io/File;
+
+    new-instance v2, Ljava/io/File;
+
+    invoke-virtual {p0, p1, p2, p3, p4}, Lcom/google/android/play/core/assetpacks/y;->p(Ljava/lang/String;IJ)Ljava/io/File;
+
+    move-result-object p1
+
+    const-string p2, "_slices"
+
+    invoke-direct {v2, p1, p2}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
+
+    const-string p1, "_metadata"
+
+    invoke-direct {v1, v2, p1}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
 
     .line 2
-    invoke-interface {p1}, Lk3/ur;->J()V
+    invoke-direct {v0, v1, p5}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
 
-    return-void
+    return-object v0
+.end method
+
+.method public final n(Ljava/lang/String;)Ljava/io/File;
+    .locals 2
+
+    new-instance v0, Ljava/io/File;
+
+    invoke-virtual {p0}, Lcom/google/android/play/core/assetpacks/y;->q()Ljava/io/File;
+
+    move-result-object v1
+
+    invoke-direct {v0, v1, p1}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
+
+    return-object v0
+.end method
+
+.method public final o()Ljava/util/List;
+    .locals 10
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/List<",
+            "Ljava/io/File;",
+            ">;"
+        }
+    .end annotation
+
+    new-instance v0, Ljava/util/ArrayList;
+
+    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
+
+    const/4 v1, 0x0
+
+    :try_start_0
+    invoke-virtual {p0}, Lcom/google/android/play/core/assetpacks/y;->q()Ljava/io/File;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Ljava/io/File;->exists()Z
+
+    move-result v2
+
+    if-eqz v2, :cond_1
+
+    invoke-virtual {p0}, Lcom/google/android/play/core/assetpacks/y;->q()Ljava/io/File;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Ljava/io/File;->listFiles()[Ljava/io/File;
+
+    move-result-object v2
+
+    if-eqz v2, :cond_1
+
+    invoke-virtual {p0}, Lcom/google/android/play/core/assetpacks/y;->q()Ljava/io/File;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Ljava/io/File;->listFiles()[Ljava/io/File;
+
+    move-result-object v2
+
+    array-length v3, v2
+
+    const/4 v4, 0x0
+
+    :goto_0
+    if-ge v4, v3, :cond_2
+
+    aget-object v5, v2, v4
+
+    invoke-virtual {v5}, Ljava/io/File;->getCanonicalPath()Ljava/lang/String;
+
+    move-result-object v6
+
+    .line 1
+    new-instance v7, Ljava/io/File;
+
+    invoke-virtual {p0}, Lcom/google/android/play/core/assetpacks/y;->q()Ljava/io/File;
+
+    move-result-object v8
+
+    const-string v9, "_tmp"
+
+    invoke-direct {v7, v8, v9}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
+
+    .line 2
+    invoke-virtual {v7}, Ljava/io/File;->getCanonicalPath()Ljava/lang/String;
+
+    move-result-object v7
+
+    invoke-virtual {v6, v7}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v6
+
+    if-eqz v6, :cond_0
+
+    goto :goto_1
+
+    :cond_0
+    invoke-interface {v0, v5}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+    :try_end_0
+    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_0
+
+    :goto_1
+    add-int/lit8 v4, v4, 0x1
+
+    goto :goto_0
+
+    :cond_1
+    return-object v0
+
+    :catch_0
+    move-exception v2
+
+    sget-object v3, Lcom/google/android/play/core/assetpacks/y;->c:La5/b;
+
+    const/4 v4, 0x1
+
+    new-array v4, v4, [Ljava/lang/Object;
+
+    aput-object v2, v4, v1
+
+    const/4 v1, 0x6
+
+    const-string v2, "Could not process directory while scanning installed packs. %s"
+
+    .line 3
+    invoke-virtual {v3, v1, v2, v4}, La5/b;->a(ILjava/lang/String;[Ljava/lang/Object;)I
+
+    :cond_2
+    return-object v0
+.end method
+
+.method public final p(Ljava/lang/String;IJ)Ljava/io/File;
+    .locals 6
+
+    new-instance v0, Ljava/io/File;
+
+    new-instance v1, Ljava/io/File;
+
+    new-instance v2, Ljava/io/File;
+
+    .line 1
+    new-instance v3, Ljava/io/File;
+
+    invoke-virtual {p0}, Lcom/google/android/play/core/assetpacks/y;->q()Ljava/io/File;
+
+    move-result-object v4
+
+    const-string v5, "_tmp"
+
+    invoke-direct {v3, v4, v5}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
+
+    .line 2
+    invoke-direct {v2, v3, p1}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
+
+    invoke-static {p2}, Ljava/lang/String;->valueOf(I)Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-direct {v1, v2, p1}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
+
+    invoke-static {p3, p4}, Ljava/lang/String;->valueOf(J)Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-direct {v0, v1, p1}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
+
+    return-object v0
+.end method
+
+.method public final q()Ljava/io/File;
+    .locals 3
+
+    new-instance v0, Ljava/io/File;
+
+    iget-object v1, p0, Lcom/google/android/play/core/assetpacks/y;->a:Landroid/content/Context;
+
+    invoke-virtual {v1}, Landroid/content/Context;->getFilesDir()Ljava/io/File;
+
+    move-result-object v1
+
+    const-string v2, "assetpacks"
+
+    invoke-direct {v0, v1, v2}, Ljava/io/File;-><init>(Ljava/io/File;Ljava/lang/String;)V
+
+    return-object v0
 .end method

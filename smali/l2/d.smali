@@ -2,63 +2,38 @@
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-basement@@17.5.0"
 
-# interfaces
-.implements Ll2/c;
-
-
-# static fields
-.field public static final a:Ll2/d;
-
 
 # direct methods
-.method public static constructor <clinit>()V
-    .locals 1
-
-    new-instance v0, Ll2/d;
-
-    invoke-direct {v0}, Ll2/d;-><init>()V
-
-    sput-object v0, Ll2/d;->a:Ll2/d;
-
-    return-void
-.end method
-
-.method public constructor <init>()V
-    .locals 0
-
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
-
-    return-void
-.end method
-
-
-# virtual methods
-.method public final a()J
+.method public static a(I)Ljava/util/Set;
     .locals 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<T:",
+            "Ljava/lang/Object;",
+            ">(IZ)",
+            "Ljava/util/Set<",
+            "TT;>;"
+        }
+    .end annotation
 
-    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
+    const/high16 v0, 0x3f800000    # 1.0f
 
-    move-result-wide v0
+    const/16 v1, 0x100
 
-    return-wide v0
-.end method
+    if-gt p0, v1, :cond_0
 
-.method public final b()J
-    .locals 2
+    .line 1
+    new-instance v0, Lm/c;
 
-    invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
+    invoke-direct {v0, p0}, Lm/c;-><init>(I)V
 
-    move-result-wide v0
+    return-object v0
 
-    return-wide v0
-.end method
+    .line 2
+    :cond_0
+    new-instance v1, Ljava/util/HashSet;
 
-.method public final c()J
-    .locals 2
+    invoke-direct {v1, p0, v0}, Ljava/util/HashSet;-><init>(IF)V
 
-    invoke-static {}, Ljava/lang/System;->nanoTime()J
-
-    move-result-wide v0
-
-    return-wide v0
+    return-object v1
 .end method

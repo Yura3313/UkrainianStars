@@ -50,7 +50,7 @@
     if-nez p1, :cond_0
 
     .line 2
-    sget-object p1, Landroidx/customview/view/AbsSavedState;->g:Landroidx/customview/view/AbsSavedState;
+    sget-object p1, Landroidx/customview/view/AbsSavedState;->h:Landroidx/customview/view/AbsSavedState;
 
     return-object p1
 
@@ -76,7 +76,7 @@
     if-nez p1, :cond_0
 
     .line 5
-    sget-object p1, Landroidx/customview/view/AbsSavedState;->g:Landroidx/customview/view/AbsSavedState;
+    sget-object p1, Landroidx/customview/view/AbsSavedState;->h:Landroidx/customview/view/AbsSavedState;
 
     return-object p1
 

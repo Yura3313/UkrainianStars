@@ -1,5 +1,5 @@
 .class public final Lpd/d;
-.super Lse/h;
+.super Lse/i;
 .source "ConnectedGamesFragment.kt"
 
 # interfaces
@@ -9,31 +9,31 @@
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/a<",
-        "Lie/h;",
+        "Lie/i;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic f:Lpd/b$c;
+.field public final synthetic g:Lpd/b$c;
 
-.field public final synthetic g:Lbe/w;
+.field public final synthetic h:Lbe/w;
 
 
 # direct methods
 .method public constructor <init>(Lpd/b$c;Lbe/w;)V
     .locals 0
 
-    iput-object p1, p0, Lpd/d;->f:Lpd/b$c;
+    iput-object p1, p0, Lpd/d;->g:Lpd/b$c;
 
-    iput-object p2, p0, Lpd/d;->g:Lbe/w;
+    iput-object p2, p0, Lpd/d;->h:Lbe/w;
 
     const/4 p1, 0x0
 
-    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -44,7 +44,7 @@
     .locals 11
 
     .line 1
-    iget-object v0, p0, Lpd/d;->g:Lbe/w;
+    iget-object v0, p0, Lpd/d;->h:Lbe/w;
 
     const/4 v1, 0x0
 
@@ -55,7 +55,7 @@
     move-result-object v0
 
     .line 2
-    iget-object v0, v0, Lcom/supercell/id/model/IdProfile;->u:Ljava/util/List;
+    iget-object v0, v0, Lcom/supercell/id/model/IdProfile;->v:Ljava/util/List;
 
     .line 3
     invoke-interface {v0}, Ljava/util/List;->isEmpty()Z
@@ -68,17 +68,17 @@
 
     .line 4
     :cond_0
-    iget-object v0, p0, Lpd/d;->f:Lpd/b$c;
+    iget-object v0, p0, Lpd/d;->g:Lpd/b$c;
 
-    iget-object v0, v0, Lpd/b$c;->f:Lpd/b;
+    iget-object v0, v0, Lpd/b$c;->g:Lpd/b;
 
-    iget-object v2, p0, Lpd/d;->g:Lbe/w;
+    iget-object v2, p0, Lpd/d;->h:Lbe/w;
 
     invoke-virtual {v2}, Lbe/w;->a()Lcom/supercell/id/model/IdProfile;
 
     move-result-object v2
 
-    sget v3, Lpd/b;->j0:I
+    sget v3, Lpd/b;->k0:I
 
     .line 5
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
@@ -97,7 +97,7 @@
     move-result v3
 
     .line 7
-    iget-object v4, v2, Lcom/supercell/id/model/IdProfile;->g:Ljava/util/ArrayList;
+    iget-object v4, v2, Lcom/supercell/id/model/IdProfile;->h:Ljava/util/ArrayList;
 
     .line 8
     new-instance v5, Ljava/util/ArrayList;
@@ -125,12 +125,12 @@
 
     move-object v8, v6
 
-    check-cast v8, Lvc/k;
+    check-cast v8, Lvc/j;
 
     if-eqz v3, :cond_2
 
     .line 10
-    iget-boolean v7, v8, Lvc/k;->a:Z
+    iget-boolean v7, v8, Lvc/j;->a:Z
 
     :cond_2
     if-eqz v7, :cond_1
@@ -142,9 +142,9 @@
 
     .line 12
     :cond_3
-    sget-object v3, Lpd/f;->f:Lpd/f;
+    sget-object v3, Lpd/f;->g:Lpd/f;
 
-    invoke-static {v5, v3}, Lje/j;->L(Ljava/lang/Iterable;Ljava/util/Comparator;)Ljava/util/List;
+    invoke-static {v5, v3}, Lje/j;->G(Ljava/lang/Iterable;Ljava/util/Comparator;)Ljava/util/List;
 
     move-result-object v3
 
@@ -172,10 +172,10 @@
     .line 15
     move-object v6, v5
 
-    check-cast v6, Lvc/k;
+    check-cast v6, Lvc/j;
 
     .line 16
-    invoke-virtual {v6}, Lvc/k;->c()Z
+    invoke-virtual {v6}, Lvc/j;->c()Z
 
     move-result v6
 
@@ -224,7 +224,7 @@
     .line 23
     new-instance v6, Ljava/util/ArrayList;
 
-    invoke-static {v3, v5}, Lje/f;->q(Ljava/lang/Iterable;I)I
+    invoke-static {v3, v5}, Lje/f;->l(Ljava/lang/Iterable;I)I
 
     move-result v8
 
@@ -247,12 +247,12 @@
     move-result-object v8
 
     .line 25
-    check-cast v8, Lvc/k;
+    check-cast v8, Lvc/j;
 
     .line 26
     new-instance v9, Lpd/w;
 
-    invoke-direct {v9, v8}, Lpd/w;-><init>(Lvc/k;)V
+    invoke-direct {v9, v8}, Lpd/w;-><init>(Lvc/j;)V
 
     invoke-virtual {v6, v9}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
@@ -276,7 +276,7 @@
     .line 28
     new-instance v1, Ljava/util/ArrayList;
 
-    invoke-static {v3, v5}, Lje/f;->q(Ljava/lang/Iterable;I)I
+    invoke-static {v3, v5}, Lje/f;->l(Ljava/lang/Iterable;I)I
 
     move-result v4
 
@@ -299,12 +299,12 @@
     move-result-object v4
 
     .line 30
-    check-cast v4, Lvc/k;
+    check-cast v4, Lvc/j;
 
     .line 31
     new-instance v8, Lpd/s;
 
-    invoke-direct {v8, v4}, Lpd/s;-><init>(Lvc/k;)V
+    invoke-direct {v8, v4}, Lpd/s;-><init>(Lvc/j;)V
 
     invoke-virtual {v1, v8}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
@@ -312,7 +312,7 @@
 
     .line 32
     :cond_8
-    iput-object v2, v0, Lpd/b;->b0:Lcom/supercell/id/model/IdProfile;
+    iput-object v2, v0, Lpd/b;->c0:Lcom/supercell/id/model/IdProfile;
 
     const/4 v2, 0x2
 
@@ -329,7 +329,7 @@
 
     invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
 
-    invoke-static {v3, v1}, Lje/e;->g([Ljava/lang/Object;Ljava/util/Collection;)Ljava/util/Collection;
+    invoke-static {v3, v1}, Lje/e;->j([Ljava/lang/Object;Ljava/util/Collection;)Ljava/util/Collection;
 
     .line 34
     new-instance v3, Ljava/util/ArrayList;
@@ -374,7 +374,7 @@
     :cond_a
     new-instance v1, Ljava/util/ArrayList;
 
-    invoke-static {v3, v5}, Lje/f;->q(Ljava/lang/Iterable;I)I
+    invoke-static {v3, v5}, Lje/f;->l(Ljava/lang/Iterable;I)I
 
     move-result v5
 
@@ -403,7 +403,7 @@
     sget-object v6, Lpd/g;->a:Lae/k;
 
     .line 41
-    invoke-static {v5}, Lje/j;->V(Ljava/lang/Iterable;)Ljava/lang/Iterable;
+    invoke-static {v5}, Lje/j;->Q(Ljava/lang/Iterable;)Ljava/lang/Iterable;
 
     move-result-object v5
 
@@ -446,14 +446,14 @@
     iget-object v8, v8, Lje/p;->b:Ljava/lang/Object;
 
     .line 47
-    invoke-static {v8}, Lcom/android/billingclient/api/z;->h(Ljava/lang/Object;)Ljava/util/List;
+    invoke-static {v8}, Lcom/android/billingclient/api/y;->c(Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object v8
 
     goto :goto_7
 
     :cond_b
-    new-array v9, v2, [Lae/b2;
+    new-array v9, v2, [Lae/a2;
 
     sget-object v10, Lpd/g;->a:Lae/k;
 
@@ -463,17 +463,17 @@
     iget-object v8, v8, Lje/p;->b:Ljava/lang/Object;
 
     .line 49
-    check-cast v8, Lae/b2;
+    check-cast v8, Lae/a2;
 
     aput-object v8, v9, v7
 
-    invoke-static {v9}, Lcom/android/billingclient/api/z;->i([Ljava/lang/Object;)Ljava/util/List;
+    invoke-static {v9}, Lcom/android/billingclient/api/y;->d([Ljava/lang/Object;)Ljava/util/List;
 
     move-result-object v8
 
     .line 50
     :goto_7
-    invoke-static {v6, v8}, Lje/h;->u(Ljava/util/Collection;Ljava/lang/Iterable;)Z
+    invoke-static {v6, v8}, Lje/h;->p(Ljava/util/Collection;Ljava/lang/Iterable;)Z
 
     goto :goto_6
 
@@ -485,7 +485,7 @@
 
     .line 52
     :cond_d
-    invoke-static {v1}, Lje/f;->s(Ljava/lang/Iterable;)Ljava/util/List;
+    invoke-static {v1}, Lje/f;->n(Ljava/lang/Iterable;)Ljava/util/List;
 
     move-result-object v1
 
@@ -496,18 +496,18 @@
     .line 53
     :cond_e
     :goto_8
-    iget-object v0, p0, Lpd/d;->f:Lpd/b$c;
+    iget-object v0, p0, Lpd/d;->g:Lpd/b$c;
 
-    iget-object v0, v0, Lpd/b$c;->f:Lpd/b;
+    iget-object v0, v0, Lpd/b$c;->g:Lpd/b;
 
-    sget v2, Lpd/b;->j0:I
+    sget v2, Lpd/b;->k0:I
 
     .line 54
     invoke-virtual {v0, v1}, Lpd/b;->U0(Ljava/util/List;)V
 
     .line 55
     :goto_9
-    sget-object v0, Lie/h;->a:Lie/h;
+    sget-object v0, Lie/i;->a:Lie/i;
 
     return-object v0
 .end method

@@ -7,9 +7,9 @@
 
 
 # instance fields
-.field public final f:Le8/k;
+.field public final g:Le8/k;
 
-.field public final g:Lc8/j;
+.field public final h:Lc8/j;
 
 
 # direct methods
@@ -20,7 +20,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object p1, p0, Lc8/g;->g:Lc8/j;
+    iput-object p1, p0, Lc8/g;->h:Lc8/j;
 
     .line 3
     check-cast p2, Le8/j;
@@ -33,7 +33,7 @@
     invoke-direct {p1}, Le8/k;-><init>()V
 
     .line 5
-    iput-object p1, p0, Lc8/g;->f:Le8/k;
+    iput-object p1, p0, Lc8/g;->g:Le8/k;
 
     return-void
 .end method
@@ -44,7 +44,7 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lc8/g;->g:Lc8/j;
+    iget-object v0, p0, Lc8/g;->h:Lc8/j;
 
     invoke-interface {v0, p1}, Lc8/j;->b(Lf8/h;)Lf8/i;
 
@@ -58,7 +58,7 @@
     if-ne v0, v1, :cond_1
 
     .line 3
-    iget-object v0, p0, Lc8/g;->f:Le8/k;
+    iget-object v0, p0, Lc8/g;->g:Le8/k;
 
     iget-object v1, p1, Lf8/i;->b:Ljava/lang/String;
 
@@ -79,7 +79,7 @@
 
     .line 5
     :cond_0
-    sget-object p1, Ld8/b;->v:Ld8/b;
+    sget-object p1, Ld8/b;->w:Ld8/b;
 
     const/4 v0, 0x0
 

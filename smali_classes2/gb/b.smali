@@ -7,11 +7,11 @@
 
 
 # instance fields
-.field public final f:C
+.field public final g:C
 
-.field public g:Z
+.field public h:Z
 
-.field public h:Landroid/util/SparseArray;
+.field public i:Landroid/util/SparseArray;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Landroid/util/SparseArray<",
@@ -23,7 +23,7 @@
     .end annotation
 .end field
 
-.field public i:Ljava/util/ArrayList;
+.field public j:Ljava/util/ArrayList;
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
@@ -42,21 +42,21 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-char p1, p0, Lgb/b;->f:C
+    iput-char p1, p0, Lgb/b;->g:C
 
     .line 3
     new-instance p1, Ljava/util/ArrayList;
 
     invoke-direct {p1}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object p1, p0, Lgb/b;->i:Ljava/util/ArrayList;
+    iput-object p1, p0, Lgb/b;->j:Ljava/util/ArrayList;
 
     .line 4
     new-instance p1, Landroid/util/SparseArray;
 
     invoke-direct {p1}, Landroid/util/SparseArray;-><init>()V
 
-    iput-object p1, p0, Lgb/b;->h:Landroid/util/SparseArray;
+    iput-object p1, p0, Lgb/b;->i:Landroid/util/SparseArray;
 
     return-void
 .end method
@@ -67,7 +67,7 @@
     .locals 1
 
     .line 1
-    iget-object v0, p0, Lgb/b;->h:Landroid/util/SparseArray;
+    iget-object v0, p0, Lgb/b;->i:Landroid/util/SparseArray;
 
     invoke-virtual {v0, p1}, Landroid/util/SparseArray;->get(I)Ljava/lang/Object;
 
@@ -130,7 +130,7 @@
 
     .line 6
     :goto_0
-    iget-object p2, p0, Lgb/b;->h:Landroid/util/SparseArray;
+    iget-object p2, p0, Lgb/b;->i:Landroid/util/SparseArray;
 
     invoke-virtual {p2, p1, v0}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
 

@@ -53,7 +53,7 @@
     :cond_0
     iget-object v2, v1, Lk7/a;->e:Ljava/util/ArrayList;
 
-    invoke-static {v2}, Lbc/a;->d(Ljava/util/List;)Z
+    invoke-static {v2}, Lt5/a;->g(Ljava/util/List;)Z
 
     move-result v2
 

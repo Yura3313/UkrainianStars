@@ -30,7 +30,7 @@
 
 
 # static fields
-.field public static final f:Lsd/j$d;
+.field public static final g:Lsd/j$d;
 
 
 # direct methods
@@ -41,7 +41,7 @@
 
     invoke-direct {v0}, Lsd/j$d;-><init>()V
 
-    sput-object v0, Lsd/j$d;->f:Lsd/j$d;
+    sput-object v0, Lsd/j$d;->g:Lsd/j$d;
 
     return-void
 .end method
@@ -67,7 +67,7 @@
     const-string v0, "o1"
 
     .line 2
-    invoke-static {p1, v0}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-static {p1}, Lsd/l;->a(Lcom/supercell/id/model/IdConnectedSystem;)Ljava/lang/String;
 
@@ -76,7 +76,7 @@
     const-string v0, "o2"
 
     .line 3
-    invoke-static {p2, v0}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     invoke-static {p2}, Lsd/l;->a(Lcom/supercell/id/model/IdConnectedSystem;)Ljava/lang/String;
 

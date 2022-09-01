@@ -4,5 +4,29 @@
 
 
 # virtual methods
-.method public abstract b()[Lk3/wx0;
+.method public abstract a(Lk3/ey0;)Z
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;,
+            Ljava/lang/InterruptedException;
+        }
+    .end annotation
+.end method
+
+.method public abstract c(Lk3/dy0;)V
+.end method
+
+.method public abstract e(Lk3/ey0;Lk3/hy0;)I
+    .annotation system Ldalvik/annotation/Throws;
+        value = {
+            Ljava/io/IOException;,
+            Ljava/lang/InterruptedException;
+        }
+    .end annotation
+.end method
+
+.method public abstract f(JJ)V
+.end method
+
+.method public abstract release()V
 .end method

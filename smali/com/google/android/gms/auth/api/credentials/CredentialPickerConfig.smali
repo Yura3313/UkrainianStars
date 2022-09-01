@@ -19,13 +19,13 @@
 
 
 # instance fields
-.field public final f:I
-
-.field public final g:Z
+.field public final g:I
 
 .field public final h:Z
 
-.field public final i:I
+.field public final i:Z
+
+.field public final j:I
 
 
 # direct methods
@@ -48,13 +48,13 @@
     invoke-direct {p0}, Lcom/google/android/gms/common/internal/safeparcel/AbstractSafeParcelable;-><init>()V
 
     .line 2
-    iput p1, p0, Lcom/google/android/gms/auth/api/credentials/CredentialPickerConfig;->f:I
+    iput p1, p0, Lcom/google/android/gms/auth/api/credentials/CredentialPickerConfig;->g:I
 
     .line 3
-    iput-boolean p2, p0, Lcom/google/android/gms/auth/api/credentials/CredentialPickerConfig;->g:Z
+    iput-boolean p2, p0, Lcom/google/android/gms/auth/api/credentials/CredentialPickerConfig;->h:Z
 
     .line 4
-    iput-boolean p3, p0, Lcom/google/android/gms/auth/api/credentials/CredentialPickerConfig;->h:Z
+    iput-boolean p3, p0, Lcom/google/android/gms/auth/api/credentials/CredentialPickerConfig;->i:Z
 
     const/4 p2, 0x2
 
@@ -71,13 +71,13 @@
 
     .line 5
     :goto_0
-    iput p1, p0, Lcom/google/android/gms/auth/api/credentials/CredentialPickerConfig;->i:I
+    iput p1, p0, Lcom/google/android/gms/auth/api/credentials/CredentialPickerConfig;->j:I
 
     return-void
 
     .line 6
     :cond_1
-    iput p5, p0, Lcom/google/android/gms/auth/api/credentials/CredentialPickerConfig;->i:I
+    iput p5, p0, Lcom/google/android/gms/auth/api/credentials/CredentialPickerConfig;->j:I
 
     return-void
 .end method
@@ -95,7 +95,7 @@
     move-result v5
 
     .line 2
-    iget-boolean p2, p0, Lcom/google/android/gms/auth/api/credentials/CredentialPickerConfig;->g:Z
+    iget-boolean p2, p0, Lcom/google/android/gms/auth/api/credentials/CredentialPickerConfig;->h:Z
 
     const/4 v0, 0x1
 
@@ -108,7 +108,7 @@
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 5
-    iget-boolean p2, p0, Lcom/google/android/gms/auth/api/credentials/CredentialPickerConfig;->h:Z
+    iget-boolean p2, p0, Lcom/google/android/gms/auth/api/credentials/CredentialPickerConfig;->i:Z
 
     const/4 v1, 0x2
 
@@ -119,7 +119,7 @@
     invoke-virtual {p1, p2}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 8
-    iget p2, p0, Lcom/google/android/gms/auth/api/credentials/CredentialPickerConfig;->i:I
+    iget p2, p0, Lcom/google/android/gms/auth/api/credentials/CredentialPickerConfig;->j:I
 
     const/4 v1, 0x3
 
@@ -138,7 +138,7 @@
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 11
-    iget p2, p0, Lcom/google/android/gms/auth/api/credentials/CredentialPickerConfig;->i:I
+    iget p2, p0, Lcom/google/android/gms/auth/api/credentials/CredentialPickerConfig;->j:I
 
     .line 12
     invoke-static {p1, v2, v2}, Le2/b;->s(Landroid/os/Parcel;II)V
@@ -149,7 +149,7 @@
     const/16 v1, 0x3e8
 
     .line 14
-    iget v3, p0, Lcom/google/android/gms/auth/api/credentials/CredentialPickerConfig;->f:I
+    iget v3, p0, Lcom/google/android/gms/auth/api/credentials/CredentialPickerConfig;->g:I
 
     move-object v0, p1
 

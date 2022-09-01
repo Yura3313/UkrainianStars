@@ -1,610 +1,630 @@
 .class public final Lk3/y11;
-.super Landroid/os/HandlerThread;
+.super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
-
-# interfaces
-.implements Landroid/graphics/SurfaceTexture$OnFrameAvailableListener;
-.implements Landroid/os/Handler$Callback;
 
 
 # instance fields
-.field public final f:[I
+.field public a:[B
 
-.field public g:Landroid/os/Handler;
+.field public b:I
 
-.field public h:Landroid/graphics/SurfaceTexture;
-
-.field public i:Ljava/lang/Error;
-
-.field public j:Ljava/lang/RuntimeException;
-
-.field public k:Lcom/google/android/gms/internal/ads/zzpt;
+.field public c:I
 
 
 # direct methods
 .method public constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method public constructor <init>(I)V
     .locals 1
 
-    const-string v0, "dummySurface"
-
     .line 1
-    invoke-direct {p0, v0}, Landroid/os/HandlerThread;-><init>(Ljava/lang/String;)V
-
-    const/4 v0, 0x1
-
-    new-array v0, v0, [I
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 2
-    iput-object v0, p0, Lk3/y11;->f:[I
+    new-array v0, p1, [B
+
+    iput-object v0, p0, Lk3/y11;->a:[B
+
+    .line 3
+    iput p1, p0, Lk3/y11;->c:I
+
+    return-void
+.end method
+
+.method public constructor <init>([B)V
+    .locals 0
+
+    .line 4
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 5
+    iput-object p1, p0, Lk3/y11;->a:[B
+
+    .line 6
+    array-length p1, p1
+
+    iput p1, p0, Lk3/y11;->c:I
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final handleMessage(Landroid/os/Message;)Z
-    .locals 22
+.method public final a()I
+    .locals 1
 
-    move-object/from16 v1, p0
+    iget-object v0, p0, Lk3/y11;->a:[B
 
-    move-object/from16 v0, p1
+    if-nez v0, :cond_0
 
-    .line 1
-    iget v2, v0, Landroid/os/Message;->what:I
-
-    const/4 v3, 0x1
-
-    const/4 v4, 0x0
-
-    const/4 v5, 0x3
-
-    const/4 v6, 0x2
-
-    if-eq v2, v3, :cond_2
-
-    if-eq v2, v6, :cond_1
-
-    if-eq v2, v5, :cond_0
-
-    return v3
-
-    :cond_0
-    const/4 v2, 0x0
-
-    .line 2
-    :try_start_0
-    iget-object v0, v1, Lk3/y11;->h:Landroid/graphics/SurfaceTexture;
-
-    invoke-virtual {v0}, Landroid/graphics/SurfaceTexture;->release()V
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
-
-    .line 3
-    :try_start_1
-    iput-object v2, v1, Lk3/y11;->k:Lcom/google/android/gms/internal/ads/zzpt;
-
-    .line 4
-    iput-object v2, v1, Lk3/y11;->h:Landroid/graphics/SurfaceTexture;
-
-    .line 5
-    iget-object v0, v1, Lk3/y11;->f:[I
-
-    invoke-static {v3, v0, v4}, Landroid/opengl/GLES20;->glDeleteTextures(I[II)V
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_1
-
-    .line 6
-    invoke-virtual/range {p0 .. p0}, Landroid/os/HandlerThread;->quit()Z
-
-    goto :goto_0
-
-    :catchall_0
-    move-exception v0
-
-    .line 7
-    :try_start_2
-    iput-object v2, v1, Lk3/y11;->k:Lcom/google/android/gms/internal/ads/zzpt;
-
-    .line 8
-    iput-object v2, v1, Lk3/y11;->h:Landroid/graphics/SurfaceTexture;
-
-    .line 9
-    iget-object v2, v1, Lk3/y11;->f:[I
-
-    invoke-static {v3, v2, v4}, Landroid/opengl/GLES20;->glDeleteTextures(I[II)V
-
-    .line 10
-    throw v0
-    :try_end_2
-    .catchall {:try_start_2 .. :try_end_2} :catchall_1
-
-    .line 11
-    :catchall_1
-    invoke-virtual/range {p0 .. p0}, Landroid/os/HandlerThread;->quit()Z
-
-    :goto_0
-    return v3
-
-    .line 12
-    :cond_1
-    iget-object v0, v1, Lk3/y11;->h:Landroid/graphics/SurfaceTexture;
-
-    invoke-virtual {v0}, Landroid/graphics/SurfaceTexture;->updateTexImage()V
-
-    return v3
-
-    .line 13
-    :cond_2
-    :try_start_3
-    iget v0, v0, Landroid/os/Message;->arg1:I
-
-    if-eqz v0, :cond_3
-
-    const/4 v0, 0x1
-
-    goto :goto_1
-
-    :cond_3
     const/4 v0, 0x0
 
-    .line 14
-    :goto_1
-    invoke-static {v4}, Landroid/opengl/EGL14;->eglGetDisplay(I)Landroid/opengl/EGLDisplay;
+    return v0
 
-    move-result-object v2
+    :cond_0
+    array-length v0, v0
 
-    if-eqz v2, :cond_4
+    return v0
+.end method
 
-    const/4 v7, 0x1
+.method public final b()I
+    .locals 4
 
-    goto :goto_2
+    iget-object v0, p0, Lk3/y11;->a:[B
 
-    :cond_4
-    const/4 v7, 0x0
+    iget v1, p0, Lk3/y11;->b:I
 
-    :goto_2
-    const-string v8, "eglGetDisplay failed"
+    add-int/lit8 v2, v1, 0x1
 
-    .line 15
-    invoke-static {v7, v8}, Lk3/j6;->e(ZLjava/lang/Object;)V
+    iput v2, p0, Lk3/y11;->b:I
 
-    new-array v7, v6, [I
+    aget-byte v1, v0, v1
 
-    .line 16
-    invoke-static {v2, v7, v4, v7, v3}, Landroid/opengl/EGL14;->eglInitialize(Landroid/opengl/EGLDisplay;[II[II)Z
+    and-int/lit16 v1, v1, 0xff
 
-    move-result v7
+    shl-int/lit8 v1, v1, 0x18
 
-    const-string v8, "eglInitialize failed"
+    add-int/lit8 v3, v2, 0x1
 
-    .line 17
-    invoke-static {v7, v8}, Lk3/j6;->e(ZLjava/lang/Object;)V
+    iput v3, p0, Lk3/y11;->b:I
 
-    const/16 v7, 0x11
+    aget-byte v2, v0, v2
 
-    new-array v8, v7, [I
+    and-int/lit16 v2, v2, 0xff
 
-    const/16 v7, 0x3040
+    shl-int/lit8 v2, v2, 0x10
 
-    aput v7, v8, v4
+    or-int/2addr v1, v2
 
-    const/4 v15, 0x4
+    add-int/lit8 v2, v3, 0x1
 
-    aput v15, v8, v3
+    iput v2, p0, Lk3/y11;->b:I
 
-    const/16 v7, 0x3024
+    aget-byte v3, v0, v3
 
-    aput v7, v8, v6
+    and-int/lit16 v3, v3, 0xff
 
-    const/16 v7, 0x8
+    shl-int/lit8 v3, v3, 0x8
 
-    aput v7, v8, v5
+    or-int/2addr v1, v3
 
-    const/16 v9, 0x3023
+    add-int/lit8 v3, v2, 0x1
 
-    aput v9, v8, v15
+    iput v3, p0, Lk3/y11;->b:I
 
-    const/4 v14, 0x5
+    aget-byte v0, v0, v2
 
-    aput v7, v8, v14
+    and-int/lit16 v0, v0, 0xff
 
-    const/16 v9, 0x3022
+    or-int/2addr v0, v1
 
-    const/16 v16, 0x6
+    return v0
+.end method
 
-    aput v9, v8, v16
+.method public final c()J
+    .locals 9
 
-    const/4 v13, 0x7
+    iget-object v0, p0, Lk3/y11;->a:[B
 
-    aput v7, v8, v13
+    iget v1, p0, Lk3/y11;->b:I
 
-    const/16 v9, 0x3021
+    add-int/lit8 v2, v1, 0x1
 
-    aput v9, v8, v7
+    iput v2, p0, Lk3/y11;->b:I
 
-    const/16 v9, 0x9
+    aget-byte v1, v0, v1
 
-    aput v7, v8, v9
+    int-to-long v3, v1
 
-    const/16 v7, 0xa
+    const-wide/16 v5, 0xff
 
-    const/16 v9, 0x3025
+    and-long/2addr v3, v5
 
-    aput v9, v8, v7
+    const/16 v1, 0x38
 
-    const/16 v7, 0xb
+    shl-long/2addr v3, v1
 
-    aput v4, v8, v7
+    add-int/lit8 v1, v2, 0x1
 
-    const/16 v7, 0xc
+    iput v1, p0, Lk3/y11;->b:I
 
-    const/16 v9, 0x3027
+    aget-byte v2, v0, v2
 
-    aput v9, v8, v7
+    int-to-long v7, v2
 
-    const/16 v7, 0xd
+    and-long/2addr v7, v5
 
-    const/16 v17, 0x3038
+    const/16 v2, 0x30
 
-    aput v17, v8, v7
+    shl-long/2addr v7, v2
 
-    const/16 v7, 0xe
+    or-long/2addr v3, v7
 
-    const/16 v9, 0x3033
+    add-int/lit8 v2, v1, 0x1
 
-    aput v9, v8, v7
+    iput v2, p0, Lk3/y11;->b:I
 
-    const/16 v7, 0xf
+    aget-byte v1, v0, v1
 
-    aput v15, v8, v7
+    int-to-long v7, v1
 
-    const/16 v7, 0x10
+    and-long/2addr v7, v5
 
-    aput v17, v8, v7
+    const/16 v1, 0x28
 
-    new-array v12, v3, [Landroid/opengl/EGLConfig;
+    shl-long/2addr v7, v1
 
-    new-array v11, v3, [I
+    or-long/2addr v3, v7
 
-    const/4 v9, 0x0
+    add-int/lit8 v1, v2, 0x1
 
-    const/16 v18, 0x0
+    iput v1, p0, Lk3/y11;->b:I
 
-    const/16 v19, 0x1
+    aget-byte v2, v0, v2
 
-    const/16 v20, 0x0
+    int-to-long v7, v2
 
-    move-object v7, v2
+    and-long/2addr v7, v5
 
-    move-object v10, v12
+    const/16 v2, 0x20
 
-    move-object/from16 v21, v11
+    shl-long/2addr v7, v2
 
-    move/from16 v11, v18
+    or-long/2addr v3, v7
 
-    move-object/from16 v18, v12
+    add-int/lit8 v2, v1, 0x1
 
-    move/from16 v12, v19
+    iput v2, p0, Lk3/y11;->b:I
 
-    move-object/from16 v13, v21
+    aget-byte v1, v0, v1
 
-    const/4 v15, 0x5
+    int-to-long v7, v1
 
-    move/from16 v14, v20
+    and-long/2addr v7, v5
 
-    .line 18
-    invoke-static/range {v7 .. v14}, Landroid/opengl/EGL14;->eglChooseConfig(Landroid/opengl/EGLDisplay;[II[Landroid/opengl/EGLConfig;II[II)Z
+    const/16 v1, 0x18
 
-    move-result v7
+    shl-long/2addr v7, v1
 
-    if-eqz v7, :cond_5
+    or-long/2addr v3, v7
 
-    aget v7, v21, v4
+    add-int/lit8 v1, v2, 0x1
 
-    if-lez v7, :cond_5
+    iput v1, p0, Lk3/y11;->b:I
 
-    aget-object v7, v18, v4
+    aget-byte v2, v0, v2
 
-    if-eqz v7, :cond_5
+    int-to-long v7, v2
 
-    const/4 v7, 0x1
+    and-long/2addr v7, v5
 
-    goto :goto_3
+    const/16 v2, 0x10
 
-    :cond_5
-    const/4 v7, 0x0
+    shl-long/2addr v7, v2
 
-    :goto_3
-    const-string v8, "eglChooseConfig failed"
+    or-long/2addr v3, v7
 
-    .line 19
-    invoke-static {v7, v8}, Lk3/j6;->e(ZLjava/lang/Object;)V
+    add-int/lit8 v2, v1, 0x1
 
-    aget-object v7, v18, v4
+    iput v2, p0, Lk3/y11;->b:I
 
-    const/16 v8, 0x32c0
+    aget-byte v1, v0, v1
 
-    const/16 v9, 0x3098
+    int-to-long v7, v1
 
-    if-eqz v0, :cond_6
+    and-long/2addr v7, v5
 
-    new-array v10, v15, [I
+    const/16 v1, 0x8
 
-    aput v9, v10, v4
+    shl-long/2addr v7, v1
 
-    aput v6, v10, v3
+    or-long/2addr v3, v7
 
-    aput v8, v10, v6
+    add-int/lit8 v1, v2, 0x1
 
-    aput v3, v10, v5
+    iput v1, p0, Lk3/y11;->b:I
 
-    const/4 v9, 0x4
+    aget-byte v0, v0, v2
 
-    aput v17, v10, v9
+    int-to-long v0, v0
 
-    goto :goto_4
+    and-long/2addr v0, v5
 
-    :cond_6
-    new-array v10, v5, [I
+    or-long/2addr v0, v3
 
-    aput v9, v10, v4
+    return-wide v0
+.end method
 
-    aput v6, v10, v3
+.method public final d()I
+    .locals 3
 
-    aput v17, v10, v6
+    iget-object v0, p0, Lk3/y11;->a:[B
 
-    .line 20
-    :goto_4
-    sget-object v9, Landroid/opengl/EGL14;->EGL_NO_CONTEXT:Landroid/opengl/EGLContext;
+    iget v1, p0, Lk3/y11;->b:I
 
-    invoke-static {v2, v7, v9, v10, v4}, Landroid/opengl/EGL14;->eglCreateContext(Landroid/opengl/EGLDisplay;Landroid/opengl/EGLConfig;Landroid/opengl/EGLContext;[II)Landroid/opengl/EGLContext;
+    add-int/lit8 v2, v1, 0x1
 
-    move-result-object v9
+    iput v2, p0, Lk3/y11;->b:I
 
-    if-eqz v9, :cond_7
+    aget-byte v0, v0, v1
 
-    const/4 v10, 0x1
+    and-int/lit16 v0, v0, 0xff
 
-    goto :goto_5
+    return v0
+.end method
 
-    :cond_7
-    const/4 v10, 0x0
+.method public final e()I
+    .locals 4
 
-    :goto_5
-    const-string v11, "eglCreateContext failed"
+    iget-object v0, p0, Lk3/y11;->a:[B
 
-    .line 21
-    invoke-static {v10, v11}, Lk3/j6;->e(ZLjava/lang/Object;)V
+    iget v1, p0, Lk3/y11;->b:I
 
-    const/16 v10, 0x3056
+    add-int/lit8 v2, v1, 0x1
 
-    const/16 v11, 0x3057
+    iput v2, p0, Lk3/y11;->b:I
 
-    if-eqz v0, :cond_8
+    aget-byte v1, v0, v1
 
-    const/4 v0, 0x7
+    and-int/lit16 v1, v1, 0xff
 
-    new-array v0, v0, [I
+    shl-int/lit8 v1, v1, 0x8
 
-    aput v11, v0, v4
+    add-int/lit8 v3, v2, 0x1
 
-    aput v3, v0, v3
+    iput v3, p0, Lk3/y11;->b:I
 
-    aput v10, v0, v6
+    aget-byte v0, v0, v2
 
-    aput v3, v0, v5
+    and-int/lit16 v0, v0, 0xff
 
-    const/4 v5, 0x4
+    or-int/2addr v0, v1
 
-    aput v8, v0, v5
+    return v0
+.end method
 
-    aput v3, v0, v15
+.method public final f(I)V
+    .locals 1
 
-    aput v17, v0, v16
-
-    goto :goto_6
-
-    :cond_8
-    new-array v0, v15, [I
-
-    aput v11, v0, v4
-
-    aput v3, v0, v3
-
-    aput v10, v0, v6
-
-    aput v3, v0, v5
-
-    const/4 v5, 0x4
-
-    aput v17, v0, v5
-
-    .line 22
-    :goto_6
-    invoke-static {v2, v7, v0, v4}, Landroid/opengl/EGL14;->eglCreatePbufferSurface(Landroid/opengl/EGLDisplay;Landroid/opengl/EGLConfig;[II)Landroid/opengl/EGLSurface;
-
-    move-result-object v0
-
-    if-eqz v0, :cond_9
-
-    const/4 v5, 0x1
-
-    goto :goto_7
-
-    :cond_9
-    const/4 v5, 0x0
-
-    :goto_7
-    const-string v6, "eglCreatePbufferSurface failed"
-
-    .line 23
-    invoke-static {v5, v6}, Lk3/j6;->e(ZLjava/lang/Object;)V
-
-    .line 24
-    invoke-static {v2, v0, v0, v9}, Landroid/opengl/EGL14;->eglMakeCurrent(Landroid/opengl/EGLDisplay;Landroid/opengl/EGLSurface;Landroid/opengl/EGLSurface;Landroid/opengl/EGLContext;)Z
+    invoke-virtual {p0}, Lk3/y11;->a()I
 
     move-result v0
 
-    const-string v2, "eglMakeCurrent failed"
+    if-ge v0, p1, :cond_0
 
-    .line 25
-    invoke-static {v0, v2}, Lk3/j6;->e(ZLjava/lang/Object;)V
+    new-array v0, p1, [B
 
-    .line 26
-    iget-object v0, v1, Lk3/y11;->f:[I
+    goto :goto_0
 
-    invoke-static {v3, v0, v4}, Landroid/opengl/GLES20;->glGenTextures(I[II)V
+    :cond_0
+    iget-object v0, p0, Lk3/y11;->a:[B
 
-    .line 27
-    new-instance v0, Landroid/graphics/SurfaceTexture;
-
-    iget-object v2, v1, Lk3/y11;->f:[I
-
-    aget v2, v2, v4
-
-    invoke-direct {v0, v2}, Landroid/graphics/SurfaceTexture;-><init>(I)V
-
-    iput-object v0, v1, Lk3/y11;->h:Landroid/graphics/SurfaceTexture;
-
-    .line 28
-    invoke-virtual {v0, v1}, Landroid/graphics/SurfaceTexture;->setOnFrameAvailableListener(Landroid/graphics/SurfaceTexture$OnFrameAvailableListener;)V
-
-    .line 29
-    new-instance v0, Lcom/google/android/gms/internal/ads/zzpt;
-
-    iget-object v2, v1, Lk3/y11;->h:Landroid/graphics/SurfaceTexture;
-
-    invoke-direct {v0, v1, v2}, Lcom/google/android/gms/internal/ads/zzpt;-><init>(Lk3/y11;Landroid/graphics/SurfaceTexture;)V
-
-    iput-object v0, v1, Lk3/y11;->k:Lcom/google/android/gms/internal/ads/zzpt;
-    :try_end_3
-    .catch Ljava/lang/RuntimeException; {:try_start_3 .. :try_end_3} :catch_1
-    .catch Ljava/lang/Error; {:try_start_3 .. :try_end_3} :catch_0
-    .catchall {:try_start_3 .. :try_end_3} :catchall_3
-
-    .line 30
-    monitor-enter p0
-
-    .line 31
-    :try_start_4
-    invoke-virtual/range {p0 .. p0}, Ljava/lang/Object;->notify()V
-
-    .line 32
-    monitor-exit p0
-
-    goto :goto_8
-
-    :catchall_2
-    move-exception v0
-
-    monitor-exit p0
-    :try_end_4
-    .catchall {:try_start_4 .. :try_end_4} :catchall_2
-
-    throw v0
-
-    :catchall_3
-    move-exception v0
-
-    goto :goto_9
-
-    :catch_0
-    move-exception v0
-
-    .line 33
-    :try_start_5
-    iput-object v0, v1, Lk3/y11;->i:Ljava/lang/Error;
-    :try_end_5
-    .catchall {:try_start_5 .. :try_end_5} :catchall_3
-
-    .line 34
-    monitor-enter p0
-
-    .line 35
-    :try_start_6
-    invoke-virtual/range {p0 .. p0}, Ljava/lang/Object;->notify()V
-
-    .line 36
-    monitor-exit p0
-
-    goto :goto_8
-
-    :catchall_4
-    move-exception v0
-
-    monitor-exit p0
-    :try_end_6
-    .catchall {:try_start_6 .. :try_end_6} :catchall_4
-
-    throw v0
-
-    :catch_1
-    move-exception v0
-
-    .line 37
-    :try_start_7
-    iput-object v0, v1, Lk3/y11;->j:Ljava/lang/RuntimeException;
-    :try_end_7
-    .catchall {:try_start_7 .. :try_end_7} :catchall_3
-
-    .line 38
-    monitor-enter p0
-
-    .line 39
-    :try_start_8
-    invoke-virtual/range {p0 .. p0}, Ljava/lang/Object;->notify()V
-
-    .line 40
-    monitor-exit p0
-
-    :goto_8
-    return v3
-
-    :catchall_5
-    move-exception v0
-
-    monitor-exit p0
-    :try_end_8
-    .catchall {:try_start_8 .. :try_end_8} :catchall_5
-
-    throw v0
-
-    .line 41
-    :goto_9
-    monitor-enter p0
-
-    .line 42
-    :try_start_9
-    invoke-virtual/range {p0 .. p0}, Ljava/lang/Object;->notify()V
-
-    .line 43
-    monitor-exit p0
-    :try_end_9
-    .catchall {:try_start_9 .. :try_end_9} :catchall_6
-
-    .line 44
-    throw v0
-
-    :catchall_6
-    move-exception v0
-
-    .line 45
-    :try_start_a
-    monitor-exit p0
-    :try_end_a
-    .catchall {:try_start_a .. :try_end_a} :catchall_6
-
-    throw v0
-.end method
-
-.method public final onFrameAvailable(Landroid/graphics/SurfaceTexture;)V
-    .locals 1
-
-    iget-object p1, p0, Lk3/y11;->g:Landroid/os/Handler;
-
-    const/4 v0, 0x2
-
-    invoke-virtual {p1, v0}, Landroid/os/Handler;->sendEmptyMessage(I)Z
+    :goto_0
+    invoke-virtual {p0, v0, p1}, Lk3/y11;->k([BI)V
 
     return-void
+.end method
+
+.method public final g(I)V
+    .locals 1
+
+    if-ltz p1, :cond_0
+
+    .line 1
+    iget-object v0, p0, Lk3/y11;->a:[B
+
+    array-length v0, v0
+
+    if-gt p1, v0, :cond_0
+
+    const/4 v0, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    :goto_0
+    invoke-static {v0}, Lcom/google/android/gms/ads/a;->a(Z)V
+
+    .line 2
+    iput p1, p0, Lk3/y11;->c:I
+
+    return-void
+.end method
+
+.method public final h(I)V
+    .locals 1
+
+    if-ltz p1, :cond_0
+
+    .line 1
+    iget v0, p0, Lk3/y11;->c:I
+
+    if-gt p1, v0, :cond_0
+
+    const/4 v0, 0x1
+
+    goto :goto_0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    :goto_0
+    invoke-static {v0}, Lcom/google/android/gms/ads/a;->a(Z)V
+
+    .line 2
+    iput p1, p0, Lk3/y11;->b:I
+
+    return-void
+.end method
+
+.method public final i(I)V
+    .locals 1
+
+    iget v0, p0, Lk3/y11;->b:I
+
+    add-int/2addr v0, p1
+
+    invoke-virtual {p0, v0}, Lk3/y11;->h(I)V
+
+    return-void
+.end method
+
+.method public final j(I)Ljava/lang/String;
+    .locals 4
+
+    if-nez p1, :cond_0
+
+    const-string p1, ""
+
+    return-object p1
+
+    .line 1
+    :cond_0
+    iget v0, p0, Lk3/y11;->b:I
+
+    add-int v1, v0, p1
+
+    add-int/lit8 v1, v1, -0x1
+
+    .line 2
+    iget v2, p0, Lk3/y11;->c:I
+
+    if-ge v1, v2, :cond_1
+
+    iget-object v2, p0, Lk3/y11;->a:[B
+
+    aget-byte v1, v2, v1
+
+    if-nez v1, :cond_1
+
+    add-int/lit8 v1, p1, -0x1
+
+    goto :goto_0
+
+    :cond_1
+    move v1, p1
+
+    .line 3
+    :goto_0
+    new-instance v2, Ljava/lang/String;
+
+    iget-object v3, p0, Lk3/y11;->a:[B
+
+    invoke-direct {v2, v3, v0, v1}, Ljava/lang/String;-><init>([BII)V
+
+    .line 4
+    iget v0, p0, Lk3/y11;->b:I
+
+    add-int/2addr v0, p1
+
+    iput v0, p0, Lk3/y11;->b:I
+
+    return-object v2
+.end method
+
+.method public final k([BI)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lk3/y11;->a:[B
+
+    .line 2
+    iput p2, p0, Lk3/y11;->c:I
+
+    const/4 p1, 0x0
+
+    .line 3
+    iput p1, p0, Lk3/y11;->b:I
+
+    return-void
+.end method
+
+.method public final l([BII)V
+    .locals 2
+
+    .line 1
+    iget-object v0, p0, Lk3/y11;->a:[B
+
+    iget v1, p0, Lk3/y11;->b:I
+
+    invoke-static {v0, v1, p1, p2, p3}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+
+    .line 2
+    iget p1, p0, Lk3/y11;->b:I
+
+    add-int/2addr p1, p3
+
+    iput p1, p0, Lk3/y11;->b:I
+
+    return-void
+.end method
+
+.method public final m()J
+    .locals 9
+
+    iget-object v0, p0, Lk3/y11;->a:[B
+
+    iget v1, p0, Lk3/y11;->b:I
+
+    add-int/lit8 v2, v1, 0x1
+
+    iput v2, p0, Lk3/y11;->b:I
+
+    aget-byte v1, v0, v1
+
+    int-to-long v3, v1
+
+    const-wide/16 v5, 0xff
+
+    and-long/2addr v3, v5
+
+    const/16 v1, 0x18
+
+    shl-long/2addr v3, v1
+
+    add-int/lit8 v1, v2, 0x1
+
+    iput v1, p0, Lk3/y11;->b:I
+
+    aget-byte v2, v0, v2
+
+    int-to-long v7, v2
+
+    and-long/2addr v7, v5
+
+    const/16 v2, 0x10
+
+    shl-long/2addr v7, v2
+
+    or-long/2addr v3, v7
+
+    add-int/lit8 v2, v1, 0x1
+
+    iput v2, p0, Lk3/y11;->b:I
+
+    aget-byte v1, v0, v1
+
+    int-to-long v7, v1
+
+    and-long/2addr v7, v5
+
+    const/16 v1, 0x8
+
+    shl-long/2addr v7, v1
+
+    or-long/2addr v3, v7
+
+    add-int/lit8 v1, v2, 0x1
+
+    iput v1, p0, Lk3/y11;->b:I
+
+    aget-byte v0, v0, v2
+
+    int-to-long v0, v0
+
+    and-long/2addr v0, v5
+
+    or-long/2addr v0, v3
+
+    return-wide v0
+.end method
+
+.method public final n()I
+    .locals 4
+
+    .line 1
+    invoke-virtual {p0}, Lk3/y11;->b()I
+
+    move-result v0
+
+    if-ltz v0, :cond_0
+
+    return v0
+
+    .line 2
+    :cond_0
+    new-instance v1, Ljava/lang/IllegalStateException;
+
+    const/16 v2, 0x1d
+
+    const-string v3, "Top bit not zero: "
+
+    .line 3
+    invoke-static {v2, v3, v0}, Lcom/google/android/gms/ads/f;->a(ILjava/lang/String;I)Ljava/lang/String;
+
+    move-result-object v0
+
+    .line 4
+    invoke-direct {v1, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    throw v1
+.end method
+
+.method public final o()J
+    .locals 5
+
+    .line 1
+    invoke-virtual {p0}, Lk3/y11;->c()J
+
+    move-result-wide v0
+
+    const-wide/16 v2, 0x0
+
+    cmp-long v4, v0, v2
+
+    if-ltz v4, :cond_0
+
+    return-wide v0
+
+    .line 2
+    :cond_0
+    new-instance v2, Ljava/lang/IllegalStateException;
+
+    const/16 v3, 0x26
+
+    new-instance v4, Ljava/lang/StringBuilder;
+
+    invoke-direct {v4, v3}, Ljava/lang/StringBuilder;-><init>(I)V
+
+    const-string v3, "Top bit not zero: "
+
+    invoke-virtual {v4, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v4, v0, v1}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-direct {v2, v0}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    throw v2
 .end method

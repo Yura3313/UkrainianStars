@@ -1,56 +1,13 @@
-.class public Lo8/t;
-.super Lo8/j;
-.source "FAQListMessageDM.java"
-
-
-# annotations
-.annotation system Ldalvik/annotation/MemberClasses;
-    value = {
-        Lo8/t$a;
-    }
-.end annotation
-
-
-# instance fields
-.field public A:Z
-
-.field public B:Ljava/lang/String;
-
-.field public final C:Ljava/lang/String;
-
-.field public z:Ljava/util/List;
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "Ljava/util/List<",
-            "Lo8/t$a;",
-            ">;"
-        }
-    .end annotation
-.end field
+.class public final Lo8/t;
+.super Lo8/q;
+.source "ConfirmationRejectedMessageDM.java"
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;JLo8/o;Ljava/util/List;Ljava/lang/String;)V
-    .locals 9
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/lang/String;",
-            "Ljava/lang/String;",
-            "Ljava/lang/String;",
-            "J",
-            "Lo8/o;",
-            "Ljava/util/List<",
-            "Lo8/t$a;",
-            ">;",
-            "Ljava/lang/String;",
-            ")V"
-        }
-    .end annotation
+.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;JLo8/p;I)V
+    .locals 8
 
-    move-object v8, p0
-
-    const/16 v7, 0x10
+    const/16 v6, 0x8
 
     move-object v0, p0
 
@@ -58,260 +15,30 @@
 
     move-object v2, p2
 
-    move-object v3, p3
+    move-wide v3, p3
 
-    move-wide v4, p4
+    move-object v5, p5
 
-    move-object v6, p6
-
-    .line 6
-    invoke-direct/range {v0 .. v7}, Lo8/j;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;JLo8/o;I)V
-
-    const/4 v0, 0x0
-
-    .line 7
-    iput-boolean v0, v8, Lo8/t;->A:Z
-
-    const-string v0, ""
-
-    .line 8
-    iput-object v0, v8, Lo8/t;->B:Ljava/lang/String;
-
-    move-object/from16 v0, p7
-
-    .line 9
-    iput-object v0, v8, Lo8/t;->z:Ljava/util/List;
-
-    move-object/from16 v0, p8
-
-    .line 10
-    iput-object v0, v8, Lo8/t;->C:Ljava/lang/String;
-
-    return-void
-.end method
-
-.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;JLo8/o;Ljava/util/List;Ljava/lang/String;I)V
-    .locals 9
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/lang/String;",
-            "Ljava/lang/String;",
-            "Ljava/lang/String;",
-            "J",
-            "Lo8/o;",
-            "Ljava/util/List<",
-            "Lo8/t$a;",
-            ">;",
-            "Ljava/lang/String;",
-            "Ljava/lang/Object;",
-            ")V"
-        }
-    .end annotation
-
-    move-object v8, p0
-
-    move-object v0, p0
-
-    move-object v1, p1
-
-    move-object v2, p2
-
-    move-object v3, p3
-
-    move-wide v4, p4
-
-    move-object v6, p6
-
-    move/from16 v7, p9
+    move v7, p6
 
     .line 1
-    invoke-direct/range {v0 .. v7}, Lo8/j;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;JLo8/o;I)V
-
-    const/4 v0, 0x0
-
-    .line 2
-    iput-boolean v0, v8, Lo8/t;->A:Z
-
-    const-string v0, ""
-
-    .line 3
-    iput-object v0, v8, Lo8/t;->B:Ljava/lang/String;
-
-    move-object/from16 v0, p7
-
-    .line 4
-    iput-object v0, v8, Lo8/t;->z:Ljava/util/List;
-
-    move-object/from16 v0, p8
-
-    .line 5
-    iput-object v0, v8, Lo8/t;->C:Ljava/lang/String;
-
-    return-void
-.end method
-
-.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;JLo8/o;Ljava/util/List;Ljava/lang/String;ZLjava/lang/String;)V
-    .locals 9
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(",
-            "Ljava/lang/String;",
-            "Ljava/lang/String;",
-            "Ljava/lang/String;",
-            "J",
-            "Lo8/o;",
-            "Ljava/util/List<",
-            "Lo8/t$a;",
-            ">;",
-            "Ljava/lang/String;",
-            "Z",
-            "Ljava/lang/String;",
-            ")V"
-        }
-    .end annotation
-
-    move-object v8, p0
-
-    const/16 v7, 0x10
-
-    move-object v0, p0
-
-    move-object v1, p1
-
-    move-object v2, p2
-
-    move-object v3, p3
-
-    move-wide v4, p4
-
-    move-object v6, p6
-
-    .line 11
-    invoke-direct/range {v0 .. v7}, Lo8/j;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;JLo8/o;I)V
-
-    move-object/from16 v0, p7
-
-    .line 12
-    iput-object v0, v8, Lo8/t;->z:Ljava/util/List;
-
-    move/from16 v0, p9
-
-    .line 13
-    iput-boolean v0, v8, Lo8/t;->A:Z
-
-    move-object/from16 v0, p10
-
-    .line 14
-    iput-object v0, v8, Lo8/t;->B:Ljava/lang/String;
-
-    move-object/from16 v0, p8
-
-    .line 15
-    iput-object v0, v8, Lo8/t;->C:Ljava/lang/String;
+    invoke-direct/range {v0 .. v7}, Lo8/q;-><init>(Ljava/lang/String;Ljava/lang/String;JLo8/p;II)V
 
     return-void
 .end method
 
 .method public constructor <init>(Lo8/t;)V
-    .locals 1
+    .locals 0
 
-    .line 16
-    invoke-direct {p0, p1}, Lo8/j;-><init>(Lo8/j;)V
-
-    const/4 v0, 0x0
-
-    .line 17
-    iput-boolean v0, p0, Lo8/t;->A:Z
-
-    const-string v0, ""
-
-    .line 18
-    iput-object v0, p0, Lo8/t;->B:Ljava/lang/String;
-
-    .line 19
-    iget-object v0, p1, Lo8/t;->z:Ljava/util/List;
-
-    invoke-static {v0}, Lcom/helpshift/util/g;->a(Ljava/util/List;)Ljava/util/ArrayList;
-
-    move-result-object v0
-
-    iput-object v0, p0, Lo8/t;->z:Ljava/util/List;
-
-    .line 20
-    iget-boolean v0, p1, Lo8/t;->A:Z
-
-    iput-boolean v0, p0, Lo8/t;->A:Z
-
-    .line 21
-    iget-object v0, p1, Lo8/t;->B:Ljava/lang/String;
-
-    iput-object v0, p0, Lo8/t;->B:Ljava/lang/String;
-
-    .line 22
-    iget-object p1, p1, Lo8/t;->C:Ljava/lang/String;
-
-    iput-object p1, p0, Lo8/t;->C:Ljava/lang/String;
+    .line 2
+    invoke-direct {p0, p1}, Lo8/q;-><init>(Lo8/q;)V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public bridge synthetic a()Ljava/lang/Object;
-    .locals 1
-
-    invoke-virtual {p0}, Lo8/t;->q()Lo8/t;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public bridge synthetic b()Lo8/y;
-    .locals 1
-
-    invoke-virtual {p0}, Lo8/t;->q()Lo8/t;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public k(Lo8/y;)V
-    .locals 1
-
-    .line 1
-    invoke-super {p0, p1}, Lo8/y;->k(Lo8/y;)V
-
-    .line 2
-    instance-of v0, p1, Lo8/t;
-
-    if-eqz v0, :cond_0
-
-    .line 3
-    check-cast p1, Lo8/t;
-
-    .line 4
-    iget-object p1, p1, Lo8/t;->z:Ljava/util/List;
-
-    iput-object p1, p0, Lo8/t;->z:Ljava/util/List;
-
-    :cond_0
-    return-void
-.end method
-
-.method public bridge synthetic p()Lo8/j;
-    .locals 1
-
-    invoke-virtual {p0}, Lo8/t;->q()Lo8/t;
-
-    move-result-object v0
-
-    return-object v0
-.end method
-
-.method public q()Lo8/t;
+.method public final a()Ljava/lang/Object;
     .locals 1
 
     new-instance v0, Lo8/t;
@@ -321,182 +48,238 @@
     return-object v0
 .end method
 
-.method public r(Ln8/j;Li7/c;Ljava/lang/String;Ljava/lang/String;)V
-    .locals 0
+.method public final b()Lo8/z;
+    .locals 1
 
-    .line 1
-    iget-object p3, p0, Lo8/t;->B:Ljava/lang/String;
+    new-instance v0, Lo8/t;
 
-    invoke-static {p3}, Lcom/google/android/play/core/appupdate/g;->b(Ljava/lang/String;)Z
+    invoke-direct {v0, p0}, Lo8/t;-><init>(Lo8/t;)V
 
-    move-result p3
-
-    if-nez p3, :cond_0
-
-    return-void
-
-    .line 2
-    :cond_0
-    iget-object p3, p0, Lo8/t;->B:Ljava/lang/String;
-
-    invoke-static {p3}, Lcom/google/android/play/core/appupdate/g;->b(Ljava/lang/String;)Z
-
-    move-result p3
-
-    if-eqz p3, :cond_1
-
-    .line 3
-    iput-object p4, p0, Lo8/t;->B:Ljava/lang/String;
-
-    .line 4
-    iget-object p3, p0, Lo8/y;->u:Le8/s;
-
-    check-cast p3, Le8/j;
-
-    invoke-virtual {p3}, Le8/j;->c()Le8/b;
-
-    move-result-object p3
-
-    invoke-virtual {p3, p0}, Le8/b;->e(Lo8/y;)V
-
-    .line 5
-    :cond_1
-    iget-boolean p3, p0, Lo8/t;->A:Z
-
-    xor-int/lit8 p3, p3, 0x1
-
-    if-eqz p3, :cond_2
-
-    .line 6
-    invoke-virtual {p0, p1, p2}, Lo8/t;->s(Ln8/j;Li7/c;)V
-
-    :cond_2
-    return-void
+    return-object v0
 .end method
 
-.method public final s(Ln8/j;Li7/c;)V
+.method public final h(Ljava/lang/String;)Lc8/j;
     .locals 7
 
     .line 1
-    iget-object v0, p0, Lo8/t;->B:Ljava/lang/String;
+    new-instance v1, Lc8/l;
 
-    invoke-static {v0}, Lcom/google/android/play/core/appupdate/g;->b(Ljava/lang/String;)Z
+    iget-object v0, p0, Lo8/z;->u:La8/f;
+
+    iget-object v2, p0, Lo8/z;->v:Le8/s;
+
+    invoke-direct {v1, p1, v0, v2}, Lc8/l;-><init>(Ljava/lang/String;La8/f;Le8/s;)V
+
+    .line 2
+    new-instance v6, Lc8/i;
+
+    iget-object v2, p0, Lo8/z;->v:Le8/s;
+
+    .line 3
+    new-instance v3, Lb8/b;
+
+    invoke-direct {v3}, Lb8/b;-><init>()V
+
+    .line 4
+    iget-object v0, p0, Lo8/z;->n:Ljava/lang/Long;
+
+    .line 5
+    invoke-static {v0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v5
+
+    move-object v0, v6
+
+    move-object v4, p1
+
+    invoke-direct/range {v0 .. v5}, Lc8/i;-><init>(Lc8/j;Le8/s;Lb2/z;Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 6
+    new-instance p1, Lk3/n7;
+
+    iget-object v0, p0, Lo8/z;->v:Le8/s;
+
+    invoke-direct {p1, v6, v0}, Lk3/n7;-><init>(Lc8/j;Le8/s;)V
+
+    .line 7
+    new-instance v0, Lk3/s9;
+
+    invoke-direct {v0, p1}, Lk3/s9;-><init>(Ljava/lang/Object;)V
+
+    .line 8
+    new-instance p1, Lg7/a;
+
+    invoke-direct {p1, v0}, Lg7/a;-><init>(Ljava/lang/Object;)V
+
+    .line 9
+    new-instance v0, Lk1/i;
+
+    iget-object v1, p0, Lo8/z;->v:Le8/s;
+
+    invoke-direct {v0, p1, v1}, Lk1/i;-><init>(Lc8/j;Le8/s;)V
+
+    .line 10
+    new-instance p1, Lk3/au;
+
+    invoke-direct {p1, v0}, Lk3/au;-><init>(Ljava/lang/Object;)V
+
+    .line 11
+    new-instance v0, Lc8/e;
+
+    invoke-direct {v0, p1}, Lc8/e;-><init>(Lc8/j;)V
+
+    .line 12
+    new-instance p1, Ln1/a;
+
+    invoke-direct {p1, v0}, Ln1/a;-><init>(Ljava/lang/Object;)V
+
+    return-object p1
+.end method
+
+.method public final j()Z
+    .locals 1
+
+    const/4 v0, 0x1
+
+    return v0
+.end method
+
+.method public final p(Ljava/lang/String;Ljava/util/Map;)Lf8/i;
+    .locals 1
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/String;",
+            "Ljava/util/Map<",
+            "Ljava/lang/String;",
+            "Ljava/lang/String;",
+            ">;)",
+            "Lf8/i;"
+        }
+    .end annotation
+
+    .line 1
+    :try_start_0
+    invoke-super {p0, p1, p2}, Lo8/q;->p(Ljava/lang/String;Ljava/util/Map;)Lf8/i;
+
+    move-result-object p1
+    :try_end_0
+    .catch Lcom/helpshift/common/exception/RootAPIException; {:try_start_0 .. :try_end_0} :catch_0
+
+    return-object p1
+
+    :catch_0
+    move-exception p1
+
+    .line 2
+    iget-object p2, p1, Lcom/helpshift/common/exception/RootAPIException;->i:Ld8/a;
+
+    sget-object v0, Ld8/b;->v:Ld8/b;
+
+    if-ne p2, v0, :cond_0
+
+    const/4 p2, 0x3
+
+    .line 3
+    invoke-virtual {p0, p2}, Lo8/q;->r(I)V
+
+    .line 4
+    :cond_0
+    throw p1
+.end method
+
+.method public final q(Li7/c;Ln8/j;)V
+    .locals 3
+
+    .line 1
+    move-object v0, p2
+
+    check-cast v0, Lq8/d;
+
+    .line 2
+    iget-object v0, v0, Lq8/d;->i:Ljava/lang/String;
+
+    .line 3
+    invoke-static {v0}, La5/b0;->d(Ljava/lang/String;)Z
 
     move-result v0
 
-    if-eqz v0, :cond_0
+    if-nez v0, :cond_2
 
-    return-void
+    .line 4
+    invoke-static {p1}, Lae/v;->g(Li7/c;)Ljava/util/HashMap;
 
-    .line 2
-    :cond_0
-    invoke-static {p2}, Lmd/g;->g(Li7/c;)Ljava/util/HashMap;
+    move-result-object v0
+
+    .line 5
+    iget-object v1, p0, Lo8/z;->k:Ljava/lang/String;
+
+    const-string v2, "body"
+
+    invoke-virtual {v0, v2, v1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    const-string v1, "type"
+
+    const-string v2, "ncr"
+
+    .line 6
+    invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    const-string v1, "refers"
+
+    const-string v2, ""
+
+    .line 7
+    invoke-virtual {v0, v1, v2}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 8
+    :try_start_0
+    invoke-virtual {p0, p2}, Lo8/z;->f(Ln8/j;)Ljava/lang/String;
 
     move-result-object p2
 
-    .line 3
-    check-cast p1, Lq8/d;
+    invoke-virtual {p0, p2, v0}, Lo8/t;->p(Ljava/lang/String;Ljava/util/Map;)Lf8/i;
 
-    invoke-virtual {p1}, Lq8/d;->b()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_1
-
-    .line 4
-    iget-object p1, p1, Lq8/d;->i:Ljava/lang/String;
-
-    const-string v0, "preissue_id"
-
-    .line 5
-    invoke-virtual {p2, v0, p1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    goto :goto_0
-
-    .line 6
-    :cond_1
-    iget-object p1, p1, Lq8/d;->h:Ljava/lang/String;
-
-    const-string v0, "issue_id"
-
-    .line 7
-    invoke-virtual {p2, v0, p1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    .line 8
-    :goto_0
-    iget-object p1, p0, Lo8/y;->i:Ljava/lang/String;
-
-    const-string v0, "message_id"
-
-    invoke-virtual {p2, v0, p1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+    move-result-object p2
 
     .line 9
-    iget-object p1, p0, Lo8/t;->B:Ljava/lang/String;
+    iget-object v0, p0, Lo8/z;->v:Le8/s;
 
-    const-string v0, "faq_publish_id"
+    check-cast v0, Le8/j;
 
-    invoke-virtual {p2, v0, p1}, Ljava/util/HashMap;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
-    const-string v5, "/faqs_suggestion_read/"
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
     .line 10
-    new-instance v2, Lc8/l;
+    new-instance v0, Le8/k;
 
-    iget-object p1, p0, Lo8/y;->t:La8/f;
-
-    iget-object v0, p0, Lo8/y;->u:Le8/s;
-
-    invoke-direct {v2, v5, p1, v0}, Lc8/l;-><init>(Ljava/lang/String;La8/f;Le8/s;)V
+    invoke-direct {v0}, Le8/k;-><init>()V
 
     .line 11
-    new-instance p1, Lc8/i;
-
-    iget-object v3, p0, Lo8/y;->u:Le8/s;
+    iget-object p2, p2, Lf8/i;->b:Ljava/lang/String;
 
     .line 12
-    new-instance v4, Lb8/b;
+    invoke-virtual {v0, p2}, Le8/k;->s(Ljava/lang/String;)Lo8/t;
 
-    invoke-direct {v4}, Lb8/b;-><init>()V
+    move-result-object p2
 
     .line 13
-    iget-object v6, p0, Lo8/y;->i:Ljava/lang/String;
-
-    move-object v1, p1
-
-    invoke-direct/range {v1 .. v6}, Lc8/i;-><init>(Lc8/j;Le8/s;Lb2/a0;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-virtual {p0, p2}, Lo8/q;->k(Lo8/z;)V
 
     .line 14
-    new-instance v0, Lk3/m7;
+    iget-object v0, p2, Lo8/z;->j:Ljava/lang/String;
 
-    iget-object v1, p0, Lo8/y;->u:Le8/s;
-
-    invoke-direct {v0, p1, v1}, Lk3/m7;-><init>(Lc8/j;Le8/s;)V
+    iput-object v0, p0, Lo8/z;->j:Ljava/lang/String;
 
     .line 15
-    new-instance p1, Lc8/e;
+    iget-object p2, p2, Lo8/z;->l:Lo8/p;
 
-    invoke-direct {p1, v0}, Lc8/e;-><init>(Lc8/j;)V
+    iput-object p2, p0, Lo8/z;->l:Lo8/p;
 
     .line 16
-    new-instance v0, Ln1/a;
-
-    invoke-direct {v0, p1}, Ln1/a;-><init>(Ljava/lang/Object;)V
-
-    const/4 p1, 0x1
+    invoke-virtual {p0}, Lo8/z;->l()V
 
     .line 17
-    :try_start_0
-    new-instance v1, Lf8/h;
-
-    invoke-direct {v1, p2}, Lf8/h;-><init>(Ljava/util/Map;)V
-
-    invoke-virtual {v0, v1}, Ln1/a;->b(Lf8/h;)Lf8/i;
-
-    .line 18
-    iput-boolean p1, p0, Lo8/t;->A:Z
-
-    .line 19
-    iget-object p2, p0, Lo8/y;->u:Le8/s;
+    iget-object p2, p0, Lo8/z;->v:Le8/s;
 
     check-cast p2, Le8/j;
 
@@ -504,40 +287,47 @@
 
     move-result-object p2
 
-    invoke-virtual {p2, p0}, Le8/b;->e(Lo8/y;)V
+    invoke-virtual {p2, p0}, Le8/b;->e(Lo8/z;)V
     :try_end_0
     .catch Lcom/helpshift/common/exception/RootAPIException; {:try_start_0 .. :try_end_0} :catch_0
 
-    goto :goto_1
+    return-void
 
     :catch_0
     move-exception p2
 
+    .line 18
+    iget-object v0, p2, Lcom/helpshift/common/exception/RootAPIException;->i:Ld8/a;
+
+    sget-object v1, Ld8/b;->y:Ld8/b;
+
+    if-eq v0, v1, :cond_0
+
+    sget-object v1, Ld8/b;->z:Ld8/b;
+
+    if-ne v0, v1, :cond_1
+
+    .line 19
+    :cond_0
+    iget-object v1, p0, Lo8/z;->u:La8/f;
+
     .line 20
-    iget-object v0, p2, Lcom/helpshift/common/exception/RootAPIException;->h:Ld8/a;
-
-    sget-object v1, Ld8/b;->s:Ld8/b;
-
-    if-ne v0, v1, :cond_2
+    iget-object v1, v1, La8/f;->t:Lf7/a;
 
     .line 21
-    iput-boolean p1, p0, Lo8/t;->A:Z
+    invoke-virtual {v1, p1, v0}, Lf7/a;->a(Li7/c;Ld8/a;)V
 
     .line 22
-    iget-object p1, p0, Lo8/y;->u:Le8/s;
-
-    check-cast p1, Le8/j;
-
-    invoke-virtual {p1}, Le8/j;->c()Le8/b;
-
-    move-result-object p1
-
-    invoke-virtual {p1, p0}, Le8/b;->e(Lo8/y;)V
-
-    :goto_1
-    return-void
+    :cond_1
+    throw p2
 
     .line 23
     :cond_2
-    throw p2
+    new-instance p1, Ljava/lang/UnsupportedOperationException;
+
+    const-string p2, "ConfirmationRejectedMessageDM send called with conversation in pre issue mode."
+
+    invoke-direct {p1, p2}, Ljava/lang/UnsupportedOperationException;-><init>(Ljava/lang/String;)V
+
+    throw p1
 .end method

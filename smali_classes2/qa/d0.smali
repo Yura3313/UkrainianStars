@@ -7,14 +7,14 @@
 
 
 # instance fields
-.field public final synthetic f:Lqa/e0;
+.field public final synthetic g:Lqa/e0;
 
 
 # direct methods
 .method public constructor <init>(Lqa/e0;)V
     .locals 0
 
-    iput-object p1, p0, Lqa/d0;->f:Lqa/e0;
+    iput-object p1, p0, Lqa/d0;->g:Lqa/e0;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -27,7 +27,7 @@
     .locals 6
 
     .line 1
-    iget-object p1, p0, Lqa/d0;->f:Lqa/e0;
+    iget-object p1, p0, Lqa/d0;->g:Lqa/e0;
 
     iget-object p1, p1, Lqa/e0;->c:Lqa/n0;
 
@@ -37,7 +37,7 @@
     check-cast p1, Lqa/t;
 
     .line 3
-    iget-object p1, p1, Lqa/t;->m0:Lf9/i;
+    iget-object p1, p1, Lqa/t;->n0:Lf9/i;
 
     .line 4
     iget-object v0, p1, Lf9/i;->n:Ln8/l;
@@ -56,7 +56,7 @@
     move-result-object v0
 
     .line 6
-    invoke-static {v0}, Lcom/google/android/play/core/appupdate/g;->b(Ljava/lang/String;)Z
+    invoke-static {v0}, La5/b0;->d(Ljava/lang/String;)Z
 
     move-result v1
 
@@ -97,7 +97,7 @@
     if-nez v3, :cond_2
 
     .line 12
-    invoke-static {v0}, Lcom/google/android/play/core/appupdate/g;->h(Ljava/lang/String;)I
+    invoke-static {v0}, La5/b0;->m(Ljava/lang/String;)I
 
     move-result v3
 
@@ -120,9 +120,9 @@
 
     .line 14
     :cond_1
-    iget-object v1, v1, Lq8/d;->i:Ljava/lang/String;
+    iget-object v1, v1, Lq8/d;->j:Ljava/lang/String;
 
-    invoke-static {v1}, Lcom/google/android/play/core/appupdate/g;->b(Ljava/lang/String;)Z
+    invoke-static {v1}, La5/b0;->d(Ljava/lang/String;)Z
 
     move-result v1
 
@@ -158,7 +158,7 @@
 
     .line 20
     :cond_3
-    iget-object v1, p1, Lf9/i;->h:Lo8/y;
+    iget-object v1, p1, Lf9/i;->h:Lo8/z;
 
     .line 21
     instance-of v3, v1, Lo8/l;
@@ -184,10 +184,10 @@
     check-cast v1, Lo8/l;
 
     .line 25
-    iget-object v3, v1, Lo8/l;->A:Lp8/e;
+    iget-object v3, v1, Lo8/l;->B:Lp8/f;
 
     .line 26
-    iget v4, v3, Lp8/e;->k:I
+    iget v4, v3, Lp8/f;->l:I
 
     const/4 v5, 0x2
 
@@ -206,7 +206,7 @@
     .line 27
     :cond_5
     :try_start_0
-    iget-object v4, v3, Lp8/e;->l:La8/f;
+    iget-object v4, v3, Lp8/f;->m:La8/f;
 
     .line 28
     iget-object v4, v4, La8/f;->n:Lw9/a;
@@ -219,7 +219,7 @@
     const-string v5, "EEEE, MMMM dd, yyyy"
 
     .line 30
-    invoke-static {v5, v4}, Li8/b;->e(Ljava/lang/String;Ljava/util/Locale;)Lcom/helpshift/util/s;
+    invoke-static {v5, v4}, Li8/b;->e(Ljava/lang/String;Ljava/util/Locale;)Lcom/helpshift/util/r;
 
     move-result-object v4
 
@@ -228,7 +228,7 @@
 
     move-result-object v5
 
-    invoke-virtual {v4, v5}, Lcom/helpshift/util/s;->b(Ljava/lang/String;)Ljava/util/Date;
+    invoke-virtual {v4, v5}, Lcom/helpshift/util/r;->b(Ljava/lang/String;)Ljava/util/Date;
     :try_end_0
     .catch Ljava/text/ParseException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -236,7 +236,7 @@
 
     .line 32
     :cond_6
-    invoke-static {v0}, Lcom/google/android/play/core/appupdate/g;->b(Ljava/lang/String;)Z
+    invoke-static {v0}, La5/b0;->d(Ljava/lang/String;)Z
 
     move-result v2
 
@@ -249,7 +249,7 @@
 
     .line 33
     :cond_7
-    sget-object v2, Lcom/helpshift/util/r;->c:Ljava/util/regex/Pattern;
+    sget-object v2, La5/u;->i:Ljava/util/regex/Pattern;
 
     if-nez v2, :cond_8
 
@@ -260,11 +260,11 @@
 
     move-result-object v2
 
-    sput-object v2, Lcom/helpshift/util/r;->c:Ljava/util/regex/Pattern;
+    sput-object v2, La5/u;->i:Ljava/util/regex/Pattern;
 
     .line 35
     :cond_8
-    sget-object v2, Lcom/helpshift/util/r;->c:Ljava/util/regex/Pattern;
+    sget-object v2, La5/u;->i:Ljava/util/regex/Pattern;
 
     .line 36
     invoke-virtual {v2, v0}, Ljava/util/regex/Pattern;->matcher(Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
@@ -279,7 +279,7 @@
 
     .line 37
     :cond_9
-    invoke-static {v0}, Lcom/helpshift/util/r;->b(Ljava/lang/String;)Z
+    invoke-static {v0}, La5/u;->d(Ljava/lang/String;)Z
 
     move-result v2
 
@@ -289,7 +289,7 @@
     .line 38
     iget-object p1, p1, Lf9/i;->n:Ln8/l;
 
-    iget v0, v3, Lp8/e;->k:I
+    iget v0, v3, Lp8/f;->l:I
 
     check-cast p1, Lqa/e0;
 

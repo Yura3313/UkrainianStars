@@ -55,10 +55,10 @@
     return v0
 .end method
 
-.method public final X()Z
+.method public final W1()Z
     .locals 1
 
-    const-string v0, "installed"
+    const-string v0, "turn_based_support"
 
     invoke-virtual {p0, v0}, Lc2/d;->l(Ljava/lang/String;)I
 
@@ -76,10 +76,10 @@
     return v0
 .end method
 
-.method public final X1()Z
+.method public final X()Z
     .locals 1
 
-    const-string v0, "turn_based_support"
+    const-string v0, "installed"
 
     invoke-virtual {p0, v0}, Lc2/d;->l(Ljava/lang/String;)I
 

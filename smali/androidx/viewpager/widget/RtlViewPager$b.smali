@@ -36,7 +36,7 @@
 
     const-string v0, "mListener"
 
-    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     iput-object p1, p0, Landroidx/viewpager/widget/RtlViewPager$b;->b:Landroidx/viewpager/widget/RtlViewPager;
 

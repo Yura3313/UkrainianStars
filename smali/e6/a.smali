@@ -14,8 +14,6 @@
 
 
 # static fields
-.field public static final enum f:Le6/a;
-
 .field public static final enum g:Le6/a;
 
 .field public static final enum h:Le6/a;
@@ -48,7 +46,9 @@
 
 .field public static final enum v:Le6/a;
 
-.field public static final synthetic w:[Le6/a;
+.field public static final enum w:Le6/a;
+
+.field public static final synthetic x:[Le6/a;
 
 
 # direct methods
@@ -64,7 +64,7 @@
 
     invoke-direct {v0, v1, v2}, Le6/a;-><init>(Ljava/lang/String;I)V
 
-    sput-object v0, Le6/a;->f:Le6/a;
+    sput-object v0, Le6/a;->g:Le6/a;
 
     .line 2
     new-instance v1, Le6/a;
@@ -75,7 +75,7 @@
 
     invoke-direct {v1, v3, v4}, Le6/a;-><init>(Ljava/lang/String;I)V
 
-    sput-object v1, Le6/a;->g:Le6/a;
+    sput-object v1, Le6/a;->h:Le6/a;
 
     .line 3
     new-instance v3, Le6/a;
@@ -86,7 +86,7 @@
 
     invoke-direct {v3, v5, v6}, Le6/a;-><init>(Ljava/lang/String;I)V
 
-    sput-object v3, Le6/a;->h:Le6/a;
+    sput-object v3, Le6/a;->i:Le6/a;
 
     .line 4
     new-instance v5, Le6/a;
@@ -97,7 +97,7 @@
 
     invoke-direct {v5, v7, v8}, Le6/a;-><init>(Ljava/lang/String;I)V
 
-    sput-object v5, Le6/a;->i:Le6/a;
+    sput-object v5, Le6/a;->j:Le6/a;
 
     .line 5
     new-instance v7, Le6/a;
@@ -108,7 +108,7 @@
 
     invoke-direct {v7, v9, v10}, Le6/a;-><init>(Ljava/lang/String;I)V
 
-    sput-object v7, Le6/a;->j:Le6/a;
+    sput-object v7, Le6/a;->k:Le6/a;
 
     .line 6
     new-instance v9, Le6/a;
@@ -119,7 +119,7 @@
 
     invoke-direct {v9, v11, v12}, Le6/a;-><init>(Ljava/lang/String;I)V
 
-    sput-object v9, Le6/a;->k:Le6/a;
+    sput-object v9, Le6/a;->l:Le6/a;
 
     .line 7
     new-instance v11, Le6/a;
@@ -130,7 +130,7 @@
 
     invoke-direct {v11, v13, v14}, Le6/a;-><init>(Ljava/lang/String;I)V
 
-    sput-object v11, Le6/a;->l:Le6/a;
+    sput-object v11, Le6/a;->m:Le6/a;
 
     .line 8
     new-instance v13, Le6/a;
@@ -141,7 +141,7 @@
 
     invoke-direct {v13, v15, v14}, Le6/a;-><init>(Ljava/lang/String;I)V
 
-    sput-object v13, Le6/a;->m:Le6/a;
+    sput-object v13, Le6/a;->n:Le6/a;
 
     .line 9
     new-instance v15, Le6/a;
@@ -152,7 +152,7 @@
 
     invoke-direct {v15, v14, v12}, Le6/a;-><init>(Ljava/lang/String;I)V
 
-    sput-object v15, Le6/a;->n:Le6/a;
+    sput-object v15, Le6/a;->o:Le6/a;
 
     .line 10
     new-instance v14, Le6/a;
@@ -163,7 +163,7 @@
 
     invoke-direct {v14, v12, v10}, Le6/a;-><init>(Ljava/lang/String;I)V
 
-    sput-object v14, Le6/a;->o:Le6/a;
+    sput-object v14, Le6/a;->p:Le6/a;
 
     .line 11
     new-instance v12, Le6/a;
@@ -174,7 +174,7 @@
 
     invoke-direct {v12, v10, v8}, Le6/a;-><init>(Ljava/lang/String;I)V
 
-    sput-object v12, Le6/a;->p:Le6/a;
+    sput-object v12, Le6/a;->q:Le6/a;
 
     .line 12
     new-instance v10, Le6/a;
@@ -185,7 +185,7 @@
 
     invoke-direct {v10, v8, v6}, Le6/a;-><init>(Ljava/lang/String;I)V
 
-    sput-object v10, Le6/a;->q:Le6/a;
+    sput-object v10, Le6/a;->r:Le6/a;
 
     .line 13
     new-instance v8, Le6/a;
@@ -196,7 +196,7 @@
 
     invoke-direct {v8, v6, v4}, Le6/a;-><init>(Ljava/lang/String;I)V
 
-    sput-object v8, Le6/a;->r:Le6/a;
+    sput-object v8, Le6/a;->s:Le6/a;
 
     .line 14
     new-instance v6, Le6/a;
@@ -207,7 +207,7 @@
 
     invoke-direct {v6, v4, v2}, Le6/a;-><init>(Ljava/lang/String;I)V
 
-    sput-object v6, Le6/a;->s:Le6/a;
+    sput-object v6, Le6/a;->t:Le6/a;
 
     .line 15
     new-instance v4, Le6/a;
@@ -220,7 +220,7 @@
 
     invoke-direct {v4, v2, v6}, Le6/a;-><init>(Ljava/lang/String;I)V
 
-    sput-object v4, Le6/a;->t:Le6/a;
+    sput-object v4, Le6/a;->u:Le6/a;
 
     .line 16
     new-instance v2, Le6/a;
@@ -233,7 +233,7 @@
 
     invoke-direct {v2, v6, v4}, Le6/a;-><init>(Ljava/lang/String;I)V
 
-    sput-object v2, Le6/a;->u:Le6/a;
+    sput-object v2, Le6/a;->v:Le6/a;
 
     .line 17
     new-instance v6, Le6/a;
@@ -246,7 +246,7 @@
 
     invoke-direct {v6, v4, v2}, Le6/a;-><init>(Ljava/lang/String;I)V
 
-    sput-object v6, Le6/a;->v:Le6/a;
+    sput-object v6, Le6/a;->w:Le6/a;
 
     const/16 v4, 0x11
 
@@ -319,7 +319,7 @@
     aput-object v6, v4, v2
 
     .line 18
-    sput-object v4, Le6/a;->w:[Le6/a;
+    sput-object v4, Le6/a;->x:[Le6/a;
 
     return-void
 .end method
@@ -354,7 +354,7 @@
 .method public static values()[Le6/a;
     .locals 1
 
-    sget-object v0, Le6/a;->w:[Le6/a;
+    sget-object v0, Le6/a;->x:[Le6/a;
 
     invoke-virtual {v0}, [Le6/a;->clone()Ljava/lang/Object;
 

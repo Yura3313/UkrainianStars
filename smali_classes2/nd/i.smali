@@ -1,5 +1,5 @@
 .class public final Lnd/i;
-.super Lse/h;
+.super Lse/i;
 .source "MessagesTabFriendsFragment.kt"
 
 # interfaces
@@ -9,33 +9,33 @@
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/p<",
         "Landroid/graphics/drawable/Drawable;",
         "Lud/g;",
-        "Lie/h;",
+        "Lie/i;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic f:Ljava/lang/ref/WeakReference;
+.field public final synthetic g:Ljava/lang/ref/WeakReference;
 
-.field public final synthetic g:Lvc/x;
+.field public final synthetic h:Lvc/v;
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/ref/WeakReference;Lvc/x;)V
+.method public constructor <init>(Ljava/lang/ref/WeakReference;Lvc/v;)V
     .locals 0
 
-    iput-object p1, p0, Lnd/i;->f:Ljava/lang/ref/WeakReference;
+    iput-object p1, p0, Lnd/i;->g:Ljava/lang/ref/WeakReference;
 
-    iput-object p2, p0, Lnd/i;->g:Lvc/x;
+    iput-object p2, p0, Lnd/i;->h:Lvc/v;
 
     const/4 p1, 0x2
 
-    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -52,14 +52,14 @@
     const-string v0, "drawable"
 
     .line 1
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     const-string v0, "<anonymous parameter 1>"
 
-    invoke-static {p2, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 2
-    iget-object p2, p0, Lnd/i;->f:Ljava/lang/ref/WeakReference;
+    iget-object p2, p0, Lnd/i;->g:Ljava/lang/ref/WeakReference;
 
     invoke-virtual {p2}, Ljava/lang/ref/Reference;->get()Ljava/lang/Object;
 
@@ -143,14 +143,14 @@
 
     .line 6
     :cond_4
-    iget-object p1, p0, Lnd/i;->g:Lvc/x;
+    iget-object p1, p0, Lnd/i;->h:Lvc/v;
 
     .line 7
-    invoke-static {p2, p1, v1}, Lnd/k;->a(Landroid/widget/TextView;Lvc/x;Landroid/graphics/drawable/BitmapDrawable;)V
+    invoke-static {p2, p1, v1}, Lnd/k;->a(Landroid/widget/TextView;Lvc/v;Landroid/graphics/drawable/BitmapDrawable;)V
 
     .line 8
     :cond_5
-    sget-object p1, Lie/h;->a:Lie/h;
+    sget-object p1, Lie/i;->a:Lie/i;
 
     return-object p1
 .end method

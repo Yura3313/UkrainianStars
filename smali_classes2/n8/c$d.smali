@@ -52,14 +52,14 @@
     move-exception v0
 
     .line 2
-    iget-object v1, v0, Lcom/helpshift/common/exception/RootAPIException;->h:Ld8/a;
+    iget-object v1, v0, Lcom/helpshift/common/exception/RootAPIException;->i:Ld8/a;
 
     .line 3
-    sget-object v2, Ld8/b;->s:Ld8/b;
+    sget-object v2, Ld8/b;->t:Ld8/b;
 
     if-eq v1, v2, :cond_1
 
-    sget-object v2, Ld8/b;->z:Ld8/b;
+    sget-object v2, Ld8/b;->A:Ld8/b;
 
     if-ne v1, v2, :cond_0
 
@@ -75,7 +75,7 @@
     iget-object v1, v1, La8/f;->o:Lx7/d;
 
     .line 6
-    sget-object v2, Lx7/d$b;->j:Lx7/d$b;
+    sget-object v2, Lx7/d$b;->k:Lx7/d$b;
 
     .line 7
     invoke-virtual {v0}, Lcom/helpshift/common/exception/RootAPIException;->a()I

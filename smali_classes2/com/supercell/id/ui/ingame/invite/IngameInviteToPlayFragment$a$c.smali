@@ -1,5 +1,5 @@
 .class public final Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$a$c;
-.super Lse/h;
+.super Lse/i;
 .source "IngameInviteToPlayFragment.kt"
 
 # interfaces
@@ -8,7 +8,7 @@
 
 # annotations
 .annotation system Ldalvik/annotation/EnclosingMethod;
-    value = Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$a;->n(Lae/c2$a;ILae/b2;)V
+    value = Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$a;->n(Lae/b2$a;ILae/a2;)V
 .end annotation
 
 .annotation system Ldalvik/annotation/InnerClass;
@@ -18,33 +18,33 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/p<",
         "Ljava/util/Observable;",
         "Ljava/lang/Object;",
-        "Lie/h;",
+        "Lie/i;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic f:Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$a;
+.field public final synthetic g:Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$a;
 
-.field public final synthetic g:Landroid/view/View;
+.field public final synthetic h:Landroid/view/View;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$a;Landroid/view/View;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$a$c;->f:Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$a;
+    iput-object p1, p0, Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$a$c;->g:Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$a;
 
-    iput-object p2, p0, Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$a$c;->g:Landroid/view/View;
+    iput-object p2, p0, Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$a$c;->h:Landroid/view/View;
 
     const/4 p1, 0x2
 
-    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -58,7 +58,7 @@
     check-cast p1, Ljava/util/Observable;
 
     .line 2
-    iget-object p1, p0, Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$a$c;->f:Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$a;
+    iget-object p1, p0, Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$a$c;->g:Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$a;
 
     .line 3
     iget-object p1, p1, Lae/s;->f:Landroidx/fragment/app/Fragment;
@@ -67,10 +67,10 @@
     check-cast p1, Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment;
 
     .line 5
-    iget p1, p1, Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment;->m0:I
+    iget p1, p1, Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment;->n0:I
 
     .line 6
-    iget-object p2, p0, Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$a$c;->g:Landroid/view/View;
+    iget-object p2, p0, Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$a$c;->h:Landroid/view/View;
 
     sget v0, Lcom/supercell/id/R$id;->online_friend_count_label:I
 
@@ -106,11 +106,11 @@
     const-string v4, "ingame_invite_to_play_online_count"
 
     .line 8
-    invoke-static {p2, v4, v2, v3}, Lud/f0;->k(Landroid/widget/TextView;Ljava/lang/String;[Lie/d;Lre/l;)V
+    invoke-static {p2, v4, v2, v3}, Lud/d0;->k(Landroid/widget/TextView;Ljava/lang/String;[Lie/d;Lre/l;)V
 
     .line 9
     :cond_0
-    iget-object p2, p0, Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$a$c;->g:Landroid/view/View;
+    iget-object p2, p0, Lcom/supercell/id/ui/ingame/invite/IngameInviteToPlayFragment$a$c;->h:Landroid/view/View;
 
     sget v2, Lcom/supercell/id/R$id;->invite_all_button:I
 
@@ -122,7 +122,7 @@
 
     const-string v2, "containerView.invite_all_button"
 
-    invoke-static {p2, v2}, Lt3/e;->b(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p2, v2}, Lt3/h;->b(Ljava/lang/Object;Ljava/lang/String;)V
 
     if-lez p1, :cond_1
 
@@ -135,7 +135,7 @@
     invoke-virtual {p2, v0}, Landroid/view/View;->setEnabled(Z)V
 
     .line 10
-    sget-object p1, Lie/h;->a:Lie/h;
+    sget-object p1, Lie/i;->a:Lie/i;
 
     return-object p1
 .end method

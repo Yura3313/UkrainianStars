@@ -1,83 +1,50 @@
-.class public final Lk3/vc0;
+.class public final synthetic Lk3/vc0;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lk3/bd0;
+.implements Lk3/ad0;
 
 
-# annotations
-.annotation system Ldalvik/annotation/Signature;
-    value = {
-        "Ljava/lang/Object;",
-        "Lk3/bd0<",
-        "Lk3/zc0<",
-        "Landroid/os/Bundle;",
-        ">;>;"
-    }
-.end annotation
-
-
-# instance fields
-.field public final a:Z
+# static fields
+.field public static final a:Lk3/vc0;
 
 
 # direct methods
-.method public constructor <init>(Lk3/ag0;)V
-    .locals 0
+.method public static constructor <clinit>()V
+    .locals 1
 
-    .line 1
-    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+    new-instance v0, Lk3/vc0;
 
-    if-eqz p1, :cond_0
+    invoke-direct {v0}, Lk3/vc0;-><init>()V
 
-    const/4 p1, 0x1
-
-    .line 2
-    iput-boolean p1, p0, Lk3/vc0;->a:Z
+    sput-object v0, Lk3/vc0;->a:Lk3/vc0;
 
     return-void
+.end method
 
-    :cond_0
-    const/4 p1, 0x0
+.method public constructor <init>()V
+    .locals 0
 
-    .line 3
-    iput-boolean p1, p0, Lk3/vc0;->a:Z
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a()Lk3/em0;
-    .locals 1
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "()",
-            "Lk3/em0<",
-            "Lk3/zc0<",
-            "Landroid/os/Bundle;",
-            ">;>;"
-        }
-    .end annotation
+.method public final b(Ljava/lang/Object;)V
+    .locals 2
 
     .line 1
-    iget-boolean v0, p0, Lk3/vc0;->a:Z
+    check-cast p1, Landroid/os/Bundle;
 
-    if-eqz v0, :cond_0
+    const-string v0, "sdk_prefetch"
 
-    sget-object v0, Lk3/uc0;->a:Lk3/uc0;
-
-    goto :goto_0
-
-    :cond_0
-    const/4 v0, 0x0
+    const/4 v1, 0x1
 
     .line 2
-    :goto_0
-    invoke-static {v0}, Lk3/am0;->f(Ljava/lang/Object;)Lk3/em0;
+    invoke-virtual {p1, v0, v1}, Landroid/os/Bundle;->putBoolean(Ljava/lang/String;Z)V
 
-    move-result-object v0
-
-    return-object v0
+    return-void
 .end method

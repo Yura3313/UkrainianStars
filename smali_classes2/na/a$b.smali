@@ -67,7 +67,7 @@
     if-eqz v1, :cond_8
 
     .line 3
-    iget-boolean v1, v0, Landroidx/fragment/app/Fragment;->F:Z
+    iget-boolean v1, v0, Landroidx/fragment/app/Fragment;->G:Z
 
     if-eqz v1, :cond_0
 
@@ -109,13 +109,13 @@
     check-cast v3, Lcom/helpshift/support/Section;
 
     .line 8
-    iget-object v4, v0, Lna/a;->j0:Lla/e;
+    iget-object v4, v0, Lna/a;->k0:Lla/e;
 
     .line 9
-    iget-object v5, v3, Lcom/helpshift/support/Section;->h:Ljava/lang/String;
+    iget-object v5, v3, Lcom/helpshift/support/Section;->i:Ljava/lang/String;
 
     .line 10
-    iget-object v6, v0, Lna/a;->i0:Lla/d;
+    iget-object v6, v0, Lna/a;->j0:Lla/d;
 
     invoke-virtual {v4, v5, v6}, Lla/e;->c(Ljava/lang/String;Lla/d;)Ljava/util/ArrayList;
 
@@ -141,7 +141,7 @@
 
     move-result v1
 
-    iput v1, v0, Lna/a;->g0:I
+    iput v1, v0, Lna/a;->h0:I
 
     move-object v1, v2
 
@@ -151,7 +151,7 @@
     if-nez p1, :cond_4
 
     .line 14
-    iget p1, v0, Lna/a;->g0:I
+    iget p1, v0, Lna/a;->h0:I
 
     if-eqz p1, :cond_7
 
@@ -171,7 +171,7 @@
     if-ne p1, v3, :cond_6
 
     .line 17
-    iget p1, v0, Lna/a;->g0:I
+    iget p1, v0, Lna/a;->h0:I
 
     if-nez p1, :cond_5
 
@@ -182,7 +182,7 @@
 
     .line 19
     :cond_5
-    iput-boolean v2, v0, Lna/a;->h0:Z
+    iput-boolean v2, v0, Lna/a;->i0:Z
 
     .line 20
     invoke-virtual {v0, v2}, Lna/a;->R0(I)V
@@ -196,7 +196,7 @@
     if-ne p1, v4, :cond_7
 
     .line 22
-    iget p1, v0, Lna/a;->g0:I
+    iget p1, v0, Lna/a;->h0:I
 
     if-nez p1, :cond_7
 
@@ -213,7 +213,7 @@
     move-result-object p1
 
     .line 25
-    iget v0, v0, Lna/a;->g0:I
+    iget v0, v0, Lna/a;->h0:I
 
     const-string v1, " sections"
 
@@ -227,7 +227,7 @@
     const-string v1, "Helpshift_FaqFragment"
 
     .line 27
-    invoke-static {v1, p1, v0, v0}, Landroidx/savedstate/d;->f(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
+    invoke-static {v1, p1, v0, v0}, Le5/i;->h(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lz9/a;)V
 
     :cond_8
     :goto_2

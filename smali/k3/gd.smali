@@ -10,7 +10,7 @@
     .annotation system Ldalvik/annotation/Signature;
         value = {
             "Ljava/util/List<",
-            "Lk3/k41;",
+            "Lk3/o41;",
             ">;"
         }
     .end annotation
@@ -28,7 +28,7 @@
         value = {
             "(I",
             "Ljava/util/List<",
-            "Lk3/k41;",
+            "Lk3/o41;",
             ">;)V"
         }
     .end annotation
@@ -61,7 +61,7 @@
         value = {
             "(I",
             "Ljava/util/List<",
-            "Lk3/k41;",
+            "Lk3/o41;",
             ">;I",
             "Ljava/io/InputStream;",
             ")V"

@@ -1,5 +1,5 @@
 .class public final Lxd/d$a;
-.super Lse/h;
+.super Lse/i;
 .source "TutorialPageFragment.kt"
 
 # interfaces
@@ -18,7 +18,7 @@
 
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/a<",
         "Ljava/lang/String;",
         ">;"
@@ -27,18 +27,18 @@
 
 
 # instance fields
-.field public final synthetic f:Lxd/d;
+.field public final synthetic g:Lxd/d;
 
 
 # direct methods
 .method public constructor <init>(Lxd/d;)V
     .locals 0
 
-    iput-object p1, p0, Lxd/d$a;->f:Lxd/d;
+    iput-object p1, p0, Lxd/d$a;->g:Lxd/d;
 
     const/4 p1, 0x0
 
-    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -49,10 +49,10 @@
     .locals 2
 
     .line 1
-    iget-object v0, p0, Lxd/d$a;->f:Lxd/d;
+    iget-object v0, p0, Lxd/d$a;->g:Lxd/d;
 
     .line 2
-    iget-object v0, v0, Landroidx/fragment/app/Fragment;->l:Landroid/os/Bundle;
+    iget-object v0, v0, Landroidx/fragment/app/Fragment;->m:Landroid/os/Bundle;
 
     if-eqz v0, :cond_0
 

@@ -145,7 +145,7 @@
     const-string v1, "Unpaired surrogate at index "
 
     .line 8
-    invoke-static {v0, v1, v2}, Lcom/google/android/gms/ads/e;->a(ILjava/lang/String;I)Ljava/lang/String;
+    invoke-static {v0, v1, v2}, Lcom/google/android/gms/ads/f;->a(ILjava/lang/String;I)Ljava/lang/String;
 
     move-result-object v0
 
@@ -957,7 +957,7 @@
     add-int/lit8 v6, v6, -0x1
 
     .line 42
-    invoke-static {v2, v1, v6}, Lcom/google/android/gms/ads/e;->a(ILjava/lang/String;I)Ljava/lang/String;
+    invoke-static {v2, v1, v6}, Lcom/google/android/gms/ads/f;->a(ILjava/lang/String;I)Ljava/lang/String;
 
     move-result-object p1
 

@@ -1,5 +1,5 @@
 .class public final Lpd/q;
-.super Lse/h;
+.super Lse/i;
 .source "FriendsFragment.kt"
 
 # interfaces
@@ -9,36 +9,36 @@
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "Lse/h;",
+        "Lse/i;",
         "Lre/l<",
         "Landroid/graphics/drawable/BitmapDrawable;",
-        "Lie/h;",
+        "Lie/i;",
         ">;"
     }
 .end annotation
 
 
 # instance fields
-.field public final synthetic f:Ljava/lang/String;
+.field public final synthetic g:Ljava/lang/String;
 
-.field public final synthetic g:Ljava/lang/ref/WeakReference;
+.field public final synthetic h:Ljava/lang/ref/WeakReference;
 
-.field public final synthetic h:Lae/b2;
+.field public final synthetic i:Lae/a2;
 
 
 # direct methods
-.method public constructor <init>(Ljava/lang/String;Ljava/lang/ref/WeakReference;Lae/b2;)V
+.method public constructor <init>(Ljava/lang/String;Ljava/lang/ref/WeakReference;Lae/a2;)V
     .locals 0
 
-    iput-object p1, p0, Lpd/q;->f:Ljava/lang/String;
+    iput-object p1, p0, Lpd/q;->g:Ljava/lang/String;
 
-    iput-object p2, p0, Lpd/q;->g:Ljava/lang/ref/WeakReference;
+    iput-object p2, p0, Lpd/q;->h:Ljava/lang/ref/WeakReference;
 
-    iput-object p3, p0, Lpd/q;->h:Lae/b2;
+    iput-object p3, p0, Lpd/q;->i:Lae/a2;
 
     const/4 p1, 0x1
 
-    invoke-direct {p0, p1}, Lse/h;-><init>(I)V
+    invoke-direct {p0, p1}, Lse/i;-><init>(I)V
 
     return-void
 .end method
@@ -53,7 +53,7 @@
     const-string v0, "drawable"
 
     .line 1
-    invoke-static {p1, v0}, Lt3/e;->c(Ljava/lang/Object;Ljava/lang/String;)V
+    invoke-static {p1, v0}, Lt3/h;->c(Ljava/lang/Object;Ljava/lang/String;)V
 
     .line 2
     sget-object v0, Lcom/supercell/id/SupercellId;->INSTANCE:Lcom/supercell/id/SupercellId;
@@ -63,7 +63,7 @@
     move-result-object v0
 
     .line 3
-    iget-object v0, v0, Lae/u;->s:Lud/j;
+    iget-object v0, v0, Lae/u;->s:Lud/i;
 
     const-string v1, "game_name_"
 
@@ -73,7 +73,7 @@
     move-result-object v1
 
     .line 5
-    iget-object v2, p0, Lpd/q;->f:Ljava/lang/String;
+    iget-object v2, p0, Lpd/q;->g:Ljava/lang/String;
 
     invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -85,10 +85,10 @@
 
     invoke-direct {v2, p0, p1}, Lpd/p;-><init>(Lpd/q;Landroid/graphics/drawable/BitmapDrawable;)V
 
-    invoke-virtual {v0, v1, v2}, Lud/j;->e(Ljava/lang/String;Lre/l;)V
+    invoke-virtual {v0, v1, v2}, Lud/i;->e(Ljava/lang/String;Lre/l;)V
 
     .line 6
-    sget-object p1, Lie/h;->a:Lie/h;
+    sget-object p1, Lie/i;->a:Lie/i;
 
     return-object p1
 .end method

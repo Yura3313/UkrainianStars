@@ -1,68 +1,81 @@
-.class public abstract Lk3/uk0;
-.super Lk3/vk0;
+.class public final Lk3/uk0;
+.super Lk3/gk0;
 .source "com.google.android.gms:play-services-gass@@19.3.0"
-
-# interfaces
-.implements Ljava/util/ListIterator;
 
 
 # annotations
 .annotation system Ldalvik/annotation/Signature;
     value = {
-        "<E:",
+        "Lk3/gk0<",
         "Ljava/lang/Object;",
-        ">",
-        "Lk3/vk0<",
-        "TE;>;",
-        "Ljava/util/ListIterator<",
-        "TE;>;"
+        ">;"
     }
 .end annotation
 
 
+# instance fields
+.field public final transient i:[Ljava/lang/Object;
+
+.field public final transient j:I
+
+.field public final transient k:I
+
+
 # direct methods
-.method public constructor <init>()V
+.method public constructor <init>([Ljava/lang/Object;II)V
     .locals 0
 
-    invoke-direct {p0}, Lk3/vk0;-><init>()V
+    .line 1
+    invoke-direct {p0}, Lk3/gk0;-><init>()V
+
+    .line 2
+    iput-object p1, p0, Lk3/uk0;->i:[Ljava/lang/Object;
+
+    .line 3
+    iput p2, p0, Lk3/uk0;->j:I
+
+    .line 4
+    iput p3, p0, Lk3/uk0;->k:I
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final add(Ljava/lang/Object;)V
-    .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TE;)V"
-        }
-    .end annotation
+.method public final get(I)Ljava/lang/Object;
+    .locals 2
 
-    .annotation runtime Ljava/lang/Deprecated;
-    .end annotation
+    .line 1
+    iget v0, p0, Lk3/uk0;->k:I
 
-    new-instance p1, Ljava/lang/UnsupportedOperationException;
+    invoke-static {p1, v0}, Lk3/ak0;->e(II)I
 
-    invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V
+    .line 2
+    iget-object v0, p0, Lk3/uk0;->i:[Ljava/lang/Object;
 
-    throw p1
+    mul-int/lit8 p1, p1, 0x2
+
+    iget v1, p0, Lk3/uk0;->j:I
+
+    add-int/2addr p1, v1
+
+    aget-object p1, v0, p1
+
+    return-object p1
 .end method
 
-.method public final set(Ljava/lang/Object;)V
-    .locals 0
-    .annotation system Ldalvik/annotation/Signature;
-        value = {
-            "(TE;)V"
-        }
-    .end annotation
+.method public final i()Z
+    .locals 1
 
-    .annotation runtime Ljava/lang/Deprecated;
-    .end annotation
+    const/4 v0, 0x1
 
-    new-instance p1, Ljava/lang/UnsupportedOperationException;
+    return v0
+.end method
 
-    invoke-direct {p1}, Ljava/lang/UnsupportedOperationException;-><init>()V
+.method public final size()I
+    .locals 1
 
-    throw p1
+    iget v0, p0, Lk3/uk0;->k:I
+
+    return v0
 .end method

@@ -18,14 +18,14 @@
 
 
 # instance fields
-.field public final synthetic f:Lcom/supercell/id/ui/authentication/AuthenticationFragment;
+.field public final synthetic g:Lcom/supercell/id/ui/authentication/AuthenticationFragment;
 
 
 # direct methods
 .method public constructor <init>(Lcom/supercell/id/ui/authentication/AuthenticationFragment;)V
     .locals 0
 
-    iput-object p1, p0, Lcom/supercell/id/ui/authentication/AuthenticationFragment$f;->f:Lcom/supercell/id/ui/authentication/AuthenticationFragment;
+    iput-object p1, p0, Lcom/supercell/id/ui/authentication/AuthenticationFragment$f;->g:Lcom/supercell/id/ui/authentication/AuthenticationFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -38,9 +38,9 @@
     .locals 4
 
     .line 1
-    iget-object p1, p0, Lcom/supercell/id/ui/authentication/AuthenticationFragment$f;->f:Lcom/supercell/id/ui/authentication/AuthenticationFragment;
+    iget-object p1, p0, Lcom/supercell/id/ui/authentication/AuthenticationFragment$f;->g:Lcom/supercell/id/ui/authentication/AuthenticationFragment;
 
-    invoke-static {p1}, Lcom/android/billingclient/api/c0;->e(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
+    invoke-static {p1}, Lcom/android/billingclient/api/b0;->f(Landroidx/fragment/app/Fragment;)Lcom/supercell/id/ui/MainActivity;
 
     move-result-object p1
 
@@ -54,7 +54,7 @@
 
     invoke-direct {v1, v2}, Lcom/supercell/id/ui/faq/FaqFragment$BackStackEntry;-><init>(Z)V
 
-    sget-object v2, Lcom/supercell/id/ui/MainActivity;->s:Ljava/lang/ref/WeakReference;
+    sget-object v2, Lcom/supercell/id/ui/MainActivity;->t:Ljava/lang/ref/WeakReference;
 
     .line 2
     invoke-virtual {p1, v1, v0}, Lcom/supercell/id/ui/MainActivity;->z(Lcom/supercell/id/ui/BackStack$Entry;Lcom/supercell/id/ui/BackStack$b;)V
@@ -68,7 +68,7 @@
     move-result-object p1
 
     .line 4
-    iget-object p1, p1, Lae/u;->m:La5/d0;
+    iget-object p1, p1, Lae/u;->m:Lpe/a;
 
     const/16 v1, 0x18
 
@@ -77,7 +77,7 @@
     const-string v3, "click"
 
     .line 5
-    invoke-static {p1, v2, v3, v0, v1}, La5/d0;->a(La5/d0;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;I)V
+    invoke-static {p1, v2, v3, v0, v1}, Lpe/a;->e(Lpe/a;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Long;I)V
 
     return-void
 .end method

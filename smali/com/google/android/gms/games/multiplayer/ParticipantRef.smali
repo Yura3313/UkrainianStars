@@ -7,11 +7,11 @@
 
 
 # instance fields
-.field public final i:Lcom/google/android/gms/games/PlayerRef;
+.field public final j:Lcom/google/android/gms/games/PlayerRef;
 
 
 # virtual methods
-.method public final L1()Ljava/lang/String;
+.method public final K1()Ljava/lang/String;
     .locals 1
 
     const-string v0, "client_address"
@@ -58,7 +58,7 @@
 
     .line 3
     :cond_0
-    iget-object v0, p0, Lcom/google/android/gms/games/multiplayer/ParticipantRef;->i:Lcom/google/android/gms/games/PlayerRef;
+    iget-object v0, p0, Lcom/google/android/gms/games/multiplayer/ParticipantRef;->j:Lcom/google/android/gms/games/PlayerRef;
 
     invoke-virtual {v0}, Lcom/google/android/gms/games/PlayerRef;->c()Landroid/net/Uri;
 
@@ -108,7 +108,7 @@
 
     .line 3
     :cond_0
-    iget-object v0, p0, Lcom/google/android/gms/games/multiplayer/ParticipantRef;->i:Lcom/google/android/gms/games/PlayerRef;
+    iget-object v0, p0, Lcom/google/android/gms/games/multiplayer/ParticipantRef;->j:Lcom/google/android/gms/games/PlayerRef;
 
     invoke-virtual {v0}, Lcom/google/android/gms/games/PlayerRef;->getDisplayName()Ljava/lang/String;
 
@@ -140,7 +140,7 @@
 
     .line 3
     :cond_0
-    iget-object v0, p0, Lcom/google/android/gms/games/multiplayer/ParticipantRef;->i:Lcom/google/android/gms/games/PlayerRef;
+    iget-object v0, p0, Lcom/google/android/gms/games/multiplayer/ParticipantRef;->j:Lcom/google/android/gms/games/PlayerRef;
 
     invoke-virtual {v0}, Lcom/google/android/gms/games/PlayerRef;->getHiResImageUrl()Ljava/lang/String;
 
@@ -172,7 +172,7 @@
 
     .line 3
     :cond_0
-    iget-object v0, p0, Lcom/google/android/gms/games/multiplayer/ParticipantRef;->i:Lcom/google/android/gms/games/PlayerRef;
+    iget-object v0, p0, Lcom/google/android/gms/games/multiplayer/ParticipantRef;->j:Lcom/google/android/gms/games/PlayerRef;
 
     invoke-virtual {v0}, Lcom/google/android/gms/games/PlayerRef;->getIconImageUrl()Ljava/lang/String;
 
@@ -238,7 +238,7 @@
 
     .line 3
     :cond_0
-    iget-object v0, p0, Lcom/google/android/gms/games/multiplayer/ParticipantRef;->i:Lcom/google/android/gms/games/PlayerRef;
+    iget-object v0, p0, Lcom/google/android/gms/games/multiplayer/ParticipantRef;->j:Lcom/google/android/gms/games/PlayerRef;
 
     invoke-virtual {v0}, Lcom/google/android/gms/games/PlayerRef;->i()Landroid/net/Uri;
 
@@ -337,7 +337,7 @@
 
     .line 2
     :cond_0
-    iget-object v0, p0, Lcom/google/android/gms/games/multiplayer/ParticipantRef;->i:Lcom/google/android/gms/games/PlayerRef;
+    iget-object v0, p0, Lcom/google/android/gms/games/multiplayer/ParticipantRef;->j:Lcom/google/android/gms/games/PlayerRef;
 
     return-object v0
 .end method

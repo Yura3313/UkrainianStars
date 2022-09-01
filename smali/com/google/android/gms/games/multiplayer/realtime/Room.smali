@@ -22,7 +22,7 @@
 
 
 # virtual methods
-.method public abstract Q1()Ljava/lang/String;
+.method public abstract P1()Ljava/lang/String;
 .end method
 
 .method public abstract f()J

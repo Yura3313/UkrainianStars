@@ -5189,7 +5189,7 @@
     const-string p2, ", except the Sdk Click Handler"
 
     .line 1
-    invoke-static {p3, p2}, Lcom/google/android/gms/ads/e;->b(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {p3, p2}, Lf/g;->a(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object p2
 

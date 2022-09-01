@@ -1,175 +1,139 @@
-.class public final synthetic Lk3/i50;
+.class public final Lk3/i50;
 .super Ljava/lang/Object;
 .source "com.google.android.gms:play-services-ads@@19.3.0"
 
 # interfaces
-.implements Lk3/tj0;
+.implements Lk3/h40;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Lk3/h40<",
+        "Lk3/iu;",
+        ">;"
+    }
+.end annotation
 
 
 # instance fields
-.field public final synthetic a:I
+.field public final a:Landroid/content/Context;
 
-.field public final b:Lk3/gh;
+.field public final b:Lk3/iz;
 
-.field public final c:Lk3/jg0;
+.field public final c:Lk3/uu;
 
-.field public final d:Ljava/lang/Object;
+.field public final d:Lk3/vg0;
 
-.field public final e:Lk3/u7;
+.field public final e:Ljava/util/concurrent/Executor;
+
+.field public final f:Lcom/google/android/gms/internal/ads/zzbbg;
 
 
 # direct methods
-.method public synthetic constructor <init>(Ljava/lang/Object;Lk3/gh;Lk3/jg0;Lk3/u7;I)V
+.method public constructor <init>(Landroid/content/Context;Lcom/google/android/gms/internal/ads/zzbbg;Lk3/vg0;Ljava/util/concurrent/Executor;Lk3/uu;Lk3/iz;)V
     .locals 0
 
-    iput p5, p0, Lk3/i50;->a:I
-
-    iput-object p1, p0, Lk3/i50;->d:Ljava/lang/Object;
-
-    iput-object p2, p0, Lk3/i50;->b:Lk3/gh;
-
-    iput-object p3, p0, Lk3/i50;->c:Lk3/jg0;
-
-    iput-object p4, p0, Lk3/i50;->e:Lk3/u7;
-
+    .line 1
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    iput-object p1, p0, Lk3/i50;->a:Landroid/content/Context;
+
+    .line 3
+    iput-object p3, p0, Lk3/i50;->d:Lk3/vg0;
+
+    .line 4
+    iput-object p5, p0, Lk3/i50;->c:Lk3/uu;
+
+    .line 5
+    iput-object p4, p0, Lk3/i50;->e:Ljava/util/concurrent/Executor;
+
+    .line 6
+    iput-object p2, p0, Lk3/i50;->f:Lcom/google/android/gms/internal/ads/zzbbg;
+
+    .line 7
+    iput-object p6, p0, Lk3/i50;->b:Lk3/iz;
 
     return-void
 .end method
 
 
 # virtual methods
-.method public final a(Ljava/lang/Object;)Ljava/lang/Object;
+.method public final a(Lk3/tg0;Lk3/kg0;)Lk3/hm0;
     .locals 3
-
-    iget p1, p0, Lk3/i50;->a:I
-
-    packed-switch p1, :pswitch_data_0
-
-    goto :goto_0
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lk3/tg0;",
+            "Lk3/kg0;",
+            ")",
+            "Lk3/hm0<",
+            "Lk3/iu;",
+            ">;"
+        }
+    .end annotation
 
     .line 1
-    :pswitch_0
-    iget-object p1, p0, Lk3/i50;->b:Lk3/gh;
+    new-instance v0, Lk3/uz;
 
-    iget-object v0, p0, Lk3/i50;->c:Lk3/jg0;
+    invoke-direct {v0}, Lk3/uz;-><init>()V
 
-    iget-object v1, p0, Lk3/i50;->e:Lk3/u7;
-
-    check-cast v1, Lk3/ju;
+    const/4 v1, 0x0
 
     .line 2
-    iget-boolean v0, v0, Lk3/jg0;->G:Z
+    invoke-static {v1}, Lk3/dm0;->g(Ljava/lang/Object;)Lk3/hm0;
 
-    if-eqz v0, :cond_0
+    move-result-object v1
+
+    new-instance v2, Lk3/h50;
+
+    invoke-direct {v2, p0, p2, v0, p1}, Lk3/h50;-><init>(Lk3/i50;Lk3/kg0;Lk3/uz;Lk3/tg0;)V
+
+    iget-object p1, p0, Lk3/i50;->e:Ljava/util/concurrent/Executor;
 
     .line 3
-    invoke-interface {p1}, Lk3/gh;->p0()V
+    invoke-static {v1, v2, p1}, Lk3/dm0;->k(Lk3/hm0;Lk3/pl0;Ljava/util/concurrent/Executor;)Lk3/hm0;
+
+    move-result-object p1
 
     .line 4
-    :cond_0
-    invoke-interface {p1}, Lk3/gh;->u0()V
+    new-instance p2, Lk3/k50;
+
+    const/4 v1, 0x0
+
+    invoke-direct {p2, v0, v1}, Lk3/k50;-><init>(Lk3/uz;I)V
 
     .line 5
-    sget-object v0, Lk3/q;->i0:Lk3/g;
+    iget-object v0, p0, Lk3/i50;->e:Ljava/util/concurrent/Executor;
 
-    .line 6
-    sget-object v2, Lk3/l51;->j:Lk3/l51;
+    move-object v1, p1
 
-    iget-object v2, v2, Lk3/l51;->f:Lk3/n;
+    check-cast v1, Lk3/dl0;
 
-    .line 7
-    invoke-virtual {v2, v0}, Lk3/n;->a(Lk3/h;)Ljava/lang/Object;
-
-    move-result-object v0
-
-    .line 8
-    check-cast v0, Ljava/lang/Boolean;
-
-    invoke-virtual {v0}, Ljava/lang/Boolean;->booleanValue()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_1
-
-    .line 9
-    sget-object v0, Li1/o;->B:Li1/o;
-
-    iget-object v0, v0, Li1/o;->e:Lk3/eb;
-
-    .line 10
-    invoke-static {p1}, Lk3/eb;->i(Lk3/gh;)Z
-
-    .line 11
-    :cond_1
-    invoke-virtual {v1}, Lk3/ju;->t()Lk3/iu;
-
-    move-result-object p1
+    invoke-virtual {v1, p2, v0}, Lk3/dl0;->c(Ljava/lang/Runnable;Ljava/util/concurrent/Executor;)V
 
     return-object p1
+.end method
 
-    .line 12
-    :goto_0
-    iget-object p1, p0, Lk3/i50;->b:Lk3/gh;
+.method public final b(Lk3/tg0;Lk3/kg0;)Z
+    .locals 0
 
-    iget-object v0, p0, Lk3/i50;->c:Lk3/jg0;
+    iget-object p1, p2, Lk3/kg0;->r:Lk3/og0;
 
-    iget-object v1, p0, Lk3/i50;->e:Lk3/u7;
+    if-eqz p1, :cond_0
 
-    check-cast v1, Lk3/dz;
+    iget-object p1, p1, Lk3/og0;->a:Ljava/lang/String;
 
-    .line 13
-    iget-boolean v0, v0, Lk3/jg0;->G:Z
+    if-eqz p1, :cond_0
 
-    if-eqz v0, :cond_2
+    const/4 p1, 0x1
 
-    .line 14
-    invoke-interface {p1}, Lk3/gh;->p0()V
+    return p1
 
-    .line 15
-    :cond_2
-    invoke-interface {p1}, Lk3/gh;->u0()V
+    :cond_0
+    const/4 p1, 0x0
 
-    .line 16
-    sget-object v0, Lk3/q;->i0:Lk3/g;
-
-    .line 17
-    sget-object v2, Lk3/l51;->j:Lk3/l51;
-
-    iget-object v2, v2, Lk3/l51;->f:Lk3/n;
-
-    .line 18
-    invoke-virtual {v2, v0}, Lk3/n;->a(Lk3/h;)Ljava/lang/Object;
-
-    move-result-object v0
-
-    .line 19
-    check-cast v0, Ljava/lang/Boolean;
-
-    invoke-virtual {v0}, Ljava/lang/Boolean;->booleanValue()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_3
-
-    .line 20
-    sget-object v0, Li1/o;->B:Li1/o;
-
-    iget-object v0, v0, Li1/o;->e:Lk3/eb;
-
-    .line 21
-    invoke-static {p1}, Lk3/eb;->i(Lk3/gh;)Z
-
-    .line 22
-    :cond_3
-    invoke-virtual {v1}, Lk3/dz;->v()Lk3/bz;
-
-    move-result-object p1
-
-    return-object p1
-
-    :pswitch_data_0
-    .packed-switch 0x0
-        :pswitch_0
-    .end packed-switch
+    return p1
 .end method

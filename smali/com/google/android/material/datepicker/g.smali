@@ -87,7 +87,7 @@
     iget-object v3, v0, Lcom/google/android/material/datepicker/g;->c:Lcom/google/android/material/datepicker/f;
 
     .line 6
-    iget-object v3, v3, Lcom/google/android/material/datepicker/f;->c0:Lcom/google/android/material/datepicker/DateSelector;
+    iget-object v3, v3, Lcom/google/android/material/datepicker/f;->d0:Lcom/google/android/material/datepicker/DateSelector;
 
     .line 7
     invoke-interface {v3}, Lcom/google/android/material/datepicker/DateSelector;->f0()Ljava/util/Collection;
@@ -219,7 +219,7 @@
     iget-object v11, v0, Lcom/google/android/material/datepicker/g;->c:Lcom/google/android/material/datepicker/f;
 
     .line 21
-    iget-object v11, v11, Lcom/google/android/material/datepicker/f;->g0:Lcom/google/android/material/datepicker/b;
+    iget-object v11, v11, Lcom/google/android/material/datepicker/f;->h0:Lcom/google/android/material/datepicker/b;
 
     .line 22
     iget-object v11, v11, Lcom/google/android/material/datepicker/b;->d:Lcom/google/android/material/datepicker/a;
@@ -239,7 +239,7 @@
     iget-object v11, v0, Lcom/google/android/material/datepicker/g;->c:Lcom/google/android/material/datepicker/f;
 
     .line 25
-    iget-object v11, v11, Lcom/google/android/material/datepicker/f;->g0:Lcom/google/android/material/datepicker/b;
+    iget-object v11, v11, Lcom/google/android/material/datepicker/f;->h0:Lcom/google/android/material/datepicker/b;
 
     .line 26
     iget-object v11, v11, Lcom/google/android/material/datepicker/b;->d:Lcom/google/android/material/datepicker/a;
@@ -308,7 +308,7 @@
     iget-object v12, v0, Lcom/google/android/material/datepicker/g;->c:Lcom/google/android/material/datepicker/f;
 
     .line 32
-    iget-object v12, v12, Lcom/google/android/material/datepicker/f;->g0:Lcom/google/android/material/datepicker/b;
+    iget-object v12, v12, Lcom/google/android/material/datepicker/f;->h0:Lcom/google/android/material/datepicker/b;
 
     .line 33
     iget-object v12, v12, Lcom/google/android/material/datepicker/b;->h:Landroid/graphics/Paint;
